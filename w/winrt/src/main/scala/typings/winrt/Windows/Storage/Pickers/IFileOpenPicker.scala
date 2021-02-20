@@ -5,12 +5,13 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.Collections.ValueSet
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.StorageFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFileOpenPicker extends js.Object {
+trait IFileOpenPicker extends StObject {
   
   var commitButtonText: String = js.native
   
@@ -52,48 +53,36 @@ object IFileOpenPicker {
   }
   
   @scala.inline
-  implicit class IFileOpenPickerOps[Self <: IFileOpenPicker] (val x: Self) extends AnyVal {
+  implicit class IFileOpenPickerMutableBuilder[Self <: IFileOpenPicker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitButtonText(value: String): Self = StObject.set(x, "commitButtonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContinuationData(value: ValueSet): Self = StObject.set(x, "continuationData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileTypeFilter(value: IVector[String]): Self = StObject.set(x, "fileTypeFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitButtonText(value: String): Self = this.set("commitButtonText", value.asInstanceOf[js.Any])
+    def setPickMultipleFilesAndContinue(value: () => Unit): Self = StObject.set(x, "pickMultipleFilesAndContinue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContinuationData(value: ValueSet): Self = this.set("continuationData", value.asInstanceOf[js.Any])
+    def setPickMultipleFilesAsync(value: () => IAsyncOperation[IVectorView[StorageFile]]): Self = StObject.set(x, "pickMultipleFilesAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFileTypeFilter(value: IVector[String]): Self = this.set("fileTypeFilter", value.asInstanceOf[js.Any])
+    def setPickSingleFileAndContinue(value: () => Unit): Self = StObject.set(x, "pickSingleFileAndContinue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPickMultipleFilesAndContinue(value: () => Unit): Self = this.set("pickMultipleFilesAndContinue", js.Any.fromFunction0(value))
+    def setPickSingleFileAsync(value: () => IAsyncOperation[StorageFile]): Self = StObject.set(x, "pickSingleFileAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPickMultipleFilesAsync(value: () => IAsyncOperation[IVectorView[StorageFile]]): Self = this.set("pickMultipleFilesAsync", js.Any.fromFunction0(value))
+    def setSettingsIdentifier(value: String): Self = StObject.set(x, "settingsIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPickSingleFileAndContinue(value: () => Unit): Self = this.set("pickSingleFileAndContinue", js.Any.fromFunction0(value))
+    def setSuggestedStartLocation(value: PickerLocationId): Self = StObject.set(x, "suggestedStartLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPickSingleFileAsync(value: () => IAsyncOperation[StorageFile]): Self = this.set("pickSingleFileAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSettingsIdentifier(value: String): Self = this.set("settingsIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuggestedStartLocation(value: PickerLocationId): Self = this.set("suggestedStartLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewMode(value: PickerViewMode): Self = this.set("viewMode", value.asInstanceOf[js.Any])
+    def setViewMode(value: PickerViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
   }
 }

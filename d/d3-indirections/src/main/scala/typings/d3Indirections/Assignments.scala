@@ -1,5 +1,6 @@
 package typings.d3Indirections
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is actually what gets sent to the PUT assignment.
   */
 @js.native
-trait Assignments extends js.Object {
+trait Assignments extends StObject {
   
   var assignments: Assignment | js.Array[Assignment] = js.native
 }
@@ -21,24 +22,12 @@ object Assignments {
   }
   
   @scala.inline
-  implicit class AssignmentsOps[Self <: Assignments] (val x: Self) extends AnyVal {
+  implicit class AssignmentsMutableBuilder[Self <: Assignments] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignments(value: Assignment | js.Array[Assignment]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAssignmentsVarargs(value: Assignment*): Self = this.set("assignments", js.Array(value :_*))
-    
-    @scala.inline
-    def setAssignments(value: Assignment | js.Array[Assignment]): Self = this.set("assignments", value.asInstanceOf[js.Any])
+    def setAssignmentsVarargs(value: Assignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
   }
 }

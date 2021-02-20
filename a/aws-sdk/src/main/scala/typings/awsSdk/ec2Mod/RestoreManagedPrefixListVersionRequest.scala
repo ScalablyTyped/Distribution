@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RestoreManagedPrefixListVersionRequest extends js.Object {
+trait RestoreManagedPrefixListVersionRequest extends StObject {
   
   /**
     * The current version number for the prefix list.
@@ -36,33 +37,21 @@ object RestoreManagedPrefixListVersionRequest {
   }
   
   @scala.inline
-  implicit class RestoreManagedPrefixListVersionRequestOps[Self <: RestoreManagedPrefixListVersionRequest] (val x: Self) extends AnyVal {
+  implicit class RestoreManagedPrefixListVersionRequestMutableBuilder[Self <: RestoreManagedPrefixListVersionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentVersion(value: Long): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def setCurrentVersion(value: Long): Self = this.set("CurrentVersion", value.asInstanceOf[js.Any])
+    def setPrefixListId(value: PrefixListResourceId): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefixListId(value: PrefixListResourceId): Self = this.set("PrefixListId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousVersion(value: Long): Self = this.set("PreviousVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setPreviousVersion(value: Long): Self = StObject.set(x, "PreviousVersion", value.asInstanceOf[js.Any])
   }
 }

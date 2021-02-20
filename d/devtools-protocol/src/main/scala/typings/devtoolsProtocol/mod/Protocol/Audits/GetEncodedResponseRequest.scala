@@ -4,12 +4,13 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.jpeg
 import typings.devtoolsProtocol.devtoolsProtocolStrings.png
 import typings.devtoolsProtocol.devtoolsProtocolStrings.webp
 import typings.devtoolsProtocol.mod.Protocol.Network.RequestId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetEncodedResponseRequest extends js.Object {
+trait GetEncodedResponseRequest extends StObject {
   
   /**
     * The encoding to use. (GetEncodedResponseRequestEncoding enum)
@@ -40,36 +41,24 @@ object GetEncodedResponseRequest {
   }
   
   @scala.inline
-  implicit class GetEncodedResponseRequestOps[Self <: GetEncodedResponseRequest] (val x: Self) extends AnyVal {
+  implicit class GetEncodedResponseRequestMutableBuilder[Self <: GetEncodedResponseRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncoding(value: webp | jpeg | png): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
     @scala.inline
-    def setEncoding(value: webp | jpeg | png): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestId(value: RequestId): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    def setSizeOnly(value: Boolean): Self = StObject.set(x, "sizeOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuality(value: Double): Self = this.set("quality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuality: Self = this.set("quality", js.undefined)
-    
-    @scala.inline
-    def setSizeOnly(value: Boolean): Self = this.set("sizeOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeOnly: Self = this.set("sizeOnly", js.undefined)
+    def setSizeOnlyUndefined: Self = StObject.set(x, "sizeOnly", js.undefined)
   }
 }

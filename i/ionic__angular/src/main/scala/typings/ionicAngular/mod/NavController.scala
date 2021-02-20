@@ -3,6 +3,7 @@ package typings.ionicAngular.mod
 import typings.angularCommon.mod.Location
 import typings.angularRouter.mod.Router
 import typings.angularRouter.mod.UrlSerializer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

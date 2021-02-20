@@ -1,11 +1,12 @@
 package typings.nodeHueApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Api extends js.Object {
+trait Api extends StObject {
   
   var api: String = js.native
   
@@ -20,24 +21,12 @@ object Api {
   }
   
   @scala.inline
-  implicit class ApiOps[Self <: Api] (val x: Self) extends AnyVal {
+  implicit class ApiMutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApi(value: String): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApi(value: String): Self = this.set("api", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSoftware(value: String): Self = this.set("software", value.asInstanceOf[js.Any])
+    def setSoftware(value: String): Self = StObject.set(x, "software", value.asInstanceOf[js.Any])
   }
 }

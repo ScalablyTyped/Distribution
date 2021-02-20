@@ -1,11 +1,12 @@
 package typings.gestalt.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Data[T] extends js.Object {
+trait Data[T] extends StObject {
   
   var data: T = js.native
   
@@ -22,33 +23,21 @@ object Data {
   }
   
   @scala.inline
-  implicit class DataOps[Self <: Data[_], T] (val x: Self with Data[T]) extends AnyVal {
+  implicit class DataMutableBuilder[Self <: Data[_], T] (val x: Self with Data[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsMeasuring(value: Boolean): Self = StObject.set(x, "isMeasuring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsMeasuringUndefined: Self = StObject.set(x, "isMeasuring", js.undefined)
     
     @scala.inline
-    def setData(value: T): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setItemIdx(value: Double): Self = StObject.set(x, "itemIdx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMeasuring(value: Boolean): Self = this.set("isMeasuring", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsMeasuring: Self = this.set("isMeasuring", js.undefined)
-    
-    @scala.inline
-    def setItemIdx(value: Double): Self = this.set("itemIdx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItemIdx: Self = this.set("itemIdx", js.undefined)
+    def setItemIdxUndefined: Self = StObject.set(x, "itemIdx", js.undefined)
   }
 }

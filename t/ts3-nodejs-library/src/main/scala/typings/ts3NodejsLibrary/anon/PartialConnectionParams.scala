@@ -1,13 +1,14 @@
 package typings.ts3NodejsLibrary.anon
 
 import typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.QueryProtocol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ts3-nodejs-library.ts3-nodejs-library/lib/TeamSpeak.TeamSpeak.ConnectionParams> */
 @js.native
-trait PartialConnectionParams extends js.Object {
+trait PartialConnectionParams extends StObject {
   
   var autoConnect: js.UndefOr[Boolean] = js.native
   
@@ -44,96 +45,84 @@ object PartialConnectionParams {
   }
   
   @scala.inline
-  implicit class PartialConnectionParamsOps[Self <: PartialConnectionParams] (val x: Self) extends AnyVal {
+  implicit class PartialConnectionParamsMutableBuilder[Self <: PartialConnectionParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoConnect(value: Boolean): Self = StObject.set(x, "autoConnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoConnectUndefined: Self = StObject.set(x, "autoConnect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoConnect(value: Boolean): Self = this.set("autoConnect", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteAutoConnect: Self = this.set("autoConnect", js.undefined)
+    def setIgnoreQueries(value: Boolean): Self = StObject.set(x, "ignoreQueries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setIgnoreQueriesUndefined: Self = StObject.set(x, "ignoreQueries", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreQueries(value: Boolean): Self = this.set("ignoreQueries", value.asInstanceOf[js.Any])
+    def setKeepAliveTimeout(value: Double): Self = StObject.set(x, "keepAliveTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIgnoreQueries: Self = this.set("ignoreQueries", js.undefined)
+    def setKeepAliveTimeoutUndefined: Self = StObject.set(x, "keepAliveTimeout", js.undefined)
     
     @scala.inline
-    def setKeepAlive(value: Boolean): Self = this.set("keepAlive", value.asInstanceOf[js.Any])
+    def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
     
     @scala.inline
-    def deleteKeepAlive: Self = this.set("keepAlive", js.undefined)
+    def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepAliveTimeout(value: Double): Self = this.set("keepAliveTimeout", value.asInstanceOf[js.Any])
+    def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
     
     @scala.inline
-    def deleteKeepAliveTimeout: Self = this.set("keepAliveTimeout", js.undefined)
+    def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAddress(value: String): Self = this.set("localAddress", value.asInstanceOf[js.Any])
+    def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
     
     @scala.inline
-    def deleteLocalAddress: Self = this.set("localAddress", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNickname(value: String): Self = this.set("nickname", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteNickname: Self = this.set("nickname", js.undefined)
+    def setProtocol(value: QueryProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setQueryport(value: Double): Self = StObject.set(x, "queryport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: QueryProtocol): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setQueryportUndefined: Self = StObject.set(x, "queryport", js.undefined)
     
     @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    def setReadyTimeout(value: Double): Self = StObject.set(x, "readyTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryport(value: Double): Self = this.set("queryport", value.asInstanceOf[js.Any])
+    def setReadyTimeoutUndefined: Self = StObject.set(x, "readyTimeout", js.undefined)
     
     @scala.inline
-    def deleteQueryport: Self = this.set("queryport", js.undefined)
+    def setServerport(value: Double): Self = StObject.set(x, "serverport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadyTimeout(value: Double): Self = this.set("readyTimeout", value.asInstanceOf[js.Any])
+    def setServerportUndefined: Self = StObject.set(x, "serverport", js.undefined)
     
     @scala.inline
-    def deleteReadyTimeout: Self = this.set("readyTimeout", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerport(value: Double): Self = this.set("serverport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerport: Self = this.set("serverport", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

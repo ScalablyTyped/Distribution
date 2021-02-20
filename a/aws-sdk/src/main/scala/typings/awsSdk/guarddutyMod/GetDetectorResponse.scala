@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDetectorResponse extends js.Object {
+trait GetDetectorResponse extends StObject {
   
   /**
     * The timestamp of when the detector was created.
@@ -51,54 +52,42 @@ object GetDetectorResponse {
   }
   
   @scala.inline
-  implicit class GetDetectorResponseOps[Self <: GetDetectorResponse] (val x: Self) extends AnyVal {
+  implicit class GetDetectorResponseMutableBuilder[Self <: GetDetectorResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAt(value: String): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSources(value: DataSourceConfigurationsResult): Self = StObject.set(x, "DataSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceRole(value: String): Self = this.set("ServiceRole", value.asInstanceOf[js.Any])
+    def setDataSourcesUndefined: Self = StObject.set(x, "DataSources", js.undefined)
     
     @scala.inline
-    def setStatus(value: DetectorStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setFindingPublishingFrequency(value: FindingPublishingFrequency): Self = StObject.set(x, "FindingPublishingFrequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: String): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    def setFindingPublishingFrequencyUndefined: Self = StObject.set(x, "FindingPublishingFrequency", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    def setServiceRole(value: String): Self = StObject.set(x, "ServiceRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSources(value: DataSourceConfigurationsResult): Self = this.set("DataSources", value.asInstanceOf[js.Any])
+    def setStatus(value: DetectorStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataSources: Self = this.set("DataSources", js.undefined)
+    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFindingPublishingFrequency(value: FindingPublishingFrequency): Self = this.set("FindingPublishingFrequency", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteFindingPublishingFrequency: Self = this.set("FindingPublishingFrequency", js.undefined)
+    def setUpdatedAt(value: String): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setUpdatedAt(value: String): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedAt: Self = this.set("UpdatedAt", js.undefined)
+    def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
   }
 }

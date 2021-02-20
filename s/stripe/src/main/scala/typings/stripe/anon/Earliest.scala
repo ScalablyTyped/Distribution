@@ -2,12 +2,13 @@ package typings.stripe.anon
 
 import typings.stripe.stripeStrings.exact
 import typings.stripe.stripeStrings.range
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Earliest extends js.Object {
+trait Earliest extends StObject {
   
   /**
     * If type is "exact", date will be the expected delivery date in the format YYYY-MM-DD
@@ -39,30 +40,18 @@ object Earliest {
   }
   
   @scala.inline
-  implicit class EarliestOps[Self <: Earliest] (val x: Self) extends AnyVal {
+  implicit class EarliestMutableBuilder[Self <: Earliest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEarliest(value: String): Self = StObject.set(x, "earliest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLatest(value: String): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEarliest(value: String): Self = this.set("earliest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLatest(value: String): Self = this.set("latest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: range | exact): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: range | exact): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

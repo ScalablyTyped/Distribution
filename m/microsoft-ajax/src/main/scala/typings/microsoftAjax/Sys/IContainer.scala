@@ -1,5 +1,6 @@
 package typings.microsoftAjax.Sys
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides a common interface for all components that can contain other components.
   */
 @js.native
-trait IContainer extends js.Object {
+trait IContainer extends StObject {
   
   //#region Methods
   /**
@@ -58,30 +59,18 @@ object IContainer {
   }
   
   @scala.inline
-  implicit class IContainerOps[Self <: IContainer] (val x: Self) extends AnyVal {
+  implicit class IContainerMutableBuilder[Self <: IContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddComponent(value: Component => Unit): Self = StObject.set(x, "addComponent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFindComponent(value: String => Component): Self = StObject.set(x, "findComponent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetComponents(value: () => js.Array[Component]): Self = StObject.set(x, "getComponents", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddComponent(value: Component => Unit): Self = this.set("addComponent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFindComponent(value: String => Component): Self = this.set("findComponent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetComponents(value: () => js.Array[Component]): Self = this.set("getComponents", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveComponent(value: Component => Unit): Self = this.set("removeComponent", js.Any.fromFunction1(value))
+    def setRemoveComponent(value: Component => Unit): Self = StObject.set(x, "removeComponent", js.Any.fromFunction1(value))
   }
 }

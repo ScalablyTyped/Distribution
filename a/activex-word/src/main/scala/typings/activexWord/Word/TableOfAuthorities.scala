@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableOfAuthorities extends js.Object {
+trait TableOfAuthorities extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -73,72 +74,60 @@ object TableOfAuthorities {
   }
   
   @scala.inline
-  implicit class TableOfAuthoritiesOps[Self <: TableOfAuthorities] (val x: Self) extends AnyVal {
+  implicit class TableOfAuthoritiesMutableBuilder[Self <: TableOfAuthorities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBookmark(value: String): Self = StObject.set(x, "Bookmark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategory(value: Double): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBookmark(value: String): Self = this.set("Bookmark", value.asInstanceOf[js.Any])
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCategory(value: Double): Self = this.set("Category", value.asInstanceOf[js.Any])
+    def setEntrySeparator(value: String): Self = StObject.set(x, "EntrySeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setIncludeCategoryHeader(value: Boolean): Self = StObject.set(x, "IncludeCategoryHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setIncludeSequenceName(value: String): Self = StObject.set(x, "IncludeSequenceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntrySeparator(value: String): Self = this.set("EntrySeparator", value.asInstanceOf[js.Any])
+    def setKeepEntryFormatting(value: Boolean): Self = StObject.set(x, "KeepEntryFormatting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeCategoryHeader(value: Boolean): Self = this.set("IncludeCategoryHeader", value.asInstanceOf[js.Any])
+    def setPageNumberSeparator(value: String): Self = StObject.set(x, "PageNumberSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeSequenceName(value: String): Self = this.set("IncludeSequenceName", value.asInstanceOf[js.Any])
+    def setPageRangeSeparator(value: String): Self = StObject.set(x, "PageRangeSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepEntryFormatting(value: Boolean): Self = this.set("KeepEntryFormatting", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageNumberSeparator(value: String): Self = this.set("PageNumberSeparator", value.asInstanceOf[js.Any])
+    def setPassim(value: Boolean): Self = StObject.set(x, "Passim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageRangeSeparator(value: String): Self = this.set("PageRangeSeparator", value.asInstanceOf[js.Any])
+    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setSeparator(value: String): Self = StObject.set(x, "Separator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassim(value: Boolean): Self = this.set("Passim", value.asInstanceOf[js.Any])
+    def setTabLeader(value: WdTabLeader): Self = StObject.set(x, "TabLeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: Range): Self = this.set("Range", value.asInstanceOf[js.Any])
+    def setUpdate(value: () => Unit): Self = StObject.set(x, "Update", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSeparator(value: String): Self = this.set("Separator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTabLeader(value: WdTabLeader): Self = this.set("TabLeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = this.set("Update", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWordDotTableOfAuthorities_typekey(value: TableOfAuthorities): Self = this.set("Word.TableOfAuthorities_typekey", value.asInstanceOf[js.Any])
+    def setWordDotTableOfAuthorities_typekey(value: TableOfAuthorities): Self = StObject.set(x, "Word.TableOfAuthorities_typekey", value.asInstanceOf[js.Any])
   }
 }

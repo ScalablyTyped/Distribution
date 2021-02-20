@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.task
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,30 +47,18 @@ object XInteractionRequest {
   }
   
   @scala.inline
-  implicit class XInteractionRequestOps[Self <: XInteractionRequest] (val x: Self) extends AnyVal {
+  implicit class XInteractionRequestMutableBuilder[Self <: XInteractionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinuations(value: SafeArray[XInteractionContinuation]): Self = StObject.set(x, "Continuations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetContinuations(value: () => SafeArray[XInteractionContinuation]): Self = StObject.set(x, "getContinuations", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRequest(value: () => js.Any): Self = StObject.set(x, "getRequest", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContinuations(value: SafeArray[XInteractionContinuation]): Self = this.set("Continuations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: js.Any): Self = this.set("Request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetContinuations(value: () => SafeArray[XInteractionContinuation]): Self = this.set("getContinuations", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRequest(value: () => js.Any): Self = this.set("getRequest", js.Any.fromFunction0(value))
+    def setRequest(value: js.Any): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
   }
 }

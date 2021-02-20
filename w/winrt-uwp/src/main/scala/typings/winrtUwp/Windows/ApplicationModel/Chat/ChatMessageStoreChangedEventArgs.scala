@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the data for the ChatMessageStoreChanged event. */
 @js.native
-trait ChatMessageStoreChangedEventArgs extends js.Object {
+trait ChatMessageStoreChangedEventArgs extends StObject {
   
   /** Gets the ID of the object that changed. */
   var id: String = js.native
@@ -23,24 +24,12 @@ object ChatMessageStoreChangedEventArgs {
   }
   
   @scala.inline
-  implicit class ChatMessageStoreChangedEventArgsOps[Self <: ChatMessageStoreChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class ChatMessageStoreChangedEventArgsMutableBuilder[Self <: ChatMessageStoreChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: ChatStoreChangedEventKind): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setKind(value: ChatStoreChangedEventKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

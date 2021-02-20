@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateContributorInsightsOutput extends js.Object {
+trait UpdateContributorInsightsOutput extends StObject {
   
   /**
     * The status of contributor insights
@@ -31,36 +32,24 @@ object UpdateContributorInsightsOutput {
   }
   
   @scala.inline
-  implicit class UpdateContributorInsightsOutputOps[Self <: UpdateContributorInsightsOutput] (val x: Self) extends AnyVal {
+  implicit class UpdateContributorInsightsOutputMutableBuilder[Self <: UpdateContributorInsightsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContributorInsightsStatus(value: ContributorInsightsStatus): Self = StObject.set(x, "ContributorInsightsStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContributorInsightsStatusUndefined: Self = StObject.set(x, "ContributorInsightsStatus", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContributorInsightsStatus(value: ContributorInsightsStatus): Self = this.set("ContributorInsightsStatus", value.asInstanceOf[js.Any])
+    def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
     
     @scala.inline
-    def deleteContributorInsightsStatus: Self = this.set("ContributorInsightsStatus", js.undefined)
+    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexName(value: IndexName): Self = this.set("IndexName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndexName: Self = this.set("IndexName", js.undefined)
-    
-    @scala.inline
-    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableName: Self = this.set("TableName", js.undefined)
+    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.atom.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("atom", "Task")
 @js.native
-class Task protected () extends js.Object {
+class Task protected () extends StObject {
   /** Creates a task. You should probably use .once */
   def this(taskPath: String) = this()
   
@@ -48,14 +49,14 @@ class Task protected () extends js.Object {
   def terminate(): Unit = js.native
 }
 /* static members */
-@JSImport("atom", "Task")
-@js.native
-object Task extends js.Object {
+object Task {
   
   // NOTE: this is actually the best we can do here with the REST parameter for
   // this appearing in the middle of the parameter list, which isn't aligned with
   // the ES6 spec. Maybe when they rewrite it in JavaScript this will change.
   /** A helper method to easily launch and run a task once. */
   // tslint:disable-next-line:no-any
+  @JSImport("atom", "Task.once")
+  @js.native
   def once(taskPath: String, args: js.Any*): Task = js.native
 }

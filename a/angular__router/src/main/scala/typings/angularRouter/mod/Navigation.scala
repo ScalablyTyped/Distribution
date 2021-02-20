@@ -3,12 +3,13 @@ package typings.angularRouter.mod
 import typings.angularRouter.angularRouterStrings.hashchange
 import typings.angularRouter.angularRouterStrings.imperative
 import typings.angularRouter.angularRouterStrings.popstate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Navigation extends js.Object {
+trait Navigation extends StObject {
   
   /**
     * The initial target URL after being parsed with `UrlSerializer.extract()`.
@@ -70,45 +71,33 @@ object Navigation {
   }
   
   @scala.inline
-  implicit class NavigationOps[Self <: Navigation] (val x: Self) extends AnyVal {
+  implicit class NavigationMutableBuilder[Self <: Navigation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtractedUrl(value: UrlTree): Self = StObject.set(x, "extractedUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtras(value: NavigationExtras): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFinalUrl(value: UrlTree): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtractedUrl(value: UrlTree): Self = this.set("extractedUrl", value.asInstanceOf[js.Any])
+    def setFinalUrlUndefined: Self = StObject.set(x, "finalUrl", js.undefined)
     
     @scala.inline
-    def setExtras(value: NavigationExtras): Self = this.set("extras", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInitialUrl(value: String | UrlTree): Self = StObject.set(x, "initialUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialUrl(value: String | UrlTree): Self = this.set("initialUrl", value.asInstanceOf[js.Any])
+    def setPreviousNavigation(value: Navigation): Self = StObject.set(x, "previousNavigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrigger(value: imperative | popstate | hashchange): Self = this.set("trigger", value.asInstanceOf[js.Any])
+    def setPreviousNavigationNull: Self = StObject.set(x, "previousNavigation", null)
     
     @scala.inline
-    def setFinalUrl(value: UrlTree): Self = this.set("finalUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFinalUrl: Self = this.set("finalUrl", js.undefined)
-    
-    @scala.inline
-    def setPreviousNavigation(value: Navigation): Self = this.set("previousNavigation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousNavigationNull: Self = this.set("previousNavigation", null)
+    def setTrigger(value: imperative | popstate | hashchange): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
   }
 }

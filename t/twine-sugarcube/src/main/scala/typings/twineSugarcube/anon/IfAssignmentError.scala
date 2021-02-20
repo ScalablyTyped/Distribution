@@ -1,11 +1,12 @@
 package typings.twineSugarcube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IfAssignmentError extends js.Object {
+trait IfAssignmentError extends StObject {
   
   /**
     * Determines whether the `<<if>>` macro returns an error when the = assignment operator is used within its conditional —
@@ -72,30 +73,18 @@ object IfAssignmentError {
   }
   
   @scala.inline
-  implicit class IfAssignmentErrorOps[Self <: IfAssignmentError] (val x: Self) extends AnyVal {
+  implicit class IfAssignmentErrorMutableBuilder[Self <: IfAssignmentError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIfAssignmentError(value: Boolean): Self = StObject.set(x, "ifAssignmentError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxLoopIterations(value: Double): Self = StObject.set(x, "maxLoopIterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTypeSkipKey(value: String): Self = StObject.set(x, "typeSkipKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIfAssignmentError(value: Boolean): Self = this.set("ifAssignmentError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxLoopIterations(value: Double): Self = this.set("maxLoopIterations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeSkipKey(value: String): Self = this.set("typeSkipKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeVisitedPassages(value: Boolean): Self = this.set("typeVisitedPassages", value.asInstanceOf[js.Any])
+    def setTypeVisitedPassages(value: Boolean): Self = StObject.set(x, "typeVisitedPassages", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.braintree.braintreeStrings.venmo_account
   - typings.braintree.braintreeStrings.visa_checkout_card
 */
-trait PaymentInstrumentType extends js.Object
+trait PaymentInstrumentType extends StObject
 object PaymentInstrumentType {
   
   @scala.inline

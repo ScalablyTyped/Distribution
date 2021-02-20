@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UiTemplateInfo extends js.Object {
+trait UiTemplateInfo extends StObject {
   
   /**
     * The SHA-256 digest of the contents of the template.
@@ -26,30 +27,18 @@ object UiTemplateInfo {
   }
   
   @scala.inline
-  implicit class UiTemplateInfoOps[Self <: UiTemplateInfo] (val x: Self) extends AnyVal {
+  implicit class UiTemplateInfoMutableBuilder[Self <: UiTemplateInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentSha256(value: TemplateContentSha256): Self = StObject.set(x, "ContentSha256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentSha256Undefined: Self = StObject.set(x, "ContentSha256", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUrl(value: TemplateUrl): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentSha256(value: TemplateContentSha256): Self = this.set("ContentSha256", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentSha256: Self = this.set("ContentSha256", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: TemplateUrl): Self = this.set("Url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("Url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

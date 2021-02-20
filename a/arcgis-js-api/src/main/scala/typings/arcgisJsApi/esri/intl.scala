@@ -28,6 +28,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.year
 import typings.std.Date
 import typings.std.Intl.DateTimeFormatOptions
 import typings.std.Intl.NumberFormatOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +39,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html)
   */
 @js.native
-trait intl extends js.Object {
+trait intl extends StObject {
   
   /**
     * Converts a [web map date format string](https://developers.arcgis.com/web-map-specification/objects/format/) to an [Intl.DateTimeFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat#Parameters) options object.

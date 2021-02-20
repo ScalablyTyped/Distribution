@@ -2,12 +2,13 @@ package typings.googleCloudKms.mod.v1
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleProtobuf.timestampPbMod.Timestamp.AsObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CryptoKey extends js.Object {
+trait CryptoKey extends StObject {
   
   var createTime: AsObject = js.native
   
@@ -39,42 +40,30 @@ object CryptoKey {
   }
   
   @scala.inline
-  implicit class CryptoKeyOps[Self <: CryptoKey] (val x: Self) extends AnyVal {
+  implicit class CryptoKeyMutableBuilder[Self <: CryptoKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: AsObject): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: AsObject): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setNextRotationTime(value: AsObject): Self = StObject.set(x, "nextRotationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setNextRotationTimeUndefined: Self = StObject.set(x, "nextRotationTime", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPrimary(value: CryptoKeyVersion): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary(value: CryptoKeyVersion): Self = this.set("primary", value.asInstanceOf[js.Any])
+    def setPurpose(value: CryptoKeyPurpose): Self = StObject.set(x, "purpose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurpose(value: CryptoKeyPurpose): Self = this.set("purpose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionTemplate(value: CryptoKeyVersionTemplate): Self = this.set("versionTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextRotationTime(value: AsObject): Self = this.set("nextRotationTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextRotationTime: Self = this.set("nextRotationTime", js.undefined)
+    def setVersionTemplate(value: CryptoKeyVersionTemplate): Self = StObject.set(x, "versionTemplate", value.asInstanceOf[js.Any])
   }
 }

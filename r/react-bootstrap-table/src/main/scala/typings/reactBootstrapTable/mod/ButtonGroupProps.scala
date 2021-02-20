@@ -1,12 +1,13 @@
 package typings.reactBootstrapTable.mod
 
 import typings.react.mod.ReactElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ButtonGroupProps extends js.Object {
+trait ButtonGroupProps extends StObject {
   
   /**
     * Delete button.
@@ -42,30 +43,18 @@ object ButtonGroupProps {
   }
   
   @scala.inline
-  implicit class ButtonGroupPropsOps[Self <: ButtonGroupProps] (val x: Self) extends AnyVal {
+  implicit class ButtonGroupPropsMutableBuilder[Self <: ButtonGroupProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleteBtn(value: ReactElement): Self = StObject.set(x, "deleteBtn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportCSVBtn(value: ReactElement): Self = StObject.set(x, "exportCSVBtn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertBtn(value: ReactElement): Self = StObject.set(x, "insertBtn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteBtn(value: ReactElement): Self = this.set("deleteBtn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExportCSVBtn(value: ReactElement): Self = this.set("exportCSVBtn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInsertBtn(value: ReactElement): Self = this.set("insertBtn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowSelectedOnlyBtn(value: ReactElement): Self = this.set("showSelectedOnlyBtn", value.asInstanceOf[js.Any])
+    def setShowSelectedOnlyBtn(value: ReactElement): Self = StObject.set(x, "showSelectedOnlyBtn", value.asInstanceOf[js.Any])
   }
 }

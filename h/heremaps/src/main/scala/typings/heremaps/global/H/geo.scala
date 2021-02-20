@@ -6,18 +6,18 @@ import typings.heremaps.H.geo.IPoint
 import typings.heremaps.H.geo.IProjection
 import typings.heremaps.H.geo.Latitude
 import typings.heremaps.H.geo.Longitude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** geo *****/
-@JSGlobal("H.geo")
-@js.native
-object geo extends js.Object {
+object geo {
   
   /**
     * The base class for all geometry types.
     */
+  @JSGlobal("H.geo.AbstractGeometry")
   @js.native
   class AbstractGeometry ()
     extends typings.heremaps.H.geo.AbstractGeometry
@@ -25,8 +25,9 @@ object geo extends js.Object {
   /**
     * Contexts for altitudes to specify the contextual origin of an altitude's value
     */
+  @JSGlobal("H.geo.AltitudeContext")
   @js.native
-  object AltitudeContext extends js.Object {
+  object AltitudeContext extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.heremaps.H.geo.AltitudeContext with Double] = js.native
@@ -46,6 +47,7 @@ object geo extends js.Object {
     /* 0 */ val undefined: typings.heremaps.H.geo.AltitudeContext.undefined with Double = js.native
   }
   
+  @JSGlobal("H.geo.LineString")
   @js.native
   /**
     * Constructor
@@ -59,9 +61,7 @@ object geo extends js.Object {
     def this(opt_latLngAlts: js.UndefOr[scala.Nothing], opt_ctx: AltitudeContext) = this()
     def this(opt_latLngAlts: js.Array[Double], opt_ctx: AltitudeContext) = this()
   }
-  /* static members */
-  @js.native
-  object LineString extends js.Object {
+  object LineString {
     
     /**
       * This method initializes a new LineString with an array of lat, lng values. Arrays are expected to have an even length with the format [lat, lng, lat, lng, ...].
@@ -69,6 +69,9 @@ object geo extends js.Object {
       * @return {H.geo.LineString} - The LineString containing the lat, lng values
       * @throws {H.lang.InvalidArgumentError} - throws an error in case the latLngs array has an odd length
       */
+    /* static member */
+    @JSGlobal("H.geo.LineString.fromLatLngArray")
+    @js.native
     def fromLatLngArray(latLngs: js.Array[Double]): typings.heremaps.H.geo.LineString = js.native
     
     /**
@@ -77,9 +80,13 @@ object geo extends js.Object {
       * @param lng2 {H.geo.Longitude} - The end longitude of the leg
       * @return {boolean}
       */
+    /* static member */
+    @JSGlobal("H.geo.LineString.isDBC")
+    @js.native
     def isDBC(lng1: Longitude, lng2: Longitude): Boolean = js.native
   }
   
+  @JSGlobal("H.geo.MultiGeometry")
   @js.native
   class MultiGeometry[T] protected ()
     extends typings.heremaps.H.geo.MultiGeometry[T] {
@@ -91,6 +98,7 @@ object geo extends js.Object {
     def this(geometries: js.Array[T]) = this()
   }
   
+  @JSGlobal("H.geo.MultiLineString")
   @js.native
   class MultiLineString protected ()
     extends typings.heremaps.H.geo.MultiLineString {
@@ -102,10 +110,12 @@ object geo extends js.Object {
     def this(lineStrings: js.Array[typings.heremaps.H.geo.LineString]) = this()
   }
   
+  @JSGlobal("H.geo.MultiPoint")
   @js.native
   class MultiPoint ()
     extends typings.heremaps.H.geo.MultiGeometry[typings.heremaps.H.geo.Point]
   
+  @JSGlobal("H.geo.MultiPolygon")
   @js.native
   class MultiPolygon ()
     extends typings.heremaps.H.geo.MultiGeometry[typings.heremaps.H.geo.Polygon]
@@ -119,6 +129,7 @@ object geo extends js.Object {
     * @property w {number} - This property holds a value indicating the width of the world in pixels.
     * @property h {number} - This property holds a value indicating the height of the world in pixels.
     */
+  @JSGlobal("H.geo.PixelProjection")
   @js.native
   /**
     * Constructor
@@ -139,6 +150,7 @@ object geo extends js.Object {
     * @property alt {H.geo.Altitude} - The altitude coordinate.
     * @property ctx {H.geo.AltitudeContext} - The altitude context.
     */
+  @JSGlobal("H.geo.Point")
   @js.native
   class Point protected ()
     extends typings.heremaps.H.geo.Point {
@@ -154,15 +166,16 @@ object geo extends js.Object {
     def this(lat: Latitude, lng: Longitude, opt_alt: js.UndefOr[scala.Nothing], opt_ctx: AltitudeContext) = this()
     def this(lat: Latitude, lng: Longitude, opt_alt: Altitude, opt_ctx: AltitudeContext) = this()
   }
-  /* static members */
-  @js.native
-  object Point extends js.Object {
+  object Point {
     
     /**
       * This method creates a Point instance from a given IPoint object.
       * @param iPoint {H.geo.IPoint} - The IPoint object to use
       * @returns {H.geo.Point} - the created Point instance
       */
+    /* static member */
+    @JSGlobal("H.geo.Point.fromIPoint")
+    @js.native
     def fromIPoint(iPoint: IPoint): typings.heremaps.H.geo.Point = js.native
     
     /**
@@ -173,15 +186,25 @@ object geo extends js.Object {
       * @param opt_argNr {number=} - The argument number to use for InvalidArgumentError.
       * @returns {boolean} - if the given point could validate
       */
+    /* static member */
+    @JSGlobal("H.geo.Point.validate")
+    @js.native
     def validate(point: IPoint): Boolean = js.native
+    @JSGlobal("H.geo.Point.validate")
+    @js.native
     def validate(point: IPoint, opt_caller: js.UndefOr[scala.Nothing], opt_argNr: Double): Boolean = js.native
+    @JSGlobal("H.geo.Point.validate")
+    @js.native
     def validate(point: IPoint, opt_caller: js.Function0[Unit]): Boolean = js.native
+    @JSGlobal("H.geo.Point.validate")
+    @js.native
     def validate(point: IPoint, opt_caller: js.Function0[Unit], opt_argNr: Double): Boolean = js.native
   }
   
   /**
     * @link https://developer.here.com/documentation/maps/api_reference/H.geo.Polygon.html
     */
+  @JSGlobal("H.geo.Polygon")
   @js.native
   class Polygon protected ()
     extends typings.heremaps.H.geo.Polygon {
@@ -195,6 +218,7 @@ object geo extends js.Object {
   /**
     * This class represents a rectangular geographic area. The area is defined by four geographical coordinates two (left, right) longitudes and two (top, bottom) latitudes.
     */
+  @JSGlobal("H.geo.Rect")
   @js.native
   class Rect protected ()
     extends typings.heremaps.H.geo.Rect {
@@ -207,9 +231,7 @@ object geo extends js.Object {
       */
     def this(top: Latitude, left: Longitude, bottom: Latitude, right: Longitude) = this()
   }
-  /* static members */
-  @js.native
-  object Rect extends js.Object {
+  object Rect {
     
     /**
       * This method creates the minimum rectangular area covering all of the coordinates in the argument array.
@@ -217,7 +239,12 @@ object geo extends js.Object {
       * @param opt_skipValidation {boolean=} - a boolean flag indicating whether to check validity of the arguments
       * @returns {(H.geo.Rect | undefined)} - returns the minimum rectangular area covering the coordinates
       */
+    /* static member */
+    @JSGlobal("H.geo.Rect.coverLatLngAlts")
+    @js.native
     def coverLatLngAlts(latLngAltArray: js.Array[Double]): typings.heremaps.H.geo.Rect | Unit = js.native
+    @JSGlobal("H.geo.Rect.coverLatLngAlts")
+    @js.native
     def coverLatLngAlts(latLngAltArray: js.Array[Double], opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect | Unit = js.native
     
     /**
@@ -226,7 +253,12 @@ object geo extends js.Object {
       * @param opt_skipValidation {boolean=} - a boolean flag indicating whether to check validity of the arguments
       * @returns {H.geo.Rect} - returns the minimum rectangular area covering the points or null if no point is covered
       */
+    /* static member */
+    @JSGlobal("H.geo.Rect.coverPoints")
+    @js.native
     def coverPoints(pointArray: js.Array[IPoint]): typings.heremaps.H.geo.Rect = js.native
+    @JSGlobal("H.geo.Rect.coverPoints")
+    @js.native
     def coverPoints(pointArray: js.Array[IPoint], opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect = js.native
     
     /**
@@ -235,7 +267,12 @@ object geo extends js.Object {
       * @param opt_skipValidation {boolean=} - a boolean flag indicating whether to check validity of the arguments
       * @returns {(H.geo.Rect | undefined)} - returns the minimum rectangular area covering the rectangular areas
       */
+    /* static member */
+    @JSGlobal("H.geo.Rect.coverRects")
+    @js.native
     def coverRects(rectArray: js.Array[typings.heremaps.H.geo.Rect]): typings.heremaps.H.geo.Rect | Unit = js.native
+    @JSGlobal("H.geo.Rect.coverRects")
+    @js.native
     def coverRects(rectArray: js.Array[typings.heremaps.H.geo.Rect], opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect | Unit = js.native
     
     /**
@@ -245,7 +282,12 @@ object geo extends js.Object {
       * @param opt_skipValidation {boolean=} - a boolean flag indicating whether to check validity of the arguments
       * @returns {H.geo.Rect} - returns the rectangular area defined by the top-left and bottom-right corners
       */
+    /* static member */
+    @JSGlobal("H.geo.Rect.fromPoints")
+    @js.native
     def fromPoints(topLeft: IPoint, bottomRight: IPoint): typings.heremaps.H.geo.Rect = js.native
+    @JSGlobal("H.geo.Rect.fromPoints")
+    @js.native
     def fromPoints(topLeft: IPoint, bottomRight: IPoint, opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect = js.native
     
     /**
@@ -261,6 +303,9 @@ object geo extends js.Object {
       * @param opt_out {H.geo.Rect=} - an optional rect to store the results
       * @returns {H.geo.Rect} - either the opt_out rect or a new rect
       */
+    /* static member */
+    @JSGlobal("H.geo.Rect.merge")
+    @js.native
     def merge(
       topA: Latitude,
       leftA: Longitude,
@@ -271,6 +316,8 @@ object geo extends js.Object {
       bottomB: Latitude,
       rightB: Longitude
     ): typings.heremaps.H.geo.Rect = js.native
+    @JSGlobal("H.geo.Rect.merge")
+    @js.native
     def merge(
       topA: Latitude,
       leftA: Longitude,

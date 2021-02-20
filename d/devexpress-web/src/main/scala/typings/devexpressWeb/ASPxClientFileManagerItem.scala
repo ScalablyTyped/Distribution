@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A client-side equivalent of the file manager's FileManagerItem object and serves as a base class for client file and folder objects.
   */
 @js.native
-trait ASPxClientFileManagerItem extends js.Object {
+trait ASPxClientFileManagerItem extends StObject {
   
   /**
     * Gets the current item's full name with the specified settings. A string value that is the full name of an item.

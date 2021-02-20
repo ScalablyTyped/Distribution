@@ -1,26 +1,48 @@
 package typings.sharepoint.global.SP.JsGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.JsGrid.WidgetControl")
-@js.native
-object WidgetControl extends js.Object {
+object WidgetControl {
   
+  @JSGlobal("SP.JsGrid.WidgetControl.Type")
   @js.native
   class Type ()
     extends typings.sharepoint.SP.JsGrid.WidgetControl.Type
-  /* static members */
-  @js.native
-  object Type extends js.Object {
+  object Type {
     
-    var AddressBook: String = js.native
+    @JSGlobal("SP.JsGrid.WidgetControl.Type")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var Date: String = js.native
+    /* static member */
+    @JSGlobal("SP.JsGrid.WidgetControl.Type.AddressBook")
+    @js.native
+    def AddressBook: String = js.native
+    @scala.inline
+    def AddressBook_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AddressBook")(x.asInstanceOf[js.Any])
     
-    var Demo: String = js.native
+    /* static member */
+    @JSGlobal("SP.JsGrid.WidgetControl.Type.Date")
+    @js.native
+    def Date: String = js.native
+    @scala.inline
+    def Date_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Date")(x.asInstanceOf[js.Any])
     
-    var Hyperlink: String = js.native
+    /* static member */
+    @JSGlobal("SP.JsGrid.WidgetControl.Type.Demo")
+    @js.native
+    def Demo: String = js.native
+    @scala.inline
+    def Demo_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Demo")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSGlobal("SP.JsGrid.WidgetControl.Type.Hyperlink")
+    @js.native
+    def Hyperlink: String = js.native
+    @scala.inline
+    def Hyperlink_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hyperlink")(x.asInstanceOf[js.Any])
   }
 }

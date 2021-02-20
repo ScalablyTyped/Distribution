@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransformationResult[T /* <: Node */] extends js.Object {
+trait TransformationResult[T /* <: Node */] extends StObject {
   
   /** Gets diagnostics for the transformation. */
   var diagnostics: js.UndefOr[js.Array[DiagnosticWithLocation]] = js.native
@@ -56,48 +57,36 @@ object TransformationResult {
   }
   
   @scala.inline
-  implicit class TransformationResultOps[Self <: TransformationResult[_], T /* <: Node */] (val x: Self with TransformationResult[T]) extends AnyVal {
+  implicit class TransformationResultMutableBuilder[Self <: TransformationResult[_], T /* <: Node */] (val x: Self with TransformationResult[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiagnostics(value: js.Array[DiagnosticWithLocation]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiagnosticsVarargs(value: DiagnosticWithLocation*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEmitNodeWithNotification(value: (EmitHint, Node, js.Function2[/* hint */ EmitHint, /* node */ Node, Unit]) => Unit): Self = this.set("emitNodeWithNotification", js.Any.fromFunction3(value))
+    def setEmitNodeWithNotification(value: (EmitHint, Node, js.Function2[/* hint */ EmitHint, /* node */ Node, Unit]) => Unit): Self = StObject.set(x, "emitNodeWithNotification", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSubstituteNode(value: (EmitHint, Node) => Node): Self = this.set("substituteNode", js.Any.fromFunction2(value))
+    def setIsEmitNotificationEnabled(value: /* node */ Node => Boolean): Self = StObject.set(x, "isEmitNotificationEnabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTransformedVarargs(value: T*): Self = this.set("transformed", js.Array(value :_*))
+    def setIsEmitNotificationEnabledUndefined: Self = StObject.set(x, "isEmitNotificationEnabled", js.undefined)
     
     @scala.inline
-    def setTransformed(value: js.Array[T]): Self = this.set("transformed", value.asInstanceOf[js.Any])
+    def setSubstituteNode(value: (EmitHint, Node) => Node): Self = StObject.set(x, "substituteNode", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDiagnosticsVarargs(value: DiagnosticWithLocation*): Self = this.set("diagnostics", js.Array(value :_*))
+    def setTransformed(value: js.Array[T]): Self = StObject.set(x, "transformed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagnostics(value: js.Array[DiagnosticWithLocation]): Self = this.set("diagnostics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDiagnostics: Self = this.set("diagnostics", js.undefined)
-    
-    @scala.inline
-    def setIsEmitNotificationEnabled(value: /* node */ Node => Boolean): Self = this.set("isEmitNotificationEnabled", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteIsEmitNotificationEnabled: Self = this.set("isEmitNotificationEnabled", js.undefined)
+    def setTransformedVarargs(value: T*): Self = StObject.set(x, "transformed", js.Array(value :_*))
   }
 }

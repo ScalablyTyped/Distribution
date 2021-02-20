@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputUpdate extends js.Object {
+trait InputUpdate extends StObject {
   
   /**
     * The input ID of the application input to be updated.
@@ -51,57 +52,45 @@ object InputUpdate {
   }
   
   @scala.inline
-  implicit class InputUpdateOps[Self <: InputUpdate] (val x: Self) extends AnyVal {
+  implicit class InputUpdateMutableBuilder[Self <: InputUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputId(value: Id): Self = StObject.set(x, "InputId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputParallelismUpdate(value: InputParallelismUpdate): Self = StObject.set(x, "InputParallelismUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputParallelismUpdateUndefined: Self = StObject.set(x, "InputParallelismUpdate", js.undefined)
     
     @scala.inline
-    def setInputId(value: Id): Self = this.set("InputId", value.asInstanceOf[js.Any])
+    def setInputProcessingConfigurationUpdate(value: InputProcessingConfigurationUpdate): Self = StObject.set(x, "InputProcessingConfigurationUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputParallelismUpdate(value: InputParallelismUpdate): Self = this.set("InputParallelismUpdate", value.asInstanceOf[js.Any])
+    def setInputProcessingConfigurationUpdateUndefined: Self = StObject.set(x, "InputProcessingConfigurationUpdate", js.undefined)
     
     @scala.inline
-    def deleteInputParallelismUpdate: Self = this.set("InputParallelismUpdate", js.undefined)
+    def setInputSchemaUpdate(value: InputSchemaUpdate): Self = StObject.set(x, "InputSchemaUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputProcessingConfigurationUpdate(value: InputProcessingConfigurationUpdate): Self = this.set("InputProcessingConfigurationUpdate", value.asInstanceOf[js.Any])
+    def setInputSchemaUpdateUndefined: Self = StObject.set(x, "InputSchemaUpdate", js.undefined)
     
     @scala.inline
-    def deleteInputProcessingConfigurationUpdate: Self = this.set("InputProcessingConfigurationUpdate", js.undefined)
+    def setKinesisFirehoseInputUpdate(value: KinesisFirehoseInputUpdate): Self = StObject.set(x, "KinesisFirehoseInputUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputSchemaUpdate(value: InputSchemaUpdate): Self = this.set("InputSchemaUpdate", value.asInstanceOf[js.Any])
+    def setKinesisFirehoseInputUpdateUndefined: Self = StObject.set(x, "KinesisFirehoseInputUpdate", js.undefined)
     
     @scala.inline
-    def deleteInputSchemaUpdate: Self = this.set("InputSchemaUpdate", js.undefined)
+    def setKinesisStreamsInputUpdate(value: KinesisStreamsInputUpdate): Self = StObject.set(x, "KinesisStreamsInputUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKinesisFirehoseInputUpdate(value: KinesisFirehoseInputUpdate): Self = this.set("KinesisFirehoseInputUpdate", value.asInstanceOf[js.Any])
+    def setKinesisStreamsInputUpdateUndefined: Self = StObject.set(x, "KinesisStreamsInputUpdate", js.undefined)
     
     @scala.inline
-    def deleteKinesisFirehoseInputUpdate: Self = this.set("KinesisFirehoseInputUpdate", js.undefined)
+    def setNamePrefixUpdate(value: InAppStreamName): Self = StObject.set(x, "NamePrefixUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKinesisStreamsInputUpdate(value: KinesisStreamsInputUpdate): Self = this.set("KinesisStreamsInputUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKinesisStreamsInputUpdate: Self = this.set("KinesisStreamsInputUpdate", js.undefined)
-    
-    @scala.inline
-    def setNamePrefixUpdate(value: InAppStreamName): Self = this.set("NamePrefixUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamePrefixUpdate: Self = this.set("NamePrefixUpdate", js.undefined)
+    def setNamePrefixUpdateUndefined: Self = StObject.set(x, "NamePrefixUpdate", js.undefined)
   }
 }

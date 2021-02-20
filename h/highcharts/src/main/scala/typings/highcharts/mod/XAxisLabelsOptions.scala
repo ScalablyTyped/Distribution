@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
 import typings.highcharts.highchartsBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XAxisLabelsOptions extends js.Object {
+trait XAxisLabelsOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) What part of the string the
@@ -201,147 +202,135 @@ object XAxisLabelsOptions {
   }
   
   @scala.inline
-  implicit class XAxisLabelsOptionsOps[Self <: XAxisLabelsOptions] (val x: Self) extends AnyVal {
+  implicit class XAxisLabelsOptionsMutableBuilder[Self <: XAxisLabelsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoRotation(value: `false` | js.Array[Double]): Self = StObject.set(x, "autoRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: AlignValue): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setAutoRotationLimit(value: Double): Self = StObject.set(x, "autoRotationLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setAutoRotationLimitUndefined: Self = StObject.set(x, "autoRotationLimit", js.undefined)
     
     @scala.inline
-    def setAutoRotationVarargs(value: Double*): Self = this.set("autoRotation", js.Array(value :_*))
+    def setAutoRotationUndefined: Self = StObject.set(x, "autoRotation", js.undefined)
     
     @scala.inline
-    def setAutoRotation(value: `false` | js.Array[Double]): Self = this.set("autoRotation", value.asInstanceOf[js.Any])
+    def setAutoRotationVarargs(value: Double*): Self = StObject.set(x, "autoRotation", js.Array(value :_*))
     
     @scala.inline
-    def deleteAutoRotation: Self = this.set("autoRotation", js.undefined)
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRotationLimit(value: Double): Self = this.set("autoRotationLimit", value.asInstanceOf[js.Any])
+    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
     @scala.inline
-    def deleteAutoRotationLimit: Self = this.set("autoRotationLimit", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDistance: Self = this.set("distance", js.undefined)
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setFormatter(value: AxisLabelsFormatterCallbackFunction): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setIndentation(value: Double): Self = StObject.set(x, "indentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatter(value: AxisLabelsFormatterCallbackFunction): Self = this.set("formatter", value.asInstanceOf[js.Any])
+    def setIndentationUndefined: Self = StObject.set(x, "indentation", js.undefined)
     
     @scala.inline
-    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    def setOverflow(value: OptionsOverflowValue): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentation(value: Double): Self = this.set("indentation", value.asInstanceOf[js.Any])
+    def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
     @scala.inline
-    def deleteIndentation: Self = this.set("indentation", js.undefined)
+    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflow(value: OptionsOverflowValue): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteOverflow: Self = this.set("overflow", js.undefined)
+    def setPosition3d(value: OptionsPosition3dValue): Self = StObject.set(x, "position3d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setPosition3dUndefined: Self = StObject.set(x, "position3d", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setReserveSpace(value: Boolean): Self = StObject.set(x, "reserveSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition3d(value: OptionsPosition3dValue): Self = this.set("position3d", value.asInstanceOf[js.Any])
+    def setReserveSpaceUndefined: Self = StObject.set(x, "reserveSpace", js.undefined)
     
     @scala.inline
-    def deletePosition3d: Self = this.set("position3d", js.undefined)
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReserveSpace(value: Boolean): Self = this.set("reserveSpace", value.asInstanceOf[js.Any])
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def deleteReserveSpace: Self = this.set("reserveSpace", js.undefined)
+    def setSkew3d(value: Boolean): Self = StObject.set(x, "skew3d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setSkew3dUndefined: Self = StObject.set(x, "skew3d", js.undefined)
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setStaggerLines(value: Double): Self = StObject.set(x, "staggerLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkew3d(value: Boolean): Self = this.set("skew3d", value.asInstanceOf[js.Any])
+    def setStaggerLinesUndefined: Self = StObject.set(x, "staggerLines", js.undefined)
     
     @scala.inline
-    def deleteSkew3d: Self = this.set("skew3d", js.undefined)
+    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStaggerLines(value: Double): Self = this.set("staggerLines", value.asInstanceOf[js.Any])
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     @scala.inline
-    def deleteStaggerLines: Self = this.set("staggerLines", js.undefined)
+    def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
+    def setUseHTML(value: Boolean): Self = StObject.set(x, "useHTML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: CSSObject): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setUseHTMLUndefined: Self = StObject.set(x, "useHTML", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseHTML(value: Boolean): Self = this.set("useHTML", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteUseHTML: Self = this.set("useHTML", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
     @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

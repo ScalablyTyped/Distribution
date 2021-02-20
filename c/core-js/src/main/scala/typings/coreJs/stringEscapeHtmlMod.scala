@@ -1,11 +1,14 @@
 package typings.coreJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/library/fn/string/escape-html", JSImport.Namespace)
-@js.native
-object stringEscapeHtmlMod
-  extends TopLevel[js.Function1[/* str */ java.lang.String, java.lang.String]]
+object stringEscapeHtmlMod {
+  
+  /* was `typeof core.String.escapeHTML` */
+  @JSImport("core-js/library/fn/string/escape-html", JSImport.Namespace)
+  @js.native
+  def apply(text: java.lang.String): java.lang.String = js.native
+}

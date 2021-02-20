@@ -1,5 +1,6 @@
 package typings.parse5.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.parse5.parse5Strings.quirks
   - typings.parse5.parse5Strings.`limited-quirks`
 */
-trait DocumentMode extends js.Object
+trait DocumentMode extends StObject
 object DocumentMode {
   
   @scala.inline

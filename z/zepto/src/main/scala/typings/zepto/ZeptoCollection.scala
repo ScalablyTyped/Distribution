@@ -3,12 +3,13 @@ package typings.zepto
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.XMLHttpRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ZeptoCollection extends js.Object {
+trait ZeptoCollection extends StObject {
   
   /**
     * Core
@@ -471,7 +472,7 @@ trait ZeptoCollection extends js.Object {
   def index(element: js.Any): Double = js.native
   def index(element: HTMLElement): Double = js.native
   
-   // not sure so leaving in for now
+  // not sure so leaving in for now
   /**
     * Get the position of an element in the current collection. If fromIndex number is given, search only from that position onwards. Returns the 0-based position when found and -1 if not found. Use of index is recommended over this method.
     * (!) This is a Zepto-provided method that is not part of the jQuery API.
@@ -495,7 +496,7 @@ trait ZeptoCollection extends js.Object {
   def indexOf(element: HTMLElement): Double = js.native
   def indexOf(element: HTMLElement, fromIndex: Double): Double = js.native
   
-   // not sure so leaving in for now
+  // not sure so leaving in for now
   /**
     * Insert elements from the current collection after the target element in the DOM. This is like after, but with reversed operands.
     * @param target

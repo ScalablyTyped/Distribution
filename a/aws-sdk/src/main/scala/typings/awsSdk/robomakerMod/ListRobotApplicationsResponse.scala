@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListRobotApplicationsResponse extends js.Object {
+trait ListRobotApplicationsResponse extends StObject {
   
   /**
     * If the previous paginated request did not return all of the remaining results, the response object's nextToken parameter value is set to a token. To retrieve the next set of results, call ListRobotApplications again and assign that token to the request object's nextToken parameter. If there are no remaining results, the previous response object's NextToken parameter is set to null. 
@@ -26,33 +27,21 @@ object ListRobotApplicationsResponse {
   }
   
   @scala.inline
-  implicit class ListRobotApplicationsResponseOps[Self <: ListRobotApplicationsResponse] (val x: Self) extends AnyVal {
+  implicit class ListRobotApplicationsResponseMutableBuilder[Self <: ListRobotApplicationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRobotApplicationSummaries(value: RobotApplicationSummaries): Self = StObject.set(x, "robotApplicationSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setRobotApplicationSummariesUndefined: Self = StObject.set(x, "robotApplicationSummaries", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setRobotApplicationSummariesVarargs(value: RobotApplicationSummary*): Self = this.set("robotApplicationSummaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setRobotApplicationSummaries(value: RobotApplicationSummaries): Self = this.set("robotApplicationSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRobotApplicationSummaries: Self = this.set("robotApplicationSummaries", js.undefined)
+    def setRobotApplicationSummariesVarargs(value: RobotApplicationSummary*): Self = StObject.set(x, "robotApplicationSummaries", js.Array(value :_*))
   }
 }

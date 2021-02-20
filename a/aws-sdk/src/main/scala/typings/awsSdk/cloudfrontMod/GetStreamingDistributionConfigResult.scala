@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetStreamingDistributionConfigResult extends js.Object {
+trait GetStreamingDistributionConfigResult extends StObject {
   
   /**
     * The current version of the configuration. For example: E2QWRUHAPOMQZL. 
@@ -26,30 +27,18 @@ object GetStreamingDistributionConfigResult {
   }
   
   @scala.inline
-  implicit class GetStreamingDistributionConfigResultOps[Self <: GetStreamingDistributionConfigResult] (val x: Self) extends AnyVal {
+  implicit class GetStreamingDistributionConfigResultMutableBuilder[Self <: GetStreamingDistributionConfigResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStreamingDistributionConfig(value: StreamingDistributionConfig): Self = StObject.set(x, "StreamingDistributionConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setETag(value: String): Self = this.set("ETag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteETag: Self = this.set("ETag", js.undefined)
-    
-    @scala.inline
-    def setStreamingDistributionConfig(value: StreamingDistributionConfig): Self = this.set("StreamingDistributionConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamingDistributionConfig: Self = this.set("StreamingDistributionConfig", js.undefined)
+    def setStreamingDistributionConfigUndefined: Self = StObject.set(x, "StreamingDistributionConfig", js.undefined)
   }
 }

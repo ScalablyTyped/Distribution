@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,42 +38,30 @@ object TouchableHighlightProps {
   }
   
   @scala.inline
-  implicit class TouchableHighlightPropsOps[Self <: TouchableHighlightProps] (val x: Self) extends AnyVal {
+  implicit class TouchableHighlightPropsMutableBuilder[Self <: TouchableHighlightProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnHideUnderlay(value: () => Unit): Self = StObject.set(x, "onHideUnderlay", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setActiveOpacity(value: Double): Self = this.set("activeOpacity", value.asInstanceOf[js.Any])
+    def setOnHideUnderlayUndefined: Self = StObject.set(x, "onHideUnderlay", js.undefined)
     
     @scala.inline
-    def deleteActiveOpacity: Self = this.set("activeOpacity", js.undefined)
+    def setOnShowUnderlay(value: () => Unit): Self = StObject.set(x, "onShowUnderlay", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnHideUnderlay(value: () => Unit): Self = this.set("onHideUnderlay", js.Any.fromFunction0(value))
+    def setOnShowUnderlayUndefined: Self = StObject.set(x, "onShowUnderlay", js.undefined)
     
     @scala.inline
-    def deleteOnHideUnderlay: Self = this.set("onHideUnderlay", js.undefined)
+    def setUnderlayColor(value: ColorValue): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnShowUnderlay(value: () => Unit): Self = this.set("onShowUnderlay", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnShowUnderlay: Self = this.set("onShowUnderlay", js.undefined)
-    
-    @scala.inline
-    def setUnderlayColor(value: ColorValue): Self = this.set("underlayColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnderlayColor: Self = this.set("underlayColor", js.undefined)
+    def setUnderlayColorUndefined: Self = StObject.set(x, "underlayColor", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranslate.gapi.client.translate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TranslateTextResponse extends js.Object {
+trait TranslateTextResponse extends StObject {
   
   /** Text translation responses if a glossary is provided in the request. This can be the same as `translations` if no terms apply. This field has the same length as `contents`. */
   var glossaryTranslations: js.UndefOr[js.Array[Translation]] = js.native
@@ -22,36 +23,24 @@ object TranslateTextResponse {
   }
   
   @scala.inline
-  implicit class TranslateTextResponseOps[Self <: TranslateTextResponse] (val x: Self) extends AnyVal {
+  implicit class TranslateTextResponseMutableBuilder[Self <: TranslateTextResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlossaryTranslations(value: js.Array[Translation]): Self = StObject.set(x, "glossaryTranslations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlossaryTranslationsUndefined: Self = StObject.set(x, "glossaryTranslations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlossaryTranslationsVarargs(value: Translation*): Self = StObject.set(x, "glossaryTranslations", js.Array(value :_*))
     
     @scala.inline
-    def setGlossaryTranslationsVarargs(value: Translation*): Self = this.set("glossaryTranslations", js.Array(value :_*))
+    def setTranslations(value: js.Array[Translation]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlossaryTranslations(value: js.Array[Translation]): Self = this.set("glossaryTranslations", value.asInstanceOf[js.Any])
+    def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     
     @scala.inline
-    def deleteGlossaryTranslations: Self = this.set("glossaryTranslations", js.undefined)
-    
-    @scala.inline
-    def setTranslationsVarargs(value: Translation*): Self = this.set("translations", js.Array(value :_*))
-    
-    @scala.inline
-    def setTranslations(value: js.Array[Translation]): Self = this.set("translations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslations: Self = this.set("translations", js.undefined)
+    def setTranslationsVarargs(value: Translation*): Self = StObject.set(x, "translations", js.Array(value :_*))
   }
 }

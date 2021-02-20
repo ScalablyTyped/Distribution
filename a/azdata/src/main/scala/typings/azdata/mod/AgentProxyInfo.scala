@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AgentProxyInfo extends js.Object {
+trait AgentProxyInfo extends StObject {
   
   var accountName: String = js.native
   
@@ -38,39 +39,27 @@ object AgentProxyInfo {
   }
   
   @scala.inline
-  implicit class AgentProxyInfoOps[Self <: AgentProxyInfo] (val x: Self) extends AnyVal {
+  implicit class AgentProxyInfoMutableBuilder[Self <: AgentProxyInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCredentialId(value: Double): Self = StObject.set(x, "credentialId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCredentialIdentity(value: String): Self = StObject.set(x, "credentialIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountName(value: String): Self = this.set("accountName", value.asInstanceOf[js.Any])
+    def setCredentialName(value: String): Self = StObject.set(x, "credentialName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentialId(value: Double): Self = this.set("credentialId", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentialIdentity(value: String): Self = this.set("credentialIdentity", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentialName(value: String): Self = this.set("credentialName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
+    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
   }
 }

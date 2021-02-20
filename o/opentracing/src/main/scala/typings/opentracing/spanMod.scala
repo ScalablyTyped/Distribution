@@ -1,16 +1,20 @@
 package typings.opentracing
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("opentracing/lib/span", JSImport.Namespace)
-@js.native
-object spanMod extends js.Object {
+object spanMod {
   
+  @JSImport("opentracing/lib/span", JSImport.Default)
   @js.native
-  class Span () extends js.Object {
+  class default () extends Span
+  
+  @JSImport("opentracing/lib/span", "Span")
+  @js.native
+  class Span () extends StObject {
     
     /* protected */ def _addTags(keyValuePairs: StringDictionary[js.Any]): Unit = js.native
     
@@ -161,7 +165,4 @@ object spanMod extends js.Object {
       */
     def tracer(): typings.opentracing.tracerMod.default = js.native
   }
-  
-  @js.native
-  class default () extends Span
 }

@@ -6,6 +6,7 @@ import typings.qlik.qlikStrings.ValueExpression
 import typings.qlik.qlikStrings.dimension
 import typings.qlik.qlikStrings.expression
 import typings.qlik.qlikStrings.measure
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,32 +37,20 @@ object CustomPropertyExpression {
   }
   
   @scala.inline
-  implicit class CustomPropertyExpressionOps[Self <: CustomPropertyExpression] (val x: Self) extends AnyVal {
+  implicit class CustomPropertyExpressionMutableBuilder[Self <: CustomPropertyExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponent(value: expression): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComponent(value: expression): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
     def setExpressionType(
       value: dimension | measure | StringExpr | typings.qlik.qlikStrings.ValueExpr | ValueExpression | StringExpression
-    ): Self = this.set("expressionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    ): Self = StObject.set(x, "expressionType", value.asInstanceOf[js.Any])
   }
 }

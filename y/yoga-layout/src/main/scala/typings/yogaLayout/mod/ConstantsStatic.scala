@@ -10,12 +10,13 @@ import typings.yogaLayout.yogaLayoutNumbers.`6`
 import typings.yogaLayout.yogaLayoutNumbers.`7`
 import typings.yogaLayout.yogaLayoutNumbers.`8`
 import typings.yogaLayout.yogaLayoutNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConstantsStatic extends js.Object {
+trait ConstantsStatic extends StObject {
   
   val ALIGN_AUTO: `0` = js.native
   
@@ -258,249 +259,237 @@ object ConstantsStatic {
   }
   
   @scala.inline
-  implicit class ConstantsStaticOps[Self <: ConstantsStatic] (val x: Self) extends AnyVal {
+  implicit class ConstantsStaticMutableBuilder[Self <: ConstantsStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setALIGN_AUTO(value: `0`): Self = StObject.set(x, "ALIGN_AUTO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setALIGN_BASELINE(value: `5`): Self = StObject.set(x, "ALIGN_BASELINE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setALIGN_CENTER(value: `2`): Self = StObject.set(x, "ALIGN_CENTER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setALIGN_AUTO(value: `0`): Self = this.set("ALIGN_AUTO", value.asInstanceOf[js.Any])
+    def setALIGN_COUNT(value: `8`): Self = StObject.set(x, "ALIGN_COUNT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setALIGN_BASELINE(value: `5`): Self = this.set("ALIGN_BASELINE", value.asInstanceOf[js.Any])
+    def setALIGN_FLEX_END(value: `3`): Self = StObject.set(x, "ALIGN_FLEX_END", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setALIGN_CENTER(value: `2`): Self = this.set("ALIGN_CENTER", value.asInstanceOf[js.Any])
+    def setALIGN_FLEX_START(value: `1`): Self = StObject.set(x, "ALIGN_FLEX_START", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setALIGN_COUNT(value: `8`): Self = this.set("ALIGN_COUNT", value.asInstanceOf[js.Any])
+    def setALIGN_SPACE_AROUND(value: `7`): Self = StObject.set(x, "ALIGN_SPACE_AROUND", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setALIGN_FLEX_END(value: `3`): Self = this.set("ALIGN_FLEX_END", value.asInstanceOf[js.Any])
+    def setALIGN_SPACE_BETWEEN(value: `6`): Self = StObject.set(x, "ALIGN_SPACE_BETWEEN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setALIGN_FLEX_START(value: `1`): Self = this.set("ALIGN_FLEX_START", value.asInstanceOf[js.Any])
+    def setALIGN_STRETCH(value: `4`): Self = StObject.set(x, "ALIGN_STRETCH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setALIGN_SPACE_AROUND(value: `7`): Self = this.set("ALIGN_SPACE_AROUND", value.asInstanceOf[js.Any])
+    def setDIMENSION_COUNT(value: `2`): Self = StObject.set(x, "DIMENSION_COUNT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setALIGN_SPACE_BETWEEN(value: `6`): Self = this.set("ALIGN_SPACE_BETWEEN", value.asInstanceOf[js.Any])
+    def setDIMENSION_HEIGHT(value: `1`): Self = StObject.set(x, "DIMENSION_HEIGHT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setALIGN_STRETCH(value: `4`): Self = this.set("ALIGN_STRETCH", value.asInstanceOf[js.Any])
+    def setDIMENSION_WIDTH(value: `0`): Self = StObject.set(x, "DIMENSION_WIDTH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDIMENSION_COUNT(value: `2`): Self = this.set("DIMENSION_COUNT", value.asInstanceOf[js.Any])
+    def setDIRECTION_COUNT(value: `3`): Self = StObject.set(x, "DIRECTION_COUNT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDIMENSION_HEIGHT(value: `1`): Self = this.set("DIMENSION_HEIGHT", value.asInstanceOf[js.Any])
+    def setDIRECTION_INHERIT(value: `0`): Self = StObject.set(x, "DIRECTION_INHERIT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDIMENSION_WIDTH(value: `0`): Self = this.set("DIMENSION_WIDTH", value.asInstanceOf[js.Any])
+    def setDIRECTION_LTR(value: `1`): Self = StObject.set(x, "DIRECTION_LTR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDIRECTION_COUNT(value: `3`): Self = this.set("DIRECTION_COUNT", value.asInstanceOf[js.Any])
+    def setDIRECTION_RTL(value: `2`): Self = StObject.set(x, "DIRECTION_RTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDIRECTION_INHERIT(value: `0`): Self = this.set("DIRECTION_INHERIT", value.asInstanceOf[js.Any])
+    def setDISPLAY_COUNT(value: `2`): Self = StObject.set(x, "DISPLAY_COUNT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDIRECTION_LTR(value: `1`): Self = this.set("DIRECTION_LTR", value.asInstanceOf[js.Any])
+    def setDISPLAY_FLEX(value: `0`): Self = StObject.set(x, "DISPLAY_FLEX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDIRECTION_RTL(value: `2`): Self = this.set("DIRECTION_RTL", value.asInstanceOf[js.Any])
+    def setDISPLAY_NONE(value: `1`): Self = StObject.set(x, "DISPLAY_NONE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDISPLAY_COUNT(value: `2`): Self = this.set("DISPLAY_COUNT", value.asInstanceOf[js.Any])
+    def setEDGE_ALL(value: `8`): Self = StObject.set(x, "EDGE_ALL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDISPLAY_FLEX(value: `0`): Self = this.set("DISPLAY_FLEX", value.asInstanceOf[js.Any])
+    def setEDGE_BOTTOM(value: `3`): Self = StObject.set(x, "EDGE_BOTTOM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDISPLAY_NONE(value: `1`): Self = this.set("DISPLAY_NONE", value.asInstanceOf[js.Any])
+    def setEDGE_COUNT(value: `9`): Self = StObject.set(x, "EDGE_COUNT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEDGE_ALL(value: `8`): Self = this.set("EDGE_ALL", value.asInstanceOf[js.Any])
+    def setEDGE_END(value: `5`): Self = StObject.set(x, "EDGE_END", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEDGE_BOTTOM(value: `3`): Self = this.set("EDGE_BOTTOM", value.asInstanceOf[js.Any])
+    def setEDGE_HORIZONTAL(value: `6`): Self = StObject.set(x, "EDGE_HORIZONTAL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEDGE_COUNT(value: `9`): Self = this.set("EDGE_COUNT", value.asInstanceOf[js.Any])
+    def setEDGE_LEFT(value: `0`): Self = StObject.set(x, "EDGE_LEFT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEDGE_END(value: `5`): Self = this.set("EDGE_END", value.asInstanceOf[js.Any])
+    def setEDGE_RIGHT(value: `2`): Self = StObject.set(x, "EDGE_RIGHT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEDGE_HORIZONTAL(value: `6`): Self = this.set("EDGE_HORIZONTAL", value.asInstanceOf[js.Any])
+    def setEDGE_START(value: `4`): Self = StObject.set(x, "EDGE_START", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEDGE_LEFT(value: `0`): Self = this.set("EDGE_LEFT", value.asInstanceOf[js.Any])
+    def setEDGE_TOP(value: `1`): Self = StObject.set(x, "EDGE_TOP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEDGE_RIGHT(value: `2`): Self = this.set("EDGE_RIGHT", value.asInstanceOf[js.Any])
+    def setEDGE_VERTICAL(value: `7`): Self = StObject.set(x, "EDGE_VERTICAL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEDGE_START(value: `4`): Self = this.set("EDGE_START", value.asInstanceOf[js.Any])
+    def setEXPERIMENTAL_FEATURE_COUNT(value: `1`): Self = StObject.set(x, "EXPERIMENTAL_FEATURE_COUNT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEDGE_TOP(value: `1`): Self = this.set("EDGE_TOP", value.asInstanceOf[js.Any])
+    def setEXPERIMENTAL_FEATURE_WEB_FLEX_BASIS(value: `0`): Self = StObject.set(x, "EXPERIMENTAL_FEATURE_WEB_FLEX_BASIS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEDGE_VERTICAL(value: `7`): Self = this.set("EDGE_VERTICAL", value.asInstanceOf[js.Any])
+    def setFLEX_DIRECTION_COLUMN(value: `0`): Self = StObject.set(x, "FLEX_DIRECTION_COLUMN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEXPERIMENTAL_FEATURE_COUNT(value: `1`): Self = this.set("EXPERIMENTAL_FEATURE_COUNT", value.asInstanceOf[js.Any])
+    def setFLEX_DIRECTION_COLUMN_REVERSE(value: `1`): Self = StObject.set(x, "FLEX_DIRECTION_COLUMN_REVERSE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEXPERIMENTAL_FEATURE_WEB_FLEX_BASIS(value: `0`): Self = this.set("EXPERIMENTAL_FEATURE_WEB_FLEX_BASIS", value.asInstanceOf[js.Any])
+    def setFLEX_DIRECTION_COUNT(value: `4`): Self = StObject.set(x, "FLEX_DIRECTION_COUNT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFLEX_DIRECTION_COLUMN(value: `0`): Self = this.set("FLEX_DIRECTION_COLUMN", value.asInstanceOf[js.Any])
+    def setFLEX_DIRECTION_ROW(value: `2`): Self = StObject.set(x, "FLEX_DIRECTION_ROW", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFLEX_DIRECTION_COLUMN_REVERSE(value: `1`): Self = this.set("FLEX_DIRECTION_COLUMN_REVERSE", value.asInstanceOf[js.Any])
+    def setFLEX_DIRECTION_ROW_REVERSE(value: `3`): Self = StObject.set(x, "FLEX_DIRECTION_ROW_REVERSE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFLEX_DIRECTION_COUNT(value: `4`): Self = this.set("FLEX_DIRECTION_COUNT", value.asInstanceOf[js.Any])
+    def setJUSTIFY_CENTER(value: `1`): Self = StObject.set(x, "JUSTIFY_CENTER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFLEX_DIRECTION_ROW(value: `2`): Self = this.set("FLEX_DIRECTION_ROW", value.asInstanceOf[js.Any])
+    def setJUSTIFY_COUNT(value: `6`): Self = StObject.set(x, "JUSTIFY_COUNT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFLEX_DIRECTION_ROW_REVERSE(value: `3`): Self = this.set("FLEX_DIRECTION_ROW_REVERSE", value.asInstanceOf[js.Any])
+    def setJUSTIFY_FLEX_END(value: `2`): Self = StObject.set(x, "JUSTIFY_FLEX_END", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJUSTIFY_CENTER(value: `1`): Self = this.set("JUSTIFY_CENTER", value.asInstanceOf[js.Any])
+    def setJUSTIFY_FLEX_START(value: `0`): Self = StObject.set(x, "JUSTIFY_FLEX_START", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJUSTIFY_COUNT(value: `6`): Self = this.set("JUSTIFY_COUNT", value.asInstanceOf[js.Any])
+    def setJUSTIFY_SPACE_AROUND(value: `4`): Self = StObject.set(x, "JUSTIFY_SPACE_AROUND", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJUSTIFY_FLEX_END(value: `2`): Self = this.set("JUSTIFY_FLEX_END", value.asInstanceOf[js.Any])
+    def setJUSTIFY_SPACE_BETWEEN(value: `3`): Self = StObject.set(x, "JUSTIFY_SPACE_BETWEEN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJUSTIFY_FLEX_START(value: `0`): Self = this.set("JUSTIFY_FLEX_START", value.asInstanceOf[js.Any])
+    def setJUSTIFY_SPACE_EVENLY(value: `5`): Self = StObject.set(x, "JUSTIFY_SPACE_EVENLY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJUSTIFY_SPACE_AROUND(value: `4`): Self = this.set("JUSTIFY_SPACE_AROUND", value.asInstanceOf[js.Any])
+    def setLOG_LEVEL_COUNT(value: `6`): Self = StObject.set(x, "LOG_LEVEL_COUNT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJUSTIFY_SPACE_BETWEEN(value: `3`): Self = this.set("JUSTIFY_SPACE_BETWEEN", value.asInstanceOf[js.Any])
+    def setLOG_LEVEL_DEBUG(value: `3`): Self = StObject.set(x, "LOG_LEVEL_DEBUG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJUSTIFY_SPACE_EVENLY(value: `5`): Self = this.set("JUSTIFY_SPACE_EVENLY", value.asInstanceOf[js.Any])
+    def setLOG_LEVEL_ERROR(value: `0`): Self = StObject.set(x, "LOG_LEVEL_ERROR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOG_LEVEL_COUNT(value: `6`): Self = this.set("LOG_LEVEL_COUNT", value.asInstanceOf[js.Any])
+    def setLOG_LEVEL_FATAL(value: `5`): Self = StObject.set(x, "LOG_LEVEL_FATAL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOG_LEVEL_DEBUG(value: `3`): Self = this.set("LOG_LEVEL_DEBUG", value.asInstanceOf[js.Any])
+    def setLOG_LEVEL_INFO(value: `2`): Self = StObject.set(x, "LOG_LEVEL_INFO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOG_LEVEL_ERROR(value: `0`): Self = this.set("LOG_LEVEL_ERROR", value.asInstanceOf[js.Any])
+    def setLOG_LEVEL_VERBOSE(value: `4`): Self = StObject.set(x, "LOG_LEVEL_VERBOSE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOG_LEVEL_FATAL(value: `5`): Self = this.set("LOG_LEVEL_FATAL", value.asInstanceOf[js.Any])
+    def setLOG_LEVEL_WARN(value: `1`): Self = StObject.set(x, "LOG_LEVEL_WARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOG_LEVEL_INFO(value: `2`): Self = this.set("LOG_LEVEL_INFO", value.asInstanceOf[js.Any])
+    def setMEASURE_MODE_AT_MOST(value: `2`): Self = StObject.set(x, "MEASURE_MODE_AT_MOST", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOG_LEVEL_VERBOSE(value: `4`): Self = this.set("LOG_LEVEL_VERBOSE", value.asInstanceOf[js.Any])
+    def setMEASURE_MODE_COUNT(value: `3`): Self = StObject.set(x, "MEASURE_MODE_COUNT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOG_LEVEL_WARN(value: `1`): Self = this.set("LOG_LEVEL_WARN", value.asInstanceOf[js.Any])
+    def setMEASURE_MODE_EXACTLY(value: `1`): Self = StObject.set(x, "MEASURE_MODE_EXACTLY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMEASURE_MODE_AT_MOST(value: `2`): Self = this.set("MEASURE_MODE_AT_MOST", value.asInstanceOf[js.Any])
+    def setMEASURE_MODE_UNDEFINED(value: `0`): Self = StObject.set(x, "MEASURE_MODE_UNDEFINED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMEASURE_MODE_COUNT(value: `3`): Self = this.set("MEASURE_MODE_COUNT", value.asInstanceOf[js.Any])
+    def setNODE_TYPE_COUNT(value: `2`): Self = StObject.set(x, "NODE_TYPE_COUNT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMEASURE_MODE_EXACTLY(value: `1`): Self = this.set("MEASURE_MODE_EXACTLY", value.asInstanceOf[js.Any])
+    def setNODE_TYPE_DEFAULT(value: `0`): Self = StObject.set(x, "NODE_TYPE_DEFAULT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMEASURE_MODE_UNDEFINED(value: `0`): Self = this.set("MEASURE_MODE_UNDEFINED", value.asInstanceOf[js.Any])
+    def setNODE_TYPE_TEXT(value: `1`): Self = StObject.set(x, "NODE_TYPE_TEXT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNODE_TYPE_COUNT(value: `2`): Self = this.set("NODE_TYPE_COUNT", value.asInstanceOf[js.Any])
+    def setOVERFLOW_COUNT(value: `3`): Self = StObject.set(x, "OVERFLOW_COUNT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNODE_TYPE_DEFAULT(value: `0`): Self = this.set("NODE_TYPE_DEFAULT", value.asInstanceOf[js.Any])
+    def setOVERFLOW_HIDDEN(value: `1`): Self = StObject.set(x, "OVERFLOW_HIDDEN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNODE_TYPE_TEXT(value: `1`): Self = this.set("NODE_TYPE_TEXT", value.asInstanceOf[js.Any])
+    def setOVERFLOW_SCROLL(value: `2`): Self = StObject.set(x, "OVERFLOW_SCROLL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOVERFLOW_COUNT(value: `3`): Self = this.set("OVERFLOW_COUNT", value.asInstanceOf[js.Any])
+    def setOVERFLOW_VISIBLE(value: `0`): Self = StObject.set(x, "OVERFLOW_VISIBLE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOVERFLOW_HIDDEN(value: `1`): Self = this.set("OVERFLOW_HIDDEN", value.asInstanceOf[js.Any])
+    def setPOSITION_TYPE_ABSOLUTE(value: `1`): Self = StObject.set(x, "POSITION_TYPE_ABSOLUTE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOVERFLOW_SCROLL(value: `2`): Self = this.set("OVERFLOW_SCROLL", value.asInstanceOf[js.Any])
+    def setPOSITION_TYPE_COUNT(value: `2`): Self = StObject.set(x, "POSITION_TYPE_COUNT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOVERFLOW_VISIBLE(value: `0`): Self = this.set("OVERFLOW_VISIBLE", value.asInstanceOf[js.Any])
+    def setPOSITION_TYPE_RELATIVE(value: `0`): Self = StObject.set(x, "POSITION_TYPE_RELATIVE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPOSITION_TYPE_ABSOLUTE(value: `1`): Self = this.set("POSITION_TYPE_ABSOLUTE", value.asInstanceOf[js.Any])
+    def setPRINT_OPTIONS_CHILDREN(value: `4`): Self = StObject.set(x, "PRINT_OPTIONS_CHILDREN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPOSITION_TYPE_COUNT(value: `2`): Self = this.set("POSITION_TYPE_COUNT", value.asInstanceOf[js.Any])
+    def setPRINT_OPTIONS_COUNT(value: `3`): Self = StObject.set(x, "PRINT_OPTIONS_COUNT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPOSITION_TYPE_RELATIVE(value: `0`): Self = this.set("POSITION_TYPE_RELATIVE", value.asInstanceOf[js.Any])
+    def setPRINT_OPTIONS_LAYOUT(value: `1`): Self = StObject.set(x, "PRINT_OPTIONS_LAYOUT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPRINT_OPTIONS_CHILDREN(value: `4`): Self = this.set("PRINT_OPTIONS_CHILDREN", value.asInstanceOf[js.Any])
+    def setPRINT_OPTIONS_STYLE(value: `2`): Self = StObject.set(x, "PRINT_OPTIONS_STYLE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPRINT_OPTIONS_COUNT(value: `3`): Self = this.set("PRINT_OPTIONS_COUNT", value.asInstanceOf[js.Any])
+    def setUNIT_AUTO(value: `3`): Self = StObject.set(x, "UNIT_AUTO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPRINT_OPTIONS_LAYOUT(value: `1`): Self = this.set("PRINT_OPTIONS_LAYOUT", value.asInstanceOf[js.Any])
+    def setUNIT_COUNT(value: `4`): Self = StObject.set(x, "UNIT_COUNT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPRINT_OPTIONS_STYLE(value: `2`): Self = this.set("PRINT_OPTIONS_STYLE", value.asInstanceOf[js.Any])
+    def setUNIT_PERCENT(value: `2`): Self = StObject.set(x, "UNIT_PERCENT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUNIT_AUTO(value: `3`): Self = this.set("UNIT_AUTO", value.asInstanceOf[js.Any])
+    def setUNIT_POINT(value: `1`): Self = StObject.set(x, "UNIT_POINT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUNIT_COUNT(value: `4`): Self = this.set("UNIT_COUNT", value.asInstanceOf[js.Any])
+    def setUNIT_UNDEFINED(value: `0`): Self = StObject.set(x, "UNIT_UNDEFINED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUNIT_PERCENT(value: `2`): Self = this.set("UNIT_PERCENT", value.asInstanceOf[js.Any])
+    def setWRAP_COUNT(value: `3`): Self = StObject.set(x, "WRAP_COUNT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUNIT_POINT(value: `1`): Self = this.set("UNIT_POINT", value.asInstanceOf[js.Any])
+    def setWRAP_NO_WRAP(value: `0`): Self = StObject.set(x, "WRAP_NO_WRAP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUNIT_UNDEFINED(value: `0`): Self = this.set("UNIT_UNDEFINED", value.asInstanceOf[js.Any])
+    def setWRAP_WRAP(value: `1`): Self = StObject.set(x, "WRAP_WRAP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWRAP_COUNT(value: `3`): Self = this.set("WRAP_COUNT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWRAP_NO_WRAP(value: `0`): Self = this.set("WRAP_NO_WRAP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWRAP_WRAP(value: `1`): Self = this.set("WRAP_WRAP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWRAP_WRAP_REVERSE(value: `2`): Self = this.set("WRAP_WRAP_REVERSE", value.asInstanceOf[js.Any])
+    def setWRAP_WRAP_REVERSE(value: `2`): Self = StObject.set(x, "WRAP_WRAP_REVERSE", value.asInstanceOf[js.Any])
   }
 }

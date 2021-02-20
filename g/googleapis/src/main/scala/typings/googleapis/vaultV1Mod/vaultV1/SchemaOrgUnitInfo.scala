@@ -1,5 +1,6 @@
 package typings.googleapis.vaultV1Mod.vaultV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Org Unit to search
   */
 @js.native
-trait SchemaOrgUnitInfo extends js.Object {
+trait SchemaOrgUnitInfo extends StObject {
   
   /**
     * Org unit to search, as provided by the &lt;a
@@ -26,24 +27,12 @@ object SchemaOrgUnitInfo {
   }
   
   @scala.inline
-  implicit class SchemaOrgUnitInfoOps[Self <: SchemaOrgUnitInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaOrgUnitInfoMutableBuilder[Self <: SchemaOrgUnitInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrgUnitId(value: String): Self = StObject.set(x, "orgUnitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOrgUnitId(value: String): Self = this.set("orgUnitId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrgUnitId: Self = this.set("orgUnitId", js.undefined)
+    def setOrgUnitIdUndefined: Self = StObject.set(x, "orgUnitId", js.undefined)
   }
 }

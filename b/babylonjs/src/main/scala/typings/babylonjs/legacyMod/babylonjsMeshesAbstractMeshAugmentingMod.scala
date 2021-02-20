@@ -1,17 +1,16 @@
 package typings.babylonjs.legacyMod
 
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
-@JSImport("babylonjs/Legacy/legacy", "babylonjs/Meshes/abstractMesh")
-@js.native
-object babylonjsMeshesAbstractMeshAugmentingMod extends js.Object {
+object babylonjsMeshesAbstractMeshAugmentingMod {
   
   @js.native
-  trait AbstractMesh extends js.Object {
+  trait AbstractMesh extends StObject {
     
     /**
       * Backing filed

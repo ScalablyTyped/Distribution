@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReservedInstancesModificationResult extends js.Object {
+trait ReservedInstancesModificationResult extends StObject {
   
   /**
     * The ID for the Reserved Instances that were created as part of the modification request. This field is only available when the modification is fulfilled.
@@ -26,30 +27,18 @@ object ReservedInstancesModificationResult {
   }
   
   @scala.inline
-  implicit class ReservedInstancesModificationResultOps[Self <: ReservedInstancesModificationResult] (val x: Self) extends AnyVal {
+  implicit class ReservedInstancesModificationResultMutableBuilder[Self <: ReservedInstancesModificationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReservedInstancesId(value: String): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReservedInstancesIdUndefined: Self = StObject.set(x, "ReservedInstancesId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetConfiguration(value: ReservedInstancesConfiguration): Self = StObject.set(x, "TargetConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservedInstancesId(value: String): Self = this.set("ReservedInstancesId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservedInstancesId: Self = this.set("ReservedInstancesId", js.undefined)
-    
-    @scala.inline
-    def setTargetConfiguration(value: ReservedInstancesConfiguration): Self = this.set("TargetConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetConfiguration: Self = this.set("TargetConfiguration", js.undefined)
+    def setTargetConfigurationUndefined: Self = StObject.set(x, "TargetConfiguration", js.undefined)
   }
 }

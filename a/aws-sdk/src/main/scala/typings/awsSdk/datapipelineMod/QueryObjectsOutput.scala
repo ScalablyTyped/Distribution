@@ -1,11 +1,12 @@
 package typings.awsSdk.datapipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryObjectsOutput extends js.Object {
+trait QueryObjectsOutput extends StObject {
   
   /**
     * Indicates whether there are more results that can be obtained by a subsequent call.
@@ -31,39 +32,27 @@ object QueryObjectsOutput {
   }
   
   @scala.inline
-  implicit class QueryObjectsOutputOps[Self <: QueryObjectsOutput] (val x: Self) extends AnyVal {
+  implicit class QueryObjectsOutputMutableBuilder[Self <: QueryObjectsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasMoreResults(value: Boolean): Self = StObject.set(x, "hasMoreResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasMoreResultsUndefined: Self = StObject.set(x, "hasMoreResults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIds(value: idList): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasMoreResults(value: Boolean): Self = this.set("hasMoreResults", value.asInstanceOf[js.Any])
+    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
     @scala.inline
-    def deleteHasMoreResults: Self = this.set("hasMoreResults", js.undefined)
+    def setIdsVarargs(value: id*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
     @scala.inline
-    def setIdsVarargs(value: id*): Self = this.set("ids", js.Array(value :_*))
+    def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIds(value: idList): Self = this.set("ids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIds: Self = this.set("ids", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: String): Self = this.set("marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
   }
 }

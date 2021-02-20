@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.IssuesCreateLabelEndpoint
 import typings.octokitTypes.endpointsMod.IssuesCreateLabelRequestOptions
 import typings.octokitTypes.endpointsMod.IssuesCreateLabelResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersIssuesCreateLabelEndpoint extends js.Object {
+trait ParametersIssuesCreateLabelEndpoint extends StObject {
   
   var parameters: IssuesCreateLabelEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersIssuesCreateLabelEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersIssuesCreateLabelEndpointOps[Self <: ParametersIssuesCreateLabelEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersIssuesCreateLabelEndpointMutableBuilder[Self <: ParametersIssuesCreateLabelEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: IssuesCreateLabelEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: IssuesCreateLabelRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: IssuesCreateLabelEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: IssuesCreateLabelRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[IssuesCreateLabelResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[IssuesCreateLabelResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

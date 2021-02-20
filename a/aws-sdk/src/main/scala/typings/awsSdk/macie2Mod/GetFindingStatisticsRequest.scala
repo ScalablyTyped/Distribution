@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetFindingStatisticsRequest extends js.Object {
+trait GetFindingStatisticsRequest extends StObject {
   
   /**
     * The criteria to use to filter the query results.
@@ -36,39 +37,27 @@ object GetFindingStatisticsRequest {
   }
   
   @scala.inline
-  implicit class GetFindingStatisticsRequestOps[Self <: GetFindingStatisticsRequest] (val x: Self) extends AnyVal {
+  implicit class GetFindingStatisticsRequestMutableBuilder[Self <: GetFindingStatisticsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFindingCriteria(value: FindingCriteria): Self = StObject.set(x, "findingCriteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFindingCriteriaUndefined: Self = StObject.set(x, "findingCriteria", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupBy(value: GroupBy): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupBy(value: GroupBy): Self = this.set("groupBy", value.asInstanceOf[js.Any])
+    def setSize(value: integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFindingCriteria(value: FindingCriteria): Self = this.set("findingCriteria", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteFindingCriteria: Self = this.set("findingCriteria", js.undefined)
+    def setSortCriteria(value: FindingStatisticsSortCriteria): Self = StObject.set(x, "sortCriteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: integer): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setSortCriteria(value: FindingStatisticsSortCriteria): Self = this.set("sortCriteria", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortCriteria: Self = this.set("sortCriteria", js.undefined)
+    def setSortCriteriaUndefined: Self = StObject.set(x, "sortCriteria", js.undefined)
   }
 }

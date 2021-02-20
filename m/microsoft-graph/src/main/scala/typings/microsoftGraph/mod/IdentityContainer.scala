@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,27 +19,15 @@ object IdentityContainer {
   }
   
   @scala.inline
-  implicit class IdentityContainerOps[Self <: IdentityContainer] (val x: Self) extends AnyVal {
+  implicit class IdentityContainerMutableBuilder[Self <: IdentityContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditionalAccess(value: NullableOption[ConditionalAccessRoot]): Self = StObject.set(x, "conditionalAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionalAccessNull: Self = StObject.set(x, "conditionalAccess", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConditionalAccess(value: NullableOption[ConditionalAccessRoot]): Self = this.set("conditionalAccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConditionalAccess: Self = this.set("conditionalAccess", js.undefined)
-    
-    @scala.inline
-    def setConditionalAccessNull: Self = this.set("conditionalAccess", null)
+    def setConditionalAccessUndefined: Self = StObject.set(x, "conditionalAccess", js.undefined)
   }
 }

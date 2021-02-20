@@ -1,11 +1,12 @@
 package typings.dockerode.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Percpuusage extends js.Object {
+trait Percpuusage extends StObject {
   
   var percpu_usage: js.Array[Double] = js.native
   
@@ -29,33 +30,21 @@ object Percpuusage {
   }
   
   @scala.inline
-  implicit class PercpuusageOps[Self <: Percpuusage] (val x: Self) extends AnyVal {
+  implicit class PercpuusageMutableBuilder[Self <: Percpuusage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPercpu_usage(value: js.Array[Double]): Self = StObject.set(x, "percpu_usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPercpu_usageVarargs(value: Double*): Self = StObject.set(x, "percpu_usage", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotal_usage(value: Double): Self = StObject.set(x, "total_usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercpu_usageVarargs(value: Double*): Self = this.set("percpu_usage", js.Array(value :_*))
+    def setUsage_in_kernelmode(value: Double): Self = StObject.set(x, "usage_in_kernelmode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercpu_usage(value: js.Array[Double]): Self = this.set("percpu_usage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_usage(value: Double): Self = this.set("total_usage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsage_in_kernelmode(value: Double): Self = this.set("usage_in_kernelmode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsage_in_usermode(value: Double): Self = this.set("usage_in_usermode", value.asInstanceOf[js.Any])
+    def setUsage_in_usermode(value: Double): Self = StObject.set(x, "usage_in_usermode", value.asInstanceOf[js.Any])
   }
 }

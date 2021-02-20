@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.extensions.v1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * HTTPIngressPath associates a path with a backend. Incoming urls matching the path are forwarded to the backend.
   */
 @js.native
-trait HTTPIngressPath extends js.Object {
+trait HTTPIngressPath extends StObject {
   
   /**
     * Backend defines the referenced service endpoint to which the traffic will be forwarded to.
@@ -44,27 +45,15 @@ object HTTPIngressPath {
   }
   
   @scala.inline
-  implicit class HTTPIngressPathOps[Self <: HTTPIngressPath] (val x: Self) extends AnyVal {
+  implicit class HTTPIngressPathMutableBuilder[Self <: HTTPIngressPath] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackend(value: IngressBackend): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBackend(value: IngressBackend): Self = this.set("backend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPathType(value: String): Self = this.set("pathType", value.asInstanceOf[js.Any])
+    def setPathType(value: String): Self = StObject.set(x, "pathType", value.asInstanceOf[js.Any])
   }
 }

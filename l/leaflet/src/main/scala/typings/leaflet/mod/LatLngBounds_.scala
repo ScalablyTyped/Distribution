@@ -1,12 +1,13 @@
 package typings.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "LatLngBounds")
 @js.native
-class LatLngBounds_ protected () extends js.Object {
+class LatLngBounds_ protected () extends StObject {
   def this(latlngs: LatLngBoundsLiteral) = this()
   def this(southWest: LatLngExpression, northEast: LatLngExpression) = this()
   
@@ -16,7 +17,7 @@ class LatLngBounds_ protected () extends js.Object {
   
   def extend(latlngOrBounds: LatLngBoundsExpression | LatLngExpression): this.type = js.native
   
-   // does this modify the current instance or does it return a new one?
+  // does this modify the current instance or does it return a new one?
   def getCenter(): LatLng_ = js.native
   
   def getEast(): Double = js.native

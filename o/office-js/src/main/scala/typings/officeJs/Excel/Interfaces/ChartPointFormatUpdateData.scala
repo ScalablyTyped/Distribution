@@ -1,12 +1,13 @@
 package typings.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartPointFormat object, for use in `chartPointFormat.set({ ... })`. */
 @js.native
-trait ChartPointFormatUpdateData extends js.Object {
+trait ChartPointFormatUpdateData extends StObject {
   
   /**
     *
@@ -25,24 +26,12 @@ object ChartPointFormatUpdateData {
   }
   
   @scala.inline
-  implicit class ChartPointFormatUpdateDataOps[Self <: ChartPointFormatUpdateData] (val x: Self) extends AnyVal {
+  implicit class ChartPointFormatUpdateDataMutableBuilder[Self <: ChartPointFormatUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorder(value: ChartBorderUpdateData): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBorder(value: ChartBorderUpdateData): Self = this.set("border", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorder: Self = this.set("border", js.undefined)
+    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
   }
 }

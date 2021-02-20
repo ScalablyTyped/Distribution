@@ -1,11 +1,12 @@
 package typings.atom.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextChange extends js.Object {
+trait TextChange extends StObject {
   
   var newExtent: Point = js.native
   
@@ -38,39 +39,27 @@ object TextChange {
   }
   
   @scala.inline
-  implicit class TextChangeOps[Self <: TextChange] (val x: Self) extends AnyVal {
+  implicit class TextChangeMutableBuilder[Self <: TextChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewExtent(value: Point): Self = StObject.set(x, "newExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewRange(value: Range): Self = StObject.set(x, "newRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewText(value: String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewExtent(value: Point): Self = this.set("newExtent", value.asInstanceOf[js.Any])
+    def setOldExtent(value: Point): Self = StObject.set(x, "oldExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewRange(value: Range): Self = this.set("newRange", value.asInstanceOf[js.Any])
+    def setOldRange(value: Range): Self = StObject.set(x, "oldRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewText(value: String): Self = this.set("newText", value.asInstanceOf[js.Any])
+    def setOldText(value: String): Self = StObject.set(x, "oldText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldExtent(value: Point): Self = this.set("oldExtent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldRange(value: Range): Self = this.set("oldRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldText(value: String): Self = this.set("oldText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Point): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

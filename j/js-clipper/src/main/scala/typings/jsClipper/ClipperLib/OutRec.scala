@@ -1,11 +1,12 @@
 package typings.jsClipper.ClipperLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutRec extends js.Object {
+trait OutRec extends StObject {
   
   var AppendLink: OutRec = js.native
   
@@ -28,36 +29,24 @@ object OutRec {
   }
   
   @scala.inline
-  implicit class OutRecOps[Self <: OutRec] (val x: Self) extends AnyVal {
+  implicit class OutRecMutableBuilder[Self <: OutRec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendLink(value: OutRec): Self = StObject.set(x, "AppendLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBottomPt(value: OutPt): Self = StObject.set(x, "bottomPt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirstLeft(value: TEdge): Self = StObject.set(x, "FirstLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendLink(value: OutRec): Self = this.set("AppendLink", value.asInstanceOf[js.Any])
+    def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstLeft(value: TEdge): Self = this.set("FirstLeft", value.asInstanceOf[js.Any])
+    def setIsHole(value: Boolean): Self = StObject.set(x, "isHole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomPt(value: OutPt): Self = this.set("bottomPt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdx(value: Double): Self = this.set("idx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsHole(value: Boolean): Self = this.set("isHole", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPts(value: OutPt): Self = this.set("pts", value.asInstanceOf[js.Any])
+    def setPts(value: OutPt): Self = StObject.set(x, "pts", value.asInstanceOf[js.Any])
   }
 }

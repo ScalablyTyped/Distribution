@@ -1,6 +1,7 @@
 package typings.hammerjs
 
 import typings.std.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,42 +47,30 @@ object HammerDefaults {
   }
   
   @scala.inline
-  implicit class HammerDefaultsOps[Self <: HammerDefaults] (val x: Self) extends AnyVal {
+  implicit class HammerDefaultsMutableBuilder[Self <: HammerDefaults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCssProps(value: CssProps): Self = StObject.set(x, "cssProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomEvents(value: Boolean): Self = StObject.set(x, "domEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssProps(value: CssProps): Self = this.set("cssProps", value.asInstanceOf[js.Any])
+    def setInputClass(value: HammerInput): Self = StObject.set(x, "inputClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomEvents(value: Boolean): Self = this.set("domEvents", value.asInstanceOf[js.Any])
+    def setInputTarget(value: EventTarget): Self = StObject.set(x, "inputTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnable(value: Boolean): Self = this.set("enable", value.asInstanceOf[js.Any])
+    def setPreset(value: js.Array[RecognizerTuple]): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputClass(value: HammerInput): Self = this.set("inputClass", value.asInstanceOf[js.Any])
+    def setPresetVarargs(value: RecognizerTuple*): Self = StObject.set(x, "preset", js.Array(value :_*))
     
     @scala.inline
-    def setInputTarget(value: EventTarget): Self = this.set("inputTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPresetVarargs(value: RecognizerTuple*): Self = this.set("preset", js.Array(value :_*))
-    
-    @scala.inline
-    def setPreset(value: js.Array[RecognizerTuple]): Self = this.set("preset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchAction(value: String): Self = this.set("touchAction", value.asInstanceOf[js.Any])
+    def setTouchAction(value: String): Self = StObject.set(x, "touchAction", value.asInstanceOf[js.Any])
   }
 }

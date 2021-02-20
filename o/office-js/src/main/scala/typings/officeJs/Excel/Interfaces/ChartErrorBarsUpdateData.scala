@@ -10,13 +10,14 @@ import typings.officeJs.officeJsStrings.Percent
 import typings.officeJs.officeJsStrings.PlusValues
 import typings.officeJs.officeJsStrings.StDev
 import typings.officeJs.officeJsStrings.StError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartErrorBars object, for use in `chartErrorBars.set({ ... })`. */
 @js.native
-trait ChartErrorBarsUpdateData extends js.Object {
+trait ChartErrorBarsUpdateData extends StObject {
   
   /**
     *
@@ -67,48 +68,36 @@ object ChartErrorBarsUpdateData {
   }
   
   @scala.inline
-  implicit class ChartErrorBarsUpdateDataOps[Self <: ChartErrorBarsUpdateData] (val x: Self) extends AnyVal {
+  implicit class ChartErrorBarsUpdateDataMutableBuilder[Self <: ChartErrorBarsUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndStyleCap(value: Boolean): Self = StObject.set(x, "endStyleCap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndStyleCapUndefined: Self = StObject.set(x, "endStyleCap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: ChartErrorBarsFormatUpdateData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndStyleCap(value: Boolean): Self = this.set("endStyleCap", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteEndStyleCap: Self = this.set("endStyleCap", js.undefined)
+    def setInclude(value: ChartErrorBarsInclude | Both | MinusValues | PlusValues): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: ChartErrorBarsFormatUpdateData): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setType(value: ChartErrorBarsType | FixedValue | Percent | StDev | StError | Custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude(value: ChartErrorBarsInclude | Both | MinusValues | PlusValues): Self = this.set("include", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteInclude: Self = this.set("include", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ChartErrorBarsType | FixedValue | Percent | StDev | StError | Custom): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.axeCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RunOnly extends js.Object {
+trait RunOnly extends StObject {
   
   var `type`: RunOnlyType = js.native
   
@@ -21,27 +22,15 @@ object RunOnly {
   }
   
   @scala.inline
-  implicit class RunOnlyOps[Self <: RunOnly] (val x: Self) extends AnyVal {
+  implicit class RunOnlyMutableBuilder[Self <: RunOnly] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setType(value: RunOnlyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValues(value: js.Array[String | TagValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: RunOnlyType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesVarargs(value: (String | TagValue)*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[String | TagValue]): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValuesVarargs(value: (String | TagValue)*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

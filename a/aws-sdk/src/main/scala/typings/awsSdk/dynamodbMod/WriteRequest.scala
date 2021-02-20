@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WriteRequest extends js.Object {
+trait WriteRequest extends StObject {
   
   /**
     * A request to perform a DeleteItem operation.
@@ -26,30 +27,18 @@ object WriteRequest {
   }
   
   @scala.inline
-  implicit class WriteRequestOps[Self <: WriteRequest] (val x: Self) extends AnyVal {
+  implicit class WriteRequestMutableBuilder[Self <: WriteRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleteRequest(value: DeleteRequest): Self = StObject.set(x, "DeleteRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteRequestUndefined: Self = StObject.set(x, "DeleteRequest", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPutRequest(value: PutRequest): Self = StObject.set(x, "PutRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteRequest(value: DeleteRequest): Self = this.set("DeleteRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeleteRequest: Self = this.set("DeleteRequest", js.undefined)
-    
-    @scala.inline
-    def setPutRequest(value: PutRequest): Self = this.set("PutRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePutRequest: Self = this.set("PutRequest", js.undefined)
+    def setPutRequestUndefined: Self = StObject.set(x, "PutRequest", js.undefined)
   }
 }

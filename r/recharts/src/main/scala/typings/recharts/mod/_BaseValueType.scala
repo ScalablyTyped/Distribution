@@ -1,7 +1,8 @@
 package typings.recharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _BaseValueType extends js.Object
+trait _BaseValueType extends StObject

@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkItemRelationUpdates extends js.Object {
+trait WorkItemRelationUpdates extends StObject {
   
   /**
     * List of newly added relations.
@@ -35,36 +36,24 @@ object WorkItemRelationUpdates {
   }
   
   @scala.inline
-  implicit class WorkItemRelationUpdatesOps[Self <: WorkItemRelationUpdates] (val x: Self) extends AnyVal {
+  implicit class WorkItemRelationUpdatesMutableBuilder[Self <: WorkItemRelationUpdates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdded(value: js.Array[WorkItemRelation]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddedVarargs(value: WorkItemRelation*): Self = StObject.set(x, "added", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoved(value: js.Array[WorkItemRelation]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddedVarargs(value: WorkItemRelation*): Self = this.set("added", js.Array(value :_*))
+    def setRemovedVarargs(value: WorkItemRelation*): Self = StObject.set(x, "removed", js.Array(value :_*))
     
     @scala.inline
-    def setAdded(value: js.Array[WorkItemRelation]): Self = this.set("added", value.asInstanceOf[js.Any])
+    def setUpdated(value: js.Array[WorkItemRelation]): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemovedVarargs(value: WorkItemRelation*): Self = this.set("removed", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemoved(value: js.Array[WorkItemRelation]): Self = this.set("removed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdatedVarargs(value: WorkItemRelation*): Self = this.set("updated", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpdated(value: js.Array[WorkItemRelation]): Self = this.set("updated", value.asInstanceOf[js.Any])
+    def setUpdatedVarargs(value: WorkItemRelation*): Self = StObject.set(x, "updated", js.Array(value :_*))
   }
 }

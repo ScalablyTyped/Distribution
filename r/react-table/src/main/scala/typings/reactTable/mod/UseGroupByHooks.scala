@@ -1,11 +1,12 @@
 package typings.reactTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UseGroupByHooks[D /* <: js.Object */] extends js.Object {
+trait UseGroupByHooks[D /* <: js.Object */] extends StObject {
   
   var getGroupByToggleProps: js.Array[HeaderGroupPropGetter[D]] = js.native
 }
@@ -18,24 +19,12 @@ object UseGroupByHooks {
   }
   
   @scala.inline
-  implicit class UseGroupByHooksOps[Self <: UseGroupByHooks[_], D /* <: js.Object */] (val x: Self with UseGroupByHooks[D]) extends AnyVal {
+  implicit class UseGroupByHooksMutableBuilder[Self <: UseGroupByHooks[_], D /* <: js.Object */] (val x: Self with UseGroupByHooks[D]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetGroupByToggleProps(value: js.Array[HeaderGroupPropGetter[D]]): Self = StObject.set(x, "getGroupByToggleProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetGroupByTogglePropsVarargs(value: HeaderGroupPropGetter[D]*): Self = this.set("getGroupByToggleProps", js.Array(value :_*))
-    
-    @scala.inline
-    def setGetGroupByToggleProps(value: js.Array[HeaderGroupPropGetter[D]]): Self = this.set("getGroupByToggleProps", value.asInstanceOf[js.Any])
+    def setGetGroupByTogglePropsVarargs(value: HeaderGroupPropGetter[D]*): Self = StObject.set(x, "getGroupByToggleProps", js.Array(value :_*))
   }
 }

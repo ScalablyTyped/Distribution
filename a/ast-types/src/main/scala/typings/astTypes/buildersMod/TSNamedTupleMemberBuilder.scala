@@ -4,12 +4,13 @@ import typings.astTypes.anon.ElementTypeLabel
 import typings.astTypes.kindsMod.IdentifierKind
 import typings.astTypes.kindsMod.TSTypeKind
 import typings.astTypes.namedTypesMod.namedTypes.TSNamedTupleMember
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TSNamedTupleMemberBuilder extends js.Object {
+trait TSNamedTupleMemberBuilder extends StObject {
   
   def apply(label: IdentifierKind, elementType: TSTypeKind): TSNamedTupleMember = js.native
   def apply(label: IdentifierKind, elementType: TSTypeKind, optional: Boolean): TSNamedTupleMember = js.native

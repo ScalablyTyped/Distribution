@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BillboardMode extends js.Object
+sealed trait BillboardMode extends StObject
 @JSGlobal("__esri.CIM.BillboardMode")
 @js.native
-object BillboardMode extends js.Object {
+object BillboardMode extends StObject {
   
   /**
     * The symbol always faces the viewer directly, regardless of view angle.

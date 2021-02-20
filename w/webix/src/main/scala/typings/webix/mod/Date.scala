@@ -1,12 +1,12 @@
 package typings.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Date extends js.Object {
+trait Date extends StObject {
   
   def add(date: js.Any, inc: Double, mode: String, copy: Boolean): js.Any = js.native
   
@@ -41,6 +41,3 @@ trait Date extends js.Object {
   
   def yearStart(date: js.Any): js.Any = js.native
 }
-@JSImport("webix", "Date")
-@js.native
-object Date extends TopLevel[Date]

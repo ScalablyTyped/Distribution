@@ -1,18 +1,19 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BandingTheme extends js.Object
+sealed trait BandingTheme extends StObject
 /**
   * An enumeration of banding themes. Each theme consists of several complementary colors that are
   * applied to different cells based on the banding settings.
   */
 @JSGlobal("GoogleAppsScript.Spreadsheet.BandingTheme")
 @js.native
-object BandingTheme extends js.Object {
+object BandingTheme extends StObject {
   
   @js.native
   sealed trait BLUE extends BandingTheme

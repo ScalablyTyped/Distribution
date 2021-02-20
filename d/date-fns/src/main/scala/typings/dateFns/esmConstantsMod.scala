@@ -1,14 +1,17 @@
 package typings.dateFns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/constants", JSImport.Namespace)
-@js.native
-object esmConstantsMod extends js.Object {
+object esmConstantsMod {
   
+  @JSImport("date-fns/esm/constants", "maxTime")
+  @js.native
   val maxTime: Double = js.native
   
+  @JSImport("date-fns/esm/constants", "minTime")
+  @js.native
   val minTime: Double = js.native
 }

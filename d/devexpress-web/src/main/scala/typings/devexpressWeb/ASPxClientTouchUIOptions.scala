@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains options affecting the touch scrolling functionality.
   */
 @js.native
-trait ASPxClientTouchUIOptions extends js.Object {
+trait ASPxClientTouchUIOptions extends StObject {
   
   /**
     * Gets or sets the name of the CSS class defining the horizontal scroll bar's appearance.
@@ -44,30 +45,18 @@ object ASPxClientTouchUIOptions {
   }
   
   @scala.inline
-  implicit class ASPxClientTouchUIOptionsOps[Self <: ASPxClientTouchUIOptions] (val x: Self) extends AnyVal {
+  implicit class ASPxClientTouchUIOptionsMutableBuilder[Self <: ASPxClientTouchUIOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHScrollClassName(value: String): Self = StObject.set(x, "hScrollClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShowHorizontalScrollbar(value: Boolean): Self = StObject.set(x, "showHorizontalScrollbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowVerticalScrollbar(value: Boolean): Self = StObject.set(x, "showVerticalScrollbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHScrollClassName(value: String): Self = this.set("hScrollClassName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowHorizontalScrollbar(value: Boolean): Self = this.set("showHorizontalScrollbar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowVerticalScrollbar(value: Boolean): Self = this.set("showVerticalScrollbar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVScrollClassName(value: String): Self = this.set("vScrollClassName", value.asInstanceOf[js.Any])
+    def setVScrollClassName(value: String): Self = StObject.set(x, "vScrollClassName", value.asInstanceOf[js.Any])
   }
 }

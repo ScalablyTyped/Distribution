@@ -2,12 +2,13 @@ package typings.eggMultipart
 
 import typings.eggMultipart.anon.FieldNameSize
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultipartOptions extends js.Object {
+trait MultipartOptions extends StObject {
   
   var checkFile: js.UndefOr[
     js.Function5[
@@ -20,7 +21,7 @@ trait MultipartOptions extends js.Object {
     ]
   ] = js.native
   
-   // required file submit, default is true
+  // required file submit, default is true
   var defCharset: js.UndefOr[String] = js.native
   
   var limits: js.UndefOr[FieldNameSize] = js.native
@@ -36,44 +37,32 @@ object MultipartOptions {
   }
   
   @scala.inline
-  implicit class MultipartOptionsOps[Self <: MultipartOptions] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class MultipartOptionsMutableBuilder[Self <: MultipartOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setCheckFile(
       value: (/* fieldname */ String, /* file */ js.Any, /* filename */ String, /* encoding */ String, /* mimetype */ String) => Unit | Error
-    ): Self = this.set("checkFile", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "checkFile", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteCheckFile: Self = this.set("checkFile", js.undefined)
+    def setCheckFileUndefined: Self = StObject.set(x, "checkFile", js.undefined)
     
     @scala.inline
-    def setDefCharset(value: String): Self = this.set("defCharset", value.asInstanceOf[js.Any])
+    def setDefCharset(value: String): Self = StObject.set(x, "defCharset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefCharset: Self = this.set("defCharset", js.undefined)
+    def setDefCharsetUndefined: Self = StObject.set(x, "defCharset", js.undefined)
     
     @scala.inline
-    def setLimits(value: FieldNameSize): Self = this.set("limits", value.asInstanceOf[js.Any])
+    def setLimits(value: FieldNameSize): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLimits: Self = this.set("limits", js.undefined)
+    def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
     
     @scala.inline
-    def setRequireFile(value: Boolean): Self = this.set("requireFile", value.asInstanceOf[js.Any])
+    def setRequireFile(value: Boolean): Self = StObject.set(x, "requireFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequireFile: Self = this.set("requireFile", js.undefined)
+    def setRequireFileUndefined: Self = StObject.set(x, "requireFile", js.undefined)
   }
 }

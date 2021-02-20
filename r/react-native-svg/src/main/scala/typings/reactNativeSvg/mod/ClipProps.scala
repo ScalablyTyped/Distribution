@@ -1,11 +1,12 @@
 package typings.reactNativeSvg.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClipProps extends js.Object {
+trait ClipProps extends StObject {
   
   var clipPath: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object ClipProps {
   }
   
   @scala.inline
-  implicit class ClipPropsOps[Self <: ClipProps] (val x: Self) extends AnyVal {
+  implicit class ClipPropsMutableBuilder[Self <: ClipProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClipPath(value: String): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClipPathUndefined: Self = StObject.set(x, "clipPath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClipRule(value: FillRule): Self = StObject.set(x, "clipRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClipPath(value: String): Self = this.set("clipPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClipPath: Self = this.set("clipPath", js.undefined)
-    
-    @scala.inline
-    def setClipRule(value: FillRule): Self = this.set("clipRule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClipRule: Self = this.set("clipRule", js.undefined)
+    def setClipRuleUndefined: Self = StObject.set(x, "clipRule", js.undefined)
   }
 }

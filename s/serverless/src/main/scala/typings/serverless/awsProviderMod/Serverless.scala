@@ -1,5 +1,6 @@
 package typings.serverless.awsProviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   Types based on https://github.com/serverless/serverless/blob/master/docs/providers/aws/guide/serverless.yml.md
   */
 @js.native
-trait Serverless extends js.Object {
+trait Serverless extends StObject {
   
   @JSName("package")
   var _package: js.UndefOr[Package] = js.native
@@ -47,90 +48,78 @@ object Serverless {
   }
   
   @scala.inline
-  implicit class ServerlessOps[Self <: Serverless] (val x: Self) extends AnyVal {
+  implicit class ServerlessMutableBuilder[Self <: Serverless] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigValidationMode(value: String): Self = StObject.set(x, "configValidationMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameworkVersion(value: String): Self = this.set("frameworkVersion", value.asInstanceOf[js.Any])
+    def setConfigValidationModeUndefined: Self = StObject.set(x, "configValidationMode", js.undefined)
     
     @scala.inline
-    def setProvider(value: Provider): Self = this.set("provider", value.asInstanceOf[js.Any])
+    def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setService(value: Service | String): Self = this.set("service", value.asInstanceOf[js.Any])
+    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     @scala.inline
-    def set_package(value: Package): Self = this.set("package", value.asInstanceOf[js.Any])
+    def setFrameworkVersion(value: String): Self = StObject.set(x, "frameworkVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_package: Self = this.set("package", js.undefined)
+    def setFunctions(value: Functions): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApp(value: String): Self = this.set("app", value.asInstanceOf[js.Any])
+    def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
     
     @scala.inline
-    def deleteApp: Self = this.set("app", js.undefined)
+    def setLayers(value: Layers): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigValidationMode(value: String): Self = this.set("configValidationMode", value.asInstanceOf[js.Any])
+    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
     @scala.inline
-    def deleteConfigValidationMode: Self = this.set("configValidationMode", js.undefined)
+    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom(value: Custom): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setOrg_Undefined: Self = StObject.set(x, "org", js.undefined)
     
     @scala.inline
-    def deleteCustom: Self = this.set("custom", js.undefined)
+    def setPlugins(value: js.Array[String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctions(value: Functions): Self = this.set("functions", value.asInstanceOf[js.Any])
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
     @scala.inline
-    def deleteFunctions: Self = this.set("functions", js.undefined)
+    def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     
     @scala.inline
-    def setLayers(value: Layers): Self = this.set("layers", value.asInstanceOf[js.Any])
+    def setProvider(value: Provider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLayers: Self = this.set("layers", js.undefined)
+    def setResources(value: Resources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrg_(value: String): Self = this.set("org", value.asInstanceOf[js.Any])
+    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
     @scala.inline
-    def deleteOrg_ : Self = this.set("org", js.undefined)
+    def setService(value: Service | String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPluginsVarargs(value: String*): Self = this.set("plugins", js.Array(value :_*))
+    def setTenant(value: String): Self = StObject.set(x, "tenant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlugins(value: js.Array[String]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    def setTenantUndefined: Self = StObject.set(x, "tenant", js.undefined)
     
     @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
+    def set_package(value: Package): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResources(value: Resources): Self = this.set("resources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResources: Self = this.set("resources", js.undefined)
-    
-    @scala.inline
-    def setTenant(value: String): Self = this.set("tenant", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTenant: Self = this.set("tenant", js.undefined)
+    def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.postcss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,33 +25,21 @@ object ContainerNewProps {
   }
   
   @scala.inline
-  implicit class ContainerNewPropsOps[Self <: ContainerNewProps] (val x: Self) extends AnyVal {
+  implicit class ContainerNewPropsMutableBuilder[Self <: ContainerNewProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNodes(value: js.Array[ChildNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodesVarargs(value: ChildNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
     @scala.inline
-    def setNodesVarargs(value: ChildNode*): Self = this.set("nodes", js.Array(value :_*))
+    def setRaws(value: ContainerRaws): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodes(value: js.Array[ChildNode]): Self = this.set("nodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodes: Self = this.set("nodes", js.undefined)
-    
-    @scala.inline
-    def setRaws(value: ContainerRaws): Self = this.set("raws", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRaws: Self = this.set("raws", js.undefined)
+    def setRawsUndefined: Self = StObject.set(x, "raws", js.undefined)
   }
 }

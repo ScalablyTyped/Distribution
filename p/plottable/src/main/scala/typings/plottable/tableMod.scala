@@ -2,14 +2,14 @@ package typings.plottable
 
 import typings.plottable.componentContainerMod.ComponentContainer
 import typings.plottable.componentMod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/components/table", JSImport.Namespace)
-@js.native
-object tableMod extends js.Object {
+object tableMod {
   
+  @JSImport("plottable/build/src/components/table", "Table")
   @js.native
   /**
     * A Table combines Components in the form of a grid. A
@@ -150,13 +150,18 @@ object tableMod extends js.Object {
     def rowWeight(index: Double, weight: Double): this.type = js.native
   }
   /* static members */
-  @js.native
-  object Table extends js.Object {
+  object Table {
     
-    /* private */ def _calcComponentWeights(setWeights: js.Any, componentGroups: js.Any, fixityAccessor: js.Any): js.Any = js.native
+    @JSImport("plottable/build/src/components/table", "Table._calcComponentWeights")
+    @js.native
+    def _calcComponentWeights(setWeights: js.Any, componentGroups: js.Any, fixityAccessor: js.Any): js.Any = js.native
     
-    /* private */ def _calcProportionalSpace(weights: js.Any, freeSpace: js.Any): js.Any = js.native
+    @JSImport("plottable/build/src/components/table", "Table._calcProportionalSpace")
+    @js.native
+    def _calcProportionalSpace(weights: js.Any, freeSpace: js.Any): js.Any = js.native
     
-    /* private */ def _fixedSpace(componentGroup: js.Any, fixityAccessor: js.Any): js.Any = js.native
+    @JSImport("plottable/build/src/components/table", "Table._fixedSpace")
+    @js.native
+    def _fixedSpace(componentGroup: js.Any, fixityAccessor: js.Any): js.Any = js.native
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The BigQuery table to which the output should be written.
   */
 @js.native
-trait SchemaBigQueryDestination extends js.Object {
+trait SchemaBigQueryDestination extends StObject {
   
   /**
     * Required. The BigQuery dataset to which the DICOM store should be
@@ -41,36 +42,24 @@ object SchemaBigQueryDestination {
   }
   
   @scala.inline
-  implicit class SchemaBigQueryDestinationOps[Self <: SchemaBigQueryDestination] (val x: Self) extends AnyVal {
+  implicit class SchemaBigQueryDestinationMutableBuilder[Self <: SchemaBigQueryDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverwriteTable(value: Boolean): Self = StObject.set(x, "overwriteTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataset(value: String): Self = this.set("dataset", value.asInstanceOf[js.Any])
+    def setOverwriteTableUndefined: Self = StObject.set(x, "overwriteTable", js.undefined)
     
     @scala.inline
-    def deleteDataset: Self = this.set("dataset", js.undefined)
+    def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverwriteTable(value: Boolean): Self = this.set("overwriteTable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverwriteTable: Self = this.set("overwriteTable", js.undefined)
-    
-    @scala.inline
-    def setTable(value: String): Self = this.set("table", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTable: Self = this.set("table", js.undefined)
+    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

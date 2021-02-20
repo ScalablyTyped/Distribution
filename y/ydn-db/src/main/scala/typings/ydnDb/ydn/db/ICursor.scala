@@ -1,11 +1,12 @@
 package typings.ydnDb.ydn.db
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICursor extends js.Object {
+trait ICursor extends StObject {
   
   def clear(): Request = js.native
   def clear(i: Double): Request = js.native

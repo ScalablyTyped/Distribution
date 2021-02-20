@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.document
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,27 +37,15 @@ object XMimeTypeInfo {
   }
   
   @scala.inline
-  implicit class XMimeTypeInfoOps[Self <: XMimeTypeInfo] (val x: Self) extends AnyVal {
+  implicit class XMimeTypeInfoMutableBuilder[Self <: XMimeTypeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetSupportedMimeTypeNames(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedMimeTypeNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSupportedMimeTypeNames(value: SafeArray[String]): Self = StObject.set(x, "SupportedMimeTypeNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSupportedMimeTypeNames(value: SafeArray[String]): Self = this.set("SupportedMimeTypeNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetSupportedMimeTypeNames(value: () => SafeArray[String]): Self = this.set("getSupportedMimeTypeNames", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSupportsMimeType(value: String => Boolean): Self = this.set("supportsMimeType", js.Any.fromFunction1(value))
+    def setSupportsMimeType(value: String => Boolean): Self = StObject.set(x, "supportsMimeType", js.Any.fromFunction1(value))
   }
 }

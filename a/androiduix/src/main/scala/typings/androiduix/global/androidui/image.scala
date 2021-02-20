@@ -2,14 +2,14 @@ package typings.androiduix.global.androidui
 
 import typings.androiduix.android.graphics.Paint
 import typings.androiduix.android.graphics.drawable.Drawable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("androidui.image")
-@js.native
-object image extends js.Object {
+object image {
   
+  @JSGlobal("androidui.image.ChangeImageSizeDrawable")
   @js.native
   class ChangeImageSizeDrawable protected ()
     extends typings.androiduix.androidui.image.ChangeImageSizeDrawable {
@@ -17,6 +17,7 @@ object image extends js.Object {
     def this(drawable: Drawable, overrideWidth: Double, overrideHeight: Double) = this()
   }
   
+  @JSGlobal("androidui.image.NetDrawable")
   @js.native
   class NetDrawable protected ()
     extends typings.androiduix.androidui.image.NetDrawable {
@@ -33,11 +34,11 @@ object image extends js.Object {
     ) = this()
     def this(src: typings.androiduix.androidui.image.NetImage, paint: Paint, overrideImageRatio: Double) = this()
   }
-  @js.native
-  object NetDrawable extends js.Object {
+  object NetDrawable {
     
+    @JSGlobal("androidui.image.NetDrawable.TileMode")
     @js.native
-    object TileMode extends js.Object {
+    object TileMode extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.androiduix.androidui.image.NetDrawable.TileMode with Double] = js.native
@@ -48,6 +49,7 @@ object image extends js.Object {
     }
   }
   
+  @JSGlobal("androidui.image.NetImage")
   @js.native
   class NetImage protected ()
     extends typings.androiduix.androidui.image.NetImage {
@@ -55,13 +57,21 @@ object image extends js.Object {
     def this(src: String, overrideImageRatio: Double) = this()
   }
   
+  @JSGlobal("androidui.image.NinePatchDrawable")
   @js.native
   class NinePatchDrawable ()
     extends typings.androiduix.androidui.image.NinePatchDrawable
-  /* static members */
-  @js.native
-  object NinePatchDrawable extends js.Object {
+  object NinePatchDrawable {
     
-    var GlobalBorderInfoCache: js.Any = js.native
+    @JSGlobal("androidui.image.NinePatchDrawable")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSGlobal("androidui.image.NinePatchDrawable.GlobalBorderInfoCache")
+    @js.native
+    def GlobalBorderInfoCache: js.Any = js.native
+    @scala.inline
+    def GlobalBorderInfoCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GlobalBorderInfoCache")(x.asInstanceOf[js.Any])
   }
 }

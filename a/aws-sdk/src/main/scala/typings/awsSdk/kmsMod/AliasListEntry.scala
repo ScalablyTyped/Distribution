@@ -1,11 +1,12 @@
 package typings.awsSdk.kmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AliasListEntry extends js.Object {
+trait AliasListEntry extends StObject {
   
   /**
     * String that contains the key ARN.
@@ -31,36 +32,24 @@ object AliasListEntry {
   }
   
   @scala.inline
-  implicit class AliasListEntryOps[Self <: AliasListEntry] (val x: Self) extends AnyVal {
+  implicit class AliasListEntryMutableBuilder[Self <: AliasListEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAliasArn(value: ArnType): Self = StObject.set(x, "AliasArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasArnUndefined: Self = StObject.set(x, "AliasArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAliasName(value: AliasNameType): Self = StObject.set(x, "AliasName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliasArn(value: ArnType): Self = this.set("AliasArn", value.asInstanceOf[js.Any])
+    def setAliasNameUndefined: Self = StObject.set(x, "AliasName", js.undefined)
     
     @scala.inline
-    def deleteAliasArn: Self = this.set("AliasArn", js.undefined)
+    def setTargetKeyId(value: KeyIdType): Self = StObject.set(x, "TargetKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliasName(value: AliasNameType): Self = this.set("AliasName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAliasName: Self = this.set("AliasName", js.undefined)
-    
-    @scala.inline
-    def setTargetKeyId(value: KeyIdType): Self = this.set("TargetKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetKeyId: Self = this.set("TargetKeyId", js.undefined)
+    def setTargetKeyIdUndefined: Self = StObject.set(x, "TargetKeyId", js.undefined)
   }
 }

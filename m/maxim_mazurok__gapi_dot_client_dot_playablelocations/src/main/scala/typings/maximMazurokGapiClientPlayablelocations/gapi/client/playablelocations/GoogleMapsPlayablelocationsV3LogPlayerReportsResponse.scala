@@ -1,9 +1,10 @@
 package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playablelocations
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line:no-empty-interface
 @js.native
-trait GoogleMapsPlayablelocationsV3LogPlayerReportsResponse extends js.Object
+trait GoogleMapsPlayablelocationsV3LogPlayerReportsResponse extends StObject

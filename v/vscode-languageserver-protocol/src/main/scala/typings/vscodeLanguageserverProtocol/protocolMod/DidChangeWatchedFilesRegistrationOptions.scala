@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DidChangeWatchedFilesRegistrationOptions extends js.Object {
+trait DidChangeWatchedFilesRegistrationOptions extends StObject {
   
   /**
     * The watchers to register.
@@ -21,24 +22,12 @@ object DidChangeWatchedFilesRegistrationOptions {
   }
   
   @scala.inline
-  implicit class DidChangeWatchedFilesRegistrationOptionsOps[Self <: DidChangeWatchedFilesRegistrationOptions] (val x: Self) extends AnyVal {
+  implicit class DidChangeWatchedFilesRegistrationOptionsMutableBuilder[Self <: DidChangeWatchedFilesRegistrationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWatchers(value: js.Array[FileSystemWatcher]): Self = StObject.set(x, "watchers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWatchersVarargs(value: FileSystemWatcher*): Self = this.set("watchers", js.Array(value :_*))
-    
-    @scala.inline
-    def setWatchers(value: js.Array[FileSystemWatcher]): Self = this.set("watchers", value.asInstanceOf[js.Any])
+    def setWatchersVarargs(value: FileSystemWatcher*): Self = StObject.set(x, "watchers", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.paypalPayoutsSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,24 +19,12 @@ object SenderBatchHeader {
   }
   
   @scala.inline
-  implicit class SenderBatchHeaderOps[Self <: SenderBatchHeader] (val x: Self) extends AnyVal {
+  implicit class SenderBatchHeaderMutableBuilder[Self <: SenderBatchHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNote(value: String): Self = this.set("note", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNote: Self = this.set("note", js.undefined)
+    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
   }
 }

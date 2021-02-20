@@ -1,12 +1,13 @@
 package typings.git.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "Blame")
 @js.native
-class Blame protected () extends js.Object {
+class Blame protected () extends StObject {
   def this(repo: Repo, file: String, callback: js.Function2[/* err */ js.Any, /* blame */ Blame, Unit]) = this()
   def this(
     repo: Repo,

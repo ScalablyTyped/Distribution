@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalSecondaryIndexDescription extends js.Object {
+trait LocalSecondaryIndexDescription extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that uniquely identifies the index.
@@ -46,57 +47,45 @@ object LocalSecondaryIndexDescription {
   }
   
   @scala.inline
-  implicit class LocalSecondaryIndexDescriptionOps[Self <: LocalSecondaryIndexDescription] (val x: Self) extends AnyVal {
+  implicit class LocalSecondaryIndexDescriptionMutableBuilder[Self <: LocalSecondaryIndexDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndexArn(value: String): Self = StObject.set(x, "IndexArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexArnUndefined: Self = StObject.set(x, "IndexArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexArn(value: String): Self = this.set("IndexArn", value.asInstanceOf[js.Any])
+    def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
     
     @scala.inline
-    def deleteIndexArn: Self = this.set("IndexArn", js.undefined)
+    def setIndexSizeBytes(value: Long): Self = StObject.set(x, "IndexSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexName(value: IndexName): Self = this.set("IndexName", value.asInstanceOf[js.Any])
+    def setIndexSizeBytesUndefined: Self = StObject.set(x, "IndexSizeBytes", js.undefined)
     
     @scala.inline
-    def deleteIndexName: Self = this.set("IndexName", js.undefined)
+    def setItemCount(value: Long): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexSizeBytes(value: Long): Self = this.set("IndexSizeBytes", value.asInstanceOf[js.Any])
+    def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
     
     @scala.inline
-    def deleteIndexSizeBytes: Self = this.set("IndexSizeBytes", js.undefined)
+    def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemCount(value: Long): Self = this.set("ItemCount", value.asInstanceOf[js.Any])
+    def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
     
     @scala.inline
-    def deleteItemCount: Self = this.set("ItemCount", js.undefined)
+    def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
     
     @scala.inline
-    def setKeySchemaVarargs(value: KeySchemaElement*): Self = this.set("KeySchema", js.Array(value :_*))
+    def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeySchema(value: KeySchema): Self = this.set("KeySchema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeySchema: Self = this.set("KeySchema", js.undefined)
-    
-    @scala.inline
-    def setProjection(value: Projection): Self = this.set("Projection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjection: Self = this.set("Projection", js.undefined)
+    def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
   }
 }

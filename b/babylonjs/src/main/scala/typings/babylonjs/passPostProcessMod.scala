@@ -6,14 +6,14 @@ import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/passPostProcess", JSImport.Namespace)
-@js.native
-object passPostProcessMod extends js.Object {
+object passPostProcessMod {
   
+  @JSImport("babylonjs/PostProcesses/passPostProcess", "PassCubePostProcess")
   @js.native
   class PassCubePostProcess protected () extends PostProcess {
     /**
@@ -53,13 +53,15 @@ object passPostProcessMod extends js.Object {
     def face_=(value: Double): Unit = js.native
   }
   /* static members */
-  @js.native
-  object PassCubePostProcess extends js.Object {
+  object PassCubePostProcess {
     
     /** @hidden */
+    @JSImport("babylonjs/PostProcesses/passPostProcess", "PassCubePostProcess._Parse")
+    @js.native
     def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): PassCubePostProcess = js.native
   }
   
+  @JSImport("babylonjs/PostProcesses/passPostProcess", "PassPostProcess")
   @js.native
   class PassPostProcess protected () extends PostProcess {
     /**
@@ -85,10 +87,11 @@ object passPostProcessMod extends js.Object {
     ) = this()
   }
   /* static members */
-  @js.native
-  object PassPostProcess extends js.Object {
+  object PassPostProcess {
     
     /** @hidden */
+    @JSImport("babylonjs/PostProcesses/passPostProcess", "PassPostProcess._Parse")
+    @js.native
     def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): PassPostProcess = js.native
   }
 }

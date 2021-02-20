@@ -1,5 +1,6 @@
 package typings.playcanvas.global.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,38 +22,53 @@ class Vec2 ()
   def this(x: js.Array[Double], y: Double) = this()
   def this(x: Double, y: Double) = this()
 }
-/* static members */
-@JSGlobal("pc.Vec2")
-@js.native
-object Vec2 extends js.Object {
+object Vec2 {
   
   /**
     * A constant vector set to [0, -1].
     */
+  /* static member */
+  @JSGlobal("pc.Vec2.DOWN")
+  @js.native
   val DOWN: typings.playcanvas.pc.Vec2 = js.native
   
   /**
     * A constant vector set to [-1, 0].
     */
+  /* static member */
+  @JSGlobal("pc.Vec2.LEFT")
+  @js.native
   val LEFT: typings.playcanvas.pc.Vec2 = js.native
   
   /**
     * A constant vector set to [1, 1].
     */
+  /* static member */
+  @JSGlobal("pc.Vec2.ONE")
+  @js.native
   val ONE: typings.playcanvas.pc.Vec2 = js.native
   
   /**
     * A constant vector set to [1, 0].
     */
+  /* static member */
+  @JSGlobal("pc.Vec2.RIGHT")
+  @js.native
   val RIGHT: typings.playcanvas.pc.Vec2 = js.native
   
   /**
     * A constant vector set to [0, 1].
     */
+  /* static member */
+  @JSGlobal("pc.Vec2.UP")
+  @js.native
   val UP: typings.playcanvas.pc.Vec2 = js.native
   
   /**
     * A constant vector set to [0, 0].
     */
+  /* static member */
+  @JSGlobal("pc.Vec2.ZERO")
+  @js.native
   val ZERO: typings.playcanvas.pc.Vec2 = js.native
 }

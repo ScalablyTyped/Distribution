@@ -2,14 +2,14 @@ package typings.ionicCore
 
 import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/card-title/card-title", JSImport.Namespace)
-@js.native
-object cardTitleMod extends js.Object {
+object cardTitleMod {
   
+  @JSImport("@ionic/core/dist/types/components/card-title/card-title", "CardTitle")
   @js.native
   class CardTitle () extends ComponentInterface {
     

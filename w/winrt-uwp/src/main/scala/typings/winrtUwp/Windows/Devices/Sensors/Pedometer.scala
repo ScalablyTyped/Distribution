@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.readingchanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides an interface for a pedometer to measure the number of steps taken. */
 @js.native
-trait Pedometer extends js.Object {
+trait Pedometer extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")
@@ -21,7 +22,8 @@ trait Pedometer extends js.Object {
   
   var getCurrentReadings: js.Any = js.native
   
-   /* unmapped type */ /** The smallest report interval that is supported by this pedometer. */
+  /* unmapped type */
+  /** The smallest report interval that is supported by this pedometer. */
   var minimumReportInterval: Double = js.native
   
   /** Occurs each time the pedometer reports a new value. */

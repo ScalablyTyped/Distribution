@@ -2,12 +2,13 @@ package typings.activexAccess.Access
 
 import typings.activexAccess.activexAccessNumbers.`0`
 import typings.activexAccess.activexAccessNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormatConditions extends js.Object {
+trait FormatConditions extends StObject {
   
   def apply(Index: Double): FormatCondition = js.native
   

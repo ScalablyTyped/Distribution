@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Delete model results. */
 @js.native
-trait DeleteModelResults extends js.Object {
+trait DeleteModelResults extends StObject {
   
   /** model_id of the deleted model. */
   var deleted: js.UndefOr[String] = js.native
@@ -20,24 +21,12 @@ object DeleteModelResults {
   }
   
   @scala.inline
-  implicit class DeleteModelResultsOps[Self <: DeleteModelResults] (val x: Self) extends AnyVal {
+  implicit class DeleteModelResultsMutableBuilder[Self <: DeleteModelResults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleted(value: String): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeleted(value: String): Self = this.set("deleted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
   }
 }

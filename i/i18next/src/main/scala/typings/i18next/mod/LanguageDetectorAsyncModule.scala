@@ -2,6 +2,7 @@ package typings.i18next.mod
 
 import typings.i18next.i18nextBooleans.`true`
 import typings.i18next.i18nextStrings.languageDetector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,33 +39,21 @@ object LanguageDetectorAsyncModule {
   }
   
   @scala.inline
-  implicit class LanguageDetectorAsyncModuleOps[Self <: LanguageDetectorAsyncModule] (val x: Self) extends AnyVal {
+  implicit class LanguageDetectorAsyncModuleMutableBuilder[Self <: LanguageDetectorAsyncModule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsync(value: `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheUserLanguage(value: String => Unit): Self = StObject.set(x, "cacheUserLanguage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetect(value: js.Function1[/* lng */ String, Unit] => Unit): Self = StObject.set(x, "detect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAsync(value: `true`): Self = this.set("async", value.asInstanceOf[js.Any])
+    def setInit(value: (Services, js.Object, InitOptions) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCacheUserLanguage(value: String => Unit): Self = this.set("cacheUserLanguage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDetect(value: js.Function1[/* lng */ String, Unit] => Unit): Self = this.set("detect", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInit(value: (Services, js.Object, InitOptions) => Unit): Self = this.set("init", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setType(value: languageDetector): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: languageDetector): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

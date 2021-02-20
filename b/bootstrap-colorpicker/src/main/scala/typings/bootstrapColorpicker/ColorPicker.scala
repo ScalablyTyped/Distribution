@@ -1,11 +1,12 @@
 package typings.bootstrapColorpicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColorPicker extends js.Object {
+trait ColorPicker extends StObject {
   
   var color: Color = js.native
   
@@ -44,45 +45,33 @@ object ColorPicker {
   }
   
   @scala.inline
-  implicit class ColorPickerOps[Self <: ColorPicker] (val x: Self) extends AnyVal {
+  implicit class ColorPickerMutableBuilder[Self <: ColorPicker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponent(value: Boolean): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainer(value: Boolean): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponent(value: Boolean): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setElement(value: JQuery): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: Boolean): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setInput(value: JQuery): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: JQuery): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setOptions(value: ColorPickerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInput(value: JQuery): Self = this.set("input", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptions(value: ColorPickerOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPicker(value: JQuery): Self = this.set("picker", value.asInstanceOf[js.Any])
+    def setPicker(value: JQuery): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
   }
 }

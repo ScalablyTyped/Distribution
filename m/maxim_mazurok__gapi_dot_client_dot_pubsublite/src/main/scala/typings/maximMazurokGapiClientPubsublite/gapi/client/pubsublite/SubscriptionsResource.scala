@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientPubsublite.anon.Fields
 import typings.maximMazurokGapiClientPubsublite.anon.Key
 import typings.maximMazurokGapiClientPubsublite.anon.Name
 import typings.maximMazurokGapiClientPubsublite.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubscriptionsResource extends js.Object {
+trait SubscriptionsResource extends StObject {
   
   /** Creates a new subscription. */
   def create(request: Accesstoken): Request[Subscription] = js.native

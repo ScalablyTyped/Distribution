@@ -1,11 +1,12 @@
 package typings.awsSdk.iotthingsgraphMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlowExecutionSummary extends js.Object {
+trait FlowExecutionSummary extends StObject {
   
   /**
     * The date and time when the flow execution summary was created.
@@ -46,54 +47,42 @@ object FlowExecutionSummary {
   }
   
   @scala.inline
-  implicit class FlowExecutionSummaryOps[Self <: FlowExecutionSummary] (val x: Self) extends AnyVal {
+  implicit class FlowExecutionSummaryMutableBuilder[Self <: FlowExecutionSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlowExecutionId(value: FlowExecutionId): Self = StObject.set(x, "flowExecutionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: Timestamp): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setFlowExecutionIdUndefined: Self = StObject.set(x, "flowExecutionId", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setFlowTemplateId(value: Urn): Self = StObject.set(x, "flowTemplateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowExecutionId(value: FlowExecutionId): Self = this.set("flowExecutionId", value.asInstanceOf[js.Any])
+    def setFlowTemplateIdUndefined: Self = StObject.set(x, "flowTemplateId", js.undefined)
     
     @scala.inline
-    def deleteFlowExecutionId: Self = this.set("flowExecutionId", js.undefined)
+    def setStatus(value: FlowExecutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowTemplateId(value: Urn): Self = this.set("flowTemplateId", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteFlowTemplateId: Self = this.set("flowTemplateId", js.undefined)
+    def setSystemInstanceId(value: Urn): Self = StObject.set(x, "systemInstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: FlowExecutionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setSystemInstanceIdUndefined: Self = StObject.set(x, "systemInstanceId", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemInstanceId(value: Urn): Self = this.set("systemInstanceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystemInstanceId: Self = this.set("systemInstanceId", js.undefined)
-    
-    @scala.inline
-    def setUpdatedAt(value: Timestamp): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedAt: Self = this.set("updatedAt", js.undefined)
+    def setUpdatedAtUndefined: Self = StObject.set(x, "updatedAt", js.undefined)
   }
 }

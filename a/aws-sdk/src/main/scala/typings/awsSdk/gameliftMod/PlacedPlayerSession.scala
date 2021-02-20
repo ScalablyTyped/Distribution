@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlacedPlayerSession extends js.Object {
+trait PlacedPlayerSession extends StObject {
   
   /**
     * A unique identifier for a player that is associated with this player session.
@@ -26,30 +27,18 @@ object PlacedPlayerSession {
   }
   
   @scala.inline
-  implicit class PlacedPlayerSessionOps[Self <: PlacedPlayerSession] (val x: Self) extends AnyVal {
+  implicit class PlacedPlayerSessionMutableBuilder[Self <: PlacedPlayerSession] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlayerId(value: NonZeroAndMaxString): Self = StObject.set(x, "PlayerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlayerIdUndefined: Self = StObject.set(x, "PlayerId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlayerSessionId(value: PlayerSessionId): Self = StObject.set(x, "PlayerSessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayerId(value: NonZeroAndMaxString): Self = this.set("PlayerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlayerId: Self = this.set("PlayerId", js.undefined)
-    
-    @scala.inline
-    def setPlayerSessionId(value: PlayerSessionId): Self = this.set("PlayerSessionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlayerSessionId: Self = this.set("PlayerSessionId", js.undefined)
+    def setPlayerSessionIdUndefined: Self = StObject.set(x, "PlayerSessionId", js.undefined)
   }
 }

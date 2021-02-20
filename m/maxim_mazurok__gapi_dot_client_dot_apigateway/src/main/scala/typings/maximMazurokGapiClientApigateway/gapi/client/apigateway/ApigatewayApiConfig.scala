@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientApigateway.gapi.client.apigateway
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApigatewayApiConfig extends js.Object {
+trait ApigatewayApiConfig extends StObject {
   
   /** Output only. Created time. */
   var createTime: js.UndefOr[String] = js.native
@@ -59,97 +60,85 @@ object ApigatewayApiConfig {
   }
   
   @scala.inline
-  implicit class ApigatewayApiConfigOps[Self <: ApigatewayApiConfig] (val x: Self) extends AnyVal {
+  implicit class ApigatewayApiConfigMutableBuilder[Self <: ApigatewayApiConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setGatewayConfig(value: ApigatewayGatewayConfig): Self = StObject.set(x, "gatewayConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setGatewayConfigUndefined: Self = StObject.set(x, "gatewayConfig", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setGrpcServices(value: js.Array[ApigatewayApiConfigGrpcServiceDefinition]): Self = StObject.set(x, "grpcServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayConfig(value: ApigatewayGatewayConfig): Self = this.set("gatewayConfig", value.asInstanceOf[js.Any])
+    def setGrpcServicesUndefined: Self = StObject.set(x, "grpcServices", js.undefined)
     
     @scala.inline
-    def deleteGatewayConfig: Self = this.set("gatewayConfig", js.undefined)
-    
-    @scala.inline
-    def setGrpcServicesVarargs(value: ApigatewayApiConfigGrpcServiceDefinition*): Self = this.set("grpcServices", js.Array(value :_*))
-    
-    @scala.inline
-    def setGrpcServices(value: js.Array[ApigatewayApiConfigGrpcServiceDefinition]): Self = this.set("grpcServices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGrpcServices: Self = this.set("grpcServices", js.undefined)
+    def setGrpcServicesVarargs(value: ApigatewayApiConfigGrpcServiceDefinition*): Self = StObject.set(x, "grpcServices", js.Array(value :_*))
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientApigateway.maximMazurokGapiClientApigatewayStrings.ApigatewayApiConfig with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setManagedServiceConfigsVarargs(value: ApigatewayApiConfigFile*): Self = this.set("managedServiceConfigs", js.Array(value :_*))
+    def setManagedServiceConfigs(value: js.Array[ApigatewayApiConfigFile]): Self = StObject.set(x, "managedServiceConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagedServiceConfigs(value: js.Array[ApigatewayApiConfigFile]): Self = this.set("managedServiceConfigs", value.asInstanceOf[js.Any])
+    def setManagedServiceConfigsUndefined: Self = StObject.set(x, "managedServiceConfigs", js.undefined)
     
     @scala.inline
-    def deleteManagedServiceConfigs: Self = this.set("managedServiceConfigs", js.undefined)
+    def setManagedServiceConfigsVarargs(value: ApigatewayApiConfigFile*): Self = StObject.set(x, "managedServiceConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setOpenapiDocumentsVarargs(value: ApigatewayApiConfigOpenApiDocument*): Self = this.set("openapiDocuments", js.Array(value :_*))
+    def setOpenapiDocuments(value: js.Array[ApigatewayApiConfigOpenApiDocument]): Self = StObject.set(x, "openapiDocuments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenapiDocuments(value: js.Array[ApigatewayApiConfigOpenApiDocument]): Self = this.set("openapiDocuments", value.asInstanceOf[js.Any])
+    def setOpenapiDocumentsUndefined: Self = StObject.set(x, "openapiDocuments", js.undefined)
     
     @scala.inline
-    def deleteOpenapiDocuments: Self = this.set("openapiDocuments", js.undefined)
+    def setOpenapiDocumentsVarargs(value: ApigatewayApiConfigOpenApiDocument*): Self = StObject.set(x, "openapiDocuments", js.Array(value :_*))
     
     @scala.inline
-    def setServiceConfigId(value: String): Self = this.set("serviceConfigId", value.asInstanceOf[js.Any])
+    def setServiceConfigId(value: String): Self = StObject.set(x, "serviceConfigId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteServiceConfigId: Self = this.set("serviceConfigId", js.undefined)
+    def setServiceConfigIdUndefined: Self = StObject.set(x, "serviceConfigId", js.undefined)
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

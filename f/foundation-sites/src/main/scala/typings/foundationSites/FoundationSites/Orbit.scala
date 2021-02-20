@@ -1,13 +1,14 @@
 package typings.foundationSites.FoundationSites
 
 import typings.foundationSites.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://get.foundation/sites/docs/orbit.html#javascript-reference
 @js.native
-trait Orbit extends js.Object {
+trait Orbit extends StObject {
   
   def changeSlide(isLTR: Boolean): Unit = js.native
   def changeSlide(isLTR: Boolean, chosenSlide: js.UndefOr[scala.Nothing], idx: Double): Unit = js.native

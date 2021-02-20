@@ -6,6 +6,7 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import typings.winrtUwp.Windows.Storage.Streams.UnicodeEncoding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class PathIO ()
   extends typings.winrtUwp.Windows.Storage.PathIO
-/* static members */
-@JSGlobal("Windows.Storage.PathIO")
-@js.native
-object PathIO extends js.Object {
+object PathIO {
   
   /**
     * Appends lines of text to the file at the specified path or URI.
@@ -26,6 +24,9 @@ object PathIO extends js.Object {
     * @param lines The list of text strings to append as lines.
     * @return No object or value is returned when this method completes.
     */
+  /* static member */
+  @JSGlobal("Windows.Storage.PathIO.appendLinesAsync")
+  @js.native
   def appendLinesAsync(absolutePath: String, lines: IIterable[String]): IPromiseWithIAsyncAction = js.native
   /**
     * Appends lines of text to the file at the specified path or URI using the specified character encoding.
@@ -34,6 +35,9 @@ object PathIO extends js.Object {
     * @param encoding The character encoding of the file.
     * @return No object or value is returned when this method completes.
     */
+  /* static member */
+  @JSGlobal("Windows.Storage.PathIO.appendLinesAsync")
+  @js.native
   def appendLinesAsync(absolutePath: String, lines: IIterable[String], encoding: UnicodeEncoding): IPromiseWithIAsyncAction = js.native
   
   /**
@@ -42,6 +46,9 @@ object PathIO extends js.Object {
     * @param contents The text to append.
     * @return No object or value is returned when this method completes.
     */
+  /* static member */
+  @JSGlobal("Windows.Storage.PathIO.appendTextAsync")
+  @js.native
   def appendTextAsync(absolutePath: String, contents: String): IPromiseWithIAsyncAction = js.native
   /**
     * Appends text to the file at the specified path or URI using the specified character encoding.
@@ -50,6 +57,9 @@ object PathIO extends js.Object {
     * @param encoding The character encoding of the file.
     * @return No object or value is returned when this method completes.
     */
+  /* static member */
+  @JSGlobal("Windows.Storage.PathIO.appendTextAsync")
+  @js.native
   def appendTextAsync(absolutePath: String, contents: String, encoding: UnicodeEncoding): IPromiseWithIAsyncAction = js.native
   
   /**
@@ -57,6 +67,9 @@ object PathIO extends js.Object {
     * @param absolutePath The path of the file to read.
     * @return When this method completes, it returns an object (type IBuffer ) that represents the contents of the file.
     */
+  /* static member */
+  @JSGlobal("Windows.Storage.PathIO.readBufferAsync")
+  @js.native
   def readBufferAsync(absolutePath: String): IPromiseWithIAsyncOperation[IBuffer] = js.native
   
   /**
@@ -64,6 +77,9 @@ object PathIO extends js.Object {
     * @param absolutePath The path of the file to read.
     * @return When this method completes successfully, it returns the contents of the file as a list (type IVector ) of lines of text. Each line of text in the list is represented by a String object.
     */
+  /* static member */
+  @JSGlobal("Windows.Storage.PathIO.readLinesAsync")
+  @js.native
   def readLinesAsync(absolutePath: String): IPromiseWithIAsyncOperation[IVector[_]] = js.native
   /**
     * Reads the contents of the file at the specified path or URI using the specified character encoding and returns lines of text.
@@ -71,6 +87,9 @@ object PathIO extends js.Object {
     * @param encoding The character encoding of the file.
     * @return When this method completes successfully, it returns the contents of the file as a list (type IVector ) of lines of text. Each line of text in the list is represented by a String object.
     */
+  /* static member */
+  @JSGlobal("Windows.Storage.PathIO.readLinesAsync")
+  @js.native
   def readLinesAsync(absolutePath: String, encoding: UnicodeEncoding): IPromiseWithIAsyncOperation[IVector[_]] = js.native
   
   /**
@@ -78,6 +97,9 @@ object PathIO extends js.Object {
     * @param absolutePath The path of the file to read.
     * @return When this method completes successfully, it returns the contents of the file as a text string.
     */
+  /* static member */
+  @JSGlobal("Windows.Storage.PathIO.readTextAsync")
+  @js.native
   def readTextAsync(absolutePath: String): IPromiseWithIAsyncOperation[String] = js.native
   /**
     * Reads the contents of the file at the specified path or URI using the specified character encoding and returns text.
@@ -85,6 +107,9 @@ object PathIO extends js.Object {
     * @param encoding The character encoding of the file.
     * @return When this method completes successfully, it returns the contents of the file as a text string.
     */
+  /* static member */
+  @JSGlobal("Windows.Storage.PathIO.readTextAsync")
+  @js.native
   def readTextAsync(absolutePath: String, encoding: UnicodeEncoding): IPromiseWithIAsyncOperation[String] = js.native
   
   /**
@@ -93,6 +118,9 @@ object PathIO extends js.Object {
     * @param buffer The buffer that contains the data to write.
     * @return No object or value is returned when this method completes.
     */
+  /* static member */
+  @JSGlobal("Windows.Storage.PathIO.writeBufferAsync")
+  @js.native
   def writeBufferAsync(absolutePath: String, buffer: IBuffer): IPromiseWithIAsyncAction = js.native
   
   /**
@@ -101,6 +129,9 @@ object PathIO extends js.Object {
     * @param buffer An array of bytes to write.
     * @return No object or value is returned when this method completes.
     */
+  /* static member */
+  @JSGlobal("Windows.Storage.PathIO.writeBytesAsync")
+  @js.native
   def writeBytesAsync(absolutePath: String, buffer: js.Array[Double]): IPromiseWithIAsyncAction = js.native
   
   /**
@@ -109,6 +140,9 @@ object PathIO extends js.Object {
     * @param lines The list of text strings to append as lines.
     * @return No object or value is returned when this method completes.
     */
+  /* static member */
+  @JSGlobal("Windows.Storage.PathIO.writeLinesAsync")
+  @js.native
   def writeLinesAsync(absolutePath: String, lines: IIterable[String]): IPromiseWithIAsyncAction = js.native
   /**
     * Writes lines of text to the file at the specified path or URI using the specified character encoding.
@@ -117,6 +151,9 @@ object PathIO extends js.Object {
     * @param encoding The character encoding of the file.
     * @return No object or value is returned when this method completes.
     */
+  /* static member */
+  @JSGlobal("Windows.Storage.PathIO.writeLinesAsync")
+  @js.native
   def writeLinesAsync(absolutePath: String, lines: IIterable[String], encoding: UnicodeEncoding): IPromiseWithIAsyncAction = js.native
   
   /**
@@ -125,6 +162,9 @@ object PathIO extends js.Object {
     * @param contents The text to write.
     * @return No object or value is returned when this method completes.
     */
+  /* static member */
+  @JSGlobal("Windows.Storage.PathIO.writeTextAsync")
+  @js.native
   def writeTextAsync(absolutePath: String, contents: String): IPromiseWithIAsyncAction = js.native
   /**
     * Writes text to the file at the specified path or URI using the specified character encoding.
@@ -133,5 +173,8 @@ object PathIO extends js.Object {
     * @param encoding The character encoding of the file.
     * @return No object or value is returned when this method completes.
     */
+  /* static member */
+  @JSGlobal("Windows.Storage.PathIO.writeTextAsync")
+  @js.native
   def writeTextAsync(absolutePath: String, contents: String, encoding: UnicodeEncoding): IPromiseWithIAsyncAction = js.native
 }

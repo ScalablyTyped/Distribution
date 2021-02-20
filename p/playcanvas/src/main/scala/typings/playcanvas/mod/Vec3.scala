@@ -1,5 +1,6 @@
 package typings.playcanvas.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,48 +29,69 @@ class Vec3 ()
   def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
   def this(x: Double, y: Double, z: Double) = this()
 }
-/* static members */
-@JSImport("playcanvas", "Vec3")
-@js.native
-object Vec3 extends js.Object {
+object Vec3 {
   
   /**
     * A constant vector set to [0, 0, 1].
     */
+  /* static member */
+  @JSImport("playcanvas", "Vec3.BACK")
+  @js.native
   val BACK: typings.playcanvas.pc.Vec3 = js.native
   
   /**
     * A constant vector set to [0, -1, 0].
     */
+  /* static member */
+  @JSImport("playcanvas", "Vec3.DOWN")
+  @js.native
   val DOWN: typings.playcanvas.pc.Vec3 = js.native
   
   /**
     * A constant vector set to [0, 0, -1].
     */
+  /* static member */
+  @JSImport("playcanvas", "Vec3.FORWARD")
+  @js.native
   val FORWARD: typings.playcanvas.pc.Vec3 = js.native
   
   /**
     * A constant vector set to [-1, 0, 0].
     */
+  /* static member */
+  @JSImport("playcanvas", "Vec3.LEFT")
+  @js.native
   val LEFT: typings.playcanvas.pc.Vec3 = js.native
   
   /**
     * A constant vector set to [1, 1, 1].
     */
+  /* static member */
+  @JSImport("playcanvas", "Vec3.ONE")
+  @js.native
   val ONE: typings.playcanvas.pc.Vec3 = js.native
   
   /**
     * A constant vector set to [1, 0, 0].
     */
+  /* static member */
+  @JSImport("playcanvas", "Vec3.RIGHT")
+  @js.native
   val RIGHT: typings.playcanvas.pc.Vec3 = js.native
   
   /**
     * A constant vector set to [0, 1, 0].
     */
+  /* static member */
+  @JSImport("playcanvas", "Vec3.UP")
+  @js.native
   val UP: typings.playcanvas.pc.Vec3 = js.native
   
   /**
     * A constant vector set to [0, 0, 0].
     */
+  /* static member */
+  @JSImport("playcanvas", "Vec3.ZERO")
+  @js.native
   val ZERO: typings.playcanvas.pc.Vec3 = js.native
 }

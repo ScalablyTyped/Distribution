@@ -2,13 +2,14 @@ package typings.intercomClient.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.intercomClient.intercomClientStrings.company
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<intercom-client.intercom-client/Company.Company> */
 @js.native
-trait PartialCompany extends js.Object {
+trait PartialCompany extends StObject {
   
   var app_id: js.UndefOr[String] = js.native
   
@@ -51,114 +52,102 @@ object PartialCompany {
   }
   
   @scala.inline
-  implicit class PartialCompanyOps[Self <: PartialCompany] (val x: Self) extends AnyVal {
+  implicit class PartialCompanyMutableBuilder[Self <: PartialCompany] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApp_id(value: String): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApp_idUndefined: Self = StObject.set(x, "app_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompany_id(value: String): Self = StObject.set(x, "company_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApp_id(value: String): Self = this.set("app_id", value.asInstanceOf[js.Any])
+    def setCompany_idUndefined: Self = StObject.set(x, "company_id", js.undefined)
     
     @scala.inline
-    def deleteApp_id: Self = this.set("app_id", js.undefined)
+    def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompany_id(value: String): Self = this.set("company_id", value.asInstanceOf[js.Any])
+    def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
     
     @scala.inline
-    def deleteCompany_id: Self = this.set("company_id", js.undefined)
+    def setCustom_attributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: Double): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setCustom_attributesUndefined: Self = StObject.set(x, "custom_attributes", js.undefined)
     
     @scala.inline
-    def deleteCreated_at: Self = this.set("created_at", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom_attributes(value: StringDictionary[js.Any]): Self = this.set("custom_attributes", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCustom_attributes: Self = this.set("custom_attributes", js.undefined)
+    def setIndustry(value: String): Self = StObject.set(x, "industry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIndustryUndefined: Self = StObject.set(x, "industry", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setMonthly_spend(value: Double): Self = StObject.set(x, "monthly_spend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndustry(value: String): Self = this.set("industry", value.asInstanceOf[js.Any])
+    def setMonthly_spendUndefined: Self = StObject.set(x, "monthly_spend", js.undefined)
     
     @scala.inline
-    def deleteIndustry: Self = this.set("industry", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthly_spend(value: Double): Self = this.set("monthly_spend", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMonthly_spend: Self = this.set("monthly_spend", js.undefined)
+    def setPlan(value: String | Name): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRemote_created_at(value: Double): Self = StObject.set(x, "remote_created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlan(value: String | Name): Self = this.set("plan", value.asInstanceOf[js.Any])
+    def setRemote_created_atUndefined: Self = StObject.set(x, "remote_created_at", js.undefined)
     
     @scala.inline
-    def deletePlan: Self = this.set("plan", js.undefined)
+    def setSession_count(value: Double): Self = StObject.set(x, "session_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemote_created_at(value: Double): Self = this.set("remote_created_at", value.asInstanceOf[js.Any])
+    def setSession_countUndefined: Self = StObject.set(x, "session_count", js.undefined)
     
     @scala.inline
-    def deleteRemote_created_at: Self = this.set("remote_created_at", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSession_count(value: Double): Self = this.set("session_count", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteSession_count: Self = this.set("session_count", js.undefined)
+    def setType(value: company): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setUpdated_at(value: Double): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: company): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUpdated_atUndefined: Self = StObject.set(x, "updated_at", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setUser_count(value: Double): Self = StObject.set(x, "user_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdated_at(value: Double): Self = this.set("updated_at", value.asInstanceOf[js.Any])
+    def setUser_countUndefined: Self = StObject.set(x, "user_count", js.undefined)
     
     @scala.inline
-    def deleteUpdated_at: Self = this.set("updated_at", js.undefined)
+    def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser_count(value: Double): Self = this.set("user_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser_count: Self = this.set("user_count", js.undefined)
-    
-    @scala.inline
-    def setWebsite(value: String): Self = this.set("website", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsite: Self = this.set("website", js.undefined)
+    def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
   }
 }

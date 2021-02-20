@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobStatistics4 extends js.Object {
+trait JobStatistics4 extends StObject {
   
   /**
     * [Output-only] Number of files per destination URI or URI pattern specified in the extract configuration. These values will be in the same order as the URIs specified in the
@@ -25,33 +26,21 @@ object JobStatistics4 {
   }
   
   @scala.inline
-  implicit class JobStatistics4Ops[Self <: JobStatistics4] (val x: Self) extends AnyVal {
+  implicit class JobStatistics4MutableBuilder[Self <: JobStatistics4] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationUriFileCounts(value: js.Array[String]): Self = StObject.set(x, "destinationUriFileCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationUriFileCountsUndefined: Self = StObject.set(x, "destinationUriFileCounts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationUriFileCountsVarargs(value: String*): Self = StObject.set(x, "destinationUriFileCounts", js.Array(value :_*))
     
     @scala.inline
-    def setDestinationUriFileCountsVarargs(value: String*): Self = this.set("destinationUriFileCounts", js.Array(value :_*))
+    def setInputBytes(value: String): Self = StObject.set(x, "inputBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationUriFileCounts(value: js.Array[String]): Self = this.set("destinationUriFileCounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationUriFileCounts: Self = this.set("destinationUriFileCounts", js.undefined)
-    
-    @scala.inline
-    def setInputBytes(value: String): Self = this.set("inputBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputBytes: Self = this.set("inputBytes", js.undefined)
+    def setInputBytesUndefined: Self = StObject.set(x, "inputBytes", js.undefined)
   }
 }

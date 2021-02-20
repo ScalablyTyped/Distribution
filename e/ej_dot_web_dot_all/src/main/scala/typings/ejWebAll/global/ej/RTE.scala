@@ -2,6 +2,7 @@ package typings.ejWebAll.global.ej
 
 import typings.ejWebAll.JQuery
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,20 +13,25 @@ class RTE protected ()
   extends typings.ejWebAll.ej.RTE {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.RTE.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.RTE.Model) = this()
+  def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
+  def this(element: Element, options: typings.ejWebAll.ej.Model) = this()
 }
-/* static members */
-@JSGlobal("ej.RTE")
-@js.native
-object RTE extends js.Object {
+object RTE {
   
-  var Locale: js.Any = js.native
-  
-  var fn: typings.ejWebAll.ej.RTE = js.native
-  
+  @JSGlobal("ej.RTE")
   @js.native
-  object ToolbarOverflowMode extends js.Object {
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSGlobal("ej.RTE.Locale")
+  @js.native
+  def Locale: js.Any = js.native
+  @scala.inline
+  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("ej.RTE.ToolbarOverflowMode")
+  @js.native
+  object ToolbarOverflowMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.RTE.ToolbarOverflowMode with Double] = js.native
@@ -34,4 +40,11 @@ object RTE extends js.Object {
     
     /* 0 */ val Popup: typings.ejWebAll.ej.RTE.ToolbarOverflowMode.Popup with Double = js.native
   }
+  
+  /* static member */
+  @JSGlobal("ej.RTE.fn")
+  @js.native
+  def fn: typings.ejWebAll.ej.RTE = js.native
+  @scala.inline
+  def fn_=(x: typings.ejWebAll.ej.RTE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

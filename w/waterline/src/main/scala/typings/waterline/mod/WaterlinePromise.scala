@@ -14,13 +14,14 @@ import typings.std.Error
 import typings.std.Map
 import typings.std.ReturnType
 import typings.waterline.waterlineStrings.Object
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined bluebird.bluebird.^<T> & {exec (cb : (err : std.Error, result : T): any): void} */
 @js.native
-trait WaterlinePromise[T] extends js.Object {
+trait WaterlinePromise[T] extends StObject {
   
   /**
     * Same as calling `Promise.all(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
@@ -2963,7 +2964,7 @@ trait WaterlinePromise[T] extends js.Object {
   
   def thenThrow(reason: Error): Bluebird[scala.Nothing] = js.native
   
-   // For simpler signature help.
+  // For simpler signature help.
   @JSName("then")
   def then_TResult1TResult2[TResult1, TResult2](): Bluebird[TResult1 | TResult2] = js.native
   @JSName("then")

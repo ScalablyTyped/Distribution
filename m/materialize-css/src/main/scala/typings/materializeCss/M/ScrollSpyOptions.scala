@@ -1,11 +1,12 @@
 package typings.materializeCss.M
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScrollSpyOptions extends js.Object {
+trait ScrollSpyOptions extends StObject {
   
   /**
     * Class applied to active elements
@@ -40,30 +41,18 @@ object ScrollSpyOptions {
   }
   
   @scala.inline
-  implicit class ScrollSpyOptionsOps[Self <: ScrollSpyOptions] (val x: Self) extends AnyVal {
+  implicit class ScrollSpyOptionsMutableBuilder[Self <: ScrollSpyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetActiveElement(value: String => String): Self = StObject.set(x, "getActiveElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScrollOffset(value: Double): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveClass(value: String): Self = this.set("activeClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetActiveElement(value: String => String): Self = this.set("getActiveElement", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setScrollOffset(value: Double): Self = this.set("scrollOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThrottle(value: Double): Self = this.set("throttle", value.asInstanceOf[js.Any])
+    def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
   }
 }

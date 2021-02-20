@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * in a range, call this with no rule specified.
   */
 @js.native
-trait SchemaSetDataValidationRequest extends js.Object {
+trait SchemaSetDataValidationRequest extends StObject {
   
   /**
     * The range the data validation rule should apply to.
@@ -31,30 +32,18 @@ object SchemaSetDataValidationRequest {
   }
   
   @scala.inline
-  implicit class SchemaSetDataValidationRequestOps[Self <: SchemaSetDataValidationRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaSetDataValidationRequestMutableBuilder[Self <: SchemaSetDataValidationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRange(value: SchemaGridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRule(value: SchemaDataValidationRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: SchemaGridRange): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
-    
-    @scala.inline
-    def setRule(value: SchemaDataValidationRule): Self = this.set("rule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRule: Self = this.set("rule", js.undefined)
+    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
   }
 }

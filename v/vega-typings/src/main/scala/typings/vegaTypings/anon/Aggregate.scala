@@ -1,6 +1,7 @@
 package typings.vegaTypings.anon
 
 import typings.vegaTypings.markMod.Facet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,36 +26,24 @@ object Aggregate {
   }
   
   @scala.inline
-  implicit class AggregateOps[Self <: Aggregate] (val x: Self) extends AnyVal {
+  implicit class AggregateMutableBuilder[Self <: Aggregate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregate(value: As): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setGroupby(value: String | js.Array[String]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupbyVarargs(value: String*): Self = this.set("groupby", js.Array(value :_*))
+    def setGroupbyVarargs(value: String*): Self = StObject.set(x, "groupby", js.Array(value :_*))
     
     @scala.inline
-    def setGroupby(value: String | js.Array[String]): Self = this.set("groupby", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAggregate(value: As): Self = this.set("aggregate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAggregate: Self = this.set("aggregate", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

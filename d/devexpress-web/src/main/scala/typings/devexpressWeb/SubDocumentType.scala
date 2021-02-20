@@ -1,17 +1,18 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SubDocumentType extends js.Object
+sealed trait SubDocumentType extends StObject
 /**
   * Lists values specifying the sub-document type.
   */
 @JSGlobal("SubDocumentType")
 @js.native
-object SubDocumentType extends js.Object {
+object SubDocumentType extends StObject {
   
   /**
     * A footer.

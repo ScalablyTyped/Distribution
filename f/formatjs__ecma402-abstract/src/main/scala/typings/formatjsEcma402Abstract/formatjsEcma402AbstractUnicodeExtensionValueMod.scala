@@ -1,12 +1,13 @@
 package typings.formatjsEcma402Abstract
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@formatjs/ecma402-abstract/UnicodeExtensionValue", JSImport.Namespace)
-@js.native
-object formatjsEcma402AbstractUnicodeExtensionValueMod extends js.Object {
+object formatjsEcma402AbstractUnicodeExtensionValueMod {
   
+  @JSImport("@formatjs/ecma402-abstract/UnicodeExtensionValue", "UnicodeExtensionValue")
+  @js.native
   def UnicodeExtensionValue(extension: String, key: String): js.UndefOr[String] = js.native
 }

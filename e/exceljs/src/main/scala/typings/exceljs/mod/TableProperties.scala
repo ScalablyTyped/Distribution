@@ -1,11 +1,12 @@
 package typings.exceljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableProperties extends js.Object {
+trait TableProperties extends StObject {
   
   /**
   	 * Column definitions
@@ -59,60 +60,48 @@ object TableProperties {
   }
   
   @scala.inline
-  implicit class TablePropertiesOps[Self <: TableProperties] (val x: Self) extends AnyVal {
+  implicit class TablePropertiesMutableBuilder[Self <: TableProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: js.Array[TableColumnProperties]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsVarargs(value: TableColumnProperties*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsVarargs(value: TableColumnProperties*): Self = this.set("columns", js.Array(value :_*))
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setColumns(value: js.Array[TableColumnProperties]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setHeaderRow(value: Boolean): Self = StObject.set(x, "headerRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setHeaderRowUndefined: Self = StObject.set(x, "headerRow", js.undefined)
     
     @scala.inline
-    def setRef(value: String): Self = this.set("ref", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowsVarargs(value: js.Array[js.Any]*): Self = this.set("rows", js.Array(value :_*))
+    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: js.Array[js.Array[_]]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setRows(value: js.Array[js.Array[_]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setRowsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setStyle(value: TableStyleProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderRow(value: Boolean): Self = this.set("headerRow", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteHeaderRow: Self = this.set("headerRow", js.undefined)
+    def setTotalsRow(value: Boolean): Self = StObject.set(x, "totalsRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: TableStyleProperties): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setTotalsRow(value: Boolean): Self = this.set("totalsRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalsRow: Self = this.set("totalsRow", js.undefined)
+    def setTotalsRowUndefined: Self = StObject.set(x, "totalsRow", js.undefined)
   }
 }

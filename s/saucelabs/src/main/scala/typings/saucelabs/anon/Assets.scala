@@ -1,6 +1,7 @@
 package typings.saucelabs.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,57 +51,45 @@ object Assets {
   }
   
   @scala.inline
-  implicit class AssetsOps[Self <: Assets] (val x: Self) extends AnyVal {
+  implicit class AssetsMutableBuilder[Self <: Assets] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssets(value: Boolean): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBrowserDisplay(value: String): Self = StObject.set(x, "browserDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssets(value: Boolean): Self = this.set("assets", value.asInstanceOf[js.Any])
+    def setBrowserVersionDisplay(value: String): Self = StObject.set(x, "browserVersionDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowser(value: String): Self = this.set("browser", value.asInstanceOf[js.Any])
+    def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowserDisplay(value: String): Self = this.set("browserDisplay", value.asInstanceOf[js.Any])
+    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
     @scala.inline
-    def setBrowserVersionDisplay(value: String): Self = this.set("browserVersionDisplay", value.asInstanceOf[js.Any])
+    def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOs(value: String): Self = this.set("os", value.asInstanceOf[js.Any])
+    def setOsDisplay(value: String): Self = StObject.set(x, "osDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOsDisplay(value: String): Self = this.set("osDisplay", value.asInstanceOf[js.Any])
+    def setRes(value: String): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRes(value: String): Self = this.set("res", value.asInstanceOf[js.Any])
+    def setTunnel(value: String): Self = StObject.set(x, "tunnel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setTunnelUndefined: Self = StObject.set(x, "tunnel", js.undefined)
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: String): Self = this.set("device", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDevice: Self = this.set("device", js.undefined)
-    
-    @scala.inline
-    def setTunnel(value: String): Self = this.set("tunnel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTunnel: Self = this.set("tunnel", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

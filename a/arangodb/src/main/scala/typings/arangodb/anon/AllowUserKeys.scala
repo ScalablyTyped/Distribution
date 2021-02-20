@@ -1,12 +1,13 @@
 package typings.arangodb.anon
 
 import typings.arangodb.ArangoDB.KeyGeneratorType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowUserKeys extends js.Object {
+trait AllowUserKeys extends StObject {
   
   var allowUserKeys: js.UndefOr[Boolean] = js.native
   
@@ -25,42 +26,30 @@ object AllowUserKeys {
   }
   
   @scala.inline
-  implicit class AllowUserKeysOps[Self <: AllowUserKeys] (val x: Self) extends AnyVal {
+  implicit class AllowUserKeysMutableBuilder[Self <: AllowUserKeys] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowUserKeys(value: Boolean): Self = StObject.set(x, "allowUserKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowUserKeysUndefined: Self = StObject.set(x, "allowUserKeys", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowUserKeys(value: Boolean): Self = this.set("allowUserKeys", value.asInstanceOf[js.Any])
+    def setIncrementUndefined: Self = StObject.set(x, "increment", js.undefined)
     
     @scala.inline
-    def deleteAllowUserKeys: Self = this.set("allowUserKeys", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncrement(value: Double): Self = this.set("increment", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteIncrement: Self = this.set("increment", js.undefined)
+    def setType(value: KeyGeneratorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
-    
-    @scala.inline
-    def setType(value: KeyGeneratorType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

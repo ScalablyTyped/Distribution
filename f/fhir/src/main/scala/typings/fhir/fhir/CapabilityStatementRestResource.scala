@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -155,198 +156,186 @@ object CapabilityStatementRestResource {
   }
   
   @scala.inline
-  implicit class CapabilityStatementRestResourceOps[Self <: CapabilityStatementRestResource] (val x: Self) extends AnyVal {
+  implicit class CapabilityStatementRestResourceMutableBuilder[Self <: CapabilityStatementRestResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditionalCreate(value: Boolean): Self = StObject.set(x, "conditionalCreate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionalCreateUndefined: Self = StObject.set(x, "conditionalCreate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditionalDelete(value: code): Self = StObject.set(x, "conditionalDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractionVarargs(value: CapabilityStatementRestResourceInteraction*): Self = this.set("interaction", js.Array(value :_*))
+    def setConditionalDeleteUndefined: Self = StObject.set(x, "conditionalDelete", js.undefined)
     
     @scala.inline
-    def setInteraction(value: js.Array[CapabilityStatementRestResourceInteraction]): Self = this.set("interaction", value.asInstanceOf[js.Any])
+    def setConditionalRead(value: code): Self = StObject.set(x, "conditionalRead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setConditionalReadUndefined: Self = StObject.set(x, "conditionalRead", js.undefined)
     
     @scala.inline
-    def set_conditionalCreate(value: Element): Self = this.set("_conditionalCreate", value.asInstanceOf[js.Any])
+    def setConditionalUpdate(value: Boolean): Self = StObject.set(x, "conditionalUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_conditionalCreate: Self = this.set("_conditionalCreate", js.undefined)
+    def setConditionalUpdateUndefined: Self = StObject.set(x, "conditionalUpdate", js.undefined)
     
     @scala.inline
-    def set_conditionalDelete(value: Element): Self = this.set("_conditionalDelete", value.asInstanceOf[js.Any])
+    def setDocumentation(value: markdown): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_conditionalDelete: Self = this.set("_conditionalDelete", js.undefined)
+    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
     @scala.inline
-    def set_conditionalRead(value: Element): Self = this.set("_conditionalRead", value.asInstanceOf[js.Any])
+    def setInteraction(value: js.Array[CapabilityStatementRestResourceInteraction]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_conditionalRead: Self = this.set("_conditionalRead", js.undefined)
+    def setInteractionVarargs(value: CapabilityStatementRestResourceInteraction*): Self = StObject.set(x, "interaction", js.Array(value :_*))
     
     @scala.inline
-    def set_conditionalUpdate(value: Element): Self = this.set("_conditionalUpdate", value.asInstanceOf[js.Any])
+    def setProfile(value: Reference): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_conditionalUpdate: Self = this.set("_conditionalUpdate", js.undefined)
+    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
     @scala.inline
-    def set_documentation(value: Element): Self = this.set("_documentation", value.asInstanceOf[js.Any])
+    def setReadHistory(value: Boolean): Self = StObject.set(x, "readHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_documentation: Self = this.set("_documentation", js.undefined)
+    def setReadHistoryUndefined: Self = StObject.set(x, "readHistory", js.undefined)
     
     @scala.inline
-    def set_readHistory(value: Element): Self = this.set("_readHistory", value.asInstanceOf[js.Any])
+    def setReferencePolicy(value: js.Array[code]): Self = StObject.set(x, "referencePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_readHistory: Self = this.set("_readHistory", js.undefined)
+    def setReferencePolicyUndefined: Self = StObject.set(x, "referencePolicy", js.undefined)
     
     @scala.inline
-    def set_referencePolicyVarargs(value: Element*): Self = this.set("_referencePolicy", js.Array(value :_*))
+    def setReferencePolicyVarargs(value: code*): Self = StObject.set(x, "referencePolicy", js.Array(value :_*))
     
     @scala.inline
-    def set_referencePolicy(value: js.Array[Element]): Self = this.set("_referencePolicy", value.asInstanceOf[js.Any])
+    def setSearchInclude(value: js.Array[String]): Self = StObject.set(x, "searchInclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_referencePolicy: Self = this.set("_referencePolicy", js.undefined)
+    def setSearchIncludeUndefined: Self = StObject.set(x, "searchInclude", js.undefined)
     
     @scala.inline
-    def set_searchIncludeVarargs(value: Element*): Self = this.set("_searchInclude", js.Array(value :_*))
+    def setSearchIncludeVarargs(value: String*): Self = StObject.set(x, "searchInclude", js.Array(value :_*))
     
     @scala.inline
-    def set_searchInclude(value: js.Array[Element]): Self = this.set("_searchInclude", value.asInstanceOf[js.Any])
+    def setSearchParam(value: js.Array[CapabilityStatementRestResourceSearchParam]): Self = StObject.set(x, "searchParam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_searchInclude: Self = this.set("_searchInclude", js.undefined)
+    def setSearchParamUndefined: Self = StObject.set(x, "searchParam", js.undefined)
     
     @scala.inline
-    def set_searchRevIncludeVarargs(value: Element*): Self = this.set("_searchRevInclude", js.Array(value :_*))
+    def setSearchParamVarargs(value: CapabilityStatementRestResourceSearchParam*): Self = StObject.set(x, "searchParam", js.Array(value :_*))
     
     @scala.inline
-    def set_searchRevInclude(value: js.Array[Element]): Self = this.set("_searchRevInclude", value.asInstanceOf[js.Any])
+    def setSearchRevInclude(value: js.Array[String]): Self = StObject.set(x, "searchRevInclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_searchRevInclude: Self = this.set("_searchRevInclude", js.undefined)
+    def setSearchRevIncludeUndefined: Self = StObject.set(x, "searchRevInclude", js.undefined)
     
     @scala.inline
-    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def setSearchRevIncludeVarargs(value: String*): Self = StObject.set(x, "searchRevInclude", js.Array(value :_*))
     
     @scala.inline
-    def delete_type: Self = this.set("_type", js.undefined)
+    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_updateCreate(value: Element): Self = this.set("_updateCreate", value.asInstanceOf[js.Any])
+    def setUpdateCreate(value: Boolean): Self = StObject.set(x, "updateCreate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_updateCreate: Self = this.set("_updateCreate", js.undefined)
+    def setUpdateCreateUndefined: Self = StObject.set(x, "updateCreate", js.undefined)
     
     @scala.inline
-    def set_versioning(value: Element): Self = this.set("_versioning", value.asInstanceOf[js.Any])
+    def setVersioning(value: code): Self = StObject.set(x, "versioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_versioning: Self = this.set("_versioning", js.undefined)
+    def setVersioningUndefined: Self = StObject.set(x, "versioning", js.undefined)
     
     @scala.inline
-    def setConditionalCreate(value: Boolean): Self = this.set("conditionalCreate", value.asInstanceOf[js.Any])
+    def set_conditionalCreate(value: Element): Self = StObject.set(x, "_conditionalCreate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConditionalCreate: Self = this.set("conditionalCreate", js.undefined)
+    def set_conditionalCreateUndefined: Self = StObject.set(x, "_conditionalCreate", js.undefined)
     
     @scala.inline
-    def setConditionalDelete(value: code): Self = this.set("conditionalDelete", value.asInstanceOf[js.Any])
+    def set_conditionalDelete(value: Element): Self = StObject.set(x, "_conditionalDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConditionalDelete: Self = this.set("conditionalDelete", js.undefined)
+    def set_conditionalDeleteUndefined: Self = StObject.set(x, "_conditionalDelete", js.undefined)
     
     @scala.inline
-    def setConditionalRead(value: code): Self = this.set("conditionalRead", value.asInstanceOf[js.Any])
+    def set_conditionalRead(value: Element): Self = StObject.set(x, "_conditionalRead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConditionalRead: Self = this.set("conditionalRead", js.undefined)
+    def set_conditionalReadUndefined: Self = StObject.set(x, "_conditionalRead", js.undefined)
     
     @scala.inline
-    def setConditionalUpdate(value: Boolean): Self = this.set("conditionalUpdate", value.asInstanceOf[js.Any])
+    def set_conditionalUpdate(value: Element): Self = StObject.set(x, "_conditionalUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConditionalUpdate: Self = this.set("conditionalUpdate", js.undefined)
+    def set_conditionalUpdateUndefined: Self = StObject.set(x, "_conditionalUpdate", js.undefined)
     
     @scala.inline
-    def setDocumentation(value: markdown): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    def set_documentation(value: Element): Self = StObject.set(x, "_documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    def set_documentationUndefined: Self = StObject.set(x, "_documentation", js.undefined)
     
     @scala.inline
-    def setProfile(value: Reference): Self = this.set("profile", value.asInstanceOf[js.Any])
+    def set_readHistory(value: Element): Self = StObject.set(x, "_readHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProfile: Self = this.set("profile", js.undefined)
+    def set_readHistoryUndefined: Self = StObject.set(x, "_readHistory", js.undefined)
     
     @scala.inline
-    def setReadHistory(value: Boolean): Self = this.set("readHistory", value.asInstanceOf[js.Any])
+    def set_referencePolicy(value: js.Array[Element]): Self = StObject.set(x, "_referencePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReadHistory: Self = this.set("readHistory", js.undefined)
+    def set_referencePolicyUndefined: Self = StObject.set(x, "_referencePolicy", js.undefined)
     
     @scala.inline
-    def setReferencePolicyVarargs(value: code*): Self = this.set("referencePolicy", js.Array(value :_*))
+    def set_referencePolicyVarargs(value: Element*): Self = StObject.set(x, "_referencePolicy", js.Array(value :_*))
     
     @scala.inline
-    def setReferencePolicy(value: js.Array[code]): Self = this.set("referencePolicy", value.asInstanceOf[js.Any])
+    def set_searchInclude(value: js.Array[Element]): Self = StObject.set(x, "_searchInclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReferencePolicy: Self = this.set("referencePolicy", js.undefined)
+    def set_searchIncludeUndefined: Self = StObject.set(x, "_searchInclude", js.undefined)
     
     @scala.inline
-    def setSearchIncludeVarargs(value: String*): Self = this.set("searchInclude", js.Array(value :_*))
+    def set_searchIncludeVarargs(value: Element*): Self = StObject.set(x, "_searchInclude", js.Array(value :_*))
     
     @scala.inline
-    def setSearchInclude(value: js.Array[String]): Self = this.set("searchInclude", value.asInstanceOf[js.Any])
+    def set_searchRevInclude(value: js.Array[Element]): Self = StObject.set(x, "_searchRevInclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSearchInclude: Self = this.set("searchInclude", js.undefined)
+    def set_searchRevIncludeUndefined: Self = StObject.set(x, "_searchRevInclude", js.undefined)
     
     @scala.inline
-    def setSearchParamVarargs(value: CapabilityStatementRestResourceSearchParam*): Self = this.set("searchParam", js.Array(value :_*))
+    def set_searchRevIncludeVarargs(value: Element*): Self = StObject.set(x, "_searchRevInclude", js.Array(value :_*))
     
     @scala.inline
-    def setSearchParam(value: js.Array[CapabilityStatementRestResourceSearchParam]): Self = this.set("searchParam", value.asInstanceOf[js.Any])
+    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSearchParam: Self = this.set("searchParam", js.undefined)
+    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
     
     @scala.inline
-    def setSearchRevIncludeVarargs(value: String*): Self = this.set("searchRevInclude", js.Array(value :_*))
+    def set_updateCreate(value: Element): Self = StObject.set(x, "_updateCreate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchRevInclude(value: js.Array[String]): Self = this.set("searchRevInclude", value.asInstanceOf[js.Any])
+    def set_updateCreateUndefined: Self = StObject.set(x, "_updateCreate", js.undefined)
     
     @scala.inline
-    def deleteSearchRevInclude: Self = this.set("searchRevInclude", js.undefined)
+    def set_versioning(value: Element): Self = StObject.set(x, "_versioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateCreate(value: Boolean): Self = this.set("updateCreate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateCreate: Self = this.set("updateCreate", js.undefined)
-    
-    @scala.inline
-    def setVersioning(value: code): Self = this.set("versioning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersioning: Self = this.set("versioning", js.undefined)
+    def set_versioningUndefined: Self = StObject.set(x, "_versioning", js.undefined)
   }
 }

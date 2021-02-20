@@ -1,11 +1,12 @@
 package typings.awsSdk.route53domainsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateTagsForDomainRequest extends js.Object {
+trait UpdateTagsForDomainRequest extends StObject {
   
   /**
     * The domain for which you want to add or update tags.
@@ -26,30 +27,18 @@ object UpdateTagsForDomainRequest {
   }
   
   @scala.inline
-  implicit class UpdateTagsForDomainRequestOps[Self <: UpdateTagsForDomainRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateTagsForDomainRequestMutableBuilder[Self <: UpdateTagsForDomainRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTagsToUpdate(value: TagList): Self = StObject.set(x, "TagsToUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTagsToUpdateUndefined: Self = StObject.set(x, "TagsToUpdate", js.undefined)
     
     @scala.inline
-    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTagsToUpdateVarargs(value: Tag*): Self = this.set("TagsToUpdate", js.Array(value :_*))
-    
-    @scala.inline
-    def setTagsToUpdate(value: TagList): Self = this.set("TagsToUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagsToUpdate: Self = this.set("TagsToUpdate", js.undefined)
+    def setTagsToUpdateVarargs(value: Tag*): Self = StObject.set(x, "TagsToUpdate", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.gmailV1Mod.gmailV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the &quot;Vacation responder&quot; feature in the web interface.
   */
 @js.native
-trait SchemaVacationSettings extends js.Object {
+trait SchemaVacationSettings extends StObject {
   
   /**
     * Flag that controls whether Gmail automatically replies to messages.
@@ -72,66 +73,54 @@ object SchemaVacationSettings {
   }
   
   @scala.inline
-  implicit class SchemaVacationSettingsOps[Self <: SchemaVacationSettings] (val x: Self) extends AnyVal {
+  implicit class SchemaVacationSettingsMutableBuilder[Self <: SchemaVacationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableAutoReply(value: Boolean): Self = StObject.set(x, "enableAutoReply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableAutoReplyUndefined: Self = StObject.set(x, "enableAutoReply", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableAutoReply(value: Boolean): Self = this.set("enableAutoReply", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteEnableAutoReply: Self = this.set("enableAutoReply", js.undefined)
+    def setResponseBodyHtml(value: String): Self = StObject.set(x, "responseBodyHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setResponseBodyHtmlUndefined: Self = StObject.set(x, "responseBodyHtml", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setResponseBodyPlainText(value: String): Self = StObject.set(x, "responseBodyPlainText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseBodyHtml(value: String): Self = this.set("responseBodyHtml", value.asInstanceOf[js.Any])
+    def setResponseBodyPlainTextUndefined: Self = StObject.set(x, "responseBodyPlainText", js.undefined)
     
     @scala.inline
-    def deleteResponseBodyHtml: Self = this.set("responseBodyHtml", js.undefined)
+    def setResponseSubject(value: String): Self = StObject.set(x, "responseSubject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseBodyPlainText(value: String): Self = this.set("responseBodyPlainText", value.asInstanceOf[js.Any])
+    def setResponseSubjectUndefined: Self = StObject.set(x, "responseSubject", js.undefined)
     
     @scala.inline
-    def deleteResponseBodyPlainText: Self = this.set("responseBodyPlainText", js.undefined)
+    def setRestrictToContacts(value: Boolean): Self = StObject.set(x, "restrictToContacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseSubject(value: String): Self = this.set("responseSubject", value.asInstanceOf[js.Any])
+    def setRestrictToContactsUndefined: Self = StObject.set(x, "restrictToContacts", js.undefined)
     
     @scala.inline
-    def deleteResponseSubject: Self = this.set("responseSubject", js.undefined)
+    def setRestrictToDomain(value: Boolean): Self = StObject.set(x, "restrictToDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestrictToContacts(value: Boolean): Self = this.set("restrictToContacts", value.asInstanceOf[js.Any])
+    def setRestrictToDomainUndefined: Self = StObject.set(x, "restrictToDomain", js.undefined)
     
     @scala.inline
-    def deleteRestrictToContacts: Self = this.set("restrictToContacts", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestrictToDomain(value: Boolean): Self = this.set("restrictToDomain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestrictToDomain: Self = this.set("restrictToDomain", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

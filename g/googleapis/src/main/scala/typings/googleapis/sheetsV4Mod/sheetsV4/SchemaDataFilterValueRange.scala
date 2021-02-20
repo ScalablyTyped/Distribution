@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A range of values whose location is specified by a DataFilter.
   */
 @js.native
-trait SchemaDataFilterValueRange extends js.Object {
+trait SchemaDataFilterValueRange extends StObject {
   
   /**
     * The data filter describing the location of the values in the spreadsheet.
@@ -37,39 +38,27 @@ object SchemaDataFilterValueRange {
   }
   
   @scala.inline
-  implicit class SchemaDataFilterValueRangeOps[Self <: SchemaDataFilterValueRange] (val x: Self) extends AnyVal {
+  implicit class SchemaDataFilterValueRangeMutableBuilder[Self <: SchemaDataFilterValueRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataFilter(value: SchemaDataFilter): Self = StObject.set(x, "dataFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataFilterUndefined: Self = StObject.set(x, "dataFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMajorDimension(value: String): Self = StObject.set(x, "majorDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFilter(value: SchemaDataFilter): Self = this.set("dataFilter", value.asInstanceOf[js.Any])
+    def setMajorDimensionUndefined: Self = StObject.set(x, "majorDimension", js.undefined)
     
     @scala.inline
-    def deleteDataFilter: Self = this.set("dataFilter", js.undefined)
+    def setValues(value: js.Array[js.Array[_]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorDimension(value: String): Self = this.set("majorDimension", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deleteMajorDimension: Self = this.set("majorDimension", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: js.Array[js.Any]*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[js.Array[_]]): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

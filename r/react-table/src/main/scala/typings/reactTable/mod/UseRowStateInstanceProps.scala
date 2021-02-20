@@ -1,11 +1,12 @@
 package typings.reactTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UseRowStateInstanceProps[D /* <: js.Object */] extends js.Object {
+trait UseRowStateInstanceProps[D /* <: js.Object */] extends StObject {
   
   def setCellState(rowPath: js.Array[String], columnId: IdType[D], updater: UseRowUpdater[_]): Unit = js.native
   
@@ -23,24 +24,12 @@ object UseRowStateInstanceProps {
   }
   
   @scala.inline
-  implicit class UseRowStateInstancePropsOps[Self <: UseRowStateInstanceProps[_], D /* <: js.Object */] (val x: Self with UseRowStateInstanceProps[D]) extends AnyVal {
+  implicit class UseRowStateInstancePropsMutableBuilder[Self <: UseRowStateInstanceProps[_], D /* <: js.Object */] (val x: Self with UseRowStateInstanceProps[D]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetCellState(value: (js.Array[String], IdType[D], UseRowUpdater[_]) => Unit): Self = StObject.set(x, "setCellState", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetCellState(value: (js.Array[String], IdType[D], UseRowUpdater[_]) => Unit): Self = this.set("setCellState", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetRowState(value: (js.Array[String], UseRowUpdater[_]) => Unit): Self = this.set("setRowState", js.Any.fromFunction2(value))
+    def setSetRowState(value: (js.Array[String], UseRowUpdater[_]) => Unit): Self = StObject.set(x, "setRowState", js.Any.fromFunction2(value))
   }
 }

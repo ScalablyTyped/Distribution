@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CaseSensitive extends js.Object {
+trait CaseSensitive extends StObject {
   
   var caseSensitive: js.UndefOr[Boolean] = js.native
   
@@ -42,96 +43,84 @@ object CaseSensitive {
   }
   
   @scala.inline
-  implicit class CaseSensitiveOps[Self <: CaseSensitive] (val x: Self) extends AnyVal {
+  implicit class CaseSensitiveMutableBuilder[Self <: CaseSensitive] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtractA(value: String): Self = StObject.set(x, "extractA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseSensitive(value: Boolean): Self = this.set("caseSensitive", value.asInstanceOf[js.Any])
+    def setExtractAUndefined: Self = StObject.set(x, "extractA", js.undefined)
     
     @scala.inline
-    def deleteCaseSensitive: Self = this.set("caseSensitive", js.undefined)
+    def setExtractB(value: String): Self = StObject.set(x, "extractB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtractA(value: String): Self = this.set("extractA", value.asInstanceOf[js.Any])
+    def setExtractBUndefined: Self = StObject.set(x, "extractB", js.undefined)
     
     @scala.inline
-    def deleteExtractA: Self = this.set("extractA", js.undefined)
+    def setFieldA(value: String): Self = StObject.set(x, "fieldA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtractB(value: String): Self = this.set("extractB", value.asInstanceOf[js.Any])
+    def setFieldAIndex(value: Double): Self = StObject.set(x, "fieldAIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtractB: Self = this.set("extractB", js.undefined)
+    def setFieldAIndexUndefined: Self = StObject.set(x, "fieldAIndex", js.undefined)
     
     @scala.inline
-    def setFieldA(value: String): Self = this.set("fieldA", value.asInstanceOf[js.Any])
+    def setFieldARequired(value: Boolean): Self = StObject.set(x, "fieldARequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFieldA: Self = this.set("fieldA", js.undefined)
+    def setFieldARequiredUndefined: Self = StObject.set(x, "fieldARequired", js.undefined)
     
     @scala.inline
-    def setFieldAIndex(value: Double): Self = this.set("fieldAIndex", value.asInstanceOf[js.Any])
+    def setFieldAUndefined: Self = StObject.set(x, "fieldA", js.undefined)
     
     @scala.inline
-    def deleteFieldAIndex: Self = this.set("fieldAIndex", js.undefined)
+    def setFieldB(value: String): Self = StObject.set(x, "fieldB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldARequired(value: Boolean): Self = this.set("fieldARequired", value.asInstanceOf[js.Any])
+    def setFieldBIndex(value: Double): Self = StObject.set(x, "fieldBIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFieldARequired: Self = this.set("fieldARequired", js.undefined)
+    def setFieldBIndexUndefined: Self = StObject.set(x, "fieldBIndex", js.undefined)
     
     @scala.inline
-    def setFieldB(value: String): Self = this.set("fieldB", value.asInstanceOf[js.Any])
+    def setFieldBRequired(value: Boolean): Self = StObject.set(x, "fieldBRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFieldB: Self = this.set("fieldB", js.undefined)
+    def setFieldBRequiredUndefined: Self = StObject.set(x, "fieldBRequired", js.undefined)
     
     @scala.inline
-    def setFieldBIndex(value: Double): Self = this.set("fieldBIndex", value.asInstanceOf[js.Any])
+    def setFieldBUndefined: Self = StObject.set(x, "fieldB", js.undefined)
     
     @scala.inline
-    def deleteFieldBIndex: Self = this.set("fieldBIndex", js.undefined)
+    def setOutputConstructor(value: String): Self = StObject.set(x, "outputConstructor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldBRequired(value: Boolean): Self = this.set("fieldBRequired", value.asInstanceOf[js.Any])
+    def setOutputConstructorUndefined: Self = StObject.set(x, "outputConstructor", js.undefined)
     
     @scala.inline
-    def deleteFieldBRequired: Self = this.set("fieldBRequired", js.undefined)
+    def setOutputToField(value: String): Self = StObject.set(x, "outputToField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputConstructor(value: String): Self = this.set("outputConstructor", value.asInstanceOf[js.Any])
+    def setOutputToFieldIndex(value: Double): Self = StObject.set(x, "outputToFieldIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutputConstructor: Self = this.set("outputConstructor", js.undefined)
+    def setOutputToFieldIndexUndefined: Self = StObject.set(x, "outputToFieldIndex", js.undefined)
     
     @scala.inline
-    def setOutputToField(value: String): Self = this.set("outputToField", value.asInstanceOf[js.Any])
+    def setOutputToFieldUndefined: Self = StObject.set(x, "outputToField", js.undefined)
     
     @scala.inline
-    def deleteOutputToField: Self = this.set("outputToField", js.undefined)
+    def setOverrideOutputField(value: Boolean): Self = StObject.set(x, "overrideOutputField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputToFieldIndex(value: Double): Self = this.set("outputToFieldIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputToFieldIndex: Self = this.set("outputToFieldIndex", js.undefined)
-    
-    @scala.inline
-    def setOverrideOutputField(value: Boolean): Self = this.set("overrideOutputField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverrideOutputField: Self = this.set("overrideOutputField", js.undefined)
+    def setOverrideOutputFieldUndefined: Self = StObject.set(x, "overrideOutputField", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.babylonjs.legacyMod
 
 import typings.babylonjs.typesMod.DeepImmutable
 import typings.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,15 +21,19 @@ class Plane protected ()
   def this(a: Double, b: Double, c: Double, d: Double) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "Plane")
-@js.native
-object Plane extends js.Object {
+object Plane {
+  
+  @JSImport("babylonjs/Legacy/legacy", "Plane")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a plane from an  array
     * @param array the array to create a plane from
     * @returns a new Plane from the given array.
     */
+  @JSImport("babylonjs/Legacy/legacy", "Plane.FromArray")
+  @js.native
   def FromArray(array: DeepImmutable[ArrayLike[Double]]): typings.babylonjs.mathPlaneMod.Plane = js.native
   
   /**
@@ -38,6 +43,8 @@ object Plane extends js.Object {
     * @param point3 point used to create the plane
     * @returns a new Plane defined by the three given points.
     */
+  @JSImport("babylonjs/Legacy/legacy", "Plane.FromPoints")
+  @js.native
   def FromPoints(
     point1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     point2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
@@ -51,6 +58,8 @@ object Plane extends js.Object {
     * @returns a new Plane the normal vector to this plane at the given origin point.
     * Note : the vector "normal" is updated because normalized.
     */
+  @JSImport("babylonjs/Legacy/legacy", "Plane.FromPositionAndNormal")
+  @js.native
   def FromPositionAndNormal(
     origin: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     normal: typings.babylonjs.mathVectorMod.Vector3
@@ -63,11 +72,17 @@ object Plane extends js.Object {
     * @param point point to calculate distance to
     * @returns the signed distance between the plane defined by the normal vector at the "origin"" point and the given other point.
     */
+  @JSImport("babylonjs/Legacy/legacy", "Plane.SignedDistanceToPlaneFromPositionAndNormal")
+  @js.native
   def SignedDistanceToPlaneFromPositionAndNormal(
     origin: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     normal: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3],
     point: DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]
   ): Double = js.native
   
-  var _TmpMatrix: js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "Plane._TmpMatrix")
+  @js.native
+  def _TmpMatrix: js.Any = js.native
+  @scala.inline
+  def _TmpMatrix_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpMatrix")(x.asInstanceOf[js.Any])
 }

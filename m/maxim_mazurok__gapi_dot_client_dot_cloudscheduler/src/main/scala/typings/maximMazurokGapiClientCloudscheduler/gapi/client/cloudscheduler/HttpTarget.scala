@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCloudscheduler.gapi.client.cloudscheduler
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpTarget extends js.Object {
+trait HttpTarget extends StObject {
   
   /** HTTP request body. A request body is allowed only if the HTTP method is POST, PUT, or PATCH. It is an error to set body on a job with an incompatible HttpMethod. */
   var body: js.UndefOr[String] = js.native
@@ -55,58 +56,46 @@ object HttpTarget {
   }
   
   @scala.inline
-  implicit class HttpTargetOps[Self <: HttpTarget] (val x: Self) extends AnyVal {
+  implicit class HttpTargetMutableBuilder[Self <: HttpTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
     def setHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCloudscheduler.maximMazurokGapiClientCloudschedulerStrings.HttpTarget with TopLevel[js.Any]
-    ): Self = this.set("headers", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setHttpMethod(value: String): Self = this.set("httpMethod", value.asInstanceOf[js.Any])
+    def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHttpMethod: Self = this.set("httpMethod", js.undefined)
+    def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
     
     @scala.inline
-    def setOauthToken(value: OAuthToken): Self = this.set("oauthToken", value.asInstanceOf[js.Any])
+    def setOauthToken(value: OAuthToken): Self = StObject.set(x, "oauthToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOauthToken: Self = this.set("oauthToken", js.undefined)
+    def setOauthTokenUndefined: Self = StObject.set(x, "oauthToken", js.undefined)
     
     @scala.inline
-    def setOidcToken(value: OidcToken): Self = this.set("oidcToken", value.asInstanceOf[js.Any])
+    def setOidcToken(value: OidcToken): Self = StObject.set(x, "oidcToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOidcToken: Self = this.set("oidcToken", js.undefined)
+    def setOidcTokenUndefined: Self = StObject.set(x, "oidcToken", js.undefined)
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

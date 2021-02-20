@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GenerateConfigReportResponse extends js.Object {
+trait GenerateConfigReportResponse extends StObject {
   
   /** list of ChangeReport, each corresponding to comparison between two service configurations. */
   var changeReports: js.UndefOr[js.Array[ChangeReport]] = js.native
@@ -28,48 +29,36 @@ object GenerateConfigReportResponse {
   }
   
   @scala.inline
-  implicit class GenerateConfigReportResponseOps[Self <: GenerateConfigReportResponse] (val x: Self) extends AnyVal {
+  implicit class GenerateConfigReportResponseMutableBuilder[Self <: GenerateConfigReportResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeReports(value: js.Array[ChangeReport]): Self = StObject.set(x, "changeReports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeReportsUndefined: Self = StObject.set(x, "changeReports", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangeReportsVarargs(value: ChangeReport*): Self = StObject.set(x, "changeReports", js.Array(value :_*))
     
     @scala.inline
-    def setChangeReportsVarargs(value: ChangeReport*): Self = this.set("changeReports", js.Array(value :_*))
+    def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeReports(value: js.Array[ChangeReport]): Self = this.set("changeReports", value.asInstanceOf[js.Any])
+    def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
     @scala.inline
-    def deleteChangeReports: Self = this.set("changeReports", js.undefined)
+    def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
     
     @scala.inline
-    def setDiagnosticsVarargs(value: Diagnostic*): Self = this.set("diagnostics", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagnostics(value: js.Array[Diagnostic]): Self = this.set("diagnostics", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDiagnostics: Self = this.set("diagnostics", js.undefined)
+    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceName: Self = this.set("serviceName", js.undefined)
+    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

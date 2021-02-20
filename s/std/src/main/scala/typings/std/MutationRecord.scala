@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A MutationRecord represents an individual DOM mutation. It is the object that is passed to MutationObserver's callback. */
 @js.native
-trait MutationRecord extends js.Object {
+trait MutationRecord extends StObject {
   
   /**
     * Return the nodes added and removed respectively.
@@ -63,60 +64,48 @@ object MutationRecord {
   }
   
   @scala.inline
-  implicit class MutationRecordOps[Self <: MutationRecord] (val x: Self) extends AnyVal {
+  implicit class MutationRecordMutableBuilder[Self <: MutationRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddedNodes(value: NodeList): Self = StObject.set(x, "addedNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeName(value: java.lang.String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributeNameNull: Self = StObject.set(x, "attributeName", null)
     
     @scala.inline
-    def setAddedNodes(value: NodeList): Self = this.set("addedNodes", value.asInstanceOf[js.Any])
+    def setAttributeNamespace(value: java.lang.String): Self = StObject.set(x, "attributeNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemovedNodes(value: NodeList): Self = this.set("removedNodes", value.asInstanceOf[js.Any])
+    def setAttributeNamespaceNull: Self = StObject.set(x, "attributeNamespace", null)
     
     @scala.inline
-    def setTarget(value: Node): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setNextSibling(value: Node): Self = StObject.set(x, "nextSibling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: MutationRecordType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setNextSiblingNull: Self = StObject.set(x, "nextSibling", null)
     
     @scala.inline
-    def setAttributeName(value: java.lang.String): Self = this.set("attributeName", value.asInstanceOf[js.Any])
+    def setOldValue(value: java.lang.String): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeNameNull: Self = this.set("attributeName", null)
+    def setOldValueNull: Self = StObject.set(x, "oldValue", null)
     
     @scala.inline
-    def setAttributeNamespace(value: java.lang.String): Self = this.set("attributeNamespace", value.asInstanceOf[js.Any])
+    def setPreviousSibling(value: Node): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeNamespaceNull: Self = this.set("attributeNamespace", null)
+    def setPreviousSiblingNull: Self = StObject.set(x, "previousSibling", null)
     
     @scala.inline
-    def setNextSibling(value: Node): Self = this.set("nextSibling", value.asInstanceOf[js.Any])
+    def setRemovedNodes(value: NodeList): Self = StObject.set(x, "removedNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextSiblingNull: Self = this.set("nextSibling", null)
+    def setTarget(value: Node): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldValue(value: java.lang.String): Self = this.set("oldValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldValueNull: Self = this.set("oldValue", null)
-    
-    @scala.inline
-    def setPreviousSibling(value: Node): Self = this.set("previousSibling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousSiblingNull: Self = this.set("previousSibling", null)
+    def setType(value: MutationRecordType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

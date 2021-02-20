@@ -1,13 +1,13 @@
 package typings.awsSdkClientKmsNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/model/_GrantTokenList", JSImport.Namespace)
-@js.native
-object grantTokenListMod extends js.Object {
+object grantTokenListMod {
   
-  @JSName("_GrantTokenList")
+  @JSImport("@aws-sdk/client-kms-node/model/_GrantTokenList", "_GrantTokenList")
+  @js.native
   val GrantTokenList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
 }

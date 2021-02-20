@@ -1,12 +1,13 @@
 package typings.foundation.Foundation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/dropdown.html#optional-javascript-configuration
 @js.native
-trait DropdownOptions extends js.Object {
+trait DropdownOptions extends StObject {
   
   var active_class: js.UndefOr[String] = js.native
   
@@ -33,66 +34,54 @@ object DropdownOptions {
   }
   
   @scala.inline
-  implicit class DropdownOptionsOps[Self <: DropdownOptions] (val x: Self) extends AnyVal {
+  implicit class DropdownOptionsMutableBuilder[Self <: DropdownOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive_class(value: String): Self = StObject.set(x, "active_class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActive_classUndefined: Self = StObject.set(x, "active_class", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive_class(value: String): Self = this.set("active_class", value.asInstanceOf[js.Any])
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def deleteActive_class: Self = this.set("active_class", js.undefined)
+    def setClosed(value: () => _): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setDisabled_class(value: String): Self = StObject.set(x, "disabled_class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosed(value: () => _): Self = this.set("closed", js.Any.fromFunction0(value))
+    def setDisabled_classUndefined: Self = StObject.set(x, "disabled_class", js.undefined)
     
     @scala.inline
-    def deleteClosed: Self = this.set("closed", js.undefined)
+    def setHover_timeout(value: Double): Self = StObject.set(x, "hover_timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled_class(value: String): Self = this.set("disabled_class", value.asInstanceOf[js.Any])
+    def setHover_timeoutUndefined: Self = StObject.set(x, "hover_timeout", js.undefined)
     
     @scala.inline
-    def deleteDisabled_class: Self = this.set("disabled_class", js.undefined)
+    def setIs_hover(value: Boolean): Self = StObject.set(x, "is_hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHover_timeout(value: Double): Self = this.set("hover_timeout", value.asInstanceOf[js.Any])
+    def setIs_hoverUndefined: Self = StObject.set(x, "is_hover", js.undefined)
     
     @scala.inline
-    def deleteHover_timeout: Self = this.set("hover_timeout", js.undefined)
+    def setMega_class(value: String): Self = StObject.set(x, "mega_class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_hover(value: Boolean): Self = this.set("is_hover", value.asInstanceOf[js.Any])
+    def setMega_classUndefined: Self = StObject.set(x, "mega_class", js.undefined)
     
     @scala.inline
-    def deleteIs_hover: Self = this.set("is_hover", js.undefined)
+    def setOpened(value: () => _): Self = StObject.set(x, "opened", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMega_class(value: String): Self = this.set("mega_class", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMega_class: Self = this.set("mega_class", js.undefined)
-    
-    @scala.inline
-    def setOpened(value: () => _): Self = this.set("opened", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOpened: Self = this.set("opened", js.undefined)
+    def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
   }
 }

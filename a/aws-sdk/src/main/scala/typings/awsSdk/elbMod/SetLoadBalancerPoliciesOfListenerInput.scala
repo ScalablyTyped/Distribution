@@ -1,11 +1,12 @@
 package typings.awsSdk.elbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetLoadBalancerPoliciesOfListenerInput extends js.Object {
+trait SetLoadBalancerPoliciesOfListenerInput extends StObject {
   
   /**
     * The name of the load balancer.
@@ -31,30 +32,18 @@ object SetLoadBalancerPoliciesOfListenerInput {
   }
   
   @scala.inline
-  implicit class SetLoadBalancerPoliciesOfListenerInputOps[Self <: SetLoadBalancerPoliciesOfListenerInput] (val x: Self) extends AnyVal {
+  implicit class SetLoadBalancerPoliciesOfListenerInputMutableBuilder[Self <: SetLoadBalancerPoliciesOfListenerInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoadBalancerPort(value: AccessPointPort): Self = StObject.set(x, "LoadBalancerPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolicyNames(value: PolicyNames): Self = StObject.set(x, "PolicyNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadBalancerName(value: AccessPointName): Self = this.set("LoadBalancerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLoadBalancerPort(value: AccessPointPort): Self = this.set("LoadBalancerPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPolicyNamesVarargs(value: PolicyName*): Self = this.set("PolicyNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setPolicyNames(value: PolicyNames): Self = this.set("PolicyNames", value.asInstanceOf[js.Any])
+    def setPolicyNamesVarargs(value: PolicyName*): Self = StObject.set(x, "PolicyNames", js.Array(value :_*))
   }
 }

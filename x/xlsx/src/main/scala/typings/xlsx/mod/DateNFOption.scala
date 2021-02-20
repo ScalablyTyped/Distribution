@@ -1,11 +1,12 @@
 package typings.xlsx.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DateNFOption extends js.Object {
+trait DateNFOption extends StObject {
   
   /** Use specified date format */
   var dateNF: js.UndefOr[NumberFormat] = js.native
@@ -19,24 +20,12 @@ object DateNFOption {
   }
   
   @scala.inline
-  implicit class DateNFOptionOps[Self <: DateNFOption] (val x: Self) extends AnyVal {
+  implicit class DateNFOptionMutableBuilder[Self <: DateNFOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateNF(value: NumberFormat): Self = StObject.set(x, "dateNF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDateNF(value: NumberFormat): Self = this.set("dateNF", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDateNF: Self = this.set("dateNF", js.undefined)
+    def setDateNFUndefined: Self = StObject.set(x, "dateNF", js.undefined)
   }
 }

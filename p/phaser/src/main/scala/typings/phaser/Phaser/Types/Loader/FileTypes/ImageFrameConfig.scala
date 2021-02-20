@@ -1,12 +1,13 @@
 package typings.phaser.Phaser.Types.Loader.FileTypes
 
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageFrameConfig extends js.Object {
+trait ImageFrameConfig extends StObject {
   
   /**
     * The frame to stop parsing at. If not provided it will calculate the value based on the image and frame dimensions.
@@ -47,51 +48,39 @@ object ImageFrameConfig {
   }
   
   @scala.inline
-  implicit class ImageFrameConfigOps[Self <: ImageFrameConfig] (val x: Self) extends AnyVal {
+  implicit class ImageFrameConfigMutableBuilder[Self <: ImageFrameConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndFrame(value: integer): Self = StObject.set(x, "endFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndFrameUndefined: Self = StObject.set(x, "endFrame", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrameHeight(value: integer): Self = StObject.set(x, "frameHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameWidth(value: integer): Self = this.set("frameWidth", value.asInstanceOf[js.Any])
+    def setFrameHeightUndefined: Self = StObject.set(x, "frameHeight", js.undefined)
     
     @scala.inline
-    def setEndFrame(value: integer): Self = this.set("endFrame", value.asInstanceOf[js.Any])
+    def setFrameWidth(value: integer): Self = StObject.set(x, "frameWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndFrame: Self = this.set("endFrame", js.undefined)
+    def setMargin(value: integer): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameHeight(value: integer): Self = this.set("frameHeight", value.asInstanceOf[js.Any])
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def deleteFrameHeight: Self = this.set("frameHeight", js.undefined)
+    def setSpacing(value: integer): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: integer): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setStartFrame(value: integer): Self = StObject.set(x, "startFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpacing(value: integer): Self = this.set("spacing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpacing: Self = this.set("spacing", js.undefined)
-    
-    @scala.inline
-    def setStartFrame(value: integer): Self = this.set("startFrame", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartFrame: Self = this.set("startFrame", js.undefined)
+    def setStartFrameUndefined: Self = StObject.set(x, "startFrame", js.undefined)
   }
 }

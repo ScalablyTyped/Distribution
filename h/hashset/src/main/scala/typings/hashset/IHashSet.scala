@@ -1,11 +1,12 @@
 package typings.hashset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHashSet[TValue] extends js.Object {
+trait IHashSet[TValue] extends StObject {
   
   def add(value: TValue): Unit = js.native
   
@@ -53,54 +54,42 @@ object IHashSet {
   }
   
   @scala.inline
-  implicit class IHashSetOps[Self <: IHashSet[_], TValue] (val x: Self with IHashSet[TValue]) extends AnyVal {
+  implicit class IHashSetMutableBuilder[Self <: IHashSet[_], TValue] (val x: Self with IHashSet[TValue]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: TValue => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddAll(value: js.Array[TValue] => Unit): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdd(value: TValue => Unit): Self = this.set("add", js.Any.fromFunction1(value))
+    def setComplement(value: IHashSet[TValue] => IHashSet[TValue]): Self = StObject.set(x, "complement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddAll(value: js.Array[TValue] => Unit): Self = this.set("addAll", js.Any.fromFunction1(value))
+    def setContains(value: TValue => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setIntersection(value: IHashSet[TValue] => IHashSet[TValue]): Self = StObject.set(x, "intersection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComplement(value: IHashSet[TValue] => IHashSet[TValue]): Self = this.set("complement", js.Any.fromFunction1(value))
+    def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContains(value: TValue => Boolean): Self = this.set("contains", js.Any.fromFunction1(value))
+    def setIsSubsetOf(value: IHashSet[TValue] => Boolean): Self = StObject.set(x, "isSubsetOf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIntersection(value: IHashSet[TValue] => IHashSet[TValue]): Self = this.set("intersection", js.Any.fromFunction1(value))
+    def setRemove(value: TValue => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsEmpty(value: () => Boolean): Self = this.set("isEmpty", js.Any.fromFunction0(value))
+    def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsSubsetOf(value: IHashSet[TValue] => Boolean): Self = this.set("isSubsetOf", js.Any.fromFunction1(value))
+    def setUnion(value: IHashSet[TValue] => IHashSet[TValue]): Self = StObject.set(x, "union", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemove(value: TValue => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSize(value: () => Double): Self = this.set("size", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUnion(value: IHashSet[TValue] => IHashSet[TValue]): Self = this.set("union", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setValues(value: () => js.Array[TValue]): Self = this.set("values", js.Any.fromFunction0(value))
+    def setValues(value: () => js.Array[TValue]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
   }
 }

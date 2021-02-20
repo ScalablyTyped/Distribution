@@ -9,40 +9,41 @@ import typings.reactVis.reactVisStrings.justify
 import typings.reactVis.reactVisStrings.left
 import typings.reactVis.reactVisStrings.right
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SankeyProps extends js.Object {
+trait SankeyProps extends StObject {
   
   var align: js.UndefOr[justify | left | right | center] = js.native
   
-   // default: 'justify'
+  // default: 'justify'
   var className: js.UndefOr[String] = js.native
   
-   // default: ''
+  // default: ''
   var hasVoronoi: js.UndefOr[Boolean] = js.native
   
-   // default: false
+  // default: false
   var height: Double = js.native
   
   var hideLabels: js.UndefOr[Boolean] = js.native
   
-   // default: false
+  // default: false
   var layout: js.UndefOr[Double] = js.native
   
-   // default: 50
+  // default: 50
   var links: js.Array[Source] = js.native
   
   var margin: js.UndefOr[Margin | Double] = js.native
   
-   // default: {'top':20,'left':20,'right':20,'bottom':20}
+  // default: {'top':20,'left':20,'right':20,'bottom':20}
   var nodePadding: js.UndefOr[Double] = js.native
   
   var nodeWidth: js.UndefOr[Double] = js.native
   
-   // default: 10
+  // default: 10
   var nodes: js.Array[SankeyPoint] = js.native
   
   var onLinkClick: js.UndefOr[RVValueEventHandler[SankeyPoint]] = js.native
@@ -55,12 +56,12 @@ trait SankeyProps extends js.Object {
   
   var onValueMouseOut: js.UndefOr[RVValueEventHandler[SankeyPoint]] = js.native
   
-   // default: 10
+  // default: 10
   var onValueMouseOver: js.UndefOr[RVValueEventHandler[SankeyPoint]] = js.native
   
   var style: js.UndefOr[Links] = js.native
   
-   // default: {'links':{},'rects':{},'labels':{}}
+  // default: {'links':{},'rects':{},'labels':{}}
   var width: Double = js.native
 }
 object SankeyProps {
@@ -72,126 +73,114 @@ object SankeyProps {
   }
   
   @scala.inline
-  implicit class SankeyPropsOps[Self <: SankeyProps] (val x: Self) extends AnyVal {
+  implicit class SankeyPropsMutableBuilder[Self <: SankeyProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: justify | left | right | center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setLinksVarargs(value: Source*): Self = this.set("links", js.Array(value :_*))
+    def setHasVoronoi(value: Boolean): Self = StObject.set(x, "hasVoronoi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinks(value: js.Array[Source]): Self = this.set("links", value.asInstanceOf[js.Any])
+    def setHasVoronoiUndefined: Self = StObject.set(x, "hasVoronoi", js.undefined)
     
     @scala.inline
-    def setNodesVarargs(value: SankeyPoint*): Self = this.set("nodes", js.Array(value :_*))
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodes(value: js.Array[SankeyPoint]): Self = this.set("nodes", value.asInstanceOf[js.Any])
+    def setHideLabels(value: Boolean): Self = StObject.set(x, "hideLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setHideLabelsUndefined: Self = StObject.set(x, "hideLabels", js.undefined)
     
     @scala.inline
-    def setAlign(value: justify | left | right | center): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setLayout(value: Double): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setLinks(value: js.Array[Source]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setLinksVarargs(value: Source*): Self = StObject.set(x, "links", js.Array(value :_*))
     
     @scala.inline
-    def setHasVoronoi(value: Boolean): Self = this.set("hasVoronoi", value.asInstanceOf[js.Any])
+    def setMargin(value: Margin | Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasVoronoi: Self = this.set("hasVoronoi", js.undefined)
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def setHideLabels(value: Boolean): Self = this.set("hideLabels", value.asInstanceOf[js.Any])
+    def setNodePadding(value: Double): Self = StObject.set(x, "nodePadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHideLabels: Self = this.set("hideLabels", js.undefined)
+    def setNodePaddingUndefined: Self = StObject.set(x, "nodePadding", js.undefined)
     
     @scala.inline
-    def setLayout(value: Double): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setNodeWidth(value: Double): Self = StObject.set(x, "nodeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setNodeWidthUndefined: Self = StObject.set(x, "nodeWidth", js.undefined)
     
     @scala.inline
-    def setMargin(value: Margin | Double): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setNodes(value: js.Array[SankeyPoint]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setNodesVarargs(value: SankeyPoint*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
     @scala.inline
-    def setNodePadding(value: Double): Self = this.set("nodePadding", value.asInstanceOf[js.Any])
+    def setOnLinkClick(value: (SankeyPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onLinkClick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteNodePadding: Self = this.set("nodePadding", js.undefined)
+    def setOnLinkClickUndefined: Self = StObject.set(x, "onLinkClick", js.undefined)
     
     @scala.inline
-    def setNodeWidth(value: Double): Self = this.set("nodeWidth", value.asInstanceOf[js.Any])
+    def setOnLinkMouseOut(value: (SankeyPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onLinkMouseOut", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteNodeWidth: Self = this.set("nodeWidth", js.undefined)
+    def setOnLinkMouseOutUndefined: Self = StObject.set(x, "onLinkMouseOut", js.undefined)
     
     @scala.inline
-    def setOnLinkClick(value: (SankeyPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = this.set("onLinkClick", js.Any.fromFunction2(value))
+    def setOnLinkMouseOver(value: (SankeyPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onLinkMouseOver", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnLinkClick: Self = this.set("onLinkClick", js.undefined)
+    def setOnLinkMouseOverUndefined: Self = StObject.set(x, "onLinkMouseOver", js.undefined)
     
     @scala.inline
-    def setOnLinkMouseOut(value: (SankeyPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = this.set("onLinkMouseOut", js.Any.fromFunction2(value))
+    def setOnValueClick(value: (SankeyPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onValueClick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnLinkMouseOut: Self = this.set("onLinkMouseOut", js.undefined)
+    def setOnValueClickUndefined: Self = StObject.set(x, "onValueClick", js.undefined)
     
     @scala.inline
-    def setOnLinkMouseOver(value: (SankeyPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = this.set("onLinkMouseOver", js.Any.fromFunction2(value))
+    def setOnValueMouseOut(value: (SankeyPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onValueMouseOut", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnLinkMouseOver: Self = this.set("onLinkMouseOver", js.undefined)
+    def setOnValueMouseOutUndefined: Self = StObject.set(x, "onValueMouseOut", js.undefined)
     
     @scala.inline
-    def setOnValueClick(value: (SankeyPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = this.set("onValueClick", js.Any.fromFunction2(value))
+    def setOnValueMouseOver(value: (SankeyPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onValueMouseOver", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnValueClick: Self = this.set("onValueClick", js.undefined)
+    def setOnValueMouseOverUndefined: Self = StObject.set(x, "onValueMouseOver", js.undefined)
     
     @scala.inline
-    def setOnValueMouseOut(value: (SankeyPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = this.set("onValueMouseOut", js.Any.fromFunction2(value))
+    def setStyle(value: Links): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnValueMouseOut: Self = this.set("onValueMouseOut", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setOnValueMouseOver(value: (SankeyPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = this.set("onValueMouseOver", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnValueMouseOver: Self = this.set("onValueMouseOver", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: Links): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

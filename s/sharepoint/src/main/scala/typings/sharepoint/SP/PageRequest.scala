@@ -1,12 +1,13 @@
 package typings.sharepoint.SP
 
 import typings.microsoftAjax.Sys.Net.WebRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PageRequest extends js.Object {
+trait PageRequest extends StObject {
   
   def add_failed(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestFailedEventArgs, Unit]): Unit = js.native
   
@@ -51,51 +52,39 @@ object PageRequest {
   }
   
   @scala.inline
-  implicit class PageRequestOps[Self <: PageRequest] (val x: Self) extends AnyVal {
+  implicit class PageRequestMutableBuilder[Self <: PageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd_failed(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestFailedEventArgs, Unit] => Unit): Self = StObject.set(x, "add_failed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdd_succeeded(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestSucceededEventArgs, Unit] => Unit): Self = StObject.set(x, "add_succeeded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet(value: () => Unit): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdd_failed(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestFailedEventArgs, Unit] => Unit): Self = this.set("add_failed", js.Any.fromFunction1(value))
+    def setGet_expectedContentType(value: () => String): Self = StObject.set(x, "get_expectedContentType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdd_succeeded(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestSucceededEventArgs, Unit] => Unit): Self = this.set("add_succeeded", js.Any.fromFunction1(value))
+    def setGet_request(value: () => WebRequest): Self = StObject.set(x, "get_request", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet(value: () => Unit): Self = this.set("get", js.Any.fromFunction0(value))
+    def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_expectedContentType(value: () => String): Self = this.set("get_expectedContentType", js.Any.fromFunction0(value))
+    def setPost(value: String => Unit): Self = StObject.set(x, "post", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_request(value: () => WebRequest): Self = this.set("get_request", js.Any.fromFunction0(value))
+    def setRemove_failed(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestFailedEventArgs, Unit] => Unit): Self = StObject.set(x, "remove_failed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_url(value: () => String): Self = this.set("get_url", js.Any.fromFunction0(value))
+    def setRemove_succeeded(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestSucceededEventArgs, Unit] => Unit): Self = StObject.set(x, "remove_succeeded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPost(value: String => Unit): Self = this.set("post", js.Any.fromFunction1(value))
+    def setSet_expectedContentType(value: String => Unit): Self = StObject.set(x, "set_expectedContentType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemove_failed(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestFailedEventArgs, Unit] => Unit): Self = this.set("remove_failed", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemove_succeeded(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestSucceededEventArgs, Unit] => Unit): Self = this.set("remove_succeeded", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_expectedContentType(value: String => Unit): Self = this.set("set_expectedContentType", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_url(value: String => Unit): Self = this.set("set_url", js.Any.fromFunction1(value))
+    def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
   }
 }

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.script
 
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,42 +76,30 @@ object InterruptEngineEvent {
   }
   
   @scala.inline
-  implicit class InterruptEngineEventOps[Self <: InterruptEngineEvent] (val x: Self) extends AnyVal {
+  implicit class InterruptEngineEventMutableBuilder[Self <: InterruptEngineEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndColumn(value: Double): Self = StObject.set(x, "EndColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndLine(value: Double): Self = StObject.set(x, "EndLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndColumn(value: Double): Self = this.set("EndColumn", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndLine(value: Double): Self = this.set("EndLine", value.asInstanceOf[js.Any])
+    def setReason(value: InterruptReason): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    def setSourceCode(value: String): Self = StObject.set(x, "SourceCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setStartColumn(value: Double): Self = StObject.set(x, "StartColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: InterruptReason): Self = this.set("Reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceCode(value: String): Self = this.set("SourceCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartColumn(value: Double): Self = this.set("StartColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartLine(value: Double): Self = this.set("StartLine", value.asInstanceOf[js.Any])
+    def setStartLine(value: Double): Self = StObject.set(x, "StartLine", value.asInstanceOf[js.Any])
   }
 }

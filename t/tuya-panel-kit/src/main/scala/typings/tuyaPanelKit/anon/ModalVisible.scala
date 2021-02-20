@@ -1,11 +1,12 @@
 package typings.tuyaPanelKit.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModalVisible extends js.Object {
+trait ModalVisible extends StObject {
   
   var modalVisible: Boolean = js.native
 }
@@ -18,21 +19,9 @@ object ModalVisible {
   }
   
   @scala.inline
-  implicit class ModalVisibleOps[Self <: ModalVisible] (val x: Self) extends AnyVal {
+  implicit class ModalVisibleMutableBuilder[Self <: ModalVisible] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setModalVisible(value: Boolean): Self = this.set("modalVisible", value.asInstanceOf[js.Any])
+    def setModalVisible(value: Boolean): Self = StObject.set(x, "modalVisible", value.asInstanceOf[js.Any])
   }
 }

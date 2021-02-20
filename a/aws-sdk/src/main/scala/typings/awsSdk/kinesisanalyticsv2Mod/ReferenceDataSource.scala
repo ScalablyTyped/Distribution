@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReferenceDataSource extends js.Object {
+trait ReferenceDataSource extends StObject {
   
   /**
     * Describes the format of the data in the streaming source, and how each data element maps to corresponding columns created in the in-application stream.
@@ -31,30 +32,18 @@ object ReferenceDataSource {
   }
   
   @scala.inline
-  implicit class ReferenceDataSourceOps[Self <: ReferenceDataSource] (val x: Self) extends AnyVal {
+  implicit class ReferenceDataSourceMutableBuilder[Self <: ReferenceDataSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReferenceSchema(value: SourceSchema): Self = StObject.set(x, "ReferenceSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setS3ReferenceDataSource(value: S3ReferenceDataSource): Self = StObject.set(x, "S3ReferenceDataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS3ReferenceDataSourceUndefined: Self = StObject.set(x, "S3ReferenceDataSource", js.undefined)
     
     @scala.inline
-    def setReferenceSchema(value: SourceSchema): Self = this.set("ReferenceSchema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTableName(value: InAppTableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setS3ReferenceDataSource(value: S3ReferenceDataSource): Self = this.set("S3ReferenceDataSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3ReferenceDataSource: Self = this.set("S3ReferenceDataSource", js.undefined)
+    def setTableName(value: InAppTableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

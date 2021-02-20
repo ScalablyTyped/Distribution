@@ -1,11 +1,12 @@
 package typings.docxTemplates.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoopStatus extends js.Object {
+trait LoopStatus extends StObject {
   
   var idx: Double = js.native
   
@@ -28,42 +29,30 @@ object LoopStatus {
   }
   
   @scala.inline
-  implicit class LoopStatusOps[Self <: LoopStatus] (val x: Self) extends AnyVal {
+  implicit class LoopStatusMutableBuilder[Self <: LoopStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsIf(value: Boolean): Self = StObject.set(x, "isIf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsIfUndefined: Self = StObject.set(x, "isIf", js.undefined)
     
     @scala.inline
-    def setIdx(value: Double): Self = this.set("idx", value.asInstanceOf[js.Any])
+    def setLoopOver(value: js.Array[VarValue]): Self = StObject.set(x, "loopOver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoopOverVarargs(value: VarValue*): Self = this.set("loopOver", js.Array(value :_*))
+    def setLoopOverVarargs(value: VarValue*): Self = StObject.set(x, "loopOver", js.Array(value :_*))
     
     @scala.inline
-    def setLoopOver(value: js.Array[VarValue]): Self = this.set("loopOver", value.asInstanceOf[js.Any])
+    def setRefNode(value: Node): Self = StObject.set(x, "refNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefNode(value: Node): Self = this.set("refNode", value.asInstanceOf[js.Any])
+    def setRefNodeLevel(value: Double): Self = StObject.set(x, "refNodeLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefNodeLevel(value: Double): Self = this.set("refNodeLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVarName(value: String): Self = this.set("varName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsIf(value: Boolean): Self = this.set("isIf", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsIf: Self = this.set("isIf", js.undefined)
+    def setVarName(value: String): Self = StObject.set(x, "varName", value.asInstanceOf[js.Any])
   }
 }

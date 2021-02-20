@@ -1,12 +1,13 @@
 package typings.awsSdkClientPinpointBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/model/GetApps", JSImport.Namespace)
-@js.native
-object getAppsMod extends js.Object {
+object getAppsMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/model/GetApps", "GetApps")
+  @js.native
   val GetApps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
 }

@@ -1,12 +1,13 @@
 package typings.aliOss.anon
 
 import typings.aliOss.mod.NormalSuccessResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Error extends js.Object {
+trait Error extends StObject {
   
   var error: String = js.native
   
@@ -23,27 +24,15 @@ object Error {
   }
   
   @scala.inline
-  implicit class ErrorOps[Self <: Error] (val x: Self) extends AnyVal {
+  implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIndex(value: String): Self = this.set("index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = this.set("res", value.asInstanceOf[js.Any])
+    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }
 }

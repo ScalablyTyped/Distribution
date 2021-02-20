@@ -19,6 +19,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Date
 import typings.activexLibreoffice.com_.sun.star.util.DateTime
 import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -164,27 +165,15 @@ object ContentResultSet {
   }
   
   @scala.inline
-  implicit class ContentResultSetOps[Self <: ContentResultSet] (val x: Self) extends AnyVal {
+  implicit class ContentResultSetMutableBuilder[Self <: ContentResultSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCursorTravelMode(value: Double): Self = StObject.set(x, "CursorTravelMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsRowCountFinal(value: Boolean): Self = StObject.set(x, "IsRowCountFinal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCursorTravelMode(value: Double): Self = this.set("CursorTravelMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsRowCountFinal(value: Boolean): Self = this.set("IsRowCountFinal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowCount(value: Double): Self = this.set("RowCount", value.asInstanceOf[js.Any])
+    def setRowCount(value: Double): Self = StObject.set(x, "RowCount", value.asInstanceOf[js.Any])
   }
 }

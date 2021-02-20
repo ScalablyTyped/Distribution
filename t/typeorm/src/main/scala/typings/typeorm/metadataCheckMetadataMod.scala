@@ -3,16 +3,16 @@ package typings.typeorm
 import typings.typeorm.anon.ArgsEntityMetadataEntityMetadata
 import typings.typeorm.metadataEntityMetadataMod.EntityMetadata
 import typings.typeorm.namingStrategyNamingStrategyInterfaceMod.NamingStrategyInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/metadata/CheckMetadata", JSImport.Namespace)
-@js.native
-object metadataCheckMetadataMod extends js.Object {
+object metadataCheckMetadataMod {
   
+  @JSImport("typeorm/metadata/CheckMetadata", "CheckMetadata")
   @js.native
-  class CheckMetadata protected () extends js.Object {
+  class CheckMetadata protected () extends StObject {
     def this(options: ArgsEntityMetadataEntityMetadata) = this()
     
     /**

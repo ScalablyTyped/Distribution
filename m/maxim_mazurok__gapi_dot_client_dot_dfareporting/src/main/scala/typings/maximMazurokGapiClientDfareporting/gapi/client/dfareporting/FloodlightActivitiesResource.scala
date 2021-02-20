@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientDfareporting.anon.FieldsIdKey
 import typings.maximMazurokGapiClientDfareporting.anon.FloodlightActivityGroupIds
 import typings.maximMazurokGapiClientDfareporting.anon.FloodlightActivityId
 import typings.maximMazurokGapiClientDfareporting.anon.OauthtokenPrettyPrintProfileId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FloodlightActivitiesResource extends js.Object {
+trait FloodlightActivitiesResource extends StObject {
   
   /** Deletes an existing floodlight activity. */
   def delete(): Request[Unit] = js.native

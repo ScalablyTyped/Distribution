@@ -2,6 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.anon.FrontUVsRadius
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class DiscBuilder ()
   extends typings.babylonjs.BABYLON.DiscBuilder
 /* static members */
-@JSGlobal("BABYLON.DiscBuilder")
-@js.native
-object DiscBuilder extends js.Object {
+object DiscBuilder {
   
   /**
     * Creates a plane polygonal mesh.  By default, this is a disc
@@ -29,6 +28,10 @@ object DiscBuilder extends js.Object {
     * @returns the plane polygonal mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#disc-or-regular-polygon
     */
+  @JSGlobal("BABYLON.DiscBuilder.CreateDisc")
+  @js.native
   def CreateDisc(name: String, options: FrontUVsRadius): typings.babylonjs.BABYLON.Mesh = js.native
+  @JSGlobal("BABYLON.DiscBuilder.CreateDisc")
+  @js.native
   def CreateDisc(name: String, options: FrontUVsRadius, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
 }

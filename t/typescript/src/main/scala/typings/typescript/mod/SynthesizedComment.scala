@@ -1,6 +1,7 @@
 package typings.typescript.mod
 
 import typings.typescript.typescriptNumbers.`-1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,33 +28,21 @@ object SynthesizedComment {
   }
   
   @scala.inline
-  implicit class SynthesizedCommentOps[Self <: SynthesizedComment] (val x: Self) extends AnyVal {
+  implicit class SynthesizedCommentMutableBuilder[Self <: SynthesizedComment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: `-1`): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasLeadingNewline(value: Boolean): Self = StObject.set(x, "hasLeadingNewline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasLeadingNewlineUndefined: Self = StObject.set(x, "hasLeadingNewline", js.undefined)
     
     @scala.inline
-    def setEnd(value: `-1`): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setPos(value: `-1`): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPos(value: `-1`): Self = this.set("pos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: java.lang.String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasLeadingNewline(value: Boolean): Self = this.set("hasLeadingNewline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHasLeadingNewline: Self = this.set("hasLeadingNewline", js.undefined)
+    def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.rxLite.Rx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Notifications
 @js.native
-trait Notification[T] extends js.Object {
+trait Notification[T] extends StObject {
   
   def accept(observer: IObserver[T]): Unit = js.native
   def accept[TResult](onNext: js.Function1[/* value */ T, TResult]): TResult = js.native

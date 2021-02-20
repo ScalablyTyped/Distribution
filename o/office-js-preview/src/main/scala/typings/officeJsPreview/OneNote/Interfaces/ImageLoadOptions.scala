@@ -1,5 +1,6 @@
 package typings.officeJsPreview.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: OneNoteApi 1.1]
   */
 @js.native
-trait ImageLoadOptions extends js.Object {
+trait ImageLoadOptions extends StObject {
   
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.native
@@ -89,72 +90,60 @@ object ImageLoadOptions {
   }
   
   @scala.inline
-  implicit class ImageLoadOptionsOps[Self <: ImageLoadOptions] (val x: Self) extends AnyVal {
+  implicit class ImageLoadOptionsMutableBuilder[Self <: ImageLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: Boolean): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setHeight(value: Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Boolean): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setHyperlink(value: Boolean): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Boolean): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperlink(value: Boolean): Self = this.set("hyperlink", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHyperlink: Self = this.set("hyperlink", js.undefined)
+    def setOcrData(value: Boolean): Self = StObject.set(x, "ocrData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Boolean): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOcrDataUndefined: Self = StObject.set(x, "ocrData", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPageContent(value: PageContentLoadOptions): Self = StObject.set(x, "pageContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOcrData(value: Boolean): Self = this.set("ocrData", value.asInstanceOf[js.Any])
+    def setPageContentUndefined: Self = StObject.set(x, "pageContent", js.undefined)
     
     @scala.inline
-    def deleteOcrData: Self = this.set("ocrData", js.undefined)
+    def setParagraph(value: ParagraphLoadOptions): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageContent(value: PageContentLoadOptions): Self = this.set("pageContent", value.asInstanceOf[js.Any])
+    def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
     
     @scala.inline
-    def deletePageContent: Self = this.set("pageContent", js.undefined)
+    def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParagraph(value: ParagraphLoadOptions): Self = this.set("paragraph", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParagraph: Self = this.set("paragraph", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Boolean): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

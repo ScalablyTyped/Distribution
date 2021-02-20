@@ -1,16 +1,16 @@
 package typings.workboxWindow
 
 import typings.workboxWindow.workboxEventMod.WorkboxEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("workbox-window/utils/EventTargetShim", JSImport.Namespace)
-@js.native
-object eventTargetShimMod extends js.Object {
+object eventTargetShimMod {
   
+  @JSImport("workbox-window/utils/EventTargetShim", "EventTargetShim")
   @js.native
-  class EventTargetShim () extends js.Object {
+  class EventTargetShim () extends StObject {
     
     def addEventListener(`type`: String, listener: EventListenerShim): Unit = js.native
     

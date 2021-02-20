@@ -1,11 +1,12 @@
 package typings.pdfmake.interfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableOfContent extends js.Object {
+trait TableOfContent extends StObject {
   
   var id: js.UndefOr[String] = js.native
   
@@ -26,54 +27,42 @@ object TableOfContent {
   }
   
   @scala.inline
-  implicit class TableOfContentOps[Self <: TableOfContent] (val x: Self) extends AnyVal {
+  implicit class TableOfContentMutableBuilder[Self <: TableOfContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumberStyle(value: String | js.Array[String] | Style): Self = StObject.set(x, "numberStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNumberStyleUndefined: Self = StObject.set(x, "numberStyle", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setNumberStyleVarargs(value: String*): Self = StObject.set(x, "numberStyle", js.Array(value :_*))
     
     @scala.inline
-    def setNumberStyleVarargs(value: String*): Self = this.set("numberStyle", js.Array(value :_*))
+    def setTextMargin(value: Margins): Self = StObject.set(x, "textMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberStyle(value: String | js.Array[String] | Style): Self = this.set("numberStyle", value.asInstanceOf[js.Any])
+    def setTextMarginUndefined: Self = StObject.set(x, "textMargin", js.undefined)
     
     @scala.inline
-    def deleteNumberStyle: Self = this.set("numberStyle", js.undefined)
+    def setTextStyle(value: String | js.Array[String] | Style): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextMargin(value: Margins): Self = this.set("textMargin", value.asInstanceOf[js.Any])
+    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
     @scala.inline
-    def deleteTextMargin: Self = this.set("textMargin", js.undefined)
+    def setTextStyleVarargs(value: String*): Self = StObject.set(x, "textStyle", js.Array(value :_*))
     
     @scala.inline
-    def setTextStyleVarargs(value: String*): Self = this.set("textStyle", js.Array(value :_*))
+    def setTitle(value: Content): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextStyle(value: String | js.Array[String] | Style): Self = this.set("textStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: Content): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

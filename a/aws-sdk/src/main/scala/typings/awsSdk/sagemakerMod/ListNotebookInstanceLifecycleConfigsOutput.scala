@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListNotebookInstanceLifecycleConfigsOutput extends js.Object {
+trait ListNotebookInstanceLifecycleConfigsOutput extends StObject {
   
   /**
     * If the response is truncated, Amazon SageMaker returns this token. To get the next set of lifecycle configurations, use it in the next request. 
@@ -26,33 +27,21 @@ object ListNotebookInstanceLifecycleConfigsOutput {
   }
   
   @scala.inline
-  implicit class ListNotebookInstanceLifecycleConfigsOutputOps[Self <: ListNotebookInstanceLifecycleConfigsOutput] (val x: Self) extends AnyVal {
+  implicit class ListNotebookInstanceLifecycleConfigsOutputMutableBuilder[Self <: ListNotebookInstanceLifecycleConfigsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotebookInstanceLifecycleConfigs(value: NotebookInstanceLifecycleConfigSummaryList): Self = StObject.set(x, "NotebookInstanceLifecycleConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setNotebookInstanceLifecycleConfigsUndefined: Self = StObject.set(x, "NotebookInstanceLifecycleConfigs", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setNotebookInstanceLifecycleConfigsVarargs(value: NotebookInstanceLifecycleConfigSummary*): Self = this.set("NotebookInstanceLifecycleConfigs", js.Array(value :_*))
-    
-    @scala.inline
-    def setNotebookInstanceLifecycleConfigs(value: NotebookInstanceLifecycleConfigSummaryList): Self = this.set("NotebookInstanceLifecycleConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotebookInstanceLifecycleConfigs: Self = this.set("NotebookInstanceLifecycleConfigs", js.undefined)
+    def setNotebookInstanceLifecycleConfigsVarargs(value: NotebookInstanceLifecycleConfigSummary*): Self = StObject.set(x, "NotebookInstanceLifecycleConfigs", js.Array(value :_*))
   }
 }

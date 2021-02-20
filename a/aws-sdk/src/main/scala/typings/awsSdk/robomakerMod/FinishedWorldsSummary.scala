@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FinishedWorldsSummary extends js.Object {
+trait FinishedWorldsSummary extends StObject {
   
   /**
     * Information about worlds that failed.
@@ -31,39 +32,27 @@ object FinishedWorldsSummary {
   }
   
   @scala.inline
-  implicit class FinishedWorldsSummaryOps[Self <: FinishedWorldsSummary] (val x: Self) extends AnyVal {
+  implicit class FinishedWorldsSummaryMutableBuilder[Self <: FinishedWorldsSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailureSummary(value: FailureSummary): Self = StObject.set(x, "failureSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailureSummaryUndefined: Self = StObject.set(x, "failureSummary", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFinishedCount(value: Integer): Self = StObject.set(x, "finishedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureSummary(value: FailureSummary): Self = this.set("failureSummary", value.asInstanceOf[js.Any])
+    def setFinishedCountUndefined: Self = StObject.set(x, "finishedCount", js.undefined)
     
     @scala.inline
-    def deleteFailureSummary: Self = this.set("failureSummary", js.undefined)
+    def setSucceededWorlds(value: Arns): Self = StObject.set(x, "succeededWorlds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinishedCount(value: Integer): Self = this.set("finishedCount", value.asInstanceOf[js.Any])
+    def setSucceededWorldsUndefined: Self = StObject.set(x, "succeededWorlds", js.undefined)
     
     @scala.inline
-    def deleteFinishedCount: Self = this.set("finishedCount", js.undefined)
-    
-    @scala.inline
-    def setSucceededWorldsVarargs(value: Arn*): Self = this.set("succeededWorlds", js.Array(value :_*))
-    
-    @scala.inline
-    def setSucceededWorlds(value: Arns): Self = this.set("succeededWorlds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSucceededWorlds: Self = this.set("succeededWorlds", js.undefined)
+    def setSucceededWorldsVarargs(value: Arn*): Self = StObject.set(x, "succeededWorlds", js.Array(value :_*))
   }
 }

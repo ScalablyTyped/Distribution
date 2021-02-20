@@ -3,6 +3,7 @@ package typings.babylonjs.babylonjsIndexMod
 import typings.babylonjs.anon.Holes
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class PolygonBuilder ()
   extends typings.babylonjs.buildersIndexMod.PolygonBuilder
 /* static members */
-@JSImport("babylonjs/Meshes/index", "PolygonBuilder")
-@js.native
-object PolygonBuilder extends js.Object {
+object PolygonBuilder {
   
   /**
     * Creates a polygon mesh
@@ -30,8 +29,14 @@ object PolygonBuilder extends js.Object {
     * @param earcutInjection can be used to inject your own earcut reference
     * @returns the polygon mesh
     */
+  @JSImport("babylonjs/Meshes/index", "PolygonBuilder.CreatePolygon")
+  @js.native
   def CreatePolygon(name: String, options: Holes): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs/Meshes/index", "PolygonBuilder.CreatePolygon")
+  @js.native
   def CreatePolygon(name: String, options: Holes, scene: js.UndefOr[Nullable[Scene]], earcutInjection: js.Any): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs/Meshes/index", "PolygonBuilder.CreatePolygon")
+  @js.native
   def CreatePolygon(name: String, options: Holes, scene: Nullable[Scene]): typings.babylonjs.meshMod.Mesh = js.native
   
   /**
@@ -44,7 +49,13 @@ object PolygonBuilder extends js.Object {
     * @param earcutInjection can be used to inject your own earcut reference
     * @returns the polygon mesh
     */
+  @JSImport("babylonjs/Meshes/index", "PolygonBuilder.ExtrudePolygon")
+  @js.native
   def ExtrudePolygon(name: String, options: Holes): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs/Meshes/index", "PolygonBuilder.ExtrudePolygon")
+  @js.native
   def ExtrudePolygon(name: String, options: Holes, scene: js.UndefOr[Nullable[Scene]], earcutInjection: js.Any): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs/Meshes/index", "PolygonBuilder.ExtrudePolygon")
+  @js.native
   def ExtrudePolygon(name: String, options: Holes, scene: Nullable[Scene]): typings.babylonjs.meshMod.Mesh = js.native
 }

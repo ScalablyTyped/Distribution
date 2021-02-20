@@ -3,12 +3,13 @@ package typings.oakdexPokedex.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.oakdexPokedex.anon.Female
 import typings.oakdexPokedex.anon.Jump
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pokemon extends js.Object {
+trait Pokemon extends StObject {
   
   var abilities: js.Array[PokemonAbility] = js.native
   
@@ -113,183 +114,171 @@ object Pokemon {
   }
   
   @scala.inline
-  implicit class PokemonOps[Self <: Pokemon] (val x: Self) extends AnyVal {
+  implicit class PokemonMutableBuilder[Self <: Pokemon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbilities(value: js.Array[PokemonAbility]): Self = StObject.set(x, "abilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbilitiesVarargs(value: PokemonAbility*): Self = StObject.set(x, "abilities", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlola_id(value: Double): Self = StObject.set(x, "alola_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbilitiesVarargs(value: PokemonAbility*): Self = this.set("abilities", js.Array(value :_*))
+    def setAlola_idNull: Self = StObject.set(x, "alola_id", null)
     
     @scala.inline
-    def setAbilities(value: js.Array[PokemonAbility]): Self = this.set("abilities", value.asInstanceOf[js.Any])
+    def setBase_exp_yield(value: Double): Self = StObject.set(x, "base_exp_yield", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase_exp_yield(value: Double): Self = this.set("base_exp_yield", value.asInstanceOf[js.Any])
+    def setBase_friendship(value: Double): Self = StObject.set(x, "base_friendship", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase_friendship(value: Double): Self = this.set("base_friendship", value.asInstanceOf[js.Any])
+    def setBase_stats(value: StatObject): Self = StObject.set(x, "base_stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase_stats(value: StatObject): Self = this.set("base_stats", value.asInstanceOf[js.Any])
+    def setCatch_rate(value: Double): Self = StObject.set(x, "catch_rate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatch_rate(value: Double): Self = this.set("catch_rate", value.asInstanceOf[js.Any])
+    def setCategories(value: Translations): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: Translations): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setEgg_groups(value: js.Array[String]): Self = StObject.set(x, "egg_groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEgg_groupsVarargs(value: String*): Self = this.set("egg_groups", js.Array(value :_*))
+    def setEgg_groupsVarargs(value: String*): Self = StObject.set(x, "egg_groups", js.Array(value :_*))
     
     @scala.inline
-    def setEgg_groups(value: js.Array[String]): Self = this.set("egg_groups", value.asInstanceOf[js.Any])
+    def setEv_yield(value: StatObject): Self = StObject.set(x, "ev_yield", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEv_yield(value: StatObject): Self = this.set("ev_yield", value.asInstanceOf[js.Any])
+    def setEvolution_from(value: String): Self = StObject.set(x, "evolution_from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvolutionsVarargs(value: PokemonEvolution*): Self = this.set("evolutions", js.Array(value :_*))
+    def setEvolution_fromNull: Self = StObject.set(x, "evolution_from", null)
     
     @scala.inline
-    def setEvolutions(value: js.Array[PokemonEvolution]): Self = this.set("evolutions", value.asInstanceOf[js.Any])
+    def setEvolutions(value: js.Array[PokemonEvolution]): Self = StObject.set(x, "evolutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHatch_timeVarargs(value: Double*): Self = this.set("hatch_time", js.Array(value :_*))
+    def setEvolutionsVarargs(value: PokemonEvolution*): Self = StObject.set(x, "evolutions", js.Array(value :_*))
     
     @scala.inline
-    def setHatch_time(value: js.Array[Double]): Self = this.set("hatch_time", value.asInstanceOf[js.Any])
+    def setGender_ratios(value: Female): Self = StObject.set(x, "gender_ratios", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight_eu(value: String): Self = this.set("height_eu", value.asInstanceOf[js.Any])
+    def setGender_ratiosNull: Self = StObject.set(x, "gender_ratios", null)
     
     @scala.inline
-    def setHeight_us(value: String): Self = this.set("height_us", value.asInstanceOf[js.Any])
+    def setHatch_time(value: js.Array[Double]): Self = StObject.set(x, "hatch_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeveling_rate(value: String): Self = this.set("leveling_rate", value.asInstanceOf[js.Any])
+    def setHatch_timeVarargs(value: Double*): Self = StObject.set(x, "hatch_time", js.Array(value :_*))
     
     @scala.inline
-    def setMega_evolutionsVarargs(value: MegaEvolution*): Self = this.set("mega_evolutions", js.Array(value :_*))
+    def setHeight_eu(value: String): Self = StObject.set(x, "height_eu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMega_evolutions(value: js.Array[MegaEvolution]): Self = this.set("mega_evolutions", value.asInstanceOf[js.Any])
+    def setHeight_us(value: String): Self = StObject.set(x, "height_us", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMove_learnsetsVarargs(value: MoveLearnset*): Self = this.set("move_learnsets", js.Array(value :_*))
+    def setHoenn_id(value: Double): Self = StObject.set(x, "hoenn_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMove_learnsets(value: js.Array[MoveLearnset]): Self = this.set("move_learnsets", value.asInstanceOf[js.Any])
+    def setHoenn_idNull: Self = StObject.set(x, "hoenn_id", null)
     
     @scala.inline
-    def setNames(value: Translations): Self = this.set("names", value.asInstanceOf[js.Any])
+    def setJohto_id(value: Double): Self = StObject.set(x, "johto_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNational_id(value: Double): Self = this.set("national_id", value.asInstanceOf[js.Any])
+    def setJohto_idNull: Self = StObject.set(x, "johto_id", null)
     
     @scala.inline
-    def setPokedex_entries(value: StringDictionary[Translations]): Self = this.set("pokedex_entries", value.asInstanceOf[js.Any])
+    def setKalos_id(value: Double): Self = StObject.set(x, "kalos_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypesVarargs(value: String*): Self = this.set("types", js.Array(value :_*))
+    def setKalos_idNull: Self = StObject.set(x, "kalos_id", null)
     
     @scala.inline
-    def setTypes(value: js.Array[String]): Self = this.set("types", value.asInstanceOf[js.Any])
+    def setKanto_id(value: Double): Self = StObject.set(x, "kanto_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVariationsVarargs(value: PokemonVariation*): Self = this.set("variations", js.Array(value :_*))
+    def setKanto_idNull: Self = StObject.set(x, "kanto_id", null)
     
     @scala.inline
-    def setVariations(value: js.Array[PokemonVariation]): Self = this.set("variations", value.asInstanceOf[js.Any])
+    def setLeveling_rate(value: String): Self = StObject.set(x, "leveling_rate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeight_eu(value: String): Self = this.set("weight_eu", value.asInstanceOf[js.Any])
+    def setMega_evolutions(value: js.Array[MegaEvolution]): Self = StObject.set(x, "mega_evolutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeight_us(value: String): Self = this.set("weight_us", value.asInstanceOf[js.Any])
+    def setMega_evolutionsVarargs(value: MegaEvolution*): Self = StObject.set(x, "mega_evolutions", js.Array(value :_*))
     
     @scala.inline
-    def setAlola_id(value: Double): Self = this.set("alola_id", value.asInstanceOf[js.Any])
+    def setMove_learnsets(value: js.Array[MoveLearnset]): Self = StObject.set(x, "move_learnsets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlola_idNull: Self = this.set("alola_id", null)
+    def setMove_learnsetsVarargs(value: MoveLearnset*): Self = StObject.set(x, "move_learnsets", js.Array(value :_*))
     
     @scala.inline
-    def setEvolution_from(value: String): Self = this.set("evolution_from", value.asInstanceOf[js.Any])
+    def setNames(value: Translations): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvolution_fromNull: Self = this.set("evolution_from", null)
+    def setNational_id(value: Double): Self = StObject.set(x, "national_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGender_ratios(value: Female): Self = this.set("gender_ratios", value.asInstanceOf[js.Any])
+    def setPokeathlon_stats(value: Jump): Self = StObject.set(x, "pokeathlon_stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGender_ratiosNull: Self = this.set("gender_ratios", null)
+    def setPokeathlon_statsUndefined: Self = StObject.set(x, "pokeathlon_stats", js.undefined)
     
     @scala.inline
-    def setHoenn_id(value: Double): Self = this.set("hoenn_id", value.asInstanceOf[js.Any])
+    def setPokedex_entries(value: StringDictionary[Translations]): Self = StObject.set(x, "pokedex_entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoenn_idNull: Self = this.set("hoenn_id", null)
+    def setSinnoh_id(value: Double): Self = StObject.set(x, "sinnoh_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJohto_id(value: Double): Self = this.set("johto_id", value.asInstanceOf[js.Any])
+    def setSinnoh_idNull: Self = StObject.set(x, "sinnoh_id", null)
     
     @scala.inline
-    def setJohto_idNull: Self = this.set("johto_id", null)
+    def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKalos_id(value: Double): Self = this.set("kalos_id", value.asInstanceOf[js.Any])
+    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
     
     @scala.inline
-    def setKalos_idNull: Self = this.set("kalos_id", null)
+    def setUltra_alola_id(value: Double): Self = StObject.set(x, "ultra_alola_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKanto_id(value: Double): Self = this.set("kanto_id", value.asInstanceOf[js.Any])
+    def setUltra_alola_idNull: Self = StObject.set(x, "ultra_alola_id", null)
     
     @scala.inline
-    def setKanto_idNull: Self = this.set("kanto_id", null)
+    def setUnova_id(value: Double): Self = StObject.set(x, "unova_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPokeathlon_stats(value: Jump): Self = this.set("pokeathlon_stats", value.asInstanceOf[js.Any])
+    def setUnova_idNull: Self = StObject.set(x, "unova_id", null)
     
     @scala.inline
-    def deletePokeathlon_stats: Self = this.set("pokeathlon_stats", js.undefined)
+    def setVariation_names(value: Translations): Self = StObject.set(x, "variation_names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSinnoh_id(value: Double): Self = this.set("sinnoh_id", value.asInstanceOf[js.Any])
+    def setVariation_namesUndefined: Self = StObject.set(x, "variation_names", js.undefined)
     
     @scala.inline
-    def setSinnoh_idNull: Self = this.set("sinnoh_id", null)
+    def setVariations(value: js.Array[PokemonVariation]): Self = StObject.set(x, "variations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUltra_alola_id(value: Double): Self = this.set("ultra_alola_id", value.asInstanceOf[js.Any])
+    def setVariationsVarargs(value: PokemonVariation*): Self = StObject.set(x, "variations", js.Array(value :_*))
     
     @scala.inline
-    def setUltra_alola_idNull: Self = this.set("ultra_alola_id", null)
+    def setWeight_eu(value: String): Self = StObject.set(x, "weight_eu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnova_id(value: Double): Self = this.set("unova_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnova_idNull: Self = this.set("unova_id", null)
-    
-    @scala.inline
-    def setVariation_names(value: Translations): Self = this.set("variation_names", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariation_names: Self = this.set("variation_names", js.undefined)
+    def setWeight_us(value: String): Self = StObject.set(x, "weight_us", value.asInstanceOf[js.Any])
   }
 }

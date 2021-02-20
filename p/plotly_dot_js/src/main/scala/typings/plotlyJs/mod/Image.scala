@@ -12,12 +12,13 @@ import typings.plotlyJs.plotlyJsStrings.paper
 import typings.plotlyJs.plotlyJsStrings.right
 import typings.plotlyJs.plotlyJsStrings.stretch
 import typings.plotlyJs.plotlyJsStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Image extends js.Object {
+trait Image extends StObject {
   
   var layer: above | below = js.native
   
@@ -68,57 +69,45 @@ object Image {
   }
   
   @scala.inline
-  implicit class ImageOps[Self <: Image] (val x: Self) extends AnyVal {
+  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayer(value: above | below): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSizex(value: Double): Self = StObject.set(x, "sizex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: above | below): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setSizey(value: Double): Self = StObject.set(x, "sizey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setSizing(value: fill | contain | stretch): Self = StObject.set(x, "sizing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizex(value: Double): Self = this.set("sizex", value.asInstanceOf[js.Any])
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizey(value: Double): Self = this.set("sizey", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizing(value: fill | contain | stretch): Self = this.set("sizing", value.asInstanceOf[js.Any])
+    def setX(value: Double | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setXanchor(value: left | center | right): Self = StObject.set(x, "xanchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setXref(value: paper | XAxisName): Self = StObject.set(x, "xref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double | String): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setY(value: Double | String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXanchor(value: left | center | right): Self = this.set("xanchor", value.asInstanceOf[js.Any])
+    def setYanchor(value: top | middle | bottom): Self = StObject.set(x, "yanchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXref(value: paper | XAxisName): Self = this.set("xref", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: Double | String): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYanchor(value: top | middle | bottom): Self = this.set("yanchor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYref(value: paper | YAxisName): Self = this.set("yref", value.asInstanceOf[js.Any])
+    def setYref(value: paper | YAxisName): Self = StObject.set(x, "yref", value.asInstanceOf[js.Any])
   }
 }

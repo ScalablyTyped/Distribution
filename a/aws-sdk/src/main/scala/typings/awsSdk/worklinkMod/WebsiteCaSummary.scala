@@ -1,11 +1,12 @@
 package typings.awsSdk.worklinkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebsiteCaSummary extends js.Object {
+trait WebsiteCaSummary extends StObject {
   
   /**
     * The time when the CA was added.
@@ -31,36 +32,24 @@ object WebsiteCaSummary {
   }
   
   @scala.inline
-  implicit class WebsiteCaSummaryOps[Self <: WebsiteCaSummary] (val x: Self) extends AnyVal {
+  implicit class WebsiteCaSummaryMutableBuilder[Self <: WebsiteCaSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedTime(value: DateTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: DisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTime(value: DateTime): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
     @scala.inline
-    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    def setWebsiteCaId(value: Id): Self = StObject.set(x, "WebsiteCaId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: DisplayName): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
-    
-    @scala.inline
-    def setWebsiteCaId(value: Id): Self = this.set("WebsiteCaId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsiteCaId: Self = this.set("WebsiteCaId", js.undefined)
+    def setWebsiteCaIdUndefined: Self = StObject.set(x, "WebsiteCaId", js.undefined)
   }
 }

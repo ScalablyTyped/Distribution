@@ -1,6 +1,7 @@
 package typings.ractive.mod
 
 import typings.ractive.ractiveBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,57 +37,45 @@ object InitOpts {
   }
   
   @scala.inline
-  implicit class InitOptsOps[Self <: InitOpts[_], T /* <: Ractive[T] */] (val x: Self with InitOpts[T]) extends AnyVal {
+  implicit class InitOptsMutableBuilder[Self <: InitOpts[_], T /* <: Ractive[T] */] (val x: Self with InitOpts[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppend(value: `true`): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: Data | DataFn[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppend(value: `true`): Self = this.set("append", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteAppend: Self = this.set("append", js.undefined)
+    def setEl(value: Target): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: Data | DataFn[T]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setElUndefined: Self = StObject.set(x, "el", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setEnhance(value: `true`): Self = StObject.set(x, "enhance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEl(value: Target): Self = this.set("el", value.asInstanceOf[js.Any])
+    def setEnhanceUndefined: Self = StObject.set(x, "enhance", js.undefined)
     
     @scala.inline
-    def deleteEl: Self = this.set("el", js.undefined)
+    def setTarget(value: Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnhance(value: `true`): Self = this.set("enhance", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deleteEnhance: Self = this.set("enhance", js.undefined)
+    def setUse(value: js.Array[PluginInstance]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: Target): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
     
     @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
-    
-    @scala.inline
-    def setUseVarargs(value: PluginInstance*): Self = this.set("use", js.Array(value :_*))
-    
-    @scala.inline
-    def setUse(value: js.Array[PluginInstance]): Self = this.set("use", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUse: Self = this.set("use", js.undefined)
+    def setUseVarargs(value: PluginInstance*): Self = StObject.set(x, "use", js.Array(value :_*))
   }
 }

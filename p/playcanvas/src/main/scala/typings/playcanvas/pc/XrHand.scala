@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param inputSource - Input Source that hand is related to
   */
 @js.native
-trait XrHand extends js.Object {
+trait XrHand extends StObject {
   
   /**
     * List of fingers of a hand
@@ -63,48 +64,36 @@ object XrHand {
   }
   
   @scala.inline
-  implicit class XrHandOps[Self <: XrHand] (val x: Self) extends AnyVal {
+  implicit class XrHandMutableBuilder[Self <: XrHand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFingers(value: js.Array[XrFinger]): Self = StObject.set(x, "fingers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFingersVarargs(value: XrFinger*): Self = StObject.set(x, "fingers", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetJointById(value: Double => XrJoint | Null): Self = StObject.set(x, "getJointById", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFingersVarargs(value: XrFinger*): Self = this.set("fingers", js.Array(value :_*))
+    def setJoints(value: js.Array[XrJoint]): Self = StObject.set(x, "joints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFingers(value: js.Array[XrFinger]): Self = this.set("fingers", value.asInstanceOf[js.Any])
+    def setJointsVarargs(value: XrJoint*): Self = StObject.set(x, "joints", js.Array(value :_*))
     
     @scala.inline
-    def setGetJointById(value: Double => XrJoint | Null): Self = this.set("getJointById", js.Any.fromFunction1(value))
+    def setTips(value: js.Array[XrJoint]): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJointsVarargs(value: XrJoint*): Self = this.set("joints", js.Array(value :_*))
+    def setTipsVarargs(value: XrJoint*): Self = StObject.set(x, "tips", js.Array(value :_*))
     
     @scala.inline
-    def setJoints(value: js.Array[XrJoint]): Self = this.set("joints", value.asInstanceOf[js.Any])
+    def setTracking(value: Boolean): Self = StObject.set(x, "tracking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTipsVarargs(value: XrJoint*): Self = this.set("tips", js.Array(value :_*))
+    def setWrist(value: XrJoint): Self = StObject.set(x, "wrist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTips(value: js.Array[XrJoint]): Self = this.set("tips", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTracking(value: Boolean): Self = this.set("tracking", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrist(value: XrJoint): Self = this.set("wrist", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWristNull: Self = this.set("wrist", null)
+    def setWristNull: Self = StObject.set(x, "wrist", null)
   }
 }

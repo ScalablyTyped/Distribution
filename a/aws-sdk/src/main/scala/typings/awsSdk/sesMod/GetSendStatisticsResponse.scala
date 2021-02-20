@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSendStatisticsResponse extends js.Object {
+trait GetSendStatisticsResponse extends StObject {
   
   /**
     * A list of data points, each of which represents 15 minutes of activity.
@@ -21,27 +22,15 @@ object GetSendStatisticsResponse {
   }
   
   @scala.inline
-  implicit class GetSendStatisticsResponseOps[Self <: GetSendStatisticsResponse] (val x: Self) extends AnyVal {
+  implicit class GetSendStatisticsResponseMutableBuilder[Self <: GetSendStatisticsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSendDataPoints(value: SendDataPointList): Self = StObject.set(x, "SendDataPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSendDataPointsUndefined: Self = StObject.set(x, "SendDataPoints", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSendDataPointsVarargs(value: SendDataPoint*): Self = this.set("SendDataPoints", js.Array(value :_*))
-    
-    @scala.inline
-    def setSendDataPoints(value: SendDataPointList): Self = this.set("SendDataPoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSendDataPoints: Self = this.set("SendDataPoints", js.undefined)
+    def setSendDataPointsVarargs(value: SendDataPoint*): Self = StObject.set(x, "SendDataPoints", js.Array(value :_*))
   }
 }

@@ -2,12 +2,13 @@ package typings.atom.mod
 
 import typings.node.fsMod.ReadStream
 import typings.node.fsMod.WriteStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextBufferFileBackend extends js.Object {
+trait TextBufferFileBackend extends StObject {
   
   /**
     *  A {Function} that returns a `Readable` stream
@@ -62,48 +63,36 @@ object TextBufferFileBackend {
   }
   
   @scala.inline
-  implicit class TextBufferFileBackendOps[Self <: TextBufferFileBackend] (val x: Self) extends AnyVal {
+  implicit class TextBufferFileBackendMutableBuilder[Self <: TextBufferFileBackend] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateReadStream(value: () => ReadStream): Self = StObject.set(x, "createReadStream", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateWriteStream(value: () => WriteStream): Self = StObject.set(x, "createWriteStream", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExistsSync(value: () => Boolean): Self = StObject.set(x, "existsSync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateReadStream(value: () => ReadStream): Self = this.set("createReadStream", js.Any.fromFunction0(value))
+    def setGetPath(value: () => String): Self = StObject.set(x, "getPath", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateWriteStream(value: () => WriteStream): Self = this.set("createWriteStream", js.Any.fromFunction0(value))
+    def setOnDidChange(value: /* callback */ js.Function0[Unit] => Disposable): Self = StObject.set(x, "onDidChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExistsSync(value: () => Boolean): Self = this.set("existsSync", js.Any.fromFunction0(value))
+    def setOnDidChangeUndefined: Self = StObject.set(x, "onDidChange", js.undefined)
     
     @scala.inline
-    def setGetPath(value: () => String): Self = this.set("getPath", js.Any.fromFunction0(value))
+    def setOnDidDelete(value: /* callback */ js.Function0[Unit] => Disposable): Self = StObject.set(x, "onDidDelete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDidChange(value: /* callback */ js.Function0[Unit] => Disposable): Self = this.set("onDidChange", js.Any.fromFunction1(value))
+    def setOnDidDeleteUndefined: Self = StObject.set(x, "onDidDelete", js.undefined)
     
     @scala.inline
-    def deleteOnDidChange: Self = this.set("onDidChange", js.undefined)
+    def setOnDidRename(value: /* callback */ js.Function0[Unit] => Disposable): Self = StObject.set(x, "onDidRename", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDidDelete(value: /* callback */ js.Function0[Unit] => Disposable): Self = this.set("onDidDelete", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnDidDelete: Self = this.set("onDidDelete", js.undefined)
-    
-    @scala.inline
-    def setOnDidRename(value: /* callback */ js.Function0[Unit] => Disposable): Self = this.set("onDidRename", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnDidRename: Self = this.set("onDidRename", js.undefined)
+    def setOnDidRenameUndefined: Self = StObject.set(x, "onDidRename", js.undefined)
   }
 }

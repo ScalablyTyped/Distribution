@@ -36,6 +36,7 @@ import typings.mendixmodelsdk.pagesMod.pages.ConditionalSettings
 import typings.mendixmodelsdk.pagesMod.pages.WidgetValidation
 import typings.mendixmodelsdk.restMod.rest.ConsumedODataService
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,16 +71,20 @@ class UnaryExpression protected () extends Expression {
   def operator: UnaryOperator = js.native
   def operator_=(newValue: UnaryOperator): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression")
-@js.native
-object UnaryExpression extends js.Object {
+object UnaryExpression {
+  
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new UnaryExpression instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.create")
+  @js.native
   def create(model: IModel): UnaryExpression = js.native
   
   /**
@@ -90,6 +95,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInAppServiceCallParameterMappingUnderArgumentModel")
+  @js.native
   def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): UnaryExpression = js.native
   
   /**
@@ -100,6 +108,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.21.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInBasicCodeActionParameterValueUnderArgumentModel")
+  @js.native
   def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): UnaryExpression = js.native
   
   /**
@@ -110,6 +121,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 to 7.20.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInBasicJavaActionParameterValueUnderArgumentModel")
+  @js.native
   def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): UnaryExpression = js.native
   
   /**
@@ -120,6 +134,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInBinaryExpressionUnderLeft")
+  @js.native
   def createInBinaryExpressionUnderLeft(container: BinaryExpression): UnaryExpression = js.native
   
   /**
@@ -130,6 +147,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInBinaryExpressionUnderRight")
+  @js.native
   def createInBinaryExpressionUnderRight(container: BinaryExpression): UnaryExpression = js.native
   
   /**
@@ -140,6 +160,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInBinaryRequestHandlingUnderExpressionModel")
+  @js.native
   def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): UnaryExpression = js.native
   
   /**
@@ -150,6 +173,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInChangeListActionUnderValueModel")
+  @js.native
   def createInChangeListActionUnderValueModel(container: ChangeListAction): UnaryExpression = js.native
   
   /**
@@ -160,6 +186,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInChangeVariableActionUnderValueModel")
+  @js.native
   def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): UnaryExpression = js.native
   
   /**
@@ -170,6 +199,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInConditionalSettingsUnderExpressionModel")
+  @js.native
   def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): UnaryExpression = js.native
   
   /**
@@ -180,6 +212,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.5.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInConsumedODataServiceUnderTimeoutModel")
+  @js.native
   def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): UnaryExpression = js.native
   
   /**
@@ -190,6 +225,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInCreateVariableActionUnderInitialValueModel")
+  @js.native
   def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): UnaryExpression = js.native
   
   /**
@@ -200,6 +238,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInCustomRangeUnderLimitExpressionModel")
+  @js.native
   def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): UnaryExpression = js.native
   
   /**
@@ -210,6 +251,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInCustomRangeUnderOffsetExpressionModel")
+  @js.native
   def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): UnaryExpression = js.native
   
   /**
@@ -220,6 +264,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInDocumentTemplateParameterMappingUnderArgumentModel")
+  @js.native
   def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): UnaryExpression = js.native
   
   /**
@@ -230,6 +277,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInEndEventUnderReturnValueModel")
+  @js.native
   def createInEndEventUnderReturnValueModel(container: EndEvent): UnaryExpression = js.native
   
   /**
@@ -240,6 +290,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInExpressionSplitConditionUnderExpressionModel")
+  @js.native
   def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): UnaryExpression = js.native
   
   /**
@@ -250,6 +303,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInFormDataPartUnderValueModel")
+  @js.native
   def createInFormDataPartUnderValueModel(container: FormDataPart): UnaryExpression = js.native
   
   /**
@@ -260,6 +316,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInFunctionCallExpressionUnderArguments")
+  @js.native
   def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): UnaryExpression = js.native
   
   /**
@@ -270,6 +329,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInGenerateDocumentActionUnderMarginBottomInInchModel")
+  @js.native
   def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): UnaryExpression = js.native
   
   /**
@@ -280,6 +342,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInGenerateDocumentActionUnderMarginLeftInInchModel")
+  @js.native
   def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): UnaryExpression = js.native
   
   /**
@@ -290,6 +355,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInGenerateDocumentActionUnderMarginRightInInchModel")
+  @js.native
   def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): UnaryExpression = js.native
   
   /**
@@ -300,6 +368,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInGenerateDocumentActionUnderMarginTopInInchModel")
+  @js.native
   def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): UnaryExpression = js.native
   
   /**
@@ -310,6 +381,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInHttpConfigurationUnderCustomLocationModel")
+  @js.native
   def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): UnaryExpression = js.native
   
   /**
@@ -320,6 +394,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInHttpConfigurationUnderPassword")
+  @js.native
   def createInHttpConfigurationUnderPassword(container: HttpConfiguration): UnaryExpression = js.native
   
   /**
@@ -330,6 +407,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInHttpConfigurationUnderUsername")
+  @js.native
   def createInHttpConfigurationUnderUsername(container: HttpConfiguration): UnaryExpression = js.native
   
   /**
@@ -340,6 +420,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInHttpHeaderEntryUnderValueModel")
+  @js.native
   def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): UnaryExpression = js.native
   
   /**
@@ -350,6 +433,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInIfExpressionUnderCondition")
+  @js.native
   def createInIfExpressionUnderCondition(container: IfExpression): UnaryExpression = js.native
   
   /**
@@ -360,6 +446,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInIfExpressionUnderIfFalse")
+  @js.native
   def createInIfExpressionUnderIfFalse(container: IfExpression): UnaryExpression = js.native
   
   /**
@@ -370,6 +459,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInIfExpressionUnderIfTrue")
+  @js.native
   def createInIfExpressionUnderIfTrue(container: IfExpression): UnaryExpression = js.native
   
   /**
@@ -380,6 +472,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInInspectAttributeUnderExpressionModel")
+  @js.native
   def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): UnaryExpression = js.native
   
   /**
@@ -390,6 +485,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInLogMessageActionUnderNodeModel")
+  @js.native
   def createInLogMessageActionUnderNodeModel(container: LogMessageAction): UnaryExpression = js.native
   
   /**
@@ -400,6 +498,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInMemberChangeUnderValueModel")
+  @js.native
   def createInMemberChangeUnderValueModel(container: MemberChange): UnaryExpression = js.native
   
   /**
@@ -410,6 +511,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInMicroflowCallParameterMappingUnderArgumentModel")
+  @js.native
   def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): UnaryExpression = js.native
   
   /**
@@ -420,6 +524,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInNanoflowCallParameterMappingUnderArgumentModel")
+  @js.native
   def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): UnaryExpression = js.native
   
   /**
@@ -430,6 +537,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInParenthesisExpressionUnderExpression")
+  @js.native
   def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): UnaryExpression = js.native
   
   /**
@@ -440,6 +550,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInProxyConfigurationUnderHostExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): UnaryExpression = js.native
   
   /**
@@ -450,6 +563,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInProxyConfigurationUnderPasswordExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): UnaryExpression = js.native
   
   /**
@@ -460,6 +576,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInProxyConfigurationUnderPortExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): UnaryExpression = js.native
   
   /**
@@ -470,6 +589,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInProxyConfigurationUnderUseConfigurationExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): UnaryExpression = js.native
   
   /**
@@ -480,6 +602,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInProxyConfigurationUnderUsernameExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): UnaryExpression = js.native
   
   /**
@@ -490,6 +615,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInRestCallActionUnderTimeOutModel")
+  @js.native
   def createInRestCallActionUnderTimeOutModel(container: RestCallAction): UnaryExpression = js.native
   
   /**
@@ -500,6 +628,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInRuleCallParameterMappingUnderArgumentModel")
+  @js.native
   def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): UnaryExpression = js.native
   
   /**
@@ -510,6 +641,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInTemplateArgumentUnderExpressionModel")
+  @js.native
   def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): UnaryExpression = js.native
   
   /**
@@ -520,6 +654,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInUnaryExpressionUnderExpression")
+  @js.native
   def createInUnaryExpressionUnderExpression(container: UnaryExpression): UnaryExpression = js.native
   
   /**
@@ -530,6 +667,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInWebServiceCallActionUnderTimeOutModel")
+  @js.native
   def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): UnaryExpression = js.native
   
   /**
@@ -540,6 +680,9 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInWebServiceOperationParameterMappingUnderArgumentModel")
+  @js.native
   def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): UnaryExpression = js.native
   
   /**
@@ -550,9 +693,22 @@ object UnaryExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.createInWidgetValidationUnderExpressionModel")
+  @js.native
   def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): UnaryExpression = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.UnaryExpression.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelligence
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudVideointelligenceV1p1beta1AnnotateVideoResponse extends js.Object {
+trait GoogleCloudVideointelligenceV1p1beta1AnnotateVideoResponse extends StObject {
   
   /** Annotation results for all videos specified in `AnnotateVideoRequest`. */
   var annotationResults: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p1beta1VideoAnnotationResults]] = js.native
@@ -19,27 +20,15 @@ object GoogleCloudVideointelligenceV1p1beta1AnnotateVideoResponse {
   }
   
   @scala.inline
-  implicit class GoogleCloudVideointelligenceV1p1beta1AnnotateVideoResponseOps[Self <: GoogleCloudVideointelligenceV1p1beta1AnnotateVideoResponse] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudVideointelligenceV1p1beta1AnnotateVideoResponseMutableBuilder[Self <: GoogleCloudVideointelligenceV1p1beta1AnnotateVideoResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotationResults(value: js.Array[GoogleCloudVideointelligenceV1p1beta1VideoAnnotationResults]): Self = StObject.set(x, "annotationResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationResultsUndefined: Self = StObject.set(x, "annotationResults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnnotationResultsVarargs(value: GoogleCloudVideointelligenceV1p1beta1VideoAnnotationResults*): Self = this.set("annotationResults", js.Array(value :_*))
-    
-    @scala.inline
-    def setAnnotationResults(value: js.Array[GoogleCloudVideointelligenceV1p1beta1VideoAnnotationResults]): Self = this.set("annotationResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnnotationResults: Self = this.set("annotationResults", js.undefined)
+    def setAnnotationResultsVarargs(value: GoogleCloudVideointelligenceV1p1beta1VideoAnnotationResults*): Self = StObject.set(x, "annotationResults", js.Array(value :_*))
   }
 }

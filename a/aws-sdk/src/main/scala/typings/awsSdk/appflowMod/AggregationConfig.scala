@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AggregationConfig extends js.Object {
+trait AggregationConfig extends StObject {
   
   /**
     *  Specifies whether Amazon AppFlow aggregates the flow records into a single file, or leave them unaggregated. 
@@ -21,24 +22,12 @@ object AggregationConfig {
   }
   
   @scala.inline
-  implicit class AggregationConfigOps[Self <: AggregationConfig] (val x: Self) extends AnyVal {
+  implicit class AggregationConfigMutableBuilder[Self <: AggregationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregationType(value: AggregationType): Self = StObject.set(x, "aggregationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAggregationType(value: AggregationType): Self = this.set("aggregationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAggregationType: Self = this.set("aggregationType", js.undefined)
+    def setAggregationTypeUndefined: Self = StObject.set(x, "aggregationType", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.electron.Electron
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CrashReporterStartOptions extends js.Object {
+trait CrashReporterStartOptions extends StObject {
   
   /**
     * Deprecated alias for `{ globalExtra: { _companyName: ... } }`.
@@ -79,69 +80,57 @@ object CrashReporterStartOptions {
   }
   
   @scala.inline
-  implicit class CrashReporterStartOptionsOps[Self <: CrashReporterStartOptions] (val x: Self) extends AnyVal {
+  implicit class CrashReporterStartOptionsMutableBuilder[Self <: CrashReporterStartOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompanyNameUndefined: Self = StObject.set(x, "companyName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmitURL(value: String): Self = this.set("submitURL", value.asInstanceOf[js.Any])
+    def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
     
     @scala.inline
-    def setCompanyName(value: String): Self = this.set("companyName", value.asInstanceOf[js.Any])
+    def setExtra(value: Record[String, String]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompanyName: Self = this.set("companyName", js.undefined)
+    def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
     @scala.inline
-    def setCompress(value: Boolean): Self = this.set("compress", value.asInstanceOf[js.Any])
+    def setGlobalExtra(value: Record[String, String]): Self = StObject.set(x, "globalExtra", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompress: Self = this.set("compress", js.undefined)
+    def setGlobalExtraUndefined: Self = StObject.set(x, "globalExtra", js.undefined)
     
     @scala.inline
-    def setExtra(value: Record[String, String]): Self = this.set("extra", value.asInstanceOf[js.Any])
+    def setIgnoreSystemCrashHandler(value: Boolean): Self = StObject.set(x, "ignoreSystemCrashHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtra: Self = this.set("extra", js.undefined)
+    def setIgnoreSystemCrashHandlerUndefined: Self = StObject.set(x, "ignoreSystemCrashHandler", js.undefined)
     
     @scala.inline
-    def setGlobalExtra(value: Record[String, String]): Self = this.set("globalExtra", value.asInstanceOf[js.Any])
+    def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGlobalExtra: Self = this.set("globalExtra", js.undefined)
+    def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
     
     @scala.inline
-    def setIgnoreSystemCrashHandler(value: Boolean): Self = this.set("ignoreSystemCrashHandler", value.asInstanceOf[js.Any])
+    def setRateLimit(value: Boolean): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIgnoreSystemCrashHandler: Self = this.set("ignoreSystemCrashHandler", js.undefined)
+    def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
     
     @scala.inline
-    def setProductName(value: String): Self = this.set("productName", value.asInstanceOf[js.Any])
+    def setSubmitURL(value: String): Self = StObject.set(x, "submitURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProductName: Self = this.set("productName", js.undefined)
+    def setUploadToServer(value: Boolean): Self = StObject.set(x, "uploadToServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRateLimit(value: Boolean): Self = this.set("rateLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRateLimit: Self = this.set("rateLimit", js.undefined)
-    
-    @scala.inline
-    def setUploadToServer(value: Boolean): Self = this.set("uploadToServer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadToServer: Self = this.set("uploadToServer", js.undefined)
+    def setUploadToServerUndefined: Self = StObject.set(x, "uploadToServer", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.babylonjs.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GamepadIndices extends js.Object {
+trait GamepadIndices extends StObject {
   
   /**
     * The indices of this component in the gamepad object
@@ -49,36 +50,24 @@ object GamepadIndices {
   }
   
   @scala.inline
-  implicit class GamepadIndicesOps[Self <: GamepadIndices] (val x: Self) extends AnyVal {
+  implicit class GamepadIndicesMutableBuilder[Self <: GamepadIndices] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGamepadIndices(value: Button): Self = StObject.set(x, "gamepadIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRootNodeName(value: String): Self = StObject.set(x, "rootNodeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTouchPointNodeName(value: String): Self = StObject.set(x, "touchPointNodeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGamepadIndices(value: Button): Self = this.set("gamepadIndices", value.asInstanceOf[js.Any])
+    def setTouchPointNodeNameUndefined: Self = StObject.set(x, "touchPointNodeName", js.undefined)
     
     @scala.inline
-    def setRootNodeName(value: String): Self = this.set("rootNodeName", value.asInstanceOf[js.Any])
+    def setType(value: MotionControllerComponentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: MotionControllerComponentType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisualResponses(value: StringDictionary[ComponentProperty]): Self = this.set("visualResponses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchPointNodeName(value: String): Self = this.set("touchPointNodeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTouchPointNodeName: Self = this.set("touchPointNodeName", js.undefined)
+    def setVisualResponses(value: StringDictionary[ComponentProperty]): Self = StObject.set(x, "visualResponses", value.asInstanceOf[js.Any])
   }
 }

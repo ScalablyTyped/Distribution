@@ -1,11 +1,12 @@
 package typings.akamaiEdgeworkers.EW
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CacheKey extends js.Object {
+trait CacheKey extends StObject {
   
   /**
     * Specifies that the entire query string should be excluded from the cache key. By
@@ -70,36 +71,24 @@ object CacheKey {
   }
   
   @scala.inline
-  implicit class CacheKeyOps[Self <: CacheKey] (val x: Self) extends AnyVal {
+  implicit class CacheKeyMutableBuilder[Self <: CacheKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludeQueryString(value: () => Unit): Self = StObject.set(x, "excludeQueryString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeCookie(value: String => Unit): Self = StObject.set(x, "includeCookie", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeHeader(value: String => Unit): Self = StObject.set(x, "includeHeader", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExcludeQueryString(value: () => Unit): Self = this.set("excludeQueryString", js.Any.fromFunction0(value))
+    def setIncludeQueryArgument(value: String => Unit): Self = StObject.set(x, "includeQueryArgument", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIncludeCookie(value: String => Unit): Self = this.set("includeCookie", js.Any.fromFunction1(value))
+    def setIncludeQueryString(value: () => Unit): Self = StObject.set(x, "includeQueryString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIncludeHeader(value: String => Unit): Self = this.set("includeHeader", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIncludeQueryArgument(value: String => Unit): Self = this.set("includeQueryArgument", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIncludeQueryString(value: () => Unit): Self = this.set("includeQueryString", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIncludeVariable(value: String => Unit): Self = this.set("includeVariable", js.Any.fromFunction1(value))
+    def setIncludeVariable(value: String => Unit): Self = StObject.set(x, "includeVariable", js.Any.fromFunction1(value))
   }
 }

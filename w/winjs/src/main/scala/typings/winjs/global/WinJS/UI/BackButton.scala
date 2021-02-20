@@ -1,6 +1,7 @@
 package typings.winjs.global.WinJS.UI
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,13 +24,19 @@ class BackButton ()
   def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
-/* static members */
-@JSGlobal("WinJS.UI.BackButton")
-@js.native
-object BackButton extends js.Object {
+object BackButton {
+  
+  @JSGlobal("WinJS.UI.BackButton")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
-  var supportedForProcessing: Boolean = js.native
+  /* static member */
+  @JSGlobal("WinJS.UI.BackButton.supportedForProcessing")
+  @js.native
+  def supportedForProcessing: Boolean = js.native
+  @scala.inline
+  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }

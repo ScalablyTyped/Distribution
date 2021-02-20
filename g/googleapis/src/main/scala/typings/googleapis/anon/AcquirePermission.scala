@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AcquirePermission extends js.Object {
+trait AcquirePermission extends StObject {
   
   var acquirePermission: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object AcquirePermission {
   }
   
   @scala.inline
-  implicit class AcquirePermissionOps[Self <: AcquirePermission] (val x: Self) extends AnyVal {
+  implicit class AcquirePermissionMutableBuilder[Self <: AcquirePermission] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcquirePermission(value: String): Self = StObject.set(x, "acquirePermission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcquirePermissionUndefined: Self = StObject.set(x, "acquirePermission", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgeGroup(value: String): Self = StObject.set(x, "ageGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcquirePermission(value: String): Self = this.set("acquirePermission", value.asInstanceOf[js.Any])
+    def setAgeGroupUndefined: Self = StObject.set(x, "ageGroup", js.undefined)
     
     @scala.inline
-    def deleteAcquirePermission: Self = this.set("acquirePermission", js.undefined)
+    def setAllowedMaturityRating(value: String): Self = StObject.set(x, "allowedMaturityRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgeGroup(value: String): Self = this.set("ageGroup", value.asInstanceOf[js.Any])
+    def setAllowedMaturityRatingUndefined: Self = StObject.set(x, "allowedMaturityRating", js.undefined)
     
     @scala.inline
-    def deleteAgeGroup: Self = this.set("ageGroup", js.undefined)
+    def setIsInFamily(value: Boolean): Self = StObject.set(x, "isInFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedMaturityRating(value: String): Self = this.set("allowedMaturityRating", value.asInstanceOf[js.Any])
+    def setIsInFamilyUndefined: Self = StObject.set(x, "isInFamily", js.undefined)
     
     @scala.inline
-    def deleteAllowedMaturityRating: Self = this.set("allowedMaturityRating", js.undefined)
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInFamily(value: Boolean): Self = this.set("isInFamily", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsInFamily: Self = this.set("isInFamily", js.undefined)
-    
-    @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

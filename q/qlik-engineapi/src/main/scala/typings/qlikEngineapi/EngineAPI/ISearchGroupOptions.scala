@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SearchGroupOptions...
   */
 @js.native
-trait ISearchGroupOptions extends js.Object {
+trait ISearchGroupOptions extends StObject {
   
   /**
     * Maximum number of items per group (in qItems[ ]).
@@ -41,27 +42,15 @@ object ISearchGroupOptions {
   }
   
   @scala.inline
-  implicit class ISearchGroupOptionsOps[Self <: ISearchGroupOptions] (val x: Self) extends AnyVal {
+  implicit class ISearchGroupOptionsMutableBuilder[Self <: ISearchGroupOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQCount(value: Double): Self = StObject.set(x, "qCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQGroupType(value: js.Any): Self = StObject.set(x, "qGroupType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQCount(value: Double): Self = this.set("qCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQGroupType(value: js.Any): Self = this.set("qGroupType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQOffset(value: Double): Self = this.set("qOffset", value.asInstanceOf[js.Any])
+    def setQOffset(value: Double): Self = StObject.set(x, "qOffset", value.asInstanceOf[js.Any])
   }
 }

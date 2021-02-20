@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A range in the Range Filter or Date Filter dashboard item.
   */
 @js.native
-trait ASPxClientDashboardRangeFilterSelection extends js.Object {
+trait ASPxClientDashboardRangeFilterSelection extends StObject {
   
   /**
     * Gets or sets a maximum value in the range of the Range Filter dashboard item.
@@ -29,24 +30,12 @@ object ASPxClientDashboardRangeFilterSelection {
   }
   
   @scala.inline
-  implicit class ASPxClientDashboardRangeFilterSelectionOps[Self <: ASPxClientDashboardRangeFilterSelection] (val x: Self) extends AnyVal {
+  implicit class ASPxClientDashboardRangeFilterSelectionMutableBuilder[Self <: ASPxClientDashboardRangeFilterSelection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximum(value: js.Any): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaximum(value: js.Any): Self = this.set("Maximum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinimum(value: js.Any): Self = this.set("Minimum", value.asInstanceOf[js.Any])
+    def setMinimum(value: js.Any): Self = StObject.set(x, "Minimum", value.asInstanceOf[js.Any])
   }
 }

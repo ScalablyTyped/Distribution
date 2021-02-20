@@ -1,11 +1,12 @@
 package typings.babylonjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoPlay extends js.Object {
+trait AutoPlay extends StObject {
   
   var autoPlay: js.UndefOr[Boolean] = js.native
   
@@ -38,84 +39,72 @@ object AutoPlay {
   }
   
   @scala.inline
-  implicit class AutoPlayOps[Self <: AutoPlay] (val x: Self) extends AnyVal {
+  implicit class AutoPlayMutableBuilder[Self <: AutoPlay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClickToPlay(value: Boolean): Self = StObject.set(x, "clickToPlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPlay(value: Boolean): Self = this.set("autoPlay", value.asInstanceOf[js.Any])
+    def setClickToPlayUndefined: Self = StObject.set(x, "clickToPlay", js.undefined)
     
     @scala.inline
-    def deleteAutoPlay: Self = this.set("autoPlay", js.undefined)
+    def setCrossEyeMode(value: Boolean): Self = StObject.set(x, "crossEyeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickToPlay(value: Boolean): Self = this.set("clickToPlay", value.asInstanceOf[js.Any])
+    def setCrossEyeModeUndefined: Self = StObject.set(x, "crossEyeMode", js.undefined)
     
     @scala.inline
-    def deleteClickToPlay: Self = this.set("clickToPlay", js.undefined)
+    def setFaceForward(value: Boolean): Self = StObject.set(x, "faceForward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossEyeMode(value: Boolean): Self = this.set("crossEyeMode", value.asInstanceOf[js.Any])
+    def setFaceForwardUndefined: Self = StObject.set(x, "faceForward", js.undefined)
     
     @scala.inline
-    def deleteCrossEyeMode: Self = this.set("crossEyeMode", js.undefined)
+    def setGenerateMipMaps(value: Boolean): Self = StObject.set(x, "generateMipMaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaceForward(value: Boolean): Self = this.set("faceForward", value.asInstanceOf[js.Any])
+    def setGenerateMipMapsUndefined: Self = StObject.set(x, "generateMipMaps", js.undefined)
     
     @scala.inline
-    def deleteFaceForward: Self = this.set("faceForward", js.undefined)
+    def setHalfDomeMode(value: Boolean): Self = StObject.set(x, "halfDomeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerateMipMaps(value: Boolean): Self = this.set("generateMipMaps", value.asInstanceOf[js.Any])
+    def setHalfDomeModeUndefined: Self = StObject.set(x, "halfDomeMode", js.undefined)
     
     @scala.inline
-    def deleteGenerateMipMaps: Self = this.set("generateMipMaps", js.undefined)
+    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHalfDomeMode(value: Boolean): Self = this.set("halfDomeMode", value.asInstanceOf[js.Any])
+    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
     @scala.inline
-    def deleteHalfDomeMode: Self = this.set("halfDomeMode", js.undefined)
+    def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    def setPosterUndefined: Self = StObject.set(x, "poster", js.undefined)
     
     @scala.inline
-    def deleteLoop: Self = this.set("loop", js.undefined)
+    def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoster(value: String): Self = this.set("poster", value.asInstanceOf[js.Any])
+    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
     
     @scala.inline
-    def deletePoster: Self = this.set("poster", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolution(value: Double): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteResolution: Self = this.set("resolution", js.undefined)
+    def setUseDirectMapping(value: Boolean): Self = StObject.set(x, "useDirectMapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setUseDirectMapping(value: Boolean): Self = this.set("useDirectMapping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseDirectMapping: Self = this.set("useDirectMapping", js.undefined)
+    def setUseDirectMappingUndefined: Self = StObject.set(x, "useDirectMapping", js.undefined)
   }
 }

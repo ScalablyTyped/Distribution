@@ -1,11 +1,12 @@
 package typings.opentypeJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Post extends js.Object {
+trait Post extends StObject {
   
   var glyphNameIndex: js.UndefOr[js.Array[Double]] = js.native
   
@@ -52,78 +53,66 @@ object Post {
   }
   
   @scala.inline
-  implicit class PostOps[Self <: Post] (val x: Self) extends AnyVal {
+  implicit class PostMutableBuilder[Self <: Post] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlyphNameIndex(value: js.Array[Double]): Self = StObject.set(x, "glyphNameIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlyphNameIndexUndefined: Self = StObject.set(x, "glyphNameIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlyphNameIndexVarargs(value: Double*): Self = StObject.set(x, "glyphNameIndex", js.Array(value :_*))
     
     @scala.inline
-    def setIsFixedPitch(value: Double): Self = this.set("isFixedPitch", value.asInstanceOf[js.Any])
+    def setIsFixedPitch(value: Double): Self = StObject.set(x, "isFixedPitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItalicAngle(value: Double): Self = this.set("italicAngle", value.asInstanceOf[js.Any])
+    def setItalicAngle(value: Double): Self = StObject.set(x, "italicAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxMemType1(value: Double): Self = this.set("maxMemType1", value.asInstanceOf[js.Any])
+    def setMaxMemType1(value: Double): Self = StObject.set(x, "maxMemType1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxMemType42(value: Double): Self = this.set("maxMemType42", value.asInstanceOf[js.Any])
+    def setMaxMemType42(value: Double): Self = StObject.set(x, "maxMemType42", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinMemType1(value: Double): Self = this.set("minMemType1", value.asInstanceOf[js.Any])
+    def setMinMemType1(value: Double): Self = StObject.set(x, "minMemType1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinMemType42(value: Double): Self = this.set("minMemType42", value.asInstanceOf[js.Any])
+    def setMinMemType42(value: Double): Self = StObject.set(x, "minMemType42", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnderlinePosition(value: Double): Self = this.set("underlinePosition", value.asInstanceOf[js.Any])
+    def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnderlineThickness(value: Double): Self = this.set("underlineThickness", value.asInstanceOf[js.Any])
+    def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
     @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
     
     @scala.inline
-    def setGlyphNameIndexVarargs(value: Double*): Self = this.set("glyphNameIndex", js.Array(value :_*))
+    def setNumberOfGlyphs(value: Double): Self = StObject.set(x, "numberOfGlyphs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyphNameIndex(value: js.Array[Double]): Self = this.set("glyphNameIndex", value.asInstanceOf[js.Any])
+    def setNumberOfGlyphsUndefined: Self = StObject.set(x, "numberOfGlyphs", js.undefined)
     
     @scala.inline
-    def deleteGlyphNameIndex: Self = this.set("glyphNameIndex", js.undefined)
+    def setOffset(value: js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamesVarargs(value: String*): Self = this.set("names", js.Array(value :_*))
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def setNames(value: js.Array[String]): Self = this.set("names", value.asInstanceOf[js.Any])
+    def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
     
     @scala.inline
-    def deleteNames: Self = this.set("names", js.undefined)
+    def setUnderlinePosition(value: Double): Self = StObject.set(x, "underlinePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfGlyphs(value: Double): Self = this.set("numberOfGlyphs", value.asInstanceOf[js.Any])
+    def setUnderlineThickness(value: Double): Self = StObject.set(x, "underlineThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumberOfGlyphs: Self = this.set("numberOfGlyphs", js.undefined)
-    
-    @scala.inline
-    def setOffsetVarargs(value: Double*): Self = this.set("offset", js.Array(value :_*))
-    
-    @scala.inline
-    def setOffset(value: js.Array[Double]): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

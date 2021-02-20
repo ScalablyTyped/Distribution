@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.workItemTrackingProcessInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WitContribution extends js.Object {
+trait WitContribution extends StObject {
   
   /**
     * The id for the contribution.
@@ -42,30 +43,18 @@ object WitContribution {
   }
   
   @scala.inline
-  implicit class WitContributionOps[Self <: WitContribution] (val x: Self) extends AnyVal {
+  implicit class WitContributionMutableBuilder[Self <: WitContribution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContributionId(value: String): Self = StObject.set(x, "contributionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputs(value: StringDictionary[js.Any]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContributionId(value: String): Self = this.set("contributionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInputs(value: StringDictionary[js.Any]): Self = this.set("inputs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowOnDeletedWorkItem(value: Boolean): Self = this.set("showOnDeletedWorkItem", value.asInstanceOf[js.Any])
+    def setShowOnDeletedWorkItem(value: Boolean): Self = StObject.set(x, "showOnDeletedWorkItem", value.asInstanceOf[js.Any])
   }
 }

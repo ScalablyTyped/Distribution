@@ -1,11 +1,12 @@
 package typings.activexInfopath.InfoPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InfoPathEditorObject extends js.Object {
+trait InfoPathEditorObject extends StObject {
   
   def CloseDocument(): Unit = js.native
   
@@ -61,60 +62,48 @@ object InfoPathEditorObject {
   }
   
   @scala.inline
-  implicit class InfoPathEditorObjectOps[Self <: InfoPathEditorObject] (val x: Self) extends AnyVal {
+  implicit class InfoPathEditorObjectMutableBuilder[Self <: InfoPathEditorObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseDocument(value: () => Unit): Self = StObject.set(x, "CloseDocument", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataConnectionBaseUrl(value: String): Self = StObject.set(x, "DataConnectionBaseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlushDocument(value: () => Unit): Self = StObject.set(x, "FlushDocument", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCloseDocument(value: () => Unit): Self = this.set("CloseDocument", js.Any.fromFunction0(value))
+    def setHost(value: js.Any): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataConnectionBaseUrl(value: String): Self = this.set("DataConnectionBaseUrl", value.asInstanceOf[js.Any])
+    def setHostName(value: String): Self = StObject.set(x, "HostName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlushDocument(value: () => Unit): Self = this.set("FlushDocument", js.Any.fromFunction0(value))
+    def setInfoPathDotInfoPathEditorObject_typekey(value: InfoPathEditorObject): Self = StObject.set(x, "InfoPath.InfoPathEditorObject_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: js.Any): Self = this.set("Host", value.asInstanceOf[js.Any])
+    def setLoad(value: String => Unit): Self = StObject.set(x, "Load", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHostName(value: String): Self = this.set("HostName", value.asInstanceOf[js.Any])
+    def setLoadFromStream(value: js.Any => Unit): Self = StObject.set(x, "LoadFromStream", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInfoPathDotInfoPathEditorObject_typekey(value: InfoPathEditorObject): Self = this.set("InfoPath.InfoPathEditorObject_typekey", value.asInstanceOf[js.Any])
+    def setNewFromSolution(value: String => Unit): Self = StObject.set(x, "NewFromSolution", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLoad(value: String => Unit): Self = this.set("Load", js.Any.fromFunction1(value))
+    def setNewFromSolutionWithData(value: (String, js.Any, Double) => Unit): Self = StObject.set(x, "NewFromSolutionWithData", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setLoadFromStream(value: js.Any => Unit): Self = this.set("LoadFromStream", js.Any.fromFunction1(value))
+    def setSetInitEventHandler(value: IInitEventHandler => Unit): Self = StObject.set(x, "SetInitEventHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNewFromSolution(value: String => Unit): Self = this.set("NewFromSolution", js.Any.fromFunction1(value))
+    def setSetNotifyHostEventHandler(value: INotifyHostEventHandler => Unit): Self = StObject.set(x, "SetNotifyHostEventHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNewFromSolutionWithData(value: (String, js.Any, Double) => Unit): Self = this.set("NewFromSolutionWithData", js.Any.fromFunction3(value))
+    def setSetSubmitToHostEventHandler(value: ISubmitToHostEventHandler => Unit): Self = StObject.set(x, "SetSubmitToHostEventHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetInitEventHandler(value: IInitEventHandler => Unit): Self = this.set("SetInitEventHandler", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetNotifyHostEventHandler(value: INotifyHostEventHandler => Unit): Self = this.set("SetNotifyHostEventHandler", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSubmitToHostEventHandler(value: ISubmitToHostEventHandler => Unit): Self = this.set("SetSubmitToHostEventHandler", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setXDocument(value: _XDocument): Self = this.set("XDocument", value.asInstanceOf[js.Any])
+    def setXDocument(value: _XDocument): Self = StObject.set(x, "XDocument", value.asInstanceOf[js.Any])
   }
 }

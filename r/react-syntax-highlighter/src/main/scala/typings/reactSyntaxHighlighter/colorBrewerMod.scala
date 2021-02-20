@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/cjs/styles/hljs/color-brewer", JSImport.Namespace)
-@js.native
-object colorBrewerMod extends js.Object {
+object colorBrewerMod {
   
+  @JSImport("react-syntax-highlighter/dist/cjs/styles/hljs/color-brewer", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

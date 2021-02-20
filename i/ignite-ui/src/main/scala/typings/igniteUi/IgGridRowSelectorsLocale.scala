@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,42 +46,30 @@ object IgGridRowSelectorsLocale {
   }
   
   @scala.inline
-  implicit class IgGridRowSelectorsLocaleOps[Self <: IgGridRowSelectorsLocale] (val x: Self) extends AnyVal {
+  implicit class IgGridRowSelectorsLocaleMutableBuilder[Self <: IgGridRowSelectorsLocale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeselectAllText(value: String): Self = StObject.set(x, "deselectAllText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeselectAllTextUndefined: Self = StObject.set(x, "deselectAllText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeselectedRecordsText(value: String): Self = StObject.set(x, "deselectedRecordsText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeselectAllText(value: String): Self = this.set("deselectAllText", value.asInstanceOf[js.Any])
+    def setDeselectedRecordsTextUndefined: Self = StObject.set(x, "deselectedRecordsText", js.undefined)
     
     @scala.inline
-    def deleteDeselectAllText: Self = this.set("deselectAllText", js.undefined)
+    def setSelectAllText(value: String): Self = StObject.set(x, "selectAllText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeselectedRecordsText(value: String): Self = this.set("deselectedRecordsText", value.asInstanceOf[js.Any])
+    def setSelectAllTextUndefined: Self = StObject.set(x, "selectAllText", js.undefined)
     
     @scala.inline
-    def deleteDeselectedRecordsText: Self = this.set("deselectedRecordsText", js.undefined)
+    def setSelectedRecordsText(value: String): Self = StObject.set(x, "selectedRecordsText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectAllText(value: String): Self = this.set("selectAllText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectAllText: Self = this.set("selectAllText", js.undefined)
-    
-    @scala.inline
-    def setSelectedRecordsText(value: String): Self = this.set("selectedRecordsText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedRecordsText: Self = this.set("selectedRecordsText", js.undefined)
+    def setSelectedRecordsTextUndefined: Self = StObject.set(x, "selectedRecordsText", js.undefined)
   }
 }

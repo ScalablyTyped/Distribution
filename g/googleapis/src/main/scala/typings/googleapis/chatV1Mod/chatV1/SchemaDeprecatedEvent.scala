@@ -1,5 +1,6 @@
 package typings.googleapis.chatV1Mod.chatV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Hangouts Chat events.
   */
 @js.native
-trait SchemaDeprecatedEvent extends js.Object {
+trait SchemaDeprecatedEvent extends StObject {
   
   /**
     * The form action data associated with an interactive card that was
@@ -75,72 +76,60 @@ object SchemaDeprecatedEvent {
   }
   
   @scala.inline
-  implicit class SchemaDeprecatedEventOps[Self <: SchemaDeprecatedEvent] (val x: Self) extends AnyVal {
+  implicit class SchemaDeprecatedEventMutableBuilder[Self <: SchemaDeprecatedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: SchemaFormAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigCompleteRedirectUrl(value: String): Self = StObject.set(x, "configCompleteRedirectUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: SchemaFormAction): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setConfigCompleteRedirectUrlUndefined: Self = StObject.set(x, "configCompleteRedirectUrl", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setEventTime(value: String): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigCompleteRedirectUrl(value: String): Self = this.set("configCompleteRedirectUrl", value.asInstanceOf[js.Any])
+    def setEventTimeUndefined: Self = StObject.set(x, "eventTime", js.undefined)
     
     @scala.inline
-    def deleteConfigCompleteRedirectUrl: Self = this.set("configCompleteRedirectUrl", js.undefined)
+    def setMessage(value: SchemaMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTime(value: String): Self = this.set("eventTime", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteEventTime: Self = this.set("eventTime", js.undefined)
+    def setSpace(value: SchemaSpace): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: SchemaMessage): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setThreadKey(value: String): Self = StObject.set(x, "threadKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpace(value: SchemaSpace): Self = this.set("space", value.asInstanceOf[js.Any])
+    def setThreadKeyUndefined: Self = StObject.set(x, "threadKey", js.undefined)
     
     @scala.inline
-    def deleteSpace: Self = this.set("space", js.undefined)
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreadKey(value: String): Self = this.set("threadKey", value.asInstanceOf[js.Any])
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     
     @scala.inline
-    def deleteThreadKey: Self = this.set("threadKey", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
+    def setUser(value: SchemaUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUser(value: SchemaUser): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

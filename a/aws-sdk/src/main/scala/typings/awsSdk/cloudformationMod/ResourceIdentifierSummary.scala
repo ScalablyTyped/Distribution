@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceIdentifierSummary extends js.Object {
+trait ResourceIdentifierSummary extends StObject {
   
   /**
     * The logical IDs of the target resources of the specified ResourceType, as defined in the import template.
@@ -31,42 +32,30 @@ object ResourceIdentifierSummary {
   }
   
   @scala.inline
-  implicit class ResourceIdentifierSummaryOps[Self <: ResourceIdentifierSummary] (val x: Self) extends AnyVal {
+  implicit class ResourceIdentifierSummaryMutableBuilder[Self <: ResourceIdentifierSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogicalResourceIds(value: LogicalResourceIds): Self = StObject.set(x, "LogicalResourceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogicalResourceIdsUndefined: Self = StObject.set(x, "LogicalResourceIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogicalResourceIdsVarargs(value: LogicalResourceId*): Self = StObject.set(x, "LogicalResourceIds", js.Array(value :_*))
     
     @scala.inline
-    def setLogicalResourceIdsVarargs(value: LogicalResourceId*): Self = this.set("LogicalResourceIds", js.Array(value :_*))
+    def setResourceIdentifiers(value: ResourceIdentifiers): Self = StObject.set(x, "ResourceIdentifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogicalResourceIds(value: LogicalResourceIds): Self = this.set("LogicalResourceIds", value.asInstanceOf[js.Any])
+    def setResourceIdentifiersUndefined: Self = StObject.set(x, "ResourceIdentifiers", js.undefined)
     
     @scala.inline
-    def deleteLogicalResourceIds: Self = this.set("LogicalResourceIds", js.undefined)
+    def setResourceIdentifiersVarargs(value: ResourceIdentifierPropertyKey*): Self = StObject.set(x, "ResourceIdentifiers", js.Array(value :_*))
     
     @scala.inline
-    def setResourceIdentifiersVarargs(value: ResourceIdentifierPropertyKey*): Self = this.set("ResourceIdentifiers", js.Array(value :_*))
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceIdentifiers(value: ResourceIdentifiers): Self = this.set("ResourceIdentifiers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceIdentifiers: Self = this.set("ResourceIdentifiers", js.undefined)
-    
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

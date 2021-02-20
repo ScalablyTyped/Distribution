@@ -6,20 +6,20 @@ import typings.ionic.definitionsMod.ProjectType
 import typings.ionic.libIntegrationsMod.BaseIntegration
 import typings.ionic.libIntegrationsMod.IntegationUnion
 import typings.ionic.libIntegrationsMod.IntegrationConfig
+import typings.ionic.libIntegrationsMod.IntegrationDeps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/lib/integrations/cordova", JSImport.Namespace)
-@js.native
-object integrationsCordovaMod extends js.Object {
+object integrationsCordovaMod {
   
-  val SUPPORTED_PROJECT_TYPES: js.Array[ProjectType] = js.native
-  
+  @JSImport("ionic/lib/integrations/cordova", "Integration")
   @js.native
-  class Integration ()
+  class Integration protected ()
     extends BaseIntegration[ProjectIntegration]
        with IntegationUnion {
+    def this(e: IntegrationDeps) = this()
     
     @JSName("archiveUrl")
     val archiveUrl_Integration: /* "https://d2ql0qc7j8u4b2.cloudfront.net/integration-cordova.tar.gz" */ String = js.native
@@ -46,4 +46,8 @@ object integrationsCordovaMod extends js.Object {
     
     def requireConfig(): js.Promise[CordovaConfig] = js.native
   }
+  
+  @JSImport("ionic/lib/integrations/cordova", "SUPPORTED_PROJECT_TYPES")
+  @js.native
+  val SUPPORTED_PROJECT_TYPES: js.Array[ProjectType] = js.native
 }

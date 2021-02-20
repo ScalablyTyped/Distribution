@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVision.gapi.client.vision
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImportProductSetsGcsSource extends js.Object {
+trait ImportProductSetsGcsSource extends StObject {
   
   /**
     * The Google Cloud Storage URI of the input csv file. The URI must start with `gs://`. The format of the input csv file should be one image per line. In each line, there are 8
@@ -34,24 +35,12 @@ object ImportProductSetsGcsSource {
   }
   
   @scala.inline
-  implicit class ImportProductSetsGcsSourceOps[Self <: ImportProductSetsGcsSource] (val x: Self) extends AnyVal {
+  implicit class ImportProductSetsGcsSourceMutableBuilder[Self <: ImportProductSetsGcsSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCsvFileUri(value: String): Self = StObject.set(x, "csvFileUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCsvFileUri(value: String): Self = this.set("csvFileUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCsvFileUri: Self = this.set("csvFileUri", js.undefined)
+    def setCsvFileUriUndefined: Self = StObject.set(x, "csvFileUri", js.undefined)
   }
 }

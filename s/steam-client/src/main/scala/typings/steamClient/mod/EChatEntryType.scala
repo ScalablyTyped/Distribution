@@ -1,93 +1,78 @@
 package typings.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EChatEntryType extends js.Object
+sealed trait EChatEntryType extends StObject
 @JSImport("steam-client", "EChatEntryType")
 @js.native
-object EChatEntryType extends js.Object {
+object EChatEntryType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EChatEntryType with Double] = js.native
   
   @js.native
   sealed trait ChatMsg extends EChatEntryType
-  /* 1 */ @js.native
-  object ChatMsg extends TopLevel[ChatMsg with Double]
+  /* 1 */ val ChatMsg: typings.steamClient.mod.EChatEntryType.ChatMsg with Double = js.native
   
   @js.native
   sealed trait Disconnected extends EChatEntryType
-  /* 10 */ @js.native
-  object Disconnected extends TopLevel[Disconnected with Double]
+  /* 10 */ val Disconnected: typings.steamClient.mod.EChatEntryType.Disconnected with Double = js.native
   
-   // removed "No longer supported by clients"
   @js.native
   sealed trait Emote extends EChatEntryType
-  /* 4 */ @js.native
-  object Emote extends TopLevel[Emote with Double]
+  /* 4 */ val Emote: typings.steamClient.mod.EChatEntryType.Emote with Double = js.native
   
   @js.native
   sealed trait Entered extends EChatEntryType
-  /* 7 */ @js.native
-  object Entered extends TopLevel[Entered with Double]
+  /* 7 */ val Entered: typings.steamClient.mod.EChatEntryType.Entered with Double = js.native
   
   @js.native
   sealed trait HistoricalChat extends EChatEntryType
-  /* 11 */ @js.native
-  object HistoricalChat extends TopLevel[HistoricalChat with Double]
+  /* 11 */ val HistoricalChat: typings.steamClient.mod.EChatEntryType.HistoricalChat with Double = js.native
   
   @js.native
   sealed trait Invalid extends EChatEntryType
-  /* 0 */ @js.native
-  object Invalid extends TopLevel[Invalid with Double]
+  /* 0 */ val Invalid: typings.steamClient.mod.EChatEntryType.Invalid with Double = js.native
   
   @js.native
   sealed trait InviteGame extends EChatEntryType
-  /* 3 */ @js.native
-  object InviteGame extends TopLevel[InviteGame with Double]
+  /* 3 */ val InviteGame: typings.steamClient.mod.EChatEntryType.InviteGame with Double = js.native
   
+  // removed "Listen for LobbyGameCreated_t callback instead"
   @js.native
   sealed trait LeftConversation extends EChatEntryType
-  /* 6 */ @js.native
-  object LeftConversation extends TopLevel[LeftConversation with Double]
+  /* 6 */ val LeftConversation: typings.steamClient.mod.EChatEntryType.LeftConversation with Double = js.native
   
   @js.native
   sealed trait LinkBlocked extends EChatEntryType
-  /* 14 */ @js.native
-  object LinkBlocked extends TopLevel[LinkBlocked with Double]
+  /* 14 */ val LinkBlocked: typings.steamClient.mod.EChatEntryType.LinkBlocked with Double = js.native
   
-   // removed "Listen for LobbyGameCreated_t callback instead"
+  // removed "No longer supported by clients"
   @js.native
   sealed trait LobbyGameStart extends EChatEntryType
-  /* 5 */ @js.native
-  object LobbyGameStart extends TopLevel[LobbyGameStart with Double]
+  /* 5 */ val LobbyGameStart: typings.steamClient.mod.EChatEntryType.LobbyGameStart with Double = js.native
   
   @js.native
   sealed trait Reserved1 extends EChatEntryType
-  /* 12 */ @js.native
-  object Reserved1 extends TopLevel[Reserved1 with Double]
+  /* 12 */ val Reserved1: typings.steamClient.mod.EChatEntryType.Reserved1 with Double = js.native
   
   @js.native
   sealed trait Reserved2 extends EChatEntryType
-  /* 13 */ @js.native
-  object Reserved2 extends TopLevel[Reserved2 with Double]
+  /* 13 */ val Reserved2: typings.steamClient.mod.EChatEntryType.Reserved2 with Double = js.native
   
   @js.native
   sealed trait Typing extends EChatEntryType
-  /* 2 */ @js.native
-  object Typing extends TopLevel[Typing with Double]
+  /* 2 */ val Typing: typings.steamClient.mod.EChatEntryType.Typing with Double = js.native
   
   @js.native
   sealed trait WasBanned extends EChatEntryType
-  /* 9 */ @js.native
-  object WasBanned extends TopLevel[WasBanned with Double]
+  /* 9 */ val WasBanned: typings.steamClient.mod.EChatEntryType.WasBanned with Double = js.native
   
   @js.native
   sealed trait WasKicked extends EChatEntryType
-  /* 8 */ @js.native
-  object WasKicked extends TopLevel[WasKicked with Double]
+  /* 8 */ val WasKicked: typings.steamClient.mod.EChatEntryType.WasKicked with Double = js.native
 }

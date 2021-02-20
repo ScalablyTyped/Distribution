@@ -1,11 +1,19 @@
 package typings.griddleReact.mod.components
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("griddle-react", "components.Filter")
 @js.native
-class Filter ()
-  extends Component[FilterProps, js.Any, js.Any]
+class Filter protected ()
+  extends Component[FilterProps, js.Any, js.Any] {
+  def this(props: FilterProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: FilterProps, context: js.Any) = this()
+}

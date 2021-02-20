@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteTrafficPolicyRequest extends js.Object {
+trait DeleteTrafficPolicyRequest extends StObject {
   
   /**
     * The ID of the traffic policy that you want to delete.
@@ -26,24 +27,12 @@ object DeleteTrafficPolicyRequest {
   }
   
   @scala.inline
-  implicit class DeleteTrafficPolicyRequestOps[Self <: DeleteTrafficPolicyRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteTrafficPolicyRequestMutableBuilder[Self <: DeleteTrafficPolicyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: TrafficPolicyId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setId(value: TrafficPolicyId): Self = this.set("Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: TrafficPolicyVersion): Self = this.set("Version", value.asInstanceOf[js.Any])
+    def setVersion(value: TrafficPolicyVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

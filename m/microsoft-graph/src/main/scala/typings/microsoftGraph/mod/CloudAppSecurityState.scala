@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloudAppSecurityState extends js.Object {
+trait CloudAppSecurityState extends StObject {
   
   // Destination IP Address of the connection to the cloud application/service.
   var destinationServiceIp: js.UndefOr[NullableOption[String]] = js.native
@@ -28,45 +29,33 @@ object CloudAppSecurityState {
   }
   
   @scala.inline
-  implicit class CloudAppSecurityStateOps[Self <: CloudAppSecurityState] (val x: Self) extends AnyVal {
+  implicit class CloudAppSecurityStateMutableBuilder[Self <: CloudAppSecurityState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationServiceIp(value: NullableOption[String]): Self = StObject.set(x, "destinationServiceIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationServiceIpNull: Self = StObject.set(x, "destinationServiceIp", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationServiceIpUndefined: Self = StObject.set(x, "destinationServiceIp", js.undefined)
     
     @scala.inline
-    def setDestinationServiceIp(value: NullableOption[String]): Self = this.set("destinationServiceIp", value.asInstanceOf[js.Any])
+    def setDestinationServiceName(value: NullableOption[String]): Self = StObject.set(x, "destinationServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDestinationServiceIp: Self = this.set("destinationServiceIp", js.undefined)
+    def setDestinationServiceNameNull: Self = StObject.set(x, "destinationServiceName", null)
     
     @scala.inline
-    def setDestinationServiceIpNull: Self = this.set("destinationServiceIp", null)
+    def setDestinationServiceNameUndefined: Self = StObject.set(x, "destinationServiceName", js.undefined)
     
     @scala.inline
-    def setDestinationServiceName(value: NullableOption[String]): Self = this.set("destinationServiceName", value.asInstanceOf[js.Any])
+    def setRiskScore(value: NullableOption[String]): Self = StObject.set(x, "riskScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDestinationServiceName: Self = this.set("destinationServiceName", js.undefined)
+    def setRiskScoreNull: Self = StObject.set(x, "riskScore", null)
     
     @scala.inline
-    def setDestinationServiceNameNull: Self = this.set("destinationServiceName", null)
-    
-    @scala.inline
-    def setRiskScore(value: NullableOption[String]): Self = this.set("riskScore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRiskScore: Self = this.set("riskScore", js.undefined)
-    
-    @scala.inline
-    def setRiskScoreNull: Self = this.set("riskScore", null)
+    def setRiskScoreUndefined: Self = StObject.set(x, "riskScore", js.undefined)
   }
 }

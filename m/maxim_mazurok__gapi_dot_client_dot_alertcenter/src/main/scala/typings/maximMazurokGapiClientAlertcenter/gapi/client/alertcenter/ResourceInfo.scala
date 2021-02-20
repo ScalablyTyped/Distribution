@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceInfo extends js.Object {
+trait ResourceInfo extends StObject {
   
   /** Drive file ID. */
   var documentId: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object ResourceInfo {
   }
   
   @scala.inline
-  implicit class ResourceInfoOps[Self <: ResourceInfo] (val x: Self) extends AnyVal {
+  implicit class ResourceInfoMutableBuilder[Self <: ResourceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceTitle(value: String): Self = StObject.set(x, "resourceTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentId(value: String): Self = this.set("documentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentId: Self = this.set("documentId", js.undefined)
-    
-    @scala.inline
-    def setResourceTitle(value: String): Self = this.set("resourceTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceTitle: Self = this.set("resourceTitle", js.undefined)
+    def setResourceTitleUndefined: Self = StObject.set(x, "resourceTitle", js.undefined)
   }
 }

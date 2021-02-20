@@ -1,5 +1,6 @@
 package typings.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.navermaps.navermapsStrings.`round `
   - typings.navermaps.navermapsStrings.bevel
 */
-trait strokeLineJoinType extends js.Object
+trait strokeLineJoinType extends StObject
 object strokeLineJoinType {
   
   @scala.inline

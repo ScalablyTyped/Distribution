@@ -1,17 +1,18 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FlexWrap extends js.Object
+sealed trait FlexWrap extends StObject
 /**
   * Available options for the wrapping behavior of a flex container.
   */
 @JSGlobal("sap.m.FlexWrap")
 @js.native
-object FlexWrap extends js.Object {
+object FlexWrap extends StObject {
   
   @js.native
   sealed trait NoWrap extends FlexWrap

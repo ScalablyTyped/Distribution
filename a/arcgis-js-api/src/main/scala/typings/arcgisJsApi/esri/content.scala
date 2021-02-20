@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content.html)
   */
-@JSGlobal("__esri.content")
-@js.native
-object content extends js.Object {
+object content {
+  
+  type AttachmentsContent = typings.arcgisJsApi.esri.AttachmentsContent
   
   /* Rewritten from type alias, can be one of: 
     - typings.arcgisJsApi.esri.TextContent
@@ -20,9 +21,7 @@ object content extends js.Object {
     - typings.arcgisJsApi.esri.AttachmentsContent
     - typings.arcgisJsApi.esri.CustomContent
   */
-  trait Content extends js.Object
-  
-  type AttachmentsContent = typings.arcgisJsApi.esri.AttachmentsContent
+  trait Content extends StObject
   
   type CustomContent = typings.arcgisJsApi.esri.CustomContent
   

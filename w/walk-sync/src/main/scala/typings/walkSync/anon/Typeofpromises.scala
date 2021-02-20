@@ -28,12 +28,13 @@ import typings.node.promisesMod.FileHandle
 import typings.std.Date
 import typings.std.Uint8Array
 import typings.walkSync.walkSyncStrings.buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofpromises extends js.Object {
+trait Typeofpromises extends StObject {
   
   /**
     * Asynchronously tests a user's permissions for the file specified by path.

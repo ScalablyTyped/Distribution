@@ -1,12 +1,13 @@
 package typings.popmotion
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("popmotion/lib/utils/velocity-per-frame", JSImport.Namespace)
-@js.native
-object velocityPerFrameMod extends js.Object {
+object velocityPerFrameMod {
   
+  @JSImport("popmotion/lib/utils/velocity-per-frame", "velocityPerFrame")
+  @js.native
   def velocityPerFrame(xps: Double, frameDuration: Double): Double = js.native
 }

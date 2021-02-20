@@ -2,12 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.octokitTypesStrings.dismissed
 import typings.octokitTypes.octokitTypesStrings.open
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CodeScanningUpdateAlertEndpoint extends js.Object {
+trait CodeScanningUpdateAlertEndpoint extends StObject {
   
   /**
     * The code scanning alert number.
@@ -37,42 +38,30 @@ object CodeScanningUpdateAlertEndpoint {
   }
   
   @scala.inline
-  implicit class CodeScanningUpdateAlertEndpointOps[Self <: CodeScanningUpdateAlertEndpoint] (val x: Self) extends AnyVal {
+  implicit class CodeScanningUpdateAlertEndpointMutableBuilder[Self <: CodeScanningUpdateAlertEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlert_number(value: Double): Self = StObject.set(x, "alert_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlert_numberUndefined: Self = StObject.set(x, "alert_number", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDismissed_reason(value: String): Self = StObject.set(x, "dismissed_reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setDismissed_reasonNull: Self = StObject.set(x, "dismissed_reason", null)
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setDismissed_reasonUndefined: Self = StObject.set(x, "dismissed_reason", js.undefined)
     
     @scala.inline
-    def setState(value: open | dismissed): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlert_number(value: Double): Self = this.set("alert_number", value.asInstanceOf[js.Any])
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlert_number: Self = this.set("alert_number", js.undefined)
-    
-    @scala.inline
-    def setDismissed_reason(value: String): Self = this.set("dismissed_reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDismissed_reason: Self = this.set("dismissed_reason", js.undefined)
-    
-    @scala.inline
-    def setDismissed_reasonNull: Self = this.set("dismissed_reason", null)
+    def setState(value: open | dismissed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

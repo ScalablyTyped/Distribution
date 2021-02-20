@@ -7,14 +7,14 @@ import typings.awsSdkClientKmsNode.typesCreateGrantInputMod.CreateGrantInput
 import typings.awsSdkClientKmsNode.typesCreateGrantOutputMod.CreateGrantOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/commands/CreateGrantCommand", JSImport.Namespace)
-@js.native
-object createGrantCommandMod extends js.Object {
+object createGrantCommandMod {
   
+  @JSImport("@aws-sdk/client-kms-node/commands/CreateGrantCommand", "CreateGrantCommand")
   @js.native
   class CreateGrantCommand protected () extends Command[
           InputTypesUnion, 

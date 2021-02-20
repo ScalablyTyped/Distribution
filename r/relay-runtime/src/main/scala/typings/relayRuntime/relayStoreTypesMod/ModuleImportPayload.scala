@@ -3,12 +3,13 @@ package typings.relayRuntime.relayStoreTypesMod
 import typings.relayRuntime.relayNetworkTypesMod.PayloadData
 import typings.relayRuntime.relayRuntimeTypesMod.DataID
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModuleImportPayload extends js.Object {
+trait ModuleImportPayload extends StObject {
   
   val data: PayloadData = js.native
   
@@ -38,39 +39,27 @@ object ModuleImportPayload {
   }
   
   @scala.inline
-  implicit class ModuleImportPayloadOps[Self <: ModuleImportPayload] (val x: Self) extends AnyVal {
+  implicit class ModuleImportPayloadMutableBuilder[Self <: ModuleImportPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: PayloadData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataID(value: DataID): Self = StObject.set(x, "dataID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperationReference(value: js.Any): Self = StObject.set(x, "operationReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: PayloadData): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataID(value: DataID): Self = this.set("dataID", value.asInstanceOf[js.Any])
+    def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
     
     @scala.inline
-    def setOperationReference(value: js.Any): Self = this.set("operationReference", value.asInstanceOf[js.Any])
+    def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathVarargs(value: String*): Self = this.set("path", js.Array(value :_*))
-    
-    @scala.inline
-    def setPath(value: js.Array[String]): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeName(value: String): Self = this.set("typeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariables(value: Variables): Self = this.set("variables", value.asInstanceOf[js.Any])
+    def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

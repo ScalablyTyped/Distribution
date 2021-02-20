@@ -2,6 +2,7 @@ package typings.watsonDeveloperCloud.sdkMod
 
 import typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.Options
 import typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,20 +33,19 @@ class ToneAnalyzerV3 protected () extends ^ {
     */
   def this(options: Options) = this()
 }
-/* static members */
-@JSImport("watson-developer-cloud/sdk", "ToneAnalyzerV3")
-@js.native
-object ToneAnalyzerV3 extends js.Object {
+object ToneAnalyzerV3 {
   
-  var URL: String = js.native
+  @JSImport("watson-developer-cloud/sdk", "ToneAnalyzerV3")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** Constants for the `toneChat` operation. */
-  @js.native
-  object ToneChatConstants extends js.Object {
+  object ToneChatConstants {
     
     /** The desired language of the response. For two-character arguments, regional variants are treated as their parent language; for example, `en-US` is interpreted as `en`. You can use different languages for **Content-Language** and **Accept-Language**. */
+    @JSImport("watson-developer-cloud/sdk", "ToneAnalyzerV3.ToneChatConstants.AcceptLanguage")
     @js.native
-    object AcceptLanguage extends js.Object {
+    object AcceptLanguage extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
@@ -76,8 +76,9 @@ object ToneAnalyzerV3 extends js.Object {
     }
     
     /** The language of the input text for the request: English or French. Regional variants are treated as their parent language; for example, `en-US` is interpreted as `en`. The input content must match the specified language. Do not submit content that contains both languages. You can use different languages for **Content-Language** and **Accept-Language**. * **`2017-09-21`:** Accepts `en` or `fr`. * **`2016-05-19`:** Accepts only `en`. */
+    @JSImport("watson-developer-cloud/sdk", "ToneAnalyzerV3.ToneChatConstants.ContentLanguage")
     @js.native
-    object ContentLanguage extends js.Object {
+    object ContentLanguage extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
@@ -91,12 +92,12 @@ object ToneAnalyzerV3 extends js.Object {
   }
   
   /** Constants for the `tone` operation. */
-  @js.native
-  object ToneConstants extends js.Object {
+  object ToneConstants {
     
     /** The desired language of the response. For two-character arguments, regional variants are treated as their parent language; for example, `en-US` is interpreted as `en`. You can use different languages for **Content-Language** and **Accept-Language**. */
+    @JSImport("watson-developer-cloud/sdk", "ToneAnalyzerV3.ToneConstants.AcceptLanguage")
     @js.native
-    object AcceptLanguage extends js.Object {
+    object AcceptLanguage extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
@@ -127,8 +128,9 @@ object ToneAnalyzerV3 extends js.Object {
     }
     
     /** The language of the input text for the request: English or French. Regional variants are treated as their parent language; for example, `en-US` is interpreted as `en`. The input content must match the specified language. Do not submit content that contains both languages. You can use different languages for **Content-Language** and **Accept-Language**. * **`2017-09-21`:** Accepts `en` or `fr`. * **`2016-05-19`:** Accepts only `en`. */
+    @JSImport("watson-developer-cloud/sdk", "ToneAnalyzerV3.ToneConstants.ContentLanguage")
     @js.native
-    object ContentLanguage extends js.Object {
+    object ContentLanguage extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
@@ -141,8 +143,9 @@ object ToneAnalyzerV3 extends js.Object {
     }
     
     /** The type of the input. A character encoding can be specified by including a `charset` parameter. For example, 'text/plain;charset=utf-8'. */
+    @JSImport("watson-developer-cloud/sdk", "ToneAnalyzerV3.ToneConstants.ContentType")
     @js.native
-    object ContentType extends js.Object {
+    object ContentType extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
@@ -157,8 +160,9 @@ object ToneAnalyzerV3 extends js.Object {
     }
     
     /** **`2017-09-21`:** Deprecated. The service continues to accept the parameter for backward-compatibility, but the parameter no longer affects the response. **`2016-05-19`:** A comma-separated list of tones for which the service is to return its analysis of the input; the indicated tones apply both to the full document and to individual sentences of the document. You can specify one or more of the valid values. Omit the parameter to request results for all three tones. */
+    @JSImport("watson-developer-cloud/sdk", "ToneAnalyzerV3.ToneConstants.Tones")
     @js.native
-    object Tones extends js.Object {
+    object Tones extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
@@ -172,4 +176,11 @@ object ToneAnalyzerV3 extends js.Object {
       /* "social" */ val SOCIAL: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.Tones.SOCIAL with String = js.native
     }
   }
+  
+  /* static member */
+  @JSImport("watson-developer-cloud/sdk", "ToneAnalyzerV3.URL")
+  @js.native
+  def URL: String = js.native
+  @scala.inline
+  def URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
 }

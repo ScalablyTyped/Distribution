@@ -1,11 +1,12 @@
 package typings.uikit.mod.UIkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIkitLightboxOptions extends js.Object {
+trait UIkitLightboxOptions extends StObject {
   
   var animation: js.UndefOr[String] = js.native
   
@@ -30,60 +31,48 @@ object UIkitLightboxOptions {
   }
   
   @scala.inline
-  implicit class UIkitLightboxOptionsOps[Self <: UIkitLightboxOptions] (val x: Self) extends AnyVal {
+  implicit class UIkitLightboxOptionsMutableBuilder[Self <: UIkitLightboxOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoplay(value: Double): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: String): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def `setAutoplay-interval`(value: Double): Self = StObject.set(x, "autoplay-interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def `setAutoplay-intervalUndefined`: Self = StObject.set(x, "autoplay-interval", js.undefined)
     
     @scala.inline
-    def setAutoplay(value: Double): Self = this.set("autoplay", value.asInstanceOf[js.Any])
+    def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
     
     @scala.inline
-    def deleteAutoplay: Self = this.set("autoplay", js.undefined)
+    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAutoplay-interval`(value: Double): Self = this.set("autoplay-interval", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def `deleteAutoplay-interval`: Self = this.set("autoplay-interval", js.undefined)
+    def `setPause-on-hover`(value: Boolean): Self = StObject.set(x, "pause-on-hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: String): Self = this.set("index", value.asInstanceOf[js.Any])
+    def `setPause-on-hoverUndefined`: Self = StObject.set(x, "pause-on-hover", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setToggle(value: String): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPause-on-hover`(value: Boolean): Self = this.set("pause-on-hover", value.asInstanceOf[js.Any])
+    def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     
     @scala.inline
-    def `deletePause-on-hover`: Self = this.set("pause-on-hover", js.undefined)
+    def `setVideo-autoplay`(value: Boolean): Self = StObject.set(x, "video-autoplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToggle(value: String): Self = this.set("toggle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToggle: Self = this.set("toggle", js.undefined)
-    
-    @scala.inline
-    def `setVideo-autoplay`(value: Boolean): Self = this.set("video-autoplay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteVideo-autoplay`: Self = this.set("video-autoplay", js.undefined)
+    def `setVideo-autoplayUndefined`: Self = StObject.set(x, "video-autoplay", js.undefined)
   }
 }

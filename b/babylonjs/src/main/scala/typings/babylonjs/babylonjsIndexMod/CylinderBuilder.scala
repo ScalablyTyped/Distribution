@@ -1,6 +1,7 @@
 package typings.babylonjs.babylonjsIndexMod
 
 import typings.babylonjs.anon.Cap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class CylinderBuilder ()
   extends typings.babylonjs.buildersIndexMod.CylinderBuilder
 /* static members */
-@JSImport("babylonjs/Meshes/index", "CylinderBuilder")
-@js.native
-object CylinderBuilder extends js.Object {
+object CylinderBuilder {
   
   /**
     * Creates a cylinder or a cone mesh
@@ -42,5 +41,7 @@ object CylinderBuilder extends js.Object {
     * @returns the cylinder mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#cylinder-or-cone
     */
+  @JSImport("babylonjs/Meshes/index", "CylinderBuilder.CreateCylinder")
+  @js.native
   def CreateCylinder(name: String, options: Cap, scene: js.Any): typings.babylonjs.meshMod.Mesh = js.native
 }

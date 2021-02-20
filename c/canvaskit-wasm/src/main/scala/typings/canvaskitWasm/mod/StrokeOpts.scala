@@ -1,11 +1,12 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StrokeOpts extends js.Object {
+trait StrokeOpts extends StObject {
   
   var cap: js.UndefOr[StrokeCap] = js.native
   
@@ -31,48 +32,36 @@ object StrokeOpts {
   }
   
   @scala.inline
-  implicit class StrokeOptsOps[Self <: StrokeOpts] (val x: Self) extends AnyVal {
+  implicit class StrokeOptsMutableBuilder[Self <: StrokeOpts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCap(value: StrokeCap): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapUndefined: Self = StObject.set(x, "cap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJoin(value: StrokeJoin): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCap(value: StrokeCap): Self = this.set("cap", value.asInstanceOf[js.Any])
+    def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
     
     @scala.inline
-    def deleteCap: Self = this.set("cap", js.undefined)
+    def setMiter_limit(value: Double): Self = StObject.set(x, "miter_limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJoin(value: StrokeJoin): Self = this.set("join", value.asInstanceOf[js.Any])
+    def setMiter_limitUndefined: Self = StObject.set(x, "miter_limit", js.undefined)
     
     @scala.inline
-    def deleteJoin: Self = this.set("join", js.undefined)
+    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMiter_limit(value: Double): Self = this.set("miter_limit", value.asInstanceOf[js.Any])
+    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
     @scala.inline
-    def deleteMiter_limit: Self = this.set("miter_limit", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrecision: Self = this.set("precision", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

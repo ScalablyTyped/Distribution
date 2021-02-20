@@ -1,11 +1,12 @@
 package typings.storybookUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Axis extends js.Object {
+trait Axis extends StObject {
   
   var axis: typings.storybookUi.draggersMod.Axis = js.native
   
@@ -20,24 +21,12 @@ object Axis {
   }
   
   @scala.inline
-  implicit class AxisOps[Self <: Axis] (val x: Self) extends AnyVal {
+  implicit class AxisMutableBuilder[Self <: Axis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxis(value: typings.storybookUi.draggersMod.Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAxis(value: typings.storybookUi.draggersMod.Axis): Self = this.set("axis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsDragging(value: Boolean): Self = this.set("isDragging", value.asInstanceOf[js.Any])
+    def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
   }
 }

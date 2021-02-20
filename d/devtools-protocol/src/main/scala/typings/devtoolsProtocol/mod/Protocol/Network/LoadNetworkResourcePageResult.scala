@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
 import typings.devtoolsProtocol.mod.Protocol.IO.StreamHandle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadNetworkResourcePageResult extends js.Object {
+trait LoadNetworkResourcePageResult extends StObject {
   
   /**
     * Response headers.
@@ -38,51 +39,39 @@ object LoadNetworkResourcePageResult {
   }
   
   @scala.inline
-  implicit class LoadNetworkResourcePageResultOps[Self <: LoadNetworkResourcePageResult] (val x: Self) extends AnyVal {
+  implicit class LoadNetworkResourcePageResultMutableBuilder[Self <: LoadNetworkResourcePageResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpStatusCode(value: Double): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: Boolean): Self = this.set("success", value.asInstanceOf[js.Any])
+    def setHttpStatusCodeUndefined: Self = StObject.set(x, "httpStatusCode", js.undefined)
     
     @scala.inline
-    def setHeaders(value: Headers): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setNetError(value: Double): Self = StObject.set(x, "netError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setNetErrorName(value: String): Self = StObject.set(x, "netErrorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpStatusCode(value: Double): Self = this.set("httpStatusCode", value.asInstanceOf[js.Any])
+    def setNetErrorNameUndefined: Self = StObject.set(x, "netErrorName", js.undefined)
     
     @scala.inline
-    def deleteHttpStatusCode: Self = this.set("httpStatusCode", js.undefined)
+    def setNetErrorUndefined: Self = StObject.set(x, "netError", js.undefined)
     
     @scala.inline
-    def setNetError(value: Double): Self = this.set("netError", value.asInstanceOf[js.Any])
+    def setStream(value: StreamHandle): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNetError: Self = this.set("netError", js.undefined)
+    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     
     @scala.inline
-    def setNetErrorName(value: String): Self = this.set("netErrorName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetErrorName: Self = this.set("netErrorName", js.undefined)
-    
-    @scala.inline
-    def setStream(value: StreamHandle): Self = this.set("stream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStream: Self = this.set("stream", js.undefined)
+    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

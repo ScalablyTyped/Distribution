@@ -3,12 +3,13 @@ package typings.hapi.mod
 import typings.hapi.anon.Etag
 import typings.hapi.anon.ReadonlyRequest
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResponseToolkit extends js.Object {
+trait ResponseToolkit extends StObject {
   
   /**
     * A response symbol. When returned by a lifecycle method, the request lifecycle skips to the finalizing step

@@ -1,6 +1,7 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,48 +36,36 @@ object QueryResult {
   }
   
   @scala.inline
-  implicit class QueryResultOps[Self <: QueryResult] (val x: Self) extends AnyVal {
+  implicit class QueryResultMutableBuilder[Self <: QueryResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollection_idUndefined: Self = StObject.set(x, "collection_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollection_id(value: String): Self = this.set("collection_id", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCollection_id: Self = this.set("collection_id", js.undefined)
+    def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setResult_metadata(value: QueryResultMetadata): Self = StObject.set(x, "result_metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: js.Object): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setResult_metadataUndefined: Self = StObject.set(x, "result_metadata", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult_metadata(value: QueryResultMetadata): Self = this.set("result_metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResult_metadata: Self = this.set("result_metadata", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

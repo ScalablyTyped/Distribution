@@ -1,12 +1,11 @@
 package typings.jsdevtoolsReaddirEnhanced
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jsdevtools/readdir-enhanced/lib/types-internal", JSImport.Namespace)
-@js.native
-object typesInternalMod extends js.Object {
+object typesInternalMod {
   
   type VoidCallback = js.Function0[Unit]
 }

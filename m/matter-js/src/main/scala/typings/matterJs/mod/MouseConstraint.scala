@@ -1,12 +1,13 @@
 package typings.matterJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "MouseConstraint")
 @js.native
-class MouseConstraint () extends js.Object {
+class MouseConstraint () extends StObject {
   
   /**
     * The `Body` that is currently being moved by the user, or `null` if no body.
@@ -54,9 +55,7 @@ class MouseConstraint () extends js.Object {
   var `type`: String = js.native
 }
 /* static members */
-@JSImport("matter-js", "MouseConstraint")
-@js.native
-object MouseConstraint extends js.Object {
+object MouseConstraint {
   
   /**
     * Creates a new mouse constraint.
@@ -67,6 +66,10 @@ object MouseConstraint extends js.Object {
     * @param {} options
     * @return {MouseConstraint} A new MouseConstraint
     */
+  @JSImport("matter-js", "MouseConstraint.create")
+  @js.native
   def create(engine: Engine): MouseConstraint = js.native
+  @JSImport("matter-js", "MouseConstraint.create")
+  @js.native
   def create(engine: Engine, options: IMouseConstraintDefinition): MouseConstraint = js.native
 }

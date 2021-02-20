@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Services.Store
 
 import typings.winrtUwp.Windows.ApplicationModel.Package
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides info about a package for the current app that has an update available for download from the Windows Store. */
 @js.native
-trait StorePackageUpdate extends js.Object {
+trait StorePackageUpdate extends StObject {
   
   /** Gets the package that has an update available for download from the Windows Store. */
   @JSName("package")
@@ -26,24 +27,12 @@ object StorePackageUpdate {
   }
   
   @scala.inline
-  implicit class StorePackageUpdateOps[Self <: StorePackageUpdate] (val x: Self) extends AnyVal {
+  implicit class StorePackageUpdateMutableBuilder[Self <: StorePackageUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set_package(value: Package): Self = this.set("package", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMandatory(value: Boolean): Self = this.set("mandatory", value.asInstanceOf[js.Any])
+    def set_package(value: Package): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }
 }

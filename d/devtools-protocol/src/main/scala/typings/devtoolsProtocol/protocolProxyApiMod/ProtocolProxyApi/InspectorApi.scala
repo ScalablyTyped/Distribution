@@ -4,12 +4,13 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.detached
 import typings.devtoolsProtocol.devtoolsProtocolStrings.targetCrashed
 import typings.devtoolsProtocol.devtoolsProtocolStrings.targetReloadedAfterCrash
 import typings.devtoolsProtocol.mod.Protocol.Inspector.DetachedEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InspectorApi extends js.Object {
+trait InspectorApi extends StObject {
   
   /**
     * Disables inspector domain notifications.

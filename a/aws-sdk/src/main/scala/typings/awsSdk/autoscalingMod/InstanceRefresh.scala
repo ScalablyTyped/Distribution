@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceRefresh extends js.Object {
+trait InstanceRefresh extends StObject {
   
   /**
     * The name of the Auto Scaling group.
@@ -56,66 +57,54 @@ object InstanceRefresh {
   }
   
   @scala.inline
-  implicit class InstanceRefreshOps[Self <: InstanceRefresh] (val x: Self) extends AnyVal {
+  implicit class InstanceRefreshMutableBuilder[Self <: InstanceRefresh] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoScalingGroupNameUndefined: Self = StObject.set(x, "AutoScalingGroupName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTime(value: TimestampType): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def deleteAutoScalingGroupName: Self = this.set("AutoScalingGroupName", js.undefined)
+    def setInstanceRefreshId(value: XmlStringMaxLen255): Self = StObject.set(x, "InstanceRefreshId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: TimestampType): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setInstanceRefreshIdUndefined: Self = StObject.set(x, "InstanceRefreshId", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setInstancesToUpdate(value: InstancesToUpdate): Self = StObject.set(x, "InstancesToUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceRefreshId(value: XmlStringMaxLen255): Self = this.set("InstanceRefreshId", value.asInstanceOf[js.Any])
+    def setInstancesToUpdateUndefined: Self = StObject.set(x, "InstancesToUpdate", js.undefined)
     
     @scala.inline
-    def deleteInstanceRefreshId: Self = this.set("InstanceRefreshId", js.undefined)
+    def setPercentageComplete(value: IntPercent): Self = StObject.set(x, "PercentageComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstancesToUpdate(value: InstancesToUpdate): Self = this.set("InstancesToUpdate", value.asInstanceOf[js.Any])
+    def setPercentageCompleteUndefined: Self = StObject.set(x, "PercentageComplete", js.undefined)
     
     @scala.inline
-    def deleteInstancesToUpdate: Self = this.set("InstancesToUpdate", js.undefined)
+    def setStartTime(value: TimestampType): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentageComplete(value: IntPercent): Self = this.set("PercentageComplete", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
     @scala.inline
-    def deletePercentageComplete: Self = this.set("PercentageComplete", js.undefined)
+    def setStatus(value: InstanceRefreshStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: TimestampType): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    def setStatusReason(value: XmlStringMaxLen1023): Self = StObject.set(x, "StatusReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    def setStatusReasonUndefined: Self = StObject.set(x, "StatusReason", js.undefined)
     
     @scala.inline
-    def setStatus(value: InstanceRefreshStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setStatusReason(value: XmlStringMaxLen1023): Self = this.set("StatusReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusReason: Self = this.set("StatusReason", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -6,23 +6,24 @@ import typings.rxCore.Rx.IPromise
 import typings.rxLite.anon.Dictindex
 import typings.std.ArrayLike
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObservableStatic extends js.Object {
+trait ObservableStatic extends StObject {
   
   def `catch`[T](sources: (IPromise[T] | Observable[T])*): Observable[T] = js.native
-      // alias for throw
+  // alias for throw
   def `catch`[T](sources: js.Array[IPromise[T] | Observable[T]]): Observable[T] = js.native
   
-      // alias for catch
+  // alias for catch
   def catchError[T](sources: (IPromise[T] | Observable[T])*): Observable[T] = js.native
-      // alias for catch
+  // alias for catch
   def catchError[T](sources: js.Array[IPromise[T] | Observable[T]]): Observable[T] = js.native
   
-      // alias for catch
+  // alias for catch
   def catchException[T](sources: (IPromise[T] | Observable[T])*): Observable[T] = js.native
   def catchException[T](sources: js.Array[IPromise[T] | Observable[T]]): Observable[T] = js.native
   
@@ -30,7 +31,7 @@ trait ObservableStatic extends js.Object {
   def combineLatest[T, T2](first: IPromise[T], second: IPromise[T2]): Observable[js.Tuple2[T, T2]] = js.native
   def combineLatest[T, T2](first: IPromise[T], second: Observable[T2]): Observable[js.Tuple2[T, T2]] = js.native
   def combineLatest[T, T2](first: Observable[T], second: IPromise[T2]): Observable[js.Tuple2[T, T2]] = js.native
-      // alias for catch
+  // alias for catch
   def combineLatest[T, T2](first: Observable[T], second: Observable[T2]): Observable[js.Tuple2[T, T2]] = js.native
   def combineLatest[TOther, TResult](
     sources: js.Array[Observable[TOther] | IPromise[TOther]],
@@ -1168,15 +1169,15 @@ trait ObservableStatic extends js.Object {
   def `return`[T](value: T): Observable[T] = js.native
   def `return`[T](value: T, scheduler: IScheduler): Observable[T] = js.native
   
-      // alias for return
+  // alias for return
   def returnValue[T](value: T): Observable[T] = js.native
   def returnValue[T](value: T, scheduler: IScheduler): Observable[T] = js.native
   
-      // alias for return
+  // alias for return
   def `throw`[T](exception: Error): Observable[T] = js.native
   def `throw`[T](exception: Error, scheduler: IScheduler): Observable[T] = js.native
   
-      // alias for throw
+  // alias for throw
   def throwError[T](error: Error): Observable[T] = js.native
   def throwError[T](error: Error, scheduler: IScheduler): Observable[T] = js.native
   

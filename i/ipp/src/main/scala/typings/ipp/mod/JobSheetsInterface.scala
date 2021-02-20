@@ -1,11 +1,12 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobSheetsInterface extends js.Object {
+trait JobSheetsInterface extends StObject {
   
   var `job-sheets`: js.UndefOr[JobSheets] = js.native
   
@@ -22,36 +23,24 @@ object JobSheetsInterface {
   }
   
   @scala.inline
-  implicit class JobSheetsInterfaceOps[Self <: JobSheetsInterface] (val x: Self) extends AnyVal {
+  implicit class JobSheetsInterfaceMutableBuilder[Self <: JobSheetsInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setJob-sheets`(value: JobSheets): Self = StObject.set(x, "job-sheets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setJob-sheetsUndefined`: Self = StObject.set(x, "job-sheets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-sheets`(value: JobSheets): Self = this.set("job-sheets", value.asInstanceOf[js.Any])
+    def `setMedia-col`(value: MediaInterface): Self = StObject.set(x, "media-col", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-sheets`: Self = this.set("job-sheets", js.undefined)
+    def `setMedia-colUndefined`: Self = StObject.set(x, "media-col", js.undefined)
     
     @scala.inline
-    def setMedia(value: Media): Self = this.set("media", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMedia: Self = this.set("media", js.undefined)
-    
-    @scala.inline
-    def `setMedia-col`(value: MediaInterface): Self = this.set("media-col", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteMedia-col`: Self = this.set("media-col", js.undefined)
+    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
   }
 }

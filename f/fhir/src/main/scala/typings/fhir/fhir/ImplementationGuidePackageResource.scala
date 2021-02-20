@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,87 +80,75 @@ object ImplementationGuidePackageResource {
   }
   
   @scala.inline
-  implicit class ImplementationGuidePackageResourceOps[Self <: ImplementationGuidePackageResource] (val x: Self) extends AnyVal {
+  implicit class ImplementationGuidePackageResourceMutableBuilder[Self <: ImplementationGuidePackageResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcronym(value: String): Self = StObject.set(x, "acronym", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcronymUndefined: Self = StObject.set(x, "acronym", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExample(value: Boolean): Self = this.set("example", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set_acronym(value: Element): Self = this.set("_acronym", value.asInstanceOf[js.Any])
+    def setExample(value: Boolean): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_acronym: Self = this.set("_acronym", js.undefined)
+    def setExampleFor(value: Reference): Self = StObject.set(x, "exampleFor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    def setExampleForUndefined: Self = StObject.set(x, "exampleFor", js.undefined)
     
     @scala.inline
-    def delete_description: Self = this.set("_description", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_example(value: Element): Self = this.set("_example", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def delete_example: Self = this.set("_example", js.undefined)
+    def setSourceReference(value: Reference): Self = StObject.set(x, "sourceReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    def setSourceReferenceUndefined: Self = StObject.set(x, "sourceReference", js.undefined)
     
     @scala.inline
-    def delete_name: Self = this.set("_name", js.undefined)
+    def setSourceUri(value: uri): Self = StObject.set(x, "sourceUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_sourceUri(value: Element): Self = this.set("_sourceUri", value.asInstanceOf[js.Any])
+    def setSourceUriUndefined: Self = StObject.set(x, "sourceUri", js.undefined)
     
     @scala.inline
-    def delete_sourceUri: Self = this.set("_sourceUri", js.undefined)
+    def set_acronym(value: Element): Self = StObject.set(x, "_acronym", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcronym(value: String): Self = this.set("acronym", value.asInstanceOf[js.Any])
+    def set_acronymUndefined: Self = StObject.set(x, "_acronym", js.undefined)
     
     @scala.inline
-    def deleteAcronym: Self = this.set("acronym", js.undefined)
+    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def set_example(value: Element): Self = StObject.set(x, "_example", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExampleFor(value: Reference): Self = this.set("exampleFor", value.asInstanceOf[js.Any])
+    def set_exampleUndefined: Self = StObject.set(x, "_example", js.undefined)
     
     @scala.inline
-    def deleteExampleFor: Self = this.set("exampleFor", js.undefined)
+    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def set_sourceUri(value: Element): Self = StObject.set(x, "_sourceUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceReference(value: Reference): Self = this.set("sourceReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceReference: Self = this.set("sourceReference", js.undefined)
-    
-    @scala.inline
-    def setSourceUri(value: uri): Self = this.set("sourceUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceUri: Self = this.set("sourceUri", js.undefined)
+    def set_sourceUriUndefined: Self = StObject.set(x, "_sourceUri", js.undefined)
   }
 }

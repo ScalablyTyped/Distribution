@@ -1,12 +1,13 @@
 package typings.jsLevenshtein
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("js-levenshtein", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("js-levenshtein", JSImport.Namespace)
+  @js.native
   def apply(compareFrom: String, compareTo: String): Double = js.native
 }

@@ -1,5 +1,6 @@
 package typings.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.6]
   */
 @js.native
-trait ColorScaleConditionalFormatLoadOptions extends js.Object {
+trait ColorScaleConditionalFormatLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -44,36 +45,24 @@ object ColorScaleConditionalFormatLoadOptions {
   }
   
   @scala.inline
-  implicit class ColorScaleConditionalFormatLoadOptionsOps[Self <: ColorScaleConditionalFormatLoadOptions] (val x: Self) extends AnyVal {
+  implicit class ColorScaleConditionalFormatLoadOptionsMutableBuilder[Self <: ColorScaleConditionalFormatLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCriteria(value: Boolean): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setThreeColorScale(value: Boolean): Self = StObject.set(x, "threeColorScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCriteria(value: Boolean): Self = this.set("criteria", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCriteria: Self = this.set("criteria", js.undefined)
-    
-    @scala.inline
-    def setThreeColorScale(value: Boolean): Self = this.set("threeColorScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreeColorScale: Self = this.set("threeColorScale", js.undefined)
+    def setThreeColorScaleUndefined: Self = StObject.set(x, "threeColorScale", js.undefined)
   }
 }

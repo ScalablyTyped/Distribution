@@ -1,5 +1,6 @@
 package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Command describes a step performed as part of the build pipeline.
   */
 @js.native
-trait SchemaCommand extends js.Object {
+trait SchemaCommand extends StObject {
   
   /**
     * Command-line arguments used when executing this command.
@@ -53,63 +54,51 @@ object SchemaCommand {
   }
   
   @scala.inline
-  implicit class SchemaCommandOps[Self <: SchemaCommand] (val x: Self) extends AnyVal {
+  implicit class SchemaCommandMutableBuilder[Self <: SchemaCommand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
     @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
+    def setEnv(value: js.Array[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
     @scala.inline
-    def deleteDir: Self = this.set("dir", js.undefined)
+    def setEnvVarargs(value: String*): Self = StObject.set(x, "env", js.Array(value :_*))
     
     @scala.inline
-    def setEnvVarargs(value: String*): Self = this.set("env", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: js.Array[String]): Self = this.set("env", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEnv: Self = this.set("env", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setWaitFor(value: js.Array[String]): Self = StObject.set(x, "waitFor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setWaitForUndefined: Self = StObject.set(x, "waitFor", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setWaitForVarargs(value: String*): Self = this.set("waitFor", js.Array(value :_*))
-    
-    @scala.inline
-    def setWaitFor(value: js.Array[String]): Self = this.set("waitFor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitFor: Self = this.set("waitFor", js.undefined)
+    def setWaitForVarargs(value: String*): Self = StObject.set(x, "waitFor", js.Array(value :_*))
   }
 }

@@ -1,15 +1,15 @@
 package typings.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DiagnosticTag extends js.Object
+sealed trait DiagnosticTag extends StObject
 @JSImport("vscode", "DiagnosticTag")
 @js.native
-object DiagnosticTag extends js.Object {
+object DiagnosticTag extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DiagnosticTag with Double] = js.native
@@ -21,8 +21,7 @@ object DiagnosticTag extends js.Object {
     */
   @js.native
   sealed trait Deprecated extends DiagnosticTag
-  /* 2 */ @js.native
-  object Deprecated extends TopLevel[Deprecated with Double]
+  /* 2 */ val Deprecated: typings.vscode.mod.DiagnosticTag.Deprecated with Double = js.native
   
   /**
     * Unused or unnecessary code.
@@ -36,6 +35,5 @@ object DiagnosticTag extends js.Object {
     */
   @js.native
   sealed trait Unnecessary extends DiagnosticTag
-  /* 1 */ @js.native
-  object Unnecessary extends TopLevel[Unnecessary with Double]
+  /* 1 */ val Unnecessary: typings.vscode.mod.DiagnosticTag.Unnecessary with Double = js.native
 }

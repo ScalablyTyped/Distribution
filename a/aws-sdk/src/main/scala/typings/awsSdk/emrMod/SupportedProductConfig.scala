@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SupportedProductConfig extends js.Object {
+trait SupportedProductConfig extends StObject {
   
   /**
     * The list of user-supplied arguments.
@@ -26,33 +27,21 @@ object SupportedProductConfig {
   }
   
   @scala.inline
-  implicit class SupportedProductConfigOps[Self <: SupportedProductConfig] (val x: Self) extends AnyVal {
+  implicit class SupportedProductConfigMutableBuilder[Self <: SupportedProductConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: XmlStringList): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsUndefined: Self = StObject.set(x, "Args", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgsVarargs(value: XmlString*): Self = StObject.set(x, "Args", js.Array(value :_*))
     
     @scala.inline
-    def setArgsVarargs(value: XmlString*): Self = this.set("Args", js.Array(value :_*))
+    def setName(value: XmlStringMaxLen256): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: XmlStringList): Self = this.set("Args", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArgs: Self = this.set("Args", js.undefined)
-    
-    @scala.inline
-    def setName(value: XmlStringMaxLen256): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

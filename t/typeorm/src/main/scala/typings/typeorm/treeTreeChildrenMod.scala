@@ -2,14 +2,17 @@ package typings.typeorm
 
 import typings.std.PropertyDecorator
 import typings.typeorm.anon.Cascade
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/decorator/tree/TreeChildren", JSImport.Namespace)
-@js.native
-object treeTreeChildrenMod extends js.Object {
+object treeTreeChildrenMod {
   
+  @JSImport("typeorm/decorator/tree/TreeChildren", "TreeChildren")
+  @js.native
   def TreeChildren(): PropertyDecorator = js.native
+  @JSImport("typeorm/decorator/tree/TreeChildren", "TreeChildren")
+  @js.native
   def TreeChildren(options: Cascade): PropertyDecorator = js.native
 }

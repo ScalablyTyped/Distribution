@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SortableOptions extends js.Object {
+trait SortableOptions extends StObject {
   
   var autoScroll: js.UndefOr[Boolean] = js.native
   
@@ -55,132 +56,120 @@ object SortableOptions {
   }
   
   @scala.inline
-  implicit class SortableOptionsOps[Self <: SortableOptions] (val x: Self) extends AnyVal {
+  implicit class SortableOptionsMutableBuilder[Self <: SortableOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoScroll(value: Boolean): Self = StObject.set(x, "autoScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoScrollUndefined: Self = StObject.set(x, "autoScroll", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScroll(value: Boolean): Self = this.set("autoScroll", value.asInstanceOf[js.Any])
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def deleteAutoScroll: Self = this.set("autoScroll", js.undefined)
+    def setCancel(value: /* e */ SortableCancelEvent => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAxis(value: String): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
+    def setChange(value: /* e */ SortableChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCancel(value: /* e */ SortableCancelEvent => Unit): Self = this.set("cancel", js.Any.fromFunction1(value))
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setConnectWith(value: String): Self = StObject.set(x, "connectWith", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: /* e */ SortableChangeEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    def setConnectWithUndefined: Self = StObject.set(x, "connectWith", js.undefined)
     
     @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
+    def setContainer(value: String | JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectWith(value: String): Self = this.set("connectWith", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteConnectWith: Self = this.set("connectWith", js.undefined)
+    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: String | JQuery): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setCursorOffset(value: SortableCursorOffset): Self = StObject.set(x, "cursorOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setCursorOffsetUndefined: Self = StObject.set(x, "cursorOffset", js.undefined)
     
     @scala.inline
-    def setCursor(value: String): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def deleteCursor: Self = this.set("cursor", js.undefined)
+    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorOffset(value: SortableCursorOffset): Self = this.set("cursorOffset", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteCursorOffset: Self = this.set("cursorOffset", js.undefined)
+    def setEnd(value: /* e */ SortableEndEvent => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisabled(value: String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: /* e */ SortableEndEvent => Unit): Self = this.set("end", js.Any.fromFunction1(value))
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setHandler(value: String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setHint(value: js.Function | String | JQuery): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandler(value: String): Self = this.set("handler", value.asInstanceOf[js.Any])
+    def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
     
     @scala.inline
-    def deleteHandler: Self = this.set("handler", js.undefined)
+    def setHoldToDrag(value: Boolean): Self = StObject.set(x, "holdToDrag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHint(value: js.Function | String | JQuery): Self = this.set("hint", value.asInstanceOf[js.Any])
+    def setHoldToDragUndefined: Self = StObject.set(x, "holdToDrag", js.undefined)
     
     @scala.inline
-    def deleteHint: Self = this.set("hint", js.undefined)
+    def setIgnore(value: String): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoldToDrag(value: Boolean): Self = this.set("holdToDrag", value.asInstanceOf[js.Any])
+    def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
     
     @scala.inline
-    def deleteHoldToDrag: Self = this.set("holdToDrag", js.undefined)
+    def setMove(value: /* e */ SortableMoveEvent => Unit): Self = StObject.set(x, "move", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIgnore(value: String): Self = this.set("ignore", value.asInstanceOf[js.Any])
+    def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
     
     @scala.inline
-    def deleteIgnore: Self = this.set("ignore", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMove(value: /* e */ SortableMoveEvent => Unit): Self = this.set("move", js.Any.fromFunction1(value))
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMove: Self = this.set("move", js.undefined)
+    def setPlaceholder(value: js.Function | String | JQuery): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setStart(value: /* e */ SortableStartEvent => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPlaceholder(value: js.Function | String | JQuery): Self = this.set("placeholder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
-    
-    @scala.inline
-    def setStart(value: /* e */ SortableStartEvent => Unit): Self = this.set("start", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

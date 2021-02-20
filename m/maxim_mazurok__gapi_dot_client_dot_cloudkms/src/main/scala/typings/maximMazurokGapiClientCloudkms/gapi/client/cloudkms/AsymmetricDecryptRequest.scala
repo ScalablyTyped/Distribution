@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AsymmetricDecryptRequest extends js.Object {
+trait AsymmetricDecryptRequest extends StObject {
   
   /** Required. The data encrypted with the named CryptoKeyVersion's public key using OAEP. */
   var ciphertext: js.UndefOr[String] = js.native
@@ -28,30 +29,18 @@ object AsymmetricDecryptRequest {
   }
   
   @scala.inline
-  implicit class AsymmetricDecryptRequestOps[Self <: AsymmetricDecryptRequest] (val x: Self) extends AnyVal {
+  implicit class AsymmetricDecryptRequestMutableBuilder[Self <: AsymmetricDecryptRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCiphertextCrc32c(value: String): Self = StObject.set(x, "ciphertextCrc32c", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCiphertextCrc32cUndefined: Self = StObject.set(x, "ciphertextCrc32c", js.undefined)
     
     @scala.inline
-    def setCiphertext(value: String): Self = this.set("ciphertext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCiphertext: Self = this.set("ciphertext", js.undefined)
-    
-    @scala.inline
-    def setCiphertextCrc32c(value: String): Self = this.set("ciphertextCrc32c", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCiphertextCrc32c: Self = this.set("ciphertextCrc32c", js.undefined)
+    def setCiphertextUndefined: Self = StObject.set(x, "ciphertext", js.undefined)
   }
 }

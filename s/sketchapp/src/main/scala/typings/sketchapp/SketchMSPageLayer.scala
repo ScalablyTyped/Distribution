@@ -2,6 +2,7 @@ package typings.sketchapp
 
 import typings.sketchapp.sketchappStrings.page
 import typings.sketchapp.sketchappStrings.symbolMaster
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,33 +56,21 @@ object SketchMSPageLayer {
   }
   
   @scala.inline
-  implicit class SketchMSPageLayerOps[Self <: SketchMSPageLayer] (val x: Self) extends AnyVal {
+  implicit class SketchMSPageLayerMutableBuilder[Self <: SketchMSPageLayer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasClickThrough(value: Boolean): Self = StObject.set(x, "hasClickThrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHorizontalRulerData(value: SketchMSRulerData): Self = StObject.set(x, "horizontalRulerData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeInCloudUpload(value: Boolean): Self = StObject.set(x, "includeInCloudUpload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_class(value: page | symbolMaster): Self = this.set("_class", value.asInstanceOf[js.Any])
+    def setVerticalRulerData(value: SketchMSRulerData): Self = StObject.set(x, "verticalRulerData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasClickThrough(value: Boolean): Self = this.set("hasClickThrough", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHorizontalRulerData(value: SketchMSRulerData): Self = this.set("horizontalRulerData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeInCloudUpload(value: Boolean): Self = this.set("includeInCloudUpload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticalRulerData(value: SketchMSRulerData): Self = this.set("verticalRulerData", value.asInstanceOf[js.Any])
+    def set_class(value: page | symbolMaster): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

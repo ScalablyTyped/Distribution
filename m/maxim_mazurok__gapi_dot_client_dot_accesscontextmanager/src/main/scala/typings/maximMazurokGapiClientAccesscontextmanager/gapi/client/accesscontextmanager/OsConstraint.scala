@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAccesscontextmanager.gapi.client.accesscontextmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OsConstraint extends js.Object {
+trait OsConstraint extends StObject {
   
   /** The minimum allowed OS version. If not set, any version of this OS satisfies the constraint. Format: `"major.minor.patch"`. Examples: `"10.5.301"`, `"9.2.1"`. */
   var minimumVersion: js.UndefOr[String] = js.native
@@ -28,36 +29,24 @@ object OsConstraint {
   }
   
   @scala.inline
-  implicit class OsConstraintOps[Self <: OsConstraint] (val x: Self) extends AnyVal {
+  implicit class OsConstraintMutableBuilder[Self <: OsConstraint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinimumVersion(value: String): Self = StObject.set(x, "minimumVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinimumVersionUndefined: Self = StObject.set(x, "minimumVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOsType(value: String): Self = StObject.set(x, "osType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumVersion(value: String): Self = this.set("minimumVersion", value.asInstanceOf[js.Any])
+    def setOsTypeUndefined: Self = StObject.set(x, "osType", js.undefined)
     
     @scala.inline
-    def deleteMinimumVersion: Self = this.set("minimumVersion", js.undefined)
+    def setRequireVerifiedChromeOs(value: Boolean): Self = StObject.set(x, "requireVerifiedChromeOs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOsType(value: String): Self = this.set("osType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOsType: Self = this.set("osType", js.undefined)
-    
-    @scala.inline
-    def setRequireVerifiedChromeOs(value: Boolean): Self = this.set("requireVerifiedChromeOs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequireVerifiedChromeOs: Self = this.set("requireVerifiedChromeOs", js.undefined)
+    def setRequireVerifiedChromeOsUndefined: Self = StObject.set(x, "requireVerifiedChromeOs", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#collection/position--dimensions
   */
 @js.native
-trait CollectionPosition extends js.Object {
+trait CollectionPosition extends StObject {
   
   /**
     * Get the bounding box of the elements in model coordinates.
@@ -41,24 +42,12 @@ object CollectionPosition {
   }
   
   @scala.inline
-  implicit class CollectionPositionOps[Self <: CollectionPosition] (val x: Self) extends AnyVal {
+  implicit class CollectionPositionMutableBuilder[Self <: CollectionPosition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingBox(value: BoundingBoxOptions => BoundingBox12 with BoundingBoxWH): Self = StObject.set(x, "boundingBox", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBoundingBox(value: BoundingBoxOptions => BoundingBox12 with BoundingBoxWH): Self = this.set("boundingBox", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRenderedBoundingBox(value: BoundingBoxOptions => BoundingBox12 with BoundingBoxWH): Self = this.set("renderedBoundingBox", js.Any.fromFunction1(value))
+    def setRenderedBoundingBox(value: BoundingBoxOptions => BoundingBox12 with BoundingBoxWH): Self = StObject.set(x, "renderedBoundingBox", js.Any.fromFunction1(value))
   }
 }

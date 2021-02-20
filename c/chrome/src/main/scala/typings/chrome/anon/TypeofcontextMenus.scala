@@ -3,12 +3,13 @@ package typings.chrome.anon
 import typings.chrome.chrome.contextMenus.CreateProperties
 import typings.chrome.chrome.contextMenus.MenuClickedEvent
 import typings.chrome.chrome.contextMenus.UpdateProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofcontextMenus extends js.Object {
+trait TypeofcontextMenus extends StObject {
   
   var ACTION_MENU_TOP_LEVEL_LIMIT: Double = js.native
   

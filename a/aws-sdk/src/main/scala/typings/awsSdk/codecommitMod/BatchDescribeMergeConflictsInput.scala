@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDescribeMergeConflictsInput extends js.Object {
+trait BatchDescribeMergeConflictsInput extends StObject {
   
   /**
     * The level of conflict detail to use. If unspecified, the default FILE_LEVEL is used, which returns a not-mergeable result if the same file has differences in both branches. If LINE_LEVEL is specified, a conflict is considered not mergeable if the same file in both branches has differences on the same line.
@@ -71,69 +72,57 @@ object BatchDescribeMergeConflictsInput {
   }
   
   @scala.inline
-  implicit class BatchDescribeMergeConflictsInputOps[Self <: BatchDescribeMergeConflictsInput] (val x: Self) extends AnyVal {
+  implicit class BatchDescribeMergeConflictsInputMutableBuilder[Self <: BatchDescribeMergeConflictsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConflictDetailLevel(value: ConflictDetailLevelTypeEnum): Self = StObject.set(x, "conflictDetailLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConflictDetailLevelUndefined: Self = StObject.set(x, "conflictDetailLevel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConflictResolutionStrategy(value: ConflictResolutionStrategyTypeEnum): Self = StObject.set(x, "conflictResolutionStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationCommitSpecifier(value: CommitName): Self = this.set("destinationCommitSpecifier", value.asInstanceOf[js.Any])
+    def setConflictResolutionStrategyUndefined: Self = StObject.set(x, "conflictResolutionStrategy", js.undefined)
     
     @scala.inline
-    def setMergeOption(value: MergeOptionTypeEnum): Self = this.set("mergeOption", value.asInstanceOf[js.Any])
+    def setDestinationCommitSpecifier(value: CommitName): Self = StObject.set(x, "destinationCommitSpecifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    def setFilePaths(value: FilePaths): Self = StObject.set(x, "filePaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceCommitSpecifier(value: CommitName): Self = this.set("sourceCommitSpecifier", value.asInstanceOf[js.Any])
+    def setFilePathsUndefined: Self = StObject.set(x, "filePaths", js.undefined)
     
     @scala.inline
-    def setConflictDetailLevel(value: ConflictDetailLevelTypeEnum): Self = this.set("conflictDetailLevel", value.asInstanceOf[js.Any])
+    def setFilePathsVarargs(value: Path*): Self = StObject.set(x, "filePaths", js.Array(value :_*))
     
     @scala.inline
-    def deleteConflictDetailLevel: Self = this.set("conflictDetailLevel", js.undefined)
+    def setMaxConflictFiles(value: MaxResults): Self = StObject.set(x, "maxConflictFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConflictResolutionStrategy(value: ConflictResolutionStrategyTypeEnum): Self = this.set("conflictResolutionStrategy", value.asInstanceOf[js.Any])
+    def setMaxConflictFilesUndefined: Self = StObject.set(x, "maxConflictFiles", js.undefined)
     
     @scala.inline
-    def deleteConflictResolutionStrategy: Self = this.set("conflictResolutionStrategy", js.undefined)
+    def setMaxMergeHunks(value: MaxResults): Self = StObject.set(x, "maxMergeHunks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilePathsVarargs(value: Path*): Self = this.set("filePaths", js.Array(value :_*))
+    def setMaxMergeHunksUndefined: Self = StObject.set(x, "maxMergeHunks", js.undefined)
     
     @scala.inline
-    def setFilePaths(value: FilePaths): Self = this.set("filePaths", value.asInstanceOf[js.Any])
+    def setMergeOption(value: MergeOptionTypeEnum): Self = StObject.set(x, "mergeOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilePaths: Self = this.set("filePaths", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxConflictFiles(value: MaxResults): Self = this.set("maxConflictFiles", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxConflictFiles: Self = this.set("maxConflictFiles", js.undefined)
+    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxMergeHunks(value: MaxResults): Self = this.set("maxMergeHunks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxMergeHunks: Self = this.set("maxMergeHunks", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setSourceCommitSpecifier(value: CommitName): Self = StObject.set(x, "sourceCommitSpecifier", value.asInstanceOf[js.Any])
   }
 }

@@ -2,13 +2,14 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 
 import typings.activexLibreoffice.com_.sun.star.awt.Size
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service may be represented by a {@link com.sun.star.beans.PropertyValue} []. */
 @js.native
-trait EnhancedCustomShapePath extends js.Object {
+trait EnhancedCustomShapePath extends StObject {
   
   /** This property specifies if this shape supports concentric gradient fill. The default is false. */
   var ConcentricGradientFillAllowed: Boolean = js.native
@@ -74,54 +75,42 @@ object EnhancedCustomShapePath {
   }
   
   @scala.inline
-  implicit class EnhancedCustomShapePathOps[Self <: EnhancedCustomShapePath] (val x: Self) extends AnyVal {
+  implicit class EnhancedCustomShapePathMutableBuilder[Self <: EnhancedCustomShapePath] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConcentricGradientFillAllowed(value: Boolean): Self = StObject.set(x, "ConcentricGradientFillAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoordinates(value: SafeArray[EnhancedCustomShapeParameterPair]): Self = StObject.set(x, "Coordinates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtrusionAllowed(value: Boolean): Self = StObject.set(x, "ExtrusionAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcentricGradientFillAllowed(value: Boolean): Self = this.set("ConcentricGradientFillAllowed", value.asInstanceOf[js.Any])
+    def setGluePointLeavingDirections(value: SafeArray[Double]): Self = StObject.set(x, "GluePointLeavingDirections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoordinates(value: SafeArray[EnhancedCustomShapeParameterPair]): Self = this.set("Coordinates", value.asInstanceOf[js.Any])
+    def setGluePointType(value: Double): Self = StObject.set(x, "GluePointType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtrusionAllowed(value: Boolean): Self = this.set("ExtrusionAllowed", value.asInstanceOf[js.Any])
+    def setGluePoints(value: SafeArray[EnhancedCustomShapeParameterPair]): Self = StObject.set(x, "GluePoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGluePointLeavingDirections(value: SafeArray[Double]): Self = this.set("GluePointLeavingDirections", value.asInstanceOf[js.Any])
+    def setSegments(value: SafeArray[EnhancedCustomShapeSegment]): Self = StObject.set(x, "Segments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGluePointType(value: Double): Self = this.set("GluePointType", value.asInstanceOf[js.Any])
+    def setStretchX(value: Double): Self = StObject.set(x, "StretchX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGluePoints(value: SafeArray[EnhancedCustomShapeParameterPair]): Self = this.set("GluePoints", value.asInstanceOf[js.Any])
+    def setStretchY(value: Double): Self = StObject.set(x, "StretchY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegments(value: SafeArray[EnhancedCustomShapeSegment]): Self = this.set("Segments", value.asInstanceOf[js.Any])
+    def setSubViewSize(value: SafeArray[Size]): Self = StObject.set(x, "SubViewSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStretchX(value: Double): Self = this.set("StretchX", value.asInstanceOf[js.Any])
+    def setTextFrames(value: SafeArray[EnhancedCustomShapeTextFrame]): Self = StObject.set(x, "TextFrames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStretchY(value: Double): Self = this.set("StretchY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubViewSize(value: SafeArray[Size]): Self = this.set("SubViewSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextFrames(value: SafeArray[EnhancedCustomShapeTextFrame]): Self = this.set("TextFrames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextPathAllowed(value: Boolean): Self = this.set("TextPathAllowed", value.asInstanceOf[js.Any])
+    def setTextPathAllowed(value: Boolean): Self = StObject.set(x, "TextPathAllowed", value.asInstanceOf[js.Any])
   }
 }

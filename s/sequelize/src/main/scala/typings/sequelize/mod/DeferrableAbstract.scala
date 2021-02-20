@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Deferrables that Sequelize supports.
   */
 @js.native
-trait DeferrableAbstract extends js.Object {
+trait DeferrableAbstract extends StObject {
   
   def toSql(): String = js.native
 }
@@ -28,21 +29,9 @@ object DeferrableAbstract {
   }
   
   @scala.inline
-  implicit class DeferrableAbstractOps[Self <: DeferrableAbstract] (val x: Self) extends AnyVal {
+  implicit class DeferrableAbstractMutableBuilder[Self <: DeferrableAbstract] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setToSql(value: () => String): Self = this.set("toSql", js.Any.fromFunction0(value))
+    def setToSql(value: () => String): Self = StObject.set(x, "toSql", js.Any.fromFunction0(value))
   }
 }

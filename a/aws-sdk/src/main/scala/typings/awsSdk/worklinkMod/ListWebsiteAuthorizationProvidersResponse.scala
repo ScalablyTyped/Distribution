@@ -1,11 +1,12 @@
 package typings.awsSdk.worklinkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListWebsiteAuthorizationProvidersResponse extends js.Object {
+trait ListWebsiteAuthorizationProvidersResponse extends StObject {
   
   /**
     * The pagination token to use to retrieve the next page of results for this operation. If this value is null, it retrieves the first page.
@@ -26,33 +27,21 @@ object ListWebsiteAuthorizationProvidersResponse {
   }
   
   @scala.inline
-  implicit class ListWebsiteAuthorizationProvidersResponseOps[Self <: ListWebsiteAuthorizationProvidersResponse] (val x: Self) extends AnyVal {
+  implicit class ListWebsiteAuthorizationProvidersResponseMutableBuilder[Self <: ListWebsiteAuthorizationProvidersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWebsiteAuthorizationProviders(value: WebsiteAuthorizationProvidersSummaryList): Self = StObject.set(x, "WebsiteAuthorizationProviders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setWebsiteAuthorizationProvidersUndefined: Self = StObject.set(x, "WebsiteAuthorizationProviders", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setWebsiteAuthorizationProvidersVarargs(value: WebsiteAuthorizationProviderSummary*): Self = this.set("WebsiteAuthorizationProviders", js.Array(value :_*))
-    
-    @scala.inline
-    def setWebsiteAuthorizationProviders(value: WebsiteAuthorizationProvidersSummaryList): Self = this.set("WebsiteAuthorizationProviders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsiteAuthorizationProviders: Self = this.set("WebsiteAuthorizationProviders", js.undefined)
+    def setWebsiteAuthorizationProvidersVarargs(value: WebsiteAuthorizationProviderSummary*): Self = StObject.set(x, "WebsiteAuthorizationProviders", js.Array(value :_*))
   }
 }

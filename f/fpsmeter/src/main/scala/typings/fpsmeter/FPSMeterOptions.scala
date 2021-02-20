@@ -1,63 +1,64 @@
 package typings.fpsmeter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FPSMeterOptions extends js.Object {
+trait FPSMeterOptions extends StObject {
   
-              // Meter right offset.
+  // Meter right offset.
   var bottom: js.UndefOr[String] = js.native
   
-          // Toggle between show 'fps' and 'ms' on this event.
+  // Toggle between show 'fps' and 'ms' on this event.
   var decimals: js.UndefOr[Double] = js.native
   
-              // Allow themes to use coloring by FPS heat. 0 FPS = red, maxFps = green.
+  // Allow themes to use coloring by FPS heat. 0 FPS = red, maxFps = green.
   var graph: js.UndefOr[Double] = js.native
   
-              // Meter theme. Build in: 'dark', 'light', 'transparent', 'colorful'.
+  // Meter theme. Build in: 'dark', 'light', 'transparent', 'colorful'.
   var heat: js.UndefOr[Double] = js.native
   
-              // Whether to show history graph.
+  // Whether to show history graph.
   var history: js.UndefOr[Double] = js.native
   
   var interval: js.UndefOr[Double] = js.native
   
-          // Meter Z index.
+  // Meter Z index.
   var left: js.UndefOr[String] = js.native
   
-          // Meter bottom offset.
+  // Meter bottom offset.
   var margin: js.UndefOr[String] = js.native
   
-          // Number of decimals in FPS number. 1 = 59.9, 2 = 59.94, ...
+  // Number of decimals in FPS number. 1 = 59.9, 2 = 59.94, ...
   var maxFps: js.UndefOr[Double] = js.native
   
-          // Minimal tick reporting interval in milliseconds.
+  // Minimal tick reporting interval in milliseconds.
   var position: js.UndefOr[String] = js.native
   
-              // Meter top offset.
+  // Meter top offset.
   var right: js.UndefOr[String] = js.native
   
-          // Spike smoothing strength. 1 means no smoothing.
+  // Spike smoothing strength. 1 means no smoothing.
   var show: js.UndefOr[String] = js.native
   
-           // Update interval in milliseconds.
+  // Update interval in milliseconds.
   var smoothing: js.UndefOr[Double] = js.native
   
-          // Meter margin. Helps with centering the counter when left: 50%;
+  // Meter margin. Helps with centering the counter when left: 50%;
   var theme: js.UndefOr[String] = js.native
   
-          // Max expected FPS value.
+  // Max expected FPS value.
   var threshold: js.UndefOr[Double] = js.native
   
-              // Whether to show 'fps', or 'ms' = frame duration in milliseconds.
+  // Whether to show 'fps', or 'ms' = frame duration in milliseconds.
   var toggleOn: js.UndefOr[String] = js.native
   
-              // Meter left offset.
+  // Meter left offset.
   var top: js.UndefOr[String] = js.native
   
-          // Meter position.
+  // Meter position.
   var zIndex: js.UndefOr[Double] = js.native
 }
 object FPSMeterOptions {
@@ -69,126 +70,114 @@ object FPSMeterOptions {
   }
   
   @scala.inline
-  implicit class FPSMeterOptionsOps[Self <: FPSMeterOptions] (val x: Self) extends AnyVal {
+  implicit class FPSMeterOptionsMutableBuilder[Self <: FPSMeterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottom(value: String): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
     
     @scala.inline
-    def deleteBottom: Self = this.set("bottom", js.undefined)
+    def setGraph(value: Double): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimals(value: Double): Self = this.set("decimals", value.asInstanceOf[js.Any])
+    def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
     
     @scala.inline
-    def deleteDecimals: Self = this.set("decimals", js.undefined)
+    def setHeat(value: Double): Self = StObject.set(x, "heat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraph(value: Double): Self = this.set("graph", value.asInstanceOf[js.Any])
+    def setHeatUndefined: Self = StObject.set(x, "heat", js.undefined)
     
     @scala.inline
-    def deleteGraph: Self = this.set("graph", js.undefined)
+    def setHistory(value: Double): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeat(value: Double): Self = this.set("heat", value.asInstanceOf[js.Any])
+    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
     @scala.inline
-    def deleteHeat: Self = this.set("heat", js.undefined)
+    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistory(value: Double): Self = this.set("history", value.asInstanceOf[js.Any])
+    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
     @scala.inline
-    def deleteHistory: Self = this.set("history", js.undefined)
+    def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteInterval: Self = this.set("interval", js.undefined)
+    def setMargin(value: String): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: String): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setMaxFps(value: Double): Self = StObject.set(x, "maxFps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: String): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setMaxFpsUndefined: Self = StObject.set(x, "maxFps", js.undefined)
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFps(value: Double): Self = this.set("maxFps", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteMaxFps: Self = this.set("maxFps", js.undefined)
+    def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setShow(value: String): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRight(value: String): Self = this.set("right", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteRight: Self = this.set("right", js.undefined)
+    def setSmoothing(value: Double): Self = StObject.set(x, "smoothing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: String): Self = this.set("show", value.asInstanceOf[js.Any])
+    def setSmoothingUndefined: Self = StObject.set(x, "smoothing", js.undefined)
     
     @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmoothing(value: Double): Self = this.set("smoothing", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteSmoothing: Self = this.set("smoothing", js.undefined)
+    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setToggleOn(value: String): Self = StObject.set(x, "toggleOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreshold(value: Double): Self = this.set("threshold", value.asInstanceOf[js.Any])
+    def setToggleOnUndefined: Self = StObject.set(x, "toggleOn", js.undefined)
     
     @scala.inline
-    def deleteThreshold: Self = this.set("threshold", js.undefined)
+    def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToggleOn(value: String): Self = this.set("toggleOn", value.asInstanceOf[js.Any])
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
     @scala.inline
-    def deleteToggleOn: Self = this.set("toggleOn", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop(value: String): Self = this.set("top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

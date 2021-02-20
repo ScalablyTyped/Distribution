@@ -1,12 +1,13 @@
 package typings.es6Shim
 
 import typings.std.TemplateStringsArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StringConstructor extends js.Object {
+trait StringConstructor extends StObject {
   
   /**
     * Return the String value whose elements are, in order, the elements in the List elements.
@@ -35,24 +36,12 @@ object StringConstructor {
   }
   
   @scala.inline
-  implicit class StringConstructorOps[Self <: StringConstructor] (val x: Self) extends AnyVal {
+  implicit class StringConstructorMutableBuilder[Self <: StringConstructor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromCodePoint(value: /* repeated */ Double => java.lang.String): Self = StObject.set(x, "fromCodePoint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFromCodePoint(value: /* repeated */ Double => java.lang.String): Self = this.set("fromCodePoint", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRaw(value: (TemplateStringsArray, /* repeated */ js.Any) => java.lang.String): Self = this.set("raw", js.Any.fromFunction2(value))
+    def setRaw(value: (TemplateStringsArray, /* repeated */ js.Any) => java.lang.String): Self = StObject.set(x, "raw", js.Any.fromFunction2(value))
   }
 }

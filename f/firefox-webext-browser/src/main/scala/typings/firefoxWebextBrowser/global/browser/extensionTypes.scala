@@ -1,5 +1,6 @@
 package typings.firefoxWebextBrowser.global.browser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Not allowed in: Content scripts, Devtools pages
   */
-@JSGlobal("browser.extensionTypes")
-@js.native
-object extensionTypes extends js.Object
+object extensionTypes

@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Row key for identifying a record in BigQuery table.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2BigQueryKey extends js.Object {
+trait SchemaGooglePrivacyDlpV2BigQueryKey extends StObject {
   
   /**
     * Absolute number of the row from the beginning of the table at the time of
@@ -30,30 +31,18 @@ object SchemaGooglePrivacyDlpV2BigQueryKey {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2BigQueryKeyOps[Self <: SchemaGooglePrivacyDlpV2BigQueryKey] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2BigQueryKeyMutableBuilder[Self <: SchemaGooglePrivacyDlpV2BigQueryKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRowNumber(value: String): Self = StObject.set(x, "rowNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRowNumberUndefined: Self = StObject.set(x, "rowNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTableReference(value: SchemaGooglePrivacyDlpV2BigQueryTable): Self = StObject.set(x, "tableReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowNumber(value: String): Self = this.set("rowNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowNumber: Self = this.set("rowNumber", js.undefined)
-    
-    @scala.inline
-    def setTableReference(value: SchemaGooglePrivacyDlpV2BigQueryTable): Self = this.set("tableReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableReference: Self = this.set("tableReference", js.undefined)
+    def setTableReferenceUndefined: Self = StObject.set(x, "tableReference", js.undefined)
   }
 }

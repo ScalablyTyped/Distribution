@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListWorkteamsResponse extends js.Object {
+trait ListWorkteamsResponse extends StObject {
   
   /**
     * If the response is truncated, Amazon SageMaker returns this token. To retrieve the next set of work teams, use it in the subsequent request.
@@ -26,30 +27,18 @@ object ListWorkteamsResponse {
   }
   
   @scala.inline
-  implicit class ListWorkteamsResponseOps[Self <: ListWorkteamsResponse] (val x: Self) extends AnyVal {
+  implicit class ListWorkteamsResponseMutableBuilder[Self <: ListWorkteamsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWorkteams(value: Workteams): Self = StObject.set(x, "Workteams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkteamsVarargs(value: Workteam*): Self = this.set("Workteams", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkteams(value: Workteams): Self = this.set("Workteams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setWorkteamsVarargs(value: Workteam*): Self = StObject.set(x, "Workteams", js.Array(value :_*))
   }
 }

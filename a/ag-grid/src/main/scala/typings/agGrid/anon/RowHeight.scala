@@ -1,11 +1,12 @@
 package typings.agGrid.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RowHeight extends js.Object {
+trait RowHeight extends StObject {
   
   var rowHeight: Double = js.native
   
@@ -20,24 +21,12 @@ object RowHeight {
   }
   
   @scala.inline
-  implicit class RowHeightOps[Self <: RowHeight] (val x: Self) extends AnyVal {
+  implicit class RowHeightMutableBuilder[Self <: RowHeight] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRowHeight(value: Double): Self = this.set("rowHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowTop(value: Double): Self = this.set("rowTop", value.asInstanceOf[js.Any])
+    def setRowTop(value: Double): Self = StObject.set(x, "rowTop", value.asInstanceOf[js.Any])
   }
 }

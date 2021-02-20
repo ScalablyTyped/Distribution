@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Audio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AudioGraphCreationStatus extends js.Object
+sealed trait AudioGraphCreationStatus extends StObject
 /** Defines status values for audio graph creation. */
 @JSGlobal("Windows.Media.Audio.AudioGraphCreationStatus")
 @js.native
-object AudioGraphCreationStatus extends js.Object {
+object AudioGraphCreationStatus extends StObject {
   
   /** The PrimaryRenderDevice for the audio graph is not available. */
   @js.native

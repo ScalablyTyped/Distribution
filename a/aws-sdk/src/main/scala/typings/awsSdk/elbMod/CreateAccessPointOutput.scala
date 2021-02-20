@@ -1,11 +1,12 @@
 package typings.awsSdk.elbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateAccessPointOutput extends js.Object {
+trait CreateAccessPointOutput extends StObject {
   
   /**
     * The DNS name of the load balancer.
@@ -21,24 +22,12 @@ object CreateAccessPointOutput {
   }
   
   @scala.inline
-  implicit class CreateAccessPointOutputOps[Self <: CreateAccessPointOutput] (val x: Self) extends AnyVal {
+  implicit class CreateAccessPointOutputMutableBuilder[Self <: CreateAccessPointOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDNSName(value: DNSName): Self = StObject.set(x, "DNSName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDNSName(value: DNSName): Self = this.set("DNSName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDNSName: Self = this.set("DNSName", js.undefined)
+    def setDNSNameUndefined: Self = StObject.set(x, "DNSName", js.undefined)
   }
 }

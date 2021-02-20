@@ -1,5 +1,6 @@
 package typings.googleapis.firestoreV1Mod.firestoreV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A precondition on a document, used for conditional operations.
   */
 @js.native
-trait SchemaPrecondition extends js.Object {
+trait SchemaPrecondition extends StObject {
   
   /**
     * When set to `true`, the target document must exist. When set to `false`,
@@ -31,30 +32,18 @@ object SchemaPrecondition {
   }
   
   @scala.inline
-  implicit class SchemaPreconditionOps[Self <: SchemaPrecondition] (val x: Self) extends AnyVal {
+  implicit class SchemaPreconditionMutableBuilder[Self <: SchemaPrecondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExists(value: Boolean): Self = this.set("exists", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExists: Self = this.set("exists", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

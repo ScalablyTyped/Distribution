@@ -2,6 +2,7 @@ package typings.prosemirrorModel.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.prosemirrorModel.anon.Index
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [the guide](/docs/guide/#doc) for more information.
   */
 @js.native
-trait ProsemirrorNode[S /* <: Schema[_, _] */] extends js.Object {
+trait ProsemirrorNode[S /* <: Schema[_, _] */] extends StObject {
   
   /**
     * An object mapping attribute names to values. The kind of

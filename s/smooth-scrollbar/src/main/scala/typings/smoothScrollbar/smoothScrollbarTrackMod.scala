@@ -1,14 +1,14 @@
 package typings.smoothScrollbar
 
 import typings.smoothScrollbar.scrollbarMod.Scrollbar
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("smooth-scrollbar/track", JSImport.Namespace)
-@js.native
-object smoothScrollbarTrackMod extends js.Object {
+object smoothScrollbarTrackMod {
   
+  @JSImport("smooth-scrollbar/track", "TrackController")
   @js.native
   class TrackController protected ()
     extends typings.smoothScrollbar.trackMod.TrackController {

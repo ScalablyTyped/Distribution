@@ -1,5 +1,6 @@
 package typings.swiper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,4 +25,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.swiper.swiperEsmMod.Controller
   - typings.swiper.swiperEsmMod.A11y
 */
-trait SwiperModule extends js.Object
+trait SwiperModule extends StObject

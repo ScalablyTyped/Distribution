@@ -1,5 +1,6 @@
 package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A type provider that describes a service-backed Type.
   */
 @js.native
-trait SchemaTypeProvider extends js.Object {
+trait SchemaTypeProvider extends StObject {
   
   /**
     * Allows resource handling overrides for specific collections
@@ -87,90 +88,78 @@ object SchemaTypeProvider {
   }
   
   @scala.inline
-  implicit class SchemaTypeProviderOps[Self <: SchemaTypeProvider] (val x: Self) extends AnyVal {
+  implicit class SchemaTypeProviderMutableBuilder[Self <: SchemaTypeProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollectionOverrides(value: js.Array[SchemaCollectionOverride]): Self = StObject.set(x, "collectionOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollectionOverridesUndefined: Self = StObject.set(x, "collectionOverrides", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollectionOverridesVarargs(value: SchemaCollectionOverride*): Self = StObject.set(x, "collectionOverrides", js.Array(value :_*))
     
     @scala.inline
-    def setCollectionOverridesVarargs(value: SchemaCollectionOverride*): Self = this.set("collectionOverrides", js.Array(value :_*))
+    def setCredential(value: SchemaCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollectionOverrides(value: js.Array[SchemaCollectionOverride]): Self = this.set("collectionOverrides", value.asInstanceOf[js.Any])
+    def setCredentialUndefined: Self = StObject.set(x, "credential", js.undefined)
     
     @scala.inline
-    def deleteCollectionOverrides: Self = this.set("collectionOverrides", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredential(value: SchemaCredential): Self = this.set("credential", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCredential: Self = this.set("credential", js.undefined)
+    def setDescriptorUrl(value: String): Self = StObject.set(x, "descriptorUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDescriptorUrlUndefined: Self = StObject.set(x, "descriptorUrl", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptorUrl(value: String): Self = this.set("descriptorUrl", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDescriptorUrl: Self = this.set("descriptorUrl", js.undefined)
+    def setInsertTime(value: String): Self = StObject.set(x, "insertTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInsertTimeUndefined: Self = StObject.set(x, "insertTime", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLabels(value: js.Array[SchemaTypeProviderLabelEntry]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertTime(value: String): Self = this.set("insertTime", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteInsertTime: Self = this.set("insertTime", js.undefined)
+    def setLabelsVarargs(value: SchemaTypeProviderLabelEntry*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
     @scala.inline
-    def setLabelsVarargs(value: SchemaTypeProviderLabelEntry*): Self = this.set("labels", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: js.Array[SchemaTypeProviderLabelEntry]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setOperation(value: SchemaOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOptions(value: SchemaOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation(value: SchemaOperation): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: SchemaOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
-    
-    @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
   }
 }

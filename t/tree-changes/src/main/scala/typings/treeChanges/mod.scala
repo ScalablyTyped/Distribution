@@ -1,18 +1,23 @@
 package typings.treeChanges
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tree-changes", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("tree-changes", JSImport.Default)
+  @js.native
   def default(data: IData, nextData: IData): ITreeChanges = js.native
   
+  type IData = IPlainObject | js.Array[IPlainObject]
+  
+  type IPlainObject = StringDictionary[js.Any]
+  
   @js.native
-  trait ITreeChanges extends js.Object {
+  trait ITreeChanges extends StObject {
     
     def changed(): Boolean = js.native
     def changed(key: String): Boolean = js.native
@@ -32,10 +37,6 @@ object mod extends js.Object {
     def increased(key: String): Boolean = js.native
     def increased(key: Double): Boolean = js.native
   }
-  
-  type IData = IPlainObject | js.Array[IPlainObject]
-  
-  type IPlainObject = StringDictionary[js.Any]
   
   type TypeInput = String | Boolean | Double | IPlainObject | (js.Array[String | Boolean | Double | IPlainObject])
 }

@@ -1,5 +1,6 @@
 package typings.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Used to walk through a set of SODA documents returned from a find() getCursor() method.
   */
 @js.native
-trait SodaDocumentCursor extends js.Object {
+trait SodaDocumentCursor extends StObject {
   
   /**
     * This method closes a SodaDocumentCursor. It must be called when the cursor is no longer required.

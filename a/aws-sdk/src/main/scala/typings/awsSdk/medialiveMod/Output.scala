@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Output extends js.Object {
+trait Output extends StObject {
   
   /**
     * The names of the AudioDescriptions used as audio sources for this output.
@@ -41,51 +42,39 @@ object Output {
   }
   
   @scala.inline
-  implicit class OutputOps[Self <: Output] (val x: Self) extends AnyVal {
+  implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioDescriptionNames(value: listOfString): Self = StObject.set(x, "AudioDescriptionNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioDescriptionNamesUndefined: Self = StObject.set(x, "AudioDescriptionNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioDescriptionNamesVarargs(value: string*): Self = StObject.set(x, "AudioDescriptionNames", js.Array(value :_*))
     
     @scala.inline
-    def setOutputSettings(value: OutputSettings): Self = this.set("OutputSettings", value.asInstanceOf[js.Any])
+    def setCaptionDescriptionNames(value: listOfString): Self = StObject.set(x, "CaptionDescriptionNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioDescriptionNamesVarargs(value: string*): Self = this.set("AudioDescriptionNames", js.Array(value :_*))
+    def setCaptionDescriptionNamesUndefined: Self = StObject.set(x, "CaptionDescriptionNames", js.undefined)
     
     @scala.inline
-    def setAudioDescriptionNames(value: listOfString): Self = this.set("AudioDescriptionNames", value.asInstanceOf[js.Any])
+    def setCaptionDescriptionNamesVarargs(value: string*): Self = StObject.set(x, "CaptionDescriptionNames", js.Array(value :_*))
     
     @scala.inline
-    def deleteAudioDescriptionNames: Self = this.set("AudioDescriptionNames", js.undefined)
+    def setOutputName(value: stringMin1Max255): Self = StObject.set(x, "OutputName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptionDescriptionNamesVarargs(value: string*): Self = this.set("CaptionDescriptionNames", js.Array(value :_*))
+    def setOutputNameUndefined: Self = StObject.set(x, "OutputName", js.undefined)
     
     @scala.inline
-    def setCaptionDescriptionNames(value: listOfString): Self = this.set("CaptionDescriptionNames", value.asInstanceOf[js.Any])
+    def setOutputSettings(value: OutputSettings): Self = StObject.set(x, "OutputSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCaptionDescriptionNames: Self = this.set("CaptionDescriptionNames", js.undefined)
+    def setVideoDescriptionName(value: string): Self = StObject.set(x, "VideoDescriptionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputName(value: stringMin1Max255): Self = this.set("OutputName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputName: Self = this.set("OutputName", js.undefined)
-    
-    @scala.inline
-    def setVideoDescriptionName(value: string): Self = this.set("VideoDescriptionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoDescriptionName: Self = this.set("VideoDescriptionName", js.undefined)
+    def setVideoDescriptionNameUndefined: Self = StObject.set(x, "VideoDescriptionName", js.undefined)
   }
 }

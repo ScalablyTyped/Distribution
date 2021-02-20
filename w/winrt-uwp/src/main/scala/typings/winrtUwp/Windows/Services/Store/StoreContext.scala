@@ -7,13 +7,14 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgre
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtUwp.Windows.System.User
 import typings.winrtUwp.Windows.WinRTEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides members you can use to access and manage Windows Store-related data for the current app. For example, you can use members of this class to get Windows Store listing and license info for the current app, purchase the current app or products that are offered by the app, or download and install package updates for the app. */
 @js.native
-trait StoreContext extends js.Object {
+trait StoreContext extends StObject {
   
   /**
     * Acquires a license for the specified downloadable content (DLC) package for the current app.

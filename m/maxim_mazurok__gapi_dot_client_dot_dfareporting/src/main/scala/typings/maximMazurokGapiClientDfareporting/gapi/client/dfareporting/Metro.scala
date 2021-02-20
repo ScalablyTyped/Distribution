@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Metro extends js.Object {
+trait Metro extends StObject {
   
   /** Country code of the country to which this metro region belongs. */
   var countryCode: js.UndefOr[String] = js.native
@@ -37,60 +38,48 @@ object Metro {
   }
   
   @scala.inline
-  implicit class MetroOps[Self <: Metro] (val x: Self) extends AnyVal {
+  implicit class MetroMutableBuilder[Self <: Metro] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountryDartId(value: String): Self = StObject.set(x, "countryDartId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    def setCountryDartIdUndefined: Self = StObject.set(x, "countryDartId", js.undefined)
     
     @scala.inline
-    def deleteCountryCode: Self = this.set("countryCode", js.undefined)
+    def setDartId(value: String): Self = StObject.set(x, "dartId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryDartId(value: String): Self = this.set("countryDartId", value.asInstanceOf[js.Any])
+    def setDartIdUndefined: Self = StObject.set(x, "dartId", js.undefined)
     
     @scala.inline
-    def deleteCountryDartId: Self = this.set("countryDartId", js.undefined)
+    def setDmaId(value: String): Self = StObject.set(x, "dmaId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDartId(value: String): Self = this.set("dartId", value.asInstanceOf[js.Any])
+    def setDmaIdUndefined: Self = StObject.set(x, "dmaId", js.undefined)
     
     @scala.inline
-    def deleteDartId: Self = this.set("dartId", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDmaId(value: String): Self = this.set("dmaId", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteDmaId: Self = this.set("dmaId", js.undefined)
+    def setMetroCode(value: String): Self = StObject.set(x, "metroCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setMetroCodeUndefined: Self = StObject.set(x, "metroCode", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetroCode(value: String): Self = this.set("metroCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetroCode: Self = this.set("metroCode", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

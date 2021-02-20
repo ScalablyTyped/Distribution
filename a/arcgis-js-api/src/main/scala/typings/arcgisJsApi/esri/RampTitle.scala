@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,33 +63,21 @@ object RampTitle {
   }
   
   @scala.inline
-  implicit class RampTitleOps[Self <: RampTitle] (val x: Self) extends AnyVal {
+  implicit class RampTitleMutableBuilder[Self <: RampTitle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNormField(value: String): Self = StObject.set(x, "normField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRatio(value: Boolean): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setRatioPercent(value: Boolean): Self = StObject.set(x, "ratioPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormField(value: String): Self = this.set("normField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRatio(value: Boolean): Self = this.set("ratio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRatioPercent(value: Boolean): Self = this.set("ratioPercent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRatioPercentTotal(value: Boolean): Self = this.set("ratioPercentTotal", value.asInstanceOf[js.Any])
+    def setRatioPercentTotal(value: Boolean): Self = StObject.set(x, "ratioPercentTotal", value.asInstanceOf[js.Any])
   }
 }

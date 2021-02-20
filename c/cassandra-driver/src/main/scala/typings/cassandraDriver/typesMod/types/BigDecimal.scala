@@ -1,13 +1,14 @@
 package typings.cassandraDriver.typesMod.types
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cassandra-driver/lib/types", "types.BigDecimal")
 @js.native
-class BigDecimal protected () extends js.Object {
+class BigDecimal protected () extends StObject {
   def this(unscaledValue: Double, scale: Double) = this()
   
   def add(other: BigDecimal): BigDecimal = js.native
@@ -30,16 +31,25 @@ class BigDecimal protected () extends js.Object {
   
   def toNumber(): Double = js.native
 }
-/* static members */
-@JSImport("cassandra-driver/lib/types", "types.BigDecimal")
-@js.native
-object BigDecimal extends js.Object {
+object BigDecimal {
   
+  /* static member */
+  @JSImport("cassandra-driver/lib/types", "types.BigDecimal.fromBuffer")
+  @js.native
   def fromBuffer(buf: Buffer): BigDecimal = js.native
   
+  /* static member */
+  @JSImport("cassandra-driver/lib/types", "types.BigDecimal.fromNumber")
+  @js.native
   def fromNumber(value: Double): BigDecimal = js.native
   
+  /* static member */
+  @JSImport("cassandra-driver/lib/types", "types.BigDecimal.fromString")
+  @js.native
   def fromString(value: String): BigDecimal = js.native
   
+  /* static member */
+  @JSImport("cassandra-driver/lib/types", "types.BigDecimal.toBuffer")
+  @js.native
   def toBuffer(value: BigDecimal): Buffer = js.native
 }

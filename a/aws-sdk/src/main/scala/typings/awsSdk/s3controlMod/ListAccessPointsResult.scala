@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAccessPointsResult extends js.Object {
+trait ListAccessPointsResult extends StObject {
   
   /**
     * Contains identification and configuration information for one or more access points associated with the specified bucket.
@@ -26,33 +27,21 @@ object ListAccessPointsResult {
   }
   
   @scala.inline
-  implicit class ListAccessPointsResultOps[Self <: ListAccessPointsResult] (val x: Self) extends AnyVal {
+  implicit class ListAccessPointsResultMutableBuilder[Self <: ListAccessPointsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessPointList(value: AccessPointList): Self = StObject.set(x, "AccessPointList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessPointListUndefined: Self = StObject.set(x, "AccessPointList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessPointListVarargs(value: AccessPoint*): Self = StObject.set(x, "AccessPointList", js.Array(value :_*))
     
     @scala.inline
-    def setAccessPointListVarargs(value: AccessPoint*): Self = this.set("AccessPointList", js.Array(value :_*))
+    def setNextToken(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessPointList(value: AccessPointList): Self = this.set("AccessPointList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccessPointList: Self = this.set("AccessPointList", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NonEmptyMaxLength1024String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.typeorm.mongodbTypingsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnorderedBulkOperation extends js.Object {
+trait UnorderedBulkOperation extends StObject {
   
   /**
     * Execute the ordered bulk operation.

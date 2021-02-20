@@ -1,11 +1,12 @@
 package typings.chrome.chrome.input.ime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CandidateWindowParameterProperties extends js.Object {
+trait CandidateWindowParameterProperties extends StObject {
   
   /**
     * Optional.
@@ -59,60 +60,48 @@ object CandidateWindowParameterProperties {
   }
   
   @scala.inline
-  implicit class CandidateWindowParameterPropertiesOps[Self <: CandidateWindowParameterProperties] (val x: Self) extends AnyVal {
+  implicit class CandidateWindowParameterPropertiesMutableBuilder[Self <: CandidateWindowParameterProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuxiliaryText(value: String): Self = StObject.set(x, "auxiliaryText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuxiliaryTextUndefined: Self = StObject.set(x, "auxiliaryText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuxiliaryTextVisible(value: Boolean): Self = StObject.set(x, "auxiliaryTextVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuxiliaryText(value: String): Self = this.set("auxiliaryText", value.asInstanceOf[js.Any])
+    def setAuxiliaryTextVisibleUndefined: Self = StObject.set(x, "auxiliaryTextVisible", js.undefined)
     
     @scala.inline
-    def deleteAuxiliaryText: Self = this.set("auxiliaryText", js.undefined)
+    def setCursorVisible(value: Boolean): Self = StObject.set(x, "cursorVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuxiliaryTextVisible(value: Boolean): Self = this.set("auxiliaryTextVisible", value.asInstanceOf[js.Any])
+    def setCursorVisibleUndefined: Self = StObject.set(x, "cursorVisible", js.undefined)
     
     @scala.inline
-    def deleteAuxiliaryTextVisible: Self = this.set("auxiliaryTextVisible", js.undefined)
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorVisible(value: Boolean): Self = this.set("cursorVisible", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def deleteCursorVisible: Self = this.set("cursorVisible", js.undefined)
+    def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVertical(value: Boolean): Self = this.set("vertical", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteVertical: Self = this.set("vertical", js.undefined)
+    def setWindowPosition(value: String): Self = StObject.set(x, "windowPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
-    
-    @scala.inline
-    def setWindowPosition(value: String): Self = this.set("windowPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowPosition: Self = this.set("windowPosition", js.undefined)
+    def setWindowPositionUndefined: Self = StObject.set(x, "windowPosition", js.undefined)
   }
 }

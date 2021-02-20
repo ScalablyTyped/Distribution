@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisvideoarchivedmediaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetClipOutput extends js.Object {
+trait GetClipOutput extends StObject {
   
   /**
     * The content type of the media in the requested clip.
@@ -26,30 +27,18 @@ object GetClipOutput {
   }
   
   @scala.inline
-  implicit class GetClipOutputOps[Self <: GetClipOutput] (val x: Self) extends AnyVal {
+  implicit class GetClipOutputMutableBuilder[Self <: GetClipOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPayload(value: Payload): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: ContentType): Self = this.set("ContentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentType: Self = this.set("ContentType", js.undefined)
-    
-    @scala.inline
-    def setPayload(value: Payload): Self = this.set("Payload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayload: Self = this.set("Payload", js.undefined)
+    def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
   }
 }

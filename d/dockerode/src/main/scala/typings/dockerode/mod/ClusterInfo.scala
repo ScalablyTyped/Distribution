@@ -1,5 +1,6 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,42 +39,30 @@ object ClusterInfo {
   }
   
   @scala.inline
-  implicit class ClusterInfoOps[Self <: ClusterInfo] (val x: Self) extends AnyVal {
+  implicit class ClusterInfoMutableBuilder[Self <: ClusterInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataPathPort(value: Double): Self = StObject.set(x, "DataPathPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultAddrPool(value: js.Array[String]): Self = StObject.set(x, "DefaultAddrPool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultAddrPoolVarargs(value: String*): Self = StObject.set(x, "DefaultAddrPool", js.Array(value :_*))
     
     @scala.inline
-    def setDataPathPort(value: Double): Self = this.set("DataPathPort", value.asInstanceOf[js.Any])
+    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultAddrPoolVarargs(value: String*): Self = this.set("DefaultAddrPool", js.Array(value :_*))
+    def setRootRotationInProgress(value: Boolean): Self = StObject.set(x, "RootRotationInProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultAddrPool(value: js.Array[String]): Self = this.set("DefaultAddrPool", value.asInstanceOf[js.Any])
+    def setSpec(value: Spec): Self = StObject.set(x, "Spec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setID(value: String): Self = this.set("ID", value.asInstanceOf[js.Any])
+    def setSubnetSize(value: Double): Self = StObject.set(x, "SubnetSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootRotationInProgress(value: Boolean): Self = this.set("RootRotationInProgress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpec(value: Spec): Self = this.set("Spec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubnetSize(value: Double): Self = this.set("SubnetSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTLSInfo(value: TLSInfo): Self = this.set("TLSInfo", value.asInstanceOf[js.Any])
+    def setTLSInfo(value: TLSInfo): Self = StObject.set(x, "TLSInfo", value.asInstanceOf[js.Any])
   }
 }

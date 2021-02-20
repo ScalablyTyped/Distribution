@@ -1,12 +1,13 @@
 package typings.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://console.bluemix.net/docs/services/Cloudant/api/search.html#queries
 @js.native
-trait DocumentSearchParams extends js.Object {
+trait DocumentSearchParams extends StObject {
   
   // A bookmark that was received from a previous search. Used for pagination.
   var bookmark: js.UndefOr[String] = js.native
@@ -74,150 +75,138 @@ object DocumentSearchParams {
   }
   
   @scala.inline
-  implicit class DocumentSearchParamsOps[Self <: DocumentSearchParams] (val x: Self) extends AnyVal {
+  implicit class DocumentSearchParamsMutableBuilder[Self <: DocumentSearchParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBookmarkUndefined: Self = StObject.set(x, "bookmark", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCounts(value: js.Array[String]): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBookmark(value: String): Self = this.set("bookmark", value.asInstanceOf[js.Any])
+    def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
     
     @scala.inline
-    def deleteBookmark: Self = this.set("bookmark", js.undefined)
+    def setCountsVarargs(value: String*): Self = StObject.set(x, "counts", js.Array(value :_*))
     
     @scala.inline
-    def setCountsVarargs(value: String*): Self = this.set("counts", js.Array(value :_*))
+    def setDrilldown(value: js.Array[String]): Self = StObject.set(x, "drilldown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCounts(value: js.Array[String]): Self = this.set("counts", value.asInstanceOf[js.Any])
+    def setDrilldownUndefined: Self = StObject.set(x, "drilldown", js.undefined)
     
     @scala.inline
-    def deleteCounts: Self = this.set("counts", js.undefined)
+    def setDrilldownVarargs(value: String*): Self = StObject.set(x, "drilldown", js.Array(value :_*))
     
     @scala.inline
-    def setDrilldownVarargs(value: String*): Self = this.set("drilldown", js.Array(value :_*))
+    def setGroup_field(value: String): Self = StObject.set(x, "group_field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrilldown(value: js.Array[String]): Self = this.set("drilldown", value.asInstanceOf[js.Any])
+    def setGroup_fieldUndefined: Self = StObject.set(x, "group_field", js.undefined)
     
     @scala.inline
-    def deleteDrilldown: Self = this.set("drilldown", js.undefined)
+    def setGroup_limit(value: Double): Self = StObject.set(x, "group_limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup_field(value: String): Self = this.set("group_field", value.asInstanceOf[js.Any])
+    def setGroup_limitUndefined: Self = StObject.set(x, "group_limit", js.undefined)
     
     @scala.inline
-    def deleteGroup_field: Self = this.set("group_field", js.undefined)
+    def setGroup_sort(value: String | js.Array[String]): Self = StObject.set(x, "group_sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup_limit(value: Double): Self = this.set("group_limit", value.asInstanceOf[js.Any])
+    def setGroup_sortUndefined: Self = StObject.set(x, "group_sort", js.undefined)
     
     @scala.inline
-    def deleteGroup_limit: Self = this.set("group_limit", js.undefined)
+    def setGroup_sortVarargs(value: String*): Self = StObject.set(x, "group_sort", js.Array(value :_*))
     
     @scala.inline
-    def setGroup_sortVarargs(value: String*): Self = this.set("group_sort", js.Array(value :_*))
+    def setHighlight_fields(value: js.Array[String]): Self = StObject.set(x, "highlight_fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup_sort(value: String | js.Array[String]): Self = this.set("group_sort", value.asInstanceOf[js.Any])
+    def setHighlight_fieldsUndefined: Self = StObject.set(x, "highlight_fields", js.undefined)
     
     @scala.inline
-    def deleteGroup_sort: Self = this.set("group_sort", js.undefined)
+    def setHighlight_fieldsVarargs(value: String*): Self = StObject.set(x, "highlight_fields", js.Array(value :_*))
     
     @scala.inline
-    def setHighlight_fieldsVarargs(value: String*): Self = this.set("highlight_fields", js.Array(value :_*))
+    def setHighlight_number(value: Double): Self = StObject.set(x, "highlight_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlight_fields(value: js.Array[String]): Self = this.set("highlight_fields", value.asInstanceOf[js.Any])
+    def setHighlight_numberUndefined: Self = StObject.set(x, "highlight_number", js.undefined)
     
     @scala.inline
-    def deleteHighlight_fields: Self = this.set("highlight_fields", js.undefined)
+    def setHighlight_post_tag(value: String): Self = StObject.set(x, "highlight_post_tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlight_number(value: Double): Self = this.set("highlight_number", value.asInstanceOf[js.Any])
+    def setHighlight_post_tagUndefined: Self = StObject.set(x, "highlight_post_tag", js.undefined)
     
     @scala.inline
-    def deleteHighlight_number: Self = this.set("highlight_number", js.undefined)
+    def setHighlight_pre_tag(value: String): Self = StObject.set(x, "highlight_pre_tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlight_post_tag(value: String): Self = this.set("highlight_post_tag", value.asInstanceOf[js.Any])
+    def setHighlight_pre_tagUndefined: Self = StObject.set(x, "highlight_pre_tag", js.undefined)
     
     @scala.inline
-    def deleteHighlight_post_tag: Self = this.set("highlight_post_tag", js.undefined)
+    def setHighlight_size(value: Double): Self = StObject.set(x, "highlight_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlight_pre_tag(value: String): Self = this.set("highlight_pre_tag", value.asInstanceOf[js.Any])
+    def setHighlight_sizeUndefined: Self = StObject.set(x, "highlight_size", js.undefined)
     
     @scala.inline
-    def deleteHighlight_pre_tag: Self = this.set("highlight_pre_tag", js.undefined)
+    def setInclude_docs(value: Boolean): Self = StObject.set(x, "include_docs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlight_size(value: Double): Self = this.set("highlight_size", value.asInstanceOf[js.Any])
+    def setInclude_docsUndefined: Self = StObject.set(x, "include_docs", js.undefined)
     
     @scala.inline
-    def deleteHighlight_size: Self = this.set("highlight_size", js.undefined)
+    def setInclude_fields(value: js.Array[String]): Self = StObject.set(x, "include_fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude_docs(value: Boolean): Self = this.set("include_docs", value.asInstanceOf[js.Any])
+    def setInclude_fieldsUndefined: Self = StObject.set(x, "include_fields", js.undefined)
     
     @scala.inline
-    def deleteInclude_docs: Self = this.set("include_docs", js.undefined)
+    def setInclude_fieldsVarargs(value: String*): Self = StObject.set(x, "include_fields", js.Array(value :_*))
     
     @scala.inline
-    def setInclude_fieldsVarargs(value: String*): Self = this.set("include_fields", js.Array(value :_*))
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude_fields(value: js.Array[String]): Self = this.set("include_fields", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteInclude_fields: Self = this.set("include_fields", js.undefined)
+    def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ(value: String): Self = this.set("q", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deleteQ: Self = this.set("q", js.undefined)
+    def setRanges(value: js.Object): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setSort(value: String | js.Array[String]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRanges(value: js.Object): Self = this.set("ranges", value.asInstanceOf[js.Any])
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def deleteRanges: Self = this.set("ranges", js.undefined)
+    def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value :_*))
     
     @scala.inline
-    def setSortVarargs(value: String*): Self = this.set("sort", js.Array(value :_*))
+    def setStale(value: Boolean): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSort(value: String | js.Array[String]): Self = this.set("sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
-    
-    @scala.inline
-    def setStale(value: Boolean): Self = this.set("stale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStale: Self = this.set("stale", js.undefined)
+    def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
   }
 }

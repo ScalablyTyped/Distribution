@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecutionEngineConfig extends js.Object {
+trait ExecutionEngineConfig extends StObject {
   
   /**
     * The unique identifier of the execution engine. For an EMR cluster, this is the cluster ID.
@@ -31,33 +32,21 @@ object ExecutionEngineConfig {
   }
   
   @scala.inline
-  implicit class ExecutionEngineConfigOps[Self <: ExecutionEngineConfig] (val x: Self) extends AnyVal {
+  implicit class ExecutionEngineConfigMutableBuilder[Self <: ExecutionEngineConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: XmlStringMaxLen256): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMasterInstanceSecurityGroupId(value: XmlStringMaxLen256): Self = StObject.set(x, "MasterInstanceSecurityGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMasterInstanceSecurityGroupIdUndefined: Self = StObject.set(x, "MasterInstanceSecurityGroupId", js.undefined)
     
     @scala.inline
-    def setId(value: XmlStringMaxLen256): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setType(value: ExecutionEngineType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterInstanceSecurityGroupId(value: XmlStringMaxLen256): Self = this.set("MasterInstanceSecurityGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMasterInstanceSecurityGroupId: Self = this.set("MasterInstanceSecurityGroupId", js.undefined)
-    
-    @scala.inline
-    def setType(value: ExecutionEngineType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

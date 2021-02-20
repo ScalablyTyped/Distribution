@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RepricingRuleRestrictionBoundary extends js.Object {
+trait RepricingRuleRestrictionBoundary extends StObject {
   
   /**
     * The percentage delta relative to the offer selling price. This field is signed. It must be negative in floor. When it is used in floor, it should be > -100. For example, if an offer
@@ -28,30 +29,18 @@ object RepricingRuleRestrictionBoundary {
   }
   
   @scala.inline
-  implicit class RepricingRuleRestrictionBoundaryOps[Self <: RepricingRuleRestrictionBoundary] (val x: Self) extends AnyVal {
+  implicit class RepricingRuleRestrictionBoundaryMutableBuilder[Self <: RepricingRuleRestrictionBoundary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPercentageDelta(value: Double): Self = StObject.set(x, "percentageDelta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPercentageDeltaUndefined: Self = StObject.set(x, "percentageDelta", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPriceDelta(value: String): Self = StObject.set(x, "priceDelta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentageDelta(value: Double): Self = this.set("percentageDelta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePercentageDelta: Self = this.set("percentageDelta", js.undefined)
-    
-    @scala.inline
-    def setPriceDelta(value: String): Self = this.set("priceDelta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriceDelta: Self = this.set("priceDelta", js.undefined)
+    def setPriceDeltaUndefined: Self = StObject.set(x, "priceDelta", js.undefined)
   }
 }

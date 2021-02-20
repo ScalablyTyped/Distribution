@@ -1,14 +1,14 @@
 package typings.three
 
 import typings.three.polyhedronBufferGeometryMod.PolyhedronBufferGeometry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/geometries/OctahedronBufferGeometry", JSImport.Namespace)
-@js.native
-object octahedronBufferGeometryMod extends js.Object {
+object octahedronBufferGeometryMod {
   
+  @JSImport("three/src/geometries/OctahedronBufferGeometry", "OctahedronBufferGeometry")
   @js.native
   /**
   	 * @param [radius=1]

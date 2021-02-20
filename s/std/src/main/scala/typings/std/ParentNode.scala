@@ -172,12 +172,13 @@ import typings.std.stdStrings.use
 import typings.std.stdStrings.video
 import typings.std.stdStrings.view
 import typings.std.stdStrings.wbr
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParentNode extends js.Object {
+trait ParentNode extends StObject {
   
   /**
     * Inserts nodes after the last child of node, while replacing strings in nodes with equivalent Text nodes.

@@ -1,12 +1,13 @@
 package typings.pulumiCloud.serviceMod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskRunOptions extends js.Object {
+trait TaskRunOptions extends StObject {
   
   /**
     * Optional environment variables to override those set in the container definition.
@@ -27,30 +28,18 @@ object TaskRunOptions {
   }
   
   @scala.inline
-  implicit class TaskRunOptionsOps[Self <: TaskRunOptions] (val x: Self) extends AnyVal {
+  implicit class TaskRunOptionsMutableBuilder[Self <: TaskRunOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironment(value: Record[String, String]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHost(value: HostProperties): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: Record[String, String]): Self = this.set("environment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
-    
-    @scala.inline
-    def setHost(value: HostProperties): Self = this.set("host", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
   }
 }

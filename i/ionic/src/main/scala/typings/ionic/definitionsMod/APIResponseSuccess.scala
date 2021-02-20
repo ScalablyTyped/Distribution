@@ -1,5 +1,6 @@
 package typings.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,27 +21,15 @@ object APIResponseSuccess {
   }
   
   @scala.inline
-  implicit class APIResponseSuccessOps[Self <: APIResponseSuccess] (val x: Self) extends AnyVal {
+  implicit class APIResponseSuccessMutableBuilder[Self <: APIResponseSuccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: APIResponseData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataVarargs(value: js.Object*): Self = this.set("data", js.Array(value :_*))
-    
-    @scala.inline
-    def setData(value: APIResponseData): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMeta(value: APIResponseMeta): Self = this.set("meta", value.asInstanceOf[js.Any])
+    def setMeta(value: APIResponseMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
   }
 }

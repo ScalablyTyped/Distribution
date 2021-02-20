@@ -1,11 +1,12 @@
 package typings.awsSdk.iot1clickprojectsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlacementTemplate extends js.Object {
+trait PlacementTemplate extends StObject {
   
   /**
     * The default attributes (key/value pairs) to be applied to all placements using this template.
@@ -26,30 +27,18 @@ object PlacementTemplate {
   }
   
   @scala.inline
-  implicit class PlacementTemplateOps[Self <: PlacementTemplate] (val x: Self) extends AnyVal {
+  implicit class PlacementTemplateMutableBuilder[Self <: PlacementTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultAttributes(value: DefaultPlacementAttributeMap): Self = StObject.set(x, "defaultAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultAttributesUndefined: Self = StObject.set(x, "defaultAttributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceTemplates(value: DeviceTemplateMap): Self = StObject.set(x, "deviceTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultAttributes(value: DefaultPlacementAttributeMap): Self = this.set("defaultAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultAttributes: Self = this.set("defaultAttributes", js.undefined)
-    
-    @scala.inline
-    def setDeviceTemplates(value: DeviceTemplateMap): Self = this.set("deviceTemplates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceTemplates: Self = this.set("deviceTemplates", js.undefined)
+    def setDeviceTemplatesUndefined: Self = StObject.set(x, "deviceTemplates", js.undefined)
   }
 }

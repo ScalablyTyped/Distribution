@@ -1,11 +1,12 @@
 package typings.awsSdk.mqMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LogsSummary extends js.Object {
+trait LogsSummary extends StObject {
   
   /**
     * Enables audit logging. Every user management action made using JMX or the ActiveMQ Web Console is logged.
@@ -41,48 +42,36 @@ object LogsSummary {
   }
   
   @scala.inline
-  implicit class LogsSummaryOps[Self <: LogsSummary] (val x: Self) extends AnyVal {
+  implicit class LogsSummaryMutableBuilder[Self <: LogsSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudit(value: boolean): Self = StObject.set(x, "Audit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuditLogGroup(value: string): Self = StObject.set(x, "AuditLogGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuditLogGroupUndefined: Self = StObject.set(x, "AuditLogGroup", js.undefined)
     
     @scala.inline
-    def setAudit(value: boolean): Self = this.set("Audit", value.asInstanceOf[js.Any])
+    def setAuditUndefined: Self = StObject.set(x, "Audit", js.undefined)
     
     @scala.inline
-    def deleteAudit: Self = this.set("Audit", js.undefined)
+    def setGeneral(value: boolean): Self = StObject.set(x, "General", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuditLogGroup(value: string): Self = this.set("AuditLogGroup", value.asInstanceOf[js.Any])
+    def setGeneralLogGroup(value: string): Self = StObject.set(x, "GeneralLogGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuditLogGroup: Self = this.set("AuditLogGroup", js.undefined)
+    def setGeneralLogGroupUndefined: Self = StObject.set(x, "GeneralLogGroup", js.undefined)
     
     @scala.inline
-    def setGeneral(value: boolean): Self = this.set("General", value.asInstanceOf[js.Any])
+    def setGeneralUndefined: Self = StObject.set(x, "General", js.undefined)
     
     @scala.inline
-    def deleteGeneral: Self = this.set("General", js.undefined)
+    def setPending(value: PendingLogs): Self = StObject.set(x, "Pending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneralLogGroup(value: string): Self = this.set("GeneralLogGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGeneralLogGroup: Self = this.set("GeneralLogGroup", js.undefined)
-    
-    @scala.inline
-    def setPending(value: PendingLogs): Self = this.set("Pending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePending: Self = this.set("Pending", js.undefined)
+    def setPendingUndefined: Self = StObject.set(x, "Pending", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransferringInputDeviceSummary extends js.Object {
+trait TransferringInputDeviceSummary extends StObject {
   
   /**
     * The unique ID of the input device.
@@ -36,42 +37,30 @@ object TransferringInputDeviceSummary {
   }
   
   @scala.inline
-  implicit class TransferringInputDeviceSummaryOps[Self <: TransferringInputDeviceSummary] (val x: Self) extends AnyVal {
+  implicit class TransferringInputDeviceSummaryMutableBuilder[Self <: TransferringInputDeviceSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: string): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setTargetCustomerId(value: string): Self = StObject.set(x, "TargetCustomerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: string): Self = this.set("Message", value.asInstanceOf[js.Any])
+    def setTargetCustomerIdUndefined: Self = StObject.set(x, "TargetCustomerId", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("Message", js.undefined)
+    def setTransferType(value: InputDeviceTransferType): Self = StObject.set(x, "TransferType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetCustomerId(value: string): Self = this.set("TargetCustomerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetCustomerId: Self = this.set("TargetCustomerId", js.undefined)
-    
-    @scala.inline
-    def setTransferType(value: InputDeviceTransferType): Self = this.set("TransferType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransferType: Self = this.set("TransferType", js.undefined)
+    def setTransferTypeUndefined: Self = StObject.set(x, "TransferType", js.undefined)
   }
 }

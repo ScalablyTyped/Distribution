@@ -2,14 +2,17 @@ package typings.rxjs
 
 import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.typesMod.UnaryFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/operators/partition", JSImport.Namespace)
-@js.native
-object operatorsPartitionMod extends js.Object {
+object operatorsPartitionMod {
   
+  @JSImport("rxjs/internal/operators/partition", "partition")
+  @js.native
   def partition[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean]): UnaryFunction[Observable[T], js.Tuple2[Observable[T], Observable[T]]] = js.native
+  @JSImport("rxjs/internal/operators/partition", "partition")
+  @js.native
   def partition[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean], thisArg: js.Any): UnaryFunction[Observable[T], js.Tuple2[Observable[T], Observable[T]]] = js.native
 }

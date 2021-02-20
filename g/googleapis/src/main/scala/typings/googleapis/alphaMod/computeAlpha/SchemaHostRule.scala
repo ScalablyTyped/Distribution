@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * PathMatcher to select the BackendService.
   */
 @js.native
-trait SchemaHostRule extends js.Object {
+trait SchemaHostRule extends StObject {
   
   /**
     * An optional description of this resource. Provide this property when you
@@ -39,39 +40,27 @@ object SchemaHostRule {
   }
   
   @scala.inline
-  implicit class SchemaHostRuleOps[Self <: SchemaHostRule] (val x: Self) extends AnyVal {
+  implicit class SchemaHostRuleMutableBuilder[Self <: SchemaHostRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHosts(value: js.Array[String]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setHostsVarargs(value: String*): Self = StObject.set(x, "hosts", js.Array(value :_*))
     
     @scala.inline
-    def setHostsVarargs(value: String*): Self = this.set("hosts", js.Array(value :_*))
+    def setPathMatcher(value: String): Self = StObject.set(x, "pathMatcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHosts(value: js.Array[String]): Self = this.set("hosts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHosts: Self = this.set("hosts", js.undefined)
-    
-    @scala.inline
-    def setPathMatcher(value: String): Self = this.set("pathMatcher", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePathMatcher: Self = this.set("pathMatcher", js.undefined)
+    def setPathMatcherUndefined: Self = StObject.set(x, "pathMatcher", js.undefined)
   }
 }

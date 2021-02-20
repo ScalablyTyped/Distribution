@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.maximMazurokGapiClientCompute.anon.Code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VpnTunnelsScopedList extends js.Object {
+trait VpnTunnelsScopedList extends StObject {
   
   /** A list of VPN tunnels contained in this scope. */
   var vpnTunnels: js.UndefOr[js.Array[VpnTunnel]] = js.native
@@ -23,33 +24,21 @@ object VpnTunnelsScopedList {
   }
   
   @scala.inline
-  implicit class VpnTunnelsScopedListOps[Self <: VpnTunnelsScopedList] (val x: Self) extends AnyVal {
+  implicit class VpnTunnelsScopedListMutableBuilder[Self <: VpnTunnelsScopedList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVpnTunnels(value: js.Array[VpnTunnel]): Self = StObject.set(x, "vpnTunnels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVpnTunnelsUndefined: Self = StObject.set(x, "vpnTunnels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVpnTunnelsVarargs(value: VpnTunnel*): Self = StObject.set(x, "vpnTunnels", js.Array(value :_*))
     
     @scala.inline
-    def setVpnTunnelsVarargs(value: VpnTunnel*): Self = this.set("vpnTunnels", js.Array(value :_*))
+    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpnTunnels(value: js.Array[VpnTunnel]): Self = this.set("vpnTunnels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpnTunnels: Self = this.set("vpnTunnels", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

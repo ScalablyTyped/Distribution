@@ -1,6 +1,7 @@
 package typings.sparqljs.mod
 
 import typings.sparqljs.sparqljsStrings.graph
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object GraphReference {
   }
   
   @scala.inline
-  implicit class GraphReferenceOps[Self <: GraphReference] (val x: Self) extends AnyVal {
+  implicit class GraphReferenceMutableBuilder[Self <: GraphReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamed(value: Boolean): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: Boolean): Self = this.set("all", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAll: Self = this.set("all", js.undefined)
-    
-    @scala.inline
-    def setNamed(value: Boolean): Self = this.set("named", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamed: Self = this.set("named", js.undefined)
+    def setNamedUndefined: Self = StObject.set(x, "named", js.undefined)
   }
 }

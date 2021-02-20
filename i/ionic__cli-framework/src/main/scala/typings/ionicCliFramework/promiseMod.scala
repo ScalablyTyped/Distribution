@@ -1,30 +1,40 @@
 package typings.ionicCliFramework
 
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/cli-framework/utils/promise", JSImport.Namespace)
-@js.native
-object promiseMod extends js.Object {
+object promiseMod {
   
-  val promisify: Promisify_ = js.native
-  
-  def promisifyEvent(emitter: EventEmitter, event: String): js.Promise[_] = js.native
-  def promisifyEvent(emitter: EventEmitter, event: js.Symbol): js.Promise[_] = js.native
-  
-  @js.native
-  object PromiseUtil extends js.Object {
+  object PromiseUtil {
     
+    @JSImport("@ionic/cli-framework/utils/promise", "PromiseUtil.any")
+    @js.native
     def any(promises: js.Array[js.Promise[_]]): js.Promise[_] = js.native
     
+    @JSImport("@ionic/cli-framework/utils/promise", "PromiseUtil.some")
+    @js.native
     def some(promises: js.Array[js.Promise[_]]): js.Promise[js.Array[_]] = js.native
+    @JSImport("@ionic/cli-framework/utils/promise", "PromiseUtil.some")
+    @js.native
     def some(promises: js.Array[js.Promise[_]], expected: Double): js.Promise[js.Array[_]] = js.native
   }
   
+  @JSImport("@ionic/cli-framework/utils/promise", "promisify")
   @js.native
-  trait Promisify_ extends js.Object {
+  val promisify: Promisify_ = js.native
+  
+  @JSImport("@ionic/cli-framework/utils/promise", "promisifyEvent")
+  @js.native
+  def promisifyEvent(emitter: EventEmitter, event: String): js.Promise[_] = js.native
+  @JSImport("@ionic/cli-framework/utils/promise", "promisifyEvent")
+  @js.native
+  def promisifyEvent(emitter: EventEmitter, event: js.Symbol): js.Promise[_] = js.native
+  
+  @js.native
+  trait Promisify_ extends StObject {
     
     def apply[T](
       func: js.Function1[

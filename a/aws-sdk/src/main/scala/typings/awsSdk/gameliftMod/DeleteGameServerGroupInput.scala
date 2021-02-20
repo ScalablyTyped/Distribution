@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteGameServerGroupInput extends js.Object {
+trait DeleteGameServerGroupInput extends StObject {
   
   /**
     * The type of delete to perform. Options include the following:    SAFE_DELETE – Terminates the game server group and EC2 Auto Scaling group only when it has no game servers that are in UTILIZED status.    FORCE_DELETE – Terminates the game server group, including all active game servers regardless of their utilization status, and the EC2 Auto Scaling group.     RETAIN – Does a safe delete of the game server group but retains the EC2 Auto Scaling group as is.  
@@ -26,27 +27,15 @@ object DeleteGameServerGroupInput {
   }
   
   @scala.inline
-  implicit class DeleteGameServerGroupInputOps[Self <: DeleteGameServerGroupInput] (val x: Self) extends AnyVal {
+  implicit class DeleteGameServerGroupInputMutableBuilder[Self <: DeleteGameServerGroupInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleteOption(value: GameServerGroupDeleteOption): Self = StObject.set(x, "DeleteOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteOptionUndefined: Self = StObject.set(x, "DeleteOption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = this.set("GameServerGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeleteOption(value: GameServerGroupDeleteOption): Self = this.set("DeleteOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeleteOption: Self = this.set("DeleteOption", js.undefined)
+    def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
   }
 }

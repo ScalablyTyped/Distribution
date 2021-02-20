@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDomainResponse extends js.Object {
+trait CreateDomainResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the created domain.
@@ -26,30 +27,18 @@ object CreateDomainResponse {
   }
   
   @scala.inline
-  implicit class CreateDomainResponseOps[Self <: CreateDomainResponse] (val x: Self) extends AnyVal {
+  implicit class CreateDomainResponseMutableBuilder[Self <: CreateDomainResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainArn(value: DomainArn): Self = StObject.set(x, "DomainArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainArnUndefined: Self = StObject.set(x, "DomainArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUrl(value: String1024): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainArn(value: DomainArn): Self = this.set("DomainArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomainArn: Self = this.set("DomainArn", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String1024): Self = this.set("Url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("Url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

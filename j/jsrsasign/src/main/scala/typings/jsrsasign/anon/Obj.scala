@@ -3,12 +3,13 @@ package typings.jsrsasign.anon
 import typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
 import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
 import typings.jsrsasign.jsrsasign.RSAKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Obj extends js.Object {
+trait Obj extends StObject {
   
   var hex: String = js.native
   
@@ -23,24 +24,12 @@ object Obj {
   }
   
   @scala.inline
-  implicit class ObjOps[Self <: Obj] (val x: Self) extends AnyVal {
+  implicit class ObjMutableBuilder[Self <: Obj] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHex(value: String): Self = this.set("hex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObj(value: RSAKey | DSA | ECDSA): Self = this.set("obj", value.asInstanceOf[js.Any])
+    def setObj(value: RSAKey | DSA | ECDSA): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
   }
 }

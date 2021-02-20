@@ -3,6 +3,7 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 import typings.devtoolsProtocol.devtoolsProtocolStrings.canceled
 import typings.devtoolsProtocol.devtoolsProtocolStrings.completed
 import typings.devtoolsProtocol.devtoolsProtocolStrings.inProgress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.completed
   - typings.devtoolsProtocol.devtoolsProtocolStrings.canceled
 */
-trait DownloadProgressEventState extends js.Object
+trait DownloadProgressEventState extends StObject
 object DownloadProgressEventState {
   
   @scala.inline

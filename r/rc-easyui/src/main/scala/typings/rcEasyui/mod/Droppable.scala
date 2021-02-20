@@ -1,6 +1,7 @@
 package typings.rcEasyui.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,64 +21,81 @@ class Droppable protected ()
   @JSName("componentWillUnmount")
   def componentWillUnmount_MDroppable(): Unit = js.native
 }
-@JSImport("rc-easyui", "Droppable")
-@js.native
-object Droppable extends js.Object {
+object Droppable {
   
-  @js.native
-  object contextTypes extends js.Object {
+  object contextTypes {
     
-    @js.native
-    object locale extends js.Object {
+    object locale {
       
+      @JSImport("rc-easyui", "Droppable.contextTypes.locale")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Droppable.contextTypes.locale
+      @JSImport("rc-easyui", "Droppable.contextTypes.locale.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object t extends js.Object {
+    object t {
       
+      @JSImport("rc-easyui", "Droppable.contextTypes.t")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Droppable.contextTypes.t
+      @JSImport("rc-easyui", "Droppable.contextTypes.t.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }
   
-  @js.native
-  object defaultProps extends js.Object {
+  object defaultProps {
     
+    @JSImport("rc-easyui", "Droppable.defaultProps.disabled")
+    @js.native
     val disabled: Boolean = js.native
     
+    @JSImport("rc-easyui", "Droppable.defaultProps.onDragEnter")
+    @js.native
     def onDragEnter(e: js.Any): Unit = js.native
     
+    @JSImport("rc-easyui", "Droppable.defaultProps.onDragLeave")
+    @js.native
     def onDragLeave(e: js.Any): Unit = js.native
     
+    @JSImport("rc-easyui", "Droppable.defaultProps.onDragOver")
+    @js.native
     def onDragOver(e: js.Any): Unit = js.native
     
+    @JSImport("rc-easyui", "Droppable.defaultProps.onDrop")
+    @js.native
     def onDrop(e: js.Any): Unit = js.native
   }
   
-  @js.native
-  object propTypes extends js.Object {
+  object propTypes {
     
-    @js.native
-    object disabled extends js.Object {
+    object disabled {
       
+      @JSImport("rc-easyui", "Droppable.propTypes.disabled")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Droppable.propTypes.disabled
+      @JSImport("rc-easyui", "Droppable.propTypes.disabled.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object scope extends js.Object {
+    object scope {
       
+      @JSImport("rc-easyui", "Droppable.propTypes.scope")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Droppable.propTypes.scope
+      @JSImport("rc-easyui", "Droppable.propTypes.scope.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }

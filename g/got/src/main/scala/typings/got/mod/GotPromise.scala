@@ -1,13 +1,14 @@
 package typings.got.mod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Promise<got.got.Response<B>> & {cancel (): void} */
 @js.native
-trait GotPromise[B /* <: Buffer | String | js.Object */] extends js.Object {
+trait GotPromise[B /* <: Buffer | String | js.Object */] extends StObject {
   
   def cancel(): Unit = js.native
   

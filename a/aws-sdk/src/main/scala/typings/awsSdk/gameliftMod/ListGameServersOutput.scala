@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListGameServersOutput extends js.Object {
+trait ListGameServersOutput extends StObject {
   
   /**
     * A collection of game server objects that match the request.
@@ -26,33 +27,21 @@ object ListGameServersOutput {
   }
   
   @scala.inline
-  implicit class ListGameServersOutputOps[Self <: ListGameServersOutput] (val x: Self) extends AnyVal {
+  implicit class ListGameServersOutputMutableBuilder[Self <: ListGameServersOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGameServers(value: GameServers): Self = StObject.set(x, "GameServers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGameServersUndefined: Self = StObject.set(x, "GameServers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGameServersVarargs(value: GameServer*): Self = StObject.set(x, "GameServers", js.Array(value :_*))
     
     @scala.inline
-    def setGameServersVarargs(value: GameServer*): Self = this.set("GameServers", js.Array(value :_*))
+    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameServers(value: GameServers): Self = this.set("GameServers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGameServers: Self = this.set("GameServers", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

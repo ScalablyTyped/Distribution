@@ -1,5 +1,6 @@
 package typings.openssiWebsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.openssiWebsdk.openssiWebsdkStrings.passed
   - typings.openssiWebsdk.openssiWebsdkStrings.failed
 */
-trait VerificationState extends js.Object
+trait VerificationState extends StObject
 object VerificationState {
   
   @scala.inline

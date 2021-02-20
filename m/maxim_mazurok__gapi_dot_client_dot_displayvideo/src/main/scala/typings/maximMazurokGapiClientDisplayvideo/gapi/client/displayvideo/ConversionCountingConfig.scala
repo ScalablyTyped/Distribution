@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConversionCountingConfig extends js.Object {
+trait ConversionCountingConfig extends StObject {
   
   /**
     * The Floodlight activity configs used to track conversions. The number of conversions counted is the sum of all of the conversions counted by all of the Floodlight activity IDs
@@ -28,33 +29,21 @@ object ConversionCountingConfig {
   }
   
   @scala.inline
-  implicit class ConversionCountingConfigOps[Self <: ConversionCountingConfig] (val x: Self) extends AnyVal {
+  implicit class ConversionCountingConfigMutableBuilder[Self <: ConversionCountingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFloodlightActivityConfigs(value: js.Array[TrackingFloodlightActivityConfig]): Self = StObject.set(x, "floodlightActivityConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFloodlightActivityConfigsUndefined: Self = StObject.set(x, "floodlightActivityConfigs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFloodlightActivityConfigsVarargs(value: TrackingFloodlightActivityConfig*): Self = StObject.set(x, "floodlightActivityConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setFloodlightActivityConfigsVarargs(value: TrackingFloodlightActivityConfig*): Self = this.set("floodlightActivityConfigs", js.Array(value :_*))
+    def setPostViewCountPercentageMillis(value: String): Self = StObject.set(x, "postViewCountPercentageMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodlightActivityConfigs(value: js.Array[TrackingFloodlightActivityConfig]): Self = this.set("floodlightActivityConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFloodlightActivityConfigs: Self = this.set("floodlightActivityConfigs", js.undefined)
-    
-    @scala.inline
-    def setPostViewCountPercentageMillis(value: String): Self = this.set("postViewCountPercentageMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostViewCountPercentageMillis: Self = this.set("postViewCountPercentageMillis", js.undefined)
+    def setPostViewCountPercentageMillisUndefined: Self = StObject.set(x, "postViewCountPercentageMillis", js.undefined)
   }
 }

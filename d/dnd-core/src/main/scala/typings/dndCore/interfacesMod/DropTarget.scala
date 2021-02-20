@@ -1,11 +1,12 @@
 package typings.dndCore.interfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DropTarget extends js.Object {
+trait DropTarget extends StObject {
   
   def canDrop(monitor: DragDropMonitor, targetId: Identifier): Boolean = js.native
   
@@ -26,27 +27,15 @@ object DropTarget {
   }
   
   @scala.inline
-  implicit class DropTargetOps[Self <: DropTarget] (val x: Self) extends AnyVal {
+  implicit class DropTargetMutableBuilder[Self <: DropTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanDrop(value: (DragDropMonitor, Identifier) => Boolean): Self = StObject.set(x, "canDrop", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrop(value: (DragDropMonitor, Identifier) => js.Any): Self = StObject.set(x, "drop", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCanDrop(value: (DragDropMonitor, Identifier) => Boolean): Self = this.set("canDrop", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setDrop(value: (DragDropMonitor, Identifier) => js.Any): Self = this.set("drop", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setHover(value: (DragDropMonitor, Identifier) => Unit): Self = this.set("hover", js.Any.fromFunction2(value))
+    def setHover(value: (DragDropMonitor, Identifier) => Unit): Self = StObject.set(x, "hover", js.Any.fromFunction2(value))
   }
 }

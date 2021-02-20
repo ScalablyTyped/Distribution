@@ -1,11 +1,12 @@
 package typings.awsSdk.databrewMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sample extends js.Object {
+trait Sample extends StObject {
   
   /**
     * The number of rows in the sample.
@@ -26,27 +27,15 @@ object Sample {
   }
   
   @scala.inline
-  implicit class SampleOps[Self <: Sample] (val x: Self) extends AnyVal {
+  implicit class SampleMutableBuilder[Self <: Sample] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSize(value: SampleSize): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: SampleType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: SampleSize): Self = this.set("Size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("Size", js.undefined)
+    def setType(value: SampleType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

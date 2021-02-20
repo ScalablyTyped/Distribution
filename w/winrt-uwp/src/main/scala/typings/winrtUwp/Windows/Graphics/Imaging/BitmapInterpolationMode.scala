@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Graphics.Imaging
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BitmapInterpolationMode extends js.Object
+sealed trait BitmapInterpolationMode extends StObject
 /** Specifies the interpolation mode used for scaling pixel data. */
 @JSGlobal("Windows.Graphics.Imaging.BitmapInterpolationMode")
 @js.native
-object BitmapInterpolationMode extends js.Object {
+object BitmapInterpolationMode extends StObject {
   
   /** A bicubic interpolation algorithm. Destination pixel values are computed as a weighted average of the nearest sixteen pixels in a 4x4 grid. */
   @js.native

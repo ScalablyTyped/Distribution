@@ -3,6 +3,7 @@ package typings.vexflow.Vex.Flow
 import typings.vexflow.anon.BaseY
 import typings.vexflow.anon.FillStyle_
 import typings.vexflow.anon.Stemdirection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ trait StemmableNote extends Note {
   
   def getStem(): Stem = js.native
   
-   //inconsistent name: getStemMinumumLength -> getStemMinimumLength
+  //inconsistent name: getStemMinumumLength -> getStemMinimumLength
   def getStemDirection(): Double = js.native
   
   def getStemExtension(): Double = js.native

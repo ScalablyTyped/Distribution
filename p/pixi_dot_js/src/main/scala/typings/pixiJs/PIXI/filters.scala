@@ -1,5 +1,6 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,9 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * document.body.appendChild(app.view);
   * @namespace PIXI.filters
   */
-@JSGlobal("PIXI.filters")
-@js.native
-object filters extends js.Object {
+object filters {
   
   /**
     * Simplest filter - applies alpha.

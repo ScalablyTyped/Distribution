@@ -1,12 +1,13 @@
 package typings.fabric.anon
 
 import typings.fabric.fabricImplMod.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bl extends js.Object {
+trait Bl extends StObject {
   
   var bl: Point = js.native
   
@@ -25,30 +26,18 @@ object Bl {
   }
   
   @scala.inline
-  implicit class BlOps[Self <: Bl] (val x: Self) extends AnyVal {
+  implicit class BlMutableBuilder[Self <: Bl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBl(value: Point): Self = StObject.set(x, "bl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBr(value: Point): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTl(value: Point): Self = StObject.set(x, "tl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBl(value: Point): Self = this.set("bl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBr(value: Point): Self = this.set("br", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTl(value: Point): Self = this.set("tl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTr(value: Point): Self = this.set("tr", value.asInstanceOf[js.Any])
+    def setTr(value: Point): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
   }
 }

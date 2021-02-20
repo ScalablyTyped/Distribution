@@ -9,6 +9,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.OnLoad
 import typings.officeJsPreview.officeJsPreviewStrings.Periodic
 import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

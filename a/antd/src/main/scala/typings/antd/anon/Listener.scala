@@ -2,12 +2,13 @@ package typings.antd.anon
 
 import typings.std.MediaQueryList
 import typings.std.MediaQueryListEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Listener extends js.Object {
+trait Listener extends StObject {
   
   var listener: (js.ThisFunction1[/* this */ MediaQueryList, /* ev */ MediaQueryListEvent, _]) | Null = js.native
   
@@ -22,27 +23,15 @@ object Listener {
   }
   
   @scala.inline
-  implicit class ListenerOps[Self <: Listener] (val x: Self) extends AnyVal {
+  implicit class ListenerMutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setListener(value: js.ThisFunction1[/* this */ MediaQueryList, /* ev */ MediaQueryListEvent, _]): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setListenerNull: Self = StObject.set(x, "listener", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMql(value: MediaQueryList): Self = this.set("mql", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setListener(value: js.ThisFunction1[/* this */ MediaQueryList, /* ev */ MediaQueryListEvent, _]): Self = this.set("listener", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setListenerNull: Self = this.set("listener", null)
+    def setMql(value: MediaQueryList): Self = StObject.set(x, "mql", value.asInstanceOf[js.Any])
   }
 }

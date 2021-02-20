@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CombinedAudienceGroup extends js.Object {
+trait CombinedAudienceGroup extends StObject {
   
   /**
     * Required. All combined audience targeting settings in combined audience group. Repeated settings with same id will be ignored. The number of combined audience settings should be no
@@ -22,27 +23,15 @@ object CombinedAudienceGroup {
   }
   
   @scala.inline
-  implicit class CombinedAudienceGroupOps[Self <: CombinedAudienceGroup] (val x: Self) extends AnyVal {
+  implicit class CombinedAudienceGroupMutableBuilder[Self <: CombinedAudienceGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSettings(value: js.Array[CombinedAudienceTargetingSetting]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSettingsVarargs(value: CombinedAudienceTargetingSetting*): Self = this.set("settings", js.Array(value :_*))
-    
-    @scala.inline
-    def setSettings(value: js.Array[CombinedAudienceTargetingSetting]): Self = this.set("settings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSettings: Self = this.set("settings", js.undefined)
+    def setSettingsVarargs(value: CombinedAudienceTargetingSetting*): Self = StObject.set(x, "settings", js.Array(value :_*))
   }
 }

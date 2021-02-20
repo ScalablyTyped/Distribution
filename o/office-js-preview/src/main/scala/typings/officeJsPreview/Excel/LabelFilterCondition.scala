@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LabelFilterCondition extends js.Object
+sealed trait LabelFilterCondition extends StObject
 /**
   *
   * Enum representing all accepted conditions by which a label filter can be applied.
@@ -16,7 +17,7 @@ sealed trait LabelFilterCondition extends js.Object
   */
 @JSGlobal("Excel.LabelFilterCondition")
 @js.native
-object LabelFilterCondition extends js.Object {
+object LabelFilterCondition extends StObject {
   
   /**
     * Label begins with substring criterion.

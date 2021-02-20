@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Restriction on Datasource.
   */
 @js.native
-trait SchemaDataSourceRestriction extends js.Object {
+trait SchemaDataSourceRestriction extends StObject {
   
   /**
     * Filter options restricting the results. If multiple filters are present,
@@ -32,33 +33,21 @@ object SchemaDataSourceRestriction {
   }
   
   @scala.inline
-  implicit class SchemaDataSourceRestrictionOps[Self <: SchemaDataSourceRestriction] (val x: Self) extends AnyVal {
+  implicit class SchemaDataSourceRestrictionMutableBuilder[Self <: SchemaDataSourceRestriction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterOptions(value: js.Array[SchemaFilterOptions]): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterOptionsUndefined: Self = StObject.set(x, "filterOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterOptionsVarargs(value: SchemaFilterOptions*): Self = StObject.set(x, "filterOptions", js.Array(value :_*))
     
     @scala.inline
-    def setFilterOptionsVarargs(value: SchemaFilterOptions*): Self = this.set("filterOptions", js.Array(value :_*))
+    def setSource(value: SchemaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterOptions(value: js.Array[SchemaFilterOptions]): Self = this.set("filterOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterOptions: Self = this.set("filterOptions", js.undefined)
-    
-    @scala.inline
-    def setSource(value: SchemaSource): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SSHPublicKey extends js.Object {
+trait SSHPublicKey extends StObject {
   
   /**
     * The MD5 message digest of the SSH public key.
@@ -52,39 +53,27 @@ object SSHPublicKey {
   }
   
   @scala.inline
-  implicit class SSHPublicKeyOps[Self <: SSHPublicKey] (val x: Self) extends AnyVal {
+  implicit class SSHPublicKeyMutableBuilder[Self <: SSHPublicKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFingerprint(value: publicKeyFingerprintType): Self = StObject.set(x, "Fingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSSHPublicKeyBody(value: publicKeyMaterialType): Self = StObject.set(x, "SSHPublicKeyBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSSHPublicKeyId(value: publicKeyIdType): Self = StObject.set(x, "SSHPublicKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFingerprint(value: publicKeyFingerprintType): Self = this.set("Fingerprint", value.asInstanceOf[js.Any])
+    def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSHPublicKeyBody(value: publicKeyMaterialType): Self = this.set("SSHPublicKeyBody", value.asInstanceOf[js.Any])
+    def setUploadDate(value: dateType): Self = StObject.set(x, "UploadDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSHPublicKeyId(value: publicKeyIdType): Self = this.set("SSHPublicKeyId", value.asInstanceOf[js.Any])
+    def setUploadDateUndefined: Self = StObject.set(x, "UploadDate", js.undefined)
     
     @scala.inline
-    def setStatus(value: statusType): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserName(value: userNameType): Self = this.set("UserName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUploadDate(value: dateType): Self = this.set("UploadDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadDate: Self = this.set("UploadDate", js.undefined)
+    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

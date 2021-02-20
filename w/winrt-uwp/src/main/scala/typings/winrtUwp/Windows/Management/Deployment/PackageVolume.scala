@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Management.Deployment
 
 import typings.winrtUwp.Windows.ApplicationModel.Package
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a package storage volume. */
 @js.native
-trait PackageVolume extends js.Object {
+trait PackageVolume extends StObject {
   
   /**
     * Gets a collection of info about all installed instances of the specified package for all registered users.

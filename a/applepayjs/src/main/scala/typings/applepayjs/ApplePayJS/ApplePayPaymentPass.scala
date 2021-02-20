@@ -1,5 +1,6 @@
 package typings.applepayjs.ApplePayJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a provisioned payment card for Apple Pay payments.
   */
 @js.native
-trait ApplePayPaymentPass extends js.Object {
+trait ApplePayPaymentPass extends StObject {
   
   /**
     * The activation state of the pass.
@@ -48,39 +49,27 @@ object ApplePayPaymentPass {
   }
   
   @scala.inline
-  implicit class ApplePayPaymentPassOps[Self <: ApplePayPaymentPass] (val x: Self) extends AnyVal {
+  implicit class ApplePayPaymentPassMutableBuilder[Self <: ApplePayPaymentPass] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivationState(value: ApplePayPaymentPassActivationState): Self = StObject.set(x, "activationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceAccountIdentifier(value: String): Self = StObject.set(x, "deviceAccountIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceAccountIdentifierUndefined: Self = StObject.set(x, "deviceAccountIdentifier", js.undefined)
     
     @scala.inline
-    def setActivationState(value: ApplePayPaymentPassActivationState): Self = this.set("activationState", value.asInstanceOf[js.Any])
+    def setDeviceAccountNumberSuffix(value: String): Self = StObject.set(x, "deviceAccountNumberSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryAccountIdentifier(value: String): Self = this.set("primaryAccountIdentifier", value.asInstanceOf[js.Any])
+    def setDeviceAccountNumberSuffixUndefined: Self = StObject.set(x, "deviceAccountNumberSuffix", js.undefined)
     
     @scala.inline
-    def setPrimaryAccountNumberSuffix(value: String): Self = this.set("primaryAccountNumberSuffix", value.asInstanceOf[js.Any])
+    def setPrimaryAccountIdentifier(value: String): Self = StObject.set(x, "primaryAccountIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceAccountIdentifier(value: String): Self = this.set("deviceAccountIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceAccountIdentifier: Self = this.set("deviceAccountIdentifier", js.undefined)
-    
-    @scala.inline
-    def setDeviceAccountNumberSuffix(value: String): Self = this.set("deviceAccountNumberSuffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceAccountNumberSuffix: Self = this.set("deviceAccountNumberSuffix", js.undefined)
+    def setPrimaryAccountNumberSuffix(value: String): Self = StObject.set(x, "primaryAccountNumberSuffix", value.asInstanceOf[js.Any])
   }
 }

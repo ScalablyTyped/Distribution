@@ -1,21 +1,29 @@
 package typings.playable
 
 import typings.playable.typesMod.IOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/core/dependency-container/createContainer", JSImport.Namespace)
-@js.native
-object createContainerMod extends js.Object {
+object createContainerMod {
   
+  @JSImport("playable/dist/src/core/dependency-container/createContainer", JSImport.Default)
+  @js.native
   def default(): Container = js.native
+  @JSImport("playable/dist/src/core/dependency-container/createContainer", JSImport.Default)
+  @js.native
   def default(options: js.UndefOr[scala.Nothing], __parentContainer: Container): Container = js.native
+  @JSImport("playable/dist/src/core/dependency-container/createContainer", JSImport.Default)
+  @js.native
   def default(options: IOptions): Container = js.native
+  @JSImport("playable/dist/src/core/dependency-container/createContainer", JSImport.Default)
+  @js.native
   def default(options: IOptions, __parentContainer: Container): Container = js.native
   
+  @JSImport("playable/dist/src/core/dependency-container/createContainer", "Container")
   @js.native
-  class Container () extends js.Object {
+  class Container () extends StObject {
     def this(options: IOptions) = this()
     def this(options: js.UndefOr[scala.Nothing], _parentContainer: Container) = this()
     def this(options: IOptions, _parentContainer: Container) = this()

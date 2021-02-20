@@ -1,5 +1,6 @@
 package typings.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,10 +37,10 @@ class Quaternion ()
   def this(x: Double, y: Double, z: Double, w: Double) = this()
 }
 /* static members */
-@JSImport("three", "Quaternion")
-@js.native
-object Quaternion extends js.Object {
+object Quaternion {
   
+  @JSImport("three", "Quaternion.multiplyQuaternionsFlat")
+  @js.native
   def multiplyQuaternionsFlat(
     dst: js.Array[Double],
     dstOffset: Double,
@@ -52,6 +53,8 @@ object Quaternion extends js.Object {
   /**
   	 * Adapted from http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/slerp/.
   	 */
+  @JSImport("three", "Quaternion.slerp")
+  @js.native
   def slerp(
     qa: typings.three.quaternionMod.Quaternion,
     qb: typings.three.quaternionMod.Quaternion,
@@ -59,6 +62,8 @@ object Quaternion extends js.Object {
     t: Double
   ): typings.three.quaternionMod.Quaternion = js.native
   
+  @JSImport("three", "Quaternion.slerpFlat")
+  @js.native
   def slerpFlat(
     dst: js.Array[Double],
     dstOffset: Double,

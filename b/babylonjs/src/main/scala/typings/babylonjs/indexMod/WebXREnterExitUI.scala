@@ -1,5 +1,6 @@
 package typings.babylonjs.indexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class WebXREnterExitUI protected ()
   extends typings.babylonjs.xRIndexMod.WebXREnterExitUI
 /* static members */
-@JSImport("babylonjs/index", "WebXREnterExitUI")
-@js.native
-object WebXREnterExitUI extends js.Object {
+object WebXREnterExitUI {
   
   /**
     * Creates UI to allow the user to enter/exit XR mode
@@ -25,6 +24,8 @@ object WebXREnterExitUI extends js.Object {
     * @param options options to configure the UI
     * @returns the created ui
     */
+  @JSImport("babylonjs/index", "WebXREnterExitUI.CreateAsync")
+  @js.native
   def CreateAsync(
     scene: typings.babylonjs.sceneMod.Scene,
     helper: typings.babylonjs.webXRExperienceHelperMod.WebXRExperienceHelper,

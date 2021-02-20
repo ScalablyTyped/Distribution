@@ -1,12 +1,13 @@
 package typings.officeUiFabricReact.indexBundleMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "KeyboardSpinDirection")
 @js.native
-object KeyboardSpinDirection extends js.Object {
+object KeyboardSpinDirection extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

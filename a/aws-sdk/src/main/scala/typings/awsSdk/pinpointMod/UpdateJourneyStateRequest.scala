@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateJourneyStateRequest extends js.Object {
+trait UpdateJourneyStateRequest extends StObject {
   
   /**
     * The unique identifier for the application. This identifier is displayed as the Project ID on the Amazon Pinpoint console.
@@ -28,27 +29,15 @@ object UpdateJourneyStateRequest {
   }
   
   @scala.inline
-  implicit class UpdateJourneyStateRequestOps[Self <: UpdateJourneyStateRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateJourneyStateRequestMutableBuilder[Self <: UpdateJourneyStateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJourneyId(value: string): Self = StObject.set(x, "JourneyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJourneyId(value: string): Self = this.set("JourneyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJourneyStateRequest(value: JourneyStateRequest): Self = this.set("JourneyStateRequest", value.asInstanceOf[js.Any])
+    def setJourneyStateRequest(value: JourneyStateRequest): Self = StObject.set(x, "JourneyStateRequest", value.asInstanceOf[js.Any])
   }
 }

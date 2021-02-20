@@ -1,11 +1,12 @@
 package typings.awsSdk.codegurureviewerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RepositoryAnalysis extends js.Object {
+trait RepositoryAnalysis extends StObject {
   
   /**
     *  A  SourceCodeType  that specifies the tip of a branch in an associated repository. 
@@ -21,21 +22,9 @@ object RepositoryAnalysis {
   }
   
   @scala.inline
-  implicit class RepositoryAnalysisOps[Self <: RepositoryAnalysis] (val x: Self) extends AnyVal {
+  implicit class RepositoryAnalysisMutableBuilder[Self <: RepositoryAnalysis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRepositoryHead(value: RepositoryHeadSourceCodeType): Self = this.set("RepositoryHead", value.asInstanceOf[js.Any])
+    def setRepositoryHead(value: RepositoryHeadSourceCodeType): Self = StObject.set(x, "RepositoryHead", value.asInstanceOf[js.Any])
   }
 }

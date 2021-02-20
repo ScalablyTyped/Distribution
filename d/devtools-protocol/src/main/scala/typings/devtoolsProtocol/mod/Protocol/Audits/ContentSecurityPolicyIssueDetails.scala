@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Audits
 
 import typings.devtoolsProtocol.mod.Protocol.DOM.BackendNodeId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContentSecurityPolicyIssueDetails extends js.Object {
+trait ContentSecurityPolicyIssueDetails extends StObject {
   
   /**
     * The url not included in allowed sources.
@@ -41,51 +42,39 @@ object ContentSecurityPolicyIssueDetails {
   }
   
   @scala.inline
-  implicit class ContentSecurityPolicyIssueDetailsOps[Self <: ContentSecurityPolicyIssueDetails] (val x: Self) extends AnyVal {
+  implicit class ContentSecurityPolicyIssueDetailsMutableBuilder[Self <: ContentSecurityPolicyIssueDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockedURL(value: String): Self = StObject.set(x, "blockedURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockedURLUndefined: Self = StObject.set(x, "blockedURL", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentSecurityPolicyViolationType(value: ContentSecurityPolicyViolationType): Self = StObject.set(x, "contentSecurityPolicyViolationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentSecurityPolicyViolationType(value: ContentSecurityPolicyViolationType): Self = this.set("contentSecurityPolicyViolationType", value.asInstanceOf[js.Any])
+    def setFrameAncestor(value: AffectedFrame): Self = StObject.set(x, "frameAncestor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReportOnly(value: Boolean): Self = this.set("isReportOnly", value.asInstanceOf[js.Any])
+    def setFrameAncestorUndefined: Self = StObject.set(x, "frameAncestor", js.undefined)
     
     @scala.inline
-    def setViolatedDirective(value: String): Self = this.set("violatedDirective", value.asInstanceOf[js.Any])
+    def setIsReportOnly(value: Boolean): Self = StObject.set(x, "isReportOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockedURL(value: String): Self = this.set("blockedURL", value.asInstanceOf[js.Any])
+    def setSourceCodeLocation(value: SourceCodeLocation): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlockedURL: Self = this.set("blockedURL", js.undefined)
+    def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
     
     @scala.inline
-    def setFrameAncestor(value: AffectedFrame): Self = this.set("frameAncestor", value.asInstanceOf[js.Any])
+    def setViolatedDirective(value: String): Self = StObject.set(x, "violatedDirective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFrameAncestor: Self = this.set("frameAncestor", js.undefined)
+    def setViolatingNodeId(value: BackendNodeId): Self = StObject.set(x, "violatingNodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceCodeLocation(value: SourceCodeLocation): Self = this.set("sourceCodeLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceCodeLocation: Self = this.set("sourceCodeLocation", js.undefined)
-    
-    @scala.inline
-    def setViolatingNodeId(value: BackendNodeId): Self = this.set("violatingNodeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViolatingNodeId: Self = this.set("violatingNodeId", js.undefined)
+    def setViolatingNodeIdUndefined: Self = StObject.set(x, "violatingNodeId", js.undefined)
   }
 }

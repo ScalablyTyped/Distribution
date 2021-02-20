@@ -3,12 +3,13 @@ package typings.cadesplugin.CAdESCOM
 import typings.cadesplugin.CADESCommon.ValuesOf
 import typings.cadesplugin.CADESCommon.VarDate
 import typings.cadesplugin.CAPICOM.CAPICOM_CERTIFICATE_INCLUDE_OPTION
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CPSigner extends js.Object {
+trait CPSigner extends StObject {
   
   var Certificate: typings.cadesplugin.CAPICOM.Certificate = js.native
   

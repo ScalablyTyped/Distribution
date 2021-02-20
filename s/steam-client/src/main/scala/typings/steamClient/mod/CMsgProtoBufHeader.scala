@@ -1,11 +1,12 @@
 package typings.steamClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CMsgProtoBufHeader extends js.Object {
+trait CMsgProtoBufHeader extends StObject {
   
   var admin_spoofing_user: js.UndefOr[Boolean] = js.native
   
@@ -58,147 +59,135 @@ object CMsgProtoBufHeader {
   }
   
   @scala.inline
-  implicit class CMsgProtoBufHeaderOps[Self <: CMsgProtoBufHeader] (val x: Self) extends AnyVal {
+  implicit class CMsgProtoBufHeaderMutableBuilder[Self <: CMsgProtoBufHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdmin_spoofing_user(value: Boolean): Self = StObject.set(x, "admin_spoofing_user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdmin_spoofing_userUndefined: Self = StObject.set(x, "admin_spoofing_user", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuth_account_flags(value: Double): Self = StObject.set(x, "auth_account_flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdmin_spoofing_user(value: Boolean): Self = this.set("admin_spoofing_user", value.asInstanceOf[js.Any])
+    def setAuth_account_flagsUndefined: Self = StObject.set(x, "auth_account_flags", js.undefined)
     
     @scala.inline
-    def deleteAdmin_spoofing_user: Self = this.set("admin_spoofing_user", js.undefined)
+    def setClient_sessionid(value: Double): Self = StObject.set(x, "client_sessionid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth_account_flags(value: Double): Self = this.set("auth_account_flags", value.asInstanceOf[js.Any])
+    def setClient_sessionidUndefined: Self = StObject.set(x, "client_sessionid", js.undefined)
     
     @scala.inline
-    def deleteAuth_account_flags: Self = this.set("auth_account_flags", js.undefined)
+    def setEresult(value: Double): Self = StObject.set(x, "eresult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_sessionid(value: Double): Self = this.set("client_sessionid", value.asInstanceOf[js.Any])
+    def setEresultUndefined: Self = StObject.set(x, "eresult", js.undefined)
     
     @scala.inline
-    def deleteClient_sessionid: Self = this.set("client_sessionid", js.undefined)
+    def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEresult(value: Double): Self = this.set("eresult", value.asInstanceOf[js.Any])
+    def setError_messageUndefined: Self = StObject.set(x, "error_message", js.undefined)
     
     @scala.inline
-    def deleteEresult: Self = this.set("eresult", js.undefined)
+    def setForward_to_sysid(value: js.Array[Double]): Self = StObject.set(x, "forward_to_sysid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError_message(value: String): Self = this.set("error_message", value.asInstanceOf[js.Any])
+    def setForward_to_sysidUndefined: Self = StObject.set(x, "forward_to_sysid", js.undefined)
     
     @scala.inline
-    def deleteError_message: Self = this.set("error_message", js.undefined)
+    def setForward_to_sysidVarargs(value: Double*): Self = StObject.set(x, "forward_to_sysid", js.Array(value :_*))
     
     @scala.inline
-    def setForward_to_sysidVarargs(value: Double*): Self = this.set("forward_to_sysid", js.Array(value :_*))
+    def setIp(value: Double): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForward_to_sysid(value: js.Array[Double]): Self = this.set("forward_to_sysid", value.asInstanceOf[js.Any])
+    def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
     
     @scala.inline
-    def deleteForward_to_sysid: Self = this.set("forward_to_sysid", js.undefined)
+    def setIs_from_external_source(value: Boolean): Self = StObject.set(x, "is_from_external_source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIp(value: Double): Self = this.set("ip", value.asInstanceOf[js.Any])
+    def setIs_from_external_sourceUndefined: Self = StObject.set(x, "is_from_external_source", js.undefined)
     
     @scala.inline
-    def deleteIp: Self = this.set("ip", js.undefined)
+    def setJobid_source(value: String): Self = StObject.set(x, "jobid_source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_from_external_source(value: Boolean): Self = this.set("is_from_external_source", value.asInstanceOf[js.Any])
+    def setJobid_sourceUndefined: Self = StObject.set(x, "jobid_source", js.undefined)
     
     @scala.inline
-    def deleteIs_from_external_source: Self = this.set("is_from_external_source", js.undefined)
+    def setJobid_target(value: String): Self = StObject.set(x, "jobid_target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobid_source(value: String): Self = this.set("jobid_source", value.asInstanceOf[js.Any])
+    def setJobid_targetUndefined: Self = StObject.set(x, "jobid_target", js.undefined)
     
     @scala.inline
-    def deleteJobid_source: Self = this.set("jobid_source", js.undefined)
+    def setMessageid(value: String): Self = StObject.set(x, "messageid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobid_target(value: String): Self = this.set("jobid_target", value.asInstanceOf[js.Any])
+    def setMessageidUndefined: Self = StObject.set(x, "messageid", js.undefined)
     
     @scala.inline
-    def deleteJobid_target: Self = this.set("jobid_target", js.undefined)
+    def setPublisher_group_id(value: Double): Self = StObject.set(x, "publisher_group_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageid(value: String): Self = this.set("messageid", value.asInstanceOf[js.Any])
+    def setPublisher_group_idUndefined: Self = StObject.set(x, "publisher_group_id", js.undefined)
     
     @scala.inline
-    def deleteMessageid: Self = this.set("messageid", js.undefined)
+    def setRouting_appid(value: Double): Self = StObject.set(x, "routing_appid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublisher_group_id(value: Double): Self = this.set("publisher_group_id", value.asInstanceOf[js.Any])
+    def setRouting_appidUndefined: Self = StObject.set(x, "routing_appid", js.undefined)
     
     @scala.inline
-    def deletePublisher_group_id: Self = this.set("publisher_group_id", js.undefined)
+    def setSeq_num(value: Double): Self = StObject.set(x, "seq_num", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouting_appid(value: Double): Self = this.set("routing_appid", value.asInstanceOf[js.Any])
+    def setSeq_numUndefined: Self = StObject.set(x, "seq_num", js.undefined)
     
     @scala.inline
-    def deleteRouting_appid: Self = this.set("routing_appid", js.undefined)
+    def setSteamid(value: String): Self = StObject.set(x, "steamid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeq_num(value: Double): Self = this.set("seq_num", value.asInstanceOf[js.Any])
+    def setSteamidUndefined: Self = StObject.set(x, "steamid", js.undefined)
     
     @scala.inline
-    def deleteSeq_num: Self = this.set("seq_num", js.undefined)
+    def setSysid(value: Double): Self = StObject.set(x, "sysid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSteamid(value: String): Self = this.set("steamid", value.asInstanceOf[js.Any])
+    def setSysidUndefined: Self = StObject.set(x, "sysid", js.undefined)
     
     @scala.inline
-    def deleteSteamid: Self = this.set("steamid", js.undefined)
+    def setTarget_job_name(value: String): Self = StObject.set(x, "target_job_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSysid(value: Double): Self = this.set("sysid", value.asInstanceOf[js.Any])
+    def setTarget_job_nameUndefined: Self = StObject.set(x, "target_job_name", js.undefined)
     
     @scala.inline
-    def deleteSysid: Self = this.set("sysid", js.undefined)
+    def setToken_source(value: Double): Self = StObject.set(x, "token_source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget_job_name(value: String): Self = this.set("target_job_name", value.asInstanceOf[js.Any])
+    def setToken_sourceUndefined: Self = StObject.set(x, "token_source", js.undefined)
     
     @scala.inline
-    def deleteTarget_job_name: Self = this.set("target_job_name", js.undefined)
+    def setTrace_tag(value: String): Self = StObject.set(x, "trace_tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken_source(value: Double): Self = this.set("token_source", value.asInstanceOf[js.Any])
+    def setTrace_tagUndefined: Self = StObject.set(x, "trace_tag", js.undefined)
     
     @scala.inline
-    def deleteToken_source: Self = this.set("token_source", js.undefined)
+    def setTransport_error(value: Double): Self = StObject.set(x, "transport_error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrace_tag(value: String): Self = this.set("trace_tag", value.asInstanceOf[js.Any])
+    def setTransport_errorUndefined: Self = StObject.set(x, "transport_error", js.undefined)
     
     @scala.inline
-    def deleteTrace_tag: Self = this.set("trace_tag", js.undefined)
+    def setWebapi_key_id(value: Double): Self = StObject.set(x, "webapi_key_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransport_error(value: Double): Self = this.set("transport_error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransport_error: Self = this.set("transport_error", js.undefined)
-    
-    @scala.inline
-    def setWebapi_key_id(value: Double): Self = this.set("webapi_key_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebapi_key_id: Self = this.set("webapi_key_id", js.undefined)
+    def setWebapi_key_idUndefined: Self = StObject.set(x, "webapi_key_id", js.undefined)
   }
 }

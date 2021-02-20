@@ -2,12 +2,13 @@ package typings.react.mod
 
 import typings.react.anon.Html
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DOMAttributes[T] extends js.Object {
+trait DOMAttributes[T] extends StObject {
   
   var children: js.UndefOr[ReactNode] = js.native
   
@@ -88,7 +89,7 @@ trait DOMAttributes[T] extends js.Object {
   
   var onInvalid: js.UndefOr[FormEventHandler[T]] = js.native
   
-   // also a Media Event
+  // also a Media Event
   // Keyboard Events
   var onKeyDown: js.UndefOr[KeyboardEventHandler[T]] = js.native
   
@@ -196,504 +197,492 @@ object DOMAttributes {
   }
   
   @scala.inline
-  implicit class DOMAttributesOps[Self <: DOMAttributes[_], T] (val x: Self with DOMAttributes[T]) extends AnyVal {
+  implicit class DOMAttributesMutableBuilder[Self <: DOMAttributes[_], T] (val x: Self with DOMAttributes[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDangerouslySetInnerHTML(value: Html): Self = StObject.set(x, "dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setDangerouslySetInnerHTMLUndefined: Self = StObject.set(x, "dangerouslySetInnerHTML", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setOnAbort(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDangerouslySetInnerHTML(value: Html): Self = this.set("dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
+    def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
     
     @scala.inline
-    def deleteDangerouslySetInnerHTML: Self = this.set("dangerouslySetInnerHTML", js.undefined)
+    def setOnAnimationEnd(value: AnimationEvent[T] => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnAbort(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onAbort", js.Any.fromFunction1(value))
+    def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
     
     @scala.inline
-    def deleteOnAbort: Self = this.set("onAbort", js.undefined)
+    def setOnAnimationIteration(value: AnimationEvent[T] => Unit): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnAnimationEnd(value: AnimationEvent[T] => Unit): Self = this.set("onAnimationEnd", js.Any.fromFunction1(value))
+    def setOnAnimationIterationUndefined: Self = StObject.set(x, "onAnimationIteration", js.undefined)
     
     @scala.inline
-    def deleteOnAnimationEnd: Self = this.set("onAnimationEnd", js.undefined)
+    def setOnAnimationStart(value: AnimationEvent[T] => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnAnimationIteration(value: AnimationEvent[T] => Unit): Self = this.set("onAnimationIteration", js.Any.fromFunction1(value))
+    def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
     
     @scala.inline
-    def deleteOnAnimationIteration: Self = this.set("onAnimationIteration", js.undefined)
+    def setOnAuxClick(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnAnimationStart(value: AnimationEvent[T] => Unit): Self = this.set("onAnimationStart", js.Any.fromFunction1(value))
+    def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
     
     @scala.inline
-    def deleteOnAnimationStart: Self = this.set("onAnimationStart", js.undefined)
+    def setOnBeforeInput(value: FormEvent[T] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnAuxClick(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onAuxClick", js.Any.fromFunction1(value))
+    def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
     
     @scala.inline
-    def deleteOnAuxClick: Self = this.set("onAuxClick", js.undefined)
+    def setOnBlur(value: FocusEvent[T] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnBeforeInput(value: FormEvent[T] => Unit): Self = this.set("onBeforeInput", js.Any.fromFunction1(value))
+    def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
-    def deleteOnBeforeInput: Self = this.set("onBeforeInput", js.undefined)
+    def setOnCanPlay(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnBlur(value: FocusEvent[T] => Unit): Self = this.set("onBlur", js.Any.fromFunction1(value))
+    def setOnCanPlayThrough(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    def setOnCanPlayThroughUndefined: Self = StObject.set(x, "onCanPlayThrough", js.undefined)
     
     @scala.inline
-    def setOnCanPlay(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onCanPlay", js.Any.fromFunction1(value))
+    def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
     
     @scala.inline
-    def deleteOnCanPlay: Self = this.set("onCanPlay", js.undefined)
+    def setOnChange(value: FormEvent[T] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnCanPlayThrough(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onCanPlayThrough", js.Any.fromFunction1(value))
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def deleteOnCanPlayThrough: Self = this.set("onCanPlayThrough", js.undefined)
+    def setOnClick(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnChange(value: FormEvent[T] => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setOnCompositionEnd(value: CompositionEvent[T] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnClick(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    def setOnCompositionEndUndefined: Self = StObject.set(x, "onCompositionEnd", js.undefined)
     
     @scala.inline
-    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    def setOnCompositionStart(value: CompositionEvent[T] => Unit): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnCompositionEnd(value: CompositionEvent[T] => Unit): Self = this.set("onCompositionEnd", js.Any.fromFunction1(value))
+    def setOnCompositionStartUndefined: Self = StObject.set(x, "onCompositionStart", js.undefined)
     
     @scala.inline
-    def deleteOnCompositionEnd: Self = this.set("onCompositionEnd", js.undefined)
+    def setOnCompositionUpdate(value: CompositionEvent[T] => Unit): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnCompositionStart(value: CompositionEvent[T] => Unit): Self = this.set("onCompositionStart", js.Any.fromFunction1(value))
+    def setOnCompositionUpdateUndefined: Self = StObject.set(x, "onCompositionUpdate", js.undefined)
     
     @scala.inline
-    def deleteOnCompositionStart: Self = this.set("onCompositionStart", js.undefined)
+    def setOnContextMenu(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnCompositionUpdate(value: CompositionEvent[T] => Unit): Self = this.set("onCompositionUpdate", js.Any.fromFunction1(value))
+    def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
     
     @scala.inline
-    def deleteOnCompositionUpdate: Self = this.set("onCompositionUpdate", js.undefined)
+    def setOnCopy(value: ClipboardEvent[T] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnContextMenu(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onContextMenu", js.Any.fromFunction1(value))
+    def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
     
     @scala.inline
-    def deleteOnContextMenu: Self = this.set("onContextMenu", js.undefined)
+    def setOnCut(value: ClipboardEvent[T] => Unit): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnCopy(value: ClipboardEvent[T] => Unit): Self = this.set("onCopy", js.Any.fromFunction1(value))
+    def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
     
     @scala.inline
-    def deleteOnCopy: Self = this.set("onCopy", js.undefined)
+    def setOnDoubleClick(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnCut(value: ClipboardEvent[T] => Unit): Self = this.set("onCut", js.Any.fromFunction1(value))
+    def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
     
     @scala.inline
-    def deleteOnCut: Self = this.set("onCut", js.undefined)
+    def setOnDrag(value: DragEvent[T] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDoubleClick(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onDoubleClick", js.Any.fromFunction1(value))
+    def setOnDragEnd(value: DragEvent[T] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnDoubleClick: Self = this.set("onDoubleClick", js.undefined)
+    def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
     
     @scala.inline
-    def setOnDrag(value: DragEvent[T] => Unit): Self = this.set("onDrag", js.Any.fromFunction1(value))
+    def setOnDragEnter(value: DragEvent[T] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnDrag: Self = this.set("onDrag", js.undefined)
+    def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
     
     @scala.inline
-    def setOnDragEnd(value: DragEvent[T] => Unit): Self = this.set("onDragEnd", js.Any.fromFunction1(value))
+    def setOnDragExit(value: DragEvent[T] => Unit): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnDragEnd: Self = this.set("onDragEnd", js.undefined)
+    def setOnDragExitUndefined: Self = StObject.set(x, "onDragExit", js.undefined)
     
     @scala.inline
-    def setOnDragEnter(value: DragEvent[T] => Unit): Self = this.set("onDragEnter", js.Any.fromFunction1(value))
+    def setOnDragLeave(value: DragEvent[T] => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnDragEnter: Self = this.set("onDragEnter", js.undefined)
+    def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
     
     @scala.inline
-    def setOnDragExit(value: DragEvent[T] => Unit): Self = this.set("onDragExit", js.Any.fromFunction1(value))
+    def setOnDragOver(value: DragEvent[T] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnDragExit: Self = this.set("onDragExit", js.undefined)
+    def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
     
     @scala.inline
-    def setOnDragLeave(value: DragEvent[T] => Unit): Self = this.set("onDragLeave", js.Any.fromFunction1(value))
+    def setOnDragStart(value: DragEvent[T] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnDragLeave: Self = this.set("onDragLeave", js.undefined)
+    def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
     
     @scala.inline
-    def setOnDragOver(value: DragEvent[T] => Unit): Self = this.set("onDragOver", js.Any.fromFunction1(value))
+    def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
     
     @scala.inline
-    def deleteOnDragOver: Self = this.set("onDragOver", js.undefined)
+    def setOnDrop(value: DragEvent[T] => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDragStart(value: DragEvent[T] => Unit): Self = this.set("onDragStart", js.Any.fromFunction1(value))
+    def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
     
     @scala.inline
-    def deleteOnDragStart: Self = this.set("onDragStart", js.undefined)
+    def setOnDurationChange(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDrop(value: DragEvent[T] => Unit): Self = this.set("onDrop", js.Any.fromFunction1(value))
+    def setOnDurationChangeUndefined: Self = StObject.set(x, "onDurationChange", js.undefined)
     
     @scala.inline
-    def deleteOnDrop: Self = this.set("onDrop", js.undefined)
+    def setOnEmptied(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDurationChange(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onDurationChange", js.Any.fromFunction1(value))
+    def setOnEmptiedUndefined: Self = StObject.set(x, "onEmptied", js.undefined)
     
     @scala.inline
-    def deleteOnDurationChange: Self = this.set("onDurationChange", js.undefined)
+    def setOnEncrypted(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnEmptied(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onEmptied", js.Any.fromFunction1(value))
+    def setOnEncryptedUndefined: Self = StObject.set(x, "onEncrypted", js.undefined)
     
     @scala.inline
-    def deleteOnEmptied: Self = this.set("onEmptied", js.undefined)
+    def setOnEnded(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnEncrypted(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onEncrypted", js.Any.fromFunction1(value))
+    def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
     
     @scala.inline
-    def deleteOnEncrypted: Self = this.set("onEncrypted", js.undefined)
+    def setOnError(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnEnded(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onEnded", js.Any.fromFunction1(value))
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def deleteOnEnded: Self = this.set("onEnded", js.undefined)
+    def setOnFocus(value: FocusEvent[T] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnError(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setOnInput(value: FormEvent[T] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnFocus(value: FocusEvent[T] => Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
     
     @scala.inline
-    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    def setOnInvalid(value: FormEvent[T] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnInput(value: FormEvent[T] => Unit): Self = this.set("onInput", js.Any.fromFunction1(value))
+    def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
     
     @scala.inline
-    def deleteOnInput: Self = this.set("onInput", js.undefined)
+    def setOnKeyDown(value: KeyboardEvent[T] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnInvalid(value: FormEvent[T] => Unit): Self = this.set("onInvalid", js.Any.fromFunction1(value))
+    def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     
     @scala.inline
-    def deleteOnInvalid: Self = this.set("onInvalid", js.undefined)
+    def setOnKeyPress(value: KeyboardEvent[T] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnKeyDown(value: KeyboardEvent[T] => Unit): Self = this.set("onKeyDown", js.Any.fromFunction1(value))
+    def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
     
     @scala.inline
-    def deleteOnKeyDown: Self = this.set("onKeyDown", js.undefined)
+    def setOnKeyUp(value: KeyboardEvent[T] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnKeyPress(value: KeyboardEvent[T] => Unit): Self = this.set("onKeyPress", js.Any.fromFunction1(value))
+    def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
     
     @scala.inline
-    def deleteOnKeyPress: Self = this.set("onKeyPress", js.undefined)
+    def setOnLoad(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnKeyUp(value: KeyboardEvent[T] => Unit): Self = this.set("onKeyUp", js.Any.fromFunction1(value))
+    def setOnLoadStart(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnKeyUp: Self = this.set("onKeyUp", js.undefined)
+    def setOnLoadStartUndefined: Self = StObject.set(x, "onLoadStart", js.undefined)
     
     @scala.inline
-    def setOnLoad(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onLoad", js.Any.fromFunction1(value))
+    def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
     @scala.inline
-    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    def setOnLoadedData(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnLoadStart(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onLoadStart", js.Any.fromFunction1(value))
+    def setOnLoadedDataUndefined: Self = StObject.set(x, "onLoadedData", js.undefined)
     
     @scala.inline
-    def deleteOnLoadStart: Self = this.set("onLoadStart", js.undefined)
+    def setOnLoadedMetadata(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnLoadedData(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onLoadedData", js.Any.fromFunction1(value))
+    def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
     
     @scala.inline
-    def deleteOnLoadedData: Self = this.set("onLoadedData", js.undefined)
+    def setOnMouseDown(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnLoadedMetadata(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onLoadedMetadata", js.Any.fromFunction1(value))
+    def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     
     @scala.inline
-    def deleteOnLoadedMetadata: Self = this.set("onLoadedMetadata", js.undefined)
+    def setOnMouseEnter(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseDown(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onMouseDown", js.Any.fromFunction1(value))
+    def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
     @scala.inline
-    def deleteOnMouseDown: Self = this.set("onMouseDown", js.undefined)
+    def setOnMouseLeave(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseEnter(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onMouseEnter", js.Any.fromFunction1(value))
+    def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
     
     @scala.inline
-    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    def setOnMouseMove(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseLeave(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
+    def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
     
     @scala.inline
-    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    def setOnMouseOut(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseMove(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onMouseMove", js.Any.fromFunction1(value))
+    def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
     
     @scala.inline
-    def deleteOnMouseMove: Self = this.set("onMouseMove", js.undefined)
+    def setOnMouseOver(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseOut(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onMouseOut", js.Any.fromFunction1(value))
+    def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
     
     @scala.inline
-    def deleteOnMouseOut: Self = this.set("onMouseOut", js.undefined)
+    def setOnMouseUp(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseOver(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onMouseOver", js.Any.fromFunction1(value))
+    def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
     
     @scala.inline
-    def deleteOnMouseOver: Self = this.set("onMouseOver", js.undefined)
+    def setOnPaste(value: ClipboardEvent[T] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseUp(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onMouseUp", js.Any.fromFunction1(value))
+    def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
     
     @scala.inline
-    def deleteOnMouseUp: Self = this.set("onMouseUp", js.undefined)
+    def setOnPause(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPaste(value: ClipboardEvent[T] => Unit): Self = this.set("onPaste", js.Any.fromFunction1(value))
+    def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
     
     @scala.inline
-    def deleteOnPaste: Self = this.set("onPaste", js.undefined)
+    def setOnPlay(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPause(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onPause", js.Any.fromFunction1(value))
+    def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
     
     @scala.inline
-    def deleteOnPause: Self = this.set("onPause", js.undefined)
+    def setOnPlaying(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPlay(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onPlay", js.Any.fromFunction1(value))
+    def setOnPlayingUndefined: Self = StObject.set(x, "onPlaying", js.undefined)
     
     @scala.inline
-    def deleteOnPlay: Self = this.set("onPlay", js.undefined)
+    def setOnPointerCancel(value: PointerEvent[T] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPlaying(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onPlaying", js.Any.fromFunction1(value))
+    def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
     
     @scala.inline
-    def deleteOnPlaying: Self = this.set("onPlaying", js.undefined)
+    def setOnPointerDown(value: PointerEvent[T] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPointerCancel(value: PointerEvent[T] => Unit): Self = this.set("onPointerCancel", js.Any.fromFunction1(value))
+    def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
     
     @scala.inline
-    def deleteOnPointerCancel: Self = this.set("onPointerCancel", js.undefined)
+    def setOnPointerEnter(value: PointerEvent[T] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPointerDown(value: PointerEvent[T] => Unit): Self = this.set("onPointerDown", js.Any.fromFunction1(value))
+    def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
     
     @scala.inline
-    def deleteOnPointerDown: Self = this.set("onPointerDown", js.undefined)
+    def setOnPointerLeave(value: PointerEvent[T] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPointerEnter(value: PointerEvent[T] => Unit): Self = this.set("onPointerEnter", js.Any.fromFunction1(value))
+    def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
     
     @scala.inline
-    def deleteOnPointerEnter: Self = this.set("onPointerEnter", js.undefined)
+    def setOnPointerMove(value: PointerEvent[T] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPointerLeave(value: PointerEvent[T] => Unit): Self = this.set("onPointerLeave", js.Any.fromFunction1(value))
+    def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
     
     @scala.inline
-    def deleteOnPointerLeave: Self = this.set("onPointerLeave", js.undefined)
+    def setOnPointerOut(value: PointerEvent[T] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPointerMove(value: PointerEvent[T] => Unit): Self = this.set("onPointerMove", js.Any.fromFunction1(value))
+    def setOnPointerOutUndefined: Self = StObject.set(x, "onPointerOut", js.undefined)
     
     @scala.inline
-    def deleteOnPointerMove: Self = this.set("onPointerMove", js.undefined)
+    def setOnPointerOver(value: PointerEvent[T] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPointerOut(value: PointerEvent[T] => Unit): Self = this.set("onPointerOut", js.Any.fromFunction1(value))
+    def setOnPointerOverUndefined: Self = StObject.set(x, "onPointerOver", js.undefined)
     
     @scala.inline
-    def deleteOnPointerOut: Self = this.set("onPointerOut", js.undefined)
+    def setOnPointerUp(value: PointerEvent[T] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPointerOver(value: PointerEvent[T] => Unit): Self = this.set("onPointerOver", js.Any.fromFunction1(value))
+    def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
     
     @scala.inline
-    def deleteOnPointerOver: Self = this.set("onPointerOver", js.undefined)
+    def setOnProgress(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPointerUp(value: PointerEvent[T] => Unit): Self = this.set("onPointerUp", js.Any.fromFunction1(value))
+    def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
     
     @scala.inline
-    def deleteOnPointerUp: Self = this.set("onPointerUp", js.undefined)
+    def setOnRateChange(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnProgress(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onProgress", js.Any.fromFunction1(value))
+    def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
     
     @scala.inline
-    def deleteOnProgress: Self = this.set("onProgress", js.undefined)
+    def setOnReset(value: FormEvent[T] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnRateChange(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onRateChange", js.Any.fromFunction1(value))
+    def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
     
     @scala.inline
-    def deleteOnRateChange: Self = this.set("onRateChange", js.undefined)
+    def setOnScroll(value: UIEvent[T, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnReset(value: FormEvent[T] => Unit): Self = this.set("onReset", js.Any.fromFunction1(value))
+    def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
     @scala.inline
-    def deleteOnReset: Self = this.set("onReset", js.undefined)
+    def setOnSeeked(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnScroll(value: UIEvent[T, NativeUIEvent] => Unit): Self = this.set("onScroll", js.Any.fromFunction1(value))
+    def setOnSeekedUndefined: Self = StObject.set(x, "onSeeked", js.undefined)
     
     @scala.inline
-    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    def setOnSeeking(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSeeked(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onSeeked", js.Any.fromFunction1(value))
+    def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
     
     @scala.inline
-    def deleteOnSeeked: Self = this.set("onSeeked", js.undefined)
+    def setOnSelect(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSeeking(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onSeeking", js.Any.fromFunction1(value))
+    def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
     @scala.inline
-    def deleteOnSeeking: Self = this.set("onSeeking", js.undefined)
+    def setOnStalled(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSelect(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onSelect", js.Any.fromFunction1(value))
+    def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
     
     @scala.inline
-    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    def setOnSubmit(value: FormEvent[T] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnStalled(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onStalled", js.Any.fromFunction1(value))
+    def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
     
     @scala.inline
-    def deleteOnStalled: Self = this.set("onStalled", js.undefined)
+    def setOnSuspend(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSubmit(value: FormEvent[T] => Unit): Self = this.set("onSubmit", js.Any.fromFunction1(value))
+    def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
     
     @scala.inline
-    def deleteOnSubmit: Self = this.set("onSubmit", js.undefined)
+    def setOnTimeUpdate(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSuspend(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onSuspend", js.Any.fromFunction1(value))
+    def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
     
     @scala.inline
-    def deleteOnSuspend: Self = this.set("onSuspend", js.undefined)
+    def setOnTouchCancel(value: TouchEvent[T] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnTimeUpdate(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onTimeUpdate", js.Any.fromFunction1(value))
+    def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
     
     @scala.inline
-    def deleteOnTimeUpdate: Self = this.set("onTimeUpdate", js.undefined)
+    def setOnTouchEnd(value: TouchEvent[T] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnTouchCancel(value: TouchEvent[T] => Unit): Self = this.set("onTouchCancel", js.Any.fromFunction1(value))
+    def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
     
     @scala.inline
-    def deleteOnTouchCancel: Self = this.set("onTouchCancel", js.undefined)
+    def setOnTouchMove(value: TouchEvent[T] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnTouchEnd(value: TouchEvent[T] => Unit): Self = this.set("onTouchEnd", js.Any.fromFunction1(value))
+    def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
     
     @scala.inline
-    def deleteOnTouchEnd: Self = this.set("onTouchEnd", js.undefined)
+    def setOnTouchStart(value: TouchEvent[T] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnTouchMove(value: TouchEvent[T] => Unit): Self = this.set("onTouchMove", js.Any.fromFunction1(value))
+    def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     
     @scala.inline
-    def deleteOnTouchMove: Self = this.set("onTouchMove", js.undefined)
+    def setOnTransitionEnd(value: TransitionEvent[T] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnTouchStart(value: TouchEvent[T] => Unit): Self = this.set("onTouchStart", js.Any.fromFunction1(value))
+    def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
     
     @scala.inline
-    def deleteOnTouchStart: Self = this.set("onTouchStart", js.undefined)
+    def setOnVolumeChange(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnTransitionEnd(value: TransitionEvent[T] => Unit): Self = this.set("onTransitionEnd", js.Any.fromFunction1(value))
+    def setOnVolumeChangeUndefined: Self = StObject.set(x, "onVolumeChange", js.undefined)
     
     @scala.inline
-    def deleteOnTransitionEnd: Self = this.set("onTransitionEnd", js.undefined)
+    def setOnWaiting(value: SyntheticEvent[T, Event] => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnVolumeChange(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onVolumeChange", js.Any.fromFunction1(value))
+    def setOnWaitingUndefined: Self = StObject.set(x, "onWaiting", js.undefined)
     
     @scala.inline
-    def deleteOnVolumeChange: Self = this.set("onVolumeChange", js.undefined)
+    def setOnWheel(value: WheelEvent[T] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnWaiting(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onWaiting", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnWaiting: Self = this.set("onWaiting", js.undefined)
-    
-    @scala.inline
-    def setOnWheel(value: WheelEvent[T] => Unit): Self = this.set("onWheel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnWheel: Self = this.set("onWheel", js.undefined)
+    def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
   }
 }

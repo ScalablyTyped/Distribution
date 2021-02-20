@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response containing the details of the specified Android application APK.
   */
 @js.native
-trait SchemaGetApkDetailsResponse extends js.Object {
+trait SchemaGetApkDetailsResponse extends StObject {
   
   /**
     * Details of the Android APK.
@@ -24,24 +25,12 @@ object SchemaGetApkDetailsResponse {
   }
   
   @scala.inline
-  implicit class SchemaGetApkDetailsResponseOps[Self <: SchemaGetApkDetailsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGetApkDetailsResponseMutableBuilder[Self <: SchemaGetApkDetailsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApkDetail(value: SchemaApkDetail): Self = StObject.set(x, "apkDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApkDetail(value: SchemaApkDetail): Self = this.set("apkDetail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApkDetail: Self = this.set("apkDetail", js.undefined)
+    def setApkDetailUndefined: Self = StObject.set(x, "apkDetail", js.undefined)
   }
 }

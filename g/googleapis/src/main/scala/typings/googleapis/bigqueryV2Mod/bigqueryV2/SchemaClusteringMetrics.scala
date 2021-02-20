@@ -1,5 +1,6 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Evaluation metrics for clustering models.
   */
 @js.native
-trait SchemaClusteringMetrics extends js.Object {
+trait SchemaClusteringMetrics extends StObject {
   
   /**
     * Davies-Bouldin index.
@@ -29,30 +30,18 @@ object SchemaClusteringMetrics {
   }
   
   @scala.inline
-  implicit class SchemaClusteringMetricsOps[Self <: SchemaClusteringMetrics] (val x: Self) extends AnyVal {
+  implicit class SchemaClusteringMetricsMutableBuilder[Self <: SchemaClusteringMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDaviesBouldinIndex(value: Double): Self = StObject.set(x, "daviesBouldinIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDaviesBouldinIndexUndefined: Self = StObject.set(x, "daviesBouldinIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeanSquaredDistance(value: Double): Self = StObject.set(x, "meanSquaredDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaviesBouldinIndex(value: Double): Self = this.set("daviesBouldinIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDaviesBouldinIndex: Self = this.set("daviesBouldinIndex", js.undefined)
-    
-    @scala.inline
-    def setMeanSquaredDistance(value: Double): Self = this.set("meanSquaredDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeanSquaredDistance: Self = this.set("meanSquaredDistance", js.undefined)
+    def setMeanSquaredDistanceUndefined: Self = StObject.set(x, "meanSquaredDistance", js.undefined)
   }
 }

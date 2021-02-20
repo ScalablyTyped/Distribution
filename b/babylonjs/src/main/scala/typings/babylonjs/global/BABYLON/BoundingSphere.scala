@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.DeepImmutable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,9 +27,7 @@ class BoundingSphere protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.BoundingSphere")
-@js.native
-object BoundingSphere extends js.Object {
+object BoundingSphere {
   
   /**
     * Checks if two sphere intersct
@@ -36,10 +35,14 @@ object BoundingSphere extends js.Object {
     * @param sphere1 sphere 1
     * @returns true if the speres intersect
     */
+  @JSGlobal("BABYLON.BoundingSphere.Intersects")
+  @js.native
   def Intersects(
     sphere0: DeepImmutable[typings.babylonjs.BABYLON.BoundingSphere],
     sphere1: DeepImmutable[typings.babylonjs.BABYLON.BoundingSphere]
   ): Boolean = js.native
   
+  @JSGlobal("BABYLON.BoundingSphere.TmpVector3")
+  @js.native
   val TmpVector3: js.Any = js.native
 }

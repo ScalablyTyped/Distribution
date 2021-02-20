@@ -1,11 +1,12 @@
 package typings.awsSdk.codeguruprofilerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListProfilingGroupsResponse extends js.Object {
+trait ListProfilingGroupsResponse extends StObject {
   
   /**
     * The nextToken value to include in a future ListProfilingGroups request. When the results of a ListProfilingGroups request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return. 
@@ -31,39 +32,27 @@ object ListProfilingGroupsResponse {
   }
   
   @scala.inline
-  implicit class ListProfilingGroupsResponseOps[Self <: ListProfilingGroupsResponse] (val x: Self) extends AnyVal {
+  implicit class ListProfilingGroupsResponseMutableBuilder[Self <: ListProfilingGroupsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProfilingGroupNames(value: ProfilingGroupNames): Self = StObject.set(x, "profilingGroupNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfilingGroupNamesVarargs(value: ProfilingGroupName*): Self = this.set("profilingGroupNames", js.Array(value :_*))
+    def setProfilingGroupNamesVarargs(value: ProfilingGroupName*): Self = StObject.set(x, "profilingGroupNames", js.Array(value :_*))
     
     @scala.inline
-    def setProfilingGroupNames(value: ProfilingGroupNames): Self = this.set("profilingGroupNames", value.asInstanceOf[js.Any])
+    def setProfilingGroups(value: ProfilingGroupDescriptions): Self = StObject.set(x, "profilingGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setProfilingGroupsUndefined: Self = StObject.set(x, "profilingGroups", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setProfilingGroupsVarargs(value: ProfilingGroupDescription*): Self = this.set("profilingGroups", js.Array(value :_*))
-    
-    @scala.inline
-    def setProfilingGroups(value: ProfilingGroupDescriptions): Self = this.set("profilingGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfilingGroups: Self = this.set("profilingGroups", js.undefined)
+    def setProfilingGroupsVarargs(value: ProfilingGroupDescription*): Self = StObject.set(x, "profilingGroups", js.Array(value :_*))
   }
 }

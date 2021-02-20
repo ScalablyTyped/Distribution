@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceGroupManagerStatus extends js.Object {
+trait InstanceGroupManagerStatus extends StObject {
   
   /** [Output Only] The URL of the Autoscaler that targets this instance group manager. */
   var autoscaler: js.UndefOr[String] = js.native
@@ -32,42 +33,30 @@ object InstanceGroupManagerStatus {
   }
   
   @scala.inline
-  implicit class InstanceGroupManagerStatusOps[Self <: InstanceGroupManagerStatus] (val x: Self) extends AnyVal {
+  implicit class InstanceGroupManagerStatusMutableBuilder[Self <: InstanceGroupManagerStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoscaler(value: String): Self = StObject.set(x, "autoscaler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoscalerUndefined: Self = StObject.set(x, "autoscaler", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsStable(value: Boolean): Self = StObject.set(x, "isStable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoscaler(value: String): Self = this.set("autoscaler", value.asInstanceOf[js.Any])
+    def setIsStableUndefined: Self = StObject.set(x, "isStable", js.undefined)
     
     @scala.inline
-    def deleteAutoscaler: Self = this.set("autoscaler", js.undefined)
+    def setStateful(value: InstanceGroupManagerStatusStateful): Self = StObject.set(x, "stateful", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsStable(value: Boolean): Self = this.set("isStable", value.asInstanceOf[js.Any])
+    def setStatefulUndefined: Self = StObject.set(x, "stateful", js.undefined)
     
     @scala.inline
-    def deleteIsStable: Self = this.set("isStable", js.undefined)
+    def setVersionTarget(value: InstanceGroupManagerStatusVersionTarget): Self = StObject.set(x, "versionTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateful(value: InstanceGroupManagerStatusStateful): Self = this.set("stateful", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateful: Self = this.set("stateful", js.undefined)
-    
-    @scala.inline
-    def setVersionTarget(value: InstanceGroupManagerStatusVersionTarget): Self = this.set("versionTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionTarget: Self = this.set("versionTarget", js.undefined)
+    def setVersionTargetUndefined: Self = StObject.set(x, "versionTarget", js.undefined)
   }
 }

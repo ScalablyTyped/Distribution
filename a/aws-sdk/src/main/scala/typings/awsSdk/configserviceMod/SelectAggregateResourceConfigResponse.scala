@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelectAggregateResourceConfigResponse extends js.Object {
+trait SelectAggregateResourceConfigResponse extends StObject {
   
   /**
     * The nextToken string returned in a previous request that you use to request the next page of results in a paginated response. 
@@ -28,39 +29,27 @@ object SelectAggregateResourceConfigResponse {
   }
   
   @scala.inline
-  implicit class SelectAggregateResourceConfigResponseOps[Self <: SelectAggregateResourceConfigResponse] (val x: Self) extends AnyVal {
+  implicit class SelectAggregateResourceConfigResponseMutableBuilder[Self <: SelectAggregateResourceConfigResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueryInfo(value: QueryInfo): Self = StObject.set(x, "QueryInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setQueryInfoUndefined: Self = StObject.set(x, "QueryInfo", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setResults(value: Results): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryInfo(value: QueryInfo): Self = this.set("QueryInfo", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "Results", js.undefined)
     
     @scala.inline
-    def deleteQueryInfo: Self = this.set("QueryInfo", js.undefined)
-    
-    @scala.inline
-    def setResultsVarargs(value: String*): Self = this.set("Results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: Results): Self = this.set("Results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResults: Self = this.set("Results", js.undefined)
+    def setResultsVarargs(value: String*): Self = StObject.set(x, "Results", js.Array(value :_*))
   }
 }

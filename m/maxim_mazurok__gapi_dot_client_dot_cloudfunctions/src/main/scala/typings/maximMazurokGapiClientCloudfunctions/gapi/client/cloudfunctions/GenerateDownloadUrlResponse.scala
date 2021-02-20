@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudfunctions.gapi.client.cloudfunctions
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GenerateDownloadUrlResponse extends js.Object {
+trait GenerateDownloadUrlResponse extends StObject {
   
   /** The generated Google Cloud Storage signed URL that should be used for function source code download. */
   var downloadUrl: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object GenerateDownloadUrlResponse {
   }
   
   @scala.inline
-  implicit class GenerateDownloadUrlResponseOps[Self <: GenerateDownloadUrlResponse] (val x: Self) extends AnyVal {
+  implicit class GenerateDownloadUrlResponseMutableBuilder[Self <: GenerateDownloadUrlResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDownloadUrl(value: String): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDownloadUrl(value: String): Self = this.set("downloadUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDownloadUrl: Self = this.set("downloadUrl", js.undefined)
+    def setDownloadUrlUndefined: Self = StObject.set(x, "downloadUrl", js.undefined)
   }
 }

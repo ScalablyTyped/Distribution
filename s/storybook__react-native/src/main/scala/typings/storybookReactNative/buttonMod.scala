@@ -1,23 +1,26 @@
 package typings.storybookReactNative
 
-import typings.react.mod.Component
+import typings.react.mod.PureComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI/navigation/button", JSImport.Namespace)
-@js.native
-object buttonMod extends js.Object {
+object buttonMod {
+  
+  @JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI/navigation/button", JSImport.Default)
+  @js.native
+  class default () extends Button
   
   @js.native
   trait Button
-    extends Component[Props, js.Object, js.Any] {
+    extends PureComponent[Props, js.Object, js.Any] {
     
     def onPress(): Unit = js.native
   }
   
   @js.native
-  trait Props extends js.Object {
+  trait Props extends StObject {
     
     var active: Boolean = js.native
     
@@ -28,7 +31,4 @@ object buttonMod extends js.Object {
     
     var testID: js.UndefOr[String] = js.native
   }
-  
-  @js.native
-  class default () extends Button
 }

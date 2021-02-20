@@ -1,13 +1,14 @@
 package typings.officeJsPreview.Word.Interfaces
 
 import typings.officeJsPreview.Word.ListLevelType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `list.toJSON()`. */
 @js.native
-trait ListData extends js.Object {
+trait ListData extends StObject {
   
   /**
     *
@@ -50,51 +51,39 @@ object ListData {
   }
   
   @scala.inline
-  implicit class ListDataOps[Self <: ListData] (val x: Self) extends AnyVal {
+  implicit class ListDataMutableBuilder[Self <: ListData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLevelExistences(value: js.Array[Boolean]): Self = StObject.set(x, "levelExistences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLevelExistencesUndefined: Self = StObject.set(x, "levelExistences", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLevelExistencesVarargs(value: Boolean*): Self = StObject.set(x, "levelExistences", js.Array(value :_*))
     
     @scala.inline
-    def setLevelExistencesVarargs(value: Boolean*): Self = this.set("levelExistences", js.Array(value :_*))
+    def setLevelTypes(value: js.Array[ListLevelType]): Self = StObject.set(x, "levelTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevelExistences(value: js.Array[Boolean]): Self = this.set("levelExistences", value.asInstanceOf[js.Any])
+    def setLevelTypesUndefined: Self = StObject.set(x, "levelTypes", js.undefined)
     
     @scala.inline
-    def deleteLevelExistences: Self = this.set("levelExistences", js.undefined)
+    def setLevelTypesVarargs(value: ListLevelType*): Self = StObject.set(x, "levelTypes", js.Array(value :_*))
     
     @scala.inline
-    def setLevelTypesVarargs(value: ListLevelType*): Self = this.set("levelTypes", js.Array(value :_*))
+    def setParagraphs(value: js.Array[ParagraphData]): Self = StObject.set(x, "paragraphs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevelTypes(value: js.Array[ListLevelType]): Self = this.set("levelTypes", value.asInstanceOf[js.Any])
+    def setParagraphsUndefined: Self = StObject.set(x, "paragraphs", js.undefined)
     
     @scala.inline
-    def deleteLevelTypes: Self = this.set("levelTypes", js.undefined)
-    
-    @scala.inline
-    def setParagraphsVarargs(value: ParagraphData*): Self = this.set("paragraphs", js.Array(value :_*))
-    
-    @scala.inline
-    def setParagraphs(value: js.Array[ParagraphData]): Self = this.set("paragraphs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParagraphs: Self = this.set("paragraphs", js.undefined)
+    def setParagraphsVarargs(value: ParagraphData*): Self = StObject.set(x, "paragraphs", js.Array(value :_*))
   }
 }

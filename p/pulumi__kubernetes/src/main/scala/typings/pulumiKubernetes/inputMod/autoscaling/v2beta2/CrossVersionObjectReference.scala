@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.autoscaling.v2beta2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * CrossVersionObjectReference contains enough information to let you identify the referred resource.
   */
 @js.native
-trait CrossVersionObjectReference extends js.Object {
+trait CrossVersionObjectReference extends StObject {
   
   /**
     * API version of the referent
@@ -35,30 +36,18 @@ object CrossVersionObjectReference {
   }
   
   @scala.inline
-  implicit class CrossVersionObjectReferenceOps[Self <: CrossVersionObjectReference] (val x: Self) extends AnyVal {
+  implicit class CrossVersionObjectReferenceMutableBuilder[Self <: CrossVersionObjectReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiVersion(value: Input[String]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: Input[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: Input[String]): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setApiVersion(value: Input[String]): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApiVersion: Self = this.set("apiVersion", js.undefined)
+    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

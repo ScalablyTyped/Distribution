@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSourceRefreshSchedule extends js.Object {
+trait DataSourceRefreshSchedule extends StObject {
   
   /** Daily refresh schedule. */
   var dailySchedule: js.UndefOr[DataSourceRefreshDailySchedule] = js.native
@@ -34,54 +35,42 @@ object DataSourceRefreshSchedule {
   }
   
   @scala.inline
-  implicit class DataSourceRefreshScheduleOps[Self <: DataSourceRefreshSchedule] (val x: Self) extends AnyVal {
+  implicit class DataSourceRefreshScheduleMutableBuilder[Self <: DataSourceRefreshSchedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDailySchedule(value: DataSourceRefreshDailySchedule): Self = StObject.set(x, "dailySchedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDailyScheduleUndefined: Self = StObject.set(x, "dailySchedule", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDailySchedule(value: DataSourceRefreshDailySchedule): Self = this.set("dailySchedule", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDailySchedule: Self = this.set("dailySchedule", js.undefined)
+    def setMonthlySchedule(value: DataSourceRefreshMonthlySchedule): Self = StObject.set(x, "monthlySchedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setMonthlyScheduleUndefined: Self = StObject.set(x, "monthlySchedule", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setNextRun(value: Interval): Self = StObject.set(x, "nextRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthlySchedule(value: DataSourceRefreshMonthlySchedule): Self = this.set("monthlySchedule", value.asInstanceOf[js.Any])
+    def setNextRunUndefined: Self = StObject.set(x, "nextRun", js.undefined)
     
     @scala.inline
-    def deleteMonthlySchedule: Self = this.set("monthlySchedule", js.undefined)
+    def setRefreshScope(value: String): Self = StObject.set(x, "refreshScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextRun(value: Interval): Self = this.set("nextRun", value.asInstanceOf[js.Any])
+    def setRefreshScopeUndefined: Self = StObject.set(x, "refreshScope", js.undefined)
     
     @scala.inline
-    def deleteNextRun: Self = this.set("nextRun", js.undefined)
+    def setWeeklySchedule(value: DataSourceRefreshWeeklySchedule): Self = StObject.set(x, "weeklySchedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshScope(value: String): Self = this.set("refreshScope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefreshScope: Self = this.set("refreshScope", js.undefined)
-    
-    @scala.inline
-    def setWeeklySchedule(value: DataSourceRefreshWeeklySchedule): Self = this.set("weeklySchedule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeeklySchedule: Self = this.set("weeklySchedule", js.undefined)
+    def setWeeklyScheduleUndefined: Self = StObject.set(x, "weeklySchedule", js.undefined)
   }
 }

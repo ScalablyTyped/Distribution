@@ -2,12 +2,13 @@ package typings.lodash.fpMod
 
 import typings.lodash.mod.TruncateOptions
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashTruncate extends js.Object {
+trait LodashTruncate extends StObject {
   
   def apply(options: TruncateOptions): LodashTruncate1x1 = js.native
   def apply(options: TruncateOptions, string: String): String = js.native

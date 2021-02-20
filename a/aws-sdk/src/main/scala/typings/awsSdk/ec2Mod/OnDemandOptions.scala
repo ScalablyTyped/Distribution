@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnDemandOptions extends js.Object {
+trait OnDemandOptions extends StObject {
   
   /**
     * The order of the launch template overrides to use in fulfilling On-Demand capacity. If you specify lowest-price, EC2 Fleet uses price to determine the order, launching the lowest price first. If you specify prioritized, EC2 Fleet uses the priority that you assigned to each launch template override, launching the highest priority first. If you do not specify a value, EC2 Fleet defaults to lowest-price.
@@ -46,54 +47,42 @@ object OnDemandOptions {
   }
   
   @scala.inline
-  implicit class OnDemandOptionsOps[Self <: OnDemandOptions] (val x: Self) extends AnyVal {
+  implicit class OnDemandOptionsMutableBuilder[Self <: OnDemandOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocationStrategy(value: FleetOnDemandAllocationStrategy): Self = StObject.set(x, "AllocationStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllocationStrategyUndefined: Self = StObject.set(x, "AllocationStrategy", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapacityReservationOptions(value: CapacityReservationOptions): Self = StObject.set(x, "CapacityReservationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocationStrategy(value: FleetOnDemandAllocationStrategy): Self = this.set("AllocationStrategy", value.asInstanceOf[js.Any])
+    def setCapacityReservationOptionsUndefined: Self = StObject.set(x, "CapacityReservationOptions", js.undefined)
     
     @scala.inline
-    def deleteAllocationStrategy: Self = this.set("AllocationStrategy", js.undefined)
+    def setMaxTotalPrice(value: String): Self = StObject.set(x, "MaxTotalPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacityReservationOptions(value: CapacityReservationOptions): Self = this.set("CapacityReservationOptions", value.asInstanceOf[js.Any])
+    def setMaxTotalPriceUndefined: Self = StObject.set(x, "MaxTotalPrice", js.undefined)
     
     @scala.inline
-    def deleteCapacityReservationOptions: Self = this.set("CapacityReservationOptions", js.undefined)
+    def setMinTargetCapacity(value: Integer): Self = StObject.set(x, "MinTargetCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTotalPrice(value: String): Self = this.set("MaxTotalPrice", value.asInstanceOf[js.Any])
+    def setMinTargetCapacityUndefined: Self = StObject.set(x, "MinTargetCapacity", js.undefined)
     
     @scala.inline
-    def deleteMaxTotalPrice: Self = this.set("MaxTotalPrice", js.undefined)
+    def setSingleAvailabilityZone(value: Boolean): Self = StObject.set(x, "SingleAvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinTargetCapacity(value: Integer): Self = this.set("MinTargetCapacity", value.asInstanceOf[js.Any])
+    def setSingleAvailabilityZoneUndefined: Self = StObject.set(x, "SingleAvailabilityZone", js.undefined)
     
     @scala.inline
-    def deleteMinTargetCapacity: Self = this.set("MinTargetCapacity", js.undefined)
+    def setSingleInstanceType(value: Boolean): Self = StObject.set(x, "SingleInstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingleAvailabilityZone(value: Boolean): Self = this.set("SingleAvailabilityZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSingleAvailabilityZone: Self = this.set("SingleAvailabilityZone", js.undefined)
-    
-    @scala.inline
-    def setSingleInstanceType(value: Boolean): Self = this.set("SingleInstanceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSingleInstanceType: Self = this.set("SingleInstanceType", js.undefined)
+    def setSingleInstanceTypeUndefined: Self = StObject.set(x, "SingleInstanceType", js.undefined)
   }
 }

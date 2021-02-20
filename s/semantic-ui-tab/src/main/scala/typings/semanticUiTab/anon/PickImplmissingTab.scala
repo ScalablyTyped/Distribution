@@ -1,12 +1,13 @@
 package typings.semanticUiTab.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-tab.SemanticUI.Tab.ErrorSettings._Impl, 'missingTab'> */
 @js.native
-trait PickImplmissingTab extends js.Object {
+trait PickImplmissingTab extends StObject {
   
   var missingTab: String = js.native
 }
@@ -19,21 +20,9 @@ object PickImplmissingTab {
   }
   
   @scala.inline
-  implicit class PickImplmissingTabOps[Self <: PickImplmissingTab] (val x: Self) extends AnyVal {
+  implicit class PickImplmissingTabMutableBuilder[Self <: PickImplmissingTab] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMissingTab(value: String): Self = this.set("missingTab", value.asInstanceOf[js.Any])
+    def setMissingTab(value: String): Self = StObject.set(x, "missingTab", value.asInstanceOf[js.Any])
   }
 }

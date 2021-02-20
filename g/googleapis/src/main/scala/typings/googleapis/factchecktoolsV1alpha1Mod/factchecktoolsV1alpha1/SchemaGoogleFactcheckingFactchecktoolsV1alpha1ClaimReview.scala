@@ -1,5 +1,6 @@
 package typings.googleapis.factchecktoolsV1alpha1Mod.factchecktoolsV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information about a claim review.
   */
 @js.native
-trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReview extends js.Object {
+trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReview extends StObject {
   
   /**
     * The language this review was written in. For instance, &quot;en&quot; or
@@ -50,54 +51,42 @@ object SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReview {
   }
   
   @scala.inline
-  implicit class SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewOps[Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReview] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMutableBuilder[Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReview] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublisher(value: SchemaGoogleFactcheckingFactchecktoolsV1alpha1Publisher): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    def setReviewDate(value: String): Self = StObject.set(x, "reviewDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublisher(value: SchemaGoogleFactcheckingFactchecktoolsV1alpha1Publisher): Self = this.set("publisher", value.asInstanceOf[js.Any])
+    def setReviewDateUndefined: Self = StObject.set(x, "reviewDate", js.undefined)
     
     @scala.inline
-    def deletePublisher: Self = this.set("publisher", js.undefined)
+    def setTextualRating(value: String): Self = StObject.set(x, "textualRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReviewDate(value: String): Self = this.set("reviewDate", value.asInstanceOf[js.Any])
+    def setTextualRatingUndefined: Self = StObject.set(x, "textualRating", js.undefined)
     
     @scala.inline
-    def deleteReviewDate: Self = this.set("reviewDate", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextualRating(value: String): Self = this.set("textualRating", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTextualRating: Self = this.set("textualRating", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.mobileMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBundlesResult extends js.Object {
+trait ListBundlesResult extends StObject {
   
   /**
     *  A list of bundles. 
@@ -26,33 +27,21 @@ object ListBundlesResult {
   }
   
   @scala.inline
-  implicit class ListBundlesResultOps[Self <: ListBundlesResult] (val x: Self) extends AnyVal {
+  implicit class ListBundlesResultMutableBuilder[Self <: ListBundlesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBundleList(value: BundleList): Self = StObject.set(x, "bundleList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBundleListUndefined: Self = StObject.set(x, "bundleList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBundleListVarargs(value: BundleDetails*): Self = StObject.set(x, "bundleList", js.Array(value :_*))
     
     @scala.inline
-    def setBundleListVarargs(value: BundleDetails*): Self = this.set("bundleList", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundleList(value: BundleList): Self = this.set("bundleList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBundleList: Self = this.set("bundleList", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

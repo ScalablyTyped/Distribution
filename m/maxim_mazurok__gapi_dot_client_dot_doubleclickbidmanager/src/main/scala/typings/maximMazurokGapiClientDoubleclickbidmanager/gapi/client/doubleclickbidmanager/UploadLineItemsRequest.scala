@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doubleclickbidmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadLineItemsRequest extends js.Object {
+trait UploadLineItemsRequest extends StObject {
   
   /** Set to true to get upload status without actually persisting the line items. */
   var dryRun: js.UndefOr[Boolean] = js.native
@@ -25,36 +26,24 @@ object UploadLineItemsRequest {
   }
   
   @scala.inline
-  implicit class UploadLineItemsRequestOps[Self <: UploadLineItemsRequest] (val x: Self) extends AnyVal {
+  implicit class UploadLineItemsRequestMutableBuilder[Self <: UploadLineItemsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("dryRun", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("dryRun", js.undefined)
+    def setLineItems(value: String): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
-    
-    @scala.inline
-    def setLineItems(value: String): Self = this.set("lineItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineItems: Self = this.set("lineItems", js.undefined)
+    def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
   }
 }

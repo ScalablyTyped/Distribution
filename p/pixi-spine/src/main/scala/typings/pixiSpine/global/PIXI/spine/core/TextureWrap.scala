@@ -1,12 +1,13 @@
 package typings.pixiSpine.global.PIXI.spine.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PIXI.spine.core.TextureWrap")
 @js.native
-object TextureWrap extends js.Object {
+object TextureWrap extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.pixiSpine.PIXI.spine.core.TextureWrap with Double] = js.native

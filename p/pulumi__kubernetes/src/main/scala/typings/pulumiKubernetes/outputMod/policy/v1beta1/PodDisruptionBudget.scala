@@ -2,6 +2,7 @@ package typings.pulumiKubernetes.outputMod.policy.v1beta1
 
 import typings.pulumiKubernetes.outputMod.meta.v1.ObjectMeta
 import typings.pulumiKubernetes.pulumiKubernetesStrings.policySlashv1beta1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * PodDisruptionBudget is an object to define the max disruption that can be caused to a collection of pods
   */
 @js.native
-trait PodDisruptionBudget extends js.Object {
+trait PodDisruptionBudget extends StObject {
   
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
@@ -49,33 +50,21 @@ object PodDisruptionBudget {
   }
   
   @scala.inline
-  implicit class PodDisruptionBudgetOps[Self <: PodDisruptionBudget] (val x: Self) extends AnyVal {
+  implicit class PodDisruptionBudgetMutableBuilder[Self <: PodDisruptionBudget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiVersion(value: policySlashv1beta1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.PodDisruptionBudget): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiVersion(value: policySlashv1beta1): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    def setSpec(value: PodDisruptionBudgetSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.PodDisruptionBudget): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetadata(value: ObjectMeta): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpec(value: PodDisruptionBudgetSpec): Self = this.set("spec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: PodDisruptionBudgetStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: PodDisruptionBudgetStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

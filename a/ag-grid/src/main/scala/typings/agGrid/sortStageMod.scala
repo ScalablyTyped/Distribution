@@ -1,16 +1,16 @@
 package typings.agGrid
 
 import typings.agGrid.iRowNodeStageMod.StageExecuteParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rowModels/clientSide/sortStage", JSImport.Namespace)
-@js.native
-object sortStageMod extends js.Object {
+object sortStageMod {
   
+  @JSImport("ag-grid/dist/lib/rowModels/clientSide/sortStage", "SortStage")
   @js.native
-  class SortStage () extends js.Object {
+  class SortStage () extends StObject {
     
     def execute(params: StageExecuteParams): Unit = js.native
     

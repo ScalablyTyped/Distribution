@@ -1,5 +1,6 @@
 package typings.googleapis.v31Mod.dfareportingV31
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creative optimization settings.
   */
 @js.native
-trait SchemaCreativeOptimizationConfiguration extends js.Object {
+trait SchemaCreativeOptimizationConfiguration extends StObject {
   
   /**
     * ID of this creative optimization config. This field is auto-generated
@@ -42,45 +43,33 @@ object SchemaCreativeOptimizationConfiguration {
   }
   
   @scala.inline
-  implicit class SchemaCreativeOptimizationConfigurationOps[Self <: SchemaCreativeOptimizationConfiguration] (val x: Self) extends AnyVal {
+  implicit class SchemaCreativeOptimizationConfigurationMutableBuilder[Self <: SchemaCreativeOptimizationConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setOptimizationActivitys(value: js.Array[SchemaOptimizationActivity]): Self = StObject.set(x, "optimizationActivitys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOptimizationActivitysUndefined: Self = StObject.set(x, "optimizationActivitys", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOptimizationActivitysVarargs(value: SchemaOptimizationActivity*): Self = StObject.set(x, "optimizationActivitys", js.Array(value :_*))
     
     @scala.inline
-    def setOptimizationActivitysVarargs(value: SchemaOptimizationActivity*): Self = this.set("optimizationActivitys", js.Array(value :_*))
+    def setOptimizationModel(value: String): Self = StObject.set(x, "optimizationModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptimizationActivitys(value: js.Array[SchemaOptimizationActivity]): Self = this.set("optimizationActivitys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptimizationActivitys: Self = this.set("optimizationActivitys", js.undefined)
-    
-    @scala.inline
-    def setOptimizationModel(value: String): Self = this.set("optimizationModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptimizationModel: Self = this.set("optimizationModel", js.undefined)
+    def setOptimizationModelUndefined: Self = StObject.set(x, "optimizationModel", js.undefined)
   }
 }

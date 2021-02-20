@@ -1,12 +1,11 @@
 package typings.pDefer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("p-defer", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   Create a deferred promise.
@@ -24,10 +23,12 @@ object mod extends js.Object {
   })();
   ```
   */
+  @JSImport("p-defer", JSImport.Namespace)
+  @js.native
   def apply[ValueType](): DeferredPromise[ValueType] = js.native
   
   @js.native
-  trait DeferredPromise[ValueType] extends js.Object {
+  trait DeferredPromise[ValueType] extends StObject {
     
     /**
     		The deferred promise.

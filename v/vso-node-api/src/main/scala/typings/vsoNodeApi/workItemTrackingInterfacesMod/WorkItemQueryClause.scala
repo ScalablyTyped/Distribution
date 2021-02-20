@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkItemQueryClause extends js.Object {
+trait WorkItemQueryClause extends StObject {
   
   /**
     * Child clauses if the current clause is a logical operator
@@ -59,42 +60,30 @@ object WorkItemQueryClause {
   }
   
   @scala.inline
-  implicit class WorkItemQueryClauseOps[Self <: WorkItemQueryClause] (val x: Self) extends AnyVal {
+  implicit class WorkItemQueryClauseMutableBuilder[Self <: WorkItemQueryClause] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClauses(value: js.Array[WorkItemQueryClause]): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClausesVarargs(value: WorkItemQueryClause*): Self = StObject.set(x, "clauses", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setField(value: WorkItemFieldReference): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClausesVarargs(value: WorkItemQueryClause*): Self = this.set("clauses", js.Array(value :_*))
+    def setFieldValue(value: WorkItemFieldReference): Self = StObject.set(x, "fieldValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClauses(value: js.Array[WorkItemQueryClause]): Self = this.set("clauses", value.asInstanceOf[js.Any])
+    def setIsFieldValue(value: Boolean): Self = StObject.set(x, "isFieldValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: WorkItemFieldReference): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setLogicalOperator(value: LogicalOperation): Self = StObject.set(x, "logicalOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldValue(value: WorkItemFieldReference): Self = this.set("fieldValue", value.asInstanceOf[js.Any])
+    def setOperator(value: WorkItemFieldOperation): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFieldValue(value: Boolean): Self = this.set("isFieldValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogicalOperator(value: LogicalOperation): Self = this.set("logicalOperator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperator(value: WorkItemFieldOperation): Self = this.set("operator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

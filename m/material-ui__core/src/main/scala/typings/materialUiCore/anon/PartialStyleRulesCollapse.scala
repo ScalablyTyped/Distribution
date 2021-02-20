@@ -1,13 +1,14 @@
 package typings.materialUiCore.anon
 
 import typings.materialUiCore.withStylesMod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Collapse.CollapseClassKey>> */
 @js.native
-trait PartialStyleRulesCollapse extends js.Object {
+trait PartialStyleRulesCollapse extends StObject {
   
   var container: js.UndefOr[CSSProperties] = js.native
   
@@ -26,42 +27,30 @@ object PartialStyleRulesCollapse {
   }
   
   @scala.inline
-  implicit class PartialStyleRulesCollapseOps[Self <: PartialStyleRulesCollapse] (val x: Self) extends AnyVal {
+  implicit class PartialStyleRulesCollapseMutableBuilder[Self <: PartialStyleRulesCollapse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainer(value: CSSProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntered(value: CSSProperties): Self = StObject.set(x, "entered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: CSSProperties): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setEnteredUndefined: Self = StObject.set(x, "entered", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setWrapper(value: CSSProperties): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntered(value: CSSProperties): Self = this.set("entered", value.asInstanceOf[js.Any])
+    def setWrapperInner(value: CSSProperties): Self = StObject.set(x, "wrapperInner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEntered: Self = this.set("entered", js.undefined)
+    def setWrapperInnerUndefined: Self = StObject.set(x, "wrapperInner", js.undefined)
     
     @scala.inline
-    def setWrapper(value: CSSProperties): Self = this.set("wrapper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapper: Self = this.set("wrapper", js.undefined)
-    
-    @scala.inline
-    def setWrapperInner(value: CSSProperties): Self = this.set("wrapperInner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapperInner: Self = this.set("wrapperInner", js.undefined)
+    def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
   }
 }

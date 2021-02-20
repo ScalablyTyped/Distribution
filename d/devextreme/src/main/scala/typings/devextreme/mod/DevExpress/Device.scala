@@ -9,12 +9,13 @@ import typings.devextreme.devextremeStrings.generic
 import typings.devextreme.devextremeStrings.ios
 import typings.devextreme.devextremeStrings.phone
 import typings.devextreme.devextremeStrings.tablet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Device extends js.Object {
+trait Device extends StObject {
   
   /**
     * [descr:Device.android]
@@ -70,75 +71,63 @@ object Device {
   }
   
   @scala.inline
-  implicit class DeviceOps[Self <: Device] (val x: Self) extends AnyVal {
+  implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceType(value: phone | tablet | desktop): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroid(value: Boolean): Self = this.set("android", value.asInstanceOf[js.Any])
+    def setDeviceTypeUndefined: Self = StObject.set(x, "deviceType", js.undefined)
     
     @scala.inline
-    def deleteAndroid: Self = this.set("android", js.undefined)
+    def setGeneric(value: Boolean): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceType(value: phone | tablet | desktop): Self = this.set("deviceType", value.asInstanceOf[js.Any])
+    def setGenericUndefined: Self = StObject.set(x, "generic", js.undefined)
     
     @scala.inline
-    def deleteDeviceType: Self = this.set("deviceType", js.undefined)
+    def setGrade(value: A | B | C): Self = StObject.set(x, "grade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneric(value: Boolean): Self = this.set("generic", value.asInstanceOf[js.Any])
+    def setGradeUndefined: Self = StObject.set(x, "grade", js.undefined)
     
     @scala.inline
-    def deleteGeneric: Self = this.set("generic", js.undefined)
+    def setIos(value: Boolean): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrade(value: A | B | C): Self = this.set("grade", value.asInstanceOf[js.Any])
+    def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
     
     @scala.inline
-    def deleteGrade: Self = this.set("grade", js.undefined)
+    def setPhone(value: Boolean): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIos(value: Boolean): Self = this.set("ios", value.asInstanceOf[js.Any])
+    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
     
     @scala.inline
-    def deleteIos: Self = this.set("ios", js.undefined)
+    def setPlatform(value: android | ios | generic): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhone(value: Boolean): Self = this.set("phone", value.asInstanceOf[js.Any])
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     @scala.inline
-    def deletePhone: Self = this.set("phone", js.undefined)
+    def setTablet(value: Boolean): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: android | ios | generic): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setTabletUndefined: Self = StObject.set(x, "tablet", js.undefined)
     
     @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
+    def setVersion(value: js.Array[Double]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTablet(value: Boolean): Self = this.set("tablet", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteTablet: Self = this.set("tablet", js.undefined)
-    
-    @scala.inline
-    def setVersionVarargs(value: Double*): Self = this.set("version", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersion(value: js.Array[Double]): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionVarargs(value: Double*): Self = StObject.set(x, "version", js.Array(value :_*))
   }
 }

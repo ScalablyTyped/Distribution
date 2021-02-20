@@ -1,13 +1,13 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/model/_CORSConfiguration", JSImport.Namespace)
-@js.native
-object corsconfigurationMod extends js.Object {
+object corsconfigurationMod {
   
-  @JSName("_CORSConfiguration")
+  @JSImport("@aws-sdk/client-s3-node/model/_CORSConfiguration", "_CORSConfiguration")
+  @js.native
   val CORSConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

@@ -1,16 +1,16 @@
 package typings.babylonjs
 
 import typings.babylonjs.mathVectorMod.Matrix
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Cameras/VR/vrCameraMetrics", JSImport.Namespace)
-@js.native
-object vrCameraMetricsMod extends js.Object {
+object vrCameraMetricsMod {
   
+  @JSImport("babylonjs/Cameras/VR/vrCameraMetrics", "VRCameraMetrics")
   @js.native
-  class VRCameraMetrics () extends js.Object {
+  class VRCameraMetrics () extends StObject {
     
     /**
       * Gets the rendering aspect ratio based on the provided resolutions.
@@ -115,13 +115,14 @@ object vrCameraMetricsMod extends js.Object {
     var vScreenSize: Double = js.native
   }
   /* static members */
-  @js.native
-  object VRCameraMetrics extends js.Object {
+  object VRCameraMetrics {
     
     /**
       * Get the default VRMetrics based on the most generic setup.
       * @returns the default vr metrics
       */
+    @JSImport("babylonjs/Cameras/VR/vrCameraMetrics", "VRCameraMetrics.GetDefault")
+    @js.native
     def GetDefault(): VRCameraMetrics = js.native
   }
 }

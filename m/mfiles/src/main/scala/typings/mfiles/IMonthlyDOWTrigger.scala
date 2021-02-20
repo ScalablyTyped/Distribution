@@ -3,12 +3,13 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFTriggerMonth
 import typings.mfiles.MFiles.MFTriggerWeekDay
 import typings.mfiles.MFiles.MFTriggerWeekOfMonth
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMonthlyDOWTrigger extends js.Object {
+trait IMonthlyDOWTrigger extends StObject {
   
   var DaysOfTheWeek: MFTriggerWeekDay = js.native
   
@@ -25,27 +26,15 @@ object IMonthlyDOWTrigger {
   }
   
   @scala.inline
-  implicit class IMonthlyDOWTriggerOps[Self <: IMonthlyDOWTrigger] (val x: Self) extends AnyVal {
+  implicit class IMonthlyDOWTriggerMutableBuilder[Self <: IMonthlyDOWTrigger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDaysOfTheWeek(value: MFTriggerWeekDay): Self = StObject.set(x, "DaysOfTheWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMonths(value: MFTriggerMonth): Self = StObject.set(x, "Months", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDaysOfTheWeek(value: MFTriggerWeekDay): Self = this.set("DaysOfTheWeek", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMonths(value: MFTriggerMonth): Self = this.set("Months", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWhichWeek(value: MFTriggerWeekOfMonth): Self = this.set("WhichWeek", value.asInstanceOf[js.Any])
+    def setWhichWeek(value: MFTriggerWeekOfMonth): Self = StObject.set(x, "WhichWeek", value.asInstanceOf[js.Any])
   }
 }

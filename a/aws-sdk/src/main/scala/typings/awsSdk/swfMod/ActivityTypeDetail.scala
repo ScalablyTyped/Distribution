@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivityTypeDetail extends js.Object {
+trait ActivityTypeDetail extends StObject {
   
   /**
     * The configuration settings registered with the activity type.
@@ -26,24 +27,12 @@ object ActivityTypeDetail {
   }
   
   @scala.inline
-  implicit class ActivityTypeDetailOps[Self <: ActivityTypeDetail] (val x: Self) extends AnyVal {
+  implicit class ActivityTypeDetailMutableBuilder[Self <: ActivityTypeDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfiguration(value: ActivityTypeConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfiguration(value: ActivityTypeConfiguration): Self = this.set("configuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeInfo(value: ActivityTypeInfo): Self = this.set("typeInfo", value.asInstanceOf[js.Any])
+    def setTypeInfo(value: ActivityTypeInfo): Self = StObject.set(x, "typeInfo", value.asInstanceOf[js.Any])
   }
 }

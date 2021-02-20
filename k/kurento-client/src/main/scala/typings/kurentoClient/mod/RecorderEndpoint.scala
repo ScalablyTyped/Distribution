@@ -6,6 +6,7 @@ import typings.kurentoClient.anon.EventStopped
 import typings.kurentoClient.kurentoClientStrings.Paused
 import typings.kurentoClient.kurentoClientStrings.Recording
 import typings.kurentoClient.kurentoClientStrings.Stopped
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,18 +1,20 @@
 package typings.typedoc
 
-import typings.typedoc.componentMod.AbstractComponent
 import typings.typedoc.navigationItemMod.NavigationItem
+import typings.typedoc.outputComponentsMod.RendererComponent
 import typings.typedoc.rendererMod.Renderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/output/plugins/NavigationPlugin", JSImport.Namespace)
-@js.native
-object navigationPluginMod extends js.Object {
+object navigationPluginMod {
   
+  @JSImport("typedoc/dist/lib/output/plugins/NavigationPlugin", "NavigationPlugin")
   @js.native
-  class NavigationPlugin () extends AbstractComponent[Renderer] {
+  class NavigationPlugin protected () extends RendererComponent {
+    def this(owner: js.Symbol) = this()
+    def this(owner: Renderer) = this()
     
     var navigation: NavigationItem = js.native
     

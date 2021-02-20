@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteIdentitiesResponse extends js.Object {
+trait DeleteIdentitiesResponse extends StObject {
   
   /**
     * An array of UnprocessedIdentityId objects, each of which contains an ErrorCode and IdentityId.
@@ -21,27 +22,15 @@ object DeleteIdentitiesResponse {
   }
   
   @scala.inline
-  implicit class DeleteIdentitiesResponseOps[Self <: DeleteIdentitiesResponse] (val x: Self) extends AnyVal {
+  implicit class DeleteIdentitiesResponseMutableBuilder[Self <: DeleteIdentitiesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUnprocessedIdentityIds(value: UnprocessedIdentityIdList): Self = StObject.set(x, "UnprocessedIdentityIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUnprocessedIdentityIdsUndefined: Self = StObject.set(x, "UnprocessedIdentityIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUnprocessedIdentityIdsVarargs(value: UnprocessedIdentityId*): Self = this.set("UnprocessedIdentityIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnprocessedIdentityIds(value: UnprocessedIdentityIdList): Self = this.set("UnprocessedIdentityIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnprocessedIdentityIds: Self = this.set("UnprocessedIdentityIds", js.undefined)
+    def setUnprocessedIdentityIdsVarargs(value: UnprocessedIdentityId*): Self = StObject.set(x, "UnprocessedIdentityIds", js.Array(value :_*))
   }
 }

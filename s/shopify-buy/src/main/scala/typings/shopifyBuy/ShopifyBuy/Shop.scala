@@ -1,11 +1,12 @@
 package typings.shopifyBuy.ShopifyBuy
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Shop extends js.Object {
+trait Shop extends StObject {
   
   var description: String = js.native
   
@@ -45,42 +46,30 @@ object Shop {
   }
   
   @scala.inline
-  implicit class ShopOps[Self <: Shop] (val x: Self) extends AnyVal {
+  implicit class ShopMutableBuilder[Self <: Shop] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMoneyFormat(value: String): Self = StObject.set(x, "moneyFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setPaymentSettings(value: js.Any): Self = StObject.set(x, "paymentSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoneyFormat(value: String): Self = this.set("moneyFormat", value.asInstanceOf[js.Any])
+    def setPrimaryDomain(value: js.Any): Self = StObject.set(x, "primaryDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPrivacyPolicy(value: js.Any): Self = StObject.set(x, "privacyPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentSettings(value: js.Any): Self = this.set("paymentSettings", value.asInstanceOf[js.Any])
+    def setRefundPolicy(value: js.Any): Self = StObject.set(x, "refundPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryDomain(value: js.Any): Self = this.set("primaryDomain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrivacyPolicy(value: js.Any): Self = this.set("privacyPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefundPolicy(value: js.Any): Self = this.set("refundPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTermsOfService(value: js.Any): Self = this.set("termsOfService", value.asInstanceOf[js.Any])
+    def setTermsOfService(value: js.Any): Self = StObject.set(x, "termsOfService", value.asInstanceOf[js.Any])
   }
 }

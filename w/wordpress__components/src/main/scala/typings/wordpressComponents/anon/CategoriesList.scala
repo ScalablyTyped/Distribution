@@ -1,11 +1,12 @@
 package typings.wordpressComponents.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CategoriesList extends js.Object {
+trait CategoriesList extends StObject {
   
   var categoriesList: js.Array[Id] = js.native
   
@@ -22,30 +23,18 @@ object CategoriesList {
   }
   
   @scala.inline
-  implicit class CategoriesListOps[Self <: CategoriesList] (val x: Self) extends AnyVal {
+  implicit class CategoriesListMutableBuilder[Self <: CategoriesList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategoriesList(value: js.Array[Id]): Self = StObject.set(x, "categoriesList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoriesListVarargs(value: Id*): Self = StObject.set(x, "categoriesList", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnCategoryChange(value: Double => Unit): Self = StObject.set(x, "onCategoryChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCategoriesListVarargs(value: Id*): Self = this.set("categoriesList", js.Array(value :_*))
-    
-    @scala.inline
-    def setCategoriesList(value: js.Array[Id]): Self = this.set("categoriesList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnCategoryChange(value: Double => Unit): Self = this.set("onCategoryChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSelectedCategoryId(value: Double): Self = this.set("selectedCategoryId", value.asInstanceOf[js.Any])
+    def setSelectedCategoryId(value: Double): Self = StObject.set(x, "selectedCategoryId", value.asInstanceOf[js.Any])
   }
 }

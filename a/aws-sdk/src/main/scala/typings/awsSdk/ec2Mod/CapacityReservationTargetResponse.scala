@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CapacityReservationTargetResponse extends js.Object {
+trait CapacityReservationTargetResponse extends StObject {
   
   /**
     * The ID of the targeted Capacity Reservation.
@@ -26,30 +27,18 @@ object CapacityReservationTargetResponse {
   }
   
   @scala.inline
-  implicit class CapacityReservationTargetResponseOps[Self <: CapacityReservationTargetResponse] (val x: Self) extends AnyVal {
+  implicit class CapacityReservationTargetResponseMutableBuilder[Self <: CapacityReservationTargetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapacityReservationId(value: String): Self = StObject.set(x, "CapacityReservationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapacityReservationIdUndefined: Self = StObject.set(x, "CapacityReservationId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapacityReservationResourceGroupArn(value: String): Self = StObject.set(x, "CapacityReservationResourceGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacityReservationId(value: String): Self = this.set("CapacityReservationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCapacityReservationId: Self = this.set("CapacityReservationId", js.undefined)
-    
-    @scala.inline
-    def setCapacityReservationResourceGroupArn(value: String): Self = this.set("CapacityReservationResourceGroupArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCapacityReservationResourceGroupArn: Self = this.set("CapacityReservationResourceGroupArn", js.undefined)
+    def setCapacityReservationResourceGroupArnUndefined: Self = StObject.set(x, "CapacityReservationResourceGroupArn", js.undefined)
   }
 }

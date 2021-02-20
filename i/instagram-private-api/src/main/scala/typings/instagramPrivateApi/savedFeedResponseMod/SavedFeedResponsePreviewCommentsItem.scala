@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.savedFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SavedFeedResponsePreviewCommentsItem extends js.Object {
+trait SavedFeedResponsePreviewCommentsItem extends StObject {
   
   var bit_flags: Double = js.native
   
@@ -67,75 +68,63 @@ object SavedFeedResponsePreviewCommentsItem {
   }
   
   @scala.inline
-  implicit class SavedFeedResponsePreviewCommentsItemOps[Self <: SavedFeedResponsePreviewCommentsItem] (val x: Self) extends AnyVal {
+  implicit class SavedFeedResponsePreviewCommentsItemMutableBuilder[Self <: SavedFeedResponsePreviewCommentsItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBit_flags(value: Double): Self = StObject.set(x, "bit_flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComment_like_count(value: Double): Self = StObject.set(x, "comment_like_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBit_flags(value: Double): Self = this.set("bit_flags", value.asInstanceOf[js.Any])
+    def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment_like_count(value: Double): Self = this.set("comment_like_count", value.asInstanceOf[js.Any])
+    def setCreated_at_utc(value: Double): Self = StObject.set(x, "created_at_utc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent_type(value: String): Self = this.set("content_type", value.asInstanceOf[js.Any])
+    def setDid_report_as_spam(value: Boolean): Self = StObject.set(x, "did_report_as_spam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: Double): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setHas_liked_comment(value: Boolean): Self = StObject.set(x, "has_liked_comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at_utc(value: Double): Self = this.set("created_at_utc", value.asInstanceOf[js.Any])
+    def setHas_translation(value: Boolean): Self = StObject.set(x, "has_translation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDid_report_as_spam(value: Boolean): Self = this.set("did_report_as_spam", value.asInstanceOf[js.Any])
+    def setHas_translationUndefined: Self = StObject.set(x, "has_translation", js.undefined)
     
     @scala.inline
-    def setHas_liked_comment(value: Boolean): Self = this.set("has_liked_comment", value.asInstanceOf[js.Any])
+    def setMedia_id(value: String): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia_id(value: String): Self = this.set("media_id", value.asInstanceOf[js.Any])
+    def setParent_comment_id(value: String): Self = StObject.set(x, "parent_comment_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPk(value: String): Self = this.set("pk", value.asInstanceOf[js.Any])
+    def setParent_comment_idUndefined: Self = StObject.set(x, "parent_comment_id", js.undefined)
     
     @scala.inline
-    def setShare_enabled(value: Boolean): Self = this.set("share_enabled", value.asInstanceOf[js.Any])
+    def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setShare_enabled(value: Boolean): Self = StObject.set(x, "share_enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser(value: SavedFeedResponseUser): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser_id(value: Double): Self = this.set("user_id", value.asInstanceOf[js.Any])
+    def setUser(value: SavedFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas_translation(value: Boolean): Self = this.set("has_translation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHas_translation: Self = this.set("has_translation", js.undefined)
-    
-    @scala.inline
-    def setParent_comment_id(value: String): Self = this.set("parent_comment_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParent_comment_id: Self = this.set("parent_comment_id", js.undefined)
+    def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
   }
 }

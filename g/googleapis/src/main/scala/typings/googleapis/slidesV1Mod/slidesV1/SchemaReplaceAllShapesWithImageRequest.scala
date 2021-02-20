@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the presentation and do not take on the forms of the shapes.
   */
 @js.native
-trait SchemaReplaceAllShapesWithImageRequest extends js.Object {
+trait SchemaReplaceAllShapesWithImageRequest extends StObject {
   
   /**
     * If set, this request will replace all of the shapes that contain the
@@ -62,51 +63,39 @@ object SchemaReplaceAllShapesWithImageRequest {
   }
   
   @scala.inline
-  implicit class SchemaReplaceAllShapesWithImageRequestOps[Self <: SchemaReplaceAllShapesWithImageRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaReplaceAllShapesWithImageRequestMutableBuilder[Self <: SchemaReplaceAllShapesWithImageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainsText(value: SchemaSubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainsTextUndefined: Self = StObject.set(x, "containsText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageReplaceMethod(value: String): Self = StObject.set(x, "imageReplaceMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainsText(value: SchemaSubstringMatchCriteria): Self = this.set("containsText", value.asInstanceOf[js.Any])
+    def setImageReplaceMethodUndefined: Self = StObject.set(x, "imageReplaceMethod", js.undefined)
     
     @scala.inline
-    def deleteContainsText: Self = this.set("containsText", js.undefined)
+    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageReplaceMethod(value: String): Self = this.set("imageReplaceMethod", value.asInstanceOf[js.Any])
+    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
     @scala.inline
-    def deleteImageReplaceMethod: Self = this.set("imageReplaceMethod", js.undefined)
+    def setPageObjectIds(value: js.Array[String]): Self = StObject.set(x, "pageObjectIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    def setPageObjectIdsUndefined: Self = StObject.set(x, "pageObjectIds", js.undefined)
     
     @scala.inline
-    def deleteImageUrl: Self = this.set("imageUrl", js.undefined)
+    def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value :_*))
     
     @scala.inline
-    def setPageObjectIdsVarargs(value: String*): Self = this.set("pageObjectIds", js.Array(value :_*))
+    def setReplaceMethod(value: String): Self = StObject.set(x, "replaceMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageObjectIds(value: js.Array[String]): Self = this.set("pageObjectIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageObjectIds: Self = this.set("pageObjectIds", js.undefined)
-    
-    @scala.inline
-    def setReplaceMethod(value: String): Self = this.set("replaceMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplaceMethod: Self = this.set("replaceMethod", js.undefined)
+    def setReplaceMethodUndefined: Self = StObject.set(x, "replaceMethod", js.undefined)
   }
 }

@@ -1,10 +1,12 @@
 package typings.convertUnits.mod
 
 import typings.convertUnits.convertUnitsStrings.mWh_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// Reactive Power
 /* Rewritten from type alias, can be one of: 
   - typings.convertUnits.convertUnitsStrings.Wh
   - typings.convertUnits.convertUnitsStrings.mWh_
@@ -14,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.convertUnits.convertUnitsStrings.J
   - typings.convertUnits.convertUnitsStrings.kJ
 */
-trait uEnergy extends js.Object
+trait uEnergy extends StObject
 object uEnergy {
   
   @scala.inline

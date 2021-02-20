@@ -4,12 +4,13 @@ import typings.moment.mod.Moment
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.reactCalendarTimeline.reactCalendarTimelineStrings.primaryHeader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DateHeaderProps[Data] extends js.Object {
+trait DateHeaderProps[Data] extends StObject {
   
   var children: js.UndefOr[js.Function1[/* props */ SidebarHeaderChildrenFnProps[Data], ReactNode]] = js.native
   
@@ -43,54 +44,37 @@ object DateHeaderProps {
   }
   
   @scala.inline
-  implicit class DateHeaderPropsOps[Self <: DateHeaderProps[_], Data] (val x: Self with DateHeaderProps[Data]) extends AnyVal {
+  implicit class DateHeaderPropsMutableBuilder[Self <: DateHeaderProps[_], Data] (val x: Self with DateHeaderProps[Data]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: /* props */ SidebarHeaderChildrenFnProps[Data] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: /* props */ SidebarHeaderChildrenFnProps[Data] => ReactNode): Self = this.set("children", js.Any.fromFunction1(value))
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setHeaderData(value: Data): Self = StObject.set(x, "headerData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setHeaderDataUndefined: Self = StObject.set(x, "headerData", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderData(value: Data): Self = this.set("headerData", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteHeaderData: Self = this.set("headerData", js.undefined)
+    def setIntervalRenderer(value: /* props */ js.UndefOr[IntervalRenderer[Data]] => ReactNode): Self = StObject.set(x, "intervalRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
-    
-    @scala.inline
-    def setIntervalRenderer(value: /* props */ js.UndefOr[IntervalRenderer[Data]] => ReactNode): Self = this.set("intervalRenderer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteIntervalRenderer: Self = this.set("intervalRenderer", js.undefined)
-    
-    @scala.inline
-    def setLabelFormatFunction3(
-      value: (/* hasStartTimeEndTime */ js.Tuple2[Moment, Moment], /* unit */ Unit, /* labelWidth */ Double) => String
-    ): Self = this.set("labelFormat", js.Any.fromFunction3(value))
+    def setIntervalRendererUndefined: Self = StObject.set(x, "intervalRenderer", js.undefined)
     
     @scala.inline
     def setLabelFormat(
@@ -100,21 +84,26 @@ object DateHeaderProps {
           /* labelWidth */ Double, 
           String
         ])
-    ): Self = this.set("labelFormat", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labelFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelFormat: Self = this.set("labelFormat", js.undefined)
+    def setLabelFormatFunction3(
+      value: (/* hasStartTimeEndTime */ js.Tuple2[Moment, Moment], /* unit */ Unit, /* labelWidth */ Double) => String
+    ): Self = StObject.set(x, "labelFormat", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setLabelFormatUndefined: Self = StObject.set(x, "labelFormat", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnit(value: Unit | primaryHeader): Self = this.set("unit", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
+    def setUnit(value: Unit | primaryHeader): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

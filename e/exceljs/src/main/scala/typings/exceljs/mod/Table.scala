@@ -1,12 +1,13 @@
 package typings.exceljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Required<exceljs.exceljs.TableProperties> */
 @js.native
-trait Table extends js.Object {
+trait Table extends StObject {
   
   /**
   	 * Add a new column, including column defn and values
@@ -79,66 +80,54 @@ object Table {
   }
   
   @scala.inline
-  implicit class TableOps[Self <: Table] (val x: Self) extends AnyVal {
+  implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddColumn(value: (TableColumnProperties, js.Array[_], Double) => Unit): Self = StObject.set(x, "addColumn", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddRow(value: (js.Array[_], Double) => Unit): Self = StObject.set(x, "addRow", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumns(value: js.Array[TableColumnProperties]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddColumn(value: (TableColumnProperties, js.Array[_], Double) => Unit): Self = this.set("addColumn", js.Any.fromFunction3(value))
+    def setColumnsVarargs(value: TableColumnProperties*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setAddRow(value: (js.Array[_], Double) => Unit): Self = this.set("addRow", js.Any.fromFunction2(value))
+    def setCommit(value: () => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColumnsVarargs(value: TableColumnProperties*): Self = this.set("columns", js.Array(value :_*))
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[TableColumnProperties]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setGetColumn(value: Double => TableColumn): Self = StObject.set(x, "getColumn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCommit(value: () => Unit): Self = this.set("commit", js.Any.fromFunction0(value))
+    def setHeaderRow(value: Boolean): Self = StObject.set(x, "headerRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetColumn(value: Double => TableColumn): Self = this.set("getColumn", js.Any.fromFunction1(value))
+    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderRow(value: Boolean): Self = this.set("headerRow", value.asInstanceOf[js.Any])
+    def setRemoveColumns(value: (Double, Double) => Unit): Self = StObject.set(x, "removeColumns", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRemoveRows(value: (Double, Double) => Unit): Self = StObject.set(x, "removeRows", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRef(value: String): Self = this.set("ref", value.asInstanceOf[js.Any])
+    def setRows(value: js.Array[js.Array[_]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveColumns(value: (Double, Double) => Unit): Self = this.set("removeColumns", js.Any.fromFunction2(value))
+    def setRowsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
     @scala.inline
-    def setRemoveRows(value: (Double, Double) => Unit): Self = this.set("removeRows", js.Any.fromFunction2(value))
+    def setStyle(value: TableStyleProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowsVarargs(value: js.Array[js.Any]*): Self = this.set("rows", js.Array(value :_*))
-    
-    @scala.inline
-    def setRows(value: js.Array[js.Array[_]]): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: TableStyleProperties): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalsRow(value: Boolean): Self = this.set("totalsRow", value.asInstanceOf[js.Any])
+    def setTotalsRow(value: Boolean): Self = StObject.set(x, "totalsRow", value.asInstanceOf[js.Any])
   }
 }

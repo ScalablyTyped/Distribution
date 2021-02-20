@@ -1,6 +1,7 @@
 package typings.chrome.global.chrome
 
 import typings.chrome.chrome.wallpaper.WallpaperDetails
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Important: This API works only on Chrome OS.
   * @since Chrome 43.
   */
-@JSGlobal("chrome.wallpaper")
-@js.native
-object wallpaper extends js.Object {
+object wallpaper {
   
+  @JSGlobal("chrome.wallpaper.setWallpaper")
+  @js.native
   def setWallpaper(details: WallpaperDetails, callback: js.Function1[/* thumbnail */ js.Any, Unit]): Unit = js.native
 }

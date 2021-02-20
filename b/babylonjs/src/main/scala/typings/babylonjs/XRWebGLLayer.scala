@@ -1,12 +1,13 @@
 package typings.babylonjs
 
 import typings.std.WebGLFramebuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XRWebGLLayer extends js.Object {
+trait XRWebGLLayer extends StObject {
   
   val antialias: Boolean = js.native
   
@@ -36,36 +37,24 @@ object XRWebGLLayer {
   }
   
   @scala.inline
-  implicit class XRWebGLLayerOps[Self <: XRWebGLLayer] (val x: Self) extends AnyVal {
+  implicit class XRWebGLLayerMutableBuilder[Self <: XRWebGLLayer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFramebuffer(value: WebGLFramebuffer): Self = StObject.set(x, "framebuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFramebufferHeight(value: Double): Self = StObject.set(x, "framebufferHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAntialias(value: Boolean): Self = this.set("antialias", value.asInstanceOf[js.Any])
+    def setFramebufferWidth(value: Double): Self = StObject.set(x, "framebufferWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramebuffer(value: WebGLFramebuffer): Self = this.set("framebuffer", value.asInstanceOf[js.Any])
+    def setGetViewport(value: XRView => XRViewport): Self = StObject.set(x, "getViewport", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFramebufferHeight(value: Double): Self = this.set("framebufferHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFramebufferWidth(value: Double): Self = this.set("framebufferWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetViewport(value: XRView => XRViewport): Self = this.set("getViewport", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIgnoreDepthValues(value: Boolean): Self = this.set("ignoreDepthValues", value.asInstanceOf[js.Any])
+    def setIgnoreDepthValues(value: Boolean): Self = StObject.set(x, "ignoreDepthValues", value.asInstanceOf[js.Any])
   }
 }

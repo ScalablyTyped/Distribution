@@ -1,12 +1,13 @@
 package typings.sawtoothSdk.protobufMod
 
 import typings.sawtoothSdk.protobufMod.ClientReceiptGetResponse.Status
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IClientReceiptGetResponse extends js.Object {
+trait IClientReceiptGetResponse extends StObject {
   
   /** ClientReceiptGetResponse receipts */
   var receipts: js.UndefOr[js.Array[ITransactionReceipt] | Null] = js.native
@@ -23,39 +24,27 @@ object IClientReceiptGetResponse {
   }
   
   @scala.inline
-  implicit class IClientReceiptGetResponseOps[Self <: IClientReceiptGetResponse] (val x: Self) extends AnyVal {
+  implicit class IClientReceiptGetResponseMutableBuilder[Self <: IClientReceiptGetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReceipts(value: js.Array[ITransactionReceipt]): Self = StObject.set(x, "receipts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReceiptsNull: Self = StObject.set(x, "receipts", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReceiptsUndefined: Self = StObject.set(x, "receipts", js.undefined)
     
     @scala.inline
-    def setReceiptsVarargs(value: ITransactionReceipt*): Self = this.set("receipts", js.Array(value :_*))
+    def setReceiptsVarargs(value: ITransactionReceipt*): Self = StObject.set(x, "receipts", js.Array(value :_*))
     
     @scala.inline
-    def setReceipts(value: js.Array[ITransactionReceipt]): Self = this.set("receipts", value.asInstanceOf[js.Any])
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReceipts: Self = this.set("receipts", js.undefined)
+    def setStatusNull: Self = StObject.set(x, "status", null)
     
     @scala.inline
-    def setReceiptsNull: Self = this.set("receipts", null)
-    
-    @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setStatusNull: Self = this.set("status", null)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

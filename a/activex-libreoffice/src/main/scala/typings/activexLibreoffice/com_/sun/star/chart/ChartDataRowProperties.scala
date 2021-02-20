@@ -25,6 +25,7 @@ import typings.activexLibreoffice.com_.sun.star.table.ShadowFormat
 import typings.activexLibreoffice.com_.sun.star.text.GraphicCrop
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -224,30 +225,18 @@ object ChartDataRowProperties {
   }
   
   @scala.inline
-  implicit class ChartDataRowPropertiesOps[Self <: ChartDataRowProperties] (val x: Self) extends AnyVal {
+  implicit class ChartDataRowPropertiesMutableBuilder[Self <: ChartDataRowProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxis(value: Double): Self = StObject.set(x, "Axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataErrorProperties(value: XPropertySet): Self = StObject.set(x, "DataErrorProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataMeanValueProperties(value: XPropertySet): Self = StObject.set(x, "DataMeanValueProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: Double): Self = this.set("Axis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataErrorProperties(value: XPropertySet): Self = this.set("DataErrorProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataMeanValueProperties(value: XPropertySet): Self = this.set("DataMeanValueProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataRegressionProperties(value: XPropertySet): Self = this.set("DataRegressionProperties", value.asInstanceOf[js.Any])
+    def setDataRegressionProperties(value: XPropertySet): Self = StObject.set(x, "DataRegressionProperties", value.asInstanceOf[js.Any])
   }
 }

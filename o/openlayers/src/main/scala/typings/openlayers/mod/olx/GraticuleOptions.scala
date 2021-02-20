@@ -3,12 +3,13 @@ package typings.openlayers.mod.olx
 import typings.openlayers.mod.Map
 import typings.openlayers.mod.style.Stroke
 import typings.openlayers.mod.style.Text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GraticuleOptions extends js.Object {
+trait GraticuleOptions extends StObject {
   
   var latLabelFormatter: js.UndefOr[js.Function1[/* lat */ Double, String]] = js.native
   
@@ -41,84 +42,72 @@ object GraticuleOptions {
   }
   
   @scala.inline
-  implicit class GraticuleOptionsOps[Self <: GraticuleOptions] (val x: Self) extends AnyVal {
+  implicit class GraticuleOptionsMutableBuilder[Self <: GraticuleOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLatLabelFormatter(value: /* lat */ Double => String): Self = StObject.set(x, "latLabelFormatter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLatLabelFormatterUndefined: Self = StObject.set(x, "latLabelFormatter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLatLabelPosition(value: Double): Self = StObject.set(x, "latLabelPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatLabelFormatter(value: /* lat */ Double => String): Self = this.set("latLabelFormatter", js.Any.fromFunction1(value))
+    def setLatLabelPositionUndefined: Self = StObject.set(x, "latLabelPosition", js.undefined)
     
     @scala.inline
-    def deleteLatLabelFormatter: Self = this.set("latLabelFormatter", js.undefined)
+    def setLatLabelStyle(value: Text): Self = StObject.set(x, "latLabelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatLabelPosition(value: Double): Self = this.set("latLabelPosition", value.asInstanceOf[js.Any])
+    def setLatLabelStyleUndefined: Self = StObject.set(x, "latLabelStyle", js.undefined)
     
     @scala.inline
-    def deleteLatLabelPosition: Self = this.set("latLabelPosition", js.undefined)
+    def setLonLabelFormatter(value: /* lon */ Double => String): Self = StObject.set(x, "lonLabelFormatter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLatLabelStyle(value: Text): Self = this.set("latLabelStyle", value.asInstanceOf[js.Any])
+    def setLonLabelFormatterUndefined: Self = StObject.set(x, "lonLabelFormatter", js.undefined)
     
     @scala.inline
-    def deleteLatLabelStyle: Self = this.set("latLabelStyle", js.undefined)
+    def setLonLabelPosition(value: Double): Self = StObject.set(x, "lonLabelPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLonLabelFormatter(value: /* lon */ Double => String): Self = this.set("lonLabelFormatter", js.Any.fromFunction1(value))
+    def setLonLabelPositionUndefined: Self = StObject.set(x, "lonLabelPosition", js.undefined)
     
     @scala.inline
-    def deleteLonLabelFormatter: Self = this.set("lonLabelFormatter", js.undefined)
+    def setLonLabelStyle(value: Text): Self = StObject.set(x, "lonLabelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLonLabelPosition(value: Double): Self = this.set("lonLabelPosition", value.asInstanceOf[js.Any])
+    def setLonLabelStyleUndefined: Self = StObject.set(x, "lonLabelStyle", js.undefined)
     
     @scala.inline
-    def deleteLonLabelPosition: Self = this.set("lonLabelPosition", js.undefined)
+    def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLonLabelStyle(value: Text): Self = this.set("lonLabelStyle", value.asInstanceOf[js.Any])
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteLonLabelStyle: Self = this.set("lonLabelStyle", js.undefined)
+    def setMaxLines(value: Double): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: Map): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setMaxLinesUndefined: Self = StObject.set(x, "maxLines", js.undefined)
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setShowLabels(value: Boolean): Self = StObject.set(x, "showLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLines(value: Double): Self = this.set("maxLines", value.asInstanceOf[js.Any])
+    def setShowLabelsUndefined: Self = StObject.set(x, "showLabels", js.undefined)
     
     @scala.inline
-    def deleteMaxLines: Self = this.set("maxLines", js.undefined)
+    def setStrokeStyle(value: Stroke): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowLabels(value: Boolean): Self = this.set("showLabels", value.asInstanceOf[js.Any])
+    def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
     
     @scala.inline
-    def deleteShowLabels: Self = this.set("showLabels", js.undefined)
+    def setTargetSize(value: Double): Self = StObject.set(x, "targetSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeStyle(value: Stroke): Self = this.set("strokeStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeStyle: Self = this.set("strokeStyle", js.undefined)
-    
-    @scala.inline
-    def setTargetSize(value: Double): Self = this.set("targetSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetSize: Self = this.set("targetSize", js.undefined)
+    def setTargetSizeUndefined: Self = StObject.set(x, "targetSize", js.undefined)
   }
 }

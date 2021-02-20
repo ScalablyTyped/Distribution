@@ -3,14 +3,14 @@ package typings.tensorflowTfjsBackendWebgl
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
 import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.max
 import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.min
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-backend-webgl/dist/argminmax_packed_gpu", JSImport.Namespace)
-@js.native
-object argminmaxPackedGpuMod extends js.Object {
+object argminmaxPackedGpuMod {
   
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/argminmax_packed_gpu", "ArgMinMaxPackedProgram")
   @js.native
   class ArgMinMaxPackedProgram protected () extends GPGPUProgram {
     def this(shape: js.Array[Double], windowSize: Double, op: max, firstPass: Boolean) = this()

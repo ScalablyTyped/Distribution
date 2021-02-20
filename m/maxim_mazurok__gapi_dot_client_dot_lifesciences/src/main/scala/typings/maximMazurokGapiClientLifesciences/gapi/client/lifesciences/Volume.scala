@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientLifesciences.gapi.client.lifesciences
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Volume extends js.Object {
+trait Volume extends StObject {
   
   /** Configuration for a existing disk. */
   var existingDisk: js.UndefOr[ExistingDisk] = js.native
@@ -31,42 +32,30 @@ object Volume {
   }
   
   @scala.inline
-  implicit class VolumeOps[Self <: Volume] (val x: Self) extends AnyVal {
+  implicit class VolumeMutableBuilder[Self <: Volume] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExistingDisk(value: ExistingDisk): Self = StObject.set(x, "existingDisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExistingDiskUndefined: Self = StObject.set(x, "existingDisk", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNfsMount(value: NFSMount): Self = StObject.set(x, "nfsMount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExistingDisk(value: ExistingDisk): Self = this.set("existingDisk", value.asInstanceOf[js.Any])
+    def setNfsMountUndefined: Self = StObject.set(x, "nfsMount", js.undefined)
     
     @scala.inline
-    def deleteExistingDisk: Self = this.set("existingDisk", js.undefined)
+    def setPersistentDisk(value: PersistentDisk): Self = StObject.set(x, "persistentDisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNfsMount(value: NFSMount): Self = this.set("nfsMount", value.asInstanceOf[js.Any])
+    def setPersistentDiskUndefined: Self = StObject.set(x, "persistentDisk", js.undefined)
     
     @scala.inline
-    def deleteNfsMount: Self = this.set("nfsMount", js.undefined)
+    def setVolume(value: String): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersistentDisk(value: PersistentDisk): Self = this.set("persistentDisk", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePersistentDisk: Self = this.set("persistentDisk", js.undefined)
-    
-    @scala.inline
-    def setVolume(value: String): Self = this.set("volume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolume: Self = this.set("volume", js.undefined)
+    def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
   }
 }

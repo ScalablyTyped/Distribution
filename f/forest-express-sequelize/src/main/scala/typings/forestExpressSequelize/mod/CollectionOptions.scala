@@ -1,11 +1,12 @@
 package typings.forestExpressSequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollectionOptions extends js.Object {
+trait CollectionOptions extends StObject {
   
   var actions: js.UndefOr[js.Array[SmartActionOptions]] = js.native
   
@@ -22,45 +23,33 @@ object CollectionOptions {
   }
   
   @scala.inline
-  implicit class CollectionOptionsOps[Self <: CollectionOptions] (val x: Self) extends AnyVal {
+  implicit class CollectionOptionsMutableBuilder[Self <: CollectionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[SmartActionOptions]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: SmartActionOptions*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setActionsVarargs(value: SmartActionOptions*): Self = this.set("actions", js.Array(value :_*))
+    def setFields(value: js.Array[SmartFieldOptions]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: js.Array[SmartActionOptions]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setFieldsVarargs(value: SmartFieldOptions*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFieldsVarargs(value: SmartFieldOptions*): Self = this.set("fields", js.Array(value :_*))
+    def setSegments(value: js.Array[SmartSegmentOptions]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: js.Array[SmartFieldOptions]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
-    
-    @scala.inline
-    def setSegmentsVarargs(value: SmartSegmentOptions*): Self = this.set("segments", js.Array(value :_*))
-    
-    @scala.inline
-    def setSegments(value: js.Array[SmartSegmentOptions]): Self = this.set("segments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegments: Self = this.set("segments", js.undefined)
+    def setSegmentsVarargs(value: SmartSegmentOptions*): Self = StObject.set(x, "segments", js.Array(value :_*))
   }
 }

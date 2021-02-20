@@ -1,20 +1,23 @@
 package typings.soundmanager2
 
 import typings.soundmanager2.soundmanager.SoundManager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @JSName("soundManager")
-  var soundManager_ : SoundManager = js.native
-  
+  @JSGlobal("soundManager")
   @js.native
-  object soundmanager extends js.Object {
+  def soundManager_ : SoundManager = js.native
+  
+  @scala.inline
+  def soundManager__=(x: SoundManager): Unit = js.Dynamic.global.updateDynamic("soundManager")(x.asInstanceOf[js.Any])
+  
+  object soundmanager {
     
+    @JSGlobal("soundmanager.SMSound")
     @js.native
     class SMSound ()
       extends typings.soundmanager2.soundmanager.SMSound

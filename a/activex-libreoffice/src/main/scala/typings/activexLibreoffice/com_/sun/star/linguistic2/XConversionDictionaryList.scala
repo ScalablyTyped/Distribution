@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,33 +97,21 @@ object XConversionDictionaryList {
   }
   
   @scala.inline
-  implicit class XConversionDictionaryListOps[Self <: XConversionDictionaryList] (val x: Self) extends AnyVal {
+  implicit class XConversionDictionaryListMutableBuilder[Self <: XConversionDictionaryList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddNewDictionary(value: (String, Locale, Double) => XConversionDictionary): Self = StObject.set(x, "addNewDictionary", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDictionaryContainer(value: XNameContainer): Self = StObject.set(x, "DictionaryContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDictionaryContainer(value: () => XNameContainer): Self = StObject.set(x, "getDictionaryContainer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDictionaryContainer(value: XNameContainer): Self = this.set("DictionaryContainer", value.asInstanceOf[js.Any])
+    def setQueryConversions(value: (String, Double, Double, Locale, Double, ConversionDirection, Double) => SafeArray[String]): Self = StObject.set(x, "queryConversions", js.Any.fromFunction7(value))
     
     @scala.inline
-    def setAddNewDictionary(value: (String, Locale, Double) => XConversionDictionary): Self = this.set("addNewDictionary", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setGetDictionaryContainer(value: () => XNameContainer): Self = this.set("getDictionaryContainer", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setQueryConversions(value: (String, Double, Double, Locale, Double, ConversionDirection, Double) => SafeArray[String]): Self = this.set("queryConversions", js.Any.fromFunction7(value))
-    
-    @scala.inline
-    def setQueryMaxCharCount(value: (Locale, Double, ConversionDirection) => Double): Self = this.set("queryMaxCharCount", js.Any.fromFunction3(value))
+    def setQueryMaxCharCount(value: (Locale, Double, ConversionDirection) => Double): Self = StObject.set(x, "queryMaxCharCount", js.Any.fromFunction3(value))
   }
 }

@@ -1,13 +1,14 @@
 package typings.novaEditorNode
 
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/file/
 @js.native
-trait File extends js.Object {
+trait File extends StObject {
   
   def close(): Unit = js.native
   

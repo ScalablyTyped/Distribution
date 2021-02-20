@@ -1,15 +1,16 @@
 package typings.vis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Edge extends js.Object {
+trait Edge extends StObject {
   
   var edge: js.UndefOr[Boolean] = js.native
   
-   // please note, chosen.edge could be also a function. This case is not represented here
+  // please note, chosen.edge could be also a function. This case is not represented here
   var label: js.UndefOr[Boolean] = js.native
 }
 object Edge {
@@ -21,30 +22,18 @@ object Edge {
   }
   
   @scala.inline
-  implicit class EdgeOps[Self <: Edge] (val x: Self) extends AnyVal {
+  implicit class EdgeMutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdge(value: Boolean): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabel(value: Boolean): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdge(value: Boolean): Self = this.set("edge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEdge: Self = this.set("edge", js.undefined)
-    
-    @scala.inline
-    def setLabel(value: Boolean): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

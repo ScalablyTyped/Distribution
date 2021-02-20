@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,81 +41,69 @@ object SubscribedSku {
   }
   
   @scala.inline
-  implicit class SubscribedSkuOps[Self <: SubscribedSku] (val x: Self) extends AnyVal {
+  implicit class SubscribedSkuMutableBuilder[Self <: SubscribedSku] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppliesTo(value: NullableOption[String]): Self = StObject.set(x, "appliesTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppliesToNull: Self = StObject.set(x, "appliesTo", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppliesToUndefined: Self = StObject.set(x, "appliesTo", js.undefined)
     
     @scala.inline
-    def setAppliesTo(value: NullableOption[String]): Self = this.set("appliesTo", value.asInstanceOf[js.Any])
+    def setCapabilityStatus(value: NullableOption[String]): Self = StObject.set(x, "capabilityStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppliesTo: Self = this.set("appliesTo", js.undefined)
+    def setCapabilityStatusNull: Self = StObject.set(x, "capabilityStatus", null)
     
     @scala.inline
-    def setAppliesToNull: Self = this.set("appliesTo", null)
+    def setCapabilityStatusUndefined: Self = StObject.set(x, "capabilityStatus", js.undefined)
     
     @scala.inline
-    def setCapabilityStatus(value: NullableOption[String]): Self = this.set("capabilityStatus", value.asInstanceOf[js.Any])
+    def setConsumedUnits(value: NullableOption[Double]): Self = StObject.set(x, "consumedUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCapabilityStatus: Self = this.set("capabilityStatus", js.undefined)
+    def setConsumedUnitsNull: Self = StObject.set(x, "consumedUnits", null)
     
     @scala.inline
-    def setCapabilityStatusNull: Self = this.set("capabilityStatus", null)
+    def setConsumedUnitsUndefined: Self = StObject.set(x, "consumedUnits", js.undefined)
     
     @scala.inline
-    def setConsumedUnits(value: NullableOption[Double]): Self = this.set("consumedUnits", value.asInstanceOf[js.Any])
+    def setPrepaidUnits(value: NullableOption[LicenseUnitsDetail]): Self = StObject.set(x, "prepaidUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConsumedUnits: Self = this.set("consumedUnits", js.undefined)
+    def setPrepaidUnitsNull: Self = StObject.set(x, "prepaidUnits", null)
     
     @scala.inline
-    def setConsumedUnitsNull: Self = this.set("consumedUnits", null)
+    def setPrepaidUnitsUndefined: Self = StObject.set(x, "prepaidUnits", js.undefined)
     
     @scala.inline
-    def setPrepaidUnits(value: NullableOption[LicenseUnitsDetail]): Self = this.set("prepaidUnits", value.asInstanceOf[js.Any])
+    def setServicePlans(value: js.Array[ServicePlanInfo]): Self = StObject.set(x, "servicePlans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrepaidUnits: Self = this.set("prepaidUnits", js.undefined)
+    def setServicePlansUndefined: Self = StObject.set(x, "servicePlans", js.undefined)
     
     @scala.inline
-    def setPrepaidUnitsNull: Self = this.set("prepaidUnits", null)
+    def setServicePlansVarargs(value: ServicePlanInfo*): Self = StObject.set(x, "servicePlans", js.Array(value :_*))
     
     @scala.inline
-    def setServicePlansVarargs(value: ServicePlanInfo*): Self = this.set("servicePlans", js.Array(value :_*))
+    def setSkuId(value: NullableOption[String]): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServicePlans(value: js.Array[ServicePlanInfo]): Self = this.set("servicePlans", value.asInstanceOf[js.Any])
+    def setSkuIdNull: Self = StObject.set(x, "skuId", null)
     
     @scala.inline
-    def deleteServicePlans: Self = this.set("servicePlans", js.undefined)
+    def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
     
     @scala.inline
-    def setSkuId(value: NullableOption[String]): Self = this.set("skuId", value.asInstanceOf[js.Any])
+    def setSkuPartNumber(value: NullableOption[String]): Self = StObject.set(x, "skuPartNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSkuId: Self = this.set("skuId", js.undefined)
+    def setSkuPartNumberNull: Self = StObject.set(x, "skuPartNumber", null)
     
     @scala.inline
-    def setSkuIdNull: Self = this.set("skuId", null)
-    
-    @scala.inline
-    def setSkuPartNumber(value: NullableOption[String]): Self = this.set("skuPartNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkuPartNumber: Self = this.set("skuPartNumber", js.undefined)
-    
-    @scala.inline
-    def setSkuPartNumberNull: Self = this.set("skuPartNumber", null)
+    def setSkuPartNumberUndefined: Self = StObject.set(x, "skuPartNumber", js.undefined)
   }
 }

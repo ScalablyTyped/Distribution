@@ -1,12 +1,13 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "QuestionCustomWidget")
 @js.native
-class QuestionCustomWidget protected () extends js.Object {
+class QuestionCustomWidget protected () extends StObject {
   def this(name: String, widgetJson: js.Any) = this()
   
   def activatedByChanged(activatedBy: String): Unit = js.native

@@ -1,13 +1,14 @@
 package typings.materialUiCore.anon
 
 import typings.materialUiCore.withStylesMod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/NativeSelect.NativeSelectClassKey>> */
 @js.native
-trait PartialStyleRulesNativeSe extends js.Object {
+trait PartialStyleRulesNativeSe extends StObject {
   
   var disabled: js.UndefOr[CSSProperties] = js.native
   
@@ -32,60 +33,48 @@ object PartialStyleRulesNativeSe {
   }
   
   @scala.inline
-  implicit class PartialStyleRulesNativeSeOps[Self <: PartialStyleRulesNativeSe] (val x: Self) extends AnyVal {
+  implicit class PartialStyleRulesNativeSeMutableBuilder[Self <: PartialStyleRulesNativeSe] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: CSSProperties): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilled(value: CSSProperties): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: CSSProperties): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setIcon(value: CSSProperties): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilled(value: CSSProperties): Self = this.set("filled", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteFilled: Self = this.set("filled", js.undefined)
+    def setOutlined(value: CSSProperties): Self = StObject.set(x, "outlined", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: CSSProperties): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setOutlinedUndefined: Self = StObject.set(x, "outlined", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlined(value: CSSProperties): Self = this.set("outlined", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteOutlined: Self = this.set("outlined", js.undefined)
+    def setSelect(value: CSSProperties): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setSelectMenu(value: CSSProperties): Self = StObject.set(x, "selectMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setSelectMenuUndefined: Self = StObject.set(x, "selectMenu", js.undefined)
     
     @scala.inline
-    def setSelect(value: CSSProperties): Self = this.set("select", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
-    
-    @scala.inline
-    def setSelectMenu(value: CSSProperties): Self = this.set("selectMenu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectMenu: Self = this.set("selectMenu", js.undefined)
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
   }
 }

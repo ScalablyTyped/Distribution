@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.App
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -90,51 +91,39 @@ object iOSNotificationEvent {
   }
   
   @scala.inline
-  implicit class iOSNotificationEventOps[Self <: iOSNotificationEvent] (val x: Self) extends AnyVal {
+  implicit class iOSNotificationEventMutableBuilder[Self <: iOSNotificationEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlertAction(value: String): Self = StObject.set(x, "alertAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlertBody(value: String): Self = StObject.set(x, "alertBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlertLaunchImage(value: String): Self = StObject.set(x, "alertLaunchImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlertAction(value: String): Self = this.set("alertAction", value.asInstanceOf[js.Any])
+    def setBadge(value: Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlertBody(value: String): Self = this.set("alertBody", value.asInstanceOf[js.Any])
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlertLaunchImage(value: String): Self = this.set("alertLaunchImage", value.asInstanceOf[js.Any])
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadge(value: Double): Self = this.set("badge", value.asInstanceOf[js.Any])
+    def setInBackground(value: Boolean): Self = StObject.set(x, "inBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setThreadIdentifier(value: String): Self = StObject.set(x, "threadIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInBackground(value: Boolean): Self = this.set("inBackground", value.asInstanceOf[js.Any])
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSound(value: String): Self = this.set("sound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThreadIdentifier(value: String): Self = this.set("threadIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserInfo(value: js.Any): Self = this.set("userInfo", value.asInstanceOf[js.Any])
+    def setUserInfo(value: js.Any): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
   }
 }

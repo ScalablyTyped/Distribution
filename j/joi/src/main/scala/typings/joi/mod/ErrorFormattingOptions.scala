@@ -4,12 +4,13 @@ import typings.joi.anon.Array
 import typings.joi.joiBooleans.`false`
 import typings.joi.joiStrings.key
 import typings.joi.joiStrings.path
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ErrorFormattingOptions extends js.Object {
+trait ErrorFormattingOptions extends StObject {
   
   /**
     * when true, error message templates will escape special characters to HTML entities, for security purposes.
@@ -64,54 +65,42 @@ object ErrorFormattingOptions {
   }
   
   @scala.inline
-  implicit class ErrorFormattingOptionsOps[Self <: ErrorFormattingOptions] (val x: Self) extends AnyVal {
+  implicit class ErrorFormattingOptionsMutableBuilder[Self <: ErrorFormattingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEscapeHtml(value: Boolean): Self = StObject.set(x, "escapeHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEscapeHtmlUndefined: Self = StObject.set(x, "escapeHtml", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabel(value: path | key | `false`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEscapeHtml(value: Boolean): Self = this.set("escapeHtml", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteEscapeHtml: Self = this.set("escapeHtml", js.undefined)
+    def setLanguage(value: /* keyof joi.joi.LanguageMessages */ String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: path | key | `false`): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setRender(value: Boolean): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: /* keyof joi.joi.LanguageMessages */ String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setStack(value: Boolean): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRender(value: Boolean): Self = this.set("render", value.asInstanceOf[js.Any])
+    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
     @scala.inline
-    def deleteRender: Self = this.set("render", js.undefined)
+    def setWrap(value: Array): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStack(value: Boolean): Self = this.set("stack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStack: Self = this.set("stack", js.undefined)
-    
-    @scala.inline
-    def setWrap(value: Array): Self = this.set("wrap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrap: Self = this.set("wrap", js.undefined)
+    def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
   }
 }

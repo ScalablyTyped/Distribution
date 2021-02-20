@@ -7,14 +7,14 @@ import typings.awsSdkClientDynamodbBrowser.typesListGlobalTablesInputMod.ListGlo
 import typings.awsSdkClientDynamodbBrowser.typesListGlobalTablesOutputMod.ListGlobalTablesOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/commands/ListGlobalTablesCommand", JSImport.Namespace)
-@js.native
-object listGlobalTablesCommandMod extends js.Object {
+object listGlobalTablesCommandMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-browser/commands/ListGlobalTablesCommand", "ListGlobalTablesCommand")
   @js.native
   class ListGlobalTablesCommand protected () extends Command[
           InputTypesUnion, 

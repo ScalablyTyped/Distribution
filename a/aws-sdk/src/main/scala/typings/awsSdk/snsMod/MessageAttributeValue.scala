@@ -1,11 +1,12 @@
 package typings.awsSdk.snsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageAttributeValue extends js.Object {
+trait MessageAttributeValue extends StObject {
   
   /**
     * Binary type attributes can store any binary data, for example, compressed data, encrypted data, or images.
@@ -31,33 +32,21 @@ object MessageAttributeValue {
   }
   
   @scala.inline
-  implicit class MessageAttributeValueOps[Self <: MessageAttributeValue] (val x: Self) extends AnyVal {
+  implicit class MessageAttributeValueMutableBuilder[Self <: MessageAttributeValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinaryValue(value: Binary): Self = StObject.set(x, "BinaryValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBinaryValueUndefined: Self = StObject.set(x, "BinaryValue", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataType(value: String): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: String): Self = this.set("DataType", value.asInstanceOf[js.Any])
+    def setStringValue(value: String): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinaryValue(value: Binary): Self = this.set("BinaryValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBinaryValue: Self = this.set("BinaryValue", js.undefined)
-    
-    @scala.inline
-    def setStringValue(value: String): Self = this.set("StringValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringValue: Self = this.set("StringValue", js.undefined)
+    def setStringValueUndefined: Self = StObject.set(x, "StringValue", js.undefined)
   }
 }

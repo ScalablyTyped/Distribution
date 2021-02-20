@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Streaming.Adaptive
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AdaptiveMediaSourceResourceType extends js.Object
+sealed trait AdaptiveMediaSourceResourceType extends StObject
 /** Specifies the type of an adaptive media resource. */
 @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType")
 @js.native
-object AdaptiveMediaSourceResourceType extends js.Object {
+object AdaptiveMediaSourceResourceType extends StObject {
   
   /** The resource is an initialization segment. */
   @js.native

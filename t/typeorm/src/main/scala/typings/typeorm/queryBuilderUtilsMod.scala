@@ -1,23 +1,24 @@
 package typings.typeorm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/query-builder/QueryBuilderUtils", JSImport.Namespace)
-@js.native
-object queryBuilderUtilsMod extends js.Object {
+object queryBuilderUtilsMod {
   
+  @JSImport("typeorm/browser/query-builder/QueryBuilderUtils", "QueryBuilderUtils")
   @js.native
-  class QueryBuilderUtils () extends js.Object
+  class QueryBuilderUtils () extends StObject
   /* static members */
-  @js.native
-  object QueryBuilderUtils extends js.Object {
+  object QueryBuilderUtils {
     
     /**
       * Checks if given value is a string representation of alias property,
       * e.g. "post.category" or "post.id".
       */
+    @JSImport("typeorm/browser/query-builder/QueryBuilderUtils", "QueryBuilderUtils.isAliasProperty")
+    @js.native
     def isAliasProperty(str: js.Any): /* is string */ Boolean = js.native
   }
 }

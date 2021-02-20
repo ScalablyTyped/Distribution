@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReleaseChannelConfig extends js.Object {
+trait ReleaseChannelConfig extends StObject {
   
   /** The release channel this configuration applies to. */
   var channel: js.UndefOr[String] = js.native
@@ -25,39 +26,27 @@ object ReleaseChannelConfig {
   }
   
   @scala.inline
-  implicit class ReleaseChannelConfigOps[Self <: ReleaseChannelConfig] (val x: Self) extends AnyVal {
+  implicit class ReleaseChannelConfigMutableBuilder[Self <: ReleaseChannelConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultVersion(value: String): Self = StObject.set(x, "defaultVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannel(value: String): Self = this.set("channel", value.asInstanceOf[js.Any])
+    def setDefaultVersionUndefined: Self = StObject.set(x, "defaultVersion", js.undefined)
     
     @scala.inline
-    def deleteChannel: Self = this.set("channel", js.undefined)
+    def setValidVersions(value: js.Array[String]): Self = StObject.set(x, "validVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultVersion(value: String): Self = this.set("defaultVersion", value.asInstanceOf[js.Any])
+    def setValidVersionsUndefined: Self = StObject.set(x, "validVersions", js.undefined)
     
     @scala.inline
-    def deleteDefaultVersion: Self = this.set("defaultVersion", js.undefined)
-    
-    @scala.inline
-    def setValidVersionsVarargs(value: String*): Self = this.set("validVersions", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidVersions(value: js.Array[String]): Self = this.set("validVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidVersions: Self = this.set("validVersions", js.undefined)
+    def setValidVersionsVarargs(value: String*): Self = StObject.set(x, "validVersions", js.Array(value :_*))
   }
 }

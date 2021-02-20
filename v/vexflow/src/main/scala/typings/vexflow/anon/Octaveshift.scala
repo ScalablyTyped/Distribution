@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Octaveshift extends js.Object {
+trait Octaveshift extends StObject {
   
   var octave_shift: js.UndefOr[Double] = js.native
 }
@@ -18,24 +19,12 @@ object Octaveshift {
   }
   
   @scala.inline
-  implicit class OctaveshiftOps[Self <: Octaveshift] (val x: Self) extends AnyVal {
+  implicit class OctaveshiftMutableBuilder[Self <: Octaveshift] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOctave_shift(value: Double): Self = StObject.set(x, "octave_shift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOctave_shift(value: Double): Self = this.set("octave_shift", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOctave_shift: Self = this.set("octave_shift", js.undefined)
+    def setOctave_shiftUndefined: Self = StObject.set(x, "octave_shift", js.undefined)
   }
 }

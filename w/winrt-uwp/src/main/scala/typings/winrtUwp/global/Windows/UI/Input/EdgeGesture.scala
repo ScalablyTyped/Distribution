@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.UI.Input
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,14 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class EdgeGesture ()
   extends typings.winrtUwp.Windows.UI.Input.EdgeGesture
-/* static members */
-@JSGlobal("Windows.UI.Input.EdgeGesture")
-@js.native
-object EdgeGesture extends js.Object {
+object EdgeGesture {
   
   /**
     * Gets an instance of the EdgeGesture class that is used to add and remove event delegate handlers for the current view.
     * @return The currently relevant instance of the EdgeGesture object.
     */
+  /* static member */
+  @JSGlobal("Windows.UI.Input.EdgeGesture.getForCurrentView")
+  @js.native
   def getForCurrentView(): typings.winrtUwp.Windows.UI.Input.EdgeGesture = js.native
 }

@@ -1,11 +1,12 @@
 package typings.camljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILookupMultiFieldExpression extends js.Object {
+trait ILookupMultiFieldExpression extends StObject {
   
   /** DEPRECATED: "Eq" operation in CAML works exactly the same as "Includes". To avoid confusion, please use Includes. */
   def EqualTo(value: js.Any): IExpression = js.native
@@ -45,39 +46,27 @@ object ILookupMultiFieldExpression {
   }
   
   @scala.inline
-  implicit class ILookupMultiFieldExpressionOps[Self <: ILookupMultiFieldExpression] (val x: Self) extends AnyVal {
+  implicit class ILookupMultiFieldExpressionMutableBuilder[Self <: ILookupMultiFieldExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEqualTo(value: js.Any => IExpression): Self = StObject.set(x, "EqualTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludes(value: js.Any => IExpression): Self = StObject.set(x, "Includes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludesSuchItemThat(value: () => ILookupFieldExpression): Self = StObject.set(x, "IncludesSuchItemThat", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEqualTo(value: js.Any => IExpression): Self = this.set("EqualTo", js.Any.fromFunction1(value))
+    def setIsNotNull(value: () => IExpression): Self = StObject.set(x, "IsNotNull", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIncludes(value: js.Any => IExpression): Self = this.set("Includes", js.Any.fromFunction1(value))
+    def setIsNull(value: () => IExpression): Self = StObject.set(x, "IsNull", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIncludesSuchItemThat(value: () => ILookupFieldExpression): Self = this.set("IncludesSuchItemThat", js.Any.fromFunction0(value))
+    def setNotEqualTo(value: js.Any => IExpression): Self = StObject.set(x, "NotEqualTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsNotNull(value: () => IExpression): Self = this.set("IsNotNull", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsNull(value: () => IExpression): Self = this.set("IsNull", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setNotEqualTo(value: js.Any => IExpression): Self = this.set("NotEqualTo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNotIncludes(value: js.Any => IExpression): Self = this.set("NotIncludes", js.Any.fromFunction1(value))
+    def setNotIncludes(value: js.Any => IExpression): Self = StObject.set(x, "NotIncludes", js.Any.fromFunction1(value))
   }
 }

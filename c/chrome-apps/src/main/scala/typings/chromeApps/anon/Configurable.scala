@@ -1,12 +1,13 @@
 package typings.chromeApps.anon
 
 import typings.chromeApps.chromeAppsStrings.network
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Configurable extends js.Object {
+trait Configurable extends StObject {
   
   /**
     * For example, if *configurable* is set to **true**,
@@ -38,42 +39,30 @@ object Configurable {
   }
   
   @scala.inline
-  implicit class ConfigurableOps[Self <: Configurable] (val x: Self) extends AnyVal {
+  implicit class ConfigurableMutableBuilder[Self <: Configurable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurableUndefined: Self = StObject.set(x, "configurable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMultiple_mounts(value: Boolean): Self = StObject.set(x, "multiple_mounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurable(value: Boolean): Self = this.set("configurable", value.asInstanceOf[js.Any])
+    def setMultiple_mountsUndefined: Self = StObject.set(x, "multiple_mounts", js.undefined)
     
     @scala.inline
-    def deleteConfigurable: Self = this.set("configurable", js.undefined)
+    def setSource(value: network): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiple_mounts(value: Boolean): Self = this.set("multiple_mounts", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteMultiple_mounts: Self = this.set("multiple_mounts", js.undefined)
+    def setWatchable(value: Boolean): Self = StObject.set(x, "watchable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: network): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setWatchable(value: Boolean): Self = this.set("watchable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWatchable: Self = this.set("watchable", js.undefined)
+    def setWatchableUndefined: Self = StObject.set(x, "watchable", js.undefined)
   }
 }

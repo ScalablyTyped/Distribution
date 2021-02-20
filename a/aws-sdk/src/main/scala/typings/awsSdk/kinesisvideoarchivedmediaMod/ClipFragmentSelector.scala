@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisvideoarchivedmediaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClipFragmentSelector extends js.Object {
+trait ClipFragmentSelector extends StObject {
   
   /**
     * The origin of the timestamps to use (Server or Producer).
@@ -26,24 +27,12 @@ object ClipFragmentSelector {
   }
   
   @scala.inline
-  implicit class ClipFragmentSelectorOps[Self <: ClipFragmentSelector] (val x: Self) extends AnyVal {
+  implicit class ClipFragmentSelectorMutableBuilder[Self <: ClipFragmentSelector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFragmentSelectorType(value: ClipFragmentSelectorType): Self = StObject.set(x, "FragmentSelectorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFragmentSelectorType(value: ClipFragmentSelectorType): Self = this.set("FragmentSelectorType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestampRange(value: ClipTimestampRange): Self = this.set("TimestampRange", value.asInstanceOf[js.Any])
+    def setTimestampRange(value: ClipTimestampRange): Self = StObject.set(x, "TimestampRange", value.asInstanceOf[js.Any])
   }
 }

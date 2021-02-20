@@ -5,14 +5,14 @@ import typings.pulumiAws.analyzerMod.AnalyzerState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/accessanalyzer", JSImport.Namespace)
-@js.native
-object accessanalyzerMod extends js.Object {
+object accessanalyzerMod {
   
+  @JSImport("@pulumi/aws/accessanalyzer", "Analyzer")
   @js.native
   class Analyzer protected ()
     extends typings.pulumiAws.analyzerMod.Analyzer {
@@ -27,8 +27,7 @@ object accessanalyzerMod extends js.Object {
     def this(name: String, args: AnalyzerArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Analyzer extends js.Object {
+  object Analyzer {
     
     /**
       * Get an existing Analyzer resource's state with the given name, ID, and optional extra
@@ -39,15 +38,25 @@ object accessanalyzerMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/accessanalyzer", "Analyzer.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.analyzerMod.Analyzer = js.native
+    @JSImport("@pulumi/aws/accessanalyzer", "Analyzer.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.analyzerMod.Analyzer = js.native
+    @JSImport("@pulumi/aws/accessanalyzer", "Analyzer.get")
+    @js.native
     def get(name: String, id: Input[ID], state: AnalyzerState): typings.pulumiAws.analyzerMod.Analyzer = js.native
+    @JSImport("@pulumi/aws/accessanalyzer", "Analyzer.get")
+    @js.native
     def get(name: String, id: Input[ID], state: AnalyzerState, opts: CustomResourceOptions): typings.pulumiAws.analyzerMod.Analyzer = js.native
     
     /**
       * Returns true if the given object is an instance of Analyzer.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/accessanalyzer", "Analyzer.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/accessanalyzer/analyzer.Analyzer */ Boolean = js.native
   }
 }

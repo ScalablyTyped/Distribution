@@ -1,12 +1,13 @@
 package typings.loopback.anon
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Enabled extends js.Object {
+trait Enabled extends StObject {
   
   var enabled: js.UndefOr[Boolean] = js.native
   
@@ -25,45 +26,33 @@ object Enabled {
   }
   
   @scala.inline
-  implicit class EnabledOps[Self <: Enabled] (val x: Self) extends AnyVal {
+  implicit class EnabledMutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParams(value: js.Array[_] | js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhase(value: String): Self = this.set("phase", value.asInstanceOf[js.Any])
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setPaths(value: js.Array[_] | String | RegExp): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamsVarargs(value: js.Any*): Self = this.set("params", js.Array(value :_*))
+    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
     @scala.inline
-    def setParams(value: js.Array[_] | js.Any): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setPathsVarargs(value: js.Any*): Self = StObject.set(x, "paths", js.Array(value :_*))
     
     @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
-    
-    @scala.inline
-    def setPathsVarargs(value: js.Any*): Self = this.set("paths", js.Array(value :_*))
-    
-    @scala.inline
-    def setPaths(value: js.Array[_] | String | RegExp): Self = this.set("paths", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaths: Self = this.set("paths", js.undefined)
+    def setPhase(value: String): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
   }
 }

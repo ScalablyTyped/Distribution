@@ -1,5 +1,6 @@
 package typings.googleapis.v32Mod.dfareportingV32
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Third-party Tracking URL.
   */
 @js.native
-trait SchemaThirdPartyTrackingUrl extends js.Object {
+trait SchemaThirdPartyTrackingUrl extends StObject {
   
   /**
     * Third-party URL type for in-stream video and in-stream audio creatives.
@@ -29,30 +30,18 @@ object SchemaThirdPartyTrackingUrl {
   }
   
   @scala.inline
-  implicit class SchemaThirdPartyTrackingUrlOps[Self <: SchemaThirdPartyTrackingUrl] (val x: Self) extends AnyVal {
+  implicit class SchemaThirdPartyTrackingUrlMutableBuilder[Self <: SchemaThirdPartyTrackingUrl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setThirdPartyUrlType(value: String): Self = StObject.set(x, "thirdPartyUrlType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setThirdPartyUrlTypeUndefined: Self = StObject.set(x, "thirdPartyUrlType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThirdPartyUrlType(value: String): Self = this.set("thirdPartyUrlType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThirdPartyUrlType: Self = this.set("thirdPartyUrlType", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

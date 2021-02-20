@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CheckDNSAvailabilityResultMessage extends js.Object {
+trait CheckDNSAvailabilityResultMessage extends StObject {
   
   /**
     * Indicates if the specified CNAME is available:    true : The CNAME is available.    false : The CNAME is not available.  
@@ -26,30 +27,18 @@ object CheckDNSAvailabilityResultMessage {
   }
   
   @scala.inline
-  implicit class CheckDNSAvailabilityResultMessageOps[Self <: CheckDNSAvailabilityResultMessage] (val x: Self) extends AnyVal {
+  implicit class CheckDNSAvailabilityResultMessageMutableBuilder[Self <: CheckDNSAvailabilityResultMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailable(value: CnameAvailability): Self = StObject.set(x, "Available", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailableUndefined: Self = StObject.set(x, "Available", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullyQualifiedCNAME(value: DNSCname): Self = StObject.set(x, "FullyQualifiedCNAME", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailable(value: CnameAvailability): Self = this.set("Available", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvailable: Self = this.set("Available", js.undefined)
-    
-    @scala.inline
-    def setFullyQualifiedCNAME(value: DNSCname): Self = this.set("FullyQualifiedCNAME", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFullyQualifiedCNAME: Self = this.set("FullyQualifiedCNAME", js.undefined)
+    def setFullyQualifiedCNAMEUndefined: Self = StObject.set(x, "FullyQualifiedCNAME", js.undefined)
   }
 }

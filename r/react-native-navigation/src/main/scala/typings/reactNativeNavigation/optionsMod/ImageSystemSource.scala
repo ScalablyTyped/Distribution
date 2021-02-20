@@ -1,12 +1,13 @@
 package typings.reactNativeNavigation.optionsMod
 
 import typings.reactNative.mod.ImageRequireSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageSystemSource extends js.Object {
+trait ImageSystemSource extends StObject {
   
   var fallback: js.UndefOr[ImageRequireSource | String] = js.native
   
@@ -21,27 +22,15 @@ object ImageSystemSource {
   }
   
   @scala.inline
-  implicit class ImageSystemSourceOps[Self <: ImageSystemSource] (val x: Self) extends AnyVal {
+  implicit class ImageSystemSourceMutableBuilder[Self <: ImageSystemSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFallback(value: ImageRequireSource | String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSystem(value: String): Self = this.set("system", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFallback(value: ImageRequireSource | String): Self = this.set("fallback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFallback: Self = this.set("fallback", js.undefined)
+    def setSystem(value: String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
   }
 }

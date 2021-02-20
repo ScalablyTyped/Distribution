@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to specify the query options when searching for contacts. */
 @js.native
-trait ContactQueryOptions extends js.Object {
+trait ContactQueryOptions extends StObject {
   
   /** Gets a list to which you can add ContactAnnotationList.Id values for which to search. */
   var annotationListIds: IVector[String] = js.native
@@ -43,36 +44,24 @@ object ContactQueryOptions {
   }
   
   @scala.inline
-  implicit class ContactQueryOptionsOps[Self <: ContactQueryOptions] (val x: Self) extends AnyVal {
+  implicit class ContactQueryOptionsMutableBuilder[Self <: ContactQueryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotationListIds(value: IVector[String]): Self = StObject.set(x, "annotationListIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactListIds(value: IVector[String]): Self = StObject.set(x, "contactListIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDesiredFields(value: ContactQueryDesiredFields): Self = StObject.set(x, "desiredFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationListIds(value: IVector[String]): Self = this.set("annotationListIds", value.asInstanceOf[js.Any])
+    def setDesiredOperations(value: ContactAnnotationOperations): Self = StObject.set(x, "desiredOperations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactListIds(value: IVector[String]): Self = this.set("contactListIds", value.asInstanceOf[js.Any])
+    def setIncludeContactsFromHiddenLists(value: Boolean): Self = StObject.set(x, "includeContactsFromHiddenLists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredFields(value: ContactQueryDesiredFields): Self = this.set("desiredFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDesiredOperations(value: ContactAnnotationOperations): Self = this.set("desiredOperations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeContactsFromHiddenLists(value: Boolean): Self = this.set("includeContactsFromHiddenLists", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextSearch(value: ContactQueryTextSearch): Self = this.set("textSearch", value.asInstanceOf[js.Any])
+    def setTextSearch(value: ContactQueryTextSearch): Self = StObject.set(x, "textSearch", value.asInstanceOf[js.Any])
   }
 }

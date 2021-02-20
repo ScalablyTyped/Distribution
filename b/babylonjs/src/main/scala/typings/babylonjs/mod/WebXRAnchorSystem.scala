@@ -1,6 +1,7 @@
 package typings.babylonjs.mod
 
 import typings.babylonjs.webXRAnchorSystemMod.IWebXRAnchorSystemOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,13 +22,13 @@ class WebXRAnchorSystem protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs", "WebXRAnchorSystem")
-@js.native
-object WebXRAnchorSystem extends js.Object {
+object WebXRAnchorSystem {
   
   /**
     * The module's name
     */
+  @JSImport("babylonjs", "WebXRAnchorSystem.Name")
+  @js.native
   val Name: String = js.native
   
   /**
@@ -35,5 +36,7 @@ object WebXRAnchorSystem extends js.Object {
     * This is an integer representing the implementation version.
     * This number does not correspond to the WebXR specs version
     */
+  @JSImport("babylonjs", "WebXRAnchorSystem.Version")
+  @js.native
   val Version: Double = js.native
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Result of the categorical stats computation.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2CategoricalStatsResult extends js.Object {
+trait SchemaGooglePrivacyDlpV2CategoricalStatsResult extends StObject {
   
   /**
     * Histogram of value frequencies in the column.
@@ -24,27 +25,15 @@ object SchemaGooglePrivacyDlpV2CategoricalStatsResult {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2CategoricalStatsResultOps[Self <: SchemaGooglePrivacyDlpV2CategoricalStatsResult] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2CategoricalStatsResultMutableBuilder[Self <: SchemaGooglePrivacyDlpV2CategoricalStatsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setValueFrequencyHistogramBuckets(value: js.Array[SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket]): Self = StObject.set(x, "valueFrequencyHistogramBuckets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValueFrequencyHistogramBucketsUndefined: Self = StObject.set(x, "valueFrequencyHistogramBuckets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setValueFrequencyHistogramBucketsVarargs(value: SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket*): Self = this.set("valueFrequencyHistogramBuckets", js.Array(value :_*))
-    
-    @scala.inline
-    def setValueFrequencyHistogramBuckets(value: js.Array[SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket]): Self = this.set("valueFrequencyHistogramBuckets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueFrequencyHistogramBuckets: Self = this.set("valueFrequencyHistogramBuckets", js.undefined)
+    def setValueFrequencyHistogramBucketsVarargs(value: SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket*): Self = StObject.set(x, "valueFrequencyHistogramBuckets", js.Array(value :_*))
   }
 }

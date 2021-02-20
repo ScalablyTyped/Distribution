@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoLiveStreamingDetails extends js.Object {
+trait VideoLiveStreamingDetails extends StObject {
   
   /**
     * The ID of the currently active live chat attached to this video. This field is filled only if the video is a currently live broadcast that has live chat. Once the broadcast
@@ -45,54 +46,42 @@ object VideoLiveStreamingDetails {
   }
   
   @scala.inline
-  implicit class VideoLiveStreamingDetailsOps[Self <: VideoLiveStreamingDetails] (val x: Self) extends AnyVal {
+  implicit class VideoLiveStreamingDetailsMutableBuilder[Self <: VideoLiveStreamingDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveLiveChatId(value: String): Self = StObject.set(x, "activeLiveChatId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveLiveChatIdUndefined: Self = StObject.set(x, "activeLiveChatId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActualEndTime(value: String): Self = StObject.set(x, "actualEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveLiveChatId(value: String): Self = this.set("activeLiveChatId", value.asInstanceOf[js.Any])
+    def setActualEndTimeUndefined: Self = StObject.set(x, "actualEndTime", js.undefined)
     
     @scala.inline
-    def deleteActiveLiveChatId: Self = this.set("activeLiveChatId", js.undefined)
+    def setActualStartTime(value: String): Self = StObject.set(x, "actualStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActualEndTime(value: String): Self = this.set("actualEndTime", value.asInstanceOf[js.Any])
+    def setActualStartTimeUndefined: Self = StObject.set(x, "actualStartTime", js.undefined)
     
     @scala.inline
-    def deleteActualEndTime: Self = this.set("actualEndTime", js.undefined)
+    def setConcurrentViewers(value: String): Self = StObject.set(x, "concurrentViewers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActualStartTime(value: String): Self = this.set("actualStartTime", value.asInstanceOf[js.Any])
+    def setConcurrentViewersUndefined: Self = StObject.set(x, "concurrentViewers", js.undefined)
     
     @scala.inline
-    def deleteActualStartTime: Self = this.set("actualStartTime", js.undefined)
+    def setScheduledEndTime(value: String): Self = StObject.set(x, "scheduledEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcurrentViewers(value: String): Self = this.set("concurrentViewers", value.asInstanceOf[js.Any])
+    def setScheduledEndTimeUndefined: Self = StObject.set(x, "scheduledEndTime", js.undefined)
     
     @scala.inline
-    def deleteConcurrentViewers: Self = this.set("concurrentViewers", js.undefined)
+    def setScheduledStartTime(value: String): Self = StObject.set(x, "scheduledStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduledEndTime(value: String): Self = this.set("scheduledEndTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduledEndTime: Self = this.set("scheduledEndTime", js.undefined)
-    
-    @scala.inline
-    def setScheduledStartTime(value: String): Self = this.set("scheduledStartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduledStartTime: Self = this.set("scheduledStartTime", js.undefined)
+    def setScheduledStartTimeUndefined: Self = StObject.set(x, "scheduledStartTime", js.undefined)
   }
 }

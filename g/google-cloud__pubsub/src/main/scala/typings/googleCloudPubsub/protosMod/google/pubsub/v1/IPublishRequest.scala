@@ -1,27 +1,50 @@
 package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a PublishRequest. */
-trait IPublishRequest extends js.Object {
+@js.native
+trait IPublishRequest extends StObject {
+  
   /** PublishRequest messages */
-  var messages: js.UndefOr[js.Array[IPubsubMessage] | Null] = js.undefined
+  var messages: js.UndefOr[js.Array[IPubsubMessage] | Null] = js.native
+  
   /** PublishRequest topic */
-  var topic: js.UndefOr[String | Null] = js.undefined
+  var topic: js.UndefOr[String | Null] = js.native
 }
-
 object IPublishRequest {
+  
   @scala.inline
-  def apply(
-    messages: js.UndefOr[Null | js.Array[IPubsubMessage]] = js.undefined,
-    topic: js.UndefOr[Null | String] = js.undefined
-  ): IPublishRequest = {
+  def apply(): IPublishRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(messages)) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(topic)) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPublishRequest]
   }
+  
+  @scala.inline
+  implicit class IPublishRequestMutableBuilder[Self <: IPublishRequest] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setMessages(value: js.Array[IPubsubMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMessagesNull: Self = StObject.set(x, "messages", null)
+    
+    @scala.inline
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
+    @scala.inline
+    def setMessagesVarargs(value: IPubsubMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    
+    @scala.inline
+    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTopicNull: Self = StObject.set(x, "topic", null)
+    
+    @scala.inline
+    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+  }
 }
-

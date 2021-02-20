@@ -1,5 +1,6 @@
 package typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   ************************/
 /** Parameters for the `getVoice` operation. */
 @js.native
-trait GetVoiceParams extends js.Object {
+trait GetVoiceParams extends StObject {
   
   /** The customization ID (GUID) of a custom voice model for which information is to be returned. You must make the request with service credentials created for the instance of the service that owns the custom model. Omit the parameter to see information about the specified voice with no customization. */
   var customization_id: js.UndefOr[String] = js.native
@@ -30,39 +31,27 @@ object GetVoiceParams {
   }
   
   @scala.inline
-  implicit class GetVoiceParamsOps[Self <: GetVoiceParams] (val x: Self) extends AnyVal {
+  implicit class GetVoiceParamsMutableBuilder[Self <: GetVoiceParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomization_idUndefined: Self = StObject.set(x, "customization_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVoice(value: typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.GetVoiceConstants.Voice | String): Self = this.set("voice", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setCustomization_id(value: String): Self = this.set("customization_id", value.asInstanceOf[js.Any])
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomization_id: Self = this.set("customization_id", js.undefined)
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
-    
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+    def setVoice(value: typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.GetVoiceConstants.Voice | String): Self = StObject.set(x, "voice", value.asInstanceOf[js.Any])
   }
 }

@@ -1,55 +1,47 @@
 package typings.openpgp.mod.enums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait armor extends js.Object
+sealed trait armor extends StObject
 /**
   * Armor type
   */
 @JSImport("openpgp", "enums.armor")
 @js.native
-object armor extends js.Object {
+object armor extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[armor with Double] = js.native
   
   @js.native
   sealed trait message extends armor
-  /* 3 */ @js.native
-  object message extends TopLevel[message with Double]
+  /* 3 */ val message: typings.openpgp.mod.enums.armor.message with Double = js.native
   
   @js.native
   sealed trait multipart_last extends armor
-  /* 1 */ @js.native
-  object multipart_last extends TopLevel[multipart_last with Double]
+  /* 1 */ val multipart_last: typings.openpgp.mod.enums.armor.multipart_last with Double = js.native
   
   @js.native
   sealed trait multipart_section extends armor
-  /* 0 */ @js.native
-  object multipart_section extends TopLevel[multipart_section with Double]
+  /* 0 */ val multipart_section: typings.openpgp.mod.enums.armor.multipart_section with Double = js.native
   
   @js.native
   sealed trait private_key extends armor
-  /* 5 */ @js.native
-  object private_key extends TopLevel[private_key with Double]
+  /* 5 */ val private_key: typings.openpgp.mod.enums.armor.private_key with Double = js.native
   
   @js.native
   sealed trait public_key extends armor
-  /* 4 */ @js.native
-  object public_key extends TopLevel[public_key with Double]
+  /* 4 */ val public_key: typings.openpgp.mod.enums.armor.public_key with Double = js.native
   
   @js.native
   sealed trait signature extends armor
-  /* 6 */ @js.native
-  object signature
-    extends TopLevel[typings.openpgp.mod.enums.armor.signature with Double]
+  /* 6 */ val signature: typings.openpgp.mod.enums.armor.signature with Double = js.native
   
   @js.native
   sealed trait signed extends armor
-  /* 2 */ @js.native
-  object signed extends TopLevel[signed with Double]
+  /* 2 */ val signed: typings.openpgp.mod.enums.armor.signed with Double = js.native
 }

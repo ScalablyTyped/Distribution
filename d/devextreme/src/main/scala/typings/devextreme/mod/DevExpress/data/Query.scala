@@ -3,12 +3,13 @@ package typings.devextreme.mod.DevExpress.data
 import typings.devextreme.mod.global.JQueryPromise
 import typings.devextreme.mod.global.Promise
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Query extends js.Object {
+trait Query extends StObject {
   
   /**
     * [descr:Query.aggregate(seed, step, finalize)]

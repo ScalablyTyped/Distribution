@@ -1,11 +1,12 @@
 package typings.antDesignProLayout.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColorWeak extends js.Object {
+trait ColorWeak extends StObject {
   
   var colorWeak: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object ColorWeak {
   }
   
   @scala.inline
-  implicit class ColorWeakOps[Self <: ColorWeak] (val x: Self) extends AnyVal {
+  implicit class ColorWeakMutableBuilder[Self <: ColorWeak] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorWeak(value: Boolean): Self = StObject.set(x, "colorWeak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorWeakUndefined: Self = StObject.set(x, "colorWeak", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorWeak(value: Boolean): Self = this.set("colorWeak", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColorWeak: Self = this.set("colorWeak", js.undefined)
-    
-    @scala.inline
-    def setPrimaryColor(value: String): Self = this.set("primaryColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimaryColor: Self = this.set("primaryColor", js.undefined)
+    def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
   }
 }

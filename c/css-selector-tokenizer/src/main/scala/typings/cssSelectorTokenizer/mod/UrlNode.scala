@@ -1,6 +1,7 @@
 package typings.cssSelectorTokenizer.mod
 
 import typings.cssSelectorTokenizer.cssSelectorTokenizerStrings.url
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,42 +31,30 @@ object UrlNode {
   }
   
   @scala.inline
-  implicit class UrlNodeOps[Self <: UrlNode] (val x: Self) extends AnyVal {
+  implicit class UrlNodeMutableBuilder[Self <: UrlNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInnerSpacingAfter(value: String): Self = StObject.set(x, "innerSpacingAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInnerSpacingAfterUndefined: Self = StObject.set(x, "innerSpacingAfter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInnerSpacingBefore(value: String): Self = StObject.set(x, "innerSpacingBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: url): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setInnerSpacingBeforeUndefined: Self = StObject.set(x, "innerSpacingBefore", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setStringType(value: String): Self = StObject.set(x, "stringType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerSpacingAfter(value: String): Self = this.set("innerSpacingAfter", value.asInstanceOf[js.Any])
+    def setStringTypeUndefined: Self = StObject.set(x, "stringType", js.undefined)
     
     @scala.inline
-    def deleteInnerSpacingAfter: Self = this.set("innerSpacingAfter", js.undefined)
+    def setType(value: url): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerSpacingBefore(value: String): Self = this.set("innerSpacingBefore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInnerSpacingBefore: Self = this.set("innerSpacingBefore", js.undefined)
-    
-    @scala.inline
-    def setStringType(value: String): Self = this.set("stringType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringType: Self = this.set("stringType", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

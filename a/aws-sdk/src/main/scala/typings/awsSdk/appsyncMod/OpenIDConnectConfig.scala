@@ -1,11 +1,12 @@
 package typings.awsSdk.appsyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpenIDConnectConfig extends js.Object {
+trait OpenIDConnectConfig extends StObject {
   
   /**
     * The number of milliseconds a token is valid after being authenticated.
@@ -36,39 +37,27 @@ object OpenIDConnectConfig {
   }
   
   @scala.inline
-  implicit class OpenIDConnectConfigOps[Self <: OpenIDConnectConfig] (val x: Self) extends AnyVal {
+  implicit class OpenIDConnectConfigMutableBuilder[Self <: OpenIDConnectConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthTTL(value: Long): Self = StObject.set(x, "authTTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthTTLUndefined: Self = StObject.set(x, "authTTL", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuer(value: String): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def setAuthTTL(value: Long): Self = this.set("authTTL", value.asInstanceOf[js.Any])
+    def setIatTTL(value: Long): Self = StObject.set(x, "iatTTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthTTL: Self = this.set("authTTL", js.undefined)
+    def setIatTTLUndefined: Self = StObject.set(x, "iatTTL", js.undefined)
     
     @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
-    
-    @scala.inline
-    def setIatTTL(value: Long): Self = this.set("iatTTL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIatTTL: Self = this.set("iatTTL", js.undefined)
+    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
   }
 }

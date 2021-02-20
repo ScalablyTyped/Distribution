@@ -1,14 +1,15 @@
 package typings.ydnDb.ydn.db
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Op extends js.Object
+sealed trait Op extends StObject
 @JSGlobal("ydn.db.Op")
 @js.native
-object Op extends js.Object {
+object Op extends StObject {
   
   @js.native
   sealed trait ^ extends Op

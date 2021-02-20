@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecutionStageSummary extends js.Object {
+trait ExecutionStageSummary extends StObject {
   
   /** Collections produced and consumed by component transforms of this stage. */
   var componentSource: js.UndefOr[js.Array[ComponentSource]] = js.native
@@ -40,81 +41,69 @@ object ExecutionStageSummary {
   }
   
   @scala.inline
-  implicit class ExecutionStageSummaryOps[Self <: ExecutionStageSummary] (val x: Self) extends AnyVal {
+  implicit class ExecutionStageSummaryMutableBuilder[Self <: ExecutionStageSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentSource(value: js.Array[ComponentSource]): Self = StObject.set(x, "componentSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentSourceUndefined: Self = StObject.set(x, "componentSource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponentSourceVarargs(value: ComponentSource*): Self = StObject.set(x, "componentSource", js.Array(value :_*))
     
     @scala.inline
-    def setComponentSourceVarargs(value: ComponentSource*): Self = this.set("componentSource", js.Array(value :_*))
+    def setComponentTransform(value: js.Array[ComponentTransform]): Self = StObject.set(x, "componentTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentSource(value: js.Array[ComponentSource]): Self = this.set("componentSource", value.asInstanceOf[js.Any])
+    def setComponentTransformUndefined: Self = StObject.set(x, "componentTransform", js.undefined)
     
     @scala.inline
-    def deleteComponentSource: Self = this.set("componentSource", js.undefined)
+    def setComponentTransformVarargs(value: ComponentTransform*): Self = StObject.set(x, "componentTransform", js.Array(value :_*))
     
     @scala.inline
-    def setComponentTransformVarargs(value: ComponentTransform*): Self = this.set("componentTransform", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentTransform(value: js.Array[ComponentTransform]): Self = this.set("componentTransform", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteComponentTransform: Self = this.set("componentTransform", js.undefined)
+    def setInputSource(value: js.Array[StageSource]): Self = StObject.set(x, "inputSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInputSourceUndefined: Self = StObject.set(x, "inputSource", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setInputSourceVarargs(value: StageSource*): Self = StObject.set(x, "inputSource", js.Array(value :_*))
     
     @scala.inline
-    def setInputSourceVarargs(value: StageSource*): Self = this.set("inputSource", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputSource(value: js.Array[StageSource]): Self = this.set("inputSource", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteInputSource: Self = this.set("inputSource", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setOutputSource(value: js.Array[StageSource]): Self = StObject.set(x, "outputSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOutputSourceUndefined: Self = StObject.set(x, "outputSource", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOutputSourceVarargs(value: StageSource*): Self = StObject.set(x, "outputSource", js.Array(value :_*))
     
     @scala.inline
-    def setOutputSourceVarargs(value: StageSource*): Self = this.set("outputSource", js.Array(value :_*))
+    def setPrerequisiteStage(value: js.Array[String]): Self = StObject.set(x, "prerequisiteStage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputSource(value: js.Array[StageSource]): Self = this.set("outputSource", value.asInstanceOf[js.Any])
+    def setPrerequisiteStageUndefined: Self = StObject.set(x, "prerequisiteStage", js.undefined)
     
     @scala.inline
-    def deleteOutputSource: Self = this.set("outputSource", js.undefined)
-    
-    @scala.inline
-    def setPrerequisiteStageVarargs(value: String*): Self = this.set("prerequisiteStage", js.Array(value :_*))
-    
-    @scala.inline
-    def setPrerequisiteStage(value: js.Array[String]): Self = this.set("prerequisiteStage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrerequisiteStage: Self = this.set("prerequisiteStage", js.undefined)
+    def setPrerequisiteStageVarargs(value: String*): Self = StObject.set(x, "prerequisiteStage", js.Array(value :_*))
   }
 }

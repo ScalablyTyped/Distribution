@@ -1,15 +1,15 @@
 package typings.voximplantWebsdk.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SubscriptionRequestType extends js.Object
+sealed trait SubscriptionRequestType extends StObject
 @JSImport("voximplant-websdk", "SubscriptionRequestType")
 @js.native
-object SubscriptionRequestType extends js.Object {
+object SubscriptionRequestType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SubscriptionRequestType with Double] = js.native
@@ -19,14 +19,12 @@ object SubscriptionRequestType extends js.Object {
     */
   @js.native
   sealed trait Subscribe extends SubscriptionRequestType
-  /* 0 */ @js.native
-  object Subscribe extends TopLevel[Subscribe with Double]
+  /* 0 */ val Subscribe: typings.voximplantWebsdk.mod.SubscriptionRequestType.Subscribe with Double = js.native
   
   /**
     *    User removed you from their roster
     */
   @js.native
   sealed trait Unsubscribe extends SubscriptionRequestType
-  /* 1 */ @js.native
-  object Unsubscribe extends TopLevel[Unsubscribe with Double]
+  /* 1 */ val Unsubscribe: typings.voximplantWebsdk.mod.SubscriptionRequestType.Unsubscribe with Double = js.native
 }

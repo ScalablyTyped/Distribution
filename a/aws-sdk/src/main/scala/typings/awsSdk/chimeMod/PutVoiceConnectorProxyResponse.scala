@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutVoiceConnectorProxyResponse extends js.Object {
+trait PutVoiceConnectorProxyResponse extends StObject {
   
   /**
     * The proxy configuration details.
@@ -21,24 +22,12 @@ object PutVoiceConnectorProxyResponse {
   }
   
   @scala.inline
-  implicit class PutVoiceConnectorProxyResponseOps[Self <: PutVoiceConnectorProxyResponse] (val x: Self) extends AnyVal {
+  implicit class PutVoiceConnectorProxyResponseMutableBuilder[Self <: PutVoiceConnectorProxyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProxy(value: Proxy): Self = StObject.set(x, "Proxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProxy(value: Proxy): Self = this.set("Proxy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProxy: Self = this.set("Proxy", js.undefined)
+    def setProxyUndefined: Self = StObject.set(x, "Proxy", js.undefined)
   }
 }

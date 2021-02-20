@@ -1,12 +1,13 @@
 package typings.cassandraDriver.anon
 
 import typings.cassandraDriver.typesMod.types.dataTypes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Code extends js.Object {
+trait Code extends StObject {
   
   var code: dataTypes = js.native
   
@@ -21,24 +22,12 @@ object Code {
   }
   
   @scala.inline
-  implicit class CodeOps[Self <: Code] (val x: Self) extends AnyVal {
+  implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: dataTypes): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCode(value: dataTypes): Self = this.set("code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInfo(value: js.Any): Self = this.set("info", value.asInstanceOf[js.Any])
+    def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
   }
 }

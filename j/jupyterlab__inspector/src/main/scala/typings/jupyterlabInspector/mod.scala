@@ -1,20 +1,28 @@
 package typings.jupyterlabInspector
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.jupyterlabInspector.handlerMod.InspectionHandler.IOptions
 import typings.luminoCoreutils.mod.Token
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/inspector", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @js.native
-  object IInspector
-    extends TopLevel[Token[typings.jupyterlabInspector.tokensMod.IInspector]]
+  object IInspector extends Shortcut {
+    
+    @JSImport("@jupyterlab/inspector", "IInspector")
+    @js.native
+    val ^ : Token[typings.jupyterlabInspector.tokensMod.IInspector] = js.native
+    
+    type _To = Token[typings.jupyterlabInspector.tokensMod.IInspector]
+    
+    /* This means you don't have to write `^`, but can instead just say `IInspector.foo` */
+    override def _to: Token[typings.jupyterlabInspector.tokensMod.IInspector] = ^
+  }
   
+  @JSImport("@jupyterlab/inspector", "InspectionHandler")
   @js.native
   class InspectionHandler protected ()
     extends typings.jupyterlabInspector.handlerMod.InspectionHandler {
@@ -24,6 +32,7 @@ object mod extends js.Object {
     def this(options: IOptions) = this()
   }
   
+  @JSImport("@jupyterlab/inspector", "InspectorPanel")
   @js.native
   /**
     * Construct an inspector.
@@ -33,15 +42,23 @@ object mod extends js.Object {
     def this(options: typings.jupyterlabInspector.inspectorMod.InspectorPanel.IOptions) = this()
   }
   /* static members */
-  @js.native
-  object InspectorPanel extends js.Object {
+  object InspectorPanel {
+    
+    @JSImport("@jupyterlab/inspector", "InspectorPanel")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Generate content widget from string
       */
-    var _generateContentWidget: js.Any = js.native
+    @JSImport("@jupyterlab/inspector", "InspectorPanel._generateContentWidget")
+    @js.native
+    def _generateContentWidget: js.Any = js.native
+    @scala.inline
+    def _generateContentWidget_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_generateContentWidget")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("@jupyterlab/inspector", "KernelConnector")
   @js.native
   class KernelConnector protected ()
     extends typings.jupyterlabInspector.kernelconnectorMod.KernelConnector {

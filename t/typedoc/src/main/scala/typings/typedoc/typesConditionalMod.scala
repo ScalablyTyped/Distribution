@@ -1,14 +1,14 @@
 package typings.typedoc
 
 import typings.typedoc.typesAbstractMod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/models/types/conditional", JSImport.Namespace)
-@js.native
-object typesConditionalMod extends js.Object {
+object typesConditionalMod {
   
+  @JSImport("typedoc/dist/lib/models/types/conditional", "ConditionalType")
   @js.native
   class ConditionalType protected () extends Type {
     def this(checkType: Type, extendsType: Type, trueType: Type, falseType: Type) = this()

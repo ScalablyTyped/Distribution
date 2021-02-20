@@ -1,14 +1,15 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SelectionUpdateType extends js.Object
+sealed trait SelectionUpdateType extends StObject
 @JSGlobal("tableau.SelectionUpdateType")
 @js.native
-object SelectionUpdateType extends js.Object {
+object SelectionUpdateType extends StObject {
   
   /** Adds the values as specified in the call to the current selection. Equivalent to control-clicking in desktop. */
   @js.native

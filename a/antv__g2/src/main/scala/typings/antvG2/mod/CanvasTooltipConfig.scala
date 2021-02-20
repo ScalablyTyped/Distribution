@@ -4,6 +4,7 @@ import typings.antvG2.antvG2Booleans.`false`
 import typings.antvG2.antvG2Strings.default
 import typings.antvG2.mod.Styles.background
 import typings.antvG2.mod.Styles.text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,57 +39,45 @@ object CanvasTooltipConfig {
   }
   
   @scala.inline
-  implicit class CanvasTooltipConfigOps[Self <: CanvasTooltipConfig] (val x: Self) extends AnyVal {
+  implicit class CanvasTooltipConfigMutableBuilder[Self <: CanvasTooltipConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoardStyle(value: background): Self = StObject.set(x, "boardStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoardStyleUndefined: Self = StObject.set(x, "boardStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemGap(value: Double): Self = StObject.set(x, "itemGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseHtml(value: `false`): Self = this.set("useHtml", value.asInstanceOf[js.Any])
+    def setItemGapUndefined: Self = StObject.set(x, "itemGap", js.undefined)
     
     @scala.inline
-    def setBoardStyle(value: background): Self = this.set("boardStyle", value.asInstanceOf[js.Any])
+    def setNameStyle(value: text): Self = StObject.set(x, "nameStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoardStyle: Self = this.set("boardStyle", js.undefined)
+    def setNameStyleUndefined: Self = StObject.set(x, "nameStyle", js.undefined)
     
     @scala.inline
-    def setItemGap(value: Double): Self = this.set("itemGap", value.asInstanceOf[js.Any])
+    def setTitleStyle(value: text): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItemGap: Self = this.set("itemGap", js.undefined)
+    def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
     
     @scala.inline
-    def setNameStyle(value: text): Self = this.set("nameStyle", value.asInstanceOf[js.Any])
+    def setType(value: default): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNameStyle: Self = this.set("nameStyle", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setTitleStyle(value: text): Self = this.set("titleStyle", value.asInstanceOf[js.Any])
+    def setUseHtml(value: `false`): Self = StObject.set(x, "useHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitleStyle: Self = this.set("titleStyle", js.undefined)
+    def setValueStyle(value: text): Self = StObject.set(x, "valueStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: default): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setValueStyle(value: text): Self = this.set("valueStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueStyle: Self = this.set("valueStyle", js.undefined)
+    def setValueStyleUndefined: Self = StObject.set(x, "valueStyle", js.undefined)
   }
 }

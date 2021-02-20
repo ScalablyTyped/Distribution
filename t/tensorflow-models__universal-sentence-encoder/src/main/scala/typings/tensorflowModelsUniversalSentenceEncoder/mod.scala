@@ -4,20 +4,14 @@ import typings.tensorflowModelsUniversalSentenceEncoder.tokenizerMod.Vocabulary
 import typings.tensorflowModelsUniversalSentenceEncoder.useQnaMod.UniversalSentenceEncoderQnA
 import typings.tensorflowTfjsConverter.mod.GraphModel
 import typings.tensorflowTfjsCore.distTensorMod.Tensor2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow-models/universal-sentence-encoder", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def load(): js.Promise[UniversalSentenceEncoder] = js.native
-  
-  def loadQnA(): js.Promise[UniversalSentenceEncoderQnA] = js.native
-  
-  val version: /* "1.3.2" */ String = js.native
-  
+  @JSImport("@tensorflow-models/universal-sentence-encoder", "Tokenizer")
   @js.native
   class Tokenizer protected ()
     extends typings.tensorflowModelsUniversalSentenceEncoder.tokenizerMod.Tokenizer {
@@ -25,8 +19,9 @@ object mod extends js.Object {
     def this(vocabulary: Vocabulary, reservedSymbolsCount: Double) = this()
   }
   
+  @JSImport("@tensorflow-models/universal-sentence-encoder", "UniversalSentenceEncoder")
   @js.native
-  class UniversalSentenceEncoder () extends js.Object {
+  class UniversalSentenceEncoder () extends StObject {
     
     def embed(inputs: String): js.Promise[Tensor2D] = js.native
     /**
@@ -46,4 +41,16 @@ object mod extends js.Object {
     
     var tokenizer: js.Any = js.native
   }
+  
+  @JSImport("@tensorflow-models/universal-sentence-encoder", "load")
+  @js.native
+  def load(): js.Promise[UniversalSentenceEncoder] = js.native
+  
+  @JSImport("@tensorflow-models/universal-sentence-encoder", "loadQnA")
+  @js.native
+  def loadQnA(): js.Promise[UniversalSentenceEncoderQnA] = js.native
+  
+  @JSImport("@tensorflow-models/universal-sentence-encoder", "version")
+  @js.native
+  val version: /* "1.3.2" */ String = js.native
 }

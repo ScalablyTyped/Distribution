@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.s3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnalyticsConfigurationStorageClassAnalysisDataExport extends js.Object {
+trait AnalyticsConfigurationStorageClassAnalysisDataExport extends StObject {
   
   /**
     * Specifies the destination for the exported analytics data (documented below).
@@ -26,27 +27,15 @@ object AnalyticsConfigurationStorageClassAnalysisDataExport {
   }
   
   @scala.inline
-  implicit class AnalyticsConfigurationStorageClassAnalysisDataExportOps[Self <: AnalyticsConfigurationStorageClassAnalysisDataExport] (val x: Self) extends AnyVal {
+  implicit class AnalyticsConfigurationStorageClassAnalysisDataExportMutableBuilder[Self <: AnalyticsConfigurationStorageClassAnalysisDataExport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination(value: AnalyticsConfigurationStorageClassAnalysisDataExportDestination): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOutputSchemaVersion(value: String): Self = StObject.set(x, "outputSchemaVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDestination(value: AnalyticsConfigurationStorageClassAnalysisDataExportDestination): Self = this.set("destination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutputSchemaVersion(value: String): Self = this.set("outputSchemaVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputSchemaVersion: Self = this.set("outputSchemaVersion", js.undefined)
+    def setOutputSchemaVersionUndefined: Self = StObject.set(x, "outputSchemaVersion", js.undefined)
   }
 }

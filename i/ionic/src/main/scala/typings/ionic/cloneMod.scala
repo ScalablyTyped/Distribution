@@ -1,14 +1,17 @@
 package typings.ionic
 
 import typings.ionic.commandMod.Command
+import typings.ionic.definitionsMod.INamespace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/commands/git/clone", JSImport.Namespace)
-@js.native
-object cloneMod extends js.Object {
+object cloneMod {
   
+  @JSImport("ionic/commands/git/clone", "GitCloneCommand")
   @js.native
-  class GitCloneCommand () extends Command
+  class GitCloneCommand protected () extends Command {
+    def this(namespace: INamespace) = this()
+  }
 }

@@ -1,5 +1,6 @@
 package typings.istanbulLibSourceMaps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("istanbul-lib-source-maps", JSImport.Namespace)
 @js.native
-object istanbulLibSourceMapsRequire extends js.Object
+object istanbulLibSourceMapsRequire extends StObject

@@ -1,12 +1,13 @@
 package typings.grommet.anon
 
 import typings.grommet.dataChartMod.GranularityType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Granularity extends js.Object {
+trait Granularity extends StObject {
   
   var granularity: js.UndefOr[GranularityType] = js.native
   
@@ -21,30 +22,18 @@ object Granularity {
   }
   
   @scala.inline
-  implicit class GranularityOps[Self <: Granularity] (val x: Self) extends AnyVal {
+  implicit class GranularityMutableBuilder[Self <: Granularity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGranularity(value: GranularityType): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGranularityUndefined: Self = StObject.set(x, "granularity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGranularity(value: GranularityType): Self = this.set("granularity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGranularity: Self = this.set("granularity", js.undefined)
-    
-    @scala.inline
-    def setProperty(value: String): Self = this.set("property", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperty: Self = this.set("property", js.undefined)
+    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.igniteUi
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgNotifierMethods extends js.Object {
+trait IgNotifierMethods extends StObject {
   
   /**
     * Changes the all locales into the widget element to the language specified in [options.language](ui.ignotifier#options:language)

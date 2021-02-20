@@ -1,11 +1,12 @@
 package typings.mathjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigOptions extends js.Object {
+trait ConfigOptions extends StObject {
   
   var epsilon: js.UndefOr[Double] = js.native
   
@@ -28,54 +29,42 @@ object ConfigOptions {
   }
   
   @scala.inline
-  implicit class ConfigOptionsOps[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+  implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEpsilon(value: Double): Self = StObject.set(x, "epsilon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEpsilonUndefined: Self = StObject.set(x, "epsilon", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatrix(value: String): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEpsilon(value: Double): Self = this.set("epsilon", value.asInstanceOf[js.Any])
+    def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
     
     @scala.inline
-    def deleteEpsilon: Self = this.set("epsilon", js.undefined)
+    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatrix(value: String): Self = this.set("matrix", value.asInstanceOf[js.Any])
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
     @scala.inline
-    def deleteMatrix: Self = this.set("matrix", js.undefined)
+    def setParenthesis(value: String): Self = StObject.set(x, "parenthesis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: String): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setParenthesisUndefined: Self = StObject.set(x, "parenthesis", js.undefined)
     
     @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
+    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParenthesis(value: String): Self = this.set("parenthesis", value.asInstanceOf[js.Any])
+    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
     @scala.inline
-    def deleteParenthesis: Self = this.set("parenthesis", js.undefined)
+    def setRandomSeed(value: String): Self = StObject.set(x, "randomSeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrecision: Self = this.set("precision", js.undefined)
-    
-    @scala.inline
-    def setRandomSeed(value: String): Self = this.set("randomSeed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRandomSeed: Self = this.set("randomSeed", js.undefined)
+    def setRandomSeedUndefined: Self = StObject.set(x, "randomSeed", js.undefined)
   }
 }

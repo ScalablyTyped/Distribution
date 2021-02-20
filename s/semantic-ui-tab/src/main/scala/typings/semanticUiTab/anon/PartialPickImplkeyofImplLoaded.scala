@@ -1,12 +1,13 @@
 package typings.semanticUiTab.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-tab.SemanticUI.Tab.MetadataSettings._Impl, keyof semantic-ui-tab.SemanticUI.Tab.MetadataSettings._Impl>> */
 @js.native
-trait PartialPickImplkeyofImplLoaded extends js.Object {
+trait PartialPickImplkeyofImplLoaded extends StObject {
   
   var loaded: js.UndefOr[String] = js.native
   
@@ -23,36 +24,24 @@ object PartialPickImplkeyofImplLoaded {
   }
   
   @scala.inline
-  implicit class PartialPickImplkeyofImplLoadedOps[Self <: PartialPickImplkeyofImplLoaded] (val x: Self) extends AnyVal {
+  implicit class PartialPickImplkeyofImplLoadedMutableBuilder[Self <: PartialPickImplkeyofImplLoaded] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoaded(value: String): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPromise(value: String): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoaded(value: String): Self = this.set("loaded", value.asInstanceOf[js.Any])
+    def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
     
     @scala.inline
-    def deleteLoaded: Self = this.set("loaded", js.undefined)
+    def setTab(value: String): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromise(value: String): Self = this.set("promise", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePromise: Self = this.set("promise", js.undefined)
-    
-    @scala.inline
-    def setTab(value: String): Self = this.set("tab", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTab: Self = this.set("tab", js.undefined)
+    def setTabUndefined: Self = StObject.set(x, "tab", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.acmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CertificateOptions extends js.Object {
+trait CertificateOptions extends StObject {
   
   /**
     * You can opt out of certificate transparency logging by specifying the DISABLED option. Opt in by specifying ENABLED. 
@@ -21,24 +22,12 @@ object CertificateOptions {
   }
   
   @scala.inline
-  implicit class CertificateOptionsOps[Self <: CertificateOptions] (val x: Self) extends AnyVal {
+  implicit class CertificateOptionsMutableBuilder[Self <: CertificateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateTransparencyLoggingPreference(value: CertificateTransparencyLoggingPreference): Self = StObject.set(x, "CertificateTransparencyLoggingPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCertificateTransparencyLoggingPreference(value: CertificateTransparencyLoggingPreference): Self = this.set("CertificateTransparencyLoggingPreference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificateTransparencyLoggingPreference: Self = this.set("CertificateTransparencyLoggingPreference", js.undefined)
+    def setCertificateTransparencyLoggingPreferenceUndefined: Self = StObject.set(x, "CertificateTransparencyLoggingPreference", js.undefined)
   }
 }

@@ -7,12 +7,13 @@ import typings.gestalt.gestaltStrings.md
 import typings.gestalt.gestaltStrings.sm
 import typings.gestalt.gestaltStrings.xl
 import typings.gestalt.gestaltStrings.xs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroupAvatarProps extends js.Object {
+trait GroupAvatarProps extends StObject {
   
   var collaborators: js.Array[Name] = js.native
   
@@ -29,36 +30,24 @@ object GroupAvatarProps {
   }
   
   @scala.inline
-  implicit class GroupAvatarPropsOps[Self <: GroupAvatarProps] (val x: Self) extends AnyVal {
+  implicit class GroupAvatarPropsMutableBuilder[Self <: GroupAvatarProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollaborators(value: js.Array[Name]): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollaboratorsVarargs(value: Name*): Self = StObject.set(x, "collaborators", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutline(value: Boolean): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollaboratorsVarargs(value: Name*): Self = this.set("collaborators", js.Array(value :_*))
+    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
     @scala.inline
-    def setCollaborators(value: js.Array[Name]): Self = this.set("collaborators", value.asInstanceOf[js.Any])
+    def setSize(value: xs | sm | md | lg | xl | fit): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutline(value: Boolean): Self = this.set("outline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutline: Self = this.set("outline", js.undefined)
-    
-    @scala.inline
-    def setSize(value: xs | sm | md | lg | xl | fit): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

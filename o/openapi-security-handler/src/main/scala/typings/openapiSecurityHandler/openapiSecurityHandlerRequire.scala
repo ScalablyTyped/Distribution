@@ -1,5 +1,6 @@
 package typings.openapiSecurityHandler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("openapi-security-handler", JSImport.Namespace)
 @js.native
-object openapiSecurityHandlerRequire extends js.Object
+object openapiSecurityHandlerRequire extends StObject

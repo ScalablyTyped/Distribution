@@ -3,13 +3,14 @@ package typings.contentfulManagement.anon
 import typings.contentfulManagement.commonTypesMod.MetaLinkProps
 import typings.contentfulManagement.commonTypesMod.MetaSysProps
 import typings.contentfulManagement.spaceMemberMod.SpaceMemberProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined contentful-management.contentful-management/dist/typings/entities/space-member.SpaceMemberProps & {toPlainObject (): contentful-management.contentful-management/dist/typings/entities/space-member.SpaceMemberProps} */
 @js.native
-trait SpaceMemberPropstoPlainOb extends js.Object {
+trait SpaceMemberPropstoPlainOb extends StObject {
   
   /**
     * User is an admin
@@ -39,33 +40,21 @@ object SpaceMemberPropstoPlainOb {
   }
   
   @scala.inline
-  implicit class SpaceMemberPropstoPlainObOps[Self <: SpaceMemberPropstoPlainOb] (val x: Self) extends AnyVal {
+  implicit class SpaceMemberPropstoPlainObMutableBuilder[Self <: SpaceMemberPropstoPlainOb] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoles(value: js.Array[MetaLinkProps]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRolesVarargs(value: MetaLinkProps*): Self = StObject.set(x, "roles", js.Array(value :_*))
     
     @scala.inline
-    def setAdmin(value: Boolean): Self = this.set("admin", value.asInstanceOf[js.Any])
+    def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRolesVarargs(value: MetaLinkProps*): Self = this.set("roles", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoles(value: js.Array[MetaLinkProps]): Self = this.set("roles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSys(value: MetaSysProps): Self = this.set("sys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToPlainObject(value: () => SpaceMemberProps): Self = this.set("toPlainObject", js.Any.fromFunction0(value))
+    def setToPlainObject(value: () => SpaceMemberProps): Self = StObject.set(x, "toPlainObject", js.Any.fromFunction0(value))
   }
 }

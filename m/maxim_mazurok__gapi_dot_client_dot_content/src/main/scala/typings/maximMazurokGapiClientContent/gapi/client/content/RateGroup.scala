@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RateGroup extends js.Object {
+trait RateGroup extends StObject {
   
   /**
     * A list of shipping labels defining the products to which this rate group applies to. This is a disjunction: only one of the labels has to match for the rate group to apply. May only
@@ -37,63 +38,51 @@ object RateGroup {
   }
   
   @scala.inline
-  implicit class RateGroupOps[Self <: RateGroup] (val x: Self) extends AnyVal {
+  implicit class RateGroupMutableBuilder[Self <: RateGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicableShippingLabels(value: js.Array[String]): Self = StObject.set(x, "applicableShippingLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicableShippingLabelsUndefined: Self = StObject.set(x, "applicableShippingLabels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicableShippingLabelsVarargs(value: String*): Self = StObject.set(x, "applicableShippingLabels", js.Array(value :_*))
     
     @scala.inline
-    def setApplicableShippingLabelsVarargs(value: String*): Self = this.set("applicableShippingLabels", js.Array(value :_*))
+    def setCarrierRates(value: js.Array[CarrierRate]): Self = StObject.set(x, "carrierRates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicableShippingLabels(value: js.Array[String]): Self = this.set("applicableShippingLabels", value.asInstanceOf[js.Any])
+    def setCarrierRatesUndefined: Self = StObject.set(x, "carrierRates", js.undefined)
     
     @scala.inline
-    def deleteApplicableShippingLabels: Self = this.set("applicableShippingLabels", js.undefined)
+    def setCarrierRatesVarargs(value: CarrierRate*): Self = StObject.set(x, "carrierRates", js.Array(value :_*))
     
     @scala.inline
-    def setCarrierRatesVarargs(value: CarrierRate*): Self = this.set("carrierRates", js.Array(value :_*))
+    def setMainTable(value: Table): Self = StObject.set(x, "mainTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarrierRates(value: js.Array[CarrierRate]): Self = this.set("carrierRates", value.asInstanceOf[js.Any])
+    def setMainTableUndefined: Self = StObject.set(x, "mainTable", js.undefined)
     
     @scala.inline
-    def deleteCarrierRates: Self = this.set("carrierRates", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMainTable(value: Table): Self = this.set("mainTable", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMainTable: Self = this.set("mainTable", js.undefined)
+    def setSingleValue(value: Value): Self = StObject.set(x, "singleValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSingleValueUndefined: Self = StObject.set(x, "singleValue", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSubtables(value: js.Array[Table]): Self = StObject.set(x, "subtables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingleValue(value: Value): Self = this.set("singleValue", value.asInstanceOf[js.Any])
+    def setSubtablesUndefined: Self = StObject.set(x, "subtables", js.undefined)
     
     @scala.inline
-    def deleteSingleValue: Self = this.set("singleValue", js.undefined)
-    
-    @scala.inline
-    def setSubtablesVarargs(value: Table*): Self = this.set("subtables", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubtables(value: js.Array[Table]): Self = this.set("subtables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubtables: Self = this.set("subtables", js.undefined)
+    def setSubtablesVarargs(value: Table*): Self = StObject.set(x, "subtables", js.Array(value :_*))
   }
 }

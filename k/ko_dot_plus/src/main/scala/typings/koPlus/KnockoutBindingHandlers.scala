@@ -1,5 +1,6 @@
 package typings.koPlus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // declare new binding handlers in ko.plus
 //
 @js.native
-trait KnockoutBindingHandlers extends js.Object {
+trait KnockoutBindingHandlers extends StObject {
   
   var command: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
   
@@ -30,33 +31,21 @@ object KnockoutBindingHandlers {
   }
   
   @scala.inline
-  implicit class KnockoutBindingHandlersOps[Self <: KnockoutBindingHandlers] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class KnockoutBindingHandlersMutableBuilder[Self <: KnockoutBindingHandlers] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setCommand(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
-    ): Self = this.set("command", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLoadingWhen(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
-    ): Self = this.set("loadingWhen", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "loadingWhen", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSortBy(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
-    ): Self = this.set("sortBy", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
   }
 }

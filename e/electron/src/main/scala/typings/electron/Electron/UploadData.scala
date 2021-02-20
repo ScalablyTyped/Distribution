@@ -1,12 +1,13 @@
 package typings.electron.Electron
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadData extends js.Object {
+trait UploadData extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/upload-data
   /**
@@ -33,33 +34,21 @@ object UploadData {
   }
   
   @scala.inline
-  implicit class UploadDataOps[Self <: UploadData] (val x: Self) extends AnyVal {
+  implicit class UploadDataMutableBuilder[Self <: UploadData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlobUUID(value: String): Self = StObject.set(x, "blobUUID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlobUUIDUndefined: Self = StObject.set(x, "blobUUID", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBytes(value: Buffer): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytes(value: Buffer): Self = this.set("bytes", value.asInstanceOf[js.Any])
+    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlobUUID(value: String): Self = this.set("blobUUID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBlobUUID: Self = this.set("blobUUID", js.undefined)
-    
-    @scala.inline
-    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
   }
 }

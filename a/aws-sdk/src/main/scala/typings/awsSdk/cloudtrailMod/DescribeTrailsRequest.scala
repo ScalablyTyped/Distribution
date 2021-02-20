@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudtrailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTrailsRequest extends js.Object {
+trait DescribeTrailsRequest extends StObject {
   
   /**
     * Specifies whether to include shadow trails in the response. A shadow trail is the replication in a region of a trail that was created in a different region, or in the case of an organization trail, the replication of an organization trail in member accounts. If you do not include shadow trails, organization trails in a member account and region replication trails will not be returned. The default is true.
@@ -26,33 +27,21 @@ object DescribeTrailsRequest {
   }
   
   @scala.inline
-  implicit class DescribeTrailsRequestOps[Self <: DescribeTrailsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeTrailsRequestMutableBuilder[Self <: DescribeTrailsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeShadowTrails(value: Boolean): Self = StObject.set(x, "includeShadowTrails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeShadowTrailsUndefined: Self = StObject.set(x, "includeShadowTrails", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrailNameList(value: TrailNameList): Self = StObject.set(x, "trailNameList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeShadowTrails(value: Boolean): Self = this.set("includeShadowTrails", value.asInstanceOf[js.Any])
+    def setTrailNameListUndefined: Self = StObject.set(x, "trailNameList", js.undefined)
     
     @scala.inline
-    def deleteIncludeShadowTrails: Self = this.set("includeShadowTrails", js.undefined)
-    
-    @scala.inline
-    def setTrailNameListVarargs(value: String*): Self = this.set("trailNameList", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrailNameList(value: TrailNameList): Self = this.set("trailNameList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrailNameList: Self = this.set("trailNameList", js.undefined)
+    def setTrailNameListVarargs(value: String*): Self = StObject.set(x, "trailNameList", js.Array(value :_*))
   }
 }

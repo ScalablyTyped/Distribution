@@ -1,13 +1,14 @@
 package typings.auth0.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("auth0", "PasswordlessAuthenticator")
 @js.native
-class PasswordlessAuthenticator protected () extends js.Object {
+class PasswordlessAuthenticator protected () extends StObject {
   def this(options: PasswordLessClientOptions, oauth: OAuthAuthenticator) = this()
   
   def sendEmail(data: RequestEmailCodeOrLinkOptions): js.Promise[_] = js.native

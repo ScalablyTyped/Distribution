@@ -6,14 +6,15 @@ import typings.entriaRelayExperimental.useRefetchableFragmentNodeMod.RefetchFnDy
 import typings.relayRuntime.relayModernGraphQLTagMod.GraphQLTaggedNode
 import typings.relayRuntime.relayRuntimeTypesMod.OperationType
 import typings.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@entria/relay-experimental/lib/useRefetchableFragment", JSImport.Namespace)
-@js.native
-object useRefetchableFragmentMod extends js.Object {
+object useRefetchableFragmentMod {
   
+  @JSImport("@entria/relay-experimental/lib/useRefetchableFragment", "useRefetchableFragment")
+  @js.native
   def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: StringDictionary[js.Any] | Null */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): ReturnTypeRefetchableFragment[TQuery, TKey] = js.native
   
   type NonNullableFragmentReturn[TReturn] = ReturnType[NonNullableReturn[TReturn]]

@@ -1,11 +1,12 @@
 package typings.codemirror.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoCloseTags extends js.Object {
+trait AutoCloseTags extends StObject {
   
   /**
     * An array of tag names that should not be autoclosed. (default is empty tags for HTML, none for XML)
@@ -43,54 +44,42 @@ object AutoCloseTags {
   }
   
   @scala.inline
-  implicit class AutoCloseTagsOps[Self <: AutoCloseTags] (val x: Self) extends AnyVal {
+  implicit class AutoCloseTagsMutableBuilder[Self <: AutoCloseTags] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDontCloseTags(value: js.Array[String]): Self = StObject.set(x, "dontCloseTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDontCloseTagsUndefined: Self = StObject.set(x, "dontCloseTags", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDontCloseTagsVarargs(value: String*): Self = StObject.set(x, "dontCloseTags", js.Array(value :_*))
     
     @scala.inline
-    def setEmptyTagsVarargs(value: String*): Self = this.set("emptyTags", js.Array(value :_*))
+    def setEmptyTags(value: js.Array[String]): Self = StObject.set(x, "emptyTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmptyTags(value: js.Array[String]): Self = this.set("emptyTags", value.asInstanceOf[js.Any])
+    def setEmptyTagsVarargs(value: String*): Self = StObject.set(x, "emptyTags", js.Array(value :_*))
     
     @scala.inline
-    def setDontCloseTagsVarargs(value: String*): Self = this.set("dontCloseTags", js.Array(value :_*))
+    def setIndentTags(value: js.Array[String]): Self = StObject.set(x, "indentTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDontCloseTags(value: js.Array[String]): Self = this.set("dontCloseTags", value.asInstanceOf[js.Any])
+    def setIndentTagsUndefined: Self = StObject.set(x, "indentTags", js.undefined)
     
     @scala.inline
-    def deleteDontCloseTags: Self = this.set("dontCloseTags", js.undefined)
+    def setIndentTagsVarargs(value: String*): Self = StObject.set(x, "indentTags", js.Array(value :_*))
     
     @scala.inline
-    def setIndentTagsVarargs(value: String*): Self = this.set("indentTags", js.Array(value :_*))
+    def setWhenClosing(value: Boolean): Self = StObject.set(x, "whenClosing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentTags(value: js.Array[String]): Self = this.set("indentTags", value.asInstanceOf[js.Any])
+    def setWhenClosingUndefined: Self = StObject.set(x, "whenClosing", js.undefined)
     
     @scala.inline
-    def deleteIndentTags: Self = this.set("indentTags", js.undefined)
+    def setWhenOpening(value: Boolean): Self = StObject.set(x, "whenOpening", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWhenClosing(value: Boolean): Self = this.set("whenClosing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhenClosing: Self = this.set("whenClosing", js.undefined)
-    
-    @scala.inline
-    def setWhenOpening(value: Boolean): Self = this.set("whenOpening", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhenOpening: Self = this.set("whenOpening", js.undefined)
+    def setWhenOpeningUndefined: Self = StObject.set(x, "whenOpening", js.undefined)
   }
 }

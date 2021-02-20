@@ -5,12 +5,13 @@ import typings.baseui.anon.Select
 import typings.baseui.selectMod.Option
 import typings.react.mod.ReactNode
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimezonePickerProps extends js.Object {
+trait TimezonePickerProps extends StObject {
   
   var date: js.UndefOr[Date] = js.native
   
@@ -37,66 +38,54 @@ object TimezonePickerProps {
   }
   
   @scala.inline
-  implicit class TimezonePickerPropsOps[Self <: TimezonePickerProps] (val x: Self) extends AnyVal {
+  implicit class TimezonePickerPropsMutableBuilder[Self <: TimezonePickerProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setMapLabels(value: /* args */ Option => ReactNode): Self = StObject.set(x, "mapLabels", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setError(value: Boolean): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setMapLabelsUndefined: Self = StObject.set(x, "mapLabels", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setOnChange(value: /* value */ Id => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMapLabels(value: /* args */ Option => ReactNode): Self = this.set("mapLabels", js.Any.fromFunction1(value))
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def deleteMapLabels: Self = this.set("mapLabels", js.undefined)
+    def setOverrides(value: Select): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnChange(value: /* value */ Id => _): Self = this.set("onChange", js.Any.fromFunction1(value))
+    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
     @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setPositive(value: Boolean): Self = StObject.set(x, "positive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrides(value: Select): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    def setPositiveUndefined: Self = StObject.set(x, "positive", js.undefined)
     
     @scala.inline
-    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositive(value: Boolean): Self = this.set("positive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePositive: Self = this.set("positive", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

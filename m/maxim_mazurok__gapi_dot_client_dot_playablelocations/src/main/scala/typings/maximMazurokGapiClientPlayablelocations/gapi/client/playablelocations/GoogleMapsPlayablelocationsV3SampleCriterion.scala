@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playablelocations
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleMapsPlayablelocationsV3SampleCriterion extends js.Object {
+trait GoogleMapsPlayablelocationsV3SampleCriterion extends StObject {
   
   /**
     * Specifies which `PlayableLocation` fields are returned. `name` (which is used for logging impressions), `center_point` and `place_id` (or `plus_code`) are always returned. The
@@ -33,36 +34,24 @@ object GoogleMapsPlayablelocationsV3SampleCriterion {
   }
   
   @scala.inline
-  implicit class GoogleMapsPlayablelocationsV3SampleCriterionOps[Self <: GoogleMapsPlayablelocationsV3SampleCriterion] (val x: Self) extends AnyVal {
+  implicit class GoogleMapsPlayablelocationsV3SampleCriterionMutableBuilder[Self <: GoogleMapsPlayablelocationsV3SampleCriterion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldsToReturn(value: String): Self = StObject.set(x, "fieldsToReturn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldsToReturnUndefined: Self = StObject.set(x, "fieldsToReturn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilter(value: GoogleMapsPlayablelocationsV3SampleFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsToReturn(value: String): Self = this.set("fieldsToReturn", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteFieldsToReturn: Self = this.set("fieldsToReturn", js.undefined)
+    def setGameObjectType(value: Double): Self = StObject.set(x, "gameObjectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: GoogleMapsPlayablelocationsV3SampleFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
-    
-    @scala.inline
-    def setGameObjectType(value: Double): Self = this.set("gameObjectType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGameObjectType: Self = this.set("gameObjectType", js.undefined)
+    def setGameObjectTypeUndefined: Self = StObject.set(x, "gameObjectType", js.undefined)
   }
 }

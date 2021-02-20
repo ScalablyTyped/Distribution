@@ -1,11 +1,12 @@
 package typings.leafletGeosearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BingProviderUserContextOptions extends js.Object {
+trait BingProviderUserContextOptions extends StObject {
   
   var ul: js.UndefOr[String] = js.native
   
@@ -30,60 +31,48 @@ object BingProviderUserContextOptions {
   }
   
   @scala.inline
-  implicit class BingProviderUserContextOptionsOps[Self <: BingProviderUserContextOptions] (val x: Self) extends AnyVal {
+  implicit class BingProviderUserContextOptionsMutableBuilder[Self <: BingProviderUserContextOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUl(value: String): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUlUndefined: Self = StObject.set(x, "ul", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUmv(value: String): Self = StObject.set(x, "umv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUl(value: String): Self = this.set("ul", value.asInstanceOf[js.Any])
+    def setUmvUndefined: Self = StObject.set(x, "umv", js.undefined)
     
     @scala.inline
-    def deleteUl: Self = this.set("ul", js.undefined)
+    def setUr(value: String): Self = StObject.set(x, "ur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUmv(value: String): Self = this.set("umv", value.asInstanceOf[js.Any])
+    def setUrUndefined: Self = StObject.set(x, "ur", js.undefined)
     
     @scala.inline
-    def deleteUmv: Self = this.set("umv", js.undefined)
+    def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUr(value: String): Self = this.set("ur", value.asInstanceOf[js.Any])
+    def setUserIpUndefined: Self = StObject.set(x, "userIp", js.undefined)
     
     @scala.inline
-    def deleteUr: Self = this.set("ur", js.undefined)
+    def setUserLocation(value: String): Self = StObject.set(x, "userLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserIp(value: String): Self = this.set("userIp", value.asInstanceOf[js.Any])
+    def setUserLocationUndefined: Self = StObject.set(x, "userLocation", js.undefined)
     
     @scala.inline
-    def deleteUserIp: Self = this.set("userIp", js.undefined)
+    def setUserMapView(value: String): Self = StObject.set(x, "userMapView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserLocation(value: String): Self = this.set("userLocation", value.asInstanceOf[js.Any])
+    def setUserMapViewUndefined: Self = StObject.set(x, "userMapView", js.undefined)
     
     @scala.inline
-    def deleteUserLocation: Self = this.set("userLocation", js.undefined)
+    def setUserRegion(value: String): Self = StObject.set(x, "userRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserMapView(value: String): Self = this.set("userMapView", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserMapView: Self = this.set("userMapView", js.undefined)
-    
-    @scala.inline
-    def setUserRegion(value: String): Self = this.set("userRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserRegion: Self = this.set("userRegion", js.undefined)
+    def setUserRegionUndefined: Self = StObject.set(x, "userRegion", js.undefined)
   }
 }

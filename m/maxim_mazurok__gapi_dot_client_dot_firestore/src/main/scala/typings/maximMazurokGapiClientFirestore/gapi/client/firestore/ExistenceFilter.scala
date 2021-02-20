@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExistenceFilter extends js.Object {
+trait ExistenceFilter extends StObject {
   
   /**
     * The total count of documents that match target_id. If different from the count of documents in the client that match, the client must manually determine which documents no longer
@@ -25,30 +26,18 @@ object ExistenceFilter {
   }
   
   @scala.inline
-  implicit class ExistenceFilterOps[Self <: ExistenceFilter] (val x: Self) extends AnyVal {
+  implicit class ExistenceFilterMutableBuilder[Self <: ExistenceFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetId(value: Double): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
-    
-    @scala.inline
-    def setTargetId(value: Double): Self = this.set("targetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetId: Self = this.set("targetId", js.undefined)
+    def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
   }
 }

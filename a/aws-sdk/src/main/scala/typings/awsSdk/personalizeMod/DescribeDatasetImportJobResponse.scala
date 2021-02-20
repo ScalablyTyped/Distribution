@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeDatasetImportJobResponse extends js.Object {
+trait DescribeDatasetImportJobResponse extends StObject {
   
   /**
     * Information about the dataset import job, including the status. The status is one of the following values:   CREATE PENDING   CREATE IN_PROGRESS   ACTIVE   CREATE FAILED  
@@ -21,24 +22,12 @@ object DescribeDatasetImportJobResponse {
   }
   
   @scala.inline
-  implicit class DescribeDatasetImportJobResponseOps[Self <: DescribeDatasetImportJobResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeDatasetImportJobResponseMutableBuilder[Self <: DescribeDatasetImportJobResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatasetImportJob(value: DatasetImportJob): Self = StObject.set(x, "datasetImportJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDatasetImportJob(value: DatasetImportJob): Self = this.set("datasetImportJob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDatasetImportJob: Self = this.set("datasetImportJob", js.undefined)
+    def setDatasetImportJobUndefined: Self = StObject.set(x, "datasetImportJob", js.undefined)
   }
 }

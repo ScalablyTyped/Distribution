@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProxyHandler[T /* <: js.Object */] extends js.Object {
+trait ProxyHandler[T /* <: js.Object */] extends StObject {
   
   @JSName("apply")
   var apply: js.UndefOr[
@@ -64,98 +65,86 @@ object ProxyHandler {
   }
   
   @scala.inline
-  implicit class ProxyHandlerOps[Self <: ProxyHandler[_], T /* <: js.Object */] (val x: Self with ProxyHandler[T]) extends AnyVal {
+  implicit class ProxyHandlerMutableBuilder[Self <: ProxyHandler[_], T /* <: js.Object */] (val x: Self with ProxyHandler[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApply(value: (/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "apply", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConstruct(value: (/* target */ T, /* argArray */ js.Any, /* newTarget */ js.UndefOr[js.Any]) => js.Object): Self = StObject.set(x, "construct", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setApply(value: (/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any]) => _): Self = this.set("apply", js.Any.fromFunction3(value))
+    def setConstructUndefined: Self = StObject.set(x, "construct", js.undefined)
     
     @scala.inline
-    def deleteApply: Self = this.set("apply", js.undefined)
+    def setDefineProperty(value: (/* target */ T, /* p */ PropertyKey, /* attributes */ PropertyDescriptor) => scala.Boolean): Self = StObject.set(x, "defineProperty", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setConstruct(value: (/* target */ T, /* argArray */ js.Any, /* newTarget */ js.UndefOr[js.Any]) => js.Object): Self = this.set("construct", js.Any.fromFunction3(value))
+    def setDefinePropertyUndefined: Self = StObject.set(x, "defineProperty", js.undefined)
     
     @scala.inline
-    def deleteConstruct: Self = this.set("construct", js.undefined)
+    def setDeleteProperty(value: (/* target */ T, /* p */ PropertyKey) => scala.Boolean): Self = StObject.set(x, "deleteProperty", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDefineProperty(value: (/* target */ T, /* p */ PropertyKey, /* attributes */ PropertyDescriptor) => scala.Boolean): Self = this.set("defineProperty", js.Any.fromFunction3(value))
+    def setDeletePropertyUndefined: Self = StObject.set(x, "deleteProperty", js.undefined)
     
     @scala.inline
-    def deleteDefineProperty: Self = this.set("defineProperty", js.undefined)
+    def setGet(value: (/* target */ T, /* p */ PropertyKey, /* receiver */ js.Any) => _): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDeleteProperty(value: (/* target */ T, /* p */ PropertyKey) => scala.Boolean): Self = this.set("deleteProperty", js.Any.fromFunction2(value))
+    def setGetOwnPropertyDescriptor(value: (/* target */ T, /* p */ PropertyKey) => js.UndefOr[PropertyDescriptor]): Self = StObject.set(x, "getOwnPropertyDescriptor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteDeleteProperty: Self = this.set("deleteProperty", js.undefined)
+    def setGetOwnPropertyDescriptorUndefined: Self = StObject.set(x, "getOwnPropertyDescriptor", js.undefined)
     
     @scala.inline
-    def setGet(value: (/* target */ T, /* p */ PropertyKey, /* receiver */ js.Any) => _): Self = this.set("get", js.Any.fromFunction3(value))
+    def setGetPrototypeOf(value: /* target */ T => js.Object | Null): Self = StObject.set(x, "getPrototypeOf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGet: Self = this.set("get", js.undefined)
+    def setGetPrototypeOfUndefined: Self = StObject.set(x, "getPrototypeOf", js.undefined)
     
     @scala.inline
-    def setGetOwnPropertyDescriptor(value: (/* target */ T, /* p */ PropertyKey) => js.UndefOr[PropertyDescriptor]): Self = this.set("getOwnPropertyDescriptor", js.Any.fromFunction2(value))
+    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
     @scala.inline
-    def deleteGetOwnPropertyDescriptor: Self = this.set("getOwnPropertyDescriptor", js.undefined)
+    def setHas(value: (/* target */ T, /* p */ PropertyKey) => scala.Boolean): Self = StObject.set(x, "has", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetPrototypeOf(value: /* target */ T => js.Object | Null): Self = this.set("getPrototypeOf", js.Any.fromFunction1(value))
+    def setHasUndefined: Self = StObject.set(x, "has", js.undefined)
     
     @scala.inline
-    def deleteGetPrototypeOf: Self = this.set("getPrototypeOf", js.undefined)
+    def setIsExtensible(value: /* target */ T => scala.Boolean): Self = StObject.set(x, "isExtensible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHas(value: (/* target */ T, /* p */ PropertyKey) => scala.Boolean): Self = this.set("has", js.Any.fromFunction2(value))
+    def setIsExtensibleUndefined: Self = StObject.set(x, "isExtensible", js.undefined)
     
     @scala.inline
-    def deleteHas: Self = this.set("has", js.undefined)
+    def setOwnKeys(value: /* target */ T => js.Array[PropertyKey]): Self = StObject.set(x, "ownKeys", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsExtensible(value: /* target */ T => scala.Boolean): Self = this.set("isExtensible", js.Any.fromFunction1(value))
+    def setOwnKeysUndefined: Self = StObject.set(x, "ownKeys", js.undefined)
     
     @scala.inline
-    def deleteIsExtensible: Self = this.set("isExtensible", js.undefined)
+    def setPreventExtensions(value: /* target */ T => scala.Boolean): Self = StObject.set(x, "preventExtensions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOwnKeys(value: /* target */ T => js.Array[PropertyKey]): Self = this.set("ownKeys", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOwnKeys: Self = this.set("ownKeys", js.undefined)
-    
-    @scala.inline
-    def setPreventExtensions(value: /* target */ T => scala.Boolean): Self = this.set("preventExtensions", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deletePreventExtensions: Self = this.set("preventExtensions", js.undefined)
+    def setPreventExtensionsUndefined: Self = StObject.set(x, "preventExtensions", js.undefined)
     
     @scala.inline
     def setSet(
       value: (/* target */ T, /* p */ PropertyKey, /* value */ js.Any, /* receiver */ js.Any) => scala.Boolean
-    ): Self = this.set("set", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteSet: Self = this.set("set", js.undefined)
+    def setSetPrototypeOf(value: (/* target */ T, /* v */ js.Any) => scala.Boolean): Self = StObject.set(x, "setPrototypeOf", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetPrototypeOf(value: (/* target */ T, /* v */ js.Any) => scala.Boolean): Self = this.set("setPrototypeOf", js.Any.fromFunction2(value))
+    def setSetPrototypeOfUndefined: Self = StObject.set(x, "setPrototypeOf", js.undefined)
     
     @scala.inline
-    def deleteSetPrototypeOf: Self = this.set("setPrototypeOf", js.undefined)
+    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
   }
 }

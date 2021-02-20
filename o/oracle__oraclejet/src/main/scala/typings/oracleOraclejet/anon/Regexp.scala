@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Regexp extends js.Object {
+trait Regexp extends StObject {
   
   var regexp: js.UndefOr[MessageSummary] = js.native
   
@@ -20,30 +21,18 @@ object Regexp {
   }
   
   @scala.inline
-  implicit class RegexpOps[Self <: Regexp] (val x: Self) extends AnyVal {
+  implicit class RegexpMutableBuilder[Self <: Regexp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegexp(value: MessageSummary): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegexpUndefined: Self = StObject.set(x, "regexp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequired(value: Hint): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegexp(value: MessageSummary): Self = this.set("regexp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegexp: Self = this.set("regexp", js.undefined)
-    
-    @scala.inline
-    def setRequired(value: Hint): Self = this.set("required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
   }
 }

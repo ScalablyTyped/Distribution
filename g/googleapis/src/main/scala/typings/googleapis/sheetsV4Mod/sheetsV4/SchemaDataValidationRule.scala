@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A data validation rule.
   */
 @js.native
-trait SchemaDataValidationRule extends js.Object {
+trait SchemaDataValidationRule extends StObject {
   
   /**
     * The condition that data in the cell must match.
@@ -40,42 +41,30 @@ object SchemaDataValidationRule {
   }
   
   @scala.inline
-  implicit class SchemaDataValidationRuleOps[Self <: SchemaDataValidationRule] (val x: Self) extends AnyVal {
+  implicit class SchemaDataValidationRuleMutableBuilder[Self <: SchemaDataValidationRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: SchemaBooleanCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputMessage(value: String): Self = StObject.set(x, "inputMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: SchemaBooleanCondition): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setInputMessageUndefined: Self = StObject.set(x, "inputMessage", js.undefined)
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setShowCustomUi(value: Boolean): Self = StObject.set(x, "showCustomUi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputMessage(value: String): Self = this.set("inputMessage", value.asInstanceOf[js.Any])
+    def setShowCustomUiUndefined: Self = StObject.set(x, "showCustomUi", js.undefined)
     
     @scala.inline
-    def deleteInputMessage: Self = this.set("inputMessage", js.undefined)
+    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCustomUi(value: Boolean): Self = this.set("showCustomUi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowCustomUi: Self = this.set("showCustomUi", js.undefined)
-    
-    @scala.inline
-    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrict: Self = this.set("strict", js.undefined)
+    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.chartJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.chartJs.chartJsStrings.quarter
   - typings.chartJs.chartJsStrings.year
 */
-trait TimeUnit extends js.Object
+trait TimeUnit extends StObject
 object TimeUnit {
   
   @scala.inline

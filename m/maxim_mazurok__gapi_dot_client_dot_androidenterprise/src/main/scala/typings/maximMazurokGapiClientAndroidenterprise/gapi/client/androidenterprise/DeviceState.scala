@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenterprise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceState extends js.Object {
+trait DeviceState extends StObject {
   
   /**
     * The state of the Google account on the device. "enabled" indicates that the Google account on the device can be used to access Google services (including Google Play), while
@@ -22,24 +23,12 @@ object DeviceState {
   }
   
   @scala.inline
-  implicit class DeviceStateOps[Self <: DeviceState] (val x: Self) extends AnyVal {
+  implicit class DeviceStateMutableBuilder[Self <: DeviceState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountState(value: String): Self = StObject.set(x, "accountState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccountState(value: String): Self = this.set("accountState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccountState: Self = this.set("accountState", js.undefined)
+    def setAccountStateUndefined: Self = StObject.set(x, "accountState", js.undefined)
   }
 }

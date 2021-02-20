@@ -1,12 +1,13 @@
 package typings.dockerode.mod
 
 import typings.dockerode.anon.Activeanon
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MemoryStats extends js.Object {
+trait MemoryStats extends StObject {
   
   var failcnt: Double = js.native
   
@@ -27,33 +28,21 @@ object MemoryStats {
   }
   
   @scala.inline
-  implicit class MemoryStatsOps[Self <: MemoryStats] (val x: Self) extends AnyVal {
+  implicit class MemoryStatsMutableBuilder[Self <: MemoryStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailcnt(value: Double): Self = StObject.set(x, "failcnt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMax_usage(value: Double): Self = StObject.set(x, "max_usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailcnt(value: Double): Self = this.set("failcnt", value.asInstanceOf[js.Any])
+    def setStats(value: Activeanon): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMax_usage(value: Double): Self = this.set("max_usage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStats(value: Activeanon): Self = this.set("stats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsage(value: Double): Self = this.set("usage", value.asInstanceOf[js.Any])
+    def setUsage(value: Double): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
   }
 }

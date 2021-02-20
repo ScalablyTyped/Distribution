@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SolutionStackDescription extends js.Object {
+trait SolutionStackDescription extends StObject {
   
   /**
     * The permitted file types allowed for a solution stack.
@@ -26,33 +27,21 @@ object SolutionStackDescription {
   }
   
   @scala.inline
-  implicit class SolutionStackDescriptionOps[Self <: SolutionStackDescription] (val x: Self) extends AnyVal {
+  implicit class SolutionStackDescriptionMutableBuilder[Self <: SolutionStackDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPermittedFileTypes(value: SolutionStackFileTypeList): Self = StObject.set(x, "PermittedFileTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPermittedFileTypesUndefined: Self = StObject.set(x, "PermittedFileTypes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPermittedFileTypesVarargs(value: FileTypeExtension*): Self = StObject.set(x, "PermittedFileTypes", js.Array(value :_*))
     
     @scala.inline
-    def setPermittedFileTypesVarargs(value: FileTypeExtension*): Self = this.set("PermittedFileTypes", js.Array(value :_*))
+    def setSolutionStackName(value: SolutionStackName): Self = StObject.set(x, "SolutionStackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermittedFileTypes(value: SolutionStackFileTypeList): Self = this.set("PermittedFileTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermittedFileTypes: Self = this.set("PermittedFileTypes", js.undefined)
-    
-    @scala.inline
-    def setSolutionStackName(value: SolutionStackName): Self = this.set("SolutionStackName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSolutionStackName: Self = this.set("SolutionStackName", js.undefined)
+    def setSolutionStackNameUndefined: Self = StObject.set(x, "SolutionStackName", js.undefined)
   }
 }

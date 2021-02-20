@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * spreadsheet.
   */
 @js.native
-trait SchemaBatchClearValuesByDataFilterRequest extends js.Object {
+trait SchemaBatchClearValuesByDataFilterRequest extends StObject {
   
   /**
     * The DataFilters used to determine which ranges to clear.
@@ -25,27 +26,15 @@ object SchemaBatchClearValuesByDataFilterRequest {
   }
   
   @scala.inline
-  implicit class SchemaBatchClearValuesByDataFilterRequestOps[Self <: SchemaBatchClearValuesByDataFilterRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaBatchClearValuesByDataFilterRequestMutableBuilder[Self <: SchemaBatchClearValuesByDataFilterRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataFilters(value: js.Array[SchemaDataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataFiltersVarargs(value: SchemaDataFilter*): Self = this.set("dataFilters", js.Array(value :_*))
-    
-    @scala.inline
-    def setDataFilters(value: js.Array[SchemaDataFilter]): Self = this.set("dataFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataFilters: Self = this.set("dataFilters", js.undefined)
+    def setDataFiltersVarargs(value: SchemaDataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
   }
 }

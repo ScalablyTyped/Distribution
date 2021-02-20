@@ -1,14 +1,14 @@
 package typings.nodegit
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/merge-options", JSImport.Namespace)
-@js.native
-object mergeOptionsMod extends js.Object {
+object mergeOptionsMod {
   
+  @JSImport("nodegit/merge-options", "MergeOptions")
   @js.native
   class MergeOptions ()
     extends /* key */ StringDictionary[js.Any] {

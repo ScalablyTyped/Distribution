@@ -3,14 +3,14 @@ package typings.three
 import typings.three.colorMod.Color
 import typings.three.lightMod.Light
 import typings.three.threeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/lights/RectAreaLight", JSImport.Namespace)
-@js.native
-object rectAreaLightMod extends js.Object {
+object rectAreaLightMod {
   
+  @JSImport("three/src/lights/RectAreaLight", "RectAreaLight")
   @js.native
   class RectAreaLight () extends Light {
     def this(color: String) = this()

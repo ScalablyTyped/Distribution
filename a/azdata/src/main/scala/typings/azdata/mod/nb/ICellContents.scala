@@ -1,12 +1,13 @@
 package typings.azdata.mod.nb
 
 import typings.azdata.anon.Azdatacellguid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICellContents extends js.Object {
+trait ICellContents extends StObject {
   
   var cell_type: CellType = js.native
   
@@ -27,48 +28,36 @@ object ICellContents {
   }
   
   @scala.inline
-  implicit class ICellContentsOps[Self <: ICellContents] (val x: Self) extends AnyVal {
+  implicit class ICellContentsMutableBuilder[Self <: ICellContents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCell_type(value: CellType): Self = StObject.set(x, "cell_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecution_count(value: Double): Self = StObject.set(x, "execution_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecution_countUndefined: Self = StObject.set(x, "execution_count", js.undefined)
     
     @scala.inline
-    def setCell_type(value: CellType): Self = this.set("cell_type", value.asInstanceOf[js.Any])
+    def setMetadata(value: Azdatacellguid): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceVarargs(value: String*): Self = this.set("source", js.Array(value :_*))
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def setSource(value: String | js.Array[String]): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setOutputs(value: js.Array[ICellOutput]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecution_count(value: Double): Self = this.set("execution_count", value.asInstanceOf[js.Any])
+    def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
     @scala.inline
-    def deleteExecution_count: Self = this.set("execution_count", js.undefined)
+    def setOutputsVarargs(value: ICellOutput*): Self = StObject.set(x, "outputs", js.Array(value :_*))
     
     @scala.inline
-    def setMetadata(value: Azdatacellguid): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setSource(value: String | js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
-    
-    @scala.inline
-    def setOutputsVarargs(value: ICellOutput*): Self = this.set("outputs", js.Array(value :_*))
-    
-    @scala.inline
-    def setOutputs(value: js.Array[ICellOutput]): Self = this.set("outputs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputs: Self = this.set("outputs", js.undefined)
+    def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
   }
 }

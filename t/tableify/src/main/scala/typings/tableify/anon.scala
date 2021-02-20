@@ -2,16 +2,15 @@ package typings.tableify
 
 import typings.std.Record
 import typings.tableify.tableifyBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait FnCall extends js.Object {
+  trait FnCall extends StObject {
     
     def apply(obj: js.Any): String = js.native
     def apply[T /* <: Record[String, _] */](obj: T): String = js.native

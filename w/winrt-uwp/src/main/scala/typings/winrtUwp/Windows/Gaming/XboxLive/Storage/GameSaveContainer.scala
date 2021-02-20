@@ -5,13 +5,14 @@ import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
 @js.native
-trait GameSaveContainer extends js.Object {
+trait GameSaveContainer extends StObject {
   
   /**
     * This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
@@ -75,43 +76,31 @@ object GameSaveContainer {
   }
   
   @scala.inline
-  implicit class GameSaveContainerOps[Self <: GameSaveContainer] (val x: Self) extends AnyVal {
+  implicit class GameSaveContainerMutableBuilder[Self <: GameSaveContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateBlobInfoQuery(value: String => GameSaveBlobInfoQuery): Self = StObject.set(x, "createBlobInfoQuery", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAsync(value: IIterable[String] => IPromiseWithIAsyncOperation[GameSaveBlobGetResult]): Self = StObject.set(x, "getAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateBlobInfoQuery(value: String => GameSaveBlobInfoQuery): Self = this.set("createBlobInfoQuery", js.Any.fromFunction1(value))
+    def setProvider(value: GameSaveProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAsync(value: IIterable[String] => IPromiseWithIAsyncOperation[GameSaveBlobGetResult]): Self = this.set("getAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProvider(value: GameSaveProvider): Self = this.set("provider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadAsync(value: IMapView[String, IBuffer] => IPromiseWithIAsyncOperation[GameSaveOperationResult]): Self = this.set("readAsync", js.Any.fromFunction1(value))
+    def setReadAsync(value: IMapView[String, IBuffer] => IPromiseWithIAsyncOperation[GameSaveOperationResult]): Self = StObject.set(x, "readAsync", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSubmitPropertySetUpdatesAsync(
       value: (IPropertySet, IIterable[String], String) => IPromiseWithIAsyncOperation[GameSaveOperationResult]
-    ): Self = this.set("submitPropertySetUpdatesAsync", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "submitPropertySetUpdatesAsync", js.Any.fromFunction3(value))
     
     @scala.inline
     def setSubmitUpdatesAsync(
       value: (IMapView[String, IBuffer], IIterable[String], String) => IPromiseWithIAsyncOperation[GameSaveOperationResult]
-    ): Self = this.set("submitUpdatesAsync", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "submitUpdatesAsync", js.Any.fromFunction3(value))
   }
 }

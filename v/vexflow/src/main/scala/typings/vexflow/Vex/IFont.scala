@@ -3,6 +3,7 @@ package typings.vexflow.Vex
 import typings.vexflow.anon.Copyright
 import typings.vexflow.anon.Ha
 import typings.vexflow.anon.XMax_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Helper interface for handling the Vex.Flow.Font object in Vex.Flow.Glyph. Not part of VexFlow!
   */
 @js.native
-trait IFont extends js.Object {
+trait IFont extends StObject {
   
   var ascender: Double = js.native
   
@@ -61,60 +62,48 @@ object IFont {
   }
   
   @scala.inline
-  implicit class IFontOps[Self <: IFont] (val x: Self) extends AnyVal {
+  implicit class IFontMutableBuilder[Self <: IFont] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAscender(value: Double): Self = StObject.set(x, "ascender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundingBox(value: XMax_): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCssFontStyle(value: String): Self = StObject.set(x, "cssFontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAscender(value: Double): Self = this.set("ascender", value.asInstanceOf[js.Any])
+    def setCssFontWeight(value: String): Self = StObject.set(x, "cssFontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingBox(value: XMax_): Self = this.set("boundingBox", value.asInstanceOf[js.Any])
+    def setDescender(value: Double): Self = StObject.set(x, "descender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssFontStyle(value: String): Self = this.set("cssFontStyle", value.asInstanceOf[js.Any])
+    def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssFontWeight(value: String): Self = this.set("cssFontWeight", value.asInstanceOf[js.Any])
+    def setGlyphs(value: js.Array[Ha]): Self = StObject.set(x, "glyphs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescender(value: Double): Self = this.set("descender", value.asInstanceOf[js.Any])
+    def setGlyphsVarargs(value: Ha*): Self = StObject.set(x, "glyphs", js.Array(value :_*))
     
     @scala.inline
-    def setFamilyName(value: String): Self = this.set("familyName", value.asInstanceOf[js.Any])
+    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyphsVarargs(value: Ha*): Self = this.set("glyphs", js.Array(value :_*))
+    def setOriginal_font_information(value: Copyright): Self = StObject.set(x, "original_font_information", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyphs(value: js.Array[Ha]): Self = this.set("glyphs", value.asInstanceOf[js.Any])
+    def setOriginal_font_informationUndefined: Self = StObject.set(x, "original_font_information", js.undefined)
     
     @scala.inline
-    def setLineHeight(value: Double): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolution(value: Double): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    def setUnderlinePosition(value: Double): Self = StObject.set(x, "underlinePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnderlinePosition(value: Double): Self = this.set("underlinePosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnderlineThickness(value: Double): Self = this.set("underlineThickness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOriginal_font_information(value: Copyright): Self = this.set("original_font_information", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginal_font_information: Self = this.set("original_font_information", js.undefined)
+    def setUnderlineThickness(value: Double): Self = StObject.set(x, "underlineThickness", value.asInstanceOf[js.Any])
   }
 }

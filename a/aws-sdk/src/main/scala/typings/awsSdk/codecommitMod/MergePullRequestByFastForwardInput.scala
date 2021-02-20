@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MergePullRequestByFastForwardInput extends js.Object {
+trait MergePullRequestByFastForwardInput extends StObject {
   
   /**
     * The system-generated ID of the pull request. To get this ID, use ListPullRequests.
@@ -31,30 +32,18 @@ object MergePullRequestByFastForwardInput {
   }
   
   @scala.inline
-  implicit class MergePullRequestByFastForwardInputOps[Self <: MergePullRequestByFastForwardInput] (val x: Self) extends AnyVal {
+  implicit class MergePullRequestByFastForwardInputMutableBuilder[Self <: MergePullRequestByFastForwardInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceCommitId(value: ObjectId): Self = StObject.set(x, "sourceCommitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPullRequestId(value: PullRequestId): Self = this.set("pullRequestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceCommitId(value: ObjectId): Self = this.set("sourceCommitId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceCommitId: Self = this.set("sourceCommitId", js.undefined)
+    def setSourceCommitIdUndefined: Self = StObject.set(x, "sourceCommitId", js.undefined)
   }
 }

@@ -1,7 +1,8 @@
 package typings.preact.jsxCsstypeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _FontLanguageOverrideProperty extends js.Object
+trait _FontLanguageOverrideProperty extends StObject

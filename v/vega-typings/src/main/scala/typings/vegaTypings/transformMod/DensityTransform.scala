@@ -3,6 +3,7 @@ package typings.vegaTypings.transformMod
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.vegaTypingsStrings.density
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,63 +37,51 @@ object DensityTransform {
   }
   
   @scala.inline
-  implicit class DensityTransformOps[Self <: DensityTransform] (val x: Self) extends AnyVal {
+  implicit class DensityTransformMutableBuilder[Self <: DensityTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAs(value: (Vector2[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistribution(value: Distribution | SignalRef): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: density): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
     
     @scala.inline
-    def setAs(value: (Vector2[String | SignalRef]) | SignalRef): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setExtent(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAs: Self = this.set("as", js.undefined)
+    def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
     @scala.inline
-    def setDistribution(value: Distribution | SignalRef): Self = this.set("distribution", value.asInstanceOf[js.Any])
+    def setMaxsteps(value: Double | SignalRef): Self = StObject.set(x, "maxsteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDistribution: Self = this.set("distribution", js.undefined)
+    def setMaxstepsUndefined: Self = StObject.set(x, "maxsteps", js.undefined)
     
     @scala.inline
-    def setExtent(value: (Vector2[Double | SignalRef]) | SignalRef): Self = this.set("extent", value.asInstanceOf[js.Any])
+    def setMethod(value: DensityMethod | SignalRef): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtent: Self = this.set("extent", js.undefined)
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def setMaxsteps(value: Double | SignalRef): Self = this.set("maxsteps", value.asInstanceOf[js.Any])
+    def setMinsteps(value: Double | SignalRef): Self = StObject.set(x, "minsteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxsteps: Self = this.set("maxsteps", js.undefined)
+    def setMinstepsUndefined: Self = StObject.set(x, "minsteps", js.undefined)
     
     @scala.inline
-    def setMethod(value: DensityMethod | SignalRef): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setSteps(value: Double | SignalRef): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
     @scala.inline
-    def setMinsteps(value: Double | SignalRef): Self = this.set("minsteps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinsteps: Self = this.set("minsteps", js.undefined)
-    
-    @scala.inline
-    def setSteps(value: Double | SignalRef): Self = this.set("steps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSteps: Self = this.set("steps", js.undefined)
+    def setType(value: density): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -5,12 +5,13 @@ import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.character
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.codePoint
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.forward
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.word
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Direction extends js.Object {
+trait Direction extends StObject {
   
   var direction: js.UndefOr[forward | backward] = js.native
   
@@ -25,30 +26,18 @@ object Direction {
   }
   
   @scala.inline
-  implicit class DirectionOps[Self <: Direction] (val x: Self) extends AnyVal {
+  implicit class DirectionMutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: forward | backward): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUnit(value: character | codePoint | word): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: forward | backward): Self = this.set("direction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
-    
-    @scala.inline
-    def setUnit(value: character | codePoint | word): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

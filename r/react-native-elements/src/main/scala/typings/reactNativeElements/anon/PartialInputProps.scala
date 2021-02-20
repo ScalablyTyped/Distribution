@@ -100,13 +100,14 @@ import typings.reactNativeElements.reactNativeElementsStrings.username
 import typings.reactNativeElements.reactNativeElementsStrings.words
 import typings.reactNativeElements.reactNativeElementsStrings.yes
 import typings.reactNativeElements.reactNativeElementsStrings.yesExcludeDescendants
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-native-elements.react-native-elements.InputProps> */
 @js.native
-trait PartialInputProps extends js.Object {
+trait PartialInputProps extends StObject {
   
   var InputComponent: js.UndefOr[ComponentType[_]] = js.native
   
@@ -379,823 +380,811 @@ object PartialInputProps {
   }
   
   @scala.inline
-  implicit class PartialInputPropsOps[Self <: PartialInputProps] (val x: Self) extends AnyVal {
+  implicit class PartialInputPropsMutableBuilder[Self <: PartialInputProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value :_*))
     
     @scala.inline
-    def setInputComponent(value: ComponentType[_]): Self = this.set("InputComponent", value.asInstanceOf[js.Any])
+    def setAccessibilityComponentType(value: none | button | radiobutton_checked | radiobutton_unchecked): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputComponent: Self = this.set("InputComponent", js.undefined)
+    def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
     
     @scala.inline
-    def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = this.set("accessibilityActions", js.Array(value :_*))
+    def setAccessibilityElementsHidden(value: Boolean): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = this.set("accessibilityActions", value.asInstanceOf[js.Any])
+    def setAccessibilityElementsHiddenUndefined: Self = StObject.set(x, "accessibilityElementsHidden", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityActions: Self = this.set("accessibilityActions", js.undefined)
+    def setAccessibilityHint(value: String): Self = StObject.set(x, "accessibilityHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityComponentType(value: none | button | radiobutton_checked | radiobutton_unchecked): Self = this.set("accessibilityComponentType", value.asInstanceOf[js.Any])
+    def setAccessibilityHintUndefined: Self = StObject.set(x, "accessibilityHint", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityComponentType: Self = this.set("accessibilityComponentType", js.undefined)
+    def setAccessibilityIgnoresInvertColors(value: Boolean): Self = StObject.set(x, "accessibilityIgnoresInvertColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityElementsHidden(value: Boolean): Self = this.set("accessibilityElementsHidden", value.asInstanceOf[js.Any])
+    def setAccessibilityIgnoresInvertColorsUndefined: Self = StObject.set(x, "accessibilityIgnoresInvertColors", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityElementsHidden: Self = this.set("accessibilityElementsHidden", js.undefined)
+    def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityHint(value: String): Self = this.set("accessibilityHint", value.asInstanceOf[js.Any])
+    def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityHint: Self = this.set("accessibilityHint", js.undefined)
+    def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityIgnoresInvertColors(value: Boolean): Self = this.set("accessibilityIgnoresInvertColors", value.asInstanceOf[js.Any])
+    def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityIgnoresInvertColors: Self = this.set("accessibilityIgnoresInvertColors", js.undefined)
+    def setAccessibilityRole(value: AccessibilityRole): Self = StObject.set(x, "accessibilityRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityLabel(value: String): Self = this.set("accessibilityLabel", value.asInstanceOf[js.Any])
+    def setAccessibilityRoleUndefined: Self = StObject.set(x, "accessibilityRole", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityLabel: Self = this.set("accessibilityLabel", js.undefined)
+    def setAccessibilityState(value: AccessibilityState): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityLiveRegion(value: none | polite | assertive): Self = this.set("accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityLiveRegion: Self = this.set("accessibilityLiveRegion", js.undefined)
+    def setAccessibilityTraits(value: AccessibilityTrait | js.Array[AccessibilityTrait]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityRole(value: AccessibilityRole): Self = this.set("accessibilityRole", value.asInstanceOf[js.Any])
+    def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityRole: Self = this.set("accessibilityRole", js.undefined)
+    def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = StObject.set(x, "accessibilityTraits", js.Array(value :_*))
     
     @scala.inline
-    def setAccessibilityState(value: AccessibilityState): Self = this.set("accessibilityState", value.asInstanceOf[js.Any])
+    def setAccessibilityValue(value: AccessibilityValue): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessibilityState: Self = this.set("accessibilityState", js.undefined)
+    def setAccessibilityValueUndefined: Self = StObject.set(x, "accessibilityValue", js.undefined)
     
     @scala.inline
-    def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = this.set("accessibilityTraits", js.Array(value :_*))
+    def setAccessibilityViewIsModal(value: Boolean): Self = StObject.set(x, "accessibilityViewIsModal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityTraits(value: AccessibilityTrait | js.Array[AccessibilityTrait]): Self = this.set("accessibilityTraits", value.asInstanceOf[js.Any])
+    def setAccessibilityViewIsModalUndefined: Self = StObject.set(x, "accessibilityViewIsModal", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityTraits: Self = this.set("accessibilityTraits", js.undefined)
+    def setAccessible(value: Boolean): Self = StObject.set(x, "accessible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityValue(value: AccessibilityValue): Self = this.set("accessibilityValue", value.asInstanceOf[js.Any])
+    def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityValue: Self = this.set("accessibilityValue", js.undefined)
+    def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityViewIsModal(value: Boolean): Self = this.set("accessibilityViewIsModal", value.asInstanceOf[js.Any])
+    def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityViewIsModal: Self = this.set("accessibilityViewIsModal", js.undefined)
+    def setAutoCapitalize(value: none | sentences | words | characters): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessible(value: Boolean): Self = this.set("accessible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccessible: Self = this.set("accessible", js.undefined)
-    
-    @scala.inline
-    def setAllowFontScaling(value: Boolean): Self = this.set("allowFontScaling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowFontScaling: Self = this.set("allowFontScaling", js.undefined)
-    
-    @scala.inline
-    def setAutoCapitalize(value: none | sentences | words | characters): Self = this.set("autoCapitalize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoCapitalize: Self = this.set("autoCapitalize", js.undefined)
+    def setAutoCapitalizeUndefined: Self = StObject.set(x, "autoCapitalize", js.undefined)
     
     @scala.inline
     def setAutoCompleteType(
       value: `cc-csc` | `cc-exp` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | name | password | `postal-code` | `street-address` | tel | username | off
-    ): Self = this.set("autoCompleteType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "autoCompleteType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoCompleteType: Self = this.set("autoCompleteType", js.undefined)
+    def setAutoCompleteTypeUndefined: Self = StObject.set(x, "autoCompleteType", js.undefined)
     
     @scala.inline
-    def setAutoCorrect(value: Boolean): Self = this.set("autoCorrect", value.asInstanceOf[js.Any])
+    def setAutoCorrect(value: Boolean): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoCorrect: Self = this.set("autoCorrect", js.undefined)
+    def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
     @scala.inline
-    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     @scala.inline
-    def setBlurOnSubmit(value: Boolean): Self = this.set("blurOnSubmit", value.asInstanceOf[js.Any])
+    def setBlurOnSubmit(value: Boolean): Self = StObject.set(x, "blurOnSubmit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlurOnSubmit: Self = this.set("blurOnSubmit", js.undefined)
+    def setBlurOnSubmitUndefined: Self = StObject.set(x, "blurOnSubmit", js.undefined)
     
     @scala.inline
-    def setCaretHidden(value: Boolean): Self = this.set("caretHidden", value.asInstanceOf[js.Any])
+    def setCaretHidden(value: Boolean): Self = StObject.set(x, "caretHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCaretHidden: Self = this.set("caretHidden", js.undefined)
+    def setCaretHiddenUndefined: Self = StObject.set(x, "caretHidden", js.undefined)
     
     @scala.inline
-    def setClearButtonMode(value: never | `while-editing` | `unless-editing` | always): Self = this.set("clearButtonMode", value.asInstanceOf[js.Any])
+    def setClearButtonMode(value: never | `while-editing` | `unless-editing` | always): Self = StObject.set(x, "clearButtonMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClearButtonMode: Self = this.set("clearButtonMode", js.undefined)
+    def setClearButtonModeUndefined: Self = StObject.set(x, "clearButtonMode", js.undefined)
     
     @scala.inline
-    def setClearTextOnFocus(value: Boolean): Self = this.set("clearTextOnFocus", value.asInstanceOf[js.Any])
+    def setClearTextOnFocus(value: Boolean): Self = StObject.set(x, "clearTextOnFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClearTextOnFocus: Self = this.set("clearTextOnFocus", js.undefined)
+    def setClearTextOnFocusUndefined: Self = StObject.set(x, "clearTextOnFocus", js.undefined)
     
     @scala.inline
-    def setCollapsable(value: Boolean): Self = this.set("collapsable", value.asInstanceOf[js.Any])
+    def setCollapsable(value: Boolean): Self = StObject.set(x, "collapsable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCollapsable: Self = this.set("collapsable", js.undefined)
+    def setCollapsableUndefined: Self = StObject.set(x, "collapsable", js.undefined)
     
     @scala.inline
-    def setContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
     
     @scala.inline
-    def setContainerStyleNull: Self = this.set("containerStyle", null)
+    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
     @scala.inline
-    def setContextMenuHidden(value: Boolean): Self = this.set("contextMenuHidden", value.asInstanceOf[js.Any])
+    def setContextMenuHidden(value: Boolean): Self = StObject.set(x, "contextMenuHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContextMenuHidden: Self = this.set("contextMenuHidden", js.undefined)
+    def setContextMenuHiddenUndefined: Self = StObject.set(x, "contextMenuHidden", js.undefined)
     
     @scala.inline
-    def setDataDetectorTypesVarargs(value: DataDetectorTypes*): Self = this.set("dataDetectorTypes", js.Array(value :_*))
+    def setDataDetectorTypes(value: DataDetectorTypes | js.Array[DataDetectorTypes]): Self = StObject.set(x, "dataDetectorTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataDetectorTypes(value: DataDetectorTypes | js.Array[DataDetectorTypes]): Self = this.set("dataDetectorTypes", value.asInstanceOf[js.Any])
+    def setDataDetectorTypesUndefined: Self = StObject.set(x, "dataDetectorTypes", js.undefined)
     
     @scala.inline
-    def deleteDataDetectorTypes: Self = this.set("dataDetectorTypes", js.undefined)
+    def setDataDetectorTypesVarargs(value: DataDetectorTypes*): Self = StObject.set(x, "dataDetectorTypes", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def setDisableFullscreenUI(value: Boolean): Self = this.set("disableFullscreenUI", value.asInstanceOf[js.Any])
+    def setDisableFullscreenUI(value: Boolean): Self = StObject.set(x, "disableFullscreenUI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableFullscreenUI: Self = this.set("disableFullscreenUI", js.undefined)
+    def setDisableFullscreenUIUndefined: Self = StObject.set(x, "disableFullscreenUI", js.undefined)
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setDisabledInputStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "disabledInputStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledInputStyle(value: StyleProp[TextStyle]): Self = this.set("disabledInputStyle", value.asInstanceOf[js.Any])
+    def setDisabledInputStyleNull: Self = StObject.set(x, "disabledInputStyle", null)
     
     @scala.inline
-    def deleteDisabledInputStyle: Self = this.set("disabledInputStyle", js.undefined)
+    def setDisabledInputStyleUndefined: Self = StObject.set(x, "disabledInputStyle", js.undefined)
     
     @scala.inline
-    def setDisabledInputStyleNull: Self = this.set("disabledInputStyle", null)
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def setEditable(value: Boolean): Self = this.set("editable", value.asInstanceOf[js.Any])
+    def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEditable: Self = this.set("editable", js.undefined)
+    def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
     @scala.inline
-    def setEnablesReturnKeyAutomatically(value: Boolean): Self = this.set("enablesReturnKeyAutomatically", value.asInstanceOf[js.Any])
+    def setEnablesReturnKeyAutomatically(value: Boolean): Self = StObject.set(x, "enablesReturnKeyAutomatically", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnablesReturnKeyAutomatically: Self = this.set("enablesReturnKeyAutomatically", js.undefined)
+    def setEnablesReturnKeyAutomaticallyUndefined: Self = StObject.set(x, "enablesReturnKeyAutomatically", js.undefined)
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def setErrorProps(value: TextProps): Self = this.set("errorProps", value.asInstanceOf[js.Any])
+    def setErrorProps(value: TextProps): Self = StObject.set(x, "errorProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorProps: Self = this.set("errorProps", js.undefined)
+    def setErrorPropsUndefined: Self = StObject.set(x, "errorProps", js.undefined)
     
     @scala.inline
-    def setErrorStyle(value: StyleProp[TextStyle]): Self = this.set("errorStyle", value.asInstanceOf[js.Any])
+    def setErrorStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "errorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorStyle: Self = this.set("errorStyle", js.undefined)
+    def setErrorStyleNull: Self = StObject.set(x, "errorStyle", null)
     
     @scala.inline
-    def setErrorStyleNull: Self = this.set("errorStyle", null)
+    def setErrorStyleUndefined: Self = StObject.set(x, "errorStyle", js.undefined)
     
     @scala.inline
-    def setFocusable(value: Boolean): Self = this.set("focusable", value.asInstanceOf[js.Any])
+    def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFocusable: Self = this.set("focusable", js.undefined)
+    def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
     
     @scala.inline
-    def setHasTVPreferredFocus(value: Boolean): Self = this.set("hasTVPreferredFocus", value.asInstanceOf[js.Any])
+    def setHasTVPreferredFocus(value: Boolean): Self = StObject.set(x, "hasTVPreferredFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasTVPreferredFocus: Self = this.set("hasTVPreferredFocus", js.undefined)
+    def setHasTVPreferredFocusUndefined: Self = StObject.set(x, "hasTVPreferredFocus", js.undefined)
     
     @scala.inline
-    def setHitSlop(value: Insets): Self = this.set("hitSlop", value.asInstanceOf[js.Any])
+    def setHitSlop(value: Insets): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHitSlop: Self = this.set("hitSlop", js.undefined)
+    def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
     
     @scala.inline
-    def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = this.set("importantForAccessibility", value.asInstanceOf[js.Any])
+    def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImportantForAccessibility: Self = this.set("importantForAccessibility", js.undefined)
+    def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
     
     @scala.inline
-    def setImportantForAutofill(value: auto | no | noExcludeDescendants | yes | yesExcludeDescendants): Self = this.set("importantForAutofill", value.asInstanceOf[js.Any])
+    def setImportantForAutofill(value: auto | no | noExcludeDescendants | yes | yesExcludeDescendants): Self = StObject.set(x, "importantForAutofill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImportantForAutofill: Self = this.set("importantForAutofill", js.undefined)
+    def setImportantForAutofillUndefined: Self = StObject.set(x, "importantForAutofill", js.undefined)
     
     @scala.inline
-    def setInlineImageLeft(value: String): Self = this.set("inlineImageLeft", value.asInstanceOf[js.Any])
+    def setInlineImageLeft(value: String): Self = StObject.set(x, "inlineImageLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInlineImageLeft: Self = this.set("inlineImageLeft", js.undefined)
+    def setInlineImageLeftUndefined: Self = StObject.set(x, "inlineImageLeft", js.undefined)
     
     @scala.inline
-    def setInlineImagePadding(value: Double): Self = this.set("inlineImagePadding", value.asInstanceOf[js.Any])
+    def setInlineImagePadding(value: Double): Self = StObject.set(x, "inlineImagePadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInlineImagePadding: Self = this.set("inlineImagePadding", js.undefined)
+    def setInlineImagePaddingUndefined: Self = StObject.set(x, "inlineImagePadding", js.undefined)
     
     @scala.inline
-    def setInputAccessoryViewID(value: String): Self = this.set("inputAccessoryViewID", value.asInstanceOf[js.Any])
+    def setInputAccessoryViewID(value: String): Self = StObject.set(x, "inputAccessoryViewID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputAccessoryViewID: Self = this.set("inputAccessoryViewID", js.undefined)
+    def setInputAccessoryViewIDUndefined: Self = StObject.set(x, "inputAccessoryViewID", js.undefined)
     
     @scala.inline
-    def setInputContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("inputContainerStyle", value.asInstanceOf[js.Any])
+    def setInputComponent(value: ComponentType[_]): Self = StObject.set(x, "InputComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputContainerStyle: Self = this.set("inputContainerStyle", js.undefined)
+    def setInputComponentUndefined: Self = StObject.set(x, "InputComponent", js.undefined)
     
     @scala.inline
-    def setInputContainerStyleNull: Self = this.set("inputContainerStyle", null)
+    def setInputContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "inputContainerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputStyle(value: StyleProp[TextStyle]): Self = this.set("inputStyle", value.asInstanceOf[js.Any])
+    def setInputContainerStyleNull: Self = StObject.set(x, "inputContainerStyle", null)
     
     @scala.inline
-    def deleteInputStyle: Self = this.set("inputStyle", js.undefined)
+    def setInputContainerStyleUndefined: Self = StObject.set(x, "inputContainerStyle", js.undefined)
     
     @scala.inline
-    def setInputStyleNull: Self = this.set("inputStyle", null)
+    def setInputStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTVSelectable(value: Boolean): Self = this.set("isTVSelectable", value.asInstanceOf[js.Any])
+    def setInputStyleNull: Self = StObject.set(x, "inputStyle", null)
     
     @scala.inline
-    def deleteIsTVSelectable: Self = this.set("isTVSelectable", js.undefined)
+    def setInputStyleUndefined: Self = StObject.set(x, "inputStyle", js.undefined)
     
     @scala.inline
-    def setKeyboardAppearance(value: default | light | dark): Self = this.set("keyboardAppearance", value.asInstanceOf[js.Any])
+    def setIsTVSelectable(value: Boolean): Self = StObject.set(x, "isTVSelectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeyboardAppearance: Self = this.set("keyboardAppearance", js.undefined)
+    def setIsTVSelectableUndefined: Self = StObject.set(x, "isTVSelectable", js.undefined)
     
     @scala.inline
-    def setKeyboardType(value: KeyboardTypeOptions): Self = this.set("keyboardType", value.asInstanceOf[js.Any])
+    def setKeyboardAppearance(value: default | light | dark): Self = StObject.set(x, "keyboardAppearance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeyboardType: Self = this.set("keyboardType", js.undefined)
+    def setKeyboardAppearanceUndefined: Self = StObject.set(x, "keyboardAppearance", js.undefined)
     
     @scala.inline
-    def setLabel(value: String | ReactElement): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setKeyboardType(value: KeyboardTypeOptions): Self = StObject.set(x, "keyboardType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setKeyboardTypeUndefined: Self = StObject.set(x, "keyboardType", js.undefined)
     
     @scala.inline
-    def setLabelProps(value: TextProps): Self = this.set("labelProps", value.asInstanceOf[js.Any])
+    def setLabel(value: String | ReactElement): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelProps: Self = this.set("labelProps", js.undefined)
+    def setLabelProps(value: TextProps): Self = StObject.set(x, "labelProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelStyle(value: StyleProp[TextStyle]): Self = this.set("labelStyle", value.asInstanceOf[js.Any])
+    def setLabelPropsUndefined: Self = StObject.set(x, "labelProps", js.undefined)
     
     @scala.inline
-    def deleteLabelStyle: Self = this.set("labelStyle", js.undefined)
+    def setLabelStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelStyleNull: Self = this.set("labelStyle", null)
+    def setLabelStyleNull: Self = StObject.set(x, "labelStyle", null)
     
     @scala.inline
-    def setLeftIcon(value: IconNode): Self = this.set("leftIcon", value.asInstanceOf[js.Any])
+    def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
     @scala.inline
-    def deleteLeftIcon: Self = this.set("leftIcon", js.undefined)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setLeftIconContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("leftIconContainerStyle", value.asInstanceOf[js.Any])
+    def setLeftIcon(value: IconNode): Self = StObject.set(x, "leftIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLeftIconContainerStyle: Self = this.set("leftIconContainerStyle", js.undefined)
+    def setLeftIconContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "leftIconContainerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftIconContainerStyleNull: Self = this.set("leftIconContainerStyle", null)
+    def setLeftIconContainerStyleNull: Self = StObject.set(x, "leftIconContainerStyle", null)
     
     @scala.inline
-    def setMaxFontSizeMultiplier(value: Double): Self = this.set("maxFontSizeMultiplier", value.asInstanceOf[js.Any])
+    def setLeftIconContainerStyleUndefined: Self = StObject.set(x, "leftIconContainerStyle", js.undefined)
     
     @scala.inline
-    def deleteMaxFontSizeMultiplier: Self = this.set("maxFontSizeMultiplier", js.undefined)
+    def setLeftIconUndefined: Self = StObject.set(x, "leftIcon", js.undefined)
     
     @scala.inline
-    def setMaxFontSizeMultiplierNull: Self = this.set("maxFontSizeMultiplier", null)
+    def setMaxFontSizeMultiplier(value: Double): Self = StObject.set(x, "maxFontSizeMultiplier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLength(value: Double): Self = this.set("maxLength", value.asInstanceOf[js.Any])
+    def setMaxFontSizeMultiplierNull: Self = StObject.set(x, "maxFontSizeMultiplier", null)
     
     @scala.inline
-    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
+    def setMaxFontSizeMultiplierUndefined: Self = StObject.set(x, "maxFontSizeMultiplier", js.undefined)
     
     @scala.inline
-    def setMultiline(value: Boolean): Self = this.set("multiline", value.asInstanceOf[js.Any])
+    def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultiline: Self = this.set("multiline", js.undefined)
+    def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
     @scala.inline
-    def setNativeID(value: String): Self = this.set("nativeID", value.asInstanceOf[js.Any])
+    def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNativeID: Self = this.set("nativeID", js.undefined)
+    def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
     
     @scala.inline
-    def setNeedsOffscreenAlphaCompositing(value: Boolean): Self = this.set("needsOffscreenAlphaCompositing", value.asInstanceOf[js.Any])
+    def setNativeID(value: String): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNeedsOffscreenAlphaCompositing: Self = this.set("needsOffscreenAlphaCompositing", js.undefined)
+    def setNativeIDUndefined: Self = StObject.set(x, "nativeID", js.undefined)
     
     @scala.inline
-    def setNumberOfLines(value: Double): Self = this.set("numberOfLines", value.asInstanceOf[js.Any])
+    def setNeedsOffscreenAlphaCompositing(value: Boolean): Self = StObject.set(x, "needsOffscreenAlphaCompositing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumberOfLines: Self = this.set("numberOfLines", js.undefined)
+    def setNeedsOffscreenAlphaCompositingUndefined: Self = StObject.set(x, "needsOffscreenAlphaCompositing", js.undefined)
     
     @scala.inline
-    def setOnAccessibilityAction(value: /* event */ AccessibilityActionEvent => Unit): Self = this.set("onAccessibilityAction", js.Any.fromFunction1(value))
+    def setNumberOfLines(value: Double): Self = StObject.set(x, "numberOfLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnAccessibilityAction: Self = this.set("onAccessibilityAction", js.undefined)
+    def setNumberOfLinesUndefined: Self = StObject.set(x, "numberOfLines", js.undefined)
     
     @scala.inline
-    def setOnAccessibilityEscape(value: () => Unit): Self = this.set("onAccessibilityEscape", js.Any.fromFunction0(value))
+    def setOnAccessibilityAction(value: /* event */ AccessibilityActionEvent => Unit): Self = StObject.set(x, "onAccessibilityAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnAccessibilityEscape: Self = this.set("onAccessibilityEscape", js.undefined)
+    def setOnAccessibilityActionUndefined: Self = StObject.set(x, "onAccessibilityAction", js.undefined)
     
     @scala.inline
-    def setOnAccessibilityTap(value: () => Unit): Self = this.set("onAccessibilityTap", js.Any.fromFunction0(value))
+    def setOnAccessibilityEscape(value: () => Unit): Self = StObject.set(x, "onAccessibilityEscape", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnAccessibilityTap: Self = this.set("onAccessibilityTap", js.undefined)
+    def setOnAccessibilityEscapeUndefined: Self = StObject.set(x, "onAccessibilityEscape", js.undefined)
     
     @scala.inline
-    def setOnBlur(value: /* e */ NativeSyntheticEvent[TextInputFocusEventData] => Unit): Self = this.set("onBlur", js.Any.fromFunction1(value))
+    def setOnAccessibilityTap(value: () => Unit): Self = StObject.set(x, "onAccessibilityTap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    def setOnAccessibilityTapUndefined: Self = StObject.set(x, "onAccessibilityTap", js.undefined)
     
     @scala.inline
-    def setOnChange(value: /* e */ NativeSyntheticEvent[TextInputChangeEventData] => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    def setOnBlur(value: /* e */ NativeSyntheticEvent[TextInputFocusEventData] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
-    def setOnChangeText(value: /* text */ String => Unit): Self = this.set("onChangeText", js.Any.fromFunction1(value))
+    def setOnChange(value: /* e */ NativeSyntheticEvent[TextInputChangeEventData] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnChangeText: Self = this.set("onChangeText", js.undefined)
+    def setOnChangeText(value: /* text */ String => Unit): Self = StObject.set(x, "onChangeText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnContentSizeChange(value: /* e */ NativeSyntheticEvent[TextInputContentSizeChangeEventData] => Unit): Self = this.set("onContentSizeChange", js.Any.fromFunction1(value))
+    def setOnChangeTextUndefined: Self = StObject.set(x, "onChangeText", js.undefined)
     
     @scala.inline
-    def deleteOnContentSizeChange: Self = this.set("onContentSizeChange", js.undefined)
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def setOnEndEditing(value: /* e */ NativeSyntheticEvent[TextInputEndEditingEventData] => Unit): Self = this.set("onEndEditing", js.Any.fromFunction1(value))
+    def setOnContentSizeChange(value: /* e */ NativeSyntheticEvent[TextInputContentSizeChangeEventData] => Unit): Self = StObject.set(x, "onContentSizeChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnEndEditing: Self = this.set("onEndEditing", js.undefined)
+    def setOnContentSizeChangeUndefined: Self = StObject.set(x, "onContentSizeChange", js.undefined)
     
     @scala.inline
-    def setOnFocus(value: /* e */ NativeSyntheticEvent[TextInputFocusEventData] => Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    def setOnEndEditing(value: /* e */ NativeSyntheticEvent[TextInputEndEditingEventData] => Unit): Self = StObject.set(x, "onEndEditing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    def setOnEndEditingUndefined: Self = StObject.set(x, "onEndEditing", js.undefined)
     
     @scala.inline
-    def setOnKeyPress(value: /* e */ NativeSyntheticEvent[TextInputKeyPressEventData] => Unit): Self = this.set("onKeyPress", js.Any.fromFunction1(value))
+    def setOnFocus(value: /* e */ NativeSyntheticEvent[TextInputFocusEventData] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnKeyPress: Self = this.set("onKeyPress", js.undefined)
+    def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
     @scala.inline
-    def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = this.set("onLayout", js.Any.fromFunction1(value))
+    def setOnKeyPress(value: /* e */ NativeSyntheticEvent[TextInputKeyPressEventData] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnLayout: Self = this.set("onLayout", js.undefined)
+    def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
     
     @scala.inline
-    def setOnMagicTap(value: () => Unit): Self = this.set("onMagicTap", js.Any.fromFunction0(value))
+    def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnMagicTap: Self = this.set("onMagicTap", js.undefined)
+    def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
     
     @scala.inline
-    def setOnMoveShouldSetResponder(value: /* event */ GestureResponderEvent => Boolean): Self = this.set("onMoveShouldSetResponder", js.Any.fromFunction1(value))
+    def setOnMagicTap(value: () => Unit): Self = StObject.set(x, "onMagicTap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnMoveShouldSetResponder: Self = this.set("onMoveShouldSetResponder", js.undefined)
+    def setOnMagicTapUndefined: Self = StObject.set(x, "onMagicTap", js.undefined)
     
     @scala.inline
-    def setOnMoveShouldSetResponderCapture(value: /* event */ GestureResponderEvent => Boolean): Self = this.set("onMoveShouldSetResponderCapture", js.Any.fromFunction1(value))
+    def setOnMoveShouldSetResponder(value: /* event */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onMoveShouldSetResponder", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnMoveShouldSetResponderCapture: Self = this.set("onMoveShouldSetResponderCapture", js.undefined)
+    def setOnMoveShouldSetResponderCapture(value: /* event */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnResponderEnd(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onResponderEnd", js.Any.fromFunction1(value))
+    def setOnMoveShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.undefined)
     
     @scala.inline
-    def deleteOnResponderEnd: Self = this.set("onResponderEnd", js.undefined)
+    def setOnMoveShouldSetResponderUndefined: Self = StObject.set(x, "onMoveShouldSetResponder", js.undefined)
     
     @scala.inline
-    def setOnResponderGrant(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onResponderGrant", js.Any.fromFunction1(value))
+    def setOnResponderEnd(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnResponderGrant: Self = this.set("onResponderGrant", js.undefined)
+    def setOnResponderEndUndefined: Self = StObject.set(x, "onResponderEnd", js.undefined)
     
     @scala.inline
-    def setOnResponderMove(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onResponderMove", js.Any.fromFunction1(value))
+    def setOnResponderGrant(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderGrant", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnResponderMove: Self = this.set("onResponderMove", js.undefined)
+    def setOnResponderGrantUndefined: Self = StObject.set(x, "onResponderGrant", js.undefined)
     
     @scala.inline
-    def setOnResponderReject(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onResponderReject", js.Any.fromFunction1(value))
+    def setOnResponderMove(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderMove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnResponderReject: Self = this.set("onResponderReject", js.undefined)
+    def setOnResponderMoveUndefined: Self = StObject.set(x, "onResponderMove", js.undefined)
     
     @scala.inline
-    def setOnResponderRelease(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onResponderRelease", js.Any.fromFunction1(value))
+    def setOnResponderReject(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderReject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnResponderRelease: Self = this.set("onResponderRelease", js.undefined)
+    def setOnResponderRejectUndefined: Self = StObject.set(x, "onResponderReject", js.undefined)
     
     @scala.inline
-    def setOnResponderStart(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onResponderStart", js.Any.fromFunction1(value))
+    def setOnResponderRelease(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderRelease", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnResponderStart: Self = this.set("onResponderStart", js.undefined)
+    def setOnResponderReleaseUndefined: Self = StObject.set(x, "onResponderRelease", js.undefined)
     
     @scala.inline
-    def setOnResponderTerminate(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onResponderTerminate", js.Any.fromFunction1(value))
+    def setOnResponderStart(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnResponderTerminate: Self = this.set("onResponderTerminate", js.undefined)
+    def setOnResponderStartUndefined: Self = StObject.set(x, "onResponderStart", js.undefined)
     
     @scala.inline
-    def setOnResponderTerminationRequest(value: /* event */ GestureResponderEvent => Boolean): Self = this.set("onResponderTerminationRequest", js.Any.fromFunction1(value))
+    def setOnResponderTerminate(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderTerminate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnResponderTerminationRequest: Self = this.set("onResponderTerminationRequest", js.undefined)
+    def setOnResponderTerminateUndefined: Self = StObject.set(x, "onResponderTerminate", js.undefined)
     
     @scala.inline
-    def setOnScroll(value: /* e */ NativeSyntheticEvent[TextInputScrollEventData] => Unit): Self = this.set("onScroll", js.Any.fromFunction1(value))
+    def setOnResponderTerminationRequest(value: /* event */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onResponderTerminationRequest", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    def setOnResponderTerminationRequestUndefined: Self = StObject.set(x, "onResponderTerminationRequest", js.undefined)
     
     @scala.inline
-    def setOnSelectionChange(value: /* e */ NativeSyntheticEvent[TextInputSelectionChangeEventData] => Unit): Self = this.set("onSelectionChange", js.Any.fromFunction1(value))
+    def setOnScroll(value: /* e */ NativeSyntheticEvent[TextInputScrollEventData] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnSelectionChange: Self = this.set("onSelectionChange", js.undefined)
+    def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
     @scala.inline
-    def setOnStartShouldSetResponder(value: /* event */ GestureResponderEvent => Boolean): Self = this.set("onStartShouldSetResponder", js.Any.fromFunction1(value))
+    def setOnSelectionChange(value: /* e */ NativeSyntheticEvent[TextInputSelectionChangeEventData] => Unit): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnStartShouldSetResponder: Self = this.set("onStartShouldSetResponder", js.undefined)
+    def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
     
     @scala.inline
-    def setOnStartShouldSetResponderCapture(value: /* event */ GestureResponderEvent => Boolean): Self = this.set("onStartShouldSetResponderCapture", js.Any.fromFunction1(value))
+    def setOnStartShouldSetResponder(value: /* event */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onStartShouldSetResponder", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnStartShouldSetResponderCapture: Self = this.set("onStartShouldSetResponderCapture", js.undefined)
+    def setOnStartShouldSetResponderCapture(value: /* event */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onStartShouldSetResponderCapture", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSubmitEditing(value: /* e */ NativeSyntheticEvent[TextInputSubmitEditingEventData] => Unit): Self = this.set("onSubmitEditing", js.Any.fromFunction1(value))
+    def setOnStartShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onStartShouldSetResponderCapture", js.undefined)
     
     @scala.inline
-    def deleteOnSubmitEditing: Self = this.set("onSubmitEditing", js.undefined)
+    def setOnStartShouldSetResponderUndefined: Self = StObject.set(x, "onStartShouldSetResponder", js.undefined)
     
     @scala.inline
-    def setOnTextInput(value: /* e */ NativeSyntheticEvent[TextInputTextInputEventData] => Unit): Self = this.set("onTextInput", js.Any.fromFunction1(value))
+    def setOnSubmitEditing(value: /* e */ NativeSyntheticEvent[TextInputSubmitEditingEventData] => Unit): Self = StObject.set(x, "onSubmitEditing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnTextInput: Self = this.set("onTextInput", js.undefined)
+    def setOnSubmitEditingUndefined: Self = StObject.set(x, "onSubmitEditing", js.undefined)
     
     @scala.inline
-    def setOnTouchCancel(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onTouchCancel", js.Any.fromFunction1(value))
+    def setOnTextInput(value: /* e */ NativeSyntheticEvent[TextInputTextInputEventData] => Unit): Self = StObject.set(x, "onTextInput", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnTouchCancel: Self = this.set("onTouchCancel", js.undefined)
+    def setOnTextInputUndefined: Self = StObject.set(x, "onTextInput", js.undefined)
     
     @scala.inline
-    def setOnTouchEnd(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onTouchEnd", js.Any.fromFunction1(value))
+    def setOnTouchCancel(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnTouchEnd: Self = this.set("onTouchEnd", js.undefined)
+    def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
     
     @scala.inline
-    def setOnTouchEndCapture(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onTouchEndCapture", js.Any.fromFunction1(value))
+    def setOnTouchEnd(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnTouchEndCapture: Self = this.set("onTouchEndCapture", js.undefined)
+    def setOnTouchEndCapture(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onTouchEndCapture", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnTouchMove(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onTouchMove", js.Any.fromFunction1(value))
+    def setOnTouchEndCaptureUndefined: Self = StObject.set(x, "onTouchEndCapture", js.undefined)
     
     @scala.inline
-    def deleteOnTouchMove: Self = this.set("onTouchMove", js.undefined)
+    def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
     
     @scala.inline
-    def setOnTouchStart(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onTouchStart", js.Any.fromFunction1(value))
+    def setOnTouchMove(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnTouchStart: Self = this.set("onTouchStart", js.undefined)
+    def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
     
     @scala.inline
-    def setPasswordRules(value: String): Self = this.set("passwordRules", value.asInstanceOf[js.Any])
+    def setOnTouchStart(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePasswordRules: Self = this.set("passwordRules", js.undefined)
+    def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     
     @scala.inline
-    def setPasswordRulesNull: Self = this.set("passwordRules", null)
+    def setPasswordRules(value: String): Self = StObject.set(x, "passwordRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    def setPasswordRulesNull: Self = StObject.set(x, "passwordRules", null)
     
     @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    def setPasswordRulesUndefined: Self = StObject.set(x, "passwordRules", js.undefined)
     
     @scala.inline
-    def setPlaceholderTextColor(value: ColorValue): Self = this.set("placeholderTextColor", value.asInstanceOf[js.Any])
+    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlaceholderTextColor: Self = this.set("placeholderTextColor", js.undefined)
+    def setPlaceholderTextColor(value: ColorValue): Self = StObject.set(x, "placeholderTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointerEvents(value: `box-none` | none | `box-only` | auto): Self = this.set("pointerEvents", value.asInstanceOf[js.Any])
+    def setPlaceholderTextColorUndefined: Self = StObject.set(x, "placeholderTextColor", js.undefined)
     
     @scala.inline
-    def deletePointerEvents: Self = this.set("pointerEvents", js.undefined)
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def setRejectResponderTermination(value: Boolean): Self = this.set("rejectResponderTermination", value.asInstanceOf[js.Any])
+    def setPointerEvents(value: `box-none` | none | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRejectResponderTermination: Self = this.set("rejectResponderTermination", js.undefined)
+    def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
     
     @scala.inline
-    def setRejectResponderTerminationNull: Self = this.set("rejectResponderTermination", null)
+    def setRejectResponderTermination(value: Boolean): Self = StObject.set(x, "rejectResponderTermination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveClippedSubviews(value: Boolean): Self = this.set("removeClippedSubviews", value.asInstanceOf[js.Any])
+    def setRejectResponderTerminationNull: Self = StObject.set(x, "rejectResponderTermination", null)
     
     @scala.inline
-    def deleteRemoveClippedSubviews: Self = this.set("removeClippedSubviews", js.undefined)
+    def setRejectResponderTerminationUndefined: Self = StObject.set(x, "rejectResponderTermination", js.undefined)
     
     @scala.inline
-    def setRenderErrorMessage(value: Boolean): Self = this.set("renderErrorMessage", value.asInstanceOf[js.Any])
+    def setRemoveClippedSubviews(value: Boolean): Self = StObject.set(x, "removeClippedSubviews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenderErrorMessage: Self = this.set("renderErrorMessage", js.undefined)
+    def setRemoveClippedSubviewsUndefined: Self = StObject.set(x, "removeClippedSubviews", js.undefined)
     
     @scala.inline
-    def setRenderToHardwareTextureAndroid(value: Boolean): Self = this.set("renderToHardwareTextureAndroid", value.asInstanceOf[js.Any])
+    def setRenderErrorMessage(value: Boolean): Self = StObject.set(x, "renderErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenderToHardwareTextureAndroid: Self = this.set("renderToHardwareTextureAndroid", js.undefined)
+    def setRenderErrorMessageUndefined: Self = StObject.set(x, "renderErrorMessage", js.undefined)
     
     @scala.inline
-    def setReturnKeyLabel(value: String): Self = this.set("returnKeyLabel", value.asInstanceOf[js.Any])
+    def setRenderToHardwareTextureAndroid(value: Boolean): Self = StObject.set(x, "renderToHardwareTextureAndroid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReturnKeyLabel: Self = this.set("returnKeyLabel", js.undefined)
+    def setRenderToHardwareTextureAndroidUndefined: Self = StObject.set(x, "renderToHardwareTextureAndroid", js.undefined)
     
     @scala.inline
-    def setReturnKeyType(value: ReturnKeyTypeOptions): Self = this.set("returnKeyType", value.asInstanceOf[js.Any])
+    def setReturnKeyLabel(value: String): Self = StObject.set(x, "returnKeyLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReturnKeyType: Self = this.set("returnKeyType", js.undefined)
+    def setReturnKeyLabelUndefined: Self = StObject.set(x, "returnKeyLabel", js.undefined)
     
     @scala.inline
-    def setRightIcon(value: IconNode): Self = this.set("rightIcon", value.asInstanceOf[js.Any])
+    def setReturnKeyType(value: ReturnKeyTypeOptions): Self = StObject.set(x, "returnKeyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRightIcon: Self = this.set("rightIcon", js.undefined)
+    def setReturnKeyTypeUndefined: Self = StObject.set(x, "returnKeyType", js.undefined)
     
     @scala.inline
-    def setRightIconContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("rightIconContainerStyle", value.asInstanceOf[js.Any])
+    def setRightIcon(value: IconNode): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRightIconContainerStyle: Self = this.set("rightIconContainerStyle", js.undefined)
+    def setRightIconContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "rightIconContainerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightIconContainerStyleNull: Self = this.set("rightIconContainerStyle", null)
+    def setRightIconContainerStyleNull: Self = StObject.set(x, "rightIconContainerStyle", null)
     
     @scala.inline
-    def setScrollEnabled(value: Boolean): Self = this.set("scrollEnabled", value.asInstanceOf[js.Any])
+    def setRightIconContainerStyleUndefined: Self = StObject.set(x, "rightIconContainerStyle", js.undefined)
     
     @scala.inline
-    def deleteScrollEnabled: Self = this.set("scrollEnabled", js.undefined)
+    def setRightIconUndefined: Self = StObject.set(x, "rightIcon", js.undefined)
     
     @scala.inline
-    def setSecureTextEntry(value: Boolean): Self = this.set("secureTextEntry", value.asInstanceOf[js.Any])
+    def setScrollEnabled(value: Boolean): Self = StObject.set(x, "scrollEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSecureTextEntry: Self = this.set("secureTextEntry", js.undefined)
+    def setScrollEnabledUndefined: Self = StObject.set(x, "scrollEnabled", js.undefined)
     
     @scala.inline
-    def setSelectTextOnFocus(value: Boolean): Self = this.set("selectTextOnFocus", value.asInstanceOf[js.Any])
+    def setSecureTextEntry(value: Boolean): Self = StObject.set(x, "secureTextEntry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectTextOnFocus: Self = this.set("selectTextOnFocus", js.undefined)
+    def setSecureTextEntryUndefined: Self = StObject.set(x, "secureTextEntry", js.undefined)
     
     @scala.inline
-    def setSelection(value: Start): Self = this.set("selection", value.asInstanceOf[js.Any])
+    def setSelectTextOnFocus(value: Boolean): Self = StObject.set(x, "selectTextOnFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelection: Self = this.set("selection", js.undefined)
+    def setSelectTextOnFocusUndefined: Self = StObject.set(x, "selectTextOnFocus", js.undefined)
     
     @scala.inline
-    def setSelectionColor(value: ColorValue): Self = this.set("selectionColor", value.asInstanceOf[js.Any])
+    def setSelection(value: Start): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectionColor: Self = this.set("selectionColor", js.undefined)
+    def setSelectionColor(value: ColorValue): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionState(value: DocumentSelectionState): Self = this.set("selectionState", value.asInstanceOf[js.Any])
+    def setSelectionColorUndefined: Self = StObject.set(x, "selectionColor", js.undefined)
     
     @scala.inline
-    def deleteSelectionState: Self = this.set("selectionState", js.undefined)
+    def setSelectionState(value: DocumentSelectionState): Self = StObject.set(x, "selectionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShouldRasterizeIOS(value: Boolean): Self = this.set("shouldRasterizeIOS", value.asInstanceOf[js.Any])
+    def setSelectionStateUndefined: Self = StObject.set(x, "selectionState", js.undefined)
     
     @scala.inline
-    def deleteShouldRasterizeIOS: Self = this.set("shouldRasterizeIOS", js.undefined)
+    def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
     
     @scala.inline
-    def setShowSoftInputOnFocus(value: Boolean): Self = this.set("showSoftInputOnFocus", value.asInstanceOf[js.Any])
+    def setShouldRasterizeIOS(value: Boolean): Self = StObject.set(x, "shouldRasterizeIOS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowSoftInputOnFocus: Self = this.set("showSoftInputOnFocus", js.undefined)
+    def setShouldRasterizeIOSUndefined: Self = StObject.set(x, "shouldRasterizeIOS", js.undefined)
     
     @scala.inline
-    def setSpellCheck(value: Boolean): Self = this.set("spellCheck", value.asInstanceOf[js.Any])
+    def setShowSoftInputOnFocus(value: Boolean): Self = StObject.set(x, "showSoftInputOnFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpellCheck: Self = this.set("spellCheck", js.undefined)
+    def setShowSoftInputOnFocusUndefined: Self = StObject.set(x, "showSoftInputOnFocus", js.undefined)
     
     @scala.inline
-    def setStyle(value: StyleProp[TextStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setSpellCheck(value: Boolean): Self = StObject.set(x, "spellCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setSpellCheckUndefined: Self = StObject.set(x, "spellCheck", js.undefined)
     
     @scala.inline
-    def setStyleNull: Self = this.set("style", null)
+    def setStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestID(value: String): Self = this.set("testID", value.asInstanceOf[js.Any])
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def deleteTestID: Self = this.set("testID", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setTextAlignVertical(value: auto | top | bottom | center): Self = this.set("textAlignVertical", value.asInstanceOf[js.Any])
+    def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextAlignVertical: Self = this.set("textAlignVertical", js.undefined)
+    def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
     @scala.inline
-    def setTextBreakStrategy(value: simple | highQuality | balanced): Self = this.set("textBreakStrategy", value.asInstanceOf[js.Any])
+    def setTextAlignVertical(value: auto | top | bottom | center): Self = StObject.set(x, "textAlignVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextBreakStrategy: Self = this.set("textBreakStrategy", js.undefined)
+    def setTextAlignVerticalUndefined: Self = StObject.set(x, "textAlignVertical", js.undefined)
+    
+    @scala.inline
+    def setTextBreakStrategy(value: simple | highQuality | balanced): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTextBreakStrategyUndefined: Self = StObject.set(x, "textBreakStrategy", js.undefined)
     
     @scala.inline
     def setTextContentType(
       value: none | URL | addressCity | addressCityAndState | addressState | countryName | creditCardNumber | emailAddress | familyName | fullStreetAddress | givenName | jobTitle | location | middleName | name | namePrefix | nameSuffix | nickname | organizationName | postalCode | streetAddressLine1 | streetAddressLine2 | sublocality | telephoneNumber | username | password | newPassword | oneTimeCode
-    ): Self = this.set("textContentType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextContentType: Self = this.set("textContentType", js.undefined)
+    def setTextContentTypeUndefined: Self = StObject.set(x, "textContentType", js.undefined)
     
     @scala.inline
-    def setTvParallaxMagnification(value: Double): Self = this.set("tvParallaxMagnification", value.asInstanceOf[js.Any])
+    def setTvParallaxMagnification(value: Double): Self = StObject.set(x, "tvParallaxMagnification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTvParallaxMagnification: Self = this.set("tvParallaxMagnification", js.undefined)
+    def setTvParallaxMagnificationUndefined: Self = StObject.set(x, "tvParallaxMagnification", js.undefined)
     
     @scala.inline
-    def setTvParallaxProperties(value: TVParallaxProperties): Self = this.set("tvParallaxProperties", value.asInstanceOf[js.Any])
+    def setTvParallaxProperties(value: TVParallaxProperties): Self = StObject.set(x, "tvParallaxProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTvParallaxProperties: Self = this.set("tvParallaxProperties", js.undefined)
+    def setTvParallaxPropertiesUndefined: Self = StObject.set(x, "tvParallaxProperties", js.undefined)
     
     @scala.inline
-    def setTvParallaxShiftDistanceX(value: Double): Self = this.set("tvParallaxShiftDistanceX", value.asInstanceOf[js.Any])
+    def setTvParallaxShiftDistanceX(value: Double): Self = StObject.set(x, "tvParallaxShiftDistanceX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTvParallaxShiftDistanceX: Self = this.set("tvParallaxShiftDistanceX", js.undefined)
+    def setTvParallaxShiftDistanceXUndefined: Self = StObject.set(x, "tvParallaxShiftDistanceX", js.undefined)
     
     @scala.inline
-    def setTvParallaxShiftDistanceY(value: Double): Self = this.set("tvParallaxShiftDistanceY", value.asInstanceOf[js.Any])
+    def setTvParallaxShiftDistanceY(value: Double): Self = StObject.set(x, "tvParallaxShiftDistanceY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTvParallaxShiftDistanceY: Self = this.set("tvParallaxShiftDistanceY", js.undefined)
+    def setTvParallaxShiftDistanceYUndefined: Self = StObject.set(x, "tvParallaxShiftDistanceY", js.undefined)
     
     @scala.inline
-    def setTvParallaxTiltAngle(value: Double): Self = this.set("tvParallaxTiltAngle", value.asInstanceOf[js.Any])
+    def setTvParallaxTiltAngle(value: Double): Self = StObject.set(x, "tvParallaxTiltAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTvParallaxTiltAngle: Self = this.set("tvParallaxTiltAngle", js.undefined)
+    def setTvParallaxTiltAngleUndefined: Self = StObject.set(x, "tvParallaxTiltAngle", js.undefined)
     
     @scala.inline
-    def setUnderlineColorAndroid(value: ColorValue): Self = this.set("underlineColorAndroid", value.asInstanceOf[js.Any])
+    def setUnderlineColorAndroid(value: ColorValue): Self = StObject.set(x, "underlineColorAndroid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnderlineColorAndroid: Self = this.set("underlineColorAndroid", js.undefined)
+    def setUnderlineColorAndroidUndefined: Self = StObject.set(x, "underlineColorAndroid", js.undefined)
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

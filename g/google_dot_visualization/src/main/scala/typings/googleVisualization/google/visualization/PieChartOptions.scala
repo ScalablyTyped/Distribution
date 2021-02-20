@@ -1,12 +1,13 @@
 package typings.googleVisualization.google.visualization
 
 import typings.googleVisualization.googleVisualizationStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PieChartOptions extends js.Object {
+trait PieChartOptions extends StObject {
   
   var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.native
   
@@ -63,159 +64,147 @@ object PieChartOptions {
   }
   
   @scala.inline
-  implicit class PieChartOptionsOps[Self <: PieChartOptions] (val x: Self) extends AnyVal {
+  implicit class PieChartOptionsMutableBuilder[Self <: PieChartOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String | ChartStrokeFill): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChartArea(value: ChartArea): Self = StObject.set(x, "chartArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String | ChartStrokeFill): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setChartAreaUndefined: Self = StObject.set(x, "chartArea", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartArea(value: ChartArea): Self = this.set("chartArea", value.asInstanceOf[js.Any])
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def deleteChartArea: Self = this.set("chartArea", js.undefined)
+    def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
     @scala.inline
-    def setColorsVarargs(value: String*): Self = this.set("colors", js.Array(value :_*))
+    def setEnableInteractivity(value: Boolean): Self = StObject.set(x, "enableInteractivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: js.Array[String]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setEnableInteractivityUndefined: Self = StObject.set(x, "enableInteractivity", js.undefined)
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableInteractivity(value: Boolean): Self = this.set("enableInteractivity", value.asInstanceOf[js.Any])
+    def setFontNameUndefined: Self = StObject.set(x, "fontName", js.undefined)
     
     @scala.inline
-    def deleteEnableInteractivity: Self = this.set("enableInteractivity", js.undefined)
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontName(value: String): Self = this.set("fontName", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteFontName: Self = this.set("fontName", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setIs3D(value: Boolean): Self = StObject.set(x, "is3D", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIs3DUndefined: Self = StObject.set(x, "is3D", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLegend(value: ChartLegend | none): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs3D(value: Boolean): Self = this.set("is3D", value.asInstanceOf[js.Any])
+    def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
     @scala.inline
-    def deleteIs3D: Self = this.set("is3D", js.undefined)
+    def setPieHole(value: Double): Self = StObject.set(x, "pieHole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegend(value: ChartLegend | none): Self = this.set("legend", value.asInstanceOf[js.Any])
+    def setPieHoleUndefined: Self = StObject.set(x, "pieHole", js.undefined)
     
     @scala.inline
-    def deleteLegend: Self = this.set("legend", js.undefined)
+    def setPieResidueSliceColor(value: String): Self = StObject.set(x, "pieResidueSliceColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPieHole(value: Double): Self = this.set("pieHole", value.asInstanceOf[js.Any])
+    def setPieResidueSliceColorUndefined: Self = StObject.set(x, "pieResidueSliceColor", js.undefined)
     
     @scala.inline
-    def deletePieHole: Self = this.set("pieHole", js.undefined)
+    def setPieResidueSliceLabel(value: String): Self = StObject.set(x, "pieResidueSliceLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPieResidueSliceColor(value: String): Self = this.set("pieResidueSliceColor", value.asInstanceOf[js.Any])
+    def setPieResidueSliceLabelUndefined: Self = StObject.set(x, "pieResidueSliceLabel", js.undefined)
     
     @scala.inline
-    def deletePieResidueSliceColor: Self = this.set("pieResidueSliceColor", js.undefined)
+    def setPieSliceBorderColor(value: String): Self = StObject.set(x, "pieSliceBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPieResidueSliceLabel(value: String): Self = this.set("pieResidueSliceLabel", value.asInstanceOf[js.Any])
+    def setPieSliceBorderColorUndefined: Self = StObject.set(x, "pieSliceBorderColor", js.undefined)
     
     @scala.inline
-    def deletePieResidueSliceLabel: Self = this.set("pieResidueSliceLabel", js.undefined)
+    def setPieSliceText(value: String): Self = StObject.set(x, "pieSliceText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPieSliceBorderColor(value: String): Self = this.set("pieSliceBorderColor", value.asInstanceOf[js.Any])
+    def setPieSliceTextStyle(value: ChartTextStyle): Self = StObject.set(x, "pieSliceTextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePieSliceBorderColor: Self = this.set("pieSliceBorderColor", js.undefined)
+    def setPieSliceTextStyleUndefined: Self = StObject.set(x, "pieSliceTextStyle", js.undefined)
     
     @scala.inline
-    def setPieSliceText(value: String): Self = this.set("pieSliceText", value.asInstanceOf[js.Any])
+    def setPieSliceTextUndefined: Self = StObject.set(x, "pieSliceText", js.undefined)
     
     @scala.inline
-    def deletePieSliceText: Self = this.set("pieSliceText", js.undefined)
+    def setPieStartAngle(value: Double): Self = StObject.set(x, "pieStartAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPieSliceTextStyle(value: ChartTextStyle): Self = this.set("pieSliceTextStyle", value.asInstanceOf[js.Any])
+    def setPieStartAngleUndefined: Self = StObject.set(x, "pieStartAngle", js.undefined)
     
     @scala.inline
-    def deletePieSliceTextStyle: Self = this.set("pieSliceTextStyle", js.undefined)
+    def setReverseCategories(value: Boolean): Self = StObject.set(x, "reverseCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPieStartAngle(value: Double): Self = this.set("pieStartAngle", value.asInstanceOf[js.Any])
+    def setReverseCategoriesUndefined: Self = StObject.set(x, "reverseCategories", js.undefined)
     
     @scala.inline
-    def deletePieStartAngle: Self = this.set("pieStartAngle", js.undefined)
+    def setSliceVisibilityThreshold(value: Double): Self = StObject.set(x, "sliceVisibilityThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReverseCategories(value: Boolean): Self = this.set("reverseCategories", value.asInstanceOf[js.Any])
+    def setSliceVisibilityThresholdUndefined: Self = StObject.set(x, "sliceVisibilityThreshold", js.undefined)
     
     @scala.inline
-    def deleteReverseCategories: Self = this.set("reverseCategories", js.undefined)
+    def setSlices(value: js.Any): Self = StObject.set(x, "slices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSliceVisibilityThreshold(value: Double): Self = this.set("sliceVisibilityThreshold", value.asInstanceOf[js.Any])
+    def setSlicesUndefined: Self = StObject.set(x, "slices", js.undefined)
     
     @scala.inline
-    def deleteSliceVisibilityThreshold: Self = this.set("sliceVisibilityThreshold", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlices(value: js.Any): Self = this.set("slices", value.asInstanceOf[js.Any])
+    def setTitleTextStyle(value: ChartTextStyle): Self = StObject.set(x, "titleTextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSlices: Self = this.set("slices", js.undefined)
+    def setTitleTextStyleUndefined: Self = StObject.set(x, "titleTextStyle", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTooltip(value: ChartTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleTextStyle(value: ChartTextStyle): Self = this.set("titleTextStyle", value.asInstanceOf[js.Any])
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
     @scala.inline
-    def deleteTitleTextStyle: Self = this.set("titleTextStyle", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltip(value: ChartTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

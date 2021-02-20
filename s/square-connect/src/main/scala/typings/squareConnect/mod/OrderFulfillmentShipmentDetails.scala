@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "OrderFulfillmentShipmentDetails")
 @js.native
-class OrderFulfillmentShipmentDetails () extends js.Object {
+class OrderFulfillmentShipmentDetails () extends StObject {
   
   /**
     * A description of why the shipment was canceled.

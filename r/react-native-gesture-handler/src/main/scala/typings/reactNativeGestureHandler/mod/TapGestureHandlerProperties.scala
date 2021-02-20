@@ -1,5 +1,6 @@
 package typings.reactNativeGestureHandler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,72 +35,60 @@ object TapGestureHandlerProperties {
   }
   
   @scala.inline
-  implicit class TapGestureHandlerPropertiesOps[Self <: TapGestureHandlerProperties] (val x: Self) extends AnyVal {
+  implicit class TapGestureHandlerPropertiesMutableBuilder[Self <: TapGestureHandlerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxDelayMs(value: Double): Self = StObject.set(x, "maxDelayMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxDelayMsUndefined: Self = StObject.set(x, "maxDelayMs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxDeltaX(value: Double): Self = StObject.set(x, "maxDeltaX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDelayMs(value: Double): Self = this.set("maxDelayMs", value.asInstanceOf[js.Any])
+    def setMaxDeltaXUndefined: Self = StObject.set(x, "maxDeltaX", js.undefined)
     
     @scala.inline
-    def deleteMaxDelayMs: Self = this.set("maxDelayMs", js.undefined)
+    def setMaxDeltaY(value: Double): Self = StObject.set(x, "maxDeltaY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDeltaX(value: Double): Self = this.set("maxDeltaX", value.asInstanceOf[js.Any])
+    def setMaxDeltaYUndefined: Self = StObject.set(x, "maxDeltaY", js.undefined)
     
     @scala.inline
-    def deleteMaxDeltaX: Self = this.set("maxDeltaX", js.undefined)
+    def setMaxDist(value: Double): Self = StObject.set(x, "maxDist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDeltaY(value: Double): Self = this.set("maxDeltaY", value.asInstanceOf[js.Any])
+    def setMaxDistUndefined: Self = StObject.set(x, "maxDist", js.undefined)
     
     @scala.inline
-    def deleteMaxDeltaY: Self = this.set("maxDeltaY", js.undefined)
+    def setMaxDurationMs(value: Double): Self = StObject.set(x, "maxDurationMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDist(value: Double): Self = this.set("maxDist", value.asInstanceOf[js.Any])
+    def setMaxDurationMsUndefined: Self = StObject.set(x, "maxDurationMs", js.undefined)
     
     @scala.inline
-    def deleteMaxDist: Self = this.set("maxDist", js.undefined)
+    def setMinPointers(value: Double): Self = StObject.set(x, "minPointers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDurationMs(value: Double): Self = this.set("maxDurationMs", value.asInstanceOf[js.Any])
+    def setMinPointersUndefined: Self = StObject.set(x, "minPointers", js.undefined)
     
     @scala.inline
-    def deleteMaxDurationMs: Self = this.set("maxDurationMs", js.undefined)
+    def setNumberOfTaps(value: Double): Self = StObject.set(x, "numberOfTaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinPointers(value: Double): Self = this.set("minPointers", value.asInstanceOf[js.Any])
+    def setNumberOfTapsUndefined: Self = StObject.set(x, "numberOfTaps", js.undefined)
     
     @scala.inline
-    def deleteMinPointers: Self = this.set("minPointers", js.undefined)
+    def setOnGestureEvent(value: /* event */ TapGestureHandlerGestureEvent => Unit): Self = StObject.set(x, "onGestureEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNumberOfTaps(value: Double): Self = this.set("numberOfTaps", value.asInstanceOf[js.Any])
+    def setOnGestureEventUndefined: Self = StObject.set(x, "onGestureEvent", js.undefined)
     
     @scala.inline
-    def deleteNumberOfTaps: Self = this.set("numberOfTaps", js.undefined)
+    def setOnHandlerStateChange(value: /* event */ TapGestureHandlerStateChangeEvent => Unit): Self = StObject.set(x, "onHandlerStateChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnGestureEvent(value: /* event */ TapGestureHandlerGestureEvent => Unit): Self = this.set("onGestureEvent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnGestureEvent: Self = this.set("onGestureEvent", js.undefined)
-    
-    @scala.inline
-    def setOnHandlerStateChange(value: /* event */ TapGestureHandlerStateChangeEvent => Unit): Self = this.set("onHandlerStateChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnHandlerStateChange: Self = this.set("onHandlerStateChange", js.undefined)
+    def setOnHandlerStateChangeUndefined: Self = StObject.set(x, "onHandlerStateChange", js.undefined)
   }
 }

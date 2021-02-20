@@ -1,11 +1,12 @@
 package typings.zingchart.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Async extends js.Object {
+trait Async extends StObject {
   
   /**
     * Sets the transparency of the object. Values must range between 0.0 and 1.0, with 0.0 being completely invisible and 1.0 being comp
@@ -56,72 +57,60 @@ object Async {
   }
   
   @scala.inline
-  implicit class AsyncOps[Self <: Async] (val x: Self) extends AnyVal {
+  implicit class AsyncMutableBuilder[Self <: Async] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
     @scala.inline
-    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
     
     @scala.inline
-    def deleteAsync: Self = this.set("async", js.undefined)
+    def `setBrush-typebrushType`(value: String): Self = StObject.set(x, "brush-typebrushType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlur(value: Double): Self = this.set("blur", value.asInstanceOf[js.Any])
+    def `setBrush-typebrushTypeUndefined`: Self = StObject.set(x, "brush-typebrushType", js.undefined)
     
     @scala.inline
-    def deleteBlur: Self = this.set("blur", js.undefined)
+    def setComposite(value: Boolean): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBrush-typebrushType`(value: String): Self = this.set("brush-typebrushType", value.asInstanceOf[js.Any])
+    def setCompositeUndefined: Self = StObject.set(x, "composite", js.undefined)
     
     @scala.inline
-    def `deleteBrush-typebrushType`: Self = this.set("brush-typebrushType", js.undefined)
+    def setGraph(value: KeyscalekeyScale): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComposite(value: Boolean): Self = this.set("composite", value.asInstanceOf[js.Any])
+    def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
     
     @scala.inline
-    def deleteComposite: Self = this.set("composite", js.undefined)
+    def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraph(value: KeyscalekeyScale): Self = this.set("graph", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteGraph: Self = this.set("graph", js.undefined)
+    def `setSort-datasortData`(value: Boolean): Self = StObject.set(x, "sort-datasortData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: js.Any): Self = this.set("size", value.asInstanceOf[js.Any])
+    def `setSort-datasortDataUndefined`: Self = StObject.set(x, "sort-datasortData", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setTooltip(value: Backgroundfit): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSort-datasortData`(value: Boolean): Self = this.set("sort-datasortData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteSort-datasortData`: Self = this.set("sort-datasortData", js.undefined)
-    
-    @scala.inline
-    def setTooltip(value: Backgroundfit): Self = this.set("tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

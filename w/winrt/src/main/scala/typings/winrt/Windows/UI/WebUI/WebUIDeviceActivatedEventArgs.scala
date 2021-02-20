@@ -4,6 +4,7 @@ import typings.winrt.Windows.ApplicationModel.Activation.ActivationKind
 import typings.winrt.Windows.ApplicationModel.Activation.ApplicationExecutionState
 import typings.winrt.Windows.ApplicationModel.Activation.IDeviceActivatedEventArgs
 import typings.winrt.Windows.ApplicationModel.Activation.SplashScreen
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

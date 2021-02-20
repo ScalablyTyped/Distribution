@@ -1,11 +1,12 @@
 package typings.awsSdk.workmailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetMailboxDetailsResponse extends js.Object {
+trait GetMailboxDetailsResponse extends StObject {
   
   /**
     * The maximum allowed mailbox size, in MB, for the specified user.
@@ -26,30 +27,18 @@ object GetMailboxDetailsResponse {
   }
   
   @scala.inline
-  implicit class GetMailboxDetailsResponseOps[Self <: GetMailboxDetailsResponse] (val x: Self) extends AnyVal {
+  implicit class GetMailboxDetailsResponseMutableBuilder[Self <: GetMailboxDetailsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMailboxQuota(value: MailboxQuota): Self = StObject.set(x, "MailboxQuota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMailboxQuotaUndefined: Self = StObject.set(x, "MailboxQuota", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMailboxSize(value: MailboxSize): Self = StObject.set(x, "MailboxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMailboxQuota(value: MailboxQuota): Self = this.set("MailboxQuota", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMailboxQuota: Self = this.set("MailboxQuota", js.undefined)
-    
-    @scala.inline
-    def setMailboxSize(value: MailboxSize): Self = this.set("MailboxSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMailboxSize: Self = this.set("MailboxSize", js.undefined)
+    def setMailboxSizeUndefined: Self = StObject.set(x, "MailboxSize", js.undefined)
   }
 }

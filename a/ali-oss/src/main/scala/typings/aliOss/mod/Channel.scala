@@ -1,11 +1,12 @@
 package typings.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Channel extends js.Object {
+trait Channel extends StObject {
   
   var Description: String = js.native
   
@@ -35,42 +36,30 @@ object Channel {
   }
   
   @scala.inline
-  implicit class ChannelOps[Self <: Channel] (val x: Self) extends AnyVal {
+  implicit class ChannelMutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastModified(value: String): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setPlayUrls(value: js.Array[String]): Self = StObject.set(x, "PlayUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModified(value: String): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    def setPlayUrlsVarargs(value: String*): Self = StObject.set(x, "PlayUrls", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPublishUrls(value: js.Array[String]): Self = StObject.set(x, "PublishUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayUrlsVarargs(value: String*): Self = this.set("PlayUrls", js.Array(value :_*))
+    def setPublishUrlsVarargs(value: String*): Self = StObject.set(x, "PublishUrls", js.Array(value :_*))
     
     @scala.inline
-    def setPlayUrls(value: js.Array[String]): Self = this.set("PlayUrls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublishUrlsVarargs(value: String*): Self = this.set("PublishUrls", js.Array(value :_*))
-    
-    @scala.inline
-    def setPublishUrls(value: js.Array[String]): Self = this.set("PublishUrls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

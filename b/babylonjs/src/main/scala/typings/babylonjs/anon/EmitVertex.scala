@@ -1,12 +1,13 @@
 package typings.babylonjs.anon
 
 import typings.babylonjs.BABYLON.NodeMaterialConnectionPoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmitVertex extends js.Object {
+trait EmitVertex extends StObject {
   
   var emitFragment: Boolean = js.native
   
@@ -27,30 +28,18 @@ object EmitVertex {
   }
   
   @scala.inline
-  implicit class EmitVertexOps[Self <: EmitVertex] (val x: Self) extends AnyVal {
+  implicit class EmitVertexMutableBuilder[Self <: EmitVertex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmitFragment(value: Boolean): Self = StObject.set(x, "emitFragment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmitVertex(value: Boolean): Self = StObject.set(x, "emitVertex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotConnectedNonOptionalInputs(value: js.Array[NodeMaterialConnectionPoint]): Self = StObject.set(x, "notConnectedNonOptionalInputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmitFragment(value: Boolean): Self = this.set("emitFragment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEmitVertex(value: Boolean): Self = this.set("emitVertex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotConnectedNonOptionalInputsVarargs(value: NodeMaterialConnectionPoint*): Self = this.set("notConnectedNonOptionalInputs", js.Array(value :_*))
-    
-    @scala.inline
-    def setNotConnectedNonOptionalInputs(value: js.Array[NodeMaterialConnectionPoint]): Self = this.set("notConnectedNonOptionalInputs", value.asInstanceOf[js.Any])
+    def setNotConnectedNonOptionalInputsVarargs(value: NodeMaterialConnectionPoint*): Self = StObject.set(x, "notConnectedNonOptionalInputs", js.Array(value :_*))
   }
 }

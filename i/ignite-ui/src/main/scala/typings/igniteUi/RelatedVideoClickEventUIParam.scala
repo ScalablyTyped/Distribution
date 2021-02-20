@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RelatedVideoClickEventUIParam extends js.Object {
+trait RelatedVideoClickEventUIParam extends StObject {
   
   /**
     * Get the relatedVideo object from the relatedVideos array.
@@ -26,30 +27,18 @@ object RelatedVideoClickEventUIParam {
   }
   
   @scala.inline
-  implicit class RelatedVideoClickEventUIParamOps[Self <: RelatedVideoClickEventUIParam] (val x: Self) extends AnyVal {
+  implicit class RelatedVideoClickEventUIParamMutableBuilder[Self <: RelatedVideoClickEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRelatedVideo(value: js.Any): Self = StObject.set(x, "relatedVideo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRelatedVideoElement(value: js.Any): Self = StObject.set(x, "relatedVideoElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelatedVideoElementUndefined: Self = StObject.set(x, "relatedVideoElement", js.undefined)
     
     @scala.inline
-    def setRelatedVideo(value: js.Any): Self = this.set("relatedVideo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelatedVideo: Self = this.set("relatedVideo", js.undefined)
-    
-    @scala.inline
-    def setRelatedVideoElement(value: js.Any): Self = this.set("relatedVideoElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelatedVideoElement: Self = this.set("relatedVideoElement", js.undefined)
+    def setRelatedVideoUndefined: Self = StObject.set(x, "relatedVideo", js.undefined)
   }
 }

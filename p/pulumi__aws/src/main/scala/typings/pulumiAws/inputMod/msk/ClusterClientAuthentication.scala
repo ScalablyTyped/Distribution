@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.msk
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterClientAuthentication extends js.Object {
+trait ClusterClientAuthentication extends StObject {
   
   /**
     * Configuration block for specifying TLS client authentication. See below.
@@ -22,24 +23,12 @@ object ClusterClientAuthentication {
   }
   
   @scala.inline
-  implicit class ClusterClientAuthenticationOps[Self <: ClusterClientAuthentication] (val x: Self) extends AnyVal {
+  implicit class ClusterClientAuthenticationMutableBuilder[Self <: ClusterClientAuthentication] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTls(value: Input[ClusterClientAuthenticationTls]): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTls(value: Input[ClusterClientAuthenticationTls]): Self = this.set("tls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTls: Self = this.set("tls", js.undefined)
+    def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
   }
 }

@@ -1,56 +1,48 @@
 package typings.reactNativeNavigation.optionsMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait OptionsModalPresentationStyle extends js.Object
+sealed trait OptionsModalPresentationStyle extends StObject
 @JSImport("react-native-navigation/lib/dist/interfaces/Options", "OptionsModalPresentationStyle")
 @js.native
-object OptionsModalPresentationStyle extends js.Object {
+object OptionsModalPresentationStyle extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[OptionsModalPresentationStyle with String] = js.native
   
   @js.native
   sealed trait currentContext extends OptionsModalPresentationStyle
-  /* "currentContext" */ @js.native
-  object currentContext extends TopLevel[currentContext with String]
+  /* "currentContext" */ val currentContext: typings.reactNativeNavigation.optionsMod.OptionsModalPresentationStyle.currentContext with String = js.native
   
   @js.native
   sealed trait formSheet extends OptionsModalPresentationStyle
-  /* "formSheet" */ @js.native
-  object formSheet extends TopLevel[formSheet with String]
+  /* "formSheet" */ val formSheet: typings.reactNativeNavigation.optionsMod.OptionsModalPresentationStyle.formSheet with String = js.native
   
   @js.native
   sealed trait fullScreen extends OptionsModalPresentationStyle
-  /* "fullScreen" */ @js.native
-  object fullScreen extends TopLevel[fullScreen with String]
+  /* "fullScreen" */ val fullScreen: typings.reactNativeNavigation.optionsMod.OptionsModalPresentationStyle.fullScreen with String = js.native
   
   @js.native
   sealed trait none extends OptionsModalPresentationStyle
-  /* "none" */ @js.native
-  object none extends TopLevel[none with String]
+  /* "none" */ val none: typings.reactNativeNavigation.optionsMod.OptionsModalPresentationStyle.none with String = js.native
   
   @js.native
   sealed trait overCurrentContext extends OptionsModalPresentationStyle
-  /* "overCurrentContext" */ @js.native
-  object overCurrentContext extends TopLevel[overCurrentContext with String]
+  /* "overCurrentContext" */ val overCurrentContext: typings.reactNativeNavigation.optionsMod.OptionsModalPresentationStyle.overCurrentContext with String = js.native
   
   @js.native
   sealed trait overFullScreen extends OptionsModalPresentationStyle
-  /* "overFullScreen" */ @js.native
-  object overFullScreen extends TopLevel[overFullScreen with String]
+  /* "overFullScreen" */ val overFullScreen: typings.reactNativeNavigation.optionsMod.OptionsModalPresentationStyle.overFullScreen with String = js.native
   
   @js.native
   sealed trait pageSheet extends OptionsModalPresentationStyle
-  /* "pageSheet" */ @js.native
-  object pageSheet extends TopLevel[pageSheet with String]
+  /* "pageSheet" */ val pageSheet: typings.reactNativeNavigation.optionsMod.OptionsModalPresentationStyle.pageSheet with String = js.native
   
   @js.native
   sealed trait popover extends OptionsModalPresentationStyle
-  /* "popover" */ @js.native
-  object popover extends TopLevel[popover with String]
+  /* "popover" */ val popover: typings.reactNativeNavigation.optionsMod.OptionsModalPresentationStyle.popover with String = js.native
 }

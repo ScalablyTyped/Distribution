@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.listReelMediaViewerFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListReelMediaViewerFeedResponseChatSticker extends js.Object {
+trait ListReelMediaViewerFeedResponseChatSticker extends StObject {
   
   var end_background_color: String = js.native
   
@@ -38,39 +39,27 @@ object ListReelMediaViewerFeedResponseChatSticker {
   }
   
   @scala.inline
-  implicit class ListReelMediaViewerFeedResponseChatStickerOps[Self <: ListReelMediaViewerFeedResponseChatSticker] (val x: Self) extends AnyVal {
+  implicit class ListReelMediaViewerFeedResponseChatStickerMutableBuilder[Self <: ListReelMediaViewerFeedResponseChatSticker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd_background_color(value: String): Self = StObject.set(x, "end_background_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHas_started_chat(value: Boolean): Self = StObject.set(x, "has_started_chat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStart_background_color(value: String): Self = StObject.set(x, "start_background_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_background_color(value: String): Self = this.set("end_background_color", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas_started_chat(value: Boolean): Self = this.set("has_started_chat", value.asInstanceOf[js.Any])
+    def setStory_chat_id(value: String): Self = StObject.set(x, "story_chat_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart_background_color(value: String): Self = this.set("start_background_color", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStory_chat_id(value: String): Self = this.set("story_chat_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThread_id(value: String): Self = this.set("thread_id", value.asInstanceOf[js.Any])
+    def setThread_id(value: String): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
   }
 }

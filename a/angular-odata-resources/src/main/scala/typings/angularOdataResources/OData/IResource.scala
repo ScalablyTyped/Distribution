@@ -1,5 +1,6 @@
 package typings.angularOdataResources.OData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Instance calls always return the the promise of the request which retrieved the object
 // https://github.com/angular/angular.js/blob/v1.2.0/src/ngResource/resource.js#L538-L546
 @js.native
-trait IResource[T] extends js.Object {
+trait IResource[T] extends StObject {
   
   @JSName("$delete")
   def $delete(): js.Any = js.native

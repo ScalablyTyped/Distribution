@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkProfileData extends js.Object {
+trait NetworkProfileData extends StObject {
   
   /**
     * The ARN of the Private Certificate Authority (PCA) created in AWS Certificate Manager (ACM). This is used to issue certificates to the devices.
@@ -51,60 +52,48 @@ object NetworkProfileData {
   }
   
   @scala.inline
-  implicit class NetworkProfileDataOps[Self <: NetworkProfileData] (val x: Self) extends AnyVal {
+  implicit class NetworkProfileDataMutableBuilder[Self <: NetworkProfileData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateAuthorityArnUndefined: Self = StObject.set(x, "CertificateAuthorityArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: NetworkProfileDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateAuthorityArn(value: Arn): Self = this.set("CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCertificateAuthorityArn: Self = this.set("CertificateAuthorityArn", js.undefined)
+    def setEapMethod(value: NetworkEapMethod): Self = StObject.set(x, "EapMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: NetworkProfileDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEapMethodUndefined: Self = StObject.set(x, "EapMethod", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setNetworkProfileArn(value: Arn): Self = StObject.set(x, "NetworkProfileArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEapMethod(value: NetworkEapMethod): Self = this.set("EapMethod", value.asInstanceOf[js.Any])
+    def setNetworkProfileArnUndefined: Self = StObject.set(x, "NetworkProfileArn", js.undefined)
     
     @scala.inline
-    def deleteEapMethod: Self = this.set("EapMethod", js.undefined)
+    def setNetworkProfileName(value: NetworkProfileName): Self = StObject.set(x, "NetworkProfileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkProfileArn(value: Arn): Self = this.set("NetworkProfileArn", value.asInstanceOf[js.Any])
+    def setNetworkProfileNameUndefined: Self = StObject.set(x, "NetworkProfileName", js.undefined)
     
     @scala.inline
-    def deleteNetworkProfileArn: Self = this.set("NetworkProfileArn", js.undefined)
+    def setSecurityType(value: NetworkSecurityType): Self = StObject.set(x, "SecurityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkProfileName(value: NetworkProfileName): Self = this.set("NetworkProfileName", value.asInstanceOf[js.Any])
+    def setSecurityTypeUndefined: Self = StObject.set(x, "SecurityType", js.undefined)
     
     @scala.inline
-    def deleteNetworkProfileName: Self = this.set("NetworkProfileName", js.undefined)
+    def setSsid(value: NetworkSsid): Self = StObject.set(x, "Ssid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityType(value: NetworkSecurityType): Self = this.set("SecurityType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityType: Self = this.set("SecurityType", js.undefined)
-    
-    @scala.inline
-    def setSsid(value: NetworkSsid): Self = this.set("Ssid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsid: Self = this.set("Ssid", js.undefined)
+    def setSsidUndefined: Self = StObject.set(x, "Ssid", js.undefined)
   }
 }

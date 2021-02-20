@@ -8,12 +8,13 @@ import typings.sharepoint.SP.JsGrid.IStyleType.TimescaleTier
 import typings.sharepoint.SP.JsGrid.IStyleType.Widget
 import typings.sharepoint.anon.AllSelected
 import typings.sharepoint.anon.Dra
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStyleManager extends js.Object {
+trait IStyleManager extends StObject {
   
   def GetCellStyle(styleId: String): Cell = js.native
   
@@ -82,78 +83,66 @@ object IStyleManager {
   }
   
   @scala.inline
-  implicit class IStyleManagerOps[Self <: IStyleManager] (val x: Self) extends AnyVal {
+  implicit class IStyleManagerMutableBuilder[Self <: IStyleManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnHeaderStyleCollection(value: AllSelected): Self = StObject.set(x, "columnHeaderStyleCollection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultCellStyle(value: Cell): Self = StObject.set(x, "defaultCellStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCellStyle(value: String => Cell): Self = StObject.set(x, "GetCellStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCellStyle(value: String => Cell): Self = this.set("GetCellStyle", js.Any.fromFunction1(value))
+    def setGridPaneStyle(value: GridPane): Self = StObject.set(x, "gridPaneStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegisterCellStyle(value: (String, Cell) => Unit): Self = this.set("RegisterCellStyle", js.Any.fromFunction2(value))
+    def setGroupingStyles(value: js.Array[_]): Self = StObject.set(x, "groupingStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateDefaultCellStyleFromCss(value: (Cell, String) => Unit): Self = this.set("UpdateDefaultCellStyleFromCss", js.Any.fromFunction2(value))
+    def setGroupingStylesVarargs(value: js.Any*): Self = StObject.set(x, "groupingStyles", js.Array(value :_*))
     
     @scala.inline
-    def setUpdateGridPaneStyleFromCss(value: (GridPane, js.Any) => Unit): Self = this.set("UpdateGridPaneStyleFromCss", js.Any.fromFunction2(value))
+    def setReadOnlyCellStyle(value: Cell): Self = StObject.set(x, "readOnlyCellStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateGroupStylesFromCss(value: (Cell, String) => Unit): Self = this.set("UpdateGroupStylesFromCss", js.Any.fromFunction2(value))
+    def setReadOnlyFocusedCellStyle(value: Cell): Self = StObject.set(x, "readOnlyFocusedCellStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateHeaderStyleFromCss(value: (Header, js.Any) => Unit): Self = this.set("UpdateHeaderStyleFromCss", js.Any.fromFunction2(value))
+    def setRegisterCellStyle(value: (String, Cell) => Unit): Self = StObject.set(x, "RegisterCellStyle", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUpdateSplitterStyleFromCss(value: (Splitter, js.Any) => Unit): Self = this.set("UpdateSplitterStyleFromCss", js.Any.fromFunction2(value))
+    def setRowHeaderStyleCollection(value: AllSelected): Self = StObject.set(x, "rowHeaderStyleCollection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnHeaderStyleCollection(value: AllSelected): Self = this.set("columnHeaderStyleCollection", value.asInstanceOf[js.Any])
+    def setSplitterStyleCollection(value: Dra): Self = StObject.set(x, "splitterStyleCollection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCellStyle(value: Cell): Self = this.set("defaultCellStyle", value.asInstanceOf[js.Any])
+    def setTimescaleTierStyle(value: TimescaleTier): Self = StObject.set(x, "timescaleTierStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridPaneStyle(value: GridPane): Self = this.set("gridPaneStyle", value.asInstanceOf[js.Any])
+    def setUpdateDefaultCellStyleFromCss(value: (Cell, String) => Unit): Self = StObject.set(x, "UpdateDefaultCellStyleFromCss", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGroupingStylesVarargs(value: js.Any*): Self = this.set("groupingStyles", js.Array(value :_*))
+    def setUpdateGridPaneStyleFromCss(value: (GridPane, js.Any) => Unit): Self = StObject.set(x, "UpdateGridPaneStyleFromCss", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGroupingStyles(value: js.Array[_]): Self = this.set("groupingStyles", value.asInstanceOf[js.Any])
+    def setUpdateGroupStylesFromCss(value: (Cell, String) => Unit): Self = StObject.set(x, "UpdateGroupStylesFromCss", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setReadOnlyCellStyle(value: Cell): Self = this.set("readOnlyCellStyle", value.asInstanceOf[js.Any])
+    def setUpdateHeaderStyleFromCss(value: (Header, js.Any) => Unit): Self = StObject.set(x, "UpdateHeaderStyleFromCss", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setReadOnlyFocusedCellStyle(value: Cell): Self = this.set("readOnlyFocusedCellStyle", value.asInstanceOf[js.Any])
+    def setUpdateSplitterStyleFromCss(value: (Splitter, js.Any) => Unit): Self = StObject.set(x, "UpdateSplitterStyleFromCss", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRowHeaderStyleCollection(value: AllSelected): Self = this.set("rowHeaderStyleCollection", value.asInstanceOf[js.Any])
+    def setWidgetDockHoverStyle(value: Widget): Self = StObject.set(x, "widgetDockHoverStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplitterStyleCollection(value: Dra): Self = this.set("splitterStyleCollection", value.asInstanceOf[js.Any])
+    def setWidgetDockPressedStyle(value: Widget): Self = StObject.set(x, "widgetDockPressedStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimescaleTierStyle(value: TimescaleTier): Self = this.set("timescaleTierStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidgetDockHoverStyle(value: Widget): Self = this.set("widgetDockHoverStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidgetDockPressedStyle(value: Widget): Self = this.set("widgetDockPressedStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidgetDockStyle(value: Widget): Self = this.set("widgetDockStyle", value.asInstanceOf[js.Any])
+    def setWidgetDockStyle(value: Widget): Self = StObject.set(x, "widgetDockStyle", value.asInstanceOf[js.Any])
   }
 }

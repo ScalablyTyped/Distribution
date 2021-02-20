@@ -2,6 +2,7 @@ package typings.grunt.grunt
 
 import typings.grunt.grunt.config.ConfigModule
 import typings.grunt.grunt.config.IProjectConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

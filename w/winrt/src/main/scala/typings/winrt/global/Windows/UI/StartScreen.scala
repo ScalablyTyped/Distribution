@@ -4,16 +4,16 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.UI.StartScreen.TileOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.StartScreen")
-@js.native
-object StartScreen extends js.Object {
+object StartScreen {
   
+  @JSGlobal("Windows.UI.StartScreen.ForegroundText")
   @js.native
-  object ForegroundText extends js.Object {
+  object ForegroundText extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.UI.StartScreen.ForegroundText with Double] = js.native
@@ -23,6 +23,7 @@ object StartScreen extends js.Object {
     /* 1 */ val light: typings.winrt.Windows.UI.StartScreen.ForegroundText.light with Double = js.native
   }
   
+  @JSGlobal("Windows.UI.StartScreen.SecondaryTile")
   @js.native
   class SecondaryTile ()
     extends typings.winrt.Windows.UI.StartScreen.SecondaryTile {
@@ -46,19 +47,27 @@ object StartScreen extends js.Object {
     ) = this()
   }
   /* static members */
-  @js.native
-  object SecondaryTile extends js.Object {
+  object SecondaryTile {
     
+    @JSGlobal("Windows.UI.StartScreen.SecondaryTile.exists")
+    @js.native
     def exists(tileId: String): Boolean = js.native
     
+    @JSGlobal("Windows.UI.StartScreen.SecondaryTile.findAllAsync")
+    @js.native
     def findAllAsync(): IAsyncOperation[IVectorView[typings.winrt.Windows.UI.StartScreen.SecondaryTile]] = js.native
+    @JSGlobal("Windows.UI.StartScreen.SecondaryTile.findAllAsync")
+    @js.native
     def findAllAsync(applicationId: String): IAsyncOperation[IVectorView[typings.winrt.Windows.UI.StartScreen.SecondaryTile]] = js.native
     
+    @JSGlobal("Windows.UI.StartScreen.SecondaryTile.findAllForPackageAsync")
+    @js.native
     def findAllForPackageAsync(): IAsyncOperation[IVectorView[typings.winrt.Windows.UI.StartScreen.SecondaryTile]] = js.native
   }
   
+  @JSGlobal("Windows.UI.StartScreen.TileOptions")
   @js.native
-  object TileOptions extends js.Object {
+  object TileOptions extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.UI.StartScreen.TileOptions with Double] = js.native

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "vega-embed" : "6.13.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "vega-embed" : "6.13.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

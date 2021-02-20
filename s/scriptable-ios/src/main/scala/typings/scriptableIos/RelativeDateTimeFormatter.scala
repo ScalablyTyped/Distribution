@@ -1,6 +1,7 @@
 package typings.scriptableIos
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/relativedatetimeformatter/#-new-relativedatetimeformatter
   */
 @js.native
-trait RelativeDateTimeFormatter extends js.Object {
+trait RelativeDateTimeFormatter extends StObject {
   
   /**
     * _Locale to use when formatting._
@@ -67,30 +68,18 @@ object RelativeDateTimeFormatter {
   }
   
   @scala.inline
-  implicit class RelativeDateTimeFormatterOps[Self <: RelativeDateTimeFormatter] (val x: Self) extends AnyVal {
+  implicit class RelativeDateTimeFormatterMutableBuilder[Self <: RelativeDateTimeFormatter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setString(value: (Date, Date) => String): Self = StObject.set(x, "string", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUseNamedDateTimeStyle(value: () => Unit): Self = StObject.set(x, "useNamedDateTimeStyle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setString(value: (Date, Date) => String): Self = this.set("string", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUseNamedDateTimeStyle(value: () => Unit): Self = this.set("useNamedDateTimeStyle", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUseNumericDateTimeStyle(value: () => Unit): Self = this.set("useNumericDateTimeStyle", js.Any.fromFunction0(value))
+    def setUseNumericDateTimeStyle(value: () => Unit): Self = StObject.set(x, "useNumericDateTimeStyle", js.Any.fromFunction0(value))
   }
 }

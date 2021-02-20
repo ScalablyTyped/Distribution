@@ -3,12 +3,13 @@ package typings.dockerode.mod
 import typings.dockerode.anon.Details
 import typings.dockerode.anon.NameString
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DockerVersion extends js.Object {
+trait DockerVersion extends StObject {
   
   var ApiVersion: String = js.native
   
@@ -53,54 +54,42 @@ object DockerVersion {
   }
   
   @scala.inline
-  implicit class DockerVersionOps[Self <: DockerVersion] (val x: Self) extends AnyVal {
+  implicit class DockerVersionMutableBuilder[Self <: DockerVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiVersion(value: String): Self = StObject.set(x, "ApiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArch(value: String): Self = StObject.set(x, "Arch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuildTime(value: Date): Self = StObject.set(x, "BuildTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiVersion(value: String): Self = this.set("ApiVersion", value.asInstanceOf[js.Any])
+    def setComponents(value: js.Array[Details]): Self = StObject.set(x, "Components", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArch(value: String): Self = this.set("Arch", value.asInstanceOf[js.Any])
+    def setComponentsVarargs(value: Details*): Self = StObject.set(x, "Components", js.Array(value :_*))
     
     @scala.inline
-    def setBuildTime(value: Date): Self = this.set("BuildTime", value.asInstanceOf[js.Any])
+    def setGitCommit(value: String): Self = StObject.set(x, "GitCommit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentsVarargs(value: Details*): Self = this.set("Components", js.Array(value :_*))
+    def setGoVersion(value: String): Self = StObject.set(x, "GoVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponents(value: js.Array[Details]): Self = this.set("Components", value.asInstanceOf[js.Any])
+    def setKernelVersion(value: String): Self = StObject.set(x, "KernelVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGitCommit(value: String): Self = this.set("GitCommit", value.asInstanceOf[js.Any])
+    def setMinAPIVersion(value: String): Self = StObject.set(x, "MinAPIVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoVersion(value: String): Self = this.set("GoVersion", value.asInstanceOf[js.Any])
+    def setOs(value: String): Self = StObject.set(x, "Os", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKernelVersion(value: String): Self = this.set("KernelVersion", value.asInstanceOf[js.Any])
+    def setPlatform(value: NameString): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinAPIVersion(value: String): Self = this.set("MinAPIVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOs(value: String): Self = this.set("Os", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlatform(value: NameString): Self = this.set("Platform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("Version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

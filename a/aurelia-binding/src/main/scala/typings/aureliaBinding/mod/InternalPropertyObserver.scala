@@ -1,11 +1,12 @@
 package typings.aureliaBinding.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InternalPropertyObserver extends js.Object {
+trait InternalPropertyObserver extends StObject {
   
   /**
     * Gets the property value.

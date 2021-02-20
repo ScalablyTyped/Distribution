@@ -5,12 +5,13 @@ import typings.csstype.mod.BackgroundPositionProperty
 import typings.csstype.mod.VerticalAlignProperty
 import typings.mjmlReact.mjmlReactStrings.`fixed-height`
 import typings.mjmlReact.mjmlReactStrings.`fluid-height`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MjmlHeroProps extends js.Object {
+trait MjmlHeroProps extends StObject {
   
   var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.native
   
@@ -39,72 +40,60 @@ object MjmlHeroProps {
   }
   
   @scala.inline
-  implicit class MjmlHeroPropsOps[Self <: MjmlHeroProps] (val x: Self) extends AnyVal {
+  implicit class MjmlHeroPropsMutableBuilder[Self <: MjmlHeroProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: BackgroundColorProperty): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundHeight(value: String): Self = StObject.set(x, "backgroundHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: BackgroundColorProperty): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBackgroundHeightUndefined: Self = StObject.set(x, "backgroundHeight", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setBackgroundPosition(value: BackgroundPositionProperty[String | Double]): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundHeight(value: String): Self = this.set("backgroundHeight", value.asInstanceOf[js.Any])
+    def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
     
     @scala.inline
-    def deleteBackgroundHeight: Self = this.set("backgroundHeight", js.undefined)
+    def setBackgroundUrl(value: String): Self = StObject.set(x, "backgroundUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundPosition(value: BackgroundPositionProperty[String | Double]): Self = this.set("backgroundPosition", value.asInstanceOf[js.Any])
+    def setBackgroundUrlUndefined: Self = StObject.set(x, "backgroundUrl", js.undefined)
     
     @scala.inline
-    def deleteBackgroundPosition: Self = this.set("backgroundPosition", js.undefined)
+    def setBackgroundWidth(value: String): Self = StObject.set(x, "backgroundWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundUrl(value: String): Self = this.set("backgroundUrl", value.asInstanceOf[js.Any])
+    def setBackgroundWidthUndefined: Self = StObject.set(x, "backgroundWidth", js.undefined)
     
     @scala.inline
-    def deleteBackgroundUrl: Self = this.set("backgroundUrl", js.undefined)
+    def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundWidth(value: String): Self = this.set("backgroundWidth", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteBackgroundWidth: Self = this.set("backgroundWidth", js.undefined)
+    def setMode(value: `fluid-height` | `fixed-height`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setVerticalAlign(value: VerticalAlignProperty[String | Double]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: `fluid-height` | `fixed-height`): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalAlign(value: VerticalAlignProperty[String | Double]): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

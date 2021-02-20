@@ -2,12 +2,13 @@ package typings.formatjsEcma402Abstract.numberMod
 
 import typings.formatjsEcma402Abstract.anon.Standard
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RawNumberData extends js.Object {
+trait RawNumberData extends StObject {
   
   var currency: Record[NumberingSystem, RawCurrencyData] = js.native
   
@@ -34,36 +35,24 @@ object RawNumberData {
   }
   
   @scala.inline
-  implicit class RawNumberDataOps[Self <: RawNumberData] (val x: Self) extends AnyVal {
+  implicit class RawNumberDataMutableBuilder[Self <: RawNumberData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrency(value: Record[NumberingSystem, RawCurrencyData]): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecimal(value: Record[NumberingSystem, Standard]): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNu(value: js.Array[String]): Self = StObject.set(x, "nu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrency(value: Record[NumberingSystem, RawCurrencyData]): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setNuVarargs(value: String*): Self = StObject.set(x, "nu", js.Array(value :_*))
     
     @scala.inline
-    def setDecimal(value: Record[NumberingSystem, Standard]): Self = this.set("decimal", value.asInstanceOf[js.Any])
+    def setPercent(value: Record[NumberingSystem, String]): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNuVarargs(value: String*): Self = this.set("nu", js.Array(value :_*))
-    
-    @scala.inline
-    def setNu(value: js.Array[String]): Self = this.set("nu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPercent(value: Record[NumberingSystem, String]): Self = this.set("percent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbols(value: Record[NumberingSystem, SymbolsData]): Self = this.set("symbols", value.asInstanceOf[js.Any])
+    def setSymbols(value: Record[NumberingSystem, SymbolsData]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
   }
 }

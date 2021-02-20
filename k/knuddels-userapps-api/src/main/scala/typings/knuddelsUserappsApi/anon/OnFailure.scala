@@ -1,12 +1,13 @@
 package typings.knuddelsUserappsApi.anon
 
 import typings.knuddelsUserappsApi.mod.global.ExternalServerResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnFailure extends js.Object {
+trait OnFailure extends StObject {
   
   var onFailure: js.UndefOr[
     js.Function2[/* responseData */ String, /* externalServerResponse */ ExternalServerResponse, Unit]
@@ -25,30 +26,18 @@ object OnFailure {
   }
   
   @scala.inline
-  implicit class OnFailureOps[Self <: OnFailure] (val x: Self) extends AnyVal {
+  implicit class OnFailureMutableBuilder[Self <: OnFailure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnFailure(value: (/* responseData */ String, /* externalServerResponse */ ExternalServerResponse) => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnSuccess(value: (/* responseData */ String, /* externalServerResponse */ ExternalServerResponse) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnFailure(value: (/* responseData */ String, /* externalServerResponse */ ExternalServerResponse) => Unit): Self = this.set("onFailure", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnFailure: Self = this.set("onFailure", js.undefined)
-    
-    @scala.inline
-    def setOnSuccess(value: (/* responseData */ String, /* externalServerResponse */ ExternalServerResponse) => Unit): Self = this.set("onSuccess", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnSuccess: Self = this.set("onSuccess", js.undefined)
+    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
   }
 }

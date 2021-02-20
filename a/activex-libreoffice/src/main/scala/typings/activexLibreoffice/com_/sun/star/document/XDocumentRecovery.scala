@@ -2,13 +2,14 @@ package typings.activexLibreoffice.com_.sun.star.document
 
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is the interface to be implemented by documents who wish to participate in the document emergency-save / recovery process. */
 @js.native
-trait XDocumentRecovery extends js.Object {
+trait XDocumentRecovery extends StObject {
   
   /**
     * recovers the document after a previous emergency or session save.
@@ -69,27 +70,15 @@ object XDocumentRecovery {
   }
   
   @scala.inline
-  implicit class XDocumentRecoveryOps[Self <: XDocumentRecovery] (val x: Self) extends AnyVal {
+  implicit class XDocumentRecoveryMutableBuilder[Self <: XDocumentRecovery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecoverFromFile(value: (String, String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "recoverFromFile", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStoreToRecoveryFile(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "storeToRecoveryFile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRecoverFromFile(value: (String, String, SeqEquiv[PropertyValue]) => Unit): Self = this.set("recoverFromFile", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setStoreToRecoveryFile(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = this.set("storeToRecoveryFile", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setWasModifiedSinceLastSave(value: () => Boolean): Self = this.set("wasModifiedSinceLastSave", js.Any.fromFunction0(value))
+    def setWasModifiedSinceLastSave(value: () => Boolean): Self = StObject.set(x, "wasModifiedSinceLastSave", js.Any.fromFunction0(value))
   }
 }

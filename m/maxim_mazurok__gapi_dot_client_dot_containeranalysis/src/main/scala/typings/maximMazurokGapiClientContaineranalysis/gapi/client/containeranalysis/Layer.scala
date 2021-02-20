@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Layer extends js.Object {
+trait Layer extends StObject {
   
   /** The recovered arguments to the Dockerfile directive. */
   var arguments: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object Layer {
   }
   
   @scala.inline
-  implicit class LayerOps[Self <: Layer] (val x: Self) extends AnyVal {
+  implicit class LayerMutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArguments(value: String): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirective(value: String): Self = StObject.set(x, "directive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArguments(value: String): Self = this.set("arguments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArguments: Self = this.set("arguments", js.undefined)
-    
-    @scala.inline
-    def setDirective(value: String): Self = this.set("directive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirective: Self = this.set("directive", js.undefined)
+    def setDirectiveUndefined: Self = StObject.set(x, "directive", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a broadcast SMS message. */
 @js.native
-trait SmsBroadcastMessage extends js.Object {
+trait SmsBroadcastMessage extends StObject {
   
   /** Gets the body of the broadcast SMS message. */
   var body: String = js.native
@@ -79,63 +80,51 @@ object SmsBroadcastMessage {
   }
   
   @scala.inline
-  implicit class SmsBroadcastMessageOps[Self <: SmsBroadcastMessage] (val x: Self) extends AnyVal {
+  implicit class SmsBroadcastMessageMutableBuilder[Self <: SmsBroadcastMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBroadcastType(value: SmsBroadcastType): Self = StObject.set(x, "broadcastType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellularClass(value: CellularClass): Self = StObject.set(x, "cellularClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBroadcastType(value: SmsBroadcastType): Self = this.set("broadcastType", value.asInstanceOf[js.Any])
+    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellularClass(value: CellularClass): Self = this.set("cellularClass", value.asInstanceOf[js.Any])
+    def setGeographicalScope(value: SmsGeographicalScope): Self = StObject.set(x, "geographicalScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannel(value: Double): Self = this.set("channel", value.asInstanceOf[js.Any])
+    def setIsEmergencyAlert(value: Boolean): Self = StObject.set(x, "isEmergencyAlert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    def setIsUserPopupRequested(value: Boolean): Self = StObject.set(x, "isUserPopupRequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeographicalScope(value: SmsGeographicalScope): Self = this.set("geographicalScope", value.asInstanceOf[js.Any])
+    def setMessageClass(value: SmsMessageClass): Self = StObject.set(x, "messageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEmergencyAlert(value: Boolean): Self = this.set("isEmergencyAlert", value.asInstanceOf[js.Any])
+    def setMessageCode(value: Double): Self = StObject.set(x, "messageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsUserPopupRequested(value: Boolean): Self = this.set("isUserPopupRequested", value.asInstanceOf[js.Any])
+    def setMessageType(value: SmsMessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageClass(value: SmsMessageClass): Self = this.set("messageClass", value.asInstanceOf[js.Any])
+    def setSimIccId(value: String): Self = StObject.set(x, "simIccId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageCode(value: Double): Self = this.set("messageCode", value.asInstanceOf[js.Any])
+    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageType(value: SmsMessageType): Self = this.set("messageType", value.asInstanceOf[js.Any])
+    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSimIccId(value: String): Self = this.set("simIccId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Date): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateNumber(value: Double): Self = this.set("updateNumber", value.asInstanceOf[js.Any])
+    def setUpdateNumber(value: Double): Self = StObject.set(x, "updateNumber", value.asInstanceOf[js.Any])
   }
 }

@@ -11,12 +11,13 @@ import typings.mathjs.mathjsStrings.sparse
 import typings.mathjs.mathjsStrings.unbiased
 import typings.mathjs.mathjsStrings.uncorrected
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MathJsChain extends js.Object {
+trait MathJsChain extends StObject {
   
   /*************************************************************************
     * Arithmetic functions

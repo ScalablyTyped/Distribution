@@ -1,12 +1,13 @@
 package typings.angularRouter.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UrlMatchResult extends js.Object {
+trait UrlMatchResult extends StObject {
   
   var consumed: js.Array[UrlSegment] = js.native
   
@@ -21,30 +22,18 @@ object UrlMatchResult {
   }
   
   @scala.inline
-  implicit class UrlMatchResultOps[Self <: UrlMatchResult] (val x: Self) extends AnyVal {
+  implicit class UrlMatchResultMutableBuilder[Self <: UrlMatchResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumed(value: js.Array[UrlSegment]): Self = StObject.set(x, "consumed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumedVarargs(value: UrlSegment*): Self = StObject.set(x, "consumed", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPosParams(value: StringDictionary[UrlSegment]): Self = StObject.set(x, "posParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumedVarargs(value: UrlSegment*): Self = this.set("consumed", js.Array(value :_*))
-    
-    @scala.inline
-    def setConsumed(value: js.Array[UrlSegment]): Self = this.set("consumed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosParams(value: StringDictionary[UrlSegment]): Self = this.set("posParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosParams: Self = this.set("posParams", js.undefined)
+    def setPosParamsUndefined: Self = StObject.set(x, "posParams", js.undefined)
   }
 }

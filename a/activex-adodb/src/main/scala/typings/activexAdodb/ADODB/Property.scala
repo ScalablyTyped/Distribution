@@ -1,11 +1,12 @@
 package typings.activexAdodb.ADODB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Property extends js.Object {
+trait Property extends StObject {
   
   @JSName("ADODB.Property_typekey")
   var ADODBDotProperty_typekey: Property = js.native
@@ -35,33 +36,21 @@ object Property {
   }
   
   @scala.inline
-  implicit class PropertyOps[Self <: Property] (val x: Self) extends AnyVal {
+  implicit class PropertyMutableBuilder[Self <: Property] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setADODBDotProperty_typekey(value: Property): Self = StObject.set(x, "ADODB.Property_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributes(value: PropertyAttributesEnum): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setADODBDotProperty_typekey(value: Property): Self = this.set("ADODB.Property_typekey", value.asInstanceOf[js.Any])
+    def setType(value: DataTypeEnum): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: PropertyAttributesEnum): Self = this.set("Attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: DataTypeEnum): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -3,45 +3,83 @@ package typings.reactMdPortal
 import typings.react.mod.ReactElement
 import typings.reactMdPortal.conditionalPortalMod.ConditionalPortalProps
 import typings.reactMdPortal.portalMod.PortalProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/portal", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @js.native
-  object ConditionalPortal extends js.Object {
+  object ConditionalPortal {
     
+    @JSImport("@react-md/portal", "ConditionalPortal")
+    @js.native
     def apply(hasPortalPortalIntoPortalIntoIdChildren: ConditionalPortalProps): ReactElement | Null = js.native
     
-    @js.native
-    object propTypes extends js.Object {
+    object propTypes {
       
-      var children: js.Any = js.native
+      @JSImport("@react-md/portal", "ConditionalPortal.propTypes")
+      @js.native
+      val ^ : js.Any = js.native
       
-      var portal: js.Any = js.native
+      @JSImport("@react-md/portal", "ConditionalPortal.propTypes.children")
+      @js.native
+      def children: js.Any = js.native
+      @scala.inline
+      def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
-      var portalInto: js.Any = js.native
+      @JSImport("@react-md/portal", "ConditionalPortal.propTypes.portal")
+      @js.native
+      def portal: js.Any = js.native
       
-      var portalIntoId: js.Any = js.native
+      @JSImport("@react-md/portal", "ConditionalPortal.propTypes.portalInto")
+      @js.native
+      def portalInto: js.Any = js.native
+      
+      @JSImport("@react-md/portal", "ConditionalPortal.propTypes.portalIntoId")
+      @js.native
+      def portalIntoId: js.Any = js.native
+      @scala.inline
+      def portalIntoId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portalIntoId")(x.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def portalInto_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portalInto")(x.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def portal_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portal")(x.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  object Portal extends js.Object {
+  object Portal {
     
+    @JSImport("@react-md/portal", "Portal")
+    @js.native
     def apply(hasIntoIntoIdChildren: PortalProps): ReactElement | Null = js.native
     
-    @js.native
-    object propTypes extends js.Object {
+    object propTypes {
       
-      var children: js.Any = js.native
+      @JSImport("@react-md/portal", "Portal.propTypes")
+      @js.native
+      val ^ : js.Any = js.native
       
-      var into: js.Any = js.native
+      @JSImport("@react-md/portal", "Portal.propTypes.children")
+      @js.native
+      def children: js.Any = js.native
+      @scala.inline
+      def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
-      var intoId: js.Any = js.native
+      @JSImport("@react-md/portal", "Portal.propTypes.into")
+      @js.native
+      def into: js.Any = js.native
+      
+      @JSImport("@react-md/portal", "Portal.propTypes.intoId")
+      @js.native
+      def intoId: js.Any = js.native
+      @scala.inline
+      def intoId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intoId")(x.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def into_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("into")(x.asInstanceOf[js.Any])
     }
   }
 }

@@ -1,6 +1,7 @@
 package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,36 +35,24 @@ object Sheet {
   }
   
   @scala.inline
-  implicit class SheetOps[Self <: Sheet] (val x: Self) extends AnyVal {
+  implicit class SheetMutableBuilder[Self <: Sheet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclamationmarkmargins(value: MarginInfo): Self = StObject.set(x, "!margins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExclamationmarkmarginsUndefined: Self = StObject.set(x, "!margins", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExclamationmarkref(value: String): Self = StObject.set(x, "!ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclamationmarkmargins(value: MarginInfo): Self = this.set("!margins", value.asInstanceOf[js.Any])
+    def setExclamationmarkrefUndefined: Self = StObject.set(x, "!ref", js.undefined)
     
     @scala.inline
-    def deleteExclamationmarkmargins: Self = this.set("!margins", js.undefined)
+    def setExclamationmarktype(value: SheetType): Self = StObject.set(x, "!type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclamationmarkref(value: String): Self = this.set("!ref", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExclamationmarkref: Self = this.set("!ref", js.undefined)
-    
-    @scala.inline
-    def setExclamationmarktype(value: SheetType): Self = this.set("!type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExclamationmarktype: Self = this.set("!type", js.undefined)
+    def setExclamationmarktypeUndefined: Self = StObject.set(x, "!type", js.undefined)
   }
 }

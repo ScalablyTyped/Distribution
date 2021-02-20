@@ -1,11 +1,12 @@
 package typings.awsSdk.transcribeserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LanguageModel extends js.Object {
+trait LanguageModel extends StObject {
   
   /**
     * The Amazon Transcribe standard language model, or base model used to create the custom language model.
@@ -61,72 +62,60 @@ object LanguageModel {
   }
   
   @scala.inline
-  implicit class LanguageModelOps[Self <: LanguageModel] (val x: Self) extends AnyVal {
+  implicit class LanguageModelMutableBuilder[Self <: LanguageModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseModelName(value: BaseModelName): Self = StObject.set(x, "BaseModelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseModelNameUndefined: Self = StObject.set(x, "BaseModelName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: DateTime): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseModelName(value: BaseModelName): Self = this.set("BaseModelName", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
     @scala.inline
-    def deleteBaseModelName: Self = this.set("BaseModelName", js.undefined)
+    def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: DateTime): Self = this.set("CreateTime", value.asInstanceOf[js.Any])
+    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("CreateTime", js.undefined)
+    def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    def setInputDataConfigUndefined: Self = StObject.set(x, "InputDataConfig", js.undefined)
     
     @scala.inline
-    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    def setLanguageCode(value: CLMLanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputDataConfig(value: InputDataConfig): Self = this.set("InputDataConfig", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
     @scala.inline
-    def deleteInputDataConfig: Self = this.set("InputDataConfig", js.undefined)
+    def setLastModifiedTime(value: DateTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: CLMLanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedTime(value: DateTime): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    def setModelNameUndefined: Self = StObject.set(x, "ModelName", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedTime: Self = this.set("LastModifiedTime", js.undefined)
+    def setModelStatus(value: ModelStatus): Self = StObject.set(x, "ModelStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelName(value: ModelName): Self = this.set("ModelName", value.asInstanceOf[js.Any])
+    def setModelStatusUndefined: Self = StObject.set(x, "ModelStatus", js.undefined)
     
     @scala.inline
-    def deleteModelName: Self = this.set("ModelName", js.undefined)
+    def setUpgradeAvailability(value: Boolean): Self = StObject.set(x, "UpgradeAvailability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelStatus(value: ModelStatus): Self = this.set("ModelStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModelStatus: Self = this.set("ModelStatus", js.undefined)
-    
-    @scala.inline
-    def setUpgradeAvailability(value: Boolean): Self = this.set("UpgradeAvailability", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpgradeAvailability: Self = this.set("UpgradeAvailability", js.undefined)
+    def setUpgradeAvailabilityUndefined: Self = StObject.set(x, "UpgradeAvailability", js.undefined)
   }
 }

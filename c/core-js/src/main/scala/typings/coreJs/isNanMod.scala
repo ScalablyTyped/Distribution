@@ -1,11 +1,14 @@
 package typings.coreJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/fn/number/is-nan", JSImport.Namespace)
-@js.native
-object isNanMod
-  extends TopLevel[js.Function1[/* number */ Double, Boolean]]
+object isNanMod {
+  
+  /* was `typeof core.Number.isNaN` */
+  @JSImport("core-js/fn/number/is-nan", JSImport.Namespace)
+  @js.native
+  def apply(number: Double): Boolean = js.native
+}

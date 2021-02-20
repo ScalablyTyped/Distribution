@@ -4,6 +4,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.activexLibreoffice.com_.sun.star.beans.Property
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,21 +41,9 @@ object OpenCommandArgument3 {
   }
   
   @scala.inline
-  implicit class OpenCommandArgument3Ops[Self <: OpenCommandArgument3] (val x: Self) extends AnyVal {
+  implicit class OpenCommandArgument3MutableBuilder[Self <: OpenCommandArgument3] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOpeningFlags(value: SafeArray[NamedValue]): Self = this.set("OpeningFlags", value.asInstanceOf[js.Any])
+    def setOpeningFlags(value: SafeArray[NamedValue]): Self = StObject.set(x, "OpeningFlags", value.asInstanceOf[js.Any])
   }
 }

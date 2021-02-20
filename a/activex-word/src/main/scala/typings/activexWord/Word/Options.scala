@@ -1,12 +1,13 @@
 package typings.activexWord.Word
 
 import typings.activexOffice.Office.MsoEncoding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   var AddBiDirectionalMarksWhenSavingTextFile: Boolean = js.native
   
@@ -759,752 +760,740 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddBiDirectionalMarksWhenSavingTextFile(value: Boolean): Self = StObject.set(x, "AddBiDirectionalMarksWhenSavingTextFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddControlCharacters(value: Boolean): Self = StObject.set(x, "AddControlCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddHebDoubleQuote(value: Boolean): Self = StObject.set(x, "AddHebDoubleQuote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddBiDirectionalMarksWhenSavingTextFile(value: Boolean): Self = this.set("AddBiDirectionalMarksWhenSavingTextFile", value.asInstanceOf[js.Any])
+    def setAllowAccentedUppercase(value: Boolean): Self = StObject.set(x, "AllowAccentedUppercase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddControlCharacters(value: Boolean): Self = this.set("AddControlCharacters", value.asInstanceOf[js.Any])
+    def setAllowClickAndTypeMouse(value: Boolean): Self = StObject.set(x, "AllowClickAndTypeMouse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddHebDoubleQuote(value: Boolean): Self = this.set("AddHebDoubleQuote", value.asInstanceOf[js.Any])
+    def setAllowCombinedAuxiliaryForms(value: Boolean): Self = StObject.set(x, "AllowCombinedAuxiliaryForms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowAccentedUppercase(value: Boolean): Self = this.set("AllowAccentedUppercase", value.asInstanceOf[js.Any])
+    def setAllowCompoundNounProcessing(value: Boolean): Self = StObject.set(x, "AllowCompoundNounProcessing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowClickAndTypeMouse(value: Boolean): Self = this.set("AllowClickAndTypeMouse", value.asInstanceOf[js.Any])
+    def setAllowDragAndDrop(value: Boolean): Self = StObject.set(x, "AllowDragAndDrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowCombinedAuxiliaryForms(value: Boolean): Self = this.set("AllowCombinedAuxiliaryForms", value.asInstanceOf[js.Any])
+    def setAllowFastSave(value: Boolean): Self = StObject.set(x, "AllowFastSave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowCompoundNounProcessing(value: Boolean): Self = this.set("AllowCompoundNounProcessing", value.asInstanceOf[js.Any])
+    def setAllowOpenInDraftView(value: Boolean): Self = StObject.set(x, "AllowOpenInDraftView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowDragAndDrop(value: Boolean): Self = this.set("AllowDragAndDrop", value.asInstanceOf[js.Any])
+    def setAllowPixelUnits(value: Boolean): Self = StObject.set(x, "AllowPixelUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowFastSave(value: Boolean): Self = this.set("AllowFastSave", value.asInstanceOf[js.Any])
+    def setAllowReadingMode(value: Boolean): Self = StObject.set(x, "AllowReadingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowOpenInDraftView(value: Boolean): Self = this.set("AllowOpenInDraftView", value.asInstanceOf[js.Any])
+    def setAlwaysUseClearType(value: Boolean): Self = StObject.set(x, "AlwaysUseClearType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowPixelUnits(value: Boolean): Self = this.set("AllowPixelUnits", value.asInstanceOf[js.Any])
+    def setAnimateScreenMovements(value: Boolean): Self = StObject.set(x, "AnimateScreenMovements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowReadingMode(value: Boolean): Self = this.set("AllowReadingMode", value.asInstanceOf[js.Any])
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlwaysUseClearType(value: Boolean): Self = this.set("AlwaysUseClearType", value.asInstanceOf[js.Any])
+    def setApplyFarEastFontsToAscii(value: Boolean): Self = StObject.set(x, "ApplyFarEastFontsToAscii", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimateScreenMovements(value: Boolean): Self = this.set("AnimateScreenMovements", value.asInstanceOf[js.Any])
+    def setArabicMode(value: WdAraSpeller): Self = StObject.set(x, "ArabicMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setArabicNumeral(value: WdArabicNumeral): Self = StObject.set(x, "ArabicNumeral", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyFarEastFontsToAscii(value: Boolean): Self = this.set("ApplyFarEastFontsToAscii", value.asInstanceOf[js.Any])
+    def setAutoCreateNewDrawings(value: Boolean): Self = StObject.set(x, "AutoCreateNewDrawings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArabicMode(value: WdAraSpeller): Self = this.set("ArabicMode", value.asInstanceOf[js.Any])
+    def setAutoFormatApplyBulletedLists(value: Boolean): Self = StObject.set(x, "AutoFormatApplyBulletedLists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArabicNumeral(value: WdArabicNumeral): Self = this.set("ArabicNumeral", value.asInstanceOf[js.Any])
+    def setAutoFormatApplyFirstIndents(value: Boolean): Self = StObject.set(x, "AutoFormatApplyFirstIndents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoCreateNewDrawings(value: Boolean): Self = this.set("AutoCreateNewDrawings", value.asInstanceOf[js.Any])
+    def setAutoFormatApplyHeadings(value: Boolean): Self = StObject.set(x, "AutoFormatApplyHeadings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatApplyBulletedLists(value: Boolean): Self = this.set("AutoFormatApplyBulletedLists", value.asInstanceOf[js.Any])
+    def setAutoFormatApplyLists(value: Boolean): Self = StObject.set(x, "AutoFormatApplyLists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatApplyFirstIndents(value: Boolean): Self = this.set("AutoFormatApplyFirstIndents", value.asInstanceOf[js.Any])
+    def setAutoFormatApplyOtherParas(value: Boolean): Self = StObject.set(x, "AutoFormatApplyOtherParas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatApplyHeadings(value: Boolean): Self = this.set("AutoFormatApplyHeadings", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeApplyBorders(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyBorders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatApplyLists(value: Boolean): Self = this.set("AutoFormatApplyLists", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeApplyBulletedLists(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyBulletedLists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatApplyOtherParas(value: Boolean): Self = this.set("AutoFormatApplyOtherParas", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeApplyClosings(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyClosings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeApplyBorders(value: Boolean): Self = this.set("AutoFormatAsYouTypeApplyBorders", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeApplyDates(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyDates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeApplyBulletedLists(value: Boolean): Self = this.set("AutoFormatAsYouTypeApplyBulletedLists", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeApplyFirstIndents(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyFirstIndents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeApplyClosings(value: Boolean): Self = this.set("AutoFormatAsYouTypeApplyClosings", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeApplyHeadings(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyHeadings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeApplyDates(value: Boolean): Self = this.set("AutoFormatAsYouTypeApplyDates", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeApplyNumberedLists(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyNumberedLists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeApplyFirstIndents(value: Boolean): Self = this.set("AutoFormatAsYouTypeApplyFirstIndents", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeApplyTables(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeApplyTables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeApplyHeadings(value: Boolean): Self = this.set("AutoFormatAsYouTypeApplyHeadings", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeAutoLetterWizard(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeAutoLetterWizard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeApplyNumberedLists(value: Boolean): Self = this.set("AutoFormatAsYouTypeApplyNumberedLists", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeDefineStyles(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeDefineStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeApplyTables(value: Boolean): Self = this.set("AutoFormatAsYouTypeApplyTables", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeDeleteAutoSpaces(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeDeleteAutoSpaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeAutoLetterWizard(value: Boolean): Self = this.set("AutoFormatAsYouTypeAutoLetterWizard", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeFormatListItemBeginning(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeFormatListItemBeginning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeDefineStyles(value: Boolean): Self = this.set("AutoFormatAsYouTypeDefineStyles", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeInsertClosings(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeInsertClosings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeDeleteAutoSpaces(value: Boolean): Self = this.set("AutoFormatAsYouTypeDeleteAutoSpaces", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeInsertOvers(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeInsertOvers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeFormatListItemBeginning(value: Boolean): Self = this.set("AutoFormatAsYouTypeFormatListItemBeginning", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeMatchParentheses(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeMatchParentheses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeInsertClosings(value: Boolean): Self = this.set("AutoFormatAsYouTypeInsertClosings", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeReplaceFarEastDashes(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeReplaceFarEastDashes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeInsertOvers(value: Boolean): Self = this.set("AutoFormatAsYouTypeInsertOvers", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeReplaceFractions(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeReplaceFractions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeMatchParentheses(value: Boolean): Self = this.set("AutoFormatAsYouTypeMatchParentheses", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeReplaceHyperlinks(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeReplaceHyperlinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeReplaceFarEastDashes(value: Boolean): Self = this.set("AutoFormatAsYouTypeReplaceFarEastDashes", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeReplaceOrdinals(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeReplaceOrdinals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeReplaceFractions(value: Boolean): Self = this.set("AutoFormatAsYouTypeReplaceFractions", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeReplacePlainTextEmphasis(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeReplacePlainTextEmphasis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeReplaceHyperlinks(value: Boolean): Self = this.set("AutoFormatAsYouTypeReplaceHyperlinks", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeReplaceQuotes(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeReplaceQuotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeReplaceOrdinals(value: Boolean): Self = this.set("AutoFormatAsYouTypeReplaceOrdinals", value.asInstanceOf[js.Any])
+    def setAutoFormatAsYouTypeReplaceSymbols(value: Boolean): Self = StObject.set(x, "AutoFormatAsYouTypeReplaceSymbols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeReplacePlainTextEmphasis(value: Boolean): Self = this.set("AutoFormatAsYouTypeReplacePlainTextEmphasis", value.asInstanceOf[js.Any])
+    def setAutoFormatDeleteAutoSpaces(value: Boolean): Self = StObject.set(x, "AutoFormatDeleteAutoSpaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeReplaceQuotes(value: Boolean): Self = this.set("AutoFormatAsYouTypeReplaceQuotes", value.asInstanceOf[js.Any])
+    def setAutoFormatMatchParentheses(value: Boolean): Self = StObject.set(x, "AutoFormatMatchParentheses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatAsYouTypeReplaceSymbols(value: Boolean): Self = this.set("AutoFormatAsYouTypeReplaceSymbols", value.asInstanceOf[js.Any])
+    def setAutoFormatPlainTextWordMail(value: Boolean): Self = StObject.set(x, "AutoFormatPlainTextWordMail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatDeleteAutoSpaces(value: Boolean): Self = this.set("AutoFormatDeleteAutoSpaces", value.asInstanceOf[js.Any])
+    def setAutoFormatPreserveStyles(value: Boolean): Self = StObject.set(x, "AutoFormatPreserveStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatMatchParentheses(value: Boolean): Self = this.set("AutoFormatMatchParentheses", value.asInstanceOf[js.Any])
+    def setAutoFormatReplaceFarEastDashes(value: Boolean): Self = StObject.set(x, "AutoFormatReplaceFarEastDashes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatPlainTextWordMail(value: Boolean): Self = this.set("AutoFormatPlainTextWordMail", value.asInstanceOf[js.Any])
+    def setAutoFormatReplaceFractions(value: Boolean): Self = StObject.set(x, "AutoFormatReplaceFractions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatPreserveStyles(value: Boolean): Self = this.set("AutoFormatPreserveStyles", value.asInstanceOf[js.Any])
+    def setAutoFormatReplaceHyperlinks(value: Boolean): Self = StObject.set(x, "AutoFormatReplaceHyperlinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatReplaceFarEastDashes(value: Boolean): Self = this.set("AutoFormatReplaceFarEastDashes", value.asInstanceOf[js.Any])
+    def setAutoFormatReplaceOrdinals(value: Boolean): Self = StObject.set(x, "AutoFormatReplaceOrdinals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatReplaceFractions(value: Boolean): Self = this.set("AutoFormatReplaceFractions", value.asInstanceOf[js.Any])
+    def setAutoFormatReplacePlainTextEmphasis(value: Boolean): Self = StObject.set(x, "AutoFormatReplacePlainTextEmphasis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatReplaceHyperlinks(value: Boolean): Self = this.set("AutoFormatReplaceHyperlinks", value.asInstanceOf[js.Any])
+    def setAutoFormatReplaceQuotes(value: Boolean): Self = StObject.set(x, "AutoFormatReplaceQuotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatReplaceOrdinals(value: Boolean): Self = this.set("AutoFormatReplaceOrdinals", value.asInstanceOf[js.Any])
+    def setAutoFormatReplaceSymbols(value: Boolean): Self = StObject.set(x, "AutoFormatReplaceSymbols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatReplacePlainTextEmphasis(value: Boolean): Self = this.set("AutoFormatReplacePlainTextEmphasis", value.asInstanceOf[js.Any])
+    def setAutoKeyboardSwitching(value: Boolean): Self = StObject.set(x, "AutoKeyboardSwitching", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatReplaceQuotes(value: Boolean): Self = this.set("AutoFormatReplaceQuotes", value.asInstanceOf[js.Any])
+    def setAutoWordSelection(value: Boolean): Self = StObject.set(x, "AutoWordSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFormatReplaceSymbols(value: Boolean): Self = this.set("AutoFormatReplaceSymbols", value.asInstanceOf[js.Any])
+    def setBackgroundOpen(value: Boolean): Self = StObject.set(x, "BackgroundOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoKeyboardSwitching(value: Boolean): Self = this.set("AutoKeyboardSwitching", value.asInstanceOf[js.Any])
+    def setBackgroundSave(value: Boolean): Self = StObject.set(x, "BackgroundSave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoWordSelection(value: Boolean): Self = this.set("AutoWordSelection", value.asInstanceOf[js.Any])
+    def setBibliographySort(value: String): Self = StObject.set(x, "BibliographySort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundOpen(value: Boolean): Self = this.set("BackgroundOpen", value.asInstanceOf[js.Any])
+    def setBibliographyStyle(value: String): Self = StObject.set(x, "BibliographyStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundSave(value: Boolean): Self = this.set("BackgroundSave", value.asInstanceOf[js.Any])
+    def setBlueScreen(value: Boolean): Self = StObject.set(x, "BlueScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBibliographySort(value: String): Self = this.set("BibliographySort", value.asInstanceOf[js.Any])
+    def setBrazilReform(value: WdPortugueseReform): Self = StObject.set(x, "BrazilReform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBibliographyStyle(value: String): Self = this.set("BibliographyStyle", value.asInstanceOf[js.Any])
+    def setButtonFieldClicks(value: Double): Self = StObject.set(x, "ButtonFieldClicks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlueScreen(value: Boolean): Self = this.set("BlueScreen", value.asInstanceOf[js.Any])
+    def setCheckGrammarAsYouType(value: Boolean): Self = StObject.set(x, "CheckGrammarAsYouType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrazilReform(value: WdPortugueseReform): Self = this.set("BrazilReform", value.asInstanceOf[js.Any])
+    def setCheckGrammarWithSpelling(value: Boolean): Self = StObject.set(x, "CheckGrammarWithSpelling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonFieldClicks(value: Double): Self = this.set("ButtonFieldClicks", value.asInstanceOf[js.Any])
+    def setCheckHangulEndings(value: Boolean): Self = StObject.set(x, "CheckHangulEndings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckGrammarAsYouType(value: Boolean): Self = this.set("CheckGrammarAsYouType", value.asInstanceOf[js.Any])
+    def setCheckSpellingAsYouType(value: Boolean): Self = StObject.set(x, "CheckSpellingAsYouType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckGrammarWithSpelling(value: Boolean): Self = this.set("CheckGrammarWithSpelling", value.asInstanceOf[js.Any])
+    def setCommentsColor(value: WdColorIndex): Self = StObject.set(x, "CommentsColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckHangulEndings(value: Boolean): Self = this.set("CheckHangulEndings", value.asInstanceOf[js.Any])
+    def setConfirmConversions(value: Boolean): Self = StObject.set(x, "ConfirmConversions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckSpellingAsYouType(value: Boolean): Self = this.set("CheckSpellingAsYouType", value.asInstanceOf[js.Any])
+    def setContextualSpeller(value: Boolean): Self = StObject.set(x, "ContextualSpeller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentsColor(value: WdColorIndex): Self = this.set("CommentsColor", value.asInstanceOf[js.Any])
+    def setConvertHighAnsiToFarEast(value: Boolean): Self = StObject.set(x, "ConvertHighAnsiToFarEast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirmConversions(value: Boolean): Self = this.set("ConfirmConversions", value.asInstanceOf[js.Any])
+    def setCreateBackup(value: Boolean): Self = StObject.set(x, "CreateBackup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextualSpeller(value: Boolean): Self = this.set("ContextualSpeller", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertHighAnsiToFarEast(value: Boolean): Self = this.set("ConvertHighAnsiToFarEast", value.asInstanceOf[js.Any])
+    def setCtrlClickHyperlinkToOpen(value: Boolean): Self = StObject.set(x, "CtrlClickHyperlinkToOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateBackup(value: Boolean): Self = this.set("CreateBackup", value.asInstanceOf[js.Any])
+    def setCursorMovement(value: WdCursorMovement): Self = StObject.set(x, "CursorMovement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setDefaultBorderColor(value: WdColor): Self = StObject.set(x, "DefaultBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCtrlClickHyperlinkToOpen(value: Boolean): Self = this.set("CtrlClickHyperlinkToOpen", value.asInstanceOf[js.Any])
+    def setDefaultBorderColorIndex(value: WdColorIndex): Self = StObject.set(x, "DefaultBorderColorIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorMovement(value: WdCursorMovement): Self = this.set("CursorMovement", value.asInstanceOf[js.Any])
+    def setDefaultBorderLineStyle(value: WdLineStyle): Self = StObject.set(x, "DefaultBorderLineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultBorderColor(value: WdColor): Self = this.set("DefaultBorderColor", value.asInstanceOf[js.Any])
+    def setDefaultBorderLineWidth(value: WdLineWidth): Self = StObject.set(x, "DefaultBorderLineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultBorderColorIndex(value: WdColorIndex): Self = this.set("DefaultBorderColorIndex", value.asInstanceOf[js.Any])
+    def setDefaultEPostageApp(value: String): Self = StObject.set(x, "DefaultEPostageApp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultBorderLineStyle(value: WdLineStyle): Self = this.set("DefaultBorderLineStyle", value.asInstanceOf[js.Any])
+    def setDefaultFilePath(value: WdDefaultFilePath => String): Self = StObject.set(x, "DefaultFilePath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDefaultBorderLineWidth(value: WdLineWidth): Self = this.set("DefaultBorderLineWidth", value.asInstanceOf[js.Any])
+    def setDefaultHighlightColorIndex(value: WdColorIndex): Self = StObject.set(x, "DefaultHighlightColorIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultEPostageApp(value: String): Self = this.set("DefaultEPostageApp", value.asInstanceOf[js.Any])
+    def setDefaultOpenFormat(value: WdOpenFormat): Self = StObject.set(x, "DefaultOpenFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultFilePath(value: WdDefaultFilePath => String): Self = this.set("DefaultFilePath", js.Any.fromFunction1(value))
+    def setDefaultTextEncoding(value: MsoEncoding): Self = StObject.set(x, "DefaultTextEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultHighlightColorIndex(value: WdColorIndex): Self = this.set("DefaultHighlightColorIndex", value.asInstanceOf[js.Any])
+    def setDefaultTray(value: String): Self = StObject.set(x, "DefaultTray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultOpenFormat(value: WdOpenFormat): Self = this.set("DefaultOpenFormat", value.asInstanceOf[js.Any])
+    def setDefaultTrayID(value: Double): Self = StObject.set(x, "DefaultTrayID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTextEncoding(value: MsoEncoding): Self = this.set("DefaultTextEncoding", value.asInstanceOf[js.Any])
+    def setDeletedCellColor(value: WdCellColor): Self = StObject.set(x, "DeletedCellColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTray(value: String): Self = this.set("DefaultTray", value.asInstanceOf[js.Any])
+    def setDeletedTextColor(value: WdColorIndex): Self = StObject.set(x, "DeletedTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTrayID(value: Double): Self = this.set("DefaultTrayID", value.asInstanceOf[js.Any])
+    def setDeletedTextMark(value: WdDeletedTextMark): Self = StObject.set(x, "DeletedTextMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletedCellColor(value: WdCellColor): Self = this.set("DeletedCellColor", value.asInstanceOf[js.Any])
+    def setDiacriticColorVal(value: WdColor): Self = StObject.set(x, "DiacriticColorVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletedTextColor(value: WdColorIndex): Self = this.set("DeletedTextColor", value.asInstanceOf[js.Any])
+    def setDisableFeaturesIntroducedAfterbyDefault(value: WdDisableFeaturesIntroducedAfter): Self = StObject.set(x, "DisableFeaturesIntroducedAfterbyDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletedTextMark(value: WdDeletedTextMark): Self = this.set("DeletedTextMark", value.asInstanceOf[js.Any])
+    def setDisableFeaturesbyDefault(value: Boolean): Self = StObject.set(x, "DisableFeaturesbyDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiacriticColorVal(value: WdColor): Self = this.set("DiacriticColorVal", value.asInstanceOf[js.Any])
+    def setDisplayGridLines(value: Boolean): Self = StObject.set(x, "DisplayGridLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableFeaturesIntroducedAfterbyDefault(value: WdDisableFeaturesIntroducedAfter): Self = this.set("DisableFeaturesIntroducedAfterbyDefault", value.asInstanceOf[js.Any])
+    def setDisplayPasteOptions(value: Boolean): Self = StObject.set(x, "DisplayPasteOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableFeaturesbyDefault(value: Boolean): Self = this.set("DisableFeaturesbyDefault", value.asInstanceOf[js.Any])
+    def setDisplaySmartTagButtons(value: Boolean): Self = StObject.set(x, "DisplaySmartTagButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayGridLines(value: Boolean): Self = this.set("DisplayGridLines", value.asInstanceOf[js.Any])
+    def setDoNotPromptForConvert(value: Boolean): Self = StObject.set(x, "DoNotPromptForConvert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayPasteOptions(value: Boolean): Self = this.set("DisplayPasteOptions", value.asInstanceOf[js.Any])
+    def setDocumentViewDirection(value: WdDocumentViewDirection): Self = StObject.set(x, "DocumentViewDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplaySmartTagButtons(value: Boolean): Self = this.set("DisplaySmartTagButtons", value.asInstanceOf[js.Any])
+    def setEnableHangulHanjaRecentOrdering(value: Boolean): Self = StObject.set(x, "EnableHangulHanjaRecentOrdering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoNotPromptForConvert(value: Boolean): Self = this.set("DoNotPromptForConvert", value.asInstanceOf[js.Any])
+    def setEnableLegacyIMEMode(value: Boolean): Self = StObject.set(x, "EnableLegacyIMEMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentViewDirection(value: WdDocumentViewDirection): Self = this.set("DocumentViewDirection", value.asInstanceOf[js.Any])
+    def setEnableLivePreview(value: Boolean): Self = StObject.set(x, "EnableLivePreview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableHangulHanjaRecentOrdering(value: Boolean): Self = this.set("EnableHangulHanjaRecentOrdering", value.asInstanceOf[js.Any])
+    def setEnableMisusedWordsDictionary(value: Boolean): Self = StObject.set(x, "EnableMisusedWordsDictionary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableLegacyIMEMode(value: Boolean): Self = this.set("EnableLegacyIMEMode", value.asInstanceOf[js.Any])
+    def setEnableSound(value: Boolean): Self = StObject.set(x, "EnableSound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableLivePreview(value: Boolean): Self = this.set("EnableLivePreview", value.asInstanceOf[js.Any])
+    def setEnvelopeFeederInstalled(value: Boolean): Self = StObject.set(x, "EnvelopeFeederInstalled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableMisusedWordsDictionary(value: Boolean): Self = this.set("EnableMisusedWordsDictionary", value.asInstanceOf[js.Any])
+    def setFormatScanning(value: Boolean): Self = StObject.set(x, "FormatScanning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableSound(value: Boolean): Self = this.set("EnableSound", value.asInstanceOf[js.Any])
+    def setFrenchReform(value: WdFrenchSpeller): Self = StObject.set(x, "FrenchReform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeFeederInstalled(value: Boolean): Self = this.set("EnvelopeFeederInstalled", value.asInstanceOf[js.Any])
+    def setGridDistanceHorizontal(value: Double): Self = StObject.set(x, "GridDistanceHorizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatScanning(value: Boolean): Self = this.set("FormatScanning", value.asInstanceOf[js.Any])
+    def setGridDistanceVertical(value: Double): Self = StObject.set(x, "GridDistanceVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrenchReform(value: WdFrenchSpeller): Self = this.set("FrenchReform", value.asInstanceOf[js.Any])
+    def setGridOriginHorizontal(value: Double): Self = StObject.set(x, "GridOriginHorizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridDistanceHorizontal(value: Double): Self = this.set("GridDistanceHorizontal", value.asInstanceOf[js.Any])
+    def setGridOriginVertical(value: Double): Self = StObject.set(x, "GridOriginVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridDistanceVertical(value: Double): Self = this.set("GridDistanceVertical", value.asInstanceOf[js.Any])
+    def setHangulHanjaFastConversion(value: Boolean): Self = StObject.set(x, "HangulHanjaFastConversion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridOriginHorizontal(value: Double): Self = this.set("GridOriginHorizontal", value.asInstanceOf[js.Any])
+    def setHebrewMode(value: WdHebSpellStart): Self = StObject.set(x, "HebrewMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridOriginVertical(value: Double): Self = this.set("GridOriginVertical", value.asInstanceOf[js.Any])
+    def setIMEAutomaticControl(value: Boolean): Self = StObject.set(x, "IMEAutomaticControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHangulHanjaFastConversion(value: Boolean): Self = this.set("HangulHanjaFastConversion", value.asInstanceOf[js.Any])
+    def setINSKeyForOvertype(value: Boolean): Self = StObject.set(x, "INSKeyForOvertype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHebrewMode(value: WdHebSpellStart): Self = this.set("HebrewMode", value.asInstanceOf[js.Any])
+    def setINSKeyForPaste(value: Boolean): Self = StObject.set(x, "INSKeyForPaste", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIMEAutomaticControl(value: Boolean): Self = this.set("IMEAutomaticControl", value.asInstanceOf[js.Any])
+    def setIgnoreInternetAndFileAddresses(value: Boolean): Self = StObject.set(x, "IgnoreInternetAndFileAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setINSKeyForOvertype(value: Boolean): Self = this.set("INSKeyForOvertype", value.asInstanceOf[js.Any])
+    def setIgnoreMixedDigits(value: Boolean): Self = StObject.set(x, "IgnoreMixedDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setINSKeyForPaste(value: Boolean): Self = this.set("INSKeyForPaste", value.asInstanceOf[js.Any])
+    def setIgnoreUppercase(value: Boolean): Self = StObject.set(x, "IgnoreUppercase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreInternetAndFileAddresses(value: Boolean): Self = this.set("IgnoreInternetAndFileAddresses", value.asInstanceOf[js.Any])
+    def setInlineConversion(value: Boolean): Self = StObject.set(x, "InlineConversion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreMixedDigits(value: Boolean): Self = this.set("IgnoreMixedDigits", value.asInstanceOf[js.Any])
+    def setInsertedCellColor(value: WdCellColor): Self = StObject.set(x, "InsertedCellColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreUppercase(value: Boolean): Self = this.set("IgnoreUppercase", value.asInstanceOf[js.Any])
+    def setInsertedTextColor(value: WdColorIndex): Self = StObject.set(x, "InsertedTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInlineConversion(value: Boolean): Self = this.set("InlineConversion", value.asInstanceOf[js.Any])
+    def setInsertedTextMark(value: WdInsertedTextMark): Self = StObject.set(x, "InsertedTextMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertedCellColor(value: WdCellColor): Self = this.set("InsertedCellColor", value.asInstanceOf[js.Any])
+    def setInterpretHighAnsi(value: WdHighAnsiText): Self = StObject.set(x, "InterpretHighAnsi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertedTextColor(value: WdColorIndex): Self = this.set("InsertedTextColor", value.asInstanceOf[js.Any])
+    def setLabelSmartTags(value: Boolean): Self = StObject.set(x, "LabelSmartTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertedTextMark(value: WdInsertedTextMark): Self = this.set("InsertedTextMark", value.asInstanceOf[js.Any])
+    def setLocalNetworkFile(value: Boolean): Self = StObject.set(x, "LocalNetworkFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterpretHighAnsi(value: WdHighAnsiText): Self = this.set("InterpretHighAnsi", value.asInstanceOf[js.Any])
+    def setMapPaperSize(value: Boolean): Self = StObject.set(x, "MapPaperSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelSmartTags(value: Boolean): Self = this.set("LabelSmartTags", value.asInstanceOf[js.Any])
+    def setMatchFuzzyAY(value: Boolean): Self = StObject.set(x, "MatchFuzzyAY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalNetworkFile(value: Boolean): Self = this.set("LocalNetworkFile", value.asInstanceOf[js.Any])
+    def setMatchFuzzyBV(value: Boolean): Self = StObject.set(x, "MatchFuzzyBV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapPaperSize(value: Boolean): Self = this.set("MapPaperSize", value.asInstanceOf[js.Any])
+    def setMatchFuzzyByte(value: Boolean): Self = StObject.set(x, "MatchFuzzyByte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchFuzzyAY(value: Boolean): Self = this.set("MatchFuzzyAY", value.asInstanceOf[js.Any])
+    def setMatchFuzzyCase(value: Boolean): Self = StObject.set(x, "MatchFuzzyCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchFuzzyBV(value: Boolean): Self = this.set("MatchFuzzyBV", value.asInstanceOf[js.Any])
+    def setMatchFuzzyDZ(value: Boolean): Self = StObject.set(x, "MatchFuzzyDZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchFuzzyByte(value: Boolean): Self = this.set("MatchFuzzyByte", value.asInstanceOf[js.Any])
+    def setMatchFuzzyDash(value: Boolean): Self = StObject.set(x, "MatchFuzzyDash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchFuzzyCase(value: Boolean): Self = this.set("MatchFuzzyCase", value.asInstanceOf[js.Any])
+    def setMatchFuzzyHF(value: Boolean): Self = StObject.set(x, "MatchFuzzyHF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchFuzzyDZ(value: Boolean): Self = this.set("MatchFuzzyDZ", value.asInstanceOf[js.Any])
+    def setMatchFuzzyHiragana(value: Boolean): Self = StObject.set(x, "MatchFuzzyHiragana", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchFuzzyDash(value: Boolean): Self = this.set("MatchFuzzyDash", value.asInstanceOf[js.Any])
+    def setMatchFuzzyIterationMark(value: Boolean): Self = StObject.set(x, "MatchFuzzyIterationMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchFuzzyHF(value: Boolean): Self = this.set("MatchFuzzyHF", value.asInstanceOf[js.Any])
+    def setMatchFuzzyKanji(value: Boolean): Self = StObject.set(x, "MatchFuzzyKanji", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchFuzzyHiragana(value: Boolean): Self = this.set("MatchFuzzyHiragana", value.asInstanceOf[js.Any])
+    def setMatchFuzzyKiKu(value: Boolean): Self = StObject.set(x, "MatchFuzzyKiKu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchFuzzyIterationMark(value: Boolean): Self = this.set("MatchFuzzyIterationMark", value.asInstanceOf[js.Any])
+    def setMatchFuzzyOldKana(value: Boolean): Self = StObject.set(x, "MatchFuzzyOldKana", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchFuzzyKanji(value: Boolean): Self = this.set("MatchFuzzyKanji", value.asInstanceOf[js.Any])
+    def setMatchFuzzyProlongedSoundMark(value: Boolean): Self = StObject.set(x, "MatchFuzzyProlongedSoundMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchFuzzyKiKu(value: Boolean): Self = this.set("MatchFuzzyKiKu", value.asInstanceOf[js.Any])
+    def setMatchFuzzyPunctuation(value: Boolean): Self = StObject.set(x, "MatchFuzzyPunctuation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchFuzzyOldKana(value: Boolean): Self = this.set("MatchFuzzyOldKana", value.asInstanceOf[js.Any])
+    def setMatchFuzzySmallKana(value: Boolean): Self = StObject.set(x, "MatchFuzzySmallKana", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchFuzzyProlongedSoundMark(value: Boolean): Self = this.set("MatchFuzzyProlongedSoundMark", value.asInstanceOf[js.Any])
+    def setMatchFuzzySpace(value: Boolean): Self = StObject.set(x, "MatchFuzzySpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchFuzzyPunctuation(value: Boolean): Self = this.set("MatchFuzzyPunctuation", value.asInstanceOf[js.Any])
+    def setMatchFuzzyTC(value: Boolean): Self = StObject.set(x, "MatchFuzzyTC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchFuzzySmallKana(value: Boolean): Self = this.set("MatchFuzzySmallKana", value.asInstanceOf[js.Any])
+    def setMatchFuzzyZJ(value: Boolean): Self = StObject.set(x, "MatchFuzzyZJ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchFuzzySpace(value: Boolean): Self = this.set("MatchFuzzySpace", value.asInstanceOf[js.Any])
+    def setMeasurementUnit(value: WdMeasurementUnits): Self = StObject.set(x, "MeasurementUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchFuzzyTC(value: Boolean): Self = this.set("MatchFuzzyTC", value.asInstanceOf[js.Any])
+    def setMergedCellColor(value: WdCellColor): Self = StObject.set(x, "MergedCellColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchFuzzyZJ(value: Boolean): Self = this.set("MatchFuzzyZJ", value.asInstanceOf[js.Any])
+    def setMonthNames(value: WdMonthNames): Self = StObject.set(x, "MonthNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasurementUnit(value: WdMeasurementUnits): Self = this.set("MeasurementUnit", value.asInstanceOf[js.Any])
+    def setMoveFromTextColor(value: WdColorIndex): Self = StObject.set(x, "MoveFromTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergedCellColor(value: WdCellColor): Self = this.set("MergedCellColor", value.asInstanceOf[js.Any])
+    def setMoveFromTextMark(value: WdMoveFromTextMark): Self = StObject.set(x, "MoveFromTextMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthNames(value: WdMonthNames): Self = this.set("MonthNames", value.asInstanceOf[js.Any])
+    def setMoveToTextColor(value: WdColorIndex): Self = StObject.set(x, "MoveToTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveFromTextColor(value: WdColorIndex): Self = this.set("MoveFromTextColor", value.asInstanceOf[js.Any])
+    def setMoveToTextMark(value: WdMoveToTextMark): Self = StObject.set(x, "MoveToTextMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveFromTextMark(value: WdMoveFromTextMark): Self = this.set("MoveFromTextMark", value.asInstanceOf[js.Any])
+    def setMultipleWordConversionsMode(value: WdMultipleWordConversionsMode): Self = StObject.set(x, "MultipleWordConversionsMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveToTextColor(value: WdColorIndex): Self = this.set("MoveToTextColor", value.asInstanceOf[js.Any])
+    def setOMathAutoBuildUp(value: Boolean): Self = StObject.set(x, "OMathAutoBuildUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveToTextMark(value: WdMoveToTextMark): Self = this.set("MoveToTextMark", value.asInstanceOf[js.Any])
+    def setOMathCopyLF(value: Boolean): Self = StObject.set(x, "OMathCopyLF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipleWordConversionsMode(value: WdMultipleWordConversionsMode): Self = this.set("MultipleWordConversionsMode", value.asInstanceOf[js.Any])
+    def setOptimizeForWord97byDefault(value: Boolean): Self = StObject.set(x, "OptimizeForWord97byDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOMathAutoBuildUp(value: Boolean): Self = this.set("OMathAutoBuildUp", value.asInstanceOf[js.Any])
+    def setOvertype(value: Boolean): Self = StObject.set(x, "Overtype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOMathCopyLF(value: Boolean): Self = this.set("OMathCopyLF", value.asInstanceOf[js.Any])
+    def setPagination(value: Boolean): Self = StObject.set(x, "Pagination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptimizeForWord97byDefault(value: Boolean): Self = this.set("OptimizeForWord97byDefault", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOvertype(value: Boolean): Self = this.set("Overtype", value.asInstanceOf[js.Any])
+    def setPasteAdjustParagraphSpacing(value: Boolean): Self = StObject.set(x, "PasteAdjustParagraphSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagination(value: Boolean): Self = this.set("Pagination", value.asInstanceOf[js.Any])
+    def setPasteAdjustTableFormatting(value: Boolean): Self = StObject.set(x, "PasteAdjustTableFormatting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setPasteAdjustWordSpacing(value: Boolean): Self = StObject.set(x, "PasteAdjustWordSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasteAdjustParagraphSpacing(value: Boolean): Self = this.set("PasteAdjustParagraphSpacing", value.asInstanceOf[js.Any])
+    def setPasteFormatBetweenDocuments(value: WdPasteOptions): Self = StObject.set(x, "PasteFormatBetweenDocuments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasteAdjustTableFormatting(value: Boolean): Self = this.set("PasteAdjustTableFormatting", value.asInstanceOf[js.Any])
+    def setPasteFormatBetweenStyledDocuments(value: WdPasteOptions): Self = StObject.set(x, "PasteFormatBetweenStyledDocuments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasteAdjustWordSpacing(value: Boolean): Self = this.set("PasteAdjustWordSpacing", value.asInstanceOf[js.Any])
+    def setPasteFormatFromExternalSource(value: WdPasteOptions): Self = StObject.set(x, "PasteFormatFromExternalSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasteFormatBetweenDocuments(value: WdPasteOptions): Self = this.set("PasteFormatBetweenDocuments", value.asInstanceOf[js.Any])
+    def setPasteFormatWithinDocument(value: WdPasteOptions): Self = StObject.set(x, "PasteFormatWithinDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasteFormatBetweenStyledDocuments(value: WdPasteOptions): Self = this.set("PasteFormatBetweenStyledDocuments", value.asInstanceOf[js.Any])
+    def setPasteMergeFromPPT(value: Boolean): Self = StObject.set(x, "PasteMergeFromPPT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasteFormatFromExternalSource(value: WdPasteOptions): Self = this.set("PasteFormatFromExternalSource", value.asInstanceOf[js.Any])
+    def setPasteMergeFromXL(value: Boolean): Self = StObject.set(x, "PasteMergeFromXL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasteFormatWithinDocument(value: WdPasteOptions): Self = this.set("PasteFormatWithinDocument", value.asInstanceOf[js.Any])
+    def setPasteMergeLists(value: Boolean): Self = StObject.set(x, "PasteMergeLists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasteMergeFromPPT(value: Boolean): Self = this.set("PasteMergeFromPPT", value.asInstanceOf[js.Any])
+    def setPasteOptionKeepBulletsAndNumbers(value: Boolean): Self = StObject.set(x, "PasteOptionKeepBulletsAndNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasteMergeFromXL(value: Boolean): Self = this.set("PasteMergeFromXL", value.asInstanceOf[js.Any])
+    def setPasteSmartCutPaste(value: Boolean): Self = StObject.set(x, "PasteSmartCutPaste", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasteMergeLists(value: Boolean): Self = this.set("PasteMergeLists", value.asInstanceOf[js.Any])
+    def setPasteSmartStyleBehavior(value: Boolean): Self = StObject.set(x, "PasteSmartStyleBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasteOptionKeepBulletsAndNumbers(value: Boolean): Self = this.set("PasteOptionKeepBulletsAndNumbers", value.asInstanceOf[js.Any])
+    def setPictureEditor(value: String): Self = StObject.set(x, "PictureEditor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasteSmartCutPaste(value: Boolean): Self = this.set("PasteSmartCutPaste", value.asInstanceOf[js.Any])
+    def setPictureWrapType(value: WdWrapTypeMerged): Self = StObject.set(x, "PictureWrapType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasteSmartStyleBehavior(value: Boolean): Self = this.set("PasteSmartStyleBehavior", value.asInstanceOf[js.Any])
+    def setPortugalReform(value: WdPortugueseReform): Self = StObject.set(x, "PortugalReform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPictureEditor(value: String): Self = this.set("PictureEditor", value.asInstanceOf[js.Any])
+    def setPrecisePositioning(value: Boolean): Self = StObject.set(x, "PrecisePositioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPictureWrapType(value: WdWrapTypeMerged): Self = this.set("PictureWrapType", value.asInstanceOf[js.Any])
+    def setPrintBackground(value: Boolean): Self = StObject.set(x, "PrintBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortugalReform(value: WdPortugueseReform): Self = this.set("PortugalReform", value.asInstanceOf[js.Any])
+    def setPrintBackgrounds(value: Boolean): Self = StObject.set(x, "PrintBackgrounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecisePositioning(value: Boolean): Self = this.set("PrecisePositioning", value.asInstanceOf[js.Any])
+    def setPrintComments(value: Boolean): Self = StObject.set(x, "PrintComments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintBackground(value: Boolean): Self = this.set("PrintBackground", value.asInstanceOf[js.Any])
+    def setPrintDraft(value: Boolean): Self = StObject.set(x, "PrintDraft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintBackgrounds(value: Boolean): Self = this.set("PrintBackgrounds", value.asInstanceOf[js.Any])
+    def setPrintDrawingObjects(value: Boolean): Self = StObject.set(x, "PrintDrawingObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintComments(value: Boolean): Self = this.set("PrintComments", value.asInstanceOf[js.Any])
+    def setPrintEvenPagesInAscendingOrder(value: Boolean): Self = StObject.set(x, "PrintEvenPagesInAscendingOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintDraft(value: Boolean): Self = this.set("PrintDraft", value.asInstanceOf[js.Any])
+    def setPrintFieldCodes(value: Boolean): Self = StObject.set(x, "PrintFieldCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintDrawingObjects(value: Boolean): Self = this.set("PrintDrawingObjects", value.asInstanceOf[js.Any])
+    def setPrintHiddenText(value: Boolean): Self = StObject.set(x, "PrintHiddenText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintEvenPagesInAscendingOrder(value: Boolean): Self = this.set("PrintEvenPagesInAscendingOrder", value.asInstanceOf[js.Any])
+    def setPrintOddPagesInAscendingOrder(value: Boolean): Self = StObject.set(x, "PrintOddPagesInAscendingOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintFieldCodes(value: Boolean): Self = this.set("PrintFieldCodes", value.asInstanceOf[js.Any])
+    def setPrintProperties(value: Boolean): Self = StObject.set(x, "PrintProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintHiddenText(value: Boolean): Self = this.set("PrintHiddenText", value.asInstanceOf[js.Any])
+    def setPrintReverse(value: Boolean): Self = StObject.set(x, "PrintReverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintOddPagesInAscendingOrder(value: Boolean): Self = this.set("PrintOddPagesInAscendingOrder", value.asInstanceOf[js.Any])
+    def setPrintXMLTag(value: Boolean): Self = StObject.set(x, "PrintXMLTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintProperties(value: Boolean): Self = this.set("PrintProperties", value.asInstanceOf[js.Any])
+    def setPromptUpdateStyle(value: Boolean): Self = StObject.set(x, "PromptUpdateStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintReverse(value: Boolean): Self = this.set("PrintReverse", value.asInstanceOf[js.Any])
+    def setRTFInClipboard(value: Boolean): Self = StObject.set(x, "RTFInClipboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintXMLTag(value: Boolean): Self = this.set("PrintXMLTag", value.asInstanceOf[js.Any])
+    def setRepeatWord(value: Boolean): Self = StObject.set(x, "RepeatWord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromptUpdateStyle(value: Boolean): Self = this.set("PromptUpdateStyle", value.asInstanceOf[js.Any])
+    def setReplaceSelection(value: Boolean): Self = StObject.set(x, "ReplaceSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRTFInClipboard(value: Boolean): Self = this.set("RTFInClipboard", value.asInstanceOf[js.Any])
+    def setRevisedLinesColor(value: WdColorIndex): Self = StObject.set(x, "RevisedLinesColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeatWord(value: Boolean): Self = this.set("RepeatWord", value.asInstanceOf[js.Any])
+    def setRevisedLinesMark(value: WdRevisedLinesMark): Self = StObject.set(x, "RevisedLinesMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplaceSelection(value: Boolean): Self = this.set("ReplaceSelection", value.asInstanceOf[js.Any])
+    def setRevisedPropertiesColor(value: WdColorIndex): Self = StObject.set(x, "RevisedPropertiesColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisedLinesColor(value: WdColorIndex): Self = this.set("RevisedLinesColor", value.asInstanceOf[js.Any])
+    def setRevisedPropertiesMark(value: WdRevisedPropertiesMark): Self = StObject.set(x, "RevisedPropertiesMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisedLinesMark(value: WdRevisedLinesMark): Self = this.set("RevisedLinesMark", value.asInstanceOf[js.Any])
+    def setRevisionsBalloonPrintOrientation(value: WdRevisionsBalloonPrintOrientation): Self = StObject.set(x, "RevisionsBalloonPrintOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisedPropertiesColor(value: WdColorIndex): Self = this.set("RevisedPropertiesColor", value.asInstanceOf[js.Any])
+    def setSaveInterval(value: Double): Self = StObject.set(x, "SaveInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisedPropertiesMark(value: WdRevisedPropertiesMark): Self = this.set("RevisedPropertiesMark", value.asInstanceOf[js.Any])
+    def setSaveNormalPrompt(value: Boolean): Self = StObject.set(x, "SaveNormalPrompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisionsBalloonPrintOrientation(value: WdRevisionsBalloonPrintOrientation): Self = this.set("RevisionsBalloonPrintOrientation", value.asInstanceOf[js.Any])
+    def setSavePropertiesPrompt(value: Boolean): Self = StObject.set(x, "SavePropertiesPrompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaveInterval(value: Double): Self = this.set("SaveInterval", value.asInstanceOf[js.Any])
+    def setSendMailAttach(value: Boolean): Self = StObject.set(x, "SendMailAttach", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaveNormalPrompt(value: Boolean): Self = this.set("SaveNormalPrompt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSavePropertiesPrompt(value: Boolean): Self = this.set("SavePropertiesPrompt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSendMailAttach(value: Boolean): Self = this.set("SendMailAttach", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSequenceCheck(value: Boolean): Self = this.set("SequenceCheck", value.asInstanceOf[js.Any])
+    def setSequenceCheck(value: Boolean): Self = StObject.set(x, "SequenceCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSetWPHelpOptions(
       value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("SetWPHelpOptions", js.Any.fromFunction6(value))
+    ): Self = StObject.set(x, "SetWPHelpOptions", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setShortMenuNames(value: Boolean): Self = this.set("ShortMenuNames", value.asInstanceOf[js.Any])
+    def setShortMenuNames(value: Boolean): Self = StObject.set(x, "ShortMenuNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowControlCharacters(value: Boolean): Self = this.set("ShowControlCharacters", value.asInstanceOf[js.Any])
+    def setShowControlCharacters(value: Boolean): Self = StObject.set(x, "ShowControlCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowDevTools(value: Boolean): Self = this.set("ShowDevTools", value.asInstanceOf[js.Any])
+    def setShowDevTools(value: Boolean): Self = StObject.set(x, "ShowDevTools", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowDiacritics(value: Boolean): Self = this.set("ShowDiacritics", value.asInstanceOf[js.Any])
+    def setShowDiacritics(value: Boolean): Self = StObject.set(x, "ShowDiacritics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFormatError(value: Boolean): Self = this.set("ShowFormatError", value.asInstanceOf[js.Any])
+    def setShowFormatError(value: Boolean): Self = StObject.set(x, "ShowFormatError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMarkupOpenSave(value: Boolean): Self = this.set("ShowMarkupOpenSave", value.asInstanceOf[js.Any])
+    def setShowMarkupOpenSave(value: Boolean): Self = StObject.set(x, "ShowMarkupOpenSave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMenuFloaties(value: Boolean): Self = this.set("ShowMenuFloaties", value.asInstanceOf[js.Any])
+    def setShowMenuFloaties(value: Boolean): Self = StObject.set(x, "ShowMenuFloaties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowReadabilityStatistics(value: Boolean): Self = this.set("ShowReadabilityStatistics", value.asInstanceOf[js.Any])
+    def setShowReadabilityStatistics(value: Boolean): Self = StObject.set(x, "ShowReadabilityStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowSelectionFloaties(value: Boolean): Self = this.set("ShowSelectionFloaties", value.asInstanceOf[js.Any])
+    def setShowSelectionFloaties(value: Boolean): Self = StObject.set(x, "ShowSelectionFloaties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmartCursoring(value: Boolean): Self = this.set("SmartCursoring", value.asInstanceOf[js.Any])
+    def setSmartCursoring(value: Boolean): Self = StObject.set(x, "SmartCursoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmartCutPaste(value: Boolean): Self = this.set("SmartCutPaste", value.asInstanceOf[js.Any])
+    def setSmartCutPaste(value: Boolean): Self = StObject.set(x, "SmartCutPaste", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmartParaSelection(value: Boolean): Self = this.set("SmartParaSelection", value.asInstanceOf[js.Any])
+    def setSmartParaSelection(value: Boolean): Self = StObject.set(x, "SmartParaSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapToGrid(value: Boolean): Self = this.set("SnapToGrid", value.asInstanceOf[js.Any])
+    def setSnapToGrid(value: Boolean): Self = StObject.set(x, "SnapToGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapToShapes(value: Boolean): Self = this.set("SnapToShapes", value.asInstanceOf[js.Any])
+    def setSnapToShapes(value: Boolean): Self = StObject.set(x, "SnapToShapes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpanishMode(value: WdSpanishSpeller): Self = this.set("SpanishMode", value.asInstanceOf[js.Any])
+    def setSpanishMode(value: WdSpanishSpeller): Self = StObject.set(x, "SpanishMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplitCellColor(value: WdCellColor): Self = this.set("SplitCellColor", value.asInstanceOf[js.Any])
+    def setSplitCellColor(value: WdCellColor): Self = StObject.set(x, "SplitCellColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoreRSIDOnSave(value: Boolean): Self = this.set("StoreRSIDOnSave", value.asInstanceOf[js.Any])
+    def setStoreRSIDOnSave(value: Boolean): Self = StObject.set(x, "StoreRSIDOnSave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrictFinalYaa(value: Boolean): Self = this.set("StrictFinalYaa", value.asInstanceOf[js.Any])
+    def setStrictFinalYaa(value: Boolean): Self = StObject.set(x, "StrictFinalYaa", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrictInitialAlefHamza(value: Boolean): Self = this.set("StrictInitialAlefHamza", value.asInstanceOf[js.Any])
+    def setStrictInitialAlefHamza(value: Boolean): Self = StObject.set(x, "StrictInitialAlefHamza", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrictRussianE(value: Boolean): Self = this.set("StrictRussianE", value.asInstanceOf[js.Any])
+    def setStrictRussianE(value: Boolean): Self = StObject.set(x, "StrictRussianE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrictTaaMarboota(value: Boolean): Self = this.set("StrictTaaMarboota", value.asInstanceOf[js.Any])
+    def setStrictTaaMarboota(value: Boolean): Self = StObject.set(x, "StrictTaaMarboota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestFromMainDictionaryOnly(value: Boolean): Self = this.set("SuggestFromMainDictionaryOnly", value.asInstanceOf[js.Any])
+    def setSuggestFromMainDictionaryOnly(value: Boolean): Self = StObject.set(x, "SuggestFromMainDictionaryOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestSpellingCorrections(value: Boolean): Self = this.set("SuggestSpellingCorrections", value.asInstanceOf[js.Any])
+    def setSuggestSpellingCorrections(value: Boolean): Self = StObject.set(x, "SuggestSpellingCorrections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabIndentKey(value: Boolean): Self = this.set("TabIndentKey", value.asInstanceOf[js.Any])
+    def setTabIndentKey(value: Boolean): Self = StObject.set(x, "TabIndentKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeNReplace(value: Boolean): Self = this.set("TypeNReplace", value.asInstanceOf[js.Any])
+    def setTypeNReplace(value: Boolean): Self = StObject.set(x, "TypeNReplace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateFieldsAtPrint(value: Boolean): Self = this.set("UpdateFieldsAtPrint", value.asInstanceOf[js.Any])
+    def setUpdateFieldsAtPrint(value: Boolean): Self = StObject.set(x, "UpdateFieldsAtPrint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateFieldsWithTrackedChangesAtPrint(value: Boolean): Self = this.set("UpdateFieldsWithTrackedChangesAtPrint", value.asInstanceOf[js.Any])
+    def setUpdateFieldsWithTrackedChangesAtPrint(value: Boolean): Self = StObject.set(x, "UpdateFieldsWithTrackedChangesAtPrint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateLinksAtOpen(value: Boolean): Self = this.set("UpdateLinksAtOpen", value.asInstanceOf[js.Any])
+    def setUpdateLinksAtOpen(value: Boolean): Self = StObject.set(x, "UpdateLinksAtOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateLinksAtPrint(value: Boolean): Self = this.set("UpdateLinksAtPrint", value.asInstanceOf[js.Any])
+    def setUpdateLinksAtPrint(value: Boolean): Self = StObject.set(x, "UpdateLinksAtPrint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateStyleListBehavior(value: WdUpdateStyleListBehavior): Self = this.set("UpdateStyleListBehavior", value.asInstanceOf[js.Any])
+    def setUpdateStyleListBehavior(value: WdUpdateStyleListBehavior): Self = StObject.set(x, "UpdateStyleListBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseCharacterUnit(value: Boolean): Self = this.set("UseCharacterUnit", value.asInstanceOf[js.Any])
+    def setUseCharacterUnit(value: Boolean): Self = StObject.set(x, "UseCharacterUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseDiffDiacColor(value: Boolean): Self = this.set("UseDiffDiacColor", value.asInstanceOf[js.Any])
+    def setUseDiffDiacColor(value: Boolean): Self = StObject.set(x, "UseDiffDiacColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseGermanSpellingReform(value: Boolean): Self = this.set("UseGermanSpellingReform", value.asInstanceOf[js.Any])
+    def setUseGermanSpellingReform(value: Boolean): Self = StObject.set(x, "UseGermanSpellingReform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseNormalStyleForList(value: Boolean): Self = this.set("UseNormalStyleForList", value.asInstanceOf[js.Any])
+    def setUseNormalStyleForList(value: Boolean): Self = StObject.set(x, "UseNormalStyleForList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirusProtection(value: Boolean): Self = this.set("VirusProtection", value.asInstanceOf[js.Any])
+    def setVirusProtection(value: Boolean): Self = StObject.set(x, "VirusProtection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisualSelection(value: WdVisualSelection): Self = this.set("VisualSelection", value.asInstanceOf[js.Any])
+    def setVisualSelection(value: WdVisualSelection): Self = StObject.set(x, "VisualSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWPDocNavKeys(value: Boolean): Self = this.set("WPDocNavKeys", value.asInstanceOf[js.Any])
+    def setWPDocNavKeys(value: Boolean): Self = StObject.set(x, "WPDocNavKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWPHelp(value: Boolean): Self = this.set("WPHelp", value.asInstanceOf[js.Any])
+    def setWPHelp(value: Boolean): Self = StObject.set(x, "WPHelp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWarnBeforeSavingPrintingSendingMarkup(value: Boolean): Self = this.set("WarnBeforeSavingPrintingSendingMarkup", value.asInstanceOf[js.Any])
+    def setWarnBeforeSavingPrintingSendingMarkup(value: Boolean): Self = StObject.set(x, "WarnBeforeSavingPrintingSendingMarkup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWordDotOptions_typekey(value: Options): Self = this.set("Word.Options_typekey", value.asInstanceOf[js.Any])
+    def setWordDotOptions_typekey(value: Options): Self = StObject.set(x, "Word.Options_typekey", value.asInstanceOf[js.Any])
   }
 }

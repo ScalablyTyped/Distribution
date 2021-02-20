@@ -3,12 +3,13 @@ package typings.devtoolsProtocol.mod.Protocol.Overlay
 import typings.devtoolsProtocol.mod.Protocol.DOM.BackendNodeId
 import typings.devtoolsProtocol.mod.Protocol.DOM.NodeId
 import typings.devtoolsProtocol.mod.Protocol.Runtime.RemoteObjectId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HighlightSourceOrderRequest extends js.Object {
+trait HighlightSourceOrderRequest extends StObject {
   
   /**
     * Identifier of the backend node to highlight.
@@ -39,39 +40,27 @@ object HighlightSourceOrderRequest {
   }
   
   @scala.inline
-  implicit class HighlightSourceOrderRequestOps[Self <: HighlightSourceOrderRequest] (val x: Self) extends AnyVal {
+  implicit class HighlightSourceOrderRequestMutableBuilder[Self <: HighlightSourceOrderRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceOrderConfig(value: SourceOrderConfig): Self = this.set("sourceOrderConfig", value.asInstanceOf[js.Any])
+    def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
     
     @scala.inline
-    def setBackendNodeId(value: BackendNodeId): Self = this.set("backendNodeId", value.asInstanceOf[js.Any])
+    def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackendNodeId: Self = this.set("backendNodeId", js.undefined)
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     @scala.inline
-    def setNodeId(value: NodeId): Self = this.set("nodeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeId: Self = this.set("nodeId", js.undefined)
-    
-    @scala.inline
-    def setObjectId(value: RemoteObjectId): Self = this.set("objectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    def setSourceOrderConfig(value: SourceOrderConfig): Self = StObject.set(x, "sourceOrderConfig", value.asInstanceOf[js.Any])
   }
 }

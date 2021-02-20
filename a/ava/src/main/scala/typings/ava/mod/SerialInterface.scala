@@ -1,11 +1,12 @@
 package typings.ava.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SerialInterface[Context] extends js.Object {
+trait SerialInterface[Context] extends StObject {
   
   /** Declare a serial test. */
   def apply(title: String, implementation: Implementation[Context]): Unit = js.native

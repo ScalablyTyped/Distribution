@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Activation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the execution state of the app. */
 @JSGlobal("Windows.ApplicationModel.Activation.ApplicationExecutionState")
 @js.native
-object ApplicationExecutionState extends js.Object {
+object ApplicationExecutionState extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

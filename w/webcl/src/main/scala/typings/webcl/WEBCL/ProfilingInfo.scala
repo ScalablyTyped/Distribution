@@ -4,6 +4,7 @@ import typings.webcl.webclNumbers.`0x1280`
 import typings.webcl.webclNumbers.`0x1281`
 import typings.webcl.webclNumbers.`0x1282`
 import typings.webcl.webclNumbers.`0x1283`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webcl.webclNumbers.`0x1282`
   - typings.webcl.webclNumbers.`0x1283`
 */
-trait ProfilingInfo extends js.Object
+trait ProfilingInfo extends StObject
 object ProfilingInfo {
   
   @scala.inline

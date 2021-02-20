@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.drawing
 
 import typings.kendoUi.kendo.geometry.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RadialGradientOptions extends js.Object {
+trait RadialGradientOptions extends StObject {
   
   var center: js.UndefOr[js.Any | Point] = js.native
   
@@ -25,42 +26,30 @@ object RadialGradientOptions {
   }
   
   @scala.inline
-  implicit class RadialGradientOptionsOps[Self <: RadialGradientOptions] (val x: Self) extends AnyVal {
+  implicit class RadialGradientOptionsMutableBuilder[Self <: RadialGradientOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: js.Any | Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: js.Any | Point): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setStops(value: js.Any): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
-    
-    @scala.inline
-    def setStops(value: js.Any): Self = this.set("stops", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStops: Self = this.set("stops", js.undefined)
+    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
   }
 }

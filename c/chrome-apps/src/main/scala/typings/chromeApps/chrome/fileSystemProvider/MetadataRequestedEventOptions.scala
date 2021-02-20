@@ -2,6 +2,7 @@ package typings.chromeApps.chrome.fileSystemProvider
 
 import typings.chromeApps.chrome.fileSystemProvider.internal.EntryPathRequestedEventOptions
 import typings.chromeApps.chrome.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,36 +64,24 @@ object MetadataRequestedEventOptions {
   }
   
   @scala.inline
-  implicit class MetadataRequestedEventOptionsOps[Self <: MetadataRequestedEventOptions] (val x: Self) extends AnyVal {
+  implicit class MetadataRequestedEventOptionsMutableBuilder[Self <: MetadataRequestedEventOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsDirectory(value: Boolean): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMimeType(value: Boolean): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModificationTime(value: Boolean): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDirectory(value: Boolean): Self = this.set("isDirectory", value.asInstanceOf[js.Any])
+    def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimeType(value: Boolean): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    def setSize(value: Boolean): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModificationTime(value: Boolean): Self = this.set("modificationTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: Boolean): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Boolean): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThumbnail(value: Boolean): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
+    def setThumbnail(value: Boolean): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
   }
 }

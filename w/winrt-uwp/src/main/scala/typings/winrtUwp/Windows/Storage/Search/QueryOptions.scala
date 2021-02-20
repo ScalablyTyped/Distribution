@@ -5,13 +5,14 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Storage.FileProperties.PropertyPrefetchOptions
 import typings.winrtUwp.Windows.Storage.FileProperties.ThumbnailMode
 import typings.winrtUwp.Windows.Storage.FileProperties.ThumbnailOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies the parameters of a search query for enumerating the contents of storage folders. */
 @js.native
-trait QueryOptions extends js.Object {
+trait QueryOptions extends StObject {
   
   /** Gets or sets an application-defined Advanced Query Syntax (AQS) string for filtering files by keywords or properties. This property is combined with the UserSearchFilter to create the query's search filter. */
   var applicationSearchFilter: String = js.native
@@ -94,60 +95,48 @@ object QueryOptions {
   }
   
   @scala.inline
-  implicit class QueryOptionsOps[Self <: QueryOptions] (val x: Self) extends AnyVal {
+  implicit class QueryOptionsMutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationSearchFilter(value: String): Self = StObject.set(x, "applicationSearchFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateStackOption(value: DateStackOption): Self = StObject.set(x, "dateStackOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileTypeFilter(value: IVector[String]): Self = StObject.set(x, "fileTypeFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationSearchFilter(value: String): Self = this.set("applicationSearchFilter", value.asInstanceOf[js.Any])
+    def setFolderDepth(value: FolderDepth): Self = StObject.set(x, "folderDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateStackOption(value: DateStackOption): Self = this.set("dateStackOption", value.asInstanceOf[js.Any])
+    def setGroupPropertyName(value: String): Self = StObject.set(x, "groupPropertyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileTypeFilter(value: IVector[String]): Self = this.set("fileTypeFilter", value.asInstanceOf[js.Any])
+    def setIndexerOption(value: IndexerOption): Self = StObject.set(x, "indexerOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolderDepth(value: FolderDepth): Self = this.set("folderDepth", value.asInstanceOf[js.Any])
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupPropertyName(value: String): Self = this.set("groupPropertyName", value.asInstanceOf[js.Any])
+    def setLoadFromString(value: String => Unit): Self = StObject.set(x, "loadFromString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIndexerOption(value: IndexerOption): Self = this.set("indexerOption", value.asInstanceOf[js.Any])
+    def setSaveToString(value: () => String): Self = StObject.set(x, "saveToString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setSetPropertyPrefetch(value: (PropertyPrefetchOptions, IIterable[String]) => Unit): Self = StObject.set(x, "setPropertyPrefetch", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLoadFromString(value: String => Unit): Self = this.set("loadFromString", js.Any.fromFunction1(value))
+    def setSetThumbnailPrefetch(value: (ThumbnailMode, Double, ThumbnailOptions) => Unit): Self = StObject.set(x, "setThumbnailPrefetch", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSaveToString(value: () => String): Self = this.set("saveToString", js.Any.fromFunction0(value))
+    def setSortOrder(value: IVector[SortEntry]): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetPropertyPrefetch(value: (PropertyPrefetchOptions, IIterable[String]) => Unit): Self = this.set("setPropertyPrefetch", js.Any.fromFunction2(value))
+    def setStorageProviderIdFilter(value: IVector[String]): Self = StObject.set(x, "storageProviderIdFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetThumbnailPrefetch(value: (ThumbnailMode, Double, ThumbnailOptions) => Unit): Self = this.set("setThumbnailPrefetch", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSortOrder(value: IVector[SortEntry]): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStorageProviderIdFilter(value: IVector[String]): Self = this.set("storageProviderIdFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserSearchFilter(value: String): Self = this.set("userSearchFilter", value.asInstanceOf[js.Any])
+    def setUserSearchFilter(value: String): Self = StObject.set(x, "userSearchFilter", value.asInstanceOf[js.Any])
   }
 }

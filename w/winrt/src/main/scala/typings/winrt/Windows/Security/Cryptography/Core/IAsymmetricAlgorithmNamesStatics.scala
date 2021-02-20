@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Security.Cryptography.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAsymmetricAlgorithmNamesStatics extends js.Object {
+trait IAsymmetricAlgorithmNamesStatics extends StObject {
   
   var dsaSha1: String = js.native
   
@@ -71,72 +72,60 @@ object IAsymmetricAlgorithmNamesStatics {
   }
   
   @scala.inline
-  implicit class IAsymmetricAlgorithmNamesStaticsOps[Self <: IAsymmetricAlgorithmNamesStatics] (val x: Self) extends AnyVal {
+  implicit class IAsymmetricAlgorithmNamesStaticsMutableBuilder[Self <: IAsymmetricAlgorithmNamesStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDsaSha1(value: String): Self = StObject.set(x, "dsaSha1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDsaSha256(value: String): Self = StObject.set(x, "dsaSha256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEcdsaP256Sha256(value: String): Self = StObject.set(x, "ecdsaP256Sha256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDsaSha1(value: String): Self = this.set("dsaSha1", value.asInstanceOf[js.Any])
+    def setEcdsaP384Sha384(value: String): Self = StObject.set(x, "ecdsaP384Sha384", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDsaSha256(value: String): Self = this.set("dsaSha256", value.asInstanceOf[js.Any])
+    def setEcdsaP521Sha512(value: String): Self = StObject.set(x, "ecdsaP521Sha512", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEcdsaP256Sha256(value: String): Self = this.set("ecdsaP256Sha256", value.asInstanceOf[js.Any])
+    def setRsaOaepSha1(value: String): Self = StObject.set(x, "rsaOaepSha1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEcdsaP384Sha384(value: String): Self = this.set("ecdsaP384Sha384", value.asInstanceOf[js.Any])
+    def setRsaOaepSha256(value: String): Self = StObject.set(x, "rsaOaepSha256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEcdsaP521Sha512(value: String): Self = this.set("ecdsaP521Sha512", value.asInstanceOf[js.Any])
+    def setRsaOaepSha384(value: String): Self = StObject.set(x, "rsaOaepSha384", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRsaOaepSha1(value: String): Self = this.set("rsaOaepSha1", value.asInstanceOf[js.Any])
+    def setRsaOaepSha512(value: String): Self = StObject.set(x, "rsaOaepSha512", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRsaOaepSha256(value: String): Self = this.set("rsaOaepSha256", value.asInstanceOf[js.Any])
+    def setRsaPkcs1(value: String): Self = StObject.set(x, "rsaPkcs1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRsaOaepSha384(value: String): Self = this.set("rsaOaepSha384", value.asInstanceOf[js.Any])
+    def setRsaSignPkcs1Sha1(value: String): Self = StObject.set(x, "rsaSignPkcs1Sha1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRsaOaepSha512(value: String): Self = this.set("rsaOaepSha512", value.asInstanceOf[js.Any])
+    def setRsaSignPkcs1Sha256(value: String): Self = StObject.set(x, "rsaSignPkcs1Sha256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRsaPkcs1(value: String): Self = this.set("rsaPkcs1", value.asInstanceOf[js.Any])
+    def setRsaSignPkcs1Sha384(value: String): Self = StObject.set(x, "rsaSignPkcs1Sha384", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRsaSignPkcs1Sha1(value: String): Self = this.set("rsaSignPkcs1Sha1", value.asInstanceOf[js.Any])
+    def setRsaSignPkcs1Sha512(value: String): Self = StObject.set(x, "rsaSignPkcs1Sha512", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRsaSignPkcs1Sha256(value: String): Self = this.set("rsaSignPkcs1Sha256", value.asInstanceOf[js.Any])
+    def setRsaSignPssSha1(value: String): Self = StObject.set(x, "rsaSignPssSha1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRsaSignPkcs1Sha384(value: String): Self = this.set("rsaSignPkcs1Sha384", value.asInstanceOf[js.Any])
+    def setRsaSignPssSha256(value: String): Self = StObject.set(x, "rsaSignPssSha256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRsaSignPkcs1Sha512(value: String): Self = this.set("rsaSignPkcs1Sha512", value.asInstanceOf[js.Any])
+    def setRsaSignPssSha384(value: String): Self = StObject.set(x, "rsaSignPssSha384", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRsaSignPssSha1(value: String): Self = this.set("rsaSignPssSha1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRsaSignPssSha256(value: String): Self = this.set("rsaSignPssSha256", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRsaSignPssSha384(value: String): Self = this.set("rsaSignPssSha384", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRsaSignPssSha512(value: String): Self = this.set("rsaSignPssSha512", value.asInstanceOf[js.Any])
+    def setRsaSignPssSha512(value: String): Self = StObject.set(x, "rsaSignPssSha512", value.asInstanceOf[js.Any])
   }
 }

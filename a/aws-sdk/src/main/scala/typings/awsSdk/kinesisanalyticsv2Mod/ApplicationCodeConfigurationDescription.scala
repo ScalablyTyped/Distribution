@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationCodeConfigurationDescription extends js.Object {
+trait ApplicationCodeConfigurationDescription extends StObject {
   
   /**
     * Describes details about the location and format of the application code.
@@ -26,27 +27,15 @@ object ApplicationCodeConfigurationDescription {
   }
   
   @scala.inline
-  implicit class ApplicationCodeConfigurationDescriptionOps[Self <: ApplicationCodeConfigurationDescription] (val x: Self) extends AnyVal {
+  implicit class ApplicationCodeConfigurationDescriptionMutableBuilder[Self <: ApplicationCodeConfigurationDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodeContentDescription(value: CodeContentDescription): Self = StObject.set(x, "CodeContentDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeContentDescriptionUndefined: Self = StObject.set(x, "CodeContentDescription", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCodeContentType(value: CodeContentType): Self = this.set("CodeContentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCodeContentDescription(value: CodeContentDescription): Self = this.set("CodeContentDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCodeContentDescription: Self = this.set("CodeContentDescription", js.undefined)
+    def setCodeContentType(value: CodeContentType): Self = StObject.set(x, "CodeContentType", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MonitoringBaselineConfig extends js.Object {
+trait MonitoringBaselineConfig extends StObject {
   
   /**
     * The baseline constraint file in Amazon S3 that the current monitoring job should validated against.
@@ -26,30 +27,18 @@ object MonitoringBaselineConfig {
   }
   
   @scala.inline
-  implicit class MonitoringBaselineConfigOps[Self <: MonitoringBaselineConfig] (val x: Self) extends AnyVal {
+  implicit class MonitoringBaselineConfigMutableBuilder[Self <: MonitoringBaselineConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstraintsResource(value: MonitoringConstraintsResource): Self = StObject.set(x, "ConstraintsResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstraintsResourceUndefined: Self = StObject.set(x, "ConstraintsResource", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatisticsResource(value: MonitoringStatisticsResource): Self = StObject.set(x, "StatisticsResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstraintsResource(value: MonitoringConstraintsResource): Self = this.set("ConstraintsResource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConstraintsResource: Self = this.set("ConstraintsResource", js.undefined)
-    
-    @scala.inline
-    def setStatisticsResource(value: MonitoringStatisticsResource): Self = this.set("StatisticsResource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatisticsResource: Self = this.set("StatisticsResource", js.undefined)
+    def setStatisticsResourceUndefined: Self = StObject.set(x, "StatisticsResource", js.undefined)
   }
 }

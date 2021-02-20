@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DestinationInfo extends js.Object {
+trait DestinationInfo extends StObject {
   
   /**
     * The ID of the resource created at the destination.
@@ -26,30 +27,18 @@ object DestinationInfo {
   }
   
   @scala.inline
-  implicit class DestinationInfoOps[Self <: DestinationInfo] (val x: Self) extends AnyVal {
+  implicit class DestinationInfoMutableBuilder[Self <: DestinationInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setService(value: NonEmptyString): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: NonEmptyString): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setService(value: NonEmptyString): Self = this.set("service", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

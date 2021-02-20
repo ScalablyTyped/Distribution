@@ -1,11 +1,12 @@
 package typings.evernote.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CcAddresses extends js.Object {
+trait CcAddresses extends StObject {
   
   var ccAddresses: js.UndefOr[js.Array[String]] = js.native
   
@@ -28,60 +29,48 @@ object CcAddresses {
   }
   
   @scala.inline
-  implicit class CcAddressesOps[Self <: CcAddresses] (val x: Self) extends AnyVal {
+  implicit class CcAddressesMutableBuilder[Self <: CcAddresses] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCcAddresses(value: js.Array[String]): Self = StObject.set(x, "ccAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCcAddressesUndefined: Self = StObject.set(x, "ccAddresses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCcAddressesVarargs(value: String*): Self = StObject.set(x, "ccAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setCcAddressesVarargs(value: String*): Self = this.set("ccAddresses", js.Array(value :_*))
+    def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCcAddresses(value: js.Array[String]): Self = this.set("ccAddresses", value.asInstanceOf[js.Any])
+    def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
     
     @scala.inline
-    def deleteCcAddresses: Self = this.set("ccAddresses", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuid(value: String): Self = this.set("guid", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteGuid: Self = this.set("guid", js.undefined)
+    def setNote(value: typings.evernote.mod.Types.Note): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNote(value: typings.evernote.mod.Types.Note): Self = this.set("note", value.asInstanceOf[js.Any])
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def deleteNote: Self = this.set("note", js.undefined)
+    def setToAddresses(value: js.Array[String]): Self = StObject.set(x, "toAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setToAddressesUndefined: Self = StObject.set(x, "toAddresses", js.undefined)
     
     @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
-    
-    @scala.inline
-    def setToAddressesVarargs(value: String*): Self = this.set("toAddresses", js.Array(value :_*))
-    
-    @scala.inline
-    def setToAddresses(value: js.Array[String]): Self = this.set("toAddresses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToAddresses: Self = this.set("toAddresses", js.undefined)
+    def setToAddressesVarargs(value: String*): Self = StObject.set(x, "toAddresses", js.Array(value :_*))
   }
 }

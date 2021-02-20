@@ -5,13 +5,12 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.jsDataAdapter.mod.Adapter
 import typings.jsDataAdapter.mod.IAdapterOpts
 import typings.jsDataAdapter.mod.IDict
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
   trait TypeofAdapter

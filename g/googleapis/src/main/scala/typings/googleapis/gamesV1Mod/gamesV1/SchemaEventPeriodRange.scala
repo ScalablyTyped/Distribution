@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for an event period time range.
   */
 @js.native
-trait SchemaEventPeriodRange extends js.Object {
+trait SchemaEventPeriodRange extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
@@ -37,36 +38,24 @@ object SchemaEventPeriodRange {
   }
   
   @scala.inline
-  implicit class SchemaEventPeriodRangeOps[Self <: SchemaEventPeriodRange] (val x: Self) extends AnyVal {
+  implicit class SchemaEventPeriodRangeMutableBuilder[Self <: SchemaEventPeriodRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPeriodEndMillis(value: String): Self = StObject.set(x, "periodEndMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPeriodEndMillisUndefined: Self = StObject.set(x, "periodEndMillis", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPeriodStartMillis(value: String): Self = StObject.set(x, "periodStartMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriodEndMillis(value: String): Self = this.set("periodEndMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeriodEndMillis: Self = this.set("periodEndMillis", js.undefined)
-    
-    @scala.inline
-    def setPeriodStartMillis(value: String): Self = this.set("periodStartMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeriodStartMillis: Self = this.set("periodStartMillis", js.undefined)
+    def setPeriodStartMillisUndefined: Self = StObject.set(x, "periodStartMillis", js.undefined)
   }
 }

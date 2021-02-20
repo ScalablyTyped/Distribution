@@ -2,12 +2,13 @@ package typings.minappEnv.wx
 
 import typings.minappEnv.Array
 import typings.minappEnv.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileSystemManager extends js.Object {
+trait FileSystemManager extends StObject {
   
   /** [FileSystemManager.access(Object object)](FileSystemManager.access.md)
     *

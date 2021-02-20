@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,60 +55,48 @@ object ExplanationOfBenefitPayment {
   }
   
   @scala.inline
-  implicit class ExplanationOfBenefitPaymentOps[Self <: ExplanationOfBenefitPayment] (val x: Self) extends AnyVal {
+  implicit class ExplanationOfBenefitPaymentMutableBuilder[Self <: ExplanationOfBenefitPayment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdjustment(value: Money): Self = StObject.set(x, "adjustment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdjustmentReason(value: CodeableConcept): Self = StObject.set(x, "adjustmentReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdjustmentReasonUndefined: Self = StObject.set(x, "adjustmentReason", js.undefined)
     
     @scala.inline
-    def set_date(value: Element): Self = this.set("_date", value.asInstanceOf[js.Any])
+    def setAdjustmentUndefined: Self = StObject.set(x, "adjustment", js.undefined)
     
     @scala.inline
-    def delete_date: Self = this.set("_date", js.undefined)
+    def setAmount(value: Money): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjustment(value: Money): Self = this.set("adjustment", value.asInstanceOf[js.Any])
+    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     @scala.inline
-    def deleteAdjustment: Self = this.set("adjustment", js.undefined)
+    def setDate(value: date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjustmentReason(value: CodeableConcept): Self = this.set("adjustmentReason", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def deleteAdjustmentReason: Self = this.set("adjustmentReason", js.undefined)
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: Money): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def deleteAmount: Self = this.set("amount", js.undefined)
+    def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
-    
-    @scala.inline
-    def setType(value: CodeableConcept): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
   }
 }

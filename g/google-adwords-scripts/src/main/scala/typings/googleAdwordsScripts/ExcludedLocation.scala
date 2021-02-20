@@ -1,5 +1,6 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ trait ExcludedLocation
   
   def getVideoCampaign(): Campaign = js.native
   
-   // TODO: VideoCampaign
+  // TODO: VideoCampaign
   def remove(): Unit = js.native
 }
 object ExcludedLocation {
@@ -45,42 +46,30 @@ object ExcludedLocation {
   }
   
   @scala.inline
-  implicit class ExcludedLocationOps[Self <: ExcludedLocation] (val x: Self) extends AnyVal {
+  implicit class ExcludedLocationMutableBuilder[Self <: ExcludedLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCampaignType(value: () => CampaignType): Self = StObject.set(x, "getCampaignType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCountryCode(value: () => String): Self = StObject.set(x, "getCountryCode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCampaignType(value: () => CampaignType): Self = this.set("getCampaignType", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCountryCode(value: () => String): Self = this.set("getCountryCode", js.Any.fromFunction0(value))
+    def setGetTargetType(value: () => TargetType): Self = StObject.set(x, "getTargetType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => Double): Self = this.set("getId", js.Any.fromFunction0(value))
+    def setGetTargetingStatus(value: () => TargetingStatus): Self = StObject.set(x, "getTargetingStatus", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    def setGetVideoCampaign(value: () => Campaign): Self = StObject.set(x, "getVideoCampaign", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTargetType(value: () => TargetType): Self = this.set("getTargetType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTargetingStatus(value: () => TargetingStatus): Self = this.set("getTargetingStatus", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetVideoCampaign(value: () => Campaign): Self = this.set("getVideoCampaign", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemove(value: () => Unit): Self = this.set("remove", js.Any.fromFunction0(value))
+    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }
 }

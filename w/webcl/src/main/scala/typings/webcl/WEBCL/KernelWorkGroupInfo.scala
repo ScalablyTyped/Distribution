@@ -5,6 +5,7 @@ import typings.webcl.webclNumbers.`0x11B1`
 import typings.webcl.webclNumbers.`0x11B2`
 import typings.webcl.webclNumbers.`0x11B3`
 import typings.webcl.webclNumbers.`0x11B4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webcl.webclNumbers.`0x11B3`
   - typings.webcl.webclNumbers.`0x11B4`
 */
-trait KernelWorkGroupInfo extends js.Object
+trait KernelWorkGroupInfo extends StObject
 object KernelWorkGroupInfo {
   
   @scala.inline

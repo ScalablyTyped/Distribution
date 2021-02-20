@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
   */
 @js.native
-trait PlusIoURLType extends js.Object {
+trait PlusIoURLType extends StObject {
   
   /**
     * 本地路径URL
@@ -46,36 +47,24 @@ object PlusIoURLType {
   }
   
   @scala.inline
-  implicit class PlusIoURLTypeOps[Self <: PlusIoURLType] (val x: Self) extends AnyVal {
+  implicit class PlusIoURLTypeMutableBuilder[Self <: PlusIoURLType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalURL(value: PlusIoLocalURL): Self = StObject.set(x, "LocalURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalURLUndefined: Self = StObject.set(x, "LocalURL", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelativeURL(value: PlusIoRelativeURL): Self = StObject.set(x, "RelativeURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalURL(value: PlusIoLocalURL): Self = this.set("LocalURL", value.asInstanceOf[js.Any])
+    def setRelativeURLUndefined: Self = StObject.set(x, "RelativeURL", js.undefined)
     
     @scala.inline
-    def deleteLocalURL: Self = this.set("LocalURL", js.undefined)
+    def setRomoteURL(value: String): Self = StObject.set(x, "RomoteURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeURL(value: PlusIoRelativeURL): Self = this.set("RelativeURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelativeURL: Self = this.set("RelativeURL", js.undefined)
-    
-    @scala.inline
-    def setRomoteURL(value: String): Self = this.set("RomoteURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRomoteURL: Self = this.set("RomoteURL", js.undefined)
+    def setRomoteURLUndefined: Self = StObject.set(x, "RomoteURL", js.undefined)
   }
 }

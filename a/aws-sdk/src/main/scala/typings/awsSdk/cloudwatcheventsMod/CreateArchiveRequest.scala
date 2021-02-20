@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatcheventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateArchiveRequest extends js.Object {
+trait CreateArchiveRequest extends StObject {
   
   /**
     * The name for the archive to create.
@@ -41,42 +42,30 @@ object CreateArchiveRequest {
   }
   
   @scala.inline
-  implicit class CreateArchiveRequestOps[Self <: CreateArchiveRequest] (val x: Self) extends AnyVal {
+  implicit class CreateArchiveRequestMutableBuilder[Self <: CreateArchiveRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchiveName(value: ArchiveName): Self = StObject.set(x, "ArchiveName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: ArchiveDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setArchiveName(value: ArchiveName): Self = this.set("ArchiveName", value.asInstanceOf[js.Any])
+    def setEventPattern(value: EventPattern): Self = StObject.set(x, "EventPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventSourceArn(value: Arn): Self = this.set("EventSourceArn", value.asInstanceOf[js.Any])
+    def setEventPatternUndefined: Self = StObject.set(x, "EventPattern", js.undefined)
     
     @scala.inline
-    def setDescription(value: ArchiveDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEventSourceArn(value: Arn): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setRetentionDays(value: RetentionDays): Self = StObject.set(x, "RetentionDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventPattern(value: EventPattern): Self = this.set("EventPattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventPattern: Self = this.set("EventPattern", js.undefined)
-    
-    @scala.inline
-    def setRetentionDays(value: RetentionDays): Self = this.set("RetentionDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetentionDays: Self = this.set("RetentionDays", js.undefined)
+    def setRetentionDaysUndefined: Self = StObject.set(x, "RetentionDays", js.undefined)
   }
 }

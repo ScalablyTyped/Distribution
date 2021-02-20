@@ -7,16 +7,16 @@ import typings.babylonjs.octreeBlockMod.OctreeBlock
 import typings.babylonjs.rayMod.Ray
 import typings.babylonjs.smartArrayMod.SmartArray
 import typings.babylonjs.subMeshMod.SubMesh
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Culling/Octrees/octree", JSImport.Namespace)
-@js.native
-object octreeMod extends js.Object {
+object octreeMod {
   
+  @JSImport("babylonjs/Culling/Octrees/octree", "Octree")
   @js.native
-  class Octree[T] protected () extends js.Object {
+  class Octree[T] protected () extends StObject {
     /**
       * Creates a octree
       * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
@@ -108,17 +108,20 @@ object octreeMod extends js.Object {
     def update(worldMin: Vector3, worldMax: Vector3, entries: js.Array[T]): Unit = js.native
   }
   /* static members */
-  @js.native
-  object Octree extends js.Object {
+  object Octree {
     
     /**
       * Adds a mesh into the octree block if it intersects the block
       */
+    @JSImport("babylonjs/Culling/Octrees/octree", "Octree.CreationFuncForMeshes")
+    @js.native
     def CreationFuncForMeshes(entry: AbstractMesh, block: OctreeBlock[AbstractMesh]): Unit = js.native
     
     /**
       * Adds a submesh into the octree block if it intersects the block
       */
+    @JSImport("babylonjs/Culling/Octrees/octree", "Octree.CreationFuncForSubMeshes")
+    @js.native
     def CreationFuncForSubMeshes(entry: SubMesh, block: OctreeBlock[SubMesh]): Unit = js.native
   }
 }

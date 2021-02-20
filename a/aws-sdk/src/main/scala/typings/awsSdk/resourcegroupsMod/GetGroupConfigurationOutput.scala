@@ -1,11 +1,12 @@
 package typings.awsSdk.resourcegroupsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetGroupConfigurationOutput extends js.Object {
+trait GetGroupConfigurationOutput extends StObject {
   
   /**
     * The configuration associated with the specified group.
@@ -21,24 +22,12 @@ object GetGroupConfigurationOutput {
   }
   
   @scala.inline
-  implicit class GetGroupConfigurationOutputOps[Self <: GetGroupConfigurationOutput] (val x: Self) extends AnyVal {
+  implicit class GetGroupConfigurationOutputMutableBuilder[Self <: GetGroupConfigurationOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupConfiguration(value: GroupConfiguration): Self = StObject.set(x, "GroupConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGroupConfiguration(value: GroupConfiguration): Self = this.set("GroupConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupConfiguration: Self = this.set("GroupConfiguration", js.undefined)
+    def setGroupConfigurationUndefined: Self = StObject.set(x, "GroupConfiguration", js.undefined)
   }
 }

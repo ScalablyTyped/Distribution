@@ -3,6 +3,7 @@ package typings.cytoscape.mod
 import typings.cytoscape.cytoscapeStrings.complete
 import typings.cytoscape.cytoscapeStrings.completed
 import typings.cytoscape.cytoscapeStrings.frame
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#animations/animation-manipulation
   */
 @js.native
-trait AnimationManipulation extends js.Object {
+trait AnimationManipulation extends StObject {
   
   /**
     * Apply the animation at its current progress.

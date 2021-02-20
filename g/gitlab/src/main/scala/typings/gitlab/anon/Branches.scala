@@ -49,12 +49,13 @@ import typings.gitlab.servicesMod.Services
 import typings.gitlab.servicesMod.Tags
 import typings.gitlab.servicesMod.Triggers
 import typings.gitlab.servicesMod.VulnerabilityFindings
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Branches extends js.Object {
+trait Branches extends StObject {
   
   var Branches: Instantiable0[typings.gitlab.servicesMod.Branches] = js.native
   
@@ -225,164 +226,152 @@ object Branches {
   }
   
   @scala.inline
-  implicit class BranchesOps[Self <: Branches] (val x: Self) extends AnyVal {
+  implicit class BranchesMutableBuilder[Self <: Branches] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBranches(value: Instantiable0[typings.gitlab.servicesMod.Branches]): Self = this.set("Branches", value.asInstanceOf[js.Any])
+    def setBranches(value: Instantiable0[typings.gitlab.servicesMod.Branches]): Self = StObject.set(x, "Branches", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCommitDiscussions(
       value: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.servicesMod.CommitDiscussions]
-    ): Self = this.set("CommitDiscussions", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "CommitDiscussions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommits(value: Instantiable0[Commits]): Self = this.set("Commits", value.asInstanceOf[js.Any])
+    def setCommits(value: Instantiable0[Commits]): Self = StObject.set(x, "Commits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerRegistry(value: Instantiable0[ContainerRegistry]): Self = this.set("ContainerRegistry", value.asInstanceOf[js.Any])
+    def setContainerRegistry(value: Instantiable0[ContainerRegistry]): Self = StObject.set(x, "ContainerRegistry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeployKeys(value: Instantiable0[DeployKeys]): Self = this.set("DeployKeys", value.asInstanceOf[js.Any])
+    def setDeployKeys(value: Instantiable0[DeployKeys]): Self = StObject.set(x, "DeployKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeployments(value: Instantiable0[Deployments]): Self = this.set("Deployments", value.asInstanceOf[js.Any])
+    def setDeployments(value: Instantiable0[Deployments]): Self = StObject.set(x, "Deployments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironments(value: Instantiable0[Environments]): Self = this.set("Environments", value.asInstanceOf[js.Any])
+    def setEnvironments(value: Instantiable0[Environments]): Self = StObject.set(x, "Environments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssueAwardEmojis(value: Instantiable1[/* options */ BaseServiceOptions, IssueAwardEmojis]): Self = this.set("IssueAwardEmojis", value.asInstanceOf[js.Any])
+    def setIssueAwardEmojis(value: Instantiable1[/* options */ BaseServiceOptions, IssueAwardEmojis]): Self = StObject.set(x, "IssueAwardEmojis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssueDiscussions(value: Instantiable1[/* options */ BaseServiceOptions, IssueDiscussions]): Self = this.set("IssueDiscussions", value.asInstanceOf[js.Any])
+    def setIssueDiscussions(value: Instantiable1[/* options */ BaseServiceOptions, IssueDiscussions]): Self = StObject.set(x, "IssueDiscussions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssueNotes(value: Instantiable1[/* options */ BaseServiceOptions, IssueNotes]): Self = this.set("IssueNotes", value.asInstanceOf[js.Any])
+    def setIssueNotes(value: Instantiable1[/* options */ BaseServiceOptions, IssueNotes]): Self = StObject.set(x, "IssueNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssues(value: Instantiable0[Issues]): Self = this.set("Issues", value.asInstanceOf[js.Any])
+    def setIssues(value: Instantiable0[Issues]): Self = StObject.set(x, "Issues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuesStatistics(value: Instantiable0[IssuesStatistics]): Self = this.set("IssuesStatistics", value.asInstanceOf[js.Any])
+    def setIssuesStatistics(value: Instantiable0[IssuesStatistics]): Self = StObject.set(x, "IssuesStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobs(value: Instantiable0[Jobs]): Self = this.set("Jobs", value.asInstanceOf[js.Any])
+    def setJobs(value: Instantiable0[Jobs]): Self = StObject.set(x, "Jobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: Instantiable1[/* options */ BaseServiceOptions, Labels]): Self = this.set("Labels", value.asInstanceOf[js.Any])
+    def setLabels(value: Instantiable1[/* options */ BaseServiceOptions, Labels]): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeRequestAwardEmojis(value: Instantiable1[/* options */ BaseServiceOptions, MergeRequestAwardEmojis]): Self = this.set("MergeRequestAwardEmojis", value.asInstanceOf[js.Any])
+    def setMergeRequestAwardEmojis(value: Instantiable1[/* options */ BaseServiceOptions, MergeRequestAwardEmojis]): Self = StObject.set(x, "MergeRequestAwardEmojis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeRequestDiscussions(value: Instantiable1[/* options */ BaseServiceOptions, MergeRequestDiscussions]): Self = this.set("MergeRequestDiscussions", value.asInstanceOf[js.Any])
+    def setMergeRequestDiscussions(value: Instantiable1[/* options */ BaseServiceOptions, MergeRequestDiscussions]): Self = StObject.set(x, "MergeRequestDiscussions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeRequestNotes(value: Instantiable1[/* options */ BaseServiceOptions, MergeRequestNotes]): Self = this.set("MergeRequestNotes", value.asInstanceOf[js.Any])
+    def setMergeRequestNotes(value: Instantiable1[/* options */ BaseServiceOptions, MergeRequestNotes]): Self = StObject.set(x, "MergeRequestNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeRequests(value: Instantiable0[MergeRequests]): Self = this.set("MergeRequests", value.asInstanceOf[js.Any])
+    def setMergeRequests(value: Instantiable0[MergeRequests]): Self = StObject.set(x, "MergeRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackages(value: Instantiable0[Packages]): Self = this.set("Packages", value.asInstanceOf[js.Any])
+    def setPackages(value: Instantiable0[Packages]): Self = StObject.set(x, "Packages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipelineScheduleVariables(value: Instantiable0[PipelineScheduleVariables]): Self = this.set("PipelineScheduleVariables", value.asInstanceOf[js.Any])
+    def setPipelineScheduleVariables(value: Instantiable0[PipelineScheduleVariables]): Self = StObject.set(x, "PipelineScheduleVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipelineSchedules(value: Instantiable0[PipelineSchedules]): Self = this.set("PipelineSchedules", value.asInstanceOf[js.Any])
+    def setPipelineSchedules(value: Instantiable0[PipelineSchedules]): Self = StObject.set(x, "PipelineSchedules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipelines(value: Instantiable0[Pipelines]): Self = this.set("Pipelines", value.asInstanceOf[js.Any])
+    def setPipelines(value: Instantiable0[Pipelines]): Self = StObject.set(x, "Pipelines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectAccessRequests(value: Instantiable1[/* options */ BaseServiceOptions, ProjectAccessRequests]): Self = this.set("ProjectAccessRequests", value.asInstanceOf[js.Any])
+    def setProjectAccessRequests(value: Instantiable1[/* options */ BaseServiceOptions, ProjectAccessRequests]): Self = StObject.set(x, "ProjectAccessRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectBadges(value: Instantiable1[/* options */ BaseServiceOptions, ProjectBadges]): Self = this.set("ProjectBadges", value.asInstanceOf[js.Any])
+    def setProjectBadges(value: Instantiable1[/* options */ BaseServiceOptions, ProjectBadges]): Self = StObject.set(x, "ProjectBadges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectCustomAttributes(value: Instantiable1[/* options */ BaseServiceOptions, ProjectCustomAttributes]): Self = this.set("ProjectCustomAttributes", value.asInstanceOf[js.Any])
+    def setProjectCustomAttributes(value: Instantiable1[/* options */ BaseServiceOptions, ProjectCustomAttributes]): Self = StObject.set(x, "ProjectCustomAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectHooks(value: Instantiable0[ProjectHooks]): Self = this.set("ProjectHooks", value.asInstanceOf[js.Any])
+    def setProjectHooks(value: Instantiable0[ProjectHooks]): Self = StObject.set(x, "ProjectHooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectImportExport(value: Instantiable0[ProjectImportExport]): Self = this.set("ProjectImportExport", value.asInstanceOf[js.Any])
+    def setProjectImportExport(value: Instantiable0[ProjectImportExport]): Self = StObject.set(x, "ProjectImportExport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectIssueBoards(value: Instantiable1[/* options */ BaseServiceOptions, ProjectIssueBoards]): Self = this.set("ProjectIssueBoards", value.asInstanceOf[js.Any])
+    def setProjectIssueBoards(value: Instantiable1[/* options */ BaseServiceOptions, ProjectIssueBoards]): Self = StObject.set(x, "ProjectIssueBoards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectMembers(value: Instantiable1[/* options */ BaseServiceOptions, ProjectMembers]): Self = this.set("ProjectMembers", value.asInstanceOf[js.Any])
+    def setProjectMembers(value: Instantiable1[/* options */ BaseServiceOptions, ProjectMembers]): Self = StObject.set(x, "ProjectMembers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectMilestones(value: Instantiable1[/* options */ BaseServiceOptions, ProjectMilestones]): Self = this.set("ProjectMilestones", value.asInstanceOf[js.Any])
+    def setProjectMilestones(value: Instantiable1[/* options */ BaseServiceOptions, ProjectMilestones]): Self = StObject.set(x, "ProjectMilestones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectSnippetAwardEmojis(value: Instantiable1[/* options */ BaseServiceOptions, ProjectSnippetAwardEmojis]): Self = this.set("ProjectSnippetAwardEmojis", value.asInstanceOf[js.Any])
+    def setProjectSnippetAwardEmojis(value: Instantiable1[/* options */ BaseServiceOptions, ProjectSnippetAwardEmojis]): Self = StObject.set(x, "ProjectSnippetAwardEmojis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectSnippetDiscussions(value: Instantiable1[/* options */ BaseServiceOptions, ProjectSnippetDiscussions]): Self = this.set("ProjectSnippetDiscussions", value.asInstanceOf[js.Any])
+    def setProjectSnippetDiscussions(value: Instantiable1[/* options */ BaseServiceOptions, ProjectSnippetDiscussions]): Self = StObject.set(x, "ProjectSnippetDiscussions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectSnippetNotes(value: Instantiable1[/* options */ BaseServiceOptions, ProjectSnippetNotes]): Self = this.set("ProjectSnippetNotes", value.asInstanceOf[js.Any])
+    def setProjectSnippetNotes(value: Instantiable1[/* options */ BaseServiceOptions, ProjectSnippetNotes]): Self = StObject.set(x, "ProjectSnippetNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectSnippets(value: Instantiable0[ProjectSnippets]): Self = this.set("ProjectSnippets", value.asInstanceOf[js.Any])
+    def setProjectSnippets(value: Instantiable0[ProjectSnippets]): Self = StObject.set(x, "ProjectSnippets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectVariables(value: Instantiable1[/* options */ BaseServiceOptions, ProjectVariables]): Self = this.set("ProjectVariables", value.asInstanceOf[js.Any])
+    def setProjectVariables(value: Instantiable1[/* options */ BaseServiceOptions, ProjectVariables]): Self = StObject.set(x, "ProjectVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjects(value: Instantiable0[Projects]): Self = this.set("Projects", value.asInstanceOf[js.Any])
+    def setProjects(value: Instantiable0[Projects]): Self = StObject.set(x, "Projects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtectedBranches(value: Instantiable0[ProtectedBranches]): Self = this.set("ProtectedBranches", value.asInstanceOf[js.Any])
+    def setProtectedBranches(value: Instantiable0[ProtectedBranches]): Self = StObject.set(x, "ProtectedBranches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtectedTags(value: Instantiable0[ProtectedTags]): Self = this.set("ProtectedTags", value.asInstanceOf[js.Any])
+    def setProtectedTags(value: Instantiable0[ProtectedTags]): Self = StObject.set(x, "ProtectedTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPushRules(value: Instantiable0[PushRules]): Self = this.set("PushRules", value.asInstanceOf[js.Any])
+    def setPushRules(value: Instantiable0[PushRules]): Self = StObject.set(x, "PushRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseLinks(value: Instantiable0[ReleaseLinks]): Self = this.set("ReleaseLinks", value.asInstanceOf[js.Any])
+    def setReleaseLinks(value: Instantiable0[ReleaseLinks]): Self = StObject.set(x, "ReleaseLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleases(value: Instantiable0[Releases]): Self = this.set("Releases", value.asInstanceOf[js.Any])
+    def setReleases(value: Instantiable0[Releases]): Self = StObject.set(x, "Releases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositories(value: Instantiable0[Repositories]): Self = this.set("Repositories", value.asInstanceOf[js.Any])
+    def setRepositories(value: Instantiable0[Repositories]): Self = StObject.set(x, "Repositories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryFiles(value: Instantiable0[RepositoryFiles]): Self = this.set("RepositoryFiles", value.asInstanceOf[js.Any])
+    def setRepositoryFiles(value: Instantiable0[RepositoryFiles]): Self = StObject.set(x, "RepositoryFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunners(value: Instantiable0[Runners]): Self = this.set("Runners", value.asInstanceOf[js.Any])
+    def setRunners(value: Instantiable0[Runners]): Self = StObject.set(x, "Runners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServices(value: Instantiable0[Services]): Self = this.set("Services", value.asInstanceOf[js.Any])
+    def setServices(value: Instantiable0[Services]): Self = StObject.set(x, "Services", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Instantiable0[Tags]): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setTags(value: Instantiable0[Tags]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggers(value: Instantiable0[Triggers]): Self = this.set("Triggers", value.asInstanceOf[js.Any])
+    def setTriggers(value: Instantiable0[Triggers]): Self = StObject.set(x, "Triggers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVulnerabilityFindings(value: Instantiable0[VulnerabilityFindings]): Self = this.set("VulnerabilityFindings", value.asInstanceOf[js.Any])
+    def setVulnerabilityFindings(value: Instantiable0[VulnerabilityFindings]): Self = StObject.set(x, "VulnerabilityFindings", value.asInstanceOf[js.Any])
   }
 }

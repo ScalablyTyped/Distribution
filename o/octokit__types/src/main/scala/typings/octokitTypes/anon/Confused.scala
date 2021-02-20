@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Confused extends js.Object {
+trait Confused extends StObject {
   
   var `-1`: Double = js.native
   
@@ -44,42 +45,30 @@ object Confused {
   }
   
   @scala.inline
-  implicit class ConfusedOps[Self <: Confused] (val x: Self) extends AnyVal {
+  implicit class ConfusedMutableBuilder[Self <: Confused] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `set-1`(value: Double): Self = StObject.set(x, "-1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfused(value: Double): Self = StObject.set(x, "confused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeart(value: Double): Self = StObject.set(x, "heart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set-1`(value: Double): Self = this.set("-1", value.asInstanceOf[js.Any])
+    def setHooray(value: Double): Self = StObject.set(x, "hooray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlussign1(value: Double): Self = this.set("+1", value.asInstanceOf[js.Any])
+    def setLaugh(value: Double): Self = StObject.set(x, "laugh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfused(value: Double): Self = this.set("confused", value.asInstanceOf[js.Any])
+    def setPlussign1(value: Double): Self = StObject.set(x, "+1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeart(value: Double): Self = this.set("heart", value.asInstanceOf[js.Any])
+    def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHooray(value: Double): Self = this.set("hooray", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLaugh(value: Double): Self = this.set("laugh", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_count(value: Double): Self = this.set("total_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

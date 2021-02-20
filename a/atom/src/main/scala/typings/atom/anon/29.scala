@@ -5,12 +5,13 @@ import typings.atom.atomStrings.never
 import typings.atom.atomStrings.overlap
 import typings.atom.atomStrings.surround
 import typings.atom.atomStrings.touch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `29` extends js.Object {
+trait `29` extends StObject {
   
   var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.native
 }
@@ -23,24 +24,12 @@ object `29` {
   }
   
   @scala.inline
-  implicit class `29Ops`[Self <: `29`] (val x: Self) extends AnyVal {
+  implicit class `29MutableBuilder`[Self <: `29`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInvalidate(value: never | surround | overlap | inside | touch): Self = this.set("invalidate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvalidate: Self = this.set("invalidate", js.undefined)
+    def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
   }
 }

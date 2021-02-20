@@ -2,6 +2,8 @@ package typings.mongodb.mod
 
 import typings.node.Buffer
 import typings.node.streamMod.Readable
+import typings.node.streamMod.ReadableOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mongodb", "CommandCursor")
 @js.native
 class CommandCursor () extends Readable {
+  def this(opts: ReadableOptions) = this()
   
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#batchSize */
   def batchSize(value: scala.Double): CommandCursor = js.native

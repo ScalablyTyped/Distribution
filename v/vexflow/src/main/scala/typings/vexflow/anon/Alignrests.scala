@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Alignrests extends js.Object {
+trait Alignrests extends StObject {
   
   var align_rests: Boolean = js.native
   
@@ -20,24 +21,12 @@ object Alignrests {
   }
   
   @scala.inline
-  implicit class AlignrestsOps[Self <: Alignrests] (val x: Self) extends AnyVal {
+  implicit class AlignrestsMutableBuilder[Self <: Alignrests] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign_rests(value: Boolean): Self = StObject.set(x, "align_rests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlign_rests(value: Boolean): Self = this.set("align_rests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAuto_beam(value: Boolean): Self = this.set("auto_beam", value.asInstanceOf[js.Any])
+    def setAuto_beam(value: Boolean): Self = StObject.set(x, "auto_beam", value.asInstanceOf[js.Any])
   }
 }

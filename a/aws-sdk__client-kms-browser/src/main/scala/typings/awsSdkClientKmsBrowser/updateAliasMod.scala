@@ -1,12 +1,13 @@
 package typings.awsSdkClientKmsBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-browser/model/UpdateAlias", JSImport.Namespace)
-@js.native
-object updateAliasMod extends js.Object {
+object updateAliasMod {
   
+  @JSImport("@aws-sdk/client-kms-browser/model/UpdateAlias", "UpdateAlias")
+  @js.native
   val UpdateAlias: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
 }

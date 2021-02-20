@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderShipmentScheduledDeliveryDetails extends js.Object {
+trait OrderShipmentScheduledDeliveryDetails extends StObject {
   
   /** The phone number of the carrier fulfilling the delivery. The phone number is formatted as the international notation in ITU-T Recommendation E.123 (e.g., "+41 44 668 1800"). */
   var carrierPhoneNumber: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object OrderShipmentScheduledDeliveryDetails {
   }
   
   @scala.inline
-  implicit class OrderShipmentScheduledDeliveryDetailsOps[Self <: OrderShipmentScheduledDeliveryDetails] (val x: Self) extends AnyVal {
+  implicit class OrderShipmentScheduledDeliveryDetailsMutableBuilder[Self <: OrderShipmentScheduledDeliveryDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCarrierPhoneNumber(value: String): Self = StObject.set(x, "carrierPhoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCarrierPhoneNumberUndefined: Self = StObject.set(x, "carrierPhoneNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScheduledDate(value: String): Self = StObject.set(x, "scheduledDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarrierPhoneNumber(value: String): Self = this.set("carrierPhoneNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCarrierPhoneNumber: Self = this.set("carrierPhoneNumber", js.undefined)
-    
-    @scala.inline
-    def setScheduledDate(value: String): Self = this.set("scheduledDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduledDate: Self = this.set("scheduledDate", js.undefined)
+    def setScheduledDateUndefined: Self = StObject.set(x, "scheduledDate", js.undefined)
   }
 }

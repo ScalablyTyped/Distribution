@@ -1,5 +1,6 @@
 package typings.remarkable.libMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object ContentToken {
   }
   
   @scala.inline
-  implicit class ContentTokenOps[Self <: ContentToken] (val x: Self) extends AnyVal {
+  implicit class ContentTokenMutableBuilder[Self <: ContentToken] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlock(value: Boolean): Self = this.set("block", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBlock: Self = this.set("block", js.undefined)
-    
-    @scala.inline
-    def setContent(value: js.Any): Self = this.set("content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
   }
 }

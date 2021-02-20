@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CIMExpressionInfo extends js.Object {
+trait CIMExpressionInfo extends StObject {
   
   /**
     * The Arcade expression used to evaluate and return the value that a property expects.
@@ -41,47 +42,35 @@ object CIMExpressionInfo {
   }
   
   @scala.inline
-  implicit class CIMExpressionInfoOps[Self <: CIMExpressionInfo] (val x: Self) extends AnyVal {
+  implicit class CIMExpressionInfoMutableBuilder[Self <: CIMExpressionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMExpressionInfo): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExpression(value: String): Self = this.set("expression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpression: Self = this.set("expression", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
     def setReturnType(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExpressionReturnType * / any */ String
-    ): Self = this.set("returnType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReturnType: Self = this.set("returnType", js.undefined)
+    def setReturnTypeUndefined: Self = StObject.set(x, "returnType", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    @scala.inline
+    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMExpressionInfo): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

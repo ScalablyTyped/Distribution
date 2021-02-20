@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgUploadMethods extends js.Object {
+trait IgUploadMethods extends StObject {
   
   /**
     * Append additional data field to formData(before submitting it to the server). Usually this function is used in the handler of the event onFormDataSubmit. If the browser supports HTML5 file API formData is instance of FormData, otherwise(like IE10 and older) formData is jQuery representation of the <form> that should be submitted to the server
@@ -115,60 +116,48 @@ object IgUploadMethods {
   }
   
   @scala.inline
-  implicit class IgUploadMethodsOps[Self <: IgUploadMethods] (val x: Self) extends AnyVal {
+  implicit class IgUploadMethodsMutableBuilder[Self <: IgUploadMethods] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddDataField(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "addDataField", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddDataFields(value: (js.Object, js.Array[_]) => Unit): Self = StObject.set(x, "addDataFields", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancelAll(value: () => Unit): Self = StObject.set(x, "cancelAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddDataField(value: (js.Object, js.Object) => Unit): Self = this.set("addDataField", js.Any.fromFunction2(value))
+    def setCancelUpload(value: Double => Unit): Self = StObject.set(x, "cancelUpload", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddDataFields(value: (js.Object, js.Array[_]) => Unit): Self = this.set("addDataFields", js.Any.fromFunction2(value))
+    def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCancelAll(value: () => Unit): Self = this.set("cancelAll", js.Any.fromFunction0(value))
+    def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCancelUpload(value: Double => Unit): Self = this.set("cancelUpload", js.Any.fromFunction1(value))
+    def setChangeLocale(value: () => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeGlobalLanguage(value: () => Unit): Self = this.set("changeGlobalLanguage", js.Any.fromFunction0(value))
+    def setClearAll(value: () => Unit): Self = StObject.set(x, "clearAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeGlobalRegional(value: () => Unit): Self = this.set("changeGlobalRegional", js.Any.fromFunction0(value))
+    def setContainer(value: () => Unit): Self = StObject.set(x, "container", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeLocale(value: () => Unit): Self = this.set("changeLocale", js.Any.fromFunction0(value))
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearAll(value: () => Unit): Self = this.set("clearAll", js.Any.fromFunction0(value))
+    def setGetFileInfo(value: Double => js.Object): Self = StObject.set(x, "getFileInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContainer(value: () => Unit): Self = this.set("container", js.Any.fromFunction0(value))
+    def setGetFileInfoData(value: () => js.Object): Self = StObject.set(x, "getFileInfoData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setStartUpload(value: Double => Unit): Self = StObject.set(x, "startUpload", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFileInfo(value: Double => js.Object): Self = this.set("getFileInfo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetFileInfoData(value: () => js.Object): Self = this.set("getFileInfoData", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStartUpload(value: Double => Unit): Self = this.set("startUpload", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWidget(value: () => Unit): Self = this.set("widget", js.Any.fromFunction0(value))
+    def setWidget(value: () => Unit): Self = StObject.set(x, "widget", js.Any.fromFunction0(value))
   }
 }

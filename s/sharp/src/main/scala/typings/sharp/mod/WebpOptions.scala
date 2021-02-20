@@ -1,5 +1,6 @@
 package typings.sharp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,48 +34,36 @@ object WebpOptions {
   }
   
   @scala.inline
-  implicit class WebpOptionsOps[Self <: WebpOptions] (val x: Self) extends AnyVal {
+  implicit class WebpOptionsMutableBuilder[Self <: WebpOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlphaQuality(value: Double): Self = StObject.set(x, "alphaQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlphaQualityUndefined: Self = StObject.set(x, "alphaQuality", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLossless(value: Boolean): Self = StObject.set(x, "lossless", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlphaQuality(value: Double): Self = this.set("alphaQuality", value.asInstanceOf[js.Any])
+    def setLosslessUndefined: Self = StObject.set(x, "lossless", js.undefined)
     
     @scala.inline
-    def deleteAlphaQuality: Self = this.set("alphaQuality", js.undefined)
+    def setNearLossless(value: Boolean): Self = StObject.set(x, "nearLossless", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLossless(value: Boolean): Self = this.set("lossless", value.asInstanceOf[js.Any])
+    def setNearLosslessUndefined: Self = StObject.set(x, "nearLossless", js.undefined)
     
     @scala.inline
-    def deleteLossless: Self = this.set("lossless", js.undefined)
+    def setReductionEffort(value: Double): Self = StObject.set(x, "reductionEffort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNearLossless(value: Boolean): Self = this.set("nearLossless", value.asInstanceOf[js.Any])
+    def setReductionEffortUndefined: Self = StObject.set(x, "reductionEffort", js.undefined)
     
     @scala.inline
-    def deleteNearLossless: Self = this.set("nearLossless", js.undefined)
+    def setSmartSubsample(value: Boolean): Self = StObject.set(x, "smartSubsample", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReductionEffort(value: Double): Self = this.set("reductionEffort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReductionEffort: Self = this.set("reductionEffort", js.undefined)
-    
-    @scala.inline
-    def setSmartSubsample(value: Boolean): Self = this.set("smartSubsample", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmartSubsample: Self = this.set("smartSubsample", js.undefined)
+    def setSmartSubsampleUndefined: Self = StObject.set(x, "smartSubsample", js.undefined)
   }
 }

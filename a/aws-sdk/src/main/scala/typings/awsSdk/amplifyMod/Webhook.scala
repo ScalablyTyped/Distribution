@@ -1,11 +1,12 @@
 package typings.awsSdk.amplifyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Webhook extends js.Object {
+trait Webhook extends StObject {
   
   /**
     *  The name for a branch that is part of an Amplify app. 
@@ -59,39 +60,27 @@ object Webhook {
   }
   
   @scala.inline
-  implicit class WebhookOps[Self <: Webhook] (val x: Self) extends AnyVal {
+  implicit class WebhookMutableBuilder[Self <: Webhook] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTime(value: CreateTime): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchName(value: BranchName): Self = this.set("branchName", value.asInstanceOf[js.Any])
+    def setUpdateTime(value: UpdateTime): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: CreateTime): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setWebhookArn(value: WebhookArn): Self = StObject.set(x, "webhookArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setWebhookId(value: WebhookId): Self = StObject.set(x, "webhookId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateTime(value: UpdateTime): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebhookArn(value: WebhookArn): Self = this.set("webhookArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebhookId(value: WebhookId): Self = this.set("webhookId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebhookUrl(value: WebhookUrl): Self = this.set("webhookUrl", value.asInstanceOf[js.Any])
+    def setWebhookUrl(value: WebhookUrl): Self = StObject.set(x, "webhookUrl", value.asInstanceOf[js.Any])
   }
 }

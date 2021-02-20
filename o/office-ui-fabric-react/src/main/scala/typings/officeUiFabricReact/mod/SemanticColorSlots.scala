@@ -1,12 +1,13 @@
 package typings.officeUiFabricReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "SemanticColorSlots")
 @js.native
-object SemanticColorSlots extends js.Object {
+object SemanticColorSlots extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.themeRulesStandardMod.SemanticColorSlots with Double] = js.native

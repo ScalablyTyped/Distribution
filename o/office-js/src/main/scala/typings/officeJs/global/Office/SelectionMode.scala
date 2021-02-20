@@ -1,5 +1,6 @@
 package typings.officeJs.global.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Office.SelectionMode")
 @js.native
-object SelectionMode extends js.Object {
+object SelectionMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.officeJs.Office.SelectionMode with Double] = js.native

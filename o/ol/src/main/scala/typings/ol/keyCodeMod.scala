@@ -1,17 +1,33 @@
 package typings.ol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/events/KeyCode", JSImport.Namespace)
-@js.native
-object keyCodeMod extends js.Object {
+object keyCodeMod {
+  
+  @JSImport("ol/events/KeyCode", JSImport.Default)
+  @js.native
+  object default extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[KeyCode with Double] = js.native
+    
+    /* 40 */ val DOWN: typings.ol.keyCodeMod.KeyCode.DOWN with Double = js.native
+    
+    /* 37 */ val LEFT: typings.ol.keyCodeMod.KeyCode.LEFT with Double = js.native
+    
+    /* 39 */ val RIGHT: typings.ol.keyCodeMod.KeyCode.RIGHT with Double = js.native
+    
+    /* 38 */ val UP: typings.ol.keyCodeMod.KeyCode.UP with Double = js.native
+  }
   
   @js.native
-  sealed trait KeyCode extends js.Object
+  sealed trait KeyCode extends StObject
+  @JSImport("ol/events/KeyCode", "KeyCode")
   @js.native
-  object KeyCode extends js.Object {
+  object KeyCode extends StObject {
     
     @js.native
     sealed trait DOWN extends KeyCode
@@ -24,20 +40,5 @@ object keyCodeMod extends js.Object {
     
     @js.native
     sealed trait UP extends KeyCode
-  }
-  
-  @js.native
-  object default extends js.Object {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[KeyCode with Double] = js.native
-    
-    /* 40 */ val DOWN: typings.ol.keyCodeMod.KeyCode.DOWN with Double = js.native
-    
-    /* 37 */ val LEFT: typings.ol.keyCodeMod.KeyCode.LEFT with Double = js.native
-    
-    /* 39 */ val RIGHT: typings.ol.keyCodeMod.KeyCode.RIGHT with Double = js.native
-    
-    /* 38 */ val UP: typings.ol.keyCodeMod.KeyCode.UP with Double = js.native
   }
 }

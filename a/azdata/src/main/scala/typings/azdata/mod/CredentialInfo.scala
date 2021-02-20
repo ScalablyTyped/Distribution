@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CredentialInfo extends js.Object {
+trait CredentialInfo extends StObject {
   
   var createDate: String = js.native
   
@@ -35,36 +36,24 @@ object CredentialInfo {
   }
   
   @scala.inline
-  implicit class CredentialInfoOps[Self <: CredentialInfo] (val x: Self) extends AnyVal {
+  implicit class CredentialInfoMutableBuilder[Self <: CredentialInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateDate(value: String): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateLastModified(value: String): Self = StObject.set(x, "dateLastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDate(value: String): Self = this.set("createDate", value.asInstanceOf[js.Any])
+    def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateLastModified(value: String): Self = this.set("dateLastModified", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdentity(value: String): Self = this.set("identity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProviderName(value: String): Self = this.set("providerName", value.asInstanceOf[js.Any])
+    def setProviderName(value: String): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
   }
 }

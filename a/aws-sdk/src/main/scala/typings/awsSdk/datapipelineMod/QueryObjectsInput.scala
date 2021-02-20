@@ -1,11 +1,12 @@
 package typings.awsSdk.datapipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryObjectsInput extends js.Object {
+trait QueryObjectsInput extends StObject {
   
   /**
     * The maximum number of object names that QueryObjects will return in a single call. The default value is 100. 
@@ -41,42 +42,30 @@ object QueryObjectsInput {
   }
   
   @scala.inline
-  implicit class QueryObjectsInputOps[Self <: QueryObjectsInput] (val x: Self) extends AnyVal {
+  implicit class QueryObjectsInputMutableBuilder[Self <: QueryObjectsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimit(value: int): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipelineId(value: id): Self = this.set("pipelineId", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     @scala.inline
-    def setSphere(value: String): Self = this.set("sphere", value.asInstanceOf[js.Any])
+    def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: int): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("marker", js.undefined)
-    
-    @scala.inline
-    def setQuery(value: Query): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setSphere(value: String): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
   }
 }

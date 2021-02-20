@@ -2,16 +2,16 @@ package typings.sodiumjs
 
 import typings.sodiumjs.vertexMod.Vertex
 import typings.typescriptCollections.mod.PriorityQueue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sodiumjs/dist/typings/sodium/Transaction", JSImport.Namespace)
-@js.native
-object transactionMod extends js.Object {
+object transactionMod {
   
+  @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Entry")
   @js.native
-  class Entry protected () extends js.Object {
+  class Entry protected () extends StObject {
     def this(rank: Vertex, action: js.Function0[Unit]) = this()
     
     def action(): Unit = js.native
@@ -21,14 +21,22 @@ object transactionMod extends js.Object {
     var seq: Double = js.native
   }
   /* static members */
-  @js.native
-  object Entry extends js.Object {
+  object Entry {
     
-    var nextSeq: js.Any = js.native
+    @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Entry")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Entry.nextSeq")
+    @js.native
+    def nextSeq: js.Any = js.native
+    @scala.inline
+    def nextSeq_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextSeq")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Transaction")
   @js.native
-  class Transaction () extends js.Object {
+  class Transaction () extends StObject {
     
     var checkRegen: js.Any = js.native
     
@@ -64,14 +72,27 @@ object transactionMod extends js.Object {
     var toRegen: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object Transaction extends js.Object {
+  object Transaction {
     
+    @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Transaction")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Transaction._collectCyclesAtEnd")
+    @js.native
     def _collectCyclesAtEnd(): Unit = js.native
     
-    var collectCyclesAtEnd: js.Any = js.native
+    @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Transaction.collectCyclesAtEnd")
+    @js.native
+    def collectCyclesAtEnd: js.Any = js.native
+    @scala.inline
+    def collectCyclesAtEnd_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collectCyclesAtEnd")(x.asInstanceOf[js.Any])
     
-    var currentTransaction: Transaction = js.native
+    @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Transaction.currentTransaction")
+    @js.native
+    def currentTransaction: Transaction = js.native
+    @scala.inline
+    def currentTransaction_=(x: Transaction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentTransaction")(x.asInstanceOf[js.Any])
     
     /**
       * Add a runnable that will be executed whenever a transaction is started.
@@ -80,12 +101,24 @@ object transactionMod extends js.Object {
       *
       * The main use case of this is the implementation of a time/alarm system.
       */
+    @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Transaction.onStart")
+    @js.native
     def onStart(r: js.Function0[Unit]): Unit = js.native
     
-    var onStartHooks: js.Any = js.native
+    @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Transaction.onStartHooks")
+    @js.native
+    def onStartHooks: js.Any = js.native
+    @scala.inline
+    def onStartHooks_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onStartHooks")(x.asInstanceOf[js.Any])
     
+    @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Transaction.run")
+    @js.native
     def run[A](f: js.Function0[A]): A = js.native
     
-    var runningOnStartHooks: js.Any = js.native
+    @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Transaction.runningOnStartHooks")
+    @js.native
+    def runningOnStartHooks: js.Any = js.native
+    @scala.inline
+    def runningOnStartHooks_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runningOnStartHooks")(x.asInstanceOf[js.Any])
   }
 }

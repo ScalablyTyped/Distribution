@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsRedshiftClusterElasticIpStatus extends js.Object {
+trait AwsRedshiftClusterElasticIpStatus extends StObject {
   
   /**
     * The elastic IP address for the cluster.
@@ -26,30 +27,18 @@ object AwsRedshiftClusterElasticIpStatus {
   }
   
   @scala.inline
-  implicit class AwsRedshiftClusterElasticIpStatusOps[Self <: AwsRedshiftClusterElasticIpStatus] (val x: Self) extends AnyVal {
+  implicit class AwsRedshiftClusterElasticIpStatusMutableBuilder[Self <: AwsRedshiftClusterElasticIpStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElasticIp(value: NonEmptyString): Self = StObject.set(x, "ElasticIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElasticIpUndefined: Self = StObject.set(x, "ElasticIp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticIp(value: NonEmptyString): Self = this.set("ElasticIp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteElasticIp: Self = this.set("ElasticIp", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: NonEmptyString): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

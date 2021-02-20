@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,48 +51,36 @@ object FetchPopupFeaturesResult {
   }
   
   @scala.inline
-  implicit class FetchPopupFeaturesResultOps[Self <: FetchPopupFeaturesResult] (val x: Self) extends AnyVal {
+  implicit class FetchPopupFeaturesResultMutableBuilder[Self <: FetchPopupFeaturesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllGraphicsPromise(value: js.Promise[js.Array[Graphic]]): Self = StObject.set(x, "allGraphicsPromise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllGraphicsPromiseUndefined: Self = StObject.set(x, "allGraphicsPromise", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientOnlyGraphics(value: js.Array[Graphic]): Self = StObject.set(x, "clientOnlyGraphics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllGraphicsPromise(value: js.Promise[js.Array[Graphic]]): Self = this.set("allGraphicsPromise", value.asInstanceOf[js.Any])
+    def setClientOnlyGraphicsUndefined: Self = StObject.set(x, "clientOnlyGraphics", js.undefined)
     
     @scala.inline
-    def deleteAllGraphicsPromise: Self = this.set("allGraphicsPromise", js.undefined)
+    def setClientOnlyGraphicsVarargs(value: Graphic*): Self = StObject.set(x, "clientOnlyGraphics", js.Array(value :_*))
     
     @scala.inline
-    def setClientOnlyGraphicsVarargs(value: Graphic*): Self = this.set("clientOnlyGraphics", js.Array(value :_*))
+    def setLocation(value: Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientOnlyGraphics(value: js.Array[Graphic]): Self = this.set("clientOnlyGraphics", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteClientOnlyGraphics: Self = this.set("clientOnlyGraphics", js.undefined)
+    def setPromisesPerLayerView(value: js.Array[FetchPopupFeaturesPromisesPerLayerView]): Self = StObject.set(x, "promisesPerLayerView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: Point): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setPromisesPerLayerViewUndefined: Self = StObject.set(x, "promisesPerLayerView", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
-    
-    @scala.inline
-    def setPromisesPerLayerViewVarargs(value: FetchPopupFeaturesPromisesPerLayerView*): Self = this.set("promisesPerLayerView", js.Array(value :_*))
-    
-    @scala.inline
-    def setPromisesPerLayerView(value: js.Array[FetchPopupFeaturesPromisesPerLayerView]): Self = this.set("promisesPerLayerView", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePromisesPerLayerView: Self = this.set("promisesPerLayerView", js.undefined)
+    def setPromisesPerLayerViewVarargs(value: FetchPopupFeaturesPromisesPerLayerView*): Self = StObject.set(x, "promisesPerLayerView", js.Array(value :_*))
   }
 }

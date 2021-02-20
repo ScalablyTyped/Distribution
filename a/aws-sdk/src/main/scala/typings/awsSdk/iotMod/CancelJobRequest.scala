@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CancelJobRequest extends js.Object {
+trait CancelJobRequest extends StObject {
   
   /**
     * An optional comment string describing why the job was canceled.
@@ -36,39 +37,27 @@ object CancelJobRequest {
   }
   
   @scala.inline
-  implicit class CancelJobRequestOps[Self <: CancelJobRequest] (val x: Self) extends AnyVal {
+  implicit class CancelJobRequestMutableBuilder[Self <: CancelJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: Comment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForce(value: ForceFlag): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
     @scala.inline
-    def setComment(value: Comment): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setReasonCode(value: ReasonCode): Self = StObject.set(x, "reasonCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForce(value: ForceFlag): Self = this.set("force", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForce: Self = this.set("force", js.undefined)
-    
-    @scala.inline
-    def setReasonCode(value: ReasonCode): Self = this.set("reasonCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReasonCode: Self = this.set("reasonCode", js.undefined)
+    def setReasonCodeUndefined: Self = StObject.set(x, "reasonCode", js.undefined)
   }
 }

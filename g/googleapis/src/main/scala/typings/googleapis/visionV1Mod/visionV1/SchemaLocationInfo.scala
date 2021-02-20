@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1Mod.visionV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Detected entity location information.
   */
 @js.native
-trait SchemaLocationInfo extends js.Object {
+trait SchemaLocationInfo extends StObject {
   
   /**
     * lat/long location coordinates.
@@ -24,24 +25,12 @@ object SchemaLocationInfo {
   }
   
   @scala.inline
-  implicit class SchemaLocationInfoOps[Self <: SchemaLocationInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaLocationInfoMutableBuilder[Self <: SchemaLocationInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLatLng(value: SchemaLatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLatLng(value: SchemaLatLng): Self = this.set("latLng", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLatLng: Self = this.set("latLng", js.undefined)
+    def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
   }
 }

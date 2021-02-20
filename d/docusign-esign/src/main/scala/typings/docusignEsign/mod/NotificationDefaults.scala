@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationDefaults extends js.Object {
+trait NotificationDefaults extends StObject {
   
   /**
     * The default notification settings for envelopes sent by using the console.
@@ -30,34 +31,22 @@ object NotificationDefaults {
   }
   
   @scala.inline
-  implicit class NotificationDefaultsOps[Self <: NotificationDefaults] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class NotificationDefaultsMutableBuilder[Self <: NotificationDefaults] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setApiEmailNotifications(
       value: /* Contains details about the default notification settings for the envelope notifications that senders and signers receive. */ NotificationDefaultSettings
-    ): Self = this.set("apiEmailNotifications", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "apiEmailNotifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApiEmailNotifications: Self = this.set("apiEmailNotifications", js.undefined)
+    def setApiEmailNotificationsUndefined: Self = StObject.set(x, "apiEmailNotifications", js.undefined)
     
     @scala.inline
     def setEmailNotifications(
       value: /* Contains details about the default notification settings for the envelope notifications that senders and signers receive. */ NotificationDefaultSettings
-    ): Self = this.set("emailNotifications", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "emailNotifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmailNotifications: Self = this.set("emailNotifications", js.undefined)
+    def setEmailNotificationsUndefined: Self = StObject.set(x, "emailNotifications", js.undefined)
   }
 }

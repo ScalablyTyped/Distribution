@@ -1,13 +1,14 @@
 package typings.squareConnect.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "BulkUpdateTeamMembersRequest")
 @js.native
-class BulkUpdateTeamMembersRequest () extends js.Object {
+class BulkUpdateTeamMembersRequest () extends StObject {
   
   /**
     * The data which will be used to update the `TeamMember` objects.

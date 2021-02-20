@@ -1,12 +1,13 @@
 package typings.activexPowerpoint.PowerPoint
 
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Design extends js.Object {
+trait Design extends StObject {
   
   def AddTitleMaster(): Master = js.native
   
@@ -56,54 +57,42 @@ object Design {
   }
   
   @scala.inline
-  implicit class DesignOps[Self <: Design] (val x: Self) extends AnyVal {
+  implicit class DesignMutableBuilder[Self <: Design] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddTitleMaster(value: () => Master): Self = StObject.set(x, "AddTitleMaster", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddTitleMaster(value: () => Master): Self = this.set("AddTitleMaster", js.Any.fromFunction0(value))
+    def setHasTitleMaster(value: MsoTriState): Self = StObject.set(x, "HasTitleMaster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setMoveTo(value: Double => Unit): Self = StObject.set(x, "MoveTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHasTitleMaster(value: MsoTriState): Self = this.set("HasTitleMaster", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("Index", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveTo(value: Double => Unit): Self = this.set("MoveTo", js.Any.fromFunction1(value))
+    def setPowerPointDotDesign_typekey(value: Design): Self = StObject.set(x, "PowerPoint.Design_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPreserved(value: MsoTriState): Self = StObject.set(x, "Preserved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setSlideMaster(value: Master): Self = StObject.set(x, "SlideMaster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPowerPointDotDesign_typekey(value: Design): Self = this.set("PowerPoint.Design_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreserved(value: MsoTriState): Self = this.set("Preserved", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlideMaster(value: Master): Self = this.set("SlideMaster", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitleMaster(value: Master): Self = this.set("TitleMaster", value.asInstanceOf[js.Any])
+    def setTitleMaster(value: Master): Self = StObject.set(x, "TitleMaster", value.asInstanceOf[js.Any])
   }
 }

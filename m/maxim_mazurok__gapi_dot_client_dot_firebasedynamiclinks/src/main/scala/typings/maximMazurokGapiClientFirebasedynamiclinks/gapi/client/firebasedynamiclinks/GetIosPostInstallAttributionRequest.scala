@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirebasedynamiclinks.gapi.client.firebasedynamiclinks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetIosPostInstallAttributionRequest extends js.Object {
+trait GetIosPostInstallAttributionRequest extends StObject {
   
   /** App installation epoch time (https://en.wikipedia.org/wiki/Unix_time). This is a client signal for a more accurate weak match. */
   var appInstallationTime: js.UndefOr[String] = js.native
@@ -43,66 +44,54 @@ object GetIosPostInstallAttributionRequest {
   }
   
   @scala.inline
-  implicit class GetIosPostInstallAttributionRequestOps[Self <: GetIosPostInstallAttributionRequest] (val x: Self) extends AnyVal {
+  implicit class GetIosPostInstallAttributionRequestMutableBuilder[Self <: GetIosPostInstallAttributionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppInstallationTime(value: String): Self = StObject.set(x, "appInstallationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppInstallationTimeUndefined: Self = StObject.set(x, "appInstallationTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppInstallationTime(value: String): Self = this.set("appInstallationTime", value.asInstanceOf[js.Any])
+    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
     @scala.inline
-    def deleteAppInstallationTime: Self = this.set("appInstallationTime", js.undefined)
+    def setDevice(value: DeviceInfo): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundleId(value: String): Self = this.set("bundleId", value.asInstanceOf[js.Any])
+    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
     @scala.inline
-    def deleteBundleId: Self = this.set("bundleId", js.undefined)
+    def setIosVersion(value: String): Self = StObject.set(x, "iosVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: DeviceInfo): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setIosVersionUndefined: Self = StObject.set(x, "iosVersion", js.undefined)
     
     @scala.inline
-    def deleteDevice: Self = this.set("device", js.undefined)
+    def setRetrievalMethod(value: String): Self = StObject.set(x, "retrievalMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIosVersion(value: String): Self = this.set("iosVersion", value.asInstanceOf[js.Any])
+    def setRetrievalMethodUndefined: Self = StObject.set(x, "retrievalMethod", js.undefined)
     
     @scala.inline
-    def deleteIosVersion: Self = this.set("iosVersion", js.undefined)
+    def setSdkVersion(value: String): Self = StObject.set(x, "sdkVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetrievalMethod(value: String): Self = this.set("retrievalMethod", value.asInstanceOf[js.Any])
+    def setSdkVersionUndefined: Self = StObject.set(x, "sdkVersion", js.undefined)
     
     @scala.inline
-    def deleteRetrievalMethod: Self = this.set("retrievalMethod", js.undefined)
+    def setUniqueMatchLinkToCheck(value: String): Self = StObject.set(x, "uniqueMatchLinkToCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSdkVersion(value: String): Self = this.set("sdkVersion", value.asInstanceOf[js.Any])
+    def setUniqueMatchLinkToCheckUndefined: Self = StObject.set(x, "uniqueMatchLinkToCheck", js.undefined)
     
     @scala.inline
-    def deleteSdkVersion: Self = this.set("sdkVersion", js.undefined)
+    def setVisualStyle(value: String): Self = StObject.set(x, "visualStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUniqueMatchLinkToCheck(value: String): Self = this.set("uniqueMatchLinkToCheck", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniqueMatchLinkToCheck: Self = this.set("uniqueMatchLinkToCheck", js.undefined)
-    
-    @scala.inline
-    def setVisualStyle(value: String): Self = this.set("visualStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisualStyle: Self = this.set("visualStyle", js.undefined)
+    def setVisualStyleUndefined: Self = StObject.set(x, "visualStyle", js.undefined)
   }
 }

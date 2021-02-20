@@ -1,11 +1,12 @@
 package typings.serverless.awsProviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Layer extends js.Object {
+trait Layer extends StObject {
   
   var allowedAccounts: js.UndefOr[js.Array[String]] = js.native
   
@@ -30,63 +31,51 @@ object Layer {
   }
   
   @scala.inline
-  implicit class LayerOps[Self <: Layer] (val x: Self) extends AnyVal {
+  implicit class LayerMutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedAccounts(value: js.Array[String]): Self = StObject.set(x, "allowedAccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedAccountsUndefined: Self = StObject.set(x, "allowedAccounts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedAccountsVarargs(value: String*): Self = StObject.set(x, "allowedAccounts", js.Array(value :_*))
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setCompatibleRuntimes(value: js.Array[String]): Self = StObject.set(x, "compatibleRuntimes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedAccountsVarargs(value: String*): Self = this.set("allowedAccounts", js.Array(value :_*))
+    def setCompatibleRuntimesUndefined: Self = StObject.set(x, "compatibleRuntimes", js.undefined)
     
     @scala.inline
-    def setAllowedAccounts(value: js.Array[String]): Self = this.set("allowedAccounts", value.asInstanceOf[js.Any])
+    def setCompatibleRuntimesVarargs(value: String*): Self = StObject.set(x, "compatibleRuntimes", js.Array(value :_*))
     
     @scala.inline
-    def deleteAllowedAccounts: Self = this.set("allowedAccounts", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompatibleRuntimesVarargs(value: String*): Self = this.set("compatibleRuntimes", js.Array(value :_*))
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setCompatibleRuntimes(value: js.Array[String]): Self = this.set("compatibleRuntimes", value.asInstanceOf[js.Any])
+    def setLicenseInfo(value: String): Self = StObject.set(x, "licenseInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompatibleRuntimes: Self = this.set("compatibleRuntimes", js.undefined)
+    def setLicenseInfoUndefined: Self = StObject.set(x, "licenseInfo", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setLicenseInfo(value: String): Self = this.set("licenseInfo", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLicenseInfo: Self = this.set("licenseInfo", js.undefined)
+    def setRetain(value: Boolean): Self = StObject.set(x, "retain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setRetain(value: Boolean): Self = this.set("retain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetain: Self = this.set("retain", js.undefined)
+    def setRetainUndefined: Self = StObject.set(x, "retain", js.undefined)
   }
 }

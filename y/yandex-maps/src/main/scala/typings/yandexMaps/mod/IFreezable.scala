@@ -1,11 +1,12 @@
 package typings.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFreezable extends js.Object {
+trait IFreezable extends StObject {
   
   var events: IEventManager[js.Object] = js.native
   
@@ -29,30 +30,18 @@ object IFreezable {
   }
   
   @scala.inline
-  implicit class IFreezableOps[Self <: IFreezable] (val x: Self) extends AnyVal {
+  implicit class IFreezableMutableBuilder[Self <: IFreezable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvents(value: IEventManager[js.Object]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFreeze(value: () => IFreezable): Self = StObject.set(x, "freeze", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsFrozen(value: () => Boolean): Self = StObject.set(x, "isFrozen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEvents(value: IEventManager[js.Object]): Self = this.set("events", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFreeze(value: () => IFreezable): Self = this.set("freeze", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsFrozen(value: () => Boolean): Self = this.set("isFrozen", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUnfreeze(value: () => IFreezable): Self = this.set("unfreeze", js.Any.fromFunction0(value))
+    def setUnfreeze(value: () => IFreezable): Self = StObject.set(x, "unfreeze", js.Any.fromFunction0(value))
   }
 }

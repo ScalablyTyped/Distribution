@@ -3,21 +3,16 @@ package typings.ethersprojectSigningKey
 import typings.ethersprojectBytes.mod.BytesLike
 import typings.ethersprojectBytes.mod.Signature
 import typings.ethersprojectBytes.mod.SignatureLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ethersproject/signing-key", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def computePublicKey(key: BytesLike): String = js.native
-  def computePublicKey(key: BytesLike, compressed: Boolean): String = js.native
-  
-  def recoverPublicKey(digest: BytesLike, signature: SignatureLike): String = js.native
-  
+  @JSImport("@ethersproject/signing-key", "SigningKey")
   @js.native
-  class SigningKey protected () extends js.Object {
+  class SigningKey protected () extends StObject {
     def this(privateKey: BytesLike) = this()
     
     def _addPoint(other: BytesLike): String = js.native
@@ -37,9 +32,21 @@ object mod extends js.Object {
     def signDigest(digest: BytesLike): Signature = js.native
   }
   /* static members */
-  @js.native
-  object SigningKey extends js.Object {
+  object SigningKey {
     
+    @JSImport("@ethersproject/signing-key", "SigningKey.isSigningKey")
+    @js.native
     def isSigningKey(value: js.Any): /* is @ethersproject/signing-key.@ethersproject/signing-key.SigningKey */ Boolean = js.native
   }
+  
+  @JSImport("@ethersproject/signing-key", "computePublicKey")
+  @js.native
+  def computePublicKey(key: BytesLike): String = js.native
+  @JSImport("@ethersproject/signing-key", "computePublicKey")
+  @js.native
+  def computePublicKey(key: BytesLike, compressed: Boolean): String = js.native
+  
+  @JSImport("@ethersproject/signing-key", "recoverPublicKey")
+  @js.native
+  def recoverPublicKey(digest: BytesLike, signature: SignatureLike): String = js.native
 }

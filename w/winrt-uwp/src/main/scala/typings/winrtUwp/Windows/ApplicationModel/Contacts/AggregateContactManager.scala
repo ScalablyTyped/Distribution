@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for linking individual (raw) contacts across services together into a single aggregate contact. */
 @js.native
-trait AggregateContactManager extends js.Object {
+trait AggregateContactManager extends StObject {
   
   /**
     * Returns the list of individual (raw) contacts from the specified aggregate contact.
@@ -55,30 +56,18 @@ object AggregateContactManager {
   }
   
   @scala.inline
-  implicit class AggregateContactManagerOps[Self <: AggregateContactManager] (val x: Self) extends AnyVal {
+  implicit class AggregateContactManagerMutableBuilder[Self <: AggregateContactManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFindRawContactsAsync(value: Contact => IPromiseWithIAsyncOperation[IVectorView[_]]): Self = StObject.set(x, "findRawContactsAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTryLinkContactsAsync(value: (Contact, Contact) => IPromiseWithIAsyncOperation[Contact]): Self = StObject.set(x, "tryLinkContactsAsync", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrySetPreferredSourceForPictureAsync(value: (Contact, Contact) => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "trySetPreferredSourceForPictureAsync", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFindRawContactsAsync(value: Contact => IPromiseWithIAsyncOperation[IVectorView[_]]): Self = this.set("findRawContactsAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTryLinkContactsAsync(value: (Contact, Contact) => IPromiseWithIAsyncOperation[Contact]): Self = this.set("tryLinkContactsAsync", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setTrySetPreferredSourceForPictureAsync(value: (Contact, Contact) => IPromiseWithIAsyncOperation[Boolean]): Self = this.set("trySetPreferredSourceForPictureAsync", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUnlinkRawContactAsync(value: Contact => IPromiseWithIAsyncAction): Self = this.set("unlinkRawContactAsync", js.Any.fromFunction1(value))
+    def setUnlinkRawContactAsync(value: Contact => IPromiseWithIAsyncAction): Self = StObject.set(x, "unlinkRawContactAsync", js.Any.fromFunction1(value))
   }
 }

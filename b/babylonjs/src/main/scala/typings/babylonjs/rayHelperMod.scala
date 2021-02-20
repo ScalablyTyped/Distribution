@@ -6,16 +6,16 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.rayMod.Ray
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Debug/rayHelper", JSImport.Namespace)
-@js.native
-object rayHelperMod extends js.Object {
+object rayHelperMod {
   
+  @JSImport("babylonjs/Debug/rayHelper", "RayHelper")
   @js.native
-  class RayHelper protected () extends js.Object {
+  class RayHelper protected () extends StObject {
     /**
       * Instantiate a new ray helper.
       * As raycast might be hard to debug, the RayHelper can help rendering the different rays
@@ -107,8 +107,7 @@ object rayHelperMod extends js.Object {
     def show(scene: Scene, color: Color3): Unit = js.native
   }
   /* static members */
-  @js.native
-  object RayHelper extends js.Object {
+  object RayHelper {
     
     /**
       * Helper function to create a colored helper in a scene in one line.
@@ -117,6 +116,8 @@ object rayHelperMod extends js.Object {
       * @param color Defines the color we want to see the ray in
       * @returns The newly created ray helper.
       */
+    @JSImport("babylonjs/Debug/rayHelper", "RayHelper.CreateAndShow")
+    @js.native
     def CreateAndShow(ray: Ray, scene: Scene, color: Color3): RayHelper = js.native
   }
 }

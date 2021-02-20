@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
 import typings.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileWillDeleteEvent extends js.Object {
+trait FileWillDeleteEvent extends StObject {
   
   /**
     * The files that are going to be deleted.

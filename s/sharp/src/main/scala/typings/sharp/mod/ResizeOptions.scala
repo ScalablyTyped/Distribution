@@ -10,12 +10,13 @@ import typings.sharp.sharpStrings.lanczos3
 import typings.sharp.sharpStrings.mitchell
 import typings.sharp.sharpStrings.nearest
 import typings.sharp.sharpStrings.outside
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResizeOptions extends js.Object {
+trait ResizeOptions extends StObject {
   
   /** Background colour when using a fit of contain, parsed by the color module, defaults to black without transparency. (optional, default {r:0,g:0,b:0,alpha:1}) */
   var background: js.UndefOr[Color] = js.native
@@ -50,66 +51,54 @@ object ResizeOptions {
   }
   
   @scala.inline
-  implicit class ResizeOptionsOps[Self <: ResizeOptions] (val x: Self) extends AnyVal {
+  implicit class ResizeOptionsMutableBuilder[Self <: ResizeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFastShrinkOnLoad(value: Boolean): Self = StObject.set(x, "fastShrinkOnLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: Color): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setFastShrinkOnLoadUndefined: Self = StObject.set(x, "fastShrinkOnLoad", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setFit(value: contain | cover | fill | inside | outside): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFastShrinkOnLoad(value: Boolean): Self = this.set("fastShrinkOnLoad", value.asInstanceOf[js.Any])
+    def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
     
     @scala.inline
-    def deleteFastShrinkOnLoad: Self = this.set("fastShrinkOnLoad", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFit(value: contain | cover | fill | inside | outside): Self = this.set("fit", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFit: Self = this.set("fit", js.undefined)
+    def setKernel(value: nearest | cubic | mitchell | lanczos2 | lanczos3): Self = StObject.set(x, "kernel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setKernelUndefined: Self = StObject.set(x, "kernel", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setPosition(value: Double | String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKernel(value: nearest | cubic | mitchell | lanczos2 | lanczos3): Self = this.set("kernel", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteKernel: Self = this.set("kernel", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Double | String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setWithoutEnlargement(value: Boolean): Self = StObject.set(x, "withoutEnlargement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setWithoutEnlargement(value: Boolean): Self = this.set("withoutEnlargement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithoutEnlargement: Self = this.set("withoutEnlargement", js.undefined)
+    def setWithoutEnlargementUndefined: Self = StObject.set(x, "withoutEnlargement", js.undefined)
   }
 }

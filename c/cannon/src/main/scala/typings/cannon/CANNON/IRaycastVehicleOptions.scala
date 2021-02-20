@@ -1,11 +1,12 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IRaycastVehicleOptions extends js.Object {
+trait IRaycastVehicleOptions extends StObject {
   
   var chassisBody: js.UndefOr[Body] = js.native
   
@@ -24,42 +25,30 @@ object IRaycastVehicleOptions {
   }
   
   @scala.inline
-  implicit class IRaycastVehicleOptionsOps[Self <: IRaycastVehicleOptions] (val x: Self) extends AnyVal {
+  implicit class IRaycastVehicleOptionsMutableBuilder[Self <: IRaycastVehicleOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChassisBody(value: Body): Self = StObject.set(x, "chassisBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChassisBodyUndefined: Self = StObject.set(x, "chassisBody", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexLeftAxis(value: Double): Self = StObject.set(x, "indexLeftAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChassisBody(value: Body): Self = this.set("chassisBody", value.asInstanceOf[js.Any])
+    def setIndexLeftAxisUndefined: Self = StObject.set(x, "indexLeftAxis", js.undefined)
     
     @scala.inline
-    def deleteChassisBody: Self = this.set("chassisBody", js.undefined)
+    def setIndexRightAxis(value: Double): Self = StObject.set(x, "indexRightAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexLeftAxis(value: Double): Self = this.set("indexLeftAxis", value.asInstanceOf[js.Any])
+    def setIndexRightAxisUndefined: Self = StObject.set(x, "indexRightAxis", js.undefined)
     
     @scala.inline
-    def deleteIndexLeftAxis: Self = this.set("indexLeftAxis", js.undefined)
+    def setIndexUpAxis(value: Double): Self = StObject.set(x, "indexUpAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexRightAxis(value: Double): Self = this.set("indexRightAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndexRightAxis: Self = this.set("indexRightAxis", js.undefined)
-    
-    @scala.inline
-    def setIndexUpAxis(value: Double): Self = this.set("indexUpAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndexUpAxis: Self = this.set("indexUpAxis", js.undefined)
+    def setIndexUpAxisUndefined: Self = StObject.set(x, "indexUpAxis", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.lexmodelbuildingserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Message extends js.Object {
+trait Message extends StObject {
   
   /**
     * The text of the message.
@@ -31,30 +32,18 @@ object Message {
   }
   
   @scala.inline
-  implicit class MessageOps[Self <: Message] (val x: Self) extends AnyVal {
+  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: ContentString): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentType(value: ContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupNumber(value: GroupNumber): Self = StObject.set(x, "groupNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: ContentString): Self = this.set("content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContentType(value: ContentType): Self = this.set("contentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGroupNumber(value: GroupNumber): Self = this.set("groupNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupNumber: Self = this.set("groupNumber", js.undefined)
+    def setGroupNumberUndefined: Self = StObject.set(x, "groupNumber", js.undefined)
   }
 }

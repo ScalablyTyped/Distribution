@@ -1,11 +1,12 @@
 package typings.openui5.sap.ui.model.analytics.odata4analytics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EntityType extends js.Object {
+trait EntityType extends StObject {
   
   /**
     * Find property by name
@@ -145,66 +146,54 @@ object EntityType {
   }
   
   @scala.inline
-  implicit class EntityTypeOps[Self <: EntityType] (val x: Self) extends AnyVal {
+  implicit class EntityTypeMutableBuilder[Self <: EntityType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFindPropertyByName(value: String => js.Any): Self = StObject.set(x, "findPropertyByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAllHierarchyPropertyNames(value: () => js.Array[String]): Self = StObject.set(x, "getAllHierarchyPropertyNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFilterablePropertyNames(value: () => js.Array[String]): Self = StObject.set(x, "getFilterablePropertyNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFindPropertyByName(value: String => js.Any): Self = this.set("findPropertyByName", js.Any.fromFunction1(value))
+    def setGetHeadingOfProperty(value: String => String): Self = StObject.set(x, "getHeadingOfProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAllHierarchyPropertyNames(value: () => js.Array[String]): Self = this.set("getAllHierarchyPropertyNames", js.Any.fromFunction0(value))
+    def setGetHierarchy(value: String => RecursiveHierarchy): Self = StObject.set(x, "getHierarchy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFilterablePropertyNames(value: () => js.Array[String]): Self = this.set("getFilterablePropertyNames", js.Any.fromFunction0(value))
+    def setGetKeyProperties(value: () => js.Array[String]): Self = StObject.set(x, "getKeyProperties", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHeadingOfProperty(value: String => String): Self = this.set("getHeadingOfProperty", js.Any.fromFunction1(value))
+    def setGetLabelOfProperty(value: String => String): Self = StObject.set(x, "getLabelOfProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetHierarchy(value: String => RecursiveHierarchy): Self = this.set("getHierarchy", js.Any.fromFunction1(value))
+    def setGetProperties(value: () => js.Any): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetKeyProperties(value: () => js.Array[String]): Self = this.set("getKeyProperties", js.Any.fromFunction0(value))
+    def setGetPropertiesWithFilterRestrictions(value: () => js.Any): Self = StObject.set(x, "getPropertiesWithFilterRestrictions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLabelOfProperty(value: String => String): Self = this.set("getLabelOfProperty", js.Any.fromFunction1(value))
+    def setGetQName(value: () => String): Self = StObject.set(x, "getQName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetProperties(value: () => js.Any): Self = this.set("getProperties", js.Any.fromFunction0(value))
+    def setGetQuickInfoOfProperty(value: String => String): Self = StObject.set(x, "getQuickInfoOfProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPropertiesWithFilterRestrictions(value: () => js.Any): Self = this.set("getPropertiesWithFilterRestrictions", js.Any.fromFunction0(value))
+    def setGetRequiredFilterPropertyNames(value: () => js.Array[String]): Self = StObject.set(x, "getRequiredFilterPropertyNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetQName(value: () => String): Self = this.set("getQName", js.Any.fromFunction0(value))
+    def setGetSortablePropertyNames(value: () => js.Array[String]): Self = StObject.set(x, "getSortablePropertyNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetQuickInfoOfProperty(value: String => String): Self = this.set("getQuickInfoOfProperty", js.Any.fromFunction1(value))
+    def setGetSuperOrdinatePropertyOfProperty(value: String => js.Any): Self = StObject.set(x, "getSuperOrdinatePropertyOfProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetRequiredFilterPropertyNames(value: () => js.Array[String]): Self = this.set("getRequiredFilterPropertyNames", js.Any.fromFunction0(value))
+    def setGetTextPropertyOfProperty(value: String => js.Any): Self = StObject.set(x, "getTextPropertyOfProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSortablePropertyNames(value: () => js.Array[String]): Self = this.set("getSortablePropertyNames", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSuperOrdinatePropertyOfProperty(value: String => js.Any): Self = this.set("getSuperOrdinatePropertyOfProperty", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetTextPropertyOfProperty(value: String => js.Any): Self = this.set("getTextPropertyOfProperty", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetTypeDescription(value: () => js.Any): Self = this.set("getTypeDescription", js.Any.fromFunction0(value))
+    def setGetTypeDescription(value: () => js.Any): Self = StObject.set(x, "getTypeDescription", js.Any.fromFunction0(value))
   }
 }

@@ -2,6 +2,7 @@ package typings.awsSdk.mod
 
 import typings.awsSdk.pollyMod.ClientConfiguration
 import typings.awsSdk.presignerMod.Presigner.PresignerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +16,9 @@ class Polly ()
   extends typings.awsSdk.allMod.Polly {
   def this(options: ClientConfiguration) = this()
 }
-@JSImport("aws-sdk", "Polly")
-@js.native
-object Polly extends js.Object {
+object Polly {
   
+  @JSImport("aws-sdk", "Polly.Presigner")
   @js.native
   /**
     * Creates a presigner object with a set of configuration options.

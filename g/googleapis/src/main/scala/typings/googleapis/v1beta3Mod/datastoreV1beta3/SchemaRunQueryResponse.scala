@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta3Mod.datastoreV1beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The response for Datastore.RunQuery.
   */
 @js.native
-trait SchemaRunQueryResponse extends js.Object {
+trait SchemaRunQueryResponse extends StObject {
   
   /**
     * A batch of query results (always present).
@@ -29,30 +30,18 @@ object SchemaRunQueryResponse {
   }
   
   @scala.inline
-  implicit class SchemaRunQueryResponseOps[Self <: SchemaRunQueryResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaRunQueryResponseMutableBuilder[Self <: SchemaRunQueryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatch(value: SchemaQueryResultBatch): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQuery(value: SchemaQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatch(value: SchemaQueryResultBatch): Self = this.set("batch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBatch: Self = this.set("batch", js.undefined)
-    
-    @scala.inline
-    def setQuery(value: SchemaQuery): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

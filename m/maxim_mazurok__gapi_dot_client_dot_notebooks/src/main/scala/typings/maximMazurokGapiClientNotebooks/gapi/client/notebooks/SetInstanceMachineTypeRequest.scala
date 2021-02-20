@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetInstanceMachineTypeRequest extends js.Object {
+trait SetInstanceMachineTypeRequest extends StObject {
   
   /** Required. The [Compute Engine machine type](https://cloud.google.com/compute/docs/machine-types). */
   var machineType: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object SetInstanceMachineTypeRequest {
   }
   
   @scala.inline
-  implicit class SetInstanceMachineTypeRequestOps[Self <: SetInstanceMachineTypeRequest] (val x: Self) extends AnyVal {
+  implicit class SetInstanceMachineTypeRequestMutableBuilder[Self <: SetInstanceMachineTypeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMachineType(value: String): Self = this.set("machineType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMachineType: Self = this.set("machineType", js.undefined)
+    def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
   }
 }

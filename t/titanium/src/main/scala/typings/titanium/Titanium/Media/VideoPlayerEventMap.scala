@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.Media
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,96 +97,84 @@ object VideoPlayerEventMap {
   }
   
   @scala.inline
-  implicit class VideoPlayerEventMapOps[Self <: VideoPlayerEventMap] (val x: Self) extends AnyVal {
+  implicit class VideoPlayerEventMapMutableBuilder[Self <: VideoPlayerEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: VideoPlayerClickEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplete(value: VideoPlayerCompleteEvent): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDblclick(value: VideoPlayerDblclickEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: VideoPlayerClickEvent): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setDoubletap(value: VideoPlayerDoubletapEvent): Self = StObject.set(x, "doubletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplete(value: VideoPlayerCompleteEvent): Self = this.set("complete", value.asInstanceOf[js.Any])
+    def setDurationavailable(value: VideoPlayerDurationavailableEvent): Self = StObject.set(x, "durationavailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDblclick(value: VideoPlayerDblclickEvent): Self = this.set("dblclick", value.asInstanceOf[js.Any])
+    def setError(value: VideoPlayerErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubletap(value: VideoPlayerDoubletapEvent): Self = this.set("doubletap", value.asInstanceOf[js.Any])
+    def setFocus(value: VideoPlayerFocusEvent): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationavailable(value: VideoPlayerDurationavailableEvent): Self = this.set("durationavailable", value.asInstanceOf[js.Any])
+    def setKeypressed(value: VideoPlayerKeypressedEvent): Self = StObject.set(x, "keypressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: VideoPlayerErrorEvent): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setLoad(value: VideoPlayerLoadEvent): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus(value: VideoPlayerFocusEvent): Self = this.set("focus", value.asInstanceOf[js.Any])
+    def setLoadstate(value: VideoPlayerLoadstateEvent): Self = StObject.set(x, "loadstate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeypressed(value: VideoPlayerKeypressedEvent): Self = this.set("keypressed", value.asInstanceOf[js.Any])
+    def setLongclick(value: VideoPlayerLongclickEvent): Self = StObject.set(x, "longclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoad(value: VideoPlayerLoadEvent): Self = this.set("load", value.asInstanceOf[js.Any])
+    def setLongpress(value: VideoPlayerLongpressEvent): Self = StObject.set(x, "longpress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadstate(value: VideoPlayerLoadstateEvent): Self = this.set("loadstate", value.asInstanceOf[js.Any])
+    def setNaturalsizeavailable(value: VideoPlayerNaturalsizeavailableEvent): Self = StObject.set(x, "naturalsizeavailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongclick(value: VideoPlayerLongclickEvent): Self = this.set("longclick", value.asInstanceOf[js.Any])
+    def setPinch(value: VideoPlayerPinchEvent): Self = StObject.set(x, "pinch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongpress(value: VideoPlayerLongpressEvent): Self = this.set("longpress", value.asInstanceOf[js.Any])
+    def setPlaybackstate(value: VideoPlayerPlaybackstateEvent): Self = StObject.set(x, "playbackstate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNaturalsizeavailable(value: VideoPlayerNaturalsizeavailableEvent): Self = this.set("naturalsizeavailable", value.asInstanceOf[js.Any])
+    def setPlaying(value: VideoPlayerPlayingEvent): Self = StObject.set(x, "playing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinch(value: VideoPlayerPinchEvent): Self = this.set("pinch", value.asInstanceOf[js.Any])
+    def setPostlayout(value: VideoPlayerPostlayoutEvent): Self = StObject.set(x, "postlayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaybackstate(value: VideoPlayerPlaybackstateEvent): Self = this.set("playbackstate", value.asInstanceOf[js.Any])
+    def setPreload(value: VideoPlayerPreloadEvent): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaying(value: VideoPlayerPlayingEvent): Self = this.set("playing", value.asInstanceOf[js.Any])
+    def setResize(value: VideoPlayerResizeEvent): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostlayout(value: VideoPlayerPostlayoutEvent): Self = this.set("postlayout", value.asInstanceOf[js.Any])
+    def setSingletap(value: VideoPlayerSingletapEvent): Self = StObject.set(x, "singletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreload(value: VideoPlayerPreloadEvent): Self = this.set("preload", value.asInstanceOf[js.Any])
+    def setSwipe(value: VideoPlayerSwipeEvent): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResize(value: VideoPlayerResizeEvent): Self = this.set("resize", value.asInstanceOf[js.Any])
+    def setTouchcancel(value: VideoPlayerTouchcancelEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingletap(value: VideoPlayerSingletapEvent): Self = this.set("singletap", value.asInstanceOf[js.Any])
+    def setTouchend(value: VideoPlayerTouchendEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipe(value: VideoPlayerSwipeEvent): Self = this.set("swipe", value.asInstanceOf[js.Any])
+    def setTouchmove(value: VideoPlayerTouchmoveEvent): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchcancel(value: VideoPlayerTouchcancelEvent): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
+    def setTouchstart(value: VideoPlayerTouchstartEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchend(value: VideoPlayerTouchendEvent): Self = this.set("touchend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchmove(value: VideoPlayerTouchmoveEvent): Self = this.set("touchmove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchstart(value: VideoPlayerTouchstartEvent): Self = this.set("touchstart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwofingertap(value: VideoPlayerTwofingertapEvent): Self = this.set("twofingertap", value.asInstanceOf[js.Any])
+    def setTwofingertap(value: VideoPlayerTwofingertapEvent): Self = StObject.set(x, "twofingertap", value.asInstanceOf[js.Any])
   }
 }

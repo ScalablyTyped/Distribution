@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateKeysAndCertificateResponse extends js.Object {
+trait CreateKeysAndCertificateResponse extends StObject {
   
   /**
     * The ARN of the certificate.
@@ -36,42 +37,30 @@ object CreateKeysAndCertificateResponse {
   }
   
   @scala.inline
-  implicit class CreateKeysAndCertificateResponseOps[Self <: CreateKeysAndCertificateResponse] (val x: Self) extends AnyVal {
+  implicit class CreateKeysAndCertificateResponseMutableBuilder[Self <: CreateKeysAndCertificateResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateArn(value: CertificateArn): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateArn(value: CertificateArn): Self = this.set("certificateArn", value.asInstanceOf[js.Any])
+    def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
     
     @scala.inline
-    def deleteCertificateArn: Self = this.set("certificateArn", js.undefined)
+    def setCertificatePem(value: CertificatePem): Self = StObject.set(x, "certificatePem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateId(value: CertificateId): Self = this.set("certificateId", value.asInstanceOf[js.Any])
+    def setCertificatePemUndefined: Self = StObject.set(x, "certificatePem", js.undefined)
     
     @scala.inline
-    def deleteCertificateId: Self = this.set("certificateId", js.undefined)
+    def setKeyPair(value: KeyPair): Self = StObject.set(x, "keyPair", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificatePem(value: CertificatePem): Self = this.set("certificatePem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificatePem: Self = this.set("certificatePem", js.undefined)
-    
-    @scala.inline
-    def setKeyPair(value: KeyPair): Self = this.set("keyPair", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyPair: Self = this.set("keyPair", js.undefined)
+    def setKeyPairUndefined: Self = StObject.set(x, "keyPair", js.undefined)
   }
 }

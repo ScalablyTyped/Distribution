@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListResourceRecordSetsResponse extends js.Object {
+trait ListResourceRecordSetsResponse extends StObject {
   
   /**
     * A flag that indicates whether more resource record sets remain to be listed. If your results were truncated, you can make a follow-up pagination request by using the NextRecordName element.
@@ -46,48 +47,36 @@ object ListResourceRecordSetsResponse {
   }
   
   @scala.inline
-  implicit class ListResourceRecordSetsResponseOps[Self <: ListResourceRecordSetsResponse] (val x: Self) extends AnyVal {
+  implicit class ListResourceRecordSetsResponseMutableBuilder[Self <: ListResourceRecordSetsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsTruncated(value: PageTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextRecordIdentifier(value: ResourceRecordSetIdentifier): Self = StObject.set(x, "NextRecordIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTruncated(value: PageTruncated): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    def setNextRecordIdentifierUndefined: Self = StObject.set(x, "NextRecordIdentifier", js.undefined)
     
     @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    def setNextRecordName(value: DNSName): Self = StObject.set(x, "NextRecordName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceRecordSetsVarargs(value: ResourceRecordSet*): Self = this.set("ResourceRecordSets", js.Array(value :_*))
+    def setNextRecordNameUndefined: Self = StObject.set(x, "NextRecordName", js.undefined)
     
     @scala.inline
-    def setResourceRecordSets(value: ResourceRecordSets): Self = this.set("ResourceRecordSets", value.asInstanceOf[js.Any])
+    def setNextRecordType(value: RRType): Self = StObject.set(x, "NextRecordType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextRecordIdentifier(value: ResourceRecordSetIdentifier): Self = this.set("NextRecordIdentifier", value.asInstanceOf[js.Any])
+    def setNextRecordTypeUndefined: Self = StObject.set(x, "NextRecordType", js.undefined)
     
     @scala.inline
-    def deleteNextRecordIdentifier: Self = this.set("NextRecordIdentifier", js.undefined)
+    def setResourceRecordSets(value: ResourceRecordSets): Self = StObject.set(x, "ResourceRecordSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextRecordName(value: DNSName): Self = this.set("NextRecordName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextRecordName: Self = this.set("NextRecordName", js.undefined)
-    
-    @scala.inline
-    def setNextRecordType(value: RRType): Self = this.set("NextRecordType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextRecordType: Self = this.set("NextRecordType", js.undefined)
+    def setResourceRecordSetsVarargs(value: ResourceRecordSet*): Self = StObject.set(x, "ResourceRecordSets", js.Array(value :_*))
   }
 }

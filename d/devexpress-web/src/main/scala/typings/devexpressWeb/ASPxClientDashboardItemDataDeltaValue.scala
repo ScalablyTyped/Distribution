@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides delta element values.
   */
 @js.native
-trait ASPxClientDashboardItemDataDeltaValue extends js.Object {
+trait ASPxClientDashboardItemDataDeltaValue extends StObject {
   
   /**
     * Provides access to the absolute difference between the actual and target values.
@@ -80,48 +81,36 @@ object ASPxClientDashboardItemDataDeltaValue {
   }
   
   @scala.inline
-  implicit class ASPxClientDashboardItemDataDeltaValueOps[Self <: ASPxClientDashboardItemDataDeltaValue] (val x: Self) extends AnyVal {
+  implicit class ASPxClientDashboardItemDataDeltaValueMutableBuilder[Self <: ASPxClientDashboardItemDataDeltaValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAbsoluteVariation(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetAbsoluteVariation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetActualValue(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetActualValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDisplaySubValue1(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetDisplaySubValue1", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAbsoluteVariation(value: () => ASPxClientDashboardItemDataMeasureValue): Self = this.set("GetAbsoluteVariation", js.Any.fromFunction0(value))
+    def setGetDisplaySubValue2(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetDisplaySubValue2", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActualValue(value: () => ASPxClientDashboardItemDataMeasureValue): Self = this.set("GetActualValue", js.Any.fromFunction0(value))
+    def setGetDisplayValue(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetDisplayValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDisplaySubValue1(value: () => ASPxClientDashboardItemDataMeasureValue): Self = this.set("GetDisplaySubValue1", js.Any.fromFunction0(value))
+    def setGetIndicatorType(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetIndicatorType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDisplaySubValue2(value: () => ASPxClientDashboardItemDataMeasureValue): Self = this.set("GetDisplaySubValue2", js.Any.fromFunction0(value))
+    def setGetIsGood(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetIsGood", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDisplayValue(value: () => ASPxClientDashboardItemDataMeasureValue): Self = this.set("GetDisplayValue", js.Any.fromFunction0(value))
+    def setGetPercentOfTarget(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetPercentOfTarget", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIndicatorType(value: () => ASPxClientDashboardItemDataMeasureValue): Self = this.set("GetIndicatorType", js.Any.fromFunction0(value))
+    def setGetPercentVariation(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetPercentVariation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIsGood(value: () => ASPxClientDashboardItemDataMeasureValue): Self = this.set("GetIsGood", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPercentOfTarget(value: () => ASPxClientDashboardItemDataMeasureValue): Self = this.set("GetPercentOfTarget", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPercentVariation(value: () => ASPxClientDashboardItemDataMeasureValue): Self = this.set("GetPercentVariation", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTargetValue(value: () => ASPxClientDashboardItemDataMeasureValue): Self = this.set("GetTargetValue", js.Any.fromFunction0(value))
+    def setGetTargetValue(value: () => ASPxClientDashboardItemDataMeasureValue): Self = StObject.set(x, "GetTargetValue", js.Any.fromFunction0(value))
   }
 }

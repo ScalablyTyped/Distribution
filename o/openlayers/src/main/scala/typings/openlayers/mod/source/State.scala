@@ -1,5 +1,6 @@
 package typings.openlayers.mod.source
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.openlayers.openlayersStrings.ready
   - typings.openlayers.openlayersStrings.error
 */
-trait State extends js.Object
+trait State extends StObject
 object State {
   
   @scala.inline

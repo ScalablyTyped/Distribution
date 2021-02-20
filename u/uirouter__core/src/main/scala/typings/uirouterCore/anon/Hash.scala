@@ -1,11 +1,12 @@
 package typings.uirouterCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hash extends js.Object {
+trait Hash extends StObject {
   
   var hash: js.Any = js.native
   
@@ -24,30 +25,18 @@ object Hash {
   }
   
   @scala.inline
-  implicit class HashOps[Self <: Hash] (val x: Self) extends AnyVal {
+  implicit class HashMutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHash(value: js.Any): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPath(value: js.Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSearch(value: js.Any): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: js.Any): Self = this.set("hash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: js.Any): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearch(value: js.Any): Self = this.set("search", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

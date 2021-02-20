@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SipAddress extends js.Object {
+trait SipAddress extends StObject {
   
   /**
     * The type of the SIP address.
@@ -26,24 +27,12 @@ object SipAddress {
   }
   
   @scala.inline
-  implicit class SipAddressOps[Self <: SipAddress] (val x: Self) extends AnyVal {
+  implicit class SipAddressMutableBuilder[Self <: SipAddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setType(value: SipType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: SipType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUri(value: SipUri): Self = this.set("Uri", value.asInstanceOf[js.Any])
+    def setUri(value: SipUri): Self = StObject.set(x, "Uri", value.asInstanceOf[js.Any])
   }
 }

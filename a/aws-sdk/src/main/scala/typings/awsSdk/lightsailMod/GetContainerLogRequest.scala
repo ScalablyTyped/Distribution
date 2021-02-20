@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetContainerLogRequest extends js.Object {
+trait GetContainerLogRequest extends StObject {
   
   /**
     * The name of the container that is either running or previously ran on the container service for which to return a log.
@@ -46,48 +47,36 @@ object GetContainerLogRequest {
   }
   
   @scala.inline
-  implicit class GetContainerLogRequestOps[Self <: GetContainerLogRequest] (val x: Self) extends AnyVal {
+  implicit class GetContainerLogRequestMutableBuilder[Self <: GetContainerLogRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTime(value: IsoDate): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def setContainerName(value: String): Self = this.set("containerName", value.asInstanceOf[js.Any])
+    def setFilterPattern(value: String): Self = StObject.set(x, "filterPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceName(value: ContainerServiceName): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    def setFilterPatternUndefined: Self = StObject.set(x, "filterPattern", js.undefined)
     
     @scala.inline
-    def setEndTime(value: IsoDate): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
-    def setFilterPattern(value: String): Self = this.set("filterPattern", value.asInstanceOf[js.Any])
+    def setServiceName(value: ContainerServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilterPattern: Self = this.set("filterPattern", js.undefined)
+    def setStartTime(value: IsoDate): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: IsoDate): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

@@ -12,6 +12,7 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.TKIP_AES_MIXED
 import typings.tizenCommonWeb.tizenCommonWebStrings.WEP
 import typings.tizenCommonWeb.tizenCommonWebStrings.WPA2_PSK
 import typings.tizenCommonWeb.tizenCommonWebStrings.WPA_PSK
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -124,54 +125,42 @@ object SystemInfoWifiNetwork {
   }
   
   @scala.inline
-  implicit class SystemInfoWifiNetworkOps[Self <: SystemInfoWifiNetwork] (val x: Self) extends AnyVal {
+  implicit class SystemInfoWifiNetworkMutableBuilder[Self <: SystemInfoWifiNetwork] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDns(value: String): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionType(value: SystemInfoWifiEncryptionType | NONE | WEP | TKIP | AES | TKIP_AES_MIXED): Self = StObject.set(x, "encryptionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGateway(value: String): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDns(value: String): Self = this.set("dns", value.asInstanceOf[js.Any])
+    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionType(value: SystemInfoWifiEncryptionType | NONE | WEP | TKIP | AES | TKIP_AES_MIXED): Self = this.set("encryptionType", value.asInstanceOf[js.Any])
+    def setIpMode(value: SystemInfoNetworkIpMode | NONE | STATIC | DYNAMIC | AUTO | FIXED): Self = StObject.set(x, "ipMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGateway(value: String): Self = this.set("gateway", value.asInstanceOf[js.Any])
+    def setIpv6Address(value: String): Self = StObject.set(x, "ipv6Address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddress(value: String): Self = this.set("ipAddress", value.asInstanceOf[js.Any])
+    def setMacAddress(value: String): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpMode(value: SystemInfoNetworkIpMode | NONE | STATIC | DYNAMIC | AUTO | FIXED): Self = this.set("ipMode", value.asInstanceOf[js.Any])
+    def setSecurityMode(value: SystemInfoWifiSecurityMode | NONE | WEP | WPA_PSK | WPA2_PSK | EAP): Self = StObject.set(x, "securityMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpv6Address(value: String): Self = this.set("ipv6Address", value.asInstanceOf[js.Any])
+    def setSignalStrength(value: Double): Self = StObject.set(x, "signalStrength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMacAddress(value: String): Self = this.set("macAddress", value.asInstanceOf[js.Any])
+    def setSsid(value: String): Self = StObject.set(x, "ssid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityMode(value: SystemInfoWifiSecurityMode | NONE | WEP | WPA_PSK | WPA2_PSK | EAP): Self = this.set("securityMode", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignalStrength(value: Double): Self = this.set("signalStrength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSsid(value: String): Self = this.set("ssid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubnetMask(value: String): Self = this.set("subnetMask", value.asInstanceOf[js.Any])
+    def setSubnetMask(value: String): Self = StObject.set(x, "subnetMask", value.asInstanceOf[js.Any])
   }
 }

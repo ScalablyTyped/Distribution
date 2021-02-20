@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointemailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KinesisFirehoseDestination extends js.Object {
+trait KinesisFirehoseDestination extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon Kinesis Data Firehose stream that Amazon Pinpoint sends email events to.
@@ -26,24 +27,12 @@ object KinesisFirehoseDestination {
   }
   
   @scala.inline
-  implicit class KinesisFirehoseDestinationOps[Self <: KinesisFirehoseDestination] (val x: Self) extends AnyVal {
+  implicit class KinesisFirehoseDestinationMutableBuilder[Self <: KinesisFirehoseDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeliveryStreamArn(value: AmazonResourceName): Self = StObject.set(x, "DeliveryStreamArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeliveryStreamArn(value: AmazonResourceName): Self = this.set("DeliveryStreamArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIamRoleArn(value: AmazonResourceName): Self = this.set("IamRoleArn", value.asInstanceOf[js.Any])
+    def setIamRoleArn(value: AmazonResourceName): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
   }
 }

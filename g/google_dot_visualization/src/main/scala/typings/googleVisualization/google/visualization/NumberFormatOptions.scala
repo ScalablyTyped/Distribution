@@ -1,11 +1,12 @@
 package typings.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NumberFormatOptions extends js.Object {
+trait NumberFormatOptions extends StObject {
   
   /**
     * A character to use as the decimal marker. The default is a dot (.).
@@ -57,66 +58,54 @@ object NumberFormatOptions {
   }
   
   @scala.inline
-  implicit class NumberFormatOptionsOps[Self <: NumberFormatOptions] (val x: Self) extends AnyVal {
+  implicit class NumberFormatOptionsMutableBuilder[Self <: NumberFormatOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecimalSymbol(value: String): Self = StObject.set(x, "decimalSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecimalSymbolUndefined: Self = StObject.set(x, "decimalSymbol", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFractionDigits(value: Double): Self = StObject.set(x, "fractionDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimalSymbol(value: String): Self = this.set("decimalSymbol", value.asInstanceOf[js.Any])
+    def setFractionDigitsUndefined: Self = StObject.set(x, "fractionDigits", js.undefined)
     
     @scala.inline
-    def deleteDecimalSymbol: Self = this.set("decimalSymbol", js.undefined)
+    def setGroupingSymbol(value: String): Self = StObject.set(x, "groupingSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFractionDigits(value: Double): Self = this.set("fractionDigits", value.asInstanceOf[js.Any])
+    def setGroupingSymbolUndefined: Self = StObject.set(x, "groupingSymbol", js.undefined)
     
     @scala.inline
-    def deleteFractionDigits: Self = this.set("fractionDigits", js.undefined)
+    def setNegativeColor(value: String): Self = StObject.set(x, "negativeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupingSymbol(value: String): Self = this.set("groupingSymbol", value.asInstanceOf[js.Any])
+    def setNegativeColorUndefined: Self = StObject.set(x, "negativeColor", js.undefined)
     
     @scala.inline
-    def deleteGroupingSymbol: Self = this.set("groupingSymbol", js.undefined)
+    def setNegativeParens(value: Boolean): Self = StObject.set(x, "negativeParens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegativeColor(value: String): Self = this.set("negativeColor", value.asInstanceOf[js.Any])
+    def setNegativeParensUndefined: Self = StObject.set(x, "negativeParens", js.undefined)
     
     @scala.inline
-    def deleteNegativeColor: Self = this.set("negativeColor", js.undefined)
+    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegativeParens(value: Boolean): Self = this.set("negativeParens", value.asInstanceOf[js.Any])
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
     @scala.inline
-    def deleteNegativeParens: Self = this.set("negativeParens", js.undefined)
+    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPattern(value: String): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
     @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
+    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefix: Self = this.set("prefix", js.undefined)
-    
-    @scala.inline
-    def setSuffix(value: String): Self = this.set("suffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuffix: Self = this.set("suffix", js.undefined)
+    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
   }
 }

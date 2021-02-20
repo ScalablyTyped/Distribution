@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AgentChangeEvent extends js.Object {
+trait AgentChangeEvent extends StObject {
   
   var agent: TaskAgent = js.native
   
@@ -27,33 +28,21 @@ object AgentChangeEvent {
   }
   
   @scala.inline
-  implicit class AgentChangeEventOps[Self <: AgentChangeEvent] (val x: Self) extends AnyVal {
+  implicit class AgentChangeEventMutableBuilder[Self <: AgentChangeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgent(value: TaskAgent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPool(value: TaskAgentPoolReference): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgent(value: TaskAgent): Self = this.set("agent", value.asInstanceOf[js.Any])
+    def setPoolId(value: Double): Self = StObject.set(x, "poolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventType(value: String): Self = this.set("eventType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPool(value: TaskAgentPoolReference): Self = this.set("pool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPoolId(value: Double): Self = this.set("poolId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeStamp(value: Date): Self = this.set("timeStamp", value.asInstanceOf[js.Any])
+    def setTimeStamp(value: Date): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
   }
 }

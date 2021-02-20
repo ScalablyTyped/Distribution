@@ -1,12 +1,13 @@
 package typings.msRest.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestPrepareOptions extends js.Object {
+trait RequestPrepareOptions extends StObject {
   
   var baseUrl: js.UndefOr[String] = js.native
   
@@ -41,81 +42,69 @@ object RequestPrepareOptions {
   }
   
   @scala.inline
-  implicit class RequestPrepareOptionsOps[Self <: RequestPrepareOptions] (val x: Self) extends AnyVal {
+  implicit class RequestPrepareOptionsMutableBuilder[Self <: RequestPrepareOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeserializationMapper(value: Mapper): Self = this.set("deserializationMapper", value.asInstanceOf[js.Any])
+    def setBodyIsStream(value: Boolean): Self = StObject.set(x, "bodyIsStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setBodyIsStreamUndefined: Self = StObject.set(x, "bodyIsStream", js.undefined)
     
     @scala.inline
-    def setSerializationMapper(value: Mapper): Self = this.set("serializationMapper", value.asInstanceOf[js.Any])
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def setBaseUrl(value: String): Self = this.set("baseUrl", value.asInstanceOf[js.Any])
+    def setDeserializationMapper(value: Mapper): Self = StObject.set(x, "deserializationMapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBaseUrl: Self = this.set("baseUrl", js.undefined)
+    def setDisableClientRequestId(value: Boolean): Self = StObject.set(x, "disableClientRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: js.Any): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setDisableClientRequestIdUndefined: Self = StObject.set(x, "disableClientRequestId", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setDisableJsonStringifyOnBody(value: Boolean): Self = StObject.set(x, "disableJsonStringifyOnBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyIsStream(value: Boolean): Self = this.set("bodyIsStream", value.asInstanceOf[js.Any])
+    def setDisableJsonStringifyOnBodyUndefined: Self = StObject.set(x, "disableJsonStringifyOnBody", js.undefined)
     
     @scala.inline
-    def deleteBodyIsStream: Self = this.set("bodyIsStream", js.undefined)
+    def setFormData(value: StringDictionary[js.Any]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableClientRequestId(value: Boolean): Self = this.set("disableClientRequestId", value.asInstanceOf[js.Any])
+    def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
     @scala.inline
-    def deleteDisableClientRequestId: Self = this.set("disableClientRequestId", js.undefined)
+    def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableJsonStringifyOnBody(value: Boolean): Self = this.set("disableJsonStringifyOnBody", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteDisableJsonStringifyOnBody: Self = this.set("disableJsonStringifyOnBody", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormData(value: StringDictionary[js.Any]): Self = this.set("formData", value.asInstanceOf[js.Any])
+    def setPathParameters(value: StringDictionary[js.Any | UrlParameterValue]): Self = StObject.set(x, "pathParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormData: Self = this.set("formData", js.undefined)
+    def setPathParametersUndefined: Self = StObject.set(x, "pathParameters", js.undefined)
     
     @scala.inline
-    def setHeaders(value: StringDictionary[js.Any]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setQueryParameters(value: StringDictionary[js.Any | UrlParameterValue]): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
     
     @scala.inline
-    def setPathParameters(value: StringDictionary[js.Any | UrlParameterValue]): Self = this.set("pathParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePathParameters: Self = this.set("pathParameters", js.undefined)
-    
-    @scala.inline
-    def setQueryParameters(value: StringDictionary[js.Any | UrlParameterValue]): Self = this.set("queryParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryParameters: Self = this.set("queryParameters", js.undefined)
+    def setSerializationMapper(value: Mapper): Self = StObject.set(x, "serializationMapper", value.asInstanceOf[js.Any])
   }
 }

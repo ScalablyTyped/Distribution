@@ -1,51 +1,44 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BuildOptionInputType extends js.Object
+sealed trait BuildOptionInputType extends StObject
 @JSImport("vso-node-api/interfaces/BuildInterfaces", "BuildOptionInputType")
 @js.native
-object BuildOptionInputType extends js.Object {
+object BuildOptionInputType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BuildOptionInputType with Double] = js.native
   
   @js.native
   sealed trait Boolean extends BuildOptionInputType
-  /* 1 */ @js.native
-  object Boolean extends TopLevel[Boolean with Double]
+  /* 1 */ val Boolean: typings.vsoNodeApi.buildInterfacesMod.BuildOptionInputType.Boolean with Double = js.native
   
   @js.native
   sealed trait BranchFilter extends BuildOptionInputType
-  /* 6 */ @js.native
-  object BranchFilter extends TopLevel[BranchFilter with Double]
+  /* 6 */ val BranchFilter: typings.vsoNodeApi.buildInterfacesMod.BuildOptionInputType.BranchFilter with Double = js.native
   
   @js.native
   sealed trait MultiLine extends BuildOptionInputType
-  /* 5 */ @js.native
-  object MultiLine extends TopLevel[MultiLine with Double]
+  /* 5 */ val MultiLine: typings.vsoNodeApi.buildInterfacesMod.BuildOptionInputType.MultiLine with Double = js.native
   
   @js.native
   sealed trait PickList extends BuildOptionInputType
-  /* 4 */ @js.native
-  object PickList extends TopLevel[PickList with Double]
+  /* 4 */ val PickList: typings.vsoNodeApi.buildInterfacesMod.BuildOptionInputType.PickList with Double = js.native
   
   @js.native
   sealed trait Radio extends BuildOptionInputType
-  /* 3 */ @js.native
-  object Radio extends TopLevel[Radio with Double]
+  /* 3 */ val Radio: typings.vsoNodeApi.buildInterfacesMod.BuildOptionInputType.Radio with Double = js.native
   
   @js.native
   sealed trait String extends BuildOptionInputType
-  /* 0 */ @js.native
-  object String extends TopLevel[String with Double]
+  /* 0 */ val String: typings.vsoNodeApi.buildInterfacesMod.BuildOptionInputType.String with Double = js.native
   
   @js.native
   sealed trait StringList extends BuildOptionInputType
-  /* 2 */ @js.native
-  object StringList extends TopLevel[StringList with Double]
+  /* 2 */ val StringList: typings.vsoNodeApi.buildInterfacesMod.BuildOptionInputType.StringList with Double = js.native
 }

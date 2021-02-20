@@ -2,13 +2,14 @@ package typings.grammarkdown.grammarkdownMod
 
 import typings.esfxCancelable.distMod.Cancelable
 import typings.prex.mod.CancellationToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/grammarkdown", "HostBase")
 @js.native
-abstract class HostBase () extends js.Object {
+abstract class HostBase () extends StObject {
   def this(hasIgnoreCaseKnownGrammarsUseBuiltinGrammars: HostBaseOptions) = this()
   
   /* protected */ def createParser(): Parser = js.native

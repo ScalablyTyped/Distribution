@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A container for the list of classifiers. */
 @js.native
-trait Classifiers extends js.Object {
+trait Classifiers extends StObject {
   
   /** List of classifiers. */
   var classifiers: js.Array[Classifier] = js.native
@@ -20,24 +21,12 @@ object Classifiers {
   }
   
   @scala.inline
-  implicit class ClassifiersOps[Self <: Classifiers] (val x: Self) extends AnyVal {
+  implicit class ClassifiersMutableBuilder[Self <: Classifiers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassifiers(value: js.Array[Classifier]): Self = StObject.set(x, "classifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClassifiersVarargs(value: Classifier*): Self = this.set("classifiers", js.Array(value :_*))
-    
-    @scala.inline
-    def setClassifiers(value: js.Array[Classifier]): Self = this.set("classifiers", value.asInstanceOf[js.Any])
+    def setClassifiersVarargs(value: Classifier*): Self = StObject.set(x, "classifiers", js.Array(value :_*))
   }
 }

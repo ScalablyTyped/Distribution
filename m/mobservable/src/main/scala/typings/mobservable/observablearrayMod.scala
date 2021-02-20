@@ -8,21 +8,14 @@ import typings.mobservable.interfacesMod.IContextInfoStruct
 import typings.mobservable.interfacesMod.IObservableArray
 import typings.mobservable.interfacesMod.Lambda
 import typings.mobservable.simpleeventemitterMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobservable/lib/observablearray", JSImport.Namespace)
-@js.native
-object observablearrayMod extends js.Object {
+object observablearrayMod {
   
-  def createObservableArray[T](
-    initialValues: js.Array[T],
-    mode: ValueMode,
-    supportEnumerable: Boolean,
-    context: IContextInfoStruct
-  ): IObservableArray[T] = js.native
-  
+  @JSImport("mobservable/lib/observablearray", "ObservableArray")
   @js.native
   class ObservableArray[T] protected () extends StubArray {
     def this(
@@ -84,6 +77,7 @@ object observablearrayMod extends js.Object {
     def unshift(items: T*): Double = js.native
   }
   
+  @JSImport("mobservable/lib/observablearray", "ObservableArrayAdministration")
   @js.native
   class ObservableArrayAdministration[T] protected () extends DataNode {
     def this(
@@ -125,6 +119,16 @@ object observablearrayMod extends js.Object {
     var values: js.Array[T] = js.native
   }
   
+  @JSImport("mobservable/lib/observablearray", "StubArray")
   @js.native
-  class StubArray () extends js.Object
+  class StubArray () extends StObject
+  
+  @JSImport("mobservable/lib/observablearray", "createObservableArray")
+  @js.native
+  def createObservableArray[T](
+    initialValues: js.Array[T],
+    mode: ValueMode,
+    supportEnumerable: Boolean,
+    context: IContextInfoStruct
+  ): IObservableArray[T] = js.native
 }

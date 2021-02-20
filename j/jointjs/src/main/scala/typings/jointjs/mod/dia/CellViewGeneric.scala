@@ -13,6 +13,7 @@ import typings.jquery.JQuery
 import typings.std.HTMLElement
 import typings.std.SVGElement
 import typings.std.SVGMatrix
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -134,10 +135,10 @@ abstract class CellViewGeneric[T /* <: Cell */] () extends View[T] {
   def updateTools(): this.type = js.native
   def updateTools(opt: StringDictionary[js.Any]): this.type = js.native
 }
-/* static members */
-@JSImport("jointjs", "dia.CellViewGeneric")
-@js.native
-object CellViewGeneric extends js.Object {
+object CellViewGeneric {
   
+  /* static member */
+  @JSImport("jointjs", "dia.CellViewGeneric.addPresentationAttributes")
+  @js.native
   def addPresentationAttributes(attributes: PresentationAttributes): PresentationAttributes = js.native
 }

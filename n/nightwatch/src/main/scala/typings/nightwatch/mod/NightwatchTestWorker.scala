@@ -1,11 +1,12 @@
 package typings.nightwatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NightwatchTestWorker extends js.Object {
+trait NightwatchTestWorker extends StObject {
   
   var enabled: Boolean = js.native
   
@@ -22,33 +23,21 @@ object NightwatchTestWorker {
   }
   
   @scala.inline
-  implicit class NightwatchTestWorkerOps[Self <: NightwatchTestWorker] (val x: Self) extends AnyVal {
+  implicit class NightwatchTestWorkerMutableBuilder[Self <: NightwatchTestWorker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNode_options(value: String | js.Array[String]): Self = StObject.set(x, "node_options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNode_optionsUndefined: Self = StObject.set(x, "node_options", js.undefined)
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setNode_optionsVarargs(value: String*): Self = StObject.set(x, "node_options", js.Array(value :_*))
     
     @scala.inline
-    def setWorkers(value: String): Self = this.set("workers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNode_optionsVarargs(value: String*): Self = this.set("node_options", js.Array(value :_*))
-    
-    @scala.inline
-    def setNode_options(value: String | js.Array[String]): Self = this.set("node_options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNode_options: Self = this.set("node_options", js.undefined)
+    def setWorkers(value: String): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VersionInfo extends js.Object {
+trait VersionInfo extends StObject {
   
   /**
     * The Git commit hash for the Amazon ECS container agent build on the amazon-ecs-agent  GitHub repository.
@@ -31,36 +32,24 @@ object VersionInfo {
   }
   
   @scala.inline
-  implicit class VersionInfoOps[Self <: VersionInfo] (val x: Self) extends AnyVal {
+  implicit class VersionInfoMutableBuilder[Self <: VersionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentHash(value: String): Self = StObject.set(x, "agentHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentHashUndefined: Self = StObject.set(x, "agentHash", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgentVersion(value: String): Self = StObject.set(x, "agentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentHash(value: String): Self = this.set("agentHash", value.asInstanceOf[js.Any])
+    def setAgentVersionUndefined: Self = StObject.set(x, "agentVersion", js.undefined)
     
     @scala.inline
-    def deleteAgentHash: Self = this.set("agentHash", js.undefined)
+    def setDockerVersion(value: String): Self = StObject.set(x, "dockerVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentVersion(value: String): Self = this.set("agentVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAgentVersion: Self = this.set("agentVersion", js.undefined)
-    
-    @scala.inline
-    def setDockerVersion(value: String): Self = this.set("dockerVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDockerVersion: Self = this.set("dockerVersion", js.undefined)
+    def setDockerVersionUndefined: Self = StObject.set(x, "dockerVersion", js.undefined)
   }
 }

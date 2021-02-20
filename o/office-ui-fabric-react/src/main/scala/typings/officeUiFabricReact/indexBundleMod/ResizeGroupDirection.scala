@@ -1,12 +1,13 @@
 package typings.officeUiFabricReact.indexBundleMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "ResizeGroupDirection")
 @js.native
-object ResizeGroupDirection extends js.Object {
+object ResizeGroupDirection extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.resizeGroupTypesMod.ResizeGroupDirection with Double] = js.native

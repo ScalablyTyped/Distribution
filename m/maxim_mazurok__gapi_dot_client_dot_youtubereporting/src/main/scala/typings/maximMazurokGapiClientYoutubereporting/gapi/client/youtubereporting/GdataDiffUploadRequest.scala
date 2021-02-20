@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutubereporting.gapi.client.youtubereporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GdataDiffUploadRequest extends js.Object {
+trait GdataDiffUploadRequest extends StObject {
   
   /** gdata */
   var checksumsInfo: js.UndefOr[GdataCompositeMedia] = js.native
@@ -25,36 +26,24 @@ object GdataDiffUploadRequest {
   }
   
   @scala.inline
-  implicit class GdataDiffUploadRequestOps[Self <: GdataDiffUploadRequest] (val x: Self) extends AnyVal {
+  implicit class GdataDiffUploadRequestMutableBuilder[Self <: GdataDiffUploadRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChecksumsInfo(value: GdataCompositeMedia): Self = StObject.set(x, "checksumsInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChecksumsInfoUndefined: Self = StObject.set(x, "checksumsInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectInfo(value: GdataCompositeMedia): Self = StObject.set(x, "objectInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecksumsInfo(value: GdataCompositeMedia): Self = this.set("checksumsInfo", value.asInstanceOf[js.Any])
+    def setObjectInfoUndefined: Self = StObject.set(x, "objectInfo", js.undefined)
     
     @scala.inline
-    def deleteChecksumsInfo: Self = this.set("checksumsInfo", js.undefined)
+    def setObjectVersion(value: String): Self = StObject.set(x, "objectVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectInfo(value: GdataCompositeMedia): Self = this.set("objectInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectInfo: Self = this.set("objectInfo", js.undefined)
-    
-    @scala.inline
-    def setObjectVersion(value: String): Self = this.set("objectVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectVersion: Self = this.set("objectVersion", js.undefined)
+    def setObjectVersionUndefined: Self = StObject.set(x, "objectVersion", js.undefined)
   }
 }

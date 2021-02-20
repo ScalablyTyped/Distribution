@@ -2,12 +2,13 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.TopLevel
 import typings.maximMazurokGapiClientMl.maximMazurokGapiClientMlStrings.GoogleCloudMlV1__HyperparameterOutput
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudMlV1HyperparameterOutput extends js.Object {
+trait GoogleCloudMlV1HyperparameterOutput extends StObject {
   
   /** All recorded object metrics for this trial. This field is not currently populated. */
   var allMetrics: js.UndefOr[js.Array[GoogleCloudMlV1HyperparameterOutputHyperparameterMetric]] = js.native
@@ -49,79 +50,67 @@ object GoogleCloudMlV1HyperparameterOutput {
   }
   
   @scala.inline
-  implicit class GoogleCloudMlV1HyperparameterOutputOps[Self <: GoogleCloudMlV1HyperparameterOutput] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudMlV1HyperparameterOutputMutableBuilder[Self <: GoogleCloudMlV1HyperparameterOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllMetrics(value: js.Array[GoogleCloudMlV1HyperparameterOutputHyperparameterMetric]): Self = StObject.set(x, "allMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllMetricsUndefined: Self = StObject.set(x, "allMetrics", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllMetricsVarargs(value: GoogleCloudMlV1HyperparameterOutputHyperparameterMetric*): Self = StObject.set(x, "allMetrics", js.Array(value :_*))
     
     @scala.inline
-    def setAllMetricsVarargs(value: GoogleCloudMlV1HyperparameterOutputHyperparameterMetric*): Self = this.set("allMetrics", js.Array(value :_*))
+    def setBuiltInAlgorithmOutput(value: GoogleCloudMlV1BuiltInAlgorithmOutput): Self = StObject.set(x, "builtInAlgorithmOutput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllMetrics(value: js.Array[GoogleCloudMlV1HyperparameterOutputHyperparameterMetric]): Self = this.set("allMetrics", value.asInstanceOf[js.Any])
+    def setBuiltInAlgorithmOutputUndefined: Self = StObject.set(x, "builtInAlgorithmOutput", js.undefined)
     
     @scala.inline
-    def deleteAllMetrics: Self = this.set("allMetrics", js.undefined)
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuiltInAlgorithmOutput(value: GoogleCloudMlV1BuiltInAlgorithmOutput): Self = this.set("builtInAlgorithmOutput", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteBuiltInAlgorithmOutput: Self = this.set("builtInAlgorithmOutput", js.undefined)
+    def setFinalMetric(value: GoogleCloudMlV1HyperparameterOutputHyperparameterMetric): Self = StObject.set(x, "finalMetric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
-    
-    @scala.inline
-    def setFinalMetric(value: GoogleCloudMlV1HyperparameterOutputHyperparameterMetric): Self = this.set("finalMetric", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFinalMetric: Self = this.set("finalMetric", js.undefined)
+    def setFinalMetricUndefined: Self = StObject.set(x, "finalMetric", js.undefined)
     
     @scala.inline
     def setHyperparameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ GoogleCloudMlV1__HyperparameterOutput with TopLevel[js.Any]
-    ): Self = this.set("hyperparameters", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "hyperparameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHyperparameters: Self = this.set("hyperparameters", js.undefined)
+    def setHyperparametersUndefined: Self = StObject.set(x, "hyperparameters", js.undefined)
     
     @scala.inline
-    def setIsTrialStoppedEarly(value: Boolean): Self = this.set("isTrialStoppedEarly", value.asInstanceOf[js.Any])
+    def setIsTrialStoppedEarly(value: Boolean): Self = StObject.set(x, "isTrialStoppedEarly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsTrialStoppedEarly: Self = this.set("isTrialStoppedEarly", js.undefined)
+    def setIsTrialStoppedEarlyUndefined: Self = StObject.set(x, "isTrialStoppedEarly", js.undefined)
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setTrialId(value: String): Self = this.set("trialId", value.asInstanceOf[js.Any])
+    def setTrialId(value: String): Self = StObject.set(x, "trialId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTrialId: Self = this.set("trialId", js.undefined)
+    def setTrialIdUndefined: Self = StObject.set(x, "trialId", js.undefined)
   }
 }

@@ -4,14 +4,14 @@ import typings.std.WebGLProgram
 import typings.std.WebGLUniformLocation
 import typings.tensorflowTfjsBackendWebgl.gpgpuContextMod.GPGPUContext
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-backend-webgl/dist/clip_gpu", JSImport.Namespace)
-@js.native
-object clipGpuMod extends js.Object {
+object clipGpuMod {
   
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/clip_gpu", "ClipProgram")
   @js.native
   class ClipProgram protected () extends GPGPUProgram {
     def this(aShape: js.Array[Double]) = this()

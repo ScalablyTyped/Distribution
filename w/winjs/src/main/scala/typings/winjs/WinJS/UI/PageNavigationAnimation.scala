@@ -1,17 +1,18 @@
 package typings.winjs.WinJS.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PageNavigationAnimation extends js.Object
+sealed trait PageNavigationAnimation extends StObject
 /**
   * Specifies what animation type should be returned by WinJS.UI.Animation.createPageNavigationAnimations.
   **/
 @JSGlobal("WinJS.UI.PageNavigationAnimation")
 @js.native
-object PageNavigationAnimation extends js.Object {
+object PageNavigationAnimation extends StObject {
   
   /**
     * The pages will exit and enter using a continuum animation.

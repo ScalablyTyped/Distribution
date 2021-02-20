@@ -2,12 +2,13 @@ package typings.monacoEditor.mod.languages
 
 import typings.monacoEditor.mod.CancellationToken
 import typings.monacoEditor.mod.editor.ITextModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LinkProvider extends js.Object {
+trait LinkProvider extends StObject {
   
   def provideLinks(model: ITextModel, token: CancellationToken): ProviderResult[ILinksList] = js.native
   
@@ -24,27 +25,15 @@ object LinkProvider {
   }
   
   @scala.inline
-  implicit class LinkProviderOps[Self <: LinkProvider] (val x: Self) extends AnyVal {
+  implicit class LinkProviderMutableBuilder[Self <: LinkProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProvideLinks(value: (ITextModel, CancellationToken) => ProviderResult[ILinksList]): Self = StObject.set(x, "provideLinks", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResolveLink(value: (/* link */ ILink, /* token */ CancellationToken) => ProviderResult[ILink]): Self = StObject.set(x, "resolveLink", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProvideLinks(value: (ITextModel, CancellationToken) => ProviderResult[ILinksList]): Self = this.set("provideLinks", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setResolveLink(value: (/* link */ ILink, /* token */ CancellationToken) => ProviderResult[ILink]): Self = this.set("resolveLink", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteResolveLink: Self = this.set("resolveLink", js.undefined)
+    def setResolveLinkUndefined: Self = StObject.set(x, "resolveLink", js.undefined)
   }
 }

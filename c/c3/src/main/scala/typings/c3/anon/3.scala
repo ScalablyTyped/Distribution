@@ -3,12 +3,13 @@ package typings.c3.anon
 import typings.c3.c3Strings.`step-after`
 import typings.c3.c3Strings.`step-before`
 import typings.c3.c3Strings.step
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `3` extends js.Object {
+trait `3` extends StObject {
   
   /**
     * Change step type for step chart.
@@ -26,21 +27,9 @@ object `3` {
   }
   
   @scala.inline
-  implicit class `3Ops`[Self <: `3`] (val x: Self) extends AnyVal {
+  implicit class `3MutableBuilder`[Self <: `3`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: step | `step-before` | `step-after`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: step | `step-before` | `step-after`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

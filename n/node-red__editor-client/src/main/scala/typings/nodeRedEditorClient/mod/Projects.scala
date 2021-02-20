@@ -1,11 +1,12 @@
 package typings.nodeRedEditorClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Projects extends js.Object {
+trait Projects extends StObject {
   
   def createDefaultFileSet(): Unit = js.native
   

@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsCloudFrontDistributionOriginGroupFailoverStatusCodes extends js.Object {
+trait AwsCloudFrontDistributionOriginGroupFailoverStatusCodes extends StObject {
   
   /**
     * The list of status code values that can cause a failover to the next origin.
@@ -26,33 +27,21 @@ object AwsCloudFrontDistributionOriginGroupFailoverStatusCodes {
   }
   
   @scala.inline
-  implicit class AwsCloudFrontDistributionOriginGroupFailoverStatusCodesOps[Self <: AwsCloudFrontDistributionOriginGroupFailoverStatusCodes] (val x: Self) extends AnyVal {
+  implicit class AwsCloudFrontDistributionOriginGroupFailoverStatusCodesMutableBuilder[Self <: AwsCloudFrontDistributionOriginGroupFailoverStatusCodes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: AwsCloudFrontDistributionOriginGroupFailoverStatusCodesItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsVarargs(value: Integer*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: Integer*): Self = this.set("Items", js.Array(value :_*))
+    def setQuantity(value: Integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: AwsCloudFrontDistributionOriginGroupFailoverStatusCodesItemList): Self = this.set("Items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItems: Self = this.set("Items", js.undefined)
-    
-    @scala.inline
-    def setQuantity(value: Integer): Self = this.set("Quantity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuantity: Self = this.set("Quantity", js.undefined)
+    def setQuantityUndefined: Self = StObject.set(x, "Quantity", js.undefined)
   }
 }

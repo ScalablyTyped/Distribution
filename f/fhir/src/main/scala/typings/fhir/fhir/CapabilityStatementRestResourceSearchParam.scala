@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,60 +61,48 @@ object CapabilityStatementRestResourceSearchParam {
   }
   
   @scala.inline
-  implicit class CapabilityStatementRestResourceSearchParamOps[Self <: CapabilityStatementRestResourceSearchParam] (val x: Self) extends AnyVal {
+  implicit class CapabilityStatementRestResourceSearchParamMutableBuilder[Self <: CapabilityStatementRestResourceSearchParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefinition(value: uri): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
     @scala.inline
-    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_definition(value: Element): Self = this.set("_definition", value.asInstanceOf[js.Any])
+    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_definition: Self = this.set("_definition", js.undefined)
+    def set_definition(value: Element): Self = StObject.set(x, "_definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_documentation(value: Element): Self = this.set("_documentation", value.asInstanceOf[js.Any])
+    def set_definitionUndefined: Self = StObject.set(x, "_definition", js.undefined)
     
     @scala.inline
-    def delete_documentation: Self = this.set("_documentation", js.undefined)
+    def set_documentation(value: Element): Self = StObject.set(x, "_documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    def set_documentationUndefined: Self = StObject.set(x, "_documentation", js.undefined)
     
     @scala.inline
-    def delete_name: Self = this.set("_name", js.undefined)
+    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
     @scala.inline
-    def delete_type: Self = this.set("_type", js.undefined)
+    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinition(value: uri): Self = this.set("definition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefinition: Self = this.set("definition", js.undefined)
-    
-    @scala.inline
-    def setDocumentation(value: String): Self = this.set("documentation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

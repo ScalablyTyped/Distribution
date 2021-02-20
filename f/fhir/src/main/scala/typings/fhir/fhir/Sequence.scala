@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -115,144 +116,132 @@ object Sequence {
   }
   
   @scala.inline
-  implicit class SequenceOps[Self <: Sequence] (val x: Self) extends AnyVal {
+  implicit class SequenceMutableBuilder[Self <: Sequence] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoordinateSystem(value: integer): Self = StObject.set(x, "coordinateSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDevice(value: Reference): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
     @scala.inline
-    def setCoordinateSystem(value: integer): Self = this.set("coordinateSystem", value.asInstanceOf[js.Any])
+    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_coordinateSystem(value: Element): Self = this.set("_coordinateSystem", value.asInstanceOf[js.Any])
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def delete_coordinateSystem: Self = this.set("_coordinateSystem", js.undefined)
+    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
     @scala.inline
-    def set_observedSeq(value: Element): Self = this.set("_observedSeq", value.asInstanceOf[js.Any])
+    def setObservedSeq(value: String): Self = StObject.set(x, "observedSeq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_observedSeq: Self = this.set("_observedSeq", js.undefined)
+    def setObservedSeqUndefined: Self = StObject.set(x, "observedSeq", js.undefined)
     
     @scala.inline
-    def set_readCoverage(value: Element): Self = this.set("_readCoverage", value.asInstanceOf[js.Any])
+    def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_readCoverage: Self = this.set("_readCoverage", js.undefined)
+    def setPatientUndefined: Self = StObject.set(x, "patient", js.undefined)
     
     @scala.inline
-    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def setPerformer(value: Reference): Self = StObject.set(x, "performer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_type: Self = this.set("_type", js.undefined)
+    def setPerformerUndefined: Self = StObject.set(x, "performer", js.undefined)
     
     @scala.inline
-    def setDevice(value: Reference): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setPointer(value: js.Array[Reference]): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDevice: Self = this.set("device", js.undefined)
+    def setPointerUndefined: Self = StObject.set(x, "pointer", js.undefined)
     
     @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    def setPointerVarargs(value: Reference*): Self = StObject.set(x, "pointer", js.Array(value :_*))
     
     @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setQuality(value: js.Array[SequenceQuality]): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
     @scala.inline
-    def setObservedSeq(value: String): Self = this.set("observedSeq", value.asInstanceOf[js.Any])
+    def setQualityVarargs(value: SequenceQuality*): Self = StObject.set(x, "quality", js.Array(value :_*))
     
     @scala.inline
-    def deleteObservedSeq: Self = this.set("observedSeq", js.undefined)
+    def setQuantity(value: Quantity): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatient(value: Reference): Self = this.set("patient", value.asInstanceOf[js.Any])
+    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
     @scala.inline
-    def deletePatient: Self = this.set("patient", js.undefined)
+    def setReadCoverage(value: integer): Self = StObject.set(x, "readCoverage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformer(value: Reference): Self = this.set("performer", value.asInstanceOf[js.Any])
+    def setReadCoverageUndefined: Self = StObject.set(x, "readCoverage", js.undefined)
     
     @scala.inline
-    def deletePerformer: Self = this.set("performer", js.undefined)
+    def setReferenceSeq(value: SequenceReferenceSeq): Self = StObject.set(x, "referenceSeq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointerVarargs(value: Reference*): Self = this.set("pointer", js.Array(value :_*))
+    def setReferenceSeqUndefined: Self = StObject.set(x, "referenceSeq", js.undefined)
     
     @scala.inline
-    def setPointer(value: js.Array[Reference]): Self = this.set("pointer", value.asInstanceOf[js.Any])
+    def setRepository(value: js.Array[SequenceRepository]): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePointer: Self = this.set("pointer", js.undefined)
+    def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
     
     @scala.inline
-    def setQualityVarargs(value: SequenceQuality*): Self = this.set("quality", js.Array(value :_*))
+    def setRepositoryVarargs(value: SequenceRepository*): Self = StObject.set(x, "repository", js.Array(value :_*))
     
     @scala.inline
-    def setQuality(value: js.Array[SequenceQuality]): Self = this.set("quality", value.asInstanceOf[js.Any])
+    def setSpecimen(value: Reference): Self = StObject.set(x, "specimen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuality: Self = this.set("quality", js.undefined)
+    def setSpecimenUndefined: Self = StObject.set(x, "specimen", js.undefined)
     
     @scala.inline
-    def setQuantity(value: Quantity): Self = this.set("quantity", value.asInstanceOf[js.Any])
+    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuantity: Self = this.set("quantity", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setReadCoverage(value: integer): Self = this.set("readCoverage", value.asInstanceOf[js.Any])
+    def setVariant(value: js.Array[SequenceVariant]): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReadCoverage: Self = this.set("readCoverage", js.undefined)
+    def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
     
     @scala.inline
-    def setReferenceSeq(value: SequenceReferenceSeq): Self = this.set("referenceSeq", value.asInstanceOf[js.Any])
+    def setVariantVarargs(value: SequenceVariant*): Self = StObject.set(x, "variant", js.Array(value :_*))
     
     @scala.inline
-    def deleteReferenceSeq: Self = this.set("referenceSeq", js.undefined)
+    def set_coordinateSystem(value: Element): Self = StObject.set(x, "_coordinateSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryVarargs(value: SequenceRepository*): Self = this.set("repository", js.Array(value :_*))
+    def set_coordinateSystemUndefined: Self = StObject.set(x, "_coordinateSystem", js.undefined)
     
     @scala.inline
-    def setRepository(value: js.Array[SequenceRepository]): Self = this.set("repository", value.asInstanceOf[js.Any])
+    def set_observedSeq(value: Element): Self = StObject.set(x, "_observedSeq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRepository: Self = this.set("repository", js.undefined)
+    def set_observedSeqUndefined: Self = StObject.set(x, "_observedSeq", js.undefined)
     
     @scala.inline
-    def setSpecimen(value: Reference): Self = this.set("specimen", value.asInstanceOf[js.Any])
+    def set_readCoverage(value: Element): Self = StObject.set(x, "_readCoverage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpecimen: Self = this.set("specimen", js.undefined)
+    def set_readCoverageUndefined: Self = StObject.set(x, "_readCoverage", js.undefined)
     
     @scala.inline
-    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
+    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setVariantVarargs(value: SequenceVariant*): Self = this.set("variant", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariant(value: js.Array[SequenceVariant]): Self = this.set("variant", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariant: Self = this.set("variant", js.undefined)
+    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

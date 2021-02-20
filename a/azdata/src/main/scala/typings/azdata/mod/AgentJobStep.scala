@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AgentJobStep extends js.Object {
+trait AgentJobStep extends StObject {
   
   var jobId: String = js.native
   
@@ -38,39 +39,27 @@ object AgentJobStep {
   }
   
   @scala.inline
-  implicit class AgentJobStepOps[Self <: AgentJobStep] (val x: Self) extends AnyVal {
+  implicit class AgentJobStepMutableBuilder[Self <: AgentJobStep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRunDate(value: String): Self = StObject.set(x, "runDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: String): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    def setRunStatus(value: Double): Self = StObject.set(x, "runStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setStepDetails(value: AgentJobStepInfo): Self = StObject.set(x, "stepDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunDate(value: String): Self = this.set("runDate", value.asInstanceOf[js.Any])
+    def setStepId(value: String): Self = StObject.set(x, "stepId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunStatus(value: Double): Self = this.set("runStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStepDetails(value: AgentJobStepInfo): Self = this.set("stepDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStepId(value: String): Self = this.set("stepId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStepName(value: String): Self = this.set("stepName", value.asInstanceOf[js.Any])
+    def setStepName(value: String): Self = StObject.set(x, "stepName", value.asInstanceOf[js.Any])
   }
 }

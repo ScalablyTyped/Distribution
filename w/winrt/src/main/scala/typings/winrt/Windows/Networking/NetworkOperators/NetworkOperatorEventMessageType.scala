@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NetworkOperatorEventMessageType extends js.Object
+sealed trait NetworkOperatorEventMessageType extends StObject
 @JSGlobal("Windows.Networking.NetworkOperators.NetworkOperatorEventMessageType")
 @js.native
-object NetworkOperatorEventMessageType extends js.Object {
+object NetworkOperatorEventMessageType extends StObject {
   
   @js.native
   sealed trait cdma extends NetworkOperatorEventMessageType

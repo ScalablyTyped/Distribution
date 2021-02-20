@@ -9,6 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.ui.XDockingAreaAcceptor
 import typings.activexLibreoffice.com_.sun.star.ui.XUIElement
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -312,120 +313,108 @@ object XLayoutManager {
   }
   
   @scala.inline
-  implicit class XLayoutManagerOps[Self <: XLayoutManager] (val x: Self) extends AnyVal {
+  implicit class XLayoutManagerMutableBuilder[Self <: XLayoutManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachFrame(value: XFrame => Unit): Self = StObject.set(x, "attachFrame", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateElement(value: String => Unit): Self = StObject.set(x, "createElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentDockingArea(value: Rectangle): Self = StObject.set(x, "CurrentDockingArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentDockingArea(value: Rectangle): Self = this.set("CurrentDockingArea", value.asInstanceOf[js.Any])
+    def setDestroyElement(value: String => Unit): Self = StObject.set(x, "destroyElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDockingAreaAcceptor(value: XDockingAreaAcceptor): Self = this.set("DockingAreaAcceptor", value.asInstanceOf[js.Any])
+    def setDoLayout(value: () => Unit): Self = StObject.set(x, "doLayout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setElements(value: SafeArray[XUIElement]): Self = this.set("Elements", value.asInstanceOf[js.Any])
+    def setDockAllWindows(value: Double => Boolean): Self = StObject.set(x, "dockAllWindows", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAttachFrame(value: XFrame => Unit): Self = this.set("attachFrame", js.Any.fromFunction1(value))
+    def setDockWindow(value: (String, DockingArea, Point) => Boolean): Self = StObject.set(x, "dockWindow", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCreateElement(value: String => Unit): Self = this.set("createElement", js.Any.fromFunction1(value))
+    def setDockingAreaAcceptor(value: XDockingAreaAcceptor): Self = StObject.set(x, "DockingAreaAcceptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroyElement(value: String => Unit): Self = this.set("destroyElement", js.Any.fromFunction1(value))
+    def setElements(value: SafeArray[XUIElement]): Self = StObject.set(x, "Elements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoLayout(value: () => Unit): Self = this.set("doLayout", js.Any.fromFunction0(value))
+    def setFloatWindow(value: String => Boolean): Self = StObject.set(x, "floatWindow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDockAllWindows(value: Double => Boolean): Self = this.set("dockAllWindows", js.Any.fromFunction1(value))
+    def setGetCurrentDockingArea(value: () => Rectangle): Self = StObject.set(x, "getCurrentDockingArea", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDockWindow(value: (String, DockingArea, Point) => Boolean): Self = this.set("dockWindow", js.Any.fromFunction3(value))
+    def setGetDockingAreaAcceptor(value: () => XDockingAreaAcceptor): Self = StObject.set(x, "getDockingAreaAcceptor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFloatWindow(value: String => Boolean): Self = this.set("floatWindow", js.Any.fromFunction1(value))
+    def setGetElement(value: String => XUIElement): Self = StObject.set(x, "getElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCurrentDockingArea(value: () => Rectangle): Self = this.set("getCurrentDockingArea", js.Any.fromFunction0(value))
+    def setGetElementPos(value: String => Point): Self = StObject.set(x, "getElementPos", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDockingAreaAcceptor(value: () => XDockingAreaAcceptor): Self = this.set("getDockingAreaAcceptor", js.Any.fromFunction0(value))
+    def setGetElementSize(value: String => Size): Self = StObject.set(x, "getElementSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetElement(value: String => XUIElement): Self = this.set("getElement", js.Any.fromFunction1(value))
+    def setGetElements(value: () => SafeArray[XUIElement]): Self = StObject.set(x, "getElements", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetElementPos(value: String => Point): Self = this.set("getElementPos", js.Any.fromFunction1(value))
+    def setHideElement(value: String => Boolean): Self = StObject.set(x, "hideElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetElementSize(value: String => Size): Self = this.set("getElementSize", js.Any.fromFunction1(value))
+    def setIsElementDocked(value: String => Boolean): Self = StObject.set(x, "isElementDocked", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetElements(value: () => SafeArray[XUIElement]): Self = this.set("getElements", js.Any.fromFunction0(value))
+    def setIsElementFloating(value: String => Boolean): Self = StObject.set(x, "isElementFloating", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideElement(value: String => Boolean): Self = this.set("hideElement", js.Any.fromFunction1(value))
+    def setIsElementLocked(value: String => Boolean): Self = StObject.set(x, "isElementLocked", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsElementDocked(value: String => Boolean): Self = this.set("isElementDocked", js.Any.fromFunction1(value))
+    def setIsElementVisible(value: String => Boolean): Self = StObject.set(x, "isElementVisible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsElementFloating(value: String => Boolean): Self = this.set("isElementFloating", js.Any.fromFunction1(value))
+    def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsElementLocked(value: String => Boolean): Self = this.set("isElementLocked", js.Any.fromFunction1(value))
+    def setLock(value: () => Unit): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsElementVisible(value: String => Boolean): Self = this.set("isElementVisible", js.Any.fromFunction1(value))
+    def setLockWindow(value: String => Boolean): Self = StObject.set(x, "lockWindow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsVisible(value: () => Boolean): Self = this.set("isVisible", js.Any.fromFunction0(value))
+    def setRequestElement(value: String => Boolean): Self = StObject.set(x, "requestElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLock(value: () => Unit): Self = this.set("lock", js.Any.fromFunction0(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLockWindow(value: String => Boolean): Self = this.set("lockWindow", js.Any.fromFunction1(value))
+    def setSetDockingAreaAcceptor(value: XDockingAreaAcceptor => Unit): Self = StObject.set(x, "setDockingAreaAcceptor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequestElement(value: String => Boolean): Self = this.set("requestElement", js.Any.fromFunction1(value))
+    def setSetElementPos(value: (String, Point) => Unit): Self = StObject.set(x, "setElementPos", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    def setSetElementPosSize(value: (String, Point, Size) => Unit): Self = StObject.set(x, "setElementPosSize", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSetDockingAreaAcceptor(value: XDockingAreaAcceptor => Unit): Self = this.set("setDockingAreaAcceptor", js.Any.fromFunction1(value))
+    def setSetElementSize(value: (String, Size) => Unit): Self = StObject.set(x, "setElementSize", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetElementPos(value: (String, Point) => Unit): Self = this.set("setElementPos", js.Any.fromFunction2(value))
+    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetElementPosSize(value: (String, Point, Size) => Unit): Self = this.set("setElementPosSize", js.Any.fromFunction3(value))
+    def setShowElement(value: String => Boolean): Self = StObject.set(x, "showElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetElementSize(value: (String, Size) => Unit): Self = this.set("setElementSize", js.Any.fromFunction2(value))
+    def setUnlock(value: () => Unit): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = this.set("setVisible", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowElement(value: String => Boolean): Self = this.set("showElement", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnlock(value: () => Unit): Self = this.set("unlock", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUnlockWindow(value: String => Boolean): Self = this.set("unlockWindow", js.Any.fromFunction1(value))
+    def setUnlockWindow(value: String => Boolean): Self = StObject.set(x, "unlockWindow", js.Any.fromFunction1(value))
   }
 }

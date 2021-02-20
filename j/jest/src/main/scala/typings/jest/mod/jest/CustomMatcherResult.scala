@@ -1,11 +1,12 @@
 package typings.jest.mod.jest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomMatcherResult extends js.Object {
+trait CustomMatcherResult extends StObject {
   
   def message(): String = js.native
   
@@ -20,24 +21,12 @@ object CustomMatcherResult {
   }
   
   @scala.inline
-  implicit class CustomMatcherResultOps[Self <: CustomMatcherResult] (val x: Self) extends AnyVal {
+  implicit class CustomMatcherResultMutableBuilder[Self <: CustomMatcherResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: () => String): Self = StObject.set(x, "message", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMessage(value: () => String): Self = this.set("message", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPass(value: Boolean): Self = this.set("pass", value.asInstanceOf[js.Any])
+    def setPass(value: Boolean): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
   }
 }

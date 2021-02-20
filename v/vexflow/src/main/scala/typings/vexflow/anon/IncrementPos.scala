@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IncrementPos extends js.Object {
+trait IncrementPos extends StObject {
   
   var incrementPos: js.Any = js.native
   
@@ -24,30 +25,18 @@ object IncrementPos {
   }
   
   @scala.inline
-  implicit class IncrementPosOps[Self <: IncrementPos] (val x: Self) extends AnyVal {
+  implicit class IncrementPosMutableBuilder[Self <: IncrementPos] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncrementPos(value: js.Any): Self = StObject.set(x, "incrementPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatchedString(value: js.Any): Self = StObject.set(x, "matchedString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPos(value: js.Any): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncrementPos(value: js.Any): Self = this.set("incrementPos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMatchedString(value: js.Any): Self = this.set("matchedString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPos(value: js.Any): Self = this.set("pos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccess(value: Boolean): Self = this.set("success", value.asInstanceOf[js.Any])
+    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

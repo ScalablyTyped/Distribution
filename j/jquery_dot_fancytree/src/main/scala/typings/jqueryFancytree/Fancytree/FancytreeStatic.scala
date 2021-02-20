@@ -3,12 +3,13 @@ package typings.jqueryFancytree.Fancytree
 import typings.jqueryFancytree.JQuery
 import typings.std.Element
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FancytreeStatic extends js.Object {
+trait FancytreeStatic extends StObject {
   
   /** Throw an error if condition fails (debug method).  */
   def assert(cond: Boolean, msg: String): Unit = js.native

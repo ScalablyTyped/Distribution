@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MongoDbSettings extends js.Object {
+trait MongoDbSettings extends StObject {
   
   /**
     *  The authentication mechanism you use to access the MongoDB source endpoint. For the default value, in MongoDB version 2.x, "default" is "mongodb_cr". For MongoDB version 3.x or later, "default" is "scram_sha_1". This setting isn't used when AuthType is set to "no".
@@ -76,90 +77,78 @@ object MongoDbSettings {
   }
   
   @scala.inline
-  implicit class MongoDbSettingsOps[Self <: MongoDbSettings] (val x: Self) extends AnyVal {
+  implicit class MongoDbSettingsMutableBuilder[Self <: MongoDbSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthMechanism(value: AuthMechanismValue): Self = StObject.set(x, "AuthMechanism", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthMechanismUndefined: Self = StObject.set(x, "AuthMechanism", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthSource(value: String): Self = StObject.set(x, "AuthSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthMechanism(value: AuthMechanismValue): Self = this.set("AuthMechanism", value.asInstanceOf[js.Any])
+    def setAuthSourceUndefined: Self = StObject.set(x, "AuthSource", js.undefined)
     
     @scala.inline
-    def deleteAuthMechanism: Self = this.set("AuthMechanism", js.undefined)
+    def setAuthType(value: AuthTypeValue): Self = StObject.set(x, "AuthType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthSource(value: String): Self = this.set("AuthSource", value.asInstanceOf[js.Any])
+    def setAuthTypeUndefined: Self = StObject.set(x, "AuthType", js.undefined)
     
     @scala.inline
-    def deleteAuthSource: Self = this.set("AuthSource", js.undefined)
+    def setDatabaseName(value: String): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthType(value: AuthTypeValue): Self = this.set("AuthType", value.asInstanceOf[js.Any])
+    def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
     
     @scala.inline
-    def deleteAuthType: Self = this.set("AuthType", js.undefined)
+    def setDocsToInvestigate(value: String): Self = StObject.set(x, "DocsToInvestigate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseName(value: String): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    def setDocsToInvestigateUndefined: Self = StObject.set(x, "DocsToInvestigate", js.undefined)
     
     @scala.inline
-    def deleteDatabaseName: Self = this.set("DatabaseName", js.undefined)
+    def setExtractDocId(value: String): Self = StObject.set(x, "ExtractDocId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocsToInvestigate(value: String): Self = this.set("DocsToInvestigate", value.asInstanceOf[js.Any])
+    def setExtractDocIdUndefined: Self = StObject.set(x, "ExtractDocId", js.undefined)
     
     @scala.inline
-    def deleteDocsToInvestigate: Self = this.set("DocsToInvestigate", js.undefined)
+    def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtractDocId(value: String): Self = this.set("ExtractDocId", value.asInstanceOf[js.Any])
+    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
     @scala.inline
-    def deleteExtractDocId: Self = this.set("ExtractDocId", js.undefined)
+    def setNestingLevel(value: NestingLevelValue): Self = StObject.set(x, "NestingLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    def setNestingLevelUndefined: Self = StObject.set(x, "NestingLevel", js.undefined)
     
     @scala.inline
-    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    def setPassword(value: SecretString): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNestingLevel(value: NestingLevelValue): Self = this.set("NestingLevel", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
     @scala.inline
-    def deleteNestingLevel: Self = this.set("NestingLevel", js.undefined)
+    def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: SecretString): Self = this.set("Password", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("Password", js.undefined)
+    def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: IntegerOptional): Self = this.set("Port", value.asInstanceOf[js.Any])
+    def setServerNameUndefined: Self = StObject.set(x, "ServerName", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("Port", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerName(value: String): Self = this.set("ServerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerName: Self = this.set("ServerName", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("Username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("Username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.sharepoint.SP.JsGrid
 
 import typings.microsoftAjax.Sys.UI.DomEvent
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEditControl extends js.Object {
+trait IEditControl extends StObject {
   
   def BindToCell(cellContext: IEditControlCellContext): Unit = js.native
   
@@ -56,99 +57,87 @@ object IEditControl {
   }
   
   @scala.inline
-  implicit class IEditControlOps[Self <: IEditControl] (val x: Self) extends AnyVal {
+  implicit class IEditControlMutableBuilder[Self <: IEditControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindToCell(value: IEditControlCellContext => Unit): Self = StObject.set(x, "BindToCell", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDispose(value: () => Unit): Self = StObject.set(x, "Dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFocus(value: /* eventInfo */ DomEvent => Unit): Self = StObject.set(x, "Focus", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindToCell(value: IEditControlCellContext => Unit): Self = this.set("BindToCell", js.Any.fromFunction1(value))
+    def setFocusUndefined: Self = StObject.set(x, "Focus", js.undefined)
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("Dispose", js.Any.fromFunction0(value))
+    def setGetCellContext(value: () => IEditControlCellContext): Self = StObject.set(x, "GetCellContext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnBeginEdit(value: DomEvent => Unit): Self = this.set("OnBeginEdit", js.Any.fromFunction1(value))
+    def setGetCellContextUndefined: Self = StObject.set(x, "GetCellContext", js.undefined)
     
     @scala.inline
-    def setOnEndEdit(value: () => Unit): Self = this.set("OnEndEdit", js.Any.fromFunction0(value))
+    def setGetInputElement(value: () => HTMLElement): Self = StObject.set(x, "GetInputElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setUnbind(value: () => Unit): Self = this.set("Unbind", js.Any.fromFunction0(value))
+    def setGetInputElementUndefined: Self = StObject.set(x, "GetInputElement", js.undefined)
     
     @scala.inline
-    def setFocus(value: /* eventInfo */ DomEvent => Unit): Self = this.set("Focus", js.Any.fromFunction1(value))
+    def setGetOriginalValue(value: () => IValue): Self = StObject.set(x, "GetOriginalValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteFocus: Self = this.set("Focus", js.undefined)
+    def setGetOriginalValueUndefined: Self = StObject.set(x, "GetOriginalValue", js.undefined)
     
     @scala.inline
-    def setGetCellContext(value: () => IEditControlCellContext): Self = this.set("GetCellContext", js.Any.fromFunction0(value))
+    def setIsCurrentlyUsingGridTextInputElement(value: () => Boolean): Self = StObject.set(x, "IsCurrentlyUsingGridTextInputElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetCellContext: Self = this.set("GetCellContext", js.undefined)
+    def setIsCurrentlyUsingGridTextInputElementUndefined: Self = StObject.set(x, "IsCurrentlyUsingGridTextInputElement", js.undefined)
     
     @scala.inline
-    def setGetInputElement(value: () => HTMLElement): Self = this.set("GetInputElement", js.Any.fromFunction0(value))
+    def setOnBeginEdit(value: DomEvent => Unit): Self = StObject.set(x, "OnBeginEdit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetInputElement: Self = this.set("GetInputElement", js.undefined)
+    def setOnCellMove(value: () => Unit): Self = StObject.set(x, "OnCellMove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOriginalValue(value: () => IValue): Self = this.set("GetOriginalValue", js.Any.fromFunction0(value))
+    def setOnCellMoveUndefined: Self = StObject.set(x, "OnCellMove", js.undefined)
     
     @scala.inline
-    def deleteGetOriginalValue: Self = this.set("GetOriginalValue", js.undefined)
+    def setOnEndEdit(value: () => Unit): Self = StObject.set(x, "OnEndEdit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsCurrentlyUsingGridTextInputElement(value: () => Boolean): Self = this.set("IsCurrentlyUsingGridTextInputElement", js.Any.fromFunction0(value))
+    def setOnValueChanged(value: /* newValue */ IValue => Unit): Self = StObject.set(x, "OnValueChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsCurrentlyUsingGridTextInputElement: Self = this.set("IsCurrentlyUsingGridTextInputElement", js.undefined)
+    def setOnValueChangedUndefined: Self = StObject.set(x, "OnValueChanged", js.undefined)
     
     @scala.inline
-    def setOnCellMove(value: () => Unit): Self = this.set("OnCellMove", js.Any.fromFunction0(value))
+    def setSetSize(value: (/* width */ Double, /* height */ Double) => Unit): Self = StObject.set(x, "SetSize", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnCellMove: Self = this.set("OnCellMove", js.undefined)
+    def setSetSizeUndefined: Self = StObject.set(x, "SetSize", js.undefined)
     
     @scala.inline
-    def setOnValueChanged(value: /* newValue */ IValue => Unit): Self = this.set("OnValueChanged", js.Any.fromFunction1(value))
+    def setSetValue(value: /* value */ IValue => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnValueChanged: Self = this.set("OnValueChanged", js.undefined)
+    def setSetValueUndefined: Self = StObject.set(x, "SetValue", js.undefined)
     
     @scala.inline
-    def setSetSize(value: (/* width */ Double, /* height */ Double) => Unit): Self = this.set("SetSize", js.Any.fromFunction2(value))
+    def setSupportedReadMode(value: EditActorReadType): Self = StObject.set(x, "SupportedReadMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetSize: Self = this.set("SetSize", js.undefined)
+    def setSupportedReadModeUndefined: Self = StObject.set(x, "SupportedReadMode", js.undefined)
     
     @scala.inline
-    def setSetValue(value: /* value */ IValue => Unit): Self = this.set("SetValue", js.Any.fromFunction1(value))
+    def setSupportedWriteMode(value: EditActorWriteType): Self = StObject.set(x, "SupportedWriteMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetValue: Self = this.set("SetValue", js.undefined)
+    def setSupportedWriteModeUndefined: Self = StObject.set(x, "SupportedWriteMode", js.undefined)
     
     @scala.inline
-    def setSupportedReadMode(value: EditActorReadType): Self = this.set("SupportedReadMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedReadMode: Self = this.set("SupportedReadMode", js.undefined)
-    
-    @scala.inline
-    def setSupportedWriteMode(value: EditActorWriteType): Self = this.set("SupportedWriteMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedWriteMode: Self = this.set("SupportedWriteMode", js.undefined)
+    def setUnbind(value: () => Unit): Self = StObject.set(x, "Unbind", js.Any.fromFunction0(value))
   }
 }

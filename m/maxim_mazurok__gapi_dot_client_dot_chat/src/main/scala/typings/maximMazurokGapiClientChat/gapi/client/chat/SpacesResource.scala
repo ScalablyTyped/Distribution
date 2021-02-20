@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientChat.gapi.client.chat
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientChat.anon.Alt
 import typings.maximMazurokGapiClientChat.anon.PageSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpacesResource extends js.Object {
+trait SpacesResource extends StObject {
   
   /** Returns a space. */
   def get(): Request[Space] = js.native

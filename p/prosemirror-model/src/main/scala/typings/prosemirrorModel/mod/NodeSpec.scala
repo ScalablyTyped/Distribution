@@ -1,6 +1,7 @@
 package typings.prosemirrorModel.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -132,147 +133,135 @@ object NodeSpec {
   }
   
   @scala.inline
-  implicit class NodeSpecOps[Self <: NodeSpec] (val x: Self) extends AnyVal {
+  implicit class NodeSpecMutableBuilder[Self <: NodeSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAtom(value: Boolean): Self = StObject.set(x, "atom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAtomNull: Self = StObject.set(x, "atom", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAtomUndefined: Self = StObject.set(x, "atom", js.undefined)
     
     @scala.inline
-    def setAtom(value: Boolean): Self = this.set("atom", value.asInstanceOf[js.Any])
+    def setAttrs(value: StringDictionary[AttributeSpec]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAtom: Self = this.set("atom", js.undefined)
+    def setAttrsNull: Self = StObject.set(x, "attrs", null)
     
     @scala.inline
-    def setAtomNull: Self = this.set("atom", null)
+    def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
     
     @scala.inline
-    def setAttrs(value: StringDictionary[AttributeSpec]): Self = this.set("attrs", value.asInstanceOf[js.Any])
+    def setCode(value: Boolean): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttrs: Self = this.set("attrs", js.undefined)
+    def setCodeNull: Self = StObject.set(x, "code", null)
     
     @scala.inline
-    def setAttrsNull: Self = this.set("attrs", null)
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def setCode(value: Boolean): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setContentNull: Self = StObject.set(x, "content", null)
     
     @scala.inline
-    def setCodeNull: Self = this.set("code", null)
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setDefining(value: Boolean): Self = StObject.set(x, "defining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setDefiningNull: Self = StObject.set(x, "defining", null)
     
     @scala.inline
-    def setContentNull: Self = this.set("content", null)
+    def setDefiningUndefined: Self = StObject.set(x, "defining", js.undefined)
     
     @scala.inline
-    def setDefining(value: Boolean): Self = this.set("defining", value.asInstanceOf[js.Any])
+    def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefining: Self = this.set("defining", js.undefined)
+    def setDraggableNull: Self = StObject.set(x, "draggable", null)
     
     @scala.inline
-    def setDefiningNull: Self = this.set("defining", null)
+    def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
     @scala.inline
-    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    def setGroupNull: Self = StObject.set(x, "group", null)
     
     @scala.inline
-    def setDraggableNull: Self = this.set("draggable", null)
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setInlineNull: Self = StObject.set(x, "inline", null)
     
     @scala.inline
-    def setGroupNull: Self = this.set("group", null)
+    def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
     
     @scala.inline
-    def setInline(value: Boolean): Self = this.set("inline", value.asInstanceOf[js.Any])
+    def setIsolating(value: Boolean): Self = StObject.set(x, "isolating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInline: Self = this.set("inline", js.undefined)
+    def setIsolatingNull: Self = StObject.set(x, "isolating", null)
     
     @scala.inline
-    def setInlineNull: Self = this.set("inline", null)
+    def setIsolatingUndefined: Self = StObject.set(x, "isolating", js.undefined)
     
     @scala.inline
-    def setIsolating(value: Boolean): Self = this.set("isolating", value.asInstanceOf[js.Any])
+    def setMarks(value: String): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsolating: Self = this.set("isolating", js.undefined)
+    def setMarksNull: Self = StObject.set(x, "marks", null)
     
     @scala.inline
-    def setIsolatingNull: Self = this.set("isolating", null)
+    def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
     
     @scala.inline
-    def setMarks(value: String): Self = this.set("marks", value.asInstanceOf[js.Any])
+    def setParseDOM(value: js.Array[ParseRule]): Self = StObject.set(x, "parseDOM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarks: Self = this.set("marks", js.undefined)
+    def setParseDOMNull: Self = StObject.set(x, "parseDOM", null)
     
     @scala.inline
-    def setMarksNull: Self = this.set("marks", null)
+    def setParseDOMUndefined: Self = StObject.set(x, "parseDOM", js.undefined)
     
     @scala.inline
-    def setParseDOMVarargs(value: ParseRule*): Self = this.set("parseDOM", js.Array(value :_*))
+    def setParseDOMVarargs(value: ParseRule*): Self = StObject.set(x, "parseDOM", js.Array(value :_*))
     
     @scala.inline
-    def setParseDOM(value: js.Array[ParseRule]): Self = this.set("parseDOM", value.asInstanceOf[js.Any])
+    def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParseDOM: Self = this.set("parseDOM", js.undefined)
+    def setSelectableNull: Self = StObject.set(x, "selectable", null)
     
     @scala.inline
-    def setParseDOMNull: Self = this.set("parseDOM", null)
+    def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
     
     @scala.inline
-    def setSelectable(value: Boolean): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    def setToDOM(value: /* node */ ProsemirrorNode[_] => DOMOutputSpec): Self = StObject.set(x, "toDOM", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    def setToDOMNull: Self = StObject.set(x, "toDOM", null)
     
     @scala.inline
-    def setSelectableNull: Self = this.set("selectable", null)
+    def setToDOMUndefined: Self = StObject.set(x, "toDOM", js.undefined)
     
     @scala.inline
-    def setToDOM(value: /* node */ ProsemirrorNode[_] => DOMOutputSpec): Self = this.set("toDOM", js.Any.fromFunction1(value))
+    def setToDebugString(value: /* node */ ProsemirrorNode[_] => String): Self = StObject.set(x, "toDebugString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteToDOM: Self = this.set("toDOM", js.undefined)
+    def setToDebugStringNull: Self = StObject.set(x, "toDebugString", null)
     
     @scala.inline
-    def setToDOMNull: Self = this.set("toDOM", null)
-    
-    @scala.inline
-    def setToDebugString(value: /* node */ ProsemirrorNode[_] => String): Self = this.set("toDebugString", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteToDebugString: Self = this.set("toDebugString", js.undefined)
-    
-    @scala.inline
-    def setToDebugStringNull: Self = this.set("toDebugString", null)
+    def setToDebugStringUndefined: Self = StObject.set(x, "toDebugString", js.undefined)
   }
 }

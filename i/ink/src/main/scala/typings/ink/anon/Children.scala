@@ -1,40 +1,31 @@
 package typings.ink.anon
 
-import typings.propTypes.mod.ReactNodeLike
-import typings.propTypes.mod.Requireable
+import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Children extends js.Object {
+trait Children extends StObject {
   
-  var children: Requireable[ReactNodeLike] = js.native
+  var children: ReactNode = js.native
 }
 object Children {
   
   @scala.inline
-  def apply(children: Requireable[ReactNodeLike]): Children = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+  def apply(): Children = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Children]
   }
   
   @scala.inline
-  implicit class ChildrenOps[Self <: Children] (val x: Self) extends AnyVal {
+  implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChildren(value: Requireable[ReactNodeLike]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
   }
 }

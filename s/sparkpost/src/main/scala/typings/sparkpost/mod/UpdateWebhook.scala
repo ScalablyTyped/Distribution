@@ -1,11 +1,12 @@
 package typings.sparkpost.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateWebhook extends js.Object {
+trait UpdateWebhook extends StObject {
   
   var active: js.UndefOr[Boolean] = js.native
   
@@ -39,69 +40,57 @@ object UpdateWebhook {
   }
   
   @scala.inline
-  implicit class UpdateWebhookOps[Self <: UpdateWebhook] (val x: Self) extends AnyVal {
+  implicit class UpdateWebhookMutableBuilder[Self <: UpdateWebhook] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuth_credentials(value: js.Any): Self = StObject.set(x, "auth_credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setAuth_credentialsUndefined: Self = StObject.set(x, "auth_credentials", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setAuth_request_details(value: js.Any): Self = StObject.set(x, "auth_request_details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth_credentials(value: js.Any): Self = this.set("auth_credentials", value.asInstanceOf[js.Any])
+    def setAuth_request_detailsUndefined: Self = StObject.set(x, "auth_request_details", js.undefined)
     
     @scala.inline
-    def deleteAuth_credentials: Self = this.set("auth_credentials", js.undefined)
+    def setAuth_token(value: String): Self = StObject.set(x, "auth_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth_request_details(value: js.Any): Self = this.set("auth_request_details", value.asInstanceOf[js.Any])
+    def setAuth_tokenUndefined: Self = StObject.set(x, "auth_token", js.undefined)
     
     @scala.inline
-    def deleteAuth_request_details: Self = this.set("auth_request_details", js.undefined)
+    def setAuth_type(value: String): Self = StObject.set(x, "auth_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth_token(value: String): Self = this.set("auth_token", value.asInstanceOf[js.Any])
+    def setAuth_typeUndefined: Self = StObject.set(x, "auth_type", js.undefined)
     
     @scala.inline
-    def deleteAuth_token: Self = this.set("auth_token", js.undefined)
+    def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth_type(value: String): Self = this.set("auth_type", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteAuth_type: Self = this.set("auth_type", js.undefined)
+    def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setEventsVarargs(value: String*): Self = this.set("events", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: js.Array[String]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
 import typings.pulumiKubernetes.outputMod.meta.v1.LabelSelector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * PersistentVolumeClaimSpec describes the common attributes of storage devices and allows a Source for provider-specific attributes
   */
 @js.native
-trait PersistentVolumeClaimSpec extends js.Object {
+trait PersistentVolumeClaimSpec extends StObject {
   
   /**
     * AccessModes contains the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1
@@ -63,42 +64,30 @@ object PersistentVolumeClaimSpec {
   }
   
   @scala.inline
-  implicit class PersistentVolumeClaimSpecOps[Self <: PersistentVolumeClaimSpec] (val x: Self) extends AnyVal {
+  implicit class PersistentVolumeClaimSpecMutableBuilder[Self <: PersistentVolumeClaimSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessModes(value: js.Array[String]): Self = StObject.set(x, "accessModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessModesVarargs(value: String*): Self = StObject.set(x, "accessModes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSource(value: TypedLocalObjectReference): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessModesVarargs(value: String*): Self = this.set("accessModes", js.Array(value :_*))
+    def setResources(value: ResourceRequirements): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessModes(value: js.Array[String]): Self = this.set("accessModes", value.asInstanceOf[js.Any])
+    def setSelector(value: LabelSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: TypedLocalObjectReference): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setStorageClassName(value: String): Self = StObject.set(x, "storageClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResources(value: ResourceRequirements): Self = this.set("resources", value.asInstanceOf[js.Any])
+    def setVolumeMode(value: String): Self = StObject.set(x, "volumeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: LabelSelector): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStorageClassName(value: String): Self = this.set("storageClassName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolumeMode(value: String): Self = this.set("volumeMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolumeName(value: String): Self = this.set("volumeName", value.asInstanceOf[js.Any])
+    def setVolumeName(value: String): Self = StObject.set(x, "volumeName", value.asInstanceOf[js.Any])
   }
 }

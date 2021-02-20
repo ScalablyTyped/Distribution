@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataFilteringEventUIParam extends js.Object {
+trait DataFilteringEventUIParam extends StObject {
   
   /**
     * Gets the column index. Applicable only when filtering mode is "simple".
@@ -36,45 +37,33 @@ object DataFilteringEventUIParam {
   }
   
   @scala.inline
-  implicit class DataFilteringEventUIParamOps[Self <: DataFilteringEventUIParam] (val x: Self) extends AnyVal {
+  implicit class DataFilteringEventUIParamMutableBuilder[Self <: DataFilteringEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
     @scala.inline
-    def deleteColumnIndex: Self = this.set("columnIndex", js.undefined)
+    def setNewExpressions(value: js.Array[_]): Self = StObject.set(x, "newExpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnKey(value: String): Self = this.set("columnKey", value.asInstanceOf[js.Any])
+    def setNewExpressionsUndefined: Self = StObject.set(x, "newExpressions", js.undefined)
     
     @scala.inline
-    def deleteColumnKey: Self = this.set("columnKey", js.undefined)
+    def setNewExpressionsVarargs(value: js.Any*): Self = StObject.set(x, "newExpressions", js.Array(value :_*))
     
     @scala.inline
-    def setNewExpressionsVarargs(value: js.Any*): Self = this.set("newExpressions", js.Array(value :_*))
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewExpressions(value: js.Array[_]): Self = this.set("newExpressions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewExpressions: Self = this.set("newExpressions", js.undefined)
-    
-    @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

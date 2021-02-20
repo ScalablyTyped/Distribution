@@ -1,6 +1,7 @@
 package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A Google Kubernetes Engine cluster.
   */
 @js.native
-trait SchemaCluster extends js.Object {
+trait SchemaCluster extends StObject {
   
   /**
     * Configurations for the various addons available to run in the cluster.
@@ -363,336 +364,324 @@ object SchemaCluster {
   }
   
   @scala.inline
-  implicit class SchemaClusterOps[Self <: SchemaCluster] (val x: Self) extends AnyVal {
+  implicit class SchemaClusterMutableBuilder[Self <: SchemaCluster] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddonsConfig(value: SchemaAddonsConfig): Self = StObject.set(x, "addonsConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddonsConfigUndefined: Self = StObject.set(x, "addonsConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthenticatorGroupsConfig(value: SchemaAuthenticatorGroupsConfig): Self = StObject.set(x, "authenticatorGroupsConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddonsConfig(value: SchemaAddonsConfig): Self = this.set("addonsConfig", value.asInstanceOf[js.Any])
+    def setAuthenticatorGroupsConfigUndefined: Self = StObject.set(x, "authenticatorGroupsConfig", js.undefined)
     
     @scala.inline
-    def deleteAddonsConfig: Self = this.set("addonsConfig", js.undefined)
+    def setAutoscaling(value: SchemaClusterAutoscaling): Self = StObject.set(x, "autoscaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticatorGroupsConfig(value: SchemaAuthenticatorGroupsConfig): Self = this.set("authenticatorGroupsConfig", value.asInstanceOf[js.Any])
+    def setAutoscalingUndefined: Self = StObject.set(x, "autoscaling", js.undefined)
     
     @scala.inline
-    def deleteAuthenticatorGroupsConfig: Self = this.set("authenticatorGroupsConfig", js.undefined)
+    def setBinaryAuthorization(value: SchemaBinaryAuthorization): Self = StObject.set(x, "binaryAuthorization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoscaling(value: SchemaClusterAutoscaling): Self = this.set("autoscaling", value.asInstanceOf[js.Any])
+    def setBinaryAuthorizationUndefined: Self = StObject.set(x, "binaryAuthorization", js.undefined)
     
     @scala.inline
-    def deleteAutoscaling: Self = this.set("autoscaling", js.undefined)
+    def setClusterIpv4Cidr(value: String): Self = StObject.set(x, "clusterIpv4Cidr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinaryAuthorization(value: SchemaBinaryAuthorization): Self = this.set("binaryAuthorization", value.asInstanceOf[js.Any])
+    def setClusterIpv4CidrUndefined: Self = StObject.set(x, "clusterIpv4Cidr", js.undefined)
     
     @scala.inline
-    def deleteBinaryAuthorization: Self = this.set("binaryAuthorization", js.undefined)
+    def setConditions(value: js.Array[SchemaStatusCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterIpv4Cidr(value: String): Self = this.set("clusterIpv4Cidr", value.asInstanceOf[js.Any])
+    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
     @scala.inline
-    def deleteClusterIpv4Cidr: Self = this.set("clusterIpv4Cidr", js.undefined)
+    def setConditionsVarargs(value: SchemaStatusCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def setConditionsVarargs(value: SchemaStatusCondition*): Self = this.set("conditions", js.Array(value :_*))
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: js.Array[SchemaStatusCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteConditions: Self = this.set("conditions", js.undefined)
+    def setCurrentMasterVersion(value: String): Self = StObject.set(x, "currentMasterVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setCurrentMasterVersionUndefined: Self = StObject.set(x, "currentMasterVersion", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setCurrentNodeCount(value: Double): Self = StObject.set(x, "currentNodeCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentMasterVersion(value: String): Self = this.set("currentMasterVersion", value.asInstanceOf[js.Any])
+    def setCurrentNodeCountUndefined: Self = StObject.set(x, "currentNodeCount", js.undefined)
     
     @scala.inline
-    def deleteCurrentMasterVersion: Self = this.set("currentMasterVersion", js.undefined)
+    def setCurrentNodeVersion(value: String): Self = StObject.set(x, "currentNodeVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentNodeCount(value: Double): Self = this.set("currentNodeCount", value.asInstanceOf[js.Any])
+    def setCurrentNodeVersionUndefined: Self = StObject.set(x, "currentNodeVersion", js.undefined)
     
     @scala.inline
-    def deleteCurrentNodeCount: Self = this.set("currentNodeCount", js.undefined)
+    def setDatabaseEncryption(value: SchemaDatabaseEncryption): Self = StObject.set(x, "databaseEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentNodeVersion(value: String): Self = this.set("currentNodeVersion", value.asInstanceOf[js.Any])
+    def setDatabaseEncryptionUndefined: Self = StObject.set(x, "databaseEncryption", js.undefined)
     
     @scala.inline
-    def deleteCurrentNodeVersion: Self = this.set("currentNodeVersion", js.undefined)
+    def setDefaultMaxPodsConstraint(value: SchemaMaxPodsConstraint): Self = StObject.set(x, "defaultMaxPodsConstraint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseEncryption(value: SchemaDatabaseEncryption): Self = this.set("databaseEncryption", value.asInstanceOf[js.Any])
+    def setDefaultMaxPodsConstraintUndefined: Self = StObject.set(x, "defaultMaxPodsConstraint", js.undefined)
     
     @scala.inline
-    def deleteDatabaseEncryption: Self = this.set("databaseEncryption", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultMaxPodsConstraint(value: SchemaMaxPodsConstraint): Self = this.set("defaultMaxPodsConstraint", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDefaultMaxPodsConstraint: Self = this.set("defaultMaxPodsConstraint", js.undefined)
+    def setEnableKubernetesAlpha(value: Boolean): Self = StObject.set(x, "enableKubernetesAlpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEnableKubernetesAlphaUndefined: Self = StObject.set(x, "enableKubernetesAlpha", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEnableTpu(value: Boolean): Self = StObject.set(x, "enableTpu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableKubernetesAlpha(value: Boolean): Self = this.set("enableKubernetesAlpha", value.asInstanceOf[js.Any])
+    def setEnableTpuUndefined: Self = StObject.set(x, "enableTpu", js.undefined)
     
     @scala.inline
-    def deleteEnableKubernetesAlpha: Self = this.set("enableKubernetesAlpha", js.undefined)
+    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableTpu(value: Boolean): Self = this.set("enableTpu", value.asInstanceOf[js.Any])
+    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
     @scala.inline
-    def deleteEnableTpu: Self = this.set("enableTpu", js.undefined)
+    def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoint(value: String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
     
     @scala.inline
-    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    def setInitialClusterVersion(value: String): Self = StObject.set(x, "initialClusterVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpireTime(value: String): Self = this.set("expireTime", value.asInstanceOf[js.Any])
+    def setInitialClusterVersionUndefined: Self = StObject.set(x, "initialClusterVersion", js.undefined)
     
     @scala.inline
-    def deleteExpireTime: Self = this.set("expireTime", js.undefined)
+    def setInitialNodeCount(value: Double): Self = StObject.set(x, "initialNodeCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialClusterVersion(value: String): Self = this.set("initialClusterVersion", value.asInstanceOf[js.Any])
+    def setInitialNodeCountUndefined: Self = StObject.set(x, "initialNodeCount", js.undefined)
     
     @scala.inline
-    def deleteInitialClusterVersion: Self = this.set("initialClusterVersion", js.undefined)
+    def setInstanceGroupUrls(value: js.Array[String]): Self = StObject.set(x, "instanceGroupUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialNodeCount(value: Double): Self = this.set("initialNodeCount", value.asInstanceOf[js.Any])
+    def setInstanceGroupUrlsUndefined: Self = StObject.set(x, "instanceGroupUrls", js.undefined)
     
     @scala.inline
-    def deleteInitialNodeCount: Self = this.set("initialNodeCount", js.undefined)
+    def setInstanceGroupUrlsVarargs(value: String*): Self = StObject.set(x, "instanceGroupUrls", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceGroupUrlsVarargs(value: String*): Self = this.set("instanceGroupUrls", js.Array(value :_*))
+    def setIpAllocationPolicy(value: SchemaIPAllocationPolicy): Self = StObject.set(x, "ipAllocationPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceGroupUrls(value: js.Array[String]): Self = this.set("instanceGroupUrls", value.asInstanceOf[js.Any])
+    def setIpAllocationPolicyUndefined: Self = StObject.set(x, "ipAllocationPolicy", js.undefined)
     
     @scala.inline
-    def deleteInstanceGroupUrls: Self = this.set("instanceGroupUrls", js.undefined)
+    def setLabelFingerprint(value: String): Self = StObject.set(x, "labelFingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAllocationPolicy(value: SchemaIPAllocationPolicy): Self = this.set("ipAllocationPolicy", value.asInstanceOf[js.Any])
+    def setLabelFingerprintUndefined: Self = StObject.set(x, "labelFingerprint", js.undefined)
     
     @scala.inline
-    def deleteIpAllocationPolicy: Self = this.set("ipAllocationPolicy", js.undefined)
+    def setLegacyAbac(value: SchemaLegacyAbac): Self = StObject.set(x, "legacyAbac", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelFingerprint(value: String): Self = this.set("labelFingerprint", value.asInstanceOf[js.Any])
+    def setLegacyAbacUndefined: Self = StObject.set(x, "legacyAbac", js.undefined)
     
     @scala.inline
-    def deleteLabelFingerprint: Self = this.set("labelFingerprint", js.undefined)
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegacyAbac(value: SchemaLegacyAbac): Self = this.set("legacyAbac", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteLegacyAbac: Self = this.set("legacyAbac", js.undefined)
+    def setLocations(value: js.Array[String]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setLocationsVarargs(value: String*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
     @scala.inline
-    def setLocationsVarargs(value: String*): Self = this.set("locations", js.Array(value :_*))
+    def setLoggingService(value: String): Self = StObject.set(x, "loggingService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocations(value: js.Array[String]): Self = this.set("locations", value.asInstanceOf[js.Any])
+    def setLoggingServiceUndefined: Self = StObject.set(x, "loggingService", js.undefined)
     
     @scala.inline
-    def deleteLocations: Self = this.set("locations", js.undefined)
+    def setMaintenancePolicy(value: SchemaMaintenancePolicy): Self = StObject.set(x, "maintenancePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoggingService(value: String): Self = this.set("loggingService", value.asInstanceOf[js.Any])
+    def setMaintenancePolicyUndefined: Self = StObject.set(x, "maintenancePolicy", js.undefined)
     
     @scala.inline
-    def deleteLoggingService: Self = this.set("loggingService", js.undefined)
+    def setMasterAuth(value: SchemaMasterAuth): Self = StObject.set(x, "masterAuth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaintenancePolicy(value: SchemaMaintenancePolicy): Self = this.set("maintenancePolicy", value.asInstanceOf[js.Any])
+    def setMasterAuthUndefined: Self = StObject.set(x, "masterAuth", js.undefined)
     
     @scala.inline
-    def deleteMaintenancePolicy: Self = this.set("maintenancePolicy", js.undefined)
+    def setMasterAuthorizedNetworksConfig(value: SchemaMasterAuthorizedNetworksConfig): Self = StObject.set(x, "masterAuthorizedNetworksConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterAuth(value: SchemaMasterAuth): Self = this.set("masterAuth", value.asInstanceOf[js.Any])
+    def setMasterAuthorizedNetworksConfigUndefined: Self = StObject.set(x, "masterAuthorizedNetworksConfig", js.undefined)
     
     @scala.inline
-    def deleteMasterAuth: Self = this.set("masterAuth", js.undefined)
+    def setMasterIpv4CidrBlock(value: String): Self = StObject.set(x, "masterIpv4CidrBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterAuthorizedNetworksConfig(value: SchemaMasterAuthorizedNetworksConfig): Self = this.set("masterAuthorizedNetworksConfig", value.asInstanceOf[js.Any])
+    def setMasterIpv4CidrBlockUndefined: Self = StObject.set(x, "masterIpv4CidrBlock", js.undefined)
     
     @scala.inline
-    def deleteMasterAuthorizedNetworksConfig: Self = this.set("masterAuthorizedNetworksConfig", js.undefined)
+    def setMonitoringService(value: String): Self = StObject.set(x, "monitoringService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterIpv4CidrBlock(value: String): Self = this.set("masterIpv4CidrBlock", value.asInstanceOf[js.Any])
+    def setMonitoringServiceUndefined: Self = StObject.set(x, "monitoringService", js.undefined)
     
     @scala.inline
-    def deleteMasterIpv4CidrBlock: Self = this.set("masterIpv4CidrBlock", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitoringService(value: String): Self = this.set("monitoringService", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMonitoringService: Self = this.set("monitoringService", js.undefined)
+    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNetworkConfig(value: SchemaNetworkConfig): Self = StObject.set(x, "networkConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNetworkConfigUndefined: Self = StObject.set(x, "networkConfig", js.undefined)
     
     @scala.inline
-    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    def setNetworkPolicy(value: SchemaNetworkPolicy): Self = StObject.set(x, "networkPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
+    def setNetworkPolicyUndefined: Self = StObject.set(x, "networkPolicy", js.undefined)
     
     @scala.inline
-    def setNetworkConfig(value: SchemaNetworkConfig): Self = this.set("networkConfig", value.asInstanceOf[js.Any])
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
     @scala.inline
-    def deleteNetworkConfig: Self = this.set("networkConfig", js.undefined)
+    def setNodeConfig(value: SchemaNodeConfig): Self = StObject.set(x, "nodeConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkPolicy(value: SchemaNetworkPolicy): Self = this.set("networkPolicy", value.asInstanceOf[js.Any])
+    def setNodeConfigUndefined: Self = StObject.set(x, "nodeConfig", js.undefined)
     
     @scala.inline
-    def deleteNetworkPolicy: Self = this.set("networkPolicy", js.undefined)
+    def setNodeIpv4CidrSize(value: Double): Self = StObject.set(x, "nodeIpv4CidrSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeConfig(value: SchemaNodeConfig): Self = this.set("nodeConfig", value.asInstanceOf[js.Any])
+    def setNodeIpv4CidrSizeUndefined: Self = StObject.set(x, "nodeIpv4CidrSize", js.undefined)
     
     @scala.inline
-    def deleteNodeConfig: Self = this.set("nodeConfig", js.undefined)
+    def setNodePools(value: js.Array[SchemaNodePool]): Self = StObject.set(x, "nodePools", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeIpv4CidrSize(value: Double): Self = this.set("nodeIpv4CidrSize", value.asInstanceOf[js.Any])
+    def setNodePoolsUndefined: Self = StObject.set(x, "nodePools", js.undefined)
     
     @scala.inline
-    def deleteNodeIpv4CidrSize: Self = this.set("nodeIpv4CidrSize", js.undefined)
+    def setNodePoolsVarargs(value: SchemaNodePool*): Self = StObject.set(x, "nodePools", js.Array(value :_*))
     
     @scala.inline
-    def setNodePoolsVarargs(value: SchemaNodePool*): Self = this.set("nodePools", js.Array(value :_*))
+    def setPodSecurityPolicyConfig(value: SchemaPodSecurityPolicyConfig): Self = StObject.set(x, "podSecurityPolicyConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodePools(value: js.Array[SchemaNodePool]): Self = this.set("nodePools", value.asInstanceOf[js.Any])
+    def setPodSecurityPolicyConfigUndefined: Self = StObject.set(x, "podSecurityPolicyConfig", js.undefined)
     
     @scala.inline
-    def deleteNodePools: Self = this.set("nodePools", js.undefined)
+    def setPrivateCluster(value: Boolean): Self = StObject.set(x, "privateCluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPodSecurityPolicyConfig(value: SchemaPodSecurityPolicyConfig): Self = this.set("podSecurityPolicyConfig", value.asInstanceOf[js.Any])
+    def setPrivateClusterConfig(value: SchemaPrivateClusterConfig): Self = StObject.set(x, "privateClusterConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePodSecurityPolicyConfig: Self = this.set("podSecurityPolicyConfig", js.undefined)
+    def setPrivateClusterConfigUndefined: Self = StObject.set(x, "privateClusterConfig", js.undefined)
     
     @scala.inline
-    def setPrivateCluster(value: Boolean): Self = this.set("privateCluster", value.asInstanceOf[js.Any])
+    def setPrivateClusterUndefined: Self = StObject.set(x, "privateCluster", js.undefined)
     
     @scala.inline
-    def deletePrivateCluster: Self = this.set("privateCluster", js.undefined)
+    def setResourceLabels(value: StringDictionary[String]): Self = StObject.set(x, "resourceLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateClusterConfig(value: SchemaPrivateClusterConfig): Self = this.set("privateClusterConfig", value.asInstanceOf[js.Any])
+    def setResourceLabelsUndefined: Self = StObject.set(x, "resourceLabels", js.undefined)
     
     @scala.inline
-    def deletePrivateClusterConfig: Self = this.set("privateClusterConfig", js.undefined)
+    def setResourceUsageExportConfig(value: SchemaResourceUsageExportConfig): Self = StObject.set(x, "resourceUsageExportConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceLabels(value: StringDictionary[String]): Self = this.set("resourceLabels", value.asInstanceOf[js.Any])
+    def setResourceUsageExportConfigUndefined: Self = StObject.set(x, "resourceUsageExportConfig", js.undefined)
     
     @scala.inline
-    def deleteResourceLabels: Self = this.set("resourceLabels", js.undefined)
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceUsageExportConfig(value: SchemaResourceUsageExportConfig): Self = this.set("resourceUsageExportConfig", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteResourceUsageExportConfig: Self = this.set("resourceUsageExportConfig", js.undefined)
+    def setServicesIpv4Cidr(value: String): Self = StObject.set(x, "servicesIpv4Cidr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setServicesIpv4CidrUndefined: Self = StObject.set(x, "servicesIpv4Cidr", js.undefined)
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServicesIpv4Cidr(value: String): Self = this.set("servicesIpv4Cidr", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteServicesIpv4Cidr: Self = this.set("servicesIpv4Cidr", js.undefined)
+    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
     
     @scala.inline
-    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
+    def setTpuIpv4CidrBlock(value: String): Self = StObject.set(x, "tpuIpv4CidrBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetwork(value: String): Self = this.set("subnetwork", value.asInstanceOf[js.Any])
+    def setTpuIpv4CidrBlockUndefined: Self = StObject.set(x, "tpuIpv4CidrBlock", js.undefined)
     
     @scala.inline
-    def deleteSubnetwork: Self = this.set("subnetwork", js.undefined)
+    def setVerticalPodAutoscaling(value: SchemaVerticalPodAutoscaling): Self = StObject.set(x, "verticalPodAutoscaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTpuIpv4CidrBlock(value: String): Self = this.set("tpuIpv4CidrBlock", value.asInstanceOf[js.Any])
+    def setVerticalPodAutoscalingUndefined: Self = StObject.set(x, "verticalPodAutoscaling", js.undefined)
     
     @scala.inline
-    def deleteTpuIpv4CidrBlock: Self = this.set("tpuIpv4CidrBlock", js.undefined)
+    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalPodAutoscaling(value: SchemaVerticalPodAutoscaling): Self = this.set("verticalPodAutoscaling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalPodAutoscaling: Self = this.set("verticalPodAutoscaling", js.undefined)
-    
-    @scala.inline
-    def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZone: Self = this.set("zone", js.undefined)
+    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

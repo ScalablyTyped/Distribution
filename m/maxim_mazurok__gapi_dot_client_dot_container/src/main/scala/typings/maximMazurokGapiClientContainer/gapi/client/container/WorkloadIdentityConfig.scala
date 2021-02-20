@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkloadIdentityConfig extends js.Object {
+trait WorkloadIdentityConfig extends StObject {
   
   /** The workload pool to attach all Kubernetes service accounts to. */
   var workloadPool: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object WorkloadIdentityConfig {
   }
   
   @scala.inline
-  implicit class WorkloadIdentityConfigOps[Self <: WorkloadIdentityConfig] (val x: Self) extends AnyVal {
+  implicit class WorkloadIdentityConfigMutableBuilder[Self <: WorkloadIdentityConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWorkloadPool(value: String): Self = StObject.set(x, "workloadPool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWorkloadPool(value: String): Self = this.set("workloadPool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkloadPool: Self = this.set("workloadPool", js.undefined)
+    def setWorkloadPoolUndefined: Self = StObject.set(x, "workloadPool", js.undefined)
   }
 }

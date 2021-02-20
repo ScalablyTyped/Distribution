@@ -1,5 +1,6 @@
 package typings.cordovaPluginFile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * each of which may be a File or DirectoryEntry.
   */
 @js.native
-trait Entry extends js.Object {
+trait Entry extends StObject {
   
   /**
     * Copy an entry to a different location on the file system. It is an error to try to:

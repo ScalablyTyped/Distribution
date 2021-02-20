@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -91,7 +92,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options - Object for passing optional arguments. These arguments are the same as properties of the Layer.
   */
 @js.native
-trait Layer extends js.Object {
+trait Layer extends StObject {
   
   /**
     * Adds a camera to this layer.

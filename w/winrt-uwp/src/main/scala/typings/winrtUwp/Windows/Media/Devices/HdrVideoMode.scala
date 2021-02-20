@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HdrVideoMode extends js.Object
+sealed trait HdrVideoMode extends StObject
 /** Defines the High Dynamic Range (HDR) video modes. */
 @JSGlobal("Windows.Media.Devices.HdrVideoMode")
 @js.native
-object HdrVideoMode extends js.Object {
+object HdrVideoMode extends StObject {
   
   /** The system dynamically enables HDR video capture when appropriate. */
   @js.native

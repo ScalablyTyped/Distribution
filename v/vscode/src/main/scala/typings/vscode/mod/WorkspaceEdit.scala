@@ -2,13 +2,14 @@ package typings.vscode.mod
 
 import typings.vscode.anon.IgnoreIfExists
 import typings.vscode.anon.IgnoreIfNotExists
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "WorkspaceEdit")
 @js.native
-class WorkspaceEdit () extends js.Object {
+class WorkspaceEdit () extends StObject {
   
   /**
     * Create a regular file.

@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureFormViewModelProperties extends js.Object {
+trait FeatureFormViewModelProperties extends StObject {
   
   /**
     * The description of the form.
@@ -65,63 +66,51 @@ object FeatureFormViewModelProperties {
   }
   
   @scala.inline
-  implicit class FeatureFormViewModelPropertiesOps[Self <: FeatureFormViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class FeatureFormViewModelPropertiesMutableBuilder[Self <: FeatureFormViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeature(value: GraphicProperties): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFieldConfig(value: js.Array[FieldConfigProperties | FieldGroupConfigProperties]): Self = StObject.set(x, "fieldConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeature(value: GraphicProperties): Self = this.set("feature", value.asInstanceOf[js.Any])
+    def setFieldConfigUndefined: Self = StObject.set(x, "fieldConfig", js.undefined)
     
     @scala.inline
-    def deleteFeature: Self = this.set("feature", js.undefined)
+    def setFieldConfigVarargs(value: (FieldConfigProperties | FieldGroupConfigProperties)*): Self = StObject.set(x, "fieldConfig", js.Array(value :_*))
     
     @scala.inline
-    def setFieldConfigVarargs(value: (FieldConfigProperties | FieldGroupConfigProperties)*): Self = this.set("fieldConfig", js.Array(value :_*))
+    def setFormTemplate(value: FormTemplateProperties): Self = StObject.set(x, "formTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldConfig(value: js.Array[FieldConfigProperties | FieldGroupConfigProperties]): Self = this.set("fieldConfig", value.asInstanceOf[js.Any])
+    def setFormTemplateUndefined: Self = StObject.set(x, "formTemplate", js.undefined)
     
     @scala.inline
-    def deleteFieldConfig: Self = this.set("fieldConfig", js.undefined)
+    def setLayer(value: FeatureLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormTemplate(value: FormTemplateProperties): Self = this.set("formTemplate", value.asInstanceOf[js.Any])
+    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
     @scala.inline
-    def deleteFormTemplate: Self = this.set("formTemplate", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: FeatureLayerProperties): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteLayer: Self = this.set("layer", js.undefined)
+    def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setValid(value: Boolean): Self = this.set("valid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValid: Self = this.set("valid", js.undefined)
+    def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
   }
 }

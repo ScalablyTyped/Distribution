@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCivicinfo.gapi.client.civicinfo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Office extends js.Object {
+trait Office extends StObject {
   
   /** The OCD ID of the division with which this office is associated. */
   var divisionId: js.UndefOr[String] = js.native
@@ -40,66 +41,54 @@ object Office {
   }
   
   @scala.inline
-  implicit class OfficeOps[Self <: Office] (val x: Self) extends AnyVal {
+  implicit class OfficeMutableBuilder[Self <: Office] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDivisionId(value: String): Self = StObject.set(x, "divisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDivisionIdUndefined: Self = StObject.set(x, "divisionId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLevels(value: js.Array[String]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDivisionId(value: String): Self = this.set("divisionId", value.asInstanceOf[js.Any])
+    def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
     @scala.inline
-    def deleteDivisionId: Self = this.set("divisionId", js.undefined)
+    def setLevelsVarargs(value: String*): Self = StObject.set(x, "levels", js.Array(value :_*))
     
     @scala.inline
-    def setLevelsVarargs(value: String*): Self = this.set("levels", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevels(value: js.Array[String]): Self = this.set("levels", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLevels: Self = this.set("levels", js.undefined)
+    def setOfficialIndices(value: js.Array[Double]): Self = StObject.set(x, "officialIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOfficialIndicesUndefined: Self = StObject.set(x, "officialIndices", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOfficialIndicesVarargs(value: Double*): Self = StObject.set(x, "officialIndices", js.Array(value :_*))
     
     @scala.inline
-    def setOfficialIndicesVarargs(value: Double*): Self = this.set("officialIndices", js.Array(value :_*))
+    def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfficialIndices(value: js.Array[Double]): Self = this.set("officialIndices", value.asInstanceOf[js.Any])
+    def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
     @scala.inline
-    def deleteOfficialIndices: Self = this.set("officialIndices", js.undefined)
+    def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
     
     @scala.inline
-    def setRolesVarargs(value: String*): Self = this.set("roles", js.Array(value :_*))
+    def setSources(value: js.Array[Source]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoles(value: js.Array[String]): Self = this.set("roles", value.asInstanceOf[js.Any])
+    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
     @scala.inline
-    def deleteRoles: Self = this.set("roles", js.undefined)
-    
-    @scala.inline
-    def setSourcesVarargs(value: Source*): Self = this.set("sources", js.Array(value :_*))
-    
-    @scala.inline
-    def setSources(value: js.Array[Source]): Self = this.set("sources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSources: Self = this.set("sources", js.undefined)
+    def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value :_*))
   }
 }

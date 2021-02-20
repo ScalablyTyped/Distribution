@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AsymmetricDecryptResponse extends js.Object {
+trait AsymmetricDecryptResponse extends StObject {
   
   /** The decrypted data originally encrypted with the matching public key. */
   var plaintext: js.UndefOr[String] = js.native
@@ -35,36 +36,24 @@ object AsymmetricDecryptResponse {
   }
   
   @scala.inline
-  implicit class AsymmetricDecryptResponseOps[Self <: AsymmetricDecryptResponse] (val x: Self) extends AnyVal {
+  implicit class AsymmetricDecryptResponseMutableBuilder[Self <: AsymmetricDecryptResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlaintext(value: String): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlaintextCrc32c(value: String): Self = StObject.set(x, "plaintextCrc32c", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlaintextCrc32cUndefined: Self = StObject.set(x, "plaintextCrc32c", js.undefined)
     
     @scala.inline
-    def setPlaintext(value: String): Self = this.set("plaintext", value.asInstanceOf[js.Any])
+    def setPlaintextUndefined: Self = StObject.set(x, "plaintext", js.undefined)
     
     @scala.inline
-    def deletePlaintext: Self = this.set("plaintext", js.undefined)
+    def setVerifiedCiphertextCrc32c(value: Boolean): Self = StObject.set(x, "verifiedCiphertextCrc32c", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaintextCrc32c(value: String): Self = this.set("plaintextCrc32c", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlaintextCrc32c: Self = this.set("plaintextCrc32c", js.undefined)
-    
-    @scala.inline
-    def setVerifiedCiphertextCrc32c(value: Boolean): Self = this.set("verifiedCiphertextCrc32c", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerifiedCiphertextCrc32c: Self = this.set("verifiedCiphertextCrc32c", js.undefined)
+    def setVerifiedCiphertextCrc32cUndefined: Self = StObject.set(x, "verifiedCiphertextCrc32c", js.undefined)
   }
 }

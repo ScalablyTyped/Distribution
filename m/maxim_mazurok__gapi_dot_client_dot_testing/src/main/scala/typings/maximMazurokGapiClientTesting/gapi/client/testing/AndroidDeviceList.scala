@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AndroidDeviceList extends js.Object {
+trait AndroidDeviceList extends StObject {
   
   /** Required. A list of Android devices. */
   var androidDevices: js.UndefOr[js.Array[AndroidDevice]] = js.native
@@ -19,27 +20,15 @@ object AndroidDeviceList {
   }
   
   @scala.inline
-  implicit class AndroidDeviceListOps[Self <: AndroidDeviceList] (val x: Self) extends AnyVal {
+  implicit class AndroidDeviceListMutableBuilder[Self <: AndroidDeviceList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroidDevices(value: js.Array[AndroidDevice]): Self = StObject.set(x, "androidDevices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidDevicesUndefined: Self = StObject.set(x, "androidDevices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAndroidDevicesVarargs(value: AndroidDevice*): Self = this.set("androidDevices", js.Array(value :_*))
-    
-    @scala.inline
-    def setAndroidDevices(value: js.Array[AndroidDevice]): Self = this.set("androidDevices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAndroidDevices: Self = this.set("androidDevices", js.undefined)
+    def setAndroidDevicesVarargs(value: AndroidDevice*): Self = StObject.set(x, "androidDevices", js.Array(value :_*))
   }
 }

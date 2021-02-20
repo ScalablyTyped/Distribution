@@ -1,11 +1,12 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaTableSchema extends js.Object {
+trait SchemaTableSchema extends StObject {
   
   /**
     * Describes the fields in a table.
@@ -21,27 +22,15 @@ object SchemaTableSchema {
   }
   
   @scala.inline
-  implicit class SchemaTableSchemaOps[Self <: SchemaTableSchema] (val x: Self) extends AnyVal {
+  implicit class SchemaTableSchemaMutableBuilder[Self <: SchemaTableSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFields(value: js.Array[SchemaTableFieldSchema]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFieldsVarargs(value: SchemaTableFieldSchema*): Self = this.set("fields", js.Array(value :_*))
-    
-    @scala.inline
-    def setFields(value: js.Array[SchemaTableFieldSchema]): Self = this.set("fields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setFieldsVarargs(value: SchemaTableFieldSchema*): Self = StObject.set(x, "fields", js.Array(value :_*))
   }
 }

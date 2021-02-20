@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BoundingSphere extends js.Object {
+trait BoundingSphere extends StObject {
   
   /** @hidden */
   def _update(worldMatrix: DeepImmutable[Matrix]): Unit = js.native

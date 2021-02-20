@@ -2,13 +2,14 @@ package typings.vscodeLanguageclient.mod
 
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.protocolMod.RegistrationParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "RegistrationRequest")
-@js.native
-object RegistrationRequest extends js.Object {
+object RegistrationRequest {
   
+  @JSImport("vscode-languageclient", "RegistrationRequest.type")
+  @js.native
   val `type`: ProtocolRequestType[RegistrationParams, Unit, scala.Nothing, Unit, Unit] = js.native
 }

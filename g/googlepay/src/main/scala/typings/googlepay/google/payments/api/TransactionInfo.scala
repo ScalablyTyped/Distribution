@@ -1,5 +1,6 @@
 package typings.googlepay.google.payments.api
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Detailed information about the transaction.
   */
 @js.native
-trait TransactionInfo extends js.Object {
+trait TransactionInfo extends StObject {
   
   /**
     * Optional checkout option parameter. Whether to use the 'Continue' or
@@ -116,66 +117,54 @@ object TransactionInfo {
   }
   
   @scala.inline
-  implicit class TransactionInfoOps[Self <: TransactionInfo] (val x: Self) extends AnyVal {
+  implicit class TransactionInfoMutableBuilder[Self <: TransactionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckoutOption(value: CheckoutOption): Self = StObject.set(x, "checkoutOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckoutOptionUndefined: Self = StObject.set(x, "checkoutOption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
     @scala.inline
-    def setTotalPrice(value: String): Self = this.set("totalPrice", value.asInstanceOf[js.Any])
+    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalPriceStatus(value: TotalPriceStatus): Self = this.set("totalPriceStatus", value.asInstanceOf[js.Any])
+    def setDisplayItems(value: js.Array[DisplayItem]): Self = StObject.set(x, "displayItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckoutOption(value: CheckoutOption): Self = this.set("checkoutOption", value.asInstanceOf[js.Any])
+    def setDisplayItemsUndefined: Self = StObject.set(x, "displayItems", js.undefined)
     
     @scala.inline
-    def deleteCheckoutOption: Self = this.set("checkoutOption", js.undefined)
+    def setDisplayItemsVarargs(value: DisplayItem*): Self = StObject.set(x, "displayItems", js.Array(value :_*))
     
     @scala.inline
-    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    def setTotalPrice(value: String): Self = StObject.set(x, "totalPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCountryCode: Self = this.set("countryCode", js.undefined)
+    def setTotalPriceLabel(value: String): Self = StObject.set(x, "totalPriceLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayItemsVarargs(value: DisplayItem*): Self = this.set("displayItems", js.Array(value :_*))
+    def setTotalPriceLabelUndefined: Self = StObject.set(x, "totalPriceLabel", js.undefined)
     
     @scala.inline
-    def setDisplayItems(value: js.Array[DisplayItem]): Self = this.set("displayItems", value.asInstanceOf[js.Any])
+    def setTotalPriceStatus(value: TotalPriceStatus): Self = StObject.set(x, "totalPriceStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayItems: Self = this.set("displayItems", js.undefined)
+    def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalPriceLabel(value: String): Self = this.set("totalPriceLabel", value.asInstanceOf[js.Any])
+    def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
     
     @scala.inline
-    def deleteTotalPriceLabel: Self = this.set("totalPriceLabel", js.undefined)
+    def setTransactionNote(value: String): Self = StObject.set(x, "transactionNote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactionId(value: String): Self = this.set("transactionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransactionId: Self = this.set("transactionId", js.undefined)
-    
-    @scala.inline
-    def setTransactionNote(value: String): Self = this.set("transactionNote", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransactionNote: Self = this.set("transactionNote", js.undefined)
+    def setTransactionNoteUndefined: Self = StObject.set(x, "transactionNote", js.undefined)
   }
 }

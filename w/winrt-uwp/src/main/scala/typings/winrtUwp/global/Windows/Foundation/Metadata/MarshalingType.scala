@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Foundation.Metadata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the marshaling type for the class. */
 @JSGlobal("Windows.Foundation.Metadata.MarshalingType")
 @js.native
-object MarshalingType extends js.Object {
+object MarshalingType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Foundation.Metadata.MarshalingType with Double] = js.native

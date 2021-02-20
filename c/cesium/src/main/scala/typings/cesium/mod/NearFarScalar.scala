@@ -1,5 +1,6 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,24 +57,49 @@ class NearFarScalar () extends Packable {
   
   var nearValue: Double = js.native
 }
-/* static members */
-@JSImport("cesium", "NearFarScalar")
-@js.native
-object NearFarScalar extends js.Object {
+object NearFarScalar {
   
-  def clone(nearFarScalar: NearFarScalar): NearFarScalar = js.native
-  def clone(nearFarScalar: NearFarScalar, result: NearFarScalar): NearFarScalar = js.native
+  /* static member */
+  @JSImport("cesium", "NearFarScalar.clone")
+  @js.native
+  def clone_(nearFarScalar: NearFarScalar): NearFarScalar = js.native
+  @JSImport("cesium", "NearFarScalar.clone")
+  @js.native
+  def clone_(nearFarScalar: NearFarScalar, result: NearFarScalar): NearFarScalar = js.native
   
-  def equals(): Boolean = js.native
-  def equals(left: js.UndefOr[scala.Nothing], right: NearFarScalar): Boolean = js.native
-  def equals(left: NearFarScalar): Boolean = js.native
-  def equals(left: NearFarScalar, right: NearFarScalar): Boolean = js.native
+  /* static member */
+  @JSImport("cesium", "NearFarScalar.equals")
+  @js.native
+  def equals_(): Boolean = js.native
+  @JSImport("cesium", "NearFarScalar.equals")
+  @js.native
+  def equals_(left: js.UndefOr[scala.Nothing], right: NearFarScalar): Boolean = js.native
+  @JSImport("cesium", "NearFarScalar.equals")
+  @js.native
+  def equals_(left: NearFarScalar): Boolean = js.native
+  @JSImport("cesium", "NearFarScalar.equals")
+  @js.native
+  def equals_(left: NearFarScalar, right: NearFarScalar): Boolean = js.native
   
+  /* static member */
+  @JSImport("cesium", "NearFarScalar.pack")
+  @js.native
   def pack(value: NearFarScalar, array: js.Array[Double]): js.Array[Double] = js.native
+  @JSImport("cesium", "NearFarScalar.pack")
+  @js.native
   def pack(value: NearFarScalar, array: js.Array[Double], startingIndex: Double): js.Array[Double] = js.native
   
+  /* static member */
+  @JSImport("cesium", "NearFarScalar.unpack")
+  @js.native
   def unpack(array: js.Array[Double]): NearFarScalar = js.native
+  @JSImport("cesium", "NearFarScalar.unpack")
+  @js.native
   def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: NearFarScalar): NearFarScalar = js.native
+  @JSImport("cesium", "NearFarScalar.unpack")
+  @js.native
   def unpack(array: js.Array[Double], startingIndex: Double): NearFarScalar = js.native
+  @JSImport("cesium", "NearFarScalar.unpack")
+  @js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: NearFarScalar): NearFarScalar = js.native
 }

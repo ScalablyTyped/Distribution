@@ -1,16 +1,14 @@
 package typings.scanf
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("__node_scanf")
-@js.native
-object nodeScanf extends js.Object {
+object nodeScanf {
   
   /* ------------------------------------------------------------
   		SSCANF - FROM SOURCE STRING
   	------------------------------------------------------------ */
-  @js.native
-  object scanf extends js.Object
+  object scanf
 }

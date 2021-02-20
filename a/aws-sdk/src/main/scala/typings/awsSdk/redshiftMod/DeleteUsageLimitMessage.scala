@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteUsageLimitMessage extends js.Object {
+trait DeleteUsageLimitMessage extends StObject {
   
   /**
     * The identifier of the usage limit to delete.
@@ -21,21 +22,9 @@ object DeleteUsageLimitMessage {
   }
   
   @scala.inline
-  implicit class DeleteUsageLimitMessageOps[Self <: DeleteUsageLimitMessage] (val x: Self) extends AnyVal {
+  implicit class DeleteUsageLimitMessageMutableBuilder[Self <: DeleteUsageLimitMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUsageLimitId(value: String): Self = this.set("UsageLimitId", value.asInstanceOf[js.Any])
+    def setUsageLimitId(value: String): Self = StObject.set(x, "UsageLimitId", value.asInstanceOf[js.Any])
   }
 }

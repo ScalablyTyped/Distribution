@@ -3,16 +3,19 @@ package typings.baconjs
 import typings.baconjs.eventMod.Event
 import typings.baconjs.observableMod.EventStream
 import typings.baconjs.replyMod.Reply
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("baconjs/types/types", JSImport.Namespace)
-@js.native
-object typesMod extends js.Object {
+object typesMod {
   
+  @JSImport("baconjs/types/types", "nullSink")
+  @js.native
   val nullSink: Sink[js.Any] = js.native
   
+  @JSImport("baconjs/types/types", "nullVoidSink")
+  @js.native
   val nullVoidSink: VoidSink = js.native
   
   type EventSink[V] = js.Function1[/* event */ Event[V], Reply]

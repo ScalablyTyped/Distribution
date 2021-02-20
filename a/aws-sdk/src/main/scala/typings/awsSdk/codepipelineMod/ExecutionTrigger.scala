@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecutionTrigger extends js.Object {
+trait ExecutionTrigger extends StObject {
   
   /**
     * Detail related to the event that started a pipeline execution, such as the webhook ARN of the webhook that triggered the pipeline execution or the user ARN for a user-initiated start-pipeline-execution CLI command.
@@ -26,30 +27,18 @@ object ExecutionTrigger {
   }
   
   @scala.inline
-  implicit class ExecutionTriggerOps[Self <: ExecutionTrigger] (val x: Self) extends AnyVal {
+  implicit class ExecutionTriggerMutableBuilder[Self <: ExecutionTrigger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTriggerDetail(value: TriggerDetail): Self = StObject.set(x, "triggerDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTriggerDetailUndefined: Self = StObject.set(x, "triggerDetail", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTriggerType(value: TriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerDetail(value: TriggerDetail): Self = this.set("triggerDetail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerDetail: Self = this.set("triggerDetail", js.undefined)
-    
-    @scala.inline
-    def setTriggerType(value: TriggerType): Self = this.set("triggerType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerType: Self = this.set("triggerType", js.undefined)
+    def setTriggerTypeUndefined: Self = StObject.set(x, "triggerType", js.undefined)
   }
 }

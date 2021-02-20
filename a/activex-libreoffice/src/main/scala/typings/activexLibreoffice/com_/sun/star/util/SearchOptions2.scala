@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.util
 
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,24 +51,12 @@ object SearchOptions2 {
   }
   
   @scala.inline
-  implicit class SearchOptions2Ops[Self <: SearchOptions2] (val x: Self) extends AnyVal {
+  implicit class SearchOptions2MutableBuilder[Self <: SearchOptions2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithmType2(value: Double): Self = StObject.set(x, "AlgorithmType2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlgorithmType2(value: Double): Self = this.set("AlgorithmType2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWildcardEscapeCharacter(value: Double): Self = this.set("WildcardEscapeCharacter", value.asInstanceOf[js.Any])
+    def setWildcardEscapeCharacter(value: Double): Self = StObject.set(x, "WildcardEscapeCharacter", value.asInstanceOf[js.Any])
   }
 }

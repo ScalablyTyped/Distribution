@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Projection that may be projected along with other supported volume types
   */
 @js.native
-trait VolumeProjection extends js.Object {
+trait VolumeProjection extends StObject {
   
   /**
     * information about the configMap data to project
@@ -40,42 +41,30 @@ object VolumeProjection {
   }
   
   @scala.inline
-  implicit class VolumeProjectionOps[Self <: VolumeProjection] (val x: Self) extends AnyVal {
+  implicit class VolumeProjectionMutableBuilder[Self <: VolumeProjection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigMap(value: Input[ConfigMapProjection]): Self = StObject.set(x, "configMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigMapUndefined: Self = StObject.set(x, "configMap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDownwardAPI(value: Input[DownwardAPIProjection]): Self = StObject.set(x, "downwardAPI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigMap(value: Input[ConfigMapProjection]): Self = this.set("configMap", value.asInstanceOf[js.Any])
+    def setDownwardAPIUndefined: Self = StObject.set(x, "downwardAPI", js.undefined)
     
     @scala.inline
-    def deleteConfigMap: Self = this.set("configMap", js.undefined)
+    def setSecret(value: Input[SecretProjection]): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownwardAPI(value: Input[DownwardAPIProjection]): Self = this.set("downwardAPI", value.asInstanceOf[js.Any])
+    def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
     
     @scala.inline
-    def deleteDownwardAPI: Self = this.set("downwardAPI", js.undefined)
+    def setServiceAccountToken(value: Input[ServiceAccountTokenProjection]): Self = StObject.set(x, "serviceAccountToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecret(value: Input[SecretProjection]): Self = this.set("secret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecret: Self = this.set("secret", js.undefined)
-    
-    @scala.inline
-    def setServiceAccountToken(value: Input[ServiceAccountTokenProjection]): Self = this.set("serviceAccountToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceAccountToken: Self = this.set("serviceAccountToken", js.undefined)
+    def setServiceAccountTokenUndefined: Self = StObject.set(x, "serviceAccountToken", js.undefined)
   }
 }

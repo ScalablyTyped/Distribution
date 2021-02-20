@@ -1,5 +1,6 @@
 package typings.mangopay2NodejsSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.POSTAL_CODE_MATCH_ONLY
   - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FULL_MATCH
 */
-trait AVSResult extends js.Object
+trait AVSResult extends StObject
 object AVSResult {
   
   @scala.inline

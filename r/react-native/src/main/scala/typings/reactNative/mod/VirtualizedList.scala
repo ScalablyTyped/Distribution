@@ -5,14 +5,21 @@ import typings.reactNative.anon.AnimatedItem
 import typings.reactNative.anon.AnimatedOffset
 import typings.reactNative.anon.ViewPosition
 import typings.reactNative.anon.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native", "VirtualizedList")
 @js.native
-class VirtualizedList[ItemT] ()
+class VirtualizedList[ItemT] protected ()
   extends Component[VirtualizedListProps[ItemT], js.Object, js.Any] {
+  def this(props: VirtualizedListProps[ItemT]) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: VirtualizedListProps[ItemT], context: js.Any) = this()
   
   def recordInteraction(): Unit = js.native
   

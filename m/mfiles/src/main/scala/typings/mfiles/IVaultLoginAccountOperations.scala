@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultLoginAccountOperations extends js.Object {
+trait IVaultLoginAccountOperations extends StObject {
   
   def AddLoginAccount(LoginAccount: ILoginAccount, Password: String): Unit = js.native
   
@@ -44,45 +45,33 @@ object IVaultLoginAccountOperations {
   }
   
   @scala.inline
-  implicit class IVaultLoginAccountOperationsOps[Self <: IVaultLoginAccountOperations] (val x: Self) extends AnyVal {
+  implicit class IVaultLoginAccountOperationsMutableBuilder[Self <: IVaultLoginAccountOperations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddLoginAccount(value: (ILoginAccount, String) => Unit): Self = StObject.set(x, "AddLoginAccount", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForceLogout(value: IStrings => Unit): Self = StObject.set(x, "ForceLogout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetLoginAccount(value: String => ILoginAccount): Self = StObject.set(x, "GetLoginAccount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddLoginAccount(value: (ILoginAccount, String) => Unit): Self = this.set("AddLoginAccount", js.Any.fromFunction2(value))
+    def setGetLoginAccounts(value: () => ILoginAccounts): Self = StObject.set(x, "GetLoginAccounts", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setForceLogout(value: IStrings => Unit): Self = this.set("ForceLogout", js.Any.fromFunction1(value))
+    def setGetLoginAccountsWithSessions(value: () => ILoginAccounts): Self = StObject.set(x, "GetLoginAccountsWithSessions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLoginAccount(value: String => ILoginAccount): Self = this.set("GetLoginAccount", js.Any.fromFunction1(value))
+    def setGetPersonalInformationFromDomain(value: String => ILoginAccountPersonalInformation): Self = StObject.set(x, "GetPersonalInformationFromDomain", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLoginAccounts(value: () => ILoginAccounts): Self = this.set("GetLoginAccounts", js.Any.fromFunction0(value))
+    def setModifyLoginAccount(value: ILoginAccount => Unit): Self = StObject.set(x, "ModifyLoginAccount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLoginAccountsWithSessions(value: () => ILoginAccounts): Self = this.set("GetLoginAccountsWithSessions", js.Any.fromFunction0(value))
+    def setRemoveLoginAccount(value: String => Unit): Self = StObject.set(x, "RemoveLoginAccount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPersonalInformationFromDomain(value: String => ILoginAccountPersonalInformation): Self = this.set("GetPersonalInformationFromDomain", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setModifyLoginAccount(value: ILoginAccount => Unit): Self = this.set("ModifyLoginAccount", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveLoginAccount(value: String => Unit): Self = this.set("RemoveLoginAccount", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateLoginPassword(value: (String, String) => Unit): Self = this.set("UpdateLoginPassword", js.Any.fromFunction2(value))
+    def setUpdateLoginPassword(value: (String, String) => Unit): Self = StObject.set(x, "UpdateLoginPassword", js.Any.fromFunction2(value))
   }
 }

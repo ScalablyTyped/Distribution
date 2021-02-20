@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1DataItem extends js.Object {
+trait GoogleCloudDatalabelingV1beta1DataItem extends StObject {
   
   /** The image payload, a container of the image bytes/uri. */
   var imagePayload: js.UndefOr[GoogleCloudDatalabelingV1beta1ImagePayload] = js.native
@@ -28,42 +29,30 @@ object GoogleCloudDatalabelingV1beta1DataItem {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1DataItemOps[Self <: GoogleCloudDatalabelingV1beta1DataItem] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1DataItemMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1DataItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImagePayload(value: GoogleCloudDatalabelingV1beta1ImagePayload): Self = StObject.set(x, "imagePayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImagePayloadUndefined: Self = StObject.set(x, "imagePayload", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagePayload(value: GoogleCloudDatalabelingV1beta1ImagePayload): Self = this.set("imagePayload", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteImagePayload: Self = this.set("imagePayload", js.undefined)
+    def setTextPayload(value: GoogleCloudDatalabelingV1beta1TextPayload): Self = StObject.set(x, "textPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTextPayloadUndefined: Self = StObject.set(x, "textPayload", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setVideoPayload(value: GoogleCloudDatalabelingV1beta1VideoPayload): Self = StObject.set(x, "videoPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextPayload(value: GoogleCloudDatalabelingV1beta1TextPayload): Self = this.set("textPayload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextPayload: Self = this.set("textPayload", js.undefined)
-    
-    @scala.inline
-    def setVideoPayload(value: GoogleCloudDatalabelingV1beta1VideoPayload): Self = this.set("videoPayload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoPayload: Self = this.set("videoPayload", js.undefined)
+    def setVideoPayloadUndefined: Self = StObject.set(x, "videoPayload", js.undefined)
   }
 }

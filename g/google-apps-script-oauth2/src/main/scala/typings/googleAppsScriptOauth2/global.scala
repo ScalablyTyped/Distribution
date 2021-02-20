@@ -1,20 +1,18 @@
 package typings.googleAppsScriptOauth2
 
+import typings.googleAppsScriptOauth2.GoogleAppsScriptOAuth2.OAuth2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var OAuth2: typings.googleAppsScriptOauth2.GoogleAppsScriptOAuth2.OAuth2 = js.native
-  
-  @js.native
-  object GoogleAppsScriptOAuth2 extends js.Object {
+  object GoogleAppsScriptOAuth2 {
     
+    @JSGlobal("GoogleAppsScriptOAuth2.TokenFormat")
     @js.native
-    object TokenFormat extends js.Object {
+    object TokenFormat extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[typings.googleAppsScriptOauth2.GoogleAppsScriptOAuth2.TokenFormat with String] = js.native
@@ -24,4 +22,10 @@ object global extends js.Object {
       /* "application/json" */ val JSON: typings.googleAppsScriptOauth2.GoogleAppsScriptOAuth2.TokenFormat.JSON with String = js.native
     }
   }
+  
+  @JSGlobal("OAuth2")
+  @js.native
+  def OAuth2: typings.googleAppsScriptOauth2.GoogleAppsScriptOAuth2.OAuth2 = js.native
+  @scala.inline
+  def OAuth2_=(x: OAuth2): Unit = js.Dynamic.global.updateDynamic("OAuth2")(x.asInstanceOf[js.Any])
 }

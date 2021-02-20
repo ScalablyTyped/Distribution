@@ -1,11 +1,12 @@
 package typings.fsExtra.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PathEntryStream extends js.Object {
+trait PathEntryStream extends StObject {
   
   def read(): PathEntry | Null = js.native
 }
@@ -18,21 +19,9 @@ object PathEntryStream {
   }
   
   @scala.inline
-  implicit class PathEntryStreamOps[Self <: PathEntryStream] (val x: Self) extends AnyVal {
+  implicit class PathEntryStreamMutableBuilder[Self <: PathEntryStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRead(value: () => PathEntry | Null): Self = this.set("read", js.Any.fromFunction0(value))
+    def setRead(value: () => PathEntry | Null): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
   }
 }

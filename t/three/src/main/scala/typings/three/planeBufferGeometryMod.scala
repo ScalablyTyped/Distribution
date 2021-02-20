@@ -2,14 +2,14 @@ package typings.three
 
 import typings.three.anon.Width
 import typings.three.bufferGeometryMod.BufferGeometry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/geometries/PlaneBufferGeometry", JSImport.Namespace)
-@js.native
-object planeBufferGeometryMod extends js.Object {
+object planeBufferGeometryMod {
   
+  @JSImport("three/src/geometries/PlaneBufferGeometry", "PlaneBufferGeometry")
   @js.native
   /**
   	 * @param [width=1] — Width of the sides on the X axis.

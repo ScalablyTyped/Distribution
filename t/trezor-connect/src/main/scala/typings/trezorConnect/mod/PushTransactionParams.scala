@@ -1,5 +1,6 @@
 package typings.trezorConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,24 +21,12 @@ object PushTransactionParams {
   }
   
   @scala.inline
-  implicit class PushTransactionParamsOps[Self <: PushTransactionParams] (val x: Self) extends AnyVal {
+  implicit class PushTransactionParamsMutableBuilder[Self <: PushTransactionParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoin(value: String): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCoin(value: String): Self = this.set("coin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTx(value: String): Self = this.set("tx", value.asInstanceOf[js.Any])
+    def setTx(value: String): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
   }
 }

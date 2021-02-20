@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,96 +82,84 @@ object Medication {
   }
   
   @scala.inline
-  implicit class MedicationOps[Self <: Medication] (val x: Self) extends AnyVal {
+  implicit class MedicationMutableBuilder[Self <: Medication] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForm(value: CodeableConcept): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_isBrand(value: Element): Self = this.set("_isBrand", value.asInstanceOf[js.Any])
+    def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
     @scala.inline
-    def delete_isBrand: Self = this.set("_isBrand", js.undefined)
+    def setImage(value: js.Array[Attachment]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_isOverTheCounter(value: Element): Self = this.set("_isOverTheCounter", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def delete_isOverTheCounter: Self = this.set("_isOverTheCounter", js.undefined)
+    def setImageVarargs(value: Attachment*): Self = StObject.set(x, "image", js.Array(value :_*))
     
     @scala.inline
-    def set_package(value: MedicationPackage): Self = this.set("package", value.asInstanceOf[js.Any])
+    def setIngredient(value: js.Array[MedicationIngredient]): Self = StObject.set(x, "ingredient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_package: Self = this.set("package", js.undefined)
+    def setIngredientUndefined: Self = StObject.set(x, "ingredient", js.undefined)
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setIngredientVarargs(value: MedicationIngredient*): Self = StObject.set(x, "ingredient", js.Array(value :_*))
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setIsBrand(value: Boolean): Self = StObject.set(x, "isBrand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: CodeableConcept): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setIsBrandUndefined: Self = StObject.set(x, "isBrand", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setIsOverTheCounter(value: Boolean): Self = StObject.set(x, "isOverTheCounter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForm(value: CodeableConcept): Self = this.set("form", value.asInstanceOf[js.Any])
+    def setIsOverTheCounterUndefined: Self = StObject.set(x, "isOverTheCounter", js.undefined)
     
     @scala.inline
-    def deleteForm: Self = this.set("form", js.undefined)
+    def setManufacturer(value: Reference): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageVarargs(value: Attachment*): Self = this.set("image", js.Array(value :_*))
+    def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
     
     @scala.inline
-    def setImage(value: js.Array[Attachment]): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setIngredientVarargs(value: MedicationIngredient*): Self = this.set("ingredient", js.Array(value :_*))
+    def set_isBrand(value: Element): Self = StObject.set(x, "_isBrand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIngredient(value: js.Array[MedicationIngredient]): Self = this.set("ingredient", value.asInstanceOf[js.Any])
+    def set_isBrandUndefined: Self = StObject.set(x, "_isBrand", js.undefined)
     
     @scala.inline
-    def deleteIngredient: Self = this.set("ingredient", js.undefined)
+    def set_isOverTheCounter(value: Element): Self = StObject.set(x, "_isOverTheCounter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBrand(value: Boolean): Self = this.set("isBrand", value.asInstanceOf[js.Any])
+    def set_isOverTheCounterUndefined: Self = StObject.set(x, "_isOverTheCounter", js.undefined)
     
     @scala.inline
-    def deleteIsBrand: Self = this.set("isBrand", js.undefined)
+    def set_package(value: MedicationPackage): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOverTheCounter(value: Boolean): Self = this.set("isOverTheCounter", value.asInstanceOf[js.Any])
+    def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
     
     @scala.inline
-    def deleteIsOverTheCounter: Self = this.set("isOverTheCounter", js.undefined)
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturer(value: Reference): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManufacturer: Self = this.set("manufacturer", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

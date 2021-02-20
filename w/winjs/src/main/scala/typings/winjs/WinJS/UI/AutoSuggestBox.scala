@@ -2,6 +2,7 @@ package typings.winjs.WinJS.UI
 
 import typings.std.CustomEvent
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A rich input box that provides suggestions as the user types.
   **/
 @js.native
-trait AutoSuggestBox extends js.Object {
+trait AutoSuggestBox extends StObject {
   
   //#endregion Events
   //#region Methods

@@ -1,5 +1,6 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object AdCustomizerSource {
   }
   
   @scala.inline
-  implicit class AdCustomizerSourceOps[Self <: AdCustomizerSource] (val x: Self) extends AnyVal {
+  implicit class AdCustomizerSourceMutableBuilder[Self <: AdCustomizerSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdCustomizerItemBuilder(value: () => AdCustomizerItemBuilder[AdCustomizerItem]): Self = StObject.set(x, "adCustomizerItemBuilder", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAttributes(value: () => js.Object): Self = StObject.set(x, "getAttributes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdCustomizerItemBuilder(value: () => AdCustomizerItemBuilder[AdCustomizerItem]): Self = this.set("adCustomizerItemBuilder", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetAttributes(value: () => js.Object): Self = this.set("getAttributes", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setItems(value: () => AdWordsSelector[AdCustomizerItem]): Self = this.set("items", js.Any.fromFunction0(value))
+    def setItems(value: () => AdWordsSelector[AdCustomizerItem]): Self = StObject.set(x, "items", js.Any.fromFunction0(value))
   }
 }

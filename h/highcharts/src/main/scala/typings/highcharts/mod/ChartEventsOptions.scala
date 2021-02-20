@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartEventsOptions extends js.Object {
+trait ChartEventsOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fires when a series is added to
@@ -136,90 +137,78 @@ object ChartEventsOptions {
   }
   
   @scala.inline
-  implicit class ChartEventsOptionsOps[Self <: ChartEventsOptions] (val x: Self) extends AnyVal {
+  implicit class ChartEventsOptionsMutableBuilder[Self <: ChartEventsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddSeries(value: ChartAddSeriesCallbackFunction): Self = StObject.set(x, "addSeries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddSeriesUndefined: Self = StObject.set(x, "addSeries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterPrint(value: (/* chart */ Chart_, /* event */ Event) => Unit): Self = StObject.set(x, "afterPrint", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddSeries(value: ChartAddSeriesCallbackFunction): Self = this.set("addSeries", value.asInstanceOf[js.Any])
+    def setAfterPrintUndefined: Self = StObject.set(x, "afterPrint", js.undefined)
     
     @scala.inline
-    def deleteAddSeries: Self = this.set("addSeries", js.undefined)
+    def setBeforePrint(value: (/* chart */ Chart_, /* event */ Event) => Unit): Self = StObject.set(x, "beforePrint", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAfterPrint(value: (/* chart */ Chart_, /* event */ Event) => Unit): Self = this.set("afterPrint", js.Any.fromFunction2(value))
+    def setBeforePrintUndefined: Self = StObject.set(x, "beforePrint", js.undefined)
     
     @scala.inline
-    def deleteAfterPrint: Self = this.set("afterPrint", js.undefined)
+    def setClick(value: ChartClickCallbackFunction): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforePrint(value: (/* chart */ Chart_, /* event */ Event) => Unit): Self = this.set("beforePrint", js.Any.fromFunction2(value))
+    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
     @scala.inline
-    def deleteBeforePrint: Self = this.set("beforePrint", js.undefined)
+    def setDrilldown(value: DrilldownCallbackFunction): Self = StObject.set(x, "drilldown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: ChartClickCallbackFunction): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setDrilldownUndefined: Self = StObject.set(x, "drilldown", js.undefined)
     
     @scala.inline
-    def deleteClick: Self = this.set("click", js.undefined)
+    def setDrillup(value: DrillupCallbackFunction): Self = StObject.set(x, "drillup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrilldown(value: DrilldownCallbackFunction): Self = this.set("drilldown", value.asInstanceOf[js.Any])
+    def setDrillupUndefined: Self = StObject.set(x, "drillup", js.undefined)
     
     @scala.inline
-    def deleteDrilldown: Self = this.set("drilldown", js.undefined)
+    def setDrillupall(value: DrillupAllCallbackFunction): Self = StObject.set(x, "drillupall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrillup(value: DrillupCallbackFunction): Self = this.set("drillup", value.asInstanceOf[js.Any])
+    def setDrillupallUndefined: Self = StObject.set(x, "drillupall", js.undefined)
     
     @scala.inline
-    def deleteDrillup: Self = this.set("drillup", js.undefined)
+    def setExportData(value: ExportDataCallbackFunction): Self = StObject.set(x, "exportData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrillupall(value: DrillupAllCallbackFunction): Self = this.set("drillupall", value.asInstanceOf[js.Any])
+    def setExportDataUndefined: Self = StObject.set(x, "exportData", js.undefined)
     
     @scala.inline
-    def deleteDrillupall: Self = this.set("drillupall", js.undefined)
+    def setLoad(value: ChartLoadCallbackFunction): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportData(value: ExportDataCallbackFunction): Self = this.set("exportData", value.asInstanceOf[js.Any])
+    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
     @scala.inline
-    def deleteExportData: Self = this.set("exportData", js.undefined)
+    def setRedraw(value: ChartRedrawCallbackFunction): Self = StObject.set(x, "redraw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoad(value: ChartLoadCallbackFunction): Self = this.set("load", value.asInstanceOf[js.Any])
+    def setRedrawUndefined: Self = StObject.set(x, "redraw", js.undefined)
     
     @scala.inline
-    def deleteLoad: Self = this.set("load", js.undefined)
+    def setRender(value: ChartRenderCallbackFunction): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedraw(value: ChartRedrawCallbackFunction): Self = this.set("redraw", value.asInstanceOf[js.Any])
+    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
     @scala.inline
-    def deleteRedraw: Self = this.set("redraw", js.undefined)
+    def setSelection(value: ChartSelectionCallbackFunction): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRender(value: ChartRenderCallbackFunction): Self = this.set("render", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRender: Self = this.set("render", js.undefined)
-    
-    @scala.inline
-    def setSelection(value: ChartSelectionCallbackFunction): Self = this.set("selection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelection: Self = this.set("selection", js.undefined)
+    def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
   }
 }

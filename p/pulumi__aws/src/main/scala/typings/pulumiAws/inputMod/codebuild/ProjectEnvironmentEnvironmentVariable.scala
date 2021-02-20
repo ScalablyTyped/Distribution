@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.codebuild
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectEnvironmentEnvironmentVariable extends js.Object {
+trait ProjectEnvironmentEnvironmentVariable extends StObject {
   
   /**
     * The environment variable's name or key.
@@ -32,30 +33,18 @@ object ProjectEnvironmentEnvironmentVariable {
   }
   
   @scala.inline
-  implicit class ProjectEnvironmentEnvironmentVariableOps[Self <: ProjectEnvironmentEnvironmentVariable] (val x: Self) extends AnyVal {
+  implicit class ProjectEnvironmentEnvironmentVariableMutableBuilder[Self <: ProjectEnvironmentEnvironmentVariable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Input[String]): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsSnsTopicDetails extends js.Object {
+trait AwsSnsTopicDetails extends StObject {
   
   /**
     * The ID of an AWS managed customer master key (CMK) for Amazon SNS or a custom CMK.
@@ -36,45 +37,33 @@ object AwsSnsTopicDetails {
   }
   
   @scala.inline
-  implicit class AwsSnsTopicDetailsOps[Self <: AwsSnsTopicDetails] (val x: Self) extends AnyVal {
+  implicit class AwsSnsTopicDetailsMutableBuilder[Self <: AwsSnsTopicDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKmsMasterKeyId(value: NonEmptyString): Self = StObject.set(x, "KmsMasterKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKmsMasterKeyIdUndefined: Self = StObject.set(x, "KmsMasterKeyId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: NonEmptyString): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsMasterKeyId(value: NonEmptyString): Self = this.set("KmsMasterKeyId", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
     @scala.inline
-    def deleteKmsMasterKeyId: Self = this.set("KmsMasterKeyId", js.undefined)
+    def setSubscription(value: AwsSnsTopicSubscriptionList): Self = StObject.set(x, "Subscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: NonEmptyString): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    def setSubscriptionUndefined: Self = StObject.set(x, "Subscription", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("Owner", js.undefined)
+    def setSubscriptionVarargs(value: AwsSnsTopicSubscription*): Self = StObject.set(x, "Subscription", js.Array(value :_*))
     
     @scala.inline
-    def setSubscriptionVarargs(value: AwsSnsTopicSubscription*): Self = this.set("Subscription", js.Array(value :_*))
+    def setTopicName(value: NonEmptyString): Self = StObject.set(x, "TopicName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscription(value: AwsSnsTopicSubscriptionList): Self = this.set("Subscription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscription: Self = this.set("Subscription", js.undefined)
-    
-    @scala.inline
-    def setTopicName(value: NonEmptyString): Self = this.set("TopicName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicName: Self = this.set("TopicName", js.undefined)
+    def setTopicNameUndefined: Self = StObject.set(x, "TopicName", js.undefined)
   }
 }

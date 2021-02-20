@@ -1,6 +1,7 @@
 package typings.ts3NodejsLibrary.responseTypesMod
 
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,57 +58,45 @@ object BanEntry {
   }
   
   @scala.inline
-  implicit class BanEntryOps[Self <: BanEntry] (val x: Self) extends AnyVal {
+  implicit class BanEntryMutableBuilder[Self <: BanEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBanid(value: String): Self = StObject.set(x, "banid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBanid(value: String): Self = this.set("banid", value.asInstanceOf[js.Any])
+    def setEnforcements(value: Double): Self = StObject.set(x, "enforcements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: Double): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setInvokercldbid(value: String): Self = StObject.set(x, "invokercldbid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setInvokername(value: String): Self = StObject.set(x, "invokername", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnforcements(value: Double): Self = this.set("enforcements", value.asInstanceOf[js.Any])
+    def setInvokeruid(value: String): Self = StObject.set(x, "invokeruid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvokercldbid(value: String): Self = this.set("invokercldbid", value.asInstanceOf[js.Any])
+    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvokername(value: String): Self = this.set("invokername", value.asInstanceOf[js.Any])
+    def setLastnickname(value: String): Self = StObject.set(x, "lastnickname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvokeruid(value: String): Self = this.set("invokeruid", value.asInstanceOf[js.Any])
+    def setMytsid(value: String): Self = StObject.set(x, "mytsid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIp(value: String): Self = this.set("ip", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastnickname(value: String): Self = this.set("lastnickname", value.asInstanceOf[js.Any])
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMytsid(value: String): Self = this.set("mytsid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUid(value: String): Self = this.set("uid", value.asInstanceOf[js.Any])
+    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }
 }

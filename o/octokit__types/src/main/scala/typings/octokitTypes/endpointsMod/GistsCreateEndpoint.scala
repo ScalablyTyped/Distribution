@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GistsCreateEndpoint extends js.Object {
+trait GistsCreateEndpoint extends StObject {
   
   /**
     * A descriptive name for this gist.
@@ -31,33 +32,21 @@ object GistsCreateEndpoint {
   }
   
   @scala.inline
-  implicit class GistsCreateEndpointOps[Self <: GistsCreateEndpoint] (val x: Self) extends AnyVal {
+  implicit class GistsCreateEndpointMutableBuilder[Self <: GistsCreateEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiles(value: GistsCreateParamsFiles): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiles(value: GistsCreateParamsFiles): Self = this.set("files", value.asInstanceOf[js.Any])
+    def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
-    
-    @scala.inline
-    def setPublic(value: Boolean): Self = this.set("public", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublic: Self = this.set("public", js.undefined)
+    def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
   }
 }

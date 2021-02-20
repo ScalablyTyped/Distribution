@@ -1,5 +1,6 @@
 package typings.googleapis.doubleclickbidmanagerV1Mod.doubleclickbidmanagerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Download response.
   */
 @js.native
-trait SchemaDownloadResponse extends js.Object {
+trait SchemaDownloadResponse extends StObject {
   
   /**
     * Retrieved ad groups in SDF format.
@@ -46,54 +47,42 @@ object SchemaDownloadResponse {
   }
   
   @scala.inline
-  implicit class SchemaDownloadResponseOps[Self <: SchemaDownloadResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaDownloadResponseMutableBuilder[Self <: SchemaDownloadResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdGroups(value: String): Self = StObject.set(x, "adGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdGroupsUndefined: Self = StObject.set(x, "adGroups", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAds(value: String): Self = StObject.set(x, "ads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdGroups(value: String): Self = this.set("adGroups", value.asInstanceOf[js.Any])
+    def setAdsUndefined: Self = StObject.set(x, "ads", js.undefined)
     
     @scala.inline
-    def deleteAdGroups: Self = this.set("adGroups", js.undefined)
+    def setCampaigns(value: String): Self = StObject.set(x, "campaigns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAds(value: String): Self = this.set("ads", value.asInstanceOf[js.Any])
+    def setCampaignsUndefined: Self = StObject.set(x, "campaigns", js.undefined)
     
     @scala.inline
-    def deleteAds: Self = this.set("ads", js.undefined)
+    def setInsertionOrders(value: String): Self = StObject.set(x, "insertionOrders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaigns(value: String): Self = this.set("campaigns", value.asInstanceOf[js.Any])
+    def setInsertionOrdersUndefined: Self = StObject.set(x, "insertionOrders", js.undefined)
     
     @scala.inline
-    def deleteCampaigns: Self = this.set("campaigns", js.undefined)
+    def setInventorySources(value: String): Self = StObject.set(x, "inventorySources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertionOrders(value: String): Self = this.set("insertionOrders", value.asInstanceOf[js.Any])
+    def setInventorySourcesUndefined: Self = StObject.set(x, "inventorySources", js.undefined)
     
     @scala.inline
-    def deleteInsertionOrders: Self = this.set("insertionOrders", js.undefined)
+    def setLineItems(value: String): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInventorySources(value: String): Self = this.set("inventorySources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInventorySources: Self = this.set("inventorySources", js.undefined)
-    
-    @scala.inline
-    def setLineItems(value: String): Self = this.set("lineItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineItems: Self = this.set("lineItems", js.undefined)
+    def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
   }
 }

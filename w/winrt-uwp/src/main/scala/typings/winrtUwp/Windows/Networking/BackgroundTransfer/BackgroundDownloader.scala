@@ -7,13 +7,14 @@ import typings.winrtUwp.Windows.Storage.IStorageFile
 import typings.winrtUwp.Windows.Storage.Streams.IInputStream
 import typings.winrtUwp.Windows.UI.Notifications.TileNotification
 import typings.winrtUwp.Windows.UI.Notifications.ToastNotification
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to configure downloads prior to the actual creation of the download operation using CreateDownload . For an overview of Background Transfer capabilities, see Transferring data in the background. Download the Background Transfer sample for examples in JavaScript, C#, and C++. */
 @js.native
-trait BackgroundDownloader extends js.Object {
+trait BackgroundDownloader extends StObject {
   
   /** Gets the BackgroundTransferCompletionGroup associated with the BackgroundDownloader . */
   var completionGroup: BackgroundTransferCompletionGroup = js.native

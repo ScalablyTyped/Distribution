@@ -1,12 +1,13 @@
 package typings.rxLite.Rx
 
 import typings.rxCore.Rx.IDisposable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IScheduler extends js.Object {
+trait IScheduler extends StObject {
   
   def isScheduler(value: js.Any): Boolean = js.native
   
@@ -93,76 +94,64 @@ object IScheduler {
   }
   
   @scala.inline
-  implicit class ISchedulerOps[Self <: IScheduler] (val x: Self) extends AnyVal {
+  implicit class ISchedulerMutableBuilder[Self <: IScheduler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsScheduler(value: js.Any => Boolean): Self = StObject.set(x, "isScheduler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSchedule(value: js.Function0[Unit] => IDisposable): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsScheduler(value: js.Any => Boolean): Self = this.set("isScheduler", js.Any.fromFunction1(value))
+    def setSchedulePeriodic(value: (Double, js.Function0[Unit]) => IDisposable): Self = StObject.set(x, "schedulePeriodic", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNow(value: () => Double): Self = this.set("now", js.Any.fromFunction0(value))
+    def setSchedulePeriodicWithState(value: (js.Any, Double, js.Function1[js.Any, js.Any]) => IDisposable): Self = StObject.set(x, "schedulePeriodicWithState", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSchedule(value: js.Function0[Unit] => IDisposable): Self = this.set("schedule", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSchedulePeriodic(value: (Double, js.Function0[Unit]) => IDisposable): Self = this.set("schedulePeriodic", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSchedulePeriodicWithState(value: (js.Any, Double, js.Function1[js.Any, js.Any]) => IDisposable): Self = this.set("schedulePeriodicWithState", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setScheduleRecursive(value: js.Function1[/* action */ js.Function0[Unit], Unit] => IDisposable): Self = this.set("scheduleRecursive", js.Any.fromFunction1(value))
+    def setScheduleRecursive(value: js.Function1[/* action */ js.Function0[Unit], Unit] => IDisposable): Self = StObject.set(x, "scheduleRecursive", js.Any.fromFunction1(value))
     
     @scala.inline
     def setScheduleRecursiveWithAbsolute(
       value: (Double, js.Function1[/* action */ js.Function1[/* dueTime */ Double, Unit], Unit]) => IDisposable
-    ): Self = this.set("scheduleRecursiveWithAbsolute", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "scheduleRecursiveWithAbsolute", js.Any.fromFunction2(value))
     
     @scala.inline
     def setScheduleRecursiveWithAbsoluteAndState(
       value: (js.Any, Double, js.Function2[js.Any, /* action */ js.Function2[js.Any, /* dueTime */ Double, Unit], Unit]) => IDisposable
-    ): Self = this.set("scheduleRecursiveWithAbsoluteAndState", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "scheduleRecursiveWithAbsoluteAndState", js.Any.fromFunction3(value))
     
     @scala.inline
     def setScheduleRecursiveWithRelative(
       value: (Double, js.Function1[/* action */ js.Function1[/* dueTime */ Double, Unit], Unit]) => IDisposable
-    ): Self = this.set("scheduleRecursiveWithRelative", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "scheduleRecursiveWithRelative", js.Any.fromFunction2(value))
     
     @scala.inline
     def setScheduleRecursiveWithRelativeAndState(
       value: (js.Any, Double, js.Function2[js.Any, /* action */ js.Function2[js.Any, /* dueTime */ Double, Unit], Unit]) => IDisposable
-    ): Self = this.set("scheduleRecursiveWithRelativeAndState", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "scheduleRecursiveWithRelativeAndState", js.Any.fromFunction3(value))
     
     @scala.inline
     def setScheduleRecursiveWithState(
       value: (js.Any, js.Function2[js.Any, /* action */ js.Function1[js.Any, Unit], Unit]) => IDisposable
-    ): Self = this.set("scheduleRecursiveWithState", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "scheduleRecursiveWithState", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setScheduleWithAbsolute(value: (Double, js.Function0[Unit]) => IDisposable): Self = this.set("scheduleWithAbsolute", js.Any.fromFunction2(value))
+    def setScheduleWithAbsolute(value: (Double, js.Function0[Unit]) => IDisposable): Self = StObject.set(x, "scheduleWithAbsolute", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setScheduleWithAbsoluteAndState(value: (js.Any, Double, js.Function2[IScheduler, js.Any, IDisposable]) => IDisposable): Self = this.set("scheduleWithAbsoluteAndState", js.Any.fromFunction3(value))
+    def setScheduleWithAbsoluteAndState(value: (js.Any, Double, js.Function2[IScheduler, js.Any, IDisposable]) => IDisposable): Self = StObject.set(x, "scheduleWithAbsoluteAndState", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setScheduleWithRelative(value: (Double, js.Function0[Unit]) => IDisposable): Self = this.set("scheduleWithRelative", js.Any.fromFunction2(value))
+    def setScheduleWithRelative(value: (Double, js.Function0[Unit]) => IDisposable): Self = StObject.set(x, "scheduleWithRelative", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setScheduleWithRelativeAndState(value: (js.Any, Double, js.Function2[IScheduler, js.Any, IDisposable]) => IDisposable): Self = this.set("scheduleWithRelativeAndState", js.Any.fromFunction3(value))
+    def setScheduleWithRelativeAndState(value: (js.Any, Double, js.Function2[IScheduler, js.Any, IDisposable]) => IDisposable): Self = StObject.set(x, "scheduleWithRelativeAndState", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setScheduleWithState(value: (js.Any, js.Function2[IScheduler, js.Any, IDisposable]) => IDisposable): Self = this.set("scheduleWithState", js.Any.fromFunction2(value))
+    def setScheduleWithState(value: (js.Any, js.Function2[IScheduler, js.Any, IDisposable]) => IDisposable): Self = StObject.set(x, "scheduleWithState", js.Any.fromFunction2(value))
   }
 }

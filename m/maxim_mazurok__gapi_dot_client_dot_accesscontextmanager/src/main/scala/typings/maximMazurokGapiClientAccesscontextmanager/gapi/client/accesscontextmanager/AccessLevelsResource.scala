@@ -9,12 +9,13 @@ import typings.maximMazurokGapiClientAccesscontextmanager.anon.Fields
 import typings.maximMazurokGapiClientAccesscontextmanager.anon.Key
 import typings.maximMazurokGapiClientAccesscontextmanager.anon.Name
 import typings.maximMazurokGapiClientAccesscontextmanager.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessLevelsResource extends js.Object {
+trait AccessLevelsResource extends StObject {
   
   /**
     * Create an Access Level. The longrunning operation from this RPC will have a successful status once the Access Level has propagated to long-lasting storage. Access Levels containing

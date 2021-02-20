@@ -10,13 +10,12 @@ import typings.tablesorter.pagerConfigurationMod.PagerConfiguration
 import typings.tablesorter.pagerDataPartMod.PagerDataPart
 import typings.tablesorter.pagerMemoryMod.PagerMemory
 import typings.tablesorter.sortDefinitionMod.SortDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tablesorter/Paging/PagerConfigurationStore", JSImport.Namespace)
-@js.native
-object pagerConfigurationStoreMod extends js.Object {
+object pagerConfigurationStoreMod {
   
   @js.native
   trait PagerConfigurationStore[TElement] extends PagerConfiguration[TElement] {

@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Input
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TouchPoint extends js.Object {
+trait TouchPoint extends StObject {
   
   /**
     * Force (default: 1.0).
@@ -52,54 +53,42 @@ object TouchPoint {
   }
   
   @scala.inline
-  implicit class TouchPointOps[Self <: TouchPoint] (val x: Self) extends AnyVal {
+  implicit class TouchPointMutableBuilder[Self <: TouchPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForce(value: Double): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setRadiusX(value: Double): Self = StObject.set(x, "radiusX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForce(value: Double): Self = this.set("force", value.asInstanceOf[js.Any])
+    def setRadiusXUndefined: Self = StObject.set(x, "radiusX", js.undefined)
     
     @scala.inline
-    def deleteForce: Self = this.set("force", js.undefined)
+    def setRadiusY(value: Double): Self = StObject.set(x, "radiusY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRadiusYUndefined: Self = StObject.set(x, "radiusY", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiusX(value: Double): Self = this.set("radiusX", value.asInstanceOf[js.Any])
+    def setRotationAngleUndefined: Self = StObject.set(x, "rotationAngle", js.undefined)
     
     @scala.inline
-    def deleteRadiusX: Self = this.set("radiusX", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiusY(value: Double): Self = this.set("radiusY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadiusY: Self = this.set("radiusY", js.undefined)
-    
-    @scala.inline
-    def setRotationAngle(value: Double): Self = this.set("rotationAngle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationAngle: Self = this.set("rotationAngle", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

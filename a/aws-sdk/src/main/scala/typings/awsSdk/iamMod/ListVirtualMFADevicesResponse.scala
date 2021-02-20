@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListVirtualMFADevicesResponse extends js.Object {
+trait ListVirtualMFADevicesResponse extends StObject {
   
   /**
     * A flag that indicates whether there are more items to return. If your results were truncated, you can make a subsequent pagination request using the Marker request parameter to retrieve more items. Note that IAM might return fewer than the MaxItems number of results even when there are more results available. We recommend that you check IsTruncated after every call to ensure that you receive all your results.
@@ -31,36 +32,24 @@ object ListVirtualMFADevicesResponse {
   }
   
   @scala.inline
-  implicit class ListVirtualMFADevicesResponseOps[Self <: ListVirtualMFADevicesResponse] (val x: Self) extends AnyVal {
+  implicit class ListVirtualMFADevicesResponseMutableBuilder[Self <: ListVirtualMFADevicesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualMFADevicesVarargs(value: VirtualMFADevice*): Self = this.set("VirtualMFADevices", js.Array(value :_*))
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def setVirtualMFADevices(value: virtualMFADeviceListType): Self = this.set("VirtualMFADevices", value.asInstanceOf[js.Any])
+    def setVirtualMFADevices(value: virtualMFADeviceListType): Self = StObject.set(x, "VirtualMFADevices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTruncated(value: booleanType): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: responseMarkerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setVirtualMFADevicesVarargs(value: VirtualMFADevice*): Self = StObject.set(x, "VirtualMFADevices", js.Array(value :_*))
   }
 }

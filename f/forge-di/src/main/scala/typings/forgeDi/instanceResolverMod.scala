@@ -1,20 +1,13 @@
 package typings.forgeDi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("forge-di/dist/resolvers/InstanceResolver", JSImport.Namespace)
-@js.native
-object instanceResolverMod extends js.Object {
+object instanceResolverMod {
   
-  @js.native
-  trait InstanceResolver
-    extends typings.forgeDi.resolverMod.default {
-    
-    var instance: js.Any = js.native
-  }
-  
+  @JSImport("forge-di/dist/resolvers/InstanceResolver", JSImport.Default)
   @js.native
   class default protected () extends InstanceResolver {
     def this(
@@ -22,5 +15,12 @@ object instanceResolverMod extends js.Object {
       binding: typings.forgeDi.bindingMod.default,
       instance: js.Any
     ) = this()
+  }
+  
+  @js.native
+  trait InstanceResolver
+    extends typings.forgeDi.resolverMod.default {
+    
+    var instance: js.Any = js.native
   }
 }

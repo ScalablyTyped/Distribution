@@ -1,11 +1,12 @@
 package typings.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PasswordChangeTicketParams extends js.Object {
+trait PasswordChangeTicketParams extends StObject {
   
   var connection_id: js.UndefOr[String] = js.native
   
@@ -32,66 +33,54 @@ object PasswordChangeTicketParams {
   }
   
   @scala.inline
-  implicit class PasswordChangeTicketParamsOps[Self <: PasswordChangeTicketParams] (val x: Self) extends AnyVal {
+  implicit class PasswordChangeTicketParamsMutableBuilder[Self <: PasswordChangeTicketParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnection_id(value: String): Self = StObject.set(x, "connection_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnection_idUndefined: Self = StObject.set(x, "connection_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnection_id(value: String): Self = this.set("connection_id", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteConnection_id: Self = this.set("connection_id", js.undefined)
+    def setIncludeEmailInRedirect(value: Boolean): Self = StObject.set(x, "includeEmailInRedirect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setIncludeEmailInRedirectUndefined: Self = StObject.set(x, "includeEmailInRedirect", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setMark_email_as_verified(value: Boolean): Self = StObject.set(x, "mark_email_as_verified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeEmailInRedirect(value: Boolean): Self = this.set("includeEmailInRedirect", value.asInstanceOf[js.Any])
+    def setMark_email_as_verifiedUndefined: Self = StObject.set(x, "mark_email_as_verified", js.undefined)
     
     @scala.inline
-    def deleteIncludeEmailInRedirect: Self = this.set("includeEmailInRedirect", js.undefined)
+    def setNew_password(value: String): Self = StObject.set(x, "new_password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMark_email_as_verified(value: Boolean): Self = this.set("mark_email_as_verified", value.asInstanceOf[js.Any])
+    def setNew_passwordUndefined: Self = StObject.set(x, "new_password", js.undefined)
     
     @scala.inline
-    def deleteMark_email_as_verified: Self = this.set("mark_email_as_verified", js.undefined)
+    def setResult_url(value: String): Self = StObject.set(x, "result_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNew_password(value: String): Self = this.set("new_password", value.asInstanceOf[js.Any])
+    def setResult_urlUndefined: Self = StObject.set(x, "result_url", js.undefined)
     
     @scala.inline
-    def deleteNew_password: Self = this.set("new_password", js.undefined)
+    def setTtl_sec(value: Double): Self = StObject.set(x, "ttl_sec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult_url(value: String): Self = this.set("result_url", value.asInstanceOf[js.Any])
+    def setTtl_secUndefined: Self = StObject.set(x, "ttl_sec", js.undefined)
     
     @scala.inline
-    def deleteResult_url: Self = this.set("result_url", js.undefined)
+    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTtl_sec(value: Double): Self = this.set("ttl_sec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTtl_sec: Self = this.set("ttl_sec", js.undefined)
-    
-    @scala.inline
-    def setUser_id(value: String): Self = this.set("user_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser_id: Self = this.set("user_id", js.undefined)
+    def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
   }
 }

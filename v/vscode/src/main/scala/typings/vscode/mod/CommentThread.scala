@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommentThread extends js.Object {
+trait CommentThread extends StObject {
   
   /**
     * Whether the thread supports reply.
@@ -83,51 +84,39 @@ object CommentThread {
   }
   
   @scala.inline
-  implicit class CommentThreadOps[Self <: CommentThread] (val x: Self) extends AnyVal {
+  implicit class CommentThreadMutableBuilder[Self <: CommentThread] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanReply(value: Boolean): Self = StObject.set(x, "canReply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollapsibleState(value: CommentThreadCollapsibleState): Self = StObject.set(x, "collapsibleState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComments(value: js.Array[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanReply(value: Boolean): Self = this.set("canReply", value.asInstanceOf[js.Any])
+    def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
     @scala.inline
-    def setCollapsibleState(value: CommentThreadCollapsibleState): Self = this.set("collapsibleState", value.asInstanceOf[js.Any])
+    def setContextValue(value: String): Self = StObject.set(x, "contextValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentsVarargs(value: Comment*): Self = this.set("comments", js.Array(value :_*))
+    def setContextValueUndefined: Self = StObject.set(x, "contextValue", js.undefined)
     
     @scala.inline
-    def setComments(value: js.Array[Comment]): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: Range): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setUri(value: Uri): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextValue(value: String): Self = this.set("contextValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContextValue: Self = this.set("contextValue", js.undefined)
-    
-    @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

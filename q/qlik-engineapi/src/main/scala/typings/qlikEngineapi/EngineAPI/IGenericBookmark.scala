@@ -2,6 +2,7 @@ package typings.qlikEngineapi.EngineAPI
 
 import typings.qlikEngineapi.anon.QEndIndex
 import typings.qlikEngineapi.anon.QFieldValues
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The handle member in the JSON request for all methods listed in this section is the handle of the bookmark.
   */
 @js.native
-trait IGenericBookmark extends js.Object {
+trait IGenericBookmark extends StObject {
   
   /**
     * Applies a bookmark.
@@ -106,45 +107,33 @@ object IGenericBookmark {
   }
   
   @scala.inline
-  implicit class IGenericBookmarkOps[Self <: IGenericBookmark] (val x: Self) extends AnyVal {
+  implicit class IGenericBookmarkMutableBuilder[Self <: IGenericBookmark] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApply(value: () => js.Promise[Boolean]): Self = StObject.set(x, "apply", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyPatches(value: js.Array[INxPatch] => js.Promise[Unit]): Self = StObject.set(x, "applyPatches", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFieldValues(value: (String, Boolean, QEndIndex) => js.Promise[QFieldValues]): Self = StObject.set(x, "getFieldValues", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setApply(value: () => js.Promise[Boolean]): Self = this.set("apply", js.Any.fromFunction0(value))
+    def setGetInfo(value: () => js.Promise[INxInfo]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplyPatches(value: js.Array[INxPatch] => js.Promise[Unit]): Self = this.set("applyPatches", js.Any.fromFunction1(value))
+    def setGetLayout(value: () => js.Promise[IGenericBookmarkLayout]): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFieldValues(value: (String, Boolean, QEndIndex) => js.Promise[QFieldValues]): Self = this.set("getFieldValues", js.Any.fromFunction3(value))
+    def setGetProperties(value: () => js.Promise[IGenericBookmarkProperties]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInfo(value: () => js.Promise[INxInfo]): Self = this.set("getInfo", js.Any.fromFunction0(value))
+    def setPublish(value: () => js.Promise[Unit]): Self = StObject.set(x, "publish", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLayout(value: () => js.Promise[IGenericBookmarkLayout]): Self = this.set("getLayout", js.Any.fromFunction0(value))
+    def setSetProperties(value: IGenericBookmarkProperties => js.Promise[Unit]): Self = StObject.set(x, "setProperties", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetProperties(value: () => js.Promise[IGenericBookmarkProperties]): Self = this.set("getProperties", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPublish(value: () => js.Promise[Unit]): Self = this.set("publish", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetProperties(value: IGenericBookmarkProperties => js.Promise[Unit]): Self = this.set("setProperties", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnPublish(value: () => js.Promise[Unit]): Self = this.set("unPublish", js.Any.fromFunction0(value))
+    def setUnPublish(value: () => js.Promise[Unit]): Self = StObject.set(x, "unPublish", js.Any.fromFunction0(value))
   }
 }

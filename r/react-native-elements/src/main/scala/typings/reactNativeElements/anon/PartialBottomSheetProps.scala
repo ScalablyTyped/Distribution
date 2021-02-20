@@ -1,13 +1,14 @@
 package typings.reactNativeElements.anon
 
 import typings.reactNative.mod.ModalProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-native-elements.react-native-elements.BottomSheetProps> */
 @js.native
-trait PartialBottomSheetProps extends js.Object {
+trait PartialBottomSheetProps extends StObject {
   
   var isVisible: js.UndefOr[Boolean] = js.native
   
@@ -22,30 +23,18 @@ object PartialBottomSheetProps {
   }
   
   @scala.inline
-  implicit class PartialBottomSheetPropsOps[Self <: PartialBottomSheetProps] (val x: Self) extends AnyVal {
+  implicit class PartialBottomSheetPropsMutableBuilder[Self <: PartialBottomSheetProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModalProps(value: ModalProps): Self = StObject.set(x, "modalProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVisible(value: Boolean): Self = this.set("isVisible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsVisible: Self = this.set("isVisible", js.undefined)
-    
-    @scala.inline
-    def setModalProps(value: ModalProps): Self = this.set("modalProps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModalProps: Self = this.set("modalProps", js.undefined)
+    def setModalPropsUndefined: Self = StObject.set(x, "modalProps", js.undefined)
   }
 }

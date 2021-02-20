@@ -1,12 +1,13 @@
 package typings.antvComponent.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Readonly<@antv/component.@antv/component/lib/scrollbar/scrollbar.ScrollbarStyle>> */
 @js.native
-trait PartialReadonlyScrollbarS extends js.Object {
+trait PartialReadonlyScrollbarS extends StObject {
   
   var lineCap: js.UndefOr[String] = js.native
   
@@ -25,42 +26,30 @@ object PartialReadonlyScrollbarS {
   }
   
   @scala.inline
-  implicit class PartialReadonlyScrollbarSOps[Self <: PartialReadonlyScrollbarS] (val x: Self) extends AnyVal {
+  implicit class PartialReadonlyScrollbarSMutableBuilder[Self <: PartialReadonlyScrollbarS] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLineCap(value: String): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLineCapUndefined: Self = StObject.set(x, "lineCap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineCap(value: String): Self = this.set("lineCap", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteLineCap: Self = this.set("lineCap", js.undefined)
+    def setThumbColor(value: String): Self = StObject.set(x, "thumbColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setThumbColorUndefined: Self = StObject.set(x, "thumbColor", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setTrackColor(value: String): Self = StObject.set(x, "trackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbColor(value: String): Self = this.set("thumbColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbColor: Self = this.set("thumbColor", js.undefined)
-    
-    @scala.inline
-    def setTrackColor(value: String): Self = this.set("trackColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackColor: Self = this.set("trackColor", js.undefined)
+    def setTrackColorUndefined: Self = StObject.set(x, "trackColor", js.undefined)
   }
 }

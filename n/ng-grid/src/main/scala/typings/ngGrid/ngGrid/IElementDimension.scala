@@ -1,11 +1,12 @@
 package typings.ngGrid.ngGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IElementDimension extends js.Object {
+trait IElementDimension extends StObject {
   
   var rootMaxH: js.UndefOr[Double] = js.native
   
@@ -28,54 +29,42 @@ object IElementDimension {
   }
   
   @scala.inline
-  implicit class IElementDimensionOps[Self <: IElementDimension] (val x: Self) extends AnyVal {
+  implicit class IElementDimensionMutableBuilder[Self <: IElementDimension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRootMaxH(value: Double): Self = StObject.set(x, "rootMaxH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRootMaxHUndefined: Self = StObject.set(x, "rootMaxH", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRootMaxW(value: Double): Self = StObject.set(x, "rootMaxW", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootMaxH(value: Double): Self = this.set("rootMaxH", value.asInstanceOf[js.Any])
+    def setRootMaxWUndefined: Self = StObject.set(x, "rootMaxW", js.undefined)
     
     @scala.inline
-    def deleteRootMaxH: Self = this.set("rootMaxH", js.undefined)
+    def setRowIndexCellW(value: Double): Self = StObject.set(x, "rowIndexCellW", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootMaxW(value: Double): Self = this.set("rootMaxW", value.asInstanceOf[js.Any])
+    def setRowIndexCellWUndefined: Self = StObject.set(x, "rowIndexCellW", js.undefined)
     
     @scala.inline
-    def deleteRootMaxW: Self = this.set("rootMaxW", js.undefined)
+    def setRowSelectedCellW(value: Double): Self = StObject.set(x, "rowSelectedCellW", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowIndexCellW(value: Double): Self = this.set("rowIndexCellW", value.asInstanceOf[js.Any])
+    def setRowSelectedCellWUndefined: Self = StObject.set(x, "rowSelectedCellW", js.undefined)
     
     @scala.inline
-    def deleteRowIndexCellW: Self = this.set("rowIndexCellW", js.undefined)
+    def setScrollH(value: Double): Self = StObject.set(x, "scrollH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowSelectedCellW(value: Double): Self = this.set("rowSelectedCellW", value.asInstanceOf[js.Any])
+    def setScrollHUndefined: Self = StObject.set(x, "scrollH", js.undefined)
     
     @scala.inline
-    def deleteRowSelectedCellW: Self = this.set("rowSelectedCellW", js.undefined)
+    def setScrollW(value: Double): Self = StObject.set(x, "scrollW", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollH(value: Double): Self = this.set("scrollH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollH: Self = this.set("scrollH", js.undefined)
-    
-    @scala.inline
-    def setScrollW(value: Double): Self = this.set("scrollW", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollW: Self = this.set("scrollW", js.undefined)
+    def setScrollWUndefined: Self = StObject.set(x, "scrollW", js.undefined)
   }
 }

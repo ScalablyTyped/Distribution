@@ -1,11 +1,12 @@
 package typings.cesium.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Toggled extends js.Object {
+trait Toggled extends StObject {
   
   var toggled: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object Toggled {
   }
   
   @scala.inline
-  implicit class ToggledOps[Self <: Toggled] (val x: Self) extends AnyVal {
+  implicit class ToggledMutableBuilder[Self <: Toggled] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setToggled(value: Boolean): Self = StObject.set(x, "toggled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setToggledUndefined: Self = StObject.set(x, "toggled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToggled(value: Boolean): Self = this.set("toggled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToggled: Self = this.set("toggled", js.undefined)
-    
-    @scala.inline
-    def setTooltip(value: String): Self = this.set("tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

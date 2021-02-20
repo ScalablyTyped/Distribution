@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3BucketDestination extends js.Object {
+trait S3BucketDestination extends StObject {
   
   /**
     * The account ID of the owner of the S3 Storage Lens metrics export bucket.
@@ -51,42 +52,30 @@ object S3BucketDestination {
   }
   
   @scala.inline
-  implicit class S3BucketDestinationOps[Self <: S3BucketDestination] (val x: Self) extends AnyVal {
+  implicit class S3BucketDestinationMutableBuilder[Self <: S3BucketDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArn(value: S3BucketArnString): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryption(value: StorageLensDataExportEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
     @scala.inline
-    def setArn(value: S3BucketArnString): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setFormat(value: Format): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: Format): Self = this.set("Format", value.asInstanceOf[js.Any])
+    def setOutputSchemaVersion(value: OutputSchemaVersion): Self = StObject.set(x, "OutputSchemaVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputSchemaVersion(value: OutputSchemaVersion): Self = this.set("OutputSchemaVersion", value.asInstanceOf[js.Any])
+    def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryption(value: StorageLensDataExportEncryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryption: Self = this.set("Encryption", js.undefined)
-    
-    @scala.inline
-    def setPrefix(value: Prefix): Self = this.set("Prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefix: Self = this.set("Prefix", js.undefined)
+    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,27 +47,15 @@ object ArcGISMapServiceCapabilities {
   }
   
   @scala.inline
-  implicit class ArcGISMapServiceCapabilitiesOps[Self <: ArcGISMapServiceCapabilities] (val x: Self) extends AnyVal {
+  implicit class ArcGISMapServiceCapabilitiesMutableBuilder[Self <: ArcGISMapServiceCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportMap(value: ArcGISMapServiceCapabilitiesExportMap): Self = StObject.set(x, "exportMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportTiles(value: ArcGISMapServiceCapabilitiesExportTiles): Self = StObject.set(x, "exportTiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExportMap(value: ArcGISMapServiceCapabilitiesExportMap): Self = this.set("exportMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExportTiles(value: ArcGISMapServiceCapabilitiesExportTiles): Self = this.set("exportTiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperations(value: ArcGISMapServiceCapabilitiesOperations): Self = this.set("operations", value.asInstanceOf[js.Any])
+    def setOperations(value: ArcGISMapServiceCapabilitiesOperations): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
   }
 }

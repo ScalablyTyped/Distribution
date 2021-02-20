@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IContentSizeChangedEvent extends js.Object {
+trait IContentSizeChangedEvent extends StObject {
   
   val contentHeight: Double = js.native
   
@@ -29,30 +30,18 @@ object IContentSizeChangedEvent {
   }
   
   @scala.inline
-  implicit class IContentSizeChangedEventOps[Self <: IContentSizeChangedEvent] (val x: Self) extends AnyVal {
+  implicit class IContentSizeChangedEventMutableBuilder[Self <: IContentSizeChangedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentHeight(value: Double): Self = StObject.set(x, "contentHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentHeightChanged(value: Boolean): Self = StObject.set(x, "contentHeightChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentWidth(value: Double): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentHeight(value: Double): Self = this.set("contentHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContentHeightChanged(value: Boolean): Self = this.set("contentHeightChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContentWidth(value: Double): Self = this.set("contentWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContentWidthChanged(value: Boolean): Self = this.set("contentWidthChanged", value.asInstanceOf[js.Any])
+    def setContentWidthChanged(value: Boolean): Self = StObject.set(x, "contentWidthChanged", value.asInstanceOf[js.Any])
   }
 }

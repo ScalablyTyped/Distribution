@@ -15,14 +15,20 @@ import typings.openfin.shapesPlatformMod.Snapshot
 import typings.openfin.viewViewMod.View
 import typings.openfin.viewViewMod.ViewCreationOptions
 import typings.openfin.windowWindowMod.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openfin/_v2/api/platform/platform", JSImport.Namespace)
-@js.native
-object platformPlatformMod extends js.Object {
+object platformPlatformMod {
   
+  @JSImport("openfin/_v2/api/platform/platform", JSImport.Default)
+  @js.native
+  class default protected () extends PlatformModule {
+    def this(wire: typings.openfin.transportMod.default, channel: Channel) = this()
+  }
+  
+  @JSImport("openfin/_v2/api/platform/platform", "Platform")
   @js.native
   class Platform protected () extends EmitterBase[PlatformEvents] {
     def this(identity: Identity, channel: Channel) = this()
@@ -222,10 +228,5 @@ object platformPlatformMod extends js.Object {
       * @static
       */
     def wrapSync(identity: Identity): Platform = js.native
-  }
-  
-  @js.native
-  class default protected () extends PlatformModule {
-    def this(wire: typings.openfin.transportMod.default, channel: Channel) = this()
   }
 }

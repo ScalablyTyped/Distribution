@@ -16,14 +16,14 @@ import typings.babylonjs.prePassConfigurationMod.PrePassConfiguration
 import typings.babylonjs.pushMaterialMod.PushMaterial
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/PBR/pbrBaseMaterial", JSImport.Namespace)
-@js.native
-object pbrBaseMaterialMod extends js.Object {
+object pbrBaseMaterialMod {
   
+  @JSImport("babylonjs/Materials/PBR/pbrBaseMaterial", "PBRBaseMaterial")
   @js.native
   abstract class PBRBaseMaterial protected () extends PushMaterial {
     /**
@@ -528,51 +528,72 @@ object pbrBaseMaterialMod extends js.Object {
     def useLogarithmicDepth_=(value: Boolean): Unit = js.native
   }
   /* static members */
-  @js.native
-  object PBRBaseMaterial extends js.Object {
+  object PBRBaseMaterial {
+    
+    @JSImport("babylonjs/Materials/PBR/pbrBaseMaterial", "PBRBaseMaterial")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Defines the default value of how much AO map is occluding the analytical lights
       * (point spot...).
       */
-    var DEFAULT_AO_ON_ANALYTICAL_LIGHTS: Double = js.native
+    @JSImport("babylonjs/Materials/PBR/pbrBaseMaterial", "PBRBaseMaterial.DEFAULT_AO_ON_ANALYTICAL_LIGHTS")
+    @js.native
+    def DEFAULT_AO_ON_ANALYTICAL_LIGHTS: Double = js.native
+    @scala.inline
+    def DEFAULT_AO_ON_ANALYTICAL_LIGHTS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_AO_ON_ANALYTICAL_LIGHTS")(x.asInstanceOf[js.Any])
     
     /**
       * PBRMaterialLightFalloff gltf: light is falling off as described in the gltf moving to PBR document
       * to enhance interoperability with other engines.
       */
+    @JSImport("babylonjs/Materials/PBR/pbrBaseMaterial", "PBRBaseMaterial.LIGHTFALLOFF_GLTF")
+    @js.native
     val LIGHTFALLOFF_GLTF: Double = js.native
     
     /**
       * PBRMaterialLightFalloff Physical: light is falling off following the inverse squared distance law.
       */
+    @JSImport("babylonjs/Materials/PBR/pbrBaseMaterial", "PBRBaseMaterial.LIGHTFALLOFF_PHYSICAL")
+    @js.native
     val LIGHTFALLOFF_PHYSICAL: Double = js.native
     
     /**
       * PBRMaterialLightFalloff Standard: light is falling off like in the standard material
       * to enhance interoperability with other materials.
       */
+    @JSImport("babylonjs/Materials/PBR/pbrBaseMaterial", "PBRBaseMaterial.LIGHTFALLOFF_STANDARD")
+    @js.native
     val LIGHTFALLOFF_STANDARD: Double = js.native
     
     /**
       * PBRMaterialTransparencyMode: Pixels are blended (according to the alpha mode) with the already drawn pixels in the current frame buffer.
       */
+    @JSImport("babylonjs/Materials/PBR/pbrBaseMaterial", "PBRBaseMaterial.PBRMATERIAL_ALPHABLEND")
+    @js.native
     val PBRMATERIAL_ALPHABLEND: Double = js.native
     
     /**
       * PBRMaterialTransparencyMode: Alpha Test mode, pixel are discarded below a certain threshold defined by the alpha cutoff value.
       */
+    @JSImport("babylonjs/Materials/PBR/pbrBaseMaterial", "PBRBaseMaterial.PBRMATERIAL_ALPHATEST")
+    @js.native
     val PBRMATERIAL_ALPHATEST: Double = js.native
     
     /**
       * PBRMaterialTransparencyMode: Pixels are blended (according to the alpha mode) with the already drawn pixels in the current frame buffer.
       * They are also discarded below the alpha cutoff threshold to improve performances.
       */
+    @JSImport("babylonjs/Materials/PBR/pbrBaseMaterial", "PBRBaseMaterial.PBRMATERIAL_ALPHATESTANDBLEND")
+    @js.native
     val PBRMATERIAL_ALPHATESTANDBLEND: Double = js.native
     
     /**
       * PBRMaterialTransparencyMode: No transparency mode, Alpha channel is not use.
       */
+    @JSImport("babylonjs/Materials/PBR/pbrBaseMaterial", "PBRBaseMaterial.PBRMATERIAL_OPAQUE")
+    @js.native
     val PBRMATERIAL_OPAQUE: Double = js.native
   }
   
@@ -582,7 +603,8 @@ object pbrBaseMaterialMod extends js.Object {
   - typings.babylonjs.pbrSheenConfigurationMod.IMaterialSheenDefines because var conflicts: _areTexturesDirty. Inlined SHEEN, SHEEN_TEXTURE, SHEEN_TEXTURE_ROUGHNESS, SHEEN_TEXTUREDIRECTUV, SHEEN_TEXTURE_ROUGHNESSDIRECTUV, SHEEN_LINKWITHALBEDO, SHEEN_ROUGHNESS, SHEEN_ALBEDOSCALING, SHEEN_USE_ROUGHNESS_FROM_MAINTEXTURE, SHEEN_TEXTURE_ROUGHNESS_IDENTICAL
   - typings.babylonjs.pbrBRDFConfigurationMod.IMaterialBRDFDefines because var conflicts: _areMiscDirty. Inlined BRDF_V_HEIGHT_CORRELATED, MS_BRDF_ENERGY_CONSERVATION, SPHERICAL_HARMONICS, SPECULAR_GLOSSINESS_ENERGY_CONSERVATION
   - typings.babylonjs.pbrAnisotropicConfigurationMod.IMaterialAnisotropicDefines because var conflicts: _areTexturesDirty, _needUVs. Inlined ANISOTROPIC, ANISOTROPIC_TEXTURE, ANISOTROPIC_TEXTUREDIRECTUV, MAINUV1
-  - typings.babylonjs.pbrClearCoatConfigurationMod.IMaterialClearCoatDefines because var conflicts: _areTexturesDirty. Inlined CLEARCOAT, CLEARCOAT_DEFAULTIOR, CLEARCOAT_TEXTURE, CLEARCOAT_TEXTURE_ROUGHNESS, CLEARCOAT_TEXTUREDIRECTUV, CLEARCOAT_TEXTURE_ROUGHNESSDIRECTUV, CLEARCOAT_BUMP, CLEARCOAT_BUMPDIRECTUV, CLEARCOAT_USE_ROUGHNESS_FROM_MAINTEXTURE, CLEARCOAT_TEXTURE_ROUGHNESS_IDENTICAL, CLEARCOAT_REMAP_F0, CLEARCOAT_TINT, CLEARCOAT_TINT_TEXTURE, CLEARCOAT_TINT_TEXTUREDIRECTUV */ @js.native
+  - typings.babylonjs.pbrClearCoatConfigurationMod.IMaterialClearCoatDefines because var conflicts: _areTexturesDirty. Inlined CLEARCOAT, CLEARCOAT_DEFAULTIOR, CLEARCOAT_TEXTURE, CLEARCOAT_TEXTURE_ROUGHNESS, CLEARCOAT_TEXTUREDIRECTUV, CLEARCOAT_TEXTURE_ROUGHNESSDIRECTUV, CLEARCOAT_BUMP, CLEARCOAT_BUMPDIRECTUV, CLEARCOAT_USE_ROUGHNESS_FROM_MAINTEXTURE, CLEARCOAT_TEXTURE_ROUGHNESS_IDENTICAL, CLEARCOAT_REMAP_F0, CLEARCOAT_TINT, CLEARCOAT_TINT_TEXTURE, CLEARCOAT_TINT_TEXTUREDIRECTUV */ @JSImport("babylonjs/Materials/PBR/pbrBaseMaterial", "PBRMaterialDefines")
+  @js.native
   /**
     * Initializes the PBR Material defines.
     */

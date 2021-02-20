@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.msk
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterLoggingInfoBrokerLogs extends js.Object {
+trait ClusterLoggingInfoBrokerLogs extends StObject {
   
   var cloudwatchLogs: js.UndefOr[Input[ClusterLoggingInfoBrokerLogsCloudwatchLogs]] = js.native
   
@@ -23,36 +24,24 @@ object ClusterLoggingInfoBrokerLogs {
   }
   
   @scala.inline
-  implicit class ClusterLoggingInfoBrokerLogsOps[Self <: ClusterLoggingInfoBrokerLogs] (val x: Self) extends AnyVal {
+  implicit class ClusterLoggingInfoBrokerLogsMutableBuilder[Self <: ClusterLoggingInfoBrokerLogs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudwatchLogs(value: Input[ClusterLoggingInfoBrokerLogsCloudwatchLogs]): Self = StObject.set(x, "cloudwatchLogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudwatchLogsUndefined: Self = StObject.set(x, "cloudwatchLogs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirehose(value: Input[ClusterLoggingInfoBrokerLogsFirehose]): Self = StObject.set(x, "firehose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudwatchLogs(value: Input[ClusterLoggingInfoBrokerLogsCloudwatchLogs]): Self = this.set("cloudwatchLogs", value.asInstanceOf[js.Any])
+    def setFirehoseUndefined: Self = StObject.set(x, "firehose", js.undefined)
     
     @scala.inline
-    def deleteCloudwatchLogs: Self = this.set("cloudwatchLogs", js.undefined)
+    def setS3(value: Input[ClusterLoggingInfoBrokerLogsS3]): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirehose(value: Input[ClusterLoggingInfoBrokerLogsFirehose]): Self = this.set("firehose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFirehose: Self = this.set("firehose", js.undefined)
-    
-    @scala.inline
-    def setS3(value: Input[ClusterLoggingInfoBrokerLogsS3]): Self = this.set("s3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3: Self = this.set("s3", js.undefined)
+    def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
   }
 }

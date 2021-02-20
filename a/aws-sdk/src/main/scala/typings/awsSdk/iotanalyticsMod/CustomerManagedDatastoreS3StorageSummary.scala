@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomerManagedDatastoreS3StorageSummary extends js.Object {
+trait CustomerManagedDatastoreS3StorageSummary extends StObject {
   
   /**
     * The name of the S3 bucket in which data store data is stored.
@@ -31,36 +32,24 @@ object CustomerManagedDatastoreS3StorageSummary {
   }
   
   @scala.inline
-  implicit class CustomerManagedDatastoreS3StorageSummaryOps[Self <: CustomerManagedDatastoreS3StorageSummary] (val x: Self) extends AnyVal {
+  implicit class CustomerManagedDatastoreS3StorageSummaryMutableBuilder[Self <: CustomerManagedDatastoreS3StorageSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: BucketName): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyPrefix(value: S3KeyPrefix): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucket(value: BucketName): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    def setKeyPrefixUndefined: Self = StObject.set(x, "keyPrefix", js.undefined)
     
     @scala.inline
-    def deleteBucket: Self = this.set("bucket", js.undefined)
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyPrefix(value: S3KeyPrefix): Self = this.set("keyPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyPrefix: Self = this.set("keyPrefix", js.undefined)
-    
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
   }
 }

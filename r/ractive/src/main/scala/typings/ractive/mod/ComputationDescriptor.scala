@@ -1,11 +1,12 @@
 package typings.ractive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComputationDescriptor[T /* <: Ractive[T] */] extends js.Object {
+trait ComputationDescriptor[T /* <: Ractive[T] */] extends StObject {
   
   /**
   	 * Called when Ractive needs to get the computed value. Computations are lazy, so this is only called when a dependency asks for a value.

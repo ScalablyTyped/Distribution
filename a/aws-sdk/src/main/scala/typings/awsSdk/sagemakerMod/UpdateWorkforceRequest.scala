@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateWorkforceRequest extends js.Object {
+trait UpdateWorkforceRequest extends StObject {
   
   /**
     * Use this parameter to update your OIDC Identity Provider (IdP) configuration for a workforce made using your own IdP.
@@ -31,33 +32,21 @@ object UpdateWorkforceRequest {
   }
   
   @scala.inline
-  implicit class UpdateWorkforceRequestOps[Self <: UpdateWorkforceRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateWorkforceRequestMutableBuilder[Self <: UpdateWorkforceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOidcConfig(value: OidcConfig): Self = StObject.set(x, "OidcConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOidcConfigUndefined: Self = StObject.set(x, "OidcConfig", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceIpConfig(value: SourceIpConfig): Self = StObject.set(x, "SourceIpConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkforceName(value: WorkforceName): Self = this.set("WorkforceName", value.asInstanceOf[js.Any])
+    def setSourceIpConfigUndefined: Self = StObject.set(x, "SourceIpConfig", js.undefined)
     
     @scala.inline
-    def setOidcConfig(value: OidcConfig): Self = this.set("OidcConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOidcConfig: Self = this.set("OidcConfig", js.undefined)
-    
-    @scala.inline
-    def setSourceIpConfig(value: SourceIpConfig): Self = this.set("SourceIpConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceIpConfig: Self = this.set("SourceIpConfig", js.undefined)
+    def setWorkforceName(value: WorkforceName): Self = StObject.set(x, "WorkforceName", value.asInstanceOf[js.Any])
   }
 }

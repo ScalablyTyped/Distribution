@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusteringMetrics extends js.Object {
+trait ClusteringMetrics extends StObject {
   
   /** [Beta] Information for all clusters. */
   var clusters: js.UndefOr[js.Array[Cluster]] = js.native
@@ -25,39 +26,27 @@ object ClusteringMetrics {
   }
   
   @scala.inline
-  implicit class ClusteringMetricsOps[Self <: ClusteringMetrics] (val x: Self) extends AnyVal {
+  implicit class ClusteringMetricsMutableBuilder[Self <: ClusteringMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusters(value: js.Array[Cluster]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
     
     @scala.inline
-    def setClustersVarargs(value: Cluster*): Self = this.set("clusters", js.Array(value :_*))
+    def setDaviesBouldinIndex(value: Double): Self = StObject.set(x, "daviesBouldinIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusters(value: js.Array[Cluster]): Self = this.set("clusters", value.asInstanceOf[js.Any])
+    def setDaviesBouldinIndexUndefined: Self = StObject.set(x, "daviesBouldinIndex", js.undefined)
     
     @scala.inline
-    def deleteClusters: Self = this.set("clusters", js.undefined)
+    def setMeanSquaredDistance(value: Double): Self = StObject.set(x, "meanSquaredDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaviesBouldinIndex(value: Double): Self = this.set("daviesBouldinIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDaviesBouldinIndex: Self = this.set("daviesBouldinIndex", js.undefined)
-    
-    @scala.inline
-    def setMeanSquaredDistance(value: Double): Self = this.set("meanSquaredDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeanSquaredDistance: Self = this.set("meanSquaredDistance", js.undefined)
+    def setMeanSquaredDistanceUndefined: Self = StObject.set(x, "meanSquaredDistance", js.undefined)
   }
 }

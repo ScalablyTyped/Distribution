@@ -1,45 +1,38 @@
 package typings.materialComponentsWeb.mod
 
-import typings.materialSnackbar.adapterMod.MDCSnackbarAdapter
-import typings.materialSnackbar.anon.ACTIONSELECTOR
-import typings.materialSnackbar.anon.ARIALIVEDELAYMS
-import typings.materialSnackbar.anon.CLOSING
 import typings.materialSnackbar.anon.PartialMDCSnackbarAdapter
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-components-web", "snackbar")
-@js.native
-object snackbar extends js.Object {
+object snackbar {
   
+  @JSImport("material-components-web", "snackbar.MDCSnackbar")
   @js.native
-  class MDCSnackbar ()
-    extends typings.materialSnackbar.mod.MDCSnackbar
+  class MDCSnackbar protected ()
+    extends typings.materialSnackbar.mod.MDCSnackbar {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(
+      root: Element,
+      foundation: typings.materialSnackbar.foundationMod.MDCSnackbarFoundation,
+      args: js.Any*
+    ) = this()
+  }
   /* static members */
-  @js.native
-  object MDCSnackbar extends js.Object {
+  object MDCSnackbar {
     
+    @JSImport("material-components-web", "snackbar.MDCSnackbar.attachTo")
+    @js.native
     def attachTo(root: Element): typings.materialSnackbar.componentMod.MDCSnackbar = js.native
   }
   
+  @JSImport("material-components-web", "snackbar.MDCSnackbarFoundation")
   @js.native
   class MDCSnackbarFoundation ()
     extends typings.materialSnackbar.mod.MDCSnackbarFoundation {
     def this(adapter: PartialMDCSnackbarAdapter) = this()
-  }
-  /* static members */
-  @js.native
-  object MDCSnackbarFoundation extends js.Object {
-    
-    def cssClasses: CLOSING = js.native
-    
-    def defaultAdapter: MDCSnackbarAdapter = js.native
-    
-    def numbers: ARIALIVEDELAYMS = js.native
-    
-    def strings: ACTIONSELECTOR = js.native
   }
   
   /**
@@ -64,67 +57,160 @@ object snackbar extends js.Object {
     * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     * THE SOFTWARE.
     */
-  @js.native
-  object cssClasses extends js.Object {
+  object cssClasses {
     
-    var CLOSING: String = js.native
+    @JSImport("material-components-web", "snackbar.cssClasses")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var OPEN: String = js.native
+    @JSImport("material-components-web", "snackbar.cssClasses.CLOSING")
+    @js.native
+    def CLOSING: String = js.native
+    @scala.inline
+    def CLOSING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING")(x.asInstanceOf[js.Any])
     
-    var OPENING: String = js.native
+    @JSImport("material-components-web", "snackbar.cssClasses.OPEN")
+    @js.native
+    def OPEN: String = js.native
+    
+    @JSImport("material-components-web", "snackbar.cssClasses.OPENING")
+    @js.native
+    def OPENING: String = js.native
+    @scala.inline
+    def OPENING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPENING")(x.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def OPEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object numbers extends js.Object {
+  object numbers {
+    
+    @JSImport("material-components-web", "snackbar.numbers")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Number of milliseconds to wait between temporarily clearing the label text
       * in the DOM and subsequently restoring it. This is necessary to force IE 11
       * to pick up the `aria-live` content change and announce it to the user.
       */
-    var ARIA_LIVE_DELAY_MS: Double = js.native
+    @JSImport("material-components-web", "snackbar.numbers.ARIA_LIVE_DELAY_MS")
+    @js.native
+    def ARIA_LIVE_DELAY_MS: Double = js.native
+    @scala.inline
+    def ARIA_LIVE_DELAY_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_LIVE_DELAY_MS")(x.asInstanceOf[js.Any])
     
-    var DEFAULT_AUTO_DISMISS_TIMEOUT_MS: Double = js.native
+    @JSImport("material-components-web", "snackbar.numbers.DEFAULT_AUTO_DISMISS_TIMEOUT_MS")
+    @js.native
+    def DEFAULT_AUTO_DISMISS_TIMEOUT_MS: Double = js.native
+    @scala.inline
+    def DEFAULT_AUTO_DISMISS_TIMEOUT_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_AUTO_DISMISS_TIMEOUT_MS")(x.asInstanceOf[js.Any])
     
-    var INDETERMINATE: Double = js.native
+    @JSImport("material-components-web", "snackbar.numbers.INDETERMINATE")
+    @js.native
+    def INDETERMINATE: Double = js.native
+    @scala.inline
+    def INDETERMINATE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDETERMINATE")(x.asInstanceOf[js.Any])
     
-    var MAX_AUTO_DISMISS_TIMEOUT_MS: Double = js.native
+    @JSImport("material-components-web", "snackbar.numbers.MAX_AUTO_DISMISS_TIMEOUT_MS")
+    @js.native
+    def MAX_AUTO_DISMISS_TIMEOUT_MS: Double = js.native
+    @scala.inline
+    def MAX_AUTO_DISMISS_TIMEOUT_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_AUTO_DISMISS_TIMEOUT_MS")(x.asInstanceOf[js.Any])
     
-    var MIN_AUTO_DISMISS_TIMEOUT_MS: Double = js.native
+    @JSImport("material-components-web", "snackbar.numbers.MIN_AUTO_DISMISS_TIMEOUT_MS")
+    @js.native
+    def MIN_AUTO_DISMISS_TIMEOUT_MS: Double = js.native
+    @scala.inline
+    def MIN_AUTO_DISMISS_TIMEOUT_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_AUTO_DISMISS_TIMEOUT_MS")(x.asInstanceOf[js.Any])
     
-    var SNACKBAR_ANIMATION_CLOSE_TIME_MS: Double = js.native
+    @JSImport("material-components-web", "snackbar.numbers.SNACKBAR_ANIMATION_CLOSE_TIME_MS")
+    @js.native
+    def SNACKBAR_ANIMATION_CLOSE_TIME_MS: Double = js.native
+    @scala.inline
+    def SNACKBAR_ANIMATION_CLOSE_TIME_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SNACKBAR_ANIMATION_CLOSE_TIME_MS")(x.asInstanceOf[js.Any])
     
-    var SNACKBAR_ANIMATION_OPEN_TIME_MS: Double = js.native
+    @JSImport("material-components-web", "snackbar.numbers.SNACKBAR_ANIMATION_OPEN_TIME_MS")
+    @js.native
+    def SNACKBAR_ANIMATION_OPEN_TIME_MS: Double = js.native
+    @scala.inline
+    def SNACKBAR_ANIMATION_OPEN_TIME_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SNACKBAR_ANIMATION_OPEN_TIME_MS")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object strings extends js.Object {
+  object strings {
     
-    var ACTION_SELECTOR: String = js.native
+    @JSImport("material-components-web", "snackbar.strings")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var ARIA_LIVE_LABEL_TEXT_ATTR: String = js.native
+    @JSImport("material-components-web", "snackbar.strings.ACTION_SELECTOR")
+    @js.native
+    def ACTION_SELECTOR: String = js.native
+    @scala.inline
+    def ACTION_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTION_SELECTOR")(x.asInstanceOf[js.Any])
     
-    var CLOSED_EVENT: String = js.native
+    @JSImport("material-components-web", "snackbar.strings.ARIA_LIVE_LABEL_TEXT_ATTR")
+    @js.native
+    def ARIA_LIVE_LABEL_TEXT_ATTR: String = js.native
+    @scala.inline
+    def ARIA_LIVE_LABEL_TEXT_ATTR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_LIVE_LABEL_TEXT_ATTR")(x.asInstanceOf[js.Any])
     
-    var CLOSING_EVENT: String = js.native
+    @JSImport("material-components-web", "snackbar.strings.CLOSED_EVENT")
+    @js.native
+    def CLOSED_EVENT: String = js.native
+    @scala.inline
+    def CLOSED_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED_EVENT")(x.asInstanceOf[js.Any])
     
-    var DISMISS_SELECTOR: String = js.native
+    @JSImport("material-components-web", "snackbar.strings.CLOSING_EVENT")
+    @js.native
+    def CLOSING_EVENT: String = js.native
+    @scala.inline
+    def CLOSING_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING_EVENT")(x.asInstanceOf[js.Any])
     
-    var LABEL_SELECTOR: String = js.native
+    @JSImport("material-components-web", "snackbar.strings.DISMISS_SELECTOR")
+    @js.native
+    def DISMISS_SELECTOR: String = js.native
+    @scala.inline
+    def DISMISS_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISMISS_SELECTOR")(x.asInstanceOf[js.Any])
     
-    var OPENED_EVENT: String = js.native
+    @JSImport("material-components-web", "snackbar.strings.LABEL_SELECTOR")
+    @js.native
+    def LABEL_SELECTOR: String = js.native
+    @scala.inline
+    def LABEL_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LABEL_SELECTOR")(x.asInstanceOf[js.Any])
     
-    var OPENING_EVENT: String = js.native
+    @JSImport("material-components-web", "snackbar.strings.OPENED_EVENT")
+    @js.native
+    def OPENED_EVENT: String = js.native
+    @scala.inline
+    def OPENED_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPENED_EVENT")(x.asInstanceOf[js.Any])
     
-    var REASON_ACTION: String = js.native
+    @JSImport("material-components-web", "snackbar.strings.OPENING_EVENT")
+    @js.native
+    def OPENING_EVENT: String = js.native
+    @scala.inline
+    def OPENING_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPENING_EVENT")(x.asInstanceOf[js.Any])
     
-    var REASON_DISMISS: String = js.native
+    @JSImport("material-components-web", "snackbar.strings.REASON_ACTION")
+    @js.native
+    def REASON_ACTION: String = js.native
+    @scala.inline
+    def REASON_ACTION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REASON_ACTION")(x.asInstanceOf[js.Any])
     
-    var SURFACE_SELECTOR: String = js.native
+    @JSImport("material-components-web", "snackbar.strings.REASON_DISMISS")
+    @js.native
+    def REASON_DISMISS: String = js.native
+    @scala.inline
+    def REASON_DISMISS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REASON_DISMISS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("material-components-web", "snackbar.strings.SURFACE_SELECTOR")
+    @js.native
+    def SURFACE_SELECTOR: String = js.native
+    @scala.inline
+    def SURFACE_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SURFACE_SELECTOR")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object util extends js.Object {
+  object util {
     
     /**
       * @license
@@ -148,7 +234,11 @@ object snackbar extends js.Object {
       * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
       * THE SOFTWARE.
       */
+    @JSImport("material-components-web", "snackbar.util.announce")
+    @js.native
     def announce(ariaEl: Element): Unit = js.native
+    @JSImport("material-components-web", "snackbar.util.announce")
+    @js.native
     def announce(ariaEl: Element, labelEl: Element): Unit = js.native
   }
 }

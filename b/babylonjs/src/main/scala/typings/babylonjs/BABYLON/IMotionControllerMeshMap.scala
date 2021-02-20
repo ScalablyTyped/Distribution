@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMotionControllerMeshMap extends js.Object {
+trait IMotionControllerMeshMap extends StObject {
   
   /**
     * the mesh that defines the maximum value mesh position.
@@ -31,36 +32,24 @@ object IMotionControllerMeshMap {
   }
   
   @scala.inline
-  implicit class IMotionControllerMeshMapOps[Self <: IMotionControllerMeshMap] (val x: Self) extends AnyVal {
+  implicit class IMotionControllerMeshMapMutableBuilder[Self <: IMotionControllerMeshMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxMesh(value: AbstractMesh): Self = StObject.set(x, "maxMesh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxMeshUndefined: Self = StObject.set(x, "maxMesh", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinMesh(value: AbstractMesh): Self = StObject.set(x, "minMesh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxMesh(value: AbstractMesh): Self = this.set("maxMesh", value.asInstanceOf[js.Any])
+    def setMinMeshUndefined: Self = StObject.set(x, "minMesh", js.undefined)
     
     @scala.inline
-    def deleteMaxMesh: Self = this.set("maxMesh", js.undefined)
+    def setValueMesh(value: AbstractMesh): Self = StObject.set(x, "valueMesh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinMesh(value: AbstractMesh): Self = this.set("minMesh", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinMesh: Self = this.set("minMesh", js.undefined)
-    
-    @scala.inline
-    def setValueMesh(value: AbstractMesh): Self = this.set("valueMesh", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueMesh: Self = this.set("valueMesh", js.undefined)
+    def setValueMeshUndefined: Self = StObject.set(x, "valueMesh", js.undefined)
   }
 }

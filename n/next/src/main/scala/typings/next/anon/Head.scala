@@ -1,11 +1,12 @@
 package typings.next.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Head extends js.Object {
+trait Head extends StObject {
   
   var Head: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object Head {
   }
   
   @scala.inline
-  implicit class HeadOps[Self <: Head] (val x: Self) extends AnyVal {
+  implicit class HeadMutableBuilder[Self <: Head] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHead(value: Boolean): Self = StObject.set(x, "Head", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadUndefined: Self = StObject.set(x, "Head", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHtml(value: Boolean): Self = StObject.set(x, "Html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHead(value: Boolean): Self = this.set("Head", value.asInstanceOf[js.Any])
+    def setHtmlUndefined: Self = StObject.set(x, "Html", js.undefined)
     
     @scala.inline
-    def deleteHead: Self = this.set("Head", js.undefined)
+    def setMain(value: Boolean): Self = StObject.set(x, "Main", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml(value: Boolean): Self = this.set("Html", value.asInstanceOf[js.Any])
+    def setMainUndefined: Self = StObject.set(x, "Main", js.undefined)
     
     @scala.inline
-    def deleteHtml: Self = this.set("Html", js.undefined)
+    def setNextScript(value: Boolean): Self = StObject.set(x, "NextScript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMain(value: Boolean): Self = this.set("Main", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMain: Self = this.set("Main", js.undefined)
-    
-    @scala.inline
-    def setNextScript(value: Boolean): Self = this.set("NextScript", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextScript: Self = this.set("NextScript", js.undefined)
+    def setNextScriptUndefined: Self = StObject.set(x, "NextScript", js.undefined)
   }
 }

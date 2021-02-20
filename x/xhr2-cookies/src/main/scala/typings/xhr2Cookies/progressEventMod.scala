@@ -1,16 +1,16 @@
 package typings.xhr2Cookies
 
 import typings.xhr2Cookies.xmlHttpRequestEventTargetMod.XMLHttpRequestEventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xhr2-cookies/dist/progress-event", JSImport.Namespace)
-@js.native
-object progressEventMod extends js.Object {
+object progressEventMod {
   
+  @JSImport("xhr2-cookies/dist/progress-event", "ProgressEvent")
   @js.native
-  class ProgressEvent protected () extends js.Object {
+  class ProgressEvent protected () extends StObject {
     def this(`type`: String) = this()
     
     var bubbles: Boolean = js.native

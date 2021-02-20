@@ -1,12 +1,13 @@
 package typings.novaEditorNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/issue/
 @js.native
-trait Issue extends js.Object {
+trait Issue extends StObject {
   
   var code: Double | String = js.native
   
@@ -35,63 +36,51 @@ object Issue {
   }
   
   @scala.inline
-  implicit class IssueOps[Self <: Issue] (val x: Self) extends AnyVal {
+  implicit class IssueMutableBuilder[Self <: Issue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: Double | String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
     @scala.inline
-    def setCode(value: Double | String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setEndColumnUndefined: Self = StObject.set(x, "endColumn", js.undefined)
     
     @scala.inline
-    def setSeverity(value: IssueSeverity): Self = this.set("severity", value.asInstanceOf[js.Any])
+    def setEndLine(value: Double): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: Double): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setEndLineUndefined: Self = StObject.set(x, "endLine", js.undefined)
     
     @scala.inline
-    def deleteColumn: Self = this.set("column", js.undefined)
+    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndColumn(value: Double): Self = this.set("endColumn", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteEndColumn: Self = this.set("endColumn", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndLine(value: Double): Self = this.set("endLine", value.asInstanceOf[js.Any])
+    def setSeverity(value: IssueSeverity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndLine: Self = this.set("endLine", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: Double): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setSourceNull: Self = StObject.set(x, "source", null)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setTextRange(value: Range): Self = StObject.set(x, "textRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceNull: Self = this.set("source", null)
-    
-    @scala.inline
-    def setTextRange(value: Range): Self = this.set("textRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextRange: Self = this.set("textRange", js.undefined)
+    def setTextRangeUndefined: Self = StObject.set(x, "textRange", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchTablesResponse extends js.Object {
+trait SearchTablesResponse extends StObject {
   
   /**
     * A continuation token, present if the current list segment is not the last.
@@ -26,33 +27,21 @@ object SearchTablesResponse {
   }
   
   @scala.inline
-  implicit class SearchTablesResponseOps[Self <: SearchTablesResponse] (val x: Self) extends AnyVal {
+  implicit class SearchTablesResponseMutableBuilder[Self <: SearchTablesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTableList(value: TableList): Self = StObject.set(x, "TableList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setTableListUndefined: Self = StObject.set(x, "TableList", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setTableListVarargs(value: Table*): Self = this.set("TableList", js.Array(value :_*))
-    
-    @scala.inline
-    def setTableList(value: TableList): Self = this.set("TableList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableList: Self = this.set("TableList", js.undefined)
+    def setTableListVarargs(value: Table*): Self = StObject.set(x, "TableList", js.Array(value :_*))
   }
 }

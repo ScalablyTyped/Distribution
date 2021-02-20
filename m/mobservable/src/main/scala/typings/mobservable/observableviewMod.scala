@@ -4,16 +4,14 @@ import typings.mobservable.dnodeMod.ViewNode
 import typings.mobservable.interfacesMod.IContextInfoStruct
 import typings.mobservable.interfacesMod.Lambda
 import typings.mobservable.simpleeventemitterMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobservable/lib/observableview", JSImport.Namespace)
-@js.native
-object observableviewMod extends js.Object {
+object observableviewMod {
   
-  def throwingViewSetter(name: js.Any): Lambda = js.native
-  
+  @JSImport("mobservable/lib/observableview", "ObservableView")
   @js.native
   class ObservableView[T] protected () extends ViewNode {
     def this(func: js.Function0[T], scope: js.Object, context: IContextInfoStruct, compareStructural: Boolean) = this()
@@ -37,4 +35,8 @@ object observableviewMod extends js.Object {
     
     def set(x: js.Any): Unit = js.native
   }
+  
+  @JSImport("mobservable/lib/observableview", "throwingViewSetter")
+  @js.native
+  def throwingViewSetter(name: js.Any): Lambda = js.native
 }

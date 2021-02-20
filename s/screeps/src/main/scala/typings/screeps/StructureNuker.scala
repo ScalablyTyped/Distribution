@@ -1,6 +1,7 @@
 package typings.screeps
 
 import typings.screeps.anon.StoreRESOURCEENERGYRESOURAlloy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -87,39 +88,27 @@ object StructureNuker {
   }
   
   @scala.inline
-  implicit class StructureNukerOps[Self <: StructureNuker] (val x: Self) extends AnyVal {
+  implicit class StructureNukerMutableBuilder[Self <: StructureNuker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCooldown(value: Double): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnergyCapacity(value: Double): Self = StObject.set(x, "energyCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCooldown(value: Double): Self = this.set("cooldown", value.asInstanceOf[js.Any])
+    def setGhodium(value: Double): Self = StObject.set(x, "ghodium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnergy(value: Double): Self = this.set("energy", value.asInstanceOf[js.Any])
+    def setGhodiumCapacity(value: Double): Self = StObject.set(x, "ghodiumCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnergyCapacity(value: Double): Self = this.set("energyCapacity", value.asInstanceOf[js.Any])
+    def setLaunchNuke(value: RoomPosition => ScreepsReturnCode): Self = StObject.set(x, "launchNuke", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGhodium(value: Double): Self = this.set("ghodium", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGhodiumCapacity(value: Double): Self = this.set("ghodiumCapacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLaunchNuke(value: RoomPosition => ScreepsReturnCode): Self = this.set("launchNuke", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStore(value: StoreRESOURCEENERGYRESOURAlloy): Self = this.set("store", value.asInstanceOf[js.Any])
+    def setStore(value: StoreRESOURCEENERGYRESOURAlloy): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
   }
 }

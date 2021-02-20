@@ -4,6 +4,7 @@ import typings.memfs.setTimeoutUnrefMod.TSetTimeout
 import typings.memfs.statsMod.TStatNumber
 import typings.memfs.statsMod.default
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

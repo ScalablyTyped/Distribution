@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.CSS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.inspector
   - typings.devtoolsProtocol.devtoolsProtocolStrings.regular
 */
-trait StyleSheetOrigin extends js.Object
+trait StyleSheetOrigin extends StObject
 object StyleSheetOrigin {
   
   @scala.inline

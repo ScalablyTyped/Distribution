@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReverseSshConnectivity extends js.Object {
+trait ReverseSshConnectivity extends StObject {
   
   /** The name of the virtual machine (Compute Engine) used as the bastion server for the SSH tunnel. */
   var vm: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object ReverseSshConnectivity {
   }
   
   @scala.inline
-  implicit class ReverseSshConnectivityOps[Self <: ReverseSshConnectivity] (val x: Self) extends AnyVal {
+  implicit class ReverseSshConnectivityMutableBuilder[Self <: ReverseSshConnectivity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVm(value: String): Self = StObject.set(x, "vm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVmIp(value: String): Self = StObject.set(x, "vmIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVmIpUndefined: Self = StObject.set(x, "vmIp", js.undefined)
     
     @scala.inline
-    def setVm(value: String): Self = this.set("vm", value.asInstanceOf[js.Any])
+    def setVmPort(value: Double): Self = StObject.set(x, "vmPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVm: Self = this.set("vm", js.undefined)
+    def setVmPortUndefined: Self = StObject.set(x, "vmPort", js.undefined)
     
     @scala.inline
-    def setVmIp(value: String): Self = this.set("vmIp", value.asInstanceOf[js.Any])
+    def setVmUndefined: Self = StObject.set(x, "vm", js.undefined)
     
     @scala.inline
-    def deleteVmIp: Self = this.set("vmIp", js.undefined)
+    def setVpc(value: String): Self = StObject.set(x, "vpc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVmPort(value: Double): Self = this.set("vmPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVmPort: Self = this.set("vmPort", js.undefined)
-    
-    @scala.inline
-    def setVpc(value: String): Self = this.set("vpc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpc: Self = this.set("vpc", js.undefined)
+    def setVpcUndefined: Self = StObject.set(x, "vpc", js.undefined)
   }
 }

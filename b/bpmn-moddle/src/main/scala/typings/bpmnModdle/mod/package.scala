@@ -1,5 +1,6 @@
 package typings.bpmnModdle
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -102,6 +103,9 @@ package object mod {
   
   // tslint:disable-next-line:no-empty-interface
   type LoopCharacteristics = typings.bpmnModdle.mod.BaseElement
+  
+  // tslint:disable-next-line:no-empty-interface
+  type ManualTask = typings.bpmnModdle.mod.Task
   
   // tslint:disable-next-line:no-empty-interface
   type Monitoring = typings.bpmnModdle.mod.BaseElement

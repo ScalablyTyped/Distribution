@@ -1,11 +1,12 @@
 package typings.playcanvas.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ForceWebAudioApi extends js.Object {
+trait ForceWebAudioApi extends StObject {
   
   var forceWebAudioApi: js.UndefOr[Boolean] = js.native
 }
@@ -18,24 +19,12 @@ object ForceWebAudioApi {
   }
   
   @scala.inline
-  implicit class ForceWebAudioApiOps[Self <: ForceWebAudioApi] (val x: Self) extends AnyVal {
+  implicit class ForceWebAudioApiMutableBuilder[Self <: ForceWebAudioApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForceWebAudioApi(value: Boolean): Self = StObject.set(x, "forceWebAudioApi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setForceWebAudioApi(value: Boolean): Self = this.set("forceWebAudioApi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceWebAudioApi: Self = this.set("forceWebAudioApi", js.undefined)
+    def setForceWebAudioApiUndefined: Self = StObject.set(x, "forceWebAudioApi", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnomalyScore extends js.Object {
+trait AnomalyScore extends StObject {
   
   /**
     *  The last observed score. 
@@ -26,24 +27,12 @@ object AnomalyScore {
   }
   
   @scala.inline
-  implicit class AnomalyScoreOps[Self <: AnomalyScore] (val x: Self) extends AnyVal {
+  implicit class AnomalyScoreMutableBuilder[Self <: AnomalyScore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentScore(value: GenericDouble): Self = StObject.set(x, "CurrentScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrentScore(value: GenericDouble): Self = this.set("CurrentScore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxScore(value: GenericDouble): Self = this.set("MaxScore", value.asInstanceOf[js.Any])
+    def setMaxScore(value: GenericDouble): Self = StObject.set(x, "MaxScore", value.asInstanceOf[js.Any])
   }
 }

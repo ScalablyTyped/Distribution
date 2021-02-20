@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.drawing.framework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The listeners are called in the order in which they are registered.
   */
 @js.native
-trait XConfigurationControllerBroadcaster extends js.Object {
+trait XConfigurationControllerBroadcaster extends StObject {
   
   /**
     * Add a new listener for configuration changes.
@@ -46,27 +47,15 @@ object XConfigurationControllerBroadcaster {
   }
   
   @scala.inline
-  implicit class XConfigurationControllerBroadcasterOps[Self <: XConfigurationControllerBroadcaster] (val x: Self) extends AnyVal {
+  implicit class XConfigurationControllerBroadcasterMutableBuilder[Self <: XConfigurationControllerBroadcaster] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddConfigurationChangeListener(value: (XConfigurationChangeListener, String, js.Any) => Unit): Self = StObject.set(x, "addConfigurationChangeListener", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotifyEvent(value: ConfigurationChangeEvent => Unit): Self = StObject.set(x, "notifyEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddConfigurationChangeListener(value: (XConfigurationChangeListener, String, js.Any) => Unit): Self = this.set("addConfigurationChangeListener", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setNotifyEvent(value: ConfigurationChangeEvent => Unit): Self = this.set("notifyEvent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveConfigurationChangeListener(value: XConfigurationChangeListener => Unit): Self = this.set("removeConfigurationChangeListener", js.Any.fromFunction1(value))
+    def setRemoveConfigurationChangeListener(value: XConfigurationChangeListener => Unit): Self = StObject.set(x, "removeConfigurationChangeListener", js.Any.fromFunction1(value))
   }
 }

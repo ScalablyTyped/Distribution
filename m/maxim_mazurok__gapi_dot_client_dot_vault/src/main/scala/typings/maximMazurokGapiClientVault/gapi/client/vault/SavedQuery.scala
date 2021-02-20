@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVault.gapi.client.vault
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SavedQuery extends js.Object {
+trait SavedQuery extends StObject {
   
   /** Output only. The server generated timestamp at which saved query was created. */
   var createTime: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object SavedQuery {
   }
   
   @scala.inline
-  implicit class SavedQueryOps[Self <: SavedQuery] (val x: Self) extends AnyVal {
+  implicit class SavedQueryMutableBuilder[Self <: SavedQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setMatterId(value: String): Self = StObject.set(x, "matterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setMatterIdUndefined: Self = StObject.set(x, "matterId", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatterId(value: String): Self = this.set("matterId", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deleteMatterId: Self = this.set("matterId", js.undefined)
+    def setSavedQueryId(value: String): Self = StObject.set(x, "savedQueryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: Query): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
-    
-    @scala.inline
-    def setSavedQueryId(value: String): Self = this.set("savedQueryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSavedQueryId: Self = this.set("savedQueryId", js.undefined)
+    def setSavedQueryIdUndefined: Self = StObject.set(x, "savedQueryId", js.undefined)
   }
 }

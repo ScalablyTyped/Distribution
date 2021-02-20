@@ -1,11 +1,12 @@
 package typings.awsSdk.ramMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetResourceShareAssociationsRequest extends js.Object {
+trait GetResourceShareAssociationsRequest extends StObject {
   
   /**
     * The association status.
@@ -51,60 +52,48 @@ object GetResourceShareAssociationsRequest {
   }
   
   @scala.inline
-  implicit class GetResourceShareAssociationsRequestOps[Self <: GetResourceShareAssociationsRequest] (val x: Self) extends AnyVal {
+  implicit class GetResourceShareAssociationsRequestMutableBuilder[Self <: GetResourceShareAssociationsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociationStatus(value: ResourceShareAssociationStatus): Self = StObject.set(x, "associationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociationStatusUndefined: Self = StObject.set(x, "associationStatus", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssociationType(value: ResourceShareAssociationType): Self = StObject.set(x, "associationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationType(value: ResourceShareAssociationType): Self = this.set("associationType", value.asInstanceOf[js.Any])
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationStatus(value: ResourceShareAssociationStatus): Self = this.set("associationStatus", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteAssociationStatus: Self = this.set("associationStatus", js.undefined)
+    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setPrincipal(value: String): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipal(value: String): Self = this.set("principal", value.asInstanceOf[js.Any])
+    def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
     
     @scala.inline
-    def deletePrincipal: Self = this.set("principal", js.undefined)
+    def setResourceShareArns(value: ResourceShareArnList): Self = StObject.set(x, "resourceShareArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceArn(value: String): Self = this.set("resourceArn", value.asInstanceOf[js.Any])
+    def setResourceShareArnsUndefined: Self = StObject.set(x, "resourceShareArns", js.undefined)
     
     @scala.inline
-    def deleteResourceArn: Self = this.set("resourceArn", js.undefined)
-    
-    @scala.inline
-    def setResourceShareArnsVarargs(value: String*): Self = this.set("resourceShareArns", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceShareArns(value: ResourceShareArnList): Self = this.set("resourceShareArns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceShareArns: Self = this.set("resourceShareArns", js.undefined)
+    def setResourceShareArnsVarargs(value: String*): Self = StObject.set(x, "resourceShareArns", js.Array(value :_*))
   }
 }

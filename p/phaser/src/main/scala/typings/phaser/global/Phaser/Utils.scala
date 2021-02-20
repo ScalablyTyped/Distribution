@@ -2,24 +2,14 @@ package typings.phaser.global.Phaser
 
 import typings.phaser.integer
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Utils")
-@js.native
-object Utils extends js.Object {
+object Utils {
   
-  /**
-    * A NOOP (No Operation) callback function.
-    * 
-    * Used internally by Phaser when it's more expensive to determine if a callback exists
-    * than it is to just invoke an empty function.
-    */
-  def NOOP(): Unit = js.native
-  
-  @js.native
-  object Array extends js.Object {
+  object Array {
     
     /**
       * Adds the given item, or array of items, to the array.
@@ -38,7 +28,11 @@ object Utils extends js.Object {
       * @param callback A callback to be invoked for each item successfully added to the array.
       * @param context The context in which the callback is invoked.
       */
+    @JSGlobal("Phaser.Utils.Array.Add")
+    @js.native
     def Add(array: js.Array[_], item: js.Any): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Add")
+    @js.native
     def Add(
       array: js.Array[_],
       item: js.Any,
@@ -46,7 +40,11 @@ object Utils extends js.Object {
       callback: js.UndefOr[scala.Nothing],
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Add")
+    @js.native
     def Add(array: js.Array[_], item: js.Any, limit: js.UndefOr[scala.Nothing], callback: js.Function): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Add")
+    @js.native
     def Add(
       array: js.Array[_],
       item: js.Any,
@@ -54,7 +52,11 @@ object Utils extends js.Object {
       callback: js.Function,
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Add")
+    @js.native
     def Add(array: js.Array[_], item: js.Any, limit: integer): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Add")
+    @js.native
     def Add(
       array: js.Array[_],
       item: js.Any,
@@ -62,9 +64,17 @@ object Utils extends js.Object {
       callback: js.UndefOr[scala.Nothing],
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Add")
+    @js.native
     def Add(array: js.Array[_], item: js.Any, limit: integer, callback: js.Function): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Add")
+    @js.native
     def Add(array: js.Array[_], item: js.Any, limit: integer, callback: js.Function, context: js.Object): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Add")
+    @js.native
     def Add(array: js.Array[_], item: js.Array[_]): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Add")
+    @js.native
     def Add(
       array: js.Array[_],
       item: js.Array[_],
@@ -72,7 +82,11 @@ object Utils extends js.Object {
       callback: js.UndefOr[scala.Nothing],
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Add")
+    @js.native
     def Add(array: js.Array[_], item: js.Array[_], limit: js.UndefOr[scala.Nothing], callback: js.Function): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Add")
+    @js.native
     def Add(
       array: js.Array[_],
       item: js.Array[_],
@@ -80,7 +94,11 @@ object Utils extends js.Object {
       callback: js.Function,
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Add")
+    @js.native
     def Add(array: js.Array[_], item: js.Array[_], limit: integer): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Add")
+    @js.native
     def Add(
       array: js.Array[_],
       item: js.Array[_],
@@ -88,7 +106,11 @@ object Utils extends js.Object {
       callback: js.UndefOr[scala.Nothing],
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Add")
+    @js.native
     def Add(array: js.Array[_], item: js.Array[_], limit: integer, callback: js.Function): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Add")
+    @js.native
     def Add(array: js.Array[_], item: js.Array[_], limit: integer, callback: js.Function, context: js.Object): js.Array[_] = js.native
     
     /**
@@ -111,7 +133,11 @@ object Utils extends js.Object {
       * @param callback A callback to be invoked for each item successfully added to the array.
       * @param context The context in which the callback is invoked.
       */
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(array: js.Array[_], item: js.Any): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Any,
@@ -120,6 +146,8 @@ object Utils extends js.Object {
       callback: js.UndefOr[scala.Nothing],
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Any,
@@ -127,6 +155,8 @@ object Utils extends js.Object {
       limit: js.UndefOr[scala.Nothing],
       callback: js.Function
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Any,
@@ -135,7 +165,11 @@ object Utils extends js.Object {
       callback: js.Function,
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(array: js.Array[_], item: js.Any, index: js.UndefOr[scala.Nothing], limit: integer): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Any,
@@ -144,6 +178,8 @@ object Utils extends js.Object {
       callback: js.UndefOr[scala.Nothing],
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Any,
@@ -151,6 +187,8 @@ object Utils extends js.Object {
       limit: integer,
       callback: js.Function
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Any,
@@ -159,7 +197,11 @@ object Utils extends js.Object {
       callback: js.Function,
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(array: js.Array[_], item: js.Any, index: integer): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Any,
@@ -168,6 +210,8 @@ object Utils extends js.Object {
       callback: js.UndefOr[scala.Nothing],
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Any,
@@ -175,6 +219,8 @@ object Utils extends js.Object {
       limit: js.UndefOr[scala.Nothing],
       callback: js.Function
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Any,
@@ -183,7 +229,11 @@ object Utils extends js.Object {
       callback: js.Function,
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(array: js.Array[_], item: js.Any, index: integer, limit: integer): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Any,
@@ -192,7 +242,11 @@ object Utils extends js.Object {
       callback: js.UndefOr[scala.Nothing],
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(array: js.Array[_], item: js.Any, index: integer, limit: integer, callback: js.Function): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Any,
@@ -201,7 +255,11 @@ object Utils extends js.Object {
       callback: js.Function,
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(array: js.Array[_], item: js.Array[_]): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Array[_],
@@ -210,6 +268,8 @@ object Utils extends js.Object {
       callback: js.UndefOr[scala.Nothing],
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Array[_],
@@ -217,6 +277,8 @@ object Utils extends js.Object {
       limit: js.UndefOr[scala.Nothing],
       callback: js.Function
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Array[_],
@@ -225,7 +287,11 @@ object Utils extends js.Object {
       callback: js.Function,
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(array: js.Array[_], item: js.Array[_], index: js.UndefOr[scala.Nothing], limit: integer): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Array[_],
@@ -234,6 +300,8 @@ object Utils extends js.Object {
       callback: js.UndefOr[scala.Nothing],
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Array[_],
@@ -241,6 +309,8 @@ object Utils extends js.Object {
       limit: integer,
       callback: js.Function
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Array[_],
@@ -249,7 +319,11 @@ object Utils extends js.Object {
       callback: js.Function,
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(array: js.Array[_], item: js.Array[_], index: integer): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Array[_],
@@ -258,6 +332,8 @@ object Utils extends js.Object {
       callback: js.UndefOr[scala.Nothing],
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Array[_],
@@ -265,6 +341,8 @@ object Utils extends js.Object {
       limit: js.UndefOr[scala.Nothing],
       callback: js.Function
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Array[_],
@@ -273,7 +351,11 @@ object Utils extends js.Object {
       callback: js.Function,
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(array: js.Array[_], item: js.Array[_], index: integer, limit: integer): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Array[_],
@@ -282,7 +364,11 @@ object Utils extends js.Object {
       callback: js.UndefOr[scala.Nothing],
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(array: js.Array[_], item: js.Array[_], index: integer, limit: integer, callback: js.Function): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.AddAt")
+    @js.native
     def AddAt(
       array: js.Array[_],
       item: js.Array[_],
@@ -298,6 +384,8 @@ object Utils extends js.Object {
       * @param array The array.
       * @param item The element to move.
       */
+    @JSGlobal("Phaser.Utils.Array.BringToTop")
+    @js.native
     def BringToTop(array: js.Array[_], item: js.Any): js.Any = js.native
     
     /**
@@ -308,7 +396,11 @@ object Utils extends js.Object {
       * @param startIndex An optional start index to search from.
       * @param endIndex An optional end index to search to.
       */
+    @JSGlobal("Phaser.Utils.Array.CountAllMatching")
+    @js.native
     def CountAllMatching(array: js.Array[_], property: String, value: js.Any): integer = js.native
+    @JSGlobal("Phaser.Utils.Array.CountAllMatching")
+    @js.native
     def CountAllMatching(
       array: js.Array[_],
       property: String,
@@ -316,7 +408,11 @@ object Utils extends js.Object {
       startIndex: js.UndefOr[scala.Nothing],
       endIndex: integer
     ): integer = js.native
+    @JSGlobal("Phaser.Utils.Array.CountAllMatching")
+    @js.native
     def CountAllMatching(array: js.Array[_], property: String, value: js.Any, startIndex: integer): integer = js.native
+    @JSGlobal("Phaser.Utils.Array.CountAllMatching")
+    @js.native
     def CountAllMatching(array: js.Array[_], property: String, value: js.Any, startIndex: integer, endIndex: integer): integer = js.native
     
     /**
@@ -326,6 +422,8 @@ object Utils extends js.Object {
       * @param context The context in which the callback is invoked.
       * @param args Additional arguments that will be passed to the callback, after the current array item.
       */
+    @JSGlobal("Phaser.Utils.Array.Each")
+    @js.native
     def Each(array: js.Array[_], callback: js.Function, context: js.Object, args: js.Any*): js.Array[_] = js.native
     
     /**
@@ -337,6 +435,8 @@ object Utils extends js.Object {
       * @param endIndex The end index to search to.
       * @param args Additional arguments that will be passed to the callback, after the child.
       */
+    @JSGlobal("Phaser.Utils.Array.EachInRange")
+    @js.native
     def EachInRange(
       array: js.Array[_],
       callback: js.Function,
@@ -355,7 +455,11 @@ object Utils extends js.Object {
       * @param array The array to search, which must be sorted.
       * @param key An optional property key. If specified the array elements property will be checked against value.
       */
+    @JSGlobal("Phaser.Utils.Array.FindClosestInSorted")
+    @js.native
     def FindClosestInSorted(value: Double, array: js.Array[_]): Double | js.Any = js.native
+    @JSGlobal("Phaser.Utils.Array.FindClosestInSorted")
+    @js.native
     def FindClosestInSorted(value: Double, array: js.Array[_], key: String): Double | js.Any = js.native
     
     /**
@@ -374,7 +478,11 @@ object Utils extends js.Object {
       * @param startIndex An optional start index to search from.
       * @param endIndex An optional end index to search to.
       */
+    @JSGlobal("Phaser.Utils.Array.GetAll")
+    @js.native
     def GetAll(array: js.Array[_]): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.GetAll")
+    @js.native
     def GetAll(
       array: js.Array[_],
       property: js.UndefOr[scala.Nothing],
@@ -382,12 +490,16 @@ object Utils extends js.Object {
       startIndex: js.UndefOr[scala.Nothing],
       endIndex: integer
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.GetAll")
+    @js.native
     def GetAll(
       array: js.Array[_],
       property: js.UndefOr[scala.Nothing],
       value: js.UndefOr[scala.Nothing],
       startIndex: integer
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.GetAll")
+    @js.native
     def GetAll(
       array: js.Array[_],
       property: js.UndefOr[scala.Nothing],
@@ -395,7 +507,11 @@ object Utils extends js.Object {
       startIndex: integer,
       endIndex: integer
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.GetAll")
+    @js.native
     def GetAll(array: js.Array[_], property: js.UndefOr[scala.Nothing], value: js.Any): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.GetAll")
+    @js.native
     def GetAll(
       array: js.Array[_],
       property: js.UndefOr[scala.Nothing],
@@ -403,7 +519,11 @@ object Utils extends js.Object {
       startIndex: js.UndefOr[scala.Nothing],
       endIndex: integer
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.GetAll")
+    @js.native
     def GetAll(array: js.Array[_], property: js.UndefOr[scala.Nothing], value: js.Any, startIndex: integer): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.GetAll")
+    @js.native
     def GetAll(
       array: js.Array[_],
       property: js.UndefOr[scala.Nothing],
@@ -411,7 +531,11 @@ object Utils extends js.Object {
       startIndex: integer,
       endIndex: integer
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.GetAll")
+    @js.native
     def GetAll(array: js.Array[_], property: String): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.GetAll")
+    @js.native
     def GetAll(
       array: js.Array[_],
       property: String,
@@ -419,7 +543,11 @@ object Utils extends js.Object {
       startIndex: js.UndefOr[scala.Nothing],
       endIndex: integer
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.GetAll")
+    @js.native
     def GetAll(array: js.Array[_], property: String, value: js.UndefOr[scala.Nothing], startIndex: integer): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.GetAll")
+    @js.native
     def GetAll(
       array: js.Array[_],
       property: String,
@@ -427,7 +555,11 @@ object Utils extends js.Object {
       startIndex: integer,
       endIndex: integer
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.GetAll")
+    @js.native
     def GetAll(array: js.Array[_], property: String, value: js.Any): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.GetAll")
+    @js.native
     def GetAll(
       array: js.Array[_],
       property: String,
@@ -435,7 +567,11 @@ object Utils extends js.Object {
       startIndex: js.UndefOr[scala.Nothing],
       endIndex: integer
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.GetAll")
+    @js.native
     def GetAll(array: js.Array[_], property: String, value: js.Any, startIndex: integer): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.GetAll")
+    @js.native
     def GetAll(array: js.Array[_], property: String, value: js.Any, startIndex: integer, endIndex: integer): js.Array[_] = js.native
     
     /**
@@ -453,7 +589,11 @@ object Utils extends js.Object {
       * @param startIndex An optional start index to search from. Default 0.
       * @param endIndex An optional end index to search up to (but not included) Default array.length.
       */
+    @JSGlobal("Phaser.Utils.Array.GetFirst")
+    @js.native
     def GetFirst(array: js.Array[_]): js.Object = js.native
+    @JSGlobal("Phaser.Utils.Array.GetFirst")
+    @js.native
     def GetFirst(
       array: js.Array[_],
       property: js.UndefOr[scala.Nothing],
@@ -461,12 +601,16 @@ object Utils extends js.Object {
       startIndex: js.UndefOr[scala.Nothing],
       endIndex: integer
     ): js.Object = js.native
+    @JSGlobal("Phaser.Utils.Array.GetFirst")
+    @js.native
     def GetFirst(
       array: js.Array[_],
       property: js.UndefOr[scala.Nothing],
       value: js.UndefOr[scala.Nothing],
       startIndex: integer
     ): js.Object = js.native
+    @JSGlobal("Phaser.Utils.Array.GetFirst")
+    @js.native
     def GetFirst(
       array: js.Array[_],
       property: js.UndefOr[scala.Nothing],
@@ -474,7 +618,11 @@ object Utils extends js.Object {
       startIndex: integer,
       endIndex: integer
     ): js.Object = js.native
+    @JSGlobal("Phaser.Utils.Array.GetFirst")
+    @js.native
     def GetFirst(array: js.Array[_], property: js.UndefOr[scala.Nothing], value: js.Any): js.Object = js.native
+    @JSGlobal("Phaser.Utils.Array.GetFirst")
+    @js.native
     def GetFirst(
       array: js.Array[_],
       property: js.UndefOr[scala.Nothing],
@@ -482,7 +630,11 @@ object Utils extends js.Object {
       startIndex: js.UndefOr[scala.Nothing],
       endIndex: integer
     ): js.Object = js.native
+    @JSGlobal("Phaser.Utils.Array.GetFirst")
+    @js.native
     def GetFirst(array: js.Array[_], property: js.UndefOr[scala.Nothing], value: js.Any, startIndex: integer): js.Object = js.native
+    @JSGlobal("Phaser.Utils.Array.GetFirst")
+    @js.native
     def GetFirst(
       array: js.Array[_],
       property: js.UndefOr[scala.Nothing],
@@ -490,7 +642,11 @@ object Utils extends js.Object {
       startIndex: integer,
       endIndex: integer
     ): js.Object = js.native
+    @JSGlobal("Phaser.Utils.Array.GetFirst")
+    @js.native
     def GetFirst(array: js.Array[_], property: String): js.Object = js.native
+    @JSGlobal("Phaser.Utils.Array.GetFirst")
+    @js.native
     def GetFirst(
       array: js.Array[_],
       property: String,
@@ -498,7 +654,11 @@ object Utils extends js.Object {
       startIndex: js.UndefOr[scala.Nothing],
       endIndex: integer
     ): js.Object = js.native
+    @JSGlobal("Phaser.Utils.Array.GetFirst")
+    @js.native
     def GetFirst(array: js.Array[_], property: String, value: js.UndefOr[scala.Nothing], startIndex: integer): js.Object = js.native
+    @JSGlobal("Phaser.Utils.Array.GetFirst")
+    @js.native
     def GetFirst(
       array: js.Array[_],
       property: String,
@@ -506,7 +666,11 @@ object Utils extends js.Object {
       startIndex: integer,
       endIndex: integer
     ): js.Object = js.native
+    @JSGlobal("Phaser.Utils.Array.GetFirst")
+    @js.native
     def GetFirst(array: js.Array[_], property: String, value: js.Any): js.Object = js.native
+    @JSGlobal("Phaser.Utils.Array.GetFirst")
+    @js.native
     def GetFirst(
       array: js.Array[_],
       property: String,
@@ -514,7 +678,11 @@ object Utils extends js.Object {
       startIndex: js.UndefOr[scala.Nothing],
       endIndex: integer
     ): js.Object = js.native
+    @JSGlobal("Phaser.Utils.Array.GetFirst")
+    @js.native
     def GetFirst(array: js.Array[_], property: String, value: js.Any, startIndex: integer): js.Object = js.native
+    @JSGlobal("Phaser.Utils.Array.GetFirst")
+    @js.native
     def GetFirst(array: js.Array[_], property: String, value: js.Any, startIndex: integer, endIndex: integer): js.Object = js.native
     
     /**
@@ -523,10 +691,153 @@ object Utils extends js.Object {
       * @param startIndex An optional start index. Default 0.
       * @param length An optional length, the total number of elements (from the startIndex) to choose from. Default array.length.
       */
+    @JSGlobal("Phaser.Utils.Array.GetRandom")
+    @js.native
     def GetRandom(array: js.Array[_]): js.Any = js.native
+    @JSGlobal("Phaser.Utils.Array.GetRandom")
+    @js.native
     def GetRandom(array: js.Array[_], startIndex: js.UndefOr[scala.Nothing], length: integer): js.Any = js.native
+    @JSGlobal("Phaser.Utils.Array.GetRandom")
+    @js.native
     def GetRandom(array: js.Array[_], startIndex: integer): js.Any = js.native
+    @JSGlobal("Phaser.Utils.Array.GetRandom")
+    @js.native
     def GetRandom(array: js.Array[_], startIndex: integer, length: integer): js.Any = js.native
+    
+    object Matrix {
+      
+      /**
+        * Checks if an array can be used as a matrix.
+        * 
+        * A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows) have the same length. There must be at least two rows:
+        * 
+        * ```
+        *    [
+        *        [ 1, 1, 1, 1, 1, 1 ],
+        *        [ 2, 0, 0, 0, 0, 4 ],
+        *        [ 2, 0, 1, 2, 0, 4 ],
+        *        [ 2, 0, 3, 4, 0, 4 ],
+        *        [ 2, 0, 0, 0, 0, 4 ],
+        *        [ 3, 3, 3, 3, 3, 3 ]
+        *    ]
+        * ```
+        * @param matrix The array to check.
+        */
+      @JSGlobal("Phaser.Utils.Array.Matrix.CheckMatrix")
+      @js.native
+      def CheckMatrix[T](): Boolean = js.native
+      @JSGlobal("Phaser.Utils.Array.Matrix.CheckMatrix")
+      @js.native
+      def CheckMatrix[T](matrix: js.Array[js.Array[T]]): Boolean = js.native
+      
+      /**
+        * Generates a string (which you can pass to console.log) from the given Array Matrix.
+        * @param matrix A 2-dimensional array.
+        */
+      @JSGlobal("Phaser.Utils.Array.Matrix.MatrixToString")
+      @js.native
+      def MatrixToString[T](): String = js.native
+      @JSGlobal("Phaser.Utils.Array.Matrix.MatrixToString")
+      @js.native
+      def MatrixToString[T](matrix: js.Array[js.Array[T]]): String = js.native
+      
+      /**
+        * Reverses the columns in the given Array Matrix.
+        * @param matrix The array matrix to reverse the columns for.
+        */
+      @JSGlobal("Phaser.Utils.Array.Matrix.ReverseColumns")
+      @js.native
+      def ReverseColumns[T](): js.Array[js.Array[T]] = js.native
+      @JSGlobal("Phaser.Utils.Array.Matrix.ReverseColumns")
+      @js.native
+      def ReverseColumns[T](matrix: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
+      
+      /**
+        * Reverses the rows in the given Array Matrix.
+        * @param matrix The array matrix to reverse the rows for.
+        */
+      @JSGlobal("Phaser.Utils.Array.Matrix.ReverseRows")
+      @js.native
+      def ReverseRows[T](): js.Array[js.Array[T]] = js.native
+      @JSGlobal("Phaser.Utils.Array.Matrix.ReverseRows")
+      @js.native
+      def ReverseRows[T](matrix: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
+      
+      /**
+        * Rotates the array matrix 180 degrees.
+        * @param matrix The array to rotate.
+        */
+      @JSGlobal("Phaser.Utils.Array.Matrix.Rotate180")
+      @js.native
+      def Rotate180[T](): js.Array[js.Array[T]] = js.native
+      @JSGlobal("Phaser.Utils.Array.Matrix.Rotate180")
+      @js.native
+      def Rotate180[T](matrix: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
+      
+      /**
+        * Rotates the array matrix to the left (or 90 degrees)
+        * @param matrix The array to rotate.
+        */
+      @JSGlobal("Phaser.Utils.Array.Matrix.RotateLeft")
+      @js.native
+      def RotateLeft[T](): js.Array[js.Array[T]] = js.native
+      @JSGlobal("Phaser.Utils.Array.Matrix.RotateLeft")
+      @js.native
+      def RotateLeft[T](matrix: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
+      
+      /**
+        * Rotates the array matrix based on the given rotation value.
+        * 
+        * The value can be given in degrees: 90, -90, 270, -270 or 180,
+        * or a string command: `rotateLeft`, `rotateRight` or `rotate180`.
+        * 
+        * Based on the routine from {@link http://jsfiddle.net/MrPolywhirl/NH42z/}.
+        * @param matrix The array to rotate.
+        * @param direction The amount to rotate the matrix by. Default 90.
+        */
+      @JSGlobal("Phaser.Utils.Array.Matrix.RotateMatrix")
+      @js.native
+      def RotateMatrix[T](): js.Array[js.Array[T]] = js.native
+      @JSGlobal("Phaser.Utils.Array.Matrix.RotateMatrix")
+      @js.native
+      def RotateMatrix[T](matrix: js.UndefOr[scala.Nothing], direction: String): js.Array[js.Array[T]] = js.native
+      @JSGlobal("Phaser.Utils.Array.Matrix.RotateMatrix")
+      @js.native
+      def RotateMatrix[T](matrix: js.UndefOr[scala.Nothing], direction: Double): js.Array[js.Array[T]] = js.native
+      @JSGlobal("Phaser.Utils.Array.Matrix.RotateMatrix")
+      @js.native
+      def RotateMatrix[T](matrix: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
+      @JSGlobal("Phaser.Utils.Array.Matrix.RotateMatrix")
+      @js.native
+      def RotateMatrix[T](matrix: js.Array[js.Array[T]], direction: String): js.Array[js.Array[T]] = js.native
+      @JSGlobal("Phaser.Utils.Array.Matrix.RotateMatrix")
+      @js.native
+      def RotateMatrix[T](matrix: js.Array[js.Array[T]], direction: Double): js.Array[js.Array[T]] = js.native
+      
+      /**
+        * Rotates the array matrix to the left (or -90 degrees)
+        * @param matrix The array to rotate.
+        */
+      @JSGlobal("Phaser.Utils.Array.Matrix.RotateRight")
+      @js.native
+      def RotateRight[T](): js.Array[js.Array[T]] = js.native
+      @JSGlobal("Phaser.Utils.Array.Matrix.RotateRight")
+      @js.native
+      def RotateRight[T](matrix: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
+      
+      /**
+        * Transposes the elements of the given matrix (array of arrays).
+        * 
+        * The transpose of a matrix is a new matrix whose rows are the columns of the original.
+        * @param array The array matrix to transpose.
+        */
+      @JSGlobal("Phaser.Utils.Array.Matrix.TransposeMatrix")
+      @js.native
+      def TransposeMatrix[T](): js.Array[js.Array[T]] = js.native
+      @JSGlobal("Phaser.Utils.Array.Matrix.TransposeMatrix")
+      @js.native
+      def TransposeMatrix[T](array: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
+    }
     
     /**
       * Moves the given array element down one place in the array.
@@ -534,6 +845,8 @@ object Utils extends js.Object {
       * @param array The input array.
       * @param item The element to move down the array.
       */
+    @JSGlobal("Phaser.Utils.Array.MoveDown")
+    @js.native
     def MoveDown(array: js.Array[_], item: js.Any): js.Array[_] = js.native
     
     /**
@@ -543,6 +856,8 @@ object Utils extends js.Object {
       * @param item The element to move.
       * @param index The new index that the element will be moved to.
       */
+    @JSGlobal("Phaser.Utils.Array.MoveTo")
+    @js.native
     def MoveTo(array: js.Array[_], item: js.Any, index: integer): js.Any = js.native
     
     /**
@@ -551,6 +866,8 @@ object Utils extends js.Object {
       * @param array The input array.
       * @param item The element to move up the array.
       */
+    @JSGlobal("Phaser.Utils.Array.MoveUp")
+    @js.native
     def MoveUp(array: js.Array[_], item: js.Any): js.Array[_] = js.native
     
     /**
@@ -572,9 +889,17 @@ object Utils extends js.Object {
       * @param prefix Optional prefix to place before the number. If provided the array will contain strings, not integers.
       * @param suffix Optional suffix to place after the number. If provided the array will contain strings, not integers.
       */
+    @JSGlobal("Phaser.Utils.Array.NumberArray")
+    @js.native
     def NumberArray(start: Double, end: Double): js.Array[Double | String] = js.native
+    @JSGlobal("Phaser.Utils.Array.NumberArray")
+    @js.native
     def NumberArray(start: Double, end: Double, prefix: js.UndefOr[scala.Nothing], suffix: String): js.Array[Double | String] = js.native
+    @JSGlobal("Phaser.Utils.Array.NumberArray")
+    @js.native
     def NumberArray(start: Double, end: Double, prefix: String): js.Array[Double | String] = js.native
+    @JSGlobal("Phaser.Utils.Array.NumberArray")
+    @js.native
     def NumberArray(start: Double, end: Double, prefix: String, suffix: String): js.Array[Double | String] = js.native
     
     /**
@@ -589,13 +914,29 @@ object Utils extends js.Object {
       * @param end The end of the range. Default null.
       * @param step The value to increment or decrement by. Default 1.
       */
+    @JSGlobal("Phaser.Utils.Array.NumberArrayStep")
+    @js.native
     def NumberArrayStep(): js.Array[Double] = js.native
+    @JSGlobal("Phaser.Utils.Array.NumberArrayStep")
+    @js.native
     def NumberArrayStep(start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], step: Double): js.Array[Double] = js.native
+    @JSGlobal("Phaser.Utils.Array.NumberArrayStep")
+    @js.native
     def NumberArrayStep(start: js.UndefOr[scala.Nothing], end: Double): js.Array[Double] = js.native
+    @JSGlobal("Phaser.Utils.Array.NumberArrayStep")
+    @js.native
     def NumberArrayStep(start: js.UndefOr[scala.Nothing], end: Double, step: Double): js.Array[Double] = js.native
+    @JSGlobal("Phaser.Utils.Array.NumberArrayStep")
+    @js.native
     def NumberArrayStep(start: Double): js.Array[Double] = js.native
+    @JSGlobal("Phaser.Utils.Array.NumberArrayStep")
+    @js.native
     def NumberArrayStep(start: Double, end: js.UndefOr[scala.Nothing], step: Double): js.Array[Double] = js.native
+    @JSGlobal("Phaser.Utils.Array.NumberArrayStep")
+    @js.native
     def NumberArrayStep(start: Double, end: Double): js.Array[Double] = js.native
+    @JSGlobal("Phaser.Utils.Array.NumberArrayStep")
+    @js.native
     def NumberArrayStep(start: Double, end: Double, step: Double): js.Array[Double] = js.native
     
     /**
@@ -613,7 +954,11 @@ object Utils extends js.Object {
       * @param right The index of the right part of the range.
       * @param compare An optional comparison function. Is passed two elements and should return 0, 1 or -1.
       */
+    @JSGlobal("Phaser.Utils.Array.QuickSelect")
+    @js.native
     def QuickSelect(arr: js.Array[_], k: integer): Unit = js.native
+    @JSGlobal("Phaser.Utils.Array.QuickSelect")
+    @js.native
     def QuickSelect(
       arr: js.Array[_],
       k: integer,
@@ -621,7 +966,11 @@ object Utils extends js.Object {
       right: js.UndefOr[scala.Nothing],
       compare: js.Function
     ): Unit = js.native
+    @JSGlobal("Phaser.Utils.Array.QuickSelect")
+    @js.native
     def QuickSelect(arr: js.Array[_], k: integer, left: js.UndefOr[scala.Nothing], right: integer): Unit = js.native
+    @JSGlobal("Phaser.Utils.Array.QuickSelect")
+    @js.native
     def QuickSelect(
       arr: js.Array[_],
       k: integer,
@@ -629,7 +978,11 @@ object Utils extends js.Object {
       right: integer,
       compare: js.Function
     ): Unit = js.native
+    @JSGlobal("Phaser.Utils.Array.QuickSelect")
+    @js.native
     def QuickSelect(arr: js.Array[_], k: integer, left: integer): Unit = js.native
+    @JSGlobal("Phaser.Utils.Array.QuickSelect")
+    @js.native
     def QuickSelect(
       arr: js.Array[_],
       k: integer,
@@ -637,7 +990,11 @@ object Utils extends js.Object {
       right: js.UndefOr[scala.Nothing],
       compare: js.Function
     ): Unit = js.native
+    @JSGlobal("Phaser.Utils.Array.QuickSelect")
+    @js.native
     def QuickSelect(arr: js.Array[_], k: integer, left: integer, right: integer): Unit = js.native
+    @JSGlobal("Phaser.Utils.Array.QuickSelect")
+    @js.native
     def QuickSelect(arr: js.Array[_], k: integer, left: integer, right: integer, compare: js.Function): Unit = js.native
     
     /**
@@ -674,7 +1031,11 @@ object Utils extends js.Object {
       * @param b The second array of range elements.
       * @param options A range configuration object. Can contain: repeat, random, randomB, yoyo, max, qty.
       */
+    @JSGlobal("Phaser.Utils.Array.Range")
+    @js.native
     def Range(a: js.Array[_], b: js.Array[_]): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Range")
+    @js.native
     def Range(a: js.Array[_], b: js.Array[_], options: js.Object): js.Array[_] = js.native
     
     /**
@@ -688,13 +1049,29 @@ object Utils extends js.Object {
       * @param callback A callback to be invoked for each item successfully removed from the array.
       * @param context The context in which the callback is invoked.
       */
+    @JSGlobal("Phaser.Utils.Array.Remove")
+    @js.native
     def Remove(array: js.Array[_], item: js.Any): js.Any | js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Remove")
+    @js.native
     def Remove(array: js.Array[_], item: js.Any, callback: js.UndefOr[scala.Nothing], context: js.Object): js.Any | js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Remove")
+    @js.native
     def Remove(array: js.Array[_], item: js.Any, callback: js.Function): js.Any | js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Remove")
+    @js.native
     def Remove(array: js.Array[_], item: js.Any, callback: js.Function, context: js.Object): js.Any | js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Remove")
+    @js.native
     def Remove(array: js.Array[_], item: js.Array[_]): js.Any | js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Remove")
+    @js.native
     def Remove(array: js.Array[_], item: js.Array[_], callback: js.UndefOr[scala.Nothing], context: js.Object): js.Any | js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Remove")
+    @js.native
     def Remove(array: js.Array[_], item: js.Array[_], callback: js.Function): js.Any | js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.Remove")
+    @js.native
     def Remove(array: js.Array[_], item: js.Array[_], callback: js.Function, context: js.Object): js.Any | js.Array[_] = js.native
     
     /**
@@ -708,9 +1085,17 @@ object Utils extends js.Object {
       * @param callback A callback to be invoked for the item removed from the array.
       * @param context The context in which the callback is invoked.
       */
+    @JSGlobal("Phaser.Utils.Array.RemoveAt")
+    @js.native
     def RemoveAt(array: js.Array[_], index: integer): js.Any = js.native
+    @JSGlobal("Phaser.Utils.Array.RemoveAt")
+    @js.native
     def RemoveAt(array: js.Array[_], index: integer, callback: js.UndefOr[scala.Nothing], context: js.Object): js.Any = js.native
+    @JSGlobal("Phaser.Utils.Array.RemoveAt")
+    @js.native
     def RemoveAt(array: js.Array[_], index: integer, callback: js.Function): js.Any = js.native
+    @JSGlobal("Phaser.Utils.Array.RemoveAt")
+    @js.native
     def RemoveAt(array: js.Array[_], index: integer, callback: js.Function, context: js.Object): js.Any = js.native
     
     /**
@@ -725,7 +1110,11 @@ object Utils extends js.Object {
       * @param callback A callback to be invoked for the item removed from the array.
       * @param context The context in which the callback is invoked.
       */
+    @JSGlobal("Phaser.Utils.Array.RemoveBetween")
+    @js.native
     def RemoveBetween(array: js.Array[_], startIndex: integer, endIndex: integer): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.RemoveBetween")
+    @js.native
     def RemoveBetween(
       array: js.Array[_],
       startIndex: integer,
@@ -733,7 +1122,11 @@ object Utils extends js.Object {
       callback: js.UndefOr[scala.Nothing],
       context: js.Object
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.RemoveBetween")
+    @js.native
     def RemoveBetween(array: js.Array[_], startIndex: integer, endIndex: integer, callback: js.Function): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.RemoveBetween")
+    @js.native
     def RemoveBetween(
       array: js.Array[_],
       startIndex: integer,
@@ -749,9 +1142,17 @@ object Utils extends js.Object {
       * @param start The array index to start the search from. Default 0.
       * @param length Optional restriction on the number of elements to randomly select from. Default array.length.
       */
+    @JSGlobal("Phaser.Utils.Array.RemoveRandomElement")
+    @js.native
     def RemoveRandomElement(array: js.Array[_]): js.Object = js.native
+    @JSGlobal("Phaser.Utils.Array.RemoveRandomElement")
+    @js.native
     def RemoveRandomElement(array: js.Array[_], start: js.UndefOr[scala.Nothing], length: integer): js.Object = js.native
+    @JSGlobal("Phaser.Utils.Array.RemoveRandomElement")
+    @js.native
     def RemoveRandomElement(array: js.Array[_], start: integer): js.Object = js.native
+    @JSGlobal("Phaser.Utils.Array.RemoveRandomElement")
+    @js.native
     def RemoveRandomElement(array: js.Array[_], start: integer, length: integer): js.Object = js.native
     
     /**
@@ -762,6 +1163,8 @@ object Utils extends js.Object {
       * @param oldChild The element in the array that will be replaced.
       * @param newChild The element to be inserted into the array at the position of `oldChild`.
       */
+    @JSGlobal("Phaser.Utils.Array.Replace")
+    @js.native
     def Replace(array: js.Array[_], oldChild: js.Any, newChild: js.Any): Boolean = js.native
     
     /**
@@ -770,7 +1173,11 @@ object Utils extends js.Object {
       * @param array The array to shift to the left. This array is modified in place.
       * @param total The number of times to shift the array. Default 1.
       */
+    @JSGlobal("Phaser.Utils.Array.RotateLeft")
+    @js.native
     def RotateLeft(array: js.Array[_]): js.Any = js.native
+    @JSGlobal("Phaser.Utils.Array.RotateLeft")
+    @js.native
     def RotateLeft(array: js.Array[_], total: integer): js.Any = js.native
     
     /**
@@ -779,7 +1186,11 @@ object Utils extends js.Object {
       * @param array The array to shift to the right. This array is modified in place.
       * @param total The number of times to shift the array. Default 1.
       */
+    @JSGlobal("Phaser.Utils.Array.RotateRight")
+    @js.native
     def RotateRight(array: js.Array[_]): js.Any = js.native
+    @JSGlobal("Phaser.Utils.Array.RotateRight")
+    @js.native
     def RotateRight(array: js.Array[_], total: integer): js.Any = js.native
     
     /**
@@ -789,7 +1200,11 @@ object Utils extends js.Object {
       * @param endIndex The end index.
       * @param throwError Throw an error if the range is out of bounds. Default true.
       */
+    @JSGlobal("Phaser.Utils.Array.SafeRange")
+    @js.native
     def SafeRange(array: js.Array[_], startIndex: integer, endIndex: integer): Boolean = js.native
+    @JSGlobal("Phaser.Utils.Array.SafeRange")
+    @js.native
     def SafeRange(array: js.Array[_], startIndex: integer, endIndex: integer, throwError: Boolean): Boolean = js.native
     
     /**
@@ -798,6 +1213,8 @@ object Utils extends js.Object {
       * @param array The array.
       * @param item The element to move.
       */
+    @JSGlobal("Phaser.Utils.Array.SendToBack")
+    @js.native
     def SendToBack(array: js.Array[_], item: js.Any): js.Any = js.native
     
     /**
@@ -813,7 +1230,11 @@ object Utils extends js.Object {
       * @param startIndex An optional start index to search from.
       * @param endIndex An optional end index to search to.
       */
+    @JSGlobal("Phaser.Utils.Array.SetAll")
+    @js.native
     def SetAll(array: js.Array[_], property: String, value: js.Any): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.SetAll")
+    @js.native
     def SetAll(
       array: js.Array[_],
       property: String,
@@ -821,7 +1242,11 @@ object Utils extends js.Object {
       startIndex: js.UndefOr[scala.Nothing],
       endIndex: integer
     ): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.SetAll")
+    @js.native
     def SetAll(array: js.Array[_], property: String, value: js.Any, startIndex: integer): js.Array[_] = js.native
+    @JSGlobal("Phaser.Utils.Array.SetAll")
+    @js.native
     def SetAll(array: js.Array[_], property: String, value: js.Any, startIndex: integer, endIndex: integer): js.Array[_] = js.native
     
     /**
@@ -830,6 +1255,8 @@ object Utils extends js.Object {
       * The original array is modified directly and returned.
       * @param array The array to shuffle. This array is modified in place.
       */
+    @JSGlobal("Phaser.Utils.Array.Shuffle")
+    @js.native
     def Shuffle[T](array: js.Array[T]): js.Array[T] = js.native
     
     /**
@@ -838,6 +1265,8 @@ object Utils extends js.Object {
       * @param array The array to splice from.
       * @param index The index of the item which should be spliced.
       */
+    @JSGlobal("Phaser.Utils.Array.SpliceOne")
+    @js.native
     def SpliceOne(array: js.Array[_], index: integer): js.Any = js.native
     
     /**
@@ -846,7 +1275,21 @@ object Utils extends js.Object {
       * @param arr The input array to be sorted.
       * @param comp The comparison handler.
       */
+    @JSGlobal("Phaser.Utils.Array.StableSort")
+    @js.native
     def StableSort(arr: js.Array[_], comp: js.Function): js.Array[_] = js.native
+    
+    object StableSortFunctions {
+      
+      /**
+        * Sort the input array and simply copy it back if the result isn't in the original array, which happens on an odd number of passes.
+        * @param arr The input array.
+        * @param comp The comparison handler.
+        */
+      @JSGlobal("Phaser.Utils.Array.StableSortFunctions.inplace")
+      @js.native
+      def inplace(arr: js.Array[_], comp: js.Function): js.Array[_] = js.native
+    }
     
     /**
       * Swaps the position of two elements in the given array.
@@ -856,114 +1299,12 @@ object Utils extends js.Object {
       * @param item1 The first element to swap.
       * @param item2 The second element to swap.
       */
+    @JSGlobal("Phaser.Utils.Array.Swap")
+    @js.native
     def Swap(array: js.Array[_], item1: js.Any, item2: js.Any): js.Array[_] = js.native
-    
-    @js.native
-    object Matrix extends js.Object {
-      
-      /**
-        * Checks if an array can be used as a matrix.
-        * 
-        * A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows) have the same length. There must be at least two rows:
-        * 
-        * ```
-        *    [
-        *        [ 1, 1, 1, 1, 1, 1 ],
-        *        [ 2, 0, 0, 0, 0, 4 ],
-        *        [ 2, 0, 1, 2, 0, 4 ],
-        *        [ 2, 0, 3, 4, 0, 4 ],
-        *        [ 2, 0, 0, 0, 0, 4 ],
-        *        [ 3, 3, 3, 3, 3, 3 ]
-        *    ]
-        * ```
-        * @param matrix The array to check.
-        */
-      def CheckMatrix[T](): Boolean = js.native
-      def CheckMatrix[T](matrix: js.Array[js.Array[T]]): Boolean = js.native
-      
-      /**
-        * Generates a string (which you can pass to console.log) from the given Array Matrix.
-        * @param matrix A 2-dimensional array.
-        */
-      def MatrixToString[T](): String = js.native
-      def MatrixToString[T](matrix: js.Array[js.Array[T]]): String = js.native
-      
-      /**
-        * Reverses the columns in the given Array Matrix.
-        * @param matrix The array matrix to reverse the columns for.
-        */
-      def ReverseColumns[T](): js.Array[js.Array[T]] = js.native
-      def ReverseColumns[T](matrix: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
-      
-      /**
-        * Reverses the rows in the given Array Matrix.
-        * @param matrix The array matrix to reverse the rows for.
-        */
-      def ReverseRows[T](): js.Array[js.Array[T]] = js.native
-      def ReverseRows[T](matrix: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
-      
-      /**
-        * Rotates the array matrix 180 degrees.
-        * @param matrix The array to rotate.
-        */
-      def Rotate180[T](): js.Array[js.Array[T]] = js.native
-      def Rotate180[T](matrix: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
-      
-      /**
-        * Rotates the array matrix to the left (or 90 degrees)
-        * @param matrix The array to rotate.
-        */
-      def RotateLeft[T](): js.Array[js.Array[T]] = js.native
-      def RotateLeft[T](matrix: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
-      
-      /**
-        * Rotates the array matrix based on the given rotation value.
-        * 
-        * The value can be given in degrees: 90, -90, 270, -270 or 180,
-        * or a string command: `rotateLeft`, `rotateRight` or `rotate180`.
-        * 
-        * Based on the routine from {@link http://jsfiddle.net/MrPolywhirl/NH42z/}.
-        * @param matrix The array to rotate.
-        * @param direction The amount to rotate the matrix by. Default 90.
-        */
-      def RotateMatrix[T](): js.Array[js.Array[T]] = js.native
-      def RotateMatrix[T](matrix: js.UndefOr[scala.Nothing], direction: String): js.Array[js.Array[T]] = js.native
-      def RotateMatrix[T](matrix: js.UndefOr[scala.Nothing], direction: Double): js.Array[js.Array[T]] = js.native
-      def RotateMatrix[T](matrix: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
-      def RotateMatrix[T](matrix: js.Array[js.Array[T]], direction: String): js.Array[js.Array[T]] = js.native
-      def RotateMatrix[T](matrix: js.Array[js.Array[T]], direction: Double): js.Array[js.Array[T]] = js.native
-      
-      /**
-        * Rotates the array matrix to the left (or -90 degrees)
-        * @param matrix The array to rotate.
-        */
-      def RotateRight[T](): js.Array[js.Array[T]] = js.native
-      def RotateRight[T](matrix: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
-      
-      /**
-        * Transposes the elements of the given matrix (array of arrays).
-        * 
-        * The transpose of a matrix is a new matrix whose rows are the columns of the original.
-        * @param array The array matrix to transpose.
-        */
-      def TransposeMatrix[T](): js.Array[js.Array[T]] = js.native
-      def TransposeMatrix[T](array: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
-    }
-    
-    @js.native
-    object StableSortFunctions extends js.Object {
-      
-      /**
-        * Sort the input array and simply copy it back if the result isn't in the original array, which happens on an odd number of passes.
-        * @param arr The input array.
-        * @param comp The comparison handler.
-        */
-      def inplace(arr: js.Array[_], comp: js.Function): js.Array[_] = js.native
-    }
   }
   
-  @js.native
-  object Base64 extends js.Object {
+  object Base64 {
     
     /**
       * Converts an ArrayBuffer into a base64 string.
@@ -974,29 +1315,48 @@ object Utils extends js.Object {
       * @param arrayBuffer The Array Buffer to encode.
       * @param mediaType An optional media type, i.e. `audio/ogg` or `image/jpeg`. If included the resulting string will be a data URI.
       */
+    @JSGlobal("Phaser.Utils.Base64.ArrayBufferToBase64")
+    @js.native
     def ArrayBufferToBase64(arrayBuffer: ArrayBuffer): String = js.native
+    @JSGlobal("Phaser.Utils.Base64.ArrayBufferToBase64")
+    @js.native
     def ArrayBufferToBase64(arrayBuffer: ArrayBuffer, mediaType: String): String = js.native
     
     /**
       * Converts a base64 string, either with or without a data uri, into an Array Buffer.
       * @param base64 The base64 string to be decoded. Can optionally contain a data URI header, which will be stripped out prior to decoding.
       */
+    @JSGlobal("Phaser.Utils.Base64.Base64ToArrayBuffer")
+    @js.native
     def Base64ToArrayBuffer(base64: String): ArrayBuffer = js.native
   }
   
+  /**
+    * A NOOP (No Operation) callback function.
+    * 
+    * Used internally by Phaser when it's more expensive to determine if a callback exists
+    * than it is to just invoke an empty function.
+    */
+  @JSGlobal("Phaser.Utils.NOOP")
   @js.native
-  object Objects extends js.Object {
+  def NOOP(): Unit = js.native
+  
+  object Objects {
     
     /**
       * Shallow Object Clone. Will not clone nested objects.
       * @param obj the object from which to clone
       */
+    @JSGlobal("Phaser.Utils.Objects.Clone")
+    @js.native
     def Clone(obj: js.Object): js.Object = js.native
     
     /**
       * This is a slightly modified version of http://api.jquery.com/jQuery.extend/
       * @param args The objects that will be mixed.
       */
+    @JSGlobal("Phaser.Utils.Objects.Extend")
+    @js.native
     def Extend(args: js.Any*): js.Object = js.native
     
     /**
@@ -1032,6 +1392,8 @@ object Utils extends js.Object {
       * @param key The name of the property to retrieve from the object. If a property is nested, the names of its preceding properties should be separated by a dot (`.`) - `banner.hideBanner` would return the value of the `hideBanner` property from the object stored in the `banner` property of the `source` object.
       * @param defaultValue The value to return if the `key` isn't found in the `source` object.
       */
+    @JSGlobal("Phaser.Utils.Objects.GetAdvancedValue")
+    @js.native
     def GetAdvancedValue(source: js.Object, key: String, defaultValue: js.Any): js.Any = js.native
     
     /**
@@ -1040,7 +1402,11 @@ object Utils extends js.Object {
       * @param key The key for the property on source. Must exist at the top level of the source object (no periods)
       * @param defaultValue The default value to use if the key does not exist.
       */
+    @JSGlobal("Phaser.Utils.Objects.GetFastValue")
+    @js.native
     def GetFastValue(source: js.Object, key: String): js.Any = js.native
+    @JSGlobal("Phaser.Utils.Objects.GetFastValue")
+    @js.native
     def GetFastValue(source: js.Object, key: String, defaultValue: js.Any): js.Any = js.native
     
     /**
@@ -1051,6 +1417,8 @@ object Utils extends js.Object {
       * @param max The maximum value which can be returned.
       * @param defaultValue The value to return if the property doesn't exist. It's also constrained to the given bounds.
       */
+    @JSGlobal("Phaser.Utils.Objects.GetMinMaxValue")
+    @js.native
     def GetMinMaxValue(source: js.Object, key: String, min: Double, max: Double, defaultValue: Double): Double = js.native
     
     /**
@@ -1059,6 +1427,8 @@ object Utils extends js.Object {
       * @param key The name of the property to retrieve from the object. If a property is nested, the names of its preceding properties should be separated by a dot (`.`) - `banner.hideBanner` would return the value of the `hideBanner` property from the object stored in the `banner` property of the `source` object.
       * @param defaultValue The value to return if the `key` isn't found in the `source` object.
       */
+    @JSGlobal("Phaser.Utils.Objects.GetValue")
+    @js.native
     def GetValue(source: js.Object, key: String, defaultValue: js.Any): js.Any = js.native
     
     /**
@@ -1066,6 +1436,8 @@ object Utils extends js.Object {
       * @param source an object on which to check for key existence
       * @param keys an array of keys to ensure the source object contains
       */
+    @JSGlobal("Phaser.Utils.Objects.HasAll")
+    @js.native
     def HasAll(source: js.Object, keys: js.Array[String]): Boolean = js.native
     
     /**
@@ -1073,6 +1445,8 @@ object Utils extends js.Object {
       * @param source an object on which to check for key existence
       * @param keys an array of keys to search the object for
       */
+    @JSGlobal("Phaser.Utils.Objects.HasAny")
+    @js.native
     def HasAny(source: js.Object, keys: js.Array[String]): Boolean = js.native
     
     /**
@@ -1080,6 +1454,8 @@ object Utils extends js.Object {
       * @param source The source object to be checked.
       * @param key The property to check for within the object
       */
+    @JSGlobal("Phaser.Utils.Objects.HasValue")
+    @js.native
     def HasValue(source: js.Object, key: String): Boolean = js.native
     
     /**
@@ -1087,6 +1463,8 @@ object Utils extends js.Object {
       * A plain object is an object whose internal class property is [object Object].
       * @param obj The object to inspect.
       */
+    @JSGlobal("Phaser.Utils.Objects.IsPlainObject")
+    @js.native
     def IsPlainObject(obj: js.Object): Boolean = js.native
     
     /**
@@ -1098,6 +1476,8 @@ object Utils extends js.Object {
       * @param obj1 The first object.
       * @param obj2 The second object.
       */
+    @JSGlobal("Phaser.Utils.Objects.Merge")
+    @js.native
     def Merge(obj1: js.Object, obj2: js.Object): js.Object = js.native
     
     /**
@@ -1107,6 +1487,8 @@ object Utils extends js.Object {
       * @param obj1 The first object to merge.
       * @param obj2 The second object to merge. Keys from this object which also exist in `obj1` will be copied to `obj1`.
       */
+    @JSGlobal("Phaser.Utils.Objects.MergeRight")
+    @js.native
     def MergeRight(obj1: js.Object, obj2: js.Object): js.Object = js.native
     
     /**
@@ -1115,6 +1497,8 @@ object Utils extends js.Object {
       * @param object The object to pick the provided keys from.
       * @param keys An array of properties to retrieve from the provided object.
       */
+    @JSGlobal("Phaser.Utils.Objects.Pick")
+    @js.native
     def Pick(`object`: js.Object, keys: js.Array[_]): js.Object = js.native
     
     /**
@@ -1140,11 +1524,12 @@ object Utils extends js.Object {
       * @param key The name of the property in the object. If a property is nested, the names of its preceding properties should be separated by a dot (`.`)
       * @param value The value to set into the property, if found in the source object.
       */
+    @JSGlobal("Phaser.Utils.Objects.SetValue")
+    @js.native
     def SetValue(source: js.Object, key: String, value: js.Any): Boolean = js.native
   }
   
-  @js.native
-  object String extends js.Object {
+  object String {
     
     /**
       * Takes a string and replaces instances of markers with values in the given array.
@@ -1154,6 +1539,8 @@ object Utils extends js.Object {
       * @param string The string containing the replacement markers.
       * @param values An array containing values that will replace the markers. If no value exists an empty string is inserted instead.
       */
+    @JSGlobal("Phaser.Utils.String.Format")
+    @js.native
     def Format(string: java.lang.String, values: js.Array[_]): java.lang.String = js.native
     
     /**
@@ -1180,34 +1567,82 @@ object Utils extends js.Object {
       * @param pad The string to pad it out with (defaults to a space). Default " ".
       * @param dir The direction dir = 1 (left), 2 (right), 3 (both). Default 3.
       */
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: java.lang.String): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(
       str: java.lang.String,
       len: js.UndefOr[scala.Nothing],
       pad: js.UndefOr[scala.Nothing],
       dir: integer
     ): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: java.lang.String, len: js.UndefOr[scala.Nothing], pad: java.lang.String): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: java.lang.String, len: js.UndefOr[scala.Nothing], pad: java.lang.String, dir: integer): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: java.lang.String, len: integer): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: java.lang.String, len: integer, pad: js.UndefOr[scala.Nothing], dir: integer): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: java.lang.String, len: integer, pad: java.lang.String): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: java.lang.String, len: integer, pad: java.lang.String, dir: integer): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: js.Object): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: js.Object, len: js.UndefOr[scala.Nothing], pad: js.UndefOr[scala.Nothing], dir: integer): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: js.Object, len: js.UndefOr[scala.Nothing], pad: java.lang.String): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: js.Object, len: js.UndefOr[scala.Nothing], pad: java.lang.String, dir: integer): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: js.Object, len: integer): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: js.Object, len: integer, pad: js.UndefOr[scala.Nothing], dir: integer): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: js.Object, len: integer, pad: java.lang.String): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: js.Object, len: integer, pad: java.lang.String, dir: integer): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: Double): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: Double, len: js.UndefOr[scala.Nothing], pad: js.UndefOr[scala.Nothing], dir: integer): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: Double, len: js.UndefOr[scala.Nothing], pad: java.lang.String): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: Double, len: js.UndefOr[scala.Nothing], pad: java.lang.String, dir: integer): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: Double, len: integer): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: Double, len: integer, pad: js.UndefOr[scala.Nothing], dir: integer): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: Double, len: integer, pad: java.lang.String): java.lang.String = js.native
+    @JSGlobal("Phaser.Utils.String.Pad")
+    @js.native
     def Pad(str: Double, len: integer, pad: java.lang.String, dir: integer): java.lang.String = js.native
     
     /**
@@ -1215,6 +1650,8 @@ object Utils extends js.Object {
       * For example if given the string `Atari 520ST` it would return `TS025 iratA`.
       * @param string The string to be reversed.
       */
+    @JSGlobal("Phaser.Utils.String.Reverse")
+    @js.native
     def Reverse(string: java.lang.String): java.lang.String = js.native
     
     /**
@@ -1223,12 +1660,16 @@ object Utils extends js.Object {
       * The string is in the form: `xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx` where each `x` is replaced with a random
       * hexadecimal digit from 0 to f, and `y` is replaced with a random hexadecimal digit from 8 to b.
       */
+    @JSGlobal("Phaser.Utils.String.UUID")
+    @js.native
     def UUID(): java.lang.String = js.native
     
     /**
       * Capitalizes the first letter of a string if there is one.
       * @param str The string to capitalize.
       */
+    @JSGlobal("Phaser.Utils.String.UppercaseFirst")
+    @js.native
     def UppercaseFirst(str: java.lang.String): java.lang.String = js.native
   }
 }

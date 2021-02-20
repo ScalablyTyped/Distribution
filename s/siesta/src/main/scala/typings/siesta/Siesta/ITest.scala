@@ -4,6 +4,7 @@ import typings.siesta.Siesta.Test.IBDD
 import typings.siesta.Siesta.Test.IDate
 import typings.siesta.Siesta.Test.IFunction
 import typings.siesta.Siesta.Test.IMore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

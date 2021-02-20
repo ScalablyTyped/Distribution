@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SliceViewModelProperties extends js.Object {
+trait SliceViewModelProperties extends StObject {
   
   /**
     * Indicates whether the [Ground](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html) and layers that are draped on the ground surface are excluded from the slice.
@@ -51,51 +52,39 @@ object SliceViewModelProperties {
   }
   
   @scala.inline
-  implicit class SliceViewModelPropertiesOps[Self <: SliceViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class SliceViewModelPropertiesMutableBuilder[Self <: SliceViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludeGroundSurface(value: Boolean): Self = StObject.set(x, "excludeGroundSurface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludeGroundSurfaceUndefined: Self = StObject.set(x, "excludeGroundSurface", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedLayers(value: CollectionProperties[LayerProperties | BuildingComponentSublayerProperties]): Self = StObject.set(x, "excludedLayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeGroundSurface(value: Boolean): Self = this.set("excludeGroundSurface", value.asInstanceOf[js.Any])
+    def setExcludedLayersUndefined: Self = StObject.set(x, "excludedLayers", js.undefined)
     
     @scala.inline
-    def deleteExcludeGroundSurface: Self = this.set("excludeGroundSurface", js.undefined)
+    def setExcludedLayersVarargs(value: (LayerProperties | BuildingComponentSublayerProperties)*): Self = StObject.set(x, "excludedLayers", js.Array(value :_*))
     
     @scala.inline
-    def setExcludedLayersVarargs(value: (LayerProperties | BuildingComponentSublayerProperties)*): Self = this.set("excludedLayers", js.Array(value :_*))
+    def setShape(value: SlicePlaneProperties): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedLayers(value: CollectionProperties[LayerProperties | BuildingComponentSublayerProperties]): Self = this.set("excludedLayers", value.asInstanceOf[js.Any])
+    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
     @scala.inline
-    def deleteExcludedLayers: Self = this.set("excludedLayers", js.undefined)
+    def setTiltEnabled(value: Boolean): Self = StObject.set(x, "tiltEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShape(value: SlicePlaneProperties): Self = this.set("shape", value.asInstanceOf[js.Any])
+    def setTiltEnabledUndefined: Self = StObject.set(x, "tiltEnabled", js.undefined)
     
     @scala.inline
-    def deleteShape: Self = this.set("shape", js.undefined)
+    def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTiltEnabled(value: Boolean): Self = this.set("tiltEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTiltEnabled: Self = this.set("tiltEnabled", js.undefined)
-    
-    @scala.inline
-    def setView(value: SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

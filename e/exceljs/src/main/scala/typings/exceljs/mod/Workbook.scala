@@ -2,13 +2,14 @@ package typings.exceljs.mod
 
 import typings.exceljs.anon.PartialAddWorksheetOption
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("exceljs", "Workbook")
 @js.native
-class Workbook () extends js.Object {
+class Workbook () extends StObject {
   
   /**
   	 * Add Image to Workbook and return the id

@@ -1,12 +1,13 @@
 package typings.jwplayer.jwplayer
 
 import typings.jwplayer.jwplayerStrings.cast
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CastParam extends js.Object {
+trait CastParam extends StObject {
   
   var active: Boolean = js.native
   
@@ -26,30 +27,18 @@ object CastParam {
   }
   
   @scala.inline
-  implicit class CastParamOps[Self <: CastParam] (val x: Self) extends AnyVal {
+  implicit class CastParamMutableBuilder[Self <: CastParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAvailable(value: Boolean): Self = this.set("available", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeviceName(value: String): Self = this.set("deviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: cast): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: cast): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

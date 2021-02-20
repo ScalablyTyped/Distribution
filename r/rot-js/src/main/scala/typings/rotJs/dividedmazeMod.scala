@@ -1,12 +1,15 @@
 package typings.rotJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rot-js/lib/map/dividedmaze", JSImport.Namespace)
-@js.native
-object dividedmazeMod extends js.Object {
+object dividedmazeMod {
+  
+  @JSImport("rot-js/lib/map/dividedmaze", JSImport.Default)
+  @js.native
+  class default () extends DividedMaze
   
   @js.native
   trait DividedMaze
@@ -20,9 +23,6 @@ object dividedmazeMod extends js.Object {
     
     var _stack: js.Array[Room] = js.native
   }
-  
-  @js.native
-  class default () extends DividedMaze
   
   type Room = js.Tuple4[Double, Double, Double, Double]
 }

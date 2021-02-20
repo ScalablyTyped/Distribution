@@ -1,11 +1,12 @@
 package typings.zui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DraggableOption extends js.Object {
+trait DraggableOption extends StObject {
   
   var before: js.UndefOr[js.Function1[/* e */ js.UndefOr[DraggableEvent], Boolean]] = js.native
   
@@ -34,72 +35,60 @@ object DraggableOption {
   }
   
   @scala.inline
-  implicit class DraggableOptionOps[Self <: DraggableOption] (val x: Self) extends AnyVal {
+  implicit class DraggableOptionMutableBuilder[Self <: DraggableOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBefore(value: /* e */ js.UndefOr[DraggableEvent] => Boolean): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBefore(value: /* e */ js.UndefOr[DraggableEvent] => Boolean): Self = this.set("before", js.Any.fromFunction1(value))
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteBefore: Self = this.set("before", js.undefined)
+    def setDrag(value: /* e */ DraggableEvent => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setFinish(value: /* e */ DraggableEvent => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDrag(value: /* e */ DraggableEvent => Unit): Self = this.set("drag", js.Any.fromFunction1(value))
+    def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
     
     @scala.inline
-    def deleteDrag: Self = this.set("drag", js.undefined)
+    def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinish(value: /* e */ DraggableEvent => Unit): Self = this.set("finish", js.Any.fromFunction1(value))
+    def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
     
     @scala.inline
-    def deleteFinish: Self = this.set("finish", js.undefined)
+    def setMouseButton(value: String): Self = StObject.set(x, "mouseButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandle(value: String): Self = this.set("handle", value.asInstanceOf[js.Any])
+    def setMouseButtonUndefined: Self = StObject.set(x, "mouseButton", js.undefined)
     
     @scala.inline
-    def deleteHandle: Self = this.set("handle", js.undefined)
+    def setMove(value: Boolean): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseButton(value: String): Self = this.set("mouseButton", value.asInstanceOf[js.Any])
+    def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
     
     @scala.inline
-    def deleteMouseButton: Self = this.set("mouseButton", js.undefined)
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMove(value: Boolean): Self = this.set("move", value.asInstanceOf[js.Any])
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
     @scala.inline
-    def deleteMove: Self = this.set("move", js.undefined)
+    def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
-    
-    @scala.inline
-    def setStopPropagation(value: Boolean): Self = this.set("stopPropagation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStopPropagation: Self = this.set("stopPropagation", js.undefined)
+    def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
   }
 }

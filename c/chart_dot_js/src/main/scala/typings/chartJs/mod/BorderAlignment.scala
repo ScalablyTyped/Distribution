@@ -1,5 +1,6 @@
 package typings.chartJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.chartJs.chartJsStrings.center
   - typings.chartJs.chartJsStrings.inner
 */
-trait BorderAlignment extends js.Object
+trait BorderAlignment extends StObject
 object BorderAlignment {
   
   @scala.inline

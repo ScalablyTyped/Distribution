@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/esm/styles/hljs/rainbow", JSImport.Namespace)
-@js.native
-object hljsRainbowMod extends js.Object {
+object hljsRainbowMod {
   
+  @JSImport("react-syntax-highlighter/dist/esm/styles/hljs/rainbow", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

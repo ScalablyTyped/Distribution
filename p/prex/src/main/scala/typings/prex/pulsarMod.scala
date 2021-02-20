@@ -2,16 +2,16 @@ package typings.prex
 
 import typings.esfxCancelable.distMod.Cancelable
 import typings.prex.cancellationMod.CancellationToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("prex/out/lib/pulsar", JSImport.Namespace)
-@js.native
-object pulsarMod extends js.Object {
+object pulsarMod {
   
+  @JSImport("prex/out/lib/pulsar", "Pulsar")
   @js.native
-  class Pulsar () extends js.Object {
+  class Pulsar () extends StObject {
     
     var _waiters: js.Any = js.native
     

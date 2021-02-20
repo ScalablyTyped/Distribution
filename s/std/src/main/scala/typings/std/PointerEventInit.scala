@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,78 +37,66 @@ object PointerEventInit {
   }
   
   @scala.inline
-  implicit class PointerEventInitOps[Self <: PointerEventInit] (val x: Self) extends AnyVal {
+  implicit class PointerEventInitMutableBuilder[Self <: PointerEventInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsPrimary(value: scala.Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIsPrimaryUndefined: Self = StObject.set(x, "isPrimary", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPrimary(value: scala.Boolean): Self = this.set("isPrimary", value.asInstanceOf[js.Any])
+    def setPointerIdUndefined: Self = StObject.set(x, "pointerId", js.undefined)
     
     @scala.inline
-    def deleteIsPrimary: Self = this.set("isPrimary", js.undefined)
+    def setPointerType(value: java.lang.String): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointerId(value: Double): Self = this.set("pointerId", value.asInstanceOf[js.Any])
+    def setPointerTypeUndefined: Self = StObject.set(x, "pointerType", js.undefined)
     
     @scala.inline
-    def deletePointerId: Self = this.set("pointerId", js.undefined)
+    def setPressure(value: Double): Self = StObject.set(x, "pressure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointerType(value: java.lang.String): Self = this.set("pointerType", value.asInstanceOf[js.Any])
+    def setPressureUndefined: Self = StObject.set(x, "pressure", js.undefined)
     
     @scala.inline
-    def deletePointerType: Self = this.set("pointerType", js.undefined)
+    def setTangentialPressure(value: Double): Self = StObject.set(x, "tangentialPressure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPressure(value: Double): Self = this.set("pressure", value.asInstanceOf[js.Any])
+    def setTangentialPressureUndefined: Self = StObject.set(x, "tangentialPressure", js.undefined)
     
     @scala.inline
-    def deletePressure: Self = this.set("pressure", js.undefined)
+    def setTiltX(value: Double): Self = StObject.set(x, "tiltX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTangentialPressure(value: Double): Self = this.set("tangentialPressure", value.asInstanceOf[js.Any])
+    def setTiltXUndefined: Self = StObject.set(x, "tiltX", js.undefined)
     
     @scala.inline
-    def deleteTangentialPressure: Self = this.set("tangentialPressure", js.undefined)
+    def setTiltY(value: Double): Self = StObject.set(x, "tiltY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTiltX(value: Double): Self = this.set("tiltX", value.asInstanceOf[js.Any])
+    def setTiltYUndefined: Self = StObject.set(x, "tiltY", js.undefined)
     
     @scala.inline
-    def deleteTiltX: Self = this.set("tiltX", js.undefined)
+    def setTwist(value: Double): Self = StObject.set(x, "twist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTiltY(value: Double): Self = this.set("tiltY", value.asInstanceOf[js.Any])
+    def setTwistUndefined: Self = StObject.set(x, "twist", js.undefined)
     
     @scala.inline
-    def deleteTiltY: Self = this.set("tiltY", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTwist(value: Double): Self = this.set("twist", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTwist: Self = this.set("twist", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

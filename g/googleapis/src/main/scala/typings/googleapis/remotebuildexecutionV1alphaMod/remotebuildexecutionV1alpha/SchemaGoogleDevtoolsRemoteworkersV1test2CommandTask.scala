@@ -1,5 +1,6 @@
 package typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1alpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * interface&#39;s `Lease.payload` field.
   */
 @js.native
-trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandTask extends js.Object {
+trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandTask extends StObject {
   
   /**
     * The expected outputs from the task.
@@ -35,36 +36,24 @@ object SchemaGoogleDevtoolsRemoteworkersV1test2CommandTask {
   }
   
   @scala.inline
-  implicit class SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOps[Self <: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTask] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskMutableBuilder[Self <: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpectedOutputs(value: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs): Self = StObject.set(x, "expectedOutputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpectedOutputsUndefined: Self = StObject.set(x, "expectedOutputs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputs(value: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectedOutputs(value: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs): Self = this.set("expectedOutputs", value.asInstanceOf[js.Any])
+    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
     @scala.inline
-    def deleteExpectedOutputs: Self = this.set("expectedOutputs", js.undefined)
+    def setTimeouts(value: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts): Self = StObject.set(x, "timeouts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputs(value: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputs): Self = this.set("inputs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputs: Self = this.set("inputs", js.undefined)
-    
-    @scala.inline
-    def setTimeouts(value: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts): Self = this.set("timeouts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeouts: Self = this.set("timeouts", js.undefined)
+    def setTimeoutsUndefined: Self = StObject.set(x, "timeouts", js.undefined)
   }
 }

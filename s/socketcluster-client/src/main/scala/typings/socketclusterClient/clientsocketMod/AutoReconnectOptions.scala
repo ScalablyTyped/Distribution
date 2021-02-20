@@ -1,11 +1,12 @@
 package typings.socketclusterClient.clientsocketMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoReconnectOptions extends js.Object {
+trait AutoReconnectOptions extends StObject {
   
   var initialDelay: js.UndefOr[Double] = js.native
   
@@ -24,42 +25,30 @@ object AutoReconnectOptions {
   }
   
   @scala.inline
-  implicit class AutoReconnectOptionsOps[Self <: AutoReconnectOptions] (val x: Self) extends AnyVal {
+  implicit class AutoReconnectOptionsMutableBuilder[Self <: AutoReconnectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitialDelay(value: Double): Self = StObject.set(x, "initialDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitialDelayUndefined: Self = StObject.set(x, "initialDelay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxDelay(value: Double): Self = StObject.set(x, "maxDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialDelay(value: Double): Self = this.set("initialDelay", value.asInstanceOf[js.Any])
+    def setMaxDelayUndefined: Self = StObject.set(x, "maxDelay", js.undefined)
     
     @scala.inline
-    def deleteInitialDelay: Self = this.set("initialDelay", js.undefined)
+    def setMultiplier(value: Double): Self = StObject.set(x, "multiplier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDelay(value: Double): Self = this.set("maxDelay", value.asInstanceOf[js.Any])
+    def setMultiplierUndefined: Self = StObject.set(x, "multiplier", js.undefined)
     
     @scala.inline
-    def deleteMaxDelay: Self = this.set("maxDelay", js.undefined)
+    def setRandomness(value: Double): Self = StObject.set(x, "randomness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiplier(value: Double): Self = this.set("multiplier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultiplier: Self = this.set("multiplier", js.undefined)
-    
-    @scala.inline
-    def setRandomness(value: Double): Self = this.set("randomness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRandomness: Self = this.set("randomness", js.undefined)
+    def setRandomnessUndefined: Self = StObject.set(x, "randomness", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShapeTextReadingOrder extends js.Object
+sealed trait ShapeTextReadingOrder extends StObject
 /**
   *
   * Specifies the reading order for the text frame in a shape.
@@ -14,7 +15,7 @@ sealed trait ShapeTextReadingOrder extends js.Object
   */
 @JSGlobal("Excel.ShapeTextReadingOrder")
 @js.native
-object ShapeTextReadingOrder extends js.Object {
+object ShapeTextReadingOrder extends StObject {
   
   @js.native
   sealed trait leftToRight extends ShapeTextReadingOrder

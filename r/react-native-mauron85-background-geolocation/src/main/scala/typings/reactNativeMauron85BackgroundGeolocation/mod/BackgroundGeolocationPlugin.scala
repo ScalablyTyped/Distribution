@@ -11,12 +11,13 @@ import typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85Backg
 import typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.start
 import typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.stationary
 import typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationStrings.stop
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackgroundGeolocationPlugin extends js.Object {
+trait BackgroundGeolocationPlugin extends StObject {
   
   var ACTIVITY_PROVIDER: LocationProvider = js.native
   

@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,50 +81,38 @@ object ASPxClientXYDiagram2D {
   }
   
   @scala.inline
-  implicit class ASPxClientXYDiagram2DOps[Self <: ASPxClientXYDiagram2D] (val x: Self) extends AnyVal {
+  implicit class ASPxClientXYDiagram2DMutableBuilder[Self <: ASPxClientXYDiagram2D] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultPane(value: ASPxClientXYDiagramPane): Self = StObject.set(x, "defaultPane", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDiagramToPoint(
       value: (js.Any, js.Any, ASPxClientAxis2D, ASPxClientAxis2D, ASPxClientXYDiagramPane) => ASPxClientControlCoordinates
-    ): Self = this.set("DiagramToPoint", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "DiagramToPoint", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setPointToDiagram(value: (Double, Double) => ASPxClientDiagramCoordinates): Self = this.set("PointToDiagram", js.Any.fromFunction2(value))
+    def setPanes(value: js.Array[ASPxClientXYDiagramPane]): Self = StObject.set(x, "panes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCrosshair(value: (Double, Double) => Unit): Self = this.set("ShowCrosshair", js.Any.fromFunction2(value))
+    def setPanesVarargs(value: ASPxClientXYDiagramPane*): Self = StObject.set(x, "panes", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultPane(value: ASPxClientXYDiagramPane): Self = this.set("defaultPane", value.asInstanceOf[js.Any])
+    def setPointToDiagram(value: (Double, Double) => ASPxClientDiagramCoordinates): Self = StObject.set(x, "PointToDiagram", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPanesVarargs(value: ASPxClientXYDiagramPane*): Self = this.set("panes", js.Array(value :_*))
+    def setSecondaryAxesX(value: js.Array[ASPxClientAxis]): Self = StObject.set(x, "secondaryAxesX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanes(value: js.Array[ASPxClientXYDiagramPane]): Self = this.set("panes", value.asInstanceOf[js.Any])
+    def setSecondaryAxesXVarargs(value: ASPxClientAxis*): Self = StObject.set(x, "secondaryAxesX", js.Array(value :_*))
     
     @scala.inline
-    def setSecondaryAxesXVarargs(value: ASPxClientAxis*): Self = this.set("secondaryAxesX", js.Array(value :_*))
+    def setSecondaryAxesY(value: js.Array[ASPxClientAxis]): Self = StObject.set(x, "secondaryAxesY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondaryAxesX(value: js.Array[ASPxClientAxis]): Self = this.set("secondaryAxesX", value.asInstanceOf[js.Any])
+    def setSecondaryAxesYVarargs(value: ASPxClientAxis*): Self = StObject.set(x, "secondaryAxesY", js.Array(value :_*))
     
     @scala.inline
-    def setSecondaryAxesYVarargs(value: ASPxClientAxis*): Self = this.set("secondaryAxesY", js.Array(value :_*))
-    
-    @scala.inline
-    def setSecondaryAxesY(value: js.Array[ASPxClientAxis]): Self = this.set("secondaryAxesY", value.asInstanceOf[js.Any])
+    def setShowCrosshair(value: (Double, Double) => Unit): Self = StObject.set(x, "ShowCrosshair", js.Any.fromFunction2(value))
   }
 }

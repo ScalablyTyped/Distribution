@@ -3,13 +3,16 @@ package typings.zrender
 import org.scalablytyped.runtime.Instantiable6
 import typings.zrender.anon.AddColorStop
 import typings.zrender.anon.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("zrender")
-@js.native
-object zrender extends js.Object {
+object zrender {
+  
+  type ColorStops = js.Array[Color]
+  
+  type GlobalCoords = Boolean
   
   /**
     * x, y, x2, y2 are all percent from 0 to 1
@@ -25,10 +28,6 @@ object zrender extends js.Object {
           /* globalCoord */ js.UndefOr[GlobalCoords], 
           AddColorStop
         ]
-  
-  type ColorStops = js.Array[Color]
-  
-  type GlobalCoords = Boolean
   
   type X = Double
   

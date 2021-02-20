@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContextMenuAnimation extends js.Object {
+trait ContextMenuAnimation extends StObject {
   
   var close: js.UndefOr[ContextMenuAnimationClose] = js.native
   
@@ -20,30 +21,18 @@ object ContextMenuAnimation {
   }
   
   @scala.inline
-  implicit class ContextMenuAnimationOps[Self <: ContextMenuAnimation] (val x: Self) extends AnyVal {
+  implicit class ContextMenuAnimationMutableBuilder[Self <: ContextMenuAnimation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: ContextMenuAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpen(value: ContextMenuAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: ContextMenuAnimationClose): Self = this.set("close", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClose: Self = this.set("close", js.undefined)
-    
-    @scala.inline
-    def setOpen(value: ContextMenuAnimationOpen): Self = this.set("open", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpen: Self = this.set("open", js.undefined)
+    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
   }
 }

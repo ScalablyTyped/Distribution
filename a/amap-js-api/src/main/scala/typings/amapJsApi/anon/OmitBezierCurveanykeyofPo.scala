@@ -1,13 +1,14 @@
 package typings.amapJsApi.anon
 
 import typings.amapJsApi.AMap.LngLat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined amap-js-api.AMap.Omit<amap-js-api.AMap.BezierCurve<any>, keyof amap-js-api.AMap.Polyline<any>> */
 @js.native
-trait OmitBezierCurveanykeyofPo extends js.Object {
+trait OmitBezierCurveanykeyofPo extends StObject {
   
   def getInterpolateLngLats(): js.Array[LngLat] = js.native
   @JSName("getInterpolateLngLats")

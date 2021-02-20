@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateNatGatewayResult extends js.Object {
+trait CreateNatGatewayResult extends StObject {
   
   /**
     * Unique, case-sensitive identifier to ensure the idempotency of the request. Only returned if a client token was provided in the request.
@@ -26,30 +27,18 @@ object CreateNatGatewayResult {
   }
   
   @scala.inline
-  implicit class CreateNatGatewayResultOps[Self <: CreateNatGatewayResult] (val x: Self) extends AnyVal {
+  implicit class CreateNatGatewayResultMutableBuilder[Self <: CreateNatGatewayResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNatGateway(value: NatGateway): Self = StObject.set(x, "NatGateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: String): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
-    
-    @scala.inline
-    def setNatGateway(value: NatGateway): Self = this.set("NatGateway", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNatGateway: Self = this.set("NatGateway", js.undefined)
+    def setNatGatewayUndefined: Self = StObject.set(x, "NatGateway", js.undefined)
   }
 }

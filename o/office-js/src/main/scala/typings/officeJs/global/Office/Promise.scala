@@ -1,11 +1,11 @@
 package typings.officeJs.global.Office
 
-import org.scalablytyped.runtime.TopLevel
-import typings.officeJs.Office.IPromiseConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("Office.Promise")
 @js.native
 class Promise[T] protected ()
@@ -22,9 +22,3 @@ class Promise[T] protected ()
         Unit
       ]) = this()
 }
-/** A Promise object. Promises can be chained via ".then", and errors can be caught via ".catch". 
-  * When a browser-provided native Promise implementation is available, Office.Promise will switch to use the native Promise instead.
-  */
-@JSGlobal("Office.Promise")
-@js.native
-object Promise extends TopLevel[IPromiseConstructor]

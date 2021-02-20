@@ -1,5 +1,6 @@
 package typings.ckeditorCkeditor5Engine.mod.model
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.toNext
   - typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.toPrevious
 */
-trait PositionStickiness extends js.Object
+trait PositionStickiness extends StObject
 object PositionStickiness {
   
   @scala.inline

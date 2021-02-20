@@ -1,16 +1,22 @@
 package typings.primereact
 
 import typings.primereact.dropdownMod.DropdownProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("primereact/dropdown", JSImport.Namespace)
-@js.native
-object primereactDropdownMod extends js.Object {
+object primereactDropdownMod {
   
+  @JSImport("primereact/dropdown", "Dropdown")
   @js.native
-  class Dropdown ()
-    extends Component[DropdownProps, js.Any, js.Any]
+  class Dropdown protected ()
+    extends typings.primereact.dropdownMod.Dropdown {
+    def this(props: DropdownProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: DropdownProps, context: js.Any) = this()
+  }
 }

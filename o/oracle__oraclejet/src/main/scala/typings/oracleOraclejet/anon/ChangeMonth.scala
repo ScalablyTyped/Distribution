@@ -11,12 +11,13 @@ import typings.oracleOraclejet.oracleOraclejetStrings.select
 import typings.oracleOraclejet.oracleOraclejetStrings.selectable
 import typings.oracleOraclejet.oracleOraclejetStrings.today
 import typings.oracleOraclejet.oracleOraclejetStrings.visible
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangeMonth extends js.Object {
+trait ChangeMonth extends StObject {
   
   var changeMonth: select | none = js.native
   
@@ -61,51 +62,39 @@ object ChangeMonth {
   }
   
   @scala.inline
-  implicit class ChangeMonthOps[Self <: ChangeMonth] (val x: Self) extends AnyVal {
+  implicit class ChangeMonthMutableBuilder[Self <: ChangeMonth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeMonth(value: select | none): Self = StObject.set(x, "changeMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeYear(value: select | none): Self = StObject.set(x, "changeYear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentMonthPos(value: Double): Self = StObject.set(x, "currentMonthPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeMonth(value: select | none): Self = this.set("changeMonth", value.asInstanceOf[js.Any])
+    def setDaysOutsideMonth(value: hidden | visible | selectable): Self = StObject.set(x, "daysOutsideMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeYear(value: select | none): Self = this.set("changeYear", value.asInstanceOf[js.Any])
+    def setFooterLayout(value: _empty | today): Self = StObject.set(x, "footerLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentMonthPos(value: Double): Self = this.set("currentMonthPos", value.asInstanceOf[js.Any])
+    def setNumberOfMonths(value: Double): Self = StObject.set(x, "numberOfMonths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaysOutsideMonth(value: hidden | visible | selectable): Self = this.set("daysOutsideMonth", value.asInstanceOf[js.Any])
+    def setShowOn(value: focus | image): Self = StObject.set(x, "showOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterLayout(value: _empty | today): Self = this.set("footerLayout", value.asInstanceOf[js.Any])
+    def setStepBigMonths(value: Double): Self = StObject.set(x, "stepBigMonths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfMonths(value: Double): Self = this.set("numberOfMonths", value.asInstanceOf[js.Any])
+    def setStepMonths(value: numberOfMonths | Double): Self = StObject.set(x, "stepMonths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowOn(value: focus | image): Self = this.set("showOn", value.asInstanceOf[js.Any])
+    def setWeekDisplay(value: number | none): Self = StObject.set(x, "weekDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepBigMonths(value: Double): Self = this.set("stepBigMonths", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStepMonths(value: numberOfMonths | Double): Self = this.set("stepMonths", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeekDisplay(value: number | none): Self = this.set("weekDisplay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYearRange(value: String): Self = this.set("yearRange", value.asInstanceOf[js.Any])
+    def setYearRange(value: String): Self = StObject.set(x, "yearRange", value.asInstanceOf[js.Any])
   }
 }

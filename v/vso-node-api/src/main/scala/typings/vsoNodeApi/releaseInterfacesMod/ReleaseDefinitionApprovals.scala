@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReleaseDefinitionApprovals extends js.Object {
+trait ReleaseDefinitionApprovals extends StObject {
   
   var approvalOptions: ApprovalOptions = js.native
   
@@ -20,27 +21,15 @@ object ReleaseDefinitionApprovals {
   }
   
   @scala.inline
-  implicit class ReleaseDefinitionApprovalsOps[Self <: ReleaseDefinitionApprovals] (val x: Self) extends AnyVal {
+  implicit class ReleaseDefinitionApprovalsMutableBuilder[Self <: ReleaseDefinitionApprovals] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprovalOptions(value: ApprovalOptions): Self = StObject.set(x, "approvalOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApprovals(value: js.Array[ReleaseDefinitionApprovalStep]): Self = StObject.set(x, "approvals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApprovalOptions(value: ApprovalOptions): Self = this.set("approvalOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setApprovalsVarargs(value: ReleaseDefinitionApprovalStep*): Self = this.set("approvals", js.Array(value :_*))
-    
-    @scala.inline
-    def setApprovals(value: js.Array[ReleaseDefinitionApprovalStep]): Self = this.set("approvals", value.asInstanceOf[js.Any])
+    def setApprovalsVarargs(value: ReleaseDefinitionApprovalStep*): Self = StObject.set(x, "approvals", js.Array(value :_*))
   }
 }

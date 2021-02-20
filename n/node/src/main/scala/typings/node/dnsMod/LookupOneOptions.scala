@@ -1,6 +1,7 @@
 package typings.node.dnsMod
 
 import typings.node.nodeBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,24 +21,12 @@ object LookupOneOptions {
   }
   
   @scala.inline
-  implicit class LookupOneOptionsOps[Self <: LookupOneOptions] (val x: Self) extends AnyVal {
+  implicit class LookupOneOptionsMutableBuilder[Self <: LookupOneOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: `false`): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAll(value: `false`): Self = this.set("all", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAll: Self = this.set("all", js.undefined)
+    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
   }
 }

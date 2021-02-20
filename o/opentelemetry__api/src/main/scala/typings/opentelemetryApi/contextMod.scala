@@ -3,17 +3,17 @@ package typings.opentelemetryApi
 import typings.opentelemetryContextBase.mod.Context
 import typings.opentelemetryContextBase.typesMod.ContextManager
 import typings.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/api/build/src/api/context", JSImport.Namespace)
-@js.native
-object contextMod extends js.Object {
+object contextMod {
   
+  @JSImport("@opentelemetry/api/build/src/api/context", "ContextAPI")
   @js.native
   /** Empty private constructor prevents end users from constructing a new instance of the API */
-  class ContextAPI protected () extends js.Object {
+  class ContextAPI protected () extends StObject {
     
     var _getContextManager: js.Any = js.native
     
@@ -48,12 +48,21 @@ object contextMod extends js.Object {
     def `with`[T /* <: js.Function1[/* repeated */ js.Any, ReturnType[T]] */](context: Context, fn: T): ReturnType[T] = js.native
   }
   /* static members */
-  @js.native
-  object ContextAPI extends js.Object {
+  object ContextAPI {
     
-    var _instance: js.Any = js.native
+    @JSImport("@opentelemetry/api/build/src/api/context", "ContextAPI")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@opentelemetry/api/build/src/api/context", "ContextAPI._instance")
+    @js.native
+    def _instance: js.Any = js.native
+    @scala.inline
+    def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
     
     /** Get the singleton instance of the Context API */
+    @JSImport("@opentelemetry/api/build/src/api/context", "ContextAPI.getInstance")
+    @js.native
     def getInstance(): ContextAPI = js.native
   }
 }

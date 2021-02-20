@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateHITWithHITTypeRequest extends js.Object {
+trait CreateHITWithHITTypeRequest extends StObject {
   
   /**
     *  The Assignment-level Review Policy applies to the assignments under the HIT. You can specify for Mechanical Turk to take various actions based on the policy. 
@@ -66,75 +67,63 @@ object CreateHITWithHITTypeRequest {
   }
   
   @scala.inline
-  implicit class CreateHITWithHITTypeRequestOps[Self <: CreateHITWithHITTypeRequest] (val x: Self) extends AnyVal {
+  implicit class CreateHITWithHITTypeRequestMutableBuilder[Self <: CreateHITWithHITTypeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignmentReviewPolicy(value: ReviewPolicy): Self = StObject.set(x, "AssignmentReviewPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignmentReviewPolicyUndefined: Self = StObject.set(x, "AssignmentReviewPolicy", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHITLayoutId(value: EntityId): Self = StObject.set(x, "HITLayoutId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHITTypeId(value: EntityId): Self = this.set("HITTypeId", value.asInstanceOf[js.Any])
+    def setHITLayoutIdUndefined: Self = StObject.set(x, "HITLayoutId", js.undefined)
     
     @scala.inline
-    def setLifetimeInSeconds(value: Long): Self = this.set("LifetimeInSeconds", value.asInstanceOf[js.Any])
+    def setHITLayoutParameters(value: HITLayoutParameterList): Self = StObject.set(x, "HITLayoutParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignmentReviewPolicy(value: ReviewPolicy): Self = this.set("AssignmentReviewPolicy", value.asInstanceOf[js.Any])
+    def setHITLayoutParametersUndefined: Self = StObject.set(x, "HITLayoutParameters", js.undefined)
     
     @scala.inline
-    def deleteAssignmentReviewPolicy: Self = this.set("AssignmentReviewPolicy", js.undefined)
+    def setHITLayoutParametersVarargs(value: HITLayoutParameter*): Self = StObject.set(x, "HITLayoutParameters", js.Array(value :_*))
     
     @scala.inline
-    def setHITLayoutId(value: EntityId): Self = this.set("HITLayoutId", value.asInstanceOf[js.Any])
+    def setHITReviewPolicy(value: ReviewPolicy): Self = StObject.set(x, "HITReviewPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHITLayoutId: Self = this.set("HITLayoutId", js.undefined)
+    def setHITReviewPolicyUndefined: Self = StObject.set(x, "HITReviewPolicy", js.undefined)
     
     @scala.inline
-    def setHITLayoutParametersVarargs(value: HITLayoutParameter*): Self = this.set("HITLayoutParameters", js.Array(value :_*))
+    def setHITTypeId(value: EntityId): Self = StObject.set(x, "HITTypeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHITLayoutParameters(value: HITLayoutParameterList): Self = this.set("HITLayoutParameters", value.asInstanceOf[js.Any])
+    def setLifetimeInSeconds(value: Long): Self = StObject.set(x, "LifetimeInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHITLayoutParameters: Self = this.set("HITLayoutParameters", js.undefined)
+    def setMaxAssignments(value: Integer): Self = StObject.set(x, "MaxAssignments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHITReviewPolicy(value: ReviewPolicy): Self = this.set("HITReviewPolicy", value.asInstanceOf[js.Any])
+    def setMaxAssignmentsUndefined: Self = StObject.set(x, "MaxAssignments", js.undefined)
     
     @scala.inline
-    def deleteHITReviewPolicy: Self = this.set("HITReviewPolicy", js.undefined)
+    def setQuestion(value: String): Self = StObject.set(x, "Question", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAssignments(value: Integer): Self = this.set("MaxAssignments", value.asInstanceOf[js.Any])
+    def setQuestionUndefined: Self = StObject.set(x, "Question", js.undefined)
     
     @scala.inline
-    def deleteMaxAssignments: Self = this.set("MaxAssignments", js.undefined)
+    def setRequesterAnnotation(value: String): Self = StObject.set(x, "RequesterAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuestion(value: String): Self = this.set("Question", value.asInstanceOf[js.Any])
+    def setRequesterAnnotationUndefined: Self = StObject.set(x, "RequesterAnnotation", js.undefined)
     
     @scala.inline
-    def deleteQuestion: Self = this.set("Question", js.undefined)
+    def setUniqueRequestToken(value: IdempotencyToken): Self = StObject.set(x, "UniqueRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequesterAnnotation(value: String): Self = this.set("RequesterAnnotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequesterAnnotation: Self = this.set("RequesterAnnotation", js.undefined)
-    
-    @scala.inline
-    def setUniqueRequestToken(value: IdempotencyToken): Self = this.set("UniqueRequestToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniqueRequestToken: Self = this.set("UniqueRequestToken", js.undefined)
+    def setUniqueRequestTokenUndefined: Self = StObject.set(x, "UniqueRequestToken", js.undefined)
   }
 }

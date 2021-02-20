@@ -1,11 +1,12 @@
 package typings.gamequery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpriteOptions extends js.Object {
+trait SpriteOptions extends StObject {
   
   var animation: js.UndefOr[js.Any] = js.native
   
@@ -28,54 +29,42 @@ object SpriteOptions {
   }
   
   @scala.inline
-  implicit class SpriteOptionsOps[Self <: SpriteOptions] (val x: Self) extends AnyVal {
+  implicit class SpriteOptionsMutableBuilder[Self <: SpriteOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: js.Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallback(value: () => _): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAnimation(value: js.Any): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: () => _): Self = this.set("callback", js.Any.fromFunction0(value))
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setPosx(value: Double): Self = StObject.set(x, "posx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setPosxUndefined: Self = StObject.set(x, "posx", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setPosy(value: Double): Self = StObject.set(x, "posy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosx(value: Double): Self = this.set("posx", value.asInstanceOf[js.Any])
+    def setPosyUndefined: Self = StObject.set(x, "posy", js.undefined)
     
     @scala.inline
-    def deletePosx: Self = this.set("posx", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosy(value: Double): Self = this.set("posy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosy: Self = this.set("posy", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

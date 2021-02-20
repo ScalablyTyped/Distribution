@@ -1,14 +1,27 @@
 package typings.operationRetrier
 
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("operation-retrier/lib/backoff", JSImport.Namespace)
-@js.native
-object backoffMod extends js.Object {
+object backoffMod {
   
+  @JSImport("operation-retrier/lib/backoff", JSImport.Default)
+  @js.native
+  class default protected () extends Backoff {
+    def this(options: js.Any) = this()
+  }
+  object default {
+    
+    /* static member */
+    @JSImport("operation-retrier/lib/backoff", "default.exponential")
+    @js.native
+    def exponential(options: js.Any): Backoff = js.native
+  }
+  
+  @JSImport("operation-retrier/lib/backoff", "Backoff")
   @js.native
   class Backoff protected () extends EventEmitter {
     def this(options: js.Any) = this()
@@ -42,21 +55,11 @@ object backoffMod extends js.Object {
     
     var timeoutID: js.Any = js.native
   }
-  /* static members */
-  @js.native
-  object Backoff extends js.Object {
+  object Backoff {
     
-    def exponential(options: js.Any): Backoff = js.native
-  }
-  
-  @js.native
-  class default protected () extends Backoff {
-    def this(options: js.Any) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
+    /* static member */
+    @JSImport("operation-retrier/lib/backoff", "Backoff.exponential")
+    @js.native
     def exponential(options: js.Any): Backoff = js.native
   }
 }

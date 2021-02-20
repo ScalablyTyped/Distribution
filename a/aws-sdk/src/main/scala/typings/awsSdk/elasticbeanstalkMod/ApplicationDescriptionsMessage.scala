@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationDescriptionsMessage extends js.Object {
+trait ApplicationDescriptionsMessage extends StObject {
   
   /**
     * This parameter contains a list of ApplicationDescription.
@@ -21,27 +22,15 @@ object ApplicationDescriptionsMessage {
   }
   
   @scala.inline
-  implicit class ApplicationDescriptionsMessageOps[Self <: ApplicationDescriptionsMessage] (val x: Self) extends AnyVal {
+  implicit class ApplicationDescriptionsMessageMutableBuilder[Self <: ApplicationDescriptionsMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplications(value: ApplicationDescriptionList): Self = StObject.set(x, "Applications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationsUndefined: Self = StObject.set(x, "Applications", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApplicationsVarargs(value: ApplicationDescription*): Self = this.set("Applications", js.Array(value :_*))
-    
-    @scala.inline
-    def setApplications(value: ApplicationDescriptionList): Self = this.set("Applications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApplications: Self = this.set("Applications", js.undefined)
+    def setApplicationsVarargs(value: ApplicationDescription*): Self = StObject.set(x, "Applications", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
 import typings.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Extension[T] extends js.Object {
+trait Extension[T] extends StObject {
   
   /**
     * Activates this extension and returns its public API.
@@ -74,42 +75,30 @@ object Extension {
   }
   
   @scala.inline
-  implicit class ExtensionOps[Self <: Extension[_], T] (val x: Self with Extension[T]) extends AnyVal {
+  implicit class ExtensionMutableBuilder[Self <: Extension[_], T] (val x: Self with Extension[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivate(value: () => Thenable[T]): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExports(value: T): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtensionKind(value: ExtensionKind): Self = StObject.set(x, "extensionKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivate(value: () => Thenable[T]): Self = this.set("activate", js.Any.fromFunction0(value))
+    def setExtensionPath(value: String): Self = StObject.set(x, "extensionPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExports(value: T): Self = this.set("exports", value.asInstanceOf[js.Any])
+    def setExtensionUri(value: Uri): Self = StObject.set(x, "extensionUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionKind(value: ExtensionKind): Self = this.set("extensionKind", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionPath(value: String): Self = this.set("extensionPath", value.asInstanceOf[js.Any])
+    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionUri(value: Uri): Self = this.set("extensionUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsActive(value: Boolean): Self = this.set("isActive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPackageJSON(value: js.Any): Self = this.set("packageJSON", value.asInstanceOf[js.Any])
+    def setPackageJSON(value: js.Any): Self = StObject.set(x, "packageJSON", value.asInstanceOf[js.Any])
   }
 }

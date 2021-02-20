@@ -1,11 +1,12 @@
 package typings.awsSdk.migrationhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListApplicationStatesResult extends js.Object {
+trait ListApplicationStatesResult extends StObject {
   
   /**
     * A list of Applications that exist in Application Discovery Service.
@@ -26,33 +27,21 @@ object ListApplicationStatesResult {
   }
   
   @scala.inline
-  implicit class ListApplicationStatesResultOps[Self <: ListApplicationStatesResult] (val x: Self) extends AnyVal {
+  implicit class ListApplicationStatesResultMutableBuilder[Self <: ListApplicationStatesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationStateList(value: ApplicationStateList): Self = StObject.set(x, "ApplicationStateList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationStateListUndefined: Self = StObject.set(x, "ApplicationStateList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationStateListVarargs(value: ApplicationState*): Self = StObject.set(x, "ApplicationStateList", js.Array(value :_*))
     
     @scala.inline
-    def setApplicationStateListVarargs(value: ApplicationState*): Self = this.set("ApplicationStateList", js.Array(value :_*))
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationStateList(value: ApplicationStateList): Self = this.set("ApplicationStateList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApplicationStateList: Self = this.set("ApplicationStateList", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

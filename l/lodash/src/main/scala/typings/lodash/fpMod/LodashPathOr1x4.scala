@@ -2,12 +2,13 @@ package typings.lodash.fpMod
 
 import typings.lodash.mod.__
 import typings.std.Exclude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashPathOr1x4[TObject] extends js.Object {
+trait LodashPathOr1x4[TObject] extends StObject {
   
   def apply[TDefault](defaultValue: TDefault): LodashPathOr1x5[TObject, TDefault] = js.native
   def apply[TKey /* <: /* keyof TObject */ String */](defaultValue: __, path: TKey): LodashPathOr1x6[TObject, TKey] = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateBackupVaultInput extends js.Object {
+trait CreateBackupVaultInput extends StObject {
   
   /**
     * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
@@ -36,39 +37,27 @@ object CreateBackupVaultInput {
   }
   
   @scala.inline
-  implicit class CreateBackupVaultInputOps[Self <: CreateBackupVaultInput] (val x: Self) extends AnyVal {
+  implicit class CreateBackupVaultInputMutableBuilder[Self <: CreateBackupVaultInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupVaultTags(value: Tags): Self = StObject.set(x, "BackupVaultTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackupVaultTagsUndefined: Self = StObject.set(x, "BackupVaultTags", js.undefined)
     
     @scala.inline
-    def setBackupVaultName(value: BackupVaultName): Self = this.set("BackupVaultName", value.asInstanceOf[js.Any])
+    def setCreatorRequestId(value: String): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupVaultTags(value: Tags): Self = this.set("BackupVaultTags", value.asInstanceOf[js.Any])
+    def setCreatorRequestIdUndefined: Self = StObject.set(x, "CreatorRequestId", js.undefined)
     
     @scala.inline
-    def deleteBackupVaultTags: Self = this.set("BackupVaultTags", js.undefined)
+    def setEncryptionKeyArn(value: ARN): Self = StObject.set(x, "EncryptionKeyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatorRequestId(value: String): Self = this.set("CreatorRequestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreatorRequestId: Self = this.set("CreatorRequestId", js.undefined)
-    
-    @scala.inline
-    def setEncryptionKeyArn(value: ARN): Self = this.set("EncryptionKeyArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionKeyArn: Self = this.set("EncryptionKeyArn", js.undefined)
+    def setEncryptionKeyArnUndefined: Self = StObject.set(x, "EncryptionKeyArn", js.undefined)
   }
 }

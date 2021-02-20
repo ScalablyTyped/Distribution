@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import typings.devtoolsProtocol.mod.Protocol.Runtime.ExecutionContextId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResolveNodeRequest extends js.Object {
+trait ResolveNodeRequest extends StObject {
   
   /**
     * Backend identifier of the node to resolve.
@@ -37,42 +38,30 @@ object ResolveNodeRequest {
   }
   
   @scala.inline
-  implicit class ResolveNodeRequestOps[Self <: ResolveNodeRequest] (val x: Self) extends AnyVal {
+  implicit class ResolveNodeRequestMutableBuilder[Self <: ResolveNodeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackendNodeId(value: BackendNodeId): Self = this.set("backendNodeId", value.asInstanceOf[js.Any])
+    def setExecutionContextIdUndefined: Self = StObject.set(x, "executionContextId", js.undefined)
     
     @scala.inline
-    def deleteBackendNodeId: Self = this.set("backendNodeId", js.undefined)
+    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionContextId(value: ExecutionContextId): Self = this.set("executionContextId", value.asInstanceOf[js.Any])
+    def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
     
     @scala.inline
-    def deleteExecutionContextId: Self = this.set("executionContextId", js.undefined)
+    def setObjectGroup(value: String): Self = StObject.set(x, "objectGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeId(value: NodeId): Self = this.set("nodeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeId: Self = this.set("nodeId", js.undefined)
-    
-    @scala.inline
-    def setObjectGroup(value: String): Self = this.set("objectGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectGroup: Self = this.set("objectGroup", js.undefined)
+    def setObjectGroupUndefined: Self = StObject.set(x, "objectGroup", js.undefined)
   }
 }

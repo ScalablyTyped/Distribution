@@ -1,5 +1,6 @@
 package typings.backblazeB2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.backblazeB2.backblazeB2Strings.allPublic
   - typings.backblazeB2.backblazeB2Strings.allPrivate
 */
-trait BucketType extends js.Object
+trait BucketType extends StObject
 object BucketType {
   
   @scala.inline

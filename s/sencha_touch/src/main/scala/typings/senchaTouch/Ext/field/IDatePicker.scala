@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext.field
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,90 +69,78 @@ object IDatePicker {
   }
   
   @scala.inline
-  implicit class IDatePickerOps[Self <: IDatePicker] (val x: Self) extends AnyVal {
+  implicit class IDatePickerMutableBuilder[Self <: IDatePicker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestroyPickerOnHide(value: Boolean): Self = StObject.set(x, "destroyPickerOnHide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateFormat(value: String): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    def setDestroyPickerOnHideUndefined: Self = StObject.set(x, "destroyPickerOnHide", js.undefined)
     
     @scala.inline
-    def deleteDateFormat: Self = this.set("dateFormat", js.undefined)
+    def setGetDateFormat(value: () => String): Self = StObject.set(x, "getDateFormat", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroyPickerOnHide(value: Boolean): Self = this.set("destroyPickerOnHide", value.asInstanceOf[js.Any])
+    def setGetDateFormatUndefined: Self = StObject.set(x, "getDateFormat", js.undefined)
     
     @scala.inline
-    def deleteDestroyPickerOnHide: Self = this.set("destroyPickerOnHide", js.undefined)
+    def setGetDatePicker(value: () => Unit): Self = StObject.set(x, "getDatePicker", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDateFormat(value: () => String): Self = this.set("getDateFormat", js.Any.fromFunction0(value))
+    def setGetDatePickerUndefined: Self = StObject.set(x, "getDatePicker", js.undefined)
     
     @scala.inline
-    def deleteGetDateFormat: Self = this.set("getDateFormat", js.undefined)
+    def setGetDestroyPickerOnHide(value: () => Boolean): Self = StObject.set(x, "getDestroyPickerOnHide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDatePicker(value: () => Unit): Self = this.set("getDatePicker", js.Any.fromFunction0(value))
+    def setGetDestroyPickerOnHideUndefined: Self = StObject.set(x, "getDestroyPickerOnHide", js.undefined)
     
     @scala.inline
-    def deleteGetDatePicker: Self = this.set("getDatePicker", js.undefined)
+    def setGetFormattedValue(value: /* format */ js.UndefOr[String] => String): Self = StObject.set(x, "getFormattedValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDestroyPickerOnHide(value: () => Boolean): Self = this.set("getDestroyPickerOnHide", js.Any.fromFunction0(value))
+    def setGetFormattedValueUndefined: Self = StObject.set(x, "getFormattedValue", js.undefined)
     
     @scala.inline
-    def deleteGetDestroyPickerOnHide: Self = this.set("getDestroyPickerOnHide", js.undefined)
+    def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFormattedValue(value: /* format */ js.UndefOr[String] => String): Self = this.set("getFormattedValue", js.Any.fromFunction1(value))
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def deleteGetFormattedValue: Self = this.set("getFormattedValue", js.undefined)
+    def setPicker(value: js.Any): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnChange(value: () => Unit): Self = this.set("onChange", js.Any.fromFunction0(value))
+    def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
     
     @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setReset(value: () => ISelect): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPicker(value: js.Any): Self = this.set("picker", value.asInstanceOf[js.Any])
+    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
     @scala.inline
-    def deletePicker: Self = this.set("picker", js.undefined)
+    def setSetDateFormat(value: /* dateFormat */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDateFormat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReset(value: () => ISelect): Self = this.set("reset", js.Any.fromFunction0(value))
+    def setSetDateFormatUndefined: Self = StObject.set(x, "setDateFormat", js.undefined)
     
     @scala.inline
-    def deleteReset: Self = this.set("reset", js.undefined)
+    def setSetDestroyPickerOnHide(value: /* destroyPickerOnHide */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setDestroyPickerOnHide", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDateFormat(value: /* dateFormat */ js.UndefOr[String] => Unit): Self = this.set("setDateFormat", js.Any.fromFunction1(value))
+    def setSetDestroyPickerOnHideUndefined: Self = StObject.set(x, "setDestroyPickerOnHide", js.undefined)
     
     @scala.inline
-    def deleteSetDateFormat: Self = this.set("setDateFormat", js.undefined)
+    def setSetPicker(value: /* picker */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setPicker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDestroyPickerOnHide(value: /* destroyPickerOnHide */ js.UndefOr[Boolean] => Unit): Self = this.set("setDestroyPickerOnHide", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetDestroyPickerOnHide: Self = this.set("setDestroyPickerOnHide", js.undefined)
-    
-    @scala.inline
-    def setSetPicker(value: /* picker */ js.UndefOr[js.Any] => Unit): Self = this.set("setPicker", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetPicker: Self = this.set("setPicker", js.undefined)
+    def setSetPickerUndefined: Self = StObject.set(x, "setPicker", js.undefined)
   }
 }

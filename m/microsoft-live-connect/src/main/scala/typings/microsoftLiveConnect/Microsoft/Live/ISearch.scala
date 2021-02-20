@@ -1,6 +1,7 @@
 package typings.microsoftLiveConnect.Microsoft.Live
 
 import typings.microsoftLiveConnect.anon.Next
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * info about formatting a search query request.
   */
 @js.native
-trait ISearch extends js.Object {
+trait ISearch extends StObject {
   
   /**
     * An array of file and folder objects found in a user's SkyDrive that
@@ -34,30 +35,18 @@ object ISearch {
   }
   
   @scala.inline
-  implicit class ISearchOps[Self <: ISearch] (val x: Self) extends AnyVal {
+  implicit class ISearchMutableBuilder[Self <: ISearch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Array[IObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataVarargs(value: IObject*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPaging(value: Next): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: IObject*): Self = this.set("data", js.Array(value :_*))
-    
-    @scala.inline
-    def setData(value: js.Array[IObject]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPaging(value: Next): Self = this.set("paging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaging: Self = this.set("paging", js.undefined)
+    def setPagingUndefined: Self = StObject.set(x, "paging", js.undefined)
   }
 }

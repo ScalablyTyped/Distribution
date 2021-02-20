@@ -1,21 +1,30 @@
 package typings.typescriptDeferred
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typescript-deferred", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("typescript-deferred", "create")
+  @js.native
   def create[T](): DeferredInterface[T] = js.native
   
+  @JSImport("typescript-deferred", "when")
+  @js.native
   def when[T](): PromiseInterface[T] = js.native
+  @JSImport("typescript-deferred", "when")
+  @js.native
   def when[T](value: T): PromiseInterface[T] = js.native
+  @JSImport("typescript-deferred", "when")
+  @js.native
   def when[T](value: ThenableInterface[T]): PromiseInterface[T] = js.native
   
+  type DeferredErrorCB[TP] = js.Function1[/* error */ js.Any, ThenableInterface[TP]]
+  
   @js.native
-  trait DeferredInterface[T] extends js.Object {
+  trait DeferredInterface[T] extends StObject {
     
     var promise: PromiseInterface[T] = js.native
     
@@ -26,6 +35,12 @@ object mod extends js.Object {
     def resolve(value: T): DeferredInterface[T] = js.native
     def resolve(value: ThenableInterface[T]): DeferredInterface[T] = js.native
   }
+  
+  type DeferredSuccessCB[T, TP] = js.Function1[/* value */ T, ThenableInterface[TP]]
+  
+  type ImmediateErrorCB[TP] = js.Function1[/* err */ js.Any, TP]
+  
+  type ImmediateSuccessCB[T, TP] = js.Function1[/* value */ T, TP]
   
   @js.native
   trait PromiseInterface[T] extends ThenableInterface[T] {
@@ -38,7 +53,7 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait ThenableInterface[T] extends js.Object {
+  trait ThenableInterface[T] extends StObject {
     
     def `then`[TP](): ThenableInterface[TP] = js.native
     def `then`[TP](successCB: (DeferredSuccessCB[T, TP]) | (ImmediateSuccessCB[T, TP])): ThenableInterface[TP] = js.native
@@ -47,12 +62,4 @@ object mod extends js.Object {
       errorCB: DeferredErrorCB[TP] | ImmediateErrorCB[TP]
     ): ThenableInterface[TP] = js.native
   }
-  
-  type DeferredErrorCB[TP] = js.Function1[/* error */ js.Any, ThenableInterface[TP]]
-  
-  type DeferredSuccessCB[T, TP] = js.Function1[/* value */ T, ThenableInterface[TP]]
-  
-  type ImmediateErrorCB[TP] = js.Function1[/* err */ js.Any, TP]
-  
-  type ImmediateSuccessCB[T, TP] = js.Function1[/* value */ T, TP]
 }

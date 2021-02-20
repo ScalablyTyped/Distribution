@@ -1,11 +1,12 @@
 package typings.knockoutPunches
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutPunchesFilters extends js.Object {
+trait KnockoutPunchesFilters extends StObject {
   
   // If the value is blank, null, or an empty array, replace it with the given default value
   def default(value: js.Any): js.Any = js.native

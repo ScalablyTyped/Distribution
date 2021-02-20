@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VolumeStatusAction extends js.Object {
+trait VolumeStatusAction extends StObject {
   
   /**
     * The code identifying the operation, for example, enable-volume-io.
@@ -36,42 +37,30 @@ object VolumeStatusAction {
   }
   
   @scala.inline
-  implicit class VolumeStatusActionOps[Self <: VolumeStatusAction] (val x: Self) extends AnyVal {
+  implicit class VolumeStatusActionMutableBuilder[Self <: VolumeStatusAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("Code", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("Code", js.undefined)
+    def setEventId(value: String): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEventIdUndefined: Self = StObject.set(x, "EventId", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setEventType(value: String): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventId(value: String): Self = this.set("EventId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventId: Self = this.set("EventId", js.undefined)
-    
-    @scala.inline
-    def setEventType(value: String): Self = this.set("EventType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventType: Self = this.set("EventType", js.undefined)
+    def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
   }
 }

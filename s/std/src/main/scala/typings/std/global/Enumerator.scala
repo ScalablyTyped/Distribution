@@ -1,12 +1,12 @@
 package typings.std.global
 
-import org.scalablytyped.runtime.TopLevel
-import typings.std.EnumeratorConstructor
 import typings.std.anon.Item
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("Enumerator")
 @js.native
 class Enumerator[T] protected ()
@@ -15,6 +15,3 @@ class Enumerator[T] protected ()
   def this(collection: Item[T]) = this()
   def this(safearray: typings.std.SafeArray[T]) = this()
 }
-@JSGlobal("Enumerator")
-@js.native
-object Enumerator extends TopLevel[EnumeratorConstructor]

@@ -1,11 +1,12 @@
 package typings.wampy.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CallAdvancedOptions extends js.Object {
+trait CallAdvancedOptions extends StObject {
   
   var disclose_me: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object CallAdvancedOptions {
   }
   
   @scala.inline
-  implicit class CallAdvancedOptionsOps[Self <: CallAdvancedOptions] (val x: Self) extends AnyVal {
+  implicit class CallAdvancedOptionsMutableBuilder[Self <: CallAdvancedOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisclose_me(value: Boolean): Self = StObject.set(x, "disclose_me", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisclose_meUndefined: Self = StObject.set(x, "disclose_me", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReceive_progress(value: Boolean): Self = StObject.set(x, "receive_progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisclose_me(value: Boolean): Self = this.set("disclose_me", value.asInstanceOf[js.Any])
+    def setReceive_progressUndefined: Self = StObject.set(x, "receive_progress", js.undefined)
     
     @scala.inline
-    def deleteDisclose_me: Self = this.set("disclose_me", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceive_progress(value: Boolean): Self = this.set("receive_progress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReceive_progress: Self = this.set("receive_progress", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Object containing credential information. */
 @js.native
-trait Credentials extends js.Object {
+trait Credentials extends StObject {
   
   /** Object containing details of the stored credentials. Obtain credentials for your source from the administrator of the source. */
   var credential_details: js.UndefOr[CredentialDetails] = js.native
@@ -26,36 +27,24 @@ object Credentials {
   }
   
   @scala.inline
-  implicit class CredentialsOps[Self <: Credentials] (val x: Self) extends AnyVal {
+  implicit class CredentialsMutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCredential_details(value: CredentialDetails): Self = StObject.set(x, "credential_details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCredential_detailsUndefined: Self = StObject.set(x, "credential_details", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCredential_id(value: String): Self = StObject.set(x, "credential_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredential_details(value: CredentialDetails): Self = this.set("credential_details", value.asInstanceOf[js.Any])
+    def setCredential_idUndefined: Self = StObject.set(x, "credential_id", js.undefined)
     
     @scala.inline
-    def deleteCredential_details: Self = this.set("credential_details", js.undefined)
+    def setSource_type(value: String): Self = StObject.set(x, "source_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredential_id(value: String): Self = this.set("credential_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCredential_id: Self = this.set("credential_id", js.undefined)
-    
-    @scala.inline
-    def setSource_type(value: String): Self = this.set("source_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource_type: Self = this.set("source_type", js.undefined)
+    def setSource_typeUndefined: Self = StObject.set(x, "source_type", js.undefined)
   }
 }

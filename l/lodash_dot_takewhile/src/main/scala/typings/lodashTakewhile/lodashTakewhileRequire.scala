@@ -1,5 +1,6 @@
 package typings.lodashTakewhile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("lodash.takewhile", JSImport.Namespace)
 @js.native
-object lodashTakewhileRequire extends js.Object
+object lodashTakewhileRequire extends StObject

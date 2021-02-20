@@ -1,11 +1,12 @@
 package typings.flexmonster.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Format extends js.Object {
+trait Format extends StObject {
   
   var beautifyFloatingPoint: js.UndefOr[Boolean] = js.native
   
@@ -48,114 +49,102 @@ object Format {
   }
   
   @scala.inline
-  implicit class FormatOps[Self <: Format] (val x: Self) extends AnyVal {
+  implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeautifyFloatingPoint(value: Boolean): Self = StObject.set(x, "beautifyFloatingPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeautifyFloatingPointUndefined: Self = StObject.set(x, "beautifyFloatingPoint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrencySymbol(value: String): Self = StObject.set(x, "currencySymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeautifyFloatingPoint(value: Boolean): Self = this.set("beautifyFloatingPoint", value.asInstanceOf[js.Any])
+    def setCurrencySymbolAlign(value: String): Self = StObject.set(x, "currencySymbolAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBeautifyFloatingPoint: Self = this.set("beautifyFloatingPoint", js.undefined)
+    def setCurrencySymbolAlignUndefined: Self = StObject.set(x, "currencySymbolAlign", js.undefined)
     
     @scala.inline
-    def setCurrencySymbol(value: String): Self = this.set("currencySymbol", value.asInstanceOf[js.Any])
+    def setCurrencySymbolUndefined: Self = StObject.set(x, "currencySymbol", js.undefined)
     
     @scala.inline
-    def deleteCurrencySymbol: Self = this.set("currencySymbol", js.undefined)
+    def setDecimalPlaces(value: Double): Self = StObject.set(x, "decimalPlaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencySymbolAlign(value: String): Self = this.set("currencySymbolAlign", value.asInstanceOf[js.Any])
+    def setDecimalPlacesUndefined: Self = StObject.set(x, "decimalPlaces", js.undefined)
     
     @scala.inline
-    def deleteCurrencySymbolAlign: Self = this.set("currencySymbolAlign", js.undefined)
+    def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimalPlaces(value: Double): Self = this.set("decimalPlaces", value.asInstanceOf[js.Any])
+    def setDecimalSeparatorUndefined: Self = StObject.set(x, "decimalSeparator", js.undefined)
     
     @scala.inline
-    def deleteDecimalPlaces: Self = this.set("decimalPlaces", js.undefined)
+    def setDivideByZeroValue(value: String): Self = StObject.set(x, "divideByZeroValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimalSeparator(value: String): Self = this.set("decimalSeparator", value.asInstanceOf[js.Any])
+    def setDivideByZeroValueUndefined: Self = StObject.set(x, "divideByZeroValue", js.undefined)
     
     @scala.inline
-    def deleteDecimalSeparator: Self = this.set("decimalSeparator", js.undefined)
+    def setInfinityValue(value: String): Self = StObject.set(x, "infinityValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDivideByZeroValue(value: String): Self = this.set("divideByZeroValue", value.asInstanceOf[js.Any])
+    def setInfinityValueUndefined: Self = StObject.set(x, "infinityValue", js.undefined)
     
     @scala.inline
-    def deleteDivideByZeroValue: Self = this.set("divideByZeroValue", js.undefined)
+    def setIsPercent(value: Boolean): Self = StObject.set(x, "isPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfinityValue(value: String): Self = this.set("infinityValue", value.asInstanceOf[js.Any])
+    def setIsPercentUndefined: Self = StObject.set(x, "isPercent", js.undefined)
     
     @scala.inline
-    def deleteInfinityValue: Self = this.set("infinityValue", js.undefined)
+    def setMaxDecimalPlaces(value: Double): Self = StObject.set(x, "maxDecimalPlaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPercent(value: Boolean): Self = this.set("isPercent", value.asInstanceOf[js.Any])
+    def setMaxDecimalPlacesUndefined: Self = StObject.set(x, "maxDecimalPlaces", js.undefined)
     
     @scala.inline
-    def deleteIsPercent: Self = this.set("isPercent", js.undefined)
+    def setMaxSymbols(value: Double): Self = StObject.set(x, "maxSymbols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDecimalPlaces(value: Double): Self = this.set("maxDecimalPlaces", value.asInstanceOf[js.Any])
+    def setMaxSymbolsUndefined: Self = StObject.set(x, "maxSymbols", js.undefined)
     
     @scala.inline
-    def deleteMaxDecimalPlaces: Self = this.set("maxDecimalPlaces", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSymbols(value: Double): Self = this.set("maxSymbols", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMaxSymbols: Self = this.set("maxSymbols", js.undefined)
+    def setNegativeCurrencyFormat(value: String): Self = StObject.set(x, "negativeCurrencyFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNegativeCurrencyFormatUndefined: Self = StObject.set(x, "negativeCurrencyFormat", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNullValue(value: String): Self = StObject.set(x, "nullValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegativeCurrencyFormat(value: String): Self = this.set("negativeCurrencyFormat", value.asInstanceOf[js.Any])
+    def setNullValueUndefined: Self = StObject.set(x, "nullValue", js.undefined)
     
     @scala.inline
-    def deleteNegativeCurrencyFormat: Self = this.set("negativeCurrencyFormat", js.undefined)
+    def setPositiveCurrencyFormat(value: String): Self = StObject.set(x, "positiveCurrencyFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNullValue(value: String): Self = this.set("nullValue", value.asInstanceOf[js.Any])
+    def setPositiveCurrencyFormatUndefined: Self = StObject.set(x, "positiveCurrencyFormat", js.undefined)
     
     @scala.inline
-    def deleteNullValue: Self = this.set("nullValue", js.undefined)
+    def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositiveCurrencyFormat(value: String): Self = this.set("positiveCurrencyFormat", value.asInstanceOf[js.Any])
+    def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
     @scala.inline
-    def deletePositiveCurrencyFormat: Self = this.set("positiveCurrencyFormat", js.undefined)
+    def setThousandsSeparator(value: String): Self = StObject.set(x, "thousandsSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAlign(value: String): Self = this.set("textAlign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextAlign: Self = this.set("textAlign", js.undefined)
-    
-    @scala.inline
-    def setThousandsSeparator(value: String): Self = this.set("thousandsSeparator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThousandsSeparator: Self = this.set("thousandsSeparator", js.undefined)
+    def setThousandsSeparatorUndefined: Self = StObject.set(x, "thousandsSeparator", js.undefined)
   }
 }

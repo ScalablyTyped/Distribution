@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetIdentityPoolRolesInput extends js.Object {
+trait SetIdentityPoolRolesInput extends StObject {
   
   /**
     * An identity pool ID in the format REGION:GUID.
@@ -31,30 +32,18 @@ object SetIdentityPoolRolesInput {
   }
   
   @scala.inline
-  implicit class SetIdentityPoolRolesInputOps[Self <: SetIdentityPoolRolesInput] (val x: Self) extends AnyVal {
+  implicit class SetIdentityPoolRolesInputMutableBuilder[Self <: SetIdentityPoolRolesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoleMappings(value: RoleMappingMap): Self = StObject.set(x, "RoleMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoleMappingsUndefined: Self = StObject.set(x, "RoleMappings", js.undefined)
     
     @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = this.set("IdentityPoolId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoles(value: RolesMap): Self = this.set("Roles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoleMappings(value: RoleMappingMap): Self = this.set("RoleMappings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleMappings: Self = this.set("RoleMappings", js.undefined)
+    def setRoles(value: RolesMap): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
   }
 }

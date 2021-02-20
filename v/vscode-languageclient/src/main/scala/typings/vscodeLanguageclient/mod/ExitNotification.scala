@@ -1,13 +1,14 @@
 package typings.vscodeLanguageclient.mod
 
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "ExitNotification")
-@js.native
-object ExitNotification extends js.Object {
+object ExitNotification {
   
+  @JSImport("vscode-languageclient", "ExitNotification.type")
+  @js.native
   val `type`: ProtocolNotificationType0[Unit] = js.native
 }

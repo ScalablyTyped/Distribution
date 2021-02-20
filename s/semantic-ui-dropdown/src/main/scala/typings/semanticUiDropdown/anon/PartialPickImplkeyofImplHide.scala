@@ -1,12 +1,13 @@
 package typings.semanticUiDropdown.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-dropdown.SemanticUI.Dropdown.DelaySettings._Impl, keyof semantic-ui-dropdown.SemanticUI.Dropdown.DelaySettings._Impl>> */
 @js.native
-trait PartialPickImplkeyofImplHide extends js.Object {
+trait PartialPickImplkeyofImplHide extends StObject {
   
   var hide: js.UndefOr[Double] = js.native
   
@@ -25,42 +26,30 @@ object PartialPickImplkeyofImplHide {
   }
   
   @scala.inline
-  implicit class PartialPickImplkeyofImplHideOps[Self <: PartialPickImplkeyofImplHide] (val x: Self) extends AnyVal {
+  implicit class PartialPickImplkeyofImplHideMutableBuilder[Self <: PartialPickImplkeyofImplHide] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSearch(value: Double): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHide(value: Double): Self = this.set("hide", value.asInstanceOf[js.Any])
+    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
     @scala.inline
-    def deleteHide: Self = this.set("hide", js.undefined)
+    def setShow(value: Double): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch(value: Double): Self = this.set("search", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteSearch: Self = this.set("search", js.undefined)
+    def setTouch(value: Double): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Double): Self = this.set("show", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
-    
-    @scala.inline
-    def setTouch(value: Double): Self = this.set("touch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTouch: Self = this.set("touch", js.undefined)
+    def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
   }
 }

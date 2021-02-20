@@ -1,6 +1,7 @@
 package typings.microsoftGraph.mod
 
 import typings.microsoftGraph.microsoftGraphStrings.none_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.meetingTenativelyAccepted
   - typings.microsoftGraph.microsoftGraphStrings.meetingDeclined
 */
-trait MeetingMessageType extends js.Object
+trait MeetingMessageType extends StObject
 object MeetingMessageType {
   
   @scala.inline

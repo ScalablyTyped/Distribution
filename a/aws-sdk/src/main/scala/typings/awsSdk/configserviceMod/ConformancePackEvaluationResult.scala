@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConformancePackEvaluationResult extends js.Object {
+trait ConformancePackEvaluationResult extends StObject {
   
   /**
     * Supplementary information about how the evaluation determined the compliance. 
@@ -43,36 +44,24 @@ object ConformancePackEvaluationResult {
   }
   
   @scala.inline
-  implicit class ConformancePackEvaluationResultOps[Self <: ConformancePackEvaluationResult] (val x: Self) extends AnyVal {
+  implicit class ConformancePackEvaluationResultMutableBuilder[Self <: ConformancePackEvaluationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotation(value: Annotation): Self = StObject.set(x, "Annotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationUndefined: Self = StObject.set(x, "Annotation", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplianceType(value: ConformancePackComplianceType): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceType(value: ConformancePackComplianceType): Self = this.set("ComplianceType", value.asInstanceOf[js.Any])
+    def setConfigRuleInvokedTime(value: Date): Self = StObject.set(x, "ConfigRuleInvokedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigRuleInvokedTime(value: Date): Self = this.set("ConfigRuleInvokedTime", value.asInstanceOf[js.Any])
+    def setEvaluationResultIdentifier(value: EvaluationResultIdentifier): Self = StObject.set(x, "EvaluationResultIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluationResultIdentifier(value: EvaluationResultIdentifier): Self = this.set("EvaluationResultIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultRecordedTime(value: Date): Self = this.set("ResultRecordedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAnnotation(value: Annotation): Self = this.set("Annotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnnotation: Self = this.set("Annotation", js.undefined)
+    def setResultRecordedTime(value: Date): Self = StObject.set(x, "ResultRecordedTime", value.asInstanceOf[js.Any])
   }
 }

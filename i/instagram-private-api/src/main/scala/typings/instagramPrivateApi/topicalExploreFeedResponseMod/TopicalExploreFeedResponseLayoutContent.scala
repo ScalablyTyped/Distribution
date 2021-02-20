@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.topicalExploreFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicalExploreFeedResponseLayoutContent extends js.Object {
+trait TopicalExploreFeedResponseLayoutContent extends StObject {
   
   var fill_items: js.UndefOr[js.Array[TopicalExploreFeedResponseFillItemsItem]] = js.native
   
@@ -22,42 +23,30 @@ object TopicalExploreFeedResponseLayoutContent {
   }
   
   @scala.inline
-  implicit class TopicalExploreFeedResponseLayoutContentOps[Self <: TopicalExploreFeedResponseLayoutContent] (val x: Self) extends AnyVal {
+  implicit class TopicalExploreFeedResponseLayoutContentMutableBuilder[Self <: TopicalExploreFeedResponseLayoutContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFill_items(value: js.Array[TopicalExploreFeedResponseFillItemsItem]): Self = StObject.set(x, "fill_items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFill_itemsUndefined: Self = StObject.set(x, "fill_items", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFill_itemsVarargs(value: TopicalExploreFeedResponseFillItemsItem*): Self = StObject.set(x, "fill_items", js.Array(value :_*))
     
     @scala.inline
-    def setFill_itemsVarargs(value: TopicalExploreFeedResponseFillItemsItem*): Self = this.set("fill_items", js.Array(value :_*))
+    def setMedias(value: js.Array[TopicalExploreFeedResponseMediasItem]): Self = StObject.set(x, "medias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill_items(value: js.Array[TopicalExploreFeedResponseFillItemsItem]): Self = this.set("fill_items", value.asInstanceOf[js.Any])
+    def setMediasUndefined: Self = StObject.set(x, "medias", js.undefined)
     
     @scala.inline
-    def deleteFill_items: Self = this.set("fill_items", js.undefined)
+    def setMediasVarargs(value: TopicalExploreFeedResponseMediasItem*): Self = StObject.set(x, "medias", js.Array(value :_*))
     
     @scala.inline
-    def setMediasVarargs(value: TopicalExploreFeedResponseMediasItem*): Self = this.set("medias", js.Array(value :_*))
+    def setTwo_by_two_item(value: TopicalExploreFeedResponseTwoByTwoItem): Self = StObject.set(x, "two_by_two_item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedias(value: js.Array[TopicalExploreFeedResponseMediasItem]): Self = this.set("medias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMedias: Self = this.set("medias", js.undefined)
-    
-    @scala.inline
-    def setTwo_by_two_item(value: TopicalExploreFeedResponseTwoByTwoItem): Self = this.set("two_by_two_item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTwo_by_two_item: Self = this.set("two_by_two_item", js.undefined)
+    def setTwo_by_two_itemUndefined: Self = StObject.set(x, "two_by_two_item", js.undefined)
   }
 }

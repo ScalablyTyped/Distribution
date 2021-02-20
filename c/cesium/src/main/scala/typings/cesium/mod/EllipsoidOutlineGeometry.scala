@@ -1,6 +1,7 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.MaximumClock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,19 +11,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class EllipsoidOutlineGeometry () extends Packable {
   def this(options: MaximumClock) = this()
 }
-/* static members */
-@JSImport("cesium", "EllipsoidOutlineGeometry")
-@js.native
-object EllipsoidOutlineGeometry extends js.Object {
+object EllipsoidOutlineGeometry {
   
+  /* static member */
+  @JSImport("cesium", "EllipsoidOutlineGeometry.createGeometry")
+  @js.native
   def createGeometry(ellipsoidGeometry: EllipsoidOutlineGeometry): Geometry = js.native
   
+  /* static member */
+  @JSImport("cesium", "EllipsoidOutlineGeometry.unpack")
+  @js.native
   def unpack(array: js.Array[Double]): EllipsoidOutlineGeometry = js.native
+  @JSImport("cesium", "EllipsoidOutlineGeometry.unpack")
+  @js.native
   def unpack(
     array: js.Array[Double],
     startingIndex: js.UndefOr[scala.Nothing],
     result: EllipsoidOutlineGeometry
   ): EllipsoidOutlineGeometry = js.native
+  @JSImport("cesium", "EllipsoidOutlineGeometry.unpack")
+  @js.native
   def unpack(array: js.Array[Double], startingIndex: Double): EllipsoidOutlineGeometry = js.native
+  @JSImport("cesium", "EllipsoidOutlineGeometry.unpack")
+  @js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: EllipsoidOutlineGeometry): EllipsoidOutlineGeometry = js.native
 }

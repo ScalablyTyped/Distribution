@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DetectedProperties extends js.Object {
+trait DetectedProperties extends StObject {
   
   /**
     * The detected duration of the input file, in milliseconds.
@@ -41,48 +42,36 @@ object DetectedProperties {
   }
   
   @scala.inline
-  implicit class DetectedPropertiesOps[Self <: DetectedProperties] (val x: Self) extends AnyVal {
+  implicit class DetectedPropertiesMutableBuilder[Self <: DetectedProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDurationMillis(value: NullableLong): Self = StObject.set(x, "DurationMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationMillisUndefined: Self = StObject.set(x, "DurationMillis", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileSize(value: NullableLong): Self = StObject.set(x, "FileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationMillis(value: NullableLong): Self = this.set("DurationMillis", value.asInstanceOf[js.Any])
+    def setFileSizeUndefined: Self = StObject.set(x, "FileSize", js.undefined)
     
     @scala.inline
-    def deleteDurationMillis: Self = this.set("DurationMillis", js.undefined)
+    def setFrameRate(value: FloatString): Self = StObject.set(x, "FrameRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSize(value: NullableLong): Self = this.set("FileSize", value.asInstanceOf[js.Any])
+    def setFrameRateUndefined: Self = StObject.set(x, "FrameRate", js.undefined)
     
     @scala.inline
-    def deleteFileSize: Self = this.set("FileSize", js.undefined)
+    def setHeight(value: NullableInteger): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameRate(value: FloatString): Self = this.set("FrameRate", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "Height", js.undefined)
     
     @scala.inline
-    def deleteFrameRate: Self = this.set("FrameRate", js.undefined)
+    def setWidth(value: NullableInteger): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: NullableInteger): Self = this.set("Height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeight: Self = this.set("Height", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: NullableInteger): Self = this.set("Width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("Width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
   }
 }

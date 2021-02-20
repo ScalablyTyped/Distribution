@@ -1,6 +1,7 @@
 package typings.extjs.Ext.data
 
 import typings.extjs.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,54 +45,42 @@ object IDataWriter {
   }
   
   @scala.inline
-  implicit class IDataWriterOps[Self <: IDataWriter] (val x: Self) extends AnyVal {
+  implicit class IDataWriterMutableBuilder[Self <: IDataWriter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRecordData(value: (/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation]) => _): Self = StObject.set(x, "getRecordData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDateFormat(value: String): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    def setGetRecordDataUndefined: Self = StObject.set(x, "getRecordData", js.undefined)
     
     @scala.inline
-    def deleteDateFormat: Self = this.set("dateFormat", js.undefined)
+    def setNameProperty(value: String): Self = StObject.set(x, "nameProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRecordData(value: (/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation]) => _): Self = this.set("getRecordData", js.Any.fromFunction2(value))
+    def setNamePropertyUndefined: Self = StObject.set(x, "nameProperty", js.undefined)
     
     @scala.inline
-    def deleteGetRecordData: Self = this.set("getRecordData", js.undefined)
+    def setWrite(value: /* request */ js.UndefOr[IRequest] => IRequest): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNameProperty(value: String): Self = this.set("nameProperty", value.asInstanceOf[js.Any])
+    def setWriteAllFields(value: Boolean): Self = StObject.set(x, "writeAllFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNameProperty: Self = this.set("nameProperty", js.undefined)
+    def setWriteAllFieldsUndefined: Self = StObject.set(x, "writeAllFields", js.undefined)
     
     @scala.inline
-    def setWrite(value: /* request */ js.UndefOr[IRequest] => IRequest): Self = this.set("write", js.Any.fromFunction1(value))
+    def setWriteRecordId(value: Boolean): Self = StObject.set(x, "writeRecordId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWrite: Self = this.set("write", js.undefined)
+    def setWriteRecordIdUndefined: Self = StObject.set(x, "writeRecordId", js.undefined)
     
     @scala.inline
-    def setWriteAllFields(value: Boolean): Self = this.set("writeAllFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteAllFields: Self = this.set("writeAllFields", js.undefined)
-    
-    @scala.inline
-    def setWriteRecordId(value: Boolean): Self = this.set("writeRecordId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteRecordId: Self = this.set("writeRecordId", js.undefined)
+    def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
   }
 }

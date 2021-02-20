@@ -1,5 +1,6 @@
 package typings.pulumiPulumi.automationStackMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.pulumiPulumi.pulumiPulumiStrings.`create-replacement`
   - typings.pulumiPulumi.pulumiPulumiStrings.`delete-replaced`
 */
-trait OpType extends js.Object
+trait OpType extends StObject
 object OpType {
   
   @scala.inline

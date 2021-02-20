@@ -1,11 +1,12 @@
 package typings.saucelabs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoOnly extends js.Object {
+trait AutoOnly extends StObject {
   
   var autoOnly: js.UndefOr[Boolean] = js.native
   
@@ -36,78 +37,66 @@ object AutoOnly {
   }
   
   @scala.inline
-  implicit class AutoOnlyOps[Self <: AutoOnly] (val x: Self) extends AnyVal {
+  implicit class AutoOnlyMutableBuilder[Self <: AutoOnly] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoOnly(value: Boolean): Self = StObject.set(x, "autoOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoOnlyUndefined: Self = StObject.set(x, "autoOnly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoOnly(value: Boolean): Self = this.set("autoOnly", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def deleteAutoOnly: Self = this.set("autoOnly", js.undefined)
+    def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: Double): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFull(value: Boolean): Self = this.set("full", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteFull: Self = this.set("full", js.undefined)
+    def setManualOnly(value: Boolean): Self = StObject.set(x, "manualOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setManualOnlyUndefined: Self = StObject.set(x, "manualOnly", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualOnly(value: Boolean): Self = this.set("manualOnly", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteManualOnly: Self = this.set("manualOnly", js.undefined)
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOwnerType(value: String): Self = StObject.set(x, "ownerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOwnerTypeUndefined: Self = StObject.set(x, "ownerType", js.undefined)
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setSubaccounts(value: Boolean): Self = StObject.set(x, "subaccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerType(value: String): Self = this.set("ownerType", value.asInstanceOf[js.Any])
+    def setSubaccountsUndefined: Self = StObject.set(x, "subaccounts", js.undefined)
     
     @scala.inline
-    def deleteOwnerType: Self = this.set("ownerType", js.undefined)
+    def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubaccounts(value: Boolean): Self = this.set("subaccounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubaccounts: Self = this.set("subaccounts", js.undefined)
-    
-    @scala.inline
-    def setTo(value: Double): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("to", js.undefined)
+    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

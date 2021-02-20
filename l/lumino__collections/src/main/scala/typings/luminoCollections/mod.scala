@@ -2,14 +2,14 @@ package typings.luminoCollections
 
 import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
 import typings.luminoCollections.linkedlistMod.LinkedList.INode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@lumino/collections", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@lumino/collections", "BPlusTree")
   @js.native
   class BPlusTree[T] protected ()
     extends typings.luminoCollections.bplustreeMod.BPlusTree[T] {
@@ -20,8 +20,7 @@ object mod extends js.Object {
       */
     def this(cmp: js.Function2[/* a */ T, /* b */ T, Double]) = this()
   }
-  @js.native
-  object BPlusTree extends js.Object {
+  object BPlusTree {
     
     /**
       * Create a new B+ tree populated with the given items.
@@ -35,33 +34,24 @@ object mod extends js.Object {
       * #### Complexity
       * `O(n log32 n)`
       */
+    @JSImport("@lumino/collections", "BPlusTree.from")
+    @js.native
     def from[T](items: IterableOrArrayLike[T], cmp: js.Function2[/* a */ T, /* b */ T, Double]): typings.luminoCollections.bplustreeMod.BPlusTree[T] = js.native
   }
   
+  @JSImport("@lumino/collections", "LinkedList")
   @js.native
   /**
     * Construct a new linked list.
     */
   class LinkedList[T] ()
     extends typings.luminoCollections.linkedlistMod.LinkedList[T]
-  @js.native
-  object LinkedList extends js.Object {
-    
-    /**
-      * Create a linked list from an iterable of values.
-      *
-      * @param values - The iterable or array-like object of interest.
-      *
-      * @returns A new linked list initialized with the given values.
-      *
-      * #### Complexity
-      * Linear.
-      */
-    def from[T](values: IterableOrArrayLike[T]): typings.luminoCollections.linkedlistMod.LinkedList[T] = js.native
+  object LinkedList {
     
     /**
       * A forward iterator for nodes in a linked list.
       */
+    @JSImport("@lumino/collections", "LinkedList.ForwardNodeIterator")
     @js.native
     /**
       * Construct a forward node iterator.
@@ -76,6 +66,7 @@ object mod extends js.Object {
     /**
       * A forward iterator for values in a linked list.
       */
+    @JSImport("@lumino/collections", "LinkedList.ForwardValueIterator")
     @js.native
     /**
       * Construct a forward value iterator.
@@ -90,6 +81,7 @@ object mod extends js.Object {
     /**
       * A reverse iterator for nodes in a linked list.
       */
+    @JSImport("@lumino/collections", "LinkedList.RetroNodeIterator")
     @js.native
     /**
       * Construct a retro node iterator.
@@ -104,6 +96,7 @@ object mod extends js.Object {
     /**
       * A reverse iterator for values in a linked list.
       */
+    @JSImport("@lumino/collections", "LinkedList.RetroValueIterator")
     @js.native
     /**
       * Construct a retro value iterator.
@@ -114,5 +107,19 @@ object mod extends js.Object {
       extends typings.luminoCollections.linkedlistMod.LinkedList.RetroValueIterator[T] {
       def this(node: INode[T]) = this()
     }
+    
+    /**
+      * Create a linked list from an iterable of values.
+      *
+      * @param values - The iterable or array-like object of interest.
+      *
+      * @returns A new linked list initialized with the given values.
+      *
+      * #### Complexity
+      * Linear.
+      */
+    @JSImport("@lumino/collections", "LinkedList.from")
+    @js.native
+    def from[T](values: IterableOrArrayLike[T]): typings.luminoCollections.linkedlistMod.LinkedList[T] = js.native
   }
 }

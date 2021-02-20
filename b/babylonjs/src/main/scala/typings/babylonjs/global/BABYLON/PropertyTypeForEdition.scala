@@ -1,12 +1,13 @@
 package typings.babylonjs.global.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PropertyTypeForEdition")
 @js.native
-object PropertyTypeForEdition extends js.Object {
+object PropertyTypeForEdition extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.babylonjs.BABYLON.PropertyTypeForEdition with Double] = js.native

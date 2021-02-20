@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PipelineActivity extends js.Object {
+trait PipelineActivity extends StObject {
   
   /**
     * Adds other attributes based on existing attributes in the message.
@@ -66,78 +67,66 @@ object PipelineActivity {
   }
   
   @scala.inline
-  implicit class PipelineActivityOps[Self <: PipelineActivity] (val x: Self) extends AnyVal {
+  implicit class PipelineActivityMutableBuilder[Self <: PipelineActivity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddAttributes(value: AddAttributesActivity): Self = StObject.set(x, "addAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddAttributesUndefined: Self = StObject.set(x, "addAttributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannel(value: ChannelActivity): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddAttributes(value: AddAttributesActivity): Self = this.set("addAttributes", value.asInstanceOf[js.Any])
+    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
     @scala.inline
-    def deleteAddAttributes: Self = this.set("addAttributes", js.undefined)
+    def setDatastore(value: DatastoreActivity): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannel(value: ChannelActivity): Self = this.set("channel", value.asInstanceOf[js.Any])
+    def setDatastoreUndefined: Self = StObject.set(x, "datastore", js.undefined)
     
     @scala.inline
-    def deleteChannel: Self = this.set("channel", js.undefined)
+    def setDeviceRegistryEnrich(value: DeviceRegistryEnrichActivity): Self = StObject.set(x, "deviceRegistryEnrich", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatastore(value: DatastoreActivity): Self = this.set("datastore", value.asInstanceOf[js.Any])
+    def setDeviceRegistryEnrichUndefined: Self = StObject.set(x, "deviceRegistryEnrich", js.undefined)
     
     @scala.inline
-    def deleteDatastore: Self = this.set("datastore", js.undefined)
+    def setDeviceShadowEnrich(value: DeviceShadowEnrichActivity): Self = StObject.set(x, "deviceShadowEnrich", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceRegistryEnrich(value: DeviceRegistryEnrichActivity): Self = this.set("deviceRegistryEnrich", value.asInstanceOf[js.Any])
+    def setDeviceShadowEnrichUndefined: Self = StObject.set(x, "deviceShadowEnrich", js.undefined)
     
     @scala.inline
-    def deleteDeviceRegistryEnrich: Self = this.set("deviceRegistryEnrich", js.undefined)
+    def setFilter(value: FilterActivity): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceShadowEnrich(value: DeviceShadowEnrichActivity): Self = this.set("deviceShadowEnrich", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteDeviceShadowEnrich: Self = this.set("deviceShadowEnrich", js.undefined)
+    def setLambda(value: LambdaActivity): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: FilterActivity): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setMath(value: MathActivity): Self = StObject.set(x, "math", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLambda(value: LambdaActivity): Self = this.set("lambda", value.asInstanceOf[js.Any])
+    def setMathUndefined: Self = StObject.set(x, "math", js.undefined)
     
     @scala.inline
-    def deleteLambda: Self = this.set("lambda", js.undefined)
+    def setRemoveAttributes(value: RemoveAttributesActivity): Self = StObject.set(x, "removeAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMath(value: MathActivity): Self = this.set("math", value.asInstanceOf[js.Any])
+    def setRemoveAttributesUndefined: Self = StObject.set(x, "removeAttributes", js.undefined)
     
     @scala.inline
-    def deleteMath: Self = this.set("math", js.undefined)
+    def setSelectAttributes(value: SelectAttributesActivity): Self = StObject.set(x, "selectAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveAttributes(value: RemoveAttributesActivity): Self = this.set("removeAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveAttributes: Self = this.set("removeAttributes", js.undefined)
-    
-    @scala.inline
-    def setSelectAttributes(value: SelectAttributesActivity): Self = this.set("selectAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectAttributes: Self = this.set("selectAttributes", js.undefined)
+    def setSelectAttributesUndefined: Self = StObject.set(x, "selectAttributes", js.undefined)
   }
 }

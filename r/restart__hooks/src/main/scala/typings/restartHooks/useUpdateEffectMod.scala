@@ -2,13 +2,12 @@ package typings.restartHooks
 
 import typings.react.mod.DependencyList
 import typings.react.mod.EffectCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@restart/hooks/cjs/useUpdateEffect", JSImport.Namespace)
-@js.native
-object useUpdateEffectMod extends js.Object {
+object useUpdateEffectMod {
   
   /**
     * Runs an effect only when the dependencies have changed, skipping the
@@ -30,5 +29,7 @@ object useUpdateEffectMod extends js.Object {
     *
     * @category effects
     */
+  @JSImport("@restart/hooks/cjs/useUpdateEffect", JSImport.Default)
+  @js.native
   def default(fn: EffectCallback, deps: DependencyList): Unit = js.native
 }

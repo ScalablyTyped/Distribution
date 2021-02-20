@@ -1,11 +1,12 @@
 package typings.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContactMaterialOptions extends js.Object {
+trait ContactMaterialOptions extends StObject {
   
   var friction: js.UndefOr[Double] = js.native
   
@@ -30,60 +31,48 @@ object ContactMaterialOptions {
   }
   
   @scala.inline
-  implicit class ContactMaterialOptionsOps[Self <: ContactMaterialOptions] (val x: Self) extends AnyVal {
+  implicit class ContactMaterialOptionsMutableBuilder[Self <: ContactMaterialOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrictionRelaxation(value: Double): Self = StObject.set(x, "frictionRelaxation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrictionRelaxationUndefined: Self = StObject.set(x, "frictionRelaxation", js.undefined)
     
     @scala.inline
-    def setFriction(value: Double): Self = this.set("friction", value.asInstanceOf[js.Any])
+    def setFrictionStiffness(value: Double): Self = StObject.set(x, "frictionStiffness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFriction: Self = this.set("friction", js.undefined)
+    def setFrictionStiffnessUndefined: Self = StObject.set(x, "frictionStiffness", js.undefined)
     
     @scala.inline
-    def setFrictionRelaxation(value: Double): Self = this.set("frictionRelaxation", value.asInstanceOf[js.Any])
+    def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
     
     @scala.inline
-    def deleteFrictionRelaxation: Self = this.set("frictionRelaxation", js.undefined)
+    def setRelaxation(value: Double): Self = StObject.set(x, "relaxation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrictionStiffness(value: Double): Self = this.set("frictionStiffness", value.asInstanceOf[js.Any])
+    def setRelaxationUndefined: Self = StObject.set(x, "relaxation", js.undefined)
     
     @scala.inline
-    def deleteFrictionStiffness: Self = this.set("frictionStiffness", js.undefined)
+    def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelaxation(value: Double): Self = this.set("relaxation", value.asInstanceOf[js.Any])
+    def setRestitutionUndefined: Self = StObject.set(x, "restitution", js.undefined)
     
     @scala.inline
-    def deleteRelaxation: Self = this.set("relaxation", js.undefined)
+    def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestitution(value: Double): Self = this.set("restitution", value.asInstanceOf[js.Any])
+    def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
     
     @scala.inline
-    def deleteRestitution: Self = this.set("restitution", js.undefined)
+    def setSurfaceVelocity(value: Double): Self = StObject.set(x, "surfaceVelocity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStiffness(value: Double): Self = this.set("stiffness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStiffness: Self = this.set("stiffness", js.undefined)
-    
-    @scala.inline
-    def setSurfaceVelocity(value: Double): Self = this.set("surfaceVelocity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSurfaceVelocity: Self = this.set("surfaceVelocity", js.undefined)
+    def setSurfaceVelocityUndefined: Self = StObject.set(x, "surfaceVelocity", js.undefined)
   }
 }

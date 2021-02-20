@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstancingAttributeInfo extends js.Object {
+trait InstancingAttributeInfo extends StObject {
   
   /**
     * Name of the GLSL attribute
@@ -55,51 +56,39 @@ object InstancingAttributeInfo {
   }
   
   @scala.inline
-  implicit class InstancingAttributeInfoOps[Self <: InstancingAttributeInfo] (val x: Self) extends AnyVal {
+  implicit class InstancingAttributeInfoMutableBuilder[Self <: InstancingAttributeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeSize(value: Double): Self = StObject.set(x, "attributeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributeType(value: Double): Self = StObject.set(x, "attributeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeName(value: String): Self = this.set("attributeName", value.asInstanceOf[js.Any])
+    def setAttributeTypeUndefined: Self = StObject.set(x, "attributeType", js.undefined)
     
     @scala.inline
-    def setAttributeSize(value: Double): Self = this.set("attributeSize", value.asInstanceOf[js.Any])
+    def setDivisor(value: Double): Self = StObject.set(x, "divisor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setDivisorUndefined: Self = StObject.set(x, "divisor", js.undefined)
     
     @scala.inline
-    def setAttributeType(value: Double): Self = this.set("attributeType", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributeType: Self = this.set("attributeType", js.undefined)
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def setDivisor(value: Double): Self = this.set("divisor", value.asInstanceOf[js.Any])
+    def setNormalized(value: Boolean): Self = StObject.set(x, "normalized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDivisor: Self = this.set("divisor", js.undefined)
+    def setNormalizedUndefined: Self = StObject.set(x, "normalized", js.undefined)
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
-    
-    @scala.inline
-    def setNormalized(value: Boolean): Self = this.set("normalized", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNormalized: Self = this.set("normalized", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

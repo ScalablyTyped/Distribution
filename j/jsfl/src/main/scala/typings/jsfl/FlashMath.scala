@@ -1,11 +1,12 @@
 package typings.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlashMath extends js.Object {
+trait FlashMath extends StObject {
   
   /** Method; performs a matrix concatenation and returns the result. */
   def concatMatrix(mat1: FlashMatrix, mat2: FlashMatrix): FlashMatrix = js.native
@@ -29,27 +30,15 @@ object FlashMath {
   }
   
   @scala.inline
-  implicit class FlashMathOps[Self <: FlashMath] (val x: Self) extends AnyVal {
+  implicit class FlashMathMutableBuilder[Self <: FlashMath] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConcatMatrix(value: (FlashMatrix, FlashMatrix) => FlashMatrix): Self = StObject.set(x, "concatMatrix", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvertMatrix(value: FlashMatrix => FlashMatrix): Self = StObject.set(x, "invertMatrix", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConcatMatrix(value: (FlashMatrix, FlashMatrix) => FlashMatrix): Self = this.set("concatMatrix", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setInvertMatrix(value: FlashMatrix => FlashMatrix): Self = this.set("invertMatrix", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPointDistance(value: (FlashPoint, FlashPoint) => Double): Self = this.set("pointDistance", js.Any.fromFunction2(value))
+    def setPointDistance(value: (FlashPoint, FlashPoint) => Double): Self = StObject.set(x, "pointDistance", js.Any.fromFunction2(value))
   }
 }

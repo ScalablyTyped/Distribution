@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisassociateRoleFromGroupResponse extends js.Object {
+trait DisassociateRoleFromGroupResponse extends StObject {
   
   /**
     * The time, in milliseconds since the epoch, when the role was disassociated from the group.
@@ -21,24 +22,12 @@ object DisassociateRoleFromGroupResponse {
   }
   
   @scala.inline
-  implicit class DisassociateRoleFromGroupResponseOps[Self <: DisassociateRoleFromGroupResponse] (val x: Self) extends AnyVal {
+  implicit class DisassociateRoleFromGroupResponseMutableBuilder[Self <: DisassociateRoleFromGroupResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisassociatedAt(value: string): Self = StObject.set(x, "DisassociatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDisassociatedAt(value: string): Self = this.set("DisassociatedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisassociatedAt: Self = this.set("DisassociatedAt", js.undefined)
+    def setDisassociatedAtUndefined: Self = StObject.set(x, "DisassociatedAt", js.undefined)
   }
 }

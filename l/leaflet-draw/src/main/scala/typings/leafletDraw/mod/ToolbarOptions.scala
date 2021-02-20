@@ -5,12 +5,13 @@ import typings.leafletDraw.mod.DrawOptions.MarkerOptions
 import typings.leafletDraw.mod.DrawOptions.PolygonOptions
 import typings.leafletDraw.mod.DrawOptions.PolylineOptions
 import typings.leafletDraw.mod.DrawOptions.RectangleOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ToolbarOptions extends js.Object {
+trait ToolbarOptions extends StObject {
   
   var circle: js.UndefOr[CircleOptions] = js.native
   
@@ -33,54 +34,42 @@ object ToolbarOptions {
   }
   
   @scala.inline
-  implicit class ToolbarOptionsOps[Self <: ToolbarOptions] (val x: Self) extends AnyVal {
+  implicit class ToolbarOptionsMutableBuilder[Self <: ToolbarOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCircle(value: CircleOptions): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCirclemarker(value: CircleOptions): Self = StObject.set(x, "circlemarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircle(value: CircleOptions): Self = this.set("circle", value.asInstanceOf[js.Any])
+    def setCirclemarkerUndefined: Self = StObject.set(x, "circlemarker", js.undefined)
     
     @scala.inline
-    def deleteCircle: Self = this.set("circle", js.undefined)
+    def setMarker(value: MarkerOptions): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCirclemarker(value: CircleOptions): Self = this.set("circlemarker", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     @scala.inline
-    def deleteCirclemarker: Self = this.set("circlemarker", js.undefined)
+    def setPolygon(value: PolygonOptions): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: MarkerOptions): Self = this.set("marker", value.asInstanceOf[js.Any])
+    def setPolygonUndefined: Self = StObject.set(x, "polygon", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("marker", js.undefined)
+    def setPolyline(value: PolylineOptions): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolygon(value: PolygonOptions): Self = this.set("polygon", value.asInstanceOf[js.Any])
+    def setPolylineUndefined: Self = StObject.set(x, "polyline", js.undefined)
     
     @scala.inline
-    def deletePolygon: Self = this.set("polygon", js.undefined)
+    def setRectangle(value: RectangleOptions): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolyline(value: PolylineOptions): Self = this.set("polyline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolyline: Self = this.set("polyline", js.undefined)
-    
-    @scala.inline
-    def setRectangle(value: RectangleOptions): Self = this.set("rectangle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRectangle: Self = this.set("rectangle", js.undefined)
+    def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO find source documentation
 @js.native
-trait SaveWidget extends js.Object {
+trait SaveWidget extends StObject {
   
   def getAttribution(): Attribution = js.native
   
@@ -33,33 +34,21 @@ object SaveWidget {
   }
   
   @scala.inline
-  implicit class SaveWidgetOps[Self <: SaveWidget] (val x: Self) extends AnyVal {
+  implicit class SaveWidgetMutableBuilder[Self <: SaveWidget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAttribution(value: () => Attribution): Self = StObject.set(x, "getAttribution", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPlace(value: () => Place): Self = StObject.set(x, "getPlace", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetAttribution(value: Attribution => Unit): Self = StObject.set(x, "setAttribution", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAttribution(value: () => Attribution): Self = this.set("getAttribution", js.Any.fromFunction0(value))
+    def setSetOptions(value: SaveWidgetOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPlace(value: () => Place): Self = this.set("getPlace", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetAttribution(value: Attribution => Unit): Self = this.set("setAttribution", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOptions(value: SaveWidgetOptions => Unit): Self = this.set("setOptions", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPlace(value: Place => Unit): Self = this.set("setPlace", js.Any.fromFunction1(value))
+    def setSetPlace(value: Place => Unit): Self = StObject.set(x, "setPlace", js.Any.fromFunction1(value))
   }
 }

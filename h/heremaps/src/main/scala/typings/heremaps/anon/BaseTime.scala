@@ -1,11 +1,12 @@
 package typings.heremaps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseTime extends js.Object {
+trait BaseTime extends StObject {
   
   var baseTime: Double = js.native
   
@@ -35,39 +36,27 @@ object BaseTime {
   }
   
   @scala.inline
-  implicit class BaseTimeOps[Self <: BaseTime] (val x: Self) extends AnyVal {
+  implicit class BaseTimeMutableBuilder[Self <: BaseTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseTime(value: Double): Self = StObject.set(x, "baseTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseTime(value: Double): Self = this.set("baseTime", value.asInstanceOf[js.Any])
+    def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlagsVarargs(value: String*): Self = this.set("flags", js.Array(value :_*))
+    def setTrafficTime(value: Double): Self = StObject.set(x, "trafficTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: js.Array[String]): Self = this.set("flags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrafficTime(value: Double): Self = this.set("trafficTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTravelTime(value: Double): Self = this.set("travelTime", value.asInstanceOf[js.Any])
+    def setTravelTime(value: Double): Self = StObject.set(x, "travelTime", value.asInstanceOf[js.Any])
   }
 }

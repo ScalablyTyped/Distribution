@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Graphics.Printing3D
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a multi-property material group. */
 @js.native
-trait Printing3DMultiplePropertyMaterialGroup extends js.Object {
+trait Printing3DMultiplePropertyMaterialGroup extends StObject {
   
   /** Gets the identifier (ID) of the multi-property material group. */
   var materialGroupId: Double = js.native
@@ -31,27 +32,15 @@ object Printing3DMultiplePropertyMaterialGroup {
   }
   
   @scala.inline
-  implicit class Printing3DMultiplePropertyMaterialGroupOps[Self <: Printing3DMultiplePropertyMaterialGroup] (val x: Self) extends AnyVal {
+  implicit class Printing3DMultiplePropertyMaterialGroupMutableBuilder[Self <: Printing3DMultiplePropertyMaterialGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaterialGroupId(value: Double): Self = StObject.set(x, "materialGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaterialGroupIndices(value: IVector[Double]): Self = StObject.set(x, "materialGroupIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaterialGroupId(value: Double): Self = this.set("materialGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaterialGroupIndices(value: IVector[Double]): Self = this.set("materialGroupIndices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMultipleProperties(value: IVector[Printing3DMultiplePropertyMaterial]): Self = this.set("multipleProperties", value.asInstanceOf[js.Any])
+    def setMultipleProperties(value: IVector[Printing3DMultiplePropertyMaterial]): Self = StObject.set(x, "multipleProperties", value.asInstanceOf[js.Any])
   }
 }

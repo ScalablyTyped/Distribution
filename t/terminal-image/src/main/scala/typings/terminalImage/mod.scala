@@ -3,13 +3,12 @@ package typings.terminalImage
 import typings.terminalImage.anon.ReadonlyBuffer
 import typings.terminalImage.anon.Readonlywidthstringnumber
 import typings.terminalImage.anon.ReadonlywidthstringnumberHeight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("terminal-image", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Display images in the terminal.
@@ -39,7 +38,11 @@ object mod extends js.Object {
   	})();
   	```
   	*/
+  @JSImport("terminal-image", "buffer")
+  @js.native
   def buffer(imageBuffer: ReadonlyBuffer): js.Promise[String] = js.native
+  @JSImport("terminal-image", "buffer")
+  @js.native
   def buffer(imageBuffer: ReadonlyBuffer, options: Readonlywidthstringnumber): js.Promise[String] = js.native
   
   /**
@@ -68,7 +71,11 @@ object mod extends js.Object {
   	})();
   	```
   	*/
+  @JSImport("terminal-image", "file")
+  @js.native
   def file(filePath: String): js.Promise[String] = js.native
+  @JSImport("terminal-image", "file")
+  @js.native
   def file(filePath: String, options: Readonlywidthstringnumber): js.Promise[String] = js.native
   
   /**
@@ -102,7 +109,11 @@ object mod extends js.Object {
   	})();
   	```
   	*/
+  @JSImport("terminal-image", "gifBuffer")
+  @js.native
   def gifBuffer(imageBuffer: ReadonlyBuffer): js.Function0[Unit] = js.native
+  @JSImport("terminal-image", "gifBuffer")
+  @js.native
   def gifBuffer(imageBuffer: ReadonlyBuffer, options: ReadonlywidthstringnumberHeight): js.Function0[Unit] = js.native
   
   /**
@@ -134,11 +145,15 @@ object mod extends js.Object {
   	})();
   	```
   	*/
+  @JSImport("terminal-image", "gifFile")
+  @js.native
   def gifFile(filePath: String): js.Function0[Unit] = js.native
+  @JSImport("terminal-image", "gifFile")
+  @js.native
   def gifFile(filePath: String, options: ReadonlywidthstringnumberHeight): js.Function0[Unit] = js.native
   
   @js.native
-  trait RenderFrame extends js.Object {
+  trait RenderFrame extends StObject {
     
     /**
     		Custom handler which is run for each frame of the GIF.

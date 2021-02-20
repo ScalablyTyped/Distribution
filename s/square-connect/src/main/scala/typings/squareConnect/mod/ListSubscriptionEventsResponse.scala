@@ -1,13 +1,14 @@
 package typings.squareConnect.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ListSubscriptionEventsResponse")
 @js.native
-class ListSubscriptionEventsResponse () extends js.Object {
+class ListSubscriptionEventsResponse () extends StObject {
   
   /**
     * When a response is truncated, it includes a cursor that you can use in a subsequent request to fetch the next set of events.

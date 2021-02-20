@@ -1,11 +1,12 @@
 package typings.serverless.awsProviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CognitoUserPool extends js.Object {
+trait CognitoUserPool extends StObject {
   
   var existing: js.UndefOr[Boolean] = js.native
   
@@ -22,30 +23,18 @@ object CognitoUserPool {
   }
   
   @scala.inline
-  implicit class CognitoUserPoolOps[Self <: CognitoUserPool] (val x: Self) extends AnyVal {
+  implicit class CognitoUserPoolMutableBuilder[Self <: CognitoUserPool] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExisting(value: Boolean): Self = StObject.set(x, "existing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExistingUndefined: Self = StObject.set(x, "existing", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPool(value: String): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPool(value: String): Self = this.set("pool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrigger(value: String): Self = this.set("trigger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExisting(value: Boolean): Self = this.set("existing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExisting: Self = this.set("existing", js.undefined)
+    def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
   }
 }

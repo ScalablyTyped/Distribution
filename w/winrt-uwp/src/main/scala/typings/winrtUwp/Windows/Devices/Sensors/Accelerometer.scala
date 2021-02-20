@@ -6,13 +6,14 @@ import typings.winrtUwp.Windows.Graphics.Display.DisplayOrientations
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.readingchanged
 import typings.winrtUwp.winrtUwpStrings.shaken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an accelerometer sensor. */
 @js.native
-trait Accelerometer extends js.Object {
+trait Accelerometer extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

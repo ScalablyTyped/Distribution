@@ -1,5 +1,6 @@
 package typings.vscodeLanguageserver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +16,9 @@ trait BulkUnregistration
   def disposeSingle(arg: String): Boolean = js.native
   def disposeSingle(arg: typings.vscodeJsonrpc.messagesMod.MessageType): Boolean = js.native
 }
-@JSImport("vscode-languageserver", "BulkUnregistration")
-@js.native
-object BulkUnregistration extends js.Object {
+object BulkUnregistration {
   
+  @JSImport("vscode-languageserver", "BulkUnregistration.create")
+  @js.native
   def create(): BulkUnregistration = js.native
 }

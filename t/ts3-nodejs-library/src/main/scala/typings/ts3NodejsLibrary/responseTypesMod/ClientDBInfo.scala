@@ -1,6 +1,7 @@
 package typings.ts3NodejsLibrary.responseTypesMod
 
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,60 +61,48 @@ object ClientDBInfo {
   }
   
   @scala.inline
-  implicit class ClientDBInfoOps[Self <: ClientDBInfo] (val x: Self) extends AnyVal {
+  implicit class ClientDBInfoMutableBuilder[Self <: ClientDBInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientBase64HashClientUID(value: String): Self = StObject.set(x, "clientBase64HashClientUID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientCreated(value: Double): Self = StObject.set(x, "clientCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientDatabaseId(value: String): Self = StObject.set(x, "clientDatabaseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientBase64HashClientUID(value: String): Self = this.set("clientBase64HashClientUID", value.asInstanceOf[js.Any])
+    def setClientDescription(value: String): Self = StObject.set(x, "clientDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientCreated(value: Double): Self = this.set("clientCreated", value.asInstanceOf[js.Any])
+    def setClientFlagAvatar(value: String): Self = StObject.set(x, "clientFlagAvatar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientDatabaseId(value: String): Self = this.set("clientDatabaseId", value.asInstanceOf[js.Any])
+    def setClientLastconnected(value: Double): Self = StObject.set(x, "clientLastconnected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientDescription(value: String): Self = this.set("clientDescription", value.asInstanceOf[js.Any])
+    def setClientLastip(value: String): Self = StObject.set(x, "clientLastip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientFlagAvatar(value: String): Self = this.set("clientFlagAvatar", value.asInstanceOf[js.Any])
+    def setClientMonthBytesDownloaded(value: Double): Self = StObject.set(x, "clientMonthBytesDownloaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientLastconnected(value: Double): Self = this.set("clientLastconnected", value.asInstanceOf[js.Any])
+    def setClientMonthBytesUploaded(value: Double): Self = StObject.set(x, "clientMonthBytesUploaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientLastip(value: String): Self = this.set("clientLastip", value.asInstanceOf[js.Any])
+    def setClientNickname(value: String): Self = StObject.set(x, "clientNickname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientMonthBytesDownloaded(value: Double): Self = this.set("clientMonthBytesDownloaded", value.asInstanceOf[js.Any])
+    def setClientTotalBytesDownloaded(value: Double): Self = StObject.set(x, "clientTotalBytesDownloaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientMonthBytesUploaded(value: Double): Self = this.set("clientMonthBytesUploaded", value.asInstanceOf[js.Any])
+    def setClientTotalBytesUploaded(value: Double): Self = StObject.set(x, "clientTotalBytesUploaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientNickname(value: String): Self = this.set("clientNickname", value.asInstanceOf[js.Any])
+    def setClientTotalconnections(value: Double): Self = StObject.set(x, "clientTotalconnections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientTotalBytesDownloaded(value: Double): Self = this.set("clientTotalBytesDownloaded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientTotalBytesUploaded(value: Double): Self = this.set("clientTotalBytesUploaded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientTotalconnections(value: Double): Self = this.set("clientTotalconnections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientUniqueIdentifier(value: String): Self = this.set("clientUniqueIdentifier", value.asInstanceOf[js.Any])
+    def setClientUniqueIdentifier(value: String): Self = StObject.set(x, "clientUniqueIdentifier", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.uiGrid.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ALL extends js.Object {
+trait ALL extends StObject {
   
   var ALL: String = js.native
   
@@ -26,33 +27,21 @@ object ALL {
   }
   
   @scala.inline
-  implicit class ALLOps[Self <: ALL] (val x: Self) extends AnyVal {
+  implicit class ALLMutableBuilder[Self <: ALL] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setALL(value: String): Self = StObject.set(x, "ALL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCOLUMN(value: String): Self = StObject.set(x, "COLUMN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEDIT(value: String): Self = StObject.set(x, "EDIT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setALL(value: String): Self = this.set("ALL", value.asInstanceOf[js.Any])
+    def setOPTIONS(value: String): Self = StObject.set(x, "OPTIONS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCOLUMN(value: String): Self = this.set("COLUMN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEDIT(value: String): Self = this.set("EDIT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOPTIONS(value: String): Self = this.set("OPTIONS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setROW(value: String): Self = this.set("ROW", value.asInstanceOf[js.Any])
+    def setROW(value: String): Self = StObject.set(x, "ROW", value.asInstanceOf[js.Any])
   }
 }

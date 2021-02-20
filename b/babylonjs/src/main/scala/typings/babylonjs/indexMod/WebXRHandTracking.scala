@@ -1,6 +1,7 @@
 package typings.babylonjs.indexMod
 
 import typings.babylonjs.webXRHandTrackingMod.IWebXRHandTrackingOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,13 +24,17 @@ class WebXRHandTracking protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/index", "WebXRHandTracking")
-@js.native
-object WebXRHandTracking extends js.Object {
+object WebXRHandTracking {
+  
+  @JSImport("babylonjs/index", "WebXRHandTracking")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The module's name
     */
+  @JSImport("babylonjs/index", "WebXRHandTracking.Name")
+  @js.native
   val Name: String = js.native
   
   /**
@@ -37,7 +42,13 @@ object WebXRHandTracking extends js.Object {
     * This is an integer representing the implementation version.
     * This number does not correspond to the WebXR specs version
     */
+  @JSImport("babylonjs/index", "WebXRHandTracking.Version")
+  @js.native
   val Version: Double = js.native
   
-  var _idCounter: js.Any = js.native
+  @JSImport("babylonjs/index", "WebXRHandTracking._idCounter")
+  @js.native
+  def _idCounter: js.Any = js.native
+  @scala.inline
+  def _idCounter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_idCounter")(x.asInstanceOf[js.Any])
 }

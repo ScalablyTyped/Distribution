@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangeNotificationEncryptedContent extends js.Object {
+trait ChangeNotificationEncryptedContent extends StObject {
   
   /**
     * Base64-encoded encrypted data that produces a full resource respresented as JSON. The data has been encrypted with the
@@ -39,48 +40,36 @@ object ChangeNotificationEncryptedContent {
   }
   
   @scala.inline
-  implicit class ChangeNotificationEncryptedContentOps[Self <: ChangeNotificationEncryptedContent] (val x: Self) extends AnyVal {
+  implicit class ChangeNotificationEncryptedContentMutableBuilder[Self <: ChangeNotificationEncryptedContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataKey(value: String): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataKeyUndefined: Self = StObject.set(x, "dataKey", js.undefined)
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDataSignature(value: String): Self = StObject.set(x, "dataSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDataSignatureUndefined: Self = StObject.set(x, "dataSignature", js.undefined)
     
     @scala.inline
-    def setDataKey(value: String): Self = this.set("dataKey", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteDataKey: Self = this.set("dataKey", js.undefined)
+    def setEncryptionCertificateId(value: String): Self = StObject.set(x, "encryptionCertificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSignature(value: String): Self = this.set("dataSignature", value.asInstanceOf[js.Any])
+    def setEncryptionCertificateIdUndefined: Self = StObject.set(x, "encryptionCertificateId", js.undefined)
     
     @scala.inline
-    def deleteDataSignature: Self = this.set("dataSignature", js.undefined)
+    def setEncryptionCertificateThumbprint(value: String): Self = StObject.set(x, "encryptionCertificateThumbprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionCertificateId(value: String): Self = this.set("encryptionCertificateId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionCertificateId: Self = this.set("encryptionCertificateId", js.undefined)
-    
-    @scala.inline
-    def setEncryptionCertificateThumbprint(value: String): Self = this.set("encryptionCertificateThumbprint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionCertificateThumbprint: Self = this.set("encryptionCertificateThumbprint", js.undefined)
+    def setEncryptionCertificateThumbprintUndefined: Self = StObject.set(x, "encryptionCertificateThumbprint", js.undefined)
   }
 }

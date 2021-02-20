@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -104,120 +105,108 @@ object ObservationComponent {
   }
   
   @scala.inline
-  implicit class ObservationComponentOps[Self <: ObservationComponent] (val x: Self) extends AnyVal {
+  implicit class ObservationComponentMutableBuilder[Self <: ObservationComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataAbsentReason(value: CodeableConcept): Self = StObject.set(x, "dataAbsentReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataAbsentReasonUndefined: Self = StObject.set(x, "dataAbsentReason", js.undefined)
     
     @scala.inline
-    def setCode(value: CodeableConcept): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setInterpretation(value: CodeableConcept): Self = StObject.set(x, "interpretation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_valueDateTime(value: Element): Self = this.set("_valueDateTime", value.asInstanceOf[js.Any])
+    def setInterpretationUndefined: Self = StObject.set(x, "interpretation", js.undefined)
     
     @scala.inline
-    def delete_valueDateTime: Self = this.set("_valueDateTime", js.undefined)
+    def setReferenceRange(value: js.Array[ObservationReferenceRange]): Self = StObject.set(x, "referenceRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_valueString(value: Element): Self = this.set("_valueString", value.asInstanceOf[js.Any])
+    def setReferenceRangeUndefined: Self = StObject.set(x, "referenceRange", js.undefined)
     
     @scala.inline
-    def delete_valueString: Self = this.set("_valueString", js.undefined)
+    def setReferenceRangeVarargs(value: ObservationReferenceRange*): Self = StObject.set(x, "referenceRange", js.Array(value :_*))
     
     @scala.inline
-    def set_valueTime(value: Element): Self = this.set("_valueTime", value.asInstanceOf[js.Any])
+    def setValueAttachment(value: Attachment): Self = StObject.set(x, "valueAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_valueTime: Self = this.set("_valueTime", js.undefined)
+    def setValueAttachmentUndefined: Self = StObject.set(x, "valueAttachment", js.undefined)
     
     @scala.inline
-    def setDataAbsentReason(value: CodeableConcept): Self = this.set("dataAbsentReason", value.asInstanceOf[js.Any])
+    def setValueCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "valueCodeableConcept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataAbsentReason: Self = this.set("dataAbsentReason", js.undefined)
+    def setValueCodeableConceptUndefined: Self = StObject.set(x, "valueCodeableConcept", js.undefined)
     
     @scala.inline
-    def setInterpretation(value: CodeableConcept): Self = this.set("interpretation", value.asInstanceOf[js.Any])
+    def setValueDateTime(value: dateTime): Self = StObject.set(x, "valueDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInterpretation: Self = this.set("interpretation", js.undefined)
+    def setValueDateTimeUndefined: Self = StObject.set(x, "valueDateTime", js.undefined)
     
     @scala.inline
-    def setReferenceRangeVarargs(value: ObservationReferenceRange*): Self = this.set("referenceRange", js.Array(value :_*))
+    def setValuePeriod(value: Period): Self = StObject.set(x, "valuePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceRange(value: js.Array[ObservationReferenceRange]): Self = this.set("referenceRange", value.asInstanceOf[js.Any])
+    def setValuePeriodUndefined: Self = StObject.set(x, "valuePeriod", js.undefined)
     
     @scala.inline
-    def deleteReferenceRange: Self = this.set("referenceRange", js.undefined)
+    def setValueQuantity(value: Quantity): Self = StObject.set(x, "valueQuantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueAttachment(value: Attachment): Self = this.set("valueAttachment", value.asInstanceOf[js.Any])
+    def setValueQuantityUndefined: Self = StObject.set(x, "valueQuantity", js.undefined)
     
     @scala.inline
-    def deleteValueAttachment: Self = this.set("valueAttachment", js.undefined)
+    def setValueRange(value: Range): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueCodeableConcept(value: CodeableConcept): Self = this.set("valueCodeableConcept", value.asInstanceOf[js.Any])
+    def setValueRangeUndefined: Self = StObject.set(x, "valueRange", js.undefined)
     
     @scala.inline
-    def deleteValueCodeableConcept: Self = this.set("valueCodeableConcept", js.undefined)
+    def setValueRatio(value: Ratio): Self = StObject.set(x, "valueRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueDateTime(value: dateTime): Self = this.set("valueDateTime", value.asInstanceOf[js.Any])
+    def setValueRatioUndefined: Self = StObject.set(x, "valueRatio", js.undefined)
     
     @scala.inline
-    def deleteValueDateTime: Self = this.set("valueDateTime", js.undefined)
+    def setValueSampledData(value: SampledData): Self = StObject.set(x, "valueSampledData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValuePeriod(value: Period): Self = this.set("valuePeriod", value.asInstanceOf[js.Any])
+    def setValueSampledDataUndefined: Self = StObject.set(x, "valueSampledData", js.undefined)
     
     @scala.inline
-    def deleteValuePeriod: Self = this.set("valuePeriod", js.undefined)
+    def setValueString(value: String): Self = StObject.set(x, "valueString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueQuantity(value: Quantity): Self = this.set("valueQuantity", value.asInstanceOf[js.Any])
+    def setValueStringUndefined: Self = StObject.set(x, "valueString", js.undefined)
     
     @scala.inline
-    def deleteValueQuantity: Self = this.set("valueQuantity", js.undefined)
+    def setValueTime(value: time): Self = StObject.set(x, "valueTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueRange(value: Range): Self = this.set("valueRange", value.asInstanceOf[js.Any])
+    def setValueTimeUndefined: Self = StObject.set(x, "valueTime", js.undefined)
     
     @scala.inline
-    def deleteValueRange: Self = this.set("valueRange", js.undefined)
+    def set_valueDateTime(value: Element): Self = StObject.set(x, "_valueDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueRatio(value: Ratio): Self = this.set("valueRatio", value.asInstanceOf[js.Any])
+    def set_valueDateTimeUndefined: Self = StObject.set(x, "_valueDateTime", js.undefined)
     
     @scala.inline
-    def deleteValueRatio: Self = this.set("valueRatio", js.undefined)
+    def set_valueString(value: Element): Self = StObject.set(x, "_valueString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueSampledData(value: SampledData): Self = this.set("valueSampledData", value.asInstanceOf[js.Any])
+    def set_valueStringUndefined: Self = StObject.set(x, "_valueString", js.undefined)
     
     @scala.inline
-    def deleteValueSampledData: Self = this.set("valueSampledData", js.undefined)
+    def set_valueTime(value: Element): Self = StObject.set(x, "_valueTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueString(value: String): Self = this.set("valueString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueString: Self = this.set("valueString", js.undefined)
-    
-    @scala.inline
-    def setValueTime(value: time): Self = this.set("valueTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueTime: Self = this.set("valueTime", js.undefined)
+    def set_valueTimeUndefined: Self = StObject.set(x, "_valueTime", js.undefined)
   }
 }

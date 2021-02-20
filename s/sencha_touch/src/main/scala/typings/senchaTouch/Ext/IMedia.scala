@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -175,240 +176,228 @@ object IMedia {
   }
   
   @scala.inline
-  implicit class IMediaOps[Self <: IMedia] (val x: Self) extends AnyVal {
+  implicit class IMediaMutableBuilder[Self <: IMedia] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoPause(value: Boolean): Self = StObject.set(x, "autoPause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoPauseUndefined: Self = StObject.set(x, "autoPause", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoResume(value: Boolean): Self = StObject.set(x, "autoResume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPause(value: Boolean): Self = this.set("autoPause", value.asInstanceOf[js.Any])
+    def setAutoResumeUndefined: Self = StObject.set(x, "autoResume", js.undefined)
     
     @scala.inline
-    def deleteAutoPause: Self = this.set("autoPause", js.undefined)
+    def setEnableControls(value: Boolean): Self = StObject.set(x, "enableControls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoResume(value: Boolean): Self = this.set("autoResume", value.asInstanceOf[js.Any])
+    def setEnableControlsUndefined: Self = StObject.set(x, "enableControls", js.undefined)
     
     @scala.inline
-    def deleteAutoResume: Self = this.set("autoResume", js.undefined)
+    def setGetAutoPause(value: () => Boolean): Self = StObject.set(x, "getAutoPause", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnableControls(value: Boolean): Self = this.set("enableControls", value.asInstanceOf[js.Any])
+    def setGetAutoPauseUndefined: Self = StObject.set(x, "getAutoPause", js.undefined)
     
     @scala.inline
-    def deleteEnableControls: Self = this.set("enableControls", js.undefined)
+    def setGetAutoResume(value: () => Boolean): Self = StObject.set(x, "getAutoResume", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAutoPause(value: () => Boolean): Self = this.set("getAutoPause", js.Any.fromFunction0(value))
+    def setGetAutoResumeUndefined: Self = StObject.set(x, "getAutoResume", js.undefined)
     
     @scala.inline
-    def deleteGetAutoPause: Self = this.set("getAutoPause", js.undefined)
+    def setGetCurrentTime(value: () => Double): Self = StObject.set(x, "getCurrentTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAutoResume(value: () => Boolean): Self = this.set("getAutoResume", js.Any.fromFunction0(value))
+    def setGetCurrentTimeUndefined: Self = StObject.set(x, "getCurrentTime", js.undefined)
     
     @scala.inline
-    def deleteGetAutoResume: Self = this.set("getAutoResume", js.undefined)
+    def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentTime(value: () => Double): Self = this.set("getCurrentTime", js.Any.fromFunction0(value))
+    def setGetDurationUndefined: Self = StObject.set(x, "getDuration", js.undefined)
     
     @scala.inline
-    def deleteGetCurrentTime: Self = this.set("getCurrentTime", js.undefined)
+    def setGetEnableControls(value: () => Boolean): Self = StObject.set(x, "getEnableControls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDuration(value: () => Double): Self = this.set("getDuration", js.Any.fromFunction0(value))
+    def setGetEnableControlsUndefined: Self = StObject.set(x, "getEnableControls", js.undefined)
     
     @scala.inline
-    def deleteGetDuration: Self = this.set("getDuration", js.undefined)
+    def setGetLoop(value: () => Boolean): Self = StObject.set(x, "getLoop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEnableControls(value: () => Boolean): Self = this.set("getEnableControls", js.Any.fromFunction0(value))
+    def setGetLoopUndefined: Self = StObject.set(x, "getLoop", js.undefined)
     
     @scala.inline
-    def deleteGetEnableControls: Self = this.set("getEnableControls", js.undefined)
+    def setGetMedia(value: () => IElement): Self = StObject.set(x, "getMedia", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLoop(value: () => Boolean): Self = this.set("getLoop", js.Any.fromFunction0(value))
+    def setGetMediaUndefined: Self = StObject.set(x, "getMedia", js.undefined)
     
     @scala.inline
-    def deleteGetLoop: Self = this.set("getLoop", js.undefined)
+    def setGetMuted(value: () => Boolean): Self = StObject.set(x, "getMuted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMedia(value: () => IElement): Self = this.set("getMedia", js.Any.fromFunction0(value))
+    def setGetMutedUndefined: Self = StObject.set(x, "getMuted", js.undefined)
     
     @scala.inline
-    def deleteGetMedia: Self = this.set("getMedia", js.undefined)
+    def setGetPreload(value: () => Boolean): Self = StObject.set(x, "getPreload", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMuted(value: () => Boolean): Self = this.set("getMuted", js.Any.fromFunction0(value))
+    def setGetPreloadUndefined: Self = StObject.set(x, "getPreload", js.undefined)
     
     @scala.inline
-    def deleteGetMuted: Self = this.set("getMuted", js.undefined)
+    def setGetUrl(value: () => java.lang.String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPreload(value: () => Boolean): Self = this.set("getPreload", js.Any.fromFunction0(value))
+    def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)
     
     @scala.inline
-    def deleteGetPreload: Self = this.set("getPreload", js.undefined)
+    def setGetVolume(value: () => Double): Self = StObject.set(x, "getVolume", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetUrl(value: () => java.lang.String): Self = this.set("getUrl", js.Any.fromFunction0(value))
+    def setGetVolumeUndefined: Self = StObject.set(x, "getVolume", js.undefined)
     
     @scala.inline
-    def deleteGetUrl: Self = this.set("getUrl", js.undefined)
+    def setIsPlaying(value: () => Boolean): Self = StObject.set(x, "isPlaying", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetVolume(value: () => Double): Self = this.set("getVolume", js.Any.fromFunction0(value))
+    def setIsPlayingUndefined: Self = StObject.set(x, "isPlaying", js.undefined)
     
     @scala.inline
-    def deleteGetVolume: Self = this.set("getVolume", js.undefined)
+    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPlaying(value: () => Boolean): Self = this.set("isPlaying", js.Any.fromFunction0(value))
+    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
     @scala.inline
-    def deleteIsPlaying: Self = this.set("isPlaying", js.undefined)
+    def setMedia(value: IElement): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
     @scala.inline
-    def deleteLoop: Self = this.set("loop", js.undefined)
+    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia(value: IElement): Self = this.set("media", value.asInstanceOf[js.Any])
+    def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
     
     @scala.inline
-    def deleteMedia: Self = this.set("media", js.undefined)
+    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMuted(value: Boolean): Self = this.set("muted", value.asInstanceOf[js.Any])
+    def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
     
     @scala.inline
-    def deleteMuted: Self = this.set("muted", js.undefined)
+    def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPause(value: () => Unit): Self = this.set("pause", js.Any.fromFunction0(value))
+    def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
     
     @scala.inline
-    def deletePause: Self = this.set("pause", js.undefined)
+    def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlay(value: () => Unit): Self = this.set("play", js.Any.fromFunction0(value))
+    def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
     
     @scala.inline
-    def deletePlay: Self = this.set("play", js.undefined)
+    def setSetAutoPause(value: /* autoPause */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAutoPause", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPreload(value: Boolean): Self = this.set("preload", value.asInstanceOf[js.Any])
+    def setSetAutoPauseUndefined: Self = StObject.set(x, "setAutoPause", js.undefined)
     
     @scala.inline
-    def deletePreload: Self = this.set("preload", js.undefined)
+    def setSetAutoResume(value: /* autoResume */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAutoResume", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAutoPause(value: /* autoPause */ js.UndefOr[Boolean] => Unit): Self = this.set("setAutoPause", js.Any.fromFunction1(value))
+    def setSetAutoResumeUndefined: Self = StObject.set(x, "setAutoResume", js.undefined)
     
     @scala.inline
-    def deleteSetAutoPause: Self = this.set("setAutoPause", js.undefined)
+    def setSetEnableControls(value: /* enableControls */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setEnableControls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAutoResume(value: /* autoResume */ js.UndefOr[Boolean] => Unit): Self = this.set("setAutoResume", js.Any.fromFunction1(value))
+    def setSetEnableControlsUndefined: Self = StObject.set(x, "setEnableControls", js.undefined)
     
     @scala.inline
-    def deleteSetAutoResume: Self = this.set("setAutoResume", js.undefined)
+    def setSetLoop(value: /* loop */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setLoop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetEnableControls(value: /* enableControls */ js.UndefOr[Boolean] => Unit): Self = this.set("setEnableControls", js.Any.fromFunction1(value))
+    def setSetLoopUndefined: Self = StObject.set(x, "setLoop", js.undefined)
     
     @scala.inline
-    def deleteSetEnableControls: Self = this.set("setEnableControls", js.undefined)
+    def setSetMedia(value: /* media */ js.UndefOr[IElement] => Unit): Self = StObject.set(x, "setMedia", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLoop(value: /* loop */ js.UndefOr[Boolean] => Unit): Self = this.set("setLoop", js.Any.fromFunction1(value))
+    def setSetMediaUndefined: Self = StObject.set(x, "setMedia", js.undefined)
     
     @scala.inline
-    def deleteSetLoop: Self = this.set("setLoop", js.undefined)
+    def setSetMuted(value: /* muted */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setMuted", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMedia(value: /* media */ js.UndefOr[IElement] => Unit): Self = this.set("setMedia", js.Any.fromFunction1(value))
+    def setSetMutedUndefined: Self = StObject.set(x, "setMuted", js.undefined)
     
     @scala.inline
-    def deleteSetMedia: Self = this.set("setMedia", js.undefined)
+    def setSetPreload(value: /* preload */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setPreload", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMuted(value: /* muted */ js.UndefOr[Boolean] => Unit): Self = this.set("setMuted", js.Any.fromFunction1(value))
+    def setSetPreloadUndefined: Self = StObject.set(x, "setPreload", js.undefined)
     
     @scala.inline
-    def deleteSetMuted: Self = this.set("setMuted", js.undefined)
+    def setSetUrl(value: /* url */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetPreload(value: /* preload */ js.UndefOr[Boolean] => Unit): Self = this.set("setPreload", js.Any.fromFunction1(value))
+    def setSetUrlUndefined: Self = StObject.set(x, "setUrl", js.undefined)
     
     @scala.inline
-    def deleteSetPreload: Self = this.set("setPreload", js.undefined)
+    def setSetVolume(value: /* volume */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setVolume", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetUrl(value: /* url */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setUrl", js.Any.fromFunction1(value))
+    def setSetVolumeUndefined: Self = StObject.set(x, "setVolume", js.undefined)
     
     @scala.inline
-    def deleteSetUrl: Self = this.set("setUrl", js.undefined)
+    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetVolume(value: /* volume */ js.UndefOr[Double] => Unit): Self = this.set("setVolume", js.Any.fromFunction1(value))
+    def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
     
     @scala.inline
-    def deleteSetVolume: Self = this.set("setVolume", js.undefined)
+    def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStop(value: () => Unit): Self = this.set("stop", js.Any.fromFunction0(value))
+    def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     
     @scala.inline
-    def deleteStop: Self = this.set("stop", js.undefined)
+    def setUpdateEnableControls(value: /* enableControls */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updateEnableControls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToggle(value: () => Unit): Self = this.set("toggle", js.Any.fromFunction0(value))
+    def setUpdateEnableControlsUndefined: Self = StObject.set(x, "updateEnableControls", js.undefined)
     
     @scala.inline
-    def deleteToggle: Self = this.set("toggle", js.undefined)
+    def setUpdateLoop(value: /* loop */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updateLoop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUpdateEnableControls(value: /* enableControls */ js.UndefOr[js.Any] => Unit): Self = this.set("updateEnableControls", js.Any.fromFunction1(value))
+    def setUpdateLoopUndefined: Self = StObject.set(x, "updateLoop", js.undefined)
     
     @scala.inline
-    def deleteUpdateEnableControls: Self = this.set("updateEnableControls", js.undefined)
+    def setUpdateUrl(value: /* newUrl */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updateUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUpdateLoop(value: /* loop */ js.UndefOr[js.Any] => Unit): Self = this.set("updateLoop", js.Any.fromFunction1(value))
+    def setUpdateUrlUndefined: Self = StObject.set(x, "updateUrl", js.undefined)
     
     @scala.inline
-    def deleteUpdateLoop: Self = this.set("updateLoop", js.undefined)
+    def setUrl(value: java.lang.String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateUrl(value: /* newUrl */ js.UndefOr[js.Any] => Unit): Self = this.set("updateUrl", js.Any.fromFunction1(value))
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteUpdateUrl: Self = this.set("updateUrl", js.undefined)
+    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: java.lang.String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setVolume(value: Double): Self = this.set("volume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolume: Self = this.set("volume", js.undefined)
+    def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
   }
 }

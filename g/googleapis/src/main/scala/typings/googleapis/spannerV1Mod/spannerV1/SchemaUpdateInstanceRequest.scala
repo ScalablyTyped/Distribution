@@ -1,5 +1,6 @@
 package typings.googleapis.spannerV1Mod.spannerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The request for UpdateInstance.
   */
 @js.native
-trait SchemaUpdateInstanceRequest extends js.Object {
+trait SchemaUpdateInstanceRequest extends StObject {
   
   /**
     * Required. A mask specifying which fields in
@@ -36,30 +37,18 @@ object SchemaUpdateInstanceRequest {
   }
   
   @scala.inline
-  implicit class SchemaUpdateInstanceRequestOps[Self <: SchemaUpdateInstanceRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaUpdateInstanceRequestMutableBuilder[Self <: SchemaUpdateInstanceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldMask(value: String): Self = StObject.set(x, "fieldMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldMaskUndefined: Self = StObject.set(x, "fieldMask", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstance(value: SchemaInstance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldMask(value: String): Self = this.set("fieldMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFieldMask: Self = this.set("fieldMask", js.undefined)
-    
-    @scala.inline
-    def setInstance(value: SchemaInstance): Self = this.set("instance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstance: Self = this.set("instance", js.undefined)
+    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
   }
 }

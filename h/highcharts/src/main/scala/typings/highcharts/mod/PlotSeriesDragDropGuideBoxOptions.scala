@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotSeriesDragDropGuideBoxOptions extends js.Object {
+trait PlotSeriesDragDropGuideBoxOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Style options for the guide box
@@ -22,24 +23,12 @@ object PlotSeriesDragDropGuideBoxOptions {
   }
   
   @scala.inline
-  implicit class PlotSeriesDragDropGuideBoxOptionsOps[Self <: PlotSeriesDragDropGuideBoxOptions] (val x: Self) extends AnyVal {
+  implicit class PlotSeriesDragDropGuideBoxOptionsMutableBuilder[Self <: PlotSeriesDragDropGuideBoxOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDefault(value: DragDropGuideBoxOptionsObject): Self = this.set("default", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.knockoutPreRendered
 
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutBindingContext extends js.Object {
+trait KnockoutBindingContext extends StObject {
   
   @JSName("$component")
   var $component: js.Any = js.native

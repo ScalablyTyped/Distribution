@@ -5,14 +5,14 @@ import typings.three.colorMod.Color
 import typings.three.geometryMod.Geometry
 import typings.three.lineSegmentsMod.LineSegments
 import typings.three.materialMod.Material
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/helpers/GridHelper", JSImport.Namespace)
-@js.native
-object gridHelperMod extends js.Object {
+object gridHelperMod {
   
+  @JSImport("three/src/helpers/GridHelper", "GridHelper")
   @js.native
   class GridHelper protected ()
     extends LineSegments[Geometry | BufferGeometry, Material | js.Array[Material]] {

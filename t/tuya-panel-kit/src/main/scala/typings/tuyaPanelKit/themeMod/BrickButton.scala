@@ -1,12 +1,13 @@
 package typings.tuyaPanelKit.themeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  light :tuya-panel-kit.tuya-panel-kit/theme.BrickButtonTheme,   dark :tuya-panel-kit.tuya-panel-kit/theme.BrickButtonTheme} & std.Partial<tuya-panel-kit.tuya-panel-kit/theme.BrickButtonTheme> */
 @js.native
-trait BrickButton extends js.Object {
+trait BrickButton extends StObject {
   
   var bgBorder: js.UndefOr[String] = js.native
   
@@ -35,66 +36,54 @@ object BrickButton {
   }
   
   @scala.inline
-  implicit class BrickButtonOps[Self <: BrickButton] (val x: Self) extends AnyVal {
+  implicit class BrickButtonMutableBuilder[Self <: BrickButton] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBgBorder(value: String): Self = StObject.set(x, "bgBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBgBorderUndefined: Self = StObject.set(x, "bgBorder", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBgBorderWidth(value: Double): Self = StObject.set(x, "bgBorderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDark(value: BrickButtonTheme): Self = this.set("dark", value.asInstanceOf[js.Any])
+    def setBgBorderWidthUndefined: Self = StObject.set(x, "bgBorderWidth", js.undefined)
     
     @scala.inline
-    def setLight(value: BrickButtonTheme): Self = this.set("light", value.asInstanceOf[js.Any])
+    def setBgRadius(value: Double): Self = StObject.set(x, "bgRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgBorder(value: String): Self = this.set("bgBorder", value.asInstanceOf[js.Any])
+    def setBgRadiusUndefined: Self = StObject.set(x, "bgRadius", js.undefined)
     
     @scala.inline
-    def deleteBgBorder: Self = this.set("bgBorder", js.undefined)
+    def setDark(value: BrickButtonTheme): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgBorderWidth(value: Double): Self = this.set("bgBorderWidth", value.asInstanceOf[js.Any])
+    def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBgBorderWidth: Self = this.set("bgBorderWidth", js.undefined)
+    def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
     
     @scala.inline
-    def setBgRadius(value: Double): Self = this.set("bgRadius", value.asInstanceOf[js.Any])
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBgRadius: Self = this.set("bgRadius", js.undefined)
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def setFontColor(value: String): Self = this.set("fontColor", value.asInstanceOf[js.Any])
+    def setLight(value: BrickButtonTheme): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontColor: Self = this.set("fontColor", js.undefined)
+    def setLoadingBackground(value: String): Self = StObject.set(x, "loadingBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setLoadingBackgroundUndefined: Self = StObject.set(x, "loadingBackground", js.undefined)
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setLoadingColor(value: String): Self = StObject.set(x, "loadingColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadingBackground(value: String): Self = this.set("loadingBackground", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoadingBackground: Self = this.set("loadingBackground", js.undefined)
-    
-    @scala.inline
-    def setLoadingColor(value: String): Self = this.set("loadingColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoadingColor: Self = this.set("loadingColor", js.undefined)
+    def setLoadingColorUndefined: Self = StObject.set(x, "loadingColor", js.undefined)
   }
 }

@@ -5,12 +5,13 @@ import typings.each.eachStrings.end
 import typings.each.eachStrings.error
 import typings.each.eachStrings.item
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Each extends js.Object {
+trait Each extends StObject {
   
   var done: Double = js.native
   

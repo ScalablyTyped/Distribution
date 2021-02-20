@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Request extends js.Object {
+trait Request extends StObject {
   
   /** Adds a new banded range */
   var addBanding: js.UndefOr[AddBandingRequest] = js.native
@@ -208,402 +209,390 @@ object Request {
   }
   
   @scala.inline
-  implicit class RequestOps[Self <: Request] (val x: Self) extends AnyVal {
+  implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddBanding(value: AddBandingRequest): Self = StObject.set(x, "addBanding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddBandingUndefined: Self = StObject.set(x, "addBanding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddChart(value: AddChartRequest): Self = StObject.set(x, "addChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddBanding(value: AddBandingRequest): Self = this.set("addBanding", value.asInstanceOf[js.Any])
+    def setAddChartUndefined: Self = StObject.set(x, "addChart", js.undefined)
     
     @scala.inline
-    def deleteAddBanding: Self = this.set("addBanding", js.undefined)
+    def setAddConditionalFormatRule(value: AddConditionalFormatRuleRequest): Self = StObject.set(x, "addConditionalFormatRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddChart(value: AddChartRequest): Self = this.set("addChart", value.asInstanceOf[js.Any])
+    def setAddConditionalFormatRuleUndefined: Self = StObject.set(x, "addConditionalFormatRule", js.undefined)
     
     @scala.inline
-    def deleteAddChart: Self = this.set("addChart", js.undefined)
+    def setAddDataSource(value: AddDataSourceRequest): Self = StObject.set(x, "addDataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddConditionalFormatRule(value: AddConditionalFormatRuleRequest): Self = this.set("addConditionalFormatRule", value.asInstanceOf[js.Any])
+    def setAddDataSourceUndefined: Self = StObject.set(x, "addDataSource", js.undefined)
     
     @scala.inline
-    def deleteAddConditionalFormatRule: Self = this.set("addConditionalFormatRule", js.undefined)
+    def setAddDimensionGroup(value: AddDimensionGroupRequest): Self = StObject.set(x, "addDimensionGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddDataSource(value: AddDataSourceRequest): Self = this.set("addDataSource", value.asInstanceOf[js.Any])
+    def setAddDimensionGroupUndefined: Self = StObject.set(x, "addDimensionGroup", js.undefined)
     
     @scala.inline
-    def deleteAddDataSource: Self = this.set("addDataSource", js.undefined)
+    def setAddFilterView(value: AddFilterViewRequest): Self = StObject.set(x, "addFilterView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddDimensionGroup(value: AddDimensionGroupRequest): Self = this.set("addDimensionGroup", value.asInstanceOf[js.Any])
+    def setAddFilterViewUndefined: Self = StObject.set(x, "addFilterView", js.undefined)
     
     @scala.inline
-    def deleteAddDimensionGroup: Self = this.set("addDimensionGroup", js.undefined)
+    def setAddNamedRange(value: AddNamedRangeRequest): Self = StObject.set(x, "addNamedRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddFilterView(value: AddFilterViewRequest): Self = this.set("addFilterView", value.asInstanceOf[js.Any])
+    def setAddNamedRangeUndefined: Self = StObject.set(x, "addNamedRange", js.undefined)
     
     @scala.inline
-    def deleteAddFilterView: Self = this.set("addFilterView", js.undefined)
+    def setAddProtectedRange(value: AddProtectedRangeRequest): Self = StObject.set(x, "addProtectedRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddNamedRange(value: AddNamedRangeRequest): Self = this.set("addNamedRange", value.asInstanceOf[js.Any])
+    def setAddProtectedRangeUndefined: Self = StObject.set(x, "addProtectedRange", js.undefined)
     
     @scala.inline
-    def deleteAddNamedRange: Self = this.set("addNamedRange", js.undefined)
+    def setAddSheet(value: AddSheetRequest): Self = StObject.set(x, "addSheet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddProtectedRange(value: AddProtectedRangeRequest): Self = this.set("addProtectedRange", value.asInstanceOf[js.Any])
+    def setAddSheetUndefined: Self = StObject.set(x, "addSheet", js.undefined)
     
     @scala.inline
-    def deleteAddProtectedRange: Self = this.set("addProtectedRange", js.undefined)
+    def setAddSlicer(value: AddSlicerRequest): Self = StObject.set(x, "addSlicer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddSheet(value: AddSheetRequest): Self = this.set("addSheet", value.asInstanceOf[js.Any])
+    def setAddSlicerUndefined: Self = StObject.set(x, "addSlicer", js.undefined)
     
     @scala.inline
-    def deleteAddSheet: Self = this.set("addSheet", js.undefined)
+    def setAppendCells(value: AppendCellsRequest): Self = StObject.set(x, "appendCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddSlicer(value: AddSlicerRequest): Self = this.set("addSlicer", value.asInstanceOf[js.Any])
+    def setAppendCellsUndefined: Self = StObject.set(x, "appendCells", js.undefined)
     
     @scala.inline
-    def deleteAddSlicer: Self = this.set("addSlicer", js.undefined)
+    def setAppendDimension(value: AppendDimensionRequest): Self = StObject.set(x, "appendDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendCells(value: AppendCellsRequest): Self = this.set("appendCells", value.asInstanceOf[js.Any])
+    def setAppendDimensionUndefined: Self = StObject.set(x, "appendDimension", js.undefined)
     
     @scala.inline
-    def deleteAppendCells: Self = this.set("appendCells", js.undefined)
+    def setAutoFill(value: AutoFillRequest): Self = StObject.set(x, "autoFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendDimension(value: AppendDimensionRequest): Self = this.set("appendDimension", value.asInstanceOf[js.Any])
+    def setAutoFillUndefined: Self = StObject.set(x, "autoFill", js.undefined)
     
     @scala.inline
-    def deleteAppendDimension: Self = this.set("appendDimension", js.undefined)
+    def setAutoResizeDimensions(value: AutoResizeDimensionsRequest): Self = StObject.set(x, "autoResizeDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFill(value: AutoFillRequest): Self = this.set("autoFill", value.asInstanceOf[js.Any])
+    def setAutoResizeDimensionsUndefined: Self = StObject.set(x, "autoResizeDimensions", js.undefined)
     
     @scala.inline
-    def deleteAutoFill: Self = this.set("autoFill", js.undefined)
+    def setClearBasicFilter(value: ClearBasicFilterRequest): Self = StObject.set(x, "clearBasicFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoResizeDimensions(value: AutoResizeDimensionsRequest): Self = this.set("autoResizeDimensions", value.asInstanceOf[js.Any])
+    def setClearBasicFilterUndefined: Self = StObject.set(x, "clearBasicFilter", js.undefined)
     
     @scala.inline
-    def deleteAutoResizeDimensions: Self = this.set("autoResizeDimensions", js.undefined)
+    def setCopyPaste(value: CopyPasteRequest): Self = StObject.set(x, "copyPaste", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearBasicFilter(value: ClearBasicFilterRequest): Self = this.set("clearBasicFilter", value.asInstanceOf[js.Any])
+    def setCopyPasteUndefined: Self = StObject.set(x, "copyPaste", js.undefined)
     
     @scala.inline
-    def deleteClearBasicFilter: Self = this.set("clearBasicFilter", js.undefined)
+    def setCreateDeveloperMetadata(value: CreateDeveloperMetadataRequest): Self = StObject.set(x, "createDeveloperMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyPaste(value: CopyPasteRequest): Self = this.set("copyPaste", value.asInstanceOf[js.Any])
+    def setCreateDeveloperMetadataUndefined: Self = StObject.set(x, "createDeveloperMetadata", js.undefined)
     
     @scala.inline
-    def deleteCopyPaste: Self = this.set("copyPaste", js.undefined)
+    def setCutPaste(value: CutPasteRequest): Self = StObject.set(x, "cutPaste", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDeveloperMetadata(value: CreateDeveloperMetadataRequest): Self = this.set("createDeveloperMetadata", value.asInstanceOf[js.Any])
+    def setCutPasteUndefined: Self = StObject.set(x, "cutPaste", js.undefined)
     
     @scala.inline
-    def deleteCreateDeveloperMetadata: Self = this.set("createDeveloperMetadata", js.undefined)
+    def setDeleteBanding(value: DeleteBandingRequest): Self = StObject.set(x, "deleteBanding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCutPaste(value: CutPasteRequest): Self = this.set("cutPaste", value.asInstanceOf[js.Any])
+    def setDeleteBandingUndefined: Self = StObject.set(x, "deleteBanding", js.undefined)
     
     @scala.inline
-    def deleteCutPaste: Self = this.set("cutPaste", js.undefined)
+    def setDeleteConditionalFormatRule(value: DeleteConditionalFormatRuleRequest): Self = StObject.set(x, "deleteConditionalFormatRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteBanding(value: DeleteBandingRequest): Self = this.set("deleteBanding", value.asInstanceOf[js.Any])
+    def setDeleteConditionalFormatRuleUndefined: Self = StObject.set(x, "deleteConditionalFormatRule", js.undefined)
     
     @scala.inline
-    def deleteDeleteBanding: Self = this.set("deleteBanding", js.undefined)
+    def setDeleteDataSource(value: DeleteDataSourceRequest): Self = StObject.set(x, "deleteDataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteConditionalFormatRule(value: DeleteConditionalFormatRuleRequest): Self = this.set("deleteConditionalFormatRule", value.asInstanceOf[js.Any])
+    def setDeleteDataSourceUndefined: Self = StObject.set(x, "deleteDataSource", js.undefined)
     
     @scala.inline
-    def deleteDeleteConditionalFormatRule: Self = this.set("deleteConditionalFormatRule", js.undefined)
+    def setDeleteDeveloperMetadata(value: DeleteDeveloperMetadataRequest): Self = StObject.set(x, "deleteDeveloperMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteDataSource(value: DeleteDataSourceRequest): Self = this.set("deleteDataSource", value.asInstanceOf[js.Any])
+    def setDeleteDeveloperMetadataUndefined: Self = StObject.set(x, "deleteDeveloperMetadata", js.undefined)
     
     @scala.inline
-    def deleteDeleteDataSource: Self = this.set("deleteDataSource", js.undefined)
+    def setDeleteDimension(value: DeleteDimensionRequest): Self = StObject.set(x, "deleteDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteDeveloperMetadata(value: DeleteDeveloperMetadataRequest): Self = this.set("deleteDeveloperMetadata", value.asInstanceOf[js.Any])
+    def setDeleteDimensionGroup(value: DeleteDimensionGroupRequest): Self = StObject.set(x, "deleteDimensionGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeleteDeveloperMetadata: Self = this.set("deleteDeveloperMetadata", js.undefined)
+    def setDeleteDimensionGroupUndefined: Self = StObject.set(x, "deleteDimensionGroup", js.undefined)
     
     @scala.inline
-    def setDeleteDimension(value: DeleteDimensionRequest): Self = this.set("deleteDimension", value.asInstanceOf[js.Any])
+    def setDeleteDimensionUndefined: Self = StObject.set(x, "deleteDimension", js.undefined)
     
     @scala.inline
-    def deleteDeleteDimension: Self = this.set("deleteDimension", js.undefined)
+    def setDeleteDuplicates(value: DeleteDuplicatesRequest): Self = StObject.set(x, "deleteDuplicates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteDimensionGroup(value: DeleteDimensionGroupRequest): Self = this.set("deleteDimensionGroup", value.asInstanceOf[js.Any])
+    def setDeleteDuplicatesUndefined: Self = StObject.set(x, "deleteDuplicates", js.undefined)
     
     @scala.inline
-    def deleteDeleteDimensionGroup: Self = this.set("deleteDimensionGroup", js.undefined)
+    def setDeleteEmbeddedObject(value: DeleteEmbeddedObjectRequest): Self = StObject.set(x, "deleteEmbeddedObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteDuplicates(value: DeleteDuplicatesRequest): Self = this.set("deleteDuplicates", value.asInstanceOf[js.Any])
+    def setDeleteEmbeddedObjectUndefined: Self = StObject.set(x, "deleteEmbeddedObject", js.undefined)
     
     @scala.inline
-    def deleteDeleteDuplicates: Self = this.set("deleteDuplicates", js.undefined)
+    def setDeleteFilterView(value: DeleteFilterViewRequest): Self = StObject.set(x, "deleteFilterView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteEmbeddedObject(value: DeleteEmbeddedObjectRequest): Self = this.set("deleteEmbeddedObject", value.asInstanceOf[js.Any])
+    def setDeleteFilterViewUndefined: Self = StObject.set(x, "deleteFilterView", js.undefined)
     
     @scala.inline
-    def deleteDeleteEmbeddedObject: Self = this.set("deleteEmbeddedObject", js.undefined)
+    def setDeleteNamedRange(value: DeleteNamedRangeRequest): Self = StObject.set(x, "deleteNamedRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteFilterView(value: DeleteFilterViewRequest): Self = this.set("deleteFilterView", value.asInstanceOf[js.Any])
+    def setDeleteNamedRangeUndefined: Self = StObject.set(x, "deleteNamedRange", js.undefined)
     
     @scala.inline
-    def deleteDeleteFilterView: Self = this.set("deleteFilterView", js.undefined)
+    def setDeleteProtectedRange(value: DeleteProtectedRangeRequest): Self = StObject.set(x, "deleteProtectedRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteNamedRange(value: DeleteNamedRangeRequest): Self = this.set("deleteNamedRange", value.asInstanceOf[js.Any])
+    def setDeleteProtectedRangeUndefined: Self = StObject.set(x, "deleteProtectedRange", js.undefined)
     
     @scala.inline
-    def deleteDeleteNamedRange: Self = this.set("deleteNamedRange", js.undefined)
+    def setDeleteRange(value: DeleteRangeRequest): Self = StObject.set(x, "deleteRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteProtectedRange(value: DeleteProtectedRangeRequest): Self = this.set("deleteProtectedRange", value.asInstanceOf[js.Any])
+    def setDeleteRangeUndefined: Self = StObject.set(x, "deleteRange", js.undefined)
     
     @scala.inline
-    def deleteDeleteProtectedRange: Self = this.set("deleteProtectedRange", js.undefined)
+    def setDeleteSheet(value: DeleteSheetRequest): Self = StObject.set(x, "deleteSheet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteRange(value: DeleteRangeRequest): Self = this.set("deleteRange", value.asInstanceOf[js.Any])
+    def setDeleteSheetUndefined: Self = StObject.set(x, "deleteSheet", js.undefined)
     
     @scala.inline
-    def deleteDeleteRange: Self = this.set("deleteRange", js.undefined)
+    def setDuplicateFilterView(value: DuplicateFilterViewRequest): Self = StObject.set(x, "duplicateFilterView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteSheet(value: DeleteSheetRequest): Self = this.set("deleteSheet", value.asInstanceOf[js.Any])
+    def setDuplicateFilterViewUndefined: Self = StObject.set(x, "duplicateFilterView", js.undefined)
     
     @scala.inline
-    def deleteDeleteSheet: Self = this.set("deleteSheet", js.undefined)
+    def setDuplicateSheet(value: DuplicateSheetRequest): Self = StObject.set(x, "duplicateSheet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuplicateFilterView(value: DuplicateFilterViewRequest): Self = this.set("duplicateFilterView", value.asInstanceOf[js.Any])
+    def setDuplicateSheetUndefined: Self = StObject.set(x, "duplicateSheet", js.undefined)
     
     @scala.inline
-    def deleteDuplicateFilterView: Self = this.set("duplicateFilterView", js.undefined)
+    def setFindReplace(value: FindReplaceRequest): Self = StObject.set(x, "findReplace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuplicateSheet(value: DuplicateSheetRequest): Self = this.set("duplicateSheet", value.asInstanceOf[js.Any])
+    def setFindReplaceUndefined: Self = StObject.set(x, "findReplace", js.undefined)
     
     @scala.inline
-    def deleteDuplicateSheet: Self = this.set("duplicateSheet", js.undefined)
+    def setInsertDimension(value: InsertDimensionRequest): Self = StObject.set(x, "insertDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFindReplace(value: FindReplaceRequest): Self = this.set("findReplace", value.asInstanceOf[js.Any])
+    def setInsertDimensionUndefined: Self = StObject.set(x, "insertDimension", js.undefined)
     
     @scala.inline
-    def deleteFindReplace: Self = this.set("findReplace", js.undefined)
+    def setInsertRange(value: InsertRangeRequest): Self = StObject.set(x, "insertRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertDimension(value: InsertDimensionRequest): Self = this.set("insertDimension", value.asInstanceOf[js.Any])
+    def setInsertRangeUndefined: Self = StObject.set(x, "insertRange", js.undefined)
     
     @scala.inline
-    def deleteInsertDimension: Self = this.set("insertDimension", js.undefined)
+    def setMergeCells(value: MergeCellsRequest): Self = StObject.set(x, "mergeCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertRange(value: InsertRangeRequest): Self = this.set("insertRange", value.asInstanceOf[js.Any])
+    def setMergeCellsUndefined: Self = StObject.set(x, "mergeCells", js.undefined)
     
     @scala.inline
-    def deleteInsertRange: Self = this.set("insertRange", js.undefined)
+    def setMoveDimension(value: MoveDimensionRequest): Self = StObject.set(x, "moveDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeCells(value: MergeCellsRequest): Self = this.set("mergeCells", value.asInstanceOf[js.Any])
+    def setMoveDimensionUndefined: Self = StObject.set(x, "moveDimension", js.undefined)
     
     @scala.inline
-    def deleteMergeCells: Self = this.set("mergeCells", js.undefined)
+    def setPasteData(value: PasteDataRequest): Self = StObject.set(x, "pasteData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveDimension(value: MoveDimensionRequest): Self = this.set("moveDimension", value.asInstanceOf[js.Any])
+    def setPasteDataUndefined: Self = StObject.set(x, "pasteData", js.undefined)
     
     @scala.inline
-    def deleteMoveDimension: Self = this.set("moveDimension", js.undefined)
+    def setRandomizeRange(value: RandomizeRangeRequest): Self = StObject.set(x, "randomizeRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasteData(value: PasteDataRequest): Self = this.set("pasteData", value.asInstanceOf[js.Any])
+    def setRandomizeRangeUndefined: Self = StObject.set(x, "randomizeRange", js.undefined)
     
     @scala.inline
-    def deletePasteData: Self = this.set("pasteData", js.undefined)
+    def setRefreshDataSource(value: RefreshDataSourceRequest): Self = StObject.set(x, "refreshDataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRandomizeRange(value: RandomizeRangeRequest): Self = this.set("randomizeRange", value.asInstanceOf[js.Any])
+    def setRefreshDataSourceUndefined: Self = StObject.set(x, "refreshDataSource", js.undefined)
     
     @scala.inline
-    def deleteRandomizeRange: Self = this.set("randomizeRange", js.undefined)
+    def setRepeatCell(value: RepeatCellRequest): Self = StObject.set(x, "repeatCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshDataSource(value: RefreshDataSourceRequest): Self = this.set("refreshDataSource", value.asInstanceOf[js.Any])
+    def setRepeatCellUndefined: Self = StObject.set(x, "repeatCell", js.undefined)
     
     @scala.inline
-    def deleteRefreshDataSource: Self = this.set("refreshDataSource", js.undefined)
+    def setSetBasicFilter(value: SetBasicFilterRequest): Self = StObject.set(x, "setBasicFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeatCell(value: RepeatCellRequest): Self = this.set("repeatCell", value.asInstanceOf[js.Any])
+    def setSetBasicFilterUndefined: Self = StObject.set(x, "setBasicFilter", js.undefined)
     
     @scala.inline
-    def deleteRepeatCell: Self = this.set("repeatCell", js.undefined)
+    def setSetDataValidation(value: SetDataValidationRequest): Self = StObject.set(x, "setDataValidation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetBasicFilter(value: SetBasicFilterRequest): Self = this.set("setBasicFilter", value.asInstanceOf[js.Any])
+    def setSetDataValidationUndefined: Self = StObject.set(x, "setDataValidation", js.undefined)
     
     @scala.inline
-    def deleteSetBasicFilter: Self = this.set("setBasicFilter", js.undefined)
+    def setSortRange(value: SortRangeRequest): Self = StObject.set(x, "sortRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetDataValidation(value: SetDataValidationRequest): Self = this.set("setDataValidation", value.asInstanceOf[js.Any])
+    def setSortRangeUndefined: Self = StObject.set(x, "sortRange", js.undefined)
     
     @scala.inline
-    def deleteSetDataValidation: Self = this.set("setDataValidation", js.undefined)
+    def setTextToColumns(value: TextToColumnsRequest): Self = StObject.set(x, "textToColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortRange(value: SortRangeRequest): Self = this.set("sortRange", value.asInstanceOf[js.Any])
+    def setTextToColumnsUndefined: Self = StObject.set(x, "textToColumns", js.undefined)
     
     @scala.inline
-    def deleteSortRange: Self = this.set("sortRange", js.undefined)
+    def setTrimWhitespace(value: TrimWhitespaceRequest): Self = StObject.set(x, "trimWhitespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextToColumns(value: TextToColumnsRequest): Self = this.set("textToColumns", value.asInstanceOf[js.Any])
+    def setTrimWhitespaceUndefined: Self = StObject.set(x, "trimWhitespace", js.undefined)
     
     @scala.inline
-    def deleteTextToColumns: Self = this.set("textToColumns", js.undefined)
+    def setUnmergeCells(value: UnmergeCellsRequest): Self = StObject.set(x, "unmergeCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrimWhitespace(value: TrimWhitespaceRequest): Self = this.set("trimWhitespace", value.asInstanceOf[js.Any])
+    def setUnmergeCellsUndefined: Self = StObject.set(x, "unmergeCells", js.undefined)
     
     @scala.inline
-    def deleteTrimWhitespace: Self = this.set("trimWhitespace", js.undefined)
+    def setUpdateBanding(value: UpdateBandingRequest): Self = StObject.set(x, "updateBanding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnmergeCells(value: UnmergeCellsRequest): Self = this.set("unmergeCells", value.asInstanceOf[js.Any])
+    def setUpdateBandingUndefined: Self = StObject.set(x, "updateBanding", js.undefined)
     
     @scala.inline
-    def deleteUnmergeCells: Self = this.set("unmergeCells", js.undefined)
+    def setUpdateBorders(value: UpdateBordersRequest): Self = StObject.set(x, "updateBorders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateBanding(value: UpdateBandingRequest): Self = this.set("updateBanding", value.asInstanceOf[js.Any])
+    def setUpdateBordersUndefined: Self = StObject.set(x, "updateBorders", js.undefined)
     
     @scala.inline
-    def deleteUpdateBanding: Self = this.set("updateBanding", js.undefined)
+    def setUpdateCells(value: UpdateCellsRequest): Self = StObject.set(x, "updateCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateBorders(value: UpdateBordersRequest): Self = this.set("updateBorders", value.asInstanceOf[js.Any])
+    def setUpdateCellsUndefined: Self = StObject.set(x, "updateCells", js.undefined)
     
     @scala.inline
-    def deleteUpdateBorders: Self = this.set("updateBorders", js.undefined)
+    def setUpdateChartSpec(value: UpdateChartSpecRequest): Self = StObject.set(x, "updateChartSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateCells(value: UpdateCellsRequest): Self = this.set("updateCells", value.asInstanceOf[js.Any])
+    def setUpdateChartSpecUndefined: Self = StObject.set(x, "updateChartSpec", js.undefined)
     
     @scala.inline
-    def deleteUpdateCells: Self = this.set("updateCells", js.undefined)
+    def setUpdateConditionalFormatRule(value: UpdateConditionalFormatRuleRequest): Self = StObject.set(x, "updateConditionalFormatRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateChartSpec(value: UpdateChartSpecRequest): Self = this.set("updateChartSpec", value.asInstanceOf[js.Any])
+    def setUpdateConditionalFormatRuleUndefined: Self = StObject.set(x, "updateConditionalFormatRule", js.undefined)
     
     @scala.inline
-    def deleteUpdateChartSpec: Self = this.set("updateChartSpec", js.undefined)
+    def setUpdateDataSource(value: UpdateDataSourceRequest): Self = StObject.set(x, "updateDataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateConditionalFormatRule(value: UpdateConditionalFormatRuleRequest): Self = this.set("updateConditionalFormatRule", value.asInstanceOf[js.Any])
+    def setUpdateDataSourceUndefined: Self = StObject.set(x, "updateDataSource", js.undefined)
     
     @scala.inline
-    def deleteUpdateConditionalFormatRule: Self = this.set("updateConditionalFormatRule", js.undefined)
+    def setUpdateDeveloperMetadata(value: UpdateDeveloperMetadataRequest): Self = StObject.set(x, "updateDeveloperMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateDataSource(value: UpdateDataSourceRequest): Self = this.set("updateDataSource", value.asInstanceOf[js.Any])
+    def setUpdateDeveloperMetadataUndefined: Self = StObject.set(x, "updateDeveloperMetadata", js.undefined)
     
     @scala.inline
-    def deleteUpdateDataSource: Self = this.set("updateDataSource", js.undefined)
+    def setUpdateDimensionGroup(value: UpdateDimensionGroupRequest): Self = StObject.set(x, "updateDimensionGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateDeveloperMetadata(value: UpdateDeveloperMetadataRequest): Self = this.set("updateDeveloperMetadata", value.asInstanceOf[js.Any])
+    def setUpdateDimensionGroupUndefined: Self = StObject.set(x, "updateDimensionGroup", js.undefined)
     
     @scala.inline
-    def deleteUpdateDeveloperMetadata: Self = this.set("updateDeveloperMetadata", js.undefined)
+    def setUpdateDimensionProperties(value: UpdateDimensionPropertiesRequest): Self = StObject.set(x, "updateDimensionProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateDimensionGroup(value: UpdateDimensionGroupRequest): Self = this.set("updateDimensionGroup", value.asInstanceOf[js.Any])
+    def setUpdateDimensionPropertiesUndefined: Self = StObject.set(x, "updateDimensionProperties", js.undefined)
     
     @scala.inline
-    def deleteUpdateDimensionGroup: Self = this.set("updateDimensionGroup", js.undefined)
+    def setUpdateEmbeddedObjectPosition(value: UpdateEmbeddedObjectPositionRequest): Self = StObject.set(x, "updateEmbeddedObjectPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateDimensionProperties(value: UpdateDimensionPropertiesRequest): Self = this.set("updateDimensionProperties", value.asInstanceOf[js.Any])
+    def setUpdateEmbeddedObjectPositionUndefined: Self = StObject.set(x, "updateEmbeddedObjectPosition", js.undefined)
     
     @scala.inline
-    def deleteUpdateDimensionProperties: Self = this.set("updateDimensionProperties", js.undefined)
+    def setUpdateFilterView(value: UpdateFilterViewRequest): Self = StObject.set(x, "updateFilterView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateEmbeddedObjectPosition(value: UpdateEmbeddedObjectPositionRequest): Self = this.set("updateEmbeddedObjectPosition", value.asInstanceOf[js.Any])
+    def setUpdateFilterViewUndefined: Self = StObject.set(x, "updateFilterView", js.undefined)
     
     @scala.inline
-    def deleteUpdateEmbeddedObjectPosition: Self = this.set("updateEmbeddedObjectPosition", js.undefined)
+    def setUpdateNamedRange(value: UpdateNamedRangeRequest): Self = StObject.set(x, "updateNamedRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateFilterView(value: UpdateFilterViewRequest): Self = this.set("updateFilterView", value.asInstanceOf[js.Any])
+    def setUpdateNamedRangeUndefined: Self = StObject.set(x, "updateNamedRange", js.undefined)
     
     @scala.inline
-    def deleteUpdateFilterView: Self = this.set("updateFilterView", js.undefined)
+    def setUpdateProtectedRange(value: UpdateProtectedRangeRequest): Self = StObject.set(x, "updateProtectedRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateNamedRange(value: UpdateNamedRangeRequest): Self = this.set("updateNamedRange", value.asInstanceOf[js.Any])
+    def setUpdateProtectedRangeUndefined: Self = StObject.set(x, "updateProtectedRange", js.undefined)
     
     @scala.inline
-    def deleteUpdateNamedRange: Self = this.set("updateNamedRange", js.undefined)
+    def setUpdateSheetProperties(value: UpdateSheetPropertiesRequest): Self = StObject.set(x, "updateSheetProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateProtectedRange(value: UpdateProtectedRangeRequest): Self = this.set("updateProtectedRange", value.asInstanceOf[js.Any])
+    def setUpdateSheetPropertiesUndefined: Self = StObject.set(x, "updateSheetProperties", js.undefined)
     
     @scala.inline
-    def deleteUpdateProtectedRange: Self = this.set("updateProtectedRange", js.undefined)
+    def setUpdateSlicerSpec(value: UpdateSlicerSpecRequest): Self = StObject.set(x, "updateSlicerSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateSheetProperties(value: UpdateSheetPropertiesRequest): Self = this.set("updateSheetProperties", value.asInstanceOf[js.Any])
+    def setUpdateSlicerSpecUndefined: Self = StObject.set(x, "updateSlicerSpec", js.undefined)
     
     @scala.inline
-    def deleteUpdateSheetProperties: Self = this.set("updateSheetProperties", js.undefined)
+    def setUpdateSpreadsheetProperties(value: UpdateSpreadsheetPropertiesRequest): Self = StObject.set(x, "updateSpreadsheetProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateSlicerSpec(value: UpdateSlicerSpecRequest): Self = this.set("updateSlicerSpec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateSlicerSpec: Self = this.set("updateSlicerSpec", js.undefined)
-    
-    @scala.inline
-    def setUpdateSpreadsheetProperties(value: UpdateSpreadsheetPropertiesRequest): Self = this.set("updateSpreadsheetProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateSpreadsheetProperties: Self = this.set("updateSpreadsheetProperties", js.undefined)
+    def setUpdateSpreadsheetPropertiesUndefined: Self = StObject.set(x, "updateSpreadsheetProperties", js.undefined)
   }
 }

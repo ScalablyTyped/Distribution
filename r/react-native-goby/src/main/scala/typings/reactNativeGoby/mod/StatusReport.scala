@@ -1,12 +1,13 @@
 package typings.reactNativeGoby.mod
 
 import typings.reactNativeGoby.mod.Goby.DeploymentStatus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StatusReport extends js.Object {
+trait StatusReport extends StObject {
   
   /**
     * Details of the package that was deployed (or attempted to).
@@ -43,45 +44,33 @@ object StatusReport {
   }
   
   @scala.inline
-  implicit class StatusReportOps[Self <: StatusReport] (val x: Self) extends AnyVal {
+  implicit class StatusReportMutableBuilder[Self <: StatusReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppVersionUndefined: Self = StObject.set(x, "appVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreviousDeploymentKey(value: String): Self = StObject.set(x, "previousDeploymentKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: DeploymentStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setPreviousDeploymentKeyUndefined: Self = StObject.set(x, "previousDeploymentKey", js.undefined)
     
     @scala.inline
-    def set_package(value: Package): Self = this.set("package", value.asInstanceOf[js.Any])
+    def setPreviousLabelOrAppVersion(value: String): Self = StObject.set(x, "previousLabelOrAppVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_package: Self = this.set("package", js.undefined)
+    def setPreviousLabelOrAppVersionUndefined: Self = StObject.set(x, "previousLabelOrAppVersion", js.undefined)
     
     @scala.inline
-    def setAppVersion(value: String): Self = this.set("appVersion", value.asInstanceOf[js.Any])
+    def setStatus(value: DeploymentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppVersion: Self = this.set("appVersion", js.undefined)
+    def set_package(value: Package): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousDeploymentKey(value: String): Self = this.set("previousDeploymentKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreviousDeploymentKey: Self = this.set("previousDeploymentKey", js.undefined)
-    
-    @scala.inline
-    def setPreviousLabelOrAppVersion(value: String): Self = this.set("previousLabelOrAppVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreviousLabelOrAppVersion: Self = this.set("previousLabelOrAppVersion", js.undefined)
+    def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }
 }

@@ -1,32 +1,28 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ReviewResourceType extends js.Object
+sealed trait ReviewResourceType extends StObject
 @JSImport("vso-node-api/interfaces/GalleryInterfaces", "ReviewResourceType")
 @js.native
-object ReviewResourceType extends js.Object {
+object ReviewResourceType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ReviewResourceType with Double] = js.native
   
   @js.native
   sealed trait AdminReply extends ReviewResourceType
-  /* 3 */ @js.native
-  object AdminReply extends TopLevel[AdminReply with Double]
+  /* 3 */ val AdminReply: typings.vsoNodeApi.galleryInterfacesMod.ReviewResourceType.AdminReply with Double = js.native
   
   @js.native
   sealed trait PublisherReply extends ReviewResourceType
-  /* 2 */ @js.native
-  object PublisherReply extends TopLevel[PublisherReply with Double]
+  /* 2 */ val PublisherReply: typings.vsoNodeApi.galleryInterfacesMod.ReviewResourceType.PublisherReply with Double = js.native
   
   @js.native
   sealed trait Review extends ReviewResourceType
-  /* 1 */ @js.native
-  object Review
-    extends TopLevel[typings.vsoNodeApi.galleryInterfacesMod.ReviewResourceType.Review with Double]
+  /* 1 */ val Review: typings.vsoNodeApi.galleryInterfacesMod.ReviewResourceType.Review with Double = js.native
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DriveActivity extends js.Object {
+trait DriveActivity extends StObject {
   
   /** Details on all actions in this activity. */
   var actions: js.UndefOr[js.Array[Action]] = js.native
@@ -37,63 +38,51 @@ object DriveActivity {
   }
   
   @scala.inline
-  implicit class DriveActivityOps[Self <: DriveActivity] (val x: Self) extends AnyVal {
+  implicit class DriveActivityMutableBuilder[Self <: DriveActivity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setActionsVarargs(value: Action*): Self = this.set("actions", js.Array(value :_*))
+    def setActors(value: js.Array[Actor]): Self = StObject.set(x, "actors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: js.Array[Action]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setActorsUndefined: Self = StObject.set(x, "actors", js.undefined)
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setActorsVarargs(value: Actor*): Self = StObject.set(x, "actors", js.Array(value :_*))
     
     @scala.inline
-    def setActorsVarargs(value: Actor*): Self = this.set("actors", js.Array(value :_*))
+    def setPrimaryActionDetail(value: ActionDetail): Self = StObject.set(x, "primaryActionDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActors(value: js.Array[Actor]): Self = this.set("actors", value.asInstanceOf[js.Any])
+    def setPrimaryActionDetailUndefined: Self = StObject.set(x, "primaryActionDetail", js.undefined)
     
     @scala.inline
-    def deleteActors: Self = this.set("actors", js.undefined)
+    def setTargets(value: js.Array[Target]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryActionDetail(value: ActionDetail): Self = this.set("primaryActionDetail", value.asInstanceOf[js.Any])
+    def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
     
     @scala.inline
-    def deletePrimaryActionDetail: Self = this.set("primaryActionDetail", js.undefined)
+    def setTargetsVarargs(value: Target*): Self = StObject.set(x, "targets", js.Array(value :_*))
     
     @scala.inline
-    def setTargetsVarargs(value: Target*): Self = this.set("targets", js.Array(value :_*))
+    def setTimeRange(value: TimeRange): Self = StObject.set(x, "timeRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargets(value: js.Array[Target]): Self = this.set("targets", value.asInstanceOf[js.Any])
+    def setTimeRangeUndefined: Self = StObject.set(x, "timeRange", js.undefined)
     
     @scala.inline
-    def deleteTargets: Self = this.set("targets", js.undefined)
+    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeRange(value: TimeRange): Self = this.set("timeRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeRange: Self = this.set("timeRange", js.undefined)
-    
-    @scala.inline
-    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

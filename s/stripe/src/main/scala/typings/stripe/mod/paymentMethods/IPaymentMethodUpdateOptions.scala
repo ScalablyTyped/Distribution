@@ -3,12 +3,13 @@ package typings.stripe.mod.paymentMethods
 import typings.stripe.anon.Address
 import typings.stripe.anon.Expmonth
 import typings.stripe.mod.IMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPaymentMethodUpdateOptions extends js.Object {
+trait IPaymentMethodUpdateOptions extends StObject {
   
   /** Billing information associated with the PaymentMethod that may be used or required by particular types of payment methods. */
   var billing_details: js.UndefOr[Address] = js.native
@@ -27,36 +28,24 @@ object IPaymentMethodUpdateOptions {
   }
   
   @scala.inline
-  implicit class IPaymentMethodUpdateOptionsOps[Self <: IPaymentMethodUpdateOptions] (val x: Self) extends AnyVal {
+  implicit class IPaymentMethodUpdateOptionsMutableBuilder[Self <: IPaymentMethodUpdateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBilling_details(value: Address): Self = StObject.set(x, "billing_details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBilling_detailsUndefined: Self = StObject.set(x, "billing_details", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCard(value: Expmonth): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBilling_details(value: Address): Self = this.set("billing_details", value.asInstanceOf[js.Any])
+    def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
     
     @scala.inline
-    def deleteBilling_details: Self = this.set("billing_details", js.undefined)
+    def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCard(value: Expmonth): Self = this.set("card", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCard: Self = this.set("card", js.undefined)
-    
-    @scala.inline
-    def setMetadata(value: IMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

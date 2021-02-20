@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.appmesh
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouteSpecHttp2RouteActionWeightedTarget extends js.Object {
+trait RouteSpecHttp2RouteActionWeightedTarget extends StObject {
   
   /**
     * The virtual node to associate with the weighted target. Must be between 1 and 255 characters in length.
@@ -26,24 +27,12 @@ object RouteSpecHttp2RouteActionWeightedTarget {
   }
   
   @scala.inline
-  implicit class RouteSpecHttp2RouteActionWeightedTargetOps[Self <: RouteSpecHttp2RouteActionWeightedTarget] (val x: Self) extends AnyVal {
+  implicit class RouteSpecHttp2RouteActionWeightedTargetMutableBuilder[Self <: RouteSpecHttp2RouteActionWeightedTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVirtualNode(value: String): Self = StObject.set(x, "virtualNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVirtualNode(value: String): Self = this.set("virtualNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
+    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

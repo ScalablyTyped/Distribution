@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HPOObjective extends js.Object {
+trait HPOObjective extends StObject {
   
   /**
     * The name of the metric.
@@ -31,36 +32,24 @@ object HPOObjective {
   }
   
   @scala.inline
-  implicit class HPOObjectiveOps[Self <: HPOObjective] (val x: Self) extends AnyVal {
+  implicit class HPOObjectiveMutableBuilder[Self <: HPOObjective] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetricName(value: MetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricRegex(value: MetricRegex): Self = StObject.set(x, "metricRegex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricName(value: MetricName): Self = this.set("metricName", value.asInstanceOf[js.Any])
+    def setMetricRegexUndefined: Self = StObject.set(x, "metricRegex", js.undefined)
     
     @scala.inline
-    def deleteMetricName: Self = this.set("metricName", js.undefined)
+    def setType(value: HPOObjectiveType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricRegex(value: MetricRegex): Self = this.set("metricRegex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricRegex: Self = this.set("metricRegex", js.undefined)
-    
-    @scala.inline
-    def setType(value: HPOObjectiveType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

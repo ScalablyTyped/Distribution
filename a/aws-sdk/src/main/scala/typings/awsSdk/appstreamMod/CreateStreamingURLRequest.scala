@@ -1,11 +1,12 @@
 package typings.awsSdk.appstreamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateStreamingURLRequest extends js.Object {
+trait CreateStreamingURLRequest extends StObject {
   
   /**
     * The name of the application to launch after the session starts. This is the name that you specified as Name in the Image Assistant.
@@ -46,45 +47,33 @@ object CreateStreamingURLRequest {
   }
   
   @scala.inline
-  implicit class CreateStreamingURLRequestOps[Self <: CreateStreamingURLRequest] (val x: Self) extends AnyVal {
+  implicit class CreateStreamingURLRequestMutableBuilder[Self <: CreateStreamingURLRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFleetName(value: String): Self = StObject.set(x, "FleetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetName(value: String): Self = this.set("FleetName", value.asInstanceOf[js.Any])
+    def setSessionContext(value: String): Self = StObject.set(x, "SessionContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackName(value: String): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    def setSessionContextUndefined: Self = StObject.set(x, "SessionContext", js.undefined)
     
     @scala.inline
-    def setUserId(value: StreamingUrlUserId): Self = this.set("UserId", value.asInstanceOf[js.Any])
+    def setStackName(value: String): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationId(value: String): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    def setUserId(value: StreamingUrlUserId): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApplicationId: Self = this.set("ApplicationId", js.undefined)
+    def setValidity(value: Long): Self = StObject.set(x, "Validity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionContext(value: String): Self = this.set("SessionContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionContext: Self = this.set("SessionContext", js.undefined)
-    
-    @scala.inline
-    def setValidity(value: Long): Self = this.set("Validity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidity: Self = this.set("Validity", js.undefined)
+    def setValidityUndefined: Self = StObject.set(x, "Validity", js.undefined)
   }
 }

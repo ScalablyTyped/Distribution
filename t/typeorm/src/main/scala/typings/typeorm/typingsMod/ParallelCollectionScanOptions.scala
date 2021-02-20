@@ -1,11 +1,12 @@
 package typings.typeorm.typingsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParallelCollectionScanOptions extends js.Object {
+trait ParallelCollectionScanOptions extends StObject {
   
   /**
     * Set the batchSize for the getMoreCommand when iterating over the query results.
@@ -37,42 +38,30 @@ object ParallelCollectionScanOptions {
   }
   
   @scala.inline
-  implicit class ParallelCollectionScanOptionsOps[Self <: ParallelCollectionScanOptions] (val x: Self) extends AnyVal {
+  implicit class ParallelCollectionScanOptionsMutableBuilder[Self <: ParallelCollectionScanOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchSize(value: scala.Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumCursors(value: scala.Double): Self = StObject.set(x, "numCursors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchSize(value: scala.Double): Self = this.set("batchSize", value.asInstanceOf[js.Any])
+    def setNumCursorsUndefined: Self = StObject.set(x, "numCursors", js.undefined)
     
     @scala.inline
-    def deleteBatchSize: Self = this.set("batchSize", js.undefined)
+    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumCursors(value: scala.Double): Self = this.set("numCursors", value.asInstanceOf[js.Any])
+    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
     @scala.inline
-    def deleteNumCursors: Self = this.set("numCursors", js.undefined)
+    def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaw(value: Boolean): Self = this.set("raw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRaw: Self = this.set("raw", js.undefined)
-    
-    @scala.inline
-    def setReadPreference(value: ReadPreference | String): Self = this.set("readPreference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadPreference: Self = this.set("readPreference", js.undefined)
+    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
   }
 }

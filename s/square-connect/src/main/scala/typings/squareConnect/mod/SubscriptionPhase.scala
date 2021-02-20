@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "SubscriptionPhase")
 @js.native
-class SubscriptionPhase () extends js.Object {
+class SubscriptionPhase () extends StObject {
   
   /**
     * The billing cadence of the phase. For example, weekly or monthly.

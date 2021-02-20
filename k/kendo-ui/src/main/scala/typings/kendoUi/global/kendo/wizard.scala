@@ -1,13 +1,13 @@
 package typings.kendoUi.global.kendo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.wizard")
-@js.native
-object wizard extends js.Object {
+object wizard {
   
+  @JSGlobal("kendo.wizard.Step")
   @js.native
   class Step ()
     extends typings.kendoUi.kendo.wizard.Step

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableCellProperties extends js.Object {
+trait TableCellProperties extends StObject {
   
   /** The alignment of the content in the table cell. The default alignment matches the alignment for newly created table cells in the Slides editor. */
   var contentAlignment: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object TableCellProperties {
   }
   
   @scala.inline
-  implicit class TableCellPropertiesOps[Self <: TableCellProperties] (val x: Self) extends AnyVal {
+  implicit class TableCellPropertiesMutableBuilder[Self <: TableCellProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentAlignmentUndefined: Self = StObject.set(x, "contentAlignment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTableCellBackgroundFill(value: TableCellBackgroundFill): Self = StObject.set(x, "tableCellBackgroundFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentAlignment(value: String): Self = this.set("contentAlignment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentAlignment: Self = this.set("contentAlignment", js.undefined)
-    
-    @scala.inline
-    def setTableCellBackgroundFill(value: TableCellBackgroundFill): Self = this.set("tableCellBackgroundFill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableCellBackgroundFill: Self = this.set("tableCellBackgroundFill", js.undefined)
+    def setTableCellBackgroundFillUndefined: Self = StObject.set(x, "tableCellBackgroundFill", js.undefined)
   }
 }

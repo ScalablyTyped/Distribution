@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,33 +37,21 @@ object SupportingWidgetDefaultsFeatureTemplates {
   }
   
   @scala.inline
-  implicit class SupportingWidgetDefaultsFeatureTemplatesOps[Self <: SupportingWidgetDefaultsFeatureTemplates] (val x: Self) extends AnyVal {
+  implicit class SupportingWidgetDefaultsFeatureTemplatesMutableBuilder[Self <: SupportingWidgetDefaultsFeatureTemplates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterEnabled(value: Boolean): Self = StObject.set(x, "filterEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterEnabledUndefined: Self = StObject.set(x, "filterEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupBy(value: String | GroupByFunction): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterEnabled(value: Boolean): Self = this.set("filterEnabled", value.asInstanceOf[js.Any])
+    def setGroupByFunction1(value: /* grouping */ js.Any => String | js.Any): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFilterEnabled: Self = this.set("filterEnabled", js.undefined)
-    
-    @scala.inline
-    def setGroupByFunction1(value: /* grouping */ js.Any => String | js.Any): Self = this.set("groupBy", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGroupBy(value: String | GroupByFunction): Self = this.set("groupBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupBy: Self = this.set("groupBy", js.undefined)
+    def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
   }
 }

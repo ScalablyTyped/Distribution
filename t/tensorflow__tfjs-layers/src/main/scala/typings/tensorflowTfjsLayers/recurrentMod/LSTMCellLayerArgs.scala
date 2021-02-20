@@ -1,6 +1,7 @@
 package typings.tensorflowTfjsLayers.recurrentMod
 
 import typings.tensorflowTfjsLayers.activationConfigMod.ActivationIdentifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,36 +51,24 @@ object LSTMCellLayerArgs {
   }
   
   @scala.inline
-  implicit class LSTMCellLayerArgsOps[Self <: LSTMCellLayerArgs] (val x: Self) extends AnyVal {
+  implicit class LSTMCellLayerArgsMutableBuilder[Self <: LSTMCellLayerArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImplementation(value: Double): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecurrentActivation(value: ActivationIdentifier): Self = StObject.set(x, "recurrentActivation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImplementation(value: Double): Self = this.set("implementation", value.asInstanceOf[js.Any])
+    def setRecurrentActivationUndefined: Self = StObject.set(x, "recurrentActivation", js.undefined)
     
     @scala.inline
-    def deleteImplementation: Self = this.set("implementation", js.undefined)
+    def setUnitForgetBias(value: Boolean): Self = StObject.set(x, "unitForgetBias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecurrentActivation(value: ActivationIdentifier): Self = this.set("recurrentActivation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecurrentActivation: Self = this.set("recurrentActivation", js.undefined)
-    
-    @scala.inline
-    def setUnitForgetBias(value: Boolean): Self = this.set("unitForgetBias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnitForgetBias: Self = this.set("unitForgetBias", js.undefined)
+    def setUnitForgetBiasUndefined: Self = StObject.set(x, "unitForgetBias", js.undefined)
   }
 }

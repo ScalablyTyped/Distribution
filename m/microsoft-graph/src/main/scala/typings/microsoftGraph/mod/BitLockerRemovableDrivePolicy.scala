@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BitLockerRemovableDrivePolicy extends js.Object {
+trait BitLockerRemovableDrivePolicy extends StObject {
   
   /**
     * This policy setting determines whether BitLocker protection is required for removable data drives to be writable on a
@@ -31,39 +32,27 @@ object BitLockerRemovableDrivePolicy {
   }
   
   @scala.inline
-  implicit class BitLockerRemovableDrivePolicyOps[Self <: BitLockerRemovableDrivePolicy] (val x: Self) extends AnyVal {
+  implicit class BitLockerRemovableDrivePolicyMutableBuilder[Self <: BitLockerRemovableDrivePolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockCrossOrganizationWriteAccess(value: Boolean): Self = StObject.set(x, "blockCrossOrganizationWriteAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockCrossOrganizationWriteAccessUndefined: Self = StObject.set(x, "blockCrossOrganizationWriteAccess", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryptionMethod(value: NullableOption[BitLockerEncryptionMethod]): Self = StObject.set(x, "encryptionMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockCrossOrganizationWriteAccess(value: Boolean): Self = this.set("blockCrossOrganizationWriteAccess", value.asInstanceOf[js.Any])
+    def setEncryptionMethodNull: Self = StObject.set(x, "encryptionMethod", null)
     
     @scala.inline
-    def deleteBlockCrossOrganizationWriteAccess: Self = this.set("blockCrossOrganizationWriteAccess", js.undefined)
+    def setEncryptionMethodUndefined: Self = StObject.set(x, "encryptionMethod", js.undefined)
     
     @scala.inline
-    def setEncryptionMethod(value: NullableOption[BitLockerEncryptionMethod]): Self = this.set("encryptionMethod", value.asInstanceOf[js.Any])
+    def setRequireEncryptionForWriteAccess(value: Boolean): Self = StObject.set(x, "requireEncryptionForWriteAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncryptionMethod: Self = this.set("encryptionMethod", js.undefined)
-    
-    @scala.inline
-    def setEncryptionMethodNull: Self = this.set("encryptionMethod", null)
-    
-    @scala.inline
-    def setRequireEncryptionForWriteAccess(value: Boolean): Self = this.set("requireEncryptionForWriteAccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequireEncryptionForWriteAccess: Self = this.set("requireEncryptionForWriteAccess", js.undefined)
+    def setRequireEncryptionForWriteAccessUndefined: Self = StObject.set(x, "requireEncryptionForWriteAccess", js.undefined)
   }
 }

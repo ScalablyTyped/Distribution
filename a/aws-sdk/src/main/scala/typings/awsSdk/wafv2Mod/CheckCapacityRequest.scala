@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CheckCapacityRequest extends js.Object {
+trait CheckCapacityRequest extends StObject {
   
   /**
     * An array of Rule that you're configuring to use in a rule group or web ACL. 
@@ -26,27 +27,15 @@ object CheckCapacityRequest {
   }
   
   @scala.inline
-  implicit class CheckCapacityRequestOps[Self <: CheckCapacityRequest] (val x: Self) extends AnyVal {
+  implicit class CheckCapacityRequestMutableBuilder[Self <: CheckCapacityRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRules(value: Rules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRulesVarargs(value: Rule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRulesVarargs(value: Rule*): Self = this.set("Rules", js.Array(value :_*))
-    
-    @scala.inline
-    def setRules(value: Rules): Self = this.set("Rules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScope(value: Scope): Self = this.set("Scope", value.asInstanceOf[js.Any])
+    def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
   }
 }

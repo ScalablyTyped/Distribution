@@ -2,13 +2,14 @@ package typings.typeorm.typingsMod
 
 import typings.typeorm.anon.End
 import typings.typeorm.anon.Revision
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typeorm/browser/driver/mongodb/typings", "GridFSBucket")
 @js.native
-class GridFSBucket protected () extends js.Object {
+class GridFSBucket protected () extends StObject {
   /**
     *
     * @param db A db handle.

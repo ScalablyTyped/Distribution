@@ -3,6 +3,7 @@ package typings.phaser.phaserMod.GameObjects
 import typings.phaser.Phaser.Cameras.Scene2D.Camera
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Types.GameObjects.Graphics.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,13 +60,19 @@ class Graphics protected ()
   def this(scene: Scene) = this()
   def this(scene: Scene, options: Options) = this()
 }
-/* static members */
-@JSImport("phaser", "GameObjects.Graphics")
-@js.native
-object Graphics extends js.Object {
+object Graphics {
+  
+  @JSImport("phaser", "GameObjects.Graphics")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * A Camera used specifically by the Graphics system for rendering to textures.
     */
-  var TargetCamera: Camera = js.native
+  /* static member */
+  @JSImport("phaser", "GameObjects.Graphics.TargetCamera")
+  @js.native
+  def TargetCamera: Camera = js.native
+  @scala.inline
+  def TargetCamera_=(x: Camera): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TargetCamera")(x.asInstanceOf[js.Any])
 }

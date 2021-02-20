@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssetProperty extends js.Object {
+trait AssetProperty extends StObject {
   
   /**
     * The property alias that identifies the property, such as an OPC-UA server data stream path (for example, /company/windfarm/3/turbine/7/temperature). For more information, see Mapping industrial data streams to asset properties in the AWS IoT SiteWise User Guide.
@@ -46,45 +47,33 @@ object AssetProperty {
   }
   
   @scala.inline
-  implicit class AssetPropertyOps[Self <: AssetProperty] (val x: Self) extends AnyVal {
+  implicit class AssetPropertyMutableBuilder[Self <: AssetProperty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlias(value: PropertyAlias): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataType(value: PropertyDataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: PropertyDataType): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: ID): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNotification(value: PropertyNotification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlias(value: PropertyAlias): Self = this.set("alias", value.asInstanceOf[js.Any])
+    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
     @scala.inline
-    def deleteAlias: Self = this.set("alias", js.undefined)
+    def setUnit(value: PropertyUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotification(value: PropertyNotification): Self = this.set("notification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotification: Self = this.set("notification", js.undefined)
-    
-    @scala.inline
-    def setUnit(value: PropertyUnit): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

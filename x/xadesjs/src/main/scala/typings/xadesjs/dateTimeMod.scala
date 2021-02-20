@@ -1,17 +1,18 @@
 package typings.xadesjs
 
 import typings.std.Date
-import typings.xmlCore.mod.XmlObject
+import typings.xadesjs.xmlBaseMod.XadesObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xadesjs/build/types/xml/date_time", JSImport.Namespace)
-@js.native
-object dateTimeMod extends js.Object {
+object dateTimeMod {
   
+  @JSImport("xadesjs/build/types/xml/date_time", "XadesDateTime")
   @js.native
-  class XadesDateTime () extends XmlObject {
+  class XadesDateTime () extends XadesObject {
+    def this(properties: js.Object) = this()
     
     /**
       * Format of the datetime value

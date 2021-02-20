@@ -1,11 +1,12 @@
 package typings.awsSdk.frauddetectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModelVersionDetail extends js.Object {
+trait ModelVersionDetail extends StObject {
   
   /**
     * The model version ARN.
@@ -71,84 +72,72 @@ object ModelVersionDetail {
   }
   
   @scala.inline
-  implicit class ModelVersionDetailOps[Self <: ModelVersionDetail] (val x: Self) extends AnyVal {
+  implicit class ModelVersionDetailMutableBuilder[Self <: ModelVersionDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: fraudDetectorArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedTime(value: time): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: fraudDetectorArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setExternalEventsDetail(value: ExternalEventsDetail): Self = StObject.set(x, "externalEventsDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTime(value: time): Self = this.set("createdTime", value.asInstanceOf[js.Any])
+    def setExternalEventsDetailUndefined: Self = StObject.set(x, "externalEventsDetail", js.undefined)
     
     @scala.inline
-    def deleteCreatedTime: Self = this.set("createdTime", js.undefined)
+    def setLastUpdatedTime(value: time): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalEventsDetail(value: ExternalEventsDetail): Self = this.set("externalEventsDetail", value.asInstanceOf[js.Any])
+    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
     
     @scala.inline
-    def deleteExternalEventsDetail: Self = this.set("externalEventsDetail", js.undefined)
+    def setModelId(value: modelIdentifier): Self = StObject.set(x, "modelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedTime(value: time): Self = this.set("lastUpdatedTime", value.asInstanceOf[js.Any])
+    def setModelIdUndefined: Self = StObject.set(x, "modelId", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedTime: Self = this.set("lastUpdatedTime", js.undefined)
+    def setModelType(value: ModelTypeEnum): Self = StObject.set(x, "modelType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelId(value: modelIdentifier): Self = this.set("modelId", value.asInstanceOf[js.Any])
+    def setModelTypeUndefined: Self = StObject.set(x, "modelType", js.undefined)
     
     @scala.inline
-    def deleteModelId: Self = this.set("modelId", js.undefined)
+    def setModelVersionNumber(value: floatVersionString): Self = StObject.set(x, "modelVersionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelType(value: ModelTypeEnum): Self = this.set("modelType", value.asInstanceOf[js.Any])
+    def setModelVersionNumberUndefined: Self = StObject.set(x, "modelVersionNumber", js.undefined)
     
     @scala.inline
-    def deleteModelType: Self = this.set("modelType", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelVersionNumber(value: floatVersionString): Self = this.set("modelVersionNumber", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteModelVersionNumber: Self = this.set("modelVersionNumber", js.undefined)
+    def setTrainingDataSchema(value: TrainingDataSchema): Self = StObject.set(x, "trainingDataSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTrainingDataSchemaUndefined: Self = StObject.set(x, "trainingDataSchema", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTrainingDataSource(value: TrainingDataSourceEnum): Self = StObject.set(x, "trainingDataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrainingDataSchema(value: TrainingDataSchema): Self = this.set("trainingDataSchema", value.asInstanceOf[js.Any])
+    def setTrainingDataSourceUndefined: Self = StObject.set(x, "trainingDataSource", js.undefined)
     
     @scala.inline
-    def deleteTrainingDataSchema: Self = this.set("trainingDataSchema", js.undefined)
+    def setTrainingResult(value: TrainingResult): Self = StObject.set(x, "trainingResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrainingDataSource(value: TrainingDataSourceEnum): Self = this.set("trainingDataSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrainingDataSource: Self = this.set("trainingDataSource", js.undefined)
-    
-    @scala.inline
-    def setTrainingResult(value: TrainingResult): Self = this.set("trainingResult", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrainingResult: Self = this.set("trainingResult", js.undefined)
+    def setTrainingResultUndefined: Self = StObject.set(x, "trainingResult", js.undefined)
   }
 }

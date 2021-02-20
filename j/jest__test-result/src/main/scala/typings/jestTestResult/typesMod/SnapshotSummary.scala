@@ -1,11 +1,12 @@
 package typings.jestTestResult.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SnapshotSummary extends js.Object {
+trait SnapshotSummary extends StObject {
   
   var added: Double = js.native
   
@@ -59,66 +60,54 @@ object SnapshotSummary {
   }
   
   @scala.inline
-  implicit class SnapshotSummaryOps[Self <: SnapshotSummary] (val x: Self) extends AnyVal {
+  implicit class SnapshotSummaryMutableBuilder[Self <: SnapshotSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdded(value: Double): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDidUpdate(value: Boolean): Self = StObject.set(x, "didUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailure(value: Boolean): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdded(value: Double): Self = this.set("added", value.asInstanceOf[js.Any])
+    def setFilesAdded(value: Double): Self = StObject.set(x, "filesAdded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDidUpdate(value: Boolean): Self = this.set("didUpdate", value.asInstanceOf[js.Any])
+    def setFilesRemoved(value: Double): Self = StObject.set(x, "filesRemoved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailure(value: Boolean): Self = this.set("failure", value.asInstanceOf[js.Any])
+    def setFilesRemovedList(value: js.Array[String]): Self = StObject.set(x, "filesRemovedList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilesAdded(value: Double): Self = this.set("filesAdded", value.asInstanceOf[js.Any])
+    def setFilesRemovedListVarargs(value: String*): Self = StObject.set(x, "filesRemovedList", js.Array(value :_*))
     
     @scala.inline
-    def setFilesRemoved(value: Double): Self = this.set("filesRemoved", value.asInstanceOf[js.Any])
+    def setFilesUnmatched(value: Double): Self = StObject.set(x, "filesUnmatched", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilesRemovedListVarargs(value: String*): Self = this.set("filesRemovedList", js.Array(value :_*))
+    def setFilesUpdated(value: Double): Self = StObject.set(x, "filesUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilesRemovedList(value: js.Array[String]): Self = this.set("filesRemovedList", value.asInstanceOf[js.Any])
+    def setMatched(value: Double): Self = StObject.set(x, "matched", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilesUnmatched(value: Double): Self = this.set("filesUnmatched", value.asInstanceOf[js.Any])
+    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilesUpdated(value: Double): Self = this.set("filesUpdated", value.asInstanceOf[js.Any])
+    def setUnchecked(value: Double): Self = StObject.set(x, "unchecked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatched(value: Double): Self = this.set("matched", value.asInstanceOf[js.Any])
+    def setUncheckedKeysByFile(value: js.Array[UncheckedSnapshot]): Self = StObject.set(x, "uncheckedKeysByFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
+    def setUncheckedKeysByFileVarargs(value: UncheckedSnapshot*): Self = StObject.set(x, "uncheckedKeysByFile", js.Array(value :_*))
     
     @scala.inline
-    def setUnchecked(value: Double): Self = this.set("unchecked", value.asInstanceOf[js.Any])
+    def setUnmatched(value: Double): Self = StObject.set(x, "unmatched", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUncheckedKeysByFileVarargs(value: UncheckedSnapshot*): Self = this.set("uncheckedKeysByFile", js.Array(value :_*))
-    
-    @scala.inline
-    def setUncheckedKeysByFile(value: js.Array[UncheckedSnapshot]): Self = this.set("uncheckedKeysByFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnmatched(value: Double): Self = this.set("unmatched", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdated(value: Double): Self = this.set("updated", value.asInstanceOf[js.Any])
+    def setUpdated(value: Double): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
   }
 }

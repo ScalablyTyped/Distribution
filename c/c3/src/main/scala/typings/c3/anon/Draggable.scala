@@ -2,12 +2,13 @@ package typings.c3.anon
 
 import typings.c3.mod.DataSeries
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Draggable extends js.Object {
+trait Draggable extends StObject {
   
   /**
     * Enable to select data points by dragging.
@@ -55,48 +56,36 @@ object Draggable {
   }
   
   @scala.inline
-  implicit class DraggableOps[Self <: Draggable] (val x: Self) extends AnyVal {
+  implicit class DraggableMutableBuilder[Self <: Draggable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    def setGrouped(value: Boolean): Self = StObject.set(x, "grouped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setGroupedUndefined: Self = StObject.set(x, "grouped", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setIsselectable(value: js.ThisFunction1[/* this */ Record[String, _], /* d */ DataSeries, Boolean]): Self = StObject.set(x, "isselectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrouped(value: Boolean): Self = this.set("grouped", value.asInstanceOf[js.Any])
+    def setIsselectableUndefined: Self = StObject.set(x, "isselectable", js.undefined)
     
     @scala.inline
-    def deleteGrouped: Self = this.set("grouped", js.undefined)
+    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsselectable(value: js.ThisFunction1[/* this */ Record[String, _], /* d */ DataSeries, Boolean]): Self = this.set("isselectable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsselectable: Self = this.set("isselectable", js.undefined)
-    
-    @scala.inline
-    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
   }
 }

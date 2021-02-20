@@ -13,6 +13,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.solid
 import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -188,147 +189,135 @@ object colorCreateContinuousRendererParams {
   }
   
   @scala.inline
-  implicit class colorCreateContinuousRendererParamsOps[Self <: colorCreateContinuousRendererParams] (val x: Self) extends AnyVal {
+  implicit class colorCreateContinuousRendererParamsMutableBuilder[Self <: colorCreateContinuousRendererParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorMixMode(value: String): Self = StObject.set(x, "colorMixMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setColorMixModeUndefined: Self = StObject.set(x, "colorMixMode", js.undefined)
     
     @scala.inline
-    def setBasemap(value: String | Basemap): Self = this.set("basemap", value.asInstanceOf[js.Any])
+    def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBasemap: Self = this.set("basemap", js.undefined)
+    def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
     
     @scala.inline
-    def setColorMixMode(value: String): Self = this.set("colorMixMode", value.asInstanceOf[js.Any])
+    def setDefaultSymbolEnabled(value: Boolean): Self = StObject.set(x, "defaultSymbolEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColorMixMode: Self = this.set("colorMixMode", js.undefined)
+    def setDefaultSymbolEnabledUndefined: Self = StObject.set(x, "defaultSymbolEnabled", js.undefined)
     
     @scala.inline
-    def setColorScheme(value: ColorScheme): Self = this.set("colorScheme", value.asInstanceOf[js.Any])
+    def setEdgesType(value: solid | none): Self = StObject.set(x, "edgesType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColorScheme: Self = this.set("colorScheme", js.undefined)
+    def setEdgesTypeUndefined: Self = StObject.set(x, "edgesType", js.undefined)
     
     @scala.inline
-    def setDefaultSymbolEnabled(value: Boolean): Self = this.set("defaultSymbolEnabled", value.asInstanceOf[js.Any])
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultSymbolEnabled: Self = this.set("defaultSymbolEnabled", js.undefined)
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def setEdgesType(value: solid | none): Self = this.set("edgesType", value.asInstanceOf[js.Any])
+    def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEdgesType: Self = this.set("edgesType", js.undefined)
+    def setLegendOptions(value: colorCreateContinuousRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendOptions(value: colorCreateContinuousRendererParamsLegendOptions): Self = this.set("legendOptions", value.asInstanceOf[js.Any])
+    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
     @scala.inline
-    def deleteLegendOptions: Self = this.set("legendOptions", js.undefined)
+    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
     @scala.inline
-    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
     
     @scala.inline
-    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    def setOutlineOptimizationEnabled(value: Boolean): Self = StObject.set(x, "outlineOptimizationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalizationField(value: String): Self = this.set("normalizationField", value.asInstanceOf[js.Any])
+    def setOutlineOptimizationEnabledUndefined: Self = StObject.set(x, "outlineOptimizationEnabled", js.undefined)
     
     @scala.inline
-    def deleteNormalizationField: Self = this.set("normalizationField", js.undefined)
+    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineOptimizationEnabled(value: Boolean): Self = this.set("outlineOptimizationEnabled", value.asInstanceOf[js.Any])
+    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
     @scala.inline
-    def deleteOutlineOptimizationEnabled: Self = this.set("outlineOptimizationEnabled", js.undefined)
+    def setSizeOptimizationEnabled(value: Boolean): Self = StObject.set(x, "sizeOptimizationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignal(value: AbortSignal): Self = this.set("signal", value.asInstanceOf[js.Any])
+    def setSizeOptimizationEnabledUndefined: Self = StObject.set(x, "sizeOptimizationEnabled", js.undefined)
     
     @scala.inline
-    def deleteSignal: Self = this.set("signal", js.undefined)
+    def setSqlExpression(value: String): Self = StObject.set(x, "sqlExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeOptimizationEnabled(value: Boolean): Self = this.set("sizeOptimizationEnabled", value.asInstanceOf[js.Any])
+    def setSqlExpressionUndefined: Self = StObject.set(x, "sqlExpression", js.undefined)
     
     @scala.inline
-    def deleteSizeOptimizationEnabled: Self = this.set("sizeOptimizationEnabled", js.undefined)
+    def setSqlWhere(value: String): Self = StObject.set(x, "sqlWhere", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSqlExpression(value: String): Self = this.set("sqlExpression", value.asInstanceOf[js.Any])
+    def setSqlWhereUndefined: Self = StObject.set(x, "sqlWhere", js.undefined)
     
     @scala.inline
-    def deleteSqlExpression: Self = this.set("sqlExpression", js.undefined)
+    def setStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSqlWhere(value: String): Self = this.set("sqlWhere", value.asInstanceOf[js.Any])
+    def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
     
     @scala.inline
-    def deleteSqlWhere: Self = this.set("sqlWhere", js.undefined)
+    def setSymbolType(value: `2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatistics(value: SummaryStatisticsResult): Self = this.set("statistics", value.asInstanceOf[js.Any])
+    def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
     
     @scala.inline
-    def deleteStatistics: Self = this.set("statistics", js.undefined)
+    def setTheme(value: `high-to-low` | `above-and-below` | `centered-on` | extremes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbolType(value: `2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`): Self = this.set("symbolType", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteSymbolType: Self = this.set("symbolType", js.undefined)
+    def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: `high-to-low` | `above-and-below` | `centered-on` | extremes): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setValueExpressionTitle(value: String): Self = StObject.set(x, "valueExpressionTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setValueExpressionTitleUndefined: Self = StObject.set(x, "valueExpressionTitle", js.undefined)
     
     @scala.inline
-    def setValueExpression(value: String): Self = this.set("valueExpression", value.asInstanceOf[js.Any])
+    def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
     
     @scala.inline
-    def deleteValueExpression: Self = this.set("valueExpression", js.undefined)
+    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueExpressionTitle(value: String): Self = this.set("valueExpressionTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueExpressionTitle: Self = this.set("valueExpressionTitle", js.undefined)
-    
-    @scala.inline
-    def setView(value: View): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

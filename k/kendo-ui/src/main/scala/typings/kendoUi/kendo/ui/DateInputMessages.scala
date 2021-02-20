@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DateInputMessages extends js.Object {
+trait DateInputMessages extends StObject {
   
   var day: js.UndefOr[String] = js.native
   
@@ -32,66 +33,54 @@ object DateInputMessages {
   }
   
   @scala.inline
-  implicit class DateInputMessagesOps[Self <: DateInputMessages] (val x: Self) extends AnyVal {
+  implicit class DateInputMessagesMutableBuilder[Self <: DateInputMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDayperiod(value: String): Self = StObject.set(x, "dayperiod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDay(value: String): Self = this.set("day", value.asInstanceOf[js.Any])
+    def setDayperiodUndefined: Self = StObject.set(x, "dayperiod", js.undefined)
     
     @scala.inline
-    def deleteDay: Self = this.set("day", js.undefined)
+    def setHour(value: String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayperiod(value: String): Self = this.set("dayperiod", value.asInstanceOf[js.Any])
+    def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
     
     @scala.inline
-    def deleteDayperiod: Self = this.set("dayperiod", js.undefined)
+    def setMinute(value: String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHour(value: String): Self = this.set("hour", value.asInstanceOf[js.Any])
+    def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
     
     @scala.inline
-    def deleteHour: Self = this.set("hour", js.undefined)
+    def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinute(value: String): Self = this.set("minute", value.asInstanceOf[js.Any])
+    def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
     
     @scala.inline
-    def deleteMinute: Self = this.set("minute", js.undefined)
+    def setSecond(value: String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonth(value: String): Self = this.set("month", value.asInstanceOf[js.Any])
+    def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
     
     @scala.inline
-    def deleteMonth: Self = this.set("month", js.undefined)
+    def setWeekday(value: String): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecond(value: String): Self = this.set("second", value.asInstanceOf[js.Any])
+    def setWeekdayUndefined: Self = StObject.set(x, "weekday", js.undefined)
     
     @scala.inline
-    def deleteSecond: Self = this.set("second", js.undefined)
+    def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeekday(value: String): Self = this.set("weekday", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeekday: Self = this.set("weekday", js.undefined)
-    
-    @scala.inline
-    def setYear(value: String): Self = this.set("year", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYear: Self = this.set("year", js.undefined)
+    def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
   }
 }

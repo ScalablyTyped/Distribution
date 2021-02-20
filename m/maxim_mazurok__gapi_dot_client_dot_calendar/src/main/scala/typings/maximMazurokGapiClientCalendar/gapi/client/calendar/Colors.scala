@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Colors extends js.Object {
+trait Colors extends StObject {
   
   /** A global palette of calendar colors, mapping from the color ID to its definition. A calendarListEntry resource refers to one of these color IDs in its color field. Read-only. */
   var calendar: js.UndefOr[
@@ -37,50 +38,38 @@ object Colors {
   }
   
   @scala.inline
-  implicit class ColorsOps[Self <: Colors] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ColorsMutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setCalendar(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.ColorDefinition}
       */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Colors with TopLevel[js.Any]
-    ): Self = this.set("calendar", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCalendar: Self = this.set("calendar", js.undefined)
+    def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
     
     @scala.inline
     def setEvent(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.ColorDefinition}
       */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Colors with TopLevel[js.Any]
-    ): Self = this.set("event", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUpdated: Self = this.set("updated", js.undefined)
+    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }
 }

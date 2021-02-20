@@ -1,11 +1,12 @@
 package typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1alpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse extends js.Object {
+trait SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse extends StObject {
   
   /**
     * The list of instances in a given project.
@@ -21,27 +22,15 @@ object SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse
   }
   
   @scala.inline
-  implicit class SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponseOps[Self <: SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponseMutableBuilder[Self <: SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstances(value: js.Array[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstancesVarargs(value: SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance*): Self = this.set("instances", js.Array(value :_*))
-    
-    @scala.inline
-    def setInstances(value: js.Array[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance]): Self = this.set("instances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstances: Self = this.set("instances", js.undefined)
+    def setInstancesVarargs(value: SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance*): Self = StObject.set(x, "instances", js.Array(value :_*))
   }
 }

@@ -8,6 +8,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`not-between`
 import typings.arcgisJsApi.arcgisJsApiStrings.`not-equal`
 import typings.arcgisJsApi.arcgisJsApiStrings.between
 import typings.arcgisJsApi.arcgisJsApiStrings.equal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

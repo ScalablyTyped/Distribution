@@ -3,16 +3,16 @@ package typings.reactDndHtml5Backend
 import typings.dndCore.interfacesMod.DragDropMonitor
 import typings.reactDndHtml5Backend.nativeTypesConfigMod.NativeItemConfig
 import typings.std.DataTransfer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-dnd-html5-backend/lib/NativeDragSources/NativeDragSource", JSImport.Namespace)
-@js.native
-object nativeDragSourceMod extends js.Object {
+object nativeDragSourceMod {
   
+  @JSImport("react-dnd-html5-backend/lib/NativeDragSources/NativeDragSource", "NativeDragSource")
   @js.native
-  class NativeDragSource protected () extends js.Object {
+  class NativeDragSource protected () extends StObject {
     def this(config: NativeItemConfig) = this()
     
     def beginDrag(): js.Any = js.native

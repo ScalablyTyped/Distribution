@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AppointmentWeekOfMonth extends js.Object
+sealed trait AppointmentWeekOfMonth extends StObject
 /** Specifies the week of the month for which the appointment occurs. */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentWeekOfMonth")
 @js.native
-object AppointmentWeekOfMonth extends js.Object {
+object AppointmentWeekOfMonth extends StObject {
   
   /** The appointment occurs on the first week of the month. */
   @js.native

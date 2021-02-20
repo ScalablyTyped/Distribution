@@ -1,11 +1,12 @@
 package typings.awsSdk.marketplacemeteringMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UsageRecord extends js.Object {
+trait UsageRecord extends StObject {
   
   /**
     * The CustomerIdentifier is obtained through the ResolveCustomer operation and represents an individual buyer in your application.
@@ -41,42 +42,30 @@ object UsageRecord {
   }
   
   @scala.inline
-  implicit class UsageRecordOps[Self <: UsageRecord] (val x: Self) extends AnyVal {
+  implicit class UsageRecordMutableBuilder[Self <: UsageRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomerIdentifier(value: CustomerIdentifier): Self = StObject.set(x, "CustomerIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimension(value: UsageDimension): Self = StObject.set(x, "Dimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQuantity(value: UsageQuantity): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerIdentifier(value: CustomerIdentifier): Self = this.set("CustomerIdentifier", value.asInstanceOf[js.Any])
+    def setQuantityUndefined: Self = StObject.set(x, "Quantity", js.undefined)
     
     @scala.inline
-    def setDimension(value: UsageDimension): Self = this.set("Dimension", value.asInstanceOf[js.Any])
+    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    def setUsageAllocations(value: UsageAllocations): Self = StObject.set(x, "UsageAllocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantity(value: UsageQuantity): Self = this.set("Quantity", value.asInstanceOf[js.Any])
+    def setUsageAllocationsUndefined: Self = StObject.set(x, "UsageAllocations", js.undefined)
     
     @scala.inline
-    def deleteQuantity: Self = this.set("Quantity", js.undefined)
-    
-    @scala.inline
-    def setUsageAllocationsVarargs(value: UsageAllocation*): Self = this.set("UsageAllocations", js.Array(value :_*))
-    
-    @scala.inline
-    def setUsageAllocations(value: UsageAllocations): Self = this.set("UsageAllocations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsageAllocations: Self = this.set("UsageAllocations", js.undefined)
+    def setUsageAllocationsVarargs(value: UsageAllocation*): Self = StObject.set(x, "UsageAllocations", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.UI.iPad
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,63 +64,51 @@ object PopoverEventMap {
   }
   
   @scala.inline
-  implicit class PopoverEventMapOps[Self <: PopoverEventMap] (val x: Self) extends AnyVal {
+  implicit class PopoverEventMapMutableBuilder[Self <: PopoverEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: PopoverClickEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDblclick(value: PopoverDblclickEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDoubletap(value: PopoverDoubletapEvent): Self = StObject.set(x, "doubletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: PopoverClickEvent): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setHide(value: PopoverHideEvent): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDblclick(value: PopoverDblclickEvent): Self = this.set("dblclick", value.asInstanceOf[js.Any])
+    def setKeypressed(value: PopoverKeypressedEvent): Self = StObject.set(x, "keypressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubletap(value: PopoverDoubletapEvent): Self = this.set("doubletap", value.asInstanceOf[js.Any])
+    def setLongpress(value: PopoverLongpressEvent): Self = StObject.set(x, "longpress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHide(value: PopoverHideEvent): Self = this.set("hide", value.asInstanceOf[js.Any])
+    def setPinch(value: PopoverPinchEvent): Self = StObject.set(x, "pinch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeypressed(value: PopoverKeypressedEvent): Self = this.set("keypressed", value.asInstanceOf[js.Any])
+    def setPostlayout(value: PopoverPostlayoutEvent): Self = StObject.set(x, "postlayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongpress(value: PopoverLongpressEvent): Self = this.set("longpress", value.asInstanceOf[js.Any])
+    def setSingletap(value: PopoverSingletapEvent): Self = StObject.set(x, "singletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinch(value: PopoverPinchEvent): Self = this.set("pinch", value.asInstanceOf[js.Any])
+    def setSwipe(value: PopoverSwipeEvent): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostlayout(value: PopoverPostlayoutEvent): Self = this.set("postlayout", value.asInstanceOf[js.Any])
+    def setTouchcancel(value: PopoverTouchcancelEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingletap(value: PopoverSingletapEvent): Self = this.set("singletap", value.asInstanceOf[js.Any])
+    def setTouchend(value: PopoverTouchendEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipe(value: PopoverSwipeEvent): Self = this.set("swipe", value.asInstanceOf[js.Any])
+    def setTouchmove(value: PopoverTouchmoveEvent): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchcancel(value: PopoverTouchcancelEvent): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
+    def setTouchstart(value: PopoverTouchstartEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchend(value: PopoverTouchendEvent): Self = this.set("touchend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchmove(value: PopoverTouchmoveEvent): Self = this.set("touchmove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchstart(value: PopoverTouchstartEvent): Self = this.set("touchstart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwofingertap(value: PopoverTwofingertapEvent): Self = this.set("twofingertap", value.asInstanceOf[js.Any])
+    def setTwofingertap(value: PopoverTwofingertapEvent): Self = StObject.set(x, "twofingertap", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PullsRequestReviewersEndpoint extends js.Object {
+trait PullsRequestReviewersEndpoint extends StObject {
   
   var owner: String = js.native
   
@@ -32,45 +33,33 @@ object PullsRequestReviewersEndpoint {
   }
   
   @scala.inline
-  implicit class PullsRequestReviewersEndpointOps[Self <: PullsRequestReviewersEndpoint] (val x: Self) extends AnyVal {
+  implicit class PullsRequestReviewersEndpointMutableBuilder[Self <: PullsRequestReviewersEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPull_number(value: Double): Self = StObject.set(x, "pull_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setReviewers(value: js.Array[String]): Self = StObject.set(x, "reviewers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPull_number(value: Double): Self = this.set("pull_number", value.asInstanceOf[js.Any])
+    def setReviewersUndefined: Self = StObject.set(x, "reviewers", js.undefined)
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setReviewersVarargs(value: String*): Self = StObject.set(x, "reviewers", js.Array(value :_*))
     
     @scala.inline
-    def setReviewersVarargs(value: String*): Self = this.set("reviewers", js.Array(value :_*))
+    def setTeam_reviewers(value: js.Array[String]): Self = StObject.set(x, "team_reviewers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReviewers(value: js.Array[String]): Self = this.set("reviewers", value.asInstanceOf[js.Any])
+    def setTeam_reviewersUndefined: Self = StObject.set(x, "team_reviewers", js.undefined)
     
     @scala.inline
-    def deleteReviewers: Self = this.set("reviewers", js.undefined)
-    
-    @scala.inline
-    def setTeam_reviewersVarargs(value: String*): Self = this.set("team_reviewers", js.Array(value :_*))
-    
-    @scala.inline
-    def setTeam_reviewers(value: js.Array[String]): Self = this.set("team_reviewers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTeam_reviewers: Self = this.set("team_reviewers", js.undefined)
+    def setTeam_reviewersVarargs(value: String*): Self = StObject.set(x, "team_reviewers", js.Array(value :_*))
   }
 }

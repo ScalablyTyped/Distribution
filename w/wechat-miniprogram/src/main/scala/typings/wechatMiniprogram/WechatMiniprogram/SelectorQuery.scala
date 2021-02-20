@@ -1,12 +1,13 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
 import typings.wechatMiniprogram.WechatMiniprogram.Component.TrivialInstance
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelectorQuery extends js.Object {
+trait SelectorQuery extends StObject {
   
   /** [[NodesRef](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/NodesRef.html) SelectorQuery.exec(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/SelectorQuery.exec.html)
     *

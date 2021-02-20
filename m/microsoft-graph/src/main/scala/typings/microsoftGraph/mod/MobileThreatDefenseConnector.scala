@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,66 +44,54 @@ object MobileThreatDefenseConnector {
   }
   
   @scala.inline
-  implicit class MobileThreatDefenseConnectorOps[Self <: MobileThreatDefenseConnector] (val x: Self) extends AnyVal {
+  implicit class MobileThreatDefenseConnectorMutableBuilder[Self <: MobileThreatDefenseConnector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroidDeviceBlockedOnMissingPartnerData(value: Boolean): Self = StObject.set(x, "androidDeviceBlockedOnMissingPartnerData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidDeviceBlockedOnMissingPartnerDataUndefined: Self = StObject.set(x, "androidDeviceBlockedOnMissingPartnerData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAndroidEnabled(value: Boolean): Self = StObject.set(x, "androidEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidDeviceBlockedOnMissingPartnerData(value: Boolean): Self = this.set("androidDeviceBlockedOnMissingPartnerData", value.asInstanceOf[js.Any])
+    def setAndroidEnabledUndefined: Self = StObject.set(x, "androidEnabled", js.undefined)
     
     @scala.inline
-    def deleteAndroidDeviceBlockedOnMissingPartnerData: Self = this.set("androidDeviceBlockedOnMissingPartnerData", js.undefined)
+    def setIosDeviceBlockedOnMissingPartnerData(value: Boolean): Self = StObject.set(x, "iosDeviceBlockedOnMissingPartnerData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidEnabled(value: Boolean): Self = this.set("androidEnabled", value.asInstanceOf[js.Any])
+    def setIosDeviceBlockedOnMissingPartnerDataUndefined: Self = StObject.set(x, "iosDeviceBlockedOnMissingPartnerData", js.undefined)
     
     @scala.inline
-    def deleteAndroidEnabled: Self = this.set("androidEnabled", js.undefined)
+    def setIosEnabled(value: Boolean): Self = StObject.set(x, "iosEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIosDeviceBlockedOnMissingPartnerData(value: Boolean): Self = this.set("iosDeviceBlockedOnMissingPartnerData", value.asInstanceOf[js.Any])
+    def setIosEnabledUndefined: Self = StObject.set(x, "iosEnabled", js.undefined)
     
     @scala.inline
-    def deleteIosDeviceBlockedOnMissingPartnerData: Self = this.set("iosDeviceBlockedOnMissingPartnerData", js.undefined)
+    def setLastHeartbeatDateTime(value: String): Self = StObject.set(x, "lastHeartbeatDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIosEnabled(value: Boolean): Self = this.set("iosEnabled", value.asInstanceOf[js.Any])
+    def setLastHeartbeatDateTimeUndefined: Self = StObject.set(x, "lastHeartbeatDateTime", js.undefined)
     
     @scala.inline
-    def deleteIosEnabled: Self = this.set("iosEnabled", js.undefined)
+    def setPartnerState(value: MobileThreatPartnerTenantState): Self = StObject.set(x, "partnerState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastHeartbeatDateTime(value: String): Self = this.set("lastHeartbeatDateTime", value.asInstanceOf[js.Any])
+    def setPartnerStateUndefined: Self = StObject.set(x, "partnerState", js.undefined)
     
     @scala.inline
-    def deleteLastHeartbeatDateTime: Self = this.set("lastHeartbeatDateTime", js.undefined)
+    def setPartnerUnresponsivenessThresholdInDays(value: Double): Self = StObject.set(x, "partnerUnresponsivenessThresholdInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartnerState(value: MobileThreatPartnerTenantState): Self = this.set("partnerState", value.asInstanceOf[js.Any])
+    def setPartnerUnresponsivenessThresholdInDaysUndefined: Self = StObject.set(x, "partnerUnresponsivenessThresholdInDays", js.undefined)
     
     @scala.inline
-    def deletePartnerState: Self = this.set("partnerState", js.undefined)
+    def setPartnerUnsupportedOsVersionBlocked(value: Boolean): Self = StObject.set(x, "partnerUnsupportedOsVersionBlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartnerUnresponsivenessThresholdInDays(value: Double): Self = this.set("partnerUnresponsivenessThresholdInDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartnerUnresponsivenessThresholdInDays: Self = this.set("partnerUnresponsivenessThresholdInDays", js.undefined)
-    
-    @scala.inline
-    def setPartnerUnsupportedOsVersionBlocked(value: Boolean): Self = this.set("partnerUnsupportedOsVersionBlocked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartnerUnsupportedOsVersionBlocked: Self = this.set("partnerUnsupportedOsVersionBlocked", js.undefined)
+    def setPartnerUnsupportedOsVersionBlockedUndefined: Self = StObject.set(x, "partnerUnsupportedOsVersionBlocked", js.undefined)
   }
 }

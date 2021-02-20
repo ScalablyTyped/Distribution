@@ -1,11 +1,12 @@
 package typings.webgme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowGuests extends js.Object {
+trait AllowGuests extends StObject {
   
   /**
     * Generate a guest account for non-authenticated connections.
@@ -72,45 +73,33 @@ object AllowGuests {
   }
   
   @scala.inline
-  implicit class AllowGuestsOps[Self <: AllowGuests] (val x: Self) extends AnyVal {
+  implicit class AllowGuestsMutableBuilder[Self <: AllowGuests] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowGuests(value: Boolean): Self = StObject.set(x, "allowGuests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowUserRegistration(value: Boolean): Self = StObject.set(x, "allowUserRegistration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorizer(value: Options): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowGuests(value: Boolean): Self = this.set("allowGuests", value.asInstanceOf[js.Any])
+    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowUserRegistration(value: Boolean): Self = this.set("allowUserRegistration", value.asInstanceOf[js.Any])
+    def setGuestAccount(value: String): Self = StObject.set(x, "guestAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizer(value: Options): Self = this.set("authorizer", value.asInstanceOf[js.Any])
+    def setJwt(value: Algorithm): Self = StObject.set(x, "jwt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnable(value: Boolean): Self = this.set("enable", value.asInstanceOf[js.Any])
+    def setLogInUrl(value: String): Self = StObject.set(x, "logInUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuestAccount(value: String): Self = this.set("guestAccount", value.asInstanceOf[js.Any])
+    def setLogOutUrl(value: String): Self = StObject.set(x, "logOutUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJwt(value: Algorithm): Self = this.set("jwt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogInUrl(value: String): Self = this.set("logInUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogOutUrl(value: String): Self = this.set("logOutUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSalts(value: Double): Self = this.set("salts", value.asInstanceOf[js.Any])
+    def setSalts(value: Double): Self = StObject.set(x, "salts", value.asInstanceOf[js.Any])
   }
 }

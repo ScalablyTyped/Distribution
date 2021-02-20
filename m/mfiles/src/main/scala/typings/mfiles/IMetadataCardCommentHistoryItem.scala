@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMetadataCardCommentHistoryItem extends js.Object {
+trait IMetadataCardCommentHistoryItem extends StObject {
   
   def GetCommentAuthor(): String = js.native
   
@@ -29,30 +30,18 @@ object IMetadataCardCommentHistoryItem {
   }
   
   @scala.inline
-  implicit class IMetadataCardCommentHistoryItemOps[Self <: IMetadataCardCommentHistoryItem] (val x: Self) extends AnyVal {
+  implicit class IMetadataCardCommentHistoryItemMutableBuilder[Self <: IMetadataCardCommentHistoryItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCommentAuthor(value: () => String): Self = StObject.set(x, "GetCommentAuthor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCommentText(value: () => String): Self = StObject.set(x, "GetCommentText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCommentTimestamp(value: () => js.Any): Self = StObject.set(x, "GetCommentTimestamp", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCommentAuthor(value: () => String): Self = this.set("GetCommentAuthor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetCommentText(value: () => String): Self = this.set("GetCommentText", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetCommentTimestamp(value: () => js.Any): Self = this.set("GetCommentTimestamp", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetCommentVersion(value: () => Double): Self = this.set("GetCommentVersion", js.Any.fromFunction0(value))
+    def setGetCommentVersion(value: () => Double): Self = StObject.set(x, "GetCommentVersion", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextColumn2 extends js.Object {
+trait TextColumn2 extends StObject {
   
   val Application: js.Any = js.native
   
@@ -37,36 +38,24 @@ object TextColumn2 {
   }
   
   @scala.inline
-  implicit class TextColumn2Ops[Self <: TextColumn2] (val x: Self) extends AnyVal {
+  implicit class TextColumn2MutableBuilder[Self <: TextColumn2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setOfficeDotTextColumn2_typekey(value: TextColumn2): Self = StObject.set(x, "Office.TextColumn2_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setSpacing(value: Double): Self = StObject.set(x, "Spacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: Double): Self = this.set("Number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOfficeDotTextColumn2_typekey(value: TextColumn2): Self = this.set("Office.TextColumn2_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpacing(value: Double): Self = this.set("Spacing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextDirection(value: MsoTextDirection): Self = this.set("TextDirection", value.asInstanceOf[js.Any])
+    def setTextDirection(value: MsoTextDirection): Self = StObject.set(x, "TextDirection", value.asInstanceOf[js.Any])
   }
 }

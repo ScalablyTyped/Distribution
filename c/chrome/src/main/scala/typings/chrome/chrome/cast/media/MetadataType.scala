@@ -1,14 +1,15 @@
 package typings.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MetadataType extends js.Object
+sealed trait MetadataType extends StObject
 @JSGlobal("chrome.cast.media.MetadataType")
 @js.native
-object MetadataType extends js.Object {
+object MetadataType extends StObject {
   
   @js.native
   sealed trait GENERIC extends MetadataType

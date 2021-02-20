@@ -1,13 +1,12 @@
 package typings.rxLiteBackpressure
 
 import typings.rxCore.Rx.IDisposable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Rx")
-@js.native
-object Rx extends js.Object {
+object Rx {
   
   @js.native
   trait ControlledObservable[T] extends Observable[T] {
@@ -17,7 +16,7 @@ object Rx extends js.Object {
   }
   
   @js.native
-  trait Observable[T] extends js.Object {
+  trait Observable[T] extends StObject {
     
     /**
       * Attaches a controller to the observable sequence with the ability to queue.

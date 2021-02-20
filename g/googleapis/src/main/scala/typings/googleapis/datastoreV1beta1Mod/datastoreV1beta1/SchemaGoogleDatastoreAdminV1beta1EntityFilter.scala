@@ -1,5 +1,6 @@
 package typings.googleapis.datastoreV1beta1Mod.datastoreV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * kinds=[], namespace_ids=[&#39;Baz&#39;]
   */
 @js.native
-trait SchemaGoogleDatastoreAdminV1beta1EntityFilter extends js.Object {
+trait SchemaGoogleDatastoreAdminV1beta1EntityFilter extends StObject {
   
   /**
     * If empty, then this represents all kinds.
@@ -42,36 +43,24 @@ object SchemaGoogleDatastoreAdminV1beta1EntityFilter {
   }
   
   @scala.inline
-  implicit class SchemaGoogleDatastoreAdminV1beta1EntityFilterOps[Self <: SchemaGoogleDatastoreAdminV1beta1EntityFilter] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleDatastoreAdminV1beta1EntityFilterMutableBuilder[Self <: SchemaGoogleDatastoreAdminV1beta1EntityFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKinds(value: js.Array[String]): Self = StObject.set(x, "kinds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindsUndefined: Self = StObject.set(x, "kinds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKindsVarargs(value: String*): Self = StObject.set(x, "kinds", js.Array(value :_*))
     
     @scala.inline
-    def setKindsVarargs(value: String*): Self = this.set("kinds", js.Array(value :_*))
+    def setNamespaceIds(value: js.Array[String]): Self = StObject.set(x, "namespaceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKinds(value: js.Array[String]): Self = this.set("kinds", value.asInstanceOf[js.Any])
+    def setNamespaceIdsUndefined: Self = StObject.set(x, "namespaceIds", js.undefined)
     
     @scala.inline
-    def deleteKinds: Self = this.set("kinds", js.undefined)
-    
-    @scala.inline
-    def setNamespaceIdsVarargs(value: String*): Self = this.set("namespaceIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setNamespaceIds(value: js.Array[String]): Self = this.set("namespaceIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespaceIds: Self = this.set("namespaceIds", js.undefined)
+    def setNamespaceIdsVarargs(value: String*): Self = StObject.set(x, "namespaceIds", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.licensemanagerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LicenseOperationFailure extends js.Object {
+trait LicenseOperationFailure extends StObject {
   
   /**
     * Error message.
@@ -56,69 +57,57 @@ object LicenseOperationFailure {
   }
   
   @scala.inline
-  implicit class LicenseOperationFailureOps[Self <: LicenseOperationFailure] (val x: Self) extends AnyVal {
+  implicit class LicenseOperationFailureMutableBuilder[Self <: LicenseOperationFailure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureTime(value: DateTime): Self = StObject.set(x, "FailureTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    def setFailureTimeUndefined: Self = StObject.set(x, "FailureTime", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    def setMetadataList(value: MetadataList): Self = StObject.set(x, "MetadataList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureTime(value: DateTime): Self = this.set("FailureTime", value.asInstanceOf[js.Any])
+    def setMetadataListUndefined: Self = StObject.set(x, "MetadataList", js.undefined)
     
     @scala.inline
-    def deleteFailureTime: Self = this.set("FailureTime", js.undefined)
+    def setMetadataListVarargs(value: Metadata*): Self = StObject.set(x, "MetadataList", js.Array(value :_*))
     
     @scala.inline
-    def setMetadataListVarargs(value: Metadata*): Self = this.set("MetadataList", js.Array(value :_*))
+    def setOperationName(value: String): Self = StObject.set(x, "OperationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataList(value: MetadataList): Self = this.set("MetadataList", value.asInstanceOf[js.Any])
+    def setOperationNameUndefined: Self = StObject.set(x, "OperationName", js.undefined)
     
     @scala.inline
-    def deleteMetadataList: Self = this.set("MetadataList", js.undefined)
+    def setOperationRequestedBy(value: String): Self = StObject.set(x, "OperationRequestedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationName(value: String): Self = this.set("OperationName", value.asInstanceOf[js.Any])
+    def setOperationRequestedByUndefined: Self = StObject.set(x, "OperationRequestedBy", js.undefined)
     
     @scala.inline
-    def deleteOperationName: Self = this.set("OperationName", js.undefined)
+    def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationRequestedBy(value: String): Self = this.set("OperationRequestedBy", value.asInstanceOf[js.Any])
+    def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
     
     @scala.inline
-    def deleteOperationRequestedBy: Self = this.set("OperationRequestedBy", js.undefined)
+    def setResourceOwnerId(value: String): Self = StObject.set(x, "ResourceOwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceArn(value: String): Self = this.set("ResourceArn", value.asInstanceOf[js.Any])
+    def setResourceOwnerIdUndefined: Self = StObject.set(x, "ResourceOwnerId", js.undefined)
     
     @scala.inline
-    def deleteResourceArn: Self = this.set("ResourceArn", js.undefined)
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceOwnerId(value: String): Self = this.set("ResourceOwnerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceOwnerId: Self = this.set("ResourceOwnerId", js.undefined)
-    
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

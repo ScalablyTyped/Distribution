@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A client-side equivalent of the ASPxFormLayout's LayoutItem object.
   */
 @js.native
-trait ASPxClientLayoutItem extends js.Object {
+trait ASPxClientLayoutItem extends StObject {
   
   /**
     * Returns the text displayed in the layout item caption.
@@ -71,42 +72,30 @@ object ASPxClientLayoutItem {
   }
   
   @scala.inline
-  implicit class ASPxClientLayoutItemOps[Self <: ASPxClientLayoutItem] (val x: Self) extends AnyVal {
+  implicit class ASPxClientLayoutItemMutableBuilder[Self <: ASPxClientLayoutItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormLayout(value: ASPxClientFormLayout): Self = StObject.set(x, "formLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCaption(value: () => String): Self = StObject.set(x, "GetCaption", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetItemByName(value: String => ASPxClientLayoutItem): Self = StObject.set(x, "GetItemByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCaption(value: () => String): Self = this.set("GetCaption", js.Any.fromFunction0(value))
+    def setGetVisible(value: () => Boolean): Self = StObject.set(x, "GetVisible", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemByName(value: String => ASPxClientLayoutItem): Self = this.set("GetItemByName", js.Any.fromFunction1(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetVisible(value: () => Boolean): Self = this.set("GetVisible", js.Any.fromFunction0(value))
+    def setParent(value: ASPxClientLayoutItem): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetCaption(value: String => Unit): Self = this.set("SetCaption", js.Any.fromFunction1(value))
+    def setSetCaption(value: String => Unit): Self = StObject.set(x, "SetCaption", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = this.set("SetVisible", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFormLayout(value: ASPxClientFormLayout): Self = this.set("formLayout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: ASPxClientLayoutItem): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "SetVisible", js.Any.fromFunction1(value))
   }
 }

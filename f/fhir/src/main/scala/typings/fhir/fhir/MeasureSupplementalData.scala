@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,57 +50,45 @@ object MeasureSupplementalData {
   }
   
   @scala.inline
-  implicit class MeasureSupplementalDataOps[Self <: MeasureSupplementalData] (val x: Self) extends AnyVal {
+  implicit class MeasureSupplementalDataMutableBuilder[Self <: MeasureSupplementalData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCriteria(value: String): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_criteria(value: Element): Self = this.set("_criteria", value.asInstanceOf[js.Any])
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def delete_criteria: Self = this.set("_criteria", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_path(value: Element): Self = this.set("_path", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def delete_path: Self = this.set("_path", js.undefined)
+    def setUsage(value: js.Array[CodeableConcept]): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCriteria(value: String): Self = this.set("criteria", value.asInstanceOf[js.Any])
+    def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
     
     @scala.inline
-    def deleteCriteria: Self = this.set("criteria", js.undefined)
+    def setUsageVarargs(value: CodeableConcept*): Self = StObject.set(x, "usage", js.Array(value :_*))
     
     @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def set_criteria(value: Element): Self = StObject.set(x, "_criteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def set_criteriaUndefined: Self = StObject.set(x, "_criteria", js.undefined)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def set_path(value: Element): Self = StObject.set(x, "_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
-    
-    @scala.inline
-    def setUsageVarargs(value: CodeableConcept*): Self = this.set("usage", js.Array(value :_*))
-    
-    @scala.inline
-    def setUsage(value: js.Array[CodeableConcept]): Self = this.set("usage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsage: Self = this.set("usage", js.undefined)
+    def set_pathUndefined: Self = StObject.set(x, "_path", js.undefined)
   }
 }

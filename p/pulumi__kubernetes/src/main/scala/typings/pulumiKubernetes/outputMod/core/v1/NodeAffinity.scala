@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Node affinity is a group of node affinity scheduling rules.
   */
 @js.native
-trait NodeAffinity extends js.Object {
+trait NodeAffinity extends StObject {
   
   /**
     * The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node matches the corresponding matchExpressions; the node(s) with the highest sum are the most preferred.
@@ -32,27 +33,15 @@ object NodeAffinity {
   }
   
   @scala.inline
-  implicit class NodeAffinityOps[Self <: NodeAffinity] (val x: Self) extends AnyVal {
+  implicit class NodeAffinityMutableBuilder[Self <: NodeAffinity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPreferredDuringSchedulingIgnoredDuringExecution(value: js.Array[PreferredSchedulingTerm]): Self = StObject.set(x, "preferredDuringSchedulingIgnoredDuringExecution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreferredDuringSchedulingIgnoredDuringExecutionVarargs(value: PreferredSchedulingTerm*): Self = StObject.set(x, "preferredDuringSchedulingIgnoredDuringExecution", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPreferredDuringSchedulingIgnoredDuringExecutionVarargs(value: PreferredSchedulingTerm*): Self = this.set("preferredDuringSchedulingIgnoredDuringExecution", js.Array(value :_*))
-    
-    @scala.inline
-    def setPreferredDuringSchedulingIgnoredDuringExecution(value: js.Array[PreferredSchedulingTerm]): Self = this.set("preferredDuringSchedulingIgnoredDuringExecution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequiredDuringSchedulingIgnoredDuringExecution(value: NodeSelector): Self = this.set("requiredDuringSchedulingIgnoredDuringExecution", value.asInstanceOf[js.Any])
+    def setRequiredDuringSchedulingIgnoredDuringExecution(value: NodeSelector): Self = StObject.set(x, "requiredDuringSchedulingIgnoredDuringExecution", value.asInstanceOf[js.Any])
   }
 }

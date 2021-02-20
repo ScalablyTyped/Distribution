@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommentReaction extends js.Object {
+trait CommentReaction extends StObject {
   
   /**
     * Whether the [author](CommentAuthorInformation) of the comment has reacted to this reaction
@@ -36,30 +37,18 @@ object CommentReaction {
   }
   
   @scala.inline
-  implicit class CommentReactionOps[Self <: CommentReaction] (val x: Self) extends AnyVal {
+  implicit class CommentReactionMutableBuilder[Self <: CommentReaction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorHasReacted(value: Boolean): Self = StObject.set(x, "authorHasReacted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIconPath(value: String | Uri): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorHasReacted(value: Boolean): Self = this.set("authorHasReacted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIconPath(value: String | Uri): Self = this.set("iconPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

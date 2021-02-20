@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateLineRequest extends js.Object {
+trait CreateLineRequest extends StObject {
   
   /**
     * The category of the line to be created. The exact line type created is determined based on the category and how it's routed to connect to other page elements. If you specify both a
@@ -39,42 +40,30 @@ object CreateLineRequest {
   }
   
   @scala.inline
-  implicit class CreateLineRequestOps[Self <: CreateLineRequest] (val x: Self) extends AnyVal {
+  implicit class CreateLineRequestMutableBuilder[Self <: CreateLineRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElementProperties(value: PageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setLineCategory(value: String): Self = StObject.set(x, "lineCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementProperties(value: PageElementProperties): Self = this.set("elementProperties", value.asInstanceOf[js.Any])
+    def setLineCategoryUndefined: Self = StObject.set(x, "lineCategory", js.undefined)
     
     @scala.inline
-    def deleteElementProperties: Self = this.set("elementProperties", js.undefined)
+    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineCategory(value: String): Self = this.set("lineCategory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineCategory: Self = this.set("lineCategory", js.undefined)
-    
-    @scala.inline
-    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

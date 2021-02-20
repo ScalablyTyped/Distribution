@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.networkfirewall
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption extends js.Object {
+trait RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption extends StObject {
   
   /**
     * Keyword defined by open source detection systems like Snort or Suricata for stateful rule inspection.
@@ -27,30 +28,18 @@ object RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption {
   }
   
   @scala.inline
-  implicit class RuleGroupRuleGroupRulesSourceStatefulRuleRuleOptionOps[Self <: RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption] (val x: Self) extends AnyVal {
+  implicit class RuleGroupRuleGroupRulesSourceStatefulRuleRuleOptionMutableBuilder[Self <: RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSettings(value: js.Array[String]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
     @scala.inline
-    def setKeyword(value: String): Self = this.set("keyword", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSettingsVarargs(value: String*): Self = this.set("settings", js.Array(value :_*))
-    
-    @scala.inline
-    def setSettings(value: js.Array[String]): Self = this.set("settings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSettings: Self = this.set("settings", js.undefined)
+    def setSettingsVarargs(value: String*): Self = StObject.set(x, "settings", js.Array(value :_*))
   }
 }

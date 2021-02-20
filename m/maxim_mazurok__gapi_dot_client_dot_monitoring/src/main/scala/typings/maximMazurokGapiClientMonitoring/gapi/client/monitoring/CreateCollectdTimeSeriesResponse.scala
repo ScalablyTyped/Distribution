@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateCollectdTimeSeriesResponse extends js.Object {
+trait CreateCollectdTimeSeriesResponse extends StObject {
   
   /**
     * Records the error status for points that were not written due to an error in the request.Failed requests for which nothing is written will return an error response instead. Requests
@@ -28,33 +29,21 @@ object CreateCollectdTimeSeriesResponse {
   }
   
   @scala.inline
-  implicit class CreateCollectdTimeSeriesResponseOps[Self <: CreateCollectdTimeSeriesResponse] (val x: Self) extends AnyVal {
+  implicit class CreateCollectdTimeSeriesResponseMutableBuilder[Self <: CreateCollectdTimeSeriesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPayloadErrors(value: js.Array[CollectdPayloadError]): Self = StObject.set(x, "payloadErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPayloadErrorsUndefined: Self = StObject.set(x, "payloadErrors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPayloadErrorsVarargs(value: CollectdPayloadError*): Self = StObject.set(x, "payloadErrors", js.Array(value :_*))
     
     @scala.inline
-    def setPayloadErrorsVarargs(value: CollectdPayloadError*): Self = this.set("payloadErrors", js.Array(value :_*))
+    def setSummary(value: CreateTimeSeriesSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayloadErrors(value: js.Array[CollectdPayloadError]): Self = this.set("payloadErrors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayloadErrors: Self = this.set("payloadErrors", js.undefined)
-    
-    @scala.inline
-    def setSummary(value: CreateTimeSeriesSummary): Self = this.set("summary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummary: Self = this.set("summary", js.undefined)
+    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

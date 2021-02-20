@@ -2,13 +2,12 @@ package typings.pSeries
 
 import typings.pSeries.anon.Call
 import typings.std.Iterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("p-series", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Run promise-returning & async functions in series.
@@ -28,8 +27,22 @@ object mod extends js.Object {
   	})();
   	```
   	*/
+  @JSImport("p-series", JSImport.Namespace)
+  @js.native
   def apply[ValueType](tasks: Iterable[js.Function0[js.Promise[ValueType] | ValueType]]): js.Promise[js.Array[ValueType]] = js.native
   
+  @JSImport("p-series", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  // TODO: Remove this for the next major release, refactor the whole definition to:
+  // declare function pSeries<ValueType>(
+  // 	tasks: Iterable<() => Promise<ValueType> | ValueType>
+  // ): Promise<ValueType[]>;
+  // export = pSeries;
+  @JSImport("p-series", "default")
+  @js.native
+  def default: Call = js.native
   /**
   	Run promise-returning & async functions in series.
   	@param tasks - Functions are expected to return a value. If a Promise is returned, it's awaited before continuing with the next task.
@@ -53,12 +66,9 @@ object mod extends js.Object {
   // 	tasks: Iterable<() => Promise<ValueType> | ValueType>
   // ): Promise<ValueType[]>;
   // export = pSeries;
+  @JSImport("p-series", "default")
+  @js.native
   def default[ValueType](tasks: Iterable[js.Function0[js.Promise[ValueType] | ValueType]]): js.Promise[js.Array[ValueType]] = js.native
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function pSeries<ValueType>(
-  // 	tasks: Iterable<() => Promise<ValueType> | ValueType>
-  // ): Promise<ValueType[]>;
-  // export = pSeries;
-  @JSName("default")
-  var default_Original: Call = js.native
+  @scala.inline
+  def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

@@ -1,19 +1,24 @@
 package typings.throng
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("throng", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("throng", JSImport.Namespace)
+  @js.native
   def apply(startOrOptions: Options): Unit = js.native
+  @JSImport("throng", JSImport.Namespace)
+  @js.native
   def apply(startOrOptions: ProcessCallback): Unit = js.native
+  @JSImport("throng", JSImport.Namespace)
+  @js.native
   def apply(workers: WorkerCount, start: ProcessCallback): Unit = js.native
   
   @js.native
-  trait Options extends js.Object {
+  trait Options extends StObject {
     
     var grace: js.UndefOr[Double] = js.native
     

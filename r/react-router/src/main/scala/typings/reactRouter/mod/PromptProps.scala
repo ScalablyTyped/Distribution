@@ -3,12 +3,13 @@ package typings.reactRouter.mod
 import typings.history.mod.Action
 import typings.history.mod.Location
 import typings.history.mod.LocationState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PromptProps extends js.Object {
+trait PromptProps extends StObject {
   
   var message: String | (js.Function2[/* location */ Location[LocationState], /* action */ Action, String | Boolean]) = js.native
   
@@ -25,32 +26,20 @@ object PromptProps {
   }
   
   @scala.inline
-  implicit class PromptPropsOps[Self <: PromptProps] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMessageFunction2(value: (/* location */ Location[LocationState], /* action */ Action) => String | Boolean): Self = this.set("message", js.Any.fromFunction2(value))
+  implicit class PromptPropsMutableBuilder[Self <: PromptProps] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setMessage(
       value: String | (js.Function2[/* location */ Location[LocationState], /* action */ Action, String | Boolean])
-    ): Self = this.set("message", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWhen(value: Boolean): Self = this.set("when", value.asInstanceOf[js.Any])
+    def setMessageFunction2(value: (/* location */ Location[LocationState], /* action */ Action) => String | Boolean): Self = StObject.set(x, "message", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteWhen: Self = this.set("when", js.undefined)
+    def setWhen(value: Boolean): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
   }
 }

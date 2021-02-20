@@ -1,12 +1,13 @@
 package typings.winrt.global.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.Graphics.Printing.PrintTaskCompletion")
 @js.native
-object PrintTaskCompletion extends js.Object {
+object PrintTaskCompletion extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrt.Windows.Graphics.Printing.PrintTaskCompletion with Double] = js.native

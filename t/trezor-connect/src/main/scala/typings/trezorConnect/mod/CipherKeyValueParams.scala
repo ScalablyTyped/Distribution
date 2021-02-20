@@ -1,5 +1,6 @@
 package typings.trezorConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,54 +29,42 @@ object CipherKeyValueParams {
   }
   
   @scala.inline
-  implicit class CipherKeyValueParamsOps[Self <: CipherKeyValueParams] (val x: Self) extends AnyVal {
+  implicit class CipherKeyValueParamsMutableBuilder[Self <: CipherKeyValueParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAskOnDecrypt(value: Boolean): Self = StObject.set(x, "askOnDecrypt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAskOnDecryptUndefined: Self = StObject.set(x, "askOnDecrypt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAskOnEncrypt(value: Boolean): Self = StObject.set(x, "askOnEncrypt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathVarargs(value: Double*): Self = this.set("path", js.Array(value :_*))
+    def setAskOnEncryptUndefined: Self = StObject.set(x, "askOnEncrypt", js.undefined)
     
     @scala.inline
-    def setPath(value: String | js.Array[Double]): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAskOnDecrypt(value: Boolean): Self = this.set("askOnDecrypt", value.asInstanceOf[js.Any])
+    def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
     
     @scala.inline
-    def deleteAskOnDecrypt: Self = this.set("askOnDecrypt", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAskOnEncrypt(value: Boolean): Self = this.set("askOnEncrypt", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteAskOnEncrypt: Self = this.set("askOnEncrypt", js.undefined)
+    def setPath(value: String | js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIv(value: String): Self = this.set("iv", value.asInstanceOf[js.Any])
+    def setPathVarargs(value: Double*): Self = StObject.set(x, "path", js.Array(value :_*))
     
     @scala.inline
-    def deleteIv: Self = this.set("iv", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

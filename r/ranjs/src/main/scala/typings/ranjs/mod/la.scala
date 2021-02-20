@@ -1,16 +1,16 @@
 package typings.ranjs.mod
 
 import typings.ranjs.anon.D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ranjs", "la")
-@js.native
-object la extends js.Object {
+object la {
   
+  @JSImport("ranjs", "la.Matrix")
   @js.native
-  class Matrix () extends js.Object {
+  class Matrix () extends StObject {
     def this(arg: js.Array[js.Array[Double]]) = this()
     def this(arg: Double) = this()
     def this(arg: Matrix) = this()
@@ -35,8 +35,9 @@ object la extends js.Object {
     def t(): Matrix = js.native
   }
   
+  @JSImport("ranjs", "la.Vector")
   @js.native
-  class Vector () extends js.Object {
+  class Vector () extends StObject {
     def this(arg: js.Array[Double]) = this()
     def this(arg: Double) = this()
     def this(arg: Vector) = this()

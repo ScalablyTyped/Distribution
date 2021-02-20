@@ -1,13 +1,14 @@
 package typings.exceljs.anon
 
 import typings.exceljs.mod.ImageHyperlinkValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  editAs :string | undefined,   hyperlinks :exceljs.exceljs.ImageHyperlinkValue | undefined} & exceljs.exceljs.ImagePosition */
 @js.native
-trait editAsstringundefinedhypeEditAs extends js.Object {
+trait editAsstringundefinedhypeEditAs extends StObject {
   
   var editAs: js.UndefOr[String] = js.native
   
@@ -26,36 +27,24 @@ object editAsstringundefinedhypeEditAs {
   }
   
   @scala.inline
-  implicit class editAsstringundefinedhypeEditAsOps[Self <: editAsstringundefinedhypeEditAs] (val x: Self) extends AnyVal {
+  implicit class editAsstringundefinedhypeEditAsMutableBuilder[Self <: editAsstringundefinedhypeEditAs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEditAs(value: String): Self = StObject.set(x, "editAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEditAsUndefined: Self = StObject.set(x, "editAs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExt(value: Height): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExt(value: Height): Self = this.set("ext", value.asInstanceOf[js.Any])
+    def setHyperlinks(value: ImageHyperlinkValue): Self = StObject.set(x, "hyperlinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTl(value: Col): Self = this.set("tl", value.asInstanceOf[js.Any])
+    def setHyperlinksUndefined: Self = StObject.set(x, "hyperlinks", js.undefined)
     
     @scala.inline
-    def setEditAs(value: String): Self = this.set("editAs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEditAs: Self = this.set("editAs", js.undefined)
-    
-    @scala.inline
-    def setHyperlinks(value: ImageHyperlinkValue): Self = this.set("hyperlinks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHyperlinks: Self = this.set("hyperlinks", js.undefined)
+    def setTl(value: Col): Self = StObject.set(x, "tl", value.asInstanceOf[js.Any])
   }
 }

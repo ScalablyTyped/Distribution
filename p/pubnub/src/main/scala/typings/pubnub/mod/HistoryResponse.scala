@@ -1,11 +1,12 @@
 package typings.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HistoryResponse extends js.Object {
+trait HistoryResponse extends StObject {
   
   var endTimeToken: js.UndefOr[String | Double] = js.native
   
@@ -22,36 +23,24 @@ object HistoryResponse {
   }
   
   @scala.inline
-  implicit class HistoryResponseOps[Self <: HistoryResponse] (val x: Self) extends AnyVal {
+  implicit class HistoryResponseMutableBuilder[Self <: HistoryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTimeToken(value: String | Double): Self = StObject.set(x, "endTimeToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeTokenUndefined: Self = StObject.set(x, "endTimeToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessages(value: js.Array[HistoryMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessagesVarargs(value: HistoryMessage*): Self = this.set("messages", js.Array(value :_*))
+    def setMessagesVarargs(value: HistoryMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
     @scala.inline
-    def setMessages(value: js.Array[HistoryMessage]): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setStartTimeToken(value: String | Double): Self = StObject.set(x, "startTimeToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTimeToken(value: String | Double): Self = this.set("endTimeToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndTimeToken: Self = this.set("endTimeToken", js.undefined)
-    
-    @scala.inline
-    def setStartTimeToken(value: String | Double): Self = this.set("startTimeToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTimeToken: Self = this.set("startTimeToken", js.undefined)
+    def setStartTimeTokenUndefined: Self = StObject.set(x, "startTimeToken", js.undefined)
   }
 }

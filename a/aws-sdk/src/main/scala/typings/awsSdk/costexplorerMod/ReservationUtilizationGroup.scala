@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReservationUtilizationGroup extends js.Object {
+trait ReservationUtilizationGroup extends StObject {
   
   /**
     * The attributes for this group of reservations.
@@ -36,42 +37,30 @@ object ReservationUtilizationGroup {
   }
   
   @scala.inline
-  implicit class ReservationUtilizationGroupOps[Self <: ReservationUtilizationGroup] (val x: Self) extends AnyVal {
+  implicit class ReservationUtilizationGroupMutableBuilder[Self <: ReservationUtilizationGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: Attributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: ReservationGroupKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: Attributes): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    def setUtilization(value: ReservationAggregates): Self = StObject.set(x, "Utilization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: ReservationGroupKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    def setUtilizationUndefined: Self = StObject.set(x, "Utilization", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("Key", js.undefined)
+    def setValue(value: ReservationGroupValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUtilization(value: ReservationAggregates): Self = this.set("Utilization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUtilization: Self = this.set("Utilization", js.undefined)
-    
-    @scala.inline
-    def setValue(value: ReservationGroupValue): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("Value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

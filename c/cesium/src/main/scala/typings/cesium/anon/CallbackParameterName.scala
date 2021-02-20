@@ -1,11 +1,12 @@
 package typings.cesium.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CallbackParameterName extends js.Object {
+trait CallbackParameterName extends StObject {
   
   var callbackParameterName: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object CallbackParameterName {
   }
   
   @scala.inline
-  implicit class CallbackParameterNameOps[Self <: CallbackParameterName] (val x: Self) extends AnyVal {
+  implicit class CallbackParameterNameMutableBuilder[Self <: CallbackParameterName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallbackParameterName(value: String): Self = StObject.set(x, "callbackParameterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackParameterNameUndefined: Self = StObject.set(x, "callbackParameterName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameters(value: js.Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackParameterName(value: String): Self = this.set("callbackParameterName", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteCallbackParameterName: Self = this.set("callbackParameterName", js.undefined)
+    def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: js.Any): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
-    
-    @scala.inline
-    def setProxy(value: js.Any): Self = this.set("proxy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProxy: Self = this.set("proxy", js.undefined)
+    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
   }
 }

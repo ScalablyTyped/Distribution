@@ -1,5 +1,6 @@
 package typings.webappsecCredentialManagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://www.w3.org/TR/credential-management-1/#credentialscontainer}
   */
 @js.native
-trait CredentialsContainer extends js.Object {
+trait CredentialsContainer extends StObject {
   
   /**
     * Create a {@link Credential} asynchronously.

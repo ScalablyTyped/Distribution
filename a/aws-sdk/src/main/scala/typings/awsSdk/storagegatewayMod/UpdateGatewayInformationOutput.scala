@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateGatewayInformationOutput extends js.Object {
+trait UpdateGatewayInformationOutput extends StObject {
   
   var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.native
   
@@ -23,30 +24,18 @@ object UpdateGatewayInformationOutput {
   }
   
   @scala.inline
-  implicit class UpdateGatewayInformationOutputOps[Self <: UpdateGatewayInformationOutput] (val x: Self) extends AnyVal {
+  implicit class UpdateGatewayInformationOutputMutableBuilder[Self <: UpdateGatewayInformationOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGatewayName(value: String): Self = StObject.set(x, "GatewayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGatewayARN: Self = this.set("GatewayARN", js.undefined)
-    
-    @scala.inline
-    def setGatewayName(value: String): Self = this.set("GatewayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGatewayName: Self = this.set("GatewayName", js.undefined)
+    def setGatewayNameUndefined: Self = StObject.set(x, "GatewayName", js.undefined)
   }
 }

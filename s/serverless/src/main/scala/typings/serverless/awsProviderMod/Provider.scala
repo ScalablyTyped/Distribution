@@ -4,12 +4,13 @@ import typings.serverless.serverlessStrings.`private`
 import typings.serverless.serverlessStrings.aws
 import typings.serverless.serverlessStrings.edge
 import typings.serverless.serverlessStrings.regional
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Provider extends js.Object {
+trait Provider extends StObject {
   
   var alb: js.UndefOr[Alb] = js.native
   
@@ -96,264 +97,252 @@ object Provider {
   }
   
   @scala.inline
-  implicit class ProviderOps[Self <: Provider] (val x: Self) extends AnyVal {
+  implicit class ProviderMutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlb(value: Alb): Self = StObject.set(x, "alb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlbUndefined: Self = StObject.set(x, "alb", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApiGateway(value: ApiGateway): Self = StObject.set(x, "apiGateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: aws): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setApiGatewayUndefined: Self = StObject.set(x, "apiGateway", js.undefined)
     
     @scala.inline
-    def setAlb(value: Alb): Self = this.set("alb", value.asInstanceOf[js.Any])
+    def setApiKeys(value: js.Array[String]): Self = StObject.set(x, "apiKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlb: Self = this.set("alb", js.undefined)
+    def setApiKeysUndefined: Self = StObject.set(x, "apiKeys", js.undefined)
     
     @scala.inline
-    def setApiGateway(value: ApiGateway): Self = this.set("apiGateway", value.asInstanceOf[js.Any])
+    def setApiKeysVarargs(value: String*): Self = StObject.set(x, "apiKeys", js.Array(value :_*))
     
     @scala.inline
-    def deleteApiGateway: Self = this.set("apiGateway", js.undefined)
+    def setApiName(value: String): Self = StObject.set(x, "apiName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiKeysVarargs(value: String*): Self = this.set("apiKeys", js.Array(value :_*))
+    def setApiNameUndefined: Self = StObject.set(x, "apiName", js.undefined)
     
     @scala.inline
-    def setApiKeys(value: js.Array[String]): Self = this.set("apiKeys", value.asInstanceOf[js.Any])
+    def setCfnRole(value: String): Self = StObject.set(x, "cfnRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApiKeys: Self = this.set("apiKeys", js.undefined)
+    def setCfnRoleUndefined: Self = StObject.set(x, "cfnRole", js.undefined)
     
     @scala.inline
-    def setApiName(value: String): Self = this.set("apiName", value.asInstanceOf[js.Any])
+    def setDeploymentBucket(value: DeploymentBucket): Self = StObject.set(x, "deploymentBucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApiName: Self = this.set("apiName", js.undefined)
+    def setDeploymentBucketUndefined: Self = StObject.set(x, "deploymentBucket", js.undefined)
     
     @scala.inline
-    def setCfnRole(value: String): Self = this.set("cfnRole", value.asInstanceOf[js.Any])
+    def setDeploymentPrefix(value: String): Self = StObject.set(x, "deploymentPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCfnRole: Self = this.set("cfnRole", js.undefined)
+    def setDeploymentPrefixUndefined: Self = StObject.set(x, "deploymentPrefix", js.undefined)
     
     @scala.inline
-    def setDeploymentBucket(value: DeploymentBucket): Self = this.set("deploymentBucket", value.asInstanceOf[js.Any])
+    def setEndpointType(value: regional | edge | `private`): Self = StObject.set(x, "endpointType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeploymentBucket: Self = this.set("deploymentBucket", js.undefined)
+    def setEndpointTypeUndefined: Self = StObject.set(x, "endpointType", js.undefined)
     
     @scala.inline
-    def setDeploymentPrefix(value: String): Self = this.set("deploymentPrefix", value.asInstanceOf[js.Any])
+    def setEnvironment(value: Environment | String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeploymentPrefix: Self = this.set("deploymentPrefix", js.undefined)
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def setEndpointType(value: regional | edge | `private`): Self = this.set("endpointType", value.asInstanceOf[js.Any])
+    def setHttpApi(value: HttpApi): Self = StObject.set(x, "httpApi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndpointType: Self = this.set("endpointType", js.undefined)
+    def setHttpApiUndefined: Self = StObject.set(x, "httpApi", js.undefined)
     
     @scala.inline
-    def setEnvironment(value: Environment | String): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setIamManagedPolicies(value: js.Array[String]): Self = StObject.set(x, "iamManagedPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    def setIamManagedPoliciesUndefined: Self = StObject.set(x, "iamManagedPolicies", js.undefined)
     
     @scala.inline
-    def setHttpApi(value: HttpApi): Self = this.set("httpApi", value.asInstanceOf[js.Any])
+    def setIamManagedPoliciesVarargs(value: String*): Self = StObject.set(x, "iamManagedPolicies", js.Array(value :_*))
     
     @scala.inline
-    def deleteHttpApi: Self = this.set("httpApi", js.undefined)
+    def setIamRoleStatements(value: js.Array[IamRoleStatement]): Self = StObject.set(x, "iamRoleStatements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamManagedPoliciesVarargs(value: String*): Self = this.set("iamManagedPolicies", js.Array(value :_*))
+    def setIamRoleStatementsUndefined: Self = StObject.set(x, "iamRoleStatements", js.undefined)
     
     @scala.inline
-    def setIamManagedPolicies(value: js.Array[String]): Self = this.set("iamManagedPolicies", value.asInstanceOf[js.Any])
+    def setIamRoleStatementsVarargs(value: IamRoleStatement*): Self = StObject.set(x, "iamRoleStatements", js.Array(value :_*))
     
     @scala.inline
-    def deleteIamManagedPolicies: Self = this.set("iamManagedPolicies", js.undefined)
+    def setLogRetentionInDays(value: Double | String): Self = StObject.set(x, "logRetentionInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamRoleStatementsVarargs(value: IamRoleStatement*): Self = this.set("iamRoleStatements", js.Array(value :_*))
+    def setLogRetentionInDaysUndefined: Self = StObject.set(x, "logRetentionInDays", js.undefined)
     
     @scala.inline
-    def setIamRoleStatements(value: js.Array[IamRoleStatement]): Self = this.set("iamRoleStatements", value.asInstanceOf[js.Any])
+    def setLogs(value: Logs): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIamRoleStatements: Self = this.set("iamRoleStatements", js.undefined)
+    def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
     
     @scala.inline
-    def setLogRetentionInDays(value: Double | String): Self = this.set("logRetentionInDays", value.asInstanceOf[js.Any])
+    def setMemorySize(value: Double | String): Self = StObject.set(x, "memorySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogRetentionInDays: Self = this.set("logRetentionInDays", js.undefined)
+    def setMemorySizeUndefined: Self = StObject.set(x, "memorySize", js.undefined)
     
     @scala.inline
-    def setLogs(value: Logs): Self = this.set("logs", value.asInstanceOf[js.Any])
+    def setName(value: aws): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogs: Self = this.set("logs", js.undefined)
+    def setNotificationArns(value: js.Array[String]): Self = StObject.set(x, "notificationArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemorySize(value: Double | String): Self = this.set("memorySize", value.asInstanceOf[js.Any])
+    def setNotificationArnsUndefined: Self = StObject.set(x, "notificationArns", js.undefined)
     
     @scala.inline
-    def deleteMemorySize: Self = this.set("memorySize", js.undefined)
+    def setNotificationArnsVarargs(value: String*): Self = StObject.set(x, "notificationArns", js.Array(value :_*))
     
     @scala.inline
-    def setNotificationArnsVarargs(value: String*): Self = this.set("notificationArns", js.Array(value :_*))
+    def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationArns(value: js.Array[String]): Self = this.set("notificationArns", value.asInstanceOf[js.Any])
+    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
     @scala.inline
-    def deleteNotificationArns: Self = this.set("notificationArns", js.undefined)
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile(value: String): Self = this.set("profile", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deleteProfile: Self = this.set("profile", js.undefined)
+    def setReservedConcurrency(value: Double | String): Self = StObject.set(x, "reservedConcurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setReservedConcurrencyUndefined: Self = StObject.set(x, "reservedConcurrency", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setResourcePolicy(value: js.Array[ResourcePolicy]): Self = StObject.set(x, "resourcePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservedConcurrency(value: Double | String): Self = this.set("reservedConcurrency", value.asInstanceOf[js.Any])
+    def setResourcePolicyUndefined: Self = StObject.set(x, "resourcePolicy", js.undefined)
     
     @scala.inline
-    def deleteReservedConcurrency: Self = this.set("reservedConcurrency", js.undefined)
+    def setResourcePolicyVarargs(value: ResourcePolicy*): Self = StObject.set(x, "resourcePolicy", js.Array(value :_*))
     
     @scala.inline
-    def setResourcePolicyVarargs(value: ResourcePolicy*): Self = this.set("resourcePolicy", js.Array(value :_*))
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourcePolicy(value: js.Array[ResourcePolicy]): Self = this.set("resourcePolicy", value.asInstanceOf[js.Any])
+    def setRolePermissionsBoundary(value: String): Self = StObject.set(x, "rolePermissionsBoundary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResourcePolicy: Self = this.set("resourcePolicy", js.undefined)
+    def setRolePermissionsBoundaryUndefined: Self = StObject.set(x, "rolePermissionsBoundary", js.undefined)
     
     @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setRollbackConfiguration(value: RollbackConfiguration): Self = StObject.set(x, "rollbackConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRolePermissionsBoundary(value: String): Self = this.set("rolePermissionsBoundary", value.asInstanceOf[js.Any])
+    def setRollbackConfigurationUndefined: Self = StObject.set(x, "rollbackConfiguration", js.undefined)
     
     @scala.inline
-    def deleteRolePermissionsBoundary: Self = this.set("rolePermissionsBoundary", js.undefined)
+    def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRollbackConfiguration(value: RollbackConfiguration): Self = this.set("rollbackConfiguration", value.asInstanceOf[js.Any])
+    def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
     
     @scala.inline
-    def deleteRollbackConfiguration: Self = this.set("rollbackConfiguration", js.undefined)
+    def setStackName(value: String): Self = StObject.set(x, "stackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuntime(value: String): Self = this.set("runtime", value.asInstanceOf[js.Any])
+    def setStackNameUndefined: Self = StObject.set(x, "stackName", js.undefined)
     
     @scala.inline
-    def deleteRuntime: Self = this.set("runtime", js.undefined)
+    def setStackParameters(value: js.Array[StackParameters]): Self = StObject.set(x, "stackParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackName(value: String): Self = this.set("stackName", value.asInstanceOf[js.Any])
+    def setStackParametersUndefined: Self = StObject.set(x, "stackParameters", js.undefined)
     
     @scala.inline
-    def deleteStackName: Self = this.set("stackName", js.undefined)
+    def setStackParametersVarargs(value: StackParameters*): Self = StObject.set(x, "stackParameters", js.Array(value :_*))
     
     @scala.inline
-    def setStackParametersVarargs(value: StackParameters*): Self = this.set("stackParameters", js.Array(value :_*))
+    def setStackPolicy(value: js.Array[ResourcePolicy]): Self = StObject.set(x, "stackPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackParameters(value: js.Array[StackParameters]): Self = this.set("stackParameters", value.asInstanceOf[js.Any])
+    def setStackPolicyUndefined: Self = StObject.set(x, "stackPolicy", js.undefined)
     
     @scala.inline
-    def deleteStackParameters: Self = this.set("stackParameters", js.undefined)
+    def setStackPolicyVarargs(value: ResourcePolicy*): Self = StObject.set(x, "stackPolicy", js.Array(value :_*))
     
     @scala.inline
-    def setStackPolicyVarargs(value: ResourcePolicy*): Self = this.set("stackPolicy", js.Array(value :_*))
+    def setStackTags(value: Tags): Self = StObject.set(x, "stackTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackPolicy(value: js.Array[ResourcePolicy]): Self = this.set("stackPolicy", value.asInstanceOf[js.Any])
+    def setStackTagsUndefined: Self = StObject.set(x, "stackTags", js.undefined)
     
     @scala.inline
-    def deleteStackPolicy: Self = this.set("stackPolicy", js.undefined)
+    def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackTags(value: Tags): Self = this.set("stackTags", value.asInstanceOf[js.Any])
+    def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
     
     @scala.inline
-    def deleteStackTags: Self = this.set("stackTags", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStage(value: String): Self = this.set("stage", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteStage: Self = this.set("stage", js.undefined)
+    def setTimeout(value: Double | String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTracing(value: Tracing): Self = StObject.set(x, "tracing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double | String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTracingUndefined: Self = StObject.set(x, "tracing", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setUsagePlan(value: UsagePlan): Self = StObject.set(x, "usagePlan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTracing(value: Tracing): Self = this.set("tracing", value.asInstanceOf[js.Any])
+    def setUsagePlanUndefined: Self = StObject.set(x, "usagePlan", js.undefined)
     
     @scala.inline
-    def deleteTracing: Self = this.set("tracing", js.undefined)
+    def setVersionFunctions(value: Boolean): Self = StObject.set(x, "versionFunctions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsagePlan(value: UsagePlan): Self = this.set("usagePlan", value.asInstanceOf[js.Any])
+    def setVersionFunctionsUndefined: Self = StObject.set(x, "versionFunctions", js.undefined)
     
     @scala.inline
-    def deleteUsagePlan: Self = this.set("usagePlan", js.undefined)
+    def setVpc(value: Vpc): Self = StObject.set(x, "vpc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersionFunctions(value: Boolean): Self = this.set("versionFunctions", value.asInstanceOf[js.Any])
+    def setVpcUndefined: Self = StObject.set(x, "vpc", js.undefined)
     
     @scala.inline
-    def deleteVersionFunctions: Self = this.set("versionFunctions", js.undefined)
+    def setWebsocketsApiName(value: String): Self = StObject.set(x, "websocketsApiName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpc(value: Vpc): Self = this.set("vpc", value.asInstanceOf[js.Any])
+    def setWebsocketsApiNameUndefined: Self = StObject.set(x, "websocketsApiName", js.undefined)
     
     @scala.inline
-    def deleteVpc: Self = this.set("vpc", js.undefined)
+    def setWebsocketsApiRouteSelectionExpression(value: String): Self = StObject.set(x, "websocketsApiRouteSelectionExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebsocketsApiName(value: String): Self = this.set("websocketsApiName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsocketsApiName: Self = this.set("websocketsApiName", js.undefined)
-    
-    @scala.inline
-    def setWebsocketsApiRouteSelectionExpression(value: String): Self = this.set("websocketsApiRouteSelectionExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsocketsApiRouteSelectionExpression: Self = this.set("websocketsApiRouteSelectionExpression", js.undefined)
+    def setWebsocketsApiRouteSelectionExpressionUndefined: Self = StObject.set(x, "websocketsApiRouteSelectionExpression", js.undefined)
   }
 }

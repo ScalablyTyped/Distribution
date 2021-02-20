@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HorizontalLineFormat extends js.Object {
+trait HorizontalLineFormat extends StObject {
   
   var Alignment: WdHorizontalLineAlignment = js.native
   
@@ -43,42 +44,30 @@ object HorizontalLineFormat {
   }
   
   @scala.inline
-  implicit class HorizontalLineFormatOps[Self <: HorizontalLineFormat] (val x: Self) extends AnyVal {
+  implicit class HorizontalLineFormatMutableBuilder[Self <: HorizontalLineFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignment(value: WdHorizontalLineAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: WdHorizontalLineAlignment): Self = this.set("Alignment", value.asInstanceOf[js.Any])
+    def setNoShade(value: Boolean): Self = StObject.set(x, "NoShade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setPercentWidth(value: Double): Self = StObject.set(x, "PercentWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoShade(value: Boolean): Self = this.set("NoShade", value.asInstanceOf[js.Any])
+    def setWidthType(value: WdHorizontalLineWidthType): Self = StObject.set(x, "WidthType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPercentWidth(value: Double): Self = this.set("PercentWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidthType(value: WdHorizontalLineWidthType): Self = this.set("WidthType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotHorizontalLineFormat_typekey(value: HorizontalLineFormat): Self = this.set("Word.HorizontalLineFormat_typekey", value.asInstanceOf[js.Any])
+    def setWordDotHorizontalLineFormat_typekey(value: HorizontalLineFormat): Self = StObject.set(x, "Word.HorizontalLineFormat_typekey", value.asInstanceOf[js.Any])
   }
 }

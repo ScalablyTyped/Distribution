@@ -1,12 +1,12 @@
 package typings.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataLoader extends js.Object {
+trait DataLoader extends StObject {
   
   def add(obj: js.Any): String | Double = js.native
   def add(obj: js.Any, index: Double): String | Double = js.native
@@ -16,7 +16,7 @@ trait DataLoader extends js.Object {
   
   def count(): Double = js.native
   
-  var data: DataStore = js.native
+  var data: typings.webix.mod.DataStore = js.native
   
   def exists(id: String): Boolean = js.native
   def exists(id: Double): Boolean = js.native
@@ -86,6 +86,3 @@ trait DataLoader extends js.Object {
   
   def waitSave(handler: WebixCallback): js.Promise[_] = js.native
 }
-@JSImport("webix", "DataLoader")
-@js.native
-object DataLoader extends TopLevel[DataLoader]

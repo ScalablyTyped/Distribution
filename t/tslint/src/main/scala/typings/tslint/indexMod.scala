@@ -2,100 +2,171 @@ package typings.tslint
 
 import typings.tslint.codeFrameFormatterMod.Formatter
 import typings.tslint.formatterMod.IFormatterMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tslint/lib/formatters/index", JSImport.Namespace)
-@js.native
-object indexMod extends js.Object {
+object indexMod {
   
+  @JSImport("tslint/lib/formatters/index", "CodeFrameFormatter")
   @js.native
   class CodeFrameFormatter () extends Formatter
   /* static members */
-  @js.native
-  object CodeFrameFormatter extends js.Object {
+  object CodeFrameFormatter {
     
-    var metadata: IFormatterMetadata = js.native
+    @JSImport("tslint/lib/formatters/index", "CodeFrameFormatter")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("tslint/lib/formatters/index", "CodeFrameFormatter.metadata")
+    @js.native
+    def metadata: IFormatterMetadata = js.native
+    @scala.inline
+    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("tslint/lib/formatters/index", "FileslistFormatter")
   @js.native
   class FileslistFormatter ()
     extends typings.tslint.fileslistFormatterMod.Formatter
   /* static members */
-  @js.native
-  object FileslistFormatter extends js.Object {
+  object FileslistFormatter {
     
-    var metadata: IFormatterMetadata = js.native
+    @JSImport("tslint/lib/formatters/index", "FileslistFormatter")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("tslint/lib/formatters/index", "FileslistFormatter.metadata")
+    @js.native
+    def metadata: IFormatterMetadata = js.native
+    @scala.inline
+    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("tslint/lib/formatters/index", "JUnitFormatter")
   @js.native
   class JUnitFormatter ()
     extends typings.tslint.junitFormatterMod.Formatter
   /* static members */
-  @js.native
-  object JUnitFormatter extends js.Object {
+  object JUnitFormatter {
     
-    var metadata: IFormatterMetadata = js.native
+    @JSImport("tslint/lib/formatters/index", "JUnitFormatter")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("tslint/lib/formatters/index", "JUnitFormatter.metadata")
+    @js.native
+    def metadata: IFormatterMetadata = js.native
+    @scala.inline
+    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("tslint/lib/formatters/index", "JsonFormatter")
   @js.native
   class JsonFormatter ()
     extends typings.tslint.jsonFormatterMod.Formatter
   /* static members */
-  @js.native
-  object JsonFormatter extends js.Object {
+  object JsonFormatter {
     
-    var metadata: IFormatterMetadata = js.native
+    @JSImport("tslint/lib/formatters/index", "JsonFormatter")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("tslint/lib/formatters/index", "JsonFormatter.metadata")
+    @js.native
+    def metadata: IFormatterMetadata = js.native
+    @scala.inline
+    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("tslint/lib/formatters/index", "PmdFormatter")
   @js.native
   class PmdFormatter ()
     extends typings.tslint.pmdFormatterMod.Formatter
   /* static members */
-  @js.native
-  object PmdFormatter extends js.Object {
+  object PmdFormatter {
     
-    var metadata: IFormatterMetadata = js.native
+    @JSImport("tslint/lib/formatters/index", "PmdFormatter")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("tslint/lib/formatters/index", "PmdFormatter.metadata")
+    @js.native
+    def metadata: IFormatterMetadata = js.native
+    @scala.inline
+    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("tslint/lib/formatters/index", "ProseFormatter")
   @js.native
   class ProseFormatter ()
     extends typings.tslint.proseFormatterMod.Formatter
   /* static members */
-  @js.native
-  object ProseFormatter extends js.Object {
+  object ProseFormatter {
     
-    var metadata: IFormatterMetadata = js.native
+    @JSImport("tslint/lib/formatters/index", "ProseFormatter")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("tslint/lib/formatters/index", "ProseFormatter.metadata")
+    @js.native
+    def metadata: IFormatterMetadata = js.native
+    @scala.inline
+    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("tslint/lib/formatters/index", "StylishFormatter")
   @js.native
   class StylishFormatter ()
     extends typings.tslint.stylishFormatterMod.Formatter
   /* static members */
-  @js.native
-  object StylishFormatter extends js.Object {
+  object StylishFormatter {
     
-    var metadata: IFormatterMetadata = js.native
+    @JSImport("tslint/lib/formatters/index", "StylishFormatter")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("tslint/lib/formatters/index", "StylishFormatter.metadata")
+    @js.native
+    def metadata: IFormatterMetadata = js.native
+    @scala.inline
+    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("tslint/lib/formatters/index", "TapFormatter")
   @js.native
   class TapFormatter ()
     extends typings.tslint.tapFormatterMod.Formatter
   /* static members */
-  @js.native
-  object TapFormatter extends js.Object {
+  object TapFormatter {
     
-    var metadata: IFormatterMetadata = js.native
+    @JSImport("tslint/lib/formatters/index", "TapFormatter")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("tslint/lib/formatters/index", "TapFormatter.metadata")
+    @js.native
+    def metadata: IFormatterMetadata = js.native
+    @scala.inline
+    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("tslint/lib/formatters/index", "VerboseFormatter")
   @js.native
   class VerboseFormatter ()
     extends typings.tslint.verboseFormatterMod.Formatter
   /* static members */
-  @js.native
-  object VerboseFormatter extends js.Object {
+  object VerboseFormatter {
     
-    var metadata: IFormatterMetadata = js.native
+    @JSImport("tslint/lib/formatters/index", "VerboseFormatter")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("tslint/lib/formatters/index", "VerboseFormatter.metadata")
+    @js.native
+    def metadata: IFormatterMetadata = js.native
+    @scala.inline
+    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

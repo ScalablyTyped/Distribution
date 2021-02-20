@@ -1,11 +1,12 @@
 package typings.node.inspectorMod.HeapProfiler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddInspectedHeapObjectParameterType extends js.Object {
+trait AddInspectedHeapObjectParameterType extends StObject {
   
   /**
     * Heap snapshot object id to be accessible by means of $x command line API.
@@ -21,21 +22,9 @@ object AddInspectedHeapObjectParameterType {
   }
   
   @scala.inline
-  implicit class AddInspectedHeapObjectParameterTypeOps[Self <: AddInspectedHeapObjectParameterType] (val x: Self) extends AnyVal {
+  implicit class AddInspectedHeapObjectParameterTypeMutableBuilder[Self <: AddInspectedHeapObjectParameterType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHeapObjectId(value: HeapSnapshotObjectId): Self = this.set("heapObjectId", value.asInstanceOf[js.Any])
+    def setHeapObjectId(value: HeapSnapshotObjectId): Self = StObject.set(x, "heapObjectId", value.asInstanceOf[js.Any])
   }
 }

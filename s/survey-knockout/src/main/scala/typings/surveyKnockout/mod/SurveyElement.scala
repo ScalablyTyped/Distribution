@@ -1,5 +1,6 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -91,20 +92,38 @@ class SurveyElement protected ()
   def updateElementCss(): Unit = js.native
 }
 /* static members */
-@JSImport("survey-knockout", "SurveyElement")
-@js.native
-object SurveyElement extends js.Object {
+object SurveyElement {
   
-  var CreateDisabledDesignElements: Boolean = js.native
+  @JSImport("survey-knockout", "SurveyElement")
+  @js.native
+  val ^ : js.Any = js.native
   
+  @JSImport("survey-knockout", "SurveyElement.CreateDisabledDesignElements")
+  @js.native
+  def CreateDisabledDesignElements: Boolean = js.native
+  @scala.inline
+  def CreateDisabledDesignElements_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateDisabledDesignElements")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "SurveyElement.FocusElement")
+  @js.native
   def FocusElement(elementId: String): Boolean = js.native
   
+  @JSImport("survey-knockout", "SurveyElement.GetFirstNonTextElement")
+  @js.native
   def GetFirstNonTextElement(elements: js.Any): js.Any = js.native
+  @JSImport("survey-knockout", "SurveyElement.GetFirstNonTextElement")
+  @js.native
   def GetFirstNonTextElement(elements: js.Any, removeSpaces: Boolean): js.Any = js.native
   
+  @JSImport("survey-knockout", "SurveyElement.ScrollElementToTop")
+  @js.native
   def ScrollElementToTop(elementId: String): Boolean = js.native
   
+  @JSImport("survey-knockout", "SurveyElement.createProgressInfo")
+  @js.native
   def createProgressInfo(): IProgressInfo = js.native
   
+  @JSImport("survey-knockout", "SurveyElement.getProgressInfoByElements")
+  @js.native
   def getProgressInfoByElements(children: js.Array[SurveyElement], isRequired: Boolean): IProgressInfo = js.native
 }

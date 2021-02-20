@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Networking.NetworkOperators
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IUssdMessage extends js.Object {
+trait IUssdMessage extends StObject {
   
   var dataCodingScheme: Double = js.native
   
@@ -30,30 +31,18 @@ object IUssdMessage {
   }
   
   @scala.inline
-  implicit class IUssdMessageOps[Self <: IUssdMessage] (val x: Self) extends AnyVal {
+  implicit class IUssdMessageMutableBuilder[Self <: IUssdMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataCodingScheme(value: Double): Self = StObject.set(x, "dataCodingScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPayload(value: () => Uint8Array): Self = StObject.set(x, "getPayload", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPayloadAsText(value: String): Self = StObject.set(x, "payloadAsText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataCodingScheme(value: Double): Self = this.set("dataCodingScheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetPayload(value: () => Uint8Array): Self = this.set("getPayload", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPayloadAsText(value: String): Self = this.set("payloadAsText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetPayload(value: Uint8Array => Unit): Self = this.set("setPayload", js.Any.fromFunction1(value))
+    def setSetPayload(value: Uint8Array => Unit): Self = StObject.set(x, "setPayload", js.Any.fromFunction1(value))
   }
 }

@@ -7,13 +7,14 @@ import typings.mongodb.mod.ReadPreferenceOrMode
 import typings.mongodb.mod.ResumeToken
 import typings.mongodb.mongodbStrings.default_
 import typings.mongodb.mongodbStrings.updateLookup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined mongodb.mongodb.ChangeStreamOptions & {  session :mongodb.mongodb.ClientSession | undefined} */
 @js.native
-trait ChangeStreamOptionssessio extends js.Object {
+trait ChangeStreamOptionssessio extends StObject {
   
   var batchSize: js.UndefOr[Double] = js.native
   
@@ -42,72 +43,60 @@ object ChangeStreamOptionssessio {
   }
   
   @scala.inline
-  implicit class ChangeStreamOptionssessioOps[Self <: ChangeStreamOptionssessio] (val x: Self) extends AnyVal {
+  implicit class ChangeStreamOptionssessioMutableBuilder[Self <: ChangeStreamOptionssessio] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollation(value: CollationDocument): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchSize(value: Double): Self = this.set("batchSize", value.asInstanceOf[js.Any])
+    def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
     
     @scala.inline
-    def deleteBatchSize: Self = this.set("batchSize", js.undefined)
+    def setFullDocument(value: default_ | updateLookup): Self = StObject.set(x, "fullDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollation(value: CollationDocument): Self = this.set("collation", value.asInstanceOf[js.Any])
+    def setFullDocumentUndefined: Self = StObject.set(x, "fullDocument", js.undefined)
     
     @scala.inline
-    def deleteCollation: Self = this.set("collation", js.undefined)
+    def setMaxAwaitTimeMS(value: Double): Self = StObject.set(x, "maxAwaitTimeMS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullDocument(value: default_ | updateLookup): Self = this.set("fullDocument", value.asInstanceOf[js.Any])
+    def setMaxAwaitTimeMSUndefined: Self = StObject.set(x, "maxAwaitTimeMS", js.undefined)
     
     @scala.inline
-    def deleteFullDocument: Self = this.set("fullDocument", js.undefined)
+    def setReadPreference(value: ReadPreferenceOrMode): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAwaitTimeMS(value: Double): Self = this.set("maxAwaitTimeMS", value.asInstanceOf[js.Any])
+    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
     
     @scala.inline
-    def deleteMaxAwaitTimeMS: Self = this.set("maxAwaitTimeMS", js.undefined)
+    def setResumeAfter(value: ResumeToken): Self = StObject.set(x, "resumeAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadPreference(value: ReadPreferenceOrMode): Self = this.set("readPreference", value.asInstanceOf[js.Any])
+    def setResumeAfterUndefined: Self = StObject.set(x, "resumeAfter", js.undefined)
     
     @scala.inline
-    def deleteReadPreference: Self = this.set("readPreference", js.undefined)
+    def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResumeAfter(value: ResumeToken): Self = this.set("resumeAfter", value.asInstanceOf[js.Any])
+    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     
     @scala.inline
-    def deleteResumeAfter: Self = this.set("resumeAfter", js.undefined)
+    def setStartAfter(value: ResumeToken): Self = StObject.set(x, "startAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSession(value: ClientSession): Self = this.set("session", value.asInstanceOf[js.Any])
+    def setStartAfterUndefined: Self = StObject.set(x, "startAfter", js.undefined)
     
     @scala.inline
-    def deleteSession: Self = this.set("session", js.undefined)
+    def setStartAtOperationTime(value: Timestamp): Self = StObject.set(x, "startAtOperationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartAfter(value: ResumeToken): Self = this.set("startAfter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartAfter: Self = this.set("startAfter", js.undefined)
-    
-    @scala.inline
-    def setStartAtOperationTime(value: Timestamp): Self = this.set("startAtOperationTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartAtOperationTime: Self = this.set("startAtOperationTime", js.undefined)
+    def setStartAtOperationTimeUndefined: Self = StObject.set(x, "startAtOperationTime", js.undefined)
   }
 }

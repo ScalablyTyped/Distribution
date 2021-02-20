@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Security.ExchangeActiveSyncProvisioning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EasPasswordHistoryResult extends js.Object
+sealed trait EasPasswordHistoryResult extends StObject
 /** Represents the password history. These values are mapped against the HRESULT codes returned from the EAS policy engine. */
 @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordHistoryResult")
 @js.native
-object EasPasswordHistoryResult extends js.Object {
+object EasPasswordHistoryResult extends StObject {
   
   /** The computer can be compliant using the ApplyAsync method. */
   @js.native

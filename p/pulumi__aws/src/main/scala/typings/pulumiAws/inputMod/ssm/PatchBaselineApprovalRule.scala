@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.ssm
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PatchBaselineApprovalRule extends js.Object {
+trait PatchBaselineApprovalRule extends StObject {
   
   /**
     * The number of days after the release date of each patch matched by the rule the patch is marked as approved in the patch baseline. Valid Range: 0 to 100.
@@ -40,39 +41,27 @@ object PatchBaselineApprovalRule {
   }
   
   @scala.inline
-  implicit class PatchBaselineApprovalRuleOps[Self <: PatchBaselineApprovalRule] (val x: Self) extends AnyVal {
+  implicit class PatchBaselineApprovalRuleMutableBuilder[Self <: PatchBaselineApprovalRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApproveAfterDays(value: Input[Double]): Self = StObject.set(x, "approveAfterDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplianceLevel(value: Input[String]): Self = StObject.set(x, "complianceLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplianceLevelUndefined: Self = StObject.set(x, "complianceLevel", js.undefined)
     
     @scala.inline
-    def setApproveAfterDays(value: Input[Double]): Self = this.set("approveAfterDays", value.asInstanceOf[js.Any])
+    def setEnableNonSecurity(value: Input[Boolean]): Self = StObject.set(x, "enableNonSecurity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatchFiltersVarargs(value: Input[PatchBaselineApprovalRulePatchFilter]*): Self = this.set("patchFilters", js.Array(value :_*))
+    def setEnableNonSecurityUndefined: Self = StObject.set(x, "enableNonSecurity", js.undefined)
     
     @scala.inline
-    def setPatchFilters(value: Input[js.Array[Input[PatchBaselineApprovalRulePatchFilter]]]): Self = this.set("patchFilters", value.asInstanceOf[js.Any])
+    def setPatchFilters(value: Input[js.Array[Input[PatchBaselineApprovalRulePatchFilter]]]): Self = StObject.set(x, "patchFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceLevel(value: Input[String]): Self = this.set("complianceLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComplianceLevel: Self = this.set("complianceLevel", js.undefined)
-    
-    @scala.inline
-    def setEnableNonSecurity(value: Input[Boolean]): Self = this.set("enableNonSecurity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableNonSecurity: Self = this.set("enableNonSecurity", js.undefined)
+    def setPatchFiltersVarargs(value: Input[PatchBaselineApprovalRulePatchFilter]*): Self = StObject.set(x, "patchFilters", js.Array(value :_*))
   }
 }

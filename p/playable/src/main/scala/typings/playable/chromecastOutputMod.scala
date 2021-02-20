@@ -6,13 +6,18 @@ import typings.playable.eventEmitterTypesMod.IEventEmitter
 import typings.playable.playbackEngineTypesMod.CrossOriginValue
 import typings.playable.playbackEngineTypesMod.IVideoOutput
 import typings.playable.playbackEngineTypesMod.PreloadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/playback-engine/output/chromecast/chromecast-output", JSImport.Namespace)
-@js.native
-object chromecastOutputMod extends js.Object {
+object chromecastOutputMod {
+  
+  @JSImport("playable/dist/src/modules/playback-engine/output/chromecast/chromecast-output", JSImport.Default)
+  @js.native
+  class default protected () extends ChromecastOutput {
+    def this(eventEmitter: IEventEmitter) = this()
+  }
   
   @js.native
   trait ChromecastOutput extends IVideoOutput {
@@ -115,10 +120,5 @@ object chromecastOutputMod extends js.Object {
     
     @JSName("volume")
     def volume_MChromecastOutput: Double = js.native
-  }
-  
-  @js.native
-  class default protected () extends ChromecastOutput {
-    def this(eventEmitter: IEventEmitter) = this()
   }
 }

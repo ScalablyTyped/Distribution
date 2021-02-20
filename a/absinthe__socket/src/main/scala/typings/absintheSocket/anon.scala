@@ -4,16 +4,15 @@ import typings.absintheSocket.mod.AbsintheSocket
 import typings.absintheSocket.mod.Notifier
 import typings.absintheSocket.mod.Observer
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait OnError[Variables] extends js.Object {
+  trait OnError[Variables] extends StObject {
     
     def onError(error: Error): js.Any = js.native
     

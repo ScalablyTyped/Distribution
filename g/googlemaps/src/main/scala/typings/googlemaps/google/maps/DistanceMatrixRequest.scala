@@ -1,5 +1,6 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixRequest Maps JavaScript API}
   */
 @js.native
-trait DistanceMatrixRequest extends js.Object {
+trait DistanceMatrixRequest extends StObject {
   
   /**
     * If true, instructs the Distance Matrix service to avoid ferries where possible.
@@ -90,75 +91,63 @@ object DistanceMatrixRequest {
   }
   
   @scala.inline
-  implicit class DistanceMatrixRequestOps[Self <: DistanceMatrixRequest] (val x: Self) extends AnyVal {
+  implicit class DistanceMatrixRequestMutableBuilder[Self <: DistanceMatrixRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvoidFerries(value: Boolean): Self = StObject.set(x, "avoidFerries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvoidFerriesUndefined: Self = StObject.set(x, "avoidFerries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvoidHighways(value: Boolean): Self = StObject.set(x, "avoidHighways", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationsVarargs(value: (String | LatLng | LatLngLiteral | Place)*): Self = this.set("destinations", js.Array(value :_*))
+    def setAvoidHighwaysUndefined: Self = StObject.set(x, "avoidHighways", js.undefined)
     
     @scala.inline
-    def setDestinations(value: js.Array[String | LatLng | LatLngLiteral | Place]): Self = this.set("destinations", value.asInstanceOf[js.Any])
+    def setAvoidTolls(value: Boolean): Self = StObject.set(x, "avoidTolls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginsVarargs(value: (String | LatLng | LatLngLiteral | Place)*): Self = this.set("origins", js.Array(value :_*))
+    def setAvoidTollsUndefined: Self = StObject.set(x, "avoidTolls", js.undefined)
     
     @scala.inline
-    def setOrigins(value: js.Array[String | LatLng | LatLngLiteral | Place]): Self = this.set("origins", value.asInstanceOf[js.Any])
+    def setDestinations(value: js.Array[String | LatLng | LatLngLiteral | Place]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTravelMode(value: TravelMode): Self = this.set("travelMode", value.asInstanceOf[js.Any])
+    def setDestinationsVarargs(value: (String | LatLng | LatLngLiteral | Place)*): Self = StObject.set(x, "destinations", js.Array(value :_*))
     
     @scala.inline
-    def setAvoidFerries(value: Boolean): Self = this.set("avoidFerries", value.asInstanceOf[js.Any])
+    def setDrivingOptions(value: DrivingOptions): Self = StObject.set(x, "drivingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAvoidFerries: Self = this.set("avoidFerries", js.undefined)
+    def setDrivingOptionsUndefined: Self = StObject.set(x, "drivingOptions", js.undefined)
     
     @scala.inline
-    def setAvoidHighways(value: Boolean): Self = this.set("avoidHighways", value.asInstanceOf[js.Any])
+    def setOrigins(value: js.Array[String | LatLng | LatLngLiteral | Place]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAvoidHighways: Self = this.set("avoidHighways", js.undefined)
+    def setOriginsVarargs(value: (String | LatLng | LatLngLiteral | Place)*): Self = StObject.set(x, "origins", js.Array(value :_*))
     
     @scala.inline
-    def setAvoidTolls(value: Boolean): Self = this.set("avoidTolls", value.asInstanceOf[js.Any])
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAvoidTolls: Self = this.set("avoidTolls", js.undefined)
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def setDrivingOptions(value: DrivingOptions): Self = this.set("drivingOptions", value.asInstanceOf[js.Any])
+    def setTransitOptions(value: TransitOptions): Self = StObject.set(x, "transitOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDrivingOptions: Self = this.set("drivingOptions", js.undefined)
+    def setTransitOptionsUndefined: Self = StObject.set(x, "transitOptions", js.undefined)
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setTravelMode(value: TravelMode): Self = StObject.set(x, "travelMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setUnitSystem(value: UnitSystem): Self = StObject.set(x, "unitSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitOptions(value: TransitOptions): Self = this.set("transitOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitOptions: Self = this.set("transitOptions", js.undefined)
-    
-    @scala.inline
-    def setUnitSystem(value: UnitSystem): Self = this.set("unitSystem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnitSystem: Self = this.set("unitSystem", js.undefined)
+    def setUnitSystemUndefined: Self = StObject.set(x, "unitSystem", js.undefined)
   }
 }

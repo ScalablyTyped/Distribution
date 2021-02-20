@@ -1,11 +1,12 @@
 package typings.minappEnv
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WeakMap[K /* <: js.Object */, V] extends js.Object {
+trait WeakMap[K /* <: js.Object */, V] extends StObject {
   
   def delete(key: K): scala.Boolean = js.native
   

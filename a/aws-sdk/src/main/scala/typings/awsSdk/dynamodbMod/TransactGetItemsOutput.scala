@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransactGetItemsOutput extends js.Object {
+trait TransactGetItemsOutput extends StObject {
   
   /**
     * If the ReturnConsumedCapacity value was TOTAL, this is an array of ConsumedCapacity objects, one for each table addressed by TransactGetItem objects in the TransactItems parameter. These ConsumedCapacity objects report the read-capacity units consumed by the TransactGetItems call in that table.
@@ -26,36 +27,24 @@ object TransactGetItemsOutput {
   }
   
   @scala.inline
-  implicit class TransactGetItemsOutputOps[Self <: TransactGetItemsOutput] (val x: Self) extends AnyVal {
+  implicit class TransactGetItemsOutputMutableBuilder[Self <: TransactGetItemsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value :_*))
     
     @scala.inline
-    def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = this.set("ConsumedCapacity", js.Array(value :_*))
+    def setResponses(value: ItemResponseList): Self = StObject.set(x, "Responses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = this.set("ConsumedCapacity", value.asInstanceOf[js.Any])
+    def setResponsesUndefined: Self = StObject.set(x, "Responses", js.undefined)
     
     @scala.inline
-    def deleteConsumedCapacity: Self = this.set("ConsumedCapacity", js.undefined)
-    
-    @scala.inline
-    def setResponsesVarargs(value: ItemResponse*): Self = this.set("Responses", js.Array(value :_*))
-    
-    @scala.inline
-    def setResponses(value: ItemResponseList): Self = this.set("Responses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponses: Self = this.set("Responses", js.undefined)
+    def setResponsesVarargs(value: ItemResponse*): Self = StObject.set(x, "Responses", js.Array(value :_*))
   }
 }

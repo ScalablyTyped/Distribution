@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchPolicy extends js.Object {
+trait BatchPolicy extends StObject {
   
   /**
     * The number of active simulation jobs create as part of the batch that can be in an active state at the same time.  Active states include: Pending,Preparing, Running, Restarting, RunningFailed and Terminating. All other states are terminal states. 
@@ -26,30 +27,18 @@ object BatchPolicy {
   }
   
   @scala.inline
-  implicit class BatchPolicyOps[Self <: BatchPolicy] (val x: Self) extends AnyVal {
+  implicit class BatchPolicyMutableBuilder[Self <: BatchPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxConcurrency(value: MaxConcurrency): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxConcurrencyUndefined: Self = StObject.set(x, "maxConcurrency", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeoutInSeconds(value: BatchTimeoutInSeconds): Self = StObject.set(x, "timeoutInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxConcurrency(value: MaxConcurrency): Self = this.set("maxConcurrency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxConcurrency: Self = this.set("maxConcurrency", js.undefined)
-    
-    @scala.inline
-    def setTimeoutInSeconds(value: BatchTimeoutInSeconds): Self = this.set("timeoutInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutInSeconds: Self = this.set("timeoutInSeconds", js.undefined)
+    def setTimeoutInSecondsUndefined: Self = StObject.set(x, "timeoutInSeconds", js.undefined)
   }
 }

@@ -9,13 +9,14 @@ import typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties
 import typings.winrtUwp.Windows.Storage.StorageFile
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.filecompleted
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an audio file input node. */
 @js.native
-trait AudioFileInputNode extends js.Object {
+trait AudioFileInputNode extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

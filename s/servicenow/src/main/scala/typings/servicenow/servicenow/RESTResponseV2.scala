@@ -1,12 +1,13 @@
 package typings.servicenow.servicenow
 
 import typings.servicenow.anon.Get
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RESTResponseV2 extends js.Object {
+trait RESTResponseV2 extends StObject {
   
   def getBody(): String = js.native
   
@@ -51,51 +52,39 @@ object RESTResponseV2 {
   }
   
   @scala.inline
-  implicit class RESTResponseV2Ops[Self <: RESTResponseV2] (val x: Self) extends AnyVal {
+  implicit class RESTResponseV2MutableBuilder[Self <: RESTResponseV2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetBody(value: () => String): Self = StObject.set(x, "getBody", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCookies(value: () => Get): Self = StObject.set(x, "getCookies", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetErrorCode(value: () => Double): Self = StObject.set(x, "getErrorCode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBody(value: () => String): Self = this.set("getBody", js.Any.fromFunction0(value))
+    def setGetErrorMessage(value: () => String): Self = StObject.set(x, "getErrorMessage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCookies(value: () => Get): Self = this.set("getCookies", js.Any.fromFunction0(value))
+    def setGetHeader(value: String => String): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetErrorCode(value: () => Double): Self = this.set("getErrorCode", js.Any.fromFunction0(value))
+    def setGetHeaders(value: () => js.Object): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetErrorMessage(value: () => String): Self = this.set("getErrorMessage", js.Any.fromFunction0(value))
+    def setGetQueryString(value: () => String): Self = StObject.set(x, "getQueryString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHeader(value: String => String): Self = this.set("getHeader", js.Any.fromFunction1(value))
+    def setGetResponseAttachmentSysid(value: () => String): Self = StObject.set(x, "getResponseAttachmentSysid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHeaders(value: () => js.Object): Self = this.set("getHeaders", js.Any.fromFunction0(value))
+    def setGetStatusCode(value: () => Double): Self = StObject.set(x, "getStatusCode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetQueryString(value: () => String): Self = this.set("getQueryString", js.Any.fromFunction0(value))
+    def setHaveError(value: () => Boolean): Self = StObject.set(x, "haveError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetResponseAttachmentSysid(value: () => String): Self = this.set("getResponseAttachmentSysid", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetStatusCode(value: () => Double): Self = this.set("getStatusCode", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHaveError(value: () => Boolean): Self = this.set("haveError", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWaitForResponse(value: Double => Unit): Self = this.set("waitForResponse", js.Any.fromFunction1(value))
+    def setWaitForResponse(value: Double => Unit): Self = StObject.set(x, "waitForResponse", js.Any.fromFunction1(value))
   }
 }

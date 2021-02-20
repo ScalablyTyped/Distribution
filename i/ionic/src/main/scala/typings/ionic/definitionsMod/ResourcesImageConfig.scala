@@ -2,12 +2,13 @@ package typings.ionic.definitionsMod
 
 import typings.ionic.ionicStrings.landscape
 import typings.ionic.ionicStrings.portrait
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourcesImageConfig extends js.Object {
+trait ResourcesImageConfig extends StObject {
   
   var density: js.UndefOr[String] = js.native
   
@@ -28,39 +29,27 @@ object ResourcesImageConfig {
   }
   
   @scala.inline
-  implicit class ResourcesImageConfigOps[Self <: ResourcesImageConfig] (val x: Self) extends AnyVal {
+  implicit class ResourcesImageConfigMutableBuilder[Self <: ResourcesImageConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDensity(value: String): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOrientation(value: landscape | portrait): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def setDensity(value: String): Self = this.set("density", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDensity: Self = this.set("density", js.undefined)
-    
-    @scala.inline
-    def setOrientation(value: landscape | portrait): Self = this.set("orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

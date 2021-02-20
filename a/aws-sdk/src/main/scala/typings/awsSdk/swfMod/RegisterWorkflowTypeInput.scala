@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterWorkflowTypeInput extends js.Object {
+trait RegisterWorkflowTypeInput extends StObject {
   
   /**
     * If set, specifies the default policy to use for the child workflow executions when a workflow execution of this type is terminated, by calling the TerminateWorkflowExecution action explicitly or due to an expired timeout. This default can be overridden when starting a workflow execution using the StartWorkflowExecution action or the StartChildWorkflowExecution Decision. The supported child policies are:    TERMINATE – The child executions are terminated.    REQUEST_CANCEL – A request to cancel is attempted for each child execution by recording a WorkflowExecutionCancelRequested event in its history. It is up to the decider to take appropriate actions when it receives an execution history with this event.    ABANDON – No action is taken. The child executions continue to run.  
@@ -66,69 +67,57 @@ object RegisterWorkflowTypeInput {
   }
   
   @scala.inline
-  implicit class RegisterWorkflowTypeInputOps[Self <: RegisterWorkflowTypeInput] (val x: Self) extends AnyVal {
+  implicit class RegisterWorkflowTypeInputMutableBuilder[Self <: RegisterWorkflowTypeInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultChildPolicy(value: ChildPolicy): Self = StObject.set(x, "defaultChildPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultChildPolicyUndefined: Self = StObject.set(x, "defaultChildPolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultExecutionStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "defaultExecutionStartToCloseTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: DomainName): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setDefaultExecutionStartToCloseTimeoutUndefined: Self = StObject.set(x, "defaultExecutionStartToCloseTimeout", js.undefined)
     
     @scala.inline
-    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDefaultLambdaRole(value: Arn): Self = StObject.set(x, "defaultLambdaRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: Version): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setDefaultLambdaRoleUndefined: Self = StObject.set(x, "defaultLambdaRole", js.undefined)
     
     @scala.inline
-    def setDefaultChildPolicy(value: ChildPolicy): Self = this.set("defaultChildPolicy", value.asInstanceOf[js.Any])
+    def setDefaultTaskList(value: TaskList): Self = StObject.set(x, "defaultTaskList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultChildPolicy: Self = this.set("defaultChildPolicy", js.undefined)
+    def setDefaultTaskListUndefined: Self = StObject.set(x, "defaultTaskList", js.undefined)
     
     @scala.inline
-    def setDefaultExecutionStartToCloseTimeout(value: DurationInSecondsOptional): Self = this.set("defaultExecutionStartToCloseTimeout", value.asInstanceOf[js.Any])
+    def setDefaultTaskPriority(value: TaskPriority): Self = StObject.set(x, "defaultTaskPriority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultExecutionStartToCloseTimeout: Self = this.set("defaultExecutionStartToCloseTimeout", js.undefined)
+    def setDefaultTaskPriorityUndefined: Self = StObject.set(x, "defaultTaskPriority", js.undefined)
     
     @scala.inline
-    def setDefaultLambdaRole(value: Arn): Self = this.set("defaultLambdaRole", value.asInstanceOf[js.Any])
+    def setDefaultTaskStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "defaultTaskStartToCloseTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultLambdaRole: Self = this.set("defaultLambdaRole", js.undefined)
+    def setDefaultTaskStartToCloseTimeoutUndefined: Self = StObject.set(x, "defaultTaskStartToCloseTimeout", js.undefined)
     
     @scala.inline
-    def setDefaultTaskList(value: TaskList): Self = this.set("defaultTaskList", value.asInstanceOf[js.Any])
+    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultTaskList: Self = this.set("defaultTaskList", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setDefaultTaskPriority(value: TaskPriority): Self = this.set("defaultTaskPriority", value.asInstanceOf[js.Any])
+    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultTaskPriority: Self = this.set("defaultTaskPriority", js.undefined)
+    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTaskStartToCloseTimeout(value: DurationInSecondsOptional): Self = this.set("defaultTaskStartToCloseTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultTaskStartToCloseTimeout: Self = this.set("defaultTaskStartToCloseTimeout", js.undefined)
-    
-    @scala.inline
-    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

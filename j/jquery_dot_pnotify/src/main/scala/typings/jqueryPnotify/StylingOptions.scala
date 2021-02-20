@@ -1,5 +1,6 @@
 package typings.jqueryPnotify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,4 +13,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jqueryPnotify.jqueryPnotifyStrings.fontawesome
   - typings.jqueryPnotify.PNotifyStyling
 */
-trait StylingOptions extends js.Object
+trait StylingOptions extends StObject

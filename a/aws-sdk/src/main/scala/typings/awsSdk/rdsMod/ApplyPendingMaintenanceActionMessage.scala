@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplyPendingMaintenanceActionMessage extends js.Object {
+trait ApplyPendingMaintenanceActionMessage extends StObject {
   
   /**
     * The pending maintenance action to apply to this resource. Valid values: system-update, db-upgrade, hardware-maintenance, ca-certificate-rotation 
@@ -31,27 +32,15 @@ object ApplyPendingMaintenanceActionMessage {
   }
   
   @scala.inline
-  implicit class ApplyPendingMaintenanceActionMessageOps[Self <: ApplyPendingMaintenanceActionMessage] (val x: Self) extends AnyVal {
+  implicit class ApplyPendingMaintenanceActionMessageMutableBuilder[Self <: ApplyPendingMaintenanceActionMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyAction(value: String): Self = StObject.set(x, "ApplyAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptInType(value: String): Self = StObject.set(x, "OptInType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApplyAction(value: String): Self = this.set("ApplyAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptInType(value: String): Self = this.set("OptInType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceIdentifier(value: String): Self = this.set("ResourceIdentifier", value.asInstanceOf[js.Any])
+    def setResourceIdentifier(value: String): Self = StObject.set(x, "ResourceIdentifier", value.asInstanceOf[js.Any])
   }
 }

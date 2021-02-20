@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAssessmentTemplatesResponse extends js.Object {
+trait DescribeAssessmentTemplatesResponse extends StObject {
   
   /**
     * Information about the assessment templates.
@@ -26,27 +27,15 @@ object DescribeAssessmentTemplatesResponse {
   }
   
   @scala.inline
-  implicit class DescribeAssessmentTemplatesResponseOps[Self <: DescribeAssessmentTemplatesResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeAssessmentTemplatesResponseMutableBuilder[Self <: DescribeAssessmentTemplatesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssessmentTemplates(value: AssessmentTemplateList): Self = StObject.set(x, "assessmentTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssessmentTemplatesVarargs(value: AssessmentTemplate*): Self = StObject.set(x, "assessmentTemplates", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAssessmentTemplatesVarargs(value: AssessmentTemplate*): Self = this.set("assessmentTemplates", js.Array(value :_*))
-    
-    @scala.inline
-    def setAssessmentTemplates(value: AssessmentTemplateList): Self = this.set("assessmentTemplates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFailedItems(value: FailedItems): Self = this.set("failedItems", value.asInstanceOf[js.Any])
+    def setFailedItems(value: FailedItems): Self = StObject.set(x, "failedItems", value.asInstanceOf[js.Any])
   }
 }

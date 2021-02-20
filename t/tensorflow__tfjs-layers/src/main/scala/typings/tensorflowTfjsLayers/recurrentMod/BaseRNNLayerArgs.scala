@@ -1,6 +1,7 @@
 package typings.tensorflowTfjsLayers.recurrentMod
 
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -113,69 +114,57 @@ object BaseRNNLayerArgs {
   }
   
   @scala.inline
-  implicit class BaseRNNLayerArgsOps[Self <: BaseRNNLayerArgs] (val x: Self) extends AnyVal {
+  implicit class BaseRNNLayerArgsMutableBuilder[Self <: BaseRNNLayerArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCell(value: RNNCell | js.Array[RNNCell]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellVarargs(value: RNNCell*): Self = StObject.set(x, "cell", js.Array(value :_*))
     
     @scala.inline
-    def setCellVarargs(value: RNNCell*): Self = this.set("cell", js.Array(value :_*))
+    def setGoBackwards(value: Boolean): Self = StObject.set(x, "goBackwards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCell(value: RNNCell | js.Array[RNNCell]): Self = this.set("cell", value.asInstanceOf[js.Any])
+    def setGoBackwardsUndefined: Self = StObject.set(x, "goBackwards", js.undefined)
     
     @scala.inline
-    def deleteCell: Self = this.set("cell", js.undefined)
+    def setInputDim(value: Double): Self = StObject.set(x, "inputDim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoBackwards(value: Boolean): Self = this.set("goBackwards", value.asInstanceOf[js.Any])
+    def setInputDimUndefined: Self = StObject.set(x, "inputDim", js.undefined)
     
     @scala.inline
-    def deleteGoBackwards: Self = this.set("goBackwards", js.undefined)
+    def setInputLength(value: Double): Self = StObject.set(x, "inputLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputDim(value: Double): Self = this.set("inputDim", value.asInstanceOf[js.Any])
+    def setInputLengthUndefined: Self = StObject.set(x, "inputLength", js.undefined)
     
     @scala.inline
-    def deleteInputDim: Self = this.set("inputDim", js.undefined)
+    def setReturnSequences(value: Boolean): Self = StObject.set(x, "returnSequences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputLength(value: Double): Self = this.set("inputLength", value.asInstanceOf[js.Any])
+    def setReturnSequencesUndefined: Self = StObject.set(x, "returnSequences", js.undefined)
     
     @scala.inline
-    def deleteInputLength: Self = this.set("inputLength", js.undefined)
+    def setReturnState(value: Boolean): Self = StObject.set(x, "returnState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnSequences(value: Boolean): Self = this.set("returnSequences", value.asInstanceOf[js.Any])
+    def setReturnStateUndefined: Self = StObject.set(x, "returnState", js.undefined)
     
     @scala.inline
-    def deleteReturnSequences: Self = this.set("returnSequences", js.undefined)
+    def setStateful(value: Boolean): Self = StObject.set(x, "stateful", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnState(value: Boolean): Self = this.set("returnState", value.asInstanceOf[js.Any])
+    def setStatefulUndefined: Self = StObject.set(x, "stateful", js.undefined)
     
     @scala.inline
-    def deleteReturnState: Self = this.set("returnState", js.undefined)
+    def setUnroll(value: Boolean): Self = StObject.set(x, "unroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateful(value: Boolean): Self = this.set("stateful", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateful: Self = this.set("stateful", js.undefined)
-    
-    @scala.inline
-    def setUnroll(value: Boolean): Self = this.set("unroll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnroll: Self = this.set("unroll", js.undefined)
+    def setUnrollUndefined: Self = StObject.set(x, "unroll", js.undefined)
   }
 }

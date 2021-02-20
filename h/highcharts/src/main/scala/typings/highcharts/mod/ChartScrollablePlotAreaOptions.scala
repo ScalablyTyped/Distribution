@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartScrollablePlotAreaOptions extends js.Object {
+trait ChartScrollablePlotAreaOptions extends StObject {
   
   /**
     * (Highcharts, Gantt) The minimum height for the plot area. If it gets
@@ -49,48 +50,36 @@ object ChartScrollablePlotAreaOptions {
   }
   
   @scala.inline
-  implicit class ChartScrollablePlotAreaOptionsOps[Self <: ChartScrollablePlotAreaOptions] (val x: Self) extends AnyVal {
+  implicit class ChartScrollablePlotAreaOptionsMutableBuilder[Self <: ChartScrollablePlotAreaOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinHeight(value: Double): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    def setScrollPositionX(value: Double): Self = StObject.set(x, "scrollPositionX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setScrollPositionXUndefined: Self = StObject.set(x, "scrollPositionX", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setScrollPositionY(value: Double): Self = StObject.set(x, "scrollPositionY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollPositionX(value: Double): Self = this.set("scrollPositionX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollPositionX: Self = this.set("scrollPositionX", js.undefined)
-    
-    @scala.inline
-    def setScrollPositionY(value: Double): Self = this.set("scrollPositionY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollPositionY: Self = this.set("scrollPositionY", js.undefined)
+    def setScrollPositionYUndefined: Self = StObject.set(x, "scrollPositionY", js.undefined)
   }
 }

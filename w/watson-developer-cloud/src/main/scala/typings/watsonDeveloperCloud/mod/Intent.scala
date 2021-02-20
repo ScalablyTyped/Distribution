@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Intent. */
 @js.native
-trait Intent extends js.Object {
+trait Intent extends StObject {
   
   /** The timestamp for creation of the object. */
   var created: js.UndefOr[String] = js.native
@@ -32,48 +33,36 @@ object Intent {
   }
   
   @scala.inline
-  implicit class IntentOps[Self <: Intent] (val x: Self) extends AnyVal {
+  implicit class IntentMutableBuilder[Self <: Intent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntent(value: String): Self = this.set("intent", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setCreated(value: String): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setExamples(value: js.Array[Example]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setExamplesVarargs(value: Example*): Self = StObject.set(x, "examples", js.Array(value :_*))
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExamplesVarargs(value: Example*): Self = this.set("examples", js.Array(value :_*))
+    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExamples(value: js.Array[Example]): Self = this.set("examples", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExamples: Self = this.set("examples", js.undefined)
-    
-    @scala.inline
-    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdated: Self = this.set("updated", js.undefined)
+    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }
 }

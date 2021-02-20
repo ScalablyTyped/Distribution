@@ -1,11 +1,12 @@
 package typings.tizenCommonWeb.systeminfoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SystemInfoOptions extends js.Object {
+trait SystemInfoOptions extends StObject {
   
   /**
     * An attribute to indicate that the `successCallback()` method in the watch
@@ -37,27 +38,15 @@ object SystemInfoOptions {
   }
   
   @scala.inline
-  implicit class SystemInfoOptionsOps[Self <: SystemInfoOptions] (val x: Self) extends AnyVal {
+  implicit class SystemInfoOptionsMutableBuilder[Self <: SystemInfoOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighThreshold(value: Double): Self = StObject.set(x, "highThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLowThreshold(value: Double): Self = StObject.set(x, "lowThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHighThreshold(value: Double): Self = this.set("highThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLowThreshold(value: Double): Self = this.set("lowThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthenticationExtensionsClientInputs extends js.Object {
+trait AuthenticationExtensionsClientInputs extends StObject {
   
   var appid: js.UndefOr[java.lang.String] = js.native
   
@@ -24,42 +25,30 @@ object AuthenticationExtensionsClientInputs {
   }
   
   @scala.inline
-  implicit class AuthenticationExtensionsClientInputsOps[Self <: AuthenticationExtensionsClientInputs] (val x: Self) extends AnyVal {
+  implicit class AuthenticationExtensionsClientInputsMutableBuilder[Self <: AuthenticationExtensionsClientInputs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppid(value: java.lang.String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppidExclude(value: java.lang.String): Self = StObject.set(x, "appidExclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppidExcludeUndefined: Self = StObject.set(x, "appidExclude", js.undefined)
     
     @scala.inline
-    def setAppid(value: java.lang.String): Self = this.set("appid", value.asInstanceOf[js.Any])
+    def setAppidUndefined: Self = StObject.set(x, "appid", js.undefined)
     
     @scala.inline
-    def deleteAppid: Self = this.set("appid", js.undefined)
+    def setCredProps(value: scala.Boolean): Self = StObject.set(x, "credProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppidExclude(value: java.lang.String): Self = this.set("appidExclude", value.asInstanceOf[js.Any])
+    def setCredPropsUndefined: Self = StObject.set(x, "credProps", js.undefined)
     
     @scala.inline
-    def deleteAppidExclude: Self = this.set("appidExclude", js.undefined)
+    def setUvm(value: scala.Boolean): Self = StObject.set(x, "uvm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredProps(value: scala.Boolean): Self = this.set("credProps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCredProps: Self = this.set("credProps", js.undefined)
-    
-    @scala.inline
-    def setUvm(value: scala.Boolean): Self = this.set("uvm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUvm: Self = this.set("uvm", js.undefined)
+    def setUvmUndefined: Self = StObject.set(x, "uvm", js.undefined)
   }
 }

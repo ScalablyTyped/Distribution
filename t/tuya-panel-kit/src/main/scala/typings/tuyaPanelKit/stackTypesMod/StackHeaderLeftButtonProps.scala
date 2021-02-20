@@ -7,12 +7,13 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.anon.TintColorString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StackHeaderLeftButtonProps extends js.Object {
+trait StackHeaderLeftButtonProps extends StObject {
   
   /**
     * Accessibility label for the button for screen readers.
@@ -106,120 +107,108 @@ object StackHeaderLeftButtonProps {
   }
   
   @scala.inline
-  implicit class StackHeaderLeftButtonPropsOps[Self <: StackHeaderLeftButtonProps] (val x: Self) extends AnyVal {
+  implicit class StackHeaderLeftButtonPropsMutableBuilder[Self <: StackHeaderLeftButtonProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityLabel(value: String): Self = this.set("accessibilityLabel", value.asInstanceOf[js.Any])
+    def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityLabel: Self = this.set("accessibilityLabel", js.undefined)
+    def setBackImage(value: /* props */ TintColorString => ReactNode): Self = StObject.set(x, "backImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAllowFontScaling(value: Boolean): Self = this.set("allowFontScaling", value.asInstanceOf[js.Any])
+    def setBackImageUndefined: Self = StObject.set(x, "backImage", js.undefined)
     
     @scala.inline
-    def deleteAllowFontScaling: Self = this.set("allowFontScaling", js.undefined)
+    def setCanGoBack(value: Boolean): Self = StObject.set(x, "canGoBack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackImage(value: /* props */ TintColorString => ReactNode): Self = this.set("backImage", js.Any.fromFunction1(value))
+    def setCanGoBackUndefined: Self = StObject.set(x, "canGoBack", js.undefined)
     
     @scala.inline
-    def deleteBackImage: Self = this.set("backImage", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanGoBack(value: Boolean): Self = this.set("canGoBack", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteCanGoBack: Self = this.set("canGoBack", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setLabelStyle(value: WithAnimatedValue[StyleProp[TextStyle]]): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setLabelStyleNull: Self = StObject.set(x, "labelStyle", null)
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setLabelStyle(value: WithAnimatedValue[StyleProp[TextStyle]]): Self = this.set("labelStyle", value.asInstanceOf[js.Any])
+    def setLabelVisible(value: Boolean): Self = StObject.set(x, "labelVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelStyle: Self = this.set("labelStyle", js.undefined)
+    def setLabelVisibleUndefined: Self = StObject.set(x, "labelVisible", js.undefined)
     
     @scala.inline
-    def setLabelStyleNull: Self = this.set("labelStyle", null)
+    def setOnLabelLayout(value: /* e */ LayoutChangeEvent => Unit): Self = StObject.set(x, "onLabelLayout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLabelVisible(value: Boolean): Self = this.set("labelVisible", value.asInstanceOf[js.Any])
+    def setOnLabelLayoutUndefined: Self = StObject.set(x, "onLabelLayout", js.undefined)
     
     @scala.inline
-    def deleteLabelVisible: Self = this.set("labelVisible", js.undefined)
+    def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnLabelLayout(value: /* e */ LayoutChangeEvent => Unit): Self = this.set("onLabelLayout", js.Any.fromFunction1(value))
+    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
     @scala.inline
-    def deleteOnLabelLayout: Self = this.set("onLabelLayout", js.undefined)
+    def setPressColorAndroid(value: String): Self = StObject.set(x, "pressColorAndroid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPress(value: () => Unit): Self = this.set("onPress", js.Any.fromFunction0(value))
+    def setPressColorAndroidUndefined: Self = StObject.set(x, "pressColorAndroid", js.undefined)
     
     @scala.inline
-    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    def setScreenLayout(value: Layout): Self = StObject.set(x, "screenLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPressColorAndroid(value: String): Self = this.set("pressColorAndroid", value.asInstanceOf[js.Any])
+    def setScreenLayoutUndefined: Self = StObject.set(x, "screenLayout", js.undefined)
     
     @scala.inline
-    def deletePressColorAndroid: Self = this.set("pressColorAndroid", js.undefined)
+    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenLayout(value: Layout): Self = this.set("screenLayout", value.asInstanceOf[js.Any])
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def deleteScreenLayout: Self = this.set("screenLayout", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     
     @scala.inline
-    def setStyleNull: Self = this.set("style", null)
+    def setTitleLayout(value: Layout): Self = StObject.set(x, "titleLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTintColor(value: String): Self = this.set("tintColor", value.asInstanceOf[js.Any])
+    def setTitleLayoutUndefined: Self = StObject.set(x, "titleLayout", js.undefined)
     
     @scala.inline
-    def deleteTintColor: Self = this.set("tintColor", js.undefined)
+    def setTruncatedLabel(value: String): Self = StObject.set(x, "truncatedLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleLayout(value: Layout): Self = this.set("titleLayout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleLayout: Self = this.set("titleLayout", js.undefined)
-    
-    @scala.inline
-    def setTruncatedLabel(value: String): Self = this.set("truncatedLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTruncatedLabel: Self = this.set("truncatedLabel", js.undefined)
+    def setTruncatedLabelUndefined: Self = StObject.set(x, "truncatedLabel", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.openui5.global.sap.m
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("sap.m.FlexAlignSelf")
 @js.native
-object FlexAlignSelf extends js.Object {
+object FlexAlignSelf extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.openui5.sap.m.FlexAlignSelf with Double] = js.native

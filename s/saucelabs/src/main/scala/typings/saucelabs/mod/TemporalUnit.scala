@@ -1,6 +1,7 @@
 package typings.saucelabs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,42 +27,30 @@ object TemporalUnit {
   }
   
   @scala.inline
-  implicit class TemporalUnitOps[Self <: TemporalUnit] (val x: Self) extends AnyVal {
+  implicit class TemporalUnitMutableBuilder[Self <: TemporalUnit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateBased(value: Boolean): Self = StObject.set(x, "dateBased", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateBasedUndefined: Self = StObject.set(x, "dateBased", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateBased(value: Boolean): Self = this.set("dateBased", value.asInstanceOf[js.Any])
+    def setDurationEstimated(value: Boolean): Self = StObject.set(x, "durationEstimated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDateBased: Self = this.set("dateBased", js.undefined)
+    def setDurationEstimatedUndefined: Self = StObject.set(x, "durationEstimated", js.undefined)
     
     @scala.inline
-    def setDuration(value: Duration): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setTimeBased(value: Boolean): Self = StObject.set(x, "timeBased", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationEstimated(value: Boolean): Self = this.set("durationEstimated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDurationEstimated: Self = this.set("durationEstimated", js.undefined)
-    
-    @scala.inline
-    def setTimeBased(value: Boolean): Self = this.set("timeBased", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeBased: Self = this.set("timeBased", js.undefined)
+    def setTimeBasedUndefined: Self = StObject.set(x, "timeBased", js.undefined)
   }
 }

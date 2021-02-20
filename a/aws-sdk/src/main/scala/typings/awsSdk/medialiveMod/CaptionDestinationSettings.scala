@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CaptionDestinationSettings extends js.Object {
+trait CaptionDestinationSettings extends StObject {
   
   var AribDestinationSettings: js.UndefOr[typings.awsSdk.medialiveMod.AribDestinationSettings] = js.native
   
@@ -42,96 +43,84 @@ object CaptionDestinationSettings {
   }
   
   @scala.inline
-  implicit class CaptionDestinationSettingsOps[Self <: CaptionDestinationSettings] (val x: Self) extends AnyVal {
+  implicit class CaptionDestinationSettingsMutableBuilder[Self <: CaptionDestinationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAribDestinationSettings(value: AribDestinationSettings): Self = StObject.set(x, "AribDestinationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAribDestinationSettingsUndefined: Self = StObject.set(x, "AribDestinationSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBurnInDestinationSettings(value: BurnInDestinationSettings): Self = StObject.set(x, "BurnInDestinationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAribDestinationSettings(value: AribDestinationSettings): Self = this.set("AribDestinationSettings", value.asInstanceOf[js.Any])
+    def setBurnInDestinationSettingsUndefined: Self = StObject.set(x, "BurnInDestinationSettings", js.undefined)
     
     @scala.inline
-    def deleteAribDestinationSettings: Self = this.set("AribDestinationSettings", js.undefined)
+    def setDvbSubDestinationSettings(value: DvbSubDestinationSettings): Self = StObject.set(x, "DvbSubDestinationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBurnInDestinationSettings(value: BurnInDestinationSettings): Self = this.set("BurnInDestinationSettings", value.asInstanceOf[js.Any])
+    def setDvbSubDestinationSettingsUndefined: Self = StObject.set(x, "DvbSubDestinationSettings", js.undefined)
     
     @scala.inline
-    def deleteBurnInDestinationSettings: Self = this.set("BurnInDestinationSettings", js.undefined)
+    def setEbuTtDDestinationSettings(value: EbuTtDDestinationSettings): Self = StObject.set(x, "EbuTtDDestinationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDvbSubDestinationSettings(value: DvbSubDestinationSettings): Self = this.set("DvbSubDestinationSettings", value.asInstanceOf[js.Any])
+    def setEbuTtDDestinationSettingsUndefined: Self = StObject.set(x, "EbuTtDDestinationSettings", js.undefined)
     
     @scala.inline
-    def deleteDvbSubDestinationSettings: Self = this.set("DvbSubDestinationSettings", js.undefined)
+    def setEmbeddedDestinationSettings(value: EmbeddedDestinationSettings): Self = StObject.set(x, "EmbeddedDestinationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEbuTtDDestinationSettings(value: EbuTtDDestinationSettings): Self = this.set("EbuTtDDestinationSettings", value.asInstanceOf[js.Any])
+    def setEmbeddedDestinationSettingsUndefined: Self = StObject.set(x, "EmbeddedDestinationSettings", js.undefined)
     
     @scala.inline
-    def deleteEbuTtDDestinationSettings: Self = this.set("EbuTtDDestinationSettings", js.undefined)
+    def setEmbeddedPlusScte20DestinationSettings(value: EmbeddedPlusScte20DestinationSettings): Self = StObject.set(x, "EmbeddedPlusScte20DestinationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbeddedDestinationSettings(value: EmbeddedDestinationSettings): Self = this.set("EmbeddedDestinationSettings", value.asInstanceOf[js.Any])
+    def setEmbeddedPlusScte20DestinationSettingsUndefined: Self = StObject.set(x, "EmbeddedPlusScte20DestinationSettings", js.undefined)
     
     @scala.inline
-    def deleteEmbeddedDestinationSettings: Self = this.set("EmbeddedDestinationSettings", js.undefined)
+    def setRtmpCaptionInfoDestinationSettings(value: RtmpCaptionInfoDestinationSettings): Self = StObject.set(x, "RtmpCaptionInfoDestinationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbeddedPlusScte20DestinationSettings(value: EmbeddedPlusScte20DestinationSettings): Self = this.set("EmbeddedPlusScte20DestinationSettings", value.asInstanceOf[js.Any])
+    def setRtmpCaptionInfoDestinationSettingsUndefined: Self = StObject.set(x, "RtmpCaptionInfoDestinationSettings", js.undefined)
     
     @scala.inline
-    def deleteEmbeddedPlusScte20DestinationSettings: Self = this.set("EmbeddedPlusScte20DestinationSettings", js.undefined)
+    def setScte20PlusEmbeddedDestinationSettings(value: Scte20PlusEmbeddedDestinationSettings): Self = StObject.set(x, "Scte20PlusEmbeddedDestinationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRtmpCaptionInfoDestinationSettings(value: RtmpCaptionInfoDestinationSettings): Self = this.set("RtmpCaptionInfoDestinationSettings", value.asInstanceOf[js.Any])
+    def setScte20PlusEmbeddedDestinationSettingsUndefined: Self = StObject.set(x, "Scte20PlusEmbeddedDestinationSettings", js.undefined)
     
     @scala.inline
-    def deleteRtmpCaptionInfoDestinationSettings: Self = this.set("RtmpCaptionInfoDestinationSettings", js.undefined)
+    def setScte27DestinationSettings(value: Scte27DestinationSettings): Self = StObject.set(x, "Scte27DestinationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScte20PlusEmbeddedDestinationSettings(value: Scte20PlusEmbeddedDestinationSettings): Self = this.set("Scte20PlusEmbeddedDestinationSettings", value.asInstanceOf[js.Any])
+    def setScte27DestinationSettingsUndefined: Self = StObject.set(x, "Scte27DestinationSettings", js.undefined)
     
     @scala.inline
-    def deleteScte20PlusEmbeddedDestinationSettings: Self = this.set("Scte20PlusEmbeddedDestinationSettings", js.undefined)
+    def setSmpteTtDestinationSettings(value: SmpteTtDestinationSettings): Self = StObject.set(x, "SmpteTtDestinationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScte27DestinationSettings(value: Scte27DestinationSettings): Self = this.set("Scte27DestinationSettings", value.asInstanceOf[js.Any])
+    def setSmpteTtDestinationSettingsUndefined: Self = StObject.set(x, "SmpteTtDestinationSettings", js.undefined)
     
     @scala.inline
-    def deleteScte27DestinationSettings: Self = this.set("Scte27DestinationSettings", js.undefined)
+    def setTeletextDestinationSettings(value: TeletextDestinationSettings): Self = StObject.set(x, "TeletextDestinationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmpteTtDestinationSettings(value: SmpteTtDestinationSettings): Self = this.set("SmpteTtDestinationSettings", value.asInstanceOf[js.Any])
+    def setTeletextDestinationSettingsUndefined: Self = StObject.set(x, "TeletextDestinationSettings", js.undefined)
     
     @scala.inline
-    def deleteSmpteTtDestinationSettings: Self = this.set("SmpteTtDestinationSettings", js.undefined)
+    def setTtmlDestinationSettings(value: TtmlDestinationSettings): Self = StObject.set(x, "TtmlDestinationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeletextDestinationSettings(value: TeletextDestinationSettings): Self = this.set("TeletextDestinationSettings", value.asInstanceOf[js.Any])
+    def setTtmlDestinationSettingsUndefined: Self = StObject.set(x, "TtmlDestinationSettings", js.undefined)
     
     @scala.inline
-    def deleteTeletextDestinationSettings: Self = this.set("TeletextDestinationSettings", js.undefined)
+    def setWebvttDestinationSettings(value: WebvttDestinationSettings): Self = StObject.set(x, "WebvttDestinationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTtmlDestinationSettings(value: TtmlDestinationSettings): Self = this.set("TtmlDestinationSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTtmlDestinationSettings: Self = this.set("TtmlDestinationSettings", js.undefined)
-    
-    @scala.inline
-    def setWebvttDestinationSettings(value: WebvttDestinationSettings): Self = this.set("WebvttDestinationSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebvttDestinationSettings: Self = this.set("WebvttDestinationSettings", js.undefined)
+    def setWebvttDestinationSettingsUndefined: Self = StObject.set(x, "WebvttDestinationSettings", js.undefined)
   }
 }

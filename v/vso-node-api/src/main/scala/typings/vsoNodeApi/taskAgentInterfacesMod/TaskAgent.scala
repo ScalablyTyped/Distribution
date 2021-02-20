@@ -2,6 +2,7 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,45 +71,33 @@ object TaskAgent {
   }
   
   @scala.inline
-  implicit class TaskAgentOps[Self <: TaskAgent] (val x: Self) extends AnyVal {
+  implicit class TaskAgentMutableBuilder[Self <: TaskAgent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignedRequest(value: TaskAgentJobRequest): Self = StObject.set(x, "assignedRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorization(value: TaskAgentAuthorization): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignedRequest(value: TaskAgentJobRequest): Self = this.set("assignedRequest", value.asInstanceOf[js.Any])
+    def setMaxParallelism(value: Double): Self = StObject.set(x, "maxParallelism", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorization(value: TaskAgentAuthorization): Self = this.set("authorization", value.asInstanceOf[js.Any])
+    def setPendingUpdate(value: TaskAgentUpdate): Self = StObject.set(x, "pendingUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedOn(value: Date): Self = this.set("createdOn", value.asInstanceOf[js.Any])
+    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxParallelism(value: Double): Self = this.set("maxParallelism", value.asInstanceOf[js.Any])
+    def setStatusChangedOn(value: Date): Self = StObject.set(x, "statusChangedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingUpdate(value: TaskAgentUpdate): Self = this.set("pendingUpdate", value.asInstanceOf[js.Any])
+    def setSystemCapabilities(value: StringDictionary[String]): Self = StObject.set(x, "systemCapabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: js.Any): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusChangedOn(value: Date): Self = this.set("statusChangedOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystemCapabilities(value: StringDictionary[String]): Self = this.set("systemCapabilities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserCapabilities(value: StringDictionary[String]): Self = this.set("userCapabilities", value.asInstanceOf[js.Any])
+    def setUserCapabilities(value: StringDictionary[String]): Self = StObject.set(x, "userCapabilities", value.asInstanceOf[js.Any])
   }
 }

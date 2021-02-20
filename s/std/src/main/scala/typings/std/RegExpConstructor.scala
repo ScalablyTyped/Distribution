@@ -2,6 +2,7 @@ package typings.std
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,6 +15,11 @@ trait RegExpConstructor
       /* flags */ java.lang.String, 
       RegExp
     ] {
+  
+  def apply(pattern: java.lang.String): RegExp = js.native
+  def apply(pattern: java.lang.String, flags: java.lang.String): RegExp = js.native
+  def apply(pattern: RegExp): RegExp = js.native
+  def apply(pattern: RegExp, flags: java.lang.String): RegExp = js.native
   
   // Non-standard extensions
   @JSName("$1")
@@ -42,11 +48,6 @@ trait RegExpConstructor
   
   @JSName("$9")
   var $9: java.lang.String = js.native
-  
-  def apply(pattern: java.lang.String): RegExp = js.native
-  def apply(pattern: java.lang.String, flags: java.lang.String): RegExp = js.native
-  def apply(pattern: RegExp): RegExp = js.native
-  def apply(pattern: RegExp, flags: java.lang.String): RegExp = js.native
   
   var lastMatch: java.lang.String = js.native
   

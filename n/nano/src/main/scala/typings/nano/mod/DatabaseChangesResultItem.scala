@@ -1,13 +1,14 @@
 package typings.nano.mod
 
 import typings.nano.anon.Rev
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/database/changes.html#get--db-_changes
 @js.native
-trait DatabaseChangesResultItem extends js.Object {
+trait DatabaseChangesResultItem extends StObject {
   
   // List of document’s leaves with single field rev.
   var changes: js.Array[Rev] = js.native
@@ -30,33 +31,21 @@ object DatabaseChangesResultItem {
   }
   
   @scala.inline
-  implicit class DatabaseChangesResultItemOps[Self <: DatabaseChangesResultItem] (val x: Self) extends AnyVal {
+  implicit class DatabaseChangesResultItemMutableBuilder[Self <: DatabaseChangesResultItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChanges(value: js.Array[Rev]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangesVarargs(value: Rev*): Self = StObject.set(x, "changes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangesVarargs(value: Rev*): Self = this.set("changes", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChanges(value: js.Array[Rev]): Self = this.set("changes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeq(value: js.Any): Self = this.set("seq", value.asInstanceOf[js.Any])
+    def setSeq(value: js.Any): Self = StObject.set(x, "seq", value.asInstanceOf[js.Any])
   }
 }

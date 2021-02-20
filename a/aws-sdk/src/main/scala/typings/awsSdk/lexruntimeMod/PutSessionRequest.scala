@@ -1,11 +1,12 @@
 package typings.awsSdk.lexruntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutSessionRequest extends js.Object {
+trait PutSessionRequest extends StObject {
   
   /**
     * The message that Amazon Lex returns in the response can be either text or speech based depending on the value of this field.   If the value is text/plain; charset=utf-8, Amazon Lex returns text in the response.   If the value begins with audio/, Amazon Lex returns speech in the response. Amazon Lex uses Amazon Polly to generate the speech in the configuration that you specify. For example, if you specify audio/mpeg as the value, Amazon Lex returns speech in the MPEG format.   If the value is audio/pcm, the speech is returned as audio/pcm in 16-bit, little endian format.   The following are the accepted values:    audio/mpeg     audio/ogg     audio/pcm     audio/ * (defaults to mpeg)    text/plain; charset=utf-8     
@@ -56,63 +57,51 @@ object PutSessionRequest {
   }
   
   @scala.inline
-  implicit class PutSessionRequestOps[Self <: PutSessionRequest] (val x: Self) extends AnyVal {
+  implicit class PutSessionRequestMutableBuilder[Self <: PutSessionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccept(value: Accept): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveContexts(value: ActiveContextsList): Self = StObject.set(x, "activeContexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBotAlias(value: BotAlias): Self = this.set("botAlias", value.asInstanceOf[js.Any])
+    def setActiveContextsUndefined: Self = StObject.set(x, "activeContexts", js.undefined)
     
     @scala.inline
-    def setBotName(value: BotName): Self = this.set("botName", value.asInstanceOf[js.Any])
+    def setActiveContextsVarargs(value: ActiveContext*): Self = StObject.set(x, "activeContexts", js.Array(value :_*))
     
     @scala.inline
-    def setUserId(value: UserId): Self = this.set("userId", value.asInstanceOf[js.Any])
+    def setBotAlias(value: BotAlias): Self = StObject.set(x, "botAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccept(value: Accept): Self = this.set("accept", value.asInstanceOf[js.Any])
+    def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccept: Self = this.set("accept", js.undefined)
+    def setDialogAction(value: DialogAction): Self = StObject.set(x, "dialogAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveContextsVarargs(value: ActiveContext*): Self = this.set("activeContexts", js.Array(value :_*))
+    def setDialogActionUndefined: Self = StObject.set(x, "dialogAction", js.undefined)
     
     @scala.inline
-    def setActiveContexts(value: ActiveContextsList): Self = this.set("activeContexts", value.asInstanceOf[js.Any])
+    def setRecentIntentSummaryView(value: IntentSummaryList): Self = StObject.set(x, "recentIntentSummaryView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActiveContexts: Self = this.set("activeContexts", js.undefined)
+    def setRecentIntentSummaryViewUndefined: Self = StObject.set(x, "recentIntentSummaryView", js.undefined)
     
     @scala.inline
-    def setDialogAction(value: DialogAction): Self = this.set("dialogAction", value.asInstanceOf[js.Any])
+    def setRecentIntentSummaryViewVarargs(value: IntentSummary*): Self = StObject.set(x, "recentIntentSummaryView", js.Array(value :_*))
     
     @scala.inline
-    def deleteDialogAction: Self = this.set("dialogAction", js.undefined)
+    def setSessionAttributes(value: StringMap): Self = StObject.set(x, "sessionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecentIntentSummaryViewVarargs(value: IntentSummary*): Self = this.set("recentIntentSummaryView", js.Array(value :_*))
+    def setSessionAttributesUndefined: Self = StObject.set(x, "sessionAttributes", js.undefined)
     
     @scala.inline
-    def setRecentIntentSummaryView(value: IntentSummaryList): Self = this.set("recentIntentSummaryView", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecentIntentSummaryView: Self = this.set("recentIntentSummaryView", js.undefined)
-    
-    @scala.inline
-    def setSessionAttributes(value: StringMap): Self = this.set("sessionAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionAttributes: Self = this.set("sessionAttributes", js.undefined)
+    def setUserId(value: UserId): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

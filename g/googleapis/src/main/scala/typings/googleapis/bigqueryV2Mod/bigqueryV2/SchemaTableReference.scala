@@ -1,11 +1,12 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaTableReference extends js.Object {
+trait SchemaTableReference extends StObject {
   
   /**
     * [Required] The ID of the dataset containing this table.
@@ -33,36 +34,24 @@ object SchemaTableReference {
   }
   
   @scala.inline
-  implicit class SchemaTableReferenceOps[Self <: SchemaTableReference] (val x: Self) extends AnyVal {
+  implicit class SchemaTableReferenceMutableBuilder[Self <: SchemaTableReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatasetIdUndefined: Self = StObject.set(x, "datasetId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasetId(value: String): Self = this.set("datasetId", value.asInstanceOf[js.Any])
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def deleteDatasetId: Self = this.set("datasetId", js.undefined)
+    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
-    
-    @scala.inline
-    def setTableId(value: String): Self = this.set("tableId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableId: Self = this.set("tableId", js.undefined)
+    def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
   }
 }

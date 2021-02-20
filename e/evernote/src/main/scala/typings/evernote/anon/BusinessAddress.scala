@@ -2,12 +2,13 @@ package typings.evernote.anon
 
 import typings.evernote.mod.Types.ReminderEmailConfig
 import typings.evernote.mod.Types.Timestamp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BusinessAddress extends js.Object {
+trait BusinessAddress extends StObject {
   
   var businessAddress: js.UndefOr[String] = js.native
   
@@ -86,228 +87,216 @@ object BusinessAddress {
   }
   
   @scala.inline
-  implicit class BusinessAddressOps[Self <: BusinessAddress] (val x: Self) extends AnyVal {
+  implicit class BusinessAddressMutableBuilder[Self <: BusinessAddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBusinessAddress(value: String): Self = StObject.set(x, "businessAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBusinessAddressUndefined: Self = StObject.set(x, "businessAddress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClipFullPage(value: Boolean): Self = StObject.set(x, "clipFullPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusinessAddress(value: String): Self = this.set("businessAddress", value.asInstanceOf[js.Any])
+    def setClipFullPageUndefined: Self = StObject.set(x, "clipFullPage", js.undefined)
     
     @scala.inline
-    def deleteBusinessAddress: Self = this.set("businessAddress", js.undefined)
+    def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClipFullPage(value: Boolean): Self = this.set("clipFullPage", value.asInstanceOf[js.Any])
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def deleteClipFullPage: Self = this.set("clipFullPage", js.undefined)
+    def setDailyEmailLimit(value: Double): Self = StObject.set(x, "dailyEmailLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: String): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setDailyEmailLimitUndefined: Self = StObject.set(x, "dailyEmailLimit", js.undefined)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setDateAgreedToTermsOfService(value: Timestamp): Self = StObject.set(x, "dateAgreedToTermsOfService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDailyEmailLimit(value: Double): Self = this.set("dailyEmailLimit", value.asInstanceOf[js.Any])
+    def setDateAgreedToTermsOfServiceUndefined: Self = StObject.set(x, "dateAgreedToTermsOfService", js.undefined)
     
     @scala.inline
-    def deleteDailyEmailLimit: Self = this.set("dailyEmailLimit", js.undefined)
+    def setDefaultLatitude(value: Double): Self = StObject.set(x, "defaultLatitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateAgreedToTermsOfService(value: Timestamp): Self = this.set("dateAgreedToTermsOfService", value.asInstanceOf[js.Any])
+    def setDefaultLatitudeUndefined: Self = StObject.set(x, "defaultLatitude", js.undefined)
     
     @scala.inline
-    def deleteDateAgreedToTermsOfService: Self = this.set("dateAgreedToTermsOfService", js.undefined)
+    def setDefaultLocationName(value: String): Self = StObject.set(x, "defaultLocationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultLatitude(value: Double): Self = this.set("defaultLatitude", value.asInstanceOf[js.Any])
+    def setDefaultLocationNameUndefined: Self = StObject.set(x, "defaultLocationName", js.undefined)
     
     @scala.inline
-    def deleteDefaultLatitude: Self = this.set("defaultLatitude", js.undefined)
+    def setDefaultLongitude(value: Double): Self = StObject.set(x, "defaultLongitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultLocationName(value: String): Self = this.set("defaultLocationName", value.asInstanceOf[js.Any])
+    def setDefaultLongitudeUndefined: Self = StObject.set(x, "defaultLongitude", js.undefined)
     
     @scala.inline
-    def deleteDefaultLocationName: Self = this.set("defaultLocationName", js.undefined)
+    def setEducationalDiscount(value: Boolean): Self = StObject.set(x, "educationalDiscount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultLongitude(value: Double): Self = this.set("defaultLongitude", value.asInstanceOf[js.Any])
+    def setEducationalDiscountUndefined: Self = StObject.set(x, "educationalDiscount", js.undefined)
     
     @scala.inline
-    def deleteDefaultLongitude: Self = this.set("defaultLongitude", js.undefined)
+    def setEmailAddressLastConfirmed(value: Timestamp): Self = StObject.set(x, "emailAddressLastConfirmed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEducationalDiscount(value: Boolean): Self = this.set("educationalDiscount", value.asInstanceOf[js.Any])
+    def setEmailAddressLastConfirmedUndefined: Self = StObject.set(x, "emailAddressLastConfirmed", js.undefined)
     
     @scala.inline
-    def deleteEducationalDiscount: Self = this.set("educationalDiscount", js.undefined)
+    def setEmailOptOutDate(value: Timestamp): Self = StObject.set(x, "emailOptOutDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailAddressLastConfirmed(value: Timestamp): Self = this.set("emailAddressLastConfirmed", value.asInstanceOf[js.Any])
+    def setEmailOptOutDateUndefined: Self = StObject.set(x, "emailOptOutDate", js.undefined)
     
     @scala.inline
-    def deleteEmailAddressLastConfirmed: Self = this.set("emailAddressLastConfirmed", js.undefined)
+    def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailOptOutDate(value: Timestamp): Self = this.set("emailOptOutDate", value.asInstanceOf[js.Any])
+    def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
     
     @scala.inline
-    def deleteEmailOptOutDate: Self = this.set("emailOptOutDate", js.undefined)
+    def setHideSponsorBilling(value: Boolean): Self = StObject.set(x, "hideSponsorBilling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupName(value: String): Self = this.set("groupName", value.asInstanceOf[js.Any])
+    def setHideSponsorBillingUndefined: Self = StObject.set(x, "hideSponsorBilling", js.undefined)
     
     @scala.inline
-    def deleteGroupName: Self = this.set("groupName", js.undefined)
+    def setIncomingEmailAddress(value: String): Self = StObject.set(x, "incomingEmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideSponsorBilling(value: Boolean): Self = this.set("hideSponsorBilling", value.asInstanceOf[js.Any])
+    def setIncomingEmailAddressUndefined: Self = StObject.set(x, "incomingEmailAddress", js.undefined)
     
     @scala.inline
-    def deleteHideSponsorBilling: Self = this.set("hideSponsorBilling", js.undefined)
+    def setMaxReferrals(value: Double): Self = StObject.set(x, "maxReferrals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncomingEmailAddress(value: String): Self = this.set("incomingEmailAddress", value.asInstanceOf[js.Any])
+    def setMaxReferralsUndefined: Self = StObject.set(x, "maxReferrals", js.undefined)
     
     @scala.inline
-    def deleteIncomingEmailAddress: Self = this.set("incomingEmailAddress", js.undefined)
+    def setPartnerEmailOptInDate(value: Timestamp): Self = StObject.set(x, "partnerEmailOptInDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxReferrals(value: Double): Self = this.set("maxReferrals", value.asInstanceOf[js.Any])
+    def setPartnerEmailOptInDateUndefined: Self = StObject.set(x, "partnerEmailOptInDate", js.undefined)
     
     @scala.inline
-    def deleteMaxReferrals: Self = this.set("maxReferrals", js.undefined)
+    def setPasswordUpdated(value: Timestamp): Self = StObject.set(x, "passwordUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartnerEmailOptInDate(value: Timestamp): Self = this.set("partnerEmailOptInDate", value.asInstanceOf[js.Any])
+    def setPasswordUpdatedUndefined: Self = StObject.set(x, "passwordUpdated", js.undefined)
     
     @scala.inline
-    def deletePartnerEmailOptInDate: Self = this.set("partnerEmailOptInDate", js.undefined)
+    def setPreactivation(value: Boolean): Self = StObject.set(x, "preactivation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordUpdated(value: Timestamp): Self = this.set("passwordUpdated", value.asInstanceOf[js.Any])
+    def setPreactivationUndefined: Self = StObject.set(x, "preactivation", js.undefined)
     
     @scala.inline
-    def deletePasswordUpdated: Self = this.set("passwordUpdated", js.undefined)
+    def setPreferredCountry(value: String): Self = StObject.set(x, "preferredCountry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreactivation(value: Boolean): Self = this.set("preactivation", value.asInstanceOf[js.Any])
+    def setPreferredCountryUndefined: Self = StObject.set(x, "preferredCountry", js.undefined)
     
     @scala.inline
-    def deletePreactivation: Self = this.set("preactivation", js.undefined)
+    def setPreferredLanguage(value: String): Self = StObject.set(x, "preferredLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredCountry(value: String): Self = this.set("preferredCountry", value.asInstanceOf[js.Any])
+    def setPreferredLanguageUndefined: Self = StObject.set(x, "preferredLanguage", js.undefined)
     
     @scala.inline
-    def deletePreferredCountry: Self = this.set("preferredCountry", js.undefined)
+    def setRecentMailedAddresses(value: js.Array[String]): Self = StObject.set(x, "recentMailedAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredLanguage(value: String): Self = this.set("preferredLanguage", value.asInstanceOf[js.Any])
+    def setRecentMailedAddressesUndefined: Self = StObject.set(x, "recentMailedAddresses", js.undefined)
     
     @scala.inline
-    def deletePreferredLanguage: Self = this.set("preferredLanguage", js.undefined)
+    def setRecentMailedAddressesVarargs(value: String*): Self = StObject.set(x, "recentMailedAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setRecentMailedAddressesVarargs(value: String*): Self = this.set("recentMailedAddresses", js.Array(value :_*))
+    def setRecognitionLanguage(value: String): Self = StObject.set(x, "recognitionLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecentMailedAddresses(value: js.Array[String]): Self = this.set("recentMailedAddresses", value.asInstanceOf[js.Any])
+    def setRecognitionLanguageUndefined: Self = StObject.set(x, "recognitionLanguage", js.undefined)
     
     @scala.inline
-    def deleteRecentMailedAddresses: Self = this.set("recentMailedAddresses", js.undefined)
+    def setRefererCode(value: String): Self = StObject.set(x, "refererCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecognitionLanguage(value: String): Self = this.set("recognitionLanguage", value.asInstanceOf[js.Any])
+    def setRefererCodeUndefined: Self = StObject.set(x, "refererCode", js.undefined)
     
     @scala.inline
-    def deleteRecognitionLanguage: Self = this.set("recognitionLanguage", js.undefined)
+    def setReferralCount(value: Double): Self = StObject.set(x, "referralCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefererCode(value: String): Self = this.set("refererCode", value.asInstanceOf[js.Any])
+    def setReferralCountUndefined: Self = StObject.set(x, "referralCount", js.undefined)
     
     @scala.inline
-    def deleteRefererCode: Self = this.set("refererCode", js.undefined)
+    def setReferralProof(value: String): Self = StObject.set(x, "referralProof", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferralCount(value: Double): Self = this.set("referralCount", value.asInstanceOf[js.Any])
+    def setReferralProofUndefined: Self = StObject.set(x, "referralProof", js.undefined)
     
     @scala.inline
-    def deleteReferralCount: Self = this.set("referralCount", js.undefined)
+    def setReminderEmailConfig(value: ReminderEmailConfig): Self = StObject.set(x, "reminderEmailConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferralProof(value: String): Self = this.set("referralProof", value.asInstanceOf[js.Any])
+    def setReminderEmailConfigUndefined: Self = StObject.set(x, "reminderEmailConfig", js.undefined)
     
     @scala.inline
-    def deleteReferralProof: Self = this.set("referralProof", js.undefined)
+    def setSalesforcePushEnabled(value: Boolean): Self = StObject.set(x, "salesforcePushEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReminderEmailConfig(value: ReminderEmailConfig): Self = this.set("reminderEmailConfig", value.asInstanceOf[js.Any])
+    def setSalesforcePushEnabledUndefined: Self = StObject.set(x, "salesforcePushEnabled", js.undefined)
     
     @scala.inline
-    def deleteReminderEmailConfig: Self = this.set("reminderEmailConfig", js.undefined)
+    def setSentEmailCount(value: Double): Self = StObject.set(x, "sentEmailCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSalesforcePushEnabled(value: Boolean): Self = this.set("salesforcePushEnabled", value.asInstanceOf[js.Any])
+    def setSentEmailCountUndefined: Self = StObject.set(x, "sentEmailCount", js.undefined)
     
     @scala.inline
-    def deleteSalesforcePushEnabled: Self = this.set("salesforcePushEnabled", js.undefined)
+    def setSentEmailDate(value: Timestamp): Self = StObject.set(x, "sentEmailDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentEmailCount(value: Double): Self = this.set("sentEmailCount", value.asInstanceOf[js.Any])
+    def setSentEmailDateUndefined: Self = StObject.set(x, "sentEmailDate", js.undefined)
     
     @scala.inline
-    def deleteSentEmailCount: Self = this.set("sentEmailCount", js.undefined)
+    def setTaxExempt(value: Boolean): Self = StObject.set(x, "taxExempt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentEmailDate(value: Timestamp): Self = this.set("sentEmailDate", value.asInstanceOf[js.Any])
+    def setTaxExemptUndefined: Self = StObject.set(x, "taxExempt", js.undefined)
     
     @scala.inline
-    def deleteSentEmailDate: Self = this.set("sentEmailDate", js.undefined)
+    def setTwitterId(value: String): Self = StObject.set(x, "twitterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaxExempt(value: Boolean): Self = this.set("taxExempt", value.asInstanceOf[js.Any])
+    def setTwitterIdUndefined: Self = StObject.set(x, "twitterId", js.undefined)
     
     @scala.inline
-    def deleteTaxExempt: Self = this.set("taxExempt", js.undefined)
+    def setTwitterUserName(value: String): Self = StObject.set(x, "twitterUserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTwitterId(value: String): Self = this.set("twitterId", value.asInstanceOf[js.Any])
+    def setTwitterUserNameUndefined: Self = StObject.set(x, "twitterUserName", js.undefined)
     
     @scala.inline
-    def deleteTwitterId: Self = this.set("twitterId", js.undefined)
+    def setUseEmailAutoFiling(value: Boolean): Self = StObject.set(x, "useEmailAutoFiling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTwitterUserName(value: String): Self = this.set("twitterUserName", value.asInstanceOf[js.Any])
+    def setUseEmailAutoFilingUndefined: Self = StObject.set(x, "useEmailAutoFiling", js.undefined)
     
     @scala.inline
-    def deleteTwitterUserName: Self = this.set("twitterUserName", js.undefined)
+    def setViewedPromotions(value: js.Array[String]): Self = StObject.set(x, "viewedPromotions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseEmailAutoFiling(value: Boolean): Self = this.set("useEmailAutoFiling", value.asInstanceOf[js.Any])
+    def setViewedPromotionsUndefined: Self = StObject.set(x, "viewedPromotions", js.undefined)
     
     @scala.inline
-    def deleteUseEmailAutoFiling: Self = this.set("useEmailAutoFiling", js.undefined)
-    
-    @scala.inline
-    def setViewedPromotionsVarargs(value: String*): Self = this.set("viewedPromotions", js.Array(value :_*))
-    
-    @scala.inline
-    def setViewedPromotions(value: js.Array[String]): Self = this.set("viewedPromotions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewedPromotions: Self = this.set("viewedPromotions", js.undefined)
+    def setViewedPromotionsVarargs(value: String*): Self = StObject.set(x, "viewedPromotions", js.Array(value :_*))
   }
 }

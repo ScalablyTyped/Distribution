@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Object to represent a person.
   */
 @js.native
-trait SchemaPerson extends js.Object {
+trait SchemaPerson extends StObject {
   
   /**
     * The person&#39;s email addresses
@@ -47,57 +48,45 @@ object SchemaPerson {
   }
   
   @scala.inline
-  implicit class SchemaPersonOps[Self <: SchemaPerson] (val x: Self) extends AnyVal {
+  implicit class SchemaPersonMutableBuilder[Self <: SchemaPerson] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmailAddresses(value: js.Array[SchemaEmailAddress]): Self = StObject.set(x, "emailAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailAddressesUndefined: Self = StObject.set(x, "emailAddresses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmailAddressesVarargs(value: SchemaEmailAddress*): Self = StObject.set(x, "emailAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setEmailAddressesVarargs(value: SchemaEmailAddress*): Self = this.set("emailAddresses", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailAddresses(value: js.Array[SchemaEmailAddress]): Self = this.set("emailAddresses", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteEmailAddresses: Self = this.set("emailAddresses", js.undefined)
+    def setObfuscatedId(value: String): Self = StObject.set(x, "obfuscatedId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setObfuscatedIdUndefined: Self = StObject.set(x, "obfuscatedId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPersonNames(value: js.Array[SchemaName]): Self = StObject.set(x, "personNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObfuscatedId(value: String): Self = this.set("obfuscatedId", value.asInstanceOf[js.Any])
+    def setPersonNamesUndefined: Self = StObject.set(x, "personNames", js.undefined)
     
     @scala.inline
-    def deleteObfuscatedId: Self = this.set("obfuscatedId", js.undefined)
+    def setPersonNamesVarargs(value: SchemaName*): Self = StObject.set(x, "personNames", js.Array(value :_*))
     
     @scala.inline
-    def setPersonNamesVarargs(value: SchemaName*): Self = this.set("personNames", js.Array(value :_*))
+    def setPhotos(value: js.Array[SchemaPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersonNames(value: js.Array[SchemaName]): Self = this.set("personNames", value.asInstanceOf[js.Any])
+    def setPhotosUndefined: Self = StObject.set(x, "photos", js.undefined)
     
     @scala.inline
-    def deletePersonNames: Self = this.set("personNames", js.undefined)
-    
-    @scala.inline
-    def setPhotosVarargs(value: SchemaPhoto*): Self = this.set("photos", js.Array(value :_*))
-    
-    @scala.inline
-    def setPhotos(value: js.Array[SchemaPhoto]): Self = this.set("photos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhotos: Self = this.set("photos", js.undefined)
+    def setPhotosVarargs(value: SchemaPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
   }
 }

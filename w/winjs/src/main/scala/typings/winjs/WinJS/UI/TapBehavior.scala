@@ -1,17 +1,18 @@
 package typings.winjs.WinJS.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TapBehavior extends js.Object
+sealed trait TapBehavior extends StObject
 /**
   * Specifies how items in a ListView respond to the tap interaction.
   **/
 @JSGlobal("WinJS.UI.TapBehavior")
 @js.native
-object TapBehavior extends js.Object {
+object TapBehavior extends StObject {
   
   /**
     * The item is selected and invoked.

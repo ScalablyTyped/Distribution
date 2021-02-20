@@ -1,11 +1,12 @@
 package typings.knockback.Knockback
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Factory extends js.Object {
+trait Factory extends StObject {
   
   def addPathMapping(path: String, create_info: js.Any): js.Any = js.native
   
@@ -32,33 +33,21 @@ object Factory {
   }
   
   @scala.inline
-  implicit class FactoryOps[Self <: Factory] (val x: Self) extends AnyVal {
+  implicit class FactoryMutableBuilder[Self <: Factory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddPathMapping(value: (String, js.Any) => js.Any): Self = StObject.set(x, "addPathMapping", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddPathMappings(value: (js.Any, String) => js.Any): Self = StObject.set(x, "addPathMappings", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatorForPath(value: (js.Any, String) => js.Any): Self = StObject.set(x, "creatorForPath", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddPathMapping(value: (String, js.Any) => js.Any): Self = this.set("addPathMapping", js.Any.fromFunction2(value))
+    def setHasPath(value: String => Boolean): Self = StObject.set(x, "hasPath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddPathMappings(value: (js.Any, String) => js.Any): Self = this.set("addPathMappings", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setCreatorForPath(value: (js.Any, String) => js.Any): Self = this.set("creatorForPath", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setHasPath(value: String => Boolean): Self = this.set("hasPath", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHasPathMappings(value: (js.Any, String) => Boolean): Self = this.set("hasPathMappings", js.Any.fromFunction2(value))
+    def setHasPathMappings(value: (js.Any, String) => Boolean): Self = StObject.set(x, "hasPathMappings", js.Any.fromFunction2(value))
   }
 }

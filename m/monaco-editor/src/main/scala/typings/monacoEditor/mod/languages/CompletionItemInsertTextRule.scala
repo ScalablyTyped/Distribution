@@ -1,15 +1,15 @@
 package typings.monacoEditor.mod.languages
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CompletionItemInsertTextRule extends js.Object
+sealed trait CompletionItemInsertTextRule extends StObject
 @JSImport("monaco-editor", "languages.CompletionItemInsertTextRule")
 @js.native
-object CompletionItemInsertTextRule extends js.Object {
+object CompletionItemInsertTextRule extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CompletionItemInsertTextRule with Double] = js.native
@@ -19,8 +19,7 @@ object CompletionItemInsertTextRule extends js.Object {
     */
   @js.native
   sealed trait InsertAsSnippet extends CompletionItemInsertTextRule
-  /* 4 */ @js.native
-  object InsertAsSnippet extends TopLevel[InsertAsSnippet with Double]
+  /* 4 */ val InsertAsSnippet: typings.monacoEditor.mod.languages.CompletionItemInsertTextRule.InsertAsSnippet with Double = js.native
   
   /**
     * Adjust whitespace/indentation of multiline insert texts to
@@ -28,6 +27,5 @@ object CompletionItemInsertTextRule extends js.Object {
     */
   @js.native
   sealed trait KeepWhitespace extends CompletionItemInsertTextRule
-  /* 1 */ @js.native
-  object KeepWhitespace extends TopLevel[KeepWhitespace with Double]
+  /* 1 */ val KeepWhitespace: typings.monacoEditor.mod.languages.CompletionItemInsertTextRule.KeepWhitespace with Double = js.native
 }

@@ -2,6 +2,7 @@ package typings.stripe.mod.accounts
 
 import typings.stripe.anon.Accountholdername
 import typings.stripe.mod.IDataOptionsWithMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,42 +51,30 @@ object IAccountUpdateOptions {
   }
   
   @scala.inline
-  implicit class IAccountUpdateOptionsOps[Self <: IAccountUpdateOptions] (val x: Self) extends AnyVal {
+  implicit class IAccountUpdateOptionsMutableBuilder[Self <: IAccountUpdateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount_token(value: String): Self = StObject.set(x, "account_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccount_tokenUndefined: Self = StObject.set(x, "account_token", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompany(value: ICompanyCreateUpdateOptions): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccount_token(value: String): Self = this.set("account_token", value.asInstanceOf[js.Any])
+    def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
     
     @scala.inline
-    def deleteAccount_token: Self = this.set("account_token", js.undefined)
+    def setExternal_account(value: Accountholdername): Self = StObject.set(x, "external_account", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompany(value: ICompanyCreateUpdateOptions): Self = this.set("company", value.asInstanceOf[js.Any])
+    def setExternal_accountUndefined: Self = StObject.set(x, "external_account", js.undefined)
     
     @scala.inline
-    def deleteCompany: Self = this.set("company", js.undefined)
+    def setIndividual(value: IIndividualCreateUpdateOptions): Self = StObject.set(x, "individual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternal_account(value: Accountholdername): Self = this.set("external_account", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExternal_account: Self = this.set("external_account", js.undefined)
-    
-    @scala.inline
-    def setIndividual(value: IIndividualCreateUpdateOptions): Self = this.set("individual", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndividual: Self = this.set("individual", js.undefined)
+    def setIndividualUndefined: Self = StObject.set(x, "individual", js.undefined)
   }
 }

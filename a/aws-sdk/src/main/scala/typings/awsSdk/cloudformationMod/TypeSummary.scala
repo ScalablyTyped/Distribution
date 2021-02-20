@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeSummary extends js.Object {
+trait TypeSummary extends StObject {
   
   /**
     * The ID of the default version of the type. The default version is used when the type version is not specified. To set the default version of a type, use  SetTypeDefaultVersion . 
@@ -46,54 +47,42 @@ object TypeSummary {
   }
   
   @scala.inline
-  implicit class TypeSummaryOps[Self <: TypeSummary] (val x: Self) extends AnyVal {
+  implicit class TypeSummaryMutableBuilder[Self <: TypeSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultVersionId(value: TypeVersionId): Self = StObject.set(x, "DefaultVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultVersionIdUndefined: Self = StObject.set(x, "DefaultVersionId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultVersionId(value: TypeVersionId): Self = this.set("DefaultVersionId", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteDefaultVersionId: Self = this.set("DefaultVersionId", js.undefined)
+    def setLastUpdated(value: Timestamp): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setType(value: RegistryType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdated(value: Timestamp): Self = this.set("LastUpdated", value.asInstanceOf[js.Any])
+    def setTypeArn(value: TypeArn): Self = StObject.set(x, "TypeArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastUpdated: Self = this.set("LastUpdated", js.undefined)
+    def setTypeArnUndefined: Self = StObject.set(x, "TypeArn", js.undefined)
     
     @scala.inline
-    def setType(value: RegistryType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setTypeName(value: TypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
     
     @scala.inline
-    def setTypeArn(value: TypeArn): Self = this.set("TypeArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeArn: Self = this.set("TypeArn", js.undefined)
-    
-    @scala.inline
-    def setTypeName(value: TypeName): Self = this.set("TypeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeName: Self = this.set("TypeName", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -4,6 +4,7 @@ import typings.vegaTypings.autosizeMod.AutoSize
 import typings.vegaTypings.autosizeMod.AutoSizeType
 import typings.vegaTypings.vegaTypingsStrings.content
 import typings.vegaTypings.vegaTypingsStrings.padding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,33 +28,21 @@ object Contains {
   }
   
   @scala.inline
-  implicit class ContainsOps[Self <: Contains] (val x: Self) extends AnyVal {
+  implicit class ContainsMutableBuilder[Self <: Contains] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContains(value: content | padding): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: AutoSizeType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
     @scala.inline
-    def setContains(value: content | padding): Self = this.set("contains", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContains: Self = this.set("contains", js.undefined)
-    
-    @scala.inline
-    def setResize(value: Boolean): Self = this.set("resize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResize: Self = this.set("resize", js.undefined)
+    def setType(value: AutoSizeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

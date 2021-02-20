@@ -1,11 +1,12 @@
 package typings.braintreeWeb.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnrollmentId extends js.Object {
+trait EnrollmentId extends StObject {
   
   var card: js.Any = js.native
   
@@ -29,30 +30,18 @@ object EnrollmentId {
   }
   
   @scala.inline
-  implicit class EnrollmentIdOps[Self <: EnrollmentId] (val x: Self) extends AnyVal {
+  implicit class EnrollmentIdMutableBuilder[Self <: EnrollmentId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCard(value: js.Any): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnrollmentId(value: String): Self = StObject.set(x, "enrollmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostedFields(value: typings.braintreeWeb.hostedFieldsMod.HostedFields): Self = StObject.set(x, "hostedFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCard(value: js.Any): Self = this.set("card", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnrollmentId(value: String): Self = this.set("enrollmentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHostedFields(value: typings.braintreeWeb.hostedFieldsMod.HostedFields): Self = this.set("hostedFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSmsCode(value: String): Self = this.set("smsCode", value.asInstanceOf[js.Any])
+    def setSmsCode(value: String): Self = StObject.set(x, "smsCode", value.asInstanceOf[js.Any])
   }
 }

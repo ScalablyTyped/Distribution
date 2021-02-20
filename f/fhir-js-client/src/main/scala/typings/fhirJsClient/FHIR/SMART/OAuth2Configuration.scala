@@ -1,5 +1,6 @@
 package typings.fhirJsClient.FHIR.SMART
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * OAuth2 Configuration of the SMART on FHIR Server
   */
 @js.native
-trait OAuth2Configuration extends js.Object {
+trait OAuth2Configuration extends StObject {
   
   /**
     * Client or application specific settings provided on the FHIR server during the client/application registration.
@@ -44,48 +45,36 @@ object OAuth2Configuration {
   }
   
   @scala.inline
-  implicit class OAuth2ConfigurationOps[Self <: OAuth2Configuration] (val x: Self) extends AnyVal {
+  implicit class OAuth2ConfigurationMutableBuilder[Self <: OAuth2Configuration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient(value: OAuth2ClientSettings): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFake_token_response(value: js.Any): Self = StObject.set(x, "fake_token_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient(value: OAuth2ClientSettings): Self = this.set("client", value.asInstanceOf[js.Any])
+    def setFake_token_responseUndefined: Self = StObject.set(x, "fake_token_response", js.undefined)
     
     @scala.inline
-    def deleteClient: Self = this.set("client", js.undefined)
+    def setProvider(value: OAuth2Provider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFake_token_response(value: js.Any): Self = this.set("fake_token_response", value.asInstanceOf[js.Any])
+    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
     @scala.inline
-    def deleteFake_token_response: Self = this.set("fake_token_response", js.undefined)
+    def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvider(value: OAuth2Provider): Self = this.set("provider", value.asInstanceOf[js.Any])
+    def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
     
     @scala.inline
-    def deleteProvider: Self = this.set("provider", js.undefined)
+    def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse_type(value: String): Self = this.set("response_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponse_type: Self = this.set("response_type", js.undefined)
-    
-    @scala.inline
-    def setServer(value: String): Self = this.set("server", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServer: Self = this.set("server", js.undefined)
+    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Camera extends js.Object {
+trait Camera extends StObject {
   
   /** field of view in radians */
   var angle: AngleInRadians = js.native
@@ -37,45 +38,33 @@ object Camera {
   }
   
   @scala.inline
-  implicit class CameraOps[Self <: Camera] (val x: Self) extends AnyVal {
+  implicit class CameraMutableBuilder[Self <: Camera] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngle(value: AngleInRadians): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoa(value: Vector3): Self = StObject.set(x, "coa", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoaVarargs(value: Double*): Self = StObject.set(x, "coa", js.Array(value :_*))
     
     @scala.inline
-    def setAngle(value: AngleInRadians): Self = this.set("angle", value.asInstanceOf[js.Any])
+    def setEye(value: Vector3): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoaVarargs(value: Double*): Self = this.set("coa", js.Array(value :_*))
+    def setEyeVarargs(value: Double*): Self = StObject.set(x, "eye", js.Array(value :_*))
     
     @scala.inline
-    def setCoa(value: Vector3): Self = this.set("coa", value.asInstanceOf[js.Any])
+    def setFar(value: Double): Self = StObject.set(x, "far", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEyeVarargs(value: Double*): Self = this.set("eye", js.Array(value :_*))
+    def setNear(value: Double): Self = StObject.set(x, "near", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEye(value: Vector3): Self = this.set("eye", value.asInstanceOf[js.Any])
+    def setUp(value: Vector3): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFar(value: Double): Self = this.set("far", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNear(value: Double): Self = this.set("near", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpVarargs(value: Double*): Self = this.set("up", js.Array(value :_*))
-    
-    @scala.inline
-    def setUp(value: Vector3): Self = this.set("up", value.asInstanceOf[js.Any])
+    def setUpVarargs(value: Double*): Self = StObject.set(x, "up", js.Array(value :_*))
   }
 }

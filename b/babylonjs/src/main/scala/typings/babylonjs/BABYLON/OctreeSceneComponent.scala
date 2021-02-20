@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OctreeSceneComponent extends js.Object {
+trait OctreeSceneComponent extends StObject {
   
   var _tempRay: js.Any = js.native
   
@@ -90,51 +91,39 @@ object OctreeSceneComponent {
   }
   
   @scala.inline
-  implicit class OctreeSceneComponentOps[Self <: OctreeSceneComponent] (val x: Self) extends AnyVal {
+  implicit class OctreeSceneComponentMutableBuilder[Self <: OctreeSceneComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChecksIsEnabled(value: Boolean): Self = StObject.set(x, "checksIsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetActiveMeshCandidates(value: () => ISmartArrayLike[AbstractMesh]): Self = StObject.set(x, "getActiveMeshCandidates", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_tempRay(value: js.Any): Self = this.set("_tempRay", value.asInstanceOf[js.Any])
+    def setGetActiveSubMeshCandidates(value: AbstractMesh => ISmartArrayLike[SubMesh]): Self = StObject.set(x, "getActiveSubMeshCandidates", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChecksIsEnabled(value: Boolean): Self = this.set("checksIsEnabled", value.asInstanceOf[js.Any])
+    def setGetCollidingSubMeshCandidates(value: (AbstractMesh, Collider) => ISmartArrayLike[SubMesh]): Self = StObject.set(x, "getCollidingSubMeshCandidates", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setGetIntersectingSubMeshCandidates(value: (AbstractMesh, Ray) => ISmartArrayLike[SubMesh]): Self = StObject.set(x, "getIntersectingSubMeshCandidates", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetActiveMeshCandidates(value: () => ISmartArrayLike[AbstractMesh]): Self = this.set("getActiveMeshCandidates", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetActiveSubMeshCandidates(value: AbstractMesh => ISmartArrayLike[SubMesh]): Self = this.set("getActiveSubMeshCandidates", js.Any.fromFunction1(value))
+    def setRebuild(value: () => Unit): Self = StObject.set(x, "rebuild", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCollidingSubMeshCandidates(value: (AbstractMesh, Collider) => ISmartArrayLike[SubMesh]): Self = this.set("getCollidingSubMeshCandidates", js.Any.fromFunction2(value))
+    def setRegister(value: () => Unit): Self = StObject.set(x, "register", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIntersectingSubMeshCandidates(value: (AbstractMesh, Ray) => ISmartArrayLike[SubMesh]): Self = this.set("getIntersectingSubMeshCandidates", js.Any.fromFunction2(value))
+    def setScene(value: Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRebuild(value: () => Unit): Self = this.set("rebuild", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRegister(value: () => Unit): Self = this.set("register", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setScene(value: Scene): Self = this.set("scene", value.asInstanceOf[js.Any])
+    def set_tempRay(value: js.Any): Self = StObject.set(x, "_tempRay", value.asInstanceOf[js.Any])
   }
 }

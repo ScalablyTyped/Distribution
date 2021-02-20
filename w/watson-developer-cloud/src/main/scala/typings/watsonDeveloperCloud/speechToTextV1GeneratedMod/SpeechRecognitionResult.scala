@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** SpeechRecognitionResult. */
 @js.native
-trait SpeechRecognitionResult extends js.Object {
+trait SpeechRecognitionResult extends StObject {
   
   /** An array of alternative transcripts. The `alternatives` array can include additional requested output such as word confidence or timestamps. */
   var alternatives: js.Array[SpeechRecognitionAlternative] = js.native
@@ -29,42 +30,30 @@ object SpeechRecognitionResult {
   }
   
   @scala.inline
-  implicit class SpeechRecognitionResultOps[Self <: SpeechRecognitionResult] (val x: Self) extends AnyVal {
+  implicit class SpeechRecognitionResultMutableBuilder[Self <: SpeechRecognitionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternatives(value: js.Array[SpeechRecognitionAlternative]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternativesVarargs(value: SpeechRecognitionAlternative*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFinal_results(value: Boolean): Self = StObject.set(x, "final_results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternativesVarargs(value: SpeechRecognitionAlternative*): Self = this.set("alternatives", js.Array(value :_*))
+    def setKeywords_result(value: js.Object): Self = StObject.set(x, "keywords_result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternatives(value: js.Array[SpeechRecognitionAlternative]): Self = this.set("alternatives", value.asInstanceOf[js.Any])
+    def setKeywords_resultUndefined: Self = StObject.set(x, "keywords_result", js.undefined)
     
     @scala.inline
-    def setFinal_results(value: Boolean): Self = this.set("final_results", value.asInstanceOf[js.Any])
+    def setWord_alternatives(value: js.Array[WordAlternativeResults]): Self = StObject.set(x, "word_alternatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords_result(value: js.Object): Self = this.set("keywords_result", value.asInstanceOf[js.Any])
+    def setWord_alternativesUndefined: Self = StObject.set(x, "word_alternatives", js.undefined)
     
     @scala.inline
-    def deleteKeywords_result: Self = this.set("keywords_result", js.undefined)
-    
-    @scala.inline
-    def setWord_alternativesVarargs(value: WordAlternativeResults*): Self = this.set("word_alternatives", js.Array(value :_*))
-    
-    @scala.inline
-    def setWord_alternatives(value: js.Array[WordAlternativeResults]): Self = this.set("word_alternatives", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWord_alternatives: Self = this.set("word_alternatives", js.undefined)
+    def setWord_alternativesVarargs(value: WordAlternativeResults*): Self = StObject.set(x, "word_alternatives", js.Array(value :_*))
   }
 }

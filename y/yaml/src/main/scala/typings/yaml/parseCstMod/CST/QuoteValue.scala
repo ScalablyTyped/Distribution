@@ -3,6 +3,7 @@ package typings.yaml.parseCstMod.CST
 import typings.yaml.anon.Errors
 import typings.yaml.utilMod.Type.QUOTE_DOUBLE
 import typings.yaml.utilMod.Type.QUOTE_SINGLE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,27 +35,15 @@ object QuoteValue {
   }
   
   @scala.inline
-  implicit class QuoteValueOps[Self <: QuoteValue] (val x: Self) extends AnyVal {
+  implicit class QuoteValueMutableBuilder[Self <: QuoteValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStrValue(value: String | Errors): Self = StObject.set(x, "strValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStrValueNull: Self = StObject.set(x, "strValue", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: QUOTE_DOUBLE | QUOTE_SINGLE): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrValue(value: String | Errors): Self = this.set("strValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrValueNull: Self = this.set("strValue", null)
+    def setType(value: QUOTE_DOUBLE | QUOTE_SINGLE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

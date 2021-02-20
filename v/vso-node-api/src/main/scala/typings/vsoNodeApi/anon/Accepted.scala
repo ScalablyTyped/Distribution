@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Accepted extends js.Object {
+trait Accepted extends StObject {
   
   var accepted: scala.Double = js.native
   
@@ -22,27 +23,15 @@ object Accepted {
   }
   
   @scala.inline
-  implicit class AcceptedOps[Self <: Accepted] (val x: Self) extends AnyVal {
+  implicit class AcceptedMutableBuilder[Self <: Accepted] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccepted(value: scala.Double): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOpen(value: scala.Double): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccepted(value: scala.Double): Self = this.set("accepted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpen(value: scala.Double): Self = this.set("open", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRejected(value: scala.Double): Self = this.set("rejected", value.asInstanceOf[js.Any])
+    def setRejected(value: scala.Double): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
   }
 }

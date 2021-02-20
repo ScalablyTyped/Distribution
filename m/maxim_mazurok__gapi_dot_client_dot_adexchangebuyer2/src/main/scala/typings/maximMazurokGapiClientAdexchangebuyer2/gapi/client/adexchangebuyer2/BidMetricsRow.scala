@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BidMetricsRow extends js.Object {
+trait BidMetricsRow extends StObject {
   
   /** The number of bids that Ad Exchange received from the buyer. */
   var bids: js.UndefOr[MetricValue] = js.native
@@ -40,66 +41,54 @@ object BidMetricsRow {
   }
   
   @scala.inline
-  implicit class BidMetricsRowOps[Self <: BidMetricsRow] (val x: Self) extends AnyVal {
+  implicit class BidMetricsRowMutableBuilder[Self <: BidMetricsRow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBids(value: MetricValue): Self = StObject.set(x, "bids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBidsInAuction(value: MetricValue): Self = StObject.set(x, "bidsInAuction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBidsInAuctionUndefined: Self = StObject.set(x, "bidsInAuction", js.undefined)
     
     @scala.inline
-    def setBids(value: MetricValue): Self = this.set("bids", value.asInstanceOf[js.Any])
+    def setBidsUndefined: Self = StObject.set(x, "bids", js.undefined)
     
     @scala.inline
-    def deleteBids: Self = this.set("bids", js.undefined)
+    def setBilledImpressions(value: MetricValue): Self = StObject.set(x, "billedImpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBidsInAuction(value: MetricValue): Self = this.set("bidsInAuction", value.asInstanceOf[js.Any])
+    def setBilledImpressionsUndefined: Self = StObject.set(x, "billedImpressions", js.undefined)
     
     @scala.inline
-    def deleteBidsInAuction: Self = this.set("bidsInAuction", js.undefined)
+    def setImpressionsWon(value: MetricValue): Self = StObject.set(x, "impressionsWon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBilledImpressions(value: MetricValue): Self = this.set("billedImpressions", value.asInstanceOf[js.Any])
+    def setImpressionsWonUndefined: Self = StObject.set(x, "impressionsWon", js.undefined)
     
     @scala.inline
-    def deleteBilledImpressions: Self = this.set("billedImpressions", js.undefined)
+    def setMeasurableImpressions(value: MetricValue): Self = StObject.set(x, "measurableImpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpressionsWon(value: MetricValue): Self = this.set("impressionsWon", value.asInstanceOf[js.Any])
+    def setMeasurableImpressionsUndefined: Self = StObject.set(x, "measurableImpressions", js.undefined)
     
     @scala.inline
-    def deleteImpressionsWon: Self = this.set("impressionsWon", js.undefined)
+    def setReachedQueries(value: MetricValue): Self = StObject.set(x, "reachedQueries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasurableImpressions(value: MetricValue): Self = this.set("measurableImpressions", value.asInstanceOf[js.Any])
+    def setReachedQueriesUndefined: Self = StObject.set(x, "reachedQueries", js.undefined)
     
     @scala.inline
-    def deleteMeasurableImpressions: Self = this.set("measurableImpressions", js.undefined)
+    def setRowDimensions(value: RowDimensions): Self = StObject.set(x, "rowDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReachedQueries(value: MetricValue): Self = this.set("reachedQueries", value.asInstanceOf[js.Any])
+    def setRowDimensionsUndefined: Self = StObject.set(x, "rowDimensions", js.undefined)
     
     @scala.inline
-    def deleteReachedQueries: Self = this.set("reachedQueries", js.undefined)
+    def setViewableImpressions(value: MetricValue): Self = StObject.set(x, "viewableImpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowDimensions(value: RowDimensions): Self = this.set("rowDimensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowDimensions: Self = this.set("rowDimensions", js.undefined)
-    
-    @scala.inline
-    def setViewableImpressions(value: MetricValue): Self = this.set("viewableImpressions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewableImpressions: Self = this.set("viewableImpressions", js.undefined)
+    def setViewableImpressionsUndefined: Self = StObject.set(x, "viewableImpressions", js.undefined)
   }
 }

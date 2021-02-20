@@ -3,12 +3,13 @@ package typings.rcTable.interfaceMod
 import typings.rcTable.anon.Cell
 import typings.rcTable.anon.OnScroll
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableComponents[RecordType] extends js.Object {
+trait TableComponents[RecordType] extends StObject {
   
   var body: js.UndefOr[CustomizeScrollBody[RecordType] | Cell] = js.native
   
@@ -25,39 +26,27 @@ object TableComponents {
   }
   
   @scala.inline
-  implicit class TableComponentsOps[Self <: TableComponents[_], RecordType] (val x: Self with TableComponents[RecordType]) extends AnyVal {
+  implicit class TableComponentsMutableBuilder[Self <: TableComponents[_], RecordType] (val x: Self with TableComponents[RecordType]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: CustomizeScrollBody[RecordType] | Cell): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyFunction2(value: (/* data */ js.Array[RecordType], /* info */ OnScroll) => ReactNode): Self = StObject.set(x, "body", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def setBodyFunction2(value: (/* data */ js.Array[RecordType], /* info */ OnScroll) => ReactNode): Self = this.set("body", js.Any.fromFunction2(value))
+    def setHeader(value: Cell): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: CustomizeScrollBody[RecordType] | Cell): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setTable(value: CustomizeComponent): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: Cell): Self = this.set("header", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
-    
-    @scala.inline
-    def setTable(value: CustomizeComponent): Self = this.set("table", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTable: Self = this.set("table", js.undefined)
+    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

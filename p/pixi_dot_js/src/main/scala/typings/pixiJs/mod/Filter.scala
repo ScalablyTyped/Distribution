@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -152,10 +153,7 @@ class Filter ()
   def this(vertexSrc: String, fragmentSrc: js.UndefOr[scala.Nothing], uniforms: js.Any) = this()
   def this(vertexSrc: String, fragmentSrc: String, uniforms: js.Any) = this()
 }
-/* static members */
-@JSImport("pixi.js", "Filter")
-@js.native
-object Filter extends js.Object {
+object Filter {
   
   /**
     * The default fragment shader source
@@ -164,6 +162,9 @@ object Filter extends js.Object {
     * @type {string}
     * @constant
     */
+  /* static member */
+  @JSImport("pixi.js", "Filter.defaultFragmentSrc")
+  @js.native
   val defaultFragmentSrc: String = js.native
   
   /**
@@ -173,5 +174,8 @@ object Filter extends js.Object {
     * @type {string}
     * @constant
     */
+  /* static member */
+  @JSImport("pixi.js", "Filter.defaultVertexSrc")
+  @js.native
   val defaultVertexSrc: String = js.native
 }

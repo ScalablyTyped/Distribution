@@ -1,12 +1,13 @@
 package typings.devextreme.anon
 
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TotalValue extends js.Object {
+trait TotalValue extends StObject {
   
   var component: js.UndefOr[dxDataGrid] = js.native
   
@@ -29,54 +30,42 @@ object TotalValue {
   }
   
   @scala.inline
-  implicit class TotalValueOps[Self <: TotalValue] (val x: Self) extends AnyVal {
+  implicit class TotalValueMutableBuilder[Self <: TotalValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponent(value: dxDataGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupIndex(value: Double): Self = StObject.set(x, "groupIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponent(value: dxDataGrid): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setGroupIndexUndefined: Self = StObject.set(x, "groupIndex", js.undefined)
     
     @scala.inline
-    def deleteComponent: Self = this.set("component", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupIndex(value: Double): Self = this.set("groupIndex", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteGroupIndex: Self = this.set("groupIndex", js.undefined)
+    def setSummaryProcess(value: String): Self = StObject.set(x, "summaryProcess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSummaryProcessUndefined: Self = StObject.set(x, "summaryProcess", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTotalValue(value: js.Any): Self = StObject.set(x, "totalValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummaryProcess(value: String): Self = this.set("summaryProcess", value.asInstanceOf[js.Any])
+    def setTotalValueUndefined: Self = StObject.set(x, "totalValue", js.undefined)
     
     @scala.inline
-    def deleteSummaryProcess: Self = this.set("summaryProcess", js.undefined)
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalValue(value: js.Any): Self = this.set("totalValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalValue: Self = this.set("totalValue", js.undefined)
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

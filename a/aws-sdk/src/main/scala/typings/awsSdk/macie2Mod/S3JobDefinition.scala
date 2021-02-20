@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3JobDefinition extends js.Object {
+trait S3JobDefinition extends StObject {
   
   /**
     * An array of objects, one for each AWS account that owns buckets to analyze. Each object specifies the account ID for an account and one or more buckets to analyze for the account.
@@ -26,33 +27,21 @@ object S3JobDefinition {
   }
   
   @scala.inline
-  implicit class S3JobDefinitionOps[Self <: S3JobDefinition] (val x: Self) extends AnyVal {
+  implicit class S3JobDefinitionMutableBuilder[Self <: S3JobDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketDefinitions(value: listOfS3BucketDefinitionForJob): Self = StObject.set(x, "bucketDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketDefinitionsUndefined: Self = StObject.set(x, "bucketDefinitions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketDefinitionsVarargs(value: S3BucketDefinitionForJob*): Self = StObject.set(x, "bucketDefinitions", js.Array(value :_*))
     
     @scala.inline
-    def setBucketDefinitionsVarargs(value: S3BucketDefinitionForJob*): Self = this.set("bucketDefinitions", js.Array(value :_*))
+    def setScoping(value: Scoping): Self = StObject.set(x, "scoping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketDefinitions(value: listOfS3BucketDefinitionForJob): Self = this.set("bucketDefinitions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBucketDefinitions: Self = this.set("bucketDefinitions", js.undefined)
-    
-    @scala.inline
-    def setScoping(value: Scoping): Self = this.set("scoping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScoping: Self = this.set("scoping", js.undefined)
+    def setScopingUndefined: Self = StObject.set(x, "scoping", js.undefined)
   }
 }

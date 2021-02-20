@@ -1,13 +1,14 @@
 package typings.googleAdwordsScripts
 
 import typings.googleAppsScript.GoogleAppsScript.Spreadsheet.Sheet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Reports
 @js.native
-trait AdWordsReport extends js.Object {
+trait AdWordsReport extends StObject {
   
   def exportToSheet(sheet: Sheet): Unit = js.native
   
@@ -28,27 +29,15 @@ object AdWordsReport {
   }
   
   @scala.inline
-  implicit class AdWordsReportOps[Self <: AdWordsReport] (val x: Self) extends AnyVal {
+  implicit class AdWordsReportMutableBuilder[Self <: AdWordsReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportToSheet(value: Sheet => Unit): Self = StObject.set(x, "exportToSheet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetColumnHeader(value: String => AdWordsReportColumnHeader): Self = StObject.set(x, "getColumnHeader", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExportToSheet(value: Sheet => Unit): Self = this.set("exportToSheet", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetColumnHeader(value: String => AdWordsReportColumnHeader): Self = this.set("getColumnHeader", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRows(value: () => AdWordsReportRowIterator): Self = this.set("rows", js.Any.fromFunction0(value))
+    def setRows(value: () => AdWordsReportRowIterator): Self = StObject.set(x, "rows", js.Any.fromFunction0(value))
   }
 }

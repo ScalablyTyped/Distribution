@@ -1,11 +1,12 @@
 package typings.kafkaNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProducerStreamOptions extends js.Object {
+trait ProducerStreamOptions extends StObject {
   
   var highWaterMark: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object ProducerStreamOptions {
   }
   
   @scala.inline
-  implicit class ProducerStreamOptionsOps[Self <: ProducerStreamOptions] (val x: Self) extends AnyVal {
+  implicit class ProducerStreamOptionsMutableBuilder[Self <: ProducerStreamOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKafkaClient(value: KafkaClientOptions): Self = StObject.set(x, "kafkaClient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighWaterMark(value: Double): Self = this.set("highWaterMark", value.asInstanceOf[js.Any])
+    def setKafkaClientUndefined: Self = StObject.set(x, "kafkaClient", js.undefined)
     
     @scala.inline
-    def deleteHighWaterMark: Self = this.set("highWaterMark", js.undefined)
+    def setProducer(value: ProducerOptions): Self = StObject.set(x, "producer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKafkaClient(value: KafkaClientOptions): Self = this.set("kafkaClient", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKafkaClient: Self = this.set("kafkaClient", js.undefined)
-    
-    @scala.inline
-    def setProducer(value: ProducerOptions): Self = this.set("producer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProducer: Self = this.set("producer", js.undefined)
+    def setProducerUndefined: Self = StObject.set(x, "producer", js.undefined)
   }
 }

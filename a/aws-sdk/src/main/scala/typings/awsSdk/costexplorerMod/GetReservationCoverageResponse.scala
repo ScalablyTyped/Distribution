@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetReservationCoverageResponse extends js.Object {
+trait GetReservationCoverageResponse extends StObject {
   
   /**
     * The amount of time that your reservations covered.
@@ -31,36 +32,24 @@ object GetReservationCoverageResponse {
   }
   
   @scala.inline
-  implicit class GetReservationCoverageResponseOps[Self <: GetReservationCoverageResponse] (val x: Self) extends AnyVal {
+  implicit class GetReservationCoverageResponseMutableBuilder[Self <: GetReservationCoverageResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoveragesByTime(value: CoveragesByTime): Self = StObject.set(x, "CoveragesByTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoveragesByTimeVarargs(value: CoverageByTime*): Self = StObject.set(x, "CoveragesByTime", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoveragesByTimeVarargs(value: CoverageByTime*): Self = this.set("CoveragesByTime", js.Array(value :_*))
+    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
     @scala.inline
-    def setCoveragesByTime(value: CoveragesByTime): Self = this.set("CoveragesByTime", value.asInstanceOf[js.Any])
+    def setTotal(value: Coverage): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
-    
-    @scala.inline
-    def setTotal(value: Coverage): Self = this.set("Total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal: Self = this.set("Total", js.undefined)
+    def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
   }
 }

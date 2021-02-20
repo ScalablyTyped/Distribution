@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,36 +71,24 @@ object ArcGISImageServiceCapabilitiesQuery {
   }
   
   @scala.inline
-  implicit class ArcGISImageServiceCapabilitiesQueryOps[Self <: ArcGISImageServiceCapabilitiesQuery] (val x: Self) extends AnyVal {
+  implicit class ArcGISImageServiceCapabilitiesQueryMutableBuilder[Self <: ArcGISImageServiceCapabilitiesQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxRecordCount(value: Unit): Self = StObject.set(x, "maxRecordCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSupportsDistinct(value: Unit): Self = StObject.set(x, "supportsDistinct", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSupportsOrderBy(value: Unit): Self = StObject.set(x, "supportsOrderBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRecordCount(value: Unit): Self = this.set("maxRecordCount", value.asInstanceOf[js.Any])
+    def setSupportsPagination(value: Unit): Self = StObject.set(x, "supportsPagination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsDistinct(value: Unit): Self = this.set("supportsDistinct", value.asInstanceOf[js.Any])
+    def setSupportsStandardizedQueriesOnly(value: Unit): Self = StObject.set(x, "supportsStandardizedQueriesOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsOrderBy(value: Unit): Self = this.set("supportsOrderBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsPagination(value: Unit): Self = this.set("supportsPagination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsStandardizedQueriesOnly(value: Unit): Self = this.set("supportsStandardizedQueriesOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsStatistics(value: Unit): Self = this.set("supportsStatistics", value.asInstanceOf[js.Any])
+    def setSupportsStatistics(value: Unit): Self = StObject.set(x, "supportsStatistics", value.asInstanceOf[js.Any])
   }
 }

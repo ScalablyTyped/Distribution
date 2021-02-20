@@ -1,25 +1,27 @@
 package typings.antlr4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antlr4", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("antlr4", "CommonToken")
   @js.native
   class CommonToken protected ()
     extends typings.antlr4.tokenMod.CommonToken {
     def this(source: js.Any, `type`: js.Any, channel: js.Any, start: Double, stop: Double) = this()
   }
   /* static members */
-  @js.native
-  object CommonToken extends js.Object {
+  object CommonToken {
     
+    @JSImport("antlr4", "CommonToken.EMPTY_SOURCE")
+    @js.native
     val EMPTY_SOURCE: js.Any = js.native
   }
   
+  @JSImport("antlr4", "CommonTokenStream")
   @js.native
   class CommonTokenStream protected ()
     extends typings.antlr4.commonTokenStreamMod.CommonTokenStream {
@@ -27,6 +29,7 @@ object mod extends js.Object {
     def this(lexer: typings.antlr4.lexerMod.Lexer, channel: js.Any) = this()
   }
   
+  @JSImport("antlr4", "InputStream")
   @js.native
   class InputStream protected ()
     extends typings.antlr4.inputStreamMod.InputStream {
@@ -34,75 +37,105 @@ object mod extends js.Object {
     def this(data: String, decodeToUnicodeCodePoints: Boolean) = this()
   }
   
+  @JSImport("antlr4", "Interval")
   @js.native
   class Interval protected ()
     extends typings.antlr4.intervalSetMod.Interval {
     def this(start: Double, stop: Double) = this()
   }
   
+  @JSImport("antlr4", "IntervalSet")
   @js.native
   class IntervalSet ()
     extends typings.antlr4.intervalSetMod.IntervalSet
   
+  @JSImport("antlr4", "Lexer")
   @js.native
   class Lexer ()
     extends typings.antlr4.lexerMod.Lexer
   /* static members */
-  @js.native
-  object Lexer extends js.Object {
+  object Lexer {
     
+    @JSImport("antlr4", "Lexer.DEFAULT_MODE")
+    @js.native
     val DEFAULT_MODE: Double = js.native
     
+    @JSImport("antlr4", "Lexer.DEFAULT_TOKEN_CHANNEL")
+    @js.native
     val DEFAULT_TOKEN_CHANNEL: js.Any = js.native
     
+    @JSImport("antlr4", "Lexer.HIDDEN")
+    @js.native
     val HIDDEN: js.Any = js.native
     
+    @JSImport("antlr4", "Lexer.MAX_CHAR_VALUE")
+    @js.native
     val MAX_CHAR_VALUE: Double = js.native
     
+    @JSImport("antlr4", "Lexer.MIN_CHAR_VALUE")
+    @js.native
     val MIN_CHAR_VALUE: Double = js.native
     
+    @JSImport("antlr4", "Lexer.MORE")
+    @js.native
     val MORE: Double = js.native
     
+    @JSImport("antlr4", "Lexer.SKIP")
+    @js.native
     val SKIP: Double = js.native
   }
   
+  @JSImport("antlr4", "Parser")
   @js.native
   class Parser protected ()
     extends typings.antlr4.parserMod.Parser {
     def this(input: typings.antlr4.commonTokenStreamMod.CommonTokenStream) = this()
   }
   
+  @JSImport("antlr4", "ParserRuleContext")
   @js.native
   class ParserRuleContext protected ()
     extends typings.antlr4.parserRuleContextMod.ParserRuleContext {
     def this(parent: js.Any, invokingState: Double) = this()
   }
   /* static members */
-  @js.native
-  object ParserRuleContext extends js.Object {
+  object ParserRuleContext {
     
+    @JSImport("antlr4", "ParserRuleContext.EMPTY")
+    @js.native
     val EMPTY: typings.antlr4.parserRuleContextMod.ParserRuleContext = js.native
   }
   
+  @JSImport("antlr4", "Recognizer")
   @js.native
   class Recognizer ()
     extends typings.antlr4.recognizerMod.Recognizer
   
+  @JSImport("antlr4", "Token")
   @js.native
   class Token ()
     extends typings.antlr4.tokenMod.Token
   /* static members */
-  @js.native
-  object Token extends js.Object {
+  object Token {
     
+    @JSImport("antlr4", "Token.EOF")
+    @js.native
     val EOF: Double = js.native
     
+    @JSImport("antlr4", "Token.EPSILON")
+    @js.native
     val EPSILON: Double = js.native
     
+    @JSImport("antlr4", "Token.HIDDEN_CHANNEL")
+    @js.native
     val HIDDEN_CHANNEL: Double = js.native
     
+    @JSImport("antlr4", "Token.INVALID_TYPE")
+    @js.native
     val INVALID_TYPE: Double = js.native
     
+    @JSImport("antlr4", "Token.MIN_USER_TOKEN_TYPE")
+    @js.native
     val MIN_USER_TOKEN_TYPE: Double = js.native
   }
   

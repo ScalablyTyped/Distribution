@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NFSFileShareDefaults extends js.Object {
+trait NFSFileShareDefaults extends StObject {
   
   /**
     * The Unix directory mode in the form "nnnn". For example, 0666 represents the default access mode for all directories inside the file share. The default value is 0777.
@@ -36,42 +37,30 @@ object NFSFileShareDefaults {
   }
   
   @scala.inline
-  implicit class NFSFileShareDefaultsOps[Self <: NFSFileShareDefaults] (val x: Self) extends AnyVal {
+  implicit class NFSFileShareDefaultsMutableBuilder[Self <: NFSFileShareDefaults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectoryMode(value: PermissionMode): Self = StObject.set(x, "DirectoryMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectoryModeUndefined: Self = StObject.set(x, "DirectoryMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileMode(value: PermissionMode): Self = StObject.set(x, "FileMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryMode(value: PermissionMode): Self = this.set("DirectoryMode", value.asInstanceOf[js.Any])
+    def setFileModeUndefined: Self = StObject.set(x, "FileMode", js.undefined)
     
     @scala.inline
-    def deleteDirectoryMode: Self = this.set("DirectoryMode", js.undefined)
+    def setGroupId(value: PermissionId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileMode(value: PermissionMode): Self = this.set("FileMode", value.asInstanceOf[js.Any])
+    def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
     
     @scala.inline
-    def deleteFileMode: Self = this.set("FileMode", js.undefined)
+    def setOwnerId(value: PermissionId): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupId(value: PermissionId): Self = this.set("GroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupId: Self = this.set("GroupId", js.undefined)
-    
-    @scala.inline
-    def setOwnerId(value: PermissionId): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
   }
 }

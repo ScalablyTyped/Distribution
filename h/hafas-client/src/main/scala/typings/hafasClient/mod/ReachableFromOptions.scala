@@ -1,12 +1,13 @@
 package typings.hafasClient.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReachableFromOptions extends js.Object {
+trait ReachableFromOptions extends StObject {
   
   /**
     * parse & expose entrances of stops/stations?
@@ -53,54 +54,42 @@ object ReachableFromOptions {
   }
   
   @scala.inline
-  implicit class ReachableFromOptionsOps[Self <: ReachableFromOptions] (val x: Self) extends AnyVal {
+  implicit class ReachableFromOptionsMutableBuilder[Self <: ReachableFromOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntrances(value: Boolean): Self = StObject.set(x, "entrances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntrancesUndefined: Self = StObject.set(x, "entrances", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntrances(value: Boolean): Self = this.set("entrances", value.asInstanceOf[js.Any])
+    def setMaxDurationUndefined: Self = StObject.set(x, "maxDuration", js.undefined)
     
     @scala.inline
-    def deleteEntrances: Self = this.set("entrances", js.undefined)
+    def setMaxTransfers(value: Double): Self = StObject.set(x, "maxTransfers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDuration(value: Double): Self = this.set("maxDuration", value.asInstanceOf[js.Any])
+    def setMaxTransfersUndefined: Self = StObject.set(x, "maxTransfers", js.undefined)
     
     @scala.inline
-    def deleteMaxDuration: Self = this.set("maxDuration", js.undefined)
+    def setProducts(value: Products): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTransfers(value: Double): Self = this.set("maxTransfers", value.asInstanceOf[js.Any])
+    def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
     
     @scala.inline
-    def deleteMaxTransfers: Self = this.set("maxTransfers", js.undefined)
+    def setSubStops(value: Boolean): Self = StObject.set(x, "subStops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProducts(value: Products): Self = this.set("products", value.asInstanceOf[js.Any])
+    def setSubStopsUndefined: Self = StObject.set(x, "subStops", js.undefined)
     
     @scala.inline
-    def deleteProducts: Self = this.set("products", js.undefined)
+    def setWhen(value: Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubStops(value: Boolean): Self = this.set("subStops", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubStops: Self = this.set("subStops", js.undefined)
-    
-    @scala.inline
-    def setWhen(value: Date): Self = this.set("when", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhen: Self = this.set("when", js.undefined)
+    def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.jqueryPjax
 
 import typings.jquery.JQuery.AjaxSettings
 import typings.std.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,69 +63,57 @@ object PjaxSettings {
   }
   
   @scala.inline
-  implicit class PjaxSettingsOps[Self <: PjaxSettings] (val x: Self) extends AnyVal {
+  implicit class PjaxSettingsMutableBuilder[Self <: PjaxSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setFragmentUndefined: Self = StObject.set(x, "fragment", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setMaxCacheLength(value: Double): Self = StObject.set(x, "maxCacheLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragment(value: String): Self = this.set("fragment", value.asInstanceOf[js.Any])
+    def setMaxCacheLengthUndefined: Self = StObject.set(x, "maxCacheLength", js.undefined)
     
     @scala.inline
-    def deleteFragment: Self = this.set("fragment", js.undefined)
+    def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCacheLength(value: Double): Self = this.set("maxCacheLength", value.asInstanceOf[js.Any])
+    def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
     
     @scala.inline
-    def deleteMaxCacheLength: Self = this.set("maxCacheLength", js.undefined)
+    def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPush(value: Boolean): Self = this.set("push", value.asInstanceOf[js.Any])
+    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
     @scala.inline
-    def deletePush: Self = this.set("push", js.undefined)
+    def setScrollTo(value: Double | Boolean): Self = StObject.set(x, "scrollTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplace(value: Boolean): Self = this.set("replace", value.asInstanceOf[js.Any])
+    def setScrollToUndefined: Self = StObject.set(x, "scrollTo", js.undefined)
     
     @scala.inline
-    def deleteReplace: Self = this.set("replace", js.undefined)
+    def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollTo(value: Double | Boolean): Self = this.set("scrollTo", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deleteScrollTo: Self = this.set("scrollTo", js.undefined)
+    def setVersion(value: String | js.Function0[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: EventTarget): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setVersionFunction0(value: () => String): Self = StObject.set(x, "version", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
-    
-    @scala.inline
-    def setVersionFunction0(value: () => String): Self = this.set("version", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setVersion(value: String | js.Function0[String]): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AgentPreview extends js.Object {
+trait AgentPreview extends StObject {
   
   /**
     * The health status of the Amazon Inspector Agent.
@@ -56,63 +57,51 @@ object AgentPreview {
   }
   
   @scala.inline
-  implicit class AgentPreviewOps[Self <: AgentPreview] (val x: Self) extends AnyVal {
+  implicit class AgentPreviewMutableBuilder[Self <: AgentPreview] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentHealth(value: AgentHealth): Self = StObject.set(x, "agentHealth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentHealthUndefined: Self = StObject.set(x, "agentHealth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgentId(value: AgentId): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentId(value: AgentId): Self = this.set("agentId", value.asInstanceOf[js.Any])
+    def setAgentVersion(value: AgentVersion): Self = StObject.set(x, "agentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentHealth(value: AgentHealth): Self = this.set("agentHealth", value.asInstanceOf[js.Any])
+    def setAgentVersionUndefined: Self = StObject.set(x, "agentVersion", js.undefined)
     
     @scala.inline
-    def deleteAgentHealth: Self = this.set("agentHealth", js.undefined)
+    def setAutoScalingGroup(value: AutoScalingGroup): Self = StObject.set(x, "autoScalingGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentVersion(value: AgentVersion): Self = this.set("agentVersion", value.asInstanceOf[js.Any])
+    def setAutoScalingGroupUndefined: Self = StObject.set(x, "autoScalingGroup", js.undefined)
     
     @scala.inline
-    def deleteAgentVersion: Self = this.set("agentVersion", js.undefined)
+    def setHostname(value: Hostname): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScalingGroup(value: AutoScalingGroup): Self = this.set("autoScalingGroup", value.asInstanceOf[js.Any])
+    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
     @scala.inline
-    def deleteAutoScalingGroup: Self = this.set("autoScalingGroup", js.undefined)
+    def setIpv4Address(value: Ipv4Address): Self = StObject.set(x, "ipv4Address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostname(value: Hostname): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    def setIpv4AddressUndefined: Self = StObject.set(x, "ipv4Address", js.undefined)
     
     @scala.inline
-    def deleteHostname: Self = this.set("hostname", js.undefined)
+    def setKernelVersion(value: KernelVersion): Self = StObject.set(x, "kernelVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpv4Address(value: Ipv4Address): Self = this.set("ipv4Address", value.asInstanceOf[js.Any])
+    def setKernelVersionUndefined: Self = StObject.set(x, "kernelVersion", js.undefined)
     
     @scala.inline
-    def deleteIpv4Address: Self = this.set("ipv4Address", js.undefined)
+    def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKernelVersion(value: KernelVersion): Self = this.set("kernelVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKernelVersion: Self = this.set("kernelVersion", js.undefined)
-    
-    @scala.inline
-    def setOperatingSystem(value: OperatingSystem): Self = this.set("operatingSystem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperatingSystem: Self = this.set("operatingSystem", js.undefined)
+    def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
   }
 }

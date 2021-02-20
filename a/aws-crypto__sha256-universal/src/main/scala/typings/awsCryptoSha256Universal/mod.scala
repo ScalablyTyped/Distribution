@@ -5,14 +5,14 @@ import typings.awsCryptoSha256Universal.awsCryptoSha256UniversalStrings.latin1
 import typings.awsCryptoSha256Universal.awsCryptoSha256UniversalStrings.utf8
 import typings.awsSdkTypes.cryptoMod.Hash
 import typings.awsSdkTypes.cryptoMod.SourceData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-crypto/sha256-universal", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@aws-crypto/sha256-universal", "Sha256")
   @js.native
   class Sha256 () extends Hash {
     def this(secret: SourceData) = this()

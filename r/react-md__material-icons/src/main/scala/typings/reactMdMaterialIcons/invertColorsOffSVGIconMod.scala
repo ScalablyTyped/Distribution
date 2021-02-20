@@ -4,13 +4,14 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdIcon.svgiconMod.SVGIconProps
 import typings.std.SVGSVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/material-icons/types/InvertColorsOffSVGIcon", JSImport.Namespace)
-@js.native
-object invertColorsOffSVGIconMod extends js.Object {
+object invertColorsOffSVGIconMod {
   
+  @JSImport("@react-md/material-icons/types/InvertColorsOffSVGIcon", "InvertColorsOffSVGIcon")
+  @js.native
   val InvertColorsOffSVGIcon: ForwardRefExoticComponent[SVGIconProps with RefAttributes[SVGSVGElement]] = js.native
 }

@@ -1,11 +1,12 @@
 package typings.protractor.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JvmArgs extends js.Object {
+trait JvmArgs extends StObject {
   
   /**
     * Additional command line options to pass to selenium. For example,
@@ -36,39 +37,27 @@ object JvmArgs {
   }
   
   @scala.inline
-  implicit class JvmArgsOps[Self <: JvmArgs] (val x: Self) extends AnyVal {
+  implicit class JvmArgsMutableBuilder[Self <: JvmArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJvmArgs(value: js.Array[String]): Self = StObject.set(x, "jvmArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: js.Any): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setJvmArgsUndefined: Self = StObject.set(x, "jvmArgs", js.undefined)
     
     @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
+    def setJvmArgsVarargs(value: String*): Self = StObject.set(x, "jvmArgs", js.Array(value :_*))
     
     @scala.inline
-    def setJvmArgsVarargs(value: String*): Self = this.set("jvmArgs", js.Array(value :_*))
+    def setPort(value: js.Any): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJvmArgs(value: js.Array[String]): Self = this.set("jvmArgs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJvmArgs: Self = this.set("jvmArgs", js.undefined)
-    
-    @scala.inline
-    def setPort(value: js.Any): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

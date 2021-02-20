@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowedNodeTypeModificationsMessage extends js.Object {
+trait AllowedNodeTypeModificationsMessage extends StObject {
   
   /**
     * A string list, each element of which specifies a cache node type which you can use to scale your cluster or replication group. When scaling down a Redis cluster or replication group using ModifyCacheCluster or ModifyReplicationGroup, use a value from this list for the CacheNodeType parameter. 
@@ -26,36 +27,24 @@ object AllowedNodeTypeModificationsMessage {
   }
   
   @scala.inline
-  implicit class AllowedNodeTypeModificationsMessageOps[Self <: AllowedNodeTypeModificationsMessage] (val x: Self) extends AnyVal {
+  implicit class AllowedNodeTypeModificationsMessageMutableBuilder[Self <: AllowedNodeTypeModificationsMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScaleDownModifications(value: NodeTypeList): Self = StObject.set(x, "ScaleDownModifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScaleDownModificationsUndefined: Self = StObject.set(x, "ScaleDownModifications", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScaleDownModificationsVarargs(value: String*): Self = StObject.set(x, "ScaleDownModifications", js.Array(value :_*))
     
     @scala.inline
-    def setScaleDownModificationsVarargs(value: String*): Self = this.set("ScaleDownModifications", js.Array(value :_*))
+    def setScaleUpModifications(value: NodeTypeList): Self = StObject.set(x, "ScaleUpModifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleDownModifications(value: NodeTypeList): Self = this.set("ScaleDownModifications", value.asInstanceOf[js.Any])
+    def setScaleUpModificationsUndefined: Self = StObject.set(x, "ScaleUpModifications", js.undefined)
     
     @scala.inline
-    def deleteScaleDownModifications: Self = this.set("ScaleDownModifications", js.undefined)
-    
-    @scala.inline
-    def setScaleUpModificationsVarargs(value: String*): Self = this.set("ScaleUpModifications", js.Array(value :_*))
-    
-    @scala.inline
-    def setScaleUpModifications(value: NodeTypeList): Self = this.set("ScaleUpModifications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScaleUpModifications: Self = this.set("ScaleUpModifications", js.undefined)
+    def setScaleUpModificationsVarargs(value: String*): Self = StObject.set(x, "ScaleUpModifications", js.Array(value :_*))
   }
 }

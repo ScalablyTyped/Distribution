@@ -1,12 +1,13 @@
 package typings.serverless.anon
 
 import typings.serverless.pluginMod.VariableResolver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsDisabledAtPrepopulation extends js.Object {
+trait IsDisabledAtPrepopulation extends StObject {
   
   var isDisabledAtPrepopulation: js.UndefOr[Boolean] = js.native
   

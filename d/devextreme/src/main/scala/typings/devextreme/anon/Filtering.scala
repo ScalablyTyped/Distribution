@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Filtering extends js.Object {
+trait Filtering extends StObject {
   
   var filtering: js.UndefOr[Boolean] = js.native
   
@@ -28,54 +29,42 @@ object Filtering {
   }
   
   @scala.inline
-  implicit class FilteringOps[Self <: Filtering] (val x: Self) extends AnyVal {
+  implicit class FilteringMutableBuilder[Self <: Filtering] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFiltering(value: Boolean): Self = StObject.set(x, "filtering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilteringUndefined: Self = StObject.set(x, "filtering", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupPaging(value: Boolean): Self = StObject.set(x, "groupPaging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiltering(value: Boolean): Self = this.set("filtering", value.asInstanceOf[js.Any])
+    def setGroupPagingUndefined: Self = StObject.set(x, "groupPaging", js.undefined)
     
     @scala.inline
-    def deleteFiltering: Self = this.set("filtering", js.undefined)
+    def setGrouping(value: Boolean): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupPaging(value: Boolean): Self = this.set("groupPaging", value.asInstanceOf[js.Any])
+    def setGroupingUndefined: Self = StObject.set(x, "grouping", js.undefined)
     
     @scala.inline
-    def deleteGroupPaging: Self = this.set("groupPaging", js.undefined)
+    def setPaging(value: Boolean): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrouping(value: Boolean): Self = this.set("grouping", value.asInstanceOf[js.Any])
+    def setPagingUndefined: Self = StObject.set(x, "paging", js.undefined)
     
     @scala.inline
-    def deleteGrouping: Self = this.set("grouping", js.undefined)
+    def setSorting(value: Boolean): Self = StObject.set(x, "sorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaging(value: Boolean): Self = this.set("paging", value.asInstanceOf[js.Any])
+    def setSortingUndefined: Self = StObject.set(x, "sorting", js.undefined)
     
     @scala.inline
-    def deletePaging: Self = this.set("paging", js.undefined)
+    def setSummary(value: Boolean): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSorting(value: Boolean): Self = this.set("sorting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSorting: Self = this.set("sorting", js.undefined)
-    
-    @scala.inline
-    def setSummary(value: Boolean): Self = this.set("summary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummary: Self = this.set("summary", js.undefined)
+    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

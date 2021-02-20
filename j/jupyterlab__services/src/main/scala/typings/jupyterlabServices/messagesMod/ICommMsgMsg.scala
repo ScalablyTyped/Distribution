@@ -5,6 +5,7 @@ import typings.jupyterlabServices.jupyterlabServicesStrings.comm_msg
 import typings.jupyterlabServices.jupyterlabServicesStrings.iopub
 import typings.jupyterlabServices.jupyterlabServicesStrings.shell
 import typings.luminoCoreutils.jsonMod.JSONObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,24 +34,12 @@ object ICommMsgMsg {
   }
   
   @scala.inline
-  implicit class ICommMsgMsgOps[Self <: ICommMsgMsg[_], T /* <: iopub | shell */] (val x: Self with ICommMsgMsg[T]) extends AnyVal {
+  implicit class ICommMsgMsgMutableBuilder[Self <: ICommMsgMsg[_], T /* <: iopub | shell */] (val x: Self with ICommMsgMsg[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel(value: T): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChannel(value: T): Self = this.set("channel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContent(value: Commid): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setContent(value: Commid): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

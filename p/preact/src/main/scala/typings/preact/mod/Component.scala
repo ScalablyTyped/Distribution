@@ -4,6 +4,7 @@ import typings.std.Element
 import typings.std.Partial
 import typings.std.Pick
 import typings.std.Text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,18 +77,39 @@ abstract class Component[P, S] () extends AnyComponent[P, S] {
   
   var state: S = js.native
 }
-/* static members */
-@JSImport("preact", "Component")
-@js.native
-object Component extends js.Object {
+object Component {
   
-  var contextType: js.UndefOr[Context[_]] = js.native
+  @JSImport("preact", "Component")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var defaultProps: js.UndefOr[js.Any] = js.native
+  /* static member */
+  @JSImport("preact", "Component.contextType")
+  @js.native
+  def contextType: js.UndefOr[Context[js.Any]] = js.native
+  @scala.inline
+  def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
   
-  var displayName: js.UndefOr[String] = js.native
+  /* static member */
+  @JSImport("preact", "Component.defaultProps")
+  @js.native
+  def defaultProps: js.UndefOr[js.Any] = js.native
+  @scala.inline
+  def defaultProps_=(x: js.UndefOr[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
-  var getDerivedStateFromError: js.UndefOr[js.Function1[/* error */ js.Any, js.Object | Null]] = js.native
+  /* static member */
+  @JSImport("preact", "Component.displayName")
+  @js.native
+  def displayName: js.UndefOr[String] = js.native
+  @scala.inline
+  def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("preact", "Component.getDerivedStateFromError")
+  @js.native
+  def getDerivedStateFromError: js.UndefOr[js.Function1[/* error */ js.Any, js.Object | Null]] = js.native
+  @scala.inline
+  def getDerivedStateFromError_=(x: js.UndefOr[js.Function1[/* error */ js.Any, js.Object | Null]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
   
   // Static members cannot reference class type parameters. This is not
   // supported in TypeScript. Reusing the same type arguments from `Component`
@@ -95,5 +117,10 @@ object Component extends js.Object {
   // constraint under no circumstances, see #1356.In general type arguments
   // seem to be a bit buggy and not supported well at the time of this
   // writing with TS 3.3.3333.
-  var getDerivedStateFromProps: js.UndefOr[js.Function2[/* props */ js.Object, /* state */ js.Object, js.Object | Null]] = js.native
+  /* static member */
+  @JSImport("preact", "Component.getDerivedStateFromProps")
+  @js.native
+  def getDerivedStateFromProps: js.UndefOr[js.Function2[/* props */ js.Object, /* state */ js.Object, js.Object | Null]] = js.native
+  @scala.inline
+  def getDerivedStateFromProps_=(x: js.UndefOr[js.Function2[/* props */ js.Object, /* state */ js.Object, js.Object | Null]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
 }

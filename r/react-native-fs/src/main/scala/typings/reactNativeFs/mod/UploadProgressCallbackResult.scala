@@ -1,11 +1,12 @@
 package typings.reactNativeFs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadProgressCallbackResult extends js.Object {
+trait UploadProgressCallbackResult extends StObject {
   
   var jobId: Double = js.native
   
@@ -24,27 +25,15 @@ object UploadProgressCallbackResult {
   }
   
   @scala.inline
-  implicit class UploadProgressCallbackResultOps[Self <: UploadProgressCallbackResult] (val x: Self) extends AnyVal {
+  implicit class UploadProgressCallbackResultMutableBuilder[Self <: UploadProgressCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobId(value: Double): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTotalBytesExpectedToSend(value: Double): Self = StObject.set(x, "totalBytesExpectedToSend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setJobId(value: Double): Self = this.set("jobId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalBytesExpectedToSend(value: Double): Self = this.set("totalBytesExpectedToSend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalBytesSent(value: Double): Self = this.set("totalBytesSent", value.asInstanceOf[js.Any])
+    def setTotalBytesSent(value: Double): Self = StObject.set(x, "totalBytesSent", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.USER_INFO_PROPERTY_UNSPECIFIED
   - typings.actionsOnGoogle.actionsOnGoogleStrings.EMAIL
 */
-trait GoogleActionsTransactionsV3UserInfoOptionsUserInfoProperties extends js.Object
+trait GoogleActionsTransactionsV3UserInfoOptionsUserInfoProperties extends StObject
 object GoogleActionsTransactionsV3UserInfoOptionsUserInfoProperties {
   
   @scala.inline

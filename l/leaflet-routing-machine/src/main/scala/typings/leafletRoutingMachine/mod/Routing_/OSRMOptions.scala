@@ -2,12 +2,13 @@ package typings.leafletRoutingMachine.mod.Routing_
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.leafletRoutingMachine.anon.LegCount
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OSRMOptions extends js.Object {
+trait OSRMOptions extends StObject {
   
   var language: js.UndefOr[String] = js.native
   
@@ -38,78 +39,66 @@ object OSRMOptions {
   }
   
   @scala.inline
-  implicit class OSRMOptionsOps[Self <: OSRMOptions] (val x: Self) extends AnyVal {
+  implicit class OSRMOptionsMutableBuilder[Self <: OSRMOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolylinePrecision(value: Double): Self = StObject.set(x, "polylinePrecision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setPolylinePrecisionUndefined: Self = StObject.set(x, "polylinePrecision", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolylinePrecision(value: Double): Self = this.set("polylinePrecision", value.asInstanceOf[js.Any])
+    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
     @scala.inline
-    def deletePolylinePrecision: Self = this.set("polylinePrecision", js.undefined)
+    def setRequestParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "requestParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile(value: String): Self = this.set("profile", value.asInstanceOf[js.Any])
+    def setRequestParametersUndefined: Self = StObject.set(x, "requestParameters", js.undefined)
     
     @scala.inline
-    def deleteProfile: Self = this.set("profile", js.undefined)
+    def setRoutingOptions(value: js.Any): Self = StObject.set(x, "routingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestParameters(value: StringDictionary[js.Any]): Self = this.set("requestParameters", value.asInstanceOf[js.Any])
+    def setRoutingOptionsUndefined: Self = StObject.set(x, "routingOptions", js.undefined)
     
     @scala.inline
-    def deleteRequestParameters: Self = this.set("requestParameters", js.undefined)
+    def setServiceUrl(value: String): Self = StObject.set(x, "serviceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoutingOptions(value: js.Any): Self = this.set("routingOptions", value.asInstanceOf[js.Any])
+    def setServiceUrlUndefined: Self = StObject.set(x, "serviceUrl", js.undefined)
     
     @scala.inline
-    def deleteRoutingOptions: Self = this.set("routingOptions", js.undefined)
+    def setStepToText(value: (/* step */ js.Any, /* leg */ LegCount) => _): Self = StObject.set(x, "stepToText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setServiceUrl(value: String): Self = this.set("serviceUrl", value.asInstanceOf[js.Any])
+    def setStepToTextUndefined: Self = StObject.set(x, "stepToText", js.undefined)
     
     @scala.inline
-    def deleteServiceUrl: Self = this.set("serviceUrl", js.undefined)
+    def setSuppressDemoServerWarning(value: Boolean): Self = StObject.set(x, "suppressDemoServerWarning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepToText(value: (/* step */ js.Any, /* leg */ LegCount) => _): Self = this.set("stepToText", js.Any.fromFunction2(value))
+    def setSuppressDemoServerWarningUndefined: Self = StObject.set(x, "suppressDemoServerWarning", js.undefined)
     
     @scala.inline
-    def deleteStepToText: Self = this.set("stepToText", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuppressDemoServerWarning(value: Boolean): Self = this.set("suppressDemoServerWarning", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteSuppressDemoServerWarning: Self = this.set("suppressDemoServerWarning", js.undefined)
+    def setUseHints(value: Boolean): Self = StObject.set(x, "useHints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setUseHints(value: Boolean): Self = this.set("useHints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseHints: Self = this.set("useHints", js.undefined)
+    def setUseHintsUndefined: Self = StObject.set(x, "useHints", js.undefined)
   }
 }

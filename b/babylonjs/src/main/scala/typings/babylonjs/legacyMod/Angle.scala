@@ -1,6 +1,7 @@
 package typings.babylonjs.legacyMod
 
 import typings.babylonjs.typesMod.DeepImmutable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +17,7 @@ class Angle protected ()
   def this(radians: Double) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "Angle")
-@js.native
-object Angle extends js.Object {
+object Angle {
   
   /**
     * Gets a new Angle object valued with the gradient angle, in radians, of the line joining two points
@@ -26,6 +25,8 @@ object Angle extends js.Object {
     * @param b defines point
     * @returns a new Angle
     */
+  @JSImport("babylonjs/Legacy/legacy", "Angle.BetweenTwoPoints")
+  @js.native
   def BetweenTwoPoints(
     a: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
     b: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2]
@@ -36,6 +37,8 @@ object Angle extends js.Object {
     * @param degrees defines the angle value in degrees
     * @returns a new Angle
     */
+  @JSImport("babylonjs/Legacy/legacy", "Angle.FromDegrees")
+  @js.native
   def FromDegrees(degrees: Double): typings.babylonjs.mathPathMod.Angle = js.native
   
   /**
@@ -43,5 +46,7 @@ object Angle extends js.Object {
     * @param radians defines the angle value in radians
     * @returns a new Angle
     */
+  @JSImport("babylonjs/Legacy/legacy", "Angle.FromRadians")
+  @js.native
   def FromRadians(radians: Double): typings.babylonjs.mathPathMod.Angle = js.native
 }

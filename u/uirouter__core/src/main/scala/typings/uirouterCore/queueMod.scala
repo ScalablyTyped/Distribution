@@ -1,15 +1,15 @@
 package typings.uirouterCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/common/queue", JSImport.Namespace)
-@js.native
-object queueMod extends js.Object {
+object queueMod {
   
+  @JSImport("@uirouter/core/lib/common/queue", "Queue")
   @js.native
-  class Queue[T] () extends js.Object {
+  class Queue[T] () extends StObject {
     def this(_items: js.Array[T]) = this()
     def this(_items: js.UndefOr[scala.Nothing], _limit: Double) = this()
     def this(_items: js.Array[T], _limit: Double) = this()

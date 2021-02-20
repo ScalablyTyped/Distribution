@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,45 +45,33 @@ object ThrowEvent {
   }
   
   @scala.inline
-  implicit class ThrowEventOps[Self <: ThrowEvent] (val x: Self) extends AnyVal {
+  implicit class ThrowEventMutableBuilder[Self <: ThrowEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataInputAssociations(value: js.Array[DataInputAssociation]): Self = StObject.set(x, "dataInputAssociations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataInputAssociationsVarargs(value: DataInputAssociation*): Self = StObject.set(x, "dataInputAssociations", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataInputs(value: js.Array[DataInput]): Self = StObject.set(x, "dataInputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataInputAssociationsVarargs(value: DataInputAssociation*): Self = this.set("dataInputAssociations", js.Array(value :_*))
+    def setDataInputsVarargs(value: DataInput*): Self = StObject.set(x, "dataInputs", js.Array(value :_*))
     
     @scala.inline
-    def setDataInputAssociations(value: js.Array[DataInputAssociation]): Self = this.set("dataInputAssociations", value.asInstanceOf[js.Any])
+    def setEventDefinitionRef(value: js.Array[EventDefinition]): Self = StObject.set(x, "eventDefinitionRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataInputsVarargs(value: DataInput*): Self = this.set("dataInputs", js.Array(value :_*))
+    def setEventDefinitionRefVarargs(value: EventDefinition*): Self = StObject.set(x, "eventDefinitionRef", js.Array(value :_*))
     
     @scala.inline
-    def setDataInputs(value: js.Array[DataInput]): Self = this.set("dataInputs", value.asInstanceOf[js.Any])
+    def setEventDefinitions(value: js.Array[EventDefinition]): Self = StObject.set(x, "eventDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventDefinitionRefVarargs(value: EventDefinition*): Self = this.set("eventDefinitionRef", js.Array(value :_*))
+    def setEventDefinitionsVarargs(value: EventDefinition*): Self = StObject.set(x, "eventDefinitions", js.Array(value :_*))
     
     @scala.inline
-    def setEventDefinitionRef(value: js.Array[EventDefinition]): Self = this.set("eventDefinitionRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEventDefinitionsVarargs(value: EventDefinition*): Self = this.set("eventDefinitions", js.Array(value :_*))
-    
-    @scala.inline
-    def setEventDefinitions(value: js.Array[EventDefinition]): Self = this.set("eventDefinitions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInputSet(value: InputSet): Self = this.set("inputSet", value.asInstanceOf[js.Any])
+    def setInputSet(value: InputSet): Self = StObject.set(x, "inputSet", value.asInstanceOf[js.Any])
   }
 }

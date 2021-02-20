@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchPutDocumentResponse extends js.Object {
+trait BatchPutDocumentResponse extends StObject {
   
   /**
     * A list of documents that were not added to the index because the document failed a validation check. Each document contains an error message that indicates why the document couldn't be added to the index. If there was an error adding a document to an index the error is reported in your AWS CloudWatch log. For more information, see Monitoring Amazon Kendra with Amazon CloudWatch Logs 
@@ -21,27 +22,15 @@ object BatchPutDocumentResponse {
   }
   
   @scala.inline
-  implicit class BatchPutDocumentResponseOps[Self <: BatchPutDocumentResponse] (val x: Self) extends AnyVal {
+  implicit class BatchPutDocumentResponseMutableBuilder[Self <: BatchPutDocumentResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailedDocuments(value: BatchPutDocumentResponseFailedDocuments): Self = StObject.set(x, "FailedDocuments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedDocumentsUndefined: Self = StObject.set(x, "FailedDocuments", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFailedDocumentsVarargs(value: BatchPutDocumentResponseFailedDocument*): Self = this.set("FailedDocuments", js.Array(value :_*))
-    
-    @scala.inline
-    def setFailedDocuments(value: BatchPutDocumentResponseFailedDocuments): Self = this.set("FailedDocuments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailedDocuments: Self = this.set("FailedDocuments", js.undefined)
+    def setFailedDocumentsVarargs(value: BatchPutDocumentResponseFailedDocument*): Self = StObject.set(x, "FailedDocuments", js.Array(value :_*))
   }
 }

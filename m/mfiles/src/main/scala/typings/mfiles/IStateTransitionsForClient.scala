@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStateTransitionsForClient extends js.Object {
+trait IStateTransitionsForClient extends StObject {
   
   def Add(Index: Double, StateTransitionForClient: IStateTransitionForClient): Unit = js.native
   

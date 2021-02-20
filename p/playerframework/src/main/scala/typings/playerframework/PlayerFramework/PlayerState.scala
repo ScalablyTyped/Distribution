@@ -1,14 +1,15 @@
 package typings.playerframework.PlayerFramework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PlayerState extends js.Object
+sealed trait PlayerState extends StObject
 @JSGlobal("PlayerFramework.PlayerState")
 @js.native
-object PlayerState extends js.Object {
+object PlayerState extends StObject {
   
   /**
     * The media has ended.

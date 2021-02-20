@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.PullsListCommentsForReviewEndpoint
 import typings.octokitTypes.endpointsMod.PullsListCommentsForReviewRequestOptions
 import typings.octokitTypes.endpointsMod.PullsListCommentsForReviewResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersPullsListCommentsForReviewEndpoint extends js.Object {
+trait ParametersPullsListCommentsForReviewEndpoint extends StObject {
   
   var parameters: PullsListCommentsForReviewEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersPullsListCommentsForReviewEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersPullsListCommentsForReviewEndpointOps[Self <: ParametersPullsListCommentsForReviewEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersPullsListCommentsForReviewEndpointMutableBuilder[Self <: ParametersPullsListCommentsForReviewEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: PullsListCommentsForReviewEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: PullsListCommentsForReviewRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: PullsListCommentsForReviewEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: PullsListCommentsForReviewRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[PullsListCommentsForReviewResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[PullsListCommentsForReviewResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

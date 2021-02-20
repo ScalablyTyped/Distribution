@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigqueryreservation.gapi.client.bigqueryreservation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Assignment extends js.Object {
+trait Assignment extends StObject {
   
   /** The resource which will use the reservation. E.g. `projects/myproject`, `folders/123`, or `organizations/456`. */
   var assignee: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object Assignment {
   }
   
   @scala.inline
-  implicit class AssignmentOps[Self <: Assignment] (val x: Self) extends AnyVal {
+  implicit class AssignmentMutableBuilder[Self <: Assignment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignee(value: String): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssigneeUndefined: Self = StObject.set(x, "assignee", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobType(value: String): Self = StObject.set(x, "jobType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignee(value: String): Self = this.set("assignee", value.asInstanceOf[js.Any])
+    def setJobTypeUndefined: Self = StObject.set(x, "jobType", js.undefined)
     
     @scala.inline
-    def deleteAssignee: Self = this.set("assignee", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobType(value: String): Self = this.set("jobType", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteJobType: Self = this.set("jobType", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.reactNavigation.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationSetParamsActionPayload extends js.Object {
+trait NavigationSetParamsActionPayload extends StObject {
   
   // The key of the route where the params should be set
   var key: String = js.native
@@ -22,24 +23,12 @@ object NavigationSetParamsActionPayload {
   }
   
   @scala.inline
-  implicit class NavigationSetParamsActionPayloadOps[Self <: NavigationSetParamsActionPayload] (val x: Self) extends AnyVal {
+  implicit class NavigationSetParamsActionPayloadMutableBuilder[Self <: NavigationSetParamsActionPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParams(value: NavigationParams): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setParams(value: NavigationParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }
 }

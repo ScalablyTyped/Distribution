@@ -1,11 +1,12 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DockerContainerData extends js.Object {
+trait DockerContainerData extends StObject {
   
   var command: String = js.native
   
@@ -68,75 +69,63 @@ object DockerContainerData {
   }
   
   @scala.inline
-  implicit class DockerContainerDataOps[Self <: DockerContainerData] (val x: Self) extends AnyVal {
+  implicit class DockerContainerDataMutableBuilder[Self <: DockerContainerData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setDriver(value: String): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: Double): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setFinished(value: Double): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: String): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setFinishedAt(value: String): Self = StObject.set(x, "finishedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriver(value: String): Self = this.set("driver", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinished(value: Double): Self = this.set("finished", value.asInstanceOf[js.Any])
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinishedAt(value: String): Self = this.set("finishedAt", value.asInstanceOf[js.Any])
+    def setImageID(value: String): Self = StObject.set(x, "imageID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMounts(value: js.Array[DockerContainerMountData]): Self = StObject.set(x, "mounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setMountsVarargs(value: DockerContainerMountData*): Self = StObject.set(x, "mounts", js.Array(value :_*))
     
     @scala.inline
-    def setImageID(value: String): Self = this.set("imageID", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountsVarargs(value: DockerContainerMountData*): Self = this.set("mounts", js.Array(value :_*))
+    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMounts(value: js.Array[DockerContainerMountData]): Self = this.set("mounts", value.asInstanceOf[js.Any])
+    def setPorts(value: js.Array[Double]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPortsVarargs(value: Double*): Self = StObject.set(x, "ports", js.Array(value :_*))
     
     @scala.inline
-    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setRestartCount(value: Double): Self = StObject.set(x, "restartCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortsVarargs(value: Double*): Self = this.set("ports", js.Array(value :_*))
+    def setStarted(value: Double): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPorts(value: js.Array[Double]): Self = this.set("ports", value.asInstanceOf[js.Any])
+    def setStartedAt(value: String): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestartCount(value: Double): Self = this.set("restartCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStarted(value: Double): Self = this.set("started", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartedAt(value: String): Self = this.set("startedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

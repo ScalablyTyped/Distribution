@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PhoneNumber extends js.Object {
+trait PhoneNumber extends StObject {
   
   var displayName: js.UndefOr[String] = js.native
   
@@ -32,66 +33,54 @@ object PhoneNumber {
   }
   
   @scala.inline
-  implicit class PhoneNumberOps[Self <: PhoneNumber] (val x: Self) extends AnyVal {
+  implicit class PhoneNumberMutableBuilder[Self <: PhoneNumber] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setFederatedId(value: String): Self = StObject.set(x, "federatedId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setFederatedIdUndefined: Self = StObject.set(x, "federatedId", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFederatedId(value: String): Self = this.set("federatedId", value.asInstanceOf[js.Any])
+    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     
     @scala.inline
-    def deleteFederatedId: Self = this.set("federatedId", js.undefined)
+    def setPhotoUrl(value: String): Self = StObject.set(x, "photoUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneNumber(value: String): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
+    def setPhotoUrlUndefined: Self = StObject.set(x, "photoUrl", js.undefined)
     
     @scala.inline
-    def deletePhoneNumber: Self = this.set("phoneNumber", js.undefined)
+    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhotoUrl(value: String): Self = this.set("photoUrl", value.asInstanceOf[js.Any])
+    def setProviderIdUndefined: Self = StObject.set(x, "providerId", js.undefined)
     
     @scala.inline
-    def deletePhotoUrl: Self = this.set("photoUrl", js.undefined)
+    def setRawId(value: String): Self = StObject.set(x, "rawId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderId(value: String): Self = this.set("providerId", value.asInstanceOf[js.Any])
+    def setRawIdUndefined: Self = StObject.set(x, "rawId", js.undefined)
     
     @scala.inline
-    def deleteProviderId: Self = this.set("providerId", js.undefined)
+    def setScreenName(value: String): Self = StObject.set(x, "screenName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawId(value: String): Self = this.set("rawId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRawId: Self = this.set("rawId", js.undefined)
-    
-    @scala.inline
-    def setScreenName(value: String): Self = this.set("screenName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreenName: Self = this.set("screenName", js.undefined)
+    def setScreenNameUndefined: Self = StObject.set(x, "screenName", js.undefined)
   }
 }

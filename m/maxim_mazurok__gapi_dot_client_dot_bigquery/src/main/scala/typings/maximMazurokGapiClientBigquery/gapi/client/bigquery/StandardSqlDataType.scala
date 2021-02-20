@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StandardSqlDataType extends js.Object {
+trait StandardSqlDataType extends StObject {
   
   /** The type of the array's elements, if type_kind = "ARRAY". */
   var arrayElementType: js.UndefOr[StandardSqlDataType] = js.native
@@ -25,36 +26,24 @@ object StandardSqlDataType {
   }
   
   @scala.inline
-  implicit class StandardSqlDataTypeOps[Self <: StandardSqlDataType] (val x: Self) extends AnyVal {
+  implicit class StandardSqlDataTypeMutableBuilder[Self <: StandardSqlDataType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayElementType(value: StandardSqlDataType): Self = StObject.set(x, "arrayElementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayElementTypeUndefined: Self = StObject.set(x, "arrayElementType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStructType(value: StandardSqlStructType): Self = StObject.set(x, "structType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayElementType(value: StandardSqlDataType): Self = this.set("arrayElementType", value.asInstanceOf[js.Any])
+    def setStructTypeUndefined: Self = StObject.set(x, "structType", js.undefined)
     
     @scala.inline
-    def deleteArrayElementType: Self = this.set("arrayElementType", js.undefined)
+    def setTypeKind(value: String): Self = StObject.set(x, "typeKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStructType(value: StandardSqlStructType): Self = this.set("structType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStructType: Self = this.set("structType", js.undefined)
-    
-    @scala.inline
-    def setTypeKind(value: String): Self = this.set("typeKind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeKind: Self = this.set("typeKind", js.undefined)
+    def setTypeKindUndefined: Self = StObject.set(x, "typeKind", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.nvd3.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Nvd3Static extends js.Object {
+trait Nvd3Static extends StObject {
   
   def addGraph[TChart /* <: Nvd3Element */](factory: ChartFactory[TChart]): Unit = js.native
   def addGraph[TChart /* <: Nvd3Element */](generate: js.Function0[TChart]): Unit = js.native

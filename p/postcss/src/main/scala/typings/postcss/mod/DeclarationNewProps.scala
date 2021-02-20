@@ -1,11 +1,12 @@
 package typings.postcss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeclarationNewProps extends js.Object {
+trait DeclarationNewProps extends StObject {
   
   /**
     * The declaration's property name.
@@ -31,36 +32,24 @@ object DeclarationNewProps {
   }
   
   @scala.inline
-  implicit class DeclarationNewPropsOps[Self <: DeclarationNewProps] (val x: Self) extends AnyVal {
+  implicit class DeclarationNewPropsMutableBuilder[Self <: DeclarationNewProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPropUndefined: Self = StObject.set(x, "prop", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRaws(value: DeclarationRaws): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProp(value: String): Self = this.set("prop", value.asInstanceOf[js.Any])
+    def setRawsUndefined: Self = StObject.set(x, "raws", js.undefined)
     
     @scala.inline
-    def deleteProp: Self = this.set("prop", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaws(value: DeclarationRaws): Self = this.set("raws", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRaws: Self = this.set("raws", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -1,18 +1,18 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Misc/perfCounter", JSImport.Namespace)
-@js.native
-object perfCounterMod extends js.Object {
+object perfCounterMod {
   
+  @JSImport("babylonjs/Misc/perfCounter", "PerfCounter")
   @js.native
   /**
     * Creates a new counter
     */
-  class PerfCounter () extends js.Object {
+  class PerfCounter () extends StObject {
     
     var _average: js.Any = js.native
     
@@ -99,12 +99,19 @@ object perfCounterMod extends js.Object {
     def total: Double = js.native
   }
   /* static members */
-  @js.native
-  object PerfCounter extends js.Object {
+  object PerfCounter {
+    
+    @JSImport("babylonjs/Misc/perfCounter", "PerfCounter")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Gets or sets a global boolean to turn on and off all the counters
       */
-    var Enabled: Boolean = js.native
+    @JSImport("babylonjs/Misc/perfCounter", "PerfCounter.Enabled")
+    @js.native
+    def Enabled: Boolean = js.native
+    @scala.inline
+    def Enabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Enabled")(x.asInstanceOf[js.Any])
   }
 }

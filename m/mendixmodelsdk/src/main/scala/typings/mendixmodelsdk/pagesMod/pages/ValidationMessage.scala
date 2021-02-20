@@ -10,6 +10,7 @@ import typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayout
 import typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayoutCallArgument
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,16 +32,20 @@ class ValidationMessage protected () extends Widget {
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage")
-@js.native
-object ValidationMessage extends js.Object {
+object ValidationMessage {
+  
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new ValidationMessage instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.create")
+  @js.native
   def create(model: IModel): ValidationMessage = js.native
   
   /**
@@ -51,6 +56,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.7.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInBuildingBlockUnderWidget")
+  @js.native
   def createInBuildingBlockUnderWidget(container: BuildingBlock): ValidationMessage = js.native
   
   /**
@@ -61,6 +69,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInBuildingBlockUnderWidgets")
+  @js.native
   def createInBuildingBlockUnderWidgets(container: BuildingBlock): ValidationMessage = js.native
   
   /**
@@ -71,6 +82,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInDataViewUnderFooterWidget")
+  @js.native
   def createInDataViewUnderFooterWidget(container: DataView): ValidationMessage = js.native
   
   /**
@@ -81,6 +95,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInDataViewUnderFooterWidgets")
+  @js.native
   def createInDataViewUnderFooterWidgets(container: DataView): ValidationMessage = js.native
   
   /**
@@ -91,6 +108,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInDataViewUnderWidget")
+  @js.native
   def createInDataViewUnderWidget(container: DataView): ValidationMessage = js.native
   
   /**
@@ -101,6 +121,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInDataViewUnderWidgets")
+  @js.native
   def createInDataViewUnderWidgets(container: DataView): ValidationMessage = js.native
   
   /**
@@ -111,6 +134,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInDivContainerUnderWidget")
+  @js.native
   def createInDivContainerUnderWidget(container: DivContainer): ValidationMessage = js.native
   
   /**
@@ -121,6 +147,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInDivContainerUnderWidgets")
+  @js.native
   def createInDivContainerUnderWidgets(container: DivContainer): ValidationMessage = js.native
   
   /**
@@ -131,6 +160,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInGroupBoxUnderWidget")
+  @js.native
   def createInGroupBoxUnderWidget(container: GroupBox): ValidationMessage = js.native
   
   /**
@@ -141,6 +173,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInGroupBoxUnderWidgets")
+  @js.native
   def createInGroupBoxUnderWidgets(container: GroupBox): ValidationMessage = js.native
   
   /**
@@ -151,6 +186,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInHeaderUnderLeftWidget")
+  @js.native
   def createInHeaderUnderLeftWidget(container: Header): ValidationMessage = js.native
   
   /**
@@ -161,6 +199,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInHeaderUnderLeftWidgets")
+  @js.native
   def createInHeaderUnderLeftWidgets(container: Header): ValidationMessage = js.native
   
   /**
@@ -171,6 +212,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInHeaderUnderRightWidget")
+  @js.native
   def createInHeaderUnderRightWidget(container: Header): ValidationMessage = js.native
   
   /**
@@ -181,6 +225,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInHeaderUnderRightWidgets")
+  @js.native
   def createInHeaderUnderRightWidgets(container: Header): ValidationMessage = js.native
   
   /**
@@ -191,6 +238,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInLayoutCallArgumentUnderWidget")
+  @js.native
   def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): ValidationMessage = js.native
   
   /**
@@ -201,6 +251,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInLayoutCallArgumentUnderWidgets")
+  @js.native
   def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): ValidationMessage = js.native
   
   /**
@@ -211,6 +264,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInLayoutGridColumnUnderWidget")
+  @js.native
   def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): ValidationMessage = js.native
   
   /**
@@ -221,6 +277,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInLayoutGridColumnUnderWidgets")
+  @js.native
   def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): ValidationMessage = js.native
   
   /**
@@ -231,6 +290,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInLayoutUnderWidget")
+  @js.native
   def createInLayoutUnderWidget(container: Layout): ValidationMessage = js.native
   
   /**
@@ -241,6 +303,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInLayoutUnderWidgets")
+  @js.native
   def createInLayoutUnderWidgets(container: Layout): ValidationMessage = js.native
   
   /**
@@ -251,6 +316,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInListViewTemplateUnderWidget")
+  @js.native
   def createInListViewTemplateUnderWidget(container: ListViewTemplate): ValidationMessage = js.native
   
   /**
@@ -261,6 +329,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInListViewTemplateUnderWidgets")
+  @js.native
   def createInListViewTemplateUnderWidgets(container: ListViewTemplate): ValidationMessage = js.native
   
   /**
@@ -271,6 +342,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInListViewUnderWidget")
+  @js.native
   def createInListViewUnderWidget(container: ListView): ValidationMessage = js.native
   
   /**
@@ -281,6 +355,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInListViewUnderWidgets")
+  @js.native
   def createInListViewUnderWidgets(container: ListView): ValidationMessage = js.native
   
   /**
@@ -291,6 +368,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.1.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInMasterDetailRegionUnderWidget")
+  @js.native
   def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): ValidationMessage = js.native
   
   /**
@@ -301,6 +381,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.23.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInNativeLayoutCallArgumentUnderWidgets")
+  @js.native
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): ValidationMessage = js.native
   
   /**
@@ -311,6 +394,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.5.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInNativeLayoutContentUnderSidebarWidgets")
+  @js.native
   def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ValidationMessage = js.native
   
   /**
@@ -321,6 +407,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInNativeLayoutContentUnderWidgets")
+  @js.native
   def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): ValidationMessage = js.native
   
   /**
@@ -331,6 +420,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.22.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInNativeLayoutUnderHeaderWidget")
+  @js.native
   def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): ValidationMessage = js.native
   
   /**
@@ -341,6 +433,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.21.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInNativeLayoutUnderWidgets")
+  @js.native
   def createInNativeLayoutUnderWidgets(container: NativeLayout): ValidationMessage = js.native
   
   /**
@@ -351,6 +446,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInNavigationListItemUnderWidget")
+  @js.native
   def createInNavigationListItemUnderWidget(container: NavigationListItem): ValidationMessage = js.native
   
   /**
@@ -361,6 +459,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInNavigationListItemUnderWidgets")
+  @js.native
   def createInNavigationListItemUnderWidgets(container: NavigationListItem): ValidationMessage = js.native
   
   /**
@@ -371,6 +472,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInScrollContainerRegionUnderWidget")
+  @js.native
   def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): ValidationMessage = js.native
   
   /**
@@ -381,6 +485,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInScrollContainerRegionUnderWidgets")
+  @js.native
   def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): ValidationMessage = js.native
   
   /**
@@ -391,6 +498,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInSnippetUnderWidget")
+  @js.native
   def createInSnippetUnderWidget(container: Snippet): ValidationMessage = js.native
   
   /**
@@ -401,6 +511,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInSnippetUnderWidgets")
+  @js.native
   def createInSnippetUnderWidgets(container: Snippet): ValidationMessage = js.native
   
   /**
@@ -411,6 +524,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInSplitPaneUnderFirstWidget")
+  @js.native
   def createInSplitPaneUnderFirstWidget(container: SplitPane): ValidationMessage = js.native
   
   /**
@@ -421,6 +537,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInSplitPaneUnderFirstWidgets")
+  @js.native
   def createInSplitPaneUnderFirstWidgets(container: SplitPane): ValidationMessage = js.native
   
   /**
@@ -431,6 +550,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInSplitPaneUnderSecondWidget")
+  @js.native
   def createInSplitPaneUnderSecondWidget(container: SplitPane): ValidationMessage = js.native
   
   /**
@@ -441,6 +563,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInSplitPaneUnderSecondWidgets")
+  @js.native
   def createInSplitPaneUnderSecondWidgets(container: SplitPane): ValidationMessage = js.native
   
   /**
@@ -451,6 +576,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInTabPageUnderWidget")
+  @js.native
   def createInTabPageUnderWidget(container: TabPage): ValidationMessage = js.native
   
   /**
@@ -461,6 +589,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInTabPageUnderWidgets")
+  @js.native
   def createInTabPageUnderWidgets(container: TabPage): ValidationMessage = js.native
   
   /**
@@ -471,6 +602,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInTableCellUnderWidget")
+  @js.native
   def createInTableCellUnderWidget(container: TableCell): ValidationMessage = js.native
   
   /**
@@ -481,6 +615,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInTableCellUnderWidgets")
+  @js.native
   def createInTableCellUnderWidgets(container: TableCell): ValidationMessage = js.native
   
   /**
@@ -491,6 +628,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInTemplateGridContentsUnderWidget")
+  @js.native
   def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): ValidationMessage = js.native
   
   /**
@@ -501,6 +641,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInTemplateGridContentsUnderWidgets")
+  @js.native
   def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): ValidationMessage = js.native
   
   /**
@@ -511,6 +654,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInVerticalFlowUnderWidgets")
+  @js.native
   def createInVerticalFlowUnderWidgets(container: VerticalFlow): ValidationMessage = js.native
   
   /**
@@ -521,6 +667,9 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInWebLayoutContentUnderWidgets")
+  @js.native
   def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): ValidationMessage = js.native
   
   /**
@@ -531,9 +680,22 @@ object ValidationMessage extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.2.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.createInWidgetValueUnderWidgets")
+  @js.native
   def createInWidgetValueUnderWidgets(container: WidgetValue): ValidationMessage = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

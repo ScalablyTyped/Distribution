@@ -1,12 +1,13 @@
 package typings.winrt.Windows.UI.Text
 
 import typings.winrt.Windows.UI.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITextCharacterFormat extends js.Object {
+trait ITextCharacterFormat extends StObject {
   
   var allCaps: FormatEffect = js.native
   
@@ -99,99 +100,87 @@ object ITextCharacterFormat {
   }
   
   @scala.inline
-  implicit class ITextCharacterFormatOps[Self <: ITextCharacterFormat] (val x: Self) extends AnyVal {
+  implicit class ITextCharacterFormatMutableBuilder[Self <: ITextCharacterFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllCaps(value: FormatEffect): Self = StObject.set(x, "allCaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBold(value: FormatEffect): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllCaps(value: FormatEffect): Self = this.set("allCaps", value.asInstanceOf[js.Any])
+    def setFontStretch(value: FontStretch): Self = StObject.set(x, "fontStretch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: Color): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setFontStyle(value: FontStyle): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBold(value: FormatEffect): Self = this.set("bold", value.asInstanceOf[js.Any])
+    def setForegroundColor(value: Color): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStretch(value: FontStretch): Self = this.set("fontStretch", value.asInstanceOf[js.Any])
+    def setGetClone(value: () => ITextCharacterFormat): Self = StObject.set(x, "getClone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFontStyle(value: FontStyle): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    def setHidden(value: FormatEffect): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForegroundColor(value: Color): Self = this.set("foregroundColor", value.asInstanceOf[js.Any])
+    def setIsEqual(value: ITextCharacterFormat => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetClone(value: () => ITextCharacterFormat): Self = this.set("getClone", js.Any.fromFunction0(value))
+    def setItalic(value: FormatEffect): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: FormatEffect): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setKerning(value: Double): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEqual(value: ITextCharacterFormat => Boolean): Self = this.set("isEqual", js.Any.fromFunction1(value))
+    def setLanguageTag(value: String): Self = StObject.set(x, "languageTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItalic(value: FormatEffect): Self = this.set("italic", value.asInstanceOf[js.Any])
+    def setLinkType(value: LinkType): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKerning(value: Double): Self = this.set("kerning", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageTag(value: String): Self = this.set("languageTag", value.asInstanceOf[js.Any])
+    def setOutline(value: FormatEffect): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkType(value: LinkType): Self = this.set("linkType", value.asInstanceOf[js.Any])
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProtectedText(value: FormatEffect): Self = StObject.set(x, "protectedText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutline(value: FormatEffect): Self = this.set("outline", value.asInstanceOf[js.Any])
+    def setSetClone(value: ITextCharacterFormat => Unit): Self = StObject.set(x, "setClone", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtectedText(value: FormatEffect): Self = this.set("protectedText", value.asInstanceOf[js.Any])
+    def setSmallCaps(value: FormatEffect): Self = StObject.set(x, "smallCaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetClone(value: ITextCharacterFormat => Unit): Self = this.set("setClone", js.Any.fromFunction1(value))
+    def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setStrikethrough(value: FormatEffect): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmallCaps(value: FormatEffect): Self = this.set("smallCaps", value.asInstanceOf[js.Any])
+    def setSubscript(value: FormatEffect): Self = StObject.set(x, "subscript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpacing(value: Double): Self = this.set("spacing", value.asInstanceOf[js.Any])
+    def setSuperscript(value: FormatEffect): Self = StObject.set(x, "superscript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrikethrough(value: FormatEffect): Self = this.set("strikethrough", value.asInstanceOf[js.Any])
+    def setTextScript(value: TextScript): Self = StObject.set(x, "textScript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscript(value: FormatEffect): Self = this.set("subscript", value.asInstanceOf[js.Any])
+    def setUnderline(value: UnderlineType): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuperscript(value: FormatEffect): Self = this.set("superscript", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextScript(value: TextScript): Self = this.set("textScript", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnderline(value: UnderlineType): Self = this.set("underline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
+    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

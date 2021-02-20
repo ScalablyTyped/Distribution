@@ -3,12 +3,13 @@ package typings.uniApp
 import typings.uniApp.uniAppStrings.igexin
 import typings.uniApp.uniAppStrings.mipush
 import typings.uniApp.uniAppStrings.unipush
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnPushOptions extends js.Object {
+trait OnPushOptions extends StObject {
   
   /**
     * 接收到透传数据回调，回调参数（Object）：messageId（消息id）、data（消息内容）
@@ -47,48 +48,36 @@ object OnPushOptions {
   }
   
   @scala.inline
-  implicit class OnPushOptionsOps[Self <: OnPushOptions] (val x: Self) extends AnyVal {
+  implicit class OnPushOptionsMutableBuilder[Self <: OnPushOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCallback(value: () => Unit): Self = this.set("callback", js.Any.fromFunction0(value))
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComplete(value: () => Unit): Self = this.set("complete", js.Any.fromFunction0(value))
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setProvider(value: unipush | igexin | mipush): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFail(value: () => Unit): Self = this.set("fail", js.Any.fromFunction0(value))
+    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setProvider(value: unipush | igexin | mipush): Self = this.set("provider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvider: Self = this.set("provider", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: () => Unit): Self = this.set("success", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudAssetV1BigQueryDestination extends js.Object {
+trait GoogleCloudAssetV1BigQueryDestination extends StObject {
   
   /**
     * Required. The BigQuery dataset in format "projects/projectId/datasets/datasetId", to which the analysis results should be exported. If this dataset does not exist, the export call
@@ -40,42 +41,30 @@ object GoogleCloudAssetV1BigQueryDestination {
   }
   
   @scala.inline
-  implicit class GoogleCloudAssetV1BigQueryDestinationOps[Self <: GoogleCloudAssetV1BigQueryDestination] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudAssetV1BigQueryDestinationMutableBuilder[Self <: GoogleCloudAssetV1BigQueryDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPartitionKey(value: String): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataset(value: String): Self = this.set("dataset", value.asInstanceOf[js.Any])
+    def setPartitionKeyUndefined: Self = StObject.set(x, "partitionKey", js.undefined)
     
     @scala.inline
-    def deleteDataset: Self = this.set("dataset", js.undefined)
+    def setTablePrefix(value: String): Self = StObject.set(x, "tablePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartitionKey(value: String): Self = this.set("partitionKey", value.asInstanceOf[js.Any])
+    def setTablePrefixUndefined: Self = StObject.set(x, "tablePrefix", js.undefined)
     
     @scala.inline
-    def deletePartitionKey: Self = this.set("partitionKey", js.undefined)
+    def setWriteDisposition(value: String): Self = StObject.set(x, "writeDisposition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTablePrefix(value: String): Self = this.set("tablePrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTablePrefix: Self = this.set("tablePrefix", js.undefined)
-    
-    @scala.inline
-    def setWriteDisposition(value: String): Self = this.set("writeDisposition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteDisposition: Self = this.set("writeDisposition", js.undefined)
+    def setWriteDispositionUndefined: Self = StObject.set(x, "writeDisposition", js.undefined)
   }
 }

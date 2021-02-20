@@ -1,11 +1,12 @@
 package typings.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StaticUtilFunctions extends js.Object {
+trait StaticUtilFunctions extends StObject {
   
   /**
     * Escape special characters in a regular expression string. Since: 1.10.4

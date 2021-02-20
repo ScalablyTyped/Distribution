@@ -1,13 +1,14 @@
 package typings.officeUiFabricReact.detailsListTypesMod
 
 import typings.fluentuiTheme.ithemeMod.ITheme
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsList.types.IDetailsListProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsList.types.IDetailsListProps, 'className'> & {  isHorizontalConstrained :boolean | undefined,   compact :boolean | undefined,   isFixed :boolean | undefined} */
 @js.native
-trait IDetailsListStyleProps extends js.Object {
+trait IDetailsListStyleProps extends StObject {
   
   var className: js.UndefOr[String] = js.native
   
@@ -31,45 +32,33 @@ object IDetailsListStyleProps {
   }
   
   @scala.inline
-  implicit class IDetailsListStylePropsOps[Self <: IDetailsListStyleProps] (val x: Self) extends AnyVal {
+  implicit class IDetailsListStylePropsMutableBuilder[Self <: IDetailsListStyleProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: ITheme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setIsFixed(value: Boolean): Self = StObject.set(x, "isFixed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setIsFixedUndefined: Self = StObject.set(x, "isFixed", js.undefined)
     
     @scala.inline
-    def setCompact(value: Boolean): Self = this.set("compact", value.asInstanceOf[js.Any])
+    def setIsHorizontalConstrained(value: Boolean): Self = StObject.set(x, "isHorizontalConstrained", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompact: Self = this.set("compact", js.undefined)
+    def setIsHorizontalConstrainedUndefined: Self = StObject.set(x, "isHorizontalConstrained", js.undefined)
     
     @scala.inline
-    def setIsFixed(value: Boolean): Self = this.set("isFixed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsFixed: Self = this.set("isFixed", js.undefined)
-    
-    @scala.inline
-    def setIsHorizontalConstrained(value: Boolean): Self = this.set("isHorizontalConstrained", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsHorizontalConstrained: Self = this.set("isHorizontalConstrained", js.undefined)
+    def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

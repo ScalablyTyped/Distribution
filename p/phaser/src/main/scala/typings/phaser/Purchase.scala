@@ -1,11 +1,12 @@
 package typings.phaser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Purchase extends js.Object {
+trait Purchase extends StObject {
   
   /**
     * A developer-specified string, provided during the purchase of the product.
@@ -46,54 +47,42 @@ object Purchase {
   }
   
   @scala.inline
-  implicit class PurchaseOps[Self <: Purchase] (val x: Self) extends AnyVal {
+  implicit class PurchaseMutableBuilder[Self <: Purchase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeveloperPayload(value: String): Self = StObject.set(x, "developerPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeveloperPayloadUndefined: Self = StObject.set(x, "developerPayload", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPaymentID(value: String): Self = StObject.set(x, "paymentID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeveloperPayload(value: String): Self = this.set("developerPayload", value.asInstanceOf[js.Any])
+    def setPaymentIDUndefined: Self = StObject.set(x, "paymentID", js.undefined)
     
     @scala.inline
-    def deleteDeveloperPayload: Self = this.set("developerPayload", js.undefined)
+    def setProductID(value: String): Self = StObject.set(x, "productID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentID(value: String): Self = this.set("paymentID", value.asInstanceOf[js.Any])
+    def setProductIDUndefined: Self = StObject.set(x, "productID", js.undefined)
     
     @scala.inline
-    def deletePaymentID: Self = this.set("paymentID", js.undefined)
+    def setPurchaseTime(value: String): Self = StObject.set(x, "purchaseTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductID(value: String): Self = this.set("productID", value.asInstanceOf[js.Any])
+    def setPurchaseTimeUndefined: Self = StObject.set(x, "purchaseTime", js.undefined)
     
     @scala.inline
-    def deleteProductID: Self = this.set("productID", js.undefined)
+    def setPurchaseToken(value: String): Self = StObject.set(x, "purchaseToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurchaseTime(value: String): Self = this.set("purchaseTime", value.asInstanceOf[js.Any])
+    def setPurchaseTokenUndefined: Self = StObject.set(x, "purchaseToken", js.undefined)
     
     @scala.inline
-    def deletePurchaseTime: Self = this.set("purchaseTime", js.undefined)
+    def setSignedRequest(value: String): Self = StObject.set(x, "signedRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurchaseToken(value: String): Self = this.set("purchaseToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePurchaseToken: Self = this.set("purchaseToken", js.undefined)
-    
-    @scala.inline
-    def setSignedRequest(value: String): Self = this.set("signedRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignedRequest: Self = this.set("signedRequest", js.undefined)
+    def setSignedRequestUndefined: Self = StObject.set(x, "signedRequest", js.undefined)
   }
 }

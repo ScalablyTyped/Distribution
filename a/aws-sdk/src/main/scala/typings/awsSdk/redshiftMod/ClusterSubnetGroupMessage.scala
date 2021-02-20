@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterSubnetGroupMessage extends js.Object {
+trait ClusterSubnetGroupMessage extends StObject {
   
   /**
     * A list of ClusterSubnetGroup instances. 
@@ -26,33 +27,21 @@ object ClusterSubnetGroupMessage {
   }
   
   @scala.inline
-  implicit class ClusterSubnetGroupMessageOps[Self <: ClusterSubnetGroupMessage] (val x: Self) extends AnyVal {
+  implicit class ClusterSubnetGroupMessageMutableBuilder[Self <: ClusterSubnetGroupMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterSubnetGroups(value: ClusterSubnetGroups): Self = StObject.set(x, "ClusterSubnetGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterSubnetGroupsUndefined: Self = StObject.set(x, "ClusterSubnetGroups", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterSubnetGroupsVarargs(value: ClusterSubnetGroup*): Self = StObject.set(x, "ClusterSubnetGroups", js.Array(value :_*))
     
     @scala.inline
-    def setClusterSubnetGroupsVarargs(value: ClusterSubnetGroup*): Self = this.set("ClusterSubnetGroups", js.Array(value :_*))
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterSubnetGroups(value: ClusterSubnetGroups): Self = this.set("ClusterSubnetGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClusterSubnetGroups: Self = this.set("ClusterSubnetGroups", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

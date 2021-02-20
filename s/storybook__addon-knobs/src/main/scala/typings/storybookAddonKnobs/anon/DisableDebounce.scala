@@ -1,12 +1,13 @@
 package typings.storybookAddonKnobs.anon
 
 import typings.storybookAddonKnobs.typesMod.KnobType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisableDebounce[T /* <: KnobType */] extends js.Object {
+trait DisableDebounce[T /* <: KnobType */] extends StObject {
   
   var disableDebounce: js.UndefOr[Boolean] = js.native
   
@@ -26,39 +27,27 @@ object DisableDebounce {
   }
   
   @scala.inline
-  implicit class DisableDebounceOps[Self <: DisableDebounce[_], T /* <: KnobType */] (val x: Self with DisableDebounce[T]) extends AnyVal {
+  implicit class DisableDebounceMutableBuilder[Self <: DisableDebounce[_], T /* <: KnobType */] (val x: Self with DisableDebounce[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableDebounce(value: Boolean): Self = StObject.set(x, "disableDebounce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableDebounceUndefined: Self = StObject.set(x, "disableDebounce", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableForceUpdate(value: Boolean): Self = StObject.set(x, "disableForceUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: T): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setDisableForceUpdateUndefined: Self = StObject.set(x, "disableForceUpdate", js.undefined)
     
     @scala.inline
-    def setDisableDebounce(value: Boolean): Self = this.set("disableDebounce", value.asInstanceOf[js.Any])
+    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableDebounce: Self = this.set("disableDebounce", js.undefined)
+    def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
     @scala.inline
-    def setDisableForceUpdate(value: Boolean): Self = this.set("disableForceUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisableForceUpdate: Self = this.set("disableForceUpdate", js.undefined)
-    
-    @scala.inline
-    def setGroupId(value: String): Self = this.set("groupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupId: Self = this.set("groupId", js.undefined)
+    def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.googleapis.calendarV3Mod.calendarV3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaFreeBusyResponse extends js.Object {
+trait SchemaFreeBusyResponse extends StObject {
   
   /**
     * List of free/busy information for calendars.
@@ -42,48 +43,36 @@ object SchemaFreeBusyResponse {
   }
   
   @scala.inline
-  implicit class SchemaFreeBusyResponseOps[Self <: SchemaFreeBusyResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaFreeBusyResponseMutableBuilder[Self <: SchemaFreeBusyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendars(value: StringDictionary[SchemaFreeBusyCalendar]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroups(value: StringDictionary[SchemaFreeBusyGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendars(value: StringDictionary[SchemaFreeBusyCalendar]): Self = this.set("calendars", value.asInstanceOf[js.Any])
+    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
     @scala.inline
-    def deleteCalendars: Self = this.set("calendars", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: StringDictionary[SchemaFreeBusyGroup]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteGroups: Self = this.set("groups", js.undefined)
+    def setTimeMax(value: String): Self = StObject.set(x, "timeMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setTimeMaxUndefined: Self = StObject.set(x, "timeMax", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setTimeMin(value: String): Self = StObject.set(x, "timeMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeMax(value: String): Self = this.set("timeMax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeMax: Self = this.set("timeMax", js.undefined)
-    
-    @scala.inline
-    def setTimeMin(value: String): Self = this.set("timeMin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeMin: Self = this.set("timeMin", js.undefined)
+    def setTimeMinUndefined: Self = StObject.set(x, "timeMin", js.undefined)
   }
 }

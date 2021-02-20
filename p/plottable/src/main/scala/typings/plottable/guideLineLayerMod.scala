@@ -2,14 +2,14 @@ package typings.plottable
 
 import typings.plottable.componentMod.Component
 import typings.plottable.quantitativeScaleMod.QuantitativeScale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/components/guideLineLayer", JSImport.Namespace)
-@js.native
-object guideLineLayerMod extends js.Object {
+object guideLineLayerMod {
   
+  @JSImport("plottable/build/src/components/guideLineLayer", "GuideLineLayer")
   @js.native
   class GuideLineLayer[D] protected () extends Component {
     def this(orientation: String) = this()
@@ -81,11 +81,22 @@ object guideLineLayerMod extends js.Object {
     def value(value: D): this.type = js.native
   }
   /* static members */
-  @js.native
-  object GuideLineLayer extends js.Object {
+  object GuideLineLayer {
     
-    var ORIENTATION_HORIZONTAL: String = js.native
+    @JSImport("plottable/build/src/components/guideLineLayer", "GuideLineLayer")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var ORIENTATION_VERTICAL: String = js.native
+    @JSImport("plottable/build/src/components/guideLineLayer", "GuideLineLayer.ORIENTATION_HORIZONTAL")
+    @js.native
+    def ORIENTATION_HORIZONTAL: String = js.native
+    @scala.inline
+    def ORIENTATION_HORIZONTAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORIENTATION_HORIZONTAL")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable/build/src/components/guideLineLayer", "GuideLineLayer.ORIENTATION_VERTICAL")
+    @js.native
+    def ORIENTATION_VERTICAL: String = js.native
+    @scala.inline
+    def ORIENTATION_VERTICAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORIENTATION_VERTICAL")(x.asInstanceOf[js.Any])
   }
 }

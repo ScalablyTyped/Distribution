@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.wafv2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleGroupRuleStatementOrStatementStatement extends js.Object {
+trait RuleGroupRuleStatementOrStatementStatement extends StObject {
   
   /**
     * A logical rule statement used to combine other rule statements with AND logic. See AND Statement below for details.
@@ -66,78 +67,66 @@ object RuleGroupRuleStatementOrStatementStatement {
   }
   
   @scala.inline
-  implicit class RuleGroupRuleStatementOrStatementStatementOps[Self <: RuleGroupRuleStatementOrStatementStatement] (val x: Self) extends AnyVal {
+  implicit class RuleGroupRuleStatementOrStatementStatementMutableBuilder[Self <: RuleGroupRuleStatementOrStatementStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndStatement(value: RuleGroupRuleStatementOrStatementStatementAndStatement): Self = StObject.set(x, "andStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndStatementUndefined: Self = StObject.set(x, "andStatement", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setByteMatchStatement(value: RuleGroupRuleStatementOrStatementStatementByteMatchStatement): Self = StObject.set(x, "byteMatchStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndStatement(value: RuleGroupRuleStatementOrStatementStatementAndStatement): Self = this.set("andStatement", value.asInstanceOf[js.Any])
+    def setByteMatchStatementUndefined: Self = StObject.set(x, "byteMatchStatement", js.undefined)
     
     @scala.inline
-    def deleteAndStatement: Self = this.set("andStatement", js.undefined)
+    def setGeoMatchStatement(value: RuleGroupRuleStatementOrStatementStatementGeoMatchStatement): Self = StObject.set(x, "geoMatchStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByteMatchStatement(value: RuleGroupRuleStatementOrStatementStatementByteMatchStatement): Self = this.set("byteMatchStatement", value.asInstanceOf[js.Any])
+    def setGeoMatchStatementUndefined: Self = StObject.set(x, "geoMatchStatement", js.undefined)
     
     @scala.inline
-    def deleteByteMatchStatement: Self = this.set("byteMatchStatement", js.undefined)
+    def setIpSetReferenceStatement(value: RuleGroupRuleStatementOrStatementStatementIpSetReferenceStatement): Self = StObject.set(x, "ipSetReferenceStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeoMatchStatement(value: RuleGroupRuleStatementOrStatementStatementGeoMatchStatement): Self = this.set("geoMatchStatement", value.asInstanceOf[js.Any])
+    def setIpSetReferenceStatementUndefined: Self = StObject.set(x, "ipSetReferenceStatement", js.undefined)
     
     @scala.inline
-    def deleteGeoMatchStatement: Self = this.set("geoMatchStatement", js.undefined)
+    def setNotStatement(value: RuleGroupRuleStatementOrStatementStatementNotStatement): Self = StObject.set(x, "notStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpSetReferenceStatement(value: RuleGroupRuleStatementOrStatementStatementIpSetReferenceStatement): Self = this.set("ipSetReferenceStatement", value.asInstanceOf[js.Any])
+    def setNotStatementUndefined: Self = StObject.set(x, "notStatement", js.undefined)
     
     @scala.inline
-    def deleteIpSetReferenceStatement: Self = this.set("ipSetReferenceStatement", js.undefined)
+    def setOrStatement(value: RuleGroupRuleStatementOrStatementStatementOrStatement): Self = StObject.set(x, "orStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotStatement(value: RuleGroupRuleStatementOrStatementStatementNotStatement): Self = this.set("notStatement", value.asInstanceOf[js.Any])
+    def setOrStatementUndefined: Self = StObject.set(x, "orStatement", js.undefined)
     
     @scala.inline
-    def deleteNotStatement: Self = this.set("notStatement", js.undefined)
+    def setRegexPatternSetReferenceStatement(value: RuleGroupRuleStatementOrStatementStatementRegexPatternSetReferenceStatement): Self = StObject.set(x, "regexPatternSetReferenceStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrStatement(value: RuleGroupRuleStatementOrStatementStatementOrStatement): Self = this.set("orStatement", value.asInstanceOf[js.Any])
+    def setRegexPatternSetReferenceStatementUndefined: Self = StObject.set(x, "regexPatternSetReferenceStatement", js.undefined)
     
     @scala.inline
-    def deleteOrStatement: Self = this.set("orStatement", js.undefined)
+    def setSizeConstraintStatement(value: RuleGroupRuleStatementOrStatementStatementSizeConstraintStatement): Self = StObject.set(x, "sizeConstraintStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegexPatternSetReferenceStatement(value: RuleGroupRuleStatementOrStatementStatementRegexPatternSetReferenceStatement): Self = this.set("regexPatternSetReferenceStatement", value.asInstanceOf[js.Any])
+    def setSizeConstraintStatementUndefined: Self = StObject.set(x, "sizeConstraintStatement", js.undefined)
     
     @scala.inline
-    def deleteRegexPatternSetReferenceStatement: Self = this.set("regexPatternSetReferenceStatement", js.undefined)
+    def setSqliMatchStatement(value: RuleGroupRuleStatementOrStatementStatementSqliMatchStatement): Self = StObject.set(x, "sqliMatchStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeConstraintStatement(value: RuleGroupRuleStatementOrStatementStatementSizeConstraintStatement): Self = this.set("sizeConstraintStatement", value.asInstanceOf[js.Any])
+    def setSqliMatchStatementUndefined: Self = StObject.set(x, "sqliMatchStatement", js.undefined)
     
     @scala.inline
-    def deleteSizeConstraintStatement: Self = this.set("sizeConstraintStatement", js.undefined)
+    def setXssMatchStatement(value: RuleGroupRuleStatementOrStatementStatementXssMatchStatement): Self = StObject.set(x, "xssMatchStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSqliMatchStatement(value: RuleGroupRuleStatementOrStatementStatementSqliMatchStatement): Self = this.set("sqliMatchStatement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSqliMatchStatement: Self = this.set("sqliMatchStatement", js.undefined)
-    
-    @scala.inline
-    def setXssMatchStatement(value: RuleGroupRuleStatementOrStatementStatementXssMatchStatement): Self = this.set("xssMatchStatement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXssMatchStatement: Self = this.set("xssMatchStatement", js.undefined)
+    def setXssMatchStatementUndefined: Self = StObject.set(x, "xssMatchStatement", js.undefined)
   }
 }

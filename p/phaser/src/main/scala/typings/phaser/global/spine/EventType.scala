@@ -1,12 +1,13 @@
 package typings.phaser.global.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("spine.EventType")
 @js.native
-object EventType extends js.Object {
+object EventType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.phaser.spine.EventType with Double] = js.native

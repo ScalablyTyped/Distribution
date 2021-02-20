@@ -1,5 +1,6 @@
 package typings.ssUtils.ssutils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,36 +40,24 @@ object SSEConnect {
   }
   
   @scala.inline
-  implicit class SSEConnectOps[Self <: SSEConnect] (val x: Self) extends AnyVal {
+  implicit class SSEConnectMutableBuilder[Self <: SSEConnect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeartbeatIntervalMs(value: Double): Self = StObject.set(x, "heartbeatIntervalMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeartbeatUrl(value: String): Self = StObject.set(x, "heartbeatUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeartbeatIntervalMs(value: Double): Self = this.set("heartbeatIntervalMs", value.asInstanceOf[js.Any])
+    def setIdleTimeoutMs(value: Double): Self = StObject.set(x, "idleTimeoutMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeartbeatUrl(value: String): Self = this.set("heartbeatUrl", value.asInstanceOf[js.Any])
+    def setUnRegisterUrl(value: String): Self = StObject.set(x, "unRegisterUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdleTimeoutMs(value: Double): Self = this.set("idleTimeoutMs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnRegisterUrl(value: String): Self = this.set("unRegisterUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateSubscriberUrl(value: String): Self = this.set("updateSubscriberUrl", value.asInstanceOf[js.Any])
+    def setUpdateSubscriberUrl(value: String): Self = StObject.set(x, "updateSubscriberUrl", value.asInstanceOf[js.Any])
   }
 }

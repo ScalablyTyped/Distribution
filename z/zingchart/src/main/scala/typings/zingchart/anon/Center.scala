@@ -1,11 +1,12 @@
 package typings.zingchart.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Center extends js.Object {
+trait Center extends StObject {
   
   var center: js.UndefOr[Size] = js.native
   
@@ -48,87 +49,75 @@ object Center {
   }
   
   @scala.inline
-  implicit class CenterOps[Self <: Center] (val x: Self) extends AnyVal {
+  implicit class CenterMutableBuilder[Self <: Center] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: Size): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGuide(value: Visible): Self = StObject.set(x, "guide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: Size): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setGuideUndefined: Self = StObject.set(x, "guide", js.undefined)
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setItem(value: OffsetR): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuide(value: Visible): Self = this.set("guide", value.asInstanceOf[js.Any])
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
     @scala.inline
-    def deleteGuide: Self = this.set("guide", js.undefined)
+    def setLabels(value: js.Any): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: OffsetR): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
+    def setMarkers(value: js.Array[Label]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: js.Any): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setMarkersUndefined: Self = StObject.set(x, "markers", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setMarkersVarargs(value: Label*): Self = StObject.set(x, "markers", js.Array(value :_*))
     
     @scala.inline
-    def setMarkersVarargs(value: Label*): Self = this.set("markers", js.Array(value :_*))
+    def `setMinor-guide`(value: LinecolorLinestyle): Self = StObject.set(x, "minor-guide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkers(value: js.Array[Label]): Self = this.set("markers", value.asInstanceOf[js.Any])
+    def `setMinor-guideUndefined`: Self = StObject.set(x, "minor-guide", js.undefined)
     
     @scala.inline
-    def deleteMarkers: Self = this.set("markers", js.undefined)
+    def `setMinor-tick`(value: Placement): Self = StObject.set(x, "minor-tick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMinor-guide`(value: LinecolorLinestyle): Self = this.set("minor-guide", value.asInstanceOf[js.Any])
+    def `setMinor-tickUndefined`: Self = StObject.set(x, "minor-tick", js.undefined)
     
     @scala.inline
-    def `deleteMinor-guide`: Self = this.set("minor-guide", js.undefined)
+    def `setMinor-ticks`(value: Double): Self = StObject.set(x, "minor-ticks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMinor-tick`(value: Placement): Self = this.set("minor-tick", value.asInstanceOf[js.Any])
+    def `setMinor-ticksUndefined`: Self = StObject.set(x, "minor-ticks", js.undefined)
     
     @scala.inline
-    def `deleteMinor-tick`: Self = this.set("minor-tick", js.undefined)
+    def setRing(value: BorderwidthItems): Self = StObject.set(x, "ring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMinor-ticks`(value: Double): Self = this.set("minor-ticks", value.asInstanceOf[js.Any])
+    def setRingUndefined: Self = StObject.set(x, "ring", js.undefined)
     
     @scala.inline
-    def `deleteMinor-ticks`: Self = this.set("minor-ticks", js.undefined)
+    def setTick(value: Placement): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRing(value: BorderwidthItems): Self = this.set("ring", value.asInstanceOf[js.Any])
+    def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
     
     @scala.inline
-    def deleteRing: Self = this.set("ring", js.undefined)
+    def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTick(value: Placement): Self = this.set("tick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTick: Self = this.set("tick", js.undefined)
-    
-    @scala.inline
-    def setValues(value: js.Any): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

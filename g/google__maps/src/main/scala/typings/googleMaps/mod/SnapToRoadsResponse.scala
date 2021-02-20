@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SnapToRoadsResponse extends js.Object {
+trait SnapToRoadsResponse extends StObject {
   
   /** An array of snapped points. */
   var snappedPoints: js.Array[SnappedPoint] = js.native
@@ -19,24 +20,12 @@ object SnapToRoadsResponse {
   }
   
   @scala.inline
-  implicit class SnapToRoadsResponseOps[Self <: SnapToRoadsResponse] (val x: Self) extends AnyVal {
+  implicit class SnapToRoadsResponseMutableBuilder[Self <: SnapToRoadsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSnappedPoints(value: js.Array[SnappedPoint]): Self = StObject.set(x, "snappedPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSnappedPointsVarargs(value: SnappedPoint*): Self = this.set("snappedPoints", js.Array(value :_*))
-    
-    @scala.inline
-    def setSnappedPoints(value: js.Array[SnappedPoint]): Self = this.set("snappedPoints", value.asInstanceOf[js.Any])
+    def setSnappedPointsVarargs(value: SnappedPoint*): Self = StObject.set(x, "snappedPoints", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Expression extends js.Object {
+trait Expression extends StObject {
   
   /**
     * Return results that match both Dimension objects.
@@ -46,60 +47,48 @@ object Expression {
   }
   
   @scala.inline
-  implicit class ExpressionOps[Self <: Expression] (val x: Self) extends AnyVal {
+  implicit class ExpressionMutableBuilder[Self <: Expression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnd(value: Expressions): Self = StObject.set(x, "And", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndUndefined: Self = StObject.set(x, "And", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAndVarargs(value: Expression*): Self = StObject.set(x, "And", js.Array(value :_*))
     
     @scala.inline
-    def setAndVarargs(value: Expression*): Self = this.set("And", js.Array(value :_*))
+    def setCostCategories(value: CostCategoryValues): Self = StObject.set(x, "CostCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnd(value: Expressions): Self = this.set("And", value.asInstanceOf[js.Any])
+    def setCostCategoriesUndefined: Self = StObject.set(x, "CostCategories", js.undefined)
     
     @scala.inline
-    def deleteAnd: Self = this.set("And", js.undefined)
+    def setDimensions(value: DimensionValues): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCostCategories(value: CostCategoryValues): Self = this.set("CostCategories", value.asInstanceOf[js.Any])
+    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
     @scala.inline
-    def deleteCostCategories: Self = this.set("CostCategories", js.undefined)
+    def setNot(value: Expression): Self = StObject.set(x, "Not", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensions(value: DimensionValues): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
+    def setNotUndefined: Self = StObject.set(x, "Not", js.undefined)
     
     @scala.inline
-    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
+    def setOr(value: Expressions): Self = StObject.set(x, "Or", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNot(value: Expression): Self = this.set("Not", value.asInstanceOf[js.Any])
+    def setOrUndefined: Self = StObject.set(x, "Or", js.undefined)
     
     @scala.inline
-    def deleteNot: Self = this.set("Not", js.undefined)
+    def setOrVarargs(value: Expression*): Self = StObject.set(x, "Or", js.Array(value :_*))
     
     @scala.inline
-    def setOrVarargs(value: Expression*): Self = this.set("Or", js.Array(value :_*))
+    def setTags(value: TagValues): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOr(value: Expressions): Self = this.set("Or", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOr: Self = this.set("Or", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagValues): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

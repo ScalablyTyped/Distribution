@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object LocationResults {
   }
   
   @scala.inline
-  implicit class LocationResultsOps[Self <: LocationResults] (val x: Self) extends AnyVal {
+  implicit class LocationResultsMutableBuilder[Self <: LocationResults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoords(value: LocationCoordinates): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProvider(value: LocationProviderDict): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoords(value: LocationCoordinates): Self = this.set("coords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCoords: Self = this.set("coords", js.undefined)
-    
-    @scala.inline
-    def setProvider(value: LocationProviderDict): Self = this.set("provider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvider: Self = this.set("provider", js.undefined)
+    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
   }
 }

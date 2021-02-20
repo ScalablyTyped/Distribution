@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Location extends js.Object {
+trait Location extends StObject {
   
   /**
     * An Amazon DynamoDB table location.
@@ -31,45 +32,33 @@ object Location {
   }
   
   @scala.inline
-  implicit class LocationOps[Self <: Location] (val x: Self) extends AnyVal {
+  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDynamoDB(value: CodeGenNodeArgs): Self = StObject.set(x, "DynamoDB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDynamoDBUndefined: Self = StObject.set(x, "DynamoDB", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDynamoDBVarargs(value: CodeGenNodeArg*): Self = StObject.set(x, "DynamoDB", js.Array(value :_*))
     
     @scala.inline
-    def setDynamoDBVarargs(value: CodeGenNodeArg*): Self = this.set("DynamoDB", js.Array(value :_*))
+    def setJdbc(value: CodeGenNodeArgs): Self = StObject.set(x, "Jdbc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamoDB(value: CodeGenNodeArgs): Self = this.set("DynamoDB", value.asInstanceOf[js.Any])
+    def setJdbcUndefined: Self = StObject.set(x, "Jdbc", js.undefined)
     
     @scala.inline
-    def deleteDynamoDB: Self = this.set("DynamoDB", js.undefined)
+    def setJdbcVarargs(value: CodeGenNodeArg*): Self = StObject.set(x, "Jdbc", js.Array(value :_*))
     
     @scala.inline
-    def setJdbcVarargs(value: CodeGenNodeArg*): Self = this.set("Jdbc", js.Array(value :_*))
+    def setS3(value: CodeGenNodeArgs): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJdbc(value: CodeGenNodeArgs): Self = this.set("Jdbc", value.asInstanceOf[js.Any])
+    def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
     
     @scala.inline
-    def deleteJdbc: Self = this.set("Jdbc", js.undefined)
-    
-    @scala.inline
-    def setS3Varargs(value: CodeGenNodeArg*): Self = this.set("S3", js.Array(value :_*))
-    
-    @scala.inline
-    def setS3(value: CodeGenNodeArgs): Self = this.set("S3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3: Self = this.set("S3", js.undefined)
+    def setS3Varargs(value: CodeGenNodeArg*): Self = StObject.set(x, "S3", js.Array(value :_*))
   }
 }

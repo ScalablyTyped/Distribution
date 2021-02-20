@@ -3,6 +3,7 @@ package typings.webgme.global
 import typings.std.Storage
 import typings.webgme.Global_.GmeLogger
 import typings.webgme.GmeCommon.ResultCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This class defines the public API of the WebGME-Core
   * https://editor.dev.webgme.org/docs/source/module-Core.html
   */
-@JSGlobal("Core")
-@js.native
-object Core extends js.Object {
+object Core {
   
+  @JSGlobal("Core.Node")
   @js.native
   class Node ()
     extends typings.webgme.Core.Node {

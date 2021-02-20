@@ -4,16 +4,16 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Cameras/cameraInputsManager", JSImport.Namespace)
-@js.native
-object cameraInputsManagerMod extends js.Object {
+object cameraInputsManagerMod {
   
+  @JSImport("babylonjs/Cameras/cameraInputsManager", "CameraInputsManager")
   @js.native
-  class CameraInputsManager[TCamera /* <: Camera */] protected () extends js.Object {
+  class CameraInputsManager[TCamera /* <: Camera */] protected () extends StObject {
     /**
       * Instantiate a new Camera Input Manager.
       * @param camera Defines the camera the input manager blongs to
@@ -119,8 +119,16 @@ object cameraInputsManagerMod extends js.Object {
     def serialize(serializedCamera: js.Any): Unit = js.native
   }
   
+  type CameraInputsMap[TCamera /* <: Camera */] = (/**
+    * Accessor to the input by input type.
+    */
+  StringDictionary[ICameraInput[TCamera]]) with (/**
+    * Accessor to the input by input index.
+    */
+  NumberDictionary[ICameraInput[TCamera]])
+  
   @js.native
-  trait ICameraInput[TCamera /* <: Camera */] extends js.Object {
+  trait ICameraInput[TCamera /* <: Camera */] extends StObject {
     
     /**
       * Attach the input controls to a specific dom element to get the input from.
@@ -157,12 +165,4 @@ object cameraInputsManagerMod extends js.Object {
       */
     def getSimpleName(): String = js.native
   }
-  
-  type CameraInputsMap[TCamera /* <: Camera */] = (/**
-    * Accessor to the input by input type.
-    */
-  StringDictionary[ICameraInput[TCamera]]) with (/**
-    * Accessor to the input by input index.
-    */
-  NumberDictionary[ICameraInput[TCamera]])
 }

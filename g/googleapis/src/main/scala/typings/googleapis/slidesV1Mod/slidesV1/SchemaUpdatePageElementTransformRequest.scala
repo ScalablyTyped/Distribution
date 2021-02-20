@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * PageElement.transform for more details.
   */
 @js.native
-trait SchemaUpdatePageElementTransformRequest extends js.Object {
+trait SchemaUpdatePageElementTransformRequest extends StObject {
   
   /**
     * The apply mode of the transform update.
@@ -37,36 +38,24 @@ object SchemaUpdatePageElementTransformRequest {
   }
   
   @scala.inline
-  implicit class SchemaUpdatePageElementTransformRequestOps[Self <: SchemaUpdatePageElementTransformRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaUpdatePageElementTransformRequestMutableBuilder[Self <: SchemaUpdatePageElementTransformRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyMode(value: String): Self = StObject.set(x, "applyMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplyModeUndefined: Self = StObject.set(x, "applyMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyMode(value: String): Self = this.set("applyMode", value.asInstanceOf[js.Any])
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     @scala.inline
-    def deleteApplyMode: Self = this.set("applyMode", js.undefined)
+    def setTransform(value: SchemaAffineTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
-    
-    @scala.inline
-    def setTransform(value: SchemaAffineTransform): Self = this.set("transform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }
 }

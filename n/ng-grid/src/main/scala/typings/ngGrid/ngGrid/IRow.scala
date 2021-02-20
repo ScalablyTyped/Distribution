@@ -1,11 +1,12 @@
 package typings.ngGrid.ngGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IRow extends js.Object {
+trait IRow extends StObject {
   
   def afterSelectionChange(): Unit = js.native
   
@@ -74,75 +75,63 @@ object IRow {
   }
   
   @scala.inline
-  implicit class IRowOps[Self <: IRow] (val x: Self) extends AnyVal {
+  implicit class IRowMutableBuilder[Self <: IRow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterSelectionChange(value: () => Unit): Self = StObject.set(x, "afterSelectionChange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternatingRowClass(value: () => Unit): Self = StObject.set(x, "alternatingRowClass", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeforeSelectionChange(value: () => Unit): Self = StObject.set(x, "beforeSelectionChange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAfterSelectionChange(value: () => Unit): Self = this.set("afterSelectionChange", js.Any.fromFunction0(value))
+    def setConfig(value: IRowConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternatingRowClass(value: () => Unit): Self = this.set("alternatingRowClass", js.Any.fromFunction0(value))
+    def setContinueSelection(value: js.Any => Unit): Self = StObject.set(x, "continueSelection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeforeSelectionChange(value: () => Unit): Self = this.set("beforeSelectionChange", js.Any.fromFunction0(value))
+    def setCopy(value: () => IRow): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConfig(value: IRowConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinueSelection(value: js.Any => Unit): Self = this.set("continueSelection", js.Any.fromFunction1(value))
+    def setEnsureEntity(value: js.Any => Unit): Self = StObject.set(x, "ensureEntity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCopy(value: () => IRow): Self = this.set("copy", js.Any.fromFunction0(value))
+    def setEntity(value: js.Any): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursor(value: String): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setGetProperty(value: String => js.Any): Self = StObject.set(x, "getProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnsureEntity(value: js.Any => Unit): Self = this.set("ensureEntity", js.Any.fromFunction1(value))
+    def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntity(value: js.Any): Self = this.set("entity", value.asInstanceOf[js.Any])
+    def setRowDisplayIndex(value: Double): Self = StObject.set(x, "rowDisplayIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetProperty(value: String => js.Any): Self = this.set("getProperty", js.Any.fromFunction1(value))
+    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetTop(value: Double): Self = this.set("offsetTop", value.asInstanceOf[js.Any])
+    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowDisplayIndex(value: Double): Self = this.set("rowDisplayIndex", value.asInstanceOf[js.Any])
+    def setSelectionProvider(value: ISelectionProvider): Self = StObject.set(x, "selectionProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
+    def setSetSelection(value: Boolean => Unit): Self = StObject.set(x, "setSelection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setSetVars(value: IRow => Unit): Self = StObject.set(x, "setVars", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectionProvider(value: ISelectionProvider): Self = this.set("selectionProvider", value.asInstanceOf[js.Any])
+    def setToggleSelected(value: js.Any => Boolean): Self = StObject.set(x, "toggleSelected", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetSelection(value: Boolean => Unit): Self = this.set("setSelection", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetVars(value: IRow => Unit): Self = this.set("setVars", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToggleSelected(value: js.Any => Boolean): Self = this.set("toggleSelected", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUtils(value: js.Any): Self = this.set("utils", value.asInstanceOf[js.Any])
+    def setUtils(value: js.Any): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
   }
 }

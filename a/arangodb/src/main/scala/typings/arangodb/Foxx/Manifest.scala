@@ -2,12 +2,13 @@ package typings.arangodb.Foxx
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.arangodb.anon.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Manifest extends js.Object {
+trait Manifest extends StObject {
   
   var author: String = js.native
   
@@ -56,129 +57,117 @@ object Manifest {
   }
   
   @scala.inline
-  implicit class ManifestOps[Self <: Manifest] (val x: Self) extends AnyVal {
+  implicit class ManifestMutableBuilder[Self <: Manifest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfiguration(value: StringDictionary[ConfigurationDefinition]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
     @scala.inline
-    def setAuthor(value: String): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setContributors(value: js.Array[_]): Self = StObject.set(x, "contributors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setContributorsUndefined: Self = StObject.set(x, "contributors", js.undefined)
     
     @scala.inline
-    def setLib(value: String): Self = this.set("lib", value.asInstanceOf[js.Any])
+    def setContributorsVarargs(value: js.Any*): Self = StObject.set(x, "contributors", js.Array(value :_*))
     
     @scala.inline
-    def setConfiguration(value: StringDictionary[ConfigurationDefinition]): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    def setDefaultDocument(value: String): Self = StObject.set(x, "defaultDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    def setDefaultDocumentUndefined: Self = StObject.set(x, "defaultDocument", js.undefined)
     
     @scala.inline
-    def setContributorsVarargs(value: js.Any*): Self = this.set("contributors", js.Array(value :_*))
+    def setDependencies(value: StringDictionary[DependencyDefinition]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContributors(value: js.Array[_]): Self = this.set("contributors", value.asInstanceOf[js.Any])
+    def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
     @scala.inline
-    def deleteContributors: Self = this.set("contributors", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultDocument(value: String): Self = this.set("defaultDocument", value.asInstanceOf[js.Any])
+    def setEngines(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "engines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultDocument: Self = this.set("defaultDocument", js.undefined)
+    def setEnginesUndefined: Self = StObject.set(x, "engines", js.undefined)
     
     @scala.inline
-    def setDependencies(value: StringDictionary[DependencyDefinition]): Self = this.set("dependencies", value.asInstanceOf[js.Any])
+    def setFiles(value: StringDictionary[AssetDefinition]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDependencies: Self = this.set("dependencies", js.undefined)
+    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
     @scala.inline
-    def setEngines(value: StringDictionary[js.UndefOr[String]]): Self = this.set("engines", value.asInstanceOf[js.Any])
+    def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEngines: Self = this.set("engines", js.undefined)
+    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
     @scala.inline
-    def setFiles(value: StringDictionary[AssetDefinition]): Self = this.set("files", value.asInstanceOf[js.Any])
+    def setLib(value: String): Self = StObject.set(x, "lib", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFiles: Self = this.set("files", js.undefined)
+    def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: String): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    def setLicenseUndefined: Self = StObject.set(x, "license", js.undefined)
     
     @scala.inline
-    def deleteKeywords: Self = this.set("keywords", js.undefined)
+    def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicense(value: String): Self = this.set("license", value.asInstanceOf[js.Any])
+    def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
     
     @scala.inline
-    def deleteLicense: Self = this.set("license", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMain(value: String): Self = this.set("main", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMain: Self = this.set("main", js.undefined)
+    def setProvides(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "provides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProvidesUndefined: Self = StObject.set(x, "provides", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRepository(value: Type): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvides(value: StringDictionary[js.UndefOr[String]]): Self = this.set("provides", value.asInstanceOf[js.Any])
+    def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
     
     @scala.inline
-    def deleteProvides: Self = this.set("provides", js.undefined)
+    def setScripts(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepository(value: Type): Self = this.set("repository", value.asInstanceOf[js.Any])
+    def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
     
     @scala.inline
-    def deleteRepository: Self = this.set("repository", js.undefined)
+    def setTests(value: js.Array[String]): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScripts(value: StringDictionary[js.UndefOr[String]]): Self = this.set("scripts", value.asInstanceOf[js.Any])
+    def setTestsUndefined: Self = StObject.set(x, "tests", js.undefined)
     
     @scala.inline
-    def deleteScripts: Self = this.set("scripts", js.undefined)
+    def setTestsVarargs(value: String*): Self = StObject.set(x, "tests", js.Array(value :_*))
     
     @scala.inline
-    def setTestsVarargs(value: String*): Self = this.set("tests", js.Array(value :_*))
+    def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTests(value: js.Array[String]): Self = this.set("tests", value.asInstanceOf[js.Any])
+    def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
     
     @scala.inline
-    def deleteTests: Self = this.set("tests", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnail(value: String): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnail: Self = this.set("thumbnail", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -4,13 +4,18 @@ import typings.appBuilderLib.coreMod.Target
 import typings.appBuilderLib.linuxPackagerMod.LinuxPackager
 import typings.appBuilderLib.linuxTargetHelperMod.LinuxTargetHelper
 import typings.appBuilderLib.snapOptionsMod.SnapOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("app-builder-lib/out/targets/snap", JSImport.Namespace)
-@js.native
-object snapMod extends js.Object {
+object snapMod {
+  
+  @JSImport("app-builder-lib/out/targets/snap", JSImport.Default)
+  @js.native
+  class default protected () extends SnapTarget {
+    def this(name: String, packager: LinuxPackager, helper: LinuxTargetHelper, outDir: String) = this()
+  }
   
   @js.native
   trait SnapTarget extends Target {
@@ -29,10 +34,5 @@ object snapMod extends js.Object {
     val packager: js.Any = js.native
     
     var replaceDefault: js.Any = js.native
-  }
-  
-  @js.native
-  class default protected () extends SnapTarget {
-    def this(name: String, packager: LinuxPackager, helper: LinuxTargetHelper, outDir: String) = this()
   }
 }

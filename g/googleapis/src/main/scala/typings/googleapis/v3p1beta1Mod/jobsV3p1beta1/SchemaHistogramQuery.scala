@@ -1,5 +1,6 @@
 package typings.googleapis.v3p1beta1Mod.jobsV3p1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Input Only.  The histogram request.
   */
 @js.native
-trait SchemaHistogramQuery extends js.Object {
+trait SchemaHistogramQuery extends StObject {
   
   /**
     * An expression specifies a histogram request against matching resources
@@ -91,24 +92,12 @@ object SchemaHistogramQuery {
   }
   
   @scala.inline
-  implicit class SchemaHistogramQueryOps[Self <: SchemaHistogramQuery] (val x: Self) extends AnyVal {
+  implicit class SchemaHistogramQueryMutableBuilder[Self <: SchemaHistogramQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHistogramQuery(value: String): Self = StObject.set(x, "histogramQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHistogramQuery(value: String): Self = this.set("histogramQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHistogramQuery: Self = this.set("histogramQuery", js.undefined)
+    def setHistogramQueryUndefined: Self = StObject.set(x, "histogramQuery", js.undefined)
   }
 }

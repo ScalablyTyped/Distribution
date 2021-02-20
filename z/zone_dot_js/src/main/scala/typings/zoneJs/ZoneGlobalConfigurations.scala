@@ -1,5 +1,6 @@
 package typings.zoneJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * importing `zone.js` to change `zone.js` default behaviors.
   */
 @js.native
-trait ZoneGlobalConfigurations extends js.Object {
+trait ZoneGlobalConfigurations extends StObject {
   
   /**
     * Disable the monkey patch of the `Node.js` `EventEmitter` API.
@@ -572,168 +573,156 @@ object ZoneGlobalConfigurations {
   }
   
   @scala.inline
-  implicit class ZoneGlobalConfigurationsOps[Self <: ZoneGlobalConfigurations] (val x: Self) extends AnyVal {
+  implicit class ZoneGlobalConfigurationsMutableBuilder[Self <: ZoneGlobalConfigurations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set__Zone_disable_EventEmitter(value: Boolean): Self = StObject.set(x, "__Zone_disable_EventEmitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set__Zone_disable_EventEmitterUndefined: Self = StObject.set(x, "__Zone_disable_EventEmitter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set__Zone_disable_EventTarget(value: Boolean): Self = StObject.set(x, "__Zone_disable_EventTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_EventEmitter(value: Boolean): Self = this.set("__Zone_disable_EventEmitter", value.asInstanceOf[js.Any])
+    def set__Zone_disable_EventTargetLegacy(value: Boolean): Self = StObject.set(x, "__Zone_disable_EventTargetLegacy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete__Zone_disable_EventEmitter: Self = this.set("__Zone_disable_EventEmitter", js.undefined)
+    def set__Zone_disable_EventTargetLegacyUndefined: Self = StObject.set(x, "__Zone_disable_EventTargetLegacy", js.undefined)
     
     @scala.inline
-    def set__Zone_disable_EventTarget(value: Boolean): Self = this.set("__Zone_disable_EventTarget", value.asInstanceOf[js.Any])
+    def set__Zone_disable_EventTargetUndefined: Self = StObject.set(x, "__Zone_disable_EventTarget", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_EventTarget: Self = this.set("__Zone_disable_EventTarget", js.undefined)
+    def set__Zone_disable_FileReader(value: Boolean): Self = StObject.set(x, "__Zone_disable_FileReader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_EventTargetLegacy(value: Boolean): Self = this.set("__Zone_disable_EventTargetLegacy", value.asInstanceOf[js.Any])
+    def set__Zone_disable_FileReaderUndefined: Self = StObject.set(x, "__Zone_disable_FileReader", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_EventTargetLegacy: Self = this.set("__Zone_disable_EventTargetLegacy", js.undefined)
+    def set__Zone_disable_IntersectionObserver(value: Boolean): Self = StObject.set(x, "__Zone_disable_IntersectionObserver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_FileReader(value: Boolean): Self = this.set("__Zone_disable_FileReader", value.asInstanceOf[js.Any])
+    def set__Zone_disable_IntersectionObserverUndefined: Self = StObject.set(x, "__Zone_disable_IntersectionObserver", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_FileReader: Self = this.set("__Zone_disable_FileReader", js.undefined)
+    def set__Zone_disable_MutationObserver(value: Boolean): Self = StObject.set(x, "__Zone_disable_MutationObserver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_IntersectionObserver(value: Boolean): Self = this.set("__Zone_disable_IntersectionObserver", value.asInstanceOf[js.Any])
+    def set__Zone_disable_MutationObserverUndefined: Self = StObject.set(x, "__Zone_disable_MutationObserver", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_IntersectionObserver: Self = this.set("__Zone_disable_IntersectionObserver", js.undefined)
+    def set__Zone_disable_XHR(value: Boolean): Self = StObject.set(x, "__Zone_disable_XHR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_MutationObserver(value: Boolean): Self = this.set("__Zone_disable_MutationObserver", value.asInstanceOf[js.Any])
+    def set__Zone_disable_XHRUndefined: Self = StObject.set(x, "__Zone_disable_XHR", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_MutationObserver: Self = this.set("__Zone_disable_MutationObserver", js.undefined)
+    def set__Zone_disable_ZoneAwarePromise(value: Boolean): Self = StObject.set(x, "__Zone_disable_ZoneAwarePromise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_XHR(value: Boolean): Self = this.set("__Zone_disable_XHR", value.asInstanceOf[js.Any])
+    def set__Zone_disable_ZoneAwarePromiseUndefined: Self = StObject.set(x, "__Zone_disable_ZoneAwarePromise", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_XHR: Self = this.set("__Zone_disable_XHR", js.undefined)
+    def set__Zone_disable_blocking(value: Boolean): Self = StObject.set(x, "__Zone_disable_blocking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_ZoneAwarePromise(value: Boolean): Self = this.set("__Zone_disable_ZoneAwarePromise", value.asInstanceOf[js.Any])
+    def set__Zone_disable_blockingUndefined: Self = StObject.set(x, "__Zone_disable_blocking", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_ZoneAwarePromise: Self = this.set("__Zone_disable_ZoneAwarePromise", js.undefined)
+    def set__Zone_disable_canvas(value: Boolean): Self = StObject.set(x, "__Zone_disable_canvas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_blocking(value: Boolean): Self = this.set("__Zone_disable_blocking", value.asInstanceOf[js.Any])
+    def set__Zone_disable_canvasUndefined: Self = StObject.set(x, "__Zone_disable_canvas", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_blocking: Self = this.set("__Zone_disable_blocking", js.undefined)
+    def set__Zone_disable_crypto(value: Boolean): Self = StObject.set(x, "__Zone_disable_crypto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_canvas(value: Boolean): Self = this.set("__Zone_disable_canvas", value.asInstanceOf[js.Any])
+    def set__Zone_disable_cryptoUndefined: Self = StObject.set(x, "__Zone_disable_crypto", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_canvas: Self = this.set("__Zone_disable_canvas", js.undefined)
+    def set__Zone_disable_customElements(value: Boolean): Self = StObject.set(x, "__Zone_disable_customElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_crypto(value: Boolean): Self = this.set("__Zone_disable_crypto", value.asInstanceOf[js.Any])
+    def set__Zone_disable_customElementsUndefined: Self = StObject.set(x, "__Zone_disable_customElements", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_crypto: Self = this.set("__Zone_disable_crypto", js.undefined)
+    def set__Zone_disable_defineProperty(value: Boolean): Self = StObject.set(x, "__Zone_disable_defineProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_customElements(value: Boolean): Self = this.set("__Zone_disable_customElements", value.asInstanceOf[js.Any])
+    def set__Zone_disable_definePropertyUndefined: Self = StObject.set(x, "__Zone_disable_defineProperty", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_customElements: Self = this.set("__Zone_disable_customElements", js.undefined)
+    def set__Zone_disable_fs(value: Boolean): Self = StObject.set(x, "__Zone_disable_fs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_defineProperty(value: Boolean): Self = this.set("__Zone_disable_defineProperty", value.asInstanceOf[js.Any])
+    def set__Zone_disable_fsUndefined: Self = StObject.set(x, "__Zone_disable_fs", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_defineProperty: Self = this.set("__Zone_disable_defineProperty", js.undefined)
+    def set__Zone_disable_geolocation(value: Boolean): Self = StObject.set(x, "__Zone_disable_geolocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_fs(value: Boolean): Self = this.set("__Zone_disable_fs", value.asInstanceOf[js.Any])
+    def set__Zone_disable_geolocationUndefined: Self = StObject.set(x, "__Zone_disable_geolocation", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_fs: Self = this.set("__Zone_disable_fs", js.undefined)
+    def set__Zone_disable_nextTick(value: Boolean): Self = StObject.set(x, "__Zone_disable_nextTick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_geolocation(value: Boolean): Self = this.set("__Zone_disable_geolocation", value.asInstanceOf[js.Any])
+    def set__Zone_disable_nextTickUndefined: Self = StObject.set(x, "__Zone_disable_nextTick", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_geolocation: Self = this.set("__Zone_disable_geolocation", js.undefined)
+    def set__Zone_disable_node_timers(value: Boolean): Self = StObject.set(x, "__Zone_disable_node_timers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_nextTick(value: Boolean): Self = this.set("__Zone_disable_nextTick", value.asInstanceOf[js.Any])
+    def set__Zone_disable_node_timersUndefined: Self = StObject.set(x, "__Zone_disable_node_timers", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_nextTick: Self = this.set("__Zone_disable_nextTick", js.undefined)
+    def set__Zone_disable_on_property(value: Boolean): Self = StObject.set(x, "__Zone_disable_on_property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_node_timers(value: Boolean): Self = this.set("__Zone_disable_node_timers", value.asInstanceOf[js.Any])
+    def set__Zone_disable_on_propertyUndefined: Self = StObject.set(x, "__Zone_disable_on_property", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_node_timers: Self = this.set("__Zone_disable_node_timers", js.undefined)
+    def set__Zone_disable_registerElement(value: Boolean): Self = StObject.set(x, "__Zone_disable_registerElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_on_property(value: Boolean): Self = this.set("__Zone_disable_on_property", value.asInstanceOf[js.Any])
+    def set__Zone_disable_registerElementUndefined: Self = StObject.set(x, "__Zone_disable_registerElement", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_on_property: Self = this.set("__Zone_disable_on_property", js.undefined)
+    def set__Zone_disable_requestAnimationFrame(value: Boolean): Self = StObject.set(x, "__Zone_disable_requestAnimationFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_registerElement(value: Boolean): Self = this.set("__Zone_disable_registerElement", value.asInstanceOf[js.Any])
+    def set__Zone_disable_requestAnimationFrameUndefined: Self = StObject.set(x, "__Zone_disable_requestAnimationFrame", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_registerElement: Self = this.set("__Zone_disable_registerElement", js.undefined)
+    def set__Zone_disable_timers(value: Boolean): Self = StObject.set(x, "__Zone_disable_timers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_requestAnimationFrame(value: Boolean): Self = this.set("__Zone_disable_requestAnimationFrame", value.asInstanceOf[js.Any])
+    def set__Zone_disable_timersUndefined: Self = StObject.set(x, "__Zone_disable_timers", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_requestAnimationFrame: Self = this.set("__Zone_disable_requestAnimationFrame", js.undefined)
+    def set__zone_symbol__DISABLE_WRAPPING_UNCAUGHT_PROMISE_REJECTION(value: Boolean): Self = StObject.set(x, "__zone_symbol__DISABLE_WRAPPING_UNCAUGHT_PROMISE_REJECTION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__Zone_disable_timers(value: Boolean): Self = this.set("__Zone_disable_timers", value.asInstanceOf[js.Any])
+    def set__zone_symbol__DISABLE_WRAPPING_UNCAUGHT_PROMISE_REJECTIONUndefined: Self = StObject.set(x, "__zone_symbol__DISABLE_WRAPPING_UNCAUGHT_PROMISE_REJECTION", js.undefined)
     
     @scala.inline
-    def delete__Zone_disable_timers: Self = this.set("__Zone_disable_timers", js.undefined)
+    def set__zone_symbol__PASSIVE_EVENTS(value: js.Array[String]): Self = StObject.set(x, "__zone_symbol__PASSIVE_EVENTS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__zone_symbol__DISABLE_WRAPPING_UNCAUGHT_PROMISE_REJECTION(value: Boolean): Self = this.set("__zone_symbol__DISABLE_WRAPPING_UNCAUGHT_PROMISE_REJECTION", value.asInstanceOf[js.Any])
+    def set__zone_symbol__PASSIVE_EVENTSUndefined: Self = StObject.set(x, "__zone_symbol__PASSIVE_EVENTS", js.undefined)
     
     @scala.inline
-    def delete__zone_symbol__DISABLE_WRAPPING_UNCAUGHT_PROMISE_REJECTION: Self = this.set("__zone_symbol__DISABLE_WRAPPING_UNCAUGHT_PROMISE_REJECTION", js.undefined)
+    def set__zone_symbol__PASSIVE_EVENTSVarargs(value: String*): Self = StObject.set(x, "__zone_symbol__PASSIVE_EVENTS", js.Array(value :_*))
     
     @scala.inline
-    def set__zone_symbol__PASSIVE_EVENTSVarargs(value: String*): Self = this.set("__zone_symbol__PASSIVE_EVENTS", js.Array(value :_*))
+    def set__zone_symbol__UNPATCHED_EVENTS(value: js.Array[String]): Self = StObject.set(x, "__zone_symbol__UNPATCHED_EVENTS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__zone_symbol__PASSIVE_EVENTS(value: js.Array[String]): Self = this.set("__zone_symbol__PASSIVE_EVENTS", value.asInstanceOf[js.Any])
+    def set__zone_symbol__UNPATCHED_EVENTSUndefined: Self = StObject.set(x, "__zone_symbol__UNPATCHED_EVENTS", js.undefined)
     
     @scala.inline
-    def delete__zone_symbol__PASSIVE_EVENTS: Self = this.set("__zone_symbol__PASSIVE_EVENTS", js.undefined)
-    
-    @scala.inline
-    def set__zone_symbol__UNPATCHED_EVENTSVarargs(value: String*): Self = this.set("__zone_symbol__UNPATCHED_EVENTS", js.Array(value :_*))
-    
-    @scala.inline
-    def set__zone_symbol__UNPATCHED_EVENTS(value: js.Array[String]): Self = this.set("__zone_symbol__UNPATCHED_EVENTS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete__zone_symbol__UNPATCHED_EVENTS: Self = this.set("__zone_symbol__UNPATCHED_EVENTS", js.undefined)
+    def set__zone_symbol__UNPATCHED_EVENTSVarargs(value: String*): Self = StObject.set(x, "__zone_symbol__UNPATCHED_EVENTS", js.Array(value :_*))
   }
 }

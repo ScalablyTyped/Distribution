@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SheetsChartProperties extends js.Object {
+trait SheetsChartProperties extends StObject {
   
   /** The properties of the embedded chart image. */
   var chartImageProperties: js.UndefOr[ImageProperties] = js.native
@@ -19,24 +20,12 @@ object SheetsChartProperties {
   }
   
   @scala.inline
-  implicit class SheetsChartPropertiesOps[Self <: SheetsChartProperties] (val x: Self) extends AnyVal {
+  implicit class SheetsChartPropertiesMutableBuilder[Self <: SheetsChartProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChartImageProperties(value: ImageProperties): Self = StObject.set(x, "chartImageProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChartImageProperties(value: ImageProperties): Self = this.set("chartImageProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChartImageProperties: Self = this.set("chartImageProperties", js.undefined)
+    def setChartImagePropertiesUndefined: Self = StObject.set(x, "chartImageProperties", js.undefined)
   }
 }

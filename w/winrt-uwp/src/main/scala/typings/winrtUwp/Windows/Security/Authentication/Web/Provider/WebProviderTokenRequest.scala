@@ -7,13 +7,14 @@ import typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequest
 import typings.winrtUwp.Windows.Security.Authentication.Web.TokenBindingKeyType
 import typings.winrtUwp.Windows.Security.Credentials.WebAccount
 import typings.winrtUwp.Windows.Security.Cryptography.Core.CryptographicKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a request for a token from a client to a provider. */
 @js.native
-trait WebProviderTokenRequest extends js.Object {
+trait WebProviderTokenRequest extends StObject {
   
   /** Gets the app callback Uri. */
   var applicationCallbackUri: Uri = js.native
@@ -50,33 +51,21 @@ object WebProviderTokenRequest {
   }
   
   @scala.inline
-  implicit class WebProviderTokenRequestOps[Self <: WebProviderTokenRequest] (val x: Self) extends AnyVal {
+  implicit class WebProviderTokenRequestMutableBuilder[Self <: WebProviderTokenRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationCallbackUri(value: Uri): Self = StObject.set(x, "applicationCallbackUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientRequest(value: WebTokenRequest): Self = StObject.set(x, "clientRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetApplicationTokenBindingKeyAsync(value: (TokenBindingKeyType, Uri) => IPromiseWithIAsyncOperation[CryptographicKey]): Self = StObject.set(x, "getApplicationTokenBindingKeyAsync", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setApplicationCallbackUri(value: Uri): Self = this.set("applicationCallbackUri", value.asInstanceOf[js.Any])
+    def setWebAccountSelectionOptions(value: WebAccountSelectionOptions): Self = StObject.set(x, "webAccountSelectionOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientRequest(value: WebTokenRequest): Self = this.set("clientRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetApplicationTokenBindingKeyAsync(value: (TokenBindingKeyType, Uri) => IPromiseWithIAsyncOperation[CryptographicKey]): Self = this.set("getApplicationTokenBindingKeyAsync", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setWebAccountSelectionOptions(value: WebAccountSelectionOptions): Self = this.set("webAccountSelectionOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebAccounts(value: IVectorView[WebAccount]): Self = this.set("webAccounts", value.asInstanceOf[js.Any])
+    def setWebAccounts(value: IVectorView[WebAccount]): Self = StObject.set(x, "webAccounts", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateBackupSelectionOutput extends js.Object {
+trait CreateBackupSelectionOutput extends StObject {
   
   /**
     * Uniquely identifies a backup plan.
@@ -31,36 +32,24 @@ object CreateBackupSelectionOutput {
   }
   
   @scala.inline
-  implicit class CreateBackupSelectionOutputOps[Self <: CreateBackupSelectionOutput] (val x: Self) extends AnyVal {
+  implicit class CreateBackupSelectionOutputMutableBuilder[Self <: CreateBackupSelectionOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupPlanId(value: String): Self = StObject.set(x, "BackupPlanId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupPlanIdUndefined: Self = StObject.set(x, "BackupPlanId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupPlanId(value: String): Self = this.set("BackupPlanId", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def deleteBackupPlanId: Self = this.set("BackupPlanId", js.undefined)
+    def setSelectionId(value: String): Self = StObject.set(x, "SelectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
-    
-    @scala.inline
-    def setSelectionId(value: String): Self = this.set("SelectionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectionId: Self = this.set("SelectionId", js.undefined)
+    def setSelectionIdUndefined: Self = StObject.set(x, "SelectionId", js.undefined)
   }
 }

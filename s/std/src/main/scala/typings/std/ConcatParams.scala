@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,45 +29,33 @@ object ConcatParams {
   }
   
   @scala.inline
-  implicit class ConcatParamsOps[Self <: ConcatParams] (val x: Self) extends AnyVal {
+  implicit class ConcatParamsMutableBuilder[Self <: ConcatParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithmId(value: Uint8Array): Self = StObject.set(x, "algorithmId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHash(value: java.lang.String | Algorithm): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
     @scala.inline
-    def setAlgorithmId(value: Uint8Array): Self = this.set("algorithmId", value.asInstanceOf[js.Any])
+    def setPartyUInfo(value: Uint8Array): Self = StObject.set(x, "partyUInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartyUInfo(value: Uint8Array): Self = this.set("partyUInfo", value.asInstanceOf[js.Any])
+    def setPartyVInfo(value: Uint8Array): Self = StObject.set(x, "partyVInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartyVInfo(value: Uint8Array): Self = this.set("partyVInfo", value.asInstanceOf[js.Any])
+    def setPrivateInfo(value: Uint8Array): Self = StObject.set(x, "privateInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: java.lang.String | Algorithm): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setPrivateInfoUndefined: Self = StObject.set(x, "privateInfo", js.undefined)
     
     @scala.inline
-    def deleteHash: Self = this.set("hash", js.undefined)
+    def setPublicInfo(value: Uint8Array): Self = StObject.set(x, "publicInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateInfo(value: Uint8Array): Self = this.set("privateInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateInfo: Self = this.set("privateInfo", js.undefined)
-    
-    @scala.inline
-    def setPublicInfo(value: Uint8Array): Self = this.set("publicInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicInfo: Self = this.set("publicInfo", js.undefined)
+    def setPublicInfoUndefined: Self = StObject.set(x, "publicInfo", js.undefined)
   }
 }

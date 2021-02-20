@@ -1,11 +1,12 @@
 package typings.awsSdk.fsxMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WindowsFileSystemConfiguration extends js.Object {
+trait WindowsFileSystemConfiguration extends StObject {
   
   /**
     * The ID for an existing Microsoft Active Directory instance that the file system should join when it's created.
@@ -75,102 +76,90 @@ object WindowsFileSystemConfiguration {
   }
   
   @scala.inline
-  implicit class WindowsFileSystemConfigurationOps[Self <: WindowsFileSystemConfiguration] (val x: Self) extends AnyVal {
+  implicit class WindowsFileSystemConfigurationMutableBuilder[Self <: WindowsFileSystemConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveDirectoryId(value: DirectoryId): Self = StObject.set(x, "ActiveDirectoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveDirectoryIdUndefined: Self = StObject.set(x, "ActiveDirectoryId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAliases(value: Aliases): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveDirectoryId(value: DirectoryId): Self = this.set("ActiveDirectoryId", value.asInstanceOf[js.Any])
+    def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
     
     @scala.inline
-    def deleteActiveDirectoryId: Self = this.set("ActiveDirectoryId", js.undefined)
+    def setAliasesVarargs(value: Alias*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
     
     @scala.inline
-    def setAliasesVarargs(value: Alias*): Self = this.set("Aliases", js.Array(value :_*))
+    def setAutomaticBackupRetentionDays(value: AutomaticBackupRetentionDays): Self = StObject.set(x, "AutomaticBackupRetentionDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliases(value: Aliases): Self = this.set("Aliases", value.asInstanceOf[js.Any])
+    def setAutomaticBackupRetentionDaysUndefined: Self = StObject.set(x, "AutomaticBackupRetentionDays", js.undefined)
     
     @scala.inline
-    def deleteAliases: Self = this.set("Aliases", js.undefined)
+    def setCopyTagsToBackups(value: Flag): Self = StObject.set(x, "CopyTagsToBackups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticBackupRetentionDays(value: AutomaticBackupRetentionDays): Self = this.set("AutomaticBackupRetentionDays", value.asInstanceOf[js.Any])
+    def setCopyTagsToBackupsUndefined: Self = StObject.set(x, "CopyTagsToBackups", js.undefined)
     
     @scala.inline
-    def deleteAutomaticBackupRetentionDays: Self = this.set("AutomaticBackupRetentionDays", js.undefined)
+    def setDailyAutomaticBackupStartTime(value: DailyTime): Self = StObject.set(x, "DailyAutomaticBackupStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyTagsToBackups(value: Flag): Self = this.set("CopyTagsToBackups", value.asInstanceOf[js.Any])
+    def setDailyAutomaticBackupStartTimeUndefined: Self = StObject.set(x, "DailyAutomaticBackupStartTime", js.undefined)
     
     @scala.inline
-    def deleteCopyTagsToBackups: Self = this.set("CopyTagsToBackups", js.undefined)
+    def setDeploymentType(value: WindowsDeploymentType): Self = StObject.set(x, "DeploymentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDailyAutomaticBackupStartTime(value: DailyTime): Self = this.set("DailyAutomaticBackupStartTime", value.asInstanceOf[js.Any])
+    def setDeploymentTypeUndefined: Self = StObject.set(x, "DeploymentType", js.undefined)
     
     @scala.inline
-    def deleteDailyAutomaticBackupStartTime: Self = this.set("DailyAutomaticBackupStartTime", js.undefined)
+    def setMaintenanceOperationsInProgress(value: FileSystemMaintenanceOperations): Self = StObject.set(x, "MaintenanceOperationsInProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentType(value: WindowsDeploymentType): Self = this.set("DeploymentType", value.asInstanceOf[js.Any])
+    def setMaintenanceOperationsInProgressUndefined: Self = StObject.set(x, "MaintenanceOperationsInProgress", js.undefined)
     
     @scala.inline
-    def deleteDeploymentType: Self = this.set("DeploymentType", js.undefined)
+    def setMaintenanceOperationsInProgressVarargs(value: FileSystemMaintenanceOperation*): Self = StObject.set(x, "MaintenanceOperationsInProgress", js.Array(value :_*))
     
     @scala.inline
-    def setMaintenanceOperationsInProgressVarargs(value: FileSystemMaintenanceOperation*): Self = this.set("MaintenanceOperationsInProgress", js.Array(value :_*))
+    def setPreferredFileServerIp(value: IpAddress): Self = StObject.set(x, "PreferredFileServerIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaintenanceOperationsInProgress(value: FileSystemMaintenanceOperations): Self = this.set("MaintenanceOperationsInProgress", value.asInstanceOf[js.Any])
+    def setPreferredFileServerIpUndefined: Self = StObject.set(x, "PreferredFileServerIp", js.undefined)
     
     @scala.inline
-    def deleteMaintenanceOperationsInProgress: Self = this.set("MaintenanceOperationsInProgress", js.undefined)
+    def setPreferredSubnetId(value: SubnetId): Self = StObject.set(x, "PreferredSubnetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredFileServerIp(value: IpAddress): Self = this.set("PreferredFileServerIp", value.asInstanceOf[js.Any])
+    def setPreferredSubnetIdUndefined: Self = StObject.set(x, "PreferredSubnetId", js.undefined)
     
     @scala.inline
-    def deletePreferredFileServerIp: Self = this.set("PreferredFileServerIp", js.undefined)
+    def setRemoteAdministrationEndpoint(value: DNSName): Self = StObject.set(x, "RemoteAdministrationEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredSubnetId(value: SubnetId): Self = this.set("PreferredSubnetId", value.asInstanceOf[js.Any])
+    def setRemoteAdministrationEndpointUndefined: Self = StObject.set(x, "RemoteAdministrationEndpoint", js.undefined)
     
     @scala.inline
-    def deletePreferredSubnetId: Self = this.set("PreferredSubnetId", js.undefined)
+    def setSelfManagedActiveDirectoryConfiguration(value: SelfManagedActiveDirectoryAttributes): Self = StObject.set(x, "SelfManagedActiveDirectoryConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteAdministrationEndpoint(value: DNSName): Self = this.set("RemoteAdministrationEndpoint", value.asInstanceOf[js.Any])
+    def setSelfManagedActiveDirectoryConfigurationUndefined: Self = StObject.set(x, "SelfManagedActiveDirectoryConfiguration", js.undefined)
     
     @scala.inline
-    def deleteRemoteAdministrationEndpoint: Self = this.set("RemoteAdministrationEndpoint", js.undefined)
+    def setThroughputCapacity(value: MegabytesPerSecond): Self = StObject.set(x, "ThroughputCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfManagedActiveDirectoryConfiguration(value: SelfManagedActiveDirectoryAttributes): Self = this.set("SelfManagedActiveDirectoryConfiguration", value.asInstanceOf[js.Any])
+    def setThroughputCapacityUndefined: Self = StObject.set(x, "ThroughputCapacity", js.undefined)
     
     @scala.inline
-    def deleteSelfManagedActiveDirectoryConfiguration: Self = this.set("SelfManagedActiveDirectoryConfiguration", js.undefined)
+    def setWeeklyMaintenanceStartTime(value: WeeklyTime): Self = StObject.set(x, "WeeklyMaintenanceStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThroughputCapacity(value: MegabytesPerSecond): Self = this.set("ThroughputCapacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThroughputCapacity: Self = this.set("ThroughputCapacity", js.undefined)
-    
-    @scala.inline
-    def setWeeklyMaintenanceStartTime(value: WeeklyTime): Self = this.set("WeeklyMaintenanceStartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeeklyMaintenanceStartTime: Self = this.set("WeeklyMaintenanceStartTime", js.undefined)
+    def setWeeklyMaintenanceStartTimeUndefined: Self = StObject.set(x, "WeeklyMaintenanceStartTime", js.undefined)
   }
 }

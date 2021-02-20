@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.System.RemoteSystems
 
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtUwp.Windows.WinRTEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Watches for activity related to the discovery of remote systems and raises the appropriate events. */
 @js.native
-trait RemoteSystemWatcher extends js.Object {
+trait RemoteSystemWatcher extends StObject {
   
   /** This event is raised when the initial remote system discovery process completes. */
   def onenumerationcompleted(ev: RemoteSystemEnumerationCompletedEventArgs with WinRTEvent[RemoteSystemWatcher]): Unit = js.native

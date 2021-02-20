@@ -12,6 +12,7 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNativeElements.reactNativeElementsStrings.clear
 import typings.reactNativeElements.reactNativeElementsStrings.outline
 import typings.reactNativeElements.reactNativeElementsStrings.solid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.reactNative.mod.TouchableWithoutFeedbackPropsIOS because Already inherited
 - typings.reactNative.mod.AccessibilityProps because Already inherited
 - typings.reactNative.mod.TouchableWithoutFeedbackProps because Already inherited
-- typings.reactNative.mod.TouchableNativeFeedbackProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, delayLongPress, delayPressIn, delayPressOut, disabled, hasTVPreferredFocus, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onBlur, onFocus, onLayout, onLongPress, onMagicTap, onPress, onPressIn, onPressOut, pressRetentionOffset, style, testID, touchSoundDisabled, tvParallaxProperties. Inlined background, useForeground */ @js.native
+- typings.reactNative.mod.TouchableNativeFeedbackProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, delayLongPress, delayPressIn, delayPressOut, disabled, hasTVPreferredFocus, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onBlur, onFocus, onLayout, onLongPress, onMagicTap, onPress, onPressIn, onPressOut, pressRetentionOffset, style, testID, touchSoundDisabled, tvParallaxProperties. Inlined useForeground, background */ @js.native
 trait ButtonProps extends TouchableOpacityProps {
   
   /**
@@ -168,165 +169,153 @@ object ButtonProps {
   }
   
   @scala.inline
-  implicit class ButtonPropsOps[Self <: ButtonProps] (val x: Self) extends AnyVal {
+  implicit class ButtonPropsMutableBuilder[Self <: ButtonProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: BackgroundPropType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchableComponent(value: ComponentClass[js.Object, ComponentState]): Self = this.set("TouchableComponent", value.asInstanceOf[js.Any])
+    def setButtonStyleNull: Self = StObject.set(x, "buttonStyle", null)
     
     @scala.inline
-    def deleteTouchableComponent: Self = this.set("TouchableComponent", js.undefined)
+    def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
     
     @scala.inline
-    def setViewComponent(value: ComponentClass[_, ComponentState]): Self = this.set("ViewComponent", value.asInstanceOf[js.Any])
+    def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteViewComponent: Self = this.set("ViewComponent", js.undefined)
+    def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
     
     @scala.inline
-    def setBackground(value: BackgroundPropType): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonStyle(value: StyleProp[ViewStyle]): Self = this.set("buttonStyle", value.asInstanceOf[js.Any])
+    def setDisabledStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "disabledStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteButtonStyle: Self = this.set("buttonStyle", js.undefined)
+    def setDisabledStyleNull: Self = StObject.set(x, "disabledStyle", null)
     
     @scala.inline
-    def setButtonStyleNull: Self = this.set("buttonStyle", null)
+    def setDisabledStyleUndefined: Self = StObject.set(x, "disabledStyle", js.undefined)
     
     @scala.inline
-    def setContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    def setDisabledTitleStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "disabledTitleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    def setDisabledTitleStyleNull: Self = StObject.set(x, "disabledTitleStyle", null)
     
     @scala.inline
-    def setContainerStyleNull: Self = this.set("containerStyle", null)
+    def setDisabledTitleStyleUndefined: Self = StObject.set(x, "disabledTitleStyle", js.undefined)
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setIcon(value: IconNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledStyle(value: StyleProp[ViewStyle]): Self = this.set("disabledStyle", value.asInstanceOf[js.Any])
+    def setIconContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "iconContainerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisabledStyle: Self = this.set("disabledStyle", js.undefined)
+    def setIconContainerStyleNull: Self = StObject.set(x, "iconContainerStyle", null)
     
     @scala.inline
-    def setDisabledStyleNull: Self = this.set("disabledStyle", null)
+    def setIconContainerStyleUndefined: Self = StObject.set(x, "iconContainerStyle", js.undefined)
     
     @scala.inline
-    def setDisabledTitleStyle(value: StyleProp[TextStyle]): Self = this.set("disabledTitleStyle", value.asInstanceOf[js.Any])
+    def setIconRight(value: Boolean): Self = StObject.set(x, "iconRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisabledTitleStyle: Self = this.set("disabledTitleStyle", js.undefined)
+    def setIconRightUndefined: Self = StObject.set(x, "iconRight", js.undefined)
     
     @scala.inline
-    def setDisabledTitleStyleNull: Self = this.set("disabledTitleStyle", null)
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def setIcon(value: IconNode): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setLinearGradientProps(value: js.Object): Self = StObject.set(x, "linearGradientProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setLinearGradientPropsUndefined: Self = StObject.set(x, "linearGradientProps", js.undefined)
     
     @scala.inline
-    def setIconContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("iconContainerStyle", value.asInstanceOf[js.Any])
+    def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIconContainerStyle: Self = this.set("iconContainerStyle", js.undefined)
+    def setLoadingProps(value: ActivityIndicatorProperties): Self = StObject.set(x, "loadingProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconContainerStyleNull: Self = this.set("iconContainerStyle", null)
+    def setLoadingPropsUndefined: Self = StObject.set(x, "loadingProps", js.undefined)
     
     @scala.inline
-    def setIconRight(value: Boolean): Self = this.set("iconRight", value.asInstanceOf[js.Any])
+    def setLoadingStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "loadingStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIconRight: Self = this.set("iconRight", js.undefined)
+    def setLoadingStyleNull: Self = StObject.set(x, "loadingStyle", null)
     
     @scala.inline
-    def setLinearGradientProps(value: js.Object): Self = this.set("linearGradientProps", value.asInstanceOf[js.Any])
+    def setLoadingStyleUndefined: Self = StObject.set(x, "loadingStyle", js.undefined)
     
     @scala.inline
-    def deleteLinearGradientProps: Self = this.set("linearGradientProps", js.undefined)
+    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
     @scala.inline
-    def setLoading(value: Boolean): Self = this.set("loading", value.asInstanceOf[js.Any])
+    def setRaised(value: Boolean): Self = StObject.set(x, "raised", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoading: Self = this.set("loading", js.undefined)
+    def setRaisedUndefined: Self = StObject.set(x, "raised", js.undefined)
     
     @scala.inline
-    def setLoadingProps(value: ActivityIndicatorProperties): Self = this.set("loadingProps", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoadingProps: Self = this.set("loadingProps", js.undefined)
+    def setTitleProps(value: TextProperties): Self = StObject.set(x, "titleProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadingStyle(value: StyleProp[ViewStyle]): Self = this.set("loadingStyle", value.asInstanceOf[js.Any])
+    def setTitlePropsUndefined: Self = StObject.set(x, "titleProps", js.undefined)
     
     @scala.inline
-    def deleteLoadingStyle: Self = this.set("loadingStyle", js.undefined)
+    def setTitleStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadingStyleNull: Self = this.set("loadingStyle", null)
+    def setTitleStyleNull: Self = StObject.set(x, "titleStyle", null)
     
     @scala.inline
-    def setRaised(value: Boolean): Self = this.set("raised", value.asInstanceOf[js.Any])
+    def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
     
     @scala.inline
-    def deleteRaised: Self = this.set("raised", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTouchableComponent(value: ComponentClass[js.Object, ComponentState]): Self = StObject.set(x, "TouchableComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTouchableComponentUndefined: Self = StObject.set(x, "TouchableComponent", js.undefined)
     
     @scala.inline
-    def setTitleProps(value: TextProperties): Self = this.set("titleProps", value.asInstanceOf[js.Any])
+    def setType(value: solid | clear | outline): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitleProps: Self = this.set("titleProps", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setTitleStyle(value: StyleProp[TextStyle]): Self = this.set("titleStyle", value.asInstanceOf[js.Any])
+    def setUseForeground(value: Boolean): Self = StObject.set(x, "useForeground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitleStyle: Self = this.set("titleStyle", js.undefined)
+    def setUseForegroundUndefined: Self = StObject.set(x, "useForeground", js.undefined)
     
     @scala.inline
-    def setTitleStyleNull: Self = this.set("titleStyle", null)
+    def setViewComponent(value: ComponentClass[_, ComponentState]): Self = StObject.set(x, "ViewComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: solid | clear | outline): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUseForeground(value: Boolean): Self = this.set("useForeground", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseForeground: Self = this.set("useForeground", js.undefined)
+    def setViewComponentUndefined: Self = StObject.set(x, "ViewComponent", js.undefined)
   }
 }

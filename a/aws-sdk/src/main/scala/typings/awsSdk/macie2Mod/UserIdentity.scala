@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserIdentity extends js.Object {
+trait UserIdentity extends StObject {
   
   /**
     * If the action was performed with temporary security credentials that were obtained using the AssumeRole operation of the AWS Security Token Service (AWS STS) API, the identifiers, session context, and other details about the identity.
@@ -51,60 +52,48 @@ object UserIdentity {
   }
   
   @scala.inline
-  implicit class UserIdentityOps[Self <: UserIdentity] (val x: Self) extends AnyVal {
+  implicit class UserIdentityMutableBuilder[Self <: UserIdentity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssumedRole(value: AssumedRole): Self = StObject.set(x, "assumedRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssumedRoleUndefined: Self = StObject.set(x, "assumedRole", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAwsAccount(value: AwsAccount): Self = StObject.set(x, "awsAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssumedRole(value: AssumedRole): Self = this.set("assumedRole", value.asInstanceOf[js.Any])
+    def setAwsAccountUndefined: Self = StObject.set(x, "awsAccount", js.undefined)
     
     @scala.inline
-    def deleteAssumedRole: Self = this.set("assumedRole", js.undefined)
+    def setAwsService(value: AwsService): Self = StObject.set(x, "awsService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsAccount(value: AwsAccount): Self = this.set("awsAccount", value.asInstanceOf[js.Any])
+    def setAwsServiceUndefined: Self = StObject.set(x, "awsService", js.undefined)
     
     @scala.inline
-    def deleteAwsAccount: Self = this.set("awsAccount", js.undefined)
+    def setFederatedUser(value: FederatedUser): Self = StObject.set(x, "federatedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsService(value: AwsService): Self = this.set("awsService", value.asInstanceOf[js.Any])
+    def setFederatedUserUndefined: Self = StObject.set(x, "federatedUser", js.undefined)
     
     @scala.inline
-    def deleteAwsService: Self = this.set("awsService", js.undefined)
+    def setIamUser(value: IamUser): Self = StObject.set(x, "iamUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFederatedUser(value: FederatedUser): Self = this.set("federatedUser", value.asInstanceOf[js.Any])
+    def setIamUserUndefined: Self = StObject.set(x, "iamUser", js.undefined)
     
     @scala.inline
-    def deleteFederatedUser: Self = this.set("federatedUser", js.undefined)
+    def setRoot(value: UserIdentityRoot): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamUser(value: IamUser): Self = this.set("iamUser", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteIamUser: Self = this.set("iamUser", js.undefined)
+    def setType(value: UserIdentityType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: UserIdentityRoot): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
-    
-    @scala.inline
-    def setType(value: UserIdentityType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

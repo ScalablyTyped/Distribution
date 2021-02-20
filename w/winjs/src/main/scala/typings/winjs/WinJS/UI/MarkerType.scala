@@ -1,5 +1,6 @@
 package typings.winjs.WinJS.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The types of timeline markers supported by the MediaPlayer.
   **/
 @js.native
-trait MarkerType extends js.Object {
+trait MarkerType extends StObject {
   
   var advertisement: String = js.native
   
@@ -25,27 +26,15 @@ object MarkerType {
   }
   
   @scala.inline
-  implicit class MarkerTypeOps[Self <: MarkerType] (val x: Self) extends AnyVal {
+  implicit class MarkerTypeMutableBuilder[Self <: MarkerType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvertisement(value: String): Self = StObject.set(x, "advertisement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChapter(value: String): Self = StObject.set(x, "chapter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAdvertisement(value: String): Self = this.set("advertisement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChapter(value: String): Self = this.set("chapter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCustom(value: String): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setCustom(value: String): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
   }
 }

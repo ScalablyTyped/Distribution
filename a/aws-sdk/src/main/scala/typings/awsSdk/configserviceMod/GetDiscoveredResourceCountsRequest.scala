@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDiscoveredResourceCountsRequest extends js.Object {
+trait GetDiscoveredResourceCountsRequest extends StObject {
   
   /**
     * The maximum number of ResourceCount objects returned on each page. The default is 100. You cannot specify a number greater than 100. If you specify 0, AWS Config uses the default.
@@ -31,39 +32,27 @@ object GetDiscoveredResourceCountsRequest {
   }
   
   @scala.inline
-  implicit class GetDiscoveredResourceCountsRequestOps[Self <: GetDiscoveredResourceCountsRequest] (val x: Self) extends AnyVal {
+  implicit class GetDiscoveredResourceCountsRequestMutableBuilder[Self <: GetDiscoveredResourceCountsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimit(value: Limit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Limit): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setResourceTypes(value: ResourceTypes): Self = StObject.set(x, "resourceTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setResourceTypesUndefined: Self = StObject.set(x, "resourceTypes", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setResourceTypesVarargs(value: StringWithCharLimit256*): Self = this.set("resourceTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceTypes(value: ResourceTypes): Self = this.set("resourceTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceTypes: Self = this.set("resourceTypes", js.undefined)
+    def setResourceTypesVarargs(value: StringWithCharLimit256*): Self = StObject.set(x, "resourceTypes", js.Array(value :_*))
   }
 }

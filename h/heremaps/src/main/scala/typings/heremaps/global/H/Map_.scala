@@ -3,6 +3,7 @@ package typings.heremaps.global.H
 import typings.heremaps.H.Map_.Options
 import typings.heremaps.H.map.layer.Layer
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,15 +26,14 @@ class Map_ protected ()
   def this(element: Element, baseLayer: Layer) = this()
   def this(element: Element, baseLayer: Layer, opt_options: Options) = this()
 }
-@JSGlobal("H.Map")
-@js.native
-object Map_ extends js.Object {
+object Map_ {
   
   /**
     * Types of engines
     */
+  @JSGlobal("H.Map.EngineType")
   @js.native
-  object EngineType extends js.Object {
+  object EngineType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.heremaps.H.Map_.EngineType with Double] = js.native

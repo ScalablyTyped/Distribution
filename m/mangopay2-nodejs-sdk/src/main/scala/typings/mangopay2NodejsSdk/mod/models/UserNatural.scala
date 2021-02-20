@@ -2,6 +2,7 @@ package typings.mangopay2NodejsSdk.mod.models
 
 import typings.mangopay2NodejsSdk.anon.MakeKeysRequiredPartialUsAddress
 import typings.mangopay2NodejsSdk.mod.user.UserNaturalData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

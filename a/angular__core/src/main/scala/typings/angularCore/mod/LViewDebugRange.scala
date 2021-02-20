@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * concepts.
   */
 @js.native
-trait LViewDebugRange extends js.Object {
+trait LViewDebugRange extends StObject {
   
   /**
     * The merged content of the range. `t` contains data from `TView.data` and `l` contains `LView`
@@ -42,33 +43,21 @@ object LViewDebugRange {
   }
   
   @scala.inline
-  implicit class LViewDebugRangeOps[Self <: LViewDebugRange] (val x: Self) extends AnyVal {
+  implicit class LViewDebugRangeMutableBuilder[Self <: LViewDebugRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: js.Array[LViewDebugRangeContent]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentVarargs(value: LViewDebugRangeContent*): Self = StObject.set(x, "content", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentVarargs(value: LViewDebugRangeContent*): Self = this.set("content", js.Array(value :_*))
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: js.Array[LViewDebugRangeContent]): Self = this.set("content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnd(value: Double): Self = this.set("end", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.angularCompiler.anon
 
 import typings.angularCompiler.outputAstMod.Statement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Args extends js.Object {
+trait Args extends StObject {
   
   var args: js.Array[typings.angularCompiler.outputAstMod.Expression] = js.native
   
@@ -21,30 +22,18 @@ object Args {
   }
   
   @scala.inline
-  implicit class ArgsOps[Self <: Args] (val x: Self) extends AnyVal {
+  implicit class ArgsMutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[typings.angularCompiler.outputAstMod.Expression]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsVarargs(value: typings.angularCompiler.outputAstMod.Expression*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStmts(value: js.Array[Statement]): Self = StObject.set(x, "stmts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgsVarargs(value: typings.angularCompiler.outputAstMod.Expression*): Self = this.set("args", js.Array(value :_*))
-    
-    @scala.inline
-    def setArgs(value: js.Array[typings.angularCompiler.outputAstMod.Expression]): Self = this.set("args", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStmtsVarargs(value: Statement*): Self = this.set("stmts", js.Array(value :_*))
-    
-    @scala.inline
-    def setStmts(value: js.Array[Statement]): Self = this.set("stmts", value.asInstanceOf[js.Any])
+    def setStmtsVarargs(value: Statement*): Self = StObject.set(x, "stmts", js.Array(value :_*))
   }
 }

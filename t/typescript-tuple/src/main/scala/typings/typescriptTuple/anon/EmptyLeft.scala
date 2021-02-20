@@ -1,12 +1,13 @@
 package typings.typescriptTuple.anon
 
 import typings.typescriptTuple.utilsMod.Prepend
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmptyLeft[Right /* <: js.Array[_] */, Left /* <: js.Array[_] */] extends js.Object {
+trait EmptyLeft[Right /* <: js.Array[_] */, Left /* <: js.Array[_] */] extends StObject {
   
   var emptyLeft: Right = js.native
   
@@ -25,30 +26,18 @@ object EmptyLeft {
   }
   
   @scala.inline
-  implicit class EmptyLeftOps[Self <: EmptyLeft[_, _], Right /* <: js.Array[_] */, Left /* <: js.Array[_] */] (val x: Self with (EmptyLeft[Right, Left])) extends AnyVal {
+  implicit class EmptyLeftMutableBuilder[Self <: EmptyLeft[_, _], Right /* <: js.Array[_] */, Left /* <: js.Array[_] */] (val x: Self with (EmptyLeft[Right, Left])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmptyLeft(value: Right): Self = StObject.set(x, "emptyLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfiniteLeft(value: ERROR): Self = StObject.set(x, "infiniteLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMultiLeft(value: js.Any): Self = StObject.set(x, "multiLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmptyLeft(value: Right): Self = this.set("emptyLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInfiniteLeft(value: ERROR): Self = this.set("infiniteLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMultiLeft(value: js.Any): Self = this.set("multiLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSingleLeft(value: Prepend[Right, _]): Self = this.set("singleLeft", value.asInstanceOf[js.Any])
+    def setSingleLeft(value: Prepend[Right, _]): Self = StObject.set(x, "singleLeft", value.asInstanceOf[js.Any])
   }
 }

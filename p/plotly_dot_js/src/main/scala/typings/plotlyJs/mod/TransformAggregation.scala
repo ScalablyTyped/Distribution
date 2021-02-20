@@ -13,12 +13,13 @@ import typings.plotlyJs.plotlyJsStrings.rms
 import typings.plotlyJs.plotlyJsStrings.sample
 import typings.plotlyJs.plotlyJsStrings.stddev
 import typings.plotlyJs.plotlyJsStrings.sum
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransformAggregation extends js.Object {
+trait TransformAggregation extends StObject {
   
   var enabled: js.UndefOr[Boolean] = js.native
   
@@ -37,39 +38,27 @@ object TransformAggregation {
   }
   
   @scala.inline
-  implicit class TransformAggregationOps[Self <: TransformAggregation] (val x: Self) extends AnyVal {
+  implicit class TransformAggregationMutableBuilder[Self <: TransformAggregation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFunc(value: count | sum | avg | median | mode | rms | stddev | min | max | first | last): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setFuncUndefined: Self = StObject.set(x, "func", js.undefined)
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setFuncmode(value: sample | population): Self = StObject.set(x, "funcmode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setFuncmodeUndefined: Self = StObject.set(x, "funcmode", js.undefined)
     
     @scala.inline
-    def setFunc(value: count | sum | avg | median | mode | rms | stddev | min | max | first | last): Self = this.set("func", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFunc: Self = this.set("func", js.undefined)
-    
-    @scala.inline
-    def setFuncmode(value: sample | population): Self = this.set("funcmode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFuncmode: Self = this.set("funcmode", js.undefined)
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,69 +67,57 @@ object IgTreeGridResizing {
   }
   
   @scala.inline
-  implicit class IgTreeGridResizingOps[Self <: IgTreeGridResizing] (val x: Self) extends AnyVal {
+  implicit class IgTreeGridResizingMutableBuilder[Self <: IgTreeGridResizing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowDoubleClickToResize(value: Boolean): Self = StObject.set(x, "allowDoubleClickToResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowDoubleClickToResizeUndefined: Self = StObject.set(x, "allowDoubleClickToResize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnResized(value: (/* event */ Event, /* ui */ ColumnResizedEventUIParam) => Unit): Self = StObject.set(x, "columnResized", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAllowDoubleClickToResize(value: Boolean): Self = this.set("allowDoubleClickToResize", value.asInstanceOf[js.Any])
+    def setColumnResizedUndefined: Self = StObject.set(x, "columnResized", js.undefined)
     
     @scala.inline
-    def deleteAllowDoubleClickToResize: Self = this.set("allowDoubleClickToResize", js.undefined)
+    def setColumnResizing(value: (/* event */ Event, /* ui */ ColumnResizingEventUIParam) => Unit): Self = StObject.set(x, "columnResizing", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setColumnResized(value: (/* event */ Event, /* ui */ ColumnResizedEventUIParam) => Unit): Self = this.set("columnResized", js.Any.fromFunction2(value))
+    def setColumnResizingRefused(value: (/* event */ Event, /* ui */ ColumnResizingRefusedEventUIParam) => Unit): Self = StObject.set(x, "columnResizingRefused", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteColumnResized: Self = this.set("columnResized", js.undefined)
+    def setColumnResizingRefusedUndefined: Self = StObject.set(x, "columnResizingRefused", js.undefined)
     
     @scala.inline
-    def setColumnResizing(value: (/* event */ Event, /* ui */ ColumnResizingEventUIParam) => Unit): Self = this.set("columnResizing", js.Any.fromFunction2(value))
+    def setColumnResizingUndefined: Self = StObject.set(x, "columnResizing", js.undefined)
     
     @scala.inline
-    def deleteColumnResizing: Self = this.set("columnResizing", js.undefined)
+    def setColumnSettings(value: js.Array[IgGridResizingColumnSetting]): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnResizingRefused(value: (/* event */ Event, /* ui */ ColumnResizingRefusedEventUIParam) => Unit): Self = this.set("columnResizingRefused", js.Any.fromFunction2(value))
+    def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
     
     @scala.inline
-    def deleteColumnResizingRefused: Self = this.set("columnResizingRefused", js.undefined)
+    def setColumnSettingsVarargs(value: IgGridResizingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
     
     @scala.inline
-    def setColumnSettingsVarargs(value: IgGridResizingColumnSetting*): Self = this.set("columnSettings", js.Array(value :_*))
+    def setDeferredResizing(value: Boolean): Self = StObject.set(x, "deferredResizing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnSettings(value: js.Array[IgGridResizingColumnSetting]): Self = this.set("columnSettings", value.asInstanceOf[js.Any])
+    def setDeferredResizingUndefined: Self = StObject.set(x, "deferredResizing", js.undefined)
     
     @scala.inline
-    def deleteColumnSettings: Self = this.set("columnSettings", js.undefined)
+    def setHandleThreshold(value: Double): Self = StObject.set(x, "handleThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeferredResizing(value: Boolean): Self = this.set("deferredResizing", value.asInstanceOf[js.Any])
+    def setHandleThresholdUndefined: Self = StObject.set(x, "handleThreshold", js.undefined)
     
     @scala.inline
-    def deleteDeferredResizing: Self = this.set("deferredResizing", js.undefined)
+    def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleThreshold(value: Double): Self = this.set("handleThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHandleThreshold: Self = this.set("handleThreshold", js.undefined)
-    
-    @scala.inline
-    def setInherit(value: Boolean): Self = this.set("inherit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInherit: Self = this.set("inherit", js.undefined)
+    def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
   }
 }

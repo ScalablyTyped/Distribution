@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MatchedDeveloperMetadata extends js.Object {
+trait MatchedDeveloperMetadata extends StObject {
   
   /** All filters matching the returned developer metadata. */
   var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.native
@@ -22,33 +23,21 @@ object MatchedDeveloperMetadata {
   }
   
   @scala.inline
-  implicit class MatchedDeveloperMetadataOps[Self <: MatchedDeveloperMetadata] (val x: Self) extends AnyVal {
+  implicit class MatchedDeveloperMetadataMutableBuilder[Self <: MatchedDeveloperMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataFilters(value: js.Array[DataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
     
     @scala.inline
-    def setDataFiltersVarargs(value: DataFilter*): Self = this.set("dataFilters", js.Array(value :_*))
+    def setDeveloperMetadata(value: DeveloperMetadata): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFilters(value: js.Array[DataFilter]): Self = this.set("dataFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataFilters: Self = this.set("dataFilters", js.undefined)
-    
-    @scala.inline
-    def setDeveloperMetadata(value: DeveloperMetadata): Self = this.set("developerMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeveloperMetadata: Self = this.set("developerMetadata", js.undefined)
+    def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
   }
 }

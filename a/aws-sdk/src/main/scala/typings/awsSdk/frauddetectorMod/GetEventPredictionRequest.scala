@@ -1,11 +1,12 @@
 package typings.awsSdk.frauddetectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetEventPredictionRequest extends js.Object {
+trait GetEventPredictionRequest extends StObject {
   
   /**
     * The detector ID.
@@ -63,51 +64,39 @@ object GetEventPredictionRequest {
   }
   
   @scala.inline
-  implicit class GetEventPredictionRequestOps[Self <: GetEventPredictionRequest] (val x: Self) extends AnyVal {
+  implicit class GetEventPredictionRequestMutableBuilder[Self <: GetEventPredictionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetectorId(value: String): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetectorVersionId(value: wholeNumberVersionString): Self = StObject.set(x, "detectorVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetectorVersionIdUndefined: Self = StObject.set(x, "detectorVersionId", js.undefined)
     
     @scala.inline
-    def setDetectorId(value: String): Self = this.set("detectorId", value.asInstanceOf[js.Any])
+    def setEntities(value: listOfEntities): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntitiesVarargs(value: Entity*): Self = this.set("entities", js.Array(value :_*))
+    def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
     @scala.inline
-    def setEntities(value: listOfEntities): Self = this.set("entities", value.asInstanceOf[js.Any])
+    def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventId(value: String): Self = this.set("eventId", value.asInstanceOf[js.Any])
+    def setEventTimestamp(value: String): Self = StObject.set(x, "eventTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTimestamp(value: String): Self = this.set("eventTimestamp", value.asInstanceOf[js.Any])
+    def setEventTypeName(value: String): Self = StObject.set(x, "eventTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTypeName(value: String): Self = this.set("eventTypeName", value.asInstanceOf[js.Any])
+    def setEventVariables(value: EventVariableMap): Self = StObject.set(x, "eventVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventVariables(value: EventVariableMap): Self = this.set("eventVariables", value.asInstanceOf[js.Any])
+    def setExternalModelEndpointDataBlobs(value: ExternalModelEndpointDataBlobMap): Self = StObject.set(x, "externalModelEndpointDataBlobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectorVersionId(value: wholeNumberVersionString): Self = this.set("detectorVersionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetectorVersionId: Self = this.set("detectorVersionId", js.undefined)
-    
-    @scala.inline
-    def setExternalModelEndpointDataBlobs(value: ExternalModelEndpointDataBlobMap): Self = this.set("externalModelEndpointDataBlobs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExternalModelEndpointDataBlobs: Self = this.set("externalModelEndpointDataBlobs", js.undefined)
+    def setExternalModelEndpointDataBlobsUndefined: Self = StObject.set(x, "externalModelEndpointDataBlobs", js.undefined)
   }
 }

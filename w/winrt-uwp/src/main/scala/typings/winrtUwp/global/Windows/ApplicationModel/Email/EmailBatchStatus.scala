@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines the states of an email batch operation. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailBatchStatus")
 @js.native
-object EmailBatchStatus extends js.Object {
+object EmailBatchStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.ApplicationModel.Email.EmailBatchStatus with Double] = js.native

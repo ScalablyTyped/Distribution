@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentClassifierInputDataConfig extends js.Object {
+trait DocumentClassifierInputDataConfig extends StObject {
   
   /**
     * A list of augmented manifest files that provide training data for your custom model. An augmented manifest file is a labeled dataset that is produced by Amazon SageMaker Ground Truth. This parameter is required if you set DataFormat to AUGMENTED_MANIFEST.
@@ -36,45 +37,33 @@ object DocumentClassifierInputDataConfig {
   }
   
   @scala.inline
-  implicit class DocumentClassifierInputDataConfigOps[Self <: DocumentClassifierInputDataConfig] (val x: Self) extends AnyVal {
+  implicit class DocumentClassifierInputDataConfigMutableBuilder[Self <: DocumentClassifierInputDataConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAugmentedManifests(value: DocumentClassifierAugmentedManifestsList): Self = StObject.set(x, "AugmentedManifests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAugmentedManifestsUndefined: Self = StObject.set(x, "AugmentedManifests", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAugmentedManifestsVarargs(value: AugmentedManifestsListItem*): Self = StObject.set(x, "AugmentedManifests", js.Array(value :_*))
     
     @scala.inline
-    def setAugmentedManifestsVarargs(value: AugmentedManifestsListItem*): Self = this.set("AugmentedManifests", js.Array(value :_*))
+    def setDataFormat(value: DocumentClassifierDataFormat): Self = StObject.set(x, "DataFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAugmentedManifests(value: DocumentClassifierAugmentedManifestsList): Self = this.set("AugmentedManifests", value.asInstanceOf[js.Any])
+    def setDataFormatUndefined: Self = StObject.set(x, "DataFormat", js.undefined)
     
     @scala.inline
-    def deleteAugmentedManifests: Self = this.set("AugmentedManifests", js.undefined)
+    def setLabelDelimiter(value: LabelDelimiter): Self = StObject.set(x, "LabelDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFormat(value: DocumentClassifierDataFormat): Self = this.set("DataFormat", value.asInstanceOf[js.Any])
+    def setLabelDelimiterUndefined: Self = StObject.set(x, "LabelDelimiter", js.undefined)
     
     @scala.inline
-    def deleteDataFormat: Self = this.set("DataFormat", js.undefined)
+    def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelDelimiter(value: LabelDelimiter): Self = this.set("LabelDelimiter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelDelimiter: Self = this.set("LabelDelimiter", js.undefined)
-    
-    @scala.inline
-    def setS3Uri(value: S3Uri): Self = this.set("S3Uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Uri: Self = this.set("S3Uri", js.undefined)
+    def setS3UriUndefined: Self = StObject.set(x, "S3Uri", js.undefined)
   }
 }

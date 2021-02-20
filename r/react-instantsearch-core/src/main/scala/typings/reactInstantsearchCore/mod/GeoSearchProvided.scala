@@ -1,12 +1,13 @@
 package typings.reactInstantsearchCore.mod
 
 import typings.reactInstantsearchCore.anon.Lat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeoSearchProvided[THit] extends js.Object {
+trait GeoSearchProvided[THit] extends StObject {
   
   /** a function to generate a URL for the corresponding search state */
   def createURL(args: js.Any*): js.Any = js.native
@@ -42,39 +43,27 @@ object GeoSearchProvided {
   }
   
   @scala.inline
-  implicit class GeoSearchProvidedOps[Self <: GeoSearchProvided[_], THit] (val x: Self with GeoSearchProvided[THit]) extends AnyVal {
+  implicit class GeoSearchProvidedMutableBuilder[Self <: GeoSearchProvided[_], THit] (val x: Self with GeoSearchProvided[THit]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateURL(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentRefinement(value: NESW): Self = StObject.set(x, "currentRefinement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHits(value: js.Array[THit]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateURL(value: /* repeated */ js.Any => js.Any): Self = this.set("createURL", js.Any.fromFunction1(value))
+    def setHitsVarargs(value: THit*): Self = StObject.set(x, "hits", js.Array(value :_*))
     
     @scala.inline
-    def setCurrentRefinement(value: NESW): Self = this.set("currentRefinement", value.asInstanceOf[js.Any])
+    def setIsRefinedWithMap(value: Boolean): Self = StObject.set(x, "isRefinedWithMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHitsVarargs(value: THit*): Self = this.set("hits", js.Array(value :_*))
+    def setPosition(value: Lat): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHits(value: js.Array[THit]): Self = this.set("hits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsRefinedWithMap(value: Boolean): Self = this.set("isRefinedWithMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: Lat): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefine(value: NESW => Unit): Self = this.set("refine", js.Any.fromFunction1(value))
+    def setRefine(value: NESW => Unit): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
   }
 }

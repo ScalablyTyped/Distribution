@@ -51,12 +51,13 @@ import typings.plotlyJs.plotlyJsStrings.toaxisPlussignacrossPlussignmarker
 import typings.plotlyJs.plotlyJsStrings.toaxisPlussignmarker
 import typings.plotlyJs.plotlyJsStrings.tozero
 import typings.plotlyJs.plotlyJsStrings.trace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Axis extends js.Object {
+trait Axis extends StObject {
   
   var autorange: `true` | `false` | reversed = js.native
   
@@ -382,220 +383,208 @@ object Axis {
   }
   
   @scala.inline
-  implicit class AxisOps[Self <: Axis] (val x: Self) extends AnyVal {
+  implicit class AxisMutableBuilder[Self <: Axis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutorange(value: `true` | `false` | reversed): Self = StObject.set(x, "autorange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalendar(value: Calendar): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoryarray(value: js.Array[_]): Self = StObject.set(x, "categoryarray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutorange(value: `true` | `false` | reversed): Self = this.set("autorange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCalendar(value: Calendar): Self = this.set("calendar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCategoryarrayVarargs(value: js.Any*): Self = this.set("categoryarray", js.Array(value :_*))
-    
-    @scala.inline
-    def setCategoryarray(value: js.Array[_]): Self = this.set("categoryarray", value.asInstanceOf[js.Any])
+    def setCategoryarrayVarargs(value: js.Any*): Self = StObject.set(x, "categoryarray", js.Array(value :_*))
     
     @scala.inline
     def setCategoryorder(
       value: trace | (`category ascending`) | (`category descending`) | array | (`total ascending`) | (`total descending`) | (`min ascending`) | (`min descending`) | (`max ascending`) | (`max descending`) | (`sum ascending`) | (`sum descending`) | (`mean ascending`) | (`mean descending`) | (`median ascending`) | (`median descending`)
-    ): Self = this.set("categoryorder", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "categoryorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = this.set("color", js.Array(value :_*))
+    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value :_*))
     
     @scala.inline
-    def setDividercolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = this.set("dividercolor", js.Array(value :_*))
+    def setDividercolor(value: Color): Self = StObject.set(x, "dividercolor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDividercolor(value: Color): Self = this.set("dividercolor", value.asInstanceOf[js.Any])
+    def setDividercolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "dividercolor", js.Array(value :_*))
     
     @scala.inline
-    def setDividerwidth(value: Double): Self = this.set("dividerwidth", value.asInstanceOf[js.Any])
+    def setDividerwidth(value: Double): Self = StObject.set(x, "dividerwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDtick(value: DTickValue): Self = this.set("dtick", value.asInstanceOf[js.Any])
+    def setDtick(value: DTickValue): Self = StObject.set(x, "dtick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExponentformat(value: none | e_ | E | power | SI | B): Self = this.set("exponentformat", value.asInstanceOf[js.Any])
+    def setExponentformat(value: none | e_ | E | power | SI | B): Self = StObject.set(x, "exponentformat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedrange(value: Boolean): Self = this.set("fixedrange", value.asInstanceOf[js.Any])
+    def setFixedrange(value: Boolean): Self = StObject.set(x, "fixedrange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = this.set("gridcolor", js.Array(value :_*))
+    def setGridcolor(value: Color): Self = StObject.set(x, "gridcolor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridcolor(value: Color): Self = this.set("gridcolor", value.asInstanceOf[js.Any])
+    def setGridcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "gridcolor", js.Array(value :_*))
     
     @scala.inline
-    def setGridwidth(value: Double): Self = this.set("gridwidth", value.asInstanceOf[js.Any])
+    def setGridwidth(value: Double): Self = StObject.set(x, "gridwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverformat(value: String): Self = this.set("hoverformat", value.asInstanceOf[js.Any])
+    def setHoverformat(value: String): Self = StObject.set(x, "hoverformat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = this.set("linecolor", js.Array(value :_*))
+    def setLinecolor(value: Color): Self = StObject.set(x, "linecolor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinecolor(value: Color): Self = this.set("linecolor", value.asInstanceOf[js.Any])
+    def setLinecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "linecolor", js.Array(value :_*))
     
     @scala.inline
-    def setLinewidth(value: Double): Self = this.set("linewidth", value.asInstanceOf[js.Any])
+    def setLinewidth(value: Double): Self = StObject.set(x, "linewidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMirror(value: `true` | ticks | `false` | all | allticks): Self = this.set("mirror", value.asInstanceOf[js.Any])
+    def setMirror(value: `true` | ticks | `false` | all | allticks): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNticks(value: Double): Self = this.set("nticks", value.asInstanceOf[js.Any])
+    def setNticks(value: Double): Self = StObject.set(x, "nticks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeVarargs(value: js.Any*): Self = this.set("range", js.Array(value :_*))
+    def setRange(value: js.Array[_]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: js.Array[_]): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setRangeVarargs(value: js.Any*): Self = StObject.set(x, "range", js.Array(value :_*))
     
     @scala.inline
-    def setRangemode(value: normal | tozero | nonnegative): Self = this.set("rangemode", value.asInstanceOf[js.Any])
+    def setRangemode(value: normal | tozero | nonnegative): Self = StObject.set(x, "rangemode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeparatethousands(value: Boolean): Self = this.set("separatethousands", value.asInstanceOf[js.Any])
+    def setSeparatethousands(value: Boolean): Self = StObject.set(x, "separatethousands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowdividers(value: Boolean): Self = this.set("showdividers", value.asInstanceOf[js.Any])
+    def setShowdividers(value: Boolean): Self = StObject.set(x, "showdividers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowexponent(value: all | first | last | none): Self = this.set("showexponent", value.asInstanceOf[js.Any])
+    def setShowexponent(value: all | first | last | none): Self = StObject.set(x, "showexponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowgrid(value: Boolean): Self = this.set("showgrid", value.asInstanceOf[js.Any])
+    def setShowgrid(value: Boolean): Self = StObject.set(x, "showgrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowline(value: Boolean): Self = this.set("showline", value.asInstanceOf[js.Any])
+    def setShowline(value: Boolean): Self = StObject.set(x, "showline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowspikes(value: Boolean): Self = this.set("showspikes", value.asInstanceOf[js.Any])
+    def setShowspikes(value: Boolean): Self = StObject.set(x, "showspikes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowticklabels(value: Boolean): Self = this.set("showticklabels", value.asInstanceOf[js.Any])
+    def setShowticklabels(value: Boolean): Self = StObject.set(x, "showticklabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowtickprefix(value: all | first | last | none): Self = this.set("showtickprefix", value.asInstanceOf[js.Any])
+    def setShowtickprefix(value: all | first | last | none): Self = StObject.set(x, "showtickprefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowticksuffix(value: all | first | last | none): Self = this.set("showticksuffix", value.asInstanceOf[js.Any])
+    def setShowticksuffix(value: all | first | last | none): Self = StObject.set(x, "showticksuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpikecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = this.set("spikecolor", js.Array(value :_*))
+    def setSpikecolor(value: Color): Self = StObject.set(x, "spikecolor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpikecolor(value: Color): Self = this.set("spikecolor", value.asInstanceOf[js.Any])
+    def setSpikecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "spikecolor", js.Array(value :_*))
     
     @scala.inline
-    def setSpikedash(value: String): Self = this.set("spikedash", value.asInstanceOf[js.Any])
+    def setSpikedash(value: String): Self = StObject.set(x, "spikedash", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSpikemode(
       value: toaxis | across | marker | toaxisPlussignacross | toaxisPlussignacrossPlussignmarker | acrossPlussignmarker | toaxisPlussignmarker
-    ): Self = this.set("spikemode", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "spikemode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpikesnap(value: data | cursor | (`hovered data`)): Self = this.set("spikesnap", value.asInstanceOf[js.Any])
+    def setSpikesnap(value: data | cursor | (`hovered data`)): Self = StObject.set(x, "spikesnap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpikethickness(value: Double): Self = this.set("spikethickness", value.asInstanceOf[js.Any])
+    def setSpikethickness(value: Double): Self = StObject.set(x, "spikethickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTick0(value: Double | String): Self = this.set("tick0", value.asInstanceOf[js.Any])
+    def setTick0(value: Double | String): Self = StObject.set(x, "tick0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickangle(value: Double): Self = this.set("tickangle", value.asInstanceOf[js.Any])
+    def setTickangle(value: Double): Self = StObject.set(x, "tickangle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = this.set("tickcolor", js.Array(value :_*))
+    def setTickcolor(value: Color): Self = StObject.set(x, "tickcolor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickcolor(value: Color): Self = this.set("tickcolor", value.asInstanceOf[js.Any])
+    def setTickcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "tickcolor", js.Array(value :_*))
     
     @scala.inline
-    def setTickfont(value: PartialFont): Self = this.set("tickfont", value.asInstanceOf[js.Any])
+    def setTickfont(value: PartialFont): Self = StObject.set(x, "tickfont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickformat(value: String): Self = this.set("tickformat", value.asInstanceOf[js.Any])
+    def setTickformat(value: String): Self = StObject.set(x, "tickformat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickformatstopsVarargs(value: PartialTickFormatStop*): Self = this.set("tickformatstops", js.Array(value :_*))
+    def setTickformatstops(value: js.Array[PartialTickFormatStop]): Self = StObject.set(x, "tickformatstops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickformatstops(value: js.Array[PartialTickFormatStop]): Self = this.set("tickformatstops", value.asInstanceOf[js.Any])
+    def setTickformatstopsVarargs(value: PartialTickFormatStop*): Self = StObject.set(x, "tickformatstops", js.Array(value :_*))
     
     @scala.inline
-    def setTicklen(value: Double): Self = this.set("ticklen", value.asInstanceOf[js.Any])
+    def setTicklen(value: Double): Self = StObject.set(x, "ticklen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickmode(value: auto | linear | array): Self = this.set("tickmode", value.asInstanceOf[js.Any])
+    def setTickmode(value: auto | linear | array): Self = StObject.set(x, "tickmode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickprefix(value: String): Self = this.set("tickprefix", value.asInstanceOf[js.Any])
+    def setTickprefix(value: String): Self = StObject.set(x, "tickprefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicks(value: outside | inside | _empty): Self = this.set("ticks", value.asInstanceOf[js.Any])
+    def setTicks(value: outside | inside | _empty): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicksuffix(value: String): Self = this.set("ticksuffix", value.asInstanceOf[js.Any])
+    def setTicksuffix(value: String): Self = StObject.set(x, "ticksuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicktextVarargs(value: String*): Self = this.set("ticktext", js.Array(value :_*))
+    def setTicktext(value: js.Array[String]): Self = StObject.set(x, "ticktext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicktext(value: js.Array[String]): Self = this.set("ticktext", value.asInstanceOf[js.Any])
+    def setTicktextVarargs(value: String*): Self = StObject.set(x, "ticktext", js.Array(value :_*))
     
     @scala.inline
-    def setTickvalsVarargs(value: js.Any*): Self = this.set("tickvals", js.Array(value :_*))
+    def setTickvals(value: js.Array[_]): Self = StObject.set(x, "tickvals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickvals(value: js.Array[_]): Self = this.set("tickvals", value.asInstanceOf[js.Any])
+    def setTickvalsVarargs(value: js.Any*): Self = StObject.set(x, "tickvals", js.Array(value :_*))
     
     @scala.inline
-    def setTickwidth(value: Double): Self = this.set("tickwidth", value.asInstanceOf[js.Any])
+    def setTickwidth(value: Double): Self = StObject.set(x, "tickwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String | PartialDataTitleFont): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String | PartialDataTitleFont): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitlefont(value: PartialFont): Self = this.set("titlefont", value.asInstanceOf[js.Any])
+    def setTitlefont(value: PartialFont): Self = StObject.set(x, "titlefont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: AxisType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: AxisType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZeroline(value: Boolean): Self = this.set("zeroline", value.asInstanceOf[js.Any])
+    def setZeroline(value: Boolean): Self = StObject.set(x, "zeroline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZerolinecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = this.set("zerolinecolor", js.Array(value :_*))
+    def setZerolinecolor(value: Color): Self = StObject.set(x, "zerolinecolor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZerolinecolor(value: Color): Self = this.set("zerolinecolor", value.asInstanceOf[js.Any])
+    def setZerolinecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "zerolinecolor", js.Array(value :_*))
     
     @scala.inline
-    def setZerolinewidth(value: Double): Self = this.set("zerolinewidth", value.asInstanceOf[js.Any])
+    def setZerolinewidth(value: Double): Self = StObject.set(x, "zerolinewidth", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v3GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Profile. */
 @js.native
-trait Profile extends js.Object {
+trait Profile extends StObject {
   
   /** For JSON content that is timestamped, detailed results about the social behavior disclosed by the input in terms of temporal characteristics. The results include information about the distribution of the content over the days of the week and the hours of the day. */
   var behavior: js.UndefOr[js.Array[Behavior]] = js.native
@@ -51,72 +52,60 @@ object Profile {
   }
   
   @scala.inline
-  implicit class ProfileOps[Self <: Profile] (val x: Self) extends AnyVal {
+  implicit class ProfileMutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBehavior(value: js.Array[Behavior]): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBehaviorVarargs(value: Behavior*): Self = StObject.set(x, "behavior", js.Array(value :_*))
     
     @scala.inline
-    def setNeedsVarargs(value: Trait*): Self = this.set("needs", js.Array(value :_*))
+    def setConsumption_preferences(value: js.Array[ConsumptionPreferencesCategory]): Self = StObject.set(x, "consumption_preferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNeeds(value: js.Array[Trait]): Self = this.set("needs", value.asInstanceOf[js.Any])
+    def setConsumption_preferencesUndefined: Self = StObject.set(x, "consumption_preferences", js.undefined)
     
     @scala.inline
-    def setPersonalityVarargs(value: Trait*): Self = this.set("personality", js.Array(value :_*))
+    def setConsumption_preferencesVarargs(value: ConsumptionPreferencesCategory*): Self = StObject.set(x, "consumption_preferences", js.Array(value :_*))
     
     @scala.inline
-    def setPersonality(value: js.Array[Trait]): Self = this.set("personality", value.asInstanceOf[js.Any])
+    def setNeeds(value: js.Array[Trait]): Self = StObject.set(x, "needs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessed_language(value: String): Self = this.set("processed_language", value.asInstanceOf[js.Any])
+    def setNeedsVarargs(value: Trait*): Self = StObject.set(x, "needs", js.Array(value :_*))
     
     @scala.inline
-    def setValuesVarargs(value: Trait*): Self = this.set("values", js.Array(value :_*))
+    def setPersonality(value: js.Array[Trait]): Self = StObject.set(x, "personality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValues(value: js.Array[Trait]): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setPersonalityVarargs(value: Trait*): Self = StObject.set(x, "personality", js.Array(value :_*))
     
     @scala.inline
-    def setWarningsVarargs(value: Warning*): Self = this.set("warnings", js.Array(value :_*))
+    def setProcessed_language(value: String): Self = StObject.set(x, "processed_language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWarnings(value: js.Array[Warning]): Self = this.set("warnings", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[Trait]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWord_count(value: Double): Self = this.set("word_count", value.asInstanceOf[js.Any])
+    def setValuesVarargs(value: Trait*): Self = StObject.set(x, "values", js.Array(value :_*))
     
     @scala.inline
-    def setBehaviorVarargs(value: Behavior*): Self = this.set("behavior", js.Array(value :_*))
+    def setWarnings(value: js.Array[Warning]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBehavior(value: js.Array[Behavior]): Self = this.set("behavior", value.asInstanceOf[js.Any])
+    def setWarningsVarargs(value: Warning*): Self = StObject.set(x, "warnings", js.Array(value :_*))
     
     @scala.inline
-    def deleteBehavior: Self = this.set("behavior", js.undefined)
+    def setWord_count(value: Double): Self = StObject.set(x, "word_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumption_preferencesVarargs(value: ConsumptionPreferencesCategory*): Self = this.set("consumption_preferences", js.Array(value :_*))
+    def setWord_count_message(value: String): Self = StObject.set(x, "word_count_message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumption_preferences(value: js.Array[ConsumptionPreferencesCategory]): Self = this.set("consumption_preferences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConsumption_preferences: Self = this.set("consumption_preferences", js.undefined)
-    
-    @scala.inline
-    def setWord_count_message(value: String): Self = this.set("word_count_message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWord_count_message: Self = this.set("word_count_message", js.undefined)
+    def setWord_count_messageUndefined: Self = StObject.set(x, "word_count_message", js.undefined)
   }
 }

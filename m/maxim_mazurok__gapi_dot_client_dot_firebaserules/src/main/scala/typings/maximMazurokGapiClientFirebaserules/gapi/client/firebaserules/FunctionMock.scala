@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FunctionMock extends js.Object {
+trait FunctionMock extends StObject {
   
   /** The list of `Arg` values to match. The order in which the arguments are provided is the order in which they must appear in the function invocation. */
   var args: js.UndefOr[js.Array[Arg]] = js.native
@@ -25,39 +26,27 @@ object FunctionMock {
   }
   
   @scala.inline
-  implicit class FunctionMockOps[Self <: FunctionMock] (val x: Self) extends AnyVal {
+  implicit class FunctionMockMutableBuilder[Self <: FunctionMock] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[Arg]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgsVarargs(value: Arg*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def setArgsVarargs(value: Arg*): Self = this.set("args", js.Array(value :_*))
+    def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: js.Array[Arg]): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
     
     @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
+    def setResult(value: Result): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunction(value: String): Self = this.set("function", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFunction: Self = this.set("function", js.undefined)
-    
-    @scala.inline
-    def setResult(value: Result): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResult: Self = this.set("result", js.undefined)
+    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

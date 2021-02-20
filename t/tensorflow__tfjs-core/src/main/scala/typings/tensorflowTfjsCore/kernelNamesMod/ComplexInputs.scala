@@ -1,12 +1,13 @@
 package typings.tensorflowTfjsCore.kernelNamesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'real' | 'imag'> */
 @js.native
-trait ComplexInputs extends js.Object {
+trait ComplexInputs extends StObject {
   
   var imag: js.UndefOr[js.Any] = js.native
   
@@ -21,30 +22,18 @@ object ComplexInputs {
   }
   
   @scala.inline
-  implicit class ComplexInputsOps[Self <: ComplexInputs] (val x: Self) extends AnyVal {
+  implicit class ComplexInputsMutableBuilder[Self <: ComplexInputs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImag(value: js.Any): Self = StObject.set(x, "imag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImagUndefined: Self = StObject.set(x, "imag", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReal(value: js.Any): Self = StObject.set(x, "real", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImag(value: js.Any): Self = this.set("imag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImag: Self = this.set("imag", js.undefined)
-    
-    @scala.inline
-    def setReal(value: js.Any): Self = this.set("real", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReal: Self = this.set("real", js.undefined)
+    def setRealUndefined: Self = StObject.set(x, "real", js.undefined)
   }
 }

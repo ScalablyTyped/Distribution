@@ -1,11 +1,12 @@
 package typings.trezorConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountInfo extends js.Object {
+trait AccountInfo extends StObject {
   
   // These fields are returned, presumably, to save further calls when the use case requires
   // a usable address:
@@ -17,7 +18,7 @@ trait AccountInfo extends js.Object {
   
   var addressSerializedPath: String = js.native
   
-   // serialized HD public key. Despite the name, this may be `ypub` for segWit.
+  // serialized HD public key. Despite the name, this may be `ypub` for segWit.
   var balance: Double = js.native
   
   var confirmed: Double = js.native
@@ -62,75 +63,63 @@ object AccountInfo {
   }
   
   @scala.inline
-  implicit class AccountInfoOps[Self <: AccountInfo] (val x: Self) extends AnyVal {
+  implicit class AccountInfoMutableBuilder[Self <: AccountInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressIndex(value: Double): Self = StObject.set(x, "addressIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddressPath(value: js.Array[Double]): Self = StObject.set(x, "addressPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setAddressPathVarargs(value: Double*): Self = StObject.set(x, "addressPath", js.Array(value :_*))
     
     @scala.inline
-    def setAddressIndex(value: Double): Self = this.set("addressIndex", value.asInstanceOf[js.Any])
+    def setAddressSerializedPath(value: String): Self = StObject.set(x, "addressSerializedPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressPathVarargs(value: Double*): Self = this.set("addressPath", js.Array(value :_*))
+    def setBalance(value: Double): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressPath(value: js.Array[Double]): Self = this.set("addressPath", value.asInstanceOf[js.Any])
+    def setConfirmed(value: Double): Self = StObject.set(x, "confirmed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressSerializedPath(value: String): Self = this.set("addressSerializedPath", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBalance(value: Double): Self = this.set("balance", value.asInstanceOf[js.Any])
+    def setPath(value: js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirmed(value: Double): Self = this.set("confirmed", value.asInstanceOf[js.Any])
+    def setPathVarargs(value: Double*): Self = StObject.set(x, "path", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setSerializedPath(value: String): Self = StObject.set(x, "serializedPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathVarargs(value: Double*): Self = this.set("path", js.Array(value :_*))
+    def setTransactions(value: Double): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: js.Array[Double]): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setUnusedAddresses(value: js.Array[String]): Self = StObject.set(x, "unusedAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerializedPath(value: String): Self = this.set("serializedPath", value.asInstanceOf[js.Any])
+    def setUnusedAddressesVarargs(value: String*): Self = StObject.set(x, "unusedAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setTransactions(value: Double): Self = this.set("transactions", value.asInstanceOf[js.Any])
+    def setUsedAddresses(value: js.Array[typings.trezorConnect.anon.Address]): Self = StObject.set(x, "usedAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnusedAddressesVarargs(value: String*): Self = this.set("unusedAddresses", js.Array(value :_*))
+    def setUsedAddressesVarargs(value: typings.trezorConnect.anon.Address*): Self = StObject.set(x, "usedAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setUnusedAddresses(value: js.Array[String]): Self = this.set("unusedAddresses", value.asInstanceOf[js.Any])
+    def setUtxo(value: js.Array[Utxo]): Self = StObject.set(x, "utxo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsedAddressesVarargs(value: typings.trezorConnect.anon.Address*): Self = this.set("usedAddresses", js.Array(value :_*))
+    def setUtxoVarargs(value: Utxo*): Self = StObject.set(x, "utxo", js.Array(value :_*))
     
     @scala.inline
-    def setUsedAddresses(value: js.Array[typings.trezorConnect.anon.Address]): Self = this.set("usedAddresses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUtxoVarargs(value: Utxo*): Self = this.set("utxo", js.Array(value :_*))
-    
-    @scala.inline
-    def setUtxo(value: js.Array[Utxo]): Self = this.set("utxo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXpub(value: String): Self = this.set("xpub", value.asInstanceOf[js.Any])
+    def setXpub(value: String): Self = StObject.set(x, "xpub", value.asInstanceOf[js.Any])
   }
 }

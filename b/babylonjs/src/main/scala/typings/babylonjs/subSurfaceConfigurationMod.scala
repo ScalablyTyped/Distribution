@@ -4,14 +4,14 @@ import typings.babylonjs.mathColorMod.Color3
 import typings.babylonjs.prePassEffectConfigurationMod.PrePassEffectConfiguration
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.subSurfaceScatteringPostProcessMod.SubSurfaceScatteringPostProcess
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Rendering/subSurfaceConfiguration", JSImport.Namespace)
-@js.native
-object subSurfaceConfigurationMod extends js.Object {
+object subSurfaceConfigurationMod {
   
+  @JSImport("babylonjs/Rendering/subSurfaceConfiguration", "SubSurfaceConfiguration")
   @js.native
   class SubSurfaceConfiguration protected () extends PrePassEffectConfiguration {
     /**
@@ -113,10 +113,11 @@ object subSurfaceConfigurationMod extends js.Object {
     def ssFilterRadii: js.Array[Double] = js.native
   }
   /* static members */
-  @js.native
-  object SubSurfaceConfiguration extends js.Object {
+  object SubSurfaceConfiguration {
     
     /** @hidden */
+    @JSImport("babylonjs/Rendering/subSurfaceConfiguration", "SubSurfaceConfiguration._SceneComponentInitialization")
+    @js.native
     def _SceneComponentInitialization(scene: Scene): Unit = js.native
   }
 }

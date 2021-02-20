@@ -1,7 +1,8 @@
 package typings.moment.momentMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _DurationInputArg1 extends js.Object
+trait _DurationInputArg1 extends StObject

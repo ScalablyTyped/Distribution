@@ -1,14 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGSVGElementEventMap
-  extends ElementEventMap
-     with GlobalEventHandlersEventMap
-     with DocumentAndElementEventHandlersEventMap {
+trait SVGSVGElementEventMap extends SVGElementEventMap {
   
   var SVGUnload: Event = js.native
   
@@ -118,24 +116,12 @@ object SVGSVGElementEventMap {
   }
   
   @scala.inline
-  implicit class SVGSVGElementEventMapOps[Self <: SVGSVGElementEventMap] (val x: Self) extends AnyVal {
+  implicit class SVGSVGElementEventMapMutableBuilder[Self <: SVGSVGElementEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSVGUnload(value: Event): Self = StObject.set(x, "SVGUnload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSVGUnload(value: Event): Self = this.set("SVGUnload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSVGZoom(value: SVGZoomEvent): Self = this.set("SVGZoom", value.asInstanceOf[js.Any])
+    def setSVGZoom(value: SVGZoomEvent): Self = StObject.set(x, "SVGZoom", value.asInstanceOf[js.Any])
   }
 }

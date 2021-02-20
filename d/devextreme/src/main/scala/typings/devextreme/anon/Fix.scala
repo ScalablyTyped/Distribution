@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fix extends js.Object {
+trait Fix extends StObject {
   
   var fix: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object Fix {
   }
   
   @scala.inline
-  implicit class FixOps[Self <: Fix] (val x: Self) extends AnyVal {
+  implicit class FixMutableBuilder[Self <: Fix] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFix(value: String): Self = StObject.set(x, "fix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFixUndefined: Self = StObject.set(x, "fix", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeftPosition(value: String): Self = StObject.set(x, "leftPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFix(value: String): Self = this.set("fix", value.asInstanceOf[js.Any])
+    def setLeftPositionUndefined: Self = StObject.set(x, "leftPosition", js.undefined)
     
     @scala.inline
-    def deleteFix: Self = this.set("fix", js.undefined)
+    def setRightPosition(value: String): Self = StObject.set(x, "rightPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftPosition(value: String): Self = this.set("leftPosition", value.asInstanceOf[js.Any])
+    def setRightPositionUndefined: Self = StObject.set(x, "rightPosition", js.undefined)
     
     @scala.inline
-    def deleteLeftPosition: Self = this.set("leftPosition", js.undefined)
+    def setUnfix(value: String): Self = StObject.set(x, "unfix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightPosition(value: String): Self = this.set("rightPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRightPosition: Self = this.set("rightPosition", js.undefined)
-    
-    @scala.inline
-    def setUnfix(value: String): Self = this.set("unfix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnfix: Self = this.set("unfix", js.undefined)
+    def setUnfixUndefined: Self = StObject.set(x, "unfix", js.undefined)
   }
 }

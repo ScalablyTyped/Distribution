@@ -1,16 +1,18 @@
 package typings.peekReadable
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("peek-readable/lib/EndOfFileStream", JSImport.Namespace)
-@js.native
-object endOfFileStreamMod extends js.Object {
+object endOfFileStreamMod {
   
-  val defaultMessages: /* "End-Of-Stream" */ String = js.native
-  
+  @JSImport("peek-readable/lib/EndOfFileStream", "EndOfStreamError")
   @js.native
   class EndOfStreamError () extends Error
+  
+  @JSImport("peek-readable/lib/EndOfFileStream", "defaultMessages")
+  @js.native
+  val defaultMessages: /* "End-Of-Stream" */ String = js.native
 }

@@ -1,14 +1,15 @@
 package typings.winrt.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TabLeader extends js.Object
+sealed trait TabLeader extends StObject
 @JSGlobal("Windows.UI.Text.TabLeader")
 @js.native
-object TabLeader extends js.Object {
+object TabLeader extends StObject {
   
   @js.native
   sealed trait dashes extends TabLeader

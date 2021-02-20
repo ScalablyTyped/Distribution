@@ -1,11 +1,12 @@
 package typings.awsSdk.marketplacecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Entity extends js.Object {
+trait Entity extends StObject {
   
   /**
     * The identifier for the entity.
@@ -26,27 +27,15 @@ object Entity {
   }
   
   @scala.inline
-  implicit class EntityOps[Self <: Entity] (val x: Self) extends AnyVal {
+  implicit class EntityMutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentifierUndefined: Self = StObject.set(x, "Identifier", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: EntityType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("Identifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentifier: Self = this.set("Identifier", js.undefined)
+    def setType(value: EntityType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

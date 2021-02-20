@@ -1,5 +1,6 @@
 package typings.openseadragon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,7 +61,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.openseadragon.openseadragonStrings.visible
   - typings.openseadragon.openseadragonStrings.zoom
 */
-trait ViewerEventName extends js.Object
+trait ViewerEventName extends StObject
 object ViewerEventName {
   
   @scala.inline

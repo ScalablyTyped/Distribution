@@ -1,5 +1,6 @@
 package typings.wegameApi.wx.types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wegameApi.wegameApiStrings.mic
   - typings.wegameApi.wegameApiStrings.camcorder
 */
-trait AudioSourceType extends js.Object
+trait AudioSourceType extends StObject
 object AudioSourceType {
   
   @scala.inline

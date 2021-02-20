@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Change extends js.Object {
+trait Change extends StObject {
   
   var change: scala.Double = js.native
   
@@ -41,42 +42,30 @@ object Change {
   }
   
   @scala.inline
-  implicit class ChangeOps[Self <: Change] (val x: Self) extends AnyVal {
+  implicit class ChangeMutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChange(value: scala.Double): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeset(value: scala.Double): Self = StObject.set(x, "changeset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDate(value: scala.Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: scala.Double): Self = this.set("change", value.asInstanceOf[js.Any])
+    def setLatest(value: scala.Double): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeset(value: scala.Double): Self = this.set("changeset", value.asInstanceOf[js.Any])
+    def setMergeSource(value: scala.Double): Self = StObject.set(x, "mergeSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: scala.Double): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatest(value: scala.Double): Self = this.set("latest", value.asInstanceOf[js.Any])
+    def setShelveset(value: scala.Double): Self = StObject.set(x, "shelveset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeSource(value: scala.Double): Self = this.set("mergeSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShelveset(value: scala.Double): Self = this.set("shelveset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTip(value: scala.Double): Self = this.set("tip", value.asInstanceOf[js.Any])
+    def setTip(value: scala.Double): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
   }
 }

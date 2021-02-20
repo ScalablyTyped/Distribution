@@ -1,5 +1,6 @@
 package typings.gapiPeople.gapi.client.people
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.gapiPeople.gapiPeopleStrings.GPLUS
   - typings.gapiPeople.gapiPeopleStrings.OTHER_NAME
 */
-trait NicknameType extends js.Object
+trait NicknameType extends StObject
 object NicknameType {
   
   @scala.inline

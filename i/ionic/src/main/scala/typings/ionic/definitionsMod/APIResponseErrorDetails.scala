@@ -1,11 +1,12 @@
 package typings.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait APIResponseErrorDetails extends js.Object {
+trait APIResponseErrorDetails extends StObject {
   
   var error_type: String = js.native
   
@@ -22,30 +23,18 @@ object APIResponseErrorDetails {
   }
   
   @scala.inline
-  implicit class APIResponseErrorDetailsOps[Self <: APIResponseErrorDetails] (val x: Self) extends AnyVal {
+  implicit class APIResponseErrorDetailsMutableBuilder[Self <: APIResponseErrorDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError_type(value: String): Self = StObject.set(x, "error_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
     @scala.inline
-    def setError_type(value: String): Self = this.set("error_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrorsVarargs(value: String*): Self = this.set("errors", js.Array(value :_*))
-    
-    @scala.inline
-    def setErrors(value: js.Array[String]): Self = this.set("errors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParameter(value: String): Self = this.set("parameter", value.asInstanceOf[js.Any])
+    def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
   }
 }

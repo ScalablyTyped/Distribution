@@ -1,5 +1,6 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,15 +87,33 @@ class MatrixDropdownRowModelBase protected ()
   var value: js.Any = js.native
 }
 /* static members */
-@JSImport("survey-knockout", "MatrixDropdownRowModelBase")
-@js.native
-object MatrixDropdownRowModelBase extends js.Object {
+object MatrixDropdownRowModelBase {
   
-  var IndexVariableName: String = js.native
+  @JSImport("survey-knockout", "MatrixDropdownRowModelBase")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var OwnerVariableName: String = js.native
+  @JSImport("survey-knockout", "MatrixDropdownRowModelBase.IndexVariableName")
+  @js.native
+  def IndexVariableName: String = js.native
+  @scala.inline
+  def IndexVariableName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IndexVariableName")(x.asInstanceOf[js.Any])
   
-  var RowValueVariableName: String = js.native
+  @JSImport("survey-knockout", "MatrixDropdownRowModelBase.OwnerVariableName")
+  @js.native
+  def OwnerVariableName: String = js.native
+  @scala.inline
+  def OwnerVariableName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OwnerVariableName")(x.asInstanceOf[js.Any])
   
-  var RowVariableName: String = js.native
+  @JSImport("survey-knockout", "MatrixDropdownRowModelBase.RowValueVariableName")
+  @js.native
+  def RowValueVariableName: String = js.native
+  @scala.inline
+  def RowValueVariableName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RowValueVariableName")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "MatrixDropdownRowModelBase.RowVariableName")
+  @js.native
+  def RowVariableName: String = js.native
+  @scala.inline
+  def RowVariableName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RowVariableName")(x.asInstanceOf[js.Any])
 }

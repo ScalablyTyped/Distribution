@@ -1,12 +1,13 @@
 package typings.bootstrapTimepicker
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimepickerOptions extends js.Object {
+trait TimepickerOptions extends StObject {
   
   var appendWidgetTo: js.UndefOr[String] = js.native
   
@@ -49,114 +50,102 @@ object TimepickerOptions {
   }
   
   @scala.inline
-  implicit class TimepickerOptionsOps[Self <: TimepickerOptions] (val x: Self) extends AnyVal {
+  implicit class TimepickerOptionsMutableBuilder[Self <: TimepickerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendWidgetTo(value: String): Self = StObject.set(x, "appendWidgetTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppendWidgetToUndefined: Self = StObject.set(x, "appendWidgetTo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultTime(value: String | Boolean | Date): Self = StObject.set(x, "defaultTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendWidgetTo(value: String): Self = this.set("appendWidgetTo", value.asInstanceOf[js.Any])
+    def setDefaultTimeUndefined: Self = StObject.set(x, "defaultTime", js.undefined)
     
     @scala.inline
-    def deleteAppendWidgetTo: Self = this.set("appendWidgetTo", js.undefined)
+    def setDisableFocus(value: Boolean): Self = StObject.set(x, "disableFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTime(value: String | Boolean | Date): Self = this.set("defaultTime", value.asInstanceOf[js.Any])
+    def setDisableFocusUndefined: Self = StObject.set(x, "disableFocus", js.undefined)
     
     @scala.inline
-    def deleteDefaultTime: Self = this.set("defaultTime", js.undefined)
+    def setDisableMousewheel(value: Boolean): Self = StObject.set(x, "disableMousewheel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableFocus(value: Boolean): Self = this.set("disableFocus", value.asInstanceOf[js.Any])
+    def setDisableMousewheelUndefined: Self = StObject.set(x, "disableMousewheel", js.undefined)
     
     @scala.inline
-    def deleteDisableFocus: Self = this.set("disableFocus", js.undefined)
+    def setExplicitMode(value: Boolean): Self = StObject.set(x, "explicitMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableMousewheel(value: Boolean): Self = this.set("disableMousewheel", value.asInstanceOf[js.Any])
+    def setExplicitModeUndefined: Self = StObject.set(x, "explicitMode", js.undefined)
     
     @scala.inline
-    def deleteDisableMousewheel: Self = this.set("disableMousewheel", js.undefined)
+    def setIcons(value: TimepickerIconOptions): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplicitMode(value: Boolean): Self = this.set("explicitMode", value.asInstanceOf[js.Any])
+    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def deleteExplicitMode: Self = this.set("explicitMode", js.undefined)
+    def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcons(value: TimepickerIconOptions): Self = this.set("icons", value.asInstanceOf[js.Any])
+    def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
     
     @scala.inline
-    def deleteIcons: Self = this.set("icons", js.undefined)
+    def setMaxHours(value: Double): Self = StObject.set(x, "maxHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOpen(value: Boolean): Self = this.set("isOpen", value.asInstanceOf[js.Any])
+    def setMaxHoursUndefined: Self = StObject.set(x, "maxHours", js.undefined)
     
     @scala.inline
-    def deleteIsOpen: Self = this.set("isOpen", js.undefined)
+    def setMinuteStep(value: Double): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHours(value: Double): Self = this.set("maxHours", value.asInstanceOf[js.Any])
+    def setMinuteStepUndefined: Self = StObject.set(x, "minuteStep", js.undefined)
     
     @scala.inline
-    def deleteMaxHours: Self = this.set("maxHours", js.undefined)
+    def setModalBackdrop(value: Boolean): Self = StObject.set(x, "modalBackdrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinuteStep(value: Double): Self = this.set("minuteStep", value.asInstanceOf[js.Any])
+    def setModalBackdropUndefined: Self = StObject.set(x, "modalBackdrop", js.undefined)
     
     @scala.inline
-    def deleteMinuteStep: Self = this.set("minuteStep", js.undefined)
+    def setSecondStep(value: Double): Self = StObject.set(x, "secondStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModalBackdrop(value: Boolean): Self = this.set("modalBackdrop", value.asInstanceOf[js.Any])
+    def setSecondStepUndefined: Self = StObject.set(x, "secondStep", js.undefined)
     
     @scala.inline
-    def deleteModalBackdrop: Self = this.set("modalBackdrop", js.undefined)
+    def setShowInputs(value: Boolean): Self = StObject.set(x, "showInputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondStep(value: Double): Self = this.set("secondStep", value.asInstanceOf[js.Any])
+    def setShowInputsUndefined: Self = StObject.set(x, "showInputs", js.undefined)
     
     @scala.inline
-    def deleteSecondStep: Self = this.set("secondStep", js.undefined)
+    def setShowMeridian(value: Boolean): Self = StObject.set(x, "showMeridian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowInputs(value: Boolean): Self = this.set("showInputs", value.asInstanceOf[js.Any])
+    def setShowMeridianUndefined: Self = StObject.set(x, "showMeridian", js.undefined)
     
     @scala.inline
-    def deleteShowInputs: Self = this.set("showInputs", js.undefined)
+    def setShowSeconds(value: Boolean): Self = StObject.set(x, "showSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMeridian(value: Boolean): Self = this.set("showMeridian", value.asInstanceOf[js.Any])
+    def setShowSecondsUndefined: Self = StObject.set(x, "showSeconds", js.undefined)
     
     @scala.inline
-    def deleteShowMeridian: Self = this.set("showMeridian", js.undefined)
+    def setSnapToStep(value: Boolean): Self = StObject.set(x, "snapToStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowSeconds(value: Boolean): Self = this.set("showSeconds", value.asInstanceOf[js.Any])
+    def setSnapToStepUndefined: Self = StObject.set(x, "snapToStep", js.undefined)
     
     @scala.inline
-    def deleteShowSeconds: Self = this.set("showSeconds", js.undefined)
+    def setTemplate(value: String | Boolean): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapToStep(value: Boolean): Self = this.set("snapToStep", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapToStep: Self = this.set("snapToStep", js.undefined)
-    
-    @scala.inline
-    def setTemplate(value: String | Boolean): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

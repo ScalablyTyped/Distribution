@@ -1,12 +1,13 @@
 package typings.awsLambda.anon
 
 import typings.awsLambda.commonMod.StringMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChallengeMetadata extends js.Object {
+trait ChallengeMetadata extends StObject {
   
   var challengeMetadata: String = js.native
   
@@ -27,27 +28,15 @@ object ChallengeMetadata {
   }
   
   @scala.inline
-  implicit class ChallengeMetadataOps[Self <: ChallengeMetadata] (val x: Self) extends AnyVal {
+  implicit class ChallengeMetadataMutableBuilder[Self <: ChallengeMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChallengeMetadata(value: String): Self = StObject.set(x, "challengeMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrivateChallengeParameters(value: StringMap): Self = StObject.set(x, "privateChallengeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChallengeMetadata(value: String): Self = this.set("challengeMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrivateChallengeParameters(value: StringMap): Self = this.set("privateChallengeParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublicChallengeParameters(value: StringMap): Self = this.set("publicChallengeParameters", value.asInstanceOf[js.Any])
+    def setPublicChallengeParameters(value: StringMap): Self = StObject.set(x, "publicChallengeParameters", value.asInstanceOf[js.Any])
   }
 }

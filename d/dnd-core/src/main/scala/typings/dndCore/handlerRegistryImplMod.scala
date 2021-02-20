@@ -7,14 +7,14 @@ import typings.dndCore.interfacesMod.Identifier
 import typings.dndCore.reducersMod.State
 import typings.redux.mod.AnyAction
 import typings.redux.mod.Store
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("dnd-core/lib/HandlerRegistryImpl", JSImport.Namespace)
-@js.native
-object handlerRegistryImplMod extends js.Object {
+object handlerRegistryImplMod {
   
+  @JSImport("dnd-core/lib/HandlerRegistryImpl", "HandlerRegistryImpl")
   @js.native
   class HandlerRegistryImpl protected () extends HandlerRegistry {
     def this(store: Store[State, AnyAction]) = this()

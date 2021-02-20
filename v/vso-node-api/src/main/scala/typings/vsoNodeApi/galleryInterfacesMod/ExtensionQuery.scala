@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionQuery extends js.Object {
+trait ExtensionQuery extends StObject {
   
   /**
     * When retrieving extensions with a query; frequently the caller only needs a small subset of the assets. The caller may specify a list of asset types that should be returned if the extension contains it. All other assets will not be returned.
@@ -31,33 +32,21 @@ object ExtensionQuery {
   }
   
   @scala.inline
-  implicit class ExtensionQueryOps[Self <: ExtensionQuery] (val x: Self) extends AnyVal {
+  implicit class ExtensionQueryMutableBuilder[Self <: ExtensionQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetTypes(value: js.Array[String]): Self = StObject.set(x, "assetTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetTypesVarargs(value: String*): Self = StObject.set(x, "assetTypes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilters(value: js.Array[QueryFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetTypesVarargs(value: String*): Self = this.set("assetTypes", js.Array(value :_*))
+    def setFiltersVarargs(value: QueryFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def setAssetTypes(value: js.Array[String]): Self = this.set("assetTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFiltersVarargs(value: QueryFilter*): Self = this.set("filters", js.Array(value :_*))
-    
-    @scala.inline
-    def setFilters(value: js.Array[QueryFilter]): Self = this.set("filters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFlags(value: ExtensionQueryFlags): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setFlags(value: ExtensionQueryFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
   }
 }

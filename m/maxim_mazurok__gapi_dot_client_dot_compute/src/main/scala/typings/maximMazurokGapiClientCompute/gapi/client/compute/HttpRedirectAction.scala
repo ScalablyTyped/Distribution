@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpRedirectAction extends js.Object {
+trait HttpRedirectAction extends StObject {
   
   /**
     * The host that will be used in the redirect response instead of the one that was supplied in the request.
@@ -60,54 +61,42 @@ object HttpRedirectAction {
   }
   
   @scala.inline
-  implicit class HttpRedirectActionOps[Self <: HttpRedirectAction] (val x: Self) extends AnyVal {
+  implicit class HttpRedirectActionMutableBuilder[Self <: HttpRedirectAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostRedirect(value: String): Self = StObject.set(x, "hostRedirect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostRedirectUndefined: Self = StObject.set(x, "hostRedirect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpsRedirect(value: Boolean): Self = StObject.set(x, "httpsRedirect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostRedirect(value: String): Self = this.set("hostRedirect", value.asInstanceOf[js.Any])
+    def setHttpsRedirectUndefined: Self = StObject.set(x, "httpsRedirect", js.undefined)
     
     @scala.inline
-    def deleteHostRedirect: Self = this.set("hostRedirect", js.undefined)
+    def setPathRedirect(value: String): Self = StObject.set(x, "pathRedirect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpsRedirect(value: Boolean): Self = this.set("httpsRedirect", value.asInstanceOf[js.Any])
+    def setPathRedirectUndefined: Self = StObject.set(x, "pathRedirect", js.undefined)
     
     @scala.inline
-    def deleteHttpsRedirect: Self = this.set("httpsRedirect", js.undefined)
+    def setPrefixRedirect(value: String): Self = StObject.set(x, "prefixRedirect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathRedirect(value: String): Self = this.set("pathRedirect", value.asInstanceOf[js.Any])
+    def setPrefixRedirectUndefined: Self = StObject.set(x, "prefixRedirect", js.undefined)
     
     @scala.inline
-    def deletePathRedirect: Self = this.set("pathRedirect", js.undefined)
+    def setRedirectResponseCode(value: String): Self = StObject.set(x, "redirectResponseCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefixRedirect(value: String): Self = this.set("prefixRedirect", value.asInstanceOf[js.Any])
+    def setRedirectResponseCodeUndefined: Self = StObject.set(x, "redirectResponseCode", js.undefined)
     
     @scala.inline
-    def deletePrefixRedirect: Self = this.set("prefixRedirect", js.undefined)
+    def setStripQuery(value: Boolean): Self = StObject.set(x, "stripQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectResponseCode(value: String): Self = this.set("redirectResponseCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedirectResponseCode: Self = this.set("redirectResponseCode", js.undefined)
-    
-    @scala.inline
-    def setStripQuery(value: Boolean): Self = this.set("stripQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStripQuery: Self = this.set("stripQuery", js.undefined)
+    def setStripQueryUndefined: Self = StObject.set(x, "stripQuery", js.undefined)
   }
 }

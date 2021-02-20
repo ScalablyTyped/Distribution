@@ -1,11 +1,12 @@
 package typings.zui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatetimepickerIcons extends js.Object {
+trait DatetimepickerIcons extends StObject {
   
   var date: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object DatetimepickerIcons {
   }
   
   @scala.inline
-  implicit class DatetimepickerIconsOps[Self <: DatetimepickerIcons] (val x: Self) extends AnyVal {
+  implicit class DatetimepickerIconsMutableBuilder[Self <: DatetimepickerIcons] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDown(value: String): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDown(value: String): Self = this.set("down", value.asInstanceOf[js.Any])
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
     @scala.inline
-    def deleteDown: Self = this.set("down", js.undefined)
+    def setUp(value: String): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime(value: String): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
-    
-    @scala.inline
-    def setUp(value: String): Self = this.set("up", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUp: Self = this.set("up", js.undefined)
+    def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
   }
 }

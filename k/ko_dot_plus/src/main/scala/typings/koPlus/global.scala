@@ -1,18 +1,20 @@
 package typings.koPlus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var ko: KnockoutStatic = js.native
+  @JSGlobal("ko")
+  @js.native
+  def ko: KnockoutStatic = js.native
+  @scala.inline
+  def ko_=(x: KnockoutStatic): Unit = js.Dynamic.global.updateDynamic("ko")(x.asInstanceOf[js.Any])
   
   //
   // namespace for ko.plus types
   //
-  @js.native
-  object KoPlus extends js.Object
+  object KoPlus
 }

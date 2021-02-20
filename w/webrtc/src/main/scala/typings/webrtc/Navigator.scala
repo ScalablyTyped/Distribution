@@ -1,12 +1,13 @@
 package typings.webrtc
 
 import typings.std.MediaStreamError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Navigator extends js.Object {
+trait Navigator extends StObject {
   
   def getUserMedia(
     constraints: MediaStreamConstraints,

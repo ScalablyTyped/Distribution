@@ -1,11 +1,12 @@
 package typings.angularMaterial.mod.angularAugmentingMod.material
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDefineThemeOptions extends js.Object {
+trait IDefineThemeOptions extends StObject {
   
   var accent: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object IDefineThemeOptions {
   }
   
   @scala.inline
-  implicit class IDefineThemeOptionsOps[Self <: IDefineThemeOptions] (val x: Self) extends AnyVal {
+  implicit class IDefineThemeOptionsMutableBuilder[Self <: IDefineThemeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccent(value: String): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccentUndefined: Self = StObject.set(x, "accent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccent(value: String): Self = this.set("accent", value.asInstanceOf[js.Any])
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def deleteAccent: Self = this.set("accent", js.undefined)
+    def setDark(value: Boolean): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDark(value: Boolean): Self = this.set("dark", value.asInstanceOf[js.Any])
+    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
     @scala.inline
-    def deleteDark: Self = this.set("dark", js.undefined)
+    def setWarn(value: String): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary(value: String): Self = this.set("primary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimary: Self = this.set("primary", js.undefined)
-    
-    @scala.inline
-    def setWarn(value: String): Self = this.set("warn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarn: Self = this.set("warn", js.undefined)
+    def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.xml.sax
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,33 +63,21 @@ object XExtendedDocumentHandler {
   }
   
   @scala.inline
-  implicit class XExtendedDocumentHandlerOps[Self <: XExtendedDocumentHandler] (val x: Self) extends AnyVal {
+  implicit class XExtendedDocumentHandlerMutableBuilder[Self <: XExtendedDocumentHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowLineBreak(value: () => Unit): Self = StObject.set(x, "allowLineBreak", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComment(value: String => Unit): Self = StObject.set(x, "comment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndCDATA(value: () => Unit): Self = StObject.set(x, "endCDATA", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAllowLineBreak(value: () => Unit): Self = this.set("allowLineBreak", js.Any.fromFunction0(value))
+    def setStartCDATA(value: () => Unit): Self = StObject.set(x, "startCDATA", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComment(value: String => Unit): Self = this.set("comment", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setEndCDATA(value: () => Unit): Self = this.set("endCDATA", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStartCDATA(value: () => Unit): Self = this.set("startCDATA", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUnknown(value: String => Unit): Self = this.set("unknown", js.Any.fromFunction1(value))
+    def setUnknown(value: String => Unit): Self = StObject.set(x, "unknown", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTypedLinkFacetNamesResponse extends js.Object {
+trait ListTypedLinkFacetNamesResponse extends StObject {
   
   /**
     * The names of typed link facets that exist within the schema.
@@ -26,33 +27,21 @@ object ListTypedLinkFacetNamesResponse {
   }
   
   @scala.inline
-  implicit class ListTypedLinkFacetNamesResponseOps[Self <: ListTypedLinkFacetNamesResponse] (val x: Self) extends AnyVal {
+  implicit class ListTypedLinkFacetNamesResponseMutableBuilder[Self <: ListTypedLinkFacetNamesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFacetNames(value: TypedLinkNameList): Self = StObject.set(x, "FacetNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFacetNamesUndefined: Self = StObject.set(x, "FacetNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFacetNamesVarargs(value: TypedLinkName*): Self = StObject.set(x, "FacetNames", js.Array(value :_*))
     
     @scala.inline
-    def setFacetNamesVarargs(value: TypedLinkName*): Self = this.set("FacetNames", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetNames(value: TypedLinkNameList): Self = this.set("FacetNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFacetNames: Self = this.set("FacetNames", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

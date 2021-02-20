@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -85,111 +86,99 @@ object EpisodeOfCare {
   }
   
   @scala.inline
-  implicit class EpisodeOfCareOps[Self <: EpisodeOfCare] (val x: Self) extends AnyVal {
+  implicit class EpisodeOfCareMutableBuilder[Self <: EpisodeOfCare] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount(value: js.Array[Reference]): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountVarargs(value: Reference*): Self = StObject.set(x, "account", js.Array(value :_*))
     
     @scala.inline
-    def setPatient(value: Reference): Self = this.set("patient", value.asInstanceOf[js.Any])
+    def setCareManager(value: Reference): Self = StObject.set(x, "careManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setCareManagerUndefined: Self = StObject.set(x, "careManager", js.undefined)
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setDiagnosis(value: js.Array[EpisodeOfCareDiagnosis]): Self = StObject.set(x, "diagnosis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setDiagnosisUndefined: Self = StObject.set(x, "diagnosis", js.undefined)
     
     @scala.inline
-    def setAccountVarargs(value: Reference*): Self = this.set("account", js.Array(value :_*))
+    def setDiagnosisVarargs(value: EpisodeOfCareDiagnosis*): Self = StObject.set(x, "diagnosis", js.Array(value :_*))
     
     @scala.inline
-    def setAccount(value: js.Array[Reference]): Self = this.set("account", value.asInstanceOf[js.Any])
+    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccount: Self = this.set("account", js.undefined)
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def setCareManager(value: Reference): Self = this.set("careManager", value.asInstanceOf[js.Any])
+    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
     @scala.inline
-    def deleteCareManager: Self = this.set("careManager", js.undefined)
+    def setManagingOrganization(value: Reference): Self = StObject.set(x, "managingOrganization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagnosisVarargs(value: EpisodeOfCareDiagnosis*): Self = this.set("diagnosis", js.Array(value :_*))
+    def setManagingOrganizationUndefined: Self = StObject.set(x, "managingOrganization", js.undefined)
     
     @scala.inline
-    def setDiagnosis(value: js.Array[EpisodeOfCareDiagnosis]): Self = this.set("diagnosis", value.asInstanceOf[js.Any])
+    def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDiagnosis: Self = this.set("diagnosis", js.undefined)
+    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setReferralRequest(value: js.Array[Reference]): Self = StObject.set(x, "referralRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setReferralRequestUndefined: Self = StObject.set(x, "referralRequest", js.undefined)
     
     @scala.inline
-    def setManagingOrganization(value: Reference): Self = this.set("managingOrganization", value.asInstanceOf[js.Any])
+    def setReferralRequestVarargs(value: Reference*): Self = StObject.set(x, "referralRequest", js.Array(value :_*))
     
     @scala.inline
-    def deleteManagingOrganization: Self = this.set("managingOrganization", js.undefined)
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    def setStatusHistory(value: js.Array[EpisodeOfCareStatusHistory]): Self = StObject.set(x, "statusHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def setStatusHistoryUndefined: Self = StObject.set(x, "statusHistory", js.undefined)
     
     @scala.inline
-    def setReferralRequestVarargs(value: Reference*): Self = this.set("referralRequest", js.Array(value :_*))
+    def setStatusHistoryVarargs(value: EpisodeOfCareStatusHistory*): Self = StObject.set(x, "statusHistory", js.Array(value :_*))
     
     @scala.inline
-    def setReferralRequest(value: js.Array[Reference]): Self = this.set("referralRequest", value.asInstanceOf[js.Any])
+    def setTeam(value: js.Array[Reference]): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReferralRequest: Self = this.set("referralRequest", js.undefined)
+    def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
     
     @scala.inline
-    def setStatusHistoryVarargs(value: EpisodeOfCareStatusHistory*): Self = this.set("statusHistory", js.Array(value :_*))
+    def setTeamVarargs(value: Reference*): Self = StObject.set(x, "team", js.Array(value :_*))
     
     @scala.inline
-    def setStatusHistory(value: js.Array[EpisodeOfCareStatusHistory]): Self = this.set("statusHistory", value.asInstanceOf[js.Any])
+    def setType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatusHistory: Self = this.set("statusHistory", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setTeamVarargs(value: Reference*): Self = this.set("team", js.Array(value :_*))
+    def setTypeVarargs(value: CodeableConcept*): Self = StObject.set(x, "type", js.Array(value :_*))
     
     @scala.inline
-    def setTeam(value: js.Array[Reference]): Self = this.set("team", value.asInstanceOf[js.Any])
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTeam: Self = this.set("team", js.undefined)
-    
-    @scala.inline
-    def setTypeVarargs(value: CodeableConcept*): Self = this.set("type", js.Array(value :_*))
-    
-    @scala.inline
-    def setType(value: js.Array[CodeableConcept]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

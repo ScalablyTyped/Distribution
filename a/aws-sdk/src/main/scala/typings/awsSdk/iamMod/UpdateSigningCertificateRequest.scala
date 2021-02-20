@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateSigningCertificateRequest extends js.Object {
+trait UpdateSigningCertificateRequest extends StObject {
   
   /**
     * The ID of the signing certificate you want to update. This parameter allows (through its regex pattern) a string of characters that can consist of any upper or lowercased letter or digit.
@@ -31,30 +32,18 @@ object UpdateSigningCertificateRequest {
   }
   
   @scala.inline
-  implicit class UpdateSigningCertificateRequestOps[Self <: UpdateSigningCertificateRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateSigningCertificateRequestMutableBuilder[Self <: UpdateSigningCertificateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateId(value: certificateIdType): Self = StObject.set(x, "CertificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateId(value: certificateIdType): Self = this.set("CertificateId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: statusType): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserName(value: existingUserNameType): Self = this.set("UserName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserName: Self = this.set("UserName", js.undefined)
+    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
   }
 }

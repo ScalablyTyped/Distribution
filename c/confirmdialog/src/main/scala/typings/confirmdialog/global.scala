@@ -1,16 +1,22 @@
 package typings.confirmdialog
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object jconfirm extends js.Object {
+  object jconfirm {
     
-    var defaults: js.Any = js.native
+    @JSGlobal("jconfirm")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSGlobal("jconfirm.defaults")
+    @js.native
+    def defaults: js.Any = js.native
+    @scala.inline
+    def defaults_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
   }
 }

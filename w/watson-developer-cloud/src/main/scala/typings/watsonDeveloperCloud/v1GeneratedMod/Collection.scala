@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A collection for storing documents. */
 @js.native
-trait Collection extends js.Object {
+trait Collection extends StObject {
   
   /** The unique identifier of the collection. */
   var collection_id: js.UndefOr[String] = js.native
@@ -51,90 +52,78 @@ object Collection {
   }
   
   @scala.inline
-  implicit class CollectionOps[Self <: Collection] (val x: Self) extends AnyVal {
+  implicit class CollectionMutableBuilder[Self <: Collection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollection_idUndefined: Self = StObject.set(x, "collection_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfiguration_id(value: String): Self = StObject.set(x, "configuration_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollection_id(value: String): Self = this.set("collection_id", value.asInstanceOf[js.Any])
+    def setConfiguration_idUndefined: Self = StObject.set(x, "configuration_id", js.undefined)
     
     @scala.inline
-    def deleteCollection_id: Self = this.set("collection_id", js.undefined)
+    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration_id(value: String): Self = this.set("configuration_id", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def deleteConfiguration_id: Self = this.set("configuration_id", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: String): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setDisk_usage(value: CollectionDiskUsage): Self = StObject.set(x, "disk_usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisk_usageUndefined: Self = StObject.set(x, "disk_usage", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDocument_counts(value: DocumentCounts): Self = StObject.set(x, "document_counts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisk_usage(value: CollectionDiskUsage): Self = this.set("disk_usage", value.asInstanceOf[js.Any])
+    def setDocument_countsUndefined: Self = StObject.set(x, "document_counts", js.undefined)
     
     @scala.inline
-    def deleteDisk_usage: Self = this.set("disk_usage", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument_counts(value: DocumentCounts): Self = this.set("document_counts", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteDocument_counts: Self = this.set("document_counts", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setSource_crawl(value: SourceStatus): Self = StObject.set(x, "source_crawl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSource_crawlUndefined: Self = StObject.set(x, "source_crawl", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource_crawl(value: SourceStatus): Self = this.set("source_crawl", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSource_crawl: Self = this.set("source_crawl", js.undefined)
+    def setTraining_status(value: TrainingStatus): Self = StObject.set(x, "training_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTraining_statusUndefined: Self = StObject.set(x, "training_status", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTraining_status(value: TrainingStatus): Self = this.set("training_status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraining_status: Self = this.set("training_status", js.undefined)
-    
-    @scala.inline
-    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdated: Self = this.set("updated", js.undefined)
+    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }
 }

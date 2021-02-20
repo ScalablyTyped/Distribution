@@ -8,12 +8,13 @@ import typings.uiGrid.anon.Avg
 import typings.uiGrid.anon.COLUMNHEADERCLICK
 import typings.uiGrid.anon.CONTAINS
 import typings.uiGrid.anon.DOWN
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IUiGridConstants extends js.Object {
+trait IUiGridConstants extends StObject {
   
   var APOS_REGEXP: RegExp = js.native
   
@@ -97,93 +98,81 @@ object IUiGridConstants {
   }
   
   @scala.inline
-  implicit class IUiGridConstantsOps[Self <: IUiGridConstants] (val x: Self) extends AnyVal {
+  implicit class IUiGridConstantsMutableBuilder[Self <: IUiGridConstants] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAPOS_REGEXP(value: RegExp): Self = StObject.set(x, "APOS_REGEXP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setASC(value: String): Self = StObject.set(x, "ASC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAggregationTypes(value: Avg): Self = StObject.set(x, "aggregationTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAPOS_REGEXP(value: RegExp): Self = this.set("APOS_REGEXP", value.asInstanceOf[js.Any])
+    def setBRACKET_REGEXP(value: RegExp): Self = StObject.set(x, "BRACKET_REGEXP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setASC(value: String): Self = this.set("ASC", value.asInstanceOf[js.Any])
+    def setCOL_CLASS_PREFIX(value: String): Self = StObject.set(x, "COL_CLASS_PREFIX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBRACKET_REGEXP(value: RegExp): Self = this.set("BRACKET_REGEXP", value.asInstanceOf[js.Any])
+    def setCOL_FIELD(value: RegExp): Self = StObject.set(x, "COL_FIELD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCOL_CLASS_PREFIX(value: String): Self = this.set("COL_CLASS_PREFIX", value.asInstanceOf[js.Any])
+    def setCURRENCY_SYMBOLS(value: js.Array[String]): Self = StObject.set(x, "CURRENCY_SYMBOLS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCOL_FIELD(value: RegExp): Self = this.set("COL_FIELD", value.asInstanceOf[js.Any])
+    def setCURRENCY_SYMBOLSVarargs(value: String*): Self = StObject.set(x, "CURRENCY_SYMBOLS", js.Array(value :_*))
     
     @scala.inline
-    def setCURRENCY_SYMBOLSVarargs(value: String*): Self = this.set("CURRENCY_SYMBOLS", js.Array(value :_*))
+    def setCUSTOM_FILTERS(value: RegExp): Self = StObject.set(x, "CUSTOM_FILTERS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCURRENCY_SYMBOLS(value: js.Array[String]): Self = this.set("CURRENCY_SYMBOLS", value.asInstanceOf[js.Any])
+    def setDESC(value: String): Self = StObject.set(x, "DESC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCUSTOM_FILTERS(value: RegExp): Self = this.set("CUSTOM_FILTERS", value.asInstanceOf[js.Any])
+    def setDISPLAY_CELL_TEMPLATE(value: RegExp): Self = StObject.set(x, "DISPLAY_CELL_TEMPLATE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDESC(value: String): Self = this.set("DESC", value.asInstanceOf[js.Any])
+    def setDOT_REGEXP(value: RegExp): Self = StObject.set(x, "DOT_REGEXP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDISPLAY_CELL_TEMPLATE(value: RegExp): Self = this.set("DISPLAY_CELL_TEMPLATE", value.asInstanceOf[js.Any])
+    def setDataChange(value: ALL): Self = StObject.set(x, "dataChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDOT_REGEXP(value: RegExp): Self = this.set("DOT_REGEXP", value.asInstanceOf[js.Any])
+    def setEvents(value: COLUMNHEADERCLICK): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFUNC_REGEXP(value: RegExp): Self = this.set("FUNC_REGEXP", value.asInstanceOf[js.Any])
+    def setFUNC_REGEXP(value: RegExp): Self = StObject.set(x, "FUNC_REGEXP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOG_DEBUG_MESSAGES(value: Boolean): Self = this.set("LOG_DEBUG_MESSAGES", value.asInstanceOf[js.Any])
+    def setFilter(value: CONTAINS): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOG_ERROR_MESSAGES(value: Boolean): Self = this.set("LOG_ERROR_MESSAGES", value.asInstanceOf[js.Any])
+    def setKeymap(value: ALT): Self = StObject.set(x, "keymap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOG_WARN_MESSAGES(value: Boolean): Self = this.set("LOG_WARN_MESSAGES", value.asInstanceOf[js.Any])
+    def setLOG_DEBUG_MESSAGES(value: Boolean): Self = StObject.set(x, "LOG_DEBUG_MESSAGES", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMODEL_COL_FIELD(value: RegExp): Self = this.set("MODEL_COL_FIELD", value.asInstanceOf[js.Any])
+    def setLOG_ERROR_MESSAGES(value: Boolean): Self = StObject.set(x, "LOG_ERROR_MESSAGES", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTEMPLATE_REGEXP(value: RegExp): Self = this.set("TEMPLATE_REGEXP", value.asInstanceOf[js.Any])
+    def setLOG_WARN_MESSAGES(value: Boolean): Self = StObject.set(x, "LOG_WARN_MESSAGES", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTOOLTIP(value: RegExp): Self = this.set("TOOLTIP", value.asInstanceOf[js.Any])
+    def setMODEL_COL_FIELD(value: RegExp): Self = StObject.set(x, "MODEL_COL_FIELD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregationTypes(value: Avg): Self = this.set("aggregationTypes", value.asInstanceOf[js.Any])
+    def setScrollDirection(value: DOWN): Self = StObject.set(x, "scrollDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataChange(value: ALL): Self = this.set("dataChange", value.asInstanceOf[js.Any])
+    def setScrollbars(value: ALWAYS): Self = StObject.set(x, "scrollbars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: COLUMNHEADERCLICK): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setTEMPLATE_REGEXP(value: RegExp): Self = StObject.set(x, "TEMPLATE_REGEXP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: CONTAINS): Self = this.set("filter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeymap(value: ALT): Self = this.set("keymap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrollDirection(value: DOWN): Self = this.set("scrollDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrollbars(value: ALWAYS): Self = this.set("scrollbars", value.asInstanceOf[js.Any])
+    def setTOOLTIP(value: RegExp): Self = StObject.set(x, "TOOLTIP", value.asInstanceOf[js.Any])
   }
 }

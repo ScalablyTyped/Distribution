@@ -3,16 +3,15 @@ package typings.antvDataSet
 import typings.d3Geo.mod.ExtendedFeature
 import typings.d3Geo.mod.GeoGeometryObjects
 import typings.geojson.mod.GeoJsonProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/data-set/lib/api/geo", JSImport.Namespace)
-@js.native
-object geoMod extends js.Object {
+object geoMod {
   
   @js.native
-  trait GeoApi extends js.Object {
+  trait GeoApi extends StObject {
     
     def geoArea(feature: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): Double = js.native
     

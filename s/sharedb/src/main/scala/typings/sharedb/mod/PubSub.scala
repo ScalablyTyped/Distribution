@@ -1,13 +1,14 @@
 package typings.sharedb.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sharedb", "PubSub")
 @js.native
-abstract class PubSub protected () extends js.Object {
+abstract class PubSub protected () extends StObject {
   protected def this(options: PubSubOptions) = this()
   
   /* private */ def _createStream(channel: js.Any): Unit = js.native
@@ -46,10 +47,10 @@ abstract class PubSub protected () extends js.Object {
   
   var subscribed: StringDictionary[Boolean] = js.native
 }
-/* static members */
-@JSImport("sharedb", "PubSub")
-@js.native
-object PubSub extends js.Object {
+object PubSub {
   
-  /* private */ def shallowCopy(obj: js.Any): js.Any = js.native
+  /* static member */
+  @JSImport("sharedb", "PubSub.shallowCopy")
+  @js.native
+  def shallowCopy(obj: js.Any): js.Any = js.native
 }

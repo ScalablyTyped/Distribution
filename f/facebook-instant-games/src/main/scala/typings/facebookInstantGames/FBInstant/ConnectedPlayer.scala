@@ -1,5 +1,6 @@
 package typings.facebookInstantGames.FBInstant
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents information about a player who is connected to the current player.
   */
 @js.native
-trait ConnectedPlayer extends js.Object {
+trait ConnectedPlayer extends StObject {
   
   /**
     * Get the id of the connected player.
@@ -40,27 +41,15 @@ object ConnectedPlayer {
   }
   
   @scala.inline
-  implicit class ConnectedPlayerOps[Self <: ConnectedPlayer] (val x: Self) extends AnyVal {
+  implicit class ConnectedPlayerMutableBuilder[Self <: ConnectedPlayer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetID(value: () => String): Self = StObject.set(x, "getID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetName(value: () => String | Null): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetID(value: () => String): Self = this.set("getID", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetName(value: () => String | Null): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPhoto(value: () => String | Null): Self = this.set("getPhoto", js.Any.fromFunction0(value))
+    def setGetPhoto(value: () => String | Null): Self = StObject.set(x, "getPhoto", js.Any.fromFunction0(value))
   }
 }

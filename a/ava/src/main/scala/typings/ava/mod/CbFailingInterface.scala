@@ -1,11 +1,12 @@
 package typings.ava.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CbFailingInterface[Context] extends js.Object {
+trait CbFailingInterface[Context] extends StObject {
   
   /** Declare a test that must call `t.end()` when it's done. The test is expected to fail. */
   def apply(title: String, implementation: CbImplementation[Context]): Unit = js.native

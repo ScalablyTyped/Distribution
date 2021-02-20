@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Exclusion extends js.Object {
+trait Exclusion extends StObject {
   
   var exclusion: scala.Double = js.native
   
@@ -20,24 +21,12 @@ object Exclusion {
   }
   
   @scala.inline
-  implicit class ExclusionOps[Self <: Exclusion] (val x: Self) extends AnyVal {
+  implicit class ExclusionMutableBuilder[Self <: Exclusion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclusion(value: scala.Double): Self = StObject.set(x, "exclusion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExclusion(value: scala.Double): Self = this.set("exclusion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInclusion(value: scala.Double): Self = this.set("inclusion", value.asInstanceOf[js.Any])
+    def setInclusion(value: scala.Double): Self = StObject.set(x, "inclusion", value.asInstanceOf[js.Any])
   }
 }

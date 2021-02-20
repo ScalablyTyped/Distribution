@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVision.gapi.client.vision
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudVisionV1p4beta1EntityAnnotation extends js.Object {
+trait GoogleCloudVisionV1p4beta1EntityAnnotation extends StObject {
   
   /** Image region to which this entity belongs. Not produced for `LABEL_DETECTION` features. */
   var boundingPoly: js.UndefOr[GoogleCloudVisionV1p4beta1BoundingPoly] = js.native
@@ -52,78 +53,66 @@ object GoogleCloudVisionV1p4beta1EntityAnnotation {
   }
   
   @scala.inline
-  implicit class GoogleCloudVisionV1p4beta1EntityAnnotationOps[Self <: GoogleCloudVisionV1p4beta1EntityAnnotation] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudVisionV1p4beta1EntityAnnotationMutableBuilder[Self <: GoogleCloudVisionV1p4beta1EntityAnnotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingPoly(value: GoogleCloudVisionV1p4beta1BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingPoly(value: GoogleCloudVisionV1p4beta1BoundingPoly): Self = this.set("boundingPoly", value.asInstanceOf[js.Any])
+    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
     @scala.inline
-    def deleteBoundingPoly: Self = this.set("boundingPoly", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteConfidence: Self = this.set("confidence", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setLocations(value: js.Array[GoogleCloudVisionV1p4beta1LocationInfo]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setLocationsVarargs(value: GoogleCloudVisionV1p4beta1LocationInfo*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
     @scala.inline
-    def setLocationsVarargs(value: GoogleCloudVisionV1p4beta1LocationInfo*): Self = this.set("locations", js.Array(value :_*))
+    def setMid(value: String): Self = StObject.set(x, "mid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocations(value: js.Array[GoogleCloudVisionV1p4beta1LocationInfo]): Self = this.set("locations", value.asInstanceOf[js.Any])
+    def setMidUndefined: Self = StObject.set(x, "mid", js.undefined)
     
     @scala.inline
-    def deleteLocations: Self = this.set("locations", js.undefined)
+    def setProperties(value: js.Array[GoogleCloudVisionV1p4beta1Property]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMid(value: String): Self = this.set("mid", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteMid: Self = this.set("mid", js.undefined)
+    def setPropertiesVarargs(value: GoogleCloudVisionV1p4beta1Property*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
     @scala.inline
-    def setPropertiesVarargs(value: GoogleCloudVisionV1p4beta1Property*): Self = this.set("properties", js.Array(value :_*))
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: js.Array[GoogleCloudVisionV1p4beta1Property]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setTopicality(value: Double): Self = StObject.set(x, "topicality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScore: Self = this.set("score", js.undefined)
-    
-    @scala.inline
-    def setTopicality(value: Double): Self = this.set("topicality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicality: Self = this.set("topicality", js.undefined)
+    def setTopicalityUndefined: Self = StObject.set(x, "topicality", js.undefined)
   }
 }

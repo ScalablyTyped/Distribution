@@ -2,14 +2,14 @@ package typings.imageQ
 
 import typings.imageQ.abstractDistanceCalculatorMod.AbstractDistanceCalculator
 import typings.imageQ.commonMod.IImageDitherer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("image-q/dist/image/riemersma", JSImport.Namespace)
-@js.native
-object riemersmaMod extends js.Object {
+object riemersmaMod {
   
+  @JSImport("image-q/dist/image/riemersma", "ErrorDiffusionRiemersma")
   @js.native
   class ErrorDiffusionRiemersma protected () extends IImageDitherer {
     def this(colorDistanceCalculator: AbstractDistanceCalculator) = this()

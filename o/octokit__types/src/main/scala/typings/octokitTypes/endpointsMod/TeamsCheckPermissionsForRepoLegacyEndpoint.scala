@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TeamsCheckPermissionsForRepoLegacyEndpoint extends js.Object {
+trait TeamsCheckPermissionsForRepoLegacyEndpoint extends StObject {
   
   var owner: String = js.native
   
@@ -22,27 +23,15 @@ object TeamsCheckPermissionsForRepoLegacyEndpoint {
   }
   
   @scala.inline
-  implicit class TeamsCheckPermissionsForRepoLegacyEndpointOps[Self <: TeamsCheckPermissionsForRepoLegacyEndpoint] (val x: Self) extends AnyVal {
+  implicit class TeamsCheckPermissionsForRepoLegacyEndpointMutableBuilder[Self <: TeamsCheckPermissionsForRepoLegacyEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTeam_id(value: Double): Self = this.set("team_id", value.asInstanceOf[js.Any])
+    def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
   }
 }

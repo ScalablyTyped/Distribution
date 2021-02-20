@@ -1,5 +1,6 @@
 package typings.googleapis.fileV1Mod.fileV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Network configuration for the instance.
   */
 @js.native
-trait SchemaNetworkConfig extends js.Object {
+trait SchemaNetworkConfig extends StObject {
   
   /**
     * Output only. IPv4 addresses in the format {octet 1}.{octet 2}.{octet
@@ -49,48 +50,36 @@ object SchemaNetworkConfig {
   }
   
   @scala.inline
-  implicit class SchemaNetworkConfigOps[Self <: SchemaNetworkConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaNetworkConfigMutableBuilder[Self <: SchemaNetworkConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIpAddresses(value: js.Array[String]): Self = StObject.set(x, "ipAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIpAddressesUndefined: Self = StObject.set(x, "ipAddresses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIpAddressesVarargs(value: String*): Self = StObject.set(x, "ipAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setIpAddressesVarargs(value: String*): Self = this.set("ipAddresses", js.Array(value :_*))
+    def setModes(value: js.Array[String]): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddresses(value: js.Array[String]): Self = this.set("ipAddresses", value.asInstanceOf[js.Any])
+    def setModesUndefined: Self = StObject.set(x, "modes", js.undefined)
     
     @scala.inline
-    def deleteIpAddresses: Self = this.set("ipAddresses", js.undefined)
+    def setModesVarargs(value: String*): Self = StObject.set(x, "modes", js.Array(value :_*))
     
     @scala.inline
-    def setModesVarargs(value: String*): Self = this.set("modes", js.Array(value :_*))
+    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModes(value: js.Array[String]): Self = this.set("modes", value.asInstanceOf[js.Any])
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
     @scala.inline
-    def deleteModes: Self = this.set("modes", js.undefined)
+    def setReservedIpRange(value: String): Self = StObject.set(x, "reservedIpRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
-    
-    @scala.inline
-    def setReservedIpRange(value: String): Self = this.set("reservedIpRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservedIpRange: Self = this.set("reservedIpRange", js.undefined)
+    def setReservedIpRangeUndefined: Self = StObject.set(x, "reservedIpRange", js.undefined)
   }
 }

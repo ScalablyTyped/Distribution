@@ -5,14 +5,14 @@ import typings.sipJs.messagesMod.IncomingRequestMessage
 import typings.sipJs.transactionMod.Transaction
 import typings.sipJs.transactionStateMod.TransactionState
 import typings.sipJs.transactionUserMod.ServerTransactionUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/core/transactions/server-transaction", JSImport.Namespace)
-@js.native
-object serverTransactionMod extends js.Object {
+object serverTransactionMod {
   
+  @JSImport("sip.js/lib/core/transactions/server-transaction", "ServerTransaction")
   @js.native
   abstract class ServerTransaction protected () extends Transaction {
     protected def this(

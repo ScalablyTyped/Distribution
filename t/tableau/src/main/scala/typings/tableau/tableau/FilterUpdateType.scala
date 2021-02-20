@@ -1,14 +1,15 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FilterUpdateType extends js.Object
+sealed trait FilterUpdateType extends StObject
 @JSGlobal("tableau.FilterUpdateType")
 @js.native
-object FilterUpdateType extends js.Object {
+object FilterUpdateType extends StObject {
   
   /** Adds the filter values as specified in the call to the current filter values. Equivalent to checking a value in a quick filter. */
   @js.native

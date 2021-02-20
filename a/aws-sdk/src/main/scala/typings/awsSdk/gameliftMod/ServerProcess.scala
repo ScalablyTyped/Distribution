@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerProcess extends js.Object {
+trait ServerProcess extends StObject {
   
   /**
     * The number of server processes that use this configuration to run concurrently on an instance.
@@ -31,30 +32,18 @@ object ServerProcess {
   }
   
   @scala.inline
-  implicit class ServerProcessOps[Self <: ServerProcess] (val x: Self) extends AnyVal {
+  implicit class ServerProcessMutableBuilder[Self <: ServerProcess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConcurrentExecutions(value: PositiveInteger): Self = StObject.set(x, "ConcurrentExecutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLaunchPath(value: NonZeroAndMaxString): Self = StObject.set(x, "LaunchPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameters(value: NonZeroAndMaxString): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcurrentExecutions(value: PositiveInteger): Self = this.set("ConcurrentExecutions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLaunchPath(value: NonZeroAndMaxString): Self = this.set("LaunchPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParameters(value: NonZeroAndMaxString): Self = this.set("Parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
   }
 }

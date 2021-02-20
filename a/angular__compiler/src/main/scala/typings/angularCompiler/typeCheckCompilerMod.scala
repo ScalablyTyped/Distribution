@@ -9,16 +9,16 @@ import typings.angularCompiler.staticReflectorMod.StaticReflector
 import typings.angularCompiler.staticSymbolMod.StaticSymbol
 import typings.angularCompiler.templateAstMod.TemplateAst
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/view_compiler/type_check_compiler", JSImport.Namespace)
-@js.native
-object typeCheckCompilerMod extends js.Object {
+object typeCheckCompilerMod {
   
+  @JSImport("@angular/compiler/src/view_compiler/type_check_compiler", "TypeCheckCompiler")
   @js.native
-  class TypeCheckCompiler protected () extends js.Object {
+  class TypeCheckCompiler protected () extends StObject {
     def this(options: AotCompilerOptions, reflector: StaticReflector) = this()
     
     /**

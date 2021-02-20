@@ -3,195 +3,166 @@ package typings.rrule
 import typings.rrule.cacheMod.CacheKeys
 import typings.rrule.typesMod.QueryMethodTypes
 import typings.rrule.weekdayMod.WeekdayStr
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rruleStrings {
   
+  @js.native
+  sealed trait FR extends WeekdayStr
   @scala.inline
   def FR: FR = "FR".asInstanceOf[FR]
   
+  @js.native
+  sealed trait MO extends WeekdayStr
   @scala.inline
   def MO: MO = "MO".asInstanceOf[MO]
   
+  @js.native
+  sealed trait SA extends WeekdayStr
   @scala.inline
   def SA: SA = "SA".asInstanceOf[SA]
   
+  @js.native
+  sealed trait SU extends WeekdayStr
   @scala.inline
   def SU: SU = "SU".asInstanceOf[SU]
   
+  @js.native
+  sealed trait TH extends WeekdayStr
   @scala.inline
   def TH: TH = "TH".asInstanceOf[TH]
   
+  @js.native
+  sealed trait TU extends WeekdayStr
   @scala.inline
   def TU: TU = "TU".asInstanceOf[TU]
   
-  @scala.inline
-  def WE: WE = "WE".asInstanceOf[WE]
-  
-  @scala.inline
-  def after: after = "after".asInstanceOf[after]
-  
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  
-  @scala.inline
-  def before: before = "before".asInstanceOf[before]
-  
-  @scala.inline
-  def between: between = "between".asInstanceOf[between]
-  
-  @scala.inline
-  def byeaster: byeaster = "byeaster".asInstanceOf[byeaster]
-  
-  @scala.inline
-  def byhour: byhour = "byhour".asInstanceOf[byhour]
-  
-  @scala.inline
-  def byminute: byminute = "byminute".asInstanceOf[byminute]
-  
-  @scala.inline
-  def bymonth: bymonth = "bymonth".asInstanceOf[bymonth]
-  
-  @scala.inline
-  def bymonthday: bymonthday = "bymonthday".asInstanceOf[bymonthday]
-  
-  @scala.inline
-  def bynmonthday: bynmonthday = "bynmonthday".asInstanceOf[bynmonthday]
-  
-  @scala.inline
-  def bynweekday: bynweekday = "bynweekday".asInstanceOf[bynweekday]
-  
-  @scala.inline
-  def bysecond: bysecond = "bysecond".asInstanceOf[bysecond]
-  
-  @scala.inline
-  def bysetpos: bysetpos = "bysetpos".asInstanceOf[bysetpos]
-  
-  @scala.inline
-  def byweekday: byweekday = "byweekday".asInstanceOf[byweekday]
-  
-  @scala.inline
-  def byweekno: byweekno = "byweekno".asInstanceOf[byweekno]
-  
-  @scala.inline
-  def byyearday: byyearday = "byyearday".asInstanceOf[byyearday]
-  
-  @scala.inline
-  def count: count = "count".asInstanceOf[count]
-  
-  @scala.inline
-  def dtstart: dtstart = "dtstart".asInstanceOf[dtstart]
-  
-  @scala.inline
-  def freq: freq = "freq".asInstanceOf[freq]
-  
-  @scala.inline
-  def interval: interval = "interval".asInstanceOf[interval]
-  
-  @scala.inline
-  def tzid: tzid = "tzid".asInstanceOf[tzid]
-  
-  @scala.inline
-  def until: until = "until".asInstanceOf[until]
-  
-  @scala.inline
-  def wkst: wkst = "wkst".asInstanceOf[wkst]
-  
-  @js.native
-  sealed trait FR extends WeekdayStr
-  
-  @js.native
-  sealed trait MO extends WeekdayStr
-  
-  @js.native
-  sealed trait SA extends WeekdayStr
-  
-  @js.native
-  sealed trait SU extends WeekdayStr
-  
-  @js.native
-  sealed trait TH extends WeekdayStr
-  
-  @js.native
-  sealed trait TU extends WeekdayStr
-  
   @js.native
   sealed trait WE extends WeekdayStr
+  @scala.inline
+  def WE: WE = "WE".asInstanceOf[WE]
   
   @js.native
   sealed trait after
     extends CacheKeys
        with QueryMethodTypes
+  @scala.inline
+  def after: after = "after".asInstanceOf[after]
   
   @js.native
   sealed trait all extends QueryMethodTypes
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait before
     extends CacheKeys
        with QueryMethodTypes
+  @scala.inline
+  def before: before = "before".asInstanceOf[before]
   
   @js.native
   sealed trait between
     extends CacheKeys
        with QueryMethodTypes
+  @scala.inline
+  def between: between = "between".asInstanceOf[between]
   
   @js.native
-  sealed trait byeaster extends js.Object
+  sealed trait byeaster extends StObject
+  @scala.inline
+  def byeaster: byeaster = "byeaster".asInstanceOf[byeaster]
   
   @js.native
-  sealed trait byhour extends js.Object
+  sealed trait byhour extends StObject
+  @scala.inline
+  def byhour: byhour = "byhour".asInstanceOf[byhour]
   
   @js.native
-  sealed trait byminute extends js.Object
+  sealed trait byminute extends StObject
+  @scala.inline
+  def byminute: byminute = "byminute".asInstanceOf[byminute]
   
   @js.native
-  sealed trait bymonth extends js.Object
+  sealed trait bymonth extends StObject
+  @scala.inline
+  def bymonth: bymonth = "bymonth".asInstanceOf[bymonth]
   
   @js.native
-  sealed trait bymonthday extends js.Object
+  sealed trait bymonthday extends StObject
+  @scala.inline
+  def bymonthday: bymonthday = "bymonthday".asInstanceOf[bymonthday]
   
   @js.native
-  sealed trait bynmonthday extends js.Object
+  sealed trait bynmonthday extends StObject
+  @scala.inline
+  def bynmonthday: bynmonthday = "bynmonthday".asInstanceOf[bynmonthday]
   
   @js.native
-  sealed trait bynweekday extends js.Object
+  sealed trait bynweekday extends StObject
+  @scala.inline
+  def bynweekday: bynweekday = "bynweekday".asInstanceOf[bynweekday]
   
   @js.native
-  sealed trait bysecond extends js.Object
+  sealed trait bysecond extends StObject
+  @scala.inline
+  def bysecond: bysecond = "bysecond".asInstanceOf[bysecond]
   
   @js.native
-  sealed trait bysetpos extends js.Object
+  sealed trait bysetpos extends StObject
+  @scala.inline
+  def bysetpos: bysetpos = "bysetpos".asInstanceOf[bysetpos]
   
   @js.native
-  sealed trait byweekday extends js.Object
+  sealed trait byweekday extends StObject
+  @scala.inline
+  def byweekday: byweekday = "byweekday".asInstanceOf[byweekday]
   
   @js.native
-  sealed trait byweekno extends js.Object
+  sealed trait byweekno extends StObject
+  @scala.inline
+  def byweekno: byweekno = "byweekno".asInstanceOf[byweekno]
   
   @js.native
-  sealed trait byyearday extends js.Object
+  sealed trait byyearday extends StObject
+  @scala.inline
+  def byyearday: byyearday = "byyearday".asInstanceOf[byyearday]
   
   @js.native
-  sealed trait count extends js.Object
+  sealed trait count extends StObject
+  @scala.inline
+  def count: count = "count".asInstanceOf[count]
   
   @js.native
-  sealed trait dtstart extends js.Object
+  sealed trait dtstart extends StObject
+  @scala.inline
+  def dtstart: dtstart = "dtstart".asInstanceOf[dtstart]
   
   @js.native
-  sealed trait freq extends js.Object
+  sealed trait freq extends StObject
+  @scala.inline
+  def freq: freq = "freq".asInstanceOf[freq]
   
   @js.native
-  sealed trait interval extends js.Object
+  sealed trait interval extends StObject
+  @scala.inline
+  def interval: interval = "interval".asInstanceOf[interval]
   
   @js.native
-  sealed trait tzid extends js.Object
+  sealed trait tzid extends StObject
+  @scala.inline
+  def tzid: tzid = "tzid".asInstanceOf[tzid]
   
   @js.native
-  sealed trait until extends js.Object
+  sealed trait until extends StObject
+  @scala.inline
+  def until: until = "until".asInstanceOf[until]
   
   @js.native
-  sealed trait wkst extends js.Object
+  sealed trait wkst extends StObject
+  @scala.inline
+  def wkst: wkst = "wkst".asInstanceOf[wkst]
 }

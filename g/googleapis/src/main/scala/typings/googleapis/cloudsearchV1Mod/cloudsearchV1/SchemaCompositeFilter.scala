@@ -1,11 +1,12 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaCompositeFilter extends js.Object {
+trait SchemaCompositeFilter extends StObject {
   
   /**
     * The logic operator of the sub filter.
@@ -26,33 +27,21 @@ object SchemaCompositeFilter {
   }
   
   @scala.inline
-  implicit class SchemaCompositeFilterOps[Self <: SchemaCompositeFilter] (val x: Self) extends AnyVal {
+  implicit class SchemaCompositeFilterMutableBuilder[Self <: SchemaCompositeFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogicOperator(value: String): Self = StObject.set(x, "logicOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogicOperatorUndefined: Self = StObject.set(x, "logicOperator", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubFilters(value: js.Array[SchemaFilter]): Self = StObject.set(x, "subFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogicOperator(value: String): Self = this.set("logicOperator", value.asInstanceOf[js.Any])
+    def setSubFiltersUndefined: Self = StObject.set(x, "subFilters", js.undefined)
     
     @scala.inline
-    def deleteLogicOperator: Self = this.set("logicOperator", js.undefined)
-    
-    @scala.inline
-    def setSubFiltersVarargs(value: SchemaFilter*): Self = this.set("subFilters", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubFilters(value: js.Array[SchemaFilter]): Self = this.set("subFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubFilters: Self = this.set("subFilters", js.undefined)
+    def setSubFiltersVarargs(value: SchemaFilter*): Self = StObject.set(x, "subFilters", js.Array(value :_*))
   }
 }

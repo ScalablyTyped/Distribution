@@ -1,11 +1,12 @@
 package typings.awsSdk.migrationhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotifyMigrationTaskStateRequest extends js.Object {
+trait NotifyMigrationTaskStateRequest extends StObject {
   
   /**
     * Optional boolean flag to indicate whether any effect should take place. Used to test if the caller has permission to make the call.
@@ -52,39 +53,27 @@ object NotifyMigrationTaskStateRequest {
   }
   
   @scala.inline
-  implicit class NotifyMigrationTaskStateRequestOps[Self <: NotifyMigrationTaskStateRequest] (val x: Self) extends AnyVal {
+  implicit class NotifyMigrationTaskStateRequestMutableBuilder[Self <: NotifyMigrationTaskStateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDryRun(value: DryRun): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMigrationTaskName(value: MigrationTaskName): Self = StObject.set(x, "MigrationTaskName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMigrationTaskName(value: MigrationTaskName): Self = this.set("MigrationTaskName", value.asInstanceOf[js.Any])
+    def setNextUpdateSeconds(value: NextUpdateSeconds): Self = StObject.set(x, "NextUpdateSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextUpdateSeconds(value: NextUpdateSeconds): Self = this.set("NextUpdateSeconds", value.asInstanceOf[js.Any])
+    def setProgressUpdateStream(value: ProgressUpdateStream): Self = StObject.set(x, "ProgressUpdateStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressUpdateStream(value: ProgressUpdateStream): Self = this.set("ProgressUpdateStream", value.asInstanceOf[js.Any])
+    def setTask(value: Task): Self = StObject.set(x, "Task", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTask(value: Task): Self = this.set("Task", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateDateTime(value: UpdateDateTime): Self = this.set("UpdateDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDryRun(value: DryRun): Self = this.set("DryRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setUpdateDateTime(value: UpdateDateTime): Self = StObject.set(x, "UpdateDateTime", value.asInstanceOf[js.Any])
   }
 }

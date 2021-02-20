@@ -1,11 +1,12 @@
 package typings.reactTouch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SwipeableConfig extends js.Object {
+trait SwipeableConfig extends StObject {
   
   def onSwipeDown(current: Double, initial: Double, callback: js.Function0[Unit]): Unit = js.native
   
@@ -29,30 +30,18 @@ object SwipeableConfig {
   }
   
   @scala.inline
-  implicit class SwipeableConfigOps[Self <: SwipeableConfig] (val x: Self) extends AnyVal {
+  implicit class SwipeableConfigMutableBuilder[Self <: SwipeableConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnSwipeDown(value: (Double, Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onSwipeDown", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnSwipeLeft(value: (Double, Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onSwipeLeft", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnSwipeRight(value: (Double, Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onSwipeRight", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setOnSwipeDown(value: (Double, Double, js.Function0[Unit]) => Unit): Self = this.set("onSwipeDown", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setOnSwipeLeft(value: (Double, Double, js.Function0[Unit]) => Unit): Self = this.set("onSwipeLeft", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setOnSwipeRight(value: (Double, Double, js.Function0[Unit]) => Unit): Self = this.set("onSwipeRight", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setOnSwipeUp(value: (Double, Double, js.Function0[Unit]) => Unit): Self = this.set("onSwipeUp", js.Any.fromFunction3(value))
+    def setOnSwipeUp(value: (Double, Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onSwipeUp", js.Any.fromFunction3(value))
   }
 }

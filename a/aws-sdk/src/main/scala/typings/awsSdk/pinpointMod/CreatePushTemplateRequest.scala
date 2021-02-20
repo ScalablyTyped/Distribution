@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatePushTemplateRequest extends js.Object {
+trait CreatePushTemplateRequest extends StObject {
   
   var PushNotificationTemplateRequest: typings.awsSdk.pinpointMod.PushNotificationTemplateRequest = js.native
   
@@ -23,24 +24,12 @@ object CreatePushTemplateRequest {
   }
   
   @scala.inline
-  implicit class CreatePushTemplateRequestOps[Self <: CreatePushTemplateRequest] (val x: Self) extends AnyVal {
+  implicit class CreatePushTemplateRequestMutableBuilder[Self <: CreatePushTemplateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPushNotificationTemplateRequest(value: PushNotificationTemplateRequest): Self = StObject.set(x, "PushNotificationTemplateRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPushNotificationTemplateRequest(value: PushNotificationTemplateRequest): Self = this.set("PushNotificationTemplateRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTemplateName(value: string): Self = this.set("TemplateName", value.asInstanceOf[js.Any])
+    def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
   }
 }

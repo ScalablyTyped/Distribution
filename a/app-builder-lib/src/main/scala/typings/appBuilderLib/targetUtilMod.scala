@@ -4,22 +4,16 @@ import typings.appBuilderLib.mod.AppInfo
 import typings.appBuilderLib.mod.Target
 import typings.appBuilderLib.platformPackagerMod.PlatformPackager
 import typings.builderUtil.archMod.Arch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("app-builder-lib/out/targets/targetUtil", JSImport.Namespace)
-@js.native
-object targetUtilMod extends js.Object {
+object targetUtilMod {
   
-  def createStageDir(target: Target, packager: PlatformPackager[_], arch: Arch): js.Promise[StageDir] = js.native
-  
-  def createStageDirPath(target: Target, packager: PlatformPackager[_], arch: Arch): js.Promise[String] = js.native
-  
-  def getWindowsInstallationDirName(appInfo: AppInfo, isTryToUseProductName: Boolean): String = js.native
-  
+  @JSImport("app-builder-lib/out/targets/targetUtil", "StageDir")
   @js.native
-  class StageDir protected () extends js.Object {
+  class StageDir protected () extends StObject {
     def this(dir: String) = this()
     
     def cleanup(): js.Promise[Unit] = js.native
@@ -28,4 +22,16 @@ object targetUtilMod extends js.Object {
     
     def getTempFile(name: String): String = js.native
   }
+  
+  @JSImport("app-builder-lib/out/targets/targetUtil", "createStageDir")
+  @js.native
+  def createStageDir(target: Target, packager: PlatformPackager[_], arch: Arch): js.Promise[StageDir] = js.native
+  
+  @JSImport("app-builder-lib/out/targets/targetUtil", "createStageDirPath")
+  @js.native
+  def createStageDirPath(target: Target, packager: PlatformPackager[_], arch: Arch): js.Promise[String] = js.native
+  
+  @JSImport("app-builder-lib/out/targets/targetUtil", "getWindowsInstallationDirName")
+  @js.native
+  def getWindowsInstallationDirName(appInfo: AppInfo, isTryToUseProductName: Boolean): String = js.native
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetNotificationChannelVerificationCodeRequest extends js.Object {
+trait GetNotificationChannelVerificationCodeRequest extends StObject {
   
   /**
     * The desired expiration time. If specified, the API will guarantee that the returned code will not be valid after the specified timestamp; however, the API cannot guarantee that the
@@ -24,24 +25,12 @@ object GetNotificationChannelVerificationCodeRequest {
   }
   
   @scala.inline
-  implicit class GetNotificationChannelVerificationCodeRequestOps[Self <: GetNotificationChannelVerificationCodeRequest] (val x: Self) extends AnyVal {
+  implicit class GetNotificationChannelVerificationCodeRequestMutableBuilder[Self <: GetNotificationChannelVerificationCodeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExpireTime(value: String): Self = this.set("expireTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpireTime: Self = this.set("expireTime", js.undefined)
+    def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
   }
 }

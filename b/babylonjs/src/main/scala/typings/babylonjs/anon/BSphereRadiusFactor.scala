@@ -1,11 +1,12 @@
 package typings.babylonjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BSphereRadiusFactor extends js.Object {
+trait BSphereRadiusFactor extends StObject {
   
   var bSphereRadiusFactor: js.UndefOr[Double] = js.native
   
@@ -34,72 +35,60 @@ object BSphereRadiusFactor {
   }
   
   @scala.inline
-  implicit class BSphereRadiusFactorOps[Self <: BSphereRadiusFactor] (val x: Self) extends AnyVal {
+  implicit class BSphereRadiusFactorMutableBuilder[Self <: BSphereRadiusFactor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBSphereRadiusFactor(value: Double): Self = StObject.set(x, "bSphereRadiusFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBSphereRadiusFactorUndefined: Self = StObject.set(x, "bSphereRadiusFactor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBoundingSphereOnly(value: Boolean): Self = StObject.set(x, "boundingSphereOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBSphereRadiusFactor(value: Double): Self = this.set("bSphereRadiusFactor", value.asInstanceOf[js.Any])
+    def setBoundingSphereOnlyUndefined: Self = StObject.set(x, "boundingSphereOnly", js.undefined)
     
     @scala.inline
-    def deleteBSphereRadiusFactor: Self = this.set("bSphereRadiusFactor", js.undefined)
+    def setEnableDepthSort(value: Boolean): Self = StObject.set(x, "enableDepthSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingSphereOnly(value: Boolean): Self = this.set("boundingSphereOnly", value.asInstanceOf[js.Any])
+    def setEnableDepthSortUndefined: Self = StObject.set(x, "enableDepthSort", js.undefined)
     
     @scala.inline
-    def deleteBoundingSphereOnly: Self = this.set("boundingSphereOnly", js.undefined)
+    def setEnableMultiMaterial(value: Boolean): Self = StObject.set(x, "enableMultiMaterial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableDepthSort(value: Boolean): Self = this.set("enableDepthSort", value.asInstanceOf[js.Any])
+    def setEnableMultiMaterialUndefined: Self = StObject.set(x, "enableMultiMaterial", js.undefined)
     
     @scala.inline
-    def deleteEnableDepthSort: Self = this.set("enableDepthSort", js.undefined)
+    def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableMultiMaterial(value: Boolean): Self = this.set("enableMultiMaterial", value.asInstanceOf[js.Any])
+    def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
     
     @scala.inline
-    def deleteEnableMultiMaterial: Self = this.set("enableMultiMaterial", js.undefined)
+    def setIsPickable(value: Boolean): Self = StObject.set(x, "isPickable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandable(value: Boolean): Self = this.set("expandable", value.asInstanceOf[js.Any])
+    def setIsPickableUndefined: Self = StObject.set(x, "isPickable", js.undefined)
     
     @scala.inline
-    def deleteExpandable: Self = this.set("expandable", js.undefined)
+    def setParticleIntersection(value: Boolean): Self = StObject.set(x, "particleIntersection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPickable(value: Boolean): Self = this.set("isPickable", value.asInstanceOf[js.Any])
+    def setParticleIntersectionUndefined: Self = StObject.set(x, "particleIntersection", js.undefined)
     
     @scala.inline
-    def deleteIsPickable: Self = this.set("isPickable", js.undefined)
+    def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParticleIntersection(value: Boolean): Self = this.set("particleIntersection", value.asInstanceOf[js.Any])
+    def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
     
     @scala.inline
-    def deleteParticleIntersection: Self = this.set("particleIntersection", js.undefined)
+    def setUseModelMaterial(value: Boolean): Self = StObject.set(x, "useModelMaterial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatable(value: Boolean): Self = this.set("updatable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatable: Self = this.set("updatable", js.undefined)
-    
-    @scala.inline
-    def setUseModelMaterial(value: Boolean): Self = this.set("useModelMaterial", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseModelMaterial: Self = this.set("useModelMaterial", js.undefined)
+    def setUseModelMaterialUndefined: Self = StObject.set(x, "useModelMaterial", js.undefined)
   }
 }

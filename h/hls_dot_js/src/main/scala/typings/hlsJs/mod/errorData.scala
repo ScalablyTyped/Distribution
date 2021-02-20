@@ -1,12 +1,13 @@
 package typings.hlsJs.mod
 
 import typings.std.XMLHttpRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait errorData extends js.Object {
+trait errorData extends StObject {
   
   var buffer: js.UndefOr[Double] = js.native
   
@@ -40,75 +41,63 @@ object errorData {
   }
   
   @scala.inline
-  implicit class errorDataOps[Self <: errorData] (val x: Self) extends AnyVal {
+  implicit class errorDataMutableBuilder[Self <: errorData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuffer(value: Double): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContext(value: LoaderContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: String): Self = this.set("details", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def setFatal(value: Boolean): Self = this.set("fatal", value.asInstanceOf[js.Any])
+    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuffer(value: Double): Self = this.set("buffer", value.asInstanceOf[js.Any])
+    def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBuffer: Self = this.set("buffer", js.undefined)
+    def setFragUndefined: Self = StObject.set(x, "frag", js.undefined)
     
     @scala.inline
-    def setContext(value: LoaderContext): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setLevelRetry(value: Boolean): Self = StObject.set(x, "levelRetry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setLevelRetryUndefined: Self = StObject.set(x, "levelRetry", js.undefined)
     
     @scala.inline
-    def setFrag(value: Fragment): Self = this.set("frag", value.asInstanceOf[js.Any])
+    def setLoader(value: Loader): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFrag: Self = this.set("frag", js.undefined)
+    def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
     
     @scala.inline
-    def setLevelRetry(value: Boolean): Self = this.set("levelRetry", value.asInstanceOf[js.Any])
+    def setNetworkDetails(value: XMLHttpRequest): Self = StObject.set(x, "networkDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLevelRetry: Self = this.set("levelRetry", js.undefined)
+    def setNetworkDetailsUndefined: Self = StObject.set(x, "networkDetails", js.undefined)
     
     @scala.inline
-    def setLoader(value: Loader): Self = this.set("loader", value.asInstanceOf[js.Any])
+    def setResponse(value: LoaderError): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoader: Self = this.set("loader", js.undefined)
+    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
     @scala.inline
-    def setNetworkDetails(value: XMLHttpRequest): Self = this.set("networkDetails", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNetworkDetails: Self = this.set("networkDetails", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: LoaderError): Self = this.set("response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponse: Self = this.set("response", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

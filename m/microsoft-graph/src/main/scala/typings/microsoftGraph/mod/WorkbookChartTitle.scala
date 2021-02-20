@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,51 +29,39 @@ object WorkbookChartTitle {
   }
   
   @scala.inline
-  implicit class WorkbookChartTitleOps[Self <: WorkbookChartTitle] (val x: Self) extends AnyVal {
+  implicit class WorkbookChartTitleMutableBuilder[Self <: WorkbookChartTitle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: NullableOption[WorkbookChartTitleFormat]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatNull: Self = StObject.set(x, "format", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setFormat(value: NullableOption[WorkbookChartTitleFormat]): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setOverlay(value: NullableOption[Boolean]): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setOverlayNull: Self = StObject.set(x, "overlay", null)
     
     @scala.inline
-    def setFormatNull: Self = this.set("format", null)
+    def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     
     @scala.inline
-    def setOverlay(value: NullableOption[Boolean]): Self = this.set("overlay", value.asInstanceOf[js.Any])
+    def setText(value: NullableOption[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverlay: Self = this.set("overlay", js.undefined)
+    def setTextNull: Self = StObject.set(x, "text", null)
     
     @scala.inline
-    def setOverlayNull: Self = this.set("overlay", null)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def setText(value: NullableOption[String]): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setTextNull: Self = this.set("text", null)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

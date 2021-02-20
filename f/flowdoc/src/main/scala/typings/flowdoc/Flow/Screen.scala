@@ -2,6 +2,7 @@ package typings.flowdoc.Flow
 
 import typings.flowdoc.Graphic
 import typings.flowdoc.flowdocStrings.SCREEN
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,36 +35,24 @@ object Screen {
   }
   
   @scala.inline
-  implicit class ScreenOps[Self <: Screen] (val x: Self) extends AnyVal {
+  implicit class ScreenMutableBuilder[Self <: Screen] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Array[Layer]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenVarargs(value: Layer*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnections(value: js.Array[Connection]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: Layer*): Self = this.set("children", js.Array(value :_*))
+    def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
     
     @scala.inline
-    def setChildren(value: js.Array[Layer]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: SCREEN): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConnectionsVarargs(value: Connection*): Self = this.set("connections", js.Array(value :_*))
-    
-    @scala.inline
-    def setConnections(value: js.Array[Connection]): Self = this.set("connections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnections: Self = this.set("connections", js.undefined)
+    def setType(value: SCREEN): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

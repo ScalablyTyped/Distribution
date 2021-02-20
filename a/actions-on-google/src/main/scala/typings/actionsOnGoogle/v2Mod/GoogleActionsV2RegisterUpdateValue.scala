@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2RegisterUpdateValue extends js.Object {
+trait GoogleActionsV2RegisterUpdateValue extends StObject {
   
   /**
     * The status of the registering the update requested by the app.
@@ -21,24 +22,12 @@ object GoogleActionsV2RegisterUpdateValue {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2RegisterUpdateValueOps[Self <: GoogleActionsV2RegisterUpdateValue] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2RegisterUpdateValueMutableBuilder[Self <: GoogleActionsV2RegisterUpdateValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStatus(value: GoogleActionsV2RegisterUpdateValueStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStatus(value: GoogleActionsV2RegisterUpdateValueStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

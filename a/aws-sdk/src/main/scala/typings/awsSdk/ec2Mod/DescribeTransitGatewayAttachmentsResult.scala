@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTransitGatewayAttachmentsResult extends js.Object {
+trait DescribeTransitGatewayAttachmentsResult extends StObject {
   
   /**
     * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
@@ -26,33 +27,21 @@ object DescribeTransitGatewayAttachmentsResult {
   }
   
   @scala.inline
-  implicit class DescribeTransitGatewayAttachmentsResultOps[Self <: DescribeTransitGatewayAttachmentsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeTransitGatewayAttachmentsResultMutableBuilder[Self <: DescribeTransitGatewayAttachmentsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTransitGatewayAttachments(value: TransitGatewayAttachmentList): Self = StObject.set(x, "TransitGatewayAttachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setTransitGatewayAttachmentsUndefined: Self = StObject.set(x, "TransitGatewayAttachments", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setTransitGatewayAttachmentsVarargs(value: TransitGatewayAttachment*): Self = this.set("TransitGatewayAttachments", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransitGatewayAttachments(value: TransitGatewayAttachmentList): Self = this.set("TransitGatewayAttachments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitGatewayAttachments: Self = this.set("TransitGatewayAttachments", js.undefined)
+    def setTransitGatewayAttachmentsVarargs(value: TransitGatewayAttachment*): Self = StObject.set(x, "TransitGatewayAttachments", js.Array(value :_*))
   }
 }

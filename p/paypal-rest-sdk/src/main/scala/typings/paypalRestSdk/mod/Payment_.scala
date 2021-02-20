@@ -2,12 +2,13 @@ package typings.paypalRestSdk.mod
 
 import typings.paypalRestSdk.anon.Cancelurl
 import typings.paypalRestSdk.anon.Paymentmethod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Payment_ extends js.Object {
+trait Payment_ extends StObject {
   
   val create_time: js.UndefOr[String] = js.native
   
@@ -42,87 +43,75 @@ object Payment_ {
   }
   
   @scala.inline
-  implicit class Payment_Ops[Self <: Payment_] (val x: Self) extends AnyVal {
+  implicit class Payment_MutableBuilder[Self <: Payment_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreate_time(value: String): Self = StObject.set(x, "create_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreate_timeUndefined: Self = StObject.set(x, "create_time", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExperience_profile_id(value: String): Self = StObject.set(x, "experience_profile_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntent(value: String): Self = this.set("intent", value.asInstanceOf[js.Any])
+    def setExperience_profile_idUndefined: Self = StObject.set(x, "experience_profile_id", js.undefined)
     
     @scala.inline
-    def setPayer(value: Paymentmethod): Self = this.set("payer", value.asInstanceOf[js.Any])
+    def setFailure_reason(value: String): Self = StObject.set(x, "failure_reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactionsVarargs(value: Transaction*): Self = this.set("transactions", js.Array(value :_*))
+    def setFailure_reasonUndefined: Self = StObject.set(x, "failure_reason", js.undefined)
     
     @scala.inline
-    def setTransactions(value: js.Array[Transaction]): Self = this.set("transactions", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreate_time(value: String): Self = this.set("create_time", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCreate_time: Self = this.set("create_time", js.undefined)
+    def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExperience_profile_id(value: String): Self = this.set("experience_profile_id", value.asInstanceOf[js.Any])
+    def setLinks(value: js.Array[Link]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExperience_profile_id: Self = this.set("experience_profile_id", js.undefined)
+    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
     @scala.inline
-    def setFailure_reason(value: String): Self = this.set("failure_reason", value.asInstanceOf[js.Any])
+    def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value :_*))
     
     @scala.inline
-    def deleteFailure_reason: Self = this.set("failure_reason", js.undefined)
+    def setNote_to_payer(value: String): Self = StObject.set(x, "note_to_payer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNote_to_payerUndefined: Self = StObject.set(x, "note_to_payer", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPayer(value: Paymentmethod): Self = StObject.set(x, "payer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinksVarargs(value: Link*): Self = this.set("links", js.Array(value :_*))
+    def setRedirect_urls(value: Cancelurl): Self = StObject.set(x, "redirect_urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinks(value: js.Array[Link]): Self = this.set("links", value.asInstanceOf[js.Any])
+    def setRedirect_urlsUndefined: Self = StObject.set(x, "redirect_urls", js.undefined)
     
     @scala.inline
-    def deleteLinks: Self = this.set("links", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNote_to_payer(value: String): Self = this.set("note_to_payer", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteNote_to_payer: Self = this.set("note_to_payer", js.undefined)
+    def setTransactions(value: js.Array[Transaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirect_urls(value: Cancelurl): Self = this.set("redirect_urls", value.asInstanceOf[js.Any])
+    def setTransactionsVarargs(value: Transaction*): Self = StObject.set(x, "transactions", js.Array(value :_*))
     
     @scala.inline
-    def deleteRedirect_urls: Self = this.set("redirect_urls", js.undefined)
+    def setUpdate_time(value: String): Self = StObject.set(x, "update_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setUpdate_time(value: String): Self = this.set("update_time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate_time: Self = this.set("update_time", js.undefined)
+    def setUpdate_timeUndefined: Self = StObject.set(x, "update_time", js.undefined)
   }
 }

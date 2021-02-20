@@ -1,5 +1,6 @@
 package typings.dymoLabelFramework.dymo.label.framework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * on the label.
   */
 @js.native
-trait ILabel extends js.Object {
+trait ILabel extends StObject {
   
   /**
     * Gets the Intelligent Mail barcode position for an Address object.
@@ -174,56 +175,44 @@ object ILabel {
   }
   
   @scala.inline
-  implicit class ILabelOps[Self <: ILabel] (val x: Self) extends AnyVal {
+  implicit class ILabelMutableBuilder[Self <: ILabel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAddressBarcodePosition(value: Double => AddressBarcodePosition): Self = StObject.set(x, "getAddressBarcodePosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAddressObjectCount(value: () => Double): Self = StObject.set(x, "getAddressObjectCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAddressText(value: Double => String): Self = StObject.set(x, "getAddressText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAddressBarcodePosition(value: Double => AddressBarcodePosition): Self = this.set("getAddressBarcodePosition", js.Any.fromFunction1(value))
+    def setGetLabelXml(value: () => String): Self = StObject.set(x, "getLabelXml", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAddressObjectCount(value: () => Double): Self = this.set("getAddressObjectCount", js.Any.fromFunction0(value))
+    def setGetObjectNames(value: () => js.Array[String]): Self = StObject.set(x, "getObjectNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAddressText(value: Double => String): Self = this.set("getAddressText", js.Any.fromFunction1(value))
+    def setGetObjectText(value: String => String): Self = StObject.set(x, "getObjectText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLabelXml(value: () => String): Self = this.set("getLabelXml", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetObjectNames(value: () => js.Array[String]): Self = this.set("getObjectNames", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetObjectText(value: String => String): Self = this.set("getObjectText", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPrint(value: (String, String, String) => Unit): Self = this.set("print", js.Any.fromFunction3(value))
+    def setPrint(value: (String, String, String) => Unit): Self = StObject.set(x, "print", js.Any.fromFunction3(value))
     
     @scala.inline
     def setPrintAndPollStatus(
       value: (String, String, String, js.Function2[/* printJob */ PrintJob, /* printJobStatusInfo */ PrintJobStatusInfo, Boolean], Double) => PrintJob
-    ): Self = this.set("printAndPollStatus", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "printAndPollStatus", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setRender(value: (String, String) => String): Self = this.set("render", js.Any.fromFunction2(value))
+    def setRender(value: (String, String) => String): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetAddressBarcodePosition(value: (Double, AddressBarcodePosition) => ILabel): Self = this.set("setAddressBarcodePosition", js.Any.fromFunction2(value))
+    def setSetAddressBarcodePosition(value: (Double, AddressBarcodePosition) => ILabel): Self = StObject.set(x, "setAddressBarcodePosition", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetAddressText(value: (Double, String) => ILabel): Self = this.set("setAddressText", js.Any.fromFunction2(value))
+    def setSetAddressText(value: (Double, String) => ILabel): Self = StObject.set(x, "setAddressText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetObjectText(value: (String, String) => ILabel): Self = this.set("setObjectText", js.Any.fromFunction2(value))
+    def setSetObjectText(value: (String, String) => ILabel): Self = StObject.set(x, "setObjectText", js.Any.fromFunction2(value))
   }
 }

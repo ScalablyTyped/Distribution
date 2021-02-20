@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.embed.XEmbeddedObject
 import typings.activexLibreoffice.com_.sun.star.graphic.XGraphic
 import typings.activexLibreoffice.com_.sun.star.lang.XComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,30 +52,18 @@ object XEmbeddedObjectSupplier2 {
   }
   
   @scala.inline
-  implicit class XEmbeddedObjectSupplier2Ops[Self <: XEmbeddedObjectSupplier2] (val x: Self) extends AnyVal {
+  implicit class XEmbeddedObjectSupplier2MutableBuilder[Self <: XEmbeddedObjectSupplier2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAspect(value: Double): Self = StObject.set(x, "Aspect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtendedControlOverEmbeddedObject(value: XEmbeddedObject): Self = StObject.set(x, "ExtendedControlOverEmbeddedObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetExtendedControlOverEmbeddedObject(value: () => XEmbeddedObject): Self = StObject.set(x, "getExtendedControlOverEmbeddedObject", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAspect(value: Double): Self = this.set("Aspect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExtendedControlOverEmbeddedObject(value: XEmbeddedObject): Self = this.set("ExtendedControlOverEmbeddedObject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReplacementGraphic(value: XGraphic): Self = this.set("ReplacementGraphic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetExtendedControlOverEmbeddedObject(value: () => XEmbeddedObject): Self = this.set("getExtendedControlOverEmbeddedObject", js.Any.fromFunction0(value))
+    def setReplacementGraphic(value: XGraphic): Self = StObject.set(x, "ReplacementGraphic", value.asInstanceOf[js.Any])
   }
 }

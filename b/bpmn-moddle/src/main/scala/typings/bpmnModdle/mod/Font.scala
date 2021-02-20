@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,36 +38,24 @@ object Font {
   }
   
   @scala.inline
-  implicit class FontOps[Self <: Font] (val x: Self) extends AnyVal {
+  implicit class FontMutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsBold(value: Boolean): Self = StObject.set(x, "isBold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsItalic(value: Boolean): Self = StObject.set(x, "isItalic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsStrikeThrough(value: Boolean): Self = StObject.set(x, "isStrikeThrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBold(value: Boolean): Self = this.set("isBold", value.asInstanceOf[js.Any])
+    def setIsUnderline(value: Boolean): Self = StObject.set(x, "isUnderline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsItalic(value: Boolean): Self = this.set("isItalic", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsStrikeThrough(value: Boolean): Self = this.set("isStrikeThrough", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsUnderline(value: Boolean): Self = this.set("isUnderline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

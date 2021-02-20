@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTCPeerConnectionEventMap extends js.Object {
+trait RTCPeerConnectionEventMap extends StObject {
   
   var connectionstatechange: Event = js.native
   
@@ -47,48 +48,36 @@ object RTCPeerConnectionEventMap {
   }
   
   @scala.inline
-  implicit class RTCPeerConnectionEventMapOps[Self <: RTCPeerConnectionEventMap] (val x: Self) extends AnyVal {
+  implicit class RTCPeerConnectionEventMapMutableBuilder[Self <: RTCPeerConnectionEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionstatechange(value: Event): Self = StObject.set(x, "connectionstatechange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatachannel(value: RTCDataChannelEvent): Self = StObject.set(x, "datachannel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIcecandidate(value: RTCPeerConnectionIceEvent): Self = StObject.set(x, "icecandidate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionstatechange(value: Event): Self = this.set("connectionstatechange", value.asInstanceOf[js.Any])
+    def setIcecandidateerror(value: RTCPeerConnectionIceErrorEvent): Self = StObject.set(x, "icecandidateerror", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatachannel(value: RTCDataChannelEvent): Self = this.set("datachannel", value.asInstanceOf[js.Any])
+    def setIceconnectionstatechange(value: Event): Self = StObject.set(x, "iceconnectionstatechange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcecandidate(value: RTCPeerConnectionIceEvent): Self = this.set("icecandidate", value.asInstanceOf[js.Any])
+    def setIcegatheringstatechange(value: Event): Self = StObject.set(x, "icegatheringstatechange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcecandidateerror(value: RTCPeerConnectionIceErrorEvent): Self = this.set("icecandidateerror", value.asInstanceOf[js.Any])
+    def setNegotiationneeded(value: Event): Self = StObject.set(x, "negotiationneeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIceconnectionstatechange(value: Event): Self = this.set("iceconnectionstatechange", value.asInstanceOf[js.Any])
+    def setSignalingstatechange(value: Event): Self = StObject.set(x, "signalingstatechange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcegatheringstatechange(value: Event): Self = this.set("icegatheringstatechange", value.asInstanceOf[js.Any])
+    def setStatsended(value: RTCStatsEvent): Self = StObject.set(x, "statsended", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegotiationneeded(value: Event): Self = this.set("negotiationneeded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignalingstatechange(value: Event): Self = this.set("signalingstatechange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatsended(value: RTCStatsEvent): Self = this.set("statsended", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrack(value: RTCTrackEvent): Self = this.set("track", value.asInstanceOf[js.Any])
+    def setTrack(value: RTCTrackEvent): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
   }
 }

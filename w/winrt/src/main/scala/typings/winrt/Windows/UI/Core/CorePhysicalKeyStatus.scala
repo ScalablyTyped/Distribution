@@ -1,11 +1,12 @@
 package typings.winrt.Windows.UI.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CorePhysicalKeyStatus extends js.Object {
+trait CorePhysicalKeyStatus extends StObject {
   
   var isExtendedKey: Boolean = js.native
   
@@ -35,36 +36,24 @@ object CorePhysicalKeyStatus {
   }
   
   @scala.inline
-  implicit class CorePhysicalKeyStatusOps[Self <: CorePhysicalKeyStatus] (val x: Self) extends AnyVal {
+  implicit class CorePhysicalKeyStatusMutableBuilder[Self <: CorePhysicalKeyStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsExtendedKey(value: Boolean): Self = StObject.set(x, "isExtendedKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsKeyReleased(value: Boolean): Self = StObject.set(x, "isKeyReleased", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsMenuKeyDown(value: Boolean): Self = StObject.set(x, "isMenuKeyDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsExtendedKey(value: Boolean): Self = this.set("isExtendedKey", value.asInstanceOf[js.Any])
+    def setRepeatCount(value: Double): Self = StObject.set(x, "repeatCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsKeyReleased(value: Boolean): Self = this.set("isKeyReleased", value.asInstanceOf[js.Any])
+    def setScanCode(value: Double): Self = StObject.set(x, "scanCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMenuKeyDown(value: Boolean): Self = this.set("isMenuKeyDown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepeatCount(value: Double): Self = this.set("repeatCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScanCode(value: Double): Self = this.set("scanCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWasKeyDown(value: Boolean): Self = this.set("wasKeyDown", value.asInstanceOf[js.Any])
+    def setWasKeyDown(value: Boolean): Self = StObject.set(x, "wasKeyDown", value.asInstanceOf[js.Any])
   }
 }

@@ -5,16 +5,16 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.gaxios.commonMod.GaxiosResponse
 import typings.gaxios.mod.GaxiosError
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("google-auth-library/build/src/transporters", JSImport.Namespace)
-@js.native
-object transportersMod extends js.Object {
+object transportersMod {
   
+  @JSImport("google-auth-library/build/src/transporters", "DefaultTransporter")
   @js.native
-  class DefaultTransporter () extends js.Object {
+  class DefaultTransporter () extends StObject {
     
     /**
       * Configures request options before making a request.
@@ -41,14 +41,17 @@ object transportersMod extends js.Object {
     def request_T_GaxiosPromise[T](opts: GaxiosOptions): GaxiosPromise[T] = js.native
   }
   /* static members */
-  @js.native
-  object DefaultTransporter extends js.Object {
+  object DefaultTransporter {
     
     /**
       * Default user agent.
       */
+    @JSImport("google-auth-library/build/src/transporters", "DefaultTransporter.USER_AGENT")
+    @js.native
     val USER_AGENT: String = js.native
   }
+  
+  type BodyResponseCallback[T] = js.Function2[/* err */ Error | Null, /* res */ js.UndefOr[GaxiosResponse[T] | Null], Unit]
   
   @js.native
   trait RequestError
@@ -58,7 +61,7 @@ object transportersMod extends js.Object {
   }
   
   @js.native
-  trait Transporter extends js.Object {
+  trait Transporter extends StObject {
     
     def request[T](opts: GaxiosOptions): GaxiosPromise[_] | Unit = js.native
     def request[T](opts: GaxiosOptions, callback: BodyResponseCallback[T]): GaxiosPromise[_] | Unit = js.native
@@ -69,6 +72,4 @@ object transportersMod extends js.Object {
     @JSName("request")
     def request_T_Unit[T](opts: GaxiosOptions, callback: BodyResponseCallback[T]): Unit = js.native
   }
-  
-  type BodyResponseCallback[T] = js.Function2[/* err */ Error | Null, /* res */ js.UndefOr[GaxiosResponse[T] | Null], Unit]
 }

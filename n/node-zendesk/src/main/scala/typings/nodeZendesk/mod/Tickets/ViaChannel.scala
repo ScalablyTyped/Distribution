@@ -1,5 +1,6 @@
 package typings.nodeZendesk.mod.Tickets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeZendesk.nodeZendeskStrings.rule
   - typings.nodeZendesk.nodeZendeskStrings.system
 */
-trait ViaChannel extends js.Object
+trait ViaChannel extends StObject
 object ViaChannel {
   
   @scala.inline

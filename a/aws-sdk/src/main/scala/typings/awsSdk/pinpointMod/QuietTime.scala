@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QuietTime extends js.Object {
+trait QuietTime extends StObject {
   
   /**
     * The specific time when quiet time ends. This value has to use 24-hour notation and be in HH:MM format, where HH is the hour (with a leading zero, if applicable) and MM is the minutes. For example, use 02:30 to represent 2:30 AM, or 14:30 to represent 2:30 PM.
@@ -26,30 +27,18 @@ object QuietTime {
   }
   
   @scala.inline
-  implicit class QuietTimeOps[Self <: QuietTime] (val x: Self) extends AnyVal {
+  implicit class QuietTimeMutableBuilder[Self <: QuietTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: string): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStart(value: string): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: string): Self = this.set("End", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnd: Self = this.set("End", js.undefined)
-    
-    @scala.inline
-    def setStart(value: string): Self = this.set("Start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("Start", js.undefined)
+    def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
   }
 }

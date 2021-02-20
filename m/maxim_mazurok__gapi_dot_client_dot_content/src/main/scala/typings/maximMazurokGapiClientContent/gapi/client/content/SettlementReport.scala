@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SettlementReport extends js.Object {
+trait SettlementReport extends StObject {
   
   /** The end date on which all transactions are included in the report, in ISO 8601 format. */
   var endDate: js.UndefOr[String] = js.native
@@ -40,69 +41,57 @@ object SettlementReport {
   }
   
   @scala.inline
-  implicit class SettlementReportOps[Self <: SettlementReport] (val x: Self) extends AnyVal {
+  implicit class SettlementReportMutableBuilder[Self <: SettlementReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDate(value: String): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    def setPreviousBalance(value: Price): Self = StObject.set(x, "previousBalance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPreviousBalanceUndefined: Self = StObject.set(x, "previousBalance", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setSettlementId(value: String): Self = StObject.set(x, "settlementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousBalance(value: Price): Self = this.set("previousBalance", value.asInstanceOf[js.Any])
+    def setSettlementIdUndefined: Self = StObject.set(x, "settlementId", js.undefined)
     
     @scala.inline
-    def deletePreviousBalance: Self = this.set("previousBalance", js.undefined)
+    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSettlementId(value: String): Self = this.set("settlementId", value.asInstanceOf[js.Any])
+    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
     @scala.inline
-    def deleteSettlementId: Self = this.set("settlementId", js.undefined)
+    def setTransferAmount(value: Price): Self = StObject.set(x, "transferAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartDate(value: String): Self = this.set("startDate", value.asInstanceOf[js.Any])
+    def setTransferAmountUndefined: Self = StObject.set(x, "transferAmount", js.undefined)
     
     @scala.inline
-    def deleteStartDate: Self = this.set("startDate", js.undefined)
+    def setTransferDate(value: String): Self = StObject.set(x, "transferDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransferAmount(value: Price): Self = this.set("transferAmount", value.asInstanceOf[js.Any])
+    def setTransferDateUndefined: Self = StObject.set(x, "transferDate", js.undefined)
     
     @scala.inline
-    def deleteTransferAmount: Self = this.set("transferAmount", js.undefined)
+    def setTransferIds(value: js.Array[String]): Self = StObject.set(x, "transferIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransferDate(value: String): Self = this.set("transferDate", value.asInstanceOf[js.Any])
+    def setTransferIdsUndefined: Self = StObject.set(x, "transferIds", js.undefined)
     
     @scala.inline
-    def deleteTransferDate: Self = this.set("transferDate", js.undefined)
-    
-    @scala.inline
-    def setTransferIdsVarargs(value: String*): Self = this.set("transferIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransferIds(value: js.Array[String]): Self = this.set("transferIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransferIds: Self = this.set("transferIds", js.undefined)
+    def setTransferIdsVarargs(value: String*): Self = StObject.set(x, "transferIds", js.Array(value :_*))
   }
 }

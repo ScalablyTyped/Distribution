@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Foundation.Diagnostics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CausalityTraceLevel extends js.Object
+sealed trait CausalityTraceLevel extends StObject
 /** Specifies a logging level that listeners can use for trace filtering. */
 @JSGlobal("Windows.Foundation.Diagnostics.CausalityTraceLevel")
 @js.native
-object CausalityTraceLevel extends js.Object {
+object CausalityTraceLevel extends StObject {
   
   /** Tracks operations that are not necessary to construct a causality chain but are interesting for developers. */
   @js.native

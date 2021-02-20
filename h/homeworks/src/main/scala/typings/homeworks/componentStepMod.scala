@@ -6,14 +6,14 @@ import typings.angularCore.mod.EventEmitter
 import typings.angularCore.mod.Renderer2
 import typings.homeworks.homeworks.StepEvent
 import typings.homeworks.managerMod.HomeworksManager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("homeworks/lib/ng2-homeworks/src/components/step/component.step", JSImport.Namespace)
-@js.native
-object componentStepMod extends js.Object {
+object componentStepMod {
   
+  @JSImport("homeworks/lib/ng2-homeworks/src/components/step/component.step", "WorksStep")
   @js.native
   class WorksStep protected () extends HomeworksManager {
     def this(renderer: Renderer2, elementRef: ElementRef[_]) = this()
@@ -40,6 +40,7 @@ object componentStepMod extends js.Object {
     var wrapperElement: js.Any = js.native
   }
   
+  @JSImport("homeworks/lib/ng2-homeworks/src/components/step/component.step", "WorksStepItem")
   @js.native
   class WorksStepItem protected ()
     extends HomeworksManager
@@ -64,6 +65,7 @@ object componentStepMod extends js.Object {
     var titleElement: js.Any = js.native
   }
   
+  @JSImport("homeworks/lib/ng2-homeworks/src/components/step/component.step", "WorksStepTitle")
   @js.native
   class WorksStepTitle protected () extends HomeworksManager {
     def this(renderer: Renderer2, elementRef: ElementRef[_]) = this()

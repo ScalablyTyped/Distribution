@@ -1,12 +1,13 @@
 package typings.vscodeLanguageclient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageclient", "TraceFormat")
 @js.native
-object TraceFormat extends js.Object {
+object TraceFormat extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.vscodeJsonrpc.mod.TraceFormat with String] = js.native

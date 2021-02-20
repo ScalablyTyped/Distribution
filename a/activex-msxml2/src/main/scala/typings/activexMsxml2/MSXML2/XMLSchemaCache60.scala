@@ -1,12 +1,13 @@
 package typings.activexMsxml2.MSXML2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** XML Schema Cache 6.0 */
 @js.native
-trait XMLSchemaCache60 extends js.Object {
+trait XMLSchemaCache60 extends StObject {
   
   /** Get namespaceURI for schema by index */
   def apply(index: Double): String = js.native

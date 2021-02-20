@@ -1,12 +1,13 @@
 package typings.nodeMailjet.mod.SMS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // request params
 @js.native
-trait GetParams extends js.Object {
+trait GetParams extends StObject {
   
   var FromTS: js.UndefOr[Double] = js.native
   
@@ -29,57 +30,45 @@ object GetParams {
   }
   
   @scala.inline
-  implicit class GetParamsOps[Self <: GetParams] (val x: Self) extends AnyVal {
+  implicit class GetParamsMutableBuilder[Self <: GetParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromTS(value: Double): Self = StObject.set(x, "FromTS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromTSUndefined: Self = StObject.set(x, "FromTS", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimit(value: Double): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromTS(value: Double): Self = this.set("FromTS", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def deleteFromTS: Self = this.set("FromTS", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "Offset", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
+    def setStatusCode(value: js.Array[Double]): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("Offset", value.asInstanceOf[js.Any])
+    def setStatusCodeUndefined: Self = StObject.set(x, "StatusCode", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("Offset", js.undefined)
+    def setStatusCodeVarargs(value: Double*): Self = StObject.set(x, "StatusCode", js.Array(value :_*))
     
     @scala.inline
-    def setStatusCodeVarargs(value: Double*): Self = this.set("StatusCode", js.Array(value :_*))
+    def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusCode(value: js.Array[Double]): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
+    def setToTS(value: Double): Self = StObject.set(x, "ToTS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatusCode: Self = this.set("StatusCode", js.undefined)
+    def setToTSUndefined: Self = StObject.set(x, "ToTS", js.undefined)
     
     @scala.inline
-    def setTo(value: String): Self = this.set("To", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("To", js.undefined)
-    
-    @scala.inline
-    def setToTS(value: Double): Self = this.set("ToTS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToTS: Self = this.set("ToTS", js.undefined)
+    def setToUndefined: Self = StObject.set(x, "To", js.undefined)
   }
 }

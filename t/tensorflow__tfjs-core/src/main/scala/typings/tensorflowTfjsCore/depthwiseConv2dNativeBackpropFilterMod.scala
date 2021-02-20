@@ -9,25 +9,22 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.floor
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.round
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/ops/depthwise_conv2d_native_backprop_filter", JSImport.Namespace)
-@js.native
-object depthwiseConv2dNativeBackpropFilterMod extends js.Object {
+object depthwiseConv2dNativeBackpropFilterMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/depthwise_conv2d_native_backprop_filter", "depthwiseConv2dNativeBackpropFilter")
   @js.native
-  object depthwiseConv2dNativeBackpropFilter extends js.Object {
-    
-    def apply(
-      x: Tensor[R3 | R4],
-      dy: Tensor[R3 | R4],
-      filterShape: js.Tuple4[Double, Double, Double, Double],
-      strides: Double | (js.Tuple2[Double, Double]),
-      pad: Double | same_ | valid_,
-      dilations: js.UndefOr[Double | (js.Tuple2[Double, Double])],
-      dimRoundingMode: js.UndefOr[ceil | floor | round]
-    ): Tensor4D = js.native
-  }
+  def depthwiseConv2dNativeBackpropFilter(
+    x: Tensor[R3 | R4],
+    dy: Tensor[R3 | R4],
+    filterShape: js.Tuple4[Double, Double, Double, Double],
+    strides: Double | (js.Tuple2[Double, Double]),
+    pad: Double | same_ | valid_,
+    dilations: js.UndefOr[Double | (js.Tuple2[Double, Double])],
+    dimRoundingMode: js.UndefOr[ceil | floor | round]
+  ): Tensor4D = js.native
 }

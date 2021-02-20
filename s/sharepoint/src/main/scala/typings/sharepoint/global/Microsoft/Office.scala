@@ -1,29 +1,31 @@
 package typings.sharepoint.global.Microsoft
 
 import typings.sharepoint.SP.ClientContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Microsoft.Office")
-@js.native
-object Office extends js.Object {
+object Office {
   
-  @js.native
-  object Server extends js.Object {
+  object Server {
     
-    @js.native
-    object ReputationModel extends js.Object {
+    object ReputationModel {
       
+      @JSGlobal("Microsoft.Office.Server.ReputationModel.Reputation")
       @js.native
       class Reputation ()
         extends typings.sharepoint.Microsoft.Office.Server.ReputationModel.Reputation
-      /* static members */
-      @js.native
-      object Reputation extends js.Object {
+      object Reputation {
         
+        /* static member */
+        @JSGlobal("Microsoft.Office.Server.ReputationModel.Reputation.setLike")
+        @js.native
         def setLike(context: ClientContext, listId: String, itemId: Double, like: Boolean): Unit = js.native
         
+        /* static member */
+        @JSGlobal("Microsoft.Office.Server.ReputationModel.Reputation.setRating")
+        @js.native
         def setRating(context: ClientContext, listId: String, itemId: Double, rating: Double): Unit = js.native
       }
     }

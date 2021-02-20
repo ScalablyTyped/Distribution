@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSourceSheetProperties extends js.Object {
+trait DataSourceSheetProperties extends StObject {
   
   /** The columns displayed on the sheet, corresponding to the values in RowData. */
   var columns: js.UndefOr[js.Array[DataSourceColumn]] = js.native
@@ -25,39 +26,27 @@ object DataSourceSheetProperties {
   }
   
   @scala.inline
-  implicit class DataSourceSheetPropertiesOps[Self <: DataSourceSheetProperties] (val x: Self) extends AnyVal {
+  implicit class DataSourceSheetPropertiesMutableBuilder[Self <: DataSourceSheetProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: js.Array[DataSourceColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnsVarargs(value: DataSourceColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsVarargs(value: DataSourceColumn*): Self = this.set("columns", js.Array(value :_*))
+    def setDataExecutionStatus(value: DataExecutionStatus): Self = StObject.set(x, "dataExecutionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[DataSourceColumn]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setDataExecutionStatusUndefined: Self = StObject.set(x, "dataExecutionStatus", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataExecutionStatus(value: DataExecutionStatus): Self = this.set("dataExecutionStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataExecutionStatus: Self = this.set("dataExecutionStatus", js.undefined)
-    
-    @scala.inline
-    def setDataSourceId(value: String): Self = this.set("dataSourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataSourceId: Self = this.set("dataSourceId", js.undefined)
+    def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
   }
 }

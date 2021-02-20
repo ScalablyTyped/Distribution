@@ -1,5 +1,6 @@
 package typings.googleapis.gmailV1Mod.gmailV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Push notification watch response.
   */
 @js.native
-trait SchemaWatchResponse extends js.Object {
+trait SchemaWatchResponse extends StObject {
   
   /**
     * When Gmail will stop sending notifications for mailbox updates (epoch
@@ -30,30 +31,18 @@ object SchemaWatchResponse {
   }
   
   @scala.inline
-  implicit class SchemaWatchResponseOps[Self <: SchemaWatchResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaWatchResponseMutableBuilder[Self <: SchemaWatchResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpiration(value: String): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiration(value: String): Self = this.set("expiration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpiration: Self = this.set("expiration", js.undefined)
-    
-    @scala.inline
-    def setHistoryId(value: String): Self = this.set("historyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHistoryId: Self = this.set("historyId", js.undefined)
+    def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
   }
 }

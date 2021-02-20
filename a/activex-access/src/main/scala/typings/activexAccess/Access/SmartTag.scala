@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartTag extends js.Object {
+trait SmartTag extends StObject {
   
   @JSName("Access.SmartTag_typekey")
   var AccessDotSmartTag_typekey: SmartTag = js.native

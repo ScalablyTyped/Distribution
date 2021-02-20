@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientQueryOptions extends js.Object {
+trait ClientQueryOptions extends StObject {
   
   var includeUncontrolled: js.UndefOr[scala.Boolean] = js.native
   
@@ -20,30 +21,18 @@ object ClientQueryOptions {
   }
   
   @scala.inline
-  implicit class ClientQueryOptionsOps[Self <: ClientQueryOptions] (val x: Self) extends AnyVal {
+  implicit class ClientQueryOptionsMutableBuilder[Self <: ClientQueryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeUncontrolled(value: scala.Boolean): Self = StObject.set(x, "includeUncontrolled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeUncontrolledUndefined: Self = StObject.set(x, "includeUncontrolled", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: ClientTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeUncontrolled(value: scala.Boolean): Self = this.set("includeUncontrolled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeUncontrolled: Self = this.set("includeUncontrolled", js.undefined)
-    
-    @scala.inline
-    def setType(value: ClientTypes): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

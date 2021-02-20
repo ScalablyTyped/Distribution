@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChannelMembershipForAppInstanceUserSummary extends js.Object {
+trait ChannelMembershipForAppInstanceUserSummary extends StObject {
   
   /**
     * Returns the channel membership data for an app instance.
@@ -23,30 +24,18 @@ object ChannelMembershipForAppInstanceUserSummary {
   }
   
   @scala.inline
-  implicit class ChannelMembershipForAppInstanceUserSummaryOps[Self <: ChannelMembershipForAppInstanceUserSummary] (val x: Self) extends AnyVal {
+  implicit class ChannelMembershipForAppInstanceUserSummaryMutableBuilder[Self <: ChannelMembershipForAppInstanceUserSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppInstanceUserMembershipSummary(value: AppInstanceUserMembershipSummary): Self = StObject.set(x, "AppInstanceUserMembershipSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppInstanceUserMembershipSummaryUndefined: Self = StObject.set(x, "AppInstanceUserMembershipSummary", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelSummary(value: ChannelSummary): Self = StObject.set(x, "ChannelSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppInstanceUserMembershipSummary(value: AppInstanceUserMembershipSummary): Self = this.set("AppInstanceUserMembershipSummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAppInstanceUserMembershipSummary: Self = this.set("AppInstanceUserMembershipSummary", js.undefined)
-    
-    @scala.inline
-    def setChannelSummary(value: ChannelSummary): Self = this.set("ChannelSummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChannelSummary: Self = this.set("ChannelSummary", js.undefined)
+    def setChannelSummaryUndefined: Self = StObject.set(x, "ChannelSummary", js.undefined)
   }
 }

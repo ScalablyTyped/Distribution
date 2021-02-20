@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Fetch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetResponseBodyResponse extends js.Object {
+trait GetResponseBodyResponse extends StObject {
   
   /**
     * True, if content was sent as base64.
@@ -26,24 +27,12 @@ object GetResponseBodyResponse {
   }
   
   @scala.inline
-  implicit class GetResponseBodyResponseOps[Self <: GetResponseBodyResponse] (val x: Self) extends AnyVal {
+  implicit class GetResponseBodyResponseMutableBuilder[Self <: GetResponseBodyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBase64Encoded(value: Boolean): Self = StObject.set(x, "base64Encoded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBase64Encoded(value: Boolean): Self = this.set("base64Encoded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

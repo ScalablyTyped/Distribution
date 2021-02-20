@@ -3,6 +3,7 @@ package typings.reactMdl.mod
 import typings.react.mod.DOMAttributes
 import typings.react.mod.ReactNode
 import typings.std.HTMLInputElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,81 +44,69 @@ object TextfieldProps {
   }
   
   @scala.inline
-  implicit class TextfieldPropsOps[Self <: TextfieldProps] (val x: Self) extends AnyVal {
+  implicit class TextfieldPropsMutableBuilder[Self <: TextfieldProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: ReactNode): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setExpandableIcon(value: String): Self = StObject.set(x, "expandableIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: ReactNode): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setExpandableIconUndefined: Self = StObject.set(x, "expandableIcon", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
     
     @scala.inline
-    def setExpandable(value: Boolean): Self = this.set("expandable", value.asInstanceOf[js.Any])
+    def setFloatingLabel(value: Boolean): Self = StObject.set(x, "floatingLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpandable: Self = this.set("expandable", js.undefined)
+    def setFloatingLabelUndefined: Self = StObject.set(x, "floatingLabel", js.undefined)
     
     @scala.inline
-    def setExpandableIcon(value: String): Self = this.set("expandableIcon", value.asInstanceOf[js.Any])
+    def setInputClassName(value: String): Self = StObject.set(x, "inputClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpandableIcon: Self = this.set("expandableIcon", js.undefined)
+    def setInputClassNameUndefined: Self = StObject.set(x, "inputClassName", js.undefined)
     
     @scala.inline
-    def setFloatingLabel(value: Boolean): Self = this.set("floatingLabel", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFloatingLabel: Self = this.set("floatingLabel", js.undefined)
+    def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputClassName(value: String): Self = this.set("inputClassName", value.asInstanceOf[js.Any])
+    def setMaxRowsUndefined: Self = StObject.set(x, "maxRows", js.undefined)
     
     @scala.inline
-    def deleteInputClassName: Self = this.set("inputClassName", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRows(value: Double): Self = this.set("maxRows", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMaxRows: Self = this.set("maxRows", js.undefined)
+    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String | Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

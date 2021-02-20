@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CohortReportSettings extends js.Object {
+trait CohortReportSettings extends StObject {
   
   /** If true, accumulates the result from first visit day to the end day. Not supported in `RunReportRequest`. */
   var accumulate: js.UndefOr[Boolean] = js.native
@@ -19,24 +20,12 @@ object CohortReportSettings {
   }
   
   @scala.inline
-  implicit class CohortReportSettingsOps[Self <: CohortReportSettings] (val x: Self) extends AnyVal {
+  implicit class CohortReportSettingsMutableBuilder[Self <: CohortReportSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccumulate(value: Boolean): Self = StObject.set(x, "accumulate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccumulate(value: Boolean): Self = this.set("accumulate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccumulate: Self = this.set("accumulate", js.undefined)
+    def setAccumulateUndefined: Self = StObject.set(x, "accumulate", js.undefined)
   }
 }

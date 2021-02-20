@@ -2,12 +2,13 @@ package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientFirebase.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AvailableLocationsResource extends js.Object {
+trait AvailableLocationsResource extends StObject {
   
   /**
     * Lists the valid Google Cloud Platform (GCP) resource locations for the specified Project (including a FirebaseProject). One of these locations can be selected as the Project's

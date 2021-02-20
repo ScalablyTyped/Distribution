@@ -3,13 +3,14 @@ package typings.cesium.mod
 import typings.cesium.anon.Cancel
 import typings.cesium.anon.Complete
 import typings.cesium.anon.Convert
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Camera")
 @js.native
-class Camera protected () extends js.Object {
+class Camera protected () extends StObject {
   def this(scene: Scene) = this()
   
   def cameraToWorldCoordinates(cartesian: Cartesian4): Cartesian4 = js.native
@@ -196,16 +197,32 @@ class Camera protected () extends js.Object {
   def zoomOut(): Unit = js.native
   def zoomOut(amount: Double): Unit = js.native
 }
-/* static members */
-@JSImport("cesium", "Camera")
-@js.native
-object Camera extends js.Object {
+object Camera {
   
-  var DEFAULT_OFFSET: HeadingPitchRange = js.native
+  @JSImport("cesium", "Camera")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var DEFAULT_VIEW_FACTOR: Double = js.native
+  /* static member */
+  @JSImport("cesium", "Camera.DEFAULT_OFFSET")
+  @js.native
+  def DEFAULT_OFFSET: HeadingPitchRange = js.native
+  @scala.inline
+  def DEFAULT_OFFSET_=(x: HeadingPitchRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_OFFSET")(x.asInstanceOf[js.Any])
   
-  var DEFAULT_VIEW_RECTANGLE: Rectangle = js.native
+  /* static member */
+  @JSImport("cesium", "Camera.DEFAULT_VIEW_FACTOR")
+  @js.native
+  def DEFAULT_VIEW_FACTOR: Double = js.native
+  @scala.inline
+  def DEFAULT_VIEW_FACTOR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_VIEW_FACTOR")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("cesium", "Camera.DEFAULT_VIEW_RECTANGLE")
+  @js.native
+  def DEFAULT_VIEW_RECTANGLE: Rectangle = js.native
+  @scala.inline
+  def DEFAULT_VIEW_RECTANGLE_=(x: Rectangle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_VIEW_RECTANGLE")(x.asInstanceOf[js.Any])
   
   type FlightCancelledCallback = js.Function0[Unit]
   

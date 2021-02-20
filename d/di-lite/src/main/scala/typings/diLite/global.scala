@@ -1,13 +1,16 @@
 package typings.diLite
 
 import typings.diLite.DiLite.DiLiteStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var di: DiLiteStatic = js.native
+  @JSGlobal("di")
+  @js.native
+  def di: DiLiteStatic = js.native
+  @scala.inline
+  def di_=(x: DiLiteStatic): Unit = js.Dynamic.global.updateDynamic("di")(x.asInstanceOf[js.Any])
 }

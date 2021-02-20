@@ -1,11 +1,12 @@
 package typings.cookieclicker.Game
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GardenSoil extends js.Object {
+trait GardenSoil extends StObject {
   
   /**
     * The multiplier of garden effects
@@ -74,48 +75,36 @@ object GardenSoil {
   }
   
   @scala.inline
-  implicit class GardenSoilOps[Self <: GardenSoil] (val x: Self) extends AnyVal {
+  implicit class GardenSoilMutableBuilder[Self <: GardenSoil] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEffMult(value: Double): Self = StObject.set(x, "effMult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEffsStr(value: String): Self = StObject.set(x, "effsStr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIcon(value: Double): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffMult(value: Double): Self = this.set("effMult", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffsStr(value: String): Self = this.set("effsStr", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: Double): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setReq(value: Double): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTick(value: Double): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ(value: String): Self = this.set("q", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReq(value: Double): Self = this.set("req", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTick(value: Double): Self = this.set("tick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeedMult(value: Double): Self = this.set("weedMult", value.asInstanceOf[js.Any])
+    def setWeedMult(value: Double): Self = StObject.set(x, "weedMult", value.asInstanceOf[js.Any])
   }
 }

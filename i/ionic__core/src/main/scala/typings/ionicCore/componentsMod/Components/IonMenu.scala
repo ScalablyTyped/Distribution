@@ -1,12 +1,13 @@
 package typings.ionicCore.componentsMod.Components
 
 import typings.ionicCore.mod.Side
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonMenu extends js.Object {
+trait IonMenu extends StObject {
   
   /**
     * Closes the menu. If the menu is already closed or it can't be closed, it returns `false`.

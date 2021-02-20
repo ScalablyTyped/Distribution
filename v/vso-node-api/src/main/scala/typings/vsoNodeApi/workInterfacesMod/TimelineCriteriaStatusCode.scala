@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.workInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TimelineCriteriaStatusCode extends js.Object
+sealed trait TimelineCriteriaStatusCode extends StObject
 @JSImport("vso-node-api/interfaces/WorkInterfaces", "TimelineCriteriaStatusCode")
 @js.native
-object TimelineCriteriaStatusCode extends js.Object {
+object TimelineCriteriaStatusCode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TimelineCriteriaStatusCode with Double] = js.native
@@ -19,22 +19,19 @@ object TimelineCriteriaStatusCode extends js.Object {
     */
   @js.native
   sealed trait InvalidFilterClause extends TimelineCriteriaStatusCode
-  /* 1 */ @js.native
-  object InvalidFilterClause extends TopLevel[InvalidFilterClause with Double]
+  /* 1 */ val InvalidFilterClause: typings.vsoNodeApi.workInterfacesMod.TimelineCriteriaStatusCode.InvalidFilterClause with Double = js.native
   
   /**
     * No error - filter is good.
     */
   @js.native
   sealed trait OK extends TimelineCriteriaStatusCode
-  /* 0 */ @js.native
-  object OK extends TopLevel[OK with Double]
+  /* 0 */ val OK: typings.vsoNodeApi.workInterfacesMod.TimelineCriteriaStatusCode.OK with Double = js.native
   
   /**
     * Unknown error.
     */
   @js.native
   sealed trait Unknown extends TimelineCriteriaStatusCode
-  /* 2 */ @js.native
-  object Unknown extends TopLevel[Unknown with Double]
+  /* 2 */ val Unknown: typings.vsoNodeApi.workInterfacesMod.TimelineCriteriaStatusCode.Unknown with Double = js.native
 }

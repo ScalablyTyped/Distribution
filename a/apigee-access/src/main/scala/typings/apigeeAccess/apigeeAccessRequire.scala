@@ -1,5 +1,6 @@
 package typings.apigeeAccess
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("apigee-access", JSImport.Namespace)
 @js.native
-object apigeeAccessRequire extends js.Object
+object apigeeAccessRequire extends StObject

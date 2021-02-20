@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines the audio processing modes. */
 @JSGlobal("Windows.Media.AudioProcessing")
 @js.native
-object AudioProcessing extends js.Object {
+object AudioProcessing extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.AudioProcessing with Double] = js.native

@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.vssinterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Publisher extends js.Object {
+trait Publisher extends StObject {
   
   /**
     * Name of the publishing service.
@@ -26,24 +27,12 @@ object Publisher {
   }
   
   @scala.inline
-  implicit class PublisherOps[Self <: Publisher] (val x: Self) extends AnyVal {
+  implicit class PublisherMutableBuilder[Self <: Publisher] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceOwnerId(value: String): Self = this.set("serviceOwnerId", value.asInstanceOf[js.Any])
+    def setServiceOwnerId(value: String): Self = StObject.set(x, "serviceOwnerId", value.asInstanceOf[js.Any])
   }
 }

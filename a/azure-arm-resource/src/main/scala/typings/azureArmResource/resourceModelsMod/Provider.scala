@@ -1,11 +1,12 @@
 package typings.azureArmResource.resourceModelsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Provider extends js.Object {
+trait Provider extends StObject {
   
   /**
     * The provider ID.
@@ -36,45 +37,33 @@ object Provider {
   }
   
   @scala.inline
-  implicit class ProviderOps[Self <: Provider] (val x: Self) extends AnyVal {
+  implicit class ProviderMutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setRegistrationState(value: String): Self = StObject.set(x, "registrationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace(value: String): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    def setRegistrationStateUndefined: Self = StObject.set(x, "registrationState", js.undefined)
     
     @scala.inline
-    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    def setResourceTypes(value: js.Array[ProviderResourceType]): Self = StObject.set(x, "resourceTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistrationState(value: String): Self = this.set("registrationState", value.asInstanceOf[js.Any])
+    def setResourceTypesUndefined: Self = StObject.set(x, "resourceTypes", js.undefined)
     
     @scala.inline
-    def deleteRegistrationState: Self = this.set("registrationState", js.undefined)
-    
-    @scala.inline
-    def setResourceTypesVarargs(value: ProviderResourceType*): Self = this.set("resourceTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceTypes(value: js.Array[ProviderResourceType]): Self = this.set("resourceTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceTypes: Self = this.set("resourceTypes", js.undefined)
+    def setResourceTypesVarargs(value: ProviderResourceType*): Self = StObject.set(x, "resourceTypes", js.Array(value :_*))
   }
 }

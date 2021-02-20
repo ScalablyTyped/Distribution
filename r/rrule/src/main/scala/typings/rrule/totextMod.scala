@@ -3,16 +3,74 @@ package typings.rrule
 import typings.rrule.i18nMod.Language
 import typings.rrule.typesMod.ByWeekday
 import typings.rrule.weekdayMod.Weekday
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rrule/dist/esm/src/nlp/totext", JSImport.Namespace)
-@js.native
-object totextMod extends js.Object {
+object totextMod {
+  
+  @JSImport("rrule/dist/esm/src/nlp/totext", JSImport.Default)
+  @js.native
+  class default protected () extends ToText {
+    def this(rrule: typings.rrule.mod.default) = this()
+    def this(rrule: typings.rrule.mod.default, gettext: GetText) = this()
+    def this(rrule: typings.rrule.mod.default, gettext: js.UndefOr[scala.Nothing], language: Language) = this()
+    def this(rrule: typings.rrule.mod.default, gettext: GetText, language: Language) = this()
+    def this(
+      rrule: typings.rrule.mod.default,
+      gettext: js.UndefOr[scala.Nothing],
+      language: js.UndefOr[scala.Nothing],
+      dateFormatter: DateFormatter
+    ) = this()
+    def this(
+      rrule: typings.rrule.mod.default,
+      gettext: js.UndefOr[scala.Nothing],
+      language: Language,
+      dateFormatter: DateFormatter
+    ) = this()
+    def this(
+      rrule: typings.rrule.mod.default,
+      gettext: GetText,
+      language: js.UndefOr[scala.Nothing],
+      dateFormatter: DateFormatter
+    ) = this()
+    def this(
+      rrule: typings.rrule.mod.default,
+      gettext: GetText,
+      language: Language,
+      dateFormatter: DateFormatter
+    ) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("rrule/dist/esm/src/nlp/totext", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("rrule/dist/esm/src/nlp/totext", "default.IMPLEMENTED")
+    @js.native
+    def IMPLEMENTED: js.Array[js.Array[String]] = js.native
+    @scala.inline
+    def IMPLEMENTED_=(x: js.Array[js.Array[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IMPLEMENTED")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Test whether the rrule can be fully converted to text.
+      * @param {RRule} rrule
+      * @return {Boolean}
+      */
+    @JSImport("rrule/dist/esm/src/nlp/totext", "default.isFullyConvertible")
+    @js.native
+    def isFullyConvertible(rrule: typings.rrule.mod.default): Boolean = js.native
+  }
+  
+  type DateFormatter = js.Function3[/* year */ Double, /* month */ String, /* day */ Double, String]
+  
+  type GetText = js.Function1[/* id */ String | Double | Weekday, String]
   
   @js.native
-  trait ToText extends js.Object {
+  trait ToText extends StObject {
     
     def DAILY(): Unit = js.native
     
@@ -93,53 +151,4 @@ object totextMod extends js.Object {
     def weekdaytext(wday: Double): String = js.native
     def weekdaytext(wday: Weekday): String = js.native
   }
-  
-  @js.native
-  class default protected () extends ToText {
-    def this(rrule: typings.rrule.mod.default) = this()
-    def this(rrule: typings.rrule.mod.default, gettext: GetText) = this()
-    def this(rrule: typings.rrule.mod.default, gettext: js.UndefOr[scala.Nothing], language: Language) = this()
-    def this(rrule: typings.rrule.mod.default, gettext: GetText, language: Language) = this()
-    def this(
-      rrule: typings.rrule.mod.default,
-      gettext: js.UndefOr[scala.Nothing],
-      language: js.UndefOr[scala.Nothing],
-      dateFormatter: DateFormatter
-    ) = this()
-    def this(
-      rrule: typings.rrule.mod.default,
-      gettext: js.UndefOr[scala.Nothing],
-      language: Language,
-      dateFormatter: DateFormatter
-    ) = this()
-    def this(
-      rrule: typings.rrule.mod.default,
-      gettext: GetText,
-      language: js.UndefOr[scala.Nothing],
-      dateFormatter: DateFormatter
-    ) = this()
-    def this(
-      rrule: typings.rrule.mod.default,
-      gettext: GetText,
-      language: Language,
-      dateFormatter: DateFormatter
-    ) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var IMPLEMENTED: js.Array[js.Array[String]] = js.native
-    
-    /**
-      * Test whether the rrule can be fully converted to text.
-      * @param {RRule} rrule
-      * @return {Boolean}
-      */
-    def isFullyConvertible(rrule: typings.rrule.mod.default): Boolean = js.native
-  }
-  
-  type DateFormatter = js.Function3[/* year */ Double, /* month */ String, /* day */ Double, String]
-  
-  type GetText = js.Function1[/* id */ String | Double | Weekday, String]
 }

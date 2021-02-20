@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.UI
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,66 +67,54 @@ object OptionDialogEventMap {
   }
   
   @scala.inline
-  implicit class OptionDialogEventMapOps[Self <: OptionDialogEventMap] (val x: Self) extends AnyVal {
+  implicit class OptionDialogEventMapMutableBuilder[Self <: OptionDialogEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: OptionDialogClickEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDblclick(value: OptionDialogDblclickEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDoubletap(value: OptionDialogDoubletapEvent): Self = StObject.set(x, "doubletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: OptionDialogClickEvent): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setFocus(value: OptionDialogFocusEvent): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDblclick(value: OptionDialogDblclickEvent): Self = this.set("dblclick", value.asInstanceOf[js.Any])
+    def setKeypressed(value: OptionDialogKeypressedEvent): Self = StObject.set(x, "keypressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubletap(value: OptionDialogDoubletapEvent): Self = this.set("doubletap", value.asInstanceOf[js.Any])
+    def setLongclick(value: OptionDialogLongclickEvent): Self = StObject.set(x, "longclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus(value: OptionDialogFocusEvent): Self = this.set("focus", value.asInstanceOf[js.Any])
+    def setLongpress(value: OptionDialogLongpressEvent): Self = StObject.set(x, "longpress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeypressed(value: OptionDialogKeypressedEvent): Self = this.set("keypressed", value.asInstanceOf[js.Any])
+    def setPinch(value: OptionDialogPinchEvent): Self = StObject.set(x, "pinch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongclick(value: OptionDialogLongclickEvent): Self = this.set("longclick", value.asInstanceOf[js.Any])
+    def setPostlayout(value: OptionDialogPostlayoutEvent): Self = StObject.set(x, "postlayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongpress(value: OptionDialogLongpressEvent): Self = this.set("longpress", value.asInstanceOf[js.Any])
+    def setSingletap(value: OptionDialogSingletapEvent): Self = StObject.set(x, "singletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinch(value: OptionDialogPinchEvent): Self = this.set("pinch", value.asInstanceOf[js.Any])
+    def setSwipe(value: OptionDialogSwipeEvent): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostlayout(value: OptionDialogPostlayoutEvent): Self = this.set("postlayout", value.asInstanceOf[js.Any])
+    def setTouchcancel(value: OptionDialogTouchcancelEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingletap(value: OptionDialogSingletapEvent): Self = this.set("singletap", value.asInstanceOf[js.Any])
+    def setTouchend(value: OptionDialogTouchendEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipe(value: OptionDialogSwipeEvent): Self = this.set("swipe", value.asInstanceOf[js.Any])
+    def setTouchmove(value: OptionDialogTouchmoveEvent): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchcancel(value: OptionDialogTouchcancelEvent): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
+    def setTouchstart(value: OptionDialogTouchstartEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchend(value: OptionDialogTouchendEvent): Self = this.set("touchend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchmove(value: OptionDialogTouchmoveEvent): Self = this.set("touchmove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchstart(value: OptionDialogTouchstartEvent): Self = this.set("touchstart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwofingertap(value: OptionDialogTwofingertapEvent): Self = this.set("twofingertap", value.asInstanceOf[js.Any])
+    def setTwofingertap(value: OptionDialogTwofingertapEvent): Self = StObject.set(x, "twofingertap", value.asInstanceOf[js.Any])
   }
 }

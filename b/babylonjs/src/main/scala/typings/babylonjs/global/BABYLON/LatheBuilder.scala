@@ -2,6 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.anon.Closed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class LatheBuilder ()
   extends typings.babylonjs.BABYLON.LatheBuilder
 /* static members */
-@JSGlobal("BABYLON.LatheBuilder")
-@js.native
-object LatheBuilder extends js.Object {
+object LatheBuilder {
   
   /**
     * Creates lathe mesh.
@@ -35,6 +34,10 @@ object LatheBuilder extends js.Object {
     * @returns the lathe mesh
     * @see https://doc.babylonjs.com/how_to/parametric_shapes#lathe
     */
+  @JSGlobal("BABYLON.LatheBuilder.CreateLathe")
+  @js.native
   def CreateLathe(name: String, options: Closed): typings.babylonjs.BABYLON.Mesh = js.native
+  @JSGlobal("BABYLON.LatheBuilder.CreateLathe")
+  @js.native
   def CreateLathe(name: String, options: Closed, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
 }

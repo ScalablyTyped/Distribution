@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.history.mod.History
 import typings.history.mod.Location
 import typings.history.mod.LocationState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RouteChildrenProps[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof Params ]:? string}
-  */ typings.reactRouter.reactRouterStrings.RouteChildrenProps with TopLevel[js.Any] */, S] extends js.Object {
+  */ typings.reactRouter.reactRouterStrings.RouteChildrenProps with TopLevel[js.Any] */, S] extends StObject {
   
   var history: History[LocationState] = js.native
   
@@ -30,32 +31,20 @@ object RouteChildrenProps {
   }
   
   @scala.inline
-  implicit class RouteChildrenPropsOps[Self <: RouteChildrenProps[_, _], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  implicit class RouteChildrenPropsMutableBuilder[Self <: RouteChildrenProps[_, _], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.reactRouter.reactRouterStrings.RouteChildrenProps with TopLevel[js.Any] */, S] (val x: Self with (RouteChildrenProps[Params, S])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocation(value: Location[S]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatch(value: `match`[Params]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistory(value: History[LocationState]): Self = this.set("history", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocation(value: Location[S]): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMatch(value: `match`[Params]): Self = this.set("match", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMatchNull: Self = this.set("match", null)
+    def setMatchNull: Self = StObject.set(x, "match", null)
   }
 }

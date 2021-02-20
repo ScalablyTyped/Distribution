@@ -1,5 +1,6 @@
 package typings.googlepay.google.payments.api
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Note: This interface is currently only for web only.
   */
 @js.native
-trait PaymentDataRequestUpdate extends js.Object {
+trait PaymentDataRequestUpdate extends StObject {
   
   /**
     * Error for the last PaymentData, will be displayed to the user.
@@ -50,36 +51,24 @@ object PaymentDataRequestUpdate {
   }
   
   @scala.inline
-  implicit class PaymentDataRequestUpdateOps[Self <: PaymentDataRequestUpdate] (val x: Self) extends AnyVal {
+  implicit class PaymentDataRequestUpdateMutableBuilder[Self <: PaymentDataRequestUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: PaymentDataError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewShippingOptionParameters(value: ShippingOptionParameters): Self = StObject.set(x, "newShippingOptionParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: PaymentDataError): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setNewShippingOptionParametersUndefined: Self = StObject.set(x, "newShippingOptionParameters", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setNewTransactionInfo(value: TransactionInfo): Self = StObject.set(x, "newTransactionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewShippingOptionParameters(value: ShippingOptionParameters): Self = this.set("newShippingOptionParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewShippingOptionParameters: Self = this.set("newShippingOptionParameters", js.undefined)
-    
-    @scala.inline
-    def setNewTransactionInfo(value: TransactionInfo): Self = this.set("newTransactionInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewTransactionInfo: Self = this.set("newTransactionInfo", js.undefined)
+    def setNewTransactionInfoUndefined: Self = StObject.set(x, "newTransactionInfo", js.undefined)
   }
 }

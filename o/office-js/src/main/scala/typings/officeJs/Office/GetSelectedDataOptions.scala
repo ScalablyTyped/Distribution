@@ -1,5 +1,6 @@
 package typings.officeJs.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides options for customizing what data is returned and how it is formatted.
   */
 @js.native
-trait GetSelectedDataOptions extends js.Object {
+trait GetSelectedDataOptions extends StObject {
   
   /**
     * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
@@ -35,36 +36,24 @@ object GetSelectedDataOptions {
   }
   
   @scala.inline
-  implicit class GetSelectedDataOptionsOps[Self <: GetSelectedDataOptions] (val x: Self) extends AnyVal {
+  implicit class GetSelectedDataOptionsMutableBuilder[Self <: GetSelectedDataOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterType(value: FilterType | String): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsyncContext(value: js.Any): Self = this.set("asyncContext", value.asInstanceOf[js.Any])
+    def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
     
     @scala.inline
-    def deleteAsyncContext: Self = this.set("asyncContext", js.undefined)
+    def setValueFormat(value: ValueFormat | String): Self = StObject.set(x, "valueFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterType(value: FilterType | String): Self = this.set("filterType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterType: Self = this.set("filterType", js.undefined)
-    
-    @scala.inline
-    def setValueFormat(value: ValueFormat | String): Self = this.set("valueFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueFormat: Self = this.set("valueFormat", js.undefined)
+    def setValueFormatUndefined: Self = StObject.set(x, "valueFormat", js.undefined)
   }
 }

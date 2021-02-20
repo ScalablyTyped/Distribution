@@ -1,10 +1,19 @@
 package typings.finch
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("finch", JSImport.Namespace)
-@js.native
-object mod extends TopLevel[FinchStatic]
+object mod extends Shortcut {
+  
+  @JSImport("finch", JSImport.Namespace)
+  @js.native
+  val ^ : FinchStatic = js.native
+  
+  type _To = FinchStatic
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: FinchStatic = ^
+}

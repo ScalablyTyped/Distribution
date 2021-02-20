@@ -8,12 +8,13 @@ import typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.json
 import typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.path
 import typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.text
 import typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.utf8
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RNFetchBlobResponseInfo extends js.Object {
+trait RNFetchBlobResponseInfo extends StObject {
   
   var headers: js.Any = js.native
   
@@ -43,36 +44,24 @@ object RNFetchBlobResponseInfo {
   }
   
   @scala.inline
-  implicit class RNFetchBlobResponseInfoOps[Self <: RNFetchBlobResponseInfo] (val x: Self) extends AnyVal {
+  implicit class RNFetchBlobResponseInfoMutableBuilder[Self <: RNFetchBlobResponseInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRespType(value: text | blob | _empty | json): Self = StObject.set(x, "respType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRnfbEncode(value: path | base64 | ascii | utf8): Self = StObject.set(x, "rnfbEncode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRespType(value: text | blob | _empty | json): Self = this.set("respType", value.asInstanceOf[js.Any])
+    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRnfbEncode(value: path | base64 | ascii | utf8): Self = this.set("rnfbEncode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: Double): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTaskId(value: String): Self = this.set("taskId", value.asInstanceOf[js.Any])
+    def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }
 }

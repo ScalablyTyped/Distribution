@@ -3,16 +3,16 @@ package typings.parquetjs
 import org.scalablytyped.runtime.StringDictionary
 import typings.parquetjs.fieldInterfaceMod.FieldInterface
 import typings.parquetjs.schemaInterfaceMod.SchemaInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("parquetjs/lib/schema", JSImport.Namespace)
-@js.native
-object schemaMod extends js.Object {
+object schemaMod {
   
+  @JSImport("parquetjs/lib/schema", "ParquetSchema")
   @js.native
-  class ParquetSchema protected () extends js.Object {
+  class ParquetSchema protected () extends StObject {
     def this(schema: SchemaInterface) = this()
     
     var fieldList: js.Array[FieldInterface] = js.native

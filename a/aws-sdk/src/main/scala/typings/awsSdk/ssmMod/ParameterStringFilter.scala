@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParameterStringFilter extends js.Object {
+trait ParameterStringFilter extends StObject {
   
   /**
     * The name of the filter.  The ParameterStringFilter object is used by the DescribeParameters and GetParametersByPath API actions. However, not all of the pattern values listed for Key can be used with both actions. For DescribeActions, all of the listed patterns are valid, with the exception of Label. For GetParametersByPath, the following patterns listed for Key are not valid: tag, Name, Path, and Tier. For examples of CLI commands demonstrating valid parameter filter constructions, see Searching for Systems Manager parameters in the AWS Systems Manager User Guide. 
@@ -31,36 +32,24 @@ object ParameterStringFilter {
   }
   
   @scala.inline
-  implicit class ParameterStringFilterOps[Self <: ParameterStringFilter] (val x: Self) extends AnyVal {
+  implicit class ParameterStringFilterMutableBuilder[Self <: ParameterStringFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: ParameterStringFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOption(value: ParameterStringQueryOption): Self = StObject.set(x, "Option", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptionUndefined: Self = StObject.set(x, "Option", js.undefined)
     
     @scala.inline
-    def setKey(value: ParameterStringFilterKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    def setValues(value: ParameterStringFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOption(value: ParameterStringQueryOption): Self = this.set("Option", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
     @scala.inline
-    def deleteOption: Self = this.set("Option", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: ParameterStringFilterValue*): Self = this.set("Values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: ParameterStringFilterValueList): Self = this.set("Values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("Values", js.undefined)
+    def setValuesVarargs(value: ParameterStringFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.hapi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsOriginMatch extends js.Object {
+trait IsOriginMatch extends StObject {
   
   /**
     * true if the request 'Origin' header matches the configured CORS restrictions. Set to false if no 'Origin' header is found or if it does not match. Note that this is only available after
@@ -22,24 +23,12 @@ object IsOriginMatch {
   }
   
   @scala.inline
-  implicit class IsOriginMatchOps[Self <: IsOriginMatch] (val x: Self) extends AnyVal {
+  implicit class IsOriginMatchMutableBuilder[Self <: IsOriginMatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsOriginMatch(value: Boolean): Self = StObject.set(x, "isOriginMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsOriginMatch(value: Boolean): Self = this.set("isOriginMatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsOriginMatch: Self = this.set("isOriginMatch", js.undefined)
+    def setIsOriginMatchUndefined: Self = StObject.set(x, "isOriginMatch", js.undefined)
   }
 }

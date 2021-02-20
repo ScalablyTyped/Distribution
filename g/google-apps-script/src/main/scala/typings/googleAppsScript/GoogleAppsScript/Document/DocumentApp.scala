@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Document
 
 import typings.googleAppsScript.GoogleAppsScript.Base.Ui
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     doc = DocumentApp.create('Document Name');
   */
 @js.native
-trait DocumentApp extends js.Object {
+trait DocumentApp extends StObject {
   
   var Attribute: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Attribute */ js.Any = js.native
   
@@ -69,70 +70,58 @@ object DocumentApp {
   }
   
   @scala.inline
-  implicit class DocumentAppOps[Self <: DocumentApp] (val x: Self) extends AnyVal {
+  implicit class DocumentAppMutableBuilder[Self <: DocumentApp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribute(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Attribute */ js.Any): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreate(value: String => typings.googleAppsScript.GoogleAppsScript.Document.Document): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElementType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ElementType */ js.Any): Self = StObject.set(x, "ElementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttribute(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Attribute */ js.Any): Self = this.set("Attribute", value.asInstanceOf[js.Any])
+    def setFontFamily(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FontFamily */ js.Any): Self = StObject.set(x, "FontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ElementType */ js.Any): Self = this.set("ElementType", value.asInstanceOf[js.Any])
+    def setGetActiveDocument(value: () => typings.googleAppsScript.GoogleAppsScript.Document.Document): Self = StObject.set(x, "getActiveDocument", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFontFamily(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FontFamily */ js.Any): Self = this.set("FontFamily", value.asInstanceOf[js.Any])
+    def setGetUi(value: () => Ui): Self = StObject.set(x, "getUi", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGlyphType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GlyphType */ js.Any): Self = this.set("GlyphType", value.asInstanceOf[js.Any])
+    def setGlyphType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GlyphType */ js.Any): Self = StObject.set(x, "GlyphType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHorizontalAlignment(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HorizontalAlignment */ js.Any
-    ): Self = this.set("HorizontalAlignment", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "HorizontalAlignment", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOpenById(value: String => typings.googleAppsScript.GoogleAppsScript.Document.Document): Self = StObject.set(x, "openById", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setOpenByUrl(value: String => typings.googleAppsScript.GoogleAppsScript.Document.Document): Self = StObject.set(x, "openByUrl", js.Any.fromFunction1(value))
     
     @scala.inline
     def setParagraphHeading(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParagraphHeading */ js.Any
-    ): Self = this.set("ParagraphHeading", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "ParagraphHeading", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPositionedLayout(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PositionedLayout */ js.Any
-    ): Self = this.set("PositionedLayout", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "PositionedLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTextAlignment(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextAlignment */ js.Any
-    ): Self = this.set("TextAlignment", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "TextAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setVerticalAlignment(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VerticalAlignment */ js.Any
-    ): Self = this.set("VerticalAlignment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCreate(value: String => typings.googleAppsScript.GoogleAppsScript.Document.Document): Self = this.set("create", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetActiveDocument(value: () => typings.googleAppsScript.GoogleAppsScript.Document.Document): Self = this.set("getActiveDocument", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetUi(value: () => Ui): Self = this.set("getUi", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOpenById(value: String => typings.googleAppsScript.GoogleAppsScript.Document.Document): Self = this.set("openById", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOpenByUrl(value: String => typings.googleAppsScript.GoogleAppsScript.Document.Document): Self = this.set("openByUrl", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "VerticalAlignment", value.asInstanceOf[js.Any])
   }
 }

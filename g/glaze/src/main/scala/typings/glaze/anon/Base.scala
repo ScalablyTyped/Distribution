@@ -4,12 +4,13 @@ import typings.glaze.glazeNumbers.`1.25`
 import typings.glaze.glazeNumbers.`1.375`
 import typings.glaze.glazeNumbers.`1.5`
 import typings.glaze.glazeNumbers.`1.625`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Base extends js.Object {
+trait Base extends StObject {
   
   val `1`: typings.glaze.glazeNumbers.`1` = js.native
   
@@ -40,36 +41,24 @@ object Base {
   }
   
   @scala.inline
-  implicit class BaseOps[Self <: Base] (val x: Self) extends AnyVal {
+  implicit class BaseMutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set1(value: typings.glaze.glazeNumbers.`1`): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBase(value: `1.5`): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoose(value: typings.glaze.glazeNumbers.`2`): Self = StObject.set(x, "loose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set1(value: typings.glaze.glazeNumbers.`1`): Self = this.set("1", value.asInstanceOf[js.Any])
+    def setRelaxed(value: `1.625`): Self = StObject.set(x, "relaxed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase(value: `1.5`): Self = this.set("base", value.asInstanceOf[js.Any])
+    def setSnug(value: `1.375`): Self = StObject.set(x, "snug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoose(value: typings.glaze.glazeNumbers.`2`): Self = this.set("loose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelaxed(value: `1.625`): Self = this.set("relaxed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSnug(value: `1.375`): Self = this.set("snug", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTight(value: `1.25`): Self = this.set("tight", value.asInstanceOf[js.Any])
+    def setTight(value: `1.25`): Self = StObject.set(x, "tight", value.asInstanceOf[js.Any])
   }
 }

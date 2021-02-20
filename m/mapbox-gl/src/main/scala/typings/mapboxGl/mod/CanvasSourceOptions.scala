@@ -1,12 +1,13 @@
 package typings.mapboxGl.mod
 
 import typings.std.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanvasSourceOptions extends js.Object {
+trait CanvasSourceOptions extends StObject {
   
   var animate: js.UndefOr[Boolean] = js.native
   
@@ -23,33 +24,21 @@ object CanvasSourceOptions {
   }
   
   @scala.inline
-  implicit class CanvasSourceOptionsOps[Self <: CanvasSourceOptions] (val x: Self) extends AnyVal {
+  implicit class CanvasSourceOptionsMutableBuilder[Self <: CanvasSourceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanvas(value: String | HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanvas(value: String | HTMLCanvasElement): Self = this.set("canvas", value.asInstanceOf[js.Any])
+    def setCoordinates(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoordinatesVarargs(value: js.Array[Double]*): Self = this.set("coordinates", js.Array(value :_*))
-    
-    @scala.inline
-    def setCoordinates(value: js.Array[js.Array[Double]]): Self = this.set("coordinates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnimate: Self = this.set("animate", js.undefined)
+    def setCoordinatesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.ckeditor.CKEDITOR
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait xml extends js.Object {
+trait xml extends StObject {
   
   var baseXml: js.Any = js.native
   

@@ -2,6 +2,7 @@ package typings.iobroker.objectsMod.global.ioBroker
 
 import typings.iobroker.iobrokerStrings.state
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,30 +31,18 @@ object StateObject {
   }
   
   @scala.inline
-  implicit class StateObjectOps[Self <: StateObject] (val x: Self) extends AnyVal {
+  implicit class StateObjectMutableBuilder[Self <: StateObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcl(value: StateACL): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommon(value: StateCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommon(value: StateCommon): Self = this.set("common", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: state): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAcl(value: StateACL): Self = this.set("acl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAcl: Self = this.set("acl", js.undefined)
+    def setType(value: state): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

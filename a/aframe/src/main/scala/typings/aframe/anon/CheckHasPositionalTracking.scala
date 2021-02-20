@@ -2,12 +2,13 @@ package typings.aframe.anon
 
 import typings.std.VRDisplay
 import typings.three.mod.Object3D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CheckHasPositionalTracking extends js.Object {
+trait CheckHasPositionalTracking extends StObject {
   
   def PolyfillControls(object3D: Object3D): Unit = js.native
   
@@ -61,60 +62,48 @@ object CheckHasPositionalTracking {
   }
   
   @scala.inline
-  implicit class CheckHasPositionalTrackingOps[Self <: CheckHasPositionalTracking] (val x: Self) extends AnyVal {
+  implicit class CheckHasPositionalTrackingMutableBuilder[Self <: CheckHasPositionalTracking] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckHasPositionalTracking(value: () => Boolean): Self = StObject.set(x, "checkHasPositionalTracking", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckHeadsetConnected(value: () => Boolean): Self = StObject.set(x, "checkHeadsetConnected", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetVRDisplay(value: () => js.Array[VRDisplay]): Self = StObject.set(x, "getVRDisplay", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPolyfillControls(value: Object3D => Unit): Self = this.set("PolyfillControls", js.Any.fromFunction1(value))
+    def setIsBrowserEnvironment(value: () => Boolean): Self = StObject.set(x, "isBrowserEnvironment", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCheckHasPositionalTracking(value: () => Boolean): Self = this.set("checkHasPositionalTracking", js.Any.fromFunction0(value))
+    def setIsGearVR(value: () => Boolean): Self = StObject.set(x, "isGearVR", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCheckHeadsetConnected(value: () => Boolean): Self = this.set("checkHeadsetConnected", js.Any.fromFunction0(value))
+    def setIsIOS(value: () => Boolean): Self = StObject.set(x, "isIOS", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetVRDisplay(value: () => js.Array[VRDisplay]): Self = this.set("getVRDisplay", js.Any.fromFunction0(value))
+    def setIsLandscape(value: () => Boolean): Self = StObject.set(x, "isLandscape", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsBrowserEnvironment(value: () => Boolean): Self = this.set("isBrowserEnvironment", js.Any.fromFunction0(value))
+    def setIsMobile(value: () => Boolean): Self = StObject.set(x, "isMobile", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsGearVR(value: () => Boolean): Self = this.set("isGearVR", js.Any.fromFunction0(value))
+    def setIsNodeEnvironment(value: () => Boolean): Self = StObject.set(x, "isNodeEnvironment", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsIOS(value: () => Boolean): Self = this.set("isIOS", js.Any.fromFunction0(value))
+    def setIsOculusGo(value: () => Boolean): Self = StObject.set(x, "isOculusGo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsLandscape(value: () => Boolean): Self = this.set("isLandscape", js.Any.fromFunction0(value))
+    def setIsR7(value: () => Boolean): Self = StObject.set(x, "isR7", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsMobile(value: () => Boolean): Self = this.set("isMobile", js.Any.fromFunction0(value))
+    def setIsTablet(value: () => Boolean): Self = StObject.set(x, "isTablet", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsNodeEnvironment(value: () => Boolean): Self = this.set("isNodeEnvironment", js.Any.fromFunction0(value))
+    def setIsWebXRAvailable(value: Boolean): Self = StObject.set(x, "isWebXRAvailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOculusGo(value: () => Boolean): Self = this.set("isOculusGo", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsR7(value: () => Boolean): Self = this.set("isR7", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsTablet(value: () => Boolean): Self = this.set("isTablet", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsWebXRAvailable(value: Boolean): Self = this.set("isWebXRAvailable", value.asInstanceOf[js.Any])
+    def setPolyfillControls(value: Object3D => Unit): Self = StObject.set(x, "PolyfillControls", js.Any.fromFunction1(value))
   }
 }

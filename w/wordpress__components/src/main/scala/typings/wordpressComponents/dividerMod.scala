@@ -178,28 +178,27 @@ import typings.wordpressComponents.wordpressComponentsStrings.video
 import typings.wordpressComponents.wordpressComponentsStrings.view
 import typings.wordpressComponents.wordpressComponentsStrings.wbr
 import typings.wordpressComponents.wordpressComponentsStrings.webview
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/components/card/divider", JSImport.Namespace)
-@js.native
-object dividerMod extends js.Object {
+object dividerMod {
   
-  @js.native
-  object CardDivider extends js.Object {
-    
-    type Props[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] = Children[T] with (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[T] */ js.Any)
-  }
-  
-  @js.native
-  object default extends js.Object {
+  object default {
     
     // tslint:disable:no-unnecessary-generics
+    @JSImport("@wordpress/components/card/divider", JSImport.Default)
+    @js.native
     def apply(
       props: Props[
           a | abbr | address | animate | animateMotion | animateTransform | area | article | aside | audio | b | base | bdi | bdo | big | blockquote | body | br | button | canvas | caption | circle | cite | clipPath | code | col | colgroup | data | datalist | dd | defs | del | desc | details | dfn | dialog | div | dl | dt | ellipse | em | embed | feBlend | feColorMatrix | feComponentTransfer | feComposite | feConvolveMatrix | feDiffuseLighting | feDisplacementMap | feDistantLight | feDropShadow | feFlood | feFuncA | feFuncB | feFuncG | feFuncR | feGaussianBlur | feImage | feMerge | feMergeNode | feMorphology | feOffset | fePointLight | feSpecularLighting | feSpotLight | feTile | feTurbulence | fieldset | figcaption | figure | filter | footer | foreignObject | form | g | h1 | h2 | h3 | h4 | h5 | h6 | head | header | hgroup | hr | html | i | iframe | image | img | input | ins | kbd | keygen | label | legend | li | line | linearGradient | link | main | map | mark | marker | mask | menu | menuitem | meta | metadata | meter | mpath | nav | noindex | noscript | `object` | ol | optgroup | option | output | p | param | path | pattern | picture | polygon | polyline | pre | progress | q | radialGradient | rect | rp | rt | ruby | s | samp | script | section | select | slot | small | source | span | stop | strong | style | sub | summary | sup | svg | switch | symbol | table | tbody | td | template | text | textPath | textarea | tfoot | th | thead | time | title | tr | track | tspan | u | ul | use | `var` | video | view | wbr | webview
         ]
     ): Element = js.native
+  }
+  
+  object CardDivider {
+    
+    type Props[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] = Children[T] with (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[T] */ js.Any)
   }
 }

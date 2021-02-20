@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdTechnologyProviders extends js.Object {
+trait AdTechnologyProviders extends StObject {
   
   /**
     * The detected ad technology provider IDs for this creative. See https://storage.googleapis.com/adx-rtb-dictionaries/providers.csv for mapping of provider ID to provided name, a
@@ -32,33 +33,21 @@ object AdTechnologyProviders {
   }
   
   @scala.inline
-  implicit class AdTechnologyProvidersOps[Self <: AdTechnologyProviders] (val x: Self) extends AnyVal {
+  implicit class AdTechnologyProvidersMutableBuilder[Self <: AdTechnologyProviders] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetectedProviderIds(value: js.Array[String]): Self = StObject.set(x, "detectedProviderIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetectedProviderIdsUndefined: Self = StObject.set(x, "detectedProviderIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetectedProviderIdsVarargs(value: String*): Self = StObject.set(x, "detectedProviderIds", js.Array(value :_*))
     
     @scala.inline
-    def setDetectedProviderIdsVarargs(value: String*): Self = this.set("detectedProviderIds", js.Array(value :_*))
+    def setHasUnidentifiedProvider(value: Boolean): Self = StObject.set(x, "hasUnidentifiedProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectedProviderIds(value: js.Array[String]): Self = this.set("detectedProviderIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetectedProviderIds: Self = this.set("detectedProviderIds", js.undefined)
-    
-    @scala.inline
-    def setHasUnidentifiedProvider(value: Boolean): Self = this.set("hasUnidentifiedProvider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHasUnidentifiedProvider: Self = this.set("hasUnidentifiedProvider", js.undefined)
+    def setHasUnidentifiedProviderUndefined: Self = StObject.set(x, "hasUnidentifiedProvider", js.undefined)
   }
 }

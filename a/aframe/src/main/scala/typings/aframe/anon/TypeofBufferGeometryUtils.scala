@@ -2,12 +2,13 @@ package typings.aframe.anon
 
 import typings.three.bufferAttributeMod.BufferAttribute
 import typings.three.bufferGeometryMod.BufferGeometry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofBufferGeometryUtils extends js.Object {
+trait TypeofBufferGeometryUtils extends StObject {
   
   def computeTangents(geometry: BufferGeometry): Null = js.native
   
@@ -28,27 +29,15 @@ object TypeofBufferGeometryUtils {
   }
   
   @scala.inline
-  implicit class TypeofBufferGeometryUtilsOps[Self <: TypeofBufferGeometryUtils] (val x: Self) extends AnyVal {
+  implicit class TypeofBufferGeometryUtilsMutableBuilder[Self <: TypeofBufferGeometryUtils] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputeTangents(value: BufferGeometry => Null): Self = StObject.set(x, "computeTangents", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMergeBufferAttributes(value: js.Array[BufferAttribute] => BufferAttribute): Self = StObject.set(x, "mergeBufferAttributes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComputeTangents(value: BufferGeometry => Null): Self = this.set("computeTangents", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMergeBufferAttributes(value: js.Array[BufferAttribute] => BufferAttribute): Self = this.set("mergeBufferAttributes", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMergeBufferGeometries(value: js.Array[BufferGeometry] => BufferGeometry): Self = this.set("mergeBufferGeometries", js.Any.fromFunction1(value))
+    def setMergeBufferGeometries(value: js.Array[BufferGeometry] => BufferGeometry): Self = StObject.set(x, "mergeBufferGeometries", js.Any.fromFunction1(value))
   }
 }

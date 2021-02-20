@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReposSetTeamAccessRestrictionsEndpoint extends js.Object {
+trait ReposSetTeamAccessRestrictionsEndpoint extends StObject {
   
   var branch: String = js.native
   
@@ -27,33 +28,21 @@ object ReposSetTeamAccessRestrictionsEndpoint {
   }
   
   @scala.inline
-  implicit class ReposSetTeamAccessRestrictionsEndpointOps[Self <: ReposSetTeamAccessRestrictionsEndpoint] (val x: Self) extends AnyVal {
+  implicit class ReposSetTeamAccessRestrictionsEndpointMutableBuilder[Self <: ReposSetTeamAccessRestrictionsEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranch(value: String): Self = this.set("branch", value.asInstanceOf[js.Any])
+    def setTeams(value: js.Array[String]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTeamsVarargs(value: String*): Self = this.set("teams", js.Array(value :_*))
-    
-    @scala.inline
-    def setTeams(value: js.Array[String]): Self = this.set("teams", value.asInstanceOf[js.Any])
+    def setTeamsVarargs(value: String*): Self = StObject.set(x, "teams", js.Array(value :_*))
   }
 }

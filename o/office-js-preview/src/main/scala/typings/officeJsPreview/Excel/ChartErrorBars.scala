@@ -14,6 +14,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.Percent
 import typings.officeJsPreview.officeJsPreviewStrings.PlusValues
 import typings.officeJsPreview.officeJsPreviewStrings.StDev
 import typings.officeJsPreview.officeJsPreviewStrings.StError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,5 +1,6 @@
 package typings.kiiCloudSdk.global.KiiCloud
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class KiiQuery ()
   extends typings.kiiCloudSdk.KiiCloud.KiiQuery
-/* static members */
-@JSGlobal("KiiCloud.KiiQuery")
-@js.native
-object KiiQuery extends js.Object {
+object KiiQuery {
   
   /**
     * Create a KiiQuery object based on a KiiClause
@@ -23,5 +21,8 @@ object KiiQuery extends js.Object {
     *
     * @param clause The KiiClause to be executed with the query
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiQuery.queryWithClause")
+  @js.native
   def queryWithClause(clause: typings.kiiCloudSdk.KiiCloud.KiiClause): typings.kiiCloudSdk.KiiCloud.KiiQuery = js.native
 }

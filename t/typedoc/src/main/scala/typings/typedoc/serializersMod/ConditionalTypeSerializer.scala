@@ -1,10 +1,14 @@
 package typings.typedoc.serializersMod
 
+import typings.typedoc.serializerMod.Serializer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc/dist/lib/serialization/serializers", "ConditionalTypeSerializer")
 @js.native
-class ConditionalTypeSerializer ()
-  extends typings.typedoc.serializersTypesConditionalMod.ConditionalTypeSerializer
+class ConditionalTypeSerializer protected ()
+  extends typings.typedoc.serializersTypesMod.ConditionalTypeSerializer {
+  def this(owner: Serializer) = this()
+}

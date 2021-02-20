@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -90,111 +91,99 @@ object NutritionOrder {
   }
   
   @scala.inline
-  implicit class NutritionOrderOps[Self <: NutritionOrder] (val x: Self) extends AnyVal {
+  implicit class NutritionOrderMutableBuilder[Self <: NutritionOrder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllergyIntolerance(value: js.Array[Reference]): Self = StObject.set(x, "allergyIntolerance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllergyIntoleranceUndefined: Self = StObject.set(x, "allergyIntolerance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllergyIntoleranceVarargs(value: Reference*): Self = StObject.set(x, "allergyIntolerance", js.Array(value :_*))
     
     @scala.inline
-    def setDateTime(value: dateTime): Self = this.set("dateTime", value.asInstanceOf[js.Any])
+    def setDateTime(value: dateTime): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatient(value: Reference): Self = this.set("patient", value.asInstanceOf[js.Any])
+    def setEncounter(value: Reference): Self = StObject.set(x, "encounter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_dateTime(value: Element): Self = this.set("_dateTime", value.asInstanceOf[js.Any])
+    def setEncounterUndefined: Self = StObject.set(x, "encounter", js.undefined)
     
     @scala.inline
-    def delete_dateTime: Self = this.set("_dateTime", js.undefined)
+    def setEnteralFormula(value: NutritionOrderEnteralFormula): Self = StObject.set(x, "enteralFormula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setEnteralFormulaUndefined: Self = StObject.set(x, "enteralFormula", js.undefined)
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setExcludeFoodModifier(value: js.Array[CodeableConcept]): Self = StObject.set(x, "excludeFoodModifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllergyIntoleranceVarargs(value: Reference*): Self = this.set("allergyIntolerance", js.Array(value :_*))
+    def setExcludeFoodModifierUndefined: Self = StObject.set(x, "excludeFoodModifier", js.undefined)
     
     @scala.inline
-    def setAllergyIntolerance(value: js.Array[Reference]): Self = this.set("allergyIntolerance", value.asInstanceOf[js.Any])
+    def setExcludeFoodModifierVarargs(value: CodeableConcept*): Self = StObject.set(x, "excludeFoodModifier", js.Array(value :_*))
     
     @scala.inline
-    def deleteAllergyIntolerance: Self = this.set("allergyIntolerance", js.undefined)
+    def setFoodPreferenceModifier(value: js.Array[CodeableConcept]): Self = StObject.set(x, "foodPreferenceModifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncounter(value: Reference): Self = this.set("encounter", value.asInstanceOf[js.Any])
+    def setFoodPreferenceModifierUndefined: Self = StObject.set(x, "foodPreferenceModifier", js.undefined)
     
     @scala.inline
-    def deleteEncounter: Self = this.set("encounter", js.undefined)
+    def setFoodPreferenceModifierVarargs(value: CodeableConcept*): Self = StObject.set(x, "foodPreferenceModifier", js.Array(value :_*))
     
     @scala.inline
-    def setEnteralFormula(value: NutritionOrderEnteralFormula): Self = this.set("enteralFormula", value.asInstanceOf[js.Any])
+    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnteralFormula: Self = this.set("enteralFormula", js.undefined)
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def setExcludeFoodModifierVarargs(value: CodeableConcept*): Self = this.set("excludeFoodModifier", js.Array(value :_*))
+    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
     @scala.inline
-    def setExcludeFoodModifier(value: js.Array[CodeableConcept]): Self = this.set("excludeFoodModifier", value.asInstanceOf[js.Any])
+    def setOralDiet(value: NutritionOrderOralDiet): Self = StObject.set(x, "oralDiet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExcludeFoodModifier: Self = this.set("excludeFoodModifier", js.undefined)
+    def setOralDietUndefined: Self = StObject.set(x, "oralDiet", js.undefined)
     
     @scala.inline
-    def setFoodPreferenceModifierVarargs(value: CodeableConcept*): Self = this.set("foodPreferenceModifier", js.Array(value :_*))
+    def setOrderer(value: Reference): Self = StObject.set(x, "orderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFoodPreferenceModifier(value: js.Array[CodeableConcept]): Self = this.set("foodPreferenceModifier", value.asInstanceOf[js.Any])
+    def setOrdererUndefined: Self = StObject.set(x, "orderer", js.undefined)
     
     @scala.inline
-    def deleteFoodPreferenceModifier: Self = this.set("foodPreferenceModifier", js.undefined)
+    def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setSupplement(value: js.Array[NutritionOrderSupplement]): Self = StObject.set(x, "supplement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOralDiet(value: NutritionOrderOralDiet): Self = this.set("oralDiet", value.asInstanceOf[js.Any])
+    def setSupplementUndefined: Self = StObject.set(x, "supplement", js.undefined)
     
     @scala.inline
-    def deleteOralDiet: Self = this.set("oralDiet", js.undefined)
+    def setSupplementVarargs(value: NutritionOrderSupplement*): Self = StObject.set(x, "supplement", js.Array(value :_*))
     
     @scala.inline
-    def setOrderer(value: Reference): Self = this.set("orderer", value.asInstanceOf[js.Any])
+    def set_dateTime(value: Element): Self = StObject.set(x, "_dateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrderer: Self = this.set("orderer", js.undefined)
+    def set_dateTimeUndefined: Self = StObject.set(x, "_dateTime", js.undefined)
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setSupplementVarargs(value: NutritionOrderSupplement*): Self = this.set("supplement", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupplement(value: js.Array[NutritionOrderSupplement]): Self = this.set("supplement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupplement: Self = this.set("supplement", js.undefined)
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

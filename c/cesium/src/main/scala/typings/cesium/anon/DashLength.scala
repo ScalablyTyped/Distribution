@@ -1,12 +1,13 @@
 package typings.cesium.anon
 
 import typings.cesium.mod.Property
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DashLength extends js.Object {
+trait DashLength extends StObject {
   
   var color: js.UndefOr[typings.cesium.mod.Color] = js.native
   
@@ -25,42 +26,30 @@ object DashLength {
   }
   
   @scala.inline
-  implicit class DashLengthOps[Self <: DashLength] (val x: Self) extends AnyVal {
+  implicit class DashLengthMutableBuilder[Self <: DashLength] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDashLength(value: Property): Self = StObject.set(x, "dashLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: typings.cesium.mod.Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDashLengthUndefined: Self = StObject.set(x, "dashLength", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setDashPattern(value: Property): Self = StObject.set(x, "dashPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashLength(value: Property): Self = this.set("dashLength", value.asInstanceOf[js.Any])
+    def setDashPatternUndefined: Self = StObject.set(x, "dashPattern", js.undefined)
     
     @scala.inline
-    def deleteDashLength: Self = this.set("dashLength", js.undefined)
+    def setGapColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "gapColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashPattern(value: Property): Self = this.set("dashPattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDashPattern: Self = this.set("dashPattern", js.undefined)
-    
-    @scala.inline
-    def setGapColor(value: typings.cesium.mod.Color): Self = this.set("gapColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGapColor: Self = this.set("gapColor", js.undefined)
+    def setGapColorUndefined: Self = StObject.set(x, "gapColor", js.undefined)
   }
 }

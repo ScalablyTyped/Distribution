@@ -1,13 +1,13 @@
 package typings.openui5.global.sap.ui.model
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.model.json")
-@js.native
-object json extends js.Object {
+object json {
   
+  @JSGlobal("sap.ui.model.json.JSONModel")
   @js.native
   class JSONModel protected ()
     extends typings.openui5.sap.ui.model.json.JSONModel {

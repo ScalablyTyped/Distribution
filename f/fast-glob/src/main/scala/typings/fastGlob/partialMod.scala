@@ -1,12 +1,15 @@
 package typings.fastGlob
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fast-glob/out/providers/matchers/partial", JSImport.Namespace)
-@js.native
-object partialMod extends js.Object {
+object partialMod {
+  
+  @JSImport("fast-glob/out/providers/matchers/partial", JSImport.Default)
+  @js.native
+  class default () extends PartialMatcher
   
   @js.native
   trait PartialMatcher
@@ -14,7 +17,4 @@ object partialMod extends js.Object {
     
     def `match`(filepath: String): Boolean = js.native
   }
-  
-  @js.native
-  class default () extends PartialMatcher
 }

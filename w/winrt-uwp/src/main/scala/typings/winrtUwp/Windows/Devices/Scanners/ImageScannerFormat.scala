@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Scanners
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ImageScannerFormat extends js.Object
+sealed trait ImageScannerFormat extends StObject
 /** The type of files to scan to. */
 @JSGlobal("Windows.Devices.Scanners.ImageScannerFormat")
 @js.native
-object ImageScannerFormat extends js.Object {
+object ImageScannerFormat extends StObject {
   
   /** Windows Device Independent Bitmap (DIB) */
   @js.native

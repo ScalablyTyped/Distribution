@@ -8,6 +8,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`4`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`5`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`6`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`7`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexLibreoffice.activexLibreofficeNumbers.`4`
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 */
-trait ValidationType extends js.Object
+trait ValidationType extends StObject
 object ValidationType {
   
   /** any cell content is valid; no conditions are used. */

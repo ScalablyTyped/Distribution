@@ -1,12 +1,13 @@
 package typings.officeJsPreview.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "application.toJSON()". */
 @js.native
-trait ApplicationData extends js.Object {
+trait ApplicationData extends StObject {
   
   /**
     *
@@ -25,27 +26,15 @@ object ApplicationData {
   }
   
   @scala.inline
-  implicit class ApplicationDataOps[Self <: ApplicationData] (val x: Self) extends AnyVal {
+  implicit class ApplicationDataMutableBuilder[Self <: ApplicationData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNotebooks(value: js.Array[NotebookData]): Self = StObject.set(x, "notebooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotebooksUndefined: Self = StObject.set(x, "notebooks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNotebooksVarargs(value: NotebookData*): Self = this.set("notebooks", js.Array(value :_*))
-    
-    @scala.inline
-    def setNotebooks(value: js.Array[NotebookData]): Self = this.set("notebooks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotebooks: Self = this.set("notebooks", js.undefined)
+    def setNotebooksVarargs(value: NotebookData*): Self = StObject.set(x, "notebooks", js.Array(value :_*))
   }
 }

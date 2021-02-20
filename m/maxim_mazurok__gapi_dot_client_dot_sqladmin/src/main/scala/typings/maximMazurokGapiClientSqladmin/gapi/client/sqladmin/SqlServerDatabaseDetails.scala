@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SqlServerDatabaseDetails extends js.Object {
+trait SqlServerDatabaseDetails extends StObject {
   
   /** The version of SQL Server with which the database is to be made compatible */
   var compatibilityLevel: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object SqlServerDatabaseDetails {
   }
   
   @scala.inline
-  implicit class SqlServerDatabaseDetailsOps[Self <: SqlServerDatabaseDetails] (val x: Self) extends AnyVal {
+  implicit class SqlServerDatabaseDetailsMutableBuilder[Self <: SqlServerDatabaseDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompatibilityLevel(value: Double): Self = StObject.set(x, "compatibilityLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompatibilityLevelUndefined: Self = StObject.set(x, "compatibilityLevel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecoveryModel(value: String): Self = StObject.set(x, "recoveryModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompatibilityLevel(value: Double): Self = this.set("compatibilityLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCompatibilityLevel: Self = this.set("compatibilityLevel", js.undefined)
-    
-    @scala.inline
-    def setRecoveryModel(value: String): Self = this.set("recoveryModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecoveryModel: Self = this.set("recoveryModel", js.undefined)
+    def setRecoveryModelUndefined: Self = StObject.set(x, "recoveryModel", js.undefined)
   }
 }

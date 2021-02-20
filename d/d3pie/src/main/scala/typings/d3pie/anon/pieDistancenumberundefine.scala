@@ -7,13 +7,14 @@ import typings.d3pie.d3pieStrings.`label-value2`
 import typings.d3pie.d3pieStrings.label
 import typings.d3pie.d3pieStrings.percentage
 import typings.d3pie.d3pieStrings.value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  pieDistance :number | undefined} & d3pie.d3pie.ID3PieLabelsOptions */
 @js.native
-trait pieDistancenumberundefine extends js.Object {
+trait pieDistancenumberundefine extends StObject {
   
   var format: js.UndefOr[
     label | value | percentage | `label-value1` | `label-value2` | `label-percentage1` | `label-percentage2`
@@ -32,38 +33,26 @@ object pieDistancenumberundefine {
   }
   
   @scala.inline
-  implicit class pieDistancenumberundefineOps[Self <: pieDistancenumberundefine] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class pieDistancenumberundefineMutableBuilder[Self <: pieDistancenumberundefine] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setFormat(
       value: label | value | percentage | `label-value1` | `label-value2` | `label-percentage1` | `label-percentage2`
-    ): Self = this.set("format", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setHideWhenLessThanPercentage(value: Double): Self = this.set("hideWhenLessThanPercentage", value.asInstanceOf[js.Any])
+    def setHideWhenLessThanPercentage(value: Double): Self = StObject.set(x, "hideWhenLessThanPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHideWhenLessThanPercentage: Self = this.set("hideWhenLessThanPercentage", js.undefined)
+    def setHideWhenLessThanPercentageUndefined: Self = StObject.set(x, "hideWhenLessThanPercentage", js.undefined)
     
     @scala.inline
-    def setPieDistance(value: Double): Self = this.set("pieDistance", value.asInstanceOf[js.Any])
+    def setPieDistance(value: Double): Self = StObject.set(x, "pieDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePieDistance: Self = this.set("pieDistance", js.undefined)
+    def setPieDistanceUndefined: Self = StObject.set(x, "pieDistance", js.undefined)
   }
 }

@@ -1,13 +1,13 @@
 package typings.openui5.global.sap.ui.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.core.tmpl")
-@js.native
-object tmpl extends js.Object {
+object tmpl {
   
+  @JSGlobal("sap.ui.core.tmpl.DOMAttribute")
   @js.native
   class DOMAttribute protected ()
     extends typings.openui5.sap.ui.core.tmpl.DOMAttribute {
@@ -23,6 +23,7 @@ object tmpl extends js.Object {
     def this(sId: String, mSettings: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.core.tmpl.DOMElement")
   @js.native
   class DOMElement protected ()
     extends typings.openui5.sap.ui.core.tmpl.DOMElement {
@@ -38,6 +39,7 @@ object tmpl extends js.Object {
     def this(sId: String, mSettings: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.core.tmpl.HandlebarsTemplate")
   @js.native
   abstract class HandlebarsTemplate protected ()
     extends typings.openui5.sap.ui.core.tmpl.HandlebarsTemplate {
@@ -55,6 +57,7 @@ object tmpl extends js.Object {
     def this(sId: String, mSettings: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.core.tmpl.Template")
   @js.native
   abstract class Template protected ()
     extends typings.openui5.sap.ui.core.tmpl.Template {
@@ -75,6 +78,7 @@ object tmpl extends js.Object {
     def this(sId: String, mSettings: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.core.tmpl.TemplateControl")
   @js.native
   class TemplateControl protected ()
     extends typings.openui5.sap.ui.core.tmpl.TemplateControl {

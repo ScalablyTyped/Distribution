@@ -1,11 +1,12 @@
 package typings.activexInfopath.InfoPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISubmitToHostEventHandler extends js.Object {
+trait ISubmitToHostEventHandler extends StObject {
   
   @JSName("InfoPath.ISubmitToHostEventHandler_typekey")
   var InfoPathDotISubmitToHostEventHandler_typekey: ISubmitToHostEventHandler = js.native
@@ -25,24 +26,12 @@ object ISubmitToHostEventHandler {
   }
   
   @scala.inline
-  implicit class ISubmitToHostEventHandlerOps[Self <: ISubmitToHostEventHandler] (val x: Self) extends AnyVal {
+  implicit class ISubmitToHostEventHandlerMutableBuilder[Self <: ISubmitToHostEventHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInfoPathDotISubmitToHostEventHandler_typekey(value: ISubmitToHostEventHandler): Self = StObject.set(x, "InfoPath.ISubmitToHostEventHandler_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInfoPathDotISubmitToHostEventHandler_typekey(value: ISubmitToHostEventHandler): Self = this.set("InfoPath.ISubmitToHostEventHandler_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubmitToHostEventHandler(value: (js.Any, String, String) => Double): Self = this.set("SubmitToHostEventHandler", js.Any.fromFunction3(value))
+    def setSubmitToHostEventHandler(value: (js.Any, String, String) => Double): Self = StObject.set(x, "SubmitToHostEventHandler", js.Any.fromFunction3(value))
   }
 }

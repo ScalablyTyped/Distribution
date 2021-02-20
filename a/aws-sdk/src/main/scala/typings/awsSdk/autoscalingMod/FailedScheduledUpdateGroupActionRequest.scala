@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FailedScheduledUpdateGroupActionRequest extends js.Object {
+trait FailedScheduledUpdateGroupActionRequest extends StObject {
   
   /**
     * The error code.
@@ -31,33 +32,21 @@ object FailedScheduledUpdateGroupActionRequest {
   }
   
   @scala.inline
-  implicit class FailedScheduledUpdateGroupActionRequestOps[Self <: FailedScheduledUpdateGroupActionRequest] (val x: Self) extends AnyVal {
+  implicit class FailedScheduledUpdateGroupActionRequestMutableBuilder[Self <: FailedScheduledUpdateGroupActionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: XmlStringMaxLen64): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorMessage(value: XmlString): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduledActionName(value: XmlStringMaxLen255): Self = this.set("ScheduledActionName", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
     @scala.inline
-    def setErrorCode(value: XmlStringMaxLen64): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
-    
-    @scala.inline
-    def setErrorMessage(value: XmlString): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    def setScheduledActionName(value: XmlStringMaxLen255): Self = StObject.set(x, "ScheduledActionName", value.asInstanceOf[js.Any])
   }
 }

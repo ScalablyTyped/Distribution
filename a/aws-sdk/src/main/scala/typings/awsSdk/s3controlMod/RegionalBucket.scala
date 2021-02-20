@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionalBucket extends js.Object {
+trait RegionalBucket extends StObject {
   
   /**
     * 
@@ -41,39 +42,27 @@ object RegionalBucket {
   }
   
   @scala.inline
-  implicit class RegionalBucketOps[Self <: RegionalBucket] (val x: Self) extends AnyVal {
+  implicit class RegionalBucketMutableBuilder[Self <: RegionalBucket] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketArn(value: S3RegionalBucketArn): Self = StObject.set(x, "BucketArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketArnUndefined: Self = StObject.set(x, "BucketArn", js.undefined)
     
     @scala.inline
-    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: CreationDate): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setOutpostId(value: NonEmptyMaxLength64String): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicAccessBlockEnabled(value: PublicAccessBlockEnabled): Self = this.set("PublicAccessBlockEnabled", value.asInstanceOf[js.Any])
+    def setOutpostIdUndefined: Self = StObject.set(x, "OutpostId", js.undefined)
     
     @scala.inline
-    def setBucketArn(value: S3RegionalBucketArn): Self = this.set("BucketArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBucketArn: Self = this.set("BucketArn", js.undefined)
-    
-    @scala.inline
-    def setOutpostId(value: NonEmptyMaxLength64String): Self = this.set("OutpostId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutpostId: Self = this.set("OutpostId", js.undefined)
+    def setPublicAccessBlockEnabled(value: PublicAccessBlockEnabled): Self = StObject.set(x, "PublicAccessBlockEnabled", value.asInstanceOf[js.Any])
   }
 }

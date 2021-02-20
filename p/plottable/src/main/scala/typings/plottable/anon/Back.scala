@@ -37,12 +37,13 @@ import typings.plottable.plottableStrings.sin
 import typings.plottable.plottableStrings.sinIn
 import typings.plottable.plottableStrings.sinInOut
 import typings.plottable.plottableStrings.sinOut
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Back extends js.Object {
+trait Back extends StObject {
   
   var back: typings.plottable.plottableStrings.back = js.native
   
@@ -165,129 +166,117 @@ object Back {
   }
   
   @scala.inline
-  implicit class BackOps[Self <: Back] (val x: Self) extends AnyVal {
+  implicit class BackMutableBuilder[Self <: Back] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBack(value: back): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackIn(value: backIn): Self = StObject.set(x, "backIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackInOut(value: backInOut): Self = StObject.set(x, "backInOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBack(value: back): Self = this.set("back", value.asInstanceOf[js.Any])
+    def setBackOut(value: backOut): Self = StObject.set(x, "backOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackIn(value: backIn): Self = this.set("backIn", value.asInstanceOf[js.Any])
+    def setBounce(value: bounce): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackInOut(value: backInOut): Self = this.set("backInOut", value.asInstanceOf[js.Any])
+    def setBounceIn(value: bounceIn): Self = StObject.set(x, "bounceIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackOut(value: backOut): Self = this.set("backOut", value.asInstanceOf[js.Any])
+    def setBounceInOut(value: bounceInOut): Self = StObject.set(x, "bounceInOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounce(value: bounce): Self = this.set("bounce", value.asInstanceOf[js.Any])
+    def setBounceOut(value: bounceOut): Self = StObject.set(x, "bounceOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounceIn(value: bounceIn): Self = this.set("bounceIn", value.asInstanceOf[js.Any])
+    def setCircle(value: circle): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounceInOut(value: bounceInOut): Self = this.set("bounceInOut", value.asInstanceOf[js.Any])
+    def setCircleIn(value: circleIn): Self = StObject.set(x, "circleIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounceOut(value: bounceOut): Self = this.set("bounceOut", value.asInstanceOf[js.Any])
+    def setCircleInOut(value: circleInOut): Self = StObject.set(x, "circleInOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircle(value: circle): Self = this.set("circle", value.asInstanceOf[js.Any])
+    def setCircleOut(value: circleOut): Self = StObject.set(x, "circleOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircleIn(value: circleIn): Self = this.set("circleIn", value.asInstanceOf[js.Any])
+    def setCubic(value: cubic): Self = StObject.set(x, "cubic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircleInOut(value: circleInOut): Self = this.set("circleInOut", value.asInstanceOf[js.Any])
+    def setCubicIn(value: cubicIn): Self = StObject.set(x, "cubicIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircleOut(value: circleOut): Self = this.set("circleOut", value.asInstanceOf[js.Any])
+    def setCubicInOut(value: cubicInOut): Self = StObject.set(x, "cubicInOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCubic(value: cubic): Self = this.set("cubic", value.asInstanceOf[js.Any])
+    def setCubicOut(value: cubicOut): Self = StObject.set(x, "cubicOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCubicIn(value: cubicIn): Self = this.set("cubicIn", value.asInstanceOf[js.Any])
+    def setElastic(value: elastic): Self = StObject.set(x, "elastic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCubicInOut(value: cubicInOut): Self = this.set("cubicInOut", value.asInstanceOf[js.Any])
+    def setElasticIn(value: elasticIn): Self = StObject.set(x, "elasticIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCubicOut(value: cubicOut): Self = this.set("cubicOut", value.asInstanceOf[js.Any])
+    def setElasticInOut(value: elasticInOut): Self = StObject.set(x, "elasticInOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElastic(value: elastic): Self = this.set("elastic", value.asInstanceOf[js.Any])
+    def setElasticOut(value: elasticOut): Self = StObject.set(x, "elasticOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticIn(value: elasticIn): Self = this.set("elasticIn", value.asInstanceOf[js.Any])
+    def setExp(value: exp): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticInOut(value: elasticInOut): Self = this.set("elasticInOut", value.asInstanceOf[js.Any])
+    def setExpIn(value: expIn): Self = StObject.set(x, "expIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticOut(value: elasticOut): Self = this.set("elasticOut", value.asInstanceOf[js.Any])
+    def setExpInOut(value: expInOut): Self = StObject.set(x, "expInOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExp(value: exp): Self = this.set("exp", value.asInstanceOf[js.Any])
+    def setExpOut(value: expOut): Self = StObject.set(x, "expOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpIn(value: expIn): Self = this.set("expIn", value.asInstanceOf[js.Any])
+    def setLinear(value: linear): Self = StObject.set(x, "linear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpInOut(value: expInOut): Self = this.set("expInOut", value.asInstanceOf[js.Any])
+    def setPoly(value: poly): Self = StObject.set(x, "poly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpOut(value: expOut): Self = this.set("expOut", value.asInstanceOf[js.Any])
+    def setPolyIn(value: polyIn): Self = StObject.set(x, "polyIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinear(value: linear): Self = this.set("linear", value.asInstanceOf[js.Any])
+    def setPolyInOut(value: polyInOut): Self = StObject.set(x, "polyInOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoly(value: poly): Self = this.set("poly", value.asInstanceOf[js.Any])
+    def setPolyOut(value: polyOut): Self = StObject.set(x, "polyOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolyIn(value: polyIn): Self = this.set("polyIn", value.asInstanceOf[js.Any])
+    def setQuad(value: quad): Self = StObject.set(x, "quad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolyInOut(value: polyInOut): Self = this.set("polyInOut", value.asInstanceOf[js.Any])
+    def setQuadIn(value: quadIn): Self = StObject.set(x, "quadIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolyOut(value: polyOut): Self = this.set("polyOut", value.asInstanceOf[js.Any])
+    def setQuadInOut(value: quadInOut): Self = StObject.set(x, "quadInOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuad(value: quad): Self = this.set("quad", value.asInstanceOf[js.Any])
+    def setQuadOut(value: quadOut): Self = StObject.set(x, "quadOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuadIn(value: quadIn): Self = this.set("quadIn", value.asInstanceOf[js.Any])
+    def setSin(value: sin): Self = StObject.set(x, "sin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuadInOut(value: quadInOut): Self = this.set("quadInOut", value.asInstanceOf[js.Any])
+    def setSinIn(value: sinIn): Self = StObject.set(x, "sinIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuadOut(value: quadOut): Self = this.set("quadOut", value.asInstanceOf[js.Any])
+    def setSinInOut(value: sinInOut): Self = StObject.set(x, "sinInOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSin(value: sin): Self = this.set("sin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSinIn(value: sinIn): Self = this.set("sinIn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSinInOut(value: sinInOut): Self = this.set("sinInOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSinOut(value: sinOut): Self = this.set("sinOut", value.asInstanceOf[js.Any])
+    def setSinOut(value: sinOut): Self = StObject.set(x, "sinOut", value.asInstanceOf[js.Any])
   }
 }

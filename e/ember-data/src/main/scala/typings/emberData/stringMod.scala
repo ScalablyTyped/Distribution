@@ -1,13 +1,12 @@
 package typings.emberData
 
-import typings.emberData.mod.DS.Transform
+import typings.emberData.mod.default.StringTransform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ember-data/transforms/string", JSImport.Namespace)
-@js.native
-object stringMod extends js.Object {
+object stringMod {
   
   /**
     * The `DS.StringTransform` class is used to serialize and deserialize
@@ -15,6 +14,7 @@ object stringMod extends js.Object {
     * used when `string` is passed as the type parameter to the
     * [DS.attr](../../data#method_attr) function.
     */
+  @JSImport("ember-data/transforms/string", JSImport.Default)
   @js.native
-  class default () extends Transform
+  class default () extends StringTransform
 }

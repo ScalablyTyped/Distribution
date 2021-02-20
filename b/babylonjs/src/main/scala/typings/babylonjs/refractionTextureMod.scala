@@ -3,14 +3,14 @@ package typings.babylonjs
 import typings.babylonjs.mathPlaneMod.Plane
 import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.sceneMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Textures/refractionTexture", JSImport.Namespace)
-@js.native
-object refractionTextureMod extends js.Object {
+object refractionTextureMod {
   
+  @JSImport("babylonjs/Materials/Textures/refractionTexture", "RefractionTexture")
   @js.native
   class RefractionTexture protected () extends RenderTargetTexture {
     /**

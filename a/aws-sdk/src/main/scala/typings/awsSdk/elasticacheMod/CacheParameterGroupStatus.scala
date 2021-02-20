@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CacheParameterGroupStatus extends js.Object {
+trait CacheParameterGroupStatus extends StObject {
   
   /**
     * A list of the cache node IDs which need to be rebooted for parameter changes to be applied. A node ID is a numeric identifier (0001, 0002, etc.).
@@ -31,39 +32,27 @@ object CacheParameterGroupStatus {
   }
   
   @scala.inline
-  implicit class CacheParameterGroupStatusOps[Self <: CacheParameterGroupStatus] (val x: Self) extends AnyVal {
+  implicit class CacheParameterGroupStatusMutableBuilder[Self <: CacheParameterGroupStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheNodeIdsToReboot(value: CacheNodeIdsList): Self = StObject.set(x, "CacheNodeIdsToReboot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheNodeIdsToRebootUndefined: Self = StObject.set(x, "CacheNodeIdsToReboot", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCacheNodeIdsToRebootVarargs(value: String*): Self = StObject.set(x, "CacheNodeIdsToReboot", js.Array(value :_*))
     
     @scala.inline
-    def setCacheNodeIdsToRebootVarargs(value: String*): Self = this.set("CacheNodeIdsToReboot", js.Array(value :_*))
+    def setCacheParameterGroupName(value: String): Self = StObject.set(x, "CacheParameterGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheNodeIdsToReboot(value: CacheNodeIdsList): Self = this.set("CacheNodeIdsToReboot", value.asInstanceOf[js.Any])
+    def setCacheParameterGroupNameUndefined: Self = StObject.set(x, "CacheParameterGroupName", js.undefined)
     
     @scala.inline
-    def deleteCacheNodeIdsToReboot: Self = this.set("CacheNodeIdsToReboot", js.undefined)
+    def setParameterApplyStatus(value: String): Self = StObject.set(x, "ParameterApplyStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheParameterGroupName(value: String): Self = this.set("CacheParameterGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCacheParameterGroupName: Self = this.set("CacheParameterGroupName", js.undefined)
-    
-    @scala.inline
-    def setParameterApplyStatus(value: String): Self = this.set("ParameterApplyStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterApplyStatus: Self = this.set("ParameterApplyStatus", js.undefined)
+    def setParameterApplyStatusUndefined: Self = StObject.set(x, "ParameterApplyStatus", js.undefined)
   }
 }

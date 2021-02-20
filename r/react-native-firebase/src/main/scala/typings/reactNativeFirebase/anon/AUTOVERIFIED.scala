@@ -1,11 +1,12 @@
 package typings.reactNativeFirebase.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AUTOVERIFIED extends js.Object {
+trait AUTOVERIFIED extends StObject {
   
   var AUTO_VERIFIED: String = js.native
   
@@ -24,30 +25,18 @@ object AUTOVERIFIED {
   }
   
   @scala.inline
-  implicit class AUTOVERIFIEDOps[Self <: AUTOVERIFIED] (val x: Self) extends AnyVal {
+  implicit class AUTOVERIFIEDMutableBuilder[Self <: AUTOVERIFIED] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAUTO_VERIFIED(value: String): Self = StObject.set(x, "AUTO_VERIFIED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAUTO_VERIFY_TIMEOUT(value: String): Self = StObject.set(x, "AUTO_VERIFY_TIMEOUT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCODE_SENT(value: String): Self = StObject.set(x, "CODE_SENT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAUTO_VERIFIED(value: String): Self = this.set("AUTO_VERIFIED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAUTO_VERIFY_TIMEOUT(value: String): Self = this.set("AUTO_VERIFY_TIMEOUT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCODE_SENT(value: String): Self = this.set("CODE_SENT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setERROR(value: String): Self = this.set("ERROR", value.asInstanceOf[js.Any])
+    def setERROR(value: String): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
   }
 }

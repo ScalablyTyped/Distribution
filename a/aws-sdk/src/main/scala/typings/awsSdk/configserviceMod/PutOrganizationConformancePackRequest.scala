@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutOrganizationConformancePackRequest extends js.Object {
+trait PutOrganizationConformancePackRequest extends StObject {
   
   /**
     * A list of ConformancePackInputParameter objects.
@@ -51,63 +52,51 @@ object PutOrganizationConformancePackRequest {
   }
   
   @scala.inline
-  implicit class PutOrganizationConformancePackRequestOps[Self <: PutOrganizationConformancePackRequest] (val x: Self) extends AnyVal {
+  implicit class PutOrganizationConformancePackRequestMutableBuilder[Self <: PutOrganizationConformancePackRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConformancePackInputParameters(value: ConformancePackInputParameters): Self = StObject.set(x, "ConformancePackInputParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConformancePackInputParametersUndefined: Self = StObject.set(x, "ConformancePackInputParameters", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConformancePackInputParametersVarargs(value: ConformancePackInputParameter*): Self = StObject.set(x, "ConformancePackInputParameters", js.Array(value :_*))
     
     @scala.inline
-    def setOrganizationConformancePackName(value: OrganizationConformancePackName): Self = this.set("OrganizationConformancePackName", value.asInstanceOf[js.Any])
+    def setDeliveryS3Bucket(value: DeliveryS3Bucket): Self = StObject.set(x, "DeliveryS3Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConformancePackInputParametersVarargs(value: ConformancePackInputParameter*): Self = this.set("ConformancePackInputParameters", js.Array(value :_*))
+    def setDeliveryS3BucketUndefined: Self = StObject.set(x, "DeliveryS3Bucket", js.undefined)
     
     @scala.inline
-    def setConformancePackInputParameters(value: ConformancePackInputParameters): Self = this.set("ConformancePackInputParameters", value.asInstanceOf[js.Any])
+    def setDeliveryS3KeyPrefix(value: DeliveryS3KeyPrefix): Self = StObject.set(x, "DeliveryS3KeyPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConformancePackInputParameters: Self = this.set("ConformancePackInputParameters", js.undefined)
+    def setDeliveryS3KeyPrefixUndefined: Self = StObject.set(x, "DeliveryS3KeyPrefix", js.undefined)
     
     @scala.inline
-    def setDeliveryS3Bucket(value: DeliveryS3Bucket): Self = this.set("DeliveryS3Bucket", value.asInstanceOf[js.Any])
+    def setExcludedAccounts(value: ExcludedAccounts): Self = StObject.set(x, "ExcludedAccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeliveryS3Bucket: Self = this.set("DeliveryS3Bucket", js.undefined)
+    def setExcludedAccountsUndefined: Self = StObject.set(x, "ExcludedAccounts", js.undefined)
     
     @scala.inline
-    def setDeliveryS3KeyPrefix(value: DeliveryS3KeyPrefix): Self = this.set("DeliveryS3KeyPrefix", value.asInstanceOf[js.Any])
+    def setExcludedAccountsVarargs(value: AccountId*): Self = StObject.set(x, "ExcludedAccounts", js.Array(value :_*))
     
     @scala.inline
-    def deleteDeliveryS3KeyPrefix: Self = this.set("DeliveryS3KeyPrefix", js.undefined)
+    def setOrganizationConformancePackName(value: OrganizationConformancePackName): Self = StObject.set(x, "OrganizationConformancePackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedAccountsVarargs(value: AccountId*): Self = this.set("ExcludedAccounts", js.Array(value :_*))
+    def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "TemplateBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedAccounts(value: ExcludedAccounts): Self = this.set("ExcludedAccounts", value.asInstanceOf[js.Any])
+    def setTemplateBodyUndefined: Self = StObject.set(x, "TemplateBody", js.undefined)
     
     @scala.inline
-    def deleteExcludedAccounts: Self = this.set("ExcludedAccounts", js.undefined)
+    def setTemplateS3Uri(value: TemplateS3Uri): Self = StObject.set(x, "TemplateS3Uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateBody(value: TemplateBody): Self = this.set("TemplateBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateBody: Self = this.set("TemplateBody", js.undefined)
-    
-    @scala.inline
-    def setTemplateS3Uri(value: TemplateS3Uri): Self = this.set("TemplateS3Uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateS3Uri: Self = this.set("TemplateS3Uri", js.undefined)
+    def setTemplateS3UriUndefined: Self = StObject.set(x, "TemplateS3Uri", js.undefined)
   }
 }

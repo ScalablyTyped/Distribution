@@ -1,31 +1,28 @@
 package typings.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EChatRoomType extends js.Object
+sealed trait EChatRoomType extends StObject
 @JSImport("steam-client", "EChatRoomType")
 @js.native
-object EChatRoomType extends js.Object {
+object EChatRoomType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EChatRoomType with Double] = js.native
   
   @js.native
   sealed trait Friend extends EChatRoomType
-  /* 1 */ @js.native
-  object Friend extends TopLevel[Friend with Double]
+  /* 1 */ val Friend: typings.steamClient.mod.EChatRoomType.Friend with Double = js.native
   
   @js.native
   sealed trait Lobby extends EChatRoomType
-  /* 3 */ @js.native
-  object Lobby extends TopLevel[Lobby with Double]
+  /* 3 */ val Lobby: typings.steamClient.mod.EChatRoomType.Lobby with Double = js.native
   
   @js.native
   sealed trait MUC extends EChatRoomType
-  /* 2 */ @js.native
-  object MUC extends TopLevel[MUC with Double]
+  /* 2 */ val MUC: typings.steamClient.mod.EChatRoomType.MUC with Double = js.native
 }

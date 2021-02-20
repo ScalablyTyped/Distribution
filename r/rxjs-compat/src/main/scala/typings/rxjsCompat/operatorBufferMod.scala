@@ -1,13 +1,14 @@
 package typings.rxjsCompat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/buffer", JSImport.Namespace)
-@js.native
-object operatorBufferMod extends js.Object {
+object operatorBufferMod {
   
+  @JSImport("rxjs-compat/operator/buffer", "buffer")
+  @js.native
   def buffer[T](
     closingNotifier: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
   ): js.Any = js.native

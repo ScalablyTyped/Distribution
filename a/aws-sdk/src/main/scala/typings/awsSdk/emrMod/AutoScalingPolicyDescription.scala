@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoScalingPolicyDescription extends js.Object {
+trait AutoScalingPolicyDescription extends StObject {
   
   /**
     * The upper and lower EC2 instance limits for an automatic scaling policy. Automatic scaling activity will not cause an instance group to grow above or below these limits.
@@ -31,39 +32,27 @@ object AutoScalingPolicyDescription {
   }
   
   @scala.inline
-  implicit class AutoScalingPolicyDescriptionOps[Self <: AutoScalingPolicyDescription] (val x: Self) extends AnyVal {
+  implicit class AutoScalingPolicyDescriptionMutableBuilder[Self <: AutoScalingPolicyDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstraints(value: ScalingConstraints): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstraintsUndefined: Self = StObject.set(x, "Constraints", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRules(value: ScalingRuleList): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstraints(value: ScalingConstraints): Self = this.set("Constraints", value.asInstanceOf[js.Any])
+    def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
     @scala.inline
-    def deleteConstraints: Self = this.set("Constraints", js.undefined)
+    def setRulesVarargs(value: ScalingRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
     
     @scala.inline
-    def setRulesVarargs(value: ScalingRule*): Self = this.set("Rules", js.Array(value :_*))
+    def setStatus(value: AutoScalingPolicyStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRules(value: ScalingRuleList): Self = this.set("Rules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRules: Self = this.set("Rules", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: AutoScalingPolicyStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the properties of the footnote area of a page or a page style. */
 @js.native
-trait PageFootnoteInfo extends js.Object {
+trait PageFootnoteInfo extends StObject {
   
   /** contains the distance between the separator line and the footnote section. */
   var FootnoteBottomDistance: Double = js.native
@@ -50,39 +51,27 @@ object PageFootnoteInfo {
   }
   
   @scala.inline
-  implicit class PageFootnoteInfoOps[Self <: PageFootnoteInfo] (val x: Self) extends AnyVal {
+  implicit class PageFootnoteInfoMutableBuilder[Self <: PageFootnoteInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFootnoteBottomDistance(value: Double): Self = StObject.set(x, "FootnoteBottomDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFootnoteHeight(value: Double): Self = StObject.set(x, "FootnoteHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFootnoteSeparatorLineAdjust(value: HorizontalAdjust): Self = StObject.set(x, "FootnoteSeparatorLineAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFootnoteBottomDistance(value: Double): Self = this.set("FootnoteBottomDistance", value.asInstanceOf[js.Any])
+    def setFootnoteSeparatorLinePenWidth(value: Double): Self = StObject.set(x, "FootnoteSeparatorLinePenWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFootnoteHeight(value: Double): Self = this.set("FootnoteHeight", value.asInstanceOf[js.Any])
+    def setFootnoteSeparatorLineWidth(value: Double): Self = StObject.set(x, "FootnoteSeparatorLineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFootnoteSeparatorLineAdjust(value: HorizontalAdjust): Self = this.set("FootnoteSeparatorLineAdjust", value.asInstanceOf[js.Any])
+    def setFootnoteSeparatorLineWidthPercent(value: Double): Self = StObject.set(x, "FootnoteSeparatorLineWidthPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFootnoteSeparatorLinePenWidth(value: Double): Self = this.set("FootnoteSeparatorLinePenWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFootnoteSeparatorLineWidth(value: Double): Self = this.set("FootnoteSeparatorLineWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFootnoteSeparatorLineWidthPercent(value: Double): Self = this.set("FootnoteSeparatorLineWidthPercent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFootnoteTopDistance(value: Double): Self = this.set("FootnoteTopDistance", value.asInstanceOf[js.Any])
+    def setFootnoteTopDistance(value: Double): Self = StObject.set(x, "FootnoteTopDistance", value.asInstanceOf[js.Any])
   }
 }

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Graphics.Imaging
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BitmapAlphaMode extends js.Object
+sealed trait BitmapAlphaMode extends StObject
 /** Specifies the alpha mode of pixel data. */
 @JSGlobal("Windows.Graphics.Imaging.BitmapAlphaMode")
 @js.native
-object BitmapAlphaMode extends js.Object {
+object BitmapAlphaMode extends StObject {
   
   /** The alpha value is ignored. */
   @js.native

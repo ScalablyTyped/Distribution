@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.glue
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CrawlerSchemaChangePolicy extends js.Object {
+trait CrawlerSchemaChangePolicy extends StObject {
   
   /**
     * The deletion behavior when the crawler finds a deleted object. Valid values: `LOG`, `DELETE_FROM_DATABASE`, or `DEPRECATE_IN_DATABASE`. Defaults to `DEPRECATE_IN_DATABASE`.
@@ -26,30 +27,18 @@ object CrawlerSchemaChangePolicy {
   }
   
   @scala.inline
-  implicit class CrawlerSchemaChangePolicyOps[Self <: CrawlerSchemaChangePolicy] (val x: Self) extends AnyVal {
+  implicit class CrawlerSchemaChangePolicyMutableBuilder[Self <: CrawlerSchemaChangePolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleteBehavior(value: String): Self = StObject.set(x, "deleteBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteBehaviorUndefined: Self = StObject.set(x, "deleteBehavior", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdateBehavior(value: String): Self = StObject.set(x, "updateBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteBehavior(value: String): Self = this.set("deleteBehavior", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeleteBehavior: Self = this.set("deleteBehavior", js.undefined)
-    
-    @scala.inline
-    def setUpdateBehavior(value: String): Self = this.set("updateBehavior", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateBehavior: Self = this.set("updateBehavior", js.undefined)
+    def setUpdateBehaviorUndefined: Self = StObject.set(x, "updateBehavior", js.undefined)
   }
 }

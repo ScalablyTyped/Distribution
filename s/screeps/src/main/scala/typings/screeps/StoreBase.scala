@@ -1,11 +1,12 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StoreBase[POSSIBLE_RESOURCES /* <: ResourceConstant */, UNLIMITED_STORE /* <: Boolean */] extends js.Object {
+trait StoreBase[POSSIBLE_RESOURCES /* <: ResourceConstant */, UNLIMITED_STORE /* <: Boolean */] extends StObject {
   
   /**
     * Returns capacity of this store for the specified resource. For a general purpose store, it returns total capacity if `resource` is undefined.

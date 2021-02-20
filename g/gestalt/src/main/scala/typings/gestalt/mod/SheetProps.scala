@@ -5,12 +5,13 @@ import typings.gestalt.gestaltStrings.lg
 import typings.gestalt.gestaltStrings.md
 import typings.gestalt.gestaltStrings.sm
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SheetProps extends js.Object {
+trait SheetProps extends StObject {
   
   var accessibilityDismissButtonLabel: String = js.native
   
@@ -39,72 +40,60 @@ object SheetProps {
   }
   
   @scala.inline
-  implicit class SheetPropsOps[Self <: SheetProps] (val x: Self) extends AnyVal {
+  implicit class SheetPropsMutableBuilder[Self <: SheetProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibilityDismissButtonLabel(value: String): Self = StObject.set(x, "accessibilityDismissButtonLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibilitySheetLabel(value: String): Self = StObject.set(x, "accessibilitySheetLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildren(value: SheetNodeOrRenderProp): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityDismissButtonLabel(value: String): Self = this.set("accessibilityDismissButtonLabel", value.asInstanceOf[js.Any])
+    def setChildrenFunction1(value: /* prop */ OnDismissStart => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAccessibilitySheetLabel(value: String): Self = this.set("accessibilitySheetLabel", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setOnDismiss(value: () => Unit): Self = this.set("onDismiss", js.Any.fromFunction0(value))
+    def setCloseOnOutsideClick(value: Boolean): Self = StObject.set(x, "closeOnOutsideClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenFunction1(value: /* prop */ OnDismissStart => ReactNode): Self = this.set("children", js.Any.fromFunction1(value))
+    def setCloseOnOutsideClickUndefined: Self = StObject.set(x, "closeOnOutsideClick", js.undefined)
     
     @scala.inline
-    def setChildren(value: SheetNodeOrRenderProp): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setFooter(value: SheetNodeOrRenderProp): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setFooterFunction1(value: /* prop */ OnDismissStart => ReactNode): Self = StObject.set(x, "footer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCloseOnOutsideClick(value: Boolean): Self = this.set("closeOnOutsideClick", value.asInstanceOf[js.Any])
+    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
     @scala.inline
-    def deleteCloseOnOutsideClick: Self = this.set("closeOnOutsideClick", js.undefined)
+    def setHeading(value: String): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterFunction1(value: /* prop */ OnDismissStart => ReactNode): Self = this.set("footer", js.Any.fromFunction1(value))
+    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
     @scala.inline
-    def setFooter(value: SheetNodeOrRenderProp): Self = this.set("footer", value.asInstanceOf[js.Any])
+    def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteFooter: Self = this.set("footer", js.undefined)
+    def setSize(value: sm | md | lg): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeading(value: String): Self = this.set("heading", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteHeading: Self = this.set("heading", js.undefined)
+    def setSubHeading(value: SheetNodeOrRenderProp): Self = StObject.set(x, "subHeading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: sm | md | lg): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSubHeadingFunction1(value: /* prop */ OnDismissStart => ReactNode): Self = StObject.set(x, "subHeading", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setSubHeadingFunction1(value: /* prop */ OnDismissStart => ReactNode): Self = this.set("subHeading", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSubHeading(value: SheetNodeOrRenderProp): Self = this.set("subHeading", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubHeading: Self = this.set("subHeading", js.undefined)
+    def setSubHeadingUndefined: Self = StObject.set(x, "subHeading", js.undefined)
   }
 }

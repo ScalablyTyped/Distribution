@@ -1,12 +1,13 @@
 package typings.promiseFs.anon
 
 import typings.promiseFs.promiseFsBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `1` extends js.Object {
+trait `1` extends StObject {
   
   var encoding: js.UndefOr[String | Null] = js.native
   
@@ -21,30 +22,18 @@ object `1` {
   }
   
   @scala.inline
-  implicit class `1Ops`[Self <: `1`] (val x: Self) extends AnyVal {
+  implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncodingNull: Self = StObject.set(x, "encoding", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def setWithFileTypes(value: `true`): Self = this.set("withFileTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
-    
-    @scala.inline
-    def setEncodingNull: Self = this.set("encoding", null)
+    def setWithFileTypes(value: `true`): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
   }
 }

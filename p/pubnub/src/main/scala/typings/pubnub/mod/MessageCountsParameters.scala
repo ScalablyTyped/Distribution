@@ -1,11 +1,12 @@
 package typings.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageCountsParameters extends js.Object {
+trait MessageCountsParameters extends StObject {
   
   var channelTimetokens: js.Array[Double | String] = js.native
   
@@ -20,30 +21,18 @@ object MessageCountsParameters {
   }
   
   @scala.inline
-  implicit class MessageCountsParametersOps[Self <: MessageCountsParameters] (val x: Self) extends AnyVal {
+  implicit class MessageCountsParametersMutableBuilder[Self <: MessageCountsParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelTimetokens(value: js.Array[Double | String]): Self = StObject.set(x, "channelTimetokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelTimetokensVarargs(value: (Double | String)*): Self = StObject.set(x, "channelTimetokens", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelTimetokensVarargs(value: (Double | String)*): Self = this.set("channelTimetokens", js.Array(value :_*))
-    
-    @scala.inline
-    def setChannelTimetokens(value: js.Array[Double | String]): Self = this.set("channelTimetokens", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChannelsVarargs(value: String*): Self = this.set("channels", js.Array(value :_*))
-    
-    @scala.inline
-    def setChannels(value: js.Array[String]): Self = this.set("channels", value.asInstanceOf[js.Any])
+    def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
   }
 }

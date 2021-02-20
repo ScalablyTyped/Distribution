@@ -3,12 +3,13 @@ package typings.vscode.mod
 import typings.std.RegExp
 import typings.vscode.anon.AutoClosingPairs
 import typings.vscode.anon.Brackets
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LanguageConfiguration extends js.Object {
+trait LanguageConfiguration extends StObject {
   
   /**
     * **Deprecated** Do not use.
@@ -63,66 +64,54 @@ object LanguageConfiguration {
   }
   
   @scala.inline
-  implicit class LanguageConfigurationOps[Self <: LanguageConfiguration] (val x: Self) extends AnyVal {
+  implicit class LanguageConfigurationMutableBuilder[Self <: LanguageConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrackets(value: js.Array[CharacterPair]): Self = StObject.set(x, "brackets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBracketsUndefined: Self = StObject.set(x, "brackets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBracketsVarargs(value: CharacterPair*): Self = StObject.set(x, "brackets", js.Array(value :_*))
     
     @scala.inline
-    def set__characterPairSupport(value: AutoClosingPairs): Self = this.set("__characterPairSupport", value.asInstanceOf[js.Any])
+    def setComments(value: CommentRule): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete__characterPairSupport: Self = this.set("__characterPairSupport", js.undefined)
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def set__electricCharacterSupport(value: Brackets): Self = this.set("__electricCharacterSupport", value.asInstanceOf[js.Any])
+    def setIndentationRules(value: IndentationRule): Self = StObject.set(x, "indentationRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete__electricCharacterSupport: Self = this.set("__electricCharacterSupport", js.undefined)
+    def setIndentationRulesUndefined: Self = StObject.set(x, "indentationRules", js.undefined)
     
     @scala.inline
-    def setBracketsVarargs(value: CharacterPair*): Self = this.set("brackets", js.Array(value :_*))
+    def setOnEnterRules(value: js.Array[OnEnterRule]): Self = StObject.set(x, "onEnterRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrackets(value: js.Array[CharacterPair]): Self = this.set("brackets", value.asInstanceOf[js.Any])
+    def setOnEnterRulesUndefined: Self = StObject.set(x, "onEnterRules", js.undefined)
     
     @scala.inline
-    def deleteBrackets: Self = this.set("brackets", js.undefined)
+    def setOnEnterRulesVarargs(value: OnEnterRule*): Self = StObject.set(x, "onEnterRules", js.Array(value :_*))
     
     @scala.inline
-    def setComments(value: CommentRule): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setWordPattern(value: RegExp): Self = StObject.set(x, "wordPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setWordPatternUndefined: Self = StObject.set(x, "wordPattern", js.undefined)
     
     @scala.inline
-    def setIndentationRules(value: IndentationRule): Self = this.set("indentationRules", value.asInstanceOf[js.Any])
+    def set__characterPairSupport(value: AutoClosingPairs): Self = StObject.set(x, "__characterPairSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndentationRules: Self = this.set("indentationRules", js.undefined)
+    def set__characterPairSupportUndefined: Self = StObject.set(x, "__characterPairSupport", js.undefined)
     
     @scala.inline
-    def setOnEnterRulesVarargs(value: OnEnterRule*): Self = this.set("onEnterRules", js.Array(value :_*))
+    def set__electricCharacterSupport(value: Brackets): Self = StObject.set(x, "__electricCharacterSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnEnterRules(value: js.Array[OnEnterRule]): Self = this.set("onEnterRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnEnterRules: Self = this.set("onEnterRules", js.undefined)
-    
-    @scala.inline
-    def setWordPattern(value: RegExp): Self = this.set("wordPattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWordPattern: Self = this.set("wordPattern", js.undefined)
+    def set__electricCharacterSupportUndefined: Self = StObject.set(x, "__electricCharacterSupport", js.undefined)
   }
 }

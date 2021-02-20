@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkInputSettings extends js.Object {
+trait NetworkInputSettings extends StObject {
   
   /**
     * Specifies HLS input settings when the uri is for a HLS manifest.
@@ -26,30 +27,18 @@ object NetworkInputSettings {
   }
   
   @scala.inline
-  implicit class NetworkInputSettingsOps[Self <: NetworkInputSettings] (val x: Self) extends AnyVal {
+  implicit class NetworkInputSettingsMutableBuilder[Self <: NetworkInputSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHlsInputSettings(value: HlsInputSettings): Self = StObject.set(x, "HlsInputSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHlsInputSettingsUndefined: Self = StObject.set(x, "HlsInputSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServerValidation(value: NetworkInputServerValidation): Self = StObject.set(x, "ServerValidation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHlsInputSettings(value: HlsInputSettings): Self = this.set("HlsInputSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHlsInputSettings: Self = this.set("HlsInputSettings", js.undefined)
-    
-    @scala.inline
-    def setServerValidation(value: NetworkInputServerValidation): Self = this.set("ServerValidation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerValidation: Self = this.set("ServerValidation", js.undefined)
+    def setServerValidationUndefined: Self = StObject.set(x, "ServerValidation", js.undefined)
   }
 }

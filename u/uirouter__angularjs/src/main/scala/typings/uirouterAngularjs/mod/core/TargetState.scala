@@ -3,6 +3,7 @@ package typings.uirouterAngularjs.mod.core
 import typings.uirouterCore.paramsInterfaceMod.RawParams
 import typings.uirouterCore.stateInterfaceMod.StateOrName
 import typings.uirouterCore.transitionInterfaceMod.TransitionOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,10 +46,10 @@ class TargetState protected ()
   ) = this()
 }
 /* static members */
-@JSImport("@uirouter/angularjs", "core.TargetState")
-@js.native
-object TargetState extends js.Object {
+object TargetState {
   
   /** Returns true if the object has a state property that might be a state or state name */
+  @JSImport("@uirouter/angularjs", "core.TargetState.isDef")
+  @js.native
   def isDef(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.TargetStateDef */ Boolean = js.native
 }

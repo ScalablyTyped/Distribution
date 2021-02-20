@@ -1,12 +1,13 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Count
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReposGetViewsResponseData extends js.Object {
+trait ReposGetViewsResponseData extends StObject {
   
   var count: Double = js.native
   
@@ -23,30 +24,18 @@ object ReposGetViewsResponseData {
   }
   
   @scala.inline
-  implicit class ReposGetViewsResponseDataOps[Self <: ReposGetViewsResponseData] (val x: Self) extends AnyVal {
+  implicit class ReposGetViewsResponseDataMutableBuilder[Self <: ReposGetViewsResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUniques(value: Double): Self = StObject.set(x, "uniques", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setViews(value: js.Array[Count]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUniques(value: Double): Self = this.set("uniques", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewsVarargs(value: Count*): Self = this.set("views", js.Array(value :_*))
-    
-    @scala.inline
-    def setViews(value: js.Array[Count]): Self = this.set("views", value.asInstanceOf[js.Any])
+    def setViewsVarargs(value: Count*): Self = StObject.set(x, "views", js.Array(value :_*))
   }
 }

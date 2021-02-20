@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationFilter extends js.Object {
+trait LocationFilter extends StObject {
   
   /** Optional. The address name, such as "Mountain View" or "Bay Area". */
   var address: js.UndefOr[String] = js.native
@@ -44,48 +45,36 @@ object LocationFilter {
   }
   
   @scala.inline
-  implicit class LocationFilterOps[Self <: LocationFilter] (val x: Self) extends AnyVal {
+  implicit class LocationFilterMutableBuilder[Self <: LocationFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistanceInMiles(value: Double): Self = StObject.set(x, "distanceInMiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setDistanceInMilesUndefined: Self = StObject.set(x, "distanceInMiles", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceInMiles(value: Double): Self = this.set("distanceInMiles", value.asInstanceOf[js.Any])
+    def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
     
     @scala.inline
-    def deleteDistanceInMiles: Self = this.set("distanceInMiles", js.undefined)
+    def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatLng(value: LatLng): Self = this.set("latLng", value.asInstanceOf[js.Any])
+    def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
     
     @scala.inline
-    def deleteLatLng: Self = this.set("latLng", js.undefined)
+    def setTelecommutePreference(value: String): Self = StObject.set(x, "telecommutePreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegionCode(value: String): Self = this.set("regionCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegionCode: Self = this.set("regionCode", js.undefined)
-    
-    @scala.inline
-    def setTelecommutePreference(value: String): Self = this.set("telecommutePreference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTelecommutePreference: Self = this.set("telecommutePreference", js.undefined)
+    def setTelecommutePreferenceUndefined: Self = StObject.set(x, "telecommutePreference", js.undefined)
   }
 }

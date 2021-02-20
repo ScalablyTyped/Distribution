@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioSelector extends js.Object {
+trait AudioSelector extends StObject {
   
   /**
     * Selects a specific language code from within an audio source, using the ISO 639-2 or ISO 639-3 three-letter language code
@@ -68,86 +69,74 @@ object AudioSelector {
   }
   
   @scala.inline
-  implicit class AudioSelectorOps[Self <: AudioSelector] (val x: Self) extends AnyVal {
+  implicit class AudioSelectorMutableBuilder[Self <: AudioSelector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomLanguageCode(value: stringMin3Max3PatternAZaZ3): Self = StObject.set(x, "CustomLanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomLanguageCodeUndefined: Self = StObject.set(x, "CustomLanguageCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultSelection(value: AudioDefaultSelection): Self = StObject.set(x, "DefaultSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomLanguageCode(value: stringMin3Max3PatternAZaZ3): Self = this.set("CustomLanguageCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomLanguageCode: Self = this.set("CustomLanguageCode", js.undefined)
-    
-    @scala.inline
-    def setDefaultSelection(value: AudioDefaultSelection): Self = this.set("DefaultSelection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultSelection: Self = this.set("DefaultSelection", js.undefined)
+    def setDefaultSelectionUndefined: Self = StObject.set(x, "DefaultSelection", js.undefined)
     
     @scala.inline
     def setExternalAudioFileInput(
       value: stringPatternS3MM2PPWWEEBBMMMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMAAAACCAAIIFFFFMMPP2AACC3EECC3DDTTSSEEHttpsMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVV
-    ): Self = this.set("ExternalAudioFileInput", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "ExternalAudioFileInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternalAudioFileInput: Self = this.set("ExternalAudioFileInput", js.undefined)
+    def setExternalAudioFileInputUndefined: Self = StObject.set(x, "ExternalAudioFileInput", js.undefined)
     
     @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
     @scala.inline
-    def setOffset(value: integerMinNegative2147483648Max2147483647): Self = this.set("Offset", value.asInstanceOf[js.Any])
+    def setOffset(value: integerMinNegative2147483648Max2147483647): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffset: Self = this.set("Offset", js.undefined)
+    def setOffsetUndefined: Self = StObject.set(x, "Offset", js.undefined)
     
     @scala.inline
-    def setPidsVarargs(value: integerMin1Max2147483647*): Self = this.set("Pids", js.Array(value :_*))
+    def setPids(value: listOfIntegerMin1Max2147483647): Self = StObject.set(x, "Pids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPids(value: listOfIntegerMin1Max2147483647): Self = this.set("Pids", value.asInstanceOf[js.Any])
+    def setPidsUndefined: Self = StObject.set(x, "Pids", js.undefined)
     
     @scala.inline
-    def deletePids: Self = this.set("Pids", js.undefined)
+    def setPidsVarargs(value: integerMin1Max2147483647*): Self = StObject.set(x, "Pids", js.Array(value :_*))
     
     @scala.inline
-    def setProgramSelection(value: integerMin0Max8): Self = this.set("ProgramSelection", value.asInstanceOf[js.Any])
+    def setProgramSelection(value: integerMin0Max8): Self = StObject.set(x, "ProgramSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProgramSelection: Self = this.set("ProgramSelection", js.undefined)
+    def setProgramSelectionUndefined: Self = StObject.set(x, "ProgramSelection", js.undefined)
     
     @scala.inline
-    def setRemixSettings(value: RemixSettings): Self = this.set("RemixSettings", value.asInstanceOf[js.Any])
+    def setRemixSettings(value: RemixSettings): Self = StObject.set(x, "RemixSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRemixSettings: Self = this.set("RemixSettings", js.undefined)
+    def setRemixSettingsUndefined: Self = StObject.set(x, "RemixSettings", js.undefined)
     
     @scala.inline
-    def setSelectorType(value: AudioSelectorType): Self = this.set("SelectorType", value.asInstanceOf[js.Any])
+    def setSelectorType(value: AudioSelectorType): Self = StObject.set(x, "SelectorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectorType: Self = this.set("SelectorType", js.undefined)
+    def setSelectorTypeUndefined: Self = StObject.set(x, "SelectorType", js.undefined)
     
     @scala.inline
-    def setTracksVarargs(value: integerMin1Max2147483647*): Self = this.set("Tracks", js.Array(value :_*))
+    def setTracks(value: listOfIntegerMin1Max2147483647): Self = StObject.set(x, "Tracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTracks(value: listOfIntegerMin1Max2147483647): Self = this.set("Tracks", value.asInstanceOf[js.Any])
+    def setTracksUndefined: Self = StObject.set(x, "Tracks", js.undefined)
     
     @scala.inline
-    def deleteTracks: Self = this.set("Tracks", js.undefined)
+    def setTracksVarargs(value: integerMin1Max2147483647*): Self = StObject.set(x, "Tracks", js.Array(value :_*))
   }
 }

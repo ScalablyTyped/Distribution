@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImportWorkspaceImageRequest extends js.Object {
+trait ImportWorkspaceImageRequest extends StObject {
   
   /**
     * If specified, the version of Microsoft Office to subscribe to. Valid only for Windows 10 BYOL images. For more information about subscribing to Office for BYOL images, see  Bring Your Own Windows Desktop Licenses.  Although this parameter is an array, only one item is allowed at this time. 
@@ -51,48 +52,36 @@ object ImportWorkspaceImageRequest {
   }
   
   @scala.inline
-  implicit class ImportWorkspaceImageRequestOps[Self <: ImportWorkspaceImageRequest] (val x: Self) extends AnyVal {
+  implicit class ImportWorkspaceImageRequestMutableBuilder[Self <: ImportWorkspaceImageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplications(value: ApplicationList): Self = StObject.set(x, "Applications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationsUndefined: Self = StObject.set(x, "Applications", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationsVarargs(value: Application*): Self = StObject.set(x, "Applications", js.Array(value :_*))
     
     @scala.inline
-    def setEc2ImageId(value: Ec2ImageId): Self = this.set("Ec2ImageId", value.asInstanceOf[js.Any])
+    def setEc2ImageId(value: Ec2ImageId): Self = StObject.set(x, "Ec2ImageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageDescription(value: WorkspaceImageDescription): Self = this.set("ImageDescription", value.asInstanceOf[js.Any])
+    def setImageDescription(value: WorkspaceImageDescription): Self = StObject.set(x, "ImageDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageName(value: WorkspaceImageName): Self = this.set("ImageName", value.asInstanceOf[js.Any])
+    def setImageName(value: WorkspaceImageName): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIngestionProcess(value: WorkspaceImageIngestionProcess): Self = this.set("IngestionProcess", value.asInstanceOf[js.Any])
+    def setIngestionProcess(value: WorkspaceImageIngestionProcess): Self = StObject.set(x, "IngestionProcess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationsVarargs(value: Application*): Self = this.set("Applications", js.Array(value :_*))
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplications(value: ApplicationList): Self = this.set("Applications", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteApplications: Self = this.set("Applications", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

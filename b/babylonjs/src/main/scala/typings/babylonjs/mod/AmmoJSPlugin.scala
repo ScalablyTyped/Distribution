@@ -1,5 +1,6 @@
 package typings.babylonjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,13 +36,17 @@ class AmmoJSPlugin ()
   def this(_useDeltaForWorldStep: Boolean, ammoInjection: js.Any, overlappingPairCache: js.Any) = this()
 }
 /* static members */
-@JSImport("babylonjs", "AmmoJSPlugin")
-@js.native
-object AmmoJSPlugin extends js.Object {
+object AmmoJSPlugin {
   
+  @JSImport("babylonjs", "AmmoJSPlugin.DISABLE_COLLISION_FLAG")
+  @js.native
   val DISABLE_COLLISION_FLAG: js.Any = js.native
   
+  @JSImport("babylonjs", "AmmoJSPlugin.DISABLE_DEACTIVATION_FLAG")
+  @js.native
   val DISABLE_DEACTIVATION_FLAG: js.Any = js.native
   
+  @JSImport("babylonjs", "AmmoJSPlugin.KINEMATIC_FLAG")
+  @js.native
   val KINEMATIC_FLAG: js.Any = js.native
 }

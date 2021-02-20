@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.appmesh
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualNodeSpecListenerTimeoutTcpIdle extends js.Object {
+trait VirtualNodeSpecListenerTimeoutTcpIdle extends StObject {
   
   /**
     * The unit of time. Valid values: `ms`, `s`.
@@ -26,24 +27,12 @@ object VirtualNodeSpecListenerTimeoutTcpIdle {
   }
   
   @scala.inline
-  implicit class VirtualNodeSpecListenerTimeoutTcpIdleOps[Self <: VirtualNodeSpecListenerTimeoutTcpIdle] (val x: Self) extends AnyVal {
+  implicit class VirtualNodeSpecListenerTimeoutTcpIdleMutableBuilder[Self <: VirtualNodeSpecListenerTimeoutTcpIdle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

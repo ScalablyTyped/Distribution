@@ -1,12 +1,13 @@
 package typings.jqueryGridster
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Gridster extends js.Object {
+trait Gridster extends StObject {
   
   /**
     * Create a new widget with the given html and add it to the grid.

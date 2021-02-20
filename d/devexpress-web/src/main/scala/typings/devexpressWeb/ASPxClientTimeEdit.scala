@@ -1,6 +1,7 @@
 package typings.devexpressWeb
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,27 +90,15 @@ object ASPxClientTimeEdit {
   }
   
   @scala.inline
-  implicit class ASPxClientTimeEditOps[Self <: ASPxClientTimeEdit] (val x: Self) extends AnyVal {
+  implicit class ASPxClientTimeEditMutableBuilder[Self <: ASPxClientTimeEdit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTimeEdit]]): Self = StObject.set(x, "DateChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDate(value: () => Date): Self = StObject.set(x, "GetDate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDateChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTimeEdit]]): Self = this.set("DateChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetDate(value: () => Date): Self = this.set("GetDate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDate(value: Date => Unit): Self = this.set("SetDate", js.Any.fromFunction1(value))
+    def setSetDate(value: Date => Unit): Self = StObject.set(x, "SetDate", js.Any.fromFunction1(value))
   }
 }

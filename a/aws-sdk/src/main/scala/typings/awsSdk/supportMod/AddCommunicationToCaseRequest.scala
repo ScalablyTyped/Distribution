@@ -1,11 +1,12 @@
 package typings.awsSdk.supportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddCommunicationToCaseRequest extends js.Object {
+trait AddCommunicationToCaseRequest extends StObject {
   
   /**
     * The ID of a set of one or more attachments for the communication to add to the case. Create the set by calling AddAttachmentsToSet 
@@ -36,42 +37,30 @@ object AddCommunicationToCaseRequest {
   }
   
   @scala.inline
-  implicit class AddCommunicationToCaseRequestOps[Self <: AddCommunicationToCaseRequest] (val x: Self) extends AnyVal {
+  implicit class AddCommunicationToCaseRequestMutableBuilder[Self <: AddCommunicationToCaseRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachmentSetId(value: AttachmentSetId): Self = StObject.set(x, "attachmentSetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentSetIdUndefined: Self = StObject.set(x, "attachmentSetId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaseId(value: CaseId): Self = StObject.set(x, "caseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommunicationBody(value: CommunicationBody): Self = this.set("communicationBody", value.asInstanceOf[js.Any])
+    def setCaseIdUndefined: Self = StObject.set(x, "caseId", js.undefined)
     
     @scala.inline
-    def setAttachmentSetId(value: AttachmentSetId): Self = this.set("attachmentSetId", value.asInstanceOf[js.Any])
+    def setCcEmailAddresses(value: CcEmailAddressList): Self = StObject.set(x, "ccEmailAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttachmentSetId: Self = this.set("attachmentSetId", js.undefined)
+    def setCcEmailAddressesUndefined: Self = StObject.set(x, "ccEmailAddresses", js.undefined)
     
     @scala.inline
-    def setCaseId(value: CaseId): Self = this.set("caseId", value.asInstanceOf[js.Any])
+    def setCcEmailAddressesVarargs(value: CcEmailAddress*): Self = StObject.set(x, "ccEmailAddresses", js.Array(value :_*))
     
     @scala.inline
-    def deleteCaseId: Self = this.set("caseId", js.undefined)
-    
-    @scala.inline
-    def setCcEmailAddressesVarargs(value: CcEmailAddress*): Self = this.set("ccEmailAddresses", js.Array(value :_*))
-    
-    @scala.inline
-    def setCcEmailAddresses(value: CcEmailAddressList): Self = this.set("ccEmailAddresses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCcEmailAddresses: Self = this.set("ccEmailAddresses", js.undefined)
+    def setCommunicationBody(value: CommunicationBody): Self = StObject.set(x, "communicationBody", value.asInstanceOf[js.Any])
   }
 }

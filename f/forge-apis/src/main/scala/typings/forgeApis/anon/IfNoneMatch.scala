@@ -1,11 +1,12 @@
 package typings.forgeApis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IfNoneMatch extends js.Object {
+trait IfNoneMatch extends StObject {
   
   var acceptEncoding: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object IfNoneMatch {
   }
   
   @scala.inline
-  implicit class IfNoneMatchOps[Self <: IfNoneMatch] (val x: Self) extends AnyVal {
+  implicit class IfNoneMatchMutableBuilder[Self <: IfNoneMatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptEncoding(value: String): Self = StObject.set(x, "acceptEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptEncodingUndefined: Self = StObject.set(x, "acceptEncoding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIfModifiedSince(value: String): Self = StObject.set(x, "ifModifiedSince", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptEncoding(value: String): Self = this.set("acceptEncoding", value.asInstanceOf[js.Any])
+    def setIfModifiedSinceUndefined: Self = StObject.set(x, "ifModifiedSince", js.undefined)
     
     @scala.inline
-    def deleteAcceptEncoding: Self = this.set("acceptEncoding", js.undefined)
+    def setIfNoneMatch(value: String): Self = StObject.set(x, "ifNoneMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIfModifiedSince(value: String): Self = this.set("ifModifiedSince", value.asInstanceOf[js.Any])
+    def setIfNoneMatchUndefined: Self = StObject.set(x, "ifNoneMatch", js.undefined)
     
     @scala.inline
-    def deleteIfModifiedSince: Self = this.set("ifModifiedSince", js.undefined)
+    def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIfNoneMatch(value: String): Self = this.set("ifNoneMatch", value.asInstanceOf[js.Any])
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def deleteIfNoneMatch: Self = this.set("ifNoneMatch", js.undefined)
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: String): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
-    
-    @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
   }
 }

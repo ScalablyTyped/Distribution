@@ -1,22 +1,26 @@
 package typings.instagramPrivateApi
 
 import typings.instagramPrivateApi.anon.Broadcastid
+import typings.instagramPrivateApi.clientMod.IgApiClient
+import typings.instagramPrivateApi.entityMod.Entity
 import typings.instagramPrivateApi.liveObsSettingsMod.LiveRtmpSettings
-import typings.instagramPrivateApi.repositoryMod.Repository
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/entities/live.entity", JSImport.Namespace)
-@js.native
-object liveEntityMod extends js.Object {
+object liveEntityMod {
   
+  @JSImport("instagram-private-api/dist/entities/live.entity", "LiveEntity")
   @js.native
-  class LiveEntity () extends Repository
+  class LiveEntity protected () extends Entity {
+    def this(client: IgApiClient) = this()
+  }
   /* static members */
-  @js.native
-  object LiveEntity extends js.Object {
+  object LiveEntity {
     
+    @JSImport("instagram-private-api/dist/entities/live.entity", "LiveEntity.getUrlAndKey")
+    @js.native
     def getUrlAndKey(info: Broadcastid): LiveRtmpSettings = js.native
   }
 }

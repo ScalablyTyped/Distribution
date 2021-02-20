@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.timelineFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimelineFeedResponseFeedItemsItem extends js.Object {
+trait TimelineFeedResponseFeedItemsItem extends StObject {
   
   var media_or_ad: TimelineFeedResponseMediaOrAd = js.native
   
@@ -20,27 +21,15 @@ object TimelineFeedResponseFeedItemsItem {
   }
   
   @scala.inline
-  implicit class TimelineFeedResponseFeedItemsItemOps[Self <: TimelineFeedResponseFeedItemsItem] (val x: Self) extends AnyVal {
+  implicit class TimelineFeedResponseFeedItemsItemMutableBuilder[Self <: TimelineFeedResponseFeedItemsItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMedia_or_ad(value: TimelineFeedResponseMediaOrAd): Self = StObject.set(x, "media_or_ad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStories_netego(value: TimelineFeedResponseStoriesNetego): Self = StObject.set(x, "stories_netego", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMedia_or_ad(value: TimelineFeedResponseMediaOrAd): Self = this.set("media_or_ad", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStories_netego(value: TimelineFeedResponseStoriesNetego): Self = this.set("stories_netego", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStories_netego: Self = this.set("stories_netego", js.undefined)
+    def setStories_netegoUndefined: Self = StObject.set(x, "stories_netego", js.undefined)
   }
 }

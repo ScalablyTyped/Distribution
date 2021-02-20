@@ -1,5 +1,6 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,45 +25,33 @@ object ClusterStatsParams {
   }
   
   @scala.inline
-  implicit class ClusterStatsParamsOps[Self <: ClusterStatsParams] (val x: Self) extends AnyVal {
+  implicit class ClusterStatsParamsMutableBuilder[Self <: ClusterStatsParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlatSettings(value: Boolean): Self = StObject.set(x, "flatSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlatSettingsUndefined: Self = StObject.set(x, "flatSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHuman(value: Boolean): Self = StObject.set(x, "human", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatSettings(value: Boolean): Self = this.set("flatSettings", value.asInstanceOf[js.Any])
+    def setHumanUndefined: Self = StObject.set(x, "human", js.undefined)
     
     @scala.inline
-    def deleteFlatSettings: Self = this.set("flatSettings", js.undefined)
+    def setNodeId(value: NameList): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHuman(value: Boolean): Self = this.set("human", value.asInstanceOf[js.Any])
+    def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
     
     @scala.inline
-    def deleteHuman: Self = this.set("human", js.undefined)
+    def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value :_*))
     
     @scala.inline
-    def setNodeIdVarargs(value: String*): Self = this.set("nodeId", js.Array(value :_*))
+    def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeId(value: NameList): Self = this.set("nodeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeId: Self = this.set("nodeId", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: TimeSpan): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

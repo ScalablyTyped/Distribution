@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProductCode extends js.Object {
+trait ProductCode extends StObject {
   
   /**
     * The product code information.
@@ -26,30 +27,18 @@ object ProductCode {
   }
   
   @scala.inline
-  implicit class ProductCodeOps[Self <: ProductCode] (val x: Self) extends AnyVal {
+  implicit class ProductCodeMutableBuilder[Self <: ProductCode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProductType(value: String): Self = StObject.set(x, "ProductType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("Code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCode: Self = this.set("Code", js.undefined)
-    
-    @scala.inline
-    def setProductType(value: String): Self = this.set("ProductType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductType: Self = this.set("ProductType", js.undefined)
+    def setProductTypeUndefined: Self = StObject.set(x, "ProductType", js.undefined)
   }
 }

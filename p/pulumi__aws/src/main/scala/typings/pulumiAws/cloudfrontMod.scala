@@ -12,17 +12,14 @@ import typings.pulumiPulumi.invokeMod.InvokeOptions
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/cloudfront", JSImport.Namespace)
-@js.native
-object cloudfrontMod extends js.Object {
+object cloudfrontMod {
   
-  def getDistribution(args: GetDistributionArgs): js.Promise[GetDistributionResult] = js.native
-  def getDistribution(args: GetDistributionArgs, opts: InvokeOptions): js.Promise[GetDistributionResult] = js.native
-  
+  @JSImport("@pulumi/aws/cloudfront", "Distribution")
   @js.native
   class Distribution protected ()
     extends typings.pulumiAws.distributionMod.Distribution {
@@ -37,8 +34,7 @@ object cloudfrontMod extends js.Object {
     def this(name: String, args: DistributionArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Distribution extends js.Object {
+  object Distribution {
     
     /**
       * Get an existing Distribution resource's state with the given name, ID, and optional extra
@@ -49,18 +45,29 @@ object cloudfrontMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/cloudfront", "Distribution.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.distributionMod.Distribution = js.native
+    @JSImport("@pulumi/aws/cloudfront", "Distribution.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.distributionMod.Distribution = js.native
+    @JSImport("@pulumi/aws/cloudfront", "Distribution.get")
+    @js.native
     def get(name: String, id: Input[ID], state: DistributionState): typings.pulumiAws.distributionMod.Distribution = js.native
+    @JSImport("@pulumi/aws/cloudfront", "Distribution.get")
+    @js.native
     def get(name: String, id: Input[ID], state: DistributionState, opts: CustomResourceOptions): typings.pulumiAws.distributionMod.Distribution = js.native
     
     /**
       * Returns true if the given object is an instance of Distribution.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/cloudfront", "Distribution.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudfront/distribution.Distribution */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/cloudfront", "OriginAccessIdentity")
   @js.native
   class OriginAccessIdentity protected ()
     extends typings.pulumiAws.originAccessIdentityMod.OriginAccessIdentity {
@@ -77,8 +84,7 @@ object cloudfrontMod extends js.Object {
     def this(name: String, args: OriginAccessIdentityArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object OriginAccessIdentity extends js.Object {
+  object OriginAccessIdentity {
     
     /**
       * Get an existing OriginAccessIdentity resource's state with the given name, ID, and optional extra
@@ -89,18 +95,29 @@ object cloudfrontMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/cloudfront", "OriginAccessIdentity.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.originAccessIdentityMod.OriginAccessIdentity = js.native
+    @JSImport("@pulumi/aws/cloudfront", "OriginAccessIdentity.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.originAccessIdentityMod.OriginAccessIdentity = js.native
+    @JSImport("@pulumi/aws/cloudfront", "OriginAccessIdentity.get")
+    @js.native
     def get(name: String, id: Input[ID], state: OriginAccessIdentityState): typings.pulumiAws.originAccessIdentityMod.OriginAccessIdentity = js.native
+    @JSImport("@pulumi/aws/cloudfront", "OriginAccessIdentity.get")
+    @js.native
     def get(name: String, id: Input[ID], state: OriginAccessIdentityState, opts: CustomResourceOptions): typings.pulumiAws.originAccessIdentityMod.OriginAccessIdentity = js.native
     
     /**
       * Returns true if the given object is an instance of OriginAccessIdentity.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/cloudfront", "OriginAccessIdentity.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudfront/originAccessIdentity.OriginAccessIdentity */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/cloudfront", "PublicKey")
   @js.native
   class PublicKey protected ()
     extends typings.pulumiAws.publicKeyMod.PublicKey {
@@ -115,8 +132,7 @@ object cloudfrontMod extends js.Object {
     def this(name: String, args: PublicKeyArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object PublicKey extends js.Object {
+  object PublicKey {
     
     /**
       * Get an existing PublicKey resource's state with the given name, ID, and optional extra
@@ -127,15 +143,32 @@ object cloudfrontMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/cloudfront", "PublicKey.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.publicKeyMod.PublicKey = js.native
+    @JSImport("@pulumi/aws/cloudfront", "PublicKey.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.publicKeyMod.PublicKey = js.native
+    @JSImport("@pulumi/aws/cloudfront", "PublicKey.get")
+    @js.native
     def get(name: String, id: Input[ID], state: PublicKeyState): typings.pulumiAws.publicKeyMod.PublicKey = js.native
+    @JSImport("@pulumi/aws/cloudfront", "PublicKey.get")
+    @js.native
     def get(name: String, id: Input[ID], state: PublicKeyState, opts: CustomResourceOptions): typings.pulumiAws.publicKeyMod.PublicKey = js.native
     
     /**
       * Returns true if the given object is an instance of PublicKey.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/cloudfront", "PublicKey.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudfront/publicKey.PublicKey */ Boolean = js.native
   }
+  
+  @JSImport("@pulumi/aws/cloudfront", "getDistribution")
+  @js.native
+  def getDistribution(args: GetDistributionArgs): js.Promise[GetDistributionResult] = js.native
+  @JSImport("@pulumi/aws/cloudfront", "getDistribution")
+  @js.native
+  def getDistribution(args: GetDistributionArgs, opts: InvokeOptions): js.Promise[GetDistributionResult] = js.native
 }

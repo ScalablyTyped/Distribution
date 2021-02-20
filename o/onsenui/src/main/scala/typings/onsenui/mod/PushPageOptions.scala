@@ -1,11 +1,12 @@
 package typings.onsenui.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PushPageOptions extends js.Object {
+trait PushPageOptions extends StObject {
   
   var animation: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object PushPageOptions {
   }
   
   @scala.inline
-  implicit class PushPageOptionsOps[Self <: PushPageOptions] (val x: Self) extends AnyVal {
+  implicit class PushPageOptionsMutableBuilder[Self <: PushPageOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationOptions(value: js.Object): Self = StObject.set(x, "animationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimationOptionsUndefined: Self = StObject.set(x, "animationOptions", js.undefined)
     
     @scala.inline
-    def setAnimation(value: String): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationOptions(value: js.Object): Self = this.set("animationOptions", value.asInstanceOf[js.Any])
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def deleteAnimationOptions: Self = this.set("animationOptions", js.undefined)
+    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: js.Function): Self = this.set("callback", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setPage(value: js.Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Object): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setPageHTML(value: String): Self = StObject.set(x, "pageHTML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setPageHTMLUndefined: Self = StObject.set(x, "pageHTML", js.undefined)
     
     @scala.inline
-    def setPage(value: js.Any): Self = this.set("page", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
-    
-    @scala.inline
-    def setPageHTML(value: String): Self = this.set("pageHTML", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageHTML: Self = this.set("pageHTML", js.undefined)
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
   }
 }

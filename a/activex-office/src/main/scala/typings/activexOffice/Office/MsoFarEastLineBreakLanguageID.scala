@@ -4,6 +4,7 @@ import typings.activexOffice.activexOfficeNumbers.`1028`
 import typings.activexOffice.activexOfficeNumbers.`1041`
 import typings.activexOffice.activexOfficeNumbers.`1042`
 import typings.activexOffice.activexOfficeNumbers.`2052`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexOffice.activexOfficeNumbers.`2052`
   - typings.activexOffice.activexOfficeNumbers.`1028`
 */
-trait MsoFarEastLineBreakLanguageID extends js.Object
+trait MsoFarEastLineBreakLanguageID extends StObject
 object MsoFarEastLineBreakLanguageID {
   
   @scala.inline

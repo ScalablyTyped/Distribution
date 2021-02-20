@@ -27,77 +27,127 @@ import typings.maximMazurokGapiClientContent.gapi.client.content.Settlementtrans
 import typings.maximMazurokGapiClientContent.gapi.client.content.ShippingsettingsResource
 import typings.maximMazurokGapiClientContent.maximMazurokGapiClientContentStrings.content
 import typings.maximMazurokGapiClientContent.maximMazurokGapiClientContentStrings.v2Dot1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
-      /** Load Content API for Shopping v2.1 */
-      def load(name: content, version: v2Dot1): js.Thenable[Unit] = js.native
-      def load(name: content, version: v2Dot1, callback: js.Function0[_]): Unit = js.native
-      
-      @js.native
-      object content extends js.Object {
+      object content {
         
+        @JSGlobal("gapi.client.content.accounts")
+        @js.native
         val accounts: AccountsResource = js.native
         
+        @JSGlobal("gapi.client.content.accountstatuses")
+        @js.native
         val accountstatuses: AccountstatusesResource = js.native
         
+        @JSGlobal("gapi.client.content.accounttax")
+        @js.native
         val accounttax: AccounttaxResource = js.native
         
+        @JSGlobal("gapi.client.content.csses")
+        @js.native
         val csses: CssesResource = js.native
         
+        @JSGlobal("gapi.client.content.datafeeds")
+        @js.native
         val datafeeds: DatafeedsResource = js.native
         
+        @JSGlobal("gapi.client.content.datafeedstatuses")
+        @js.native
         val datafeedstatuses: DatafeedstatusesResource = js.native
         
+        @JSGlobal("gapi.client.content.liasettings")
+        @js.native
         val liasettings: LiasettingsResource = js.native
         
+        @JSGlobal("gapi.client.content.localinventory")
+        @js.native
         val localinventory: LocalinventoryResource = js.native
         
+        @JSGlobal("gapi.client.content.orderinvoices")
+        @js.native
         val orderinvoices: OrderinvoicesResource = js.native
         
+        @JSGlobal("gapi.client.content.orderreports")
+        @js.native
         val orderreports: OrderreportsResource = js.native
         
+        @JSGlobal("gapi.client.content.orderreturns")
+        @js.native
         val orderreturns: OrderreturnsResource = js.native
         
+        @JSGlobal("gapi.client.content.orders")
+        @js.native
         val orders: OrdersResource = js.native
         
+        @JSGlobal("gapi.client.content.ordertrackingsignals")
+        @js.native
         val ordertrackingsignals: OrdertrackingsignalsResource = js.native
         
+        @JSGlobal("gapi.client.content.pos")
+        @js.native
         val pos: PosResource = js.native
         
+        @JSGlobal("gapi.client.content.products")
+        @js.native
         val products: ProductsResource = js.native
         
+        @JSGlobal("gapi.client.content.productstatuses")
+        @js.native
         val productstatuses: ProductstatusesResource = js.native
         
+        @JSGlobal("gapi.client.content.pubsubnotificationsettings")
+        @js.native
         val pubsubnotificationsettings: PubsubnotificationsettingsResource = js.native
         
+        @JSGlobal("gapi.client.content.regionalinventory")
+        @js.native
         val regionalinventory: RegionalinventoryResource = js.native
         
+        @JSGlobal("gapi.client.content.regions")
+        @js.native
         val regions: RegionsResource = js.native
         
+        @JSGlobal("gapi.client.content.repricingrules")
+        @js.native
         val repricingrules: RepricingrulesResource = js.native
         
+        @JSGlobal("gapi.client.content.returnaddress")
+        @js.native
         val returnaddress: ReturnaddressResource = js.native
         
+        @JSGlobal("gapi.client.content.returnpolicy")
+        @js.native
         val returnpolicy: ReturnpolicyResource = js.native
         
+        @JSGlobal("gapi.client.content.settlementreports")
+        @js.native
         val settlementreports: SettlementreportsResource = js.native
         
+        @JSGlobal("gapi.client.content.settlementtransactions")
+        @js.native
         val settlementtransactions: SettlementtransactionsResource = js.native
         
+        @JSGlobal("gapi.client.content.shippingsettings")
+        @js.native
         val shippingsettings: ShippingsettingsResource = js.native
       }
+      
+      /** Load Content API for Shopping v2.1 */
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: content, version: v2Dot1): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: content, version: v2Dot1, callback: js.Function0[_]): Unit = js.native
     }
   }
 }

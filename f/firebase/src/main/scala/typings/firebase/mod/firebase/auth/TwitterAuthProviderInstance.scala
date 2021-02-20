@@ -1,5 +1,6 @@
 package typings.firebase.mod.firebase.auth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,21 +32,9 @@ object TwitterAuthProviderInstance {
   }
   
   @scala.inline
-  implicit class TwitterAuthProviderInstanceOps[Self <: TwitterAuthProviderInstance] (val x: Self) extends AnyVal {
+  implicit class TwitterAuthProviderInstanceMutableBuilder[Self <: TwitterAuthProviderInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetCustomParameters(value: js.Object => AuthProvider): Self = this.set("setCustomParameters", js.Any.fromFunction1(value))
+    def setSetCustomParameters(value: js.Object => AuthProvider): Self = StObject.set(x, "setCustomParameters", js.Any.fromFunction1(value))
   }
 }

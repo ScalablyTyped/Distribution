@@ -1,21 +1,21 @@
 package typings.typedoc
 
-import typings.typedoc.componentMod.AbstractComponent
 import typings.typedoc.navigationItemMod.NavigationItem
+import typings.typedoc.outputComponentsMod.RendererComponent
 import typings.typedoc.projectMod.ProjectReflection
 import typings.typedoc.rendererMod.Renderer
 import typings.typedoc.resourcesMod.Resources
 import typings.typedoc.urlMappingMod.UrlMapping
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/output/theme", JSImport.Namespace)
-@js.native
-object themeMod extends js.Object {
+object themeMod {
   
+  @JSImport("typedoc/dist/lib/output/theme", "Theme")
   @js.native
-  abstract class Theme protected () extends AbstractComponent[Renderer] {
+  abstract class Theme protected () extends RendererComponent {
     def this(renderer: Renderer, basePath: String) = this()
     
     var basePath: String = js.native

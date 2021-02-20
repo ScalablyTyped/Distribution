@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchCreateObject extends js.Object {
+trait BatchCreateObject extends StObject {
   
   /**
     * The batch reference name. See Transaction Support for more information.
@@ -41,48 +42,36 @@ object BatchCreateObject {
   }
   
   @scala.inline
-  implicit class BatchCreateObjectOps[Self <: BatchCreateObject] (val x: Self) extends AnyVal {
+  implicit class BatchCreateObjectMutableBuilder[Self <: BatchCreateObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchReferenceName(value: BatchReferenceName): Self = StObject.set(x, "BatchReferenceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchReferenceNameUndefined: Self = StObject.set(x, "BatchReferenceName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinkName(value: LinkName): Self = StObject.set(x, "LinkName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectAttributeListVarargs(value: AttributeKeyAndValue*): Self = this.set("ObjectAttributeList", js.Array(value :_*))
+    def setLinkNameUndefined: Self = StObject.set(x, "LinkName", js.undefined)
     
     @scala.inline
-    def setObjectAttributeList(value: AttributeKeyAndValueList): Self = this.set("ObjectAttributeList", value.asInstanceOf[js.Any])
+    def setObjectAttributeList(value: AttributeKeyAndValueList): Self = StObject.set(x, "ObjectAttributeList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaFacetVarargs(value: SchemaFacet*): Self = this.set("SchemaFacet", js.Array(value :_*))
+    def setObjectAttributeListVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "ObjectAttributeList", js.Array(value :_*))
     
     @scala.inline
-    def setSchemaFacet(value: SchemaFacetList): Self = this.set("SchemaFacet", value.asInstanceOf[js.Any])
+    def setParentReference(value: ObjectReference): Self = StObject.set(x, "ParentReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchReferenceName(value: BatchReferenceName): Self = this.set("BatchReferenceName", value.asInstanceOf[js.Any])
+    def setParentReferenceUndefined: Self = StObject.set(x, "ParentReference", js.undefined)
     
     @scala.inline
-    def deleteBatchReferenceName: Self = this.set("BatchReferenceName", js.undefined)
+    def setSchemaFacet(value: SchemaFacetList): Self = StObject.set(x, "SchemaFacet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkName(value: LinkName): Self = this.set("LinkName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinkName: Self = this.set("LinkName", js.undefined)
-    
-    @scala.inline
-    def setParentReference(value: ObjectReference): Self = this.set("ParentReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentReference: Self = this.set("ParentReference", js.undefined)
+    def setSchemaFacetVarargs(value: SchemaFacet*): Self = StObject.set(x, "SchemaFacet", js.Array(value :_*))
   }
 }

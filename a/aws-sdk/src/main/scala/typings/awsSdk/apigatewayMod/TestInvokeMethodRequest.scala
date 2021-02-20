@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestInvokeMethodRequest extends js.Object {
+trait TestInvokeMethodRequest extends StObject {
   
   /**
     * The simulated request body of an incoming invocation request.
@@ -61,63 +62,51 @@ object TestInvokeMethodRequest {
   }
   
   @scala.inline
-  implicit class TestInvokeMethodRequestOps[Self <: TestInvokeMethodRequest] (val x: Self) extends AnyVal {
+  implicit class TestInvokeMethodRequestMutableBuilder[Self <: TestInvokeMethodRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientCertificateId(value: String): Self = StObject.set(x, "clientCertificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpMethod(value: String): Self = this.set("httpMethod", value.asInstanceOf[js.Any])
+    def setClientCertificateIdUndefined: Self = StObject.set(x, "clientCertificateId", js.undefined)
     
     @scala.inline
-    def setResourceId(value: String): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    def setHeaders(value: MapOfStringToString): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestApiId(value: String): Self = this.set("restApiId", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setMultiValueHeaders(value: MapOfStringToList): Self = StObject.set(x, "multiValueHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientCertificateId(value: String): Self = this.set("clientCertificateId", value.asInstanceOf[js.Any])
+    def setMultiValueHeadersUndefined: Self = StObject.set(x, "multiValueHeaders", js.undefined)
     
     @scala.inline
-    def deleteClientCertificateId: Self = this.set("clientCertificateId", js.undefined)
+    def setPathWithQueryString(value: String): Self = StObject.set(x, "pathWithQueryString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: MapOfStringToString): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setPathWithQueryStringUndefined: Self = StObject.set(x, "pathWithQueryString", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiValueHeaders(value: MapOfStringToList): Self = this.set("multiValueHeaders", value.asInstanceOf[js.Any])
+    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultiValueHeaders: Self = this.set("multiValueHeaders", js.undefined)
+    def setStageVariables(value: MapOfStringToString): Self = StObject.set(x, "stageVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathWithQueryString(value: String): Self = this.set("pathWithQueryString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePathWithQueryString: Self = this.set("pathWithQueryString", js.undefined)
-    
-    @scala.inline
-    def setStageVariables(value: MapOfStringToString): Self = this.set("stageVariables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStageVariables: Self = this.set("stageVariables", js.undefined)
+    def setStageVariablesUndefined: Self = StObject.set(x, "stageVariables", js.undefined)
   }
 }

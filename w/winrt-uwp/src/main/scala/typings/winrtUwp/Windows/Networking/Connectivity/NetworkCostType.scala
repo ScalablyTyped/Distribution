@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NetworkCostType extends js.Object
+sealed trait NetworkCostType extends StObject
 /** Defines the network cost types. */
 @JSGlobal("Windows.Networking.Connectivity.NetworkCostType")
 @js.native
-object NetworkCostType extends js.Object {
+object NetworkCostType extends StObject {
   
   /** The use of this connection is unrestricted up to a specific limit. */
   @js.native

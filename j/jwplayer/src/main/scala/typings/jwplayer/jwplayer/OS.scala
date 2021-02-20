@@ -1,17 +1,18 @@
 package typings.jwplayer.jwplayer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OS extends js.Object {
+trait OS extends StObject {
   
   var android: Boolean = js.native
   
   var androidNative: Boolean = js.native
   
-     // Android native browser
+  // Android native browser
   var iOS: Boolean = js.native
   
   var iPad: Boolean = js.native
@@ -45,45 +46,33 @@ object OS {
   }
   
   @scala.inline
-  implicit class OSOps[Self <: OS] (val x: Self) extends AnyVal {
+  implicit class OSMutableBuilder[Self <: OS] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidNative(value: Boolean): Self = StObject.set(x, "androidNative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIOS(value: Boolean): Self = StObject.set(x, "iOS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroid(value: Boolean): Self = this.set("android", value.asInstanceOf[js.Any])
+    def setIPad(value: Boolean): Self = StObject.set(x, "iPad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidNative(value: Boolean): Self = this.set("androidNative", value.asInstanceOf[js.Any])
+    def setIPhone(value: Boolean): Self = StObject.set(x, "iPhone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIOS(value: Boolean): Self = this.set("iOS", value.asInstanceOf[js.Any])
+    def setMac(value: Boolean): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIPad(value: Boolean): Self = this.set("iPad", value.asInstanceOf[js.Any])
+    def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIPhone(value: Boolean): Self = this.set("iPhone", value.asInstanceOf[js.Any])
+    def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMac(value: Boolean): Self = this.set("mac", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMobile(value: Boolean): Self = this.set("mobile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: Version): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindows(value: Boolean): Self = this.set("windows", value.asInstanceOf[js.Any])
+    def setWindows(value: Boolean): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
   }
 }

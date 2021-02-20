@@ -1,12 +1,13 @@
 package typings.microsoftSdkSoap.mod.global.Sdk.Query
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sdk.Query.PagingInfo")
 @js.native
-class PagingInfo () extends js.Object {
+class PagingInfo () extends StObject {
   
   /**
     * Gets the number of entity instances returned per page.

@@ -1,11 +1,12 @@
 package typings.awsSdk.schemasMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeCodeBindingResponse extends js.Object {
+trait DescribeCodeBindingResponse extends StObject {
   
   /**
     * The time and date that the code binding was created.
@@ -36,42 +37,30 @@ object DescribeCodeBindingResponse {
   }
   
   @scala.inline
-  implicit class DescribeCodeBindingResponseOps[Self <: DescribeCodeBindingResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeCodeBindingResponseMutableBuilder[Self <: DescribeCodeBindingResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDate(value: timestampIso8601): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastModified(value: timestampIso8601): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: timestampIso8601): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setSchemaVersion(value: string): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModified(value: timestampIso8601): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    def setSchemaVersionUndefined: Self = StObject.set(x, "SchemaVersion", js.undefined)
     
     @scala.inline
-    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+    def setStatus(value: CodeGenerationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaVersion(value: string): Self = this.set("SchemaVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemaVersion: Self = this.set("SchemaVersion", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: CodeGenerationStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

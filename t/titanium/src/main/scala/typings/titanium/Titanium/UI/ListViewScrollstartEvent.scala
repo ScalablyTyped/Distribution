@@ -1,5 +1,6 @@
 package typings.titanium.Titanium.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,36 +60,24 @@ object ListViewScrollstartEvent {
   }
   
   @scala.inline
-  implicit class ListViewScrollstartEventOps[Self <: ListViewScrollstartEvent] (val x: Self) extends AnyVal {
+  implicit class ListViewScrollstartEventMutableBuilder[Self <: ListViewScrollstartEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstVisibleItem(value: js.Any): Self = StObject.set(x, "firstVisibleItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirstVisibleItemIndex(value: Double): Self = StObject.set(x, "firstVisibleItemIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbles(value: Boolean): Self = this.set("bubbles", value.asInstanceOf[js.Any])
+    def setFirstVisibleSection(value: ListSection): Self = StObject.set(x, "firstVisibleSection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstVisibleItem(value: js.Any): Self = this.set("firstVisibleItem", value.asInstanceOf[js.Any])
+    def setFirstVisibleSectionIndex(value: Double): Self = StObject.set(x, "firstVisibleSectionIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstVisibleItemIndex(value: Double): Self = this.set("firstVisibleItemIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFirstVisibleSection(value: ListSection): Self = this.set("firstVisibleSection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFirstVisibleSectionIndex(value: Double): Self = this.set("firstVisibleSectionIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibleItemCount(value: Double): Self = this.set("visibleItemCount", value.asInstanceOf[js.Any])
+    def setVisibleItemCount(value: Double): Self = StObject.set(x, "visibleItemCount", value.asInstanceOf[js.Any])
   }
 }

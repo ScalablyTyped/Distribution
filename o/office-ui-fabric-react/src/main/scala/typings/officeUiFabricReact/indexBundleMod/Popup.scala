@@ -1,6 +1,7 @@
 package typings.officeUiFabricReact.indexBundleMod
 
 import typings.officeUiFabricReact.popupTypesMod.IPopupProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,15 @@ class Popup protected ()
   def this(props: IPopupProps) = this()
 }
 /* static members */
-@JSImport("office-ui-fabric-react/lib/index.bundle", "Popup")
-@js.native
-object Popup extends js.Object {
+object Popup {
   
-  var defaultProps: IPopupProps = js.native
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "Popup")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "Popup.defaultProps")
+  @js.native
+  def defaultProps: IPopupProps = js.native
+  @scala.inline
+  def defaultProps_=(x: IPopupProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

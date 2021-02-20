@@ -1,11 +1,12 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Equation extends js.Object {
+trait Equation extends StObject {
   
   var a: Double = js.native
   
@@ -77,78 +78,66 @@ object Equation {
   }
   
   @scala.inline
-  implicit class EquationOps[Self <: Equation] (val x: Self) extends AnyVal {
+  implicit class EquationMutableBuilder[Self <: Equation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddToWlamda(value: Double => Double): Self = StObject.set(x, "addToWlamda", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setA(value: Double): Self = this.set("a", value.asInstanceOf[js.Any])
+    def setBi(value: Body): Self = StObject.set(x, "bi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddToWlamda(value: Double => Double): Self = this.set("addToWlamda", js.Any.fromFunction1(value))
+    def setBj(value: Body): Self = StObject.set(x, "bj", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setB(value: Double): Self = this.set("b", value.asInstanceOf[js.Any])
+    def setComputeB(value: (Double, Double, Double) => Double): Self = StObject.set(x, "computeB", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setBi(value: Body): Self = this.set("bi", value.asInstanceOf[js.Any])
+    def setComputeC(value: () => Double): Self = StObject.set(x, "computeC", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBj(value: Body): Self = this.set("bj", value.asInstanceOf[js.Any])
+    def setComputeGW(value: () => Double): Self = StObject.set(x, "computeGW", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComputeB(value: (Double, Double, Double) => Double): Self = this.set("computeB", js.Any.fromFunction3(value))
+    def setComputeGWlamda(value: () => Double): Self = StObject.set(x, "computeGWlamda", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComputeC(value: () => Double): Self = this.set("computeC", js.Any.fromFunction0(value))
+    def setComputeGiMGt(value: () => Double): Self = StObject.set(x, "computeGiMGt", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComputeGW(value: () => Double): Self = this.set("computeGW", js.Any.fromFunction0(value))
+    def setComputeGiMf(value: () => Double): Self = StObject.set(x, "computeGiMf", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComputeGWlamda(value: () => Double): Self = this.set("computeGWlamda", js.Any.fromFunction0(value))
+    def setComputeGq(value: () => Double): Self = StObject.set(x, "computeGq", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComputeGiMGt(value: () => Double): Self = this.set("computeGiMGt", js.Any.fromFunction0(value))
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputeGiMf(value: () => Double): Self = this.set("computeGiMf", js.Any.fromFunction0(value))
+    def setEps(value: Double): Self = StObject.set(x, "eps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputeGq(value: () => Double): Self = this.set("computeGq", js.Any.fromFunction0(value))
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setJacobianElementA(value: JacobianElement): Self = StObject.set(x, "jacobianElementA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEps(value: Double): Self = this.set("eps", value.asInstanceOf[js.Any])
+    def setJacobianElementB(value: JacobianElement): Self = StObject.set(x, "jacobianElementB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJacobianElementA(value: JacobianElement): Self = this.set("jacobianElementA", value.asInstanceOf[js.Any])
+    def setMinForce(value: Double): Self = StObject.set(x, "minForce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJacobianElementB(value: JacobianElement): Self = this.set("jacobianElementB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxForce(value: Double): Self = this.set("maxForce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinForce(value: Double): Self = this.set("minForce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetSpookParams(value: (Double, Double, Double) => Unit): Self = this.set("setSpookParams", js.Any.fromFunction3(value))
+    def setSetSpookParams(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setSpookParams", js.Any.fromFunction3(value))
   }
 }

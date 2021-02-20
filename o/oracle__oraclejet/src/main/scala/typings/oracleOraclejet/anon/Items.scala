@@ -3,12 +3,13 @@ package typings.oracleOraclejet.anon
 import typings.oracleOraclejet.oracleOraclejetStrings.center
 import typings.oracleOraclejet.oracleOraclejetStrings.end
 import typings.oracleOraclejet.oracleOraclejetStrings.start
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Items extends js.Object {
+trait Items extends StObject {
   
   var items: js.Array[BorderColor] = js.native
   
@@ -35,39 +36,27 @@ object Items {
   }
   
   @scala.inline
-  implicit class ItemsOps[Self <: Items] (val x: Self) extends AnyVal {
+  implicit class ItemsMutableBuilder[Self <: Items] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: js.Array[BorderColor]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsVarargs(value: BorderColor*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSections(value: js.Array[js.Object]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: BorderColor*): Self = this.set("items", js.Array(value :_*))
+    def setSectionsVarargs(value: js.Object*): Self = StObject.set(x, "sections", js.Array(value :_*))
     
     @scala.inline
-    def setItems(value: js.Array[BorderColor]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSectionsVarargs(value: js.Object*): Self = this.set("sections", js.Array(value :_*))
+    def setTitleHalign(value: center | end | start): Self = StObject.set(x, "titleHalign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSections(value: js.Array[js.Object]): Self = this.set("sections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitleHalign(value: center | end | start): Self = this.set("titleHalign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitleStyle(value: js.Object): Self = this.set("titleStyle", value.asInstanceOf[js.Any])
+    def setTitleStyle(value: js.Object): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
   }
 }

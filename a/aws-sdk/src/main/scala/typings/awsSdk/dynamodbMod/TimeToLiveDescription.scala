@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeToLiveDescription extends js.Object {
+trait TimeToLiveDescription extends StObject {
   
   /**
     *  The name of the TTL attribute for items in the table.
@@ -26,30 +27,18 @@ object TimeToLiveDescription {
   }
   
   @scala.inline
-  implicit class TimeToLiveDescriptionOps[Self <: TimeToLiveDescription] (val x: Self) extends AnyVal {
+  implicit class TimeToLiveDescriptionMutableBuilder[Self <: TimeToLiveDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeName(value: TimeToLiveAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeToLiveStatus(value: TimeToLiveStatus): Self = StObject.set(x, "TimeToLiveStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeName(value: TimeToLiveAttributeName): Self = this.set("AttributeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributeName: Self = this.set("AttributeName", js.undefined)
-    
-    @scala.inline
-    def setTimeToLiveStatus(value: TimeToLiveStatus): Self = this.set("TimeToLiveStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeToLiveStatus: Self = this.set("TimeToLiveStatus", js.undefined)
+    def setTimeToLiveStatusUndefined: Self = StObject.set(x, "TimeToLiveStatus", js.undefined)
   }
 }

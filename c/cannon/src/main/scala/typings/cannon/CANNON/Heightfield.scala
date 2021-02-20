@@ -1,5 +1,6 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,63 +67,51 @@ object Heightfield {
   }
   
   @scala.inline
-  implicit class HeightfieldOps[Self <: Heightfield] (val x: Self) extends AnyVal {
+  implicit class HeightfieldMutableBuilder[Self <: Heightfield] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheEnabled(value: Boolean): Self = StObject.set(x, "cacheEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setData(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataVarargs(value: js.Array[Double]*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setCacheEnabled(value: Boolean): Self = this.set("cacheEnabled", value.asInstanceOf[js.Any])
+    def setElementSize(value: Double): Self = StObject.set(x, "elementSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: js.Array[Double]*): Self = this.set("data", js.Array(value :_*))
+    def setGetConvexTrianglePillar(value: (Double, Double, Boolean) => Unit): Self = StObject.set(x, "getConvexTrianglePillar", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setData(value: js.Array[js.Array[Double]]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setGetIndexOfPosition(value: (Double, Double, js.Array[_], Boolean) => Boolean): Self = StObject.set(x, "getIndexOfPosition", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setElementSize(value: Double): Self = this.set("elementSize", value.asInstanceOf[js.Any])
+    def setGetRectMinMax(value: (Double, Double, Double, Double, js.Array[_]) => Unit): Self = StObject.set(x, "getRectMinMax", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setGetConvexTrianglePillar(value: (Double, Double, Boolean) => Unit): Self = this.set("getConvexTrianglePillar", js.Any.fromFunction3(value))
+    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetIndexOfPosition(value: (Double, Double, js.Array[_], Boolean) => Boolean): Self = this.set("getIndexOfPosition", js.Any.fromFunction4(value))
+    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRectMinMax(value: (Double, Double, Double, Double, js.Array[_]) => Unit): Self = this.set("getRectMinMax", js.Any.fromFunction5(value))
+    def setPillarConvex(value: ConvexPolyhedron): Self = StObject.set(x, "pillarConvex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    def setPillarOffset(value: Vec3): Self = StObject.set(x, "pillarOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    def setSetHeightValueAtIndex(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setHeightValueAtIndex", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setPillarConvex(value: ConvexPolyhedron): Self = this.set("pillarConvex", value.asInstanceOf[js.Any])
+    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPillarOffset(value: Vec3): Self = this.set("pillarOffset", value.asInstanceOf[js.Any])
+    def setUpdateMaxValue(value: () => Unit): Self = StObject.set(x, "updateMaxValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetHeightValueAtIndex(value: (Double, Double, Double) => Unit): Self = this.set("setHeightValueAtIndex", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdateMaxValue(value: () => Unit): Self = this.set("updateMaxValue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdateMinValue(value: () => Unit): Self = this.set("updateMinValue", js.Any.fromFunction0(value))
+    def setUpdateMinValue(value: () => Unit): Self = StObject.set(x, "updateMinValue", js.Any.fromFunction0(value))
   }
 }

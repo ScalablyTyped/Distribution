@@ -1,11 +1,12 @@
 package typings.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PageMethodeModelInfoReturn extends js.Object {
+trait PageMethodeModelInfoReturn extends StObject {
   
   var end: Double = js.native
   
@@ -41,42 +42,30 @@ object PageMethodeModelInfoReturn {
   }
   
   @scala.inline
-  implicit class PageMethodeModelInfoReturnOps[Self <: PageMethodeModelInfoReturn] (val x: Self) extends AnyVal {
+  implicit class PageMethodeModelInfoReturnMutableBuilder[Self <: PageMethodeModelInfoReturn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: Double): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setRecordsDisplay(value: Double): Self = StObject.set(x, "recordsDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setRecordsTotal(value: Double): Self = StObject.set(x, "recordsTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPages(value: Double): Self = this.set("pages", value.asInstanceOf[js.Any])
+    def setServerSide(value: Boolean): Self = StObject.set(x, "serverSide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordsDisplay(value: Double): Self = this.set("recordsDisplay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecordsTotal(value: Double): Self = this.set("recordsTotal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerSide(value: Boolean): Self = this.set("serverSide", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

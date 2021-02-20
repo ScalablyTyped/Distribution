@@ -1,5 +1,6 @@
 package typings.reactDates.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactDates.reactDatesStrings.before
   - typings.reactDates.reactDatesStrings.after
 */
-trait IconPositionShape extends js.Object
+trait IconPositionShape extends StObject
 object IconPositionShape {
   
   @scala.inline

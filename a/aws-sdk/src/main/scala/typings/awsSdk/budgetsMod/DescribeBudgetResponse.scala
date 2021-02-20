@@ -1,11 +1,12 @@
 package typings.awsSdk.budgetsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeBudgetResponse extends js.Object {
+trait DescribeBudgetResponse extends StObject {
   
   /**
     * The description of the budget.
@@ -21,24 +22,12 @@ object DescribeBudgetResponse {
   }
   
   @scala.inline
-  implicit class DescribeBudgetResponseOps[Self <: DescribeBudgetResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeBudgetResponseMutableBuilder[Self <: DescribeBudgetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBudget(value: Budget): Self = StObject.set(x, "Budget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBudget(value: Budget): Self = this.set("Budget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBudget: Self = this.set("Budget", js.undefined)
+    def setBudgetUndefined: Self = StObject.set(x, "Budget", js.undefined)
   }
 }

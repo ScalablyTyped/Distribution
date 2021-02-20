@@ -1,5 +1,6 @@
 package typings.pixiSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,27 +36,15 @@ object PathConstraintPositionTimeline {
   }
   
   @scala.inline
-  implicit class PathConstraintPositionTimelineOps[Self <: PathConstraintPositionTimeline] (val x: Self) extends AnyVal {
+  implicit class PathConstraintPositionTimelineMutableBuilder[Self <: PathConstraintPositionTimeline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPathConstraintIndex(value: Double): Self = StObject.set(x, "pathConstraintIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFrames(value: ArrayLike[Double]): Self = this.set("frames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPathConstraintIndex(value: Double): Self = this.set("pathConstraintIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetFrame(value: (Double, Double, Double) => Unit): Self = this.set("setFrame", js.Any.fromFunction3(value))
+    def setSetFrame(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setFrame", js.Any.fromFunction3(value))
   }
 }

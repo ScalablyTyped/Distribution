@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RebootCacheClusterMessage extends js.Object {
+trait RebootCacheClusterMessage extends StObject {
   
   /**
     * The cluster identifier. This parameter is stored as a lowercase string.
@@ -26,27 +27,15 @@ object RebootCacheClusterMessage {
   }
   
   @scala.inline
-  implicit class RebootCacheClusterMessageOps[Self <: RebootCacheClusterMessage] (val x: Self) extends AnyVal {
+  implicit class RebootCacheClusterMessageMutableBuilder[Self <: RebootCacheClusterMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheNodeIdsToReboot(value: CacheNodeIdsList): Self = StObject.set(x, "CacheNodeIdsToReboot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCacheClusterId(value: String): Self = this.set("CacheClusterId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCacheNodeIdsToRebootVarargs(value: String*): Self = this.set("CacheNodeIdsToReboot", js.Array(value :_*))
-    
-    @scala.inline
-    def setCacheNodeIdsToReboot(value: CacheNodeIdsList): Self = this.set("CacheNodeIdsToReboot", value.asInstanceOf[js.Any])
+    def setCacheNodeIdsToRebootVarargs(value: String*): Self = StObject.set(x, "CacheNodeIdsToReboot", js.Array(value :_*))
   }
 }

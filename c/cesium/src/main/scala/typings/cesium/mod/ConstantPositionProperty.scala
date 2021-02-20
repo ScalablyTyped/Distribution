@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "ConstantPositionProperty")
 @js.native
-class ConstantPositionProperty () extends js.Object {
+class ConstantPositionProperty () extends StObject {
   def this(value: Cartesian3) = this()
   def this(value: js.UndefOr[scala.Nothing], referenceFrame: ReferenceFrame) = this()
   def this(value: Cartesian3, referenceFrame: ReferenceFrame) = this()

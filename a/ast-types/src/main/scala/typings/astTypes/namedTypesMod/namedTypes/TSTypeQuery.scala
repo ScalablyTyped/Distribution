@@ -1,6 +1,5 @@
 package typings.astTypes.namedTypesMod.namedTypes
 
-import org.scalablytyped.runtime.TopLevel
 import typings.astTypes.kindsMod.CommentKind
 import typings.astTypes.kindsMod.IdentifierKind
 import typings.astTypes.kindsMod.NodeKind
@@ -10,6 +9,7 @@ import typings.astTypes.kindsMod.TSImportTypeKind
 import typings.astTypes.kindsMod.TSQualifiedNameKind
 import typings.astTypes.kindsMod.TSTypeKind
 import typings.astTypes.typesMod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,6 +30,40 @@ trait TSTypeQuery
   
   var `type`: typings.astTypes.astTypesStrings.TSTypeQuery = js.native
 }
-@JSImport("ast-types/gen/namedTypes", "namedTypes.TSTypeQuery")
-@js.native
-object TSTypeQuery extends TopLevel[Type[TSTypeQuery]]
+object TSTypeQuery {
+  
+  @JSImport("ast-types/gen/namedTypes", "namedTypes.TSTypeQuery")
+  @js.native
+  val ^ : Type[TSTypeQuery] = js.native
+  
+  @scala.inline
+  implicit class TSTypeQueryMutableBuilder[Self <: TSTypeQuery] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCommentsNull: Self = StObject.set(x, "comments", null)
+    
+    @scala.inline
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    
+    @scala.inline
+    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    
+    @scala.inline
+    def setExprName(value: IdentifierKind | TSQualifiedNameKind | TSImportTypeKind): Self = StObject.set(x, "exprName", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLocNull: Self = StObject.set(x, "loc", null)
+    
+    @scala.inline
+    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    
+    @scala.inline
+    def setType(value: typings.astTypes.astTypesStrings.TSTypeQuery): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
+}

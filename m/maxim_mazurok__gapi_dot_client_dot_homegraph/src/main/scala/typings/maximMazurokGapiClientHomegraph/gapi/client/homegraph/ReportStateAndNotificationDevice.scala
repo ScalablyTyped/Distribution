@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientHomegraph.gapi.client.homegraph
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportStateAndNotificationDevice extends js.Object {
+trait ReportStateAndNotificationDevice extends StObject {
   
   /** Notifications metadata for devices. See the **Device NOTIFICATIONS** section of the individual trait [reference guides](https://developers.google.com/assistant/smarthome/traits). */
   var notifications: js.UndefOr[
@@ -31,38 +32,26 @@ object ReportStateAndNotificationDevice {
   }
   
   @scala.inline
-  implicit class ReportStateAndNotificationDeviceOps[Self <: ReportStateAndNotificationDevice] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ReportStateAndNotificationDeviceMutableBuilder[Self <: ReportStateAndNotificationDevice] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setNotifications(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.ReportStateAndNotificationDevice with TopLevel[js.Any]
-    ): Self = this.set("notifications", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotifications: Self = this.set("notifications", js.undefined)
+    def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
     
     @scala.inline
     def setStates(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.ReportStateAndNotificationDevice with TopLevel[js.Any]
-    ): Self = this.set("states", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStates: Self = this.set("states", js.undefined)
+    def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
   }
 }

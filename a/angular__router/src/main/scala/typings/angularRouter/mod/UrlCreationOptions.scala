@@ -1,11 +1,12 @@
 package typings.angularRouter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UrlCreationOptions extends js.Object {
+trait UrlCreationOptions extends StObject {
   
   /**
     * Sets the hash fragment for the URL.
@@ -106,57 +107,45 @@ object UrlCreationOptions {
   }
   
   @scala.inline
-  implicit class UrlCreationOptionsOps[Self <: UrlCreationOptions] (val x: Self) extends AnyVal {
+  implicit class UrlCreationOptionsMutableBuilder[Self <: UrlCreationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFragmentUndefined: Self = StObject.set(x, "fragment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreserveFragment(value: Boolean): Self = StObject.set(x, "preserveFragment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragment(value: String): Self = this.set("fragment", value.asInstanceOf[js.Any])
+    def setPreserveFragmentUndefined: Self = StObject.set(x, "preserveFragment", js.undefined)
     
     @scala.inline
-    def deleteFragment: Self = this.set("fragment", js.undefined)
+    def setQueryParams(value: Params): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveFragment(value: Boolean): Self = this.set("preserveFragment", value.asInstanceOf[js.Any])
+    def setQueryParamsHandling(value: QueryParamsHandling): Self = StObject.set(x, "queryParamsHandling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreserveFragment: Self = this.set("preserveFragment", js.undefined)
+    def setQueryParamsHandlingNull: Self = StObject.set(x, "queryParamsHandling", null)
     
     @scala.inline
-    def setQueryParams(value: Params): Self = this.set("queryParams", value.asInstanceOf[js.Any])
+    def setQueryParamsHandlingUndefined: Self = StObject.set(x, "queryParamsHandling", js.undefined)
     
     @scala.inline
-    def deleteQueryParams: Self = this.set("queryParams", js.undefined)
+    def setQueryParamsNull: Self = StObject.set(x, "queryParams", null)
     
     @scala.inline
-    def setQueryParamsNull: Self = this.set("queryParams", null)
+    def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
     
     @scala.inline
-    def setQueryParamsHandling(value: QueryParamsHandling): Self = this.set("queryParamsHandling", value.asInstanceOf[js.Any])
+    def setRelativeTo(value: ActivatedRoute): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQueryParamsHandling: Self = this.set("queryParamsHandling", js.undefined)
+    def setRelativeToNull: Self = StObject.set(x, "relativeTo", null)
     
     @scala.inline
-    def setQueryParamsHandlingNull: Self = this.set("queryParamsHandling", null)
-    
-    @scala.inline
-    def setRelativeTo(value: ActivatedRoute): Self = this.set("relativeTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelativeTo: Self = this.set("relativeTo", js.undefined)
-    
-    @scala.inline
-    def setRelativeToNull: Self = this.set("relativeTo", null)
+    def setRelativeToUndefined: Self = StObject.set(x, "relativeTo", js.undefined)
   }
 }

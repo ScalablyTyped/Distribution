@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateFleetCapacityInput extends js.Object {
+trait UpdateFleetCapacityInput extends StObject {
   
   /**
     * Number of EC2 instances you want this fleet to host.
@@ -36,39 +37,27 @@ object UpdateFleetCapacityInput {
   }
   
   @scala.inline
-  implicit class UpdateFleetCapacityInputOps[Self <: UpdateFleetCapacityInput] (val x: Self) extends AnyVal {
+  implicit class UpdateFleetCapacityInputMutableBuilder[Self <: UpdateFleetCapacityInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesiredInstances(value: WholeNumber): Self = StObject.set(x, "DesiredInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesiredInstancesUndefined: Self = StObject.set(x, "DesiredInstances", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetId(value: FleetIdOrArn): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    def setMaxSize(value: WholeNumber): Self = StObject.set(x, "MaxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredInstances(value: WholeNumber): Self = this.set("DesiredInstances", value.asInstanceOf[js.Any])
+    def setMaxSizeUndefined: Self = StObject.set(x, "MaxSize", js.undefined)
     
     @scala.inline
-    def deleteDesiredInstances: Self = this.set("DesiredInstances", js.undefined)
+    def setMinSize(value: WholeNumber): Self = StObject.set(x, "MinSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSize(value: WholeNumber): Self = this.set("MaxSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxSize: Self = this.set("MaxSize", js.undefined)
-    
-    @scala.inline
-    def setMinSize(value: WholeNumber): Self = this.set("MinSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinSize: Self = this.set("MinSize", js.undefined)
+    def setMinSizeUndefined: Self = StObject.set(x, "MinSize", js.undefined)
   }
 }

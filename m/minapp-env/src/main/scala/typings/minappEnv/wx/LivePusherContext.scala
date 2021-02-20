@@ -1,11 +1,12 @@
 package typings.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LivePusherContext extends js.Object {
+trait LivePusherContext extends StObject {
   
   /** [LivePusherContext.pause(Object object)](LivePusherContext.pause.md)
     *

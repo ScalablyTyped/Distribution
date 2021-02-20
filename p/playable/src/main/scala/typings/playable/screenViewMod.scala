@@ -4,17 +4,22 @@ import typings.playable.screenTypesMod.IScreenViewConfig
 import typings.playable.screenTypesMod.IScreenViewStyles
 import typings.playable.screenTypesMod.VideoViewMode
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/ui/screen/screen.view", JSImport.Namespace)
-@js.native
-object screenViewMod extends js.Object {
+object screenViewMod {
+  
+  @JSImport("playable/dist/src/modules/ui/screen/screen.view", JSImport.Default)
+  @js.native
+  class default protected () extends ScreenView {
+    def this(config: IScreenViewConfig) = this()
+  }
   
   @js.native
   trait ScreenView
-    extends typings.playable.stylableMod.default[IScreenViewStyles] {
+    extends typings.playable.viewMod.default[IScreenViewStyles] {
     
     @JSName("_$canvas")
     var _$canvas: js.Any = js.native
@@ -84,10 +89,5 @@ object screenViewMod extends js.Object {
     def show(): Unit = js.native
     
     def showCursor(): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends ScreenView {
-    def this(config: IScreenViewConfig) = this()
   }
 }

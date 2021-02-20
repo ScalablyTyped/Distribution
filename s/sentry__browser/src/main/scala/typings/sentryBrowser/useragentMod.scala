@@ -1,14 +1,14 @@
 package typings.sentryBrowser
 
 import typings.sentryTypes.integrationMod.Integration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sentry/browser/dist/integrations/useragent", JSImport.Namespace)
-@js.native
-object useragentMod extends js.Object {
+object useragentMod {
   
+  @JSImport("@sentry/browser/dist/integrations/useragent", "UserAgent")
   @js.native
   class UserAgent () extends Integration {
     
@@ -18,12 +18,19 @@ object useragentMod extends js.Object {
     def setupOnce(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object UserAgent extends js.Object {
+  object UserAgent {
+    
+    @JSImport("@sentry/browser/dist/integrations/useragent", "UserAgent")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * @inheritDoc
       */
-    var id: String = js.native
+    @JSImport("@sentry/browser/dist/integrations/useragent", "UserAgent.id")
+    @js.native
+    def id: String = js.native
+    @scala.inline
+    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
 }

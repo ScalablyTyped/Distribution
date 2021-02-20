@@ -1,13 +1,14 @@
 package typings.tensorflowTfjsCore
 
 import typings.tensorflowTfjsCore.kernelRegistryMod.GradConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/gradients/Softplus_grad", JSImport.Namespace)
-@js.native
-object softplusGradMod extends js.Object {
+object softplusGradMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/gradients/Softplus_grad", "softplusGradConfig")
+  @js.native
   val softplusGradConfig: GradConfig = js.native
 }

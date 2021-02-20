@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DialogflowV1Status extends js.Object {
+trait DialogflowV1Status extends StObject {
   
   var code: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object DialogflowV1Status {
   }
   
   @scala.inline
-  implicit class DialogflowV1StatusOps[Self <: DialogflowV1Status] (val x: Self) extends AnyVal {
+  implicit class DialogflowV1StatusMutableBuilder[Self <: DialogflowV1Status] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: Double): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setErrorTypeUndefined: Self = StObject.set(x, "errorType", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setWebhookTimedOut(value: Boolean): Self = StObject.set(x, "webhookTimedOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorType(value: String): Self = this.set("errorType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorType: Self = this.set("errorType", js.undefined)
-    
-    @scala.inline
-    def setWebhookTimedOut(value: Boolean): Self = this.set("webhookTimedOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebhookTimedOut: Self = this.set("webhookTimedOut", js.undefined)
+    def setWebhookTimedOutUndefined: Self = StObject.set(x, "webhookTimedOut", js.undefined)
   }
 }

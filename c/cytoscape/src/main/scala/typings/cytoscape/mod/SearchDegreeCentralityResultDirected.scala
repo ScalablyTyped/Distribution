@@ -1,11 +1,12 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchDegreeCentralityResultDirected extends js.Object {
+trait SearchDegreeCentralityResultDirected extends StObject {
   
   /* the indegree centrality of the root node */
   var indegree: Double = js.native
@@ -22,24 +23,12 @@ object SearchDegreeCentralityResultDirected {
   }
   
   @scala.inline
-  implicit class SearchDegreeCentralityResultDirectedOps[Self <: SearchDegreeCentralityResultDirected] (val x: Self) extends AnyVal {
+  implicit class SearchDegreeCentralityResultDirectedMutableBuilder[Self <: SearchDegreeCentralityResultDirected] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndegree(value: Double): Self = StObject.set(x, "indegree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIndegree(value: Double): Self = this.set("indegree", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutdegree(value: Double): Self = this.set("outdegree", value.asInstanceOf[js.Any])
+    def setOutdegree(value: Double): Self = StObject.set(x, "outdegree", value.asInstanceOf[js.Any])
   }
 }

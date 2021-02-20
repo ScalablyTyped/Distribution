@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Usb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The endpoint descriptor for a USB interrupt IN endpoint. The descriptor specifies the endpoint type, direction, number and also the maximum number of bytes that can be read from the endpoint, in a single transfer. The app can also get information about how often the host polls the endpoint for data. */
 @js.native
-trait UsbInterruptInEndpointDescriptor extends js.Object {
+trait UsbInterruptInEndpointDescriptor extends StObject {
   
   /** Gets the USB endpoint number of the interrupt IN endpoint. */
   var endpointNumber: Double = js.native
@@ -29,30 +30,18 @@ object UsbInterruptInEndpointDescriptor {
   }
   
   @scala.inline
-  implicit class UsbInterruptInEndpointDescriptorOps[Self <: UsbInterruptInEndpointDescriptor] (val x: Self) extends AnyVal {
+  implicit class UsbInterruptInEndpointDescriptorMutableBuilder[Self <: UsbInterruptInEndpointDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpointNumber(value: Double): Self = StObject.set(x, "endpointNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxPacketSize(value: Double): Self = StObject.set(x, "maxPacketSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointNumber(value: Double): Self = this.set("endpointNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxPacketSize(value: Double): Self = this.set("maxPacketSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPipe(value: UsbInterruptInPipe): Self = this.set("pipe", value.asInstanceOf[js.Any])
+    def setPipe(value: UsbInterruptInPipe): Self = StObject.set(x, "pipe", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -245,180 +246,168 @@ object IgQRCodeBarcode {
   }
   
   @scala.inline
-  implicit class IgQRCodeBarcodeOps[Self <: IgQRCodeBarcode] (val x: Self) extends AnyVal {
+  implicit class IgQRCodeBarcodeMutableBuilder[Self <: IgQRCodeBarcode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationIndicator(value: String): Self = StObject.set(x, "applicationIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationIndicatorUndefined: Self = StObject.set(x, "applicationIndicator", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackingBrush(value: String): Self = StObject.set(x, "backingBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationIndicator(value: String): Self = this.set("applicationIndicator", value.asInstanceOf[js.Any])
+    def setBackingBrushUndefined: Self = StObject.set(x, "backingBrush", js.undefined)
     
     @scala.inline
-    def deleteApplicationIndicator: Self = this.set("applicationIndicator", js.undefined)
+    def setBackingOutline(value: String): Self = StObject.set(x, "backingOutline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackingBrush(value: String): Self = this.set("backingBrush", value.asInstanceOf[js.Any])
+    def setBackingOutlineUndefined: Self = StObject.set(x, "backingOutline", js.undefined)
     
     @scala.inline
-    def deleteBackingBrush: Self = this.set("backingBrush", js.undefined)
+    def setBackingStrokeThickness(value: Double): Self = StObject.set(x, "backingStrokeThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackingOutline(value: String): Self = this.set("backingOutline", value.asInstanceOf[js.Any])
+    def setBackingStrokeThicknessUndefined: Self = StObject.set(x, "backingStrokeThickness", js.undefined)
     
     @scala.inline
-    def deleteBackingOutline: Self = this.set("backingOutline", js.undefined)
+    def setBarBrush(value: String): Self = StObject.set(x, "barBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackingStrokeThickness(value: Double): Self = this.set("backingStrokeThickness", value.asInstanceOf[js.Any])
+    def setBarBrushUndefined: Self = StObject.set(x, "barBrush", js.undefined)
     
     @scala.inline
-    def deleteBackingStrokeThickness: Self = this.set("backingStrokeThickness", js.undefined)
+    def setBarsFillMode(value: String): Self = StObject.set(x, "barsFillMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarBrush(value: String): Self = this.set("barBrush", value.asInstanceOf[js.Any])
+    def setBarsFillModeUndefined: Self = StObject.set(x, "barsFillMode", js.undefined)
     
     @scala.inline
-    def deleteBarBrush: Self = this.set("barBrush", js.undefined)
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarsFillMode(value: String): Self = this.set("barsFillMode", value.asInstanceOf[js.Any])
+    def setDataChanged(value: (/* event */ Event, /* ui */ DataChangedEventUIParam) => Unit): Self = StObject.set(x, "dataChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteBarsFillMode: Self = this.set("barsFillMode", js.undefined)
+    def setDataChangedUndefined: Self = StObject.set(x, "dataChanged", js.undefined)
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setEciHeaderDisplayMode(value: String): Self = StObject.set(x, "eciHeaderDisplayMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataChanged(value: (/* event */ Event, /* ui */ DataChangedEventUIParam) => Unit): Self = this.set("dataChanged", js.Any.fromFunction2(value))
+    def setEciHeaderDisplayModeUndefined: Self = StObject.set(x, "eciHeaderDisplayMode", js.undefined)
     
     @scala.inline
-    def deleteDataChanged: Self = this.set("dataChanged", js.undefined)
+    def setEciNumber(value: Double): Self = StObject.set(x, "eciNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEciHeaderDisplayMode(value: String): Self = this.set("eciHeaderDisplayMode", value.asInstanceOf[js.Any])
+    def setEciNumberUndefined: Self = StObject.set(x, "eciNumber", js.undefined)
     
     @scala.inline
-    def deleteEciHeaderDisplayMode: Self = this.set("eciHeaderDisplayMode", js.undefined)
+    def setEncodingMode(value: String): Self = StObject.set(x, "encodingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEciNumber(value: Double): Self = this.set("eciNumber", value.asInstanceOf[js.Any])
+    def setEncodingModeUndefined: Self = StObject.set(x, "encodingMode", js.undefined)
     
     @scala.inline
-    def deleteEciNumber: Self = this.set("eciNumber", js.undefined)
+    def setErrorCorrectionLevel(value: String): Self = StObject.set(x, "errorCorrectionLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncodingMode(value: String): Self = this.set("encodingMode", value.asInstanceOf[js.Any])
+    def setErrorCorrectionLevelUndefined: Self = StObject.set(x, "errorCorrectionLevel", js.undefined)
     
     @scala.inline
-    def deleteEncodingMode: Self = this.set("encodingMode", js.undefined)
+    def setErrorMessageDisplaying(value: (/* event */ Event, /* ui */ ErrorMessageDisplayingEventUIParam) => Unit): Self = StObject.set(x, "errorMessageDisplaying", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setErrorCorrectionLevel(value: String): Self = this.set("errorCorrectionLevel", value.asInstanceOf[js.Any])
+    def setErrorMessageDisplayingUndefined: Self = StObject.set(x, "errorMessageDisplaying", js.undefined)
     
     @scala.inline
-    def deleteErrorCorrectionLevel: Self = this.set("errorCorrectionLevel", js.undefined)
+    def setErrorMessageText(value: String): Self = StObject.set(x, "errorMessageText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessageDisplaying(value: (/* event */ Event, /* ui */ ErrorMessageDisplayingEventUIParam) => Unit): Self = this.set("errorMessageDisplaying", js.Any.fromFunction2(value))
+    def setErrorMessageTextUndefined: Self = StObject.set(x, "errorMessageText", js.undefined)
     
     @scala.inline
-    def deleteErrorMessageDisplaying: Self = this.set("errorMessageDisplaying", js.undefined)
+    def setFnc1Mode(value: String): Self = StObject.set(x, "fnc1Mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessageText(value: String): Self = this.set("errorMessageText", value.asInstanceOf[js.Any])
+    def setFnc1ModeUndefined: Self = StObject.set(x, "fnc1Mode", js.undefined)
     
     @scala.inline
-    def deleteErrorMessageText: Self = this.set("errorMessageText", js.undefined)
+    def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFnc1Mode(value: String): Self = this.set("fnc1Mode", value.asInstanceOf[js.Any])
+    def setFontBrush(value: String): Self = StObject.set(x, "fontBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFnc1Mode: Self = this.set("fnc1Mode", js.undefined)
+    def setFontBrushUndefined: Self = StObject.set(x, "fontBrush", js.undefined)
     
     @scala.inline
-    def setFont(value: String): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontBrush(value: String): Self = this.set("fontBrush", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFontBrush: Self = this.set("fontBrush", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setPixelScalingRatio(value: Double): Self = StObject.set(x, "pixelScalingRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: js.Any): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setPixelScalingRatioUndefined: Self = StObject.set(x, "pixelScalingRatio", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelScalingRatio(value: Double): Self = this.set("pixelScalingRatio", value.asInstanceOf[js.Any])
+    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
     
     @scala.inline
-    def deletePixelScalingRatio: Self = this.set("pixelScalingRatio", js.undefined)
+    def setSizeVersion(value: String): Self = StObject.set(x, "sizeVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegional(value: String | js.Object): Self = this.set("regional", value.asInstanceOf[js.Any])
+    def setSizeVersionUndefined: Self = StObject.set(x, "sizeVersion", js.undefined)
     
     @scala.inline
-    def deleteRegional: Self = this.set("regional", js.undefined)
+    def setStretch(value: String): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeVersion(value: String): Self = this.set("sizeVersion", value.asInstanceOf[js.Any])
+    def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
     
     @scala.inline
-    def deleteSizeVersion: Self = this.set("sizeVersion", js.undefined)
+    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStretch(value: String): Self = this.set("stretch", value.asInstanceOf[js.Any])
+    def setWidthToHeightRatio(value: Double): Self = StObject.set(x, "widthToHeightRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStretch: Self = this.set("stretch", js.undefined)
+    def setWidthToHeightRatioUndefined: Self = StObject.set(x, "widthToHeightRatio", js.undefined)
     
     @scala.inline
-    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setXDimension(value: Double): Self = StObject.set(x, "xDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidthToHeightRatio(value: Double): Self = this.set("widthToHeightRatio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidthToHeightRatio: Self = this.set("widthToHeightRatio", js.undefined)
-    
-    @scala.inline
-    def setXDimension(value: Double): Self = this.set("xDimension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXDimension: Self = this.set("xDimension", js.undefined)
+    def setXDimensionUndefined: Self = StObject.set(x, "xDimension", js.undefined)
   }
 }

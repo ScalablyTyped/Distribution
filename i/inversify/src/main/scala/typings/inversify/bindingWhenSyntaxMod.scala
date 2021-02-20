@@ -1,14 +1,14 @@
 package typings.inversify
 
 import typings.inversify.interfacesMod.interfaces.Binding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("inversify/dts/syntax/binding_when_syntax", JSImport.Namespace)
-@js.native
-object bindingWhenSyntaxMod extends js.Object {
+object bindingWhenSyntaxMod {
   
+  @JSImport("inversify/dts/syntax/binding_when_syntax", "BindingWhenSyntax")
   @js.native
   class BindingWhenSyntax[T] protected ()
     extends typings.inversify.interfacesMod.interfaces.BindingWhenSyntax[T] {

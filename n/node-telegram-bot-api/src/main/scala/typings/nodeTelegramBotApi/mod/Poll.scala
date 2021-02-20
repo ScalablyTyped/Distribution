@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Poll extends js.Object {
+trait Poll extends StObject {
   
   var allows_multiple_answers: Boolean = js.native
   
@@ -42,45 +43,33 @@ object Poll {
   }
   
   @scala.inline
-  implicit class PollOps[Self <: Poll] (val x: Self) extends AnyVal {
+  implicit class PollMutableBuilder[Self <: Poll] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllows_multiple_answers(value: Boolean): Self = StObject.set(x, "allows_multiple_answers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIs_anonymous(value: Boolean): Self = StObject.set(x, "is_anonymous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllows_multiple_answers(value: Boolean): Self = this.set("allows_multiple_answers", value.asInstanceOf[js.Any])
+    def setIs_closed(value: Boolean): Self = StObject.set(x, "is_closed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOptions(value: js.Array[PollOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_anonymous(value: Boolean): Self = this.set("is_anonymous", value.asInstanceOf[js.Any])
+    def setOptionsVarargs(value: PollOption*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def setIs_closed(value: Boolean): Self = this.set("is_closed", value.asInstanceOf[js.Any])
+    def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionsVarargs(value: PollOption*): Self = this.set("options", js.Array(value :_*))
+    def setTotal_voter_count(value: Double): Self = StObject.set(x, "total_voter_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Array[PollOption]): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuestion(value: String): Self = this.set("question", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_voter_count(value: Double): Self = this.set("total_voter_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: PollType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: PollType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

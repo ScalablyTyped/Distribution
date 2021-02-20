@@ -1,5 +1,6 @@
 package typings.angularCore.r3SymbolsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,27 +46,15 @@ object ValueProvider {
   }
   
   @scala.inline
-  implicit class ValueProviderOps[Self <: ValueProvider] (val x: Self) extends AnyVal {
+  implicit class ValueProviderMutableBuilder[Self <: ValueProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProvide(value: js.Any): Self = this.set("provide", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMulti(value: Boolean): Self = this.set("multi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMulti: Self = this.set("multi", js.undefined)
+    def setProvide(value: js.Any): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.tuyaPanelKit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait valueChangeProps extends js.Object {
+trait valueChangeProps extends StObject {
   
   var hour: Double = js.native
   
@@ -22,27 +23,15 @@ object valueChangeProps {
   }
   
   @scala.inline
-  implicit class valueChangePropsOps[Self <: valueChangeProps] (val x: Self) extends AnyVal {
+  implicit class valueChangePropsMutableBuilder[Self <: valueChangeProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHour(value: Double): Self = this.set("hour", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinute(value: Double): Self = this.set("minute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

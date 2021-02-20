@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.ec2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetNetworkInterfaceAssociation extends js.Object {
+trait GetNetworkInterfaceAssociation extends StObject {
   
   /**
     * The allocation ID.
@@ -47,33 +48,21 @@ object GetNetworkInterfaceAssociation {
   }
   
   @scala.inline
-  implicit class GetNetworkInterfaceAssociationOps[Self <: GetNetworkInterfaceAssociation] (val x: Self) extends AnyVal {
+  implicit class GetNetworkInterfaceAssociationMutableBuilder[Self <: GetNetworkInterfaceAssociation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocationId(value: String): Self = StObject.set(x, "allocationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociationId(value: String): Self = StObject.set(x, "associationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIpOwnerId(value: String): Self = StObject.set(x, "ipOwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocationId(value: String): Self = this.set("allocationId", value.asInstanceOf[js.Any])
+    def setPublicDnsName(value: String): Self = StObject.set(x, "publicDnsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationId(value: String): Self = this.set("associationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIpOwnerId(value: String): Self = this.set("ipOwnerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublicDnsName(value: String): Self = this.set("publicDnsName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublicIp(value: String): Self = this.set("publicIp", value.asInstanceOf[js.Any])
+    def setPublicIp(value: String): Self = StObject.set(x, "publicIp", value.asInstanceOf[js.Any])
   }
 }

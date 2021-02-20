@@ -14,12 +14,13 @@ import typings.electron.electronStrings.low
 import typings.electron.electronStrings.medium
 import typings.electron.electronStrings.unknown_
 import typings.electron.electronStrings.untrusted
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProcessMetric extends js.Object {
+trait ProcessMetric extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/process-metric
   /**
@@ -87,53 +88,41 @@ object ProcessMetric {
   }
   
   @scala.inline
-  implicit class ProcessMetricOps[Self <: ProcessMetric] (val x: Self) extends AnyVal {
+  implicit class ProcessMetricMutableBuilder[Self <: ProcessMetric] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCpu(value: CPUUsage): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTime(value: Double): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntegrityLevel(value: untrusted | low | medium | high | unknown_): Self = StObject.set(x, "integrityLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpu(value: CPUUsage): Self = this.set("cpu", value.asInstanceOf[js.Any])
+    def setIntegrityLevelUndefined: Self = StObject.set(x, "integrityLevel", js.undefined)
     
     @scala.inline
-    def setCreationTime(value: Double): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    def setMemory(value: MemoryInfo): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemory(value: MemoryInfo): Self = this.set("memory", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPid(value: Double): Self = this.set("pid", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    @scala.inline
+    def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSandboxed(value: Boolean): Self = StObject.set(x, "sandboxed", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSandboxedUndefined: Self = StObject.set(x, "sandboxed", js.undefined)
     
     @scala.inline
     def setType(
       value: Browser | Tab | Utility | Zygote | (`Sandbox helper`) | GPU | (`Pepper Plugin`) | (`Pepper Plugin Broker`) | Unknown
-    ): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIntegrityLevel(value: untrusted | low | medium | high | unknown_): Self = this.set("integrityLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIntegrityLevel: Self = this.set("integrityLevel", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setSandboxed(value: Boolean): Self = this.set("sandboxed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSandboxed: Self = this.set("sandboxed", js.undefined)
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

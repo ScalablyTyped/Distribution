@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthenticationExtensionsClientOutputs extends js.Object {
+trait AuthenticationExtensionsClientOutputs extends StObject {
   
   var appid: js.UndefOr[scala.Boolean] = js.native
   
@@ -22,39 +23,27 @@ object AuthenticationExtensionsClientOutputs {
   }
   
   @scala.inline
-  implicit class AuthenticationExtensionsClientOutputsOps[Self <: AuthenticationExtensionsClientOutputs] (val x: Self) extends AnyVal {
+  implicit class AuthenticationExtensionsClientOutputsMutableBuilder[Self <: AuthenticationExtensionsClientOutputs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppid(value: scala.Boolean): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppidUndefined: Self = StObject.set(x, "appid", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCredProps(value: CredentialPropertiesOutput): Self = StObject.set(x, "credProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppid(value: scala.Boolean): Self = this.set("appid", value.asInstanceOf[js.Any])
+    def setCredPropsUndefined: Self = StObject.set(x, "credProps", js.undefined)
     
     @scala.inline
-    def deleteAppid: Self = this.set("appid", js.undefined)
+    def setUvm(value: UvmEntries): Self = StObject.set(x, "uvm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredProps(value: CredentialPropertiesOutput): Self = this.set("credProps", value.asInstanceOf[js.Any])
+    def setUvmUndefined: Self = StObject.set(x, "uvm", js.undefined)
     
     @scala.inline
-    def deleteCredProps: Self = this.set("credProps", js.undefined)
-    
-    @scala.inline
-    def setUvmVarargs(value: UvmEntry*): Self = this.set("uvm", js.Array(value :_*))
-    
-    @scala.inline
-    def setUvm(value: UvmEntries): Self = this.set("uvm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUvm: Self = this.set("uvm", js.undefined)
+    def setUvmVarargs(value: UvmEntry*): Self = StObject.set(x, "uvm", js.Array(value :_*))
   }
 }

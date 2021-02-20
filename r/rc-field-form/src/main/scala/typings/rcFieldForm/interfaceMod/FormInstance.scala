@@ -1,12 +1,13 @@
 package typings.rcFieldForm.interfaceMod
 
 import typings.rcFieldForm.rcFieldFormBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormInstance[Values] extends js.Object {
+trait FormInstance[Values] extends StObject {
   
   def getFieldError(name: NamePath): js.Array[String] = js.native
   

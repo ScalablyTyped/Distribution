@@ -1,12 +1,13 @@
 package typings.storybookApi.anon
 
 import typings.storybookApi.urlMod.QueryParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Path extends js.Object {
+trait Path extends StObject {
   
   var path: String = js.native
   
@@ -27,39 +28,27 @@ object Path {
   }
   
   @scala.inline
-  implicit class PathOps[Self <: Path] (val x: Self) extends AnyVal {
+  implicit class PathMutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQueryParams(value: QueryParams): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setStoryIdUndefined: Self = StObject.set(x, "storyId", js.undefined)
     
     @scala.inline
-    def setQueryParams(value: QueryParams): Self = this.set("queryParams", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setViewMode(value: String): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoryId(value: String): Self = this.set("storyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoryId: Self = this.set("storyId", js.undefined)
-    
-    @scala.inline
-    def setViewMode(value: String): Self = this.set("viewMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewMode: Self = this.set("viewMode", js.undefined)
+    def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
   }
 }

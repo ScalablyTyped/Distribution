@@ -1,12 +1,13 @@
 package typings.activexOutlook.Outlook
 
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Inspector extends js.Object {
+trait Inspector extends StObject {
   
   def Activate(): Unit = js.native
   

@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -85,93 +86,81 @@ object Signature {
   }
   
   @scala.inline
-  implicit class SignatureOps[Self <: Signature] (val x: Self) extends AnyVal {
+  implicit class SignatureMutableBuilder[Self <: Signature] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlob(value: base64Binary): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlobUndefined: Self = StObject.set(x, "blob", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentType(value: code): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeVarargs(value: Coding*): Self = this.set("type", js.Array(value :_*))
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def setType(value: js.Array[Coding]): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setOnBehalfOfReference(value: Reference): Self = StObject.set(x, "onBehalfOfReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWhen(value: instant): Self = this.set("when", value.asInstanceOf[js.Any])
+    def setOnBehalfOfReferenceUndefined: Self = StObject.set(x, "onBehalfOfReference", js.undefined)
     
     @scala.inline
-    def set_blob(value: Element): Self = this.set("_blob", value.asInstanceOf[js.Any])
+    def setOnBehalfOfUri(value: uri): Self = StObject.set(x, "onBehalfOfUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_blob: Self = this.set("_blob", js.undefined)
+    def setOnBehalfOfUriUndefined: Self = StObject.set(x, "onBehalfOfUri", js.undefined)
     
     @scala.inline
-    def set_contentType(value: Element): Self = this.set("_contentType", value.asInstanceOf[js.Any])
+    def setType(value: js.Array[Coding]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_contentType: Self = this.set("_contentType", js.undefined)
+    def setTypeVarargs(value: Coding*): Self = StObject.set(x, "type", js.Array(value :_*))
     
     @scala.inline
-    def set_onBehalfOfUri(value: Element): Self = this.set("_onBehalfOfUri", value.asInstanceOf[js.Any])
+    def setWhen(value: instant): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_onBehalfOfUri: Self = this.set("_onBehalfOfUri", js.undefined)
+    def setWhoReference(value: Reference): Self = StObject.set(x, "whoReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_when(value: Element): Self = this.set("_when", value.asInstanceOf[js.Any])
+    def setWhoReferenceUndefined: Self = StObject.set(x, "whoReference", js.undefined)
     
     @scala.inline
-    def delete_when: Self = this.set("_when", js.undefined)
+    def setWhoUri(value: uri): Self = StObject.set(x, "whoUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_whoUri(value: Element): Self = this.set("_whoUri", value.asInstanceOf[js.Any])
+    def setWhoUriUndefined: Self = StObject.set(x, "whoUri", js.undefined)
     
     @scala.inline
-    def delete_whoUri: Self = this.set("_whoUri", js.undefined)
+    def set_blob(value: Element): Self = StObject.set(x, "_blob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlob(value: base64Binary): Self = this.set("blob", value.asInstanceOf[js.Any])
+    def set_blobUndefined: Self = StObject.set(x, "_blob", js.undefined)
     
     @scala.inline
-    def deleteBlob: Self = this.set("blob", js.undefined)
+    def set_contentType(value: Element): Self = StObject.set(x, "_contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: code): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def set_contentTypeUndefined: Self = StObject.set(x, "_contentType", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def set_onBehalfOfUri(value: Element): Self = StObject.set(x, "_onBehalfOfUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnBehalfOfReference(value: Reference): Self = this.set("onBehalfOfReference", value.asInstanceOf[js.Any])
+    def set_onBehalfOfUriUndefined: Self = StObject.set(x, "_onBehalfOfUri", js.undefined)
     
     @scala.inline
-    def deleteOnBehalfOfReference: Self = this.set("onBehalfOfReference", js.undefined)
+    def set_when(value: Element): Self = StObject.set(x, "_when", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnBehalfOfUri(value: uri): Self = this.set("onBehalfOfUri", value.asInstanceOf[js.Any])
+    def set_whenUndefined: Self = StObject.set(x, "_when", js.undefined)
     
     @scala.inline
-    def deleteOnBehalfOfUri: Self = this.set("onBehalfOfUri", js.undefined)
+    def set_whoUri(value: Element): Self = StObject.set(x, "_whoUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWhoReference(value: Reference): Self = this.set("whoReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhoReference: Self = this.set("whoReference", js.undefined)
-    
-    @scala.inline
-    def setWhoUri(value: uri): Self = this.set("whoUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhoUri: Self = this.set("whoUri", js.undefined)
+    def set_whoUriUndefined: Self = StObject.set(x, "_whoUri", js.undefined)
   }
 }

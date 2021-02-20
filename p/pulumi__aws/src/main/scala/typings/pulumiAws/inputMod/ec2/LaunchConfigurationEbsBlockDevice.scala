@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.ec2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LaunchConfigurationEbsBlockDevice extends js.Object {
+trait LaunchConfigurationEbsBlockDevice extends StObject {
   
   var deleteOnTermination: js.UndefOr[Input[Boolean]] = js.native
   
@@ -33,63 +34,51 @@ object LaunchConfigurationEbsBlockDevice {
   }
   
   @scala.inline
-  implicit class LaunchConfigurationEbsBlockDeviceOps[Self <: LaunchConfigurationEbsBlockDevice] (val x: Self) extends AnyVal {
+  implicit class LaunchConfigurationEbsBlockDeviceMutableBuilder[Self <: LaunchConfigurationEbsBlockDevice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleteOnTermination(value: Input[Boolean]): Self = StObject.set(x, "deleteOnTermination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteOnTerminationUndefined: Self = StObject.set(x, "deleteOnTermination", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceName(value: Input[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceName(value: Input[String]): Self = this.set("deviceName", value.asInstanceOf[js.Any])
+    def setEncrypted(value: Input[Boolean]): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteOnTermination(value: Input[Boolean]): Self = this.set("deleteOnTermination", value.asInstanceOf[js.Any])
+    def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
     
     @scala.inline
-    def deleteDeleteOnTermination: Self = this.set("deleteOnTermination", js.undefined)
+    def setIops(value: Input[Double]): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncrypted(value: Input[Boolean]): Self = this.set("encrypted", value.asInstanceOf[js.Any])
+    def setIopsUndefined: Self = StObject.set(x, "iops", js.undefined)
     
     @scala.inline
-    def deleteEncrypted: Self = this.set("encrypted", js.undefined)
+    def setNoDevice(value: Input[Boolean]): Self = StObject.set(x, "noDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIops(value: Input[Double]): Self = this.set("iops", value.asInstanceOf[js.Any])
+    def setNoDeviceUndefined: Self = StObject.set(x, "noDevice", js.undefined)
     
     @scala.inline
-    def deleteIops: Self = this.set("iops", js.undefined)
+    def setSnapshotId(value: Input[String]): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoDevice(value: Input[Boolean]): Self = this.set("noDevice", value.asInstanceOf[js.Any])
+    def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
     
     @scala.inline
-    def deleteNoDevice: Self = this.set("noDevice", js.undefined)
+    def setVolumeSize(value: Input[Double]): Self = StObject.set(x, "volumeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotId(value: Input[String]): Self = this.set("snapshotId", value.asInstanceOf[js.Any])
+    def setVolumeSizeUndefined: Self = StObject.set(x, "volumeSize", js.undefined)
     
     @scala.inline
-    def deleteSnapshotId: Self = this.set("snapshotId", js.undefined)
+    def setVolumeType(value: Input[String]): Self = StObject.set(x, "volumeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeSize(value: Input[Double]): Self = this.set("volumeSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeSize: Self = this.set("volumeSize", js.undefined)
-    
-    @scala.inline
-    def setVolumeType(value: Input[String]): Self = this.set("volumeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeType: Self = this.set("volumeType", js.undefined)
+    def setVolumeTypeUndefined: Self = StObject.set(x, "volumeType", js.undefined)
   }
 }

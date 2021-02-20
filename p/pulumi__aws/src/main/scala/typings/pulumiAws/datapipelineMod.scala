@@ -5,14 +5,14 @@ import typings.pulumiAws.datapipelinePipelineMod.PipelineState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/datapipeline", JSImport.Namespace)
-@js.native
-object datapipelineMod extends js.Object {
+object datapipelineMod {
   
+  @JSImport("@pulumi/aws/datapipeline", "Pipeline")
   @js.native
   class Pipeline protected ()
     extends typings.pulumiAws.datapipelinePipelineMod.Pipeline {
@@ -29,8 +29,7 @@ object datapipelineMod extends js.Object {
     def this(name: String, args: PipelineArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Pipeline extends js.Object {
+  object Pipeline {
     
     /**
       * Get an existing Pipeline resource's state with the given name, ID, and optional extra
@@ -41,15 +40,25 @@ object datapipelineMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/datapipeline", "Pipeline.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.datapipelinePipelineMod.Pipeline = js.native
+    @JSImport("@pulumi/aws/datapipeline", "Pipeline.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.datapipelinePipelineMod.Pipeline = js.native
+    @JSImport("@pulumi/aws/datapipeline", "Pipeline.get")
+    @js.native
     def get(name: String, id: Input[ID], state: PipelineState): typings.pulumiAws.datapipelinePipelineMod.Pipeline = js.native
+    @JSImport("@pulumi/aws/datapipeline", "Pipeline.get")
+    @js.native
     def get(name: String, id: Input[ID], state: PipelineState, opts: CustomResourceOptions): typings.pulumiAws.datapipelinePipelineMod.Pipeline = js.native
     
     /**
       * Returns true if the given object is an instance of Pipeline.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/datapipeline", "Pipeline.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datapipeline/pipeline.Pipeline */ Boolean = js.native
   }
 }

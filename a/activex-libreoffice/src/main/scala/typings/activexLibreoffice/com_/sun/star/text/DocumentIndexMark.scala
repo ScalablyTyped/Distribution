@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.text
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,27 +47,15 @@ object DocumentIndexMark {
   }
   
   @scala.inline
-  implicit class DocumentIndexMarkOps[Self <: DocumentIndexMark] (val x: Self) extends AnyVal {
+  implicit class DocumentIndexMarkMutableBuilder[Self <: DocumentIndexMark] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsMainEntry(value: Boolean): Self = StObject.set(x, "IsMainEntry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrimaryKey(value: String): Self = StObject.set(x, "PrimaryKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsMainEntry(value: Boolean): Self = this.set("IsMainEntry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrimaryKey(value: String): Self = this.set("PrimaryKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecondaryKey(value: String): Self = this.set("SecondaryKey", value.asInstanceOf[js.Any])
+    def setSecondaryKey(value: String): Self = StObject.set(x, "SecondaryKey", value.asInstanceOf[js.Any])
   }
 }

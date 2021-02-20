@@ -1,12 +1,13 @@
 package typings.baiduApp.anon
 
 import typings.baiduApp.swan.networkType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsConnected extends js.Object {
+trait IsConnected extends StObject {
   
   var isConnected: Boolean = js.native
   
@@ -21,24 +22,12 @@ object IsConnected {
   }
   
   @scala.inline
-  implicit class IsConnectedOps[Self <: IsConnected] (val x: Self) extends AnyVal {
+  implicit class IsConnectedMutableBuilder[Self <: IsConnected] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsConnected(value: Boolean): Self = this.set("isConnected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNetworkType(value: networkType): Self = this.set("networkType", value.asInstanceOf[js.Any])
+    def setNetworkType(value: networkType): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
   }
 }

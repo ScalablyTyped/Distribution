@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NoiseReducerSpatialFilterSettings extends js.Object {
+trait NoiseReducerSpatialFilterSettings extends StObject {
   
   /**
     * Specify strength of post noise reduction sharpening filter, with 0 disabling the filter and 3 enabling it at maximum strength.
@@ -31,36 +32,24 @@ object NoiseReducerSpatialFilterSettings {
   }
   
   @scala.inline
-  implicit class NoiseReducerSpatialFilterSettingsOps[Self <: NoiseReducerSpatialFilterSettings] (val x: Self) extends AnyVal {
+  implicit class NoiseReducerSpatialFilterSettingsMutableBuilder[Self <: NoiseReducerSpatialFilterSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPostFilterSharpenStrength(value: integerMin0Max3): Self = StObject.set(x, "PostFilterSharpenStrength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPostFilterSharpenStrengthUndefined: Self = StObject.set(x, "PostFilterSharpenStrength", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSpeed(value: integerMinNegative2Max3): Self = StObject.set(x, "Speed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostFilterSharpenStrength(value: integerMin0Max3): Self = this.set("PostFilterSharpenStrength", value.asInstanceOf[js.Any])
+    def setSpeedUndefined: Self = StObject.set(x, "Speed", js.undefined)
     
     @scala.inline
-    def deletePostFilterSharpenStrength: Self = this.set("PostFilterSharpenStrength", js.undefined)
+    def setStrength(value: integerMin0Max16): Self = StObject.set(x, "Strength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeed(value: integerMinNegative2Max3): Self = this.set("Speed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpeed: Self = this.set("Speed", js.undefined)
-    
-    @scala.inline
-    def setStrength(value: integerMin0Max16): Self = this.set("Strength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrength: Self = this.set("Strength", js.undefined)
+    def setStrengthUndefined: Self = StObject.set(x, "Strength", js.undefined)
   }
 }

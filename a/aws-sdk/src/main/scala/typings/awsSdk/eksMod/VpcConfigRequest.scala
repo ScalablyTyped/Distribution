@@ -1,11 +1,12 @@
 package typings.awsSdk.eksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VpcConfigRequest extends js.Object {
+trait VpcConfigRequest extends StObject {
   
   /**
     * Set this value to true to enable private access for your cluster's Kubernetes API server endpoint. If you enable private access, Kubernetes API requests from within your cluster's VPC use the private VPC endpoint. The default value for this parameter is false, which disables private access for your Kubernetes API server. If you disable private access and you have worker nodes or AWS Fargate pods in the cluster, then ensure that publicAccessCidrs includes the necessary CIDR blocks for communication with the worker nodes or Fargate pods. For more information, see Amazon EKS Cluster Endpoint Access Control in the  Amazon EKS User Guide .
@@ -41,57 +42,45 @@ object VpcConfigRequest {
   }
   
   @scala.inline
-  implicit class VpcConfigRequestOps[Self <: VpcConfigRequest] (val x: Self) extends AnyVal {
+  implicit class VpcConfigRequestMutableBuilder[Self <: VpcConfigRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpointPrivateAccess(value: BoxedBoolean): Self = StObject.set(x, "endpointPrivateAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpointPrivateAccessUndefined: Self = StObject.set(x, "endpointPrivateAccess", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndpointPublicAccess(value: BoxedBoolean): Self = StObject.set(x, "endpointPublicAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointPrivateAccess(value: BoxedBoolean): Self = this.set("endpointPrivateAccess", value.asInstanceOf[js.Any])
+    def setEndpointPublicAccessUndefined: Self = StObject.set(x, "endpointPublicAccess", js.undefined)
     
     @scala.inline
-    def deleteEndpointPrivateAccess: Self = this.set("endpointPrivateAccess", js.undefined)
+    def setPublicAccessCidrs(value: StringList): Self = StObject.set(x, "publicAccessCidrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointPublicAccess(value: BoxedBoolean): Self = this.set("endpointPublicAccess", value.asInstanceOf[js.Any])
+    def setPublicAccessCidrsUndefined: Self = StObject.set(x, "publicAccessCidrs", js.undefined)
     
     @scala.inline
-    def deleteEndpointPublicAccess: Self = this.set("endpointPublicAccess", js.undefined)
+    def setPublicAccessCidrsVarargs(value: String*): Self = StObject.set(x, "publicAccessCidrs", js.Array(value :_*))
     
     @scala.inline
-    def setPublicAccessCidrsVarargs(value: String*): Self = this.set("publicAccessCidrs", js.Array(value :_*))
+    def setSecurityGroupIds(value: StringList): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicAccessCidrs(value: StringList): Self = this.set("publicAccessCidrs", value.asInstanceOf[js.Any])
+    def setSecurityGroupIdsUndefined: Self = StObject.set(x, "securityGroupIds", js.undefined)
     
     @scala.inline
-    def deletePublicAccessCidrs: Self = this.set("publicAccessCidrs", js.undefined)
+    def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
     
     @scala.inline
-    def setSecurityGroupIdsVarargs(value: String*): Self = this.set("securityGroupIds", js.Array(value :_*))
+    def setSubnetIds(value: StringList): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroupIds(value: StringList): Self = this.set("securityGroupIds", value.asInstanceOf[js.Any])
+    def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
     
     @scala.inline
-    def deleteSecurityGroupIds: Self = this.set("securityGroupIds", js.undefined)
-    
-    @scala.inline
-    def setSubnetIdsVarargs(value: String*): Self = this.set("subnetIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubnetIds(value: StringList): Self = this.set("subnetIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetIds: Self = this.set("subnetIds", js.undefined)
+    def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
   }
 }

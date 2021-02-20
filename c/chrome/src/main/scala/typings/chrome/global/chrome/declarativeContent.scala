@@ -2,6 +2,7 @@ package typings.chrome.global.chrome
 
 import typings.chrome.anon.ImageData
 import typings.chrome.chrome.declarativeContent.PageChangedEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,29 +15,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Availability: Since Chrome 33.
   * Permissions:  "declarativeContent"
   */
-@JSGlobal("chrome.declarativeContent")
-@js.native
-object declarativeContent extends js.Object {
+object declarativeContent {
   
-  var onPageChanged: PageChangedEvent = js.native
+  @JSGlobal("chrome.declarativeContent")
+  @js.native
+  val ^ : js.Any = js.native
   
+  @JSGlobal("chrome.declarativeContent.PageStateMatcher")
   @js.native
   class PageStateMatcher protected ()
     extends typings.chrome.chrome.declarativeContent.PageStateMatcher {
     def this(options: typings.chrome.chrome.declarativeContent.PageStateMatcherProperties) = this()
   }
   
+  @JSGlobal("chrome.declarativeContent.PageStateMatcherProperties")
   @js.native
   class PageStateMatcherProperties ()
     extends typings.chrome.chrome.declarativeContent.PageStateMatcherProperties
   
+  @JSGlobal("chrome.declarativeContent.SetIcon")
   @js.native
   class SetIcon ()
     extends typings.chrome.chrome.declarativeContent.SetIcon {
     def this(options: ImageData) = this()
   }
   
+  @JSGlobal("chrome.declarativeContent.ShowPageAction")
   @js.native
   class ShowPageAction ()
     extends typings.chrome.chrome.declarativeContent.ShowPageAction
+  
+  @JSGlobal("chrome.declarativeContent.onPageChanged")
+  @js.native
+  def onPageChanged: PageChangedEvent = js.native
+  @scala.inline
+  def onPageChanged_=(x: PageChangedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onPageChanged")(x.asInstanceOf[js.Any])
 }

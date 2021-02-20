@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivateGatewayInput extends js.Object {
+trait ActivateGatewayInput extends StObject {
   
   /**
     * Your gateway activation key. You can obtain the activation key by sending an HTTP GET request with redirects enabled to the gateway IP address (port 80). The redirect URL returned in the response provides you the activation key for your gateway in the query string parameter activationKey. It may also include other activation-related parameters, however, these are merely defaults -- the arguments you pass to the ActivateGateway API call determine the actual configuration of your gateway. For more information, see Getting activation key in the AWS Storage Gateway User Guide.
@@ -61,57 +62,45 @@ object ActivateGatewayInput {
   }
   
   @scala.inline
-  implicit class ActivateGatewayInputOps[Self <: ActivateGatewayInput] (val x: Self) extends AnyVal {
+  implicit class ActivateGatewayInputMutableBuilder[Self <: ActivateGatewayInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivationKey(value: ActivationKey): Self = StObject.set(x, "ActivationKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGatewayName(value: GatewayName): Self = StObject.set(x, "GatewayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGatewayRegion(value: RegionId): Self = StObject.set(x, "GatewayRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivationKey(value: ActivationKey): Self = this.set("ActivationKey", value.asInstanceOf[js.Any])
+    def setGatewayTimezone(value: GatewayTimezone): Self = StObject.set(x, "GatewayTimezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayName(value: GatewayName): Self = this.set("GatewayName", value.asInstanceOf[js.Any])
+    def setGatewayType(value: GatewayType): Self = StObject.set(x, "GatewayType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayRegion(value: RegionId): Self = this.set("GatewayRegion", value.asInstanceOf[js.Any])
+    def setGatewayTypeUndefined: Self = StObject.set(x, "GatewayType", js.undefined)
     
     @scala.inline
-    def setGatewayTimezone(value: GatewayTimezone): Self = this.set("GatewayTimezone", value.asInstanceOf[js.Any])
+    def setMediumChangerType(value: MediumChangerType): Self = StObject.set(x, "MediumChangerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayType(value: GatewayType): Self = this.set("GatewayType", value.asInstanceOf[js.Any])
+    def setMediumChangerTypeUndefined: Self = StObject.set(x, "MediumChangerType", js.undefined)
     
     @scala.inline
-    def deleteGatewayType: Self = this.set("GatewayType", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediumChangerType(value: MediumChangerType): Self = this.set("MediumChangerType", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteMediumChangerType: Self = this.set("MediumChangerType", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setTapeDriveType(value: TapeDriveType): Self = StObject.set(x, "TapeDriveType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setTapeDriveType(value: TapeDriveType): Self = this.set("TapeDriveType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTapeDriveType: Self = this.set("TapeDriveType", js.undefined)
+    def setTapeDriveTypeUndefined: Self = StObject.set(x, "TapeDriveType", js.undefined)
   }
 }

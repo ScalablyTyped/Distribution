@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,36 +44,24 @@ object FeatureVisibleElements {
   }
   
   @scala.inline
-  implicit class FeatureVisibleElementsOps[Self <: FeatureVisibleElements] (val x: Self) extends AnyVal {
+  implicit class FeatureVisibleElementsMutableBuilder[Self <: FeatureVisibleElements] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: Boolean | VisibleContentElements): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastEditInfo(value: Boolean): Self = StObject.set(x, "lastEditInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: Boolean | VisibleContentElements): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setLastEditInfoUndefined: Self = StObject.set(x, "lastEditInfo", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastEditInfo(value: Boolean): Self = this.set("lastEditInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastEditInfo: Self = this.set("lastEditInfo", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: Boolean): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

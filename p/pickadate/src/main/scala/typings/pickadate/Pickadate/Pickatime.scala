@@ -6,12 +6,13 @@ import typings.pickadate.pickadateStrings.$root
 import typings.pickadate.pickadateStrings._hidden
 import typings.pickadate.pickadateStrings.picker
 import typings.std.HTMLInputElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pickatime extends js.Object {
+trait Pickatime extends StObject {
   
   /**
     * Initialize a time picker.

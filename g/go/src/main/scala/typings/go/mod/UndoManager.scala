@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The constructor produces an empty UndoManager with no transaction history.
   */
-class UndoManager () extends js.Object {
+class UndoManager () extends StObject {
   
   /**
     * Make sure this UndoManager knows about a Model for which it may receive ChangedEvents when the given Model is changed.

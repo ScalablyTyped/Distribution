@@ -2,6 +2,7 @@ package typings.officeUiFabricReact.indexBundleMod
 
 import typings.officeUiFabricReact.anon.Options
 import typings.officeUiFabricReact.dropdownTypesMod.IDropdownProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +14,15 @@ class DropdownBase protected ()
   def this(props: IDropdownProps) = this()
 }
 /* static members */
-@JSImport("office-ui-fabric-react/lib/index.bundle", "DropdownBase")
-@js.native
-object DropdownBase extends js.Object {
+object DropdownBase {
   
-  var defaultProps: Options = js.native
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "DropdownBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "DropdownBase.defaultProps")
+  @js.native
+  def defaultProps: Options = js.native
+  @scala.inline
+  def defaultProps_=(x: Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

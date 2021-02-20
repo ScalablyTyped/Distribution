@@ -1,11 +1,12 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchFirstResult extends js.Object {
+trait SearchFirstResult extends StObject {
   
   /**
     * The node found by the search
@@ -29,24 +30,12 @@ object SearchFirstResult {
   }
   
   @scala.inline
-  implicit class SearchFirstResultOps[Self <: SearchFirstResult] (val x: Self) extends AnyVal {
+  implicit class SearchFirstResultMutableBuilder[Self <: SearchFirstResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFound(value: NodeCollection): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFound(value: NodeCollection): Self = this.set("found", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: CollectionArgument): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPath(value: CollectionArgument): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.popperjsCore.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ key in @popperjs/core.@popperjs/core/lib/enums.Placement ]: @popperjs/core.@popperjs/core/lib/types.Offsets} */
 @js.native
-trait OffsetData extends js.Object {
+trait OffsetData extends StObject {
   
   var auto: Offsets = js.native
   
@@ -73,63 +74,51 @@ object OffsetData {
   }
   
   @scala.inline
-  implicit class OffsetDataOps[Self <: OffsetData] (val x: Self) extends AnyVal {
+  implicit class OffsetDataMutableBuilder[Self <: OffsetData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuto(value: Offsets): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setAuto-end`(value: Offsets): Self = StObject.set(x, "auto-end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setAuto-start`(value: Offsets): Self = StObject.set(x, "auto-start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuto(value: Offsets): Self = this.set("auto", value.asInstanceOf[js.Any])
+    def setBottom(value: Offsets): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAuto-end`(value: Offsets): Self = this.set("auto-end", value.asInstanceOf[js.Any])
+    def `setBottom-end`(value: Offsets): Self = StObject.set(x, "bottom-end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAuto-start`(value: Offsets): Self = this.set("auto-start", value.asInstanceOf[js.Any])
+    def `setBottom-start`(value: Offsets): Self = StObject.set(x, "bottom-start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottom(value: Offsets): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    def setLeft(value: Offsets): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBottom-end`(value: Offsets): Self = this.set("bottom-end", value.asInstanceOf[js.Any])
+    def `setLeft-end`(value: Offsets): Self = StObject.set(x, "left-end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBottom-start`(value: Offsets): Self = this.set("bottom-start", value.asInstanceOf[js.Any])
+    def `setLeft-start`(value: Offsets): Self = StObject.set(x, "left-start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: Offsets): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setRight(value: Offsets): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLeft-end`(value: Offsets): Self = this.set("left-end", value.asInstanceOf[js.Any])
+    def `setRight-end`(value: Offsets): Self = StObject.set(x, "right-end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLeft-start`(value: Offsets): Self = this.set("left-start", value.asInstanceOf[js.Any])
+    def `setRight-start`(value: Offsets): Self = StObject.set(x, "right-start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRight(value: Offsets): Self = this.set("right", value.asInstanceOf[js.Any])
+    def setTop(value: Offsets): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setRight-end`(value: Offsets): Self = this.set("right-end", value.asInstanceOf[js.Any])
+    def `setTop-end`(value: Offsets): Self = StObject.set(x, "top-end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setRight-start`(value: Offsets): Self = this.set("right-start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTop(value: Offsets): Self = this.set("top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setTop-end`(value: Offsets): Self = this.set("top-end", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setTop-start`(value: Offsets): Self = this.set("top-start", value.asInstanceOf[js.Any])
+    def `setTop-start`(value: Offsets): Self = StObject.set(x, "top-start", value.asInstanceOf[js.Any])
   }
 }

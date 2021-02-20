@@ -1,26 +1,24 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NotificationOperation extends js.Object
+sealed trait NotificationOperation extends StObject
 @JSImport("vso-node-api/interfaces/NotificationInterfaces", "NotificationOperation")
 @js.native
-object NotificationOperation extends js.Object {
+object NotificationOperation extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NotificationOperation with Double] = js.native
   
   @js.native
   sealed trait None extends NotificationOperation
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  /* 0 */ val None: typings.vsoNodeApi.notificationInterfacesMod.NotificationOperation.None with Double = js.native
   
   @js.native
   sealed trait SuspendUnprocessed extends NotificationOperation
-  /* 1 */ @js.native
-  object SuspendUnprocessed extends TopLevel[SuspendUnprocessed with Double]
+  /* 1 */ val SuspendUnprocessed: typings.vsoNodeApi.notificationInterfacesMod.NotificationOperation.SuspendUnprocessed with Double = js.native
 }

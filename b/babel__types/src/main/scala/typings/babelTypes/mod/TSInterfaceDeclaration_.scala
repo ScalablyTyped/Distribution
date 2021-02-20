@@ -1,6 +1,7 @@
 package typings.babelTypes.mod
 
 import typings.babelTypes.babelTypesStrings.TSInterfaceDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,48 +36,36 @@ object TSInterfaceDeclaration_ {
   }
   
   @scala.inline
-  implicit class TSInterfaceDeclaration_Ops[Self <: TSInterfaceDeclaration_] (val x: Self) extends AnyVal {
+  implicit class TSInterfaceDeclaration_MutableBuilder[Self <: TSInterfaceDeclaration_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: TSInterfaceBody_): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeclare(value: Boolean): Self = StObject.set(x, "declare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeclareNull: Self = StObject.set(x, "declare", null)
     
     @scala.inline
-    def setBody(value: TSInterfaceBody_): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setExtends(value: js.Array[TSExpressionWithTypeArguments_]): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Identifier_): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setExtendsNull: Self = StObject.set(x, "extends", null)
     
     @scala.inline
-    def setType(value: TSInterfaceDeclaration): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setExtendsVarargs(value: TSExpressionWithTypeArguments_ *): Self = StObject.set(x, "extends", js.Array(value :_*))
     
     @scala.inline
-    def setDeclare(value: Boolean): Self = this.set("declare", value.asInstanceOf[js.Any])
+    def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeclareNull: Self = this.set("declare", null)
+    def setType(value: TSInterfaceDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendsVarargs(value: TSExpressionWithTypeArguments_ *): Self = this.set("extends", js.Array(value :_*))
+    def setTypeParameters(value: TSTypeParameterDeclaration_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtends(value: js.Array[TSExpressionWithTypeArguments_]): Self = this.set("extends", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExtendsNull: Self = this.set("extends", null)
-    
-    @scala.inline
-    def setTypeParameters(value: TSTypeParameterDeclaration_): Self = this.set("typeParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeParametersNull: Self = this.set("typeParameters", null)
+    def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
   }
 }

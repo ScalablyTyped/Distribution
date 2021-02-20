@@ -3,6 +3,7 @@ package typings.sharepoint.SP.Social
 import typings.sharepoint.SP.ClientValueObject
 import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -102,69 +103,57 @@ object SocialActor {
   }
   
   @scala.inline
-  implicit class SocialActorOps[Self <: SocialActor] (val x: Self) extends AnyVal {
+  implicit class SocialActorMutableBuilder[Self <: SocialActor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_accountName(value: () => String): Self = StObject.set(x, "get_accountName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_actorType(value: () => SocialActorType): Self = StObject.set(x, "get_actorType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_canFollow(value: () => Boolean): Self = StObject.set(x, "get_canFollow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_accountName(value: () => String): Self = this.set("get_accountName", js.Any.fromFunction0(value))
+    def setGet_contentUri(value: () => String): Self = StObject.set(x, "get_contentUri", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_actorType(value: () => SocialActorType): Self = this.set("get_actorType", js.Any.fromFunction0(value))
+    def setGet_emailAddress(value: () => String): Self = StObject.set(x, "get_emailAddress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_canFollow(value: () => Boolean): Self = this.set("get_canFollow", js.Any.fromFunction0(value))
+    def setGet_followedContentUri(value: () => String): Self = StObject.set(x, "get_followedContentUri", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_contentUri(value: () => String): Self = this.set("get_contentUri", js.Any.fromFunction0(value))
+    def setGet_id(value: () => String): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_emailAddress(value: () => String): Self = this.set("get_emailAddress", js.Any.fromFunction0(value))
+    def setGet_imageUri(value: () => String): Self = StObject.set(x, "get_imageUri", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_followedContentUri(value: () => String): Self = this.set("get_followedContentUri", js.Any.fromFunction0(value))
+    def setGet_isFollowed(value: () => Boolean): Self = StObject.set(x, "get_isFollowed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_id(value: () => String): Self = this.set("get_id", js.Any.fromFunction0(value))
+    def setGet_libraryUri(value: () => String): Self = StObject.set(x, "get_libraryUri", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_imageUri(value: () => String): Self = this.set("get_imageUri", js.Any.fromFunction0(value))
+    def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_isFollowed(value: () => Boolean): Self = this.set("get_isFollowed", js.Any.fromFunction0(value))
+    def setGet_personalSiteUri(value: () => String): Self = StObject.set(x, "get_personalSiteUri", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_libraryUri(value: () => String): Self = this.set("get_libraryUri", js.Any.fromFunction0(value))
+    def setGet_status(value: () => SocialStatusCode): Self = StObject.set(x, "get_status", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_name(value: () => String): Self = this.set("get_name", js.Any.fromFunction0(value))
+    def setGet_statusText(value: () => String): Self = StObject.set(x, "get_statusText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_personalSiteUri(value: () => String): Self = this.set("get_personalSiteUri", js.Any.fromFunction0(value))
+    def setGet_tagGuid(value: () => String): Self = StObject.set(x, "get_tagGuid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_status(value: () => SocialStatusCode): Self = this.set("get_status", js.Any.fromFunction0(value))
+    def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_statusText(value: () => String): Self = this.set("get_statusText", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_tagGuid(value: () => String): Self = this.set("get_tagGuid", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_title(value: () => String): Self = this.set("get_title", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_uri(value: () => String): Self = this.set("get_uri", js.Any.fromFunction0(value))
+    def setGet_uri(value: () => String): Self = StObject.set(x, "get_uri", js.Any.fromFunction0(value))
   }
 }

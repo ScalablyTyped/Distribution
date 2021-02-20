@@ -3,6 +3,7 @@ package typings.styledSystem.mod
 import typings.styledSystem.styledSystemStrings.borderWidths
 import typings.styledSystem.styledSystemStrings.colors
 import typings.styledSystem.styledSystemStrings.radii
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,54 +52,42 @@ object BorderProps {
   }
   
   @scala.inline
-  implicit class BorderPropsOps[Self <: BorderProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BorderProps[ThemeType, TVal])) extends AnyVal {
+  implicit class BorderPropsMutableBuilder[Self <: BorderProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BorderProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorder(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderNull: Self = StObject.set(x, "border", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
     @scala.inline
-    def setBorderVarargs(value: (TVal | Null)*): Self = this.set("border", js.Array(value :_*))
+    def setBorderVarargs(value: (TVal | Null)*): Self = StObject.set(x, "border", js.Array(value :_*))
     
     @scala.inline
-    def setBorder(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("border", value.asInstanceOf[js.Any])
+    def setBorderX(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorder: Self = this.set("border", js.undefined)
+    def setBorderXNull: Self = StObject.set(x, "borderX", null)
     
     @scala.inline
-    def setBorderNull: Self = this.set("border", null)
+    def setBorderXUndefined: Self = StObject.set(x, "borderX", js.undefined)
     
     @scala.inline
-    def setBorderXVarargs(value: (TVal | Null)*): Self = this.set("borderX", js.Array(value :_*))
+    def setBorderXVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderX", js.Array(value :_*))
     
     @scala.inline
-    def setBorderX(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("borderX", value.asInstanceOf[js.Any])
+    def setBorderY(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderX: Self = this.set("borderX", js.undefined)
+    def setBorderYNull: Self = StObject.set(x, "borderY", null)
     
     @scala.inline
-    def setBorderXNull: Self = this.set("borderX", null)
+    def setBorderYUndefined: Self = StObject.set(x, "borderY", js.undefined)
     
     @scala.inline
-    def setBorderYVarargs(value: (TVal | Null)*): Self = this.set("borderY", js.Array(value :_*))
-    
-    @scala.inline
-    def setBorderY(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("borderY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderY: Self = this.set("borderY", js.undefined)
-    
-    @scala.inline
-    def setBorderYNull: Self = this.set("borderY", null)
+    def setBorderYVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderY", js.Array(value :_*))
   }
 }

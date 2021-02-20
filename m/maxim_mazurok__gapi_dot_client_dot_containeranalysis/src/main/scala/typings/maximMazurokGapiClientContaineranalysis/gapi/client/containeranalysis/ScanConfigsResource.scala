@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientContaineranalysis.anon.Key
 import typings.maximMazurokGapiClientContaineranalysis.anon.PageSize
 import typings.maximMazurokGapiClientContaineranalysis.anon.UploadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScanConfigsResource extends js.Object {
+trait ScanConfigsResource extends StObject {
   
   /** Gets the specified scan configuration. */
   def get(): Request[ScanConfig] = js.native

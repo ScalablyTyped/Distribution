@@ -1,11 +1,12 @@
 package typings.awsSdk.codestarconnectionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListConnectionsInput extends js.Object {
+trait ListConnectionsInput extends StObject {
   
   /**
     * Filters the list of connections to those associated with a specified host.
@@ -36,42 +37,30 @@ object ListConnectionsInput {
   }
   
   @scala.inline
-  implicit class ListConnectionsInputOps[Self <: ListConnectionsInput] (val x: Self) extends AnyVal {
+  implicit class ListConnectionsInputMutableBuilder[Self <: ListConnectionsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostArnFilter(value: HostArn): Self = StObject.set(x, "HostArnFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostArnFilterUndefined: Self = StObject.set(x, "HostArnFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostArnFilter(value: HostArn): Self = this.set("HostArnFilter", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteHostArnFilter: Self = this.set("HostArnFilter", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setProviderTypeFilter(value: ProviderType): Self = StObject.set(x, "ProviderTypeFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setProviderTypeFilter(value: ProviderType): Self = this.set("ProviderTypeFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProviderTypeFilter: Self = this.set("ProviderTypeFilter", js.undefined)
+    def setProviderTypeFilterUndefined: Self = StObject.set(x, "ProviderTypeFilter", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DateFormatOptions extends js.Object {
+trait DateFormatOptions extends StObject {
   
   /**
     * A quick formatting option for the date. The following string values are supported, reformatting the date February 28, 2016 as shown:
@@ -38,36 +39,24 @@ object DateFormatOptions {
   }
   
   @scala.inline
-  implicit class DateFormatOptionsOps[Self <: DateFormatOptions] (val x: Self) extends AnyVal {
+  implicit class DateFormatOptionsMutableBuilder[Self <: DateFormatOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormatType(value: String): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatTypeUndefined: Self = StObject.set(x, "formatType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatType(value: String): Self = this.set("formatType", value.asInstanceOf[js.Any])
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
     @scala.inline
-    def deleteFormatType: Self = this.set("formatType", js.undefined)
+    def setTimeZone(value: Double): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPattern(value: String): Self = this.set("pattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
-    
-    @scala.inline
-    def setTimeZone(value: Double): Self = this.set("timeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

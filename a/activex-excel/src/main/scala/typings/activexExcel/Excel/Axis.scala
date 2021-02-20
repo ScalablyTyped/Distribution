@@ -1,12 +1,13 @@
 package typings.activexExcel.Excel
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Axis extends js.Object {
+trait Axis extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -173,171 +174,159 @@ object Axis {
   }
   
   @scala.inline
-  implicit class AxisOps[Self <: Axis] (val x: Self) extends AnyVal {
+  implicit class AxisMutableBuilder[Self <: Axis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisBetweenCategories(value: Boolean): Self = StObject.set(x, "AxisBetweenCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxisGroup(value: XlAxisGroup): Self = StObject.set(x, "AxisGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setAxisTitle(value: AxisTitle): Self = StObject.set(x, "AxisTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisBetweenCategories(value: Boolean): Self = this.set("AxisBetweenCategories", value.asInstanceOf[js.Any])
+    def setBaseUnit(value: XlTimeUnit): Self = StObject.set(x, "BaseUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisGroup(value: XlAxisGroup): Self = this.set("AxisGroup", value.asInstanceOf[js.Any])
+    def setBaseUnitIsAuto(value: Boolean): Self = StObject.set(x, "BaseUnitIsAuto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisTitle(value: AxisTitle): Self = this.set("AxisTitle", value.asInstanceOf[js.Any])
+    def setBorder(value: Border): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseUnit(value: XlTimeUnit): Self = this.set("BaseUnit", value.asInstanceOf[js.Any])
+    def setCategoryNames(value: SafeArray[String] | Range): Self = StObject.set(x, "CategoryNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseUnitIsAuto(value: Boolean): Self = this.set("BaseUnitIsAuto", value.asInstanceOf[js.Any])
+    def setCategoryType(value: XlCategoryType): Self = StObject.set(x, "CategoryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: Border): Self = this.set("Border", value.asInstanceOf[js.Any])
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryNames(value: SafeArray[String] | Range): Self = this.set("CategoryNames", value.asInstanceOf[js.Any])
+    def setCrosses(value: XlAxisCrosses): Self = StObject.set(x, "Crosses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryType(value: XlCategoryType): Self = this.set("CategoryType", value.asInstanceOf[js.Any])
+    def setCrossesAt(value: Double): Self = StObject.set(x, "CrossesAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCrosses(value: XlAxisCrosses): Self = this.set("Crosses", value.asInstanceOf[js.Any])
+    def setDisplayUnit(value: XlDisplayUnit): Self = StObject.set(x, "DisplayUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossesAt(value: Double): Self = this.set("CrossesAt", value.asInstanceOf[js.Any])
+    def setDisplayUnitCustom(value: Double): Self = StObject.set(x, "DisplayUnitCustom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => js.Any): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setDisplayUnitLabel(value: DisplayUnitLabel): Self = StObject.set(x, "DisplayUnitLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayUnit(value: XlDisplayUnit): Self = this.set("DisplayUnit", value.asInstanceOf[js.Any])
+    def setExcelDotAxis_typekey(value: Axis): Self = StObject.set(x, "Excel.Axis_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayUnitCustom(value: Double): Self = this.set("DisplayUnitCustom", value.asInstanceOf[js.Any])
+    def setFormat(value: ChartFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayUnitLabel(value: DisplayUnitLabel): Self = this.set("DisplayUnitLabel", value.asInstanceOf[js.Any])
+    def setHasDisplayUnitLabel(value: Boolean): Self = StObject.set(x, "HasDisplayUnitLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelDotAxis_typekey(value: Axis): Self = this.set("Excel.Axis_typekey", value.asInstanceOf[js.Any])
+    def setHasMajorGridlines(value: Boolean): Self = StObject.set(x, "HasMajorGridlines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: ChartFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
+    def setHasMinorGridlines(value: Boolean): Self = StObject.set(x, "HasMinorGridlines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasDisplayUnitLabel(value: Boolean): Self = this.set("HasDisplayUnitLabel", value.asInstanceOf[js.Any])
+    def setHasTitle(value: Boolean): Self = StObject.set(x, "HasTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasMajorGridlines(value: Boolean): Self = this.set("HasMajorGridlines", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasMinorGridlines(value: Boolean): Self = this.set("HasMinorGridlines", value.asInstanceOf[js.Any])
+    def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasTitle(value: Boolean): Self = this.set("HasTitle", value.asInstanceOf[js.Any])
+    def setLogBase(value: Double): Self = StObject.set(x, "LogBase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setMajorGridlines(value: Gridlines): Self = StObject.set(x, "MajorGridlines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: Double): Self = this.set("Left", value.asInstanceOf[js.Any])
+    def setMajorTickMark(value: XlTickMark): Self = StObject.set(x, "MajorTickMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogBase(value: Double): Self = this.set("LogBase", value.asInstanceOf[js.Any])
+    def setMajorUnit(value: Double): Self = StObject.set(x, "MajorUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorGridlines(value: Gridlines): Self = this.set("MajorGridlines", value.asInstanceOf[js.Any])
+    def setMajorUnitIsAuto(value: Boolean): Self = StObject.set(x, "MajorUnitIsAuto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorTickMark(value: XlTickMark): Self = this.set("MajorTickMark", value.asInstanceOf[js.Any])
+    def setMajorUnitScale(value: XlTimeUnit): Self = StObject.set(x, "MajorUnitScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorUnit(value: Double): Self = this.set("MajorUnit", value.asInstanceOf[js.Any])
+    def setMaximumScale(value: Double): Self = StObject.set(x, "MaximumScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorUnitIsAuto(value: Boolean): Self = this.set("MajorUnitIsAuto", value.asInstanceOf[js.Any])
+    def setMaximumScaleIsAuto(value: Boolean): Self = StObject.set(x, "MaximumScaleIsAuto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorUnitScale(value: XlTimeUnit): Self = this.set("MajorUnitScale", value.asInstanceOf[js.Any])
+    def setMinimumScale(value: Double): Self = StObject.set(x, "MinimumScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumScale(value: Double): Self = this.set("MaximumScale", value.asInstanceOf[js.Any])
+    def setMinimumScaleIsAuto(value: Boolean): Self = StObject.set(x, "MinimumScaleIsAuto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumScaleIsAuto(value: Boolean): Self = this.set("MaximumScaleIsAuto", value.asInstanceOf[js.Any])
+    def setMinorGridlines(value: Gridlines): Self = StObject.set(x, "MinorGridlines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumScale(value: Double): Self = this.set("MinimumScale", value.asInstanceOf[js.Any])
+    def setMinorTickMark(value: XlTickMark): Self = StObject.set(x, "MinorTickMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumScaleIsAuto(value: Boolean): Self = this.set("MinimumScaleIsAuto", value.asInstanceOf[js.Any])
+    def setMinorUnit(value: Double): Self = StObject.set(x, "MinorUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorGridlines(value: Gridlines): Self = this.set("MinorGridlines", value.asInstanceOf[js.Any])
+    def setMinorUnitIsAuto(value: Boolean): Self = StObject.set(x, "MinorUnitIsAuto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorTickMark(value: XlTickMark): Self = this.set("MinorTickMark", value.asInstanceOf[js.Any])
+    def setMinorUnitScale(value: XlTimeUnit): Self = StObject.set(x, "MinorUnitScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorUnit(value: Double): Self = this.set("MinorUnit", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorUnitIsAuto(value: Boolean): Self = this.set("MinorUnitIsAuto", value.asInstanceOf[js.Any])
+    def setReversePlotOrder(value: Boolean): Self = StObject.set(x, "ReversePlotOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorUnitScale(value: XlTimeUnit): Self = this.set("MinorUnitScale", value.asInstanceOf[js.Any])
+    def setScaleType(value: XlScaleType): Self = StObject.set(x, "ScaleType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReversePlotOrder(value: Boolean): Self = this.set("ReversePlotOrder", value.asInstanceOf[js.Any])
+    def setTickLabelPosition(value: XlTickLabelPosition): Self = StObject.set(x, "TickLabelPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleType(value: XlScaleType): Self = this.set("ScaleType", value.asInstanceOf[js.Any])
+    def setTickLabelSpacing(value: Double): Self = StObject.set(x, "TickLabelSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: () => js.Any): Self = this.set("Select", js.Any.fromFunction0(value))
+    def setTickLabelSpacingIsAuto(value: Boolean): Self = StObject.set(x, "TickLabelSpacingIsAuto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickLabelPosition(value: XlTickLabelPosition): Self = this.set("TickLabelPosition", value.asInstanceOf[js.Any])
+    def setTickLabels(value: TickLabels): Self = StObject.set(x, "TickLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickLabelSpacing(value: Double): Self = this.set("TickLabelSpacing", value.asInstanceOf[js.Any])
+    def setTickMarkSpacing(value: Double): Self = StObject.set(x, "TickMarkSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickLabelSpacingIsAuto(value: Boolean): Self = this.set("TickLabelSpacingIsAuto", value.asInstanceOf[js.Any])
+    def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickLabels(value: TickLabels): Self = this.set("TickLabels", value.asInstanceOf[js.Any])
+    def setType(value: XlAxisType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickMarkSpacing(value: Double): Self = this.set("TickMarkSpacing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTop(value: Double): Self = this.set("Top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: XlAxisType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

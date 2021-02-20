@@ -1,28 +1,29 @@
 package typings.ol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/ObjectEventType", JSImport.Namespace)
-@js.native
-object objectEventTypeMod extends js.Object {
+object objectEventTypeMod {
   
+  @JSImport("ol/ObjectEventType", JSImport.Default)
   @js.native
-  sealed trait ObjectEventType extends js.Object
-  @js.native
-  object ObjectEventType extends js.Object {
-    
-    @js.native
-    sealed trait PROPERTYCHANGE extends ObjectEventType
-  }
-  
-  @js.native
-  object default extends js.Object {
+  object default extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[ObjectEventType with String] = js.native
     
     /* "propertychange" */ val PROPERTYCHANGE: typings.ol.objectEventTypeMod.ObjectEventType.PROPERTYCHANGE with String = js.native
+  }
+  
+  @js.native
+  sealed trait ObjectEventType extends StObject
+  @JSImport("ol/ObjectEventType", "ObjectEventType")
+  @js.native
+  object ObjectEventType extends StObject {
+    
+    @js.native
+    sealed trait PROPERTYCHANGE extends ObjectEventType
   }
 }

@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`picture-marker`
 import typings.arcgisJsApi.arcgisJsApiStrings.`simple-marker`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,42 +47,30 @@ object MarkerSymbolProperties {
   }
   
   @scala.inline
-  implicit class MarkerSymbolPropertiesOps[Self <: MarkerSymbolProperties] (val x: Self) extends AnyVal {
+  implicit class MarkerSymbolPropertiesMutableBuilder[Self <: MarkerSymbolProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: `simple-marker` | `picture-marker`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteAngle: Self = this.set("angle", js.undefined)
+    def setXoffset(value: Double | String): Self = StObject.set(x, "xoffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: `simple-marker` | `picture-marker`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setXoffsetUndefined: Self = StObject.set(x, "xoffset", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setYoffset(value: Double | String): Self = StObject.set(x, "yoffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXoffset(value: Double | String): Self = this.set("xoffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXoffset: Self = this.set("xoffset", js.undefined)
-    
-    @scala.inline
-    def setYoffset(value: Double | String): Self = this.set("yoffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYoffset: Self = this.set("yoffset", js.undefined)
+    def setYoffsetUndefined: Self = StObject.set(x, "yoffset", js.undefined)
   }
 }

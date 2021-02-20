@@ -1,11 +1,12 @@
 package typings.fortawesomeFontawesomeSvgCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Params extends js.Object {
+trait Params extends StObject {
   
   var attributes: js.UndefOr[Attributes] = js.native
   
@@ -26,51 +27,39 @@ object Params {
   }
   
   @scala.inline
-  implicit class ParamsOps[Self <: Params] (val x: Self) extends AnyVal {
+  implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClasses(value: String | js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: Attributes): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
     
     @scala.inline
-    def setClassesVarargs(value: String*): Self = this.set("classes", js.Array(value :_*))
+    def setStyles(value: Styles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClasses(value: String | js.Array[String]): Self = this.set("classes", value.asInstanceOf[js.Any])
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def deleteClasses: Self = this.set("classes", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: Styles): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setTitleId(value: String): Self = StObject.set(x, "titleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setTitleIdUndefined: Self = StObject.set(x, "titleId", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setTitleId(value: String): Self = this.set("titleId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleId: Self = this.set("titleId", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.applicationinsightsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateApplicationRequest extends js.Object {
+trait UpdateApplicationRequest extends StObject {
   
   /**
     *  Indicates whether Application Insights can listen to CloudWatch events for the application resources, such as instance terminated, failed deployment, and others. 
@@ -41,45 +42,33 @@ object UpdateApplicationRequest {
   }
   
   @scala.inline
-  implicit class UpdateApplicationRequestOps[Self <: UpdateApplicationRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateApplicationRequestMutableBuilder[Self <: UpdateApplicationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCWEMonitorEnabled(value: CWEMonitorEnabled): Self = StObject.set(x, "CWEMonitorEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCWEMonitorEnabledUndefined: Self = StObject.set(x, "CWEMonitorEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpsCenterEnabled(value: OpsCenterEnabled): Self = StObject.set(x, "OpsCenterEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceGroupName(value: ResourceGroupName): Self = this.set("ResourceGroupName", value.asInstanceOf[js.Any])
+    def setOpsCenterEnabledUndefined: Self = StObject.set(x, "OpsCenterEnabled", js.undefined)
     
     @scala.inline
-    def setCWEMonitorEnabled(value: CWEMonitorEnabled): Self = this.set("CWEMonitorEnabled", value.asInstanceOf[js.Any])
+    def setOpsItemSNSTopicArn(value: OpsItemSNSTopicArn): Self = StObject.set(x, "OpsItemSNSTopicArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCWEMonitorEnabled: Self = this.set("CWEMonitorEnabled", js.undefined)
+    def setOpsItemSNSTopicArnUndefined: Self = StObject.set(x, "OpsItemSNSTopicArn", js.undefined)
     
     @scala.inline
-    def setOpsCenterEnabled(value: OpsCenterEnabled): Self = this.set("OpsCenterEnabled", value.asInstanceOf[js.Any])
+    def setRemoveSNSTopic(value: RemoveSNSTopic): Self = StObject.set(x, "RemoveSNSTopic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOpsCenterEnabled: Self = this.set("OpsCenterEnabled", js.undefined)
+    def setRemoveSNSTopicUndefined: Self = StObject.set(x, "RemoveSNSTopic", js.undefined)
     
     @scala.inline
-    def setOpsItemSNSTopicArn(value: OpsItemSNSTopicArn): Self = this.set("OpsItemSNSTopicArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpsItemSNSTopicArn: Self = this.set("OpsItemSNSTopicArn", js.undefined)
-    
-    @scala.inline
-    def setRemoveSNSTopic(value: RemoveSNSTopic): Self = this.set("RemoveSNSTopic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveSNSTopic: Self = this.set("RemoveSNSTopic", js.undefined)
+    def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.winrt.Windows.ApplicationModel.Activation
 
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Storage.IStorageItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,24 +29,12 @@ object IFileActivatedEventArgs {
   }
   
   @scala.inline
-  implicit class IFileActivatedEventArgsOps[Self <: IFileActivatedEventArgs] (val x: Self) extends AnyVal {
+  implicit class IFileActivatedEventArgsMutableBuilder[Self <: IFileActivatedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFiles(value: IVectorView[IStorageItem]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFiles(value: IVectorView[IStorageItem]): Self = this.set("files", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerb(value: String): Self = this.set("verb", value.asInstanceOf[js.Any])
+    def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
   }
 }

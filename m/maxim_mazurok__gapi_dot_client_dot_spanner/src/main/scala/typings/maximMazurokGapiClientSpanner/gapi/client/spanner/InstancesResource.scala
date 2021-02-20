@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientSpanner.anon.KeyName
 import typings.maximMazurokGapiClientSpanner.anon.Oauthtoken
 import typings.maximMazurokGapiClientSpanner.anon.OauthtokenParent
 import typings.maximMazurokGapiClientSpanner.anon.PrettyPrintQuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstancesResource extends js.Object {
+trait InstancesResource extends StObject {
   
   var backupOperations: BackupOperationsResource = js.native
   

@@ -1,11 +1,12 @@
 package typings.awsSdk.batchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Device extends js.Object {
+trait Device extends StObject {
   
   /**
     * The path inside the container at which to expose the host device. By default the hostPath value is used.
@@ -31,36 +32,24 @@ object Device {
   }
   
   @scala.inline
-  implicit class DeviceOps[Self <: Device] (val x: Self) extends AnyVal {
+  implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerPath(value: String): Self = StObject.set(x, "containerPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerPathUndefined: Self = StObject.set(x, "containerPath", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostPath(value: String): Self = StObject.set(x, "hostPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostPath(value: String): Self = this.set("hostPath", value.asInstanceOf[js.Any])
+    def setPermissions(value: DeviceCgroupPermissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerPath(value: String): Self = this.set("containerPath", value.asInstanceOf[js.Any])
+    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
     @scala.inline
-    def deleteContainerPath: Self = this.set("containerPath", js.undefined)
-    
-    @scala.inline
-    def setPermissionsVarargs(value: DeviceCgroupPermission*): Self = this.set("permissions", js.Array(value :_*))
-    
-    @scala.inline
-    def setPermissions(value: DeviceCgroupPermissions): Self = this.set("permissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermissions: Self = this.set("permissions", js.undefined)
+    def setPermissionsVarargs(value: DeviceCgroupPermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.mongodb.anon
 
 import typings.mongodb.mod.ClientSession
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SessionClientSession extends js.Object {
+trait SessionClientSession extends StObject {
   
   var session: ClientSession = js.native
 }
@@ -19,21 +20,9 @@ object SessionClientSession {
   }
   
   @scala.inline
-  implicit class SessionClientSessionOps[Self <: SessionClientSession] (val x: Self) extends AnyVal {
+  implicit class SessionClientSessionMutableBuilder[Self <: SessionClientSession] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSession(value: ClientSession): Self = this.set("session", value.asInstanceOf[js.Any])
+    def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
   }
 }

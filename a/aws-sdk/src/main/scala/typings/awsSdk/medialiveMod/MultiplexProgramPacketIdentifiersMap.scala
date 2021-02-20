@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiplexProgramPacketIdentifiersMap extends js.Object {
+trait MultiplexProgramPacketIdentifiersMap extends StObject {
   
   var AudioPids: js.UndefOr[listOfInteger] = js.native
   
@@ -42,108 +43,96 @@ object MultiplexProgramPacketIdentifiersMap {
   }
   
   @scala.inline
-  implicit class MultiplexProgramPacketIdentifiersMapOps[Self <: MultiplexProgramPacketIdentifiersMap] (val x: Self) extends AnyVal {
+  implicit class MultiplexProgramPacketIdentifiersMapMutableBuilder[Self <: MultiplexProgramPacketIdentifiersMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioPids(value: listOfInteger): Self = StObject.set(x, "AudioPids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioPidsUndefined: Self = StObject.set(x, "AudioPids", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioPidsVarargs(value: integer*): Self = StObject.set(x, "AudioPids", js.Array(value :_*))
     
     @scala.inline
-    def setAudioPidsVarargs(value: integer*): Self = this.set("AudioPids", js.Array(value :_*))
+    def setDvbSubPids(value: listOfInteger): Self = StObject.set(x, "DvbSubPids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioPids(value: listOfInteger): Self = this.set("AudioPids", value.asInstanceOf[js.Any])
+    def setDvbSubPidsUndefined: Self = StObject.set(x, "DvbSubPids", js.undefined)
     
     @scala.inline
-    def deleteAudioPids: Self = this.set("AudioPids", js.undefined)
+    def setDvbSubPidsVarargs(value: integer*): Self = StObject.set(x, "DvbSubPids", js.Array(value :_*))
     
     @scala.inline
-    def setDvbSubPidsVarargs(value: integer*): Self = this.set("DvbSubPids", js.Array(value :_*))
+    def setDvbTeletextPid(value: integer): Self = StObject.set(x, "DvbTeletextPid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDvbSubPids(value: listOfInteger): Self = this.set("DvbSubPids", value.asInstanceOf[js.Any])
+    def setDvbTeletextPidUndefined: Self = StObject.set(x, "DvbTeletextPid", js.undefined)
     
     @scala.inline
-    def deleteDvbSubPids: Self = this.set("DvbSubPids", js.undefined)
+    def setEtvPlatformPid(value: integer): Self = StObject.set(x, "EtvPlatformPid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDvbTeletextPid(value: integer): Self = this.set("DvbTeletextPid", value.asInstanceOf[js.Any])
+    def setEtvPlatformPidUndefined: Self = StObject.set(x, "EtvPlatformPid", js.undefined)
     
     @scala.inline
-    def deleteDvbTeletextPid: Self = this.set("DvbTeletextPid", js.undefined)
+    def setEtvSignalPid(value: integer): Self = StObject.set(x, "EtvSignalPid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtvPlatformPid(value: integer): Self = this.set("EtvPlatformPid", value.asInstanceOf[js.Any])
+    def setEtvSignalPidUndefined: Self = StObject.set(x, "EtvSignalPid", js.undefined)
     
     @scala.inline
-    def deleteEtvPlatformPid: Self = this.set("EtvPlatformPid", js.undefined)
+    def setKlvDataPids(value: listOfInteger): Self = StObject.set(x, "KlvDataPids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtvSignalPid(value: integer): Self = this.set("EtvSignalPid", value.asInstanceOf[js.Any])
+    def setKlvDataPidsUndefined: Self = StObject.set(x, "KlvDataPids", js.undefined)
     
     @scala.inline
-    def deleteEtvSignalPid: Self = this.set("EtvSignalPid", js.undefined)
+    def setKlvDataPidsVarargs(value: integer*): Self = StObject.set(x, "KlvDataPids", js.Array(value :_*))
     
     @scala.inline
-    def setKlvDataPidsVarargs(value: integer*): Self = this.set("KlvDataPids", js.Array(value :_*))
+    def setPcrPid(value: integer): Self = StObject.set(x, "PcrPid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKlvDataPids(value: listOfInteger): Self = this.set("KlvDataPids", value.asInstanceOf[js.Any])
+    def setPcrPidUndefined: Self = StObject.set(x, "PcrPid", js.undefined)
     
     @scala.inline
-    def deleteKlvDataPids: Self = this.set("KlvDataPids", js.undefined)
+    def setPmtPid(value: integer): Self = StObject.set(x, "PmtPid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPcrPid(value: integer): Self = this.set("PcrPid", value.asInstanceOf[js.Any])
+    def setPmtPidUndefined: Self = StObject.set(x, "PmtPid", js.undefined)
     
     @scala.inline
-    def deletePcrPid: Self = this.set("PcrPid", js.undefined)
+    def setPrivateMetadataPid(value: integer): Self = StObject.set(x, "PrivateMetadataPid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPmtPid(value: integer): Self = this.set("PmtPid", value.asInstanceOf[js.Any])
+    def setPrivateMetadataPidUndefined: Self = StObject.set(x, "PrivateMetadataPid", js.undefined)
     
     @scala.inline
-    def deletePmtPid: Self = this.set("PmtPid", js.undefined)
+    def setScte27Pids(value: listOfInteger): Self = StObject.set(x, "Scte27Pids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateMetadataPid(value: integer): Self = this.set("PrivateMetadataPid", value.asInstanceOf[js.Any])
+    def setScte27PidsUndefined: Self = StObject.set(x, "Scte27Pids", js.undefined)
     
     @scala.inline
-    def deletePrivateMetadataPid: Self = this.set("PrivateMetadataPid", js.undefined)
+    def setScte27PidsVarargs(value: integer*): Self = StObject.set(x, "Scte27Pids", js.Array(value :_*))
     
     @scala.inline
-    def setScte27PidsVarargs(value: integer*): Self = this.set("Scte27Pids", js.Array(value :_*))
+    def setScte35Pid(value: integer): Self = StObject.set(x, "Scte35Pid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScte27Pids(value: listOfInteger): Self = this.set("Scte27Pids", value.asInstanceOf[js.Any])
+    def setScte35PidUndefined: Self = StObject.set(x, "Scte35Pid", js.undefined)
     
     @scala.inline
-    def deleteScte27Pids: Self = this.set("Scte27Pids", js.undefined)
+    def setTimedMetadataPid(value: integer): Self = StObject.set(x, "TimedMetadataPid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScte35Pid(value: integer): Self = this.set("Scte35Pid", value.asInstanceOf[js.Any])
+    def setTimedMetadataPidUndefined: Self = StObject.set(x, "TimedMetadataPid", js.undefined)
     
     @scala.inline
-    def deleteScte35Pid: Self = this.set("Scte35Pid", js.undefined)
+    def setVideoPid(value: integer): Self = StObject.set(x, "VideoPid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimedMetadataPid(value: integer): Self = this.set("TimedMetadataPid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimedMetadataPid: Self = this.set("TimedMetadataPid", js.undefined)
-    
-    @scala.inline
-    def setVideoPid(value: integer): Self = this.set("VideoPid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoPid: Self = this.set("VideoPid", js.undefined)
+    def setVideoPidUndefined: Self = StObject.set(x, "VideoPid", js.undefined)
   }
 }

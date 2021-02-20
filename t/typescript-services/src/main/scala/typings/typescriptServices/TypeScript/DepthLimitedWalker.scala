@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -119,24 +120,12 @@ object DepthLimitedWalker {
   }
   
   @scala.inline
-  implicit class DepthLimitedWalkerOps[Self <: DepthLimitedWalker] (val x: Self) extends AnyVal {
+  implicit class DepthLimitedWalkerMutableBuilder[Self <: DepthLimitedWalker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set_depth(value: js.Any): Self = StObject.set(x, "_depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set_depth(value: js.Any): Self = this.set("_depth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_maximumDepth(value: js.Any): Self = this.set("_maximumDepth", value.asInstanceOf[js.Any])
+    def set_maximumDepth(value: js.Any): Self = StObject.set(x, "_maximumDepth", value.asInstanceOf[js.Any])
   }
 }

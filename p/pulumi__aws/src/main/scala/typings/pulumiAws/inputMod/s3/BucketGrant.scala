@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.s3
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketGrant extends js.Object {
+trait BucketGrant extends StObject {
   
   /**
     * Canonical user id to grant for. Used only when `type` is `CanonicalUser`.
@@ -38,39 +39,27 @@ object BucketGrant {
   }
   
   @scala.inline
-  implicit class BucketGrantOps[Self <: BucketGrant] (val x: Self) extends AnyVal {
+  implicit class BucketGrantMutableBuilder[Self <: BucketGrant] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Input[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPermissions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionsVarargs(value: Input[String]*): Self = this.set("permissions", js.Array(value :_*))
+    def setPermissionsVarargs(value: Input[String]*): Self = StObject.set(x, "permissions", js.Array(value :_*))
     
     @scala.inline
-    def setPermissions(value: Input[js.Array[Input[String]]]): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUri(value: Input[String]): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Input[String]): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setUri(value: Input[String]): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

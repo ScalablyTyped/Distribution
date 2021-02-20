@@ -7,6 +7,7 @@ import typings.activexWord.activexWordNumbers.`-999996`
 import typings.activexWord.activexWordNumbers.`-999997`
 import typings.activexWord.activexWordNumbers.`-999998`
 import typings.activexWord.activexWordNumbers.`-999999`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexWord.activexWordNumbers.`-999996`
   - typings.activexWord.activexWordNumbers.`-999999`
 */
-trait WdTablePosition extends js.Object
+trait WdTablePosition extends StObject
 object WdTablePosition {
   
   @scala.inline

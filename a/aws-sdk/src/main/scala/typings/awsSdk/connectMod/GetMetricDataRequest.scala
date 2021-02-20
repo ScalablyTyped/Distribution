@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetMetricDataRequest extends js.Object {
+trait GetMetricDataRequest extends StObject {
   
   /**
     * The timestamp, in UNIX Epoch time format, at which to end the reporting interval for the retrieval of historical metrics data. The time must be specified using an interval of 5 minutes, such as 11:00, 11:05, 11:10, and must be later than the start time timestamp. The time range between the start and end time must be less than 24 hours.
@@ -62,57 +63,45 @@ object GetMetricDataRequest {
   }
   
   @scala.inline
-  implicit class GetMetricDataRequestOps[Self <: GetMetricDataRequest] (val x: Self) extends AnyVal {
+  implicit class GetMetricDataRequestMutableBuilder[Self <: GetMetricDataRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupings(value: Groupings): Self = StObject.set(x, "Groupings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setGroupingsUndefined: Self = StObject.set(x, "Groupings", js.undefined)
     
     @scala.inline
-    def setFilters(value: Filters): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    def setGroupingsVarargs(value: Grouping*): Self = StObject.set(x, "Groupings", js.Array(value :_*))
     
     @scala.inline
-    def setHistoricalMetricsVarargs(value: HistoricalMetric*): Self = this.set("HistoricalMetrics", js.Array(value :_*))
+    def setHistoricalMetrics(value: HistoricalMetrics): Self = StObject.set(x, "HistoricalMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistoricalMetrics(value: HistoricalMetrics): Self = this.set("HistoricalMetrics", value.asInstanceOf[js.Any])
+    def setHistoricalMetricsVarargs(value: HistoricalMetric*): Self = StObject.set(x, "HistoricalMetrics", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: timestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    def setMaxResults(value: MaxResult100): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupingsVarargs(value: Grouping*): Self = this.set("Groupings", js.Array(value :_*))
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def setGroupings(value: Groupings): Self = this.set("Groupings", value.asInstanceOf[js.Any])
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroupings: Self = this.set("Groupings", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def setMaxResults(value: MaxResult100): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setStartTime(value: timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

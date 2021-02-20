@@ -2,6 +2,7 @@ package typings.antdMobile.mod
 
 import typings.antdMobile.anon.WrapLabel
 import typings.antdMobile.checkboxMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +11,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Checkbox () extends default
 /* static members */
-@JSImport("antd-mobile", "Checkbox")
-@js.native
-object Checkbox extends js.Object {
+object Checkbox {
   
-  var AgreeItem: js.Any = js.native
+  @JSImport("antd-mobile", "Checkbox")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var CheckboxItem: js.Any = js.native
+  @JSImport("antd-mobile", "Checkbox.AgreeItem")
+  @js.native
+  def AgreeItem: js.Any = js.native
+  @scala.inline
+  def AgreeItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AgreeItem")(x.asInstanceOf[js.Any])
   
-  var defaultProps: WrapLabel = js.native
+  @JSImport("antd-mobile", "Checkbox.CheckboxItem")
+  @js.native
+  def CheckboxItem: js.Any = js.native
+  @scala.inline
+  def CheckboxItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CheckboxItem")(x.asInstanceOf[js.Any])
+  
+  @JSImport("antd-mobile", "Checkbox.defaultProps")
+  @js.native
+  def defaultProps: WrapLabel = js.native
+  @scala.inline
+  def defaultProps_=(x: WrapLabel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

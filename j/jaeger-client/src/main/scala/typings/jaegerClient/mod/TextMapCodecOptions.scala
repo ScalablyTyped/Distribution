@@ -1,11 +1,12 @@
 package typings.jaegerClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextMapCodecOptions extends js.Object {
+trait TextMapCodecOptions extends StObject {
   
   var baggagePrefix: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object TextMapCodecOptions {
   }
   
   @scala.inline
-  implicit class TextMapCodecOptionsOps[Self <: TextMapCodecOptions] (val x: Self) extends AnyVal {
+  implicit class TextMapCodecOptionsMutableBuilder[Self <: TextMapCodecOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaggagePrefix(value: String): Self = StObject.set(x, "baggagePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaggagePrefixUndefined: Self = StObject.set(x, "baggagePrefix", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextKey(value: String): Self = StObject.set(x, "contextKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaggagePrefix(value: String): Self = this.set("baggagePrefix", value.asInstanceOf[js.Any])
+    def setContextKeyUndefined: Self = StObject.set(x, "contextKey", js.undefined)
     
     @scala.inline
-    def deleteBaggagePrefix: Self = this.set("baggagePrefix", js.undefined)
+    def setMetrics(value: MetricsFactory): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextKey(value: String): Self = this.set("contextKey", value.asInstanceOf[js.Any])
+    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
     @scala.inline
-    def deleteContextKey: Self = this.set("contextKey", js.undefined)
+    def setUrlEncoding(value: Boolean): Self = StObject.set(x, "urlEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetrics(value: MetricsFactory): Self = this.set("metrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetrics: Self = this.set("metrics", js.undefined)
-    
-    @scala.inline
-    def setUrlEncoding(value: Boolean): Self = this.set("urlEncoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlEncoding: Self = this.set("urlEncoding", js.undefined)
+    def setUrlEncodingUndefined: Self = StObject.set(x, "urlEncoding", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.workerbApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,30 +35,18 @@ object ClickQueryOptions {
   }
   
   @scala.inline
-  implicit class ClickQueryOptionsOps[Self <: ClickQueryOptions] (val x: Self) extends AnyVal {
+  implicit class ClickQueryOptionsMutableBuilder[Self <: ClickQueryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpectReload(value: Boolean): Self = StObject.set(x, "expectReload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpectReloadUndefined: Self = StObject.set(x, "expectReload", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMethod(value: clickQueryMethods): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectReload(value: Boolean): Self = this.set("expectReload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpectReload: Self = this.set("expectReload", js.undefined)
-    
-    @scala.inline
-    def setMethod(value: clickQueryMethods): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterMessages extends js.Object {
+trait FilterMessages extends StObject {
   
   var and: js.UndefOr[String] = js.native
   
@@ -23,36 +24,24 @@ object FilterMessages {
   }
   
   @scala.inline
-  implicit class FilterMessagesOps[Self <: FilterMessages] (val x: Self) extends AnyVal {
+  implicit class FilterMessagesMutableBuilder[Self <: FilterMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnd(value: String): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndUndefined: Self = StObject.set(x, "and", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApply(value: String): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnd(value: String): Self = this.set("and", value.asInstanceOf[js.Any])
+    def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
     
     @scala.inline
-    def deleteAnd: Self = this.set("and", js.undefined)
+    def setOr(value: String): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApply(value: String): Self = this.set("apply", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApply: Self = this.set("apply", js.undefined)
-    
-    @scala.inline
-    def setOr(value: String): Self = this.set("or", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOr: Self = this.set("or", js.undefined)
+    def setOrUndefined: Self = StObject.set(x, "or", js.undefined)
   }
 }

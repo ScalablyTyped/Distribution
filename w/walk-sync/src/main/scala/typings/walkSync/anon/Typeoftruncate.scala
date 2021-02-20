@@ -2,12 +2,13 @@ package typings.walkSync.anon
 
 import typings.node.fsMod.NoParamCallback
 import typings.node.fsMod.PathLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeoftruncate extends js.Object {
+trait Typeoftruncate extends StObject {
   
   def apply(path: PathLike, callback: NoParamCallback): Unit = js.native
   def apply(path: PathLike, len: js.UndefOr[scala.Nothing], callback: NoParamCallback): Unit = js.native

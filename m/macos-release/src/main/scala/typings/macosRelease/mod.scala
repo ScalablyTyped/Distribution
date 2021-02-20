@@ -2,13 +2,12 @@ package typings.macosRelease
 
 import typings.macosRelease.anon.Call
 import typings.macosRelease.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("macos-release", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Get the name and version of a macOS release from the Darwin version.
@@ -31,8 +30,16 @@ object mod extends js.Object {
   	//=> {name: 'Big Sur', version: '11'}
   	```
   	*/
+  @JSImport("macos-release", JSImport.Namespace)
+  @js.native
   def apply(): Name = js.native
+  @JSImport("macos-release", JSImport.Namespace)
+  @js.native
   def apply(release: String): Name = js.native
+  
+  @JSImport("macos-release", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
   	Get the name and version of a macOS release from the Darwin version.
@@ -58,11 +65,19 @@ object mod extends js.Object {
   // TODO: remove this in the next major version, refactor the whole definition to:
   // declare function macosRelease(release?: string): {name: string, version: string};
   // export = macosRelease;
+  @JSImport("macos-release", "default")
+  @js.native
   def default(): Name = js.native
+  @JSImport("macos-release", "default")
+  @js.native
   def default(release: String): Name = js.native
   // TODO: remove this in the next major version, refactor the whole definition to:
   // declare function macosRelease(release?: string): {name: string, version: string};
   // export = macosRelease;
-  @JSName("default")
-  var default_Original: Call = js.native
+  @JSImport("macos-release", "default")
+  @js.native
+  def default_Fmod: Call = js.native
+  
+  @scala.inline
+  def default_Fmod_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

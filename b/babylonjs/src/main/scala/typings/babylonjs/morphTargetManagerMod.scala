@@ -4,20 +4,20 @@ import typings.babylonjs.morphTargetMod.MorphTarget
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Morph/morphTargetManager", JSImport.Namespace)
-@js.native
-object morphTargetManagerMod extends js.Object {
+object morphTargetManagerMod {
   
+  @JSImport("babylonjs/Morph/morphTargetManager", "MorphTargetManager")
   @js.native
   /**
     * Creates a new MorphTargetManager
     * @param scene defines the current scene
     */
-  class MorphTargetManager () extends js.Object {
+  class MorphTargetManager () extends StObject {
     def this(scene: Nullable[Scene]) = this()
     
     var _activeTargets: js.Any = js.native
@@ -139,8 +139,7 @@ object morphTargetManagerMod extends js.Object {
     def vertexCount: Double = js.native
   }
   /* static members */
-  @js.native
-  object MorphTargetManager extends js.Object {
+  object MorphTargetManager {
     
     /**
       * Creates a new MorphTargetManager from serialized data
@@ -148,6 +147,8 @@ object morphTargetManagerMod extends js.Object {
       * @param scene defines the hosting scene
       * @returns the new MorphTargetManager
       */
+    @JSImport("babylonjs/Morph/morphTargetManager", "MorphTargetManager.Parse")
+    @js.native
     def Parse(serializationObject: js.Any, scene: Scene): MorphTargetManager = js.native
   }
 }

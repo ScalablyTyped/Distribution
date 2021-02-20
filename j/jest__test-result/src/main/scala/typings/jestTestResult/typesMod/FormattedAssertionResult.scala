@@ -1,11 +1,12 @@
 package typings.jestTestResult.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormattedAssertionResult extends js.Object {
+trait FormattedAssertionResult extends StObject {
   
   var ancestorTitles: js.Array[String] = js.native
   
@@ -28,51 +29,39 @@ object FormattedAssertionResult {
   }
   
   @scala.inline
-  implicit class FormattedAssertionResultOps[Self <: FormattedAssertionResult] (val x: Self) extends AnyVal {
+  implicit class FormattedAssertionResultMutableBuilder[Self <: FormattedAssertionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAncestorTitles(value: js.Array[String]): Self = StObject.set(x, "ancestorTitles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAncestorTitlesVarargs(value: String*): Self = StObject.set(x, "ancestorTitles", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureMessages(value: js.Array[String]): Self = StObject.set(x, "failureMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAncestorTitlesVarargs(value: String*): Self = this.set("ancestorTitles", js.Array(value :_*))
+    def setFailureMessagesNull: Self = StObject.set(x, "failureMessages", null)
     
     @scala.inline
-    def setAncestorTitles(value: js.Array[String]): Self = this.set("ancestorTitles", value.asInstanceOf[js.Any])
+    def setFailureMessagesVarargs(value: String*): Self = StObject.set(x, "failureMessages", js.Array(value :_*))
     
     @scala.inline
-    def setFullName(value: String): Self = this.set("fullName", value.asInstanceOf[js.Any])
+    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setLocation(value: Callsite): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setLocationNull: Self = StObject.set(x, "location", null)
     
     @scala.inline
-    def setFailureMessagesVarargs(value: String*): Self = this.set("failureMessages", js.Array(value :_*))
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setFailureMessages(value: js.Array[String]): Self = this.set("failureMessages", value.asInstanceOf[js.Any])
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureMessagesNull: Self = this.set("failureMessages", null)
-    
-    @scala.inline
-    def setLocation(value: Callsite): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
-    
-    @scala.inline
-    def setLocationNull: Self = this.set("location", null)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

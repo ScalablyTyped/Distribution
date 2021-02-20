@@ -1,12 +1,13 @@
 package typings.cesium.anon
 
 import typings.cesium.mod.ProviderViewModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Globe extends js.Object {
+trait Globe extends StObject {
   
   var globe: typings.cesium.mod.Globe = js.native
   
@@ -27,51 +28,39 @@ object Globe {
   }
   
   @scala.inline
-  implicit class GlobeOps[Self <: Globe] (val x: Self) extends AnyVal {
+  implicit class GlobeMutableBuilder[Self <: Globe] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlobe(value: typings.cesium.mod.Globe): Self = StObject.set(x, "globe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageryProviderViewModels(value: js.Array[ProviderViewModel]): Self = StObject.set(x, "imageryProviderViewModels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageryProviderViewModelsUndefined: Self = StObject.set(x, "imageryProviderViewModels", js.undefined)
     
     @scala.inline
-    def setGlobe(value: typings.cesium.mod.Globe): Self = this.set("globe", value.asInstanceOf[js.Any])
+    def setImageryProviderViewModelsVarargs(value: ProviderViewModel*): Self = StObject.set(x, "imageryProviderViewModels", js.Array(value :_*))
     
     @scala.inline
-    def setImageryProviderViewModelsVarargs(value: ProviderViewModel*): Self = this.set("imageryProviderViewModels", js.Array(value :_*))
+    def setSelectedImageryProviderViewModel(value: ProviderViewModel): Self = StObject.set(x, "selectedImageryProviderViewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageryProviderViewModels(value: js.Array[ProviderViewModel]): Self = this.set("imageryProviderViewModels", value.asInstanceOf[js.Any])
+    def setSelectedImageryProviderViewModelUndefined: Self = StObject.set(x, "selectedImageryProviderViewModel", js.undefined)
     
     @scala.inline
-    def deleteImageryProviderViewModels: Self = this.set("imageryProviderViewModels", js.undefined)
+    def setSelectedTerrainProviderViewModel(value: ProviderViewModel): Self = StObject.set(x, "selectedTerrainProviderViewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedImageryProviderViewModel(value: ProviderViewModel): Self = this.set("selectedImageryProviderViewModel", value.asInstanceOf[js.Any])
+    def setSelectedTerrainProviderViewModelUndefined: Self = StObject.set(x, "selectedTerrainProviderViewModel", js.undefined)
     
     @scala.inline
-    def deleteSelectedImageryProviderViewModel: Self = this.set("selectedImageryProviderViewModel", js.undefined)
+    def setTerrainProviderViewModels(value: js.Array[ProviderViewModel]): Self = StObject.set(x, "terrainProviderViewModels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedTerrainProviderViewModel(value: ProviderViewModel): Self = this.set("selectedTerrainProviderViewModel", value.asInstanceOf[js.Any])
+    def setTerrainProviderViewModelsUndefined: Self = StObject.set(x, "terrainProviderViewModels", js.undefined)
     
     @scala.inline
-    def deleteSelectedTerrainProviderViewModel: Self = this.set("selectedTerrainProviderViewModel", js.undefined)
-    
-    @scala.inline
-    def setTerrainProviderViewModelsVarargs(value: ProviderViewModel*): Self = this.set("terrainProviderViewModels", js.Array(value :_*))
-    
-    @scala.inline
-    def setTerrainProviderViewModels(value: js.Array[ProviderViewModel]): Self = this.set("terrainProviderViewModels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerrainProviderViewModels: Self = this.set("terrainProviderViewModels", js.undefined)
+    def setTerrainProviderViewModelsVarargs(value: ProviderViewModel*): Self = StObject.set(x, "terrainProviderViewModels", js.Array(value :_*))
   }
 }

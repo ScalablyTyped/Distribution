@@ -7,14 +7,14 @@ import typings.awsSdkClientKinesisBrowser.typesUpdateShardCountInputMod.UpdateSh
 import typings.awsSdkClientKinesisBrowser.typesUpdateShardCountOutputMod.UpdateShardCountOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/commands/UpdateShardCountCommand", JSImport.Namespace)
-@js.native
-object updateShardCountCommandMod extends js.Object {
+object updateShardCountCommandMod {
   
+  @JSImport("@aws-sdk/client-kinesis-browser/commands/UpdateShardCountCommand", "UpdateShardCountCommand")
   @js.native
   class UpdateShardCountCommand protected () extends Command[
           InputTypesUnion, 

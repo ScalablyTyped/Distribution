@@ -3,6 +3,7 @@ package typings.googleAppsScript.GoogleAppsScript.JDBC
 import typings.googleAppsScript.GoogleAppsScript.BigNumber
 import typings.googleAppsScript.GoogleAppsScript.Byte
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * java.sql.CallableStatement.
   */
 @js.native
-trait JdbcCallableStatement extends js.Object {
+trait JdbcCallableStatement extends StObject {
   
   def addBatch(): Unit = js.native
   def addBatch(sql: String): Unit = js.native

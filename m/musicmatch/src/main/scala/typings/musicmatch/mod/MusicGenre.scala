@@ -1,11 +1,12 @@
 package typings.musicmatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MusicGenre extends js.Object {
+trait MusicGenre extends StObject {
   
   var music_genre_id: Double = js.native
   
@@ -32,33 +33,21 @@ object MusicGenre {
   }
   
   @scala.inline
-  implicit class MusicGenreOps[Self <: MusicGenre] (val x: Self) extends AnyVal {
+  implicit class MusicGenreMutableBuilder[Self <: MusicGenre] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMusic_genre_id(value: Double): Self = StObject.set(x, "music_genre_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMusic_genre_name(value: String): Self = StObject.set(x, "music_genre_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMusic_genre_name_extended(value: String): Self = StObject.set(x, "music_genre_name_extended", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMusic_genre_id(value: Double): Self = this.set("music_genre_id", value.asInstanceOf[js.Any])
+    def setMusic_genre_parent_id(value: Double): Self = StObject.set(x, "music_genre_parent_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMusic_genre_name(value: String): Self = this.set("music_genre_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMusic_genre_name_extended(value: String): Self = this.set("music_genre_name_extended", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMusic_genre_parent_id(value: Double): Self = this.set("music_genre_parent_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMusic_genre_vanity(value: String): Self = this.set("music_genre_vanity", value.asInstanceOf[js.Any])
+    def setMusic_genre_vanity(value: String): Self = StObject.set(x, "music_genre_vanity", value.asInstanceOf[js.Any])
   }
 }

@@ -6,6 +6,7 @@ import typings.reactBeautifulDnd.reactBeautifulDndStrings.DRAGGING
 import typings.reactBeautifulDnd.reactBeautifulDndStrings.DROP_ANIMATING
 import typings.reactBeautifulDnd.reactBeautifulDndStrings.DROP_PENDING
 import typings.reactBeautifulDnd.reactBeautifulDndStrings.IDLE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactBeautifulDnd.mod.DropPendingState
   - typings.reactBeautifulDnd.mod.DropAnimatingState
 */
-trait State extends js.Object
+trait State extends StObject
 object State {
   
   @scala.inline
@@ -34,9 +35,40 @@ object State {
     onLiftImpact: DragImpact,
     phase: COLLECTING,
     viewport: Viewport
-  ): State = {
+  ): typings.reactBeautifulDnd.mod.CollectingState = {
     val __obj = js.Dynamic.literal(afterCritical = afterCritical.asInstanceOf[js.Any], critical = critical.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], impact = impact.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], isDragging = isDragging.asInstanceOf[js.Any], isWindowScrollAllowed = isWindowScrollAllowed.asInstanceOf[js.Any], movementMode = movementMode.asInstanceOf[js.Any], onLiftImpact = onLiftImpact.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
-    __obj.asInstanceOf[State]
+    __obj.asInstanceOf[typings.reactBeautifulDnd.mod.CollectingState]
+  }
+  
+  @scala.inline
+  def DraggingState(
+    afterCritical: LiftEffect,
+    critical: Critical,
+    current: DragPositions,
+    dimensions: DimensionMap,
+    impact: DragImpact,
+    initial: DragPositions,
+    isDragging: `true`,
+    isWindowScrollAllowed: Boolean,
+    movementMode: MovementMode,
+    onLiftImpact: DragImpact,
+    phase: DRAGGING,
+    viewport: Viewport
+  ): typings.reactBeautifulDnd.mod.DraggingState = {
+    val __obj = js.Dynamic.literal(afterCritical = afterCritical.asInstanceOf[js.Any], critical = critical.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], impact = impact.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], isDragging = isDragging.asInstanceOf[js.Any], isWindowScrollAllowed = isWindowScrollAllowed.asInstanceOf[js.Any], movementMode = movementMode.asInstanceOf[js.Any], onLiftImpact = onLiftImpact.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.reactBeautifulDnd.mod.DraggingState]
+  }
+  
+  @scala.inline
+  def DropAnimatingState(
+    completed: CompletedDrag,
+    dimensions: DimensionMap,
+    dropDuration: Double,
+    newHomeClientOffset: Position,
+    phase: DROP_ANIMATING
+  ): typings.reactBeautifulDnd.mod.DropAnimatingState = {
+    val __obj = js.Dynamic.literal(completed = completed.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], dropDuration = dropDuration.asInstanceOf[js.Any], newHomeClientOffset = newHomeClientOffset.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.reactBeautifulDnd.mod.DropAnimatingState]
   }
   
   @scala.inline
@@ -55,45 +87,14 @@ object State {
     phase: DROP_PENDING,
     reason: DropReason,
     viewport: Viewport
-  ): State = {
+  ): typings.reactBeautifulDnd.mod.DropPendingState = {
     val __obj = js.Dynamic.literal(afterCritical = afterCritical.asInstanceOf[js.Any], critical = critical.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], impact = impact.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], isDragging = isDragging.asInstanceOf[js.Any], isWaiting = isWaiting.asInstanceOf[js.Any], isWindowScrollAllowed = isWindowScrollAllowed.asInstanceOf[js.Any], movementMode = movementMode.asInstanceOf[js.Any], onLiftImpact = onLiftImpact.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
-    __obj.asInstanceOf[State]
+    __obj.asInstanceOf[typings.reactBeautifulDnd.mod.DropPendingState]
   }
   
   @scala.inline
-  def DraggingState(
-    afterCritical: LiftEffect,
-    critical: Critical,
-    current: DragPositions,
-    dimensions: DimensionMap,
-    impact: DragImpact,
-    initial: DragPositions,
-    isDragging: `true`,
-    isWindowScrollAllowed: Boolean,
-    movementMode: MovementMode,
-    onLiftImpact: DragImpact,
-    phase: DRAGGING,
-    viewport: Viewport
-  ): State = {
-    val __obj = js.Dynamic.literal(afterCritical = afterCritical.asInstanceOf[js.Any], critical = critical.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], impact = impact.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], isDragging = isDragging.asInstanceOf[js.Any], isWindowScrollAllowed = isWindowScrollAllowed.asInstanceOf[js.Any], movementMode = movementMode.asInstanceOf[js.Any], onLiftImpact = onLiftImpact.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
-    __obj.asInstanceOf[State]
-  }
-  
-  @scala.inline
-  def DropAnimatingState(
-    completed: CompletedDrag,
-    dimensions: DimensionMap,
-    dropDuration: Double,
-    newHomeClientOffset: Position,
-    phase: DROP_ANIMATING
-  ): State = {
-    val __obj = js.Dynamic.literal(completed = completed.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], dropDuration = dropDuration.asInstanceOf[js.Any], newHomeClientOffset = newHomeClientOffset.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any])
-    __obj.asInstanceOf[State]
-  }
-  
-  @scala.inline
-  def IdleState(phase: IDLE, shouldFlush: Boolean): State = {
+  def IdleState(phase: IDLE, shouldFlush: Boolean): typings.reactBeautifulDnd.mod.IdleState = {
     val __obj = js.Dynamic.literal(phase = phase.asInstanceOf[js.Any], shouldFlush = shouldFlush.asInstanceOf[js.Any])
-    __obj.asInstanceOf[State]
+    __obj.asInstanceOf[typings.reactBeautifulDnd.mod.IdleState]
   }
 }

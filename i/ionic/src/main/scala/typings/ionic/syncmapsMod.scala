@@ -2,16 +2,18 @@ package typings.ionic
 
 import typings.ionic.commandMod.Command
 import typings.ionic.definitionsMod.APIResponseSuccess
+import typings.ionic.definitionsMod.INamespace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/commands/monitoring/syncmaps", JSImport.Namespace)
-@js.native
-object syncmapsMod extends js.Object {
+object syncmapsMod {
   
+  @JSImport("ionic/commands/monitoring/syncmaps", "MonitoringSyncSourcemapsCommand")
   @js.native
-  class MonitoringSyncSourcemapsCommand () extends Command {
+  class MonitoringSyncSourcemapsCommand protected () extends Command {
+    def this(namespace: INamespace) = this()
     
     def syncSourcemap(
       file: String,

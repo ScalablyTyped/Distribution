@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HumanTaskConfig extends js.Object {
+trait HumanTaskConfig extends StObject {
   
   /**
     * Configures how labels are consolidated across human workers.
@@ -85,69 +86,57 @@ object HumanTaskConfig {
   }
   
   @scala.inline
-  implicit class HumanTaskConfigOps[Self <: HumanTaskConfig] (val x: Self) extends AnyVal {
+  implicit class HumanTaskConfigMutableBuilder[Self <: HumanTaskConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotationConsolidationConfig(value: AnnotationConsolidationConfig): Self = StObject.set(x, "AnnotationConsolidationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxConcurrentTaskCount(value: MaxConcurrentTaskCount): Self = StObject.set(x, "MaxConcurrentTaskCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxConcurrentTaskCountUndefined: Self = StObject.set(x, "MaxConcurrentTaskCount", js.undefined)
     
     @scala.inline
-    def setAnnotationConsolidationConfig(value: AnnotationConsolidationConfig): Self = this.set("AnnotationConsolidationConfig", value.asInstanceOf[js.Any])
+    def setNumberOfHumanWorkersPerDataObject(value: NumberOfHumanWorkersPerDataObject): Self = StObject.set(x, "NumberOfHumanWorkersPerDataObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfHumanWorkersPerDataObject(value: NumberOfHumanWorkersPerDataObject): Self = this.set("NumberOfHumanWorkersPerDataObject", value.asInstanceOf[js.Any])
+    def setPreHumanTaskLambdaArn(value: LambdaFunctionArn): Self = StObject.set(x, "PreHumanTaskLambdaArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreHumanTaskLambdaArn(value: LambdaFunctionArn): Self = this.set("PreHumanTaskLambdaArn", value.asInstanceOf[js.Any])
+    def setPublicWorkforceTaskPrice(value: PublicWorkforceTaskPrice): Self = StObject.set(x, "PublicWorkforceTaskPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskDescription(value: TaskDescription): Self = this.set("TaskDescription", value.asInstanceOf[js.Any])
+    def setPublicWorkforceTaskPriceUndefined: Self = StObject.set(x, "PublicWorkforceTaskPrice", js.undefined)
     
     @scala.inline
-    def setTaskTimeLimitInSeconds(value: TaskTimeLimitInSeconds): Self = this.set("TaskTimeLimitInSeconds", value.asInstanceOf[js.Any])
+    def setTaskAvailabilityLifetimeInSeconds(value: TaskAvailabilityLifetimeInSeconds): Self = StObject.set(x, "TaskAvailabilityLifetimeInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskTitle(value: TaskTitle): Self = this.set("TaskTitle", value.asInstanceOf[js.Any])
+    def setTaskAvailabilityLifetimeInSecondsUndefined: Self = StObject.set(x, "TaskAvailabilityLifetimeInSeconds", js.undefined)
     
     @scala.inline
-    def setUiConfig(value: UiConfig): Self = this.set("UiConfig", value.asInstanceOf[js.Any])
+    def setTaskDescription(value: TaskDescription): Self = StObject.set(x, "TaskDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkteamArn(value: WorkteamArn): Self = this.set("WorkteamArn", value.asInstanceOf[js.Any])
+    def setTaskKeywords(value: TaskKeywords): Self = StObject.set(x, "TaskKeywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxConcurrentTaskCount(value: MaxConcurrentTaskCount): Self = this.set("MaxConcurrentTaskCount", value.asInstanceOf[js.Any])
+    def setTaskKeywordsUndefined: Self = StObject.set(x, "TaskKeywords", js.undefined)
     
     @scala.inline
-    def deleteMaxConcurrentTaskCount: Self = this.set("MaxConcurrentTaskCount", js.undefined)
+    def setTaskKeywordsVarargs(value: TaskKeyword*): Self = StObject.set(x, "TaskKeywords", js.Array(value :_*))
     
     @scala.inline
-    def setPublicWorkforceTaskPrice(value: PublicWorkforceTaskPrice): Self = this.set("PublicWorkforceTaskPrice", value.asInstanceOf[js.Any])
+    def setTaskTimeLimitInSeconds(value: TaskTimeLimitInSeconds): Self = StObject.set(x, "TaskTimeLimitInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePublicWorkforceTaskPrice: Self = this.set("PublicWorkforceTaskPrice", js.undefined)
+    def setTaskTitle(value: TaskTitle): Self = StObject.set(x, "TaskTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskAvailabilityLifetimeInSeconds(value: TaskAvailabilityLifetimeInSeconds): Self = this.set("TaskAvailabilityLifetimeInSeconds", value.asInstanceOf[js.Any])
+    def setUiConfig(value: UiConfig): Self = StObject.set(x, "UiConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTaskAvailabilityLifetimeInSeconds: Self = this.set("TaskAvailabilityLifetimeInSeconds", js.undefined)
-    
-    @scala.inline
-    def setTaskKeywordsVarargs(value: TaskKeyword*): Self = this.set("TaskKeywords", js.Array(value :_*))
-    
-    @scala.inline
-    def setTaskKeywords(value: TaskKeywords): Self = this.set("TaskKeywords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskKeywords: Self = this.set("TaskKeywords", js.undefined)
+    def setWorkteamArn(value: WorkteamArn): Self = StObject.set(x, "WorkteamArn", value.asInstanceOf[js.Any])
   }
 }

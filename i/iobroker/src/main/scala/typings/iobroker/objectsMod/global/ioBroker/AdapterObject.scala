@@ -2,6 +2,7 @@ package typings.iobroker.objectsMod.global.ioBroker
 
 import typings.iobroker.iobrokerStrings.adapter
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,42 +34,30 @@ object AdapterObject {
   }
   
   @scala.inline
-  implicit class AdapterObjectOps[Self <: AdapterObject] (val x: Self) extends AnyVal {
+  implicit class AdapterObjectMutableBuilder[Self <: AdapterObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommon(value: AdapterCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptedNative(value: js.Array[String]): Self = StObject.set(x, "encryptedNative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryptedNativeUndefined: Self = StObject.set(x, "encryptedNative", js.undefined)
     
     @scala.inline
-    def setCommon(value: AdapterCommon): Self = this.set("common", value.asInstanceOf[js.Any])
+    def setEncryptedNativeVarargs(value: String*): Self = StObject.set(x, "encryptedNative", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: adapter): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setProtectedNative(value: js.Array[String]): Self = StObject.set(x, "protectedNative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptedNativeVarargs(value: String*): Self = this.set("encryptedNative", js.Array(value :_*))
+    def setProtectedNativeUndefined: Self = StObject.set(x, "protectedNative", js.undefined)
     
     @scala.inline
-    def setEncryptedNative(value: js.Array[String]): Self = this.set("encryptedNative", value.asInstanceOf[js.Any])
+    def setProtectedNativeVarargs(value: String*): Self = StObject.set(x, "protectedNative", js.Array(value :_*))
     
     @scala.inline
-    def deleteEncryptedNative: Self = this.set("encryptedNative", js.undefined)
-    
-    @scala.inline
-    def setProtectedNativeVarargs(value: String*): Self = this.set("protectedNative", js.Array(value :_*))
-    
-    @scala.inline
-    def setProtectedNative(value: js.Array[String]): Self = this.set("protectedNative", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtectedNative: Self = this.set("protectedNative", js.undefined)
+    def setType(value: adapter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

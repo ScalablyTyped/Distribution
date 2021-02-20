@@ -1,5 +1,6 @@
 package typings.winjs.WinJS.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a range of indexes or keys in an ISelection.
   **/
 @js.native
-trait ISelectionRange extends js.Object {
+trait ISelectionRange extends StObject {
   
   //#region Properties
   /**
@@ -40,30 +41,18 @@ object ISelectionRange {
   }
   
   @scala.inline
-  implicit class ISelectionRangeOps[Self <: ISelectionRange] (val x: Self) extends AnyVal {
+  implicit class ISelectionRangeMutableBuilder[Self <: ISelectionRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstIndex(value: Double): Self = StObject.set(x, "firstIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstKey(value: js.Any): Self = StObject.set(x, "firstKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastIndex(value: Double): Self = StObject.set(x, "lastIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstIndex(value: Double): Self = this.set("firstIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFirstKey(value: js.Any): Self = this.set("firstKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastIndex(value: Double): Self = this.set("lastIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastKey(value: js.Any): Self = this.set("lastKey", value.asInstanceOf[js.Any])
+    def setLastKey(value: js.Any): Self = StObject.set(x, "lastKey", value.asInstanceOf[js.Any])
   }
 }

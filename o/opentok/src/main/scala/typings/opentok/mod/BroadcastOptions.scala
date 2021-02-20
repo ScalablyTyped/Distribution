@@ -1,11 +1,12 @@
 package typings.opentok.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BroadcastOptions extends js.Object {
+trait BroadcastOptions extends StObject {
   
   var layout: BroadcastLayoutOptions = js.native
   
@@ -24,36 +25,24 @@ object BroadcastOptions {
   }
   
   @scala.inline
-  implicit class BroadcastOptionsOps[Self <: BroadcastOptions] (val x: Self) extends AnyVal {
+  implicit class BroadcastOptionsMutableBuilder[Self <: BroadcastOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayout(value: BroadcastLayoutOptions): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxDurationUndefined: Self = StObject.set(x, "maxDuration", js.undefined)
     
     @scala.inline
-    def setLayout(value: BroadcastLayoutOptions): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setOutputs(value: BroadcastOutputOptions): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputs(value: BroadcastOutputOptions): Self = this.set("outputs", value.asInstanceOf[js.Any])
+    def setResolution(value: String): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDuration(value: Double): Self = this.set("maxDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxDuration: Self = this.set("maxDuration", js.undefined)
-    
-    @scala.inline
-    def setResolution(value: String): Self = this.set("resolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolution: Self = this.set("resolution", js.undefined)
+    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
   }
 }

@@ -3,14 +3,14 @@ package typings.angularCompiler
 import typings.angularCompiler.coreMod.MissingTranslationStrategy
 import typings.angularCompiler.htmlParserMod.HtmlParser
 import typings.angularCompiler.srcUtilMod.Console
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/i18n/i18n_html_parser", JSImport.Namespace)
-@js.native
-object i18nHtmlParserMod extends js.Object {
+object i18nHtmlParserMod {
   
+  @JSImport("@angular/compiler/src/i18n/i18n_html_parser", "I18NHtmlParser")
   @js.native
   class I18NHtmlParser protected () extends HtmlParser {
     def this(_htmlParser: HtmlParser) = this()

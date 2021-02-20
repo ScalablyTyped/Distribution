@@ -1,12 +1,13 @@
 package typings.dav.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dav", "DAVCollection")
 @js.native
-class DAVCollection[T] protected () extends js.Object {
+class DAVCollection[T] protected () extends StObject {
   def this(options: DAVCollectionOptions[T]) = this()
   
   var account: Account = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectConnectGateway extends js.Object {
+trait DirectConnectGateway extends StObject {
   
   /**
     * The autonomous system number (ASN) for the Amazon side of the connection.
@@ -46,54 +47,42 @@ object DirectConnectGateway {
   }
   
   @scala.inline
-  implicit class DirectConnectGatewayOps[Self <: DirectConnectGateway] (val x: Self) extends AnyVal {
+  implicit class DirectConnectGatewayMutableBuilder[Self <: DirectConnectGateway] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmazonSideAsn(value: LongAsn): Self = StObject.set(x, "amazonSideAsn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmazonSideAsnUndefined: Self = StObject.set(x, "amazonSideAsn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = StObject.set(x, "directConnectGatewayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmazonSideAsn(value: LongAsn): Self = this.set("amazonSideAsn", value.asInstanceOf[js.Any])
+    def setDirectConnectGatewayIdUndefined: Self = StObject.set(x, "directConnectGatewayId", js.undefined)
     
     @scala.inline
-    def deleteAmazonSideAsn: Self = this.set("amazonSideAsn", js.undefined)
+    def setDirectConnectGatewayName(value: DirectConnectGatewayName): Self = StObject.set(x, "directConnectGatewayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = this.set("directConnectGatewayId", value.asInstanceOf[js.Any])
+    def setDirectConnectGatewayNameUndefined: Self = StObject.set(x, "directConnectGatewayName", js.undefined)
     
     @scala.inline
-    def deleteDirectConnectGatewayId: Self = this.set("directConnectGatewayId", js.undefined)
+    def setDirectConnectGatewayState(value: DirectConnectGatewayState): Self = StObject.set(x, "directConnectGatewayState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectConnectGatewayName(value: DirectConnectGatewayName): Self = this.set("directConnectGatewayName", value.asInstanceOf[js.Any])
+    def setDirectConnectGatewayStateUndefined: Self = StObject.set(x, "directConnectGatewayState", js.undefined)
     
     @scala.inline
-    def deleteDirectConnectGatewayName: Self = this.set("directConnectGatewayName", js.undefined)
+    def setOwnerAccount(value: OwnerAccount): Self = StObject.set(x, "ownerAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectConnectGatewayState(value: DirectConnectGatewayState): Self = this.set("directConnectGatewayState", value.asInstanceOf[js.Any])
+    def setOwnerAccountUndefined: Self = StObject.set(x, "ownerAccount", js.undefined)
     
     @scala.inline
-    def deleteDirectConnectGatewayState: Self = this.set("directConnectGatewayState", js.undefined)
+    def setStateChangeError(value: StateChangeError): Self = StObject.set(x, "stateChangeError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerAccount(value: OwnerAccount): Self = this.set("ownerAccount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwnerAccount: Self = this.set("ownerAccount", js.undefined)
-    
-    @scala.inline
-    def setStateChangeError(value: StateChangeError): Self = this.set("stateChangeError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateChangeError: Self = this.set("stateChangeError", js.undefined)
+    def setStateChangeErrorUndefined: Self = StObject.set(x, "stateChangeError", js.undefined)
   }
 }

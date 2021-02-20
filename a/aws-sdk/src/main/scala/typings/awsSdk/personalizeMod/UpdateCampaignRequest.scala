@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateCampaignRequest extends js.Object {
+trait UpdateCampaignRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the campaign.
@@ -36,39 +37,27 @@ object UpdateCampaignRequest {
   }
   
   @scala.inline
-  implicit class UpdateCampaignRequestOps[Self <: UpdateCampaignRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateCampaignRequestMutableBuilder[Self <: UpdateCampaignRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCampaignArn(value: Arn): Self = StObject.set(x, "campaignArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCampaignConfig(value: CampaignConfig): Self = StObject.set(x, "campaignConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCampaignConfigUndefined: Self = StObject.set(x, "campaignConfig", js.undefined)
     
     @scala.inline
-    def setCampaignArn(value: Arn): Self = this.set("campaignArn", value.asInstanceOf[js.Any])
+    def setMinProvisionedTPS(value: TransactionsPerSecond): Self = StObject.set(x, "minProvisionedTPS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaignConfig(value: CampaignConfig): Self = this.set("campaignConfig", value.asInstanceOf[js.Any])
+    def setMinProvisionedTPSUndefined: Self = StObject.set(x, "minProvisionedTPS", js.undefined)
     
     @scala.inline
-    def deleteCampaignConfig: Self = this.set("campaignConfig", js.undefined)
+    def setSolutionVersionArn(value: Arn): Self = StObject.set(x, "solutionVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinProvisionedTPS(value: TransactionsPerSecond): Self = this.set("minProvisionedTPS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinProvisionedTPS: Self = this.set("minProvisionedTPS", js.undefined)
-    
-    @scala.inline
-    def setSolutionVersionArn(value: Arn): Self = this.set("solutionVersionArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSolutionVersionArn: Self = this.set("solutionVersionArn", js.undefined)
+    def setSolutionVersionArnUndefined: Self = StObject.set(x, "solutionVersionArn", js.undefined)
   }
 }

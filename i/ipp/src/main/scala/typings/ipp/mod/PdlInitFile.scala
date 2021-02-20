@@ -1,11 +1,12 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PdlInitFile extends js.Object {
+trait PdlInitFile extends StObject {
   
   var `pdl-init-file-entry`: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object PdlInitFile {
   }
   
   @scala.inline
-  implicit class PdlInitFileOps[Self <: PdlInitFile] (val x: Self) extends AnyVal {
+  implicit class PdlInitFileMutableBuilder[Self <: PdlInitFile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setPdl-init-file-entry`(value: String): Self = StObject.set(x, "pdl-init-file-entry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setPdl-init-file-entryUndefined`: Self = StObject.set(x, "pdl-init-file-entry", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setPdl-init-file-location`(value: String): Self = StObject.set(x, "pdl-init-file-location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPdl-init-file-entry`(value: String): Self = this.set("pdl-init-file-entry", value.asInstanceOf[js.Any])
+    def `setPdl-init-file-locationUndefined`: Self = StObject.set(x, "pdl-init-file-location", js.undefined)
     
     @scala.inline
-    def `deletePdl-init-file-entry`: Self = this.set("pdl-init-file-entry", js.undefined)
+    def `setPdl-init-file-name`(value: String): Self = StObject.set(x, "pdl-init-file-name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPdl-init-file-location`(value: String): Self = this.set("pdl-init-file-location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deletePdl-init-file-location`: Self = this.set("pdl-init-file-location", js.undefined)
-    
-    @scala.inline
-    def `setPdl-init-file-name`(value: String): Self = this.set("pdl-init-file-name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deletePdl-init-file-name`: Self = this.set("pdl-init-file-name", js.undefined)
+    def `setPdl-init-file-nameUndefined`: Self = StObject.set(x, "pdl-init-file-name", js.undefined)
   }
 }

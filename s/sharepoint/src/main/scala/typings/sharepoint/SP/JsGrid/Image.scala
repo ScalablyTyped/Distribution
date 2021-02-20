@@ -2,12 +2,13 @@ package typings.sharepoint.SP.JsGrid
 
 import typings.microsoftAjax.Sys.UI.DomEvent
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Image extends js.Object {
+trait Image extends StObject {
   
   /** Renders the image with specified alternative text and on-click handler.
     If bHideTooltip == false, then alternative text is also shown as the tooltip (title attribute). */
@@ -39,36 +40,24 @@ object Image {
   }
   
   @scala.inline
-  implicit class ImageOps[Self <: Image] (val x: Self) extends AnyVal {
+  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBIsAnimated(value: Boolean): Self = StObject.set(x, "bIsAnimated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBIsClustered(value: Boolean): Self = StObject.set(x, "bIsClustered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImgCssNames(value: String): Self = StObject.set(x, "imgCssNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRender(value: (String, js.Function1[/* eventInfo */ DomEvent, Unit], Boolean) => HTMLElement): Self = this.set("Render", js.Any.fromFunction3(value))
+    def setImgSrc(value: String): Self = StObject.set(x, "imgSrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBIsAnimated(value: Boolean): Self = this.set("bIsAnimated", value.asInstanceOf[js.Any])
+    def setOptOuterCssNames(value: String): Self = StObject.set(x, "optOuterCssNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBIsClustered(value: Boolean): Self = this.set("bIsClustered", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImgCssNames(value: String): Self = this.set("imgCssNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImgSrc(value: String): Self = this.set("imgSrc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptOuterCssNames(value: String): Self = this.set("optOuterCssNames", value.asInstanceOf[js.Any])
+    def setRender(value: (String, js.Function1[/* eventInfo */ DomEvent, Unit], Boolean) => HTMLElement): Self = StObject.set(x, "Render", js.Any.fromFunction3(value))
   }
 }

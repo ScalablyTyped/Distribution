@@ -1,5 +1,6 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,7 +63,7 @@ object KmlAbstractView {
     copyAsCamera: () => KmlCamera,
     copyAsLookAt: () => KmlLookAt,
     dblclick: KmlMouseEvent => Unit,
-    equals: KmlObject => Boolean,
+    equals_ : KmlObject => Boolean,
     getId: () => String,
     getOwnerDocument: () => KmlDocument,
     getParentNode: () => KmlObject,
@@ -79,41 +80,30 @@ object KmlAbstractView {
     setTimePrimitive: KmlTimePrimitive => Unit,
     setViewerOptions: KmlViewerOptions => Unit
   ): KmlAbstractView = {
-    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), copyAsCamera = js.Any.fromFunction0(copyAsCamera), copyAsLookAt = js.Any.fromFunction0(copyAsLookAt), dblclick = js.Any.fromFunction1(dblclick), equals = js.Any.fromFunction1(equals), getId = js.Any.fromFunction0(getId), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getTimePrimitive = js.Any.fromFunction0(getTimePrimitive), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), getViewerOptions = js.Any.fromFunction0(getViewerOptions), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), setTimePrimitive = js.Any.fromFunction1(setTimePrimitive), setViewerOptions = js.Any.fromFunction1(setViewerOptions))
+    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), copyAsCamera = js.Any.fromFunction0(copyAsCamera), copyAsLookAt = js.Any.fromFunction0(copyAsLookAt), dblclick = js.Any.fromFunction1(dblclick), getId = js.Any.fromFunction0(getId), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getTimePrimitive = js.Any.fromFunction0(getTimePrimitive), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), getViewerOptions = js.Any.fromFunction0(getViewerOptions), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), setTimePrimitive = js.Any.fromFunction1(setTimePrimitive), setViewerOptions = js.Any.fromFunction1(setViewerOptions))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[KmlAbstractView]
   }
   
   @scala.inline
-  implicit class KmlAbstractViewOps[Self <: KmlAbstractView] (val x: Self) extends AnyVal {
+  implicit class KmlAbstractViewMutableBuilder[Self <: KmlAbstractView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyAsCamera(value: () => KmlCamera): Self = StObject.set(x, "copyAsCamera", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyAsLookAt(value: () => KmlLookAt): Self = StObject.set(x, "copyAsLookAt", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetTimePrimitive(value: () => KmlTimePrimitive): Self = StObject.set(x, "getTimePrimitive", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCopyAsCamera(value: () => KmlCamera): Self = this.set("copyAsCamera", js.Any.fromFunction0(value))
+    def setGetViewerOptions(value: () => KmlViewerOptions): Self = StObject.set(x, "getViewerOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCopyAsLookAt(value: () => KmlLookAt): Self = this.set("copyAsLookAt", js.Any.fromFunction0(value))
+    def setSetTimePrimitive(value: KmlTimePrimitive => Unit): Self = StObject.set(x, "setTimePrimitive", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTimePrimitive(value: () => KmlTimePrimitive): Self = this.set("getTimePrimitive", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetViewerOptions(value: () => KmlViewerOptions): Self = this.set("getViewerOptions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetTimePrimitive(value: KmlTimePrimitive => Unit): Self = this.set("setTimePrimitive", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetViewerOptions(value: KmlViewerOptions => Unit): Self = this.set("setViewerOptions", js.Any.fromFunction1(value))
+    def setSetViewerOptions(value: KmlViewerOptions => Unit): Self = StObject.set(x, "setViewerOptions", js.Any.fromFunction1(value))
   }
 }

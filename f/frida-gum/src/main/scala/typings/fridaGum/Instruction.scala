@@ -1,11 +1,12 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Instruction extends js.Object {
+trait Instruction extends StObject {
   
   /**
     * Address (EIP) of this instruction.
@@ -53,39 +54,27 @@ object Instruction {
   }
   
   @scala.inline
-  implicit class InstructionOps[Self <: Instruction] (val x: Self) extends AnyVal {
+  implicit class InstructionMutableBuilder[Self <: Instruction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
     @scala.inline
-    def setAddress(value: NativePointer): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setMnemonic(value: String): Self = StObject.set(x, "mnemonic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupsVarargs(value: String*): Self = this.set("groups", js.Array(value :_*))
+    def setNext(value: NativePointer): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: js.Array[String]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    def setOpStr(value: String): Self = StObject.set(x, "opStr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMnemonic(value: String): Self = this.set("mnemonic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNext(value: NativePointer): Self = this.set("next", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpStr(value: String): Self = this.set("opStr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

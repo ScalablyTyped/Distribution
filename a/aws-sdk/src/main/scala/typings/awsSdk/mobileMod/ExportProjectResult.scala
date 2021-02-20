@@ -1,11 +1,12 @@
 package typings.awsSdk.mobileMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportProjectResult extends js.Object {
+trait ExportProjectResult extends StObject {
   
   /**
     *  URL which can be used to download the exported project configuation file(s). 
@@ -31,36 +32,24 @@ object ExportProjectResult {
   }
   
   @scala.inline
-  implicit class ExportProjectResultOps[Self <: ExportProjectResult] (val x: Self) extends AnyVal {
+  implicit class ExportProjectResultMutableBuilder[Self <: ExportProjectResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDownloadUrl(value: DownloadUrl): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDownloadUrlUndefined: Self = StObject.set(x, "downloadUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShareUrl(value: ShareUrl): Self = StObject.set(x, "shareUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadUrl(value: DownloadUrl): Self = this.set("downloadUrl", value.asInstanceOf[js.Any])
+    def setShareUrlUndefined: Self = StObject.set(x, "shareUrl", js.undefined)
     
     @scala.inline
-    def deleteDownloadUrl: Self = this.set("downloadUrl", js.undefined)
+    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShareUrl(value: ShareUrl): Self = this.set("shareUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShareUrl: Self = this.set("shareUrl", js.undefined)
-    
-    @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = this.set("snapshotId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotId: Self = this.set("snapshotId", js.undefined)
+    def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
   }
 }

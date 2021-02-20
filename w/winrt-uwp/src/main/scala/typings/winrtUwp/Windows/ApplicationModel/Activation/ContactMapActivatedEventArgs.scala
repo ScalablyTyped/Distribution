@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.ApplicationModel.Activation
 
 import typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact
 import typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactAddress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data when an app is activated to map a contact. */
 @js.native
-trait ContactMapActivatedEventArgs extends js.Object {
+trait ContactMapActivatedEventArgs extends StObject {
   
   /** Gets the address of a contact for the mapping operation. */
   var address: ContactAddress = js.native
@@ -44,36 +45,24 @@ object ContactMapActivatedEventArgs {
   }
   
   @scala.inline
-  implicit class ContactMapActivatedEventArgsOps[Self <: ContactMapActivatedEventArgs] (val x: Self) extends AnyVal {
+  implicit class ContactMapActivatedEventArgsMutableBuilder[Self <: ContactMapActivatedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: ContactAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContact(value: Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: ContactAddress): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContact(value: Contact): Self = this.set("contact", value.asInstanceOf[js.Any])
+    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: ActivationKind): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = this.set("previousExecutionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = this.set("splashScreen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerb(value: String): Self = this.set("verb", value.asInstanceOf[js.Any])
+    def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
   }
 }

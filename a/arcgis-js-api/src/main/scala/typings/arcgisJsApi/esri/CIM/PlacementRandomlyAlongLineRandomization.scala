@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PlacementRandomlyAlongLineRandomization extends js.Object
+sealed trait PlacementRandomlyAlongLineRandomization extends StObject
 @JSGlobal("__esri.CIM.PlacementRandomlyAlongLineRandomization")
 @js.native
-object PlacementRandomlyAlongLineRandomization extends js.Object {
+object PlacementRandomlyAlongLineRandomization extends StObject {
   
   /**
     * A high amount of randomness is applied

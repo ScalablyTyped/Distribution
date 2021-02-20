@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JoinDomainInput extends js.Object {
+trait JoinDomainInput extends StObject {
   
   /**
     * List of IPv4 addresses, NetBIOS names, or host names of your domain server. If you need to specify the port number include it after the colon (“:”). For example, mydc.mydomain.com:389.
@@ -56,51 +57,39 @@ object JoinDomainInput {
   }
   
   @scala.inline
-  implicit class JoinDomainInputOps[Self <: JoinDomainInput] (val x: Self) extends AnyVal {
+  implicit class JoinDomainInputMutableBuilder[Self <: JoinDomainInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainControllers(value: Hosts): Self = StObject.set(x, "DomainControllers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainControllersUndefined: Self = StObject.set(x, "DomainControllers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainControllersVarargs(value: Host*): Self = StObject.set(x, "DomainControllers", js.Array(value :_*))
     
     @scala.inline
-    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: DomainUserPassword): Self = this.set("Password", value.asInstanceOf[js.Any])
+    def setOrganizationalUnit(value: OrganizationalUnit): Self = StObject.set(x, "OrganizationalUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserName(value: DomainUserName): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    def setOrganizationalUnitUndefined: Self = StObject.set(x, "OrganizationalUnit", js.undefined)
     
     @scala.inline
-    def setDomainControllersVarargs(value: Host*): Self = this.set("DomainControllers", js.Array(value :_*))
+    def setPassword(value: DomainUserPassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainControllers(value: Hosts): Self = this.set("DomainControllers", value.asInstanceOf[js.Any])
+    def setTimeoutInSeconds(value: TimeoutInSeconds): Self = StObject.set(x, "TimeoutInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDomainControllers: Self = this.set("DomainControllers", js.undefined)
+    def setTimeoutInSecondsUndefined: Self = StObject.set(x, "TimeoutInSeconds", js.undefined)
     
     @scala.inline
-    def setOrganizationalUnit(value: OrganizationalUnit): Self = this.set("OrganizationalUnit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrganizationalUnit: Self = this.set("OrganizationalUnit", js.undefined)
-    
-    @scala.inline
-    def setTimeoutInSeconds(value: TimeoutInSeconds): Self = this.set("TimeoutInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutInSeconds: Self = this.set("TimeoutInSeconds", js.undefined)
+    def setUserName(value: DomainUserName): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

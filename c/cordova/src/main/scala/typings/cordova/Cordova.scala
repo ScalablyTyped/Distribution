@@ -1,11 +1,12 @@
 package typings.cordova
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cordova extends js.Object {
+trait Cordova extends StObject {
   
   /** Defines custom logic as a Cordova module. Other modules can later access it using module name provided. */
   def define(

@@ -10,6 +10,7 @@ import typings.mendixmodelsdk.menusMod.menus.MenuItem
 import typings.mendixmodelsdk.nativepagesMod.nativepages.BottomBarItem
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,16 +31,20 @@ class SaveChangesClientAction protected ()
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-/* static members */
-@JSImport("mendixmodelsdk", "pages.SaveChangesClientAction")
-@js.native
-object SaveChangesClientAction extends js.Object {
+object SaveChangesClientAction {
+  
+  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.create")
+  @js.native
   def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
   
   /**
@@ -50,6 +55,9 @@ object SaveChangesClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInActionButtonUnderAction")
+  @js.native
   def createInActionButtonUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.ActionButton): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
   
   /**
@@ -60,6 +68,9 @@ object SaveChangesClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInActionItemUnderAction")
+  @js.native
   def createInActionItemUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.ActionItem): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
   
   /**
@@ -70,6 +81,9 @@ object SaveChangesClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInAssociationWidgetUnderOnChangeAction")
+  @js.native
   def createInAssociationWidgetUnderOnChangeAction(container: typings.mendixmodelsdk.pagesMod.pages.AssociationWidget): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
   
   /**
@@ -80,6 +94,9 @@ object SaveChangesClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInAttributeWidgetUnderOnChangeAction")
+  @js.native
   def createInAttributeWidgetUnderOnChangeAction(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
   
   /**
@@ -90,6 +107,9 @@ object SaveChangesClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInAttributeWidgetUnderOnEnterAction")
+  @js.native
   def createInAttributeWidgetUnderOnEnterAction(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
   
   /**
@@ -100,6 +120,9 @@ object SaveChangesClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInAttributeWidgetUnderOnLeaveAction")
+  @js.native
   def createInAttributeWidgetUnderOnLeaveAction(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
   
   /**
@@ -110,6 +133,9 @@ object SaveChangesClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 to 8.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInBottomBarItemUnderAction")
+  @js.native
   def createInBottomBarItemUnderAction(container: BottomBarItem): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
   
   /**
@@ -120,6 +146,9 @@ object SaveChangesClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.3.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInDivContainerUnderOnClickAction")
+  @js.native
   def createInDivContainerUnderOnClickAction(container: typings.mendixmodelsdk.pagesMod.pages.DivContainer): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
   
   /**
@@ -130,6 +159,9 @@ object SaveChangesClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.18.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInDynamicImageViewerUnderClickAction")
+  @js.native
   def createInDynamicImageViewerUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.DynamicImageViewer): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
   
   /**
@@ -140,6 +172,9 @@ object SaveChangesClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInGridActionButtonUnderAction")
+  @js.native
   def createInGridActionButtonUnderAction(container: typings.mendixmodelsdk.pagesMod.pages.GridActionButton): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
   
   /**
@@ -150,6 +185,9 @@ object SaveChangesClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInListViewUnderClickAction")
+  @js.native
   def createInListViewUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
   
   /**
@@ -160,6 +198,9 @@ object SaveChangesClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInListViewUnderPullDownAction")
+  @js.native
   def createInListViewUnderPullDownAction(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
   
   /**
@@ -170,6 +211,9 @@ object SaveChangesClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInMenuItemUnderAction")
+  @js.native
   def createInMenuItemUnderAction(container: MenuItem): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
   
   /**
@@ -180,6 +224,9 @@ object SaveChangesClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInReferenceSetSelectorUnderOnChangeAction")
+  @js.native
   def createInReferenceSetSelectorUnderOnChangeAction(container: typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSelector): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
   
   /**
@@ -190,6 +237,9 @@ object SaveChangesClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInStaticImageViewerUnderClickAction")
+  @js.native
   def createInStaticImageViewerUnderClickAction(container: typings.mendixmodelsdk.pagesMod.pages.StaticImageViewer): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
   
   /**
@@ -200,6 +250,9 @@ object SaveChangesClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.7.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInTextBoxUnderOnEnterKeyPressAction")
+  @js.native
   def createInTextBoxUnderOnEnterKeyPressAction(container: typings.mendixmodelsdk.pagesMod.pages.TextBox): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
   
   /**
@@ -210,9 +263,22 @@ object SaveChangesClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.19.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.createInWidgetValueUnderAction")
+  @js.native
   def createInWidgetValueUnderAction(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.SaveChangesClientAction.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

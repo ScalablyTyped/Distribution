@@ -1,11 +1,12 @@
 package typings.xlsx.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WBProps extends js.Object {
+trait WBProps extends StObject {
   
   /** Defined Names */
   var Names: js.UndefOr[js.Array[DefinedName]] = js.native
@@ -28,51 +29,39 @@ object WBProps {
   }
   
   @scala.inline
-  implicit class WBPropsOps[Self <: WBProps] (val x: Self) extends AnyVal {
+  implicit class WBPropsMutableBuilder[Self <: WBProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNames(value: js.Array[DefinedName]): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamesVarargs(value: DefinedName*): Self = StObject.set(x, "Names", js.Array(value :_*))
     
     @scala.inline
-    def setNamesVarargs(value: DefinedName*): Self = this.set("Names", js.Array(value :_*))
+    def setSheets(value: js.Array[SheetProps]): Self = StObject.set(x, "Sheets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNames(value: js.Array[DefinedName]): Self = this.set("Names", value.asInstanceOf[js.Any])
+    def setSheetsUndefined: Self = StObject.set(x, "Sheets", js.undefined)
     
     @scala.inline
-    def deleteNames: Self = this.set("Names", js.undefined)
+    def setSheetsVarargs(value: SheetProps*): Self = StObject.set(x, "Sheets", js.Array(value :_*))
     
     @scala.inline
-    def setSheetsVarargs(value: SheetProps*): Self = this.set("Sheets", js.Array(value :_*))
+    def setViews(value: js.Array[WBView]): Self = StObject.set(x, "Views", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSheets(value: js.Array[SheetProps]): Self = this.set("Sheets", value.asInstanceOf[js.Any])
+    def setViewsUndefined: Self = StObject.set(x, "Views", js.undefined)
     
     @scala.inline
-    def deleteSheets: Self = this.set("Sheets", js.undefined)
+    def setViewsVarargs(value: WBView*): Self = StObject.set(x, "Views", js.Array(value :_*))
     
     @scala.inline
-    def setViewsVarargs(value: WBView*): Self = this.set("Views", js.Array(value :_*))
+    def setWBProps(value: WorkbookProperties): Self = StObject.set(x, "WBProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViews(value: js.Array[WBView]): Self = this.set("Views", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViews: Self = this.set("Views", js.undefined)
-    
-    @scala.inline
-    def setWBProps(value: WorkbookProperties): Self = this.set("WBProps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWBProps: Self = this.set("WBProps", js.undefined)
+    def setWBPropsUndefined: Self = StObject.set(x, "WBProps", js.undefined)
   }
 }

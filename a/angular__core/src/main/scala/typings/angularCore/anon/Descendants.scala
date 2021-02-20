@@ -1,11 +1,12 @@
 package typings.angularCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Descendants extends js.Object {
+trait Descendants extends StObject {
   
   var descendants: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object Descendants {
   }
   
   @scala.inline
-  implicit class DescendantsOps[Self <: Descendants] (val x: Self) extends AnyVal {
+  implicit class DescendantsMutableBuilder[Self <: Descendants] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescendants(value: Boolean): Self = StObject.set(x, "descendants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescendantsUndefined: Self = StObject.set(x, "descendants", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRead(value: js.Any): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescendants(value: Boolean): Self = this.set("descendants", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescendants: Self = this.set("descendants", js.undefined)
-    
-    @scala.inline
-    def setRead(value: js.Any): Self = this.set("read", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRead: Self = this.set("read", js.undefined)
+    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
   }
 }

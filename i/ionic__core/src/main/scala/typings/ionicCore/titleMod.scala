@@ -7,14 +7,14 @@ import typings.ionicCore.mod.StyleEventDetail
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/title/title", JSImport.Namespace)
-@js.native
-object titleMod extends js.Object {
+object titleMod {
   
+  @JSImport("@ionic/core/dist/types/components/title/title", "ToolbarTitle")
   @js.native
   class ToolbarTitle () extends ComponentInterface {
     

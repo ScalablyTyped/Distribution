@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The retry policy associates with HttpRouteRule
   */
 @js.native
-trait SchemaHttpRetryPolicy extends js.Object {
+trait SchemaHttpRetryPolicy extends StObject {
   
   /**
     * Specifies the allowed number retries. This number must be &gt; 0.
@@ -52,39 +53,27 @@ object SchemaHttpRetryPolicy {
   }
   
   @scala.inline
-  implicit class SchemaHttpRetryPolicyOps[Self <: SchemaHttpRetryPolicy] (val x: Self) extends AnyVal {
+  implicit class SchemaHttpRetryPolicyMutableBuilder[Self <: SchemaHttpRetryPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNumRetries(value: Double): Self = StObject.set(x, "numRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNumRetriesUndefined: Self = StObject.set(x, "numRetries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPerTryTimeout(value: SchemaDuration): Self = StObject.set(x, "perTryTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumRetries(value: Double): Self = this.set("numRetries", value.asInstanceOf[js.Any])
+    def setPerTryTimeoutUndefined: Self = StObject.set(x, "perTryTimeout", js.undefined)
     
     @scala.inline
-    def deleteNumRetries: Self = this.set("numRetries", js.undefined)
+    def setRetryConditions(value: js.Array[String]): Self = StObject.set(x, "retryConditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerTryTimeout(value: SchemaDuration): Self = this.set("perTryTimeout", value.asInstanceOf[js.Any])
+    def setRetryConditionsUndefined: Self = StObject.set(x, "retryConditions", js.undefined)
     
     @scala.inline
-    def deletePerTryTimeout: Self = this.set("perTryTimeout", js.undefined)
-    
-    @scala.inline
-    def setRetryConditionsVarargs(value: String*): Self = this.set("retryConditions", js.Array(value :_*))
-    
-    @scala.inline
-    def setRetryConditions(value: js.Array[String]): Self = this.set("retryConditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetryConditions: Self = this.set("retryConditions", js.undefined)
+    def setRetryConditionsVarargs(value: String*): Self = StObject.set(x, "retryConditions", js.Array(value :_*))
   }
 }

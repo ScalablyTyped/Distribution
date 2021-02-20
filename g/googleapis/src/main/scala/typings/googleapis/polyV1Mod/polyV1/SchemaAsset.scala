@@ -1,5 +1,6 @@
 package typings.googleapis.polyV1Mod.polyV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * that can be upload to Poly.
   */
 @js.native
-trait SchemaAsset extends js.Object {
+trait SchemaAsset extends StObject {
   
   /**
     * The author&#39;s publicly visible name. Use this name when giving credit
@@ -104,105 +105,93 @@ object SchemaAsset {
   }
   
   @scala.inline
-  implicit class SchemaAssetOps[Self <: SchemaAsset] (val x: Self) extends AnyVal {
+  implicit class SchemaAssetMutableBuilder[Self <: SchemaAsset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorName(value: String): Self = StObject.set(x, "authorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorNameUndefined: Self = StObject.set(x, "authorName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorName(value: String): Self = this.set("authorName", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteAuthorName: Self = this.set("authorName", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFormats(value: js.Array[SchemaFormat]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setFormatsVarargs(value: SchemaFormat*): Self = StObject.set(x, "formats", js.Array(value :_*))
     
     @scala.inline
-    def setFormatsVarargs(value: SchemaFormat*): Self = this.set("formats", js.Array(value :_*))
+    def setIsCurated(value: Boolean): Self = StObject.set(x, "isCurated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormats(value: js.Array[SchemaFormat]): Self = this.set("formats", value.asInstanceOf[js.Any])
+    def setIsCuratedUndefined: Self = StObject.set(x, "isCurated", js.undefined)
     
     @scala.inline
-    def deleteFormats: Self = this.set("formats", js.undefined)
+    def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCurated(value: Boolean): Self = this.set("isCurated", value.asInstanceOf[js.Any])
+    def setLicenseUndefined: Self = StObject.set(x, "license", js.undefined)
     
     @scala.inline
-    def deleteIsCurated: Self = this.set("isCurated", js.undefined)
+    def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicense(value: String): Self = this.set("license", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteLicense: Self = this.set("license", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: String): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setPresentationParams(value: SchemaPresentationParams): Self = StObject.set(x, "presentationParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPresentationParamsUndefined: Self = StObject.set(x, "presentationParams", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRemixInfo(value: SchemaRemixInfo): Self = StObject.set(x, "remixInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPresentationParams(value: SchemaPresentationParams): Self = this.set("presentationParams", value.asInstanceOf[js.Any])
+    def setRemixInfoUndefined: Self = StObject.set(x, "remixInfo", js.undefined)
     
     @scala.inline
-    def deletePresentationParams: Self = this.set("presentationParams", js.undefined)
+    def setThumbnail(value: SchemaFile): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemixInfo(value: SchemaRemixInfo): Self = this.set("remixInfo", value.asInstanceOf[js.Any])
+    def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
     
     @scala.inline
-    def deleteRemixInfo: Self = this.set("remixInfo", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnail(value: SchemaFile): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
     @scala.inline
-    def deleteThumbnail: Self = this.set("thumbnail", js.undefined)
+    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: String): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

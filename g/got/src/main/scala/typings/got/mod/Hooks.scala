@@ -1,6 +1,7 @@
 package typings.got.mod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template Body Response body type.
   */
 @js.native
-trait Hooks[Options, Body /* <: Buffer | String | js.Object */] extends js.Object {
+trait Hooks[Options, Body /* <: Buffer | String | js.Object */] extends StObject {
   
   var afterResponse: js.UndefOr[js.Array[AfterResponseHook[Options, Body]]] = js.native
   
@@ -37,72 +38,60 @@ object Hooks {
   }
   
   @scala.inline
-  implicit class HooksOps[Self <: Hooks[_, _], Options, Body /* <: Buffer | String | js.Object */] (val x: Self with (Hooks[Options, Body])) extends AnyVal {
+  implicit class HooksMutableBuilder[Self <: Hooks[_, _], Options, Body /* <: Buffer | String | js.Object */] (val x: Self with (Hooks[Options, Body])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterResponse(value: js.Array[AfterResponseHook[Options, Body]]): Self = StObject.set(x, "afterResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterResponseUndefined: Self = StObject.set(x, "afterResponse", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterResponseVarargs(value: (AfterResponseHook[Options, Body])*): Self = StObject.set(x, "afterResponse", js.Array(value :_*))
     
     @scala.inline
-    def setAfterResponseVarargs(value: (AfterResponseHook[Options, Body])*): Self = this.set("afterResponse", js.Array(value :_*))
+    def setBeforeError(value: js.Array[BeforeErrorHook]): Self = StObject.set(x, "beforeError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterResponse(value: js.Array[AfterResponseHook[Options, Body]]): Self = this.set("afterResponse", value.asInstanceOf[js.Any])
+    def setBeforeErrorUndefined: Self = StObject.set(x, "beforeError", js.undefined)
     
     @scala.inline
-    def deleteAfterResponse: Self = this.set("afterResponse", js.undefined)
+    def setBeforeErrorVarargs(value: BeforeErrorHook*): Self = StObject.set(x, "beforeError", js.Array(value :_*))
     
     @scala.inline
-    def setBeforeErrorVarargs(value: BeforeErrorHook*): Self = this.set("beforeError", js.Array(value :_*))
+    def setBeforeRedirect(value: js.Array[BeforeRedirectHook[Options]]): Self = StObject.set(x, "beforeRedirect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeError(value: js.Array[BeforeErrorHook]): Self = this.set("beforeError", value.asInstanceOf[js.Any])
+    def setBeforeRedirectUndefined: Self = StObject.set(x, "beforeRedirect", js.undefined)
     
     @scala.inline
-    def deleteBeforeError: Self = this.set("beforeError", js.undefined)
+    def setBeforeRedirectVarargs(value: BeforeRedirectHook[Options]*): Self = StObject.set(x, "beforeRedirect", js.Array(value :_*))
     
     @scala.inline
-    def setBeforeRedirectVarargs(value: BeforeRedirectHook[Options]*): Self = this.set("beforeRedirect", js.Array(value :_*))
+    def setBeforeRequest(value: js.Array[BeforeRequestHook[Options]]): Self = StObject.set(x, "beforeRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeRedirect(value: js.Array[BeforeRedirectHook[Options]]): Self = this.set("beforeRedirect", value.asInstanceOf[js.Any])
+    def setBeforeRequestUndefined: Self = StObject.set(x, "beforeRequest", js.undefined)
     
     @scala.inline
-    def deleteBeforeRedirect: Self = this.set("beforeRedirect", js.undefined)
+    def setBeforeRequestVarargs(value: BeforeRequestHook[Options]*): Self = StObject.set(x, "beforeRequest", js.Array(value :_*))
     
     @scala.inline
-    def setBeforeRequestVarargs(value: BeforeRequestHook[Options]*): Self = this.set("beforeRequest", js.Array(value :_*))
+    def setBeforeRetry(value: js.Array[BeforeRetryHook[Options]]): Self = StObject.set(x, "beforeRetry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeRequest(value: js.Array[BeforeRequestHook[Options]]): Self = this.set("beforeRequest", value.asInstanceOf[js.Any])
+    def setBeforeRetryUndefined: Self = StObject.set(x, "beforeRetry", js.undefined)
     
     @scala.inline
-    def deleteBeforeRequest: Self = this.set("beforeRequest", js.undefined)
+    def setBeforeRetryVarargs(value: BeforeRetryHook[Options]*): Self = StObject.set(x, "beforeRetry", js.Array(value :_*))
     
     @scala.inline
-    def setBeforeRetryVarargs(value: BeforeRetryHook[Options]*): Self = this.set("beforeRetry", js.Array(value :_*))
+    def setInit(value: js.Array[InitHook[Options]]): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeRetry(value: js.Array[BeforeRetryHook[Options]]): Self = this.set("beforeRetry", value.asInstanceOf[js.Any])
+    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def deleteBeforeRetry: Self = this.set("beforeRetry", js.undefined)
-    
-    @scala.inline
-    def setInitVarargs(value: InitHook[Options]*): Self = this.set("init", js.Array(value :_*))
-    
-    @scala.inline
-    def setInit(value: js.Array[InitHook[Options]]): Self = this.set("init", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInit: Self = this.set("init", js.undefined)
+    def setInitVarargs(value: InitHook[Options]*): Self = StObject.set(x, "init", js.Array(value :_*))
   }
 }

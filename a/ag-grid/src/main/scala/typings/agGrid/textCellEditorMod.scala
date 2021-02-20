@@ -3,20 +3,16 @@ package typings.agGrid
 import typings.agGrid.componentMod.Component
 import typings.agGrid.iCellEditorMod.ICellEditor
 import typings.agGrid.iCellEditorMod.ICellEditorParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rendering/cellEditors/textCellEditor", JSImport.Namespace)
-@js.native
-object textCellEditorMod extends js.Object {
+object textCellEditorMod {
   
-  @js.native
-  trait ITextCellEditorParams extends ICellEditorParams {
-    
-    var useFormatter: Boolean = js.native
-  }
-  
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.agGrid.iComponentMod.IComponent because Already inherited
+  - typings.agGrid.iCellEditorMod.ICellEditorComp because var conflicts: afterGuiAttached, destroy, init. Inlined  */ @JSImport("ag-grid/dist/lib/rendering/cellEditors/textCellEditor", "TextCellEditor")
   @js.native
   class TextCellEditor ()
     extends Component
@@ -40,9 +36,22 @@ object textCellEditorMod extends js.Object {
     var params: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object TextCellEditor extends js.Object {
+  object TextCellEditor {
     
-    var TEMPLATE: js.Any = js.native
+    @JSImport("ag-grid/dist/lib/rendering/cellEditors/textCellEditor", "TextCellEditor")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ag-grid/dist/lib/rendering/cellEditors/textCellEditor", "TextCellEditor.TEMPLATE")
+    @js.native
+    def TEMPLATE: js.Any = js.native
+    @scala.inline
+    def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
+  }
+  
+  @js.native
+  trait ITextCellEditorParams extends ICellEditorParams {
+    
+    var useFormatter: Boolean = js.native
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildBazelRemoteExecutionV2FindMissingBlobsResponse extends js.Object {
+trait BuildBazelRemoteExecutionV2FindMissingBlobsResponse extends StObject {
   
   /** A list of the blobs requested *not* present in the storage. */
   var missingBlobDigests: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2Digest]] = js.native
@@ -19,27 +20,15 @@ object BuildBazelRemoteExecutionV2FindMissingBlobsResponse {
   }
   
   @scala.inline
-  implicit class BuildBazelRemoteExecutionV2FindMissingBlobsResponseOps[Self <: BuildBazelRemoteExecutionV2FindMissingBlobsResponse] (val x: Self) extends AnyVal {
+  implicit class BuildBazelRemoteExecutionV2FindMissingBlobsResponseMutableBuilder[Self <: BuildBazelRemoteExecutionV2FindMissingBlobsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMissingBlobDigests(value: js.Array[BuildBazelRemoteExecutionV2Digest]): Self = StObject.set(x, "missingBlobDigests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMissingBlobDigestsUndefined: Self = StObject.set(x, "missingBlobDigests", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMissingBlobDigestsVarargs(value: BuildBazelRemoteExecutionV2Digest*): Self = this.set("missingBlobDigests", js.Array(value :_*))
-    
-    @scala.inline
-    def setMissingBlobDigests(value: js.Array[BuildBazelRemoteExecutionV2Digest]): Self = this.set("missingBlobDigests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMissingBlobDigests: Self = this.set("missingBlobDigests", js.undefined)
+    def setMissingBlobDigestsVarargs(value: BuildBazelRemoteExecutionV2Digest*): Self = StObject.set(x, "missingBlobDigests", js.Array(value :_*))
   }
 }

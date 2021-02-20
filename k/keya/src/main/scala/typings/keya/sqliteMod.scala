@@ -2,13 +2,23 @@ package typings.keya
 
 import typings.sqlite.sqlite3Mod.Database
 import typings.sqlite.sqlite3Mod.Statement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("keya/out/node/sqlite", JSImport.Namespace)
-@js.native
-object sqliteMod extends js.Object {
+object sqliteMod {
+  
+  @JSImport("keya/out/node/sqlite", JSImport.Default)
+  @js.native
+  class default[T] () extends SQLiteStore[T]
+  /* static members */
+  object default {
+    
+    @JSImport("keya/out/node/sqlite", "default.stores")
+    @js.native
+    def stores(): js.Promise[js.Array[String]] = js.native
+  }
   
   @js.native
   trait SQLiteStore[T]
@@ -19,14 +29,5 @@ object sqliteMod extends js.Object {
     var file: String = js.native
     
     var statements: js.Any = js.native
-  }
-  
-  @js.native
-  class default[T] () extends SQLiteStore[T]
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def stores(): js.Promise[js.Array[String]] = js.native
   }
 }

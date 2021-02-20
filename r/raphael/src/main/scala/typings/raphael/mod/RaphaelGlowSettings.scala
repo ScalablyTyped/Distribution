@@ -1,11 +1,12 @@
 package typings.raphael.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RaphaelGlowSettings extends js.Object {
+trait RaphaelGlowSettings extends StObject {
   
   /** The glow color, default is `black`. */
   var color: String = js.native
@@ -34,36 +35,24 @@ object RaphaelGlowSettings {
   }
   
   @scala.inline
-  implicit class RaphaelGlowSettingsOps[Self <: RaphaelGlowSettings] (val x: Self) extends AnyVal {
+  implicit class RaphaelGlowSettingsMutableBuilder[Self <: RaphaelGlowSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffsetx(value: Double): Self = StObject.set(x, "offsetx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setOffsety(value: Double): Self = StObject.set(x, "offsety", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: Boolean): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetx(value: Double): Self = this.set("offsetx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffsety(value: Double): Self = this.set("offsety", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

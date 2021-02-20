@@ -6,19 +6,16 @@ import typings.angularCompiler.compileReflectorMod.CompileReflector
 import typings.angularCompiler.outputAstMod.Expression
 import typings.angularCompiler.srcUtilMod.OutputContext
 import typings.angularCompiler.templateAstMod.TemplateAst
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/view_compiler/view_compiler", JSImport.Namespace)
-@js.native
-object viewCompilerViewCompilerMod extends js.Object {
+object viewCompilerViewCompilerMod {
   
-  def elementEventFullName(target: String, name: String): String = js.native
-  def elementEventFullName(target: Null, name: String): String = js.native
-  
+  @JSImport("@angular/compiler/src/view_compiler/view_compiler", "ViewCompileResult")
   @js.native
-  class ViewCompileResult protected () extends js.Object {
+  class ViewCompileResult protected () extends StObject {
     def this(viewClassVar: String, rendererTypeVar: String) = this()
     
     var rendererTypeVar: String = js.native
@@ -26,8 +23,9 @@ object viewCompilerViewCompilerMod extends js.Object {
     var viewClassVar: String = js.native
   }
   
+  @JSImport("@angular/compiler/src/view_compiler/view_compiler", "ViewCompiler")
   @js.native
-  class ViewCompiler protected () extends js.Object {
+  class ViewCompiler protected () extends StObject {
     def this(_reflector: CompileReflector) = this()
     
     var _reflector: js.Any = js.native
@@ -40,4 +38,11 @@ object viewCompilerViewCompilerMod extends js.Object {
       usedPipes: js.Array[CompilePipeSummary]
     ): ViewCompileResult = js.native
   }
+  
+  @JSImport("@angular/compiler/src/view_compiler/view_compiler", "elementEventFullName")
+  @js.native
+  def elementEventFullName(target: String, name: String): String = js.native
+  @JSImport("@angular/compiler/src/view_compiler/view_compiler", "elementEventFullName")
+  @js.native
+  def elementEventFullName(target: Null, name: String): String = js.native
 }

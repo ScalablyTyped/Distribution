@@ -1,11 +1,12 @@
 package typings.natural.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TfIdf extends js.Object {
+trait TfIdf extends StObject {
   
   def addDocument(document: String): Unit = js.native
   def addDocument(document: String, key: js.UndefOr[scala.Nothing], restoreCache: Boolean): Unit = js.native

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVault.gapi.client.vault
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeldDriveQuery extends js.Object {
+trait HeldDriveQuery extends StObject {
   
   /** If true, include files in shared drives in the hold. */
   var includeSharedDriveFiles: js.UndefOr[Boolean] = js.native
@@ -22,30 +23,18 @@ object HeldDriveQuery {
   }
   
   @scala.inline
-  implicit class HeldDriveQueryOps[Self <: HeldDriveQuery] (val x: Self) extends AnyVal {
+  implicit class HeldDriveQueryMutableBuilder[Self <: HeldDriveQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeSharedDriveFiles(value: Boolean): Self = StObject.set(x, "includeSharedDriveFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeSharedDriveFilesUndefined: Self = StObject.set(x, "includeSharedDriveFiles", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeTeamDriveFiles(value: Boolean): Self = StObject.set(x, "includeTeamDriveFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeSharedDriveFiles(value: Boolean): Self = this.set("includeSharedDriveFiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeSharedDriveFiles: Self = this.set("includeSharedDriveFiles", js.undefined)
-    
-    @scala.inline
-    def setIncludeTeamDriveFiles(value: Boolean): Self = this.set("includeTeamDriveFiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeTeamDriveFiles: Self = this.set("includeTeamDriveFiles", js.undefined)
+    def setIncludeTeamDriveFilesUndefined: Self = StObject.set(x, "includeTeamDriveFiles", js.undefined)
   }
 }

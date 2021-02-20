@@ -2,12 +2,13 @@ package typings.atom.anon
 
 import typings.atom.mod.FocusableHTMLElement
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoFocus[T] extends js.Object {
+trait AutoFocus[T] extends StObject {
   
   var autoFocus: js.UndefOr[Boolean | FocusableHTMLElement] = js.native
   
@@ -26,42 +27,30 @@ object AutoFocus {
   }
   
   @scala.inline
-  implicit class AutoFocusOps[Self <: AutoFocus[_], T] (val x: Self with AutoFocus[T]) extends AnyVal {
+  implicit class AutoFocusMutableBuilder[Self <: AutoFocus[_], T] (val x: Self with AutoFocus[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoFocus(value: Boolean | FocusableHTMLElement): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoFocusFunction0(value: () => HTMLElement): Self = StObject.set(x, "autoFocus", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     @scala.inline
-    def setItem(value: T): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFocusFunction0(value: () => HTMLElement): Self = this.set("autoFocus", js.Any.fromFunction0(value))
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFocus(value: Boolean | FocusableHTMLElement): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

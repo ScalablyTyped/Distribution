@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListThingGroupsResponse extends js.Object {
+trait ListThingGroupsResponse extends StObject {
   
   /**
     * The token to use to get the next set of results. Will not be returned if operation has returned all results.
@@ -26,33 +27,21 @@ object ListThingGroupsResponse {
   }
   
   @scala.inline
-  implicit class ListThingGroupsResponseOps[Self <: ListThingGroupsResponse] (val x: Self) extends AnyVal {
+  implicit class ListThingGroupsResponseMutableBuilder[Self <: ListThingGroupsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThingGroups(value: ThingGroupNameAndArnList): Self = StObject.set(x, "thingGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setThingGroupsUndefined: Self = StObject.set(x, "thingGroups", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setThingGroupsVarargs(value: GroupNameAndArn*): Self = this.set("thingGroups", js.Array(value :_*))
-    
-    @scala.inline
-    def setThingGroups(value: ThingGroupNameAndArnList): Self = this.set("thingGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThingGroups: Self = this.set("thingGroups", js.undefined)
+    def setThingGroupsVarargs(value: GroupNameAndArn*): Self = StObject.set(x, "thingGroups", js.Array(value :_*))
   }
 }

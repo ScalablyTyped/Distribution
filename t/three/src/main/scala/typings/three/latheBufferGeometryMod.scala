@@ -3,14 +3,14 @@ package typings.three
 import typings.three.anon.PhiLength
 import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.vector2Mod.Vector2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/geometries/LatheBufferGeometry", JSImport.Namespace)
-@js.native
-object latheBufferGeometryMod extends js.Object {
+object latheBufferGeometryMod {
   
+  @JSImport("three/src/geometries/LatheBufferGeometry", "LatheBufferGeometry")
   @js.native
   class LatheBufferGeometry protected () extends BufferGeometry {
     /**

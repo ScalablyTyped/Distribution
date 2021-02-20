@@ -1,14 +1,15 @@
 package typings.pixiSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextureWrap extends js.Object
+sealed trait TextureWrap extends StObject
 @JSGlobal("PIXI.spine.core.TextureWrap")
 @js.native
-object TextureWrap extends js.Object {
+object TextureWrap extends StObject {
   
   @js.native
   sealed trait ClampToEdge extends TextureWrap

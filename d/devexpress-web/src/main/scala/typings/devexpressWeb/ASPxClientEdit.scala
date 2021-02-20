@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -122,57 +123,45 @@ object ASPxClientEdit {
   }
   
   @scala.inline
-  implicit class ASPxClientEditOps[Self <: ASPxClientEdit] (val x: Self) extends AnyVal {
+  implicit class ASPxClientEditMutableBuilder[Self <: ASPxClientEdit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFocus(value: () => Unit): Self = StObject.set(x, "Focus", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetErrorText(value: () => String): Self = StObject.set(x, "GetErrorText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetInputElement(value: () => js.Any): Self = StObject.set(x, "GetInputElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFocus(value: () => Unit): Self = this.set("Focus", js.Any.fromFunction0(value))
+    def setGetIsValid(value: () => Boolean): Self = StObject.set(x, "GetIsValid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetErrorText(value: () => String): Self = this.set("GetErrorText", js.Any.fromFunction0(value))
+    def setGetReadOnly(value: () => Boolean): Self = StObject.set(x, "GetReadOnly", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInputElement(value: () => js.Any): Self = this.set("GetInputElement", js.Any.fromFunction0(value))
+    def setGotFocus(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]]): Self = StObject.set(x, "GotFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetIsValid(value: () => Boolean): Self = this.set("GetIsValid", js.Any.fromFunction0(value))
+    def setLostFocus(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]]): Self = StObject.set(x, "LostFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetReadOnly(value: () => Boolean): Self = this.set("GetReadOnly", js.Any.fromFunction0(value))
+    def setSetErrorText(value: String => Unit): Self = StObject.set(x, "SetErrorText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGotFocus(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]]): Self = this.set("GotFocus", value.asInstanceOf[js.Any])
+    def setSetIsValid(value: Boolean => Unit): Self = StObject.set(x, "SetIsValid", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLostFocus(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]]): Self = this.set("LostFocus", value.asInstanceOf[js.Any])
+    def setSetReadOnly(value: Boolean => Unit): Self = StObject.set(x, "SetReadOnly", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetErrorText(value: String => Unit): Self = this.set("SetErrorText", js.Any.fromFunction1(value))
+    def setValidate(value: () => Unit): Self = StObject.set(x, "Validate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetIsValid(value: Boolean => Unit): Self = this.set("SetIsValid", js.Any.fromFunction1(value))
+    def setValidation(value: ASPxClientEvent[ASPxClientEditValidationEventHandler[ASPxClientEdit]]): Self = StObject.set(x, "Validation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetReadOnly(value: Boolean => Unit): Self = this.set("SetReadOnly", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setValidate(value: () => Unit): Self = this.set("Validate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setValidation(value: ASPxClientEvent[ASPxClientEditValidationEventHandler[ASPxClientEdit]]): Self = this.set("Validation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientEdit]]): Self = this.set("ValueChanged", value.asInstanceOf[js.Any])
+    def setValueChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientEdit]]): Self = StObject.set(x, "ValueChanged", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.bmapgl.BMapGL
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BusLineSearch extends js.Object {
+trait BusLineSearch extends StObject {
   
   def clearResults(): Unit = js.native
   

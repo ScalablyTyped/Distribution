@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object defining a single tokenizaion rule. */
 @js.native
-trait TokenDictRule extends js.Object {
+trait TokenDictRule extends StObject {
   
   /** The part of speech that the `text` string belongs to. For example `noun`. Custom parts of speech can be specified. */
   var part_of_speech: String = js.native
@@ -29,39 +30,27 @@ object TokenDictRule {
   }
   
   @scala.inline
-  implicit class TokenDictRuleOps[Self <: TokenDictRule] (val x: Self) extends AnyVal {
+  implicit class TokenDictRuleMutableBuilder[Self <: TokenDictRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPart_of_speech(value: String): Self = StObject.set(x, "part_of_speech", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReadings(value: js.Array[String]): Self = StObject.set(x, "readings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadingsUndefined: Self = StObject.set(x, "readings", js.undefined)
     
     @scala.inline
-    def setPart_of_speech(value: String): Self = this.set("part_of_speech", value.asInstanceOf[js.Any])
+    def setReadingsVarargs(value: String*): Self = StObject.set(x, "readings", js.Array(value :_*))
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokensVarargs(value: String*): Self = this.set("tokens", js.Array(value :_*))
+    def setTokens(value: js.Array[String]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokens(value: js.Array[String]): Self = this.set("tokens", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadingsVarargs(value: String*): Self = this.set("readings", js.Array(value :_*))
-    
-    @scala.inline
-    def setReadings(value: js.Array[String]): Self = this.set("readings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadings: Self = this.set("readings", js.undefined)
+    def setTokensVarargs(value: String*): Self = StObject.set(x, "tokens", js.Array(value :_*))
   }
 }

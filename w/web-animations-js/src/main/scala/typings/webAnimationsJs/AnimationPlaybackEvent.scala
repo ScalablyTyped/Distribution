@@ -1,11 +1,12 @@
 package typings.webAnimationsJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationPlaybackEvent extends js.Object {
+trait AnimationPlaybackEvent extends StObject {
   
   var bubbles: Boolean = js.native
   
@@ -46,54 +47,42 @@ object AnimationPlaybackEvent {
   }
   
   @scala.inline
-  implicit class AnimationPlaybackEventOps[Self <: AnimationPlaybackEvent] (val x: Self) extends AnyVal {
+  implicit class AnimationPlaybackEventMutableBuilder[Self <: AnimationPlaybackEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentTarget(value: Animation): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbles(value: Boolean): Self = this.set("bubbles", value.asInstanceOf[js.Any])
+    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelable(value: Boolean): Self = this.set("cancelable", value.asInstanceOf[js.Any])
+    def setCurrentTimeNull: Self = StObject.set(x, "currentTime", null)
     
     @scala.inline
-    def setCurrentTarget(value: Animation): Self = this.set("currentTarget", value.asInstanceOf[js.Any])
+    def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultPrevented(value: Boolean): Self = this.set("defaultPrevented", value.asInstanceOf[js.Any])
+    def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventPhase(value: Double): Self = this.set("eventPhase", value.asInstanceOf[js.Any])
+    def setTarget(value: Animation): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: Animation): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeStamp(value: Double): Self = this.set("timeStamp", value.asInstanceOf[js.Any])
+    def setTimelineTime(value: Double): Self = StObject.set(x, "timelineTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTimelineTimeNull: Self = StObject.set(x, "timelineTime", null)
     
     @scala.inline
-    def setCurrentTime(value: Double): Self = this.set("currentTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentTimeNull: Self = this.set("currentTime", null)
-    
-    @scala.inline
-    def setTimelineTime(value: Double): Self = this.set("timelineTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimelineTimeNull: Self = this.set("timelineTime", null)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

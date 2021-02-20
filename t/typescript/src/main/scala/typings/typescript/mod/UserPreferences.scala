@@ -10,12 +10,13 @@ import typings.typescript.typescriptStrings.off
 import typings.typescript.typescriptStrings.on
 import typings.typescript.typescriptStrings.relative
 import typings.typescript.typescriptStrings.single
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserPreferences extends js.Object {
+trait UserPreferences extends StObject {
   
   val allowTextChangesInNewFiles: js.UndefOr[Boolean] = js.native
   
@@ -49,84 +50,72 @@ object UserPreferences {
   }
   
   @scala.inline
-  implicit class UserPreferencesOps[Self <: UserPreferences] (val x: Self) extends AnyVal {
+  implicit class UserPreferencesMutableBuilder[Self <: UserPreferences] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowTextChangesInNewFiles(value: Boolean): Self = StObject.set(x, "allowTextChangesInNewFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowTextChangesInNewFilesUndefined: Self = StObject.set(x, "allowTextChangesInNewFiles", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableSuggestions(value: Boolean): Self = StObject.set(x, "disableSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowTextChangesInNewFiles(value: Boolean): Self = this.set("allowTextChangesInNewFiles", value.asInstanceOf[js.Any])
+    def setDisableSuggestionsUndefined: Self = StObject.set(x, "disableSuggestions", js.undefined)
     
     @scala.inline
-    def deleteAllowTextChangesInNewFiles: Self = this.set("allowTextChangesInNewFiles", js.undefined)
+    def setImportModuleSpecifierEnding(value: auto | minimal | index | js_): Self = StObject.set(x, "importModuleSpecifierEnding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableSuggestions(value: Boolean): Self = this.set("disableSuggestions", value.asInstanceOf[js.Any])
+    def setImportModuleSpecifierEndingUndefined: Self = StObject.set(x, "importModuleSpecifierEnding", js.undefined)
     
     @scala.inline
-    def deleteDisableSuggestions: Self = this.set("disableSuggestions", js.undefined)
+    def setImportModuleSpecifierPreference(value: auto | relative | `non-relative`): Self = StObject.set(x, "importModuleSpecifierPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportModuleSpecifierEnding(value: auto | minimal | index | js_): Self = this.set("importModuleSpecifierEnding", value.asInstanceOf[js.Any])
+    def setImportModuleSpecifierPreferenceUndefined: Self = StObject.set(x, "importModuleSpecifierPreference", js.undefined)
     
     @scala.inline
-    def deleteImportModuleSpecifierEnding: Self = this.set("importModuleSpecifierEnding", js.undefined)
+    def setIncludeAutomaticOptionalChainCompletions(value: Boolean): Self = StObject.set(x, "includeAutomaticOptionalChainCompletions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportModuleSpecifierPreference(value: auto | relative | `non-relative`): Self = this.set("importModuleSpecifierPreference", value.asInstanceOf[js.Any])
+    def setIncludeAutomaticOptionalChainCompletionsUndefined: Self = StObject.set(x, "includeAutomaticOptionalChainCompletions", js.undefined)
     
     @scala.inline
-    def deleteImportModuleSpecifierPreference: Self = this.set("importModuleSpecifierPreference", js.undefined)
+    def setIncludeCompletionsForModuleExports(value: Boolean): Self = StObject.set(x, "includeCompletionsForModuleExports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeAutomaticOptionalChainCompletions(value: Boolean): Self = this.set("includeAutomaticOptionalChainCompletions", value.asInstanceOf[js.Any])
+    def setIncludeCompletionsForModuleExportsUndefined: Self = StObject.set(x, "includeCompletionsForModuleExports", js.undefined)
     
     @scala.inline
-    def deleteIncludeAutomaticOptionalChainCompletions: Self = this.set("includeAutomaticOptionalChainCompletions", js.undefined)
+    def setIncludeCompletionsWithInsertText(value: Boolean): Self = StObject.set(x, "includeCompletionsWithInsertText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeCompletionsForModuleExports(value: Boolean): Self = this.set("includeCompletionsForModuleExports", value.asInstanceOf[js.Any])
+    def setIncludeCompletionsWithInsertTextUndefined: Self = StObject.set(x, "includeCompletionsWithInsertText", js.undefined)
     
     @scala.inline
-    def deleteIncludeCompletionsForModuleExports: Self = this.set("includeCompletionsForModuleExports", js.undefined)
+    def setIncludePackageJsonAutoImports(value: auto | on | off): Self = StObject.set(x, "includePackageJsonAutoImports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeCompletionsWithInsertText(value: Boolean): Self = this.set("includeCompletionsWithInsertText", value.asInstanceOf[js.Any])
+    def setIncludePackageJsonAutoImportsUndefined: Self = StObject.set(x, "includePackageJsonAutoImports", js.undefined)
     
     @scala.inline
-    def deleteIncludeCompletionsWithInsertText: Self = this.set("includeCompletionsWithInsertText", js.undefined)
+    def setProvidePrefixAndSuffixTextForRename(value: Boolean): Self = StObject.set(x, "providePrefixAndSuffixTextForRename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludePackageJsonAutoImports(value: auto | on | off): Self = this.set("includePackageJsonAutoImports", value.asInstanceOf[js.Any])
+    def setProvidePrefixAndSuffixTextForRenameUndefined: Self = StObject.set(x, "providePrefixAndSuffixTextForRename", js.undefined)
     
     @scala.inline
-    def deleteIncludePackageJsonAutoImports: Self = this.set("includePackageJsonAutoImports", js.undefined)
+    def setProvideRefactorNotApplicableReason(value: Boolean): Self = StObject.set(x, "provideRefactorNotApplicableReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvidePrefixAndSuffixTextForRename(value: Boolean): Self = this.set("providePrefixAndSuffixTextForRename", value.asInstanceOf[js.Any])
+    def setProvideRefactorNotApplicableReasonUndefined: Self = StObject.set(x, "provideRefactorNotApplicableReason", js.undefined)
     
     @scala.inline
-    def deleteProvidePrefixAndSuffixTextForRename: Self = this.set("providePrefixAndSuffixTextForRename", js.undefined)
+    def setQuotePreference(value: auto | double | single): Self = StObject.set(x, "quotePreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvideRefactorNotApplicableReason(value: Boolean): Self = this.set("provideRefactorNotApplicableReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvideRefactorNotApplicableReason: Self = this.set("provideRefactorNotApplicableReason", js.undefined)
-    
-    @scala.inline
-    def setQuotePreference(value: auto | double | single): Self = this.set("quotePreference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuotePreference: Self = this.set("quotePreference", js.undefined)
+    def setQuotePreferenceUndefined: Self = StObject.set(x, "quotePreference", js.undefined)
   }
 }

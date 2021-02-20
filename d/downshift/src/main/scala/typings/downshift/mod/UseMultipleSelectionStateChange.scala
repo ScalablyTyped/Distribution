@@ -1,12 +1,13 @@
 package typings.downshift.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<downshift.downshift.UseMultipleSelectionState<Item>> */
 @js.native
-trait UseMultipleSelectionStateChange[Item] extends js.Object {
+trait UseMultipleSelectionStateChange[Item] extends StObject {
   
   var activeIndex: js.UndefOr[Double] = js.native
   
@@ -24,36 +25,24 @@ object UseMultipleSelectionStateChange {
   }
   
   @scala.inline
-  implicit class UseMultipleSelectionStateChangeOps[Self <: UseMultipleSelectionStateChange[_], Item] (val x: Self with UseMultipleSelectionStateChange[Item]) extends AnyVal {
+  implicit class UseMultipleSelectionStateChangeMutableBuilder[Self <: UseMultipleSelectionStateChange[_], Item] (val x: Self with UseMultipleSelectionStateChange[Item]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelectedItems(value: js.Array[Item]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: UseMultipleSelectionStateChangeTypes): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
     
     @scala.inline
-    def setActiveIndex(value: Double): Self = this.set("activeIndex", value.asInstanceOf[js.Any])
+    def setSelectedItemsVarargs(value: Item*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
     
     @scala.inline
-    def deleteActiveIndex: Self = this.set("activeIndex", js.undefined)
-    
-    @scala.inline
-    def setSelectedItemsVarargs(value: Item*): Self = this.set("selectedItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelectedItems(value: js.Array[Item]): Self = this.set("selectedItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedItems: Self = this.set("selectedItems", js.undefined)
+    def setType(value: UseMultipleSelectionStateChangeTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

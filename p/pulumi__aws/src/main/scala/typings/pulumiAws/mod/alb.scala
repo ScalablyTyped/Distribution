@@ -28,45 +28,37 @@ import typings.pulumiPulumi.invokeMod.InvokeOptions
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws", "alb")
-@js.native
-object alb extends js.Object {
+object alb {
   
+  @JSImport("@pulumi/aws", "alb.ApplicationLoadBalancer")
+  @js.native
   val ApplicationLoadBalancer: LoadBalancerType = js.native
   
+  @JSImport("@pulumi/aws", "alb.Dualstack")
+  @js.native
   val Dualstack: IpAddressType = js.native
   
-  val Ipv4: IpAddressType = js.native
-  
-  val NetworkLoadBalancer: LoadBalancerType = js.native
-  
-  def getListener(): js.Promise[GetListenerResult] = js.native
-  def getListener(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetListenerResult] = js.native
-  def getListener(args: GetListenerArgs): js.Promise[GetListenerResult] = js.native
-  def getListener(args: GetListenerArgs, opts: InvokeOptions): js.Promise[GetListenerResult] = js.native
-  
-  def getLoadBalancer(): js.Promise[GetLoadBalancerResult] = js.native
-  def getLoadBalancer(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetLoadBalancerResult] = js.native
-  def getLoadBalancer(args: GetLoadBalancerArgs): js.Promise[GetLoadBalancerResult] = js.native
-  def getLoadBalancer(args: GetLoadBalancerArgs, opts: InvokeOptions): js.Promise[GetLoadBalancerResult] = js.native
-  
-  def getTargetGroup(): js.Promise[GetTargetGroupResult] = js.native
-  def getTargetGroup(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetTargetGroupResult] = js.native
-  def getTargetGroup(args: GetTargetGroupArgs): js.Promise[GetTargetGroupResult] = js.native
-  def getTargetGroup(args: GetTargetGroupArgs, opts: InvokeOptions): js.Promise[GetTargetGroupResult] = js.native
-  
-  @js.native
-  object IpAddressType extends js.Object {
+  object IpAddressType {
     
+    @JSImport("@pulumi/aws", "alb.IpAddressType.Dualstack")
+    @js.native
     val Dualstack: dualstack = js.native
     
+    @JSImport("@pulumi/aws", "alb.IpAddressType.Ipv4")
+    @js.native
     val Ipv4: ipv4 = js.native
   }
   
+  @JSImport("@pulumi/aws", "alb.Ipv4")
+  @js.native
+  val Ipv4: IpAddressType = js.native
+  
+  @JSImport("@pulumi/aws", "alb.Listener")
   @js.native
   class Listener protected ()
     extends typings.pulumiAws.albMod.Listener {
@@ -81,8 +73,7 @@ object alb extends js.Object {
     def this(name: String, args: ListenerArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Listener extends js.Object {
+  object Listener {
     
     /**
       * Get an existing Listener resource's state with the given name, ID, and optional extra
@@ -93,18 +84,29 @@ object alb extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "alb.Listener.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.listenerMod.Listener = js.native
+    @JSImport("@pulumi/aws", "alb.Listener.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.listenerMod.Listener = js.native
+    @JSImport("@pulumi/aws", "alb.Listener.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ListenerState): typings.pulumiAws.listenerMod.Listener = js.native
+    @JSImport("@pulumi/aws", "alb.Listener.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ListenerState, opts: CustomResourceOptions): typings.pulumiAws.listenerMod.Listener = js.native
     
     /**
       * Returns true if the given object is an instance of Listener.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "alb.Listener.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/alb/listener.Listener */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "alb.ListenerCertificate")
   @js.native
   class ListenerCertificate protected ()
     extends typings.pulumiAws.albMod.ListenerCertificate {
@@ -119,8 +121,7 @@ object alb extends js.Object {
     def this(name: String, args: ListenerCertificateArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object ListenerCertificate extends js.Object {
+  object ListenerCertificate {
     
     /**
       * Get an existing ListenerCertificate resource's state with the given name, ID, and optional extra
@@ -131,18 +132,29 @@ object alb extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "alb.ListenerCertificate.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.listenerCertificateMod.ListenerCertificate = js.native
+    @JSImport("@pulumi/aws", "alb.ListenerCertificate.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.listenerCertificateMod.ListenerCertificate = js.native
+    @JSImport("@pulumi/aws", "alb.ListenerCertificate.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ListenerCertificateState): typings.pulumiAws.listenerCertificateMod.ListenerCertificate = js.native
+    @JSImport("@pulumi/aws", "alb.ListenerCertificate.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ListenerCertificateState, opts: CustomResourceOptions): typings.pulumiAws.listenerCertificateMod.ListenerCertificate = js.native
     
     /**
       * Returns true if the given object is an instance of ListenerCertificate.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "alb.ListenerCertificate.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/alb/listenerCertificate.ListenerCertificate */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "alb.ListenerRule")
   @js.native
   class ListenerRule protected ()
     extends typings.pulumiAws.albMod.ListenerRule {
@@ -157,8 +169,7 @@ object alb extends js.Object {
     def this(name: String, args: ListenerRuleArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object ListenerRule extends js.Object {
+  object ListenerRule {
     
     /**
       * Get an existing ListenerRule resource's state with the given name, ID, and optional extra
@@ -169,18 +180,29 @@ object alb extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "alb.ListenerRule.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.listenerRuleMod.ListenerRule = js.native
+    @JSImport("@pulumi/aws", "alb.ListenerRule.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.listenerRuleMod.ListenerRule = js.native
+    @JSImport("@pulumi/aws", "alb.ListenerRule.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ListenerRuleState): typings.pulumiAws.listenerRuleMod.ListenerRule = js.native
+    @JSImport("@pulumi/aws", "alb.ListenerRule.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ListenerRuleState, opts: CustomResourceOptions): typings.pulumiAws.listenerRuleMod.ListenerRule = js.native
     
     /**
       * Returns true if the given object is an instance of ListenerRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "alb.ListenerRule.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/alb/listenerRule.ListenerRule */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "alb.LoadBalancer")
   @js.native
   class LoadBalancer protected ()
     extends typings.pulumiAws.albMod.LoadBalancer {
@@ -197,8 +219,7 @@ object alb extends js.Object {
     def this(name: String, args: LoadBalancerArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object LoadBalancer extends js.Object {
+  object LoadBalancer {
     
     /**
       * Get an existing LoadBalancer resource's state with the given name, ID, and optional extra
@@ -209,26 +230,44 @@ object alb extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "alb.LoadBalancer.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.loadBalancerMod.LoadBalancer = js.native
+    @JSImport("@pulumi/aws", "alb.LoadBalancer.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.loadBalancerMod.LoadBalancer = js.native
+    @JSImport("@pulumi/aws", "alb.LoadBalancer.get")
+    @js.native
     def get(name: String, id: Input[ID], state: LoadBalancerState): typings.pulumiAws.loadBalancerMod.LoadBalancer = js.native
+    @JSImport("@pulumi/aws", "alb.LoadBalancer.get")
+    @js.native
     def get(name: String, id: Input[ID], state: LoadBalancerState, opts: CustomResourceOptions): typings.pulumiAws.loadBalancerMod.LoadBalancer = js.native
     
     /**
       * Returns true if the given object is an instance of LoadBalancer.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "alb.LoadBalancer.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/alb/loadBalancer.LoadBalancer */ Boolean = js.native
   }
   
-  @js.native
-  object LoadBalancerType extends js.Object {
+  object LoadBalancerType {
     
+    @JSImport("@pulumi/aws", "alb.LoadBalancerType.Application")
+    @js.native
     val Application: application = js.native
     
+    @JSImport("@pulumi/aws", "alb.LoadBalancerType.Network")
+    @js.native
     val Network: network = js.native
   }
   
+  @JSImport("@pulumi/aws", "alb.NetworkLoadBalancer")
+  @js.native
+  val NetworkLoadBalancer: LoadBalancerType = js.native
+  
+  @JSImport("@pulumi/aws", "alb.TargetGroup")
   @js.native
   class TargetGroup protected ()
     extends typings.pulumiAws.albMod.TargetGroup {
@@ -245,8 +284,7 @@ object alb extends js.Object {
     def this(name: String, args: TargetGroupArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object TargetGroup extends js.Object {
+  object TargetGroup {
     
     /**
       * Get an existing TargetGroup resource's state with the given name, ID, and optional extra
@@ -257,18 +295,29 @@ object alb extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "alb.TargetGroup.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.targetGroupMod.TargetGroup = js.native
+    @JSImport("@pulumi/aws", "alb.TargetGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.targetGroupMod.TargetGroup = js.native
+    @JSImport("@pulumi/aws", "alb.TargetGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: TargetGroupState): typings.pulumiAws.targetGroupMod.TargetGroup = js.native
+    @JSImport("@pulumi/aws", "alb.TargetGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: TargetGroupState, opts: CustomResourceOptions): typings.pulumiAws.targetGroupMod.TargetGroup = js.native
     
     /**
       * Returns true if the given object is an instance of TargetGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "alb.TargetGroup.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/alb/targetGroup.TargetGroup */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "alb.TargetGroupAttachment")
   @js.native
   class TargetGroupAttachment protected ()
     extends typings.pulumiAws.albMod.TargetGroupAttachment {
@@ -283,8 +332,7 @@ object alb extends js.Object {
     def this(name: String, args: TargetGroupAttachmentArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object TargetGroupAttachment extends js.Object {
+  object TargetGroupAttachment {
     
     /**
       * Get an existing TargetGroupAttachment resource's state with the given name, ID, and optional extra
@@ -295,15 +343,64 @@ object alb extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "alb.TargetGroupAttachment.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.targetGroupAttachmentMod.TargetGroupAttachment = js.native
+    @JSImport("@pulumi/aws", "alb.TargetGroupAttachment.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.targetGroupAttachmentMod.TargetGroupAttachment = js.native
+    @JSImport("@pulumi/aws", "alb.TargetGroupAttachment.get")
+    @js.native
     def get(name: String, id: Input[ID], state: TargetGroupAttachmentState): typings.pulumiAws.targetGroupAttachmentMod.TargetGroupAttachment = js.native
+    @JSImport("@pulumi/aws", "alb.TargetGroupAttachment.get")
+    @js.native
     def get(name: String, id: Input[ID], state: TargetGroupAttachmentState, opts: CustomResourceOptions): typings.pulumiAws.targetGroupAttachmentMod.TargetGroupAttachment = js.native
     
     /**
       * Returns true if the given object is an instance of TargetGroupAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "alb.TargetGroupAttachment.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/alb/targetGroupAttachment.TargetGroupAttachment */ Boolean = js.native
   }
+  
+  @JSImport("@pulumi/aws", "alb.getListener")
+  @js.native
+  def getListener(): js.Promise[GetListenerResult] = js.native
+  @JSImport("@pulumi/aws", "alb.getListener")
+  @js.native
+  def getListener(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetListenerResult] = js.native
+  @JSImport("@pulumi/aws", "alb.getListener")
+  @js.native
+  def getListener(args: GetListenerArgs): js.Promise[GetListenerResult] = js.native
+  @JSImport("@pulumi/aws", "alb.getListener")
+  @js.native
+  def getListener(args: GetListenerArgs, opts: InvokeOptions): js.Promise[GetListenerResult] = js.native
+  
+  @JSImport("@pulumi/aws", "alb.getLoadBalancer")
+  @js.native
+  def getLoadBalancer(): js.Promise[GetLoadBalancerResult] = js.native
+  @JSImport("@pulumi/aws", "alb.getLoadBalancer")
+  @js.native
+  def getLoadBalancer(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetLoadBalancerResult] = js.native
+  @JSImport("@pulumi/aws", "alb.getLoadBalancer")
+  @js.native
+  def getLoadBalancer(args: GetLoadBalancerArgs): js.Promise[GetLoadBalancerResult] = js.native
+  @JSImport("@pulumi/aws", "alb.getLoadBalancer")
+  @js.native
+  def getLoadBalancer(args: GetLoadBalancerArgs, opts: InvokeOptions): js.Promise[GetLoadBalancerResult] = js.native
+  
+  @JSImport("@pulumi/aws", "alb.getTargetGroup")
+  @js.native
+  def getTargetGroup(): js.Promise[GetTargetGroupResult] = js.native
+  @JSImport("@pulumi/aws", "alb.getTargetGroup")
+  @js.native
+  def getTargetGroup(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetTargetGroupResult] = js.native
+  @JSImport("@pulumi/aws", "alb.getTargetGroup")
+  @js.native
+  def getTargetGroup(args: GetTargetGroupArgs): js.Promise[GetTargetGroupResult] = js.native
+  @JSImport("@pulumi/aws", "alb.getTargetGroup")
+  @js.native
+  def getTargetGroup(args: GetTargetGroupArgs, opts: InvokeOptions): js.Promise[GetTargetGroupResult] = js.native
 }

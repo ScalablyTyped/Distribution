@@ -1,5 +1,6 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,21 +25,9 @@ object TopicBuilder {
   }
   
   @scala.inline
-  implicit class TopicBuilderOps[Self <: TopicBuilder[_], Topic] (val x: Self with TopicBuilder[Topic]) extends AnyVal {
+  implicit class TopicBuilderMutableBuilder[Self <: TopicBuilder[_], Topic] (val x: Self with TopicBuilder[Topic]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWithTopicId(value: Double => TopicBuilder[Topic]): Self = this.set("withTopicId", js.Any.fromFunction1(value))
+    def setWithTopicId(value: Double => TopicBuilder[Topic]): Self = StObject.set(x, "withTopicId", js.Any.fromFunction1(value))
   }
 }

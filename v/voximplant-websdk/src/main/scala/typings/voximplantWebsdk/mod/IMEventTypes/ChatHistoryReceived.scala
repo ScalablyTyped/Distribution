@@ -2,6 +2,7 @@ package typings.voximplantWebsdk.mod.IMEventTypes
 
 import typings.voximplantWebsdk.mod.IMHistoryMessage
 import typings.voximplantWebsdk.mod.VoxImplantIMEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,30 +37,18 @@ object ChatHistoryReceived {
   }
   
   @scala.inline
-  implicit class ChatHistoryReceivedOps[Self <: ChatHistoryReceived] (val x: Self) extends AnyVal {
+  implicit class ChatHistoryReceivedMutableBuilder[Self <: ChatHistoryReceived] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessage_id(value: String): Self = StObject.set(x, "message_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessages(value: js.Array[IMHistoryMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage_id(value: String): Self = this.set("message_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessagesVarargs(value: IMHistoryMessage*): Self = this.set("messages", js.Array(value :_*))
-    
-    @scala.inline
-    def setMessages(value: js.Array[IMHistoryMessage]): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setMessagesVarargs(value: IMHistoryMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
   }
 }

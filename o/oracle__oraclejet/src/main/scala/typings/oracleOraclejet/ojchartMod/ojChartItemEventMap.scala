@@ -37,14 +37,12 @@ import typings.oracleOraclejet.oracleOraclejetStrings.triangleDown
 import typings.oracleOraclejet.oracleOraclejetStrings.triangleUp
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
-import typings.std.DocumentAndElementEventHandlersEventMap
 import typings.std.DragEvent
-import typings.std.ElementEventMap
 import typings.std.ErrorEvent
 import typings.std.Event
 import typings.std.EventTarget
 import typings.std.FocusEvent
-import typings.std.GlobalEventHandlersEventMap
+import typings.std.HTMLElementEventMap
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
@@ -54,15 +52,13 @@ import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
 import typings.std.WheelEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ojChartItemEventMap
-  extends ElementEventMap
-     with GlobalEventHandlersEventMap
-     with DocumentAndElementEventHandlersEventMap {
+trait ojChartItemEventMap extends HTMLElementEventMap {
   
   var borderColorChanged: JetElementCustomEvent[js.UndefOr[String]] = js.native
   
@@ -298,52 +294,40 @@ object ojChartItemEventMap {
   }
   
   @scala.inline
-  implicit class ojChartItemEventMapOps[Self <: ojChartItemEventMap] (val x: Self) extends AnyVal {
+  implicit class ojChartItemEventMapMutableBuilder[Self <: ojChartItemEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderColorChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "borderColorChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderWidthChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = StObject.set(x, "borderWidthChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBoxPlotChanged(value: JetElementCustomEvent[js.UndefOr[MedianSvgStyle]]): Self = StObject.set(x, "boxPlotChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColorChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = this.set("borderColorChanged", value.asInstanceOf[js.Any])
+    def setCategoriesChanged(value: JetElementCustomEvent[js.UndefOr[js.Array[String]]]): Self = StObject.set(x, "categoriesChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderWidthChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = this.set("borderWidthChanged", value.asInstanceOf[js.Any])
+    def setCloseChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = StObject.set(x, "closeChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxPlotChanged(value: JetElementCustomEvent[js.UndefOr[MedianSvgStyle]]): Self = this.set("boxPlotChanged", value.asInstanceOf[js.Any])
+    def setColorChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "colorChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoriesChanged(value: JetElementCustomEvent[js.UndefOr[js.Array[String]]]): Self = this.set("categoriesChanged", value.asInstanceOf[js.Any])
+    def setDrillingChanged(value: JetElementCustomEvent[js.UndefOr[on | off | inherit]]): Self = StObject.set(x, "drillingChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = this.set("closeChanged", value.asInstanceOf[js.Any])
+    def setGroupIdChanged(value: JetElementCustomEvent[js.Array[String | Double]]): Self = StObject.set(x, "groupIdChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = this.set("colorChanged", value.asInstanceOf[js.Any])
+    def setHighChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = StObject.set(x, "highChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrillingChanged(value: JetElementCustomEvent[js.UndefOr[on | off | inherit]]): Self = this.set("drillingChanged", value.asInstanceOf[js.Any])
+    def setItemsChanged(value: JetElementCustomEvent[js.UndefOr[js.Array[Double | js.Object]]]): Self = StObject.set(x, "itemsChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupIdChanged(value: JetElementCustomEvent[js.Array[String | Double]]): Self = this.set("groupIdChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHighChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = this.set("highChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemsChanged(value: JetElementCustomEvent[js.UndefOr[js.Array[Double | js.Object]]]): Self = this.set("itemsChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabelChanged(value: JetElementCustomEvent[js.UndefOr[String | js.Array[String]]]): Self = this.set("labelChanged", value.asInstanceOf[js.Any])
+    def setLabelChanged(value: JetElementCustomEvent[js.UndefOr[String | js.Array[String]]]): Self = StObject.set(x, "labelChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLabelPositionChanged(
@@ -352,16 +336,16 @@ object ojChartItemEventMap {
             center | outsideSlice | aboveMarker | belowMarker | beforeMarker | afterMarker | insideBarEdge | outsideBarEdge | none | auto
           ]
         ]
-    ): Self = this.set("labelPositionChanged", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labelPositionChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelStyleChanged(value: JetElementCustomEvent[js.UndefOr[js.Object | js.Array[js.Object]]]): Self = this.set("labelStyleChanged", value.asInstanceOf[js.Any])
+    def setLabelStyleChanged(value: JetElementCustomEvent[js.UndefOr[js.Object | js.Array[js.Object]]]): Self = StObject.set(x, "labelStyleChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = this.set("lowChanged", value.asInstanceOf[js.Any])
+    def setLowChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = StObject.set(x, "lowChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerDisplayedChanged(value: JetElementCustomEvent[js.UndefOr[on | off | auto]]): Self = this.set("markerDisplayedChanged", value.asInstanceOf[js.Any])
+    def setMarkerDisplayedChanged(value: JetElementCustomEvent[js.UndefOr[on | off | auto]]): Self = StObject.set(x, "markerDisplayedChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMarkerShapeChanged(
@@ -370,13 +354,13 @@ object ojChartItemEventMap {
             circle | diamond | human | plus | square | star | triangleDown | triangleUp | auto | String
           ]
         ]
-    ): Self = this.set("markerShapeChanged", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "markerShapeChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerSizeChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = this.set("markerSizeChanged", value.asInstanceOf[js.Any])
+    def setMarkerSizeChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = StObject.set(x, "markerSizeChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = this.set("openChanged", value.asInstanceOf[js.Any])
+    def setOpenChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = StObject.set(x, "openChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPatternChanged(
@@ -385,57 +369,57 @@ object ojChartItemEventMap {
             smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | auto
           ]
         ]
-    ): Self = this.set("patternChanged", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "patternChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ1Changed(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = this.set("q1Changed", value.asInstanceOf[js.Any])
+    def setQ1Changed(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = StObject.set(x, "q1Changed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ2Changed(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = this.set("q2Changed", value.asInstanceOf[js.Any])
+    def setQ2Changed(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = StObject.set(x, "q2Changed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ3Changed(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = this.set("q3Changed", value.asInstanceOf[js.Any])
+    def setQ3Changed(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = StObject.set(x, "q3Changed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeriesIdChanged(value: JetElementCustomEvent[String | Double]): Self = this.set("seriesIdChanged", value.asInstanceOf[js.Any])
+    def setSeriesIdChanged(value: JetElementCustomEvent[String | Double]): Self = StObject.set(x, "seriesIdChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortDescChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = this.set("shortDescChanged", value.asInstanceOf[js.Any])
+    def setShortDescChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "shortDescChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = this.set("sourceChanged", value.asInstanceOf[js.Any])
+    def setSourceChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "sourceChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceHoverChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = this.set("sourceHoverChanged", value.asInstanceOf[js.Any])
+    def setSourceHoverChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "sourceHoverChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceHoverSelectedChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = this.set("sourceHoverSelectedChanged", value.asInstanceOf[js.Any])
+    def setSourceHoverSelectedChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "sourceHoverSelectedChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceSelectedChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = this.set("sourceSelectedChanged", value.asInstanceOf[js.Any])
+    def setSourceSelectedChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "sourceSelectedChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvgClassNameChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = this.set("svgClassNameChanged", value.asInstanceOf[js.Any])
+    def setSvgClassNameChanged(value: JetElementCustomEvent[js.UndefOr[String]]): Self = StObject.set(x, "svgClassNameChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvgStyleChanged(value: JetElementCustomEvent[js.UndefOr[js.Object]]): Self = this.set("svgStyleChanged", value.asInstanceOf[js.Any])
+    def setSvgStyleChanged(value: JetElementCustomEvent[js.UndefOr[js.Object]]): Self = StObject.set(x, "svgStyleChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetValueChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = this.set("targetValueChanged", value.asInstanceOf[js.Any])
+    def setTargetValueChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = StObject.set(x, "targetValueChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = this.set("valueChanged", value.asInstanceOf[js.Any])
+    def setValueChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = StObject.set(x, "valueChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = this.set("volumeChanged", value.asInstanceOf[js.Any])
+    def setVolumeChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = StObject.set(x, "volumeChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXChanged(value: JetElementCustomEvent[js.UndefOr[Double | String]]): Self = this.set("xChanged", value.asInstanceOf[js.Any])
+    def setXChanged(value: JetElementCustomEvent[js.UndefOr[Double | String]]): Self = StObject.set(x, "xChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = this.set("yChanged", value.asInstanceOf[js.Any])
+    def setYChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = StObject.set(x, "yChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = this.set("zChanged", value.asInstanceOf[js.Any])
+    def setZChanged(value: JetElementCustomEvent[js.UndefOr[Double]]): Self = StObject.set(x, "zChanged", value.asInstanceOf[js.Any])
   }
 }

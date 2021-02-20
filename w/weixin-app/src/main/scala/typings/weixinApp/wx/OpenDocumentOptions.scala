@@ -7,6 +7,7 @@ import typings.weixinApp.weixinAppStrings.ppt
 import typings.weixinApp.weixinAppStrings.pptx
 import typings.weixinApp.weixinAppStrings.xls
 import typings.weixinApp.weixinAppStrings.xlsx
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,27 +35,15 @@ object OpenDocumentOptions {
   }
   
   @scala.inline
-  implicit class OpenDocumentOptionsOps[Self <: OpenDocumentOptions] (val x: Self) extends AnyVal {
+  implicit class OpenDocumentOptionsMutableBuilder[Self <: OpenDocumentOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileType(value: doc | xls | ppt | pdf | docx | xlsx | pptx): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFilePath(value: String): Self = this.set("filePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFileType(value: doc | xls | ppt | pdf | docx | xlsx | pptx): Self = this.set("fileType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileType: Self = this.set("fileType", js.undefined)
+    def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.reactNativeSvg.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNativeSvg.reactNativeSvgStrings.evenodd
   - typings.reactNativeSvg.reactNativeSvgStrings.nonzero
 */
-trait FillRule extends js.Object
+trait FillRule extends StObject
 object FillRule {
   
   @scala.inline

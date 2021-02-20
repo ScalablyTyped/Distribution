@@ -1,11 +1,12 @@
 package typings.awsSdk.outpostsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceTypeItem extends js.Object {
+trait InstanceTypeItem extends StObject {
   
   var InstanceType: js.UndefOr[typings.awsSdk.outpostsMod.InstanceType] = js.native
 }
@@ -18,24 +19,12 @@ object InstanceTypeItem {
   }
   
   @scala.inline
-  implicit class InstanceTypeItemOps[Self <: InstanceTypeItem] (val x: Self) extends AnyVal {
+  implicit class InstanceTypeItemMutableBuilder[Self <: InstanceTypeItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstanceType(value: InstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
   }
 }

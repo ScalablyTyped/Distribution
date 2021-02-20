@@ -1,12 +1,13 @@
 package typings.officeUiFabricReact.anon
 
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`12`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectionalHint extends js.Object {
+trait DirectionalHint extends StObject {
   
   var beakWidth: Double = js.native
   
@@ -33,33 +34,21 @@ object DirectionalHint {
   }
   
   @scala.inline
-  implicit class DirectionalHintOps[Self <: DirectionalHint] (val x: Self) extends AnyVal {
+  implicit class DirectionalHintMutableBuilder[Self <: DirectionalHint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeakWidth(value: Double): Self = StObject.set(x, "beakWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionalHint(value: `12`): Self = StObject.set(x, "directionalHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDoNotLayer(value: Boolean): Self = StObject.set(x, "doNotLayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeakWidth(value: Double): Self = this.set("beakWidth", value.asInstanceOf[js.Any])
+    def setGapSpace(value: Double): Self = StObject.set(x, "gapSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectionalHint(value: `12`): Self = this.set("directionalHint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDoNotLayer(value: Boolean): Self = this.set("doNotLayer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGapSpace(value: Double): Self = this.set("gapSpace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetInitialFocus(value: Boolean): Self = this.set("setInitialFocus", value.asInstanceOf[js.Any])
+    def setSetInitialFocus(value: Boolean): Self = StObject.set(x, "setInitialFocus", value.asInstanceOf[js.Any])
   }
 }

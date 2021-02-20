@@ -7,19 +7,18 @@ import typings.tensorflowTfjsCore.adamaxOptimizerMod.AdamaxOptimizer
 import typings.tensorflowTfjsCore.momentumOptimizerMod.MomentumOptimizer
 import typings.tensorflowTfjsCore.rmspropOptimizerMod.RMSPropOptimizer
 import typings.tensorflowTfjsCore.sgdOptimizerMod.SGDOptimizer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", JSImport.Namespace)
-@js.native
-object optimizerConstructorsMod extends js.Object {
+object optimizerConstructorsMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors")
   @js.native
-  class OptimizerConstructors () extends js.Object
+  class OptimizerConstructors () extends StObject
   /* static members */
-  @js.native
-  object OptimizerConstructors extends js.Object {
+  object OptimizerConstructors {
     
     /**
       * Constructs a `tf.AdadeltaOptimizer` that uses the Adadelta algorithm.
@@ -33,13 +32,29 @@ object optimizerConstructorsMod extends js.Object {
       *
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adadelta")
+    @js.native
     def adadelta(): AdadeltaOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adadelta")
+    @js.native
     def adadelta(learningRate: js.UndefOr[scala.Nothing], rho: js.UndefOr[scala.Nothing], epsilon: Double): AdadeltaOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adadelta")
+    @js.native
     def adadelta(learningRate: js.UndefOr[scala.Nothing], rho: Double): AdadeltaOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adadelta")
+    @js.native
     def adadelta(learningRate: js.UndefOr[scala.Nothing], rho: Double, epsilon: Double): AdadeltaOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adadelta")
+    @js.native
     def adadelta(learningRate: Double): AdadeltaOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adadelta")
+    @js.native
     def adadelta(learningRate: Double, rho: js.UndefOr[scala.Nothing], epsilon: Double): AdadeltaOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adadelta")
+    @js.native
     def adadelta(learningRate: Double, rho: Double): AdadeltaOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adadelta")
+    @js.native
     def adadelta(learningRate: Double, rho: Double, epsilon: Double): AdadeltaOptimizer = js.native
     
     /**
@@ -58,7 +73,11 @@ object optimizerConstructorsMod extends js.Object {
       *
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adagrad")
+    @js.native
     def adagrad(learningRate: Double): AdagradOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adagrad")
+    @js.native
     def adagrad(learningRate: Double, initialAccumulatorValue: Double): AdagradOptimizer = js.native
     
     /**
@@ -73,41 +92,73 @@ object optimizerConstructorsMod extends js.Object {
       *
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
+    @js.native
     def adam(): AdamOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
+    @js.native
     def adam(
       learningRate: js.UndefOr[scala.Nothing],
       beta1: js.UndefOr[scala.Nothing],
       beta2: js.UndefOr[scala.Nothing],
       epsilon: Double
     ): AdamOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
+    @js.native
     def adam(learningRate: js.UndefOr[scala.Nothing], beta1: js.UndefOr[scala.Nothing], beta2: Double): AdamOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
+    @js.native
     def adam(
       learningRate: js.UndefOr[scala.Nothing],
       beta1: js.UndefOr[scala.Nothing],
       beta2: Double,
       epsilon: Double
     ): AdamOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
+    @js.native
     def adam(learningRate: js.UndefOr[scala.Nothing], beta1: Double): AdamOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
+    @js.native
     def adam(
       learningRate: js.UndefOr[scala.Nothing],
       beta1: Double,
       beta2: js.UndefOr[scala.Nothing],
       epsilon: Double
     ): AdamOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
+    @js.native
     def adam(learningRate: js.UndefOr[scala.Nothing], beta1: Double, beta2: Double): AdamOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
+    @js.native
     def adam(learningRate: js.UndefOr[scala.Nothing], beta1: Double, beta2: Double, epsilon: Double): AdamOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
+    @js.native
     def adam(learningRate: Double): AdamOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
+    @js.native
     def adam(
       learningRate: Double,
       beta1: js.UndefOr[scala.Nothing],
       beta2: js.UndefOr[scala.Nothing],
       epsilon: Double
     ): AdamOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
+    @js.native
     def adam(learningRate: Double, beta1: js.UndefOr[scala.Nothing], beta2: Double): AdamOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
+    @js.native
     def adam(learningRate: Double, beta1: js.UndefOr[scala.Nothing], beta2: Double, epsilon: Double): AdamOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
+    @js.native
     def adam(learningRate: Double, beta1: Double): AdamOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
+    @js.native
     def adam(learningRate: Double, beta1: Double, beta2: js.UndefOr[scala.Nothing], epsilon: Double): AdamOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
+    @js.native
     def adam(learningRate: Double, beta1: Double, beta2: Double): AdamOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
+    @js.native
     def adam(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double): AdamOptimizer = js.native
     
     /**
@@ -123,7 +174,11 @@ object optimizerConstructorsMod extends js.Object {
       *
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(
       learningRate: js.UndefOr[scala.Nothing],
       beta1: js.UndefOr[scala.Nothing],
@@ -131,12 +186,16 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: js.UndefOr[scala.Nothing],
       decay: Double
     ): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(
       learningRate: js.UndefOr[scala.Nothing],
       beta1: js.UndefOr[scala.Nothing],
       beta2: js.UndefOr[scala.Nothing],
       epsilon: Double
     ): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(
       learningRate: js.UndefOr[scala.Nothing],
       beta1: js.UndefOr[scala.Nothing],
@@ -144,7 +203,11 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: Double,
       decay: Double
     ): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(learningRate: js.UndefOr[scala.Nothing], beta1: js.UndefOr[scala.Nothing], beta2: Double): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(
       learningRate: js.UndefOr[scala.Nothing],
       beta1: js.UndefOr[scala.Nothing],
@@ -152,12 +215,16 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: js.UndefOr[scala.Nothing],
       decay: Double
     ): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(
       learningRate: js.UndefOr[scala.Nothing],
       beta1: js.UndefOr[scala.Nothing],
       beta2: Double,
       epsilon: Double
     ): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(
       learningRate: js.UndefOr[scala.Nothing],
       beta1: js.UndefOr[scala.Nothing],
@@ -165,7 +232,11 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: Double,
       decay: Double
     ): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(learningRate: js.UndefOr[scala.Nothing], beta1: Double): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(
       learningRate: js.UndefOr[scala.Nothing],
       beta1: Double,
@@ -173,12 +244,16 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: js.UndefOr[scala.Nothing],
       decay: Double
     ): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(
       learningRate: js.UndefOr[scala.Nothing],
       beta1: Double,
       beta2: js.UndefOr[scala.Nothing],
       epsilon: Double
     ): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(
       learningRate: js.UndefOr[scala.Nothing],
       beta1: Double,
@@ -186,7 +261,11 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: Double,
       decay: Double
     ): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(learningRate: js.UndefOr[scala.Nothing], beta1: Double, beta2: Double): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(
       learningRate: js.UndefOr[scala.Nothing],
       beta1: Double,
@@ -194,7 +273,11 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: js.UndefOr[scala.Nothing],
       decay: Double
     ): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(learningRate: js.UndefOr[scala.Nothing], beta1: Double, beta2: Double, epsilon: Double): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(
       learningRate: js.UndefOr[scala.Nothing],
       beta1: Double,
@@ -202,7 +285,11 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: Double,
       decay: Double
     ): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(learningRate: Double): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(
       learningRate: Double,
       beta1: js.UndefOr[scala.Nothing],
@@ -210,12 +297,16 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: js.UndefOr[scala.Nothing],
       decay: Double
     ): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(
       learningRate: Double,
       beta1: js.UndefOr[scala.Nothing],
       beta2: js.UndefOr[scala.Nothing],
       epsilon: Double
     ): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(
       learningRate: Double,
       beta1: js.UndefOr[scala.Nothing],
@@ -223,7 +314,11 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: Double,
       decay: Double
     ): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(learningRate: Double, beta1: js.UndefOr[scala.Nothing], beta2: Double): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(
       learningRate: Double,
       beta1: js.UndefOr[scala.Nothing],
@@ -231,7 +326,11 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: js.UndefOr[scala.Nothing],
       decay: Double
     ): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(learningRate: Double, beta1: js.UndefOr[scala.Nothing], beta2: Double, epsilon: Double): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(
       learningRate: Double,
       beta1: js.UndefOr[scala.Nothing],
@@ -239,7 +338,11 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: Double,
       decay: Double
     ): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(learningRate: Double, beta1: Double): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(
       learningRate: Double,
       beta1: Double,
@@ -247,7 +350,11 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: js.UndefOr[scala.Nothing],
       decay: Double
     ): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(learningRate: Double, beta1: Double, beta2: js.UndefOr[scala.Nothing], epsilon: Double): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(
       learningRate: Double,
       beta1: Double,
@@ -255,7 +362,11 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: Double,
       decay: Double
     ): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(learningRate: Double, beta1: Double, beta2: Double): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(
       learningRate: Double,
       beta1: Double,
@@ -263,7 +374,11 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: js.UndefOr[scala.Nothing],
       decay: Double
     ): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double): AdamaxOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
+    @js.native
     def adamax(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double, decay: Double): AdamaxOptimizer = js.native
     
     /**
@@ -281,7 +396,11 @@ object optimizerConstructorsMod extends js.Object {
       *
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.momentum")
+    @js.native
     def momentum(learningRate: Double, momentum: Double): MomentumOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.momentum")
+    @js.native
     def momentum(learningRate: Double, momentum: Double, useNesterov: Boolean): MomentumOptimizer = js.native
     
     /**
@@ -304,7 +423,11 @@ object optimizerConstructorsMod extends js.Object {
       *
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
+    @js.native
     def rmsprop(learningRate: Double): RMSPropOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
+    @js.native
     def rmsprop(
       learningRate: Double,
       decay: js.UndefOr[scala.Nothing],
@@ -312,12 +435,16 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: js.UndefOr[scala.Nothing],
       centered: Boolean
     ): RMSPropOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
+    @js.native
     def rmsprop(
       learningRate: Double,
       decay: js.UndefOr[scala.Nothing],
       momentum: js.UndefOr[scala.Nothing],
       epsilon: Double
     ): RMSPropOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
+    @js.native
     def rmsprop(
       learningRate: Double,
       decay: js.UndefOr[scala.Nothing],
@@ -325,7 +452,11 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: Double,
       centered: Boolean
     ): RMSPropOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
+    @js.native
     def rmsprop(learningRate: Double, decay: js.UndefOr[scala.Nothing], momentum: Double): RMSPropOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
+    @js.native
     def rmsprop(
       learningRate: Double,
       decay: js.UndefOr[scala.Nothing],
@@ -333,7 +464,11 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: js.UndefOr[scala.Nothing],
       centered: Boolean
     ): RMSPropOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
+    @js.native
     def rmsprop(learningRate: Double, decay: js.UndefOr[scala.Nothing], momentum: Double, epsilon: Double): RMSPropOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
+    @js.native
     def rmsprop(
       learningRate: Double,
       decay: js.UndefOr[scala.Nothing],
@@ -341,7 +476,11 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: Double,
       centered: Boolean
     ): RMSPropOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
+    @js.native
     def rmsprop(learningRate: Double, decay: Double): RMSPropOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
+    @js.native
     def rmsprop(
       learningRate: Double,
       decay: Double,
@@ -349,7 +488,11 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: js.UndefOr[scala.Nothing],
       centered: Boolean
     ): RMSPropOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
+    @js.native
     def rmsprop(learningRate: Double, decay: Double, momentum: js.UndefOr[scala.Nothing], epsilon: Double): RMSPropOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
+    @js.native
     def rmsprop(
       learningRate: Double,
       decay: Double,
@@ -357,7 +500,11 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: Double,
       centered: Boolean
     ): RMSPropOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
+    @js.native
     def rmsprop(learningRate: Double, decay: Double, momentum: Double): RMSPropOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
+    @js.native
     def rmsprop(
       learningRate: Double,
       decay: Double,
@@ -365,7 +512,11 @@ object optimizerConstructorsMod extends js.Object {
       epsilon: js.UndefOr[scala.Nothing],
       centered: Boolean
     ): RMSPropOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
+    @js.native
     def rmsprop(learningRate: Double, decay: Double, momentum: Double, epsilon: Double): RMSPropOptimizer = js.native
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
+    @js.native
     def rmsprop(learningRate: Double, decay: Double, momentum: Double, epsilon: Double, centered: Boolean): RMSPropOptimizer = js.native
     
     /**
@@ -405,6 +556,8 @@ object optimizerConstructorsMod extends js.Object {
       *
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.sgd")
+    @js.native
     def sgd(learningRate: Double): SGDOptimizer = js.native
   }
 }

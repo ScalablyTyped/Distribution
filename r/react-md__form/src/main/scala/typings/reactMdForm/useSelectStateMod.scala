@@ -1,13 +1,14 @@
 package typings.reactMdForm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/form/types/useSelectState", JSImport.Namespace)
-@js.native
-object useSelectStateMod extends js.Object {
+object useSelectStateMod {
   
+  @JSImport("@react-md/form/types/useSelectState", "useSelectState")
+  @js.native
   def useSelectState[T /* <: String */](defaultValue: DefaultValue[T]): ReturnValue[T] = js.native
   
   type DefaultValue[T /* <: String */] = T | js.Function0[T]

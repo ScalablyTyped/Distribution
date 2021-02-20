@@ -22,12 +22,13 @@ import typings.std.stdStrings.WEBGL_debug_shaders
 import typings.std.stdStrings.WEBGL_depth_texture
 import typings.std.stdStrings.WEBGL_draw_buffers
 import typings.std.stdStrings.WEBGL_lose_context
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebGLRenderingContextBase extends js.Object {
+trait WebGLRenderingContextBase extends StObject {
   
   val ACTIVE_ATTRIBUTES: GLenum = js.native
   

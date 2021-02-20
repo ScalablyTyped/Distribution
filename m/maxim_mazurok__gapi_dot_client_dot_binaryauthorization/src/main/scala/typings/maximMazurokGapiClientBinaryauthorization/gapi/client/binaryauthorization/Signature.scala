@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBinaryauthorization.gapi.client.binaryauthorization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Signature extends js.Object {
+trait Signature extends StObject {
   
   /**
     * The identifier for the public key that verifies this signature. * The `public_key_id` is required. * The `public_key_id` SHOULD be an RFC3986 conformant URI. * When possible, the
@@ -31,30 +32,18 @@ object Signature {
   }
   
   @scala.inline
-  implicit class SignatureOps[Self <: Signature] (val x: Self) extends AnyVal {
+  implicit class SignatureMutableBuilder[Self <: Signature] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPublicKeyId(value: String): Self = StObject.set(x, "publicKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPublicKeyIdUndefined: Self = StObject.set(x, "publicKeyId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicKeyId(value: String): Self = this.set("publicKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicKeyId: Self = this.set("publicKeyId", js.undefined)
-    
-    @scala.inline
-    def setSignature(value: String): Self = this.set("signature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignature: Self = this.set("signature", js.undefined)
+    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
   }
 }

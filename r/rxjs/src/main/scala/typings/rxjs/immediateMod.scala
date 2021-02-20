@@ -1,24 +1,27 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/util/Immediate", JSImport.Namespace)
-@js.native
-object immediateMod extends js.Object {
+object immediateMod {
   
-  @js.native
-  object Immediate extends js.Object {
+  object Immediate {
     
+    @JSImport("rxjs/internal/util/Immediate", "Immediate.clearImmediate")
+    @js.native
     def clearImmediate(handle: Double): Unit = js.native
     
+    @JSImport("rxjs/internal/util/Immediate", "Immediate.setImmediate")
+    @js.native
     def setImmediate(cb: js.Function0[Unit]): Double = js.native
   }
   
-  @js.native
-  object TestTools extends js.Object {
+  object TestTools {
     
+    @JSImport("rxjs/internal/util/Immediate", "TestTools.pending")
+    @js.native
     def pending(): Double = js.native
   }
 }

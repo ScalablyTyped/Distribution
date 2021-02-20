@@ -1,13 +1,14 @@
 package typings.materialUiCore.anon
 
 import typings.materialUiCore.withStylesMod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Fab.FabClassKey>> */
 @js.native
-trait PartialStyleRulesFabClass extends js.Object {
+trait PartialStyleRulesFabClass extends StObject {
   
   var colorInherit: js.UndefOr[CSSProperties] = js.native
   
@@ -38,78 +39,66 @@ object PartialStyleRulesFabClass {
   }
   
   @scala.inline
-  implicit class PartialStyleRulesFabClassOps[Self <: PartialStyleRulesFabClass] (val x: Self) extends AnyVal {
+  implicit class PartialStyleRulesFabClassMutableBuilder[Self <: PartialStyleRulesFabClass] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorInherit(value: CSSProperties): Self = StObject.set(x, "colorInherit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorInheritUndefined: Self = StObject.set(x, "colorInherit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabled(value: CSSProperties): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorInherit(value: CSSProperties): Self = this.set("colorInherit", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteColorInherit: Self = this.set("colorInherit", js.undefined)
+    def setExtended(value: CSSProperties): Self = StObject.set(x, "extended", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: CSSProperties): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setExtendedUndefined: Self = StObject.set(x, "extended", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setFocusVisible(value: CSSProperties): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtended(value: CSSProperties): Self = this.set("extended", value.asInstanceOf[js.Any])
+    def setFocusVisibleUndefined: Self = StObject.set(x, "focusVisible", js.undefined)
     
     @scala.inline
-    def deleteExtended: Self = this.set("extended", js.undefined)
+    def setLabel(value: CSSProperties): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusVisible(value: CSSProperties): Self = this.set("focusVisible", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteFocusVisible: Self = this.set("focusVisible", js.undefined)
+    def setPrimary(value: CSSProperties): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: CSSProperties): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary(value: CSSProperties): Self = this.set("primary", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deletePrimary: Self = this.set("primary", js.undefined)
+    def setSecondary(value: CSSProperties): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setSizeMedium(value: CSSProperties): Self = StObject.set(x, "sizeMedium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondary(value: CSSProperties): Self = this.set("secondary", value.asInstanceOf[js.Any])
+    def setSizeMediumUndefined: Self = StObject.set(x, "sizeMedium", js.undefined)
     
     @scala.inline
-    def deleteSecondary: Self = this.set("secondary", js.undefined)
+    def setSizeSmall(value: CSSProperties): Self = StObject.set(x, "sizeSmall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeMedium(value: CSSProperties): Self = this.set("sizeMedium", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeMedium: Self = this.set("sizeMedium", js.undefined)
-    
-    @scala.inline
-    def setSizeSmall(value: CSSProperties): Self = this.set("sizeSmall", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeSmall: Self = this.set("sizeSmall", js.undefined)
+    def setSizeSmallUndefined: Self = StObject.set(x, "sizeSmall", js.undefined)
   }
 }

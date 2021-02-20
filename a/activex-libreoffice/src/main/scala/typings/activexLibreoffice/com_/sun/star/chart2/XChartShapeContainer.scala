@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.chart2
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,30 +38,18 @@ object XChartShapeContainer {
   }
   
   @scala.inline
-  implicit class XChartShapeContainerOps[Self <: XChartShapeContainer] (val x: Self) extends AnyVal {
+  implicit class XChartShapeContainerMutableBuilder[Self <: XChartShapeContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddShape(value: XShape => Unit): Self = StObject.set(x, "addShape", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetShape(value: () => XShape): Self = StObject.set(x, "getShape", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveShape(value: XShape => Unit): Self = StObject.set(x, "removeShape", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShape(value: XShape): Self = this.set("Shape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAddShape(value: XShape => Unit): Self = this.set("addShape", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetShape(value: () => XShape): Self = this.set("getShape", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveShape(value: XShape => Unit): Self = this.set("removeShape", js.Any.fromFunction1(value))
+    def setShape(value: XShape): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
   }
 }

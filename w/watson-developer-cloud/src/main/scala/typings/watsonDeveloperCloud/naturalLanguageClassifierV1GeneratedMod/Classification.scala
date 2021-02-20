@@ -1,5 +1,6 @@
 package typings.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   ************************/
 /** Response from the classifier for a phrase. */
 @js.native
-trait Classification extends js.Object {
+trait Classification extends StObject {
   
   /** An array of up to ten class-confidence pairs sorted in descending order of confidence. */
   var classes: js.UndefOr[js.Array[ClassifiedClass]] = js.native
@@ -35,51 +36,39 @@ object Classification {
   }
   
   @scala.inline
-  implicit class ClassificationOps[Self <: Classification] (val x: Self) extends AnyVal {
+  implicit class ClassificationMutableBuilder[Self <: Classification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClasses(value: js.Array[ClassifiedClass]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassesVarargs(value: ClassifiedClass*): Self = StObject.set(x, "classes", js.Array(value :_*))
     
     @scala.inline
-    def setClassesVarargs(value: ClassifiedClass*): Self = this.set("classes", js.Array(value :_*))
+    def setClassifier_id(value: String): Self = StObject.set(x, "classifier_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClasses(value: js.Array[ClassifiedClass]): Self = this.set("classes", value.asInstanceOf[js.Any])
+    def setClassifier_idUndefined: Self = StObject.set(x, "classifier_id", js.undefined)
     
     @scala.inline
-    def deleteClasses: Self = this.set("classes", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassifier_id(value: String): Self = this.set("classifier_id", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteClassifier_id: Self = this.set("classifier_id", js.undefined)
+    def setTop_class(value: String): Self = StObject.set(x, "top_class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setTop_classUndefined: Self = StObject.set(x, "top_class", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop_class(value: String): Self = this.set("top_class", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTop_class: Self = this.set("top_class", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

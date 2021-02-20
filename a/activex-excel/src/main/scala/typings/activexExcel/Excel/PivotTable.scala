@@ -2,12 +2,13 @@ package typings.activexExcel.Excel
 
 import typings.std.SafeArray
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotTable extends js.Object {
+trait PivotTable extends StObject {
   
   def ActiveFilters(Index: Double): PivotFilter = js.native
   @JSName("ActiveFilters")

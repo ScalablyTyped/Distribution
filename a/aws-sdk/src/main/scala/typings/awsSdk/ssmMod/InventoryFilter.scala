@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InventoryFilter extends js.Object {
+trait InventoryFilter extends StObject {
   
   /**
     * The name of the filter key.
@@ -31,33 +32,21 @@ object InventoryFilter {
   }
   
   @scala.inline
-  implicit class InventoryFilterOps[Self <: InventoryFilter] (val x: Self) extends AnyVal {
+  implicit class InventoryFilterMutableBuilder[Self <: InventoryFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: InventoryFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setType(value: InventoryQueryOperatorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def setKey(value: InventoryFilterKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    def setValues(value: InventoryFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValuesVarargs(value: InventoryFilterValue*): Self = this.set("Values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: InventoryFilterValueList): Self = this.set("Values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: InventoryQueryOperatorType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setValuesVarargs(value: InventoryFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

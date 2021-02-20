@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "stylable__webpack-plugin"
-version := "3.6.2-525620"
+version := "3.6.2-e22001"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-ad1aba",
-  "org.scalablytyped" %%% "postcss" % "7.0.35-e8d6f4",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-d3bdbd",
-  "org.scalablytyped" %%% "std" % "4.1-c651d0",
-  "org.scalablytyped" %%% "stylable__core" % "3.11.7-759ef1",
-  "org.scalablytyped" %%% "stylable__optimizer" % "3.11.7-8f6745",
-  "org.scalablytyped" %%% "webpack-sources" % "2.0-dt-20200930Z-e0a885")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-50d3d9",
+  "org.scalablytyped" %%% "postcss" % "7.0.35-381672",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-475dad",
+  "org.scalablytyped" %%% "std" % "4.1-40053c",
+  "org.scalablytyped" %%% "stylable__core" % "3.11.7-fb548d",
+  "org.scalablytyped" %%% "stylable__optimizer" % "3.11.7-b26e4d",
+  "org.scalablytyped" %%% "webpack-sources" % "2.0-dt-20200930Z-313a11")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

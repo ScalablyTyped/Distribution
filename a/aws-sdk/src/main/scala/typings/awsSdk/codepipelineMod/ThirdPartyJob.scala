@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThirdPartyJob extends js.Object {
+trait ThirdPartyJob extends StObject {
   
   /**
     * The clientToken portion of the clientId and clientToken pair used to verify that the calling entity is allowed access to the job and its details.
@@ -26,30 +27,18 @@ object ThirdPartyJob {
   }
   
   @scala.inline
-  implicit class ThirdPartyJobOps[Self <: ThirdPartyJob] (val x: Self) extends AnyVal {
+  implicit class ThirdPartyJobMutableBuilder[Self <: ThirdPartyJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientId(value: ClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: ClientId): Self = this.set("clientId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
-    
-    @scala.inline
-    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobId: Self = this.set("jobId", js.undefined)
+    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
   }
 }

@@ -1,8 +1,9 @@
 package typings.awsSdk.outpostsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteSiteOutput extends js.Object
+trait DeleteSiteOutput extends StObject

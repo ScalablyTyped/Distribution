@@ -1,61 +1,52 @@
 package typings.openseadragon.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait OverlayPlacement extends js.Object
+sealed trait OverlayPlacement extends StObject
 @JSImport("openseadragon", "OverlayPlacement")
 @js.native
-object OverlayPlacement extends js.Object {
+object OverlayPlacement extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[OverlayPlacement with Double] = js.native
   
   @js.native
   sealed trait BOTTOM extends OverlayPlacement
-  /* 6 */ @js.native
-  object BOTTOM extends TopLevel[BOTTOM with Double]
+  /* 6 */ val BOTTOM: typings.openseadragon.mod.OverlayPlacement.BOTTOM with Double = js.native
   
   @js.native
   sealed trait BOTTOM_LEFT extends OverlayPlacement
-  /* 7 */ @js.native
-  object BOTTOM_LEFT extends TopLevel[BOTTOM_LEFT with Double]
+  /* 7 */ val BOTTOM_LEFT: typings.openseadragon.mod.OverlayPlacement.BOTTOM_LEFT with Double = js.native
   
   @js.native
   sealed trait BOTTOM_RIGHT extends OverlayPlacement
-  /* 5 */ @js.native
-  object BOTTOM_RIGHT extends TopLevel[BOTTOM_RIGHT with Double]
+  /* 5 */ val BOTTOM_RIGHT: typings.openseadragon.mod.OverlayPlacement.BOTTOM_RIGHT with Double = js.native
   
   @js.native
   sealed trait CENTER extends OverlayPlacement
-  /* 0 */ @js.native
-  object CENTER extends TopLevel[CENTER with Double]
+  /* 0 */ val CENTER: typings.openseadragon.mod.OverlayPlacement.CENTER with Double = js.native
   
   @js.native
   sealed trait LEFT extends OverlayPlacement
-  /* 8 */ @js.native
-  object LEFT extends TopLevel[LEFT with Double]
+  /* 8 */ val LEFT: typings.openseadragon.mod.OverlayPlacement.LEFT with Double = js.native
   
   @js.native
   sealed trait RIGHT extends OverlayPlacement
-  /* 4 */ @js.native
-  object RIGHT extends TopLevel[RIGHT with Double]
+  /* 4 */ val RIGHT: typings.openseadragon.mod.OverlayPlacement.RIGHT with Double = js.native
   
   @js.native
   sealed trait TOP extends OverlayPlacement
-  /* 2 */ @js.native
-  object TOP extends TopLevel[TOP with Double]
+  /* 2 */ val TOP: typings.openseadragon.mod.OverlayPlacement.TOP with Double = js.native
   
   @js.native
   sealed trait TOP_LEFT extends OverlayPlacement
-  /* 1 */ @js.native
-  object TOP_LEFT extends TopLevel[TOP_LEFT with Double]
+  /* 1 */ val TOP_LEFT: typings.openseadragon.mod.OverlayPlacement.TOP_LEFT with Double = js.native
   
   @js.native
   sealed trait TOP_RIGHT extends OverlayPlacement
-  /* 3 */ @js.native
-  object TOP_RIGHT extends TopLevel[TOP_RIGHT with Double]
+  /* 3 */ val TOP_RIGHT: typings.openseadragon.mod.OverlayPlacement.TOP_RIGHT with Double = js.native
 }

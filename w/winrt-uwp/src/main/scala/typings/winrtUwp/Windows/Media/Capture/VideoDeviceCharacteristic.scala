@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Capture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VideoDeviceCharacteristic extends js.Object
+sealed trait VideoDeviceCharacteristic extends StObject
 /** Indicates which video streams are independent of each other. */
 @JSGlobal("Windows.Media.Capture.VideoDeviceCharacteristic")
 @js.native
-object VideoDeviceCharacteristic extends js.Object {
+object VideoDeviceCharacteristic extends StObject {
   
   /** All streams are identical */
   @js.native

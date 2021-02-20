@@ -8,16 +8,40 @@ import typings.postmark.clientOptionsMod.ClientOptions.HttpMethod
 import typings.postmark.errorHandlerMod.ErrorHandler
 import typings.postmark.modelsMod.ClientOptions.Configuration
 import typings.postmark.modelsMod.FilteringParameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("postmark/dist/client/BaseClient", JSImport.Namespace)
-@js.native
-object baseClientMod extends js.Object {
+object baseClientMod {
+  
+  @JSImport("postmark/dist/client/BaseClient", JSImport.Default)
+  @js.native
+  abstract class default protected () extends BaseClient {
+    protected def this(token: String, authHeader: String) = this()
+    protected def this(token: String, authHeader: String, configOptions: Configuration) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("postmark/dist/client/BaseClient", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Client connection configuration options.
+      * You may modify these values and new clients will use them.
+      * Any values provided to a Client constructor will override default options.
+      */
+    @JSImport("postmark/dist/client/BaseClient", "default.DefaultOptions")
+    @js.native
+    def DefaultOptions: Configuration = js.native
+    @scala.inline
+    def DefaultOptions_=(x: Configuration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultOptions")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
-  trait BaseClient extends js.Object {
+  trait BaseClient extends StObject {
     
     val authHeader: js.Any = js.native
     
@@ -134,22 +158,5 @@ object baseClientMod extends js.Object {
       * @param {string} token - HTTP request token
       */
     var verifyToken: js.Any = js.native
-  }
-  
-  @js.native
-  abstract class default protected () extends BaseClient {
-    protected def this(token: String, authHeader: String) = this()
-    protected def this(token: String, authHeader: String, configOptions: Configuration) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    /**
-      * Client connection configuration options.
-      * You may modify these values and new clients will use them.
-      * Any values provided to a Client constructor will override default options.
-      */
-    var DefaultOptions: Configuration = js.native
   }
 }

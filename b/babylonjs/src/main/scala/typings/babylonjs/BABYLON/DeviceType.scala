@@ -1,14 +1,15 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DeviceType extends js.Object
+sealed trait DeviceType extends StObject
 @JSGlobal("BABYLON.DeviceType")
 @js.native
-object DeviceType extends js.Object {
+object DeviceType extends StObject {
   
   /** PS4 Dual Shock */
   @js.native

@@ -5,12 +5,13 @@ import typings.twit.anon.Text
 import typings.twit.mod.Twitter.ResultType
 import typings.twit.twitStrings.`private`
 import typings.twit.twitStrings.public
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Params extends js.Object {
+trait Params extends StObject {
   
   var alt_text: js.UndefOr[Text] = js.native
   
@@ -129,348 +130,336 @@ object Params {
   }
   
   @scala.inline
-  implicit class ParamsOps[Self <: Params] (val x: Self) extends AnyVal {
+  implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlt_text(value: Text): Self = StObject.set(x, "alt_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlt_textUndefined: Self = StObject.set(x, "alt_text", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachment_url(value: String): Self = StObject.set(x, "attachment_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlt_text(value: Text): Self = this.set("alt_text", value.asInstanceOf[js.Any])
+    def setAttachment_urlUndefined: Self = StObject.set(x, "attachment_url", js.undefined)
     
     @scala.inline
-    def deleteAlt_text: Self = this.set("alt_text", js.undefined)
+    def setAuto_populate_reply_metadata(value: Boolean): Self = StObject.set(x, "auto_populate_reply_metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachment_url(value: String): Self = this.set("attachment_url", value.asInstanceOf[js.Any])
+    def setAuto_populate_reply_metadataUndefined: Self = StObject.set(x, "auto_populate_reply_metadata", js.undefined)
     
     @scala.inline
-    def deleteAttachment_url: Self = this.set("attachment_url", js.undefined)
+    def setCard_uri(value: String): Self = StObject.set(x, "card_uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuto_populate_reply_metadata(value: Boolean): Self = this.set("auto_populate_reply_metadata", value.asInstanceOf[js.Any])
+    def setCard_uriUndefined: Self = StObject.set(x, "card_uri", js.undefined)
     
     @scala.inline
-    def deleteAuto_populate_reply_metadata: Self = this.set("auto_populate_reply_metadata", js.undefined)
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCard_uri(value: String): Self = this.set("card_uri", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteCard_uri: Self = this.set("card_uri", js.undefined)
+    def setCursor(value: Double | String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursor(value: Double | String): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCursor: Self = this.set("cursor", js.undefined)
+    def setDisplay_coordinates(value: Boolean): Self = StObject.set(x, "display_coordinates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplay_coordinatesUndefined: Self = StObject.set(x, "display_coordinates", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEnable_dmcommands(value: Boolean): Self = StObject.set(x, "enable_dmcommands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay_coordinates(value: Boolean): Self = this.set("display_coordinates", value.asInstanceOf[js.Any])
+    def setEnable_dmcommandsUndefined: Self = StObject.set(x, "enable_dmcommands", js.undefined)
     
     @scala.inline
-    def deleteDisplay_coordinates: Self = this.set("display_coordinates", js.undefined)
+    def setExclude_replies(value: Boolean): Self = StObject.set(x, "exclude_replies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnable_dmcommands(value: Boolean): Self = this.set("enable_dmcommands", value.asInstanceOf[js.Any])
+    def setExclude_repliesUndefined: Self = StObject.set(x, "exclude_replies", js.undefined)
     
     @scala.inline
-    def deleteEnable_dmcommands: Self = this.set("enable_dmcommands", js.undefined)
+    def setExclude_reply_user_ids(value: String | js.Array[String]): Self = StObject.set(x, "exclude_reply_user_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude_replies(value: Boolean): Self = this.set("exclude_replies", value.asInstanceOf[js.Any])
+    def setExclude_reply_user_idsUndefined: Self = StObject.set(x, "exclude_reply_user_ids", js.undefined)
     
     @scala.inline
-    def deleteExclude_replies: Self = this.set("exclude_replies", js.undefined)
+    def setExclude_reply_user_idsVarargs(value: String*): Self = StObject.set(x, "exclude_reply_user_ids", js.Array(value :_*))
     
     @scala.inline
-    def setExclude_reply_user_idsVarargs(value: String*): Self = this.set("exclude_reply_user_ids", js.Array(value :_*))
+    def setFail_dmcommands(value: Boolean): Self = StObject.set(x, "fail_dmcommands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude_reply_user_ids(value: String | js.Array[String]): Self = this.set("exclude_reply_user_ids", value.asInstanceOf[js.Any])
+    def setFail_dmcommandsUndefined: Self = StObject.set(x, "fail_dmcommands", js.undefined)
     
     @scala.inline
-    def deleteExclude_reply_user_ids: Self = this.set("exclude_reply_user_ids", js.undefined)
+    def setFollow(value: Boolean | String | js.Array[String]): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFail_dmcommands(value: Boolean): Self = this.set("fail_dmcommands", value.asInstanceOf[js.Any])
+    def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
     
     @scala.inline
-    def deleteFail_dmcommands: Self = this.set("fail_dmcommands", js.undefined)
+    def setFollowVarargs(value: String*): Self = StObject.set(x, "follow", js.Array(value :_*))
     
     @scala.inline
-    def setFollowVarargs(value: String*): Self = this.set("follow", js.Array(value :_*))
+    def setGeocode(value: String): Self = StObject.set(x, "geocode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollow(value: Boolean | String | js.Array[String]): Self = this.set("follow", value.asInstanceOf[js.Any])
+    def setGeocodeUndefined: Self = StObject.set(x, "geocode", js.undefined)
     
     @scala.inline
-    def deleteFollow: Self = this.set("follow", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeocode(value: String): Self = this.set("geocode", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGeocode: Self = this.set("geocode", js.undefined)
+    def setIn_reply_to_status_id(value: Double | String): Self = StObject.set(x, "in_reply_to_status_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIn_reply_to_status_idUndefined: Self = StObject.set(x, "in_reply_to_status_id", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setInclude_email(value: Boolean): Self = StObject.set(x, "include_email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIn_reply_to_status_id(value: Double | String): Self = this.set("in_reply_to_status_id", value.asInstanceOf[js.Any])
+    def setInclude_emailUndefined: Self = StObject.set(x, "include_email", js.undefined)
     
     @scala.inline
-    def deleteIn_reply_to_status_id: Self = this.set("in_reply_to_status_id", js.undefined)
+    def setInclude_entities(value: Boolean): Self = StObject.set(x, "include_entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude_email(value: Boolean): Self = this.set("include_email", value.asInstanceOf[js.Any])
+    def setInclude_entitiesUndefined: Self = StObject.set(x, "include_entities", js.undefined)
     
     @scala.inline
-    def deleteInclude_email: Self = this.set("include_email", js.undefined)
+    def setInclude_rts(value: Boolean): Self = StObject.set(x, "include_rts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude_entities(value: Boolean): Self = this.set("include_entities", value.asInstanceOf[js.Any])
+    def setInclude_rtsUndefined: Self = StObject.set(x, "include_rts", js.undefined)
     
     @scala.inline
-    def deleteInclude_entities: Self = this.set("include_entities", js.undefined)
+    def setInclude_user_entities(value: Boolean): Self = StObject.set(x, "include_user_entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude_rts(value: Boolean): Self = this.set("include_rts", value.asInstanceOf[js.Any])
+    def setInclude_user_entitiesUndefined: Self = StObject.set(x, "include_user_entities", js.undefined)
     
     @scala.inline
-    def deleteInclude_rts: Self = this.set("include_rts", js.undefined)
+    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude_user_entities(value: Boolean): Self = this.set("include_user_entities", value.asInstanceOf[js.Any])
+    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
     @scala.inline
-    def deleteInclude_user_entities: Self = this.set("include_user_entities", js.undefined)
+    def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setLatUndefined: Self = StObject.set(x, "lat", js.undefined)
     
     @scala.inline
-    def deleteLang: Self = this.set("lang", js.undefined)
+    def setList_id(value: Double | String): Self = StObject.set(x, "list_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLat(value: Double): Self = this.set("lat", value.asInstanceOf[js.Any])
+    def setList_idUndefined: Self = StObject.set(x, "list_id", js.undefined)
     
     @scala.inline
-    def deleteLat: Self = this.set("lat", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setList_id(value: Double | String): Self = this.set("list_id", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteList_id: Self = this.set("list_id", js.undefined)
+    def setLong(value: Double): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setLongUndefined: Self = StObject.set(x, "long", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setMax_id(value: String): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLong(value: Double): Self = this.set("long", value.asInstanceOf[js.Any])
+    def setMax_idUndefined: Self = StObject.set(x, "max_id", js.undefined)
     
     @scala.inline
-    def deleteLong: Self = this.set("long", js.undefined)
+    def setMedia_data(value: Buffer | String): Self = StObject.set(x, "media_data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_id(value: String): Self = this.set("max_id", value.asInstanceOf[js.Any])
+    def setMedia_dataUndefined: Self = StObject.set(x, "media_data", js.undefined)
     
     @scala.inline
-    def deleteMax_id: Self = this.set("max_id", js.undefined)
+    def setMedia_id(value: String): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia_data(value: Buffer | String): Self = this.set("media_data", value.asInstanceOf[js.Any])
+    def setMedia_idUndefined: Self = StObject.set(x, "media_id", js.undefined)
     
     @scala.inline
-    def deleteMedia_data: Self = this.set("media_data", js.undefined)
+    def setMedia_ids(value: js.Array[String]): Self = StObject.set(x, "media_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia_id(value: String): Self = this.set("media_id", value.asInstanceOf[js.Any])
+    def setMedia_idsUndefined: Self = StObject.set(x, "media_ids", js.undefined)
     
     @scala.inline
-    def deleteMedia_id: Self = this.set("media_id", js.undefined)
+    def setMedia_idsVarargs(value: String*): Self = StObject.set(x, "media_ids", js.Array(value :_*))
     
     @scala.inline
-    def setMedia_idsVarargs(value: String*): Self = this.set("media_ids", js.Array(value :_*))
+    def setMode(value: public | `private`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia_ids(value: js.Array[String]): Self = this.set("media_ids", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteMedia_ids: Self = this.set("media_ids", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: public | `private`): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setOwner_screen_name(value: String): Self = StObject.set(x, "owner_screen_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOwner_screen_nameUndefined: Self = StObject.set(x, "owner_screen_name", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner_screen_name(value: String): Self = this.set("owner_screen_name", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def deleteOwner_screen_name: Self = this.set("owner_screen_name", js.undefined)
+    def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setPlace_idUndefined: Self = StObject.set(x, "place_id", js.undefined)
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
+    def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlace_id(value: String): Self = this.set("place_id", value.asInstanceOf[js.Any])
+    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
     @scala.inline
-    def deletePlace_id: Self = this.set("place_id", js.undefined)
+    def setResult_type(value: ResultType): Self = StObject.set(x, "result_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ(value: String): Self = this.set("q", value.asInstanceOf[js.Any])
+    def setResult_typeUndefined: Self = StObject.set(x, "result_type", js.undefined)
     
     @scala.inline
-    def deleteQ: Self = this.set("q", js.undefined)
+    def setResults_per_page(value: Double): Self = StObject.set(x, "results_per_page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult_type(value: ResultType): Self = this.set("result_type", value.asInstanceOf[js.Any])
+    def setResults_per_pageUndefined: Self = StObject.set(x, "results_per_page", js.undefined)
     
     @scala.inline
-    def deleteResult_type: Self = this.set("result_type", js.undefined)
+    def setScreen_name(value: String): Self = StObject.set(x, "screen_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResults_per_page(value: Double): Self = this.set("results_per_page", value.asInstanceOf[js.Any])
+    def setScreen_nameUndefined: Self = StObject.set(x, "screen_name", js.undefined)
     
     @scala.inline
-    def deleteResults_per_page: Self = this.set("results_per_page", js.undefined)
+    def setSince_id(value: String): Self = StObject.set(x, "since_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreen_name(value: String): Self = this.set("screen_name", value.asInstanceOf[js.Any])
+    def setSince_idUndefined: Self = StObject.set(x, "since_id", js.undefined)
     
     @scala.inline
-    def deleteScreen_name: Self = this.set("screen_name", js.undefined)
+    def setSkip_status(value: Boolean): Self = StObject.set(x, "skip_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSince_id(value: String): Self = this.set("since_id", value.asInstanceOf[js.Any])
+    def setSkip_statusUndefined: Self = StObject.set(x, "skip_status", js.undefined)
     
     @scala.inline
-    def deleteSince_id: Self = this.set("since_id", js.undefined)
+    def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkip_status(value: Boolean): Self = this.set("skip_status", value.asInstanceOf[js.Any])
+    def setSlugUndefined: Self = StObject.set(x, "slug", js.undefined)
     
     @scala.inline
-    def deleteSkip_status: Self = this.set("skip_status", js.undefined)
+    def setSource_id(value: Double): Self = StObject.set(x, "source_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlug(value: String): Self = this.set("slug", value.asInstanceOf[js.Any])
+    def setSource_idUndefined: Self = StObject.set(x, "source_id", js.undefined)
     
     @scala.inline
-    def deleteSlug: Self = this.set("slug", js.undefined)
+    def setSource_screen_name(value: String): Self = StObject.set(x, "source_screen_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource_id(value: Double): Self = this.set("source_id", value.asInstanceOf[js.Any])
+    def setSource_screen_nameUndefined: Self = StObject.set(x, "source_screen_name", js.undefined)
     
     @scala.inline
-    def deleteSource_id: Self = this.set("source_id", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource_screen_name(value: String): Self = this.set("source_screen_name", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSource_screen_name: Self = this.set("source_screen_name", js.undefined)
+    def setStringify_ids(value: Boolean): Self = StObject.set(x, "stringify_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStringify_idsUndefined: Self = StObject.set(x, "stringify_ids", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTarget_id(value: Double): Self = StObject.set(x, "target_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStringify_ids(value: Boolean): Self = this.set("stringify_ids", value.asInstanceOf[js.Any])
+    def setTarget_idUndefined: Self = StObject.set(x, "target_id", js.undefined)
     
     @scala.inline
-    def deleteStringify_ids: Self = this.set("stringify_ids", js.undefined)
+    def setTarget_screen_name(value: String): Self = StObject.set(x, "target_screen_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget_id(value: Double): Self = this.set("target_id", value.asInstanceOf[js.Any])
+    def setTarget_screen_nameUndefined: Self = StObject.set(x, "target_screen_name", js.undefined)
     
     @scala.inline
-    def deleteTarget_id: Self = this.set("target_id", js.undefined)
+    def setTrack(value: String | js.Array[String]): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget_screen_name(value: String): Self = this.set("target_screen_name", value.asInstanceOf[js.Any])
+    def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
     
     @scala.inline
-    def deleteTarget_screen_name: Self = this.set("target_screen_name", js.undefined)
+    def setTrackVarargs(value: String*): Self = StObject.set(x, "track", js.Array(value :_*))
     
     @scala.inline
-    def setTrackVarargs(value: String*): Self = this.set("track", js.Array(value :_*))
+    def setTrim_user(value: Boolean): Self = StObject.set(x, "trim_user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrack(value: String | js.Array[String]): Self = this.set("track", value.asInstanceOf[js.Any])
+    def setTrim_userUndefined: Self = StObject.set(x, "trim_user", js.undefined)
     
     @scala.inline
-    def deleteTrack: Self = this.set("track", js.undefined)
+    def setTweet_mode(value: String): Self = StObject.set(x, "tweet_mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrim_user(value: Boolean): Self = this.set("trim_user", value.asInstanceOf[js.Any])
+    def setTweet_modeUndefined: Self = StObject.set(x, "tweet_mode", js.undefined)
     
     @scala.inline
-    def deleteTrim_user: Self = this.set("trim_user", js.undefined)
+    def setUntil(value: String): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTweet_mode(value: String): Self = this.set("tweet_mode", value.asInstanceOf[js.Any])
+    def setUntilUndefined: Self = StObject.set(x, "until", js.undefined)
     
     @scala.inline
-    def deleteTweet_mode: Self = this.set("tweet_mode", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUntil(value: String): Self = this.set("until", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteUntil: Self = this.set("until", js.undefined)
+    def setUser_id(value: Double | String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setUser_id(value: Double | String): Self = this.set("user_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser_id: Self = this.set("user_id", js.undefined)
+    def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
   }
 }

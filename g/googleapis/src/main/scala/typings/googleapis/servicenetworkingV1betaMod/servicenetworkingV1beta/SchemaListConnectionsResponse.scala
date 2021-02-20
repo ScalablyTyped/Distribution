@@ -1,5 +1,6 @@
 package typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * given service and consumer project.
   */
 @js.native
-trait SchemaListConnectionsResponse extends js.Object {
+trait SchemaListConnectionsResponse extends StObject {
   
   /**
     * The list of Connections.
@@ -25,27 +26,15 @@ object SchemaListConnectionsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListConnectionsResponseOps[Self <: SchemaListConnectionsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListConnectionsResponseMutableBuilder[Self <: SchemaListConnectionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnections(value: js.Array[SchemaConnection]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConnectionsVarargs(value: SchemaConnection*): Self = this.set("connections", js.Array(value :_*))
-    
-    @scala.inline
-    def setConnections(value: js.Array[SchemaConnection]): Self = this.set("connections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnections: Self = this.set("connections", js.undefined)
+    def setConnectionsVarargs(value: SchemaConnection*): Self = StObject.set(x, "connections", js.Array(value :_*))
   }
 }

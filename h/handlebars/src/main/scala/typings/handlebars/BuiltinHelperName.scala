@@ -1,5 +1,6 @@
 package typings.handlebars
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.handlebars.handlebarsStrings.log
   - typings.handlebars.handlebarsStrings.lookup
 */
-trait BuiltinHelperName extends js.Object
+trait BuiltinHelperName extends StObject
 object BuiltinHelperName {
   
   @scala.inline

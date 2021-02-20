@@ -6,16 +6,18 @@ import typings.materialTabs.tabComponentMod.MDCTab
 import typings.materialTabs.tabComponentMod.MDCTabFactory
 import typings.std.Element
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/tabs/tab-bar/component", JSImport.Namespace)
-@js.native
-object tabBarComponentMod extends js.Object {
+object tabBarComponentMod {
   
+  @JSImport("@material/tabs/tab-bar/component", "MDCTabBar")
   @js.native
-  class MDCTabBar () extends MDCComponent[MDCTabBarFoundation] {
+  class MDCTabBar protected () extends MDCComponent[MDCTabBarFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCTabBarFoundation, args: js.Any*) = this()
     
     var activeTab: MDCTab = js.native
     
@@ -31,9 +33,10 @@ object tabBarComponentMod extends js.Object {
     val tabs: js.Array[MDCTab] = js.native
   }
   /* static members */
-  @js.native
-  object MDCTabBar extends js.Object {
+  object MDCTabBar {
     
+    @JSImport("@material/tabs/tab-bar/component", "MDCTabBar.attachTo")
+    @js.native
     def attachTo(root: Element): MDCTabBar = js.native
   }
   

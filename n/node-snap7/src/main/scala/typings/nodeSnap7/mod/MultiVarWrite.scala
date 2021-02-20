@@ -1,12 +1,13 @@
 package typings.nodeSnap7.mod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiVarWrite extends js.Object {
+trait MultiVarWrite extends StObject {
   
   var Amount: Double = js.native
   
@@ -29,39 +30,27 @@ object MultiVarWrite {
   }
   
   @scala.inline
-  implicit class MultiVarWriteOps[Self <: MultiVarWrite] (val x: Self) extends AnyVal {
+  implicit class MultiVarWriteMutableBuilder[Self <: MultiVarWrite] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArea(value: Area): Self = StObject.set(x, "Area", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDBNumber(value: Double): Self = StObject.set(x, "DBNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: Double): Self = this.set("Amount", value.asInstanceOf[js.Any])
+    def setDBNumberUndefined: Self = StObject.set(x, "DBNumber", js.undefined)
     
     @scala.inline
-    def setArea(value: Area): Self = this.set("Area", value.asInstanceOf[js.Any])
+    def setData(value: Buffer): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: Buffer): Self = this.set("Data", value.asInstanceOf[js.Any])
+    def setStart(value: Double): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: Double): Self = this.set("Start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordLen(value: WordLen): Self = this.set("WordLen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDBNumber(value: Double): Self = this.set("DBNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDBNumber: Self = this.set("DBNumber", js.undefined)
+    def setWordLen(value: WordLen): Self = StObject.set(x, "WordLen", value.asInstanceOf[js.Any])
   }
 }

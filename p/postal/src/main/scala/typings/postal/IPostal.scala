@@ -2,12 +2,13 @@ package typings.postal
 
 import typings.postal.anon.Callback
 import typings.postal.anon.Channel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPostal extends js.Object {
+trait IPostal extends StObject {
   
   def addWireTap(callback: ICallback[_]): js.Function0[Unit] = js.native
   

@@ -5,12 +5,13 @@ import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.RouterDirection
 import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.navInterfaceMod.NavComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonNavLink extends js.Object {
+trait IonNavLink extends StObject {
   
   /**
     * Component to navigate to. Only used if the `routerDirection` is `"forward"` or `"root"`.
@@ -41,42 +42,30 @@ object IonNavLink {
   }
   
   @scala.inline
-  implicit class IonNavLinkOps[Self <: IonNavLink] (val x: Self) extends AnyVal {
+  implicit class IonNavLinkMutableBuilder[Self <: IonNavLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponent(value: NavComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentNull: Self = StObject.set(x, "component", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponentProps(value: ComponentProps[Null]): Self = StObject.set(x, "componentProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouterDirection(value: RouterDirection): Self = this.set("routerDirection", value.asInstanceOf[js.Any])
+    def setComponentPropsUndefined: Self = StObject.set(x, "componentProps", js.undefined)
     
     @scala.inline
-    def setComponent(value: NavComponent): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     @scala.inline
-    def deleteComponent: Self = this.set("component", js.undefined)
+    def setRouterAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "routerAnimation", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setComponentNull: Self = this.set("component", null)
+    def setRouterAnimationUndefined: Self = StObject.set(x, "routerAnimation", js.undefined)
     
     @scala.inline
-    def setComponentProps(value: ComponentProps[Null]): Self = this.set("componentProps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComponentProps: Self = this.set("componentProps", js.undefined)
-    
-    @scala.inline
-    def setRouterAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = this.set("routerAnimation", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteRouterAnimation: Self = this.set("routerAnimation", js.undefined)
+    def setRouterDirection(value: RouterDirection): Self = StObject.set(x, "routerDirection", value.asInstanceOf[js.Any])
   }
 }

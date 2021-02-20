@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetCardinalityResponse extends js.Object {
+trait GetCardinalityResponse extends StObject {
   
   /**
     * The approximate count of unique values that match the query.
@@ -21,24 +22,12 @@ object GetCardinalityResponse {
   }
   
   @scala.inline
-  implicit class GetCardinalityResponseOps[Self <: GetCardinalityResponse] (val x: Self) extends AnyVal {
+  implicit class GetCardinalityResponseMutableBuilder[Self <: GetCardinalityResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCardinality(value: Count): Self = StObject.set(x, "cardinality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCardinality(value: Count): Self = this.set("cardinality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCardinality: Self = this.set("cardinality", js.undefined)
+    def setCardinalityUndefined: Self = StObject.set(x, "cardinality", js.undefined)
   }
 }

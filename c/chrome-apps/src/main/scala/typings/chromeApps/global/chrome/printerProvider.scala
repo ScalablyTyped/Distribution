@@ -3,6 +3,7 @@ package typings.chromeApps.global.chrome
 import typings.chromeApps.chrome.printerProvider.PrintJob
 import typings.chromeApps.chrome.printerProvider.PrinterCapabilities
 import typings.chromeApps.chrome.printerProvider.PrinterInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,11 +21,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @requires Permissions: 'printerProvider'
   * @since Chrome 44.
   */
-@JSGlobal("chrome.printerProvider")
-@js.native
-object printerProvider extends js.Object {
+object printerProvider {
   
   /** Event fired when print manager requests printer capabilities. */
+  @JSGlobal("chrome.printerProvider.onGetCapabilityRequested")
+  @js.native
   val onGetCapabilityRequested: typings.chromeApps.chrome.events.Event[
     js.Function2[
       /* printerId */ String, 
@@ -34,6 +35,8 @@ object printerProvider extends js.Object {
   ] = js.native
   
   /** Event fired when print manager requests printers provided by extensions. */
+  @JSGlobal("chrome.printerProvider.onGetPrintersRequested")
+  @js.native
   val onGetPrintersRequested: typings.chromeApps.chrome.events.Event[
     js.Function1[
       /* resultCallback */ js.Function1[/* printerInfo */ js.Array[PrinterInfo], Unit], 
@@ -46,6 +49,8 @@ object printerProvider extends js.Object {
     * Note: An application should not rely on this event being fired more than once per device. If a connected device is supported it should be returned in the onGetPrintersRequested event.
     * @since Chrome 45.
     */
+  @JSGlobal("chrome.printerProvider.onGetUsbPrinterInfoRequested")
+  @js.native
   val onGetUsbPrinterInfoRequested: typings.chromeApps.chrome.events.Event[
     js.Function2[
       /* device */ js.Any, 
@@ -55,6 +60,8 @@ object printerProvider extends js.Object {
   ] = js.native
   
   /** Event fired when print manager requests printing. */
+  @JSGlobal("chrome.printerProvider.onPrintRequested")
+  @js.native
   val onPrintRequested: typings.chromeApps.chrome.events.Event[
     js.Function2[
       /* printJob */ PrintJob, 

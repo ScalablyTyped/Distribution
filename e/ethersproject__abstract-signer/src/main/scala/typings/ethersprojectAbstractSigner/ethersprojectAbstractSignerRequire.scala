@@ -1,5 +1,6 @@
 package typings.ethersprojectAbstractSigner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("@ethersproject/abstract-signer", JSImport.Namespace)
 @js.native
-object ethersprojectAbstractSignerRequire extends js.Object
+object ethersprojectAbstractSignerRequire extends StObject

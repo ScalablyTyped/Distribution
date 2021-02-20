@@ -3,15 +3,15 @@ package typings.jupyterlabCompleter
 import typings.jupyterlabCompleter.connectorMod.CompletionConnector.IOptions
 import typings.jupyterlabCompleter.handlerMod.CompletionHandler.IReply
 import typings.jupyterlabCompleter.handlerMod.CompletionHandler.IRequest
-import typings.jupyterlabStatedb.dataconnectorMod.DataConnector
+import typings.jupyterlabStatedb.mod.DataConnector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/completer/lib/connector", JSImport.Namespace)
-@js.native
-object connectorMod extends js.Object {
+object connectorMod {
   
+  @JSImport("@jupyterlab/completer/lib/connector", "CompletionConnector")
   @js.native
   class CompletionConnector protected () extends DataConnector[IReply, Unit, IRequest, String] {
     /**
@@ -25,8 +25,7 @@ object connectorMod extends js.Object {
     
     var _kernel: js.Any = js.native
   }
-  @js.native
-  object CompletionConnector extends js.Object {
+  object CompletionConnector {
     
     /**
       * The instantiation options for cell completion handlers.

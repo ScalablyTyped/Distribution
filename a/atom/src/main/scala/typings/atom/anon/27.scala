@@ -5,12 +5,13 @@ import typings.atom.atomStrings.never
 import typings.atom.atomStrings.overlap
 import typings.atom.atomStrings.surround
 import typings.atom.atomStrings.touch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `27` extends js.Object {
+trait `27` extends StObject {
   
   var exclusive: js.UndefOr[Boolean] = js.native
   
@@ -25,30 +26,18 @@ object `27` {
   }
   
   @scala.inline
-  implicit class `27Ops`[Self <: `27`] (val x: Self) extends AnyVal {
+  implicit class `27MutableBuilder`[Self <: `27`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusive(value: Boolean): Self = this.set("exclusive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExclusive: Self = this.set("exclusive", js.undefined)
-    
-    @scala.inline
-    def setInvalidate(value: never | surround | overlap | inside | touch): Self = this.set("invalidate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvalidate: Self = this.set("invalidate", js.undefined)
+    def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
   }
 }

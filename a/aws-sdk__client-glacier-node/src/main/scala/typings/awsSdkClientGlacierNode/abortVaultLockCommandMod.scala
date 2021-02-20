@@ -7,14 +7,14 @@ import typings.awsSdkClientGlacierNode.typesAbortVaultLockInputMod.AbortVaultLoc
 import typings.awsSdkClientGlacierNode.typesAbortVaultLockOutputMod.AbortVaultLockOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-glacier-node/commands/AbortVaultLockCommand", JSImport.Namespace)
-@js.native
-object abortVaultLockCommandMod extends js.Object {
+object abortVaultLockCommandMod {
   
+  @JSImport("@aws-sdk/client-glacier-node/commands/AbortVaultLockCommand", "AbortVaultLockCommand")
   @js.native
   class AbortVaultLockCommand protected () extends Command[
           InputTypesUnion, 

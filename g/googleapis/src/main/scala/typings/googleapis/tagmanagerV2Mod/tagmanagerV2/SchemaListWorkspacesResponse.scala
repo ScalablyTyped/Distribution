@@ -1,5 +1,6 @@
 package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A list of workspaces in a container.
   */
 @js.native
-trait SchemaListWorkspacesResponse extends js.Object {
+trait SchemaListWorkspacesResponse extends StObject {
   
   /**
     * Continuation token for fetching the next page of results.
@@ -29,33 +30,21 @@ object SchemaListWorkspacesResponse {
   }
   
   @scala.inline
-  implicit class SchemaListWorkspacesResponseOps[Self <: SchemaListWorkspacesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListWorkspacesResponseMutableBuilder[Self <: SchemaListWorkspacesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWorkspace(value: js.Array[SchemaWorkspace]): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setWorkspaceVarargs(value: SchemaWorkspace*): Self = this.set("workspace", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkspace(value: js.Array[SchemaWorkspace]): Self = this.set("workspace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkspace: Self = this.set("workspace", js.undefined)
+    def setWorkspaceVarargs(value: SchemaWorkspace*): Self = StObject.set(x, "workspace", js.Array(value :_*))
   }
 }

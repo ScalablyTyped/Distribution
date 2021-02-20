@@ -1,11 +1,12 @@
 package typings.googleapis.v21Mod.contentV21
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaOrderLineItemShippingDetails extends js.Object {
+trait SchemaOrderLineItemShippingDetails extends StObject {
   
   /**
     * The delivery by date, in ISO 8601 format.
@@ -31,36 +32,24 @@ object SchemaOrderLineItemShippingDetails {
   }
   
   @scala.inline
-  implicit class SchemaOrderLineItemShippingDetailsOps[Self <: SchemaOrderLineItemShippingDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaOrderLineItemShippingDetailsMutableBuilder[Self <: SchemaOrderLineItemShippingDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeliverByDate(value: String): Self = StObject.set(x, "deliverByDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeliverByDateUndefined: Self = StObject.set(x, "deliverByDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMethod(value: SchemaOrderLineItemShippingDetailsMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliverByDate(value: String): Self = this.set("deliverByDate", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteDeliverByDate: Self = this.set("deliverByDate", js.undefined)
+    def setShipByDate(value: String): Self = StObject.set(x, "shipByDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: SchemaOrderLineItemShippingDetailsMethod): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
-    
-    @scala.inline
-    def setShipByDate(value: String): Self = this.set("shipByDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShipByDate: Self = this.set("shipByDate", js.undefined)
+    def setShipByDateUndefined: Self = StObject.set(x, "shipByDate", js.undefined)
   }
 }

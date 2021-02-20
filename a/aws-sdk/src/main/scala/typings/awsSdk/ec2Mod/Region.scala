@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Region extends js.Object {
+trait Region extends StObject {
   
   /**
     * The Region service endpoint.
@@ -31,36 +32,24 @@ object Region {
   }
   
   @scala.inline
-  implicit class RegionOps[Self <: Region] (val x: Self) extends AnyVal {
+  implicit class RegionMutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpoint(value: String): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptInStatus(value: String): Self = StObject.set(x, "OptInStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoint(value: String): Self = this.set("Endpoint", value.asInstanceOf[js.Any])
+    def setOptInStatusUndefined: Self = StObject.set(x, "OptInStatus", js.undefined)
     
     @scala.inline
-    def deleteEndpoint: Self = this.set("Endpoint", js.undefined)
+    def setRegionName(value: String): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptInStatus(value: String): Self = this.set("OptInStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptInStatus: Self = this.set("OptInStatus", js.undefined)
-    
-    @scala.inline
-    def setRegionName(value: String): Self = this.set("RegionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegionName: Self = this.set("RegionName", js.undefined)
+    def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
   }
 }

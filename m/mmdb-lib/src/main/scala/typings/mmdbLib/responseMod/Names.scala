@@ -1,11 +1,12 @@
 package typings.mmdbLib.responseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Names extends js.Object {
+trait Names extends StObject {
   
   val de: js.UndefOr[String] = js.native
   
@@ -32,63 +33,51 @@ object Names {
   }
   
   @scala.inline
-  implicit class NamesOps[Self <: Names] (val x: Self) extends AnyVal {
+  implicit class NamesMutableBuilder[Self <: Names] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDe(value: String): Self = StObject.set(x, "de", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeUndefined: Self = StObject.set(x, "de", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEn(value: String): Self = StObject.set(x, "en", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEn(value: String): Self = this.set("en", value.asInstanceOf[js.Any])
+    def setEs(value: String): Self = StObject.set(x, "es", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDe(value: String): Self = this.set("de", value.asInstanceOf[js.Any])
+    def setEsUndefined: Self = StObject.set(x, "es", js.undefined)
     
     @scala.inline
-    def deleteDe: Self = this.set("de", js.undefined)
+    def setFr(value: String): Self = StObject.set(x, "fr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEs(value: String): Self = this.set("es", value.asInstanceOf[js.Any])
+    def setFrUndefined: Self = StObject.set(x, "fr", js.undefined)
     
     @scala.inline
-    def deleteEs: Self = this.set("es", js.undefined)
+    def setJa(value: String): Self = StObject.set(x, "ja", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFr(value: String): Self = this.set("fr", value.asInstanceOf[js.Any])
+    def setJaUndefined: Self = StObject.set(x, "ja", js.undefined)
     
     @scala.inline
-    def deleteFr: Self = this.set("fr", js.undefined)
+    def `setPt-BR`(value: String): Self = StObject.set(x, "pt-BR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJa(value: String): Self = this.set("ja", value.asInstanceOf[js.Any])
+    def `setPt-BRUndefined`: Self = StObject.set(x, "pt-BR", js.undefined)
     
     @scala.inline
-    def deleteJa: Self = this.set("ja", js.undefined)
+    def setRu(value: String): Self = StObject.set(x, "ru", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPt-BR`(value: String): Self = this.set("pt-BR", value.asInstanceOf[js.Any])
+    def setRuUndefined: Self = StObject.set(x, "ru", js.undefined)
     
     @scala.inline
-    def `deletePt-BR`: Self = this.set("pt-BR", js.undefined)
+    def `setZh-CN`(value: String): Self = StObject.set(x, "zh-CN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRu(value: String): Self = this.set("ru", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRu: Self = this.set("ru", js.undefined)
-    
-    @scala.inline
-    def `setZh-CN`(value: String): Self = this.set("zh-CN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteZh-CN`: Self = this.set("zh-CN", js.undefined)
+    def `setZh-CNUndefined`: Self = StObject.set(x, "zh-CN", js.undefined)
   }
 }

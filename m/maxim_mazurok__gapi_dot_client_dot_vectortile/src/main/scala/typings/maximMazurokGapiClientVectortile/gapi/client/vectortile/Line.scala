@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVectortile.gapi.client.vectortile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Line extends js.Object {
+trait Line extends StObject {
   
   /** The vertices present in the polyline. */
   var vertexOffsets: js.UndefOr[Vertex2DList] = js.native
@@ -26,30 +27,18 @@ object Line {
   }
   
   @scala.inline
-  implicit class LineOps[Self <: Line] (val x: Self) extends AnyVal {
+  implicit class LineMutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVertexOffsets(value: Vertex2DList): Self = StObject.set(x, "vertexOffsets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVertexOffsetsUndefined: Self = StObject.set(x, "vertexOffsets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setZOrder(value: Double): Self = StObject.set(x, "zOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVertexOffsets(value: Vertex2DList): Self = this.set("vertexOffsets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertexOffsets: Self = this.set("vertexOffsets", js.undefined)
-    
-    @scala.inline
-    def setZOrder(value: Double): Self = this.set("zOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZOrder: Self = this.set("zOrder", js.undefined)
+    def setZOrderUndefined: Self = StObject.set(x, "zOrder", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.documentdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.documentdb.documentdbStrings.Read
   - typings.documentdb.documentdbStrings.All
 */
-trait PermissionMode extends js.Object
+trait PermissionMode extends StObject
 object PermissionMode {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Page
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FrameResourceTree extends js.Object {
+trait FrameResourceTree extends StObject {
   
   /**
     * Child frames.
@@ -31,36 +32,24 @@ object FrameResourceTree {
   }
   
   @scala.inline
-  implicit class FrameResourceTreeOps[Self <: FrameResourceTree] (val x: Self) extends AnyVal {
+  implicit class FrameResourceTreeMutableBuilder[Self <: FrameResourceTree] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildFrames(value: js.Array[FrameResourceTree]): Self = StObject.set(x, "childFrames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildFramesUndefined: Self = StObject.set(x, "childFrames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildFramesVarargs(value: FrameResourceTree*): Self = StObject.set(x, "childFrames", js.Array(value :_*))
     
     @scala.inline
-    def setFrame(value: Frame): Self = this.set("frame", value.asInstanceOf[js.Any])
+    def setFrame(value: Frame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourcesVarargs(value: FrameResource*): Self = this.set("resources", js.Array(value :_*))
+    def setResources(value: js.Array[FrameResource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResources(value: js.Array[FrameResource]): Self = this.set("resources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChildFramesVarargs(value: FrameResourceTree*): Self = this.set("childFrames", js.Array(value :_*))
-    
-    @scala.inline
-    def setChildFrames(value: js.Array[FrameResourceTree]): Self = this.set("childFrames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChildFrames: Self = this.set("childFrames", js.undefined)
+    def setResourcesVarargs(value: FrameResource*): Self = StObject.set(x, "resources", js.Array(value :_*))
   }
 }

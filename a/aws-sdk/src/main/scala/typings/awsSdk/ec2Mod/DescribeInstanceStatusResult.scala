@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeInstanceStatusResult extends js.Object {
+trait DescribeInstanceStatusResult extends StObject {
   
   /**
     * Information about the status of the instances.
@@ -26,33 +27,21 @@ object DescribeInstanceStatusResult {
   }
   
   @scala.inline
-  implicit class DescribeInstanceStatusResultOps[Self <: DescribeInstanceStatusResult] (val x: Self) extends AnyVal {
+  implicit class DescribeInstanceStatusResultMutableBuilder[Self <: DescribeInstanceStatusResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceStatuses(value: InstanceStatusList): Self = StObject.set(x, "InstanceStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceStatusesUndefined: Self = StObject.set(x, "InstanceStatuses", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceStatusesVarargs(value: InstanceStatus*): Self = StObject.set(x, "InstanceStatuses", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceStatusesVarargs(value: InstanceStatus*): Self = this.set("InstanceStatuses", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceStatuses(value: InstanceStatusList): Self = this.set("InstanceStatuses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceStatuses: Self = this.set("InstanceStatuses", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

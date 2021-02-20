@@ -1,5 +1,6 @@
 package typings.reactImgix.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,69 +35,57 @@ object SharedImigixAndSourceProps {
   }
   
   @scala.inline
-  implicit class SharedImigixAndSourcePropsOps[Self <: SharedImigixAndSourceProps] (val x: Self) extends AnyVal {
+  implicit class SharedImigixAndSourcePropsMutableBuilder[Self <: SharedImigixAndSourceProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeConfig(value: AttributeConfig): Self = StObject.set(x, "attributeConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeConfigUndefined: Self = StObject.set(x, "attributeConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableLibraryParam(value: Boolean): Self = StObject.set(x, "disableLibraryParam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setDisableLibraryParamUndefined: Self = StObject.set(x, "disableLibraryParam", js.undefined)
     
     @scala.inline
-    def setAttributeConfig(value: AttributeConfig): Self = this.set("attributeConfig", value.asInstanceOf[js.Any])
+    def setDisableQualityByDPR(value: Boolean): Self = StObject.set(x, "disableQualityByDPR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributeConfig: Self = this.set("attributeConfig", js.undefined)
+    def setDisableQualityByDPRUndefined: Self = StObject.set(x, "disableQualityByDPR", js.undefined)
     
     @scala.inline
-    def setDisableLibraryParam(value: Boolean): Self = this.set("disableLibraryParam", value.asInstanceOf[js.Any])
+    def setDisableSrcSet(value: Boolean): Self = StObject.set(x, "disableSrcSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableLibraryParam: Self = this.set("disableLibraryParam", js.undefined)
+    def setDisableSrcSetUndefined: Self = StObject.set(x, "disableSrcSet", js.undefined)
     
     @scala.inline
-    def setDisableQualityByDPR(value: Boolean): Self = this.set("disableQualityByDPR", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableQualityByDPR: Self = this.set("disableQualityByDPR", js.undefined)
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setDisableSrcSet(value: Boolean): Self = this.set("disableSrcSet", value.asInstanceOf[js.Any])
+    def setImgixParams(value: ImigixParams): Self = StObject.set(x, "imgixParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableSrcSet: Self = this.set("disableSrcSet", js.undefined)
+    def setImgixParamsUndefined: Self = StObject.set(x, "imgixParams", js.undefined)
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
     
     @scala.inline
-    def setImgixParams(value: ImigixParams): Self = this.set("imgixParams", value.asInstanceOf[js.Any])
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImgixParams: Self = this.set("imgixParams", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizes(value: String): Self = this.set("sizes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizes: Self = this.set("sizes", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

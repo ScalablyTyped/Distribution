@@ -2,16 +2,16 @@ package typings.nodegit
 
 import typings.nodegit.bufMod.Buf
 import typings.std.Number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/diff-stats", JSImport.Namespace)
-@js.native
-object diffStatsMod extends js.Object {
+object diffStatsMod {
   
+  @JSImport("nodegit/diff-stats", "DiffStats")
   @js.native
-  class DiffStats () extends js.Object {
+  class DiffStats () extends StObject {
     
     /**
       * @returns - total number of deletions in the diff

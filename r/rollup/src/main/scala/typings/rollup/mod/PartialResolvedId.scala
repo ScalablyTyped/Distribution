@@ -1,6 +1,7 @@
 package typings.rollup.mod
 
 import typings.rollup.rollupStrings.`no-treeshake`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,54 +29,42 @@ object PartialResolvedId {
   }
   
   @scala.inline
-  implicit class PartialResolvedIdOps[Self <: PartialResolvedId] (val x: Self) extends AnyVal {
+  implicit class PartialResolvedIdMutableBuilder[Self <: PartialResolvedId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMeta(value: CustomPluginOptions): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternal(value: Boolean): Self = this.set("external", value.asInstanceOf[js.Any])
+    def setMetaNull: Self = StObject.set(x, "meta", null)
     
     @scala.inline
-    def deleteExternal: Self = this.set("external", js.undefined)
+    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
     @scala.inline
-    def setMeta(value: CustomPluginOptions): Self = this.set("meta", value.asInstanceOf[js.Any])
+    def setModuleSideEffects(value: Boolean | `no-treeshake`): Self = StObject.set(x, "moduleSideEffects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMeta: Self = this.set("meta", js.undefined)
+    def setModuleSideEffectsNull: Self = StObject.set(x, "moduleSideEffects", null)
     
     @scala.inline
-    def setMetaNull: Self = this.set("meta", null)
+    def setModuleSideEffectsUndefined: Self = StObject.set(x, "moduleSideEffects", js.undefined)
     
     @scala.inline
-    def setModuleSideEffects(value: Boolean | `no-treeshake`): Self = this.set("moduleSideEffects", value.asInstanceOf[js.Any])
+    def setSyntheticNamedExports(value: Boolean | String): Self = StObject.set(x, "syntheticNamedExports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModuleSideEffects: Self = this.set("moduleSideEffects", js.undefined)
+    def setSyntheticNamedExportsNull: Self = StObject.set(x, "syntheticNamedExports", null)
     
     @scala.inline
-    def setModuleSideEffectsNull: Self = this.set("moduleSideEffects", null)
-    
-    @scala.inline
-    def setSyntheticNamedExports(value: Boolean | String): Self = this.set("syntheticNamedExports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyntheticNamedExports: Self = this.set("syntheticNamedExports", js.undefined)
-    
-    @scala.inline
-    def setSyntheticNamedExportsNull: Self = this.set("syntheticNamedExports", null)
+    def setSyntheticNamedExportsUndefined: Self = StObject.set(x, "syntheticNamedExports", js.undefined)
   }
 }

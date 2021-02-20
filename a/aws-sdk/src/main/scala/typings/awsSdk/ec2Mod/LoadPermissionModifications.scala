@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadPermissionModifications extends js.Object {
+trait LoadPermissionModifications extends StObject {
   
   /**
     * The load permissions to add.
@@ -26,36 +27,24 @@ object LoadPermissionModifications {
   }
   
   @scala.inline
-  implicit class LoadPermissionModificationsOps[Self <: LoadPermissionModifications] (val x: Self) extends AnyVal {
+  implicit class LoadPermissionModificationsMutableBuilder[Self <: LoadPermissionModifications] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: LoadPermissionListRequest): Self = StObject.set(x, "Add", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddUndefined: Self = StObject.set(x, "Add", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddVarargs(value: LoadPermissionRequest*): Self = StObject.set(x, "Add", js.Array(value :_*))
     
     @scala.inline
-    def setAddVarargs(value: LoadPermissionRequest*): Self = this.set("Add", js.Array(value :_*))
+    def setRemove(value: LoadPermissionListRequest): Self = StObject.set(x, "Remove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: LoadPermissionListRequest): Self = this.set("Add", value.asInstanceOf[js.Any])
+    def setRemoveUndefined: Self = StObject.set(x, "Remove", js.undefined)
     
     @scala.inline
-    def deleteAdd: Self = this.set("Add", js.undefined)
-    
-    @scala.inline
-    def setRemoveVarargs(value: LoadPermissionRequest*): Self = this.set("Remove", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemove(value: LoadPermissionListRequest): Self = this.set("Remove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemove: Self = this.set("Remove", js.undefined)
+    def setRemoveVarargs(value: LoadPermissionRequest*): Self = StObject.set(x, "Remove", js.Array(value :_*))
   }
 }

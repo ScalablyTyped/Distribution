@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * methods on this interface are simple proxy methods to the corresponding functionality on TQuery.
   */
 @js.native
-trait TQueries extends js.Object {
+trait TQueries extends StObject {
   
   /**
     * A proxy method that iterates over all the TQueries in a given TView and calls the corresponding
@@ -75,39 +76,27 @@ object TQueries {
   }
   
   @scala.inline
-  implicit class TQueriesOps[Self <: TQueries] (val x: Self) extends AnyVal {
+  implicit class TQueriesMutableBuilder[Self <: TQueries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElementEnd(value: TNode => Unit): Self = StObject.set(x, "elementEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElementStart(value: (TView, TNode) => Unit): Self = StObject.set(x, "elementStart", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmbeddedTView(value: TNode => TQueries | Null): Self = StObject.set(x, "embeddedTView", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setElementEnd(value: TNode => Unit): Self = this.set("elementEnd", js.Any.fromFunction1(value))
+    def setGetByIndex(value: Double => TQuery): Self = StObject.set(x, "getByIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setElementStart(value: (TView, TNode) => Unit): Self = this.set("elementStart", js.Any.fromFunction2(value))
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbeddedTView(value: TNode => TQueries | Null): Self = this.set("embeddedTView", js.Any.fromFunction1(value))
+    def setTemplate(value: (TView, TNode) => Unit): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetByIndex(value: Double => TQuery): Self = this.set("getByIndex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTemplate(value: (TView, TNode) => Unit): Self = this.set("template", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setTrack(value: TQuery => Unit): Self = this.set("track", js.Any.fromFunction1(value))
+    def setTrack(value: TQuery => Unit): Self = StObject.set(x, "track", js.Any.fromFunction1(value))
   }
 }

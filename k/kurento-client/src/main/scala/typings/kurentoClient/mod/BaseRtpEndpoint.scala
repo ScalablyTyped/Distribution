@@ -4,6 +4,7 @@ import typings.kurentoClient.anon.EventConnectionStateChang
 import typings.kurentoClient.anon.EventMediaStateChangedold
 import typings.kurentoClient.kurentoClientStrings.ConnectionStateChanged
 import typings.kurentoClient.kurentoClientStrings.MediaStateChanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

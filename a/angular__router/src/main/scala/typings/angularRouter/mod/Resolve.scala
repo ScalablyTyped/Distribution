@@ -1,12 +1,13 @@
 package typings.angularRouter.mod
 
 import typings.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Resolve[T] extends js.Object {
+trait Resolve[T] extends StObject {
   
   def resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable_[T] | js.Promise[T] | T = js.native
 }
@@ -19,21 +20,9 @@ object Resolve {
   }
   
   @scala.inline
-  implicit class ResolveOps[Self <: Resolve[_], T] (val x: Self with Resolve[T]) extends AnyVal {
+  implicit class ResolveMutableBuilder[Self <: Resolve[_], T] (val x: Self with Resolve[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResolve(value: (ActivatedRouteSnapshot, RouterStateSnapshot) => Observable_[T] | js.Promise[T] | T): Self = this.set("resolve", js.Any.fromFunction2(value))
+    def setResolve(value: (ActivatedRouteSnapshot, RouterStateSnapshot) => Observable_[T] | js.Promise[T] | T): Self = StObject.set(x, "resolve", js.Any.fromFunction2(value))
   }
 }

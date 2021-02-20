@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A list of HTML conversion settings. */
 @js.native
-trait HtmlSettings extends js.Object {
+trait HtmlSettings extends StObject {
   
   var exclude_content: js.UndefOr[XPathPatterns] = js.native
   
@@ -33,66 +34,54 @@ object HtmlSettings {
   }
   
   @scala.inline
-  implicit class HtmlSettingsOps[Self <: HtmlSettings] (val x: Self) extends AnyVal {
+  implicit class HtmlSettingsMutableBuilder[Self <: HtmlSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclude_content(value: XPathPatterns): Self = StObject.set(x, "exclude_content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExclude_contentUndefined: Self = StObject.set(x, "exclude_content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExclude_tag_attributes(value: js.Array[String]): Self = StObject.set(x, "exclude_tag_attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude_content(value: XPathPatterns): Self = this.set("exclude_content", value.asInstanceOf[js.Any])
+    def setExclude_tag_attributesUndefined: Self = StObject.set(x, "exclude_tag_attributes", js.undefined)
     
     @scala.inline
-    def deleteExclude_content: Self = this.set("exclude_content", js.undefined)
+    def setExclude_tag_attributesVarargs(value: String*): Self = StObject.set(x, "exclude_tag_attributes", js.Array(value :_*))
     
     @scala.inline
-    def setExclude_tag_attributesVarargs(value: String*): Self = this.set("exclude_tag_attributes", js.Array(value :_*))
+    def setExclude_tags_completely(value: js.Array[String]): Self = StObject.set(x, "exclude_tags_completely", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude_tag_attributes(value: js.Array[String]): Self = this.set("exclude_tag_attributes", value.asInstanceOf[js.Any])
+    def setExclude_tags_completelyUndefined: Self = StObject.set(x, "exclude_tags_completely", js.undefined)
     
     @scala.inline
-    def deleteExclude_tag_attributes: Self = this.set("exclude_tag_attributes", js.undefined)
+    def setExclude_tags_completelyVarargs(value: String*): Self = StObject.set(x, "exclude_tags_completely", js.Array(value :_*))
     
     @scala.inline
-    def setExclude_tags_completelyVarargs(value: String*): Self = this.set("exclude_tags_completely", js.Array(value :_*))
+    def setExclude_tags_keep_content(value: js.Array[String]): Self = StObject.set(x, "exclude_tags_keep_content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude_tags_completely(value: js.Array[String]): Self = this.set("exclude_tags_completely", value.asInstanceOf[js.Any])
+    def setExclude_tags_keep_contentUndefined: Self = StObject.set(x, "exclude_tags_keep_content", js.undefined)
     
     @scala.inline
-    def deleteExclude_tags_completely: Self = this.set("exclude_tags_completely", js.undefined)
+    def setExclude_tags_keep_contentVarargs(value: String*): Self = StObject.set(x, "exclude_tags_keep_content", js.Array(value :_*))
     
     @scala.inline
-    def setExclude_tags_keep_contentVarargs(value: String*): Self = this.set("exclude_tags_keep_content", js.Array(value :_*))
+    def setKeep_content(value: XPathPatterns): Self = StObject.set(x, "keep_content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude_tags_keep_content(value: js.Array[String]): Self = this.set("exclude_tags_keep_content", value.asInstanceOf[js.Any])
+    def setKeep_contentUndefined: Self = StObject.set(x, "keep_content", js.undefined)
     
     @scala.inline
-    def deleteExclude_tags_keep_content: Self = this.set("exclude_tags_keep_content", js.undefined)
+    def setKeep_tag_attributes(value: js.Array[String]): Self = StObject.set(x, "keep_tag_attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeep_content(value: XPathPatterns): Self = this.set("keep_content", value.asInstanceOf[js.Any])
+    def setKeep_tag_attributesUndefined: Self = StObject.set(x, "keep_tag_attributes", js.undefined)
     
     @scala.inline
-    def deleteKeep_content: Self = this.set("keep_content", js.undefined)
-    
-    @scala.inline
-    def setKeep_tag_attributesVarargs(value: String*): Self = this.set("keep_tag_attributes", js.Array(value :_*))
-    
-    @scala.inline
-    def setKeep_tag_attributes(value: js.Array[String]): Self = this.set("keep_tag_attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeep_tag_attributes: Self = this.set("keep_tag_attributes", js.undefined)
+    def setKeep_tag_attributesVarargs(value: String*): Self = StObject.set(x, "keep_tag_attributes", js.Array(value :_*))
   }
 }

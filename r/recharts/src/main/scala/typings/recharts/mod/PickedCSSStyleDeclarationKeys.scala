@@ -1,5 +1,6 @@
 package typings.recharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,7 +47,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.recharts.rechartsStrings.writingMode
   - typings.recharts.rechartsStrings.transform
 */
-trait PickedCSSStyleDeclarationKeys extends js.Object
+trait PickedCSSStyleDeclarationKeys extends StObject
 object PickedCSSStyleDeclarationKeys {
   
   @scala.inline

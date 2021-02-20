@@ -1,11 +1,12 @@
 package typings.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPopupOptions extends js.Object {
+trait IPopupOptions extends StObject {
   
   var closeTimeout: js.UndefOr[Double] = js.native
   
@@ -28,54 +29,42 @@ object IPopupOptions {
   }
   
   @scala.inline
-  implicit class IPopupOptionsOps[Self <: IPopupOptions] (val x: Self) extends AnyVal {
+  implicit class IPopupOptionsMutableBuilder[Self <: IPopupOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseTimeout(value: Double): Self = StObject.set(x, "closeTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseTimeoutUndefined: Self = StObject.set(x, "closeTimeout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInteractivityModel(value: InteractivityModelKey): Self = StObject.set(x, "interactivityModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseTimeout(value: Double): Self = this.set("closeTimeout", value.asInstanceOf[js.Any])
+    def setInteractivityModelUndefined: Self = StObject.set(x, "interactivityModel", js.undefined)
     
     @scala.inline
-    def deleteCloseTimeout: Self = this.set("closeTimeout", js.undefined)
+    def setOpenTimeout(value: Double): Self = StObject.set(x, "openTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractivityModel(value: InteractivityModelKey): Self = this.set("interactivityModel", value.asInstanceOf[js.Any])
+    def setOpenTimeoutUndefined: Self = StObject.set(x, "openTimeout", js.undefined)
     
     @scala.inline
-    def deleteInteractivityModel: Self = this.set("interactivityModel", js.undefined)
+    def setPane(value: IPane | String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenTimeout(value: Double): Self = this.set("openTimeout", value.asInstanceOf[js.Any])
+    def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
     
     @scala.inline
-    def deleteOpenTimeout: Self = this.set("openTimeout", js.undefined)
+    def setProjection(value: IProjection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPane(value: IPane | String): Self = this.set("pane", value.asInstanceOf[js.Any])
+    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
     @scala.inline
-    def deletePane: Self = this.set("pane", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjection(value: IProjection): Self = this.set("projection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjection: Self = this.set("projection", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

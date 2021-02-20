@@ -1,11 +1,12 @@
 package typings.reactImgix.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormatParams extends js.Object {
+trait FormatParams extends StObject {
   
   var ch: js.UndefOr[ImgixParamType] = js.native
   
@@ -34,72 +35,60 @@ object FormatParams {
   }
   
   @scala.inline
-  implicit class FormatParamsOps[Self <: FormatParams] (val x: Self) extends AnyVal {
+  implicit class FormatParamsMutableBuilder[Self <: FormatParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCh(value: ImgixParamType): Self = StObject.set(x, "ch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChUndefined: Self = StObject.set(x, "ch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChromasub(value: ImgixParamType): Self = StObject.set(x, "chromasub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCh(value: ImgixParamType): Self = this.set("ch", value.asInstanceOf[js.Any])
+    def setChromasubUndefined: Self = StObject.set(x, "chromasub", js.undefined)
     
     @scala.inline
-    def deleteCh: Self = this.set("ch", js.undefined)
+    def setColorquant(value: ImgixParamType): Self = StObject.set(x, "colorquant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChromasub(value: ImgixParamType): Self = this.set("chromasub", value.asInstanceOf[js.Any])
+    def setColorquantUndefined: Self = StObject.set(x, "colorquant", js.undefined)
     
     @scala.inline
-    def deleteChromasub: Self = this.set("chromasub", js.undefined)
+    def setCs(value: ImgixParamType): Self = StObject.set(x, "cs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorquant(value: ImgixParamType): Self = this.set("colorquant", value.asInstanceOf[js.Any])
+    def setCsUndefined: Self = StObject.set(x, "cs", js.undefined)
     
     @scala.inline
-    def deleteColorquant: Self = this.set("colorquant", js.undefined)
+    def setDl(value: ImgixParamType): Self = StObject.set(x, "dl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCs(value: ImgixParamType): Self = this.set("cs", value.asInstanceOf[js.Any])
+    def setDlUndefined: Self = StObject.set(x, "dl", js.undefined)
     
     @scala.inline
-    def deleteCs: Self = this.set("cs", js.undefined)
+    def setDpi(value: ImgixParamType): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDl(value: ImgixParamType): Self = this.set("dl", value.asInstanceOf[js.Any])
+    def setDpiUndefined: Self = StObject.set(x, "dpi", js.undefined)
     
     @scala.inline
-    def deleteDl: Self = this.set("dl", js.undefined)
+    def setFm(value: ImgixParamType): Self = StObject.set(x, "fm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDpi(value: ImgixParamType): Self = this.set("dpi", value.asInstanceOf[js.Any])
+    def setFmUndefined: Self = StObject.set(x, "fm", js.undefined)
     
     @scala.inline
-    def deleteDpi: Self = this.set("dpi", js.undefined)
+    def setLossless(value: ImgixParamType): Self = StObject.set(x, "lossless", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFm(value: ImgixParamType): Self = this.set("fm", value.asInstanceOf[js.Any])
+    def setLosslessUndefined: Self = StObject.set(x, "lossless", js.undefined)
     
     @scala.inline
-    def deleteFm: Self = this.set("fm", js.undefined)
+    def setQ(value: ImgixParamType): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLossless(value: ImgixParamType): Self = this.set("lossless", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLossless: Self = this.set("lossless", js.undefined)
-    
-    @scala.inline
-    def setQ(value: ImgixParamType): Self = this.set("q", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQ: Self = this.set("q", js.undefined)
+    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
   }
 }

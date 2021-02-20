@@ -3,13 +3,14 @@ package typings.aureliaTemplating.mod
 import typings.aureliaDependencyInjection.mod.Container
 import typings.std.DocumentFragment
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ViewFactory")
 @js.native
-class ViewFactory protected () extends js.Object {
+class ViewFactory protected () extends StObject {
   /**
     * Creates an instance of ViewFactory.
     * @param template The document fragment that serves as a template for the view to be created.

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,78 +38,66 @@ object SectionGroup {
   }
   
   @scala.inline
-  implicit class SectionGroupOps[Self <: SectionGroup] (val x: Self) extends AnyVal {
+  implicit class SectionGroupMutableBuilder[Self <: SectionGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParentNotebook(value: NullableOption[Notebook]): Self = StObject.set(x, "parentNotebook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParentNotebookNull: Self = StObject.set(x, "parentNotebook", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParentNotebookUndefined: Self = StObject.set(x, "parentNotebook", js.undefined)
     
     @scala.inline
-    def setParentNotebook(value: NullableOption[Notebook]): Self = this.set("parentNotebook", value.asInstanceOf[js.Any])
+    def setParentSectionGroup(value: NullableOption[SectionGroup]): Self = StObject.set(x, "parentSectionGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentNotebook: Self = this.set("parentNotebook", js.undefined)
+    def setParentSectionGroupNull: Self = StObject.set(x, "parentSectionGroup", null)
     
     @scala.inline
-    def setParentNotebookNull: Self = this.set("parentNotebook", null)
+    def setParentSectionGroupUndefined: Self = StObject.set(x, "parentSectionGroup", js.undefined)
     
     @scala.inline
-    def setParentSectionGroup(value: NullableOption[SectionGroup]): Self = this.set("parentSectionGroup", value.asInstanceOf[js.Any])
+    def setSectionGroups(value: NullableOption[js.Array[SectionGroup]]): Self = StObject.set(x, "sectionGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentSectionGroup: Self = this.set("parentSectionGroup", js.undefined)
+    def setSectionGroupsNull: Self = StObject.set(x, "sectionGroups", null)
     
     @scala.inline
-    def setParentSectionGroupNull: Self = this.set("parentSectionGroup", null)
+    def setSectionGroupsUndefined: Self = StObject.set(x, "sectionGroups", js.undefined)
     
     @scala.inline
-    def setSectionGroupsVarargs(value: SectionGroup*): Self = this.set("sectionGroups", js.Array(value :_*))
+    def setSectionGroupsUrl(value: NullableOption[String]): Self = StObject.set(x, "sectionGroupsUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSectionGroups(value: NullableOption[js.Array[SectionGroup]]): Self = this.set("sectionGroups", value.asInstanceOf[js.Any])
+    def setSectionGroupsUrlNull: Self = StObject.set(x, "sectionGroupsUrl", null)
     
     @scala.inline
-    def deleteSectionGroups: Self = this.set("sectionGroups", js.undefined)
+    def setSectionGroupsUrlUndefined: Self = StObject.set(x, "sectionGroupsUrl", js.undefined)
     
     @scala.inline
-    def setSectionGroupsNull: Self = this.set("sectionGroups", null)
+    def setSectionGroupsVarargs(value: SectionGroup*): Self = StObject.set(x, "sectionGroups", js.Array(value :_*))
     
     @scala.inline
-    def setSectionGroupsUrl(value: NullableOption[String]): Self = this.set("sectionGroupsUrl", value.asInstanceOf[js.Any])
+    def setSections(value: NullableOption[js.Array[OnenoteSection]]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSectionGroupsUrl: Self = this.set("sectionGroupsUrl", js.undefined)
+    def setSectionsNull: Self = StObject.set(x, "sections", null)
     
     @scala.inline
-    def setSectionGroupsUrlNull: Self = this.set("sectionGroupsUrl", null)
+    def setSectionsUndefined: Self = StObject.set(x, "sections", js.undefined)
     
     @scala.inline
-    def setSectionsVarargs(value: OnenoteSection*): Self = this.set("sections", js.Array(value :_*))
+    def setSectionsUrl(value: NullableOption[String]): Self = StObject.set(x, "sectionsUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSections(value: NullableOption[js.Array[OnenoteSection]]): Self = this.set("sections", value.asInstanceOf[js.Any])
+    def setSectionsUrlNull: Self = StObject.set(x, "sectionsUrl", null)
     
     @scala.inline
-    def deleteSections: Self = this.set("sections", js.undefined)
+    def setSectionsUrlUndefined: Self = StObject.set(x, "sectionsUrl", js.undefined)
     
     @scala.inline
-    def setSectionsNull: Self = this.set("sections", null)
-    
-    @scala.inline
-    def setSectionsUrl(value: NullableOption[String]): Self = this.set("sectionsUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSectionsUrl: Self = this.set("sectionsUrl", js.undefined)
-    
-    @scala.inline
-    def setSectionsUrlNull: Self = this.set("sectionsUrl", null)
+    def setSectionsVarargs(value: OnenoteSection*): Self = StObject.set(x, "sections", js.Array(value :_*))
   }
 }

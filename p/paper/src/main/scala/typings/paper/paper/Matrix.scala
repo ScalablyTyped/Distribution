@@ -1,6 +1,7 @@
 package typings.paper.paper
 
 import typings.std.CanvasRenderingContext2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * matrix multiplication).
   */
 @js.native
-trait Matrix extends js.Object {
+trait Matrix extends StObject {
   
   /** 
     * The value that affects the transformation along the x axis when scaling

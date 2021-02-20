@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnPath extends js.Object {
+trait ColumnPath extends StObject {
   
   var columnPath: js.UndefOr[js.Array[String | Double | typings.std.Date]] = js.native
   
@@ -26,57 +27,45 @@ object ColumnPath {
   }
   
   @scala.inline
-  implicit class ColumnPathOps[Self <: ColumnPath] (val x: Self) extends AnyVal {
+  implicit class ColumnPathMutableBuilder[Self <: ColumnPath] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnPath(value: js.Array[String | Double | typings.std.Date]): Self = StObject.set(x, "columnPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnPathUndefined: Self = StObject.set(x, "columnPath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnPathVarargs(value: (String | Double | typings.std.Date)*): Self = StObject.set(x, "columnPath", js.Array(value :_*))
     
     @scala.inline
-    def setColumnPathVarargs(value: (String | Double | typings.std.Date)*): Self = this.set("columnPath", js.Array(value :_*))
+    def setCustomColumns(value: js.Array[String]): Self = StObject.set(x, "customColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnPath(value: js.Array[String | Double | typings.std.Date]): Self = this.set("columnPath", value.asInstanceOf[js.Any])
+    def setCustomColumnsUndefined: Self = StObject.set(x, "customColumns", js.undefined)
     
     @scala.inline
-    def deleteColumnPath: Self = this.set("columnPath", js.undefined)
+    def setCustomColumnsVarargs(value: String*): Self = StObject.set(x, "customColumns", js.Array(value :_*))
     
     @scala.inline
-    def setCustomColumnsVarargs(value: String*): Self = this.set("customColumns", js.Array(value :_*))
+    def setDataIndex(value: Double): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomColumns(value: js.Array[String]): Self = this.set("customColumns", value.asInstanceOf[js.Any])
+    def setDataIndexUndefined: Self = StObject.set(x, "dataIndex", js.undefined)
     
     @scala.inline
-    def deleteCustomColumns: Self = this.set("customColumns", js.undefined)
+    def setMaxRowCount(value: Double): Self = StObject.set(x, "maxRowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataIndex(value: Double): Self = this.set("dataIndex", value.asInstanceOf[js.Any])
+    def setMaxRowCountUndefined: Self = StObject.set(x, "maxRowCount", js.undefined)
     
     @scala.inline
-    def deleteDataIndex: Self = this.set("dataIndex", js.undefined)
+    def setRowPath(value: js.Array[String | Double | typings.std.Date]): Self = StObject.set(x, "rowPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRowCount(value: Double): Self = this.set("maxRowCount", value.asInstanceOf[js.Any])
+    def setRowPathUndefined: Self = StObject.set(x, "rowPath", js.undefined)
     
     @scala.inline
-    def deleteMaxRowCount: Self = this.set("maxRowCount", js.undefined)
-    
-    @scala.inline
-    def setRowPathVarargs(value: (String | Double | typings.std.Date)*): Self = this.set("rowPath", js.Array(value :_*))
-    
-    @scala.inline
-    def setRowPath(value: js.Array[String | Double | typings.std.Date]): Self = this.set("rowPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowPath: Self = this.set("rowPath", js.undefined)
+    def setRowPathVarargs(value: (String | Double | typings.std.Date)*): Self = StObject.set(x, "rowPath", js.Array(value :_*))
   }
 }

@@ -7,6 +7,7 @@ import typings.textBuffer.anon.`0`
 import typings.textBuffer.mod.global.TextBuffer.Events.DisplayMarkerChanged
 import typings.textBuffer.mod.global.TextBuffer.Options.CopyMarker
 import typings.textBuffer.mod.global.TextBuffer.Options.FindDisplayMarker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *  in the buffer over time.
   */
 @js.native
-trait DisplayMarker extends js.Object {
+trait DisplayMarker extends StObject {
   
   /**
     *  Removes the marker's tail. After calling the marker's head position will be

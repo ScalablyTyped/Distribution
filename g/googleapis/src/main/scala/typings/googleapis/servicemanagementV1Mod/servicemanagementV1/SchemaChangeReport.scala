@@ -1,5 +1,6 @@
 package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * service configurations.
   */
 @js.native
-trait SchemaChangeReport extends js.Object {
+trait SchemaChangeReport extends StObject {
   
   /**
     * List of changes between two service configurations. The changes will be
@@ -30,27 +31,15 @@ object SchemaChangeReport {
   }
   
   @scala.inline
-  implicit class SchemaChangeReportOps[Self <: SchemaChangeReport] (val x: Self) extends AnyVal {
+  implicit class SchemaChangeReportMutableBuilder[Self <: SchemaChangeReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigChanges(value: js.Array[SchemaConfigChange]): Self = StObject.set(x, "configChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigChangesUndefined: Self = StObject.set(x, "configChanges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfigChangesVarargs(value: SchemaConfigChange*): Self = this.set("configChanges", js.Array(value :_*))
-    
-    @scala.inline
-    def setConfigChanges(value: js.Array[SchemaConfigChange]): Self = this.set("configChanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigChanges: Self = this.set("configChanges", js.undefined)
+    def setConfigChangesVarargs(value: SchemaConfigChange*): Self = StObject.set(x, "configChanges", js.Array(value :_*))
   }
 }

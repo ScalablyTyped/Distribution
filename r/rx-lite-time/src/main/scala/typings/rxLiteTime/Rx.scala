@@ -2,16 +2,15 @@ package typings.rxLiteTime
 
 import typings.rxCore.Rx.IScheduler
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Rx")
-@js.native
-object Rx extends js.Object {
+object Rx {
   
   @js.native
-  trait Observable[T] extends js.Object {
+  trait Observable[T] extends StObject {
     
     def bufferWithTime(timeSpan: Double): Observable[js.Array[T]] = js.native
     def bufferWithTime(timeSpan: Double, scheduler: IScheduler): Observable[js.Array[T]] = js.native
@@ -87,7 +86,7 @@ object Rx extends js.Object {
   }
   
   @js.native
-  trait ObservableStatic extends js.Object {
+  trait ObservableStatic extends StObject {
     
     def generateWithAbsoluteTime[TState, TResult](
       initialState: TState,

@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeIterator extends js.Object {
+trait NodeIterator extends StObject {
   
   def Detach(): Unit = js.native
   
@@ -43,42 +44,30 @@ object NodeIterator {
   }
   
   @scala.inline
-  implicit class NodeIteratorOps[Self <: NodeIterator] (val x: Self) extends AnyVal {
+  implicit class NodeIteratorMutableBuilder[Self <: NodeIterator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetach(value: () => Unit): Self = StObject.set(x, "Detach", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpandEntityReferences(value: Boolean): Self = StObject.set(x, "expandEntityReferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetach(value: () => Unit): Self = this.set("Detach", js.Any.fromFunction0(value))
+    def setMSHTMLDotNodeIterator_typekey(value: NodeIterator): Self = StObject.set(x, "MSHTML.NodeIterator_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotNodeIterator_typekey(value: NodeIterator): Self = this.set("MSHTML.NodeIterator_typekey", value.asInstanceOf[js.Any])
+    def setNextNode(value: () => js.Any): Self = StObject.set(x, "nextNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExpandEntityReferences(value: Boolean): Self = this.set("expandEntityReferences", value.asInstanceOf[js.Any])
+    def setPreviousNode(value: () => js.Any): Self = StObject.set(x, "previousNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFilter(value: js.Any): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextNode(value: () => js.Any): Self = this.set("nextNode", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPreviousNode(value: () => js.Any): Self = this.set("previousNode", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRoot(value: js.Any): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWhatToShow(value: Double): Self = this.set("whatToShow", value.asInstanceOf[js.Any])
+    def setWhatToShow(value: Double): Self = StObject.set(x, "whatToShow", value.asInstanceOf[js.Any])
   }
 }

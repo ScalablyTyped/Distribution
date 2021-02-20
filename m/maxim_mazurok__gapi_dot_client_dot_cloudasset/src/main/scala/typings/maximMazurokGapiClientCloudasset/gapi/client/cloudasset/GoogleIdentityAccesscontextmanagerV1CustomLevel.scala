@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleIdentityAccesscontextmanagerV1CustomLevel extends js.Object {
+trait GoogleIdentityAccesscontextmanagerV1CustomLevel extends StObject {
   
   /** Required. A Cloud CEL expression evaluating to a boolean. */
   var expr: js.UndefOr[Expr] = js.native
@@ -19,24 +20,12 @@ object GoogleIdentityAccesscontextmanagerV1CustomLevel {
   }
   
   @scala.inline
-  implicit class GoogleIdentityAccesscontextmanagerV1CustomLevelOps[Self <: GoogleIdentityAccesscontextmanagerV1CustomLevel] (val x: Self) extends AnyVal {
+  implicit class GoogleIdentityAccesscontextmanagerV1CustomLevelMutableBuilder[Self <: GoogleIdentityAccesscontextmanagerV1CustomLevel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpr(value: Expr): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExpr(value: Expr): Self = this.set("expr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpr: Self = this.set("expr", js.undefined)
+    def setExprUndefined: Self = StObject.set(x, "expr", js.undefined)
   }
 }

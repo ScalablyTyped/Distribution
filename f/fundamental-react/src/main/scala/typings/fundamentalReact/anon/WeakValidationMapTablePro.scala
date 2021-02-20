@@ -3,13 +3,14 @@ package typings.fundamentalReact.anon
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ReactNode
 import typings.react.mod.Validator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<fundamental-react.fundamental-react/lib/Table/Table.TableProps> */
 @js.native
-trait WeakValidationMapTablePro extends js.Object {
+trait WeakValidationMapTablePro extends StObject {
   
   var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
   
@@ -52,49 +53,37 @@ object WeakValidationMapTablePro {
   }
   
   @scala.inline
-  implicit class WeakValidationMapTableProOps[Self <: WeakValidationMapTablePro] (val x: Self) extends AnyVal {
+  implicit class WeakValidationMapTableProMutableBuilder[Self <: WeakValidationMapTablePro] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableStyles(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setHeaders(value: Validator[js.UndefOr[(js.Array[ReactNode | String]) | Null]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableStyles(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("disableStyles", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteDisableStyles: Self = this.set("disableStyles", js.undefined)
+    def setTableBodyClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "tableBodyClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: Validator[js.UndefOr[(js.Array[ReactNode | String]) | Null]]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setTableBodyClassNameUndefined: Self = StObject.set(x, "tableBodyClassName", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setTableBodyProps(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "tableBodyProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableBodyClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("tableBodyClassName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableBodyClassName: Self = this.set("tableBodyClassName", js.undefined)
-    
-    @scala.inline
-    def setTableBodyProps(value: Validator[js.UndefOr[_ | Null]]): Self = this.set("tableBodyProps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableBodyProps: Self = this.set("tableBodyProps", js.undefined)
+    def setTableBodyPropsUndefined: Self = StObject.set(x, "tableBodyProps", js.undefined)
     
     @scala.inline
     def setTableBodyRowProps(
@@ -103,51 +92,51 @@ object WeakValidationMapTablePro {
             (js.Function2[/* rowData */ js.Array[String], /* index */ Double, Unit]) | Null | StringDictionary[_]
           ]
         ]
-    ): Self = this.set("tableBodyRowProps", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "tableBodyRowProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTableBodyRowProps: Self = this.set("tableBodyRowProps", js.undefined)
+    def setTableBodyRowPropsUndefined: Self = StObject.set(x, "tableBodyRowProps", js.undefined)
     
     @scala.inline
-    def setTableCellClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("tableCellClassName", value.asInstanceOf[js.Any])
+    def setTableCellClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "tableCellClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTableCellClassName: Self = this.set("tableCellClassName", js.undefined)
+    def setTableCellClassNameUndefined: Self = StObject.set(x, "tableCellClassName", js.undefined)
     
     @scala.inline
-    def setTableData(value: Validator[js.UndefOr[js.Array[RowData] | Null]]): Self = this.set("tableData", value.asInstanceOf[js.Any])
+    def setTableData(value: Validator[js.UndefOr[js.Array[RowData] | Null]]): Self = StObject.set(x, "tableData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTableData: Self = this.set("tableData", js.undefined)
+    def setTableDataUndefined: Self = StObject.set(x, "tableData", js.undefined)
     
     @scala.inline
-    def setTableHeaderClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("tableHeaderClassName", value.asInstanceOf[js.Any])
+    def setTableHeaderClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "tableHeaderClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTableHeaderClassName: Self = this.set("tableHeaderClassName", js.undefined)
+    def setTableHeaderClassNameUndefined: Self = StObject.set(x, "tableHeaderClassName", js.undefined)
     
     @scala.inline
-    def setTableHeaderProps(value: Validator[js.UndefOr[_ | Null]]): Self = this.set("tableHeaderProps", value.asInstanceOf[js.Any])
+    def setTableHeaderProps(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "tableHeaderProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTableHeaderProps: Self = this.set("tableHeaderProps", js.undefined)
+    def setTableHeaderPropsUndefined: Self = StObject.set(x, "tableHeaderProps", js.undefined)
     
     @scala.inline
-    def setTableHeaderRowClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("tableHeaderRowClassName", value.asInstanceOf[js.Any])
+    def setTableHeaderRowClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "tableHeaderRowClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTableHeaderRowClassName: Self = this.set("tableHeaderRowClassName", js.undefined)
+    def setTableHeaderRowClassNameUndefined: Self = StObject.set(x, "tableHeaderRowClassName", js.undefined)
     
     @scala.inline
-    def setTableHeaderRowProps(value: Validator[js.UndefOr[_ | Null]]): Self = this.set("tableHeaderRowProps", value.asInstanceOf[js.Any])
+    def setTableHeaderRowProps(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "tableHeaderRowProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTableHeaderRowProps: Self = this.set("tableHeaderRowProps", js.undefined)
+    def setTableHeaderRowPropsUndefined: Self = StObject.set(x, "tableHeaderRowProps", js.undefined)
     
     @scala.inline
-    def setTableRowClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("tableRowClassName", value.asInstanceOf[js.Any])
+    def setTableRowClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "tableRowClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTableRowClassName: Self = this.set("tableRowClassName", js.undefined)
+    def setTableRowClassNameUndefined: Self = StObject.set(x, "tableRowClassName", js.undefined)
   }
 }

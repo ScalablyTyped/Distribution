@@ -1,11 +1,12 @@
 package typings.googleapis.v21Mod.contentV21
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaOrderreportsListDisbursementsResponse extends js.Object {
+trait SchemaOrderreportsListDisbursementsResponse extends StObject {
   
   /**
     * The list of disbursements.
@@ -32,39 +33,27 @@ object SchemaOrderreportsListDisbursementsResponse {
   }
   
   @scala.inline
-  implicit class SchemaOrderreportsListDisbursementsResponseOps[Self <: SchemaOrderreportsListDisbursementsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaOrderreportsListDisbursementsResponseMutableBuilder[Self <: SchemaOrderreportsListDisbursementsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisbursements(value: js.Array[SchemaOrderReportDisbursement]): Self = StObject.set(x, "disbursements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisbursementsUndefined: Self = StObject.set(x, "disbursements", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisbursementsVarargs(value: SchemaOrderReportDisbursement*): Self = StObject.set(x, "disbursements", js.Array(value :_*))
     
     @scala.inline
-    def setDisbursementsVarargs(value: SchemaOrderReportDisbursement*): Self = this.set("disbursements", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisbursements(value: js.Array[SchemaOrderReportDisbursement]): Self = this.set("disbursements", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteDisbursements: Self = this.set("disbursements", js.undefined)
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

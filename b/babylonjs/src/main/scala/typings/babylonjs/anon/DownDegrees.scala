@@ -1,11 +1,12 @@
 package typings.babylonjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DownDegrees extends js.Object {
+trait DownDegrees extends StObject {
   
   var downDegrees: Double = js.native
   
@@ -24,30 +25,18 @@ object DownDegrees {
   }
   
   @scala.inline
-  implicit class DownDegreesOps[Self <: DownDegrees] (val x: Self) extends AnyVal {
+  implicit class DownDegreesMutableBuilder[Self <: DownDegrees] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDownDegrees(value: Double): Self = StObject.set(x, "downDegrees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLeftDegrees(value: Double): Self = StObject.set(x, "leftDegrees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRightDegrees(value: Double): Self = StObject.set(x, "rightDegrees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownDegrees(value: Double): Self = this.set("downDegrees", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLeftDegrees(value: Double): Self = this.set("leftDegrees", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightDegrees(value: Double): Self = this.set("rightDegrees", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpDegrees(value: Double): Self = this.set("upDegrees", value.asInstanceOf[js.Any])
+    def setUpDegrees(value: Double): Self = StObject.set(x, "upDegrees", value.asInstanceOf[js.Any])
   }
 }

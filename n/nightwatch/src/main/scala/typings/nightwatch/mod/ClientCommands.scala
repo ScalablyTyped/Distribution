@@ -4,12 +4,13 @@ import typings.nightwatch.nightwatchStrings.browser
 import typings.nightwatch.nightwatchStrings.client
 import typings.nightwatch.nightwatchStrings.driver
 import typings.nightwatch.nightwatchStrings.server
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientCommands extends js.Object {
+trait ClientCommands extends StObject {
   
   /**
     * Close the current window. This can be useful when you're working with multiple windows open (e.g. an OAuth login).

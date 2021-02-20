@@ -1,11 +1,12 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PriceHistory extends js.Object {
+trait PriceHistory extends StObject {
   
   var avgPrice: Double = js.native
   
@@ -35,36 +36,24 @@ object PriceHistory {
   }
   
   @scala.inline
-  implicit class PriceHistoryOps[Self <: PriceHistory] (val x: Self) extends AnyVal {
+  implicit class PriceHistoryMutableBuilder[Self <: PriceHistory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvgPrice(value: Double): Self = StObject.set(x, "avgPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceType(value: MarketResourceConstant): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvgPrice(value: Double): Self = this.set("avgPrice", value.asInstanceOf[js.Any])
+    def setStddevPrice(value: Double): Self = StObject.set(x, "stddevPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setTransactions(value: Double): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: MarketResourceConstant): Self = this.set("resourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStddevPrice(value: Double): Self = this.set("stddevPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransactions(value: Double): Self = this.set("transactions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolume(value: Double): Self = this.set("volume", value.asInstanceOf[js.Any])
+    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

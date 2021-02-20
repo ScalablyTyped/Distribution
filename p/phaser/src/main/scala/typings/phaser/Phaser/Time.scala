@@ -2,19 +2,18 @@ package typings.phaser.Phaser
 
 import typings.phaser.Phaser.Scenes.Systems
 import typings.phaser.Phaser.Types.Time.TimerEventConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Time")
-@js.native
-object Time extends js.Object {
+object Time {
   
   /**
     * The Clock is a Scene plugin which creates and updates Timer Events for its Scene.
     */
   @js.native
-  trait Clock extends js.Object {
+  trait Clock extends StObject {
     
     /**
       * Creates a Timer Event and adds it to the Clock at the start of the frame.
@@ -98,7 +97,7 @@ object Time extends js.Object {
     * Because it's managed by a Clock, a Timer Event is based on game time, will be affected by its Clock's time scale, and will pause if its Clock pauses.
     */
   @js.native
-  trait TimerEvent extends js.Object {
+  trait TimerEvent extends StObject {
     
     /**
       * Additional arguments to be passed to the callback.

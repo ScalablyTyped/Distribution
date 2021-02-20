@@ -4,14 +4,15 @@ import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.ModuleResolutionHost
 import typings.typescript.mod.ResolvedModuleWithFailedLookupLocations
 import typings.typescript.mod.ResolvedTypeReferenceDirectiveWithFailedLookupLocations
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts-pnp", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("ts-pnp", "resolveModuleName")
+  @js.native
   def resolveModuleName(
     moduleName: String,
     containingFile: String,
@@ -25,7 +26,8 @@ object mod extends js.Object {
       ResolvedModuleWithFailedLookupLocations
     ]
   ): ResolvedModuleWithFailedLookupLocations = js.native
-  @JSName("resolveModuleName")
+  @JSImport("ts-pnp", "resolveModuleName")
+  @js.native
   def resolveModuleName_ResolvedTypeReferenceDirectiveWithFailedLookupLocations(
     moduleName: String,
     containingFile: String,

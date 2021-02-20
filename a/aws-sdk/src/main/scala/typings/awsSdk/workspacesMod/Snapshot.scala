@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Snapshot extends js.Object {
+trait Snapshot extends StObject {
   
   /**
     * The time when the snapshot was created.
@@ -21,24 +22,12 @@ object Snapshot {
   }
   
   @scala.inline
-  implicit class SnapshotOps[Self <: Snapshot] (val x: Self) extends AnyVal {
+  implicit class SnapshotMutableBuilder[Self <: Snapshot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSnapshotTime(value: Timestamp): Self = StObject.set(x, "SnapshotTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSnapshotTime(value: Timestamp): Self = this.set("SnapshotTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotTime: Self = this.set("SnapshotTime", js.undefined)
+    def setSnapshotTimeUndefined: Self = StObject.set(x, "SnapshotTime", js.undefined)
   }
 }

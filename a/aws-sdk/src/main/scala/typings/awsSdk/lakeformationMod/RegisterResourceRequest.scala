@@ -1,11 +1,12 @@
 package typings.awsSdk.lakeformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterResourceRequest extends js.Object {
+trait RegisterResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource that you want to register.
@@ -31,33 +32,21 @@ object RegisterResourceRequest {
   }
   
   @scala.inline
-  implicit class RegisterResourceRequestOps[Self <: RegisterResourceRequest] (val x: Self) extends AnyVal {
+  implicit class RegisterResourceRequestMutableBuilder[Self <: RegisterResourceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoleArn(value: IAMRoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
     @scala.inline
-    def setResourceArn(value: ResourceArnString): Self = this.set("ResourceArn", value.asInstanceOf[js.Any])
+    def setUseServiceLinkedRole(value: NullableBoolean): Self = StObject.set(x, "UseServiceLinkedRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: IAMRoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
-    
-    @scala.inline
-    def setUseServiceLinkedRole(value: NullableBoolean): Self = this.set("UseServiceLinkedRole", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseServiceLinkedRole: Self = this.set("UseServiceLinkedRole", js.undefined)
+    def setUseServiceLinkedRoleUndefined: Self = StObject.set(x, "UseServiceLinkedRole", js.undefined)
   }
 }

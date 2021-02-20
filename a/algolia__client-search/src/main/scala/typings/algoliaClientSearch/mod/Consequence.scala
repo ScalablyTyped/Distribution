@@ -2,12 +2,13 @@ package typings.algoliaClientSearch.mod
 
 import typings.algoliaClientSearch.anon.ConsequenceParamsPickSear
 import typings.algoliaClientSearch.anon.ObjectID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Consequence extends js.Object {
+trait Consequence extends StObject {
   
   /**
     * Whether the Query Rule should promote or not promoted items.
@@ -44,54 +45,42 @@ object Consequence {
   }
   
   @scala.inline
-  implicit class ConsequenceOps[Self <: Consequence] (val x: Self) extends AnyVal {
+  implicit class ConsequenceMutableBuilder[Self <: Consequence] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterPromotes(value: Boolean): Self = StObject.set(x, "filterPromotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterPromotesUndefined: Self = StObject.set(x, "filterPromotes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHide(value: js.Array[ObjectID]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterPromotes(value: Boolean): Self = this.set("filterPromotes", value.asInstanceOf[js.Any])
+    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
     @scala.inline
-    def deleteFilterPromotes: Self = this.set("filterPromotes", js.undefined)
+    def setHideVarargs(value: ObjectID*): Self = StObject.set(x, "hide", js.Array(value :_*))
     
     @scala.inline
-    def setHideVarargs(value: ObjectID*): Self = this.set("hide", js.Array(value :_*))
+    def setParams(value: ConsequenceParamsPickSear): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHide(value: js.Array[ObjectID]): Self = this.set("hide", value.asInstanceOf[js.Any])
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def deleteHide: Self = this.set("hide", js.undefined)
+    def setPromote(value: js.Array[ConsequencePromote]): Self = StObject.set(x, "promote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: ConsequenceParamsPickSear): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setPromoteUndefined: Self = StObject.set(x, "promote", js.undefined)
     
     @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setPromoteVarargs(value: ConsequencePromote*): Self = StObject.set(x, "promote", js.Array(value :_*))
     
     @scala.inline
-    def setPromoteVarargs(value: ConsequencePromote*): Self = this.set("promote", js.Array(value :_*))
+    def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromote(value: js.Array[ConsequencePromote]): Self = this.set("promote", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePromote: Self = this.set("promote", js.undefined)
-    
-    @scala.inline
-    def setUserData(value: js.Any): Self = this.set("userData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserData: Self = this.set("userData", js.undefined)
+    def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.typescriptServices.mod
 
 import typings.typescriptServices.TypeScript.ISyntaxToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,15 +17,18 @@ class MethodSignatureSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-/* static members */
-@JSImport("typescript-services", "MethodSignatureSyntax")
-@js.native
-object MethodSignatureSyntax extends js.Object {
+object MethodSignatureSyntax {
   
+  /* static member */
+  @JSImport("typescript-services", "MethodSignatureSyntax.create")
+  @js.native
   def create(
     propertyName: ISyntaxToken,
     callSignature: typings.typescriptServices.TypeScript.CallSignatureSyntax
   ): typings.typescriptServices.TypeScript.MethodSignatureSyntax = js.native
   
+  /* static member */
+  @JSImport("typescript-services", "MethodSignatureSyntax.create1")
+  @js.native
   def create1(propertyName: ISyntaxToken): typings.typescriptServices.TypeScript.MethodSignatureSyntax = js.native
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApiLevelCondition extends js.Object {
+trait ApiLevelCondition extends StObject {
   
   /** The minimum desired Android Framework API level. If the device doesn't meet the minimum requirement, this condition is satisfied. Must be greater than zero. */
   var minApiLevel: js.UndefOr[Double] = js.native
@@ -19,24 +20,12 @@ object ApiLevelCondition {
   }
   
   @scala.inline
-  implicit class ApiLevelConditionOps[Self <: ApiLevelCondition] (val x: Self) extends AnyVal {
+  implicit class ApiLevelConditionMutableBuilder[Self <: ApiLevelCondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinApiLevel(value: Double): Self = StObject.set(x, "minApiLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMinApiLevel(value: Double): Self = this.set("minApiLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinApiLevel: Self = this.set("minApiLevel", js.undefined)
+    def setMinApiLevelUndefined: Self = StObject.set(x, "minApiLevel", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProductViewSummary extends js.Object {
+trait ProductViewSummary extends StObject {
   
   /**
     * The distributor of the product. Contact the product administrator for the significance of this value.
@@ -71,84 +72,72 @@ object ProductViewSummary {
   }
   
   @scala.inline
-  implicit class ProductViewSummaryOps[Self <: ProductViewSummary] (val x: Self) extends AnyVal {
+  implicit class ProductViewSummaryMutableBuilder[Self <: ProductViewSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistributor(value: ProductViewDistributor): Self = StObject.set(x, "Distributor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistributorUndefined: Self = StObject.set(x, "Distributor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasDefaultPath(value: HasDefaultPath): Self = StObject.set(x, "HasDefaultPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributor(value: ProductViewDistributor): Self = this.set("Distributor", value.asInstanceOf[js.Any])
+    def setHasDefaultPathUndefined: Self = StObject.set(x, "HasDefaultPath", js.undefined)
     
     @scala.inline
-    def deleteDistributor: Self = this.set("Distributor", js.undefined)
+    def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasDefaultPath(value: HasDefaultPath): Self = this.set("HasDefaultPath", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteHasDefaultPath: Self = this.set("HasDefaultPath", js.undefined)
+    def setName(value: ProductViewName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Id): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setOwner(value: ProductViewOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ProductViewName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setProductId(value: Id): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: ProductViewOwner): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    def setProductIdUndefined: Self = StObject.set(x, "ProductId", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("Owner", js.undefined)
+    def setShortDescription(value: ProductViewShortDescription): Self = StObject.set(x, "ShortDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: Id): Self = this.set("ProductId", value.asInstanceOf[js.Any])
+    def setShortDescriptionUndefined: Self = StObject.set(x, "ShortDescription", js.undefined)
     
     @scala.inline
-    def deleteProductId: Self = this.set("ProductId", js.undefined)
+    def setSupportDescription(value: SupportDescription): Self = StObject.set(x, "SupportDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortDescription(value: ProductViewShortDescription): Self = this.set("ShortDescription", value.asInstanceOf[js.Any])
+    def setSupportDescriptionUndefined: Self = StObject.set(x, "SupportDescription", js.undefined)
     
     @scala.inline
-    def deleteShortDescription: Self = this.set("ShortDescription", js.undefined)
+    def setSupportEmail(value: SupportEmail): Self = StObject.set(x, "SupportEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportDescription(value: SupportDescription): Self = this.set("SupportDescription", value.asInstanceOf[js.Any])
+    def setSupportEmailUndefined: Self = StObject.set(x, "SupportEmail", js.undefined)
     
     @scala.inline
-    def deleteSupportDescription: Self = this.set("SupportDescription", js.undefined)
+    def setSupportUrl(value: SupportUrl): Self = StObject.set(x, "SupportUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportEmail(value: SupportEmail): Self = this.set("SupportEmail", value.asInstanceOf[js.Any])
+    def setSupportUrlUndefined: Self = StObject.set(x, "SupportUrl", js.undefined)
     
     @scala.inline
-    def deleteSupportEmail: Self = this.set("SupportEmail", js.undefined)
+    def setType(value: ProductType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportUrl(value: SupportUrl): Self = this.set("SupportUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportUrl: Self = this.set("SupportUrl", js.undefined)
-    
-    @scala.inline
-    def setType(value: ProductType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

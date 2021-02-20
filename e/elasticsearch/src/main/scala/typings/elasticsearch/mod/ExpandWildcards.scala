@@ -1,5 +1,6 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.elasticsearch.elasticsearchStrings.none
   - typings.elasticsearch.elasticsearchStrings.all
 */
-trait ExpandWildcards extends js.Object
+trait ExpandWildcards extends StObject
 object ExpandWildcards {
   
   @scala.inline

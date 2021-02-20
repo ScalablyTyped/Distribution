@@ -1,12 +1,13 @@
 package typings.materializeCss.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<materialize-css.M.Dropdown, 'recalculateDimensions' | 'open' | 'close' | 'destroy'> */
 @js.native
-trait PickDropdownrecalculateDi extends js.Object {
+trait PickDropdownrecalculateDi extends StObject {
   
   var close: js.UndefOr[js.Any] = js.native
   
@@ -25,42 +26,30 @@ object PickDropdownrecalculateDi {
   }
   
   @scala.inline
-  implicit class PickDropdownrecalculateDiOps[Self <: PickDropdownrecalculateDi] (val x: Self) extends AnyVal {
+  implicit class PickDropdownrecalculateDiMutableBuilder[Self <: PickDropdownrecalculateDi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: js.Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestroy(value: js.Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: js.Any): Self = this.set("close", value.asInstanceOf[js.Any])
+    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     @scala.inline
-    def deleteClose: Self = this.set("close", js.undefined)
+    def setOpen(value: js.Any): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: js.Any): Self = this.set("destroy", value.asInstanceOf[js.Any])
+    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    def setRecalculateDimensions(value: js.Any): Self = StObject.set(x, "recalculateDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: js.Any): Self = this.set("open", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpen: Self = this.set("open", js.undefined)
-    
-    @scala.inline
-    def setRecalculateDimensions(value: js.Any): Self = this.set("recalculateDimensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecalculateDimensions: Self = this.set("recalculateDimensions", js.undefined)
+    def setRecalculateDimensionsUndefined: Self = StObject.set(x, "recalculateDimensions", js.undefined)
   }
 }

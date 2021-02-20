@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSavingsPlansCoverageResponse extends js.Object {
+trait GetSavingsPlansCoverageResponse extends StObject {
   
   /**
     * The token to retrieve the next set of results. Amazon Web Services provides the token when the response from a previous call has more results than the maximum page size.
@@ -26,30 +27,18 @@ object GetSavingsPlansCoverageResponse {
   }
   
   @scala.inline
-  implicit class GetSavingsPlansCoverageResponseOps[Self <: GetSavingsPlansCoverageResponse] (val x: Self) extends AnyVal {
+  implicit class GetSavingsPlansCoverageResponseMutableBuilder[Self <: GetSavingsPlansCoverageResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextPageToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSavingsPlansCoverages(value: SavingsPlansCoverages): Self = StObject.set(x, "SavingsPlansCoverages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSavingsPlansCoveragesVarargs(value: SavingsPlansCoverage*): Self = this.set("SavingsPlansCoverages", js.Array(value :_*))
-    
-    @scala.inline
-    def setSavingsPlansCoverages(value: SavingsPlansCoverages): Self = this.set("SavingsPlansCoverages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextToken(value: NextPageToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setSavingsPlansCoveragesVarargs(value: SavingsPlansCoverage*): Self = StObject.set(x, "SavingsPlansCoverages", js.Array(value :_*))
   }
 }

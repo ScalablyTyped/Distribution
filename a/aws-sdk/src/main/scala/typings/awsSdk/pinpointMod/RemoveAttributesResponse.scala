@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoveAttributesResponse extends js.Object {
+trait RemoveAttributesResponse extends StObject {
   
   var AttributesResource: typings.awsSdk.pinpointMod.AttributesResource = js.native
 }
@@ -18,21 +19,9 @@ object RemoveAttributesResponse {
   }
   
   @scala.inline
-  implicit class RemoveAttributesResponseOps[Self <: RemoveAttributesResponse] (val x: Self) extends AnyVal {
+  implicit class RemoveAttributesResponseMutableBuilder[Self <: RemoveAttributesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttributesResource(value: AttributesResource): Self = this.set("AttributesResource", value.asInstanceOf[js.Any])
+    def setAttributesResource(value: AttributesResource): Self = StObject.set(x, "AttributesResource", value.asInstanceOf[js.Any])
   }
 }

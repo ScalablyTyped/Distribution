@@ -1,12 +1,13 @@
 package typings.evernote.anon
 
 import typings.evernote.mod.Types.NoteSortOrder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Order extends js.Object {
+trait Order extends StObject {
   
   var ascending: js.UndefOr[Boolean] = js.native
   
@@ -25,42 +26,30 @@ object Order {
   }
   
   @scala.inline
-  implicit class OrderOps[Self <: Order] (val x: Self) extends AnyVal {
+  implicit class OrderMutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrder(value: NoteSortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAscending(value: Boolean): Self = this.set("ascending", value.asInstanceOf[js.Any])
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def deleteAscending: Self = this.set("ascending", js.undefined)
+    def setPublicDescription(value: String): Self = StObject.set(x, "publicDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: NoteSortOrder): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setPublicDescriptionUndefined: Self = StObject.set(x, "publicDescription", js.undefined)
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicDescription(value: String): Self = this.set("publicDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicDescription: Self = this.set("publicDescription", js.undefined)
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.nightwatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NightwatchAssertionsError extends js.Object {
+trait NightwatchAssertionsError extends StObject {
   
   var message: String = js.native
   
@@ -24,30 +25,18 @@ object NightwatchAssertionsError {
   }
   
   @scala.inline
-  implicit class NightwatchAssertionsErrorOps[Self <: NightwatchAssertionsError] (val x: Self) extends AnyVal {
+  implicit class NightwatchAssertionsErrorMutableBuilder[Self <: NightwatchAssertionsError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowDiff(value: Boolean): Self = StObject.set(x, "showDiff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowDiff(value: Boolean): Self = this.set("showDiff", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStack(value: String): Self = this.set("stack", value.asInstanceOf[js.Any])
+    def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
   }
 }

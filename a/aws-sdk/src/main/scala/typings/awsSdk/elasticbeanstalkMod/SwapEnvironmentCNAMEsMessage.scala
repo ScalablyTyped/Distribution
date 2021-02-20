@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SwapEnvironmentCNAMEsMessage extends js.Object {
+trait SwapEnvironmentCNAMEsMessage extends StObject {
   
   /**
     * The ID of the destination environment.  Condition: You must specify at least the DestinationEnvironmentID or the DestinationEnvironmentName. You may also specify both. You must specify the SourceEnvironmentId with the DestinationEnvironmentId. 
@@ -36,42 +37,30 @@ object SwapEnvironmentCNAMEsMessage {
   }
   
   @scala.inline
-  implicit class SwapEnvironmentCNAMEsMessageOps[Self <: SwapEnvironmentCNAMEsMessage] (val x: Self) extends AnyVal {
+  implicit class SwapEnvironmentCNAMEsMessageMutableBuilder[Self <: SwapEnvironmentCNAMEsMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "DestinationEnvironmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationEnvironmentIdUndefined: Self = StObject.set(x, "DestinationEnvironmentId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "DestinationEnvironmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationEnvironmentId(value: EnvironmentId): Self = this.set("DestinationEnvironmentId", value.asInstanceOf[js.Any])
+    def setDestinationEnvironmentNameUndefined: Self = StObject.set(x, "DestinationEnvironmentName", js.undefined)
     
     @scala.inline
-    def deleteDestinationEnvironmentId: Self = this.set("DestinationEnvironmentId", js.undefined)
+    def setSourceEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "SourceEnvironmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationEnvironmentName(value: EnvironmentName): Self = this.set("DestinationEnvironmentName", value.asInstanceOf[js.Any])
+    def setSourceEnvironmentIdUndefined: Self = StObject.set(x, "SourceEnvironmentId", js.undefined)
     
     @scala.inline
-    def deleteDestinationEnvironmentName: Self = this.set("DestinationEnvironmentName", js.undefined)
+    def setSourceEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "SourceEnvironmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceEnvironmentId(value: EnvironmentId): Self = this.set("SourceEnvironmentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceEnvironmentId: Self = this.set("SourceEnvironmentId", js.undefined)
-    
-    @scala.inline
-    def setSourceEnvironmentName(value: EnvironmentName): Self = this.set("SourceEnvironmentName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceEnvironmentName: Self = this.set("SourceEnvironmentName", js.undefined)
+    def setSourceEnvironmentNameUndefined: Self = StObject.set(x, "SourceEnvironmentName", js.undefined)
   }
 }

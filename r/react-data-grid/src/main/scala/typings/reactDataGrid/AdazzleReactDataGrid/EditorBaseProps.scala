@@ -1,11 +1,12 @@
 package typings.reactDataGrid.AdazzleReactDataGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditorBaseProps extends js.Object {
+trait EditorBaseProps extends StObject {
   
   var column: ExcelColumn = js.native
   
@@ -41,42 +42,30 @@ object EditorBaseProps {
   }
   
   @scala.inline
-  implicit class EditorBasePropsOps[Self <: EditorBaseProps] (val x: Self) extends AnyVal {
+  implicit class EditorBasePropsMutableBuilder[Self <: EditorBaseProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: ExcelColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnBlur(value: () => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColumn(value: ExcelColumn): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setOnCommit(value: () => Unit): Self = StObject.set(x, "onCommit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setOnCommitCancel(value: () => Unit): Self = StObject.set(x, "onCommitCancel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnBlur(value: () => Unit): Self = this.set("onBlur", js.Any.fromFunction0(value))
+    def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCommit(value: () => Unit): Self = this.set("onCommit", js.Any.fromFunction0(value))
+    def setRowMetaData(value: js.Any): Self = StObject.set(x, "rowMetaData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCommitCancel(value: () => Unit): Self = this.set("onCommitCancel", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRowData(value: js.Any): Self = this.set("rowData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowMetaData(value: js.Any): Self = this.set("rowMetaData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

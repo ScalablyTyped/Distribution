@@ -1,6 +1,7 @@
 package typings.titanium
 
 import typings.titanium.Titanium.Database.ResultSet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [executeAll](Titanium.Database.DB.executeAll) method in case of failure
   */
 @js.native
-trait BatchQueryError extends js.Object {
+trait BatchQueryError extends StObject {
   
   /**
     * Index of the failed query
@@ -31,33 +32,21 @@ object BatchQueryError {
   }
   
   @scala.inline
-  implicit class BatchQueryErrorOps[Self <: BatchQueryError] (val x: Self) extends AnyVal {
+  implicit class BatchQueryErrorMutableBuilder[Self <: BatchQueryError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResults(value: js.Array[ResultSet]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
-    
-    @scala.inline
-    def setResultsVarargs(value: ResultSet*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[ResultSet]): Self = this.set("results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    def setResultsVarargs(value: ResultSet*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

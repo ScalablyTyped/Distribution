@@ -1,11 +1,12 @@
 package typings.awsSdk.ramMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociateResourceShareRequest extends js.Object {
+trait AssociateResourceShareRequest extends StObject {
   
   /**
     * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
@@ -36,45 +37,33 @@ object AssociateResourceShareRequest {
   }
   
   @scala.inline
-  implicit class AssociateResourceShareRequestOps[Self <: AssociateResourceShareRequest] (val x: Self) extends AnyVal {
+  implicit class AssociateResourceShareRequestMutableBuilder[Self <: AssociateResourceShareRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrincipals(value: PrincipalArnOrIdList): Self = StObject.set(x, "principals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceShareArn(value: String): Self = this.set("resourceShareArn", value.asInstanceOf[js.Any])
+    def setPrincipalsUndefined: Self = StObject.set(x, "principals", js.undefined)
     
     @scala.inline
-    def setClientToken(value: String): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    def setPrincipalsVarargs(value: String*): Self = StObject.set(x, "principals", js.Array(value :_*))
     
     @scala.inline
-    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    def setResourceArns(value: ResourceArnList): Self = StObject.set(x, "resourceArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipalsVarargs(value: String*): Self = this.set("principals", js.Array(value :_*))
+    def setResourceArnsUndefined: Self = StObject.set(x, "resourceArns", js.undefined)
     
     @scala.inline
-    def setPrincipals(value: PrincipalArnOrIdList): Self = this.set("principals", value.asInstanceOf[js.Any])
+    def setResourceArnsVarargs(value: String*): Self = StObject.set(x, "resourceArns", js.Array(value :_*))
     
     @scala.inline
-    def deletePrincipals: Self = this.set("principals", js.undefined)
-    
-    @scala.inline
-    def setResourceArnsVarargs(value: String*): Self = this.set("resourceArns", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceArns(value: ResourceArnList): Self = this.set("resourceArns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceArns: Self = this.set("resourceArns", js.undefined)
+    def setResourceShareArn(value: String): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
   }
 }

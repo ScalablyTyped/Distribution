@@ -1,11 +1,12 @@
 package typings.nodeRedEditorClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Comms extends js.Object {
+trait Comms extends StObject {
   
   def connect(): Unit = js.native
   
@@ -26,27 +27,15 @@ object Comms {
   }
   
   @scala.inline
-  implicit class CommsOps[Self <: Comms] (val x: Self) extends AnyVal {
+  implicit class CommsMutableBuilder[Self <: Comms] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnect(value: () => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubscribe(value: (String, CommSubscriber) => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConnect(value: () => Unit): Self = this.set("connect", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSubscribe(value: (String, CommSubscriber) => Unit): Self = this.set("subscribe", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUnsubscribe(value: (String, CommSubscriber) => Unit): Self = this.set("unsubscribe", js.Any.fromFunction2(value))
+    def setUnsubscribe(value: (String, CommSubscriber) => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction2(value))
   }
 }

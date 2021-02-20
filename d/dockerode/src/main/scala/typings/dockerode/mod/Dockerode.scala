@@ -4,12 +4,13 @@ import typings.dockerode.anon.Volumes
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dockerode extends js.Object {
+trait Dockerode extends StObject {
   
   def buildImage(file: String): js.Promise[ReadableStream] = js.native
   def buildImage(file: String, callback: Callback[ReadableStream]): Unit = js.native

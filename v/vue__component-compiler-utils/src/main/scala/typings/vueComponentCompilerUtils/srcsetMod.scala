@@ -2,14 +2,17 @@ package typings.vueComponentCompilerUtils
 
 import typings.vueComponentCompilerUtils.anon.PostTransformNode
 import typings.vueComponentCompilerUtils.assetUrlMod.TransformAssetUrlsOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@vue/component-compiler-utils/dist/templateCompilerModules/srcset", JSImport.Namespace)
-@js.native
-object srcsetMod extends js.Object {
+object srcsetMod {
   
+  @JSImport("@vue/component-compiler-utils/dist/templateCompilerModules/srcset", JSImport.Default)
+  @js.native
   def default(): PostTransformNode = js.native
+  @JSImport("@vue/component-compiler-utils/dist/templateCompilerModules/srcset", JSImport.Default)
+  @js.native
   def default(transformAssetUrlsOptions: TransformAssetUrlsOptions): PostTransformNode = js.native
 }

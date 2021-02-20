@@ -1,11 +1,12 @@
 package typings.fineUploader.coreMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SuccessOptions extends js.Object {
+trait SuccessOptions extends StObject {
   
   /**
     * Endpoint to send a POST after all chunks have been successfully uploaded for each file.
@@ -62,57 +63,45 @@ object SuccessOptions {
   }
   
   @scala.inline
-  implicit class SuccessOptionsOps[Self <: SuccessOptions] (val x: Self) extends AnyVal {
+  implicit class SuccessOptionsMutableBuilder[Self <: SuccessOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpoint(value: String | js.Function): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaders(value: js.Function): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoint(value: String | js.Function): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    def setJsonPayload(value: Boolean): Self = StObject.set(x, "jsonPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Function): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setJsonPayloadUndefined: Self = StObject.set(x, "jsonPayload", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsonPayload(value: Boolean): Self = this.set("jsonPayload", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteJsonPayload: Self = this.set("jsonPayload", js.undefined)
+    def setParams(value: js.Function): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setResetOnStatus(value: js.Array[_]): Self = StObject.set(x, "resetOnStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: js.Function): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setResetOnStatusUndefined: Self = StObject.set(x, "resetOnStatus", js.undefined)
     
     @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
-    
-    @scala.inline
-    def setResetOnStatusVarargs(value: js.Any*): Self = this.set("resetOnStatus", js.Array(value :_*))
-    
-    @scala.inline
-    def setResetOnStatus(value: js.Array[_]): Self = this.set("resetOnStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResetOnStatus: Self = this.set("resetOnStatus", js.undefined)
+    def setResetOnStatusVarargs(value: js.Any*): Self = StObject.set(x, "resetOnStatus", js.Array(value :_*))
   }
 }

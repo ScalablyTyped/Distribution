@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GradientFillMethod extends js.Object
+sealed trait GradientFillMethod extends StObject
 @JSGlobal("__esri.CIM.GradientFillMethod")
 @js.native
-object GradientFillMethod extends js.Object {
+object GradientFillMethod extends StObject {
   
   /**
     * Buffered - Color changes based on an internal buffering of the geometry outline

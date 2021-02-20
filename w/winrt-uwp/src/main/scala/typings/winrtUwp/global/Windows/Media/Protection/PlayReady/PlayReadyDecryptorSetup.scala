@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media.Protection.PlayReady
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines decryptor setup requirements indicating when to acquire licenses for the content. */
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyDecryptorSetup")
 @js.native
-object PlayReadyDecryptorSetup extends js.Object {
+object PlayReadyDecryptorSetup extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

@@ -1,12 +1,13 @@
 package typings.activexShell.Shell32
 
 import typings.activexShdocvw.SHDocVw.InternetExplorer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShellWindows extends js.Object {
+trait ShellWindows extends StObject {
   
   /** Contains the number of items in the collection. */
   val Count: Double = js.native

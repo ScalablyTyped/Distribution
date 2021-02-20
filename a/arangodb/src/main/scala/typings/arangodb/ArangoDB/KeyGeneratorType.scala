@@ -1,5 +1,6 @@
 package typings.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.arangodb.arangodbStrings.traditional
   - typings.arangodb.arangodbStrings.autoincrement
 */
-trait KeyGeneratorType extends js.Object
+trait KeyGeneratorType extends StObject
 object KeyGeneratorType {
   
   @scala.inline

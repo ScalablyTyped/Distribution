@@ -1,11 +1,12 @@
 package typings.mathjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Distribution extends js.Object {
+trait Distribution extends StObject {
   
   def pickRandom(array: js.Any): js.Any = js.native
   

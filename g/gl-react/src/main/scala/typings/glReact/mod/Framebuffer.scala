@@ -2,12 +2,13 @@ package typings.glReact.mod
 
 import typings.std.WebGLFramebuffer
 import typings.std.WebGLTexture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Framebuffer extends js.Object {
+trait Framebuffer extends StObject {
   
   def bind(): Unit = js.native
   
@@ -34,33 +35,21 @@ object Framebuffer {
   }
   
   @scala.inline
-  implicit class FramebufferOps[Self <: Framebuffer] (val x: Self) extends AnyVal {
+  implicit class FramebufferMutableBuilder[Self <: Framebuffer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBind(value: () => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColor(value: WebGLTexture): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBind(value: () => Unit): Self = this.set("bind", js.Any.fromFunction0(value))
+    def setHandle(value: WebGLFramebuffer): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: WebGLTexture): Self = this.set("color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHandle(value: WebGLFramebuffer): Self = this.set("handle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSyncSize(value: (Double, Double) => Unit): Self = this.set("syncSize", js.Any.fromFunction2(value))
+    def setSyncSize(value: (Double, Double) => Unit): Self = StObject.set(x, "syncSize", js.Any.fromFunction2(value))
   }
 }

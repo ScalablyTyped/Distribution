@@ -20,12 +20,13 @@ import typings.maximMazurokGapiClientFirestore.anon.Resource
 import typings.maximMazurokGapiClientFirestore.anon.UploadType
 import typings.maximMazurokGapiClientFirestore.anon.Uploadprotocol
 import typings.maximMazurokGapiClientFirestore.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentsResource extends js.Object {
+trait DocumentsResource extends StObject {
   
   /** Gets multiple documents. Documents returned by this method are not guaranteed to be returned in the same order that they were requested. */
   def batchGet(request: Database): Request[BatchGetDocumentsResponse] = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyPair extends js.Object {
+trait KeyPair extends StObject {
   
   /**
     * The private key.
@@ -26,30 +27,18 @@ object KeyPair {
   }
   
   @scala.inline
-  implicit class KeyPairOps[Self <: KeyPair] (val x: Self) extends AnyVal {
+  implicit class KeyPairMutableBuilder[Self <: KeyPair] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrivateKey(value: PrivateKey): Self = StObject.set(x, "PrivateKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrivateKeyUndefined: Self = StObject.set(x, "PrivateKey", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublicKey(value: PublicKey): Self = StObject.set(x, "PublicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateKey(value: PrivateKey): Self = this.set("PrivateKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateKey: Self = this.set("PrivateKey", js.undefined)
-    
-    @scala.inline
-    def setPublicKey(value: PublicKey): Self = this.set("PublicKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicKey: Self = this.set("PublicKey", js.undefined)
+    def setPublicKeyUndefined: Self = StObject.set(x, "PublicKey", js.undefined)
   }
 }

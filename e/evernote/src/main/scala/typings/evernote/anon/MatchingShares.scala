@@ -1,12 +1,13 @@
 package typings.evernote.anon
 
 import typings.evernote.mod.Types.SharedNotebook
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MatchingShares extends js.Object {
+trait MatchingShares extends StObject {
   
   var matchingShares: js.UndefOr[js.Array[SharedNotebook]] = js.native
   
@@ -21,33 +22,21 @@ object MatchingShares {
   }
   
   @scala.inline
-  implicit class MatchingSharesOps[Self <: MatchingShares] (val x: Self) extends AnyVal {
+  implicit class MatchingSharesMutableBuilder[Self <: MatchingShares] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMatchingShares(value: js.Array[SharedNotebook]): Self = StObject.set(x, "matchingShares", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatchingSharesUndefined: Self = StObject.set(x, "matchingShares", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatchingSharesVarargs(value: SharedNotebook*): Self = StObject.set(x, "matchingShares", js.Array(value :_*))
     
     @scala.inline
-    def setMatchingSharesVarargs(value: SharedNotebook*): Self = this.set("matchingShares", js.Array(value :_*))
+    def setUpdateSequenceNum(value: Double): Self = StObject.set(x, "updateSequenceNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchingShares(value: js.Array[SharedNotebook]): Self = this.set("matchingShares", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchingShares: Self = this.set("matchingShares", js.undefined)
-    
-    @scala.inline
-    def setUpdateSequenceNum(value: Double): Self = this.set("updateSequenceNum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateSequenceNum: Self = this.set("updateSequenceNum", js.undefined)
+    def setUpdateSequenceNumUndefined: Self = StObject.set(x, "updateSequenceNum", js.undefined)
   }
 }

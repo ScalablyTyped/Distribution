@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommendationengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudRecommendationengineV1beta1CatalogInlineSource extends js.Object {
+trait GoogleCloudRecommendationengineV1beta1CatalogInlineSource extends StObject {
   
   /** Optional. A list of catalog items to update/create. Recommended max of 10k items. */
   var catalogItems: js.UndefOr[js.Array[GoogleCloudRecommendationengineV1beta1CatalogItem]] = js.native
@@ -19,27 +20,15 @@ object GoogleCloudRecommendationengineV1beta1CatalogInlineSource {
   }
   
   @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1CatalogInlineSourceOps[Self <: GoogleCloudRecommendationengineV1beta1CatalogInlineSource] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudRecommendationengineV1beta1CatalogInlineSourceMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1CatalogInlineSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalogItems(value: js.Array[GoogleCloudRecommendationengineV1beta1CatalogItem]): Self = StObject.set(x, "catalogItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCatalogItemsUndefined: Self = StObject.set(x, "catalogItems", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCatalogItemsVarargs(value: GoogleCloudRecommendationengineV1beta1CatalogItem*): Self = this.set("catalogItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setCatalogItems(value: js.Array[GoogleCloudRecommendationengineV1beta1CatalogItem]): Self = this.set("catalogItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCatalogItems: Self = this.set("catalogItems", js.undefined)
+    def setCatalogItemsVarargs(value: GoogleCloudRecommendationengineV1beta1CatalogItem*): Self = StObject.set(x, "catalogItems", js.Array(value :_*))
   }
 }

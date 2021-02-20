@@ -1,12 +1,13 @@
 package typings.ngCordova.ngCordova
 
 import typings.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBadgeService extends js.Object {
+trait IBadgeService extends StObject {
   
   def clear(): IPromise[_] = js.native
   def clear(callback: js.UndefOr[scala.Nothing], scope: js.Object): IPromise[_] = js.native

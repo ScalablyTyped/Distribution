@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,27 +31,15 @@ object ASPxClientCustomizeMenuActionsEventArgs {
   }
   
   @scala.inline
-  implicit class ASPxClientCustomizeMenuActionsEventArgsOps[Self <: ASPxClientCustomizeMenuActionsEventArgs] (val x: Self) extends AnyVal {
+  implicit class ASPxClientCustomizeMenuActionsEventArgsMutableBuilder[Self <: ASPxClientCustomizeMenuActionsEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[ASPxClientMenuAction]): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsVarargs(value: ASPxClientMenuAction*): Self = StObject.set(x, "Actions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActionsVarargs(value: ASPxClientMenuAction*): Self = this.set("Actions", js.Array(value :_*))
-    
-    @scala.inline
-    def setActions(value: js.Array[ASPxClientMenuAction]): Self = this.set("Actions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetById(value: String => ASPxClientMenuAction): Self = this.set("GetById", js.Any.fromFunction1(value))
+    def setGetById(value: String => ASPxClientMenuAction): Self = StObject.set(x, "GetById", js.Any.fromFunction1(value))
   }
 }

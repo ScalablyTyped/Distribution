@@ -2,18 +2,16 @@ package typings.appBuilderLib
 
 import typings.appBuilderLib.packagerMod.Packager
 import typings.appBuilderLib.platformSpecificBuildOptionsMod.PlatformSpecificBuildOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("app-builder-lib/out/appInfo", JSImport.Namespace)
-@js.native
-object appInfoMod extends js.Object {
+object appInfoMod {
   
-  def smarten(s: String): String = js.native
-  
+  @JSImport("app-builder-lib/out/appInfo", "AppInfo")
   @js.native
-  class AppInfo protected () extends js.Object {
+  class AppInfo protected () extends StObject {
     def this(info: Packager) = this()
     def this(info: Packager, buildVersion: String) = this()
     def this(
@@ -69,4 +67,8 @@ object appInfoMod extends js.Object {
     
     val version: String = js.native
   }
+  
+  @JSImport("app-builder-lib/out/appInfo", "smarten")
+  @js.native
+  def smarten(s: String): String = js.native
 }

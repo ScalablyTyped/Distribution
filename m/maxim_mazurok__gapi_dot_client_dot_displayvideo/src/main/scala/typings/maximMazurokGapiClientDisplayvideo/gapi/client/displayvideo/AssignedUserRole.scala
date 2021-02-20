@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssignedUserRole extends js.Object {
+trait AssignedUserRole extends StObject {
   
   /** The ID of the advertiser that the assigend user role applies to. */
   var advertiserId: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object AssignedUserRole {
   }
   
   @scala.inline
-  implicit class AssignedUserRoleOps[Self <: AssignedUserRole] (val x: Self) extends AnyVal {
+  implicit class AssignedUserRoleMutableBuilder[Self <: AssignedUserRole] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssignedUserRoleId(value: String): Self = StObject.set(x, "assignedUserRoleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    def setAssignedUserRoleIdUndefined: Self = StObject.set(x, "assignedUserRoleId", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignedUserRoleId(value: String): Self = this.set("assignedUserRoleId", value.asInstanceOf[js.Any])
+    def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
     
     @scala.inline
-    def deleteAssignedUserRoleId: Self = this.set("assignedUserRoleId", js.undefined)
+    def setUserRole(value: String): Self = StObject.set(x, "userRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartnerId(value: String): Self = this.set("partnerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartnerId: Self = this.set("partnerId", js.undefined)
-    
-    @scala.inline
-    def setUserRole(value: String): Self = this.set("userRole", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserRole: Self = this.set("userRole", js.undefined)
+    def setUserRoleUndefined: Self = StObject.set(x, "userRole", js.undefined)
   }
 }

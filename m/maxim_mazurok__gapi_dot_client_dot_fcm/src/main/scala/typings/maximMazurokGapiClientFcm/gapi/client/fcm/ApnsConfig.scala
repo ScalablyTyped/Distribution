@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientFcm.gapi.client.fcm
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApnsConfig extends js.Object {
+trait ApnsConfig extends StObject {
   
   /** Options for features provided by the FCM SDK for iOS. */
   var fcmOptions: js.UndefOr[ApnsFcmOptions] = js.native
@@ -42,44 +43,32 @@ object ApnsConfig {
   }
   
   @scala.inline
-  implicit class ApnsConfigOps[Self <: ApnsConfig] (val x: Self) extends AnyVal {
+  implicit class ApnsConfigMutableBuilder[Self <: ApnsConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFcmOptions(value: ApnsFcmOptions): Self = StObject.set(x, "fcmOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFcmOptions(value: ApnsFcmOptions): Self = this.set("fcmOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFcmOptions: Self = this.set("fcmOptions", js.undefined)
+    def setFcmOptionsUndefined: Self = StObject.set(x, "fcmOptions", js.undefined)
     
     @scala.inline
     def setHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.ApnsConfig with TopLevel[js.Any]
-    ): Self = this.set("headers", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
     def setPayload(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.ApnsConfig with TopLevel[js.Any]
-    ): Self = this.set("payload", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
   }
 }

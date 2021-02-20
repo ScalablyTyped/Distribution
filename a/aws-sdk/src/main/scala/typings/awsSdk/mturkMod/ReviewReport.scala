@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReviewReport extends js.Object {
+trait ReviewReport extends StObject {
   
   /**
     *  A list of ReviewAction objects for each action specified in the Review Policy. 
@@ -26,36 +27,24 @@ object ReviewReport {
   }
   
   @scala.inline
-  implicit class ReviewReportOps[Self <: ReviewReport] (val x: Self) extends AnyVal {
+  implicit class ReviewReportMutableBuilder[Self <: ReviewReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReviewActions(value: ReviewActionDetailList): Self = StObject.set(x, "ReviewActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReviewActionsUndefined: Self = StObject.set(x, "ReviewActions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReviewActionsVarargs(value: ReviewActionDetail*): Self = StObject.set(x, "ReviewActions", js.Array(value :_*))
     
     @scala.inline
-    def setReviewActionsVarargs(value: ReviewActionDetail*): Self = this.set("ReviewActions", js.Array(value :_*))
+    def setReviewResults(value: ReviewResultDetailList): Self = StObject.set(x, "ReviewResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReviewActions(value: ReviewActionDetailList): Self = this.set("ReviewActions", value.asInstanceOf[js.Any])
+    def setReviewResultsUndefined: Self = StObject.set(x, "ReviewResults", js.undefined)
     
     @scala.inline
-    def deleteReviewActions: Self = this.set("ReviewActions", js.undefined)
-    
-    @scala.inline
-    def setReviewResultsVarargs(value: ReviewResultDetail*): Self = this.set("ReviewResults", js.Array(value :_*))
-    
-    @scala.inline
-    def setReviewResults(value: ReviewResultDetailList): Self = this.set("ReviewResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReviewResults: Self = this.set("ReviewResults", js.undefined)
+    def setReviewResultsVarargs(value: ReviewResultDetail*): Self = StObject.set(x, "ReviewResults", js.Array(value :_*))
   }
 }

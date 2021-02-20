@@ -1,5 +1,6 @@
 package typings.googleapis.appengineV1Mod.appengineV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Scheduler settings for standard environment.
   */
 @js.native
-trait SchemaStandardSchedulerSettings extends js.Object {
+trait SchemaStandardSchedulerSettings extends StObject {
   
   /**
     * Maximum number of instances to run for this version. Set to zero to
@@ -41,42 +42,30 @@ object SchemaStandardSchedulerSettings {
   }
   
   @scala.inline
-  implicit class SchemaStandardSchedulerSettingsOps[Self <: SchemaStandardSchedulerSettings] (val x: Self) extends AnyVal {
+  implicit class SchemaStandardSchedulerSettingsMutableBuilder[Self <: SchemaStandardSchedulerSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxInstances(value: Double): Self = StObject.set(x, "maxInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxInstancesUndefined: Self = StObject.set(x, "maxInstances", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinInstances(value: Double): Self = StObject.set(x, "minInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxInstances(value: Double): Self = this.set("maxInstances", value.asInstanceOf[js.Any])
+    def setMinInstancesUndefined: Self = StObject.set(x, "minInstances", js.undefined)
     
     @scala.inline
-    def deleteMaxInstances: Self = this.set("maxInstances", js.undefined)
+    def setTargetCpuUtilization(value: Double): Self = StObject.set(x, "targetCpuUtilization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinInstances(value: Double): Self = this.set("minInstances", value.asInstanceOf[js.Any])
+    def setTargetCpuUtilizationUndefined: Self = StObject.set(x, "targetCpuUtilization", js.undefined)
     
     @scala.inline
-    def deleteMinInstances: Self = this.set("minInstances", js.undefined)
+    def setTargetThroughputUtilization(value: Double): Self = StObject.set(x, "targetThroughputUtilization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetCpuUtilization(value: Double): Self = this.set("targetCpuUtilization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetCpuUtilization: Self = this.set("targetCpuUtilization", js.undefined)
-    
-    @scala.inline
-    def setTargetThroughputUtilization(value: Double): Self = this.set("targetThroughputUtilization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetThroughputUtilization: Self = this.set("targetThroughputUtilization", js.undefined)
+    def setTargetThroughputUtilizationUndefined: Self = StObject.set(x, "targetThroughputUtilization", js.undefined)
   }
 }

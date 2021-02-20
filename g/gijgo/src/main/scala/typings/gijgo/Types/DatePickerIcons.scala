@@ -1,12 +1,13 @@
 package typings.gijgo.Types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // DatePicker
 @js.native
-trait DatePickerIcons extends js.Object {
+trait DatePickerIcons extends StObject {
   
   var rightIcon: js.UndefOr[String] = js.native
 }
@@ -19,24 +20,12 @@ object DatePickerIcons {
   }
   
   @scala.inline
-  implicit class DatePickerIconsOps[Self <: DatePickerIcons] (val x: Self) extends AnyVal {
+  implicit class DatePickerIconsMutableBuilder[Self <: DatePickerIcons] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRightIcon(value: String): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRightIcon(value: String): Self = this.set("rightIcon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRightIcon: Self = this.set("rightIcon", js.undefined)
+    def setRightIconUndefined: Self = StObject.set(x, "rightIcon", js.undefined)
   }
 }

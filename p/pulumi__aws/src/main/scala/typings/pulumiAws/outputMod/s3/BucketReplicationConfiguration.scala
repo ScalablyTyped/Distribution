@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.s3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketReplicationConfiguration extends js.Object {
+trait BucketReplicationConfiguration extends StObject {
   
   /**
     * The ARN of the IAM role for Amazon S3 to assume when replicating the objects.
@@ -26,27 +27,15 @@ object BucketReplicationConfiguration {
   }
   
   @scala.inline
-  implicit class BucketReplicationConfigurationOps[Self <: BucketReplicationConfiguration] (val x: Self) extends AnyVal {
+  implicit class BucketReplicationConfigurationMutableBuilder[Self <: BucketReplicationConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRules(value: js.Array[BucketReplicationConfigurationRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRulesVarargs(value: BucketReplicationConfigurationRule*): Self = this.set("rules", js.Array(value :_*))
-    
-    @scala.inline
-    def setRules(value: js.Array[BucketReplicationConfigurationRule]): Self = this.set("rules", value.asInstanceOf[js.Any])
+    def setRulesVarargs(value: BucketReplicationConfigurationRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.HumanInterfaceDevice
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Retrieves the collection information for a group of related controls. */
 @js.native
-trait HidCollection extends js.Object {
+trait HidCollection extends StObject {
   
   /** Retrieves the identifier for a collection of HID controls. */
   var id: Double = js.native
@@ -30,30 +31,18 @@ object HidCollection {
   }
   
   @scala.inline
-  implicit class HidCollectionOps[Self <: HidCollection] (val x: Self) extends AnyVal {
+  implicit class HidCollectionMutableBuilder[Self <: HidCollection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setType(value: HidCollectionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUsageId(value: Double): Self = StObject.set(x, "usageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: HidCollectionType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsageId(value: Double): Self = this.set("usageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsagePage(value: Double): Self = this.set("usagePage", value.asInstanceOf[js.Any])
+    def setUsagePage(value: Double): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
   }
 }

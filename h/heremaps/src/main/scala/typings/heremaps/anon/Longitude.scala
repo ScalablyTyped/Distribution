@@ -1,11 +1,12 @@
 package typings.heremaps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Longitude extends js.Object {
+trait Longitude extends StObject {
   
   var Latitude: Double = js.native
   
@@ -20,24 +21,12 @@ object Longitude {
   }
   
   @scala.inline
-  implicit class LongitudeOps[Self <: Longitude] (val x: Self) extends AnyVal {
+  implicit class LongitudeMutableBuilder[Self <: Longitude] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLatitude(value: Double): Self = StObject.set(x, "Latitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLatitude(value: Double): Self = this.set("Latitude", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLongitude(value: Double): Self = this.set("Longitude", value.asInstanceOf[js.Any])
+    def setLongitude(value: Double): Self = StObject.set(x, "Longitude", value.asInstanceOf[js.Any])
   }
 }

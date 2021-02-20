@@ -1,17 +1,18 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ProtectionSelectionMode extends js.Object
+sealed trait ProtectionSelectionMode extends StObject
 /**
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ProtectionSelectionMode")
 @js.native
-object ProtectionSelectionMode extends js.Object {
+object ProtectionSelectionMode extends StObject {
   
   /**
     * Selection is not allowed for all cells.

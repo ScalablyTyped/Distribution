@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReviewEventProperties extends js.Object {
+trait ReviewEventProperties extends StObject {
   
   /**
     * Operation performed on Event - Create\Update
@@ -96,57 +97,45 @@ object ReviewEventProperties {
   }
   
   @scala.inline
-  implicit class ReviewEventPropertiesOps[Self <: ReviewEventProperties] (val x: Self) extends AnyVal {
+  implicit class ReviewEventPropertiesMutableBuilder[Self <: ReviewEventProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventOperation(value: ReviewEventOperation): Self = StObject.set(x, "eventOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsAdminReply(value: Boolean): Self = StObject.set(x, "isAdminReply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsIgnored(value: Boolean): Self = StObject.set(x, "isIgnored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventOperation(value: ReviewEventOperation): Self = this.set("eventOperation", value.asInstanceOf[js.Any])
+    def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAdminReply(value: Boolean): Self = this.set("isAdminReply", value.asInstanceOf[js.Any])
+    def setReplyDate(value: Date): Self = StObject.set(x, "replyDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIgnored(value: Boolean): Self = this.set("isIgnored", value.asInstanceOf[js.Any])
+    def setReplyText(value: String): Self = StObject.set(x, "replyText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRating(value: Double): Self = this.set("rating", value.asInstanceOf[js.Any])
+    def setReplyUserId(value: String): Self = StObject.set(x, "replyUserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplyDate(value: Date): Self = this.set("replyDate", value.asInstanceOf[js.Any])
+    def setResourceType(value: ReviewResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplyText(value: String): Self = this.set("replyText", value.asInstanceOf[js.Any])
+    def setReviewDate(value: Date): Self = StObject.set(x, "reviewDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplyUserId(value: String): Self = this.set("replyUserId", value.asInstanceOf[js.Any])
+    def setReviewId(value: Double): Self = StObject.set(x, "reviewId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: ReviewResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    def setReviewText(value: String): Self = StObject.set(x, "reviewText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReviewDate(value: Date): Self = this.set("reviewDate", value.asInstanceOf[js.Any])
+    def setUserDisplayName(value: String): Self = StObject.set(x, "userDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReviewId(value: Double): Self = this.set("reviewId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReviewText(value: String): Self = this.set("reviewText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserDisplayName(value: String): Self = this.set("userDisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

@@ -9,89 +9,14 @@ import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
 import typings.luminoAlgorithm.retroMod.RetroableOrArrayLike
 import typings.luminoAlgorithm.stringMod.StringExt.IMatchResult
 import typings.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@lumino/algorithm", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def chain[T](objects: IterableOrArrayLike[T]*): IIterator[T] = js.native
-  
-  def each[T](
-    `object`: IterableOrArrayLike[T],
-    fn: js.Function2[/* value */ T, /* index */ Double, Boolean | Unit]
-  ): Unit = js.native
-  
-  def empty[T](): IIterator[T] = js.native
-  
-  def enumerate[T](`object`: IterableOrArrayLike[T]): IIterator[js.Tuple2[Double, T]] = js.native
-  def enumerate[T](`object`: IterableOrArrayLike[T], start: Double): IIterator[js.Tuple2[Double, T]] = js.native
-  
-  def every[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Boolean = js.native
-  
-  def filter[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): IIterator[T] = js.native
-  
-  def find[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.UndefOr[T] = js.native
-  
-  def findIndex[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Double = js.native
-  
-  def iter[T](`object`: IterableOrArrayLike[T]): IIterator[T] = js.native
-  
-  def iterFn[T](fn: js.Function0[js.UndefOr[T]]): IIterator[T] = js.native
-  
-  def iterItems[T](`object`: StringDictionary[T]): IIterator[js.Tuple2[String, T]] = js.native
-  
-  def iterKeys[T](`object`: StringDictionary[T]): IIterator[String] = js.native
-  
-  def iterValues[T](`object`: StringDictionary[T]): IIterator[T] = js.native
-  
-  def map[T, U](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, U]): IIterator[U] = js.native
-  
-  def max[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* first */ T, /* second */ T, Double]): js.UndefOr[T] = js.native
-  
-  def min[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* first */ T, /* second */ T, Double]): js.UndefOr[T] = js.native
-  
-  def minmax[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* first */ T, /* second */ T, Double]): js.UndefOr[js.Tuple2[T, T]] = js.native
-  
-  def once[T](value: T): IIterator[T] = js.native
-  
-  def range(start: Double): IIterator[Double] = js.native
-  def range(start: Double, stop: js.UndefOr[scala.Nothing], step: Double): IIterator[Double] = js.native
-  def range(start: Double, stop: Double): IIterator[Double] = js.native
-  def range(start: Double, stop: Double, step: Double): IIterator[Double] = js.native
-  
-  def reduce[T](
-    `object`: IterableOrArrayLike[T],
-    fn: js.Function3[/* accumulator */ T, /* value */ T, /* index */ Double, T]
-  ): T = js.native
-  def reduce[T, U](
-    `object`: IterableOrArrayLike[T],
-    fn: js.Function3[/* accumulator */ U, /* value */ T, /* index */ Double, U],
-    initial: U
-  ): U = js.native
-  
-  def repeat[T](value: T, count: Double): IIterator[T] = js.native
-  
-  def retro[T](`object`: RetroableOrArrayLike[T]): IIterator[T] = js.native
-  
-  def some[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Boolean = js.native
-  
-  def stride[T](`object`: IterableOrArrayLike[T], step: Double): IIterator[T] = js.native
-  
-  def take[T](`object`: IterableOrArrayLike[T], count: Double): IIterator[T] = js.native
-  
-  def toArray[T](`object`: IterableOrArrayLike[T]): js.Array[T] = js.native
-  
-  def toObject[T](`object`: IterableOrArrayLike[js.Tuple2[String, T]]): StringDictionary[T] = js.native
-  
-  def topologicSort[T](edges: IterableOrArrayLike[js.Tuple2[T, T]]): js.Array[T] = js.native
-  
-  def zip[T](objects: IterableOrArrayLike[T]*): IIterator[js.Array[T]] = js.native
-  
-  @js.native
-  object ArrayExt extends js.Object {
+  object ArrayExt {
     
     /**
       * Fill an array with a static value.
@@ -128,9 +53,17 @@ object mod extends js.Object {
       * ArrayExt.fill(data, 'z', 3, 1);  // ['z', 'z', 'b', 'z']
       * ```
       */
+    @JSImport("@lumino/algorithm", "ArrayExt.fill")
+    @js.native
     def fill[T](array: MutableArrayLike[T], value: T): Unit = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.fill")
+    @js.native
     def fill[T](array: MutableArrayLike[T], value: T, start: js.UndefOr[scala.Nothing], stop: Double): Unit = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.fill")
+    @js.native
     def fill[T](array: MutableArrayLike[T], value: T, start: Double): Unit = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.fill")
+    @js.native
     def fill[T](array: MutableArrayLike[T], value: T, start: Double, stop: Double): Unit = js.native
     
     /**
@@ -177,14 +110,22 @@ object mod extends js.Object {
       * ArrayExt.findFirstIndex(data, isEven, 6, 5); // 1
       * ```
       */
+    @JSImport("@lumino/algorithm", "ArrayExt.findFirstIndex")
+    @js.native
     def findFirstIndex[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.findFirstIndex")
+    @js.native
     def findFirstIndex[T](
       array: ArrayLike[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
       start: js.UndefOr[scala.Nothing],
       stop: Double
     ): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.findFirstIndex")
+    @js.native
     def findFirstIndex[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.findFirstIndex")
+    @js.native
     def findFirstIndex[T](
       array: ArrayLike[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
@@ -236,14 +177,22 @@ object mod extends js.Object {
       * ArrayExt.findFirstValue(data, isEven, 6, 5); // 2
       * ```
       */
+    @JSImport("@lumino/algorithm", "ArrayExt.findFirstValue")
+    @js.native
     def findFirstValue[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.UndefOr[T] = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.findFirstValue")
+    @js.native
     def findFirstValue[T](
       array: ArrayLike[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
       start: js.UndefOr[scala.Nothing],
       stop: Double
     ): js.UndefOr[T] = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.findFirstValue")
+    @js.native
     def findFirstValue[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): js.UndefOr[T] = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.findFirstValue")
+    @js.native
     def findFirstValue[T](
       array: ArrayLike[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
@@ -295,14 +244,22 @@ object mod extends js.Object {
       * ArrayExt.findLastIndex(data, isEven, 0, 1);  // 5
       * ```
       */
+    @JSImport("@lumino/algorithm", "ArrayExt.findLastIndex")
+    @js.native
     def findLastIndex[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.findLastIndex")
+    @js.native
     def findLastIndex[T](
       array: ArrayLike[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
       start: js.UndefOr[scala.Nothing],
       stop: Double
     ): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.findLastIndex")
+    @js.native
     def findLastIndex[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.findLastIndex")
+    @js.native
     def findLastIndex[T](
       array: ArrayLike[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
@@ -354,14 +311,22 @@ object mod extends js.Object {
       * ArrayExt.findLastValue(data, isEven, 0, 1);  // 2
       * ```
       */
+    @JSImport("@lumino/algorithm", "ArrayExt.findLastValue")
+    @js.native
     def findLastValue[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.UndefOr[T] = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.findLastValue")
+    @js.native
     def findLastValue[T](
       array: ArrayLike[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
       start: js.UndefOr[scala.Nothing],
       stop: Double
     ): js.UndefOr[T] = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.findLastValue")
+    @js.native
     def findLastValue[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): js.UndefOr[T] = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.findLastValue")
+    @js.native
     def findLastValue[T](
       array: ArrayLike[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
@@ -409,9 +374,17 @@ object mod extends js.Object {
       * ArrayExt.firstIndexOf(data, 'two', 2, 1);  // 1
       * ```
       */
+    @JSImport("@lumino/algorithm", "ArrayExt.firstIndexOf")
+    @js.native
     def firstIndexOf[T](array: ArrayLike[T], value: T): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.firstIndexOf")
+    @js.native
     def firstIndexOf[T](array: ArrayLike[T], value: T, start: js.UndefOr[scala.Nothing], stop: Double): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.firstIndexOf")
+    @js.native
     def firstIndexOf[T](array: ArrayLike[T], value: T, start: Double): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.firstIndexOf")
+    @js.native
     def firstIndexOf[T](array: ArrayLike[T], value: T, start: Double, stop: Double): Double = js.native
     
     /**
@@ -441,6 +414,8 @@ object mod extends js.Object {
       * ArrayExt.insert(data, 6, 19);  // [-1, 0, 12, 1, 7, 2, 19]
       * ```
       */
+    @JSImport("@lumino/algorithm", "ArrayExt.insert")
+    @js.native
     def insert[T](array: js.Array[T], index: Double, value: T): Unit = js.native
     
     /**
@@ -483,9 +458,17 @@ object mod extends js.Object {
       * ArrayExt.lastIndexOf(data, 'two', 0, 1);  // 1
       * ```
       */
+    @JSImport("@lumino/algorithm", "ArrayExt.lastIndexOf")
+    @js.native
     def lastIndexOf[T](array: ArrayLike[T], value: T): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.lastIndexOf")
+    @js.native
     def lastIndexOf[T](array: ArrayLike[T], value: T, start: js.UndefOr[scala.Nothing], stop: Double): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.lastIndexOf")
+    @js.native
     def lastIndexOf[T](array: ArrayLike[T], value: T, start: Double): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.lastIndexOf")
+    @js.native
     def lastIndexOf[T](array: ArrayLike[T], value: T, start: Double, stop: Double): Double = js.native
     
     /**
@@ -543,7 +526,11 @@ object mod extends js.Object {
       * ArrayExt.lowerBound(data, 10, numberCmp);  // 6
       * ```
       */
+    @JSImport("@lumino/algorithm", "ArrayExt.lowerBound")
+    @js.native
     def lowerBound[T, U](array: ArrayLike[T], value: U, fn: js.Function2[/* element */ T, /* value */ U, Double]): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.lowerBound")
+    @js.native
     def lowerBound[T, U](
       array: ArrayLike[T],
       value: U,
@@ -551,12 +538,16 @@ object mod extends js.Object {
       start: js.UndefOr[scala.Nothing],
       stop: Double
     ): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.lowerBound")
+    @js.native
     def lowerBound[T, U](
       array: ArrayLike[T],
       value: U,
       fn: js.Function2[/* element */ T, /* value */ U, Double],
       start: Double
     ): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.lowerBound")
+    @js.native
     def lowerBound[T, U](
       array: ArrayLike[T],
       value: U,
@@ -591,6 +582,8 @@ object mod extends js.Object {
       * ArrayExt.move(data, 4, 2);  // [0, 2, 4, 1, 3]
       * ```
       */
+    @JSImport("@lumino/algorithm", "ArrayExt.move")
+    @js.native
     def move[T](array: MutableArrayLike[T], fromIndex: Double, toIndex: Double): Unit = js.native
     
     /**
@@ -628,9 +621,17 @@ object mod extends js.Object {
       * ArrayExt.removeAllOf(data, 14, 1, 4);  // 1
       * ```
       */
+    @JSImport("@lumino/algorithm", "ArrayExt.removeAllOf")
+    @js.native
     def removeAllOf[T](array: js.Array[T], value: T): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.removeAllOf")
+    @js.native
     def removeAllOf[T](array: js.Array[T], value: T, start: js.UndefOr[scala.Nothing], stop: Double): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.removeAllOf")
+    @js.native
     def removeAllOf[T](array: js.Array[T], value: T, start: Double): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.removeAllOf")
+    @js.native
     def removeAllOf[T](array: js.Array[T], value: T, start: Double, stop: Double): Double = js.native
     
     /**
@@ -674,14 +675,22 @@ object mod extends js.Object {
       * ArrayExt.removeAllWhere(data, isNegative, 0, 3);  // 2
       * ```
       */
+    @JSImport("@lumino/algorithm", "ArrayExt.removeAllWhere")
+    @js.native
     def removeAllWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.removeAllWhere")
+    @js.native
     def removeAllWhere[T](
       array: js.Array[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
       start: js.UndefOr[scala.Nothing],
       stop: Double
     ): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.removeAllWhere")
+    @js.native
     def removeAllWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.removeAllWhere")
+    @js.native
     def removeAllWhere[T](
       array: js.Array[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
@@ -716,6 +725,8 @@ object mod extends js.Object {
       * ArrayExt.removeAt(data, 10);  // undefined;
       * ```
       */
+    @JSImport("@lumino/algorithm", "ArrayExt.removeAt")
+    @js.native
     def removeAt[T](array: js.Array[T], index: Double): js.UndefOr[T] = js.native
     
     /**
@@ -754,9 +765,17 @@ object mod extends js.Object {
       * ArrayExt.removeFirstOf(data, 39, 3, 2);  // 2
       * ```
       */
+    @JSImport("@lumino/algorithm", "ArrayExt.removeFirstOf")
+    @js.native
     def removeFirstOf[T](array: js.Array[T], value: T): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.removeFirstOf")
+    @js.native
     def removeFirstOf[T](array: js.Array[T], value: T, start: js.UndefOr[scala.Nothing], stop: Double): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.removeFirstOf")
+    @js.native
     def removeFirstOf[T](array: js.Array[T], value: T, start: Double): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.removeFirstOf")
+    @js.native
     def removeFirstOf[T](array: js.Array[T], value: T, start: Double, stop: Double): Double = js.native
     
     /**
@@ -797,14 +816,22 @@ object mod extends js.Object {
       * ArrayExt.removeFirstWhere(data, isEven, 4);  // { index: -1, value: undefined }
       * ```
       */
+    @JSImport("@lumino/algorithm", "ArrayExt.removeFirstWhere")
+    @js.native
     def removeFirstWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Index[T] = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.removeFirstWhere")
+    @js.native
     def removeFirstWhere[T](
       array: js.Array[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
       start: js.UndefOr[scala.Nothing],
       stop: Double
     ): Index[T] = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.removeFirstWhere")
+    @js.native
     def removeFirstWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Index[T] = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.removeFirstWhere")
+    @js.native
     def removeFirstWhere[T](
       array: js.Array[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
@@ -848,9 +875,17 @@ object mod extends js.Object {
       * ArrayExt.removeLastOf(data, 39, 2, 3);  // 3
       * ```
       */
+    @JSImport("@lumino/algorithm", "ArrayExt.removeLastOf")
+    @js.native
     def removeLastOf[T](array: js.Array[T], value: T): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.removeLastOf")
+    @js.native
     def removeLastOf[T](array: js.Array[T], value: T, start: js.UndefOr[scala.Nothing], stop: Double): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.removeLastOf")
+    @js.native
     def removeLastOf[T](array: js.Array[T], value: T, start: Double): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.removeLastOf")
+    @js.native
     def removeLastOf[T](array: js.Array[T], value: T, start: Double, stop: Double): Double = js.native
     
     /**
@@ -891,14 +926,22 @@ object mod extends js.Object {
       * ArrayExt.removeLastWhere(data, isEven, 2, 1);  // { index: -1, value: undefined }
       * ```
       */
+    @JSImport("@lumino/algorithm", "ArrayExt.removeLastWhere")
+    @js.native
     def removeLastWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Index[T] = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.removeLastWhere")
+    @js.native
     def removeLastWhere[T](
       array: js.Array[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
       start: js.UndefOr[scala.Nothing],
       stop: Double
     ): Index[T] = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.removeLastWhere")
+    @js.native
     def removeLastWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Index[T] = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.removeLastWhere")
+    @js.native
     def removeLastWhere[T](
       array: js.Array[T],
       fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
@@ -935,9 +978,17 @@ object mod extends js.Object {
       * ArrayExt.reverse(data);        // [1, 4, 2, 3, 0]
       * ```
       */
+    @JSImport("@lumino/algorithm", "ArrayExt.reverse")
+    @js.native
     def reverse[T](array: MutableArrayLike[T]): Unit = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.reverse")
+    @js.native
     def reverse[T](array: MutableArrayLike[T], start: js.UndefOr[scala.Nothing], stop: Double): Unit = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.reverse")
+    @js.native
     def reverse[T](array: MutableArrayLike[T], start: Double): Unit = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.reverse")
+    @js.native
     def reverse[T](array: MutableArrayLike[T], start: Double, stop: Double): Unit = js.native
     
     /**
@@ -975,9 +1026,17 @@ object mod extends js.Object {
       * ArrayExt.rotate(data, 2, 1, 3);  // [4, 2, 0, 1, 3]
       * ```
       */
+    @JSImport("@lumino/algorithm", "ArrayExt.rotate")
+    @js.native
     def rotate[T](array: MutableArrayLike[T], delta: Double): Unit = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.rotate")
+    @js.native
     def rotate[T](array: MutableArrayLike[T], delta: Double, start: js.UndefOr[scala.Nothing], stop: Double): Unit = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.rotate")
+    @js.native
     def rotate[T](array: MutableArrayLike[T], delta: Double, start: Double): Unit = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.rotate")
+    @js.native
     def rotate[T](array: MutableArrayLike[T], delta: Double, start: Double, stop: Double): Unit = js.native
     
     /**
@@ -1010,8 +1069,54 @@ object mod extends js.Object {
       * ArrayExt.shallowEqual(d2, d3);  // false
       * ```
       */
+    @JSImport("@lumino/algorithm", "ArrayExt.shallowEqual")
+    @js.native
     def shallowEqual[T](a: ArrayLike[T], b: ArrayLike[T]): Boolean = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.shallowEqual")
+    @js.native
     def shallowEqual[T](a: ArrayLike[T], b: ArrayLike[T], fn: js.Function2[/* a */ T, /* b */ T, Boolean]): Boolean = js.native
+    
+    /**
+      * The namespace for the `slice` function statics.
+      */
+    object slice {
+      
+      /**
+        * Create a slice of an array subject to an optional step.
+        *
+        * @param array - The array-like object of interest.
+        *
+        * @param options - The options for configuring the slice.
+        *
+        * @returns A new array with the specified values.
+        *
+        * @throws An exception if the slice `step` is `0`.
+        *
+        * #### Complexity
+        * Linear.
+        *
+        * #### Undefined Behavior
+        * A `start`, `stop`, or `step` which is non-integral.
+        *
+        * #### Example
+        * ```typescript
+        * import { ArrayExt } from '@lumino/algorithm';
+        *
+        * let data = [0, 3, 4, 7, 7, 9];
+        * ArrayExt.slice(data);                         // [0, 3, 4, 7, 7, 9]
+        * ArrayExt.slice(data, { start: 2 });           // [4, 7, 7, 9]
+        * ArrayExt.slice(data, { start: 0, stop: 4 });  // [0, 3, 4, 7]
+        * ArrayExt.slice(data, { step: 2 });            // [0, 4, 7]
+        * ArrayExt.slice(data, { step: -1 });           // [9, 7, 7, 4, 3, 0]
+        * ```
+        */
+      @JSImport("@lumino/algorithm", "ArrayExt.slice")
+      @js.native
+      def apply[T](array: ArrayLike[T]): js.Array[T] = js.native
+      @JSImport("@lumino/algorithm", "ArrayExt.slice")
+      @js.native
+      def apply[T](array: ArrayLike[T], options: IOptions): js.Array[T] = js.native
+    }
     
     /**
       * Find the index of the first element which compares `>` than a value.
@@ -1068,7 +1173,11 @@ object mod extends js.Object {
       * ArrayExt.upperBound(data, 10, numberCmp);  // 6
       * ```
       */
+    @JSImport("@lumino/algorithm", "ArrayExt.upperBound")
+    @js.native
     def upperBound[T, U](array: ArrayLike[T], value: U, fn: js.Function2[/* element */ T, /* value */ U, Double]): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.upperBound")
+    @js.native
     def upperBound[T, U](
       array: ArrayLike[T],
       value: U,
@@ -1076,12 +1185,16 @@ object mod extends js.Object {
       start: js.UndefOr[scala.Nothing],
       stop: Double
     ): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.upperBound")
+    @js.native
     def upperBound[T, U](
       array: ArrayLike[T],
       value: U,
       fn: js.Function2[/* element */ T, /* value */ U, Double],
       start: Double
     ): Double = js.native
+    @JSImport("@lumino/algorithm", "ArrayExt.upperBound")
+    @js.native
     def upperBound[T, U](
       array: ArrayLike[T],
       value: U,
@@ -1089,47 +1202,9 @@ object mod extends js.Object {
       start: Double,
       stop: Double
     ): Double = js.native
-    
-    /**
-      * The namespace for the `slice` function statics.
-      */
-    @js.native
-    object slice extends js.Object {
-      
-      /**
-        * Create a slice of an array subject to an optional step.
-        *
-        * @param array - The array-like object of interest.
-        *
-        * @param options - The options for configuring the slice.
-        *
-        * @returns A new array with the specified values.
-        *
-        * @throws An exception if the slice `step` is `0`.
-        *
-        * #### Complexity
-        * Linear.
-        *
-        * #### Undefined Behavior
-        * A `start`, `stop`, or `step` which is non-integral.
-        *
-        * #### Example
-        * ```typescript
-        * import { ArrayExt } from '@lumino/algorithm';
-        *
-        * let data = [0, 3, 4, 7, 7, 9];
-        * ArrayExt.slice(data);                         // [0, 3, 4, 7, 7, 9]
-        * ArrayExt.slice(data, { start: 2 });           // [4, 7, 7, 9]
-        * ArrayExt.slice(data, { start: 0, stop: 4 });  // [0, 3, 4, 7]
-        * ArrayExt.slice(data, { step: 2 });            // [0, 4, 7]
-        * ArrayExt.slice(data, { step: -1 });           // [9, 7, 7, 4, 3, 0]
-        * ```
-        */
-      def apply[T](array: ArrayLike[T]): js.Array[T] = js.native
-      def apply[T](array: ArrayLike[T], options: IOptions): js.Array[T] = js.native
-    }
   }
   
+  @JSImport("@lumino/algorithm", "ArrayIterator")
   @js.native
   class ArrayIterator[T] protected ()
     extends typings.luminoAlgorithm.iterMod.ArrayIterator[T] {
@@ -1141,6 +1216,7 @@ object mod extends js.Object {
     def this(source: ArrayLike[T]) = this()
   }
   
+  @JSImport("@lumino/algorithm", "ChainIterator")
   @js.native
   class ChainIterator[T] protected ()
     extends typings.luminoAlgorithm.chainMod.ChainIterator[T] {
@@ -1152,6 +1228,7 @@ object mod extends js.Object {
     def this(source: IIterator[IIterator[T]]) = this()
   }
   
+  @JSImport("@lumino/algorithm", "EmptyIterator")
   @js.native
   /**
     * Construct a new empty iterator.
@@ -1159,6 +1236,7 @@ object mod extends js.Object {
   class EmptyIterator[T] ()
     extends typings.luminoAlgorithm.emptyMod.EmptyIterator[T]
   
+  @JSImport("@lumino/algorithm", "EnumerateIterator")
   @js.native
   class EnumerateIterator[T] protected ()
     extends typings.luminoAlgorithm.enumerateMod.EnumerateIterator[T] {
@@ -1172,6 +1250,7 @@ object mod extends js.Object {
     def this(source: IIterator[T], start: Double) = this()
   }
   
+  @JSImport("@lumino/algorithm", "FilterIterator")
   @js.native
   class FilterIterator[T] protected ()
     extends typings.luminoAlgorithm.filterMod.FilterIterator[T] {
@@ -1185,6 +1264,7 @@ object mod extends js.Object {
     def this(source: IIterator[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]) = this()
   }
   
+  @JSImport("@lumino/algorithm", "FnIterator")
   @js.native
   class FnIterator[T] protected ()
     extends typings.luminoAlgorithm.iterMod.FnIterator[T] {
@@ -1196,6 +1276,7 @@ object mod extends js.Object {
     def this(fn: js.Function0[js.UndefOr[T]]) = this()
   }
   
+  @JSImport("@lumino/algorithm", "ItemIterator")
   @js.native
   class ItemIterator[T] protected ()
     extends typings.luminoAlgorithm.iterMod.ItemIterator[T] {
@@ -1210,6 +1291,7 @@ object mod extends js.Object {
     def this(source: StringDictionary[T], keys: js.Array[String]) = this()
   }
   
+  @JSImport("@lumino/algorithm", "KeyIterator")
   @js.native
   class KeyIterator protected ()
     extends typings.luminoAlgorithm.iterMod.KeyIterator {
@@ -1224,6 +1306,7 @@ object mod extends js.Object {
     def this(source: StringDictionary[js.Any], keys: js.Array[String]) = this()
   }
   
+  @JSImport("@lumino/algorithm", "MapIterator")
   @js.native
   class MapIterator[T, U] protected ()
     extends typings.luminoAlgorithm.mapMod.MapIterator[T, U] {
@@ -1237,6 +1320,7 @@ object mod extends js.Object {
     def this(source: IIterator[T], fn: js.Function2[/* value */ T, /* index */ Double, U]) = this()
   }
   
+  @JSImport("@lumino/algorithm", "RangeIterator")
   @js.native
   class RangeIterator protected ()
     extends typings.luminoAlgorithm.rangeMod.RangeIterator {
@@ -1252,6 +1336,7 @@ object mod extends js.Object {
     def this(start: Double, stop: Double, step: Double) = this()
   }
   
+  @JSImport("@lumino/algorithm", "RepeatIterator")
   @js.native
   class RepeatIterator[T] protected ()
     extends typings.luminoAlgorithm.repeatMod.RepeatIterator[T] {
@@ -1265,6 +1350,7 @@ object mod extends js.Object {
     def this(value: T, count: Double) = this()
   }
   
+  @JSImport("@lumino/algorithm", "RetroArrayIterator")
   @js.native
   class RetroArrayIterator[T] protected ()
     extends typings.luminoAlgorithm.retroMod.RetroArrayIterator[T] {
@@ -1276,6 +1362,7 @@ object mod extends js.Object {
     def this(source: ArrayLike[T]) = this()
   }
   
+  @JSImport("@lumino/algorithm", "StrideIterator")
   @js.native
   class StrideIterator[T] protected ()
     extends typings.luminoAlgorithm.strideMod.StrideIterator[T] {
@@ -1290,8 +1377,7 @@ object mod extends js.Object {
     def this(source: IIterator[T], step: Double) = this()
   }
   
-  @js.native
-  object StringExt extends js.Object {
+  object StringExt {
     
     /**
       * A 3-way string comparison function.
@@ -1302,6 +1388,8 @@ object mod extends js.Object {
       *
       * @returns `-1` if `a < b`, else `1` if `a > b`, else `0`.
       */
+    @JSImport("@lumino/algorithm", "StringExt.cmp")
+    @js.native
     def cmp(a: String, b: String): Double = js.native
     
     /**
@@ -1324,7 +1412,11 @@ object mod extends js.Object {
       *
       * Characters are matched using strict `===` equality.
       */
+    @JSImport("@lumino/algorithm", "StringExt.findIndices")
+    @js.native
     def findIndices(source: String, query: String): js.Array[Double] | Null = js.native
+    @JSImport("@lumino/algorithm", "StringExt.findIndices")
+    @js.native
     def findIndices(source: String, query: String, start: Double): js.Array[Double] | Null = js.native
     
     /**
@@ -1339,6 +1431,8 @@ object mod extends js.Object {
       *
       * @returns An array of unmatched and highlighted chunks.
       */
+    @JSImport("@lumino/algorithm", "StringExt.highlight")
+    @js.native
     def highlight[T](source: String, indices: js.Array[Double], fn: js.Function1[/* chunk */ String, T]): js.Array[String | T] = js.native
     
     /**
@@ -1364,7 +1458,11 @@ object mod extends js.Object {
       * of matched characters are preferred, while fragmented matches are
       * penalized.
       */
+    @JSImport("@lumino/algorithm", "StringExt.matchSumOfDeltas")
+    @js.native
     def matchSumOfDeltas(source: String, query: String): IMatchResult | Null = js.native
+    @JSImport("@lumino/algorithm", "StringExt.matchSumOfDeltas")
+    @js.native
     def matchSumOfDeltas(source: String, query: String, start: Double): IMatchResult | Null = js.native
     
     /**
@@ -1390,10 +1488,15 @@ object mod extends js.Object {
       * that early and consecutive character matches are preferred, while
       * late matches are heavily penalized.
       */
+    @JSImport("@lumino/algorithm", "StringExt.matchSumOfSquares")
+    @js.native
     def matchSumOfSquares(source: String, query: String): IMatchResult | Null = js.native
+    @JSImport("@lumino/algorithm", "StringExt.matchSumOfSquares")
+    @js.native
     def matchSumOfSquares(source: String, query: String, start: Double): IMatchResult | Null = js.native
   }
   
+  @JSImport("@lumino/algorithm", "TakeIterator")
   @js.native
   class TakeIterator[T] protected ()
     extends typings.luminoAlgorithm.takeMod.TakeIterator[T] {
@@ -1407,6 +1510,7 @@ object mod extends js.Object {
     def this(source: IIterator[T], count: Double) = this()
   }
   
+  @JSImport("@lumino/algorithm", "ValueIterator")
   @js.native
   class ValueIterator[T] protected ()
     extends typings.luminoAlgorithm.iterMod.ValueIterator[T] {
@@ -1421,6 +1525,7 @@ object mod extends js.Object {
     def this(source: StringDictionary[T], keys: js.Array[String]) = this()
   }
   
+  @JSImport("@lumino/algorithm", "ZipIterator")
   @js.native
   class ZipIterator[T] protected ()
     extends typings.luminoAlgorithm.zipMod.ZipIterator[T] {
@@ -1431,4 +1536,145 @@ object mod extends js.Object {
       */
     def this(source: js.Array[IIterator[T]]) = this()
   }
+  
+  @JSImport("@lumino/algorithm", "chain")
+  @js.native
+  def chain[T](objects: IterableOrArrayLike[T]*): IIterator[T] = js.native
+  
+  @JSImport("@lumino/algorithm", "each")
+  @js.native
+  def each[T](
+    `object`: IterableOrArrayLike[T],
+    fn: js.Function2[/* value */ T, /* index */ Double, Boolean | Unit]
+  ): Unit = js.native
+  
+  @JSImport("@lumino/algorithm", "empty")
+  @js.native
+  def empty[T](): IIterator[T] = js.native
+  
+  @JSImport("@lumino/algorithm", "enumerate")
+  @js.native
+  def enumerate[T](`object`: IterableOrArrayLike[T]): IIterator[js.Tuple2[Double, T]] = js.native
+  @JSImport("@lumino/algorithm", "enumerate")
+  @js.native
+  def enumerate[T](`object`: IterableOrArrayLike[T], start: Double): IIterator[js.Tuple2[Double, T]] = js.native
+  
+  @JSImport("@lumino/algorithm", "every")
+  @js.native
+  def every[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Boolean = js.native
+  
+  @JSImport("@lumino/algorithm", "filter")
+  @js.native
+  def filter[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): IIterator[T] = js.native
+  
+  @JSImport("@lumino/algorithm", "find")
+  @js.native
+  def find[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.UndefOr[T] = js.native
+  
+  @JSImport("@lumino/algorithm", "findIndex")
+  @js.native
+  def findIndex[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Double = js.native
+  
+  @JSImport("@lumino/algorithm", "iter")
+  @js.native
+  def iter[T](`object`: IterableOrArrayLike[T]): IIterator[T] = js.native
+  
+  @JSImport("@lumino/algorithm", "iterFn")
+  @js.native
+  def iterFn[T](fn: js.Function0[js.UndefOr[T]]): IIterator[T] = js.native
+  
+  @JSImport("@lumino/algorithm", "iterItems")
+  @js.native
+  def iterItems[T](`object`: StringDictionary[T]): IIterator[js.Tuple2[String, T]] = js.native
+  
+  @JSImport("@lumino/algorithm", "iterKeys")
+  @js.native
+  def iterKeys[T](`object`: StringDictionary[T]): IIterator[String] = js.native
+  
+  @JSImport("@lumino/algorithm", "iterValues")
+  @js.native
+  def iterValues[T](`object`: StringDictionary[T]): IIterator[T] = js.native
+  
+  @JSImport("@lumino/algorithm", "map")
+  @js.native
+  def map[T, U](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, U]): IIterator[U] = js.native
+  
+  @JSImport("@lumino/algorithm", "max")
+  @js.native
+  def max[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* first */ T, /* second */ T, Double]): js.UndefOr[T] = js.native
+  
+  @JSImport("@lumino/algorithm", "min")
+  @js.native
+  def min[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* first */ T, /* second */ T, Double]): js.UndefOr[T] = js.native
+  
+  @JSImport("@lumino/algorithm", "minmax")
+  @js.native
+  def minmax[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* first */ T, /* second */ T, Double]): js.UndefOr[js.Tuple2[T, T]] = js.native
+  
+  @JSImport("@lumino/algorithm", "once")
+  @js.native
+  def once[T](value: T): IIterator[T] = js.native
+  
+  @JSImport("@lumino/algorithm", "range")
+  @js.native
+  def range(start: Double): IIterator[Double] = js.native
+  @JSImport("@lumino/algorithm", "range")
+  @js.native
+  def range(start: Double, stop: js.UndefOr[scala.Nothing], step: Double): IIterator[Double] = js.native
+  @JSImport("@lumino/algorithm", "range")
+  @js.native
+  def range(start: Double, stop: Double): IIterator[Double] = js.native
+  @JSImport("@lumino/algorithm", "range")
+  @js.native
+  def range(start: Double, stop: Double, step: Double): IIterator[Double] = js.native
+  
+  @JSImport("@lumino/algorithm", "reduce")
+  @js.native
+  def reduce[T](
+    `object`: IterableOrArrayLike[T],
+    fn: js.Function3[/* accumulator */ T, /* value */ T, /* index */ Double, T]
+  ): T = js.native
+  @JSImport("@lumino/algorithm", "reduce")
+  @js.native
+  def reduce[T, U](
+    `object`: IterableOrArrayLike[T],
+    fn: js.Function3[/* accumulator */ U, /* value */ T, /* index */ Double, U],
+    initial: U
+  ): U = js.native
+  
+  @JSImport("@lumino/algorithm", "repeat")
+  @js.native
+  def repeat[T](value: T, count: Double): IIterator[T] = js.native
+  
+  @JSImport("@lumino/algorithm", "retro")
+  @js.native
+  def retro[T](`object`: RetroableOrArrayLike[T]): IIterator[T] = js.native
+  
+  @JSImport("@lumino/algorithm", "some")
+  @js.native
+  def some[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Boolean = js.native
+  
+  @JSImport("@lumino/algorithm", "stride")
+  @js.native
+  def stride[T](`object`: IterableOrArrayLike[T], step: Double): IIterator[T] = js.native
+  
+  @JSImport("@lumino/algorithm", "take")
+  @js.native
+  def take[T](`object`: IterableOrArrayLike[T], count: Double): IIterator[T] = js.native
+  
+  @JSImport("@lumino/algorithm", "toArray")
+  @js.native
+  def toArray[T](`object`: IterableOrArrayLike[T]): js.Array[T] = js.native
+  
+  @JSImport("@lumino/algorithm", "toObject")
+  @js.native
+  def toObject[T](`object`: IterableOrArrayLike[js.Tuple2[String, T]]): StringDictionary[T] = js.native
+  
+  @JSImport("@lumino/algorithm", "topologicSort")
+  @js.native
+  def topologicSort[T](edges: IterableOrArrayLike[js.Tuple2[T, T]]): js.Array[T] = js.native
+  
+  @JSImport("@lumino/algorithm", "zip")
+  @js.native
+  def zip[T](objects: IterableOrArrayLike[T]*): IIterator[js.Array[T]] = js.native
 }

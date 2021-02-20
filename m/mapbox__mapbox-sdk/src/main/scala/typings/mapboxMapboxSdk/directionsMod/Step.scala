@@ -2,12 +2,13 @@ package typings.mapboxMapboxSdk.directionsMod
 
 import typings.geojson.mod.LineString
 import typings.geojson.mod.MultiLineString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Step extends js.Object {
+trait Step extends StObject {
   
   var bannerInstructions: js.Array[BannerInstruction] = js.native
   
@@ -102,84 +103,72 @@ object Step {
   }
   
   @scala.inline
-  implicit class StepOps[Self <: Step] (val x: Self) extends AnyVal {
+  implicit class StepMutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBannerInstructions(value: js.Array[BannerInstruction]): Self = StObject.set(x, "bannerInstructions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBannerInstructionsVarargs(value: BannerInstruction*): Self = StObject.set(x, "bannerInstructions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinations(value: String): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBannerInstructionsVarargs(value: BannerInstruction*): Self = this.set("bannerInstructions", js.Array(value :_*))
+    def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
     
     @scala.inline
-    def setBannerInstructions(value: js.Array[BannerInstruction]): Self = this.set("bannerInstructions", value.asInstanceOf[js.Any])
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setDriving_side(value: DirectionsSide): Self = StObject.set(x, "driving_side", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriving_side(value: DirectionsSide): Self = this.set("driving_side", value.asInstanceOf[js.Any])
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setExits(value: String): Self = StObject.set(x, "exits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometry(value: LineString | MultiLineString): Self = this.set("geometry", value.asInstanceOf[js.Any])
+    def setExitsUndefined: Self = StObject.set(x, "exits", js.undefined)
     
     @scala.inline
-    def setIntersectionsVarargs(value: Intersection*): Self = this.set("intersections", js.Array(value :_*))
+    def setGeometry(value: LineString | MultiLineString): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntersections(value: js.Array[Intersection]): Self = this.set("intersections", value.asInstanceOf[js.Any])
+    def setIntersections(value: js.Array[Intersection]): Self = StObject.set(x, "intersections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManeuver(value: Maneuver): Self = this.set("maneuver", value.asInstanceOf[js.Any])
+    def setIntersectionsVarargs(value: Intersection*): Self = StObject.set(x, "intersections", js.Array(value :_*))
     
     @scala.inline
-    def setMode(value: DirectionsMode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setManeuver(value: Maneuver): Self = StObject.set(x, "maneuver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setMode(value: DirectionsMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVoiceInstructionsVarargs(value: VoiceInstruction*): Self = this.set("voiceInstructions", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVoiceInstructions(value: js.Array[VoiceInstruction]): Self = this.set("voiceInstructions", value.asInstanceOf[js.Any])
+    def setPronunciation(value: String): Self = StObject.set(x, "pronunciation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
+    def setPronunciationUndefined: Self = StObject.set(x, "pronunciation", js.undefined)
     
     @scala.inline
-    def setDestinations(value: String): Self = this.set("destinations", value.asInstanceOf[js.Any])
+    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDestinations: Self = this.set("destinations", js.undefined)
+    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     @scala.inline
-    def setExits(value: String): Self = this.set("exits", value.asInstanceOf[js.Any])
+    def setVoiceInstructions(value: js.Array[VoiceInstruction]): Self = StObject.set(x, "voiceInstructions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExits: Self = this.set("exits", js.undefined)
+    def setVoiceInstructionsVarargs(value: VoiceInstruction*): Self = StObject.set(x, "voiceInstructions", js.Array(value :_*))
     
     @scala.inline
-    def setPronunciation(value: String): Self = this.set("pronunciation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePronunciation: Self = this.set("pronunciation", js.undefined)
-    
-    @scala.inline
-    def setRef(value: String): Self = this.set("ref", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRef: Self = this.set("ref", js.undefined)
+    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.contentfulManagement.anon
 
 import typings.contentfulManagement.commonTypesMod.QueryOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Query extends js.Object {
+trait Query extends StObject {
   
   var query: js.UndefOr[QueryOptions] = js.native
   
@@ -21,30 +22,18 @@ object Query {
   }
   
   @scala.inline
-  implicit class QueryOps[Self <: Query] (val x: Self) extends AnyVal {
+  implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQuery(value: QueryOptions): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTeamId(value: String): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: QueryOptions): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
-    
-    @scala.inline
-    def setTeamId(value: String): Self = this.set("teamId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTeamId: Self = this.set("teamId", js.undefined)
+    def setTeamIdUndefined: Self = StObject.set(x, "teamId", js.undefined)
   }
 }

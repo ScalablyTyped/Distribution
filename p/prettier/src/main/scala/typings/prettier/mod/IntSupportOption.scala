@@ -2,6 +2,7 @@ package typings.prettier.mod
 
 import typings.prettier.prettierBooleans.`false`
 import typings.prettier.prettierStrings.int
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,9 @@ trait IntSupportOption
   extends BaseSupportOption[int]
      with _SupportOption {
   
-  var array: js.UndefOr[`false`] = js.native
-  
   var default: Double = js.native
+  
+  var array: js.UndefOr[`false`] = js.native
   
   var range: js.UndefOr[SupportOptionRange] = js.native
 }
@@ -27,33 +28,21 @@ object IntSupportOption {
   }
   
   @scala.inline
-  implicit class IntSupportOptionOps[Self <: IntSupportOption] (val x: Self) extends AnyVal {
+  implicit class IntSupportOptionMutableBuilder[Self <: IntSupportOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArray(value: `false`): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: Double): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setRange(value: SupportOptionRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArray(value: `false`): Self = this.set("array", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArray: Self = this.set("array", js.undefined)
-    
-    @scala.inline
-    def setRange(value: SupportOptionRange): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

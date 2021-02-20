@@ -2,6 +2,7 @@ package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.anon.Clear
 import typings.antDesignReactNative.inputItemMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class InputItem () extends default
 /* static members */
-@JSImport("@ant-design/react-native", "InputItem")
-@js.native
-object InputItem extends js.Object {
+object InputItem {
   
-  var defaultProps: Clear = js.native
+  @JSImport("@ant-design/react-native", "InputItem")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@ant-design/react-native", "InputItem.defaultProps")
+  @js.native
+  def defaultProps: Clear = js.native
+  @scala.inline
+  def defaultProps_=(x: Clear): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

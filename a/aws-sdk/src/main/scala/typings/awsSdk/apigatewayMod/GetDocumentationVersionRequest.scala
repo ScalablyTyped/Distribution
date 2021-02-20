@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDocumentationVersionRequest extends js.Object {
+trait GetDocumentationVersionRequest extends StObject {
   
   /**
     * [Required] The version identifier of the to-be-retrieved documentation snapshot.
@@ -26,24 +27,12 @@ object GetDocumentationVersionRequest {
   }
   
   @scala.inline
-  implicit class GetDocumentationVersionRequestOps[Self <: GetDocumentationVersionRequest] (val x: Self) extends AnyVal {
+  implicit class GetDocumentationVersionRequestMutableBuilder[Self <: GetDocumentationVersionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentationVersion(value: String): Self = StObject.set(x, "documentationVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDocumentationVersion(value: String): Self = this.set("documentationVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRestApiId(value: String): Self = this.set("restApiId", value.asInstanceOf[js.Any])
+    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

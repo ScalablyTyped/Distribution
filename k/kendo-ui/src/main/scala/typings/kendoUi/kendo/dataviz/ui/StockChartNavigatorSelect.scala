@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.dataviz.ui
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StockChartNavigatorSelect extends js.Object {
+trait StockChartNavigatorSelect extends StObject {
   
   var from: js.UndefOr[Date] = js.native
   
@@ -23,36 +24,24 @@ object StockChartNavigatorSelect {
   }
   
   @scala.inline
-  implicit class StockChartNavigatorSelectOps[Self <: StockChartNavigatorSelect] (val x: Self) extends AnyVal {
+  implicit class StockChartNavigatorSelectMutableBuilder[Self <: StockChartNavigatorSelect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrom(value: Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMousewheel(value: Boolean | StockChartNavigatorSelectMousewheel): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: Date): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setMousewheelUndefined: Self = StObject.set(x, "mousewheel", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setTo(value: Date): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMousewheel(value: Boolean | StockChartNavigatorSelectMousewheel): Self = this.set("mousewheel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMousewheel: Self = this.set("mousewheel", js.undefined)
-    
-    @scala.inline
-    def setTo(value: Date): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("to", js.undefined)
+    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

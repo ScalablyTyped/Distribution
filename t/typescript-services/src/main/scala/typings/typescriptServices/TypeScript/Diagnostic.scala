@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,48 +58,36 @@ object Diagnostic {
   }
   
   @scala.inline
-  implicit class DiagnosticOps[Self <: Diagnostic] (val x: Self) extends AnyVal {
+  implicit class DiagnosticMutableBuilder[Self <: Diagnostic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalLocations(value: () => js.Array[Location]): Self = StObject.set(x, "additionalLocations", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArguments(value: () => js.Array[_]): Self = StObject.set(x, "arguments", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiagnosticKey(value: () => String): Self = StObject.set(x, "diagnosticKey", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_additionalLocations(value: js.Any): Self = this.set("_additionalLocations", value.asInstanceOf[js.Any])
+    def setInfo(value: () => DiagnosticInfo): Self = StObject.set(x, "info", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_arguments(value: js.Any): Self = this.set("_arguments", value.asInstanceOf[js.Any])
+    def setMessage(value: () => String): Self = StObject.set(x, "message", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_diagnosticKey(value: js.Any): Self = this.set("_diagnosticKey", value.asInstanceOf[js.Any])
+    def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdditionalLocations(value: () => js.Array[Location]): Self = this.set("additionalLocations", js.Any.fromFunction0(value))
+    def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setArguments(value: () => js.Array[_]): Self = this.set("arguments", js.Any.fromFunction0(value))
+    def set_additionalLocations(value: js.Any): Self = StObject.set(x, "_additionalLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagnosticKey(value: () => String): Self = this.set("diagnosticKey", js.Any.fromFunction0(value))
+    def set_arguments(value: js.Any): Self = StObject.set(x, "_arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfo(value: () => DiagnosticInfo): Self = this.set("info", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMessage(value: () => String): Self = this.set("message", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setText(value: () => String): Self = this.set("text", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToJSON(value: js.Any => js.Any): Self = this.set("toJSON", js.Any.fromFunction1(value))
+    def set_diagnosticKey(value: js.Any): Self = StObject.set(x, "_diagnosticKey", value.asInstanceOf[js.Any])
   }
 }

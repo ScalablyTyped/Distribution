@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.script
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -91,48 +92,36 @@ object XEngine {
   }
   
   @scala.inline
-  implicit class XEngineOps[Self <: XEngine] (val x: Self) extends AnyVal {
+  implicit class XEngineMutableBuilder[Self <: XEngine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddEngineListener(value: XEngineListener => Unit): Self = StObject.set(x, "addEngineListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompile(value: (String, String, Boolean) => Boolean): Self = StObject.set(x, "compile", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setRoot(value: XInterface): Self = this.set("Root", value.asInstanceOf[js.Any])
+    def setGetRoot(value: () => XInterface): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddEngineListener(value: XEngineListener => Unit): Self = this.set("addEngineListener", js.Any.fromFunction1(value))
+    def setRemoveEngineListener(value: XEngineListener => Unit): Self = StObject.set(x, "removeEngineListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCancel(value: () => Unit): Self = this.set("cancel", js.Any.fromFunction0(value))
+    def setRoot(value: XInterface): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompile(value: (String, String, Boolean) => Boolean): Self = this.set("compile", js.Any.fromFunction3(value))
+    def setRun(value: (String, XInterface, SeqEquiv[_]) => js.Any): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetRoot(value: () => XInterface): Self = this.set("getRoot", js.Any.fromFunction0(value))
+    def setRunAsync(value: (String, XInterface, SeqEquiv[_], XEngineListener) => Unit): Self = StObject.set(x, "runAsync", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setRemoveEngineListener(value: XEngineListener => Unit): Self = this.set("removeEngineListener", js.Any.fromFunction1(value))
+    def setSetLibraryAccess(value: XLibraryAccess => Unit): Self = StObject.set(x, "setLibraryAccess", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRun(value: (String, XInterface, SeqEquiv[_]) => js.Any): Self = this.set("run", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setRunAsync(value: (String, XInterface, SeqEquiv[_], XEngineListener) => Unit): Self = this.set("runAsync", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setSetLibraryAccess(value: XLibraryAccess => Unit): Self = this.set("setLibraryAccess", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetRoot(value: XInterface => Unit): Self = this.set("setRoot", js.Any.fromFunction1(value))
+    def setSetRoot(value: XInterface => Unit): Self = StObject.set(x, "setRoot", js.Any.fromFunction1(value))
   }
 }

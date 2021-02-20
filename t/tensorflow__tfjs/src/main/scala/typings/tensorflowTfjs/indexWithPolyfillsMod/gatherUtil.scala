@@ -1,14 +1,15 @@
 package typings.tensorflowTfjs.indexWithPolyfillsMod
 
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "gather_util")
-@js.native
-object gatherUtil extends js.Object {
+object gatherUtil {
   
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "gather_util.prepareAndValidate")
+  @js.native
   def prepareAndValidate(
     tensor: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
     indices: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]

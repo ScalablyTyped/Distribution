@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param graphicsDevice - The graphics device of the application.
   */
 @js.native
-trait PostEffect extends js.Object {
+trait PostEffect extends StObject {
   
   /**
     * The graphics device of the application. [read only].
@@ -58,36 +59,24 @@ object PostEffect {
   }
   
   @scala.inline
-  implicit class PostEffectOps[Self <: PostEffect] (val x: Self) extends AnyVal {
+  implicit class PostEffectMutableBuilder[Self <: PostEffect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevice(value: GraphicsDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNeedsDepthBuffer(value: Boolean): Self = StObject.set(x, "needsDepthBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRender(value: (RenderTarget, RenderTarget, Vec4) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDevice(value: GraphicsDevice): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setShader(value: Shader): Self = StObject.set(x, "shader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNeedsDepthBuffer(value: Boolean): Self = this.set("needsDepthBuffer", value.asInstanceOf[js.Any])
+    def setShaderNull: Self = StObject.set(x, "shader", null)
     
     @scala.inline
-    def setRender(value: (RenderTarget, RenderTarget, Vec4) => Unit): Self = this.set("render", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setVertexBuffer(value: VertexBuffer): Self = this.set("vertexBuffer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShader(value: Shader): Self = this.set("shader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShaderNull: Self = this.set("shader", null)
+    def setVertexBuffer(value: VertexBuffer): Self = StObject.set(x, "vertexBuffer", value.asInstanceOf[js.Any])
   }
 }

@@ -15,13 +15,14 @@ import typings.baseui.baseuiStrings.topLeft
 import typings.baseui.baseuiStrings.topRight
 import typings.baseui.popoverMod.Offset
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined baseui.baseui/popover.SharedStylePropsArg & {  children :react.react.ReactNode | undefined} */
 @js.native
-trait SharedStylePropsArgchildrArrowOffset extends js.Object {
+trait SharedStylePropsArgchildrArrowOffset extends StObject {
   
   @JSName("$arrowOffset")
   var $arrowOffset: js.UndefOr[Offset] = js.native
@@ -57,68 +58,56 @@ object SharedStylePropsArgchildrArrowOffset {
   }
   
   @scala.inline
-  implicit class SharedStylePropsArgchildrArrowOffsetOps[Self <: SharedStylePropsArgchildrArrowOffset] (val x: Self) extends AnyVal {
+  implicit class SharedStylePropsArgchildrArrowOffsetMutableBuilder[Self <: SharedStylePropsArgchildrArrowOffset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$arrowOffset(value: Offset): Self = StObject.set(x, "$arrowOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$arrowOffsetUndefined: Self = StObject.set(x, "$arrowOffset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set$isAnimating(value: Boolean): Self = StObject.set(x, "$isAnimating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$arrowOffset(value: Offset): Self = this.set("$arrowOffset", value.asInstanceOf[js.Any])
+    def set$isAnimatingUndefined: Self = StObject.set(x, "$isAnimating", js.undefined)
     
     @scala.inline
-    def delete$arrowOffset: Self = this.set("$arrowOffset", js.undefined)
+    def set$isOpen(value: Boolean): Self = StObject.set(x, "$isOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$isAnimating(value: Boolean): Self = this.set("$isAnimating", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$isAnimating: Self = this.set("$isAnimating", js.undefined)
-    
-    @scala.inline
-    def set$isOpen(value: Boolean): Self = this.set("$isOpen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$isOpen: Self = this.set("$isOpen", js.undefined)
+    def set$isOpenUndefined: Self = StObject.set(x, "$isOpen", js.undefined)
     
     @scala.inline
     def set$placement(
       value: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
-    ): Self = this.set("$placement", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "$placement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$placement: Self = this.set("$placement", js.undefined)
+    def set$placementUndefined: Self = StObject.set(x, "$placement", js.undefined)
     
     @scala.inline
-    def set$popoverMargin(value: Double): Self = this.set("$popoverMargin", value.asInstanceOf[js.Any])
+    def set$popoverMargin(value: Double): Self = StObject.set(x, "$popoverMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$popoverMargin: Self = this.set("$popoverMargin", js.undefined)
+    def set$popoverMarginUndefined: Self = StObject.set(x, "$popoverMargin", js.undefined)
     
     @scala.inline
-    def set$popoverOffset(value: Offset): Self = this.set("$popoverOffset", value.asInstanceOf[js.Any])
+    def set$popoverOffset(value: Offset): Self = StObject.set(x, "$popoverOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$popoverOffset: Self = this.set("$popoverOffset", js.undefined)
+    def set$popoverOffsetUndefined: Self = StObject.set(x, "$popoverOffset", js.undefined)
     
     @scala.inline
-    def set$showArrow(value: Boolean): Self = this.set("$showArrow", value.asInstanceOf[js.Any])
+    def set$showArrow(value: Boolean): Self = StObject.set(x, "$showArrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$showArrow: Self = this.set("$showArrow", js.undefined)
+    def set$showArrowUndefined: Self = StObject.set(x, "$showArrow", js.undefined)
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
   }
 }

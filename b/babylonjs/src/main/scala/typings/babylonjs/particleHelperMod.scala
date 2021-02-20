@@ -6,24 +6,31 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.particleSystemSetMod.ParticleSystemSet
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Particles/particleHelper", JSImport.Namespace)
-@js.native
-object particleHelperMod extends js.Object {
+object particleHelperMod {
   
+  @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper")
   @js.native
-  class ParticleHelper () extends js.Object
+  class ParticleHelper () extends StObject
   /* static members */
-  @js.native
-  object ParticleHelper extends js.Object {
+  object ParticleHelper {
+    
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Gets or sets base Assets URL
       */
-    var BaseAssetsUrl: String = js.native
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper.BaseAssetsUrl")
+    @js.native
+    def BaseAssetsUrl: String = js.native
+    @scala.inline
+    def BaseAssetsUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BaseAssetsUrl")(x.asInstanceOf[js.Any])
     
     /**
       * This is the main static method (one-liner) of this helper to create different particle systems
@@ -32,7 +39,11 @@ object particleHelperMod extends js.Object {
       * @param gpu If the system will use gpu
       * @returns the ParticleSystemSet created
       */
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper.CreateAsync")
+    @js.native
     def CreateAsync(`type`: String, scene: Nullable[Scene]): js.Promise[ParticleSystemSet] = js.native
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper.CreateAsync")
+    @js.native
     def CreateAsync(`type`: String, scene: Nullable[Scene], gpu: Boolean): js.Promise[ParticleSystemSet] = js.native
     
     /**
@@ -43,28 +54,44 @@ object particleHelperMod extends js.Object {
       * @param useGPU defines if a GPUParticleSystem must be created (default is false)
       * @returns the new Particle system
       */
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper.CreateDefault")
+    @js.native
     def CreateDefault(emitter: Nullable[AbstractMesh | Vector3]): IParticleSystem = js.native
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper.CreateDefault")
+    @js.native
     def CreateDefault(
       emitter: Nullable[AbstractMesh | Vector3],
       capacity: js.UndefOr[scala.Nothing],
       scene: js.UndefOr[scala.Nothing],
       useGPU: Boolean
     ): IParticleSystem = js.native
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper.CreateDefault")
+    @js.native
     def CreateDefault(emitter: Nullable[AbstractMesh | Vector3], capacity: js.UndefOr[scala.Nothing], scene: Scene): IParticleSystem = js.native
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper.CreateDefault")
+    @js.native
     def CreateDefault(
       emitter: Nullable[AbstractMesh | Vector3],
       capacity: js.UndefOr[scala.Nothing],
       scene: Scene,
       useGPU: Boolean
     ): IParticleSystem = js.native
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper.CreateDefault")
+    @js.native
     def CreateDefault(emitter: Nullable[AbstractMesh | Vector3], capacity: Double): IParticleSystem = js.native
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper.CreateDefault")
+    @js.native
     def CreateDefault(
       emitter: Nullable[AbstractMesh | Vector3],
       capacity: Double,
       scene: js.UndefOr[scala.Nothing],
       useGPU: Boolean
     ): IParticleSystem = js.native
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper.CreateDefault")
+    @js.native
     def CreateDefault(emitter: Nullable[AbstractMesh | Vector3], capacity: Double, scene: Scene): IParticleSystem = js.native
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper.CreateDefault")
+    @js.native
     def CreateDefault(emitter: Nullable[AbstractMesh | Vector3], capacity: Double, scene: Scene, useGPU: Boolean): IParticleSystem = js.native
     
     /**
@@ -75,9 +102,17 @@ object particleHelperMod extends js.Object {
       * @param rootUrl defines the root URL to use to load textures and relative dependencies
       * @returns a promise that will resolve to the new particle system
       */
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper.CreateFromSnippetAsync")
+    @js.native
     def CreateFromSnippetAsync(snippetId: String, scene: Scene): js.Promise[IParticleSystem] = js.native
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper.CreateFromSnippetAsync")
+    @js.native
     def CreateFromSnippetAsync(snippetId: String, scene: Scene, gpu: js.UndefOr[scala.Nothing], rootUrl: String): js.Promise[IParticleSystem] = js.native
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper.CreateFromSnippetAsync")
+    @js.native
     def CreateFromSnippetAsync(snippetId: String, scene: Scene, gpu: Boolean): js.Promise[IParticleSystem] = js.native
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper.CreateFromSnippetAsync")
+    @js.native
     def CreateFromSnippetAsync(snippetId: String, scene: Scene, gpu: Boolean, rootUrl: String): js.Promise[IParticleSystem] = js.native
     
     /**
@@ -86,6 +121,8 @@ object particleHelperMod extends js.Object {
       * @param systems defines the particle systems to export
       * @returns the created particle system set
       */
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper.ExportSet")
+    @js.native
     def ExportSet(systems: js.Array[IParticleSystem]): ParticleSystemSet = js.native
     
     /**
@@ -97,12 +134,24 @@ object particleHelperMod extends js.Object {
       * @param rootUrl defines the root URL to use to load textures and relative dependencies
       * @returns a promise that will resolve to the new particle system
       */
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper.ParseFromFileAsync")
+    @js.native
     def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene): js.Promise[IParticleSystem] = js.native
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper.ParseFromFileAsync")
+    @js.native
     def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene, gpu: js.UndefOr[scala.Nothing], rootUrl: String): js.Promise[IParticleSystem] = js.native
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper.ParseFromFileAsync")
+    @js.native
     def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene, gpu: Boolean): js.Promise[IParticleSystem] = js.native
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper.ParseFromFileAsync")
+    @js.native
     def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene, gpu: Boolean, rootUrl: String): js.Promise[IParticleSystem] = js.native
     
     /** Define the Url to load snippets */
-    var SnippetUrl: String = js.native
+    @JSImport("babylonjs/Particles/particleHelper", "ParticleHelper.SnippetUrl")
+    @js.native
+    def SnippetUrl: String = js.native
+    @scala.inline
+    def SnippetUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SnippetUrl")(x.asInstanceOf[js.Any])
   }
 }

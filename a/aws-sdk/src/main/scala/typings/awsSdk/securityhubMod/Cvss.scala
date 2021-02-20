@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cvss extends js.Object {
+trait Cvss extends StObject {
   
   /**
     * The base CVSS score.
@@ -31,36 +32,24 @@ object Cvss {
   }
   
   @scala.inline
-  implicit class CvssOps[Self <: Cvss] (val x: Self) extends AnyVal {
+  implicit class CvssMutableBuilder[Self <: Cvss] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseScore(value: Double): Self = StObject.set(x, "BaseScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseScoreUndefined: Self = StObject.set(x, "BaseScore", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseVector(value: NonEmptyString): Self = StObject.set(x, "BaseVector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseScore(value: Double): Self = this.set("BaseScore", value.asInstanceOf[js.Any])
+    def setBaseVectorUndefined: Self = StObject.set(x, "BaseVector", js.undefined)
     
     @scala.inline
-    def deleteBaseScore: Self = this.set("BaseScore", js.undefined)
+    def setVersion(value: NonEmptyString): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseVector(value: NonEmptyString): Self = this.set("BaseVector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBaseVector: Self = this.set("BaseVector", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: NonEmptyString): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

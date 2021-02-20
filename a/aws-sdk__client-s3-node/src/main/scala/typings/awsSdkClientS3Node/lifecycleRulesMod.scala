@@ -1,13 +1,13 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/model/_LifecycleRules", JSImport.Namespace)
-@js.native
-object lifecycleRulesMod extends js.Object {
+object lifecycleRulesMod {
   
-  @JSName("_LifecycleRules")
+  @JSImport("@aws-sdk/client-s3-node/model/_LifecycleRules", "_LifecycleRules")
+  @js.native
   val LifecycleRules: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
 }

@@ -1,6 +1,7 @@
 package typings.fabric.mod.fabric
 
 import typings.fabric.fabricImplMod.ITextOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +19,7 @@ class IText protected ()
   def this(text: String, options: ITextOptions) = this()
 }
 /* static members */
-@JSImport("fabric", "fabric.IText")
-@js.native
-object IText extends js.Object {
+object IText {
   
   /**
     * Returns fabric.IText instance from an object representation
@@ -29,6 +28,10 @@ object IText extends js.Object {
     * @param {Object} object Object to create an instance from
     * @param {function} [callback] invoked with new instance as argument
     */
+  @JSImport("fabric", "fabric.IText.fromObject")
+  @js.native
   def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.IText = js.native
+  @JSImport("fabric", "fabric.IText.fromObject")
+  @js.native
   def fromObject(`object`: js.Any, callback: js.Function): typings.fabric.fabricImplMod.IText = js.native
 }

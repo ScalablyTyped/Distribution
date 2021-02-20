@@ -1,9 +1,8 @@
 package typings.mongodbMemoryServerCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mongodb-memory-server-core/lib/util/@/tests/MongoInstance-test", JSImport.Namespace)
-@js.native
-object mongoInstanceTestMod extends js.Object
+object mongoInstanceTestMod

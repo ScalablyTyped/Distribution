@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeOptions extends js.Object {
+trait TimeOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Gantt) A custom `Date` class for advanced date
@@ -67,54 +68,42 @@ object TimeOptions {
   }
   
   @scala.inline
-  implicit class TimeOptionsOps[Self <: TimeOptions] (val x: Self) extends AnyVal {
+  implicit class TimeOptionsMutableBuilder[Self <: TimeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: js.Any): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetTimezoneOffset(value: /* timestamp */ Double => Double): Self = StObject.set(x, "getTimezoneOffset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDate(value: js.Any): Self = this.set("Date", value.asInstanceOf[js.Any])
+    def setGetTimezoneOffsetUndefined: Self = StObject.set(x, "getTimezoneOffset", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("Date", js.undefined)
+    def setMoment(value: js.Function): Self = StObject.set(x, "moment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTimezoneOffset(value: /* timestamp */ Double => Double): Self = this.set("getTimezoneOffset", js.Any.fromFunction1(value))
+    def setMomentUndefined: Self = StObject.set(x, "moment", js.undefined)
     
     @scala.inline
-    def deleteGetTimezoneOffset: Self = this.set("getTimezoneOffset", js.undefined)
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoment(value: js.Function): Self = this.set("moment", value.asInstanceOf[js.Any])
+    def setTimezoneOffset(value: Double): Self = StObject.set(x, "timezoneOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMoment: Self = this.set("moment", js.undefined)
+    def setTimezoneOffsetUndefined: Self = StObject.set(x, "timezoneOffset", js.undefined)
     
     @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
+    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
     @scala.inline
-    def deleteTimezone: Self = this.set("timezone", js.undefined)
+    def setUseUTC(value: Boolean): Self = StObject.set(x, "useUTC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezoneOffset(value: Double): Self = this.set("timezoneOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimezoneOffset: Self = this.set("timezoneOffset", js.undefined)
-    
-    @scala.inline
-    def setUseUTC(value: Boolean): Self = this.set("useUTC", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseUTC: Self = this.set("useUTC", js.undefined)
+    def setUseUTCUndefined: Self = StObject.set(x, "useUTC", js.undefined)
   }
 }

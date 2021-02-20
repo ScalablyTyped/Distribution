@@ -1,12 +1,13 @@
 package typings.antvG2.mod
 
 import typings.antvG2.anon.Dictkey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Geom extends js.Object {
+trait Geom extends StObject {
   
   def active(open: Boolean): Geom = js.native
   

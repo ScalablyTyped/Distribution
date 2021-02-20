@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompareFacesResponse extends js.Object {
+trait CompareFacesResponse extends StObject {
   
   /**
     * An array of faces in the target image that match the source image face. Each CompareFacesMatch object provides the bounding box, the confidence level that the bounding box contains a face, and the similarity score for the face in the bounding box and the face in the source image.
@@ -41,54 +42,42 @@ object CompareFacesResponse {
   }
   
   @scala.inline
-  implicit class CompareFacesResponseOps[Self <: CompareFacesResponse] (val x: Self) extends AnyVal {
+  implicit class CompareFacesResponseMutableBuilder[Self <: CompareFacesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFaceMatches(value: CompareFacesMatchList): Self = StObject.set(x, "FaceMatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFaceMatchesUndefined: Self = StObject.set(x, "FaceMatches", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFaceMatchesVarargs(value: CompareFacesMatch*): Self = StObject.set(x, "FaceMatches", js.Array(value :_*))
     
     @scala.inline
-    def setFaceMatchesVarargs(value: CompareFacesMatch*): Self = this.set("FaceMatches", js.Array(value :_*))
+    def setSourceImageFace(value: ComparedSourceImageFace): Self = StObject.set(x, "SourceImageFace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaceMatches(value: CompareFacesMatchList): Self = this.set("FaceMatches", value.asInstanceOf[js.Any])
+    def setSourceImageFaceUndefined: Self = StObject.set(x, "SourceImageFace", js.undefined)
     
     @scala.inline
-    def deleteFaceMatches: Self = this.set("FaceMatches", js.undefined)
+    def setSourceImageOrientationCorrection(value: OrientationCorrection): Self = StObject.set(x, "SourceImageOrientationCorrection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceImageFace(value: ComparedSourceImageFace): Self = this.set("SourceImageFace", value.asInstanceOf[js.Any])
+    def setSourceImageOrientationCorrectionUndefined: Self = StObject.set(x, "SourceImageOrientationCorrection", js.undefined)
     
     @scala.inline
-    def deleteSourceImageFace: Self = this.set("SourceImageFace", js.undefined)
+    def setTargetImageOrientationCorrection(value: OrientationCorrection): Self = StObject.set(x, "TargetImageOrientationCorrection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceImageOrientationCorrection(value: OrientationCorrection): Self = this.set("SourceImageOrientationCorrection", value.asInstanceOf[js.Any])
+    def setTargetImageOrientationCorrectionUndefined: Self = StObject.set(x, "TargetImageOrientationCorrection", js.undefined)
     
     @scala.inline
-    def deleteSourceImageOrientationCorrection: Self = this.set("SourceImageOrientationCorrection", js.undefined)
+    def setUnmatchedFaces(value: CompareFacesUnmatchList): Self = StObject.set(x, "UnmatchedFaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetImageOrientationCorrection(value: OrientationCorrection): Self = this.set("TargetImageOrientationCorrection", value.asInstanceOf[js.Any])
+    def setUnmatchedFacesUndefined: Self = StObject.set(x, "UnmatchedFaces", js.undefined)
     
     @scala.inline
-    def deleteTargetImageOrientationCorrection: Self = this.set("TargetImageOrientationCorrection", js.undefined)
-    
-    @scala.inline
-    def setUnmatchedFacesVarargs(value: ComparedFace*): Self = this.set("UnmatchedFaces", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnmatchedFaces(value: CompareFacesUnmatchList): Self = this.set("UnmatchedFaces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnmatchedFaces: Self = this.set("UnmatchedFaces", js.undefined)
+    def setUnmatchedFacesVarargs(value: ComparedFace*): Self = StObject.set(x, "UnmatchedFaces", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HistogramViewModelProperties extends js.Object {
+trait HistogramViewModelProperties extends StObject {
   
   /**
     * The statistical average of the data in the histogram.
@@ -51,53 +52,41 @@ object HistogramViewModelProperties {
   }
   
   @scala.inline
-  implicit class HistogramViewModelPropertiesOps[Self <: HistogramViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class HistogramViewModelPropertiesMutableBuilder[Self <: HistogramViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAverage(value: Double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBins(value: js.Array[Bin]): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverage(value: Double): Self = this.set("average", value.asInstanceOf[js.Any])
+    def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
     
     @scala.inline
-    def deleteAverage: Self = this.set("average", js.undefined)
-    
-    @scala.inline
-    def setBinsVarargs(value: Bin*): Self = this.set("bins", js.Array(value :_*))
-    
-    @scala.inline
-    def setBins(value: js.Array[Bin]): Self = this.set("bins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBins: Self = this.set("bins", js.undefined)
+    def setBinsVarargs(value: Bin*): Self = StObject.set(x, "bins", js.Array(value :_*))
     
     @scala.inline
     def setLabelFormatFunction(
       value: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String
-    ): Self = this.set("labelFormatFunction", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "labelFormatFunction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteLabelFormatFunction: Self = this.set("labelFormatFunction", js.undefined)
+    def setLabelFormatFunctionUndefined: Self = StObject.set(x, "labelFormatFunction", js.undefined)
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
   }
 }

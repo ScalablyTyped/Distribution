@@ -2,6 +2,7 @@ package typings.senchaTouch.Ext.draw
 
 import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -231,152 +232,140 @@ object IPath {
   }
   
   @scala.inline
-  implicit class IPathOps[Self <: IPath] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class IPathMutableBuilder[Self <: IPath] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setArc(
       value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* radius */ js.UndefOr[Double], /* startAngle */ js.UndefOr[Double], /* endAngle */ js.UndefOr[Double], /* anticlockwise */ js.UndefOr[Double]) => Unit
-    ): Self = this.set("arc", js.Any.fromFunction6(value))
-    
-    @scala.inline
-    def deleteArc: Self = this.set("arc", js.undefined)
+    ): Self = StObject.set(x, "arc", js.Any.fromFunction6(value))
     
     @scala.inline
     def setArcSvg(
       value: (/* rx */ js.UndefOr[Double], /* ry */ js.UndefOr[Double], /* rotation */ js.UndefOr[Double], /* fA */ js.UndefOr[Double], /* fS */ js.UndefOr[Double], /* x2 */ js.UndefOr[Double], /* y2 */ js.UndefOr[Double]) => Unit
-    ): Self = this.set("arcSvg", js.Any.fromFunction7(value))
+    ): Self = StObject.set(x, "arcSvg", js.Any.fromFunction7(value))
     
     @scala.inline
-    def deleteArcSvg: Self = this.set("arcSvg", js.undefined)
+    def setArcSvgUndefined: Self = StObject.set(x, "arcSvg", js.undefined)
     
     @scala.inline
     def setArcTo(
       value: (/* x1 */ js.UndefOr[Double], /* y1 */ js.UndefOr[Double], /* x2 */ js.UndefOr[Double], /* y2 */ js.UndefOr[Double], /* rx */ js.UndefOr[Double], /* ry */ js.UndefOr[Double], /* rotation */ js.UndefOr[Double]) => Unit
-    ): Self = this.set("arcTo", js.Any.fromFunction7(value))
+    ): Self = StObject.set(x, "arcTo", js.Any.fromFunction7(value))
     
     @scala.inline
-    def deleteArcTo: Self = this.set("arcTo", js.undefined)
+    def setArcToUndefined: Self = StObject.set(x, "arcTo", js.undefined)
+    
+    @scala.inline
+    def setArcUndefined: Self = StObject.set(x, "arc", js.undefined)
     
     @scala.inline
     def setBezierCurveTo(
       value: (/* cx1 */ js.UndefOr[Double], /* cy1 */ js.UndefOr[Double], /* cx2 */ js.UndefOr[Double], /* cy2 */ js.UndefOr[Double], /* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit
-    ): Self = this.set("bezierCurveTo", js.Any.fromFunction6(value))
+    ): Self = StObject.set(x, "bezierCurveTo", js.Any.fromFunction6(value))
     
     @scala.inline
-    def deleteBezierCurveTo: Self = this.set("bezierCurveTo", js.undefined)
+    def setBezierCurveToUndefined: Self = StObject.set(x, "bezierCurveTo", js.undefined)
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteClear: Self = this.set("clear", js.undefined)
+    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
     @scala.inline
-    def setClone(value: () => IPath): Self = this.set("clone", js.Any.fromFunction0(value))
+    def setClone_(value: () => IPath): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteClone: Self = this.set("clone", js.undefined)
+    def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
     
     @scala.inline
-    def setClosePath(value: () => Unit): Self = this.set("closePath", js.Any.fromFunction0(value))
+    def setClosePath(value: () => Unit): Self = StObject.set(x, "closePath", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteClosePath: Self = this.set("closePath", js.undefined)
+    def setClosePathUndefined: Self = StObject.set(x, "closePath", js.undefined)
     
     @scala.inline
     def setEllipse(
       value: (/* cx */ js.UndefOr[Double], /* cy */ js.UndefOr[Double], /* radiusX */ js.UndefOr[Double], /* radiusY */ js.UndefOr[Double], /* rotation */ js.UndefOr[Double], /* startAngle */ js.UndefOr[Double], /* endAngle */ js.UndefOr[Double], /* anticlockwise */ js.UndefOr[Double]) => Unit
-    ): Self = this.set("ellipse", js.Any.fromFunction8(value))
+    ): Self = StObject.set(x, "ellipse", js.Any.fromFunction8(value))
     
     @scala.inline
-    def deleteEllipse: Self = this.set("ellipse", js.undefined)
+    def setEllipseUndefined: Self = StObject.set(x, "ellipse", js.undefined)
     
     @scala.inline
-    def setFromStripes(value: /* stripes */ js.UndefOr[Array] => Unit): Self = this.set("fromStripes", js.Any.fromFunction1(value))
+    def setFromStripes(value: /* stripes */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "fromStripes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFromStripes: Self = this.set("fromStripes", js.undefined)
+    def setFromStripesUndefined: Self = StObject.set(x, "fromStripes", js.undefined)
     
     @scala.inline
-    def setFromSvgString(value: /* pathString */ js.UndefOr[String] => Unit): Self = this.set("fromSvgString", js.Any.fromFunction1(value))
+    def setFromSvgString(value: /* pathString */ js.UndefOr[String] => Unit): Self = StObject.set(x, "fromSvgString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFromSvgString: Self = this.set("fromSvgString", js.undefined)
+    def setFromSvgStringUndefined: Self = StObject.set(x, "fromSvgString", js.undefined)
     
     @scala.inline
-    def setGetDimension(value: /* target */ js.UndefOr[js.Any] => _): Self = this.set("getDimension", js.Any.fromFunction1(value))
+    def setGetDimension(value: /* target */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "getDimension", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetDimension: Self = this.set("getDimension", js.undefined)
+    def setGetDimensionUndefined: Self = StObject.set(x, "getDimension", js.undefined)
     
     @scala.inline
-    def setGetDimensionWithTransform(value: (/* matrix */ js.UndefOr[IMatrix], /* target */ js.UndefOr[js.Any]) => _): Self = this.set("getDimensionWithTransform", js.Any.fromFunction2(value))
+    def setGetDimensionWithTransform(value: (/* matrix */ js.UndefOr[IMatrix], /* target */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "getDimensionWithTransform", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteGetDimensionWithTransform: Self = this.set("getDimensionWithTransform", js.undefined)
+    def setGetDimensionWithTransformUndefined: Self = StObject.set(x, "getDimensionWithTransform", js.undefined)
     
     @scala.inline
-    def setIsPointInPath(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Boolean): Self = this.set("isPointInPath", js.Any.fromFunction2(value))
+    def setIsPointInPath(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Boolean): Self = StObject.set(x, "isPointInPath", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteIsPointInPath: Self = this.set("isPointInPath", js.undefined)
+    def setIsPointInPathUndefined: Self = StObject.set(x, "isPointInPath", js.undefined)
     
     @scala.inline
-    def setLineTo(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit): Self = this.set("lineTo", js.Any.fromFunction2(value))
+    def setLineTo(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "lineTo", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteLineTo: Self = this.set("lineTo", js.undefined)
+    def setLineToUndefined: Self = StObject.set(x, "lineTo", js.undefined)
     
     @scala.inline
-    def setMoveTo(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit): Self = this.set("moveTo", js.Any.fromFunction2(value))
+    def setMoveTo(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "moveTo", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteMoveTo: Self = this.set("moveTo", js.undefined)
+    def setMoveToUndefined: Self = StObject.set(x, "moveTo", js.undefined)
     
     @scala.inline
     def setQuadraticCurveTo(
       value: (/* cx */ js.UndefOr[Double], /* cy */ js.UndefOr[Double], /* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit
-    ): Self = this.set("quadraticCurveTo", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "quadraticCurveTo", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteQuadraticCurveTo: Self = this.set("quadraticCurveTo", js.undefined)
+    def setQuadraticCurveToUndefined: Self = StObject.set(x, "quadraticCurveTo", js.undefined)
     
     @scala.inline
     def setRect(
       value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => Unit
-    ): Self = this.set("rect", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "rect", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteRect: Self = this.set("rect", js.undefined)
+    def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
     
     @scala.inline
-    def setToString(value: () => String): Self = this.set("toString", js.Any.fromFunction0(value))
+    def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteToString: Self = this.set("toString", js.undefined)
+    def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
     
     @scala.inline
-    def setToStripes(value: /* target */ js.UndefOr[Array] => Array): Self = this.set("toStripes", js.Any.fromFunction1(value))
+    def setToStripes(value: /* target */ js.UndefOr[Array] => Array): Self = StObject.set(x, "toStripes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteToStripes: Self = this.set("toStripes", js.undefined)
+    def setToStripesUndefined: Self = StObject.set(x, "toStripes", js.undefined)
     
     @scala.inline
-    def setTransform(value: /* matrix */ js.UndefOr[IMatrix] => Unit): Self = this.set("transform", js.Any.fromFunction1(value))
+    def setTransform(value: /* matrix */ js.UndefOr[IMatrix] => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }
 }

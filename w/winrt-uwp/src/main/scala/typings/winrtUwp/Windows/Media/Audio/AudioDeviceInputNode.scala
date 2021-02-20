@@ -5,13 +5,14 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Media.Effects.IAudioEffectDefinition
 import typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an audio device input node. */
 @js.native
-trait AudioDeviceInputNode extends js.Object {
+trait AudioDeviceInputNode extends StObject {
   
   /**
     * Adds an outgoing connection to the audio device input node.

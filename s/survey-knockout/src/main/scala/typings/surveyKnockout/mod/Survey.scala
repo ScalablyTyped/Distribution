@@ -1,5 +1,6 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,9 +60,15 @@ class Survey () extends SurveyModel {
   def updateSurvey(newProps: js.Any, oldProps: js.Any): Unit = js.native
 }
 /* static members */
-@JSImport("survey-knockout", "Survey")
-@js.native
-object Survey extends js.Object {
+object Survey {
   
-  var cssType: String = js.native
+  @JSImport("survey-knockout", "Survey")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("survey-knockout", "Survey.cssType")
+  @js.native
+  def cssType: String = js.native
+  @scala.inline
+  def cssType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cssType")(x.asInstanceOf[js.Any])
 }

@@ -1,6 +1,7 @@
 package typings.winjs.WinJS.UI
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This API is no longer supported. Starting with the Windows Library for JavaScript 2.0 Preview, use the ILayoutSite2 interface. Represents a rendering site for an ILayout.
   **/
 @js.native
-trait ILayoutSite extends js.Object {
+trait ILayoutSite extends StObject {
   
   //#region Properties
   /**
@@ -64,39 +65,27 @@ object ILayoutSite {
   }
   
   @scala.inline
-  implicit class ILayoutSiteOps[Self <: ILayoutSite] (val x: Self) extends AnyVal {
+  implicit class ILayoutSiteMutableBuilder[Self <: ILayoutSite] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationsDisabled(value: Boolean): Self = StObject.set(x, "animationsDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemSurface(value: HTMLElement): Self = StObject.set(x, "itemSurface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationsDisabled(value: Boolean): Self = this.set("animationsDisabled", value.asInstanceOf[js.Any])
+    def setScrollbarPos(value: Double): Self = StObject.set(x, "scrollbarPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemSurface(value: HTMLElement): Self = this.set("itemSurface", value.asInstanceOf[js.Any])
+    def setSurface(value: HTMLElement): Self = StObject.set(x, "surface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRtl(value: Boolean): Self = this.set("rtl", value.asInstanceOf[js.Any])
+    def setViewport(value: HTMLElement): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollbarPos(value: Double): Self = this.set("scrollbarPos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSurface(value: HTMLElement): Self = this.set("surface", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewport(value: HTMLElement): Self = this.set("viewport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewportSize(value: js.Any): Self = this.set("viewportSize", value.asInstanceOf[js.Any])
+    def setViewportSize(value: js.Any): Self = StObject.set(x, "viewportSize", value.asInstanceOf[js.Any])
   }
 }

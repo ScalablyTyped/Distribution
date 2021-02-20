@@ -17,20 +17,14 @@ import typings.pulumiPulumi.invokeMod.InvokeOptions
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws", "organizations")
-@js.native
-object organizations extends js.Object {
+object organizations {
   
-  def getOrganization(): js.Promise[GetOrganizationResult] = js.native
-  def getOrganization(opts: InvokeOptions): js.Promise[GetOrganizationResult] = js.native
-  
-  def getOrganizationalUnits(args: GetOrganizationalUnitsArgs): js.Promise[GetOrganizationalUnitsResult] = js.native
-  def getOrganizationalUnits(args: GetOrganizationalUnitsArgs, opts: InvokeOptions): js.Promise[GetOrganizationalUnitsResult] = js.native
-  
+  @JSImport("@pulumi/aws", "organizations.Account")
   @js.native
   class Account protected ()
     extends typings.pulumiAws.organizationsMod.Account {
@@ -45,8 +39,7 @@ object organizations extends js.Object {
     def this(name: String, args: AccountArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Account extends js.Object {
+  object Account {
     
     /**
       * Get an existing Account resource's state with the given name, ID, and optional extra
@@ -57,18 +50,29 @@ object organizations extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "organizations.Account.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.organizationsAccountMod.Account = js.native
+    @JSImport("@pulumi/aws", "organizations.Account.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.organizationsAccountMod.Account = js.native
+    @JSImport("@pulumi/aws", "organizations.Account.get")
+    @js.native
     def get(name: String, id: Input[ID], state: AccountState): typings.pulumiAws.organizationsAccountMod.Account = js.native
+    @JSImport("@pulumi/aws", "organizations.Account.get")
+    @js.native
     def get(name: String, id: Input[ID], state: AccountState, opts: CustomResourceOptions): typings.pulumiAws.organizationsAccountMod.Account = js.native
     
     /**
       * Returns true if the given object is an instance of Account.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "organizations.Account.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/account.Account */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "organizations.Organization")
   @js.native
   class Organization protected ()
     extends typings.pulumiAws.organizationsMod.Organization {
@@ -85,8 +89,7 @@ object organizations extends js.Object {
     def this(name: String, args: OrganizationArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Organization extends js.Object {
+  object Organization {
     
     /**
       * Get an existing Organization resource's state with the given name, ID, and optional extra
@@ -97,18 +100,29 @@ object organizations extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "organizations.Organization.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.organizationMod.Organization = js.native
+    @JSImport("@pulumi/aws", "organizations.Organization.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.organizationMod.Organization = js.native
+    @JSImport("@pulumi/aws", "organizations.Organization.get")
+    @js.native
     def get(name: String, id: Input[ID], state: OrganizationState): typings.pulumiAws.organizationMod.Organization = js.native
+    @JSImport("@pulumi/aws", "organizations.Organization.get")
+    @js.native
     def get(name: String, id: Input[ID], state: OrganizationState, opts: CustomResourceOptions): typings.pulumiAws.organizationMod.Organization = js.native
     
     /**
       * Returns true if the given object is an instance of Organization.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "organizations.Organization.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/organization.Organization */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "organizations.OrganizationalUnit")
   @js.native
   class OrganizationalUnit protected ()
     extends typings.pulumiAws.organizationsMod.OrganizationalUnit {
@@ -123,8 +137,7 @@ object organizations extends js.Object {
     def this(name: String, args: OrganizationalUnitArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object OrganizationalUnit extends js.Object {
+  object OrganizationalUnit {
     
     /**
       * Get an existing OrganizationalUnit resource's state with the given name, ID, and optional extra
@@ -135,18 +148,29 @@ object organizations extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "organizations.OrganizationalUnit.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.organizationalUnitMod.OrganizationalUnit = js.native
+    @JSImport("@pulumi/aws", "organizations.OrganizationalUnit.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.organizationalUnitMod.OrganizationalUnit = js.native
+    @JSImport("@pulumi/aws", "organizations.OrganizationalUnit.get")
+    @js.native
     def get(name: String, id: Input[ID], state: OrganizationalUnitState): typings.pulumiAws.organizationalUnitMod.OrganizationalUnit = js.native
+    @JSImport("@pulumi/aws", "organizations.OrganizationalUnit.get")
+    @js.native
     def get(name: String, id: Input[ID], state: OrganizationalUnitState, opts: CustomResourceOptions): typings.pulumiAws.organizationalUnitMod.OrganizationalUnit = js.native
     
     /**
       * Returns true if the given object is an instance of OrganizationalUnit.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "organizations.OrganizationalUnit.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/organizationalUnit.OrganizationalUnit */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "organizations.Policy")
   @js.native
   class Policy protected ()
     extends typings.pulumiAws.organizationsMod.Policy {
@@ -161,8 +185,7 @@ object organizations extends js.Object {
     def this(name: String, args: PolicyArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Policy extends js.Object {
+  object Policy {
     
     /**
       * Get an existing Policy resource's state with the given name, ID, and optional extra
@@ -173,18 +196,29 @@ object organizations extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "organizations.Policy.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.organizationsPolicyMod.Policy = js.native
+    @JSImport("@pulumi/aws", "organizations.Policy.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.organizationsPolicyMod.Policy = js.native
+    @JSImport("@pulumi/aws", "organizations.Policy.get")
+    @js.native
     def get(name: String, id: Input[ID], state: PolicyState): typings.pulumiAws.organizationsPolicyMod.Policy = js.native
+    @JSImport("@pulumi/aws", "organizations.Policy.get")
+    @js.native
     def get(name: String, id: Input[ID], state: PolicyState, opts: CustomResourceOptions): typings.pulumiAws.organizationsPolicyMod.Policy = js.native
     
     /**
       * Returns true if the given object is an instance of Policy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "organizations.Policy.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/policy.Policy */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "organizations.PolicyAttachment")
   @js.native
   class PolicyAttachment protected ()
     extends typings.pulumiAws.organizationsMod.PolicyAttachment {
@@ -199,8 +233,7 @@ object organizations extends js.Object {
     def this(name: String, args: PolicyAttachmentArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object PolicyAttachment extends js.Object {
+  object PolicyAttachment {
     
     /**
       * Get an existing PolicyAttachment resource's state with the given name, ID, and optional extra
@@ -211,15 +244,39 @@ object organizations extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "organizations.PolicyAttachment.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.organizationsPolicyAttachmentMod.PolicyAttachment = js.native
+    @JSImport("@pulumi/aws", "organizations.PolicyAttachment.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.organizationsPolicyAttachmentMod.PolicyAttachment = js.native
+    @JSImport("@pulumi/aws", "organizations.PolicyAttachment.get")
+    @js.native
     def get(name: String, id: Input[ID], state: PolicyAttachmentState): typings.pulumiAws.organizationsPolicyAttachmentMod.PolicyAttachment = js.native
+    @JSImport("@pulumi/aws", "organizations.PolicyAttachment.get")
+    @js.native
     def get(name: String, id: Input[ID], state: PolicyAttachmentState, opts: CustomResourceOptions): typings.pulumiAws.organizationsPolicyAttachmentMod.PolicyAttachment = js.native
     
     /**
       * Returns true if the given object is an instance of PolicyAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "organizations.PolicyAttachment.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/policyAttachment.PolicyAttachment */ Boolean = js.native
   }
+  
+  @JSImport("@pulumi/aws", "organizations.getOrganization")
+  @js.native
+  def getOrganization(): js.Promise[GetOrganizationResult] = js.native
+  @JSImport("@pulumi/aws", "organizations.getOrganization")
+  @js.native
+  def getOrganization(opts: InvokeOptions): js.Promise[GetOrganizationResult] = js.native
+  
+  @JSImport("@pulumi/aws", "organizations.getOrganizationalUnits")
+  @js.native
+  def getOrganizationalUnits(args: GetOrganizationalUnitsArgs): js.Promise[GetOrganizationalUnitsResult] = js.native
+  @JSImport("@pulumi/aws", "organizations.getOrganizationalUnits")
+  @js.native
+  def getOrganizationalUnits(args: GetOrganizationalUnitsArgs, opts: InvokeOptions): js.Promise[GetOrganizationalUnitsResult] = js.native
 }

@@ -2,6 +2,7 @@ package typings.sipJs.coreMod
 
 import typings.sipJs.coreTransportMod.Transport
 import typings.sipJs.transactionUserMod.ClientTransactionUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +20,15 @@ abstract class ClientTransaction protected ()
   ) = this()
 }
 /* static members */
-@JSImport("sip.js/lib/core", "ClientTransaction")
-@js.native
-object ClientTransaction extends js.Object {
+object ClientTransaction {
   
-  var makeId: js.Any = js.native
+  @JSImport("sip.js/lib/core", "ClientTransaction")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("sip.js/lib/core", "ClientTransaction.makeId")
+  @js.native
+  def makeId: js.Any = js.native
+  @scala.inline
+  def makeId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeId")(x.asInstanceOf[js.Any])
 }

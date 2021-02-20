@@ -1,11 +1,12 @@
 package typings.cassandraDriver.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Frozen extends js.Object {
+trait Frozen extends StObject {
   
   var frozen: Boolean = js.native
   
@@ -20,24 +21,12 @@ object Frozen {
   }
   
   @scala.inline
-  implicit class FrozenOps[Self <: Frozen] (val x: Self) extends AnyVal {
+  implicit class FrozenMutableBuilder[Self <: Frozen] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrozen(value: Boolean): Self = StObject.set(x, "frozen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFrozen(value: Boolean): Self = this.set("frozen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReversed(value: Boolean): Self = this.set("reversed", value.asInstanceOf[js.Any])
+    def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
   }
 }

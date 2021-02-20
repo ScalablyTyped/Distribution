@@ -1,14 +1,13 @@
 package typings.samchonFramework.mod
 
-import typings.tstl.mod.Pair
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon-framework", "library")
-@js.native
-object library extends js.Object {
+object library {
   
+  @JSImport("samchon-framework", "library.CartesianProduct")
   @js.native
   class CartesianProduct protected ()
     extends typings.samchon.mod.library.CartesianProduct {
@@ -20,6 +19,7 @@ object library extends js.Object {
     def this(digits: Double*) = this()
   }
   
+  @JSImport("samchon-framework", "library.Factorial")
   @js.native
   class Factorial protected ()
     extends typings.samchon.mod.library.Factorial {
@@ -31,6 +31,7 @@ object library extends js.Object {
     def this(n: Double) = this()
   }
   
+  @JSImport("samchon-framework", "library.Permutation")
   @js.native
   class Permutation protected ()
     extends typings.samchon.mod.library.Permutation {
@@ -43,6 +44,7 @@ object library extends js.Object {
     def this(n: Double, r: Double) = this()
   }
   
+  @JSImport("samchon-framework", "library.RepeatedPermutation")
   @js.native
   class RepeatedPermutation protected ()
     extends typings.samchon.mod.library.RepeatedPermutation {
@@ -55,27 +57,43 @@ object library extends js.Object {
     def this(n: Double, r: Double) = this()
   }
   
+  @JSImport("samchon-framework", "library.StringUtil")
   @js.native
   class StringUtil ()
     extends typings.samchon.mod.library.StringUtil
   /* static members */
-  @js.native
-  object StringUtil extends js.Object {
+  object StringUtil {
+    
+    @JSImport("samchon-framework", "library.StringUtil")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * An array containing whitespaces.
       */
-    var SPACE_ARRAY: js.Any = js.native
+    @JSImport("samchon-framework", "library.StringUtil.SPACE_ARRAY")
+    @js.native
+    def SPACE_ARRAY: js.Any = js.native
+    @scala.inline
+    def SPACE_ARRAY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPACE_ARRAY")(x.asInstanceOf[js.Any])
     
     /**
       * @hidden
       */
-    var _Fetch_substitute_index: js.Any = js.native
+    @JSImport("samchon-framework", "library.StringUtil._Fetch_substitute_index")
+    @js.native
+    def _Fetch_substitute_index: js.Any = js.native
+    @scala.inline
+    def _Fetch_substitute_index_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Fetch_substitute_index")(x.asInstanceOf[js.Any])
     
     /**
       * @hidden
       */
-    var _Substitute_sql_string: js.Any = js.native
+    @JSImport("samchon-framework", "library.StringUtil._Substitute_sql_string")
+    @js.native
+    def _Substitute_sql_string: js.Any = js.native
+    @scala.inline
+    def _Substitute_sql_string_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Substitute_sql_string")(x.asInstanceOf[js.Any])
     
     /**
       * Generate a substring.
@@ -98,9 +116,17 @@ object library extends js.Object {
       *
       * @return substring by specified terms.
       */
+    @JSImport("samchon-framework", "library.StringUtil.between")
+    @js.native
     def between(str: String): String = js.native
+    @JSImport("samchon-framework", "library.StringUtil.between")
+    @js.native
     def between(str: String, start: js.UndefOr[scala.Nothing], end: String): String = js.native
+    @JSImport("samchon-framework", "library.StringUtil.between")
+    @js.native
     def between(str: String, start: String): String = js.native
+    @JSImport("samchon-framework", "library.StringUtil.between")
+    @js.native
     def between(str: String, start: String, end: String): String = js.native
     
     /**
@@ -122,9 +148,17 @@ object library extends js.Object {
       *			  If omitted, it's same with split(start) not having first item.
       * @return An array of substrings.
       */
+    @JSImport("samchon-framework", "library.StringUtil.betweens")
+    @js.native
     def betweens(str: String): js.Array[String] = js.native
+    @JSImport("samchon-framework", "library.StringUtil.betweens")
+    @js.native
     def betweens(str: String, start: js.UndefOr[scala.Nothing], end: String): js.Array[String] = js.native
+    @JSImport("samchon-framework", "library.StringUtil.betweens")
+    @js.native
     def betweens(str: String, start: String): js.Array[String] = js.native
+    @JSImport("samchon-framework", "library.StringUtil.betweens")
+    @js.native
     def betweens(str: String, start: String, end: String): js.Array[String] = js.native
     
     /**
@@ -135,6 +169,8 @@ object library extends js.Object {
       *
       * @return Updated string where designated characters was removed from the beginning
       */
+    @JSImport("samchon-framework", "library.StringUtil.ltrim")
+    @js.native
     def ltrim(str: String, args: String*): String = js.native
     
     /**
@@ -147,10 +183,18 @@ object library extends js.Object {
       *
       * @return A string who represents the number with roundoff and &quot;,&quot; symbols.
       */
+    @JSImport("samchon-framework", "library.StringUtil.numberFormat")
+    @js.native
     def numberFormat(`val`: Double): String = js.native
+    @JSImport("samchon-framework", "library.StringUtil.numberFormat")
+    @js.native
     def numberFormat(`val`: Double, precision: Double): String = js.native
     
+    @JSImport("samchon-framework", "library.StringUtil.percentFormat")
+    @js.native
     def percentFormat(`val`: Double): String = js.native
+    @JSImport("samchon-framework", "library.StringUtil.percentFormat")
+    @js.native
     def percentFormat(`val`: Double, precision: Double): String = js.native
     
     /**
@@ -158,6 +202,8 @@ object library extends js.Object {
       *
       * @param str Target string to replace.
       */
+    @JSImport("samchon-framework", "library.StringUtil.removeHTMLSpaces")
+    @js.native
     def removeHTMLSpaces(str: String): String = js.native
     
     /**
@@ -170,6 +216,8 @@ object library extends js.Object {
       *
       * @return The repeated string.
       */
+    @JSImport("samchon-framework", "library.StringUtil.repeat")
+    @js.native
     def repeat(str: String, n: Double): String = js.native
     
     /**
@@ -181,6 +229,8 @@ object library extends js.Object {
       *
       * @return A string specified word is replaced
       */
+    @JSImport("samchon-framework", "library.StringUtil.replaceAll")
+    @js.native
     def replaceAll(str: String, before: String, after: String): String = js.native
     /**
       * Returns a string specified words are replaced.
@@ -190,7 +240,12 @@ object library extends js.Object {
       *
       * @return A string specified words are replaced
       */
-    def replaceAll(str: String, pairs: (Pair[String, String])*): String = js.native
+    @JSImport("samchon-framework", "library.StringUtil.replaceAll")
+    @js.native
+    def replaceAll(
+      str: String,
+      pairs: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.Pair<string, string> */ js.Any)*
+    ): String = js.native
     
     /**
       * Remove all designated characters from the end of the specified string.
@@ -200,6 +255,8 @@ object library extends js.Object {
       *
       * @return Updated string where designated characters was removed from the end.
       */
+    @JSImport("samchon-framework", "library.StringUtil.rtrim")
+    @js.native
     def rtrim(str: String, args: String*): String = js.native
     
     /**
@@ -214,6 +271,8 @@ object library extends js.Object {
       *
       * @return New string with all of the `{n}` tokens replaced with the respective arguments specified.
       */
+    @JSImport("samchon-framework", "library.StringUtil.substitute")
+    @js.native
     def substitute(format: String, args: js.Any*): String = js.native
     
     /**
@@ -228,6 +287,8 @@ object library extends js.Object {
       *
       * @return New SQL-string with all of the `{n}` tokens replaced with the respective arguments specified.
       */
+    @JSImport("samchon-framework", "library.StringUtil.substituteSQL")
+    @js.native
     def substituteSQL(format: String, args: js.Any*): String = js.native
     
     /**
@@ -238,9 +299,12 @@ object library extends js.Object {
       *
       * @return Updated string where designated characters was removed from the beginning and end.
       */
+    @JSImport("samchon-framework", "library.StringUtil.trim")
+    @js.native
     def trim(str: String, args: String*): String = js.native
   }
   
+  @JSImport("samchon-framework", "library.URLVariables")
   @js.native
   /**
     * Default Constructor.
@@ -256,15 +320,21 @@ object library extends js.Object {
       */
     def this(str: String) = this()
   }
-  @js.native
-  object URLVariables extends js.Object {
+  object URLVariables {
     
+    @JSImport("samchon-framework", "library.URLVariables.parse")
+    @js.native
     def parse[T](str: String): T = js.native
+    @JSImport("samchon-framework", "library.URLVariables.parse")
+    @js.native
     def parse[T](str: String, autoCase: Boolean): T = js.native
     
+    @JSImport("samchon-framework", "library.URLVariables.stringify")
+    @js.native
     def stringify[T](obj: T): String = js.native
   }
   
+  @JSImport("samchon-framework", "library.XML")
   @js.native
   class XML ()
     extends typings.samchon.mod.library.XML {
@@ -272,36 +342,56 @@ object library extends js.Object {
     def this(xml: typings.sxml.xmlMod.XML) = this()
   }
   /* static members */
-  @js.native
-  object XML extends js.Object {
+  object XML {
+    
+    @JSImport("samchon-framework", "library.XML")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * @hidden
       */
-    var _Compute_min_index: js.Any = js.native
+    @JSImport("samchon-framework", "library.XML._Compute_min_index")
+    @js.native
+    def _Compute_min_index: js.Any = js.native
+    @scala.inline
+    def _Compute_min_index_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Compute_min_index")(x.asInstanceOf[js.Any])
     
     /**
       * @hidden
       */
-    var _Repeat: js.Any = js.native
+    @JSImport("samchon-framework", "library.XML._Repeat")
+    @js.native
+    def _Repeat: js.Any = js.native
+    @scala.inline
+    def _Repeat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Repeat")(x.asInstanceOf[js.Any])
     
-    @JSName("decode_property")
+    @JSImport("samchon-framework", "library.XML.decode_property")
+    @js.native
     def decodeProperty(str: String): String = js.native
     
-    @JSName("decode_value")
+    @JSImport("samchon-framework", "library.XML.decode_value")
+    @js.native
     def decodeValue(str: String): String = js.native
     
-    @JSName("encode_property")
+    @JSImport("samchon-framework", "library.XML.encode_property")
+    @js.native
     def encodeProperty(str: String): String = js.native
     
-    @JSName("encode_value")
+    @JSImport("samchon-framework", "library.XML.encode_value")
+    @js.native
     def encodeValue(str: String): String = js.native
     
+    @JSImport("samchon-framework", "library.XML.head")
+    @js.native
     def head(): String = js.native
+    @JSImport("samchon-framework", "library.XML.head")
+    @js.native
     def head(encoding: String): String = js.native
   }
   
+  @JSImport("samchon-framework", "library.XMLList")
   @js.native
   class XMLList ()
-    extends typings.sxml.xmllistMod.XMLList
+    extends typings.samchon.mod.library.XMLList
 }

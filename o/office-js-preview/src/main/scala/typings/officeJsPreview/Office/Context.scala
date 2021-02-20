@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * **Hosts**: Excel, Outlook, PowerPoint, Project, Word
   */
 @js.native
-trait Context extends js.Object {
+trait Context extends StObject {
   
   /**
     * Provides information and access to the signed-in user.
@@ -210,63 +211,51 @@ object Context {
   }
   
   @scala.inline
-  implicit class ContextOps[Self <: Context] (val x: Self) extends AnyVal {
+  implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommerceAllowed(value: Boolean): Self = StObject.set(x, "commerceAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: Auth): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setDiagnostics(value: ContextInformation): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommerceAllowed(value: Boolean): Self = this.set("commerceAllowed", value.asInstanceOf[js.Any])
+    def setDisplayLanguage(value: String): Self = StObject.set(x, "displayLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentLanguage(value: String): Self = this.set("contentLanguage", value.asInstanceOf[js.Any])
+    def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagnostics(value: ContextInformation): Self = this.set("diagnostics", value.asInstanceOf[js.Any])
+    def setHost(value: HostType): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayLanguage(value: String): Self = this.set("displayLanguage", value.asInstanceOf[js.Any])
+    def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument(value: Document): Self = this.set("document", value.asInstanceOf[js.Any])
+    def setMailbox(value: Mailbox): Self = StObject.set(x, "mailbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: HostType): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setOfficeTheme(value: OfficeTheme): Self = StObject.set(x, "officeTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicense(value: String): Self = this.set("license", value.asInstanceOf[js.Any])
+    def setPlatform(value: PlatformType): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMailbox(value: Mailbox): Self = this.set("mailbox", value.asInstanceOf[js.Any])
+    def setRequirements(value: RequirementSetSupport): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfficeTheme(value: OfficeTheme): Self = this.set("officeTheme", value.asInstanceOf[js.Any])
+    def setRoamingSettings(value: RoamingSettings): Self = StObject.set(x, "roamingSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: PlatformType): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setTouchEnabled(value: Boolean): Self = StObject.set(x, "touchEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequirements(value: RequirementSetSupport): Self = this.set("requirements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoamingSettings(value: RoamingSettings): Self = this.set("roamingSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchEnabled(value: Boolean): Self = this.set("touchEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUi(value: UI): Self = this.set("ui", value.asInstanceOf[js.Any])
+    def setUi(value: UI): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
   }
 }

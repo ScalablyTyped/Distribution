@@ -10,12 +10,13 @@ import typings.webvrApi.webvrApiStrings.vrdisplayfocus
 import typings.webvrApi.webvrApiStrings.vrdisplaypointerrestricted
 import typings.webvrApi.webvrApiStrings.vrdisplaypointerunrestricted
 import typings.webvrApi.webvrApiStrings.vrdisplaypresentchange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Window extends js.Object {
+trait Window extends StObject {
   
   @JSName("addEventListener")
   def addEventListener_vrdisplayactivate(`type`: vrdisplayactivate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native

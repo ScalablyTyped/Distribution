@@ -1,11 +1,12 @@
 package typings.sharepoint.SP.JsGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPropertyBase extends js.Object {
+trait IPropertyBase extends StObject {
   
   def Clone(): IPropertyBase = js.native
   
@@ -36,36 +37,24 @@ object IPropertyBase {
   }
   
   @scala.inline
-  implicit class IPropertyBaseOps[Self <: IPropertyBase] (val x: Self) extends AnyVal {
+  implicit class IPropertyBaseMutableBuilder[Self <: IPropertyBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IPropertyBase): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetData(value: () => js.Any): Self = StObject.set(x, "GetData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetLocalized(value: () => String): Self = StObject.set(x, "GetLocalized", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClone(value: () => IPropertyBase): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setHasDataValue(value: () => Boolean): Self = StObject.set(x, "HasDataValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetData(value: () => js.Any): Self = this.set("GetData", js.Any.fromFunction0(value))
+    def setHasLocalizedValue(value: () => Boolean): Self = StObject.set(x, "HasLocalizedValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLocalized(value: () => String): Self = this.set("GetLocalized", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHasDataValue(value: () => Boolean): Self = this.set("HasDataValue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHasLocalizedValue(value: () => Boolean): Self = this.set("HasLocalizedValue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdate(value: (js.Any, String) => Unit): Self = this.set("Update", js.Any.fromFunction2(value))
+    def setUpdate(value: (js.Any, String) => Unit): Self = StObject.set(x, "Update", js.Any.fromFunction2(value))
   }
 }

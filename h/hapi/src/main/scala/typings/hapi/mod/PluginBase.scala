@@ -1,12 +1,13 @@
 package typings.hapi.mod
 
 import typings.hapi.anon.Hapi
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PluginBase[T] extends js.Object {
+trait PluginBase[T] extends StObject {
   
   /** (optional) a string or an array of strings indicating a plugin dependency. Same as setting dependencies via server.dependency(). */
   var dependencies: js.UndefOr[Dependencies] = js.native
@@ -39,48 +40,36 @@ object PluginBase {
   }
   
   @scala.inline
-  implicit class PluginBaseOps[Self <: PluginBase[_], T] (val x: Self with PluginBase[T]) extends AnyVal {
+  implicit class PluginBaseMutableBuilder[Self <: PluginBase[_], T] (val x: Self with PluginBase[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDependencies(value: Dependencies): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
     
     @scala.inline
-    def setRegister(value: (Server, T) => Unit | js.Promise[Unit]): Self = this.set("register", js.Any.fromFunction2(value))
+    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependenciesVarargs(value: String*): Self = this.set("dependencies", js.Array(value :_*))
+    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
     @scala.inline
-    def setDependencies(value: Dependencies): Self = this.set("dependencies", value.asInstanceOf[js.Any])
+    def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDependencies: Self = this.set("dependencies", js.undefined)
+    def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
     
     @scala.inline
-    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    def setRegister(value: (Server, T) => Unit | js.Promise[Unit]): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    def setRequirements(value: Hapi): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnce(value: Boolean): Self = this.set("once", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnce: Self = this.set("once", js.undefined)
-    
-    @scala.inline
-    def setRequirements(value: Hapi): Self = this.set("requirements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequirements: Self = this.set("requirements", js.undefined)
+    def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
   }
 }

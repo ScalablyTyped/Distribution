@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApprovalResult extends js.Object {
+trait ApprovalResult extends StObject {
   
   /**
     * The response submitted by a reviewer assigned to an approval action request.
@@ -26,24 +27,12 @@ object ApprovalResult {
   }
   
   @scala.inline
-  implicit class ApprovalResultOps[Self <: ApprovalResult] (val x: Self) extends AnyVal {
+  implicit class ApprovalResultMutableBuilder[Self <: ApprovalResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStatus(value: ApprovalStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStatus(value: ApprovalStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSummary(value: ApprovalSummary): Self = this.set("summary", value.asInstanceOf[js.Any])
+    def setSummary(value: ApprovalSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
   }
 }

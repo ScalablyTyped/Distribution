@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceSelectionResult extends js.Object {
+trait DeviceSelectionResult extends StObject {
   
   /**
     * The filters in a device selection result.
@@ -31,39 +32,27 @@ object DeviceSelectionResult {
   }
   
   @scala.inline
-  implicit class DeviceSelectionResultOps[Self <: DeviceSelectionResult] (val x: Self) extends AnyVal {
+  implicit class DeviceSelectionResultMutableBuilder[Self <: DeviceSelectionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilters(value: DeviceFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiltersVarargs(value: DeviceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: DeviceFilter*): Self = this.set("filters", js.Array(value :_*))
+    def setMatchedDevicesCount(value: Integer): Self = StObject.set(x, "matchedDevicesCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: DeviceFilters): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setMatchedDevicesCountUndefined: Self = StObject.set(x, "matchedDevicesCount", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setMaxDevices(value: Integer): Self = StObject.set(x, "maxDevices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchedDevicesCount(value: Integer): Self = this.set("matchedDevicesCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchedDevicesCount: Self = this.set("matchedDevicesCount", js.undefined)
-    
-    @scala.inline
-    def setMaxDevices(value: Integer): Self = this.set("maxDevices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxDevices: Self = this.set("maxDevices", js.undefined)
+    def setMaxDevicesUndefined: Self = StObject.set(x, "maxDevices", js.undefined)
   }
 }

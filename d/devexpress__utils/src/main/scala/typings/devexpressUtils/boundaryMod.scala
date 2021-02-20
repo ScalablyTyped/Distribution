@@ -6,14 +6,14 @@ import typings.devexpressUtils.reproducibleMod.IReproducibleInterval
 import typings.devexpressUtils.typesMod.ICloneable
 import typings.devexpressUtils.typesMod.IEquatable
 import typings.devexpressUtils.typesMod.ISupportCopyFrom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/intervals/boundary", JSImport.Namespace)
-@js.native
-object boundaryMod extends js.Object {
+object boundaryMod {
   
+  @JSImport("@devexpress/utils/lib/intervals/boundary", "BoundaryInterval")
   @js.native
   class BoundaryInterval protected ()
     extends MutableInterval
@@ -26,11 +26,14 @@ object boundaryMod extends js.Object {
     def expand(interval: BoundaryInterval): this.type = js.native
   }
   /* static members */
-  @js.native
-  object BoundaryInterval extends js.Object {
+  object BoundaryInterval {
     
+    @JSImport("@devexpress/utils/lib/intervals/boundary", "BoundaryInterval.makeByConstInterval")
+    @js.native
     def makeByConstInterval(interval: ConstInterval): BoundaryInterval = js.native
     
+    @JSImport("@devexpress/utils/lib/intervals/boundary", "BoundaryInterval.normalized")
+    @js.native
     def normalized(pointA: Double, pointB: Double): BoundaryInterval = js.native
   }
 }

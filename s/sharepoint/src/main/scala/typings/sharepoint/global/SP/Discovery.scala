@@ -1,27 +1,29 @@
 package typings.sharepoint.global.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.Discovery")
-@js.native
-object Discovery extends js.Object {
+object Discovery {
   
+  @JSGlobal("SP.Discovery.Case")
   @js.native
   class Case protected ()
     extends typings.sharepoint.SP.Discovery.Case {
     def this(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web) = this()
   }
   
+  @JSGlobal("SP.Discovery.Export")
   @js.native
   class Export protected ()
     extends typings.sharepoint.SP.Discovery.Export {
     def this(context: typings.sharepoint.SP.ClientRuntimeContext, item: typings.sharepoint.SP.ListItem[_]) = this()
   }
   
+  @JSGlobal("SP.Discovery.ExportStatus")
   @js.native
-  object ExportStatus extends js.Object {
+  object ExportStatus extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.sharepoint.SP.Discovery.ExportStatus with Double] = js.native

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,54 +29,42 @@ object TeleconferenceDeviceVideoQuality {
   }
   
   @scala.inline
-  implicit class TeleconferenceDeviceVideoQualityOps[Self <: TeleconferenceDeviceVideoQuality] (val x: Self) extends AnyVal {
+  implicit class TeleconferenceDeviceVideoQualityMutableBuilder[Self <: TeleconferenceDeviceVideoQuality] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAverageInboundBitRate(value: NullableOption[Double]): Self = StObject.set(x, "averageInboundBitRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAverageInboundBitRateNull: Self = StObject.set(x, "averageInboundBitRate", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAverageInboundBitRateUndefined: Self = StObject.set(x, "averageInboundBitRate", js.undefined)
     
     @scala.inline
-    def setAverageInboundBitRate(value: NullableOption[Double]): Self = this.set("averageInboundBitRate", value.asInstanceOf[js.Any])
+    def setAverageInboundFrameRate(value: NullableOption[Double]): Self = StObject.set(x, "averageInboundFrameRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAverageInboundBitRate: Self = this.set("averageInboundBitRate", js.undefined)
+    def setAverageInboundFrameRateNull: Self = StObject.set(x, "averageInboundFrameRate", null)
     
     @scala.inline
-    def setAverageInboundBitRateNull: Self = this.set("averageInboundBitRate", null)
+    def setAverageInboundFrameRateUndefined: Self = StObject.set(x, "averageInboundFrameRate", js.undefined)
     
     @scala.inline
-    def setAverageInboundFrameRate(value: NullableOption[Double]): Self = this.set("averageInboundFrameRate", value.asInstanceOf[js.Any])
+    def setAverageOutboundBitRate(value: NullableOption[Double]): Self = StObject.set(x, "averageOutboundBitRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAverageInboundFrameRate: Self = this.set("averageInboundFrameRate", js.undefined)
+    def setAverageOutboundBitRateNull: Self = StObject.set(x, "averageOutboundBitRate", null)
     
     @scala.inline
-    def setAverageInboundFrameRateNull: Self = this.set("averageInboundFrameRate", null)
+    def setAverageOutboundBitRateUndefined: Self = StObject.set(x, "averageOutboundBitRate", js.undefined)
     
     @scala.inline
-    def setAverageOutboundBitRate(value: NullableOption[Double]): Self = this.set("averageOutboundBitRate", value.asInstanceOf[js.Any])
+    def setAverageOutboundFrameRate(value: NullableOption[Double]): Self = StObject.set(x, "averageOutboundFrameRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAverageOutboundBitRate: Self = this.set("averageOutboundBitRate", js.undefined)
+    def setAverageOutboundFrameRateNull: Self = StObject.set(x, "averageOutboundFrameRate", null)
     
     @scala.inline
-    def setAverageOutboundBitRateNull: Self = this.set("averageOutboundBitRate", null)
-    
-    @scala.inline
-    def setAverageOutboundFrameRate(value: NullableOption[Double]): Self = this.set("averageOutboundFrameRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAverageOutboundFrameRate: Self = this.set("averageOutboundFrameRate", js.undefined)
-    
-    @scala.inline
-    def setAverageOutboundFrameRateNull: Self = this.set("averageOutboundFrameRate", null)
+    def setAverageOutboundFrameRateUndefined: Self = StObject.set(x, "averageOutboundFrameRate", js.undefined)
   }
 }

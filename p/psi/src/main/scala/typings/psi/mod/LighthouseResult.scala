@@ -1,12 +1,13 @@
 package typings.psi.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LighthouseResult extends js.Object {
+trait LighthouseResult extends StObject {
   
   var audits: StringDictionary[Audit] = js.native
   
@@ -60,63 +61,51 @@ object LighthouseResult {
   }
   
   @scala.inline
-  implicit class LighthouseResultOps[Self <: LighthouseResult] (val x: Self) extends AnyVal {
+  implicit class LighthouseResultMutableBuilder[Self <: LighthouseResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudits(value: StringDictionary[Audit]): Self = StObject.set(x, "audits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategories(value: StringDictionary[Category]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoryGroups(value: StringDictionary[CategoryGroup]): Self = StObject.set(x, "categoryGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudits(value: StringDictionary[Audit]): Self = this.set("audits", value.asInstanceOf[js.Any])
+    def setConfigSettings(value: ConfigSettings): Self = StObject.set(x, "configSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: StringDictionary[Category]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryGroups(value: StringDictionary[CategoryGroup]): Self = this.set("categoryGroups", value.asInstanceOf[js.Any])
+    def setFetchTime(value: String): Self = StObject.set(x, "fetchTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigSettings(value: ConfigSettings): Self = this.set("configSettings", value.asInstanceOf[js.Any])
+    def setFinalUrl(value: String): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: Environment): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setI18n(value: I18N): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetchTime(value: String): Self = this.set("fetchTime", value.asInstanceOf[js.Any])
+    def setLighthouseVersion(value: String): Self = StObject.set(x, "lighthouseVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalUrl(value: String): Self = this.set("finalUrl", value.asInstanceOf[js.Any])
+    def setRequestedUrl(value: String): Self = StObject.set(x, "requestedUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setI18n(value: I18N): Self = this.set("i18n", value.asInstanceOf[js.Any])
+    def setRunWarnings(value: js.Array[String]): Self = StObject.set(x, "runWarnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLighthouseVersion(value: String): Self = this.set("lighthouseVersion", value.asInstanceOf[js.Any])
+    def setRunWarningsVarargs(value: String*): Self = StObject.set(x, "runWarnings", js.Array(value :_*))
     
     @scala.inline
-    def setRequestedUrl(value: String): Self = this.set("requestedUrl", value.asInstanceOf[js.Any])
+    def setRuntimeError(value: RuntimeError): Self = StObject.set(x, "runtimeError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunWarningsVarargs(value: String*): Self = this.set("runWarnings", js.Array(value :_*))
+    def setTiming(value: Timing): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunWarnings(value: js.Array[String]): Self = this.set("runWarnings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRuntimeError(value: RuntimeError): Self = this.set("runtimeError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTiming(value: Timing): Self = this.set("timing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
+    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
   }
 }

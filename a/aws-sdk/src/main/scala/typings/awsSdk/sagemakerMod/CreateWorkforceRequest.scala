@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateWorkforceRequest extends js.Object {
+trait CreateWorkforceRequest extends StObject {
   
   /**
     * Use this parameter to configure an Amazon Cognito private workforce. A single Cognito workforce is created using and corresponds to a single  Amazon Cognito user pool. Do not use OidcConfig if you specify values for CognitoConfig.
@@ -38,48 +39,36 @@ object CreateWorkforceRequest {
   }
   
   @scala.inline
-  implicit class CreateWorkforceRequestOps[Self <: CreateWorkforceRequest] (val x: Self) extends AnyVal {
+  implicit class CreateWorkforceRequestMutableBuilder[Self <: CreateWorkforceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCognitoConfig(value: CognitoConfig): Self = StObject.set(x, "CognitoConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCognitoConfigUndefined: Self = StObject.set(x, "CognitoConfig", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOidcConfig(value: OidcConfig): Self = StObject.set(x, "OidcConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkforceName(value: WorkforceName): Self = this.set("WorkforceName", value.asInstanceOf[js.Any])
+    def setOidcConfigUndefined: Self = StObject.set(x, "OidcConfig", js.undefined)
     
     @scala.inline
-    def setCognitoConfig(value: CognitoConfig): Self = this.set("CognitoConfig", value.asInstanceOf[js.Any])
+    def setSourceIpConfig(value: SourceIpConfig): Self = StObject.set(x, "SourceIpConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCognitoConfig: Self = this.set("CognitoConfig", js.undefined)
+    def setSourceIpConfigUndefined: Self = StObject.set(x, "SourceIpConfig", js.undefined)
     
     @scala.inline
-    def setOidcConfig(value: OidcConfig): Self = this.set("OidcConfig", value.asInstanceOf[js.Any])
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOidcConfig: Self = this.set("OidcConfig", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def setSourceIpConfig(value: SourceIpConfig): Self = this.set("SourceIpConfig", value.asInstanceOf[js.Any])
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def deleteSourceIpConfig: Self = this.set("SourceIpConfig", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setWorkforceName(value: WorkforceName): Self = StObject.set(x, "WorkforceName", value.asInstanceOf[js.Any])
   }
 }

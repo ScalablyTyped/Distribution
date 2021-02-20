@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * You probably don't want to call this constructor, because this class does not support links (relationships between nodes) or groups (nodes and links and subgraphs as nodes): instead, create instances of a subclass such as GraphLinksModel or TreeModel.
   * @param {Array<Object>=} nodedataarray an optional Array containing JavaScript objects to be represented by Parts.
   */
-class Model () extends js.Object {
+class Model () extends StObject {
   def this(nodedataarray: js.Array[js.Object]) = this()
   
   /**
@@ -421,10 +422,7 @@ class Model () extends js.Object {
   def updateTargetBindings(data: js.Object): Unit = js.native
   def updateTargetBindings(data: js.Object, srcpropname: String): Unit = js.native
 }
-/* static members */
-@JSImport("go", "Model")
-@js.native
-object Model extends js.Object {
+object Model {
   
   /**
     * This static function parses a string in JSON format and constructs, initializes, and returns a model.
@@ -434,8 +432,17 @@ object Model extends js.Object {
     * @param {string} s a String in JSON format containing all of the persistent properties of the model, or an Object already read from JSON text.
     * @param {model=} model an optional model to be modified; if not supplied, it constructs and returns a new model whose name is specified by the "class" property.
     */
+  /* static member */
+  @JSImport("go", "Model.fromJson")
+  @js.native
   def fromJson(s: String): Model = js.native
+  @JSImport("go", "Model.fromJson")
+  @js.native
   def fromJson(s: String, model: Model): Model = js.native
+  @JSImport("go", "Model.fromJson")
+  @js.native
   def fromJson(s: js.Object): Model = js.native
+  @JSImport("go", "Model.fromJson")
+  @js.native
   def fromJson(s: js.Object, model: Model): Model = js.native
 }

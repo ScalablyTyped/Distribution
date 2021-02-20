@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackendNode extends js.Object {
+trait BackendNode extends StObject {
   
   var backendNodeId: BackendNodeId = js.native
   
@@ -29,27 +30,15 @@ object BackendNode {
   }
   
   @scala.inline
-  implicit class BackendNodeOps[Self <: BackendNode] (val x: Self) extends AnyVal {
+  implicit class BackendNodeMutableBuilder[Self <: BackendNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBackendNodeId(value: BackendNodeId): Self = this.set("backendNodeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNodeName(value: String): Self = this.set("nodeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNodeType(value: integer): Self = this.set("nodeType", value.asInstanceOf[js.Any])
+    def setNodeType(value: integer): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
   }
 }

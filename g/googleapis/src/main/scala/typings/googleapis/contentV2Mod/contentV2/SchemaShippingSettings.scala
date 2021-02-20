@@ -1,5 +1,6 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * getsupportedcarriers and getsupportedholidays require the admin role.
   */
 @js.native
-trait SchemaShippingSettings extends js.Object {
+trait SchemaShippingSettings extends StObject {
   
   /**
     * The ID of the account to which these account shipping settings belong.
@@ -37,42 +38,30 @@ object SchemaShippingSettings {
   }
   
   @scala.inline
-  implicit class SchemaShippingSettingsOps[Self <: SchemaShippingSettings] (val x: Self) extends AnyVal {
+  implicit class SchemaShippingSettingsMutableBuilder[Self <: SchemaShippingSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPostalCodeGroups(value: js.Array[SchemaPostalCodeGroup]): Self = StObject.set(x, "postalCodeGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setPostalCodeGroupsUndefined: Self = StObject.set(x, "postalCodeGroups", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setPostalCodeGroupsVarargs(value: SchemaPostalCodeGroup*): Self = StObject.set(x, "postalCodeGroups", js.Array(value :_*))
     
     @scala.inline
-    def setPostalCodeGroupsVarargs(value: SchemaPostalCodeGroup*): Self = this.set("postalCodeGroups", js.Array(value :_*))
+    def setServices(value: js.Array[SchemaService]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostalCodeGroups(value: js.Array[SchemaPostalCodeGroup]): Self = this.set("postalCodeGroups", value.asInstanceOf[js.Any])
+    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
     @scala.inline
-    def deletePostalCodeGroups: Self = this.set("postalCodeGroups", js.undefined)
-    
-    @scala.inline
-    def setServicesVarargs(value: SchemaService*): Self = this.set("services", js.Array(value :_*))
-    
-    @scala.inline
-    def setServices(value: js.Array[SchemaService]): Self = this.set("services", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServices: Self = this.set("services", js.undefined)
+    def setServicesVarargs(value: SchemaService*): Self = StObject.set(x, "services", js.Array(value :_*))
   }
 }

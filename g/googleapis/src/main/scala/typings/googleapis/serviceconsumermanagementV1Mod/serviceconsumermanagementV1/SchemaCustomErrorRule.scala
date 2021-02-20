@@ -1,5 +1,6 @@
 package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A custom error rule.
   */
 @js.native
-trait SchemaCustomErrorRule extends js.Object {
+trait SchemaCustomErrorRule extends StObject {
   
   /**
     * Mark this message as possible payload in error response.  Otherwise,
@@ -31,30 +32,18 @@ object SchemaCustomErrorRule {
   }
   
   @scala.inline
-  implicit class SchemaCustomErrorRuleOps[Self <: SchemaCustomErrorRule] (val x: Self) extends AnyVal {
+  implicit class SchemaCustomErrorRuleMutableBuilder[Self <: SchemaCustomErrorRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsErrorType(value: Boolean): Self = StObject.set(x, "isErrorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsErrorTypeUndefined: Self = StObject.set(x, "isErrorType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsErrorType(value: Boolean): Self = this.set("isErrorType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsErrorType: Self = this.set("isErrorType", js.undefined)
-    
-    @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

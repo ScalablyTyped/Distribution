@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReimportApiRequest extends js.Object {
+trait ReimportApiRequest extends StObject {
   
   /**
     * The API identifier.
@@ -36,36 +37,24 @@ object ReimportApiRequest {
   }
   
   @scala.inline
-  implicit class ReimportApiRequestOps[Self <: ReimportApiRequest] (val x: Self) extends AnyVal {
+  implicit class ReimportApiRequestMutableBuilder[Self <: ReimportApiRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasepath(value: string): Self = StObject.set(x, "Basepath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBasepathUndefined: Self = StObject.set(x, "Basepath", js.undefined)
     
     @scala.inline
-    def setApiId(value: string): Self = this.set("ApiId", value.asInstanceOf[js.Any])
+    def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: string): Self = this.set("Body", value.asInstanceOf[js.Any])
+    def setFailOnWarnings(value: boolean): Self = StObject.set(x, "FailOnWarnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasepath(value: string): Self = this.set("Basepath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBasepath: Self = this.set("Basepath", js.undefined)
-    
-    @scala.inline
-    def setFailOnWarnings(value: boolean): Self = this.set("FailOnWarnings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailOnWarnings: Self = this.set("FailOnWarnings", js.undefined)
+    def setFailOnWarningsUndefined: Self = StObject.set(x, "FailOnWarnings", js.undefined)
   }
 }

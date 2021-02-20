@@ -1,12 +1,13 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
 import typings.bingmaps.Microsoft.Maps.Location
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IRouteSummary extends js.Object {
+trait IRouteSummary extends StObject {
   
   /** The total travel distance of the route */
   var distance: Double = js.native
@@ -45,36 +46,24 @@ object IRouteSummary {
   }
   
   @scala.inline
-  implicit class IRouteSummaryOps[Self <: IRouteSummary] (val x: Self) extends AnyVal {
+  implicit class IRouteSummaryMutableBuilder[Self <: IRouteSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMonetaryCost(value: Double): Self = StObject.set(x, "monetaryCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNorthEast(value: Location): Self = StObject.set(x, "northEast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setSouthWest(value: Location): Self = StObject.set(x, "southWest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonetaryCost(value: Double): Self = this.set("monetaryCost", value.asInstanceOf[js.Any])
+    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNorthEast(value: Location): Self = this.set("northEast", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSouthWest(value: Location): Self = this.set("southWest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeWithTraffic(value: Double): Self = this.set("timeWithTraffic", value.asInstanceOf[js.Any])
+    def setTimeWithTraffic(value: Double): Self = StObject.set(x, "timeWithTraffic", value.asInstanceOf[js.Any])
   }
 }

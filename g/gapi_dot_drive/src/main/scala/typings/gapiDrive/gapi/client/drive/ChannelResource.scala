@@ -1,12 +1,13 @@
 package typings.gapiDrive.gapi.client.drive
 
 import typings.gapiDrive.gapiDriveStrings.apiNumbersignchannel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChannelResource extends js.Object {
+trait ChannelResource extends StObject {
   
   var expiration: Double = js.native
   
@@ -36,36 +37,24 @@ object ChannelResource {
   }
   
   @scala.inline
-  implicit class ChannelResourceOps[Self <: ChannelResource] (val x: Self) extends AnyVal {
+  implicit class ChannelResourceMutableBuilder[Self <: ChannelResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpiration(value: Double): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: apiNumbersignchannel): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiration(value: Double): Self = this.set("expiration", value.asInstanceOf[js.Any])
+    def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setResourceUri(value: String): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: apiNumbersignchannel): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceId(value: String): Self = this.set("resourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceUri(value: String): Self = this.set("resourceUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

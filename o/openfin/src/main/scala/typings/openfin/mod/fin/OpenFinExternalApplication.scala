@@ -1,5 +1,6 @@
 package typings.openfin.mod.fin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An object representing an application. Allows the developer to create, execute, show and close an application, as well as listen to application events.
   */
 @js.native
-trait OpenFinExternalApplication extends js.Object {
+trait OpenFinExternalApplication extends StObject {
   
   /**
     * Registers an event listener on the specified event.

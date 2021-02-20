@@ -4,6 +4,7 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.delimited
 import typings.elasticElasticsearch.elasticElasticsearchStrings.ndjson
 import typings.elasticElasticsearch.elasticElasticsearchStrings.semi_structured_text
 import typings.elasticElasticsearch.elasticElasticsearchStrings.xml
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,108 +51,96 @@ object MlFindFileStructure {
   }
   
   @scala.inline
-  implicit class MlFindFileStructureOps[Self <: MlFindFileStructure[_], T] (val x: Self with MlFindFileStructure[T]) extends AnyVal {
+  implicit class MlFindFileStructureMutableBuilder[Self <: MlFindFileStructure[_], T] (val x: Self with MlFindFileStructure[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
     
     @scala.inline
-    def setBody(value: T): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setColumn_names(value: String | js.Array[String]): Self = StObject.set(x, "column_names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharset(value: String): Self = this.set("charset", value.asInstanceOf[js.Any])
+    def setColumn_namesUndefined: Self = StObject.set(x, "column_names", js.undefined)
     
     @scala.inline
-    def deleteCharset: Self = this.set("charset", js.undefined)
+    def setColumn_namesVarargs(value: String*): Self = StObject.set(x, "column_names", js.Array(value :_*))
     
     @scala.inline
-    def setColumn_namesVarargs(value: String*): Self = this.set("column_names", js.Array(value :_*))
+    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn_names(value: String | js.Array[String]): Self = this.set("column_names", value.asInstanceOf[js.Any])
+    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
     @scala.inline
-    def deleteColumn_names: Self = this.set("column_names", js.undefined)
+    def setExplain(value: Boolean): Self = StObject.set(x, "explain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelimiter(value: String): Self = this.set("delimiter", value.asInstanceOf[js.Any])
+    def setExplainUndefined: Self = StObject.set(x, "explain", js.undefined)
     
     @scala.inline
-    def deleteDelimiter: Self = this.set("delimiter", js.undefined)
+    def setFormat(value: ndjson | xml | delimited | semi_structured_text): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplain(value: Boolean): Self = this.set("explain", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteExplain: Self = this.set("explain", js.undefined)
+    def setGrok_pattern(value: String): Self = StObject.set(x, "grok_pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: ndjson | xml | delimited | semi_structured_text): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setGrok_patternUndefined: Self = StObject.set(x, "grok_pattern", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setHas_header_row(value: Boolean): Self = StObject.set(x, "has_header_row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrok_pattern(value: String): Self = this.set("grok_pattern", value.asInstanceOf[js.Any])
+    def setHas_header_rowUndefined: Self = StObject.set(x, "has_header_row", js.undefined)
     
     @scala.inline
-    def deleteGrok_pattern: Self = this.set("grok_pattern", js.undefined)
+    def setLine_merge_size_limit(value: Double): Self = StObject.set(x, "line_merge_size_limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas_header_row(value: Boolean): Self = this.set("has_header_row", value.asInstanceOf[js.Any])
+    def setLine_merge_size_limitUndefined: Self = StObject.set(x, "line_merge_size_limit", js.undefined)
     
     @scala.inline
-    def deleteHas_header_row: Self = this.set("has_header_row", js.undefined)
+    def setLines_to_sample(value: Double): Self = StObject.set(x, "lines_to_sample", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine_merge_size_limit(value: Double): Self = this.set("line_merge_size_limit", value.asInstanceOf[js.Any])
+    def setLines_to_sampleUndefined: Self = StObject.set(x, "lines_to_sample", js.undefined)
     
     @scala.inline
-    def deleteLine_merge_size_limit: Self = this.set("line_merge_size_limit", js.undefined)
+    def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLines_to_sample(value: Double): Self = this.set("lines_to_sample", value.asInstanceOf[js.Any])
+    def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
     
     @scala.inline
-    def deleteLines_to_sample: Self = this.set("lines_to_sample", js.undefined)
+    def setShould_trim_fields(value: Boolean): Self = StObject.set(x, "should_trim_fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuote(value: String): Self = this.set("quote", value.asInstanceOf[js.Any])
+    def setShould_trim_fieldsUndefined: Self = StObject.set(x, "should_trim_fields", js.undefined)
     
     @scala.inline
-    def deleteQuote: Self = this.set("quote", js.undefined)
+    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShould_trim_fields(value: Boolean): Self = this.set("should_trim_fields", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteShould_trim_fields: Self = this.set("should_trim_fields", js.undefined)
+    def setTimestamp_field(value: String): Self = StObject.set(x, "timestamp_field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTimestamp_fieldUndefined: Self = StObject.set(x, "timestamp_field", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimestamp_format(value: String): Self = StObject.set(x, "timestamp_format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp_field(value: String): Self = this.set("timestamp_field", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp_field: Self = this.set("timestamp_field", js.undefined)
-    
-    @scala.inline
-    def setTimestamp_format(value: String): Self = this.set("timestamp_format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp_format: Self = this.set("timestamp_format", js.undefined)
+    def setTimestamp_formatUndefined: Self = StObject.set(x, "timestamp_format", js.undefined)
   }
 }

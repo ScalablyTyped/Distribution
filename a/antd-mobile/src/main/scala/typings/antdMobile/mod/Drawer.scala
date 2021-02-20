@@ -2,6 +2,7 @@ package typings.antdMobile.mod
 
 import typings.antdMobile.anon.EnableDragHandle
 import typings.antdMobile.drawerMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Drawer () extends default
 /* static members */
-@JSImport("antd-mobile", "Drawer")
-@js.native
-object Drawer extends js.Object {
+object Drawer {
   
-  var defaultProps: EnableDragHandle = js.native
+  @JSImport("antd-mobile", "Drawer")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile", "Drawer.defaultProps")
+  @js.native
+  def defaultProps: EnableDragHandle = js.native
+  @scala.inline
+  def defaultProps_=(x: EnableDragHandle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

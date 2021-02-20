@@ -20,6 +20,7 @@ import typings.request.requestStrings.request
 import typings.request.requestStrings.response
 import typings.request.requestStrings.socket
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

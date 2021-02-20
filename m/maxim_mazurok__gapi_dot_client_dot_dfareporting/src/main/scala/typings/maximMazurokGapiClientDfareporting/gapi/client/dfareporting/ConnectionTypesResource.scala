@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientDfareporting.anon.Alt
 import typings.maximMazurokGapiClientDfareporting.anon.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectionTypesResource extends js.Object {
+trait ConnectionTypesResource extends StObject {
   
   /** Gets one connection type by ID. */
   def get(): Request[ConnectionType] = js.native

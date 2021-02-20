@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchListObjectPoliciesResponse extends js.Object {
+trait BatchListObjectPoliciesResponse extends StObject {
   
   /**
     * A list of policy ObjectIdentifiers, that are attached to the object.
@@ -26,33 +27,21 @@ object BatchListObjectPoliciesResponse {
   }
   
   @scala.inline
-  implicit class BatchListObjectPoliciesResponseOps[Self <: BatchListObjectPoliciesResponse] (val x: Self) extends AnyVal {
+  implicit class BatchListObjectPoliciesResponseMutableBuilder[Self <: BatchListObjectPoliciesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachedPolicyIds(value: ObjectIdentifierList): Self = StObject.set(x, "AttachedPolicyIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachedPolicyIdsUndefined: Self = StObject.set(x, "AttachedPolicyIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachedPolicyIdsVarargs(value: ObjectIdentifier*): Self = StObject.set(x, "AttachedPolicyIds", js.Array(value :_*))
     
     @scala.inline
-    def setAttachedPolicyIdsVarargs(value: ObjectIdentifier*): Self = this.set("AttachedPolicyIds", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachedPolicyIds(value: ObjectIdentifierList): Self = this.set("AttachedPolicyIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttachedPolicyIds: Self = this.set("AttachedPolicyIds", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

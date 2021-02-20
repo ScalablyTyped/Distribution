@@ -14,6 +14,7 @@ import typings.activexLibreoffice.com_.sun.star.style.VerticalAlignment
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -230,96 +231,84 @@ object UnoControlButtonModel {
   }
   
   @scala.inline
-  implicit class UnoControlButtonModelOps[Self <: UnoControlButtonModel] (val x: Self) extends AnyVal {
+  implicit class UnoControlButtonModelMutableBuilder[Self <: UnoControlButtonModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: Double): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColor(value: Color): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultButton(value: Boolean): Self = StObject.set(x, "DefaultButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: Double): Self = this.set("Align", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: Color): Self = this.set("BackgroundColor", value.asInstanceOf[js.Any])
+    def setFocusOnClick(value: Boolean): Self = StObject.set(x, "FocusOnClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultButton(value: Boolean): Self = this.set("DefaultButton", value.asInstanceOf[js.Any])
+    def setFontDescriptor(value: FontDescriptor): Self = StObject.set(x, "FontDescriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setFontEmphasisMark(value: Double): Self = StObject.set(x, "FontEmphasisMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusOnClick(value: Boolean): Self = this.set("FocusOnClick", value.asInstanceOf[js.Any])
+    def setFontRelief(value: Double): Self = StObject.set(x, "FontRelief", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontDescriptor(value: FontDescriptor): Self = this.set("FontDescriptor", value.asInstanceOf[js.Any])
+    def setGraphic(value: XGraphic): Self = StObject.set(x, "Graphic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontEmphasisMark(value: Double): Self = this.set("FontEmphasisMark", value.asInstanceOf[js.Any])
+    def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontRelief(value: Double): Self = this.set("FontRelief", value.asInstanceOf[js.Any])
+    def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphic(value: XGraphic): Self = this.set("Graphic", value.asInstanceOf[js.Any])
+    def setImageAlign(value: Double): Self = StObject.set(x, "ImageAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpText(value: String): Self = this.set("HelpText", value.asInstanceOf[js.Any])
+    def setImagePosition(value: Double): Self = StObject.set(x, "ImagePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpURL(value: String): Self = this.set("HelpURL", value.asInstanceOf[js.Any])
+    def setImageURL(value: String): Self = StObject.set(x, "ImageURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageAlign(value: Double): Self = this.set("ImageAlign", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagePosition(value: Double): Self = this.set("ImagePosition", value.asInstanceOf[js.Any])
+    def setMultiLine(value: Boolean): Self = StObject.set(x, "MultiLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageURL(value: String): Self = this.set("ImageURL", value.asInstanceOf[js.Any])
+    def setPrintable(value: Boolean): Self = StObject.set(x, "Printable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("Label", value.asInstanceOf[js.Any])
+    def setPushButtonType(value: Double): Self = StObject.set(x, "PushButtonType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiLine(value: Boolean): Self = this.set("MultiLine", value.asInstanceOf[js.Any])
+    def setRepeat(value: Boolean): Self = StObject.set(x, "Repeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintable(value: Boolean): Self = this.set("Printable", value.asInstanceOf[js.Any])
+    def setRepeatDelay(value: Double): Self = StObject.set(x, "RepeatDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPushButtonType(value: Double): Self = this.set("PushButtonType", value.asInstanceOf[js.Any])
+    def setState(value: Double): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeat(value: Boolean): Self = this.set("Repeat", value.asInstanceOf[js.Any])
+    def setTabstop(value: Boolean): Self = StObject.set(x, "Tabstop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeatDelay(value: Double): Self = this.set("RepeatDelay", value.asInstanceOf[js.Any])
+    def setTextColor(value: Color): Self = StObject.set(x, "TextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: Double): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setTextLineColor(value: Color): Self = StObject.set(x, "TextLineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabstop(value: Boolean): Self = this.set("Tabstop", value.asInstanceOf[js.Any])
+    def setToggle(value: Boolean): Self = StObject.set(x, "Toggle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextColor(value: Color): Self = this.set("TextColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextLineColor(value: Color): Self = this.set("TextLineColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToggle(value: Boolean): Self = this.set("Toggle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticalAlign(value: VerticalAlignment): Self = this.set("VerticalAlign", value.asInstanceOf[js.Any])
+    def setVerticalAlign(value: VerticalAlignment): Self = StObject.set(x, "VerticalAlign", value.asInstanceOf[js.Any])
   }
 }

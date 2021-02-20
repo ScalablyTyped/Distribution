@@ -2,12 +2,13 @@ package typings.tizenTvWebapis.anon
 
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`0`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NOGLASS3DNOTSUPPORTED extends js.Object {
+trait NOGLASS3DNOTSUPPORTED extends StObject {
   
   /**
     * Glasses-free 3D is not supported
@@ -30,24 +31,12 @@ object NOGLASS3DNOTSUPPORTED {
   }
   
   @scala.inline
-  implicit class NOGLASS3DNOTSUPPORTEDOps[Self <: NOGLASS3DNOTSUPPORTED] (val x: Self) extends AnyVal {
+  implicit class NOGLASS3DNOTSUPPORTEDMutableBuilder[Self <: NOGLASS3DNOTSUPPORTED] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNO_GLASS_3D_NOT_SUPPORTED(value: `0`): Self = StObject.set(x, "NO_GLASS_3D_NOT_SUPPORTED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNO_GLASS_3D_NOT_SUPPORTED(value: `0`): Self = this.set("NO_GLASS_3D_NOT_SUPPORTED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNO_GLASS_3D_SUPPORTED(value: `1`): Self = this.set("NO_GLASS_3D_SUPPORTED", value.asInstanceOf[js.Any])
+    def setNO_GLASS_3D_SUPPORTED(value: `1`): Self = StObject.set(x, "NO_GLASS_3D_SUPPORTED", value.asInstanceOf[js.Any])
   }
 }

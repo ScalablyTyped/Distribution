@@ -19,6 +19,7 @@ import typings.minecraftScriptingTypesServer.minecraftScriptingTypesServerString
 import typings.minecraftScriptingTypesServer.minecraftScriptingTypesServerStrings.minecraftColonplayer_destroyed_block
 import typings.minecraftScriptingTypesServer.minecraftScriptingTypesServerStrings.minecraftColonplayer_placed_block
 import typings.minecraftScriptingTypesServer.minecraftScriptingTypesServerStrings.minecraftColonweather_changed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +48,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.minecraftScriptingTypesServer.minecraftScriptingTypesServerStrings.minecraftColonplayer_placed_block
   - typings.minecraftScriptingTypesServer.minecraftScriptingTypesServerStrings.minecraftColonweather_changed
 */
-trait ReceiveFromMinecraftServer extends js.Object
+trait ReceiveFromMinecraftServer extends StObject
 object ReceiveFromMinecraftServer {
   
   /**

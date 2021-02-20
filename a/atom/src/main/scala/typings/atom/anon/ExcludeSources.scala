@@ -1,11 +1,12 @@
 package typings.atom.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExcludeSources extends js.Object {
+trait ExcludeSources extends StObject {
   
   var excludeSources: js.UndefOr[js.Array[String]] = js.native
   
@@ -22,45 +23,33 @@ object ExcludeSources {
   }
   
   @scala.inline
-  implicit class ExcludeSourcesOps[Self <: ExcludeSources] (val x: Self) extends AnyVal {
+  implicit class ExcludeSourcesMutableBuilder[Self <: ExcludeSources] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludeSources(value: js.Array[String]): Self = StObject.set(x, "excludeSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludeSourcesUndefined: Self = StObject.set(x, "excludeSources", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludeSourcesVarargs(value: String*): Self = StObject.set(x, "excludeSources", js.Array(value :_*))
     
     @scala.inline
-    def setExcludeSourcesVarargs(value: String*): Self = this.set("excludeSources", js.Array(value :_*))
+    def setScope(value: js.Array[String] | typings.atom.mod.ScopeDescriptor): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeSources(value: js.Array[String]): Self = this.set("excludeSources", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteExcludeSources: Self = this.set("excludeSources", js.undefined)
+    def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
     
     @scala.inline
-    def setScopeVarargs(value: String*): Self = this.set("scope", js.Array(value :_*))
+    def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: js.Array[String] | typings.atom.mod.ScopeDescriptor): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
-    
-    @scala.inline
-    def setSourcesVarargs(value: String*): Self = this.set("sources", js.Array(value :_*))
-    
-    @scala.inline
-    def setSources(value: js.Array[String]): Self = this.set("sources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSources: Self = this.set("sources", js.undefined)
+    def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
   }
 }

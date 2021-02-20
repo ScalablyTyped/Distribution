@@ -7,6 +7,7 @@ import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import typings.std.Uint16Array
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -95,7 +96,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * * {@link pc.FUNC_NOTEQUAL}
   */
 @js.native
-trait Texture extends js.Object {
+trait Texture extends StObject {
   
   /**
     * The addressing mode to be applied to the texture horizontally. Can be:

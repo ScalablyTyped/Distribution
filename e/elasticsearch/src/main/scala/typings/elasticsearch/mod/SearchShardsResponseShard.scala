@@ -1,12 +1,13 @@
 package typings.elasticsearch.mod
 
 import typings.elasticsearch.anon.Id
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchShardsResponseShard extends js.Object {
+trait SearchShardsResponseShard extends StObject {
   
   var allocation_id: Id = js.native
   
@@ -39,39 +40,27 @@ object SearchShardsResponseShard {
   }
   
   @scala.inline
-  implicit class SearchShardsResponseShardOps[Self <: SearchShardsResponseShard] (val x: Self) extends AnyVal {
+  implicit class SearchShardsResponseShardMutableBuilder[Self <: SearchShardsResponseShard] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocation_id(value: Id): Self = StObject.set(x, "allocation_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocation_id(value: Id): Self = this.set("allocation_id", value.asInstanceOf[js.Any])
+    def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: String): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setRelocating_node(value: js.Any): Self = StObject.set(x, "relocating_node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode(value: String): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setShare(value: Double): Self = StObject.set(x, "share", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary(value: Boolean): Self = this.set("primary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelocating_node(value: js.Any): Self = this.set("relocating_node", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShare(value: Double): Self = this.set("share", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

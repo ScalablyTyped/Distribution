@@ -1,5 +1,6 @@
 package typings.googleapis.classroomV1Mod.classroomV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information about a `Feed` with a `feed_type` of `COURSE_WORK_CHANGES`.
   */
 @js.native
-trait SchemaCourseWorkChangesInfo extends js.Object {
+trait SchemaCourseWorkChangesInfo extends StObject {
   
   /**
     * The `course_id` of the course to subscribe to work changes for.
@@ -24,24 +25,12 @@ object SchemaCourseWorkChangesInfo {
   }
   
   @scala.inline
-  implicit class SchemaCourseWorkChangesInfoOps[Self <: SchemaCourseWorkChangesInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaCourseWorkChangesInfoMutableBuilder[Self <: SchemaCourseWorkChangesInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCourseId(value: String): Self = this.set("courseId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCourseId: Self = this.set("courseId", js.undefined)
+    def setCourseIdUndefined: Self = StObject.set(x, "courseId", js.undefined)
   }
 }

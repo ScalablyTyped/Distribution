@@ -1,5 +1,6 @@
 package typings.ember.mod.default
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,14 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * object.
   * @deprecated
   */
-@JSImport("ember", "Map")
+@JSImport("ember", "default.Map")
 @js.native
 class Map ()
   extends typings.ember.mod.Ember.Map
-/* static members */
-@JSImport("ember", "Map")
-@js.native
-object Map extends js.Object {
+object Map {
   
+  /* static member */
+  @JSImport("ember", "default.Map.create")
+  @js.native
   def create(): typings.ember.mod.Ember.Map = js.native
 }

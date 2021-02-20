@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SoftwarePackage extends js.Object {
+trait SoftwarePackage extends StObject {
   
   /** Details of an APT package. For details about the apt package manager, see https://wiki.debian.org/Apt. */
   var aptPackage: js.UndefOr[VersionedPackage] = js.native
@@ -43,66 +44,54 @@ object SoftwarePackage {
   }
   
   @scala.inline
-  implicit class SoftwarePackageOps[Self <: SoftwarePackage] (val x: Self) extends AnyVal {
+  implicit class SoftwarePackageMutableBuilder[Self <: SoftwarePackage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAptPackage(value: VersionedPackage): Self = StObject.set(x, "aptPackage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAptPackageUndefined: Self = StObject.set(x, "aptPackage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCosPackage(value: VersionedPackage): Self = StObject.set(x, "cosPackage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAptPackage(value: VersionedPackage): Self = this.set("aptPackage", value.asInstanceOf[js.Any])
+    def setCosPackageUndefined: Self = StObject.set(x, "cosPackage", js.undefined)
     
     @scala.inline
-    def deleteAptPackage: Self = this.set("aptPackage", js.undefined)
+    def setGoogetPackage(value: VersionedPackage): Self = StObject.set(x, "googetPackage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCosPackage(value: VersionedPackage): Self = this.set("cosPackage", value.asInstanceOf[js.Any])
+    def setGoogetPackageUndefined: Self = StObject.set(x, "googetPackage", js.undefined)
     
     @scala.inline
-    def deleteCosPackage: Self = this.set("cosPackage", js.undefined)
+    def setQfePackage(value: WindowsQuickFixEngineeringPackage): Self = StObject.set(x, "qfePackage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogetPackage(value: VersionedPackage): Self = this.set("googetPackage", value.asInstanceOf[js.Any])
+    def setQfePackageUndefined: Self = StObject.set(x, "qfePackage", js.undefined)
     
     @scala.inline
-    def deleteGoogetPackage: Self = this.set("googetPackage", js.undefined)
+    def setWuaPackage(value: WindowsUpdatePackage): Self = StObject.set(x, "wuaPackage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQfePackage(value: WindowsQuickFixEngineeringPackage): Self = this.set("qfePackage", value.asInstanceOf[js.Any])
+    def setWuaPackageUndefined: Self = StObject.set(x, "wuaPackage", js.undefined)
     
     @scala.inline
-    def deleteQfePackage: Self = this.set("qfePackage", js.undefined)
+    def setYumPackage(value: VersionedPackage): Self = StObject.set(x, "yumPackage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWuaPackage(value: WindowsUpdatePackage): Self = this.set("wuaPackage", value.asInstanceOf[js.Any])
+    def setYumPackageUndefined: Self = StObject.set(x, "yumPackage", js.undefined)
     
     @scala.inline
-    def deleteWuaPackage: Self = this.set("wuaPackage", js.undefined)
+    def setZypperPackage(value: VersionedPackage): Self = StObject.set(x, "zypperPackage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYumPackage(value: VersionedPackage): Self = this.set("yumPackage", value.asInstanceOf[js.Any])
+    def setZypperPackageUndefined: Self = StObject.set(x, "zypperPackage", js.undefined)
     
     @scala.inline
-    def deleteYumPackage: Self = this.set("yumPackage", js.undefined)
+    def setZypperPatch(value: ZypperPatch): Self = StObject.set(x, "zypperPatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZypperPackage(value: VersionedPackage): Self = this.set("zypperPackage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZypperPackage: Self = this.set("zypperPackage", js.undefined)
-    
-    @scala.inline
-    def setZypperPatch(value: ZypperPatch): Self = this.set("zypperPatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZypperPatch: Self = this.set("zypperPatch", js.undefined)
+    def setZypperPatchUndefined: Self = StObject.set(x, "zypperPatch", js.undefined)
   }
 }

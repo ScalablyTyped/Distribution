@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SuggestedNamedStyles extends js.Object {
+trait SuggestedNamedStyles extends StObject {
   
   /**
     * A NamedStyles that only includes the changes made in this suggestion. This can be used along with the named_styles_suggestion_state to see which fields have changed and their new
@@ -25,30 +26,18 @@ object SuggestedNamedStyles {
   }
   
   @scala.inline
-  implicit class SuggestedNamedStylesOps[Self <: SuggestedNamedStyles] (val x: Self) extends AnyVal {
+  implicit class SuggestedNamedStylesMutableBuilder[Self <: SuggestedNamedStyles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNamedStyles(value: NamedStyles): Self = StObject.set(x, "namedStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNamedStylesSuggestionState(value: NamedStylesSuggestionState): Self = StObject.set(x, "namedStylesSuggestionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamedStylesSuggestionStateUndefined: Self = StObject.set(x, "namedStylesSuggestionState", js.undefined)
     
     @scala.inline
-    def setNamedStyles(value: NamedStyles): Self = this.set("namedStyles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamedStyles: Self = this.set("namedStyles", js.undefined)
-    
-    @scala.inline
-    def setNamedStylesSuggestionState(value: NamedStylesSuggestionState): Self = this.set("namedStylesSuggestionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamedStylesSuggestionState: Self = this.set("namedStylesSuggestionState", js.undefined)
+    def setNamedStylesUndefined: Self = StObject.set(x, "namedStyles", js.undefined)
   }
 }

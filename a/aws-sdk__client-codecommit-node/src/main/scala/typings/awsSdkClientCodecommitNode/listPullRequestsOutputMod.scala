@@ -1,12 +1,13 @@
 package typings.awsSdkClientCodecommitNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/model/ListPullRequestsOutput", JSImport.Namespace)
-@js.native
-object listPullRequestsOutputMod extends js.Object {
+object listPullRequestsOutputMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/model/ListPullRequestsOutput", "ListPullRequestsOutput")
+  @js.native
   val ListPullRequestsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

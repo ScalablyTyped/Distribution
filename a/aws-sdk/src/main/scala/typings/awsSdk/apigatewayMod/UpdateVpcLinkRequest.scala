@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateVpcLinkRequest extends js.Object {
+trait UpdateVpcLinkRequest extends StObject {
   
   /**
     * A list of update operations to be applied to the specified resource and in the order specified in this list.
@@ -26,30 +27,18 @@ object UpdateVpcLinkRequest {
   }
   
   @scala.inline
-  implicit class UpdateVpcLinkRequestOps[Self <: UpdateVpcLinkRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateVpcLinkRequestMutableBuilder[Self <: UpdateVpcLinkRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
     
     @scala.inline
-    def setVpcLinkId(value: String): Self = this.set("vpcLinkId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPatchOperationsVarargs(value: PatchOperation*): Self = this.set("patchOperations", js.Array(value :_*))
-    
-    @scala.inline
-    def setPatchOperations(value: ListOfPatchOperation): Self = this.set("patchOperations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePatchOperations: Self = this.set("patchOperations", js.undefined)
+    def setVpcLinkId(value: String): Self = StObject.set(x, "vpcLinkId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UndeleteAlertRequest extends js.Object {
+trait UndeleteAlertRequest extends StObject {
   
   /** Optional. The unique identifier of the G Suite organization account of the customer the alert is associated with. Inferred from the caller identity if not provided. */
   var customerId: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object UndeleteAlertRequest {
   }
   
   @scala.inline
-  implicit class UndeleteAlertRequestOps[Self <: UndeleteAlertRequest] (val x: Self) extends AnyVal {
+  implicit class UndeleteAlertRequestMutableBuilder[Self <: UndeleteAlertRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCustomerId(value: String): Self = this.set("customerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomerId: Self = this.set("customerId", js.undefined)
+    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
   }
 }

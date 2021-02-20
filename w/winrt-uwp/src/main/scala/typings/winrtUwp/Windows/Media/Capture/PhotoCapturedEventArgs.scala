@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Media.Capture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the photo sequence PhotoCaptured event. */
 @js.native
-trait PhotoCapturedEventArgs extends js.Object {
+trait PhotoCapturedEventArgs extends StObject {
   
   /** Gets a value that indicates time offset in the photo sequence. */
   var captureTimeOffset: Double = js.native
@@ -26,27 +27,15 @@ object PhotoCapturedEventArgs {
   }
   
   @scala.inline
-  implicit class PhotoCapturedEventArgsOps[Self <: PhotoCapturedEventArgs] (val x: Self) extends AnyVal {
+  implicit class PhotoCapturedEventArgsMutableBuilder[Self <: PhotoCapturedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaptureTimeOffset(value: Double): Self = StObject.set(x, "captureTimeOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrame(value: CapturedFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCaptureTimeOffset(value: Double): Self = this.set("captureTimeOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFrame(value: CapturedFrame): Self = this.set("frame", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThumbnail(value: CapturedFrame): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
+    def setThumbnail(value: CapturedFrame): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
   }
 }

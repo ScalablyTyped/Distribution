@@ -1,11 +1,12 @@
 package typings.paralleljs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParallelOptions extends js.Object {
+trait ParallelOptions extends StObject {
   
   /**
     * This is the path to the file eval.js.  This is required when running in node, and required for some browsers (IE 10) in order to work around cross-domain restrictions for web workers.  Defaults to the same location as parallel.js in node environments, and null in the browser.
@@ -31,36 +32,24 @@ object ParallelOptions {
   }
   
   @scala.inline
-  implicit class ParallelOptionsOps[Self <: ParallelOptions] (val x: Self) extends AnyVal {
+  implicit class ParallelOptionsMutableBuilder[Self <: ParallelOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvalPath(value: String): Self = StObject.set(x, "evalPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvalPathUndefined: Self = StObject.set(x, "evalPath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxWorkers(value: Double): Self = StObject.set(x, "maxWorkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvalPath(value: String): Self = this.set("evalPath", value.asInstanceOf[js.Any])
+    def setMaxWorkersUndefined: Self = StObject.set(x, "maxWorkers", js.undefined)
     
     @scala.inline
-    def deleteEvalPath: Self = this.set("evalPath", js.undefined)
+    def setSynchronous(value: Boolean): Self = StObject.set(x, "synchronous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWorkers(value: Double): Self = this.set("maxWorkers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxWorkers: Self = this.set("maxWorkers", js.undefined)
-    
-    @scala.inline
-    def setSynchronous(value: Boolean): Self = this.set("synchronous", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSynchronous: Self = this.set("synchronous", js.undefined)
+    def setSynchronousUndefined: Self = StObject.set(x, "synchronous", js.undefined)
   }
 }

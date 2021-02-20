@@ -1,11 +1,12 @@
 package typings.highcharts.sonificationMod.highchartsAugmentingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Series extends js.Object {
+trait Series extends StObject {
   
   /**
     * Sonify a series.

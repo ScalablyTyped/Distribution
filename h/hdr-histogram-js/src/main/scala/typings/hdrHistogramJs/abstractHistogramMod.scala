@@ -2,14 +2,46 @@ package typings.hdrHistogramJs
 
 import org.scalablytyped.runtime.Instantiable3
 import typings.hdrHistogramJs.abstractHistogramBaseMod.AbstractHistogramBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("hdr-histogram-js/AbstractHistogram", JSImport.Namespace)
-@js.native
-object abstractHistogramMod extends js.Object {
+object abstractHistogramMod {
   
+  @JSImport("hdr-histogram-js/AbstractHistogram", JSImport.Default)
+  @js.native
+  abstract class default protected () extends AbstractHistogram {
+    def this(
+      lowestDiscernibleValue: Double,
+      highestTrackableValue: Double,
+      numberOfSignificantValueDigits: Double
+    ) = this()
+  }
+  object default {
+    
+    @JSImport("hdr-histogram-js/AbstractHistogram", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("hdr-histogram-js/AbstractHistogram", "default.decodeFromByteBuffer")
+    @js.native
+    def decodeFromByteBuffer: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof doDecodeFromByteBuffer */ js.Any = js.native
+    @scala.inline
+    def decodeFromByteBuffer_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof doDecodeFromByteBuffer */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decodeFromByteBuffer")(x.asInstanceOf[js.Any])
+    
+    @JSImport("hdr-histogram-js/AbstractHistogram", "default.decodeFromCompressedByteBuffer")
+    @js.native
+    def decodeFromCompressedByteBuffer: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof doDecodeFromCompressedByteBuffer */ js.Any = js.native
+    @scala.inline
+    def decodeFromCompressedByteBuffer_=(
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof doDecodeFromCompressedByteBuffer */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decodeFromCompressedByteBuffer")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("hdr-histogram-js/AbstractHistogram", "AbstractHistogram")
   @js.native
   abstract class AbstractHistogram protected () extends AbstractHistogramBase {
     def this(
@@ -407,20 +439,4 @@ object abstractHistogramMod extends js.Object {
           /* numberOfSignificantValueDigits */ Double, 
           AbstractHistogram
         ]
-  
-  @js.native
-  abstract class default protected () extends AbstractHistogram {
-    def this(
-      lowestDiscernibleValue: Double,
-      highestTrackableValue: Double,
-      numberOfSignificantValueDigits: Double
-    ) = this()
-  }
-  @js.native
-  object default extends js.Object {
-    
-    var decodeFromByteBuffer: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof doDecodeFromByteBuffer */ js.Any = js.native
-    
-    var decodeFromCompressedByteBuffer: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof doDecodeFromCompressedByteBuffer */ js.Any = js.native
-  }
 }

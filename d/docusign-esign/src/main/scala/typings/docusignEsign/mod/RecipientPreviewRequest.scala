@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecipientPreviewRequest extends js.Object {
+trait RecipientPreviewRequest extends StObject {
   
   /**
     * A unique identifier of the authentication event executed by the client application.
@@ -98,78 +99,66 @@ object RecipientPreviewRequest {
   }
   
   @scala.inline
-  implicit class RecipientPreviewRequestOps[Self <: RecipientPreviewRequest] (val x: Self) extends AnyVal {
+  implicit class RecipientPreviewRequestMutableBuilder[Self <: RecipientPreviewRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssertionId(value: String): Self = StObject.set(x, "assertionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssertionIdUndefined: Self = StObject.set(x, "assertionId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthenticationInstant(value: String): Self = StObject.set(x, "authenticationInstant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssertionId(value: String): Self = this.set("assertionId", value.asInstanceOf[js.Any])
+    def setAuthenticationInstantUndefined: Self = StObject.set(x, "authenticationInstant", js.undefined)
     
     @scala.inline
-    def deleteAssertionId: Self = this.set("assertionId", js.undefined)
+    def setAuthenticationMethod(value: String): Self = StObject.set(x, "authenticationMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationInstant(value: String): Self = this.set("authenticationInstant", value.asInstanceOf[js.Any])
+    def setAuthenticationMethodUndefined: Self = StObject.set(x, "authenticationMethod", js.undefined)
     
     @scala.inline
-    def deleteAuthenticationInstant: Self = this.set("authenticationInstant", js.undefined)
+    def setPingFrequency(value: String): Self = StObject.set(x, "pingFrequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationMethod(value: String): Self = this.set("authenticationMethod", value.asInstanceOf[js.Any])
+    def setPingFrequencyUndefined: Self = StObject.set(x, "pingFrequency", js.undefined)
     
     @scala.inline
-    def deleteAuthenticationMethod: Self = this.set("authenticationMethod", js.undefined)
+    def setPingUrl(value: String): Self = StObject.set(x, "pingUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPingFrequency(value: String): Self = this.set("pingFrequency", value.asInstanceOf[js.Any])
+    def setPingUrlUndefined: Self = StObject.set(x, "pingUrl", js.undefined)
     
     @scala.inline
-    def deletePingFrequency: Self = this.set("pingFrequency", js.undefined)
+    def setRecipientId(value: String): Self = StObject.set(x, "recipientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPingUrl(value: String): Self = this.set("pingUrl", value.asInstanceOf[js.Any])
+    def setRecipientIdUndefined: Self = StObject.set(x, "recipientId", js.undefined)
     
     @scala.inline
-    def deletePingUrl: Self = this.set("pingUrl", js.undefined)
+    def setReturnUrl(value: String): Self = StObject.set(x, "returnUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientId(value: String): Self = this.set("recipientId", value.asInstanceOf[js.Any])
+    def setReturnUrlUndefined: Self = StObject.set(x, "returnUrl", js.undefined)
     
     @scala.inline
-    def deleteRecipientId: Self = this.set("recipientId", js.undefined)
+    def setSecurityDomain(value: String): Self = StObject.set(x, "securityDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnUrl(value: String): Self = this.set("returnUrl", value.asInstanceOf[js.Any])
+    def setSecurityDomainUndefined: Self = StObject.set(x, "securityDomain", js.undefined)
     
     @scala.inline
-    def deleteReturnUrl: Self = this.set("returnUrl", js.undefined)
+    def setXFrameOptions(value: String): Self = StObject.set(x, "xFrameOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityDomain(value: String): Self = this.set("securityDomain", value.asInstanceOf[js.Any])
+    def setXFrameOptionsAllowFromUrl(value: String): Self = StObject.set(x, "xFrameOptionsAllowFromUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSecurityDomain: Self = this.set("securityDomain", js.undefined)
+    def setXFrameOptionsAllowFromUrlUndefined: Self = StObject.set(x, "xFrameOptionsAllowFromUrl", js.undefined)
     
     @scala.inline
-    def setXFrameOptions(value: String): Self = this.set("xFrameOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXFrameOptions: Self = this.set("xFrameOptions", js.undefined)
-    
-    @scala.inline
-    def setXFrameOptionsAllowFromUrl(value: String): Self = this.set("xFrameOptionsAllowFromUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXFrameOptionsAllowFromUrl: Self = this.set("xFrameOptionsAllowFromUrl", js.undefined)
+    def setXFrameOptionsUndefined: Self = StObject.set(x, "xFrameOptions", js.undefined)
   }
 }

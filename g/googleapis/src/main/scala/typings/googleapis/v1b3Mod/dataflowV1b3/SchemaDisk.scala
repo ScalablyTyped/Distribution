@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Describes the data disk used by a workflow job.
   */
 @js.native
-trait SchemaDisk extends js.Object {
+trait SchemaDisk extends StObject {
   
   /**
     * Disk storage type, as defined by Google Compute Engine.  This must be a
@@ -48,36 +49,24 @@ object SchemaDisk {
   }
   
   @scala.inline
-  implicit class SchemaDiskOps[Self <: SchemaDisk] (val x: Self) extends AnyVal {
+  implicit class SchemaDiskMutableBuilder[Self <: SchemaDisk] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiskType(value: String): Self = StObject.set(x, "diskType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiskTypeUndefined: Self = StObject.set(x, "diskType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMountPoint(value: String): Self = StObject.set(x, "mountPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskType(value: String): Self = this.set("diskType", value.asInstanceOf[js.Any])
+    def setMountPointUndefined: Self = StObject.set(x, "mountPoint", js.undefined)
     
     @scala.inline
-    def deleteDiskType: Self = this.set("diskType", js.undefined)
+    def setSizeGb(value: Double): Self = StObject.set(x, "sizeGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountPoint(value: String): Self = this.set("mountPoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMountPoint: Self = this.set("mountPoint", js.undefined)
-    
-    @scala.inline
-    def setSizeGb(value: Double): Self = this.set("sizeGb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeGb: Self = this.set("sizeGb", js.undefined)
+    def setSizeGbUndefined: Self = StObject.set(x, "sizeGb", js.undefined)
   }
 }

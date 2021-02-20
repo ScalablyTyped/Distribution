@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DialogflowV1Result extends js.Object {
+trait DialogflowV1Result extends StObject {
   
   var action: js.UndefOr[String] = js.native
   
@@ -36,81 +37,69 @@ object DialogflowV1Result {
   }
   
   @scala.inline
-  implicit class DialogflowV1ResultOps[Self <: DialogflowV1Result] (val x: Self) extends AnyVal {
+  implicit class DialogflowV1ResultMutableBuilder[Self <: DialogflowV1Result] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionIncomplete(value: Boolean): Self = StObject.set(x, "actionIncomplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionIncompleteUndefined: Self = StObject.set(x, "actionIncomplete", js.undefined)
     
     @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setContexts(value: js.Array[DialogflowV1Context]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionIncomplete(value: Boolean): Self = this.set("actionIncomplete", value.asInstanceOf[js.Any])
+    def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
     
     @scala.inline
-    def deleteActionIncomplete: Self = this.set("actionIncomplete", js.undefined)
+    def setContextsVarargs(value: DialogflowV1Context*): Self = StObject.set(x, "contexts", js.Array(value :_*))
     
     @scala.inline
-    def setContextsVarargs(value: DialogflowV1Context*): Self = this.set("contexts", js.Array(value :_*))
+    def setFulfillment(value: DialogflowV1Fulfillment): Self = StObject.set(x, "fulfillment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContexts(value: js.Array[DialogflowV1Context]): Self = this.set("contexts", value.asInstanceOf[js.Any])
+    def setFulfillmentUndefined: Self = StObject.set(x, "fulfillment", js.undefined)
     
     @scala.inline
-    def deleteContexts: Self = this.set("contexts", js.undefined)
+    def setMetadata(value: DialogflowV1Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFulfillment(value: DialogflowV1Fulfillment): Self = this.set("fulfillment", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteFulfillment: Self = this.set("fulfillment", js.undefined)
+    def setParameters(value: DialogflowV1Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: DialogflowV1Metadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setResolvedQuery(value: String): Self = StObject.set(x, "resolvedQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: DialogflowV1Parameters): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setResolvedQueryUndefined: Self = StObject.set(x, "resolvedQuery", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolvedQuery(value: String): Self = this.set("resolvedQuery", value.asInstanceOf[js.Any])
+    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
     @scala.inline
-    def deleteResolvedQuery: Self = this.set("resolvedQuery", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteScore: Self = this.set("score", js.undefined)
+    def setSpeech(value: String): Self = StObject.set(x, "speech", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setSpeech(value: String): Self = this.set("speech", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpeech: Self = this.set("speech", js.undefined)
+    def setSpeechUndefined: Self = StObject.set(x, "speech", js.undefined)
   }
 }

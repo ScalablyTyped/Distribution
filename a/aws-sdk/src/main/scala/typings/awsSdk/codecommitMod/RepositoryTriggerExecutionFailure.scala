@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RepositoryTriggerExecutionFailure extends js.Object {
+trait RepositoryTriggerExecutionFailure extends StObject {
   
   /**
     * Message information about the trigger that did not run.
@@ -26,30 +27,18 @@ object RepositoryTriggerExecutionFailure {
   }
   
   @scala.inline
-  implicit class RepositoryTriggerExecutionFailureOps[Self <: RepositoryTriggerExecutionFailure] (val x: Self) extends AnyVal {
+  implicit class RepositoryTriggerExecutionFailureMutableBuilder[Self <: RepositoryTriggerExecutionFailure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailureMessage(value: RepositoryTriggerExecutionFailureMessage): Self = StObject.set(x, "failureMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailureMessageUndefined: Self = StObject.set(x, "failureMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrigger(value: RepositoryTriggerName): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureMessage(value: RepositoryTriggerExecutionFailureMessage): Self = this.set("failureMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailureMessage: Self = this.set("failureMessage", js.undefined)
-    
-    @scala.inline
-    def setTrigger(value: RepositoryTriggerName): Self = this.set("trigger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrigger: Self = this.set("trigger", js.undefined)
+    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }
 }

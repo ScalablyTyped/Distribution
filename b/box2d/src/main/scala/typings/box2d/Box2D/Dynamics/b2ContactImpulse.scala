@@ -1,12 +1,13 @@
 package typings.box2d.Box2D.Dynamics
 
 import typings.box2d.Box2D.Common.Math.b2Vec2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2ContactImpulse extends js.Object {
+trait b2ContactImpulse extends StObject {
   
   /**
     * Normal impulses.
@@ -27,24 +28,12 @@ object b2ContactImpulse {
   }
   
   @scala.inline
-  implicit class b2ContactImpulseOps[Self <: b2ContactImpulse] (val x: Self) extends AnyVal {
+  implicit class b2ContactImpulseMutableBuilder[Self <: b2ContactImpulse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNormalImpulses(value: b2Vec2): Self = StObject.set(x, "normalImpulses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNormalImpulses(value: b2Vec2): Self = this.set("normalImpulses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTangentImpulses(value: b2Vec2): Self = this.set("tangentImpulses", value.asInstanceOf[js.Any])
+    def setTangentImpulses(value: b2Vec2): Self = StObject.set(x, "tangentImpulses", value.asInstanceOf[js.Any])
   }
 }

@@ -1,13 +1,13 @@
 package typings.opentelemetryCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/core/build/src/trace/TraceState", JSImport.Namespace)
-@js.native
-object traceStateMod extends js.Object {
+object traceStateMod {
   
+  @JSImport("@opentelemetry/core/build/src/trace/TraceState", "TraceState")
   @js.native
   class TraceState ()
     extends typings.opentelemetryApi.traceStateMod.TraceState {

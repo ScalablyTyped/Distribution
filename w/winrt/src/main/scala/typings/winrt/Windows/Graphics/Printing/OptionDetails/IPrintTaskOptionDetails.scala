@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Graphics.Printing.OptionDetails
 
 import typings.winrt.Windows.Foundation.Collections.IMapView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPrintTaskOptionDetails extends js.Object {
+trait IPrintTaskOptionDetails extends StObject {
   
   def createItemListOption(optionId: String, displayName: String): PrintCustomItemListOptionDetails = js.native
   
@@ -33,33 +34,21 @@ object IPrintTaskOptionDetails {
   }
   
   @scala.inline
-  implicit class IPrintTaskOptionDetailsOps[Self <: IPrintTaskOptionDetails] (val x: Self) extends AnyVal {
+  implicit class IPrintTaskOptionDetailsMutableBuilder[Self <: IPrintTaskOptionDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateItemListOption(value: (String, String) => PrintCustomItemListOptionDetails): Self = StObject.set(x, "createItemListOption", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTextOption(value: (String, String) => PrintCustomTextOptionDetails): Self = StObject.set(x, "createTextOption", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnbeginvalidation(value: js.Any): Self = StObject.set(x, "onbeginvalidation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateItemListOption(value: (String, String) => PrintCustomItemListOptionDetails): Self = this.set("createItemListOption", js.Any.fromFunction2(value))
+    def setOnoptionchanged(value: js.Any): Self = StObject.set(x, "onoptionchanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTextOption(value: (String, String) => PrintCustomTextOptionDetails): Self = this.set("createTextOption", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setOnbeginvalidation(value: js.Any): Self = this.set("onbeginvalidation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnoptionchanged(value: js.Any): Self = this.set("onoptionchanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptions(value: IMapView[String, IPrintOptionDetails]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setOptions(value: IMapView[String, IPrintOptionDetails]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

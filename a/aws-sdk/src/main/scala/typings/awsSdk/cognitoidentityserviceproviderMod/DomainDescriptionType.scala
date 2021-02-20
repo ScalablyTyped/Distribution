@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainDescriptionType extends js.Object {
+trait DomainDescriptionType extends StObject {
   
   /**
     * The AWS account ID for the user pool owner.
@@ -56,66 +57,54 @@ object DomainDescriptionType {
   }
   
   @scala.inline
-  implicit class DomainDescriptionTypeOps[Self <: DomainDescriptionType] (val x: Self) extends AnyVal {
+  implicit class DomainDescriptionTypeMutableBuilder[Self <: DomainDescriptionType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAWSAccountId(value: AWSAccountIdType): Self = StObject.set(x, "AWSAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAWSAccountIdUndefined: Self = StObject.set(x, "AWSAccountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloudFrontDistribution(value: StringType): Self = StObject.set(x, "CloudFrontDistribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAWSAccountId(value: AWSAccountIdType): Self = this.set("AWSAccountId", value.asInstanceOf[js.Any])
+    def setCloudFrontDistributionUndefined: Self = StObject.set(x, "CloudFrontDistribution", js.undefined)
     
     @scala.inline
-    def deleteAWSAccountId: Self = this.set("AWSAccountId", js.undefined)
+    def setCustomDomainConfig(value: CustomDomainConfigType): Self = StObject.set(x, "CustomDomainConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudFrontDistribution(value: StringType): Self = this.set("CloudFrontDistribution", value.asInstanceOf[js.Any])
+    def setCustomDomainConfigUndefined: Self = StObject.set(x, "CustomDomainConfig", js.undefined)
     
     @scala.inline
-    def deleteCloudFrontDistribution: Self = this.set("CloudFrontDistribution", js.undefined)
+    def setDomain(value: DomainType): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomDomainConfig(value: CustomDomainConfigType): Self = this.set("CustomDomainConfig", value.asInstanceOf[js.Any])
+    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
     
     @scala.inline
-    def deleteCustomDomainConfig: Self = this.set("CustomDomainConfig", js.undefined)
+    def setS3Bucket(value: S3BucketType): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: DomainType): Self = this.set("Domain", value.asInstanceOf[js.Any])
+    def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("Domain", js.undefined)
+    def setStatus(value: DomainStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Bucket(value: S3BucketType): Self = this.set("S3Bucket", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteS3Bucket: Self = this.set("S3Bucket", js.undefined)
+    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: DomainStatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setUserPoolIdUndefined: Self = StObject.set(x, "UserPoolId", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setVersion(value: DomainVersionType): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserPoolId: Self = this.set("UserPoolId", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: DomainVersionType): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

@@ -1,14 +1,17 @@
 package typings.ionic
 
 import typings.ionic.configBaseMod.BaseConfigCommand
+import typings.ionic.definitionsMod.INamespace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/commands/config/unset", JSImport.Namespace)
-@js.native
-object unsetMod extends js.Object {
+object unsetMod {
   
+  @JSImport("ionic/commands/config/unset", "ConfigUnsetCommand")
   @js.native
-  class ConfigUnsetCommand () extends BaseConfigCommand
+  class ConfigUnsetCommand protected () extends BaseConfigCommand {
+    def this(namespace: INamespace) = this()
+  }
 }

@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait sql extends js.Object {
+trait sql extends StObject {
   
   /**
     * Parses the given where clause string and returns an instance of [WhereClause](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html) when resolved.
@@ -23,21 +24,9 @@ object sql {
   }
   
   @scala.inline
-  implicit class sqlOps[Self <: sql] (val x: Self) extends AnyVal {
+  implicit class sqlMutableBuilder[Self <: sql] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParseWhereClause(value: (String, FieldsIndex) => js.Promise[WhereClause]): Self = this.set("parseWhereClause", js.Any.fromFunction2(value))
+    def setParseWhereClause(value: (String, FieldsIndex) => js.Promise[WhereClause]): Self = StObject.set(x, "parseWhereClause", js.Any.fromFunction2(value))
   }
 }

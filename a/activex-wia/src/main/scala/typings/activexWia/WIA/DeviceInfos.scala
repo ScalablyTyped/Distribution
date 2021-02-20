@@ -1,5 +1,6 @@
 package typings.activexWia.WIA
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * DeviceManager object for detail on accessing the DeviceInfos object.
   */
 @js.native
-trait DeviceInfos extends js.Object {
+trait DeviceInfos extends StObject {
   
   def apply(Index: String): DeviceInfo = js.native
   /** Returns the specified item in the collection either by position or Device ID */

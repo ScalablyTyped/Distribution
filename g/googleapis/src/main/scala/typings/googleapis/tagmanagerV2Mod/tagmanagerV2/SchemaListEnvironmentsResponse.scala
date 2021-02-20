@@ -1,5 +1,6 @@
 package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * List Environments Response.
   */
 @js.native
-trait SchemaListEnvironmentsResponse extends js.Object {
+trait SchemaListEnvironmentsResponse extends StObject {
   
   /**
     * All Environments of a GTM Container.
@@ -29,33 +30,21 @@ object SchemaListEnvironmentsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListEnvironmentsResponseOps[Self <: SchemaListEnvironmentsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListEnvironmentsResponseMutableBuilder[Self <: SchemaListEnvironmentsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironment(value: js.Array[SchemaEnvironment]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnvironmentVarargs(value: SchemaEnvironment*): Self = StObject.set(x, "environment", js.Array(value :_*))
     
     @scala.inline
-    def setEnvironmentVarargs(value: SchemaEnvironment*): Self = this.set("environment", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: js.Array[SchemaEnvironment]): Self = this.set("environment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

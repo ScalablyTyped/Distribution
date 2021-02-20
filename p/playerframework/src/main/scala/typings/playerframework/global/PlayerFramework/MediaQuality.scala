@@ -1,12 +1,13 @@
 package typings.playerframework.global.PlayerFramework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PlayerFramework.MediaQuality")
 @js.native
-object MediaQuality extends js.Object {
+object MediaQuality extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.playerframework.PlayerFramework.MediaQuality with Double] = js.native

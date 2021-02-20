@@ -2,12 +2,13 @@ package typings.xstate.typesMod
 
 import typings.xstate.anon.ContextTContext
 import typings.xstate.stateMod.State
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssignMeta[TContext, TEvent /* <: EventObject */] extends js.Object {
+trait AssignMeta[TContext, TEvent /* <: EventObject */] extends StObject {
   
   var _event: typings.xstate.typesMod.SCXML.Event[TEvent] = js.native
   
@@ -24,30 +25,18 @@ object AssignMeta {
   }
   
   @scala.inline
-  implicit class AssignMetaOps[Self <: AssignMeta[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (AssignMeta[TContext, TEvent])) extends AnyVal {
+  implicit class AssignMetaMutableBuilder[Self <: AssignMeta[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (AssignMeta[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: AssignAction[TContext, TEvent]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setState(value: State[TContext, TEvent, _, ContextTContext[TContext]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def set_event(value: typings.xstate.typesMod.SCXML.Event[TEvent]): Self = this.set("_event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAction(value: AssignAction[TContext, TEvent]): Self = this.set("action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: State[TContext, TEvent, _, ContextTContext[TContext]]): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def set_event(value: typings.xstate.typesMod.SCXML.Event[TEvent]): Self = StObject.set(x, "_event", value.asInstanceOf[js.Any])
   }
 }

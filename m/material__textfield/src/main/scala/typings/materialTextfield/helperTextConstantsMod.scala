@@ -1,12 +1,11 @@
 package typings.materialTextfield
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/textfield/helper-text/constants", JSImport.Namespace)
-@js.native
-object helperTextConstantsMod extends js.Object {
+object helperTextConstantsMod {
   
   /**
     * @license
@@ -30,23 +29,53 @@ object helperTextConstantsMod extends js.Object {
     * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     * THE SOFTWARE.
     */
-  @js.native
-  object cssClasses extends js.Object {
+  object cssClasses {
     
-    var HELPER_TEXT_PERSISTENT: String = js.native
+    @JSImport("@material/textfield/helper-text/constants", "cssClasses")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var HELPER_TEXT_VALIDATION_MSG: String = js.native
+    @JSImport("@material/textfield/helper-text/constants", "cssClasses.HELPER_TEXT_PERSISTENT")
+    @js.native
+    def HELPER_TEXT_PERSISTENT: String = js.native
+    @scala.inline
+    def HELPER_TEXT_PERSISTENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HELPER_TEXT_PERSISTENT")(x.asInstanceOf[js.Any])
     
-    var ROOT: String = js.native
+    @JSImport("@material/textfield/helper-text/constants", "cssClasses.HELPER_TEXT_VALIDATION_MSG")
+    @js.native
+    def HELPER_TEXT_VALIDATION_MSG: String = js.native
+    @scala.inline
+    def HELPER_TEXT_VALIDATION_MSG_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HELPER_TEXT_VALIDATION_MSG")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield/helper-text/constants", "cssClasses.ROOT")
+    @js.native
+    def ROOT: String = js.native
+    @scala.inline
+    def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object strings extends js.Object {
+  object strings {
     
-    var ARIA_HIDDEN: String = js.native
+    @JSImport("@material/textfield/helper-text/constants", "strings")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var ROLE: String = js.native
+    @JSImport("@material/textfield/helper-text/constants", "strings.ARIA_HIDDEN")
+    @js.native
+    def ARIA_HIDDEN: String = js.native
+    @scala.inline
+    def ARIA_HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_HIDDEN")(x.asInstanceOf[js.Any])
     
-    var ROOT_SELECTOR: String = js.native
+    @JSImport("@material/textfield/helper-text/constants", "strings.ROLE")
+    @js.native
+    def ROLE: String = js.native
+    @scala.inline
+    def ROLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROLE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield/helper-text/constants", "strings.ROOT_SELECTOR")
+    @js.native
+    def ROOT_SELECTOR: String = js.native
+    @scala.inline
+    def ROOT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT_SELECTOR")(x.asInstanceOf[js.Any])
   }
 }

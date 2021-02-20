@@ -1,6 +1,7 @@
 package typings.loopback.mod
 
 import typings.loopback.anon.From
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "Email")
 @js.native
-class Email () extends Model {
+class Email protected () extends Model {
+  def this(data: js.Any) = this()
   
   /** Email sender address.  Required. */
   var from: String = js.native
@@ -39,10 +41,7 @@ class Email () extends Model {
   /** Email addressee.  Required. */
   var to: String = js.native
 }
-/* static members */
-@JSImport("loopback", "Email")
-@js.native
-object Email extends js.Object {
+object Email {
   
   /**
     * Send an email with the given `options`
@@ -66,5 +65,8 @@ object Email extends js.Object {
     * @prop {string} html Body HTML (optional)
     * @param {() => void} callback Called after the e-mail is sent or the sending faile
     */
+  /* static member */
+  @JSImport("loopback", "Email.send")
+  @js.native
   def send(callback: js.Function0[Unit], options: From): Unit = js.native
 }

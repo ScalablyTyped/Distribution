@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeExportImageTasksResult extends js.Object {
+trait DescribeExportImageTasksResult extends StObject {
   
   /**
     * Information about the export image tasks.
@@ -26,33 +27,21 @@ object DescribeExportImageTasksResult {
   }
   
   @scala.inline
-  implicit class DescribeExportImageTasksResultOps[Self <: DescribeExportImageTasksResult] (val x: Self) extends AnyVal {
+  implicit class DescribeExportImageTasksResultMutableBuilder[Self <: DescribeExportImageTasksResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportImageTasks(value: ExportImageTaskList): Self = StObject.set(x, "ExportImageTasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportImageTasksUndefined: Self = StObject.set(x, "ExportImageTasks", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportImageTasksVarargs(value: ExportImageTask*): Self = StObject.set(x, "ExportImageTasks", js.Array(value :_*))
     
     @scala.inline
-    def setExportImageTasksVarargs(value: ExportImageTask*): Self = this.set("ExportImageTasks", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportImageTasks(value: ExportImageTaskList): Self = this.set("ExportImageTasks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExportImageTasks: Self = this.set("ExportImageTasks", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

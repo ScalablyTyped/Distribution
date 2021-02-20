@@ -1,12 +1,13 @@
 package typings.aureliaDependencyInjection.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Function & {  inject :std.Array<any> | (): std.Array<any> | undefined} */
 @js.native
-trait Injectable extends js.Object {
+trait Injectable extends StObject {
   
   /**
     * Calls the function, substituting the specified object for the this value of the function, and the specified array for the arguments of the function.

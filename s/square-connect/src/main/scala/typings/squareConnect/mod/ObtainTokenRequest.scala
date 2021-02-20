@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ObtainTokenRequest")
 @js.native
-class ObtainTokenRequest () extends js.Object {
+class ObtainTokenRequest () extends StObject {
   
   /**
     * The Square-issued ID of your application, available from the [application dashboard](https://connect.squareup.com/apps).

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetHostReservationPurchasePreviewRequest extends js.Object {
+trait GetHostReservationPurchasePreviewRequest extends StObject {
   
   /**
     * The IDs of the Dedicated Hosts with which the reservation is associated.
@@ -26,27 +27,15 @@ object GetHostReservationPurchasePreviewRequest {
   }
   
   @scala.inline
-  implicit class GetHostReservationPurchasePreviewRequestOps[Self <: GetHostReservationPurchasePreviewRequest] (val x: Self) extends AnyVal {
+  implicit class GetHostReservationPurchasePreviewRequestMutableBuilder[Self <: GetHostReservationPurchasePreviewRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostIdSet(value: RequestHostIdSet): Self = StObject.set(x, "HostIdSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostIdSetVarargs(value: DedicatedHostId*): Self = StObject.set(x, "HostIdSet", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHostIdSetVarargs(value: DedicatedHostId*): Self = this.set("HostIdSet", js.Array(value :_*))
-    
-    @scala.inline
-    def setHostIdSet(value: RequestHostIdSet): Self = this.set("HostIdSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOfferingId(value: OfferingId): Self = this.set("OfferingId", value.asInstanceOf[js.Any])
+    def setOfferingId(value: OfferingId): Self = StObject.set(x, "OfferingId", value.asInstanceOf[js.Any])
   }
 }

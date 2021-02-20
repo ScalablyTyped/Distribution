@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TriggerConfig extends js.Object {
+trait TriggerConfig extends StObject {
   
   /**
     * The event type or types for which notifications are triggered.
@@ -31,39 +32,27 @@ object TriggerConfig {
   }
   
   @scala.inline
-  implicit class TriggerConfigOps[Self <: TriggerConfig] (val x: Self) extends AnyVal {
+  implicit class TriggerConfigMutableBuilder[Self <: TriggerConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTriggerEvents(value: TriggerEventTypeList): Self = StObject.set(x, "triggerEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTriggerEventsUndefined: Self = StObject.set(x, "triggerEvents", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTriggerEventsVarargs(value: TriggerEventType*): Self = StObject.set(x, "triggerEvents", js.Array(value :_*))
     
     @scala.inline
-    def setTriggerEventsVarargs(value: TriggerEventType*): Self = this.set("triggerEvents", js.Array(value :_*))
+    def setTriggerName(value: TriggerName): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerEvents(value: TriggerEventTypeList): Self = this.set("triggerEvents", value.asInstanceOf[js.Any])
+    def setTriggerNameUndefined: Self = StObject.set(x, "triggerName", js.undefined)
     
     @scala.inline
-    def deleteTriggerEvents: Self = this.set("triggerEvents", js.undefined)
+    def setTriggerTargetArn(value: TriggerTargetArn): Self = StObject.set(x, "triggerTargetArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerName(value: TriggerName): Self = this.set("triggerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerName: Self = this.set("triggerName", js.undefined)
-    
-    @scala.inline
-    def setTriggerTargetArn(value: TriggerTargetArn): Self = this.set("triggerTargetArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerTargetArn: Self = this.set("triggerTargetArn", js.undefined)
+    def setTriggerTargetArnUndefined: Self = StObject.set(x, "triggerTargetArn", js.undefined)
   }
 }

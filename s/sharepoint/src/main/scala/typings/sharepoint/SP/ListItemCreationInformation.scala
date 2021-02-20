@@ -1,5 +1,6 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,36 +45,24 @@ object ListItemCreationInformation {
   }
   
   @scala.inline
-  implicit class ListItemCreationInformationOps[Self <: ListItemCreationInformation] (val x: Self) extends AnyVal {
+  implicit class ListItemCreationInformationMutableBuilder[Self <: ListItemCreationInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_folderUrl(value: () => String): Self = StObject.set(x, "get_folderUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_leafName(value: () => String): Self = StObject.set(x, "get_leafName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_underlyingObjectType(value: () => FileSystemObjectType): Self = StObject.set(x, "get_underlyingObjectType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_folderUrl(value: () => String): Self = this.set("get_folderUrl", js.Any.fromFunction0(value))
+    def setSet_folderUrl(value: String => Unit): Self = StObject.set(x, "set_folderUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_leafName(value: () => String): Self = this.set("get_leafName", js.Any.fromFunction0(value))
+    def setSet_leafName(value: String => Unit): Self = StObject.set(x, "set_leafName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_underlyingObjectType(value: () => FileSystemObjectType): Self = this.set("get_underlyingObjectType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet_folderUrl(value: String => Unit): Self = this.set("set_folderUrl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_leafName(value: String => Unit): Self = this.set("set_leafName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_underlyingObjectType(value: FileSystemObjectType => Unit): Self = this.set("set_underlyingObjectType", js.Any.fromFunction1(value))
+    def setSet_underlyingObjectType(value: FileSystemObjectType => Unit): Self = StObject.set(x, "set_underlyingObjectType", js.Any.fromFunction1(value))
   }
 }

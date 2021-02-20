@@ -11,33 +11,54 @@ import typings.storybookComponents.objectMod.ObjectProps
 import typings.storybookComponents.optionsOptionsMod.OptionsProps
 import typings.storybookComponents.rangeMod.RangeProps
 import typings.storybookComponents.textMod.TextProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/components/dist/controls", JSImport.Namespace)
-@js.native
-object controlsMod extends js.Object {
+object controlsMod {
   
+  @JSImport("@storybook/components/dist/controls", "ArrayControl")
+  @js.native
   val ArrayControl: FC[ArrayProps] = js.native
   
+  @JSImport("@storybook/components/dist/controls", "BooleanControl")
+  @js.native
   val BooleanControl: FC[BooleanProps] = js.native
   
+  @JSImport("@storybook/components/dist/controls", "ColorControl")
+  @js.native
   val ColorControl: FC[ColorProps] = js.native
   
+  @JSImport("@storybook/components/dist/controls", "DateControl")
+  @js.native
   val DateControl: FC[DateProps] = js.native
   
+  @JSImport("@storybook/components/dist/controls", "NumberControl")
+  @js.native
   val NumberControl: FC[NumberProps] = js.native
   
+  @JSImport("@storybook/components/dist/controls", "ObjectControl")
+  @js.native
   val ObjectControl: FC[ObjectProps] = js.native
   
+  @JSImport("@storybook/components/dist/controls", "OptionsControl")
+  @js.native
   val OptionsControl: FC[OptionsProps] = js.native
   
+  @JSImport("@storybook/components/dist/controls", "RangeControl")
+  @js.native
   val RangeControl: FC[RangeProps] = js.native
   
+  @JSImport("@storybook/components/dist/controls", "TextControl")
+  @js.native
   val TextControl: FC[TextProps] = js.native
   
+  @JSImport("@storybook/components/dist/controls", "format")
+  @js.native
   def format(value: NumberValue): String = js.native
   
+  @JSImport("@storybook/components/dist/controls", "parse")
+  @js.native
   def parse(value: String): Double = js.native
 }

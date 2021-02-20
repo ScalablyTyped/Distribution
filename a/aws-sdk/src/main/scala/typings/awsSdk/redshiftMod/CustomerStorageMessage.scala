@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomerStorageMessage extends js.Object {
+trait CustomerStorageMessage extends StObject {
   
   /**
     * The total amount of storage currently used for snapshots.
@@ -26,30 +27,18 @@ object CustomerStorageMessage {
   }
   
   @scala.inline
-  implicit class CustomerStorageMessageOps[Self <: CustomerStorageMessage] (val x: Self) extends AnyVal {
+  implicit class CustomerStorageMessageMutableBuilder[Self <: CustomerStorageMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTotalBackupSizeInMegaBytes(value: Double): Self = StObject.set(x, "TotalBackupSizeInMegaBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTotalBackupSizeInMegaBytesUndefined: Self = StObject.set(x, "TotalBackupSizeInMegaBytes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotalProvisionedStorageInMegaBytes(value: Double): Self = StObject.set(x, "TotalProvisionedStorageInMegaBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalBackupSizeInMegaBytes(value: Double): Self = this.set("TotalBackupSizeInMegaBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalBackupSizeInMegaBytes: Self = this.set("TotalBackupSizeInMegaBytes", js.undefined)
-    
-    @scala.inline
-    def setTotalProvisionedStorageInMegaBytes(value: Double): Self = this.set("TotalProvisionedStorageInMegaBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalProvisionedStorageInMegaBytes: Self = this.set("TotalProvisionedStorageInMegaBytes", js.undefined)
+    def setTotalProvisionedStorageInMegaBytesUndefined: Self = StObject.set(x, "TotalProvisionedStorageInMegaBytes", js.undefined)
   }
 }

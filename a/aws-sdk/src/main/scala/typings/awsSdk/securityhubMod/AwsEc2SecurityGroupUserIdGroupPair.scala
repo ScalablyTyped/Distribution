@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsEc2SecurityGroupUserIdGroupPair extends js.Object {
+trait AwsEc2SecurityGroupUserIdGroupPair extends StObject {
   
   /**
     * The ID of the security group.
@@ -46,54 +47,42 @@ object AwsEc2SecurityGroupUserIdGroupPair {
   }
   
   @scala.inline
-  implicit class AwsEc2SecurityGroupUserIdGroupPairOps[Self <: AwsEc2SecurityGroupUserIdGroupPair] (val x: Self) extends AnyVal {
+  implicit class AwsEc2SecurityGroupUserIdGroupPairMutableBuilder[Self <: AwsEc2SecurityGroupUserIdGroupPair] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupId(value: NonEmptyString): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupName(value: NonEmptyString): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupId(value: NonEmptyString): Self = this.set("GroupId", value.asInstanceOf[js.Any])
+    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
     @scala.inline
-    def deleteGroupId: Self = this.set("GroupId", js.undefined)
+    def setPeeringStatus(value: NonEmptyString): Self = StObject.set(x, "PeeringStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupName(value: NonEmptyString): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    def setPeeringStatusUndefined: Self = StObject.set(x, "PeeringStatus", js.undefined)
     
     @scala.inline
-    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+    def setUserId(value: NonEmptyString): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeeringStatus(value: NonEmptyString): Self = this.set("PeeringStatus", value.asInstanceOf[js.Any])
+    def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
     
     @scala.inline
-    def deletePeeringStatus: Self = this.set("PeeringStatus", js.undefined)
+    def setVpcId(value: NonEmptyString): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserId(value: NonEmptyString): Self = this.set("UserId", value.asInstanceOf[js.Any])
+    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
     
     @scala.inline
-    def deleteUserId: Self = this.set("UserId", js.undefined)
+    def setVpcPeeringConnectionId(value: NonEmptyString): Self = StObject.set(x, "VpcPeeringConnectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpcId(value: NonEmptyString): Self = this.set("VpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("VpcId", js.undefined)
-    
-    @scala.inline
-    def setVpcPeeringConnectionId(value: NonEmptyString): Self = this.set("VpcPeeringConnectionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcPeeringConnectionId: Self = this.set("VpcPeeringConnectionId", js.undefined)
+    def setVpcPeeringConnectionIdUndefined: Self = StObject.set(x, "VpcPeeringConnectionId", js.undefined)
   }
 }

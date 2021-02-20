@@ -1,11 +1,12 @@
 package typings.stripe.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cvc extends js.Object {
+trait Cvc extends StObject {
   
   var cvc: js.UndefOr[String] = js.native
   
@@ -24,33 +25,21 @@ object Cvc {
   }
   
   @scala.inline
-  implicit class CvcOps[Self <: Cvc] (val x: Self) extends AnyVal {
+  implicit class CvcMutableBuilder[Self <: Cvc] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCvc(value: String): Self = StObject.set(x, "cvc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCvcUndefined: Self = StObject.set(x, "cvc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExp_month(value: Double): Self = StObject.set(x, "exp_month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExp_month(value: Double): Self = this.set("exp_month", value.asInstanceOf[js.Any])
+    def setExp_year(value: Double): Self = StObject.set(x, "exp_year", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExp_year(value: Double): Self = this.set("exp_year", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumber(value: String): Self = this.set("number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCvc(value: String): Self = this.set("cvc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCvc: Self = this.set("cvc", js.undefined)
+    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * google.bigtable.admin.v2.BigtableTableAdmin.GenerateConsistencyToken
   */
 @js.native
-trait SchemaGenerateConsistencyTokenRequest extends js.Object
+trait SchemaGenerateConsistencyTokenRequest extends StObject

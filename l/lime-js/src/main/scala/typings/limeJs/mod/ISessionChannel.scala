@@ -1,11 +1,12 @@
 package typings.limeJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISessionChannel extends js.Object {
+trait ISessionChannel extends StObject {
   
   def onSession(session: Session): js.Any = js.native
   
@@ -20,24 +21,12 @@ object ISessionChannel {
   }
   
   @scala.inline
-  implicit class ISessionChannelOps[Self <: ISessionChannel] (val x: Self) extends AnyVal {
+  implicit class ISessionChannelMutableBuilder[Self <: ISessionChannel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnSession(value: Session => js.Any): Self = StObject.set(x, "onSession", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnSession(value: Session => js.Any): Self = this.set("onSession", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSendSession(value: Session => Unit): Self = this.set("sendSession", js.Any.fromFunction1(value))
+    def setSendSession(value: Session => Unit): Self = StObject.set(x, "sendSession", js.Any.fromFunction1(value))
   }
 }

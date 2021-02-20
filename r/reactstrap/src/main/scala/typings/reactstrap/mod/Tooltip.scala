@@ -1,12 +1,11 @@
 package typings.reactstrap.mod
 
-import typings.react.mod.Component
-import typings.reactstrap.tooltipMod.TooltipProps
+import typings.reactstrap.tooltipMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap/lib", "Tooltip")
 @js.native
-class Tooltip ()
-  extends Component[TooltipProps, js.Object, js.Any]
+class Tooltip () extends default

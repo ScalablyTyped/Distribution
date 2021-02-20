@@ -1,18 +1,17 @@
 package typings.blueprintjsTable
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/table/lib/esm/common/renderMode", JSImport.Namespace)
-@js.native
-object renderModeMod extends js.Object {
+object renderModeMod {
   
   @js.native
-  sealed trait RenderMode extends js.Object
+  sealed trait RenderMode extends StObject
+  @JSImport("@blueprintjs/table/lib/esm/common/renderMode", "RenderMode")
   @js.native
-  object RenderMode extends js.Object {
+  object RenderMode extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[RenderMode with String] = js.native
@@ -25,8 +24,7 @@ object renderModeMod extends js.Object {
       */
     @js.native
     sealed trait BATCH extends RenderMode
-    /* "batch" */ @js.native
-    object BATCH extends TopLevel[BATCH with String]
+    /* "batch" */ val BATCH: typings.blueprintjsTable.renderModeMod.RenderMode.BATCH with String = js.native
     
     /**
       * Renders all cells synchronously on initial mount, then renders cells in
@@ -36,8 +34,7 @@ object renderModeMod extends js.Object {
       */
     @js.native
     sealed trait BATCH_ON_UPDATE extends RenderMode
-    /* "batch-on-update" */ @js.native
-    object BATCH_ON_UPDATE extends TopLevel[BATCH_ON_UPDATE with String]
+    /* "batch-on-update" */ val BATCH_ON_UPDATE: typings.blueprintjsTable.renderModeMod.RenderMode.BATCH_ON_UPDATE with String = js.native
     
     /**
       * Disables the batch-rendering behavior, rendering all cells synchronously
@@ -46,7 +43,6 @@ object renderModeMod extends js.Object {
       */
     @js.native
     sealed trait NONE extends RenderMode
-    /* "none" */ @js.native
-    object NONE extends TopLevel[NONE with String]
+    /* "none" */ val NONE: typings.blueprintjsTable.renderModeMod.RenderMode.NONE with String = js.native
   }
 }

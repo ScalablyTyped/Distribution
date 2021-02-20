@@ -1,16 +1,16 @@
 package typings.firebaseDatabase
 
 import typings.firebaseDatabase.repoInfoMod.RepoInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/realtime/Connection", JSImport.Namespace)
-@js.native
-object connectionMod extends js.Object {
+object connectionMod {
   
+  @JSImport("@firebase/database/dist/src/realtime/Connection", "Connection")
   @js.native
-  class Connection protected () extends js.Object {
+  class Connection protected () extends StObject {
     def this(
       id: String,
       repoInfo_ : RepoInfo,

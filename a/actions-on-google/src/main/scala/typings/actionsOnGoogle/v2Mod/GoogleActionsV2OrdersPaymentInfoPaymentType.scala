@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.ON_FULFILLMENT
   - typings.actionsOnGoogle.actionsOnGoogleStrings.GIFT_CARD
 */
-trait GoogleActionsV2OrdersPaymentInfoPaymentType extends js.Object
+trait GoogleActionsV2OrdersPaymentInfoPaymentType extends StObject
 object GoogleActionsV2OrdersPaymentInfoPaymentType {
   
   @scala.inline

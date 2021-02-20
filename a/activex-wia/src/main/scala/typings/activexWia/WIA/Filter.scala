@@ -1,5 +1,6 @@
 package typings.activexWia.WIA
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * properties and finally use the Apply method of the ImageProcess object to filter an ImageFile.
   */
 @js.native
-trait Filter extends js.Object {
+trait Filter extends StObject {
   
   /** Returns a Description of what the filter does */
   val Description: String = js.native

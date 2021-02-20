@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Playlist extends js.Object {
+trait Playlist extends StObject {
   
   /**
     * The format of the output playlist. Valid formats include HLSv3, HLSv4, and Smooth.
@@ -51,63 +52,51 @@ object Playlist {
   }
   
   @scala.inline
-  implicit class PlaylistOps[Self <: Playlist] (val x: Self) extends AnyVal {
+  implicit class PlaylistMutableBuilder[Self <: Playlist] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: PlaylistFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHlsContentProtection(value: HlsContentProtection): Self = StObject.set(x, "HlsContentProtection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: PlaylistFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
+    def setHlsContentProtectionUndefined: Self = StObject.set(x, "HlsContentProtection", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("Format", js.undefined)
+    def setName(value: Filename): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHlsContentProtection(value: HlsContentProtection): Self = this.set("HlsContentProtection", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteHlsContentProtection: Self = this.set("HlsContentProtection", js.undefined)
+    def setOutputKeys(value: OutputKeys): Self = StObject.set(x, "OutputKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Filename): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOutputKeysUndefined: Self = StObject.set(x, "OutputKeys", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setOutputKeysVarargs(value: Key*): Self = StObject.set(x, "OutputKeys", js.Array(value :_*))
     
     @scala.inline
-    def setOutputKeysVarargs(value: Key*): Self = this.set("OutputKeys", js.Array(value :_*))
+    def setPlayReadyDrm(value: PlayReadyDrm): Self = StObject.set(x, "PlayReadyDrm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputKeys(value: OutputKeys): Self = this.set("OutputKeys", value.asInstanceOf[js.Any])
+    def setPlayReadyDrmUndefined: Self = StObject.set(x, "PlayReadyDrm", js.undefined)
     
     @scala.inline
-    def deleteOutputKeys: Self = this.set("OutputKeys", js.undefined)
+    def setStatus(value: JobStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayReadyDrm(value: PlayReadyDrm): Self = this.set("PlayReadyDrm", value.asInstanceOf[js.Any])
+    def setStatusDetail(value: Description): Self = StObject.set(x, "StatusDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlayReadyDrm: Self = this.set("PlayReadyDrm", js.undefined)
+    def setStatusDetailUndefined: Self = StObject.set(x, "StatusDetail", js.undefined)
     
     @scala.inline
-    def setStatus(value: JobStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setStatusDetail(value: Description): Self = this.set("StatusDetail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusDetail: Self = this.set("StatusDetail", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

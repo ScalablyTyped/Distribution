@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimerStartedEventAttributes extends js.Object {
+trait TimerStartedEventAttributes extends StObject {
   
   /**
     * Data attached to the event that can be used by the decider in subsequent workflow tasks.
@@ -36,33 +37,21 @@ object TimerStartedEventAttributes {
   }
   
   @scala.inline
-  implicit class TimerStartedEventAttributesOps[Self <: TimerStartedEventAttributes] (val x: Self) extends AnyVal {
+  implicit class TimerStartedEventAttributesMutableBuilder[Self <: TimerStartedEventAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecisionTaskCompletedEventId(value: EventId): Self = this.set("decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
+    def setStartToFireTimeout(value: DurationInSeconds): Self = StObject.set(x, "startToFireTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartToFireTimeout(value: DurationInSeconds): Self = this.set("startToFireTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimerId(value: TimerId): Self = this.set("timerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setControl(value: Data): Self = this.set("control", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteControl: Self = this.set("control", js.undefined)
+    def setTimerId(value: TimerId): Self = StObject.set(x, "timerId", value.asInstanceOf[js.Any])
   }
 }

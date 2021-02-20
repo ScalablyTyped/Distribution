@@ -3,14 +3,14 @@ package typings.guacamoleClient
 import typings.guacamoleClient.audioRecorderMod.AudioRecorder
 import typings.guacamoleClient.guacCommonMod.Mimetype
 import typings.guacamoleClient.outputStreamMod.OutputStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("guacamole-client/lib/RawAudioRecorder", JSImport.Namespace)
-@js.native
-object rawAudioRecorderMod extends js.Object {
+object rawAudioRecorderMod {
   
+  @JSImport("guacamole-client/lib/RawAudioRecorder", "RawAudioRecorder")
   @js.native
   class RawAudioRecorder protected () extends AudioRecorder {
     /**
@@ -23,8 +23,11 @@ object rawAudioRecorderMod extends js.Object {
     def this(stream: OutputStream, mimetype: Mimetype) = this()
   }
   /* static members */
-  @js.native
-  object RawAudioRecorder extends js.Object {
+  object RawAudioRecorder {
+    
+    @JSImport("guacamole-client/lib/RawAudioRecorder", "RawAudioRecorder")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Returns a list of all mimetypes supported by Guacamole.RawAudioRecorder. Only
@@ -39,10 +42,17 @@ object rawAudioRecorderMod extends js.Object {
       *     excluding any parameters. If the necessary JavaScript APIs for recording
       *     raw audio are absent, this list will be empty.
       */
+    @JSImport("guacamole-client/lib/RawAudioRecorder", "RawAudioRecorder.getSupportedTypes")
+    @js.native
     def getSupportedTypes(): js.Array[String] = js.native
     
+    @JSImport("guacamole-client/lib/RawAudioRecorder", "RawAudioRecorder.isSupportedType")
+    @js.native
+    def isSupportedType: js.Function1[/* mimetype */ Mimetype, Boolean] = js.native
+    @JSImport("guacamole-client/lib/RawAudioRecorder", "RawAudioRecorder.isSupportedType")
+    @js.native
     def isSupportedType(mimetype: Mimetype): Boolean = js.native
-    @JSName("isSupportedType")
-    var isSupportedType_Original: js.Function1[/* mimetype */ Mimetype, Boolean] = js.native
+    @scala.inline
+    def isSupportedType_=(x: js.Function1[/* mimetype */ Mimetype, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSupportedType")(x.asInstanceOf[js.Any])
   }
 }

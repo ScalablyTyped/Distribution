@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for a Quest Criterion resource.
   */
 @js.native
-trait SchemaQuestCriterion extends js.Object {
+trait SchemaQuestCriterion extends StObject {
   
   /**
     * The total number of times the associated event must be incremented for
@@ -53,48 +54,36 @@ object SchemaQuestCriterion {
   }
   
   @scala.inline
-  implicit class SchemaQuestCriterionOps[Self <: SchemaQuestCriterion] (val x: Self) extends AnyVal {
+  implicit class SchemaQuestCriterionMutableBuilder[Self <: SchemaQuestCriterion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompletionContribution(value: SchemaQuestContribution): Self = StObject.set(x, "completionContribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletionContributionUndefined: Self = StObject.set(x, "completionContribution", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentContribution(value: SchemaQuestContribution): Self = StObject.set(x, "currentContribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletionContribution(value: SchemaQuestContribution): Self = this.set("completionContribution", value.asInstanceOf[js.Any])
+    def setCurrentContributionUndefined: Self = StObject.set(x, "currentContribution", js.undefined)
     
     @scala.inline
-    def deleteCompletionContribution: Self = this.set("completionContribution", js.undefined)
+    def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentContribution(value: SchemaQuestContribution): Self = this.set("currentContribution", value.asInstanceOf[js.Any])
+    def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
     
     @scala.inline
-    def deleteCurrentContribution: Self = this.set("currentContribution", js.undefined)
+    def setInitialPlayerProgress(value: SchemaQuestContribution): Self = StObject.set(x, "initialPlayerProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventId(value: String): Self = this.set("eventId", value.asInstanceOf[js.Any])
+    def setInitialPlayerProgressUndefined: Self = StObject.set(x, "initialPlayerProgress", js.undefined)
     
     @scala.inline
-    def deleteEventId: Self = this.set("eventId", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialPlayerProgress(value: SchemaQuestContribution): Self = this.set("initialPlayerProgress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitialPlayerProgress: Self = this.set("initialPlayerProgress", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

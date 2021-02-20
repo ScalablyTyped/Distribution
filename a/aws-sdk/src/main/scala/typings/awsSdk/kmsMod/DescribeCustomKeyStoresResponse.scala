@@ -1,11 +1,12 @@
 package typings.awsSdk.kmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeCustomKeyStoresResponse extends js.Object {
+trait DescribeCustomKeyStoresResponse extends StObject {
   
   /**
     * Contains metadata about each custom key store.
@@ -31,39 +32,27 @@ object DescribeCustomKeyStoresResponse {
   }
   
   @scala.inline
-  implicit class DescribeCustomKeyStoresResponseOps[Self <: DescribeCustomKeyStoresResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeCustomKeyStoresResponseMutableBuilder[Self <: DescribeCustomKeyStoresResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomKeyStores(value: CustomKeyStoresList): Self = StObject.set(x, "CustomKeyStores", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomKeyStoresUndefined: Self = StObject.set(x, "CustomKeyStores", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomKeyStoresVarargs(value: CustomKeyStoresListEntry*): Self = StObject.set(x, "CustomKeyStores", js.Array(value :_*))
     
     @scala.inline
-    def setCustomKeyStoresVarargs(value: CustomKeyStoresListEntry*): Self = this.set("CustomKeyStores", js.Array(value :_*))
+    def setNextMarker(value: MarkerType): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomKeyStores(value: CustomKeyStoresList): Self = this.set("CustomKeyStores", value.asInstanceOf[js.Any])
+    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
     @scala.inline
-    def deleteCustomKeyStores: Self = this.set("CustomKeyStores", js.undefined)
+    def setTruncated(value: BooleanType): Self = StObject.set(x, "Truncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextMarker(value: MarkerType): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
-    
-    @scala.inline
-    def setTruncated(value: BooleanType): Self = this.set("Truncated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTruncated: Self = this.set("Truncated", js.undefined)
+    def setTruncatedUndefined: Self = StObject.set(x, "Truncated", js.undefined)
   }
 }

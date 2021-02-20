@@ -9,6 +9,7 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.Element
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -124,16 +125,20 @@ class Style protected () extends Element[IModel] {
   def textAlign: TextAlign = js.native
   def textAlign_=(newValue: TextAlign): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Style")
-@js.native
-object Style extends js.Object {
+object Style {
+  
+  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Style")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new Style instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Style.create")
+  @js.native
   def create(model: IModel): Style = js.native
   
   /**
@@ -141,6 +146,9 @@ object Style extends js.Object {
     * The new Style will be automatically stored in the 'style' property
     * of the parent DataGridCell element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Style.createInDataGridCellUnderStyle")
+  @js.native
   def createInDataGridCellUnderStyle(container: DataGridCell): Style = js.native
   
   /**
@@ -148,6 +156,9 @@ object Style extends js.Object {
     * The new Style will be automatically stored in the 'style' property
     * of the parent DataGridColumn element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Style.createInDataGridColumnUnderStyle")
+  @js.native
   def createInDataGridColumnUnderStyle(container: DataGridColumn): Style = js.native
   
   /**
@@ -155,6 +166,9 @@ object Style extends js.Object {
     * The new Style will be automatically stored in the 'style' property
     * of the parent DocumentTemplate element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Style.createInDocumentTemplateUnderStyle")
+  @js.native
   def createInDocumentTemplateUnderStyle(container: DocumentTemplate): Style = js.native
   
   /**
@@ -162,6 +176,9 @@ object Style extends js.Object {
     * The new Style will be automatically stored in the 'style' property
     * of the parent DynamicLabel element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Style.createInDynamicLabelUnderStyle")
+  @js.native
   def createInDynamicLabelUnderStyle(container: DynamicLabel): Style = js.native
   
   /**
@@ -169,6 +186,9 @@ object Style extends js.Object {
     * The new Style will be automatically stored in the 'style' property
     * of the parent Grid element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Style.createInGridUnderStyle")
+  @js.native
   def createInGridUnderStyle(container: Grid): Style = js.native
   
   /**
@@ -176,6 +196,9 @@ object Style extends js.Object {
     * The new Style will be automatically stored in the 'style' property
     * of the parent StaticLabel element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Style.createInStaticLabelUnderStyle")
+  @js.native
   def createInStaticLabelUnderStyle(container: StaticLabel): Style = js.native
   
   /**
@@ -183,6 +206,9 @@ object Style extends js.Object {
     * The new Style will be automatically stored in the 'style' property
     * of the parent TableCell element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Style.createInTableCellUnderStyle")
+  @js.native
   def createInTableCellUnderStyle(container: TableCell): Style = js.native
   
   /**
@@ -190,6 +216,9 @@ object Style extends js.Object {
     * The new Style will be automatically stored in the 'style' property
     * of the parent Table element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Style.createInTableUnderStyle")
+  @js.native
   def createInTableUnderStyle(container: Table): Style = js.native
   
   /**
@@ -197,9 +226,22 @@ object Style extends js.Object {
     * The new Style will be automatically stored in the 'style' property
     * of the parent Title element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Style.createInTitleUnderStyle")
+  @js.native
   def createInTitleUnderStyle(container: Title): Style = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Style.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Style.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

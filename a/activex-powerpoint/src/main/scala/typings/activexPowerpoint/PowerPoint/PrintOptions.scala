@@ -1,12 +1,13 @@
 package typings.activexPowerpoint.PowerPoint
 
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrintOptions extends js.Object {
+trait PrintOptions extends StObject {
   
   var ActivePrinter: String = js.native
   
@@ -80,78 +81,66 @@ object PrintOptions {
   }
   
   @scala.inline
-  implicit class PrintOptionsOps[Self <: PrintOptions] (val x: Self) extends AnyVal {
+  implicit class PrintOptionsMutableBuilder[Self <: PrintOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivePrinter(value: String): Self = StObject.set(x, "ActivePrinter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollate(value: MsoTriState): Self = StObject.set(x, "Collate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivePrinter(value: String): Self = this.set("ActivePrinter", value.asInstanceOf[js.Any])
+    def setFitToPage(value: MsoTriState): Self = StObject.set(x, "FitToPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setFrameSlides(value: MsoTriState): Self = StObject.set(x, "FrameSlides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollate(value: MsoTriState): Self = this.set("Collate", value.asInstanceOf[js.Any])
+    def setHandoutOrder(value: PpPrintHandoutOrder): Self = StObject.set(x, "HandoutOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFitToPage(value: MsoTriState): Self = this.set("FitToPage", value.asInstanceOf[js.Any])
+    def setHighQuality(value: MsoTriState): Self = StObject.set(x, "HighQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameSlides(value: MsoTriState): Self = this.set("FrameSlides", value.asInstanceOf[js.Any])
+    def setNumberOfCopies(value: Double): Self = StObject.set(x, "NumberOfCopies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandoutOrder(value: PpPrintHandoutOrder): Self = this.set("HandoutOrder", value.asInstanceOf[js.Any])
+    def setOutputType(value: PpPrintOutputType): Self = StObject.set(x, "OutputType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighQuality(value: MsoTriState): Self = this.set("HighQuality", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfCopies(value: Double): Self = this.set("NumberOfCopies", value.asInstanceOf[js.Any])
+    def setPowerPointDotPrintOptions_typekey(value: PrintOptions): Self = StObject.set(x, "PowerPoint.PrintOptions_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputType(value: PpPrintOutputType): Self = this.set("OutputType", value.asInstanceOf[js.Any])
+    def setPrintColorType(value: PpPrintColorType): Self = StObject.set(x, "PrintColorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setPrintComments(value: MsoTriState): Self = StObject.set(x, "PrintComments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPowerPointDotPrintOptions_typekey(value: PrintOptions): Self = this.set("PowerPoint.PrintOptions_typekey", value.asInstanceOf[js.Any])
+    def setPrintFontsAsGraphics(value: MsoTriState): Self = StObject.set(x, "PrintFontsAsGraphics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintColorType(value: PpPrintColorType): Self = this.set("PrintColorType", value.asInstanceOf[js.Any])
+    def setPrintHiddenSlides(value: MsoTriState): Self = StObject.set(x, "PrintHiddenSlides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintComments(value: MsoTriState): Self = this.set("PrintComments", value.asInstanceOf[js.Any])
+    def setPrintInBackground(value: MsoTriState): Self = StObject.set(x, "PrintInBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintFontsAsGraphics(value: MsoTriState): Self = this.set("PrintFontsAsGraphics", value.asInstanceOf[js.Any])
+    def setRangeType(value: PpPrintRangeType): Self = StObject.set(x, "RangeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintHiddenSlides(value: MsoTriState): Self = this.set("PrintHiddenSlides", value.asInstanceOf[js.Any])
+    def setRanges(value: PrintRanges): Self = StObject.set(x, "Ranges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintInBackground(value: MsoTriState): Self = this.set("PrintInBackground", value.asInstanceOf[js.Any])
+    def setSectionIndex(value: Double): Self = StObject.set(x, "sectionIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeType(value: PpPrintRangeType): Self = this.set("RangeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRanges(value: PrintRanges): Self = this.set("Ranges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlideShowName(value: String): Self = this.set("SlideShowName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSectionIndex(value: Double): Self = this.set("sectionIndex", value.asInstanceOf[js.Any])
+    def setSlideShowName(value: String): Self = StObject.set(x, "SlideShowName", value.asInstanceOf[js.Any])
   }
 }

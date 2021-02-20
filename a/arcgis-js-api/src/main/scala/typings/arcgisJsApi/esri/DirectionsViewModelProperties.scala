@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,75 +80,63 @@ object DirectionsViewModelProperties {
   }
   
   @scala.inline
-  implicit class DirectionsViewModelPropertiesOps[Self <: DirectionsViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class DirectionsViewModelPropertiesMutableBuilder[Self <: DirectionsViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImpedanceAttribute(value: String): Self = StObject.set(x, "impedanceAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImpedanceAttributeUndefined: Self = StObject.set(x, "impedanceAttribute", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxStops(value: Double): Self = StObject.set(x, "maxStops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpedanceAttribute(value: String): Self = this.set("impedanceAttribute", value.asInstanceOf[js.Any])
+    def setMaxStopsUndefined: Self = StObject.set(x, "maxStops", js.undefined)
     
     @scala.inline
-    def deleteImpedanceAttribute: Self = this.set("impedanceAttribute", js.undefined)
+    def setRouteParameters(value: RouteParametersProperties): Self = StObject.set(x, "routeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxStops(value: Double): Self = this.set("maxStops", value.asInstanceOf[js.Any])
+    def setRouteParametersUndefined: Self = StObject.set(x, "routeParameters", js.undefined)
     
     @scala.inline
-    def deleteMaxStops: Self = this.set("maxStops", js.undefined)
+    def setRouteServiceUrl(value: String): Self = StObject.set(x, "routeServiceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteParameters(value: RouteParametersProperties): Self = this.set("routeParameters", value.asInstanceOf[js.Any])
+    def setRouteServiceUrlUndefined: Self = StObject.set(x, "routeServiceUrl", js.undefined)
     
     @scala.inline
-    def deleteRouteParameters: Self = this.set("routeParameters", js.undefined)
+    def setRouteSymbol(value: SimpleLineSymbolProperties): Self = StObject.set(x, "routeSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteServiceUrl(value: String): Self = this.set("routeServiceUrl", value.asInstanceOf[js.Any])
+    def setRouteSymbolUndefined: Self = StObject.set(x, "routeSymbol", js.undefined)
     
     @scala.inline
-    def deleteRouteServiceUrl: Self = this.set("routeServiceUrl", js.undefined)
+    def setSelectedTravelMode(value: DirectionsViewModelSelectedTravelMode): Self = StObject.set(x, "selectedTravelMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteSymbol(value: SimpleLineSymbolProperties): Self = this.set("routeSymbol", value.asInstanceOf[js.Any])
+    def setSelectedTravelModeUndefined: Self = StObject.set(x, "selectedTravelMode", js.undefined)
     
     @scala.inline
-    def deleteRouteSymbol: Self = this.set("routeSymbol", js.undefined)
+    def setStopSymbols(value: DirectionsViewModelStopSymbols): Self = StObject.set(x, "stopSymbols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedTravelMode(value: DirectionsViewModelSelectedTravelMode): Self = this.set("selectedTravelMode", value.asInstanceOf[js.Any])
+    def setStopSymbolsUndefined: Self = StObject.set(x, "stopSymbols", js.undefined)
     
     @scala.inline
-    def deleteSelectedTravelMode: Self = this.set("selectedTravelMode", js.undefined)
+    def setStops(value: CollectionProperties[GraphicProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopSymbols(value: DirectionsViewModelStopSymbols): Self = this.set("stopSymbols", value.asInstanceOf[js.Any])
+    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
     @scala.inline
-    def deleteStopSymbols: Self = this.set("stopSymbols", js.undefined)
+    def setStopsVarargs(value: GraphicProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
     
     @scala.inline
-    def setStopsVarargs(value: GraphicProperties*): Self = this.set("stops", js.Array(value :_*))
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStops(value: CollectionProperties[GraphicProperties]): Self = this.set("stops", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStops: Self = this.set("stops", js.undefined)
-    
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PartnerRevenueModel extends js.Object {
+trait PartnerRevenueModel extends StObject {
   
   /**
     * Required. The markup amount of the partner revenue model. Must be greater than or equal to 0. * When the markup_type is set to be `PARTNER_REVENUE_MODEL_MARKUP_TYPE_CPM`, this field
@@ -28,30 +29,18 @@ object PartnerRevenueModel {
   }
   
   @scala.inline
-  implicit class PartnerRevenueModelOps[Self <: PartnerRevenueModel] (val x: Self) extends AnyVal {
+  implicit class PartnerRevenueModelMutableBuilder[Self <: PartnerRevenueModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarkupAmount(value: String): Self = StObject.set(x, "markupAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkupAmountUndefined: Self = StObject.set(x, "markupAmount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarkupType(value: String): Self = StObject.set(x, "markupType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkupAmount(value: String): Self = this.set("markupAmount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarkupAmount: Self = this.set("markupAmount", js.undefined)
-    
-    @scala.inline
-    def setMarkupType(value: String): Self = this.set("markupType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarkupType: Self = this.set("markupType", js.undefined)
+    def setMarkupTypeUndefined: Self = StObject.set(x, "markupType", js.undefined)
   }
 }

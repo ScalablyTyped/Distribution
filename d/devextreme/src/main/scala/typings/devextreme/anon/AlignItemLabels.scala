@@ -7,12 +7,13 @@ import typings.devextreme.mod.DevExpress.ui.dxFormEmptyItem
 import typings.devextreme.mod.DevExpress.ui.dxFormGroupItem
 import typings.devextreme.mod.DevExpress.ui.dxFormSimpleItem
 import typings.devextreme.mod.DevExpress.ui.dxFormTabbedItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlignItemLabels extends js.Object {
+trait AlignItemLabels extends StObject {
   
   var alignItemLabels: js.UndefOr[Boolean] = js.native
   
@@ -51,97 +52,85 @@ object AlignItemLabels {
   }
   
   @scala.inline
-  implicit class AlignItemLabelsOps[Self <: AlignItemLabels] (val x: Self) extends AnyVal {
+  implicit class AlignItemLabelsMutableBuilder[Self <: AlignItemLabels] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignItemLabels(value: Boolean): Self = StObject.set(x, "alignItemLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignItemLabelsUndefined: Self = StObject.set(x, "alignItemLabels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignItemLabels(value: Boolean): Self = this.set("alignItemLabels", value.asInstanceOf[js.Any])
+    def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     
     @scala.inline
-    def deleteAlignItemLabels: Self = this.set("alignItemLabels", js.undefined)
+    def setColCount(value: Double): Self = StObject.set(x, "colCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadge(value: String): Self = this.set("badge", value.asInstanceOf[js.Any])
+    def setColCountByScreen(value: js.Any): Self = StObject.set(x, "colCountByScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBadge: Self = this.set("badge", js.undefined)
+    def setColCountByScreenUndefined: Self = StObject.set(x, "colCountByScreen", js.undefined)
     
     @scala.inline
-    def setColCount(value: Double): Self = this.set("colCount", value.asInstanceOf[js.Any])
+    def setColCountUndefined: Self = StObject.set(x, "colCount", js.undefined)
     
     @scala.inline
-    def deleteColCount: Self = this.set("colCount", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColCountByScreen(value: js.Any): Self = this.set("colCountByScreen", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteColCountByScreen: Self = this.set("colCountByScreen", js.undefined)
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
-    
-    @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
-    
-    @scala.inline
-    def setItemsVarargs(
-      value: (dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem)*
-    ): Self = this.set("items", js.Array(value :_*))
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
     def setItems(
       value: js.Array[
           dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem
         ]
-    ): Self = this.set("items", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def setTabTemplateFunction3(value: (/* tabData */ js.Any, /* tabIndex */ Double, /* tabElement */ dxElement) => _): Self = this.set("tabTemplate", js.Any.fromFunction3(value))
+    def setItemsVarargs(
+      value: (dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem)*
+    ): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
     def setTabTemplate(
       value: template | (js.Function3[/* tabData */ js.Any, /* tabIndex */ Double, /* tabElement */ dxElement, _])
-    ): Self = this.set("tabTemplate", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "tabTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabTemplate: Self = this.set("tabTemplate", js.undefined)
+    def setTabTemplateFunction3(value: (/* tabData */ js.Any, /* tabIndex */ Double, /* tabElement */ dxElement) => _): Self = StObject.set(x, "tabTemplate", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setTemplateFunction3(value: (/* tabData */ js.Any, /* tabIndex */ Double, /* tabElement */ dxElement) => _): Self = this.set("template", js.Any.fromFunction3(value))
+    def setTabTemplateUndefined: Self = StObject.set(x, "tabTemplate", js.undefined)
     
     @scala.inline
     def setTemplate(
       value: template | (js.Function3[/* tabData */ js.Any, /* tabIndex */ Double, /* tabElement */ dxElement, _])
-    ): Self = this.set("template", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTemplateFunction3(value: (/* tabData */ js.Any, /* tabIndex */ Double, /* tabElement */ dxElement) => _): Self = StObject.set(x, "template", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

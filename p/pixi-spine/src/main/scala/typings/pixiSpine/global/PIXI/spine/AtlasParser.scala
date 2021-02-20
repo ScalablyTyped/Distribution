@@ -1,5 +1,6 @@
 package typings.pixiSpine.global.PIXI.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class AtlasParser ()
   extends typings.pixiSpine.PIXI.spine.AtlasParser
-/* static members */
-@JSGlobal("PIXI.spine.AtlasParser")
-@js.native
-object AtlasParser extends js.Object {
+object AtlasParser {
   
+  /* static member */
+  @JSGlobal("PIXI.spine.AtlasParser.use")
+  @js.native
   def use(
     resource: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.LoaderResource */ js.Any,
     next: js.Function0[_]

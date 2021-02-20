@@ -1,5 +1,6 @@
 package typings.babylonjs.materialsIndexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,151 +10,117 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class MaterialFlags ()
   extends typings.babylonjs.materialFlagsMod.MaterialFlags
 /* static members */
-@JSImport("babylonjs/Materials/index", "MaterialFlags")
-@js.native
-object MaterialFlags extends js.Object {
+object MaterialFlags {
   
-  /**
-    * Are ambient textures enabled in the application.
-    */
-  def AmbientTextureEnabled: Boolean = js.native
-  def AmbientTextureEnabled_=(value: Boolean): Unit = js.native
+  @JSImport("babylonjs/Materials/index", "MaterialFlags")
+  @js.native
+  val ^ : js.Any = js.native
   
-  /**
-    * Are anisotropic textures enabled in the application.
-    */
-  def AnisotropicTextureEnabled: Boolean = js.native
-  def AnisotropicTextureEnabled_=(value: Boolean): Unit = js.native
+  @JSImport("babylonjs/Materials/index", "MaterialFlags._AmbientTextureEnabled")
+  @js.native
+  def _AmbientTextureEnabled: js.Any = js.native
+  @scala.inline
+  def _AmbientTextureEnabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AmbientTextureEnabled")(x.asInstanceOf[js.Any])
   
-  /**
-    * Are bump textures enabled in the application.
-    */
-  def BumpTextureEnabled: Boolean = js.native
-  def BumpTextureEnabled_=(value: Boolean): Unit = js.native
+  @JSImport("babylonjs/Materials/index", "MaterialFlags._AnisotropicTextureEnabled")
+  @js.native
+  def _AnisotropicTextureEnabled: js.Any = js.native
+  @scala.inline
+  def _AnisotropicTextureEnabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AnisotropicTextureEnabled")(x.asInstanceOf[js.Any])
   
-  /**
-    * Are clear coat bump textures enabled in the application.
-    */
-  def ClearCoatBumpTextureEnabled: Boolean = js.native
-  def ClearCoatBumpTextureEnabled_=(value: Boolean): Unit = js.native
+  @JSImport("babylonjs/Materials/index", "MaterialFlags._BumpTextureEnabled")
+  @js.native
+  def _BumpTextureEnabled: js.Any = js.native
+  @scala.inline
+  def _BumpTextureEnabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BumpTextureEnabled")(x.asInstanceOf[js.Any])
   
-  /**
-    * Are clear coat textures enabled in the application.
-    */
-  def ClearCoatTextureEnabled: Boolean = js.native
-  def ClearCoatTextureEnabled_=(value: Boolean): Unit = js.native
+  @JSImport("babylonjs/Materials/index", "MaterialFlags._ClearCoatBumpTextureEnabled")
+  @js.native
+  def _ClearCoatBumpTextureEnabled: js.Any = js.native
+  @scala.inline
+  def _ClearCoatBumpTextureEnabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ClearCoatBumpTextureEnabled")(x.asInstanceOf[js.Any])
   
-  /**
-    * Are clear coat tint textures enabled in the application.
-    */
-  def ClearCoatTintTextureEnabled: Boolean = js.native
-  def ClearCoatTintTextureEnabled_=(value: Boolean): Unit = js.native
+  @JSImport("babylonjs/Materials/index", "MaterialFlags._ClearCoatTextureEnabled")
+  @js.native
+  def _ClearCoatTextureEnabled: js.Any = js.native
+  @scala.inline
+  def _ClearCoatTextureEnabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ClearCoatTextureEnabled")(x.asInstanceOf[js.Any])
   
-  /**
-    * Are color grading textures enabled in the application.
-    */
-  def ColorGradingTextureEnabled: Boolean = js.native
-  def ColorGradingTextureEnabled_=(value: Boolean): Unit = js.native
+  @JSImport("babylonjs/Materials/index", "MaterialFlags._ClearCoatTintTextureEnabled")
+  @js.native
+  def _ClearCoatTintTextureEnabled: js.Any = js.native
+  @scala.inline
+  def _ClearCoatTintTextureEnabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ClearCoatTintTextureEnabled")(x.asInstanceOf[js.Any])
   
-  /**
-    * Are detail textures enabled in the application.
-    */
-  def DetailTextureEnabled: Boolean = js.native
-  def DetailTextureEnabled_=(value: Boolean): Unit = js.native
+  @JSImport("babylonjs/Materials/index", "MaterialFlags._ColorGradingTextureEnabled")
+  @js.native
+  def _ColorGradingTextureEnabled: js.Any = js.native
+  @scala.inline
+  def _ColorGradingTextureEnabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ColorGradingTextureEnabled")(x.asInstanceOf[js.Any])
   
-  /**
-    * Are diffuse textures enabled in the application.
-    */
-  def DiffuseTextureEnabled: Boolean = js.native
-  def DiffuseTextureEnabled_=(value: Boolean): Unit = js.native
+  @JSImport("babylonjs/Materials/index", "MaterialFlags._DetailTextureEnabled")
+  @js.native
+  def _DetailTextureEnabled: js.Any = js.native
+  @scala.inline
+  def _DetailTextureEnabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DetailTextureEnabled")(x.asInstanceOf[js.Any])
   
-  /**
-    * Are emissive textures enabled in the application.
-    */
-  def EmissiveTextureEnabled: Boolean = js.native
-  def EmissiveTextureEnabled_=(value: Boolean): Unit = js.native
+  @JSImport("babylonjs/Materials/index", "MaterialFlags._DiffuseTextureEnabled")
+  @js.native
+  def _DiffuseTextureEnabled: js.Any = js.native
+  @scala.inline
+  def _DiffuseTextureEnabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DiffuseTextureEnabled")(x.asInstanceOf[js.Any])
   
-  /**
-    * Are fresnels enabled in the application.
-    */
-  def FresnelEnabled: Boolean = js.native
-  def FresnelEnabled_=(value: Boolean): Unit = js.native
+  @JSImport("babylonjs/Materials/index", "MaterialFlags._EmissiveTextureEnabled")
+  @js.native
+  def _EmissiveTextureEnabled: js.Any = js.native
+  @scala.inline
+  def _EmissiveTextureEnabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_EmissiveTextureEnabled")(x.asInstanceOf[js.Any])
   
-  /**
-    * Are lightmap textures enabled in the application.
-    */
-  def LightmapTextureEnabled: Boolean = js.native
-  def LightmapTextureEnabled_=(value: Boolean): Unit = js.native
+  @JSImport("babylonjs/Materials/index", "MaterialFlags._FresnelEnabled")
+  @js.native
+  def _FresnelEnabled: js.Any = js.native
+  @scala.inline
+  def _FresnelEnabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FresnelEnabled")(x.asInstanceOf[js.Any])
   
-  /**
-    * Are opacity textures enabled in the application.
-    */
-  def OpacityTextureEnabled: Boolean = js.native
-  def OpacityTextureEnabled_=(value: Boolean): Unit = js.native
+  @JSImport("babylonjs/Materials/index", "MaterialFlags._LightmapTextureEnabled")
+  @js.native
+  def _LightmapTextureEnabled: js.Any = js.native
+  @scala.inline
+  def _LightmapTextureEnabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LightmapTextureEnabled")(x.asInstanceOf[js.Any])
   
-  /**
-    * Are reflection textures enabled in the application.
-    */
-  def ReflectionTextureEnabled: Boolean = js.native
-  def ReflectionTextureEnabled_=(value: Boolean): Unit = js.native
+  @JSImport("babylonjs/Materials/index", "MaterialFlags._OpacityTextureEnabled")
+  @js.native
+  def _OpacityTextureEnabled: js.Any = js.native
+  @scala.inline
+  def _OpacityTextureEnabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_OpacityTextureEnabled")(x.asInstanceOf[js.Any])
   
-  /**
-    * Are refraction textures enabled in the application.
-    */
-  def RefractionTextureEnabled: Boolean = js.native
-  def RefractionTextureEnabled_=(value: Boolean): Unit = js.native
+  @JSImport("babylonjs/Materials/index", "MaterialFlags._ReflectionTextureEnabled")
+  @js.native
+  def _ReflectionTextureEnabled: js.Any = js.native
+  @scala.inline
+  def _ReflectionTextureEnabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ReflectionTextureEnabled")(x.asInstanceOf[js.Any])
   
-  /**
-    * Are sheen textures enabled in the application.
-    */
-  def SheenTextureEnabled: Boolean = js.native
-  def SheenTextureEnabled_=(value: Boolean): Unit = js.native
+  @JSImport("babylonjs/Materials/index", "MaterialFlags._RefractionTextureEnabled")
+  @js.native
+  def _RefractionTextureEnabled: js.Any = js.native
+  @scala.inline
+  def _RefractionTextureEnabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RefractionTextureEnabled")(x.asInstanceOf[js.Any])
   
-  /**
-    * Are specular textures enabled in the application.
-    */
-  def SpecularTextureEnabled: Boolean = js.native
-  def SpecularTextureEnabled_=(value: Boolean): Unit = js.native
+  @JSImport("babylonjs/Materials/index", "MaterialFlags._SheenTextureEnabled")
+  @js.native
+  def _SheenTextureEnabled: js.Any = js.native
+  @scala.inline
+  def _SheenTextureEnabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SheenTextureEnabled")(x.asInstanceOf[js.Any])
   
-  /**
-    * Are thickness textures enabled in the application.
-    */
-  def ThicknessTextureEnabled: Boolean = js.native
-  def ThicknessTextureEnabled_=(value: Boolean): Unit = js.native
+  @JSImport("babylonjs/Materials/index", "MaterialFlags._SpecularTextureEnabled")
+  @js.native
+  def _SpecularTextureEnabled: js.Any = js.native
+  @scala.inline
+  def _SpecularTextureEnabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SpecularTextureEnabled")(x.asInstanceOf[js.Any])
   
-  var _AmbientTextureEnabled: js.Any = js.native
-  
-  var _AnisotropicTextureEnabled: js.Any = js.native
-  
-  var _BumpTextureEnabled: js.Any = js.native
-  
-  var _ClearCoatBumpTextureEnabled: js.Any = js.native
-  
-  var _ClearCoatTextureEnabled: js.Any = js.native
-  
-  var _ClearCoatTintTextureEnabled: js.Any = js.native
-  
-  var _ColorGradingTextureEnabled: js.Any = js.native
-  
-  var _DetailTextureEnabled: js.Any = js.native
-  
-  var _DiffuseTextureEnabled: js.Any = js.native
-  
-  var _EmissiveTextureEnabled: js.Any = js.native
-  
-  var _FresnelEnabled: js.Any = js.native
-  
-  var _LightmapTextureEnabled: js.Any = js.native
-  
-  var _OpacityTextureEnabled: js.Any = js.native
-  
-  var _ReflectionTextureEnabled: js.Any = js.native
-  
-  var _RefractionTextureEnabled: js.Any = js.native
-  
-  var _SheenTextureEnabled: js.Any = js.native
-  
-  var _SpecularTextureEnabled: js.Any = js.native
-  
-  var _ThicknessTextureEnabled: js.Any = js.native
+  @JSImport("babylonjs/Materials/index", "MaterialFlags._ThicknessTextureEnabled")
+  @js.native
+  def _ThicknessTextureEnabled: js.Any = js.native
+  @scala.inline
+  def _ThicknessTextureEnabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ThicknessTextureEnabled")(x.asInstanceOf[js.Any])
 }

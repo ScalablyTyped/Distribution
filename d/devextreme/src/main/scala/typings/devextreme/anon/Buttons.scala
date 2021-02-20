@@ -1,12 +1,13 @@
 package typings.devextreme.anon
 
 import typings.devextreme.mod.DevExpress.ui.dxButtonOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Buttons extends js.Object {
+trait Buttons extends StObject {
   
   var buttons: js.UndefOr[js.Array[dxButtonOptions]] = js.native
   
@@ -29,57 +30,45 @@ object Buttons {
   }
   
   @scala.inline
-  implicit class ButtonsOps[Self <: Buttons] (val x: Self) extends AnyVal {
+  implicit class ButtonsMutableBuilder[Self <: Buttons] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtons(value: js.Array[dxButtonOptions]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonsVarargs(value: dxButtonOptions*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
     @scala.inline
-    def setButtonsVarargs(value: dxButtonOptions*): Self = this.set("buttons", js.Array(value :_*))
+    def setDragEnabled(value: Boolean): Self = StObject.set(x, "dragEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtons(value: js.Array[dxButtonOptions]): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    def setDragEnabledUndefined: Self = StObject.set(x, "dragEnabled", js.undefined)
     
     @scala.inline
-    def deleteButtons: Self = this.set("buttons", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragEnabled(value: Boolean): Self = this.set("dragEnabled", value.asInstanceOf[js.Any])
+    def setMessageHtml(value: String): Self = StObject.set(x, "messageHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDragEnabled: Self = this.set("dragEnabled", js.undefined)
+    def setMessageHtmlUndefined: Self = StObject.set(x, "messageHtml", js.undefined)
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setShowTitle(value: Boolean): Self = StObject.set(x, "showTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageHtml(value: String): Self = this.set("messageHtml", value.asInstanceOf[js.Any])
+    def setShowTitleUndefined: Self = StObject.set(x, "showTitle", js.undefined)
     
     @scala.inline
-    def deleteMessageHtml: Self = this.set("messageHtml", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTitle(value: Boolean): Self = this.set("showTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowTitle: Self = this.set("showTitle", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

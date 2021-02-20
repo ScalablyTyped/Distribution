@@ -1,5 +1,6 @@
 package typings.officeJs.global.OneNote
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("OneNote.NoteTagType")
 @js.native
-object NoteTagType extends js.Object {
+object NoteTagType extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJs.OneNote.NoteTagType with String] = js.native

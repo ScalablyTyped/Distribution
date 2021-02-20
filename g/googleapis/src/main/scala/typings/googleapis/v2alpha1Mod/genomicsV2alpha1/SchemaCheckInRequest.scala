@@ -1,6 +1,7 @@
 package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The parameters to the CheckIn method.
   */
 @js.native
-trait SchemaCheckInRequest extends js.Object {
+trait SchemaCheckInRequest extends StObject {
   
   /**
     * The deadline has expired and the worker needs more time.
@@ -40,42 +41,30 @@ object SchemaCheckInRequest {
   }
   
   @scala.inline
-  implicit class SchemaCheckInRequestOps[Self <: SchemaCheckInRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaCheckInRequestMutableBuilder[Self <: SchemaCheckInRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeadlineExpired(value: SchemaEmpty): Self = StObject.set(x, "deadlineExpired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeadlineExpiredUndefined: Self = StObject.set(x, "deadlineExpired", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent(value: StringDictionary[js.Any]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeadlineExpired(value: SchemaEmpty): Self = this.set("deadlineExpired", value.asInstanceOf[js.Any])
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def deleteDeadlineExpired: Self = this.set("deadlineExpired", js.undefined)
+    def setResult(value: SchemaStatus): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: StringDictionary[js.Any]): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setWorkerStatus(value: SchemaWorkerStatus): Self = StObject.set(x, "workerStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: SchemaStatus): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResult: Self = this.set("result", js.undefined)
-    
-    @scala.inline
-    def setWorkerStatus(value: SchemaWorkerStatus): Self = this.set("workerStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerStatus: Self = this.set("workerStatus", js.undefined)
+    def setWorkerStatusUndefined: Self = StObject.set(x, "workerStatus", js.undefined)
   }
 }

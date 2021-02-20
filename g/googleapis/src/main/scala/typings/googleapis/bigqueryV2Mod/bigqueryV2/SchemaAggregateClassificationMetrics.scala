@@ -1,5 +1,6 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * predicted rows.
   */
 @js.native
-trait SchemaAggregateClassificationMetrics extends js.Object {
+trait SchemaAggregateClassificationMetrics extends StObject {
   
   /**
     * Accuracy is the fraction of predictions given the correct label. For
@@ -65,60 +66,48 @@ object SchemaAggregateClassificationMetrics {
   }
   
   @scala.inline
-  implicit class SchemaAggregateClassificationMetricsOps[Self <: SchemaAggregateClassificationMetrics] (val x: Self) extends AnyVal {
+  implicit class SchemaAggregateClassificationMetricsMutableBuilder[Self <: SchemaAggregateClassificationMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setF1Score(value: Double): Self = StObject.set(x, "f1Score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccuracy(value: Double): Self = this.set("accuracy", value.asInstanceOf[js.Any])
+    def setF1ScoreUndefined: Self = StObject.set(x, "f1Score", js.undefined)
     
     @scala.inline
-    def deleteAccuracy: Self = this.set("accuracy", js.undefined)
+    def setLogLoss(value: Double): Self = StObject.set(x, "logLoss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF1Score(value: Double): Self = this.set("f1Score", value.asInstanceOf[js.Any])
+    def setLogLossUndefined: Self = StObject.set(x, "logLoss", js.undefined)
     
     @scala.inline
-    def deleteF1Score: Self = this.set("f1Score", js.undefined)
+    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogLoss(value: Double): Self = this.set("logLoss", value.asInstanceOf[js.Any])
+    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
     @scala.inline
-    def deleteLogLoss: Self = this.set("logLoss", js.undefined)
+    def setRecall(value: Double): Self = StObject.set(x, "recall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
+    def setRecallUndefined: Self = StObject.set(x, "recall", js.undefined)
     
     @scala.inline
-    def deletePrecision: Self = this.set("precision", js.undefined)
+    def setRocAuc(value: Double): Self = StObject.set(x, "rocAuc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecall(value: Double): Self = this.set("recall", value.asInstanceOf[js.Any])
+    def setRocAucUndefined: Self = StObject.set(x, "rocAuc", js.undefined)
     
     @scala.inline
-    def deleteRecall: Self = this.set("recall", js.undefined)
+    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRocAuc(value: Double): Self = this.set("rocAuc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRocAuc: Self = this.set("rocAuc", js.undefined)
-    
-    @scala.inline
-    def setThreshold(value: Double): Self = this.set("threshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreshold: Self = this.set("threshold", js.undefined)
+    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChatMessageMention extends js.Object {
+trait ChatMessageMention extends StObject {
   
   /**
     * Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding
@@ -32,45 +33,33 @@ object ChatMessageMention {
   }
   
   @scala.inline
-  implicit class ChatMessageMentionOps[Self <: ChatMessageMention] (val x: Self) extends AnyVal {
+  implicit class ChatMessageMentionMutableBuilder[Self <: ChatMessageMention] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: NullableOption[Double]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdNull: Self = StObject.set(x, "id", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setId(value: NullableOption[Double]): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMentionText(value: NullableOption[String]): Self = StObject.set(x, "mentionText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setMentionTextNull: Self = StObject.set(x, "mentionText", null)
     
     @scala.inline
-    def setIdNull: Self = this.set("id", null)
+    def setMentionTextUndefined: Self = StObject.set(x, "mentionText", js.undefined)
     
     @scala.inline
-    def setMentionText(value: NullableOption[String]): Self = this.set("mentionText", value.asInstanceOf[js.Any])
+    def setMentioned(value: NullableOption[IdentitySet]): Self = StObject.set(x, "mentioned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMentionText: Self = this.set("mentionText", js.undefined)
+    def setMentionedNull: Self = StObject.set(x, "mentioned", null)
     
     @scala.inline
-    def setMentionTextNull: Self = this.set("mentionText", null)
-    
-    @scala.inline
-    def setMentioned(value: NullableOption[IdentitySet]): Self = this.set("mentioned", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMentioned: Self = this.set("mentioned", js.undefined)
-    
-    @scala.inline
-    def setMentionedNull: Self = this.set("mentioned", null)
+    def setMentionedUndefined: Self = StObject.set(x, "mentioned", js.undefined)
   }
 }

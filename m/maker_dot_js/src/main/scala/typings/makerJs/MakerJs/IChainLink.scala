@@ -1,5 +1,6 @@
 package typings.makerJs.MakerJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A link in a chain, with direction of flow.
   */
 @js.native
-trait IChainLink extends js.Object {
+trait IChainLink extends StObject {
   
   /**
     * The endpoints of the path, in absolute coords.
@@ -39,33 +40,21 @@ object IChainLink {
   }
   
   @scala.inline
-  implicit class IChainLinkOps[Self <: IChainLink] (val x: Self) extends AnyVal {
+  implicit class IChainLinkMutableBuilder[Self <: IChainLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndPoints(value: js.Array[IPoint]): Self = StObject.set(x, "endPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndPointsVarargs(value: IPoint*): Self = StObject.set(x, "endPoints", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPathLength(value: Double): Self = StObject.set(x, "pathLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndPointsVarargs(value: IPoint*): Self = this.set("endPoints", js.Array(value :_*))
+    def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndPoints(value: js.Array[IPoint]): Self = this.set("endPoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPathLength(value: Double): Self = this.set("pathLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReversed(value: Boolean): Self = this.set("reversed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWalkedPath(value: IWalkPath): Self = this.set("walkedPath", value.asInstanceOf[js.Any])
+    def setWalkedPath(value: IWalkPath): Self = StObject.set(x, "walkedPath", value.asInstanceOf[js.Any])
   }
 }

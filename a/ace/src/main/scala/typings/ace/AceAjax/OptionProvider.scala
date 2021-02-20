@@ -1,11 +1,12 @@
 package typings.ace.AceAjax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptionProvider extends js.Object {
+trait OptionProvider extends StObject {
   
   /**
     * Get a Configuration Option
@@ -41,30 +42,18 @@ object OptionProvider {
   }
   
   @scala.inline
-  implicit class OptionProviderOps[Self <: OptionProvider] (val x: Self) extends AnyVal {
+  implicit class OptionProviderMutableBuilder[Self <: OptionProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetOption(value: String => js.Any): Self = StObject.set(x, "getOption", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetOptions(value: () => js.Any): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetOption(value: (String, js.Any) => Unit): Self = StObject.set(x, "setOption", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetOption(value: String => js.Any): Self = this.set("getOption", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetOptions(value: () => js.Any): Self = this.set("getOptions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetOption(value: (String, js.Any) => Unit): Self = this.set("setOption", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetOptions(value: js.Any => Unit): Self = this.set("setOptions", js.Any.fromFunction1(value))
+    def setSetOptions(value: js.Any => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
   }
 }

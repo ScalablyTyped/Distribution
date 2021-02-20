@@ -1,14 +1,14 @@
 package typings.samchon
 
 import typings.samchon.icasegeneratorMod.ICaseGenerator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/library/case_generators/CartesianProduct", JSImport.Namespace)
-@js.native
-object cartesianProductMod extends js.Object {
+object cartesianProductMod {
   
+  @JSImport("samchon/library/case_generators/CartesianProduct", "CartesianProduct")
   @js.native
   class CartesianProduct protected () extends ICaseGenerator {
     /**

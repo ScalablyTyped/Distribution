@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogappregistryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAssociatedAttributeGroupsResponse extends js.Object {
+trait ListAssociatedAttributeGroupsResponse extends StObject {
   
   /**
     * A list of attribute group IDs.
@@ -26,33 +27,21 @@ object ListAssociatedAttributeGroupsResponse {
   }
   
   @scala.inline
-  implicit class ListAssociatedAttributeGroupsResponseOps[Self <: ListAssociatedAttributeGroupsResponse] (val x: Self) extends AnyVal {
+  implicit class ListAssociatedAttributeGroupsResponseMutableBuilder[Self <: ListAssociatedAttributeGroupsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeGroups(value: AttributeGroupIds): Self = StObject.set(x, "attributeGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeGroupsUndefined: Self = StObject.set(x, "attributeGroups", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributeGroupsVarargs(value: AttributeGroupId*): Self = StObject.set(x, "attributeGroups", js.Array(value :_*))
     
     @scala.inline
-    def setAttributeGroupsVarargs(value: AttributeGroupId*): Self = this.set("attributeGroups", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeGroups(value: AttributeGroupIds): Self = this.set("attributeGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributeGroups: Self = this.set("attributeGroups", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for peer channel diagnostics.
   */
 @js.native
-trait SchemaPeerChannelDiagnostics extends js.Object {
+trait SchemaPeerChannelDiagnostics extends StObject {
   
   /**
     * Number of bytes received.
@@ -60,66 +61,54 @@ object SchemaPeerChannelDiagnostics {
   }
   
   @scala.inline
-  implicit class SchemaPeerChannelDiagnosticsOps[Self <: SchemaPeerChannelDiagnostics] (val x: Self) extends AnyVal {
+  implicit class SchemaPeerChannelDiagnosticsMutableBuilder[Self <: SchemaPeerChannelDiagnostics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytesReceived(value: SchemaAggregateStats): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBytesReceivedUndefined: Self = StObject.set(x, "bytesReceived", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBytesSent(value: SchemaAggregateStats): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesReceived(value: SchemaAggregateStats): Self = this.set("bytesReceived", value.asInstanceOf[js.Any])
+    def setBytesSentUndefined: Self = StObject.set(x, "bytesSent", js.undefined)
     
     @scala.inline
-    def deleteBytesReceived: Self = this.set("bytesReceived", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesSent(value: SchemaAggregateStats): Self = this.set("bytesSent", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteBytesSent: Self = this.set("bytesSent", js.undefined)
+    def setNumMessagesLost(value: Double): Self = StObject.set(x, "numMessagesLost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNumMessagesLostUndefined: Self = StObject.set(x, "numMessagesLost", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setNumMessagesReceived(value: Double): Self = StObject.set(x, "numMessagesReceived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumMessagesLost(value: Double): Self = this.set("numMessagesLost", value.asInstanceOf[js.Any])
+    def setNumMessagesReceivedUndefined: Self = StObject.set(x, "numMessagesReceived", js.undefined)
     
     @scala.inline
-    def deleteNumMessagesLost: Self = this.set("numMessagesLost", js.undefined)
+    def setNumMessagesSent(value: Double): Self = StObject.set(x, "numMessagesSent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumMessagesReceived(value: Double): Self = this.set("numMessagesReceived", value.asInstanceOf[js.Any])
+    def setNumMessagesSentUndefined: Self = StObject.set(x, "numMessagesSent", js.undefined)
     
     @scala.inline
-    def deleteNumMessagesReceived: Self = this.set("numMessagesReceived", js.undefined)
+    def setNumSendFailures(value: Double): Self = StObject.set(x, "numSendFailures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumMessagesSent(value: Double): Self = this.set("numMessagesSent", value.asInstanceOf[js.Any])
+    def setNumSendFailuresUndefined: Self = StObject.set(x, "numSendFailures", js.undefined)
     
     @scala.inline
-    def deleteNumMessagesSent: Self = this.set("numMessagesSent", js.undefined)
+    def setRoundtripLatencyMillis(value: SchemaAggregateStats): Self = StObject.set(x, "roundtripLatencyMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumSendFailures(value: Double): Self = this.set("numSendFailures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumSendFailures: Self = this.set("numSendFailures", js.undefined)
-    
-    @scala.inline
-    def setRoundtripLatencyMillis(value: SchemaAggregateStats): Self = this.set("roundtripLatencyMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoundtripLatencyMillis: Self = this.set("roundtripLatencyMillis", js.undefined)
+    def setRoundtripLatencyMillisUndefined: Self = StObject.set(x, "roundtripLatencyMillis", js.undefined)
   }
 }

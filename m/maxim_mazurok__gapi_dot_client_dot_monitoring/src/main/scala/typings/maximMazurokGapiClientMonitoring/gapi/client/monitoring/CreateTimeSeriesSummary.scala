@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateTimeSeriesSummary extends js.Object {
+trait CreateTimeSeriesSummary extends StObject {
   
   /** The number of points that failed to be written. Order is not guaranteed. */
   var errors: js.UndefOr[js.Array[Error]] = js.native
@@ -25,39 +26,27 @@ object CreateTimeSeriesSummary {
   }
   
   @scala.inline
-  implicit class CreateTimeSeriesSummaryOps[Self <: CreateTimeSeriesSummary] (val x: Self) extends AnyVal {
+  implicit class CreateTimeSeriesSummaryMutableBuilder[Self <: CreateTimeSeriesSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
     @scala.inline
-    def setErrorsVarargs(value: Error*): Self = this.set("errors", js.Array(value :_*))
+    def setSuccessPointCount(value: Double): Self = StObject.set(x, "successPointCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: js.Array[Error]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setSuccessPointCountUndefined: Self = StObject.set(x, "successPointCount", js.undefined)
     
     @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
+    def setTotalPointCount(value: Double): Self = StObject.set(x, "totalPointCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessPointCount(value: Double): Self = this.set("successPointCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessPointCount: Self = this.set("successPointCount", js.undefined)
-    
-    @scala.inline
-    def setTotalPointCount(value: Double): Self = this.set("totalPointCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalPointCount: Self = this.set("totalPointCount", js.undefined)
+    def setTotalPointCountUndefined: Self = StObject.set(x, "totalPointCount", js.undefined)
   }
 }

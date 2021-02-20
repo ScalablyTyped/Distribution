@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The default constructor (no argument) results in a Rect(0,0,0,0).
   */
-class Rect () extends js.Object {
+class Rect () extends StObject {
   /**
     * The constructor taking two Points produces a Rect that spans both points.
     * @param {Point} tl Top-left Point
@@ -265,10 +266,7 @@ class Rect () extends js.Object {
   /**Gets or sets the top-left y coordinate of the Rect.*/
   var y: Double = js.native
 }
-/* static members */
-@JSImport("go", "Rect")
-@js.native
-object Rect extends js.Object {
+object Rect {
   
   /**
     * This static function indicates whether a Rect contains the given Point/Rect.
@@ -282,7 +280,12 @@ object Rect extends js.Object {
     * @param {number=} h The Height of the Rect to include in the new bounds, defaults to zero.
     * false otherwise.
     */
+  /* static member */
+  @JSImport("go", "Rect.contains")
+  @js.native
   def contains(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double): Boolean = js.native
+  @JSImport("go", "Rect.contains")
+  @js.native
   def contains(
     rx: Double,
     ry: Double,
@@ -293,7 +296,11 @@ object Rect extends js.Object {
     w: js.UndefOr[scala.Nothing],
     h: Double
   ): Boolean = js.native
+  @JSImport("go", "Rect.contains")
+  @js.native
   def contains(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double, w: Double): Boolean = js.native
+  @JSImport("go", "Rect.contains")
+  @js.native
   def contains(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double, w: Double, h: Double): Boolean = js.native
   
   /**
@@ -307,17 +314,26 @@ object Rect extends js.Object {
     * @param {number} w
     * @param {number} h
     */
+  /* static member */
+  @JSImport("go", "Rect.intersects")
+  @js.native
   def intersects(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double, w: Double, h: Double): Boolean = js.native
   
   /**
     * This static function can be used to read in a Rect from a string that was produced by Rect.stringify.
     * @param {string} str
     */
+  /* static member */
+  @JSImport("go", "Rect.parse")
+  @js.native
   def parse(str: String): Rect = js.native
   
   /**
     * This static function can be used to write out a Rect as a string that can be read by Rect.parse.
     * @param {Rect} val
     */
+  /* static member */
+  @JSImport("go", "Rect.stringify")
+  @js.native
   def stringify(`val`: Rect): String = js.native
 }

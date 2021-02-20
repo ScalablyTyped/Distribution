@@ -1,12 +1,13 @@
 package typings.handsontable.mod.Handsontable.plugins
 
 import typings.handsontable.mod._Handsontable.Core
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlterManager extends js.Object {
+trait AlterManager extends StObject {
   
   var dataProvider: DataProvider = js.native
   
@@ -39,39 +40,27 @@ object AlterManager {
   }
   
   @scala.inline
-  implicit class AlterManagerOps[Self <: AlterManager] (val x: Self) extends AnyVal {
+  implicit class AlterManagerMutableBuilder[Self <: AlterManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataProvider(value: DataProvider): Self = StObject.set(x, "dataProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHot(value: Core): Self = StObject.set(x, "hot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataProvider(value: DataProvider): Self = this.set("dataProvider", value.asInstanceOf[js.Any])
+    def setMatrix(value: Matrix): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setPrepareAlter(value: (String, js.Any) => Unit): Self = StObject.set(x, "prepareAlter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHot(value: Core): Self = this.set("hot", value.asInstanceOf[js.Any])
+    def setSheet(value: Sheet): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatrix(value: Matrix): Self = this.set("matrix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrepareAlter(value: (String, js.Any) => Unit): Self = this.set("prepareAlter", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSheet(value: Sheet): Self = this.set("sheet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggerAlter(value: (String, js.Any) => Unit): Self = this.set("triggerAlter", js.Any.fromFunction2(value))
+    def setTriggerAlter(value: (String, js.Any) => Unit): Self = StObject.set(x, "triggerAlter", js.Any.fromFunction2(value))
   }
 }

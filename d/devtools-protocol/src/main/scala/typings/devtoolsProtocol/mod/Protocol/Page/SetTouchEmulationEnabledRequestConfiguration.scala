@@ -2,6 +2,7 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import typings.devtoolsProtocol.devtoolsProtocolStrings.desktop
 import typings.devtoolsProtocol.devtoolsProtocolStrings.mobile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.mobile
   - typings.devtoolsProtocol.devtoolsProtocolStrings.desktop
 */
-trait SetTouchEmulationEnabledRequestConfiguration extends js.Object
+trait SetTouchEmulationEnabledRequestConfiguration extends StObject
 object SetTouchEmulationEnabledRequestConfiguration {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrialComponentSimpleSummary extends js.Object {
+trait TrialComponentSimpleSummary extends StObject {
   
   var CreatedBy: js.UndefOr[UserContext] = js.native
   
@@ -35,48 +36,36 @@ object TrialComponentSimpleSummary {
   }
   
   @scala.inline
-  implicit class TrialComponentSimpleSummaryOps[Self <: TrialComponentSimpleSummary] (val x: Self) extends AnyVal {
+  implicit class TrialComponentSimpleSummaryMutableBuilder[Self <: TrialComponentSimpleSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedBy(value: UserContext): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedBy(value: UserContext): Self = this.set("CreatedBy", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteCreatedBy: Self = this.set("CreatedBy", js.undefined)
+    def setTrialComponentArn(value: TrialComponentArn): Self = StObject.set(x, "TrialComponentArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setTrialComponentArnUndefined: Self = StObject.set(x, "TrialComponentArn", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setTrialComponentName(value: ExperimentEntityName): Self = StObject.set(x, "TrialComponentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrialComponentArn(value: TrialComponentArn): Self = this.set("TrialComponentArn", value.asInstanceOf[js.Any])
+    def setTrialComponentNameUndefined: Self = StObject.set(x, "TrialComponentName", js.undefined)
     
     @scala.inline
-    def deleteTrialComponentArn: Self = this.set("TrialComponentArn", js.undefined)
+    def setTrialComponentSource(value: TrialComponentSource): Self = StObject.set(x, "TrialComponentSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrialComponentName(value: ExperimentEntityName): Self = this.set("TrialComponentName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrialComponentName: Self = this.set("TrialComponentName", js.undefined)
-    
-    @scala.inline
-    def setTrialComponentSource(value: TrialComponentSource): Self = this.set("TrialComponentSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrialComponentSource: Self = this.set("TrialComponentSource", js.undefined)
+    def setTrialComponentSourceUndefined: Self = StObject.set(x, "TrialComponentSource", js.undefined)
   }
 }

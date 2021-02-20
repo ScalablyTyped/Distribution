@@ -10,12 +10,13 @@ import typings.maximMazurokGapiClientVision.anon.PageToken
 import typings.maximMazurokGapiClientVision.anon.ProductId
 import typings.maximMazurokGapiClientVision.anon.UpdateMask
 import typings.maximMazurokGapiClientVision.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProductsResource extends js.Object {
+trait ProductsResource extends StObject {
   
   /**
     * Creates and returns a new product resource. Possible errors: * Returns INVALID_ARGUMENT if display_name is missing or longer than 4096 characters. * Returns INVALID_ARGUMENT if

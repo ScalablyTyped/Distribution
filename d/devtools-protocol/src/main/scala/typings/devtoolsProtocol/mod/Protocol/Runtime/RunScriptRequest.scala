@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RunScriptRequest extends js.Object {
+trait RunScriptRequest extends StObject {
   
   /**
     * Whether execution should `await` for resulting value and return once awaited promise is
@@ -59,63 +60,51 @@ object RunScriptRequest {
   }
   
   @scala.inline
-  implicit class RunScriptRequestOps[Self <: RunScriptRequest] (val x: Self) extends AnyVal {
+  implicit class RunScriptRequestMutableBuilder[Self <: RunScriptRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwaitPromise(value: Boolean): Self = StObject.set(x, "awaitPromise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwaitPromiseUndefined: Self = StObject.set(x, "awaitPromise", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptId(value: ScriptId): Self = this.set("scriptId", value.asInstanceOf[js.Any])
+    def setExecutionContextIdUndefined: Self = StObject.set(x, "executionContextId", js.undefined)
     
     @scala.inline
-    def setAwaitPromise(value: Boolean): Self = this.set("awaitPromise", value.asInstanceOf[js.Any])
+    def setGeneratePreview(value: Boolean): Self = StObject.set(x, "generatePreview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAwaitPromise: Self = this.set("awaitPromise", js.undefined)
+    def setGeneratePreviewUndefined: Self = StObject.set(x, "generatePreview", js.undefined)
     
     @scala.inline
-    def setExecutionContextId(value: ExecutionContextId): Self = this.set("executionContextId", value.asInstanceOf[js.Any])
+    def setIncludeCommandLineAPI(value: Boolean): Self = StObject.set(x, "includeCommandLineAPI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExecutionContextId: Self = this.set("executionContextId", js.undefined)
+    def setIncludeCommandLineAPIUndefined: Self = StObject.set(x, "includeCommandLineAPI", js.undefined)
     
     @scala.inline
-    def setGeneratePreview(value: Boolean): Self = this.set("generatePreview", value.asInstanceOf[js.Any])
+    def setObjectGroup(value: String): Self = StObject.set(x, "objectGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGeneratePreview: Self = this.set("generatePreview", js.undefined)
+    def setObjectGroupUndefined: Self = StObject.set(x, "objectGroup", js.undefined)
     
     @scala.inline
-    def setIncludeCommandLineAPI(value: Boolean): Self = this.set("includeCommandLineAPI", value.asInstanceOf[js.Any])
+    def setReturnByValue(value: Boolean): Self = StObject.set(x, "returnByValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncludeCommandLineAPI: Self = this.set("includeCommandLineAPI", js.undefined)
+    def setReturnByValueUndefined: Self = StObject.set(x, "returnByValue", js.undefined)
     
     @scala.inline
-    def setObjectGroup(value: String): Self = this.set("objectGroup", value.asInstanceOf[js.Any])
+    def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteObjectGroup: Self = this.set("objectGroup", js.undefined)
+    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnByValue(value: Boolean): Self = this.set("returnByValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnByValue: Self = this.set("returnByValue", js.undefined)
-    
-    @scala.inline
-    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSilent: Self = this.set("silent", js.undefined)
+    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
   }
 }

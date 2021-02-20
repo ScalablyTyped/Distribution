@@ -3,12 +3,13 @@ package typings.handsontable.mod.Handsontable.plugins
 import typings.handsontable.mod._Handsontable.Core
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Menu extends js.Object {
+trait Menu extends StObject {
   
   def close(): Unit = js.native
   def close(closeParent: Boolean): Unit = js.native

@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.msk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterBrokerNodeGroupInfo extends js.Object {
+trait ClusterBrokerNodeGroupInfo extends StObject {
   
   /**
     * The distribution of broker nodes across availability zones ([documentation](https://docs.aws.amazon.com/msk/1.0/apireference/clusters.html#clusters-model-brokerazdistribution)). Currently the only valid value is `DEFAULT`.
@@ -46,42 +47,30 @@ object ClusterBrokerNodeGroupInfo {
   }
   
   @scala.inline
-  implicit class ClusterBrokerNodeGroupInfoOps[Self <: ClusterBrokerNodeGroupInfo] (val x: Self) extends AnyVal {
+  implicit class ClusterBrokerNodeGroupInfoMutableBuilder[Self <: ClusterBrokerNodeGroupInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAzDistribution(value: String): Self = StObject.set(x, "azDistribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAzDistributionUndefined: Self = StObject.set(x, "azDistribution", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientSubnets(value: js.Array[String]): Self = StObject.set(x, "clientSubnets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientSubnetsVarargs(value: String*): Self = this.set("clientSubnets", js.Array(value :_*))
+    def setClientSubnetsVarargs(value: String*): Self = StObject.set(x, "clientSubnets", js.Array(value :_*))
     
     @scala.inline
-    def setClientSubnets(value: js.Array[String]): Self = this.set("clientSubnets", value.asInstanceOf[js.Any])
+    def setEbsVolumeSize(value: Double): Self = StObject.set(x, "ebsVolumeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEbsVolumeSize(value: Double): Self = this.set("ebsVolumeSize", value.asInstanceOf[js.Any])
+    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: String): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    def setSecurityGroups(value: js.Array[String]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroupsVarargs(value: String*): Self = this.set("securityGroups", js.Array(value :_*))
-    
-    @scala.inline
-    def setSecurityGroups(value: js.Array[String]): Self = this.set("securityGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAzDistribution(value: String): Self = this.set("azDistribution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAzDistribution: Self = this.set("azDistribution", js.undefined)
+    def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
   }
 }

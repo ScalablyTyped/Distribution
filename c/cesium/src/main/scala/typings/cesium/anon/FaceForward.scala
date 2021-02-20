@@ -1,12 +1,13 @@
 package typings.cesium.anon
 
 import typings.cesium.mod.MaterialAppearance.MaterialSupport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FaceForward extends js.Object {
+trait FaceForward extends StObject {
   
   var closed: js.UndefOr[Boolean] = js.native
   
@@ -35,72 +36,60 @@ object FaceForward {
   }
   
   @scala.inline
-  implicit class FaceForwardOps[Self <: FaceForward] (val x: Self) extends AnyVal {
+  implicit class FaceForwardMutableBuilder[Self <: FaceForward] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFaceForward(value: Boolean): Self = StObject.set(x, "faceForward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosed(value: Boolean): Self = this.set("closed", value.asInstanceOf[js.Any])
+    def setFaceForwardUndefined: Self = StObject.set(x, "faceForward", js.undefined)
     
     @scala.inline
-    def deleteClosed: Self = this.set("closed", js.undefined)
+    def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaceForward(value: Boolean): Self = this.set("faceForward", value.asInstanceOf[js.Any])
+    def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
     
     @scala.inline
-    def deleteFaceForward: Self = this.set("faceForward", js.undefined)
+    def setFragmentShaderSource(value: String): Self = StObject.set(x, "fragmentShaderSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlat(value: Boolean): Self = this.set("flat", value.asInstanceOf[js.Any])
+    def setFragmentShaderSourceUndefined: Self = StObject.set(x, "fragmentShaderSource", js.undefined)
     
     @scala.inline
-    def deleteFlat: Self = this.set("flat", js.undefined)
+    def setMaterial(value: typings.cesium.mod.Material): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragmentShaderSource(value: String): Self = this.set("fragmentShaderSource", value.asInstanceOf[js.Any])
+    def setMaterialSupport(value: MaterialSupport): Self = StObject.set(x, "materialSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFragmentShaderSource: Self = this.set("fragmentShaderSource", js.undefined)
+    def setMaterialSupportUndefined: Self = StObject.set(x, "materialSupport", js.undefined)
     
     @scala.inline
-    def setMaterial(value: typings.cesium.mod.Material): Self = this.set("material", value.asInstanceOf[js.Any])
+    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
     @scala.inline
-    def deleteMaterial: Self = this.set("material", js.undefined)
+    def setRenderState(value: typings.cesium.mod.RenderState): Self = StObject.set(x, "renderState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaterialSupport(value: MaterialSupport): Self = this.set("materialSupport", value.asInstanceOf[js.Any])
+    def setRenderStateUndefined: Self = StObject.set(x, "renderState", js.undefined)
     
     @scala.inline
-    def deleteMaterialSupport: Self = this.set("materialSupport", js.undefined)
+    def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderState(value: typings.cesium.mod.RenderState): Self = this.set("renderState", value.asInstanceOf[js.Any])
+    def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
     
     @scala.inline
-    def deleteRenderState: Self = this.set("renderState", js.undefined)
+    def setVertexShaderSource(value: String): Self = StObject.set(x, "vertexShaderSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslucent(value: Boolean): Self = this.set("translucent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslucent: Self = this.set("translucent", js.undefined)
-    
-    @scala.inline
-    def setVertexShaderSource(value: String): Self = this.set("vertexShaderSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertexShaderSource: Self = this.set("vertexShaderSource", js.undefined)
+    def setVertexShaderSourceUndefined: Self = StObject.set(x, "vertexShaderSource", js.undefined)
   }
 }

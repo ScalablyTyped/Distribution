@@ -2,13 +2,14 @@ package typings.angularCompiler.compileMetadataMod
 
 import typings.angularCompiler.anon.Module
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/compile_metadata", "TransitiveCompileNgModuleMetadata")
 @js.native
-class TransitiveCompileNgModuleMetadata () extends js.Object {
+class TransitiveCompileNgModuleMetadata () extends StObject {
   
   def addDirective(id: CompileIdentifierMetadata): Unit = js.native
   

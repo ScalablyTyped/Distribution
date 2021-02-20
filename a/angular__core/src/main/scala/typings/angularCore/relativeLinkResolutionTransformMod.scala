@@ -4,16 +4,16 @@ import typings.angularCore.relativeLinkResolutionUpdateRecorderMod.UpdateRecorde
 import typings.typescript.mod.CallExpression
 import typings.typescript.mod.ObjectLiteralExpression
 import typings.typescript.mod.SourceFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core/schematics/migrations/relative-link-resolution/transform", JSImport.Namespace)
-@js.native
-object relativeLinkResolutionTransformMod extends js.Object {
+object relativeLinkResolutionTransformMod {
   
+  @JSImport("@angular/core/schematics/migrations/relative-link-resolution/transform", "RelativeLinkResolutionTransform")
   @js.native
-  class RelativeLinkResolutionTransform protected () extends js.Object {
+  class RelativeLinkResolutionTransform protected () extends StObject {
     def this(getUpdateRecorder: js.Function1[/* sf */ SourceFile, UpdateRecorder]) = this()
     
     var _getMigratedLiteralExpression: js.Any = js.native

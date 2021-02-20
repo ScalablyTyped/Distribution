@@ -7,12 +7,13 @@ import typings.stripe.stripeStrings.pending
 import typings.stripe.stripeStrings.processing_error
 import typings.stripe.stripeStrings.succeeded
 import typings.stripe.stripeStrings.user_abort
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Failurereason extends js.Object {
+trait Failurereason extends StObject {
   
   var failure_reason: js.UndefOr[user_abort | declined | processing_error] = js.native
   
@@ -31,33 +32,21 @@ object Failurereason {
   }
   
   @scala.inline
-  implicit class FailurereasonOps[Self <: Failurereason] (val x: Self) extends AnyVal {
+  implicit class FailurereasonMutableBuilder[Self <: Failurereason] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailure_reason(value: user_abort | declined | processing_error): Self = StObject.set(x, "failure_reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailure_reasonUndefined: Self = StObject.set(x, "failure_reason", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReturn_url(value: String): Self = StObject.set(x, "return_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturn_url(value: String): Self = this.set("return_url", value.asInstanceOf[js.Any])
+    def setStatus(value: pending | succeeded | not_required | failed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: pending | succeeded | not_required | failed): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFailure_reason(value: user_abort | declined | processing_error): Self = this.set("failure_reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailure_reason: Self = this.set("failure_reason", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

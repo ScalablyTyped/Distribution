@@ -7,14 +7,14 @@ import typings.awsSdkClientSqsNode.typesDeleteQueueInputMod.DeleteQueueInput
 import typings.awsSdkClientSqsNode.typesDeleteQueueOutputMod.DeleteQueueOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-sqs-node/commands/DeleteQueueCommand", JSImport.Namespace)
-@js.native
-object deleteQueueCommandMod extends js.Object {
+object deleteQueueCommandMod {
   
+  @JSImport("@aws-sdk/client-sqs-node/commands/DeleteQueueCommand", "DeleteQueueCommand")
   @js.native
   class DeleteQueueCommand protected () extends Command[
           InputTypesUnion, 

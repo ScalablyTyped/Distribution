@@ -37,12 +37,13 @@ import typings.microsoftSdkSoap.microsoftSdkSoapStrings.UniqueidentifierType
 import typings.microsoftSdkSoap.microsoftSdkSoapStrings.Virtual
 import typings.microsoftSdkSoap.microsoftSdkSoapStrings.VirtualType
 import typings.microsoftSdkSoap.microsoftSdkSoapStrings.`StateType    StatusType`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAttributeMetadata extends js.Object {
+trait IAttributeMetadata extends StObject {
   
   var AttributeOf: String = js.native
   
@@ -186,157 +187,145 @@ object IAttributeMetadata {
   }
   
   @scala.inline
-  implicit class IAttributeMetadataOps[Self <: IAttributeMetadata] (val x: Self) extends AnyVal {
+  implicit class IAttributeMetadataMutableBuilder[Self <: IAttributeMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttributeOf(value: String): Self = this.set("AttributeOf", value.asInstanceOf[js.Any])
+    def setAttributeOf(value: String): Self = StObject.set(x, "AttributeOf", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAttributeType(
       value: Customer | DateTime | Decimal | Double | EntityName | Integer | Lookup | typings.microsoftSdkSoap.microsoftSdkSoapStrings.ManagedProperty | Memo | Money | Owner | PartyList | Picklist | State | Status | Uniqueidentifier | Virtual
-    ): Self = this.set("AttributeType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAttributeTypeName(
       value: BigIntType | BooleanType | CalendarRulesType | CustomerType | DateTimeType | DecimalType | DoubleType | EntityNameType | ImageType | IntegerType | LookupType | ManagedPropertyType | MemoType | MoneyType | OwnerType | PartyListType | PicklistType | (`StateType    StatusType`) | StringType | UniqueidentifierType | VirtualType
-    ): Self = this.set("AttributeTypeName", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "AttributeTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalculationOf(value: js.Any): Self = this.set("CalculationOf", value.asInstanceOf[js.Any])
+    def setCalculationOf(value: js.Any): Self = StObject.set(x, "CalculationOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanBeSecuredForCreate(value: Boolean): Self = this.set("CanBeSecuredForCreate", value.asInstanceOf[js.Any])
+    def setCanBeSecuredForCreate(value: Boolean): Self = StObject.set(x, "CanBeSecuredForCreate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanBeSecuredForRead(value: Boolean): Self = this.set("CanBeSecuredForRead", value.asInstanceOf[js.Any])
+    def setCanBeSecuredForRead(value: Boolean): Self = StObject.set(x, "CanBeSecuredForRead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanBeSecuredForUpdate(value: Boolean): Self = this.set("CanBeSecuredForUpdate", value.asInstanceOf[js.Any])
+    def setCanBeSecuredForUpdate(value: Boolean): Self = StObject.set(x, "CanBeSecuredForUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanModifyAdditionalSettings(value: ManagedProperty[Boolean]): Self = this.set("CanModifyAdditionalSettings", value.asInstanceOf[js.Any])
+    def setCanModifyAdditionalSettings(value: ManagedProperty[Boolean]): Self = StObject.set(x, "CanModifyAdditionalSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnNumber(value: scala.Double): Self = this.set("ColumnNumber", value.asInstanceOf[js.Any])
+    def setColumnNumber(value: scala.Double): Self = StObject.set(x, "ColumnNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultFormValue(value: js.Any): Self = this.set("DefaultFormValue", value.asInstanceOf[js.Any])
+    def setDefaultFormValue(value: js.Any): Self = StObject.set(x, "DefaultFormValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: js.Any): Self = this.set("DefaultValue", value.asInstanceOf[js.Any])
+    def setDefaultValue(value: js.Any): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecatedVersion(value: js.Any): Self = this.set("DeprecatedVersion", value.asInstanceOf[js.Any])
+    def setDeprecatedVersion(value: js.Any): Self = StObject.set(x, "DeprecatedVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Label): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setDescription(value: Label): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: Label): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setDisplayName(value: Label): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityLogicalName(value: String): Self = this.set("EntityLogicalName", value.asInstanceOf[js.Any])
+    def setEntityLogicalName(value: String): Self = StObject.set(x, "EntityLogicalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: js.Any): Self = this.set("Format", value.asInstanceOf[js.Any])
+    def setFormat(value: js.Any): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatName(value: String): Self = this.set("FormatName", value.asInstanceOf[js.Any])
+    def setFormatName(value: String): Self = StObject.set(x, "FormatName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImeMode(value: js.Any): Self = this.set("ImeMode", value.asInstanceOf[js.Any])
+    def setImeMode(value: js.Any): Self = StObject.set(x, "ImeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntroducedVersion(value: js.Any): Self = this.set("IntroducedVersion", value.asInstanceOf[js.Any])
+    def setIntroducedVersion(value: js.Any): Self = StObject.set(x, "IntroducedVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAuditEnabled(value: Boolean): Self = this.set("IsAuditEnabled", value.asInstanceOf[js.Any])
+    def setIsAuditEnabled(value: Boolean): Self = StObject.set(x, "IsAuditEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCustomAttribute(value: Boolean): Self = this.set("IsCustomAttribute", value.asInstanceOf[js.Any])
+    def setIsCustomAttribute(value: Boolean): Self = StObject.set(x, "IsCustomAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCustomizable(value: ManagedProperty[Boolean]): Self = this.set("IsCustomizable", value.asInstanceOf[js.Any])
+    def setIsCustomizable(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsCustomizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsManaged(value: Boolean): Self = this.set("IsManaged", value.asInstanceOf[js.Any])
+    def setIsManaged(value: Boolean): Self = StObject.set(x, "IsManaged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPrimaryId(value: Boolean): Self = this.set("IsPrimaryId", value.asInstanceOf[js.Any])
+    def setIsPrimaryId(value: Boolean): Self = StObject.set(x, "IsPrimaryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPrimaryName(value: Boolean): Self = this.set("IsPrimaryName", value.asInstanceOf[js.Any])
+    def setIsPrimaryName(value: Boolean): Self = StObject.set(x, "IsPrimaryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRenameable(value: ManagedProperty[Boolean]): Self = this.set("IsRenameable", value.asInstanceOf[js.Any])
+    def setIsRenameable(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsRenameable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSecured(value: Boolean): Self = this.set("IsSecured", value.asInstanceOf[js.Any])
+    def setIsSecured(value: Boolean): Self = StObject.set(x, "IsSecured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsValidForAdvancedFind(value: ManagedProperty[Boolean]): Self = this.set("IsValidForAdvancedFind", value.asInstanceOf[js.Any])
+    def setIsValidForAdvancedFind(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsValidForAdvancedFind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsValidForCreate(value: Boolean): Self = this.set("IsValidForCreate", value.asInstanceOf[js.Any])
+    def setIsValidForCreate(value: Boolean): Self = StObject.set(x, "IsValidForCreate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsValidForRead(value: Boolean): Self = this.set("IsValidForRead", value.asInstanceOf[js.Any])
+    def setIsValidForRead(value: Boolean): Self = StObject.set(x, "IsValidForRead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsValidForUpdate(value: Boolean): Self = this.set("IsValidForUpdate", value.asInstanceOf[js.Any])
+    def setIsValidForUpdate(value: Boolean): Self = StObject.set(x, "IsValidForUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedAttributeId(value: String): Self = this.set("LinkedAttributeId", value.asInstanceOf[js.Any])
+    def setLinkedAttributeId(value: String): Self = StObject.set(x, "LinkedAttributeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogicalName(value: String): Self = this.set("LogicalName", value.asInstanceOf[js.Any])
+    def setLogicalName(value: String): Self = StObject.set(x, "LogicalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLength(value: scala.Double): Self = this.set("MaxLength", value.asInstanceOf[js.Any])
+    def setMaxLength(value: scala.Double): Self = StObject.set(x, "MaxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValue(value: js.Any): Self = this.set("MaxValue", value.asInstanceOf[js.Any])
+    def setMaxValue(value: js.Any): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataId(value: String): Self = this.set("MetadataId", value.asInstanceOf[js.Any])
+    def setMetadataId(value: String): Self = StObject.set(x, "MetadataId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinValue(value: scala.Double): Self = this.set("MinValue", value.asInstanceOf[js.Any])
+    def setMinValue(value: scala.Double): Self = StObject.set(x, "MinValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionSet(value: js.Any): Self = this.set("OptionSet", value.asInstanceOf[js.Any])
+    def setOptionSet(value: js.Any): Self = StObject.set(x, "OptionSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecision(value: js.Any): Self = this.set("Precision", value.asInstanceOf[js.Any])
+    def setPrecision(value: js.Any): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecisionSource(value: js.Any): Self = this.set("PrecisionSource", value.asInstanceOf[js.Any])
+    def setPrecisionSource(value: js.Any): Self = StObject.set(x, "PrecisionSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredLevel(value: ManagedProperty[String]): Self = this.set("RequiredLevel", value.asInstanceOf[js.Any])
+    def setRequiredLevel(value: ManagedProperty[String]): Self = StObject.set(x, "RequiredLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaName(value: String): Self = this.set("SchemaName", value.asInstanceOf[js.Any])
+    def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetsVarargs(value: String*): Self = this.set("Targets", js.Array(value :_*))
+    def setTargets(value: js.Array[String]): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargets(value: js.Array[String]): Self = this.set("Targets", value.asInstanceOf[js.Any])
+    def setTargetsVarargs(value: String*): Self = StObject.set(x, "Targets", js.Array(value :_*))
     
     @scala.inline
-    def setYomiOf(value: js.Any): Self = this.set("YomiOf", value.asInstanceOf[js.Any])
+    def setYomiOf(value: js.Any): Self = StObject.set(x, "YomiOf", value.asInstanceOf[js.Any])
   }
 }

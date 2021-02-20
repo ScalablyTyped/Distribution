@@ -1,12 +1,13 @@
 package typings.stylus.anon
 
 import typings.stylus.mod.Stylus.Nodes.Expression
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cond extends js.Object {
+trait Cond extends StObject {
   
   var __type: String = js.native
   
@@ -42,45 +43,33 @@ object Cond {
   }
   
   @scala.inline
-  implicit class CondOps[Self <: Cond] (val x: Self) extends AnyVal {
+  implicit class CondMutableBuilder[Self <: Cond] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlock(value: typings.stylus.mod.Stylus.Nodes.Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCond(value: Expression): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__type(value: String): Self = this.set("__type", value.asInstanceOf[js.Any])
+    def setElses(value: js.Array[Expression]): Self = StObject.set(x, "elses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlock(value: typings.stylus.mod.Stylus.Nodes.Block): Self = this.set("block", value.asInstanceOf[js.Any])
+    def setElsesVarargs(value: Expression*): Self = StObject.set(x, "elses", js.Array(value :_*))
     
     @scala.inline
-    def setColumn(value: Double): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCond(value: Expression): Self = this.set("cond", value.asInstanceOf[js.Any])
+    def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElsesVarargs(value: Expression*): Self = this.set("elses", js.Array(value :_*))
+    def setNegate(value: Boolean): Self = StObject.set(x, "negate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElses(value: js.Array[Expression]): Self = this.set("elses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLineno(value: Double): Self = this.set("lineno", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNegate(value: Boolean): Self = this.set("negate", value.asInstanceOf[js.Any])
+    def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
   }
 }

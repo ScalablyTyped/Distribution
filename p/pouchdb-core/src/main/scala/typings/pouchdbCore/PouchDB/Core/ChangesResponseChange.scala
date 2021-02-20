@@ -1,12 +1,13 @@
 package typings.pouchdbCore.PouchDB.Core
 
 import typings.pouchdbCore.anon.RevString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangesResponseChange[Content /* <: js.Object */] extends js.Object {
+trait ChangesResponseChange[Content /* <: js.Object */] extends StObject {
   
   var changes: js.Array[RevString] = js.native
   
@@ -27,42 +28,30 @@ object ChangesResponseChange {
   }
   
   @scala.inline
-  implicit class ChangesResponseChangeOps[Self <: ChangesResponseChange[_], Content /* <: js.Object */] (val x: Self with ChangesResponseChange[Content]) extends AnyVal {
+  implicit class ChangesResponseChangeMutableBuilder[Self <: ChangesResponseChange[_], Content /* <: js.Object */] (val x: Self with ChangesResponseChange[Content]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChanges(value: js.Array[RevString]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangesVarargs(value: RevString*): Self = StObject.set(x, "changes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangesVarargs(value: RevString*): Self = this.set("changes", js.Array(value :_*))
+    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
     @scala.inline
-    def setChanges(value: js.Array[RevString]): Self = this.set("changes", value.asInstanceOf[js.Any])
+    def setDoc(value: ExistingDocument[Content with ChangesMeta]): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
     
     @scala.inline
-    def setSeq(value: Double | String): Self = this.set("seq", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeleted: Self = this.set("deleted", js.undefined)
-    
-    @scala.inline
-    def setDoc(value: ExistingDocument[Content with ChangesMeta]): Self = this.set("doc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDoc: Self = this.set("doc", js.undefined)
+    def setSeq(value: Double | String): Self = StObject.set(x, "seq", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines the values for focus mode. */
 @JSGlobal("Windows.Media.Devices.FocusMode")
 @js.native
-object FocusMode extends js.Object {
+object FocusMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Devices.FocusMode with Double] = js.native

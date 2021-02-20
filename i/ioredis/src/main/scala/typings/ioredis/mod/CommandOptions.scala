@@ -1,11 +1,12 @@
 package typings.ioredis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommandOptions extends js.Object {
+trait CommandOptions extends StObject {
   
   var errorStack: js.UndefOr[String] = js.native
   
@@ -22,39 +23,27 @@ object CommandOptions {
   }
   
   @scala.inline
-  implicit class CommandOptionsOps[Self <: CommandOptions] (val x: Self) extends AnyVal {
+  implicit class CommandOptionsMutableBuilder[Self <: CommandOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorStack(value: String): Self = StObject.set(x, "errorStack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorStackUndefined: Self = StObject.set(x, "errorStack", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyPrefix(value: String): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorStack(value: String): Self = this.set("errorStack", value.asInstanceOf[js.Any])
+    def setKeyPrefixUndefined: Self = StObject.set(x, "keyPrefix", js.undefined)
     
     @scala.inline
-    def deleteErrorStack: Self = this.set("errorStack", js.undefined)
+    def setReplyEncoding(value: String): Self = StObject.set(x, "replyEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyPrefix(value: String): Self = this.set("keyPrefix", value.asInstanceOf[js.Any])
+    def setReplyEncodingNull: Self = StObject.set(x, "replyEncoding", null)
     
     @scala.inline
-    def deleteKeyPrefix: Self = this.set("keyPrefix", js.undefined)
-    
-    @scala.inline
-    def setReplyEncoding(value: String): Self = this.set("replyEncoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplyEncoding: Self = this.set("replyEncoding", js.undefined)
-    
-    @scala.inline
-    def setReplyEncodingNull: Self = this.set("replyEncoding", null)
+    def setReplyEncodingUndefined: Self = StObject.set(x, "replyEncoding", js.undefined)
   }
 }

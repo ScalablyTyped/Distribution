@@ -63,6 +63,7 @@ import typings.activexOffice.activexOfficeNumbers.`6`
 import typings.activexOffice.activexOfficeNumbers.`7`
 import typings.activexOffice.activexOfficeNumbers.`8`
 import typings.activexOffice.activexOfficeNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -132,7 +133,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexOffice.activexOfficeNumbers.`50`
   - typings.activexOffice.activexOfficeNumbers.`-2`
 */
-trait MsoPresetCamera extends js.Object
+trait MsoPresetCamera extends StObject
 object MsoPresetCamera {
   
   @scala.inline

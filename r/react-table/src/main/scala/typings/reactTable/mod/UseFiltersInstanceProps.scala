@@ -1,12 +1,13 @@
 package typings.reactTable.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UseFiltersInstanceProps[D /* <: js.Object */] extends js.Object {
+trait UseFiltersInstanceProps[D /* <: js.Object */] extends StObject {
   
   var filteredFlatRows: js.Array[Row[D]] = js.native
   

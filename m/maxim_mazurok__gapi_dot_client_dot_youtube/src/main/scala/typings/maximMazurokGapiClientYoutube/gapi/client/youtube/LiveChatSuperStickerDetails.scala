@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LiveChatSuperStickerDetails extends js.Object {
+trait LiveChatSuperStickerDetails extends StObject {
   
   /** A rendered string that displays the fund amount and currency to the user. */
   var amountDisplayString: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object LiveChatSuperStickerDetails {
   }
   
   @scala.inline
-  implicit class LiveChatSuperStickerDetailsOps[Self <: LiveChatSuperStickerDetails] (val x: Self) extends AnyVal {
+  implicit class LiveChatSuperStickerDetailsMutableBuilder[Self <: LiveChatSuperStickerDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmountDisplayString(value: String): Self = StObject.set(x, "amountDisplayString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountDisplayStringUndefined: Self = StObject.set(x, "amountDisplayString", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAmountMicros(value: String): Self = StObject.set(x, "amountMicros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmountDisplayString(value: String): Self = this.set("amountDisplayString", value.asInstanceOf[js.Any])
+    def setAmountMicrosUndefined: Self = StObject.set(x, "amountMicros", js.undefined)
     
     @scala.inline
-    def deleteAmountDisplayString: Self = this.set("amountDisplayString", js.undefined)
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmountMicros(value: String): Self = this.set("amountMicros", value.asInstanceOf[js.Any])
+    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
     @scala.inline
-    def deleteAmountMicros: Self = this.set("amountMicros", js.undefined)
+    def setSuperStickerMetadata(value: SuperStickerMetadata): Self = StObject.set(x, "superStickerMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setSuperStickerMetadataUndefined: Self = StObject.set(x, "superStickerMetadata", js.undefined)
     
     @scala.inline
-    def deleteCurrency: Self = this.set("currency", js.undefined)
+    def setTier(value: Double): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuperStickerMetadata(value: SuperStickerMetadata): Self = this.set("superStickerMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuperStickerMetadata: Self = this.set("superStickerMetadata", js.undefined)
-    
-    @scala.inline
-    def setTier(value: Double): Self = this.set("tier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTier: Self = this.set("tier", js.undefined)
+    def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
   }
 }

@@ -3,13 +3,12 @@ package typings.makerJs.global.MakerJs
 import typings.makerJs.MakerJs.IChain
 import typings.makerJs.MakerJs.IModel
 import typings.makerJs.MakerJs.IPoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MakerJs.chain")
-@js.native
-object chain extends js.Object {
+object chain {
   
   /**
     * Shift the links of an endless chain.
@@ -18,7 +17,11 @@ object chain extends js.Object {
     * @param amount Optional number of links to shift. May be negative to cycle backwards.
     * @returns The chainContext for cascading.
     */
+  @JSGlobal("MakerJs.chain.cycle")
+  @js.native
   def cycle(chainContext: IChain): IChain = js.native
+  @JSGlobal("MakerJs.chain.cycle")
+  @js.native
   def cycle(chainContext: IChain, amount: Double): IChain = js.native
   
   /**
@@ -28,6 +31,8 @@ object chain extends js.Object {
     * @param filletRadius Radius of the fillet.
     * @returns Model object containing paths which fillet the joints in the chain.
     */
+  @JSGlobal("MakerJs.chain.fillet")
+  @js.native
   def fillet(chainToFillet: IChain, filletRadius: Double): IModel = js.native
   
   /**
@@ -36,6 +41,8 @@ object chain extends js.Object {
     * @param chainContext Chain to reverse.
     * @returns The chainContext for cascading.
     */
+  @JSGlobal("MakerJs.chain.reverse")
+  @js.native
   def reverse(chainContext: IChain): IChain = js.native
   
   /**
@@ -45,6 +52,8 @@ object chain extends js.Object {
     * @param routeKey RouteKey of the desired path to start the chain with.
     * @returns The chainContext for cascading.
     */
+  @JSGlobal("MakerJs.chain.startAt")
+  @js.native
   def startAt(chainContext: IChain, routeKey: String): IChain = js.native
   
   /**
@@ -54,7 +63,11 @@ object chain extends js.Object {
     * @param maxArcFacet The maximum length between points on an arc or circle.
     * @returns Array of points which are on the chain.
     */
+  @JSGlobal("MakerJs.chain.toKeyPoints")
+  @js.native
   def toKeyPoints(chainContext: IChain): js.Array[IPoint] = js.native
+  @JSGlobal("MakerJs.chain.toKeyPoints")
+  @js.native
   def toKeyPoints(chainContext: IChain, maxArcFacet: Double): js.Array[IPoint] = js.native
   
   /**
@@ -65,6 +78,10 @@ object chain extends js.Object {
     * @param maxPoints Maximum number of points to retrieve.
     * @returns Array of points which are on the chain spread at a uniform interval.
     */
+  @JSGlobal("MakerJs.chain.toPoints")
+  @js.native
   def toPoints(chainContext: IChain, distance: Double): js.Array[IPoint] = js.native
+  @JSGlobal("MakerJs.chain.toPoints")
+  @js.native
   def toPoints(chainContext: IChain, distance: Double, maxPoints: Double): js.Array[IPoint] = js.native
 }

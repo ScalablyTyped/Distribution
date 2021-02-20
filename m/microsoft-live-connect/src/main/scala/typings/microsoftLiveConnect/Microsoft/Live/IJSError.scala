@@ -1,5 +1,6 @@
 package typings.microsoftLiveConnect.Microsoft.Live
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * object from the REST API (which we represent with IError).
   */
 @js.native
-trait IJSError extends js.Object {
+trait IJSError extends StObject {
   
   /**
     * The error code.
@@ -30,24 +31,12 @@ object IJSError {
   }
   
   @scala.inline
-  implicit class IJSErrorOps[Self <: IJSError] (val x: Self) extends AnyVal {
+  implicit class IJSErrorMutableBuilder[Self <: IJSError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setError_description(value: String): Self = this.set("error_description", value.asInstanceOf[js.Any])
+    def setError_description(value: String): Self = StObject.set(x, "error_description", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.nextAuth.providersMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProviderEmailOptions extends js.Object {
+trait ProviderEmailOptions extends StObject {
   
   var from: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object ProviderEmailOptions {
   }
   
   @scala.inline
-  implicit class ProviderEmailOptionsOps[Self <: ProviderEmailOptions] (val x: Self) extends AnyVal {
+  implicit class ProviderEmailOptionsMutableBuilder[Self <: ProviderEmailOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setSendVerificationRequest(value: /* options */ VerificationRequestParams => js.Promise[Unit]): Self = StObject.set(x, "sendVerificationRequest", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaxAge(value: Double): Self = this.set("maxAge", value.asInstanceOf[js.Any])
+    def setSendVerificationRequestUndefined: Self = StObject.set(x, "sendVerificationRequest", js.undefined)
     
     @scala.inline
-    def deleteMaxAge: Self = this.set("maxAge", js.undefined)
+    def setServer(value: String | ProviderEmailServer): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendVerificationRequest(value: /* options */ VerificationRequestParams => js.Promise[Unit]): Self = this.set("sendVerificationRequest", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSendVerificationRequest: Self = this.set("sendVerificationRequest", js.undefined)
-    
-    @scala.inline
-    def setServer(value: String | ProviderEmailServer): Self = this.set("server", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServer: Self = this.set("server", js.undefined)
+    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

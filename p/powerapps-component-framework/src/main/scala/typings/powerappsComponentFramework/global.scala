@@ -1,68 +1,56 @@
 package typings.powerappsComponentFramework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object ComponentFramework extends js.Object {
+  object ComponentFramework {
     
     /**
       * Helper of Device API interface
       */
-    @js.native
-    object DeviceApi extends js.Object
+    object DeviceApi
     
-    @js.native
-    object FactoryApi extends js.Object {
+    object FactoryApi {
       
       /**
         * Helper of Factory Pop API interface
         */
-      @js.native
-      object Popup extends js.Object
+      object Popup
     }
     
-    @js.native
-    object FormattingApi extends js.Object {
+    object FormattingApi {
       
       /**
         * Helper of Formatting API interface
         */
-      @js.native
-      object Types extends js.Object
+      object Types
     }
     
     /**
       * Helper of Navigation API interface
       */
-    @js.native
-    object NavigationApi extends js.Object
+    object NavigationApi
     
     ///////////////////// Parameter ////////////////////////
-    @js.native
-    object PropertyTypes extends js.Object
+    object PropertyTypes
     
     /**
       * Helper of UserSettings API interface
       */
-    @js.native
-    object UserSettingApi extends js.Object
+    object UserSettingApi
     
     /**
       * Helper of Utils API interface
       */
-    @js.native
-    object UtilityApi extends js.Object
+    object UtilityApi
     
     /**
       * Objects related to interacting with the Web API.
       */
-    @js.native
-    object WebApi extends js.Object
+    object WebApi
   }
 }

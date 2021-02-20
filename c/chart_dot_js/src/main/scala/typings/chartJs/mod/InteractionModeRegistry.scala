@@ -9,6 +9,7 @@ import typings.chartJs.chartJsStrings.point
 import typings.chartJs.chartJsStrings.single
 import typings.chartJs.chartJsStrings.x
 import typings.chartJs.chartJsStrings.y
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Allow extending the IteractionMode type alias
 // see https://github.com/microsoft/TypeScript/issues/28078#issuecomment-432339564
 @js.native
-trait InteractionModeRegistry extends js.Object {
+trait InteractionModeRegistry extends StObject {
   
   var dataset: typings.chartJs.chartJsStrings.dataset = js.native
   
@@ -56,45 +57,33 @@ object InteractionModeRegistry {
   }
   
   @scala.inline
-  implicit class InteractionModeRegistryOps[Self <: InteractionModeRegistry] (val x: Self) extends AnyVal {
+  implicit class InteractionModeRegistryMutableBuilder[Self <: InteractionModeRegistry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataset(value: dataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndex(value: index): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabel(value: label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataset(value: dataset): Self = this.set("dataset", value.asInstanceOf[js.Any])
+    def setNearest(value: nearest): Self = StObject.set(x, "nearest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: index): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setPoint(value: point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: label): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setSingle(value: single): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNearest(value: nearest): Self = this.set("nearest", value.asInstanceOf[js.Any])
+    def setX(value: typings.chartJs.chartJsStrings.x): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoint(value: point): Self = this.set("point", value.asInstanceOf[js.Any])
+    def `setX-axis`(value: `x-axis`): Self = StObject.set(x, "x-axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingle(value: single): Self = this.set("single", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX(value: typings.chartJs.chartJsStrings.x): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setX-axis`(value: `x-axis`): Self = this.set("x-axis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: y): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setY(value: y): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.semanticUiApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-api.SemanticUI.Api.ErrorSettings._Impl, keyof semantic-ui-api.SemanticUI.Api.ErrorSettings._Impl>> */
 @js.native
-trait PartialPickImplkeyofImplBeforeSend extends js.Object {
+trait PartialPickImplkeyofImplBeforeSend extends StObject {
   
   var JSONParse: js.UndefOr[String] = js.native
   
@@ -43,96 +44,84 @@ object PartialPickImplkeyofImplBeforeSend {
   }
   
   @scala.inline
-  implicit class PartialPickImplkeyofImplBeforeSendOps[Self <: PartialPickImplkeyofImplBeforeSend] (val x: Self) extends AnyVal {
+  implicit class PartialPickImplkeyofImplBeforeSendMutableBuilder[Self <: PartialPickImplkeyofImplBeforeSend] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeforeSend(value: String): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJSONParse(value: String): Self = this.set("JSONParse", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteJSONParse: Self = this.set("JSONParse", js.undefined)
+    def setExitConditions(value: String): Self = StObject.set(x, "exitConditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeSend(value: String): Self = this.set("beforeSend", value.asInstanceOf[js.Any])
+    def setExitConditionsUndefined: Self = StObject.set(x, "exitConditions", js.undefined)
     
     @scala.inline
-    def deleteBeforeSend: Self = this.set("beforeSend", js.undefined)
+    def setJSONParse(value: String): Self = StObject.set(x, "JSONParse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setJSONParseUndefined: Self = StObject.set(x, "JSONParse", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setLegacyParameters(value: String): Self = StObject.set(x, "legacyParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExitConditions(value: String): Self = this.set("exitConditions", value.asInstanceOf[js.Any])
+    def setLegacyParametersUndefined: Self = StObject.set(x, "legacyParameters", js.undefined)
     
     @scala.inline
-    def deleteExitConditions: Self = this.set("exitConditions", js.undefined)
+    def setMissingAction(value: String): Self = StObject.set(x, "missingAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegacyParameters(value: String): Self = this.set("legacyParameters", value.asInstanceOf[js.Any])
+    def setMissingActionUndefined: Self = StObject.set(x, "missingAction", js.undefined)
     
     @scala.inline
-    def deleteLegacyParameters: Self = this.set("legacyParameters", js.undefined)
+    def setMissingSerialize(value: String): Self = StObject.set(x, "missingSerialize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMissingAction(value: String): Self = this.set("missingAction", value.asInstanceOf[js.Any])
+    def setMissingSerializeUndefined: Self = StObject.set(x, "missingSerialize", js.undefined)
     
     @scala.inline
-    def deleteMissingAction: Self = this.set("missingAction", js.undefined)
+    def setMissingURL(value: String): Self = StObject.set(x, "missingURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMissingSerialize(value: String): Self = this.set("missingSerialize", value.asInstanceOf[js.Any])
+    def setMissingURLUndefined: Self = StObject.set(x, "missingURL", js.undefined)
     
     @scala.inline
-    def deleteMissingSerialize: Self = this.set("missingSerialize", js.undefined)
+    def setNoReturnedValue(value: String): Self = StObject.set(x, "noReturnedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMissingURL(value: String): Self = this.set("missingURL", value.asInstanceOf[js.Any])
+    def setNoReturnedValueUndefined: Self = StObject.set(x, "noReturnedValue", js.undefined)
     
     @scala.inline
-    def deleteMissingURL: Self = this.set("missingURL", js.undefined)
+    def setParseError(value: String): Self = StObject.set(x, "parseError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoReturnedValue(value: String): Self = this.set("noReturnedValue", value.asInstanceOf[js.Any])
+    def setParseErrorUndefined: Self = StObject.set(x, "parseError", js.undefined)
     
     @scala.inline
-    def deleteNoReturnedValue: Self = this.set("noReturnedValue", js.undefined)
+    def setRequiredParameter(value: String): Self = StObject.set(x, "requiredParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParseError(value: String): Self = this.set("parseError", value.asInstanceOf[js.Any])
+    def setRequiredParameterUndefined: Self = StObject.set(x, "requiredParameter", js.undefined)
     
     @scala.inline
-    def deleteParseError: Self = this.set("parseError", js.undefined)
+    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredParameter(value: String): Self = this.set("requiredParameter", value.asInstanceOf[js.Any])
+    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
     @scala.inline
-    def deleteRequiredParameter: Self = this.set("requiredParameter", js.undefined)
+    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

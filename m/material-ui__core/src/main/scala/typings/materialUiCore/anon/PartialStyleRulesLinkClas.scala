@@ -1,13 +1,14 @@
 package typings.materialUiCore.anon
 
 import typings.materialUiCore.withStylesMod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Link.LinkClassKey>> */
 @js.native
-trait PartialStyleRulesLinkClas extends js.Object {
+trait PartialStyleRulesLinkClas extends StObject {
   
   var button: js.UndefOr[CSSProperties] = js.native
   
@@ -28,48 +29,36 @@ object PartialStyleRulesLinkClas {
   }
   
   @scala.inline
-  implicit class PartialStyleRulesLinkClasOps[Self <: PartialStyleRulesLinkClas] (val x: Self) extends AnyVal {
+  implicit class PartialStyleRulesLinkClasMutableBuilder[Self <: PartialStyleRulesLinkClas] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButton(value: CSSProperties): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: CSSProperties): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteButton: Self = this.set("button", js.undefined)
+    def setUnderlineAlways(value: CSSProperties): Self = StObject.set(x, "underlineAlways", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setUnderlineAlwaysUndefined: Self = StObject.set(x, "underlineAlways", js.undefined)
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setUnderlineHover(value: CSSProperties): Self = StObject.set(x, "underlineHover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnderlineAlways(value: CSSProperties): Self = this.set("underlineAlways", value.asInstanceOf[js.Any])
+    def setUnderlineHoverUndefined: Self = StObject.set(x, "underlineHover", js.undefined)
     
     @scala.inline
-    def deleteUnderlineAlways: Self = this.set("underlineAlways", js.undefined)
+    def setUnderlineNone(value: CSSProperties): Self = StObject.set(x, "underlineNone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnderlineHover(value: CSSProperties): Self = this.set("underlineHover", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnderlineHover: Self = this.set("underlineHover", js.undefined)
-    
-    @scala.inline
-    def setUnderlineNone(value: CSSProperties): Self = this.set("underlineNone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnderlineNone: Self = this.set("underlineNone", js.undefined)
+    def setUnderlineNoneUndefined: Self = StObject.set(x, "underlineNone", js.undefined)
   }
 }

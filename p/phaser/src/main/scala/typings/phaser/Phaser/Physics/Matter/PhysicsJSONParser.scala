@@ -1,5 +1,6 @@
 package typings.phaser.Phaser.Physics.Matter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,6 +43,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * At the time of writing, only the Phaser Physics Tracer App exports in this format.
   */
-@JSGlobal("Phaser.Physics.Matter.PhysicsJSONParser")
-@js.native
-object PhysicsJSONParser extends js.Object
+object PhysicsJSONParser

@@ -1,5 +1,6 @@
 package typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * behavior is implementation-dependent.
   */
 @js.native
-trait SchemaSystemParameter extends js.Object {
+trait SchemaSystemParameter extends StObject {
   
   /**
     * Define the HTTP header name to use for the parameter. It is case
@@ -39,36 +40,24 @@ object SchemaSystemParameter {
   }
   
   @scala.inline
-  implicit class SchemaSystemParameterOps[Self <: SchemaSystemParameter] (val x: Self) extends AnyVal {
+  implicit class SchemaSystemParameterMutableBuilder[Self <: SchemaSystemParameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHttpHeader(value: String): Self = StObject.set(x, "httpHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHttpHeaderUndefined: Self = StObject.set(x, "httpHeader", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpHeader(value: String): Self = this.set("httpHeader", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteHttpHeader: Self = this.set("httpHeader", js.undefined)
+    def setUrlQueryParameter(value: String): Self = StObject.set(x, "urlQueryParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setUrlQueryParameter(value: String): Self = this.set("urlQueryParameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlQueryParameter: Self = this.set("urlQueryParameter", js.undefined)
+    def setUrlQueryParameterUndefined: Self = StObject.set(x, "urlQueryParameter", js.undefined)
   }
 }

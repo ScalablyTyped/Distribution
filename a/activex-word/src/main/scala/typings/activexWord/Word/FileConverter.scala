@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileConverter extends js.Object {
+trait FileConverter extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -58,57 +59,45 @@ object FileConverter {
   }
   
   @scala.inline
-  implicit class FileConverterOps[Self <: FileConverter] (val x: Self) extends AnyVal {
+  implicit class FileConverterMutableBuilder[Self <: FileConverter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanOpen(value: Boolean): Self = StObject.set(x, "CanOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanSave(value: Boolean): Self = StObject.set(x, "CanSave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setClassName(value: String): Self = StObject.set(x, "ClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanOpen(value: Boolean): Self = this.set("CanOpen", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanSave(value: Boolean): Self = this.set("CanSave", value.asInstanceOf[js.Any])
+    def setExtensions(value: String): Self = StObject.set(x, "Extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("ClassName", value.asInstanceOf[js.Any])
+    def setFormatName(value: String): Self = StObject.set(x, "FormatName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensions(value: String): Self = this.set("Extensions", value.asInstanceOf[js.Any])
+    def setOpenFormat(value: Double): Self = StObject.set(x, "OpenFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatName(value: String): Self = this.set("FormatName", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenFormat(value: Double): Self = this.set("OpenFormat", value.asInstanceOf[js.Any])
+    def setSaveFormat(value: Double): Self = StObject.set(x, "SaveFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("Path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSaveFormat(value: Double): Self = this.set("SaveFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotFileConverter_typekey(value: FileConverter): Self = this.set("Word.FileConverter_typekey", value.asInstanceOf[js.Any])
+    def setWordDotFileConverter_typekey(value: FileConverter): Self = StObject.set(x, "Word.FileConverter_typekey", value.asInstanceOf[js.Any])
   }
 }

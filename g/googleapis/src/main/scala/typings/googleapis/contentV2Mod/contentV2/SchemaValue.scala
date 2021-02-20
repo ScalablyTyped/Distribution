@@ -1,5 +1,6 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * carrierRateName, subtableName must be set.
   */
 @js.native
-trait SchemaValue extends js.Object {
+trait SchemaValue extends StObject {
   
   /**
     * The name of a carrier rate referring to a carrier rate defined in the
@@ -50,48 +51,36 @@ object SchemaValue {
   }
   
   @scala.inline
-  implicit class SchemaValueOps[Self <: SchemaValue] (val x: Self) extends AnyVal {
+  implicit class SchemaValueMutableBuilder[Self <: SchemaValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCarrierRateName(value: String): Self = StObject.set(x, "carrierRateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCarrierRateNameUndefined: Self = StObject.set(x, "carrierRateName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlatRate(value: SchemaPrice): Self = StObject.set(x, "flatRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarrierRateName(value: String): Self = this.set("carrierRateName", value.asInstanceOf[js.Any])
+    def setFlatRateUndefined: Self = StObject.set(x, "flatRate", js.undefined)
     
     @scala.inline
-    def deleteCarrierRateName: Self = this.set("carrierRateName", js.undefined)
+    def setNoShipping(value: Boolean): Self = StObject.set(x, "noShipping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatRate(value: SchemaPrice): Self = this.set("flatRate", value.asInstanceOf[js.Any])
+    def setNoShippingUndefined: Self = StObject.set(x, "noShipping", js.undefined)
     
     @scala.inline
-    def deleteFlatRate: Self = this.set("flatRate", js.undefined)
+    def setPricePercentage(value: String): Self = StObject.set(x, "pricePercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoShipping(value: Boolean): Self = this.set("noShipping", value.asInstanceOf[js.Any])
+    def setPricePercentageUndefined: Self = StObject.set(x, "pricePercentage", js.undefined)
     
     @scala.inline
-    def deleteNoShipping: Self = this.set("noShipping", js.undefined)
+    def setSubtableName(value: String): Self = StObject.set(x, "subtableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPricePercentage(value: String): Self = this.set("pricePercentage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePricePercentage: Self = this.set("pricePercentage", js.undefined)
-    
-    @scala.inline
-    def setSubtableName(value: String): Self = this.set("subtableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubtableName: Self = this.set("subtableName", js.undefined)
+    def setSubtableNameUndefined: Self = StObject.set(x, "subtableName", js.undefined)
   }
 }

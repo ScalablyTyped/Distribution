@@ -1,12 +1,13 @@
 package typings.cordovaPluginFileOpener2
 
 import typings.cordovaPluginFileOpener2.anon.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CordovaPluginsFileOpener2 extends js.Object {
+trait CordovaPluginsFileOpener2 extends StObject {
   
   /**
     * Check if an app is already installed. Android platform only.

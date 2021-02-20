@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirebasedynamiclinks.gapi.client.firebasedynamiclinks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetIosReopenAttributionResponse extends js.Object {
+trait GetIosReopenAttributionResponse extends StObject {
   
   /** The deep-link attributed the app universal link open. For both regular FDL links and invite FDL links. */
   var deepLink: js.UndefOr[String] = js.native
@@ -43,72 +44,60 @@ object GetIosReopenAttributionResponse {
   }
   
   @scala.inline
-  implicit class GetIosReopenAttributionResponseOps[Self <: GetIosReopenAttributionResponse] (val x: Self) extends AnyVal {
+  implicit class GetIosReopenAttributionResponseMutableBuilder[Self <: GetIosReopenAttributionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeepLink(value: String): Self = StObject.set(x, "deepLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeepLinkUndefined: Self = StObject.set(x, "deepLink", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvitationId(value: String): Self = StObject.set(x, "invitationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepLink(value: String): Self = this.set("deepLink", value.asInstanceOf[js.Any])
+    def setInvitationIdUndefined: Self = StObject.set(x, "invitationId", js.undefined)
     
     @scala.inline
-    def deleteDeepLink: Self = this.set("deepLink", js.undefined)
+    def setIosMinAppVersion(value: String): Self = StObject.set(x, "iosMinAppVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvitationId(value: String): Self = this.set("invitationId", value.asInstanceOf[js.Any])
+    def setIosMinAppVersionUndefined: Self = StObject.set(x, "iosMinAppVersion", js.undefined)
     
     @scala.inline
-    def deleteInvitationId: Self = this.set("invitationId", js.undefined)
+    def setResolvedLink(value: String): Self = StObject.set(x, "resolvedLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIosMinAppVersion(value: String): Self = this.set("iosMinAppVersion", value.asInstanceOf[js.Any])
+    def setResolvedLinkUndefined: Self = StObject.set(x, "resolvedLink", js.undefined)
     
     @scala.inline
-    def deleteIosMinAppVersion: Self = this.set("iosMinAppVersion", js.undefined)
+    def setUtmCampaign(value: String): Self = StObject.set(x, "utmCampaign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolvedLink(value: String): Self = this.set("resolvedLink", value.asInstanceOf[js.Any])
+    def setUtmCampaignUndefined: Self = StObject.set(x, "utmCampaign", js.undefined)
     
     @scala.inline
-    def deleteResolvedLink: Self = this.set("resolvedLink", js.undefined)
+    def setUtmContent(value: String): Self = StObject.set(x, "utmContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUtmCampaign(value: String): Self = this.set("utmCampaign", value.asInstanceOf[js.Any])
+    def setUtmContentUndefined: Self = StObject.set(x, "utmContent", js.undefined)
     
     @scala.inline
-    def deleteUtmCampaign: Self = this.set("utmCampaign", js.undefined)
+    def setUtmMedium(value: String): Self = StObject.set(x, "utmMedium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUtmContent(value: String): Self = this.set("utmContent", value.asInstanceOf[js.Any])
+    def setUtmMediumUndefined: Self = StObject.set(x, "utmMedium", js.undefined)
     
     @scala.inline
-    def deleteUtmContent: Self = this.set("utmContent", js.undefined)
+    def setUtmSource(value: String): Self = StObject.set(x, "utmSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUtmMedium(value: String): Self = this.set("utmMedium", value.asInstanceOf[js.Any])
+    def setUtmSourceUndefined: Self = StObject.set(x, "utmSource", js.undefined)
     
     @scala.inline
-    def deleteUtmMedium: Self = this.set("utmMedium", js.undefined)
+    def setUtmTerm(value: String): Self = StObject.set(x, "utmTerm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUtmSource(value: String): Self = this.set("utmSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUtmSource: Self = this.set("utmSource", js.undefined)
-    
-    @scala.inline
-    def setUtmTerm(value: String): Self = this.set("utmTerm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUtmTerm: Self = this.set("utmTerm", js.undefined)
+    def setUtmTermUndefined: Self = StObject.set(x, "utmTerm", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.awsSdkClientPinpointBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/model/UpdateApplicationSettingsOutput", JSImport.Namespace)
-@js.native
-object updateApplicationSettingsOutputMod extends js.Object {
+object updateApplicationSettingsOutputMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/model/UpdateApplicationSettingsOutput", "UpdateApplicationSettingsOutput")
+  @js.native
   val UpdateApplicationSettingsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

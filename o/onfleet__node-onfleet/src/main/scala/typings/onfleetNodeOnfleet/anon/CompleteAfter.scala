@@ -3,12 +3,13 @@ package typings.onfleetNodeOnfleet.anon
 import typings.onfleetNodeOnfleet.destinationsMod.CreateDestinationProps
 import typings.onfleetNodeOnfleet.metadataMod.OnfleetMetadata
 import typings.onfleetNodeOnfleet.recipientsMod.OnfleetRecipient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompleteAfter extends js.Object {
+trait CompleteAfter extends StObject {
   
   var completeAfter: js.UndefOr[Double] = js.native
   
@@ -35,72 +36,60 @@ object CompleteAfter {
   }
   
   @scala.inline
-  implicit class CompleteAfterOps[Self <: CompleteAfter] (val x: Self) extends AnyVal {
+  implicit class CompleteAfterMutableBuilder[Self <: CompleteAfter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompleteAfter(value: Double): Self = StObject.set(x, "completeAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteAfterUndefined: Self = StObject.set(x, "completeAfter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompleteBefore(value: Double): Self = StObject.set(x, "completeBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleteAfter(value: Double): Self = this.set("completeAfter", value.asInstanceOf[js.Any])
+    def setCompleteBeforeUndefined: Self = StObject.set(x, "completeBefore", js.undefined)
     
     @scala.inline
-    def deleteCompleteAfter: Self = this.set("completeAfter", js.undefined)
+    def setDestination(value: String | CreateDestinationProps): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleteBefore(value: Double): Self = this.set("completeBefore", value.asInstanceOf[js.Any])
+    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
     @scala.inline
-    def deleteCompleteBefore: Self = this.set("completeBefore", js.undefined)
+    def setMetadata(value: js.Array[OnfleetMetadata]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination(value: String | CreateDestinationProps): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteDestination: Self = this.set("destination", js.undefined)
+    def setMetadataVarargs(value: OnfleetMetadata*): Self = StObject.set(x, "metadata", js.Array(value :_*))
     
     @scala.inline
-    def setMetadataVarargs(value: OnfleetMetadata*): Self = this.set("metadata", js.Array(value :_*))
+    def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: js.Array[OnfleetMetadata]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setPickupTask(value: Boolean): Self = StObject.set(x, "pickupTask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotes(value: String): Self = this.set("notes", value.asInstanceOf[js.Any])
+    def setPickupTaskUndefined: Self = StObject.set(x, "pickupTask", js.undefined)
     
     @scala.inline
-    def deleteNotes: Self = this.set("notes", js.undefined)
+    def setRecipients(value: OnfleetRecipient | js.Array[OnfleetRecipient]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPickupTask(value: Boolean): Self = this.set("pickupTask", value.asInstanceOf[js.Any])
+    def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
     @scala.inline
-    def deletePickupTask: Self = this.set("pickupTask", js.undefined)
+    def setRecipientsVarargs(value: OnfleetRecipient*): Self = StObject.set(x, "recipients", js.Array(value :_*))
     
     @scala.inline
-    def setRecipientsVarargs(value: OnfleetRecipient*): Self = this.set("recipients", js.Array(value :_*))
+    def setServiceTime(value: Double): Self = StObject.set(x, "serviceTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipients(value: OnfleetRecipient | js.Array[OnfleetRecipient]): Self = this.set("recipients", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecipients: Self = this.set("recipients", js.undefined)
-    
-    @scala.inline
-    def setServiceTime(value: Double): Self = this.set("serviceTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceTime: Self = this.set("serviceTime", js.undefined)
+    def setServiceTimeUndefined: Self = StObject.set(x, "serviceTime", js.undefined)
   }
 }

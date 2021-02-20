@@ -1,5 +1,6 @@
 package typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * value_mode describes how the field value is indexed.
   */
 @js.native
-trait SchemaGoogleFirestoreAdminV1beta2IndexField extends js.Object {
+trait SchemaGoogleFirestoreAdminV1beta2IndexField extends StObject {
   
   /**
     * Indicates that this field supports operations on `array_value`s.
@@ -37,36 +38,24 @@ object SchemaGoogleFirestoreAdminV1beta2IndexField {
   }
   
   @scala.inline
-  implicit class SchemaGoogleFirestoreAdminV1beta2IndexFieldOps[Self <: SchemaGoogleFirestoreAdminV1beta2IndexField] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleFirestoreAdminV1beta2IndexFieldMutableBuilder[Self <: SchemaGoogleFirestoreAdminV1beta2IndexField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayConfig(value: String): Self = StObject.set(x, "arrayConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayConfigUndefined: Self = StObject.set(x, "arrayConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldPath(value: String): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayConfig(value: String): Self = this.set("arrayConfig", value.asInstanceOf[js.Any])
+    def setFieldPathUndefined: Self = StObject.set(x, "fieldPath", js.undefined)
     
     @scala.inline
-    def deleteArrayConfig: Self = this.set("arrayConfig", js.undefined)
+    def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldPath(value: String): Self = this.set("fieldPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFieldPath: Self = this.set("fieldPath", js.undefined)
-    
-    @scala.inline
-    def setOrder(value: String): Self = this.set("order", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codestarnotificationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetSummary extends js.Object {
+trait TargetSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the SNS topic.
@@ -31,36 +32,24 @@ object TargetSummary {
   }
   
   @scala.inline
-  implicit class TargetSummaryOps[Self <: TargetSummary] (val x: Self) extends AnyVal {
+  implicit class TargetSummaryMutableBuilder[Self <: TargetSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTargetAddress(value: TargetAddress): Self = StObject.set(x, "TargetAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTargetAddressUndefined: Self = StObject.set(x, "TargetAddress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetStatus(value: TargetStatus): Self = StObject.set(x, "TargetStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetAddress(value: TargetAddress): Self = this.set("TargetAddress", value.asInstanceOf[js.Any])
+    def setTargetStatusUndefined: Self = StObject.set(x, "TargetStatus", js.undefined)
     
     @scala.inline
-    def deleteTargetAddress: Self = this.set("TargetAddress", js.undefined)
+    def setTargetType(value: TargetType): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetStatus(value: TargetStatus): Self = this.set("TargetStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetStatus: Self = this.set("TargetStatus", js.undefined)
-    
-    @scala.inline
-    def setTargetType(value: TargetType): Self = this.set("TargetType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetType: Self = this.set("TargetType", js.undefined)
+    def setTargetTypeUndefined: Self = StObject.set(x, "TargetType", js.undefined)
   }
 }

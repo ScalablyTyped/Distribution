@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HlsEncryptionSettings extends js.Object {
+trait HlsEncryptionSettings extends StObject {
   
   /**
     * This is a 128-bit, 16-byte hex value represented by a 32-character text string. If this parameter is not set then the Initialization Vector will follow the segment number by default.
@@ -51,60 +52,48 @@ object HlsEncryptionSettings {
   }
   
   @scala.inline
-  implicit class HlsEncryptionSettingsOps[Self <: HlsEncryptionSettings] (val x: Self) extends AnyVal {
+  implicit class HlsEncryptionSettingsMutableBuilder[Self <: HlsEncryptionSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstantInitializationVector(value: stringMin32Max32Pattern09aFAF32): Self = StObject.set(x, "ConstantInitializationVector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstantInitializationVectorUndefined: Self = StObject.set(x, "ConstantInitializationVector", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryptionMethod(value: HlsEncryptionType): Self = StObject.set(x, "EncryptionMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstantInitializationVector(value: stringMin32Max32Pattern09aFAF32): Self = this.set("ConstantInitializationVector", value.asInstanceOf[js.Any])
+    def setEncryptionMethodUndefined: Self = StObject.set(x, "EncryptionMethod", js.undefined)
     
     @scala.inline
-    def deleteConstantInitializationVector: Self = this.set("ConstantInitializationVector", js.undefined)
+    def setInitializationVectorInManifest(value: HlsInitializationVectorInManifest): Self = StObject.set(x, "InitializationVectorInManifest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionMethod(value: HlsEncryptionType): Self = this.set("EncryptionMethod", value.asInstanceOf[js.Any])
+    def setInitializationVectorInManifestUndefined: Self = StObject.set(x, "InitializationVectorInManifest", js.undefined)
     
     @scala.inline
-    def deleteEncryptionMethod: Self = this.set("EncryptionMethod", js.undefined)
+    def setOfflineEncrypted(value: HlsOfflineEncrypted): Self = StObject.set(x, "OfflineEncrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitializationVectorInManifest(value: HlsInitializationVectorInManifest): Self = this.set("InitializationVectorInManifest", value.asInstanceOf[js.Any])
+    def setOfflineEncryptedUndefined: Self = StObject.set(x, "OfflineEncrypted", js.undefined)
     
     @scala.inline
-    def deleteInitializationVectorInManifest: Self = this.set("InitializationVectorInManifest", js.undefined)
+    def setSpekeKeyProvider(value: SpekeKeyProvider): Self = StObject.set(x, "SpekeKeyProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfflineEncrypted(value: HlsOfflineEncrypted): Self = this.set("OfflineEncrypted", value.asInstanceOf[js.Any])
+    def setSpekeKeyProviderUndefined: Self = StObject.set(x, "SpekeKeyProvider", js.undefined)
     
     @scala.inline
-    def deleteOfflineEncrypted: Self = this.set("OfflineEncrypted", js.undefined)
+    def setStaticKeyProvider(value: StaticKeyProvider): Self = StObject.set(x, "StaticKeyProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpekeKeyProvider(value: SpekeKeyProvider): Self = this.set("SpekeKeyProvider", value.asInstanceOf[js.Any])
+    def setStaticKeyProviderUndefined: Self = StObject.set(x, "StaticKeyProvider", js.undefined)
     
     @scala.inline
-    def deleteSpekeKeyProvider: Self = this.set("SpekeKeyProvider", js.undefined)
+    def setType(value: HlsKeyProviderType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStaticKeyProvider(value: StaticKeyProvider): Self = this.set("StaticKeyProvider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStaticKeyProvider: Self = this.set("StaticKeyProvider", js.undefined)
-    
-    @scala.inline
-    def setType(value: HlsKeyProviderType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

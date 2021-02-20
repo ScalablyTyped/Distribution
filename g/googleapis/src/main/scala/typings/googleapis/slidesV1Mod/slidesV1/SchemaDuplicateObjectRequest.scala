@@ -1,6 +1,7 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * page at the same position as the original.
   */
 @js.native
-trait SchemaDuplicateObjectRequest extends js.Object {
+trait SchemaDuplicateObjectRequest extends StObject {
   
   /**
     * The ID of the object to duplicate.
@@ -47,30 +48,18 @@ object SchemaDuplicateObjectRequest {
   }
   
   @scala.inline
-  implicit class SchemaDuplicateObjectRequestOps[Self <: SchemaDuplicateObjectRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaDuplicateObjectRequestMutableBuilder[Self <: SchemaDuplicateObjectRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectIds(value: StringDictionary[String]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
-    
-    @scala.inline
-    def setObjectIds(value: StringDictionary[String]): Self = this.set("objectIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectIds: Self = this.set("objectIds", js.undefined)
+    def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.reactNativeElements.mod
 
 import typings.reactNative.mod.TouchableWithoutFeedbackProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,72 +36,60 @@ object ScaleProps {
   }
   
   @scala.inline
-  implicit class ScalePropsOps[Self <: ScaleProps] (val x: Self) extends AnyVal {
+  implicit class ScalePropsMutableBuilder[Self <: ScaleProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveScale(value: Double): Self = StObject.set(x, "activeScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveScaleUndefined: Self = StObject.set(x, "activeScale", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultNumber(value: Double): Self = StObject.set(x, "defaultNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveScale(value: Double): Self = this.set("activeScale", value.asInstanceOf[js.Any])
+    def setDefaultNumberUndefined: Self = StObject.set(x, "defaultNumber", js.undefined)
     
     @scala.inline
-    def deleteActiveScale: Self = this.set("activeScale", js.undefined)
+    def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultNumber(value: Double): Self = this.set("defaultNumber", value.asInstanceOf[js.Any])
+    def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
     
     @scala.inline
-    def deleteDefaultNumber: Self = this.set("defaultNumber", js.undefined)
+    def setPressInFriction(value: Double): Self = StObject.set(x, "pressInFriction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriction(value: Double): Self = this.set("friction", value.asInstanceOf[js.Any])
+    def setPressInFrictionUndefined: Self = StObject.set(x, "pressInFriction", js.undefined)
     
     @scala.inline
-    def deleteFriction: Self = this.set("friction", js.undefined)
+    def setPressInTension(value: Double): Self = StObject.set(x, "pressInTension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPressInFriction(value: Double): Self = this.set("pressInFriction", value.asInstanceOf[js.Any])
+    def setPressInTensionUndefined: Self = StObject.set(x, "pressInTension", js.undefined)
     
     @scala.inline
-    def deletePressInFriction: Self = this.set("pressInFriction", js.undefined)
+    def setPressOutFriction(value: Double): Self = StObject.set(x, "pressOutFriction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPressInTension(value: Double): Self = this.set("pressInTension", value.asInstanceOf[js.Any])
+    def setPressOutFrictionUndefined: Self = StObject.set(x, "pressOutFriction", js.undefined)
     
     @scala.inline
-    def deletePressInTension: Self = this.set("pressInTension", js.undefined)
+    def setPressOutTension(value: Double): Self = StObject.set(x, "pressOutTension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPressOutFriction(value: Double): Self = this.set("pressOutFriction", value.asInstanceOf[js.Any])
+    def setPressOutTensionUndefined: Self = StObject.set(x, "pressOutTension", js.undefined)
     
     @scala.inline
-    def deletePressOutFriction: Self = this.set("pressOutFriction", js.undefined)
+    def setTension(value: Double): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPressOutTension(value: Double): Self = this.set("pressOutTension", value.asInstanceOf[js.Any])
+    def setTensionUndefined: Self = StObject.set(x, "tension", js.undefined)
     
     @scala.inline
-    def deletePressOutTension: Self = this.set("pressOutTension", js.undefined)
+    def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTension(value: Double): Self = this.set("tension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTension: Self = this.set("tension", js.undefined)
-    
-    @scala.inline
-    def setUseNativeDriver(value: Boolean): Self = this.set("useNativeDriver", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseNativeDriver: Self = this.set("useNativeDriver", js.undefined)
+    def setUseNativeDriverUndefined: Self = StObject.set(x, "useNativeDriver", js.undefined)
   }
 }

@@ -1,21 +1,24 @@
 package typings.antvComponent
 
-import typings.antvComponent.groupComponentMod.GroupComponent
 import typings.antvComponent.typesMod.GroupComponentCfg
 import typings.antvComponent.typesMod.LegendBaseCfg
 import typings.antvComponent.typesMod.PointLocationCfg
 import typings.antvGBase.interfacesMod.IGroup
 import typings.antvGBase.typesMod.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/component/lib/legend/base", JSImport.Namespace)
-@js.native
-object legendBaseMod extends js.Object {
+object legendBaseMod {
+  
+  @JSImport("@antv/component/lib/legend/base", JSImport.Default)
+  @js.native
+  abstract class default[T /* <: LegendBaseCfg */] () extends LegendBase[T]
   
   @js.native
-  trait LegendBase[T /* <: LegendBaseCfg */] extends GroupComponent[GroupComponentCfg] {
+  trait LegendBase[T /* <: LegendBaseCfg */]
+    extends typings.antvComponent.groupComponentMod.default[GroupComponentCfg] {
     
     /* protected */ def drawBackground(group: IGroup): Unit = js.native
     
@@ -33,7 +36,4 @@ object legendBaseMod extends js.Object {
     
     def setLocation(cfg: PointLocationCfg): Unit = js.native
   }
-  
-  @js.native
-  abstract class default[T /* <: LegendBaseCfg */] () extends LegendBase[T]
 }

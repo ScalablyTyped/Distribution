@@ -1,11 +1,12 @@
 package typings.awsSdk.efsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeFileSystemPolicyRequest extends js.Object {
+trait DescribeFileSystemPolicyRequest extends StObject {
   
   /**
     * Specifies which EFS file system to retrieve the FileSystemPolicy for.
@@ -21,21 +22,9 @@ object DescribeFileSystemPolicyRequest {
   }
   
   @scala.inline
-  implicit class DescribeFileSystemPolicyRequestOps[Self <: DescribeFileSystemPolicyRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeFileSystemPolicyRequestMutableBuilder[Self <: DescribeFileSystemPolicyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFileSystemId(value: FileSystemId): Self = this.set("FileSystemId", value.asInstanceOf[js.Any])
+    def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.scrollmagic.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.scrollmagic.scrollmagicStrings.DURING
   - typings.scrollmagic.scrollmagicStrings.AFTER
 */
-trait SceneState extends js.Object
+trait SceneState extends StObject
 object SceneState {
   
   @scala.inline

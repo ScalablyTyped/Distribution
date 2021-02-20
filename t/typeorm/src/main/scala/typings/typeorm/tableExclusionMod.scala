@@ -2,16 +2,16 @@ package typings.typeorm
 
 import typings.typeorm.exclusionMetadataMod.ExclusionMetadata
 import typings.typeorm.tableExclusionOptionsMod.TableExclusionOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/schema-builder/table/TableExclusion", JSImport.Namespace)
-@js.native
-object tableExclusionMod extends js.Object {
+object tableExclusionMod {
   
+  @JSImport("typeorm/browser/schema-builder/table/TableExclusion", "TableExclusion")
   @js.native
-  class TableExclusion protected () extends js.Object {
+  class TableExclusion protected () extends StObject {
     def this(options: TableExclusionOptions) = this()
     
     /**
@@ -25,12 +25,13 @@ object tableExclusionMod extends js.Object {
     var name: js.UndefOr[String] = js.native
   }
   /* static members */
-  @js.native
-  object TableExclusion extends js.Object {
+  object TableExclusion {
     
     /**
       * Creates exclusions from the exclusion metadata object.
       */
+    @JSImport("typeorm/browser/schema-builder/table/TableExclusion", "TableExclusion.create")
+    @js.native
     def create(exclusionMetadata: ExclusionMetadata): TableExclusion = js.native
   }
 }

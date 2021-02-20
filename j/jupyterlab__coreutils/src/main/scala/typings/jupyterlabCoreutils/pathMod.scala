@@ -1,15 +1,13 @@
 package typings.jupyterlabCoreutils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/coreutils/lib/path", JSImport.Namespace)
-@js.native
-object pathMod extends js.Object {
+object pathMod {
   
-  @js.native
-  object PathExt extends js.Object {
+  object PathExt {
     
     /**
       * Return the last portion of a path. Similar to the Unix basename command.
@@ -19,7 +17,11 @@ object pathMod extends js.Object {
       *
       * @param ext - An extension to remove from the result.
       */
+    @JSImport("@jupyterlab/coreutils/lib/path", "PathExt.basename")
+    @js.native
     def basename(path: String): String = js.native
+    @JSImport("@jupyterlab/coreutils/lib/path", "PathExt.basename")
+    @js.native
     def basename(path: String, ext: String): String = js.native
     
     /**
@@ -28,6 +30,8 @@ object pathMod extends js.Object {
       *
       * @param path - The file path.
       */
+    @JSImport("@jupyterlab/coreutils/lib/path", "PathExt.dirname")
+    @js.native
     def dirname(path: String): String = js.native
     
     /**
@@ -44,6 +48,8 @@ object pathMod extends js.Object {
       * character of the basename of path [[basename]] is `.`, then an
       * empty string is returned.
       */
+    @JSImport("@jupyterlab/coreutils/lib/path", "PathExt.extname")
+    @js.native
     def extname(path: String): String = js.native
     
     /**
@@ -52,6 +58,8 @@ object pathMod extends js.Object {
       *
       * @param paths - The string paths to join.
       */
+    @JSImport("@jupyterlab/coreutils/lib/path", "PathExt.join")
+    @js.native
     def join(paths: String*): String = js.native
     
     /**
@@ -61,6 +69,8 @@ object pathMod extends js.Object {
       *
       * @param path - The string path to normalize.
       */
+    @JSImport("@jupyterlab/coreutils/lib/path", "PathExt.normalize")
+    @js.native
     def normalize(path: String): String = js.native
     
     /**
@@ -71,6 +81,8 @@ object pathMod extends js.Object {
       * #### Notes
       * Adds a leading dot if not present and converts to lower case.
       */
+    @JSImport("@jupyterlab/coreutils/lib/path", "PathExt.normalizeExtension")
+    @js.native
     def normalizeExtension(extension: String): String = js.native
     
     /**
@@ -86,6 +98,8 @@ object pathMod extends js.Object {
       * If a zero-length string is passed as from or to, `/`
       * will be used instead of the zero-length strings.
       */
+    @JSImport("@jupyterlab/coreutils/lib/path", "PathExt.relative")
+    @js.native
     def relative(from: String, to: String): String = js.native
     
     /**
@@ -93,6 +107,8 @@ object pathMod extends js.Object {
       *
       * @param path: the path from which to remove a leading slash.
       */
+    @JSImport("@jupyterlab/coreutils/lib/path", "PathExt.removeSlash")
+    @js.native
     def removeSlash(path: String): String = js.native
     
     /**
@@ -108,6 +124,8 @@ object pathMod extends js.Object {
       *
       * If {to} isn't already absolute, {from} arguments are prepended in right to left order, until an absolute path is found. If after using all {from} paths still no absolute path is found, the current working directory is used as well. The resulting path is normalized, and trailing slashes are removed unless the path gets resolved to the root directory.
       */
+    @JSImport("@jupyterlab/coreutils/lib/path", "PathExt.resolve")
+    @js.native
     def resolve(parts: String*): String = js.native
   }
 }

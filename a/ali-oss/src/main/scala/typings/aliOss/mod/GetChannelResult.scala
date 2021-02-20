@@ -1,11 +1,12 @@
 package typings.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetChannelResult extends js.Object {
+trait GetChannelResult extends StObject {
   
   var Audio: js.UndefOr[js.Object] = js.native
   
@@ -28,48 +29,36 @@ object GetChannelResult {
   }
   
   @scala.inline
-  implicit class GetChannelResultOps[Self <: GetChannelResult] (val x: Self) extends AnyVal {
+  implicit class GetChannelResultMutableBuilder[Self <: GetChannelResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudio(value: js.Object): Self = StObject.set(x, "Audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioUndefined: Self = StObject.set(x, "Audio", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectedTime(value: String): Self = StObject.set(x, "ConnectedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setConnectedTimeUndefined: Self = StObject.set(x, "ConnectedTime", js.undefined)
     
     @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = this.set("res", value.asInstanceOf[js.Any])
+    def setRemoteAddr(value: String): Self = StObject.set(x, "RemoteAddr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudio(value: js.Object): Self = this.set("Audio", value.asInstanceOf[js.Any])
+    def setRemoteAddrUndefined: Self = StObject.set(x, "RemoteAddr", js.undefined)
     
     @scala.inline
-    def deleteAudio: Self = this.set("Audio", js.undefined)
+    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectedTime(value: String): Self = this.set("ConnectedTime", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConnectedTime: Self = this.set("ConnectedTime", js.undefined)
+    def setVideo(value: js.Object): Self = StObject.set(x, "Video", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteAddr(value: String): Self = this.set("RemoteAddr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoteAddr: Self = this.set("RemoteAddr", js.undefined)
-    
-    @scala.inline
-    def setVideo(value: js.Object): Self = this.set("Video", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideo: Self = this.set("Video", js.undefined)
+    def setVideoUndefined: Self = StObject.set(x, "Video", js.undefined)
   }
 }

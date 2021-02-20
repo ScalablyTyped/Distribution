@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeVisitor extends js.Object {
+trait NodeVisitor extends StObject {
   
   def apply[T /* <: Node */](): js.UndefOr[T] = js.native
   def apply[T /* <: Node */](nodes: T): T = js.native

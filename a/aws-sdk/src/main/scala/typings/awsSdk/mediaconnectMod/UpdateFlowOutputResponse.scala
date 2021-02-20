@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateFlowOutputResponse extends js.Object {
+trait UpdateFlowOutputResponse extends StObject {
   
   /**
     * The ARN of the flow that is associated with the updated output.
@@ -26,30 +27,18 @@ object UpdateFlowOutputResponse {
   }
   
   @scala.inline
-  implicit class UpdateFlowOutputResponseOps[Self <: UpdateFlowOutputResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateFlowOutputResponseMutableBuilder[Self <: UpdateFlowOutputResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlowArnUndefined: Self = StObject.set(x, "FlowArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutput(value: Output): Self = StObject.set(x, "Output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowArn(value: string): Self = this.set("FlowArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlowArn: Self = this.set("FlowArn", js.undefined)
-    
-    @scala.inline
-    def setOutput(value: Output): Self = this.set("Output", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutput: Self = this.set("Output", js.undefined)
+    def setOutputUndefined: Self = StObject.set(x, "Output", js.undefined)
   }
 }

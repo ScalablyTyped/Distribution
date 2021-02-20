@@ -1,12 +1,13 @@
 package typings.athenajs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("athenajs", "Behavior")
 @js.native
-class Behavior protected () extends js.Object {
+class Behavior protected () extends StObject {
   def this(sprite: Drawable) = this()
   def this(sprite: Drawable, options: JSObject) = this()
   

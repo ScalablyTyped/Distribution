@@ -1,12 +1,13 @@
 package typings.highlightJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ K in highlight.js.PluginEvent ]:? any} */
 @js.native
-trait HLJSPlugin extends js.Object {
+trait HLJSPlugin extends StObject {
   
   @JSName("after:highlight")
   var afterColonhighlight: js.UndefOr[js.Any] = js.native
@@ -29,42 +30,30 @@ object HLJSPlugin {
   }
   
   @scala.inline
-  implicit class HLJSPluginOps[Self <: HLJSPlugin] (val x: Self) extends AnyVal {
+  implicit class HLJSPluginMutableBuilder[Self <: HLJSPlugin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterColonhighlight(value: js.Any): Self = StObject.set(x, "after:highlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterColonhighlightBlock(value: js.Any): Self = StObject.set(x, "after:highlightBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterColonhighlightBlockUndefined: Self = StObject.set(x, "after:highlightBlock", js.undefined)
     
     @scala.inline
-    def setAfterColonhighlight(value: js.Any): Self = this.set("after:highlight", value.asInstanceOf[js.Any])
+    def setAfterColonhighlightUndefined: Self = StObject.set(x, "after:highlight", js.undefined)
     
     @scala.inline
-    def deleteAfterColonhighlight: Self = this.set("after:highlight", js.undefined)
+    def setBeforeColonhighlight(value: js.Any): Self = StObject.set(x, "before:highlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterColonhighlightBlock(value: js.Any): Self = this.set("after:highlightBlock", value.asInstanceOf[js.Any])
+    def setBeforeColonhighlightBlock(value: js.Any): Self = StObject.set(x, "before:highlightBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAfterColonhighlightBlock: Self = this.set("after:highlightBlock", js.undefined)
+    def setBeforeColonhighlightBlockUndefined: Self = StObject.set(x, "before:highlightBlock", js.undefined)
     
     @scala.inline
-    def setBeforeColonhighlight(value: js.Any): Self = this.set("before:highlight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBeforeColonhighlight: Self = this.set("before:highlight", js.undefined)
-    
-    @scala.inline
-    def setBeforeColonhighlightBlock(value: js.Any): Self = this.set("before:highlightBlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBeforeColonhighlightBlock: Self = this.set("before:highlightBlock", js.undefined)
+    def setBeforeColonhighlightUndefined: Self = StObject.set(x, "before:highlight", js.undefined)
   }
 }

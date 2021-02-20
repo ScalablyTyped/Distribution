@@ -3,12 +3,13 @@ package typings.nodeRedEditorClient.mod
 import typings.jquery.JQuery.Selector
 import typings.nodeRedEditorClient.mod.global.JQuery
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WidgetTypedInputOptions extends js.Object {
+trait WidgetTypedInputOptions extends StObject {
   
   /** If defined, sets the default type of the input if typeField is not set. */
   var default: js.UndefOr[WidgetTypedInputType | String] = js.native
@@ -32,36 +33,24 @@ object WidgetTypedInputOptions {
   }
   
   @scala.inline
-  implicit class WidgetTypedInputOptionsOps[Self <: WidgetTypedInputOptions] (val x: Self) extends AnyVal {
+  implicit class WidgetTypedInputOptionsMutableBuilder[Self <: WidgetTypedInputOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefault(value: WidgetTypedInputType | String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTypeField(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "typeField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypesVarargs(value: (WidgetTypedInputType | WidgetTypedInputTypeDefinition)*): Self = this.set("types", js.Array(value :_*))
+    def setTypeFieldUndefined: Self = StObject.set(x, "typeField", js.undefined)
     
     @scala.inline
-    def setTypes(value: js.Array[WidgetTypedInputType | WidgetTypedInputTypeDefinition]): Self = this.set("types", value.asInstanceOf[js.Any])
+    def setTypes(value: js.Array[WidgetTypedInputType | WidgetTypedInputTypeDefinition]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: WidgetTypedInputType | String): Self = this.set("default", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
-    
-    @scala.inline
-    def setTypeField(value: Selector | JQuery[HTMLElement]): Self = this.set("typeField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeField: Self = this.set("typeField", js.undefined)
+    def setTypesVarargs(value: (WidgetTypedInputType | WidgetTypedInputTypeDefinition)*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

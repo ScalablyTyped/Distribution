@@ -1,11 +1,12 @@
 package typings.awsSdk.applicationautoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SuspendedState extends js.Object {
+trait SuspendedState extends StObject {
   
   /**
     * Whether scale in by a target tracking scaling policy or a step scaling policy is suspended. Set the value to true if you don't want Application Auto Scaling to remove capacity when a scaling policy is triggered. The default is false. 
@@ -31,36 +32,24 @@ object SuspendedState {
   }
   
   @scala.inline
-  implicit class SuspendedStateOps[Self <: SuspendedState] (val x: Self) extends AnyVal {
+  implicit class SuspendedStateMutableBuilder[Self <: SuspendedState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDynamicScalingInSuspended(value: ScalingSuspended): Self = StObject.set(x, "DynamicScalingInSuspended", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDynamicScalingInSuspendedUndefined: Self = StObject.set(x, "DynamicScalingInSuspended", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDynamicScalingOutSuspended(value: ScalingSuspended): Self = StObject.set(x, "DynamicScalingOutSuspended", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicScalingInSuspended(value: ScalingSuspended): Self = this.set("DynamicScalingInSuspended", value.asInstanceOf[js.Any])
+    def setDynamicScalingOutSuspendedUndefined: Self = StObject.set(x, "DynamicScalingOutSuspended", js.undefined)
     
     @scala.inline
-    def deleteDynamicScalingInSuspended: Self = this.set("DynamicScalingInSuspended", js.undefined)
+    def setScheduledScalingSuspended(value: ScalingSuspended): Self = StObject.set(x, "ScheduledScalingSuspended", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicScalingOutSuspended(value: ScalingSuspended): Self = this.set("DynamicScalingOutSuspended", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDynamicScalingOutSuspended: Self = this.set("DynamicScalingOutSuspended", js.undefined)
-    
-    @scala.inline
-    def setScheduledScalingSuspended(value: ScalingSuspended): Self = this.set("ScheduledScalingSuspended", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduledScalingSuspended: Self = this.set("ScheduledScalingSuspended", js.undefined)
+    def setScheduledScalingSuspendedUndefined: Self = StObject.set(x, "ScheduledScalingSuspended", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.babylonjs.BABYLON
 
 import typings.babylonjs.anon.Levels
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Info about the .basis files
   */
 @js.native
-trait BasisFileInfo extends js.Object {
+trait BasisFileInfo extends StObject {
   
   /**
     * If the file has alpha
@@ -30,27 +31,15 @@ object BasisFileInfo {
   }
   
   @scala.inline
-  implicit class BasisFileInfoOps[Self <: BasisFileInfo] (val x: Self) extends AnyVal {
+  implicit class BasisFileInfoMutableBuilder[Self <: BasisFileInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasAlpha(value: Boolean): Self = StObject.set(x, "hasAlpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImages(value: js.Array[Levels]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHasAlpha(value: Boolean): Self = this.set("hasAlpha", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImagesVarargs(value: Levels*): Self = this.set("images", js.Array(value :_*))
-    
-    @scala.inline
-    def setImages(value: js.Array[Levels]): Self = this.set("images", value.asInstanceOf[js.Any])
+    def setImagesVarargs(value: Levels*): Self = StObject.set(x, "images", js.Array(value :_*))
   }
 }

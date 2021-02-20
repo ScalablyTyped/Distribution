@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HumanLoopConfig extends js.Object {
+trait HumanLoopConfig extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the human task user interface.
@@ -64,60 +65,48 @@ object HumanLoopConfig {
   }
   
   @scala.inline
-  implicit class HumanLoopConfigOps[Self <: HumanLoopConfig] (val x: Self) extends AnyVal {
+  implicit class HumanLoopConfigMutableBuilder[Self <: HumanLoopConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHumanTaskUiArn(value: HumanTaskUiArn): Self = StObject.set(x, "HumanTaskUiArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPublicWorkforceTaskPrice(value: PublicWorkforceTaskPrice): Self = StObject.set(x, "PublicWorkforceTaskPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublicWorkforceTaskPriceUndefined: Self = StObject.set(x, "PublicWorkforceTaskPrice", js.undefined)
     
     @scala.inline
-    def setHumanTaskUiArn(value: HumanTaskUiArn): Self = this.set("HumanTaskUiArn", value.asInstanceOf[js.Any])
+    def setTaskAvailabilityLifetimeInSeconds(value: FlowDefinitionTaskAvailabilityLifetimeInSeconds): Self = StObject.set(x, "TaskAvailabilityLifetimeInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskCount(value: FlowDefinitionTaskCount): Self = this.set("TaskCount", value.asInstanceOf[js.Any])
+    def setTaskAvailabilityLifetimeInSecondsUndefined: Self = StObject.set(x, "TaskAvailabilityLifetimeInSeconds", js.undefined)
     
     @scala.inline
-    def setTaskDescription(value: FlowDefinitionTaskDescription): Self = this.set("TaskDescription", value.asInstanceOf[js.Any])
+    def setTaskCount(value: FlowDefinitionTaskCount): Self = StObject.set(x, "TaskCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskTitle(value: FlowDefinitionTaskTitle): Self = this.set("TaskTitle", value.asInstanceOf[js.Any])
+    def setTaskDescription(value: FlowDefinitionTaskDescription): Self = StObject.set(x, "TaskDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkteamArn(value: WorkteamArn): Self = this.set("WorkteamArn", value.asInstanceOf[js.Any])
+    def setTaskKeywords(value: FlowDefinitionTaskKeywords): Self = StObject.set(x, "TaskKeywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicWorkforceTaskPrice(value: PublicWorkforceTaskPrice): Self = this.set("PublicWorkforceTaskPrice", value.asInstanceOf[js.Any])
+    def setTaskKeywordsUndefined: Self = StObject.set(x, "TaskKeywords", js.undefined)
     
     @scala.inline
-    def deletePublicWorkforceTaskPrice: Self = this.set("PublicWorkforceTaskPrice", js.undefined)
+    def setTaskKeywordsVarargs(value: FlowDefinitionTaskKeyword*): Self = StObject.set(x, "TaskKeywords", js.Array(value :_*))
     
     @scala.inline
-    def setTaskAvailabilityLifetimeInSeconds(value: FlowDefinitionTaskAvailabilityLifetimeInSeconds): Self = this.set("TaskAvailabilityLifetimeInSeconds", value.asInstanceOf[js.Any])
+    def setTaskTimeLimitInSeconds(value: FlowDefinitionTaskTimeLimitInSeconds): Self = StObject.set(x, "TaskTimeLimitInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTaskAvailabilityLifetimeInSeconds: Self = this.set("TaskAvailabilityLifetimeInSeconds", js.undefined)
+    def setTaskTimeLimitInSecondsUndefined: Self = StObject.set(x, "TaskTimeLimitInSeconds", js.undefined)
     
     @scala.inline
-    def setTaskKeywordsVarargs(value: FlowDefinitionTaskKeyword*): Self = this.set("TaskKeywords", js.Array(value :_*))
+    def setTaskTitle(value: FlowDefinitionTaskTitle): Self = StObject.set(x, "TaskTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskKeywords(value: FlowDefinitionTaskKeywords): Self = this.set("TaskKeywords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskKeywords: Self = this.set("TaskKeywords", js.undefined)
-    
-    @scala.inline
-    def setTaskTimeLimitInSeconds(value: FlowDefinitionTaskTimeLimitInSeconds): Self = this.set("TaskTimeLimitInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskTimeLimitInSeconds: Self = this.set("TaskTimeLimitInSeconds", js.undefined)
+    def setWorkteamArn(value: WorkteamArn): Self = StObject.set(x, "WorkteamArn", value.asInstanceOf[js.Any])
   }
 }

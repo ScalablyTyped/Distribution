@@ -6,13 +6,12 @@ import typings.makerJs.MakerJs.IPathCircle
 import typings.makerJs.MakerJs.IPathIntersectionBaseOptions
 import typings.makerJs.MakerJs.IPathLine
 import typings.makerJs.MakerJs.IPoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MakerJs.point")
-@js.native
-object point extends js.Object {
+object point {
   
   /**
     * Add two points together and return the result as a new point object.
@@ -22,7 +21,11 @@ object point extends js.Object {
     * @param subtract Optional boolean to subtract instead of add.
     * @returns A new point object.
     */
+  @JSGlobal("MakerJs.point.add")
+  @js.native
   def add(a: IPoint, b: IPoint): IPoint = js.native
+  @JSGlobal("MakerJs.point.add")
+  @js.native
   def add(a: IPoint, b: IPoint, subtract: Boolean): IPoint = js.native
   
   /**
@@ -32,6 +35,8 @@ object point extends js.Object {
     * @param b Second point.
     * @returns New point object which is the average of a and b.
     */
+  @JSGlobal("MakerJs.point.average")
+  @js.native
   def average(a: IPoint, b: IPoint): IPoint = js.native
   
   /**
@@ -40,7 +45,9 @@ object point extends js.Object {
     * @param pointToClone The point to clone.
     * @returns A new point with same values as the original.
     */
-  def clone(pointToClone: IPoint): IPoint = js.native
+  @JSGlobal("MakerJs.point.clone")
+  @js.native
+  def clone_(pointToClone: IPoint): IPoint = js.native
   
   /**
     * From an array of points, find the closest point to a given reference point.
@@ -49,6 +56,8 @@ object point extends js.Object {
     * @param pointOptions Array of points to choose from.
     * @returns The first closest point from the pointOptions.
     */
+  @JSGlobal("MakerJs.point.closest")
+  @js.native
   def closest(referencePoint: IPoint, pointOptions: js.Array[IPoint]): IPoint = js.native
   
   /**
@@ -59,6 +68,8 @@ object point extends js.Object {
     * @param scaleY The amount of y scaling.
     * @returns A new point.
     */
+  @JSGlobal("MakerJs.point.distort")
+  @js.native
   def distort(pointToDistort: IPoint, scaleX: Double, scaleY: Double): IPoint = js.native
   
   /**
@@ -67,6 +78,8 @@ object point extends js.Object {
     * @param circle A circle or arc.
     * @returns A new point object.
     */
+  @JSGlobal("MakerJs.point.fromAngleOnCircle")
+  @js.native
   def fromAngleOnCircle(angleInDegrees: Double, circle: IPathCircle): IPoint = js.native
   
   /**
@@ -75,6 +88,8 @@ object point extends js.Object {
     * @param arc The arc path object.
     * @returns Array with 2 elements: [0] is the point object corresponding to the start angle, [1] is the point object corresponding to the end angle.
     */
+  @JSGlobal("MakerJs.point.fromArc")
+  @js.native
   def fromArc(arc: IPathArc): js.Array[IPoint] = js.native
   
   /**
@@ -83,7 +98,11 @@ object point extends js.Object {
     * @param pathContext The path object.
     * @returns Array with 2 elements: [0] is the point object corresponding to the origin, [1] is the point object corresponding to the end.
     */
+  @JSGlobal("MakerJs.point.fromPathEnds")
+  @js.native
   def fromPathEnds(pathContext: IPath): js.Array[IPoint] = js.native
+  @JSGlobal("MakerJs.point.fromPathEnds")
+  @js.native
   def fromPathEnds(pathContext: IPath, pathOffset: IPoint): js.Array[IPoint] = js.native
   
   /**
@@ -93,6 +112,8 @@ object point extends js.Object {
     * @param radius The radius of the polar coordinate.
     * @returns A new point object.
     */
+  @JSGlobal("MakerJs.point.fromPolar")
+  @js.native
   def fromPolar(angleInRadians: Double, radius: Double): IPoint = js.native
   
   /**
@@ -103,7 +124,11 @@ object point extends js.Object {
     * @param options Optional IPathIntersectionOptions.
     * @returns point of intersection of the two slopes, or null if the slopes did not intersect.
     */
+  @JSGlobal("MakerJs.point.fromSlopeIntersection")
+  @js.native
   def fromSlopeIntersection(lineA: IPathLine, lineB: IPathLine): IPoint = js.native
+  @JSGlobal("MakerJs.point.fromSlopeIntersection")
+  @js.native
   def fromSlopeIntersection(lineA: IPathLine, lineB: IPathLine, options: IPathIntersectionBaseOptions): IPoint = js.native
   
   /**
@@ -113,7 +138,11 @@ object point extends js.Object {
     * @param ratio Optional ratio (between 0 and 1) of point along the path. Default is .5 for middle.
     * @returns Point on the path, in the middle of the path.
     */
+  @JSGlobal("MakerJs.point.middle")
+  @js.native
   def middle(pathContext: IPath): IPoint = js.native
+  @JSGlobal("MakerJs.point.middle")
+  @js.native
   def middle(pathContext: IPath, ratio: Double): IPoint = js.native
   
   /**
@@ -124,6 +153,8 @@ object point extends js.Object {
     * @param mirrorY Boolean to mirror on the y axis.
     * @returns Mirrored point.
     */
+  @JSGlobal("MakerJs.point.mirror")
+  @js.native
   def mirror(pointToMirror: IPoint, mirrorX: Boolean, mirrorY: Boolean): IPoint = js.native
   
   /**
@@ -134,7 +165,11 @@ object point extends js.Object {
     * @param rotationOrigin The center point of rotation.
     * @returns A new point.
     */
+  @JSGlobal("MakerJs.point.rotate")
+  @js.native
   def rotate(pointToRotate: IPoint, angleInDegrees: Double): IPoint = js.native
+  @JSGlobal("MakerJs.point.rotate")
+  @js.native
   def rotate(pointToRotate: IPoint, angleInDegrees: Double, rotationOrigin: IPoint): IPoint = js.native
   
   /**
@@ -144,7 +179,11 @@ object point extends js.Object {
     * @param accuracy Optional exemplar number of decimal places.
     * @returns A new point with the values rounded.
     */
+  @JSGlobal("MakerJs.point.rounded")
+  @js.native
   def rounded(pointContext: IPoint): IPoint = js.native
+  @JSGlobal("MakerJs.point.rounded")
+  @js.native
   def rounded(pointContext: IPoint, accuracy: Double): IPoint = js.native
   
   /**
@@ -154,6 +193,8 @@ object point extends js.Object {
     * @param scaleValue The amount of scaling.
     * @returns A new point.
     */
+  @JSGlobal("MakerJs.point.scale")
+  @js.native
   def scale(pointToScale: IPoint, scaleValue: Double): IPoint = js.native
   
   /**
@@ -163,6 +204,8 @@ object point extends js.Object {
     * @param b Second point.
     * @returns A new point object.
     */
+  @JSGlobal("MakerJs.point.subtract")
+  @js.native
   def subtract(a: IPoint, b: IPoint): IPoint = js.native
   
   /**
@@ -171,5 +214,7 @@ object point extends js.Object {
     *
     * @returns A new point.
     */
+  @JSGlobal("MakerJs.point.zero")
+  @js.native
   def zero(): IPoint = js.native
 }

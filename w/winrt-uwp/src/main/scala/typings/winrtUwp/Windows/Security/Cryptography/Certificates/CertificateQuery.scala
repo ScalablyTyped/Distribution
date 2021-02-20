@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents parameters for a query for certificates from the certificate store for an app. */
 @js.native
-trait CertificateQuery extends js.Object {
+trait CertificateQuery extends StObject {
   
   /** Gets a collection of object identifiers (OIDs) for the enhanced key usage extension to search for. */
   var enhancedKeyUsages: IVector[String] = js.native
@@ -51,42 +52,30 @@ object CertificateQuery {
   }
   
   @scala.inline
-  implicit class CertificateQueryOps[Self <: CertificateQuery] (val x: Self) extends AnyVal {
+  implicit class CertificateQueryMutableBuilder[Self <: CertificateQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnhancedKeyUsages(value: IVector[String]): Self = StObject.set(x, "enhancedKeyUsages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHardwareOnly(value: Boolean): Self = StObject.set(x, "hardwareOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnhancedKeyUsages(value: IVector[String]): Self = this.set("enhancedKeyUsages", value.asInstanceOf[js.Any])
+    def setIncludeDuplicates(value: Boolean): Self = StObject.set(x, "includeDuplicates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
+    def setIncludeExpiredCertificates(value: Boolean): Self = StObject.set(x, "includeExpiredCertificates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHardwareOnly(value: Boolean): Self = this.set("hardwareOnly", value.asInstanceOf[js.Any])
+    def setIssuerName(value: String): Self = StObject.set(x, "issuerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeDuplicates(value: Boolean): Self = this.set("includeDuplicates", value.asInstanceOf[js.Any])
+    def setStoreName(value: String): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeExpiredCertificates(value: Boolean): Self = this.set("includeExpiredCertificates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIssuerName(value: String): Self = this.set("issuerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStoreName(value: String): Self = this.set("storeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThumbprint(value: Double): Self = this.set("thumbprint", value.asInstanceOf[js.Any])
+    def setThumbprint(value: Double): Self = StObject.set(x, "thumbprint", value.asInstanceOf[js.Any])
   }
 }

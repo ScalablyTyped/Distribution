@@ -1,11 +1,12 @@
 package typings.jqueryAjaxfile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MochaSetupOptions extends js.Object {
+trait MochaSetupOptions extends StObject {
   
   // bail on the first test failure
   var bail: js.UndefOr[Boolean] = js.native
@@ -40,69 +41,57 @@ object MochaSetupOptions {
   }
   
   @scala.inline
-  implicit class MochaSetupOptionsOps[Self <: MochaSetupOptions] (val x: Self) extends AnyVal {
+  implicit class MochaSetupOptionsMutableBuilder[Self <: MochaSetupOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBailUndefined: Self = StObject.set(x, "bail", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlobals(value: js.Array[_]): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBail(value: Boolean): Self = this.set("bail", value.asInstanceOf[js.Any])
+    def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
     
     @scala.inline
-    def deleteBail: Self = this.set("bail", js.undefined)
+    def setGlobalsVarargs(value: js.Any*): Self = StObject.set(x, "globals", js.Array(value :_*))
     
     @scala.inline
-    def setGlobalsVarargs(value: js.Any*): Self = this.set("globals", js.Array(value :_*))
+    def setGrep(value: js.Any): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobals(value: js.Array[_]): Self = this.set("globals", value.asInstanceOf[js.Any])
+    def setGrepUndefined: Self = StObject.set(x, "grep", js.undefined)
     
     @scala.inline
-    def deleteGlobals: Self = this.set("globals", js.undefined)
+    def setIgnoreLeaks(value: Boolean): Self = StObject.set(x, "ignoreLeaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrep(value: js.Any): Self = this.set("grep", value.asInstanceOf[js.Any])
+    def setIgnoreLeaksUndefined: Self = StObject.set(x, "ignoreLeaks", js.undefined)
     
     @scala.inline
-    def deleteGrep: Self = this.set("grep", js.undefined)
+    def setReporter(value: js.Any): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreLeaks(value: Boolean): Self = this.set("ignoreLeaks", value.asInstanceOf[js.Any])
+    def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
     
     @scala.inline
-    def deleteIgnoreLeaks: Self = this.set("ignoreLeaks", js.undefined)
+    def setSlow(value: Double): Self = StObject.set(x, "slow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReporter(value: js.Any): Self = this.set("reporter", value.asInstanceOf[js.Any])
+    def setSlowUndefined: Self = StObject.set(x, "slow", js.undefined)
     
     @scala.inline
-    def deleteReporter: Self = this.set("reporter", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlow(value: Double): Self = this.set("slow", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteSlow: Self = this.set("slow", js.undefined)
+    def setUi(value: String): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setUi(value: String): Self = this.set("ui", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUi: Self = this.set("ui", js.undefined)
+    def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
   }
 }

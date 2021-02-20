@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.reflection
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0
   */
 @js.native
-trait XServiceConstructorDescription extends js.Object {
+trait XServiceConstructorDescription extends StObject {
   
   /**
     * Returns the exceptions that can be raised by the constructor.
@@ -71,39 +72,27 @@ object XServiceConstructorDescription {
   }
   
   @scala.inline
-  implicit class XServiceConstructorDescriptionOps[Self <: XServiceConstructorDescription] (val x: Self) extends AnyVal {
+  implicit class XServiceConstructorDescriptionMutableBuilder[Self <: XServiceConstructorDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExceptions(value: SafeArray[XCompoundTypeDescription]): Self = StObject.set(x, "Exceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetExceptions(value: () => SafeArray[XCompoundTypeDescription]): Self = StObject.set(x, "getExceptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExceptions(value: SafeArray[XCompoundTypeDescription]): Self = this.set("Exceptions", value.asInstanceOf[js.Any])
+    def setGetParameters(value: () => SafeArray[XParameter]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setIsDefaultConstructor(value: () => Boolean): Self = StObject.set(x, "isDefaultConstructor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParameters(value: SafeArray[XParameter]): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetExceptions(value: () => SafeArray[XCompoundTypeDescription]): Self = this.set("getExceptions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetParameters(value: () => SafeArray[XParameter]): Self = this.set("getParameters", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsDefaultConstructor(value: () => Boolean): Self = this.set("isDefaultConstructor", js.Any.fromFunction0(value))
+    def setParameters(value: SafeArray[XParameter]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
   }
 }

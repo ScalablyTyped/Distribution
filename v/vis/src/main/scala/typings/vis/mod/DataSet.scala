@@ -1,5 +1,6 @@
 package typings.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [data] An Array with items.
   * @param [options] DataSet options.
   */
-class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends js.Object {
+class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends StObject {
   def this(data: js.Array[T]) = this()
   /**
     * Creates an instance of DataSet.

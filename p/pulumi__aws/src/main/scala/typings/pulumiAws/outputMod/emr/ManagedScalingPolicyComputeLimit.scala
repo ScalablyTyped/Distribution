@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.emr
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManagedScalingPolicyComputeLimit extends js.Object {
+trait ManagedScalingPolicyComputeLimit extends StObject {
   
   /**
     * The upper boundary of EC2 units. It is measured through VCPU cores or instances for instance groups and measured through units for instance fleets. Managed scaling activities are not allowed beyond this boundary. The limit only applies to the core and task nodes. The master node cannot be scaled after initial configuration.
@@ -41,39 +42,27 @@ object ManagedScalingPolicyComputeLimit {
   }
   
   @scala.inline
-  implicit class ManagedScalingPolicyComputeLimitOps[Self <: ManagedScalingPolicyComputeLimit] (val x: Self) extends AnyVal {
+  implicit class ManagedScalingPolicyComputeLimitMutableBuilder[Self <: ManagedScalingPolicyComputeLimit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximumCapacityUnits(value: Double): Self = StObject.set(x, "maximumCapacityUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaximumCoreCapacityUnits(value: Double): Self = StObject.set(x, "maximumCoreCapacityUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaximumCoreCapacityUnitsUndefined: Self = StObject.set(x, "maximumCoreCapacityUnits", js.undefined)
     
     @scala.inline
-    def setMaximumCapacityUnits(value: Double): Self = this.set("maximumCapacityUnits", value.asInstanceOf[js.Any])
+    def setMaximumOndemandCapacityUnits(value: Double): Self = StObject.set(x, "maximumOndemandCapacityUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumCapacityUnits(value: Double): Self = this.set("minimumCapacityUnits", value.asInstanceOf[js.Any])
+    def setMaximumOndemandCapacityUnitsUndefined: Self = StObject.set(x, "maximumOndemandCapacityUnits", js.undefined)
     
     @scala.inline
-    def setUnitType(value: String): Self = this.set("unitType", value.asInstanceOf[js.Any])
+    def setMinimumCapacityUnits(value: Double): Self = StObject.set(x, "minimumCapacityUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumCoreCapacityUnits(value: Double): Self = this.set("maximumCoreCapacityUnits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumCoreCapacityUnits: Self = this.set("maximumCoreCapacityUnits", js.undefined)
-    
-    @scala.inline
-    def setMaximumOndemandCapacityUnits(value: Double): Self = this.set("maximumOndemandCapacityUnits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumOndemandCapacityUnits: Self = this.set("maximumOndemandCapacityUnits", js.undefined)
+    def setUnitType(value: String): Self = StObject.set(x, "unitType", value.asInstanceOf[js.Any])
   }
 }

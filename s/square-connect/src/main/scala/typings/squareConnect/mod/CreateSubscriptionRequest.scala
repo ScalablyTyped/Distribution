@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CreateSubscriptionRequest")
 @js.native
-class CreateSubscriptionRequest () extends js.Object {
+class CreateSubscriptionRequest () extends StObject {
   
   /**
     * The date when the subscription should be canceled, in YYYY-MM-DD format (for example, 2025-02-29).

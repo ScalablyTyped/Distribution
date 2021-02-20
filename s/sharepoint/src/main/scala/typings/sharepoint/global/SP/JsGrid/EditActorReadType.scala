@@ -1,12 +1,13 @@
 package typings.sharepoint.global.SP.JsGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.JsGrid.EditActorReadType")
 @js.native
-object EditActorReadType extends js.Object {
+object EditActorReadType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.sharepoint.SP.JsGrid.EditActorReadType with Double] = js.native

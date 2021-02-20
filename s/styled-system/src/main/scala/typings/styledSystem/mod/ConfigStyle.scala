@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigStyle extends js.Object {
+trait ConfigStyle extends StObject {
   
   /** A fallback scale object for when there isn't one defined in the `theme` object. */
   var defaultScale: js.UndefOr[Scale] = js.native
@@ -40,60 +41,48 @@ object ConfigStyle {
   }
   
   @scala.inline
-  implicit class ConfigStyleOps[Self <: ConfigStyle] (val x: Self) extends AnyVal {
+  implicit class ConfigStyleMutableBuilder[Self <: ConfigStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultScale(value: Scale): Self = StObject.set(x, "defaultScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultScaleUndefined: Self = StObject.set(x, "defaultScale", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDefaultScaleVarargs(value: (Double | String)*): Self = this.set("defaultScale", js.Array(value :_*))
-    
-    @scala.inline
-    def setDefaultScale(value: Scale): Self = this.set("defaultScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultScale: Self = this.set("defaultScale", js.undefined)
-    
-    @scala.inline
-    def setPropertiesVarargs(
-      value: (/* keyof csstype.csstype.Properties<string | 0> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 776 */ js.Any)*
-    ): Self = this.set("properties", js.Array(value :_*))
+    def setDefaultScaleVarargs(value: (Double | String)*): Self = StObject.set(x, "defaultScale", js.Array(value :_*))
     
     @scala.inline
     def setProperties(
       value: js.Array[
           /* keyof csstype.csstype.Properties<string | 0> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 776 */ js.Any
         ]
-    ): Self = this.set("properties", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def setProperty(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 777 */ js.Any): Self = this.set("property", value.asInstanceOf[js.Any])
+    def setPropertiesVarargs(
+      value: (/* keyof csstype.csstype.Properties<string | 0> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 776 */ js.Any)*
+    ): Self = StObject.set(x, "properties", js.Array(value :_*))
     
     @scala.inline
-    def deleteProperty: Self = this.set("property", js.undefined)
+    def setProperty(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 777 */ js.Any): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: String): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setScale(value: String): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransform(value: (/* value */ js.Any, /* scale */ js.UndefOr[Scale]) => _): Self = this.set("transform", js.Any.fromFunction2(value))
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
+    def setTransform(value: (/* value */ js.Any, /* scale */ js.UndefOr[Scale]) => _): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }
 }

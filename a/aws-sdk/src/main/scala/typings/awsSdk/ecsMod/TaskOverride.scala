@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskOverride extends js.Object {
+trait TaskOverride extends StObject {
   
   /**
     * One or more container overrides sent to a task.
@@ -46,60 +47,48 @@ object TaskOverride {
   }
   
   @scala.inline
-  implicit class TaskOverrideOps[Self <: TaskOverride] (val x: Self) extends AnyVal {
+  implicit class TaskOverrideMutableBuilder[Self <: TaskOverride] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerOverrides(value: ContainerOverrides): Self = StObject.set(x, "containerOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerOverridesUndefined: Self = StObject.set(x, "containerOverrides", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerOverridesVarargs(value: ContainerOverride*): Self = StObject.set(x, "containerOverrides", js.Array(value :_*))
     
     @scala.inline
-    def setContainerOverridesVarargs(value: ContainerOverride*): Self = this.set("containerOverrides", js.Array(value :_*))
+    def setCpu(value: String): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerOverrides(value: ContainerOverrides): Self = this.set("containerOverrides", value.asInstanceOf[js.Any])
+    def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
     
     @scala.inline
-    def deleteContainerOverrides: Self = this.set("containerOverrides", js.undefined)
+    def setExecutionRoleArn(value: String): Self = StObject.set(x, "executionRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpu(value: String): Self = this.set("cpu", value.asInstanceOf[js.Any])
+    def setExecutionRoleArnUndefined: Self = StObject.set(x, "executionRoleArn", js.undefined)
     
     @scala.inline
-    def deleteCpu: Self = this.set("cpu", js.undefined)
+    def setInferenceAcceleratorOverrides(value: InferenceAcceleratorOverrides): Self = StObject.set(x, "inferenceAcceleratorOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionRoleArn(value: String): Self = this.set("executionRoleArn", value.asInstanceOf[js.Any])
+    def setInferenceAcceleratorOverridesUndefined: Self = StObject.set(x, "inferenceAcceleratorOverrides", js.undefined)
     
     @scala.inline
-    def deleteExecutionRoleArn: Self = this.set("executionRoleArn", js.undefined)
+    def setInferenceAcceleratorOverridesVarargs(value: InferenceAcceleratorOverride*): Self = StObject.set(x, "inferenceAcceleratorOverrides", js.Array(value :_*))
     
     @scala.inline
-    def setInferenceAcceleratorOverridesVarargs(value: InferenceAcceleratorOverride*): Self = this.set("inferenceAcceleratorOverrides", js.Array(value :_*))
+    def setMemory(value: String): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInferenceAcceleratorOverrides(value: InferenceAcceleratorOverrides): Self = this.set("inferenceAcceleratorOverrides", value.asInstanceOf[js.Any])
+    def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
     
     @scala.inline
-    def deleteInferenceAcceleratorOverrides: Self = this.set("inferenceAcceleratorOverrides", js.undefined)
+    def setTaskRoleArn(value: String): Self = StObject.set(x, "taskRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemory(value: String): Self = this.set("memory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemory: Self = this.set("memory", js.undefined)
-    
-    @scala.inline
-    def setTaskRoleArn(value: String): Self = this.set("taskRoleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskRoleArn: Self = this.set("taskRoleArn", js.undefined)
+    def setTaskRoleArnUndefined: Self = StObject.set(x, "taskRoleArn", js.undefined)
   }
 }

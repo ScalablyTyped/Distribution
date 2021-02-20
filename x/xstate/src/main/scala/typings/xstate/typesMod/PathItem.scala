@@ -2,12 +2,13 @@ package typings.xstate.typesMod
 
 import typings.xstate.anon.ContextTContext
 import typings.xstate.stateMod.State
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PathItem[TContext, TEvent /* <: EventObject */] extends js.Object {
+trait PathItem[TContext, TEvent /* <: EventObject */] extends StObject {
   
   var path: js.Array[Segment[TContext, TEvent]] = js.native
   
@@ -27,33 +28,21 @@ object PathItem {
   }
   
   @scala.inline
-  implicit class PathItemOps[Self <: PathItem[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (PathItem[TContext, TEvent])) extends AnyVal {
+  implicit class PathItemMutableBuilder[Self <: PathItem[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (PathItem[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPath(value: js.Array[Segment[TContext, TEvent]]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPathVarargs(value: (Segment[TContext, TEvent])*): Self = StObject.set(x, "path", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setState(value: State[TContext, TEvent, _, ContextTContext[TContext]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathVarargs(value: (Segment[TContext, TEvent])*): Self = this.set("path", js.Array(value :_*))
+    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: js.Array[Segment[TContext, TEvent]]): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: State[TContext, TEvent, _, ContextTContext[TContext]]): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

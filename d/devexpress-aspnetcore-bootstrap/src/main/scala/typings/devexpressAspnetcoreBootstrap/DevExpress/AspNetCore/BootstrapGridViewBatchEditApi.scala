@@ -1,11 +1,12 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapGridViewBatchEditApi extends js.Object {
+trait BootstrapGridViewBatchEditApi extends StObject {
   
   def addNewRow(): Unit = js.native
   
@@ -48,7 +49,7 @@ trait BootstrapGridViewBatchEditApi extends js.Object {
   def resetChanges(visibleIndex: Double): Unit = js.native
   def resetChanges(visibleIndex: Double, columnIndex: Double): Unit = js.native
   
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def setCellValue(visibleIndex: Double, columnFieldNameOrId: String, value: js.Any): Unit = js.native
   def setCellValue(
     visibleIndex: Double,

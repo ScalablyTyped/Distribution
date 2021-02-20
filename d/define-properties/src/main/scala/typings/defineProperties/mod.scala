@@ -3,13 +3,12 @@ package typings.defineProperties
 import typings.std.Partial
 import typings.std.Record
 import typings.std.ThisType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("define-properties", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Defines new properties in `map` as non-enumerable if they don't already
@@ -19,7 +18,11 @@ object mod extends js.Object {
     * @param map The map of newly defined properties.
     * @param predicates The optional predicates map, return `true` to override existing properties on `object`.
     */
+  @JSImport("define-properties", JSImport.Namespace)
+  @js.native
   def apply[M /* <: js.Object */](`object`: js.Object, map: M with ThisType[_]): Unit = js.native
+  @JSImport("define-properties", JSImport.Namespace)
+  @js.native
   def apply[M /* <: js.Object */](
     `object`: js.Object,
     map: M with ThisType[_],
@@ -29,5 +32,7 @@ object mod extends js.Object {
   /**
     * Whether the current environment correctly supports property descriptors.
     */
+  @JSImport("define-properties", "supportsDescriptors")
+  @js.native
   val supportsDescriptors: Boolean = js.native
 }

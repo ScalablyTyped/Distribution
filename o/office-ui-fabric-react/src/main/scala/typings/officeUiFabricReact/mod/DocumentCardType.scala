@@ -1,12 +1,13 @@
 package typings.officeUiFabricReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "DocumentCardType")
 @js.native
-object DocumentCardType extends js.Object {
+object DocumentCardType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.documentCardTypesMod.DocumentCardType with Double] = js.native

@@ -1,6 +1,7 @@
 package typings.winrt.global.Windows.Storage
 
 import typings.winrt.Windows.Foundation.IAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class StorageFolder ()
   extends typings.winrt.Windows.Storage.StorageFolder
 /* static members */
-@JSGlobal("Windows.Storage.StorageFolder")
-@js.native
-object StorageFolder extends js.Object {
+object StorageFolder {
   
+  @JSGlobal("Windows.Storage.StorageFolder.getFolderFromPathAsync")
+  @js.native
   def getFolderFromPathAsync(path: String): IAsyncOperation[typings.winrt.Windows.Storage.StorageFolder] = js.native
 }

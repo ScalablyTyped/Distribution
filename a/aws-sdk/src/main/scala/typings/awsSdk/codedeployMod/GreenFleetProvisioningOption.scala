@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GreenFleetProvisioningOption extends js.Object {
+trait GreenFleetProvisioningOption extends StObject {
   
   /**
     * The method used to add instances to a replacement environment.    DISCOVER_EXISTING: Use instances that already exist or will be created manually.    COPY_AUTO_SCALING_GROUP: Use settings from a specified Auto Scaling group to define and create instances in a new Auto Scaling group.  
@@ -21,24 +22,12 @@ object GreenFleetProvisioningOption {
   }
   
   @scala.inline
-  implicit class GreenFleetProvisioningOptionOps[Self <: GreenFleetProvisioningOption] (val x: Self) extends AnyVal {
+  implicit class GreenFleetProvisioningOptionMutableBuilder[Self <: GreenFleetProvisioningOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: GreenFleetProvisioningAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAction(value: GreenFleetProvisioningAction): Self = this.set("action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
   }
 }

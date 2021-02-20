@@ -1,11 +1,12 @@
 package typings.antdMobileRn.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlignItemsBackgroundColor extends js.Object {
+trait AlignItemsBackgroundColor extends StObject {
   
   var alignItems: String = js.native
   
@@ -32,33 +33,21 @@ object AlignItemsBackgroundColor {
   }
   
   @scala.inline
-  implicit class AlignItemsBackgroundColorOps[Self <: AlignItemsBackgroundColor] (val x: Self) extends AnyVal {
+  implicit class AlignItemsBackgroundColorMutableBuilder[Self <: AlignItemsBackgroundColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignItems(value: String): Self = this.set("alignItems", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFlexDirection(value: String): Self = this.set("flexDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverflow(value: String): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    def setOverflow(value: String): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
   }
 }

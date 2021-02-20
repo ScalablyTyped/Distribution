@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListActionExecutionsOutput extends js.Object {
+trait ListActionExecutionsOutput extends StObject {
   
   /**
     * The details for a list of recent executions, such as action execution ID.
@@ -26,33 +27,21 @@ object ListActionExecutionsOutput {
   }
   
   @scala.inline
-  implicit class ListActionExecutionsOutputOps[Self <: ListActionExecutionsOutput] (val x: Self) extends AnyVal {
+  implicit class ListActionExecutionsOutputMutableBuilder[Self <: ListActionExecutionsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionExecutionDetails(value: ActionExecutionDetailList): Self = StObject.set(x, "actionExecutionDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionExecutionDetailsUndefined: Self = StObject.set(x, "actionExecutionDetails", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionExecutionDetailsVarargs(value: ActionExecutionDetail*): Self = StObject.set(x, "actionExecutionDetails", js.Array(value :_*))
     
     @scala.inline
-    def setActionExecutionDetailsVarargs(value: ActionExecutionDetail*): Self = this.set("actionExecutionDetails", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionExecutionDetails(value: ActionExecutionDetailList): Self = this.set("actionExecutionDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActionExecutionDetails: Self = this.set("actionExecutionDetails", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

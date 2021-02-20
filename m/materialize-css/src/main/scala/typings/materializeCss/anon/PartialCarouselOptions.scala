@@ -1,13 +1,15 @@
 package typings.materializeCss.anon
 
+import typings.materializeCss.M.Carousel
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.CarouselOptions> */
 @js.native
-trait PartialCarouselOptions extends js.Object {
+trait PartialCarouselOptions extends StObject {
   
   var dist: js.UndefOr[Double] = js.native
   
@@ -22,7 +24,7 @@ trait PartialCarouselOptions extends js.Object {
   var numVisible: js.UndefOr[Double] = js.native
   
   var onCycleTo: js.UndefOr[
-    js.ThisFunction2[/* this */ this.type, /* current */ Element, /* dragged */ Boolean, Unit]
+    js.ThisFunction2[/* this */ Carousel, /* current */ Element, /* dragged */ Boolean, Unit]
   ] = js.native
   
   var padding: js.UndefOr[Double] = js.native
@@ -38,74 +40,60 @@ object PartialCarouselOptions {
   }
   
   @scala.inline
-  implicit class PartialCarouselOptionsOps[Self <: PartialCarouselOptions] (val x: Self) extends AnyVal {
+  implicit class PartialCarouselOptionsMutableBuilder[Self <: PartialCarouselOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDist(value: Double): Self = StObject.set(x, "dist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistUndefined: Self = StObject.set(x, "dist", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDist(value: Double): Self = this.set("dist", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDist: Self = this.set("dist", js.undefined)
+    def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setIndicators(value: Boolean): Self = StObject.set(x, "indicators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullWidth(value: Boolean): Self = this.set("fullWidth", value.asInstanceOf[js.Any])
+    def setIndicatorsUndefined: Self = StObject.set(x, "indicators", js.undefined)
     
     @scala.inline
-    def deleteFullWidth: Self = this.set("fullWidth", js.undefined)
+    def setNoWrap(value: Boolean): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicators(value: Boolean): Self = this.set("indicators", value.asInstanceOf[js.Any])
+    def setNoWrapUndefined: Self = StObject.set(x, "noWrap", js.undefined)
     
     @scala.inline
-    def deleteIndicators: Self = this.set("indicators", js.undefined)
+    def setNumVisible(value: Double): Self = StObject.set(x, "numVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoWrap(value: Boolean): Self = this.set("noWrap", value.asInstanceOf[js.Any])
+    def setNumVisibleUndefined: Self = StObject.set(x, "numVisible", js.undefined)
     
     @scala.inline
-    def deleteNoWrap: Self = this.set("noWrap", js.undefined)
+    def setOnCycleTo(value: js.ThisFunction2[/* this */ Carousel, /* current */ Element, /* dragged */ Boolean, Unit]): Self = StObject.set(x, "onCycleTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumVisible(value: Double): Self = this.set("numVisible", value.asInstanceOf[js.Any])
+    def setOnCycleToUndefined: Self = StObject.set(x, "onCycleTo", js.undefined)
     
     @scala.inline
-    def deleteNumVisible: Self = this.set("numVisible", js.undefined)
+    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCycleTo(
-      value: js.ThisFunction2[PartialCarouselOptions, /* current */ Element, /* dragged */ Boolean, Unit]
-    ): Self = this.set("onCycleTo", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteOnCycleTo: Self = this.set("onCycleTo", js.undefined)
+    def setShift(value: Double): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
-    
-    @scala.inline
-    def setShift(value: Double): Self = this.set("shift", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShift: Self = this.set("shift", js.undefined)
+    def setShiftUndefined: Self = StObject.set(x, "shift", js.undefined)
   }
 }

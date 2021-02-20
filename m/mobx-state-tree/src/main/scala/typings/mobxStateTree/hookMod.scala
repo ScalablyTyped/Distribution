@@ -1,50 +1,44 @@
 package typings.mobxStateTree
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobx-state-tree/dist/core/node/Hook", JSImport.Namespace)
-@js.native
-object hookMod extends js.Object {
+object hookMod {
   
   @js.native
-  sealed trait Hook extends js.Object
+  sealed trait Hook extends StObject
+  @JSImport("mobx-state-tree/dist/core/node/Hook", "Hook")
   @js.native
-  object Hook extends js.Object {
+  object Hook extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Hook with String] = js.native
     
     @js.native
     sealed trait afterAttach extends Hook
-    /* "afterAttach" */ @js.native
-    object afterAttach extends TopLevel[afterAttach with String]
+    /* "afterAttach" */ val afterAttach: typings.mobxStateTree.hookMod.Hook.afterAttach with String = js.native
     
     @js.native
     sealed trait afterCreate extends Hook
-    /* "afterCreate" */ @js.native
-    object afterCreate extends TopLevel[afterCreate with String]
+    /* "afterCreate" */ val afterCreate: typings.mobxStateTree.hookMod.Hook.afterCreate with String = js.native
     
     @js.native
     sealed trait afterCreationFinalization extends Hook
-    /* "afterCreationFinalization" */ @js.native
-    object afterCreationFinalization extends TopLevel[afterCreationFinalization with String]
+    /* "afterCreationFinalization" */ val afterCreationFinalization: typings.mobxStateTree.hookMod.Hook.afterCreationFinalization with String = js.native
     
     @js.native
     sealed trait beforeDestroy extends Hook
-    /* "beforeDestroy" */ @js.native
-    object beforeDestroy extends TopLevel[beforeDestroy with String]
+    /* "beforeDestroy" */ val beforeDestroy: typings.mobxStateTree.hookMod.Hook.beforeDestroy with String = js.native
     
     @js.native
     sealed trait beforeDetach extends Hook
-    /* "beforeDetach" */ @js.native
-    object beforeDetach extends TopLevel[beforeDetach with String]
+    /* "beforeDetach" */ val beforeDetach: typings.mobxStateTree.hookMod.Hook.beforeDetach with String = js.native
   }
   
   @js.native
-  trait IHooks extends js.Object
+  trait IHooks extends StObject
   
   type IHooksGetter[T] = js.Function1[/* self */ T, IHooks]
 }

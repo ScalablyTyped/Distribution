@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BlockDeviceMapping extends js.Object {
+trait BlockDeviceMapping extends StObject {
   
   /**
     * The device name exposed to the EC2 instance (for example, /dev/sdh or xvdh). For more information, see Device Naming on Linux Instances in the Amazon EC2 User Guide for Linux Instances.
@@ -36,39 +37,27 @@ object BlockDeviceMapping {
   }
   
   @scala.inline
-  implicit class BlockDeviceMappingOps[Self <: BlockDeviceMapping] (val x: Self) extends AnyVal {
+  implicit class BlockDeviceMappingMutableBuilder[Self <: BlockDeviceMapping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceName(value: XmlStringMaxLen255): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEbs(value: Ebs): Self = StObject.set(x, "Ebs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEbsUndefined: Self = StObject.set(x, "Ebs", js.undefined)
     
     @scala.inline
-    def setDeviceName(value: XmlStringMaxLen255): Self = this.set("DeviceName", value.asInstanceOf[js.Any])
+    def setNoDevice(value: NoDevice): Self = StObject.set(x, "NoDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEbs(value: Ebs): Self = this.set("Ebs", value.asInstanceOf[js.Any])
+    def setNoDeviceUndefined: Self = StObject.set(x, "NoDevice", js.undefined)
     
     @scala.inline
-    def deleteEbs: Self = this.set("Ebs", js.undefined)
+    def setVirtualName(value: XmlStringMaxLen255): Self = StObject.set(x, "VirtualName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoDevice(value: NoDevice): Self = this.set("NoDevice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoDevice: Self = this.set("NoDevice", js.undefined)
-    
-    @scala.inline
-    def setVirtualName(value: XmlStringMaxLen255): Self = this.set("VirtualName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualName: Self = this.set("VirtualName", js.undefined)
+    def setVirtualNameUndefined: Self = StObject.set(x, "VirtualName", js.undefined)
   }
 }

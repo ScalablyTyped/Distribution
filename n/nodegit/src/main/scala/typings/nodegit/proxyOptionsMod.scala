@@ -1,14 +1,14 @@
 package typings.nodegit
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/proxy-options", JSImport.Namespace)
-@js.native
-object proxyOptionsMod extends js.Object {
+object proxyOptionsMod {
   
+  @JSImport("nodegit/proxy-options", "ProxyOptions")
   @js.native
   class ProxyOptions ()
     extends /* key */ StringDictionary[js.Any] {

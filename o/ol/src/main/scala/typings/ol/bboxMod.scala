@@ -1,14 +1,14 @@
 package typings.ol
 
 import typings.ol.extentMod.Extent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/format/filter/Bbox", JSImport.Namespace)
-@js.native
-object bboxMod extends js.Object {
+object bboxMod {
   
+  @JSImport("ol/format/filter/Bbox", JSImport.Default)
   @js.native
   class default protected ()
     extends typings.ol.filterFilterMod.default {

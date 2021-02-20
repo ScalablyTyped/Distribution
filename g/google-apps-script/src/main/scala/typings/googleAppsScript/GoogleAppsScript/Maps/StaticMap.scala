@@ -3,6 +3,7 @@ package typings.googleAppsScript.GoogleAppsScript.Maps
 import typings.googleAppsScript.GoogleAppsScript.Base.Blob
 import typings.googleAppsScript.GoogleAppsScript.Byte
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,7 +44,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Google Static Maps API
   */
 @js.native
-trait StaticMap extends js.Object {
+trait StaticMap extends StObject {
   
   def addAddress(address: String): StaticMap = js.native
   

@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CopyClusterSnapshotMessage extends js.Object {
+trait CopyClusterSnapshotMessage extends StObject {
   
   /**
     * The number of days that a manual snapshot is retained. If the value is -1, the manual snapshot is retained indefinitely.  The value must be either -1 or an integer between 1 and 3,653. The default value is -1.
@@ -36,36 +37,24 @@ object CopyClusterSnapshotMessage {
   }
   
   @scala.inline
-  implicit class CopyClusterSnapshotMessageOps[Self <: CopyClusterSnapshotMessage] (val x: Self) extends AnyVal {
+  implicit class CopyClusterSnapshotMessageMutableBuilder[Self <: CopyClusterSnapshotMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setManualSnapshotRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "ManualSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManualSnapshotRetentionPeriodUndefined: Self = StObject.set(x, "ManualSnapshotRetentionPeriod", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceSnapshotClusterIdentifier(value: String): Self = StObject.set(x, "SourceSnapshotClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceSnapshotIdentifier(value: String): Self = this.set("SourceSnapshotIdentifier", value.asInstanceOf[js.Any])
+    def setSourceSnapshotClusterIdentifierUndefined: Self = StObject.set(x, "SourceSnapshotClusterIdentifier", js.undefined)
     
     @scala.inline
-    def setTargetSnapshotIdentifier(value: String): Self = this.set("TargetSnapshotIdentifier", value.asInstanceOf[js.Any])
+    def setSourceSnapshotIdentifier(value: String): Self = StObject.set(x, "SourceSnapshotIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualSnapshotRetentionPeriod(value: IntegerOptional): Self = this.set("ManualSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManualSnapshotRetentionPeriod: Self = this.set("ManualSnapshotRetentionPeriod", js.undefined)
-    
-    @scala.inline
-    def setSourceSnapshotClusterIdentifier(value: String): Self = this.set("SourceSnapshotClusterIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceSnapshotClusterIdentifier: Self = this.set("SourceSnapshotClusterIdentifier", js.undefined)
+    def setTargetSnapshotIdentifier(value: String): Self = StObject.set(x, "TargetSnapshotIdentifier", value.asInstanceOf[js.Any])
   }
 }

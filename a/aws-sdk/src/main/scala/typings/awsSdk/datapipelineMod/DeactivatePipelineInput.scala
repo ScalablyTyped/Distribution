@@ -1,11 +1,12 @@
 package typings.awsSdk.datapipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeactivatePipelineInput extends js.Object {
+trait DeactivatePipelineInput extends StObject {
   
   /**
     * Indicates whether to cancel any running objects. The default is true, which sets the state of any running objects to CANCELED. If this value is false, the pipeline is deactivated after all running objects finish.
@@ -26,27 +27,15 @@ object DeactivatePipelineInput {
   }
   
   @scala.inline
-  implicit class DeactivatePipelineInputOps[Self <: DeactivatePipelineInput] (val x: Self) extends AnyVal {
+  implicit class DeactivatePipelineInputMutableBuilder[Self <: DeactivatePipelineInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelActive(value: cancelActive): Self = StObject.set(x, "cancelActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelActiveUndefined: Self = StObject.set(x, "cancelActive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPipelineId(value: id): Self = this.set("pipelineId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCancelActive(value: cancelActive): Self = this.set("cancelActive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCancelActive: Self = this.set("cancelActive", js.undefined)
+    def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
   }
 }

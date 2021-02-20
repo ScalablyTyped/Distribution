@@ -4,14 +4,14 @@ import typings.babylonjs.iphysicsengineMod.IPhysicsEnginePlugin
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.physicsImpostorMod.PhysicsImpostor
 import typings.babylonjs.physicsJointMod.IMotorEnabledJoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Physics/Plugins/ammoJSPlugin", JSImport.Namespace)
-@js.native
-object ammoJSPluginMod extends js.Object {
+object ammoJSPluginMod {
   
+  @JSImport("babylonjs/Physics/Plugins/ammoJSPlugin", "AmmoJSPlugin")
   @js.native
   /**
     * Initializes the ammoJS plugin
@@ -334,13 +334,18 @@ object ammoJSPluginMod extends js.Object {
     def setMotor(joint: IMotorEnabledJoint, speed: js.UndefOr[scala.Nothing], maxForce: Double, motorIndex: Double): Unit = js.native
   }
   /* static members */
-  @js.native
-  object AmmoJSPlugin extends js.Object {
+  object AmmoJSPlugin {
     
+    @JSImport("babylonjs/Physics/Plugins/ammoJSPlugin", "AmmoJSPlugin.DISABLE_COLLISION_FLAG")
+    @js.native
     val DISABLE_COLLISION_FLAG: js.Any = js.native
     
+    @JSImport("babylonjs/Physics/Plugins/ammoJSPlugin", "AmmoJSPlugin.DISABLE_DEACTIVATION_FLAG")
+    @js.native
     val DISABLE_DEACTIVATION_FLAG: js.Any = js.native
     
+    @JSImport("babylonjs/Physics/Plugins/ammoJSPlugin", "AmmoJSPlugin.KINEMATIC_FLAG")
+    @js.native
     val KINEMATIC_FLAG: js.Any = js.native
   }
 }

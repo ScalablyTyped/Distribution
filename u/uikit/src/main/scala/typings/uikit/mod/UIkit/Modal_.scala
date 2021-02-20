@@ -2,12 +2,13 @@ package typings.uikit.mod.UIkit
 
 import typings.uikit.anon.Cancel
 import typings.uikit.mod.UIkitElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Modal_ extends js.Object {
+trait Modal_ extends StObject {
   
   def apply(element: UIkitElement): UIkitModalElement = js.native
   def apply(element: UIkitElement, options: UIkitModalOptions): UIkitModalElement = js.native

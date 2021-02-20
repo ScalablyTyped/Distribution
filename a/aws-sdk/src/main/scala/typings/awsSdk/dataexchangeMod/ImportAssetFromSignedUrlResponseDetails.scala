@@ -1,11 +1,12 @@
 package typings.awsSdk.dataexchangeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImportAssetFromSignedUrlResponseDetails extends js.Object {
+trait ImportAssetFromSignedUrlResponseDetails extends StObject {
   
   /**
     * The name for the asset associated with this import response.
@@ -46,45 +47,33 @@ object ImportAssetFromSignedUrlResponseDetails {
   }
   
   @scala.inline
-  implicit class ImportAssetFromSignedUrlResponseDetailsOps[Self <: ImportAssetFromSignedUrlResponseDetails] (val x: Self) extends AnyVal {
+  implicit class ImportAssetFromSignedUrlResponseDetailsMutableBuilder[Self <: ImportAssetFromSignedUrlResponseDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetName(value: AssetName): Self = StObject.set(x, "AssetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSetId(value: Id): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMd5Hash(value: stringMin24Max24PatternAZaZ094AZaZ092AZaZ093): Self = StObject.set(x, "Md5Hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetName(value: AssetName): Self = this.set("AssetName", value.asInstanceOf[js.Any])
+    def setMd5HashUndefined: Self = StObject.set(x, "Md5Hash", js.undefined)
     
     @scala.inline
-    def setDataSetId(value: Id): Self = this.set("DataSetId", value.asInstanceOf[js.Any])
+    def setRevisionId(value: Id): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisionId(value: Id): Self = this.set("RevisionId", value.asInstanceOf[js.Any])
+    def setSignedUrl(value: string): Self = StObject.set(x, "SignedUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMd5Hash(value: stringMin24Max24PatternAZaZ094AZaZ092AZaZ093): Self = this.set("Md5Hash", value.asInstanceOf[js.Any])
+    def setSignedUrlExpiresAt(value: Timestamp): Self = StObject.set(x, "SignedUrlExpiresAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMd5Hash: Self = this.set("Md5Hash", js.undefined)
+    def setSignedUrlExpiresAtUndefined: Self = StObject.set(x, "SignedUrlExpiresAt", js.undefined)
     
     @scala.inline
-    def setSignedUrl(value: string): Self = this.set("SignedUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignedUrl: Self = this.set("SignedUrl", js.undefined)
-    
-    @scala.inline
-    def setSignedUrlExpiresAt(value: Timestamp): Self = this.set("SignedUrlExpiresAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignedUrlExpiresAt: Self = this.set("SignedUrlExpiresAt", js.undefined)
+    def setSignedUrlUndefined: Self = StObject.set(x, "SignedUrl", js.undefined)
   }
 }

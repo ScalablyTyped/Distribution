@@ -1,11 +1,12 @@
 package typings.awsSdk.lexmodelbuildingserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuiltinSlotTypeMetadata extends js.Object {
+trait BuiltinSlotTypeMetadata extends StObject {
   
   /**
     * A unique identifier for the built-in slot type. To find the signature for a slot type, see Slot Type Reference in the Alexa Skills Kit.
@@ -26,33 +27,21 @@ object BuiltinSlotTypeMetadata {
   }
   
   @scala.inline
-  implicit class BuiltinSlotTypeMetadataOps[Self <: BuiltinSlotTypeMetadata] (val x: Self) extends AnyVal {
+  implicit class BuiltinSlotTypeMetadataMutableBuilder[Self <: BuiltinSlotTypeMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSignature(value: BuiltinSlotTypeSignature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSupportedLocales(value: LocaleList): Self = StObject.set(x, "supportedLocales", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignature(value: BuiltinSlotTypeSignature): Self = this.set("signature", value.asInstanceOf[js.Any])
+    def setSupportedLocalesUndefined: Self = StObject.set(x, "supportedLocales", js.undefined)
     
     @scala.inline
-    def deleteSignature: Self = this.set("signature", js.undefined)
-    
-    @scala.inline
-    def setSupportedLocalesVarargs(value: Locale*): Self = this.set("supportedLocales", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportedLocales(value: LocaleList): Self = this.set("supportedLocales", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedLocales: Self = this.set("supportedLocales", js.undefined)
+    def setSupportedLocalesVarargs(value: Locale*): Self = StObject.set(x, "supportedLocales", js.Array(value :_*))
   }
 }

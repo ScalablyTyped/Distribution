@@ -1,11 +1,12 @@
 package typings.moment.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MomentBuiltinFormat extends js.Object {
+trait MomentBuiltinFormat extends StObject {
   
   var __momentBuiltinFormatBrand: js.Any = js.native
 }
@@ -18,21 +19,9 @@ object MomentBuiltinFormat {
   }
   
   @scala.inline
-  implicit class MomentBuiltinFormatOps[Self <: MomentBuiltinFormat] (val x: Self) extends AnyVal {
+  implicit class MomentBuiltinFormatMutableBuilder[Self <: MomentBuiltinFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set__momentBuiltinFormatBrand(value: js.Any): Self = this.set("__momentBuiltinFormatBrand", value.asInstanceOf[js.Any])
+    def set__momentBuiltinFormatBrand(value: js.Any): Self = StObject.set(x, "__momentBuiltinFormatBrand", value.asInstanceOf[js.Any])
   }
 }

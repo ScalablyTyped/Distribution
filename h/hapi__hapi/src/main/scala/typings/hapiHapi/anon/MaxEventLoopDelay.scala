@@ -1,11 +1,12 @@
 package typings.hapiHapi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaxEventLoopDelay extends js.Object {
+trait MaxEventLoopDelay extends StObject {
   
   /**
     * maximum event loop delay duration in milliseconds over which incoming requests are rejected with an HTTP Server Timeout (503) response.
@@ -33,42 +34,30 @@ object MaxEventLoopDelay {
   }
   
   @scala.inline
-  implicit class MaxEventLoopDelayOps[Self <: MaxEventLoopDelay] (val x: Self) extends AnyVal {
+  implicit class MaxEventLoopDelayMutableBuilder[Self <: MaxEventLoopDelay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxEventLoopDelay(value: Double): Self = StObject.set(x, "maxEventLoopDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxEventLoopDelayUndefined: Self = StObject.set(x, "maxEventLoopDelay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxHeapUsedBytes(value: Double): Self = StObject.set(x, "maxHeapUsedBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxEventLoopDelay(value: Double): Self = this.set("maxEventLoopDelay", value.asInstanceOf[js.Any])
+    def setMaxHeapUsedBytesUndefined: Self = StObject.set(x, "maxHeapUsedBytes", js.undefined)
     
     @scala.inline
-    def deleteMaxEventLoopDelay: Self = this.set("maxEventLoopDelay", js.undefined)
+    def setMaxRssBytes(value: Double): Self = StObject.set(x, "maxRssBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHeapUsedBytes(value: Double): Self = this.set("maxHeapUsedBytes", value.asInstanceOf[js.Any])
+    def setMaxRssBytesUndefined: Self = StObject.set(x, "maxRssBytes", js.undefined)
     
     @scala.inline
-    def deleteMaxHeapUsedBytes: Self = this.set("maxHeapUsedBytes", js.undefined)
+    def setSampleInterval(value: Double): Self = StObject.set(x, "sampleInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRssBytes(value: Double): Self = this.set("maxRssBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxRssBytes: Self = this.set("maxRssBytes", js.undefined)
-    
-    @scala.inline
-    def setSampleInterval(value: Double): Self = this.set("sampleInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampleInterval: Self = this.set("sampleInterval", js.undefined)
+    def setSampleIntervalUndefined: Self = StObject.set(x, "sampleInterval", js.undefined)
   }
 }

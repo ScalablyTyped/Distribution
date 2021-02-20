@@ -1,11 +1,12 @@
 package typings.awsSdk.wafregionalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivatedRule extends js.Object {
+trait ActivatedRule extends StObject {
   
   /**
     * Specifies the action that CloudFront or AWS WAF takes when a web request matches the conditions in the Rule. Valid values for Action include the following:    ALLOW: CloudFront responds with the requested object.    BLOCK: CloudFront responds with an HTTP 403 (Forbidden) status code.    COUNT: AWS WAF increments a counter of requests that match the conditions in the rule and then continues to inspect the web request based on the remaining rules in the web ACL.     ActivatedRule|OverrideAction applies only when updating or adding a RuleGroup to a WebACL. In this case, you do not use ActivatedRule|Action. For all other update requests, ActivatedRule|Action is used instead of ActivatedRule|OverrideAction.
@@ -46,51 +47,39 @@ object ActivatedRule {
   }
   
   @scala.inline
-  implicit class ActivatedRuleOps[Self <: ActivatedRule] (val x: Self) extends AnyVal {
+  implicit class ActivatedRuleMutableBuilder[Self <: ActivatedRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: WafAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedRules(value: ExcludedRules): Self = StObject.set(x, "ExcludedRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: RulePriority): Self = this.set("Priority", value.asInstanceOf[js.Any])
+    def setExcludedRulesUndefined: Self = StObject.set(x, "ExcludedRules", js.undefined)
     
     @scala.inline
-    def setRuleId(value: ResourceId): Self = this.set("RuleId", value.asInstanceOf[js.Any])
+    def setExcludedRulesVarargs(value: ExcludedRule*): Self = StObject.set(x, "ExcludedRules", js.Array(value :_*))
     
     @scala.inline
-    def setAction(value: WafAction): Self = this.set("Action", value.asInstanceOf[js.Any])
+    def setOverrideAction(value: WafOverrideAction): Self = StObject.set(x, "OverrideAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAction: Self = this.set("Action", js.undefined)
+    def setOverrideActionUndefined: Self = StObject.set(x, "OverrideAction", js.undefined)
     
     @scala.inline
-    def setExcludedRulesVarargs(value: ExcludedRule*): Self = this.set("ExcludedRules", js.Array(value :_*))
+    def setPriority(value: RulePriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedRules(value: ExcludedRules): Self = this.set("ExcludedRules", value.asInstanceOf[js.Any])
+    def setRuleId(value: ResourceId): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExcludedRules: Self = this.set("ExcludedRules", js.undefined)
+    def setType(value: WafRuleType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrideAction(value: WafOverrideAction): Self = this.set("OverrideAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverrideAction: Self = this.set("OverrideAction", js.undefined)
-    
-    @scala.inline
-    def setType(value: WafRuleType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

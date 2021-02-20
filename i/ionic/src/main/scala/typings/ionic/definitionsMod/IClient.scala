@@ -1,12 +1,13 @@
 package typings.ionic.definitionsMod
 
 import typings.ionic.anon.Req
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IClient extends js.Object {
+trait IClient extends StObject {
   
   var config: IConfig = js.native
   
@@ -31,30 +32,18 @@ object IClient {
   }
   
   @scala.inline
-  implicit class IClientOps[Self <: IClient] (val x: Self) extends AnyVal {
+  implicit class IClientMutableBuilder[Self <: IClient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDo(value: SuperAgentRequest => js.Promise[APIResponseSuccess]): Self = StObject.set(x, "do", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMake(value: (HttpMethod, String) => js.Promise[Req]): Self = StObject.set(x, "make", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setConfig(value: IConfig): Self = this.set("config", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDo(value: SuperAgentRequest => js.Promise[APIResponseSuccess]): Self = this.set("do", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMake(value: (HttpMethod, String) => js.Promise[Req]): Self = this.set("make", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setPaginate(value: PaginateArgs[js.Any] => IPaginator[js.Any, PaginatorState]): Self = this.set("paginate", js.Any.fromFunction1(value))
+    def setPaginate(value: PaginateArgs[js.Any] => IPaginator[js.Any, PaginatorState]): Self = StObject.set(x, "paginate", js.Any.fromFunction1(value))
   }
 }

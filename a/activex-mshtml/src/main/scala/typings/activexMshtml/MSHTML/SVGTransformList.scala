@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGTransformList extends js.Object {
+trait SVGTransformList extends StObject {
   
   @JSName("MSHTML.SVGTransformList_typekey")
   var MSHTMLDotSVGTransformList_typekey: SVGTransformList = js.native
@@ -52,51 +53,39 @@ object SVGTransformList {
   }
   
   @scala.inline
-  implicit class SVGTransformListOps[Self <: SVGTransformList] (val x: Self) extends AnyVal {
+  implicit class SVGTransformListMutableBuilder[Self <: SVGTransformList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendItem(value: SVGTransform => SVGTransform): Self = StObject.set(x, "appendItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsolidate(value: () => SVGTransform): Self = StObject.set(x, "consolidate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMSHTMLDotSVGTransformList_typekey(value: SVGTransformList): Self = this.set("MSHTML.SVGTransformList_typekey", value.asInstanceOf[js.Any])
+    def setCreateSVGTransformFromMatrix(value: SVGMatrix => SVGTransform): Self = StObject.set(x, "createSVGTransformFromMatrix", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAppendItem(value: SVGTransform => SVGTransform): Self = this.set("appendItem", js.Any.fromFunction1(value))
+    def setGetItem(value: Double => SVGTransform): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setInitialize(value: SVGTransform => SVGTransform): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConsolidate(value: () => SVGTransform): Self = this.set("consolidate", js.Any.fromFunction0(value))
+    def setInsertItemBefore(value: (SVGTransform, Double) => SVGTransform): Self = StObject.set(x, "insertItemBefore", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateSVGTransformFromMatrix(value: SVGMatrix => SVGTransform): Self = this.set("createSVGTransformFromMatrix", js.Any.fromFunction1(value))
+    def setMSHTMLDotSVGTransformList_typekey(value: SVGTransformList): Self = StObject.set(x, "MSHTML.SVGTransformList_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetItem(value: Double => SVGTransform): Self = this.set("getItem", js.Any.fromFunction1(value))
+    def setNumberOfItems(value: Double): Self = StObject.set(x, "numberOfItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialize(value: SVGTransform => SVGTransform): Self = this.set("initialize", js.Any.fromFunction1(value))
+    def setRemoveItem(value: Double => SVGTransform): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsertItemBefore(value: (SVGTransform, Double) => SVGTransform): Self = this.set("insertItemBefore", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setNumberOfItems(value: Double): Self = this.set("numberOfItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveItem(value: Double => SVGTransform): Self = this.set("removeItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReplaceItem(value: (SVGTransform, Double) => SVGTransform): Self = this.set("replaceItem", js.Any.fromFunction2(value))
+    def setReplaceItem(value: (SVGTransform, Double) => SVGTransform): Self = StObject.set(x, "replaceItem", js.Any.fromFunction2(value))
   }
 }

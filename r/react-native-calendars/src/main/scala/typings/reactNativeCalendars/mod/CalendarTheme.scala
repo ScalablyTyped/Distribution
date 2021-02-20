@@ -2,12 +2,13 @@ package typings.reactNativeCalendars.mod
 
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CalendarTheme extends js.Object {
+trait CalendarTheme extends StObject {
   
   var arrowColor: js.UndefOr[String] = js.native
   
@@ -99,228 +100,216 @@ object CalendarTheme {
   }
   
   @scala.inline
-  implicit class CalendarThemeOps[Self <: CalendarTheme] (val x: Self) extends AnyVal {
+  implicit class CalendarThemeMutableBuilder[Self <: CalendarTheme] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrowColor(value: String): Self = StObject.set(x, "arrowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrowColorUndefined: Self = StObject.set(x, "arrowColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArrowStyle(value: ViewStyle): Self = StObject.set(x, "arrowStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowColor(value: String): Self = this.set("arrowColor", value.asInstanceOf[js.Any])
+    def setArrowStyleUndefined: Self = StObject.set(x, "arrowStyle", js.undefined)
     
     @scala.inline
-    def deleteArrowColor: Self = this.set("arrowColor", js.undefined)
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowStyle(value: ViewStyle): Self = this.set("arrowStyle", value.asInstanceOf[js.Any])
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def deleteArrowStyle: Self = this.set("arrowStyle", js.undefined)
+    def setCalendarBackground(value: String): Self = StObject.set(x, "calendarBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setCalendarBackgroundUndefined: Self = StObject.set(x, "calendarBackground", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setDayTextColor(value: String): Self = StObject.set(x, "dayTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendarBackground(value: String): Self = this.set("calendarBackground", value.asInstanceOf[js.Any])
+    def setDayTextColorUndefined: Self = StObject.set(x, "dayTextColor", js.undefined)
     
     @scala.inline
-    def deleteCalendarBackground: Self = this.set("calendarBackground", js.undefined)
+    def setDotColor(value: String): Self = StObject.set(x, "dotColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayTextColor(value: String): Self = this.set("dayTextColor", value.asInstanceOf[js.Any])
+    def setDotColorUndefined: Self = StObject.set(x, "dotColor", js.undefined)
     
     @scala.inline
-    def deleteDayTextColor: Self = this.set("dayTextColor", js.undefined)
+    def setDotStyle(value: ViewStyle): Self = StObject.set(x, "dotStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDotColor(value: String): Self = this.set("dotColor", value.asInstanceOf[js.Any])
+    def setDotStyleUndefined: Self = StObject.set(x, "dotStyle", js.undefined)
     
     @scala.inline
-    def deleteDotColor: Self = this.set("dotColor", js.undefined)
+    def setIndicatorColor(value: String): Self = StObject.set(x, "indicatorColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDotStyle(value: ViewStyle): Self = this.set("dotStyle", value.asInstanceOf[js.Any])
+    def setIndicatorColorUndefined: Self = StObject.set(x, "indicatorColor", js.undefined)
     
     @scala.inline
-    def deleteDotStyle: Self = this.set("dotStyle", js.undefined)
+    def setMonthTextColor(value: String): Self = StObject.set(x, "monthTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicatorColor(value: String): Self = this.set("indicatorColor", value.asInstanceOf[js.Any])
+    def setMonthTextColorUndefined: Self = StObject.set(x, "monthTextColor", js.undefined)
     
     @scala.inline
-    def deleteIndicatorColor: Self = this.set("indicatorColor", js.undefined)
+    def setSelectedDayBackgroundColor(value: String): Self = StObject.set(x, "selectedDayBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthTextColor(value: String): Self = this.set("monthTextColor", value.asInstanceOf[js.Any])
+    def setSelectedDayBackgroundColorUndefined: Self = StObject.set(x, "selectedDayBackgroundColor", js.undefined)
     
     @scala.inline
-    def deleteMonthTextColor: Self = this.set("monthTextColor", js.undefined)
+    def setSelectedDayTextColor(value: String): Self = StObject.set(x, "selectedDayTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedDayBackgroundColor(value: String): Self = this.set("selectedDayBackgroundColor", value.asInstanceOf[js.Any])
+    def setSelectedDayTextColorUndefined: Self = StObject.set(x, "selectedDayTextColor", js.undefined)
     
     @scala.inline
-    def deleteSelectedDayBackgroundColor: Self = this.set("selectedDayBackgroundColor", js.undefined)
+    def setSelectedDotColor(value: String): Self = StObject.set(x, "selectedDotColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedDayTextColor(value: String): Self = this.set("selectedDayTextColor", value.asInstanceOf[js.Any])
+    def setSelectedDotColorUndefined: Self = StObject.set(x, "selectedDotColor", js.undefined)
     
     @scala.inline
-    def deleteSelectedDayTextColor: Self = this.set("selectedDayTextColor", js.undefined)
+    def setStylesheetDotagendaDotlist(value: CalendarThemeIdStyle): Self = StObject.set(x, "stylesheet.agenda.list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedDotColor(value: String): Self = this.set("selectedDotColor", value.asInstanceOf[js.Any])
+    def setStylesheetDotagendaDotlistUndefined: Self = StObject.set(x, "stylesheet.agenda.list", js.undefined)
     
     @scala.inline
-    def deleteSelectedDotColor: Self = this.set("selectedDotColor", js.undefined)
+    def setStylesheetDotagendaDotmain(value: CalendarThemeIdStyle): Self = StObject.set(x, "stylesheet.agenda.main", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylesheetDotagendaDotlist(value: CalendarThemeIdStyle): Self = this.set("stylesheet.agenda.list", value.asInstanceOf[js.Any])
+    def setStylesheetDotagendaDotmainUndefined: Self = StObject.set(x, "stylesheet.agenda.main", js.undefined)
     
     @scala.inline
-    def deleteStylesheetDotagendaDotlist: Self = this.set("stylesheet.agenda.list", js.undefined)
+    def `setStylesheetDotcalendar-listDotmain`(value: CalendarThemeIdStyle): Self = StObject.set(x, "stylesheet.calendar-list.main", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylesheetDotagendaDotmain(value: CalendarThemeIdStyle): Self = this.set("stylesheet.agenda.main", value.asInstanceOf[js.Any])
+    def `setStylesheetDotcalendar-listDotmainUndefined`: Self = StObject.set(x, "stylesheet.calendar-list.main", js.undefined)
     
     @scala.inline
-    def deleteStylesheetDotagendaDotmain: Self = this.set("stylesheet.agenda.main", js.undefined)
+    def setStylesheetDotcalendarDotheader(value: CalendarThemeIdStyle): Self = StObject.set(x, "stylesheet.calendar.header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setStylesheetDotcalendar-listDotmain`(value: CalendarThemeIdStyle): Self = this.set("stylesheet.calendar-list.main", value.asInstanceOf[js.Any])
+    def setStylesheetDotcalendarDotheaderUndefined: Self = StObject.set(x, "stylesheet.calendar.header", js.undefined)
     
     @scala.inline
-    def `deleteStylesheetDotcalendar-listDotmain`: Self = this.set("stylesheet.calendar-list.main", js.undefined)
+    def setStylesheetDotcalendarDotmain(value: CalendarThemeIdStyle): Self = StObject.set(x, "stylesheet.calendar.main", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylesheetDotcalendarDotheader(value: CalendarThemeIdStyle): Self = this.set("stylesheet.calendar.header", value.asInstanceOf[js.Any])
+    def setStylesheetDotcalendarDotmainUndefined: Self = StObject.set(x, "stylesheet.calendar.main", js.undefined)
     
     @scala.inline
-    def deleteStylesheetDotcalendarDotheader: Self = this.set("stylesheet.calendar.header", js.undefined)
+    def setStylesheetDotdayDotbasic(value: CalendarThemeIdStyle): Self = StObject.set(x, "stylesheet.day.basic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylesheetDotcalendarDotmain(value: CalendarThemeIdStyle): Self = this.set("stylesheet.calendar.main", value.asInstanceOf[js.Any])
+    def setStylesheetDotdayDotbasicUndefined: Self = StObject.set(x, "stylesheet.day.basic", js.undefined)
     
     @scala.inline
-    def deleteStylesheetDotcalendarDotmain: Self = this.set("stylesheet.calendar.main", js.undefined)
+    def setStylesheetDotdayDotmultiDot(value: CalendarThemeIdStyle): Self = StObject.set(x, "stylesheet.day.multiDot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylesheetDotdayDotbasic(value: CalendarThemeIdStyle): Self = this.set("stylesheet.day.basic", value.asInstanceOf[js.Any])
+    def setStylesheetDotdayDotmultiDotUndefined: Self = StObject.set(x, "stylesheet.day.multiDot", js.undefined)
     
     @scala.inline
-    def deleteStylesheetDotdayDotbasic: Self = this.set("stylesheet.day.basic", js.undefined)
+    def setStylesheetDotdayDotperiod(value: CalendarThemeIdStyle): Self = StObject.set(x, "stylesheet.day.period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylesheetDotdayDotmultiDot(value: CalendarThemeIdStyle): Self = this.set("stylesheet.day.multiDot", value.asInstanceOf[js.Any])
+    def setStylesheetDotdayDotperiodUndefined: Self = StObject.set(x, "stylesheet.day.period", js.undefined)
     
     @scala.inline
-    def deleteStylesheetDotdayDotmultiDot: Self = this.set("stylesheet.day.multiDot", js.undefined)
+    def setStylesheetDotdayDotsingle(value: CalendarThemeIdStyle): Self = StObject.set(x, "stylesheet.day.single", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylesheetDotdayDotperiod(value: CalendarThemeIdStyle): Self = this.set("stylesheet.day.period", value.asInstanceOf[js.Any])
+    def setStylesheetDotdayDotsingleUndefined: Self = StObject.set(x, "stylesheet.day.single", js.undefined)
     
     @scala.inline
-    def deleteStylesheetDotdayDotperiod: Self = this.set("stylesheet.day.period", js.undefined)
+    def setStylesheetDotdot(value: CalendarThemeIdStyle): Self = StObject.set(x, "stylesheet.dot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylesheetDotdayDotsingle(value: CalendarThemeIdStyle): Self = this.set("stylesheet.day.single", value.asInstanceOf[js.Any])
+    def setStylesheetDotdotUndefined: Self = StObject.set(x, "stylesheet.dot", js.undefined)
     
     @scala.inline
-    def deleteStylesheetDotdayDotsingle: Self = this.set("stylesheet.day.single", js.undefined)
+    def setTextDayFontFamily(value: String): Self = StObject.set(x, "textDayFontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylesheetDotdot(value: CalendarThemeIdStyle): Self = this.set("stylesheet.dot", value.asInstanceOf[js.Any])
+    def setTextDayFontFamilyUndefined: Self = StObject.set(x, "textDayFontFamily", js.undefined)
     
     @scala.inline
-    def deleteStylesheetDotdot: Self = this.set("stylesheet.dot", js.undefined)
+    def setTextDayFontSize(value: Double): Self = StObject.set(x, "textDayFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDayFontFamily(value: String): Self = this.set("textDayFontFamily", value.asInstanceOf[js.Any])
+    def setTextDayFontSizeUndefined: Self = StObject.set(x, "textDayFontSize", js.undefined)
     
     @scala.inline
-    def deleteTextDayFontFamily: Self = this.set("textDayFontFamily", js.undefined)
+    def setTextDayFontWeight(value: String): Self = StObject.set(x, "textDayFontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDayFontSize(value: Double): Self = this.set("textDayFontSize", value.asInstanceOf[js.Any])
+    def setTextDayFontWeightUndefined: Self = StObject.set(x, "textDayFontWeight", js.undefined)
     
     @scala.inline
-    def deleteTextDayFontSize: Self = this.set("textDayFontSize", js.undefined)
+    def setTextDayHeaderFontFamily(value: String): Self = StObject.set(x, "textDayHeaderFontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDayFontWeight(value: String): Self = this.set("textDayFontWeight", value.asInstanceOf[js.Any])
+    def setTextDayHeaderFontFamilyUndefined: Self = StObject.set(x, "textDayHeaderFontFamily", js.undefined)
     
     @scala.inline
-    def deleteTextDayFontWeight: Self = this.set("textDayFontWeight", js.undefined)
+    def setTextDayHeaderFontSize(value: Double): Self = StObject.set(x, "textDayHeaderFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDayHeaderFontFamily(value: String): Self = this.set("textDayHeaderFontFamily", value.asInstanceOf[js.Any])
+    def setTextDayHeaderFontSizeUndefined: Self = StObject.set(x, "textDayHeaderFontSize", js.undefined)
     
     @scala.inline
-    def deleteTextDayHeaderFontFamily: Self = this.set("textDayHeaderFontFamily", js.undefined)
+    def setTextDayHeaderFontWeight(value: String): Self = StObject.set(x, "textDayHeaderFontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDayHeaderFontSize(value: Double): Self = this.set("textDayHeaderFontSize", value.asInstanceOf[js.Any])
+    def setTextDayHeaderFontWeightUndefined: Self = StObject.set(x, "textDayHeaderFontWeight", js.undefined)
     
     @scala.inline
-    def deleteTextDayHeaderFontSize: Self = this.set("textDayHeaderFontSize", js.undefined)
+    def setTextDayStyle(value: TextStyle): Self = StObject.set(x, "textDayStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDayHeaderFontWeight(value: String): Self = this.set("textDayHeaderFontWeight", value.asInstanceOf[js.Any])
+    def setTextDayStyleUndefined: Self = StObject.set(x, "textDayStyle", js.undefined)
     
     @scala.inline
-    def deleteTextDayHeaderFontWeight: Self = this.set("textDayHeaderFontWeight", js.undefined)
+    def setTextDisabledColor(value: String): Self = StObject.set(x, "textDisabledColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDayStyle(value: TextStyle): Self = this.set("textDayStyle", value.asInstanceOf[js.Any])
+    def setTextDisabledColorUndefined: Self = StObject.set(x, "textDisabledColor", js.undefined)
     
     @scala.inline
-    def deleteTextDayStyle: Self = this.set("textDayStyle", js.undefined)
+    def setTextMonthFontFamily(value: String): Self = StObject.set(x, "textMonthFontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDisabledColor(value: String): Self = this.set("textDisabledColor", value.asInstanceOf[js.Any])
+    def setTextMonthFontFamilyUndefined: Self = StObject.set(x, "textMonthFontFamily", js.undefined)
     
     @scala.inline
-    def deleteTextDisabledColor: Self = this.set("textDisabledColor", js.undefined)
+    def setTextMonthFontSize(value: Double): Self = StObject.set(x, "textMonthFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextMonthFontFamily(value: String): Self = this.set("textMonthFontFamily", value.asInstanceOf[js.Any])
+    def setTextMonthFontSizeUndefined: Self = StObject.set(x, "textMonthFontSize", js.undefined)
     
     @scala.inline
-    def deleteTextMonthFontFamily: Self = this.set("textMonthFontFamily", js.undefined)
+    def setTextMonthFontWeight(value: String): Self = StObject.set(x, "textMonthFontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextMonthFontSize(value: Double): Self = this.set("textMonthFontSize", value.asInstanceOf[js.Any])
+    def setTextMonthFontWeightUndefined: Self = StObject.set(x, "textMonthFontWeight", js.undefined)
     
     @scala.inline
-    def deleteTextMonthFontSize: Self = this.set("textMonthFontSize", js.undefined)
+    def setTextSectionTitleColor(value: String): Self = StObject.set(x, "textSectionTitleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextMonthFontWeight(value: String): Self = this.set("textMonthFontWeight", value.asInstanceOf[js.Any])
+    def setTextSectionTitleColorUndefined: Self = StObject.set(x, "textSectionTitleColor", js.undefined)
     
     @scala.inline
-    def deleteTextMonthFontWeight: Self = this.set("textMonthFontWeight", js.undefined)
+    def setTodayTextColor(value: String): Self = StObject.set(x, "todayTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextSectionTitleColor(value: String): Self = this.set("textSectionTitleColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextSectionTitleColor: Self = this.set("textSectionTitleColor", js.undefined)
-    
-    @scala.inline
-    def setTodayTextColor(value: String): Self = this.set("todayTextColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTodayTextColor: Self = this.set("todayTextColor", js.undefined)
+    def setTodayTextColorUndefined: Self = StObject.set(x, "todayTextColor", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,27 +31,15 @@ object AudienceBuilder {
   }
   
   @scala.inline
-  implicit class AudienceBuilderOps[Self <: AudienceBuilder[_], Audience] (val x: Self with AudienceBuilder[Audience]) extends AnyVal {
+  implicit class AudienceBuilderMutableBuilder[Self <: AudienceBuilder[_], Audience] (val x: Self with AudienceBuilder[Audience]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWithAudience(value: UserList => AudienceBuilder[Audience]): Self = StObject.set(x, "withAudience", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWithAudienceId(value: Double => AudienceBuilder[Audience]): Self = StObject.set(x, "withAudienceId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWithAudience(value: UserList => AudienceBuilder[Audience]): Self = this.set("withAudience", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithAudienceId(value: Double => AudienceBuilder[Audience]): Self = this.set("withAudienceId", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithAudienceType(value: AudienceType => AudienceBuilder[Audience]): Self = this.set("withAudienceType", js.Any.fromFunction1(value))
+    def setWithAudienceType(value: AudienceType => AudienceBuilder[Audience]): Self = StObject.set(x, "withAudienceType", js.Any.fromFunction1(value))
   }
 }

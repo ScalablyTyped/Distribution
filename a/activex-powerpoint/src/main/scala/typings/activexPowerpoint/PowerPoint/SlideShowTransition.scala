@@ -1,12 +1,13 @@
 package typings.activexPowerpoint.PowerPoint
 
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SlideShowTransition extends js.Object {
+trait SlideShowTransition extends StObject {
   
   var AdvanceOnClick: MsoTriState = js.native
   
@@ -56,54 +57,42 @@ object SlideShowTransition {
   }
   
   @scala.inline
-  implicit class SlideShowTransitionOps[Self <: SlideShowTransition] (val x: Self) extends AnyVal {
+  implicit class SlideShowTransitionMutableBuilder[Self <: SlideShowTransition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvanceOnClick(value: MsoTriState): Self = StObject.set(x, "AdvanceOnClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvanceOnTime(value: MsoTriState): Self = StObject.set(x, "AdvanceOnTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdvanceTime(value: Double): Self = StObject.set(x, "AdvanceTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvanceOnClick(value: MsoTriState): Self = this.set("AdvanceOnClick", value.asInstanceOf[js.Any])
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvanceOnTime(value: MsoTriState): Self = this.set("AdvanceOnTime", value.asInstanceOf[js.Any])
+    def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvanceTime(value: Double): Self = this.set("AdvanceTime", value.asInstanceOf[js.Any])
+    def setEntryEffect(value: PpEntryEffect): Self = StObject.set(x, "EntryEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setHidden(value: MsoTriState): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    def setLoopSoundUntilNext(value: MsoTriState): Self = StObject.set(x, "LoopSoundUntilNext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryEffect(value: PpEntryEffect): Self = this.set("EntryEffect", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: MsoTriState): Self = this.set("Hidden", value.asInstanceOf[js.Any])
+    def setPowerPointDotSlideShowTransition_typekey(value: SlideShowTransition): Self = StObject.set(x, "PowerPoint.SlideShowTransition_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoopSoundUntilNext(value: MsoTriState): Self = this.set("LoopSoundUntilNext", value.asInstanceOf[js.Any])
+    def setSoundEffect(value: SoundEffect): Self = StObject.set(x, "SoundEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPowerPointDotSlideShowTransition_typekey(value: SlideShowTransition): Self = this.set("PowerPoint.SlideShowTransition_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSoundEffect(value: SoundEffect): Self = this.set("SoundEffect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpeed(value: PpTransitionSpeed): Self = this.set("Speed", value.asInstanceOf[js.Any])
+    def setSpeed(value: PpTransitionSpeed): Self = StObject.set(x, "Speed", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.recurlyRecurlyJs.anon
 
 import typings.recurlyRecurlyJs.elementsMod.CommonElementStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Placeholder extends js.Object {
+trait Placeholder extends StObject {
   
   /**
     * Style to apply to input elements when they contain an invalid value.
@@ -26,30 +27,18 @@ object Placeholder {
   }
   
   @scala.inline
-  implicit class PlaceholderOps[Self <: Placeholder] (val x: Self) extends AnyVal {
+  implicit class PlaceholderMutableBuilder[Self <: Placeholder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvalid(value: CommonElementStyle): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlaceholder(value: Content): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalid(value: CommonElementStyle): Self = this.set("invalid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvalid: Self = this.set("invalid", js.undefined)
-    
-    @scala.inline
-    def setPlaceholder(value: Content): Self = this.set("placeholder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
   }
 }

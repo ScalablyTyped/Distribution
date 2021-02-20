@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudMlV1AutoScaling extends js.Object {
+trait GoogleCloudMlV1AutoScaling extends StObject {
   
   /** The maximum number of nodes to scale this model under load. The actual value will depend on resource quota and availability. */
   var maxNodes: js.UndefOr[Double] = js.native
@@ -37,39 +38,27 @@ object GoogleCloudMlV1AutoScaling {
   }
   
   @scala.inline
-  implicit class GoogleCloudMlV1AutoScalingOps[Self <: GoogleCloudMlV1AutoScaling] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudMlV1AutoScalingMutableBuilder[Self <: GoogleCloudMlV1AutoScaling] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxNodes(value: Double): Self = StObject.set(x, "maxNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxNodesUndefined: Self = StObject.set(x, "maxNodes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetrics(value: js.Array[GoogleCloudMlV1MetricSpec]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxNodes(value: Double): Self = this.set("maxNodes", value.asInstanceOf[js.Any])
+    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
     @scala.inline
-    def deleteMaxNodes: Self = this.set("maxNodes", js.undefined)
+    def setMetricsVarargs(value: GoogleCloudMlV1MetricSpec*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
     @scala.inline
-    def setMetricsVarargs(value: GoogleCloudMlV1MetricSpec*): Self = this.set("metrics", js.Array(value :_*))
+    def setMinNodes(value: Double): Self = StObject.set(x, "minNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetrics(value: js.Array[GoogleCloudMlV1MetricSpec]): Self = this.set("metrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetrics: Self = this.set("metrics", js.undefined)
-    
-    @scala.inline
-    def setMinNodes(value: Double): Self = this.set("minNodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinNodes: Self = this.set("minNodes", js.undefined)
+    def setMinNodesUndefined: Self = StObject.set(x, "minNodes", js.undefined)
   }
 }

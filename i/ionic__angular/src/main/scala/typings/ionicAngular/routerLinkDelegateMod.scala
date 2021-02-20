@@ -8,16 +8,16 @@ import typings.ionicAngular.navControllerMod.NavController
 import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.interfaceMod.RouterDirection
 import typings.std.UIEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/angular/directives/navigation/router-link-delegate", JSImport.Namespace)
-@js.native
-object routerLinkDelegateMod extends js.Object {
+object routerLinkDelegateMod {
   
+  @JSImport("@ionic/angular/directives/navigation/router-link-delegate", "RouterLinkDelegate")
   @js.native
-  class RouterLinkDelegate protected () extends js.Object {
+  class RouterLinkDelegate protected () extends StObject {
     def this(
       locationStrategy: LocationStrategy,
       navCtrl: NavController,

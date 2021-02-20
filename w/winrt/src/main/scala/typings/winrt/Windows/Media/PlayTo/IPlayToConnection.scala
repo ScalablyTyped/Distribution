@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Media.PlayTo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPlayToConnection extends js.Object {
+trait IPlayToConnection extends StObject {
   
   var onerror: js.Any = js.native
   
@@ -24,30 +25,18 @@ object IPlayToConnection {
   }
   
   @scala.inline
-  implicit class IPlayToConnectionOps[Self <: IPlayToConnection] (val x: Self) extends AnyVal {
+  implicit class IPlayToConnectionMutableBuilder[Self <: IPlayToConnection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnerror(value: js.Any): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnstatechanged(value: js.Any): Self = StObject.set(x, "onstatechanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOntransferred(value: js.Any): Self = StObject.set(x, "ontransferred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnerror(value: js.Any): Self = this.set("onerror", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnstatechanged(value: js.Any): Self = this.set("onstatechanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOntransferred(value: js.Any): Self = this.set("ontransferred", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: PlayToConnectionState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: PlayToConnectionState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

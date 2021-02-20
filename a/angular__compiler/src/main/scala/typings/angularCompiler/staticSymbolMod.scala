@@ -1,15 +1,15 @@
 package typings.angularCompiler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/aot/static_symbol", JSImport.Namespace)
-@js.native
-object staticSymbolMod extends js.Object {
+object staticSymbolMod {
   
+  @JSImport("@angular/compiler/src/aot/static_symbol", "StaticSymbol")
   @js.native
-  class StaticSymbol protected () extends js.Object {
+  class StaticSymbol protected () extends StObject {
     def this(filePath: String, name: String, members: js.Array[String]) = this()
     
     def assertNoMembers(): Unit = js.native
@@ -21,8 +21,9 @@ object staticSymbolMod extends js.Object {
     var name: String = js.native
   }
   
+  @JSImport("@angular/compiler/src/aot/static_symbol", "StaticSymbolCache")
   @js.native
-  class StaticSymbolCache () extends js.Object {
+  class StaticSymbolCache () extends StObject {
     
     var cache: js.Any = js.native
     

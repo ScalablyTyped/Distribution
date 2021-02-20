@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListProperties extends js.Object {
+trait ListProperties extends StObject {
   
   /**
     * Describes the properties of the bullets at the associated level. A list has at most nine levels of nesting with nesting level 0 corresponding to the top-most level and nesting level
@@ -22,27 +23,15 @@ object ListProperties {
   }
   
   @scala.inline
-  implicit class ListPropertiesOps[Self <: ListProperties] (val x: Self) extends AnyVal {
+  implicit class ListPropertiesMutableBuilder[Self <: ListProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNestingLevels(value: js.Array[NestingLevel]): Self = StObject.set(x, "nestingLevels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNestingLevelsUndefined: Self = StObject.set(x, "nestingLevels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNestingLevelsVarargs(value: NestingLevel*): Self = this.set("nestingLevels", js.Array(value :_*))
-    
-    @scala.inline
-    def setNestingLevels(value: js.Array[NestingLevel]): Self = this.set("nestingLevels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNestingLevels: Self = this.set("nestingLevels", js.undefined)
+    def setNestingLevelsVarargs(value: NestingLevel*): Self = StObject.set(x, "nestingLevels", js.Array(value :_*))
   }
 }

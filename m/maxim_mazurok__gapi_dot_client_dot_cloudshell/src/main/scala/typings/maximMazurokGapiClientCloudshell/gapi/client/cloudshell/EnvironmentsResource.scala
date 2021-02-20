@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientCloudshell.anon.Fields
 import typings.maximMazurokGapiClientCloudshell.anon.Key
 import typings.maximMazurokGapiClientCloudshell.anon.Name
 import typings.maximMazurokGapiClientCloudshell.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvironmentsResource extends js.Object {
+trait EnvironmentsResource extends StObject {
   
   /**
     * Adds a public SSH key to an environment, allowing clients with the corresponding private key to connect to that environment via SSH. If a key with the same content already exists,

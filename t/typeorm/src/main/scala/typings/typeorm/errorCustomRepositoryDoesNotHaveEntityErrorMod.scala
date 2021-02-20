@@ -1,14 +1,14 @@
 package typings.typeorm
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/error/CustomRepositoryDoesNotHaveEntityError", JSImport.Namespace)
-@js.native
-object errorCustomRepositoryDoesNotHaveEntityErrorMod extends js.Object {
+object errorCustomRepositoryDoesNotHaveEntityErrorMod {
   
+  @JSImport("typeorm/error/CustomRepositoryDoesNotHaveEntityError", "CustomRepositoryDoesNotHaveEntityError")
   @js.native
   class CustomRepositoryDoesNotHaveEntityError protected () extends Error {
     def this(repository: js.Any) = this()

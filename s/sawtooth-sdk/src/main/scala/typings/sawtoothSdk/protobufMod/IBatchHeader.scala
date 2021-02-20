@@ -1,11 +1,12 @@
 package typings.sawtoothSdk.protobufMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBatchHeader extends js.Object {
+trait IBatchHeader extends StObject {
   
   /** BatchHeader signerPublicKey */
   var signerPublicKey: js.UndefOr[String | Null] = js.native
@@ -22,39 +23,27 @@ object IBatchHeader {
   }
   
   @scala.inline
-  implicit class IBatchHeaderOps[Self <: IBatchHeader] (val x: Self) extends AnyVal {
+  implicit class IBatchHeaderMutableBuilder[Self <: IBatchHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSignerPublicKey(value: String): Self = StObject.set(x, "signerPublicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSignerPublicKeyNull: Self = StObject.set(x, "signerPublicKey", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSignerPublicKeyUndefined: Self = StObject.set(x, "signerPublicKey", js.undefined)
     
     @scala.inline
-    def setSignerPublicKey(value: String): Self = this.set("signerPublicKey", value.asInstanceOf[js.Any])
+    def setTransactionIds(value: js.Array[String]): Self = StObject.set(x, "transactionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSignerPublicKey: Self = this.set("signerPublicKey", js.undefined)
+    def setTransactionIdsNull: Self = StObject.set(x, "transactionIds", null)
     
     @scala.inline
-    def setSignerPublicKeyNull: Self = this.set("signerPublicKey", null)
+    def setTransactionIdsUndefined: Self = StObject.set(x, "transactionIds", js.undefined)
     
     @scala.inline
-    def setTransactionIdsVarargs(value: String*): Self = this.set("transactionIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransactionIds(value: js.Array[String]): Self = this.set("transactionIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransactionIds: Self = this.set("transactionIds", js.undefined)
-    
-    @scala.inline
-    def setTransactionIdsNull: Self = this.set("transactionIds", null)
+    def setTransactionIdsVarargs(value: String*): Self = StObject.set(x, "transactionIds", js.Array(value :_*))
   }
 }

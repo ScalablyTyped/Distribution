@@ -1,12 +1,13 @@
 package typings.stylableCore.anon
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutputValue extends js.Object {
+trait OutputValue extends StObject {
   
   var outputValue: String = js.native
   
@@ -23,27 +24,15 @@ object OutputValue {
   }
   
   @scala.inline
-  implicit class OutputValueOps[Self <: OutputValue] (val x: Self) extends AnyVal {
+  implicit class OutputValueMutableBuilder[Self <: OutputValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOutputValue(value: String): Self = StObject.set(x, "outputValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTopLevelType(value: js.Any): Self = StObject.set(x, "topLevelType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOutputValue(value: String): Self = this.set("outputValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopLevelType(value: js.Any): Self = this.set("topLevelType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeError(value: Error): Self = this.set("typeError", value.asInstanceOf[js.Any])
+    def setTypeError(value: Error): Self = StObject.set(x, "typeError", value.asInstanceOf[js.Any])
   }
 }

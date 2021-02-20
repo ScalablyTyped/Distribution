@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLStyleSheet extends js.Object {
+trait HTMLStyleSheet extends StObject {
   
   @JSName("MSHTML.HTMLStyleSheet_typekey")
   var MSHTMLDotHTMLStyleSheet_typekey: HTMLStyleSheet = js.native

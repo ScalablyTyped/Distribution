@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.topicalExploreFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicalExploreFeedResponseTextWithEntities extends js.Object {
+trait TopicalExploreFeedResponseTextWithEntities extends StObject {
   
   var inline_style_ranges: js.Array[TopicalExploreFeedResponseInlineStyleRangesItem] = js.native
   
@@ -20,27 +21,15 @@ object TopicalExploreFeedResponseTextWithEntities {
   }
   
   @scala.inline
-  implicit class TopicalExploreFeedResponseTextWithEntitiesOps[Self <: TopicalExploreFeedResponseTextWithEntities] (val x: Self) extends AnyVal {
+  implicit class TopicalExploreFeedResponseTextWithEntitiesMutableBuilder[Self <: TopicalExploreFeedResponseTextWithEntities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInline_style_ranges(value: js.Array[TopicalExploreFeedResponseInlineStyleRangesItem]): Self = StObject.set(x, "inline_style_ranges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInline_style_rangesVarargs(value: TopicalExploreFeedResponseInlineStyleRangesItem*): Self = StObject.set(x, "inline_style_ranges", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInline_style_rangesVarargs(value: TopicalExploreFeedResponseInlineStyleRangesItem*): Self = this.set("inline_style_ranges", js.Array(value :_*))
-    
-    @scala.inline
-    def setInline_style_ranges(value: js.Array[TopicalExploreFeedResponseInlineStyleRangesItem]): Self = this.set("inline_style_ranges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

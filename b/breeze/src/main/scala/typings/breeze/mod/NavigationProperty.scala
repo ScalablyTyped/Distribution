@@ -1,6 +1,7 @@
 package typings.breeze.mod
 
 import typings.breeze.breeze.NavigationPropertyOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

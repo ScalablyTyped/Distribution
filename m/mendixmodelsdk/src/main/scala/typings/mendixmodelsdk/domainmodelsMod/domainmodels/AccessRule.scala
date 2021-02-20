@@ -11,6 +11,7 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.securityMod.security.AccessRuleContainerBase
 import typings.mendixmodelsdk.securityMod.security.IModuleRole
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,16 +62,20 @@ class AccessRule protected () extends Element[IModel] {
   def xPathConstraint: String = js.native
   def xPathConstraint_=(newValue: String): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AccessRule")
-@js.native
-object AccessRule extends js.Object {
+object AccessRule {
+  
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AccessRule")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new AccessRule instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AccessRule.create")
+  @js.native
   def create(model: IModel): AccessRule = js.native
   
   /**
@@ -78,6 +83,9 @@ object AccessRule extends js.Object {
     * The new AccessRule will be automatically stored in the 'accessRules' property
     * of the parent security.AccessRuleContainerBase element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AccessRule.createInAccessRuleContainerBaseUnderAccessRules")
+  @js.native
   def createInAccessRuleContainerBaseUnderAccessRules(container: AccessRuleContainerBase): AccessRule = js.native
   
   /**
@@ -85,9 +93,22 @@ object AccessRule extends js.Object {
     * The new AccessRule will be automatically stored in the 'accessRules' property
     * of the parent Entity element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AccessRule.createInEntityUnderAccessRules")
+  @js.native
   def createInEntityUnderAccessRules(container: Entity): AccessRule = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AccessRule.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AccessRule.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

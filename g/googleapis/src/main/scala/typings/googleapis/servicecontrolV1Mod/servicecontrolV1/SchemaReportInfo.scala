@@ -1,5 +1,6 @@
 package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains additional info about the report operation.
   */
 @js.native
-trait SchemaReportInfo extends js.Object {
+trait SchemaReportInfo extends StObject {
   
   /**
     * The Operation.operation_id value from the request.
@@ -29,30 +30,18 @@ object SchemaReportInfo {
   }
   
   @scala.inline
-  implicit class SchemaReportInfoOps[Self <: SchemaReportInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaReportInfoMutableBuilder[Self <: SchemaReportInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQuotaInfo(value: SchemaQuotaInfo): Self = StObject.set(x, "quotaInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperationId: Self = this.set("operationId", js.undefined)
-    
-    @scala.inline
-    def setQuotaInfo(value: SchemaQuotaInfo): Self = this.set("quotaInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuotaInfo: Self = this.set("quotaInfo", js.undefined)
+    def setQuotaInfoUndefined: Self = StObject.set(x, "quotaInfo", js.undefined)
   }
 }

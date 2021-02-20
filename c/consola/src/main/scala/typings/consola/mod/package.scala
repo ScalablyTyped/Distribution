@@ -1,10 +1,14 @@
 package typings.consola
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
+  @scala.inline
+  def default: typings.consola.mod.Consola = typings.consola.mod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.consola.mod.Consola]
   
   type BrowserReporterOptions = js.Object
   

@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientDfareporting.anon.QuotaUserReportId
 import typings.maximMazurokGapiClientDfareporting.anon.ReportIdResource
 import typings.maximMazurokGapiClientDfareporting.anon.Scope
 import typings.maximMazurokGapiClientDfareporting.anon.Synchronous
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportsResource extends js.Object {
+trait ReportsResource extends StObject {
   
   var compatibleFields: CompatibleFieldsResource = js.native
   

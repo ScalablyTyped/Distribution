@@ -1,12 +1,13 @@
 package typings.expo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("expo/build/Notifications/ExponentNotifications", JSImport.Namespace)
-@js.native
-object exponentNotificationsMod extends js.Object {
+object exponentNotificationsMod {
   
+  @JSImport("expo/build/Notifications/ExponentNotifications", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

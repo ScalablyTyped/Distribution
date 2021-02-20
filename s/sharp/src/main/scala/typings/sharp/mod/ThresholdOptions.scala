@@ -1,11 +1,12 @@
 package typings.sharp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThresholdOptions extends js.Object {
+trait ThresholdOptions extends StObject {
   
   /** alternative spelling for greyscale. (optional, default true) */
   var grayscale: js.UndefOr[Boolean] = js.native
@@ -22,30 +23,18 @@ object ThresholdOptions {
   }
   
   @scala.inline
-  implicit class ThresholdOptionsOps[Self <: ThresholdOptions] (val x: Self) extends AnyVal {
+  implicit class ThresholdOptionsMutableBuilder[Self <: ThresholdOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGrayscale(value: Boolean): Self = StObject.set(x, "grayscale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGrayscaleUndefined: Self = StObject.set(x, "grayscale", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGreyscale(value: Boolean): Self = StObject.set(x, "greyscale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrayscale(value: Boolean): Self = this.set("grayscale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGrayscale: Self = this.set("grayscale", js.undefined)
-    
-    @scala.inline
-    def setGreyscale(value: Boolean): Self = this.set("greyscale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGreyscale: Self = this.set("greyscale", js.undefined)
+    def setGreyscaleUndefined: Self = StObject.set(x, "greyscale", js.undefined)
   }
 }

@@ -3,14 +3,11 @@ package typings.activexLibreoffice.com_.sun.star.xml
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
-import typings.activexLibreoffice.com_.sun.star.container.XNamed
-import typings.activexLibreoffice.com_.sun.star.document.XFilter
-import typings.activexLibreoffice.com_.sun.star.document.XImporter
 import typings.activexLibreoffice.com_.sun.star.lang.XComponent
-import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XAttributeList
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XDocumentHandler
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XLocator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,10 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait XMLImportFilter
-  extends XImporter
-     with XFilter
-     with XInitialization
-     with XNamed
+  extends typings.activexLibreoffice.com_.sun.star.document.ImportFilter
      with XDocumentHandler
 object XMLImportFilter {
   

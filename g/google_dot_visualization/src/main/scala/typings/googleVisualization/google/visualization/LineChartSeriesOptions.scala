@@ -2,6 +2,7 @@ package typings.googleVisualization.google.visualization
 
 import typings.googleVisualization.googleVisualizationStrings.function
 import typings.googleVisualization.googleVisualizationStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,81 +39,69 @@ object LineChartSeriesOptions {
   }
   
   @scala.inline
-  implicit class LineChartSeriesOptionsOps[Self <: LineChartSeriesOptions] (val x: Self) extends AnyVal {
+  implicit class LineChartSeriesOptionsMutableBuilder[Self <: LineChartSeriesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotations(value: ChartAnnotations): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurveType(value: none | function): Self = StObject.set(x, "curveType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotations(value: ChartAnnotations): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    def setCurveTypeUndefined: Self = StObject.set(x, "curveType", js.undefined)
     
     @scala.inline
-    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    def setLabelInLegend(value: String): Self = StObject.set(x, "labelInLegend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurveType(value: none | function): Self = this.set("curveType", value.asInstanceOf[js.Any])
+    def setLabelInLegendUndefined: Self = StObject.set(x, "labelInLegend", js.undefined)
     
     @scala.inline
-    def deleteCurveType: Self = this.set("curveType", js.undefined)
+    def setLineDashStyle(value: js.Array[Double]): Self = StObject.set(x, "lineDashStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelInLegend(value: String): Self = this.set("labelInLegend", value.asInstanceOf[js.Any])
+    def setLineDashStyleUndefined: Self = StObject.set(x, "lineDashStyle", js.undefined)
     
     @scala.inline
-    def deleteLabelInLegend: Self = this.set("labelInLegend", js.undefined)
+    def setLineDashStyleVarargs(value: Double*): Self = StObject.set(x, "lineDashStyle", js.Array(value :_*))
     
     @scala.inline
-    def setLineDashStyleVarargs(value: Double*): Self = this.set("lineDashStyle", js.Array(value :_*))
+    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineDashStyle(value: js.Array[Double]): Self = this.set("lineDashStyle", value.asInstanceOf[js.Any])
+    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
     @scala.inline
-    def deleteLineDashStyle: Self = this.set("lineDashStyle", js.undefined)
+    def setPointShape(value: ChartPointShape): Self = StObject.set(x, "pointShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    def setPointShapeUndefined: Self = StObject.set(x, "pointShape", js.undefined)
     
     @scala.inline
-    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    def setPointSize(value: Double): Self = StObject.set(x, "pointSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointShape(value: ChartPointShape): Self = this.set("pointShape", value.asInstanceOf[js.Any])
+    def setPointSizeUndefined: Self = StObject.set(x, "pointSize", js.undefined)
     
     @scala.inline
-    def deletePointShape: Self = this.set("pointShape", js.undefined)
+    def setPointsVisible(value: Boolean): Self = StObject.set(x, "pointsVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointSize(value: Double): Self = this.set("pointSize", value.asInstanceOf[js.Any])
+    def setPointsVisibleUndefined: Self = StObject.set(x, "pointsVisible", js.undefined)
     
     @scala.inline
-    def deletePointSize: Self = this.set("pointSize", js.undefined)
+    def setTargetAxisIndex(value: Double): Self = StObject.set(x, "targetAxisIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointsVisible(value: Boolean): Self = this.set("pointsVisible", value.asInstanceOf[js.Any])
+    def setTargetAxisIndexUndefined: Self = StObject.set(x, "targetAxisIndex", js.undefined)
     
     @scala.inline
-    def deletePointsVisible: Self = this.set("pointsVisible", js.undefined)
+    def setVisibleInLegend(value: Boolean): Self = StObject.set(x, "visibleInLegend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetAxisIndex(value: Double): Self = this.set("targetAxisIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetAxisIndex: Self = this.set("targetAxisIndex", js.undefined)
-    
-    @scala.inline
-    def setVisibleInLegend(value: Boolean): Self = this.set("visibleInLegend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibleInLegend: Self = this.set("visibleInLegend", js.undefined)
+    def setVisibleInLegendUndefined: Self = StObject.set(x, "visibleInLegend", js.undefined)
   }
 }

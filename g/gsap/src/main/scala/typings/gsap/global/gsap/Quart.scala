@@ -1,5 +1,6 @@
 package typings.gsap.global.gsap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +9,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Quart ()
   extends typings.gsap.gsap.Ease
-/* static members */
-@JSGlobal("gsap.Quart")
-@js.native
-object Quart extends js.Object {
+object Quart {
   
-  var easeIn: typings.gsap.gsap.Quart = js.native
+  @JSGlobal("gsap.Quart")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var easeInOut: typings.gsap.gsap.Quart = js.native
+  /* static member */
+  @JSGlobal("gsap.Quart.easeIn")
+  @js.native
+  def easeIn: typings.gsap.gsap.Quart = js.native
   
-  var easeOut: typings.gsap.gsap.Quart = js.native
+  /* static member */
+  @JSGlobal("gsap.Quart.easeInOut")
+  @js.native
+  def easeInOut: typings.gsap.gsap.Quart = js.native
+  @scala.inline
+  def easeInOut_=(x: typings.gsap.gsap.Quart): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeInOut")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def easeIn_=(x: typings.gsap.gsap.Quart): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeIn")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSGlobal("gsap.Quart.easeOut")
+  @js.native
+  def easeOut: typings.gsap.gsap.Quart = js.native
+  @scala.inline
+  def easeOut_=(x: typings.gsap.gsap.Quart): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeOut")(x.asInstanceOf[js.Any])
 }

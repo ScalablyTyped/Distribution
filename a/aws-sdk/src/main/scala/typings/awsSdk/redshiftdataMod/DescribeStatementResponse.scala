@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftdataMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeStatementResponse extends js.Object {
+trait DescribeStatementResponse extends StObject {
   
   /**
     * The cluster identifier. 
@@ -91,105 +92,93 @@ object DescribeStatementResponse {
   }
   
   @scala.inline
-  implicit class DescribeStatementResponseOps[Self <: DescribeStatementResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeStatementResponseMutableBuilder[Self <: DescribeStatementResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: UUID): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     @scala.inline
-    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    def setDatabase(value: String): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClusterIdentifier: Self = this.set("ClusterIdentifier", js.undefined)
+    def setDatabaseUndefined: Self = StObject.set(x, "Database", js.undefined)
     
     @scala.inline
-    def setCreatedAt(value: Timestamp): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    def setDbUser(value: String): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    def setDbUserUndefined: Self = StObject.set(x, "DbUser", js.undefined)
     
     @scala.inline
-    def setDatabase(value: String): Self = this.set("Database", value.asInstanceOf[js.Any])
+    def setDuration(value: Long): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDatabase: Self = this.set("Database", js.undefined)
+    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
     @scala.inline
-    def setDbUser(value: String): Self = this.set("DbUser", value.asInstanceOf[js.Any])
+    def setError(value: String): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDbUser: Self = this.set("DbUser", js.undefined)
+    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
     @scala.inline
-    def setDuration(value: Long): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    def setId(value: UUID): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDuration: Self = this.set("Duration", js.undefined)
+    def setQueryString(value: StatementString): Self = StObject.set(x, "QueryString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("Error", value.asInstanceOf[js.Any])
+    def setQueryStringUndefined: Self = StObject.set(x, "QueryString", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("Error", js.undefined)
+    def setRedshiftPid(value: Long): Self = StObject.set(x, "RedshiftPid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryString(value: StatementString): Self = this.set("QueryString", value.asInstanceOf[js.Any])
+    def setRedshiftPidUndefined: Self = StObject.set(x, "RedshiftPid", js.undefined)
     
     @scala.inline
-    def deleteQueryString: Self = this.set("QueryString", js.undefined)
+    def setRedshiftQueryId(value: Long): Self = StObject.set(x, "RedshiftQueryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedshiftPid(value: Long): Self = this.set("RedshiftPid", value.asInstanceOf[js.Any])
+    def setRedshiftQueryIdUndefined: Self = StObject.set(x, "RedshiftQueryId", js.undefined)
     
     @scala.inline
-    def deleteRedshiftPid: Self = this.set("RedshiftPid", js.undefined)
+    def setResultRows(value: Long): Self = StObject.set(x, "ResultRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedshiftQueryId(value: Long): Self = this.set("RedshiftQueryId", value.asInstanceOf[js.Any])
+    def setResultRowsUndefined: Self = StObject.set(x, "ResultRows", js.undefined)
     
     @scala.inline
-    def deleteRedshiftQueryId: Self = this.set("RedshiftQueryId", js.undefined)
+    def setResultSize(value: Long): Self = StObject.set(x, "ResultSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultRows(value: Long): Self = this.set("ResultRows", value.asInstanceOf[js.Any])
+    def setResultSizeUndefined: Self = StObject.set(x, "ResultSize", js.undefined)
     
     @scala.inline
-    def deleteResultRows: Self = this.set("ResultRows", js.undefined)
+    def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultSize(value: Long): Self = this.set("ResultSize", value.asInstanceOf[js.Any])
+    def setSecretArnUndefined: Self = StObject.set(x, "SecretArn", js.undefined)
     
     @scala.inline
-    def deleteResultSize: Self = this.set("ResultSize", js.undefined)
+    def setStatus(value: StatusString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretArn(value: SecretArn): Self = this.set("SecretArn", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteSecretArn: Self = this.set("SecretArn", js.undefined)
+    def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: StatusString): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setUpdatedAt(value: Timestamp): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedAt: Self = this.set("UpdatedAt", js.undefined)
+    def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
   }
 }

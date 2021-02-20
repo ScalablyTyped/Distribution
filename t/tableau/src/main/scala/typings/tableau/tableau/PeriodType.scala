@@ -1,14 +1,15 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PeriodType extends js.Object
+sealed trait PeriodType extends StObject
 @JSGlobal("tableau.PeriodType")
 @js.native
-object PeriodType extends js.Object {
+object PeriodType extends StObject {
   
   @js.native
   sealed trait DAYS extends PeriodType

@@ -1,5 +1,6 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,7 +57,7 @@ object KmlOrientation {
   def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
-    equals: KmlObject => Boolean,
+    equals_ : KmlObject => Boolean,
     getHeading: () => Double,
     getId: () => String,
     getOwnerDocument: () => KmlDocument,
@@ -76,44 +77,33 @@ object KmlOrientation {
     setRoll: Double => Unit,
     setTilt: Double => Unit
   ): KmlOrientation = {
-    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), equals = js.Any.fromFunction1(equals), getHeading = js.Any.fromFunction0(getHeading), getId = js.Any.fromFunction0(getId), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getRoll = js.Any.fromFunction0(getRoll), getTilt = js.Any.fromFunction0(getTilt), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), set = js.Any.fromFunction3(set), setHeading = js.Any.fromFunction1(setHeading), setRoll = js.Any.fromFunction1(setRoll), setTilt = js.Any.fromFunction1(setTilt))
+    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), getHeading = js.Any.fromFunction0(getHeading), getId = js.Any.fromFunction0(getId), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getRoll = js.Any.fromFunction0(getRoll), getTilt = js.Any.fromFunction0(getTilt), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), set = js.Any.fromFunction3(set), setHeading = js.Any.fromFunction1(setHeading), setRoll = js.Any.fromFunction1(setRoll), setTilt = js.Any.fromFunction1(setTilt))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[KmlOrientation]
   }
   
   @scala.inline
-  implicit class KmlOrientationOps[Self <: KmlOrientation] (val x: Self) extends AnyVal {
+  implicit class KmlOrientationMutableBuilder[Self <: KmlOrientation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetHeading(value: () => Double): Self = StObject.set(x, "getHeading", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRoll(value: () => Double): Self = StObject.set(x, "getRoll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetTilt(value: () => Double): Self = StObject.set(x, "getTilt", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHeading(value: () => Double): Self = this.set("getHeading", js.Any.fromFunction0(value))
+    def setSet(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetRoll(value: () => Double): Self = this.set("getRoll", js.Any.fromFunction0(value))
+    def setSetHeading(value: Double => Unit): Self = StObject.set(x, "setHeading", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTilt(value: () => Double): Self = this.set("getTilt", js.Any.fromFunction0(value))
+    def setSetRoll(value: Double => Unit): Self = StObject.set(x, "setRoll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet(value: (Double, Double, Double) => Unit): Self = this.set("set", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetHeading(value: Double => Unit): Self = this.set("setHeading", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetRoll(value: Double => Unit): Self = this.set("setRoll", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTilt(value: Double => Unit): Self = this.set("setTilt", js.Any.fromFunction1(value))
+    def setSetTilt(value: Double => Unit): Self = StObject.set(x, "setTilt", js.Any.fromFunction1(value))
   }
 }

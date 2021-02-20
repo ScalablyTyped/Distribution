@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompositeFilter extends js.Object {
+trait CompositeFilter extends StObject {
   
   /** The list of filters to combine. Must contain at least one filter. */
   var filters: js.UndefOr[js.Array[Filter]] = js.native
@@ -22,33 +23,21 @@ object CompositeFilter {
   }
   
   @scala.inline
-  implicit class CompositeFilterOps[Self <: CompositeFilter] (val x: Self) extends AnyVal {
+  implicit class CompositeFilterMutableBuilder[Self <: CompositeFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilters(value: js.Array[Filter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = this.set("filters", js.Array(value :_*))
+    def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: js.Array[Filter]): Self = this.set("filters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
-    
-    @scala.inline
-    def setOp(value: String): Self = this.set("op", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOp: Self = this.set("op", js.undefined)
+    def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
   }
 }

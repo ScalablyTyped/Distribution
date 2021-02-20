@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PDFViewerDplProcessing extends js.Object {
+trait PDFViewerDplProcessing extends StObject {
   
   var download: js.UndefOr[PDFViewerDplProcessingDownload] = js.native
   
@@ -24,42 +25,30 @@ object PDFViewerDplProcessing {
   }
   
   @scala.inline
-  implicit class PDFViewerDplProcessingOps[Self <: PDFViewerDplProcessing] (val x: Self) extends AnyVal {
+  implicit class PDFViewerDplProcessingMutableBuilder[Self <: PDFViewerDplProcessing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDownload(value: PDFViewerDplProcessingDownload): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoadOnDemand(value: Boolean): Self = StObject.set(x, "loadOnDemand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownload(value: PDFViewerDplProcessingDownload): Self = this.set("download", value.asInstanceOf[js.Any])
+    def setLoadOnDemandUndefined: Self = StObject.set(x, "loadOnDemand", js.undefined)
     
     @scala.inline
-    def deleteDownload: Self = this.set("download", js.undefined)
+    def setRead(value: PDFViewerDplProcessingRead): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadOnDemand(value: Boolean): Self = this.set("loadOnDemand", value.asInstanceOf[js.Any])
+    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
     @scala.inline
-    def deleteLoadOnDemand: Self = this.set("loadOnDemand", js.undefined)
+    def setUpload(value: PDFViewerDplProcessingUpload): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRead(value: PDFViewerDplProcessingRead): Self = this.set("read", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRead: Self = this.set("read", js.undefined)
-    
-    @scala.inline
-    def setUpload(value: PDFViewerDplProcessingUpload): Self = this.set("upload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpload: Self = this.set("upload", js.undefined)
+    def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
   }
 }

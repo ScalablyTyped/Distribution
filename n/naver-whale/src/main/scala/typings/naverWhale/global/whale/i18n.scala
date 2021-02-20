@@ -1,5 +1,6 @@
 package typings.naverWhale.global.whale
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +12,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Use the chrome.i18n infrastructure to implement internationalization across your whole app or extension.
   * @since Chrome 5.
   */
-@JSGlobal("chrome.i18n")
-@js.native
-object i18n extends js.Object
+object i18n

@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchAssociateServiceActionWithProvisioningArtifactInput extends js.Object {
+trait BatchAssociateServiceActionWithProvisioningArtifactInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
@@ -26,30 +27,18 @@ object BatchAssociateServiceActionWithProvisioningArtifactInput {
   }
   
   @scala.inline
-  implicit class BatchAssociateServiceActionWithProvisioningArtifactInputOps[Self <: BatchAssociateServiceActionWithProvisioningArtifactInput] (val x: Self) extends AnyVal {
+  implicit class BatchAssociateServiceActionWithProvisioningArtifactInputMutableBuilder[Self <: BatchAssociateServiceActionWithProvisioningArtifactInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServiceActionAssociations(value: ServiceActionAssociations): Self = StObject.set(x, "ServiceActionAssociations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceActionAssociationsVarargs(value: ServiceActionAssociation*): Self = this.set("ServiceActionAssociations", js.Array(value :_*))
-    
-    @scala.inline
-    def setServiceActionAssociations(value: ServiceActionAssociations): Self = this.set("ServiceActionAssociations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = this.set("AcceptLanguage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAcceptLanguage: Self = this.set("AcceptLanguage", js.undefined)
+    def setServiceActionAssociationsVarargs(value: ServiceActionAssociation*): Self = StObject.set(x, "ServiceActionAssociations", js.Array(value :_*))
   }
 }

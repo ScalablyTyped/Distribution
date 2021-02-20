@@ -1,5 +1,6 @@
 package typings.chartist.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // in the actual chartist library these are classes that project their options onto
 // the parent class
 @js.native
-trait IFixedScaleAxisStatic extends js.Object
+trait IFixedScaleAxisStatic extends StObject

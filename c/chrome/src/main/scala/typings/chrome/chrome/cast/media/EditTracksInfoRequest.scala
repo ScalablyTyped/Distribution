@@ -1,11 +1,12 @@
 package typings.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditTracksInfoRequest extends js.Object {
+trait EditTracksInfoRequest extends StObject {
   
   var activeTrackIds: js.Array[Double] = js.native
   
@@ -20,27 +21,15 @@ object EditTracksInfoRequest {
   }
   
   @scala.inline
-  implicit class EditTracksInfoRequestOps[Self <: EditTracksInfoRequest] (val x: Self) extends AnyVal {
+  implicit class EditTracksInfoRequestMutableBuilder[Self <: EditTracksInfoRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveTrackIds(value: js.Array[Double]): Self = StObject.set(x, "activeTrackIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveTrackIdsVarargs(value: Double*): Self = StObject.set(x, "activeTrackIds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActiveTrackIdsVarargs(value: Double*): Self = this.set("activeTrackIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setActiveTrackIds(value: js.Array[Double]): Self = this.set("activeTrackIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextTrackStyle(value: TextTrackStyle): Self = this.set("textTrackStyle", value.asInstanceOf[js.Any])
+    def setTextTrackStyle(value: TextTrackStyle): Self = StObject.set(x, "textTrackStyle", value.asInstanceOf[js.Any])
   }
 }

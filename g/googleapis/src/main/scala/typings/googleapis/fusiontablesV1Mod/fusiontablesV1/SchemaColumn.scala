@@ -1,6 +1,7 @@
 package typings.googleapis.fusiontablesV1Mod.fusiontablesV1
 
 import typings.googleapis.anon.ColumnId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Specifies the id, name and type of a column in a table.
   */
 @js.native
-trait SchemaColumn extends js.Object {
+trait SchemaColumn extends StObject {
   
   /**
     * Optional identifier of the base column. If present, this column is
@@ -58,60 +59,48 @@ object SchemaColumn {
   }
   
   @scala.inline
-  implicit class SchemaColumnOps[Self <: SchemaColumn] (val x: Self) extends AnyVal {
+  implicit class SchemaColumnMutableBuilder[Self <: SchemaColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseColumn(value: ColumnId): Self = StObject.set(x, "baseColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseColumnUndefined: Self = StObject.set(x, "baseColumn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnId(value: Double): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseColumn(value: ColumnId): Self = this.set("baseColumn", value.asInstanceOf[js.Any])
+    def setColumnIdUndefined: Self = StObject.set(x, "columnId", js.undefined)
     
     @scala.inline
-    def deleteBaseColumn: Self = this.set("baseColumn", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnId(value: Double): Self = this.set("columnId", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteColumnId: Self = this.set("columnId", js.undefined)
+    def setGraph_predicate(value: String): Self = StObject.set(x, "graph_predicate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setGraph_predicateUndefined: Self = StObject.set(x, "graph_predicate", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraph_predicate(value: String): Self = this.set("graph_predicate", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteGraph_predicate: Self = this.set("graph_predicate", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

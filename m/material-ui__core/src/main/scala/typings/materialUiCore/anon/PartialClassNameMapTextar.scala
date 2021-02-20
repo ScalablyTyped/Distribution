@@ -1,12 +1,13 @@
 package typings.materialUiCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/InputBase/Textarea.TextareaClassKey>> */
 @js.native
-trait PartialClassNameMapTextar extends js.Object {
+trait PartialClassNameMapTextar extends StObject {
   
   var root: js.UndefOr[String] = js.native
   
@@ -23,36 +24,24 @@ object PartialClassNameMapTextar {
   }
   
   @scala.inline
-  implicit class PartialClassNameMapTextarOps[Self <: PartialClassNameMapTextar] (val x: Self) extends AnyVal {
+  implicit class PartialClassNameMapTextarMutableBuilder[Self <: PartialClassNameMapTextar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShadow(value: String): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setTextarea(value: String): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadow(value: String): Self = this.set("shadow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadow: Self = this.set("shadow", js.undefined)
-    
-    @scala.inline
-    def setTextarea(value: String): Self = this.set("textarea", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextarea: Self = this.set("textarea", js.undefined)
+    def setTextareaUndefined: Self = StObject.set(x, "textarea", js.undefined)
   }
 }

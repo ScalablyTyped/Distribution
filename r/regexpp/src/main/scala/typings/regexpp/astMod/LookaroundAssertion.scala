@@ -2,6 +2,7 @@ package typings.regexpp.astMod
 
 import typings.regexpp.regexppStrings.lookahead
 import typings.regexpp.regexppStrings.lookbehind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,10 +26,10 @@ object LookaroundAssertion {
     raw: String,
     start: Double,
     `type`: typings.regexpp.regexppStrings.Assertion
-  ): LookaroundAssertion = {
+  ): typings.regexpp.astMod.LookaheadAssertion = {
     val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], negate = negate.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[LookaroundAssertion]
+    __obj.asInstanceOf[typings.regexpp.astMod.LookaheadAssertion]
   }
   
   @scala.inline
@@ -41,9 +42,9 @@ object LookaroundAssertion {
     raw: String,
     start: Double,
     `type`: typings.regexpp.regexppStrings.Assertion
-  ): LookaroundAssertion = {
+  ): typings.regexpp.astMod.LookbehindAssertion = {
     val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], negate = negate.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[LookaroundAssertion]
+    __obj.asInstanceOf[typings.regexpp.astMod.LookbehindAssertion]
   }
 }

@@ -1,12 +1,13 @@
 package typings.atom.mod
 
 import typings.atom.anon.ExclusiveReversed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Marker extends js.Object {
+trait Marker extends StObject {
   
   /**
     *  Removes the marker's tail.

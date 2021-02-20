@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.insightsServicePostResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsightsServicePostResponseInlineInsightsNode extends js.Object {
+trait InsightsServicePostResponseInlineInsightsNode extends StObject {
   
   var error: Null = js.native
   
@@ -22,27 +23,15 @@ object InsightsServicePostResponseInlineInsightsNode {
   }
   
   @scala.inline
-  implicit class InsightsServicePostResponseInlineInsightsNodeOps[Self <: InsightsServicePostResponseInlineInsightsNode] (val x: Self) extends AnyVal {
+  implicit class InsightsServicePostResponseInlineInsightsNodeMutableBuilder[Self <: InsightsServicePostResponseInlineInsightsNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: Null): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetrics(value: InsightsServicePostResponseMetrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setError(value: Null): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetrics(value: InsightsServicePostResponseMetrics): Self = this.set("metrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

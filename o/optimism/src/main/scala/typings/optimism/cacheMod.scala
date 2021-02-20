@@ -1,15 +1,15 @@
 package typings.optimism
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("optimism/lib/cache", JSImport.Namespace)
-@js.native
-object cacheMod extends js.Object {
+object cacheMod {
   
+  @JSImport("optimism/lib/cache", "Cache")
   @js.native
-  class Cache[K, V] () extends js.Object {
+  class Cache[K, V] () extends StObject {
     def this(max: Double) = this()
     def this(max: js.UndefOr[scala.Nothing], dispose: js.Function2[/* value */ V, /* key */ K, Unit]) = this()
     def this(max: Double, dispose: js.Function2[/* value */ V, /* key */ K, Unit]) = this()

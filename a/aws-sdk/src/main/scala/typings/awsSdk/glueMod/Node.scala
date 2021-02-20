@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Node extends js.Object {
+trait Node extends StObject {
   
   /**
     * Details of the crawler when the node represents a crawler.
@@ -46,54 +47,42 @@ object Node {
   }
   
   @scala.inline
-  implicit class NodeOps[Self <: Node] (val x: Self) extends AnyVal {
+  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCrawlerDetails(value: CrawlerNodeDetails): Self = StObject.set(x, "CrawlerDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrawlerDetailsUndefined: Self = StObject.set(x, "CrawlerDetails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobDetails(value: JobNodeDetails): Self = StObject.set(x, "JobDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrawlerDetails(value: CrawlerNodeDetails): Self = this.set("CrawlerDetails", value.asInstanceOf[js.Any])
+    def setJobDetailsUndefined: Self = StObject.set(x, "JobDetails", js.undefined)
     
     @scala.inline
-    def deleteCrawlerDetails: Self = this.set("CrawlerDetails", js.undefined)
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobDetails(value: JobNodeDetails): Self = this.set("JobDetails", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteJobDetails: Self = this.set("JobDetails", js.undefined)
+    def setTriggerDetails(value: TriggerNodeDetails): Self = StObject.set(x, "TriggerDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setTriggerDetailsUndefined: Self = StObject.set(x, "TriggerDetails", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setType(value: NodeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerDetails(value: TriggerNodeDetails): Self = this.set("TriggerDetails", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteTriggerDetails: Self = this.set("TriggerDetails", js.undefined)
+    def setUniqueId(value: NameString): Self = StObject.set(x, "UniqueId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: NodeType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
-    
-    @scala.inline
-    def setUniqueId(value: NameString): Self = this.set("UniqueId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniqueId: Self = this.set("UniqueId", js.undefined)
+    def setUniqueIdUndefined: Self = StObject.set(x, "UniqueId", js.undefined)
   }
 }

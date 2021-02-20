@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestCase extends js.Object {
+trait TestCase extends StObject {
   
   /** The elapsed run time of the test case. Required. */
   var elapsedTime: js.UndefOr[Duration] = js.native
@@ -46,78 +47,66 @@ object TestCase {
   }
   
   @scala.inline
-  implicit class TestCaseOps[Self <: TestCase] (val x: Self) extends AnyVal {
+  implicit class TestCaseMutableBuilder[Self <: TestCase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElapsedTime(value: Duration): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElapsedTimeUndefined: Self = StObject.set(x, "elapsedTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElapsedTime(value: Duration): Self = this.set("elapsedTime", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteElapsedTime: Self = this.set("elapsedTime", js.undefined)
+    def setSkippedMessage(value: String): Self = StObject.set(x, "skippedMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setSkippedMessageUndefined: Self = StObject.set(x, "skippedMessage", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setStackTraces(value: js.Array[StackTrace]): Self = StObject.set(x, "stackTraces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkippedMessage(value: String): Self = this.set("skippedMessage", value.asInstanceOf[js.Any])
+    def setStackTracesUndefined: Self = StObject.set(x, "stackTraces", js.undefined)
     
     @scala.inline
-    def deleteSkippedMessage: Self = this.set("skippedMessage", js.undefined)
+    def setStackTracesVarargs(value: StackTrace*): Self = StObject.set(x, "stackTraces", js.Array(value :_*))
     
     @scala.inline
-    def setStackTracesVarargs(value: StackTrace*): Self = this.set("stackTraces", js.Array(value :_*))
+    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackTraces(value: js.Array[StackTrace]): Self = this.set("stackTraces", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteStackTraces: Self = this.set("stackTraces", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setTestCaseId(value: String): Self = StObject.set(x, "testCaseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTestCaseIdUndefined: Self = StObject.set(x, "testCaseId", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTestCaseReference(value: TestCaseReference): Self = StObject.set(x, "testCaseReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestCaseId(value: String): Self = this.set("testCaseId", value.asInstanceOf[js.Any])
+    def setTestCaseReferenceUndefined: Self = StObject.set(x, "testCaseReference", js.undefined)
     
     @scala.inline
-    def deleteTestCaseId: Self = this.set("testCaseId", js.undefined)
+    def setToolOutputs(value: js.Array[ToolOutputReference]): Self = StObject.set(x, "toolOutputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestCaseReference(value: TestCaseReference): Self = this.set("testCaseReference", value.asInstanceOf[js.Any])
+    def setToolOutputsUndefined: Self = StObject.set(x, "toolOutputs", js.undefined)
     
     @scala.inline
-    def deleteTestCaseReference: Self = this.set("testCaseReference", js.undefined)
-    
-    @scala.inline
-    def setToolOutputsVarargs(value: ToolOutputReference*): Self = this.set("toolOutputs", js.Array(value :_*))
-    
-    @scala.inline
-    def setToolOutputs(value: js.Array[ToolOutputReference]): Self = this.set("toolOutputs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolOutputs: Self = this.set("toolOutputs", js.undefined)
+    def setToolOutputsVarargs(value: ToolOutputReference*): Self = StObject.set(x, "toolOutputs", js.Array(value :_*))
   }
 }

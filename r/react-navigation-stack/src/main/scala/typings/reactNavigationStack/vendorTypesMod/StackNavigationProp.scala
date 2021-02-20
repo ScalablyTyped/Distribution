@@ -15,13 +15,14 @@ import typings.reactNavigationStack.anon.Immediate
 import typings.reactNavigationStack.reactNavigationStackStrings.refocus
 import typings.std.NonNullable
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-navigation.react-navigation.NavigationScreenProp<State, Params> & {push (routeName : string, params : react-navigation.react-navigation.NavigationParams | undefined, action : react-navigation.react-navigation.NavigationNavigateAction | undefined): boolean, replace (routeName : string, params : react-navigation.react-navigation.NavigationParams | undefined, action : react-navigation.react-navigation.NavigationNavigateAction | undefined): boolean, reset (actions : std.Array<react-navigation.react-navigation.NavigationAction>, index : number): boolean, pop (n : number | undefined, params : {  immediate :boolean | undefined} | undefined): boolean, popToTop (params : {  immediate :boolean | undefined} | undefined): boolean, addListener (event : react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.NavigationStackEventName, callback : react-navigation.react-navigation.NavigationEventCallback): react-navigation.react-navigation.NavigationEventSubscription} */
 @js.native
-trait StackNavigationProp[State, Params] extends js.Object {
+trait StackNavigationProp[State, Params] extends StObject {
   
   def addListener(eventName: String, callback: NavigationEventCallback): NavigationEventSubscription = js.native
   def addListener(event: NavigationStackEventName, callback: NavigationEventCallback): NavigationEventSubscription = js.native

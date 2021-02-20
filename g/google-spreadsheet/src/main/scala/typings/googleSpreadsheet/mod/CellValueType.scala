@@ -1,5 +1,6 @@
 package typings.googleSpreadsheet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleSpreadsheet.googleSpreadsheetStrings.numberValue
   - typings.googleSpreadsheet.googleSpreadsheetStrings.errorValue
 */
-trait CellValueType extends js.Object
+trait CellValueType extends StObject
 object CellValueType {
   
   @scala.inline

@@ -1,5 +1,6 @@
 package typings.moment.momentMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,144 +65,132 @@ object MomentSetObject {
   }
   
   @scala.inline
-  implicit class MomentSetObjectOps[Self <: MomentSetObject] (val x: Self) extends AnyVal {
+  implicit class MomentSetObjectMutableBuilder[Self <: MomentSetObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDDD(value: Double): Self = StObject.set(x, "DDD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDDDUndefined: Self = StObject.set(x, "DDD", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDayOfYear(value: Double): Self = StObject.set(x, "dayOfYear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDDD(value: Double): Self = this.set("DDD", value.asInstanceOf[js.Any])
+    def setDayOfYearUndefined: Self = StObject.set(x, "dayOfYear", js.undefined)
     
     @scala.inline
-    def deleteDDD: Self = this.set("DDD", js.undefined)
+    def setDayOfYears(value: Double): Self = StObject.set(x, "dayOfYears", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setE(value: Double): Self = this.set("E", value.asInstanceOf[js.Any])
+    def setDayOfYearsUndefined: Self = StObject.set(x, "dayOfYears", js.undefined)
     
     @scala.inline
-    def deleteE: Self = this.set("E", js.undefined)
+    def setE(value: Double): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGG(value: Double): Self = this.set("GG", value.asInstanceOf[js.Any])
+    def setEUndefined: Self = StObject.set(x, "E", js.undefined)
     
     @scala.inline
-    def deleteGG: Self = this.set("GG", js.undefined)
+    def setGG(value: Double): Self = StObject.set(x, "GG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ(value: Double): Self = this.set("Q", value.asInstanceOf[js.Any])
+    def setGGUndefined: Self = StObject.set(x, "GG", js.undefined)
     
     @scala.inline
-    def deleteQ: Self = this.set("Q", js.undefined)
+    def setIsoWeek(value: Double): Self = StObject.set(x, "isoWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setW(value: Double): Self = this.set("W", value.asInstanceOf[js.Any])
+    def setIsoWeekUndefined: Self = StObject.set(x, "isoWeek", js.undefined)
     
     @scala.inline
-    def deleteW: Self = this.set("W", js.undefined)
+    def setIsoWeekYear(value: Double): Self = StObject.set(x, "isoWeekYear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayOfYear(value: Double): Self = this.set("dayOfYear", value.asInstanceOf[js.Any])
+    def setIsoWeekYearUndefined: Self = StObject.set(x, "isoWeekYear", js.undefined)
     
     @scala.inline
-    def deleteDayOfYear: Self = this.set("dayOfYear", js.undefined)
+    def setIsoWeekYears(value: Double): Self = StObject.set(x, "isoWeekYears", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayOfYears(value: Double): Self = this.set("dayOfYears", value.asInstanceOf[js.Any])
+    def setIsoWeekYearsUndefined: Self = StObject.set(x, "isoWeekYears", js.undefined)
     
     @scala.inline
-    def deleteDayOfYears: Self = this.set("dayOfYears", js.undefined)
+    def setIsoWeekday(value: Double): Self = StObject.set(x, "isoWeekday", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsoWeek(value: Double): Self = this.set("isoWeek", value.asInstanceOf[js.Any])
+    def setIsoWeekdayUndefined: Self = StObject.set(x, "isoWeekday", js.undefined)
     
     @scala.inline
-    def deleteIsoWeek: Self = this.set("isoWeek", js.undefined)
+    def setIsoWeekdays(value: Double): Self = StObject.set(x, "isoWeekdays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsoWeekYear(value: Double): Self = this.set("isoWeekYear", value.asInstanceOf[js.Any])
+    def setIsoWeekdaysUndefined: Self = StObject.set(x, "isoWeekdays", js.undefined)
     
     @scala.inline
-    def deleteIsoWeekYear: Self = this.set("isoWeekYear", js.undefined)
+    def setIsoWeeks(value: Double): Self = StObject.set(x, "isoWeeks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsoWeekYears(value: Double): Self = this.set("isoWeekYears", value.asInstanceOf[js.Any])
+    def setIsoWeeksUndefined: Self = StObject.set(x, "isoWeeks", js.undefined)
     
     @scala.inline
-    def deleteIsoWeekYears: Self = this.set("isoWeekYears", js.undefined)
+    def setQ(value: Double): Self = StObject.set(x, "Q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsoWeekday(value: Double): Self = this.set("isoWeekday", value.asInstanceOf[js.Any])
+    def setQUndefined: Self = StObject.set(x, "Q", js.undefined)
     
     @scala.inline
-    def deleteIsoWeekday: Self = this.set("isoWeekday", js.undefined)
+    def setQuarter(value: Double): Self = StObject.set(x, "quarter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsoWeekdays(value: Double): Self = this.set("isoWeekdays", value.asInstanceOf[js.Any])
+    def setQuarterUndefined: Self = StObject.set(x, "quarter", js.undefined)
     
     @scala.inline
-    def deleteIsoWeekdays: Self = this.set("isoWeekdays", js.undefined)
+    def setQuarters(value: Double): Self = StObject.set(x, "quarters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsoWeeks(value: Double): Self = this.set("isoWeeks", value.asInstanceOf[js.Any])
+    def setQuartersUndefined: Self = StObject.set(x, "quarters", js.undefined)
     
     @scala.inline
-    def deleteIsoWeeks: Self = this.set("isoWeeks", js.undefined)
+    def setW(value: Double): Self = StObject.set(x, "W", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuarter(value: Double): Self = this.set("quarter", value.asInstanceOf[js.Any])
+    def setWUndefined: Self = StObject.set(x, "W", js.undefined)
     
     @scala.inline
-    def deleteQuarter: Self = this.set("quarter", js.undefined)
+    def setWeek(value: Double): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuarters(value: Double): Self = this.set("quarters", value.asInstanceOf[js.Any])
+    def setWeekUndefined: Self = StObject.set(x, "week", js.undefined)
     
     @scala.inline
-    def deleteQuarters: Self = this.set("quarters", js.undefined)
+    def setWeekYear(value: Double): Self = StObject.set(x, "weekYear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeek(value: Double): Self = this.set("week", value.asInstanceOf[js.Any])
+    def setWeekYearUndefined: Self = StObject.set(x, "weekYear", js.undefined)
     
     @scala.inline
-    def deleteWeek: Self = this.set("week", js.undefined)
+    def setWeekYears(value: Double): Self = StObject.set(x, "weekYears", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeekYear(value: Double): Self = this.set("weekYear", value.asInstanceOf[js.Any])
+    def setWeekYearsUndefined: Self = StObject.set(x, "weekYears", js.undefined)
     
     @scala.inline
-    def deleteWeekYear: Self = this.set("weekYear", js.undefined)
+    def setWeekday(value: Double): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeekYears(value: Double): Self = this.set("weekYears", value.asInstanceOf[js.Any])
+    def setWeekdayUndefined: Self = StObject.set(x, "weekday", js.undefined)
     
     @scala.inline
-    def deleteWeekYears: Self = this.set("weekYears", js.undefined)
+    def setWeekdays(value: Double): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeekday(value: Double): Self = this.set("weekday", value.asInstanceOf[js.Any])
+    def setWeekdaysUndefined: Self = StObject.set(x, "weekdays", js.undefined)
     
     @scala.inline
-    def deleteWeekday: Self = this.set("weekday", js.undefined)
+    def setWeeks(value: Double): Self = StObject.set(x, "weeks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeekdays(value: Double): Self = this.set("weekdays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeekdays: Self = this.set("weekdays", js.undefined)
-    
-    @scala.inline
-    def setWeeks(value: Double): Self = this.set("weeks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeeks: Self = this.set("weeks", js.undefined)
+    def setWeeksUndefined: Self = StObject.set(x, "weeks", js.undefined)
   }
 }

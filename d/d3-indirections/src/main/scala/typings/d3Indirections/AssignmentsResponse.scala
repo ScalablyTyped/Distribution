@@ -1,5 +1,6 @@
 package typings.d3Indirections
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response from a PUT indirections resource request.
   */
 @js.native
-trait AssignmentsResponse extends js.Object {
+trait AssignmentsResponse extends StObject {
   
   var failedAssignments: js.Array[AssignmentFailure] = js.native
 }
@@ -21,24 +22,12 @@ object AssignmentsResponse {
   }
   
   @scala.inline
-  implicit class AssignmentsResponseOps[Self <: AssignmentsResponse] (val x: Self) extends AnyVal {
+  implicit class AssignmentsResponseMutableBuilder[Self <: AssignmentsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailedAssignments(value: js.Array[AssignmentFailure]): Self = StObject.set(x, "failedAssignments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFailedAssignmentsVarargs(value: AssignmentFailure*): Self = this.set("failedAssignments", js.Array(value :_*))
-    
-    @scala.inline
-    def setFailedAssignments(value: js.Array[AssignmentFailure]): Self = this.set("failedAssignments", value.asInstanceOf[js.Any])
+    def setFailedAssignmentsVarargs(value: AssignmentFailure*): Self = StObject.set(x, "failedAssignments", js.Array(value :_*))
   }
 }

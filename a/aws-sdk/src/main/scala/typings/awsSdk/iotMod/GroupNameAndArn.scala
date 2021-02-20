@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroupNameAndArn extends js.Object {
+trait GroupNameAndArn extends StObject {
   
   /**
     * The group ARN.
@@ -26,30 +27,18 @@ object GroupNameAndArn {
   }
   
   @scala.inline
-  implicit class GroupNameAndArnOps[Self <: GroupNameAndArn] (val x: Self) extends AnyVal {
+  implicit class GroupNameAndArnMutableBuilder[Self <: GroupNameAndArn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupArn(value: ThingGroupArn): Self = StObject.set(x, "groupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupArnUndefined: Self = StObject.set(x, "groupArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupName(value: ThingGroupName): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupArn(value: ThingGroupArn): Self = this.set("groupArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupArn: Self = this.set("groupArn", js.undefined)
-    
-    @scala.inline
-    def setGroupName(value: ThingGroupName): Self = this.set("groupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupName: Self = this.set("groupName", js.undefined)
+    def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
   }
 }

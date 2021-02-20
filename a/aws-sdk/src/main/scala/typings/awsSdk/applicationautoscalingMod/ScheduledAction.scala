@@ -1,11 +1,12 @@
 package typings.awsSdk.applicationautoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScheduledAction extends js.Object {
+trait ScheduledAction extends StObject {
   
   /**
     * The date and time that the scheduled action was created.
@@ -73,60 +74,48 @@ object ScheduledAction {
   }
   
   @scala.inline
-  implicit class ScheduledActionOps[Self <: ScheduledAction] (val x: Self) extends AnyVal {
+  implicit class ScheduledActionMutableBuilder[Self <: ScheduledAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: TimestampType): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTime(value: TimestampType): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def setCreationTime(value: TimestampType): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: ResourceIdMaxLen1600): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedule(value: ResourceIdMaxLen1600): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    def setScalableDimensionUndefined: Self = StObject.set(x, "ScalableDimension", js.undefined)
     
     @scala.inline
-    def setScheduledActionARN(value: ResourceIdMaxLen1600): Self = this.set("ScheduledActionARN", value.asInstanceOf[js.Any])
+    def setScalableTargetAction(value: ScalableTargetAction): Self = StObject.set(x, "ScalableTargetAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduledActionName(value: ScheduledActionName): Self = this.set("ScheduledActionName", value.asInstanceOf[js.Any])
+    def setScalableTargetActionUndefined: Self = StObject.set(x, "ScalableTargetAction", js.undefined)
     
     @scala.inline
-    def setServiceNamespace(value: ServiceNamespace): Self = this.set("ServiceNamespace", value.asInstanceOf[js.Any])
+    def setSchedule(value: ResourceIdMaxLen1600): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: TimestampType): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setScheduledActionARN(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ScheduledActionARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setScheduledActionName(value: ScheduledActionName): Self = StObject.set(x, "ScheduledActionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalableDimension(value: ScalableDimension): Self = this.set("ScalableDimension", value.asInstanceOf[js.Any])
+    def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScalableDimension: Self = this.set("ScalableDimension", js.undefined)
+    def setStartTime(value: TimestampType): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalableTargetAction(value: ScalableTargetAction): Self = this.set("ScalableTargetAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScalableTargetAction: Self = this.set("ScalableTargetAction", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: TimestampType): Self = this.set("StartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }
 }

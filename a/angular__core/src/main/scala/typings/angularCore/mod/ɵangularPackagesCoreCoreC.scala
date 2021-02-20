@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,9 +38,15 @@ class ɵangularPackagesCoreCoreC protected () extends ReflectiveInjector {
   val parent_FɵangularPackagesCoreCoreC: Injector | Null = js.native
 }
 /* static members */
-@JSImport("@angular/core", "\u0275angular_packages_core_core_c")
-@js.native
-object ɵangularPackagesCoreCoreC extends js.Object {
+object ɵangularPackagesCoreCoreC {
   
-  var INJECTOR_KEY: js.Any = js.native
+  @JSImport("@angular/core", "\u0275angular_packages_core_core_c")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/core", "\u0275angular_packages_core_core_c.INJECTOR_KEY")
+  @js.native
+  def INJECTOR_KEY: js.Any = js.native
+  @scala.inline
+  def INJECTOR_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INJECTOR_KEY")(x.asInstanceOf[js.Any])
 }

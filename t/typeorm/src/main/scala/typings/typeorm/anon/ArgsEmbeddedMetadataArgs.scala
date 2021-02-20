@@ -1,12 +1,13 @@
 package typings.typeorm.anon
 
 import typings.typeorm.metadataArgsEmbeddedMetadataArgsMod.EmbeddedMetadataArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArgsEmbeddedMetadataArgs extends js.Object {
+trait ArgsEmbeddedMetadataArgs extends StObject {
   
   var args: EmbeddedMetadataArgs = js.native
   
@@ -24,24 +25,12 @@ object ArgsEmbeddedMetadataArgs {
   }
   
   @scala.inline
-  implicit class ArgsEmbeddedMetadataArgsOps[Self <: ArgsEmbeddedMetadataArgs] (val x: Self) extends AnyVal {
+  implicit class ArgsEmbeddedMetadataArgsMutableBuilder[Self <: ArgsEmbeddedMetadataArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: EmbeddedMetadataArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArgs(value: EmbeddedMetadataArgs): Self = this.set("args", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEntityMetadata(value: typings.typeorm.metadataEntityMetadataMod.EntityMetadata): Self = this.set("entityMetadata", value.asInstanceOf[js.Any])
+    def setEntityMetadata(value: typings.typeorm.metadataEntityMetadataMod.EntityMetadata): Self = StObject.set(x, "entityMetadata", value.asInstanceOf[js.Any])
   }
 }

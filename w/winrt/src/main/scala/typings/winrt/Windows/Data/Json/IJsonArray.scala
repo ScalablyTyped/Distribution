@@ -1,5 +1,6 @@
 package typings.winrt.Windows.Data.Json
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,33 +40,21 @@ object IJsonArray {
   }
   
   @scala.inline
-  implicit class IJsonArrayOps[Self <: IJsonArray] (val x: Self) extends AnyVal {
+  implicit class IJsonArrayMutableBuilder[Self <: IJsonArray] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetArrayAt(value: Double => JsonArray): Self = StObject.set(x, "getArrayAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetBooleanAt(value: Double => Boolean): Self = StObject.set(x, "getBooleanAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetNumberAt(value: Double => Double): Self = StObject.set(x, "getNumberAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetArrayAt(value: Double => JsonArray): Self = this.set("getArrayAt", js.Any.fromFunction1(value))
+    def setGetObjectAt(value: Double => JsonObject): Self = StObject.set(x, "getObjectAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetBooleanAt(value: Double => Boolean): Self = this.set("getBooleanAt", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetNumberAt(value: Double => Double): Self = this.set("getNumberAt", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetObjectAt(value: Double => JsonObject): Self = this.set("getObjectAt", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetStringAt(value: Double => String): Self = this.set("getStringAt", js.Any.fromFunction1(value))
+    def setGetStringAt(value: Double => String): Self = StObject.set(x, "getStringAt", js.Any.fromFunction1(value))
   }
 }

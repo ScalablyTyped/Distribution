@@ -1,11 +1,11 @@
 package typings.muicss.reactMod
 
-import typings.react.mod.Component
+import typings.muicss.colMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("muicss/react", "Col")
 @js.native
-class Col ()
-  extends Component[ColProps, js.Object, js.Any]
+class Col () extends default

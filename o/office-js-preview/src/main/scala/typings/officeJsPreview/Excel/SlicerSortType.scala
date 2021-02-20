@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SlicerSortType extends js.Object
+sealed trait SlicerSortType extends StObject
 /**
   *
   * Specifies the slicer sort behavior for Slicer.sortBy API.
@@ -14,7 +15,7 @@ sealed trait SlicerSortType extends js.Object
   */
 @JSGlobal("Excel.SlicerSortType")
 @js.native
-object SlicerSortType extends js.Object {
+object SlicerSortType extends StObject {
   
   /**
     * Sort slicer items in ascending order by item captions.

@@ -1,5 +1,6 @@
 package typings.googleapis.appengineV1betaMod.appengineV1beta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * environment.
   */
 @js.native
-trait SchemaNetworkUtilization extends js.Object {
+trait SchemaNetworkUtilization extends StObject {
   
   /**
     * Target bytes received per second.
@@ -40,42 +41,30 @@ object SchemaNetworkUtilization {
   }
   
   @scala.inline
-  implicit class SchemaNetworkUtilizationOps[Self <: SchemaNetworkUtilization] (val x: Self) extends AnyVal {
+  implicit class SchemaNetworkUtilizationMutableBuilder[Self <: SchemaNetworkUtilization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTargetReceivedBytesPerSecond(value: Double): Self = StObject.set(x, "targetReceivedBytesPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTargetReceivedBytesPerSecondUndefined: Self = StObject.set(x, "targetReceivedBytesPerSecond", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetReceivedPacketsPerSecond(value: Double): Self = StObject.set(x, "targetReceivedPacketsPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetReceivedBytesPerSecond(value: Double): Self = this.set("targetReceivedBytesPerSecond", value.asInstanceOf[js.Any])
+    def setTargetReceivedPacketsPerSecondUndefined: Self = StObject.set(x, "targetReceivedPacketsPerSecond", js.undefined)
     
     @scala.inline
-    def deleteTargetReceivedBytesPerSecond: Self = this.set("targetReceivedBytesPerSecond", js.undefined)
+    def setTargetSentBytesPerSecond(value: Double): Self = StObject.set(x, "targetSentBytesPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetReceivedPacketsPerSecond(value: Double): Self = this.set("targetReceivedPacketsPerSecond", value.asInstanceOf[js.Any])
+    def setTargetSentBytesPerSecondUndefined: Self = StObject.set(x, "targetSentBytesPerSecond", js.undefined)
     
     @scala.inline
-    def deleteTargetReceivedPacketsPerSecond: Self = this.set("targetReceivedPacketsPerSecond", js.undefined)
+    def setTargetSentPacketsPerSecond(value: Double): Self = StObject.set(x, "targetSentPacketsPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetSentBytesPerSecond(value: Double): Self = this.set("targetSentBytesPerSecond", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetSentBytesPerSecond: Self = this.set("targetSentBytesPerSecond", js.undefined)
-    
-    @scala.inline
-    def setTargetSentPacketsPerSecond(value: Double): Self = this.set("targetSentPacketsPerSecond", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetSentPacketsPerSecond: Self = this.set("targetSentPacketsPerSecond", js.undefined)
+    def setTargetSentPacketsPerSecondUndefined: Self = StObject.set(x, "targetSentPacketsPerSecond", js.undefined)
   }
 }

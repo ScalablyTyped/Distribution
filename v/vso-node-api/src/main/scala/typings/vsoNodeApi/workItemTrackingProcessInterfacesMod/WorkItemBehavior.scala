@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.workItemTrackingProcessInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkItemBehavior extends js.Object {
+trait WorkItemBehavior extends StObject {
   
   var `abstract`: Boolean = js.native
   
@@ -48,51 +49,39 @@ object WorkItemBehavior {
   }
   
   @scala.inline
-  implicit class WorkItemBehaviorOps[Self <: WorkItemBehavior] (val x: Self) extends AnyVal {
+  implicit class WorkItemBehaviorMutableBuilder[Self <: WorkItemBehavior] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbstract(value: Boolean): Self = this.set("abstract", value.asInstanceOf[js.Any])
+    def setFields(value: js.Array[WorkItemBehaviorField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setFieldsVarargs(value: WorkItemBehaviorField*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsVarargs(value: WorkItemBehaviorField*): Self = this.set("fields", js.Array(value :_*))
+    def setInherits(value: WorkItemBehaviorReference): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: js.Array[WorkItemBehaviorField]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOverriden(value: Boolean): Self = StObject.set(x, "overriden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInherits(value: WorkItemBehaviorReference): Self = this.set("inherits", value.asInstanceOf[js.Any])
+    def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverriden(value: Boolean): Self = this.set("overriden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRank(value: Double): Self = this.set("rank", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -1,13 +1,12 @@
 package typings.dotProp
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("dot-prop", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Delete the property at the given path.
@@ -27,9 +26,15 @@ object mod extends js.Object {
   	//=> {foo: {bar: {y: 'x'}}}
   	```
   	*/
+  @JSImport("dot-prop", "delete")
+  @js.native
   def delete(`object`: StringDictionary[js.Any], path: String): Boolean = js.native
   
+  @JSImport("dot-prop", "get")
+  @js.native
   def get[T](`object`: js.UndefOr[scala.Nothing], path: String): js.UndefOr[T] = js.native
+  @JSImport("dot-prop", "get")
+  @js.native
   def get[T](`object`: js.UndefOr[scala.Nothing], path: String, defaultValue: T): T = js.native
   /**
   	Get the value of the property at the given path.
@@ -49,9 +54,15 @@ object mod extends js.Object {
   	//=> 'unicorn'
   	```
   	*/
+  @JSImport("dot-prop", "get")
+  @js.native
   def get[T](`object`: StringDictionary[js.Any], path: String): js.UndefOr[T] = js.native
+  @JSImport("dot-prop", "get")
+  @js.native
   def get[T](`object`: StringDictionary[js.Any], path: String, defaultValue: T): T = js.native
   
+  @JSImport("dot-prop", "has")
+  @js.native
   def has(`object`: js.UndefOr[scala.Nothing], path: String): Boolean = js.native
   /**
   	Check whether the property at the given path exists.
@@ -64,6 +75,8 @@ object mod extends js.Object {
   	//=> true
   	```
   	*/
+  @JSImport("dot-prop", "has")
+  @js.native
   def has(`object`: StringDictionary[js.Any], path: String): Boolean = js.native
   
   /**
@@ -87,5 +100,7 @@ object mod extends js.Object {
   	//=> {foo: {bar: 'b', baz: 'x'}}
   	```
   	*/
+  @JSImport("dot-prop", "set")
+  @js.native
   def set[T /* <: StringDictionary[js.Any] */](`object`: T, path: String, value: js.Any): T = js.native
 }

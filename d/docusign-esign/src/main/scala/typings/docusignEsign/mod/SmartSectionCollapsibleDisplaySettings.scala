@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartSectionCollapsibleDisplaySettings extends js.Object {
+trait SmartSectionCollapsibleDisplaySettings extends StObject {
   
   var arrowClosed: js.UndefOr[String] = js.native
   
@@ -36,78 +37,66 @@ object SmartSectionCollapsibleDisplaySettings {
   }
   
   @scala.inline
-  implicit class SmartSectionCollapsibleDisplaySettingsOps[Self <: SmartSectionCollapsibleDisplaySettings] (val x: Self) extends AnyVal {
+  implicit class SmartSectionCollapsibleDisplaySettingsMutableBuilder[Self <: SmartSectionCollapsibleDisplaySettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrowClosed(value: String): Self = StObject.set(x, "arrowClosed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrowClosedUndefined: Self = StObject.set(x, "arrowClosed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArrowColor(value: String): Self = StObject.set(x, "arrowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowClosed(value: String): Self = this.set("arrowClosed", value.asInstanceOf[js.Any])
+    def setArrowColorUndefined: Self = StObject.set(x, "arrowColor", js.undefined)
     
     @scala.inline
-    def deleteArrowClosed: Self = this.set("arrowClosed", js.undefined)
+    def setArrowLocation(value: String): Self = StObject.set(x, "arrowLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowColor(value: String): Self = this.set("arrowColor", value.asInstanceOf[js.Any])
+    def setArrowLocationUndefined: Self = StObject.set(x, "arrowLocation", js.undefined)
     
     @scala.inline
-    def deleteArrowColor: Self = this.set("arrowColor", js.undefined)
+    def setArrowOpen(value: String): Self = StObject.set(x, "arrowOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowLocation(value: String): Self = this.set("arrowLocation", value.asInstanceOf[js.Any])
+    def setArrowOpenUndefined: Self = StObject.set(x, "arrowOpen", js.undefined)
     
     @scala.inline
-    def deleteArrowLocation: Self = this.set("arrowLocation", js.undefined)
+    def setArrowSize(value: String): Self = StObject.set(x, "arrowSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowOpen(value: String): Self = this.set("arrowOpen", value.asInstanceOf[js.Any])
+    def setArrowSizeUndefined: Self = StObject.set(x, "arrowSize", js.undefined)
     
     @scala.inline
-    def deleteArrowOpen: Self = this.set("arrowOpen", js.undefined)
+    def setArrowStyle(value: String): Self = StObject.set(x, "arrowStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowSize(value: String): Self = this.set("arrowSize", value.asInstanceOf[js.Any])
+    def setArrowStyleUndefined: Self = StObject.set(x, "arrowStyle", js.undefined)
     
     @scala.inline
-    def deleteArrowSize: Self = this.set("arrowSize", js.undefined)
+    def setContainerStyle(value: String): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowStyle(value: String): Self = this.set("arrowStyle", value.asInstanceOf[js.Any])
+    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
     @scala.inline
-    def deleteArrowStyle: Self = this.set("arrowStyle", js.undefined)
+    def setLabelStyle(value: String): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerStyle(value: String): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
     @scala.inline
-    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    def setOnlyArrowIsClickable(value: Boolean): Self = StObject.set(x, "onlyArrowIsClickable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelStyle(value: String): Self = this.set("labelStyle", value.asInstanceOf[js.Any])
+    def setOnlyArrowIsClickableUndefined: Self = StObject.set(x, "onlyArrowIsClickable", js.undefined)
     
     @scala.inline
-    def deleteLabelStyle: Self = this.set("labelStyle", js.undefined)
+    def setOuterLabelAndArrowStyle(value: String): Self = StObject.set(x, "outerLabelAndArrowStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnlyArrowIsClickable(value: Boolean): Self = this.set("onlyArrowIsClickable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnlyArrowIsClickable: Self = this.set("onlyArrowIsClickable", js.undefined)
-    
-    @scala.inline
-    def setOuterLabelAndArrowStyle(value: String): Self = this.set("outerLabelAndArrowStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOuterLabelAndArrowStyle: Self = this.set("outerLabelAndArrowStyle", js.undefined)
+    def setOuterLabelAndArrowStyleUndefined: Self = StObject.set(x, "outerLabelAndArrowStyle", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SuggestedWarpOutputOptions extends js.Object {
+trait SuggestedWarpOutputOptions extends StObject {
   
   var maxError: js.UndefOr[Double] = js.native
   
@@ -24,33 +25,21 @@ object SuggestedWarpOutputOptions {
   }
   
   @scala.inline
-  implicit class SuggestedWarpOutputOptionsOps[Self <: SuggestedWarpOutputOptions] (val x: Self) extends AnyVal {
+  implicit class SuggestedWarpOutputOptionsMutableBuilder[Self <: SuggestedWarpOutputOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxError(value: Double): Self = StObject.set(x, "maxError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxErrorUndefined: Self = StObject.set(x, "maxError", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS_srs(value: SpatialReference): Self = StObject.set(x, "s_srs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS_srs(value: SpatialReference): Self = this.set("s_srs", value.asInstanceOf[js.Any])
+    def setSrc(value: Dataset): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: Dataset): Self = this.set("src", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setT_srs(value: SpatialReference): Self = this.set("t_srs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxError(value: Double): Self = this.set("maxError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxError: Self = this.set("maxError", js.undefined)
+    def setT_srs(value: SpatialReference): Self = StObject.set(x, "t_srs", value.asInstanceOf[js.Any])
   }
 }

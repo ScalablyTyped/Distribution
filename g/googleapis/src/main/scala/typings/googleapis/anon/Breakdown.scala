@@ -3,12 +3,13 @@ package typings.googleapis.anon
 import typings.googleapis.v31Mod.dfareportingV31.SchemaDateRange
 import typings.googleapis.v31Mod.dfareportingV31.SchemaDimensionValue
 import typings.googleapis.v31Mod.dfareportingV31.SchemaSortedDimension
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Breakdown extends js.Object {
+trait Breakdown extends StObject {
   
   var breakdown: js.UndefOr[js.Array[SchemaSortedDimension]] = js.native
   
@@ -33,72 +34,60 @@ object Breakdown {
   }
   
   @scala.inline
-  implicit class BreakdownOps[Self <: Breakdown] (val x: Self) extends AnyVal {
+  implicit class BreakdownMutableBuilder[Self <: Breakdown] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBreakdown(value: js.Array[SchemaSortedDimension]): Self = StObject.set(x, "breakdown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBreakdownUndefined: Self = StObject.set(x, "breakdown", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBreakdownVarargs(value: SchemaSortedDimension*): Self = StObject.set(x, "breakdown", js.Array(value :_*))
     
     @scala.inline
-    def setBreakdownVarargs(value: SchemaSortedDimension*): Self = this.set("breakdown", js.Array(value :_*))
+    def setDateRange(value: SchemaDateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreakdown(value: js.Array[SchemaSortedDimension]): Self = this.set("breakdown", value.asInstanceOf[js.Any])
+    def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
     
     @scala.inline
-    def deleteBreakdown: Self = this.set("breakdown", js.undefined)
+    def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateRange(value: SchemaDateRange): Self = this.set("dateRange", value.asInstanceOf[js.Any])
+    def setDimensionFilters(value: js.Array[SchemaDimensionValue]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDateRange: Self = this.set("dateRange", js.undefined)
+    def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
     
     @scala.inline
-    def setDimension(value: String): Self = this.set("dimension", value.asInstanceOf[js.Any])
+    def setDimensionFiltersVarargs(value: SchemaDimensionValue*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
     
     @scala.inline
-    def deleteDimension: Self = this.set("dimension", js.undefined)
+    def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
     
     @scala.inline
-    def setDimensionFiltersVarargs(value: SchemaDimensionValue*): Self = this.set("dimensionFilters", js.Array(value :_*))
+    def setMetricNames(value: js.Array[String]): Self = StObject.set(x, "metricNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionFilters(value: js.Array[SchemaDimensionValue]): Self = this.set("dimensionFilters", value.asInstanceOf[js.Any])
+    def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
     
     @scala.inline
-    def deleteDimensionFilters: Self = this.set("dimensionFilters", js.undefined)
+    def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
     
     @scala.inline
-    def setMetricNamesVarargs(value: String*): Self = this.set("metricNames", js.Array(value :_*))
+    def setOverlapMetricNames(value: js.Array[String]): Self = StObject.set(x, "overlapMetricNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricNames(value: js.Array[String]): Self = this.set("metricNames", value.asInstanceOf[js.Any])
+    def setOverlapMetricNamesUndefined: Self = StObject.set(x, "overlapMetricNames", js.undefined)
     
     @scala.inline
-    def deleteMetricNames: Self = this.set("metricNames", js.undefined)
+    def setOverlapMetricNamesVarargs(value: String*): Self = StObject.set(x, "overlapMetricNames", js.Array(value :_*))
     
     @scala.inline
-    def setOverlapMetricNamesVarargs(value: String*): Self = this.set("overlapMetricNames", js.Array(value :_*))
+    def setPivoted(value: Boolean): Self = StObject.set(x, "pivoted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlapMetricNames(value: js.Array[String]): Self = this.set("overlapMetricNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverlapMetricNames: Self = this.set("overlapMetricNames", js.undefined)
-    
-    @scala.inline
-    def setPivoted(value: Boolean): Self = this.set("pivoted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePivoted: Self = this.set("pivoted", js.undefined)
+    def setPivotedUndefined: Self = StObject.set(x, "pivoted", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddTargetedPublishersRequest extends js.Object {
+trait AddTargetedPublishersRequest extends StObject {
   
   /**
     * A list of publisher IDs to target in the pretargeting configuration. These values will be added to the list of targeted publisher IDs in
@@ -29,33 +30,21 @@ object AddTargetedPublishersRequest {
   }
   
   @scala.inline
-  implicit class AddTargetedPublishersRequestOps[Self <: AddTargetedPublishersRequest] (val x: Self) extends AnyVal {
+  implicit class AddTargetedPublishersRequestMutableBuilder[Self <: AddTargetedPublishersRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPublisherIds(value: js.Array[String]): Self = StObject.set(x, "publisherIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPublisherIdsUndefined: Self = StObject.set(x, "publisherIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublisherIdsVarargs(value: String*): Self = StObject.set(x, "publisherIds", js.Array(value :_*))
     
     @scala.inline
-    def setPublisherIdsVarargs(value: String*): Self = this.set("publisherIds", js.Array(value :_*))
+    def setTargetingMode(value: String): Self = StObject.set(x, "targetingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublisherIds(value: js.Array[String]): Self = this.set("publisherIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublisherIds: Self = this.set("publisherIds", js.undefined)
-    
-    @scala.inline
-    def setTargetingMode(value: String): Self = this.set("targetingMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetingMode: Self = this.set("targetingMode", js.undefined)
+    def setTargetingModeUndefined: Self = StObject.set(x, "targetingMode", js.undefined)
   }
 }

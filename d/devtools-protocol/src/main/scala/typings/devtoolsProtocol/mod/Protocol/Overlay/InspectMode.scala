@@ -1,6 +1,7 @@
 package typings.devtoolsProtocol.mod.Protocol.Overlay
 
 import typings.devtoolsProtocol.devtoolsProtocolStrings.none_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.showDistances
   - typings.devtoolsProtocol.devtoolsProtocolStrings.none_
 */
-trait InspectMode extends js.Object
+trait InspectMode extends StObject
 object InspectMode {
   
   @scala.inline

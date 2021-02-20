@@ -1,16 +1,16 @@
 package typings.classTransformer
 
 import typings.classTransformer.exposeExcludeOptionsMod.ExposeOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("class-transformer/metadata/ExposeMetadata", JSImport.Namespace)
-@js.native
-object exposeMetadataMod extends js.Object {
+object exposeMetadataMod {
   
+  @JSImport("class-transformer/metadata/ExposeMetadata", "ExposeMetadata")
   @js.native
-  class ExposeMetadata protected () extends js.Object {
+  class ExposeMetadata protected () extends StObject {
     def this(target: js.Function, propertyName: String, options: ExposeOptions) = this()
     
     var options: ExposeOptions = js.native

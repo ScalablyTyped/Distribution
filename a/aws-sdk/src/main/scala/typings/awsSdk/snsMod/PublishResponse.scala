@@ -1,11 +1,12 @@
 package typings.awsSdk.snsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PublishResponse extends js.Object {
+trait PublishResponse extends StObject {
   
   /**
     * Unique identifier assigned to the published message. Length Constraint: Maximum 100 characters
@@ -26,30 +27,18 @@ object PublishResponse {
   }
   
   @scala.inline
-  implicit class PublishResponseOps[Self <: PublishResponse] (val x: Self) extends AnyVal {
+  implicit class PublishResponseMutableBuilder[Self <: PublishResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessageId(value: messageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSequenceNumber(value: String): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageId(value: messageId): Self = this.set("MessageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageId: Self = this.set("MessageId", js.undefined)
-    
-    @scala.inline
-    def setSequenceNumber(value: String): Self = this.set("SequenceNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSequenceNumber: Self = this.set("SequenceNumber", js.undefined)
+    def setSequenceNumberUndefined: Self = StObject.set(x, "SequenceNumber", js.undefined)
   }
 }

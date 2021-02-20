@@ -4,6 +4,7 @@ import typings.figma.figmaStrings.JPG
 import typings.figma.figmaStrings.PDF
 import typings.figma.figmaStrings.PNG
 import typings.figma.figmaStrings.SVG
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,24 +14,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.figma.mod.global.ExportSettingsSVG
   - typings.figma.mod.global.ExportSettingsPDF
 */
-trait ExportSettings extends js.Object
+trait ExportSettings extends StObject
 object ExportSettings {
   
   @scala.inline
-  def ExportSettingsImage(format: JPG | PNG): ExportSettings = {
+  def ExportSettingsImage(format: JPG | PNG): typings.figma.mod.global.ExportSettingsImage = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ExportSettings]
+    __obj.asInstanceOf[typings.figma.mod.global.ExportSettingsImage]
   }
   
   @scala.inline
-  def ExportSettingsSVG(format: SVG): ExportSettings = {
+  def ExportSettingsPDF(format: PDF): typings.figma.mod.global.ExportSettingsPDF = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ExportSettings]
+    __obj.asInstanceOf[typings.figma.mod.global.ExportSettingsPDF]
   }
   
   @scala.inline
-  def ExportSettingsPDF(format: PDF): ExportSettings = {
+  def ExportSettingsSVG(format: SVG): typings.figma.mod.global.ExportSettingsSVG = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ExportSettings]
+    __obj.asInstanceOf[typings.figma.mod.global.ExportSettingsSVG]
   }
 }

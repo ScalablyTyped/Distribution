@@ -9,14 +9,14 @@ import typings.babylonjs.nodeMod.Node
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Actions/action", JSImport.Namespace)
-@js.native
-object actionMod extends js.Object {
+object actionMod {
   
+  @JSImport("babylonjs/Actions/action", "Action")
   @js.native
   class Action protected () extends IAction {
     /**
@@ -92,25 +92,30 @@ object actionMod extends js.Object {
     def `then`(action: Action): Action = js.native
   }
   /* static members */
-  @js.native
-  object Action extends js.Object {
+  object Action {
     
+    @JSImport("babylonjs/Actions/action", "Action._GetTargetProperty")
+    @js.native
     def _GetTargetProperty(target: Node): Name = js.native
     /**
       * Internal only
       * @hidden
       */
+    @JSImport("babylonjs/Actions/action", "Action._GetTargetProperty")
+    @js.native
     def _GetTargetProperty(target: Scene): Name = js.native
     
     /**
       * Internal only
       * @hidden
       */
+    @JSImport("babylonjs/Actions/action", "Action._SerializeValueAsString")
+    @js.native
     def _SerializeValueAsString(value: js.Any): String = js.native
   }
   
   @js.native
-  trait IAction extends js.Object {
+  trait IAction extends StObject {
     
     /**
       * Internal only - manager for action

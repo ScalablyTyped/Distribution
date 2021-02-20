@@ -1,12 +1,13 @@
 package typings.grammarkdown.grammarkdownMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/grammarkdown", "BindingTable")
 @js.native
-class BindingTable () extends js.Object {
+class BindingTable () extends StObject {
   
   var addReferenceToSymbol: js.Any = js.native
   

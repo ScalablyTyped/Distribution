@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RangeSelectorOptions extends js.Object {
+trait RangeSelectorOptions extends StObject {
   
   /**
     * (Highstock, Gantt) Whether to enable all buttons from the start. By
@@ -159,147 +160,135 @@ object RangeSelectorOptions {
   }
   
   @scala.inline
-  implicit class RangeSelectorOptionsOps[Self <: RangeSelectorOptions] (val x: Self) extends AnyVal {
+  implicit class RangeSelectorOptionsMutableBuilder[Self <: RangeSelectorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllButtonsEnabled(value: Boolean): Self = StObject.set(x, "allButtonsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllButtonsEnabledUndefined: Self = StObject.set(x, "allButtonsEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonPosition(value: RangeSelectorButtonPositionOptions): Self = StObject.set(x, "buttonPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllButtonsEnabled(value: Boolean): Self = this.set("allButtonsEnabled", value.asInstanceOf[js.Any])
+    def setButtonPositionUndefined: Self = StObject.set(x, "buttonPosition", js.undefined)
     
     @scala.inline
-    def deleteAllButtonsEnabled: Self = this.set("allButtonsEnabled", js.undefined)
+    def setButtonSpacing(value: Double): Self = StObject.set(x, "buttonSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonPosition(value: RangeSelectorButtonPositionOptions): Self = this.set("buttonPosition", value.asInstanceOf[js.Any])
+    def setButtonSpacingUndefined: Self = StObject.set(x, "buttonSpacing", js.undefined)
     
     @scala.inline
-    def deleteButtonPosition: Self = this.set("buttonPosition", js.undefined)
+    def setButtonTheme(value: SVGAttributes): Self = StObject.set(x, "buttonTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonSpacing(value: Double): Self = this.set("buttonSpacing", value.asInstanceOf[js.Any])
+    def setButtonThemeUndefined: Self = StObject.set(x, "buttonTheme", js.undefined)
     
     @scala.inline
-    def deleteButtonSpacing: Self = this.set("buttonSpacing", js.undefined)
+    def setButtons(value: js.Array[RangeSelectorButtonsOptions]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonTheme(value: SVGAttributes): Self = this.set("buttonTheme", value.asInstanceOf[js.Any])
+    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     @scala.inline
-    def deleteButtonTheme: Self = this.set("buttonTheme", js.undefined)
+    def setButtonsVarargs(value: RangeSelectorButtonsOptions*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
     @scala.inline
-    def setButtonsVarargs(value: RangeSelectorButtonsOptions*): Self = this.set("buttons", js.Array(value :_*))
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtons(value: js.Array[RangeSelectorButtonsOptions]): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteButtons: Self = this.set("buttons", js.undefined)
+    def setFloating(value: Boolean): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setFloatingUndefined: Self = StObject.set(x, "floating", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setInputBoxBorderColor(value: ColorString): Self = StObject.set(x, "inputBoxBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloating(value: Boolean): Self = this.set("floating", value.asInstanceOf[js.Any])
+    def setInputBoxBorderColorUndefined: Self = StObject.set(x, "inputBoxBorderColor", js.undefined)
     
     @scala.inline
-    def deleteFloating: Self = this.set("floating", js.undefined)
+    def setInputBoxHeight(value: Double): Self = StObject.set(x, "inputBoxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputBoxBorderColor(value: ColorString): Self = this.set("inputBoxBorderColor", value.asInstanceOf[js.Any])
+    def setInputBoxHeightUndefined: Self = StObject.set(x, "inputBoxHeight", js.undefined)
     
     @scala.inline
-    def deleteInputBoxBorderColor: Self = this.set("inputBoxBorderColor", js.undefined)
+    def setInputBoxWidth(value: Double): Self = StObject.set(x, "inputBoxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputBoxHeight(value: Double): Self = this.set("inputBoxHeight", value.asInstanceOf[js.Any])
+    def setInputBoxWidthUndefined: Self = StObject.set(x, "inputBoxWidth", js.undefined)
     
     @scala.inline
-    def deleteInputBoxHeight: Self = this.set("inputBoxHeight", js.undefined)
+    def setInputDateFormat(value: String): Self = StObject.set(x, "inputDateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputBoxWidth(value: Double): Self = this.set("inputBoxWidth", value.asInstanceOf[js.Any])
+    def setInputDateFormatUndefined: Self = StObject.set(x, "inputDateFormat", js.undefined)
     
     @scala.inline
-    def deleteInputBoxWidth: Self = this.set("inputBoxWidth", js.undefined)
+    def setInputDateParser(value: /* value */ String => Double): Self = StObject.set(x, "inputDateParser", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInputDateFormat(value: String): Self = this.set("inputDateFormat", value.asInstanceOf[js.Any])
+    def setInputDateParserUndefined: Self = StObject.set(x, "inputDateParser", js.undefined)
     
     @scala.inline
-    def deleteInputDateFormat: Self = this.set("inputDateFormat", js.undefined)
+    def setInputEditDateFormat(value: String): Self = StObject.set(x, "inputEditDateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputDateParser(value: /* value */ String => Double): Self = this.set("inputDateParser", js.Any.fromFunction1(value))
+    def setInputEditDateFormatUndefined: Self = StObject.set(x, "inputEditDateFormat", js.undefined)
     
     @scala.inline
-    def deleteInputDateParser: Self = this.set("inputDateParser", js.undefined)
+    def setInputEnabled(value: Boolean): Self = StObject.set(x, "inputEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputEditDateFormat(value: String): Self = this.set("inputEditDateFormat", value.asInstanceOf[js.Any])
+    def setInputEnabledUndefined: Self = StObject.set(x, "inputEnabled", js.undefined)
     
     @scala.inline
-    def deleteInputEditDateFormat: Self = this.set("inputEditDateFormat", js.undefined)
+    def setInputPosition(value: RangeSelectorInputPositionOptions): Self = StObject.set(x, "inputPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputEnabled(value: Boolean): Self = this.set("inputEnabled", value.asInstanceOf[js.Any])
+    def setInputPositionUndefined: Self = StObject.set(x, "inputPosition", js.undefined)
     
     @scala.inline
-    def deleteInputEnabled: Self = this.set("inputEnabled", js.undefined)
+    def setInputStyle(value: CSSObject): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputPosition(value: RangeSelectorInputPositionOptions): Self = this.set("inputPosition", value.asInstanceOf[js.Any])
+    def setInputStyleUndefined: Self = StObject.set(x, "inputStyle", js.undefined)
     
     @scala.inline
-    def deleteInputPosition: Self = this.set("inputPosition", js.undefined)
+    def setLabelStyle(value: CSSObject): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputStyle(value: CSSObject): Self = this.set("inputStyle", value.asInstanceOf[js.Any])
+    def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
     @scala.inline
-    def deleteInputStyle: Self = this.set("inputStyle", js.undefined)
+    def setSelected(value: Double): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelStyle(value: CSSObject): Self = this.set("labelStyle", value.asInstanceOf[js.Any])
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def deleteLabelStyle: Self = this.set("labelStyle", js.undefined)
+    def setVerticalAlign(value: VerticalAlignValue): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelected(value: Double): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
     @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalAlign(value: VerticalAlignValue): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.pulumiKubernetes.inputMod.core.v1
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a source location of a volume to mount, managed by an external CSI driver
   */
 @js.native
-trait CSIVolumeSource extends js.Object {
+trait CSIVolumeSource extends StObject {
   
   /**
     * Driver is the name of the CSI driver that handles this volume. Consult with your admin for the correct name as registered in the cluster.
@@ -46,45 +47,33 @@ object CSIVolumeSource {
   }
   
   @scala.inline
-  implicit class CSIVolumeSourceOps[Self <: CSIVolumeSource] (val x: Self) extends AnyVal {
+  implicit class CSIVolumeSourceMutableBuilder[Self <: CSIVolumeSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDriver(value: Input[String]): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
     
     @scala.inline
-    def setDriver(value: Input[String]): Self = this.set("driver", value.asInstanceOf[js.Any])
+    def setNodePublishSecretRef(value: Input[LocalObjectReference]): Self = StObject.set(x, "nodePublishSecretRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFsType(value: Input[String]): Self = this.set("fsType", value.asInstanceOf[js.Any])
+    def setNodePublishSecretRefUndefined: Self = StObject.set(x, "nodePublishSecretRef", js.undefined)
     
     @scala.inline
-    def deleteFsType: Self = this.set("fsType", js.undefined)
+    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodePublishSecretRef(value: Input[LocalObjectReference]): Self = this.set("nodePublishSecretRef", value.asInstanceOf[js.Any])
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def deleteNodePublishSecretRef: Self = this.set("nodePublishSecretRef", js.undefined)
+    def setVolumeAttributes(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "volumeAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = this.set("readOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
-    
-    @scala.inline
-    def setVolumeAttributes(value: Input[StringDictionary[Input[String]]]): Self = this.set("volumeAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeAttributes: Self = this.set("volumeAttributes", js.undefined)
+    def setVolumeAttributesUndefined: Self = StObject.set(x, "volumeAttributes", js.undefined)
   }
 }

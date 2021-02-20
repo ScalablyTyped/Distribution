@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PathRule extends js.Object {
+trait PathRule extends StObject {
   
   /**
     * The list of path patterns to match. Each must start with / and the only place a * is allowed is at the end following a /. The string fed to the path matcher does not include any
@@ -45,45 +46,33 @@ object PathRule {
   }
   
   @scala.inline
-  implicit class PathRuleOps[Self <: PathRule] (val x: Self) extends AnyVal {
+  implicit class PathRuleMutableBuilder[Self <: PathRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
     
     @scala.inline
-    def setPathsVarargs(value: String*): Self = this.set("paths", js.Array(value :_*))
+    def setRouteAction(value: HttpRouteAction): Self = StObject.set(x, "routeAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaths(value: js.Array[String]): Self = this.set("paths", value.asInstanceOf[js.Any])
+    def setRouteActionUndefined: Self = StObject.set(x, "routeAction", js.undefined)
     
     @scala.inline
-    def deletePaths: Self = this.set("paths", js.undefined)
+    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteAction(value: HttpRouteAction): Self = this.set("routeAction", value.asInstanceOf[js.Any])
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
     @scala.inline
-    def deleteRouteAction: Self = this.set("routeAction", js.undefined)
+    def setUrlRedirect(value: HttpRedirectAction): Self = StObject.set(x, "urlRedirect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
-    
-    @scala.inline
-    def setUrlRedirect(value: HttpRedirectAction): Self = this.set("urlRedirect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlRedirect: Self = this.set("urlRedirect", js.undefined)
+    def setUrlRedirectUndefined: Self = StObject.set(x, "urlRedirect", js.undefined)
   }
 }

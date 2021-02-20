@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DemoteMasterContext extends js.Object {
+trait DemoteMasterContext extends StObject {
   
   /** This is always *sql#demoteMasterContext*. */
   var kind: js.UndefOr[String] = js.native
@@ -32,42 +33,30 @@ object DemoteMasterContext {
   }
   
   @scala.inline
-  implicit class DemoteMasterContextOps[Self <: DemoteMasterContext] (val x: Self) extends AnyVal {
+  implicit class DemoteMasterContextMutableBuilder[Self <: DemoteMasterContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMasterInstanceName(value: String): Self = StObject.set(x, "masterInstanceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setMasterInstanceNameUndefined: Self = StObject.set(x, "masterInstanceName", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setReplicaConfiguration(value: DemoteMasterConfiguration): Self = StObject.set(x, "replicaConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterInstanceName(value: String): Self = this.set("masterInstanceName", value.asInstanceOf[js.Any])
+    def setReplicaConfigurationUndefined: Self = StObject.set(x, "replicaConfiguration", js.undefined)
     
     @scala.inline
-    def deleteMasterInstanceName: Self = this.set("masterInstanceName", js.undefined)
+    def setVerifyGtidConsistency(value: Boolean): Self = StObject.set(x, "verifyGtidConsistency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicaConfiguration(value: DemoteMasterConfiguration): Self = this.set("replicaConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicaConfiguration: Self = this.set("replicaConfiguration", js.undefined)
-    
-    @scala.inline
-    def setVerifyGtidConsistency(value: Boolean): Self = this.set("verifyGtidConsistency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerifyGtidConsistency: Self = this.set("verifyGtidConsistency", js.undefined)
+    def setVerifyGtidConsistencyUndefined: Self = StObject.set(x, "verifyGtidConsistency", js.undefined)
   }
 }

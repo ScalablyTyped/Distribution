@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1p1alpha1OutputConfig extends js.Object {
+trait GoogleCloudDatalabelingV1p1alpha1OutputConfig extends StObject {
   
   /** Output to a file in Cloud Storage. Should be used for labeling output other than image segmentation. */
   var gcsDestination: js.UndefOr[GoogleCloudDatalabelingV1p1alpha1GcsDestination] = js.native
@@ -22,30 +23,18 @@ object GoogleCloudDatalabelingV1p1alpha1OutputConfig {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1p1alpha1OutputConfigOps[Self <: GoogleCloudDatalabelingV1p1alpha1OutputConfig] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1p1alpha1OutputConfigMutableBuilder[Self <: GoogleCloudDatalabelingV1p1alpha1OutputConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGcsDestination(value: GoogleCloudDatalabelingV1p1alpha1GcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGcsDestinationUndefined: Self = StObject.set(x, "gcsDestination", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGcsFolderDestination(value: GoogleCloudDatalabelingV1p1alpha1GcsFolderDestination): Self = StObject.set(x, "gcsFolderDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcsDestination(value: GoogleCloudDatalabelingV1p1alpha1GcsDestination): Self = this.set("gcsDestination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGcsDestination: Self = this.set("gcsDestination", js.undefined)
-    
-    @scala.inline
-    def setGcsFolderDestination(value: GoogleCloudDatalabelingV1p1alpha1GcsFolderDestination): Self = this.set("gcsFolderDestination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGcsFolderDestination: Self = this.set("gcsFolderDestination", js.undefined)
+    def setGcsFolderDestinationUndefined: Self = StObject.set(x, "gcsFolderDestination", js.undefined)
   }
 }

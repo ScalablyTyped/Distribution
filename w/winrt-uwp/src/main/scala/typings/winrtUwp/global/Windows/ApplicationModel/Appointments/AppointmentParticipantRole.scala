@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the role of an item concerning an appointment invitation. */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentParticipantRole")
 @js.native
-object AppointmentParticipantRole extends js.Object {
+object AppointmentParticipantRole extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

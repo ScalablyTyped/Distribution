@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Job extends js.Object {
+trait Job extends StObject {
   
   /**
     * Configuration for criteria to abort the job.
@@ -106,129 +107,117 @@ object Job {
   }
   
   @scala.inline
-  implicit class JobOps[Self <: Job] (val x: Self) extends AnyVal {
+  implicit class JobMutableBuilder[Self <: Job] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbortConfig(value: AbortConfig): Self = StObject.set(x, "abortConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbortConfigUndefined: Self = StObject.set(x, "abortConfig", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComment(value: Comment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbortConfig(value: AbortConfig): Self = this.set("abortConfig", value.asInstanceOf[js.Any])
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def deleteAbortConfig: Self = this.set("abortConfig", js.undefined)
+    def setCompletedAt(value: DateType): Self = StObject.set(x, "completedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: Comment): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setCompletedAtUndefined: Self = StObject.set(x, "completedAt", js.undefined)
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setCreatedAt(value: DateType): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedAt(value: DateType): Self = this.set("completedAt", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def deleteCompletedAt: Self = this.set("completedAt", js.undefined)
+    def setDescription(value: JobDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: DateType): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setForceCanceled(value: Forced): Self = StObject.set(x, "forceCanceled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: JobDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setForceCanceledUndefined: Self = StObject.set(x, "forceCanceled", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setJobArn(value: JobArn): Self = StObject.set(x, "jobArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceCanceled(value: Forced): Self = this.set("forceCanceled", value.asInstanceOf[js.Any])
+    def setJobArnUndefined: Self = StObject.set(x, "jobArn", js.undefined)
     
     @scala.inline
-    def deleteForceCanceled: Self = this.set("forceCanceled", js.undefined)
+    def setJobExecutionsRolloutConfig(value: JobExecutionsRolloutConfig): Self = StObject.set(x, "jobExecutionsRolloutConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobArn(value: JobArn): Self = this.set("jobArn", value.asInstanceOf[js.Any])
+    def setJobExecutionsRolloutConfigUndefined: Self = StObject.set(x, "jobExecutionsRolloutConfig", js.undefined)
     
     @scala.inline
-    def deleteJobArn: Self = this.set("jobArn", js.undefined)
+    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobExecutionsRolloutConfig(value: JobExecutionsRolloutConfig): Self = this.set("jobExecutionsRolloutConfig", value.asInstanceOf[js.Any])
+    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
     @scala.inline
-    def deleteJobExecutionsRolloutConfig: Self = this.set("jobExecutionsRolloutConfig", js.undefined)
+    def setJobProcessDetails(value: JobProcessDetails): Self = StObject.set(x, "jobProcessDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    def setJobProcessDetailsUndefined: Self = StObject.set(x, "jobProcessDetails", js.undefined)
     
     @scala.inline
-    def deleteJobId: Self = this.set("jobId", js.undefined)
+    def setLastUpdatedAt(value: DateType): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobProcessDetails(value: JobProcessDetails): Self = this.set("jobProcessDetails", value.asInstanceOf[js.Any])
+    def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
     @scala.inline
-    def deleteJobProcessDetails: Self = this.set("jobProcessDetails", js.undefined)
+    def setNamespaceId(value: NamespaceId): Self = StObject.set(x, "namespaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedAt(value: DateType): Self = this.set("lastUpdatedAt", value.asInstanceOf[js.Any])
+    def setNamespaceIdUndefined: Self = StObject.set(x, "namespaceId", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedAt: Self = this.set("lastUpdatedAt", js.undefined)
+    def setPresignedUrlConfig(value: PresignedUrlConfig): Self = StObject.set(x, "presignedUrlConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespaceId(value: NamespaceId): Self = this.set("namespaceId", value.asInstanceOf[js.Any])
+    def setPresignedUrlConfigUndefined: Self = StObject.set(x, "presignedUrlConfig", js.undefined)
     
     @scala.inline
-    def deleteNamespaceId: Self = this.set("namespaceId", js.undefined)
+    def setReasonCode(value: ReasonCode): Self = StObject.set(x, "reasonCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPresignedUrlConfig(value: PresignedUrlConfig): Self = this.set("presignedUrlConfig", value.asInstanceOf[js.Any])
+    def setReasonCodeUndefined: Self = StObject.set(x, "reasonCode", js.undefined)
     
     @scala.inline
-    def deletePresignedUrlConfig: Self = this.set("presignedUrlConfig", js.undefined)
+    def setStatus(value: JobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReasonCode(value: ReasonCode): Self = this.set("reasonCode", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteReasonCode: Self = this.set("reasonCode", js.undefined)
+    def setTargetSelection(value: TargetSelection): Self = StObject.set(x, "targetSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: JobStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTargetSelectionUndefined: Self = StObject.set(x, "targetSelection", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTargets(value: JobTargets): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetSelection(value: TargetSelection): Self = this.set("targetSelection", value.asInstanceOf[js.Any])
+    def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
     
     @scala.inline
-    def deleteTargetSelection: Self = this.set("targetSelection", js.undefined)
+    def setTargetsVarargs(value: TargetArn*): Self = StObject.set(x, "targets", js.Array(value :_*))
     
     @scala.inline
-    def setTargetsVarargs(value: TargetArn*): Self = this.set("targets", js.Array(value :_*))
+    def setTimeoutConfig(value: TimeoutConfig): Self = StObject.set(x, "timeoutConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargets(value: JobTargets): Self = this.set("targets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargets: Self = this.set("targets", js.undefined)
-    
-    @scala.inline
-    def setTimeoutConfig(value: TimeoutConfig): Self = this.set("timeoutConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutConfig: Self = this.set("timeoutConfig", js.undefined)
+    def setTimeoutConfigUndefined: Self = StObject.set(x, "timeoutConfig", js.undefined)
   }
 }

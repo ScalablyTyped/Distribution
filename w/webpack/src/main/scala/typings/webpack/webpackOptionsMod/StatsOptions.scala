@@ -7,12 +7,13 @@ import typings.webpack.webpackStrings.log
 import typings.webpack.webpackStrings.none
 import typings.webpack.webpackStrings.verbose
 import typings.webpack.webpackStrings.warn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StatsOptions extends js.Object {
+trait StatsOptions extends StObject {
   
   /**
   	 * fallback value for stats options when an option is not defined (has precedence over local webpack defaults)
@@ -243,312 +244,300 @@ object StatsOptions {
   }
   
   @scala.inline
-  implicit class StatsOptionsOps[Self <: StatsOptions] (val x: Self) extends AnyVal {
+  implicit class StatsOptionsMutableBuilder[Self <: StatsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssets(value: Boolean): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: Boolean): Self = this.set("all", value.asInstanceOf[js.Any])
+    def setAssetsSort(value: String): Self = StObject.set(x, "assetsSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAll: Self = this.set("all", js.undefined)
+    def setAssetsSortUndefined: Self = StObject.set(x, "assetsSort", js.undefined)
     
     @scala.inline
-    def setAssets(value: Boolean): Self = this.set("assets", value.asInstanceOf[js.Any])
+    def setAssetsUndefined: Self = StObject.set(x, "assets", js.undefined)
     
     @scala.inline
-    def deleteAssets: Self = this.set("assets", js.undefined)
+    def setBuiltAt(value: Boolean): Self = StObject.set(x, "builtAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetsSort(value: String): Self = this.set("assetsSort", value.asInstanceOf[js.Any])
+    def setBuiltAtUndefined: Self = StObject.set(x, "builtAt", js.undefined)
     
     @scala.inline
-    def deleteAssetsSort: Self = this.set("assetsSort", js.undefined)
+    def setCached(value: Boolean): Self = StObject.set(x, "cached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuiltAt(value: Boolean): Self = this.set("builtAt", value.asInstanceOf[js.Any])
+    def setCachedAssets(value: Boolean): Self = StObject.set(x, "cachedAssets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBuiltAt: Self = this.set("builtAt", js.undefined)
+    def setCachedAssetsUndefined: Self = StObject.set(x, "cachedAssets", js.undefined)
     
     @scala.inline
-    def setCached(value: Boolean): Self = this.set("cached", value.asInstanceOf[js.Any])
+    def setCachedUndefined: Self = StObject.set(x, "cached", js.undefined)
     
     @scala.inline
-    def deleteCached: Self = this.set("cached", js.undefined)
+    def setChildren(value: Boolean): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCachedAssets(value: Boolean): Self = this.set("cachedAssets", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteCachedAssets: Self = this.set("cachedAssets", js.undefined)
+    def setChunkGroups(value: Boolean): Self = StObject.set(x, "chunkGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: Boolean): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setChunkGroupsUndefined: Self = StObject.set(x, "chunkGroups", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setChunkModules(value: Boolean): Self = StObject.set(x, "chunkModules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunkGroups(value: Boolean): Self = this.set("chunkGroups", value.asInstanceOf[js.Any])
+    def setChunkModulesUndefined: Self = StObject.set(x, "chunkModules", js.undefined)
     
     @scala.inline
-    def deleteChunkGroups: Self = this.set("chunkGroups", js.undefined)
+    def setChunkOrigins(value: Boolean): Self = StObject.set(x, "chunkOrigins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunkModules(value: Boolean): Self = this.set("chunkModules", value.asInstanceOf[js.Any])
+    def setChunkOriginsUndefined: Self = StObject.set(x, "chunkOrigins", js.undefined)
     
     @scala.inline
-    def deleteChunkModules: Self = this.set("chunkModules", js.undefined)
+    def setChunks(value: Boolean): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunkOrigins(value: Boolean): Self = this.set("chunkOrigins", value.asInstanceOf[js.Any])
+    def setChunksSort(value: String): Self = StObject.set(x, "chunksSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChunkOrigins: Self = this.set("chunkOrigins", js.undefined)
+    def setChunksSortUndefined: Self = StObject.set(x, "chunksSort", js.undefined)
     
     @scala.inline
-    def setChunks(value: Boolean): Self = this.set("chunks", value.asInstanceOf[js.Any])
+    def setChunksUndefined: Self = StObject.set(x, "chunks", js.undefined)
     
     @scala.inline
-    def deleteChunks: Self = this.set("chunks", js.undefined)
+    def setColors(value: Boolean | Bold): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunksSort(value: String): Self = this.set("chunksSort", value.asInstanceOf[js.Any])
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def deleteChunksSort: Self = this.set("chunksSort", js.undefined)
+    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: Boolean | Bold): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setDepth(value: Boolean): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setEntrypoints(value: Boolean): Self = StObject.set(x, "entrypoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: Boolean): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setEntrypointsUndefined: Self = StObject.set(x, "entrypoints", js.undefined)
     
     @scala.inline
-    def deleteDepth: Self = this.set("depth", js.undefined)
+    def setEnv(value: Boolean): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntrypoints(value: Boolean): Self = this.set("entrypoints", value.asInstanceOf[js.Any])
+    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
     @scala.inline
-    def deleteEntrypoints: Self = this.set("entrypoints", js.undefined)
+    def setErrorDetails(value: Boolean): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: Boolean): Self = this.set("env", value.asInstanceOf[js.Any])
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def deleteEnv: Self = this.set("env", js.undefined)
+    def setErrors(value: Boolean): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorDetails(value: Boolean): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setExclude(value: FilterTypes | Boolean): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: Boolean): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setExcludeAssets(value: FilterTypes): Self = StObject.set(x, "excludeAssets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
+    def setExcludeAssetsFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "excludeAssets", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExcludeVarargs(value: FilterItemTypes*): Self = this.set("exclude", js.Array(value :_*))
+    def setExcludeAssetsUndefined: Self = StObject.set(x, "excludeAssets", js.undefined)
     
     @scala.inline
-    def setExcludeFunction1(value: /* value */ String => Boolean): Self = this.set("exclude", js.Any.fromFunction1(value))
+    def setExcludeAssetsVarargs(value: FilterItemTypes*): Self = StObject.set(x, "excludeAssets", js.Array(value :_*))
     
     @scala.inline
-    def setExclude(value: FilterTypes | Boolean): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    def setExcludeFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "exclude", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteExclude: Self = this.set("exclude", js.undefined)
+    def setExcludeModules(value: FilterTypes | Boolean): Self = StObject.set(x, "excludeModules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeAssetsVarargs(value: FilterItemTypes*): Self = this.set("excludeAssets", js.Array(value :_*))
+    def setExcludeModulesFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "excludeModules", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExcludeAssetsFunction1(value: /* value */ String => Boolean): Self = this.set("excludeAssets", js.Any.fromFunction1(value))
+    def setExcludeModulesUndefined: Self = StObject.set(x, "excludeModules", js.undefined)
     
     @scala.inline
-    def setExcludeAssets(value: FilterTypes): Self = this.set("excludeAssets", value.asInstanceOf[js.Any])
+    def setExcludeModulesVarargs(value: FilterItemTypes*): Self = StObject.set(x, "excludeModules", js.Array(value :_*))
     
     @scala.inline
-    def deleteExcludeAssets: Self = this.set("excludeAssets", js.undefined)
+    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
     @scala.inline
-    def setExcludeModulesVarargs(value: FilterItemTypes*): Self = this.set("excludeModules", js.Array(value :_*))
+    def setExcludeVarargs(value: FilterItemTypes*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
     @scala.inline
-    def setExcludeModulesFunction1(value: /* value */ String => Boolean): Self = this.set("excludeModules", js.Any.fromFunction1(value))
+    def setHash(value: Boolean): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeModules(value: FilterTypes | Boolean): Self = this.set("excludeModules", value.asInstanceOf[js.Any])
+    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
     @scala.inline
-    def deleteExcludeModules: Self = this.set("excludeModules", js.undefined)
+    def setLogging(value: Boolean | none | error | warn | info | log | verbose): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: Boolean): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setLoggingDebug(value: FilterTypes | Boolean): Self = StObject.set(x, "loggingDebug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHash: Self = this.set("hash", js.undefined)
+    def setLoggingDebugFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "loggingDebug", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLogging(value: Boolean | none | error | warn | info | log | verbose): Self = this.set("logging", value.asInstanceOf[js.Any])
+    def setLoggingDebugUndefined: Self = StObject.set(x, "loggingDebug", js.undefined)
     
     @scala.inline
-    def deleteLogging: Self = this.set("logging", js.undefined)
+    def setLoggingDebugVarargs(value: FilterItemTypes*): Self = StObject.set(x, "loggingDebug", js.Array(value :_*))
     
     @scala.inline
-    def setLoggingDebugVarargs(value: FilterItemTypes*): Self = this.set("loggingDebug", js.Array(value :_*))
+    def setLoggingTrace(value: Boolean): Self = StObject.set(x, "loggingTrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoggingDebugFunction1(value: /* value */ String => Boolean): Self = this.set("loggingDebug", js.Any.fromFunction1(value))
+    def setLoggingTraceUndefined: Self = StObject.set(x, "loggingTrace", js.undefined)
     
     @scala.inline
-    def setLoggingDebug(value: FilterTypes | Boolean): Self = this.set("loggingDebug", value.asInstanceOf[js.Any])
+    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
     @scala.inline
-    def deleteLoggingDebug: Self = this.set("loggingDebug", js.undefined)
+    def setMaxModules(value: Double): Self = StObject.set(x, "maxModules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoggingTrace(value: Boolean): Self = this.set("loggingTrace", value.asInstanceOf[js.Any])
+    def setMaxModulesUndefined: Self = StObject.set(x, "maxModules", js.undefined)
     
     @scala.inline
-    def deleteLoggingTrace: Self = this.set("loggingTrace", js.undefined)
+    def setModuleAssets(value: Boolean): Self = StObject.set(x, "moduleAssets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxModules(value: Double): Self = this.set("maxModules", value.asInstanceOf[js.Any])
+    def setModuleAssetsUndefined: Self = StObject.set(x, "moduleAssets", js.undefined)
     
     @scala.inline
-    def deleteMaxModules: Self = this.set("maxModules", js.undefined)
+    def setModuleTrace(value: Boolean): Self = StObject.set(x, "moduleTrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModuleAssets(value: Boolean): Self = this.set("moduleAssets", value.asInstanceOf[js.Any])
+    def setModuleTraceUndefined: Self = StObject.set(x, "moduleTrace", js.undefined)
     
     @scala.inline
-    def deleteModuleAssets: Self = this.set("moduleAssets", js.undefined)
+    def setModules(value: Boolean): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModuleTrace(value: Boolean): Self = this.set("moduleTrace", value.asInstanceOf[js.Any])
+    def setModulesSort(value: String): Self = StObject.set(x, "modulesSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModuleTrace: Self = this.set("moduleTrace", js.undefined)
+    def setModulesSortUndefined: Self = StObject.set(x, "modulesSort", js.undefined)
     
     @scala.inline
-    def setModules(value: Boolean): Self = this.set("modules", value.asInstanceOf[js.Any])
+    def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
     
     @scala.inline
-    def deleteModules: Self = this.set("modules", js.undefined)
+    def setNestedModules(value: Boolean): Self = StObject.set(x, "nestedModules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModulesSort(value: String): Self = this.set("modulesSort", value.asInstanceOf[js.Any])
+    def setNestedModulesUndefined: Self = StObject.set(x, "nestedModules", js.undefined)
     
     @scala.inline
-    def deleteModulesSort: Self = this.set("modulesSort", js.undefined)
+    def setOptimizationBailout(value: Boolean): Self = StObject.set(x, "optimizationBailout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNestedModules(value: Boolean): Self = this.set("nestedModules", value.asInstanceOf[js.Any])
+    def setOptimizationBailoutUndefined: Self = StObject.set(x, "optimizationBailout", js.undefined)
     
     @scala.inline
-    def deleteNestedModules: Self = this.set("nestedModules", js.undefined)
+    def setOutputPath(value: Boolean): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptimizationBailout(value: Boolean): Self = this.set("optimizationBailout", value.asInstanceOf[js.Any])
+    def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
     
     @scala.inline
-    def deleteOptimizationBailout: Self = this.set("optimizationBailout", js.undefined)
+    def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputPath(value: Boolean): Self = this.set("outputPath", value.asInstanceOf[js.Any])
+    def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
     
     @scala.inline
-    def deleteOutputPath: Self = this.set("outputPath", js.undefined)
+    def setProvidedExports(value: Boolean): Self = StObject.set(x, "providedExports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformance(value: Boolean): Self = this.set("performance", value.asInstanceOf[js.Any])
+    def setProvidedExportsUndefined: Self = StObject.set(x, "providedExports", js.undefined)
     
     @scala.inline
-    def deletePerformance: Self = this.set("performance", js.undefined)
+    def setPublicPath(value: Boolean): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvidedExports(value: Boolean): Self = this.set("providedExports", value.asInstanceOf[js.Any])
+    def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
     
     @scala.inline
-    def deleteProvidedExports: Self = this.set("providedExports", js.undefined)
+    def setReasons(value: Boolean): Self = StObject.set(x, "reasons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicPath(value: Boolean): Self = this.set("publicPath", value.asInstanceOf[js.Any])
+    def setReasonsUndefined: Self = StObject.set(x, "reasons", js.undefined)
     
     @scala.inline
-    def deletePublicPath: Self = this.set("publicPath", js.undefined)
+    def setSource(value: Boolean): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReasons(value: Boolean): Self = this.set("reasons", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteReasons: Self = this.set("reasons", js.undefined)
+    def setTimings(value: Boolean): Self = StObject.set(x, "timings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: Boolean): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setTimingsUndefined: Self = StObject.set(x, "timings", js.undefined)
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setUsedExports(value: Boolean): Self = StObject.set(x, "usedExports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimings(value: Boolean): Self = this.set("timings", value.asInstanceOf[js.Any])
+    def setUsedExportsUndefined: Self = StObject.set(x, "usedExports", js.undefined)
     
     @scala.inline
-    def deleteTimings: Self = this.set("timings", js.undefined)
+    def setVersion(value: Boolean): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsedExports(value: Boolean): Self = this.set("usedExports", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteUsedExports: Self = this.set("usedExports", js.undefined)
+    def setWarnings(value: Boolean): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: Boolean): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setWarningsFilter(value: FilterTypes): Self = StObject.set(x, "warningsFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setWarningsFilterFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "warningsFilter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWarnings(value: Boolean): Self = this.set("warnings", value.asInstanceOf[js.Any])
+    def setWarningsFilterUndefined: Self = StObject.set(x, "warningsFilter", js.undefined)
     
     @scala.inline
-    def deleteWarnings: Self = this.set("warnings", js.undefined)
+    def setWarningsFilterVarargs(value: FilterItemTypes*): Self = StObject.set(x, "warningsFilter", js.Array(value :_*))
     
     @scala.inline
-    def setWarningsFilterVarargs(value: FilterItemTypes*): Self = this.set("warningsFilter", js.Array(value :_*))
-    
-    @scala.inline
-    def setWarningsFilterFunction1(value: /* value */ String => Boolean): Self = this.set("warningsFilter", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWarningsFilter(value: FilterTypes): Self = this.set("warningsFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarningsFilter: Self = this.set("warningsFilter", js.undefined)
+    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
   }
 }

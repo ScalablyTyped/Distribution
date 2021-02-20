@@ -15,12 +15,13 @@ import typings.minappEnv.OQ
 import typings.minappEnv.Promise
 import typings.minappEnv.WXNS.IDownloadFileTask
 import typings.minappEnv.WXNS.IUploadFileTask
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CallFunction extends js.Object {
+trait CallFunction extends StObject {
   
   // callFunction: (param: ICloud.CallFunctionParam) => Promise<ICloud.CallFunctionResult> | void,
   // uploadFile: (param: ICloud.UploadFileParam) => Promise<ICloud.UploadFileResult> | WXNS.IUploadFileTask,

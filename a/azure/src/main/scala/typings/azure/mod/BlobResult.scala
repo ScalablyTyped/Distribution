@@ -1,12 +1,13 @@
 package typings.azure.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "BlobResult")
 @js.native
-class BlobResult () extends js.Object {
+class BlobResult () extends StObject {
   def this(container: String) = this()
   def this(container: String, blob: String) = this()
   
@@ -85,11 +86,13 @@ class BlobResult () extends js.Object {
   var sequenceNumber: String = js.native
 }
 /* static members */
-@JSImport("azure", "BlobResult")
-@js.native
-object BlobResult extends js.Object {
+object BlobResult {
   
+  @JSImport("azure", "BlobResult.parse")
+  @js.native
   def parse(blobXml: js.Any): BlobResult = js.native
   
+  @JSImport("azure", "BlobResult.setHeadersFromBlob")
+  @js.native
   def setHeadersFromBlob(webResource: WebResource, blob: BlobResult): Unit = js.native
 }

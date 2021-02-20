@@ -2,12 +2,13 @@ package typings.mangopay2NodejsSdk.mod
 
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DIRECT
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.WEB
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPayInExecutionType extends js.Object {
+trait IPayInExecutionType extends StObject {
   
   var Direct: DIRECT = js.native
   
@@ -22,24 +23,12 @@ object IPayInExecutionType {
   }
   
   @scala.inline
-  implicit class IPayInExecutionTypeOps[Self <: IPayInExecutionType] (val x: Self) extends AnyVal {
+  implicit class IPayInExecutionTypeMutableBuilder[Self <: IPayInExecutionType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirect(value: DIRECT): Self = StObject.set(x, "Direct", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDirect(value: DIRECT): Self = this.set("Direct", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeb(value: WEB): Self = this.set("Web", value.asInstanceOf[js.Any])
+    def setWeb(value: WEB): Self = StObject.set(x, "Web", value.asInstanceOf[js.Any])
   }
 }

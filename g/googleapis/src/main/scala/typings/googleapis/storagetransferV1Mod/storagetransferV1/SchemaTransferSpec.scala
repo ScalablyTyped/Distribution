@@ -1,5 +1,6 @@
 package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Configuration for running a transfer.
   */
 @js.native
-trait SchemaTransferSpec extends js.Object {
+trait SchemaTransferSpec extends StObject {
   
   /**
     * An AWS S3 data source.
@@ -54,54 +55,42 @@ object SchemaTransferSpec {
   }
   
   @scala.inline
-  implicit class SchemaTransferSpecOps[Self <: SchemaTransferSpec] (val x: Self) extends AnyVal {
+  implicit class SchemaTransferSpecMutableBuilder[Self <: SchemaTransferSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsS3DataSource(value: SchemaAwsS3Data): Self = StObject.set(x, "awsS3DataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsS3DataSourceUndefined: Self = StObject.set(x, "awsS3DataSource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGcsDataSink(value: SchemaGcsData): Self = StObject.set(x, "gcsDataSink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsS3DataSource(value: SchemaAwsS3Data): Self = this.set("awsS3DataSource", value.asInstanceOf[js.Any])
+    def setGcsDataSinkUndefined: Self = StObject.set(x, "gcsDataSink", js.undefined)
     
     @scala.inline
-    def deleteAwsS3DataSource: Self = this.set("awsS3DataSource", js.undefined)
+    def setGcsDataSource(value: SchemaGcsData): Self = StObject.set(x, "gcsDataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcsDataSink(value: SchemaGcsData): Self = this.set("gcsDataSink", value.asInstanceOf[js.Any])
+    def setGcsDataSourceUndefined: Self = StObject.set(x, "gcsDataSource", js.undefined)
     
     @scala.inline
-    def deleteGcsDataSink: Self = this.set("gcsDataSink", js.undefined)
+    def setHttpDataSource(value: SchemaHttpData): Self = StObject.set(x, "httpDataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcsDataSource(value: SchemaGcsData): Self = this.set("gcsDataSource", value.asInstanceOf[js.Any])
+    def setHttpDataSourceUndefined: Self = StObject.set(x, "httpDataSource", js.undefined)
     
     @scala.inline
-    def deleteGcsDataSource: Self = this.set("gcsDataSource", js.undefined)
+    def setObjectConditions(value: SchemaObjectConditions): Self = StObject.set(x, "objectConditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpDataSource(value: SchemaHttpData): Self = this.set("httpDataSource", value.asInstanceOf[js.Any])
+    def setObjectConditionsUndefined: Self = StObject.set(x, "objectConditions", js.undefined)
     
     @scala.inline
-    def deleteHttpDataSource: Self = this.set("httpDataSource", js.undefined)
+    def setTransferOptions(value: SchemaTransferOptions): Self = StObject.set(x, "transferOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectConditions(value: SchemaObjectConditions): Self = this.set("objectConditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectConditions: Self = this.set("objectConditions", js.undefined)
-    
-    @scala.inline
-    def setTransferOptions(value: SchemaTransferOptions): Self = this.set("transferOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransferOptions: Self = this.set("transferOptions", js.undefined)
+    def setTransferOptionsUndefined: Self = StObject.set(x, "transferOptions", js.undefined)
   }
 }

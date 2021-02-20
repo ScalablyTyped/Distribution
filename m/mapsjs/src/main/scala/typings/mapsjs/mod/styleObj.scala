@@ -1,11 +1,12 @@
 package typings.mapsjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait styleObj extends js.Object {
+trait styleObj extends StObject {
   
   var dashArray: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object styleObj {
   }
   
   @scala.inline
-  implicit class styleObjOps[Self <: styleObj] (val x: Self) extends AnyVal {
+  implicit class styleObjMutableBuilder[Self <: styleObj] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDashArray(value: String): Self = StObject.set(x, "dashArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDashArrayUndefined: Self = StObject.set(x, "dashArray", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashArray(value: String): Self = this.set("dashArray", value.asInstanceOf[js.Any])
+    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
     @scala.inline
-    def deleteDashArray: Self = this.set("dashArray", js.undefined)
+    def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillColor(value: String): Self = this.set("fillColor", value.asInstanceOf[js.Any])
+    def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
     @scala.inline
-    def deleteFillColor: Self = this.set("fillColor", js.undefined)
+    def setOutlineColor(value: String): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillOpacity(value: Double): Self = this.set("fillOpacity", value.asInstanceOf[js.Any])
+    def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
     
     @scala.inline
-    def deleteFillOpacity: Self = this.set("fillOpacity", js.undefined)
+    def setOutlineOpacity(value: Double): Self = StObject.set(x, "outlineOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineColor(value: String): Self = this.set("outlineColor", value.asInstanceOf[js.Any])
+    def setOutlineOpacityUndefined: Self = StObject.set(x, "outlineOpacity", js.undefined)
     
     @scala.inline
-    def deleteOutlineColor: Self = this.set("outlineColor", js.undefined)
+    def setOutlineThicknessPix(value: Double): Self = StObject.set(x, "outlineThicknessPix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineOpacity(value: Double): Self = this.set("outlineOpacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutlineOpacity: Self = this.set("outlineOpacity", js.undefined)
-    
-    @scala.inline
-    def setOutlineThicknessPix(value: Double): Self = this.set("outlineThicknessPix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutlineThicknessPix: Self = this.set("outlineThicknessPix", js.undefined)
+    def setOutlineThicknessPixUndefined: Self = StObject.set(x, "outlineThicknessPix", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Page
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FontSizes extends js.Object {
+trait FontSizes extends StObject {
   
   /**
     * Default fixed font size.
@@ -27,30 +28,18 @@ object FontSizes {
   }
   
   @scala.inline
-  implicit class FontSizesOps[Self <: FontSizes] (val x: Self) extends AnyVal {
+  implicit class FontSizesMutableBuilder[Self <: FontSizes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFixed(value: integer): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStandard(value: integer): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixed(value: integer): Self = this.set("fixed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFixed: Self = this.set("fixed", js.undefined)
-    
-    @scala.inline
-    def setStandard(value: integer): Self = this.set("standard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStandard: Self = this.set("standard", js.undefined)
+    def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
   }
 }

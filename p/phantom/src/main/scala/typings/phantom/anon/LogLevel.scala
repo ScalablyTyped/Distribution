@@ -4,12 +4,13 @@ import typings.phantom.phantomStrings.debug
 import typings.phantom.phantomStrings.error
 import typings.phantom.phantomStrings.info
 import typings.phantom.phantomStrings.warn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LogLevel extends js.Object {
+trait LogLevel extends StObject {
   
   var logLevel: js.UndefOr[debug | info | warn | error] = js.native
   
@@ -28,42 +29,30 @@ object LogLevel {
   }
   
   @scala.inline
-  implicit class LogLevelOps[Self <: LogLevel] (val x: Self) extends AnyVal {
+  implicit class LogLevelMutableBuilder[Self <: LogLevel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogLevel(value: debug | info | warn | error): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogger(value: Debug): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogLevel(value: debug | info | warn | error): Self = this.set("logLevel", value.asInstanceOf[js.Any])
+    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
     @scala.inline
-    def deleteLogLevel: Self = this.set("logLevel", js.undefined)
+    def setPhantomPath(value: String): Self = StObject.set(x, "phantomPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogger(value: Debug): Self = this.set("logger", value.asInstanceOf[js.Any])
+    def setPhantomPathUndefined: Self = StObject.set(x, "phantomPath", js.undefined)
     
     @scala.inline
-    def deleteLogger: Self = this.set("logger", js.undefined)
+    def setShimPath(value: String): Self = StObject.set(x, "shimPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhantomPath(value: String): Self = this.set("phantomPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhantomPath: Self = this.set("phantomPath", js.undefined)
-    
-    @scala.inline
-    def setShimPath(value: String): Self = this.set("shimPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShimPath: Self = this.set("shimPath", js.undefined)
+    def setShimPathUndefined: Self = StObject.set(x, "shimPath", js.undefined)
   }
 }

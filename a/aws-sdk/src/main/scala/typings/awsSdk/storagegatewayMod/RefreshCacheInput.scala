@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RefreshCacheInput extends js.Object {
+trait RefreshCacheInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the file share you want to refresh.
@@ -31,36 +32,24 @@ object RefreshCacheInput {
   }
   
   @scala.inline
-  implicit class RefreshCacheInputOps[Self <: RefreshCacheInput] (val x: Self) extends AnyVal {
+  implicit class RefreshCacheInputMutableBuilder[Self <: RefreshCacheInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFolderList(value: FolderList): Self = StObject.set(x, "FolderList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFolderListUndefined: Self = StObject.set(x, "FolderList", js.undefined)
     
     @scala.inline
-    def setFileShareARN(value: FileShareARN): Self = this.set("FileShareARN", value.asInstanceOf[js.Any])
+    def setFolderListVarargs(value: Folder*): Self = StObject.set(x, "FolderList", js.Array(value :_*))
     
     @scala.inline
-    def setFolderListVarargs(value: Folder*): Self = this.set("FolderList", js.Array(value :_*))
+    def setRecursive(value: Boolean): Self = StObject.set(x, "Recursive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolderList(value: FolderList): Self = this.set("FolderList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFolderList: Self = this.set("FolderList", js.undefined)
-    
-    @scala.inline
-    def setRecursive(value: Boolean): Self = this.set("Recursive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecursive: Self = this.set("Recursive", js.undefined)
+    def setRecursiveUndefined: Self = StObject.set(x, "Recursive", js.undefined)
   }
 }

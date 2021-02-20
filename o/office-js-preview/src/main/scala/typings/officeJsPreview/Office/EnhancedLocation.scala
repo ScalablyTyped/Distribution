@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnhancedLocation extends js.Object {
+trait EnhancedLocation extends StObject {
   
   /**
     * Adds to the set of locations associated with the appointment.

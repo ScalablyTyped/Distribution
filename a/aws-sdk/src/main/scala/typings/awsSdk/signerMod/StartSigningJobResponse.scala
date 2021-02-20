@@ -1,11 +1,12 @@
 package typings.awsSdk.signerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartSigningJobResponse extends js.Object {
+trait StartSigningJobResponse extends StObject {
   
   /**
     * The ID of your signing job.
@@ -21,24 +22,12 @@ object StartSigningJobResponse {
   }
   
   @scala.inline
-  implicit class StartSigningJobResponseOps[Self <: StartSigningJobResponse] (val x: Self) extends AnyVal {
+  implicit class StartSigningJobResponseMutableBuilder[Self <: StartSigningJobResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobId: Self = this.set("jobId", js.undefined)
+    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
   }
 }

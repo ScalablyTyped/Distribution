@@ -5,13 +5,14 @@ import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrtUwp.Windows.Foundation.Collections.IMap
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the content-related properties of an item (like a file or folder). */
 @js.native
-trait StorageItemContentProperties extends js.Object {
+trait StorageItemContentProperties extends StObject {
   
   /**
     * Retrieves the document properties of the item (like a file of folder).

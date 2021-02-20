@@ -1,12 +1,13 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 2. System (HW)
 @js.native
-trait RaspberryRevisionData extends js.Object {
+trait RaspberryRevisionData extends StObject {
   
   var manufacturer: String = js.native
   
@@ -26,30 +27,18 @@ object RaspberryRevisionData {
   }
   
   @scala.inline
-  implicit class RaspberryRevisionDataOps[Self <: RaspberryRevisionData] (val x: Self) extends AnyVal {
+  implicit class RaspberryRevisionDataMutableBuilder[Self <: RaspberryRevisionData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProcessor(value: String): Self = StObject.set(x, "processor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProcessor(value: String): Self = this.set("processor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRevision(value: String): Self = this.set("revision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An opaque binary blob file to install on the device before the test starts.
   */
 @js.native
-trait SchemaObbFile extends js.Object {
+trait SchemaObbFile extends StObject {
   
   /**
     * Required. Opaque Binary Blob (OBB) file(s) to install on the device.
@@ -33,30 +34,18 @@ object SchemaObbFile {
   }
   
   @scala.inline
-  implicit class SchemaObbFileOps[Self <: SchemaObbFile] (val x: Self) extends AnyVal {
+  implicit class SchemaObbFileMutableBuilder[Self <: SchemaObbFile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObb(value: SchemaFileReference): Self = StObject.set(x, "obb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObbFileName(value: String): Self = StObject.set(x, "obbFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObbFileNameUndefined: Self = StObject.set(x, "obbFileName", js.undefined)
     
     @scala.inline
-    def setObb(value: SchemaFileReference): Self = this.set("obb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObb: Self = this.set("obb", js.undefined)
-    
-    @scala.inline
-    def setObbFileName(value: String): Self = this.set("obbFileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObbFileName: Self = this.set("obbFileName", js.undefined)
+    def setObbUndefined: Self = StObject.set(x, "obb", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.fastJsonStableStringify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fast-json-stable-stringify", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("fast-json-stable-stringify", JSImport.Namespace)
+  @js.native
   def apply(obj: js.Any): String = js.native
 }

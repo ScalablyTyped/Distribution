@@ -1,12 +1,13 @@
 package typings.nodal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodal", "Database")
 @js.native
-class Database () extends js.Object {
+class Database () extends StObject {
   
   var __logColorFuncs: js.Array[js.Function] = js.native
   

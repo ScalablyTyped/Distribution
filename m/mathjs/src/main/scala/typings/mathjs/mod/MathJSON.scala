@@ -1,11 +1,12 @@
 package typings.mathjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MathJSON extends js.Object {
+trait MathJSON extends StObject {
   
   var fixPrefix: js.UndefOr[Boolean] = js.native
   
@@ -24,36 +25,24 @@ object MathJSON {
   }
   
   @scala.inline
-  implicit class MathJSONOps[Self <: MathJSON] (val x: Self) extends AnyVal {
+  implicit class MathJSONMutableBuilder[Self <: MathJSON] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFixPrefix(value: Boolean): Self = StObject.set(x, "fixPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFixPrefixUndefined: Self = StObject.set(x, "fixPrefix", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMathjs(value: String): Self = StObject.set(x, "mathjs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
+    def setMathjsUndefined: Self = StObject.set(x, "mathjs", js.undefined)
     
     @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixPrefix(value: Boolean): Self = this.set("fixPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFixPrefix: Self = this.set("fixPrefix", js.undefined)
-    
-    @scala.inline
-    def setMathjs(value: String): Self = this.set("mathjs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMathjs: Self = this.set("mathjs", js.undefined)
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

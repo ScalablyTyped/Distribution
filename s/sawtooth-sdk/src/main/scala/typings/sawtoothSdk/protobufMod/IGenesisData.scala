@@ -1,11 +1,12 @@
 package typings.sawtoothSdk.protobufMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGenesisData extends js.Object {
+trait IGenesisData extends StObject {
   
   /** GenesisData batches */
   var batches: js.UndefOr[js.Array[IBatch] | Null] = js.native
@@ -19,30 +20,18 @@ object IGenesisData {
   }
   
   @scala.inline
-  implicit class IGenesisDataOps[Self <: IGenesisData] (val x: Self) extends AnyVal {
+  implicit class IGenesisDataMutableBuilder[Self <: IGenesisData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatches(value: js.Array[IBatch]): Self = StObject.set(x, "batches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchesNull: Self = StObject.set(x, "batches", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchesUndefined: Self = StObject.set(x, "batches", js.undefined)
     
     @scala.inline
-    def setBatchesVarargs(value: IBatch*): Self = this.set("batches", js.Array(value :_*))
-    
-    @scala.inline
-    def setBatches(value: js.Array[IBatch]): Self = this.set("batches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBatches: Self = this.set("batches", js.undefined)
-    
-    @scala.inline
-    def setBatchesNull: Self = this.set("batches", null)
+    def setBatchesVarargs(value: IBatch*): Self = StObject.set(x, "batches", js.Array(value :_*))
   }
 }

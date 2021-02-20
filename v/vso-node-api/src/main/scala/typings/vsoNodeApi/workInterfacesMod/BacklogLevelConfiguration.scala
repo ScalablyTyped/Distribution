@@ -2,12 +2,13 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemFieldReference
 import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemTypeReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BacklogLevelConfiguration extends js.Object {
+trait BacklogLevelConfiguration extends StObject {
   
   /**
     * List of fields to include in Add Panel
@@ -73,54 +74,42 @@ object BacklogLevelConfiguration {
   }
   
   @scala.inline
-  implicit class BacklogLevelConfigurationOps[Self <: BacklogLevelConfiguration] (val x: Self) extends AnyVal {
+  implicit class BacklogLevelConfigurationMutableBuilder[Self <: BacklogLevelConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddPanelFields(value: js.Array[WorkItemFieldReference]): Self = StObject.set(x, "addPanelFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddPanelFieldsVarargs(value: WorkItemFieldReference*): Self = StObject.set(x, "addPanelFields", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddPanelFieldsVarargs(value: WorkItemFieldReference*): Self = this.set("addPanelFields", js.Array(value :_*))
+    def setColumnFields(value: js.Array[BacklogColumn]): Self = StObject.set(x, "columnFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddPanelFields(value: js.Array[WorkItemFieldReference]): Self = this.set("addPanelFields", value.asInstanceOf[js.Any])
+    def setColumnFieldsVarargs(value: BacklogColumn*): Self = StObject.set(x, "columnFields", js.Array(value :_*))
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDefaultWorkItemType(value: WorkItemTypeReference): Self = StObject.set(x, "defaultWorkItemType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnFieldsVarargs(value: BacklogColumn*): Self = this.set("columnFields", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnFields(value: js.Array[BacklogColumn]): Self = this.set("columnFields", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultWorkItemType(value: WorkItemTypeReference): Self = this.set("defaultWorkItemType", value.asInstanceOf[js.Any])
+    def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setWorkItemCountLimit(value: Double): Self = StObject.set(x, "workItemCountLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setWorkItemTypes(value: js.Array[WorkItemTypeReference]): Self = StObject.set(x, "workItemTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRank(value: Double): Self = this.set("rank", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkItemCountLimit(value: Double): Self = this.set("workItemCountLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkItemTypesVarargs(value: WorkItemTypeReference*): Self = this.set("workItemTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkItemTypes(value: js.Array[WorkItemTypeReference]): Self = this.set("workItemTypes", value.asInstanceOf[js.Any])
+    def setWorkItemTypesVarargs(value: WorkItemTypeReference*): Self = StObject.set(x, "workItemTypes", js.Array(value :_*))
   }
 }

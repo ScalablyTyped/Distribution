@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsreporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoalData extends js.Object {
+trait GoalData extends StObject {
   
   /** URL of the page where this goal was completed. */
   var goalCompletionLocation: js.UndefOr[String] = js.native
@@ -40,66 +41,54 @@ object GoalData {
   }
   
   @scala.inline
-  implicit class GoalDataOps[Self <: GoalData] (val x: Self) extends AnyVal {
+  implicit class GoalDataMutableBuilder[Self <: GoalData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGoalCompletionLocation(value: String): Self = StObject.set(x, "goalCompletionLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGoalCompletionLocationUndefined: Self = StObject.set(x, "goalCompletionLocation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGoalCompletions(value: String): Self = StObject.set(x, "goalCompletions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoalCompletionLocation(value: String): Self = this.set("goalCompletionLocation", value.asInstanceOf[js.Any])
+    def setGoalCompletionsUndefined: Self = StObject.set(x, "goalCompletions", js.undefined)
     
     @scala.inline
-    def deleteGoalCompletionLocation: Self = this.set("goalCompletionLocation", js.undefined)
+    def setGoalIndex(value: Double): Self = StObject.set(x, "goalIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoalCompletions(value: String): Self = this.set("goalCompletions", value.asInstanceOf[js.Any])
+    def setGoalIndexUndefined: Self = StObject.set(x, "goalIndex", js.undefined)
     
     @scala.inline
-    def deleteGoalCompletions: Self = this.set("goalCompletions", js.undefined)
+    def setGoalName(value: String): Self = StObject.set(x, "goalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoalIndex(value: Double): Self = this.set("goalIndex", value.asInstanceOf[js.Any])
+    def setGoalNameUndefined: Self = StObject.set(x, "goalName", js.undefined)
     
     @scala.inline
-    def deleteGoalIndex: Self = this.set("goalIndex", js.undefined)
+    def setGoalPreviousStep1(value: String): Self = StObject.set(x, "goalPreviousStep1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoalName(value: String): Self = this.set("goalName", value.asInstanceOf[js.Any])
+    def setGoalPreviousStep1Undefined: Self = StObject.set(x, "goalPreviousStep1", js.undefined)
     
     @scala.inline
-    def deleteGoalName: Self = this.set("goalName", js.undefined)
+    def setGoalPreviousStep2(value: String): Self = StObject.set(x, "goalPreviousStep2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoalPreviousStep1(value: String): Self = this.set("goalPreviousStep1", value.asInstanceOf[js.Any])
+    def setGoalPreviousStep2Undefined: Self = StObject.set(x, "goalPreviousStep2", js.undefined)
     
     @scala.inline
-    def deleteGoalPreviousStep1: Self = this.set("goalPreviousStep1", js.undefined)
+    def setGoalPreviousStep3(value: String): Self = StObject.set(x, "goalPreviousStep3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoalPreviousStep2(value: String): Self = this.set("goalPreviousStep2", value.asInstanceOf[js.Any])
+    def setGoalPreviousStep3Undefined: Self = StObject.set(x, "goalPreviousStep3", js.undefined)
     
     @scala.inline
-    def deleteGoalPreviousStep2: Self = this.set("goalPreviousStep2", js.undefined)
+    def setGoalValue(value: Double): Self = StObject.set(x, "goalValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoalPreviousStep3(value: String): Self = this.set("goalPreviousStep3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGoalPreviousStep3: Self = this.set("goalPreviousStep3", js.undefined)
-    
-    @scala.inline
-    def setGoalValue(value: Double): Self = this.set("goalValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGoalValue: Self = this.set("goalValue", js.undefined)
+    def setGoalValueUndefined: Self = StObject.set(x, "goalValue", js.undefined)
   }
 }

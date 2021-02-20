@@ -1,11 +1,12 @@
 package typings.reactNativeMaterialKit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RadioStyle extends js.Object {
+trait RadioStyle extends StObject {
   
   var borderOffColor: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object RadioStyle {
   }
   
   @scala.inline
-  implicit class RadioStyleOps[Self <: RadioStyle] (val x: Self) extends AnyVal {
+  implicit class RadioStyleMutableBuilder[Self <: RadioStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderOffColor(value: String): Self = StObject.set(x, "borderOffColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderOffColorUndefined: Self = StObject.set(x, "borderOffColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderOnColor(value: String): Self = StObject.set(x, "borderOnColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderOffColor(value: String): Self = this.set("borderOffColor", value.asInstanceOf[js.Any])
+    def setBorderOnColorUndefined: Self = StObject.set(x, "borderOnColor", js.undefined)
     
     @scala.inline
-    def deleteBorderOffColor: Self = this.set("borderOffColor", js.undefined)
+    def setExtraRippleRadius(value: Double): Self = StObject.set(x, "extraRippleRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderOnColor(value: String): Self = this.set("borderOnColor", value.asInstanceOf[js.Any])
+    def setExtraRippleRadiusUndefined: Self = StObject.set(x, "extraRippleRadius", js.undefined)
     
     @scala.inline
-    def deleteBorderOnColor: Self = this.set("borderOnColor", js.undefined)
+    def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraRippleRadius(value: Double): Self = this.set("extraRippleRadius", value.asInstanceOf[js.Any])
+    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
     @scala.inline
-    def deleteExtraRippleRadius: Self = this.set("extraRippleRadius", js.undefined)
+    def setRippleColor(value: String): Self = StObject.set(x, "rippleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillColor(value: String): Self = this.set("fillColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFillColor: Self = this.set("fillColor", js.undefined)
-    
-    @scala.inline
-    def setRippleColor(value: String): Self = this.set("rippleColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRippleColor: Self = this.set("rippleColor", js.undefined)
+    def setRippleColorUndefined: Self = StObject.set(x, "rippleColor", js.undefined)
   }
 }

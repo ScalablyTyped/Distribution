@@ -1,14 +1,21 @@
 package typings.antDesignIcons
 
+import org.scalablytyped.runtime.Shortcut
 import typings.antDesignIcons.anon.PickAntdIconPropsmaxrequi
 import typings.react.mod.ForwardRefExoticComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons/CloudServerOutlined", JSImport.Namespace)
-@js.native
-object antDesignIconsCloudServerOutlinedMod extends js.Object {
+object antDesignIconsCloudServerOutlinedMod extends Shortcut {
   
+  @JSImport("@ant-design/icons/CloudServerOutlined", JSImport.Default)
+  @js.native
   val default: ForwardRefExoticComponent[PickAntdIconPropsmaxrequi] = js.native
+  
+  type _To = ForwardRefExoticComponent[PickAntdIconPropsmaxrequi]
+  
+  /* This means you don't have to write `default`, but can instead just say `antDesignIconsCloudServerOutlinedMod.foo` */
+  override def _to: ForwardRefExoticComponent[PickAntdIconPropsmaxrequi] = default
 }

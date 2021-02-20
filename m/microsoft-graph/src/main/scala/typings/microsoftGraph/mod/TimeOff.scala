@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,45 +26,33 @@ object TimeOff {
   }
   
   @scala.inline
-  implicit class TimeOffOps[Self <: TimeOff] (val x: Self) extends AnyVal {
+  implicit class TimeOffMutableBuilder[Self <: TimeOff] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDraftTimeOff(value: NullableOption[TimeOffItem]): Self = StObject.set(x, "draftTimeOff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDraftTimeOffNull: Self = StObject.set(x, "draftTimeOff", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDraftTimeOffUndefined: Self = StObject.set(x, "draftTimeOff", js.undefined)
     
     @scala.inline
-    def setDraftTimeOff(value: NullableOption[TimeOffItem]): Self = this.set("draftTimeOff", value.asInstanceOf[js.Any])
+    def setSharedTimeOff(value: NullableOption[TimeOffItem]): Self = StObject.set(x, "sharedTimeOff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDraftTimeOff: Self = this.set("draftTimeOff", js.undefined)
+    def setSharedTimeOffNull: Self = StObject.set(x, "sharedTimeOff", null)
     
     @scala.inline
-    def setDraftTimeOffNull: Self = this.set("draftTimeOff", null)
+    def setSharedTimeOffUndefined: Self = StObject.set(x, "sharedTimeOff", js.undefined)
     
     @scala.inline
-    def setSharedTimeOff(value: NullableOption[TimeOffItem]): Self = this.set("sharedTimeOff", value.asInstanceOf[js.Any])
+    def setUserId(value: NullableOption[String]): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSharedTimeOff: Self = this.set("sharedTimeOff", js.undefined)
+    def setUserIdNull: Self = StObject.set(x, "userId", null)
     
     @scala.inline
-    def setSharedTimeOffNull: Self = this.set("sharedTimeOff", null)
-    
-    @scala.inline
-    def setUserId(value: NullableOption[String]): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
-    
-    @scala.inline
-    def setUserIdNull: Self = this.set("userId", null)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

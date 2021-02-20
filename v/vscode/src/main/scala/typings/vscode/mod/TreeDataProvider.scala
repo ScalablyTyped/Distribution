@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
 import typings.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeDataProvider[T] extends js.Object {
+trait TreeDataProvider[T] extends StObject {
   
   /**
     * Get the children of `element` or root if no element is passed.

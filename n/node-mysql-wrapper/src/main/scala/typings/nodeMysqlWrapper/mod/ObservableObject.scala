@@ -1,12 +1,13 @@
 package typings.nodeMysqlWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-mysql-wrapper", "ObservableObject")
 @js.native
-class ObservableObject () extends js.Object {
+class ObservableObject () extends StObject {
   def this(obj: js.Any) = this()
   
   /**Remove property changed listeners  */
@@ -25,13 +26,19 @@ class ObservableObject () extends js.Object {
   
   def toJSON(excludeProperties: String*): js.Any = js.native
 }
-/* static members */
-@JSImport("node-mysql-wrapper", "ObservableObject")
-@js.native
-object ObservableObject extends js.Object {
+object ObservableObject {
+  
+  @JSImport("node-mysql-wrapper", "ObservableObject")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** Property names that your row couldn't have:
     * "propertyChangedListeners", "notifyPropertyChanged", "onPropertyChanged", "toJSON", "makeObservable", "_forget"
     */
-  var RESERVED_PROPERTY_NAMES: js.Array[String] = js.native
+  /* static member */
+  @JSImport("node-mysql-wrapper", "ObservableObject.RESERVED_PROPERTY_NAMES")
+  @js.native
+  def RESERVED_PROPERTY_NAMES: js.Array[String] = js.native
+  @scala.inline
+  def RESERVED_PROPERTY_NAMES_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESERVED_PROPERTY_NAMES")(x.asInstanceOf[js.Any])
 }

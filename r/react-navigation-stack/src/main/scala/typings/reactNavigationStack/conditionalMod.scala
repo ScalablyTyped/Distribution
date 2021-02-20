@@ -2,13 +2,14 @@ package typings.reactNavigationStack
 
 import typings.reactNative.mod.Animated.AnimatedAddition
 import typings.reactNative.mod.Animated.AnimatedInterpolation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-navigation-stack/lib/typescript/src/vendor/utils/conditional", JSImport.Namespace)
-@js.native
-object conditionalMod extends js.Object {
+object conditionalMod {
   
+  @JSImport("react-navigation-stack/lib/typescript/src/vendor/utils/conditional", JSImport.Default)
+  @js.native
   def default(condition: AnimatedInterpolation, main: AnimatedInterpolation, fallback: AnimatedInterpolation): AnimatedAddition = js.native
 }

@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LeaderLineStyle extends js.Object
+sealed trait LeaderLineStyle extends StObject
 @JSGlobal("__esri.CIM.LeaderLineStyle")
 @js.native
-object LeaderLineStyle extends js.Object {
+object LeaderLineStyle extends StObject {
   
   /**
     * The line callout leader is a single line originating from the closest corner of the text box with the gap applied. If the callout has an accent bar it is connected to the closest point at the either top or bottom of the accent bar.

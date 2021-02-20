@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApprovalOptions extends js.Object {
+trait ApprovalOptions extends StObject {
   
   var autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped: Boolean = js.native
   
@@ -35,36 +36,24 @@ object ApprovalOptions {
   }
   
   @scala.inline
-  implicit class ApprovalOptionsOps[Self <: ApprovalOptions] (val x: Self) extends AnyVal {
+  implicit class ApprovalOptionsMutableBuilder[Self <: ApprovalOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped(value: Boolean): Self = StObject.set(x, "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnforceIdentityRevalidation(value: Boolean): Self = StObject.set(x, "enforceIdentityRevalidation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionOrder(value: ApprovalExecutionOrder): Self = StObject.set(x, "executionOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped(value: Boolean): Self = this.set("autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped", value.asInstanceOf[js.Any])
+    def setReleaseCreatorCanBeApprover(value: Boolean): Self = StObject.set(x, "releaseCreatorCanBeApprover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnforceIdentityRevalidation(value: Boolean): Self = this.set("enforceIdentityRevalidation", value.asInstanceOf[js.Any])
+    def setRequiredApproverCount(value: Double): Self = StObject.set(x, "requiredApproverCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionOrder(value: ApprovalExecutionOrder): Self = this.set("executionOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReleaseCreatorCanBeApprover(value: Boolean): Self = this.set("releaseCreatorCanBeApprover", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequiredApproverCount(value: Double): Self = this.set("requiredApproverCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeoutInMinutes(value: Double): Self = this.set("timeoutInMinutes", value.asInstanceOf[js.Any])
+    def setTimeoutInMinutes(value: Double): Self = StObject.set(x, "timeoutInMinutes", value.asInstanceOf[js.Any])
   }
 }

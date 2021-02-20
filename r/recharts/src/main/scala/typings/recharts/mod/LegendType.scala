@@ -1,5 +1,6 @@
 package typings.recharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.recharts.rechartsStrings.triangle
   - typings.recharts.rechartsStrings.wye
 */
-trait LegendType extends js.Object
+trait LegendType extends StObject
 object LegendType {
   
   @scala.inline

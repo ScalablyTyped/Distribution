@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeVpnConnectionsRequest extends js.Object {
+trait DescribeVpnConnectionsRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -31,42 +32,30 @@ object DescribeVpnConnectionsRequest {
   }
   
   @scala.inline
-  implicit class DescribeVpnConnectionsRequestOps[Self <: DescribeVpnConnectionsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeVpnConnectionsRequestMutableBuilder[Self <: DescribeVpnConnectionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    def setVpnConnectionIds(value: VpnConnectionIdStringList): Self = StObject.set(x, "VpnConnectionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    def setVpnConnectionIdsUndefined: Self = StObject.set(x, "VpnConnectionIds", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("Filters", js.undefined)
-    
-    @scala.inline
-    def setVpnConnectionIdsVarargs(value: VpnConnectionId*): Self = this.set("VpnConnectionIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setVpnConnectionIds(value: VpnConnectionIdStringList): Self = this.set("VpnConnectionIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpnConnectionIds: Self = this.set("VpnConnectionIds", js.undefined)
+    def setVpnConnectionIdsVarargs(value: VpnConnectionId*): Self = StObject.set(x, "VpnConnectionIds", js.Array(value :_*))
   }
 }

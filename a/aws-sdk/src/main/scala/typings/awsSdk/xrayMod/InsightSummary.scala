@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsightSummary extends js.Object {
+trait InsightSummary extends StObject {
   
   /**
     *  Categories The categories that label and describe the type of insight.
@@ -78,102 +79,90 @@ object InsightSummary {
   }
   
   @scala.inline
-  implicit class InsightSummaryOps[Self <: InsightSummary] (val x: Self) extends AnyVal {
+  implicit class InsightSummaryMutableBuilder[Self <: InsightSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategories(value: InsightCategoryList): Self = StObject.set(x, "Categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoriesUndefined: Self = StObject.set(x, "Categories", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoriesVarargs(value: InsightCategory*): Self = StObject.set(x, "Categories", js.Array(value :_*))
     
     @scala.inline
-    def setCategoriesVarargs(value: InsightCategory*): Self = this.set("Categories", js.Array(value :_*))
+    def setClientRequestImpactStatistics(value: RequestImpactStatistics): Self = StObject.set(x, "ClientRequestImpactStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: InsightCategoryList): Self = this.set("Categories", value.asInstanceOf[js.Any])
+    def setClientRequestImpactStatisticsUndefined: Self = StObject.set(x, "ClientRequestImpactStatistics", js.undefined)
     
     @scala.inline
-    def deleteCategories: Self = this.set("Categories", js.undefined)
+    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientRequestImpactStatistics(value: RequestImpactStatistics): Self = this.set("ClientRequestImpactStatistics", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def deleteClientRequestImpactStatistics: Self = this.set("ClientRequestImpactStatistics", js.undefined)
+    def setGroupARN(value: GroupARN): Self = StObject.set(x, "GroupARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setGroupARNUndefined: Self = StObject.set(x, "GroupARN", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupARN(value: GroupARN): Self = this.set("GroupARN", value.asInstanceOf[js.Any])
+    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
     @scala.inline
-    def deleteGroupARN: Self = this.set("GroupARN", js.undefined)
+    def setInsightId(value: InsightId): Self = StObject.set(x, "InsightId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupName(value: GroupName): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    def setInsightIdUndefined: Self = StObject.set(x, "InsightId", js.undefined)
     
     @scala.inline
-    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+    def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsightId(value: InsightId): Self = this.set("InsightId", value.asInstanceOf[js.Any])
+    def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
     
     @scala.inline
-    def deleteInsightId: Self = this.set("InsightId", js.undefined)
+    def setRootCauseServiceId(value: ServiceId): Self = StObject.set(x, "RootCauseServiceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdateTime(value: Timestamp): Self = this.set("LastUpdateTime", value.asInstanceOf[js.Any])
+    def setRootCauseServiceIdUndefined: Self = StObject.set(x, "RootCauseServiceId", js.undefined)
     
     @scala.inline
-    def deleteLastUpdateTime: Self = this.set("LastUpdateTime", js.undefined)
+    def setRootCauseServiceRequestImpactStatistics(value: RequestImpactStatistics): Self = StObject.set(x, "RootCauseServiceRequestImpactStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootCauseServiceId(value: ServiceId): Self = this.set("RootCauseServiceId", value.asInstanceOf[js.Any])
+    def setRootCauseServiceRequestImpactStatisticsUndefined: Self = StObject.set(x, "RootCauseServiceRequestImpactStatistics", js.undefined)
     
     @scala.inline
-    def deleteRootCauseServiceId: Self = this.set("RootCauseServiceId", js.undefined)
+    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootCauseServiceRequestImpactStatistics(value: RequestImpactStatistics): Self = this.set("RootCauseServiceRequestImpactStatistics", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
     @scala.inline
-    def deleteRootCauseServiceRequestImpactStatistics: Self = this.set("RootCauseServiceRequestImpactStatistics", js.undefined)
+    def setState(value: InsightState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Timestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    def setSummary(value: InsightSummaryText): Self = StObject.set(x, "Summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: InsightState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setSummaryUndefined: Self = StObject.set(x, "Summary", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setTopAnomalousServices(value: AnomalousServiceList): Self = StObject.set(x, "TopAnomalousServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummary(value: InsightSummaryText): Self = this.set("Summary", value.asInstanceOf[js.Any])
+    def setTopAnomalousServicesUndefined: Self = StObject.set(x, "TopAnomalousServices", js.undefined)
     
     @scala.inline
-    def deleteSummary: Self = this.set("Summary", js.undefined)
-    
-    @scala.inline
-    def setTopAnomalousServicesVarargs(value: AnomalousService*): Self = this.set("TopAnomalousServices", js.Array(value :_*))
-    
-    @scala.inline
-    def setTopAnomalousServices(value: AnomalousServiceList): Self = this.set("TopAnomalousServices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopAnomalousServices: Self = this.set("TopAnomalousServices", js.undefined)
+    def setTopAnomalousServicesVarargs(value: AnomalousService*): Self = StObject.set(x, "TopAnomalousServices", js.Array(value :_*))
   }
 }

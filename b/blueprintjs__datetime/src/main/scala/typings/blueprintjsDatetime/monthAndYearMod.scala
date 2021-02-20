@@ -1,16 +1,16 @@
 package typings.blueprintjsDatetime
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/datetime/lib/esm/common/monthAndYear", JSImport.Namespace)
-@js.native
-object monthAndYearMod extends js.Object {
+object monthAndYearMod {
   
+  @JSImport("@blueprintjs/datetime/lib/esm/common/monthAndYear", "MonthAndYear")
   @js.native
-  class MonthAndYear () extends js.Object {
+  class MonthAndYear () extends StObject {
     def this(month: Double) = this()
     def this(month: js.UndefOr[scala.Nothing], year: Double) = this()
     def this(month: Double, year: Double) = this()
@@ -36,9 +36,10 @@ object monthAndYearMod extends js.Object {
     def isSameMonth(monthAndYear: MonthAndYear): Boolean = js.native
   }
   /* static members */
-  @js.native
-  object MonthAndYear extends js.Object {
+  object MonthAndYear {
     
+    @JSImport("@blueprintjs/datetime/lib/esm/common/monthAndYear", "MonthAndYear.fromDate")
+    @js.native
     def fromDate(date: Date): MonthAndYear = js.native
   }
 }

@@ -1,6 +1,7 @@
 package typings.nwJs.mod.global.NWJSHelpers
 
 import typings.nwJs.anon.Height
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * nw.Screen screen object
   */
 @js.native
-trait screen extends js.Object {
+trait screen extends StObject {
   
   /**
     * Physical screen resolution, can be negative, not necessarily start from 0,depending on screen arrangement
@@ -51,39 +52,27 @@ object screen {
   }
   
   @scala.inline
-  implicit class screenOps[Self <: screen] (val x: Self) extends AnyVal {
+  implicit class screenMutableBuilder[Self <: screen] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: Height): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsBuiltIn(value: Boolean): Self = StObject.set(x, "isBuiltIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounds(value: Height): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBuiltIn(value: Boolean): Self = this.set("isBuiltIn", value.asInstanceOf[js.Any])
+    def setTouchSupport(value: Double): Self = StObject.set(x, "touchSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScaleFactor(value: Double): Self = this.set("scaleFactor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchSupport(value: Double): Self = this.set("touchSupport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWork_area(value: Height): Self = this.set("work_area", value.asInstanceOf[js.Any])
+    def setWork_area(value: Height): Self = StObject.set(x, "work_area", value.asInstanceOf[js.Any])
   }
 }

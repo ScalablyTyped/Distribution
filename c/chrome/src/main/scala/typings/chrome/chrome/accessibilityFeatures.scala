@@ -1,5 +1,6 @@
 package typings.chrome.chrome
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +14,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Permissions: "accessibilityFeatures.read"
   * Important: This API works only on Chrome OS.
   */
-@JSGlobal("chrome.accessibilityFeatures")
-@js.native
-object accessibilityFeatures extends js.Object
+object accessibilityFeatures

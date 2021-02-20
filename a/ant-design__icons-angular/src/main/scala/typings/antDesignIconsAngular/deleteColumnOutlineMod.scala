@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/outline/DeleteColumnOutline", JSImport.Namespace)
-@js.native
-object deleteColumnOutlineMod extends js.Object {
+object deleteColumnOutlineMod {
   
+  @JSImport("@ant-design/icons-angular/icons/outline/DeleteColumnOutline", "DeleteColumnOutline")
+  @js.native
   val DeleteColumnOutline: IconDefinition = js.native
 }

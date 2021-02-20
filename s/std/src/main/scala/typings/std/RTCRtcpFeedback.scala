@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTCRtcpFeedback extends js.Object {
+trait RTCRtcpFeedback extends StObject {
   
   var parameter: js.UndefOr[java.lang.String] = js.native
   
@@ -20,30 +21,18 @@ object RTCRtcpFeedback {
   }
   
   @scala.inline
-  implicit class RTCRtcpFeedbackOps[Self <: RTCRtcpFeedback] (val x: Self) extends AnyVal {
+  implicit class RTCRtcpFeedbackMutableBuilder[Self <: RTCRtcpFeedback] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameter(value: java.lang.String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameter(value: java.lang.String): Self = this.set("parameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameter: Self = this.set("parameter", js.undefined)
-    
-    @scala.inline
-    def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

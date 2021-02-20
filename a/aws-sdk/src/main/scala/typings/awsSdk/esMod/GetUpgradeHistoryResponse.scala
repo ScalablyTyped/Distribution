@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetUpgradeHistoryResponse extends js.Object {
+trait GetUpgradeHistoryResponse extends StObject {
   
   /**
     * Pagination token that needs to be supplied to the next call to get the next page of results
@@ -26,33 +27,21 @@ object GetUpgradeHistoryResponse {
   }
   
   @scala.inline
-  implicit class GetUpgradeHistoryResponseOps[Self <: GetUpgradeHistoryResponse] (val x: Self) extends AnyVal {
+  implicit class GetUpgradeHistoryResponseMutableBuilder[Self <: GetUpgradeHistoryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpgradeHistories(value: UpgradeHistoryList): Self = StObject.set(x, "UpgradeHistories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setUpgradeHistoriesUndefined: Self = StObject.set(x, "UpgradeHistories", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setUpgradeHistoriesVarargs(value: UpgradeHistory*): Self = this.set("UpgradeHistories", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpgradeHistories(value: UpgradeHistoryList): Self = this.set("UpgradeHistories", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpgradeHistories: Self = this.set("UpgradeHistories", js.undefined)
+    def setUpgradeHistoriesVarargs(value: UpgradeHistory*): Self = StObject.set(x, "UpgradeHistories", js.Array(value :_*))
   }
 }

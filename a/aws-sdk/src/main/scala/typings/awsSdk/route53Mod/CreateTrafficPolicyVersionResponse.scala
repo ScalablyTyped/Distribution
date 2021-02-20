@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateTrafficPolicyVersionResponse extends js.Object {
+trait CreateTrafficPolicyVersionResponse extends StObject {
   
   /**
     * A unique URL that represents a new traffic policy version.
@@ -26,24 +27,12 @@ object CreateTrafficPolicyVersionResponse {
   }
   
   @scala.inline
-  implicit class CreateTrafficPolicyVersionResponseOps[Self <: CreateTrafficPolicyVersionResponse] (val x: Self) extends AnyVal {
+  implicit class CreateTrafficPolicyVersionResponseMutableBuilder[Self <: CreateTrafficPolicyVersionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocation(value: ResourceURI): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLocation(value: ResourceURI): Self = this.set("Location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrafficPolicy(value: TrafficPolicy): Self = this.set("TrafficPolicy", value.asInstanceOf[js.Any])
+    def setTrafficPolicy(value: TrafficPolicy): Self = StObject.set(x, "TrafficPolicy", value.asInstanceOf[js.Any])
   }
 }

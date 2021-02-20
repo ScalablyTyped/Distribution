@@ -1,11 +1,12 @@
 package typings.vueNiceDates.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridType extends js.Object {
+trait GridType extends StObject {
   
   var gridType: String = js.native
   
@@ -20,27 +21,15 @@ object GridType {
   }
   
   @scala.inline
-  implicit class GridTypeOps[Self <: GridType] (val x: Self) extends AnyVal {
+  implicit class GridTypeMutableBuilder[Self <: GridType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGridType(value: String): Self = StObject.set(x, "gridType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReceivedInitialDate(value: typings.std.Date): Self = StObject.set(x, "receivedInitialDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGridType(value: String): Self = this.set("gridType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReceivedInitialDate(value: typings.std.Date): Self = this.set("receivedInitialDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReceivedInitialDateNull: Self = this.set("receivedInitialDate", null)
+    def setReceivedInitialDateNull: Self = StObject.set(x, "receivedInitialDate", null)
   }
 }

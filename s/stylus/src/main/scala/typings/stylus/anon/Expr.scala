@@ -3,12 +3,13 @@ package typings.stylus.anon
 import typings.stylus.mod.Stylus.Nodes.Expression
 import typings.stylus.mod.Stylus.Nodes.Literal
 import typings.stylus.mod.Stylus.Nodes.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Expr extends js.Object {
+trait Expr extends StObject {
   
   var __type: String = js.native
   
@@ -42,51 +43,39 @@ object Expr {
   }
   
   @scala.inline
-  implicit class ExprOps[Self <: Expr] (val x: Self) extends AnyVal {
+  implicit class ExprMutableBuilder[Self <: Expr] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpr(value: Expression): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExprUndefined: Self = StObject.set(x, "expr", js.undefined)
     
     @scala.inline
-    def set__type(value: String): Self = this.set("__type", value.asInstanceOf[js.Any])
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: Double): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setLiteral(value: Literal): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineno(value: Double): Self = this.set("lineno", value.asInstanceOf[js.Any])
+    def setLiteralUndefined: Self = StObject.set(x, "literal", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentsVarargs(value: Node*): Self = this.set("segments", js.Array(value :_*))
+    def setSegments(value: js.Array[Node]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegments(value: js.Array[Node]): Self = this.set("segments", value.asInstanceOf[js.Any])
+    def setSegmentsVarargs(value: Node*): Self = StObject.set(x, "segments", js.Array(value :_*))
     
     @scala.inline
-    def setExpr(value: Expression): Self = this.set("expr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpr: Self = this.set("expr", js.undefined)
-    
-    @scala.inline
-    def setLiteral(value: Literal): Self = this.set("literal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLiteral: Self = this.set("literal", js.undefined)
+    def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
   }
 }

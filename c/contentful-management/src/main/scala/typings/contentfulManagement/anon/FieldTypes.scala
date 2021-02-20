@@ -1,12 +1,13 @@
 package typings.contentfulManagement.anon
 
 import typings.contentfulManagement.entryFieldsMod.EntryFields
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldTypes extends js.Object {
+trait FieldTypes extends StObject {
   
   /**
     * Field types where an extension can be used
@@ -42,42 +43,30 @@ object FieldTypes {
   }
   
   @scala.inline
-  implicit class FieldTypesOps[Self <: FieldTypes] (val x: Self) extends AnyVal {
+  implicit class FieldTypesMutableBuilder[Self <: FieldTypes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldTypes(value: js.Array[EntryFields]): Self = StObject.set(x, "fieldTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldTypesVarargs(value: EntryFields*): Self = StObject.set(x, "fieldTypes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldTypesVarargs(value: EntryFields*): Self = this.set("fieldTypes", js.Array(value :_*))
+    def setSidebar(value: Boolean): Self = StObject.set(x, "sidebar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldTypes(value: js.Array[EntryFields]): Self = this.set("fieldTypes", value.asInstanceOf[js.Any])
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
     @scala.inline
-    def setSidebar(value: Boolean): Self = this.set("sidebar", value.asInstanceOf[js.Any])
+    def setSrcdoc(value: String): Self = StObject.set(x, "srcdoc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSrc: Self = this.set("src", js.undefined)
-    
-    @scala.inline
-    def setSrcdoc(value: String): Self = this.set("srcdoc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSrcdoc: Self = this.set("srcdoc", js.undefined)
+    def setSrcdocUndefined: Self = StObject.set(x, "srcdoc", js.undefined)
   }
 }

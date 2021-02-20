@@ -1,11 +1,12 @@
 package typings.leafletDraw.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Subtext extends js.Object {
+trait Subtext extends StObject {
   
   var subtext: js.UndefOr[String] = js.native
   
@@ -20,27 +21,15 @@ object Subtext {
   }
   
   @scala.inline
-  implicit class SubtextOps[Self <: Subtext] (val x: Self) extends AnyVal {
+  implicit class SubtextMutableBuilder[Self <: Subtext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSubtext(value: String): Self = StObject.set(x, "subtext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubtextUndefined: Self = StObject.set(x, "subtext", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubtext(value: String): Self = this.set("subtext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubtext: Self = this.set("subtext", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

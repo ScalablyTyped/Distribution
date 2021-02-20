@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MonitoringOutputConfig extends js.Object {
+trait MonitoringOutputConfig extends StObject {
   
   /**
     * The AWS Key Management Service (AWS KMS) key that Amazon SageMaker uses to encrypt the model artifacts at rest using Amazon S3 server-side encryption.
@@ -26,30 +27,18 @@ object MonitoringOutputConfig {
   }
   
   @scala.inline
-  implicit class MonitoringOutputConfigOps[Self <: MonitoringOutputConfig] (val x: Self) extends AnyVal {
+  implicit class MonitoringOutputConfigMutableBuilder[Self <: MonitoringOutputConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMonitoringOutputs(value: MonitoringOutputs): Self = StObject.set(x, "MonitoringOutputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitoringOutputsVarargs(value: MonitoringOutput*): Self = this.set("MonitoringOutputs", js.Array(value :_*))
-    
-    @scala.inline
-    def setMonitoringOutputs(value: MonitoringOutputs): Self = this.set("MonitoringOutputs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    def setMonitoringOutputsVarargs(value: MonitoringOutput*): Self = StObject.set(x, "MonitoringOutputs", js.Array(value :_*))
   }
 }

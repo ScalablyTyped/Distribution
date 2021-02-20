@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulkEnvelopeStatus extends js.Object {
+trait BulkEnvelopeStatus extends StObject {
   
   /**
     * Identifier used to query the status of an individual bulk recipient batch.
@@ -86,105 +87,93 @@ object BulkEnvelopeStatus {
   }
   
   @scala.inline
-  implicit class BulkEnvelopeStatusOps[Self <: BulkEnvelopeStatus] (val x: Self) extends AnyVal {
+  implicit class BulkEnvelopeStatusMutableBuilder[Self <: BulkEnvelopeStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchId(value: String): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchSize(value: String): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchId(value: String): Self = this.set("batchId", value.asInstanceOf[js.Any])
+    def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     
     @scala.inline
-    def deleteBatchId: Self = this.set("batchId", js.undefined)
+    def setBulkEnvelopes(value: js.Array[BulkEnvelope]): Self = StObject.set(x, "bulkEnvelopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchSize(value: String): Self = this.set("batchSize", value.asInstanceOf[js.Any])
+    def setBulkEnvelopesBatchUri(value: String): Self = StObject.set(x, "bulkEnvelopesBatchUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBatchSize: Self = this.set("batchSize", js.undefined)
+    def setBulkEnvelopesBatchUriUndefined: Self = StObject.set(x, "bulkEnvelopesBatchUri", js.undefined)
     
     @scala.inline
-    def setBulkEnvelopesVarargs(value: BulkEnvelope*): Self = this.set("bulkEnvelopes", js.Array(value :_*))
+    def setBulkEnvelopesUndefined: Self = StObject.set(x, "bulkEnvelopes", js.undefined)
     
     @scala.inline
-    def setBulkEnvelopes(value: js.Array[BulkEnvelope]): Self = this.set("bulkEnvelopes", value.asInstanceOf[js.Any])
+    def setBulkEnvelopesVarargs(value: BulkEnvelope*): Self = StObject.set(x, "bulkEnvelopes", js.Array(value :_*))
     
     @scala.inline
-    def deleteBulkEnvelopes: Self = this.set("bulkEnvelopes", js.undefined)
+    def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulkEnvelopesBatchUri(value: String): Self = this.set("bulkEnvelopesBatchUri", value.asInstanceOf[js.Any])
+    def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
     
     @scala.inline
-    def deleteBulkEnvelopesBatchUri: Self = this.set("bulkEnvelopesBatchUri", js.undefined)
+    def setFailed(value: String): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndPosition(value: String): Self = this.set("endPosition", value.asInstanceOf[js.Any])
+    def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
     
     @scala.inline
-    def deleteEndPosition: Self = this.set("endPosition", js.undefined)
+    def setNextUri(value: String): Self = StObject.set(x, "nextUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailed(value: String): Self = this.set("failed", value.asInstanceOf[js.Any])
+    def setNextUriUndefined: Self = StObject.set(x, "nextUri", js.undefined)
     
     @scala.inline
-    def deleteFailed: Self = this.set("failed", js.undefined)
+    def setPreviousUri(value: String): Self = StObject.set(x, "previousUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextUri(value: String): Self = this.set("nextUri", value.asInstanceOf[js.Any])
+    def setPreviousUriUndefined: Self = StObject.set(x, "previousUri", js.undefined)
     
     @scala.inline
-    def deleteNextUri: Self = this.set("nextUri", js.undefined)
+    def setQueued(value: String): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousUri(value: String): Self = this.set("previousUri", value.asInstanceOf[js.Any])
+    def setQueuedUndefined: Self = StObject.set(x, "queued", js.undefined)
     
     @scala.inline
-    def deletePreviousUri: Self = this.set("previousUri", js.undefined)
+    def setResultSetSize(value: String): Self = StObject.set(x, "resultSetSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueued(value: String): Self = this.set("queued", value.asInstanceOf[js.Any])
+    def setResultSetSizeUndefined: Self = StObject.set(x, "resultSetSize", js.undefined)
     
     @scala.inline
-    def deleteQueued: Self = this.set("queued", js.undefined)
+    def setSent(value: String): Self = StObject.set(x, "sent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultSetSize(value: String): Self = this.set("resultSetSize", value.asInstanceOf[js.Any])
+    def setSentUndefined: Self = StObject.set(x, "sent", js.undefined)
     
     @scala.inline
-    def deleteResultSetSize: Self = this.set("resultSetSize", js.undefined)
+    def setStartPosition(value: String): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSent(value: String): Self = this.set("sent", value.asInstanceOf[js.Any])
+    def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
     
     @scala.inline
-    def deleteSent: Self = this.set("sent", js.undefined)
+    def setSubmittedDate(value: String): Self = StObject.set(x, "submittedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartPosition(value: String): Self = this.set("startPosition", value.asInstanceOf[js.Any])
+    def setSubmittedDateUndefined: Self = StObject.set(x, "submittedDate", js.undefined)
     
     @scala.inline
-    def deleteStartPosition: Self = this.set("startPosition", js.undefined)
+    def setTotalSetSize(value: String): Self = StObject.set(x, "totalSetSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmittedDate(value: String): Self = this.set("submittedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubmittedDate: Self = this.set("submittedDate", js.undefined)
-    
-    @scala.inline
-    def setTotalSetSize(value: String): Self = this.set("totalSetSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalSetSize: Self = this.set("totalSetSize", js.undefined)
+    def setTotalSetSizeUndefined: Self = StObject.set(x, "totalSetSize", js.undefined)
   }
 }

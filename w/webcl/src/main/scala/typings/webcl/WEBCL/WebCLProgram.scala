@@ -1,12 +1,13 @@
 package typings.webcl.WEBCL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //3.8
 @js.native
-trait WebCLProgram extends js.Object {
+trait WebCLProgram extends StObject {
   
   def build(): Unit = js.native
   def build(

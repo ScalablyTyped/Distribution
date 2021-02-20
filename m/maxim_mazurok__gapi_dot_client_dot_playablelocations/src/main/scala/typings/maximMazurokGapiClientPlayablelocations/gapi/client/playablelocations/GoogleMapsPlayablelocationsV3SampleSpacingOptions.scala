@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playablelocations
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleMapsPlayablelocationsV3SampleSpacingOptions extends js.Object {
+trait GoogleMapsPlayablelocationsV3SampleSpacingOptions extends StObject {
   
   /**
     * Required. The minimum spacing between any two playable locations, measured in meters. The minimum value is 30. The maximum value is 1000. Inputs will be rounded up to the next 10
@@ -33,30 +34,18 @@ object GoogleMapsPlayablelocationsV3SampleSpacingOptions {
   }
   
   @scala.inline
-  implicit class GoogleMapsPlayablelocationsV3SampleSpacingOptionsOps[Self <: GoogleMapsPlayablelocationsV3SampleSpacingOptions] (val x: Self) extends AnyVal {
+  implicit class GoogleMapsPlayablelocationsV3SampleSpacingOptionsMutableBuilder[Self <: GoogleMapsPlayablelocationsV3SampleSpacingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinSpacingMeters(value: Double): Self = StObject.set(x, "minSpacingMeters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinSpacingMetersUndefined: Self = StObject.set(x, "minSpacingMeters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPointType(value: String): Self = StObject.set(x, "pointType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinSpacingMeters(value: Double): Self = this.set("minSpacingMeters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinSpacingMeters: Self = this.set("minSpacingMeters", js.undefined)
-    
-    @scala.inline
-    def setPointType(value: String): Self = this.set("pointType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePointType: Self = this.set("pointType", js.undefined)
+    def setPointTypeUndefined: Self = StObject.set(x, "pointType", js.undefined)
   }
 }

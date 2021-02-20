@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Overlay
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetInspectModeRequest extends js.Object {
+trait SetInspectModeRequest extends StObject {
   
   /**
     * A descriptor for the highlight appearance of hovered-over nodes. May be omitted if `enabled
@@ -27,27 +28,15 @@ object SetInspectModeRequest {
   }
   
   @scala.inline
-  implicit class SetInspectModeRequestOps[Self <: SetInspectModeRequest] (val x: Self) extends AnyVal {
+  implicit class SetInspectModeRequestMutableBuilder[Self <: SetInspectModeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighlightConfig(value: HighlightConfig): Self = StObject.set(x, "highlightConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighlightConfigUndefined: Self = StObject.set(x, "highlightConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMode(value: InspectMode): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHighlightConfig(value: HighlightConfig): Self = this.set("highlightConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHighlightConfig: Self = this.set("highlightConfig", js.undefined)
+    def setMode(value: InspectMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }
 }

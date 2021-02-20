@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerPolicy extends js.Object {
+trait ServerPolicy extends StObject {
   
   def apply(Index: String): PolicyItem = js.native
   def apply(Index: Double): PolicyItem = js.native

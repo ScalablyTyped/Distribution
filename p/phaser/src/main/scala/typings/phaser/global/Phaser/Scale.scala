@@ -1,13 +1,12 @@
 package typings.phaser.global.Phaser
 
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Scale")
-@js.native
-object Scale extends js.Object {
+object Scale {
   
   /**
     * The game canvas is centered both horizontally and vertically within the parent.
@@ -16,6 +15,8 @@ object Scale extends js.Object {
     * Centering is achieved by setting the margin left and top properties of the
     * game canvas, and does not factor in any other CSS styles you may have applied.
     */
+  @JSGlobal("Phaser.Scale.CENTER_BOTH")
+  @js.native
   val CENTER_BOTH: integer = js.native
   
   /**
@@ -25,6 +26,8 @@ object Scale extends js.Object {
     * Centering is achieved by setting the margin left and top properties of the
     * game canvas, and does not factor in any other CSS styles you may have applied.
     */
+  @JSGlobal("Phaser.Scale.CENTER_HORIZONTALLY")
+  @js.native
   val CENTER_HORIZONTALLY: integer = js.native
   
   /**
@@ -34,85 +37,16 @@ object Scale extends js.Object {
     * Centering is achieved by setting the margin left and top properties of the
     * game canvas, and does not factor in any other CSS styles you may have applied.
     */
+  @JSGlobal("Phaser.Scale.CENTER_VERTICALLY")
+  @js.native
   val CENTER_VERTICALLY: integer = js.native
-  
-  /**
-    * The width and height are automatically adjusted to make the size cover the entire target
-    * area while keeping the aspect ratio. This may extend further out than the target size.
-    */
-  val ENVELOP: integer = js.native
-  
-  /**
-    * The width and height are automatically adjusted to fit inside the given target area,
-    * while keeping the aspect ratio. Depending on the aspect ratio there may be some space
-    * inside the area which is not covered.
-    */
-  val FIT: integer = js.native
-  
-  /**
-    * The width is automatically adjusted based on the height.
-    */
-  val HEIGHT_CONTROLS_WIDTH: integer = js.native
-  
-  /**
-    * A landscape orientation.
-    */
-  val LANDSCAPE: String = js.native
-  
-  /**
-    * Calculate the zoom value based on the maximum multiplied game size that will
-    * fit into the parent, or browser window if no parent is set.
-    */
-  val MAX_ZOOM: integer = js.native
-  
-  /**
-    * No scaling happens at all. The canvas is set to the size given in the game config and Phaser doesn't change it
-    * again from that point on. If you change the canvas size, either via CSS, or directly via code, then you need
-    * to call the Scale Managers `resize` method to give the new dimensions, or input events will stop working.
-    */
-  val NONE: integer = js.native
-  
-  /**
-    * The game canvas is not centered within the parent by Phaser.
-    * You can still center it yourself via CSS.
-    */
-  val NO_CENTER: integer = js.native
-  
-  /**
-    * The game canvas will not be zoomed by Phaser.
-    */
-  val NO_ZOOM: integer = js.native
-  
-  /**
-    * A portrait orientation.
-    */
-  val PORTRAIT: String = js.native
-  
-  /**
-    * The Canvas is resized to fit all available _parent_ space, regardless of aspect ratio.
-    */
-  val RESIZE: integer = js.native
-  
-  /**
-    * The height is automatically adjusted based on the width.
-    */
-  val WIDTH_CONTROLS_HEIGHT: integer = js.native
-  
-  /**
-    * The game canvas will be 2x zoomed by Phaser.
-    */
-  val ZOOM_2X: integer = js.native
-  
-  /**
-    * The game canvas will be 4x zoomed by Phaser.
-    */
-  val ZOOM_4X: integer = js.native
   
   /**
     * Phaser Scale Manager constants for centering the game canvas.
     */
+  @JSGlobal("Phaser.Scale.Center")
   @js.native
-  object Center extends js.Object {
+  object Center extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.phaser.Phaser.Scale.Center with Double] = js.native
@@ -126,33 +60,50 @@ object Scale extends js.Object {
     /* 0 */ val NO_CENTER: typings.phaser.Phaser.Scale.Center.NO_CENTER with Double = js.native
   }
   
+  /**
+    * The width and height are automatically adjusted to make the size cover the entire target
+    * area while keeping the aspect ratio. This may extend further out than the target size.
+    */
+  @JSGlobal("Phaser.Scale.ENVELOP")
   @js.native
-  object Events extends js.Object {
+  val ENVELOP: integer = js.native
+  
+  object Events {
     
     /**
       * The Scale Manager has successfully entered fullscreen mode.
       */
+    @JSGlobal("Phaser.Scale.Events.ENTER_FULLSCREEN")
+    @js.native
     val ENTER_FULLSCREEN: js.Any = js.native
     
     /**
       * The Scale Manager tried to enter fullscreen mode but failed.
       */
+    @JSGlobal("Phaser.Scale.Events.FULLSCREEN_FAILED")
+    @js.native
     val FULLSCREEN_FAILED: js.Any = js.native
     
     /**
       * The Scale Manager tried to enter fullscreen mode, but it is unsupported by the browser.
       */
+    @JSGlobal("Phaser.Scale.Events.FULLSCREEN_UNSUPPORTED")
+    @js.native
     val FULLSCREEN_UNSUPPORTED: js.Any = js.native
     
     /**
       * The Scale Manager was in fullscreen mode, but has since left, either directly via game code,
       * or via a user gestured, such as pressing the ESC key.
       */
+    @JSGlobal("Phaser.Scale.Events.LEAVE_FULLSCREEN")
+    @js.native
     val LEAVE_FULLSCREEN: js.Any = js.native
     
     /**
       * The Scale Manager Orientation Change Event.
       */
+    @JSGlobal("Phaser.Scale.Events.ORIENTATION_CHANGE")
+    @js.native
     val ORIENTATION_CHANGE: js.Any = js.native
     
     /**
@@ -163,14 +114,72 @@ object Scale extends js.Object {
       * the `width`, `height`, `aspectRatio` and other properties of these components to help with
       * scaling your own game content.
       */
+    @JSGlobal("Phaser.Scale.Events.RESIZE")
+    @js.native
     val RESIZE: js.Any = js.native
   }
   
   /**
+    * The width and height are automatically adjusted to fit inside the given target area,
+    * while keeping the aspect ratio. Depending on the aspect ratio there may be some space
+    * inside the area which is not covered.
+    */
+  @JSGlobal("Phaser.Scale.FIT")
+  @js.native
+  val FIT: integer = js.native
+  
+  /**
+    * The width is automatically adjusted based on the height.
+    */
+  @JSGlobal("Phaser.Scale.HEIGHT_CONTROLS_WIDTH")
+  @js.native
+  val HEIGHT_CONTROLS_WIDTH: integer = js.native
+  
+  /**
+    * A landscape orientation.
+    */
+  @JSGlobal("Phaser.Scale.LANDSCAPE")
+  @js.native
+  val LANDSCAPE: String = js.native
+  
+  /**
+    * Calculate the zoom value based on the maximum multiplied game size that will
+    * fit into the parent, or browser window if no parent is set.
+    */
+  @JSGlobal("Phaser.Scale.MAX_ZOOM")
+  @js.native
+  val MAX_ZOOM: integer = js.native
+  
+  /**
+    * No scaling happens at all. The canvas is set to the size given in the game config and Phaser doesn't change it
+    * again from that point on. If you change the canvas size, either via CSS, or directly via code, then you need
+    * to call the Scale Managers `resize` method to give the new dimensions, or input events will stop working.
+    */
+  @JSGlobal("Phaser.Scale.NONE")
+  @js.native
+  val NONE: integer = js.native
+  
+  /**
+    * The game canvas is not centered within the parent by Phaser.
+    * You can still center it yourself via CSS.
+    */
+  @JSGlobal("Phaser.Scale.NO_CENTER")
+  @js.native
+  val NO_CENTER: integer = js.native
+  
+  /**
+    * The game canvas will not be zoomed by Phaser.
+    */
+  @JSGlobal("Phaser.Scale.NO_ZOOM")
+  @js.native
+  val NO_ZOOM: integer = js.native
+  
+  /**
     * Phaser Scale Manager constants for orientation.
     */
+  @JSGlobal("Phaser.Scale.Orientation")
   @js.native
-  object Orientation extends js.Object {
+  object Orientation extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.phaser.Phaser.Scale.Orientation with Double] = js.native
@@ -179,6 +188,20 @@ object Scale extends js.Object {
     
     /* 1 */ val PORTRAIT: typings.phaser.Phaser.Scale.Orientation.PORTRAIT with Double = js.native
   }
+  
+  /**
+    * A portrait orientation.
+    */
+  @JSGlobal("Phaser.Scale.PORTRAIT")
+  @js.native
+  val PORTRAIT: String = js.native
+  
+  /**
+    * The Canvas is resized to fit all available _parent_ space, regardless of aspect ratio.
+    */
+  @JSGlobal("Phaser.Scale.RESIZE")
+  @js.native
+  val RESIZE: integer = js.native
   
   /**
     * The Scale Manager handles the scaling, resizing and alignment of the game canvas.
@@ -274,6 +297,7 @@ object Scale extends js.Object {
     * great way to achieve a desktop-game like experience from the browser, but it does require a modern browser
     * to handle it. Some mobile browsers also support this.
     */
+  @JSGlobal("Phaser.Scale.ScaleManager")
   @js.native
   class ScaleManager protected ()
     extends typings.phaser.Phaser.Scale.ScaleManager {
@@ -287,8 +311,9 @@ object Scale extends js.Object {
   /**
     * Phaser Scale Manager constants for the different scale modes available.
     */
+  @JSGlobal("Phaser.Scale.ScaleModes")
   @js.native
-  object ScaleModes extends js.Object {
+  object ScaleModes extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.phaser.Phaser.Scale.ScaleModes with Double] = js.native
@@ -307,10 +332,32 @@ object Scale extends js.Object {
   }
   
   /**
+    * The height is automatically adjusted based on the width.
+    */
+  @JSGlobal("Phaser.Scale.WIDTH_CONTROLS_HEIGHT")
+  @js.native
+  val WIDTH_CONTROLS_HEIGHT: integer = js.native
+  
+  /**
+    * The game canvas will be 2x zoomed by Phaser.
+    */
+  @JSGlobal("Phaser.Scale.ZOOM_2X")
+  @js.native
+  val ZOOM_2X: integer = js.native
+  
+  /**
+    * The game canvas will be 4x zoomed by Phaser.
+    */
+  @JSGlobal("Phaser.Scale.ZOOM_4X")
+  @js.native
+  val ZOOM_4X: integer = js.native
+  
+  /**
     * Phaser Scale Manager constants for zoom modes.
     */
+  @JSGlobal("Phaser.Scale.Zoom")
   @js.native
-  object Zoom extends js.Object {
+  object Zoom extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.phaser.Phaser.Scale.Zoom with Double] = js.native

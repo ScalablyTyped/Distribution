@@ -1,6 +1,7 @@
 package typings.googleapis.dataprocV1Mod.dataprocV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Specifies the selection and config of software inside the cluster.
   */
 @js.native
-trait SchemaSoftwareConfig extends js.Object {
+trait SchemaSoftwareConfig extends StObject {
   
   /**
     * Optional. The version of software inside the cluster. It must be one of
@@ -45,39 +46,27 @@ object SchemaSoftwareConfig {
   }
   
   @scala.inline
-  implicit class SchemaSoftwareConfigOps[Self <: SchemaSoftwareConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaSoftwareConfigMutableBuilder[Self <: SchemaSoftwareConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageVersion(value: String): Self = StObject.set(x, "imageVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageVersionUndefined: Self = StObject.set(x, "imageVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptionalComponents(value: js.Array[String]): Self = StObject.set(x, "optionalComponents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageVersion(value: String): Self = this.set("imageVersion", value.asInstanceOf[js.Any])
+    def setOptionalComponentsUndefined: Self = StObject.set(x, "optionalComponents", js.undefined)
     
     @scala.inline
-    def deleteImageVersion: Self = this.set("imageVersion", js.undefined)
+    def setOptionalComponentsVarargs(value: String*): Self = StObject.set(x, "optionalComponents", js.Array(value :_*))
     
     @scala.inline
-    def setOptionalComponentsVarargs(value: String*): Self = this.set("optionalComponents", js.Array(value :_*))
+    def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionalComponents(value: js.Array[String]): Self = this.set("optionalComponents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptionalComponents: Self = this.set("optionalComponents", js.undefined)
-    
-    @scala.inline
-    def setProperties(value: StringDictionary[String]): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

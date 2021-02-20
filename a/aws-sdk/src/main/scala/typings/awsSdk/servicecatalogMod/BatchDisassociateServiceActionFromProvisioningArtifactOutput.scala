@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDisassociateServiceActionFromProvisioningArtifactOutput extends js.Object {
+trait BatchDisassociateServiceActionFromProvisioningArtifactOutput extends StObject {
   
   /**
     * An object that contains a list of errors, along with information to help you identify the self-service action.
@@ -21,27 +22,15 @@ object BatchDisassociateServiceActionFromProvisioningArtifactOutput {
   }
   
   @scala.inline
-  implicit class BatchDisassociateServiceActionFromProvisioningArtifactOutputOps[Self <: BatchDisassociateServiceActionFromProvisioningArtifactOutput] (val x: Self) extends AnyVal {
+  implicit class BatchDisassociateServiceActionFromProvisioningArtifactOutputMutableBuilder[Self <: BatchDisassociateServiceActionFromProvisioningArtifactOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailedServiceActionAssociations(value: FailedServiceActionAssociations): Self = StObject.set(x, "FailedServiceActionAssociations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedServiceActionAssociationsUndefined: Self = StObject.set(x, "FailedServiceActionAssociations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFailedServiceActionAssociationsVarargs(value: FailedServiceActionAssociation*): Self = this.set("FailedServiceActionAssociations", js.Array(value :_*))
-    
-    @scala.inline
-    def setFailedServiceActionAssociations(value: FailedServiceActionAssociations): Self = this.set("FailedServiceActionAssociations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailedServiceActionAssociations: Self = this.set("FailedServiceActionAssociations", js.undefined)
+    def setFailedServiceActionAssociationsVarargs(value: FailedServiceActionAssociation*): Self = StObject.set(x, "FailedServiceActionAssociations", js.Array(value :_*))
   }
 }

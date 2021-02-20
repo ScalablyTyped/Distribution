@@ -1,5 +1,6 @@
 package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * for versions 2.1 - 2.2
   */
 @js.native
-trait SchemaDetail extends js.Object {
+trait SchemaDetail extends StObject {
   
   /**
     * The name of the package where the vulnerability was found. This field can
@@ -74,72 +75,60 @@ object SchemaDetail {
   }
   
   @scala.inline
-  implicit class SchemaDetailOps[Self <: SchemaDetail] (val x: Self) extends AnyVal {
+  implicit class SchemaDetailMutableBuilder[Self <: SchemaDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCpeUri(value: String): Self = StObject.set(x, "cpeUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCpeUriUndefined: Self = StObject.set(x, "cpeUri", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_package(value: String): Self = this.set("package", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def delete_package: Self = this.set("package", js.undefined)
+    def setFixedLocation(value: SchemaVulnerabilityLocation): Self = StObject.set(x, "fixedLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpeUri(value: String): Self = this.set("cpeUri", value.asInstanceOf[js.Any])
+    def setFixedLocationUndefined: Self = StObject.set(x, "fixedLocation", js.undefined)
     
     @scala.inline
-    def deleteCpeUri: Self = this.set("cpeUri", js.undefined)
+    def setIsObsolete(value: Boolean): Self = StObject.set(x, "isObsolete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIsObsoleteUndefined: Self = StObject.set(x, "isObsolete", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setMaxAffectedVersion(value: SchemaVersion): Self = StObject.set(x, "maxAffectedVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedLocation(value: SchemaVulnerabilityLocation): Self = this.set("fixedLocation", value.asInstanceOf[js.Any])
+    def setMaxAffectedVersionUndefined: Self = StObject.set(x, "maxAffectedVersion", js.undefined)
     
     @scala.inline
-    def deleteFixedLocation: Self = this.set("fixedLocation", js.undefined)
+    def setMinAffectedVersion(value: SchemaVersion): Self = StObject.set(x, "minAffectedVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsObsolete(value: Boolean): Self = this.set("isObsolete", value.asInstanceOf[js.Any])
+    def setMinAffectedVersionUndefined: Self = StObject.set(x, "minAffectedVersion", js.undefined)
     
     @scala.inline
-    def deleteIsObsolete: Self = this.set("isObsolete", js.undefined)
+    def setPackageType(value: String): Self = StObject.set(x, "packageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAffectedVersion(value: SchemaVersion): Self = this.set("maxAffectedVersion", value.asInstanceOf[js.Any])
+    def setPackageTypeUndefined: Self = StObject.set(x, "packageType", js.undefined)
     
     @scala.inline
-    def deleteMaxAffectedVersion: Self = this.set("maxAffectedVersion", js.undefined)
+    def setSeverityName(value: String): Self = StObject.set(x, "severityName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinAffectedVersion(value: SchemaVersion): Self = this.set("minAffectedVersion", value.asInstanceOf[js.Any])
+    def setSeverityNameUndefined: Self = StObject.set(x, "severityName", js.undefined)
     
     @scala.inline
-    def deleteMinAffectedVersion: Self = this.set("minAffectedVersion", js.undefined)
+    def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageType(value: String): Self = this.set("packageType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackageType: Self = this.set("packageType", js.undefined)
-    
-    @scala.inline
-    def setSeverityName(value: String): Self = this.set("severityName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeverityName: Self = this.set("severityName", js.undefined)
+    def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }
 }

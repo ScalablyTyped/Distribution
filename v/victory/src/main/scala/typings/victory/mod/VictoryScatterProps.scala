@@ -3,6 +3,7 @@ package typings.victory.mod
 import typings.victory.victoryStrings.data
 import typings.victory.victoryStrings.labels
 import typings.victory.victoryStrings.parent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -110,78 +111,66 @@ object VictoryScatterProps {
   }
   
   @scala.inline
-  implicit class VictoryScatterPropsOps[Self <: VictoryScatterProps] (val x: Self) extends AnyVal {
+  implicit class VictoryScatterPropsMutableBuilder[Self <: VictoryScatterProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBubbleProperty(value: String): Self = StObject.set(x, "bubbleProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBubblePropertyUndefined: Self = StObject.set(x, "bubbleProperty", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventKey(value: StringOrNumberOrCallback): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbleProperty(value: String): Self = this.set("bubbleProperty", value.asInstanceOf[js.Any])
+    def setEventKeyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "eventKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBubbleProperty: Self = this.set("bubbleProperty", js.undefined)
+    def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
     
     @scala.inline
-    def setEventKeyFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("eventKey", js.Any.fromFunction1(value))
+    def setEvents(value: js.Array[EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventKey(value: StringOrNumberOrCallback): Self = this.set("eventKey", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteEventKey: Self = this.set("eventKey", js.undefined)
+    def setEventsVarargs(value: (EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback])*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setEventsVarargs(value: (EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback])*): Self = this.set("events", js.Array(value :_*))
+    def setMaxBubbleSize(value: Double): Self = StObject.set(x, "maxBubbleSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: js.Array[EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback]]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setMaxBubbleSizeUndefined: Self = StObject.set(x, "maxBubbleSize", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setSamples(value: Double): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBubbleSize(value: Double): Self = this.set("maxBubbleSize", value.asInstanceOf[js.Any])
+    def setSamplesUndefined: Self = StObject.set(x, "samples", js.undefined)
     
     @scala.inline
-    def deleteMaxBubbleSize: Self = this.set("maxBubbleSize", js.undefined)
+    def setSize(value: Double | (js.Function1[/* data */ js.Any, Double])): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamples(value: Double): Self = this.set("samples", value.asInstanceOf[js.Any])
+    def setSizeFunction1(value: /* data */ js.Any => Double): Self = StObject.set(x, "size", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSamples: Self = this.set("samples", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def setSizeFunction1(value: /* data */ js.Any => Double): Self = this.set("size", js.Any.fromFunction1(value))
+    def setStyle(value: VictoryStyleInterface): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double | (js.Function1[/* data */ js.Any, Double])): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSymbol(value: ScatterSymbolType | (js.Function1[/* data */ js.Any, ScatterSymbolType])): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: VictoryStyleInterface): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setSymbolFunction1(value: /* data */ js.Any => ScatterSymbolType): Self = StObject.set(x, "symbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setSymbolFunction1(value: /* data */ js.Any => ScatterSymbolType): Self = this.set("symbol", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSymbol(value: ScatterSymbolType | (js.Function1[/* data */ js.Any, ScatterSymbolType])): Self = this.set("symbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.ssUtils.ssutils
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidationOptional extends js.Object {
+trait ValidationOptional extends StObject {
   
   var errorFilter: js.UndefOr[
     js.Function3[/* errorMsg */ String, /* errorCode */ String, /* type */ String, Unit]
@@ -25,36 +26,24 @@ object ValidationOptional {
   }
   
   @scala.inline
-  implicit class ValidationOptionalOps[Self <: ValidationOptional] (val x: Self) extends AnyVal {
+  implicit class ValidationOptionalMutableBuilder[Self <: ValidationOptional] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorFilter(value: (/* errorMsg */ String, /* errorCode */ String, /* type */ String) => Unit): Self = StObject.set(x, "errorFilter", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorFilterUndefined: Self = StObject.set(x, "errorFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessages(value: StringDictionary[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorFilter(value: (/* errorMsg */ String, /* errorCode */ String, /* type */ String) => Unit): Self = this.set("errorFilter", js.Any.fromFunction3(value))
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteErrorFilter: Self = this.set("errorFilter", js.undefined)
+    def setOverrideMessages(value: Boolean): Self = StObject.set(x, "overrideMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: StringDictionary[String]): Self = this.set("messages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
-    
-    @scala.inline
-    def setOverrideMessages(value: Boolean): Self = this.set("overrideMessages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverrideMessages: Self = this.set("overrideMessages", js.undefined)
+    def setOverrideMessagesUndefined: Self = StObject.set(x, "overrideMessages", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.webix.webix
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait env extends js.Object {
+trait env extends StObject {
   
   var cssPrefix: String = js.native
   
@@ -59,60 +60,48 @@ object env {
   }
   
   @scala.inline
-  implicit class envOps[Self <: env] (val x: Self) extends AnyVal {
+  implicit class envMutableBuilder[Self <: env] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCssPrefix(value: String): Self = StObject.set(x, "cssPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsFF(value: Boolean): Self = StObject.set(x, "isFF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsIE(value: Boolean): Self = StObject.set(x, "isIE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssPrefix(value: String): Self = this.set("cssPrefix", value.asInstanceOf[js.Any])
+    def setIsSafari(value: Boolean): Self = StObject.set(x, "isSafari", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFF(value: Boolean): Self = this.set("isFF", value.asInstanceOf[js.Any])
+    def setIsWebKit(value: Boolean): Self = StObject.set(x, "isWebKit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIE(value: Boolean): Self = this.set("isIE", value.asInstanceOf[js.Any])
+    def setJsPrefix(value: String): Self = StObject.set(x, "jsPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSafari(value: Boolean): Self = this.set("isSafari", value.asInstanceOf[js.Any])
+    def setMouse(value: js.Any): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsWebKit(value: Boolean): Self = this.set("isWebKit", value.asInstanceOf[js.Any])
+    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsPrefix(value: String): Self = this.set("jsPrefix", value.asInstanceOf[js.Any])
+    def setSvg(value: Boolean): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouse(value: js.Any): Self = this.set("mouse", value.asInstanceOf[js.Any])
+    def setTransform(value: Boolean): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
+    def setTransition(value: Boolean): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvg(value: Boolean): Self = this.set("svg", value.asInstanceOf[js.Any])
+    def setTransitionDuration(value: String): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransform(value: Boolean): Self = this.set("transform", value.asInstanceOf[js.Any])
+    def setTransitionEnd(value: String): Self = StObject.set(x, "transitionEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransition(value: Boolean): Self = this.set("transition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransitionDuration(value: String): Self = this.set("transitionDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransitionEnd(value: String): Self = this.set("transitionEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTranslate(value: String): Self = this.set("translate", value.asInstanceOf[js.Any])
+    def setTranslate(value: String): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
   }
 }

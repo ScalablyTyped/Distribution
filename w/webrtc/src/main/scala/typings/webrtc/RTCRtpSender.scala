@@ -1,12 +1,13 @@
 package typings.webrtc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://www.w3.org/TR/webrtc/#dom-rtcrtpsender
 @js.native
-trait RTCRtpSender extends js.Object {
+trait RTCRtpSender extends StObject {
   
   def getParameters(): RTCRtpParameters = js.native
   

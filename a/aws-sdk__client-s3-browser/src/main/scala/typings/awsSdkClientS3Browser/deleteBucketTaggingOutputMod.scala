@@ -1,12 +1,13 @@
 package typings.awsSdkClientS3Browser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-browser/model/DeleteBucketTaggingOutput", JSImport.Namespace)
-@js.native
-object deleteBucketTaggingOutputMod extends js.Object {
+object deleteBucketTaggingOutputMod {
   
+  @JSImport("@aws-sdk/client-s3-browser/model/DeleteBucketTaggingOutput", "DeleteBucketTaggingOutput")
+  @js.native
   val DeleteBucketTaggingOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

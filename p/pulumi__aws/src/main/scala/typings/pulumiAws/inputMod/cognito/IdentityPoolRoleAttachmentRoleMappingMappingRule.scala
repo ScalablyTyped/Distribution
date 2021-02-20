@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.cognito
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentityPoolRoleAttachmentRoleMappingMappingRule extends js.Object {
+trait IdentityPoolRoleAttachmentRoleMappingMappingRule extends StObject {
   
   /**
     * The claim name that must be present in the token, for example, "isAdmin" or "paid".
@@ -37,30 +38,18 @@ object IdentityPoolRoleAttachmentRoleMappingMappingRule {
   }
   
   @scala.inline
-  implicit class IdentityPoolRoleAttachmentRoleMappingMappingRuleOps[Self <: IdentityPoolRoleAttachmentRoleMappingMappingRule] (val x: Self) extends AnyVal {
+  implicit class IdentityPoolRoleAttachmentRoleMappingMappingRuleMutableBuilder[Self <: IdentityPoolRoleAttachmentRoleMappingMappingRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClaim(value: Input[String]): Self = StObject.set(x, "claim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatchType(value: Input[String]): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClaim(value: Input[String]): Self = this.set("claim", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMatchType(value: Input[String]): Self = this.set("matchType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoleArn(value: Input[String]): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Input[String]): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

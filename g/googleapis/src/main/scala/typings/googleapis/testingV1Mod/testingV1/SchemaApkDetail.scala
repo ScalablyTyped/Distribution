@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * contents.
   */
 @js.native
-trait SchemaApkDetail extends js.Object {
+trait SchemaApkDetail extends StObject {
   
   var apkManifest: js.UndefOr[SchemaApkManifest] = js.native
 }
@@ -22,24 +23,12 @@ object SchemaApkDetail {
   }
   
   @scala.inline
-  implicit class SchemaApkDetailOps[Self <: SchemaApkDetail] (val x: Self) extends AnyVal {
+  implicit class SchemaApkDetailMutableBuilder[Self <: SchemaApkDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApkManifest(value: SchemaApkManifest): Self = StObject.set(x, "apkManifest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApkManifest(value: SchemaApkManifest): Self = this.set("apkManifest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApkManifest: Self = this.set("apkManifest", js.undefined)
+    def setApkManifestUndefined: Self = StObject.set(x, "apkManifest", js.undefined)
   }
 }

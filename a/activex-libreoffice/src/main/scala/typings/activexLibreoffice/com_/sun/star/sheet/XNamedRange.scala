@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,45 +90,33 @@ object XNamedRange {
   }
   
   @scala.inline
-  implicit class XNamedRangeOps[Self <: XNamedRange] (val x: Self) extends AnyVal {
+  implicit class XNamedRangeMutableBuilder[Self <: XNamedRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetContent(value: () => String): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetReferencePosition(value: () => CellAddress): Self = StObject.set(x, "getReferencePosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContent(value: String): Self = this.set("Content", value.asInstanceOf[js.Any])
+    def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReferencePosition(value: CellAddress): Self = this.set("ReferencePosition", value.asInstanceOf[js.Any])
+    def setReferencePosition(value: CellAddress): Self = StObject.set(x, "ReferencePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Double): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setSetContent(value: String => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetContent(value: () => String): Self = this.set("getContent", js.Any.fromFunction0(value))
+    def setSetReferencePosition(value: CellAddress => Unit): Self = StObject.set(x, "setReferencePosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetReferencePosition(value: () => CellAddress): Self = this.set("getReferencePosition", js.Any.fromFunction0(value))
+    def setSetType(value: Double => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetType(value: () => Double): Self = this.set("getType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetContent(value: String => Unit): Self = this.set("setContent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetReferencePosition(value: CellAddress => Unit): Self = this.set("setReferencePosition", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetType(value: Double => Unit): Self = this.set("setType", js.Any.fromFunction1(value))
+    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

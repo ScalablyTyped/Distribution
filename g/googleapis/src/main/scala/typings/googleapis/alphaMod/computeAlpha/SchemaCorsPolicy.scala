@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * see W3C Recommendation for Cross Origin Resource Sharing
   */
 @js.native
-trait SchemaCorsPolicy extends js.Object {
+trait SchemaCorsPolicy extends StObject {
   
   /**
     * In response to a preflight request, setting this to true indicates that
@@ -69,81 +70,69 @@ object SchemaCorsPolicy {
   }
   
   @scala.inline
-  implicit class SchemaCorsPolicyOps[Self <: SchemaCorsPolicy] (val x: Self) extends AnyVal {
+  implicit class SchemaCorsPolicyMutableBuilder[Self <: SchemaCorsPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowCredentials(value: Boolean): Self = StObject.set(x, "allowCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowCredentialsUndefined: Self = StObject.set(x, "allowCredentials", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowHeaders(value: js.Array[String]): Self = StObject.set(x, "allowHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowCredentials(value: Boolean): Self = this.set("allowCredentials", value.asInstanceOf[js.Any])
+    def setAllowHeadersUndefined: Self = StObject.set(x, "allowHeaders", js.undefined)
     
     @scala.inline
-    def deleteAllowCredentials: Self = this.set("allowCredentials", js.undefined)
+    def setAllowHeadersVarargs(value: String*): Self = StObject.set(x, "allowHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setAllowHeadersVarargs(value: String*): Self = this.set("allowHeaders", js.Array(value :_*))
+    def setAllowMethods(value: js.Array[String]): Self = StObject.set(x, "allowMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowHeaders(value: js.Array[String]): Self = this.set("allowHeaders", value.asInstanceOf[js.Any])
+    def setAllowMethodsUndefined: Self = StObject.set(x, "allowMethods", js.undefined)
     
     @scala.inline
-    def deleteAllowHeaders: Self = this.set("allowHeaders", js.undefined)
+    def setAllowMethodsVarargs(value: String*): Self = StObject.set(x, "allowMethods", js.Array(value :_*))
     
     @scala.inline
-    def setAllowMethodsVarargs(value: String*): Self = this.set("allowMethods", js.Array(value :_*))
+    def setAllowOriginRegexes(value: js.Array[String]): Self = StObject.set(x, "allowOriginRegexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowMethods(value: js.Array[String]): Self = this.set("allowMethods", value.asInstanceOf[js.Any])
+    def setAllowOriginRegexesUndefined: Self = StObject.set(x, "allowOriginRegexes", js.undefined)
     
     @scala.inline
-    def deleteAllowMethods: Self = this.set("allowMethods", js.undefined)
+    def setAllowOriginRegexesVarargs(value: String*): Self = StObject.set(x, "allowOriginRegexes", js.Array(value :_*))
     
     @scala.inline
-    def setAllowOriginRegexesVarargs(value: String*): Self = this.set("allowOriginRegexes", js.Array(value :_*))
+    def setAllowOrigins(value: js.Array[String]): Self = StObject.set(x, "allowOrigins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowOriginRegexes(value: js.Array[String]): Self = this.set("allowOriginRegexes", value.asInstanceOf[js.Any])
+    def setAllowOriginsUndefined: Self = StObject.set(x, "allowOrigins", js.undefined)
     
     @scala.inline
-    def deleteAllowOriginRegexes: Self = this.set("allowOriginRegexes", js.undefined)
+    def setAllowOriginsVarargs(value: String*): Self = StObject.set(x, "allowOrigins", js.Array(value :_*))
     
     @scala.inline
-    def setAllowOriginsVarargs(value: String*): Self = this.set("allowOrigins", js.Array(value :_*))
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowOrigins(value: js.Array[String]): Self = this.set("allowOrigins", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteAllowOrigins: Self = this.set("allowOrigins", js.undefined)
+    def setExposeHeaders(value: js.Array[String]): Self = StObject.set(x, "exposeHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setExposeHeadersUndefined: Self = StObject.set(x, "exposeHeaders", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setExposeHeadersVarargs(value: String*): Self = StObject.set(x, "exposeHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setExposeHeadersVarargs(value: String*): Self = this.set("exposeHeaders", js.Array(value :_*))
+    def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposeHeaders(value: js.Array[String]): Self = this.set("exposeHeaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExposeHeaders: Self = this.set("exposeHeaders", js.undefined)
-    
-    @scala.inline
-    def setMaxAge(value: Double): Self = this.set("maxAge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxAge: Self = this.set("maxAge", js.undefined)
+    def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
   }
 }

@@ -11,22 +11,16 @@ import typings.std.PropertyKey
 import typings.std.RegExp
 import typings.std.RegExpExecArray
 import typings.std.WeakSet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("javascript-stringify/dist/function", JSImport.Namespace)
-@js.native
-object functionMod extends js.Object {
+object functionMod {
   
-  val USED_METHOD_KEY: WeakSet[js.Function] = js.native
-  
-  def dedentFunction(fnString: String): String = js.native
-  
-  val functionToString: ToString = js.native
-  
+  @JSImport("javascript-stringify/dist/function", "FunctionParser")
   @js.native
-  class FunctionParser protected () extends js.Object {
+  class FunctionParser protected () extends StObject {
     def this(fn: js.Function, indent: String, next: Next) = this()
     def this(fn: js.Function, indent: String, next: Next, key: String) = this()
     
@@ -115,4 +109,16 @@ object functionMod extends js.Object {
       */
     def tryStrippingName(): js.UndefOr[String] = js.native
   }
+  
+  @JSImport("javascript-stringify/dist/function", "USED_METHOD_KEY")
+  @js.native
+  val USED_METHOD_KEY: WeakSet[js.Function] = js.native
+  
+  @JSImport("javascript-stringify/dist/function", "dedentFunction")
+  @js.native
+  def dedentFunction(fnString: String): String = js.native
+  
+  @JSImport("javascript-stringify/dist/function", "functionToString")
+  @js.native
+  val functionToString: ToString = js.native
 }

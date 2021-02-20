@@ -1,9 +1,11 @@
 package typings.convertUnits.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// Distance
 /* Rewritten from type alias, can be one of: 
   - typings.convertUnits.convertUnitsStrings.mm2
   - typings.convertUnits.convertUnitsStrings.cm2
@@ -15,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.convertUnits.convertUnitsStrings.ac
   - typings.convertUnits.convertUnitsStrings.mi2
 */
-trait uArea extends js.Object
+trait uArea extends StObject
 object uArea {
   
   @scala.inline

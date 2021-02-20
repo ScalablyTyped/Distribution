@@ -1,11 +1,12 @@
 package typings.awsSdk.computeoptimizerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetEnrollmentStatusResponse extends js.Object {
+trait GetEnrollmentStatusResponse extends StObject {
   
   /**
     * Confirms the enrollment status of member accounts within the organization, if the account is a master account of an organization.
@@ -31,36 +32,24 @@ object GetEnrollmentStatusResponse {
   }
   
   @scala.inline
-  implicit class GetEnrollmentStatusResponseOps[Self <: GetEnrollmentStatusResponse] (val x: Self) extends AnyVal {
+  implicit class GetEnrollmentStatusResponseMutableBuilder[Self <: GetEnrollmentStatusResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMemberAccountsEnrolled(value: MemberAccountsEnrolled): Self = StObject.set(x, "memberAccountsEnrolled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMemberAccountsEnrolledUndefined: Self = StObject.set(x, "memberAccountsEnrolled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemberAccountsEnrolled(value: MemberAccountsEnrolled): Self = this.set("memberAccountsEnrolled", value.asInstanceOf[js.Any])
+    def setStatusReason(value: StatusReason): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMemberAccountsEnrolled: Self = this.set("memberAccountsEnrolled", js.undefined)
+    def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
     
     @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setStatusReason(value: StatusReason): Self = this.set("statusReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusReason: Self = this.set("statusReason", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

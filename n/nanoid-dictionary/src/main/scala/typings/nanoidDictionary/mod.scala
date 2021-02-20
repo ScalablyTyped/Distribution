@@ -1,26 +1,29 @@
 package typings.nanoidDictionary
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nanoid-dictionary", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("nanoid-dictionary", "lowercase")
   @js.native
-  object lowercase extends TopLevel[String]
+  val lowercase: String = js.native
   
+  @JSImport("nanoid-dictionary", "nolookalikes")
   @js.native
-  object nolookalikes extends TopLevel[String]
+  val nolookalikes: String = js.native
   
+  @JSImport("nanoid-dictionary", "nolookalikesSafe")
   @js.native
-  object nolookalikesSafe extends TopLevel[String]
+  val nolookalikesSafe: String = js.native
   
+  @JSImport("nanoid-dictionary", "numbers")
   @js.native
-  object numbers extends TopLevel[String]
+  val numbers: String = js.native
   
+  @JSImport("nanoid-dictionary", "uppercase")
   @js.native
-  object uppercase extends TopLevel[String]
+  val uppercase: String = js.native
 }

@@ -5,6 +5,7 @@ import typings.activexAccess.activexAccessNumbers.`1`
 import typings.activexAccess.activexAccessNumbers.`2`
 import typings.activexAccess.activexAccessNumbers.`3`
 import typings.activexAccess.activexAccessNumbers.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexAccess.activexAccessNumbers.`4`
   - typings.activexAccess.activexAccessNumbers.`3`
 */
-trait AcFormSection extends js.Object
+trait AcFormSection extends StObject
 object AcFormSection {
   
   @scala.inline

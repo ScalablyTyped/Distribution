@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for the Android instance details resource.
   */
 @js.native
-trait SchemaInstanceAndroidDetails extends js.Object {
+trait SchemaInstanceAndroidDetails extends StObject {
   
   /**
     * Flag indicating whether the anti-piracy check is enabled.
@@ -40,42 +41,30 @@ object SchemaInstanceAndroidDetails {
   }
   
   @scala.inline
-  implicit class SchemaInstanceAndroidDetailsOps[Self <: SchemaInstanceAndroidDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaInstanceAndroidDetailsMutableBuilder[Self <: SchemaInstanceAndroidDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnablePiracyCheck(value: Boolean): Self = StObject.set(x, "enablePiracyCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnablePiracyCheckUndefined: Self = StObject.set(x, "enablePiracyCheck", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablePiracyCheck(value: Boolean): Self = this.set("enablePiracyCheck", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteEnablePiracyCheck: Self = this.set("enablePiracyCheck", js.undefined)
+    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPreferred(value: Boolean): Self = StObject.set(x, "preferred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackageName: Self = this.set("packageName", js.undefined)
-    
-    @scala.inline
-    def setPreferred(value: Boolean): Self = this.set("preferred", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreferred: Self = this.set("preferred", js.undefined)
+    def setPreferredUndefined: Self = StObject.set(x, "preferred", js.undefined)
   }
 }

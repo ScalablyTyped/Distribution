@@ -1,11 +1,12 @@
 package typings.tuyaPanelKit.themeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrickButtonTheme extends js.Object {
+trait BrickButtonTheme extends StObject {
   
   var bgBorder: String = js.native
   
@@ -38,39 +39,27 @@ object BrickButtonTheme {
   }
   
   @scala.inline
-  implicit class BrickButtonThemeOps[Self <: BrickButtonTheme] (val x: Self) extends AnyVal {
+  implicit class BrickButtonThemeMutableBuilder[Self <: BrickButtonTheme] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBgBorder(value: String): Self = StObject.set(x, "bgBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBgBorderWidth(value: Double): Self = StObject.set(x, "bgBorderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBgRadius(value: Double): Self = StObject.set(x, "bgRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgBorder(value: String): Self = this.set("bgBorder", value.asInstanceOf[js.Any])
+    def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgBorderWidth(value: Double): Self = this.set("bgBorderWidth", value.asInstanceOf[js.Any])
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgRadius(value: Double): Self = this.set("bgRadius", value.asInstanceOf[js.Any])
+    def setLoadingBackground(value: String): Self = StObject.set(x, "loadingBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontColor(value: String): Self = this.set("fontColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLoadingBackground(value: String): Self = this.set("loadingBackground", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLoadingColor(value: String): Self = this.set("loadingColor", value.asInstanceOf[js.Any])
+    def setLoadingColor(value: String): Self = StObject.set(x, "loadingColor", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The default constructor produces the Spot(0, 0, 0, 0), at the top-left corner.
   */
-class Spot () extends js.Object {
+class Spot () extends StObject {
   /**
     * The two-argument constructor produces the Spot(x, y), where X and Y are fractional distances, between zero and one.
     * @param {number} x must be between zero and one, inclusive.
@@ -99,122 +100,307 @@ class Spot () extends js.Object {
   /**Gets or sets the y value of the Spot, a fractional value between zero and one.*/
   var y: Double = js.native
 }
-/* static members */
-@JSImport("go", "Spot")
-@js.native
-object Spot extends js.Object {
+object Spot {
+  
+  @JSImport("go", "Spot")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**The set of points on all sides of the bounding rectangle.*/
-  var AllSides: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.AllSides")
+  @js.native
+  def AllSides: Spot = js.native
+  @scala.inline
+  def AllSides_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AllSides")(x.asInstanceOf[js.Any])
   
   /**A synonym for Spot.BottomCenter.*/
-  var Bottom: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.Bottom")
+  @js.native
+  def Bottom: Spot = js.native
   
   /**The specific point at the middle of the bottom side of bounding rectangle.*/
-  var BottomCenter: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.BottomCenter")
+  @js.native
+  def BottomCenter: Spot = js.native
+  @scala.inline
+  def BottomCenter_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BottomCenter")(x.asInstanceOf[js.Any])
   
   /**The specific point at the bottom-left corner of the bounding rectangle.*/
-  var BottomLeft: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.BottomLeft")
+  @js.native
+  def BottomLeft: Spot = js.native
   
   /**The set of points at the left or bottom sides of the bounding rectangle.*/
-  var BottomLeftSides: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.BottomLeftSides")
+  @js.native
+  def BottomLeftSides: Spot = js.native
+  @scala.inline
+  def BottomLeftSides_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BottomLeftSides")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def BottomLeft_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BottomLeft")(x.asInstanceOf[js.Any])
   
   /**The specific point at the bottom-right corner of the bounding rectangle.*/
-  var BottomRight: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.BottomRight")
+  @js.native
+  def BottomRight: Spot = js.native
   
   /**The set of points at the right or bottom sides of the bounding rectangle.*/
-  var BottomRightSides: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.BottomRightSides")
+  @js.native
+  def BottomRightSides: Spot = js.native
+  @scala.inline
+  def BottomRightSides_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BottomRightSides")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def BottomRight_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BottomRight")(x.asInstanceOf[js.Any])
   
   /**The set of points at the bottom side of the bounding rectangle.*/
-  var BottomSide: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.BottomSide")
+  @js.native
+  def BottomSide: Spot = js.native
+  @scala.inline
+  def BottomSide_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BottomSide")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def Bottom_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Bottom")(x.asInstanceOf[js.Any])
   
   /**The specific point at the very center of the bounding rectangle.*/
-  var Center: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.Center")
+  @js.native
+  def Center: Spot = js.native
+  @scala.inline
+  def Center_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Center")(x.asInstanceOf[js.Any])
   
   /**Use this value to indicate that the real spot value is inherited from elsewhere.*/
-  var Default: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.Default")
+  @js.native
+  def Default: Spot = js.native
+  @scala.inline
+  def Default_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
   
   /**A synonym for Spot.LeftCenter.*/
-  var Left: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.Left")
+  @js.native
+  def Left: Spot = js.native
   
   /**The specific point at the middle of the left side of bounding rectangle.*/
-  var LeftCenter: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.LeftCenter")
+  @js.native
+  def LeftCenter: Spot = js.native
+  @scala.inline
+  def LeftCenter_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LeftCenter")(x.asInstanceOf[js.Any])
   
   /**The set of points at the left or right sides of the bounding rectangle.*/
-  var LeftRightSides: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.LeftRightSides")
+  @js.native
+  def LeftRightSides: Spot = js.native
+  @scala.inline
+  def LeftRightSides_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LeftRightSides")(x.asInstanceOf[js.Any])
   
   /**The set of points at the left side of the bounding rectangle.*/
-  var LeftSide: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.LeftSide")
+  @js.native
+  def LeftSide: Spot = js.native
+  @scala.inline
+  def LeftSide_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LeftSide")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def Left_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Left")(x.asInstanceOf[js.Any])
   
   /**A synonym for Spot.BottomCenter.*/
-  var MiddleBottom: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.MiddleBottom")
+  @js.native
+  def MiddleBottom: Spot = js.native
+  @scala.inline
+  def MiddleBottom_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MiddleBottom")(x.asInstanceOf[js.Any])
   
   /**A synonym for Spot.LeftCenter.*/
-  var MiddleLeft: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.MiddleLeft")
+  @js.native
+  def MiddleLeft: Spot = js.native
+  @scala.inline
+  def MiddleLeft_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MiddleLeft")(x.asInstanceOf[js.Any])
   
   /**A synonym for Spot.RightCenter.*/
-  var MiddleRight: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.MiddleRight")
+  @js.native
+  def MiddleRight: Spot = js.native
+  @scala.inline
+  def MiddleRight_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MiddleRight")(x.asInstanceOf[js.Any])
   
   /**A synonym for Spot.TopCenter.*/
-  var MiddleTop: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.MiddleTop")
+  @js.native
+  def MiddleTop: Spot = js.native
+  @scala.inline
+  def MiddleTop_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MiddleTop")(x.asInstanceOf[js.Any])
   
   /**Use this Spot value to indicate no particular spot -- code looking for a particular point on an element will need to do their own calculations to determine the desired point depending on the circumstances.*/
-  var None: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.None")
+  @js.native
+  def None: Spot = js.native
+  @scala.inline
+  def None_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /**The set of points on all sides of bounding rectangle except bottom side.*/
-  var NotBottomSide: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.NotBottomSide")
+  @js.native
+  def NotBottomSide: Spot = js.native
+  @scala.inline
+  def NotBottomSide_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NotBottomSide")(x.asInstanceOf[js.Any])
   
   /**The set of points on all sides of the bounding rectangle except left side.*/
-  var NotLeftSide: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.NotLeftSide")
+  @js.native
+  def NotLeftSide: Spot = js.native
+  @scala.inline
+  def NotLeftSide_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NotLeftSide")(x.asInstanceOf[js.Any])
   
   /**The set of points on all sides of the bounding rectangle except right side.*/
-  var NotRightSide: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.NotRightSide")
+  @js.native
+  def NotRightSide: Spot = js.native
+  @scala.inline
+  def NotRightSide_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NotRightSide")(x.asInstanceOf[js.Any])
   
   /**The set of points on all sides of the bounding rectangle except top side.*/
-  var NotTopSide: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.NotTopSide")
+  @js.native
+  def NotTopSide: Spot = js.native
+  @scala.inline
+  def NotTopSide_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NotTopSide")(x.asInstanceOf[js.Any])
   
   /**A synonym for Spot.RightCenter.*/
-  var Right: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.Right")
+  @js.native
+  def Right: Spot = js.native
   
   /**The specific point at the middle of the right side of bounding rectangle.*/
-  var RightCenter: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.RightCenter")
+  @js.native
+  def RightCenter: Spot = js.native
+  @scala.inline
+  def RightCenter_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RightCenter")(x.asInstanceOf[js.Any])
   
   /**The set of points at the right side of the bounding rectangle.*/
-  var RightSide: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.RightSide")
+  @js.native
+  def RightSide: Spot = js.native
+  @scala.inline
+  def RightSide_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RightSide")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def Right_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Right")(x.asInstanceOf[js.Any])
   
   /**A synonym for Spot.TopCenter.*/
-  var Top: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.Top")
+  @js.native
+  def Top: Spot = js.native
   
   /**The set of points at the top or bottom sides of the bounding rectangle.*/
-  var TopBottomSides: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.TopBottomSides")
+  @js.native
+  def TopBottomSides: Spot = js.native
+  @scala.inline
+  def TopBottomSides_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TopBottomSides")(x.asInstanceOf[js.Any])
   
   /**The specific point at the center of the top side of the bounding rectangle.*/
-  var TopCenter: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.TopCenter")
+  @js.native
+  def TopCenter: Spot = js.native
+  @scala.inline
+  def TopCenter_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TopCenter")(x.asInstanceOf[js.Any])
   
   /**The specific point at the top-left corner of the bounding rectangle.*/
-  var TopLeft: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.TopLeft")
+  @js.native
+  def TopLeft: Spot = js.native
   
   /**The set of points at the top or left sides of the bounding rectangle.*/
-  var TopLeftSides: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.TopLeftSides")
+  @js.native
+  def TopLeftSides: Spot = js.native
+  @scala.inline
+  def TopLeftSides_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TopLeftSides")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def TopLeft_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TopLeft")(x.asInstanceOf[js.Any])
   
   /**The specific point at the top-right corner of the bounding rectangle.*/
-  var TopRight: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.TopRight")
+  @js.native
+  def TopRight: Spot = js.native
   
   /**The set of points at the top or right sides of the bounding rectangle.*/
-  var TopRightSides: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.TopRightSides")
+  @js.native
+  def TopRightSides: Spot = js.native
+  @scala.inline
+  def TopRightSides_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TopRightSides")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def TopRight_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TopRight")(x.asInstanceOf[js.Any])
   
   /**The set of points at the top side of the bounding rectangle.*/
-  var TopSide: Spot = js.native
+  /* static member */
+  @JSImport("go", "Spot.TopSide")
+  @js.native
+  def TopSide: Spot = js.native
+  @scala.inline
+  def TopSide_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TopSide")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def Top_=(x: Spot): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Top")(x.asInstanceOf[js.Any])
   
   /**
     * This static function can be used to read in a Spot from a string that was produced by Spot.stringify.
     * @param {string} str
     */
+  /* static member */
+  @JSImport("go", "Spot.parse")
+  @js.native
   def parse(str: String): Spot = js.native
   
   /**
     * This static function can be used to write out a Spot as a string that can be read by Spot.parse.
     * @param {Spot} val
     */
+  /* static member */
+  @JSImport("go", "Spot.stringify")
+  @js.native
   def stringify(`val`: Spot): String = js.native
 }

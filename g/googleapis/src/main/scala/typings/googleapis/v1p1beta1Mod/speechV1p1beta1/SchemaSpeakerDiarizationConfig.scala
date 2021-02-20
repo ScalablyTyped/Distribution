@@ -1,11 +1,12 @@
 package typings.googleapis.v1p1beta1Mod.speechV1p1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaSpeakerDiarizationConfig extends js.Object {
+trait SchemaSpeakerDiarizationConfig extends StObject {
   
   /**
     * *Optional* If &#39;true&#39;, enables speaker detection for each
@@ -39,36 +40,24 @@ object SchemaSpeakerDiarizationConfig {
   }
   
   @scala.inline
-  implicit class SchemaSpeakerDiarizationConfigOps[Self <: SchemaSpeakerDiarizationConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaSpeakerDiarizationConfigMutableBuilder[Self <: SchemaSpeakerDiarizationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableSpeakerDiarization(value: Boolean): Self = StObject.set(x, "enableSpeakerDiarization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableSpeakerDiarizationUndefined: Self = StObject.set(x, "enableSpeakerDiarization", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxSpeakerCount(value: Double): Self = StObject.set(x, "maxSpeakerCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableSpeakerDiarization(value: Boolean): Self = this.set("enableSpeakerDiarization", value.asInstanceOf[js.Any])
+    def setMaxSpeakerCountUndefined: Self = StObject.set(x, "maxSpeakerCount", js.undefined)
     
     @scala.inline
-    def deleteEnableSpeakerDiarization: Self = this.set("enableSpeakerDiarization", js.undefined)
+    def setMinSpeakerCount(value: Double): Self = StObject.set(x, "minSpeakerCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSpeakerCount(value: Double): Self = this.set("maxSpeakerCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxSpeakerCount: Self = this.set("maxSpeakerCount", js.undefined)
-    
-    @scala.inline
-    def setMinSpeakerCount(value: Double): Self = this.set("minSpeakerCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinSpeakerCount: Self = this.set("minSpeakerCount", js.undefined)
+    def setMinSpeakerCountUndefined: Self = StObject.set(x, "minSpeakerCount", js.undefined)
   }
 }

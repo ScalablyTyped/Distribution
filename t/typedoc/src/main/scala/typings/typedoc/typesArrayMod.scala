@@ -1,14 +1,14 @@
 package typings.typedoc
 
 import typings.typedoc.modelsTypesMod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/models/types/array", JSImport.Namespace)
-@js.native
-object typesArrayMod extends js.Object {
+object typesArrayMod {
   
+  @JSImport("typedoc/dist/lib/models/types/array", "ArrayType")
   @js.native
   class ArrayType protected () extends Type {
     def this(elementType: Type) = this()

@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AmpmWheelLabel extends js.Object {
+trait AmpmWheelLabel extends StObject {
   
   var ampmWheelLabel: js.UndefOr[String] = js.native
   
@@ -38,84 +39,72 @@ object AmpmWheelLabel {
   }
   
   @scala.inline
-  implicit class AmpmWheelLabelOps[Self <: AmpmWheelLabel] (val x: Self) extends AnyVal {
+  implicit class AmpmWheelLabelMutableBuilder[Self <: AmpmWheelLabel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmpmWheelLabel(value: String): Self = StObject.set(x, "ampmWheelLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmpmWheelLabelUndefined: Self = StObject.set(x, "ampmWheelLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpmWheelLabel(value: String): Self = this.set("ampmWheelLabel", value.asInstanceOf[js.Any])
+    def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
     
     @scala.inline
-    def deleteAmpmWheelLabel: Self = this.set("ampmWheelLabel", js.undefined)
+    def setCurrentTimeText(value: String): Self = StObject.set(x, "currentTimeText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelText(value: String): Self = this.set("cancelText", value.asInstanceOf[js.Any])
+    def setCurrentTimeTextUndefined: Self = StObject.set(x, "currentTimeText", js.undefined)
     
     @scala.inline
-    def deleteCancelText: Self = this.set("cancelText", js.undefined)
+    def setDateTimeRange(value: MessageDetail): Self = StObject.set(x, "dateTimeRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTimeText(value: String): Self = this.set("currentTimeText", value.asInstanceOf[js.Any])
+    def setDateTimeRangeUndefined: Self = StObject.set(x, "dateTimeRange", js.undefined)
     
     @scala.inline
-    def deleteCurrentTimeText: Self = this.set("currentTimeText", js.undefined)
+    def setHourWheelLabel(value: String): Self = StObject.set(x, "hourWheelLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateTimeRange(value: MessageDetail): Self = this.set("dateTimeRange", value.asInstanceOf[js.Any])
+    def setHourWheelLabelUndefined: Self = StObject.set(x, "hourWheelLabel", js.undefined)
     
     @scala.inline
-    def deleteDateTimeRange: Self = this.set("dateTimeRange", js.undefined)
+    def setMinuteWheelLabel(value: String): Self = StObject.set(x, "minuteWheelLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHourWheelLabel(value: String): Self = this.set("hourWheelLabel", value.asInstanceOf[js.Any])
+    def setMinuteWheelLabelUndefined: Self = StObject.set(x, "minuteWheelLabel", js.undefined)
     
     @scala.inline
-    def deleteHourWheelLabel: Self = this.set("hourWheelLabel", js.undefined)
+    def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinuteWheelLabel(value: String): Self = this.set("minuteWheelLabel", value.asInstanceOf[js.Any])
+    def setOkTextUndefined: Self = StObject.set(x, "okText", js.undefined)
     
     @scala.inline
-    def deleteMinuteWheelLabel: Self = this.set("minuteWheelLabel", js.undefined)
+    def setRegexp(value: MessageSummary): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOkText(value: String): Self = this.set("okText", value.asInstanceOf[js.Any])
+    def setRegexpUndefined: Self = StObject.set(x, "regexp", js.undefined)
     
     @scala.inline
-    def deleteOkText: Self = this.set("okText", js.undefined)
+    def setRequired(value: Hint): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegexp(value: MessageSummary): Self = this.set("regexp", value.asInstanceOf[js.Any])
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def deleteRegexp: Self = this.set("regexp", js.undefined)
+    def setTooltipTime(value: String): Self = StObject.set(x, "tooltipTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: Hint): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setTooltipTimeDisabled(value: String): Self = StObject.set(x, "tooltipTimeDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setTooltipTimeDisabledUndefined: Self = StObject.set(x, "tooltipTimeDisabled", js.undefined)
     
     @scala.inline
-    def setTooltipTime(value: String): Self = this.set("tooltipTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltipTime: Self = this.set("tooltipTime", js.undefined)
-    
-    @scala.inline
-    def setTooltipTimeDisabled(value: String): Self = this.set("tooltipTimeDisabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltipTimeDisabled: Self = this.set("tooltipTimeDisabled", js.undefined)
+    def setTooltipTimeUndefined: Self = StObject.set(x, "tooltipTime", js.undefined)
   }
 }

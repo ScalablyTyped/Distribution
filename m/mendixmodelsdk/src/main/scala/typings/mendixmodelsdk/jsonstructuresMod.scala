@@ -14,31 +14,21 @@ import typings.mendixmodelsdk.versionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.versionChecksMod.StructureType
 import typings.mendixmodelsdk.xmlschemasMod.xmlschemas.IMxSchema
 import typings.mendixmodelsdk.xmlschemasMod.xmlschemas.MxSchema
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/jsonstructures", JSImport.Namespace)
-@js.native
-object jsonstructuresMod extends js.Object {
+object jsonstructuresMod {
   
+  @JSImport("mendixmodelsdk/dist/gen/jsonstructures", "StructureVersionInfo")
   @js.native
   class StructureVersionInfo protected ()
     extends typings.mendixmodelsdk.internalMod.StructureVersionInfo {
     def this(info: IStructureVersionInfo, structureType: StructureType) = this()
   }
   
-  @js.native
-  object jsonstructures extends js.Object {
-    
-    /**
-      * See: {@link https://docs.mendix.com/refguide/json-structures relevant section in reference guide}
-      *
-      * In version 6.6.0: removed experimental
-      * In version 6.2.0: introduced
-      */
-    @js.native
-    trait IJsonStructure extends IMxSchema
+  object jsonstructures {
     
     /**
       * Interfaces and instance classes for types from the Mendix sub meta model `JsonStructures`.
@@ -46,6 +36,7 @@ object jsonstructuresMod extends js.Object {
     /**
       * In version 6.6.0: introduced
       */
+    @JSImport("mendixmodelsdk/dist/gen/jsonstructures", "jsonstructures.JsonElement")
     @js.native
     class JsonElement protected () extends Element {
       def this(
@@ -60,15 +51,20 @@ object jsonstructuresMod extends js.Object {
       def originalValue: String = js.native
       def originalValue_=(newValue: String): Unit = js.native
     }
-    /* static members */
-    @js.native
-    object JsonElement extends js.Object {
+    object JsonElement {
+      
+      @JSImport("mendixmodelsdk/dist/gen/jsonstructures", "jsonstructures.JsonElement")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Creates and returns a new JsonElement instance in the SDK and on the server.
         * Expects one argument: the IModel object the instance will "live on".
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/jsonstructures", "jsonstructures.JsonElement.create")
+      @js.native
       def create(model: IModel): JsonElement = js.native
       
       /**
@@ -79,6 +75,9 @@ object jsonstructuresMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  6.6.0 and higher
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/jsonstructures", "jsonstructures.JsonElement.createInElementUnderChildren")
+      @js.native
       def createInElementUnderChildren(container: Element): JsonElement = js.native
       
       /**
@@ -89,11 +88,24 @@ object jsonstructuresMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  6.6.0 and higher
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/jsonstructures", "jsonstructures.JsonElement.createInJsonStructureUnderElements")
+      @js.native
       def createInJsonStructureUnderElements(container: JsonStructure): JsonElement = js.native
       
-      var structureTypeName: String = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/jsonstructures", "jsonstructures.JsonElement.structureTypeName")
+      @js.native
+      def structureTypeName: String = js.native
+      @scala.inline
+      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
-      var versionInfo: StructureVersionInfo = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/jsonstructures", "jsonstructures.JsonElement.versionInfo")
+      @js.native
+      def versionInfo: StructureVersionInfo = js.native
+      @scala.inline
+      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -112,7 +124,8 @@ object jsonstructuresMod extends js.Object {
     - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
     - typings.mendixmodelsdk.xmlschemasMod.xmlschemas.IMxSchema because Already inherited
-    - typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.IJsonStructure because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
+    - typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.IJsonStructure because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/jsonstructures", "jsonstructures.JsonStructure")
+    @js.native
     class JsonStructure protected () extends MxSchema {
       def this(
         model: AbstractModel,
@@ -133,19 +146,43 @@ object jsonstructuresMod extends js.Object {
       def jsonSnippet: String = js.native
       def jsonSnippet_=(newValue: String): Unit = js.native
     }
-    /* static members */
-    @js.native
-    object JsonStructure extends js.Object {
+    object JsonStructure {
+      
+      @JSImport("mendixmodelsdk/dist/gen/jsonstructures", "jsonstructures.JsonStructure")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Creates a new JsonStructure unit in the SDK and on the server.
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/jsonstructures", "jsonstructures.JsonStructure.createIn")
+      @js.native
       def createIn(container: IFolderBase): JsonStructure = js.native
       
-      var structureTypeName: String = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/jsonstructures", "jsonstructures.JsonStructure.structureTypeName")
+      @js.native
+      def structureTypeName: String = js.native
+      @scala.inline
+      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
-      var versionInfo: StructureVersionInfo = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/jsonstructures", "jsonstructures.JsonStructure.versionInfo")
+      @js.native
+      def versionInfo: StructureVersionInfo = js.native
+      @scala.inline
+      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
+    
+    /**
+      * See: {@link https://docs.mendix.com/refguide/json-structures relevant section in reference guide}
+      *
+      * In version 6.6.0: removed experimental
+      * In version 6.2.0: introduced
+      */
+    @js.native
+    trait IJsonStructure extends IMxSchema
   }
 }

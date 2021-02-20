@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetPipelineExecutionOutput extends js.Object {
+trait GetPipelineExecutionOutput extends StObject {
   
   /**
     * Represents information about the execution of a pipeline.
@@ -21,24 +22,12 @@ object GetPipelineExecutionOutput {
   }
   
   @scala.inline
-  implicit class GetPipelineExecutionOutputOps[Self <: GetPipelineExecutionOutput] (val x: Self) extends AnyVal {
+  implicit class GetPipelineExecutionOutputMutableBuilder[Self <: GetPipelineExecutionOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPipelineExecution(value: PipelineExecution): Self = StObject.set(x, "pipelineExecution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPipelineExecution(value: PipelineExecution): Self = this.set("pipelineExecution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePipelineExecution: Self = this.set("pipelineExecution", js.undefined)
+    def setPipelineExecutionUndefined: Self = StObject.set(x, "pipelineExecution", js.undefined)
   }
 }

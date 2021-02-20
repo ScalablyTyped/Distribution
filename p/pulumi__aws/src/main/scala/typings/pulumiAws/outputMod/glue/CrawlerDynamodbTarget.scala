@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.glue
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CrawlerDynamodbTarget extends js.Object {
+trait CrawlerDynamodbTarget extends StObject {
   
   /**
     * The name of the DynamoDB table to crawl.
@@ -31,33 +32,21 @@ object CrawlerDynamodbTarget {
   }
   
   @scala.inline
-  implicit class CrawlerDynamodbTargetOps[Self <: CrawlerDynamodbTarget] (val x: Self) extends AnyVal {
+  implicit class CrawlerDynamodbTargetMutableBuilder[Self <: CrawlerDynamodbTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScanAll(value: Boolean): Self = StObject.set(x, "scanAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScanAllUndefined: Self = StObject.set(x, "scanAll", js.undefined)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setScanRate(value: Double): Self = StObject.set(x, "scanRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScanAll(value: Boolean): Self = this.set("scanAll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScanAll: Self = this.set("scanAll", js.undefined)
-    
-    @scala.inline
-    def setScanRate(value: Double): Self = this.set("scanRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScanRate: Self = this.set("scanRate", js.undefined)
+    def setScanRateUndefined: Self = StObject.set(x, "scanRate", js.undefined)
   }
 }

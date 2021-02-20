@@ -2,12 +2,13 @@ package typings.cesium.anon
 
 import typings.cesium.mod.MaterialProperty
 import typings.cesium.mod.Property
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Material extends js.Object {
+trait Material extends StObject {
   
   var bottomRadius: js.UndefOr[Property] = js.native
   
@@ -40,84 +41,72 @@ object Material {
   }
   
   @scala.inline
-  implicit class MaterialOps[Self <: Material] (val x: Self) extends AnyVal {
+  implicit class MaterialMutableBuilder[Self <: Material] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottomRadius(value: Property): Self = StObject.set(x, "bottomRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBottomRadiusUndefined: Self = StObject.set(x, "bottomRadius", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFill(value: Property): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomRadius(value: Property): Self = this.set("bottomRadius", value.asInstanceOf[js.Any])
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def deleteBottomRadius: Self = this.set("bottomRadius", js.undefined)
+    def setLength(value: Property): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: Property): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setMaterial(value: MaterialProperty): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Property): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setNumberOfVerticalLines(value: Property): Self = StObject.set(x, "numberOfVerticalLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaterial(value: MaterialProperty): Self = this.set("material", value.asInstanceOf[js.Any])
+    def setNumberOfVerticalLinesUndefined: Self = StObject.set(x, "numberOfVerticalLines", js.undefined)
     
     @scala.inline
-    def deleteMaterial: Self = this.set("material", js.undefined)
+    def setOutline(value: Property): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfVerticalLines(value: Property): Self = this.set("numberOfVerticalLines", value.asInstanceOf[js.Any])
+    def setOutlineColor(value: Property): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumberOfVerticalLines: Self = this.set("numberOfVerticalLines", js.undefined)
+    def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
     
     @scala.inline
-    def setOutline(value: Property): Self = this.set("outline", value.asInstanceOf[js.Any])
+    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
     @scala.inline
-    def deleteOutline: Self = this.set("outline", js.undefined)
+    def setOutlineWidth(value: Property): Self = StObject.set(x, "outlineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineColor(value: Property): Self = this.set("outlineColor", value.asInstanceOf[js.Any])
+    def setOutlineWidthUndefined: Self = StObject.set(x, "outlineWidth", js.undefined)
     
     @scala.inline
-    def deleteOutlineColor: Self = this.set("outlineColor", js.undefined)
+    def setShow(value: Property): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineWidth(value: Property): Self = this.set("outlineWidth", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteOutlineWidth: Self = this.set("outlineWidth", js.undefined)
+    def setSlices(value: Property): Self = StObject.set(x, "slices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Property): Self = this.set("show", value.asInstanceOf[js.Any])
+    def setSlicesUndefined: Self = StObject.set(x, "slices", js.undefined)
     
     @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setTopRadius(value: Property): Self = StObject.set(x, "topRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlices(value: Property): Self = this.set("slices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlices: Self = this.set("slices", js.undefined)
-    
-    @scala.inline
-    def setTopRadius(value: Property): Self = this.set("topRadius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopRadius: Self = this.set("topRadius", js.undefined)
+    def setTopRadiusUndefined: Self = StObject.set(x, "topRadius", js.undefined)
   }
 }

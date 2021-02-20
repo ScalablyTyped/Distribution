@@ -1,11 +1,12 @@
 package typings.awsSdk.codestarMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociateTeamMemberRequest extends js.Object {
+trait AssociateTeamMemberRequest extends StObject {
   
   /**
     * A user- or system-generated token that identifies the entity that requested the team member association to the project. This token can be used to repeat the request.
@@ -41,39 +42,27 @@ object AssociateTeamMemberRequest {
   }
   
   @scala.inline
-  implicit class AssociateTeamMemberRequestOps[Self <: AssociateTeamMemberRequest] (val x: Self) extends AnyVal {
+  implicit class AssociateTeamMemberRequestMutableBuilder[Self <: AssociateTeamMemberRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProjectId(value: ProjectId): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: ProjectId): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    def setProjectRole(value: Role): Self = StObject.set(x, "projectRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectRole(value: Role): Self = this.set("projectRole", value.asInstanceOf[js.Any])
+    def setRemoteAccessAllowed(value: RemoteAccessAllowed): Self = StObject.set(x, "remoteAccessAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserArn(value: UserArn): Self = this.set("userArn", value.asInstanceOf[js.Any])
+    def setRemoteAccessAllowedUndefined: Self = StObject.set(x, "remoteAccessAllowed", js.undefined)
     
     @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
-    
-    @scala.inline
-    def setRemoteAccessAllowed(value: RemoteAccessAllowed): Self = this.set("remoteAccessAllowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoteAccessAllowed: Self = this.set("remoteAccessAllowed", js.undefined)
+    def setUserArn(value: UserArn): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
   }
 }

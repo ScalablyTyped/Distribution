@@ -1,5 +1,6 @@
 package typings.angularCompiler.coreMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ trait Component extends Directive {
   
   var encapsulation: js.UndefOr[ViewEncapsulation] = js.native
   
-  var entryComponents: js.UndefOr[js.Array[Type | js.Array[_]]] = js.native
+  var entryComponents: js.UndefOr[js.Array[typings.angularCompiler.coreMod.Type | js.Array[_]]] = js.native
   
   var interpolation: js.UndefOr[js.Tuple2[String, String]] = js.native
   
@@ -40,105 +41,93 @@ object Component {
   }
   
   @scala.inline
-  implicit class ComponentOps[Self <: Component] (val x: Self) extends AnyVal {
+  implicit class ComponentMutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimations(value: js.Array[_]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationsUndefined: Self = StObject.set(x, "animations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimationsVarargs(value: js.Any*): Self = StObject.set(x, "animations", js.Array(value :_*))
     
     @scala.inline
-    def setAnimationsVarargs(value: js.Any*): Self = this.set("animations", js.Array(value :_*))
+    def setChangeDetection(value: ChangeDetectionStrategy): Self = StObject.set(x, "changeDetection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimations(value: js.Array[_]): Self = this.set("animations", value.asInstanceOf[js.Any])
+    def setChangeDetectionUndefined: Self = StObject.set(x, "changeDetection", js.undefined)
     
     @scala.inline
-    def deleteAnimations: Self = this.set("animations", js.undefined)
+    def setEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "encapsulation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeDetection(value: ChangeDetectionStrategy): Self = this.set("changeDetection", value.asInstanceOf[js.Any])
+    def setEncapsulationUndefined: Self = StObject.set(x, "encapsulation", js.undefined)
     
     @scala.inline
-    def deleteChangeDetection: Self = this.set("changeDetection", js.undefined)
+    def setEntryComponents(value: js.Array[typings.angularCompiler.coreMod.Type | js.Array[_]]): Self = StObject.set(x, "entryComponents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncapsulation(value: ViewEncapsulation): Self = this.set("encapsulation", value.asInstanceOf[js.Any])
+    def setEntryComponentsUndefined: Self = StObject.set(x, "entryComponents", js.undefined)
     
     @scala.inline
-    def deleteEncapsulation: Self = this.set("encapsulation", js.undefined)
+    def setEntryComponentsVarargs(value: (typings.angularCompiler.coreMod.Type | js.Array[js.Any])*): Self = StObject.set(x, "entryComponents", js.Array(value :_*))
     
     @scala.inline
-    def setEntryComponentsVarargs(value: (Type | js.Array[js.Any])*): Self = this.set("entryComponents", js.Array(value :_*))
+    def setInterpolation(value: js.Tuple2[String, String]): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryComponents(value: js.Array[Type | js.Array[_]]): Self = this.set("entryComponents", value.asInstanceOf[js.Any])
+    def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
     
     @scala.inline
-    def deleteEntryComponents: Self = this.set("entryComponents", js.undefined)
+    def setModuleId(value: String): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterpolation(value: js.Tuple2[String, String]): Self = this.set("interpolation", value.asInstanceOf[js.Any])
+    def setModuleIdUndefined: Self = StObject.set(x, "moduleId", js.undefined)
     
     @scala.inline
-    def deleteInterpolation: Self = this.set("interpolation", js.undefined)
+    def setPreserveWhitespaces(value: Boolean): Self = StObject.set(x, "preserveWhitespaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModuleId(value: String): Self = this.set("moduleId", value.asInstanceOf[js.Any])
+    def setPreserveWhitespacesUndefined: Self = StObject.set(x, "preserveWhitespaces", js.undefined)
     
     @scala.inline
-    def deleteModuleId: Self = this.set("moduleId", js.undefined)
+    def setStyleUrls(value: js.Array[String]): Self = StObject.set(x, "styleUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveWhitespaces(value: Boolean): Self = this.set("preserveWhitespaces", value.asInstanceOf[js.Any])
+    def setStyleUrlsUndefined: Self = StObject.set(x, "styleUrls", js.undefined)
     
     @scala.inline
-    def deletePreserveWhitespaces: Self = this.set("preserveWhitespaces", js.undefined)
+    def setStyleUrlsVarargs(value: String*): Self = StObject.set(x, "styleUrls", js.Array(value :_*))
     
     @scala.inline
-    def setStyleUrlsVarargs(value: String*): Self = this.set("styleUrls", js.Array(value :_*))
+    def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleUrls(value: js.Array[String]): Self = this.set("styleUrls", value.asInstanceOf[js.Any])
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def deleteStyleUrls: Self = this.set("styleUrls", js.undefined)
+    def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
     
     @scala.inline
-    def setStylesVarargs(value: String*): Self = this.set("styles", js.Array(value :_*))
+    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: js.Array[String]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setViewProviders(value: js.Array[Provider]): Self = StObject.set(x, "viewProviders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateUrl(value: String): Self = this.set("templateUrl", value.asInstanceOf[js.Any])
+    def setViewProvidersUndefined: Self = StObject.set(x, "viewProviders", js.undefined)
     
     @scala.inline
-    def deleteTemplateUrl: Self = this.set("templateUrl", js.undefined)
-    
-    @scala.inline
-    def setViewProvidersVarargs(value: Provider*): Self = this.set("viewProviders", js.Array(value :_*))
-    
-    @scala.inline
-    def setViewProviders(value: js.Array[Provider]): Self = this.set("viewProviders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewProviders: Self = this.set("viewProviders", js.undefined)
+    def setViewProvidersVarargs(value: Provider*): Self = StObject.set(x, "viewProviders", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IOCRPages extends js.Object {
+trait IOCRPages extends StObject {
   
   def Add(Index: Double, OCRPage: IOCRPage): Unit = js.native
   
@@ -32,33 +33,21 @@ object IOCRPages {
   }
   
   @scala.inline
-  implicit class IOCRPagesOps[Self <: IOCRPages] (val x: Self) extends AnyVal {
+  implicit class IOCRPagesMutableBuilder[Self <: IOCRPages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (Double, IOCRPage) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone(value: () => IOCRPages): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: (Double, IOCRPage) => Unit): Self = this.set("Add", js.Any.fromFunction2(value))
+    def setItem(value: Double => IOCRPage): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClone(value: () => IOCRPages): Self = this.set("Clone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItem(value: Double => IOCRPage): Self = this.set("Item", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = this.set("Remove", js.Any.fromFunction1(value))
+    def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
   }
 }

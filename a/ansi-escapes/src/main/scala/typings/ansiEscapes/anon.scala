@@ -1,16 +1,15 @@
 package typings.ansiEscapes
 
 import typings.ansiEscapes.mod.AnnotationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Annotation extends js.Object {
+  trait Annotation extends StObject {
     
     /**
     		An annotation looks like this when shown:

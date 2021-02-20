@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigateToSuccessCallbackResult extends js.Object {
+trait NavigateToSuccessCallbackResult extends StObject {
   
   var errMsg: String = js.native
   
@@ -23,24 +24,12 @@ object NavigateToSuccessCallbackResult {
   }
   
   @scala.inline
-  implicit class NavigateToSuccessCallbackResultOps[Self <: NavigateToSuccessCallbackResult] (val x: Self) extends AnyVal {
+  implicit class NavigateToSuccessCallbackResultMutableBuilder[Self <: NavigateToSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEventChannel(value: EventChannel): Self = this.set("eventChannel", value.asInstanceOf[js.Any])
+    def setEventChannel(value: EventChannel): Self = StObject.set(x, "eventChannel", value.asInstanceOf[js.Any])
   }
 }

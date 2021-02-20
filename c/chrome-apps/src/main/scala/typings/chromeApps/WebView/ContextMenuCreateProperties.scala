@@ -11,12 +11,13 @@ import typings.chromeApps.chromeAppsStrings.normal_
 import typings.chromeApps.chromeAppsStrings.radio_
 import typings.chromeApps.chromeAppsStrings.separator_
 import typings.std.Exclude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContextMenuCreateProperties extends js.Object {
+trait ContextMenuCreateProperties extends StObject {
   
   /**
     * The initial state of a checkbox or radio item:
@@ -92,82 +93,70 @@ object ContextMenuCreateProperties {
   }
   
   @scala.inline
-  implicit class ContextMenuCreatePropertiesOps[Self <: ContextMenuCreateProperties] (val x: Self) extends AnyVal {
+  implicit class ContextMenuCreatePropertiesMutableBuilder[Self <: ContextMenuCreateProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContexts(value: js.Array[_]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecked(value: Boolean): Self = this.set("checked", value.asInstanceOf[js.Any])
+    def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
     
     @scala.inline
-    def deleteChecked: Self = this.set("checked", js.undefined)
+    def setContextsVarargs(value: js.Any*): Self = StObject.set(x, "contexts", js.Array(value :_*))
     
     @scala.inline
-    def setContextsVarargs(value: js.Any*): Self = this.set("contexts", js.Array(value :_*))
+    def setDocumentUrlPatterns(value: js.Array[_]): Self = StObject.set(x, "documentUrlPatterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContexts(value: js.Array[_]): Self = this.set("contexts", value.asInstanceOf[js.Any])
+    def setDocumentUrlPatternsUndefined: Self = StObject.set(x, "documentUrlPatterns", js.undefined)
     
     @scala.inline
-    def deleteContexts: Self = this.set("contexts", js.undefined)
+    def setDocumentUrlPatternsVarargs(value: js.Any*): Self = StObject.set(x, "documentUrlPatterns", js.Array(value :_*))
     
     @scala.inline
-    def setDocumentUrlPatternsVarargs(value: js.Any*): Self = this.set("documentUrlPatterns", js.Array(value :_*))
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentUrlPatterns(value: js.Array[_]): Self = this.set("documentUrlPatterns", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDocumentUrlPatterns: Self = this.set("documentUrlPatterns", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setOnclick(value: /* info */ js.Any => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setParentId(value: integer | String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnclick(value: /* info */ js.Any => Unit): Self = this.set("onclick", js.Any.fromFunction1(value))
+    def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
     @scala.inline
-    def deleteOnclick: Self = this.set("onclick", js.undefined)
+    def setTargetUrlPatterns(value: js.Array[_]): Self = StObject.set(x, "targetUrlPatterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentId(value: integer | String): Self = this.set("parentId", value.asInstanceOf[js.Any])
+    def setTargetUrlPatternsUndefined: Self = StObject.set(x, "targetUrlPatterns", js.undefined)
     
     @scala.inline
-    def deleteParentId: Self = this.set("parentId", js.undefined)
+    def setTargetUrlPatternsVarargs(value: js.Any*): Self = StObject.set(x, "targetUrlPatterns", js.Array(value :_*))
     
     @scala.inline
-    def setTargetUrlPatternsVarargs(value: js.Any*): Self = this.set("targetUrlPatterns", js.Array(value :_*))
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetUrlPatterns(value: js.Array[_]): Self = this.set("targetUrlPatterns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetUrlPatterns: Self = this.set("targetUrlPatterns", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
     def setType(
@@ -179,9 +168,9 @@ object ContextMenuCreateProperties {
             normal_ | checkbox_ | radio_ | separator_
           ]
         ]
-    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

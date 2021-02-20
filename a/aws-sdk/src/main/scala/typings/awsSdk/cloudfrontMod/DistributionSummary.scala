@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistributionSummary extends js.Object {
+trait DistributionSummary extends StObject {
   
   /**
     * The ARN (Amazon Resource Name) for the distribution. For example: arn:aws:cloudfront::123456789012:distribution/EDFDVBD632BHDS5, where 123456789012 is your AWS account ID.
@@ -135,87 +136,75 @@ object DistributionSummary {
   }
   
   @scala.inline
-  implicit class DistributionSummaryOps[Self <: DistributionSummary] (val x: Self) extends AnyVal {
+  implicit class DistributionSummaryMutableBuilder[Self <: DistributionSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasICPRecordals(value: AliasICPRecordals): Self = StObject.set(x, "AliasICPRecordals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAliasICPRecordalsUndefined: Self = StObject.set(x, "AliasICPRecordals", js.undefined)
     
     @scala.inline
-    def setARN(value: String): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    def setAliasICPRecordalsVarargs(value: AliasICPRecordal*): Self = StObject.set(x, "AliasICPRecordals", js.Array(value :_*))
     
     @scala.inline
-    def setAliases(value: Aliases): Self = this.set("Aliases", value.asInstanceOf[js.Any])
+    def setAliases(value: Aliases): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheBehaviors(value: CacheBehaviors): Self = this.set("CacheBehaviors", value.asInstanceOf[js.Any])
+    def setCacheBehaviors(value: CacheBehaviors): Self = StObject.set(x, "CacheBehaviors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("Comment", value.asInstanceOf[js.Any])
+    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomErrorResponses(value: CustomErrorResponses): Self = this.set("CustomErrorResponses", value.asInstanceOf[js.Any])
+    def setCustomErrorResponses(value: CustomErrorResponses): Self = StObject.set(x, "CustomErrorResponses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCacheBehavior(value: DefaultCacheBehavior): Self = this.set("DefaultCacheBehavior", value.asInstanceOf[js.Any])
+    def setDefaultCacheBehavior(value: DefaultCacheBehavior): Self = StObject.set(x, "DefaultCacheBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: String): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpVersion(value: HttpVersion): Self = this.set("HttpVersion", value.asInstanceOf[js.Any])
+    def setHttpVersion(value: HttpVersion): Self = StObject.set(x, "HttpVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIPV6Enabled(value: Boolean): Self = this.set("IsIPV6Enabled", value.asInstanceOf[js.Any])
+    def setIsIPV6Enabled(value: Boolean): Self = StObject.set(x, "IsIPV6Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedTime(value: timestamp): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    def setLastModifiedTime(value: timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigins(value: Origins): Self = this.set("Origins", value.asInstanceOf[js.Any])
+    def setOriginGroups(value: OriginGroups): Self = StObject.set(x, "OriginGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriceClass(value: PriceClass): Self = this.set("PriceClass", value.asInstanceOf[js.Any])
+    def setOriginGroupsUndefined: Self = StObject.set(x, "OriginGroups", js.undefined)
     
     @scala.inline
-    def setRestrictions(value: Restrictions): Self = this.set("Restrictions", value.asInstanceOf[js.Any])
+    def setOrigins(value: Origins): Self = StObject.set(x, "Origins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setPriceClass(value: PriceClass): Self = StObject.set(x, "PriceClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewerCertificate(value: ViewerCertificate): Self = this.set("ViewerCertificate", value.asInstanceOf[js.Any])
+    def setRestrictions(value: Restrictions): Self = StObject.set(x, "Restrictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebACLId(value: String): Self = this.set("WebACLId", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliasICPRecordalsVarargs(value: AliasICPRecordal*): Self = this.set("AliasICPRecordals", js.Array(value :_*))
+    def setViewerCertificate(value: ViewerCertificate): Self = StObject.set(x, "ViewerCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliasICPRecordals(value: AliasICPRecordals): Self = this.set("AliasICPRecordals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAliasICPRecordals: Self = this.set("AliasICPRecordals", js.undefined)
-    
-    @scala.inline
-    def setOriginGroups(value: OriginGroups): Self = this.set("OriginGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginGroups: Self = this.set("OriginGroups", js.undefined)
+    def setWebACLId(value: String): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
   }
 }

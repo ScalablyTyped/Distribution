@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeApplicableIndividualAssessmentsMessage extends js.Object {
+trait DescribeApplicableIndividualAssessmentsMessage extends StObject {
   
   /**
     * Optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
@@ -51,60 +52,48 @@ object DescribeApplicableIndividualAssessmentsMessage {
   }
   
   @scala.inline
-  implicit class DescribeApplicableIndividualAssessmentsMessageOps[Self <: DescribeApplicableIndividualAssessmentsMessage] (val x: Self) extends AnyVal {
+  implicit class DescribeApplicableIndividualAssessmentsMessageMutableBuilder[Self <: DescribeApplicableIndividualAssessmentsMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMigrationType(value: MigrationTypeValue): Self = StObject.set(x, "MigrationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    def setMigrationTypeUndefined: Self = StObject.set(x, "MigrationType", js.undefined)
     
     @scala.inline
-    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    def setReplicationInstanceArn(value: String): Self = StObject.set(x, "ReplicationInstanceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMigrationType(value: MigrationTypeValue): Self = this.set("MigrationType", value.asInstanceOf[js.Any])
+    def setReplicationInstanceArnUndefined: Self = StObject.set(x, "ReplicationInstanceArn", js.undefined)
     
     @scala.inline
-    def deleteMigrationType: Self = this.set("MigrationType", js.undefined)
+    def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationInstanceArn(value: String): Self = this.set("ReplicationInstanceArn", value.asInstanceOf[js.Any])
+    def setReplicationTaskArnUndefined: Self = StObject.set(x, "ReplicationTaskArn", js.undefined)
     
     @scala.inline
-    def deleteReplicationInstanceArn: Self = this.set("ReplicationInstanceArn", js.undefined)
+    def setSourceEngineName(value: String): Self = StObject.set(x, "SourceEngineName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationTaskArn(value: String): Self = this.set("ReplicationTaskArn", value.asInstanceOf[js.Any])
+    def setSourceEngineNameUndefined: Self = StObject.set(x, "SourceEngineName", js.undefined)
     
     @scala.inline
-    def deleteReplicationTaskArn: Self = this.set("ReplicationTaskArn", js.undefined)
+    def setTargetEngineName(value: String): Self = StObject.set(x, "TargetEngineName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceEngineName(value: String): Self = this.set("SourceEngineName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceEngineName: Self = this.set("SourceEngineName", js.undefined)
-    
-    @scala.inline
-    def setTargetEngineName(value: String): Self = this.set("TargetEngineName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetEngineName: Self = this.set("TargetEngineName", js.undefined)
+    def setTargetEngineNameUndefined: Self = StObject.set(x, "TargetEngineName", js.undefined)
   }
 }

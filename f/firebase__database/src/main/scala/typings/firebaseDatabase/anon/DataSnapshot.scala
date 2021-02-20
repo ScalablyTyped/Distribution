@@ -6,12 +6,13 @@ import typings.firebaseDatabase.indexMod.Index
 import typings.firebaseDatabase.nodeMod.Node
 import typings.firebaseDatabase.referenceMod.Reference
 import typings.firebaseDatabase.repoMod.Repo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSnapshot extends js.Object {
+trait DataSnapshot extends StObject {
   
   var DataSnapshot: Instantiable3[
     /* node_ */ Node, 

@@ -3,13 +3,14 @@ package typings.defineLazyProp
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.defineLazyProp.defineLazyPropStrings.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("define-lazy-prop", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def apply[ObjectType /* <: StringDictionary[js.Any] */, PropertyNameType /* <: String */, PropertyValueType](`object`: ObjectType, propertyName: PropertyNameType, fn: js.Function0[PropertyValueType]): ObjectType with ^  with TopLevel[js.Any] = js.native
+  @JSImport("define-lazy-prop", JSImport.Namespace)
+  @js.native
+  def apply[ObjectType /* <: StringDictionary[js.Any] */, PropertyNameType /* <: String */, PropertyValueType](`object`: ObjectType, propertyName: PropertyNameType, fn: js.Function0[PropertyValueType]): ObjectType with ^ with TopLevel[js.Any] = js.native
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response for Identitytoolkit-SendVerificationCode
   */
 @js.native
-trait SchemaIdentitytoolkitRelyingpartySendVerificationCodeResponse extends js.Object {
+trait SchemaIdentitytoolkitRelyingpartySendVerificationCodeResponse extends StObject {
   
   /**
     * Encrypted session information
@@ -24,24 +25,12 @@ object SchemaIdentitytoolkitRelyingpartySendVerificationCodeResponse {
   }
   
   @scala.inline
-  implicit class SchemaIdentitytoolkitRelyingpartySendVerificationCodeResponseOps[Self <: SchemaIdentitytoolkitRelyingpartySendVerificationCodeResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaIdentitytoolkitRelyingpartySendVerificationCodeResponseMutableBuilder[Self <: SchemaIdentitytoolkitRelyingpartySendVerificationCodeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSessionInfo(value: String): Self = StObject.set(x, "sessionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSessionInfo(value: String): Self = this.set("sessionInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionInfo: Self = this.set("sessionInfo", js.undefined)
+    def setSessionInfoUndefined: Self = StObject.set(x, "sessionInfo", js.undefined)
   }
 }

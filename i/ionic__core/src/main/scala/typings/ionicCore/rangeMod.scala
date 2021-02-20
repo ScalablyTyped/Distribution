@@ -7,14 +7,14 @@ import typings.ionicCore.rangeInterfaceMod.RangeChangeEventDetail
 import typings.ionicCore.rangeInterfaceMod.RangeValue
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/range/range", JSImport.Namespace)
-@js.native
-object rangeMod extends js.Object {
+object rangeMod {
   
+  @JSImport("@ionic/core/dist/types/components/range/range", "Range")
   @js.native
   class Range () extends ComponentInterface {
     

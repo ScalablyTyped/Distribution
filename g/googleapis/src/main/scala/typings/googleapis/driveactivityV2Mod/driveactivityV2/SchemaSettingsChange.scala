@@ -1,5 +1,6 @@
 package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information about settings changes.
   */
 @js.native
-trait SchemaSettingsChange extends js.Object {
+trait SchemaSettingsChange extends StObject {
   
   /**
     * The set of changes made to restrictions.
@@ -24,27 +25,15 @@ object SchemaSettingsChange {
   }
   
   @scala.inline
-  implicit class SchemaSettingsChangeOps[Self <: SchemaSettingsChange] (val x: Self) extends AnyVal {
+  implicit class SchemaSettingsChangeMutableBuilder[Self <: SchemaSettingsChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRestrictionChanges(value: js.Array[SchemaRestrictionChange]): Self = StObject.set(x, "restrictionChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRestrictionChangesUndefined: Self = StObject.set(x, "restrictionChanges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRestrictionChangesVarargs(value: SchemaRestrictionChange*): Self = this.set("restrictionChanges", js.Array(value :_*))
-    
-    @scala.inline
-    def setRestrictionChanges(value: js.Array[SchemaRestrictionChange]): Self = this.set("restrictionChanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestrictionChanges: Self = this.set("restrictionChanges", js.undefined)
+    def setRestrictionChangesVarargs(value: SchemaRestrictionChange*): Self = StObject.set(x, "restrictionChanges", js.Array(value :_*))
   }
 }

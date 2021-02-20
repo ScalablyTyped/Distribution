@@ -1,5 +1,6 @@
 package typings.mmdbLib.responseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,45 +26,33 @@ object CityResponse {
   }
   
   @scala.inline
-  implicit class CityResponseOps[Self <: CityResponse] (val x: Self) extends AnyVal {
+  implicit class CityResponseMutableBuilder[Self <: CityResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCity(value: CityRecord): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: LocationRecord): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCity(value: CityRecord): Self = this.set("city", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteCity: Self = this.set("city", js.undefined)
+    def setPostal(value: PostalRecord): Self = StObject.set(x, "postal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: LocationRecord): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setPostalUndefined: Self = StObject.set(x, "postal", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setSubdivisions(value: js.Array[SubdivisionsRecord]): Self = StObject.set(x, "subdivisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostal(value: PostalRecord): Self = this.set("postal", value.asInstanceOf[js.Any])
+    def setSubdivisionsUndefined: Self = StObject.set(x, "subdivisions", js.undefined)
     
     @scala.inline
-    def deletePostal: Self = this.set("postal", js.undefined)
-    
-    @scala.inline
-    def setSubdivisionsVarargs(value: SubdivisionsRecord*): Self = this.set("subdivisions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubdivisions(value: js.Array[SubdivisionsRecord]): Self = this.set("subdivisions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubdivisions: Self = this.set("subdivisions", js.undefined)
+    def setSubdivisionsVarargs(value: SubdivisionsRecord*): Self = StObject.set(x, "subdivisions", js.Array(value :_*))
   }
 }

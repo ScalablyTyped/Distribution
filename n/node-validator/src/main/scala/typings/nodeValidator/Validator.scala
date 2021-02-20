@@ -1,12 +1,11 @@
 package typings.nodeValidator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Validator")
-@js.native
-object Validator extends js.Object {
+object Validator {
   
   @js.native
   trait IsObjectValidator extends Validatable {
@@ -19,7 +18,7 @@ object Validator extends js.Object {
   }
   
   @js.native
-  trait Validatable extends js.Object {
+  trait Validatable extends StObject {
     
     def validate(
       value: js.Any,

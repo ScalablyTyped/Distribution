@@ -1,5 +1,6 @@
 package typings.kiiCloudSdk.KiiCloud
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a KiiQuery object
   */
 @js.native
-trait KiiQuery extends js.Object {
+trait KiiQuery extends StObject {
   
   /**
     * Get the limit of the current query
@@ -57,30 +58,18 @@ object KiiQuery {
   }
   
   @scala.inline
-  implicit class KiiQueryOps[Self <: KiiQuery] (val x: Self) extends AnyVal {
+  implicit class KiiQueryMutableBuilder[Self <: KiiQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetLimit(value: () => Double): Self = StObject.set(x, "getLimit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetLimit(value: Double => Unit): Self = StObject.set(x, "setLimit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSortByAsc(value: String => Unit): Self = StObject.set(x, "sortByAsc", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLimit(value: () => Double): Self = this.set("getLimit", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetLimit(value: Double => Unit): Self = this.set("setLimit", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSortByAsc(value: String => Unit): Self = this.set("sortByAsc", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSortByDesc(value: String => Unit): Self = this.set("sortByDesc", js.Any.fromFunction1(value))
+    def setSortByDesc(value: String => Unit): Self = StObject.set(x, "sortByDesc", js.Any.fromFunction1(value))
   }
 }

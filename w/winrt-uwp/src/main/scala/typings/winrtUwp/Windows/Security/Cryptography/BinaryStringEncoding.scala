@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Security.Cryptography
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BinaryStringEncoding extends js.Object
+sealed trait BinaryStringEncoding extends StObject
 /** Contains encoding formats that can be used in the ConvertStringToBinary and ConvertBinaryToString methods. */
 @JSGlobal("Windows.Security.Cryptography.BinaryStringEncoding")
 @js.native
-object BinaryStringEncoding extends js.Object {
+object BinaryStringEncoding extends StObject {
   
   /** Sixteen bit Unicode Transformation Format in big-endian byte order. */
   @js.native

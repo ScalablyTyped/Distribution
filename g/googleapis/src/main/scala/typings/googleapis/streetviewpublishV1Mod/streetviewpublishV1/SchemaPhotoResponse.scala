@@ -1,5 +1,6 @@
 package typings.googleapis.streetviewpublishV1Mod.streetviewpublishV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * BatchGetPhotos and BatchUpdatePhotos.
   */
 @js.native
-trait SchemaPhotoResponse extends js.Object {
+trait SchemaPhotoResponse extends StObject {
   
   /**
     * The Photo resource, if the request was successful.
@@ -31,30 +32,18 @@ object SchemaPhotoResponse {
   }
   
   @scala.inline
-  implicit class SchemaPhotoResponseOps[Self <: SchemaPhotoResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaPhotoResponseMutableBuilder[Self <: SchemaPhotoResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPhoto(value: SchemaPhoto): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: SchemaStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoto(value: SchemaPhoto): Self = this.set("photo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhoto: Self = this.set("photo", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: SchemaStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

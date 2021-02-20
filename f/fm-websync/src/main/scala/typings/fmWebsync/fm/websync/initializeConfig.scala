@@ -1,11 +1,12 @@
 package typings.fmWebsync.fm.websync
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait initializeConfig extends js.Object {
+trait initializeConfig extends StObject {
   
   /**
     * If set to true, an asynchronous disconnect request will be launched when the page unloads. If set to false, no automatic disconnection will be attempted.
@@ -127,102 +128,90 @@ object initializeConfig {
   }
   
   @scala.inline
-  implicit class initializeConfigOps[Self <: initializeConfig] (val x: Self) extends AnyVal {
+  implicit class initializeConfigMutableBuilder[Self <: initializeConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoDisconnect(value: Boolean): Self = StObject.set(x, "autoDisconnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoDisconnectUndefined: Self = StObject.set(x, "autoDisconnect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackoffInterval(value: Double): Self = StObject.set(x, "backoffInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDisconnect(value: Boolean): Self = this.set("autoDisconnect", value.asInstanceOf[js.Any])
+    def setBackoffIntervalUndefined: Self = StObject.set(x, "backoffInterval", js.undefined)
     
     @scala.inline
-    def deleteAutoDisconnect: Self = this.set("autoDisconnect", js.undefined)
+    def setClientFrameUrl(value: String): Self = StObject.set(x, "clientFrameUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackoffInterval(value: Double): Self = this.set("backoffInterval", value.asInstanceOf[js.Any])
+    def setClientFrameUrlUndefined: Self = StObject.set(x, "clientFrameUrl", js.undefined)
     
     @scala.inline
-    def deleteBackoffInterval: Self = this.set("backoffInterval", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientFrameUrl(value: String): Self = this.set("clientFrameUrl", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteClientFrameUrl: Self = this.set("clientFrameUrl", js.undefined)
+    def setOnComplete(value: /* args */ baseArgs => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setOnFailure(value: /* args */ initializeFailureArgs => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnComplete(value: /* args */ baseArgs => Unit): Self = this.set("onComplete", js.Any.fromFunction1(value))
+    def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
     
     @scala.inline
-    def deleteOnComplete: Self = this.set("onComplete", js.undefined)
+    def setOnSuccess(value: /* args */ baseArgs => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnFailure(value: /* args */ initializeFailureArgs => Unit): Self = this.set("onFailure", js.Any.fromFunction1(value))
+    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
     
     @scala.inline
-    def deleteOnFailure: Self = this.set("onFailure", js.undefined)
+    def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSuccess(value: /* args */ baseArgs => Unit): Self = this.set("onSuccess", js.Any.fromFunction1(value))
+    def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
     
     @scala.inline
-    def deleteOnSuccess: Self = this.set("onSuccess", js.undefined)
+    def setRequestUrl(value: String): Self = StObject.set(x, "requestUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuiet(value: Boolean): Self = this.set("quiet", value.asInstanceOf[js.Any])
+    def setRequestUrlUndefined: Self = StObject.set(x, "requestUrl", js.undefined)
     
     @scala.inline
-    def deleteQuiet: Self = this.set("quiet", js.undefined)
+    def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestUrl(value: String): Self = this.set("requestUrl", value.asInstanceOf[js.Any])
+    def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
     
     @scala.inline
-    def deleteRequestUrl: Self = this.set("requestUrl", js.undefined)
+    def setStream(value: js.Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetries(value: Double): Self = this.set("retries", value.asInstanceOf[js.Any])
+    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     
     @scala.inline
-    def deleteRetries: Self = this.set("retries", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStream(value: js.Any): Self = this.set("stream", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteStream: Self = this.set("stream", js.undefined)
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setUrls(value: js.Any): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
-    
-    @scala.inline
-    def setUrls(value: js.Any): Self = this.set("urls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrls: Self = this.set("urls", js.undefined)
+    def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.reactNativeGestureHandler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,144 +61,132 @@ object PanGestureHandlerProperties {
   }
   
   @scala.inline
-  implicit class PanGestureHandlerPropertiesOps[Self <: PanGestureHandlerProperties] (val x: Self) extends AnyVal {
+  implicit class PanGestureHandlerPropertiesMutableBuilder[Self <: PanGestureHandlerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveOffsetX(value: Double | js.Array[Double]): Self = StObject.set(x, "activeOffsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveOffsetXUndefined: Self = StObject.set(x, "activeOffsetX", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveOffsetXVarargs(value: Double*): Self = StObject.set(x, "activeOffsetX", js.Array(value :_*))
     
     @scala.inline
-    def setActiveOffsetXVarargs(value: Double*): Self = this.set("activeOffsetX", js.Array(value :_*))
+    def setActiveOffsetY(value: Double | js.Array[Double]): Self = StObject.set(x, "activeOffsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveOffsetX(value: Double | js.Array[Double]): Self = this.set("activeOffsetX", value.asInstanceOf[js.Any])
+    def setActiveOffsetYUndefined: Self = StObject.set(x, "activeOffsetY", js.undefined)
     
     @scala.inline
-    def deleteActiveOffsetX: Self = this.set("activeOffsetX", js.undefined)
+    def setActiveOffsetYVarargs(value: Double*): Self = StObject.set(x, "activeOffsetY", js.Array(value :_*))
     
     @scala.inline
-    def setActiveOffsetYVarargs(value: Double*): Self = this.set("activeOffsetY", js.Array(value :_*))
+    def setAvgTouches(value: Boolean): Self = StObject.set(x, "avgTouches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveOffsetY(value: Double | js.Array[Double]): Self = this.set("activeOffsetY", value.asInstanceOf[js.Any])
+    def setAvgTouchesUndefined: Self = StObject.set(x, "avgTouches", js.undefined)
     
     @scala.inline
-    def deleteActiveOffsetY: Self = this.set("activeOffsetY", js.undefined)
+    def setFailOffsetX(value: Double | js.Array[Double]): Self = StObject.set(x, "failOffsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvgTouches(value: Boolean): Self = this.set("avgTouches", value.asInstanceOf[js.Any])
+    def setFailOffsetXUndefined: Self = StObject.set(x, "failOffsetX", js.undefined)
     
     @scala.inline
-    def deleteAvgTouches: Self = this.set("avgTouches", js.undefined)
+    def setFailOffsetXVarargs(value: Double*): Self = StObject.set(x, "failOffsetX", js.Array(value :_*))
     
     @scala.inline
-    def setFailOffsetXVarargs(value: Double*): Self = this.set("failOffsetX", js.Array(value :_*))
+    def setFailOffsetY(value: Double | js.Array[Double]): Self = StObject.set(x, "failOffsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailOffsetX(value: Double | js.Array[Double]): Self = this.set("failOffsetX", value.asInstanceOf[js.Any])
+    def setFailOffsetYUndefined: Self = StObject.set(x, "failOffsetY", js.undefined)
     
     @scala.inline
-    def deleteFailOffsetX: Self = this.set("failOffsetX", js.undefined)
+    def setFailOffsetYVarargs(value: Double*): Self = StObject.set(x, "failOffsetY", js.Array(value :_*))
     
     @scala.inline
-    def setFailOffsetYVarargs(value: Double*): Self = this.set("failOffsetY", js.Array(value :_*))
+    def setMaxDeltaX(value: Double): Self = StObject.set(x, "maxDeltaX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailOffsetY(value: Double | js.Array[Double]): Self = this.set("failOffsetY", value.asInstanceOf[js.Any])
+    def setMaxDeltaXUndefined: Self = StObject.set(x, "maxDeltaX", js.undefined)
     
     @scala.inline
-    def deleteFailOffsetY: Self = this.set("failOffsetY", js.undefined)
+    def setMaxDeltaY(value: Double): Self = StObject.set(x, "maxDeltaY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDeltaX(value: Double): Self = this.set("maxDeltaX", value.asInstanceOf[js.Any])
+    def setMaxDeltaYUndefined: Self = StObject.set(x, "maxDeltaY", js.undefined)
     
     @scala.inline
-    def deleteMaxDeltaX: Self = this.set("maxDeltaX", js.undefined)
+    def setMaxPointers(value: Double): Self = StObject.set(x, "maxPointers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDeltaY(value: Double): Self = this.set("maxDeltaY", value.asInstanceOf[js.Any])
+    def setMaxPointersUndefined: Self = StObject.set(x, "maxPointers", js.undefined)
     
     @scala.inline
-    def deleteMaxDeltaY: Self = this.set("maxDeltaY", js.undefined)
+    def setMinDeltaX(value: Double): Self = StObject.set(x, "minDeltaX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPointers(value: Double): Self = this.set("maxPointers", value.asInstanceOf[js.Any])
+    def setMinDeltaXUndefined: Self = StObject.set(x, "minDeltaX", js.undefined)
     
     @scala.inline
-    def deleteMaxPointers: Self = this.set("maxPointers", js.undefined)
+    def setMinDeltaY(value: Double): Self = StObject.set(x, "minDeltaY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinDeltaX(value: Double): Self = this.set("minDeltaX", value.asInstanceOf[js.Any])
+    def setMinDeltaYUndefined: Self = StObject.set(x, "minDeltaY", js.undefined)
     
     @scala.inline
-    def deleteMinDeltaX: Self = this.set("minDeltaX", js.undefined)
+    def setMinDist(value: Double): Self = StObject.set(x, "minDist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinDeltaY(value: Double): Self = this.set("minDeltaY", value.asInstanceOf[js.Any])
+    def setMinDistUndefined: Self = StObject.set(x, "minDist", js.undefined)
     
     @scala.inline
-    def deleteMinDeltaY: Self = this.set("minDeltaY", js.undefined)
+    def setMinOffsetX(value: Double): Self = StObject.set(x, "minOffsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinDist(value: Double): Self = this.set("minDist", value.asInstanceOf[js.Any])
+    def setMinOffsetXUndefined: Self = StObject.set(x, "minOffsetX", js.undefined)
     
     @scala.inline
-    def deleteMinDist: Self = this.set("minDist", js.undefined)
+    def setMinOffsetY(value: Double): Self = StObject.set(x, "minOffsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinOffsetX(value: Double): Self = this.set("minOffsetX", value.asInstanceOf[js.Any])
+    def setMinOffsetYUndefined: Self = StObject.set(x, "minOffsetY", js.undefined)
     
     @scala.inline
-    def deleteMinOffsetX: Self = this.set("minOffsetX", js.undefined)
+    def setMinPointers(value: Double): Self = StObject.set(x, "minPointers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinOffsetY(value: Double): Self = this.set("minOffsetY", value.asInstanceOf[js.Any])
+    def setMinPointersUndefined: Self = StObject.set(x, "minPointers", js.undefined)
     
     @scala.inline
-    def deleteMinOffsetY: Self = this.set("minOffsetY", js.undefined)
+    def setMinVelocity(value: Double): Self = StObject.set(x, "minVelocity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinPointers(value: Double): Self = this.set("minPointers", value.asInstanceOf[js.Any])
+    def setMinVelocityUndefined: Self = StObject.set(x, "minVelocity", js.undefined)
     
     @scala.inline
-    def deleteMinPointers: Self = this.set("minPointers", js.undefined)
+    def setMinVelocityX(value: Double): Self = StObject.set(x, "minVelocityX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinVelocity(value: Double): Self = this.set("minVelocity", value.asInstanceOf[js.Any])
+    def setMinVelocityXUndefined: Self = StObject.set(x, "minVelocityX", js.undefined)
     
     @scala.inline
-    def deleteMinVelocity: Self = this.set("minVelocity", js.undefined)
+    def setMinVelocityY(value: Double): Self = StObject.set(x, "minVelocityY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinVelocityX(value: Double): Self = this.set("minVelocityX", value.asInstanceOf[js.Any])
+    def setMinVelocityYUndefined: Self = StObject.set(x, "minVelocityY", js.undefined)
     
     @scala.inline
-    def deleteMinVelocityX: Self = this.set("minVelocityX", js.undefined)
+    def setOnGestureEvent(value: /* event */ PanGestureHandlerGestureEvent => Unit): Self = StObject.set(x, "onGestureEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinVelocityY(value: Double): Self = this.set("minVelocityY", value.asInstanceOf[js.Any])
+    def setOnGestureEventUndefined: Self = StObject.set(x, "onGestureEvent", js.undefined)
     
     @scala.inline
-    def deleteMinVelocityY: Self = this.set("minVelocityY", js.undefined)
+    def setOnHandlerStateChange(value: /* event */ PanGestureHandlerStateChangeEvent => Unit): Self = StObject.set(x, "onHandlerStateChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnGestureEvent(value: /* event */ PanGestureHandlerGestureEvent => Unit): Self = this.set("onGestureEvent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnGestureEvent: Self = this.set("onGestureEvent", js.undefined)
-    
-    @scala.inline
-    def setOnHandlerStateChange(value: /* event */ PanGestureHandlerStateChangeEvent => Unit): Self = this.set("onHandlerStateChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnHandlerStateChange: Self = this.set("onHandlerStateChange", js.undefined)
+    def setOnHandlerStateChangeUndefined: Self = StObject.set(x, "onHandlerStateChange", js.undefined)
   }
 }

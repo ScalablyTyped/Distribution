@@ -1,12 +1,13 @@
 package typings.vegaTypings.encodeMod
 
 import typings.vegaTypings.anon.Test
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefinedProperty extends js.Object {
+trait DefinedProperty extends StObject {
   
   var defined: js.UndefOr[ProductionRule[BooleanValueRef]] = js.native
 }
@@ -19,27 +20,15 @@ object DefinedProperty {
   }
   
   @scala.inline
-  implicit class DefinedPropertyOps[Self <: DefinedProperty] (val x: Self) extends AnyVal {
+  implicit class DefinedPropertyMutableBuilder[Self <: DefinedProperty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefined(value: ProductionRule[BooleanValueRef]): Self = StObject.set(x, "defined", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefinedUndefined: Self = StObject.set(x, "defined", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDefinedVarargs(value: (Test with BooleanValueRef)*): Self = this.set("defined", js.Array(value :_*))
-    
-    @scala.inline
-    def setDefined(value: ProductionRule[BooleanValueRef]): Self = this.set("defined", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefined: Self = this.set("defined", js.undefined)
+    def setDefinedVarargs(value: (Test with BooleanValueRef)*): Self = StObject.set(x, "defined", js.Array(value :_*))
   }
 }

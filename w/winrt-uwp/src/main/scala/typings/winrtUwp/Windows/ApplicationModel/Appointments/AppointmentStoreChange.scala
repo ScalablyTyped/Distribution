@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a change that has occurred in an appointment store. */
 @js.native
-trait AppointmentStoreChange extends js.Object {
+trait AppointmentStoreChange extends StObject {
   
   /** Gets the Appointment associated with the change. */
   var appointment: Appointment = js.native
@@ -30,27 +31,15 @@ object AppointmentStoreChange {
   }
   
   @scala.inline
-  implicit class AppointmentStoreChangeOps[Self <: AppointmentStoreChange] (val x: Self) extends AnyVal {
+  implicit class AppointmentStoreChangeMutableBuilder[Self <: AppointmentStoreChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppointment(value: Appointment): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppointmentCalendar(value: AppointmentCalendar): Self = StObject.set(x, "appointmentCalendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAppointment(value: Appointment): Self = this.set("appointment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAppointmentCalendar(value: AppointmentCalendar): Self = this.set("appointmentCalendar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChangeType(value: AppointmentStoreChangeType): Self = this.set("changeType", value.asInstanceOf[js.Any])
+    def setChangeType(value: AppointmentStoreChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
   }
 }

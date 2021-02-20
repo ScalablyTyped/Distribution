@@ -1,12 +1,13 @@
 package typings.devexpressAspnetcoreBootstrap.global.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("DevExpress.AspNetCore.BootstrapSchedulerViewType")
 @js.native
-object BootstrapSchedulerViewType extends js.Object {
+object BootstrapSchedulerViewType extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[

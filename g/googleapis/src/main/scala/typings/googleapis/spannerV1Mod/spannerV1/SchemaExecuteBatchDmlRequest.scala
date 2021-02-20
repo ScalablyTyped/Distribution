@@ -1,5 +1,6 @@
 package typings.googleapis.spannerV1Mod.spannerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The request for ExecuteBatchDml
   */
 @js.native
-trait SchemaExecuteBatchDmlRequest extends js.Object {
+trait SchemaExecuteBatchDmlRequest extends StObject {
   
   /**
     * A per-transaction sequence number used to identify this request. This is
@@ -42,39 +43,27 @@ object SchemaExecuteBatchDmlRequest {
   }
   
   @scala.inline
-  implicit class SchemaExecuteBatchDmlRequestOps[Self <: SchemaExecuteBatchDmlRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaExecuteBatchDmlRequestMutableBuilder[Self <: SchemaExecuteBatchDmlRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSeqno(value: String): Self = StObject.set(x, "seqno", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSeqnoUndefined: Self = StObject.set(x, "seqno", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatements(value: js.Array[SchemaStatement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeqno(value: String): Self = this.set("seqno", value.asInstanceOf[js.Any])
+    def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
     
     @scala.inline
-    def deleteSeqno: Self = this.set("seqno", js.undefined)
+    def setStatementsVarargs(value: SchemaStatement*): Self = StObject.set(x, "statements", js.Array(value :_*))
     
     @scala.inline
-    def setStatementsVarargs(value: SchemaStatement*): Self = this.set("statements", js.Array(value :_*))
+    def setTransaction(value: SchemaTransactionSelector): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatements(value: js.Array[SchemaStatement]): Self = this.set("statements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatements: Self = this.set("statements", js.undefined)
-    
-    @scala.inline
-    def setTransaction(value: SchemaTransactionSelector): Self = this.set("transaction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransaction: Self = this.set("transaction", js.undefined)
+    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

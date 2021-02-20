@@ -1,13 +1,16 @@
 package typings.devcert
 
 import typings.devcert.platformsMod.Platform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devcert/dist/platforms/darwin", JSImport.Namespace)
-@js.native
-object darwinMod extends js.Object {
+object darwinMod {
+  
+  @JSImport("devcert/dist/platforms/darwin", JSImport.Default)
+  @js.native
+  class default () extends MacOSPlatform
   
   @js.native
   trait MacOSPlatform extends Platform {
@@ -24,7 +27,4 @@ object darwinMod extends js.Object {
     
     var isNSSInstalled: js.Any = js.native
   }
-  
-  @js.native
-  class default () extends MacOSPlatform
 }

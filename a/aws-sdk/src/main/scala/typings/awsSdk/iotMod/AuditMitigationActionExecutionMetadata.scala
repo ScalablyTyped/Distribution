@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuditMitigationActionExecutionMetadata extends js.Object {
+trait AuditMitigationActionExecutionMetadata extends StObject {
   
   /**
     * The unique identifier for the mitigation action being applied by the task.
@@ -61,72 +62,60 @@ object AuditMitigationActionExecutionMetadata {
   }
   
   @scala.inline
-  implicit class AuditMitigationActionExecutionMetadataOps[Self <: AuditMitigationActionExecutionMetadata] (val x: Self) extends AnyVal {
+  implicit class AuditMitigationActionExecutionMetadataMutableBuilder[Self <: AuditMitigationActionExecutionMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionId(value: MitigationActionId): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionName(value: MitigationActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionId(value: MitigationActionId): Self = this.set("actionId", value.asInstanceOf[js.Any])
+    def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
     
     @scala.inline
-    def deleteActionId: Self = this.set("actionId", js.undefined)
+    def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionName(value: MitigationActionName): Self = this.set("actionName", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteActionName: Self = this.set("actionName", js.undefined)
+    def setErrorCode(value: ErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setFindingId(value: FindingId): Self = StObject.set(x, "findingId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: ErrorCode): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    def setFindingIdUndefined: Self = StObject.set(x, "findingId", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    def setMessage(value: ErrorMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFindingId(value: FindingId): Self = this.set("findingId", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteFindingId: Self = this.set("findingId", js.undefined)
+    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: ErrorMessage): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setStatus(value: AuditMitigationActionsExecutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setTaskId(value: AuditMitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: AuditMitigationActionsExecutionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setTaskId(value: AuditMitigationActionsTaskId): Self = this.set("taskId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskId: Self = this.set("taskId", js.undefined)
+    def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
   }
 }

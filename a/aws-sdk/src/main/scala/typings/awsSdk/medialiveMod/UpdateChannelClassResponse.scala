@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateChannelClassResponse extends js.Object {
+trait UpdateChannelClassResponse extends StObject {
   
   var Channel: js.UndefOr[typings.awsSdk.medialiveMod.Channel] = js.native
 }
@@ -18,24 +19,12 @@ object UpdateChannelClassResponse {
   }
   
   @scala.inline
-  implicit class UpdateChannelClassResponseOps[Self <: UpdateChannelClassResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateChannelClassResponseMutableBuilder[Self <: UpdateChannelClassResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel(value: Channel): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChannel(value: Channel): Self = this.set("Channel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChannel: Self = this.set("Channel", js.undefined)
+    def setChannelUndefined: Self = StObject.set(x, "Channel", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IObjectVersionPermissions extends js.Object {
+trait IObjectVersionPermissions extends StObject {
   
   val AccessControlList: IAccessControlList = js.native
   
@@ -24,30 +25,18 @@ object IObjectVersionPermissions {
   }
   
   @scala.inline
-  implicit class IObjectVersionPermissionsOps[Self <: IObjectVersionPermissions] (val x: Self) extends AnyVal {
+  implicit class IObjectVersionPermissionsMutableBuilder[Self <: IObjectVersionPermissions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomACL(value: Boolean): Self = StObject.set(x, "CustomACL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamedACL(value: INamedACL): Self = StObject.set(x, "NamedACL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessControlList(value: IAccessControlList): Self = this.set("AccessControlList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCustomACL(value: Boolean): Self = this.set("CustomACL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNamedACL(value: INamedACL): Self = this.set("NamedACL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjVer(value: IObjVer): Self = this.set("ObjVer", value.asInstanceOf[js.Any])
+    def setObjVer(value: IObjVer): Self = StObject.set(x, "ObjVer", value.asInstanceOf[js.Any])
   }
 }

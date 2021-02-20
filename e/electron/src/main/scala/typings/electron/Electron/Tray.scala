@@ -18,6 +18,7 @@ import typings.electron.electronStrings.`right-click`
 import typings.electron.electronStrings.click
 import typings.electron.electronStrings.drop
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

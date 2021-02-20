@@ -1,11 +1,12 @@
 package typings.awsSdk.datapipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeObjectsOutput extends js.Object {
+trait DescribeObjectsOutput extends StObject {
   
   /**
     * Indicates whether there are more results to return.
@@ -31,36 +32,24 @@ object DescribeObjectsOutput {
   }
   
   @scala.inline
-  implicit class DescribeObjectsOutputOps[Self <: DescribeObjectsOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeObjectsOutputMutableBuilder[Self <: DescribeObjectsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasMoreResults(value: Boolean): Self = StObject.set(x, "hasMoreResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasMoreResultsUndefined: Self = StObject.set(x, "hasMoreResults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipelineObjectsVarargs(value: PipelineObject*): Self = this.set("pipelineObjects", js.Array(value :_*))
+    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     @scala.inline
-    def setPipelineObjects(value: PipelineObjectList): Self = this.set("pipelineObjects", value.asInstanceOf[js.Any])
+    def setPipelineObjects(value: PipelineObjectList): Self = StObject.set(x, "pipelineObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasMoreResults(value: Boolean): Self = this.set("hasMoreResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHasMoreResults: Self = this.set("hasMoreResults", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: String): Self = this.set("marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("marker", js.undefined)
+    def setPipelineObjectsVarargs(value: PipelineObject*): Self = StObject.set(x, "pipelineObjects", js.Array(value :_*))
   }
 }

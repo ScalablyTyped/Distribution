@@ -1,11 +1,12 @@
 package typings.typedGraphql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GraphQLSchemaConfig extends js.Object {
+trait GraphQLSchemaConfig extends StObject {
   
   var directives: js.UndefOr[js.Array[GraphQLDirective]] = js.native
   
@@ -26,51 +27,39 @@ object GraphQLSchemaConfig {
   }
   
   @scala.inline
-  implicit class GraphQLSchemaConfigOps[Self <: GraphQLSchemaConfig] (val x: Self) extends AnyVal {
+  implicit class GraphQLSchemaConfigMutableBuilder[Self <: GraphQLSchemaConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectives(value: js.Array[GraphQLDirective]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectivesVarargs(value: GraphQLDirective*): Self = StObject.set(x, "directives", js.Array(value :_*))
     
     @scala.inline
-    def setQuery(value: GraphQLObjectType): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setMutation(value: GraphQLObjectType): Self = StObject.set(x, "mutation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectivesVarargs(value: GraphQLDirective*): Self = this.set("directives", js.Array(value :_*))
+    def setMutationUndefined: Self = StObject.set(x, "mutation", js.undefined)
     
     @scala.inline
-    def setDirectives(value: js.Array[GraphQLDirective]): Self = this.set("directives", value.asInstanceOf[js.Any])
+    def setQuery(value: GraphQLObjectType): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirectives: Self = this.set("directives", js.undefined)
+    def setSubscription(value: GraphQLObjectType): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMutation(value: GraphQLObjectType): Self = this.set("mutation", value.asInstanceOf[js.Any])
+    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
     
     @scala.inline
-    def deleteMutation: Self = this.set("mutation", js.undefined)
+    def setTypes(value: js.Array[GraphQLNamedType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscription(value: GraphQLObjectType): Self = this.set("subscription", value.asInstanceOf[js.Any])
+    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
     @scala.inline
-    def deleteSubscription: Self = this.set("subscription", js.undefined)
-    
-    @scala.inline
-    def setTypesVarargs(value: GraphQLNamedType*): Self = this.set("types", js.Array(value :_*))
-    
-    @scala.inline
-    def setTypes(value: js.Array[GraphQLNamedType]): Self = this.set("types", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypes: Self = this.set("types", js.undefined)
+    def setTypesVarargs(value: GraphQLNamedType*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

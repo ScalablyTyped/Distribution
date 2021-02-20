@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FailureDetails extends js.Object {
+trait FailureDetails extends StObject {
   
   /**
     * The external ID of the run of the action that failed.
@@ -32,30 +33,18 @@ object FailureDetails {
   }
   
   @scala.inline
-  implicit class FailureDetailsOps[Self <: FailureDetails] (val x: Self) extends AnyVal {
+  implicit class FailureDetailsMutableBuilder[Self <: FailureDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExternalExecutionId(value: ExecutionId): Self = StObject.set(x, "externalExecutionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExternalExecutionIdUndefined: Self = StObject.set(x, "externalExecutionId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: Message): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: FailureType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExternalExecutionId(value: ExecutionId): Self = this.set("externalExecutionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExternalExecutionId: Self = this.set("externalExecutionId", js.undefined)
+    def setType(value: FailureType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

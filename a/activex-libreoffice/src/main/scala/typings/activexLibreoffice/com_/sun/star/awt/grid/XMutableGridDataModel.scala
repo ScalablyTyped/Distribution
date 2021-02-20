@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -148,57 +149,45 @@ object XMutableGridDataModel {
   }
   
   @scala.inline
-  implicit class XMutableGridDataModelOps[Self <: XMutableGridDataModel] (val x: Self) extends AnyVal {
+  implicit class XMutableGridDataModelMutableBuilder[Self <: XMutableGridDataModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddGridDataListener(value: XGridDataListener => Unit): Self = StObject.set(x, "addGridDataListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddRow(value: (js.Any, SeqEquiv[_]) => Unit): Self = StObject.set(x, "addRow", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddRows(value: (SeqEquiv[_], SeqEquiv[SeqEquiv[_]]) => Unit): Self = StObject.set(x, "addRows", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddGridDataListener(value: XGridDataListener => Unit): Self = this.set("addGridDataListener", js.Any.fromFunction1(value))
+    def setInsertRow(value: (Double, js.Any, SeqEquiv[_]) => Unit): Self = StObject.set(x, "insertRow", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAddRow(value: (js.Any, SeqEquiv[_]) => Unit): Self = this.set("addRow", js.Any.fromFunction2(value))
+    def setInsertRows(value: (Double, SeqEquiv[_], SeqEquiv[SeqEquiv[_]]) => Unit): Self = StObject.set(x, "insertRows", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAddRows(value: (SeqEquiv[_], SeqEquiv[SeqEquiv[_]]) => Unit): Self = this.set("addRows", js.Any.fromFunction2(value))
+    def setRemoveAllRows(value: () => Unit): Self = StObject.set(x, "removeAllRows", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInsertRow(value: (Double, js.Any, SeqEquiv[_]) => Unit): Self = this.set("insertRow", js.Any.fromFunction3(value))
+    def setRemoveGridDataListener(value: XGridDataListener => Unit): Self = StObject.set(x, "removeGridDataListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsertRows(value: (Double, SeqEquiv[_], SeqEquiv[SeqEquiv[_]]) => Unit): Self = this.set("insertRows", js.Any.fromFunction3(value))
+    def setRemoveRow(value: Double => Unit): Self = StObject.set(x, "removeRow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveAllRows(value: () => Unit): Self = this.set("removeAllRows", js.Any.fromFunction0(value))
+    def setUpdateCellData(value: (Double, Double, js.Any) => Unit): Self = StObject.set(x, "updateCellData", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setRemoveGridDataListener(value: XGridDataListener => Unit): Self = this.set("removeGridDataListener", js.Any.fromFunction1(value))
+    def setUpdateCellToolTip(value: (Double, Double, js.Any) => Unit): Self = StObject.set(x, "updateCellToolTip", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setRemoveRow(value: Double => Unit): Self = this.set("removeRow", js.Any.fromFunction1(value))
+    def setUpdateRowData(value: (SeqEquiv[Double], Double, SeqEquiv[_]) => Unit): Self = StObject.set(x, "updateRowData", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setUpdateCellData(value: (Double, Double, js.Any) => Unit): Self = this.set("updateCellData", js.Any.fromFunction3(value))
+    def setUpdateRowHeading(value: (Double, js.Any) => Unit): Self = StObject.set(x, "updateRowHeading", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUpdateCellToolTip(value: (Double, Double, js.Any) => Unit): Self = this.set("updateCellToolTip", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setUpdateRowData(value: (SeqEquiv[Double], Double, SeqEquiv[_]) => Unit): Self = this.set("updateRowData", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setUpdateRowHeading(value: (Double, js.Any) => Unit): Self = this.set("updateRowHeading", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUpdateRowToolTip(value: (Double, js.Any) => Unit): Self = this.set("updateRowToolTip", js.Any.fromFunction2(value))
+    def setUpdateRowToolTip(value: (Double, js.Any) => Unit): Self = StObject.set(x, "updateRowToolTip", js.Any.fromFunction2(value))
   }
 }

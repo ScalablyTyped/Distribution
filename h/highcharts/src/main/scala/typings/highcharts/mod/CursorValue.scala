@@ -1,5 +1,6 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,8 +43,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.highcharts.highchartsStrings.`zoom-in`
   - typings.highcharts.highchartsStrings.`zoom-out`
 */
-trait CursorValue extends js.Object
+trait CursorValue extends StObject
 object CursorValue {
+  
+  @scala.inline
+  def default: typings.highcharts.highchartsStrings.default = "default".asInstanceOf[typings.highcharts.highchartsStrings.default]
   
   @scala.inline
   def alias: typings.highcharts.highchartsStrings.alias = "alias".asInstanceOf[typings.highcharts.highchartsStrings.alias]
@@ -68,9 +72,6 @@ object CursorValue {
   
   @scala.inline
   def crosshair: typings.highcharts.highchartsStrings.crosshair = "crosshair".asInstanceOf[typings.highcharts.highchartsStrings.crosshair]
-  
-  @scala.inline
-  def default: typings.highcharts.highchartsStrings.default = "default".asInstanceOf[typings.highcharts.highchartsStrings.default]
   
   @scala.inline
   def `e-resize`: typings.highcharts.highchartsStrings.`e-resize` = "e-resize".asInstanceOf[typings.highcharts.highchartsStrings.`e-resize`]

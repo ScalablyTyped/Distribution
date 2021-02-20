@@ -1,16 +1,44 @@
 package typings.pkijs
 
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pkijs/src/RelativeDistinguishedNames", JSImport.Namespace)
-@js.native
-object relativeDistinguishedNamesMod extends js.Object {
+object relativeDistinguishedNamesMod {
+  
+  @JSImport("pkijs/src/RelativeDistinguishedNames", JSImport.Default)
+  @js.native
+  class default () extends RelativeDistinguishedNames {
+    def this(params: js.Any) = this()
+  }
+  /* static members */
+  object default {
+    
+    /**
+      * Compare values with default values for all class members
+      * @param {string} memberName String name for a class member
+      * @param {*} memberValue Value to compare with default value
+      */
+    @JSImport("pkijs/src/RelativeDistinguishedNames", "default.compareWithDefault")
+    @js.native
+    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = js.native
+    
+    @JSImport("pkijs/src/RelativeDistinguishedNames", "default.defaultValues")
+    @js.native
+    def defaultValues(memberName: String): js.Any = js.native
+    
+    @JSImport("pkijs/src/RelativeDistinguishedNames", "default.schema")
+    @js.native
+    def schema(): js.Any = js.native
+    @JSImport("pkijs/src/RelativeDistinguishedNames", "default.schema")
+    @js.native
+    def schema(parameters: js.Any): js.Any = js.native
+  }
   
   @js.native
-  trait RelativeDistinguishedNames extends js.Object {
+  trait RelativeDistinguishedNames extends StObject {
     
     def fromSchema(schema: js.Any): Unit = js.native
     
@@ -29,26 +57,5 @@ object relativeDistinguishedNamesMod extends js.Object {
     var typesAndValues: js.Array[typings.pkijs.attributeTypeAndValueMod.default] = js.native
     
     var valueBeforeDecode: ArrayBuffer = js.native
-  }
-  
-  @js.native
-  class default () extends RelativeDistinguishedNames {
-    def this(params: js.Any) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    /**
-      * Compare values with default values for all class members
-      * @param {string} memberName String name for a class member
-      * @param {*} memberValue Value to compare with default value
-      */
-    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = js.native
-    
-    def defaultValues(memberName: String): js.Any = js.native
-    
-    def schema(): js.Any = js.native
-    def schema(parameters: js.Any): js.Any = js.native
   }
 }

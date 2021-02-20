@@ -1,5 +1,6 @@
 package typings.googleapis.iamV1Mod.iamV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The service account sign blob response.
   */
 @js.native
-trait SchemaSignBlobResponse extends js.Object {
+trait SchemaSignBlobResponse extends StObject {
   
   /**
     * The id of the key used to sign the blob.
@@ -29,30 +30,18 @@ object SchemaSignBlobResponse {
   }
   
   @scala.inline
-  implicit class SchemaSignBlobResponseOps[Self <: SchemaSignBlobResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaSignBlobResponseMutableBuilder[Self <: SchemaSignBlobResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyId(value: String): Self = this.set("keyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyId: Self = this.set("keyId", js.undefined)
-    
-    @scala.inline
-    def setSignature(value: String): Self = this.set("signature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignature: Self = this.set("signature", js.undefined)
+    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
   }
 }

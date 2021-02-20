@@ -2,12 +2,13 @@ package typings.chromeApps.anon
 
 import typings.chromeApps.chromeAppsStrings.connected__
 import typings.chromeApps.chromeAppsStrings.failure_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CONNECTEDFAILURE extends js.Object {
+trait CONNECTEDFAILURE extends StObject {
   
   var CONNECTED: connected__ = js.native
   
@@ -22,24 +23,12 @@ object CONNECTEDFAILURE {
   }
   
   @scala.inline
-  implicit class CONNECTEDFAILUREOps[Self <: CONNECTEDFAILURE] (val x: Self) extends AnyVal {
+  implicit class CONNECTEDFAILUREMutableBuilder[Self <: CONNECTEDFAILURE] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCONNECTED(value: connected__): Self = StObject.set(x, "CONNECTED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCONNECTED(value: connected__): Self = this.set("CONNECTED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFAILURE(value: failure_): Self = this.set("FAILURE", value.asInstanceOf[js.Any])
+    def setFAILURE(value: failure_): Self = StObject.set(x, "FAILURE", value.asInstanceOf[js.Any])
   }
 }

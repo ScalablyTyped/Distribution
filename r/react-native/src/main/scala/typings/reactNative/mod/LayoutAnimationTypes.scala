@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LayoutAnimationTypes extends js.Object {
+trait LayoutAnimationTypes extends StObject {
   
   var easeIn: String = js.native
   
@@ -35,36 +36,24 @@ object LayoutAnimationTypes {
   }
   
   @scala.inline
-  implicit class LayoutAnimationTypesOps[Self <: LayoutAnimationTypes] (val x: Self) extends AnyVal {
+  implicit class LayoutAnimationTypesMutableBuilder[Self <: LayoutAnimationTypes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEaseIn(value: String): Self = StObject.set(x, "easeIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEaseInEaseOut(value: String): Self = StObject.set(x, "easeInEaseOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEaseOut(value: String): Self = StObject.set(x, "easeOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseIn(value: String): Self = this.set("easeIn", value.asInstanceOf[js.Any])
+    def setKeyboard(value: String): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseInEaseOut(value: String): Self = this.set("easeInEaseOut", value.asInstanceOf[js.Any])
+    def setLinear(value: String): Self = StObject.set(x, "linear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEaseOut(value: String): Self = this.set("easeOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyboard(value: String): Self = this.set("keyboard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLinear(value: String): Self = this.set("linear", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpring(value: String): Self = this.set("spring", value.asInstanceOf[js.Any])
+    def setSpring(value: String): Self = StObject.set(x, "spring", value.asInstanceOf[js.Any])
   }
 }

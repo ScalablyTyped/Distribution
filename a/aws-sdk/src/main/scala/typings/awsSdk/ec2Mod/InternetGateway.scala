@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InternetGateway extends js.Object {
+trait InternetGateway extends StObject {
   
   /**
     * Any VPCs attached to the internet gateway.
@@ -36,48 +37,36 @@ object InternetGateway {
   }
   
   @scala.inline
-  implicit class InternetGatewayOps[Self <: InternetGateway] (val x: Self) extends AnyVal {
+  implicit class InternetGatewayMutableBuilder[Self <: InternetGateway] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachments(value: InternetGatewayAttachmentList): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentsUndefined: Self = StObject.set(x, "Attachments", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachmentsVarargs(value: InternetGatewayAttachment*): Self = StObject.set(x, "Attachments", js.Array(value :_*))
     
     @scala.inline
-    def setAttachmentsVarargs(value: InternetGatewayAttachment*): Self = this.set("Attachments", js.Array(value :_*))
+    def setInternetGatewayId(value: String): Self = StObject.set(x, "InternetGatewayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachments(value: InternetGatewayAttachmentList): Self = this.set("Attachments", value.asInstanceOf[js.Any])
+    def setInternetGatewayIdUndefined: Self = StObject.set(x, "InternetGatewayId", js.undefined)
     
     @scala.inline
-    def deleteAttachments: Self = this.set("Attachments", js.undefined)
+    def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternetGatewayId(value: String): Self = this.set("InternetGatewayId", value.asInstanceOf[js.Any])
+    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
     @scala.inline
-    def deleteInternetGatewayId: Self = this.set("InternetGatewayId", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

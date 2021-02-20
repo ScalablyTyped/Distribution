@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Source extends js.Object {
+trait Source extends StObject {
   
   /**
     * While splitting, sources may specify the produced bundles as differences against another source, in order to save backend-side memory and allow bigger jobs. For details, see
@@ -59,26 +60,7 @@ object Source {
   }
   
   @scala.inline
-  implicit class SourceOps[Self <: Source] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBaseSpecsVarargs(
-      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source with TopLevel[js.Any])*
-    ): Self = this.set("baseSpecs", js.Array(value :_*))
+  implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setBaseSpecs(
@@ -87,41 +69,48 @@ object Source {
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source with TopLevel[js.Any]
         ]
-    ): Self = this.set("baseSpecs", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "baseSpecs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBaseSpecs: Self = this.set("baseSpecs", js.undefined)
+    def setBaseSpecsUndefined: Self = StObject.set(x, "baseSpecs", js.undefined)
+    
+    @scala.inline
+    def setBaseSpecsVarargs(
+      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in string ]: any}
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source with TopLevel[js.Any])*
+    ): Self = StObject.set(x, "baseSpecs", js.Array(value :_*))
     
     @scala.inline
     def setCodec(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source with TopLevel[js.Any]
-    ): Self = this.set("codec", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCodec: Self = this.set("codec", js.undefined)
+    def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
     
     @scala.inline
-    def setDoesNotNeedSplitting(value: Boolean): Self = this.set("doesNotNeedSplitting", value.asInstanceOf[js.Any])
+    def setDoesNotNeedSplitting(value: Boolean): Self = StObject.set(x, "doesNotNeedSplitting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDoesNotNeedSplitting: Self = this.set("doesNotNeedSplitting", js.undefined)
+    def setDoesNotNeedSplittingUndefined: Self = StObject.set(x, "doesNotNeedSplitting", js.undefined)
     
     @scala.inline
-    def setMetadata(value: SourceMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setMetadata(value: SourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
     def setSpec(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source with TopLevel[js.Any]
-    ): Self = this.set("spec", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpec: Self = this.set("spec", js.undefined)
+    def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.handlebars
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,30 +21,18 @@ object PrecompileOptions {
   }
   
   @scala.inline
-  implicit class PrecompileOptionsOps[Self <: PrecompileOptions] (val x: Self) extends AnyVal {
+  implicit class PrecompileOptionsMutableBuilder[Self <: PrecompileOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestName(value: String): Self = StObject.set(x, "destName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestNameUndefined: Self = StObject.set(x, "destName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSrcName(value: String): Self = StObject.set(x, "srcName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestName(value: String): Self = this.set("destName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestName: Self = this.set("destName", js.undefined)
-    
-    @scala.inline
-    def setSrcName(value: String): Self = this.set("srcName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSrcName: Self = this.set("srcName", js.undefined)
+    def setSrcNameUndefined: Self = StObject.set(x, "srcName", js.undefined)
   }
 }

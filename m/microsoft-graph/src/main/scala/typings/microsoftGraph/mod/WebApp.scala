@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,33 +23,21 @@ object WebApp {
   }
   
   @scala.inline
-  implicit class WebAppOps[Self <: WebApp] (val x: Self) extends AnyVal {
+  implicit class WebAppMutableBuilder[Self <: WebApp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppUrl(value: NullableOption[String]): Self = StObject.set(x, "appUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppUrlNull: Self = StObject.set(x, "appUrl", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppUrlUndefined: Self = StObject.set(x, "appUrl", js.undefined)
     
     @scala.inline
-    def setAppUrl(value: NullableOption[String]): Self = this.set("appUrl", value.asInstanceOf[js.Any])
+    def setUseManagedBrowser(value: Boolean): Self = StObject.set(x, "useManagedBrowser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppUrl: Self = this.set("appUrl", js.undefined)
-    
-    @scala.inline
-    def setAppUrlNull: Self = this.set("appUrl", null)
-    
-    @scala.inline
-    def setUseManagedBrowser(value: Boolean): Self = this.set("useManagedBrowser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseManagedBrowser: Self = this.set("useManagedBrowser", js.undefined)
+    def setUseManagedBrowserUndefined: Self = StObject.set(x, "useManagedBrowser", js.undefined)
   }
 }

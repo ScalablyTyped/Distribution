@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * pipeline, etc.
   */
 @js.native
-trait SchemaSourceMetadata extends js.Object {
+trait SchemaSourceMetadata extends StObject {
   
   /**
     * An estimate of the total size (in bytes) of the data that would be read
@@ -39,36 +40,24 @@ object SchemaSourceMetadata {
   }
   
   @scala.inline
-  implicit class SchemaSourceMetadataOps[Self <: SchemaSourceMetadata] (val x: Self) extends AnyVal {
+  implicit class SchemaSourceMetadataMutableBuilder[Self <: SchemaSourceMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEstimatedSizeBytes(value: String): Self = StObject.set(x, "estimatedSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEstimatedSizeBytesUndefined: Self = StObject.set(x, "estimatedSizeBytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfinite(value: Boolean): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedSizeBytes(value: String): Self = this.set("estimatedSizeBytes", value.asInstanceOf[js.Any])
+    def setInfiniteUndefined: Self = StObject.set(x, "infinite", js.undefined)
     
     @scala.inline
-    def deleteEstimatedSizeBytes: Self = this.set("estimatedSizeBytes", js.undefined)
+    def setProducesSortedKeys(value: Boolean): Self = StObject.set(x, "producesSortedKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfinite(value: Boolean): Self = this.set("infinite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInfinite: Self = this.set("infinite", js.undefined)
-    
-    @scala.inline
-    def setProducesSortedKeys(value: Boolean): Self = this.set("producesSortedKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProducesSortedKeys: Self = this.set("producesSortedKeys", js.undefined)
+    def setProducesSortedKeysUndefined: Self = StObject.set(x, "producesSortedKeys", js.undefined)
   }
 }

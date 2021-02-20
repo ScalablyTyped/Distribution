@@ -3,13 +3,18 @@ package typings.playable
 import typings.playable.fullScreenManagerTypesMod.IFullScreenHelper
 import typings.std.EventListener
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/full-screen-manager/desktop", JSImport.Namespace)
-@js.native
-object desktopMod extends js.Object {
+object desktopMod {
+  
+  @JSImport("playable/dist/src/modules/full-screen-manager/desktop", JSImport.Default)
+  @js.native
+  class default protected () extends DesktopFullScreen {
+    def this(elem: HTMLElement, callback: EventListener) = this()
+  }
   
   @js.native
   trait DesktopFullScreen extends IFullScreenHelper {
@@ -33,10 +38,5 @@ object desktopMod extends js.Object {
     
     @JSName("isInFullScreen")
     def isInFullScreen_MDesktopFullScreen: Boolean = js.native
-  }
-  
-  @js.native
-  class default protected () extends DesktopFullScreen {
-    def this(elem: HTMLElement, callback: EventListener) = this()
   }
 }

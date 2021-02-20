@@ -1,5 +1,6 @@
 package typings.googleapis.dataprocV1Mod.dataprocV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Cloud Dataproc job config.
   */
 @js.native
-trait SchemaJobPlacement extends js.Object {
+trait SchemaJobPlacement extends StObject {
   
   /**
     * Required. The name of the cluster where the job will be submitted.
@@ -30,30 +31,18 @@ object SchemaJobPlacement {
   }
   
   @scala.inline
-  implicit class SchemaJobPlacementOps[Self <: SchemaJobPlacement] (val x: Self) extends AnyVal {
+  implicit class SchemaJobPlacementMutableBuilder[Self <: SchemaJobPlacement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterUuid(value: String): Self = StObject.set(x, "clusterUuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterName(value: String): Self = this.set("clusterName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClusterName: Self = this.set("clusterName", js.undefined)
-    
-    @scala.inline
-    def setClusterUuid(value: String): Self = this.set("clusterUuid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClusterUuid: Self = this.set("clusterUuid", js.undefined)
+    def setClusterUuidUndefined: Self = StObject.set(x, "clusterUuid", js.undefined)
   }
 }

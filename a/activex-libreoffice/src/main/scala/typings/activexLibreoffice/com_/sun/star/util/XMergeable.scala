@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.util
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,27 +36,15 @@ object XMergeable {
   }
   
   @scala.inline
-  implicit class XMergeableOps[Self <: XMergeable] (val x: Self) extends AnyVal {
+  implicit class XMergeableMutableBuilder[Self <: XMergeable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetIsMerged(value: () => Boolean): Self = StObject.set(x, "getIsMerged", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsMerged(value: Boolean): Self = StObject.set(x, "IsMerged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsMerged(value: Boolean): Self = this.set("IsMerged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetIsMerged(value: () => Boolean): Self = this.set("getIsMerged", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMerge(value: Boolean => Unit): Self = this.set("merge", js.Any.fromFunction1(value))
+    def setMerge(value: Boolean => Unit): Self = StObject.set(x, "merge", js.Any.fromFunction1(value))
   }
 }

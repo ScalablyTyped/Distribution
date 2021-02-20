@@ -2,41 +2,66 @@ package typings.convertSourceMap
 
 import typings.convertSourceMap.anon.Multiline
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("convert-source-map", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("convert-source-map", "commentRegex")
+  @js.native
   val commentRegex: RegExp = js.native
   
+  @JSImport("convert-source-map", "fromBase64")
+  @js.native
   def fromBase64(base64: String): SourceMapConverter = js.native
   
+  @JSImport("convert-source-map", "fromComment")
+  @js.native
   def fromComment(comment: String): SourceMapConverter = js.native
   
+  @JSImport("convert-source-map", "fromJSON")
+  @js.native
   def fromJSON(json: String): SourceMapConverter = js.native
   
+  @JSImport("convert-source-map", "fromMapFileComment")
+  @js.native
   def fromMapFileComment(comment: String, commentFileDir: String): SourceMapConverter = js.native
   
+  @JSImport("convert-source-map", "fromMapFileSource")
+  @js.native
   def fromMapFileSource(content: String, commentFileDir: String): SourceMapConverter | Null = js.native
   
+  @JSImport("convert-source-map", "fromObject")
+  @js.native
   def fromObject(obj: js.Any): SourceMapConverter = js.native
   
+  @JSImport("convert-source-map", "fromSource")
+  @js.native
   def fromSource(content: String): SourceMapConverter | Null = js.native
   
+  @JSImport("convert-source-map", "generateMapFileComment")
+  @js.native
   def generateMapFileComment(file: String): String = js.native
+  @JSImport("convert-source-map", "generateMapFileComment")
+  @js.native
   def generateMapFileComment(file: String, options: Multiline): String = js.native
   
+  @JSImport("convert-source-map", "mapFileCommentRegex")
+  @js.native
   val mapFileCommentRegex: RegExp = js.native
   
+  @JSImport("convert-source-map", "removeComments")
+  @js.native
   def removeComments(src: String): String = js.native
   
+  @JSImport("convert-source-map", "removeMapFileComments")
+  @js.native
   def removeMapFileComments(src: String): String = js.native
   
   @js.native
-  trait SourceMapConverter extends js.Object {
+  trait SourceMapConverter extends StObject {
     
     /** Adds given property to the source map. Throws an error if property already exists */
     def addProperty(key: String, value: js.Any): SourceMapConverter = js.native

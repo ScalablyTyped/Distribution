@@ -13,12 +13,13 @@ import typings.chrome.chrome.contentSettings.NotificationsContentSetting
 import typings.chrome.chrome.contentSettings.PluginsContentSetting
 import typings.chrome.chrome.contentSettings.PopupsContentSetting
 import typings.chrome.chrome.contentSettings.PpapiBrokerContentSetting
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofcontentSettings extends js.Object {
+trait TypeofcontentSettings extends StObject {
   
   var automaticDownloads: MultipleAutomaticDownloadsContentSetting = js.native
   
@@ -69,57 +70,45 @@ object TypeofcontentSettings {
   }
   
   @scala.inline
-  implicit class TypeofcontentSettingsOps[Self <: TypeofcontentSettings] (val x: Self) extends AnyVal {
+  implicit class TypeofcontentSettingsMutableBuilder[Self <: TypeofcontentSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomaticDownloads(value: MultipleAutomaticDownloadsContentSetting): Self = StObject.set(x, "automaticDownloads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCamera(value: CameraContentSetting): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCookies(value: CookieContentSetting): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticDownloads(value: MultipleAutomaticDownloadsContentSetting): Self = this.set("automaticDownloads", value.asInstanceOf[js.Any])
+    def setFullscreen(value: FullscreenContentSetting): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCamera(value: CameraContentSetting): Self = this.set("camera", value.asInstanceOf[js.Any])
+    def setImages(value: ImagesContentSetting): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCookies(value: CookieContentSetting): Self = this.set("cookies", value.asInstanceOf[js.Any])
+    def setJavascript(value: JavascriptContentSetting): Self = StObject.set(x, "javascript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullscreen(value: FullscreenContentSetting): Self = this.set("fullscreen", value.asInstanceOf[js.Any])
+    def setLocation(value: LocationContentSetting): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages(value: ImagesContentSetting): Self = this.set("images", value.asInstanceOf[js.Any])
+    def setMicrophone(value: MicrophoneContentSetting): Self = StObject.set(x, "microphone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJavascript(value: JavascriptContentSetting): Self = this.set("javascript", value.asInstanceOf[js.Any])
+    def setMouselock(value: MouselockContentSetting): Self = StObject.set(x, "mouselock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: LocationContentSetting): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setNotifications(value: NotificationsContentSetting): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMicrophone(value: MicrophoneContentSetting): Self = this.set("microphone", value.asInstanceOf[js.Any])
+    def setPlugins(value: PluginsContentSetting): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouselock(value: MouselockContentSetting): Self = this.set("mouselock", value.asInstanceOf[js.Any])
+    def setPopups(value: PopupsContentSetting): Self = StObject.set(x, "popups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotifications(value: NotificationsContentSetting): Self = this.set("notifications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlugins(value: PluginsContentSetting): Self = this.set("plugins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPopups(value: PopupsContentSetting): Self = this.set("popups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnsandboxedPlugins(value: PpapiBrokerContentSetting): Self = this.set("unsandboxedPlugins", value.asInstanceOf[js.Any])
+    def setUnsandboxedPlugins(value: PpapiBrokerContentSetting): Self = StObject.set(x, "unsandboxedPlugins", value.asInstanceOf[js.Any])
   }
 }

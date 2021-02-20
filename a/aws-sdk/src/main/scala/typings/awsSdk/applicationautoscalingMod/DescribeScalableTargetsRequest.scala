@@ -1,11 +1,12 @@
 package typings.awsSdk.applicationautoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeScalableTargetsRequest extends js.Object {
+trait DescribeScalableTargetsRequest extends StObject {
   
   /**
     * The maximum number of scalable targets. This value can be between 1 and 50. The default value is 50. If this parameter is used, the operation returns up to MaxResults results at a time, along with a NextToken value. To get the next set of results, include the NextToken value in a subsequent call. If this parameter is not used, the operation returns up to 50 results and a NextToken value, if applicable.
@@ -41,48 +42,36 @@ object DescribeScalableTargetsRequest {
   }
   
   @scala.inline
-  implicit class DescribeScalableTargetsRequestOps[Self <: DescribeScalableTargetsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeScalableTargetsRequestMutableBuilder[Self <: DescribeScalableTargetsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceNamespace(value: ServiceNamespace): Self = this.set("ServiceNamespace", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setResourceIds(value: ResourceIdsMaxLen1600): Self = StObject.set(x, "ResourceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setResourceIdsUndefined: Self = StObject.set(x, "ResourceIds", js.undefined)
     
     @scala.inline
-    def setNextToken(value: XmlString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setResourceIdsVarargs(value: ResourceIdMaxLen1600*): Self = StObject.set(x, "ResourceIds", js.Array(value :_*))
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceIdsVarargs(value: ResourceIdMaxLen1600*): Self = this.set("ResourceIds", js.Array(value :_*))
+    def setScalableDimensionUndefined: Self = StObject.set(x, "ScalableDimension", js.undefined)
     
     @scala.inline
-    def setResourceIds(value: ResourceIdsMaxLen1600): Self = this.set("ResourceIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceIds: Self = this.set("ResourceIds", js.undefined)
-    
-    @scala.inline
-    def setScalableDimension(value: ScalableDimension): Self = this.set("ScalableDimension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScalableDimension: Self = this.set("ScalableDimension", js.undefined)
+    def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
   }
 }

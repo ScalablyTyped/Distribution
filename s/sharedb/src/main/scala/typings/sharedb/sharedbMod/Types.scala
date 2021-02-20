@@ -1,12 +1,13 @@
 package typings.sharedb.sharedbMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Types extends js.Object {
+trait Types extends StObject {
   
   var map: StringDictionary[Type] = js.native
   
@@ -21,24 +22,12 @@ object Types {
   }
   
   @scala.inline
-  implicit class TypesOps[Self <: Types] (val x: Self) extends AnyVal {
+  implicit class TypesMutableBuilder[Self <: Types] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMap(value: StringDictionary[Type]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMap(value: StringDictionary[Type]): Self = this.set("map", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegister(value: Type => Unit): Self = this.set("register", js.Any.fromFunction1(value))
+    def setRegister(value: Type => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
   }
 }

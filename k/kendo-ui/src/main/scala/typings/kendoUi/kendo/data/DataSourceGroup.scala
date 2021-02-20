@@ -1,5 +1,6 @@
 package typings.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,39 +33,27 @@ object DataSourceGroup {
   }
   
   @scala.inline
-  implicit class DataSourceGroupOps[Self <: DataSourceGroup] (val x: Self) extends AnyVal {
+  implicit class DataSourceGroupMutableBuilder[Self <: DataSourceGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregates(value: js.Array[_]): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregatesVarargs(value: js.Any*): Self = StObject.set(x, "aggregates", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregatesVarargs(value: js.Any*): Self = this.set("aggregates", js.Array(value :_*))
+    def setHasSubgroups(value: Boolean): Self = StObject.set(x, "hasSubgroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregates(value: js.Array[_]): Self = this.set("aggregates", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[DataSourceItemOrGroup]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: DataSourceItemOrGroup*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setHasSubgroups(value: Boolean): Self = this.set("hasSubgroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemsVarargs(value: DataSourceItemOrGroup*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[DataSourceItemOrGroup]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

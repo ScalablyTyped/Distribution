@@ -20,12 +20,13 @@ import typings.astTypes.kindsMod.TSTypeAnnotationKind
 import typings.astTypes.kindsMod.TSTypeParameterDeclarationKind
 import typings.astTypes.kindsMod.TypeAnnotationKind
 import typings.astTypes.kindsMod.TypeParameterDeclarationKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Abstract extends js.Object {
+trait Abstract extends StObject {
   
   var `abstract`: js.UndefOr[Boolean | Null] = js.native
   
@@ -84,192 +85,180 @@ object Abstract {
   }
   
   @scala.inline
-  implicit class AbstractOps[Self <: Abstract] (val x: Self) extends AnyVal {
+  implicit class AbstractMutableBuilder[Self <: Abstract] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbstractNull: Self = StObject.set(x, "abstract", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAbstractUndefined: Self = StObject.set(x, "abstract", js.undefined)
     
     @scala.inline
-    def setBody(value: BlockStatementKind): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setAccess(value: public | `private` | `protected`): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: LiteralKind | IdentifierKind | ExpressionKind): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setAccessNull: Self = StObject.set(x, "access", null)
     
     @scala.inline
-    def setParamsVarargs(value: PatternKind*): Self = this.set("params", js.Array(value :_*))
+    def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
     
     @scala.inline
-    def setParams(value: js.Array[PatternKind]): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setAccessibility(value: public | `private` | `protected`): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbstract(value: Boolean): Self = this.set("abstract", value.asInstanceOf[js.Any])
+    def setAccessibilityNull: Self = StObject.set(x, "accessibility", null)
     
     @scala.inline
-    def deleteAbstract: Self = this.set("abstract", js.undefined)
+    def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
     
     @scala.inline
-    def setAbstractNull: Self = this.set("abstract", null)
+    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccess(value: public | `private` | `protected`): Self = this.set("access", value.asInstanceOf[js.Any])
+    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
     @scala.inline
-    def deleteAccess: Self = this.set("access", js.undefined)
+    def setBody(value: BlockStatementKind): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessNull: Self = this.set("access", null)
+    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibility(value: public | `private` | `protected`): Self = this.set("accessibility", value.asInstanceOf[js.Any])
+    def setCommentsNull: Self = StObject.set(x, "comments", null)
     
     @scala.inline
-    def deleteAccessibility: Self = this.set("accessibility", js.undefined)
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def setAccessibilityNull: Self = this.set("accessibility", null)
+    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
     @scala.inline
-    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAsync: Self = this.set("async", js.undefined)
+    def setComputedUndefined: Self = StObject.set(x, "computed", js.undefined)
     
     @scala.inline
-    def setCommentsVarargs(value: CommentKind*): Self = this.set("comments", js.Array(value :_*))
+    def setDecorators(value: js.Array[DecoratorKind]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: js.Array[CommentKind]): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setDecoratorsNull: Self = StObject.set(x, "decorators", null)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
     
     @scala.inline
-    def setCommentsNull: Self = this.set("comments", null)
+    def setDecoratorsVarargs(value: DecoratorKind*): Self = StObject.set(x, "decorators", js.Array(value :_*))
     
     @scala.inline
-    def setComputed(value: Boolean): Self = this.set("computed", value.asInstanceOf[js.Any])
+    def setDefaults(value: js.Array[ExpressionKind | Null]): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComputed: Self = this.set("computed", js.undefined)
+    def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
     
     @scala.inline
-    def setDecoratorsVarargs(value: DecoratorKind*): Self = this.set("decorators", js.Array(value :_*))
+    def setDefaultsVarargs(value: (ExpressionKind | Null)*): Self = StObject.set(x, "defaults", js.Array(value :_*))
     
     @scala.inline
-    def setDecorators(value: js.Array[DecoratorKind]): Self = this.set("decorators", value.asInstanceOf[js.Any])
+    def setExpression(value: Boolean): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDecorators: Self = this.set("decorators", js.undefined)
+    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
     @scala.inline
-    def setDecoratorsNull: Self = this.set("decorators", null)
+    def setGenerator(value: Boolean): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultsVarargs(value: (ExpressionKind | Null)*): Self = this.set("defaults", js.Array(value :_*))
+    def setGeneratorUndefined: Self = StObject.set(x, "generator", js.undefined)
     
     @scala.inline
-    def setDefaults(value: js.Array[ExpressionKind | Null]): Self = this.set("defaults", value.asInstanceOf[js.Any])
+    def setId(value: IdentifierKind): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaults: Self = this.set("defaults", js.undefined)
+    def setIdNull: Self = StObject.set(x, "id", null)
     
     @scala.inline
-    def setExpression(value: Boolean): Self = this.set("expression", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteExpression: Self = this.set("expression", js.undefined)
+    def setKey(value: LiteralKind | IdentifierKind | ExpressionKind): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerator(value: Boolean): Self = this.set("generator", value.asInstanceOf[js.Any])
+    def setKind(value: get | set | method | constructor): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGenerator: Self = this.set("generator", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def setId(value: IdentifierKind): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLocNull: Self = StObject.set(x, "loc", null)
     
     @scala.inline
-    def setIdNull: Self = this.set("id", null)
+    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
     @scala.inline
-    def setKind(value: get | set | method | constructor): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setOptionalNull: Self = StObject.set(x, "optional", null)
     
     @scala.inline
-    def setLoc(value: SourceLocationKind): Self = this.set("loc", value.asInstanceOf[js.Any])
+    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
     @scala.inline
-    def deleteLoc: Self = this.set("loc", js.undefined)
+    def setParams(value: js.Array[PatternKind]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocNull: Self = this.set("loc", null)
+    def setParamsVarargs(value: PatternKind*): Self = StObject.set(x, "params", js.Array(value :_*))
     
     @scala.inline
-    def setOptional(value: Boolean): Self = this.set("optional", value.asInstanceOf[js.Any])
+    def setPredicate(value: FlowPredicateKind): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptional: Self = this.set("optional", js.undefined)
+    def setPredicateNull: Self = StObject.set(x, "predicate", null)
     
     @scala.inline
-    def setOptionalNull: Self = this.set("optional", null)
+    def setPredicateUndefined: Self = StObject.set(x, "predicate", js.undefined)
     
     @scala.inline
-    def setPredicate(value: FlowPredicateKind): Self = this.set("predicate", value.asInstanceOf[js.Any])
+    def setRest(value: IdentifierKind): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePredicate: Self = this.set("predicate", js.undefined)
+    def setRestNull: Self = StObject.set(x, "rest", null)
     
     @scala.inline
-    def setPredicateNull: Self = this.set("predicate", null)
+    def setRestUndefined: Self = StObject.set(x, "rest", js.undefined)
     
     @scala.inline
-    def setRest(value: IdentifierKind): Self = this.set("rest", value.asInstanceOf[js.Any])
+    def setReturnType(value: TypeAnnotationKind | TSTypeAnnotationKind): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRest: Self = this.set("rest", js.undefined)
+    def setReturnTypeNull: Self = StObject.set(x, "returnType", null)
     
     @scala.inline
-    def setRestNull: Self = this.set("rest", null)
+    def setReturnTypeUndefined: Self = StObject.set(x, "returnType", js.undefined)
     
     @scala.inline
-    def setReturnType(value: TypeAnnotationKind | TSTypeAnnotationKind): Self = this.set("returnType", value.asInstanceOf[js.Any])
+    def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReturnType: Self = this.set("returnType", js.undefined)
+    def setStaticNull: Self = StObject.set(x, "static", null)
     
     @scala.inline
-    def setReturnTypeNull: Self = this.set("returnType", null)
+    def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
     
     @scala.inline
-    def setStatic(value: Boolean): Self = this.set("static", value.asInstanceOf[js.Any])
+    def setTypeParameters(value: TypeParameterDeclarationKind | TSTypeParameterDeclarationKind): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatic: Self = this.set("static", js.undefined)
+    def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
     
     @scala.inline
-    def setStaticNull: Self = this.set("static", null)
-    
-    @scala.inline
-    def setTypeParameters(value: TypeParameterDeclarationKind | TSTypeParameterDeclarationKind): Self = this.set("typeParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeParameters: Self = this.set("typeParameters", js.undefined)
-    
-    @scala.inline
-    def setTypeParametersNull: Self = this.set("typeParameters", null)
+    def setTypeParametersUndefined: Self = StObject.set(x, "typeParameters", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageBitmapOptions extends js.Object {
+trait ImageBitmapOptions extends StObject {
   
   var colorSpaceConversion: js.UndefOr[ColorSpaceConversion] = js.native
   
@@ -28,54 +29,42 @@ object ImageBitmapOptions {
   }
   
   @scala.inline
-  implicit class ImageBitmapOptionsOps[Self <: ImageBitmapOptions] (val x: Self) extends AnyVal {
+  implicit class ImageBitmapOptionsMutableBuilder[Self <: ImageBitmapOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorSpaceConversion(value: ColorSpaceConversion): Self = StObject.set(x, "colorSpaceConversion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorSpaceConversionUndefined: Self = StObject.set(x, "colorSpaceConversion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageOrientation(value: ImageOrientation): Self = StObject.set(x, "imageOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorSpaceConversion(value: ColorSpaceConversion): Self = this.set("colorSpaceConversion", value.asInstanceOf[js.Any])
+    def setImageOrientationUndefined: Self = StObject.set(x, "imageOrientation", js.undefined)
     
     @scala.inline
-    def deleteColorSpaceConversion: Self = this.set("colorSpaceConversion", js.undefined)
+    def setPremultiplyAlpha(value: PremultiplyAlpha): Self = StObject.set(x, "premultiplyAlpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageOrientation(value: ImageOrientation): Self = this.set("imageOrientation", value.asInstanceOf[js.Any])
+    def setPremultiplyAlphaUndefined: Self = StObject.set(x, "premultiplyAlpha", js.undefined)
     
     @scala.inline
-    def deleteImageOrientation: Self = this.set("imageOrientation", js.undefined)
+    def setResizeHeight(value: Double): Self = StObject.set(x, "resizeHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPremultiplyAlpha(value: PremultiplyAlpha): Self = this.set("premultiplyAlpha", value.asInstanceOf[js.Any])
+    def setResizeHeightUndefined: Self = StObject.set(x, "resizeHeight", js.undefined)
     
     @scala.inline
-    def deletePremultiplyAlpha: Self = this.set("premultiplyAlpha", js.undefined)
+    def setResizeQuality(value: ResizeQuality): Self = StObject.set(x, "resizeQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizeHeight(value: Double): Self = this.set("resizeHeight", value.asInstanceOf[js.Any])
+    def setResizeQualityUndefined: Self = StObject.set(x, "resizeQuality", js.undefined)
     
     @scala.inline
-    def deleteResizeHeight: Self = this.set("resizeHeight", js.undefined)
+    def setResizeWidth(value: Double): Self = StObject.set(x, "resizeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizeQuality(value: ResizeQuality): Self = this.set("resizeQuality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResizeQuality: Self = this.set("resizeQuality", js.undefined)
-    
-    @scala.inline
-    def setResizeWidth(value: Double): Self = this.set("resizeWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResizeWidth: Self = this.set("resizeWidth", js.undefined)
+    def setResizeWidthUndefined: Self = StObject.set(x, "resizeWidth", js.undefined)
   }
 }

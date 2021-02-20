@@ -1,5 +1,6 @@
 package typings.googleapis.mlV1Mod.mlV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents output related to a built-in algorithm Job.
   */
 @js.native
-trait SchemaGoogleCloudMlV1BuiltInAlgorithmOutput extends js.Object {
+trait SchemaGoogleCloudMlV1BuiltInAlgorithmOutput extends StObject {
   
   /**
     * Framework on which the built-in algorithm was trained on.
@@ -40,42 +41,30 @@ object SchemaGoogleCloudMlV1BuiltInAlgorithmOutput {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudMlV1BuiltInAlgorithmOutputOps[Self <: SchemaGoogleCloudMlV1BuiltInAlgorithmOutput] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudMlV1BuiltInAlgorithmOutputMutableBuilder[Self <: SchemaGoogleCloudMlV1BuiltInAlgorithmOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFramework(value: String): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrameworkUndefined: Self = StObject.set(x, "framework", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModelPath(value: String): Self = StObject.set(x, "modelPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramework(value: String): Self = this.set("framework", value.asInstanceOf[js.Any])
+    def setModelPathUndefined: Self = StObject.set(x, "modelPath", js.undefined)
     
     @scala.inline
-    def deleteFramework: Self = this.set("framework", js.undefined)
+    def setPythonVersion(value: String): Self = StObject.set(x, "pythonVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelPath(value: String): Self = this.set("modelPath", value.asInstanceOf[js.Any])
+    def setPythonVersionUndefined: Self = StObject.set(x, "pythonVersion", js.undefined)
     
     @scala.inline
-    def deleteModelPath: Self = this.set("modelPath", js.undefined)
+    def setRuntimeVersion(value: String): Self = StObject.set(x, "runtimeVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPythonVersion(value: String): Self = this.set("pythonVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePythonVersion: Self = this.set("pythonVersion", js.undefined)
-    
-    @scala.inline
-    def setRuntimeVersion(value: String): Self = this.set("runtimeVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuntimeVersion: Self = this.set("runtimeVersion", js.undefined)
+    def setRuntimeVersionUndefined: Self = StObject.set(x, "runtimeVersion", js.undefined)
   }
 }

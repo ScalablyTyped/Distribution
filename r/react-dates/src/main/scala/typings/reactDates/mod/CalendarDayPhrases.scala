@@ -1,11 +1,12 @@
 package typings.reactDates.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CalendarDayPhrases extends js.Object {
+trait CalendarDayPhrases extends StObject {
   
   var chooseAvailableDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.native
   
@@ -26,48 +27,36 @@ object CalendarDayPhrases {
   }
   
   @scala.inline
-  implicit class CalendarDayPhrasesOps[Self <: CalendarDayPhrases] (val x: Self) extends AnyVal {
+  implicit class CalendarDayPhrasesMutableBuilder[Self <: CalendarDayPhrases] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChooseAvailableDate(value: /* phraseArg */ PhraseArg => String): Self = StObject.set(x, "chooseAvailableDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChooseAvailableDateUndefined: Self = StObject.set(x, "chooseAvailableDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateIsSelected(value: /* phraseArg */ PhraseArg => String): Self = StObject.set(x, "dateIsSelected", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChooseAvailableDate(value: /* phraseArg */ PhraseArg => String): Self = this.set("chooseAvailableDate", js.Any.fromFunction1(value))
+    def setDateIsSelectedAsEndDate(value: /* phraseArg */ PhraseArg => String): Self = StObject.set(x, "dateIsSelectedAsEndDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteChooseAvailableDate: Self = this.set("chooseAvailableDate", js.undefined)
+    def setDateIsSelectedAsEndDateUndefined: Self = StObject.set(x, "dateIsSelectedAsEndDate", js.undefined)
     
     @scala.inline
-    def setDateIsSelected(value: /* phraseArg */ PhraseArg => String): Self = this.set("dateIsSelected", js.Any.fromFunction1(value))
+    def setDateIsSelectedAsStartDate(value: /* phraseArg */ PhraseArg => String): Self = StObject.set(x, "dateIsSelectedAsStartDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDateIsSelected: Self = this.set("dateIsSelected", js.undefined)
+    def setDateIsSelectedAsStartDateUndefined: Self = StObject.set(x, "dateIsSelectedAsStartDate", js.undefined)
     
     @scala.inline
-    def setDateIsSelectedAsEndDate(value: /* phraseArg */ PhraseArg => String): Self = this.set("dateIsSelectedAsEndDate", js.Any.fromFunction1(value))
+    def setDateIsSelectedUndefined: Self = StObject.set(x, "dateIsSelected", js.undefined)
     
     @scala.inline
-    def deleteDateIsSelectedAsEndDate: Self = this.set("dateIsSelectedAsEndDate", js.undefined)
+    def setDateIsUnavailable(value: /* phraseArg */ PhraseArg => String): Self = StObject.set(x, "dateIsUnavailable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDateIsSelectedAsStartDate(value: /* phraseArg */ PhraseArg => String): Self = this.set("dateIsSelectedAsStartDate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteDateIsSelectedAsStartDate: Self = this.set("dateIsSelectedAsStartDate", js.undefined)
-    
-    @scala.inline
-    def setDateIsUnavailable(value: /* phraseArg */ PhraseArg => String): Self = this.set("dateIsUnavailable", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteDateIsUnavailable: Self = this.set("dateIsUnavailable", js.undefined)
+    def setDateIsUnavailableUndefined: Self = StObject.set(x, "dateIsUnavailable", js.undefined)
   }
 }

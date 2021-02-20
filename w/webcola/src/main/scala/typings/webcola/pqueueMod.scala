@@ -1,15 +1,15 @@
 package typings.webcola
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webcola/dist/src/pqueue", JSImport.Namespace)
-@js.native
-object pqueueMod extends js.Object {
+object pqueueMod {
   
+  @JSImport("webcola/dist/src/pqueue", "PairingHeap")
   @js.native
-  class PairingHeap[T] protected () extends js.Object {
+  class PairingHeap[T] protected () extends StObject {
     def this(elem: T) = this()
     
     def contains(h: PairingHeap[T]): Boolean = js.native
@@ -46,8 +46,9 @@ object pqueueMod extends js.Object {
     def toString(selector: js.Any): String = js.native
   }
   
+  @JSImport("webcola/dist/src/pqueue", "PriorityQueue")
   @js.native
-  class PriorityQueue[T] protected () extends js.Object {
+  class PriorityQueue[T] protected () extends StObject {
     def this(lessThan: js.Function2[/* a */ T, /* b */ T, Boolean]) = this()
     
     def count(): Double = js.native

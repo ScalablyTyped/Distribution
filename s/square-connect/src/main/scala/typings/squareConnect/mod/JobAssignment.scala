@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "JobAssignment")
 @js.native
-class JobAssignment () extends js.Object {
+class JobAssignment () extends StObject {
   
   /**
     * The total pay amount for a 12 month period on the job. Set if the job `PayType` is `SALARY`.

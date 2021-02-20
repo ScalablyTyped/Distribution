@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdsense.gapi.client.adsense
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetadataResource extends js.Object {
+trait MetadataResource extends StObject {
   
   var dimensions: DimensionsResource = js.native
   
@@ -20,24 +21,12 @@ object MetadataResource {
   }
   
   @scala.inline
-  implicit class MetadataResourceOps[Self <: MetadataResource] (val x: Self) extends AnyVal {
+  implicit class MetadataResourceMutableBuilder[Self <: MetadataResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensions(value: DimensionsResource): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDimensions(value: DimensionsResource): Self = this.set("dimensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetrics(value: MetricsResource): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    def setMetrics(value: MetricsResource): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
   }
 }

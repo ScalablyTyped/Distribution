@@ -7,14 +7,14 @@ import typings.awsSdkClientCodecommitNode.typesGetCommitInputMod.GetCommitInput
 import typings.awsSdkClientCodecommitNode.typesGetCommitOutputMod.GetCommitOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/commands/GetCommitCommand", JSImport.Namespace)
-@js.native
-object getCommitCommandMod extends js.Object {
+object getCommitCommandMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/commands/GetCommitCommand", "GetCommitCommand")
   @js.native
   class GetCommitCommand protected () extends Command[
           InputTypesUnion, 

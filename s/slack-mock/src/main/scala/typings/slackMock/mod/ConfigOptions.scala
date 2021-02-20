@@ -1,11 +1,12 @@
 package typings.slackMock.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigOptions extends js.Object {
+trait ConfigOptions extends StObject {
   
   var logLevel: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object ConfigOptions {
   }
   
   @scala.inline
-  implicit class ConfigOptionsOps[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+  implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRtmPort(value: Double): Self = StObject.set(x, "rtmPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogLevel(value: String): Self = this.set("logLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogLevel: Self = this.set("logLevel", js.undefined)
-    
-    @scala.inline
-    def setRtmPort(value: Double): Self = this.set("rtmPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRtmPort: Self = this.set("rtmPort", js.undefined)
+    def setRtmPortUndefined: Self = StObject.set(x, "rtmPort", js.undefined)
   }
 }

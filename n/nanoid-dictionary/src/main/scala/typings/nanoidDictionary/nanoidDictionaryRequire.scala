@@ -1,5 +1,6 @@
 package typings.nanoidDictionary
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("nanoid-dictionary", JSImport.Namespace)
 @js.native
-object nanoidDictionaryRequire extends js.Object
+object nanoidDictionaryRequire extends StObject

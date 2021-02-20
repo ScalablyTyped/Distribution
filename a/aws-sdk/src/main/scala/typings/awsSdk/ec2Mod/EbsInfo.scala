@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EbsInfo extends js.Object {
+trait EbsInfo extends StObject {
   
   /**
     * Describes the optimized EBS performance for the instance type.
@@ -36,42 +37,30 @@ object EbsInfo {
   }
   
   @scala.inline
-  implicit class EbsInfoOps[Self <: EbsInfo] (val x: Self) extends AnyVal {
+  implicit class EbsInfoMutableBuilder[Self <: EbsInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEbsOptimizedInfo(value: EbsOptimizedInfo): Self = StObject.set(x, "EbsOptimizedInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEbsOptimizedInfoUndefined: Self = StObject.set(x, "EbsOptimizedInfo", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEbsOptimizedSupport(value: EbsOptimizedSupport): Self = StObject.set(x, "EbsOptimizedSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEbsOptimizedInfo(value: EbsOptimizedInfo): Self = this.set("EbsOptimizedInfo", value.asInstanceOf[js.Any])
+    def setEbsOptimizedSupportUndefined: Self = StObject.set(x, "EbsOptimizedSupport", js.undefined)
     
     @scala.inline
-    def deleteEbsOptimizedInfo: Self = this.set("EbsOptimizedInfo", js.undefined)
+    def setEncryptionSupport(value: EbsEncryptionSupport): Self = StObject.set(x, "EncryptionSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEbsOptimizedSupport(value: EbsOptimizedSupport): Self = this.set("EbsOptimizedSupport", value.asInstanceOf[js.Any])
+    def setEncryptionSupportUndefined: Self = StObject.set(x, "EncryptionSupport", js.undefined)
     
     @scala.inline
-    def deleteEbsOptimizedSupport: Self = this.set("EbsOptimizedSupport", js.undefined)
+    def setNvmeSupport(value: EbsNvmeSupport): Self = StObject.set(x, "NvmeSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionSupport(value: EbsEncryptionSupport): Self = this.set("EncryptionSupport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionSupport: Self = this.set("EncryptionSupport", js.undefined)
-    
-    @scala.inline
-    def setNvmeSupport(value: EbsNvmeSupport): Self = this.set("NvmeSupport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNvmeSupport: Self = this.set("NvmeSupport", js.undefined)
+    def setNvmeSupportUndefined: Self = StObject.set(x, "NvmeSupport", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for a Quest Milestone resource.
   */
 @js.native
-trait SchemaQuestMilestone extends js.Object {
+trait SchemaQuestMilestone extends StObject {
   
   /**
     * The completion reward data of the milestone, represented as a
@@ -52,51 +53,39 @@ object SchemaQuestMilestone {
   }
   
   @scala.inline
-  implicit class SchemaQuestMilestoneOps[Self <: SchemaQuestMilestone] (val x: Self) extends AnyVal {
+  implicit class SchemaQuestMilestoneMutableBuilder[Self <: SchemaQuestMilestone] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompletionRewardData(value: String): Self = StObject.set(x, "completionRewardData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletionRewardDataUndefined: Self = StObject.set(x, "completionRewardData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCriteria(value: js.Array[SchemaQuestCriterion]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletionRewardData(value: String): Self = this.set("completionRewardData", value.asInstanceOf[js.Any])
+    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
     @scala.inline
-    def deleteCompletionRewardData: Self = this.set("completionRewardData", js.undefined)
+    def setCriteriaVarargs(value: SchemaQuestCriterion*): Self = StObject.set(x, "criteria", js.Array(value :_*))
     
     @scala.inline
-    def setCriteriaVarargs(value: SchemaQuestCriterion*): Self = this.set("criteria", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCriteria(value: js.Array[SchemaQuestCriterion]): Self = this.set("criteria", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCriteria: Self = this.set("criteria", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

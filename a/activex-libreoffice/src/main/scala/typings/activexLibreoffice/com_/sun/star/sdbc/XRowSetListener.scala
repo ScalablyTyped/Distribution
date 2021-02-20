@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.sdbc
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,27 +49,15 @@ object XRowSetListener {
   }
   
   @scala.inline
-  implicit class XRowSetListenerOps[Self <: XRowSetListener] (val x: Self) extends AnyVal {
+  implicit class XRowSetListenerMutableBuilder[Self <: XRowSetListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCursorMoved(value: EventObject => Unit): Self = StObject.set(x, "cursorMoved", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRowChanged(value: EventObject => Unit): Self = StObject.set(x, "rowChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCursorMoved(value: EventObject => Unit): Self = this.set("cursorMoved", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRowChanged(value: EventObject => Unit): Self = this.set("rowChanged", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRowSetChanged(value: EventObject => Unit): Self = this.set("rowSetChanged", js.Any.fromFunction1(value))
+    def setRowSetChanged(value: EventObject => Unit): Self = StObject.set(x, "rowSetChanged", js.Any.fromFunction1(value))
   }
 }

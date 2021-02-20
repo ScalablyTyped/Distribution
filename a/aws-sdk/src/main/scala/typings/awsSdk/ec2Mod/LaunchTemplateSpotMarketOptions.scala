@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LaunchTemplateSpotMarketOptions extends js.Object {
+trait LaunchTemplateSpotMarketOptions extends StObject {
   
   /**
     * The required duration for the Spot Instances (also known as Spot blocks), in minutes. This value must be a multiple of 60 (60, 120, 180, 240, 300, or 360).
@@ -41,48 +42,36 @@ object LaunchTemplateSpotMarketOptions {
   }
   
   @scala.inline
-  implicit class LaunchTemplateSpotMarketOptionsOps[Self <: LaunchTemplateSpotMarketOptions] (val x: Self) extends AnyVal {
+  implicit class LaunchTemplateSpotMarketOptionsMutableBuilder[Self <: LaunchTemplateSpotMarketOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockDurationMinutes(value: Integer): Self = StObject.set(x, "BlockDurationMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockDurationMinutesUndefined: Self = StObject.set(x, "BlockDurationMinutes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceInterruptionBehavior(value: InstanceInterruptionBehavior): Self = StObject.set(x, "InstanceInterruptionBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockDurationMinutes(value: Integer): Self = this.set("BlockDurationMinutes", value.asInstanceOf[js.Any])
+    def setInstanceInterruptionBehaviorUndefined: Self = StObject.set(x, "InstanceInterruptionBehavior", js.undefined)
     
     @scala.inline
-    def deleteBlockDurationMinutes: Self = this.set("BlockDurationMinutes", js.undefined)
+    def setMaxPrice(value: String): Self = StObject.set(x, "MaxPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceInterruptionBehavior(value: InstanceInterruptionBehavior): Self = this.set("InstanceInterruptionBehavior", value.asInstanceOf[js.Any])
+    def setMaxPriceUndefined: Self = StObject.set(x, "MaxPrice", js.undefined)
     
     @scala.inline
-    def deleteInstanceInterruptionBehavior: Self = this.set("InstanceInterruptionBehavior", js.undefined)
+    def setSpotInstanceType(value: SpotInstanceType): Self = StObject.set(x, "SpotInstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPrice(value: String): Self = this.set("MaxPrice", value.asInstanceOf[js.Any])
+    def setSpotInstanceTypeUndefined: Self = StObject.set(x, "SpotInstanceType", js.undefined)
     
     @scala.inline
-    def deleteMaxPrice: Self = this.set("MaxPrice", js.undefined)
+    def setValidUntil(value: DateTime): Self = StObject.set(x, "ValidUntil", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpotInstanceType(value: SpotInstanceType): Self = this.set("SpotInstanceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpotInstanceType: Self = this.set("SpotInstanceType", js.undefined)
-    
-    @scala.inline
-    def setValidUntil(value: DateTime): Self = this.set("ValidUntil", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidUntil: Self = this.set("ValidUntil", js.undefined)
+    def setValidUntilUndefined: Self = StObject.set(x, "ValidUntil", js.undefined)
   }
 }

@@ -2,16 +2,14 @@ package typings.hdrHistogramJs
 
 import typings.hdrHistogramJs.encodableHistogramMod.EncodableHistogram
 import typings.hdrHistogramJs.percentileIteratorMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("hdr-histogram-js/AbstractHistogramBase", JSImport.Namespace)
-@js.native
-object abstractHistogramBaseMod extends js.Object {
+object abstractHistogramBaseMod {
   
-  val NO_TAG: /* "NO TAG" */ String = js.native
-  
+  @JSImport("hdr-histogram-js/AbstractHistogramBase", "AbstractHistogramBase")
   @js.native
   abstract class AbstractHistogramBase () extends EncodableHistogram {
     
@@ -50,9 +48,20 @@ object abstractHistogramBaseMod extends js.Object {
     var wordSizeInBytes: Double = js.native
   }
   /* static members */
-  @js.native
-  object AbstractHistogramBase extends js.Object {
+  object AbstractHistogramBase {
     
-    var identityBuilder: Double = js.native
+    @JSImport("hdr-histogram-js/AbstractHistogramBase", "AbstractHistogramBase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("hdr-histogram-js/AbstractHistogramBase", "AbstractHistogramBase.identityBuilder")
+    @js.native
+    def identityBuilder: Double = js.native
+    @scala.inline
+    def identityBuilder_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("identityBuilder")(x.asInstanceOf[js.Any])
   }
+  
+  @JSImport("hdr-histogram-js/AbstractHistogramBase", "NO_TAG")
+  @js.native
+  val NO_TAG: /* "NO TAG" */ String = js.native
 }

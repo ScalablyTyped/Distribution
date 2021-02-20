@@ -1,50 +1,34 @@
 package typings.libp2pInterfaces
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("libp2p-interfaces/src/crypto/errors", JSImport.Namespace)
-@js.native
-object errorsMod extends js.Object {
+object errorsMod {
   
+  @JSImport("libp2p-interfaces/src/crypto/errors", "InvalidCryptoExchangeError")
   @js.native
   class InvalidCryptoExchangeError () extends Error {
     def this(message: String) = this()
     
     var code: String = js.native
   }
-  /* static members */
-  @js.native
-  object InvalidCryptoExchangeError extends js.Object {
-    
-    def code: String = js.native
-  }
   
+  @JSImport("libp2p-interfaces/src/crypto/errors", "InvalidCryptoTransmissionError")
   @js.native
   class InvalidCryptoTransmissionError () extends Error {
     def this(message: String) = this()
     
     var code: String = js.native
   }
-  /* static members */
-  @js.native
-  object InvalidCryptoTransmissionError extends js.Object {
-    
-    def code: String = js.native
-  }
   
+  @JSImport("libp2p-interfaces/src/crypto/errors", "UnexpectedPeerError")
   @js.native
   class UnexpectedPeerError () extends Error {
     def this(message: String) = this()
     
     var code: String = js.native
-  }
-  /* static members */
-  @js.native
-  object UnexpectedPeerError extends js.Object {
-    
-    def code: String = js.native
   }
 }

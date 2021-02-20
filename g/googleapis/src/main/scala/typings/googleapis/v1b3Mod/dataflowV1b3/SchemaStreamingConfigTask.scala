@@ -1,6 +1,7 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A task that carries configuration information for streaming computations.
   */
 @js.native
-trait SchemaStreamingConfigTask extends js.Object {
+trait SchemaStreamingConfigTask extends StObject {
   
   /**
     * Maximum size for work item commit supported windmill storage layer.
@@ -49,51 +50,39 @@ object SchemaStreamingConfigTask {
   }
   
   @scala.inline
-  implicit class SchemaStreamingConfigTaskOps[Self <: SchemaStreamingConfigTask] (val x: Self) extends AnyVal {
+  implicit class SchemaStreamingConfigTaskMutableBuilder[Self <: SchemaStreamingConfigTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxWorkItemCommitBytes(value: String): Self = StObject.set(x, "maxWorkItemCommitBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxWorkItemCommitBytesUndefined: Self = StObject.set(x, "maxWorkItemCommitBytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStreamingComputationConfigs(value: js.Array[SchemaStreamingComputationConfig]): Self = StObject.set(x, "streamingComputationConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWorkItemCommitBytes(value: String): Self = this.set("maxWorkItemCommitBytes", value.asInstanceOf[js.Any])
+    def setStreamingComputationConfigsUndefined: Self = StObject.set(x, "streamingComputationConfigs", js.undefined)
     
     @scala.inline
-    def deleteMaxWorkItemCommitBytes: Self = this.set("maxWorkItemCommitBytes", js.undefined)
+    def setStreamingComputationConfigsVarargs(value: SchemaStreamingComputationConfig*): Self = StObject.set(x, "streamingComputationConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setStreamingComputationConfigsVarargs(value: SchemaStreamingComputationConfig*): Self = this.set("streamingComputationConfigs", js.Array(value :_*))
+    def setUserStepToStateFamilyNameMap(value: StringDictionary[String]): Self = StObject.set(x, "userStepToStateFamilyNameMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamingComputationConfigs(value: js.Array[SchemaStreamingComputationConfig]): Self = this.set("streamingComputationConfigs", value.asInstanceOf[js.Any])
+    def setUserStepToStateFamilyNameMapUndefined: Self = StObject.set(x, "userStepToStateFamilyNameMap", js.undefined)
     
     @scala.inline
-    def deleteStreamingComputationConfigs: Self = this.set("streamingComputationConfigs", js.undefined)
+    def setWindmillServiceEndpoint(value: String): Self = StObject.set(x, "windmillServiceEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserStepToStateFamilyNameMap(value: StringDictionary[String]): Self = this.set("userStepToStateFamilyNameMap", value.asInstanceOf[js.Any])
+    def setWindmillServiceEndpointUndefined: Self = StObject.set(x, "windmillServiceEndpoint", js.undefined)
     
     @scala.inline
-    def deleteUserStepToStateFamilyNameMap: Self = this.set("userStepToStateFamilyNameMap", js.undefined)
+    def setWindmillServicePort(value: String): Self = StObject.set(x, "windmillServicePort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWindmillServiceEndpoint(value: String): Self = this.set("windmillServiceEndpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindmillServiceEndpoint: Self = this.set("windmillServiceEndpoint", js.undefined)
-    
-    @scala.inline
-    def setWindmillServicePort(value: String): Self = this.set("windmillServicePort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindmillServicePort: Self = this.set("windmillServicePort", js.undefined)
+    def setWindmillServicePortUndefined: Self = StObject.set(x, "windmillServicePort", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.cucumberMessages.mod.messages
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** SourcesOrderType enum. */
 @JSImport("cucumber-messages", "messages.SourcesOrderType")
 @js.native
-object SourcesOrderType extends js.Object {
+object SourcesOrderType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

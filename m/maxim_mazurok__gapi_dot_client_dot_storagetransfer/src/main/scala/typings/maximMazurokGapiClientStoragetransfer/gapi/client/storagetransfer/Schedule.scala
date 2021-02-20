@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientStoragetransfer.gapi.client.storagetransfer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Schedule extends js.Object {
+trait Schedule extends StObject {
   
   /**
     * The time in UTC that no further transfer operations are scheduled. Combined with schedule_end_date, `end_time_of_day` specifies the end date and time for starting new transfer
@@ -50,48 +51,36 @@ object Schedule {
   }
   
   @scala.inline
-  implicit class ScheduleOps[Self <: Schedule] (val x: Self) extends AnyVal {
+  implicit class ScheduleMutableBuilder[Self <: Schedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTimeOfDay(value: TimeOfDay): Self = StObject.set(x, "endTimeOfDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeOfDayUndefined: Self = StObject.set(x, "endTimeOfDay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepeatInterval(value: String): Self = StObject.set(x, "repeatInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTimeOfDay(value: TimeOfDay): Self = this.set("endTimeOfDay", value.asInstanceOf[js.Any])
+    def setRepeatIntervalUndefined: Self = StObject.set(x, "repeatInterval", js.undefined)
     
     @scala.inline
-    def deleteEndTimeOfDay: Self = this.set("endTimeOfDay", js.undefined)
+    def setScheduleEndDate(value: Date): Self = StObject.set(x, "scheduleEndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeatInterval(value: String): Self = this.set("repeatInterval", value.asInstanceOf[js.Any])
+    def setScheduleEndDateUndefined: Self = StObject.set(x, "scheduleEndDate", js.undefined)
     
     @scala.inline
-    def deleteRepeatInterval: Self = this.set("repeatInterval", js.undefined)
+    def setScheduleStartDate(value: Date): Self = StObject.set(x, "scheduleStartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleEndDate(value: Date): Self = this.set("scheduleEndDate", value.asInstanceOf[js.Any])
+    def setScheduleStartDateUndefined: Self = StObject.set(x, "scheduleStartDate", js.undefined)
     
     @scala.inline
-    def deleteScheduleEndDate: Self = this.set("scheduleEndDate", js.undefined)
+    def setStartTimeOfDay(value: TimeOfDay): Self = StObject.set(x, "startTimeOfDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleStartDate(value: Date): Self = this.set("scheduleStartDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduleStartDate: Self = this.set("scheduleStartDate", js.undefined)
-    
-    @scala.inline
-    def setStartTimeOfDay(value: TimeOfDay): Self = this.set("startTimeOfDay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTimeOfDay: Self = this.set("startTimeOfDay", js.undefined)
+    def setStartTimeOfDayUndefined: Self = StObject.set(x, "startTimeOfDay", js.undefined)
   }
 }

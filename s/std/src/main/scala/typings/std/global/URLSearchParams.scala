@@ -1,12 +1,12 @@
 package typings.std.global
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("URLSearchParams")
 @js.native
 class URLSearchParams ()
@@ -16,11 +16,9 @@ class URLSearchParams ()
   def this(init: Record[java.lang.String, java.lang.String]) = this()
   def this(init: typings.std.URLSearchParams) = this()
 }
-@JSGlobal("URLSearchParams")
-@js.native
-object URLSearchParams
-  extends Instantiable0[typings.std.URLSearchParams]
-     with Instantiable1[
-      (/* init */ js.Array[js.Array[java.lang.String]]) | (/* init */ Record[java.lang.String, java.lang.String]) | (/* init */ java.lang.String) | (/* init */ typings.std.URLSearchParams), 
-      typings.std.URLSearchParams
-    ]
+object URLSearchParams {
+  
+  @JSGlobal("URLSearchParams.toString")
+  @js.native
+  def toString_(): java.lang.String = js.native
+}

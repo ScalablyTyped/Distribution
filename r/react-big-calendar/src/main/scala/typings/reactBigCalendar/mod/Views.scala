@@ -5,12 +5,13 @@ import typings.reactBigCalendar.reactBigCalendarStrings.day_
 import typings.reactBigCalendar.reactBigCalendarStrings.month_
 import typings.reactBigCalendar.reactBigCalendarStrings.week_
 import typings.reactBigCalendar.reactBigCalendarStrings.work_week_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Views extends js.Object {
+trait Views extends StObject {
   
   var AGENDA: agenda_ = js.native
   
@@ -31,33 +32,21 @@ object Views {
   }
   
   @scala.inline
-  implicit class ViewsOps[Self <: Views] (val x: Self) extends AnyVal {
+  implicit class ViewsMutableBuilder[Self <: Views] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAGENDA(value: agenda_): Self = StObject.set(x, "AGENDA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDAY(value: day_): Self = StObject.set(x, "DAY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMONTH(value: month_): Self = StObject.set(x, "MONTH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAGENDA(value: agenda_): Self = this.set("AGENDA", value.asInstanceOf[js.Any])
+    def setWEEK(value: week_): Self = StObject.set(x, "WEEK", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDAY(value: day_): Self = this.set("DAY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMONTH(value: month_): Self = this.set("MONTH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWEEK(value: week_): Self = this.set("WEEK", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWORK_WEEK(value: work_week_): Self = this.set("WORK_WEEK", value.asInstanceOf[js.Any])
+    def setWORK_WEEK(value: work_week_): Self = StObject.set(x, "WORK_WEEK", value.asInstanceOf[js.Any])
   }
 }

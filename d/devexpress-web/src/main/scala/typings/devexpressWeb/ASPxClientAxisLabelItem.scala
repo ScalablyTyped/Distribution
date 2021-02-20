@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,30 +46,18 @@ object ASPxClientAxisLabelItem {
   }
   
   @scala.inline
-  implicit class ASPxClientAxisLabelItemOps[Self <: ASPxClientAxisLabelItem] (val x: Self) extends AnyVal {
+  implicit class ASPxClientAxisLabelItemMutableBuilder[Self <: ASPxClientAxisLabelItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxis(value: ASPxClientAxisBase): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisValue(value: js.Any): Self = StObject.set(x, "axisValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxisValueInternal(value: Double): Self = StObject.set(x, "axisValueInternal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: ASPxClientAxisBase): Self = this.set("axis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAxisValue(value: js.Any): Self = this.set("axisValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAxisValueInternal(value: Double): Self = this.set("axisValueInternal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

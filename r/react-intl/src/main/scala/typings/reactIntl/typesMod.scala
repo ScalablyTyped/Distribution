@@ -3,13 +3,12 @@ package typings.reactIntl
 import typings.formatjsIntl.srcTypesMod.Formatters
 import typings.formatjsIntl.srcTypesMod.IntlFormatters
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-intl/lib/src/types", JSImport.Namespace)
-@js.native
-object typesMod extends js.Object {
+object typesMod {
   
   @js.native
   trait IntlConfig

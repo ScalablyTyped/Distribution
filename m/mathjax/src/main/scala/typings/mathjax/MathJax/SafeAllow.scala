@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SafeAllow extends js.Object {
+trait SafeAllow extends StObject {
   
   /*When set to "safe" only URL’s with protocols that are listed in the safeProtocols property (see below) are
     * allowed as targets of href attributes or the \href macro. By default, these are http://, https://, and
@@ -52,54 +53,42 @@ object SafeAllow {
   }
   
   @scala.inline
-  implicit class SafeAllowOps[Self <: SafeAllow] (val x: Self) extends AnyVal {
+  implicit class SafeAllowMutableBuilder[Self <: SafeAllow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCssIDs(value: String): Self = StObject.set(x, "cssIDs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setURLs(value: String): Self = this.set("URLs", value.asInstanceOf[js.Any])
+    def setCssIDsUndefined: Self = StObject.set(x, "cssIDs", js.undefined)
     
     @scala.inline
-    def deleteURLs: Self = this.set("URLs", js.undefined)
+    def setFontsize(value: String): Self = StObject.set(x, "fontsize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClasses(value: String): Self = this.set("classes", value.asInstanceOf[js.Any])
+    def setFontsizeUndefined: Self = StObject.set(x, "fontsize", js.undefined)
     
     @scala.inline
-    def deleteClasses: Self = this.set("classes", js.undefined)
+    def setRequire(value: String): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssIDs(value: String): Self = this.set("cssIDs", value.asInstanceOf[js.Any])
+    def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
     
     @scala.inline
-    def deleteCssIDs: Self = this.set("cssIDs", js.undefined)
+    def setStyles(value: String): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontsize(value: String): Self = this.set("fontsize", value.asInstanceOf[js.Any])
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def deleteFontsize: Self = this.set("fontsize", js.undefined)
+    def setURLs(value: String): Self = StObject.set(x, "URLs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequire(value: String): Self = this.set("require", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequire: Self = this.set("require", js.undefined)
-    
-    @scala.inline
-    def setStyles(value: String): Self = this.set("styles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setURLsUndefined: Self = StObject.set(x, "URLs", js.undefined)
   }
 }

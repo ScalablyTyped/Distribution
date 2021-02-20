@@ -3,6 +3,7 @@ package typings.photonui.photonui
 import org.scalablytyped.runtime.StringDictionary
 import typings.photonui.anon.X
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,36 +76,24 @@ object Dialog {
   }
   
   @scala.inline
-  implicit class DialogOps[Self <: Dialog] (val x: Self) extends AnyVal {
+  implicit class DialogMutableBuilder[Self <: Dialog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddButton(value: (Widget, js.Any) => Unit): Self = StObject.set(x, "addButton", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonNames(value: js.Array[String]): Self = StObject.set(x, "buttonNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonNamesVarargs(value: String*): Self = StObject.set(x, "buttonNames", js.Array(value :_*))
     
     @scala.inline
-    def setAddButton(value: (Widget, js.Any) => Unit): Self = this.set("addButton", js.Any.fromFunction2(value))
+    def setButtons(value: js.Array[Widget]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonNamesVarargs(value: String*): Self = this.set("buttonNames", js.Array(value :_*))
+    def setButtonsVarargs(value: Widget*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
     @scala.inline
-    def setButtonNames(value: js.Array[String]): Self = this.set("buttonNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setButtonsVarargs(value: Widget*): Self = this.set("buttons", js.Array(value :_*))
-    
-    @scala.inline
-    def setButtons(value: js.Array[Widget]): Self = this.set("buttons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveButton(value: Widget => Unit): Self = this.set("removeButton", js.Any.fromFunction1(value))
+    def setRemoveButton(value: Widget => Unit): Self = StObject.set(x, "removeButton", js.Any.fromFunction1(value))
   }
 }

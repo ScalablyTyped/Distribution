@@ -3,13 +3,14 @@ package typings.libp2pGossipsub.anon
 import typings.libp2pGossipsub.peerScoreParamsMod.TopicScoreParams
 import typings.std.Record
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<libp2p-gossipsub.libp2p-gossipsub/src/score/peer-score-params.PeerScoreParams> */
 @js.native
-trait PartialPeerScoreParams extends js.Object {
+trait PartialPeerScoreParams extends StObject {
   
   var IPColocationFactorThreshold: js.UndefOr[Double] = js.native
   
@@ -44,90 +45,78 @@ object PartialPeerScoreParams {
   }
   
   @scala.inline
-  implicit class PartialPeerScoreParamsOps[Self <: PartialPeerScoreParams] (val x: Self) extends AnyVal {
+  implicit class PartialPeerScoreParamsMutableBuilder[Self <: PartialPeerScoreParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppSpecificScore(value: /* p */ String => Double): Self = StObject.set(x, "appSpecificScore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppSpecificScoreUndefined: Self = StObject.set(x, "appSpecificScore", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppSpecificWeight(value: Double): Self = StObject.set(x, "appSpecificWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIPColocationFactorThreshold(value: Double): Self = this.set("IPColocationFactorThreshold", value.asInstanceOf[js.Any])
+    def setAppSpecificWeightUndefined: Self = StObject.set(x, "appSpecificWeight", js.undefined)
     
     @scala.inline
-    def deleteIPColocationFactorThreshold: Self = this.set("IPColocationFactorThreshold", js.undefined)
+    def setBehaviourPenaltyDecay(value: Double): Self = StObject.set(x, "behaviourPenaltyDecay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIPColocationFactorWeight(value: Double): Self = this.set("IPColocationFactorWeight", value.asInstanceOf[js.Any])
+    def setBehaviourPenaltyDecayUndefined: Self = StObject.set(x, "behaviourPenaltyDecay", js.undefined)
     
     @scala.inline
-    def deleteIPColocationFactorWeight: Self = this.set("IPColocationFactorWeight", js.undefined)
+    def setBehaviourPenaltyWeight(value: Double): Self = StObject.set(x, "behaviourPenaltyWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIPColocationFactorWhitelist(value: Set[String]): Self = this.set("IPColocationFactorWhitelist", value.asInstanceOf[js.Any])
+    def setBehaviourPenaltyWeightUndefined: Self = StObject.set(x, "behaviourPenaltyWeight", js.undefined)
     
     @scala.inline
-    def deleteIPColocationFactorWhitelist: Self = this.set("IPColocationFactorWhitelist", js.undefined)
+    def setDecayInterval(value: Double): Self = StObject.set(x, "decayInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppSpecificScore(value: /* p */ String => Double): Self = this.set("appSpecificScore", js.Any.fromFunction1(value))
+    def setDecayIntervalUndefined: Self = StObject.set(x, "decayInterval", js.undefined)
     
     @scala.inline
-    def deleteAppSpecificScore: Self = this.set("appSpecificScore", js.undefined)
+    def setDecayToZero(value: Double): Self = StObject.set(x, "decayToZero", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppSpecificWeight(value: Double): Self = this.set("appSpecificWeight", value.asInstanceOf[js.Any])
+    def setDecayToZeroUndefined: Self = StObject.set(x, "decayToZero", js.undefined)
     
     @scala.inline
-    def deleteAppSpecificWeight: Self = this.set("appSpecificWeight", js.undefined)
+    def setIPColocationFactorThreshold(value: Double): Self = StObject.set(x, "IPColocationFactorThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBehaviourPenaltyDecay(value: Double): Self = this.set("behaviourPenaltyDecay", value.asInstanceOf[js.Any])
+    def setIPColocationFactorThresholdUndefined: Self = StObject.set(x, "IPColocationFactorThreshold", js.undefined)
     
     @scala.inline
-    def deleteBehaviourPenaltyDecay: Self = this.set("behaviourPenaltyDecay", js.undefined)
+    def setIPColocationFactorWeight(value: Double): Self = StObject.set(x, "IPColocationFactorWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBehaviourPenaltyWeight(value: Double): Self = this.set("behaviourPenaltyWeight", value.asInstanceOf[js.Any])
+    def setIPColocationFactorWeightUndefined: Self = StObject.set(x, "IPColocationFactorWeight", js.undefined)
     
     @scala.inline
-    def deleteBehaviourPenaltyWeight: Self = this.set("behaviourPenaltyWeight", js.undefined)
+    def setIPColocationFactorWhitelist(value: Set[String]): Self = StObject.set(x, "IPColocationFactorWhitelist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecayInterval(value: Double): Self = this.set("decayInterval", value.asInstanceOf[js.Any])
+    def setIPColocationFactorWhitelistUndefined: Self = StObject.set(x, "IPColocationFactorWhitelist", js.undefined)
     
     @scala.inline
-    def deleteDecayInterval: Self = this.set("decayInterval", js.undefined)
+    def setRetainScore(value: Double): Self = StObject.set(x, "retainScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecayToZero(value: Double): Self = this.set("decayToZero", value.asInstanceOf[js.Any])
+    def setRetainScoreUndefined: Self = StObject.set(x, "retainScore", js.undefined)
     
     @scala.inline
-    def deleteDecayToZero: Self = this.set("decayToZero", js.undefined)
+    def setTopicScoreCap(value: Double): Self = StObject.set(x, "topicScoreCap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetainScore(value: Double): Self = this.set("retainScore", value.asInstanceOf[js.Any])
+    def setTopicScoreCapUndefined: Self = StObject.set(x, "topicScoreCap", js.undefined)
     
     @scala.inline
-    def deleteRetainScore: Self = this.set("retainScore", js.undefined)
+    def setTopics(value: Record[String, TopicScoreParams]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopicScoreCap(value: Double): Self = this.set("topicScoreCap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicScoreCap: Self = this.set("topicScoreCap", js.undefined)
-    
-    @scala.inline
-    def setTopics(value: Record[String, TopicScoreParams]): Self = this.set("topics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopics: Self = this.set("topics", js.undefined)
+    def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
   }
 }

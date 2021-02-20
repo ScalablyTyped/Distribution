@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Word.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi 1.1]
   */
 @js.native
-trait FontLoadOptions extends js.Object {
+trait FontLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -117,90 +118,78 @@ object FontLoadOptions {
   }
   
   @scala.inline
-  implicit class FontLoadOptionsOps[Self <: FontLoadOptions] (val x: Self) extends AnyVal {
+  implicit class FontLoadOptionsMutableBuilder[Self <: FontLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBold(value: Boolean): Self = this.set("bold", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteBold: Self = this.set("bold", js.undefined)
+    def setDoubleStrikeThrough(value: Boolean): Self = StObject.set(x, "doubleStrikeThrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Boolean): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDoubleStrikeThroughUndefined: Self = StObject.set(x, "doubleStrikeThrough", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setHighlightColor(value: Boolean): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleStrikeThrough(value: Boolean): Self = this.set("doubleStrikeThrough", value.asInstanceOf[js.Any])
+    def setHighlightColorUndefined: Self = StObject.set(x, "highlightColor", js.undefined)
     
     @scala.inline
-    def deleteDoubleStrikeThrough: Self = this.set("doubleStrikeThrough", js.undefined)
+    def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightColor(value: Boolean): Self = this.set("highlightColor", value.asInstanceOf[js.Any])
+    def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
     
     @scala.inline
-    def deleteHighlightColor: Self = this.set("highlightColor", js.undefined)
+    def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItalic(value: Boolean): Self = this.set("italic", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteItalic: Self = this.set("italic", js.undefined)
+    def setSize(value: Boolean): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Boolean): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setStrikeThrough(value: Boolean): Self = StObject.set(x, "strikeThrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Boolean): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setStrikeThroughUndefined: Self = StObject.set(x, "strikeThrough", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSubscript(value: Boolean): Self = StObject.set(x, "subscript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrikeThrough(value: Boolean): Self = this.set("strikeThrough", value.asInstanceOf[js.Any])
+    def setSubscriptUndefined: Self = StObject.set(x, "subscript", js.undefined)
     
     @scala.inline
-    def deleteStrikeThrough: Self = this.set("strikeThrough", js.undefined)
+    def setSuperscript(value: Boolean): Self = StObject.set(x, "superscript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscript(value: Boolean): Self = this.set("subscript", value.asInstanceOf[js.Any])
+    def setSuperscriptUndefined: Self = StObject.set(x, "superscript", js.undefined)
     
     @scala.inline
-    def deleteSubscript: Self = this.set("subscript", js.undefined)
+    def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuperscript(value: Boolean): Self = this.set("superscript", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuperscript: Self = this.set("superscript", js.undefined)
-    
-    @scala.inline
-    def setUnderline(value: Boolean): Self = this.set("underline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnderline: Self = this.set("underline", js.undefined)
+    def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
   }
 }

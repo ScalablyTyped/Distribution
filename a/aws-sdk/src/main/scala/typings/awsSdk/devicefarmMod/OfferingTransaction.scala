@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OfferingTransaction extends js.Object {
+trait OfferingTransaction extends StObject {
   
   /**
     * The cost of an offering transaction.
@@ -41,48 +42,36 @@ object OfferingTransaction {
   }
   
   @scala.inline
-  implicit class OfferingTransactionOps[Self <: OfferingTransaction] (val x: Self) extends AnyVal {
+  implicit class OfferingTransactionMutableBuilder[Self <: OfferingTransaction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCost(value: MonetaryAmount): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCostUndefined: Self = StObject.set(x, "cost", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedOn(value: DateTime): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCost(value: MonetaryAmount): Self = this.set("cost", value.asInstanceOf[js.Any])
+    def setCreatedOnUndefined: Self = StObject.set(x, "createdOn", js.undefined)
     
     @scala.inline
-    def deleteCost: Self = this.set("cost", js.undefined)
+    def setOfferingPromotionId(value: OfferingPromotionIdentifier): Self = StObject.set(x, "offeringPromotionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedOn(value: DateTime): Self = this.set("createdOn", value.asInstanceOf[js.Any])
+    def setOfferingPromotionIdUndefined: Self = StObject.set(x, "offeringPromotionId", js.undefined)
     
     @scala.inline
-    def deleteCreatedOn: Self = this.set("createdOn", js.undefined)
+    def setOfferingStatus(value: OfferingStatus): Self = StObject.set(x, "offeringStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfferingPromotionId(value: OfferingPromotionIdentifier): Self = this.set("offeringPromotionId", value.asInstanceOf[js.Any])
+    def setOfferingStatusUndefined: Self = StObject.set(x, "offeringStatus", js.undefined)
     
     @scala.inline
-    def deleteOfferingPromotionId: Self = this.set("offeringPromotionId", js.undefined)
+    def setTransactionId(value: TransactionIdentifier): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfferingStatus(value: OfferingStatus): Self = this.set("offeringStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOfferingStatus: Self = this.set("offeringStatus", js.undefined)
-    
-    @scala.inline
-    def setTransactionId(value: TransactionIdentifier): Self = this.set("transactionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransactionId: Self = this.set("transactionId", js.undefined)
+    def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.ariClient.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait After extends js.Object {
+trait After extends StObject {
   
   var after: js.UndefOr[Double] = js.native
   
@@ -28,51 +29,39 @@ object After {
   }
   
   @scala.inline
-  implicit class AfterOps[Self <: After] (val x: Self) extends AnyVal {
+  implicit class AfterMutableBuilder[Self <: After] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfter(value: Double): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBefore(value: Double): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
     @scala.inline
-    def setAfter(value: Double): Self = this.set("after", value.asInstanceOf[js.Any])
+    def setBetween(value: Double): Self = StObject.set(x, "between", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAfter: Self = this.set("after", js.undefined)
+    def setBetweenUndefined: Self = StObject.set(x, "between", js.undefined)
     
     @scala.inline
-    def setBefore(value: Double): Self = this.set("before", value.asInstanceOf[js.Any])
+    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBefore: Self = this.set("before", js.undefined)
+    def setDtmf(value: String): Self = StObject.set(x, "dtmf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBetween(value: Double): Self = this.set("between", value.asInstanceOf[js.Any])
+    def setDtmfUndefined: Self = StObject.set(x, "dtmf", js.undefined)
     
     @scala.inline
-    def deleteBetween: Self = this.set("between", js.undefined)
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDtmf(value: String): Self = this.set("dtmf", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDtmf: Self = this.set("dtmf", js.undefined)
-    
-    @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
   }
 }

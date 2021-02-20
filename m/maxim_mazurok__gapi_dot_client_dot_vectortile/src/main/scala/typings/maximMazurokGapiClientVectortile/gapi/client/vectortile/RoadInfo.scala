@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVectortile.gapi.client.vectortile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoadInfo extends js.Object {
+trait RoadInfo extends StObject {
   
   /** Road has signage discouraging or prohibiting use by the general public. E.g., roads with signs that say "Private", or "No trespassing." */
   var isPrivate: js.UndefOr[Boolean] = js.native
@@ -19,24 +20,12 @@ object RoadInfo {
   }
   
   @scala.inline
-  implicit class RoadInfoOps[Self <: RoadInfo] (val x: Self) extends AnyVal {
+  implicit class RoadInfoMutableBuilder[Self <: RoadInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsPrivate(value: Boolean): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsPrivate(value: Boolean): Self = this.set("isPrivate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsPrivate: Self = this.set("isPrivate", js.undefined)
+    def setIsPrivateUndefined: Self = StObject.set(x, "isPrivate", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.azdata.mod.nb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.azdata.azdataStrings.stdin
   - typings.azdata.azdataStrings.execute_reply
 */
-trait Channel extends js.Object
+trait Channel extends StObject
 object Channel {
   
   @scala.inline

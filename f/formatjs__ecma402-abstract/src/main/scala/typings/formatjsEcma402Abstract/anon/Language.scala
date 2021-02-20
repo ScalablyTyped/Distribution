@@ -1,11 +1,12 @@
 package typings.formatjsEcma402Abstract.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Language extends js.Object {
+trait Language extends StObject {
   
   var currency: LongRecord = js.native
   
@@ -27,30 +28,18 @@ object Language {
   }
   
   @scala.inline
-  implicit class LanguageOps[Self <: Language] (val x: Self) extends AnyVal {
+  implicit class LanguageMutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrency(value: LongRecord): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguage(value: LongNarrow): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegion(value: NarrowShort): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrency(value: LongRecord): Self = this.set("currency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLanguage(value: LongNarrow): Self = this.set("language", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegion(value: NarrowShort): Self = this.set("region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScript(value: LongNarrowShort): Self = this.set("script", value.asInstanceOf[js.Any])
+    def setScript(value: LongNarrowShort): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
   }
 }

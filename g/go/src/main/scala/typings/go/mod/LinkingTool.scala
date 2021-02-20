@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,17 +40,33 @@ class LinkingTool () extends LinkingBaseTool {
   /**Gets or sets the GraphObject at which .findLinkablePort should start its search.*/
   var startObject: GraphObject = js.native
 }
-/* static members */
-@JSImport("go", "LinkingTool")
-@js.native
-object LinkingTool extends js.Object {
+object LinkingTool {
+  
+  @JSImport("go", "LinkingTool")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**This value for LinkingTool.direction indicates that users may draw new links backwards only.*/
-  var BackwardsOnly: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "LinkingTool.BackwardsOnly")
+  @js.native
+  def BackwardsOnly: EnumValue = js.native
+  @scala.inline
+  def BackwardsOnly_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BackwardsOnly")(x.asInstanceOf[js.Any])
   
   /**This value for LinkingTool.direction indicates that users may draw new links in either direction.*/
-  var Either: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "LinkingTool.Either")
+  @js.native
+  def Either: EnumValue = js.native
+  @scala.inline
+  def Either_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Either")(x.asInstanceOf[js.Any])
   
   /**This value for LinkingTool.direction indicates that users may draw new links forwards only.*/
-  var ForwardsOnly: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "LinkingTool.ForwardsOnly")
+  @js.native
+  def ForwardsOnly: EnumValue = js.native
+  @scala.inline
+  def ForwardsOnly_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ForwardsOnly")(x.asInstanceOf[js.Any])
 }

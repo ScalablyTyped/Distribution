@@ -1,5 +1,6 @@
 package typings.ember.mod.default
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,14 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and add many tests soon.
   * @deprecated
   */
-@JSImport("ember", "OrderedSet")
+@JSImport("ember", "default.OrderedSet")
 @js.native
 class OrderedSet ()
   extends typings.ember.mod.Ember.OrderedSet
-/* static members */
-@JSImport("ember", "OrderedSet")
-@js.native
-object OrderedSet extends js.Object {
+object OrderedSet {
   
+  /* static member */
+  @JSImport("ember", "default.OrderedSet.create")
+  @js.native
   def create(): typings.ember.mod.Ember.OrderedSet = js.native
 }

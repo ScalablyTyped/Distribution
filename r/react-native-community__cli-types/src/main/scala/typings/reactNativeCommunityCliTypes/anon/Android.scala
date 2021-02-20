@@ -3,6 +3,7 @@ package typings.reactNativeCommunityCliTypes.anon
 import org.scalablytyped.runtime.StringDictionary
 import typings.reactNativeCommunityCliTypes.androidMod.AndroidProjectParams
 import typings.reactNativeCommunityCliTypes.iosMod.IOSProjectParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,30 +25,18 @@ object Android {
   }
   
   @scala.inline
-  implicit class AndroidOps[Self <: Android] (val x: Self) extends AnyVal {
+  implicit class AndroidMutableBuilder[Self <: Android] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroid(value: AndroidProjectParams): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIos(value: IOSProjectParams): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroid(value: AndroidProjectParams): Self = this.set("android", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAndroid: Self = this.set("android", js.undefined)
-    
-    @scala.inline
-    def setIos(value: IOSProjectParams): Self = this.set("ios", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIos: Self = this.set("ios", js.undefined)
+    def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
   }
 }

@@ -20,6 +20,7 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLDivElement
 import typings.std.WebGLRenderingContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +35,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * made available to you via the Phaser.Scene Systems class instead.
   */
 @js.native
-trait Game extends js.Object {
+trait Game extends StObject {
   
   /**
     * An instance of the Animation Manager.

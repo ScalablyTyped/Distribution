@@ -36,6 +36,7 @@ import typings.mendixmodelsdk.pagesMod.pages.ConditionalSettings
 import typings.mendixmodelsdk.pagesMod.pages.WidgetValidation
 import typings.mendixmodelsdk.restMod.rest.ConsumedODataService
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,16 +61,20 @@ class FunctionCallExpression protected ()
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-/* static members */
-@JSImport("mendixmodelsdk", "expressions.FunctionCallExpression")
-@js.native
-object FunctionCallExpression extends js.Object {
+object FunctionCallExpression {
+  
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.create")
+  @js.native
   def create(model: IModel): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -80,6 +85,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInAppServiceCallParameterMappingUnderArgumentModel")
+  @js.native
   def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -90,6 +98,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.21.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInBasicCodeActionParameterValueUnderArgumentModel")
+  @js.native
   def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -100,6 +111,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 to 7.20.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInBasicJavaActionParameterValueUnderArgumentModel")
+  @js.native
   def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -110,6 +124,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInBinaryExpressionUnderLeft")
+  @js.native
   def createInBinaryExpressionUnderLeft(container: typings.mendixmodelsdk.expressionsMod.expressions.BinaryExpression): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -120,6 +137,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInBinaryExpressionUnderRight")
+  @js.native
   def createInBinaryExpressionUnderRight(container: typings.mendixmodelsdk.expressionsMod.expressions.BinaryExpression): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -130,6 +150,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInBinaryRequestHandlingUnderExpressionModel")
+  @js.native
   def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -140,6 +163,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInChangeListActionUnderValueModel")
+  @js.native
   def createInChangeListActionUnderValueModel(container: ChangeListAction): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -150,6 +176,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInChangeVariableActionUnderValueModel")
+  @js.native
   def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -160,6 +189,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInConditionalSettingsUnderExpressionModel")
+  @js.native
   def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -170,6 +202,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.5.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInConsumedODataServiceUnderTimeoutModel")
+  @js.native
   def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -180,6 +215,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInCreateVariableActionUnderInitialValueModel")
+  @js.native
   def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -190,6 +228,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInCustomRangeUnderLimitExpressionModel")
+  @js.native
   def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -200,6 +241,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInCustomRangeUnderOffsetExpressionModel")
+  @js.native
   def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -210,6 +254,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInDocumentTemplateParameterMappingUnderArgumentModel")
+  @js.native
   def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -220,6 +267,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInEndEventUnderReturnValueModel")
+  @js.native
   def createInEndEventUnderReturnValueModel(container: EndEvent): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -230,6 +280,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInExpressionSplitConditionUnderExpressionModel")
+  @js.native
   def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -240,6 +293,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInFormDataPartUnderValueModel")
+  @js.native
   def createInFormDataPartUnderValueModel(container: FormDataPart): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -250,6 +306,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInFunctionCallExpressionUnderArguments")
+  @js.native
   def createInFunctionCallExpressionUnderArguments(container: typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -260,6 +319,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInGenerateDocumentActionUnderMarginBottomInInchModel")
+  @js.native
   def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -270,6 +332,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInGenerateDocumentActionUnderMarginLeftInInchModel")
+  @js.native
   def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -280,6 +345,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInGenerateDocumentActionUnderMarginRightInInchModel")
+  @js.native
   def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -290,6 +358,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInGenerateDocumentActionUnderMarginTopInInchModel")
+  @js.native
   def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -300,6 +371,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInHttpConfigurationUnderCustomLocationModel")
+  @js.native
   def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -310,6 +384,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInHttpConfigurationUnderPassword")
+  @js.native
   def createInHttpConfigurationUnderPassword(container: HttpConfiguration): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -320,6 +397,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInHttpConfigurationUnderUsername")
+  @js.native
   def createInHttpConfigurationUnderUsername(container: HttpConfiguration): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -330,6 +410,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInHttpHeaderEntryUnderValueModel")
+  @js.native
   def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -340,6 +423,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInIfExpressionUnderCondition")
+  @js.native
   def createInIfExpressionUnderCondition(container: typings.mendixmodelsdk.expressionsMod.expressions.IfExpression): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -350,6 +436,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInIfExpressionUnderIfFalse")
+  @js.native
   def createInIfExpressionUnderIfFalse(container: typings.mendixmodelsdk.expressionsMod.expressions.IfExpression): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -360,6 +449,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInIfExpressionUnderIfTrue")
+  @js.native
   def createInIfExpressionUnderIfTrue(container: typings.mendixmodelsdk.expressionsMod.expressions.IfExpression): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -370,6 +462,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInInspectAttributeUnderExpressionModel")
+  @js.native
   def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -380,6 +475,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInLogMessageActionUnderNodeModel")
+  @js.native
   def createInLogMessageActionUnderNodeModel(container: LogMessageAction): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -390,6 +488,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInMemberChangeUnderValueModel")
+  @js.native
   def createInMemberChangeUnderValueModel(container: MemberChange): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -400,6 +501,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInMicroflowCallParameterMappingUnderArgumentModel")
+  @js.native
   def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -410,6 +514,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInNanoflowCallParameterMappingUnderArgumentModel")
+  @js.native
   def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -420,6 +527,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInParenthesisExpressionUnderExpression")
+  @js.native
   def createInParenthesisExpressionUnderExpression(container: typings.mendixmodelsdk.expressionsMod.expressions.ParenthesisExpression): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -430,6 +540,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInProxyConfigurationUnderHostExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -440,6 +553,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInProxyConfigurationUnderPasswordExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -450,6 +566,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInProxyConfigurationUnderPortExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -460,6 +579,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInProxyConfigurationUnderUseConfigurationExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -470,6 +592,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInProxyConfigurationUnderUsernameExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -480,6 +605,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInRestCallActionUnderTimeOutModel")
+  @js.native
   def createInRestCallActionUnderTimeOutModel(container: RestCallAction): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -490,6 +618,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInRuleCallParameterMappingUnderArgumentModel")
+  @js.native
   def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -500,6 +631,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInTemplateArgumentUnderExpressionModel")
+  @js.native
   def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -510,6 +644,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInUnaryExpressionUnderExpression")
+  @js.native
   def createInUnaryExpressionUnderExpression(container: typings.mendixmodelsdk.expressionsMod.expressions.UnaryExpression): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -520,6 +657,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInWebServiceCallActionUnderTimeOutModel")
+  @js.native
   def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -530,6 +670,9 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInWebServiceOperationParameterMappingUnderArgumentModel")
+  @js.native
   def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
   /**
@@ -540,9 +683,22 @@ object FunctionCallExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.createInWidgetValidationUnderExpressionModel")
+  @js.native
   def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): typings.mendixmodelsdk.expressionsMod.expressions.FunctionCallExpression = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.FunctionCallExpression.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

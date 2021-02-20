@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.UI
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,75 +76,63 @@ object SliderEventMap {
   }
   
   @scala.inline
-  implicit class SliderEventMapOps[Self <: SliderEventMap] (val x: Self) extends AnyVal {
+  implicit class SliderEventMapMutableBuilder[Self <: SliderEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChange(value: SliderChangeEvent): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClick(value: SliderClickEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDblclick(value: SliderDblclickEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: SliderChangeEvent): Self = this.set("change", value.asInstanceOf[js.Any])
+    def setDoubletap(value: SliderDoubletapEvent): Self = StObject.set(x, "doubletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: SliderClickEvent): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setFocus(value: SliderFocusEvent): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDblclick(value: SliderDblclickEvent): Self = this.set("dblclick", value.asInstanceOf[js.Any])
+    def setKeypressed(value: SliderKeypressedEvent): Self = StObject.set(x, "keypressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubletap(value: SliderDoubletapEvent): Self = this.set("doubletap", value.asInstanceOf[js.Any])
+    def setLongclick(value: SliderLongclickEvent): Self = StObject.set(x, "longclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus(value: SliderFocusEvent): Self = this.set("focus", value.asInstanceOf[js.Any])
+    def setLongpress(value: SliderLongpressEvent): Self = StObject.set(x, "longpress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeypressed(value: SliderKeypressedEvent): Self = this.set("keypressed", value.asInstanceOf[js.Any])
+    def setPinch(value: SliderPinchEvent): Self = StObject.set(x, "pinch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongclick(value: SliderLongclickEvent): Self = this.set("longclick", value.asInstanceOf[js.Any])
+    def setPostlayout(value: SliderPostlayoutEvent): Self = StObject.set(x, "postlayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongpress(value: SliderLongpressEvent): Self = this.set("longpress", value.asInstanceOf[js.Any])
+    def setSingletap(value: SliderSingletapEvent): Self = StObject.set(x, "singletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinch(value: SliderPinchEvent): Self = this.set("pinch", value.asInstanceOf[js.Any])
+    def setStart(value: SliderStartEvent): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostlayout(value: SliderPostlayoutEvent): Self = this.set("postlayout", value.asInstanceOf[js.Any])
+    def setStop(value: SliderStopEvent): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingletap(value: SliderSingletapEvent): Self = this.set("singletap", value.asInstanceOf[js.Any])
+    def setSwipe(value: SliderSwipeEvent): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: SliderStartEvent): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setTouchcancel(value: SliderTouchcancelEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStop(value: SliderStopEvent): Self = this.set("stop", value.asInstanceOf[js.Any])
+    def setTouchend(value: SliderTouchendEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipe(value: SliderSwipeEvent): Self = this.set("swipe", value.asInstanceOf[js.Any])
+    def setTouchmove(value: SliderTouchmoveEvent): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchcancel(value: SliderTouchcancelEvent): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
+    def setTouchstart(value: SliderTouchstartEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchend(value: SliderTouchendEvent): Self = this.set("touchend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchmove(value: SliderTouchmoveEvent): Self = this.set("touchmove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchstart(value: SliderTouchstartEvent): Self = this.set("touchstart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwofingertap(value: SliderTwofingertapEvent): Self = this.set("twofingertap", value.asInstanceOf[js.Any])
+    def setTwofingertap(value: SliderTwofingertapEvent): Self = StObject.set(x, "twofingertap", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.documentdbServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options associated with a delete operation. */
 @js.native
-trait IDeleteOptions extends js.Object {
+trait IDeleteOptions extends StObject {
   
   /**
     * The entity tag associated with the resource.
@@ -23,24 +24,12 @@ object IDeleteOptions {
   }
   
   @scala.inline
-  implicit class IDeleteOptionsOps[Self <: IDeleteOptions] (val x: Self) extends AnyVal {
+  implicit class IDeleteOptionsMutableBuilder[Self <: IDeleteOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
   }
 }

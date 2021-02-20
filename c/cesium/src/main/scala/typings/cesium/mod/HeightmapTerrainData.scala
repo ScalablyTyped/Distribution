@@ -4,13 +4,14 @@ import typings.cesium.anon.Buffer
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "HeightmapTerrainData")
 @js.native
-class HeightmapTerrainData protected () extends js.Object {
+class HeightmapTerrainData protected () extends StObject {
   def this(options: Buffer) = this()
   
   def createMesh(tilingScheme: TilingScheme, x: Double, y: Double, level: Double): js.Promise[TerrainMesh] = js.native

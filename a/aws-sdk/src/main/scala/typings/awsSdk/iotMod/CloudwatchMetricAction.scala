@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloudwatchMetricAction extends js.Object {
+trait CloudwatchMetricAction extends StObject {
   
   /**
     * The CloudWatch metric name.
@@ -52,39 +53,27 @@ object CloudwatchMetricAction {
   }
   
   @scala.inline
-  implicit class CloudwatchMetricActionOps[Self <: CloudwatchMetricAction] (val x: Self) extends AnyVal {
+  implicit class CloudwatchMetricActionMutableBuilder[Self <: CloudwatchMetricAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetricNamespace(value: String): Self = StObject.set(x, "metricNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricTimestamp(value: String): Self = StObject.set(x, "metricTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricName(value: String): Self = this.set("metricName", value.asInstanceOf[js.Any])
+    def setMetricTimestampUndefined: Self = StObject.set(x, "metricTimestamp", js.undefined)
     
     @scala.inline
-    def setMetricNamespace(value: String): Self = this.set("metricNamespace", value.asInstanceOf[js.Any])
+    def setMetricUnit(value: String): Self = StObject.set(x, "metricUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricUnit(value: String): Self = this.set("metricUnit", value.asInstanceOf[js.Any])
+    def setMetricValue(value: String): Self = StObject.set(x, "metricValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricValue(value: String): Self = this.set("metricValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetricTimestamp(value: String): Self = this.set("metricTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricTimestamp: Self = this.set("metricTimestamp", js.undefined)
+    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

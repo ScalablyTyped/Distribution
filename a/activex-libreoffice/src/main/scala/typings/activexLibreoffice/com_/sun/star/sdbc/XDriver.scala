@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -111,39 +112,27 @@ object XDriver {
   }
   
   @scala.inline
-  implicit class XDriverOps[Self <: XDriver] (val x: Self) extends AnyVal {
+  implicit class XDriverMutableBuilder[Self <: XDriver] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptsURL(value: String => Boolean): Self = StObject.set(x, "acceptsURL", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnect(value: (String, SeqEquiv[PropertyValue]) => XConnection): Self = StObject.set(x, "connect", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMajorVersion(value: () => Double): Self = StObject.set(x, "getMajorVersion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMajorVersion(value: Double): Self = this.set("MajorVersion", value.asInstanceOf[js.Any])
+    def setGetMinorVersion(value: () => Double): Self = StObject.set(x, "getMinorVersion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMinorVersion(value: Double): Self = this.set("MinorVersion", value.asInstanceOf[js.Any])
+    def setGetPropertyInfo(value: (String, SeqEquiv[PropertyValue]) => SafeArray[DriverPropertyInfo]): Self = StObject.set(x, "getPropertyInfo", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAcceptsURL(value: String => Boolean): Self = this.set("acceptsURL", js.Any.fromFunction1(value))
+    def setMajorVersion(value: Double): Self = StObject.set(x, "MajorVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnect(value: (String, SeqEquiv[PropertyValue]) => XConnection): Self = this.set("connect", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetMajorVersion(value: () => Double): Self = this.set("getMajorVersion", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetMinorVersion(value: () => Double): Self = this.set("getMinorVersion", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPropertyInfo(value: (String, SeqEquiv[PropertyValue]) => SafeArray[DriverPropertyInfo]): Self = this.set("getPropertyInfo", js.Any.fromFunction2(value))
+    def setMinorVersion(value: Double): Self = StObject.set(x, "MinorVersion", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.apolloProtobufjs.descriptorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEnumOptions extends js.Object {
+trait IEnumOptions extends StObject {
   
   var allowAlias: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object IEnumOptions {
   }
   
   @scala.inline
-  implicit class IEnumOptionsOps[Self <: IEnumOptions] (val x: Self) extends AnyVal {
+  implicit class IEnumOptionsMutableBuilder[Self <: IEnumOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowAlias(value: Boolean): Self = StObject.set(x, "allowAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowAliasUndefined: Self = StObject.set(x, "allowAlias", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowAlias(value: Boolean): Self = this.set("allowAlias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowAlias: Self = this.set("allowAlias", js.undefined)
-    
-    @scala.inline
-    def setDeprecated(value: Boolean): Self = this.set("deprecated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeprecated: Self = this.set("deprecated", js.undefined)
+    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
   }
 }

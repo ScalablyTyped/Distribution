@@ -1,13 +1,14 @@
 package typings.codegenMacro
 
 import typings.std.TemplateStringsArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("codegen.macro", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("codegen.macro", JSImport.Namespace)
+  @js.native
   def apply(strings: TemplateStringsArray, values: js.Any*): js.Any = js.native
 }

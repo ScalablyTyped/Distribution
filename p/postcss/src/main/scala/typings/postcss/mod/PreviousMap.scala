@@ -3,13 +3,14 @@ package typings.postcss.mod
 import typings.sourceMap.mod.RawSourceMap
 import typings.sourceMap.mod.SourceMapConsumer
 import typings.sourceMap.mod.SourceMapGenerator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postcss", "PreviousMap")
 @js.native
-class PreviousMap protected () extends js.Object {
+class PreviousMap protected () extends StObject {
   def this(css: js.Any, opts: js.Any) = this()
   
   var annotation: String = js.native

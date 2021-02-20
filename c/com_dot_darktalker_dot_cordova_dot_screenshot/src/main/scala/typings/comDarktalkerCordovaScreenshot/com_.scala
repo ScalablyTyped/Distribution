@@ -1,25 +1,21 @@
 package typings.comDarktalkerCordovaScreenshot
 
 import typings.comDarktalkerCordovaScreenshot.anon.FilePath
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("com")
-@js.native
-object com_ extends js.Object {
+object com_ {
   
-  @js.native
-  object darktalker extends js.Object {
+  object darktalker {
     
-    @js.native
-    object cordova extends js.Object {
+    object cordova {
       
-      @js.native
-      object screenshot extends js.Object {
+      object screenshot {
         
         @js.native
-        trait Plugin extends js.Object {
+        trait Plugin extends StObject {
           
           /**
             * Takes a screenshot and provides it trough data URI as JPG. No data are saved in the device.

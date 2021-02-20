@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortalRatingProperties extends js.Object {
+trait PortalRatingProperties extends StObject {
   
   /**
     * Date the rating was added to the item.
@@ -30,30 +31,18 @@ object PortalRatingProperties {
   }
   
   @scala.inline
-  implicit class PortalRatingPropertiesOps[Self <: PortalRatingProperties] (val x: Self) extends AnyVal {
+  implicit class PortalRatingPropertiesMutableBuilder[Self <: PortalRatingProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated(value: DateProperties): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: DateProperties): Self = this.set("created", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
-    
-    @scala.inline
-    def setRating(value: Double): Self = this.set("rating", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRating: Self = this.set("rating", js.undefined)
+    def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
   }
 }

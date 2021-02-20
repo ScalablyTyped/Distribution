@@ -1,11 +1,12 @@
 package typings.awsSdk.wafregionalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateXssMatchSetResponse extends js.Object {
+trait UpdateXssMatchSetResponse extends StObject {
   
   /**
     * The ChangeToken that you used to submit the UpdateXssMatchSet request. You can also use this value to query the status of the request. For more information, see GetChangeTokenStatus.
@@ -21,24 +22,12 @@ object UpdateXssMatchSetResponse {
   }
   
   @scala.inline
-  implicit class UpdateXssMatchSetResponseOps[Self <: UpdateXssMatchSetResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateXssMatchSetResponseMutableBuilder[Self <: UpdateXssMatchSetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = this.set("ChangeToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChangeToken: Self = this.set("ChangeToken", js.undefined)
+    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
   }
 }

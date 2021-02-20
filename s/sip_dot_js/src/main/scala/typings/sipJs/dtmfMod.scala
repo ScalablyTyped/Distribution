@@ -2,14 +2,14 @@ package typings.sipJs
 
 import typings.sipJs.infoMod.Info
 import typings.sipJs.methodsInfoMod.IncomingInfoRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/api/dtmf", JSImport.Namespace)
-@js.native
-object dtmfMod extends js.Object {
+object dtmfMod {
   
+  @JSImport("sip.js/lib/api/dtmf", "DTMF")
   @js.native
   class DTMF protected () extends Info {
     /** @internal */

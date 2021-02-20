@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IWebXRControllerOptions extends js.Object {
+trait IWebXRControllerOptions extends StObject {
   
   /**
     * Should the controller mesh be animated when a user interacts with it
@@ -39,42 +40,30 @@ object IWebXRControllerOptions {
   }
   
   @scala.inline
-  implicit class IWebXRControllerOptionsOps[Self <: IWebXRControllerOptions] (val x: Self) extends AnyVal {
+  implicit class IWebXRControllerOptionsMutableBuilder[Self <: IWebXRControllerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableMotionControllerAnimation(value: Boolean): Self = StObject.set(x, "disableMotionControllerAnimation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableMotionControllerAnimationUndefined: Self = StObject.set(x, "disableMotionControllerAnimation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDoNotLoadControllerMesh(value: Boolean): Self = StObject.set(x, "doNotLoadControllerMesh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableMotionControllerAnimation(value: Boolean): Self = this.set("disableMotionControllerAnimation", value.asInstanceOf[js.Any])
+    def setDoNotLoadControllerMeshUndefined: Self = StObject.set(x, "doNotLoadControllerMesh", js.undefined)
     
     @scala.inline
-    def deleteDisableMotionControllerAnimation: Self = this.set("disableMotionControllerAnimation", js.undefined)
+    def setForceControllerProfile(value: String): Self = StObject.set(x, "forceControllerProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoNotLoadControllerMesh(value: Boolean): Self = this.set("doNotLoadControllerMesh", value.asInstanceOf[js.Any])
+    def setForceControllerProfileUndefined: Self = StObject.set(x, "forceControllerProfile", js.undefined)
     
     @scala.inline
-    def deleteDoNotLoadControllerMesh: Self = this.set("doNotLoadControllerMesh", js.undefined)
+    def setRenderingGroupId(value: Double): Self = StObject.set(x, "renderingGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceControllerProfile(value: String): Self = this.set("forceControllerProfile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceControllerProfile: Self = this.set("forceControllerProfile", js.undefined)
-    
-    @scala.inline
-    def setRenderingGroupId(value: Double): Self = this.set("renderingGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenderingGroupId: Self = this.set("renderingGroupId", js.undefined)
+    def setRenderingGroupIdUndefined: Self = StObject.set(x, "renderingGroupId", js.undefined)
   }
 }

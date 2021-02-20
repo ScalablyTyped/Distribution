@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,45 +77,33 @@ object XDevice {
   }
   
   @scala.inline
-  implicit class XDeviceOps[Self <: XDevice] (val x: Self) extends AnyVal {
+  implicit class XDeviceMutableBuilder[Self <: XDevice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateBitmap(value: (Double, Double, Double, Double) => XBitmap): Self = StObject.set(x, "createBitmap", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateDevice(value: (Double, Double) => XDevice): Self = StObject.set(x, "createDevice", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateDisplayBitmap(value: XBitmap => XDisplayBitmap): Self = StObject.set(x, "createDisplayBitmap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontDescriptors(value: SafeArray[FontDescriptor]): Self = this.set("FontDescriptors", value.asInstanceOf[js.Any])
+    def setCreateGraphics(value: () => XGraphics): Self = StObject.set(x, "createGraphics", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInfo(value: DeviceInfo): Self = this.set("Info", value.asInstanceOf[js.Any])
+    def setFontDescriptors(value: SafeArray[FontDescriptor]): Self = StObject.set(x, "FontDescriptors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateBitmap(value: (Double, Double, Double, Double) => XBitmap): Self = this.set("createBitmap", js.Any.fromFunction4(value))
+    def setGetFont(value: FontDescriptor => XFont): Self = StObject.set(x, "getFont", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateDevice(value: (Double, Double) => XDevice): Self = this.set("createDevice", js.Any.fromFunction2(value))
+    def setGetFontDescriptors(value: () => SafeArray[FontDescriptor]): Self = StObject.set(x, "getFontDescriptors", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateDisplayBitmap(value: XBitmap => XDisplayBitmap): Self = this.set("createDisplayBitmap", js.Any.fromFunction1(value))
+    def setGetInfo(value: () => DeviceInfo): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateGraphics(value: () => XGraphics): Self = this.set("createGraphics", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetFont(value: FontDescriptor => XFont): Self = this.set("getFont", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetFontDescriptors(value: () => SafeArray[FontDescriptor]): Self = this.set("getFontDescriptors", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetInfo(value: () => DeviceInfo): Self = this.set("getInfo", js.Any.fromFunction0(value))
+    def setInfo(value: DeviceInfo): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
   }
 }

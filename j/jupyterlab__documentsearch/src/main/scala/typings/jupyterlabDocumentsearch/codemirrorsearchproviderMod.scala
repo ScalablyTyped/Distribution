@@ -12,21 +12,143 @@ import typings.luminoAlgorithm.iterMod.IIterator
 import typings.luminoMessaging.mod.Message
 import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.layoutMod.Layout
+import typings.luminoWidgets.mod.Widget
 import typings.luminoWidgets.titleMod.Title
-import typings.luminoWidgets.widgetMod.Widget
 import typings.luminoWidgets.widgetMod.Widget.ChildMessage
 import typings.luminoWidgets.widgetMod.Widget.Flag
 import typings.luminoWidgets.widgetMod.Widget.ResizeMessage
 import typings.std.DOMStringMap
 import typings.std.HTMLElement
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/documentsearch/lib/providers/codemirrorsearchprovider", JSImport.Namespace)
-@js.native
-object codemirrorsearchproviderMod extends js.Object {
+object codemirrorsearchproviderMod {
+  
+  @JSImport("@jupyterlab/documentsearch/lib/providers/codemirrorsearchprovider", "CodeMirrorSearchProvider")
+  @js.native
+  class CodeMirrorSearchProvider () extends ISearchProvider[CMMainAreaWidget] {
+    
+    var _changed: js.Any = js.native
+    
+    var _cm: js.Any = js.native
+    
+    var _currentMatch: js.Any = js.native
+    
+    var _currentMatchIsSelected: js.Any = js.native
+    
+    var _findNext: js.Any = js.native
+    
+    var _getSearchOverlay: js.Any = js.native
+    
+    var _matchState: js.Any = js.native
+    
+    var _onDocChanged: js.Any = js.native
+    
+    var _overlay: js.Any = js.native
+    
+    var _parseMatchesFromState: js.Any = js.native
+    
+    var _query: js.Any = js.native
+    
+    var _refreshOverlay: js.Any = js.native
+    
+    /**
+      * Do a full search on the entire document.
+      *
+      * This manually constructs the initial match state across the whole
+      * document. This must be done manually because the codemirror overlay
+      * is lazy-loaded, so it will only tokenize lines that are in or near
+      * the viewport.  This is sufficient for efficiently maintaining the
+      * state when changes are made to the document, as changes occur in or
+      * near the viewport, but to scan the whole document, a manual search
+      * across the entire content is required.
+      *
+      * @param query The search term
+      */
+    var _setInitialMatches: js.Any = js.native
+    
+    var _startQuery: js.Any = js.native
+    
+    var _toEditorPos: js.Any = js.native
+    
+    /**
+      * Signal indicating that something in the search has changed, so the UI should update
+      */
+    @JSName("changed")
+    def changed_MCodeMirrorSearchProvider: ISignal[this.type, Unit] = js.native
+    
+    def clearSelection(): Unit = js.native
+    
+    def currentMatch: ISearchMatch | Null = js.native
+    
+    /**
+      * The current index of the selected match.
+      */
+    @JSName("currentMatchIndex")
+    def currentMatchIndex_MCodeMirrorSearchProvider: Double | Null = js.native
+    
+    def editor: CodeMirrorEditor = js.native
+    
+    def endQuery(removeOverlay: Boolean): js.Promise[Unit] = js.native
+    
+    /**
+      * Set whether or not the CodemirrorSearchProvider will wrap to the beginning
+      * or end of the document on invocations of highlightNext or highlightPrevious, respectively
+      */
+    var isSubProvider: Boolean = js.native
+    
+    /**
+      * The same list of matches provided by the startQuery promise resolution
+      */
+    @JSName("matches")
+    def matches_MCodeMirrorSearchProvider: js.Array[ISearchMatch] = js.native
+    
+    def refreshOverlay(): Unit = js.native
+    
+    /**
+      * Initialize the search using the provided options.  Should update the UI
+      * to highlight all matches and "select" whatever the first match should be.
+      *
+      * @param query A RegExp to be use to perform the search
+      * @param searchTarget The widget to be searched
+      * @param [filters={}] Filter parameters to pass to provider
+      *
+      * @returns A promise that resolves with a list of all matches
+      */
+    def startQuery(query: RegExp, searchTarget: Widget): js.Promise[js.Array[ISearchMatch]] = js.native
+    def startQuery(query: RegExp, searchTarget: Widget, filters: js.Object): js.Promise[js.Array[ISearchMatch]] = js.native
+    
+    /**
+      * Initialize the search using a CodeMirrorEditor object.
+      */
+    def startQueryCodeMirror(query: RegExp, searchTarget: CodeMirrorEditor): js.Promise[js.Array[ISearchMatch]] = js.native
+  }
+  /* static members */
+  object CodeMirrorSearchProvider {
+    
+    /**
+      * Report whether or not this provider has the ability to search on the given object
+      */
+    @JSImport("@jupyterlab/documentsearch/lib/providers/codemirrorsearchprovider", "CodeMirrorSearchProvider.canSearchOn")
+    @js.native
+    def canSearchOn(domain: Widget): /* is @jupyterlab/documentsearch.@jupyterlab/documentsearch/lib/providers/codemirrorsearchprovider.CMMainAreaWidget */ Boolean = js.native
+  }
+  
+  @JSImport("@jupyterlab/documentsearch/lib/providers/codemirrorsearchprovider", "SearchState")
+  @js.native
+  class SearchState () extends StObject {
+    
+    var lastQuery: String = js.native
+    
+    var posFrom: Position = js.native
+    
+    var posTo: Position = js.native
+    
+    var query: RegExp = js.native
+  }
   
   /* Inlined @jupyterlab/apputils.@jupyterlab/apputils.MainAreaWidget<@jupyterlab/fileeditor.@jupyterlab/fileeditor.FileEditor> & {  content :{  editor :@jupyterlab/codemirror.@jupyterlab/codemirror.CodeMirrorEditor}} */
   @js.native
@@ -35,7 +157,7 @@ object codemirrorsearchproviderMod extends js.Object {
     *
     * @param options - The options for initializing the widget.
     */
-  trait CMMainAreaWidget extends js.Object {
+  trait CMMainAreaWidget extends StObject {
     
     var _changeGuard: js.Any = js.native
     
@@ -102,7 +224,7 @@ object codemirrorsearchproviderMod extends js.Object {
       *
       * If a layout is not installed, the returned iterator will be empty.
       */
-    def children(): IIterator[Widget] = js.native
+    def children(): IIterator[typings.luminoWidgets.widgetMod.Widget] = js.native
     
     /**
       * Clear the given widget flag.
@@ -127,7 +249,7 @@ object codemirrorsearchproviderMod extends js.Object {
       *
       * @returns `true` if the widget is a descendant, `false` otherwise.
       */
-    def contains(widget: Widget): Boolean = js.native
+    def contains(widget: typings.luminoWidgets.widgetMod.Widget): Boolean = js.native
     
     /**
       * The content hosted by the widget.
@@ -376,7 +498,7 @@ object codemirrorsearchproviderMod extends js.Object {
       *
       * This is a no-op if there is no effective parent change.
       */
-    var parent: Widget | Null = js.native
+    var parent: typings.luminoWidgets.widgetMod.Widget | Null = js.native
     
     /**
       * Process a message sent to the widget.
@@ -452,7 +574,7 @@ object codemirrorsearchproviderMod extends js.Object {
       *
       * The `owner` property of the title is set to this widget.
       */
-    val title: Title[Widget] = js.native
+    val title: Title[typings.luminoWidgets.widgetMod.Widget] = js.native
     
     /**
       * Toggle a class name on the widget's DOM node.
@@ -474,7 +596,7 @@ object codemirrorsearchproviderMod extends js.Object {
     /**
       * The toolbar hosted by the widget.
       */
-    def toolbar: Toolbar[typings.luminoWidgets.mod.Widget] = js.native
+    def toolbar: Toolbar[Widget] = js.native
     
     /**
       * Post an `'update-request'` message to the widget.
@@ -483,125 +605,5 @@ object codemirrorsearchproviderMod extends js.Object {
       * This is a simple convenience method for posting the message.
       */
     def update(): Unit = js.native
-  }
-  
-  @js.native
-  class CodeMirrorSearchProvider () extends ISearchProvider[CMMainAreaWidget] {
-    
-    var _changed: js.Any = js.native
-    
-    var _cm: js.Any = js.native
-    
-    var _currentMatch: js.Any = js.native
-    
-    var _currentMatchIsSelected: js.Any = js.native
-    
-    var _findNext: js.Any = js.native
-    
-    var _getSearchOverlay: js.Any = js.native
-    
-    var _matchState: js.Any = js.native
-    
-    var _onDocChanged: js.Any = js.native
-    
-    var _overlay: js.Any = js.native
-    
-    var _parseMatchesFromState: js.Any = js.native
-    
-    var _query: js.Any = js.native
-    
-    var _refreshOverlay: js.Any = js.native
-    
-    /**
-      * Do a full search on the entire document.
-      *
-      * This manually constructs the initial match state across the whole
-      * document. This must be done manually because the codemirror overlay
-      * is lazy-loaded, so it will only tokenize lines that are in or near
-      * the viewport.  This is sufficient for efficiently maintaining the
-      * state when changes are made to the document, as changes occur in or
-      * near the viewport, but to scan the whole document, a manual search
-      * across the entire content is required.
-      *
-      * @param query The search term
-      */
-    var _setInitialMatches: js.Any = js.native
-    
-    var _startQuery: js.Any = js.native
-    
-    var _toEditorPos: js.Any = js.native
-    
-    /**
-      * Signal indicating that something in the search has changed, so the UI should update
-      */
-    @JSName("changed")
-    def changed_MCodeMirrorSearchProvider: ISignal[this.type, Unit] = js.native
-    
-    def clearSelection(): Unit = js.native
-    
-    def currentMatch: ISearchMatch | Null = js.native
-    
-    /**
-      * The current index of the selected match.
-      */
-    @JSName("currentMatchIndex")
-    def currentMatchIndex_MCodeMirrorSearchProvider: Double | Null = js.native
-    
-    def editor: CodeMirrorEditor = js.native
-    
-    def endQuery(removeOverlay: Boolean): js.Promise[Unit] = js.native
-    
-    /**
-      * Set whether or not the CodemirrorSearchProvider will wrap to the beginning
-      * or end of the document on invocations of highlightNext or highlightPrevious, respectively
-      */
-    var isSubProvider: Boolean = js.native
-    
-    /**
-      * The same list of matches provided by the startQuery promise resolution
-      */
-    @JSName("matches")
-    def matches_MCodeMirrorSearchProvider: js.Array[ISearchMatch] = js.native
-    
-    def refreshOverlay(): Unit = js.native
-    
-    /**
-      * Initialize the search using the provided options.  Should update the UI
-      * to highlight all matches and "select" whatever the first match should be.
-      *
-      * @param query A RegExp to be use to perform the search
-      * @param searchTarget The widget to be searched
-      * @param [filters={}] Filter parameters to pass to provider
-      *
-      * @returns A promise that resolves with a list of all matches
-      */
-    def startQuery(query: RegExp, searchTarget: typings.luminoWidgets.mod.Widget): js.Promise[js.Array[ISearchMatch]] = js.native
-    def startQuery(query: RegExp, searchTarget: typings.luminoWidgets.mod.Widget, filters: js.Object): js.Promise[js.Array[ISearchMatch]] = js.native
-    
-    /**
-      * Initialize the search using a CodeMirrorEditor object.
-      */
-    def startQueryCodeMirror(query: RegExp, searchTarget: CodeMirrorEditor): js.Promise[js.Array[ISearchMatch]] = js.native
-  }
-  /* static members */
-  @js.native
-  object CodeMirrorSearchProvider extends js.Object {
-    
-    /**
-      * Report whether or not this provider has the ability to search on the given object
-      */
-    def canSearchOn(domain: typings.luminoWidgets.mod.Widget): /* is @jupyterlab/documentsearch.@jupyterlab/documentsearch/lib/providers/codemirrorsearchprovider.CMMainAreaWidget */ Boolean = js.native
-  }
-  
-  @js.native
-  class SearchState () extends js.Object {
-    
-    var lastQuery: String = js.native
-    
-    var posFrom: Position = js.native
-    
-    var posTo: Position = js.native
-    
-    var query: RegExp = js.native
   }
 }

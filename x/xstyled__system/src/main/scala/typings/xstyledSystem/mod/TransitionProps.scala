@@ -1,11 +1,12 @@
 package typings.xstyledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransitionProps[TLength] extends js.Object {
+trait TransitionProps[TLength] extends StObject {
   
   val transition: js.UndefOr[
     ResponsiveValue[
@@ -22,31 +23,19 @@ object TransitionProps {
   }
   
   @scala.inline
-  implicit class TransitionPropsOps[Self <: TransitionProps[_], TLength] (val x: Self with TransitionProps[TLength]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTransitionVarargs(value: js.Any*): Self = this.set("transition", js.Array(value :_*))
+  implicit class TransitionPropsMutableBuilder[Self <: TransitionProps[_], TLength] (val x: Self with TransitionProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setTransition(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Transition<TLength> */ _
         ]
-    ): Self = this.set("transition", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransition: Self = this.set("transition", js.undefined)
+    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    
+    @scala.inline
+    def setTransitionVarargs(value: js.Any*): Self = StObject.set(x, "transition", js.Array(value :_*))
   }
 }

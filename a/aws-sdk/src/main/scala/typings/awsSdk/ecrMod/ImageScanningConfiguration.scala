@@ -1,11 +1,12 @@
 package typings.awsSdk.ecrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageScanningConfiguration extends js.Object {
+trait ImageScanningConfiguration extends StObject {
   
   /**
     * The setting that determines whether images are scanned after being pushed to a repository. If set to true, images will be scanned after being pushed. If this parameter is not specified, it will default to false and images will not be scanned unless a scan is manually started with the StartImageScan API.
@@ -21,24 +22,12 @@ object ImageScanningConfiguration {
   }
   
   @scala.inline
-  implicit class ImageScanningConfigurationOps[Self <: ImageScanningConfiguration] (val x: Self) extends AnyVal {
+  implicit class ImageScanningConfigurationMutableBuilder[Self <: ImageScanningConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScanOnPush(value: ScanOnPushFlag): Self = StObject.set(x, "scanOnPush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScanOnPush(value: ScanOnPushFlag): Self = this.set("scanOnPush", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScanOnPush: Self = this.set("scanOnPush", js.undefined)
+    def setScanOnPushUndefined: Self = StObject.set(x, "scanOnPush", js.undefined)
   }
 }

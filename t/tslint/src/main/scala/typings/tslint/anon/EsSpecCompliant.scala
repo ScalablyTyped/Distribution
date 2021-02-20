@@ -1,11 +1,12 @@
 package typings.tslint.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EsSpecCompliant extends js.Object {
+trait EsSpecCompliant extends StObject {
   
   var esSpecCompliant: Boolean = js.native
   
@@ -22,27 +23,15 @@ object EsSpecCompliant {
   }
   
   @scala.inline
-  implicit class EsSpecCompliantOps[Self <: EsSpecCompliant] (val x: Self) extends AnyVal {
+  implicit class EsSpecCompliantMutableBuilder[Self <: EsSpecCompliant] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEsSpecCompliant(value: Boolean): Self = StObject.set(x, "esSpecCompliant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMultiline(value: String): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEsSpecCompliant(value: Boolean): Self = this.set("esSpecCompliant", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMultiline(value: String): Self = this.set("multiline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSingleline(value: String): Self = this.set("singleline", value.asInstanceOf[js.Any])
+    def setSingleline(value: String): Self = StObject.set(x, "singleline", value.asInstanceOf[js.Any])
   }
 }

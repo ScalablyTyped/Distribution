@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.networkfirewall
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirewallPolicyFirewallPolicy extends js.Object {
+trait FirewallPolicyFirewallPolicy extends StObject {
   
   /**
     * Set of configuration blocks containing references to the stateful rule groups that are used in the policy. See Stateful Rule Group Reference below for details.
@@ -43,57 +44,45 @@ object FirewallPolicyFirewallPolicy {
   }
   
   @scala.inline
-  implicit class FirewallPolicyFirewallPolicyOps[Self <: FirewallPolicyFirewallPolicy] (val x: Self) extends AnyVal {
+  implicit class FirewallPolicyFirewallPolicyMutableBuilder[Self <: FirewallPolicyFirewallPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStatefulRuleGroupReferences(value: js.Array[FirewallPolicyFirewallPolicyStatefulRuleGroupReference]): Self = StObject.set(x, "statefulRuleGroupReferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStatefulRuleGroupReferencesUndefined: Self = StObject.set(x, "statefulRuleGroupReferences", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatefulRuleGroupReferencesVarargs(value: FirewallPolicyFirewallPolicyStatefulRuleGroupReference*): Self = StObject.set(x, "statefulRuleGroupReferences", js.Array(value :_*))
     
     @scala.inline
-    def setStatelessDefaultActionsVarargs(value: String*): Self = this.set("statelessDefaultActions", js.Array(value :_*))
+    def setStatelessCustomActions(value: js.Array[FirewallPolicyFirewallPolicyStatelessCustomAction]): Self = StObject.set(x, "statelessCustomActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatelessDefaultActions(value: js.Array[String]): Self = this.set("statelessDefaultActions", value.asInstanceOf[js.Any])
+    def setStatelessCustomActionsUndefined: Self = StObject.set(x, "statelessCustomActions", js.undefined)
     
     @scala.inline
-    def setStatelessFragmentDefaultActionsVarargs(value: String*): Self = this.set("statelessFragmentDefaultActions", js.Array(value :_*))
+    def setStatelessCustomActionsVarargs(value: FirewallPolicyFirewallPolicyStatelessCustomAction*): Self = StObject.set(x, "statelessCustomActions", js.Array(value :_*))
     
     @scala.inline
-    def setStatelessFragmentDefaultActions(value: js.Array[String]): Self = this.set("statelessFragmentDefaultActions", value.asInstanceOf[js.Any])
+    def setStatelessDefaultActions(value: js.Array[String]): Self = StObject.set(x, "statelessDefaultActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatefulRuleGroupReferencesVarargs(value: FirewallPolicyFirewallPolicyStatefulRuleGroupReference*): Self = this.set("statefulRuleGroupReferences", js.Array(value :_*))
+    def setStatelessDefaultActionsVarargs(value: String*): Self = StObject.set(x, "statelessDefaultActions", js.Array(value :_*))
     
     @scala.inline
-    def setStatefulRuleGroupReferences(value: js.Array[FirewallPolicyFirewallPolicyStatefulRuleGroupReference]): Self = this.set("statefulRuleGroupReferences", value.asInstanceOf[js.Any])
+    def setStatelessFragmentDefaultActions(value: js.Array[String]): Self = StObject.set(x, "statelessFragmentDefaultActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatefulRuleGroupReferences: Self = this.set("statefulRuleGroupReferences", js.undefined)
+    def setStatelessFragmentDefaultActionsVarargs(value: String*): Self = StObject.set(x, "statelessFragmentDefaultActions", js.Array(value :_*))
     
     @scala.inline
-    def setStatelessCustomActionsVarargs(value: FirewallPolicyFirewallPolicyStatelessCustomAction*): Self = this.set("statelessCustomActions", js.Array(value :_*))
+    def setStatelessRuleGroupReferences(value: js.Array[FirewallPolicyFirewallPolicyStatelessRuleGroupReference]): Self = StObject.set(x, "statelessRuleGroupReferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatelessCustomActions(value: js.Array[FirewallPolicyFirewallPolicyStatelessCustomAction]): Self = this.set("statelessCustomActions", value.asInstanceOf[js.Any])
+    def setStatelessRuleGroupReferencesUndefined: Self = StObject.set(x, "statelessRuleGroupReferences", js.undefined)
     
     @scala.inline
-    def deleteStatelessCustomActions: Self = this.set("statelessCustomActions", js.undefined)
-    
-    @scala.inline
-    def setStatelessRuleGroupReferencesVarargs(value: FirewallPolicyFirewallPolicyStatelessRuleGroupReference*): Self = this.set("statelessRuleGroupReferences", js.Array(value :_*))
-    
-    @scala.inline
-    def setStatelessRuleGroupReferences(value: js.Array[FirewallPolicyFirewallPolicyStatelessRuleGroupReference]): Self = this.set("statelessRuleGroupReferences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatelessRuleGroupReferences: Self = this.set("statelessRuleGroupReferences", js.undefined)
+    def setStatelessRuleGroupReferencesVarargs(value: FirewallPolicyFirewallPolicyStatelessRuleGroupReference*): Self = StObject.set(x, "statelessRuleGroupReferences", js.Array(value :_*))
   }
 }

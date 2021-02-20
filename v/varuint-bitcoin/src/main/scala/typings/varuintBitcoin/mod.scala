@@ -1,22 +1,27 @@
 package typings.varuintBitcoin
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("varuint-bitcoin", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("varuint-bitcoin", "decode")
+  @js.native
   val decode: Decode_ = js.native
   
+  @JSImport("varuint-bitcoin", "encode")
+  @js.native
   val encode: Encode_ = js.native
   
+  @JSImport("varuint-bitcoin", "encodingLength")
+  @js.native
   def encodingLength(num: Double): Double = js.native
   
   @js.native
-  trait Decode_ extends js.Object {
+  trait Decode_ extends StObject {
     
     def apply(buffer: Buffer): Double = js.native
     def apply(buffer: Buffer, offset: Double): Double = js.native
@@ -25,7 +30,7 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait Encode_ extends js.Object {
+  trait Encode_ extends StObject {
     
     def apply(num: Double): Buffer = js.native
     def apply(num: Double, buffer: js.UndefOr[scala.Nothing], offset: Double): Buffer = js.native

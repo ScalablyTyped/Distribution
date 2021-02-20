@@ -1,5 +1,6 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Details about a channelsection, including playlists and channels.
   */
 @js.native
-trait SchemaChannelSectionContentDetails extends js.Object {
+trait SchemaChannelSectionContentDetails extends StObject {
   
   /**
     * The channel ids for type multiple_channels.
@@ -30,36 +31,24 @@ object SchemaChannelSectionContentDetails {
   }
   
   @scala.inline
-  implicit class SchemaChannelSectionContentDetailsOps[Self <: SchemaChannelSectionContentDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaChannelSectionContentDetailsMutableBuilder[Self <: SchemaChannelSectionContentDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
     @scala.inline
-    def setChannelsVarargs(value: String*): Self = this.set("channels", js.Array(value :_*))
+    def setPlaylists(value: js.Array[String]): Self = StObject.set(x, "playlists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannels(value: js.Array[String]): Self = this.set("channels", value.asInstanceOf[js.Any])
+    def setPlaylistsUndefined: Self = StObject.set(x, "playlists", js.undefined)
     
     @scala.inline
-    def deleteChannels: Self = this.set("channels", js.undefined)
-    
-    @scala.inline
-    def setPlaylistsVarargs(value: String*): Self = this.set("playlists", js.Array(value :_*))
-    
-    @scala.inline
-    def setPlaylists(value: js.Array[String]): Self = this.set("playlists", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlaylists: Self = this.set("playlists", js.undefined)
+    def setPlaylistsVarargs(value: String*): Self = StObject.set(x, "playlists", js.Array(value :_*))
   }
 }

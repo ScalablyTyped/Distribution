@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndPoint extends js.Object {
+trait EndPoint extends StObject {
   
   /**
     * Contains information about the Amazon Kinesis data stream where you are sending real-time log data.
@@ -26,27 +27,15 @@ object EndPoint {
   }
   
   @scala.inline
-  implicit class EndPointOps[Self <: EndPoint] (val x: Self) extends AnyVal {
+  implicit class EndPointMutableBuilder[Self <: EndPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKinesisStreamConfig(value: KinesisStreamConfig): Self = StObject.set(x, "KinesisStreamConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKinesisStreamConfigUndefined: Self = StObject.set(x, "KinesisStreamConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStreamType(value: String): Self = this.set("StreamType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKinesisStreamConfig(value: KinesisStreamConfig): Self = this.set("KinesisStreamConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKinesisStreamConfig: Self = this.set("KinesisStreamConfig", js.undefined)
+    def setStreamType(value: String): Self = StObject.set(x, "StreamType", value.asInstanceOf[js.Any])
   }
 }

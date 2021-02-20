@@ -1,11 +1,12 @@
 package typings.auth0Js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PasswordlessStartOptions extends js.Object {
+trait PasswordlessStartOptions extends StObject {
   
   var authParams: js.UndefOr[PasswordlessStartAuthParams] = js.native
   
@@ -26,42 +27,30 @@ object PasswordlessStartOptions {
   }
   
   @scala.inline
-  implicit class PasswordlessStartOptionsOps[Self <: PasswordlessStartOptions] (val x: Self) extends AnyVal {
+  implicit class PasswordlessStartOptionsMutableBuilder[Self <: PasswordlessStartOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthParams(value: PasswordlessStartAuthParams): Self = StObject.set(x, "authParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthParamsUndefined: Self = StObject.set(x, "authParams", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnection(value: String): Self = this.set("connection", value.asInstanceOf[js.Any])
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSend(value: String): Self = this.set("send", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def setAuthParams(value: PasswordlessStartAuthParams): Self = this.set("authParams", value.asInstanceOf[js.Any])
+    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthParams: Self = this.set("authParams", js.undefined)
+    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
-    
-    @scala.inline
-    def setPhoneNumber(value: String): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhoneNumber: Self = this.set("phoneNumber", js.undefined)
+    def setSend(value: String): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
   }
 }

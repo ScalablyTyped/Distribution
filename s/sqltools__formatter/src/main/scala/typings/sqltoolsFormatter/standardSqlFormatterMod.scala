@@ -1,17 +1,17 @@
 package typings.sqltoolsFormatter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sqltools/formatter/lib/languages/StandardSqlFormatter", JSImport.Namespace)
-@js.native
-object standardSqlFormatterMod extends js.Object {
+object standardSqlFormatterMod {
+  
+  @JSImport("@sqltools/formatter/lib/languages/StandardSqlFormatter", JSImport.Default)
+  @js.native
+  class default () extends StandardSqlFormatter
   
   @js.native
   trait StandardSqlFormatter
     extends typings.sqltoolsFormatter.abstractMod.default
-  
-  @js.native
-  class default () extends StandardSqlFormatter
 }

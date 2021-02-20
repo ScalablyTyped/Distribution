@@ -1,13 +1,14 @@
 package typings.materialUiCore.anon
 
 import typings.materialUiCore.withStylesMod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/ListSubheader.ListSubheaderClassKey>> */
 @js.native
-trait PartialStyleRulesListSubh extends js.Object {
+trait PartialStyleRulesListSubh extends StObject {
   
   var colorInherit: js.UndefOr[CSSProperties] = js.native
   
@@ -30,54 +31,42 @@ object PartialStyleRulesListSubh {
   }
   
   @scala.inline
-  implicit class PartialStyleRulesListSubhOps[Self <: PartialStyleRulesListSubh] (val x: Self) extends AnyVal {
+  implicit class PartialStyleRulesListSubhMutableBuilder[Self <: PartialStyleRulesListSubh] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorInherit(value: CSSProperties): Self = StObject.set(x, "colorInherit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorInheritUndefined: Self = StObject.set(x, "colorInherit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorPrimary(value: CSSProperties): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorInherit(value: CSSProperties): Self = this.set("colorInherit", value.asInstanceOf[js.Any])
+    def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
     
     @scala.inline
-    def deleteColorInherit: Self = this.set("colorInherit", js.undefined)
+    def setGutters(value: CSSProperties): Self = StObject.set(x, "gutters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorPrimary(value: CSSProperties): Self = this.set("colorPrimary", value.asInstanceOf[js.Any])
+    def setGuttersUndefined: Self = StObject.set(x, "gutters", js.undefined)
     
     @scala.inline
-    def deleteColorPrimary: Self = this.set("colorPrimary", js.undefined)
+    def setInset(value: CSSProperties): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGutters(value: CSSProperties): Self = this.set("gutters", value.asInstanceOf[js.Any])
+    def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
     @scala.inline
-    def deleteGutters: Self = this.set("gutters", js.undefined)
+    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInset(value: CSSProperties): Self = this.set("inset", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteInset: Self = this.set("inset", js.undefined)
+    def setSticky(value: CSSProperties): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
-    
-    @scala.inline
-    def setSticky(value: CSSProperties): Self = this.set("sticky", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSticky: Self = this.set("sticky", js.undefined)
+    def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
   }
 }

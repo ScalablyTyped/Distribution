@@ -3,25 +3,26 @@ package typings.layuiSrc.layui
 import typings.jquery.JQuery
 import typings.std.HTMLElement
 import typings.std.HTMLFormElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 参数不用加'?'
 @js.native
-trait LayFormData extends js.Object {
+trait LayFormData extends StObject {
   
   var elem: js.Any = js.native
   
-   // 被执行提交的form对象，一般在存在form标签时才会返回
+  // 被执行提交的form对象，一般在存在form标签时才会返回
   var field: js.Any = js.native
   
   var form: HTMLFormElement = js.native
   
-   // 被执行事件的元素DOM对象，一般为button对象  ,可能是input select button等不能用HTMLElement
+  // 被执行事件的元素DOM对象，一般为button对象  ,可能是input select button等不能用HTMLElement
   var othis: JQuery[HTMLElement] = js.native
   
-   // 得到美化后的DOM对象=$(selector)
+  // 得到美化后的DOM对象=$(selector)
   var value: String = js.native
 }
 object LayFormData {
@@ -33,33 +34,21 @@ object LayFormData {
   }
   
   @scala.inline
-  implicit class LayFormDataOps[Self <: LayFormData] (val x: Self) extends AnyVal {
+  implicit class LayFormDataMutableBuilder[Self <: LayFormData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElem(value: js.Any): Self = StObject.set(x, "elem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setField(value: js.Any): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForm(value: HTMLFormElement): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElem(value: js.Any): Self = this.set("elem", value.asInstanceOf[js.Any])
+    def setOthis(value: JQuery[HTMLElement]): Self = StObject.set(x, "othis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: js.Any): Self = this.set("field", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setForm(value: HTMLFormElement): Self = this.set("form", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOthis(value: JQuery[HTMLElement]): Self = this.set("othis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

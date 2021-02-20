@@ -9,6 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -104,45 +105,33 @@ object DataPilotSourceDimension {
   }
   
   @scala.inline
-  implicit class DataPilotSourceDimensionOps[Self <: DataPilotSourceDimension] (val x: Self) extends AnyVal {
+  implicit class DataPilotSourceDimensionMutableBuilder[Self <: DataPilotSourceDimension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: SafeArray[TableFilterField]): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlags(value: Double): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFunction(value: GeneralFunction): Self = StObject.set(x, "Function", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: SafeArray[TableFilterField]): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    def setFunction2(value: Double): Self = StObject.set(x, "Function2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: Double): Self = this.set("Flags", value.asInstanceOf[js.Any])
+    def setIsDataLayoutDimension(value: Boolean): Self = StObject.set(x, "IsDataLayoutDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunction(value: GeneralFunction): Self = this.set("Function", value.asInstanceOf[js.Any])
+    def setOrientation(value: DataPilotFieldOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunction2(value: Double): Self = this.set("Function2", value.asInstanceOf[js.Any])
+    def setOriginal(value: XNamed): Self = StObject.set(x, "Original", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDataLayoutDimension(value: Boolean): Self = this.set("IsDataLayoutDimension", value.asInstanceOf[js.Any])
+    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: DataPilotFieldOrientation): Self = this.set("Orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOriginal(value: XNamed): Self = this.set("Original", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: Double): Self = this.set("Position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsedHierarchy(value: Double): Self = this.set("UsedHierarchy", value.asInstanceOf[js.Any])
+    def setUsedHierarchy(value: Double): Self = StObject.set(x, "UsedHierarchy", value.asInstanceOf[js.Any])
   }
 }

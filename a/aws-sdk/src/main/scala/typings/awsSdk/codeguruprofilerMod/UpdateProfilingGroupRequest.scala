@@ -1,11 +1,12 @@
 package typings.awsSdk.codeguruprofilerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateProfilingGroupRequest extends js.Object {
+trait UpdateProfilingGroupRequest extends StObject {
   
   /**
     *  Specifies whether profiling is enabled or disabled for a profiling group. 
@@ -26,24 +27,12 @@ object UpdateProfilingGroupRequest {
   }
   
   @scala.inline
-  implicit class UpdateProfilingGroupRequestOps[Self <: UpdateProfilingGroupRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateProfilingGroupRequestMutableBuilder[Self <: UpdateProfilingGroupRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentOrchestrationConfig(value: AgentOrchestrationConfig): Self = StObject.set(x, "agentOrchestrationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAgentOrchestrationConfig(value: AgentOrchestrationConfig): Self = this.set("agentOrchestrationConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProfilingGroupName(value: ProfilingGroupName): Self = this.set("profilingGroupName", value.asInstanceOf[js.Any])
+    def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
   }
 }

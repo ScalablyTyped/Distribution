@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,72 +40,60 @@ object IgButton {
   }
   
   @scala.inline
-  implicit class IgButtonOps[Self <: IgButton] (val x: Self) extends AnyVal {
+  implicit class IgButtonMutableBuilder[Self <: IgButton] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenterLabel(value: Boolean): Self = StObject.set(x, "centerLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterLabelUndefined: Self = StObject.set(x, "centerLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterLabel(value: Boolean): Self = this.set("centerLabel", value.asInstanceOf[js.Any])
+    def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
     @scala.inline
-    def deleteCenterLabel: Self = this.set("centerLabel", js.undefined)
+    def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCss(value: js.Any): Self = this.set("css", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteCss: Self = this.set("css", js.undefined)
+    def setIcons(value: IgButtonIcons): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: js.Any): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLabelText(value: String): Self = StObject.set(x, "labelText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcons(value: IgButtonIcons): Self = this.set("icons", value.asInstanceOf[js.Any])
+    def setLabelTextUndefined: Self = StObject.set(x, "labelText", js.undefined)
     
     @scala.inline
-    def deleteIcons: Self = this.set("icons", js.undefined)
+    def setLink(value: IgButtonLink): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelText(value: String): Self = this.set("labelText", value.asInstanceOf[js.Any])
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def deleteLabelText: Self = this.set("labelText", js.undefined)
+    def setOnlyIcons(value: Boolean): Self = StObject.set(x, "onlyIcons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: IgButtonLink): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setOnlyIconsUndefined: Self = StObject.set(x, "onlyIcons", js.undefined)
     
     @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnlyIcons(value: Boolean): Self = this.set("onlyIcons", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteOnlyIcons: Self = this.set("onlyIcons", js.undefined)
+    def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: Boolean): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: js.Any): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

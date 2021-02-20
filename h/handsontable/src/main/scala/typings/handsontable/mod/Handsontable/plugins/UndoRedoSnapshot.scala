@@ -1,11 +1,12 @@
 package typings.handsontable.mod.Handsontable.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UndoRedoSnapshot extends js.Object {
+trait UndoRedoSnapshot extends StObject {
   
   def destroy(): Unit = js.native
   
@@ -32,33 +33,21 @@ object UndoRedoSnapshot {
   }
   
   @scala.inline
-  implicit class UndoRedoSnapshotOps[Self <: UndoRedoSnapshot] (val x: Self) extends AnyVal {
+  implicit class UndoRedoSnapshotMutableBuilder[Self <: UndoRedoSnapshot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSave(value: (String, Double, Double) => Unit): Self = StObject.set(x, "save", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setSheet(value: Sheet): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestore(value: () => Unit): Self = this.set("restore", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSave(value: (String, Double, Double) => Unit): Self = this.set("save", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSheet(value: Sheet): Self = this.set("sheet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStack(value: Stack): Self = this.set("stack", value.asInstanceOf[js.Any])
+    def setStack(value: Stack): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
   }
 }

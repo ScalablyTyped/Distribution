@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,27 +35,15 @@ object ASPxClientListEditItemFilteringEventArgs {
   }
   
   @scala.inline
-  implicit class ASPxClientListEditItemFilteringEventArgsOps[Self <: ASPxClientListEditItemFilteringEventArgs] (val x: Self) extends AnyVal {
+  implicit class ASPxClientListEditItemFilteringEventArgsMutableBuilder[Self <: ASPxClientListEditItemFilteringEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsFit(value: Boolean): Self = StObject.set(x, "isFit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsFit(value: Boolean): Self = this.set("isFit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItem(value: ASPxClientListEditItem): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setItem(value: ASPxClientListEditItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

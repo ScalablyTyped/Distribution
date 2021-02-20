@@ -2,27 +2,27 @@ package typings.ngsijs
 
 import typings.ngsijs.mod.Connection.V1
 import typings.ngsijs.mod.Connection.V2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ngsijs", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("ngsijs", "Connection")
   @js.native
-  class Connection protected () extends js.Object {
+  class Connection protected () extends StObject {
     def this(url: js.Any) = this()
     
     var v1: V1 = js.native
     
     var v2: V2 = js.native
   }
-  @js.native
-  object Connection extends js.Object {
+  object Connection {
     
+    @JSImport("ngsijs", "Connection.V1")
     @js.native
-    class V1 protected () extends js.Object {
+    class V1 protected () extends StObject {
       def this(connection: js.Any) = this()
       
       def addAttributes(toAdd: js.Any, callbacks: js.Any): Unit = js.native
@@ -93,8 +93,9 @@ object mod extends js.Object {
       def updateSubscription(subId: js.Any, duration: js.Any, throttling: js.Any, cond: js.Any, options: js.Any): Unit = js.native
     }
     
+    @JSImport("ngsijs", "Connection.V2")
     @js.native
-    class V2 protected () extends js.Object {
+    class V2 protected () extends StObject {
       def this(connection: js.Any) = this()
       
       def appendEntityAttributes(changes: js.Any, options: js.Any): js.Any = js.native

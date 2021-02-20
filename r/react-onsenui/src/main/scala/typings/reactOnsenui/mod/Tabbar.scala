@@ -1,11 +1,20 @@
 package typings.reactOnsenui.mod
 
-import typings.reactOnsenui.anon.HTMLAttributesidclassNameIgnoreEdgeWidth
+import typings.reactOnsenui.anon.HTMLAttributesidclassName
+import typings.reactOnsenui.anon.IgnoreEdgeWidth
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-onsenui", "Tabbar")
 @js.native
-class Tabbar ()
-  extends typings.react.mod.Component[HTMLAttributesidclassNameIgnoreEdgeWidth, js.Any, js.Any]
+class Tabbar protected ()
+  extends Component[IgnoreEdgeWidth, js.Any] {
+  def this(props: HTMLAttributesidclassName with IgnoreEdgeWidth) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: HTMLAttributesidclassName with IgnoreEdgeWidth, context: js.Any) = this()
+}

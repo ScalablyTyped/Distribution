@@ -1,11 +1,12 @@
 package typings.stripe.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Currentlydue extends js.Object {
+trait Currentlydue extends StObject {
   
   /**
     * Fields that need to be collected to keep the person’s account enabled.
@@ -46,42 +47,30 @@ object Currentlydue {
   }
   
   @scala.inline
-  implicit class CurrentlydueOps[Self <: Currentlydue] (val x: Self) extends AnyVal {
+  implicit class CurrentlydueMutableBuilder[Self <: Currentlydue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrently_due(value: js.Array[String]): Self = StObject.set(x, "currently_due", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrently_dueVarargs(value: String*): Self = StObject.set(x, "currently_due", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventually_due(value: js.Array[String]): Self = StObject.set(x, "eventually_due", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrently_dueVarargs(value: String*): Self = this.set("currently_due", js.Array(value :_*))
+    def setEventually_dueVarargs(value: String*): Self = StObject.set(x, "eventually_due", js.Array(value :_*))
     
     @scala.inline
-    def setCurrently_due(value: js.Array[String]): Self = this.set("currently_due", value.asInstanceOf[js.Any])
+    def setPast_due(value: js.Array[String]): Self = StObject.set(x, "past_due", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventually_dueVarargs(value: String*): Self = this.set("eventually_due", js.Array(value :_*))
+    def setPast_dueVarargs(value: String*): Self = StObject.set(x, "past_due", js.Array(value :_*))
     
     @scala.inline
-    def setEventually_due(value: js.Array[String]): Self = this.set("eventually_due", value.asInstanceOf[js.Any])
+    def setPending_verification(value: js.Array[String]): Self = StObject.set(x, "pending_verification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPast_dueVarargs(value: String*): Self = this.set("past_due", js.Array(value :_*))
-    
-    @scala.inline
-    def setPast_due(value: js.Array[String]): Self = this.set("past_due", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPending_verificationVarargs(value: String*): Self = this.set("pending_verification", js.Array(value :_*))
-    
-    @scala.inline
-    def setPending_verification(value: js.Array[String]): Self = this.set("pending_verification", value.asInstanceOf[js.Any])
+    def setPending_verificationVarargs(value: String*): Self = StObject.set(x, "pending_verification", js.Array(value :_*))
   }
 }

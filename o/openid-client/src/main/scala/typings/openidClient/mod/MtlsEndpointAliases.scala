@@ -1,11 +1,12 @@
 package typings.openidClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MtlsEndpointAliases extends js.Object {
+trait MtlsEndpointAliases extends StObject {
   
   var device_authorization_endpoint: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object MtlsEndpointAliases {
   }
   
   @scala.inline
-  implicit class MtlsEndpointAliasesOps[Self <: MtlsEndpointAliases] (val x: Self) extends AnyVal {
+  implicit class MtlsEndpointAliasesMutableBuilder[Self <: MtlsEndpointAliases] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevice_authorization_endpoint(value: String): Self = StObject.set(x, "device_authorization_endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDevice_authorization_endpointUndefined: Self = StObject.set(x, "device_authorization_endpoint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntrospection_endpoint(value: String): Self = StObject.set(x, "introspection_endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice_authorization_endpoint(value: String): Self = this.set("device_authorization_endpoint", value.asInstanceOf[js.Any])
+    def setIntrospection_endpointUndefined: Self = StObject.set(x, "introspection_endpoint", js.undefined)
     
     @scala.inline
-    def deleteDevice_authorization_endpoint: Self = this.set("device_authorization_endpoint", js.undefined)
+    def setRevocation_endpoint(value: String): Self = StObject.set(x, "revocation_endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntrospection_endpoint(value: String): Self = this.set("introspection_endpoint", value.asInstanceOf[js.Any])
+    def setRevocation_endpointUndefined: Self = StObject.set(x, "revocation_endpoint", js.undefined)
     
     @scala.inline
-    def deleteIntrospection_endpoint: Self = this.set("introspection_endpoint", js.undefined)
+    def setToken_endpoint(value: String): Self = StObject.set(x, "token_endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevocation_endpoint(value: String): Self = this.set("revocation_endpoint", value.asInstanceOf[js.Any])
+    def setToken_endpointUndefined: Self = StObject.set(x, "token_endpoint", js.undefined)
     
     @scala.inline
-    def deleteRevocation_endpoint: Self = this.set("revocation_endpoint", js.undefined)
+    def setUserinfo_endpoint(value: String): Self = StObject.set(x, "userinfo_endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken_endpoint(value: String): Self = this.set("token_endpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken_endpoint: Self = this.set("token_endpoint", js.undefined)
-    
-    @scala.inline
-    def setUserinfo_endpoint(value: String): Self = this.set("userinfo_endpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserinfo_endpoint: Self = this.set("userinfo_endpoint", js.undefined)
+    def setUserinfo_endpointUndefined: Self = StObject.set(x, "userinfo_endpoint", js.undefined)
   }
 }

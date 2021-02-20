@@ -1,11 +1,12 @@
 package typings.awsSdk.snowballMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeJobResult extends js.Object {
+trait DescribeJobResult extends StObject {
   
   /**
     * Information about a specific job, including shipping information, job status, and other important metadata.
@@ -26,33 +27,21 @@ object DescribeJobResult {
   }
   
   @scala.inline
-  implicit class DescribeJobResultOps[Self <: DescribeJobResult] (val x: Self) extends AnyVal {
+  implicit class DescribeJobResultMutableBuilder[Self <: DescribeJobResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobMetadata(value: JobMetadata): Self = StObject.set(x, "JobMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobMetadataUndefined: Self = StObject.set(x, "JobMetadata", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubJobMetadata(value: JobMetadataList): Self = StObject.set(x, "SubJobMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobMetadata(value: JobMetadata): Self = this.set("JobMetadata", value.asInstanceOf[js.Any])
+    def setSubJobMetadataUndefined: Self = StObject.set(x, "SubJobMetadata", js.undefined)
     
     @scala.inline
-    def deleteJobMetadata: Self = this.set("JobMetadata", js.undefined)
-    
-    @scala.inline
-    def setSubJobMetadataVarargs(value: JobMetadata*): Self = this.set("SubJobMetadata", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubJobMetadata(value: JobMetadataList): Self = this.set("SubJobMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubJobMetadata: Self = this.set("SubJobMetadata", js.undefined)
+    def setSubJobMetadataVarargs(value: JobMetadata*): Self = StObject.set(x, "SubJobMetadata", js.Array(value :_*))
   }
 }

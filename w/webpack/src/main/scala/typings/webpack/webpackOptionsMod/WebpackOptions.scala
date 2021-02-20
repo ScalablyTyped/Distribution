@@ -22,12 +22,13 @@ import typings.webpack.webpackStrings.production
 import typings.webpack.webpackStrings.verbose
 import typings.webpack.webpackStrings.web
 import typings.webpack.webpackStrings.webworker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebpackOptions extends js.Object {
+trait WebpackOptions extends StObject {
   
   /**
   	 * Set the value of `require.amd` and `define.amd`. Or disable AMD support.
@@ -200,76 +201,75 @@ object WebpackOptions {
   }
   
   @scala.inline
-  implicit class WebpackOptionsOps[Self <: WebpackOptions] (val x: Self) extends AnyVal {
+  implicit class WebpackOptionsMutableBuilder[Self <: WebpackOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmd(value: `false` | StringDictionary[js.Any]): Self = StObject.set(x, "amd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmdUndefined: Self = StObject.set(x, "amd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmd(value: `false` | StringDictionary[js.Any]): Self = this.set("amd", value.asInstanceOf[js.Any])
+    def setBailUndefined: Self = StObject.set(x, "bail", js.undefined)
     
     @scala.inline
-    def deleteAmd: Self = this.set("amd", js.undefined)
+    def setCache(value: Boolean | StringDictionary[js.Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBail(value: Boolean): Self = this.set("bail", value.asInstanceOf[js.Any])
+    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
     @scala.inline
-    def deleteBail: Self = this.set("bail", js.undefined)
+    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCache(value: Boolean | StringDictionary[js.Any]): Self = this.set("cache", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteCache: Self = this.set("cache", js.undefined)
+    def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
     
     @scala.inline
-    def setDependenciesVarargs(value: String*): Self = this.set("dependencies", js.Array(value :_*))
+    def setDevServer(value: StringDictionary[js.Any]): Self = StObject.set(x, "devServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependencies(value: js.Array[String]): Self = this.set("dependencies", value.asInstanceOf[js.Any])
+    def setDevServerUndefined: Self = StObject.set(x, "devServer", js.undefined)
     
     @scala.inline
-    def deleteDependencies: Self = this.set("dependencies", js.undefined)
+    def setDevtool(value: String | `false`): Self = StObject.set(x, "devtool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevServer(value: StringDictionary[js.Any]): Self = this.set("devServer", value.asInstanceOf[js.Any])
+    def setDevtoolUndefined: Self = StObject.set(x, "devtool", js.undefined)
     
     @scala.inline
-    def deleteDevServer: Self = this.set("devServer", js.undefined)
+    def setEntry(value: Entry): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevtool(value: String | `false`): Self = this.set("devtool", value.asInstanceOf[js.Any])
+    def setEntryFunction0(value: () => EntryStatic | js.Promise[EntryStatic]): Self = StObject.set(x, "entry", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteDevtool: Self = this.set("devtool", js.undefined)
+    def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
     
     @scala.inline
-    def setEntryVarargs(value: String*): Self = this.set("entry", js.Array(value :_*))
+    def setEntryVarargs(value: String*): Self = StObject.set(x, "entry", js.Array(value :_*))
     
     @scala.inline
-    def setEntryFunction0(value: () => EntryStatic | js.Promise[EntryStatic]): Self = this.set("entry", js.Any.fromFunction0(value))
+    def setExternals(value: Externals): Self = StObject.set(x, "externals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntry(value: Entry): Self = this.set("entry", value.asInstanceOf[js.Any])
+    def setExternalsFunction3(
+      value: (/* context */ String, /* request */ String, /* callback */ js.Function2[/* err */ js.UndefOr[Error], /* result */ js.UndefOr[String], Unit]) => Unit
+    ): Self = StObject.set(x, "externals", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteEntry: Self = this.set("entry", js.undefined)
+    def setExternalsUndefined: Self = StObject.set(x, "externals", js.undefined)
     
     @scala.inline
     def setExternalsVarargs(
@@ -279,142 +279,126 @@ object WebpackOptions {
           /* callback */ js.Function2[/* err */ js.UndefOr[Error], /* result */ js.UndefOr[String], Unit], 
           Unit
         ]) | ExternalItem)*
-    ): Self = this.set("externals", js.Array(value :_*))
+    ): Self = StObject.set(x, "externals", js.Array(value :_*))
     
     @scala.inline
-    def setExternalsFunction3(
-      value: (/* context */ String, /* request */ String, /* callback */ js.Function2[/* err */ js.UndefOr[Error], /* result */ js.UndefOr[String], Unit]) => Unit
-    ): Self = this.set("externals", js.Any.fromFunction3(value))
+    def setInfrastructureLogging(value: Debug): Self = StObject.set(x, "infrastructureLogging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternals(value: Externals): Self = this.set("externals", value.asInstanceOf[js.Any])
+    def setInfrastructureLoggingUndefined: Self = StObject.set(x, "infrastructureLogging", js.undefined)
     
     @scala.inline
-    def deleteExternals: Self = this.set("externals", js.undefined)
+    def setLoader(value: StringDictionary[js.Any]): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfrastructureLogging(value: Debug): Self = this.set("infrastructureLogging", value.asInstanceOf[js.Any])
+    def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
     
     @scala.inline
-    def deleteInfrastructureLogging: Self = this.set("infrastructureLogging", js.undefined)
+    def setMode(value: development | production | none): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoader(value: StringDictionary[js.Any]): Self = this.set("loader", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteLoader: Self = this.set("loader", js.undefined)
+    def setModule(value: ModuleOptions): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: development | production | none): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModule(value: ModuleOptions): Self = this.set("module", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteModule: Self = this.set("module", js.undefined)
+    def setNode(value: `false` | NodeOptions): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOptimization(value: OptimizationOptions): Self = StObject.set(x, "optimization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode(value: `false` | NodeOptions): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setOptimizationUndefined: Self = StObject.set(x, "optimization", js.undefined)
     
     @scala.inline
-    def deleteNode: Self = this.set("node", js.undefined)
+    def setOutput(value: OutputOptions): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptimization(value: OptimizationOptions): Self = this.set("optimization", value.asInstanceOf[js.Any])
+    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
     @scala.inline
-    def deleteOptimization: Self = this.set("optimization", js.undefined)
+    def setParallelism(value: Double): Self = StObject.set(x, "parallelism", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutput(value: OutputOptions): Self = this.set("output", value.asInstanceOf[js.Any])
+    def setParallelismUndefined: Self = StObject.set(x, "parallelism", js.undefined)
     
     @scala.inline
-    def deleteOutput: Self = this.set("output", js.undefined)
+    def setPerformance(value: `false` | PerformanceOptions): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParallelism(value: Double): Self = this.set("parallelism", value.asInstanceOf[js.Any])
+    def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
     
     @scala.inline
-    def deleteParallelism: Self = this.set("parallelism", js.undefined)
+    def setPlugins(value: js.Array[WebpackPluginInstance | WebpackPluginFunction]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformance(value: `false` | PerformanceOptions): Self = this.set("performance", value.asInstanceOf[js.Any])
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
     @scala.inline
-    def deletePerformance: Self = this.set("performance", js.undefined)
+    def setPluginsVarargs(value: (WebpackPluginInstance | WebpackPluginFunction)*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     
     @scala.inline
-    def setPluginsVarargs(value: (WebpackPluginInstance | WebpackPluginFunction)*): Self = this.set("plugins", js.Array(value :_*))
+    def setProfile(value: Boolean): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlugins(value: js.Array[WebpackPluginInstance | WebpackPluginFunction]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
     @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
+    def setRecordsInputPath(value: String): Self = StObject.set(x, "recordsInputPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile(value: Boolean): Self = this.set("profile", value.asInstanceOf[js.Any])
+    def setRecordsInputPathUndefined: Self = StObject.set(x, "recordsInputPath", js.undefined)
     
     @scala.inline
-    def deleteProfile: Self = this.set("profile", js.undefined)
+    def setRecordsOutputPath(value: String): Self = StObject.set(x, "recordsOutputPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordsInputPath(value: String): Self = this.set("recordsInputPath", value.asInstanceOf[js.Any])
+    def setRecordsOutputPathUndefined: Self = StObject.set(x, "recordsOutputPath", js.undefined)
     
     @scala.inline
-    def deleteRecordsInputPath: Self = this.set("recordsInputPath", js.undefined)
+    def setRecordsPath(value: String): Self = StObject.set(x, "recordsPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordsOutputPath(value: String): Self = this.set("recordsOutputPath", value.asInstanceOf[js.Any])
+    def setRecordsPathUndefined: Self = StObject.set(x, "recordsPath", js.undefined)
     
     @scala.inline
-    def deleteRecordsOutputPath: Self = this.set("recordsOutputPath", js.undefined)
+    def setResolve(value: ResolveOptions): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordsPath(value: String): Self = this.set("recordsPath", value.asInstanceOf[js.Any])
+    def setResolveLoader(value: ResolveOptions): Self = StObject.set(x, "resolveLoader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecordsPath: Self = this.set("recordsPath", js.undefined)
+    def setResolveLoaderUndefined: Self = StObject.set(x, "resolveLoader", js.undefined)
     
     @scala.inline
-    def setResolve(value: ResolveOptions): Self = this.set("resolve", value.asInstanceOf[js.Any])
+    def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
     
     @scala.inline
-    def deleteResolve: Self = this.set("resolve", js.undefined)
+    def setServe(value: StringDictionary[js.Any]): Self = StObject.set(x, "serve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolveLoader(value: ResolveOptions): Self = this.set("resolveLoader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolveLoader: Self = this.set("resolveLoader", js.undefined)
-    
-    @scala.inline
-    def setServe(value: StringDictionary[js.Any]): Self = this.set("serve", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServe: Self = this.set("serve", js.undefined)
+    def setServeUndefined: Self = StObject.set(x, "serve", js.undefined)
     
     @scala.inline
     def setStats(
       value: StatsOptions | Boolean | none | `errors-only` | minimal | normal | detailed | verbose | `errors-warnings`
-    ): Self = this.set("stats", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStats: Self = this.set("stats", js.undefined)
-    
-    @scala.inline
-    def setTargetFunction1(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_Compiler */ /* compiler */ js.Any => Unit
-    ): Self = this.set("target", js.Any.fromFunction1(value))
+    def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     
     @scala.inline
     def setTarget(
@@ -422,21 +406,26 @@ object WebpackOptions {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_Compiler */ /* compiler */ js.Any, 
           Unit
         ])
-    ): Self = this.set("target", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetFunction1(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_Compiler */ /* compiler */ js.Any => Unit
+    ): Self = StObject.set(x, "target", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWatch(value: Boolean): Self = this.set("watch", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deleteWatch: Self = this.set("watch", js.undefined)
+    def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWatchOptions(value: AggregateTimeout): Self = this.set("watchOptions", value.asInstanceOf[js.Any])
+    def setWatchOptions(value: AggregateTimeout): Self = StObject.set(x, "watchOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWatchOptions: Self = this.set("watchOptions", js.undefined)
+    def setWatchOptionsUndefined: Self = StObject.set(x, "watchOptions", js.undefined)
+    
+    @scala.inline
+    def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
   }
 }

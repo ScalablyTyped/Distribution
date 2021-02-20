@@ -1,11 +1,12 @@
 package typings.awsSdk.kmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImportKeyMaterialRequest extends js.Object {
+trait ImportKeyMaterialRequest extends StObject {
   
   /**
     * The encrypted key material to import. The key material must be encrypted with the public wrapping key that GetParametersForImport returned, using the wrapping algorithm that you specified in the same GetParametersForImport request.
@@ -41,39 +42,27 @@ object ImportKeyMaterialRequest {
   }
   
   @scala.inline
-  implicit class ImportKeyMaterialRequestOps[Self <: ImportKeyMaterialRequest] (val x: Self) extends AnyVal {
+  implicit class ImportKeyMaterialRequestMutableBuilder[Self <: ImportKeyMaterialRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryptedKeyMaterial(value: CiphertextType): Self = StObject.set(x, "EncryptedKeyMaterial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpirationModel(value: ExpirationModelType): Self = StObject.set(x, "ExpirationModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpirationModelUndefined: Self = StObject.set(x, "ExpirationModel", js.undefined)
     
     @scala.inline
-    def setEncryptedKeyMaterial(value: CiphertextType): Self = this.set("EncryptedKeyMaterial", value.asInstanceOf[js.Any])
+    def setImportToken(value: CiphertextType): Self = StObject.set(x, "ImportToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportToken(value: CiphertextType): Self = this.set("ImportToken", value.asInstanceOf[js.Any])
+    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    def setValidTo(value: DateType): Self = StObject.set(x, "ValidTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationModel(value: ExpirationModelType): Self = this.set("ExpirationModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpirationModel: Self = this.set("ExpirationModel", js.undefined)
-    
-    @scala.inline
-    def setValidTo(value: DateType): Self = this.set("ValidTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidTo: Self = this.set("ValidTo", js.undefined)
+    def setValidToUndefined: Self = StObject.set(x, "ValidTo", js.undefined)
   }
 }

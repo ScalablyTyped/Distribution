@@ -4,14 +4,14 @@ import typings.babylonjs.iaudioengineMod.IAudioEngine
 import typings.babylonjs.typesMod.Nullable
 import typings.std.AudioContext
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Audio/audioEngine", JSImport.Namespace)
-@js.native
-object audioEngineMod extends js.Object {
+object audioEngineMod {
   
+  @JSImport("babylonjs/Audio/audioEngine", "AudioEngine")
   @js.native
   /**
     * Instantiates a new audio engine.

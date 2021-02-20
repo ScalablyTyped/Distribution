@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRun.gapi.client.run
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListMeta extends js.Object {
+trait ListMeta extends StObject {
   
   /**
     * continue may be set if the user set a limit on the number of items returned, and indicates that the server has more data available. The value is opaque and may be used to issue
@@ -33,36 +34,24 @@ object ListMeta {
   }
   
   @scala.inline
-  implicit class ListMetaOps[Self <: ListMeta] (val x: Self) extends AnyVal {
+  implicit class ListMetaMutableBuilder[Self <: ListMeta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinue(value: String): Self = StObject.set(x, "continue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContinueUndefined: Self = StObject.set(x, "continue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceVersion(value: String): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinue(value: String): Self = this.set("continue", value.asInstanceOf[js.Any])
+    def setResourceVersionUndefined: Self = StObject.set(x, "resourceVersion", js.undefined)
     
     @scala.inline
-    def deleteContinue: Self = this.set("continue", js.undefined)
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceVersion(value: String): Self = this.set("resourceVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceVersion: Self = this.set("resourceVersion", js.undefined)
-    
-    @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
   }
 }

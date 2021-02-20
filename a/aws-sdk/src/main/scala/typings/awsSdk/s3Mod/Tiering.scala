@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tiering extends js.Object {
+trait Tiering extends StObject {
   
   /**
     * S3 Intelligent-Tiering access tier. See Storage class for automatically optimizing frequently and infrequently accessed objects for a list of access tiers in the S3 Intelligent-Tiering storage class.
@@ -26,24 +27,12 @@ object Tiering {
   }
   
   @scala.inline
-  implicit class TieringOps[Self <: Tiering] (val x: Self) extends AnyVal {
+  implicit class TieringMutableBuilder[Self <: Tiering] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessTier(value: IntelligentTieringAccessTier): Self = StObject.set(x, "AccessTier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccessTier(value: IntelligentTieringAccessTier): Self = this.set("AccessTier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDays(value: IntelligentTieringDays): Self = this.set("Days", value.asInstanceOf[js.Any])
+    def setDays(value: IntelligentTieringDays): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
   }
 }

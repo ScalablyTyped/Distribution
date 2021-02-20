@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.KVP
 import typings.arcgisJsApi.arcgisJsApiStrings.RESTful
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,69 +80,57 @@ object WMTSLayerProperties {
   }
   
   @scala.inline
-  implicit class WMTSLayerPropertiesOps[Self <: WMTSLayerProperties] (val x: Self) extends AnyVal {
+  implicit class WMTSLayerPropertiesMutableBuilder[Self <: WMTSLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveLayer(value: WMTSSublayerProperties): Self = StObject.set(x, "activeLayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveLayerUndefined: Self = StObject.set(x, "activeLayer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveLayer(value: WMTSSublayerProperties): Self = this.set("activeLayer", value.asInstanceOf[js.Any])
+    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     @scala.inline
-    def deleteActiveLayer: Self = this.set("activeLayer", js.undefined)
+    def setCustomLayerParameters(value: js.Any): Self = StObject.set(x, "customLayerParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyright(value: String): Self = this.set("copyright", value.asInstanceOf[js.Any])
+    def setCustomLayerParametersUndefined: Self = StObject.set(x, "customLayerParameters", js.undefined)
     
     @scala.inline
-    def deleteCopyright: Self = this.set("copyright", js.undefined)
+    def setCustomParameters(value: js.Any): Self = StObject.set(x, "customParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomLayerParameters(value: js.Any): Self = this.set("customLayerParameters", value.asInstanceOf[js.Any])
+    def setCustomParametersUndefined: Self = StObject.set(x, "customParameters", js.undefined)
     
     @scala.inline
-    def deleteCustomLayerParameters: Self = this.set("customLayerParameters", js.undefined)
+    def setServiceMode(value: RESTful | KVP): Self = StObject.set(x, "serviceMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomParameters(value: js.Any): Self = this.set("customParameters", value.asInstanceOf[js.Any])
+    def setServiceModeUndefined: Self = StObject.set(x, "serviceMode", js.undefined)
     
     @scala.inline
-    def deleteCustomParameters: Self = this.set("customParameters", js.undefined)
+    def setSublayers(value: CollectionProperties[WMTSSublayerProperties]): Self = StObject.set(x, "sublayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceMode(value: RESTful | KVP): Self = this.set("serviceMode", value.asInstanceOf[js.Any])
+    def setSublayersUndefined: Self = StObject.set(x, "sublayers", js.undefined)
     
     @scala.inline
-    def deleteServiceMode: Self = this.set("serviceMode", js.undefined)
+    def setSublayersVarargs(value: WMTSSublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value :_*))
     
     @scala.inline
-    def setSublayersVarargs(value: WMTSSublayerProperties*): Self = this.set("sublayers", js.Array(value :_*))
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSublayers(value: CollectionProperties[WMTSSublayerProperties]): Self = this.set("sublayers", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteSublayers: Self = this.set("sublayers", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

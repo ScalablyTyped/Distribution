@@ -1,44 +1,61 @@
 package typings.iitc
 
+import typings.leaflet.mod.CircleMarkerOptions
+import typings.leaflet.mod.LatLngExpression
+import typings.leaflet.mod.PolylineOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("iitc", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("iitc", "DataCache")
   @js.native
   class DataCache ()
     extends typings.iitc.dataCacheMod.DataCache
   
-  @js.native
-  object IITC extends js.Object {
+  object IITC {
     
     /** Field-Polygon */
+    @JSImport("iitc", "IITC.Field")
     @js.native
-    class Field ()
-      extends typings.iitc.iitctypesMod.IITC.Field
+    class Field protected ()
+      extends typings.iitc.iitctypesMod.IITC.Field {
+      def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression]) = this()
+      def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression], options: PolylineOptions) = this()
+    }
     
     /** Link-Marker */
+    @JSImport("iitc", "IITC.Link")
     @js.native
-    class Link ()
-      extends typings.iitc.iitctypesMod.IITC.Link
+    class Link protected ()
+      extends typings.iitc.iitctypesMod.IITC.Link {
+      def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression]) = this()
+      def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression], options: PolylineOptions) = this()
+    }
     
     /** Portal-Marker */
+    @JSImport("iitc", "IITC.Portal")
     @js.native
-    class Portal ()
-      extends typings.iitc.iitctypesMod.IITC.Portal
+    class Portal protected ()
+      extends typings.iitc.iitctypesMod.IITC.Portal {
+      def this(latlng: LatLngExpression) = this()
+      def this(latlng: LatLngExpression, options: CircleMarkerOptions) = this()
+    }
   }
   
+  @JSImport("iitc", "MapDataRequest")
   @js.native
   class MapDataRequest ()
     extends typings.iitc.mapDataRequestMod.MapDataRequest
   
+  @JSImport("iitc", "Render")
   @js.native
   class Render ()
     extends typings.iitc.mapDataRenderMod.Render
   
+  @JSImport("iitc", "RenderDebugTiles")
   @js.native
   class RenderDebugTiles ()
     extends typings.iitc.mapDataDebugMod.RenderDebugTiles

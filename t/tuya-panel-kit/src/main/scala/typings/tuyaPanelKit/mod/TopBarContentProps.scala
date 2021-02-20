@@ -8,12 +8,13 @@ import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.tuyaPanelKitStrings.center
 import typings.tuyaPanelKit.tuyaPanelKitStrings.left
 import typings.tuyaPanelKit.tuyaPanelKitStrings.right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopBarContentProps extends js.Object {
+trait TopBarContentProps extends StObject {
   
   var children: js.UndefOr[ReactNode] = js.native
   
@@ -42,81 +43,69 @@ object TopBarContentProps {
   }
   
   @scala.inline
-  implicit class TopBarContentPropsOps[Self <: TopBarContentProps] (val x: Self) extends AnyVal {
+  implicit class TopBarContentPropsMutableBuilder[Self <: TopBarContentProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setPosition(value: left | center | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onPress", js.Any.fromFunction1(value))
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: left | center | right): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setSubTitle(value: String): Self = StObject.set(x, "subTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setSubTitleStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "subTitleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleNull: Self = this.set("style", null)
+    def setSubTitleStyleNull: Self = StObject.set(x, "subTitleStyle", null)
     
     @scala.inline
-    def setSubTitle(value: String): Self = this.set("subTitle", value.asInstanceOf[js.Any])
+    def setSubTitleStyleUndefined: Self = StObject.set(x, "subTitleStyle", js.undefined)
     
     @scala.inline
-    def deleteSubTitle: Self = this.set("subTitle", js.undefined)
+    def setSubTitleUndefined: Self = StObject.set(x, "subTitle", js.undefined)
     
     @scala.inline
-    def setSubTitleStyle(value: StyleProp[TextStyle]): Self = this.set("subTitleStyle", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubTitleStyle: Self = this.set("subTitleStyle", js.undefined)
+    def setTitleStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubTitleStyleNull: Self = this.set("subTitleStyle", null)
+    def setTitleStyleNull: Self = StObject.set(x, "titleStyle", null)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setTitleStyle(value: StyleProp[TextStyle]): Self = this.set("titleStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleStyle: Self = this.set("titleStyle", js.undefined)
-    
-    @scala.inline
-    def setTitleStyleNull: Self = this.set("titleStyle", null)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

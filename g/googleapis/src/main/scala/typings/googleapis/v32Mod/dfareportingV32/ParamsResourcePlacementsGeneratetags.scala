@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,54 +47,42 @@ object ParamsResourcePlacementsGeneratetags {
   }
   
   @scala.inline
-  implicit class ParamsResourcePlacementsGeneratetagsOps[Self <: ParamsResourcePlacementsGeneratetags] (val x: Self) extends AnyVal {
+  implicit class ParamsResourcePlacementsGeneratetagsMutableBuilder[Self <: ParamsResourcePlacementsGeneratetags] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setCampaignIdUndefined: Self = StObject.set(x, "campaignId", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setPlacementIds(value: js.Array[String]): Self = StObject.set(x, "placementIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaignId(value: String): Self = this.set("campaignId", value.asInstanceOf[js.Any])
+    def setPlacementIdsUndefined: Self = StObject.set(x, "placementIds", js.undefined)
     
     @scala.inline
-    def deleteCampaignId: Self = this.set("campaignId", js.undefined)
+    def setPlacementIdsVarargs(value: String*): Self = StObject.set(x, "placementIds", js.Array(value :_*))
     
     @scala.inline
-    def setPlacementIdsVarargs(value: String*): Self = this.set("placementIds", js.Array(value :_*))
+    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacementIds(value: js.Array[String]): Self = this.set("placementIds", value.asInstanceOf[js.Any])
+    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
     
     @scala.inline
-    def deletePlacementIds: Self = this.set("placementIds", js.undefined)
+    def setTagFormats(value: js.Array[String]): Self = StObject.set(x, "tagFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileId(value: String): Self = this.set("profileId", value.asInstanceOf[js.Any])
+    def setTagFormatsUndefined: Self = StObject.set(x, "tagFormats", js.undefined)
     
     @scala.inline
-    def deleteProfileId: Self = this.set("profileId", js.undefined)
-    
-    @scala.inline
-    def setTagFormatsVarargs(value: String*): Self = this.set("tagFormats", js.Array(value :_*))
-    
-    @scala.inline
-    def setTagFormats(value: js.Array[String]): Self = this.set("tagFormats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagFormats: Self = this.set("tagFormats", js.undefined)
+    def setTagFormatsVarargs(value: String*): Self = StObject.set(x, "tagFormats", js.Array(value :_*))
   }
 }

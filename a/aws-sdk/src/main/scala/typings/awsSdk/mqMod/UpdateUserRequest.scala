@@ -1,11 +1,12 @@
 package typings.awsSdk.mqMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateUserRequest extends js.Object {
+trait UpdateUserRequest extends StObject {
   
   /**
     * The unique ID that Amazon MQ generates for the broker.
@@ -41,45 +42,33 @@ object UpdateUserRequest {
   }
   
   @scala.inline
-  implicit class UpdateUserRequestOps[Self <: UpdateUserRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateUserRequestMutableBuilder[Self <: UpdateUserRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrokerId(value: string): Self = StObject.set(x, "BrokerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsoleAccess(value: boolean): Self = StObject.set(x, "ConsoleAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsoleAccessUndefined: Self = StObject.set(x, "ConsoleAccess", js.undefined)
     
     @scala.inline
-    def setBrokerId(value: string): Self = this.set("BrokerId", value.asInstanceOf[js.Any])
+    def setGroups(value: listOfString): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsername(value: string): Self = this.set("Username", value.asInstanceOf[js.Any])
+    def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
     @scala.inline
-    def setConsoleAccess(value: boolean): Self = this.set("ConsoleAccess", value.asInstanceOf[js.Any])
+    def setGroupsVarargs(value: string*): Self = StObject.set(x, "Groups", js.Array(value :_*))
     
     @scala.inline
-    def deleteConsoleAccess: Self = this.set("ConsoleAccess", js.undefined)
+    def setPassword(value: string): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupsVarargs(value: string*): Self = this.set("Groups", js.Array(value :_*))
+    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
     @scala.inline
-    def setGroups(value: listOfString): Self = this.set("Groups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroups: Self = this.set("Groups", js.undefined)
-    
-    @scala.inline
-    def setPassword(value: string): Self = this.set("Password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassword: Self = this.set("Password", js.undefined)
+    def setUsername(value: string): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
   }
 }

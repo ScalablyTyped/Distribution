@@ -1,13 +1,14 @@
 package typings.vscodeLanguageserver.mod
 
 import typings.vscodeJsonrpc.mod.RequestHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver", "TextDocuments")
 @js.native
-class TextDocuments[T] protected () extends js.Object {
+class TextDocuments[T] protected () extends StObject {
   /**
     * Create a new text document manager.
     */

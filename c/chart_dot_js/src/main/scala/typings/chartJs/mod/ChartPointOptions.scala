@@ -1,11 +1,12 @@
 package typings.chartJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartPointOptions extends js.Object {
+trait ChartPointOptions extends StObject {
   
   var backgroundColor: js.UndefOr[ChartColor] = js.native
   
@@ -34,78 +35,66 @@ object ChartPointOptions {
   }
   
   @scala.inline
-  implicit class ChartPointOptionsOps[Self <: ChartPointOptions] (val x: Self) extends AnyVal {
+  implicit class ChartPointOptionsMutableBuilder[Self <: ChartPointOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: ChartColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundColorVarargs(value: String*): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
     
     @scala.inline
-    def setBackgroundColorVarargs(value: String*): Self = this.set("backgroundColor", js.Array(value :_*))
+    def setBorderColor(value: ChartColor): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: ChartColor): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setBorderColorVarargs(value: String*): Self = StObject.set(x, "borderColor", js.Array(value :_*))
     
     @scala.inline
-    def setBorderColorVarargs(value: String*): Self = this.set("borderColor", js.Array(value :_*))
+    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: ChartColor): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setHitRadius(value: Double): Self = StObject.set(x, "hitRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    def setHitRadiusUndefined: Self = StObject.set(x, "hitRadius", js.undefined)
     
     @scala.inline
-    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    def setHoverBorderWidth(value: Double): Self = StObject.set(x, "hoverBorderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHitRadius(value: Double): Self = this.set("hitRadius", value.asInstanceOf[js.Any])
+    def setHoverBorderWidthUndefined: Self = StObject.set(x, "hoverBorderWidth", js.undefined)
     
     @scala.inline
-    def deleteHitRadius: Self = this.set("hitRadius", js.undefined)
+    def setHoverRadius(value: Double): Self = StObject.set(x, "hoverRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverBorderWidth(value: Double): Self = this.set("hoverBorderWidth", value.asInstanceOf[js.Any])
+    def setHoverRadiusUndefined: Self = StObject.set(x, "hoverRadius", js.undefined)
     
     @scala.inline
-    def deleteHoverBorderWidth: Self = this.set("hoverBorderWidth", js.undefined)
+    def setPointStyle(value: PointStyle): Self = StObject.set(x, "pointStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverRadius(value: Double): Self = this.set("hoverRadius", value.asInstanceOf[js.Any])
+    def setPointStyleUndefined: Self = StObject.set(x, "pointStyle", js.undefined)
     
     @scala.inline
-    def deleteHoverRadius: Self = this.set("hoverRadius", js.undefined)
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointStyle(value: PointStyle): Self = this.set("pointStyle", value.asInstanceOf[js.Any])
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def deletePointStyle: Self = this.set("pointStyle", js.undefined)
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
-    
-    @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
   }
 }

@@ -3,16 +3,30 @@ package typings.memfs
 import typings.memfs.encodingMod.TDataOut
 import typings.memfs.encodingMod.TEncodingExtended
 import typings.memfs.nodeMod.Link
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("memfs/lib/Dirent", JSImport.Namespace)
-@js.native
-object direntMod extends js.Object {
+object direntMod {
   
+  @JSImport("memfs/lib/Dirent", JSImport.Default)
   @js.native
-  class Dirent () extends js.Object {
+  class default () extends Dirent
+  /* static members */
+  object default {
+    
+    @JSImport("memfs/lib/Dirent", "default.build")
+    @js.native
+    def build(link: Link): Dirent = js.native
+    @JSImport("memfs/lib/Dirent", "default.build")
+    @js.native
+    def build(link: Link, encoding: TEncodingExtended): Dirent = js.native
+  }
+  
+  @JSImport("memfs/lib/Dirent", "Dirent")
+  @js.native
+  class Dirent () extends StObject {
     
     var _checkModeProperty: js.Any = js.native
     
@@ -35,20 +49,13 @@ object direntMod extends js.Object {
     var name: TDataOut = js.native
   }
   /* static members */
-  @js.native
-  object Dirent extends js.Object {
+  object Dirent {
     
+    @JSImport("memfs/lib/Dirent", "Dirent.build")
+    @js.native
     def build(link: Link): Dirent = js.native
-    def build(link: Link, encoding: TEncodingExtended): Dirent = js.native
-  }
-  
-  @js.native
-  class default () extends Dirent
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def build(link: Link): Dirent = js.native
+    @JSImport("memfs/lib/Dirent", "Dirent.build")
+    @js.native
     def build(link: Link, encoding: TEncodingExtended): Dirent = js.native
   }
 }

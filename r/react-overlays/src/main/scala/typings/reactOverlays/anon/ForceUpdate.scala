@@ -2,12 +2,13 @@ package typings.reactOverlays.anon
 
 import typings.reactOverlays.esmUsePopperMod.State
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ForceUpdate extends js.Object {
+trait ForceUpdate extends StObject {
   
   var arrowProps: (Record[String, _]) with Ref = js.native
   
@@ -39,42 +40,30 @@ object ForceUpdate {
   }
   
   @scala.inline
-  implicit class ForceUpdateOps[Self <: ForceUpdate] (val x: Self) extends AnyVal {
+  implicit class ForceUpdateMutableBuilder[Self <: ForceUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrowProps(value: (Record[String, _]) with Ref): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForceUpdate(value: () => Unit): Self = StObject.set(x, "forceUpdate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlacement(value: typings.reactOverlays.esmUsePopperMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowProps(value: (Record[String, _]) with Ref): Self = this.set("arrowProps", value.asInstanceOf[js.Any])
+    def setProps(value: (Record[String, _]) with Style): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceUpdate(value: () => Unit): Self = this.set("forceUpdate", js.Any.fromFunction0(value))
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacement(value: typings.reactOverlays.esmUsePopperMod.Placement): Self = this.set("placement", value.asInstanceOf[js.Any])
+    def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProps(value: (Record[String, _]) with Style): Self = this.set("props", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setState(value: State): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

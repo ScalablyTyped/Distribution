@@ -1,12 +1,13 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "ApplicationInitStatus")
 @js.native
-class ApplicationInitStatus protected () extends js.Object {
+class ApplicationInitStatus protected () extends StObject {
   def this(appInits: js.Array[js.Function0[_]]) = this()
   
   var appInits: js.Any = js.native

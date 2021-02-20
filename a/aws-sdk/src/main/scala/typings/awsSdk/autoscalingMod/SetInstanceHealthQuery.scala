@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetInstanceHealthQuery extends js.Object {
+trait SetInstanceHealthQuery extends StObject {
   
   /**
     * The health status of the instance. Set to Healthy to have the instance remain in service. Set to Unhealthy to have the instance be out of service. Amazon EC2 Auto Scaling terminates and replaces the unhealthy instance.
@@ -31,30 +32,18 @@ object SetInstanceHealthQuery {
   }
   
   @scala.inline
-  implicit class SetInstanceHealthQueryOps[Self <: SetInstanceHealthQuery] (val x: Self) extends AnyVal {
+  implicit class SetInstanceHealthQueryMutableBuilder[Self <: SetInstanceHealthQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHealthStatus(value: XmlStringMaxLen32): Self = StObject.set(x, "HealthStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceId(value: XmlStringMaxLen19): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShouldRespectGracePeriod(value: ShouldRespectGracePeriod): Self = StObject.set(x, "ShouldRespectGracePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthStatus(value: XmlStringMaxLen32): Self = this.set("HealthStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInstanceId(value: XmlStringMaxLen19): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShouldRespectGracePeriod(value: ShouldRespectGracePeriod): Self = this.set("ShouldRespectGracePeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShouldRespectGracePeriod: Self = this.set("ShouldRespectGracePeriod", js.undefined)
+    def setShouldRespectGracePeriodUndefined: Self = StObject.set(x, "ShouldRespectGracePeriod", js.undefined)
   }
 }

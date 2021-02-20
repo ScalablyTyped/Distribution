@@ -2,13 +2,14 @@ package typings.rcMenu.anon
 
 import typings.rcMenu.interfaceMod.MiniStore
 import typings.rcMenu.menuMod.MenuProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<rc-menu.rc-menu/es/Menu.MenuState> */
 @js.native
-trait PartialMenuState extends js.Object {
+trait PartialMenuState extends StObject {
   
   var inlineOpenKeys: js.UndefOr[js.Array[String]] = js.native
   
@@ -27,45 +28,33 @@ object PartialMenuState {
   }
   
   @scala.inline
-  implicit class PartialMenuStateOps[Self <: PartialMenuState] (val x: Self) extends AnyVal {
+  implicit class PartialMenuStateMutableBuilder[Self <: PartialMenuState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInlineOpenKeys(value: js.Array[String]): Self = StObject.set(x, "inlineOpenKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInlineOpenKeysUndefined: Self = StObject.set(x, "inlineOpenKeys", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInlineOpenKeysVarargs(value: String*): Self = StObject.set(x, "inlineOpenKeys", js.Array(value :_*))
     
     @scala.inline
-    def setInlineOpenKeysVarargs(value: String*): Self = this.set("inlineOpenKeys", js.Array(value :_*))
+    def setPrevProps(value: MenuProps): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInlineOpenKeys(value: js.Array[String]): Self = this.set("inlineOpenKeys", value.asInstanceOf[js.Any])
+    def setPrevPropsUndefined: Self = StObject.set(x, "prevProps", js.undefined)
     
     @scala.inline
-    def deleteInlineOpenKeys: Self = this.set("inlineOpenKeys", js.undefined)
+    def setStore(value: MiniStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrevProps(value: MenuProps): Self = this.set("prevProps", value.asInstanceOf[js.Any])
+    def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     
     @scala.inline
-    def deletePrevProps: Self = this.set("prevProps", js.undefined)
+    def setSwitchingModeFromInline(value: Boolean): Self = StObject.set(x, "switchingModeFromInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStore(value: MiniStore): Self = this.set("store", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStore: Self = this.set("store", js.undefined)
-    
-    @scala.inline
-    def setSwitchingModeFromInline(value: Boolean): Self = this.set("switchingModeFromInline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSwitchingModeFromInline: Self = this.set("switchingModeFromInline", js.undefined)
+    def setSwitchingModeFromInlineUndefined: Self = StObject.set(x, "switchingModeFromInline", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,42 +62,30 @@ object RotationalEquation {
   }
   
   @scala.inline
-  implicit class RotationalEquationOps[Self <: RotationalEquation] (val x: Self) extends AnyVal {
+  implicit class RotationalEquationMutableBuilder[Self <: RotationalEquation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvIi(value: Mat3): Self = StObject.set(x, "invIi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvIj(value: Mat3): Self = StObject.set(x, "invIj", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNi(value: Vec3): Self = StObject.set(x, "ni", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvIi(value: Mat3): Self = this.set("invIi", value.asInstanceOf[js.Any])
+    def setNixnj(value: Vec3): Self = StObject.set(x, "nixnj", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvIj(value: Mat3): Self = this.set("invIj", value.asInstanceOf[js.Any])
+    def setNj(value: Vec3): Self = StObject.set(x, "nj", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNi(value: Vec3): Self = this.set("ni", value.asInstanceOf[js.Any])
+    def setNjxni(value: Vec3): Self = StObject.set(x, "njxni", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNixnj(value: Vec3): Self = this.set("nixnj", value.asInstanceOf[js.Any])
+    def setRelForce(value: Vec3): Self = StObject.set(x, "relForce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNj(value: Vec3): Self = this.set("nj", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNjxni(value: Vec3): Self = this.set("njxni", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelForce(value: Vec3): Self = this.set("relForce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelVel(value: Vec3): Self = this.set("relVel", value.asInstanceOf[js.Any])
+    def setRelVel(value: Vec3): Self = StObject.set(x, "relVel", value.asInstanceOf[js.Any])
   }
 }

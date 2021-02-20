@@ -2,6 +2,7 @@ package typings.postmanCollection.mod
 
 import typings.postmanCollection.anon.Encode
 import typings.postmanCollection.anon.Value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,20 +26,40 @@ class QueryParam protected () extends Property[QueryParamDefinition] {
   var value: Null | String = js.native
 }
 /* static members */
-@JSImport("postman-collection", "QueryParam")
-@js.native
-object QueryParam extends js.Object {
+object QueryParam {
   
-  var _postman_propertyAllowsMultipleValues: Boolean = js.native
+  @JSImport("postman-collection", "QueryParam")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var _postman_propertyIndexKey: String = js.native
+  @JSImport("postman-collection", "QueryParam._postman_propertyAllowsMultipleValues")
+  @js.native
+  def _postman_propertyAllowsMultipleValues: Boolean = js.native
+  @scala.inline
+  def _postman_propertyAllowsMultipleValues_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_postman_propertyAllowsMultipleValues")(x.asInstanceOf[js.Any])
   
+  @JSImport("postman-collection", "QueryParam._postman_propertyIndexKey")
+  @js.native
+  def _postman_propertyIndexKey: String = js.native
+  @scala.inline
+  def _postman_propertyIndexKey_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_postman_propertyIndexKey")(x.asInstanceOf[js.Any])
+  
+  @JSImport("postman-collection", "QueryParam.parse")
+  @js.native
   def parse(query: String): js.Array[QueryParamDefinition] = js.native
   
+  @JSImport("postman-collection", "QueryParam.parseSingle")
+  @js.native
   def parseSingle(param: String, idx: Double, all: js.Array[String]): QueryParamDefinition = js.native
   
+  @JSImport("postman-collection", "QueryParam.unparse")
+  @js.native
   def unparse(params: js.Array[QueryParamDefinition]): String = js.native
+  @JSImport("postman-collection", "QueryParam.unparse")
+  @js.native
   def unparse(params: js.Array[QueryParamDefinition], options: Encode): String = js.native
   
+  @JSImport("postman-collection", "QueryParam.unparseSingle")
+  @js.native
   def unparseSingle(obj: QueryParamDefinition, encode: Boolean): String = js.native
 }

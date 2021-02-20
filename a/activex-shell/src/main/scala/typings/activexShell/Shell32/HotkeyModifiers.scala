@@ -4,6 +4,7 @@ import typings.activexShell.activexShellNumbers.`1`
 import typings.activexShell.activexShellNumbers.`2`
 import typings.activexShell.activexShellNumbers.`4`
 import typings.activexShell.activexShellNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexShell.activexShellNumbers.`4`
   - typings.activexShell.activexShellNumbers.`8`
 */
-trait HotkeyModifiers extends js.Object
+trait HotkeyModifiers extends StObject
 object HotkeyModifiers {
   
   @scala.inline

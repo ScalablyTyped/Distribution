@@ -2,6 +2,7 @@ package typings.sipJs.coreMod
 
 import typings.sipJs.outgoingRequestMod.OutgoingRequestDelegate
 import typings.sipJs.outgoingRequestMod.RequestOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

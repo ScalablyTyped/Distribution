@@ -1,11 +1,12 @@
 package typings.web3CoreHelpers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReconnectOptions extends js.Object {
+trait ReconnectOptions extends StObject {
   
   var auto: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object ReconnectOptions {
   }
   
   @scala.inline
-  implicit class ReconnectOptionsOps[Self <: ReconnectOptions] (val x: Self) extends AnyVal {
+  implicit class ReconnectOptionsMutableBuilder[Self <: ReconnectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuto(value: Boolean): Self = this.set("auto", value.asInstanceOf[js.Any])
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def deleteAuto: Self = this.set("auto", js.undefined)
+    def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setOnTimeout(value: Boolean): Self = StObject.set(x, "onTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAttempts(value: Double): Self = this.set("maxAttempts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxAttempts: Self = this.set("maxAttempts", js.undefined)
-    
-    @scala.inline
-    def setOnTimeout(value: Boolean): Self = this.set("onTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnTimeout: Self = this.set("onTimeout", js.undefined)
+    def setOnTimeoutUndefined: Self = StObject.set(x, "onTimeout", js.undefined)
   }
 }

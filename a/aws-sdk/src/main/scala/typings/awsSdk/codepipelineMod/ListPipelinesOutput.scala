@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPipelinesOutput extends js.Object {
+trait ListPipelinesOutput extends StObject {
   
   /**
     * If the amount of returned information is significantly large, an identifier is also returned. It can be used in a subsequent list pipelines call to return the next set of pipelines in the list.
@@ -26,33 +27,21 @@ object ListPipelinesOutput {
   }
   
   @scala.inline
-  implicit class ListPipelinesOutputOps[Self <: ListPipelinesOutput] (val x: Self) extends AnyVal {
+  implicit class ListPipelinesOutputMutableBuilder[Self <: ListPipelinesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPipelines(value: PipelineList): Self = StObject.set(x, "pipelines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setPipelinesUndefined: Self = StObject.set(x, "pipelines", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setPipelinesVarargs(value: PipelineSummary*): Self = this.set("pipelines", js.Array(value :_*))
-    
-    @scala.inline
-    def setPipelines(value: PipelineList): Self = this.set("pipelines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePipelines: Self = this.set("pipelines", js.undefined)
+    def setPipelinesVarargs(value: PipelineSummary*): Self = StObject.set(x, "pipelines", js.Array(value :_*))
   }
 }

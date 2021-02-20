@@ -3,14 +3,14 @@ package typings.twilsock
 import typings.twilsock.abstractmessageMod.AbstractMessage
 import typings.twilsock.anon.Code
 import typings.twilsock.protocolMod.Protocol.MessageType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilsock/lib/protocol/messages/reply", JSImport.Namespace)
-@js.native
-object replyMod extends js.Object {
+object replyMod {
   
+  @JSImport("twilsock/lib/protocol/messages/reply", "Reply")
   @js.native
   class Reply protected () extends AbstractMessage {
     def this(id: String) = this()

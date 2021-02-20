@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifySnapshotCopyRetentionPeriodMessage extends js.Object {
+trait ModifySnapshotCopyRetentionPeriodMessage extends StObject {
   
   /**
     * The unique identifier of the cluster for which you want to change the retention period for either automated or manual snapshots that are copied to a destination AWS Region. Constraints: Must be the valid name of an existing cluster that has cross-region snapshot copy enabled.
@@ -31,30 +32,18 @@ object ModifySnapshotCopyRetentionPeriodMessage {
   }
   
   @scala.inline
-  implicit class ModifySnapshotCopyRetentionPeriodMessageOps[Self <: ModifySnapshotCopyRetentionPeriodMessage] (val x: Self) extends AnyVal {
+  implicit class ModifySnapshotCopyRetentionPeriodMessageMutableBuilder[Self <: ModifySnapshotCopyRetentionPeriodMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManual(value: Boolean): Self = StObject.set(x, "Manual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManualUndefined: Self = StObject.set(x, "Manual", js.undefined)
     
     @scala.inline
-    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRetentionPeriod(value: Integer): Self = this.set("RetentionPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setManual(value: Boolean): Self = this.set("Manual", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManual: Self = this.set("Manual", js.undefined)
+    def setRetentionPeriod(value: Integer): Self = StObject.set(x, "RetentionPeriod", value.asInstanceOf[js.Any])
   }
 }

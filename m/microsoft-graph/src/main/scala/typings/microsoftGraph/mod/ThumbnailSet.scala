@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,54 +29,42 @@ object ThumbnailSet {
   }
   
   @scala.inline
-  implicit class ThumbnailSetOps[Self <: ThumbnailSet] (val x: Self) extends AnyVal {
+  implicit class ThumbnailSetMutableBuilder[Self <: ThumbnailSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLarge(value: NullableOption[Thumbnail]): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLargeNull: Self = StObject.set(x, "large", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
     
     @scala.inline
-    def setLarge(value: NullableOption[Thumbnail]): Self = this.set("large", value.asInstanceOf[js.Any])
+    def setMedium(value: NullableOption[Thumbnail]): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLarge: Self = this.set("large", js.undefined)
+    def setMediumNull: Self = StObject.set(x, "medium", null)
     
     @scala.inline
-    def setLargeNull: Self = this.set("large", null)
+    def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
     
     @scala.inline
-    def setMedium(value: NullableOption[Thumbnail]): Self = this.set("medium", value.asInstanceOf[js.Any])
+    def setSmall(value: NullableOption[Thumbnail]): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMedium: Self = this.set("medium", js.undefined)
+    def setSmallNull: Self = StObject.set(x, "small", null)
     
     @scala.inline
-    def setMediumNull: Self = this.set("medium", null)
+    def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
     
     @scala.inline
-    def setSmall(value: NullableOption[Thumbnail]): Self = this.set("small", value.asInstanceOf[js.Any])
+    def setSource(value: NullableOption[Thumbnail]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSmall: Self = this.set("small", js.undefined)
+    def setSourceNull: Self = StObject.set(x, "source", null)
     
     @scala.inline
-    def setSmallNull: Self = this.set("small", null)
-    
-    @scala.inline
-    def setSource(value: NullableOption[Thumbnail]): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setSourceNull: Self = this.set("source", null)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

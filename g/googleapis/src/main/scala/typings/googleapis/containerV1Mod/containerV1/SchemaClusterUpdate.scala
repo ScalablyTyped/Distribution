@@ -1,5 +1,6 @@
 package typings.googleapis.containerV1Mod.containerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * provided.
   */
 @js.native
-trait SchemaClusterUpdate extends js.Object {
+trait SchemaClusterUpdate extends StObject {
   
   /**
     * Configurations for the various addons available to run in the cluster.
@@ -95,75 +96,63 @@ object SchemaClusterUpdate {
   }
   
   @scala.inline
-  implicit class SchemaClusterUpdateOps[Self <: SchemaClusterUpdate] (val x: Self) extends AnyVal {
+  implicit class SchemaClusterUpdateMutableBuilder[Self <: SchemaClusterUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesiredAddonsConfig(value: SchemaAddonsConfig): Self = StObject.set(x, "desiredAddonsConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesiredAddonsConfigUndefined: Self = StObject.set(x, "desiredAddonsConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDesiredImageType(value: String): Self = StObject.set(x, "desiredImageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredAddonsConfig(value: SchemaAddonsConfig): Self = this.set("desiredAddonsConfig", value.asInstanceOf[js.Any])
+    def setDesiredImageTypeUndefined: Self = StObject.set(x, "desiredImageType", js.undefined)
     
     @scala.inline
-    def deleteDesiredAddonsConfig: Self = this.set("desiredAddonsConfig", js.undefined)
+    def setDesiredLocations(value: js.Array[String]): Self = StObject.set(x, "desiredLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredImageType(value: String): Self = this.set("desiredImageType", value.asInstanceOf[js.Any])
+    def setDesiredLocationsUndefined: Self = StObject.set(x, "desiredLocations", js.undefined)
     
     @scala.inline
-    def deleteDesiredImageType: Self = this.set("desiredImageType", js.undefined)
+    def setDesiredLocationsVarargs(value: String*): Self = StObject.set(x, "desiredLocations", js.Array(value :_*))
     
     @scala.inline
-    def setDesiredLocationsVarargs(value: String*): Self = this.set("desiredLocations", js.Array(value :_*))
+    def setDesiredMasterAuthorizedNetworksConfig(value: SchemaMasterAuthorizedNetworksConfig): Self = StObject.set(x, "desiredMasterAuthorizedNetworksConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredLocations(value: js.Array[String]): Self = this.set("desiredLocations", value.asInstanceOf[js.Any])
+    def setDesiredMasterAuthorizedNetworksConfigUndefined: Self = StObject.set(x, "desiredMasterAuthorizedNetworksConfig", js.undefined)
     
     @scala.inline
-    def deleteDesiredLocations: Self = this.set("desiredLocations", js.undefined)
+    def setDesiredMasterVersion(value: String): Self = StObject.set(x, "desiredMasterVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredMasterAuthorizedNetworksConfig(value: SchemaMasterAuthorizedNetworksConfig): Self = this.set("desiredMasterAuthorizedNetworksConfig", value.asInstanceOf[js.Any])
+    def setDesiredMasterVersionUndefined: Self = StObject.set(x, "desiredMasterVersion", js.undefined)
     
     @scala.inline
-    def deleteDesiredMasterAuthorizedNetworksConfig: Self = this.set("desiredMasterAuthorizedNetworksConfig", js.undefined)
+    def setDesiredMonitoringService(value: String): Self = StObject.set(x, "desiredMonitoringService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredMasterVersion(value: String): Self = this.set("desiredMasterVersion", value.asInstanceOf[js.Any])
+    def setDesiredMonitoringServiceUndefined: Self = StObject.set(x, "desiredMonitoringService", js.undefined)
     
     @scala.inline
-    def deleteDesiredMasterVersion: Self = this.set("desiredMasterVersion", js.undefined)
+    def setDesiredNodePoolAutoscaling(value: SchemaNodePoolAutoscaling): Self = StObject.set(x, "desiredNodePoolAutoscaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredMonitoringService(value: String): Self = this.set("desiredMonitoringService", value.asInstanceOf[js.Any])
+    def setDesiredNodePoolAutoscalingUndefined: Self = StObject.set(x, "desiredNodePoolAutoscaling", js.undefined)
     
     @scala.inline
-    def deleteDesiredMonitoringService: Self = this.set("desiredMonitoringService", js.undefined)
+    def setDesiredNodePoolId(value: String): Self = StObject.set(x, "desiredNodePoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredNodePoolAutoscaling(value: SchemaNodePoolAutoscaling): Self = this.set("desiredNodePoolAutoscaling", value.asInstanceOf[js.Any])
+    def setDesiredNodePoolIdUndefined: Self = StObject.set(x, "desiredNodePoolId", js.undefined)
     
     @scala.inline
-    def deleteDesiredNodePoolAutoscaling: Self = this.set("desiredNodePoolAutoscaling", js.undefined)
+    def setDesiredNodeVersion(value: String): Self = StObject.set(x, "desiredNodeVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredNodePoolId(value: String): Self = this.set("desiredNodePoolId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDesiredNodePoolId: Self = this.set("desiredNodePoolId", js.undefined)
-    
-    @scala.inline
-    def setDesiredNodeVersion(value: String): Self = this.set("desiredNodeVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDesiredNodeVersion: Self = this.set("desiredNodeVersion", js.undefined)
+    def setDesiredNodeVersionUndefined: Self = StObject.set(x, "desiredNodeVersion", js.undefined)
   }
 }

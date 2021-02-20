@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Storage.Search
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FolderDepth extends js.Object
+sealed trait FolderDepth extends StObject
 /** Indicates whether all files and subfolders of the folder being queried will be enumerated or if only the top-level files and subfolders will be enumerated. */
 @JSGlobal("Windows.Storage.Search.FolderDepth")
 @js.native
-object FolderDepth extends js.Object {
+object FolderDepth extends StObject {
   
   /** Perform a deep enumeration of the folder contents. Windows traverses through subfolders to discover content and presents the results in a single list that combines all discovered content. */
   @js.native

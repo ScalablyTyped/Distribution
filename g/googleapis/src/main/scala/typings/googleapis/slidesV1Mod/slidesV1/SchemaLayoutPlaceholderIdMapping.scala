@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * slide from a specified layout.
   */
 @js.native
-trait SchemaLayoutPlaceholderIdMapping extends js.Object {
+trait SchemaLayoutPlaceholderIdMapping extends StObject {
   
   /**
     * The placeholder on a layout that will be applied to a slide. Only type
@@ -46,36 +47,24 @@ object SchemaLayoutPlaceholderIdMapping {
   }
   
   @scala.inline
-  implicit class SchemaLayoutPlaceholderIdMappingOps[Self <: SchemaLayoutPlaceholderIdMapping] (val x: Self) extends AnyVal {
+  implicit class SchemaLayoutPlaceholderIdMappingMutableBuilder[Self <: SchemaLayoutPlaceholderIdMapping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayoutPlaceholder(value: SchemaPlaceholder): Self = StObject.set(x, "layoutPlaceholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayoutPlaceholderObjectId(value: String): Self = StObject.set(x, "layoutPlaceholderObjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLayoutPlaceholderObjectIdUndefined: Self = StObject.set(x, "layoutPlaceholderObjectId", js.undefined)
     
     @scala.inline
-    def setLayoutPlaceholder(value: SchemaPlaceholder): Self = this.set("layoutPlaceholder", value.asInstanceOf[js.Any])
+    def setLayoutPlaceholderUndefined: Self = StObject.set(x, "layoutPlaceholder", js.undefined)
     
     @scala.inline
-    def deleteLayoutPlaceholder: Self = this.set("layoutPlaceholder", js.undefined)
+    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayoutPlaceholderObjectId(value: String): Self = this.set("layoutPlaceholderObjectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayoutPlaceholderObjectId: Self = this.set("layoutPlaceholderObjectId", js.undefined)
-    
-    @scala.inline
-    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

@@ -35,13 +35,14 @@ import typings.reactNativeElements.reactNativeElementsStrings.radiobutton_unchec
 import typings.reactNativeElements.reactNativeElementsStrings.resize
 import typings.reactNativeElements.reactNativeElementsStrings.scale
 import typings.reactNativeElements.reactNativeElementsStrings.yes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.ImageProps>> */
 @js.native
-trait RecursivePartialPartialIm extends js.Object {
+trait RecursivePartialPartialIm extends StObject {
   
   var Component: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.native
   
@@ -172,342 +173,330 @@ object RecursivePartialPartialIm {
   }
   
   @scala.inline
-  implicit class RecursivePartialPartialImOps[Self <: RecursivePartialPartialIm] (val x: Self) extends AnyVal {
+  implicit class RecursivePartialPartialImMutableBuilder[Self <: RecursivePartialPartialIm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibilityActions(value: RecursivePartial[js.UndefOr[js.Array[AccessibilityActionInfo]]]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessibilityComponentType(value: RecursivePartial[js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked]]): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponent(value: RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]): Self = this.set("Component", value.asInstanceOf[js.Any])
+    def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
     
     @scala.inline
-    def deleteComponent: Self = this.set("Component", js.undefined)
+    def setAccessibilityElementsHidden(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageComponent(value: RecursivePartial[js.UndefOr[ComponentType[_]]]): Self = this.set("ImageComponent", value.asInstanceOf[js.Any])
+    def setAccessibilityElementsHiddenUndefined: Self = StObject.set(x, "accessibilityElementsHidden", js.undefined)
     
     @scala.inline
-    def deleteImageComponent: Self = this.set("ImageComponent", js.undefined)
+    def setAccessibilityHint(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "accessibilityHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholderContent(value: RecursivePartial[js.UndefOr[ReactElement]]): Self = this.set("PlaceholderContent", value.asInstanceOf[js.Any])
+    def setAccessibilityHintUndefined: Self = StObject.set(x, "accessibilityHint", js.undefined)
     
     @scala.inline
-    def deletePlaceholderContent: Self = this.set("PlaceholderContent", js.undefined)
+    def setAccessibilityIgnoresInvertColors(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessibilityIgnoresInvertColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityActions(value: RecursivePartial[js.UndefOr[js.Array[AccessibilityActionInfo]]]): Self = this.set("accessibilityActions", value.asInstanceOf[js.Any])
+    def setAccessibilityIgnoresInvertColorsUndefined: Self = StObject.set(x, "accessibilityIgnoresInvertColors", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityActions: Self = this.set("accessibilityActions", js.undefined)
+    def setAccessibilityLabel(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityComponentType(value: RecursivePartial[js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked]]): Self = this.set("accessibilityComponentType", value.asInstanceOf[js.Any])
+    def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityComponentType: Self = this.set("accessibilityComponentType", js.undefined)
+    def setAccessibilityLiveRegion(value: RecursivePartial[js.UndefOr[none | polite | assertive]]): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityElementsHidden(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("accessibilityElementsHidden", value.asInstanceOf[js.Any])
+    def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityElementsHidden: Self = this.set("accessibilityElementsHidden", js.undefined)
+    def setAccessibilityRole(value: RecursivePartial[js.UndefOr[AccessibilityRole]]): Self = StObject.set(x, "accessibilityRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityHint(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("accessibilityHint", value.asInstanceOf[js.Any])
+    def setAccessibilityRoleUndefined: Self = StObject.set(x, "accessibilityRole", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityHint: Self = this.set("accessibilityHint", js.undefined)
+    def setAccessibilityState(value: RecursivePartial[js.UndefOr[AccessibilityState]]): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityIgnoresInvertColors(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("accessibilityIgnoresInvertColors", value.asInstanceOf[js.Any])
+    def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityIgnoresInvertColors: Self = this.set("accessibilityIgnoresInvertColors", js.undefined)
+    def setAccessibilityTraits(value: RecursivePartial[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityLabel(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("accessibilityLabel", value.asInstanceOf[js.Any])
+    def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityLabel: Self = this.set("accessibilityLabel", js.undefined)
+    def setAccessibilityValue(value: RecursivePartial[js.UndefOr[AccessibilityValue]]): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityLiveRegion(value: RecursivePartial[js.UndefOr[none | polite | assertive]]): Self = this.set("accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    def setAccessibilityValueUndefined: Self = StObject.set(x, "accessibilityValue", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityLiveRegion: Self = this.set("accessibilityLiveRegion", js.undefined)
+    def setAccessibilityViewIsModal(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessibilityViewIsModal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityRole(value: RecursivePartial[js.UndefOr[AccessibilityRole]]): Self = this.set("accessibilityRole", value.asInstanceOf[js.Any])
+    def setAccessibilityViewIsModalUndefined: Self = StObject.set(x, "accessibilityViewIsModal", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityRole: Self = this.set("accessibilityRole", js.undefined)
+    def setAccessible(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityState(value: RecursivePartial[js.UndefOr[AccessibilityState]]): Self = this.set("accessibilityState", value.asInstanceOf[js.Any])
+    def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityState: Self = this.set("accessibilityState", js.undefined)
+    def setBlurRadius(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityTraits(value: RecursivePartial[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]]): Self = this.set("accessibilityTraits", value.asInstanceOf[js.Any])
+    def setBlurRadiusUndefined: Self = StObject.set(x, "blurRadius", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityTraits: Self = this.set("accessibilityTraits", js.undefined)
+    def setBorderBottomLeftRadius(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityValue(value: RecursivePartial[js.UndefOr[AccessibilityValue]]): Self = this.set("accessibilityValue", value.asInstanceOf[js.Any])
+    def setBorderBottomLeftRadiusUndefined: Self = StObject.set(x, "borderBottomLeftRadius", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityValue: Self = this.set("accessibilityValue", js.undefined)
+    def setBorderBottomRightRadius(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "borderBottomRightRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityViewIsModal(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("accessibilityViewIsModal", value.asInstanceOf[js.Any])
+    def setBorderBottomRightRadiusUndefined: Self = StObject.set(x, "borderBottomRightRadius", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityViewIsModal: Self = this.set("accessibilityViewIsModal", js.undefined)
+    def setBorderRadius(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessible(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("accessible", value.asInstanceOf[js.Any])
+    def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
     @scala.inline
-    def deleteAccessible: Self = this.set("accessible", js.undefined)
+    def setBorderTopLeftRadius(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "borderTopLeftRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlurRadius(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("blurRadius", value.asInstanceOf[js.Any])
+    def setBorderTopLeftRadiusUndefined: Self = StObject.set(x, "borderTopLeftRadius", js.undefined)
     
     @scala.inline
-    def deleteBlurRadius: Self = this.set("blurRadius", js.undefined)
+    def setBorderTopRightRadius(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "borderTopRightRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBottomLeftRadius(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("borderBottomLeftRadius", value.asInstanceOf[js.Any])
+    def setBorderTopRightRadiusUndefined: Self = StObject.set(x, "borderTopRightRadius", js.undefined)
     
     @scala.inline
-    def deleteBorderBottomLeftRadius: Self = this.set("borderBottomLeftRadius", js.undefined)
+    def setCapInsets(value: RecursivePartial[js.UndefOr[Insets]]): Self = StObject.set(x, "capInsets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBottomRightRadius(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("borderBottomRightRadius", value.asInstanceOf[js.Any])
+    def setCapInsetsUndefined: Self = StObject.set(x, "capInsets", js.undefined)
     
     @scala.inline
-    def deleteBorderBottomRightRadius: Self = this.set("borderBottomRightRadius", js.undefined)
+    def setComponent(value: RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderRadius(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("borderRadius", value.asInstanceOf[js.Any])
+    def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
     
     @scala.inline
-    def deleteBorderRadius: Self = this.set("borderRadius", js.undefined)
+    def setContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderTopLeftRadius(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("borderTopLeftRadius", value.asInstanceOf[js.Any])
+    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
     @scala.inline
-    def deleteBorderTopLeftRadius: Self = this.set("borderTopLeftRadius", js.undefined)
+    def setDefaultSource(value: RecursivePartial[js.UndefOr[ImageURISource | Double]]): Self = StObject.set(x, "defaultSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderTopRightRadius(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("borderTopRightRadius", value.asInstanceOf[js.Any])
+    def setDefaultSourceUndefined: Self = StObject.set(x, "defaultSource", js.undefined)
     
     @scala.inline
-    def deleteBorderTopRightRadius: Self = this.set("borderTopRightRadius", js.undefined)
+    def setFadeDuration(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "fadeDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapInsets(value: RecursivePartial[js.UndefOr[Insets]]): Self = this.set("capInsets", value.asInstanceOf[js.Any])
+    def setFadeDurationUndefined: Self = StObject.set(x, "fadeDuration", js.undefined)
     
     @scala.inline
-    def deleteCapInsets: Self = this.set("capInsets", js.undefined)
+    def setHeight(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    def setImageComponent(value: RecursivePartial[js.UndefOr[ComponentType[_]]]): Self = StObject.set(x, "ImageComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSource(value: RecursivePartial[js.UndefOr[ImageURISource | Double]]): Self = this.set("defaultSource", value.asInstanceOf[js.Any])
+    def setImageComponentUndefined: Self = StObject.set(x, "ImageComponent", js.undefined)
     
     @scala.inline
-    def deleteDefaultSource: Self = this.set("defaultSource", js.undefined)
+    def setImportantForAccessibility(value: RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]]): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFadeDuration(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("fadeDuration", value.asInstanceOf[js.Any])
+    def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
     
     @scala.inline
-    def deleteFadeDuration: Self = this.set("fadeDuration", js.undefined)
+    def setLoadingIndicatorSource(value: RecursivePartial[js.UndefOr[ImageURISource]]): Self = StObject.set(x, "loadingIndicatorSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLoadingIndicatorSourceUndefined: Self = StObject.set(x, "loadingIndicatorSource", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setOnAccessibilityAction(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]]]): Self = StObject.set(x, "onAccessibilityAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportantForAccessibility(value: RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]]): Self = this.set("importantForAccessibility", value.asInstanceOf[js.Any])
+    def setOnAccessibilityActionUndefined: Self = StObject.set(x, "onAccessibilityAction", js.undefined)
     
     @scala.inline
-    def deleteImportantForAccessibility: Self = this.set("importantForAccessibility", js.undefined)
+    def setOnAccessibilityEscape(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onAccessibilityEscape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadingIndicatorSource(value: RecursivePartial[js.UndefOr[ImageURISource]]): Self = this.set("loadingIndicatorSource", value.asInstanceOf[js.Any])
+    def setOnAccessibilityEscapeUndefined: Self = StObject.set(x, "onAccessibilityEscape", js.undefined)
     
     @scala.inline
-    def deleteLoadingIndicatorSource: Self = this.set("loadingIndicatorSource", js.undefined)
+    def setOnAccessibilityTap(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onAccessibilityTap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnAccessibilityAction(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]]]): Self = this.set("onAccessibilityAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnAccessibilityAction: Self = this.set("onAccessibilityAction", js.undefined)
-    
-    @scala.inline
-    def setOnAccessibilityEscape(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = this.set("onAccessibilityEscape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnAccessibilityEscape: Self = this.set("onAccessibilityEscape", js.undefined)
-    
-    @scala.inline
-    def setOnAccessibilityTap(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = this.set("onAccessibilityTap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnAccessibilityTap: Self = this.set("onAccessibilityTap", js.undefined)
+    def setOnAccessibilityTapUndefined: Self = StObject.set(x, "onAccessibilityTap", js.undefined)
     
     @scala.inline
     def setOnError(
       value: RecursivePartial[
           js.UndefOr[js.Function1[/* error */ NativeSyntheticEvent[ImageErrorEventData], Unit]]
         ]
-    ): Self = this.set("onError", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def setOnLayout(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]]): Self = this.set("onLayout", value.asInstanceOf[js.Any])
+    def setOnLayout(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]]): Self = StObject.set(x, "onLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnLayout: Self = this.set("onLayout", js.undefined)
+    def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
     
     @scala.inline
     def setOnLoad(
       value: RecursivePartial[
           js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[ImageLoadEventData], Unit]]
         ]
-    ): Self = this.set("onLoad", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    def setOnLoadEnd(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onLoadEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnLoadEnd(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = this.set("onLoadEnd", value.asInstanceOf[js.Any])
+    def setOnLoadEndUndefined: Self = StObject.set(x, "onLoadEnd", js.undefined)
     
     @scala.inline
-    def deleteOnLoadEnd: Self = this.set("onLoadEnd", js.undefined)
+    def setOnLoadStart(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onLoadStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnLoadStart(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = this.set("onLoadStart", value.asInstanceOf[js.Any])
+    def setOnLoadStartUndefined: Self = StObject.set(x, "onLoadStart", js.undefined)
     
     @scala.inline
-    def deleteOnLoadStart: Self = this.set("onLoadStart", js.undefined)
+    def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
     @scala.inline
-    def setOnLongPress(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = this.set("onLongPress", value.asInstanceOf[js.Any])
+    def setOnLongPress(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onLongPress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnLongPress: Self = this.set("onLongPress", js.undefined)
+    def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
     
     @scala.inline
-    def setOnMagicTap(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = this.set("onMagicTap", value.asInstanceOf[js.Any])
+    def setOnMagicTap(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onMagicTap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnMagicTap: Self = this.set("onMagicTap", js.undefined)
+    def setOnMagicTapUndefined: Self = StObject.set(x, "onMagicTap", js.undefined)
     
     @scala.inline
-    def setOnPartialLoad(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = this.set("onPartialLoad", value.asInstanceOf[js.Any])
+    def setOnPartialLoad(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onPartialLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnPartialLoad: Self = this.set("onPartialLoad", js.undefined)
+    def setOnPartialLoadUndefined: Self = StObject.set(x, "onPartialLoad", js.undefined)
     
     @scala.inline
-    def setOnPress(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = this.set("onPress", value.asInstanceOf[js.Any])
+    def setOnPress(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onPress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
     @scala.inline
     def setOnProgress(
       value: RecursivePartial[
           js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[ImageProgressEventDataIOS], Unit]]
         ]
-    ): Self = this.set("onProgress", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "onProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnProgress: Self = this.set("onProgress", js.undefined)
+    def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
     
     @scala.inline
-    def setPlaceholderStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = this.set("placeholderStyle", value.asInstanceOf[js.Any])
+    def setPlaceholderContent(value: RecursivePartial[js.UndefOr[ReactElement]]): Self = StObject.set(x, "PlaceholderContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlaceholderStyle: Self = this.set("placeholderStyle", js.undefined)
+    def setPlaceholderContentUndefined: Self = StObject.set(x, "PlaceholderContent", js.undefined)
     
     @scala.inline
-    def setProgressiveRenderingEnabled(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("progressiveRenderingEnabled", value.asInstanceOf[js.Any])
+    def setPlaceholderStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "placeholderStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProgressiveRenderingEnabled: Self = this.set("progressiveRenderingEnabled", js.undefined)
+    def setPlaceholderStyleUndefined: Self = StObject.set(x, "placeholderStyle", js.undefined)
     
     @scala.inline
-    def setResizeMethod(value: RecursivePartial[js.UndefOr[auto | resize | scale]]): Self = this.set("resizeMethod", value.asInstanceOf[js.Any])
+    def setProgressiveRenderingEnabled(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "progressiveRenderingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResizeMethod: Self = this.set("resizeMethod", js.undefined)
+    def setProgressiveRenderingEnabledUndefined: Self = StObject.set(x, "progressiveRenderingEnabled", js.undefined)
     
     @scala.inline
-    def setResizeMode(value: RecursivePartial[js.UndefOr[ImageResizeMode]]): Self = this.set("resizeMode", value.asInstanceOf[js.Any])
+    def setResizeMethod(value: RecursivePartial[js.UndefOr[auto | resize | scale]]): Self = StObject.set(x, "resizeMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResizeMode: Self = this.set("resizeMode", js.undefined)
+    def setResizeMethodUndefined: Self = StObject.set(x, "resizeMethod", js.undefined)
     
     @scala.inline
-    def setSource(value: RecursivePartial[js.UndefOr[ImageSourcePropType]]): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setResizeMode(value: RecursivePartial[js.UndefOr[ImageResizeMode]]): Self = StObject.set(x, "resizeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setResizeModeUndefined: Self = StObject.set(x, "resizeMode", js.undefined)
     
     @scala.inline
-    def setStyle(value: RecursivePartial[js.UndefOr[StyleProp[ImageStyle]]]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setSource(value: RecursivePartial[js.UndefOr[ImageSourcePropType]]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setTestID(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("testID", value.asInstanceOf[js.Any])
+    def setStyle(value: RecursivePartial[js.UndefOr[StyleProp[ImageStyle]]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTestID: Self = this.set("testID", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setTransition(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("transition", value.asInstanceOf[js.Any])
+    def setTestID(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransition: Self = this.set("transition", js.undefined)
+    def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
     @scala.inline
-    def setTransitionDuration(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("transitionDuration", value.asInstanceOf[js.Any])
+    def setTransition(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransitionDuration: Self = this.set("transitionDuration", js.undefined)
+    def setTransitionDuration(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    
+    @scala.inline
+    def setWidth(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

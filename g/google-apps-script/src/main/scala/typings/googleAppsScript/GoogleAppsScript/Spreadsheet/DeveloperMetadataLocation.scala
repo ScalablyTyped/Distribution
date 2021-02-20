@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Access developer metadata location information.
   */
 @js.native
-trait DeveloperMetadataLocation extends js.Object {
+trait DeveloperMetadataLocation extends StObject {
   
   def getColumn(): Range | Null = js.native
   
@@ -35,33 +36,21 @@ object DeveloperMetadataLocation {
   }
   
   @scala.inline
-  implicit class DeveloperMetadataLocationOps[Self <: DeveloperMetadataLocation] (val x: Self) extends AnyVal {
+  implicit class DeveloperMetadataLocationMutableBuilder[Self <: DeveloperMetadataLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetColumn(value: () => Range | Null): Self = StObject.set(x, "getColumn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLocationType(value: () => DeveloperMetadataLocationType): Self = StObject.set(x, "getLocationType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRow(value: () => Range | Null): Self = StObject.set(x, "getRow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetColumn(value: () => Range | Null): Self = this.set("getColumn", js.Any.fromFunction0(value))
+    def setGetSheet(value: () => Sheet | Null): Self = StObject.set(x, "getSheet", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLocationType(value: () => DeveloperMetadataLocationType): Self = this.set("getLocationType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRow(value: () => Range | Null): Self = this.set("getRow", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSheet(value: () => Sheet | Null): Self = this.set("getSheet", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSpreadsheet(value: () => typings.googleAppsScript.GoogleAppsScript.Spreadsheet.Spreadsheet | Null): Self = this.set("getSpreadsheet", js.Any.fromFunction0(value))
+    def setGetSpreadsheet(value: () => typings.googleAppsScript.GoogleAppsScript.Spreadsheet.Spreadsheet | Null): Self = StObject.set(x, "getSpreadsheet", js.Any.fromFunction0(value))
   }
 }

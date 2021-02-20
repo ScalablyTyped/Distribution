@@ -1,12 +1,13 @@
 package typings.ionicCliFramework.definitionsMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PackageJson extends js.Object {
+trait PackageJson extends StObject {
   
   var bin: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.native
   
@@ -33,60 +34,48 @@ object PackageJson {
   }
   
   @scala.inline
-  implicit class PackageJsonOps[Self <: PackageJson] (val x: Self) extends AnyVal {
+  implicit class PackageJsonMutableBuilder[Self <: PackageJson] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBin(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBinUndefined: Self = StObject.set(x, "bin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDependencies(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBin(value: StringDictionary[js.UndefOr[String]]): Self = this.set("bin", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteBin: Self = this.set("bin", js.undefined)
+    def setDevDependencies(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "devDependencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependencies(value: StringDictionary[js.UndefOr[String]]): Self = this.set("dependencies", value.asInstanceOf[js.Any])
+    def setDevDependenciesUndefined: Self = StObject.set(x, "devDependencies", js.undefined)
     
     @scala.inline
-    def deleteDependencies: Self = this.set("dependencies", js.undefined)
+    def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevDependencies(value: StringDictionary[js.UndefOr[String]]): Self = this.set("devDependencies", value.asInstanceOf[js.Any])
+    def setScripts(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDevDependencies: Self = this.set("devDependencies", js.undefined)
+    def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
     
     @scala.inline
-    def setMain(value: String): Self = this.set("main", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMain: Self = this.set("main", js.undefined)
-    
-    @scala.inline
-    def setScripts(value: StringDictionary[js.UndefOr[String]]): Self = this.set("scripts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScripts: Self = this.set("scripts", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

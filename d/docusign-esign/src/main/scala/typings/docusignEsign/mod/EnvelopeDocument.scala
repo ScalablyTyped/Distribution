@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvelopeDocument extends js.Object {
+trait EnvelopeDocument extends StObject {
   
   /**
     * If recipients were added by converting form fields into tabs, their ids appear here. Read only.
@@ -187,192 +188,180 @@ object EnvelopeDocument {
   }
   
   @scala.inline
-  implicit class EnvelopeDocumentOps[Self <: EnvelopeDocument] (val x: Self) extends AnyVal {
+  implicit class EnvelopeDocumentMutableBuilder[Self <: EnvelopeDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddedRecipientIds(value: js.Array[String]): Self = StObject.set(x, "addedRecipientIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddedRecipientIdsUndefined: Self = StObject.set(x, "addedRecipientIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddedRecipientIdsVarargs(value: String*): Self = StObject.set(x, "addedRecipientIds", js.Array(value :_*))
     
     @scala.inline
-    def setAddedRecipientIdsVarargs(value: String*): Self = this.set("addedRecipientIds", js.Array(value :_*))
+    def setAttachmentTabId(value: String): Self = StObject.set(x, "attachmentTabId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddedRecipientIds(value: js.Array[String]): Self = this.set("addedRecipientIds", value.asInstanceOf[js.Any])
+    def setAttachmentTabIdUndefined: Self = StObject.set(x, "attachmentTabId", js.undefined)
     
     @scala.inline
-    def deleteAddedRecipientIds: Self = this.set("addedRecipientIds", js.undefined)
+    def setAuthoritativeCopy(value: String): Self = StObject.set(x, "authoritativeCopy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentTabId(value: String): Self = this.set("attachmentTabId", value.asInstanceOf[js.Any])
+    def setAuthoritativeCopyMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "authoritativeCopyMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttachmentTabId: Self = this.set("attachmentTabId", js.undefined)
+    def setAuthoritativeCopyMetadataUndefined: Self = StObject.set(x, "authoritativeCopyMetadata", js.undefined)
     
     @scala.inline
-    def setAuthoritativeCopy(value: String): Self = this.set("authoritativeCopy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthoritativeCopy: Self = this.set("authoritativeCopy", js.undefined)
-    
-    @scala.inline
-    def setAuthoritativeCopyMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("authoritativeCopyMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthoritativeCopyMetadata: Self = this.set("authoritativeCopyMetadata", js.undefined)
-    
-    @scala.inline
-    def setAvailableDocumentTypesVarargs(value: (/* This object contains information about the type of signature. */ SignatureType)*): Self = this.set("availableDocumentTypes", js.Array(value :_*))
+    def setAuthoritativeCopyUndefined: Self = StObject.set(x, "authoritativeCopy", js.undefined)
     
     @scala.inline
     def setAvailableDocumentTypes(
       value: js.Array[
           /* This object contains information about the type of signature. */ SignatureType
         ]
-    ): Self = this.set("availableDocumentTypes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "availableDocumentTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAvailableDocumentTypes: Self = this.set("availableDocumentTypes", js.undefined)
+    def setAvailableDocumentTypesUndefined: Self = StObject.set(x, "availableDocumentTypes", js.undefined)
     
     @scala.inline
-    def setContainsPdfFormFields(value: String): Self = this.set("containsPdfFormFields", value.asInstanceOf[js.Any])
+    def setAvailableDocumentTypesVarargs(value: (/* This object contains information about the type of signature. */ SignatureType)*): Self = StObject.set(x, "availableDocumentTypes", js.Array(value :_*))
     
     @scala.inline
-    def deleteContainsPdfFormFields: Self = this.set("containsPdfFormFields", js.undefined)
+    def setContainsPdfFormFields(value: String): Self = StObject.set(x, "containsPdfFormFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay(value: String): Self = this.set("display", value.asInstanceOf[js.Any])
+    def setContainsPdfFormFieldsUndefined: Self = StObject.set(x, "containsPdfFormFields", js.undefined)
     
     @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("displayMetadata", value.asInstanceOf[js.Any])
+    def setDisplayMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "displayMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayMetadata: Self = this.set("displayMetadata", js.undefined)
+    def setDisplayMetadataUndefined: Self = StObject.set(x, "displayMetadata", js.undefined)
     
     @scala.inline
-    def setDocumentFieldsVarargs(
-      value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
-    ): Self = this.set("documentFields", js.Array(value :_*))
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
     def setDocumentFields(
       value: js.Array[
           /* A name-value pair that describes an item and provides a value for the item. */ NameValue
         ]
-    ): Self = this.set("documentFields", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "documentFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocumentFields: Self = this.set("documentFields", js.undefined)
+    def setDocumentFieldsUndefined: Self = StObject.set(x, "documentFields", js.undefined)
     
     @scala.inline
-    def setDocumentId(value: String): Self = this.set("documentId", value.asInstanceOf[js.Any])
+    def setDocumentFieldsVarargs(
+      value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
+    ): Self = StObject.set(x, "documentFields", js.Array(value :_*))
     
     @scala.inline
-    def deleteDocumentId: Self = this.set("documentId", js.undefined)
+    def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentIdGuid(value: String): Self = this.set("documentIdGuid", value.asInstanceOf[js.Any])
+    def setDocumentIdGuid(value: String): Self = StObject.set(x, "documentIdGuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocumentIdGuid: Self = this.set("documentIdGuid", js.undefined)
+    def setDocumentIdGuidUndefined: Self = StObject.set(x, "documentIdGuid", js.undefined)
+    
+    @scala.inline
+    def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
     
     @scala.inline
     def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-    ): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def setIncludeInDownload(value: String): Self = this.set("includeInDownload", value.asInstanceOf[js.Any])
+    def setIncludeInDownload(value: String): Self = StObject.set(x, "includeInDownload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncludeInDownload: Self = this.set("includeInDownload", js.undefined)
+    def setIncludeInDownloadMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "includeInDownloadMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeInDownloadMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("includeInDownloadMetadata", value.asInstanceOf[js.Any])
+    def setIncludeInDownloadMetadataUndefined: Self = StObject.set(x, "includeInDownloadMetadata", js.undefined)
     
     @scala.inline
-    def deleteIncludeInDownloadMetadata: Self = this.set("includeInDownloadMetadata", js.undefined)
+    def setIncludeInDownloadUndefined: Self = StObject.set(x, "includeInDownload", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "nameMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("nameMetadata", value.asInstanceOf[js.Any])
+    def setNameMetadataUndefined: Self = StObject.set(x, "nameMetadata", js.undefined)
     
     @scala.inline
-    def deleteNameMetadata: Self = this.set("nameMetadata", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setOrder(value: String): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def setPagesVarargs(value: (/* Description of a page of a document. */ Page)*): Self = this.set("pages", js.Array(value :_*))
+    def setPages(value: js.Array[/* Description of a page of a document. */ Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPages(value: js.Array[/* Description of a page of a document. */ Page]): Self = this.set("pages", value.asInstanceOf[js.Any])
+    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
     @scala.inline
-    def deletePages: Self = this.set("pages", js.undefined)
+    def setPagesVarargs(value: (/* Description of a page of a document. */ Page)*): Self = StObject.set(x, "pages", js.Array(value :_*))
     
     @scala.inline
-    def setSignerMustAcknowledge(value: String): Self = this.set("signerMustAcknowledge", value.asInstanceOf[js.Any])
+    def setSignerMustAcknowledge(value: String): Self = StObject.set(x, "signerMustAcknowledge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSignerMustAcknowledge: Self = this.set("signerMustAcknowledge", js.undefined)
+    def setSignerMustAcknowledgeMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "signerMustAcknowledgeMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignerMustAcknowledgeMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("signerMustAcknowledgeMetadata", value.asInstanceOf[js.Any])
+    def setSignerMustAcknowledgeMetadataUndefined: Self = StObject.set(x, "signerMustAcknowledgeMetadata", js.undefined)
     
     @scala.inline
-    def deleteSignerMustAcknowledgeMetadata: Self = this.set("signerMustAcknowledgeMetadata", js.undefined)
+    def setSignerMustAcknowledgeUndefined: Self = StObject.set(x, "signerMustAcknowledge", js.undefined)
     
     @scala.inline
-    def setSizeBytes(value: String): Self = this.set("sizeBytes", value.asInstanceOf[js.Any])
+    def setSizeBytes(value: String): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSizeBytes: Self = this.set("sizeBytes", js.undefined)
+    def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
     
     @scala.inline
-    def setTemplateLocked(value: String): Self = this.set("templateLocked", value.asInstanceOf[js.Any])
+    def setTemplateLocked(value: String): Self = StObject.set(x, "templateLocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTemplateLocked: Self = this.set("templateLocked", js.undefined)
+    def setTemplateLockedUndefined: Self = StObject.set(x, "templateLocked", js.undefined)
     
     @scala.inline
-    def setTemplateRequired(value: String): Self = this.set("templateRequired", value.asInstanceOf[js.Any])
+    def setTemplateRequired(value: String): Self = StObject.set(x, "templateRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTemplateRequired: Self = this.set("templateRequired", js.undefined)
+    def setTemplateRequiredUndefined: Self = StObject.set(x, "templateRequired", js.undefined)
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

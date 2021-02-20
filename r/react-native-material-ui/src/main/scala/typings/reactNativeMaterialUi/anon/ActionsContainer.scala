@@ -1,12 +1,13 @@
 package typings.reactNativeMaterialUi.anon
 
 import typings.reactNativeMaterialUi.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionsContainer extends js.Object {
+trait ActionsContainer extends StObject {
   
   var actionsContainer: js.UndefOr[ViewStyle] = js.native
 }
@@ -19,27 +20,15 @@ object ActionsContainer {
   }
   
   @scala.inline
-  implicit class ActionsContainerOps[Self <: ActionsContainer] (val x: Self) extends AnyVal {
+  implicit class ActionsContainerMutableBuilder[Self <: ActionsContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionsContainer(value: ViewStyle): Self = StObject.set(x, "actionsContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsContainerNull: Self = StObject.set(x, "actionsContainer", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActionsContainer(value: ViewStyle): Self = this.set("actionsContainer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActionsContainer: Self = this.set("actionsContainer", js.undefined)
-    
-    @scala.inline
-    def setActionsContainerNull: Self = this.set("actionsContainer", null)
+    def setActionsContainerUndefined: Self = StObject.set(x, "actionsContainer", js.undefined)
   }
 }

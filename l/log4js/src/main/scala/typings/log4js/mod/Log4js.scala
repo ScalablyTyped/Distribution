@@ -1,12 +1,13 @@
 package typings.log4js.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Log4js extends js.Object {
+trait Log4js extends StObject {
   
   def addLayout(
     name: String,
@@ -21,7 +22,7 @@ trait Log4js extends js.Object {
   def getLogger(): Logger = js.native
   def getLogger(category: String): Logger = js.native
   
-    // express.Handler;
+  // express.Handler;
   var levels: Levels_ = js.native
   
   def shutdown(cb: js.Function1[/* error */ Error, Unit]): Unit | Null = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListServiceActionsOutput extends js.Object {
+trait ListServiceActionsOutput extends StObject {
   
   /**
     * The page token to use to retrieve the next set of results. If there are no additional results, this value is null.
@@ -26,33 +27,21 @@ object ListServiceActionsOutput {
   }
   
   @scala.inline
-  implicit class ListServiceActionsOutputOps[Self <: ListServiceActionsOutput] (val x: Self) extends AnyVal {
+  implicit class ListServiceActionsOutputMutableBuilder[Self <: ListServiceActionsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServiceActionSummaries(value: ServiceActionSummaries): Self = StObject.set(x, "ServiceActionSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: PageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
+    def setServiceActionSummariesUndefined: Self = StObject.set(x, "ServiceActionSummaries", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
-    
-    @scala.inline
-    def setServiceActionSummariesVarargs(value: ServiceActionSummary*): Self = this.set("ServiceActionSummaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setServiceActionSummaries(value: ServiceActionSummaries): Self = this.set("ServiceActionSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceActionSummaries: Self = this.set("ServiceActionSummaries", js.undefined)
+    def setServiceActionSummariesVarargs(value: ServiceActionSummary*): Self = StObject.set(x, "ServiceActionSummaries", js.Array(value :_*))
   }
 }

@@ -4,13 +4,14 @@ import typings.blueprintjsTable.commonCellMod.IFocusedCellCoordinates
 import typings.blueprintjsTable.dragTypesMod.ICoordinateData
 import typings.blueprintjsTable.esmRegionsMod.IRegion
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@blueprintjs/table.@blueprintjs/table/lib/esm/interactions/reorderable.IDragReorderable> */
 @js.native
-trait PartialIDragReorderable extends js.Object {
+trait PartialIDragReorderable extends StObject {
   
   var disabled: js.UndefOr[Boolean | (js.Function1[/* event */ MouseEvent, Boolean])] = js.native
   
@@ -43,78 +44,66 @@ object PartialIDragReorderable {
   }
   
   @scala.inline
-  implicit class PartialIDragReorderableOps[Self <: PartialIDragReorderable] (val x: Self) extends AnyVal {
+  implicit class PartialIDragReorderableMutableBuilder[Self <: PartialIDragReorderable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: Boolean | (js.Function1[/* event */ MouseEvent, Boolean])): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabledFunction1(value: /* event */ MouseEvent => Boolean): Self = StObject.set(x, "disabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def setDisabledFunction1(value: /* event */ MouseEvent => Boolean): Self = this.set("disabled", js.Any.fromFunction1(value))
+    def setLocateClick(value: /* event */ MouseEvent => IRegion): Self = StObject.set(x, "locateClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisabled(value: Boolean | (js.Function1[/* event */ MouseEvent, Boolean])): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setLocateClickUndefined: Self = StObject.set(x, "locateClick", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setLocateDrag(value: (/* event */ MouseEvent, /* coords */ ICoordinateData) => Double): Self = StObject.set(x, "locateDrag", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLocateClick(value: /* event */ MouseEvent => IRegion): Self = this.set("locateClick", js.Any.fromFunction1(value))
+    def setLocateDragUndefined: Self = StObject.set(x, "locateDrag", js.undefined)
     
     @scala.inline
-    def deleteLocateClick: Self = this.set("locateClick", js.undefined)
+    def setOnFocusedCell(value: /* focusedCell */ IFocusedCellCoordinates => Unit): Self = StObject.set(x, "onFocusedCell", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLocateDrag(value: (/* event */ MouseEvent, /* coords */ ICoordinateData) => Double): Self = this.set("locateDrag", js.Any.fromFunction2(value))
+    def setOnFocusedCellUndefined: Self = StObject.set(x, "onFocusedCell", js.undefined)
     
     @scala.inline
-    def deleteLocateDrag: Self = this.set("locateDrag", js.undefined)
+    def setOnReordered(value: (/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double) => Unit): Self = StObject.set(x, "onReordered", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setOnFocusedCell(value: /* focusedCell */ IFocusedCellCoordinates => Unit): Self = this.set("onFocusedCell", js.Any.fromFunction1(value))
+    def setOnReorderedUndefined: Self = StObject.set(x, "onReordered", js.undefined)
     
     @scala.inline
-    def deleteOnFocusedCell: Self = this.set("onFocusedCell", js.undefined)
+    def setOnReordering(value: (/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double) => Unit): Self = StObject.set(x, "onReordering", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setOnReordered(value: (/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double) => Unit): Self = this.set("onReordered", js.Any.fromFunction3(value))
+    def setOnReorderingUndefined: Self = StObject.set(x, "onReordering", js.undefined)
     
     @scala.inline
-    def deleteOnReordered: Self = this.set("onReordered", js.undefined)
+    def setOnSelection(value: /* regions */ js.Array[IRegion] => Unit): Self = StObject.set(x, "onSelection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnReordering(value: (/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double) => Unit): Self = this.set("onReordering", js.Any.fromFunction3(value))
+    def setOnSelectionUndefined: Self = StObject.set(x, "onSelection", js.undefined)
     
     @scala.inline
-    def deleteOnReordering: Self = this.set("onReordering", js.undefined)
+    def setSelectedRegions(value: js.Array[IRegion]): Self = StObject.set(x, "selectedRegions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSelection(value: /* regions */ js.Array[IRegion] => Unit): Self = this.set("onSelection", js.Any.fromFunction1(value))
+    def setSelectedRegionsUndefined: Self = StObject.set(x, "selectedRegions", js.undefined)
     
     @scala.inline
-    def deleteOnSelection: Self = this.set("onSelection", js.undefined)
+    def setSelectedRegionsVarargs(value: IRegion*): Self = StObject.set(x, "selectedRegions", js.Array(value :_*))
     
     @scala.inline
-    def setSelectedRegionsVarargs(value: IRegion*): Self = this.set("selectedRegions", js.Array(value :_*))
+    def setToRegion(value: (/* index1 */ Double, /* index2 */ js.UndefOr[Double]) => IRegion): Self = StObject.set(x, "toRegion", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSelectedRegions(value: js.Array[IRegion]): Self = this.set("selectedRegions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedRegions: Self = this.set("selectedRegions", js.undefined)
-    
-    @scala.inline
-    def setToRegion(value: (/* index1 */ Double, /* index2 */ js.UndefOr[Double]) => IRegion): Self = this.set("toRegion", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteToRegion: Self = this.set("toRegion", js.undefined)
+    def setToRegionUndefined: Self = StObject.set(x, "toRegion", js.undefined)
   }
 }

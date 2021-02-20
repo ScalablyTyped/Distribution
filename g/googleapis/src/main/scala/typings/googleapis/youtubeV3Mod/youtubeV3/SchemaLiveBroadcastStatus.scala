@@ -1,11 +1,12 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaLiveBroadcastStatus extends js.Object {
+trait SchemaLiveBroadcastStatus extends StObject {
   
   /**
     * The broadcast&#39;s status. The status can be updated using the API&#39;s
@@ -41,42 +42,30 @@ object SchemaLiveBroadcastStatus {
   }
   
   @scala.inline
-  implicit class SchemaLiveBroadcastStatusOps[Self <: SchemaLiveBroadcastStatus] (val x: Self) extends AnyVal {
+  implicit class SchemaLiveBroadcastStatusMutableBuilder[Self <: SchemaLiveBroadcastStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLifeCycleStatus(value: String): Self = StObject.set(x, "lifeCycleStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLifeCycleStatusUndefined: Self = StObject.set(x, "lifeCycleStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLiveBroadcastPriority(value: String): Self = StObject.set(x, "liveBroadcastPriority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifeCycleStatus(value: String): Self = this.set("lifeCycleStatus", value.asInstanceOf[js.Any])
+    def setLiveBroadcastPriorityUndefined: Self = StObject.set(x, "liveBroadcastPriority", js.undefined)
     
     @scala.inline
-    def deleteLifeCycleStatus: Self = this.set("lifeCycleStatus", js.undefined)
+    def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiveBroadcastPriority(value: String): Self = this.set("liveBroadcastPriority", value.asInstanceOf[js.Any])
+    def setPrivacyStatusUndefined: Self = StObject.set(x, "privacyStatus", js.undefined)
     
     @scala.inline
-    def deleteLiveBroadcastPriority: Self = this.set("liveBroadcastPriority", js.undefined)
+    def setRecordingStatus(value: String): Self = StObject.set(x, "recordingStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivacyStatus(value: String): Self = this.set("privacyStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivacyStatus: Self = this.set("privacyStatus", js.undefined)
-    
-    @scala.inline
-    def setRecordingStatus(value: String): Self = this.set("recordingStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordingStatus: Self = this.set("recordingStatus", js.undefined)
+    def setRecordingStatusUndefined: Self = StObject.set(x, "recordingStatus", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.dashjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dashjs", "MetricsList")
 @js.native
-class MetricsList () extends js.Object {
+class MetricsList () extends StObject {
   
   var BufferLevel: js.Array[IBufferLevel] = js.native
   

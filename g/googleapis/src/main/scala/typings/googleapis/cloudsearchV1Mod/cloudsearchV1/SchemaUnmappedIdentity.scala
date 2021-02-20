@@ -1,11 +1,12 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaUnmappedIdentity extends js.Object {
+trait SchemaUnmappedIdentity extends StObject {
   
   /**
     * The resource name for an external user.
@@ -26,30 +27,18 @@ object SchemaUnmappedIdentity {
   }
   
   @scala.inline
-  implicit class SchemaUnmappedIdentityOps[Self <: SchemaUnmappedIdentity] (val x: Self) extends AnyVal {
+  implicit class SchemaUnmappedIdentityMutableBuilder[Self <: SchemaUnmappedIdentity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExternalIdentity(value: SchemaPrincipal): Self = StObject.set(x, "externalIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExternalIdentityUndefined: Self = StObject.set(x, "externalIdentity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResolutionStatusCode(value: String): Self = StObject.set(x, "resolutionStatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalIdentity(value: SchemaPrincipal): Self = this.set("externalIdentity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExternalIdentity: Self = this.set("externalIdentity", js.undefined)
-    
-    @scala.inline
-    def setResolutionStatusCode(value: String): Self = this.set("resolutionStatusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolutionStatusCode: Self = this.set("resolutionStatusCode", js.undefined)
+    def setResolutionStatusCodeUndefined: Self = StObject.set(x, "resolutionStatusCode", js.undefined)
   }
 }

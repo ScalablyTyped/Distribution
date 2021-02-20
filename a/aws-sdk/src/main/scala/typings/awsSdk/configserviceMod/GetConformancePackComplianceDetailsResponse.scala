@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetConformancePackComplianceDetailsResponse extends js.Object {
+trait GetConformancePackComplianceDetailsResponse extends StObject {
   
   /**
     * Name of the conformance pack.
@@ -31,36 +32,24 @@ object GetConformancePackComplianceDetailsResponse {
   }
   
   @scala.inline
-  implicit class GetConformancePackComplianceDetailsResponseOps[Self <: GetConformancePackComplianceDetailsResponse] (val x: Self) extends AnyVal {
+  implicit class GetConformancePackComplianceDetailsResponseMutableBuilder[Self <: GetConformancePackComplianceDetailsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConformancePackName(value: ConformancePackName): Self = StObject.set(x, "ConformancePackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConformancePackRuleEvaluationResults(value: ConformancePackRuleEvaluationResultsList): Self = StObject.set(x, "ConformancePackRuleEvaluationResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConformancePackRuleEvaluationResultsUndefined: Self = StObject.set(x, "ConformancePackRuleEvaluationResults", js.undefined)
     
     @scala.inline
-    def setConformancePackName(value: ConformancePackName): Self = this.set("ConformancePackName", value.asInstanceOf[js.Any])
+    def setConformancePackRuleEvaluationResultsVarargs(value: ConformancePackEvaluationResult*): Self = StObject.set(x, "ConformancePackRuleEvaluationResults", js.Array(value :_*))
     
     @scala.inline
-    def setConformancePackRuleEvaluationResultsVarargs(value: ConformancePackEvaluationResult*): Self = this.set("ConformancePackRuleEvaluationResults", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConformancePackRuleEvaluationResults(value: ConformancePackRuleEvaluationResultsList): Self = this.set("ConformancePackRuleEvaluationResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConformancePackRuleEvaluationResults: Self = this.set("ConformancePackRuleEvaluationResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

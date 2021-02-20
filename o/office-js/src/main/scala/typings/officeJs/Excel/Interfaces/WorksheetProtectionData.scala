@@ -1,13 +1,14 @@
 package typings.officeJs.Excel.Interfaces
 
 import typings.officeJs.Excel.WorksheetProtectionOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `worksheetProtection.toJSON()`. */
 @js.native
-trait WorksheetProtectionData extends js.Object {
+trait WorksheetProtectionData extends StObject {
   
   /**
     *
@@ -34,30 +35,18 @@ object WorksheetProtectionData {
   }
   
   @scala.inline
-  implicit class WorksheetProtectionDataOps[Self <: WorksheetProtectionData] (val x: Self) extends AnyVal {
+  implicit class WorksheetProtectionDataMutableBuilder[Self <: WorksheetProtectionData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOptions(value: WorksheetProtectionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: WorksheetProtectionOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
-    
-    @scala.inline
-    def setProtected(value: Boolean): Self = this.set("protected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtected: Self = this.set("protected", js.undefined)
+    def setProtectedUndefined: Self = StObject.set(x, "protected", js.undefined)
   }
 }

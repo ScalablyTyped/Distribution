@@ -1,5 +1,6 @@
 package typings.googleapis.mirrorV1Mod.mirrorV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A notification delivered by the API.
   */
 @js.native
-trait SchemaNotification extends js.Object {
+trait SchemaNotification extends StObject {
   
   /**
     * The collection that generated the notification.
@@ -51,57 +52,45 @@ object SchemaNotification {
   }
   
   @scala.inline
-  implicit class SchemaNotificationOps[Self <: SchemaNotification] (val x: Self) extends AnyVal {
+  implicit class SchemaNotificationMutableBuilder[Self <: SchemaNotification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollection(value: String): Self = this.set("collection", value.asInstanceOf[js.Any])
+    def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
     
     @scala.inline
-    def deleteCollection: Self = this.set("collection", js.undefined)
+    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemId(value: String): Self = this.set("itemId", value.asInstanceOf[js.Any])
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     @scala.inline
-    def deleteItemId: Self = this.set("itemId", js.undefined)
+    def setUserActions(value: js.Array[SchemaUserAction]): Self = StObject.set(x, "userActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation(value: String): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setUserActionsUndefined: Self = StObject.set(x, "userActions", js.undefined)
     
     @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
+    def setUserActionsVarargs(value: SchemaUserAction*): Self = StObject.set(x, "userActions", js.Array(value :_*))
     
     @scala.inline
-    def setUserActionsVarargs(value: SchemaUserAction*): Self = this.set("userActions", js.Array(value :_*))
+    def setUserToken(value: String): Self = StObject.set(x, "userToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserActions(value: js.Array[SchemaUserAction]): Self = this.set("userActions", value.asInstanceOf[js.Any])
+    def setUserTokenUndefined: Self = StObject.set(x, "userToken", js.undefined)
     
     @scala.inline
-    def deleteUserActions: Self = this.set("userActions", js.undefined)
+    def setVerifyToken(value: String): Self = StObject.set(x, "verifyToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserToken(value: String): Self = this.set("userToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserToken: Self = this.set("userToken", js.undefined)
-    
-    @scala.inline
-    def setVerifyToken(value: String): Self = this.set("verifyToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerifyToken: Self = this.set("verifyToken", js.undefined)
+    def setVerifyTokenUndefined: Self = StObject.set(x, "verifyToken", js.undefined)
   }
 }

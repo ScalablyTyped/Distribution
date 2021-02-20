@@ -1,19 +1,23 @@
 package typings.sqlite
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sql-template-strings", JSImport.Namespace)
-@js.native
-object sqlTemplateStringsMod extends js.Object {
+object sqlTemplateStringsMod {
   
-  def SQL(strings: js.Any, values: js.Any*): SQLStatement = js.native
-  
+  @JSImport("sql-template-strings", JSImport.Default)
+  @js.native
   def default(strings: js.Any, values: js.Any*): SQLStatement = js.native
   
+  @JSImport("sql-template-strings", "SQL")
   @js.native
-  class SQLStatement () extends js.Object {
+  def SQL(strings: js.Any, values: js.Any*): SQLStatement = js.native
+  
+  @JSImport("sql-template-strings", "SQLStatement")
+  @js.native
+  class SQLStatement () extends StObject {
     
     def append(statement: String): this.type = js.native
     def append(statement: Double): this.type = js.native

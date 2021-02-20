@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Data.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AlternateNormalizationFormat extends js.Object
+sealed trait AlternateNormalizationFormat extends StObject
 /** Identifies the normalization format of an AlternateWordForm object. */
 @JSGlobal("Windows.Data.Text.AlternateNormalizationFormat")
 @js.native
-object AlternateNormalizationFormat extends js.Object {
+object AlternateNormalizationFormat extends StObject {
   
   /** A string that has been recognized as a monetary amount. */
   @js.native

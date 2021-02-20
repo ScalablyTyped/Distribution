@@ -1,12 +1,13 @@
 package typings.angularCompiler.anon
 
 import typings.angularCompiler.r3AstMod.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NgContentSelectors extends js.Object {
+trait NgContentSelectors extends StObject {
   
   /**
     * Any ng-content selectors extracted from the template. Contains `null` when an ng-content
@@ -28,30 +29,18 @@ object NgContentSelectors {
   }
   
   @scala.inline
-  implicit class NgContentSelectorsOps[Self <: NgContentSelectors] (val x: Self) extends AnyVal {
+  implicit class NgContentSelectorsMutableBuilder[Self <: NgContentSelectors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNgContentSelectors(value: js.Array[String]): Self = StObject.set(x, "ngContentSelectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNgContentSelectorsVarargs(value: String*): Self = StObject.set(x, "ngContentSelectors", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNgContentSelectorsVarargs(value: String*): Self = this.set("ngContentSelectors", js.Array(value :_*))
-    
-    @scala.inline
-    def setNgContentSelectors(value: js.Array[String]): Self = this.set("ngContentSelectors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNodesVarargs(value: Node*): Self = this.set("nodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setNodes(value: js.Array[Node]): Self = this.set("nodes", value.asInstanceOf[js.Any])
+    def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
   }
 }

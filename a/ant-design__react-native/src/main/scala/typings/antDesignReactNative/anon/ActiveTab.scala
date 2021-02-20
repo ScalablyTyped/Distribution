@@ -1,11 +1,12 @@
 package typings.antDesignReactNative.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveTab extends js.Object {
+trait ActiveTab extends StObject {
   
   var activeTab: Double = js.native
   
@@ -44,48 +45,36 @@ object ActiveTab {
   }
   
   @scala.inline
-  implicit class ActiveTabOps[Self <: ActiveTab] (val x: Self) extends AnyVal {
+  implicit class ActiveTabMutableBuilder[Self <: ActiveTab] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDynamicTabUnderlineWidth(value: Boolean): Self = StObject.set(x, "dynamicTabUnderlineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveTab(value: Double): Self = this.set("activeTab", value.asInstanceOf[js.Any])
+    def setGoToTab(value: () => Unit): Self = StObject.set(x, "goToTab", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicTabUnderlineWidth(value: Boolean): Self = this.set("dynamicTabUnderlineWidth", value.asInstanceOf[js.Any])
+    def setTabBarActiveTextColor(value: String): Self = StObject.set(x, "tabBarActiveTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoToTab(value: () => Unit): Self = this.set("goToTab", js.Any.fromFunction0(value))
+    def setTabBarBackgroundColor(value: String): Self = StObject.set(x, "tabBarBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setTabBarInactiveTextColor(value: String): Self = StObject.set(x, "tabBarInactiveTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabBarActiveTextColor(value: String): Self = this.set("tabBarActiveTextColor", value.asInstanceOf[js.Any])
+    def setTabs(value: js.Array[scala.Nothing]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabBarBackgroundColor(value: String): Self = this.set("tabBarBackgroundColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTabBarInactiveTextColor(value: String): Self = this.set("tabBarInactiveTextColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTabsVarargs(value: scala.Nothing*): Self = this.set("tabs", js.Array(value :_*))
-    
-    @scala.inline
-    def setTabs(value: js.Array[scala.Nothing]): Self = this.set("tabs", value.asInstanceOf[js.Any])
+    def setTabsVarargs(value: scala.Nothing*): Self = StObject.set(x, "tabs", js.Array(value :_*))
   }
 }

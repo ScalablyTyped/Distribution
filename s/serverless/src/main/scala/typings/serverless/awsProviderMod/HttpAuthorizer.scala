@@ -1,11 +1,12 @@
 package typings.serverless.awsProviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpAuthorizer extends js.Object {
+trait HttpAuthorizer extends StObject {
   
   var arn: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object HttpAuthorizer {
   }
   
   @scala.inline
-  implicit class HttpAuthorizerOps[Self <: HttpAuthorizer] (val x: Self) extends AnyVal {
+  implicit class HttpAuthorizerMutableBuilder[Self <: HttpAuthorizer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentitySource(value: String): Self = StObject.set(x, "identitySource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setIdentitySourceUndefined: Self = StObject.set(x, "identitySource", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setIdentityValidationExpression(value: String): Self = StObject.set(x, "identityValidationExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentitySource(value: String): Self = this.set("identitySource", value.asInstanceOf[js.Any])
+    def setIdentityValidationExpressionUndefined: Self = StObject.set(x, "identityValidationExpression", js.undefined)
     
     @scala.inline
-    def deleteIdentitySource: Self = this.set("identitySource", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityValidationExpression(value: String): Self = this.set("identityValidationExpression", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIdentityValidationExpression: Self = this.set("identityValidationExpression", js.undefined)
+    def setResultTtlInSeconds(value: Double | String): Self = StObject.set(x, "resultTtlInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setResultTtlInSecondsUndefined: Self = StObject.set(x, "resultTtlInSeconds", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultTtlInSeconds(value: Double | String): Self = this.set("resultTtlInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResultTtlInSeconds: Self = this.set("resultTtlInSeconds", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

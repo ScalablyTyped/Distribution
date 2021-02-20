@@ -1,12 +1,13 @@
 package typings.monacoEditor.mod.languages
 
 import typings.monacoEditor.mod.IRange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IColorInformation extends js.Object {
+trait IColorInformation extends StObject {
   
   /**
     * The color represented in this range.
@@ -27,24 +28,12 @@ object IColorInformation {
   }
   
   @scala.inline
-  implicit class IColorInformationOps[Self <: IColorInformation] (val x: Self) extends AnyVal {
+  implicit class IColorInformationMutableBuilder[Self <: IColorInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: IColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColor(value: IColor): Self = this.set("color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRange(value: IRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

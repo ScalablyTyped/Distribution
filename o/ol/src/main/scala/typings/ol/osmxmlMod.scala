@@ -1,17 +1,17 @@
 package typings.ol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/format/OSMXML", JSImport.Namespace)
-@js.native
-object osmxmlMod extends js.Object {
+object osmxmlMod {
+  
+  @JSImport("ol/format/OSMXML", JSImport.Default)
+  @js.native
+  class default () extends OSMXML
   
   @js.native
   trait OSMXML
     extends typings.ol.xmlfeatureMod.default
-  
-  @js.native
-  class default () extends OSMXML
 }

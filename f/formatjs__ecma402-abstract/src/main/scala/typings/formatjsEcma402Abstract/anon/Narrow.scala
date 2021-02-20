@@ -1,11 +1,12 @@
 package typings.formatjsEcma402Abstract.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Narrow extends js.Object {
+trait Narrow extends StObject {
   
   var long: js.Array[String] = js.native
   
@@ -22,36 +23,24 @@ object Narrow {
   }
   
   @scala.inline
-  implicit class NarrowOps[Self <: Narrow] (val x: Self) extends AnyVal {
+  implicit class NarrowMutableBuilder[Self <: Narrow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLong(value: js.Array[String]): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLongVarargs(value: String*): Self = StObject.set(x, "long", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNarrow(value: js.Array[String]): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongVarargs(value: String*): Self = this.set("long", js.Array(value :_*))
+    def setNarrowVarargs(value: String*): Self = StObject.set(x, "narrow", js.Array(value :_*))
     
     @scala.inline
-    def setLong(value: js.Array[String]): Self = this.set("long", value.asInstanceOf[js.Any])
+    def setShort(value: js.Array[String]): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNarrowVarargs(value: String*): Self = this.set("narrow", js.Array(value :_*))
-    
-    @scala.inline
-    def setNarrow(value: js.Array[String]): Self = this.set("narrow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShortVarargs(value: String*): Self = this.set("short", js.Array(value :_*))
-    
-    @scala.inline
-    def setShort(value: js.Array[String]): Self = this.set("short", value.asInstanceOf[js.Any])
+    def setShortVarargs(value: String*): Self = StObject.set(x, "short", js.Array(value :_*))
   }
 }

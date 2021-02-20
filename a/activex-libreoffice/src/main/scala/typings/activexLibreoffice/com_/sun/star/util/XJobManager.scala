@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.util
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,27 +36,15 @@ object XJobManager {
   }
   
   @scala.inline
-  implicit class XJobManagerOps[Self <: XJobManager] (val x: Self) extends AnyVal {
+  implicit class XJobManagerMutableBuilder[Self <: XJobManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelAllJobs(value: () => Unit): Self = StObject.set(x, "cancelAllJobs", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegisterJob(value: XCancellable => Unit): Self = StObject.set(x, "registerJob", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCancelAllJobs(value: () => Unit): Self = this.set("cancelAllJobs", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRegisterJob(value: XCancellable => Unit): Self = this.set("registerJob", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReleaseJob(value: XCancellable => Unit): Self = this.set("releaseJob", js.Any.fromFunction1(value))
+    def setReleaseJob(value: XCancellable => Unit): Self = StObject.set(x, "releaseJob", js.Any.fromFunction1(value))
   }
 }

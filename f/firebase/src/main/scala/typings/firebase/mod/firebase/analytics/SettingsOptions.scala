@@ -1,11 +1,12 @@
 package typings.firebase.mod.firebase.analytics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SettingsOptions extends js.Object {
+trait SettingsOptions extends StObject {
   
   /** Sets custom name for `dataLayer` array used by gtag. */
   var dataLayerName: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object SettingsOptions {
   }
   
   @scala.inline
-  implicit class SettingsOptionsOps[Self <: SettingsOptions] (val x: Self) extends AnyVal {
+  implicit class SettingsOptionsMutableBuilder[Self <: SettingsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataLayerName(value: String): Self = StObject.set(x, "dataLayerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataLayerNameUndefined: Self = StObject.set(x, "dataLayerName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGtagName(value: String): Self = StObject.set(x, "gtagName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataLayerName(value: String): Self = this.set("dataLayerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataLayerName: Self = this.set("dataLayerName", js.undefined)
-    
-    @scala.inline
-    def setGtagName(value: String): Self = this.set("gtagName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGtagName: Self = this.set("gtagName", js.undefined)
+    def setGtagNameUndefined: Self = StObject.set(x, "gtagName", js.undefined)
   }
 }

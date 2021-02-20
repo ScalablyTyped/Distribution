@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An Object describing the current ready state. See [onreadystatechange](Titanium.Network.HTTPClient.onreadystatechange) for more information.
   */
 @js.native
-trait ReadyStatePayload extends js.Object {
+trait ReadyStatePayload extends StObject {
   
   /**
     * The state for which `onreadystatechange` was invoked. Set to one of `Titanium.Network.HTTPClient` ready-state constants
@@ -24,24 +25,12 @@ object ReadyStatePayload {
   }
   
   @scala.inline
-  implicit class ReadyStatePayloadOps[Self <: ReadyStatePayload] (val x: Self) extends AnyVal {
+  implicit class ReadyStatePayloadMutableBuilder[Self <: ReadyStatePayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReadyState(value: Double): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReadyState(value: Double): Self = this.set("readyState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadyState: Self = this.set("readyState", js.undefined)
+    def setReadyStateUndefined: Self = StObject.set(x, "readyState", js.undefined)
   }
 }

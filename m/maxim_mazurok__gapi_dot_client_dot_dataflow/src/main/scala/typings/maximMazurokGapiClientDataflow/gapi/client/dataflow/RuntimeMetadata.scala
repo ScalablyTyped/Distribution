@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuntimeMetadata extends js.Object {
+trait RuntimeMetadata extends StObject {
   
   /** The parameters for the template. */
   var parameters: js.UndefOr[js.Array[ParameterMetadata]] = js.native
@@ -22,33 +23,21 @@ object RuntimeMetadata {
   }
   
   @scala.inline
-  implicit class RuntimeMetadataOps[Self <: RuntimeMetadata] (val x: Self) extends AnyVal {
+  implicit class RuntimeMetadataMutableBuilder[Self <: RuntimeMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: js.Array[ParameterMetadata]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParametersVarargs(value: ParameterMetadata*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
     @scala.inline
-    def setParametersVarargs(value: ParameterMetadata*): Self = this.set("parameters", js.Array(value :_*))
+    def setSdkInfo(value: SDKInfo): Self = StObject.set(x, "sdkInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: js.Array[ParameterMetadata]): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
-    
-    @scala.inline
-    def setSdkInfo(value: SDKInfo): Self = this.set("sdkInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSdkInfo: Self = this.set("sdkInfo", js.undefined)
+    def setSdkInfoUndefined: Self = StObject.set(x, "sdkInfo", js.undefined)
   }
 }

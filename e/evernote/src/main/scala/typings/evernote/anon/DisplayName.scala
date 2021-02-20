@@ -3,12 +3,13 @@ package typings.evernote.anon
 import typings.evernote.mod.NoteStore.ShareRelationshipPrivilegeLevel
 import typings.evernote.mod.Types.UserID
 import typings.evernote.mod.Types.UserIdentity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisplayName extends js.Object {
+trait DisplayName extends StObject {
   
   var displayName: js.UndefOr[String] = js.native
   
@@ -27,42 +28,30 @@ object DisplayName {
   }
   
   @scala.inline
-  implicit class DisplayNameOps[Self <: DisplayName] (val x: Self) extends AnyVal {
+  implicit class DisplayNameMutableBuilder[Self <: DisplayName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrivilege(value: ShareRelationshipPrivilegeLevel): Self = StObject.set(x, "privilege", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setPrivilegeUndefined: Self = StObject.set(x, "privilege", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setRecipientUserIdentity(value: UserIdentity): Self = StObject.set(x, "recipientUserIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivilege(value: ShareRelationshipPrivilegeLevel): Self = this.set("privilege", value.asInstanceOf[js.Any])
+    def setRecipientUserIdentityUndefined: Self = StObject.set(x, "recipientUserIdentity", js.undefined)
     
     @scala.inline
-    def deletePrivilege: Self = this.set("privilege", js.undefined)
+    def setSharerUserId(value: UserID): Self = StObject.set(x, "sharerUserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientUserIdentity(value: UserIdentity): Self = this.set("recipientUserIdentity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecipientUserIdentity: Self = this.set("recipientUserIdentity", js.undefined)
-    
-    @scala.inline
-    def setSharerUserId(value: UserID): Self = this.set("sharerUserId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSharerUserId: Self = this.set("sharerUserId", js.undefined)
+    def setSharerUserIdUndefined: Self = StObject.set(x, "sharerUserId", js.undefined)
   }
 }

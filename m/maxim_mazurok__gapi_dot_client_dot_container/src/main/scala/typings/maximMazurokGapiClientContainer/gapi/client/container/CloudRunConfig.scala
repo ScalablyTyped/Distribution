@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloudRunConfig extends js.Object {
+trait CloudRunConfig extends StObject {
   
   /** Whether Cloud Run addon is enabled for this cluster. */
   var disabled: js.UndefOr[Boolean] = js.native
@@ -22,30 +23,18 @@ object CloudRunConfig {
   }
   
   @scala.inline
-  implicit class CloudRunConfigOps[Self <: CloudRunConfig] (val x: Self) extends AnyVal {
+  implicit class CloudRunConfigMutableBuilder[Self <: CloudRunConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoadBalancerType(value: String): Self = StObject.set(x, "loadBalancerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
-    
-    @scala.inline
-    def setLoadBalancerType(value: String): Self = this.set("loadBalancerType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoadBalancerType: Self = this.set("loadBalancerType", js.undefined)
+    def setLoadBalancerTypeUndefined: Self = StObject.set(x, "loadBalancerType", js.undefined)
   }
 }

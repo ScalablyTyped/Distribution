@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchCreateSessionsRequest extends js.Object {
+trait BatchCreateSessionsRequest extends StObject {
   
   /**
     * Required. The number of sessions to be created in this batch call. The API may return fewer than the requested number of sessions. If a specific number of sessions are desired, the
@@ -25,30 +26,18 @@ object BatchCreateSessionsRequest {
   }
   
   @scala.inline
-  implicit class BatchCreateSessionsRequestOps[Self <: BatchCreateSessionsRequest] (val x: Self) extends AnyVal {
+  implicit class BatchCreateSessionsRequestMutableBuilder[Self <: BatchCreateSessionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSessionCount(value: Double): Self = StObject.set(x, "sessionCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSessionCountUndefined: Self = StObject.set(x, "sessionCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSessionTemplate(value: Session): Self = StObject.set(x, "sessionTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionCount(value: Double): Self = this.set("sessionCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionCount: Self = this.set("sessionCount", js.undefined)
-    
-    @scala.inline
-    def setSessionTemplate(value: Session): Self = this.set("sessionTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionTemplate: Self = this.set("sessionTemplate", js.undefined)
+    def setSessionTemplateUndefined: Self = StObject.set(x, "sessionTemplate", js.undefined)
   }
 }

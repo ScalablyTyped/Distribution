@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.io
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,24 +37,12 @@ object XDataExporter {
   }
   
   @scala.inline
-  implicit class XDataExporterOps[Self <: XDataExporter] (val x: Self) extends AnyVal {
+  implicit class XDataExporterMutableBuilder[Self <: XDataExporter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCancel(value: () => Unit): Self = this.set("cancel", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setExportData(value: (XOutputStream, XComponent, XDataTransferEventListener) => Unit): Self = this.set("exportData", js.Any.fromFunction3(value))
+    def setExportData(value: (XOutputStream, XComponent, XDataTransferEventListener) => Unit): Self = StObject.set(x, "exportData", js.Any.fromFunction3(value))
   }
 }

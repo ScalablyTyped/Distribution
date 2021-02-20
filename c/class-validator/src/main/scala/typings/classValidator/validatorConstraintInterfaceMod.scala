@@ -1,16 +1,15 @@
 package typings.classValidator
 
 import typings.classValidator.validationArgumentsMod.ValidationArguments
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("class-validator/types/validation/ValidatorConstraintInterface", JSImport.Namespace)
-@js.native
-object validatorConstraintInterfaceMod extends js.Object {
+object validatorConstraintInterfaceMod {
   
   @js.native
-  trait ValidatorConstraintInterface extends js.Object {
+  trait ValidatorConstraintInterface extends StObject {
     
     /**
       * Gets default message when validation for this constraint fail.

@@ -3,17 +3,22 @@ package typings.playable
 import typings.playable.controlsPictureInPictureTypesMod.IPictureInPictureViewConfig
 import typings.playable.controlsPictureInPictureTypesMod.IPictureInPictureViewStyles
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/ui/controls/picture-in-picture/picture-in-picture.view", JSImport.Namespace)
-@js.native
-object pictureInPictureViewMod extends js.Object {
+object pictureInPictureViewMod {
+  
+  @JSImport("playable/dist/src/modules/ui/controls/picture-in-picture/picture-in-picture.view", JSImport.Default)
+  @js.native
+  class default protected () extends PictureInPictureView {
+    def this(config: IPictureInPictureViewConfig) = this()
+  }
   
   @js.native
   trait PictureInPictureView
-    extends typings.playable.stylableMod.default[IPictureInPictureViewStyles] {
+    extends typings.playable.viewMod.default[IPictureInPictureViewStyles] {
     
     @JSName("_$rootElement")
     var _$rootElement: js.Any = js.native
@@ -42,10 +47,5 @@ object pictureInPictureViewMod extends js.Object {
     def setPictureInPictureState(isPictureInPicture: Boolean): Unit = js.native
     
     def show(): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends PictureInPictureView {
-    def this(config: IPictureInPictureViewConfig) = this()
   }
 }

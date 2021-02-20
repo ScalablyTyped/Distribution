@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * LoadBalancerIngress represents the status of a load-balancer ingress point: traffic intended for the service should be sent to an ingress point.
   */
 @js.native
-trait LoadBalancerIngress extends js.Object {
+trait LoadBalancerIngress extends StObject {
   
   /**
     * Hostname is set for load-balancer ingress points that are DNS based (typically AWS load-balancers)
@@ -30,30 +31,18 @@ object LoadBalancerIngress {
   }
   
   @scala.inline
-  implicit class LoadBalancerIngressOps[Self <: LoadBalancerIngress] (val x: Self) extends AnyVal {
+  implicit class LoadBalancerIngressMutableBuilder[Self <: LoadBalancerIngress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostname(value: Input[String]): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIp(value: Input[String]): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostname(value: Input[String]): Self = this.set("hostname", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHostname: Self = this.set("hostname", js.undefined)
-    
-    @scala.inline
-    def setIp(value: Input[String]): Self = this.set("ip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIp: Self = this.set("ip", js.undefined)
+    def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
   }
 }

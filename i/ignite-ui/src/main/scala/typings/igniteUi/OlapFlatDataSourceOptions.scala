@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,78 +72,66 @@ object OlapFlatDataSourceOptions {
   }
   
   @scala.inline
-  implicit class OlapFlatDataSourceOptionsOps[Self <: OlapFlatDataSourceOptions] (val x: Self) extends AnyVal {
+  implicit class OlapFlatDataSourceOptionsMutableBuilder[Self <: OlapFlatDataSourceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: String): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setDataSourceTypeUndefined: Self = StObject.set(x, "dataSourceType", js.undefined)
     
     @scala.inline
-    def setDataSource(value: js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setDataSourceUrl(value: String): Self = StObject.set(x, "dataSourceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceType(value: String): Self = this.set("dataSourceType", value.asInstanceOf[js.Any])
+    def setDataSourceUrlUndefined: Self = StObject.set(x, "dataSourceUrl", js.undefined)
     
     @scala.inline
-    def deleteDataSourceType: Self = this.set("dataSourceType", js.undefined)
+    def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceUrl(value: String): Self = this.set("dataSourceUrl", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def deleteDataSourceUrl: Self = this.set("dataSourceUrl", js.undefined)
+    def setMeasures(value: String): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: String): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setMetadata(value: OlapFlatDataSourceOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasures(value: String): Self = this.set("measures", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteMeasures: Self = this.set("measures", js.undefined)
+    def setResponseDataKey(value: String): Self = StObject.set(x, "responseDataKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: OlapFlatDataSourceOptionsMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setResponseDataKeyUndefined: Self = StObject.set(x, "responseDataKey", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setResponseDataType(value: String): Self = StObject.set(x, "responseDataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseDataKey(value: String): Self = this.set("responseDataKey", value.asInstanceOf[js.Any])
+    def setResponseDataTypeUndefined: Self = StObject.set(x, "responseDataType", js.undefined)
     
     @scala.inline
-    def deleteResponseDataKey: Self = this.set("responseDataKey", js.undefined)
+    def setRows(value: String): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseDataType(value: String): Self = this.set("responseDataType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseDataType: Self = this.set("responseDataType", js.undefined)
-    
-    @scala.inline
-    def setRows(value: String): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
   }
 }

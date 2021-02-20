@@ -5,12 +5,13 @@ import typings.activexOffice.activexOfficeNumbers.`2`
 import typings.activexOffice.activexOfficeNumbers.`3`
 import typings.activexOffice.activexOfficeNumbers.`4`
 import typings.activexOffice.activexOfficeNumbers.`5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RulerLevels2 extends js.Object {
+trait RulerLevels2 extends StObject {
   
   def apply(Index: `1`): RulerLevel2 = js.native
   def apply(Index: `2`): RulerLevel2 = js.native

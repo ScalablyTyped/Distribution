@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsCodeBuildProjectEnvironment extends js.Object {
+trait AwsCodeBuildProjectEnvironment extends StObject {
   
   /**
     * The certificate to use with this build project.
@@ -36,42 +37,30 @@ object AwsCodeBuildProjectEnvironment {
   }
   
   @scala.inline
-  implicit class AwsCodeBuildProjectEnvironmentOps[Self <: AwsCodeBuildProjectEnvironment] (val x: Self) extends AnyVal {
+  implicit class AwsCodeBuildProjectEnvironmentMutableBuilder[Self <: AwsCodeBuildProjectEnvironment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificate(value: NonEmptyString): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImagePullCredentialsType(value: NonEmptyString): Self = StObject.set(x, "ImagePullCredentialsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificate(value: NonEmptyString): Self = this.set("Certificate", value.asInstanceOf[js.Any])
+    def setImagePullCredentialsTypeUndefined: Self = StObject.set(x, "ImagePullCredentialsType", js.undefined)
     
     @scala.inline
-    def deleteCertificate: Self = this.set("Certificate", js.undefined)
+    def setRegistryCredential(value: AwsCodeBuildProjectEnvironmentRegistryCredential): Self = StObject.set(x, "RegistryCredential", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagePullCredentialsType(value: NonEmptyString): Self = this.set("ImagePullCredentialsType", value.asInstanceOf[js.Any])
+    def setRegistryCredentialUndefined: Self = StObject.set(x, "RegistryCredential", js.undefined)
     
     @scala.inline
-    def deleteImagePullCredentialsType: Self = this.set("ImagePullCredentialsType", js.undefined)
+    def setType(value: NonEmptyString): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistryCredential(value: AwsCodeBuildProjectEnvironmentRegistryCredential): Self = this.set("RegistryCredential", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegistryCredential: Self = this.set("RegistryCredential", js.undefined)
-    
-    @scala.inline
-    def setType(value: NonEmptyString): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

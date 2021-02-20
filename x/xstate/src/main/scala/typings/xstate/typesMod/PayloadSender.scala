@@ -1,11 +1,12 @@
 package typings.xstate.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PayloadSender[TEvent /* <: EventObject */] extends js.Object {
+trait PayloadSender[TEvent /* <: EventObject */] extends StObject {
   
   /**
     * Send an event object or just the event type, if the event has no other payload

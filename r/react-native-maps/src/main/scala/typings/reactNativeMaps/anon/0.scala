@@ -1,12 +1,13 @@
 package typings.reactNativeMaps.anon
 
 import typings.reactNativeMaps.reactNativeMapsStrings.`callout-press`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `0` extends js.Object {
+trait `0` extends StObject {
   
   var action: `callout-press` = js.native
 }
@@ -19,21 +20,9 @@ object `0` {
   }
   
   @scala.inline
-  implicit class `0Ops`[Self <: `0`] (val x: Self) extends AnyVal {
+  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAction(value: `callout-press`): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setAction(value: `callout-press`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }
 }

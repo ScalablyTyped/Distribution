@@ -1,11 +1,12 @@
 package typings.jqueryAjaxfile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryAnimationOptions extends js.Object {
+trait JQueryAnimationOptions extends StObject {
   
   /**
     * A function to be called when the animation completes or stops without completing (its Promise object is either resolved or rejected). (version added: 1.8)
@@ -73,84 +74,72 @@ object JQueryAnimationOptions {
   }
   
   @scala.inline
-  implicit class JQueryAnimationOptionsOps[Self <: JQueryAnimationOptions] (val x: Self) extends AnyVal {
+  implicit class JQueryAnimationOptionsMutableBuilder[Self <: JQueryAnimationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlways(value: (/* animation */ JQueryPromise[_], /* jumpedToEnd */ Boolean) => _): Self = StObject.set(x, "always", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplete(value: js.Function): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlways(value: (/* animation */ JQueryPromise[_], /* jumpedToEnd */ Boolean) => _): Self = this.set("always", js.Any.fromFunction2(value))
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def deleteAlways: Self = this.set("always", js.undefined)
+    def setDone(value: (/* animation */ JQueryPromise[_], /* jumpedToEnd */ Boolean) => _): Self = StObject.set(x, "done", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setComplete(value: js.Function): Self = this.set("complete", value.asInstanceOf[js.Any])
+    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDone(value: (/* animation */ JQueryPromise[_], /* jumpedToEnd */ Boolean) => _): Self = this.set("done", js.Any.fromFunction2(value))
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDone: Self = this.set("done", js.undefined)
+    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: js.Any): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setFail(value: (/* animation */ JQueryPromise[_], /* jumpedToEnd */ Boolean) => _): Self = StObject.set(x, "fail", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEasing(value: String): Self = this.set("easing", value.asInstanceOf[js.Any])
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteEasing: Self = this.set("easing", js.undefined)
+    def setProgress(value: (/* animation */ JQueryPromise[_], /* progress */ Double, /* remainingMs */ Double) => _): Self = StObject.set(x, "progress", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setFail(value: (/* animation */ JQueryPromise[_], /* jumpedToEnd */ Boolean) => _): Self = this.set("fail", js.Any.fromFunction2(value))
+    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setQueue(value: js.Any): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: (/* animation */ JQueryPromise[_], /* progress */ Double, /* remainingMs */ Double) => _): Self = this.set("progress", js.Any.fromFunction3(value))
+    def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
     
     @scala.inline
-    def deleteProgress: Self = this.set("progress", js.undefined)
+    def setSpecialEasing(value: Object): Self = StObject.set(x, "specialEasing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueue(value: js.Any): Self = this.set("queue", value.asInstanceOf[js.Any])
+    def setSpecialEasingUndefined: Self = StObject.set(x, "specialEasing", js.undefined)
     
     @scala.inline
-    def deleteQueue: Self = this.set("queue", js.undefined)
+    def setStart(value: /* animation */ JQueryPromise[_] => _): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSpecialEasing(value: Object): Self = this.set("specialEasing", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteSpecialEasing: Self = this.set("specialEasing", js.undefined)
+    def setStep(value: (/* now */ Double, /* tween */ js.Any) => _): Self = StObject.set(x, "step", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setStart(value: /* animation */ JQueryPromise[_] => _): Self = this.set("start", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
-    
-    @scala.inline
-    def setStep(value: (/* now */ Double, /* tween */ js.Any) => _): Self = this.set("step", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

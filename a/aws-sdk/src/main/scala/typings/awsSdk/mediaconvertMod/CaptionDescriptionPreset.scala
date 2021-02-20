@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CaptionDescriptionPreset extends js.Object {
+trait CaptionDescriptionPreset extends StObject {
   
   /**
     * Specify the language for this captions output track. For most captions output formats, the encoder puts this language information in the output captions metadata. If your output captions format is DVB-Sub or Burn in, the encoder uses this language information when automatically selecting the font script for rendering the captions text. For all outputs, you can use an ISO 639-2 or ISO 639-3 code. For streaming outputs, you can also use any other code in the full RFC-5646 specification. Streaming outputs are those that are in one of the following output groups: CMAF, DASH ISO, Apple HLS, or Microsoft Smooth Streaming.
@@ -36,42 +37,30 @@ object CaptionDescriptionPreset {
   }
   
   @scala.inline
-  implicit class CaptionDescriptionPresetOps[Self <: CaptionDescriptionPreset] (val x: Self) extends AnyVal {
+  implicit class CaptionDescriptionPresetMutableBuilder[Self <: CaptionDescriptionPreset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomLanguageCode(value: stringPatternAZaZ23AZaZ): Self = StObject.set(x, "CustomLanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomLanguageCodeUndefined: Self = StObject.set(x, "CustomLanguageCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationSettings(value: CaptionDestinationSettings): Self = StObject.set(x, "DestinationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomLanguageCode(value: stringPatternAZaZ23AZaZ): Self = this.set("CustomLanguageCode", value.asInstanceOf[js.Any])
+    def setDestinationSettingsUndefined: Self = StObject.set(x, "DestinationSettings", js.undefined)
     
     @scala.inline
-    def deleteCustomLanguageCode: Self = this.set("CustomLanguageCode", js.undefined)
+    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationSettings(value: CaptionDestinationSettings): Self = this.set("DestinationSettings", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
     @scala.inline
-    def deleteDestinationSettings: Self = this.set("DestinationSettings", js.undefined)
+    def setLanguageDescription(value: string): Self = StObject.set(x, "LanguageDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
-    
-    @scala.inline
-    def setLanguageDescription(value: string): Self = this.set("LanguageDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguageDescription: Self = this.set("LanguageDescription", js.undefined)
+    def setLanguageDescriptionUndefined: Self = StObject.set(x, "LanguageDescription", js.undefined)
   }
 }

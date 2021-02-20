@@ -1,12 +1,13 @@
 package typings.awsSdk.s3Mod
 
 import typings.awsSdk.anon.Cont
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelectObjectContentOutput extends js.Object {
+trait SelectObjectContentOutput extends StObject {
   
   /**
     * The array of results.
@@ -22,27 +23,15 @@ object SelectObjectContentOutput {
   }
   
   @scala.inline
-  implicit class SelectObjectContentOutputOps[Self <: SelectObjectContentOutput] (val x: Self) extends AnyVal {
+  implicit class SelectObjectContentOutputMutableBuilder[Self <: SelectObjectContentOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPayload(value: SelectObjectContentEventStream): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPayloadVarargs(value: Cont*): Self = this.set("Payload", js.Array(value :_*))
-    
-    @scala.inline
-    def setPayload(value: SelectObjectContentEventStream): Self = this.set("Payload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayload: Self = this.set("Payload", js.undefined)
+    def setPayloadVarargs(value: Cont*): Self = StObject.set(x, "Payload", js.Array(value :_*))
   }
 }

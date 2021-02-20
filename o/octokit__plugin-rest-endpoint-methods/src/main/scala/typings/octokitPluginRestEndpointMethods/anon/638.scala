@@ -8,12 +8,13 @@ import typings.octokitTypes.endpointsMod.AppsListInstallationReposForAuthenticat
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `638` extends js.Object {
+trait `638` extends StObject {
   
   var parameters: RequestParameters with (Omit[
     AppsListInstallationReposForAuthenticatedUserEndpoint, 
@@ -37,19 +38,7 @@ object `638` {
   }
   
   @scala.inline
-  implicit class `638Ops`[Self <: `638`] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class `638MutableBuilder`[Self <: `638`] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setParameters(
@@ -57,9 +46,9 @@ object `638` {
           AppsListInstallationReposForAuthenticatedUserEndpoint, 
           baseUrl | headers | mediaType
         ])
-    ): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

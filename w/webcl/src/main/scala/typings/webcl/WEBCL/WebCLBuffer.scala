@@ -1,5 +1,6 @@
 package typings.webcl.WEBCL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,21 +24,9 @@ object WebCLBuffer {
   }
   
   @scala.inline
-  implicit class WebCLBufferOps[Self <: WebCLBuffer] (val x: Self) extends AnyVal {
+  implicit class WebCLBufferMutableBuilder[Self <: WebCLBuffer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateSubBuffer(value: (MemFlagsBits, Double, Double) => WebCLBuffer): Self = this.set("createSubBuffer", js.Any.fromFunction3(value))
+    def setCreateSubBuffer(value: (MemFlagsBits, Double, Double) => WebCLBuffer): Self = StObject.set(x, "createSubBuffer", js.Any.fromFunction3(value))
   }
 }

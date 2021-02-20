@@ -6,6 +6,7 @@ import typings.officeJsPreview.Word.Interfaces.ListItemData
 import typings.officeJsPreview.Word.Interfaces.ListItemLoadOptions
 import typings.officeJsPreview.Word.Interfaces.ListItemUpdateData
 import typings.officeJsPreview.anon.Expand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

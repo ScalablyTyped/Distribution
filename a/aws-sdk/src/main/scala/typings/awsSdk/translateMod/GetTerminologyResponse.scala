@@ -1,11 +1,12 @@
 package typings.awsSdk.translateMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTerminologyResponse extends js.Object {
+trait GetTerminologyResponse extends StObject {
   
   /**
     * The data location of the custom terminology being retrieved. The custom terminology file is returned in a presigned url that has a 30 minute expiration.
@@ -26,30 +27,18 @@ object GetTerminologyResponse {
   }
   
   @scala.inline
-  implicit class GetTerminologyResponseOps[Self <: GetTerminologyResponse] (val x: Self) extends AnyVal {
+  implicit class GetTerminologyResponseMutableBuilder[Self <: GetTerminologyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTerminologyDataLocation(value: TerminologyDataLocation): Self = StObject.set(x, "TerminologyDataLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTerminologyDataLocationUndefined: Self = StObject.set(x, "TerminologyDataLocation", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTerminologyProperties(value: TerminologyProperties): Self = StObject.set(x, "TerminologyProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTerminologyDataLocation(value: TerminologyDataLocation): Self = this.set("TerminologyDataLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerminologyDataLocation: Self = this.set("TerminologyDataLocation", js.undefined)
-    
-    @scala.inline
-    def setTerminologyProperties(value: TerminologyProperties): Self = this.set("TerminologyProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerminologyProperties: Self = this.set("TerminologyProperties", js.undefined)
+    def setTerminologyPropertiesUndefined: Self = StObject.set(x, "TerminologyProperties", js.undefined)
   }
 }

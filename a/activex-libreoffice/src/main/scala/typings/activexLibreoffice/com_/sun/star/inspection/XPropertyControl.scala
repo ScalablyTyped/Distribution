@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.inspection
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0.3
   */
 @js.native
-trait XPropertyControl extends js.Object {
+trait XPropertyControl extends StObject {
   
   /**
     * specifies the context of the control within the {@link ObjectInspector} .
@@ -84,39 +85,27 @@ object XPropertyControl {
   }
   
   @scala.inline
-  implicit class XPropertyControlOps[Self <: XPropertyControl] (val x: Self) extends AnyVal {
+  implicit class XPropertyControlMutableBuilder[Self <: XPropertyControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControlContext(value: XPropertyControlContext): Self = StObject.set(x, "ControlContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControlType(value: Double): Self = StObject.set(x, "ControlType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setControlWindow(value: XWindow): Self = StObject.set(x, "ControlWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlContext(value: XPropertyControlContext): Self = this.set("ControlContext", value.asInstanceOf[js.Any])
+    def setIsModified(value: () => Boolean): Self = StObject.set(x, "isModified", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setControlType(value: Double): Self = this.set("ControlType", value.asInstanceOf[js.Any])
+    def setNotifyModifiedValue(value: () => Unit): Self = StObject.set(x, "notifyModifiedValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setControlWindow(value: XWindow): Self = this.set("ControlWindow", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: js.Any): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueType(value: `type`): Self = this.set("ValueType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsModified(value: () => Boolean): Self = this.set("isModified", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setNotifyModifiedValue(value: () => Unit): Self = this.set("notifyModifiedValue", js.Any.fromFunction0(value))
+    def setValueType(value: `type`): Self = StObject.set(x, "ValueType", value.asInstanceOf[js.Any])
   }
 }

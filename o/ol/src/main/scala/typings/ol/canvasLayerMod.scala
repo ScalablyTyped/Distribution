@@ -6,13 +6,18 @@ import typings.ol.olMod.Transform
 import typings.ol.pluggableMapMod.FrameState
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/renderer/canvas/Layer", JSImport.Namespace)
-@js.native
-object canvasLayerMod extends js.Object {
+object canvasLayerMod {
+  
+  @JSImport("ol/renderer/canvas/Layer", JSImport.Default)
+  @js.native
+  abstract class default[LayerType /* <: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default] */] protected () extends CanvasLayerRenderer[LayerType] {
+    def this(layer: LayerType) = this()
+  }
   
   @js.native
   trait CanvasLayerRenderer[LayerType /* <: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default] */]
@@ -65,10 +70,5 @@ object canvasLayerMod extends js.Object {
       * Get a rendering container from an existing target, if compatible.
       */
     def useContainer(target: HTMLElement, transform: String, opacity: Double): Unit = js.native
-  }
-  
-  @js.native
-  abstract class default[LayerType /* <: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default] */] protected () extends CanvasLayerRenderer[LayerType] {
-    def this(layer: LayerType) = this()
   }
 }

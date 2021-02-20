@@ -1,11 +1,12 @@
 package typings.reactJsonschemaForm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldPath extends js.Object {
+trait FieldPath extends StObject {
   
   @JSName("$name")
   var $name: String = js.native
@@ -19,21 +20,9 @@ object FieldPath {
   }
   
   @scala.inline
-  implicit class FieldPathOps[Self <: FieldPath] (val x: Self) extends AnyVal {
+  implicit class FieldPathMutableBuilder[Self <: FieldPath] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set$name(value: String): Self = this.set("$name", value.asInstanceOf[js.Any])
+    def set$name(value: String): Self = StObject.set(x, "$name", value.asInstanceOf[js.Any])
   }
 }

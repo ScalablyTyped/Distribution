@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MappingEntry extends js.Object {
+trait MappingEntry extends StObject {
   
   /**
     * The source path.
@@ -46,54 +47,42 @@ object MappingEntry {
   }
   
   @scala.inline
-  implicit class MappingEntryOps[Self <: MappingEntry] (val x: Self) extends AnyVal {
+  implicit class MappingEntryMutableBuilder[Self <: MappingEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSourcePath(value: SchemaPathString): Self = StObject.set(x, "SourcePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSourcePathUndefined: Self = StObject.set(x, "SourcePath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceTable(value: TableName): Self = StObject.set(x, "SourceTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourcePath(value: SchemaPathString): Self = this.set("SourcePath", value.asInstanceOf[js.Any])
+    def setSourceTableUndefined: Self = StObject.set(x, "SourceTable", js.undefined)
     
     @scala.inline
-    def deleteSourcePath: Self = this.set("SourcePath", js.undefined)
+    def setSourceType(value: FieldType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceTable(value: TableName): Self = this.set("SourceTable", value.asInstanceOf[js.Any])
+    def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
     
     @scala.inline
-    def deleteSourceTable: Self = this.set("SourceTable", js.undefined)
+    def setTargetPath(value: SchemaPathString): Self = StObject.set(x, "TargetPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceType(value: FieldType): Self = this.set("SourceType", value.asInstanceOf[js.Any])
+    def setTargetPathUndefined: Self = StObject.set(x, "TargetPath", js.undefined)
     
     @scala.inline
-    def deleteSourceType: Self = this.set("SourceType", js.undefined)
+    def setTargetTable(value: TableName): Self = StObject.set(x, "TargetTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetPath(value: SchemaPathString): Self = this.set("TargetPath", value.asInstanceOf[js.Any])
+    def setTargetTableUndefined: Self = StObject.set(x, "TargetTable", js.undefined)
     
     @scala.inline
-    def deleteTargetPath: Self = this.set("TargetPath", js.undefined)
+    def setTargetType(value: FieldType): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetTable(value: TableName): Self = this.set("TargetTable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetTable: Self = this.set("TargetTable", js.undefined)
-    
-    @scala.inline
-    def setTargetType(value: FieldType): Self = this.set("TargetType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetType: Self = this.set("TargetType", js.undefined)
+    def setTargetTypeUndefined: Self = StObject.set(x, "TargetType", js.undefined)
   }
 }

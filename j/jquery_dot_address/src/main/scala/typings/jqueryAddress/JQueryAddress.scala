@@ -1,11 +1,12 @@
 package typings.jqueryAddress
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryAddress extends js.Object {
+trait JQueryAddress extends StObject {
   
   /**
     * Adds the plugin functionality to a DOM element and disables the default behavior. Designed primarily to support links and forms. 

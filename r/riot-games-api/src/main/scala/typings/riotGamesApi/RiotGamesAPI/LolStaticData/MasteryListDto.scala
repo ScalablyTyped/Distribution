@@ -1,12 +1,13 @@
 package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MasteryListDto extends js.Object {
+trait MasteryListDto extends StObject {
   
   var data: js.Array[StringDictionary[MasteryDto]] = js.native
   
@@ -31,33 +32,21 @@ object MasteryListDto {
   }
   
   @scala.inline
-  implicit class MasteryListDtoOps[Self <: MasteryListDto] (val x: Self) extends AnyVal {
+  implicit class MasteryListDtoMutableBuilder[Self <: MasteryListDto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Array[StringDictionary[MasteryDto]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataVarargs(value: StringDictionary[MasteryDto]*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTree(value: MasteryTreeDto): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: StringDictionary[MasteryDto]*): Self = this.set("data", js.Array(value :_*))
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[StringDictionary[MasteryDto]]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTree(value: MasteryTreeDto): Self = this.set("tree", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

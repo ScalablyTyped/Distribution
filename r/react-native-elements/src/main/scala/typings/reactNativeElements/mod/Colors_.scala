@@ -1,12 +1,13 @@
 package typings.reactNativeElements.mod
 
 import typings.reactNativeElements.anon.Android
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Colors_ extends js.Object {
+trait Colors_ extends StObject {
   
   val disabled: String = js.native
   
@@ -66,66 +67,54 @@ object Colors_ {
   }
   
   @scala.inline
-  implicit class Colors_Ops[Self <: Colors_] (val x: Self) extends AnyVal {
+  implicit class Colors_MutableBuilder[Self <: Colors_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDivider(value: String): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setGrey0(value: String): Self = StObject.set(x, "grey0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDivider(value: String): Self = this.set("divider", value.asInstanceOf[js.Any])
+    def setGrey1(value: String): Self = StObject.set(x, "grey1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setGrey2(value: String): Self = StObject.set(x, "grey2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrey0(value: String): Self = this.set("grey0", value.asInstanceOf[js.Any])
+    def setGrey3(value: String): Self = StObject.set(x, "grey3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrey1(value: String): Self = this.set("grey1", value.asInstanceOf[js.Any])
+    def setGrey4(value: String): Self = StObject.set(x, "grey4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrey2(value: String): Self = this.set("grey2", value.asInstanceOf[js.Any])
+    def setGrey5(value: String): Self = StObject.set(x, "grey5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrey3(value: String): Self = this.set("grey3", value.asInstanceOf[js.Any])
+    def setGreyOutline(value: String): Self = StObject.set(x, "greyOutline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrey4(value: String): Self = this.set("grey4", value.asInstanceOf[js.Any])
+    def setPlatform(value: Android): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrey5(value: String): Self = this.set("grey5", value.asInstanceOf[js.Any])
+    def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreyOutline(value: String): Self = this.set("greyOutline", value.asInstanceOf[js.Any])
+    def setSearchBg(value: String): Self = StObject.set(x, "searchBg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: Android): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary(value: String): Self = this.set("primary", value.asInstanceOf[js.Any])
+    def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchBg(value: String): Self = this.set("searchBg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecondary(value: String): Self = this.set("secondary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccess(value: String): Self = this.set("success", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWarning(value: String): Self = this.set("warning", value.asInstanceOf[js.Any])
+    def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
   }
 }

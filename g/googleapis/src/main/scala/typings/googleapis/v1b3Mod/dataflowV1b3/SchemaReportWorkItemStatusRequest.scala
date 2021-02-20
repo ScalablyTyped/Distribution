@@ -1,6 +1,7 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request to report the status of WorkItems.
   */
 @js.native
-trait SchemaReportWorkItemStatusRequest extends js.Object {
+trait SchemaReportWorkItemStatusRequest extends StObject {
   
   /**
     * The current timestamp at the worker.
@@ -52,51 +53,39 @@ object SchemaReportWorkItemStatusRequest {
   }
   
   @scala.inline
-  implicit class SchemaReportWorkItemStatusRequestOps[Self <: SchemaReportWorkItemStatusRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaReportWorkItemStatusRequestMutableBuilder[Self <: SchemaReportWorkItemStatusRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentWorkerTime(value: String): Self = StObject.set(x, "currentWorkerTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentWorkerTimeUndefined: Self = StObject.set(x, "currentWorkerTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentWorkerTime(value: String): Self = this.set("currentWorkerTime", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteCurrentWorkerTime: Self = this.set("currentWorkerTime", js.undefined)
+    def setUnifiedWorkerRequest(value: StringDictionary[js.Any]): Self = StObject.set(x, "unifiedWorkerRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setUnifiedWorkerRequestUndefined: Self = StObject.set(x, "unifiedWorkerRequest", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setWorkItemStatuses(value: js.Array[SchemaWorkItemStatus]): Self = StObject.set(x, "workItemStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnifiedWorkerRequest(value: StringDictionary[js.Any]): Self = this.set("unifiedWorkerRequest", value.asInstanceOf[js.Any])
+    def setWorkItemStatusesUndefined: Self = StObject.set(x, "workItemStatuses", js.undefined)
     
     @scala.inline
-    def deleteUnifiedWorkerRequest: Self = this.set("unifiedWorkerRequest", js.undefined)
+    def setWorkItemStatusesVarargs(value: SchemaWorkItemStatus*): Self = StObject.set(x, "workItemStatuses", js.Array(value :_*))
     
     @scala.inline
-    def setWorkItemStatusesVarargs(value: SchemaWorkItemStatus*): Self = this.set("workItemStatuses", js.Array(value :_*))
+    def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkItemStatuses(value: js.Array[SchemaWorkItemStatus]): Self = this.set("workItemStatuses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkItemStatuses: Self = this.set("workItemStatuses", js.undefined)
-    
-    @scala.inline
-    def setWorkerId(value: String): Self = this.set("workerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerId: Self = this.set("workerId", js.undefined)
+    def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
   }
 }

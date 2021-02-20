@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpotDatafeedSubscription extends js.Object {
+trait SpotDatafeedSubscription extends StObject {
   
   /**
     * The name of the Amazon S3 bucket where the Spot Instance data feed is located.
@@ -41,48 +42,36 @@ object SpotDatafeedSubscription {
   }
   
   @scala.inline
-  implicit class SpotDatafeedSubscriptionOps[Self <: SpotDatafeedSubscription] (val x: Self) extends AnyVal {
+  implicit class SpotDatafeedSubscriptionMutableBuilder[Self <: SpotDatafeedSubscription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFault(value: SpotInstanceStateFault): Self = StObject.set(x, "Fault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucket(value: String): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    def setFaultUndefined: Self = StObject.set(x, "Fault", js.undefined)
     
     @scala.inline
-    def deleteBucket: Self = this.set("Bucket", js.undefined)
+    def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFault(value: SpotInstanceStateFault): Self = this.set("Fault", value.asInstanceOf[js.Any])
+    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
     @scala.inline
-    def deleteFault: Self = this.set("Fault", js.undefined)
+    def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     
     @scala.inline
-    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    def setState(value: DatafeedSubscriptionState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: String): Self = this.set("Prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefix: Self = this.set("Prefix", js.undefined)
-    
-    @scala.inline
-    def setState(value: DatafeedSubscriptionState): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

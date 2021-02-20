@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,51 +72,39 @@ object XFixedHyperlink {
   }
   
   @scala.inline
-  implicit class XFixedHyperlinkOps[Self <: XFixedHyperlink] (val x: Self) extends AnyVal {
+  implicit class XFixedHyperlinkMutableBuilder[Self <: XFixedHyperlink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddActionListener(value: XActionListener => Unit): Self = StObject.set(x, "addActionListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignment(value: Double): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAlignment(value: () => Double): Self = StObject.set(x, "getAlignment", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAlignment(value: Double): Self = this.set("Alignment", value.asInstanceOf[js.Any])
+    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setText(value: String): Self = this.set("Text", value.asInstanceOf[js.Any])
+    def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setURL(value: String): Self = this.set("URL", value.asInstanceOf[js.Any])
+    def setRemoveActionListener(value: XActionListener => Unit): Self = StObject.set(x, "removeActionListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddActionListener(value: XActionListener => Unit): Self = this.set("addActionListener", js.Any.fromFunction1(value))
+    def setSetAlignment(value: Double => Unit): Self = StObject.set(x, "setAlignment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAlignment(value: () => Double): Self = this.set("getAlignment", js.Any.fromFunction0(value))
+    def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetText(value: () => String): Self = this.set("getText", js.Any.fromFunction0(value))
+    def setSetURL(value: String => Unit): Self = StObject.set(x, "setURL", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetURL(value: () => String): Self = this.set("getURL", js.Any.fromFunction0(value))
+    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveActionListener(value: XActionListener => Unit): Self = this.set("removeActionListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetAlignment(value: Double => Unit): Self = this.set("setAlignment", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetText(value: String => Unit): Self = this.set("setText", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetURL(value: String => Unit): Self = this.set("setURL", js.Any.fromFunction1(value))
+    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

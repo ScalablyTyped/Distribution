@@ -1,11 +1,12 @@
 package typings.reactNativeFirebase.mod.RNFirebase.notifications
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NativeAndroidChannel extends js.Object {
+trait NativeAndroidChannel extends StObject {
   
   var bypassDnd: js.UndefOr[Boolean] = js.native
   
@@ -42,90 +43,78 @@ object NativeAndroidChannel {
   }
   
   @scala.inline
-  implicit class NativeAndroidChannelOps[Self <: NativeAndroidChannel] (val x: Self) extends AnyVal {
+  implicit class NativeAndroidChannelMutableBuilder[Self <: NativeAndroidChannel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBypassDnd(value: Boolean): Self = StObject.set(x, "bypassDnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBypassDndUndefined: Self = StObject.set(x, "bypassDnd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportance(value: Double): Self = this.set("importance", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBypassDnd(value: Boolean): Self = this.set("bypassDnd", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteBypassDnd: Self = this.set("bypassDnd", js.undefined)
+    def setImportance(value: Double): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setLightColor(value: String): Self = StObject.set(x, "lightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setLightColorUndefined: Self = StObject.set(x, "lightColor", js.undefined)
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setLightsEnabled(value: Boolean): Self = StObject.set(x, "lightsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setLightsEnabledUndefined: Self = StObject.set(x, "lightsEnabled", js.undefined)
     
     @scala.inline
-    def setLightColor(value: String): Self = this.set("lightColor", value.asInstanceOf[js.Any])
+    def setLockScreenVisibility(value: Double): Self = StObject.set(x, "lockScreenVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLightColor: Self = this.set("lightColor", js.undefined)
+    def setLockScreenVisibilityUndefined: Self = StObject.set(x, "lockScreenVisibility", js.undefined)
     
     @scala.inline
-    def setLightsEnabled(value: Boolean): Self = this.set("lightsEnabled", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLightsEnabled: Self = this.set("lightsEnabled", js.undefined)
+    def setShowBadge(value: Boolean): Self = StObject.set(x, "showBadge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockScreenVisibility(value: Double): Self = this.set("lockScreenVisibility", value.asInstanceOf[js.Any])
+    def setShowBadgeUndefined: Self = StObject.set(x, "showBadge", js.undefined)
     
     @scala.inline
-    def deleteLockScreenVisibility: Self = this.set("lockScreenVisibility", js.undefined)
+    def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowBadge(value: Boolean): Self = this.set("showBadge", value.asInstanceOf[js.Any])
+    def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
     
     @scala.inline
-    def deleteShowBadge: Self = this.set("showBadge", js.undefined)
+    def setVibrationEnabled(value: Boolean): Self = StObject.set(x, "vibrationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSound(value: String): Self = this.set("sound", value.asInstanceOf[js.Any])
+    def setVibrationEnabledUndefined: Self = StObject.set(x, "vibrationEnabled", js.undefined)
     
     @scala.inline
-    def deleteSound: Self = this.set("sound", js.undefined)
+    def setVibrationPattern(value: js.Array[Double]): Self = StObject.set(x, "vibrationPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVibrationEnabled(value: Boolean): Self = this.set("vibrationEnabled", value.asInstanceOf[js.Any])
+    def setVibrationPatternUndefined: Self = StObject.set(x, "vibrationPattern", js.undefined)
     
     @scala.inline
-    def deleteVibrationEnabled: Self = this.set("vibrationEnabled", js.undefined)
-    
-    @scala.inline
-    def setVibrationPatternVarargs(value: Double*): Self = this.set("vibrationPattern", js.Array(value :_*))
-    
-    @scala.inline
-    def setVibrationPattern(value: js.Array[Double]): Self = this.set("vibrationPattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVibrationPattern: Self = this.set("vibrationPattern", js.undefined)
+    def setVibrationPatternVarargs(value: Double*): Self = StObject.set(x, "vibrationPattern", js.Array(value :_*))
   }
 }

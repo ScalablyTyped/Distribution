@@ -1,5 +1,6 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,24 +10,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.highcharts.mod.YAxisPlotLinesLabelOptions
   - typings.highcharts.mod.ZAxisPlotLinesLabelOptions
 */
-trait AxisPlotLinesLabelOptions extends js.Object
+trait AxisPlotLinesLabelOptions extends StObject
 object AxisPlotLinesLabelOptions {
   
   @scala.inline
-  def XAxisPlotLinesLabelOptions(): AxisPlotLinesLabelOptions = {
+  def XAxisPlotLinesLabelOptions(): typings.highcharts.mod.XAxisPlotLinesLabelOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[AxisPlotLinesLabelOptions]
+    __obj.asInstanceOf[typings.highcharts.mod.XAxisPlotLinesLabelOptions]
   }
   
   @scala.inline
-  def YAxisPlotLinesLabelOptions(): AxisPlotLinesLabelOptions = {
+  def YAxisPlotLinesLabelOptions(): typings.highcharts.mod.YAxisPlotLinesLabelOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[AxisPlotLinesLabelOptions]
+    __obj.asInstanceOf[typings.highcharts.mod.YAxisPlotLinesLabelOptions]
   }
   
   @scala.inline
-  def ZAxisPlotLinesLabelOptions(): AxisPlotLinesLabelOptions = {
+  def ZAxisPlotLinesLabelOptions(): typings.highcharts.mod.ZAxisPlotLinesLabelOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[AxisPlotLinesLabelOptions]
+    __obj.asInstanceOf[typings.highcharts.mod.ZAxisPlotLinesLabelOptions]
   }
 }

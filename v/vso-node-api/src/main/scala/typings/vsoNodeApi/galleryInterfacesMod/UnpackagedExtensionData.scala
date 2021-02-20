@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnpackagedExtensionData extends js.Object {
+trait UnpackagedExtensionData extends StObject {
   
   var categories: js.Array[String] = js.native
   
@@ -65,75 +66,63 @@ object UnpackagedExtensionData {
   }
   
   @scala.inline
-  implicit class UnpackagedExtensionDataOps[Self <: UnpackagedExtensionData] (val x: Self) extends AnyVal {
+  implicit class UnpackagedExtensionDataMutableBuilder[Self <: UnpackagedExtensionData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoriesVarargs(value: String*): Self = this.set("categories", js.Array(value :_*))
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: js.Array[String]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setDraftId(value: String): Self = StObject.set(x, "draftId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setInstallationTargets(value: js.Array[InstallationTarget]): Self = StObject.set(x, "installationTargets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraftId(value: String): Self = this.set("draftId", value.asInstanceOf[js.Any])
+    def setInstallationTargetsVarargs(value: InstallationTarget*): Self = StObject.set(x, "installationTargets", js.Array(value :_*))
     
     @scala.inline
-    def setExtensionName(value: String): Self = this.set("extensionName", value.asInstanceOf[js.Any])
+    def setIsConvertedToMarkdown(value: Boolean): Self = StObject.set(x, "isConvertedToMarkdown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallationTargetsVarargs(value: InstallationTarget*): Self = this.set("installationTargets", js.Array(value :_*))
+    def setPricingCategory(value: String): Self = StObject.set(x, "pricingCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallationTargets(value: js.Array[InstallationTarget]): Self = this.set("installationTargets", value.asInstanceOf[js.Any])
+    def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsConvertedToMarkdown(value: Boolean): Self = this.set("isConvertedToMarkdown", value.asInstanceOf[js.Any])
+    def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPricingCategory(value: String): Self = this.set("pricingCategory", value.asInstanceOf[js.Any])
+    def setQnAEnabled(value: Boolean): Self = StObject.set(x, "qnAEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProduct(value: String): Self = this.set("product", value.asInstanceOf[js.Any])
+    def setReferralUrl(value: String): Self = StObject.set(x, "referralUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublisherName(value: String): Self = this.set("publisherName", value.asInstanceOf[js.Any])
+    def setRepositoryUrl(value: String): Self = StObject.set(x, "repositoryUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQnAEnabled(value: Boolean): Self = this.set("qnAEnabled", value.asInstanceOf[js.Any])
+    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferralUrl(value: String): Self = this.set("referralUrl", value.asInstanceOf[js.Any])
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setRepositoryUrl(value: String): Self = this.set("repositoryUrl", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVsixId(value: String): Self = this.set("vsixId", value.asInstanceOf[js.Any])
+    def setVsixId(value: String): Self = StObject.set(x, "vsixId", value.asInstanceOf[js.Any])
   }
 }

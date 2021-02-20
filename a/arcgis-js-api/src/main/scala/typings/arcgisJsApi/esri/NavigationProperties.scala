@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationProperties extends js.Object {
+trait NavigationProperties extends StObject {
   
   /**
     * Indicates if single finger touch [drag](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#event-drag) events are enabled or disabled.
@@ -44,42 +45,30 @@ object NavigationProperties {
   }
   
   @scala.inline
-  implicit class NavigationPropertiesOps[Self <: NavigationProperties] (val x: Self) extends AnyVal {
+  implicit class NavigationPropertiesMutableBuilder[Self <: NavigationProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrowserTouchPanEnabled(value: Boolean): Self = StObject.set(x, "browserTouchPanEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrowserTouchPanEnabledUndefined: Self = StObject.set(x, "browserTouchPanEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGamepad(value: gamepadGamepadSettingsProperties): Self = StObject.set(x, "gamepad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowserTouchPanEnabled(value: Boolean): Self = this.set("browserTouchPanEnabled", value.asInstanceOf[js.Any])
+    def setGamepadUndefined: Self = StObject.set(x, "gamepad", js.undefined)
     
     @scala.inline
-    def deleteBrowserTouchPanEnabled: Self = this.set("browserTouchPanEnabled", js.undefined)
+    def setMomentumEnabled(value: Boolean): Self = StObject.set(x, "momentumEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGamepad(value: gamepadGamepadSettingsProperties): Self = this.set("gamepad", value.asInstanceOf[js.Any])
+    def setMomentumEnabledUndefined: Self = StObject.set(x, "momentumEnabled", js.undefined)
     
     @scala.inline
-    def deleteGamepad: Self = this.set("gamepad", js.undefined)
+    def setMouseWheelZoomEnabled(value: Boolean): Self = StObject.set(x, "mouseWheelZoomEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMomentumEnabled(value: Boolean): Self = this.set("momentumEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMomentumEnabled: Self = this.set("momentumEnabled", js.undefined)
-    
-    @scala.inline
-    def setMouseWheelZoomEnabled(value: Boolean): Self = this.set("mouseWheelZoomEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMouseWheelZoomEnabled: Self = this.set("mouseWheelZoomEnabled", js.undefined)
+    def setMouseWheelZoomEnabledUndefined: Self = StObject.set(x, "mouseWheelZoomEnabled", js.undefined)
   }
 }

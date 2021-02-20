@@ -3,6 +3,7 @@ package typings.typeorm.mongodbTypingsMod
 import typings.typeorm.anon.ChangeStreamOptionsstartABatchSize
 import typings.typeorm.anon.DbName
 import typings.typeorm.platformPlatformToolsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -133,9 +134,7 @@ class MongoClient protected () extends EventEmitter {
   def withSession(options: SessionOptions, operation: js.Function1[/* session */ ClientSession, js.Promise[_]]): js.Promise[Unit] = js.native
 }
 /* static members */
-@JSImport("typeorm/driver/mongodb/typings", "MongoClient")
-@js.native
-object MongoClient extends js.Object {
+object MongoClient {
   
   /**
     * Connect to MongoDB using a url as documented at docs.mongodb.org/manual/reference/connection-string/
@@ -144,6 +143,8 @@ object MongoClient extends js.Object {
     * @param url The connection URI string.
     * @param options Optional settings.
     */
+  @JSImport("typeorm/driver/mongodb/typings", "MongoClient.connect")
+  @js.native
   def connect(url: String): js.Promise[Db] = js.native
   /**
     * Connect to MongoDB using a url as documented at docs.mongodb.org/manual/reference/connection-string/
@@ -152,7 +153,11 @@ object MongoClient extends js.Object {
     * @param url The connection URI string.
     * @param callback The command result callback.
     */
+  @JSImport("typeorm/driver/mongodb/typings", "MongoClient.connect")
+  @js.native
   def connect(url: String, callback: MongoCallback[Db]): Unit = js.native
+  @JSImport("typeorm/driver/mongodb/typings", "MongoClient.connect")
+  @js.native
   def connect(url: String, options: MongoClientOptions): js.Promise[Db] = js.native
   /**
     * Connect to MongoDB using a url as documented at docs.mongodb.org/manual/reference/connection-string/
@@ -162,5 +167,7 @@ object MongoClient extends js.Object {
     * @param options Optional settings.
     * @param callback The command result callback.
     */
+  @JSImport("typeorm/driver/mongodb/typings", "MongoClient.connect")
+  @js.native
   def connect(url: String, options: MongoClientOptions, callback: MongoCallback[Db]): Unit = js.native
 }

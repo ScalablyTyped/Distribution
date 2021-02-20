@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,39 +23,27 @@ object IosMobileAppConfiguration {
   }
   
   @scala.inline
-  implicit class IosMobileAppConfigurationOps[Self <: IosMobileAppConfiguration] (val x: Self) extends AnyVal {
+  implicit class IosMobileAppConfigurationMutableBuilder[Self <: IosMobileAppConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncodedSettingXml(value: NullableOption[Double]): Self = StObject.set(x, "encodedSettingXml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncodedSettingXmlNull: Self = StObject.set(x, "encodedSettingXml", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncodedSettingXmlUndefined: Self = StObject.set(x, "encodedSettingXml", js.undefined)
     
     @scala.inline
-    def setEncodedSettingXml(value: NullableOption[Double]): Self = this.set("encodedSettingXml", value.asInstanceOf[js.Any])
+    def setSettings(value: NullableOption[js.Array[AppConfigurationSettingItem]]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncodedSettingXml: Self = this.set("encodedSettingXml", js.undefined)
+    def setSettingsNull: Self = StObject.set(x, "settings", null)
     
     @scala.inline
-    def setEncodedSettingXmlNull: Self = this.set("encodedSettingXml", null)
+    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
     @scala.inline
-    def setSettingsVarargs(value: AppConfigurationSettingItem*): Self = this.set("settings", js.Array(value :_*))
-    
-    @scala.inline
-    def setSettings(value: NullableOption[js.Array[AppConfigurationSettingItem]]): Self = this.set("settings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSettings: Self = this.set("settings", js.undefined)
-    
-    @scala.inline
-    def setSettingsNull: Self = this.set("settings", null)
+    def setSettingsVarargs(value: AppConfigurationSettingItem*): Self = StObject.set(x, "settings", js.Array(value :_*))
   }
 }

@@ -2,27 +2,29 @@ package typings.jupyterlabUiComponents
 
 import typings.luminoWidgets.contextmenuMod.ContextMenu.IOptions
 import typings.luminoWidgets.mod.Menu
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/ui-components/lib/icon/widgets", JSImport.Namespace)
-@js.native
-object widgetsMod extends js.Object {
+object widgetsMod {
   
-  @js.native
-  object CommandPaletteSvg extends js.Object {
-    
-    val defaultRenderer: typings.jupyterlabUiComponents.commandpalettesvgMod.CommandPaletteSvg.Renderer = js.native
+  object CommandPaletteSvg {
     
     /**
       * a modified implementation of the CommandPalette Renderer
       */
+    @JSImport("@jupyterlab/ui-components/lib/icon/widgets", "CommandPaletteSvg.Renderer")
     @js.native
     class Renderer ()
       extends typings.jupyterlabUiComponents.commandpalettesvgMod.CommandPaletteSvg.Renderer
+    
+    @JSImport("@jupyterlab/ui-components/lib/icon/widgets", "CommandPaletteSvg.defaultRenderer")
+    @js.native
+    val defaultRenderer: typings.jupyterlabUiComponents.commandpalettesvgMod.CommandPaletteSvg.Renderer = js.native
   }
   
+  @JSImport("@jupyterlab/ui-components/lib/icon/widgets", "ContextMenuSvg")
   @js.native
   class ContextMenuSvg protected ()
     extends typings.jupyterlabUiComponents.menusvgMod.ContextMenuSvg {
@@ -34,6 +36,7 @@ object widgetsMod extends js.Object {
     def this(options: IOptions) = this()
   }
   
+  @JSImport("@jupyterlab/ui-components/lib/icon/widgets", "DockPanelSvg")
   @js.native
   /**
     * Construct a new dock panel.
@@ -44,19 +47,22 @@ object widgetsMod extends js.Object {
     extends typings.jupyterlabUiComponents.tabbarsvgMod.DockPanelSvg {
     def this(options: typings.luminoWidgets.dockpanelMod.DockPanel.IOptions) = this()
   }
-  @js.native
-  object DockPanelSvg extends js.Object {
-    
-    val defaultRenderer: typings.jupyterlabUiComponents.tabbarsvgMod.DockPanelSvg.Renderer = js.native
+  object DockPanelSvg {
     
     /**
       * A modified implementation of the DockPanel Renderer.
       */
+    @JSImport("@jupyterlab/ui-components/lib/icon/widgets", "DockPanelSvg.Renderer")
     @js.native
     class Renderer ()
       extends typings.jupyterlabUiComponents.tabbarsvgMod.DockPanelSvg.Renderer
+    
+    @JSImport("@jupyterlab/ui-components/lib/icon/widgets", "DockPanelSvg.defaultRenderer")
+    @js.native
+    val defaultRenderer: typings.jupyterlabUiComponents.tabbarsvgMod.DockPanelSvg.Renderer = js.native
   }
   
+  @JSImport("@jupyterlab/ui-components/lib/icon/widgets", "MenuSvg")
   @js.native
   class MenuSvg protected ()
     extends typings.jupyterlabUiComponents.menusvgMod.MenuSvg {
@@ -67,21 +73,29 @@ object widgetsMod extends js.Object {
       */
     def this(options: typings.luminoWidgets.menuMod.Menu.IOptions) = this()
   }
-  @js.native
-  object MenuSvg extends js.Object {
-    
-    val defaultRenderer: typings.jupyterlabUiComponents.menusvgMod.MenuSvg.Renderer = js.native
-    
-    def overrideDefaultRenderer(menu: Menu): Unit = js.native
+  object MenuSvg {
     
     /**
       * a modified implementation of the Menu Renderer
       */
+    @JSImport("@jupyterlab/ui-components/lib/icon/widgets", "MenuSvg.Renderer")
     @js.native
+    /**
+      * Construct a new renderer.
+      */
     class Renderer ()
       extends typings.jupyterlabUiComponents.menusvgMod.MenuSvg.Renderer
+    
+    @JSImport("@jupyterlab/ui-components/lib/icon/widgets", "MenuSvg.defaultRenderer")
+    @js.native
+    val defaultRenderer: typings.jupyterlabUiComponents.menusvgMod.MenuSvg.Renderer = js.native
+    
+    @JSImport("@jupyterlab/ui-components/lib/icon/widgets", "MenuSvg.overrideDefaultRenderer")
+    @js.native
+    def overrideDefaultRenderer(menu: Menu): Unit = js.native
   }
   
+  @JSImport("@jupyterlab/ui-components/lib/icon/widgets", "TabBarSvg")
   @js.native
   /**
     * Construct a new tab bar. Overrides the default renderer.
@@ -92,16 +106,21 @@ object widgetsMod extends js.Object {
     extends typings.jupyterlabUiComponents.tabbarsvgMod.TabBarSvg[T] {
     def this(options: typings.luminoWidgets.tabbarMod.TabBar.IOptions[T]) = this()
   }
-  @js.native
-  object TabBarSvg extends js.Object {
-    
-    val defaultRenderer: typings.jupyterlabUiComponents.tabbarsvgMod.TabBarSvg.Renderer = js.native
+  object TabBarSvg {
     
     /**
       * A modified implementation of the TabBar Renderer.
       */
+    @JSImport("@jupyterlab/ui-components/lib/icon/widgets", "TabBarSvg.Renderer")
     @js.native
+    /**
+      * Construct a new renderer.
+      */
     class Renderer ()
       extends typings.jupyterlabUiComponents.tabbarsvgMod.TabBarSvg.Renderer
+    
+    @JSImport("@jupyterlab/ui-components/lib/icon/widgets", "TabBarSvg.defaultRenderer")
+    @js.native
+    val defaultRenderer: typings.jupyterlabUiComponents.tabbarsvgMod.TabBarSvg.Renderer = js.native
   }
 }

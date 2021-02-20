@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.UI.iOS
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,27 +24,15 @@ object DocumentViewerEventMap {
   }
   
   @scala.inline
-  implicit class DocumentViewerEventMapOps[Self <: DocumentViewerEventMap] (val x: Self) extends AnyVal {
+  implicit class DocumentViewerEventMapMutableBuilder[Self <: DocumentViewerEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoad(value: DocumentViewerLoadEvent): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMenu(value: DocumentViewerMenuEvent): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLoad(value: DocumentViewerLoadEvent): Self = this.set("load", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMenu(value: DocumentViewerMenuEvent): Self = this.set("menu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnload(value: DocumentViewerUnloadEvent): Self = this.set("unload", value.asInstanceOf[js.Any])
+    def setUnload(value: DocumentViewerUnloadEvent): Self = StObject.set(x, "unload", value.asInstanceOf[js.Any])
   }
 }

@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientTagmanager.anon.Callback
 import typings.maximMazurokGapiClientTagmanager.anon.Fields
 import typings.maximMazurokGapiClientTagmanager.anon.UploadTypeUploadprotocol
 import typings.maximMazurokGapiClientTagmanager.anon.UploadprotocolXgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserPermissionsResource extends js.Object {
+trait UserPermissionsResource extends StObject {
   
   def create(request: Alt, body: UserPermission): Request[UserPermission] = js.native
   /** Creates a user's Account & Container access. */

@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ValueFormat extends js.Object
+sealed trait ValueFormat extends StObject
 /**
   * Specifies whether values, such as numbers and dates, returned by the invoked method are returned with their formatting applied.
   *
@@ -17,7 +18,7 @@ sealed trait ValueFormat extends js.Object
   */
 @JSGlobal("Office.ValueFormat")
 @js.native
-object ValueFormat extends js.Object {
+object ValueFormat extends StObject {
   
   /**
     * Return formatted data.

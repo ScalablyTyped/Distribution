@@ -1,5 +1,6 @@
 package typings.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,33 +27,21 @@ object YieldExpression {
   }
   
   @scala.inline
-  implicit class YieldExpressionOps[Self <: YieldExpression] (val x: Self) extends AnyVal {
+  implicit class YieldExpressionMutableBuilder[Self <: YieldExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgumentNull: Self = StObject.set(x, "argument", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgumentUndefined: Self = StObject.set(x, "argument", js.undefined)
     
     @scala.inline
-    def setDelegate(value: Boolean): Self = this.set("delegate", value.asInstanceOf[js.Any])
+    def setDelegate(value: Boolean): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: typings.estree.estreeStrings.YieldExpression): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setArgument(value: Expression): Self = this.set("argument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArgument: Self = this.set("argument", js.undefined)
-    
-    @scala.inline
-    def setArgumentNull: Self = this.set("argument", null)
+    def setType(value: typings.estree.estreeStrings.YieldExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

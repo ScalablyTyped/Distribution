@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EBSStorageInfo extends js.Object {
+trait EBSStorageInfo extends StObject {
   
   /**
     * 
@@ -23,24 +24,12 @@ object EBSStorageInfo {
   }
   
   @scala.inline
-  implicit class EBSStorageInfoOps[Self <: EBSStorageInfo] (val x: Self) extends AnyVal {
+  implicit class EBSStorageInfoMutableBuilder[Self <: EBSStorageInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVolumeSize(value: integerMin1Max16384): Self = StObject.set(x, "VolumeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVolumeSize(value: integerMin1Max16384): Self = this.set("VolumeSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeSize: Self = this.set("VolumeSize", js.undefined)
+    def setVolumeSizeUndefined: Self = StObject.set(x, "VolumeSize", js.undefined)
   }
 }

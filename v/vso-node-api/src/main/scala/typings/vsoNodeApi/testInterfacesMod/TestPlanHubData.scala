@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.testInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestPlanHubData extends js.Object {
+trait TestPlanHubData extends StObject {
   
   var selectedSuiteId: Double = js.native
   
@@ -32,39 +33,27 @@ object TestPlanHubData {
   }
   
   @scala.inline
-  implicit class TestPlanHubDataOps[Self <: TestPlanHubData] (val x: Self) extends AnyVal {
+  implicit class TestPlanHubDataMutableBuilder[Self <: TestPlanHubData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSelectedSuiteId(value: Double): Self = StObject.set(x, "selectedSuiteId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTestPlan(value: TestPlan): Self = StObject.set(x, "testPlan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTestPoints(value: js.Array[TestPoint]): Self = StObject.set(x, "testPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedSuiteId(value: Double): Self = this.set("selectedSuiteId", value.asInstanceOf[js.Any])
+    def setTestPointsVarargs(value: TestPoint*): Self = StObject.set(x, "testPoints", js.Array(value :_*))
     
     @scala.inline
-    def setTestPlan(value: TestPlan): Self = this.set("testPlan", value.asInstanceOf[js.Any])
+    def setTestSuites(value: js.Array[TestSuite]): Self = StObject.set(x, "testSuites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestPointsVarargs(value: TestPoint*): Self = this.set("testPoints", js.Array(value :_*))
+    def setTestSuitesVarargs(value: TestSuite*): Self = StObject.set(x, "testSuites", js.Array(value :_*))
     
     @scala.inline
-    def setTestPoints(value: js.Array[TestPoint]): Self = this.set("testPoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestSuitesVarargs(value: TestSuite*): Self = this.set("testSuites", js.Array(value :_*))
-    
-    @scala.inline
-    def setTestSuites(value: js.Array[TestSuite]): Self = this.set("testSuites", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalTestPoints(value: Double): Self = this.set("totalTestPoints", value.asInstanceOf[js.Any])
+    def setTotalTestPoints(value: Double): Self = StObject.set(x, "totalTestPoints", value.asInstanceOf[js.Any])
   }
 }

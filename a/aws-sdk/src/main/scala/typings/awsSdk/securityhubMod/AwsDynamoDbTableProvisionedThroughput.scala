@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsDynamoDbTableProvisionedThroughput extends js.Object {
+trait AwsDynamoDbTableProvisionedThroughput extends StObject {
   
   /**
     * Indicates when the provisioned throughput was last decreased. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
@@ -41,48 +42,36 @@ object AwsDynamoDbTableProvisionedThroughput {
   }
   
   @scala.inline
-  implicit class AwsDynamoDbTableProvisionedThroughputOps[Self <: AwsDynamoDbTableProvisionedThroughput] (val x: Self) extends AnyVal {
+  implicit class AwsDynamoDbTableProvisionedThroughputMutableBuilder[Self <: AwsDynamoDbTableProvisionedThroughput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastDecreaseDateTime(value: NonEmptyString): Self = StObject.set(x, "LastDecreaseDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastDecreaseDateTimeUndefined: Self = StObject.set(x, "LastDecreaseDateTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastIncreaseDateTime(value: NonEmptyString): Self = StObject.set(x, "LastIncreaseDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastDecreaseDateTime(value: NonEmptyString): Self = this.set("LastDecreaseDateTime", value.asInstanceOf[js.Any])
+    def setLastIncreaseDateTimeUndefined: Self = StObject.set(x, "LastIncreaseDateTime", js.undefined)
     
     @scala.inline
-    def deleteLastDecreaseDateTime: Self = this.set("LastDecreaseDateTime", js.undefined)
+    def setNumberOfDecreasesToday(value: Integer): Self = StObject.set(x, "NumberOfDecreasesToday", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastIncreaseDateTime(value: NonEmptyString): Self = this.set("LastIncreaseDateTime", value.asInstanceOf[js.Any])
+    def setNumberOfDecreasesTodayUndefined: Self = StObject.set(x, "NumberOfDecreasesToday", js.undefined)
     
     @scala.inline
-    def deleteLastIncreaseDateTime: Self = this.set("LastIncreaseDateTime", js.undefined)
+    def setReadCapacityUnits(value: Integer): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfDecreasesToday(value: Integer): Self = this.set("NumberOfDecreasesToday", value.asInstanceOf[js.Any])
+    def setReadCapacityUnitsUndefined: Self = StObject.set(x, "ReadCapacityUnits", js.undefined)
     
     @scala.inline
-    def deleteNumberOfDecreasesToday: Self = this.set("NumberOfDecreasesToday", js.undefined)
+    def setWriteCapacityUnits(value: Integer): Self = StObject.set(x, "WriteCapacityUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadCapacityUnits(value: Integer): Self = this.set("ReadCapacityUnits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadCapacityUnits: Self = this.set("ReadCapacityUnits", js.undefined)
-    
-    @scala.inline
-    def setWriteCapacityUnits(value: Integer): Self = this.set("WriteCapacityUnits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteCapacityUnits: Self = this.set("WriteCapacityUnits", js.undefined)
+    def setWriteCapacityUnitsUndefined: Self = StObject.set(x, "WriteCapacityUnits", js.undefined)
   }
 }

@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientContent.anon.CallbackDestinations
 import typings.maximMazurokGapiClientContent.anon.Key
 import typings.maximMazurokGapiClientContent.anon.OauthtokenPrettyPrintQuotaUser
 import typings.maximMazurokGapiClientContent.anon.PageToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProductstatusesResource extends js.Object {
+trait ProductstatusesResource extends StObject {
   
   def custombatch(request: Key, body: ProductstatusesCustomBatchRequest): Request[ProductstatusesCustomBatchResponse] = js.native
   /** Gets the statuses of multiple products in a single request. */

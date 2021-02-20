@@ -1,19 +1,20 @@
 package typings.baiduApp.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Calorie extends js.Object {
+trait Calorie extends StObject {
   
-   // 菜名，示例：鱼香肉丝。
+  // 菜名，示例：鱼香肉丝。
   var calorie: Double = js.native
   
   // 菜品识别结果数组
   var name: String = js.native
   
-   // 卡路里，每100g的卡路里含量。
+  // 卡路里，每100g的卡路里含量。
   var probability: Double = js.native
 }
 object Calorie {
@@ -25,27 +26,15 @@ object Calorie {
   }
   
   @scala.inline
-  implicit class CalorieOps[Self <: Calorie] (val x: Self) extends AnyVal {
+  implicit class CalorieMutableBuilder[Self <: Calorie] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalorie(value: Double): Self = StObject.set(x, "calorie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCalorie(value: Double): Self = this.set("calorie", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProbability(value: Double): Self = this.set("probability", value.asInstanceOf[js.Any])
+    def setProbability(value: Double): Self = StObject.set(x, "probability", value.asInstanceOf[js.Any])
   }
 }

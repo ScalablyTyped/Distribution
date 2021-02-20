@@ -6,6 +6,7 @@ import typings.babelTypes.babelTypesStrings.ExportSpecifier
 import typings.babelTypes.babelTypesStrings.ImportDefaultSpecifier
 import typings.babelTypes.babelTypesStrings.ImportNamespaceSpecifier
 import typings.babelTypes.babelTypesStrings.ImportSpecifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,21 +19,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.ts36Mod.ExportDefaultSpecifier_
   - typings.babelTypes.ts36Mod.ExportNamespaceSpecifier_
 */
-trait ModuleSpecifier extends js.Object
+trait ModuleSpecifier extends StObject
 object ModuleSpecifier {
-  
-  @scala.inline
-  def ImportNamespaceSpecifier_(
-    end: Double,
-    loc: SourceLocation,
-    local: Identifier_,
-    start: Double,
-    `type`: ImportNamespaceSpecifier
-  ): ModuleSpecifier = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleSpecifier]
-  }
   
   @scala.inline
   def ExportDefaultSpecifier_(
@@ -41,23 +29,23 @@ object ModuleSpecifier {
     loc: SourceLocation,
     start: Double,
     `type`: ExportDefaultSpecifier
-  ): ModuleSpecifier = {
+  ): typings.babelTypes.ts36Mod.ExportDefaultSpecifier_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], exported = exported.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleSpecifier]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.ExportDefaultSpecifier_]
   }
   
   @scala.inline
-  def ImportDefaultSpecifier_(
+  def ExportNamespaceSpecifier_(
     end: Double,
+    exported: Identifier_,
     loc: SourceLocation,
-    local: Identifier_,
     start: Double,
-    `type`: ImportDefaultSpecifier
-  ): ModuleSpecifier = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    `type`: ExportNamespaceSpecifier
+  ): typings.babelTypes.ts36Mod.ExportNamespaceSpecifier_ = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], exported = exported.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleSpecifier]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.ExportNamespaceSpecifier_]
   }
   
   @scala.inline
@@ -69,23 +57,36 @@ object ModuleSpecifier {
     local: Identifier_,
     start: Double,
     `type`: ExportSpecifier
-  ): ModuleSpecifier = {
+  ): typings.babelTypes.ts36Mod.ExportSpecifier_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], exported = exported.asInstanceOf[js.Any], imported = imported.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleSpecifier]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.ExportSpecifier_]
   }
   
   @scala.inline
-  def ExportNamespaceSpecifier_(
+  def ImportDefaultSpecifier_(
     end: Double,
-    exported: Identifier_,
     loc: SourceLocation,
+    local: Identifier_,
     start: Double,
-    `type`: ExportNamespaceSpecifier
-  ): ModuleSpecifier = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], exported = exported.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    `type`: ImportDefaultSpecifier
+  ): typings.babelTypes.ts36Mod.ImportDefaultSpecifier_ = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleSpecifier]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.ImportDefaultSpecifier_]
+  }
+  
+  @scala.inline
+  def ImportNamespaceSpecifier_(
+    end: Double,
+    loc: SourceLocation,
+    local: Identifier_,
+    start: Double,
+    `type`: ImportNamespaceSpecifier
+  ): typings.babelTypes.ts36Mod.ImportNamespaceSpecifier_ = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.ImportNamespaceSpecifier_]
   }
   
   @scala.inline
@@ -96,9 +97,9 @@ object ModuleSpecifier {
     local: Identifier_,
     start: Double,
     `type`: ImportSpecifier
-  ): ModuleSpecifier = {
+  ): typings.babelTypes.ts36Mod.ImportSpecifier_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], imported = imported.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleSpecifier]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.ImportSpecifier_]
   }
 }

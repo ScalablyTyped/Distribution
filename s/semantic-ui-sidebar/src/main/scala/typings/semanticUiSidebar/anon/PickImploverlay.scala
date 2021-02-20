@@ -1,12 +1,13 @@
 package typings.semanticUiSidebar.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-sidebar.SemanticUI.Sidebar.ErrorSettings._Impl, 'overlay'> */
 @js.native
-trait PickImploverlay extends js.Object {
+trait PickImploverlay extends StObject {
   
   var overlay: String = js.native
 }
@@ -19,21 +20,9 @@ object PickImploverlay {
   }
   
   @scala.inline
-  implicit class PickImploverlayOps[Self <: PickImploverlay] (val x: Self) extends AnyVal {
+  implicit class PickImploverlayMutableBuilder[Self <: PickImploverlay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOverlay(value: String): Self = this.set("overlay", value.asInstanceOf[js.Any])
+    def setOverlay(value: String): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
   }
 }

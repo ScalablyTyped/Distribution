@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.tagFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TagFeedResponse extends js.Object {
+trait TagFeedResponse extends StObject {
   
   var auto_load_more_enabled: Boolean = js.native
   
@@ -41,48 +42,36 @@ object TagFeedResponse {
   }
   
   @scala.inline
-  implicit class TagFeedResponseOps[Self <: TagFeedResponse] (val x: Self) extends AnyVal {
+  implicit class TagFeedResponseMutableBuilder[Self <: TagFeedResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuto_load_more_enabled(value: Boolean): Self = StObject.set(x, "auto_load_more_enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItems(value: js.Array[TagFeedResponseItemsItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsVarargs(value: TagFeedResponseItemsItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setAuto_load_more_enabled(value: Boolean): Self = this.set("auto_load_more_enabled", value.asInstanceOf[js.Any])
+    def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: TagFeedResponseItemsItem*): Self = this.set("items", js.Array(value :_*))
+    def setNext_max_id(value: String): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[TagFeedResponseItemsItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setNum_results(value: Double): Self = StObject.set(x, "num_results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMore_available(value: Boolean): Self = this.set("more_available", value.asInstanceOf[js.Any])
+    def setRanked_items(value: js.Array[TagFeedResponseRankedItemsItem]): Self = StObject.set(x, "ranked_items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext_max_id(value: String): Self = this.set("next_max_id", value.asInstanceOf[js.Any])
+    def setRanked_itemsVarargs(value: TagFeedResponseRankedItemsItem*): Self = StObject.set(x, "ranked_items", js.Array(value :_*))
     
     @scala.inline
-    def setNum_results(value: Double): Self = this.set("num_results", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRanked_itemsVarargs(value: TagFeedResponseRankedItemsItem*): Self = this.set("ranked_items", js.Array(value :_*))
-    
-    @scala.inline
-    def setRanked_items(value: js.Array[TagFeedResponseRankedItemsItem]): Self = this.set("ranked_items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStory(value: TagFeedResponseStory): Self = this.set("story", value.asInstanceOf[js.Any])
+    def setStory(value: TagFeedResponseStory): Self = StObject.set(x, "story", value.asInstanceOf[js.Any])
   }
 }

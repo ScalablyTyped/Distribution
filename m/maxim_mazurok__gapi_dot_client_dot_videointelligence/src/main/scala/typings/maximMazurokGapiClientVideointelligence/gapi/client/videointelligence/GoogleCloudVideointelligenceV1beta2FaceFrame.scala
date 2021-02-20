@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelligence
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudVideointelligenceV1beta2FaceFrame extends js.Object {
+trait GoogleCloudVideointelligenceV1beta2FaceFrame extends StObject {
   
   /** Normalized Bounding boxes in a frame. There can be more than one boxes if the same face is detected in multiple locations within the current frame. */
   var normalizedBoundingBoxes: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox]] = js.native
@@ -22,33 +23,21 @@ object GoogleCloudVideointelligenceV1beta2FaceFrame {
   }
   
   @scala.inline
-  implicit class GoogleCloudVideointelligenceV1beta2FaceFrameOps[Self <: GoogleCloudVideointelligenceV1beta2FaceFrame] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudVideointelligenceV1beta2FaceFrameMutableBuilder[Self <: GoogleCloudVideointelligenceV1beta2FaceFrame] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNormalizedBoundingBoxes(value: js.Array[GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox]): Self = StObject.set(x, "normalizedBoundingBoxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNormalizedBoundingBoxesUndefined: Self = StObject.set(x, "normalizedBoundingBoxes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNormalizedBoundingBoxesVarargs(value: GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox*): Self = StObject.set(x, "normalizedBoundingBoxes", js.Array(value :_*))
     
     @scala.inline
-    def setNormalizedBoundingBoxesVarargs(value: GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox*): Self = this.set("normalizedBoundingBoxes", js.Array(value :_*))
+    def setTimeOffset(value: String): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalizedBoundingBoxes(value: js.Array[GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox]): Self = this.set("normalizedBoundingBoxes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNormalizedBoundingBoxes: Self = this.set("normalizedBoundingBoxes", js.undefined)
-    
-    @scala.inline
-    def setTimeOffset(value: String): Self = this.set("timeOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeOffset: Self = this.set("timeOffset", js.undefined)
+    def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
   }
 }

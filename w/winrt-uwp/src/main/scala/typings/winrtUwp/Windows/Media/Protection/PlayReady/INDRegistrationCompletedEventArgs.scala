@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides arguments for the PlayReady-ND RegistrationCompleted event. */
 @js.native
-trait INDRegistrationCompletedEventArgs extends js.Object {
+trait INDRegistrationCompletedEventArgs extends StObject {
   
   /** Gets custom data from a registration response. */
   var responseCustomData: INDCustomData = js.native
@@ -30,27 +31,15 @@ object INDRegistrationCompletedEventArgs {
   }
   
   @scala.inline
-  implicit class INDRegistrationCompletedEventArgsOps[Self <: INDRegistrationCompletedEventArgs] (val x: Self) extends AnyVal {
+  implicit class INDRegistrationCompletedEventArgsMutableBuilder[Self <: INDRegistrationCompletedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResponseCustomData(value: INDCustomData): Self = StObject.set(x, "responseCustomData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTransmitterCertificateAccepted(value: Boolean): Self = StObject.set(x, "transmitterCertificateAccepted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResponseCustomData(value: INDCustomData): Self = this.set("responseCustomData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransmitterCertificateAccepted(value: Boolean): Self = this.set("transmitterCertificateAccepted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransmitterProperties(value: INDTransmitterProperties): Self = this.set("transmitterProperties", value.asInstanceOf[js.Any])
+    def setTransmitterProperties(value: INDTransmitterProperties): Self = StObject.set(x, "transmitterProperties", value.asInstanceOf[js.Any])
   }
 }

@@ -4,14 +4,14 @@ import typings.ionicCore.radioGroupInterfaceMod.RadioGroupChangeEventDetail
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/radio-group/radio-group", JSImport.Namespace)
-@js.native
-object radioGroupMod extends js.Object {
+object radioGroupMod {
   
+  @JSImport("@ionic/core/dist/types/components/radio-group/radio-group", "RadioGroup")
   @js.native
   class RadioGroup () extends ComponentInterface {
     

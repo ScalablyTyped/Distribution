@@ -1,36 +1,13 @@
 package typings.typescriptCollections
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typescript-collections/dist/lib/FactoryDictionary", JSImport.Namespace)
-@js.native
-object factoryDictionaryMod extends js.Object {
+object factoryDictionaryMod {
   
-  @js.native
-  trait FactoryDictionary[K, V]
-    extends typings.typescriptCollections.dictionaryMod.default[K, V] {
-    
-    /**
-      * Factory to create default values.
-      * @type {function(Object):string}
-      * @protected
-      */
-    /* protected */ def defaultFactoryFunction(): V = js.native
-    
-    /**
-      * Associates the specified default value with the specified key in this dictionary,
-      * if it didn't contain the key yet. If the key existed, the existing value will be used.
-      * @param {Object} key key with which the specified value is to be
-      * associated.
-      * @param {Object} defaultValue default value to be associated with the specified key.
-      * @return {*} previous value associated with the specified key, or the default value,
-      * if the key didn't exist yet.
-      */
-    def setDefault(key: K, defaultValue: V): V = js.native
-  }
-  
+  @JSImport("typescript-collections/dist/lib/FactoryDictionary", JSImport.Default)
   @js.native
   class default[K, V] protected () extends FactoryDictionary[K, V] {
     /**
@@ -63,5 +40,28 @@ object factoryDictionaryMod extends js.Object {
       */
     def this(defaultFactoryFunction: js.Function0[V]) = this()
     def this(defaultFactoryFunction: js.Function0[V], toStrFunction: js.Function1[/* key */ K, String]) = this()
+  }
+  
+  @js.native
+  trait FactoryDictionary[K, V]
+    extends typings.typescriptCollections.dictionaryMod.default[K, V] {
+    
+    /**
+      * Factory to create default values.
+      * @type {function(Object):string}
+      * @protected
+      */
+    /* protected */ def defaultFactoryFunction(): V = js.native
+    
+    /**
+      * Associates the specified default value with the specified key in this dictionary,
+      * if it didn't contain the key yet. If the key existed, the existing value will be used.
+      * @param {Object} key key with which the specified value is to be
+      * associated.
+      * @param {Object} defaultValue default value to be associated with the specified key.
+      * @return {*} previous value associated with the specified key, or the default value,
+      * if the key didn't exist yet.
+      */
+    def setDefault(key: K, defaultValue: V): V = js.native
   }
 }

@@ -7,16 +7,16 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Meshes/csg", JSImport.Namespace)
-@js.native
-object csgMod extends js.Object {
+object csgMod {
   
+  @JSImport("babylonjs/Meshes/csg", "CSG")
   @js.native
-  class CSG () extends js.Object {
+  class CSG () extends StObject {
     
     /**
       * Build Raw mesh from CSG
@@ -138,20 +138,29 @@ object csgMod extends js.Object {
     def unionInPlace(csg: CSG): Unit = js.native
   }
   /* static members */
-  @js.native
-  object CSG extends js.Object {
+  object CSG {
+    
+    @JSImport("babylonjs/Meshes/csg", "CSG")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Convert the Mesh to CSG
       * @param mesh The Mesh to convert to CSG
       * @returns A new CSG from the Mesh
       */
+    @JSImport("babylonjs/Meshes/csg", "CSG.FromMesh")
+    @js.native
     def FromMesh(mesh: Mesh): CSG = js.native
     
     /**
       * Construct a CSG solid from a list of `CSG.Polygon` instances.
       * @param polygons Polygons used to construct a CSG solid
       */
-    var FromPolygons: js.Any = js.native
+    @JSImport("babylonjs/Meshes/csg", "CSG.FromPolygons")
+    @js.native
+    def FromPolygons: js.Any = js.native
+    @scala.inline
+    def FromPolygons_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FromPolygons")(x.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.elasticApmNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartSpanFn extends js.Object {
+trait StartSpanFn extends StObject {
   
   def startSpan(): Span | Null = js.native
   def startSpan(name: js.UndefOr[scala.Nothing], options: SpanOptions): Span | Null = js.native

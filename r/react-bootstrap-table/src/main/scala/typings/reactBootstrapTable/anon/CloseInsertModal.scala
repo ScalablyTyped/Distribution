@@ -1,11 +1,12 @@
 package typings.reactBootstrapTable.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloseInsertModal extends js.Object {
+trait CloseInsertModal extends StObject {
   
   /**
     * Callback to close the insert row modal window.
@@ -53,36 +54,24 @@ object CloseInsertModal {
   }
   
   @scala.inline
-  implicit class CloseInsertModalOps[Self <: CloseInsertModal] (val x: Self) extends AnyVal {
+  implicit class CloseInsertModalMutableBuilder[Self <: CloseInsertModal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseInsertModal(value: () => Unit): Self = StObject.set(x, "closeInsertModal", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDropRow(value: () => Unit): Self = StObject.set(x, "dropRow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportCSV(value: () => Unit): Self = StObject.set(x, "exportCSV", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCloseInsertModal(value: () => Unit): Self = this.set("closeInsertModal", js.Any.fromFunction0(value))
+    def setOpenInsertModal(value: () => Unit): Self = StObject.set(x, "openInsertModal", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDropRow(value: () => Unit): Self = this.set("dropRow", js.Any.fromFunction0(value))
+    def setSearch(value: () => Unit): Self = StObject.set(x, "search", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExportCSV(value: () => Unit): Self = this.set("exportCSV", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOpenInsertModal(value: () => Unit): Self = this.set("openInsertModal", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSearch(value: () => Unit): Self = this.set("search", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShowOnlyToogle(value: () => Unit): Self = this.set("showOnlyToogle", js.Any.fromFunction0(value))
+    def setShowOnlyToogle(value: () => Unit): Self = StObject.set(x, "showOnlyToogle", js.Any.fromFunction0(value))
   }
 }

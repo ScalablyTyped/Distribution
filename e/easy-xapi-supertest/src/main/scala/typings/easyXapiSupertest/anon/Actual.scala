@@ -1,11 +1,12 @@
 package typings.easyXapiSupertest.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Actual extends js.Object {
+trait Actual extends StObject {
   
   var actual: js.UndefOr[js.Any] = js.native
   
@@ -26,48 +27,36 @@ object Actual {
   }
   
   @scala.inline
-  implicit class ActualOps[Self <: Actual] (val x: Self) extends AnyVal {
+  implicit class ActualMutableBuilder[Self <: Actual] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActual(value: js.Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActualUndefined: Self = StObject.set(x, "actual", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpected(value: js.Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActual(value: js.Any): Self = this.set("actual", value.asInstanceOf[js.Any])
+    def setExpectedUndefined: Self = StObject.set(x, "expected", js.undefined)
     
     @scala.inline
-    def deleteActual: Self = this.set("actual", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpected(value: js.Any): Self = this.set("expected", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteExpected: Self = this.set("expected", js.undefined)
+    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setStackStartFunction(value: js.Function): Self = StObject.set(x, "stackStartFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperator(value: String): Self = this.set("operator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperator: Self = this.set("operator", js.undefined)
-    
-    @scala.inline
-    def setStackStartFunction(value: js.Function): Self = this.set("stackStartFunction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackStartFunction: Self = this.set("stackStartFunction", js.undefined)
+    def setStackStartFunctionUndefined: Self = StObject.set(x, "stackStartFunction", js.undefined)
   }
 }

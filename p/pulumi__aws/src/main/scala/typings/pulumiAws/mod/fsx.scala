@@ -7,14 +7,14 @@ import typings.pulumiAws.windowsFileSystemMod.WindowsFileSystemState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws", "fsx")
-@js.native
-object fsx extends js.Object {
+object fsx {
   
+  @JSImport("@pulumi/aws", "fsx.LustreFileSystem")
   @js.native
   class LustreFileSystem protected ()
     extends typings.pulumiAws.fsxMod.LustreFileSystem {
@@ -29,8 +29,7 @@ object fsx extends js.Object {
     def this(name: String, args: LustreFileSystemArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object LustreFileSystem extends js.Object {
+  object LustreFileSystem {
     
     /**
       * Get an existing LustreFileSystem resource's state with the given name, ID, and optional extra
@@ -41,18 +40,29 @@ object fsx extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "fsx.LustreFileSystem.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.lustreFileSystemMod.LustreFileSystem = js.native
+    @JSImport("@pulumi/aws", "fsx.LustreFileSystem.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.lustreFileSystemMod.LustreFileSystem = js.native
+    @JSImport("@pulumi/aws", "fsx.LustreFileSystem.get")
+    @js.native
     def get(name: String, id: Input[ID], state: LustreFileSystemState): typings.pulumiAws.lustreFileSystemMod.LustreFileSystem = js.native
+    @JSImport("@pulumi/aws", "fsx.LustreFileSystem.get")
+    @js.native
     def get(name: String, id: Input[ID], state: LustreFileSystemState, opts: CustomResourceOptions): typings.pulumiAws.lustreFileSystemMod.LustreFileSystem = js.native
     
     /**
       * Returns true if the given object is an instance of LustreFileSystem.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "fsx.LustreFileSystem.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/fsx/lustreFileSystem.LustreFileSystem */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "fsx.WindowsFileSystem")
   @js.native
   class WindowsFileSystem protected ()
     extends typings.pulumiAws.fsxMod.WindowsFileSystem {
@@ -67,8 +77,7 @@ object fsx extends js.Object {
     def this(name: String, args: WindowsFileSystemArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object WindowsFileSystem extends js.Object {
+  object WindowsFileSystem {
     
     /**
       * Get an existing WindowsFileSystem resource's state with the given name, ID, and optional extra
@@ -79,15 +88,25 @@ object fsx extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "fsx.WindowsFileSystem.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.windowsFileSystemMod.WindowsFileSystem = js.native
+    @JSImport("@pulumi/aws", "fsx.WindowsFileSystem.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.windowsFileSystemMod.WindowsFileSystem = js.native
+    @JSImport("@pulumi/aws", "fsx.WindowsFileSystem.get")
+    @js.native
     def get(name: String, id: Input[ID], state: WindowsFileSystemState): typings.pulumiAws.windowsFileSystemMod.WindowsFileSystem = js.native
+    @JSImport("@pulumi/aws", "fsx.WindowsFileSystem.get")
+    @js.native
     def get(name: String, id: Input[ID], state: WindowsFileSystemState, opts: CustomResourceOptions): typings.pulumiAws.windowsFileSystemMod.WindowsFileSystem = js.native
     
     /**
       * Returns true if the given object is an instance of WindowsFileSystem.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "fsx.WindowsFileSystem.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/fsx/windowsFileSystem.WindowsFileSystem */ Boolean = js.native
   }
 }

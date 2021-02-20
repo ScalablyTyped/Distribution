@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FacetAttributeReference extends js.Object {
+trait FacetAttributeReference extends StObject {
   
   /**
     * The target attribute name that is associated with the facet reference. See Attribute References for more information.
@@ -26,24 +27,12 @@ object FacetAttributeReference {
   }
   
   @scala.inline
-  implicit class FacetAttributeReferenceOps[Self <: FacetAttributeReference] (val x: Self) extends AnyVal {
+  implicit class FacetAttributeReferenceMutableBuilder[Self <: FacetAttributeReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTargetAttributeName(value: AttributeName): Self = StObject.set(x, "TargetAttributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTargetAttributeName(value: AttributeName): Self = this.set("TargetAttributeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetFacetName(value: FacetName): Self = this.set("TargetFacetName", value.asInstanceOf[js.Any])
+    def setTargetFacetName(value: FacetName): Self = StObject.set(x, "TargetFacetName", value.asInstanceOf[js.Any])
   }
 }

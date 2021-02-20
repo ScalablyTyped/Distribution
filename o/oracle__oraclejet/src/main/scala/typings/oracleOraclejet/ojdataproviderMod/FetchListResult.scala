@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.ojdataproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FetchListResult[K, D] extends js.Object {
+trait FetchListResult[K, D] extends StObject {
   
   var data: js.Array[D] = js.native
   
@@ -22,33 +23,21 @@ object FetchListResult {
   }
   
   @scala.inline
-  implicit class FetchListResultOps[Self <: FetchListResult[_, _], K, D] (val x: Self with (FetchListResult[K, D])) extends AnyVal {
+  implicit class FetchListResultMutableBuilder[Self <: FetchListResult[_, _], K, D] (val x: Self with (FetchListResult[K, D])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Array[D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataVarargs(value: D*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFetchParameters(value: FetchListParameters[D]): Self = StObject.set(x, "fetchParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: D*): Self = this.set("data", js.Array(value :_*))
+    def setMetadata(value: js.Array[ItemMetadata[K]]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[D]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFetchParameters(value: FetchListParameters[D]): Self = this.set("fetchParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetadataVarargs(value: ItemMetadata[K]*): Self = this.set("metadata", js.Array(value :_*))
-    
-    @scala.inline
-    def setMetadata(value: js.Array[ItemMetadata[K]]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setMetadataVarargs(value: ItemMetadata[K]*): Self = StObject.set(x, "metadata", js.Array(value :_*))
   }
 }

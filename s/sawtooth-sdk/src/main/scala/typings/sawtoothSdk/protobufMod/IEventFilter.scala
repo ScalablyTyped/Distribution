@@ -1,12 +1,13 @@
 package typings.sawtoothSdk.protobufMod
 
 import typings.sawtoothSdk.protobufMod.EventFilter.FilterType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEventFilter extends js.Object {
+trait IEventFilter extends StObject {
   
   /** EventFilter filterType */
   var filterType: js.UndefOr[FilterType | Null] = js.native
@@ -26,45 +27,33 @@ object IEventFilter {
   }
   
   @scala.inline
-  implicit class IEventFilterOps[Self <: IEventFilter] (val x: Self) extends AnyVal {
+  implicit class IEventFilterMutableBuilder[Self <: IEventFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterType(value: FilterType): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterTypeNull: Self = StObject.set(x, "filterType", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
     
     @scala.inline
-    def setFilterType(value: FilterType): Self = this.set("filterType", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilterType: Self = this.set("filterType", js.undefined)
+    def setKeyNull: Self = StObject.set(x, "key", null)
     
     @scala.inline
-    def setFilterTypeNull: Self = this.set("filterType", null)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setMatchString(value: String): Self = StObject.set(x, "matchString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setMatchStringNull: Self = StObject.set(x, "matchString", null)
     
     @scala.inline
-    def setKeyNull: Self = this.set("key", null)
-    
-    @scala.inline
-    def setMatchString(value: String): Self = this.set("matchString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchString: Self = this.set("matchString", js.undefined)
-    
-    @scala.inline
-    def setMatchStringNull: Self = this.set("matchString", null)
+    def setMatchStringUndefined: Self = StObject.set(x, "matchString", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3Destination extends js.Object {
+trait S3Destination extends StObject {
   
   /**
     * The name of the bucket.
@@ -31,30 +32,18 @@ object S3Destination {
   }
   
   @scala.inline
-  implicit class S3DestinationOps[Self <: S3Destination] (val x: Self) extends AnyVal {
+  implicit class S3DestinationMutableBuilder[Self <: S3Destination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketName(value: string): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyPrefix(value: string): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyPrefixUndefined: Self = StObject.set(x, "keyPrefix", js.undefined)
     
     @scala.inline
-    def setBucketName(value: string): Self = this.set("bucketName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKmsKeyArn(value: string): Self = this.set("kmsKeyArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyPrefix(value: string): Self = this.set("keyPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyPrefix: Self = this.set("keyPrefix", js.undefined)
+    def setKmsKeyArn(value: string): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
   }
 }

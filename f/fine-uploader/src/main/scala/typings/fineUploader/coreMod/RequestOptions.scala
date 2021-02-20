@@ -1,11 +1,12 @@
 package typings.fineUploader.coreMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestOptions extends js.Object {
+trait RequestOptions extends StObject {
   
   /**
     * Additional headers sent along with each upload request
@@ -103,90 +104,78 @@ object RequestOptions {
   }
   
   @scala.inline
-  implicit class RequestOptionsOps[Self <: RequestOptions] (val x: Self) extends AnyVal {
+  implicit class RequestOptionsMutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomHeaders(value: js.Any): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomHeaders(value: js.Any): Self = this.set("customHeaders", value.asInstanceOf[js.Any])
+    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
     @scala.inline
-    def deleteCustomHeaders: Self = this.set("customHeaders", js.undefined)
+    def setFilenameParam(value: String): Self = StObject.set(x, "filenameParam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoint(value: String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    def setFilenameParamUndefined: Self = StObject.set(x, "filenameParam", js.undefined)
     
     @scala.inline
-    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    def setForceMultipart(value: Boolean): Self = StObject.set(x, "forceMultipart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilenameParam(value: String): Self = this.set("filenameParam", value.asInstanceOf[js.Any])
+    def setForceMultipartUndefined: Self = StObject.set(x, "forceMultipart", js.undefined)
     
     @scala.inline
-    def deleteFilenameParam: Self = this.set("filenameParam", js.undefined)
+    def setInputName(value: String): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceMultipart(value: Boolean): Self = this.set("forceMultipart", value.asInstanceOf[js.Any])
+    def setInputNameUndefined: Self = StObject.set(x, "inputName", js.undefined)
     
     @scala.inline
-    def deleteForceMultipart: Self = this.set("forceMultipart", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputName(value: String): Self = this.set("inputName", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteInputName: Self = this.set("inputName", js.undefined)
+    def setOmitDefaultParams(value: Boolean): Self = StObject.set(x, "omitDefaultParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setOmitDefaultParamsUndefined: Self = StObject.set(x, "omitDefaultParams", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOmitDefaultParams(value: Boolean): Self = this.set("omitDefaultParams", value.asInstanceOf[js.Any])
+    def setParamsInBody(value: Boolean): Self = StObject.set(x, "paramsInBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOmitDefaultParams: Self = this.set("omitDefaultParams", js.undefined)
+    def setParamsInBodyUndefined: Self = StObject.set(x, "paramsInBody", js.undefined)
     
     @scala.inline
-    def setParams(value: js.Any): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setRequireSuccessJson(value: Boolean): Self = StObject.set(x, "requireSuccessJson", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamsInBody(value: Boolean): Self = this.set("paramsInBody", value.asInstanceOf[js.Any])
+    def setRequireSuccessJsonUndefined: Self = StObject.set(x, "requireSuccessJson", js.undefined)
     
     @scala.inline
-    def deleteParamsInBody: Self = this.set("paramsInBody", js.undefined)
+    def setTotalFileSizeName(value: String): Self = StObject.set(x, "totalFileSizeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireSuccessJson(value: Boolean): Self = this.set("requireSuccessJson", value.asInstanceOf[js.Any])
+    def setTotalFileSizeNameUndefined: Self = StObject.set(x, "totalFileSizeName", js.undefined)
     
     @scala.inline
-    def deleteRequireSuccessJson: Self = this.set("requireSuccessJson", js.undefined)
+    def setUuidName(value: String): Self = StObject.set(x, "uuidName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalFileSizeName(value: String): Self = this.set("totalFileSizeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalFileSizeName: Self = this.set("totalFileSizeName", js.undefined)
-    
-    @scala.inline
-    def setUuidName(value: String): Self = this.set("uuidName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUuidName: Self = this.set("uuidName", js.undefined)
+    def setUuidNameUndefined: Self = StObject.set(x, "uuidName", js.undefined)
   }
 }

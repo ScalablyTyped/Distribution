@@ -1,7 +1,7 @@
 package typings.couchbase.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.couchbase.mod.SpatialQuery.Update
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("couchbase", "SpatialQuery")
 @js.native
-class SpatialQuery () extends js.Object {
+class SpatialQuery () extends StObject {
   
   /**
     * Specifies a bounding box to query the index for. This value must be an array of exactly 4 numbers which represents the left, top, right and bottom edges of the bounding box (in that order).
@@ -50,25 +50,16 @@ class SpatialQuery () extends js.Object {
     */
   def stale(stale: Update): SpatialQuery = js.native
 }
-/* static members */
-@JSImport("couchbase", "SpatialQuery")
-@js.native
-object SpatialQuery extends js.Object {
-  
-  /**
-    * Instantiates a SpatialQuery object for the specified design document and view name.
-    * @param ddoc The design document to use.
-    * @param name     The view to use.
-    */
-  def from(ddoc: String, name: String): SpatialQuery = js.native
+object SpatialQuery {
   
   @js.native
-  sealed trait Update extends js.Object
+  sealed trait Update extends StObject
   /**
     * Enumeration for specifying view update semantics.
     */
+  @JSImport("couchbase", "SpatialQuery.Update")
   @js.native
-  object Update extends js.Object {
+  object Update extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Update with Double] = js.native
@@ -78,23 +69,30 @@ object SpatialQuery extends js.Object {
       */
     @js.native
     sealed trait AFTER extends Update
-    /* 2 */ @js.native
-    object AFTER extends TopLevel[AFTER with Double]
+    /* 2 */ val AFTER: typings.couchbase.mod.SpatialQuery.Update.AFTER with Double = js.native
     
     /**
       * Causes the view to be fully indexed before results are retrieved.
       */
     @js.native
     sealed trait BEFORE extends Update
-    /* 0 */ @js.native
-    object BEFORE extends TopLevel[BEFORE with Double]
+    /* 0 */ val BEFORE: typings.couchbase.mod.SpatialQuery.Update.BEFORE with Double = js.native
     
     /**
       * Allows the index to stay in whatever state it is already in prior retrieval of the query results.
       */
     @js.native
     sealed trait NONE extends Update
-    /* 1 */ @js.native
-    object NONE extends TopLevel[NONE with Double]
+    /* 1 */ val NONE: typings.couchbase.mod.SpatialQuery.Update.NONE with Double = js.native
   }
+  
+  /**
+    * Instantiates a SpatialQuery object for the specified design document and view name.
+    * @param ddoc The design document to use.
+    * @param name     The view to use.
+    */
+  /* static member */
+  @JSImport("couchbase", "SpatialQuery.from")
+  @js.native
+  def from(ddoc: String, name: String): SpatialQuery = js.native
 }

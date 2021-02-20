@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersInCacheKeyAndForwardedToOrigin extends js.Object {
+trait ParametersInCacheKeyAndForwardedToOrigin extends StObject {
   
   /**
     * An object that determines whether any cookies in viewer requests (and if so, which cookies) are included in the cache key and automatically included in requests that CloudFront sends to the origin.
@@ -46,36 +47,24 @@ object ParametersInCacheKeyAndForwardedToOrigin {
   }
   
   @scala.inline
-  implicit class ParametersInCacheKeyAndForwardedToOriginOps[Self <: ParametersInCacheKeyAndForwardedToOrigin] (val x: Self) extends AnyVal {
+  implicit class ParametersInCacheKeyAndForwardedToOriginMutableBuilder[Self <: ParametersInCacheKeyAndForwardedToOrigin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCookiesConfig(value: CachePolicyCookiesConfig): Self = StObject.set(x, "CookiesConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableAcceptEncodingBrotli(value: Boolean): Self = StObject.set(x, "EnableAcceptEncodingBrotli", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableAcceptEncodingBrotliUndefined: Self = StObject.set(x, "EnableAcceptEncodingBrotli", js.undefined)
     
     @scala.inline
-    def setCookiesConfig(value: CachePolicyCookiesConfig): Self = this.set("CookiesConfig", value.asInstanceOf[js.Any])
+    def setEnableAcceptEncodingGzip(value: Boolean): Self = StObject.set(x, "EnableAcceptEncodingGzip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableAcceptEncodingGzip(value: Boolean): Self = this.set("EnableAcceptEncodingGzip", value.asInstanceOf[js.Any])
+    def setHeadersConfig(value: CachePolicyHeadersConfig): Self = StObject.set(x, "HeadersConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadersConfig(value: CachePolicyHeadersConfig): Self = this.set("HeadersConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryStringsConfig(value: CachePolicyQueryStringsConfig): Self = this.set("QueryStringsConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnableAcceptEncodingBrotli(value: Boolean): Self = this.set("EnableAcceptEncodingBrotli", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableAcceptEncodingBrotli: Self = this.set("EnableAcceptEncodingBrotli", js.undefined)
+    def setQueryStringsConfig(value: CachePolicyQueryStringsConfig): Self = StObject.set(x, "QueryStringsConfig", value.asInstanceOf[js.Any])
   }
 }

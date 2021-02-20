@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * will not roll back any committed changes upon partial failures.
   */
 @js.native
-trait SchemaImportResourcesRequest extends js.Object {
+trait SchemaImportResourcesRequest extends StObject {
   
   /**
     * The content structure in the source location. The default is BUNDLE.
@@ -41,36 +42,24 @@ object SchemaImportResourcesRequest {
   }
   
   @scala.inline
-  implicit class SchemaImportResourcesRequestOps[Self <: SchemaImportResourcesRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaImportResourcesRequestMutableBuilder[Self <: SchemaImportResourcesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentStructure(value: String): Self = StObject.set(x, "contentStructure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentStructureUndefined: Self = StObject.set(x, "contentStructure", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGcsErrorLocation(value: SchemaGcsDataLocation): Self = StObject.set(x, "gcsErrorLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentStructure(value: String): Self = this.set("contentStructure", value.asInstanceOf[js.Any])
+    def setGcsErrorLocationUndefined: Self = StObject.set(x, "gcsErrorLocation", js.undefined)
     
     @scala.inline
-    def deleteContentStructure: Self = this.set("contentStructure", js.undefined)
+    def setGcsSourceLocation(value: SchemaGcsDataLocation): Self = StObject.set(x, "gcsSourceLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcsErrorLocation(value: SchemaGcsDataLocation): Self = this.set("gcsErrorLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGcsErrorLocation: Self = this.set("gcsErrorLocation", js.undefined)
-    
-    @scala.inline
-    def setGcsSourceLocation(value: SchemaGcsDataLocation): Self = this.set("gcsSourceLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGcsSourceLocation: Self = this.set("gcsSourceLocation", js.undefined)
+    def setGcsSourceLocationUndefined: Self = StObject.set(x, "gcsSourceLocation", js.undefined)
   }
 }

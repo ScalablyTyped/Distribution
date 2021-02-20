@@ -1,11 +1,12 @@
 package typings.rockset.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldMask extends js.Object {
+trait FieldMask extends StObject {
   
   var input_path: js.Array[String] = js.native
   
@@ -20,30 +21,18 @@ object FieldMask {
   }
   
   @scala.inline
-  implicit class FieldMaskOps[Self <: FieldMask] (val x: Self) extends AnyVal {
+  implicit class FieldMaskMutableBuilder[Self <: FieldMask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInput_path(value: js.Array[String]): Self = StObject.set(x, "input_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInput_pathVarargs(value: String*): Self = StObject.set(x, "input_path", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMask(value: FieldMaskMask): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput_pathVarargs(value: String*): Self = this.set("input_path", js.Array(value :_*))
-    
-    @scala.inline
-    def setInput_path(value: js.Array[String]): Self = this.set("input_path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMask(value: FieldMaskMask): Self = this.set("mask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMask: Self = this.set("mask", js.undefined)
+    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
   }
 }

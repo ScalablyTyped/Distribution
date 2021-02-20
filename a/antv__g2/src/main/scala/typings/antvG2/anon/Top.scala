@@ -1,11 +1,12 @@
 package typings.antvG2.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Top extends js.Object {
+trait Top extends StObject {
   
   /**
     * 辅助框结束位置，值为原始数据值，支持 callback
@@ -30,48 +31,36 @@ object Top {
   }
   
   @scala.inline
-  implicit class TopOps[Self <: Top] (val x: Self) extends AnyVal {
+  implicit class TopMutableBuilder[Self <: Top] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: js.Any | js.Function | (js.Array[String | Double])): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndVarargs(value: (String | Double)*): Self = StObject.set(x, "end", js.Array(value :_*))
     
     @scala.inline
-    def setEndVarargs(value: (String | Double)*): Self = this.set("end", js.Array(value :_*))
+    def setStart(value: js.Any | js.Function | (js.Array[String | Double])): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: js.Any | js.Function | (js.Array[String | Double])): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setStartVarargs(value: (String | Double)*): Self = StObject.set(x, "start", js.Array(value :_*))
     
     @scala.inline
-    def setStartVarargs(value: (String | Double)*): Self = this.set("start", js.Array(value :_*))
+    def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: js.Any | js.Function | (js.Array[String | Double])): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: js.Object): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setTop(value: Boolean): Self = this.set("top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

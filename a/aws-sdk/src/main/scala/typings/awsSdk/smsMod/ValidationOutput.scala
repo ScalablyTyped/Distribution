@@ -1,11 +1,12 @@
 package typings.awsSdk.smsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidationOutput extends js.Object {
+trait ValidationOutput extends StObject {
   
   /**
     * The output from validating an application.
@@ -51,60 +52,48 @@ object ValidationOutput {
   }
   
   @scala.inline
-  implicit class ValidationOutputOps[Self <: ValidationOutput] (val x: Self) extends AnyVal {
+  implicit class ValidationOutputMutableBuilder[Self <: ValidationOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppValidationOutput(value: AppValidationOutput): Self = StObject.set(x, "appValidationOutput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppValidationOutputUndefined: Self = StObject.set(x, "appValidationOutput", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLatestValidationTime(value: Timestamp): Self = StObject.set(x, "latestValidationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppValidationOutput(value: AppValidationOutput): Self = this.set("appValidationOutput", value.asInstanceOf[js.Any])
+    def setLatestValidationTimeUndefined: Self = StObject.set(x, "latestValidationTime", js.undefined)
     
     @scala.inline
-    def deleteAppValidationOutput: Self = this.set("appValidationOutput", js.undefined)
+    def setName(value: NonEmptyStringWithMaxLen255): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestValidationTime(value: Timestamp): Self = this.set("latestValidationTime", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLatestValidationTime: Self = this.set("latestValidationTime", js.undefined)
+    def setServerValidationOutput(value: ServerValidationOutput): Self = StObject.set(x, "serverValidationOutput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NonEmptyStringWithMaxLen255): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setServerValidationOutputUndefined: Self = StObject.set(x, "serverValidationOutput", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setStatus(value: ValidationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerValidationOutput(value: ServerValidationOutput): Self = this.set("serverValidationOutput", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: ValidationStatusMessage): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteServerValidationOutput: Self = this.set("serverValidationOutput", js.undefined)
+    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
     @scala.inline
-    def setStatus(value: ValidationStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setValidationId(value: ValidationId): Self = StObject.set(x, "validationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: ValidationStatusMessage): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
-    
-    @scala.inline
-    def setValidationId(value: ValidationId): Self = this.set("validationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationId: Self = this.set("validationId", js.undefined)
+    def setValidationIdUndefined: Self = StObject.set(x, "validationId", js.undefined)
   }
 }

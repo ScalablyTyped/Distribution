@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateFunctionRequest extends js.Object {
+trait CreateFunctionRequest extends StObject {
   
   /**
     * The code for the function.
@@ -101,111 +102,99 @@ object CreateFunctionRequest {
   }
   
   @scala.inline
-  implicit class CreateFunctionRequestOps[Self <: CreateFunctionRequest] (val x: Self) extends AnyVal {
+  implicit class CreateFunctionRequestMutableBuilder[Self <: CreateFunctionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: FunctionCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeadLetterConfig(value: DeadLetterConfig): Self = StObject.set(x, "DeadLetterConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeadLetterConfigUndefined: Self = StObject.set(x, "DeadLetterConfig", js.undefined)
     
     @scala.inline
-    def setCode(value: FunctionCode): Self = this.set("Code", value.asInstanceOf[js.Any])
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionName(value: FunctionName): Self = this.set("FunctionName", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setHandler(value: Handler): Self = this.set("Handler", value.asInstanceOf[js.Any])
+    def setEnvironment(value: Environment): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: RoleArn): Self = this.set("Role", value.asInstanceOf[js.Any])
+    def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
     
     @scala.inline
-    def setRuntime(value: Runtime): Self = this.set("Runtime", value.asInstanceOf[js.Any])
+    def setFileSystemConfigs(value: FileSystemConfigList): Self = StObject.set(x, "FileSystemConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeadLetterConfig(value: DeadLetterConfig): Self = this.set("DeadLetterConfig", value.asInstanceOf[js.Any])
+    def setFileSystemConfigsUndefined: Self = StObject.set(x, "FileSystemConfigs", js.undefined)
     
     @scala.inline
-    def deleteDeadLetterConfig: Self = this.set("DeadLetterConfig", js.undefined)
+    def setFileSystemConfigsVarargs(value: FileSystemConfig*): Self = StObject.set(x, "FileSystemConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setHandler(value: Handler): Self = StObject.set(x, "Handler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: Environment): Self = this.set("Environment", value.asInstanceOf[js.Any])
+    def setKMSKeyArn(value: KMSKeyArn): Self = StObject.set(x, "KMSKeyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("Environment", js.undefined)
+    def setKMSKeyArnUndefined: Self = StObject.set(x, "KMSKeyArn", js.undefined)
     
     @scala.inline
-    def setFileSystemConfigsVarargs(value: FileSystemConfig*): Self = this.set("FileSystemConfigs", js.Array(value :_*))
+    def setLayers(value: LayerList): Self = StObject.set(x, "Layers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSystemConfigs(value: FileSystemConfigList): Self = this.set("FileSystemConfigs", value.asInstanceOf[js.Any])
+    def setLayersUndefined: Self = StObject.set(x, "Layers", js.undefined)
     
     @scala.inline
-    def deleteFileSystemConfigs: Self = this.set("FileSystemConfigs", js.undefined)
+    def setLayersVarargs(value: LayerVersionArn*): Self = StObject.set(x, "Layers", js.Array(value :_*))
     
     @scala.inline
-    def setKMSKeyArn(value: KMSKeyArn): Self = this.set("KMSKeyArn", value.asInstanceOf[js.Any])
+    def setMemorySize(value: MemorySize): Self = StObject.set(x, "MemorySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKMSKeyArn: Self = this.set("KMSKeyArn", js.undefined)
+    def setMemorySizeUndefined: Self = StObject.set(x, "MemorySize", js.undefined)
     
     @scala.inline
-    def setLayersVarargs(value: LayerVersionArn*): Self = this.set("Layers", js.Array(value :_*))
+    def setPublish(value: Boolean): Self = StObject.set(x, "Publish", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayers(value: LayerList): Self = this.set("Layers", value.asInstanceOf[js.Any])
+    def setPublishUndefined: Self = StObject.set(x, "Publish", js.undefined)
     
     @scala.inline
-    def deleteLayers: Self = this.set("Layers", js.undefined)
+    def setRole(value: RoleArn): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemorySize(value: MemorySize): Self = this.set("MemorySize", value.asInstanceOf[js.Any])
+    def setRuntime(value: Runtime): Self = StObject.set(x, "Runtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMemorySize: Self = this.set("MemorySize", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublish(value: Boolean): Self = this.set("Publish", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deletePublish: Self = this.set("Publish", js.undefined)
+    def setTimeout(value: Timeout): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTracingConfig(value: TracingConfig): Self = StObject.set(x, "TracingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Timeout): Self = this.set("Timeout", value.asInstanceOf[js.Any])
+    def setTracingConfigUndefined: Self = StObject.set(x, "TracingConfig", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("Timeout", js.undefined)
+    def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTracingConfig(value: TracingConfig): Self = this.set("TracingConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTracingConfig: Self = this.set("TracingConfig", js.undefined)
-    
-    @scala.inline
-    def setVpcConfig(value: VpcConfig): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+    def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
   }
 }

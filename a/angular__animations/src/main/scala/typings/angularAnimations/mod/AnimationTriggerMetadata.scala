@@ -1,6 +1,7 @@
 package typings.angularAnimations.mod
 
 import typings.angularAnimations.anon.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,33 +36,21 @@ object AnimationTriggerMetadata {
   }
   
   @scala.inline
-  implicit class AnimationTriggerMetadataOps[Self <: AnimationTriggerMetadata] (val x: Self) extends AnyVal {
+  implicit class AnimationTriggerMetadataMutableBuilder[Self <: AnimationTriggerMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefinitions(value: js.Array[AnimationMetadata]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefinitionsVarargs(value: AnimationMetadata*): Self = StObject.set(x, "definitions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionsVarargs(value: AnimationMetadata*): Self = this.set("definitions", js.Array(value :_*))
+    def setOptions(value: `0`): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitions(value: js.Array[AnimationMetadata]): Self = this.set("definitions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptions(value: `0`): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptionsNull: Self = this.set("options", null)
+    def setOptionsNull: Self = StObject.set(x, "options", null)
   }
 }

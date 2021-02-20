@@ -2,14 +2,15 @@ package typings.tensorflowTfjsCore
 
 import typings.tensorflowTfjsCore.distTensorMod.Tensor3D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/ops/slice3d", JSImport.Namespace)
-@js.native
-object slice3dMod extends js.Object {
+object slice3dMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/slice3d", "slice3d")
+  @js.native
   val slice3d: js.Function3[
     /* x */ Tensor3D | TensorLike, 
     /* begin */ js.Tuple3[Double, Double, Double], 

@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultEventLogOperationsAsync extends js.Object {
+trait IVaultEventLogOperationsAsync extends StObject {
   
   def Clear(): Unit = js.native
   def Clear(

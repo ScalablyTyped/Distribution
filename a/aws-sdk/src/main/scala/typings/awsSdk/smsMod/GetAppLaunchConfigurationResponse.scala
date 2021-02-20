@@ -1,11 +1,12 @@
 package typings.awsSdk.smsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAppLaunchConfigurationResponse extends js.Object {
+trait GetAppLaunchConfigurationResponse extends StObject {
   
   /**
     * The ID of the application.
@@ -36,45 +37,33 @@ object GetAppLaunchConfigurationResponse {
   }
   
   @scala.inline
-  implicit class GetAppLaunchConfigurationResponseOps[Self <: GetAppLaunchConfigurationResponse] (val x: Self) extends AnyVal {
+  implicit class GetAppLaunchConfigurationResponseMutableBuilder[Self <: GetAppLaunchConfigurationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoLaunch(value: AutoLaunch): Self = StObject.set(x, "autoLaunch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppId(value: AppId): Self = this.set("appId", value.asInstanceOf[js.Any])
+    def setAutoLaunchUndefined: Self = StObject.set(x, "autoLaunch", js.undefined)
     
     @scala.inline
-    def deleteAppId: Self = this.set("appId", js.undefined)
+    def setRoleName(value: RoleName): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoLaunch(value: AutoLaunch): Self = this.set("autoLaunch", value.asInstanceOf[js.Any])
+    def setRoleNameUndefined: Self = StObject.set(x, "roleName", js.undefined)
     
     @scala.inline
-    def deleteAutoLaunch: Self = this.set("autoLaunch", js.undefined)
+    def setServerGroupLaunchConfigurations(value: ServerGroupLaunchConfigurations): Self = StObject.set(x, "serverGroupLaunchConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleName(value: RoleName): Self = this.set("roleName", value.asInstanceOf[js.Any])
+    def setServerGroupLaunchConfigurationsUndefined: Self = StObject.set(x, "serverGroupLaunchConfigurations", js.undefined)
     
     @scala.inline
-    def deleteRoleName: Self = this.set("roleName", js.undefined)
-    
-    @scala.inline
-    def setServerGroupLaunchConfigurationsVarargs(value: ServerGroupLaunchConfiguration*): Self = this.set("serverGroupLaunchConfigurations", js.Array(value :_*))
-    
-    @scala.inline
-    def setServerGroupLaunchConfigurations(value: ServerGroupLaunchConfigurations): Self = this.set("serverGroupLaunchConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerGroupLaunchConfigurations: Self = this.set("serverGroupLaunchConfigurations", js.undefined)
+    def setServerGroupLaunchConfigurationsVarargs(value: ServerGroupLaunchConfiguration*): Self = StObject.set(x, "serverGroupLaunchConfigurations", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppDetailsOptions extends js.Object {
+trait AppDetailsOptions extends StObject {
   
   /**
     * Index of the icon in `appIconPath`. Ignored when `appIconPath` is not set.
@@ -43,48 +44,36 @@ object AppDetailsOptions {
   }
   
   @scala.inline
-  implicit class AppDetailsOptionsOps[Self <: AppDetailsOptions] (val x: Self) extends AnyVal {
+  implicit class AppDetailsOptionsMutableBuilder[Self <: AppDetailsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppIconIndex(value: Double): Self = StObject.set(x, "appIconIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppIconIndexUndefined: Self = StObject.set(x, "appIconIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppIconPath(value: String): Self = StObject.set(x, "appIconPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppIconIndex(value: Double): Self = this.set("appIconIndex", value.asInstanceOf[js.Any])
+    def setAppIconPathUndefined: Self = StObject.set(x, "appIconPath", js.undefined)
     
     @scala.inline
-    def deleteAppIconIndex: Self = this.set("appIconIndex", js.undefined)
+    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppIconPath(value: String): Self = this.set("appIconPath", value.asInstanceOf[js.Any])
+    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
     @scala.inline
-    def deleteAppIconPath: Self = this.set("appIconPath", js.undefined)
+    def setRelaunchCommand(value: String): Self = StObject.set(x, "relaunchCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppId(value: String): Self = this.set("appId", value.asInstanceOf[js.Any])
+    def setRelaunchCommandUndefined: Self = StObject.set(x, "relaunchCommand", js.undefined)
     
     @scala.inline
-    def deleteAppId: Self = this.set("appId", js.undefined)
+    def setRelaunchDisplayName(value: String): Self = StObject.set(x, "relaunchDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelaunchCommand(value: String): Self = this.set("relaunchCommand", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelaunchCommand: Self = this.set("relaunchCommand", js.undefined)
-    
-    @scala.inline
-    def setRelaunchDisplayName(value: String): Self = this.set("relaunchDisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelaunchDisplayName: Self = this.set("relaunchDisplayName", js.undefined)
+    def setRelaunchDisplayNameUndefined: Self = StObject.set(x, "relaunchDisplayName", js.undefined)
   }
 }

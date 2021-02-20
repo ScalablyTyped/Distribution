@@ -2,13 +2,14 @@ package typings.sequelize.anon
 
 import typings.sequelize.mod.AnyWhereOptions
 import typings.sequelize.mod.IndexType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined sequelize.sequelize.DefineIndexOptions & {  fields :std.Array<string>} */
 @js.native
-trait DefineIndexOptionsfieldsA extends js.Object {
+trait DefineIndexOptionsfieldsA extends StObject {
   
   /**
     * Pass CONCURRENT so other operations run while the index is created - PostgresSQL only. Default is false
@@ -81,96 +82,84 @@ object DefineIndexOptionsfieldsA {
   }
   
   @scala.inline
-  implicit class DefineIndexOptionsfieldsAOps[Self <: DefineIndexOptionsfieldsA] (val x: Self) extends AnyVal {
+  implicit class DefineIndexOptionsfieldsAMutableBuilder[Self <: DefineIndexOptionsfieldsA] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConcurrently(value: Boolean): Self = StObject.set(x, "concurrently", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConcurrentlyUndefined: Self = StObject.set(x, "concurrently", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFields(value: js.Array[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcurrently(value: Boolean): Self = this.set("concurrently", value.asInstanceOf[js.Any])
+    def setIndexNameUndefined: Self = StObject.set(x, "indexName", js.undefined)
     
     @scala.inline
-    def deleteConcurrently: Self = this.set("concurrently", js.undefined)
+    def setIndexType(value: String): Self = StObject.set(x, "indexType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexName(value: String): Self = this.set("indexName", value.asInstanceOf[js.Any])
+    def setIndexTypeUndefined: Self = StObject.set(x, "indexType", js.undefined)
     
     @scala.inline
-    def deleteIndexName: Self = this.set("indexName", js.undefined)
+    def setIndicesType(value: IndexType): Self = StObject.set(x, "indicesType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexType(value: String): Self = this.set("indexType", value.asInstanceOf[js.Any])
+    def setIndicesTypeUndefined: Self = StObject.set(x, "indicesType", js.undefined)
     
     @scala.inline
-    def deleteIndexType: Self = this.set("indexType", js.undefined)
+    def setLogging(value: js.Function): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicesType(value: IndexType): Self = this.set("indicesType", value.asInstanceOf[js.Any])
+    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
     @scala.inline
-    def deleteIndicesType: Self = this.set("indicesType", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogging(value: js.Function): Self = this.set("logging", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLogging: Self = this.set("logging", js.undefined)
+    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setParser(value: String): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperator(value: String): Self = this.set("operator", value.asInstanceOf[js.Any])
+    def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
     
     @scala.inline
-    def deleteOperator: Self = this.set("operator", js.undefined)
+    def setType(value: IndexType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParser(value: String): Self = this.set("parser", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteParser: Self = this.set("parser", js.undefined)
+    def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: IndexType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setUsing(value: String): Self = StObject.set(x, "using", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnique(value: Boolean): Self = this.set("unique", value.asInstanceOf[js.Any])
+    def setUsingUndefined: Self = StObject.set(x, "using", js.undefined)
     
     @scala.inline
-    def deleteUnique: Self = this.set("unique", js.undefined)
+    def setWhere(value: AnyWhereOptions): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsing(value: String): Self = this.set("using", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsing: Self = this.set("using", js.undefined)
-    
-    @scala.inline
-    def setWhere(value: AnyWhereOptions): Self = this.set("where", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhere: Self = this.set("where", js.undefined)
+    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
   }
 }

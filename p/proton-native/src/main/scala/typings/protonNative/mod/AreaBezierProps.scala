@@ -1,5 +1,6 @@
 package typings.protonNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,42 +66,30 @@ object AreaBezierProps {
   }
   
   @scala.inline
-  implicit class AreaBezierPropsOps[Self <: AreaBezierProps] (val x: Self) extends AnyVal {
+  implicit class AreaBezierPropsMutableBuilder[Self <: AreaBezierProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCx1(value: Double | String): Self = StObject.set(x, "cx1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCx2(value: Double | String): Self = StObject.set(x, "cx2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCy1(value: Double | String): Self = StObject.set(x, "cy1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCx1(value: Double | String): Self = this.set("cx1", value.asInstanceOf[js.Any])
+    def setCy2(value: Double | String): Self = StObject.set(x, "cy2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCx2(value: Double | String): Self = this.set("cx2", value.asInstanceOf[js.Any])
+    def setX1(value: Double | String): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCy1(value: Double | String): Self = this.set("cy1", value.asInstanceOf[js.Any])
+    def setX2(value: Double | String): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCy2(value: Double | String): Self = this.set("cy2", value.asInstanceOf[js.Any])
+    def setY1(value: Double | String): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX1(value: Double | String): Self = this.set("x1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX2(value: Double | String): Self = this.set("x2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY1(value: Double | String): Self = this.set("y1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY2(value: Double | String): Self = this.set("y2", value.asInstanceOf[js.Any])
+    def setY2(value: Double | String): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
   }
 }

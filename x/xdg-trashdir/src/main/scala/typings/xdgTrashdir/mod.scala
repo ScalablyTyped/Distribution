@@ -1,12 +1,11 @@
 package typings.xdgTrashdir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xdg-trashdir", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Get the correct trash path for a file on Linux according to the [spec](http://www.ramendik.ru/docs/trashspec.html)
@@ -21,7 +20,11 @@ object mod extends js.Object {
   	})();
   	```
   	*/
+  @JSImport("xdg-trashdir", JSImport.Namespace)
+  @js.native
   def apply(): js.Promise[String] = js.native
+  @JSImport("xdg-trashdir", JSImport.Namespace)
+  @js.native
   def apply(filePath: String): js.Promise[String] = js.native
   
   /**
@@ -35,5 +38,7 @@ object mod extends js.Object {
   	})();
   	```
   	*/
+  @JSImport("xdg-trashdir", "all")
+  @js.native
   def all(): js.Promise[js.Array[String]] = js.native
 }

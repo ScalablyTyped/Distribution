@@ -4,14 +4,14 @@ import typings.ionicCore.componentsMod.global.HTMLIonRefresherElement
 import typings.ionicCore.refresherInterfaceMod.RefresherEventDetail
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/refresher/refresher", JSImport.Namespace)
-@js.native
-object refresherMod extends js.Object {
+object refresherMod {
   
+  @JSImport("@ionic/core/dist/types/components/refresher/refresher", "Refresher")
   @js.native
   class Refresher () extends ComponentInterface {
     

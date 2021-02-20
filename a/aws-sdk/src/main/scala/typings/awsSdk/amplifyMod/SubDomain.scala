@@ -1,11 +1,12 @@
 package typings.awsSdk.amplifyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubDomain extends js.Object {
+trait SubDomain extends StObject {
   
   /**
     *  The DNS record for the subdomain. 
@@ -31,27 +32,15 @@ object SubDomain {
   }
   
   @scala.inline
-  implicit class SubDomainOps[Self <: SubDomain] (val x: Self) extends AnyVal {
+  implicit class SubDomainMutableBuilder[Self <: SubDomain] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDnsRecord(value: DNSRecord): Self = StObject.set(x, "dnsRecord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubDomainSetting(value: SubDomainSetting): Self = StObject.set(x, "subDomainSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDnsRecord(value: DNSRecord): Self = this.set("dnsRecord", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubDomainSetting(value: SubDomainSetting): Self = this.set("subDomainSetting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerified(value: Verified): Self = this.set("verified", value.asInstanceOf[js.Any])
+    def setVerified(value: Verified): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.divaJs.anon
 
 import typings.divaJs.interfacesMod.Offset
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnchorPage extends js.Object {
+trait AnchorPage extends StObject {
   
   var anchorPage: Double = js.native
   
@@ -21,24 +22,12 @@ object AnchorPage {
   }
   
   @scala.inline
-  implicit class AnchorPageOps[Self <: AnchorPage] (val x: Self) extends AnyVal {
+  implicit class AnchorPageMutableBuilder[Self <: AnchorPage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchorPage(value: Double): Self = StObject.set(x, "anchorPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnchorPage(value: Double): Self = this.set("anchorPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffset(value: Offset): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOffset(value: Offset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

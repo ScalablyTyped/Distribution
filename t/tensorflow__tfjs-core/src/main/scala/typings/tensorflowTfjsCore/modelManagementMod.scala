@@ -3,13 +3,56 @@ package typings.tensorflowTfjsCore
 import org.scalablytyped.runtime.StringDictionary
 import typings.tensorflowTfjsCore.typesMod.ModelArtifactsInfo
 import typings.tensorflowTfjsCore.typesMod.ModelStoreManager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/io/model_management", JSImport.Namespace)
-@js.native
-object modelManagementMod extends js.Object {
+object modelManagementMod {
+  
+  @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "ModelStoreManagerRegistry")
+  @js.native
+  class ModelStoreManagerRegistry protected () extends StObject {
+    
+    var managers: js.Any = js.native
+  }
+  /* static members */
+  object ModelStoreManagerRegistry {
+    
+    @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "ModelStoreManagerRegistry")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "ModelStoreManagerRegistry.getInstance")
+    @js.native
+    def getInstance: js.Any = js.native
+    @scala.inline
+    def getInstance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "ModelStoreManagerRegistry.getManager")
+    @js.native
+    def getManager(scheme: String): ModelStoreManager = js.native
+    
+    @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "ModelStoreManagerRegistry.getSchemes")
+    @js.native
+    def getSchemes(): js.Array[String] = js.native
+    
+    @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "ModelStoreManagerRegistry.instance")
+    @js.native
+    def instance: js.Any = js.native
+    @scala.inline
+    def instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Register a save-handler router.
+      *
+      * @param saveRouter A function that maps a URL-like string onto an instance
+      * of `IOHandler` with the `save` method defined or `null`.
+      */
+    @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "ModelStoreManagerRegistry.registerManager")
+    @js.native
+    def registerManager(scheme: String, manager: ModelStoreManager): Unit = js.native
+  }
   
   /**
     * Copy a model from one URL to another.
@@ -58,6 +101,8 @@ object modelManagementMod extends js.Object {
     *   ignoreCI: true
     * }
     */
+  @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "copyModel")
+  @js.native
   def copyModel(sourceURL: String, destURL: String): js.Promise[ModelArtifactsInfo] = js.native
   
   /**
@@ -95,6 +140,8 @@ object modelManagementMod extends js.Object {
     *   ignoreCI: true
     * }
     */
+  @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "listModels")
+  @js.native
   def listModels(): js.Promise[StringDictionary[ModelArtifactsInfo]] = js.native
   
   /**
@@ -143,6 +190,8 @@ object modelManagementMod extends js.Object {
     *   ignoreCI: true
     * }
     */
+  @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "moveModel")
+  @js.native
   def moveModel(sourceURL: String, destURL: String): js.Promise[ModelArtifactsInfo] = js.native
   
   /**
@@ -178,31 +227,7 @@ object modelManagementMod extends js.Object {
     *   ignoreCI: true
     * }
     */
+  @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "removeModel")
+  @js.native
   def removeModel(url: String): js.Promise[ModelArtifactsInfo] = js.native
-  
-  @js.native
-  class ModelStoreManagerRegistry protected () extends js.Object {
-    
-    var managers: js.Any = js.native
-  }
-  /* static members */
-  @js.native
-  object ModelStoreManagerRegistry extends js.Object {
-    
-    var getInstance: js.Any = js.native
-    
-    def getManager(scheme: String): ModelStoreManager = js.native
-    
-    def getSchemes(): js.Array[String] = js.native
-    
-    var instance: js.Any = js.native
-    
-    /**
-      * Register a save-handler router.
-      *
-      * @param saveRouter A function that maps a URL-like string onto an instance
-      * of `IOHandler` with the `save` method defined or `null`.
-      */
-    def registerManager(scheme: String, manager: ModelStoreManager): Unit = js.native
-  }
 }

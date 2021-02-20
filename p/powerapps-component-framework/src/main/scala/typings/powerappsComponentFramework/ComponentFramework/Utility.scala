@@ -4,6 +4,7 @@ import typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.Ent
 import typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.Types.PrivilegeDepth
 import typings.powerappsComponentFramework.ComponentFramework.PropertyHelper.Types.PrivilegeType
 import typings.powerappsComponentFramework.ComponentFramework.UtilityApi.LookupOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The interface for context.utils
   */
 @js.native
-trait Utility extends js.Object {
+trait Utility extends StObject {
   
   /**
     * Gets the entity metadata for the specified entity.

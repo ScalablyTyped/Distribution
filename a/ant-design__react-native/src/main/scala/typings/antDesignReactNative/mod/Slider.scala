@@ -2,6 +2,7 @@ package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.anon.DefaultValue
 import typings.antDesignReactNative.sliderMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Slider () extends default
 /* static members */
-@JSImport("@ant-design/react-native", "Slider")
-@js.native
-object Slider extends js.Object {
+object Slider {
   
-  var defaultProps: DefaultValue = js.native
+  @JSImport("@ant-design/react-native", "Slider")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@ant-design/react-native", "Slider.defaultProps")
+  @js.native
+  def defaultProps: DefaultValue = js.native
+  @scala.inline
+  def defaultProps_=(x: DefaultValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

@@ -1,19 +1,19 @@
 package typings.angularHttp
 
-import typings.angularHttp.interfacesMod.Connection
-import typings.angularHttp.interfacesMod.ConnectionBackend
+import typings.angularHttp.mod.Connection
+import typings.angularHttp.mod.ConnectionBackend
 import typings.angularHttp.mod.Request
 import typings.angularHttp.mod.Response
 import typings.rxjs.mod.ReplaySubject
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/http/testing/src/mock_backend", JSImport.Namespace)
-@js.native
-object mockBackendMod extends js.Object {
+object mockBackendMod {
   
+  @JSImport("@angular/http/testing/src/mock_backend", "MockBackend")
   @js.native
   class MockBackend () extends ConnectionBackend {
     
@@ -68,6 +68,7 @@ object mockBackendMod extends js.Object {
     def verifyNoPendingRequests(): Unit = js.native
   }
   
+  @JSImport("@angular/http/testing/src/mock_backend", "MockConnection")
   @js.native
   class MockConnection protected () extends Connection {
     def this(req: Request) = this()

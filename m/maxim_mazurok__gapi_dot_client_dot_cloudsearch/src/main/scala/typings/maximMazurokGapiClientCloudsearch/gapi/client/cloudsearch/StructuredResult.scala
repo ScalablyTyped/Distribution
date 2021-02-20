@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StructuredResult extends js.Object {
+trait StructuredResult extends StObject {
   
   /** Representation of a person */
   var person: js.UndefOr[Person] = js.native
@@ -19,24 +20,12 @@ object StructuredResult {
   }
   
   @scala.inline
-  implicit class StructuredResultOps[Self <: StructuredResult] (val x: Self) extends AnyVal {
+  implicit class StructuredResultMutableBuilder[Self <: StructuredResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPerson(value: Person): Self = StObject.set(x, "person", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPerson(value: Person): Self = this.set("person", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerson: Self = this.set("person", js.undefined)
+    def setPersonUndefined: Self = StObject.set(x, "person", js.undefined)
   }
 }

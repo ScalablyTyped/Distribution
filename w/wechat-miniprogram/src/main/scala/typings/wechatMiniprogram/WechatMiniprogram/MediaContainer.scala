@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaContainer extends js.Object {
+trait MediaContainer extends StObject {
   
   /** [MediaContainer.addTrack([MediaTrack](https://developers.weixin.qq.com/miniprogram/dev/api/media/video-processing/MediaTrack.html) track)](https://developers.weixin.qq.com/miniprogram/dev/api/media/video-processing/MediaContainer.addTrack.html)
     *
@@ -67,33 +68,21 @@ object MediaContainer {
   }
   
   @scala.inline
-  implicit class MediaContainerOps[Self <: MediaContainer] (val x: Self) extends AnyVal {
+  implicit class MediaContainerMutableBuilder[Self <: MediaContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddTrack(value: MediaTrack => Unit): Self = StObject.set(x, "addTrack", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExport(value: () => Unit): Self = StObject.set(x, "export", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddTrack(value: MediaTrack => Unit): Self = this.set("addTrack", js.Any.fromFunction1(value))
+    def setExtractDataSource(value: ExtractDataSourceOption => Unit): Self = StObject.set(x, "extractDataSource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setExport(value: () => Unit): Self = this.set("export", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setExtractDataSource(value: ExtractDataSourceOption => Unit): Self = this.set("extractDataSource", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveTrack(value: MediaTrack => Unit): Self = this.set("removeTrack", js.Any.fromFunction1(value))
+    def setRemoveTrack(value: MediaTrack => Unit): Self = StObject.set(x, "removeTrack", js.Any.fromFunction1(value))
   }
 }

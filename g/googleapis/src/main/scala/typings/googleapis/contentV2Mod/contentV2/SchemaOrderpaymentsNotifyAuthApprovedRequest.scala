@@ -1,11 +1,12 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaOrderpaymentsNotifyAuthApprovedRequest extends js.Object {
+trait SchemaOrderpaymentsNotifyAuthApprovedRequest extends StObject {
   
   /**
     * Authorized amount for pre-tax charge on user&#39;s credit card.
@@ -26,30 +27,18 @@ object SchemaOrderpaymentsNotifyAuthApprovedRequest {
   }
   
   @scala.inline
-  implicit class SchemaOrderpaymentsNotifyAuthApprovedRequestOps[Self <: SchemaOrderpaymentsNotifyAuthApprovedRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaOrderpaymentsNotifyAuthApprovedRequestMutableBuilder[Self <: SchemaOrderpaymentsNotifyAuthApprovedRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthAmountPretax(value: SchemaPrice): Self = StObject.set(x, "authAmountPretax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthAmountPretaxUndefined: Self = StObject.set(x, "authAmountPretax", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthAmountTax(value: SchemaPrice): Self = StObject.set(x, "authAmountTax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthAmountPretax(value: SchemaPrice): Self = this.set("authAmountPretax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthAmountPretax: Self = this.set("authAmountPretax", js.undefined)
-    
-    @scala.inline
-    def setAuthAmountTax(value: SchemaPrice): Self = this.set("authAmountTax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthAmountTax: Self = this.set("authAmountTax", js.undefined)
+    def setAuthAmountTaxUndefined: Self = StObject.set(x, "authAmountTax", js.undefined)
   }
 }

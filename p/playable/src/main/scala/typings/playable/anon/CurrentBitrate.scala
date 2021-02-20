@@ -2,12 +2,13 @@ package typings.playable.anon
 
 import typings.playable.mediaStreamMod.MediaStreamType
 import typings.playable.playableStrings.html5video
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CurrentBitrate extends js.Object {
+trait CurrentBitrate extends StObject {
   
   var bitrates: js.Array[String] = js.native
   
@@ -59,60 +60,48 @@ object CurrentBitrate {
   }
   
   @scala.inline
-  implicit class CurrentBitrateOps[Self <: CurrentBitrate] (val x: Self) extends AnyVal {
+  implicit class CurrentBitrateMutableBuilder[Self <: CurrentBitrate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitrates(value: js.Array[String]): Self = StObject.set(x, "bitrates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitratesVarargs(value: String*): Self = StObject.set(x, "bitrates", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBwEstimate(value: Double): Self = StObject.set(x, "bwEstimate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitratesVarargs(value: String*): Self = this.set("bitrates", js.Array(value :_*))
+    def setCurrentBitrate(value: String): Self = StObject.set(x, "currentBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitrates(value: js.Array[String]): Self = this.set("bitrates", value.asInstanceOf[js.Any])
+    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBwEstimate(value: Double): Self = this.set("bwEstimate", value.asInstanceOf[js.Any])
+    def setDeliveryPriority(value: String): Self = StObject.set(x, "deliveryPriority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentBitrate(value: String): Self = this.set("currentBitrate", value.asInstanceOf[js.Any])
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTime(value: Double): Self = this.set("currentTime", value.asInstanceOf[js.Any])
+    def setLoadingStateTimestamps(value: js.Object): Self = StObject.set(x, "loadingStateTimestamps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryPriority(value: String): Self = this.set("deliveryPriority", value.asInstanceOf[js.Any])
+    def setNearestBufferSegInfo(value: js.Object): Self = StObject.set(x, "nearestBufferSegInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setOutput(value: html5video): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadingStateTimestamps(value: js.Object): Self = this.set("loadingStateTimestamps", value.asInstanceOf[js.Any])
+    def setOverallBufferLength(value: Double): Self = StObject.set(x, "overallBufferLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNearestBufferSegInfo(value: js.Object): Self = this.set("nearestBufferSegInfo", value.asInstanceOf[js.Any])
+    def setType(value: MediaStreamType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutput(value: html5video): Self = this.set("output", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverallBufferLength(value: Double): Self = this.set("overallBufferLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MediaStreamType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewDimensions(value: js.Object): Self = this.set("viewDimensions", value.asInstanceOf[js.Any])
+    def setViewDimensions(value: js.Object): Self = StObject.set(x, "viewDimensions", value.asInstanceOf[js.Any])
   }
 }

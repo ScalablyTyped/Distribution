@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatasetTrigger extends js.Object {
+trait DatasetTrigger extends StObject {
   
   /**
     * The data set whose content creation triggers the creation of this data set's contents.
@@ -26,30 +27,18 @@ object DatasetTrigger {
   }
   
   @scala.inline
-  implicit class DatasetTriggerOps[Self <: DatasetTrigger] (val x: Self) extends AnyVal {
+  implicit class DatasetTriggerMutableBuilder[Self <: DatasetTrigger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataset(value: TriggeringDataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSchedule(value: Schedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataset(value: TriggeringDataset): Self = this.set("dataset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataset: Self = this.set("dataset", js.undefined)
-    
-    @scala.inline
-    def setSchedule(value: Schedule): Self = this.set("schedule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
   }
 }

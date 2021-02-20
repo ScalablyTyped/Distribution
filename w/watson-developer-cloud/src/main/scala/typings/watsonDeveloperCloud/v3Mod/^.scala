@@ -1,5 +1,6 @@
 package typings.watsonDeveloperCloud.v3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +33,4 @@ class ^ protected () extends LanguageTranslatorV3 {
 }
 @JSImport("watson-developer-cloud/language-translator/v3", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  
-  var URL: String = js.native
-}
+object ^ extends StObject

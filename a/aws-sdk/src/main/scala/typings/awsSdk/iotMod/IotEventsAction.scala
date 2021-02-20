@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IotEventsAction extends js.Object {
+trait IotEventsAction extends StObject {
   
   /**
     * Whether to process the event actions as a batch. The default value is false. When batchMode is true, you can't specify a messageId.  When batchMode is true and the rule SQL statement evaluates to an Array, each Array element is treated as a separate message when it's sent to AWS IoT Events by calling  BatchPutMessage . The resulting array can't have more than 10 messages.
@@ -36,36 +37,24 @@ object IotEventsAction {
   }
   
   @scala.inline
-  implicit class IotEventsActionOps[Self <: IotEventsAction] (val x: Self) extends AnyVal {
+  implicit class IotEventsActionMutableBuilder[Self <: IotEventsAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchMode(value: BatchMode): Self = StObject.set(x, "batchMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchModeUndefined: Self = StObject.set(x, "batchMode", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputName(value: InputName): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputName(value: InputName): Self = this.set("inputName", value.asInstanceOf[js.Any])
+    def setMessageId(value: MessageId): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: AwsArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
     
     @scala.inline
-    def setBatchMode(value: BatchMode): Self = this.set("batchMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBatchMode: Self = this.set("batchMode", js.undefined)
-    
-    @scala.inline
-    def setMessageId(value: MessageId): Self = this.set("messageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageId: Self = this.set("messageId", js.undefined)
+    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

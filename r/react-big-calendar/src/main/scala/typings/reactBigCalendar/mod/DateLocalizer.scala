@@ -1,13 +1,14 @@
 package typings.reactBigCalendar.mod
 
 import typings.propTypes.mod.Validator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-big-calendar", "DateLocalizer")
 @js.native
-class DateLocalizer protected () extends js.Object {
+class DateLocalizer protected () extends StObject {
   def this(spec: DateLocalizerSpec) = this()
   
   def format(value: FormatInput, format: String, culture: Culture): String = js.native

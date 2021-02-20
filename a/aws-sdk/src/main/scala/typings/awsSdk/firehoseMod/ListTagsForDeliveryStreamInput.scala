@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTagsForDeliveryStreamInput extends js.Object {
+trait ListTagsForDeliveryStreamInput extends StObject {
   
   /**
     * The name of the delivery stream whose tags you want to list.
@@ -31,33 +32,21 @@ object ListTagsForDeliveryStreamInput {
   }
   
   @scala.inline
-  implicit class ListTagsForDeliveryStreamInputOps[Self <: ListTagsForDeliveryStreamInput] (val x: Self) extends AnyVal {
+  implicit class ListTagsForDeliveryStreamInputMutableBuilder[Self <: ListTagsForDeliveryStreamInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExclusiveStartTagKey(value: TagKey): Self = StObject.set(x, "ExclusiveStartTagKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExclusiveStartTagKeyUndefined: Self = StObject.set(x, "ExclusiveStartTagKey", js.undefined)
     
     @scala.inline
-    def setDeliveryStreamName(value: DeliveryStreamName): Self = this.set("DeliveryStreamName", value.asInstanceOf[js.Any])
+    def setLimit(value: ListTagsForDeliveryStreamInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusiveStartTagKey(value: TagKey): Self = this.set("ExclusiveStartTagKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExclusiveStartTagKey: Self = this.set("ExclusiveStartTagKey", js.undefined)
-    
-    @scala.inline
-    def setLimit(value: ListTagsForDeliveryStreamInputLimit): Self = this.set("Limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
   }
 }

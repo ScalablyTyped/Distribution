@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,66 +58,54 @@ object CIMVectorMarker {
   }
   
   @scala.inline
-  implicit class CIMVectorMarkerOps[Self <: CIMVectorMarker] (val x: Self) extends AnyVal {
+  implicit class CIMVectorMarkerMutableBuilder[Self <: CIMVectorMarker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClippingPath(value: CIMClippingPath): Self = StObject.set(x, "clippingPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClippingPathUndefined: Self = StObject.set(x, "clippingPath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDepth3D(value: Double): Self = StObject.set(x, "depth3D", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMVectorMarker): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setDepth3DUndefined: Self = StObject.set(x, "depth3D", js.undefined)
     
     @scala.inline
-    def setClippingPath(value: CIMClippingPath): Self = this.set("clippingPath", value.asInstanceOf[js.Any])
+    def setFrame(value: ExternalReferenceEnvelope): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClippingPath: Self = this.set("clippingPath", js.undefined)
+    def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
     
     @scala.inline
-    def setDepth3D(value: Double): Self = this.set("depth3D", value.asInstanceOf[js.Any])
+    def setMarkerGraphics(value: js.Array[CIMMarkerGraphic]): Self = StObject.set(x, "markerGraphics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDepth3D: Self = this.set("depth3D", js.undefined)
+    def setMarkerGraphicsUndefined: Self = StObject.set(x, "markerGraphics", js.undefined)
     
     @scala.inline
-    def setFrame(value: ExternalReferenceEnvelope): Self = this.set("frame", value.asInstanceOf[js.Any])
+    def setMarkerGraphicsVarargs(value: CIMMarkerGraphic*): Self = StObject.set(x, "markerGraphics", js.Array(value :_*))
     
     @scala.inline
-    def deleteFrame: Self = this.set("frame", js.undefined)
+    def setRespectFrame(value: Boolean): Self = StObject.set(x, "respectFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerGraphicsVarargs(value: CIMMarkerGraphic*): Self = this.set("markerGraphics", js.Array(value :_*))
+    def setRespectFrameUndefined: Self = StObject.set(x, "respectFrame", js.undefined)
     
     @scala.inline
-    def setMarkerGraphics(value: js.Array[CIMMarkerGraphic]): Self = this.set("markerGraphics", value.asInstanceOf[js.Any])
+    def setScaleSymbolsProportionally(value: Boolean): Self = StObject.set(x, "scaleSymbolsProportionally", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarkerGraphics: Self = this.set("markerGraphics", js.undefined)
+    def setScaleSymbolsProportionallyUndefined: Self = StObject.set(x, "scaleSymbolsProportionally", js.undefined)
     
     @scala.inline
-    def setRespectFrame(value: Boolean): Self = this.set("respectFrame", value.asInstanceOf[js.Any])
+    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMVectorMarker): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRespectFrame: Self = this.set("respectFrame", js.undefined)
+    def setVerticalOrientation3D(value: Boolean): Self = StObject.set(x, "verticalOrientation3D", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleSymbolsProportionally(value: Boolean): Self = this.set("scaleSymbolsProportionally", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScaleSymbolsProportionally: Self = this.set("scaleSymbolsProportionally", js.undefined)
-    
-    @scala.inline
-    def setVerticalOrientation3D(value: Boolean): Self = this.set("verticalOrientation3D", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalOrientation3D: Self = this.set("verticalOrientation3D", js.undefined)
+    def setVerticalOrientation3DUndefined: Self = StObject.set(x, "verticalOrientation3D", js.undefined)
   }
 }

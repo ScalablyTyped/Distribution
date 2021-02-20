@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComplianceSummary extends js.Object {
+trait ComplianceSummary extends StObject {
   
   /**
     * The time that AWS Config created the compliance summary.
@@ -31,36 +32,24 @@ object ComplianceSummary {
   }
   
   @scala.inline
-  implicit class ComplianceSummaryOps[Self <: ComplianceSummary] (val x: Self) extends AnyVal {
+  implicit class ComplianceSummaryMutableBuilder[Self <: ComplianceSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplianceSummaryTimestamp(value: Date): Self = StObject.set(x, "ComplianceSummaryTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplianceSummaryTimestampUndefined: Self = StObject.set(x, "ComplianceSummaryTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompliantResourceCount(value: ComplianceContributorCount): Self = StObject.set(x, "CompliantResourceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceSummaryTimestamp(value: Date): Self = this.set("ComplianceSummaryTimestamp", value.asInstanceOf[js.Any])
+    def setCompliantResourceCountUndefined: Self = StObject.set(x, "CompliantResourceCount", js.undefined)
     
     @scala.inline
-    def deleteComplianceSummaryTimestamp: Self = this.set("ComplianceSummaryTimestamp", js.undefined)
+    def setNonCompliantResourceCount(value: ComplianceContributorCount): Self = StObject.set(x, "NonCompliantResourceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompliantResourceCount(value: ComplianceContributorCount): Self = this.set("CompliantResourceCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCompliantResourceCount: Self = this.set("CompliantResourceCount", js.undefined)
-    
-    @scala.inline
-    def setNonCompliantResourceCount(value: ComplianceContributorCount): Self = this.set("NonCompliantResourceCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNonCompliantResourceCount: Self = this.set("NonCompliantResourceCount", js.undefined)
+    def setNonCompliantResourceCountUndefined: Self = StObject.set(x, "NonCompliantResourceCount", js.undefined)
   }
 }

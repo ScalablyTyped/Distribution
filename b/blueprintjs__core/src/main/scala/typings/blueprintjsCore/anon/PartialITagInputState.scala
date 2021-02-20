@@ -1,12 +1,13 @@
 package typings.blueprintjsCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@blueprintjs/core.@blueprintjs/core/lib/esm/components/tag-input/tagInput.ITagInputState> */
 @js.native
-trait PartialITagInputState extends js.Object {
+trait PartialITagInputState extends StObject {
   
   var activeIndex: js.UndefOr[Double] = js.native
   
@@ -25,42 +26,30 @@ object PartialITagInputState {
   }
   
   @scala.inline
-  implicit class PartialITagInputStateOps[Self <: PartialITagInputState] (val x: Self) extends AnyVal {
+  implicit class PartialITagInputStateMutableBuilder[Self <: PartialITagInputState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveIndex(value: Double): Self = this.set("activeIndex", value.asInstanceOf[js.Any])
+    def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
     
     @scala.inline
-    def deleteActiveIndex: Self = this.set("activeIndex", js.undefined)
+    def setIsInputFocused(value: Boolean): Self = StObject.set(x, "isInputFocused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputValue(value: String): Self = this.set("inputValue", value.asInstanceOf[js.Any])
+    def setIsInputFocusedUndefined: Self = StObject.set(x, "isInputFocused", js.undefined)
     
     @scala.inline
-    def deleteInputValue: Self = this.set("inputValue", js.undefined)
+    def setPrevInputValueProp(value: String): Self = StObject.set(x, "prevInputValueProp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInputFocused(value: Boolean): Self = this.set("isInputFocused", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsInputFocused: Self = this.set("isInputFocused", js.undefined)
-    
-    @scala.inline
-    def setPrevInputValueProp(value: String): Self = this.set("prevInputValueProp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrevInputValueProp: Self = this.set("prevInputValueProp", js.undefined)
+    def setPrevInputValuePropUndefined: Self = StObject.set(x, "prevInputValueProp", js.undefined)
   }
 }

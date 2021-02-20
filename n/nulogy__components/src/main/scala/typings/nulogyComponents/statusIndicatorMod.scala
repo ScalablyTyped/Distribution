@@ -1,12 +1,13 @@
 package typings.nulogyComponents
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@nulogy/components/src/StatusIndicator", JSImport.Namespace)
-@js.native
-object statusIndicatorMod extends js.Object {
+object statusIndicatorMod {
   
+  @JSImport("@nulogy/components/src/StatusIndicator", "StatusIndicator")
+  @js.native
   val StatusIndicator: js.Any = js.native
 }

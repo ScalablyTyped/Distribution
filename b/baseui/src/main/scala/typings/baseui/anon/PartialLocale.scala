@@ -3,13 +3,14 @@ package typings.baseui.anon
 import typings.dateFns.anon.DateTime
 import typings.dateFns.anon.Day
 import typings.dateFns.anon.FirstWeekContainsDateWeekStartsOn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<date-fns.Locale> */
 @js.native
-trait PartialLocale extends js.Object {
+trait PartialLocale extends StObject {
   
   var code: js.UndefOr[String] = js.native
   
@@ -34,60 +35,48 @@ object PartialLocale {
   }
   
   @scala.inline
-  implicit class PartialLocaleOps[Self <: PartialLocale] (val x: Self) extends AnyVal {
+  implicit class PartialLocaleMutableBuilder[Self <: PartialLocale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormatDistance(value: /* repeated */ js.Any => _): Self = StObject.set(x, "formatDistance", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setFormatDistanceUndefined: Self = StObject.set(x, "formatDistance", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setFormatLong(value: DateTime): Self = StObject.set(x, "formatLong", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatDistance(value: /* repeated */ js.Any => _): Self = this.set("formatDistance", js.Any.fromFunction1(value))
+    def setFormatLongUndefined: Self = StObject.set(x, "formatLong", js.undefined)
     
     @scala.inline
-    def deleteFormatDistance: Self = this.set("formatDistance", js.undefined)
+    def setFormatRelative(value: /* repeated */ js.Any => _): Self = StObject.set(x, "formatRelative", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFormatLong(value: DateTime): Self = this.set("formatLong", value.asInstanceOf[js.Any])
+    def setFormatRelativeUndefined: Self = StObject.set(x, "formatRelative", js.undefined)
     
     @scala.inline
-    def deleteFormatLong: Self = this.set("formatLong", js.undefined)
+    def setLocalize(value: Day): Self = StObject.set(x, "localize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatRelative(value: /* repeated */ js.Any => _): Self = this.set("formatRelative", js.Any.fromFunction1(value))
+    def setLocalizeUndefined: Self = StObject.set(x, "localize", js.undefined)
     
     @scala.inline
-    def deleteFormatRelative: Self = this.set("formatRelative", js.undefined)
+    def setMatch(value: Day): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalize(value: Day): Self = this.set("localize", value.asInstanceOf[js.Any])
+    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
     @scala.inline
-    def deleteLocalize: Self = this.set("localize", js.undefined)
+    def setOptions(value: FirstWeekContainsDateWeekStartsOn): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatch(value: Day): Self = this.set("match", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatch: Self = this.set("match", js.undefined)
-    
-    @scala.inline
-    def setOptions(value: FirstWeekContainsDateWeekStartsOn): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

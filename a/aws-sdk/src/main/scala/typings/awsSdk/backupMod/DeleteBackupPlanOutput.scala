@@ -1,11 +1,12 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteBackupPlanOutput extends js.Object {
+trait DeleteBackupPlanOutput extends StObject {
   
   /**
     * An Amazon Resource Name (ARN) that uniquely identifies a backup plan; for example, arn:aws:backup:us-east-1:123456789012:plan:8F81F553-3A74-4A3F-B93D-B3360DC80C50.
@@ -36,42 +37,30 @@ object DeleteBackupPlanOutput {
   }
   
   @scala.inline
-  implicit class DeleteBackupPlanOutputOps[Self <: DeleteBackupPlanOutput] (val x: Self) extends AnyVal {
+  implicit class DeleteBackupPlanOutputMutableBuilder[Self <: DeleteBackupPlanOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupPlanArn(value: ARN): Self = StObject.set(x, "BackupPlanArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupPlanArnUndefined: Self = StObject.set(x, "BackupPlanArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackupPlanId(value: String): Self = StObject.set(x, "BackupPlanId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupPlanArn(value: ARN): Self = this.set("BackupPlanArn", value.asInstanceOf[js.Any])
+    def setBackupPlanIdUndefined: Self = StObject.set(x, "BackupPlanId", js.undefined)
     
     @scala.inline
-    def deleteBackupPlanArn: Self = this.set("BackupPlanArn", js.undefined)
+    def setDeletionDate(value: timestamp): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupPlanId(value: String): Self = this.set("BackupPlanId", value.asInstanceOf[js.Any])
+    def setDeletionDateUndefined: Self = StObject.set(x, "DeletionDate", js.undefined)
     
     @scala.inline
-    def deleteBackupPlanId: Self = this.set("BackupPlanId", js.undefined)
+    def setVersionId(value: String): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletionDate(value: timestamp): Self = this.set("DeletionDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeletionDate: Self = this.set("DeletionDate", js.undefined)
-    
-    @scala.inline
-    def setVersionId(value: String): Self = this.set("VersionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

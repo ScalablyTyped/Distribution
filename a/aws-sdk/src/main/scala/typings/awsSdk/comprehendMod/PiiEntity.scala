@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PiiEntity extends js.Object {
+trait PiiEntity extends StObject {
   
   /**
     * A character offset in the input text that shows where the PII entity begins (the first character is at position 0). The offset returns the position of each UTF-8 code point in the string. A code point is the abstract character from a particular graphical representation. For example, a multi-byte UTF-8 character maps to a single code point.
@@ -36,42 +37,30 @@ object PiiEntity {
   }
   
   @scala.inline
-  implicit class PiiEntityOps[Self <: PiiEntity] (val x: Self) extends AnyVal {
+  implicit class PiiEntityMutableBuilder[Self <: PiiEntity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginOffsetUndefined: Self = StObject.set(x, "BeginOffset", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndOffset(value: Integer): Self = StObject.set(x, "EndOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginOffset(value: Integer): Self = this.set("BeginOffset", value.asInstanceOf[js.Any])
+    def setEndOffsetUndefined: Self = StObject.set(x, "EndOffset", js.undefined)
     
     @scala.inline
-    def deleteBeginOffset: Self = this.set("BeginOffset", js.undefined)
+    def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndOffset(value: Integer): Self = this.set("EndOffset", value.asInstanceOf[js.Any])
+    def setScoreUndefined: Self = StObject.set(x, "Score", js.undefined)
     
     @scala.inline
-    def deleteEndOffset: Self = this.set("EndOffset", js.undefined)
+    def setType(value: PiiEntityType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScore(value: Float): Self = this.set("Score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScore: Self = this.set("Score", js.undefined)
-    
-    @scala.inline
-    def setType(value: PiiEntityType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

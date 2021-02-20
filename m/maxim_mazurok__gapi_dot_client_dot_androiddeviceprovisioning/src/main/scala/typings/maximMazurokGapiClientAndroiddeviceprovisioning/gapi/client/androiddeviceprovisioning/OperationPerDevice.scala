@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.androiddeviceprovisioning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OperationPerDevice extends js.Object {
+trait OperationPerDevice extends StObject {
   
   /** A copy of the original device-claim request received by the server. */
   var claim: js.UndefOr[PartnerClaim] = js.native
@@ -28,42 +29,30 @@ object OperationPerDevice {
   }
   
   @scala.inline
-  implicit class OperationPerDeviceOps[Self <: OperationPerDevice] (val x: Self) extends AnyVal {
+  implicit class OperationPerDeviceMutableBuilder[Self <: OperationPerDevice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClaim(value: PartnerClaim): Self = StObject.set(x, "claim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClaimUndefined: Self = StObject.set(x, "claim", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResult(value: PerDeviceStatusInBatch): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClaim(value: PartnerClaim): Self = this.set("claim", value.asInstanceOf[js.Any])
+    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
     @scala.inline
-    def deleteClaim: Self = this.set("claim", js.undefined)
+    def setUnclaim(value: PartnerUnclaim): Self = StObject.set(x, "unclaim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: PerDeviceStatusInBatch): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setUnclaimUndefined: Self = StObject.set(x, "unclaim", js.undefined)
     
     @scala.inline
-    def deleteResult: Self = this.set("result", js.undefined)
+    def setUpdateMetadata(value: UpdateMetadataArguments): Self = StObject.set(x, "updateMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnclaim(value: PartnerUnclaim): Self = this.set("unclaim", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnclaim: Self = this.set("unclaim", js.undefined)
-    
-    @scala.inline
-    def setUpdateMetadata(value: UpdateMetadataArguments): Self = this.set("updateMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateMetadata: Self = this.set("updateMetadata", js.undefined)
+    def setUpdateMetadataUndefined: Self = StObject.set(x, "updateMetadata", js.undefined)
   }
 }

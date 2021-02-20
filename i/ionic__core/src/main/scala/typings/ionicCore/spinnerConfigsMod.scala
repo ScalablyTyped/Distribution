@@ -1,14 +1,15 @@
 package typings.ionicCore
 
 import typings.ionicCore.spinnerInterfaceMod.SpinnerConfigs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/spinner/spinner-configs", JSImport.Namespace)
-@js.native
-object spinnerConfigsMod extends js.Object {
+object spinnerConfigsMod {
   
+  @JSImport("@ionic/core/dist/types/components/spinner/spinner-configs", "SPINNERS")
+  @js.native
   val SPINNERS: SpinnerConfigs = js.native
   
   /* keyof @ionic/core.anon.Bubbles */ /* Rewritten from type alias, can be one of: 
@@ -20,5 +21,5 @@ object spinnerConfigsMod extends js.Object {
     - typings.ionicCore.ionicCoreStrings.lines
     - typings.ionicCore.ionicCoreStrings.`lines-small`
   */
-  trait SpinnerTypes extends js.Object
+  trait SpinnerTypes extends StObject
 }

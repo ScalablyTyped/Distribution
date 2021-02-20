@@ -18,25 +18,14 @@ import typings.pulumiPulumi.invokeMod.InvokeOptions
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/elasticbeanstalk", JSImport.Namespace)
-@js.native
-object elasticbeanstalkMod extends js.Object {
+object elasticbeanstalkMod {
   
-  def getApplication(args: GetApplicationArgs): js.Promise[GetApplicationResult] = js.native
-  def getApplication(args: GetApplicationArgs, opts: InvokeOptions): js.Promise[GetApplicationResult] = js.native
-  
-  def getHostedZone(): js.Promise[GetHostedZoneResult] = js.native
-  def getHostedZone(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetHostedZoneResult] = js.native
-  def getHostedZone(args: GetHostedZoneArgs): js.Promise[GetHostedZoneResult] = js.native
-  def getHostedZone(args: GetHostedZoneArgs, opts: InvokeOptions): js.Promise[GetHostedZoneResult] = js.native
-  
-  def getSolutionStack(args: GetSolutionStackArgs): js.Promise[GetSolutionStackResult] = js.native
-  def getSolutionStack(args: GetSolutionStackArgs, opts: InvokeOptions): js.Promise[GetSolutionStackResult] = js.native
-  
+  @JSImport("@pulumi/aws/elasticbeanstalk", "Application")
   @js.native
   class Application protected ()
     extends typings.pulumiAws.elasticbeanstalkApplicationMod.Application {
@@ -53,8 +42,7 @@ object elasticbeanstalkMod extends js.Object {
     def this(name: String, args: ApplicationArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Application extends js.Object {
+  object Application {
     
     /**
       * Get an existing Application resource's state with the given name, ID, and optional extra
@@ -65,18 +53,29 @@ object elasticbeanstalkMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/elasticbeanstalk", "Application.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.elasticbeanstalkApplicationMod.Application = js.native
+    @JSImport("@pulumi/aws/elasticbeanstalk", "Application.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elasticbeanstalkApplicationMod.Application = js.native
+    @JSImport("@pulumi/aws/elasticbeanstalk", "Application.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ApplicationState): typings.pulumiAws.elasticbeanstalkApplicationMod.Application = js.native
+    @JSImport("@pulumi/aws/elasticbeanstalk", "Application.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ApplicationState, opts: CustomResourceOptions): typings.pulumiAws.elasticbeanstalkApplicationMod.Application = js.native
     
     /**
       * Returns true if the given object is an instance of Application.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/elasticbeanstalk", "Application.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/application.Application */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/elasticbeanstalk", "ApplicationVersion")
   @js.native
   class ApplicationVersion protected ()
     extends typings.pulumiAws.applicationVersionMod.ApplicationVersion {
@@ -91,8 +90,7 @@ object elasticbeanstalkMod extends js.Object {
     def this(name: String, args: ApplicationVersionArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object ApplicationVersion extends js.Object {
+  object ApplicationVersion {
     
     /**
       * Get an existing ApplicationVersion resource's state with the given name, ID, and optional extra
@@ -103,18 +101,29 @@ object elasticbeanstalkMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/elasticbeanstalk", "ApplicationVersion.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.applicationVersionMod.ApplicationVersion = js.native
+    @JSImport("@pulumi/aws/elasticbeanstalk", "ApplicationVersion.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.applicationVersionMod.ApplicationVersion = js.native
+    @JSImport("@pulumi/aws/elasticbeanstalk", "ApplicationVersion.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ApplicationVersionState): typings.pulumiAws.applicationVersionMod.ApplicationVersion = js.native
+    @JSImport("@pulumi/aws/elasticbeanstalk", "ApplicationVersion.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ApplicationVersionState, opts: CustomResourceOptions): typings.pulumiAws.applicationVersionMod.ApplicationVersion = js.native
     
     /**
       * Returns true if the given object is an instance of ApplicationVersion.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/elasticbeanstalk", "ApplicationVersion.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/applicationVersion.ApplicationVersion */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/elasticbeanstalk", "ConfigurationTemplate")
   @js.native
   class ConfigurationTemplate protected ()
     extends typings.pulumiAws.configurationTemplateMod.ConfigurationTemplate {
@@ -129,8 +138,7 @@ object elasticbeanstalkMod extends js.Object {
     def this(name: String, args: ConfigurationTemplateArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object ConfigurationTemplate extends js.Object {
+  object ConfigurationTemplate {
     
     /**
       * Get an existing ConfigurationTemplate resource's state with the given name, ID, and optional extra
@@ -141,18 +149,29 @@ object elasticbeanstalkMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/elasticbeanstalk", "ConfigurationTemplate.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.configurationTemplateMod.ConfigurationTemplate = js.native
+    @JSImport("@pulumi/aws/elasticbeanstalk", "ConfigurationTemplate.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.configurationTemplateMod.ConfigurationTemplate = js.native
+    @JSImport("@pulumi/aws/elasticbeanstalk", "ConfigurationTemplate.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ConfigurationTemplateState): typings.pulumiAws.configurationTemplateMod.ConfigurationTemplate = js.native
+    @JSImport("@pulumi/aws/elasticbeanstalk", "ConfigurationTemplate.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ConfigurationTemplateState, opts: CustomResourceOptions): typings.pulumiAws.configurationTemplateMod.ConfigurationTemplate = js.native
     
     /**
       * Returns true if the given object is an instance of ConfigurationTemplate.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/elasticbeanstalk", "ConfigurationTemplate.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/configurationTemplate.ConfigurationTemplate */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/elasticbeanstalk", "Environment")
   @js.native
   class Environment protected ()
     extends typings.pulumiAws.environmentMod.Environment {
@@ -167,8 +186,7 @@ object elasticbeanstalkMod extends js.Object {
     def this(name: String, args: EnvironmentArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Environment extends js.Object {
+  object Environment {
     
     /**
       * Get an existing Environment resource's state with the given name, ID, and optional extra
@@ -179,15 +197,52 @@ object elasticbeanstalkMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/elasticbeanstalk", "Environment.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.environmentMod.Environment = js.native
+    @JSImport("@pulumi/aws/elasticbeanstalk", "Environment.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.environmentMod.Environment = js.native
+    @JSImport("@pulumi/aws/elasticbeanstalk", "Environment.get")
+    @js.native
     def get(name: String, id: Input[ID], state: EnvironmentState): typings.pulumiAws.environmentMod.Environment = js.native
+    @JSImport("@pulumi/aws/elasticbeanstalk", "Environment.get")
+    @js.native
     def get(name: String, id: Input[ID], state: EnvironmentState, opts: CustomResourceOptions): typings.pulumiAws.environmentMod.Environment = js.native
     
     /**
       * Returns true if the given object is an instance of Environment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/elasticbeanstalk", "Environment.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/environment.Environment */ Boolean = js.native
   }
+  
+  @JSImport("@pulumi/aws/elasticbeanstalk", "getApplication")
+  @js.native
+  def getApplication(args: GetApplicationArgs): js.Promise[GetApplicationResult] = js.native
+  @JSImport("@pulumi/aws/elasticbeanstalk", "getApplication")
+  @js.native
+  def getApplication(args: GetApplicationArgs, opts: InvokeOptions): js.Promise[GetApplicationResult] = js.native
+  
+  @JSImport("@pulumi/aws/elasticbeanstalk", "getHostedZone")
+  @js.native
+  def getHostedZone(): js.Promise[GetHostedZoneResult] = js.native
+  @JSImport("@pulumi/aws/elasticbeanstalk", "getHostedZone")
+  @js.native
+  def getHostedZone(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetHostedZoneResult] = js.native
+  @JSImport("@pulumi/aws/elasticbeanstalk", "getHostedZone")
+  @js.native
+  def getHostedZone(args: GetHostedZoneArgs): js.Promise[GetHostedZoneResult] = js.native
+  @JSImport("@pulumi/aws/elasticbeanstalk", "getHostedZone")
+  @js.native
+  def getHostedZone(args: GetHostedZoneArgs, opts: InvokeOptions): js.Promise[GetHostedZoneResult] = js.native
+  
+  @JSImport("@pulumi/aws/elasticbeanstalk", "getSolutionStack")
+  @js.native
+  def getSolutionStack(args: GetSolutionStackArgs): js.Promise[GetSolutionStackResult] = js.native
+  @JSImport("@pulumi/aws/elasticbeanstalk", "getSolutionStack")
+  @js.native
+  def getSolutionStack(args: GetSolutionStackArgs, opts: InvokeOptions): js.Promise[GetSolutionStackResult] = js.native
 }

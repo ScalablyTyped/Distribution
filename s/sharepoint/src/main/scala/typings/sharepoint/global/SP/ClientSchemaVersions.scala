@@ -1,5 +1,6 @@
 package typings.sharepoint.global.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +9,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ClientSchemaVersions ()
   extends typings.sharepoint.SP.ClientSchemaVersions
-/* static members */
-@JSGlobal("SP.ClientSchemaVersions")
-@js.native
-object ClientSchemaVersions extends js.Object {
+object ClientSchemaVersions {
   
-  var currentVersion: String = js.native
+  @JSGlobal("SP.ClientSchemaVersions")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var version14: String = js.native
+  /* static member */
+  @JSGlobal("SP.ClientSchemaVersions.currentVersion")
+  @js.native
+  def currentVersion: String = js.native
+  @scala.inline
+  def currentVersion_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentVersion")(x.asInstanceOf[js.Any])
   
-  var version15: String = js.native
+  /* static member */
+  @JSGlobal("SP.ClientSchemaVersions.version14")
+  @js.native
+  def version14: String = js.native
+  @scala.inline
+  def version14_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version14")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSGlobal("SP.ClientSchemaVersions.version15")
+  @js.native
+  def version15: String = js.native
+  @scala.inline
+  def version15_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version15")(x.asInstanceOf[js.Any])
 }

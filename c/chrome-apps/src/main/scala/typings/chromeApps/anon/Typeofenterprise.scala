@@ -1,11 +1,12 @@
 package typings.chromeApps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofenterprise extends js.Object {
+trait Typeofenterprise extends StObject {
   
   // #endregion
   // #region chrome.enterprise.*
@@ -42,24 +43,12 @@ object Typeofenterprise {
   }
   
   @scala.inline
-  implicit class TypeofenterpriseOps[Self <: Typeofenterprise] (val x: Self) extends AnyVal {
+  implicit class TypeofenterpriseMutableBuilder[Self <: Typeofenterprise] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceAttributes(value: TypeofdeviceAttributes): Self = StObject.set(x, "deviceAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeviceAttributes(value: TypeofdeviceAttributes): Self = this.set("deviceAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlatformKeys(value: TypeofplatformKeys): Self = this.set("platformKeys", value.asInstanceOf[js.Any])
+    def setPlatformKeys(value: TypeofplatformKeys): Self = StObject.set(x, "platformKeys", value.asInstanceOf[js.Any])
   }
 }

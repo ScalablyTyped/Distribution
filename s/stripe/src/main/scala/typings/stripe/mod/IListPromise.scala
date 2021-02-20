@@ -2,6 +2,7 @@ package typings.stripe.mod
 
 import typings.std.AsyncIterableIterator
 import typings.stripe.anon.Limit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

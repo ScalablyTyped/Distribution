@@ -10,6 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshListener
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,33 +85,21 @@ object DataPilotSource {
   }
   
   @scala.inline
-  implicit class DataPilotSourceOps[Self <: DataPilotSource] (val x: Self) extends AnyVal {
+  implicit class DataPilotSourceMutableBuilder[Self <: DataPilotSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnFieldCount(value: Double): Self = StObject.set(x, "ColumnFieldCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnGrand(value: Boolean): Self = StObject.set(x, "ColumnGrand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataFieldCount(value: Double): Self = StObject.set(x, "DataFieldCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnFieldCount(value: Double): Self = this.set("ColumnFieldCount", value.asInstanceOf[js.Any])
+    def setRowFieldCount(value: Double): Self = StObject.set(x, "RowFieldCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnGrand(value: Boolean): Self = this.set("ColumnGrand", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataFieldCount(value: Double): Self = this.set("DataFieldCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowFieldCount(value: Double): Self = this.set("RowFieldCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowGrand(value: Boolean): Self = this.set("RowGrand", value.asInstanceOf[js.Any])
+    def setRowGrand(value: Boolean): Self = StObject.set(x, "RowGrand", value.asInstanceOf[js.Any])
   }
 }

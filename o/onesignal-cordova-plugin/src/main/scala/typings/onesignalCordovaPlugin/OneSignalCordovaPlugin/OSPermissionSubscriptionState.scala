@@ -1,11 +1,12 @@
 package typings.onesignalCordovaPlugin.OneSignalCordovaPlugin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OSPermissionSubscriptionState extends js.Object {
+trait OSPermissionSubscriptionState extends StObject {
   
   var emailSubscriptionStatus: OSEmailSubscriptionState = js.native
   
@@ -26,27 +27,15 @@ object OSPermissionSubscriptionState {
   }
   
   @scala.inline
-  implicit class OSPermissionSubscriptionStateOps[Self <: OSPermissionSubscriptionState] (val x: Self) extends AnyVal {
+  implicit class OSPermissionSubscriptionStateMutableBuilder[Self <: OSPermissionSubscriptionState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmailSubscriptionStatus(value: OSEmailSubscriptionState): Self = StObject.set(x, "emailSubscriptionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPermissionStatus(value: OSPermissionState): Self = StObject.set(x, "permissionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEmailSubscriptionStatus(value: OSEmailSubscriptionState): Self = this.set("emailSubscriptionStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPermissionStatus(value: OSPermissionState): Self = this.set("permissionStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscriptionStatus(value: OSSubscriptionState): Self = this.set("subscriptionStatus", value.asInstanceOf[js.Any])
+    def setSubscriptionStatus(value: OSSubscriptionState): Self = StObject.set(x, "subscriptionStatus", value.asInstanceOf[js.Any])
   }
 }

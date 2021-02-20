@@ -1,5 +1,6 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexExcel.Excel.XlApplicationInternationalNumbers
   - typings.activexExcel.Excel.XlApplicationInternationalBooleans
 */
-trait XlApplicationInternational extends js.Object
+trait XlApplicationInternational extends StObject

@@ -1,12 +1,13 @@
 package typings.chartmogulNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("chartmogul-node", "Config")
 @js.native
-class Config protected () extends js.Object {
+class Config protected () extends StObject {
   def this(token: String, secret: String) = this()
   def this(token: String, secret: String, base: String) = this()
   

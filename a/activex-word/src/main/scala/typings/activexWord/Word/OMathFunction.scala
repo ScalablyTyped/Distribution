@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OMathFunction extends js.Object {
+trait OMathFunction extends StObject {
   
   val Acc: OMathAcc = js.native
   
@@ -103,102 +104,90 @@ object OMathFunction {
   }
   
   @scala.inline
-  implicit class OMathFunctionOps[Self <: OMathFunction] (val x: Self) extends AnyVal {
+  implicit class OMathFunctionMutableBuilder[Self <: OMathFunction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcc(value: OMathAcc): Self = StObject.set(x, "Acc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgs(value: OMathArgs): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcc(value: OMathAcc): Self = this.set("Acc", value.asInstanceOf[js.Any])
+    def setBar(value: OMathBar): Self = StObject.set(x, "Bar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setBorderBox(value: OMathBorderBox): Self = StObject.set(x, "BorderBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: OMathArgs): Self = this.set("Args", value.asInstanceOf[js.Any])
+    def setBox(value: OMathBox): Self = StObject.set(x, "Box", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBar(value: OMathBar): Self = this.set("Bar", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBox(value: OMathBorderBox): Self = this.set("BorderBox", value.asInstanceOf[js.Any])
+    def setDelim(value: OMathDelim): Self = StObject.set(x, "Delim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBox(value: OMathBox): Self = this.set("Box", value.asInstanceOf[js.Any])
+    def setEqArray(value: OMathEqArray): Self = StObject.set(x, "EqArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setFrac(value: OMathFrac): Self = StObject.set(x, "Frac", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelim(value: OMathDelim): Self = this.set("Delim", value.asInstanceOf[js.Any])
+    def setFunc(value: OMathFunc): Self = StObject.set(x, "Func", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEqArray(value: OMathEqArray): Self = this.set("EqArray", value.asInstanceOf[js.Any])
+    def setGroupChar(value: OMathGroupChar): Self = StObject.set(x, "GroupChar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrac(value: OMathFrac): Self = this.set("Frac", value.asInstanceOf[js.Any])
+    def setLimLow(value: OMathLimLow): Self = StObject.set(x, "LimLow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunc(value: OMathFunc): Self = this.set("Func", value.asInstanceOf[js.Any])
+    def setLimUpp(value: OMathLimUpp): Self = StObject.set(x, "LimUpp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupChar(value: OMathGroupChar): Self = this.set("GroupChar", value.asInstanceOf[js.Any])
+    def setMat(value: OMathMat): Self = StObject.set(x, "Mat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimLow(value: OMathLimLow): Self = this.set("LimLow", value.asInstanceOf[js.Any])
+    def setNary(value: OMathNary): Self = StObject.set(x, "Nary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimUpp(value: OMathLimUpp): Self = this.set("LimUpp", value.asInstanceOf[js.Any])
+    def setOMath(value: OMath): Self = StObject.set(x, "OMath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMat(value: OMathMat): Self = this.set("Mat", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNary(value: OMathNary): Self = this.set("Nary", value.asInstanceOf[js.Any])
+    def setPhantom(value: OMathPhantom): Self = StObject.set(x, "Phantom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOMath(value: OMath): Self = this.set("OMath", value.asInstanceOf[js.Any])
+    def setRad(value: OMathRad): Self = StObject.set(x, "Rad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhantom(value: OMathPhantom): Self = this.set("Phantom", value.asInstanceOf[js.Any])
+    def setRemove(value: () => OMathFunction): Self = StObject.set(x, "Remove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRad(value: OMathRad): Self = this.set("Rad", value.asInstanceOf[js.Any])
+    def setScrPre(value: OMathScrPre): Self = StObject.set(x, "ScrPre", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: Range): Self = this.set("Range", value.asInstanceOf[js.Any])
+    def setScrSub(value: OMathScrSub): Self = StObject.set(x, "ScrSub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemove(value: () => OMathFunction): Self = this.set("Remove", js.Any.fromFunction0(value))
+    def setScrSubSup(value: OMathScrSubSup): Self = StObject.set(x, "ScrSubSup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrPre(value: OMathScrPre): Self = this.set("ScrPre", value.asInstanceOf[js.Any])
+    def setScrSup(value: OMathScrSup): Self = StObject.set(x, "ScrSup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrSub(value: OMathScrSub): Self = this.set("ScrSub", value.asInstanceOf[js.Any])
+    def setType(value: WdOMathFunctionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrSubSup(value: OMathScrSubSup): Self = this.set("ScrSubSup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrSup(value: OMathScrSup): Self = this.set("ScrSup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: WdOMathFunctionType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotOMathFunction_typekey(value: OMathFunction): Self = this.set("Word.OMathFunction_typekey", value.asInstanceOf[js.Any])
+    def setWordDotOMathFunction_typekey(value: OMathFunction): Self = StObject.set(x, "Word.OMathFunction_typekey", value.asInstanceOf[js.Any])
   }
 }

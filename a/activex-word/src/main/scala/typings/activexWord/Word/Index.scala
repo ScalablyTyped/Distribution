@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Index extends js.Object {
+trait Index extends StObject {
   
   var AccentedLetters: Boolean = js.native
   
@@ -67,66 +68,54 @@ object Index {
   }
   
   @scala.inline
-  implicit class IndexOps[Self <: Index] (val x: Self) extends AnyVal {
+  implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccentedLetters(value: Boolean): Self = StObject.set(x, "AccentedLetters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccentedLetters(value: Boolean): Self = this.set("AccentedLetters", value.asInstanceOf[js.Any])
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setFilter(value: WdIndexFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setHeadingSeparator(value: WdHeadingSeparator): Self = StObject.set(x, "HeadingSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setIndexLanguage(value: WdLanguageID): Self = StObject.set(x, "IndexLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: WdIndexFilter): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    def setNumberOfColumns(value: Double): Self = StObject.set(x, "NumberOfColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadingSeparator(value: WdHeadingSeparator): Self = this.set("HeadingSeparator", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexLanguage(value: WdLanguageID): Self = this.set("IndexLanguage", value.asInstanceOf[js.Any])
+    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfColumns(value: Double): Self = this.set("NumberOfColumns", value.asInstanceOf[js.Any])
+    def setRightAlignPageNumbers(value: Boolean): Self = StObject.set(x, "RightAlignPageNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setSortBy(value: WdIndexSortBy): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: Range): Self = this.set("Range", value.asInstanceOf[js.Any])
+    def setTabLeader(value: WdTabLeader): Self = StObject.set(x, "TabLeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightAlignPageNumbers(value: Boolean): Self = this.set("RightAlignPageNumbers", value.asInstanceOf[js.Any])
+    def setType(value: WdIndexType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortBy(value: WdIndexSortBy): Self = this.set("SortBy", value.asInstanceOf[js.Any])
+    def setUpdate(value: () => Unit): Self = StObject.set(x, "Update", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTabLeader(value: WdTabLeader): Self = this.set("TabLeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: WdIndexType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = this.set("Update", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWordDotIndex_typekey(value: Index): Self = this.set("Word.Index_typekey", value.asInstanceOf[js.Any])
+    def setWordDotIndex_typekey(value: Index): Self = StObject.set(x, "Word.Index_typekey", value.asInstanceOf[js.Any])
   }
 }

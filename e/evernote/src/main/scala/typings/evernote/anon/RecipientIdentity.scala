@@ -4,12 +4,13 @@ import typings.evernote.mod.Types.Identity
 import typings.evernote.mod.Types.SharedNotePrivilegeLevel
 import typings.evernote.mod.Types.Timestamp
 import typings.evernote.mod.Types.UserID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecipientIdentity extends js.Object {
+trait RecipientIdentity extends StObject {
   
   var privilege: js.UndefOr[SharedNotePrivilegeLevel] = js.native
   
@@ -32,54 +33,42 @@ object RecipientIdentity {
   }
   
   @scala.inline
-  implicit class RecipientIdentityOps[Self <: RecipientIdentity] (val x: Self) extends AnyVal {
+  implicit class RecipientIdentityMutableBuilder[Self <: RecipientIdentity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrivilege(value: SharedNotePrivilegeLevel): Self = StObject.set(x, "privilege", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrivilegeUndefined: Self = StObject.set(x, "privilege", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecipientIdentity(value: Identity): Self = StObject.set(x, "recipientIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivilege(value: SharedNotePrivilegeLevel): Self = this.set("privilege", value.asInstanceOf[js.Any])
+    def setRecipientIdentityUndefined: Self = StObject.set(x, "recipientIdentity", js.undefined)
     
     @scala.inline
-    def deletePrivilege: Self = this.set("privilege", js.undefined)
+    def setServiceAssigned(value: Timestamp): Self = StObject.set(x, "serviceAssigned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientIdentity(value: Identity): Self = this.set("recipientIdentity", value.asInstanceOf[js.Any])
+    def setServiceAssignedUndefined: Self = StObject.set(x, "serviceAssigned", js.undefined)
     
     @scala.inline
-    def deleteRecipientIdentity: Self = this.set("recipientIdentity", js.undefined)
+    def setServiceCreated(value: Timestamp): Self = StObject.set(x, "serviceCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAssigned(value: Timestamp): Self = this.set("serviceAssigned", value.asInstanceOf[js.Any])
+    def setServiceCreatedUndefined: Self = StObject.set(x, "serviceCreated", js.undefined)
     
     @scala.inline
-    def deleteServiceAssigned: Self = this.set("serviceAssigned", js.undefined)
+    def setServiceUpdated(value: Timestamp): Self = StObject.set(x, "serviceUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceCreated(value: Timestamp): Self = this.set("serviceCreated", value.asInstanceOf[js.Any])
+    def setServiceUpdatedUndefined: Self = StObject.set(x, "serviceUpdated", js.undefined)
     
     @scala.inline
-    def deleteServiceCreated: Self = this.set("serviceCreated", js.undefined)
+    def setSharerUserID(value: UserID): Self = StObject.set(x, "sharerUserID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceUpdated(value: Timestamp): Self = this.set("serviceUpdated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceUpdated: Self = this.set("serviceUpdated", js.undefined)
-    
-    @scala.inline
-    def setSharerUserID(value: UserID): Self = this.set("sharerUserID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSharerUserID: Self = this.set("sharerUserID", js.undefined)
+    def setSharerUserIDUndefined: Self = StObject.set(x, "sharerUserID", js.undefined)
   }
 }

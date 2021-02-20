@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientStoragetransfer.gapi.client.storagetransfer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectConditions extends js.Object {
+trait ObjectConditions extends StObject {
   
   /** `exclude_prefixes` must follow the requirements described for include_prefixes. The max size of `exclude_prefixes` is 1000. */
   var excludePrefixes: js.UndefOr[js.Array[String]] = js.native
@@ -53,60 +54,48 @@ object ObjectConditions {
   }
   
   @scala.inline
-  implicit class ObjectConditionsOps[Self <: ObjectConditions] (val x: Self) extends AnyVal {
+  implicit class ObjectConditionsMutableBuilder[Self <: ObjectConditions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludePrefixes(value: js.Array[String]): Self = StObject.set(x, "excludePrefixes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludePrefixesUndefined: Self = StObject.set(x, "excludePrefixes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludePrefixesVarargs(value: String*): Self = StObject.set(x, "excludePrefixes", js.Array(value :_*))
     
     @scala.inline
-    def setExcludePrefixesVarargs(value: String*): Self = this.set("excludePrefixes", js.Array(value :_*))
+    def setIncludePrefixes(value: js.Array[String]): Self = StObject.set(x, "includePrefixes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludePrefixes(value: js.Array[String]): Self = this.set("excludePrefixes", value.asInstanceOf[js.Any])
+    def setIncludePrefixesUndefined: Self = StObject.set(x, "includePrefixes", js.undefined)
     
     @scala.inline
-    def deleteExcludePrefixes: Self = this.set("excludePrefixes", js.undefined)
+    def setIncludePrefixesVarargs(value: String*): Self = StObject.set(x, "includePrefixes", js.Array(value :_*))
     
     @scala.inline
-    def setIncludePrefixesVarargs(value: String*): Self = this.set("includePrefixes", js.Array(value :_*))
+    def setLastModifiedBefore(value: String): Self = StObject.set(x, "lastModifiedBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludePrefixes(value: js.Array[String]): Self = this.set("includePrefixes", value.asInstanceOf[js.Any])
+    def setLastModifiedBeforeUndefined: Self = StObject.set(x, "lastModifiedBefore", js.undefined)
     
     @scala.inline
-    def deleteIncludePrefixes: Self = this.set("includePrefixes", js.undefined)
+    def setLastModifiedSince(value: String): Self = StObject.set(x, "lastModifiedSince", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedBefore(value: String): Self = this.set("lastModifiedBefore", value.asInstanceOf[js.Any])
+    def setLastModifiedSinceUndefined: Self = StObject.set(x, "lastModifiedSince", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedBefore: Self = this.set("lastModifiedBefore", js.undefined)
+    def setMaxTimeElapsedSinceLastModification(value: String): Self = StObject.set(x, "maxTimeElapsedSinceLastModification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedSince(value: String): Self = this.set("lastModifiedSince", value.asInstanceOf[js.Any])
+    def setMaxTimeElapsedSinceLastModificationUndefined: Self = StObject.set(x, "maxTimeElapsedSinceLastModification", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedSince: Self = this.set("lastModifiedSince", js.undefined)
+    def setMinTimeElapsedSinceLastModification(value: String): Self = StObject.set(x, "minTimeElapsedSinceLastModification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTimeElapsedSinceLastModification(value: String): Self = this.set("maxTimeElapsedSinceLastModification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxTimeElapsedSinceLastModification: Self = this.set("maxTimeElapsedSinceLastModification", js.undefined)
-    
-    @scala.inline
-    def setMinTimeElapsedSinceLastModification(value: String): Self = this.set("minTimeElapsedSinceLastModification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinTimeElapsedSinceLastModification: Self = this.set("minTimeElapsedSinceLastModification", js.undefined)
+    def setMinTimeElapsedSinceLastModificationUndefined: Self = StObject.set(x, "minTimeElapsedSinceLastModification", js.undefined)
   }
 }

@@ -9,13 +9,14 @@ import typings.tuyaPanelKit.routersTypesMod.NavigationAction
 import typings.tuyaPanelKit.routersTypesMod.NavigationState
 import typings.tuyaPanelKit.routersTypesMod.ParamListBase
 import typings.tuyaPanelKit.typesMod.NavigationContainerRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined tuya-panel-kit.tuya-panel-kit/@react-navigation/core.NavigationContainerProps & {  theme :tuya-panel-kit.tuya-panel-kit/@react-navigation/native/types.Theme | undefined,   linking :tuya-panel-kit.tuya-panel-kit/@react-navigation/native/types.LinkingOptions | undefined,   fallback :react.react.ReactNode | undefined,   documentTitle :tuya-panel-kit.tuya-panel-kit/@react-navigation/native/types.DocumentTitleOptions | undefined,   onReady :(): void | undefined} & react.react.RefAttributes<tuya-panel-kit.tuya-panel-kit/@react-navigation/core.NavigationContainerRef> */
 @js.native
-trait NavigationContainerPropst extends js.Object {
+trait NavigationContainerPropst extends StObject {
   
   /**
     * Children elements to render.
@@ -71,99 +72,87 @@ object NavigationContainerPropst {
   }
   
   @scala.inline
-  implicit class NavigationContainerPropstOps[Self <: NavigationContainerPropst] (val x: Self) extends AnyVal {
+  implicit class NavigationContainerPropstMutableBuilder[Self <: NavigationContainerPropst] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentTitle(value: DocumentTitleOptions): Self = StObject.set(x, "documentTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setDocumentTitleUndefined: Self = StObject.set(x, "documentTitle", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setFallback(value: ReactNode): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentTitle(value: DocumentTitleOptions): Self = this.set("documentTitle", value.asInstanceOf[js.Any])
+    def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     
     @scala.inline
-    def deleteDocumentTitle: Self = this.set("documentTitle", js.undefined)
+    def setIndependent(value: Boolean): Self = StObject.set(x, "independent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFallback(value: ReactNode): Self = this.set("fallback", value.asInstanceOf[js.Any])
+    def setIndependentUndefined: Self = StObject.set(x, "independent", js.undefined)
     
     @scala.inline
-    def deleteFallback: Self = this.set("fallback", js.undefined)
+    def setInitialState(value: InitialState): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndependent(value: Boolean): Self = this.set("independent", value.asInstanceOf[js.Any])
+    def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
     @scala.inline
-    def deleteIndependent: Self = this.set("independent", js.undefined)
+    def setKey(value: typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialState(value: InitialState): Self = this.set("initialState", value.asInstanceOf[js.Any])
+    def setKeyNull: Self = StObject.set(x, "key", null)
     
     @scala.inline
-    def deleteInitialState: Self = this.set("initialState", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setKey(value: typings.react.mod.Key): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setLinking(value: LinkingOptions): Self = StObject.set(x, "linking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setLinkingUndefined: Self = StObject.set(x, "linking", js.undefined)
     
     @scala.inline
-    def setKeyNull: Self = this.set("key", null)
+    def setOnReady(value: () => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLinking(value: LinkingOptions): Self = this.set("linking", value.asInstanceOf[js.Any])
+    def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
     
     @scala.inline
-    def deleteLinking: Self = this.set("linking", js.undefined)
+    def setOnStateChange(value: /* state */ js.UndefOr[NavigationState[ParamListBase]] => Unit): Self = StObject.set(x, "onStateChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnReady(value: () => Unit): Self = this.set("onReady", js.Any.fromFunction0(value))
+    def setOnStateChangeUndefined: Self = StObject.set(x, "onStateChange", js.undefined)
     
     @scala.inline
-    def deleteOnReady: Self = this.set("onReady", js.undefined)
+    def setOnUnhandledAction(value: /* action */ NavigationAction => Unit): Self = StObject.set(x, "onUnhandledAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnStateChange(value: /* state */ js.UndefOr[NavigationState[ParamListBase]] => Unit): Self = this.set("onStateChange", js.Any.fromFunction1(value))
+    def setOnUnhandledActionUndefined: Self = StObject.set(x, "onUnhandledAction", js.undefined)
     
     @scala.inline
-    def deleteOnStateChange: Self = this.set("onStateChange", js.undefined)
+    def setRef(value: Ref[NavigationContainerRef]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnUnhandledAction(value: /* action */ NavigationAction => Unit): Self = this.set("onUnhandledAction", js.Any.fromFunction1(value))
+    def setRefFunction1(value: /* instance */ NavigationContainerRef | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnUnhandledAction: Self = this.set("onUnhandledAction", js.undefined)
+    def setRefNull: Self = StObject.set(x, "ref", null)
     
     @scala.inline
-    def setRefFunction1(value: /* instance */ NavigationContainerRef | Null => Unit): Self = this.set("ref", js.Any.fromFunction1(value))
+    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     @scala.inline
-    def setRef(value: Ref[NavigationContainerRef]): Self = this.set("ref", value.asInstanceOf[js.Any])
+    def setTheme(value: typings.tuyaPanelKit.nativeTypesMod.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRef: Self = this.set("ref", js.undefined)
-    
-    @scala.inline
-    def setRefNull: Self = this.set("ref", null)
-    
-    @scala.inline
-    def setTheme(value: typings.tuyaPanelKit.nativeTypesMod.Theme): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

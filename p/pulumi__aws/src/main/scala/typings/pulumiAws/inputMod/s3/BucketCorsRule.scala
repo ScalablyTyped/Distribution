@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.s3
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketCorsRule extends js.Object {
+trait BucketCorsRule extends StObject {
   
   /**
     * Specifies which headers are allowed.
@@ -42,54 +43,42 @@ object BucketCorsRule {
   }
   
   @scala.inline
-  implicit class BucketCorsRuleOps[Self <: BucketCorsRule] (val x: Self) extends AnyVal {
+  implicit class BucketCorsRuleMutableBuilder[Self <: BucketCorsRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedHeaders(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedHeadersUndefined: Self = StObject.set(x, "allowedHeaders", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedHeadersVarargs(value: Input[String]*): Self = StObject.set(x, "allowedHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedMethodsVarargs(value: Input[String]*): Self = this.set("allowedMethods", js.Array(value :_*))
+    def setAllowedMethods(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedMethods(value: Input[js.Array[Input[String]]]): Self = this.set("allowedMethods", value.asInstanceOf[js.Any])
+    def setAllowedMethodsVarargs(value: Input[String]*): Self = StObject.set(x, "allowedMethods", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedOriginsVarargs(value: Input[String]*): Self = this.set("allowedOrigins", js.Array(value :_*))
+    def setAllowedOrigins(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedOrigins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedOrigins(value: Input[js.Array[Input[String]]]): Self = this.set("allowedOrigins", value.asInstanceOf[js.Any])
+    def setAllowedOriginsVarargs(value: Input[String]*): Self = StObject.set(x, "allowedOrigins", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedHeadersVarargs(value: Input[String]*): Self = this.set("allowedHeaders", js.Array(value :_*))
+    def setExposeHeaders(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "exposeHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedHeaders(value: Input[js.Array[Input[String]]]): Self = this.set("allowedHeaders", value.asInstanceOf[js.Any])
+    def setExposeHeadersUndefined: Self = StObject.set(x, "exposeHeaders", js.undefined)
     
     @scala.inline
-    def deleteAllowedHeaders: Self = this.set("allowedHeaders", js.undefined)
+    def setExposeHeadersVarargs(value: Input[String]*): Self = StObject.set(x, "exposeHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setExposeHeadersVarargs(value: Input[String]*): Self = this.set("exposeHeaders", js.Array(value :_*))
+    def setMaxAgeSeconds(value: Input[Double]): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposeHeaders(value: Input[js.Array[Input[String]]]): Self = this.set("exposeHeaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExposeHeaders: Self = this.set("exposeHeaders", js.undefined)
-    
-    @scala.inline
-    def setMaxAgeSeconds(value: Input[Double]): Self = this.set("maxAgeSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxAgeSeconds: Self = this.set("maxAgeSeconds", js.undefined)
+    def setMaxAgeSecondsUndefined: Self = StObject.set(x, "maxAgeSeconds", js.undefined)
   }
 }

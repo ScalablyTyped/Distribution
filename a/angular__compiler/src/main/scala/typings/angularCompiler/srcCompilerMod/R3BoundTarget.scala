@@ -12,6 +12,7 @@ import typings.angularCompiler.t2ApiMod.Target
 import typings.std.Map
 import typings.std.ReadonlySet
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

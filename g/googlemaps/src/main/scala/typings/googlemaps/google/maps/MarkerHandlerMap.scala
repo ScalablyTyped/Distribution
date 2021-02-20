@@ -1,11 +1,12 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MarkerHandlerMap[C /* <: Marker */] extends js.Object {
+trait MarkerHandlerMap[C /* <: Marker */] extends StObject {
   
   /**
     * This event is fired when the marker's animation property changes.
@@ -164,81 +165,69 @@ object MarkerHandlerMap {
   }
   
   @scala.inline
-  implicit class MarkerHandlerMapOps[Self <: MarkerHandlerMap[_], C /* <: Marker */] (val x: Self with MarkerHandlerMap[C]) extends AnyVal {
+  implicit class MarkerHandlerMapMutableBuilder[Self <: MarkerHandlerMap[_], C /* <: Marker */] (val x: Self with MarkerHandlerMap[C]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation_changed(value: () => Unit): Self = StObject.set(x, "animation_changed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClick(value: MouseEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClickable_changed(value: () => Unit): Self = StObject.set(x, "clickable_changed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAnimation_changed(value: () => Unit): Self = this.set("animation_changed", js.Any.fromFunction0(value))
+    def setCursor_changed(value: () => Unit): Self = StObject.set(x, "cursor_changed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClick(value: MouseEvent => Unit): Self = this.set("click", js.Any.fromFunction1(value))
+    def setDblclick(value: MouseEvent => Unit): Self = StObject.set(x, "dblclick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClickable_changed(value: () => Unit): Self = this.set("clickable_changed", js.Any.fromFunction0(value))
+    def setDrag(value: MouseEvent => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCursor_changed(value: () => Unit): Self = this.set("cursor_changed", js.Any.fromFunction0(value))
+    def setDragend(value: MouseEvent => Unit): Self = StObject.set(x, "dragend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDblclick(value: MouseEvent => Unit): Self = this.set("dblclick", js.Any.fromFunction1(value))
+    def setDraggable_changed(value: () => Unit): Self = StObject.set(x, "draggable_changed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDrag(value: MouseEvent => Unit): Self = this.set("drag", js.Any.fromFunction1(value))
+    def setDragstart(value: MouseEvent => Unit): Self = StObject.set(x, "dragstart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDragend(value: MouseEvent => Unit): Self = this.set("dragend", js.Any.fromFunction1(value))
+    def setFlat_changed(value: () => Unit): Self = StObject.set(x, "flat_changed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDraggable_changed(value: () => Unit): Self = this.set("draggable_changed", js.Any.fromFunction0(value))
+    def setIcon_changed(value: () => Unit): Self = StObject.set(x, "icon_changed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDragstart(value: MouseEvent => Unit): Self = this.set("dragstart", js.Any.fromFunction1(value))
+    def setMousedown(value: MouseEvent => Unit): Self = StObject.set(x, "mousedown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFlat_changed(value: () => Unit): Self = this.set("flat_changed", js.Any.fromFunction0(value))
+    def setMouseout(value: MouseEvent => Unit): Self = StObject.set(x, "mouseout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIcon_changed(value: () => Unit): Self = this.set("icon_changed", js.Any.fromFunction0(value))
+    def setMouseover(value: MouseEvent => Unit): Self = StObject.set(x, "mouseover", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMousedown(value: MouseEvent => Unit): Self = this.set("mousedown", js.Any.fromFunction1(value))
+    def setMouseup(value: MouseEvent => Unit): Self = StObject.set(x, "mouseup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMouseout(value: MouseEvent => Unit): Self = this.set("mouseout", js.Any.fromFunction1(value))
+    def setPosition_changed(value: () => Unit): Self = StObject.set(x, "position_changed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMouseover(value: MouseEvent => Unit): Self = this.set("mouseover", js.Any.fromFunction1(value))
+    def setRightclick(value: MouseEvent => Unit): Self = StObject.set(x, "rightclick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMouseup(value: MouseEvent => Unit): Self = this.set("mouseup", js.Any.fromFunction1(value))
+    def setShape_changed(value: () => Unit): Self = StObject.set(x, "shape_changed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPosition_changed(value: () => Unit): Self = this.set("position_changed", js.Any.fromFunction0(value))
+    def setTitle_changed(value: () => Unit): Self = StObject.set(x, "title_changed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRightclick(value: MouseEvent => Unit): Self = this.set("rightclick", js.Any.fromFunction1(value))
+    def setVisible_changed(value: () => Unit): Self = StObject.set(x, "visible_changed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setShape_changed(value: () => Unit): Self = this.set("shape_changed", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTitle_changed(value: () => Unit): Self = this.set("title_changed", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setVisible_changed(value: () => Unit): Self = this.set("visible_changed", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setZindex_changed(value: () => Unit): Self = this.set("zindex_changed", js.Any.fromFunction0(value))
+    def setZindex_changed(value: () => Unit): Self = StObject.set(x, "zindex_changed", js.Any.fromFunction0(value))
   }
 }

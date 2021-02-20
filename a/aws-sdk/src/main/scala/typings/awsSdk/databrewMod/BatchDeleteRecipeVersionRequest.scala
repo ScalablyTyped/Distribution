@@ -1,11 +1,12 @@
 package typings.awsSdk.databrewMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDeleteRecipeVersionRequest extends js.Object {
+trait BatchDeleteRecipeVersionRequest extends StObject {
   
   /**
     * The name of the recipe to be modified.
@@ -26,27 +27,15 @@ object BatchDeleteRecipeVersionRequest {
   }
   
   @scala.inline
-  implicit class BatchDeleteRecipeVersionRequestOps[Self <: BatchDeleteRecipeVersionRequest] (val x: Self) extends AnyVal {
+  implicit class BatchDeleteRecipeVersionRequestMutableBuilder[Self <: BatchDeleteRecipeVersionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: RecipeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecipeVersions(value: RecipeVersionList): Self = StObject.set(x, "RecipeVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: RecipeName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecipeVersionsVarargs(value: RecipeVersion*): Self = this.set("RecipeVersions", js.Array(value :_*))
-    
-    @scala.inline
-    def setRecipeVersions(value: RecipeVersionList): Self = this.set("RecipeVersions", value.asInstanceOf[js.Any])
+    def setRecipeVersionsVarargs(value: RecipeVersion*): Self = StObject.set(x, "RecipeVersions", js.Array(value :_*))
   }
 }

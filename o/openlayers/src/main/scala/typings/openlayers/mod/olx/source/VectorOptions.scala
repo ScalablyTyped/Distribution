@@ -10,12 +10,13 @@ import typings.openlayers.mod.FeatureUrlFunction
 import typings.openlayers.mod.LoadingStrategy_
 import typings.openlayers.mod.olx.LogoOptions
 import typings.openlayers.mod.proj.Projection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VectorOptions extends js.Object {
+trait VectorOptions extends StObject {
   
   var attributions: js.UndefOr[AttributionLike] = js.native
   
@@ -46,87 +47,75 @@ object VectorOptions {
   }
   
   @scala.inline
-  implicit class VectorOptionsOps[Self <: VectorOptions] (val x: Self) extends AnyVal {
+  implicit class VectorOptionsMutableBuilder[Self <: VectorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value :_*))
     
     @scala.inline
-    def setAttributionsVarargs(value: (Attribution | String)*): Self = this.set("attributions", js.Array(value :_*))
+    def setFeatures(value: js.Array[Feature] | Collection[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributions(value: AttributionLike): Self = this.set("attributions", value.asInstanceOf[js.Any])
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
     @scala.inline
-    def deleteAttributions: Self = this.set("attributions", js.undefined)
+    def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "features", js.Array(value :_*))
     
     @scala.inline
-    def setFeaturesVarargs(value: Feature*): Self = this.set("features", js.Array(value :_*))
+    def setFormat(value: typings.openlayers.mod.format.Feature): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: js.Array[Feature] | Collection[Feature]): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteFeatures: Self = this.set("features", js.undefined)
+    def setLoader(value: (/* extent */ Extent_, /* resolution */ Double, /* proj */ Projection) => Unit): Self = StObject.set(x, "loader", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setFormat(value: typings.openlayers.mod.format.Feature): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setLogo(value: String | LogoOptions): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoader(value: (/* extent */ Extent_, /* resolution */ Double, /* proj */ Projection) => Unit): Self = this.set("loader", js.Any.fromFunction3(value))
+    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
     @scala.inline
-    def deleteLoader: Self = this.set("loader", js.undefined)
+    def setOverlaps(value: Boolean): Self = StObject.set(x, "overlaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogo(value: String | LogoOptions): Self = this.set("logo", value.asInstanceOf[js.Any])
+    def setOverlapsUndefined: Self = StObject.set(x, "overlaps", js.undefined)
     
     @scala.inline
-    def deleteLogo: Self = this.set("logo", js.undefined)
+    def setStrategy(value: (/* extent */ Extent_, /* resolution */ Double) => js.Array[Extent_]): Self = StObject.set(x, "strategy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOverlaps(value: Boolean): Self = this.set("overlaps", value.asInstanceOf[js.Any])
+    def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
     
     @scala.inline
-    def deleteOverlaps: Self = this.set("overlaps", js.undefined)
+    def setUrl(value: String | FeatureUrlFunction): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrategy(value: (/* extent */ Extent_, /* resolution */ Double) => js.Array[Extent_]): Self = this.set("strategy", js.Any.fromFunction2(value))
+    def setUrlFunction3(value: (/* extent */ Extent_, /* resolution */ Double, /* proj */ Projection) => String): Self = StObject.set(x, "url", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteStrategy: Self = this.set("strategy", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def setUrlFunction3(value: (/* extent */ Extent_, /* resolution */ Double, /* proj */ Projection) => String): Self = this.set("url", js.Any.fromFunction3(value))
+    def setUseSpatialIndex(value: Boolean): Self = StObject.set(x, "useSpatialIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String | FeatureUrlFunction): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUseSpatialIndexUndefined: Self = StObject.set(x, "useSpatialIndex", js.undefined)
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseSpatialIndex(value: Boolean): Self = this.set("useSpatialIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseSpatialIndex: Self = this.set("useSpatialIndex", js.undefined)
-    
-    @scala.inline
-    def setWrapX(value: Boolean): Self = this.set("wrapX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapX: Self = this.set("wrapX", js.undefined)
+    def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterNode extends js.Object {
+trait ClusterNode extends StObject {
   
   /**
     * Whether the node is a leader node or a compute node.
@@ -31,36 +32,24 @@ object ClusterNode {
   }
   
   @scala.inline
-  implicit class ClusterNodeOps[Self <: ClusterNode] (val x: Self) extends AnyVal {
+  implicit class ClusterNodeMutableBuilder[Self <: ClusterNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNodeRole(value: String): Self = StObject.set(x, "NodeRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNodeRoleUndefined: Self = StObject.set(x, "NodeRole", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrivateIPAddress(value: String): Self = StObject.set(x, "PrivateIPAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeRole(value: String): Self = this.set("NodeRole", value.asInstanceOf[js.Any])
+    def setPrivateIPAddressUndefined: Self = StObject.set(x, "PrivateIPAddress", js.undefined)
     
     @scala.inline
-    def deleteNodeRole: Self = this.set("NodeRole", js.undefined)
+    def setPublicIPAddress(value: String): Self = StObject.set(x, "PublicIPAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateIPAddress(value: String): Self = this.set("PrivateIPAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateIPAddress: Self = this.set("PrivateIPAddress", js.undefined)
-    
-    @scala.inline
-    def setPublicIPAddress(value: String): Self = this.set("PublicIPAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicIPAddress: Self = this.set("PublicIPAddress", js.undefined)
+    def setPublicIPAddressUndefined: Self = StObject.set(x, "PublicIPAddress", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointsmsvoiceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VoiceMessageContent extends js.Object {
+trait VoiceMessageContent extends StObject {
   
   var CallInstructionsMessage: js.UndefOr[CallInstructionsMessageType] = js.native
   
@@ -22,36 +23,24 @@ object VoiceMessageContent {
   }
   
   @scala.inline
-  implicit class VoiceMessageContentOps[Self <: VoiceMessageContent] (val x: Self) extends AnyVal {
+  implicit class VoiceMessageContentMutableBuilder[Self <: VoiceMessageContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallInstructionsMessage(value: CallInstructionsMessageType): Self = StObject.set(x, "CallInstructionsMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallInstructionsMessageUndefined: Self = StObject.set(x, "CallInstructionsMessage", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlainTextMessage(value: PlainTextMessageType): Self = StObject.set(x, "PlainTextMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallInstructionsMessage(value: CallInstructionsMessageType): Self = this.set("CallInstructionsMessage", value.asInstanceOf[js.Any])
+    def setPlainTextMessageUndefined: Self = StObject.set(x, "PlainTextMessage", js.undefined)
     
     @scala.inline
-    def deleteCallInstructionsMessage: Self = this.set("CallInstructionsMessage", js.undefined)
+    def setSSMLMessage(value: SSMLMessageType): Self = StObject.set(x, "SSMLMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlainTextMessage(value: PlainTextMessageType): Self = this.set("PlainTextMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlainTextMessage: Self = this.set("PlainTextMessage", js.undefined)
-    
-    @scala.inline
-    def setSSMLMessage(value: SSMLMessageType): Self = this.set("SSMLMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSSMLMessage: Self = this.set("SSMLMessage", js.undefined)
+    def setSSMLMessageUndefined: Self = StObject.set(x, "SSMLMessage", js.undefined)
   }
 }

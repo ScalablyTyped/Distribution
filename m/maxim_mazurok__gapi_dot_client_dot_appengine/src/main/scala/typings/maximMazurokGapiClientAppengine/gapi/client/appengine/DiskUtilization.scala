@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiskUtilization extends js.Object {
+trait DiskUtilization extends StObject {
   
   /** Target bytes read per second. */
   var targetReadBytesPerSecond: js.UndefOr[Double] = js.native
@@ -28,42 +29,30 @@ object DiskUtilization {
   }
   
   @scala.inline
-  implicit class DiskUtilizationOps[Self <: DiskUtilization] (val x: Self) extends AnyVal {
+  implicit class DiskUtilizationMutableBuilder[Self <: DiskUtilization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTargetReadBytesPerSecond(value: Double): Self = StObject.set(x, "targetReadBytesPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTargetReadBytesPerSecondUndefined: Self = StObject.set(x, "targetReadBytesPerSecond", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetReadOpsPerSecond(value: Double): Self = StObject.set(x, "targetReadOpsPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetReadBytesPerSecond(value: Double): Self = this.set("targetReadBytesPerSecond", value.asInstanceOf[js.Any])
+    def setTargetReadOpsPerSecondUndefined: Self = StObject.set(x, "targetReadOpsPerSecond", js.undefined)
     
     @scala.inline
-    def deleteTargetReadBytesPerSecond: Self = this.set("targetReadBytesPerSecond", js.undefined)
+    def setTargetWriteBytesPerSecond(value: Double): Self = StObject.set(x, "targetWriteBytesPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetReadOpsPerSecond(value: Double): Self = this.set("targetReadOpsPerSecond", value.asInstanceOf[js.Any])
+    def setTargetWriteBytesPerSecondUndefined: Self = StObject.set(x, "targetWriteBytesPerSecond", js.undefined)
     
     @scala.inline
-    def deleteTargetReadOpsPerSecond: Self = this.set("targetReadOpsPerSecond", js.undefined)
+    def setTargetWriteOpsPerSecond(value: Double): Self = StObject.set(x, "targetWriteOpsPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetWriteBytesPerSecond(value: Double): Self = this.set("targetWriteBytesPerSecond", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetWriteBytesPerSecond: Self = this.set("targetWriteBytesPerSecond", js.undefined)
-    
-    @scala.inline
-    def setTargetWriteOpsPerSecond(value: Double): Self = this.set("targetWriteOpsPerSecond", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetWriteOpsPerSecond: Self = this.set("targetWriteOpsPerSecond", js.undefined)
+    def setTargetWriteOpsPerSecondUndefined: Self = StObject.set(x, "targetWriteOpsPerSecond", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.agoraRtcSdk.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AEC extends js.Object {
+trait AEC extends StObject {
   
   /**
     * Marks whether to enable acoustic echo cancellation.
@@ -50,36 +51,24 @@ object AEC {
   }
   
   @scala.inline
-  implicit class AECOps[Self <: AEC] (val x: Self) extends AnyVal {
+  implicit class AECMutableBuilder[Self <: AEC] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAEC(value: Boolean): Self = StObject.set(x, "AEC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAECUndefined: Self = StObject.set(x, "AEC", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAGC(value: Boolean): Self = StObject.set(x, "AGC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAEC(value: Boolean): Self = this.set("AEC", value.asInstanceOf[js.Any])
+    def setAGCUndefined: Self = StObject.set(x, "AGC", js.undefined)
     
     @scala.inline
-    def deleteAEC: Self = this.set("AEC", js.undefined)
+    def setANS(value: Boolean): Self = StObject.set(x, "ANS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAGC(value: Boolean): Self = this.set("AGC", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAGC: Self = this.set("AGC", js.undefined)
-    
-    @scala.inline
-    def setANS(value: Boolean): Self = this.set("ANS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteANS: Self = this.set("ANS", js.undefined)
+    def setANSUndefined: Self = StObject.set(x, "ANS", js.undefined)
   }
 }

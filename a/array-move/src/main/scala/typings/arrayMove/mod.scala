@@ -1,12 +1,11 @@
 package typings.arrayMove
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("array-move", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Clones the given `array`, moves the item to a new position in the new array, and then returns the new array. The given `array` is not mutated.
@@ -29,6 +28,8 @@ object mod extends js.Object {
   	//=> ['b', 'a', 'c']
   	```
   	*/
+  @JSImport("array-move", JSImport.Namespace)
+  @js.native
   def apply[ValueType](array: js.Array[ValueType], from: Double, to: Double): js.Array[ValueType] = js.native
   
   /**
@@ -37,5 +38,7 @@ object mod extends js.Object {
   	@param from - Index of item to move. If negative, it will begin that many elements from the end.
   	@param to - Index of where to move the item. If negative, it will begin that many elements from the end.
   	*/
+  @JSImport("array-move", "mutate")
+  @js.native
   def mutate(array: js.Array[_], from: Double, to: Double): Unit = js.native
 }

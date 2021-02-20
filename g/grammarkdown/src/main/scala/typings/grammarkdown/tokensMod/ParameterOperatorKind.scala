@@ -1,5 +1,6 @@
 package typings.grammarkdown.tokensMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.grammarkdown.tokensMod.SyntaxKind.PlusToken
   - typings.grammarkdown.tokensMod.SyntaxKind.TildeToken
 */
-trait ParameterOperatorKind extends js.Object
+trait ParameterOperatorKind extends StObject

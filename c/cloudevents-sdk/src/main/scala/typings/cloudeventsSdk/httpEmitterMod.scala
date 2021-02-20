@@ -4,16 +4,16 @@ import typings.cloudeventsSdk.anon.Mode
 import typings.cloudeventsSdk.anon.Url
 import typings.cloudeventsSdk.cloudeventMod.CloudEvent
 import typings.std.URL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cloudevents-sdk/lib/bindings/http/http_emitter", JSImport.Namespace)
-@js.native
-object httpEmitterMod extends js.Object {
+object httpEmitterMod {
   
+  @JSImport("cloudevents-sdk/lib/bindings/http/http_emitter", "HTTPEmitter")
   @js.native
-  class HTTPEmitter protected () extends js.Object {
+  class HTTPEmitter protected () extends StObject {
     /**
       * Creates a new instance of {HTTPEmitter}. The default emitter uses the 1.0
       * protocol specification in binary mode.
@@ -50,9 +50,16 @@ object httpEmitterMod extends js.Object {
     var url: URL | String = js.native
   }
   /* static members */
-  @js.native
-  object HTTPEmitter extends js.Object {
+  object HTTPEmitter {
     
-    var headers: js.Function = js.native
+    @JSImport("cloudevents-sdk/lib/bindings/http/http_emitter", "HTTPEmitter")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("cloudevents-sdk/lib/bindings/http/http_emitter", "HTTPEmitter.headers")
+    @js.native
+    def headers: js.Function = js.native
+    @scala.inline
+    def headers_=(x: js.Function): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headers")(x.asInstanceOf[js.Any])
   }
 }

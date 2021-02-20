@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRelationalDatabaseMasterUserPasswordRequest extends js.Object {
+trait GetRelationalDatabaseMasterUserPasswordRequest extends StObject {
   
   /**
     * The password version to return. Specifying CURRENT or PREVIOUS returns the current or previous passwords respectively. Specifying PENDING returns the newest version of the password that will rotate to CURRENT. After the PENDING password rotates to CURRENT, the PENDING password is no longer available. Default: CURRENT 
@@ -26,27 +27,15 @@ object GetRelationalDatabaseMasterUserPasswordRequest {
   }
   
   @scala.inline
-  implicit class GetRelationalDatabaseMasterUserPasswordRequestOps[Self <: GetRelationalDatabaseMasterUserPasswordRequest] (val x: Self) extends AnyVal {
+  implicit class GetRelationalDatabaseMasterUserPasswordRequestMutableBuilder[Self <: GetRelationalDatabaseMasterUserPasswordRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPasswordVersion(value: RelationalDatabasePasswordVersion): Self = StObject.set(x, "passwordVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPasswordVersionUndefined: Self = StObject.set(x, "passwordVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRelationalDatabaseName(value: ResourceName): Self = this.set("relationalDatabaseName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPasswordVersion(value: RelationalDatabasePasswordVersion): Self = this.set("passwordVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePasswordVersion: Self = this.set("passwordVersion", js.undefined)
+    def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
   }
 }

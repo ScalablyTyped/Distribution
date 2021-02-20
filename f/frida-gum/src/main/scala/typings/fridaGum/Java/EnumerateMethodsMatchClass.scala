@@ -1,5 +1,6 @@
 package typings.fridaGum.Java
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Class matching query which has one or more matching methods.
   */
 @js.native
-trait EnumerateMethodsMatchClass extends js.Object {
+trait EnumerateMethodsMatchClass extends StObject {
   
   /**
     * One or more matching method names, each followed by signature when
@@ -30,24 +31,12 @@ object EnumerateMethodsMatchClass {
   }
   
   @scala.inline
-  implicit class EnumerateMethodsMatchClassOps[Self <: EnumerateMethodsMatchClass] (val x: Self) extends AnyVal {
+  implicit class EnumerateMethodsMatchClassMutableBuilder[Self <: EnumerateMethodsMatchClass] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMethods(value: Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMethods(value: Array[String]): Self = this.set("methods", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -1,15 +1,15 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Animations/animationRange", JSImport.Namespace)
-@js.native
-object animationRangeMod extends js.Object {
+object animationRangeMod {
   
+  @JSImport("babylonjs/Animations/animationRange", "AnimationRange")
   @js.native
-  class AnimationRange protected () extends js.Object {
+  class AnimationRange protected () extends StObject {
     /**
       * Initializes the range of an animation
       * @param name The name of the animation range

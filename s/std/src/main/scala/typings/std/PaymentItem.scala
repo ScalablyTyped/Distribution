@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaymentItem extends js.Object {
+trait PaymentItem extends StObject {
   
   var amount: PaymentCurrencyAmount = js.native
   
@@ -22,30 +23,18 @@ object PaymentItem {
   }
   
   @scala.inline
-  implicit class PaymentItemOps[Self <: PaymentItem] (val x: Self) extends AnyVal {
+  implicit class PaymentItemMutableBuilder[Self <: PaymentItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: PaymentCurrencyAmount): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabel(value: java.lang.String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPending(value: scala.Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: PaymentCurrencyAmount): Self = this.set("amount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: java.lang.String): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPending(value: scala.Boolean): Self = this.set("pending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePending: Self = this.set("pending", js.undefined)
+    def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
   }
 }

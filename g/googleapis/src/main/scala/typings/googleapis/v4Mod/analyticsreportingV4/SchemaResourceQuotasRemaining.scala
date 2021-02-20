@@ -1,5 +1,6 @@
 package typings.googleapis.v4Mod.analyticsreportingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * completed.
   */
 @js.native
-trait SchemaResourceQuotasRemaining extends js.Object {
+trait SchemaResourceQuotasRemaining extends StObject {
   
   /**
     * Daily resource quota remaining remaining.
@@ -30,30 +31,18 @@ object SchemaResourceQuotasRemaining {
   }
   
   @scala.inline
-  implicit class SchemaResourceQuotasRemainingOps[Self <: SchemaResourceQuotasRemaining] (val x: Self) extends AnyVal {
+  implicit class SchemaResourceQuotasRemainingMutableBuilder[Self <: SchemaResourceQuotasRemaining] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDailyQuotaTokensRemaining(value: Double): Self = StObject.set(x, "dailyQuotaTokensRemaining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDailyQuotaTokensRemainingUndefined: Self = StObject.set(x, "dailyQuotaTokensRemaining", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHourlyQuotaTokensRemaining(value: Double): Self = StObject.set(x, "hourlyQuotaTokensRemaining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDailyQuotaTokensRemaining(value: Double): Self = this.set("dailyQuotaTokensRemaining", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDailyQuotaTokensRemaining: Self = this.set("dailyQuotaTokensRemaining", js.undefined)
-    
-    @scala.inline
-    def setHourlyQuotaTokensRemaining(value: Double): Self = this.set("hourlyQuotaTokensRemaining", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHourlyQuotaTokensRemaining: Self = this.set("hourlyQuotaTokensRemaining", js.undefined)
+    def setHourlyQuotaTokensRemainingUndefined: Self = StObject.set(x, "hourlyQuotaTokensRemaining", js.undefined)
   }
 }

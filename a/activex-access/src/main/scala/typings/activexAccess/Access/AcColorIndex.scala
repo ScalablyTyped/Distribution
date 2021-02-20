@@ -16,6 +16,7 @@ import typings.activexAccess.activexAccessNumbers.`6`
 import typings.activexAccess.activexAccessNumbers.`7`
 import typings.activexAccess.activexAccessNumbers.`8`
 import typings.activexAccess.activexAccessNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +39,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexAccess.activexAccessNumbers.`15`
   - typings.activexAccess.activexAccessNumbers.`11`
 */
-trait AcColorIndex extends js.Object
+trait AcColorIndex extends StObject
 object AcColorIndex {
   
   @scala.inline

@@ -1,12 +1,13 @@
 package typings.sipJs.mod.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Core.TransactionState")
 @js.native
-object TransactionState extends js.Object {
+object TransactionState extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.sipJs.transactionStateMod.TransactionState with String] = js.native

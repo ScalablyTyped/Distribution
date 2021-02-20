@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options for texture filtering
   */
 @js.native
-trait IHDRFilteringOptions extends js.Object {
+trait IHDRFilteringOptions extends StObject {
   
   /**
     * Scales pixel intensity for the input HDR map.
@@ -29,30 +30,18 @@ object IHDRFilteringOptions {
   }
   
   @scala.inline
-  implicit class IHDRFilteringOptionsOps[Self <: IHDRFilteringOptions] (val x: Self) extends AnyVal {
+  implicit class IHDRFilteringOptionsMutableBuilder[Self <: IHDRFilteringOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHdrScale(value: Double): Self = StObject.set(x, "hdrScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHdrScaleUndefined: Self = StObject.set(x, "hdrScale", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHdrScale(value: Double): Self = this.set("hdrScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHdrScale: Self = this.set("hdrScale", js.undefined)
-    
-    @scala.inline
-    def setQuality(value: Double): Self = this.set("quality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuality: Self = this.set("quality", js.undefined)
+    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
   }
 }

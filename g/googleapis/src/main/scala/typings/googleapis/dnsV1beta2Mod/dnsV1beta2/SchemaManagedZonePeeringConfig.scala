@@ -1,11 +1,12 @@
 package typings.googleapis.dnsV1beta2Mod.dnsV1beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaManagedZonePeeringConfig extends js.Object {
+trait SchemaManagedZonePeeringConfig extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
@@ -24,30 +25,18 @@ object SchemaManagedZonePeeringConfig {
   }
   
   @scala.inline
-  implicit class SchemaManagedZonePeeringConfigOps[Self <: SchemaManagedZonePeeringConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaManagedZonePeeringConfigMutableBuilder[Self <: SchemaManagedZonePeeringConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetNetwork(value: SchemaManagedZonePeeringConfigTargetNetwork): Self = StObject.set(x, "targetNetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setTargetNetwork(value: SchemaManagedZonePeeringConfigTargetNetwork): Self = this.set("targetNetwork", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetNetwork: Self = this.set("targetNetwork", js.undefined)
+    def setTargetNetworkUndefined: Self = StObject.set(x, "targetNetwork", js.undefined)
   }
 }

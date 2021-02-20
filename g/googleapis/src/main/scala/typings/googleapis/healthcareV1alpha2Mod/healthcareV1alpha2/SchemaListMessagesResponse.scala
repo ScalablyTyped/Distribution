@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Lists the messages in the specified HL7v2 store.
   */
 @js.native
-trait SchemaListMessagesResponse extends js.Object {
+trait SchemaListMessagesResponse extends StObject {
   
   /**
     * The returned message names. Won&#39;t be more values than the value of
@@ -31,33 +32,21 @@ object SchemaListMessagesResponse {
   }
   
   @scala.inline
-  implicit class SchemaListMessagesResponseOps[Self <: SchemaListMessagesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListMessagesResponseMutableBuilder[Self <: SchemaListMessagesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessages(value: js.Array[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
     @scala.inline
-    def setMessagesVarargs(value: String*): Self = this.set("messages", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: js.Array[String]): Self = this.set("messages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

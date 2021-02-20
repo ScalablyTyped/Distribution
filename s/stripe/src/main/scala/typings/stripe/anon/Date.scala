@@ -1,11 +1,12 @@
 package typings.stripe.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Date extends js.Object {
+trait Date extends StObject {
   
   /**
     * The unix timestamp that Stripe’s terms of service were agreed to by the
@@ -33,33 +34,21 @@ object Date {
   }
   
   @scala.inline
-  implicit class DateOps[Self <: Date] (val x: Self) extends AnyVal {
+  implicit class DateMutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
     
     @scala.inline
-    def setDate(value: Double): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setUser_agent(value: String): Self = StObject.set(x, "user_agent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIp(value: String): Self = this.set("ip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIp: Self = this.set("ip", js.undefined)
-    
-    @scala.inline
-    def setUser_agent(value: String): Self = this.set("user_agent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser_agent: Self = this.set("user_agent", js.undefined)
+    def setUser_agentUndefined: Self = StObject.set(x, "user_agent", js.undefined)
   }
 }

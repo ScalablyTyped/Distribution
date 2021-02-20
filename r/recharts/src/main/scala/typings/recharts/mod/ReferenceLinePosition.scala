@@ -1,5 +1,6 @@
 package typings.recharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.recharts.rechartsStrings.middle
   - typings.recharts.rechartsStrings.end
 */
-trait ReferenceLinePosition extends js.Object
+trait ReferenceLinePosition extends StObject
 object ReferenceLinePosition {
   
   @scala.inline

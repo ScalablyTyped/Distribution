@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.xml.crypto
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,24 +42,12 @@ object XXMLSignature {
   }
   
   @scala.inline
-  implicit class XXMLSignatureOps[Self <: XXMLSignature] (val x: Self) extends AnyVal {
+  implicit class XXMLSignatureMutableBuilder[Self <: XXMLSignature] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGenerate(value: (XXMLSignatureTemplate, XSecurityEnvironment) => XXMLSignatureTemplate): Self = StObject.set(x, "generate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGenerate(value: (XXMLSignatureTemplate, XSecurityEnvironment) => XXMLSignatureTemplate): Self = this.set("generate", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setValidate(value: (XXMLSignatureTemplate, XXMLSecurityContext) => XXMLSignatureTemplate): Self = this.set("validate", js.Any.fromFunction2(value))
+    def setValidate(value: (XXMLSignatureTemplate, XXMLSecurityContext) => XXMLSignatureTemplate): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
   }
 }

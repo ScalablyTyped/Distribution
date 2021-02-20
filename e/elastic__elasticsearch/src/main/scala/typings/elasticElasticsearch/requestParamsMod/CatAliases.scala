@@ -5,6 +5,7 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.closed
 import typings.elasticElasticsearch.elasticElasticsearchStrings.hidden
 import typings.elasticElasticsearch.elasticElasticsearchStrings.none
 import typings.elasticElasticsearch.elasticElasticsearchStrings.open
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,75 +38,63 @@ object CatAliases {
   }
   
   @scala.inline
-  implicit class CatAliasesOps[Self <: CatAliases] (val x: Self) extends AnyVal {
+  implicit class CatAliasesMutableBuilder[Self <: CatAliases] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpand_wildcards(value: open | closed | hidden | none | all): Self = StObject.set(x, "expand_wildcards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpand_wildcardsUndefined: Self = StObject.set(x, "expand_wildcards", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpand_wildcards(value: open | closed | hidden | none | all): Self = this.set("expand_wildcards", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteExpand_wildcards: Self = this.set("expand_wildcards", js.undefined)
+    def setH(value: String | js.Array[String]): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setHUndefined: Self = StObject.set(x, "h", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setHVarargs(value: String*): Self = StObject.set(x, "h", js.Array(value :_*))
     
     @scala.inline
-    def setHVarargs(value: String*): Self = this.set("h", js.Array(value :_*))
+    def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH(value: String | js.Array[String]): Self = this.set("h", value.asInstanceOf[js.Any])
+    def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
     
     @scala.inline
-    def deleteH: Self = this.set("h", js.undefined)
+    def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelp(value: Boolean): Self = this.set("help", value.asInstanceOf[js.Any])
+    def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
     
     @scala.inline
-    def deleteHelp: Self = this.set("help", js.undefined)
+    def setName(value: String | js.Array[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocal(value: Boolean): Self = this.set("local", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLocal: Self = this.set("local", js.undefined)
+    def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
     
     @scala.inline
-    def setNameVarargs(value: String*): Self = this.set("name", js.Array(value :_*))
+    def setS(value: String | js.Array[String]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String | js.Array[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSUndefined: Self = StObject.set(x, "s", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSVarargs(value: String*): Self = StObject.set(x, "s", js.Array(value :_*))
     
     @scala.inline
-    def setSVarargs(value: String*): Self = this.set("s", js.Array(value :_*))
+    def setV(value: Boolean): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS(value: String | js.Array[String]): Self = this.set("s", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS: Self = this.set("s", js.undefined)
-    
-    @scala.inline
-    def setV(value: Boolean): Self = this.set("v", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteV: Self = this.set("v", js.undefined)
+    def setVUndefined: Self = StObject.set(x, "v", js.undefined)
   }
 }

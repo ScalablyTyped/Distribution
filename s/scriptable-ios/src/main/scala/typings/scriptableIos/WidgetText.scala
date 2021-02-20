@@ -1,5 +1,6 @@
 package typings.scriptableIos
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/widgettext
   */
 @js.native
-trait WidgetText extends js.Object {
+trait WidgetText extends StObject {
   
   /**
     * _Center aligns the text._
@@ -143,57 +144,45 @@ object WidgetText {
   }
   
   @scala.inline
-  implicit class WidgetTextOps[Self <: WidgetText] (val x: Self) extends AnyVal {
+  implicit class WidgetTextMutableBuilder[Self <: WidgetText] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenterAlignText(value: () => Unit): Self = StObject.set(x, "centerAlignText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeftAlignText(value: () => Unit): Self = StObject.set(x, "leftAlignText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCenterAlignText(value: () => Unit): Self = this.set("centerAlignText", js.Any.fromFunction0(value))
+    def setLineLimit(value: Double): Self = StObject.set(x, "lineLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: Font): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setMinimumScaleFactor(value: Double): Self = StObject.set(x, "minimumScaleFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftAlignText(value: () => Unit): Self = this.set("leftAlignText", js.Any.fromFunction0(value))
+    def setRightAlignText(value: () => Unit): Self = StObject.set(x, "rightAlignText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLineLimit(value: Double): Self = this.set("lineLimit", value.asInstanceOf[js.Any])
+    def setShadowColor(value: Color): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumScaleFactor(value: Double): Self = this.set("minimumScaleFactor", value.asInstanceOf[js.Any])
+    def setShadowOffset(value: Point): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightAlignText(value: () => Unit): Self = this.set("rightAlignText", js.Any.fromFunction0(value))
+    def setShadowRadius(value: Double): Self = StObject.set(x, "shadowRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowColor(value: Color): Self = this.set("shadowColor", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowOffset(value: Point): Self = this.set("shadowOffset", value.asInstanceOf[js.Any])
+    def setTextColor(value: Color): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowRadius(value: Double): Self = this.set("shadowRadius", value.asInstanceOf[js.Any])
+    def setTextOpacity(value: Double): Self = StObject.set(x, "textOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextColor(value: Color): Self = this.set("textColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextOpacity(value: Double): Self = this.set("textOpacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

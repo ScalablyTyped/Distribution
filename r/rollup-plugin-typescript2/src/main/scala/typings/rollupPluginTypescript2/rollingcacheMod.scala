@@ -1,14 +1,14 @@
 package typings.rollupPluginTypescript2
 
 import typings.rollupPluginTypescript2.icacheMod.ICache
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rollup-plugin-typescript2/dist/rollingcache", JSImport.Namespace)
-@js.native
-object rollingcacheMod extends js.Object {
+object rollingcacheMod {
   
+  @JSImport("rollup-plugin-typescript2/dist/rollingcache", "RollingCache")
   @js.native
   class RollingCache[DataType] protected () extends ICache[DataType] {
     /**

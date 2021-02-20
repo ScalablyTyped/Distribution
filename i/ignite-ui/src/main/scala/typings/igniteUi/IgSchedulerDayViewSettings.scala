@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,36 +40,24 @@ object IgSchedulerDayViewSettings {
   }
   
   @scala.inline
-  implicit class IgSchedulerDayViewSettingsOps[Self <: IgSchedulerDayViewSettings] (val x: Self) extends AnyVal {
+  implicit class IgSchedulerDayViewSettingsMutableBuilder[Self <: IgSchedulerDayViewSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDayViewNumberOfDays(value: Double): Self = StObject.set(x, "dayViewNumberOfDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDayViewNumberOfDaysUndefined: Self = StObject.set(x, "dayViewNumberOfDays", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeSlotInterval(value: String): Self = StObject.set(x, "timeSlotInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayViewNumberOfDays(value: Double): Self = this.set("dayViewNumberOfDays", value.asInstanceOf[js.Any])
+    def setTimeSlotIntervalUndefined: Self = StObject.set(x, "timeSlotInterval", js.undefined)
     
     @scala.inline
-    def deleteDayViewNumberOfDays: Self = this.set("dayViewNumberOfDays", js.undefined)
+    def setWorkingHoursDisplayMode(value: String): Self = StObject.set(x, "workingHoursDisplayMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeSlotInterval(value: String): Self = this.set("timeSlotInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeSlotInterval: Self = this.set("timeSlotInterval", js.undefined)
-    
-    @scala.inline
-    def setWorkingHoursDisplayMode(value: String): Self = this.set("workingHoursDisplayMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkingHoursDisplayMode: Self = this.set("workingHoursDisplayMode", js.undefined)
+    def setWorkingHoursDisplayModeUndefined: Self = StObject.set(x, "workingHoursDisplayMode", js.undefined)
   }
 }

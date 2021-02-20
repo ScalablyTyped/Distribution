@@ -5,13 +5,14 @@ import typings.aureliaDependencyInjection.mod.Container
 import typings.std.DocumentFragment
 import typings.std.Element
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "View")
 @js.native
-class View_ protected () extends js.Object {
+class View_ protected () extends StObject {
   /**
     * Creates a View instance.
     * @param container The container from which the view was created.

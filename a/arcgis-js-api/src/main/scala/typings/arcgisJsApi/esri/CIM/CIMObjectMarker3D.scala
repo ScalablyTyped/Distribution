@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,75 +63,63 @@ object CIMObjectMarker3D {
   }
   
   @scala.inline
-  implicit class CIMObjectMarker3DOps[Self <: CIMObjectMarker3D] (val x: Self) extends AnyVal {
+  implicit class CIMObjectMarker3DMutableBuilder[Self <: CIMObjectMarker3D] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsRestricted(value: Boolean): Self = StObject.set(x, "isRestricted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMObjectMarker3D): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setIsRestrictedUndefined: Self = StObject.set(x, "isRestricted", js.undefined)
     
     @scala.inline
-    def setLODsVarargs(value: CIMObjectMarker3DLOD*): Self = this.set("LODs", js.Array(value :_*))
+    def setLODs(value: js.Array[CIMObjectMarker3DLOD]): Self = StObject.set(x, "LODs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLODs(value: js.Array[CIMObjectMarker3DLOD]): Self = this.set("LODs", value.asInstanceOf[js.Any])
+    def setLODsUndefined: Self = StObject.set(x, "LODs", js.undefined)
     
     @scala.inline
-    def deleteLODs: Self = this.set("LODs", js.undefined)
+    def setLODsVarargs(value: CIMObjectMarker3DLOD*): Self = StObject.set(x, "LODs", js.Array(value :_*))
     
     @scala.inline
-    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setModelURI(value: String): Self = StObject.set(x, "modelURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDepth: Self = this.set("depth", js.undefined)
+    def setModelURIUndefined: Self = StObject.set(x, "modelURI", js.undefined)
     
     @scala.inline
-    def setIsRestricted(value: Boolean): Self = this.set("isRestricted", value.asInstanceOf[js.Any])
+    def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsRestricted: Self = this.set("isRestricted", js.undefined)
+    def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
     
     @scala.inline
-    def setModelURI(value: String): Self = this.set("modelURI", value.asInstanceOf[js.Any])
+    def setTintColor(value: js.Array[Double]): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModelURI: Self = this.set("modelURI", js.undefined)
+    def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     
     @scala.inline
-    def setThumbnail(value: String): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
+    def setTintColorVarargs(value: Double*): Self = StObject.set(x, "tintColor", js.Array(value :_*))
     
     @scala.inline
-    def deleteThumbnail: Self = this.set("thumbnail", js.undefined)
+    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMObjectMarker3D): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTintColorVarargs(value: Double*): Self = this.set("tintColor", js.Array(value :_*))
+    def setUseAnchorPoint(value: Boolean): Self = StObject.set(x, "useAnchorPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTintColor(value: js.Array[Double]): Self = this.set("tintColor", value.asInstanceOf[js.Any])
+    def setUseAnchorPointUndefined: Self = StObject.set(x, "useAnchorPoint", js.undefined)
     
     @scala.inline
-    def deleteTintColor: Self = this.set("tintColor", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseAnchorPoint(value: Boolean): Self = this.set("useAnchorPoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseAnchorPoint: Self = this.set("useAnchorPoint", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

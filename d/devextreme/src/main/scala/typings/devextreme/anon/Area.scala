@@ -5,12 +5,13 @@ import typings.devextreme.mod.DevExpress.data.PivotGridDataSourceField
 import typings.devextreme.mod.DevExpress.events.event
 import typings.devextreme.mod.DevExpress.ui.dxPivotGrid
 import typings.devextreme.mod.DevExpress.ui.dxPivotGridPivotGridCell
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Area extends js.Object {
+trait Area extends StObject {
   
   var area: js.UndefOr[String] = js.native
   
@@ -47,105 +48,93 @@ object Area {
   }
   
   @scala.inline
-  implicit class AreaOps[Self <: Area] (val x: Self) extends AnyVal {
+  implicit class AreaMutableBuilder[Self <: Area] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArea(value: String): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArea(value: String): Self = this.set("area", value.asInstanceOf[js.Any])
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def deleteArea: Self = this.set("area", js.undefined)
+    def setCell(value: dxPivotGridPivotGridCell): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    def setCellElement(value: dxElement): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setCellElementUndefined: Self = StObject.set(x, "cellElement", js.undefined)
     
     @scala.inline
-    def setCell(value: dxPivotGridPivotGridCell): Self = this.set("cell", value.asInstanceOf[js.Any])
+    def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
     
     @scala.inline
-    def deleteCell: Self = this.set("cell", js.undefined)
+    def setColumnFields(value: js.Array[PivotGridDataSourceField]): Self = StObject.set(x, "columnFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellElement(value: dxElement): Self = this.set("cellElement", value.asInstanceOf[js.Any])
+    def setColumnFieldsUndefined: Self = StObject.set(x, "columnFields", js.undefined)
     
     @scala.inline
-    def deleteCellElement: Self = this.set("cellElement", js.undefined)
+    def setColumnFieldsVarargs(value: PivotGridDataSourceField*): Self = StObject.set(x, "columnFields", js.Array(value :_*))
     
     @scala.inline
-    def setColumnFieldsVarargs(value: PivotGridDataSourceField*): Self = this.set("columnFields", js.Array(value :_*))
+    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnFields(value: js.Array[PivotGridDataSourceField]): Self = this.set("columnFields", value.asInstanceOf[js.Any])
+    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
     @scala.inline
-    def deleteColumnFields: Self = this.set("columnFields", js.undefined)
+    def setComponent(value: dxPivotGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     @scala.inline
-    def deleteColumnIndex: Self = this.set("columnIndex", js.undefined)
+    def setDataFields(value: js.Array[PivotGridDataSourceField]): Self = StObject.set(x, "dataFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponent(value: dxPivotGrid): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setDataFieldsUndefined: Self = StObject.set(x, "dataFields", js.undefined)
     
     @scala.inline
-    def deleteComponent: Self = this.set("component", js.undefined)
+    def setDataFieldsVarargs(value: PivotGridDataSourceField*): Self = StObject.set(x, "dataFields", js.Array(value :_*))
     
     @scala.inline
-    def setDataFieldsVarargs(value: PivotGridDataSourceField*): Self = this.set("dataFields", js.Array(value :_*))
+    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFields(value: js.Array[PivotGridDataSourceField]): Self = this.set("dataFields", value.asInstanceOf[js.Any])
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def deleteDataFields: Self = this.set("dataFields", js.undefined)
+    def setEvent(value: event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: dxElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
+    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: event): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setRowFields(value: js.Array[PivotGridDataSourceField]): Self = StObject.set(x, "rowFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setRowFieldsUndefined: Self = StObject.set(x, "rowFields", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setRowFieldsVarargs(value: PivotGridDataSourceField*): Self = StObject.set(x, "rowFields", js.Array(value :_*))
     
     @scala.inline
-    def setRowFieldsVarargs(value: PivotGridDataSourceField*): Self = this.set("rowFields", js.Array(value :_*))
+    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowFields(value: js.Array[PivotGridDataSourceField]): Self = this.set("rowFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowFields: Self = this.set("rowFields", js.undefined)
-    
-    @scala.inline
-    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
+    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
   }
 }

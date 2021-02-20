@@ -8,6 +8,7 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,16 +45,20 @@ class BinaryRequestHandling protected () extends RequestHandling {
   
   def expression_=(newValue: String): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryRequestHandling")
-@js.native
-object BinaryRequestHandling extends js.Object {
+object BinaryRequestHandling {
+  
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryRequestHandling")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new BinaryRequestHandling instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryRequestHandling.create")
+  @js.native
   def create(model: IModel): BinaryRequestHandling = js.native
   
   /**
@@ -64,6 +69,9 @@ object BinaryRequestHandling extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryRequestHandling.createInRestCallActionUnderRequestHandling")
+  @js.native
   def createInRestCallActionUnderRequestHandling(container: RestCallAction): BinaryRequestHandling = js.native
   
   /**
@@ -74,6 +82,9 @@ object BinaryRequestHandling extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryRequestHandling.createInWebServiceCallActionUnderRequestBodyHandling")
+  @js.native
   def createInWebServiceCallActionUnderRequestBodyHandling(container: WebServiceCallAction): BinaryRequestHandling = js.native
   
   /**
@@ -84,9 +95,22 @@ object BinaryRequestHandling extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryRequestHandling.createInWebServiceCallActionUnderRequestHeaderHandling")
+  @js.native
   def createInWebServiceCallActionUnderRequestHeaderHandling(container: WebServiceCallAction): BinaryRequestHandling = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryRequestHandling.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryRequestHandling.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

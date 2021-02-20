@@ -4,14 +4,15 @@ import typings.formatjsEcma402Abstract.anon.`2`
 import typings.formatjsEcma402Abstract.relativeTimeMod.RelativeTimeFormat
 import typings.formatjsEcma402Abstract.relativeTimeMod.RelativeTimeFormattableUnit
 import typings.formatjsEcma402Abstract.relativeTimeMod.RelativeTimePart
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@formatjs/ecma402-abstract/lib/RelativeTimeFormat/PartitionRelativeTimePattern", JSImport.Namespace)
-@js.native
-object partitionRelativeTimePatternMod extends js.Object {
+object partitionRelativeTimePatternMod {
   
+  @JSImport("@formatjs/ecma402-abstract/lib/RelativeTimeFormat/PartitionRelativeTimePattern", "PartitionRelativeTimePattern")
+  @js.native
   def PartitionRelativeTimePattern(
     rtf: RelativeTimeFormat,
     value: Double,

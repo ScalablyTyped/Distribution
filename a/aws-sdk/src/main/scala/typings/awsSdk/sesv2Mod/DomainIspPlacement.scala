@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainIspPlacement extends js.Object {
+trait DomainIspPlacement extends StObject {
   
   /**
     * The percentage of messages that were sent from the selected domain to the specified email provider that arrived in recipients' inboxes.
@@ -41,48 +42,36 @@ object DomainIspPlacement {
   }
   
   @scala.inline
-  implicit class DomainIspPlacementOps[Self <: DomainIspPlacement] (val x: Self) extends AnyVal {
+  implicit class DomainIspPlacementMutableBuilder[Self <: DomainIspPlacement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInboxPercentage(value: Percentage): Self = StObject.set(x, "InboxPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInboxPercentageUndefined: Self = StObject.set(x, "InboxPercentage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInboxRawCount(value: Volume): Self = StObject.set(x, "InboxRawCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInboxPercentage(value: Percentage): Self = this.set("InboxPercentage", value.asInstanceOf[js.Any])
+    def setInboxRawCountUndefined: Self = StObject.set(x, "InboxRawCount", js.undefined)
     
     @scala.inline
-    def deleteInboxPercentage: Self = this.set("InboxPercentage", js.undefined)
+    def setIspName(value: IspName): Self = StObject.set(x, "IspName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInboxRawCount(value: Volume): Self = this.set("InboxRawCount", value.asInstanceOf[js.Any])
+    def setIspNameUndefined: Self = StObject.set(x, "IspName", js.undefined)
     
     @scala.inline
-    def deleteInboxRawCount: Self = this.set("InboxRawCount", js.undefined)
+    def setSpamPercentage(value: Percentage): Self = StObject.set(x, "SpamPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIspName(value: IspName): Self = this.set("IspName", value.asInstanceOf[js.Any])
+    def setSpamPercentageUndefined: Self = StObject.set(x, "SpamPercentage", js.undefined)
     
     @scala.inline
-    def deleteIspName: Self = this.set("IspName", js.undefined)
+    def setSpamRawCount(value: Volume): Self = StObject.set(x, "SpamRawCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpamPercentage(value: Percentage): Self = this.set("SpamPercentage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpamPercentage: Self = this.set("SpamPercentage", js.undefined)
-    
-    @scala.inline
-    def setSpamRawCount(value: Volume): Self = this.set("SpamRawCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpamRawCount: Self = this.set("SpamRawCount", js.undefined)
+    def setSpamRawCountUndefined: Self = StObject.set(x, "SpamRawCount", js.undefined)
   }
 }

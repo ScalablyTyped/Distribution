@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.apiV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartHomeV1SyncDeviceInfo extends js.Object {
+trait SmartHomeV1SyncDeviceInfo extends StObject {
   
   var hwVersion: String = js.native
   
@@ -24,30 +25,18 @@ object SmartHomeV1SyncDeviceInfo {
   }
   
   @scala.inline
-  implicit class SmartHomeV1SyncDeviceInfoOps[Self <: SmartHomeV1SyncDeviceInfo] (val x: Self) extends AnyVal {
+  implicit class SmartHomeV1SyncDeviceInfoMutableBuilder[Self <: SmartHomeV1SyncDeviceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHwVersion(value: String): Self = StObject.set(x, "hwVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHwVersion(value: String): Self = this.set("hwVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSwVersion(value: String): Self = this.set("swVersion", value.asInstanceOf[js.Any])
+    def setSwVersion(value: String): Self = StObject.set(x, "swVersion", value.asInstanceOf[js.Any])
   }
 }

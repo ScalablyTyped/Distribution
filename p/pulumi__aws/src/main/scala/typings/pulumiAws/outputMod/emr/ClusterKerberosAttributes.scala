@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.emr
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterKerberosAttributes extends js.Object {
+trait ClusterKerberosAttributes extends StObject {
   
   /**
     * The Active Directory password for `adDomainJoinUser`. This provider cannot perform drift detection of this configuration.
@@ -41,42 +42,30 @@ object ClusterKerberosAttributes {
   }
   
   @scala.inline
-  implicit class ClusterKerberosAttributesOps[Self <: ClusterKerberosAttributes] (val x: Self) extends AnyVal {
+  implicit class ClusterKerberosAttributesMutableBuilder[Self <: ClusterKerberosAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdDomainJoinPassword(value: String): Self = StObject.set(x, "adDomainJoinPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdDomainJoinPasswordUndefined: Self = StObject.set(x, "adDomainJoinPassword", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdDomainJoinUser(value: String): Self = StObject.set(x, "adDomainJoinUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKdcAdminPassword(value: String): Self = this.set("kdcAdminPassword", value.asInstanceOf[js.Any])
+    def setAdDomainJoinUserUndefined: Self = StObject.set(x, "adDomainJoinUser", js.undefined)
     
     @scala.inline
-    def setRealm(value: String): Self = this.set("realm", value.asInstanceOf[js.Any])
+    def setCrossRealmTrustPrincipalPassword(value: String): Self = StObject.set(x, "crossRealmTrustPrincipalPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdDomainJoinPassword(value: String): Self = this.set("adDomainJoinPassword", value.asInstanceOf[js.Any])
+    def setCrossRealmTrustPrincipalPasswordUndefined: Self = StObject.set(x, "crossRealmTrustPrincipalPassword", js.undefined)
     
     @scala.inline
-    def deleteAdDomainJoinPassword: Self = this.set("adDomainJoinPassword", js.undefined)
+    def setKdcAdminPassword(value: String): Self = StObject.set(x, "kdcAdminPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdDomainJoinUser(value: String): Self = this.set("adDomainJoinUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAdDomainJoinUser: Self = this.set("adDomainJoinUser", js.undefined)
-    
-    @scala.inline
-    def setCrossRealmTrustPrincipalPassword(value: String): Self = this.set("crossRealmTrustPrincipalPassword", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCrossRealmTrustPrincipalPassword: Self = this.set("crossRealmTrustPrincipalPassword", js.undefined)
+    def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
   }
 }

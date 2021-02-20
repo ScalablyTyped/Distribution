@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventDescription extends js.Object {
+trait EventDescription extends StObject {
   
   /**
     * The application associated with the event.
@@ -61,72 +62,60 @@ object EventDescription {
   }
   
   @scala.inline
-  implicit class EventDescriptionOps[Self <: EventDescription] (val x: Self) extends AnyVal {
+  implicit class EventDescriptionMutableBuilder[Self <: EventDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
     
     @scala.inline
-    def deleteApplicationName: Self = this.set("ApplicationName", js.undefined)
+    def setEventDate(value: EventDate): Self = StObject.set(x, "EventDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentName(value: EnvironmentName): Self = this.set("EnvironmentName", value.asInstanceOf[js.Any])
+    def setEventDateUndefined: Self = StObject.set(x, "EventDate", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentName: Self = this.set("EnvironmentName", js.undefined)
+    def setMessage(value: EventMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventDate(value: EventDate): Self = this.set("EventDate", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
     @scala.inline
-    def deleteEventDate: Self = this.set("EventDate", js.undefined)
+    def setPlatformArn(value: PlatformArn): Self = StObject.set(x, "PlatformArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: EventMessage): Self = this.set("Message", value.asInstanceOf[js.Any])
+    def setPlatformArnUndefined: Self = StObject.set(x, "PlatformArn", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("Message", js.undefined)
+    def setRequestId(value: RequestId): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformArn(value: PlatformArn): Self = this.set("PlatformArn", value.asInstanceOf[js.Any])
+    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
     @scala.inline
-    def deletePlatformArn: Self = this.set("PlatformArn", js.undefined)
+    def setSeverity(value: EventSeverity): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestId(value: RequestId): Self = this.set("RequestId", value.asInstanceOf[js.Any])
+    def setSeverityUndefined: Self = StObject.set(x, "Severity", js.undefined)
     
     @scala.inline
-    def deleteRequestId: Self = this.set("RequestId", js.undefined)
+    def setTemplateName(value: ConfigurationTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeverity(value: EventSeverity): Self = this.set("Severity", value.asInstanceOf[js.Any])
+    def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
     
     @scala.inline
-    def deleteSeverity: Self = this.set("Severity", js.undefined)
+    def setVersionLabel(value: VersionLabel): Self = StObject.set(x, "VersionLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateName(value: ConfigurationTemplateName): Self = this.set("TemplateName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateName: Self = this.set("TemplateName", js.undefined)
-    
-    @scala.inline
-    def setVersionLabel(value: VersionLabel): Self = this.set("VersionLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionLabel: Self = this.set("VersionLabel", js.undefined)
+    def setVersionLabelUndefined: Self = StObject.set(x, "VersionLabel", js.undefined)
   }
 }

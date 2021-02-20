@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetCrawlerMetricsResponse extends js.Object {
+trait GetCrawlerMetricsResponse extends StObject {
   
   /**
     * A list of metrics for the specified crawler.
@@ -26,33 +27,21 @@ object GetCrawlerMetricsResponse {
   }
   
   @scala.inline
-  implicit class GetCrawlerMetricsResponseOps[Self <: GetCrawlerMetricsResponse] (val x: Self) extends AnyVal {
+  implicit class GetCrawlerMetricsResponseMutableBuilder[Self <: GetCrawlerMetricsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCrawlerMetricsList(value: CrawlerMetricsList): Self = StObject.set(x, "CrawlerMetricsList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrawlerMetricsListUndefined: Self = StObject.set(x, "CrawlerMetricsList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrawlerMetricsListVarargs(value: CrawlerMetrics*): Self = StObject.set(x, "CrawlerMetricsList", js.Array(value :_*))
     
     @scala.inline
-    def setCrawlerMetricsListVarargs(value: CrawlerMetrics*): Self = this.set("CrawlerMetricsList", js.Array(value :_*))
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrawlerMetricsList(value: CrawlerMetricsList): Self = this.set("CrawlerMetricsList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCrawlerMetricsList: Self = this.set("CrawlerMetricsList", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

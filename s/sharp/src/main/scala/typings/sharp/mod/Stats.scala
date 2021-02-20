@@ -1,12 +1,13 @@
 package typings.sharp.mod
 
 import typings.sharp.anon.B
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Stats extends js.Object {
+trait Stats extends StObject {
   
   /** Array of channel statistics for each channel in the image. */
   var channels: js.Array[ChannelStats] = js.native
@@ -38,36 +39,24 @@ object Stats {
   }
   
   @scala.inline
-  implicit class StatsOps[Self <: Stats] (val x: Self) extends AnyVal {
+  implicit class StatsMutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannels(value: js.Array[ChannelStats]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelsVarargs(value: ChannelStats*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDominant(value: B): Self = StObject.set(x, "dominant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelsVarargs(value: ChannelStats*): Self = this.set("channels", js.Array(value :_*))
+    def setEntropy(value: Double): Self = StObject.set(x, "entropy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannels(value: js.Array[ChannelStats]): Self = this.set("channels", value.asInstanceOf[js.Any])
+    def setIsOpaque(value: Boolean): Self = StObject.set(x, "isOpaque", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDominant(value: B): Self = this.set("dominant", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEntropy(value: Double): Self = this.set("entropy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsOpaque(value: Boolean): Self = this.set("isOpaque", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSharpness(value: Double): Self = this.set("sharpness", value.asInstanceOf[js.Any])
+    def setSharpness(value: Double): Self = StObject.set(x, "sharpness", value.asInstanceOf[js.Any])
   }
 }

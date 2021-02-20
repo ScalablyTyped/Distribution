@@ -1,11 +1,12 @@
 package typings.reBase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait removeFromCollectionOptions extends js.Object {
+trait removeFromCollectionOptions extends StObject {
   
   /**
     * A function that receives the created ref as its only argument. You
@@ -23,24 +24,12 @@ object removeFromCollectionOptions {
   }
   
   @scala.inline
-  implicit class removeFromCollectionOptionsOps[Self <: removeFromCollectionOptions] (val x: Self) extends AnyVal {
+  implicit class removeFromCollectionOptionsMutableBuilder[Self <: removeFromCollectionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQuery(value: () => Unit): Self = StObject.set(x, "query", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQuery(value: () => Unit): Self = this.set("query", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

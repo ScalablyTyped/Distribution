@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ScaleIOVolumeSource represents a persistent ScaleIO volume
   */
 @js.native
-trait ScaleIOVolumeSource extends js.Object {
+trait ScaleIOVolumeSource extends StObject {
   
   /**
     * Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Default is "xfs".
@@ -70,69 +71,57 @@ object ScaleIOVolumeSource {
   }
   
   @scala.inline
-  implicit class ScaleIOVolumeSourceOps[Self <: ScaleIOVolumeSource] (val x: Self) extends AnyVal {
+  implicit class ScaleIOVolumeSourceMutableBuilder[Self <: ScaleIOVolumeSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGateway(value: Input[String]): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGateway(value: Input[String]): Self = this.set("gateway", value.asInstanceOf[js.Any])
+    def setProtectionDomain(value: Input[String]): Self = StObject.set(x, "protectionDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretRef(value: Input[LocalObjectReference]): Self = this.set("secretRef", value.asInstanceOf[js.Any])
+    def setProtectionDomainUndefined: Self = StObject.set(x, "protectionDomain", js.undefined)
     
     @scala.inline
-    def setSystem(value: Input[String]): Self = this.set("system", value.asInstanceOf[js.Any])
+    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFsType(value: Input[String]): Self = this.set("fsType", value.asInstanceOf[js.Any])
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def deleteFsType: Self = this.set("fsType", js.undefined)
+    def setSecretRef(value: Input[LocalObjectReference]): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtectionDomain(value: Input[String]): Self = this.set("protectionDomain", value.asInstanceOf[js.Any])
+    def setSslEnabled(value: Input[Boolean]): Self = StObject.set(x, "sslEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProtectionDomain: Self = this.set("protectionDomain", js.undefined)
+    def setSslEnabledUndefined: Self = StObject.set(x, "sslEnabled", js.undefined)
     
     @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setStorageMode(value: Input[String]): Self = StObject.set(x, "storageMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setStorageModeUndefined: Self = StObject.set(x, "storageMode", js.undefined)
     
     @scala.inline
-    def setSslEnabled(value: Input[Boolean]): Self = this.set("sslEnabled", value.asInstanceOf[js.Any])
+    def setStoragePool(value: Input[String]): Self = StObject.set(x, "storagePool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSslEnabled: Self = this.set("sslEnabled", js.undefined)
+    def setStoragePoolUndefined: Self = StObject.set(x, "storagePool", js.undefined)
     
     @scala.inline
-    def setStorageMode(value: Input[String]): Self = this.set("storageMode", value.asInstanceOf[js.Any])
+    def setSystem(value: Input[String]): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStorageMode: Self = this.set("storageMode", js.undefined)
+    def setVolumeName(value: Input[String]): Self = StObject.set(x, "volumeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoragePool(value: Input[String]): Self = this.set("storagePool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoragePool: Self = this.set("storagePool", js.undefined)
-    
-    @scala.inline
-    def setVolumeName(value: Input[String]): Self = this.set("volumeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeName: Self = this.set("volumeName", js.undefined)
+    def setVolumeNameUndefined: Self = StObject.set(x, "volumeName", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetInstances extends js.Object {
+trait TargetInstances extends StObject {
   
   /**
     * The names of one or more Auto Scaling groups to identify a replacement environment for a blue/green deployment.
@@ -31,42 +32,30 @@ object TargetInstances {
   }
   
   @scala.inline
-  implicit class TargetInstancesOps[Self <: TargetInstances] (val x: Self) extends AnyVal {
+  implicit class TargetInstancesMutableBuilder[Self <: TargetInstances] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoScalingGroups(value: AutoScalingGroupNameList): Self = StObject.set(x, "autoScalingGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoScalingGroupsUndefined: Self = StObject.set(x, "autoScalingGroups", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoScalingGroupsVarargs(value: AutoScalingGroupName*): Self = StObject.set(x, "autoScalingGroups", js.Array(value :_*))
     
     @scala.inline
-    def setAutoScalingGroupsVarargs(value: AutoScalingGroupName*): Self = this.set("autoScalingGroups", js.Array(value :_*))
+    def setEc2TagSet(value: EC2TagSet): Self = StObject.set(x, "ec2TagSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScalingGroups(value: AutoScalingGroupNameList): Self = this.set("autoScalingGroups", value.asInstanceOf[js.Any])
+    def setEc2TagSetUndefined: Self = StObject.set(x, "ec2TagSet", js.undefined)
     
     @scala.inline
-    def deleteAutoScalingGroups: Self = this.set("autoScalingGroups", js.undefined)
+    def setTagFilters(value: EC2TagFilterList): Self = StObject.set(x, "tagFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEc2TagSet(value: EC2TagSet): Self = this.set("ec2TagSet", value.asInstanceOf[js.Any])
+    def setTagFiltersUndefined: Self = StObject.set(x, "tagFilters", js.undefined)
     
     @scala.inline
-    def deleteEc2TagSet: Self = this.set("ec2TagSet", js.undefined)
-    
-    @scala.inline
-    def setTagFiltersVarargs(value: EC2TagFilter*): Self = this.set("tagFilters", js.Array(value :_*))
-    
-    @scala.inline
-    def setTagFilters(value: EC2TagFilterList): Self = this.set("tagFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagFilters: Self = this.set("tagFilters", js.undefined)
+    def setTagFiltersVarargs(value: EC2TagFilter*): Self = StObject.set(x, "tagFilters", js.Array(value :_*))
   }
 }

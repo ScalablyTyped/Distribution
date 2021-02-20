@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -235,282 +236,270 @@ object QuestionnaireItem {
   }
   
   @scala.inline
-  implicit class QuestionnaireItemOps[Self <: QuestionnaireItem] (val x: Self) extends AnyVal {
+  implicit class QuestionnaireItemMutableBuilder[Self <: QuestionnaireItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: js.Array[Coding]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodeVarargs(value: Coding*): Self = StObject.set(x, "code", js.Array(value :_*))
     
     @scala.inline
-    def setLinkId(value: String): Self = this.set("linkId", value.asInstanceOf[js.Any])
+    def setDefinition(value: uri): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
     @scala.inline
-    def set_definition(value: Element): Self = this.set("_definition", value.asInstanceOf[js.Any])
+    def setEnableWhen(value: js.Array[QuestionnaireItemEnableWhen]): Self = StObject.set(x, "enableWhen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_definition: Self = this.set("_definition", js.undefined)
+    def setEnableWhenUndefined: Self = StObject.set(x, "enableWhen", js.undefined)
     
     @scala.inline
-    def set_initialBoolean(value: Element): Self = this.set("_initialBoolean", value.asInstanceOf[js.Any])
+    def setEnableWhenVarargs(value: QuestionnaireItemEnableWhen*): Self = StObject.set(x, "enableWhen", js.Array(value :_*))
     
     @scala.inline
-    def delete_initialBoolean: Self = this.set("_initialBoolean", js.undefined)
+    def setInitialAttachment(value: Attachment): Self = StObject.set(x, "initialAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_initialDate(value: Element): Self = this.set("_initialDate", value.asInstanceOf[js.Any])
+    def setInitialAttachmentUndefined: Self = StObject.set(x, "initialAttachment", js.undefined)
     
     @scala.inline
-    def delete_initialDate: Self = this.set("_initialDate", js.undefined)
+    def setInitialBoolean(value: Boolean): Self = StObject.set(x, "initialBoolean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_initialDateTime(value: Element): Self = this.set("_initialDateTime", value.asInstanceOf[js.Any])
+    def setInitialBooleanUndefined: Self = StObject.set(x, "initialBoolean", js.undefined)
     
     @scala.inline
-    def delete_initialDateTime: Self = this.set("_initialDateTime", js.undefined)
+    def setInitialCoding(value: Coding): Self = StObject.set(x, "initialCoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_initialDecimal(value: Element): Self = this.set("_initialDecimal", value.asInstanceOf[js.Any])
+    def setInitialCodingUndefined: Self = StObject.set(x, "initialCoding", js.undefined)
     
     @scala.inline
-    def delete_initialDecimal: Self = this.set("_initialDecimal", js.undefined)
+    def setInitialDate(value: date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_initialInteger(value: Element): Self = this.set("_initialInteger", value.asInstanceOf[js.Any])
+    def setInitialDateTime(value: dateTime): Self = StObject.set(x, "initialDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_initialInteger: Self = this.set("_initialInteger", js.undefined)
+    def setInitialDateTimeUndefined: Self = StObject.set(x, "initialDateTime", js.undefined)
     
     @scala.inline
-    def set_initialString(value: Element): Self = this.set("_initialString", value.asInstanceOf[js.Any])
+    def setInitialDateUndefined: Self = StObject.set(x, "initialDate", js.undefined)
     
     @scala.inline
-    def delete_initialString: Self = this.set("_initialString", js.undefined)
+    def setInitialDecimal(value: decimal): Self = StObject.set(x, "initialDecimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_initialTime(value: Element): Self = this.set("_initialTime", value.asInstanceOf[js.Any])
+    def setInitialDecimalUndefined: Self = StObject.set(x, "initialDecimal", js.undefined)
     
     @scala.inline
-    def delete_initialTime: Self = this.set("_initialTime", js.undefined)
+    def setInitialInteger(value: integer): Self = StObject.set(x, "initialInteger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_initialUri(value: Element): Self = this.set("_initialUri", value.asInstanceOf[js.Any])
+    def setInitialIntegerUndefined: Self = StObject.set(x, "initialInteger", js.undefined)
     
     @scala.inline
-    def delete_initialUri: Self = this.set("_initialUri", js.undefined)
+    def setInitialQuantity(value: Quantity): Self = StObject.set(x, "initialQuantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_linkId(value: Element): Self = this.set("_linkId", value.asInstanceOf[js.Any])
+    def setInitialQuantityUndefined: Self = StObject.set(x, "initialQuantity", js.undefined)
     
     @scala.inline
-    def delete_linkId: Self = this.set("_linkId", js.undefined)
+    def setInitialReference(value: Reference): Self = StObject.set(x, "initialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_maxLength(value: Element): Self = this.set("_maxLength", value.asInstanceOf[js.Any])
+    def setInitialReferenceUndefined: Self = StObject.set(x, "initialReference", js.undefined)
     
     @scala.inline
-    def delete_maxLength: Self = this.set("_maxLength", js.undefined)
+    def setInitialString(value: String): Self = StObject.set(x, "initialString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_prefix(value: Element): Self = this.set("_prefix", value.asInstanceOf[js.Any])
+    def setInitialStringUndefined: Self = StObject.set(x, "initialString", js.undefined)
     
     @scala.inline
-    def delete_prefix: Self = this.set("_prefix", js.undefined)
+    def setInitialTime(value: time): Self = StObject.set(x, "initialTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_readOnly(value: Element): Self = this.set("_readOnly", value.asInstanceOf[js.Any])
+    def setInitialTimeUndefined: Self = StObject.set(x, "initialTime", js.undefined)
     
     @scala.inline
-    def delete_readOnly: Self = this.set("_readOnly", js.undefined)
+    def setInitialUri(value: uri): Self = StObject.set(x, "initialUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_repeats(value: Element): Self = this.set("_repeats", value.asInstanceOf[js.Any])
+    def setInitialUriUndefined: Self = StObject.set(x, "initialUri", js.undefined)
     
     @scala.inline
-    def delete_repeats: Self = this.set("_repeats", js.undefined)
+    def setItem(value: js.Array[QuestionnaireItem]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_required(value: Element): Self = this.set("_required", value.asInstanceOf[js.Any])
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
     @scala.inline
-    def delete_required: Self = this.set("_required", js.undefined)
+    def setItemVarargs(value: QuestionnaireItem*): Self = StObject.set(x, "item", js.Array(value :_*))
     
     @scala.inline
-    def set_text(value: Element): Self = this.set("_text", value.asInstanceOf[js.Any])
+    def setLinkId(value: String): Self = StObject.set(x, "linkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_text: Self = this.set("_text", js.undefined)
+    def setMaxLength(value: integer): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
     @scala.inline
-    def delete_type: Self = this.set("_type", js.undefined)
+    def setOption(value: js.Array[QuestionnaireItemOption]): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeVarargs(value: Coding*): Self = this.set("code", js.Array(value :_*))
+    def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
     
     @scala.inline
-    def setCode(value: js.Array[Coding]): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setOptionVarargs(value: QuestionnaireItemOption*): Self = StObject.set(x, "option", js.Array(value :_*))
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setOptions(value: Reference): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinition(value: uri): Self = this.set("definition", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteDefinition: Self = this.set("definition", js.undefined)
+    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableWhenVarargs(value: QuestionnaireItemEnableWhen*): Self = this.set("enableWhen", js.Array(value :_*))
+    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
     @scala.inline
-    def setEnableWhen(value: js.Array[QuestionnaireItemEnableWhen]): Self = this.set("enableWhen", value.asInstanceOf[js.Any])
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnableWhen: Self = this.set("enableWhen", js.undefined)
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def setInitialAttachment(value: Attachment): Self = this.set("initialAttachment", value.asInstanceOf[js.Any])
+    def setRepeats(value: Boolean): Self = StObject.set(x, "repeats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitialAttachment: Self = this.set("initialAttachment", js.undefined)
+    def setRepeatsUndefined: Self = StObject.set(x, "repeats", js.undefined)
     
     @scala.inline
-    def setInitialBoolean(value: Boolean): Self = this.set("initialBoolean", value.asInstanceOf[js.Any])
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitialBoolean: Self = this.set("initialBoolean", js.undefined)
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def setInitialCoding(value: Coding): Self = this.set("initialCoding", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitialCoding: Self = this.set("initialCoding", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def setInitialDate(value: date): Self = this.set("initialDate", value.asInstanceOf[js.Any])
+    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitialDate: Self = this.set("initialDate", js.undefined)
+    def set_definition(value: Element): Self = StObject.set(x, "_definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialDateTime(value: dateTime): Self = this.set("initialDateTime", value.asInstanceOf[js.Any])
+    def set_definitionUndefined: Self = StObject.set(x, "_definition", js.undefined)
     
     @scala.inline
-    def deleteInitialDateTime: Self = this.set("initialDateTime", js.undefined)
+    def set_initialBoolean(value: Element): Self = StObject.set(x, "_initialBoolean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialDecimal(value: decimal): Self = this.set("initialDecimal", value.asInstanceOf[js.Any])
+    def set_initialBooleanUndefined: Self = StObject.set(x, "_initialBoolean", js.undefined)
     
     @scala.inline
-    def deleteInitialDecimal: Self = this.set("initialDecimal", js.undefined)
+    def set_initialDate(value: Element): Self = StObject.set(x, "_initialDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialInteger(value: integer): Self = this.set("initialInteger", value.asInstanceOf[js.Any])
+    def set_initialDateTime(value: Element): Self = StObject.set(x, "_initialDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitialInteger: Self = this.set("initialInteger", js.undefined)
+    def set_initialDateTimeUndefined: Self = StObject.set(x, "_initialDateTime", js.undefined)
     
     @scala.inline
-    def setInitialQuantity(value: Quantity): Self = this.set("initialQuantity", value.asInstanceOf[js.Any])
+    def set_initialDateUndefined: Self = StObject.set(x, "_initialDate", js.undefined)
     
     @scala.inline
-    def deleteInitialQuantity: Self = this.set("initialQuantity", js.undefined)
+    def set_initialDecimal(value: Element): Self = StObject.set(x, "_initialDecimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialReference(value: Reference): Self = this.set("initialReference", value.asInstanceOf[js.Any])
+    def set_initialDecimalUndefined: Self = StObject.set(x, "_initialDecimal", js.undefined)
     
     @scala.inline
-    def deleteInitialReference: Self = this.set("initialReference", js.undefined)
+    def set_initialInteger(value: Element): Self = StObject.set(x, "_initialInteger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialString(value: String): Self = this.set("initialString", value.asInstanceOf[js.Any])
+    def set_initialIntegerUndefined: Self = StObject.set(x, "_initialInteger", js.undefined)
     
     @scala.inline
-    def deleteInitialString: Self = this.set("initialString", js.undefined)
+    def set_initialString(value: Element): Self = StObject.set(x, "_initialString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialTime(value: time): Self = this.set("initialTime", value.asInstanceOf[js.Any])
+    def set_initialStringUndefined: Self = StObject.set(x, "_initialString", js.undefined)
     
     @scala.inline
-    def deleteInitialTime: Self = this.set("initialTime", js.undefined)
+    def set_initialTime(value: Element): Self = StObject.set(x, "_initialTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialUri(value: uri): Self = this.set("initialUri", value.asInstanceOf[js.Any])
+    def set_initialTimeUndefined: Self = StObject.set(x, "_initialTime", js.undefined)
     
     @scala.inline
-    def deleteInitialUri: Self = this.set("initialUri", js.undefined)
+    def set_initialUri(value: Element): Self = StObject.set(x, "_initialUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemVarargs(value: QuestionnaireItem*): Self = this.set("item", js.Array(value :_*))
+    def set_initialUriUndefined: Self = StObject.set(x, "_initialUri", js.undefined)
     
     @scala.inline
-    def setItem(value: js.Array[QuestionnaireItem]): Self = this.set("item", value.asInstanceOf[js.Any])
+    def set_linkId(value: Element): Self = StObject.set(x, "_linkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
+    def set_linkIdUndefined: Self = StObject.set(x, "_linkId", js.undefined)
     
     @scala.inline
-    def setMaxLength(value: integer): Self = this.set("maxLength", value.asInstanceOf[js.Any])
+    def set_maxLength(value: Element): Self = StObject.set(x, "_maxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
+    def set_maxLengthUndefined: Self = StObject.set(x, "_maxLength", js.undefined)
     
     @scala.inline
-    def setOptionVarargs(value: QuestionnaireItemOption*): Self = this.set("option", js.Array(value :_*))
+    def set_prefix(value: Element): Self = StObject.set(x, "_prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOption(value: js.Array[QuestionnaireItemOption]): Self = this.set("option", value.asInstanceOf[js.Any])
+    def set_prefixUndefined: Self = StObject.set(x, "_prefix", js.undefined)
     
     @scala.inline
-    def deleteOption: Self = this.set("option", js.undefined)
+    def set_readOnly(value: Element): Self = StObject.set(x, "_readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: Reference): Self = this.set("options", value.asInstanceOf[js.Any])
+    def set_readOnlyUndefined: Self = StObject.set(x, "_readOnly", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def set_repeats(value: Element): Self = StObject.set(x, "_repeats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    def set_repeatsUndefined: Self = StObject.set(x, "_repeats", js.undefined)
     
     @scala.inline
-    def deletePrefix: Self = this.set("prefix", js.undefined)
+    def set_required(value: Element): Self = StObject.set(x, "_required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def set_requiredUndefined: Self = StObject.set(x, "_required", js.undefined)
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def set_text(value: Element): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeats(value: Boolean): Self = this.set("repeats", value.asInstanceOf[js.Any])
+    def set_textUndefined: Self = StObject.set(x, "_text", js.undefined)
     
     @scala.inline
-    def deleteRepeats: Self = this.set("repeats", js.undefined)
+    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

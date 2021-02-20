@@ -1,11 +1,12 @@
 package typings.awsSdk.managedblockchainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Network extends js.Object {
+trait Network extends StObject {
   
   /**
     * The date and time that the network was created.
@@ -66,78 +67,66 @@ object Network {
   }
   
   @scala.inline
-  implicit class NetworkOps[Self <: Network] (val x: Self) extends AnyVal {
+  implicit class NetworkMutableBuilder[Self <: Network] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDate(value: Timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: Timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setFramework(value: Framework): Self = StObject.set(x, "Framework", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: DescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setFrameworkAttributes(value: NetworkFrameworkAttributes): Self = StObject.set(x, "FrameworkAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setFrameworkAttributesUndefined: Self = StObject.set(x, "FrameworkAttributes", js.undefined)
     
     @scala.inline
-    def setFramework(value: Framework): Self = this.set("Framework", value.asInstanceOf[js.Any])
+    def setFrameworkUndefined: Self = StObject.set(x, "Framework", js.undefined)
     
     @scala.inline
-    def deleteFramework: Self = this.set("Framework", js.undefined)
+    def setFrameworkVersion(value: FrameworkVersionString): Self = StObject.set(x, "FrameworkVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameworkAttributes(value: NetworkFrameworkAttributes): Self = this.set("FrameworkAttributes", value.asInstanceOf[js.Any])
+    def setFrameworkVersionUndefined: Self = StObject.set(x, "FrameworkVersion", js.undefined)
     
     @scala.inline
-    def deleteFrameworkAttributes: Self = this.set("FrameworkAttributes", js.undefined)
+    def setId(value: ResourceIdString): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameworkVersion(value: FrameworkVersionString): Self = this.set("FrameworkVersion", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteFrameworkVersion: Self = this.set("FrameworkVersion", js.undefined)
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: ResourceIdString): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setStatus(value: NetworkStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setVotingPolicy(value: VotingPolicy): Self = StObject.set(x, "VotingPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: NetworkStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setVotingPolicyUndefined: Self = StObject.set(x, "VotingPolicy", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setVpcEndpointServiceName(value: String): Self = StObject.set(x, "VpcEndpointServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVotingPolicy(value: VotingPolicy): Self = this.set("VotingPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVotingPolicy: Self = this.set("VotingPolicy", js.undefined)
-    
-    @scala.inline
-    def setVpcEndpointServiceName(value: String): Self = this.set("VpcEndpointServiceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcEndpointServiceName: Self = this.set("VpcEndpointServiceName", js.undefined)
+    def setVpcEndpointServiceNameUndefined: Self = StObject.set(x, "VpcEndpointServiceName", js.undefined)
   }
 }

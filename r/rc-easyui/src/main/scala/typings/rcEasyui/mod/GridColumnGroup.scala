@@ -2,6 +2,7 @@ package typings.rcEasyui.mod
 
 import typings.rcEasyui.anon.Align
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,61 +24,80 @@ class GridColumnGroup protected ()
   def onRowRemove(e: js.Any): Unit = js.native
 }
 /* static members */
-@JSImport("rc-easyui", "GridColumnGroup")
-@js.native
-object GridColumnGroup extends js.Object {
+object GridColumnGroup {
   
-  var defaultProps: Align = js.native
-  
+  @JSImport("rc-easyui", "GridColumnGroup")
   @js.native
-  object contextTypes extends js.Object {
+  val ^ : js.Any = js.native
+  
+  object contextTypes {
     
-    @js.native
-    object locale extends js.Object {
+    object locale {
       
+      @JSImport("rc-easyui", "GridColumnGroup.contextTypes.locale")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.GridColumnGroup.contextTypes.locale
+      @JSImport("rc-easyui", "GridColumnGroup.contextTypes.locale.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object t extends js.Object {
+    object t {
       
+      @JSImport("rc-easyui", "GridColumnGroup.contextTypes.t")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.GridColumnGroup.contextTypes.t
+      @JSImport("rc-easyui", "GridColumnGroup.contextTypes.t.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }
   
+  @JSImport("rc-easyui", "GridColumnGroup.defaultProps")
   @js.native
-  object propTypes extends js.Object {
+  def defaultProps: Align = js.native
+  @scala.inline
+  def defaultProps_=(x: Align): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  object propTypes {
     
-    @js.native
-    object align extends js.Object {
+    object align {
       
+      @JSImport("rc-easyui", "GridColumnGroup.propTypes.align")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.GridColumnGroup.propTypes.align
+      @JSImport("rc-easyui", "GridColumnGroup.propTypes.align.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object frozen extends js.Object {
+    object frozen {
       
+      @JSImport("rc-easyui", "GridColumnGroup.propTypes.frozen")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.GridColumnGroup.propTypes.frozen
+      @JSImport("rc-easyui", "GridColumnGroup.propTypes.frozen.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object width extends js.Object {
+    object width {
       
+      @JSImport("rc-easyui", "GridColumnGroup.propTypes.width")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.GridColumnGroup.propTypes.width
+      @JSImport("rc-easyui", "GridColumnGroup.propTypes.width.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }

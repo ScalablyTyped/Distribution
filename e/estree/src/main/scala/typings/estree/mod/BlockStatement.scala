@@ -1,5 +1,6 @@
 package typings.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,36 +27,24 @@ object BlockStatement {
   }
   
   @scala.inline
-  implicit class BlockStatementOps[Self <: BlockStatement] (val x: Self) extends AnyVal {
+  implicit class BlockStatementMutableBuilder[Self <: BlockStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInnerComments(value: js.Array[Comment]): Self = StObject.set(x, "innerComments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyVarargs(value: Statement*): Self = this.set("body", js.Array(value :_*))
+    def setInnerCommentsUndefined: Self = StObject.set(x, "innerComments", js.undefined)
     
     @scala.inline
-    def setBody(value: js.Array[Statement]): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setInnerCommentsVarargs(value: Comment*): Self = StObject.set(x, "innerComments", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: typings.estree.estreeStrings.BlockStatement): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInnerCommentsVarargs(value: Comment*): Self = this.set("innerComments", js.Array(value :_*))
-    
-    @scala.inline
-    def setInnerComments(value: js.Array[Comment]): Self = this.set("innerComments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInnerComments: Self = this.set("innerComments", js.undefined)
+    def setType(value: typings.estree.estreeStrings.BlockStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

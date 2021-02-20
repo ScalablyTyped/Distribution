@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HyperParameterRanges extends js.Object {
+trait HyperParameterRanges extends StObject {
   
   /**
     * The categorical hyperparameters and their ranges.
@@ -31,45 +32,33 @@ object HyperParameterRanges {
   }
   
   @scala.inline
-  implicit class HyperParameterRangesOps[Self <: HyperParameterRanges] (val x: Self) extends AnyVal {
+  implicit class HyperParameterRangesMutableBuilder[Self <: HyperParameterRanges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategoricalHyperParameterRanges(value: CategoricalHyperParameterRanges): Self = StObject.set(x, "categoricalHyperParameterRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoricalHyperParameterRangesUndefined: Self = StObject.set(x, "categoricalHyperParameterRanges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoricalHyperParameterRangesVarargs(value: CategoricalHyperParameterRange*): Self = StObject.set(x, "categoricalHyperParameterRanges", js.Array(value :_*))
     
     @scala.inline
-    def setCategoricalHyperParameterRangesVarargs(value: CategoricalHyperParameterRange*): Self = this.set("categoricalHyperParameterRanges", js.Array(value :_*))
+    def setContinuousHyperParameterRanges(value: ContinuousHyperParameterRanges): Self = StObject.set(x, "continuousHyperParameterRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoricalHyperParameterRanges(value: CategoricalHyperParameterRanges): Self = this.set("categoricalHyperParameterRanges", value.asInstanceOf[js.Any])
+    def setContinuousHyperParameterRangesUndefined: Self = StObject.set(x, "continuousHyperParameterRanges", js.undefined)
     
     @scala.inline
-    def deleteCategoricalHyperParameterRanges: Self = this.set("categoricalHyperParameterRanges", js.undefined)
+    def setContinuousHyperParameterRangesVarargs(value: ContinuousHyperParameterRange*): Self = StObject.set(x, "continuousHyperParameterRanges", js.Array(value :_*))
     
     @scala.inline
-    def setContinuousHyperParameterRangesVarargs(value: ContinuousHyperParameterRange*): Self = this.set("continuousHyperParameterRanges", js.Array(value :_*))
+    def setIntegerHyperParameterRanges(value: IntegerHyperParameterRanges): Self = StObject.set(x, "integerHyperParameterRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuousHyperParameterRanges(value: ContinuousHyperParameterRanges): Self = this.set("continuousHyperParameterRanges", value.asInstanceOf[js.Any])
+    def setIntegerHyperParameterRangesUndefined: Self = StObject.set(x, "integerHyperParameterRanges", js.undefined)
     
     @scala.inline
-    def deleteContinuousHyperParameterRanges: Self = this.set("continuousHyperParameterRanges", js.undefined)
-    
-    @scala.inline
-    def setIntegerHyperParameterRangesVarargs(value: IntegerHyperParameterRange*): Self = this.set("integerHyperParameterRanges", js.Array(value :_*))
-    
-    @scala.inline
-    def setIntegerHyperParameterRanges(value: IntegerHyperParameterRanges): Self = this.set("integerHyperParameterRanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIntegerHyperParameterRanges: Self = this.set("integerHyperParameterRanges", js.undefined)
+    def setIntegerHyperParameterRangesVarargs(value: IntegerHyperParameterRange*): Self = StObject.set(x, "integerHyperParameterRanges", js.Array(value :_*))
   }
 }

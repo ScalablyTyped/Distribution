@@ -1,5 +1,6 @@
 package typings.angularCompiler.compilerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular/compiler/compiler", "RecursiveAstVisitor")
 @js.native
 class RecursiveAstVisitor ()
-  extends typings.angularCompiler.astMod.RecursiveAstVisitor
+  extends typings.angularCompiler.publicApiMod.RecursiveAstVisitor

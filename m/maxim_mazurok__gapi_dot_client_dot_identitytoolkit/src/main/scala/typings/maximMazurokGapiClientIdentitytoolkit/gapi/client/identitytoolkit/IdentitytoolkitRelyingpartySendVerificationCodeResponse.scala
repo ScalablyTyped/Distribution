@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentitytoolkitRelyingpartySendVerificationCodeResponse extends js.Object {
+trait IdentitytoolkitRelyingpartySendVerificationCodeResponse extends StObject {
   
   /** Encrypted session information */
   var sessionInfo: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object IdentitytoolkitRelyingpartySendVerificationCodeResponse {
   }
   
   @scala.inline
-  implicit class IdentitytoolkitRelyingpartySendVerificationCodeResponseOps[Self <: IdentitytoolkitRelyingpartySendVerificationCodeResponse] (val x: Self) extends AnyVal {
+  implicit class IdentitytoolkitRelyingpartySendVerificationCodeResponseMutableBuilder[Self <: IdentitytoolkitRelyingpartySendVerificationCodeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSessionInfo(value: String): Self = StObject.set(x, "sessionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSessionInfo(value: String): Self = this.set("sessionInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionInfo: Self = this.set("sessionInfo", js.undefined)
+    def setSessionInfoUndefined: Self = StObject.set(x, "sessionInfo", js.undefined)
   }
 }

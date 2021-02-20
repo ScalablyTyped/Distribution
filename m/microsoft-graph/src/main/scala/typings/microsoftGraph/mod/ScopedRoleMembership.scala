@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,36 +26,24 @@ object ScopedRoleMembership {
   }
   
   @scala.inline
-  implicit class ScopedRoleMembershipOps[Self <: ScopedRoleMembership] (val x: Self) extends AnyVal {
+  implicit class ScopedRoleMembershipMutableBuilder[Self <: ScopedRoleMembership] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdministrativeUnitId(value: String): Self = StObject.set(x, "administrativeUnitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdministrativeUnitIdUndefined: Self = StObject.set(x, "administrativeUnitId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoleId(value: String): Self = StObject.set(x, "roleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdministrativeUnitId(value: String): Self = this.set("administrativeUnitId", value.asInstanceOf[js.Any])
+    def setRoleIdUndefined: Self = StObject.set(x, "roleId", js.undefined)
     
     @scala.inline
-    def deleteAdministrativeUnitId: Self = this.set("administrativeUnitId", js.undefined)
+    def setRoleMemberInfo(value: Identity): Self = StObject.set(x, "roleMemberInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleId(value: String): Self = this.set("roleId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleId: Self = this.set("roleId", js.undefined)
-    
-    @scala.inline
-    def setRoleMemberInfo(value: Identity): Self = this.set("roleMemberInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleMemberInfo: Self = this.set("roleMemberInfo", js.undefined)
+    def setRoleMemberInfoUndefined: Self = StObject.set(x, "roleMemberInfo", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Audio extends js.Object {
+trait Audio extends StObject {
   
   // The title of the album for this audio file.
   var album: js.UndefOr[NullableOption[String]] = js.native
@@ -64,162 +65,150 @@ object Audio {
   }
   
   @scala.inline
-  implicit class AudioOps[Self <: Audio] (val x: Self) extends AnyVal {
+  implicit class AudioMutableBuilder[Self <: Audio] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlbum(value: NullableOption[String]): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlbumArtist(value: NullableOption[String]): Self = StObject.set(x, "albumArtist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlbumArtistNull: Self = StObject.set(x, "albumArtist", null)
     
     @scala.inline
-    def setAlbum(value: NullableOption[String]): Self = this.set("album", value.asInstanceOf[js.Any])
+    def setAlbumArtistUndefined: Self = StObject.set(x, "albumArtist", js.undefined)
     
     @scala.inline
-    def deleteAlbum: Self = this.set("album", js.undefined)
+    def setAlbumNull: Self = StObject.set(x, "album", null)
     
     @scala.inline
-    def setAlbumNull: Self = this.set("album", null)
+    def setAlbumUndefined: Self = StObject.set(x, "album", js.undefined)
     
     @scala.inline
-    def setAlbumArtist(value: NullableOption[String]): Self = this.set("albumArtist", value.asInstanceOf[js.Any])
+    def setArtist(value: NullableOption[String]): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlbumArtist: Self = this.set("albumArtist", js.undefined)
+    def setArtistNull: Self = StObject.set(x, "artist", null)
     
     @scala.inline
-    def setAlbumArtistNull: Self = this.set("albumArtist", null)
+    def setArtistUndefined: Self = StObject.set(x, "artist", js.undefined)
     
     @scala.inline
-    def setArtist(value: NullableOption[String]): Self = this.set("artist", value.asInstanceOf[js.Any])
+    def setBitrate(value: NullableOption[Double]): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArtist: Self = this.set("artist", js.undefined)
+    def setBitrateNull: Self = StObject.set(x, "bitrate", null)
     
     @scala.inline
-    def setArtistNull: Self = this.set("artist", null)
+    def setBitrateUndefined: Self = StObject.set(x, "bitrate", js.undefined)
     
     @scala.inline
-    def setBitrate(value: NullableOption[Double]): Self = this.set("bitrate", value.asInstanceOf[js.Any])
+    def setComposers(value: NullableOption[String]): Self = StObject.set(x, "composers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBitrate: Self = this.set("bitrate", js.undefined)
+    def setComposersNull: Self = StObject.set(x, "composers", null)
     
     @scala.inline
-    def setBitrateNull: Self = this.set("bitrate", null)
+    def setComposersUndefined: Self = StObject.set(x, "composers", js.undefined)
     
     @scala.inline
-    def setComposers(value: NullableOption[String]): Self = this.set("composers", value.asInstanceOf[js.Any])
+    def setCopyright(value: NullableOption[String]): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComposers: Self = this.set("composers", js.undefined)
+    def setCopyrightNull: Self = StObject.set(x, "copyright", null)
     
     @scala.inline
-    def setComposersNull: Self = this.set("composers", null)
+    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     @scala.inline
-    def setCopyright(value: NullableOption[String]): Self = this.set("copyright", value.asInstanceOf[js.Any])
+    def setDisc(value: NullableOption[Double]): Self = StObject.set(x, "disc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCopyright: Self = this.set("copyright", js.undefined)
+    def setDiscCount(value: NullableOption[Double]): Self = StObject.set(x, "discCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyrightNull: Self = this.set("copyright", null)
+    def setDiscCountNull: Self = StObject.set(x, "discCount", null)
     
     @scala.inline
-    def setDisc(value: NullableOption[Double]): Self = this.set("disc", value.asInstanceOf[js.Any])
+    def setDiscCountUndefined: Self = StObject.set(x, "discCount", js.undefined)
     
     @scala.inline
-    def deleteDisc: Self = this.set("disc", js.undefined)
+    def setDiscNull: Self = StObject.set(x, "disc", null)
     
     @scala.inline
-    def setDiscNull: Self = this.set("disc", null)
+    def setDiscUndefined: Self = StObject.set(x, "disc", js.undefined)
     
     @scala.inline
-    def setDiscCount(value: NullableOption[Double]): Self = this.set("discCount", value.asInstanceOf[js.Any])
+    def setDuration(value: NullableOption[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDiscCount: Self = this.set("discCount", js.undefined)
+    def setDurationNull: Self = StObject.set(x, "duration", null)
     
     @scala.inline
-    def setDiscCountNull: Self = this.set("discCount", null)
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def setDuration(value: NullableOption[Double]): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setGenre(value: NullableOption[String]): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setGenreNull: Self = StObject.set(x, "genre", null)
     
     @scala.inline
-    def setDurationNull: Self = this.set("duration", null)
+    def setGenreUndefined: Self = StObject.set(x, "genre", js.undefined)
     
     @scala.inline
-    def setGenre(value: NullableOption[String]): Self = this.set("genre", value.asInstanceOf[js.Any])
+    def setHasDrm(value: NullableOption[Boolean]): Self = StObject.set(x, "hasDrm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGenre: Self = this.set("genre", js.undefined)
+    def setHasDrmNull: Self = StObject.set(x, "hasDrm", null)
     
     @scala.inline
-    def setGenreNull: Self = this.set("genre", null)
+    def setHasDrmUndefined: Self = StObject.set(x, "hasDrm", js.undefined)
     
     @scala.inline
-    def setHasDrm(value: NullableOption[Boolean]): Self = this.set("hasDrm", value.asInstanceOf[js.Any])
+    def setIsVariableBitrate(value: NullableOption[Boolean]): Self = StObject.set(x, "isVariableBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasDrm: Self = this.set("hasDrm", js.undefined)
+    def setIsVariableBitrateNull: Self = StObject.set(x, "isVariableBitrate", null)
     
     @scala.inline
-    def setHasDrmNull: Self = this.set("hasDrm", null)
+    def setIsVariableBitrateUndefined: Self = StObject.set(x, "isVariableBitrate", js.undefined)
     
     @scala.inline
-    def setIsVariableBitrate(value: NullableOption[Boolean]): Self = this.set("isVariableBitrate", value.asInstanceOf[js.Any])
+    def setTitle(value: NullableOption[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsVariableBitrate: Self = this.set("isVariableBitrate", js.undefined)
+    def setTitleNull: Self = StObject.set(x, "title", null)
     
     @scala.inline
-    def setIsVariableBitrateNull: Self = this.set("isVariableBitrate", null)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setTitle(value: NullableOption[String]): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTrack(value: NullableOption[Double]): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTrackCount(value: NullableOption[Double]): Self = StObject.set(x, "trackCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleNull: Self = this.set("title", null)
+    def setTrackCountNull: Self = StObject.set(x, "trackCount", null)
     
     @scala.inline
-    def setTrack(value: NullableOption[Double]): Self = this.set("track", value.asInstanceOf[js.Any])
+    def setTrackCountUndefined: Self = StObject.set(x, "trackCount", js.undefined)
     
     @scala.inline
-    def deleteTrack: Self = this.set("track", js.undefined)
+    def setTrackNull: Self = StObject.set(x, "track", null)
     
     @scala.inline
-    def setTrackNull: Self = this.set("track", null)
+    def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
     
     @scala.inline
-    def setTrackCount(value: NullableOption[Double]): Self = this.set("trackCount", value.asInstanceOf[js.Any])
+    def setYear(value: NullableOption[Double]): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTrackCount: Self = this.set("trackCount", js.undefined)
+    def setYearNull: Self = StObject.set(x, "year", null)
     
     @scala.inline
-    def setTrackCountNull: Self = this.set("trackCount", null)
-    
-    @scala.inline
-    def setYear(value: NullableOption[Double]): Self = this.set("year", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYear: Self = this.set("year", js.undefined)
-    
-    @scala.inline
-    def setYearNull: Self = this.set("year", null)
+    def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
   }
 }

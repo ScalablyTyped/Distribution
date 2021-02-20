@@ -1,5 +1,6 @@
 package typings.nwJs.mod.global.NWJSHelpers
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options to modify default `edit` and `window` MenuItems in Mac.
   */
 @js.native
-trait CreateMacBuiltinOption extends js.Object {
+trait CreateMacBuiltinOption extends StObject {
   
   /**
     * {Boolean} (Optional) do not populate the Edit menu
@@ -29,30 +30,18 @@ object CreateMacBuiltinOption {
   }
   
   @scala.inline
-  implicit class CreateMacBuiltinOptionOps[Self <: CreateMacBuiltinOption] (val x: Self) extends AnyVal {
+  implicit class CreateMacBuiltinOptionMutableBuilder[Self <: CreateMacBuiltinOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHideEdit(value: Boolean): Self = StObject.set(x, "hideEdit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHideEditUndefined: Self = StObject.set(x, "hideEdit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHideWindow(value: Boolean): Self = StObject.set(x, "hideWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideEdit(value: Boolean): Self = this.set("hideEdit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHideEdit: Self = this.set("hideEdit", js.undefined)
-    
-    @scala.inline
-    def setHideWindow(value: Boolean): Self = this.set("hideWindow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHideWindow: Self = this.set("hideWindow", js.undefined)
+    def setHideWindowUndefined: Self = StObject.set(x, "hideWindow", js.undefined)
   }
 }

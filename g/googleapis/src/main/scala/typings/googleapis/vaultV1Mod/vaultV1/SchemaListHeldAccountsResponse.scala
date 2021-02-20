@@ -1,5 +1,6 @@
 package typings.googleapis.vaultV1Mod.vaultV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Returns a list of held accounts for a hold.
   */
 @js.native
-trait SchemaListHeldAccountsResponse extends js.Object {
+trait SchemaListHeldAccountsResponse extends StObject {
   
   /**
     * The held accounts on a hold.
@@ -24,27 +25,15 @@ object SchemaListHeldAccountsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListHeldAccountsResponseOps[Self <: SchemaListHeldAccountsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListHeldAccountsResponseMutableBuilder[Self <: SchemaListHeldAccountsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccounts(value: js.Array[SchemaHeldAccount]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccountsVarargs(value: SchemaHeldAccount*): Self = this.set("accounts", js.Array(value :_*))
-    
-    @scala.inline
-    def setAccounts(value: js.Array[SchemaHeldAccount]): Self = this.set("accounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccounts: Self = this.set("accounts", js.undefined)
+    def setAccountsVarargs(value: SchemaHeldAccount*): Self = StObject.set(x, "accounts", js.Array(value :_*))
   }
 }

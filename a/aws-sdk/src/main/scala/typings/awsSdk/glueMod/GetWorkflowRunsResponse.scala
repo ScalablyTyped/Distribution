@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetWorkflowRunsResponse extends js.Object {
+trait GetWorkflowRunsResponse extends StObject {
   
   /**
     * A continuation token, if not all requested workflow runs have been returned.
@@ -26,33 +27,21 @@ object GetWorkflowRunsResponse {
   }
   
   @scala.inline
-  implicit class GetWorkflowRunsResponseOps[Self <: GetWorkflowRunsResponse] (val x: Self) extends AnyVal {
+  implicit class GetWorkflowRunsResponseMutableBuilder[Self <: GetWorkflowRunsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRuns(value: WorkflowRuns): Self = StObject.set(x, "Runs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: GenericString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setRunsUndefined: Self = StObject.set(x, "Runs", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setRunsVarargs(value: WorkflowRun*): Self = this.set("Runs", js.Array(value :_*))
-    
-    @scala.inline
-    def setRuns(value: WorkflowRuns): Self = this.set("Runs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuns: Self = this.set("Runs", js.undefined)
+    def setRunsVarargs(value: WorkflowRun*): Self = StObject.set(x, "Runs", js.Array(value :_*))
   }
 }

@@ -3,6 +3,7 @@ package typings.remarkable.libMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.remarkable.remarkableStrings.Linefeed
 import typings.remarkable.remarkableStrings._empty
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

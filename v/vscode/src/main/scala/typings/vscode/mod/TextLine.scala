@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextLine extends js.Object {
+trait TextLine extends StObject {
   
   /**
     * The offset of the first character which is not a whitespace character as defined
@@ -55,36 +56,24 @@ object TextLine {
   }
   
   @scala.inline
-  implicit class TextLineOps[Self <: TextLine] (val x: Self) extends AnyVal {
+  implicit class TextLineMutableBuilder[Self <: TextLine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstNonWhitespaceCharacterIndex(value: Double): Self = StObject.set(x, "firstNonWhitespaceCharacterIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsEmptyOrWhitespace(value: Boolean): Self = StObject.set(x, "isEmptyOrWhitespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstNonWhitespaceCharacterIndex(value: Double): Self = this.set("firstNonWhitespaceCharacterIndex", value.asInstanceOf[js.Any])
+    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEmptyOrWhitespace(value: Boolean): Self = this.set("isEmptyOrWhitespace", value.asInstanceOf[js.Any])
+    def setRangeIncludingLineBreak(value: Range): Self = StObject.set(x, "rangeIncludingLineBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineNumber(value: Double): Self = this.set("lineNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRange(value: Range): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRangeIncludingLineBreak(value: Range): Self = this.set("rangeIncludingLineBreak", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

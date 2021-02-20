@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchRequest extends js.Object {
+trait SearchRequest extends StObject {
   
   var contentSources: js.UndefOr[NullableOption[js.Array[String]]] = js.native
   
@@ -30,81 +31,69 @@ object SearchRequest {
   }
   
   @scala.inline
-  implicit class SearchRequestOps[Self <: SearchRequest] (val x: Self) extends AnyVal {
+  implicit class SearchRequestMutableBuilder[Self <: SearchRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentSources(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "contentSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentSourcesNull: Self = StObject.set(x, "contentSources", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentSourcesUndefined: Self = StObject.set(x, "contentSources", js.undefined)
     
     @scala.inline
-    def setContentSourcesVarargs(value: String*): Self = this.set("contentSources", js.Array(value :_*))
+    def setContentSourcesVarargs(value: String*): Self = StObject.set(x, "contentSources", js.Array(value :_*))
     
     @scala.inline
-    def setContentSources(value: NullableOption[js.Array[String]]): Self = this.set("contentSources", value.asInstanceOf[js.Any])
+    def setEnableTopResults(value: NullableOption[Boolean]): Self = StObject.set(x, "enableTopResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentSources: Self = this.set("contentSources", js.undefined)
+    def setEnableTopResultsNull: Self = StObject.set(x, "enableTopResults", null)
     
     @scala.inline
-    def setContentSourcesNull: Self = this.set("contentSources", null)
+    def setEnableTopResultsUndefined: Self = StObject.set(x, "enableTopResults", js.undefined)
     
     @scala.inline
-    def setEnableTopResults(value: NullableOption[Boolean]): Self = this.set("enableTopResults", value.asInstanceOf[js.Any])
+    def setEntityTypes(value: NullableOption[js.Array[EntityType]]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnableTopResults: Self = this.set("enableTopResults", js.undefined)
+    def setEntityTypesNull: Self = StObject.set(x, "entityTypes", null)
     
     @scala.inline
-    def setEnableTopResultsNull: Self = this.set("enableTopResults", null)
+    def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
     
     @scala.inline
-    def setEntityTypesVarargs(value: EntityType*): Self = this.set("entityTypes", js.Array(value :_*))
+    def setEntityTypesVarargs(value: EntityType*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
     
     @scala.inline
-    def setEntityTypes(value: NullableOption[js.Array[EntityType]]): Self = this.set("entityTypes", value.asInstanceOf[js.Any])
+    def setFields(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEntityTypes: Self = this.set("entityTypes", js.undefined)
+    def setFieldsNull: Self = StObject.set(x, "fields", null)
     
     @scala.inline
-    def setEntityTypesNull: Self = this.set("entityTypes", null)
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFields(value: NullableOption[js.Array[String]]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def setFieldsNull: Self = this.set("fields", null)
+    def setQuery(value: SearchQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: Double): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: SearchQuery): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

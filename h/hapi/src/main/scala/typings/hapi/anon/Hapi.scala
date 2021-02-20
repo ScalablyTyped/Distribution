@@ -1,11 +1,12 @@
 package typings.hapi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hapi extends js.Object {
+trait Hapi extends StObject {
   
   var hapi: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object Hapi {
   }
   
   @scala.inline
-  implicit class HapiOps[Self <: Hapi] (val x: Self) extends AnyVal {
+  implicit class HapiMutableBuilder[Self <: Hapi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHapi(value: String): Self = StObject.set(x, "hapi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHapiUndefined: Self = StObject.set(x, "hapi", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHapi(value: String): Self = this.set("hapi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHapi: Self = this.set("hapi", js.undefined)
-    
-    @scala.inline
-    def setNode(value: String): Self = this.set("node", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNode: Self = this.set("node", js.undefined)
+    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
   }
 }

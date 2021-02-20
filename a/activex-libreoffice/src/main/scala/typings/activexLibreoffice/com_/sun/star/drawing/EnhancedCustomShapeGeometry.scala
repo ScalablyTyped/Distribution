@@ -4,13 +4,14 @@ import typings.activexLibreoffice.com_.sun.star.awt.Rectangle
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValues
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service may be represented by a {@link com.sun.star.beans.PropertyValue} []. */
 @js.native
-trait EnhancedCustomShapeGeometry extends js.Object {
+trait EnhancedCustomShapeGeometry extends StObject {
   
   /** This property specifies a sequence of Adjustment values. */
   var AdjustmentValues: SafeArray[EnhancedCustomShapeAdjustmentValue] = js.native
@@ -85,51 +86,39 @@ object EnhancedCustomShapeGeometry {
   }
   
   @scala.inline
-  implicit class EnhancedCustomShapeGeometryOps[Self <: EnhancedCustomShapeGeometry] (val x: Self) extends AnyVal {
+  implicit class EnhancedCustomShapeGeometryMutableBuilder[Self <: EnhancedCustomShapeGeometry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdjustmentValues(value: SafeArray[EnhancedCustomShapeAdjustmentValue]): Self = StObject.set(x, "AdjustmentValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEquations(value: SafeArray[String]): Self = StObject.set(x, "Equations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtrusion(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Extrusion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjustmentValues(value: SafeArray[EnhancedCustomShapeAdjustmentValue]): Self = this.set("AdjustmentValues", value.asInstanceOf[js.Any])
+    def setHandles(value: SafeArray[PropertyValues]): Self = StObject.set(x, "Handles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEquations(value: SafeArray[String]): Self = this.set("Equations", value.asInstanceOf[js.Any])
+    def setMirroredX(value: Boolean): Self = StObject.set(x, "MirroredX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtrusion(value: SafeArray[PropertyValue]): Self = this.set("Extrusion", value.asInstanceOf[js.Any])
+    def setMirroredY(value: Boolean): Self = StObject.set(x, "MirroredY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandles(value: SafeArray[PropertyValues]): Self = this.set("Handles", value.asInstanceOf[js.Any])
+    def setPath(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMirroredX(value: Boolean): Self = this.set("MirroredX", value.asInstanceOf[js.Any])
+    def setTextPath(value: SafeArray[PropertyValue]): Self = StObject.set(x, "TextPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMirroredY(value: Boolean): Self = this.set("MirroredY", value.asInstanceOf[js.Any])
+    def setTextRotateAngle(value: Double): Self = StObject.set(x, "TextRotateAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: SafeArray[PropertyValue]): Self = this.set("Path", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextPath(value: SafeArray[PropertyValue]): Self = this.set("TextPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextRotateAngle(value: Double): Self = this.set("TextRotateAngle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewBox(value: Rectangle): Self = this.set("ViewBox", value.asInstanceOf[js.Any])
+    def setViewBox(value: Rectangle): Self = StObject.set(x, "ViewBox", value.asInstanceOf[js.Any])
   }
 }

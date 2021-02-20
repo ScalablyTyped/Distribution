@@ -8,12 +8,13 @@ import typings.nodeRedUtil.mod.I18nTFunction
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RED extends js.Object {
+trait RED extends StObject {
   
   // assigned in i18n.js (on init)
   @JSName("_")

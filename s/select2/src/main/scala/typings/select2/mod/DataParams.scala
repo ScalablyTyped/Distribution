@@ -1,16 +1,17 @@
 package typings.select2.mod
 
 import typings.jquery.BaseJQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataParams extends js.Object {
+trait DataParams extends StObject {
   
   var data: OptionData = js.native
   
-   // TODO: must be data source
+  // TODO: must be data source
   var originalEvent: BaseJQueryEventObject = js.native
 }
 object DataParams {
@@ -22,24 +23,12 @@ object DataParams {
   }
   
   @scala.inline
-  implicit class DataParamsOps[Self <: DataParams] (val x: Self) extends AnyVal {
+  implicit class DataParamsMutableBuilder[Self <: DataParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: OptionData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setData(value: OptionData): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOriginalEvent(value: BaseJQueryEventObject): Self = this.set("originalEvent", value.asInstanceOf[js.Any])
+    def setOriginalEvent(value: BaseJQueryEventObject): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
   }
 }

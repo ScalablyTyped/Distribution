@@ -1,14 +1,14 @@
 package typings.plottable
 
 import typings.plottable.componentMod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/components/componentContainer", JSImport.Namespace)
-@js.native
-object componentContainerMod extends js.Object {
+object componentContainerMod {
   
+  @JSImport("plottable/build/src/components/componentContainer", "ComponentContainer")
   @js.native
   class ComponentContainer () extends Component {
     

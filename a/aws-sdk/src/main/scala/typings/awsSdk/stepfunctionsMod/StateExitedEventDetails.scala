@@ -1,11 +1,12 @@
 package typings.awsSdk.stepfunctionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StateExitedEventDetails extends js.Object {
+trait StateExitedEventDetails extends StObject {
   
   /**
     * The name of the state. A name must not contain:   white space   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)   To enable logging with CloudWatch Logs, the name should only contain 0-9, A-Z, a-z, - and _.
@@ -31,33 +32,21 @@ object StateExitedEventDetails {
   }
   
   @scala.inline
-  implicit class StateExitedEventDetailsOps[Self <: StateExitedEventDetails] (val x: Self) extends AnyVal {
+  implicit class StateExitedEventDetailsMutableBuilder[Self <: StateExitedEventDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOutput(value: SensitiveData): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutputDetails(value: HistoryEventExecutionDataDetails): Self = StObject.set(x, "outputDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOutputDetailsUndefined: Self = StObject.set(x, "outputDetails", js.undefined)
     
     @scala.inline
-    def setOutput(value: SensitiveData): Self = this.set("output", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutput: Self = this.set("output", js.undefined)
-    
-    @scala.inline
-    def setOutputDetails(value: HistoryEventExecutionDataDetails): Self = this.set("outputDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputDetails: Self = this.set("outputDetails", js.undefined)
+    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
   }
 }

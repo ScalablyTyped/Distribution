@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PageInfo extends js.Object {
+trait PageInfo extends StObject {
   
   /** The number of results included in the API response. */
   var resultsPerPage: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object PageInfo {
   }
   
   @scala.inline
-  implicit class PageInfoOps[Self <: PageInfo] (val x: Self) extends AnyVal {
+  implicit class PageInfoMutableBuilder[Self <: PageInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResultsPerPage(value: Double): Self = StObject.set(x, "resultsPerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResultsPerPageUndefined: Self = StObject.set(x, "resultsPerPage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotalResults(value: Double): Self = StObject.set(x, "totalResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultsPerPage(value: Double): Self = this.set("resultsPerPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResultsPerPage: Self = this.set("resultsPerPage", js.undefined)
-    
-    @scala.inline
-    def setTotalResults(value: Double): Self = this.set("totalResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalResults: Self = this.set("totalResults", js.undefined)
+    def setTotalResultsUndefined: Self = StObject.set(x, "totalResults", js.undefined)
   }
 }

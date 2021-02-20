@@ -1,11 +1,12 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KmlColor extends js.Object {
+trait KmlColor extends StObject {
   
   /**
     * Returns the color of an object.
@@ -77,48 +78,36 @@ object KmlColor {
   }
   
   @scala.inline
-  implicit class KmlColorOps[Self <: KmlColor] (val x: Self) extends AnyVal {
+  implicit class KmlColorMutableBuilder[Self <: KmlColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet(value: () => String): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetA(value: () => Double): Self = StObject.set(x, "getA", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetB(value: () => Double): Self = StObject.set(x, "getB", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet(value: () => String): Self = this.set("get", js.Any.fromFunction0(value))
+    def setGetG(value: () => Double): Self = StObject.set(x, "getG", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetA(value: () => Double): Self = this.set("getA", js.Any.fromFunction0(value))
+    def setGetR(value: () => Double): Self = StObject.set(x, "getR", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetB(value: () => Double): Self = this.set("getB", js.Any.fromFunction0(value))
+    def setSet(value: String => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetG(value: () => Double): Self = this.set("getG", js.Any.fromFunction0(value))
+    def setSetA(value: Double => Unit): Self = StObject.set(x, "setA", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetR(value: () => Double): Self = this.set("getR", js.Any.fromFunction0(value))
+    def setSetB(value: Double => Unit): Self = StObject.set(x, "setB", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet(value: String => Unit): Self = this.set("set", js.Any.fromFunction1(value))
+    def setSetG(value: Double => Unit): Self = StObject.set(x, "setG", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetA(value: Double => Unit): Self = this.set("setA", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetB(value: Double => Unit): Self = this.set("setB", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetG(value: Double => Unit): Self = this.set("setG", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetR(value: Double => Unit): Self = this.set("setR", js.Any.fromFunction1(value))
+    def setSetR(value: Double => Unit): Self = StObject.set(x, "setR", js.Any.fromFunction1(value))
   }
 }

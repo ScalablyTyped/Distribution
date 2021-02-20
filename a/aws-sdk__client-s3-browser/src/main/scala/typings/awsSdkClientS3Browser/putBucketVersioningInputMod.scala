@@ -1,12 +1,13 @@
 package typings.awsSdkClientS3Browser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-browser/model/PutBucketVersioningInput", JSImport.Namespace)
-@js.native
-object putBucketVersioningInputMod extends js.Object {
+object putBucketVersioningInputMod {
   
+  @JSImport("@aws-sdk/client-s3-browser/model/PutBucketVersioningInput", "PutBucketVersioningInput")
+  @js.native
   val PutBucketVersioningInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

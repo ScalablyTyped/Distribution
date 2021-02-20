@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticinferenceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAcceleratorsRequest extends js.Object {
+trait DescribeAcceleratorsRequest extends StObject {
   
   /**
     *  The IDs of the accelerators to describe. 
@@ -36,48 +37,36 @@ object DescribeAcceleratorsRequest {
   }
   
   @scala.inline
-  implicit class DescribeAcceleratorsRequestOps[Self <: DescribeAcceleratorsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeAcceleratorsRequestMutableBuilder[Self <: DescribeAcceleratorsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceleratorIds(value: AcceleratorIdList): Self = StObject.set(x, "acceleratorIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceleratorIdsUndefined: Self = StObject.set(x, "acceleratorIds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcceleratorIdsVarargs(value: AcceleratorId*): Self = StObject.set(x, "acceleratorIds", js.Array(value :_*))
     
     @scala.inline
-    def setAcceleratorIdsVarargs(value: AcceleratorId*): Self = this.set("acceleratorIds", js.Array(value :_*))
+    def setFilters(value: FilterList): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceleratorIds(value: AcceleratorIdList): Self = this.set("acceleratorIds", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def deleteAcceleratorIds: Self = this.set("acceleratorIds", js.undefined)
+    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = this.set("filters", js.Array(value :_*))
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: FilterList): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

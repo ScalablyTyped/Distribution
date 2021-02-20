@@ -7,14 +7,14 @@ import typings.awsSdkClientKmsBrowser.typesGenerateDataKeyInputMod.GenerateDataK
 import typings.awsSdkClientKmsBrowser.typesGenerateDataKeyOutputMod.GenerateDataKeyOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-browser/commands/GenerateDataKeyCommand", JSImport.Namespace)
-@js.native
-object generateDataKeyCommandMod extends js.Object {
+object generateDataKeyCommandMod {
   
+  @JSImport("@aws-sdk/client-kms-browser/commands/GenerateDataKeyCommand", "GenerateDataKeyCommand")
   @js.native
   class GenerateDataKeyCommand protected () extends Command[
           InputTypesUnion, 

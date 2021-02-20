@@ -1,11 +1,12 @@
 package typings.nodeZendesk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientOptions extends js.Object {
+trait ClientOptions extends StObject {
   
   var asUser: js.UndefOr[String] = js.native
   
@@ -30,51 +31,39 @@ object ClientOptions {
   }
   
   @scala.inline
-  implicit class ClientOptionsOps[Self <: ClientOptions] (val x: Self) extends AnyVal {
+  implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsUser(value: String): Self = StObject.set(x, "asUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsUserUndefined: Self = StObject.set(x, "asUser", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteUri(value: String): Self = this.set("remoteUri", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
+    def setDisableGlobalState(value: Boolean): Self = StObject.set(x, "disableGlobalState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    def setDisableGlobalStateUndefined: Self = StObject.set(x, "disableGlobalState", js.undefined)
     
     @scala.inline
-    def setAsUser(value: String): Self = this.set("asUser", value.asInstanceOf[js.Any])
+    def setOauth(value: Boolean): Self = StObject.set(x, "oauth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAsUser: Self = this.set("asUser", js.undefined)
+    def setOauthUndefined: Self = StObject.set(x, "oauth", js.undefined)
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setRemoteUri(value: String): Self = StObject.set(x, "remoteUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableGlobalState(value: Boolean): Self = this.set("disableGlobalState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisableGlobalState: Self = this.set("disableGlobalState", js.undefined)
-    
-    @scala.inline
-    def setOauth(value: Boolean): Self = this.set("oauth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOauth: Self = this.set("oauth", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

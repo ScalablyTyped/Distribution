@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,81 +61,69 @@ object DataRequirement {
   }
   
   @scala.inline
-  implicit class DataRequirementOps[Self <: DataRequirement] (val x: Self) extends AnyVal {
+  implicit class DataRequirementMutableBuilder[Self <: DataRequirement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodeFilter(value: js.Array[DataRequirementCodeFilter]): Self = StObject.set(x, "codeFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeFilterUndefined: Self = StObject.set(x, "codeFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodeFilterVarargs(value: DataRequirementCodeFilter*): Self = StObject.set(x, "codeFilter", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setDateFilter(value: js.Array[DataRequirementDateFilter]): Self = StObject.set(x, "dateFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_mustSupportVarargs(value: Element*): Self = this.set("_mustSupport", js.Array(value :_*))
+    def setDateFilterUndefined: Self = StObject.set(x, "dateFilter", js.undefined)
     
     @scala.inline
-    def set_mustSupport(value: js.Array[Element]): Self = this.set("_mustSupport", value.asInstanceOf[js.Any])
+    def setDateFilterVarargs(value: DataRequirementDateFilter*): Self = StObject.set(x, "dateFilter", js.Array(value :_*))
     
     @scala.inline
-    def delete_mustSupport: Self = this.set("_mustSupport", js.undefined)
+    def setMustSupport(value: js.Array[String]): Self = StObject.set(x, "mustSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_profileVarargs(value: Element*): Self = this.set("_profile", js.Array(value :_*))
+    def setMustSupportUndefined: Self = StObject.set(x, "mustSupport", js.undefined)
     
     @scala.inline
-    def set_profile(value: js.Array[Element]): Self = this.set("_profile", value.asInstanceOf[js.Any])
+    def setMustSupportVarargs(value: String*): Self = StObject.set(x, "mustSupport", js.Array(value :_*))
     
     @scala.inline
-    def delete_profile: Self = this.set("_profile", js.undefined)
+    def setProfile(value: js.Array[uri]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
     @scala.inline
-    def delete_type: Self = this.set("_type", js.undefined)
+    def setProfileVarargs(value: uri*): Self = StObject.set(x, "profile", js.Array(value :_*))
     
     @scala.inline
-    def setCodeFilterVarargs(value: DataRequirementCodeFilter*): Self = this.set("codeFilter", js.Array(value :_*))
+    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeFilter(value: js.Array[DataRequirementCodeFilter]): Self = this.set("codeFilter", value.asInstanceOf[js.Any])
+    def set_mustSupport(value: js.Array[Element]): Self = StObject.set(x, "_mustSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCodeFilter: Self = this.set("codeFilter", js.undefined)
+    def set_mustSupportUndefined: Self = StObject.set(x, "_mustSupport", js.undefined)
     
     @scala.inline
-    def setDateFilterVarargs(value: DataRequirementDateFilter*): Self = this.set("dateFilter", js.Array(value :_*))
+    def set_mustSupportVarargs(value: Element*): Self = StObject.set(x, "_mustSupport", js.Array(value :_*))
     
     @scala.inline
-    def setDateFilter(value: js.Array[DataRequirementDateFilter]): Self = this.set("dateFilter", value.asInstanceOf[js.Any])
+    def set_profile(value: js.Array[Element]): Self = StObject.set(x, "_profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDateFilter: Self = this.set("dateFilter", js.undefined)
+    def set_profileUndefined: Self = StObject.set(x, "_profile", js.undefined)
     
     @scala.inline
-    def setMustSupportVarargs(value: String*): Self = this.set("mustSupport", js.Array(value :_*))
+    def set_profileVarargs(value: Element*): Self = StObject.set(x, "_profile", js.Array(value :_*))
     
     @scala.inline
-    def setMustSupport(value: js.Array[String]): Self = this.set("mustSupport", value.asInstanceOf[js.Any])
+    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMustSupport: Self = this.set("mustSupport", js.undefined)
-    
-    @scala.inline
-    def setProfileVarargs(value: uri*): Self = this.set("profile", js.Array(value :_*))
-    
-    @scala.inline
-    def setProfile(value: js.Array[uri]): Self = this.set("profile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfile: Self = this.set("profile", js.undefined)
+    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

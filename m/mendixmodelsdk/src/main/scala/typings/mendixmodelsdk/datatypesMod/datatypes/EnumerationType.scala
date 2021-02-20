@@ -24,6 +24,7 @@ import typings.mendixmodelsdk.restMod.rest.RestOperationParameter
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.webservicesMod.webservices.PublishedOperation
 import typings.mendixmodelsdk.webservicesMod.webservices.PublishedParameter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,16 +87,20 @@ class EnumerationType protected () extends DataType {
   @JSName("enumeration")
   val enumeration_FEnumerationType: IEnumeration = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType")
-@js.native
-object EnumerationType extends js.Object {
+object EnumerationType {
+  
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new EnumerationType instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType.create")
+  @js.native
   def create(model: IModel): EnumerationType = js.native
   
   /**
@@ -106,6 +111,9 @@ object EnumerationType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType.createInAppServiceActionParameterUnderParameterType")
+  @js.native
   def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): EnumerationType = js.native
   
   /**
@@ -116,6 +124,9 @@ object EnumerationType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType.createInAppServiceActionUnderActionReturnType")
+  @js.native
   def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): EnumerationType = js.native
   
   /**
@@ -126,6 +137,9 @@ object EnumerationType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType.createInConstantUnderType")
+  @js.native
   def createInConstantUnderType(container: Constant): EnumerationType = js.native
   
   /**
@@ -136,6 +150,9 @@ object EnumerationType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType.createInCreateVariableActionUnderVariableType")
+  @js.native
   def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): EnumerationType = js.native
   
   /**
@@ -146,6 +163,9 @@ object EnumerationType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType.createInDataSetColumnUnderColumnType")
+  @js.native
   def createInDataSetColumnUnderColumnType(container: DataSetColumn): EnumerationType = js.native
   
   /**
@@ -156,6 +176,9 @@ object EnumerationType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType.createInDataSetParameterUnderParameterType")
+  @js.native
   def createInDataSetParameterUnderParameterType(container: DataSetParameter): EnumerationType = js.native
   
   /**
@@ -166,6 +189,9 @@ object EnumerationType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType.createInDocumentTemplateParameterUnderParameterType")
+  @js.native
   def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): EnumerationType = js.native
   
   /**
@@ -176,6 +202,9 @@ object EnumerationType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.16.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType.createInImportMappingUnderParameterType")
+  @js.native
   def createInImportMappingUnderParameterType(container: ImportMapping): EnumerationType = js.native
   
   /**
@@ -186,6 +215,9 @@ object EnumerationType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType.createInMicroflowBaseUnderMicroflowReturnType")
+  @js.native
   def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): EnumerationType = js.native
   
   /**
@@ -196,6 +228,9 @@ object EnumerationType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType.createInMicroflowParameterBaseUnderParameterType")
+  @js.native
   def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): EnumerationType = js.native
   
   /**
@@ -206,6 +241,9 @@ object EnumerationType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType.createInMicroflowParameterObjectUnderVariableType")
+  @js.native
   def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): EnumerationType = js.native
   
   /**
@@ -216,6 +254,9 @@ object EnumerationType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType.createInPublishedOperationUnderOperationReturnType")
+  @js.native
   def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): EnumerationType = js.native
   
   /**
@@ -226,6 +267,9 @@ object EnumerationType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType.createInPublishedParameterUnderParameterType")
+  @js.native
   def createInPublishedParameterUnderParameterType(container: PublishedParameter): EnumerationType = js.native
   
   /**
@@ -236,6 +280,9 @@ object EnumerationType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.17.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType.createInRestOperationParameterUnderType")
+  @js.native
   def createInRestOperationParameterUnderType(container: RestOperationParameter): EnumerationType = js.native
   
   /**
@@ -246,6 +293,9 @@ object EnumerationType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType.createInResultHandlingUnderVariableType")
+  @js.native
   def createInResultHandlingUnderVariableType(container: ResultHandling): EnumerationType = js.native
   
   /**
@@ -256,9 +306,22 @@ object EnumerationType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType.createInValueMappingElementUnderType")
+  @js.native
   def createInValueMappingElementUnderType(container: ValueMappingElement): EnumerationType = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EnumerationType.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

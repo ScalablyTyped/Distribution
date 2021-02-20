@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeStackSetOperationOutput extends js.Object {
+trait DescribeStackSetOperationOutput extends StObject {
   
   /**
     * The specified stack set operation.
@@ -21,24 +22,12 @@ object DescribeStackSetOperationOutput {
   }
   
   @scala.inline
-  implicit class DescribeStackSetOperationOutputOps[Self <: DescribeStackSetOperationOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeStackSetOperationOutputMutableBuilder[Self <: DescribeStackSetOperationOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStackSetOperation(value: StackSetOperation): Self = StObject.set(x, "StackSetOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStackSetOperation(value: StackSetOperation): Self = this.set("StackSetOperation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackSetOperation: Self = this.set("StackSetOperation", js.undefined)
+    def setStackSetOperationUndefined: Self = StObject.set(x, "StackSetOperation", js.undefined)
   }
 }

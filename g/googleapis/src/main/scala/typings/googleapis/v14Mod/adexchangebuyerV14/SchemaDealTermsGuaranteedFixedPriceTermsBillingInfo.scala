@@ -1,11 +1,12 @@
 package typings.googleapis.v14Mod.adexchangebuyerV14
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaDealTermsGuaranteedFixedPriceTermsBillingInfo extends js.Object {
+trait SchemaDealTermsGuaranteedFixedPriceTermsBillingInfo extends StObject {
   
   /**
     * The timestamp (in ms since epoch) when the original reservation price for
@@ -44,42 +45,30 @@ object SchemaDealTermsGuaranteedFixedPriceTermsBillingInfo {
   }
   
   @scala.inline
-  implicit class SchemaDealTermsGuaranteedFixedPriceTermsBillingInfoOps[Self <: SchemaDealTermsGuaranteedFixedPriceTermsBillingInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaDealTermsGuaranteedFixedPriceTermsBillingInfoMutableBuilder[Self <: SchemaDealTermsGuaranteedFixedPriceTermsBillingInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrencyConversionTimeMs(value: String): Self = StObject.set(x, "currencyConversionTimeMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrencyConversionTimeMsUndefined: Self = StObject.set(x, "currencyConversionTimeMs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDfpLineItemId(value: String): Self = StObject.set(x, "dfpLineItemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyConversionTimeMs(value: String): Self = this.set("currencyConversionTimeMs", value.asInstanceOf[js.Any])
+    def setDfpLineItemIdUndefined: Self = StObject.set(x, "dfpLineItemId", js.undefined)
     
     @scala.inline
-    def deleteCurrencyConversionTimeMs: Self = this.set("currencyConversionTimeMs", js.undefined)
+    def setOriginalContractedQuantity(value: String): Self = StObject.set(x, "originalContractedQuantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDfpLineItemId(value: String): Self = this.set("dfpLineItemId", value.asInstanceOf[js.Any])
+    def setOriginalContractedQuantityUndefined: Self = StObject.set(x, "originalContractedQuantity", js.undefined)
     
     @scala.inline
-    def deleteDfpLineItemId: Self = this.set("dfpLineItemId", js.undefined)
+    def setPrice(value: SchemaPrice): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalContractedQuantity(value: String): Self = this.set("originalContractedQuantity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalContractedQuantity: Self = this.set("originalContractedQuantity", js.undefined)
-    
-    @scala.inline
-    def setPrice(value: SchemaPrice): Self = this.set("price", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrice: Self = this.set("price", js.undefined)
+    def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
   }
 }

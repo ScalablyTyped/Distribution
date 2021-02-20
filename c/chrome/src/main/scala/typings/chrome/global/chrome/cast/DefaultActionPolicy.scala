@@ -1,12 +1,13 @@
 package typings.chrome.global.chrome.cast
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("chrome.cast.DefaultActionPolicy")
 @js.native
-object DefaultActionPolicy extends js.Object {
+object DefaultActionPolicy extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.chrome.chrome.cast.DefaultActionPolicy with String] = js.native

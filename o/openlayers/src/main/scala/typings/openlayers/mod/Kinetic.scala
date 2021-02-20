@@ -1,12 +1,13 @@
 package typings.openlayers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "Kinetic")
 @js.native
-class Kinetic protected () extends js.Object {
+class Kinetic protected () extends StObject {
   /**
     * @classdesc
     * Implementation of inertial deceleration for map movement.

@@ -1,11 +1,12 @@
 package typings.stellarSdk.horizonApiMod.Horizon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InnerTransactionResponse extends js.Object {
+trait InnerTransactionResponse extends StObject {
   
   var hash: String = js.native
   
@@ -22,30 +23,18 @@ object InnerTransactionResponse {
   }
   
   @scala.inline
-  implicit class InnerTransactionResponseOps[Self <: InnerTransactionResponse] (val x: Self) extends AnyVal {
+  implicit class InnerTransactionResponseMutableBuilder[Self <: InnerTransactionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMax_fee(value: String): Self = StObject.set(x, "max_fee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSignatures(value: js.Array[String]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMax_fee(value: String): Self = this.set("max_fee", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignaturesVarargs(value: String*): Self = this.set("signatures", js.Array(value :_*))
-    
-    @scala.inline
-    def setSignatures(value: js.Array[String]): Self = this.set("signatures", value.asInstanceOf[js.Any])
+    def setSignaturesVarargs(value: String*): Self = StObject.set(x, "signatures", js.Array(value :_*))
   }
 }

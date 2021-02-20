@@ -1,12 +1,13 @@
 package typings.box2d.Box2D.Dynamics.Joints
 
 import typings.box2d.Box2D.Dynamics.b2Body
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2JointEdge extends js.Object {
+trait b2JointEdge extends StObject {
   
   /**
     * The joint.
@@ -37,30 +38,18 @@ object b2JointEdge {
   }
   
   @scala.inline
-  implicit class b2JointEdgeOps[Self <: b2JointEdge] (val x: Self) extends AnyVal {
+  implicit class b2JointEdgeMutableBuilder[Self <: b2JointEdge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJoint(value: b2Joint): Self = StObject.set(x, "joint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNext(value: b2JointEdge): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOther(value: b2Body): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJoint(value: b2Joint): Self = this.set("joint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNext(value: b2JointEdge): Self = this.set("next", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOther(value: b2Body): Self = this.set("other", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrev(value: b2JointEdge): Self = this.set("prev", value.asInstanceOf[js.Any])
+    def setPrev(value: b2JointEdge): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
   }
 }

@@ -2,28 +2,33 @@ package typings.winrtUwp.global.Windows.Networking
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-@JSGlobal("Windows.Networking.XboxLive")
-@js.native
-object XboxLive extends js.Object {
+object XboxLive {
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  @JSGlobal("Windows.Networking.XboxLive.XboxLiveDeviceAddress")
   @js.native
   abstract class XboxLiveDeviceAddress ()
     extends typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress
-  /* static members */
-  @js.native
-  object XboxLiveDeviceAddress extends js.Object {
+  object XboxLiveDeviceAddress {
+    
+    @JSGlobal("Windows.Networking.XboxLive.XboxLiveDeviceAddress")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       * @param base64 This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       * @return This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       */
+    /* static member */
+    @JSGlobal("Windows.Networking.XboxLive.XboxLiveDeviceAddress.createFromSnapshotBase64")
+    @js.native
     def createFromSnapshotBase64(base64: String): typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress = js.native
     
     /**
@@ -31,6 +36,9 @@ object XboxLive extends js.Object {
       * @param buffer This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       * @return This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       */
+    /* static member */
+    @JSGlobal("Windows.Networking.XboxLive.XboxLiveDeviceAddress.createFromSnapshotBuffer")
+    @js.native
     def createFromSnapshotBuffer(buffer: IBuffer): typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress = js.native
     
     /**
@@ -38,25 +46,35 @@ object XboxLive extends js.Object {
       * @param buffer This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       * @return This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       */
+    /* static member */
+    @JSGlobal("Windows.Networking.XboxLive.XboxLiveDeviceAddress.createFromSnapshotBytes")
+    @js.native
     def createFromSnapshotBytes(buffer: js.Array[Double]): typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress = js.native
     
     /**
       * This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       * @return This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       */
+    /* static member */
+    @JSGlobal("Windows.Networking.XboxLive.XboxLiveDeviceAddress.getLocal")
+    @js.native
     def getLocal(): typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveDeviceAddress = js.native
     
     /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-    var maxSnapshotBytesSize: Double = js.native
+    /* static member */
+    @JSGlobal("Windows.Networking.XboxLive.XboxLiveDeviceAddress.maxSnapshotBytesSize")
+    @js.native
+    def maxSnapshotBytesSize: Double = js.native
+    @scala.inline
+    def maxSnapshotBytesSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxSnapshotBytesSize")(x.asInstanceOf[js.Any])
   }
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPair")
   @js.native
   abstract class XboxLiveEndpointPair ()
     extends typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPair
-  /* static members */
-  @js.native
-  object XboxLiveEndpointPair extends js.Object {
+  object XboxLiveEndpointPair {
     
     /**
       * This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
@@ -66,6 +84,9 @@ object XboxLive extends js.Object {
       * @param remotePort This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       * @return This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       */
+    /* static member */
+    @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPair.findEndpointPairByHostNamesAndPorts")
+    @js.native
     def findEndpointPairByHostNamesAndPorts(
       localHostName: typings.winrtUwp.Windows.Networking.HostName,
       localPort: String,
@@ -79,12 +100,16 @@ object XboxLive extends js.Object {
       * @param remoteSocketAddress This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       * @return This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       */
+    /* static member */
+    @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPair.findEndpointPairBySocketAddressBytes")
+    @js.native
     def findEndpointPairBySocketAddressBytes(localSocketAddress: js.Array[Double], remoteSocketAddress: js.Array[Double]): typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPair = js.native
   }
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors")
   @js.native
-  object XboxLiveEndpointPairCreationBehaviors extends js.Object {
+  object XboxLiveEndpointPairCreationBehaviors extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -97,13 +122,15 @@ object XboxLive extends js.Object {
   }
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult")
   @js.native
   abstract class XboxLiveEndpointPairCreationResult ()
     extends typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairCreationResult
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus")
   @js.native
-  object XboxLiveEndpointPairCreationStatus extends js.Object {
+  object XboxLiveEndpointPairCreationStatus extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -130,8 +157,9 @@ object XboxLive extends js.Object {
   }
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPairState")
   @js.native
-  object XboxLiveEndpointPairState extends js.Object {
+  object XboxLiveEndpointPairState extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -154,37 +182,51 @@ object XboxLive extends js.Object {
   }
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs")
   @js.native
   abstract class XboxLiveEndpointPairStateChangedEventArgs ()
     extends typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairStateChangedEventArgs
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate")
   @js.native
   abstract class XboxLiveEndpointPairTemplate ()
     extends typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate
-  /* static members */
-  @js.native
-  object XboxLiveEndpointPairTemplate extends js.Object {
+  object XboxLiveEndpointPairTemplate {
+    
+    @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       * @param name This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       * @return This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       */
+    /* static member */
+    @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.getTemplateByName")
+    @js.native
     def getTemplateByName(name: String): typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate = js.native
     
     /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-    var templates: IVectorView[typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate] = js.native
+    /* static member */
+    @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate.templates")
+    @js.native
+    def templates: IVectorView[typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate] = js.native
+    @scala.inline
+    def templates_=(x: IVectorView[typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("templates")(x.asInstanceOf[js.Any])
   }
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  @JSGlobal("Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs")
   @js.native
   abstract class XboxLiveInboundEndpointPairCreatedEventArgs ()
     extends typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveInboundEndpointPairCreatedEventArgs
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  @JSGlobal("Windows.Networking.XboxLive.XboxLiveNetworkAccessKind")
   @js.native
-  object XboxLiveNetworkAccessKind extends js.Object {
+  object XboxLiveNetworkAccessKind extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -199,42 +241,77 @@ object XboxLive extends js.Object {
   }
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement")
   @js.native
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   class XboxLiveQualityOfServiceMeasurement ()
     extends typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement
-  /* static members */
-  @js.native
-  object XboxLiveQualityOfServiceMeasurement extends js.Object {
+  object XboxLiveQualityOfServiceMeasurement {
+    
+    @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+    /* static member */
+    @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.clearPrivatePayload")
+    @js.native
     def clearPrivatePayload(): Unit = js.native
     
     /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-    var isSystemInboundBandwidthConstrained: Boolean = js.native
+    /* static member */
+    @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.isSystemInboundBandwidthConstrained")
+    @js.native
+    def isSystemInboundBandwidthConstrained: Boolean = js.native
+    @scala.inline
+    def isSystemInboundBandwidthConstrained_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSystemInboundBandwidthConstrained")(x.asInstanceOf[js.Any])
     
     /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-    var isSystemOutboundBandwidthConstrained: Boolean = js.native
+    /* static member */
+    @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.isSystemOutboundBandwidthConstrained")
+    @js.native
+    def isSystemOutboundBandwidthConstrained: Boolean = js.native
+    @scala.inline
+    def isSystemOutboundBandwidthConstrained_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSystemOutboundBandwidthConstrained")(x.asInstanceOf[js.Any])
     
     /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-    var maxPrivatePayloadSize: Double = js.native
+    /* static member */
+    @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.maxPrivatePayloadSize")
+    @js.native
+    def maxPrivatePayloadSize: Double = js.native
+    @scala.inline
+    def maxPrivatePayloadSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxPrivatePayloadSize")(x.asInstanceOf[js.Any])
     
     /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-    var maxSimultaneousProbeConnections: Double = js.native
+    /* static member */
+    @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.maxSimultaneousProbeConnections")
+    @js.native
+    def maxSimultaneousProbeConnections: Double = js.native
+    @scala.inline
+    def maxSimultaneousProbeConnections_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxSimultaneousProbeConnections")(x.asInstanceOf[js.Any])
     
     /**
       * This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       * @param payload This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
       */
+    /* static member */
+    @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.publishPrivatePayloadBytes")
+    @js.native
     def publishPrivatePayloadBytes(payload: js.Array[Double]): Unit = js.native
     
     /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-    var publishedPrivatePayload: IBuffer = js.native
+    /* static member */
+    @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement.publishedPrivatePayload")
+    @js.native
+    def publishedPrivatePayload: IBuffer = js.native
+    @scala.inline
+    def publishedPrivatePayload_=(x: IBuffer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("publishedPrivatePayload")(x.asInstanceOf[js.Any])
   }
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurementStatus")
   @js.native
-  object XboxLiveQualityOfServiceMeasurementStatus extends js.Object {
+  object XboxLiveQualityOfServiceMeasurementStatus extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -267,8 +344,9 @@ object XboxLive extends js.Object {
   }
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric")
   @js.native
-  object XboxLiveQualityOfServiceMetric extends js.Object {
+  object XboxLiveQualityOfServiceMetric extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -295,18 +373,21 @@ object XboxLive extends js.Object {
   }
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult")
   @js.native
   abstract class XboxLiveQualityOfServiceMetricResult ()
     extends typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetricResult
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult")
   @js.native
   abstract class XboxLiveQualityOfServicePrivatePayloadResult ()
     extends typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServicePrivatePayloadResult
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  @JSGlobal("Windows.Networking.XboxLive.XboxLiveSocketKind")
   @js.native
-  object XboxLiveSocketKind extends js.Object {
+  object XboxLiveSocketKind extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveSocketKind with Double] = js.native

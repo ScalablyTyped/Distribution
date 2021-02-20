@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceAccessPolicy extends js.Object {
+trait ResourceAccessPolicy extends StObject {
   
   /**
     * The permissions that the Lambda function has to the resource. Can be one of ''rw'' (read/write) or ''ro'' (read-only).
@@ -26,27 +27,15 @@ object ResourceAccessPolicy {
   }
   
   @scala.inline
-  implicit class ResourceAccessPolicyOps[Self <: ResourceAccessPolicy] (val x: Self) extends AnyVal {
+  implicit class ResourceAccessPolicyMutableBuilder[Self <: ResourceAccessPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPermission(value: Permission): Self = StObject.set(x, "Permission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPermissionUndefined: Self = StObject.set(x, "Permission", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResourceId(value: string): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPermission(value: Permission): Self = this.set("Permission", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermission: Self = this.set("Permission", js.undefined)
+    def setResourceId(value: string): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.UI
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,93 +94,81 @@ object NavigationWindowEventMap {
   }
   
   @scala.inline
-  implicit class NavigationWindowEventMapOps[Self <: NavigationWindowEventMap] (val x: Self) extends AnyVal {
+  implicit class NavigationWindowEventMapMutableBuilder[Self <: NavigationWindowEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroidback(value: NavigationWindowAndroidbackEvent): Self = StObject.set(x, "androidback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidcamera(value: NavigationWindowAndroidcameraEvent): Self = StObject.set(x, "androidcamera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAndroidfocus(value: NavigationWindowAndroidfocusEvent): Self = StObject.set(x, "androidfocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidback(value: NavigationWindowAndroidbackEvent): Self = this.set("androidback", value.asInstanceOf[js.Any])
+    def setAndroidsearch(value: NavigationWindowAndroidsearchEvent): Self = StObject.set(x, "androidsearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidcamera(value: NavigationWindowAndroidcameraEvent): Self = this.set("androidcamera", value.asInstanceOf[js.Any])
+    def setAndroidvoldown(value: NavigationWindowAndroidvoldownEvent): Self = StObject.set(x, "androidvoldown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidfocus(value: NavigationWindowAndroidfocusEvent): Self = this.set("androidfocus", value.asInstanceOf[js.Any])
+    def setAndroidvolup(value: NavigationWindowAndroidvolupEvent): Self = StObject.set(x, "androidvolup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidsearch(value: NavigationWindowAndroidsearchEvent): Self = this.set("androidsearch", value.asInstanceOf[js.Any])
+    def setBlur(value: NavigationWindowBlurEvent): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidvoldown(value: NavigationWindowAndroidvoldownEvent): Self = this.set("androidvoldown", value.asInstanceOf[js.Any])
+    def setClick(value: NavigationWindowClickEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidvolup(value: NavigationWindowAndroidvolupEvent): Self = this.set("androidvolup", value.asInstanceOf[js.Any])
+    def setClose(value: NavigationWindowCloseEvent): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlur(value: NavigationWindowBlurEvent): Self = this.set("blur", value.asInstanceOf[js.Any])
+    def setDblclick(value: NavigationWindowDblclickEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: NavigationWindowClickEvent): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setDoubletap(value: NavigationWindowDoubletapEvent): Self = StObject.set(x, "doubletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: NavigationWindowCloseEvent): Self = this.set("close", value.asInstanceOf[js.Any])
+    def setFocus(value: NavigationWindowFocusEvent): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDblclick(value: NavigationWindowDblclickEvent): Self = this.set("dblclick", value.asInstanceOf[js.Any])
+    def setKeypressed(value: NavigationWindowKeypressedEvent): Self = StObject.set(x, "keypressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubletap(value: NavigationWindowDoubletapEvent): Self = this.set("doubletap", value.asInstanceOf[js.Any])
+    def setLongclick(value: NavigationWindowLongclickEvent): Self = StObject.set(x, "longclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus(value: NavigationWindowFocusEvent): Self = this.set("focus", value.asInstanceOf[js.Any])
+    def setLongpress(value: NavigationWindowLongpressEvent): Self = StObject.set(x, "longpress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeypressed(value: NavigationWindowKeypressedEvent): Self = this.set("keypressed", value.asInstanceOf[js.Any])
+    def setOpen(value: NavigationWindowOpenEvent): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongclick(value: NavigationWindowLongclickEvent): Self = this.set("longclick", value.asInstanceOf[js.Any])
+    def setPinch(value: NavigationWindowPinchEvent): Self = StObject.set(x, "pinch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongpress(value: NavigationWindowLongpressEvent): Self = this.set("longpress", value.asInstanceOf[js.Any])
+    def setPostlayout(value: NavigationWindowPostlayoutEvent): Self = StObject.set(x, "postlayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: NavigationWindowOpenEvent): Self = this.set("open", value.asInstanceOf[js.Any])
+    def setSingletap(value: NavigationWindowSingletapEvent): Self = StObject.set(x, "singletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinch(value: NavigationWindowPinchEvent): Self = this.set("pinch", value.asInstanceOf[js.Any])
+    def setSwipe(value: NavigationWindowSwipeEvent): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostlayout(value: NavigationWindowPostlayoutEvent): Self = this.set("postlayout", value.asInstanceOf[js.Any])
+    def setTouchcancel(value: NavigationWindowTouchcancelEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingletap(value: NavigationWindowSingletapEvent): Self = this.set("singletap", value.asInstanceOf[js.Any])
+    def setTouchend(value: NavigationWindowTouchendEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipe(value: NavigationWindowSwipeEvent): Self = this.set("swipe", value.asInstanceOf[js.Any])
+    def setTouchmove(value: NavigationWindowTouchmoveEvent): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchcancel(value: NavigationWindowTouchcancelEvent): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
+    def setTouchstart(value: NavigationWindowTouchstartEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchend(value: NavigationWindowTouchendEvent): Self = this.set("touchend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchmove(value: NavigationWindowTouchmoveEvent): Self = this.set("touchmove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchstart(value: NavigationWindowTouchstartEvent): Self = this.set("touchstart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwofingertap(value: NavigationWindowTwofingertapEvent): Self = this.set("twofingertap", value.asInstanceOf[js.Any])
+    def setTwofingertap(value: NavigationWindowTwofingertapEvent): Self = StObject.set(x, "twofingertap", value.asInstanceOf[js.Any])
   }
 }

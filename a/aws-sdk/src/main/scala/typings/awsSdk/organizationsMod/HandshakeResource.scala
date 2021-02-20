@@ -1,11 +1,12 @@
 package typings.awsSdk.organizationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HandshakeResource extends js.Object {
+trait HandshakeResource extends StObject {
   
   /**
     * When needed, contains an additional array of HandshakeResource objects.
@@ -31,39 +32,27 @@ object HandshakeResource {
   }
   
   @scala.inline
-  implicit class HandshakeResourceOps[Self <: HandshakeResource] (val x: Self) extends AnyVal {
+  implicit class HandshakeResourceMutableBuilder[Self <: HandshakeResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResources(value: HandshakeResources): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourcesVarargs(value: HandshakeResource*): Self = StObject.set(x, "Resources", js.Array(value :_*))
     
     @scala.inline
-    def setResourcesVarargs(value: HandshakeResource*): Self = this.set("Resources", js.Array(value :_*))
+    def setType(value: HandshakeResourceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResources(value: HandshakeResources): Self = this.set("Resources", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteResources: Self = this.set("Resources", js.undefined)
+    def setValue(value: HandshakeResourceValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: HandshakeResourceType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
-    
-    @scala.inline
-    def setValue(value: HandshakeResourceValue): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("Value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

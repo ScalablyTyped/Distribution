@@ -1,48 +1,60 @@
 package typings.googleapis
 
 import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.googleAuthLibrary.jwtclientMod.JWTOptions
+import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleapis.cloudprivatecatalogV1beta1Mod.cloudprivatecatalogV1beta1.Cloudprivatecatalog
 import typings.googleapis.cloudprivatecatalogV1beta1Mod.cloudprivatecatalogV1beta1.Options
 import typings.googleapis.googleapisStrings.v1beta1
 import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("googleapis/build/src/apis/cloudprivatecatalog", JSImport.Namespace)
-@js.native
-object cloudprivatecatalogMod extends js.Object {
+object cloudprivatecatalogMod {
   
-  def cloudprivatecatalog(options: Options): Cloudprivatecatalog = js.native
-  @JSName("cloudprivatecatalog")
-  def cloudprivatecatalog_v1beta1(version: v1beta1): Cloudprivatecatalog = js.native
-  
-  @js.native
-  object VERSIONS extends js.Object {
+  object VERSIONS {
     
+    @JSImport("googleapis/build/src/apis/cloudprivatecatalog", "VERSIONS")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/cloudprivatecatalog", "VERSIONS.v1beta1")
     @js.native
     class v1beta1 protected () extends Cloudprivatecatalog {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @JSImport("googleapis/build/src/apis/cloudprivatecatalog", "VERSIONS.v1beta1")
     @js.native
-    object v1beta1
-      extends TopLevel[
-              Instantiable2[
-                /* options */ GlobalOptions, 
-                /* google */ js.UndefOr[GoogleConfigurable], 
-                Cloudprivatecatalog
-              ]
-            ]
+    def v1beta1: Instantiable2[
+        /* options */ GlobalOptions, 
+        /* google */ js.UndefOr[GoogleConfigurable], 
+        Cloudprivatecatalog
+      ] = js.native
+    @scala.inline
+    def v1beta1_=(
+      x: Instantiable2[
+          /* options */ GlobalOptions, 
+          /* google */ js.UndefOr[GoogleConfigurable], 
+          Cloudprivatecatalog
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1beta1")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object auth extends TopLevel[AuthPlus] {
+  object auth extends Shortcut {
     
+    @JSImport("googleapis/build/src/apis/cloudprivatecatalog", "auth")
+    @js.native
+    val ^ : AuthPlus = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/cloudprivatecatalog", "auth.Compute")
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -53,6 +65,24 @@ object cloudprivatecatalogMod extends js.Object {
     class Compute ()
       extends typings.googleAuthLibrary.mod.Compute
     
+    /**
+      * Export DefaultTransporter as a static property of the class.
+      */
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/cloudprivatecatalog", "auth.DefaultTransporter")
+    @js.native
+    class DefaultTransporter ()
+      extends typings.googleAuthLibrary.transportersMod.DefaultTransporter
+    /* static members */
+    object DefaultTransporter {
+      
+      @JSImport("googleapis/build/src/apis/cloudprivatecatalog", "auth.DefaultTransporter.constructor")
+      @js.native
+      def constructor(): js.Any = js.native
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/cloudprivatecatalog", "auth.JWT")
     @js.native
     class JWT protected ()
       extends typings.googleAuthLibrary.mod.JWT {
@@ -70,5 +100,32 @@ object cloudprivatecatalogMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/cloudprivatecatalog", "auth.OAuth2")
+    @js.native
+    /**
+      * Handles OAuth2 flow for Google APIs.
+      *
+      * @param clientId The authentication client ID.
+      * @param clientSecret The authentication client secret.
+      * @param redirectUri The URI to redirect to after completing the auth
+      * request.
+      * @param opts optional options for overriding the given parameters.
+      * @constructor
+      */
+    class OAuth2 () extends OAuth2Client
+    
+    type _To = AuthPlus
+    
+    /* This means you don't have to write `^`, but can instead just say `auth.foo` */
+    override def _to: AuthPlus = ^
   }
+  
+  @JSImport("googleapis/build/src/apis/cloudprivatecatalog", "cloudprivatecatalog")
+  @js.native
+  def cloudprivatecatalog(options: Options): Cloudprivatecatalog = js.native
+  @JSImport("googleapis/build/src/apis/cloudprivatecatalog", "cloudprivatecatalog")
+  @js.native
+  def cloudprivatecatalog_v1beta1(version: v1beta1): Cloudprivatecatalog = js.native
 }

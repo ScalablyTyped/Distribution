@@ -1,6 +1,7 @@
 package typings.phaser.mod
 
 import typings.std.Number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,10 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Vector ()
   extends typings.phaser.MatterJS.Vector
-/* static members */
-@JSImport("matter", "Vector")
-@js.native
-object Vector extends js.Object {
+object Vector {
   
   /**
     * Adds the two vectors.
@@ -31,7 +29,12 @@ object Vector extends js.Object {
     * @param {vector} [output]
     * @return {vector} A new vector of vectorA and vectorB added
     */
+  /* static member */
+  @JSImport("matter", "Vector.add")
+  @js.native
   def add(vectorA: typings.phaser.MatterJS.Vector, vectorB: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = js.native
+  @JSImport("matter", "Vector.add")
+  @js.native
   def add(
     vectorA: typings.phaser.MatterJS.Vector,
     vectorB: typings.phaser.MatterJS.Vector,
@@ -45,6 +48,9 @@ object Vector extends js.Object {
     * @param {vector} vectorB
     * @return {number} The angle in radians
     */
+  /* static member */
+  @JSImport("matter", "Vector.angle")
+  @js.native
   def angle(vectorA: typings.phaser.MatterJS.Vector, vectorB: typings.phaser.MatterJS.Vector): Double = js.native
   
   /**
@@ -53,7 +59,10 @@ object Vector extends js.Object {
     * @param {vector} vector
     * @return {vector} A new cloned vector
     */
-  def clone(vector: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = js.native
+  /* static member */
+  @JSImport("matter", "Vector.clone")
+  @js.native
+  def clone_(vector: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = js.native
   
   /**
     * Creates a new vector.
@@ -62,9 +71,18 @@ object Vector extends js.Object {
     * @param {number} y
     * @return {vector} A new vector
     */
+  /* static member */
+  @JSImport("matter", "Vector.create")
+  @js.native
   def create(): typings.phaser.MatterJS.Vector = js.native
+  @JSImport("matter", "Vector.create")
+  @js.native
   def create(x: js.UndefOr[scala.Nothing], y: Double): typings.phaser.MatterJS.Vector = js.native
+  @JSImport("matter", "Vector.create")
+  @js.native
   def create(x: Double): typings.phaser.MatterJS.Vector = js.native
+  @JSImport("matter", "Vector.create")
+  @js.native
   def create(x: Double, y: Double): typings.phaser.MatterJS.Vector = js.native
   
   /**
@@ -74,6 +92,9 @@ object Vector extends js.Object {
     * @param {vector} vectorB
     * @return {number} The cross product of the two vectors
     */
+  /* static member */
+  @JSImport("matter", "Vector.cross")
+  @js.native
   def cross(vectorA: typings.phaser.MatterJS.Vector, vectorB: typings.phaser.MatterJS.Vector): Double = js.native
   
   /**
@@ -84,6 +105,9 @@ object Vector extends js.Object {
     * @param {vector} vectorC
     * @return {number} The cross product of the three vectors
     */
+  /* static member */
+  @JSImport("matter", "Vector.cross3")
+  @js.native
   def cross3(
     vectorA: typings.phaser.MatterJS.Vector,
     vectorB: typings.phaser.MatterJS.Vector,
@@ -97,6 +121,9 @@ object Vector extends js.Object {
     * @param {number} scalar
     * @return {vector} A new vector divided by scalar
     */
+  /* static member */
+  @JSImport("matter", "Vector.div")
+  @js.native
   def div(vector: typings.phaser.MatterJS.Vector, scalar: Double): typings.phaser.MatterJS.Vector = js.native
   
   /**
@@ -106,6 +133,9 @@ object Vector extends js.Object {
     * @param {vector} vectorB
     * @return {number} The dot product of the two vectors
     */
+  /* static member */
+  @JSImport("matter", "Vector.dot")
+  @js.native
   def dot(vectorA: typings.phaser.MatterJS.Vector, vectorB: typings.phaser.MatterJS.Vector): Number = js.native
   
   /**
@@ -114,6 +144,9 @@ object Vector extends js.Object {
     * @param {vector} vector
     * @return {number} The magnitude of the vector
     */
+  /* static member */
+  @JSImport("matter", "Vector.magnitude")
+  @js.native
   def magnitude(vector: typings.phaser.MatterJS.Vector): Double = js.native
   
   /**
@@ -122,6 +155,9 @@ object Vector extends js.Object {
     * @param {vector} vector
     * @return {number} The squared magnitude of the vector
     */
+  /* static member */
+  @JSImport("matter", "Vector.magnitudeSquared")
+  @js.native
   def magnitudeSquared(vector: typings.phaser.MatterJS.Vector): Double = js.native
   
   /**
@@ -131,6 +167,9 @@ object Vector extends js.Object {
     * @param {number} scalar
     * @return {vector} A new vector multiplied by scalar
     */
+  /* static member */
+  @JSImport("matter", "Vector.mult")
+  @js.native
   def mult(vector: typings.phaser.MatterJS.Vector, scalar: Double): typings.phaser.MatterJS.Vector = js.native
   
   /**
@@ -139,6 +178,9 @@ object Vector extends js.Object {
     * @param {vector} vector
     * @return {vector} The negated vector
     */
+  /* static member */
+  @JSImport("matter", "Vector.neg")
+  @js.native
   def neg(vector: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = js.native
   
   /**
@@ -147,6 +189,9 @@ object Vector extends js.Object {
     * @param {vector} vector
     * @return {vector} A new vector normalised
     */
+  /* static member */
+  @JSImport("matter", "Vector.normalise")
+  @js.native
   def normalise(vector: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = js.native
   
   /**
@@ -156,7 +201,12 @@ object Vector extends js.Object {
     * @param {bool} [negate=false]
     * @return {vector} The perpendicular vector
     */
+  /* static member */
+  @JSImport("matter", "Vector.perp")
+  @js.native
   def perp(vector: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = js.native
+  @JSImport("matter", "Vector.perp")
+  @js.native
   def perp(vector: typings.phaser.MatterJS.Vector, negate: Boolean): typings.phaser.MatterJS.Vector = js.native
   
   /**
@@ -166,6 +216,9 @@ object Vector extends js.Object {
     * @param {number} angle
     * @return {vector} A new vector rotated about (0, 0)
     */
+  /* static member */
+  @JSImport("matter", "Vector.rotate")
+  @js.native
   def rotate(vector: typings.phaser.MatterJS.Vector, angle: Double): typings.phaser.MatterJS.Vector = js.native
   
   /**
@@ -177,7 +230,12 @@ object Vector extends js.Object {
     * @param {vector} [output]
     * @return {vector} A new vector rotated about the point
     */
+  /* static member */
+  @JSImport("matter", "Vector.rotateAbout")
+  @js.native
   def rotateAbout(vector: typings.phaser.MatterJS.Vector, angle: Double, point: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = js.native
+  @JSImport("matter", "Vector.rotateAbout")
+  @js.native
   def rotateAbout(
     vector: typings.phaser.MatterJS.Vector,
     angle: Double,
@@ -193,7 +251,12 @@ object Vector extends js.Object {
     * @param {vector} [output]
     * @return {vector} A new vector of vectorA and vectorB subtracted
     */
+  /* static member */
+  @JSImport("matter", "Vector.sub")
+  @js.native
   def sub(vectorA: typings.phaser.MatterJS.Vector, vectorB: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = js.native
+  @JSImport("matter", "Vector.sub")
+  @js.native
   def sub(
     vectorA: typings.phaser.MatterJS.Vector,
     vectorB: typings.phaser.MatterJS.Vector,

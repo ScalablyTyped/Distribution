@@ -9,12 +9,13 @@ import typings.reactVirtualized.esTableMod.TableHeaderProps
 import typings.reactVirtualized.esTableMod.TableHeaderRenderer
 import typings.reactVirtualized.reactVirtualizedNumbers.`0`
 import typings.reactVirtualized.reactVirtualizedNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CellRenderer extends js.Object {
+trait CellRenderer extends StObject {
   
   var cellDataGetter: TableCellDataGetter = js.native
   
@@ -41,33 +42,21 @@ object CellRenderer {
   }
   
   @scala.inline
-  implicit class CellRendererOps[Self <: CellRenderer] (val x: Self) extends AnyVal {
+  implicit class CellRendererMutableBuilder[Self <: CellRenderer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellDataGetter(value: /* params */ TableCellDataGetterParams => js.Any): Self = StObject.set(x, "cellDataGetter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellRenderer(value: /* props */ TableCellProps => ReactNode): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlexGrow(value: `0`): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellDataGetter(value: /* params */ TableCellDataGetterParams => js.Any): Self = this.set("cellDataGetter", js.Any.fromFunction1(value))
+    def setFlexShrink(value: `1`): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellRenderer(value: /* props */ TableCellProps => ReactNode): Self = this.set("cellRenderer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFlexGrow(value: `0`): Self = this.set("flexGrow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFlexShrink(value: `1`): Self = this.set("flexShrink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeaderRenderer(value: /* props */ TableHeaderProps => ReactNode): Self = this.set("headerRenderer", js.Any.fromFunction1(value))
+    def setHeaderRenderer(value: /* props */ TableHeaderProps => ReactNode): Self = StObject.set(x, "headerRenderer", js.Any.fromFunction1(value))
   }
 }

@@ -1,15 +1,15 @@
 package typings.guacamoleClient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("guacamole-client/lib/Parser", JSImport.Namespace)
-@js.native
-object parserMod extends js.Object {
+object parserMod {
   
+  @JSImport("guacamole-client/lib/Parser", "Parser")
   @js.native
-  class Parser () extends js.Object {
+  class Parser () extends StObject {
     
     /**
       * Fired once for every complete Guacamole instruction received, in order.

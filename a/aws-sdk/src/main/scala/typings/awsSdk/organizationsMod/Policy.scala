@@ -1,11 +1,12 @@
 package typings.awsSdk.organizationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Policy extends js.Object {
+trait Policy extends StObject {
   
   /**
     * The text content of the policy.
@@ -26,30 +27,18 @@ object Policy {
   }
   
   @scala.inline
-  implicit class PolicyOps[Self <: Policy] (val x: Self) extends AnyVal {
+  implicit class PolicyMutableBuilder[Self <: Policy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: PolicyContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolicySummary(value: PolicySummary): Self = StObject.set(x, "PolicySummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: PolicyContent): Self = this.set("Content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContent: Self = this.set("Content", js.undefined)
-    
-    @scala.inline
-    def setPolicySummary(value: PolicySummary): Self = this.set("PolicySummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicySummary: Self = this.set("PolicySummary", js.undefined)
+    def setPolicySummaryUndefined: Self = StObject.set(x, "PolicySummary", js.undefined)
   }
 }

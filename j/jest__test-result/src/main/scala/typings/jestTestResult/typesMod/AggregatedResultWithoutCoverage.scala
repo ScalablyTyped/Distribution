@@ -1,12 +1,13 @@
 package typings.jestTestResult.typesMod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AggregatedResultWithoutCoverage extends js.Object {
+trait AggregatedResultWithoutCoverage extends StObject {
   
   var numFailedTestSuites: Double = js.native
   
@@ -66,72 +67,60 @@ object AggregatedResultWithoutCoverage {
   }
   
   @scala.inline
-  implicit class AggregatedResultWithoutCoverageOps[Self <: AggregatedResultWithoutCoverage] (val x: Self) extends AnyVal {
+  implicit class AggregatedResultWithoutCoverageMutableBuilder[Self <: AggregatedResultWithoutCoverage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNumFailedTestSuites(value: Double): Self = StObject.set(x, "numFailedTestSuites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNumFailedTests(value: Double): Self = StObject.set(x, "numFailedTests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumPassedTestSuites(value: Double): Self = StObject.set(x, "numPassedTestSuites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumFailedTestSuites(value: Double): Self = this.set("numFailedTestSuites", value.asInstanceOf[js.Any])
+    def setNumPassedTests(value: Double): Self = StObject.set(x, "numPassedTests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumFailedTests(value: Double): Self = this.set("numFailedTests", value.asInstanceOf[js.Any])
+    def setNumPendingTestSuites(value: Double): Self = StObject.set(x, "numPendingTestSuites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumPassedTestSuites(value: Double): Self = this.set("numPassedTestSuites", value.asInstanceOf[js.Any])
+    def setNumPendingTests(value: Double): Self = StObject.set(x, "numPendingTests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumPassedTests(value: Double): Self = this.set("numPassedTests", value.asInstanceOf[js.Any])
+    def setNumRuntimeErrorTestSuites(value: Double): Self = StObject.set(x, "numRuntimeErrorTestSuites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumPendingTestSuites(value: Double): Self = this.set("numPendingTestSuites", value.asInstanceOf[js.Any])
+    def setNumTodoTests(value: Double): Self = StObject.set(x, "numTodoTests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumPendingTests(value: Double): Self = this.set("numPendingTests", value.asInstanceOf[js.Any])
+    def setNumTotalTestSuites(value: Double): Self = StObject.set(x, "numTotalTestSuites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumRuntimeErrorTestSuites(value: Double): Self = this.set("numRuntimeErrorTestSuites", value.asInstanceOf[js.Any])
+    def setNumTotalTests(value: Double): Self = StObject.set(x, "numTotalTests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumTodoTests(value: Double): Self = this.set("numTodoTests", value.asInstanceOf[js.Any])
+    def setOpenHandles(value: js.Array[Error]): Self = StObject.set(x, "openHandles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumTotalTestSuites(value: Double): Self = this.set("numTotalTestSuites", value.asInstanceOf[js.Any])
+    def setOpenHandlesVarargs(value: Error*): Self = StObject.set(x, "openHandles", js.Array(value :_*))
     
     @scala.inline
-    def setNumTotalTests(value: Double): Self = this.set("numTotalTests", value.asInstanceOf[js.Any])
+    def setSnapshot(value: SnapshotSummary): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenHandlesVarargs(value: Error*): Self = this.set("openHandles", js.Array(value :_*))
+    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenHandles(value: js.Array[Error]): Self = this.set("openHandles", value.asInstanceOf[js.Any])
+    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshot(value: SnapshotSummary): Self = this.set("snapshot", value.asInstanceOf[js.Any])
+    def setTestResults(value: js.Array[TestResult]): Self = StObject.set(x, "testResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Double): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setTestResultsVarargs(value: TestResult*): Self = StObject.set(x, "testResults", js.Array(value :_*))
     
     @scala.inline
-    def setSuccess(value: Boolean): Self = this.set("success", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestResultsVarargs(value: TestResult*): Self = this.set("testResults", js.Array(value :_*))
-    
-    @scala.inline
-    def setTestResults(value: js.Array[TestResult]): Self = this.set("testResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWasInterrupted(value: Boolean): Self = this.set("wasInterrupted", value.asInstanceOf[js.Any])
+    def setWasInterrupted(value: Boolean): Self = StObject.set(x, "wasInterrupted", value.asInstanceOf[js.Any])
   }
 }

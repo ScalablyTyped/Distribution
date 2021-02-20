@@ -3,13 +3,14 @@ package typings.chance.Chance
 import typings.chance.chanceStrings.all
 import typings.chance.chanceStrings.female
 import typings.chance.chanceStrings.male
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined chance.Chance.FullNameOptions & chance.Chance.FirstNameOptions & chance.Chance.LastNameOptions & chance.Chance.PrefixOptions */
 @js.native
-trait NameOptions extends js.Object {
+trait NameOptions extends StObject {
   
   var full: Boolean = js.native
   
@@ -42,39 +43,27 @@ object NameOptions {
   }
   
   @scala.inline
-  implicit class NameOptionsOps[Self <: NameOptions] (val x: Self) extends AnyVal {
+  implicit class NameOptionsMutableBuilder[Self <: NameOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGender(value: (male | female) with (male | female | all)): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMiddle(value: Boolean): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFull(value: Boolean): Self = this.set("full", value.asInstanceOf[js.Any])
+    def setMiddle_initial(value: Boolean): Self = StObject.set(x, "middle_initial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGender(value: (male | female) with (male | female | all)): Self = this.set("gender", value.asInstanceOf[js.Any])
+    def setNationality(value: FirstNameNationalities with LastNameNationalities): Self = StObject.set(x, "nationality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMiddle(value: Boolean): Self = this.set("middle", value.asInstanceOf[js.Any])
+    def setPrefix(value: Boolean): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMiddle_initial(value: Boolean): Self = this.set("middle_initial", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNationality(value: FirstNameNationalities with LastNameNationalities): Self = this.set("nationality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrefix(value: Boolean): Self = this.set("prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuffix(value: Boolean): Self = this.set("suffix", value.asInstanceOf[js.Any])
+    def setSuffix(value: Boolean): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
   }
 }

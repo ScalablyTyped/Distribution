@@ -3,12 +3,13 @@ package typings.bmapgl.BMapGL
 import typings.bmapgl.anon.Spots
 import typings.bmapgl.anon.Target
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Map extends js.Object {
+trait Map extends StObject {
   
   def addContextMenu(menu: ContextMenu): Unit = js.native
   

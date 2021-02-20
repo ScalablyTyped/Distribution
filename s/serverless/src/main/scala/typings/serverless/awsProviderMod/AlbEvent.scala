@@ -1,12 +1,13 @@
 package typings.serverless.awsProviderMod
 
 import typings.serverless.anon.Host
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlbEvent extends js.Object {
+trait AlbEvent extends StObject {
   
   var conditions: Host = js.native
   
@@ -23,27 +24,15 @@ object AlbEvent {
   }
   
   @scala.inline
-  implicit class AlbEventOps[Self <: AlbEvent] (val x: Self) extends AnyVal {
+  implicit class AlbEventMutableBuilder[Self <: AlbEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditions(value: Host): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setListenerArn(value: String): Self = StObject.set(x, "listenerArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConditions(value: Host): Self = this.set("conditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setListenerArn(value: String): Self = this.set("listenerArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPriority(value: Double | String): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setPriority(value: Double | String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
   }
 }

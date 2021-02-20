@@ -1,12 +1,13 @@
 package typings.babylonjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "DebugLayerTab")
 @js.native
-object DebugLayerTab extends js.Object {
+object DebugLayerTab extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.babylonjs.debugLayerMod.DebugLayerTab with Double] = js.native

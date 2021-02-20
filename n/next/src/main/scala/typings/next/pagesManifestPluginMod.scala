@@ -2,13 +2,20 @@ package typings.next
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Plugin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("next/dist/build/webpack/plugins/pages-manifest-plugin", JSImport.Namespace)
-@js.native
-object pagesManifestPluginMod extends js.Object {
+object pagesManifestPluginMod {
+  
+  @JSImport("next/dist/build/webpack/plugins/pages-manifest-plugin", JSImport.Default)
+  @js.native
+  class default protected () extends PagesManifestPlugin {
+    def this(serverless: Boolean) = this()
+  }
+  
+  type PagesManifest = StringDictionary[String]
   
   @js.native
   trait PagesManifestPlugin extends Plugin {
@@ -22,11 +29,4 @@ object pagesManifestPluginMod extends js.Object {
     
     var serverless: Boolean = js.native
   }
-  
-  @js.native
-  class default protected () extends PagesManifestPlugin {
-    def this(serverless: Boolean) = this()
-  }
-  
-  type PagesManifest = StringDictionary[String]
 }

@@ -3,6 +3,7 @@ package typings.agGrid.mod
 import typings.agGrid.beansMod.Beans
 import typings.agGrid.columnGroupChildMod.ColumnGroupChild
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAttachedRolePoliciesResponse extends js.Object {
+trait ListAttachedRolePoliciesResponse extends StObject {
   
   /**
     * A list of the attached policies.
@@ -31,39 +32,27 @@ object ListAttachedRolePoliciesResponse {
   }
   
   @scala.inline
-  implicit class ListAttachedRolePoliciesResponseOps[Self <: ListAttachedRolePoliciesResponse] (val x: Self) extends AnyVal {
+  implicit class ListAttachedRolePoliciesResponseMutableBuilder[Self <: ListAttachedRolePoliciesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachedPolicies(value: attachedPoliciesListType): Self = StObject.set(x, "AttachedPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachedPoliciesUndefined: Self = StObject.set(x, "AttachedPolicies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachedPoliciesVarargs(value: AttachedPolicy*): Self = StObject.set(x, "AttachedPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setAttachedPoliciesVarargs(value: AttachedPolicy*): Self = this.set("AttachedPolicies", js.Array(value :_*))
+    def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachedPolicies(value: attachedPoliciesListType): Self = this.set("AttachedPolicies", value.asInstanceOf[js.Any])
+    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
     @scala.inline
-    def deleteAttachedPolicies: Self = this.set("AttachedPolicies", js.undefined)
+    def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTruncated(value: booleanType): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: responseMarkerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

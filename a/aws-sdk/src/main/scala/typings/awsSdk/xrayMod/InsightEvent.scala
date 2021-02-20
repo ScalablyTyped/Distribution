@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsightEvent extends js.Object {
+trait InsightEvent extends StObject {
   
   /**
     * The impact statistics of the client side service. This includes the number of requests to the client service and whether the requests were faults or okay.
@@ -41,51 +42,39 @@ object InsightEvent {
   }
   
   @scala.inline
-  implicit class InsightEventOps[Self <: InsightEvent] (val x: Self) extends AnyVal {
+  implicit class InsightEventMutableBuilder[Self <: InsightEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientRequestImpactStatistics(value: RequestImpactStatistics): Self = StObject.set(x, "ClientRequestImpactStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientRequestImpactStatisticsUndefined: Self = StObject.set(x, "ClientRequestImpactStatistics", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventTime(value: Timestamp): Self = StObject.set(x, "EventTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientRequestImpactStatistics(value: RequestImpactStatistics): Self = this.set("ClientRequestImpactStatistics", value.asInstanceOf[js.Any])
+    def setEventTimeUndefined: Self = StObject.set(x, "EventTime", js.undefined)
     
     @scala.inline
-    def deleteClientRequestImpactStatistics: Self = this.set("ClientRequestImpactStatistics", js.undefined)
+    def setRootCauseServiceRequestImpactStatistics(value: RequestImpactStatistics): Self = StObject.set(x, "RootCauseServiceRequestImpactStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTime(value: Timestamp): Self = this.set("EventTime", value.asInstanceOf[js.Any])
+    def setRootCauseServiceRequestImpactStatisticsUndefined: Self = StObject.set(x, "RootCauseServiceRequestImpactStatistics", js.undefined)
     
     @scala.inline
-    def deleteEventTime: Self = this.set("EventTime", js.undefined)
+    def setSummary(value: EventSummaryText): Self = StObject.set(x, "Summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootCauseServiceRequestImpactStatistics(value: RequestImpactStatistics): Self = this.set("RootCauseServiceRequestImpactStatistics", value.asInstanceOf[js.Any])
+    def setSummaryUndefined: Self = StObject.set(x, "Summary", js.undefined)
     
     @scala.inline
-    def deleteRootCauseServiceRequestImpactStatistics: Self = this.set("RootCauseServiceRequestImpactStatistics", js.undefined)
+    def setTopAnomalousServices(value: AnomalousServiceList): Self = StObject.set(x, "TopAnomalousServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummary(value: EventSummaryText): Self = this.set("Summary", value.asInstanceOf[js.Any])
+    def setTopAnomalousServicesUndefined: Self = StObject.set(x, "TopAnomalousServices", js.undefined)
     
     @scala.inline
-    def deleteSummary: Self = this.set("Summary", js.undefined)
-    
-    @scala.inline
-    def setTopAnomalousServicesVarargs(value: AnomalousService*): Self = this.set("TopAnomalousServices", js.Array(value :_*))
-    
-    @scala.inline
-    def setTopAnomalousServices(value: AnomalousServiceList): Self = this.set("TopAnomalousServices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopAnomalousServices: Self = this.set("TopAnomalousServices", js.undefined)
+    def setTopAnomalousServicesVarargs(value: AnomalousService*): Self = StObject.set(x, "TopAnomalousServices", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompatibleVersionsMap extends js.Object {
+trait CompatibleVersionsMap extends StObject {
   
   /**
     * The current version of Elasticsearch on which a domain is.
@@ -23,33 +24,21 @@ object CompatibleVersionsMap {
   }
   
   @scala.inline
-  implicit class CompatibleVersionsMapOps[Self <: CompatibleVersionsMap] (val x: Self) extends AnyVal {
+  implicit class CompatibleVersionsMapMutableBuilder[Self <: CompatibleVersionsMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSourceVersion(value: ElasticsearchVersionString): Self = StObject.set(x, "SourceVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSourceVersionUndefined: Self = StObject.set(x, "SourceVersion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetVersions(value: ElasticsearchVersionList): Self = StObject.set(x, "TargetVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceVersion(value: ElasticsearchVersionString): Self = this.set("SourceVersion", value.asInstanceOf[js.Any])
+    def setTargetVersionsUndefined: Self = StObject.set(x, "TargetVersions", js.undefined)
     
     @scala.inline
-    def deleteSourceVersion: Self = this.set("SourceVersion", js.undefined)
-    
-    @scala.inline
-    def setTargetVersionsVarargs(value: ElasticsearchVersionString*): Self = this.set("TargetVersions", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetVersions(value: ElasticsearchVersionList): Self = this.set("TargetVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetVersions: Self = this.set("TargetVersions", js.undefined)
+    def setTargetVersionsVarargs(value: ElasticsearchVersionString*): Self = StObject.set(x, "TargetVersions", js.Array(value :_*))
   }
 }

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.xml.dom
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,45 +78,33 @@ object XNamedNodeMap {
   }
   
   @scala.inline
-  implicit class XNamedNodeMapOps[Self <: XNamedNodeMap] (val x: Self) extends AnyVal {
+  implicit class XNamedNodeMapMutableBuilder[Self <: XNamedNodeMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetNamedItem(value: String => XNode): Self = StObject.set(x, "getNamedItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetNamedItemNS(value: (String, String) => XNode): Self = StObject.set(x, "getNamedItemNS", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("Length", value.asInstanceOf[js.Any])
+    def setItem(value: Double => XNode): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLength(value: () => Double): Self = this.set("getLength", js.Any.fromFunction0(value))
+    def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetNamedItem(value: String => XNode): Self = this.set("getNamedItem", js.Any.fromFunction1(value))
+    def setRemoveNamedItem(value: String => XNode): Self = StObject.set(x, "removeNamedItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNamedItemNS(value: (String, String) => XNode): Self = this.set("getNamedItemNS", js.Any.fromFunction2(value))
+    def setRemoveNamedItemNS(value: (String, String) => XNode): Self = StObject.set(x, "removeNamedItemNS", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setItem(value: Double => XNode): Self = this.set("item", js.Any.fromFunction1(value))
+    def setSetNamedItem(value: XNode => XNode): Self = StObject.set(x, "setNamedItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveNamedItem(value: String => XNode): Self = this.set("removeNamedItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveNamedItemNS(value: (String, String) => XNode): Self = this.set("removeNamedItemNS", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetNamedItem(value: XNode => XNode): Self = this.set("setNamedItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetNamedItemNS(value: XNode => XNode): Self = this.set("setNamedItemNS", js.Any.fromFunction1(value))
+    def setSetNamedItemNS(value: XNode => XNode): Self = StObject.set(x, "setNamedItemNS", js.Any.fromFunction1(value))
   }
 }

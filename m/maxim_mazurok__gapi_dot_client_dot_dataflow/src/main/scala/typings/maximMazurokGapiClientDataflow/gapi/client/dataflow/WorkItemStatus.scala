@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkItemStatus extends js.Object {
+trait WorkItemStatus extends StObject {
   
   /** True if the WorkItem was completed (successfully or unsuccessfully). */
   var completed: js.UndefOr[Boolean] = js.native
@@ -74,111 +75,99 @@ object WorkItemStatus {
   }
   
   @scala.inline
-  implicit class WorkItemStatusOps[Self <: WorkItemStatus] (val x: Self) extends AnyVal {
+  implicit class WorkItemStatusMutableBuilder[Self <: WorkItemStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCounterUpdates(value: js.Array[CounterUpdate]): Self = StObject.set(x, "counterUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleted(value: Boolean): Self = this.set("completed", value.asInstanceOf[js.Any])
+    def setCounterUpdatesUndefined: Self = StObject.set(x, "counterUpdates", js.undefined)
     
     @scala.inline
-    def deleteCompleted: Self = this.set("completed", js.undefined)
+    def setCounterUpdatesVarargs(value: CounterUpdate*): Self = StObject.set(x, "counterUpdates", js.Array(value :_*))
     
     @scala.inline
-    def setCounterUpdatesVarargs(value: CounterUpdate*): Self = this.set("counterUpdates", js.Array(value :_*))
+    def setDynamicSourceSplit(value: DynamicSourceSplit): Self = StObject.set(x, "dynamicSourceSplit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCounterUpdates(value: js.Array[CounterUpdate]): Self = this.set("counterUpdates", value.asInstanceOf[js.Any])
+    def setDynamicSourceSplitUndefined: Self = StObject.set(x, "dynamicSourceSplit", js.undefined)
     
     @scala.inline
-    def deleteCounterUpdates: Self = this.set("counterUpdates", js.undefined)
+    def setErrors(value: js.Array[Status]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicSourceSplit(value: DynamicSourceSplit): Self = this.set("dynamicSourceSplit", value.asInstanceOf[js.Any])
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
-    def deleteDynamicSourceSplit: Self = this.set("dynamicSourceSplit", js.undefined)
+    def setErrorsVarargs(value: Status*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
     @scala.inline
-    def setErrorsVarargs(value: Status*): Self = this.set("errors", js.Array(value :_*))
+    def setMetricUpdates(value: js.Array[MetricUpdate]): Self = StObject.set(x, "metricUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: js.Array[Status]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setMetricUpdatesUndefined: Self = StObject.set(x, "metricUpdates", js.undefined)
     
     @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
+    def setMetricUpdatesVarargs(value: MetricUpdate*): Self = StObject.set(x, "metricUpdates", js.Array(value :_*))
     
     @scala.inline
-    def setMetricUpdatesVarargs(value: MetricUpdate*): Self = this.set("metricUpdates", js.Array(value :_*))
+    def setProgress(value: ApproximateProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricUpdates(value: js.Array[MetricUpdate]): Self = this.set("metricUpdates", value.asInstanceOf[js.Any])
+    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
     @scala.inline
-    def deleteMetricUpdates: Self = this.set("metricUpdates", js.undefined)
+    def setReportIndex(value: String): Self = StObject.set(x, "reportIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: ApproximateProgress): Self = this.set("progress", value.asInstanceOf[js.Any])
+    def setReportIndexUndefined: Self = StObject.set(x, "reportIndex", js.undefined)
     
     @scala.inline
-    def deleteProgress: Self = this.set("progress", js.undefined)
+    def setReportedProgress(value: ApproximateReportedProgress): Self = StObject.set(x, "reportedProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportIndex(value: String): Self = this.set("reportIndex", value.asInstanceOf[js.Any])
+    def setReportedProgressUndefined: Self = StObject.set(x, "reportedProgress", js.undefined)
     
     @scala.inline
-    def deleteReportIndex: Self = this.set("reportIndex", js.undefined)
+    def setRequestedLeaseDuration(value: String): Self = StObject.set(x, "requestedLeaseDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportedProgress(value: ApproximateReportedProgress): Self = this.set("reportedProgress", value.asInstanceOf[js.Any])
+    def setRequestedLeaseDurationUndefined: Self = StObject.set(x, "requestedLeaseDuration", js.undefined)
     
     @scala.inline
-    def deleteReportedProgress: Self = this.set("reportedProgress", js.undefined)
+    def setSourceFork(value: SourceFork): Self = StObject.set(x, "sourceFork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedLeaseDuration(value: String): Self = this.set("requestedLeaseDuration", value.asInstanceOf[js.Any])
+    def setSourceForkUndefined: Self = StObject.set(x, "sourceFork", js.undefined)
     
     @scala.inline
-    def deleteRequestedLeaseDuration: Self = this.set("requestedLeaseDuration", js.undefined)
+    def setSourceOperationResponse(value: SourceOperationResponse): Self = StObject.set(x, "sourceOperationResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceFork(value: SourceFork): Self = this.set("sourceFork", value.asInstanceOf[js.Any])
+    def setSourceOperationResponseUndefined: Self = StObject.set(x, "sourceOperationResponse", js.undefined)
     
     @scala.inline
-    def deleteSourceFork: Self = this.set("sourceFork", js.undefined)
+    def setStopPosition(value: Position): Self = StObject.set(x, "stopPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceOperationResponse(value: SourceOperationResponse): Self = this.set("sourceOperationResponse", value.asInstanceOf[js.Any])
+    def setStopPositionUndefined: Self = StObject.set(x, "stopPosition", js.undefined)
     
     @scala.inline
-    def deleteSourceOperationResponse: Self = this.set("sourceOperationResponse", js.undefined)
+    def setTotalThrottlerWaitTimeSeconds(value: Double): Self = StObject.set(x, "totalThrottlerWaitTimeSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopPosition(value: Position): Self = this.set("stopPosition", value.asInstanceOf[js.Any])
+    def setTotalThrottlerWaitTimeSecondsUndefined: Self = StObject.set(x, "totalThrottlerWaitTimeSeconds", js.undefined)
     
     @scala.inline
-    def deleteStopPosition: Self = this.set("stopPosition", js.undefined)
+    def setWorkItemId(value: String): Self = StObject.set(x, "workItemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalThrottlerWaitTimeSeconds(value: Double): Self = this.set("totalThrottlerWaitTimeSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalThrottlerWaitTimeSeconds: Self = this.set("totalThrottlerWaitTimeSeconds", js.undefined)
-    
-    @scala.inline
-    def setWorkItemId(value: String): Self = this.set("workItemId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkItemId: Self = this.set("workItemId", js.undefined)
+    def setWorkItemIdUndefined: Self = StObject.set(x, "workItemId", js.undefined)
   }
 }

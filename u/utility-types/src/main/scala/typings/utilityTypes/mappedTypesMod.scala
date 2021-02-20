@@ -15,25 +15,12 @@ import typings.utilityTypes.utilityTypesStrings._DeepNonNullableObject
 import typings.utilityTypes.utilityTypesStrings._DeepPartialObject
 import typings.utilityTypes.utilityTypesStrings._DeepReadonlyObject
 import typings.utilityTypes.utilityTypesStrings._DeepRequiredObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("utility-types/dist/mapped-types", JSImport.Namespace)
-@js.native
-object mappedTypesMod extends js.Object {
-  
-  @js.native
-  trait DeepNonNullableArray[T] extends Array[DeepNonNullable[NonNullable[T]]]
-  
-  @js.native
-  trait DeepPartialArray[T] extends Array[DeepPartial[T]]
-  
-  @js.native
-  trait DeepReadonlyArray[T] extends ReadonlyArray[DeepReadonly[T]]
-  
-  @js.native
-  trait DeepRequiredArray[T] extends Array[DeepRequired[NonUndefined[T]]]
+object mappedTypesMod {
   
   type Assign[T /* <: js.Object */, U /* <: js.Object */, I] = Pick[I, /* keyof I */ String]
   
@@ -45,17 +32,26 @@ object mappedTypesMod extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
   ])
   
+  @js.native
+  trait DeepNonNullableArray[T] extends Array[DeepNonNullable[NonNullable[T]]]
+  
   type DeepNonNullableObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: -? utility-types.utility-types/dist/mapped-types.DeepNonNullable<std.NonNullable<T[P]>>}
     */ _DeepNonNullableObject with TopLevel[T]
   
   type DeepPartial[T] = js.UndefOr[T | DeepPartialObject[T] | DeepPartialArray[js.Any]]
   
+  @js.native
+  trait DeepPartialArray[T] extends Array[DeepPartial[T]]
+  
   type DeepPartialObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? utility-types.utility-types/dist/mapped-types.DeepPartial<T[P]>}
     */ _DeepPartialObject with TopLevel[T]
   
   type DeepReadonly[T] = T | DeepReadonlyObject[js.Any] | DeepReadonlyArray[js.Any]
+  
+  @js.native
+  trait DeepReadonlyArray[T] extends ReadonlyArray[DeepReadonly[T]]
   
   type DeepReadonlyObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ P in keyof T ]: utility-types.utility-types/dist/mapped-types.DeepReadonly<T[P]>}
@@ -64,6 +60,9 @@ object mappedTypesMod extends js.Object {
   type DeepRequired[T] = T | DeepRequiredObject[T] | (DeepRequiredArray[
     /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
   ])
+  
+  @js.native
+  trait DeepRequiredArray[T] extends Array[DeepRequired[NonUndefined[T]]]
   
   type DeepRequiredObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: -? utility-types.utility-types/dist/mapped-types.DeepRequired<utility-types.utility-types/dist/mapped-types.NonUndefined<T[P]>>}

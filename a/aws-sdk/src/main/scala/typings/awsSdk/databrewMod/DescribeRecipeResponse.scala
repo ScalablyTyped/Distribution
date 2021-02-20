@@ -1,11 +1,12 @@
 package typings.awsSdk.databrewMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeRecipeResponse extends js.Object {
+trait DescribeRecipeResponse extends StObject {
   
   /**
     * The date and time that the recipe was created.
@@ -81,96 +82,84 @@ object DescribeRecipeResponse {
   }
   
   @scala.inline
-  implicit class DescribeRecipeResponseOps[Self <: DescribeRecipeResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeRecipeResponseMutableBuilder[Self <: DescribeRecipeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateDate(value: Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedBy(value: CreatedBy): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: RecipeName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
     @scala.inline
-    def setCreateDate(value: Date): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    def setDescription(value: RecipeDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreateDate: Self = this.set("CreateDate", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setCreatedBy(value: CreatedBy): Self = this.set("CreatedBy", value.asInstanceOf[js.Any])
+    def setLastModifiedBy(value: LastModifiedBy): Self = StObject.set(x, "LastModifiedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedBy: Self = this.set("CreatedBy", js.undefined)
+    def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
     
     @scala.inline
-    def setDescription(value: RecipeDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
     @scala.inline
-    def setLastModifiedBy(value: LastModifiedBy): Self = this.set("LastModifiedBy", value.asInstanceOf[js.Any])
+    def setName(value: RecipeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastModifiedBy: Self = this.set("LastModifiedBy", js.undefined)
+    def setProjectName(value: ProjectName): Self = StObject.set(x, "ProjectName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: Date): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    def setProjectNameUndefined: Self = StObject.set(x, "ProjectName", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    def setPublishedBy(value: PublishedBy): Self = StObject.set(x, "PublishedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectName(value: ProjectName): Self = this.set("ProjectName", value.asInstanceOf[js.Any])
+    def setPublishedByUndefined: Self = StObject.set(x, "PublishedBy", js.undefined)
     
     @scala.inline
-    def deleteProjectName: Self = this.set("ProjectName", js.undefined)
+    def setPublishedDate(value: Date): Self = StObject.set(x, "PublishedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishedBy(value: PublishedBy): Self = this.set("PublishedBy", value.asInstanceOf[js.Any])
+    def setPublishedDateUndefined: Self = StObject.set(x, "PublishedDate", js.undefined)
     
     @scala.inline
-    def deletePublishedBy: Self = this.set("PublishedBy", js.undefined)
+    def setRecipeVersion(value: RecipeVersion): Self = StObject.set(x, "RecipeVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishedDate(value: Date): Self = this.set("PublishedDate", value.asInstanceOf[js.Any])
+    def setRecipeVersionUndefined: Self = StObject.set(x, "RecipeVersion", js.undefined)
     
     @scala.inline
-    def deletePublishedDate: Self = this.set("PublishedDate", js.undefined)
+    def setResourceArn(value: Arn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipeVersion(value: RecipeVersion): Self = this.set("RecipeVersion", value.asInstanceOf[js.Any])
+    def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
     
     @scala.inline
-    def deleteRecipeVersion: Self = this.set("RecipeVersion", js.undefined)
+    def setSteps(value: RecipeStepList): Self = StObject.set(x, "Steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceArn(value: Arn): Self = this.set("ResourceArn", value.asInstanceOf[js.Any])
+    def setStepsUndefined: Self = StObject.set(x, "Steps", js.undefined)
     
     @scala.inline
-    def deleteResourceArn: Self = this.set("ResourceArn", js.undefined)
+    def setStepsVarargs(value: RecipeStep*): Self = StObject.set(x, "Steps", js.Array(value :_*))
     
     @scala.inline
-    def setStepsVarargs(value: RecipeStep*): Self = this.set("Steps", js.Array(value :_*))
+    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSteps(value: RecipeStepList): Self = this.set("Steps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSteps: Self = this.set("Steps", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

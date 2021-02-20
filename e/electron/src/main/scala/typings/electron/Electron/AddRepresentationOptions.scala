@@ -1,12 +1,13 @@
 package typings.electron.Electron
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddRepresentationOptions extends js.Object {
+trait AddRepresentationOptions extends StObject {
   
   /**
     * The buffer containing the raw image data.
@@ -42,45 +43,33 @@ object AddRepresentationOptions {
   }
   
   @scala.inline
-  implicit class AddRepresentationOptionsOps[Self <: AddRepresentationOptions] (val x: Self) extends AnyVal {
+  implicit class AddRepresentationOptionsMutableBuilder[Self <: AddRepresentationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataURL(value: String): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleFactor(value: Double): Self = this.set("scaleFactor", value.asInstanceOf[js.Any])
+    def setDataURLUndefined: Self = StObject.set(x, "dataURL", js.undefined)
     
     @scala.inline
-    def setBuffer(value: Buffer): Self = this.set("buffer", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBuffer: Self = this.set("buffer", js.undefined)
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setDataURL(value: String): Self = this.set("dataURL", value.asInstanceOf[js.Any])
+    def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataURL: Self = this.set("dataURL", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

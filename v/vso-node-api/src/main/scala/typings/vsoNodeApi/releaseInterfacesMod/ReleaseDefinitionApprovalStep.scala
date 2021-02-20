@@ -1,6 +1,7 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,30 +26,18 @@ object ReleaseDefinitionApprovalStep {
   }
   
   @scala.inline
-  implicit class ReleaseDefinitionApprovalStepOps[Self <: ReleaseDefinitionApprovalStep] (val x: Self) extends AnyVal {
+  implicit class ReleaseDefinitionApprovalStepMutableBuilder[Self <: ReleaseDefinitionApprovalStep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprover(value: IdentityRef): Self = StObject.set(x, "approver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsAutomated(value: Boolean): Self = StObject.set(x, "isAutomated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsNotificationOn(value: Boolean): Self = StObject.set(x, "isNotificationOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprover(value: IdentityRef): Self = this.set("approver", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsAutomated(value: Boolean): Self = this.set("isAutomated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsNotificationOn(value: Boolean): Self = this.set("isNotificationOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRank(value: Double): Self = this.set("rank", value.asInstanceOf[js.Any])
+    def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
   }
 }

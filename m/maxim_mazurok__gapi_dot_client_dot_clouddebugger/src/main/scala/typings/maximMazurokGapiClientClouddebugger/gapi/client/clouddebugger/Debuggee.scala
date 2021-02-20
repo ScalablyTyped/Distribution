@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientClouddebugger.gapi.client.clouddebugger
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Debuggee extends js.Object {
+trait Debuggee extends StObject {
   
   /** Version ID of the agent. Schema: `domain/language-platform/vmajor.minor` (for example `google.com/java-gcp/v1.1`). */
   var agentVersion: js.UndefOr[String] = js.native
@@ -61,100 +62,88 @@ object Debuggee {
   }
   
   @scala.inline
-  implicit class DebuggeeOps[Self <: Debuggee] (val x: Self) extends AnyVal {
+  implicit class DebuggeeMutableBuilder[Self <: Debuggee] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentVersion(value: String): Self = StObject.set(x, "agentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentVersionUndefined: Self = StObject.set(x, "agentVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanaryMode(value: String): Self = StObject.set(x, "canaryMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentVersion(value: String): Self = this.set("agentVersion", value.asInstanceOf[js.Any])
+    def setCanaryModeUndefined: Self = StObject.set(x, "canaryMode", js.undefined)
     
     @scala.inline
-    def deleteAgentVersion: Self = this.set("agentVersion", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanaryMode(value: String): Self = this.set("canaryMode", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCanaryMode: Self = this.set("canaryMode", js.undefined)
+    def setExtSourceContexts(value: js.Array[ExtendedSourceContext]): Self = StObject.set(x, "extSourceContexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setExtSourceContextsUndefined: Self = StObject.set(x, "extSourceContexts", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setExtSourceContextsVarargs(value: ExtendedSourceContext*): Self = StObject.set(x, "extSourceContexts", js.Array(value :_*))
     
     @scala.inline
-    def setExtSourceContextsVarargs(value: ExtendedSourceContext*): Self = this.set("extSourceContexts", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtSourceContexts(value: js.Array[ExtendedSourceContext]): Self = this.set("extSourceContexts", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteExtSourceContexts: Self = this.set("extSourceContexts", js.undefined)
+    def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIsInactive(value: Boolean): Self = StObject.set(x, "isInactive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDisabled(value: Boolean): Self = this.set("isDisabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsDisabled: Self = this.set("isDisabled", js.undefined)
-    
-    @scala.inline
-    def setIsInactive(value: Boolean): Self = this.set("isInactive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsInactive: Self = this.set("isInactive", js.undefined)
+    def setIsInactiveUndefined: Self = StObject.set(x, "isInactive", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientClouddebugger.maximMazurokGapiClientClouddebuggerStrings.Debuggee with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setProject(value: String): Self = this.set("project", value.asInstanceOf[js.Any])
+    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProject: Self = this.set("project", js.undefined)
+    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
     @scala.inline
-    def setSourceContextsVarargs(value: SourceContext*): Self = this.set("sourceContexts", js.Array(value :_*))
+    def setSourceContexts(value: js.Array[SourceContext]): Self = StObject.set(x, "sourceContexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceContexts(value: js.Array[SourceContext]): Self = this.set("sourceContexts", value.asInstanceOf[js.Any])
+    def setSourceContextsUndefined: Self = StObject.set(x, "sourceContexts", js.undefined)
     
     @scala.inline
-    def deleteSourceContexts: Self = this.set("sourceContexts", js.undefined)
+    def setSourceContextsVarargs(value: SourceContext*): Self = StObject.set(x, "sourceContexts", js.Array(value :_*))
     
     @scala.inline
-    def setStatus(value: StatusMessage): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: StatusMessage): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setUniquifier(value: String): Self = this.set("uniquifier", value.asInstanceOf[js.Any])
+    def setUniquifier(value: String): Self = StObject.set(x, "uniquifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUniquifier: Self = this.set("uniquifier", js.undefined)
+    def setUniquifierUndefined: Self = StObject.set(x, "uniquifier", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Networking.Connectivity
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDataPlanStatus extends js.Object {
+trait IDataPlanStatus extends StObject {
   
   var dataLimitInMegabytes: Double = js.native
   
@@ -36,36 +37,24 @@ object IDataPlanStatus {
   }
   
   @scala.inline
-  implicit class IDataPlanStatusOps[Self <: IDataPlanStatus] (val x: Self) extends AnyVal {
+  implicit class IDataPlanStatusMutableBuilder[Self <: IDataPlanStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataLimitInMegabytes(value: Double): Self = StObject.set(x, "dataLimitInMegabytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataPlanUsage(value: DataPlanUsage): Self = StObject.set(x, "dataPlanUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInboundBitsPerSecond(value: Double): Self = StObject.set(x, "inboundBitsPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataLimitInMegabytes(value: Double): Self = this.set("dataLimitInMegabytes", value.asInstanceOf[js.Any])
+    def setMaxTransferSizeInMegabytes(value: Double): Self = StObject.set(x, "maxTransferSizeInMegabytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataPlanUsage(value: DataPlanUsage): Self = this.set("dataPlanUsage", value.asInstanceOf[js.Any])
+    def setNextBillingCycle(value: Date): Self = StObject.set(x, "nextBillingCycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInboundBitsPerSecond(value: Double): Self = this.set("inboundBitsPerSecond", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxTransferSizeInMegabytes(value: Double): Self = this.set("maxTransferSizeInMegabytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextBillingCycle(value: Date): Self = this.set("nextBillingCycle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutboundBitsPerSecond(value: Double): Self = this.set("outboundBitsPerSecond", value.asInstanceOf[js.Any])
+    def setOutboundBitsPerSecond(value: Double): Self = StObject.set(x, "outboundBitsPerSecond", value.asInstanceOf[js.Any])
   }
 }

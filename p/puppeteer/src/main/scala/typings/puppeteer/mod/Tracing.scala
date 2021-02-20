@@ -1,12 +1,13 @@
 package typings.puppeteer.mod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tracing extends js.Object {
+trait Tracing extends StObject {
   
   def start(options: TracingStartOptions): js.Promise[Unit] = js.native
   
@@ -21,24 +22,12 @@ object Tracing {
   }
   
   @scala.inline
-  implicit class TracingOps[Self <: Tracing] (val x: Self) extends AnyVal {
+  implicit class TracingMutableBuilder[Self <: Tracing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStart(value: TracingStartOptions => js.Promise[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStart(value: TracingStartOptions => js.Promise[Unit]): Self = this.set("start", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStop(value: () => js.Promise[Buffer]): Self = this.set("stop", js.Any.fromFunction0(value))
+    def setStop(value: () => js.Promise[Buffer]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

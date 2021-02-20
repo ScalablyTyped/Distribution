@@ -3,12 +3,13 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 import typings.devtoolsProtocol.devtoolsProtocolStrings.jpeg
 import typings.devtoolsProtocol.devtoolsProtocolStrings.png
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartScreencastRequest extends js.Object {
+trait StartScreencastRequest extends StObject {
   
   /**
     * Send every n-th frame.
@@ -44,48 +45,36 @@ object StartScreencastRequest {
   }
   
   @scala.inline
-  implicit class StartScreencastRequestOps[Self <: StartScreencastRequest] (val x: Self) extends AnyVal {
+  implicit class StartScreencastRequestMutableBuilder[Self <: StartScreencastRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEveryNthFrame(value: integer): Self = StObject.set(x, "everyNthFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEveryNthFrameUndefined: Self = StObject.set(x, "everyNthFrame", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: jpeg | png): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEveryNthFrame(value: integer): Self = this.set("everyNthFrame", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteEveryNthFrame: Self = this.set("everyNthFrame", js.undefined)
+    def setMaxHeight(value: integer): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: jpeg | png): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setMaxWidth(value: integer): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHeight(value: integer): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
     @scala.inline
-    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    def setQuality(value: integer): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWidth(value: integer): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
-    
-    @scala.inline
-    def setQuality(value: integer): Self = this.set("quality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuality: Self = this.set("quality", js.undefined)
+    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
   }
 }

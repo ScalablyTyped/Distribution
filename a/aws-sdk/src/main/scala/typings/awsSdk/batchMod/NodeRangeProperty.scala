@@ -1,11 +1,12 @@
 package typings.awsSdk.batchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeRangeProperty extends js.Object {
+trait NodeRangeProperty extends StObject {
   
   /**
     * The container details for the node range.
@@ -26,27 +27,15 @@ object NodeRangeProperty {
   }
   
   @scala.inline
-  implicit class NodeRangePropertyOps[Self <: NodeRangeProperty] (val x: Self) extends AnyVal {
+  implicit class NodeRangePropertyMutableBuilder[Self <: NodeRangeProperty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainer(value: ContainerProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTargetNodes(value: String): Self = this.set("targetNodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContainer(value: ContainerProperties): Self = this.set("container", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setTargetNodes(value: String): Self = StObject.set(x, "targetNodes", value.asInstanceOf[js.Any])
   }
 }

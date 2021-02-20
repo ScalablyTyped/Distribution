@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * contain &quot;CEO&quot;, &quot;President&quot;, &quot;VP Sales&quot;.
   */
 @js.native
-trait SchemaOrgChartSpec extends js.Object {
+trait SchemaOrgChartSpec extends StObject {
   
   /**
     * The data containing the labels for all the nodes in the chart.  Labels
@@ -63,54 +64,42 @@ object SchemaOrgChartSpec {
   }
   
   @scala.inline
-  implicit class SchemaOrgChartSpecOps[Self <: SchemaOrgChartSpec] (val x: Self) extends AnyVal {
+  implicit class SchemaOrgChartSpecMutableBuilder[Self <: SchemaOrgChartSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabels(value: SchemaChartData): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodeColor(value: SchemaColor): Self = StObject.set(x, "nodeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: SchemaChartData): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setNodeColorUndefined: Self = StObject.set(x, "nodeColor", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setNodeSize(value: String): Self = StObject.set(x, "nodeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeColor(value: SchemaColor): Self = this.set("nodeColor", value.asInstanceOf[js.Any])
+    def setNodeSizeUndefined: Self = StObject.set(x, "nodeSize", js.undefined)
     
     @scala.inline
-    def deleteNodeColor: Self = this.set("nodeColor", js.undefined)
+    def setParentLabels(value: SchemaChartData): Self = StObject.set(x, "parentLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeSize(value: String): Self = this.set("nodeSize", value.asInstanceOf[js.Any])
+    def setParentLabelsUndefined: Self = StObject.set(x, "parentLabels", js.undefined)
     
     @scala.inline
-    def deleteNodeSize: Self = this.set("nodeSize", js.undefined)
+    def setSelectedNodeColor(value: SchemaColor): Self = StObject.set(x, "selectedNodeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentLabels(value: SchemaChartData): Self = this.set("parentLabels", value.asInstanceOf[js.Any])
+    def setSelectedNodeColorUndefined: Self = StObject.set(x, "selectedNodeColor", js.undefined)
     
     @scala.inline
-    def deleteParentLabels: Self = this.set("parentLabels", js.undefined)
+    def setTooltips(value: SchemaChartData): Self = StObject.set(x, "tooltips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedNodeColor(value: SchemaColor): Self = this.set("selectedNodeColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedNodeColor: Self = this.set("selectedNodeColor", js.undefined)
-    
-    @scala.inline
-    def setTooltips(value: SchemaChartData): Self = this.set("tooltips", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltips: Self = this.set("tooltips", js.undefined)
+    def setTooltipsUndefined: Self = StObject.set(x, "tooltips", js.undefined)
   }
 }

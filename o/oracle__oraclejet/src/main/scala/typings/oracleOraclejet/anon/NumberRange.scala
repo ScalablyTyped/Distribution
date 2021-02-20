@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NumberRange extends js.Object {
+trait NumberRange extends StObject {
   
   var numberRange: js.UndefOr[HintMessageDetail] = js.native
   
@@ -24,42 +25,30 @@ object NumberRange {
   }
   
   @scala.inline
-  implicit class NumberRangeOps[Self <: NumberRange] (val x: Self) extends AnyVal {
+  implicit class NumberRangeMutableBuilder[Self <: NumberRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNumberRange(value: HintMessageDetail): Self = StObject.set(x, "numberRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNumberRangeUndefined: Self = StObject.set(x, "numberRange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequired(value: Hint): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberRange(value: HintMessageDetail): Self = this.set("numberRange", value.asInstanceOf[js.Any])
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def deleteNumberRange: Self = this.set("numberRange", js.undefined)
+    def setTooltipDecrement(value: String): Self = StObject.set(x, "tooltipDecrement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: Hint): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setTooltipDecrementUndefined: Self = StObject.set(x, "tooltipDecrement", js.undefined)
     
     @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setTooltipIncrement(value: String): Self = StObject.set(x, "tooltipIncrement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipDecrement(value: String): Self = this.set("tooltipDecrement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltipDecrement: Self = this.set("tooltipDecrement", js.undefined)
-    
-    @scala.inline
-    def setTooltipIncrement(value: String): Self = this.set("tooltipIncrement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltipIncrement: Self = this.set("tooltipIncrement", js.undefined)
+    def setTooltipIncrementUndefined: Self = StObject.set(x, "tooltipIncrement", js.undefined)
   }
 }

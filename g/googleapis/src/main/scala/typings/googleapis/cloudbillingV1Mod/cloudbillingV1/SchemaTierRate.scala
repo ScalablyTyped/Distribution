@@ -1,5 +1,6 @@
 package typings.googleapis.cloudbillingV1Mod.cloudbillingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The price rate indicating starting usage and its corresponding price.
   */
 @js.native
-trait SchemaTierRate extends js.Object {
+trait SchemaTierRate extends StObject {
   
   /**
     * Usage is priced at this rate only after this amount. Example:
@@ -32,30 +33,18 @@ object SchemaTierRate {
   }
   
   @scala.inline
-  implicit class SchemaTierRateOps[Self <: SchemaTierRate] (val x: Self) extends AnyVal {
+  implicit class SchemaTierRateMutableBuilder[Self <: SchemaTierRate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStartUsageAmount(value: Double): Self = StObject.set(x, "startUsageAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStartUsageAmountUndefined: Self = StObject.set(x, "startUsageAmount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUnitPrice(value: SchemaMoney): Self = StObject.set(x, "unitPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartUsageAmount(value: Double): Self = this.set("startUsageAmount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartUsageAmount: Self = this.set("startUsageAmount", js.undefined)
-    
-    @scala.inline
-    def setUnitPrice(value: SchemaMoney): Self = this.set("unitPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnitPrice: Self = this.set("unitPrice", js.undefined)
+    def setUnitPriceUndefined: Self = StObject.set(x, "unitPrice", js.undefined)
   }
 }

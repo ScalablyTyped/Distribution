@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RejectCertificateTransferRequest extends js.Object {
+trait RejectCertificateTransferRequest extends StObject {
   
   /**
     * The ID of the certificate. (The last part of the certificate ARN contains the certificate ID.)
@@ -26,27 +27,15 @@ object RejectCertificateTransferRequest {
   }
   
   @scala.inline
-  implicit class RejectCertificateTransferRequestOps[Self <: RejectCertificateTransferRequest] (val x: Self) extends AnyVal {
+  implicit class RejectCertificateTransferRequestMutableBuilder[Self <: RejectCertificateTransferRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRejectReason(value: Message): Self = StObject.set(x, "rejectReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCertificateId(value: CertificateId): Self = this.set("certificateId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRejectReason(value: Message): Self = this.set("rejectReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRejectReason: Self = this.set("rejectReason", js.undefined)
+    def setRejectReasonUndefined: Self = StObject.set(x, "rejectReason", js.undefined)
   }
 }

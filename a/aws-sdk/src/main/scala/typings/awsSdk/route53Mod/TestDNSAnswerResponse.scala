@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestDNSAnswerResponse extends js.Object {
+trait TestDNSAnswerResponse extends StObject {
   
   /**
     * The Amazon Route 53 name server used to respond to the request.
@@ -53,39 +54,27 @@ object TestDNSAnswerResponse {
   }
   
   @scala.inline
-  implicit class TestDNSAnswerResponseOps[Self <: TestDNSAnswerResponse] (val x: Self) extends AnyVal {
+  implicit class TestDNSAnswerResponseMutableBuilder[Self <: TestDNSAnswerResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNameserver(value: Nameserver): Self = StObject.set(x, "Nameserver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProtocol(value: TransportProtocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecordData(value: RecordData): Self = StObject.set(x, "RecordData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameserver(value: Nameserver): Self = this.set("Nameserver", value.asInstanceOf[js.Any])
+    def setRecordDataVarargs(value: RecordDataEntry*): Self = StObject.set(x, "RecordData", js.Array(value :_*))
     
     @scala.inline
-    def setProtocol(value: TransportProtocol): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    def setRecordName(value: DNSName): Self = StObject.set(x, "RecordName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordDataVarargs(value: RecordDataEntry*): Self = this.set("RecordData", js.Array(value :_*))
+    def setRecordType(value: RRType): Self = StObject.set(x, "RecordType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordData(value: RecordData): Self = this.set("RecordData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecordName(value: DNSName): Self = this.set("RecordName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecordType(value: RRType): Self = this.set("RecordType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponseCode(value: DNSRCode): Self = this.set("ResponseCode", value.asInstanceOf[js.Any])
+    def setResponseCode(value: DNSRCode): Self = StObject.set(x, "ResponseCode", value.asInstanceOf[js.Any])
   }
 }

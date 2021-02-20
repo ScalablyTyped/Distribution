@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PerformanceObserverEntryList extends js.Object {
+trait PerformanceObserverEntryList extends StObject {
   
   def getEntries(): PerformanceEntryList = js.native
   

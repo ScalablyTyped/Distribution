@@ -1,11 +1,12 @@
 package typings.jqueryCustomselect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryCustomSelectOption extends js.Object {
+trait JQueryCustomSelectOption extends StObject {
   
   var customClass: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object JQueryCustomSelectOption {
   }
   
   @scala.inline
-  implicit class JQueryCustomSelectOptionOps[Self <: JQueryCustomSelectOption] (val x: Self) extends AnyVal {
+  implicit class JQueryCustomSelectOptionMutableBuilder[Self <: JQueryCustomSelectOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomClass(value: String): Self = StObject.set(x, "customClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomClassUndefined: Self = StObject.set(x, "customClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMapClass(value: Boolean): Self = StObject.set(x, "mapClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomClass(value: String): Self = this.set("customClass", value.asInstanceOf[js.Any])
+    def setMapClassUndefined: Self = StObject.set(x, "mapClass", js.undefined)
     
     @scala.inline
-    def deleteCustomClass: Self = this.set("customClass", js.undefined)
+    def setMapStyle(value: Boolean): Self = StObject.set(x, "mapStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapClass(value: Boolean): Self = this.set("mapClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMapClass: Self = this.set("mapClass", js.undefined)
-    
-    @scala.inline
-    def setMapStyle(value: Boolean): Self = this.set("mapStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMapStyle: Self = this.set("mapStyle", js.undefined)
+    def setMapStyleUndefined: Self = StObject.set(x, "mapStyle", js.undefined)
   }
 }

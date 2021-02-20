@@ -1,5 +1,6 @@
 package typings.phaser.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -147,141 +148,129 @@ object Bone {
   }
   
   @scala.inline
-  implicit class BoneOps[Self <: Bone] (val x: Self) extends AnyVal {
+  implicit class BoneMutableBuilder[Self <: Bone] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppliedValid(value: Boolean): Self = StObject.set(x, "appliedValid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setA(value: Double): Self = this.set("a", value.asInstanceOf[js.Any])
+    def setArotation(value: Double): Self = StObject.set(x, "arotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setAscaleX(value: Double): Self = StObject.set(x, "ascaleX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppliedValid(value: Boolean): Self = this.set("appliedValid", value.asInstanceOf[js.Any])
+    def setAscaleY(value: Double): Self = StObject.set(x, "ascaleY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArotation(value: Double): Self = this.set("arotation", value.asInstanceOf[js.Any])
+    def setAshearX(value: Double): Self = StObject.set(x, "ashearX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAscaleX(value: Double): Self = this.set("ascaleX", value.asInstanceOf[js.Any])
+    def setAshearY(value: Double): Self = StObject.set(x, "ashearY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAscaleY(value: Double): Self = this.set("ascaleY", value.asInstanceOf[js.Any])
+    def setAx(value: Double): Self = StObject.set(x, "ax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAshearX(value: Double): Self = this.set("ashearX", value.asInstanceOf[js.Any])
+    def setAy(value: Double): Self = StObject.set(x, "ay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAshearY(value: Double): Self = this.set("ashearY", value.asInstanceOf[js.Any])
+    def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAx(value: Double): Self = this.set("ax", value.asInstanceOf[js.Any])
+    def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAy(value: Double): Self = this.set("ay", value.asInstanceOf[js.Any])
+    def setChildren(value: js.Array[Bone]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setB(value: Double): Self = this.set("b", value.asInstanceOf[js.Any])
+    def setChildrenVarargs(value: Bone*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setC(value: Double): Self = this.set("c", value.asInstanceOf[js.Any])
+    def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: Bone*): Self = this.set("children", js.Array(value :_*))
+    def setData(value: BoneData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Array[Bone]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setGetWorldRotationX(value: () => Double): Self = StObject.set(x, "getWorldRotationX", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setD(value: Double): Self = this.set("d", value.asInstanceOf[js.Any])
+    def setGetWorldRotationY(value: () => Double): Self = StObject.set(x, "getWorldRotationY", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setData(value: BoneData): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setGetWorldScaleX(value: () => Double): Self = StObject.set(x, "getWorldScaleX", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetWorldRotationX(value: () => Double): Self = this.set("getWorldRotationX", js.Any.fromFunction0(value))
+    def setGetWorldScaleY(value: () => Double): Self = StObject.set(x, "getWorldScaleY", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetWorldRotationY(value: () => Double): Self = this.set("getWorldRotationY", js.Any.fromFunction0(value))
+    def setLocalToWorld(value: Vector2 => Vector2): Self = StObject.set(x, "localToWorld", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetWorldScaleX(value: () => Double): Self = this.set("getWorldScaleX", js.Any.fromFunction0(value))
+    def setLocalToWorldRotation(value: Double => Double): Self = StObject.set(x, "localToWorldRotation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetWorldScaleY(value: () => Double): Self = this.set("getWorldScaleY", js.Any.fromFunction0(value))
+    def setParent(value: Bone): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalToWorld(value: Vector2 => Vector2): Self = this.set("localToWorld", js.Any.fromFunction1(value))
+    def setRotateWorld(value: Double => Unit): Self = StObject.set(x, "rotateWorld", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLocalToWorldRotation(value: Double => Double): Self = this.set("localToWorldRotation", js.Any.fromFunction1(value))
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: Bone): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotateWorld(value: Double => Unit): Self = this.set("rotateWorld", js.Any.fromFunction1(value))
+    def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setSetToSetupPose(value: () => Unit): Self = StObject.set(x, "setToSetupPose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScaleX(value: Double): Self = this.set("scaleX", value.asInstanceOf[js.Any])
+    def setShearX(value: Double): Self = StObject.set(x, "shearX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleY(value: Double): Self = this.set("scaleY", value.asInstanceOf[js.Any])
+    def setShearY(value: Double): Self = StObject.set(x, "shearY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetToSetupPose(value: () => Unit): Self = this.set("setToSetupPose", js.Any.fromFunction0(value))
+    def setSkeleton(value: Skeleton): Self = StObject.set(x, "skeleton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShearX(value: Double): Self = this.set("shearX", value.asInstanceOf[js.Any])
+    def setSorted(value: Boolean): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShearY(value: Double): Self = this.set("shearY", value.asInstanceOf[js.Any])
+    def setUpdateAppliedTransform(value: () => Unit): Self = StObject.set(x, "updateAppliedTransform", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSkeleton(value: Skeleton): Self = this.set("skeleton", value.asInstanceOf[js.Any])
+    def setUpdateWorldTransform(value: () => Unit): Self = StObject.set(x, "updateWorldTransform", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSorted(value: Boolean): Self = this.set("sorted", value.asInstanceOf[js.Any])
+    def setUpdateWorldTransformWith(value: (Double, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "updateWorldTransformWith", js.Any.fromFunction7(value))
     
     @scala.inline
-    def setUpdateAppliedTransform(value: () => Unit): Self = this.set("updateAppliedTransform", js.Any.fromFunction0(value))
+    def setWorldToLocal(value: Vector2 => Vector2): Self = StObject.set(x, "worldToLocal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUpdateWorldTransform(value: () => Unit): Self = this.set("updateWorldTransform", js.Any.fromFunction0(value))
+    def setWorldToLocalRotation(value: Double => Double): Self = StObject.set(x, "worldToLocalRotation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUpdateWorldTransformWith(value: (Double, Double, Double, Double, Double, Double, Double) => Unit): Self = this.set("updateWorldTransformWith", js.Any.fromFunction7(value))
+    def setWorldX(value: Double): Self = StObject.set(x, "worldX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorldToLocal(value: Vector2 => Vector2): Self = this.set("worldToLocal", js.Any.fromFunction1(value))
+    def setWorldY(value: Double): Self = StObject.set(x, "worldY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorldToLocalRotation(value: Double => Double): Self = this.set("worldToLocalRotation", js.Any.fromFunction1(value))
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorldX(value: Double): Self = this.set("worldX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorldY(value: Double): Self = this.set("worldY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

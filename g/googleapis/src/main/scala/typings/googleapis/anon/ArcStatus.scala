@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArcStatus extends js.Object {
+trait ArcStatus extends StObject {
   
   var arcStatus: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object ArcStatus {
   }
   
   @scala.inline
-  implicit class ArcStatusOps[Self <: ArcStatus] (val x: Self) extends AnyVal {
+  implicit class ArcStatusMutableBuilder[Self <: ArcStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArcStatus(value: String): Self = StObject.set(x, "arcStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArcStatusUndefined: Self = StObject.set(x, "arcStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDealId(value: String): Self = StObject.set(x, "dealId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArcStatus(value: String): Self = this.set("arcStatus", value.asInstanceOf[js.Any])
+    def setDealIdUndefined: Self = StObject.set(x, "dealId", js.undefined)
     
     @scala.inline
-    def deleteArcStatus: Self = this.set("arcStatus", js.undefined)
+    def setWebPropertyId(value: Double): Self = StObject.set(x, "webPropertyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDealId(value: String): Self = this.set("dealId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDealId: Self = this.set("dealId", js.undefined)
-    
-    @scala.inline
-    def setWebPropertyId(value: Double): Self = this.set("webPropertyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebPropertyId: Self = this.set("webPropertyId", js.undefined)
+    def setWebPropertyIdUndefined: Self = StObject.set(x, "webPropertyId", js.undefined)
   }
 }

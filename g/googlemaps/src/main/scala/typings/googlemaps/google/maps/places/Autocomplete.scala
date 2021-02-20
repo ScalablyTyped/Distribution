@@ -3,6 +3,7 @@ package typings.googlemaps.google.maps.places
 import typings.googlemaps.google.maps.LatLngBounds
 import typings.googlemaps.google.maps.LatLngBoundsLiteral
 import typings.googlemaps.google.maps.MVCObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

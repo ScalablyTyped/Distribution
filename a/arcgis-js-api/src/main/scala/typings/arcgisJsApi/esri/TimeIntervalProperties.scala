@@ -10,12 +10,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.months
 import typings.arcgisJsApi.arcgisJsApiStrings.seconds
 import typings.arcgisJsApi.arcgisJsApiStrings.weeks
 import typings.arcgisJsApi.arcgisJsApiStrings.years
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeIntervalProperties extends js.Object {
+trait TimeIntervalProperties extends StObject {
   
   /**
     * Temporal units.
@@ -42,32 +43,20 @@ object TimeIntervalProperties {
   }
   
   @scala.inline
-  implicit class TimeIntervalPropertiesOps[Self <: TimeIntervalProperties] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class TimeIntervalPropertiesMutableBuilder[Self <: TimeIntervalProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setUnit(
       value: milliseconds | seconds | minutes | hours | days | weeks | months | years | decades | centuries
-    ): Self = this.set("unit", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
     @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

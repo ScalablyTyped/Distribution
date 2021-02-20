@@ -14,14 +14,14 @@ import typings.babylonjs.screenSpaceReflectionPostProcessMod.ScreenSpaceReflecti
 import typings.babylonjs.spotLightMod.SpotLight
 import typings.babylonjs.textureMod.Texture
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/RenderPipeline/Pipelines/standardRenderingPipeline", JSImport.Namespace)
-@js.native
-object standardRenderingPipelineMod extends js.Object {
+object standardRenderingPipelineMod {
   
+  @JSImport("babylonjs/PostProcesses/RenderPipeline/Pipelines/standardRenderingPipeline", "StandardRenderingPipeline")
   @js.native
   class StandardRenderingPipeline protected ()
     extends PostProcessRenderPipeline
@@ -480,13 +480,20 @@ object standardRenderingPipelineMod extends js.Object {
     def volumetricLightStepsCount_=(count: Double): Unit = js.native
   }
   /* static members */
-  @js.native
-  object StandardRenderingPipeline extends js.Object {
+  object StandardRenderingPipeline {
+    
+    @JSImport("babylonjs/PostProcesses/RenderPipeline/Pipelines/standardRenderingPipeline", "StandardRenderingPipeline")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Luminance steps
       */
-    var LuminanceSteps: Double = js.native
+    @JSImport("babylonjs/PostProcesses/RenderPipeline/Pipelines/standardRenderingPipeline", "StandardRenderingPipeline.LuminanceSteps")
+    @js.native
+    def LuminanceSteps: Double = js.native
+    @scala.inline
+    def LuminanceSteps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LuminanceSteps")(x.asInstanceOf[js.Any])
     
     /**
       * Parse the serialized pipeline
@@ -495,6 +502,8 @@ object standardRenderingPipelineMod extends js.Object {
       * @param rootUrl The URL of the serialized pipeline.
       * @returns An instantiated pipeline from the serialized object.
       */
+    @JSImport("babylonjs/PostProcesses/RenderPipeline/Pipelines/standardRenderingPipeline", "StandardRenderingPipeline.Parse")
+    @js.native
     def Parse(source: js.Any, scene: Scene, rootUrl: String): StandardRenderingPipeline = js.native
   }
 }

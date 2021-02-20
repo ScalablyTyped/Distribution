@@ -1,11 +1,12 @@
 package typings.vueMarkdown.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Render extends js.Object {
+trait Render extends StObject {
   
   var render: js.Any = js.native
   
@@ -35,36 +36,24 @@ object Render {
   }
   
   @scala.inline
-  implicit class RenderOps[Self <: Render] (val x: Self) extends AnyVal {
+  implicit class RenderMutableBuilder[Self <: Render] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRender(value: js.Any): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRenderAttrs(value: js.Any): Self = StObject.set(x, "renderAttrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRenderInline(value: js.Any): Self = StObject.set(x, "renderInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRender(value: js.Any): Self = this.set("render", value.asInstanceOf[js.Any])
+    def setRenderInlineAsText(value: js.Any): Self = StObject.set(x, "renderInlineAsText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderAttrs(value: js.Any): Self = this.set("renderAttrs", value.asInstanceOf[js.Any])
+    def setRenderToken(value: js.Any): Self = StObject.set(x, "renderToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderInline(value: js.Any): Self = this.set("renderInline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenderInlineAsText(value: js.Any): Self = this.set("renderInlineAsText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenderToken(value: js.Any): Self = this.set("renderToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRules(value: Codeblock): Self = this.set("rules", value.asInstanceOf[js.Any])
+    def setRules(value: Codeblock): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
   }
 }

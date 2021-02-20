@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceActionDetail extends js.Object {
+trait ServiceActionDetail extends StObject {
   
   /**
     * A map that defines the self-service action.
@@ -26,30 +27,18 @@ object ServiceActionDetail {
   }
   
   @scala.inline
-  implicit class ServiceActionDetailOps[Self <: ServiceActionDetail] (val x: Self) extends AnyVal {
+  implicit class ServiceActionDetailMutableBuilder[Self <: ServiceActionDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefinition(value: ServiceActionDefinitionMap): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefinitionUndefined: Self = StObject.set(x, "Definition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServiceActionSummary(value: ServiceActionSummary): Self = StObject.set(x, "ServiceActionSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinition(value: ServiceActionDefinitionMap): Self = this.set("Definition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefinition: Self = this.set("Definition", js.undefined)
-    
-    @scala.inline
-    def setServiceActionSummary(value: ServiceActionSummary): Self = this.set("ServiceActionSummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceActionSummary: Self = this.set("ServiceActionSummary", js.undefined)
+    def setServiceActionSummaryUndefined: Self = StObject.set(x, "ServiceActionSummary", js.undefined)
   }
 }

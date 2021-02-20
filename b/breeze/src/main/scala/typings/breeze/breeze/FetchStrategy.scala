@@ -2,6 +2,7 @@ package typings.breeze.breeze
 
 import typings.breeze.breeze.core.EnumSymbol
 import typings.breeze.breeze.core.IEnum
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,24 +30,12 @@ object FetchStrategy {
   }
   
   @scala.inline
-  implicit class FetchStrategyOps[Self <: FetchStrategy] (val x: Self) extends AnyVal {
+  implicit class FetchStrategyMutableBuilder[Self <: FetchStrategy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromLocalCache(value: FetchStrategySymbol): Self = StObject.set(x, "FromLocalCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFromLocalCache(value: FetchStrategySymbol): Self = this.set("FromLocalCache", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFromServer(value: FetchStrategySymbol): Self = this.set("FromServer", value.asInstanceOf[js.Any])
+    def setFromServer(value: FetchStrategySymbol): Self = StObject.set(x, "FromServer", value.asInstanceOf[js.Any])
   }
 }

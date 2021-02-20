@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CutoffTime extends js.Object {
+trait CutoffTime extends StObject {
   
   /** Hour of the cutoff time until which an order has to be placed to be processed in the same day. Required. */
   var hour: js.UndefOr[Double] = js.native
@@ -25,36 +26,24 @@ object CutoffTime {
   }
   
   @scala.inline
-  implicit class CutoffTimeOps[Self <: CutoffTime] (val x: Self) extends AnyVal {
+  implicit class CutoffTimeMutableBuilder[Self <: CutoffTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHour(value: Double): Self = this.set("hour", value.asInstanceOf[js.Any])
+    def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
     
     @scala.inline
-    def deleteHour: Self = this.set("hour", js.undefined)
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinute(value: Double): Self = this.set("minute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinute: Self = this.set("minute", js.undefined)
-    
-    @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimezone: Self = this.set("timezone", js.undefined)
+    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
   }
 }

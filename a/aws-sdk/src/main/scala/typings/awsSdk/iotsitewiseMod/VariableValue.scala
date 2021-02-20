@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VariableValue extends js.Object {
+trait VariableValue extends StObject {
   
   /**
     * The ID of the hierarchy to query for the property ID. You can use the hierarchy's name instead of the hierarchy's ID. You use a hierarchy ID instead of a model ID because you can have several hierarchies using the same model and therefore the same propertyId. For example, you might have separately grouped assets that come from the same asset model. For more information, see Asset hierarchies in the AWS IoT SiteWise User Guide.
@@ -26,27 +27,15 @@ object VariableValue {
   }
   
   @scala.inline
-  implicit class VariableValueOps[Self <: VariableValue] (val x: Self) extends AnyVal {
+  implicit class VariableValueMutableBuilder[Self <: VariableValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHierarchyId(value: Macro): Self = StObject.set(x, "hierarchyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHierarchyIdUndefined: Self = StObject.set(x, "hierarchyId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPropertyId(value: Macro): Self = this.set("propertyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHierarchyId(value: Macro): Self = this.set("hierarchyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHierarchyId: Self = this.set("hierarchyId", js.undefined)
+    def setPropertyId(value: Macro): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
   }
 }

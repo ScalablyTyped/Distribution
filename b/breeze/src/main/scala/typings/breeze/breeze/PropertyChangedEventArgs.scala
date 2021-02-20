@@ -1,11 +1,12 @@
 package typings.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PropertyChangedEventArgs extends js.Object {
+trait PropertyChangedEventArgs extends StObject {
   
   var entity: Entity = js.native
   
@@ -35,36 +36,24 @@ object PropertyChangedEventArgs {
   }
   
   @scala.inline
-  implicit class PropertyChangedEventArgsOps[Self <: PropertyChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class PropertyChangedEventArgsMutableBuilder[Self <: PropertyChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntity(value: Entity): Self = this.set("entity", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewValue(value: js.Any): Self = this.set("newValue", value.asInstanceOf[js.Any])
+    def setProperty(value: IProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldValue(value: js.Any): Self = this.set("oldValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperty(value: IProperty): Self = this.set("property", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropertyName(value: String): Self = this.set("propertyName", value.asInstanceOf[js.Any])
+    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecipientIdentityVerification extends js.Object {
+trait RecipientIdentityVerification extends StObject {
   
   var inputOptions: js.UndefOr[js.Array[RecipientIdentityInputOption]] = js.native
   
@@ -24,33 +25,21 @@ object RecipientIdentityVerification {
   }
   
   @scala.inline
-  implicit class RecipientIdentityVerificationOps[Self <: RecipientIdentityVerification] (val x: Self) extends AnyVal {
+  implicit class RecipientIdentityVerificationMutableBuilder[Self <: RecipientIdentityVerification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputOptions(value: js.Array[RecipientIdentityInputOption]): Self = StObject.set(x, "inputOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputOptionsUndefined: Self = StObject.set(x, "inputOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputOptionsVarargs(value: RecipientIdentityInputOption*): Self = StObject.set(x, "inputOptions", js.Array(value :_*))
     
     @scala.inline
-    def setInputOptionsVarargs(value: RecipientIdentityInputOption*): Self = this.set("inputOptions", js.Array(value :_*))
+    def setWorkflowId(value: String): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputOptions(value: js.Array[RecipientIdentityInputOption]): Self = this.set("inputOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputOptions: Self = this.set("inputOptions", js.undefined)
-    
-    @scala.inline
-    def setWorkflowId(value: String): Self = this.set("workflowId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkflowId: Self = this.set("workflowId", js.undefined)
+    def setWorkflowIdUndefined: Self = StObject.set(x, "workflowId", js.undefined)
   }
 }

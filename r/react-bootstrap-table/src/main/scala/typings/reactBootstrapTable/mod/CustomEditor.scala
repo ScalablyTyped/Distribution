@@ -1,12 +1,13 @@
 package typings.reactBootstrapTable.mod
 
 import typings.react.mod.ReactElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomEditor[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] extends js.Object {
+trait CustomEditor[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] extends StObject {
   
   /**
     * Additional parameters to pass to the getElement function inside the props argument.
@@ -40,19 +41,13 @@ object CustomEditor {
   }
   
   @scala.inline
-  implicit class CustomEditorOps[Self <: CustomEditor[_, _], TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] (val x: Self with (CustomEditor[TRow, K])) extends AnyVal {
+  implicit class CustomEditorMutableBuilder[Self <: CustomEditor[_, _], TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] (val x: Self with (CustomEditor[TRow, K])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomEditorParameters(value: js.Object): Self = StObject.set(x, "customEditorParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomEditorParametersUndefined: Self = StObject.set(x, "customEditorParameters", js.undefined)
     
     @scala.inline
     def setGetElement(
@@ -60,12 +55,6 @@ object CustomEditor {
           /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ /* updatedCell */ js.Any, 
           Unit
         ], CustomEditorProps[TRow, K]) => ReactElement
-    ): Self = this.set("getElement", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setCustomEditorParameters(value: js.Object): Self = this.set("customEditorParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomEditorParameters: Self = this.set("customEditorParameters", js.undefined)
+    ): Self = StObject.set(x, "getElement", js.Any.fromFunction2(value))
   }
 }

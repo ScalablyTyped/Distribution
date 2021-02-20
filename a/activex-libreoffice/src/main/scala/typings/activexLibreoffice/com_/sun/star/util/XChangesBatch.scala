@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.util
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,33 +54,21 @@ object XChangesBatch {
   }
   
   @scala.inline
-  implicit class XChangesBatchOps[Self <: XChangesBatch] (val x: Self) extends AnyVal {
+  implicit class XChangesBatchMutableBuilder[Self <: XChangesBatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitChanges(value: () => Unit): Self = StObject.set(x, "commitChanges", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPendingChanges(value: () => ChangesSet): Self = StObject.set(x, "getPendingChanges", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasPendingChanges(value: () => Boolean): Self = StObject.set(x, "hasPendingChanges", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPendingChangesVarargs(value: ElementChange*): Self = this.set("PendingChanges", js.Array(value :_*))
+    def setPendingChanges(value: ChangesSet): Self = StObject.set(x, "PendingChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingChanges(value: ChangesSet): Self = this.set("PendingChanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCommitChanges(value: () => Unit): Self = this.set("commitChanges", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPendingChanges(value: () => ChangesSet): Self = this.set("getPendingChanges", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHasPendingChanges(value: () => Boolean): Self = this.set("hasPendingChanges", js.Any.fromFunction0(value))
+    def setPendingChangesVarargs(value: ElementChange*): Self = StObject.set(x, "PendingChanges", js.Array(value :_*))
   }
 }

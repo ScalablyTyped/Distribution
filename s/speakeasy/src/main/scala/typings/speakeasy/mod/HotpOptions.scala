@@ -1,6 +1,7 @@
 package typings.speakeasy.mod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,36 +33,24 @@ object HotpOptions {
   }
   
   @scala.inline
-  implicit class HotpOptionsOps[Self <: HotpOptions] (val x: Self) extends AnyVal {
+  implicit class HotpOptionsMutableBuilder[Self <: HotpOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDigest(value: Buffer): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDigest(value: Buffer): Self = this.set("digest", value.asInstanceOf[js.Any])
+    def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
     
     @scala.inline
-    def deleteDigest: Self = this.set("digest", js.undefined)
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDigits(value: Double): Self = this.set("digits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDigits: Self = this.set("digits", js.undefined)
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssignPrivateIpAddressesRequest extends js.Object {
+trait AssignPrivateIpAddressesRequest extends StObject {
   
   /**
     * Indicates whether to allow an IP address that is already assigned to another network interface or instance to be reassigned to the specified network interface.
@@ -36,42 +37,30 @@ object AssignPrivateIpAddressesRequest {
   }
   
   @scala.inline
-  implicit class AssignPrivateIpAddressesRequestOps[Self <: AssignPrivateIpAddressesRequest] (val x: Self) extends AnyVal {
+  implicit class AssignPrivateIpAddressesRequestMutableBuilder[Self <: AssignPrivateIpAddressesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowReassignment(value: Boolean): Self = StObject.set(x, "AllowReassignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowReassignmentUndefined: Self = StObject.set(x, "AllowReassignment", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = this.set("NetworkInterfaceId", value.asInstanceOf[js.Any])
+    def setPrivateIpAddresses(value: PrivateIpAddressStringList): Self = StObject.set(x, "PrivateIpAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowReassignment(value: Boolean): Self = this.set("AllowReassignment", value.asInstanceOf[js.Any])
+    def setPrivateIpAddressesUndefined: Self = StObject.set(x, "PrivateIpAddresses", js.undefined)
     
     @scala.inline
-    def deleteAllowReassignment: Self = this.set("AllowReassignment", js.undefined)
+    def setPrivateIpAddressesVarargs(value: String*): Self = StObject.set(x, "PrivateIpAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setPrivateIpAddressesVarargs(value: String*): Self = this.set("PrivateIpAddresses", js.Array(value :_*))
+    def setSecondaryPrivateIpAddressCount(value: Integer): Self = StObject.set(x, "SecondaryPrivateIpAddressCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateIpAddresses(value: PrivateIpAddressStringList): Self = this.set("PrivateIpAddresses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateIpAddresses: Self = this.set("PrivateIpAddresses", js.undefined)
-    
-    @scala.inline
-    def setSecondaryPrivateIpAddressCount(value: Integer): Self = this.set("SecondaryPrivateIpAddressCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondaryPrivateIpAddressCount: Self = this.set("SecondaryPrivateIpAddressCount", js.undefined)
+    def setSecondaryPrivateIpAddressCountUndefined: Self = StObject.set(x, "SecondaryPrivateIpAddressCount", js.undefined)
   }
 }

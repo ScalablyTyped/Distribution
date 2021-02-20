@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doubleclickbidmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisjunctiveMatchStatement extends js.Object {
+trait DisjunctiveMatchStatement extends StObject {
   
   /** Filters. There is a limit of 100 filters that can be set per disjunctive match statement. */
   var eventFilters: js.UndefOr[js.Array[EventFilter]] = js.native
@@ -19,27 +20,15 @@ object DisjunctiveMatchStatement {
   }
   
   @scala.inline
-  implicit class DisjunctiveMatchStatementOps[Self <: DisjunctiveMatchStatement] (val x: Self) extends AnyVal {
+  implicit class DisjunctiveMatchStatementMutableBuilder[Self <: DisjunctiveMatchStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventFilters(value: js.Array[EventFilter]): Self = StObject.set(x, "eventFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventFiltersUndefined: Self = StObject.set(x, "eventFilters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEventFiltersVarargs(value: EventFilter*): Self = this.set("eventFilters", js.Array(value :_*))
-    
-    @scala.inline
-    def setEventFilters(value: js.Array[EventFilter]): Self = this.set("eventFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventFilters: Self = this.set("eventFilters", js.undefined)
+    def setEventFiltersVarargs(value: EventFilter*): Self = StObject.set(x, "eventFilters", js.Array(value :_*))
   }
 }

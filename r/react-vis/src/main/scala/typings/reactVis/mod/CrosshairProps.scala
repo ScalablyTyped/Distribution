@@ -5,12 +5,13 @@ import typings.reactVis.anon.Box
 import typings.reactVis.anon.Title
 import typings.reactVis.reactVisStrings.left
 import typings.reactVis.reactVisStrings.right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CrosshairProps extends js.Object {
+trait CrosshairProps extends StObject {
   
   var className: js.UndefOr[String] = js.native
   
@@ -43,87 +44,75 @@ object CrosshairProps {
   }
   
   @scala.inline
-  implicit class CrosshairPropsOps[Self <: CrosshairProps] (val x: Self) extends AnyVal {
+  implicit class CrosshairPropsMutableBuilder[Self <: CrosshairProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInnerHeight(value: Double): Self = StObject.set(x, "innerHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setInnerHeightUndefined: Self = StObject.set(x, "innerHeight", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setInnerWidth(value: Double): Self = StObject.set(x, "innerWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerHeight(value: Double): Self = this.set("innerHeight", value.asInstanceOf[js.Any])
+    def setInnerWidthUndefined: Self = StObject.set(x, "innerWidth", js.undefined)
     
     @scala.inline
-    def deleteInnerHeight: Self = this.set("innerHeight", js.undefined)
+    def setItemsFormat(value: /* x */ js.Any => js.Array[Title]): Self = StObject.set(x, "itemsFormat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInnerWidth(value: Double): Self = this.set("innerWidth", value.asInstanceOf[js.Any])
+    def setItemsFormatUndefined: Self = StObject.set(x, "itemsFormat", js.undefined)
     
     @scala.inline
-    def deleteInnerWidth: Self = this.set("innerWidth", js.undefined)
+    def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsFormat(value: /* x */ js.Any => js.Array[Title]): Self = this.set("itemsFormat", js.Any.fromFunction1(value))
+    def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
     @scala.inline
-    def deleteItemsFormat: Self = this.set("itemsFormat", js.undefined)
+    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginLeft(value: Double): Self = this.set("marginLeft", value.asInstanceOf[js.Any])
+    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
     @scala.inline
-    def deleteMarginLeft: Self = this.set("marginLeft", js.undefined)
+    def setOrientation(value: left | right): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginTop(value: Double): Self = this.set("marginTop", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteMarginTop: Self = this.set("marginTop", js.undefined)
+    def setSeries(value: StringDictionary[js.Any]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: left | right): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setStyle(value: Box): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeries(value: StringDictionary[js.Any]): Self = this.set("series", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
+    def setTitleFormat(value: /* x */ js.Any => Title): Self = StObject.set(x, "titleFormat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStyle(value: Box): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTitleFormatUndefined: Self = StObject.set(x, "titleFormat", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleFormat(value: /* x */ js.Any => Title): Self = this.set("titleFormat", js.Any.fromFunction1(value))
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deleteTitleFormat: Self = this.set("titleFormat", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: js.Any*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[_]): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

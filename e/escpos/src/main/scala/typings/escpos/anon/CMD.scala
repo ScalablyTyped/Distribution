@@ -3,12 +3,13 @@ package typings.escpos.anon
 import typings.escpos.escposNumbers.`12`
 import typings.escpos.escposNumbers.`24`
 import typings.escpos.escposStrings.EscapeNumbersignNumbersignQPIX
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CMD extends js.Object {
+trait CMD extends StObject {
   
   var CMD: EscapeNumbersignNumbersignQPIX = js.native
   
@@ -32,30 +33,18 @@ object CMD {
   }
   
   @scala.inline
-  implicit class CMDOps[Self <: CMD] (val x: Self) extends AnyVal {
+  implicit class CMDMutableBuilder[Self <: CMD] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCMD(value: EscapeNumbersignNumbersignQPIX): Self = StObject.set(x, "CMD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDEFAULT(value: `12`): Self = StObject.set(x, "DEFAULT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMAX(value: `24`): Self = StObject.set(x, "MAX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCMD(value: EscapeNumbersignNumbersignQPIX): Self = this.set("CMD", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDEFAULT(value: `12`): Self = this.set("DEFAULT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMAX(value: `24`): Self = this.set("MAX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMIN(value: typings.escpos.escposNumbers.`1`): Self = this.set("MIN", value.asInstanceOf[js.Any])
+    def setMIN(value: typings.escpos.escposNumbers.`1`): Self = StObject.set(x, "MIN", value.asInstanceOf[js.Any])
   }
 }

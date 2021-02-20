@@ -11,12 +11,13 @@ import typings.maximMazurokGapiClientDialogflow.anon.KeyLanguageCode
 import typings.maximMazurokGapiClientDialogflow.anon.LanguageCodeName
 import typings.maximMazurokGapiClientDialogflow.anon.Name
 import typings.maximMazurokGapiClientDialogflow.anon.NameOauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IntentsResource extends js.Object {
+trait IntentsResource extends StObject {
   
   def batchDelete(request: Alt, body: GoogleCloudDialogflowV2BatchDeleteIntentsRequest): Request[GoogleLongrunningOperation] = js.native
   /** Deletes intents in the specified agent. Operation */

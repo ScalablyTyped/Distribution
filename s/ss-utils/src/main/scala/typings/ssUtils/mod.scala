@@ -1,18 +1,18 @@
 package typings.ssUtils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ss-utils", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * EventSource
     */
+  @JSImport("ss-utils", "ReadyState")
   @js.native
-  object ReadyState extends js.Object {
+  object ReadyState extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ssUtils.ssutils.ReadyState with Double] = js.native

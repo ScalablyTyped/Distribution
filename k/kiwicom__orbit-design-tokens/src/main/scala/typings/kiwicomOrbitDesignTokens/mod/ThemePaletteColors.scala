@@ -1,11 +1,12 @@
 package typings.kiwicomOrbitDesignTokens.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThemePaletteColors extends js.Object {
+trait ThemePaletteColors extends StObject {
   
   var productDark: String = js.native
   
@@ -44,57 +45,45 @@ object ThemePaletteColors {
   }
   
   @scala.inline
-  implicit class ThemePaletteColorsOps[Self <: ThemePaletteColors] (val x: Self) extends AnyVal {
+  implicit class ThemePaletteColorsMutableBuilder[Self <: ThemePaletteColors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProductDark(value: String): Self = StObject.set(x, "productDark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProductDarkActive(value: String): Self = StObject.set(x, "productDarkActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProductDarkActiveUndefined: Self = StObject.set(x, "productDarkActive", js.undefined)
     
     @scala.inline
-    def setProductDark(value: String): Self = this.set("productDark", value.asInstanceOf[js.Any])
+    def setProductDarkHover(value: String): Self = StObject.set(x, "productDarkHover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductLight(value: String): Self = this.set("productLight", value.asInstanceOf[js.Any])
+    def setProductDarkHoverUndefined: Self = StObject.set(x, "productDarkHover", js.undefined)
     
     @scala.inline
-    def setProductLightActive(value: String): Self = this.set("productLightActive", value.asInstanceOf[js.Any])
+    def setProductDarker(value: String): Self = StObject.set(x, "productDarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductLightHover(value: String): Self = this.set("productLightHover", value.asInstanceOf[js.Any])
+    def setProductDarkerUndefined: Self = StObject.set(x, "productDarker", js.undefined)
     
     @scala.inline
-    def setProductNormal(value: String): Self = this.set("productNormal", value.asInstanceOf[js.Any])
+    def setProductLight(value: String): Self = StObject.set(x, "productLight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductNormalActive(value: String): Self = this.set("productNormalActive", value.asInstanceOf[js.Any])
+    def setProductLightActive(value: String): Self = StObject.set(x, "productLightActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductNormalHover(value: String): Self = this.set("productNormalHover", value.asInstanceOf[js.Any])
+    def setProductLightHover(value: String): Self = StObject.set(x, "productLightHover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductDarkActive(value: String): Self = this.set("productDarkActive", value.asInstanceOf[js.Any])
+    def setProductNormal(value: String): Self = StObject.set(x, "productNormal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProductDarkActive: Self = this.set("productDarkActive", js.undefined)
+    def setProductNormalActive(value: String): Self = StObject.set(x, "productNormalActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductDarkHover(value: String): Self = this.set("productDarkHover", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductDarkHover: Self = this.set("productDarkHover", js.undefined)
-    
-    @scala.inline
-    def setProductDarker(value: String): Self = this.set("productDarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductDarker: Self = this.set("productDarker", js.undefined)
+    def setProductNormalHover(value: String): Self = StObject.set(x, "productNormalHover", value.asInstanceOf[js.Any])
   }
 }

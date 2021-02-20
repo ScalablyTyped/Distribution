@@ -1,5 +1,6 @@
 package typings.xmlbuilder.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a writer which outputs an XML document.
   */
 @js.native
-trait XMLWriter extends js.Object {
+trait XMLWriter extends StObject {
   
   /** 
     * Writes an attribute. 
@@ -247,132 +248,120 @@ object XMLWriter {
   }
   
   @scala.inline
-  implicit class XMLWriterOps[Self <: XMLWriter] (val x: Self) extends AnyVal {
+  implicit class XMLWriterMutableBuilder[Self <: XMLWriter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribute(value: (/* att */ XMLAttribute, /* options */ WriterOptions, /* level */ Double) => _): Self = StObject.set(x, "attribute", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCdata(value: (/* node */ XMLCData, /* options */ WriterOptions, /* level */ Double) => _): Self = StObject.set(x, "cdata", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAttribute(value: (/* att */ XMLAttribute, /* options */ WriterOptions, /* level */ Double) => _): Self = this.set("attribute", js.Any.fromFunction3(value))
+    def setCdataUndefined: Self = StObject.set(x, "cdata", js.undefined)
     
     @scala.inline
-    def deleteAttribute: Self = this.set("attribute", js.undefined)
+    def setCloseAttribute(value: (/* att */ XMLAttribute, /* options */ WriterOptions, /* level */ Double) => Unit): Self = StObject.set(x, "closeAttribute", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCdata(value: (/* node */ XMLCData, /* options */ WriterOptions, /* level */ Double) => _): Self = this.set("cdata", js.Any.fromFunction3(value))
+    def setCloseAttributeUndefined: Self = StObject.set(x, "closeAttribute", js.undefined)
     
     @scala.inline
-    def deleteCdata: Self = this.set("cdata", js.undefined)
+    def setCloseNode(value: (/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double) => Unit): Self = StObject.set(x, "closeNode", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCloseAttribute(value: (/* att */ XMLAttribute, /* options */ WriterOptions, /* level */ Double) => Unit): Self = this.set("closeAttribute", js.Any.fromFunction3(value))
+    def setCloseNodeUndefined: Self = StObject.set(x, "closeNode", js.undefined)
     
     @scala.inline
-    def deleteCloseAttribute: Self = this.set("closeAttribute", js.undefined)
+    def setComment(value: (/* node */ XMLComment, /* options */ WriterOptions, /* level */ Double) => _): Self = StObject.set(x, "comment", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCloseNode(value: (/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double) => Unit): Self = this.set("closeNode", js.Any.fromFunction3(value))
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def deleteCloseNode: Self = this.set("closeNode", js.undefined)
+    def setDeclaration(value: (/* node */ XMLDeclaration, /* options */ WriterOptions, /* level */ Double) => _): Self = StObject.set(x, "declaration", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setComment(value: (/* node */ XMLComment, /* options */ WriterOptions, /* level */ Double) => _): Self = this.set("comment", js.Any.fromFunction3(value))
+    def setDeclarationUndefined: Self = StObject.set(x, "declaration", js.undefined)
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setDocType(value: (/* node */ XMLDocType, /* options */ WriterOptions, /* level */ Double) => _): Self = StObject.set(x, "docType", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDeclaration(value: (/* node */ XMLDeclaration, /* options */ WriterOptions, /* level */ Double) => _): Self = this.set("declaration", js.Any.fromFunction3(value))
+    def setDocTypeUndefined: Self = StObject.set(x, "docType", js.undefined)
     
     @scala.inline
-    def deleteDeclaration: Self = this.set("declaration", js.undefined)
+    def setDtdAttList(value: (/* node */ XMLDTDAttList, /* options */ WriterOptions, /* level */ Double) => _): Self = StObject.set(x, "dtdAttList", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDocType(value: (/* node */ XMLDocType, /* options */ WriterOptions, /* level */ Double) => _): Self = this.set("docType", js.Any.fromFunction3(value))
+    def setDtdAttListUndefined: Self = StObject.set(x, "dtdAttList", js.undefined)
     
     @scala.inline
-    def deleteDocType: Self = this.set("docType", js.undefined)
+    def setDtdElement(value: (/* node */ XMLDTDElement, /* options */ WriterOptions, /* level */ Double) => _): Self = StObject.set(x, "dtdElement", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDtdAttList(value: (/* node */ XMLDTDAttList, /* options */ WriterOptions, /* level */ Double) => _): Self = this.set("dtdAttList", js.Any.fromFunction3(value))
+    def setDtdElementUndefined: Self = StObject.set(x, "dtdElement", js.undefined)
     
     @scala.inline
-    def deleteDtdAttList: Self = this.set("dtdAttList", js.undefined)
+    def setDtdEntity(value: (/* node */ XMLDTDEntity, /* options */ WriterOptions, /* level */ Double) => _): Self = StObject.set(x, "dtdEntity", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDtdElement(value: (/* node */ XMLDTDElement, /* options */ WriterOptions, /* level */ Double) => _): Self = this.set("dtdElement", js.Any.fromFunction3(value))
+    def setDtdEntityUndefined: Self = StObject.set(x, "dtdEntity", js.undefined)
     
     @scala.inline
-    def deleteDtdElement: Self = this.set("dtdElement", js.undefined)
+    def setDtdNotation(value: (/* node */ XMLDTDNotation, /* options */ WriterOptions, /* level */ Double) => _): Self = StObject.set(x, "dtdNotation", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDtdEntity(value: (/* node */ XMLDTDEntity, /* options */ WriterOptions, /* level */ Double) => _): Self = this.set("dtdEntity", js.Any.fromFunction3(value))
+    def setDtdNotationUndefined: Self = StObject.set(x, "dtdNotation", js.undefined)
     
     @scala.inline
-    def deleteDtdEntity: Self = this.set("dtdEntity", js.undefined)
+    def setElement(value: (/* node */ XMLElement, /* options */ WriterOptions, /* level */ Double) => _): Self = StObject.set(x, "element", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDtdNotation(value: (/* node */ XMLDTDNotation, /* options */ WriterOptions, /* level */ Double) => _): Self = this.set("dtdNotation", js.Any.fromFunction3(value))
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def deleteDtdNotation: Self = this.set("dtdNotation", js.undefined)
+    def setEndline(value: (/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double) => _): Self = StObject.set(x, "endline", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setElement(value: (/* node */ XMLElement, /* options */ WriterOptions, /* level */ Double) => _): Self = this.set("element", js.Any.fromFunction3(value))
+    def setEndlineUndefined: Self = StObject.set(x, "endline", js.undefined)
     
     @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
+    def setIndent(value: (/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double) => _): Self = StObject.set(x, "indent", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setEndline(value: (/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double) => _): Self = this.set("endline", js.Any.fromFunction3(value))
+    def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
     
     @scala.inline
-    def deleteEndline: Self = this.set("endline", js.undefined)
+    def setOpenAttribute(value: (/* att */ XMLAttribute, /* options */ WriterOptions, /* level */ Double) => Unit): Self = StObject.set(x, "openAttribute", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setIndent(value: (/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double) => _): Self = this.set("indent", js.Any.fromFunction3(value))
+    def setOpenAttributeUndefined: Self = StObject.set(x, "openAttribute", js.undefined)
     
     @scala.inline
-    def deleteIndent: Self = this.set("indent", js.undefined)
+    def setOpenNode(value: (/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double) => Unit): Self = StObject.set(x, "openNode", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setOpenAttribute(value: (/* att */ XMLAttribute, /* options */ WriterOptions, /* level */ Double) => Unit): Self = this.set("openAttribute", js.Any.fromFunction3(value))
+    def setOpenNodeUndefined: Self = StObject.set(x, "openNode", js.undefined)
     
     @scala.inline
-    def deleteOpenAttribute: Self = this.set("openAttribute", js.undefined)
+    def setProcessingInstruction(value: (/* node */ XMLProcessingInstruction, /* options */ WriterOptions, /* level */ Double) => _): Self = StObject.set(x, "processingInstruction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setOpenNode(value: (/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double) => Unit): Self = this.set("openNode", js.Any.fromFunction3(value))
+    def setProcessingInstructionUndefined: Self = StObject.set(x, "processingInstruction", js.undefined)
     
     @scala.inline
-    def deleteOpenNode: Self = this.set("openNode", js.undefined)
+    def setRaw(value: (/* node */ XMLRaw, /* options */ WriterOptions, /* level */ Double) => _): Self = StObject.set(x, "raw", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setProcessingInstruction(value: (/* node */ XMLProcessingInstruction, /* options */ WriterOptions, /* level */ Double) => _): Self = this.set("processingInstruction", js.Any.fromFunction3(value))
+    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
     @scala.inline
-    def deleteProcessingInstruction: Self = this.set("processingInstruction", js.undefined)
+    def setText(value: (/* node */ XMLText, /* options */ WriterOptions, /* level */ Double) => _): Self = StObject.set(x, "text", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setRaw(value: (/* node */ XMLRaw, /* options */ WriterOptions, /* level */ Double) => _): Self = this.set("raw", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteRaw: Self = this.set("raw", js.undefined)
-    
-    @scala.inline
-    def setText(value: (/* node */ XMLText, /* options */ WriterOptions, /* level */ Double) => _): Self = this.set("text", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsTransactionsV3PaymentResult extends js.Object {
+trait GoogleActionsTransactionsV3PaymentResult extends StObject {
   
   /**
     * Google provided payment method data.
@@ -31,30 +32,18 @@ object GoogleActionsTransactionsV3PaymentResult {
   }
   
   @scala.inline
-  implicit class GoogleActionsTransactionsV3PaymentResultOps[Self <: GoogleActionsTransactionsV3PaymentResult] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsTransactionsV3PaymentResultMutableBuilder[Self <: GoogleActionsTransactionsV3PaymentResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGooglePaymentData(value: String): Self = StObject.set(x, "googlePaymentData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGooglePaymentDataUndefined: Self = StObject.set(x, "googlePaymentData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMerchantPaymentMethodId(value: String): Self = StObject.set(x, "merchantPaymentMethodId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGooglePaymentData(value: String): Self = this.set("googlePaymentData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGooglePaymentData: Self = this.set("googlePaymentData", js.undefined)
-    
-    @scala.inline
-    def setMerchantPaymentMethodId(value: String): Self = this.set("merchantPaymentMethodId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMerchantPaymentMethodId: Self = this.set("merchantPaymentMethodId", js.undefined)
+    def setMerchantPaymentMethodIdUndefined: Self = StObject.set(x, "merchantPaymentMethodId", js.undefined)
   }
 }

@@ -13,6 +13,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -143,51 +144,39 @@ object XReportComponent {
   }
   
   @scala.inline
-  implicit class XReportComponentOps[Self <: XReportComponent] (val x: Self) extends AnyVal {
+  implicit class XReportComponentMutableBuilder[Self <: XReportComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControlBorder(value: Double): Self = StObject.set(x, "ControlBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControlBorderColor(value: Double): Self = StObject.set(x, "ControlBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetailFields(value: SafeArray[String]): Self = StObject.set(x, "DetailFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlBorder(value: Double): Self = this.set("ControlBorder", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlBorderColor(value: Double): Self = this.set("ControlBorderColor", value.asInstanceOf[js.Any])
+    def setMasterFields(value: SafeArray[String]): Self = StObject.set(x, "MasterFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailFields(value: SafeArray[String]): Self = this.set("DetailFields", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setPositionX(value: Double): Self = StObject.set(x, "PositionX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterFields(value: SafeArray[String]): Self = this.set("MasterFields", value.asInstanceOf[js.Any])
+    def setPositionY(value: Double): Self = StObject.set(x, "PositionY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPrintRepeatedValues(value: Boolean): Self = StObject.set(x, "PrintRepeatedValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionX(value: Double): Self = this.set("PositionX", value.asInstanceOf[js.Any])
+    def setSection(value: XSection): Self = StObject.set(x, "Section", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionY(value: Double): Self = this.set("PositionY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrintRepeatedValues(value: Boolean): Self = this.set("PrintRepeatedValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSection(value: XSection): Self = this.set("Section", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.sharepoint.SPClientTemplates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,45 +62,33 @@ object FieldSchemaInFormUser {
   }
   
   @scala.inline
-  implicit class FieldSchemaInFormUserOps[Self <: FieldSchemaInFormUser] (val x: Self) extends AnyVal {
+  implicit class FieldSchemaInFormUserMutableBuilder[Self <: FieldSchemaInFormUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultRender(value: Boolean): Self = StObject.set(x, "DefaultRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntitySeparator(value: String): Self = StObject.set(x, "EntitySeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListFormUrl(value: String): Self = StObject.set(x, "ListFormUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultRender(value: Boolean): Self = this.set("DefaultRender", value.asInstanceOf[js.Any])
+    def setPictureOnly(value: Boolean): Self = StObject.set(x, "PictureOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntitySeparator(value: String): Self = this.set("EntitySeparator", value.asInstanceOf[js.Any])
+    def setPictureSize(value: String): Self = StObject.set(x, "PictureSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListFormUrl(value: String): Self = this.set("ListFormUrl", value.asInstanceOf[js.Any])
+    def setPresence(value: Boolean): Self = StObject.set(x, "Presence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPictureOnly(value: Boolean): Self = this.set("PictureOnly", value.asInstanceOf[js.Any])
+    def setUserDisplayUrl(value: String): Self = StObject.set(x, "UserDisplayUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPictureSize(value: String): Self = this.set("PictureSize", value.asInstanceOf[js.Any])
+    def setWithPicture(value: Boolean): Self = StObject.set(x, "WithPicture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPresence(value: Boolean): Self = this.set("Presence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserDisplayUrl(value: String): Self = this.set("UserDisplayUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWithPicture(value: Boolean): Self = this.set("WithPicture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWithPictureDetail(value: Boolean): Self = this.set("WithPictureDetail", value.asInstanceOf[js.Any])
+    def setWithPictureDetail(value: Boolean): Self = StObject.set(x, "WithPictureDetail", value.asInstanceOf[js.Any])
   }
 }

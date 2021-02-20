@@ -1,18 +1,16 @@
 package typings.jupyterlabApputils
 
-import org.scalablytyped.runtime.TopLevel
 import typings.luminoCoreutils.mod.Token
 import typings.luminoDisposable.mod.IDisposable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/apputils/lib/splash", JSImport.Namespace)
-@js.native
-object splashMod extends js.Object {
+object splashMod {
   
   @js.native
-  trait ISplashScreen extends js.Object {
+  trait ISplashScreen extends StObject {
     
     /**
       * Show the application splash screen.
@@ -24,6 +22,7 @@ object splashMod extends js.Object {
     def show(): IDisposable = js.native
     def show(light: Boolean): IDisposable = js.native
   }
+  @JSImport("@jupyterlab/apputils/lib/splash", "ISplashScreen")
   @js.native
-  object ISplashScreen extends TopLevel[Token[ISplashScreen]]
+  val ISplashScreen: Token[typings.jupyterlabApputils.splashMod.ISplashScreen] = js.native
 }

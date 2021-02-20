@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Effectivedate extends js.Object {
+trait Effectivedate extends StObject {
   
   var effective_date: String = js.native
   
@@ -24,30 +25,18 @@ object Effectivedate {
   }
   
   @scala.inline
-  implicit class EffectivedateOps[Self <: Effectivedate] (val x: Self) extends AnyVal {
+  implicit class EffectivedateMutableBuilder[Self <: Effectivedate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEffective_date(value: String): Self = StObject.set(x, "effective_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlan(value: Accountsurl): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffective_date(value: String): Self = this.set("effective_date", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlan(value: Accountsurl): Self = this.set("plan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnit_count(value: Double): Self = this.set("unit_count", value.asInstanceOf[js.Any])
+    def setUnit_count(value: Double): Self = StObject.set(x, "unit_count", value.asInstanceOf[js.Any])
   }
 }

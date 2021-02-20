@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,39 +79,27 @@ object SummaryStatisticsResult {
   }
   
   @scala.inline
-  implicit class SummaryStatisticsResultOps[Self <: SummaryStatisticsResult] (val x: Self) extends AnyVal {
+  implicit class SummaryStatisticsResultMutableBuilder[Self <: SummaryStatisticsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvg(value: Double): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvg(value: Double): Self = this.set("avg", value.asInstanceOf[js.Any])
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setSum(value: Double): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStddev(value: Double): Self = this.set("stddev", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSum(value: Double): Self = this.set("sum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariance(value: Double): Self = this.set("variance", value.asInstanceOf[js.Any])
+    def setVariance(value: Double): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
   }
 }

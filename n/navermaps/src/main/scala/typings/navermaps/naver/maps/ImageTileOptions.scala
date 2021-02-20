@@ -1,12 +1,13 @@
 package typings.navermaps.naver.maps
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageTileOptions extends js.Object {
+trait ImageTileOptions extends StObject {
   
   var imgonerror: js.UndefOr[js.Function0[_]] = js.native
   
@@ -35,72 +36,60 @@ object ImageTileOptions {
   }
   
   @scala.inline
-  implicit class ImageTileOptionsOps[Self <: ImageTileOptions] (val x: Self) extends AnyVal {
+  implicit class ImageTileOptionsMutableBuilder[Self <: ImageTileOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImgonerror(value: () => _): Self = StObject.set(x, "imgonerror", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImgonerrorUndefined: Self = StObject.set(x, "imgonerror", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImgonload(value: () => _): Self = StObject.set(x, "imgonload", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setUrlsVarargs(value: String*): Self = this.set("urls", js.Array(value :_*))
+    def setImgonloadUndefined: Self = StObject.set(x, "imgonload", js.undefined)
     
     @scala.inline
-    def setUrls(value: js.Array[String]): Self = this.set("urls", value.asInstanceOf[js.Any])
+    def setOffset(value: Point): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImgonerror(value: () => _): Self = this.set("imgonerror", js.Any.fromFunction0(value))
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteImgonerror: Self = this.set("imgonerror", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImgonload(value: () => _): Self = this.set("imgonload", js.Any.fromFunction0(value))
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteImgonload: Self = this.set("imgonload", js.undefined)
+    def setPane(value: HTMLElement): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Point): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setTransition(value: Boolean): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPane(value: HTMLElement): Self = this.set("pane", value.asInstanceOf[js.Any])
+    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
     @scala.inline
-    def deletePane: Self = this.set("pane", js.undefined)
+    def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Size): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransition(value: Boolean): Self = this.set("transition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransition: Self = this.set("transition", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

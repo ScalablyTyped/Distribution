@@ -1,19 +1,17 @@
 package typings.sxml
 
 import typings.sxml.xmllistMod.XMLList
-import typings.tstl.hashMapMod.HashMap
-import typings.tstl.hashMapMod.HashMap.Iterator
-import typings.tstl.hashMapMod.HashMap.ReverseIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sxml/lib/module/XML", JSImport.Namespace)
-@js.native
-object xmlMod extends js.Object {
+object xmlMod {
   
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap<string, XMLList> * / any */ @JSImport("sxml/lib/module/XML", "XML")
   @js.native
-  class XML () extends HashMap[String, XMLList] {
+  class XML () extends StObject {
     def this(str: String) = this()
     def this(xml: XML) = this()
     
@@ -21,6 +19,11 @@ object xmlMod extends js.Object {
       * @hidden
       */
     var _Copy_constructor: js.Any = js.native
+    
+    /* protected */ def _Handle_insert(
+      first: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.Iterator<string, XMLList> */ js.Any,
+      last: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.Iterator<string, XMLList> */ js.Any
+    ): Unit = js.native
     
     /**
       * @hidden
@@ -54,11 +57,11 @@ object xmlMod extends js.Object {
     
     def eraseProperty(key: String): Unit = js.native
     
-    def findProperty(key: String): Iterator[String, String] = js.native
+    def findProperty(key: String): js.Any = js.native
     
     def getProperty(key: String): String = js.native
     
-    def getPropertyMap(): HashMap[String, String] = js.native
+    def getPropertyMap(): js.Any = js.native
     
     def getTag(): String = js.native
     
@@ -72,6 +75,10 @@ object xmlMod extends js.Object {
       * @hidden
       */
     var property_map_ : js.Any = js.native
+    
+    def push(
+      args: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPair<string, XMLList> */ js.Any) | XML | XMLList)*
+    ): Double = js.native
     
     def setProperty(key: String, value: String): Unit = js.native
     
@@ -92,37 +99,56 @@ object xmlMod extends js.Object {
     var value_ : js.Any = js.native
   }
   /* static members */
-  @js.native
-  object XML extends js.Object {
+  object XML {
+    
+    @JSImport("sxml/lib/module/XML", "XML")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * @hidden
       */
-    var _Compute_min_index: js.Any = js.native
+    @JSImport("sxml/lib/module/XML", "XML._Compute_min_index")
+    @js.native
+    def _Compute_min_index: js.Any = js.native
+    @scala.inline
+    def _Compute_min_index_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Compute_min_index")(x.asInstanceOf[js.Any])
     
     /**
       * @hidden
       */
-    var _Repeat: js.Any = js.native
+    @JSImport("sxml/lib/module/XML", "XML._Repeat")
+    @js.native
+    def _Repeat: js.Any = js.native
+    @scala.inline
+    def _Repeat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Repeat")(x.asInstanceOf[js.Any])
     
-    @JSName("decode_property")
+    @JSImport("sxml/lib/module/XML", "XML.decode_property")
+    @js.native
     def decodeProperty(str: String): String = js.native
     
-    @JSName("decode_value")
+    @JSImport("sxml/lib/module/XML", "XML.decode_value")
+    @js.native
     def decodeValue(str: String): String = js.native
     
-    @JSName("encode_property")
+    @JSImport("sxml/lib/module/XML", "XML.encode_property")
+    @js.native
     def encodeProperty(str: String): String = js.native
     
-    @JSName("encode_value")
+    @JSImport("sxml/lib/module/XML", "XML.encode_value")
+    @js.native
     def encodeValue(str: String): String = js.native
     
+    @JSImport("sxml/lib/module/XML", "XML.head")
+    @js.native
     def head(): String = js.native
+    @JSImport("sxml/lib/module/XML", "XML.head")
+    @js.native
     def head(encoding: String): String = js.native
     
-    type Iterator_ = Iterator[String, XMLList]
+    type Iterator_ = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.Iterator<string, XMLList> */ js.Any
     
-    type ReverseIterator_ = ReverseIterator[String, XMLList]
+    type ReverseIterator_ = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.ReverseIterator<string, XMLList> */ js.Any
     
     type iterator = Iterator_
     

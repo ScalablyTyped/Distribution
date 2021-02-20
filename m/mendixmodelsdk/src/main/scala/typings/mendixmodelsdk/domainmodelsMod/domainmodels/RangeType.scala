@@ -1,21 +1,41 @@
 package typings.mendixmodelsdk.domainmodelsMod.domainmodels
 
 import typings.mendixmodelsdk.internalMod.AbstractEnum
+import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RangeType")
 @js.native
-class RangeType () extends AbstractEnum
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RangeType")
-@js.native
-object RangeType extends js.Object {
+class RangeType protected () extends AbstractEnum {
+  def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+}
+object RangeType {
   
-  var Between: RangeType = js.native
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RangeType")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var GreaterThanOrEqualTo: RangeType = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RangeType.Between")
+  @js.native
+  def Between: RangeType = js.native
+  @scala.inline
+  def Between_=(x: RangeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Between")(x.asInstanceOf[js.Any])
   
-  var SmallerThanOrEqualTo: RangeType = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RangeType.GreaterThanOrEqualTo")
+  @js.native
+  def GreaterThanOrEqualTo: RangeType = js.native
+  @scala.inline
+  def GreaterThanOrEqualTo_=(x: RangeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GreaterThanOrEqualTo")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RangeType.SmallerThanOrEqualTo")
+  @js.native
+  def SmallerThanOrEqualTo: RangeType = js.native
+  @scala.inline
+  def SmallerThanOrEqualTo_=(x: RangeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SmallerThanOrEqualTo")(x.asInstanceOf[js.Any])
 }

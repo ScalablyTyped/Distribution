@@ -1,17 +1,18 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StrokePosition extends js.Object
+sealed trait StrokePosition extends StObject
 /**
   * The possible positions of the stroke on a polygon.
   */
 @JSGlobal("google.maps.StrokePosition")
 @js.native
-object StrokePosition extends js.Object {
+object StrokePosition extends StObject {
   
   /**
     * The stroke is centered on the polygon's path, with half the stroke inside

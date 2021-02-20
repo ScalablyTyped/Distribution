@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ComplexGateway extends Gateway {
   
-  var activationCondition: Expression = js.native
-  
   var default: SequenceFlow = js.native
+  
+  var activationCondition: Expression = js.native
 }
 object ComplexGateway {
   
@@ -33,24 +34,12 @@ object ComplexGateway {
   }
   
   @scala.inline
-  implicit class ComplexGatewayOps[Self <: ComplexGateway] (val x: Self) extends AnyVal {
+  implicit class ComplexGatewayMutableBuilder[Self <: ComplexGateway] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivationCondition(value: Expression): Self = StObject.set(x, "activationCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActivationCondition(value: Expression): Self = this.set("activationCondition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefault(value: SequenceFlow): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setDefault(value: SequenceFlow): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
   }
 }

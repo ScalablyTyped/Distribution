@@ -1,12 +1,13 @@
 package typings.googleapis.alphaMod.computeAlpha
 
 import typings.googleapis.anon.Code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaDisksScopedList extends js.Object {
+trait SchemaDisksScopedList extends StObject {
   
   /**
     * [Output Only] A list of disks contained in this scope.
@@ -28,33 +29,21 @@ object SchemaDisksScopedList {
   }
   
   @scala.inline
-  implicit class SchemaDisksScopedListOps[Self <: SchemaDisksScopedList] (val x: Self) extends AnyVal {
+  implicit class SchemaDisksScopedListMutableBuilder[Self <: SchemaDisksScopedList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisks(value: js.Array[SchemaDisk]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisksVarargs(value: SchemaDisk*): Self = StObject.set(x, "disks", js.Array(value :_*))
     
     @scala.inline
-    def setDisksVarargs(value: SchemaDisk*): Self = this.set("disks", js.Array(value :_*))
+    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisks(value: js.Array[SchemaDisk]): Self = this.set("disks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisks: Self = this.set("disks", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

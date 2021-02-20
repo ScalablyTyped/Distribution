@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplicaSettingsDescription extends js.Object {
+trait ReplicaSettingsDescription extends StObject {
   
   /**
     * The Region name of the replica.
@@ -56,66 +57,54 @@ object ReplicaSettingsDescription {
   }
   
   @scala.inline
-  implicit class ReplicaSettingsDescriptionOps[Self <: ReplicaSettingsDescription] (val x: Self) extends AnyVal {
+  implicit class ReplicaSettingsDescriptionMutableBuilder[Self <: ReplicaSettingsDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReplicaBillingModeSummary(value: BillingModeSummary): Self = StObject.set(x, "ReplicaBillingModeSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplicaBillingModeSummaryUndefined: Self = StObject.set(x, "ReplicaBillingModeSummary", js.undefined)
     
     @scala.inline
-    def setRegionName(value: RegionName): Self = this.set("RegionName", value.asInstanceOf[js.Any])
+    def setReplicaGlobalSecondaryIndexSettings(value: ReplicaGlobalSecondaryIndexSettingsDescriptionList): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicaBillingModeSummary(value: BillingModeSummary): Self = this.set("ReplicaBillingModeSummary", value.asInstanceOf[js.Any])
+    def setReplicaGlobalSecondaryIndexSettingsUndefined: Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettings", js.undefined)
     
     @scala.inline
-    def deleteReplicaBillingModeSummary: Self = this.set("ReplicaBillingModeSummary", js.undefined)
+    def setReplicaGlobalSecondaryIndexSettingsVarargs(value: ReplicaGlobalSecondaryIndexSettingsDescription*): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettings", js.Array(value :_*))
     
     @scala.inline
-    def setReplicaGlobalSecondaryIndexSettingsVarargs(value: ReplicaGlobalSecondaryIndexSettingsDescription*): Self = this.set("ReplicaGlobalSecondaryIndexSettings", js.Array(value :_*))
+    def setReplicaProvisionedReadCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicaGlobalSecondaryIndexSettings(value: ReplicaGlobalSecondaryIndexSettingsDescriptionList): Self = this.set("ReplicaGlobalSecondaryIndexSettings", value.asInstanceOf[js.Any])
+    def setReplicaProvisionedReadCapacityAutoScalingSettingsUndefined: Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingSettings", js.undefined)
     
     @scala.inline
-    def deleteReplicaGlobalSecondaryIndexSettings: Self = this.set("ReplicaGlobalSecondaryIndexSettings", js.undefined)
+    def setReplicaProvisionedReadCapacityUnits(value: NonNegativeLongObject): Self = StObject.set(x, "ReplicaProvisionedReadCapacityUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicaProvisionedReadCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = this.set("ReplicaProvisionedReadCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
+    def setReplicaProvisionedReadCapacityUnitsUndefined: Self = StObject.set(x, "ReplicaProvisionedReadCapacityUnits", js.undefined)
     
     @scala.inline
-    def deleteReplicaProvisionedReadCapacityAutoScalingSettings: Self = this.set("ReplicaProvisionedReadCapacityAutoScalingSettings", js.undefined)
+    def setReplicaProvisionedWriteCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = StObject.set(x, "ReplicaProvisionedWriteCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicaProvisionedReadCapacityUnits(value: NonNegativeLongObject): Self = this.set("ReplicaProvisionedReadCapacityUnits", value.asInstanceOf[js.Any])
+    def setReplicaProvisionedWriteCapacityAutoScalingSettingsUndefined: Self = StObject.set(x, "ReplicaProvisionedWriteCapacityAutoScalingSettings", js.undefined)
     
     @scala.inline
-    def deleteReplicaProvisionedReadCapacityUnits: Self = this.set("ReplicaProvisionedReadCapacityUnits", js.undefined)
+    def setReplicaProvisionedWriteCapacityUnits(value: NonNegativeLongObject): Self = StObject.set(x, "ReplicaProvisionedWriteCapacityUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicaProvisionedWriteCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = this.set("ReplicaProvisionedWriteCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
+    def setReplicaProvisionedWriteCapacityUnitsUndefined: Self = StObject.set(x, "ReplicaProvisionedWriteCapacityUnits", js.undefined)
     
     @scala.inline
-    def deleteReplicaProvisionedWriteCapacityAutoScalingSettings: Self = this.set("ReplicaProvisionedWriteCapacityAutoScalingSettings", js.undefined)
+    def setReplicaStatus(value: ReplicaStatus): Self = StObject.set(x, "ReplicaStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicaProvisionedWriteCapacityUnits(value: NonNegativeLongObject): Self = this.set("ReplicaProvisionedWriteCapacityUnits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicaProvisionedWriteCapacityUnits: Self = this.set("ReplicaProvisionedWriteCapacityUnits", js.undefined)
-    
-    @scala.inline
-    def setReplicaStatus(value: ReplicaStatus): Self = this.set("ReplicaStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicaStatus: Self = this.set("ReplicaStatus", js.undefined)
+    def setReplicaStatusUndefined: Self = StObject.set(x, "ReplicaStatus", js.undefined)
   }
 }

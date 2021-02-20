@@ -5,14 +5,14 @@ import typings.pulumiAws.budgetMod.BudgetState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/budgets", JSImport.Namespace)
-@js.native
-object budgetsMod extends js.Object {
+object budgetsMod {
   
+  @JSImport("@pulumi/aws/budgets", "Budget")
   @js.native
   class Budget protected ()
     extends typings.pulumiAws.budgetMod.Budget {
@@ -27,8 +27,7 @@ object budgetsMod extends js.Object {
     def this(name: String, args: BudgetArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Budget extends js.Object {
+  object Budget {
     
     /**
       * Get an existing Budget resource's state with the given name, ID, and optional extra
@@ -39,15 +38,25 @@ object budgetsMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/budgets", "Budget.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.budgetMod.Budget = js.native
+    @JSImport("@pulumi/aws/budgets", "Budget.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.budgetMod.Budget = js.native
+    @JSImport("@pulumi/aws/budgets", "Budget.get")
+    @js.native
     def get(name: String, id: Input[ID], state: BudgetState): typings.pulumiAws.budgetMod.Budget = js.native
+    @JSImport("@pulumi/aws/budgets", "Budget.get")
+    @js.native
     def get(name: String, id: Input[ID], state: BudgetState, opts: CustomResourceOptions): typings.pulumiAws.budgetMod.Budget = js.native
     
     /**
       * Returns true if the given object is an instance of Budget.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/budgets", "Budget.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/budgets/budget.Budget */ Boolean = js.native
   }
 }

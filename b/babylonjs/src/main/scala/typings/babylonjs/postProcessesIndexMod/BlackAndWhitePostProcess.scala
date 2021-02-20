@@ -5,6 +5,7 @@ import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -109,10 +110,10 @@ class BlackAndWhitePostProcess protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/PostProcesses/index", "BlackAndWhitePostProcess")
-@js.native
-object BlackAndWhitePostProcess extends js.Object {
+object BlackAndWhitePostProcess {
   
   /** @hidden */
+  @JSImport("babylonjs/PostProcesses/index", "BlackAndWhitePostProcess._Parse")
+  @js.native
   def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[typings.babylonjs.blackAndWhitePostProcessMod.BlackAndWhitePostProcess] = js.native
 }

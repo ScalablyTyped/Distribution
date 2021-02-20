@@ -1,11 +1,12 @@
 package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CsvOptions extends js.Object {
+trait CsvOptions extends StObject {
   
   var allowJaggedRows: js.UndefOr[Boolean] = js.native
   
@@ -28,54 +29,42 @@ object CsvOptions {
   }
   
   @scala.inline
-  implicit class CsvOptionsOps[Self <: CsvOptions] (val x: Self) extends AnyVal {
+  implicit class CsvOptionsMutableBuilder[Self <: CsvOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowJaggedRows(value: Boolean): Self = StObject.set(x, "allowJaggedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowJaggedRowsUndefined: Self = StObject.set(x, "allowJaggedRows", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowQuotedNewlines(value: Boolean): Self = StObject.set(x, "allowQuotedNewlines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowJaggedRows(value: Boolean): Self = this.set("allowJaggedRows", value.asInstanceOf[js.Any])
+    def setAllowQuotedNewlinesUndefined: Self = StObject.set(x, "allowQuotedNewlines", js.undefined)
     
     @scala.inline
-    def deleteAllowJaggedRows: Self = this.set("allowJaggedRows", js.undefined)
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowQuotedNewlines(value: Boolean): Self = this.set("allowQuotedNewlines", value.asInstanceOf[js.Any])
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def deleteAllowQuotedNewlines: Self = this.set("allowQuotedNewlines", js.undefined)
+    def setFieldDelimiter(value: String): Self = StObject.set(x, "fieldDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setFieldDelimiterUndefined: Self = StObject.set(x, "fieldDelimiter", js.undefined)
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldDelimiter(value: String): Self = this.set("fieldDelimiter", value.asInstanceOf[js.Any])
+    def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
     
     @scala.inline
-    def deleteFieldDelimiter: Self = this.set("fieldDelimiter", js.undefined)
+    def setSkipLeadingRows(value: String): Self = StObject.set(x, "skipLeadingRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuote(value: String): Self = this.set("quote", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuote: Self = this.set("quote", js.undefined)
-    
-    @scala.inline
-    def setSkipLeadingRows(value: String): Self = this.set("skipLeadingRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipLeadingRows: Self = this.set("skipLeadingRows", js.undefined)
+    def setSkipLeadingRowsUndefined: Self = StObject.set(x, "skipLeadingRows", js.undefined)
   }
 }

@@ -3,18 +3,17 @@ package typings.tensorflowTfjsCore
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/ops/cos", JSImport.Namespace)
-@js.native
-object cosMod extends js.Object {
+object cosMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/cos", "cos")
   @js.native
-  object cos extends js.Object {
-    
-    def apply[T /* <: Tensor[Rank] */](x: T): T = js.native
-    def apply[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  }
+  def cos[T /* <: Tensor[Rank] */](x: T): T = js.native
+  @JSImport("@tensorflow/tfjs-core/dist/ops/cos", "cos")
+  @js.native
+  def cos[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
 }

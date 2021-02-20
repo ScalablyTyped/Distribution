@@ -1,11 +1,12 @@
 package typings.activexAdodb.ADODB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Stream extends js.Object {
+trait Stream extends StObject {
   
   @JSName("ADODB.Stream_typekey")
   var ADODBDotStream_typekey: Stream = js.native

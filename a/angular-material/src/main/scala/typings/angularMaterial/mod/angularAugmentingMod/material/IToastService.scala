@@ -1,12 +1,13 @@
 package typings.angularMaterial.mod.angularAugmentingMod.material
 
 import typings.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IToastService extends js.Object {
+trait IToastService extends StObject {
   
   def build(): IToastPreset[_] = js.native
   

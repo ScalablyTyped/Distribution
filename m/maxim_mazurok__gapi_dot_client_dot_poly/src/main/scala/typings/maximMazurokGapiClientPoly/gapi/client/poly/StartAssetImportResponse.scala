@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPoly.gapi.client.poly
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartAssetImportResponse extends js.Object {
+trait StartAssetImportResponse extends StObject {
   
   /**
     * The id of newly created asset. If this is empty when the operation is complete it means the import failed. Please refer to the assetImportMessages field to understand what went
@@ -31,45 +32,33 @@ object StartAssetImportResponse {
   }
   
   @scala.inline
-  implicit class StartAssetImportResponseOps[Self <: StartAssetImportResponse] (val x: Self) extends AnyVal {
+  implicit class StartAssetImportResponseMutableBuilder[Self <: StartAssetImportResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetId(value: String): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetIdUndefined: Self = StObject.set(x, "assetId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssetImportId(value: String): Self = StObject.set(x, "assetImportId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetId(value: String): Self = this.set("assetId", value.asInstanceOf[js.Any])
+    def setAssetImportIdUndefined: Self = StObject.set(x, "assetImportId", js.undefined)
     
     @scala.inline
-    def deleteAssetId: Self = this.set("assetId", js.undefined)
+    def setAssetImportMessages(value: js.Array[AssetImportMessage]): Self = StObject.set(x, "assetImportMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetImportId(value: String): Self = this.set("assetImportId", value.asInstanceOf[js.Any])
+    def setAssetImportMessagesUndefined: Self = StObject.set(x, "assetImportMessages", js.undefined)
     
     @scala.inline
-    def deleteAssetImportId: Self = this.set("assetImportId", js.undefined)
+    def setAssetImportMessagesVarargs(value: AssetImportMessage*): Self = StObject.set(x, "assetImportMessages", js.Array(value :_*))
     
     @scala.inline
-    def setAssetImportMessagesVarargs(value: AssetImportMessage*): Self = this.set("assetImportMessages", js.Array(value :_*))
+    def setPublishUrl(value: String): Self = StObject.set(x, "publishUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetImportMessages(value: js.Array[AssetImportMessage]): Self = this.set("assetImportMessages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssetImportMessages: Self = this.set("assetImportMessages", js.undefined)
-    
-    @scala.inline
-    def setPublishUrl(value: String): Self = this.set("publishUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublishUrl: Self = this.set("publishUrl", js.undefined)
+    def setPublishUrlUndefined: Self = StObject.set(x, "publishUrl", js.undefined)
   }
 }

@@ -8,6 +8,7 @@ import typings.std.stdStrings.noupdate
 import typings.std.stdStrings.obsolete
 import typings.std.stdStrings.progress
 import typings.std.stdStrings.updateready
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

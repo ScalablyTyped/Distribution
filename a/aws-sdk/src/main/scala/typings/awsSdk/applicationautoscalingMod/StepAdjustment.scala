@@ -1,11 +1,12 @@
 package typings.awsSdk.applicationautoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StepAdjustment extends js.Object {
+trait StepAdjustment extends StObject {
   
   /**
     * The lower bound for the difference between the alarm threshold and the CloudWatch metric. If the metric value is above the breach threshold, the lower bound is inclusive (the metric must be greater than or equal to the threshold plus the lower bound). Otherwise, it is exclusive (the metric must be greater than the threshold plus the lower bound). A null value indicates negative infinity.
@@ -31,33 +32,21 @@ object StepAdjustment {
   }
   
   @scala.inline
-  implicit class StepAdjustmentOps[Self <: StepAdjustment] (val x: Self) extends AnyVal {
+  implicit class StepAdjustmentMutableBuilder[Self <: StepAdjustment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetricIntervalLowerBound(value: MetricScale): Self = StObject.set(x, "MetricIntervalLowerBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetricIntervalLowerBoundUndefined: Self = StObject.set(x, "MetricIntervalLowerBound", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricIntervalUpperBound(value: MetricScale): Self = StObject.set(x, "MetricIntervalUpperBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalingAdjustment(value: ScalingAdjustment): Self = this.set("ScalingAdjustment", value.asInstanceOf[js.Any])
+    def setMetricIntervalUpperBoundUndefined: Self = StObject.set(x, "MetricIntervalUpperBound", js.undefined)
     
     @scala.inline
-    def setMetricIntervalLowerBound(value: MetricScale): Self = this.set("MetricIntervalLowerBound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricIntervalLowerBound: Self = this.set("MetricIntervalLowerBound", js.undefined)
-    
-    @scala.inline
-    def setMetricIntervalUpperBound(value: MetricScale): Self = this.set("MetricIntervalUpperBound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricIntervalUpperBound: Self = this.set("MetricIntervalUpperBound", js.undefined)
+    def setScalingAdjustment(value: ScalingAdjustment): Self = StObject.set(x, "ScalingAdjustment", value.asInstanceOf[js.Any])
   }
 }

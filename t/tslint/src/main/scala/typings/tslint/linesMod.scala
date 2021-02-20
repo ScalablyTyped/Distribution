@@ -1,20 +1,13 @@
 package typings.tslint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tslint/lib/verify/lines", JSImport.Namespace)
-@js.native
-object linesMod extends js.Object {
+object linesMod {
   
-  val ZERO_LENGTH_ERROR: /* "~nil" */ String = js.native
-  
-  def parseLine(text: String): Line = js.native
-  
-  def printLine(fileName: String, line: Line): js.UndefOr[String] = js.native
-  def printLine(fileName: String, line: Line, code: String): js.UndefOr[String] = js.native
-  
+  @JSImport("tslint/lib/verify/lines", "CodeLine")
   @js.native
   class CodeLine protected () extends Line {
     def this(contents: String) = this()
@@ -22,6 +15,7 @@ object linesMod extends js.Object {
     var contents: String = js.native
   }
   
+  @JSImport("tslint/lib/verify/lines", "EndErrorLine")
   @js.native
   class EndErrorLine protected () extends ErrorLine {
     def this(startCol: Double, endCol: Double, message: String) = this()
@@ -31,6 +25,7 @@ object linesMod extends js.Object {
     var message: String = js.native
   }
   
+  @JSImport("tslint/lib/verify/lines", "ErrorLine")
   @js.native
   class ErrorLine protected () extends Line {
     def this(startCol: Double) = this()
@@ -38,9 +33,11 @@ object linesMod extends js.Object {
     var startCol: Double = js.native
   }
   
+  @JSImport("tslint/lib/verify/lines", "Line")
   @js.native
-  class Line () extends js.Object
+  class Line () extends StObject
   
+  @JSImport("tslint/lib/verify/lines", "MessageSubstitutionLine")
   @js.native
   class MessageSubstitutionLine protected () extends Line {
     def this(key: String, message: String) = this()
@@ -50,8 +47,24 @@ object linesMod extends js.Object {
     var message: String = js.native
   }
   
+  @JSImport("tslint/lib/verify/lines", "MultilineErrorLine")
   @js.native
   class MultilineErrorLine protected () extends ErrorLine {
     def this(startCol: Double) = this()
   }
+  
+  @JSImport("tslint/lib/verify/lines", "ZERO_LENGTH_ERROR")
+  @js.native
+  val ZERO_LENGTH_ERROR: /* "~nil" */ String = js.native
+  
+  @JSImport("tslint/lib/verify/lines", "parseLine")
+  @js.native
+  def parseLine(text: String): Line = js.native
+  
+  @JSImport("tslint/lib/verify/lines", "printLine")
+  @js.native
+  def printLine(fileName: String, line: Line): js.UndefOr[String] = js.native
+  @JSImport("tslint/lib/verify/lines", "printLine")
+  @js.native
+  def printLine(fileName: String, line: Line, code: String): js.UndefOr[String] = js.native
 }

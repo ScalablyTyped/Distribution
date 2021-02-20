@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,27 +24,15 @@ object MultipartColorRampProperties {
   }
   
   @scala.inline
-  implicit class MultipartColorRampPropertiesOps[Self <: MultipartColorRampProperties] (val x: Self) extends AnyVal {
+  implicit class MultipartColorRampPropertiesMutableBuilder[Self <: MultipartColorRampProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorRamps(value: js.Array[AlgorithmicColorRampProperties]): Self = StObject.set(x, "colorRamps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorRampsUndefined: Self = StObject.set(x, "colorRamps", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColorRampsVarargs(value: AlgorithmicColorRampProperties*): Self = this.set("colorRamps", js.Array(value :_*))
-    
-    @scala.inline
-    def setColorRamps(value: js.Array[AlgorithmicColorRampProperties]): Self = this.set("colorRamps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColorRamps: Self = this.set("colorRamps", js.undefined)
+    def setColorRampsVarargs(value: AlgorithmicColorRampProperties*): Self = StObject.set(x, "colorRamps", js.Array(value :_*))
   }
 }

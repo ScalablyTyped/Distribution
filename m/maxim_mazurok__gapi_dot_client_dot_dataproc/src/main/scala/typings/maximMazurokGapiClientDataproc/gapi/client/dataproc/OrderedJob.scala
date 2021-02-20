@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderedJob extends js.Object {
+trait OrderedJob extends StObject {
   
   /** Optional. Job is a Hadoop job. */
   var hadoopJob: js.UndefOr[HadoopJob] = js.native
@@ -65,97 +66,85 @@ object OrderedJob {
   }
   
   @scala.inline
-  implicit class OrderedJobOps[Self <: OrderedJob] (val x: Self) extends AnyVal {
+  implicit class OrderedJobMutableBuilder[Self <: OrderedJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHadoopJob(value: HadoopJob): Self = StObject.set(x, "hadoopJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHadoopJobUndefined: Self = StObject.set(x, "hadoopJob", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHiveJob(value: HiveJob): Self = StObject.set(x, "hiveJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHadoopJob(value: HadoopJob): Self = this.set("hadoopJob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHadoopJob: Self = this.set("hadoopJob", js.undefined)
-    
-    @scala.inline
-    def setHiveJob(value: HiveJob): Self = this.set("hiveJob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHiveJob: Self = this.set("hiveJob", js.undefined)
+    def setHiveJobUndefined: Self = StObject.set(x, "hiveJob", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.OrderedJob with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setPigJob(value: PigJob): Self = this.set("pigJob", value.asInstanceOf[js.Any])
+    def setPigJob(value: PigJob): Self = StObject.set(x, "pigJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePigJob: Self = this.set("pigJob", js.undefined)
+    def setPigJobUndefined: Self = StObject.set(x, "pigJob", js.undefined)
     
     @scala.inline
-    def setPrerequisiteStepIdsVarargs(value: String*): Self = this.set("prerequisiteStepIds", js.Array(value :_*))
+    def setPrerequisiteStepIds(value: js.Array[String]): Self = StObject.set(x, "prerequisiteStepIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrerequisiteStepIds(value: js.Array[String]): Self = this.set("prerequisiteStepIds", value.asInstanceOf[js.Any])
+    def setPrerequisiteStepIdsUndefined: Self = StObject.set(x, "prerequisiteStepIds", js.undefined)
     
     @scala.inline
-    def deletePrerequisiteStepIds: Self = this.set("prerequisiteStepIds", js.undefined)
+    def setPrerequisiteStepIdsVarargs(value: String*): Self = StObject.set(x, "prerequisiteStepIds", js.Array(value :_*))
     
     @scala.inline
-    def setPrestoJob(value: PrestoJob): Self = this.set("prestoJob", value.asInstanceOf[js.Any])
+    def setPrestoJob(value: PrestoJob): Self = StObject.set(x, "prestoJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrestoJob: Self = this.set("prestoJob", js.undefined)
+    def setPrestoJobUndefined: Self = StObject.set(x, "prestoJob", js.undefined)
     
     @scala.inline
-    def setPysparkJob(value: PySparkJob): Self = this.set("pysparkJob", value.asInstanceOf[js.Any])
+    def setPysparkJob(value: PySparkJob): Self = StObject.set(x, "pysparkJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePysparkJob: Self = this.set("pysparkJob", js.undefined)
+    def setPysparkJobUndefined: Self = StObject.set(x, "pysparkJob", js.undefined)
     
     @scala.inline
-    def setScheduling(value: JobScheduling): Self = this.set("scheduling", value.asInstanceOf[js.Any])
+    def setScheduling(value: JobScheduling): Self = StObject.set(x, "scheduling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScheduling: Self = this.set("scheduling", js.undefined)
+    def setSchedulingUndefined: Self = StObject.set(x, "scheduling", js.undefined)
     
     @scala.inline
-    def setSparkJob(value: SparkJob): Self = this.set("sparkJob", value.asInstanceOf[js.Any])
+    def setSparkJob(value: SparkJob): Self = StObject.set(x, "sparkJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSparkJob: Self = this.set("sparkJob", js.undefined)
+    def setSparkJobUndefined: Self = StObject.set(x, "sparkJob", js.undefined)
     
     @scala.inline
-    def setSparkRJob(value: SparkRJob): Self = this.set("sparkRJob", value.asInstanceOf[js.Any])
+    def setSparkRJob(value: SparkRJob): Self = StObject.set(x, "sparkRJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSparkRJob: Self = this.set("sparkRJob", js.undefined)
+    def setSparkRJobUndefined: Self = StObject.set(x, "sparkRJob", js.undefined)
     
     @scala.inline
-    def setSparkSqlJob(value: SparkSqlJob): Self = this.set("sparkSqlJob", value.asInstanceOf[js.Any])
+    def setSparkSqlJob(value: SparkSqlJob): Self = StObject.set(x, "sparkSqlJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSparkSqlJob: Self = this.set("sparkSqlJob", js.undefined)
+    def setSparkSqlJobUndefined: Self = StObject.set(x, "sparkSqlJob", js.undefined)
     
     @scala.inline
-    def setStepId(value: String): Self = this.set("stepId", value.asInstanceOf[js.Any])
+    def setStepId(value: String): Self = StObject.set(x, "stepId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStepId: Self = this.set("stepId", js.undefined)
+    def setStepIdUndefined: Self = StObject.set(x, "stepId", js.undefined)
   }
 }

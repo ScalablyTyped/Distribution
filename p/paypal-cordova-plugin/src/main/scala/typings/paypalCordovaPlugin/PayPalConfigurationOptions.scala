@@ -1,5 +1,6 @@
 package typings.paypalCordovaPlugin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Describes the options that can be passed into the PayPalConfiguration class constructor.
   */
 @js.native
-trait PayPalConfigurationOptions extends js.Object {
+trait PayPalConfigurationOptions extends StObject {
   
   /**
     * If set to false, the SDK will only support paying with PayPal, not with credit cards.
@@ -142,108 +143,96 @@ object PayPalConfigurationOptions {
   }
   
   @scala.inline
-  implicit class PayPalConfigurationOptionsOps[Self <: PayPalConfigurationOptions] (val x: Self) extends AnyVal {
+  implicit class PayPalConfigurationOptionsMutableBuilder[Self <: PayPalConfigurationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptCreditCards(value: Boolean): Self = StObject.set(x, "acceptCreditCards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptCreditCardsUndefined: Self = StObject.set(x, "acceptCreditCards", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultUserEmail(value: String): Self = StObject.set(x, "defaultUserEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptCreditCards(value: Boolean): Self = this.set("acceptCreditCards", value.asInstanceOf[js.Any])
+    def setDefaultUserEmailUndefined: Self = StObject.set(x, "defaultUserEmail", js.undefined)
     
     @scala.inline
-    def deleteAcceptCreditCards: Self = this.set("acceptCreditCards", js.undefined)
+    def setDefaultUserPhoneCountryCode(value: String): Self = StObject.set(x, "defaultUserPhoneCountryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultUserEmail(value: String): Self = this.set("defaultUserEmail", value.asInstanceOf[js.Any])
+    def setDefaultUserPhoneCountryCodeUndefined: Self = StObject.set(x, "defaultUserPhoneCountryCode", js.undefined)
     
     @scala.inline
-    def deleteDefaultUserEmail: Self = this.set("defaultUserEmail", js.undefined)
+    def setDefaultUserPhoneNumber(value: String): Self = StObject.set(x, "defaultUserPhoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultUserPhoneCountryCode(value: String): Self = this.set("defaultUserPhoneCountryCode", value.asInstanceOf[js.Any])
+    def setDefaultUserPhoneNumberUndefined: Self = StObject.set(x, "defaultUserPhoneNumber", js.undefined)
     
     @scala.inline
-    def deleteDefaultUserPhoneCountryCode: Self = this.set("defaultUserPhoneCountryCode", js.undefined)
+    def setDisableBlurWhenBackgrounding(value: Boolean): Self = StObject.set(x, "disableBlurWhenBackgrounding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultUserPhoneNumber(value: String): Self = this.set("defaultUserPhoneNumber", value.asInstanceOf[js.Any])
+    def setDisableBlurWhenBackgroundingUndefined: Self = StObject.set(x, "disableBlurWhenBackgrounding", js.undefined)
     
     @scala.inline
-    def deleteDefaultUserPhoneNumber: Self = this.set("defaultUserPhoneNumber", js.undefined)
+    def setForceDefaultsInSandbox(value: Boolean): Self = StObject.set(x, "forceDefaultsInSandbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableBlurWhenBackgrounding(value: Boolean): Self = this.set("disableBlurWhenBackgrounding", value.asInstanceOf[js.Any])
+    def setForceDefaultsInSandboxUndefined: Self = StObject.set(x, "forceDefaultsInSandbox", js.undefined)
     
     @scala.inline
-    def deleteDisableBlurWhenBackgrounding: Self = this.set("disableBlurWhenBackgrounding", js.undefined)
+    def setLanguageOrLocale(value: String): Self = StObject.set(x, "languageOrLocale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceDefaultsInSandbox(value: Boolean): Self = this.set("forceDefaultsInSandbox", value.asInstanceOf[js.Any])
+    def setLanguageOrLocaleUndefined: Self = StObject.set(x, "languageOrLocale", js.undefined)
     
     @scala.inline
-    def deleteForceDefaultsInSandbox: Self = this.set("forceDefaultsInSandbox", js.undefined)
+    def setMerchantName(value: String): Self = StObject.set(x, "merchantName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageOrLocale(value: String): Self = this.set("languageOrLocale", value.asInstanceOf[js.Any])
+    def setMerchantNameUndefined: Self = StObject.set(x, "merchantName", js.undefined)
     
     @scala.inline
-    def deleteLanguageOrLocale: Self = this.set("languageOrLocale", js.undefined)
+    def setMerchantPrivacyPolicyURL(value: String): Self = StObject.set(x, "merchantPrivacyPolicyURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerchantName(value: String): Self = this.set("merchantName", value.asInstanceOf[js.Any])
+    def setMerchantPrivacyPolicyURLUndefined: Self = StObject.set(x, "merchantPrivacyPolicyURL", js.undefined)
     
     @scala.inline
-    def deleteMerchantName: Self = this.set("merchantName", js.undefined)
+    def setMerchantUserAgreementURL(value: String): Self = StObject.set(x, "merchantUserAgreementURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerchantPrivacyPolicyURL(value: String): Self = this.set("merchantPrivacyPolicyURL", value.asInstanceOf[js.Any])
+    def setMerchantUserAgreementURLUndefined: Self = StObject.set(x, "merchantUserAgreementURL", js.undefined)
     
     @scala.inline
-    def deleteMerchantPrivacyPolicyURL: Self = this.set("merchantPrivacyPolicyURL", js.undefined)
+    def setPayPalShippingAddressOption(value: Double): Self = StObject.set(x, "payPalShippingAddressOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerchantUserAgreementURL(value: String): Self = this.set("merchantUserAgreementURL", value.asInstanceOf[js.Any])
+    def setPayPalShippingAddressOptionUndefined: Self = StObject.set(x, "payPalShippingAddressOption", js.undefined)
     
     @scala.inline
-    def deleteMerchantUserAgreementURL: Self = this.set("merchantUserAgreementURL", js.undefined)
+    def setPresentingInPopover(value: Boolean): Self = StObject.set(x, "presentingInPopover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayPalShippingAddressOption(value: Double): Self = this.set("payPalShippingAddressOption", value.asInstanceOf[js.Any])
+    def setPresentingInPopoverUndefined: Self = StObject.set(x, "presentingInPopover", js.undefined)
     
     @scala.inline
-    def deletePayPalShippingAddressOption: Self = this.set("payPalShippingAddressOption", js.undefined)
+    def setRememberUser(value: Boolean): Self = StObject.set(x, "rememberUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPresentingInPopover(value: Boolean): Self = this.set("presentingInPopover", value.asInstanceOf[js.Any])
+    def setRememberUserUndefined: Self = StObject.set(x, "rememberUser", js.undefined)
     
     @scala.inline
-    def deletePresentingInPopover: Self = this.set("presentingInPopover", js.undefined)
+    def setSandboxUserPassword(value: String): Self = StObject.set(x, "sandboxUserPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRememberUser(value: Boolean): Self = this.set("rememberUser", value.asInstanceOf[js.Any])
+    def setSandboxUserPasswordUndefined: Self = StObject.set(x, "sandboxUserPassword", js.undefined)
     
     @scala.inline
-    def deleteRememberUser: Self = this.set("rememberUser", js.undefined)
+    def setSandboxUserPin(value: String): Self = StObject.set(x, "sandboxUserPin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSandboxUserPassword(value: String): Self = this.set("sandboxUserPassword", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSandboxUserPassword: Self = this.set("sandboxUserPassword", js.undefined)
-    
-    @scala.inline
-    def setSandboxUserPin(value: String): Self = this.set("sandboxUserPin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSandboxUserPin: Self = this.set("sandboxUserPin", js.undefined)
+    def setSandboxUserPinUndefined: Self = StObject.set(x, "sandboxUserPin", js.undefined)
   }
 }

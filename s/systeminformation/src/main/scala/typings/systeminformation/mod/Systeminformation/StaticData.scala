@@ -1,12 +1,13 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 10. "Get All at once" - functions
 @js.native
-trait StaticData extends js.Object {
+trait StaticData extends StObject {
   
   var baseboard: BaseboardData = js.native
   
@@ -57,66 +58,54 @@ object StaticData {
   }
   
   @scala.inline
-  implicit class StaticDataOps[Self <: StaticData] (val x: Self) extends AnyVal {
+  implicit class StaticDataMutableBuilder[Self <: StaticData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseboard(value: BaseboardData): Self = StObject.set(x, "baseboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBios(value: BiosData): Self = StObject.set(x, "bios", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChassis(value: ChassisData): Self = StObject.set(x, "chassis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseboard(value: BaseboardData): Self = this.set("baseboard", value.asInstanceOf[js.Any])
+    def setCpu(value: CpuWithFlagsData): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBios(value: BiosData): Self = this.set("bios", value.asInstanceOf[js.Any])
+    def setDiskLayout(value: js.Array[DiskLayoutData]): Self = StObject.set(x, "diskLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChassis(value: ChassisData): Self = this.set("chassis", value.asInstanceOf[js.Any])
+    def setDiskLayoutVarargs(value: DiskLayoutData*): Self = StObject.set(x, "diskLayout", js.Array(value :_*))
     
     @scala.inline
-    def setCpu(value: CpuWithFlagsData): Self = this.set("cpu", value.asInstanceOf[js.Any])
+    def setGraphics(value: GraphicsData): Self = StObject.set(x, "graphics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskLayoutVarargs(value: DiskLayoutData*): Self = this.set("diskLayout", js.Array(value :_*))
+    def setMemLayout(value: js.Array[MemLayoutData]): Self = StObject.set(x, "memLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskLayout(value: js.Array[DiskLayoutData]): Self = this.set("diskLayout", value.asInstanceOf[js.Any])
+    def setMemLayoutVarargs(value: MemLayoutData*): Self = StObject.set(x, "memLayout", js.Array(value :_*))
     
     @scala.inline
-    def setGraphics(value: GraphicsData): Self = this.set("graphics", value.asInstanceOf[js.Any])
+    def setNet(value: js.Array[NetworkInterfacesData]): Self = StObject.set(x, "net", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemLayoutVarargs(value: MemLayoutData*): Self = this.set("memLayout", js.Array(value :_*))
+    def setNetVarargs(value: NetworkInterfacesData*): Self = StObject.set(x, "net", js.Array(value :_*))
     
     @scala.inline
-    def setMemLayout(value: js.Array[MemLayoutData]): Self = this.set("memLayout", value.asInstanceOf[js.Any])
+    def setOs(value: OsData): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetVarargs(value: NetworkInterfacesData*): Self = this.set("net", js.Array(value :_*))
+    def setSystem(value: SystemData): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNet(value: js.Array[NetworkInterfacesData]): Self = this.set("net", value.asInstanceOf[js.Any])
+    def setUuid(value: UuidData): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOs(value: OsData): Self = this.set("os", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystem(value: SystemData): Self = this.set("system", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUuid(value: UuidData): Self = this.set("uuid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersions(value: VersionData): Self = this.set("versions", value.asInstanceOf[js.Any])
+    def setVersions(value: VersionData): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
   }
 }

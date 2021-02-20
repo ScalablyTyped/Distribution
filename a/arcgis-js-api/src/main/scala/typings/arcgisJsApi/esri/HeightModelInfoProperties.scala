@@ -18,12 +18,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`us-feet`
 import typings.arcgisJsApi.arcgisJsApiStrings.ellipsoidal
 import typings.arcgisJsApi.arcgisJsApiStrings.feet_
 import typings.arcgisJsApi.arcgisJsApiStrings.meters_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeightModelInfoProperties extends js.Object {
+trait HeightModelInfoProperties extends StObject {
   
   /**
     * The surface type or height model of the vertical coordinate system (VCS).
@@ -57,38 +58,26 @@ object HeightModelInfoProperties {
   }
   
   @scala.inline
-  implicit class HeightModelInfoPropertiesOps[Self <: HeightModelInfoProperties] (val x: Self) extends AnyVal {
+  implicit class HeightModelInfoPropertiesMutableBuilder[Self <: HeightModelInfoProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeightModel(value: `gravity-related-height` | ellipsoidal): Self = StObject.set(x, "heightModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHeightModel(value: `gravity-related-height` | ellipsoidal): Self = this.set("heightModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeightModel: Self = this.set("heightModel", js.undefined)
+    def setHeightModelUndefined: Self = StObject.set(x, "heightModel", js.undefined)
     
     @scala.inline
     def setHeightUnit(
       value: meters_ | feet_ | `us-feet` | `clarke-feet` | `clarke-yards` | `clarke-links` | `sears-yards` | `sears-feet` | `sears-chains` | `benoit-1895-b-chains` | `indian-yards` | `indian-1937-yards` | `gold-coast-feet` | `sears-1922-truncated-chains` | `50-kilometers` | `150-kilometers`
-    ): Self = this.set("heightUnit", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "heightUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeightUnit: Self = this.set("heightUnit", js.undefined)
+    def setHeightUnitUndefined: Self = StObject.set(x, "heightUnit", js.undefined)
     
     @scala.inline
-    def setVertCRS(value: String): Self = this.set("vertCRS", value.asInstanceOf[js.Any])
+    def setVertCRS(value: String): Self = StObject.set(x, "vertCRS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVertCRS: Self = this.set("vertCRS", js.undefined)
+    def setVertCRSUndefined: Self = StObject.set(x, "vertCRS", js.undefined)
   }
 }

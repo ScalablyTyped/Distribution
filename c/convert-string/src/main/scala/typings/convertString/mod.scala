@@ -1,26 +1,31 @@
 package typings.convertString
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("convert-string", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @js.native
-  object convertString extends js.Object {
+  object convertString {
     
-    def bytesToString(bytes: js.Array[Double]): String = js.native
-    
-    def stringToBytes(str: String): js.Array[Double] = js.native
-    
-    @js.native
-    object UTF8 extends js.Object {
+    object UTF8 {
       
+      @JSImport("convert-string", "convertString.UTF8.bytesToString")
+      @js.native
       def bytesToString(bytes: js.Array[Double]): String = js.native
       
+      @JSImport("convert-string", "convertString.UTF8.stringToBytes")
+      @js.native
       def stringToBytes(str: String): js.Array[Double] = js.native
     }
+    
+    @JSImport("convert-string", "convertString.bytesToString")
+    @js.native
+    def bytesToString(bytes: js.Array[Double]): String = js.native
+    
+    @JSImport("convert-string", "convertString.stringToBytes")
+    @js.native
+    def stringToBytes(str: String): js.Array[Double] = js.native
   }
 }

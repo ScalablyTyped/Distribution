@@ -1,11 +1,12 @@
 package typings.awsSdk.appstreamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateUserRequest extends js.Object {
+trait CreateUserRequest extends StObject {
   
   /**
     * The authentication type for the user. You must specify USERPOOL. 
@@ -41,42 +42,30 @@ object CreateUserRequest {
   }
   
   @scala.inline
-  implicit class CreateUserRequestOps[Self <: CreateUserRequest] (val x: Self) extends AnyVal {
+  implicit class CreateUserRequestMutableBuilder[Self <: CreateUserRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticationType(value: AuthenticationType): Self = StObject.set(x, "AuthenticationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstName(value: UserAttributeValue): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirstNameUndefined: Self = StObject.set(x, "FirstName", js.undefined)
     
     @scala.inline
-    def setAuthenticationType(value: AuthenticationType): Self = this.set("AuthenticationType", value.asInstanceOf[js.Any])
+    def setLastName(value: UserAttributeValue): Self = StObject.set(x, "LastName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserName(value: Username): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    def setLastNameUndefined: Self = StObject.set(x, "LastName", js.undefined)
     
     @scala.inline
-    def setFirstName(value: UserAttributeValue): Self = this.set("FirstName", value.asInstanceOf[js.Any])
+    def setMessageAction(value: MessageAction): Self = StObject.set(x, "MessageAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFirstName: Self = this.set("FirstName", js.undefined)
+    def setMessageActionUndefined: Self = StObject.set(x, "MessageAction", js.undefined)
     
     @scala.inline
-    def setLastName(value: UserAttributeValue): Self = this.set("LastName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastName: Self = this.set("LastName", js.undefined)
-    
-    @scala.inline
-    def setMessageAction(value: MessageAction): Self = this.set("MessageAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageAction: Self = this.set("MessageAction", js.undefined)
+    def setUserName(value: Username): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

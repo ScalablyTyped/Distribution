@@ -3,12 +3,13 @@ package typings.bingmaps.Microsoft.Maps.SpatialDataService
 import typings.bingmaps.Microsoft.Maps.IPrimitive
 import typings.bingmaps.Microsoft.Maps.Location
 import typings.bingmaps.Microsoft.Maps.LocationRect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISpatialFilterOptions extends js.Object {
+trait ISpatialFilterOptions extends StObject {
   
   /** End location of the route (only for nearroute filter). */
   var end: js.UndefOr[String | Location] = js.native
@@ -46,51 +47,39 @@ object ISpatialFilterOptions {
   }
   
   @scala.inline
-  implicit class ISpatialFilterOptionsOps[Self <: ISpatialFilterOptions] (val x: Self) extends AnyVal {
+  implicit class ISpatialFilterOptionsMutableBuilder[Self <: ISpatialFilterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: String | Location): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntersects(value: String | LocationRect | IPrimitive): Self = StObject.set(x, "intersects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpatialFilterType(value: String): Self = this.set("spatialFilterType", value.asInstanceOf[js.Any])
+    def setIntersectsUndefined: Self = StObject.set(x, "intersects", js.undefined)
     
     @scala.inline
-    def setEnd(value: String | Location): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setLocation(value: String | Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setIntersects(value: String | LocationRect | IPrimitive): Self = this.set("intersects", value.asInstanceOf[js.Any])
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIntersects: Self = this.set("intersects", js.undefined)
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def setLocation(value: String | Location): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setSpatialFilterType(value: String): Self = StObject.set(x, "spatialFilterType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setStart(value: String | Location): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
-    
-    @scala.inline
-    def setStart(value: String | Location): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

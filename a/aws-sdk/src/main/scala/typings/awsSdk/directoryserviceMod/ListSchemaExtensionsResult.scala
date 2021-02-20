@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListSchemaExtensionsResult extends js.Object {
+trait ListSchemaExtensionsResult extends StObject {
   
   /**
     * If not null, more results are available. Pass this value for the NextToken parameter in a subsequent call to ListSchemaExtensions to retrieve the next set of items.
@@ -26,33 +27,21 @@ object ListSchemaExtensionsResult {
   }
   
   @scala.inline
-  implicit class ListSchemaExtensionsResultOps[Self <: ListSchemaExtensionsResult] (val x: Self) extends AnyVal {
+  implicit class ListSchemaExtensionsResultMutableBuilder[Self <: ListSchemaExtensionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSchemaExtensionsInfo(value: SchemaExtensionsInfo): Self = StObject.set(x, "SchemaExtensionsInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSchemaExtensionsInfoUndefined: Self = StObject.set(x, "SchemaExtensionsInfo", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSchemaExtensionsInfoVarargs(value: SchemaExtensionInfo*): Self = this.set("SchemaExtensionsInfo", js.Array(value :_*))
-    
-    @scala.inline
-    def setSchemaExtensionsInfo(value: SchemaExtensionsInfo): Self = this.set("SchemaExtensionsInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemaExtensionsInfo: Self = this.set("SchemaExtensionsInfo", js.undefined)
+    def setSchemaExtensionsInfoVarargs(value: SchemaExtensionInfo*): Self = StObject.set(x, "SchemaExtensionsInfo", js.Array(value :_*))
   }
 }

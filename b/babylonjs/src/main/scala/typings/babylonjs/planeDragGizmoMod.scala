@@ -12,14 +12,14 @@ import typings.babylonjs.standardMaterialMod.StandardMaterial
 import typings.babylonjs.transformNodeMod.TransformNode
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Gizmos/planeDragGizmo", JSImport.Namespace)
-@js.native
-object planeDragGizmoMod extends js.Object {
+object planeDragGizmoMod {
   
+  @JSImport("babylonjs/Gizmos/planeDragGizmo", "PlaneDragGizmo")
   @js.native
   class PlaneDragGizmo protected () extends Gizmo {
     /**
@@ -96,10 +96,11 @@ object planeDragGizmoMod extends js.Object {
     var snapDistance: Double = js.native
   }
   /* static members */
-  @js.native
-  object PlaneDragGizmo extends js.Object {
+  object PlaneDragGizmo {
     
     /** @hidden */
+    @JSImport("babylonjs/Gizmos/planeDragGizmo", "PlaneDragGizmo._CreatePlane")
+    @js.native
     def _CreatePlane(scene: Scene, material: StandardMaterial): TransformNode = js.native
   }
 }

@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEasComplianceResults extends js.Object {
+trait IEasComplianceResults extends StObject {
   
   var compliant: Boolean = js.native
   
@@ -44,45 +45,33 @@ object IEasComplianceResults {
   }
   
   @scala.inline
-  implicit class IEasComplianceResultsOps[Self <: IEasComplianceResults] (val x: Self) extends AnyVal {
+  implicit class IEasComplianceResultsMutableBuilder[Self <: IEasComplianceResults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompliant(value: Boolean): Self = StObject.set(x, "compliant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisallowConvenienceLogonResult(value: EasDisallowConvenienceLogonResult): Self = StObject.set(x, "disallowConvenienceLogonResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxInactivityTimeLockResult(value: EasMaxInactivityTimeLockResult): Self = StObject.set(x, "maxInactivityTimeLockResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompliant(value: Boolean): Self = this.set("compliant", value.asInstanceOf[js.Any])
+    def setMaxPasswordFailedAttemptsResult(value: EasMaxPasswordFailedAttemptsResult): Self = StObject.set(x, "maxPasswordFailedAttemptsResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisallowConvenienceLogonResult(value: EasDisallowConvenienceLogonResult): Self = this.set("disallowConvenienceLogonResult", value.asInstanceOf[js.Any])
+    def setMinPasswordComplexCharactersResult(value: EasMinPasswordComplexCharactersResult): Self = StObject.set(x, "minPasswordComplexCharactersResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxInactivityTimeLockResult(value: EasMaxInactivityTimeLockResult): Self = this.set("maxInactivityTimeLockResult", value.asInstanceOf[js.Any])
+    def setMinPasswordLengthResult(value: EasMinPasswordLengthResult): Self = StObject.set(x, "minPasswordLengthResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPasswordFailedAttemptsResult(value: EasMaxPasswordFailedAttemptsResult): Self = this.set("maxPasswordFailedAttemptsResult", value.asInstanceOf[js.Any])
+    def setPasswordExpirationResult(value: EasPasswordExpirationResult): Self = StObject.set(x, "passwordExpirationResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinPasswordComplexCharactersResult(value: EasMinPasswordComplexCharactersResult): Self = this.set("minPasswordComplexCharactersResult", value.asInstanceOf[js.Any])
+    def setPasswordHistoryResult(value: EasPasswordHistoryResult): Self = StObject.set(x, "passwordHistoryResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinPasswordLengthResult(value: EasMinPasswordLengthResult): Self = this.set("minPasswordLengthResult", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPasswordExpirationResult(value: EasPasswordExpirationResult): Self = this.set("passwordExpirationResult", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPasswordHistoryResult(value: EasPasswordHistoryResult): Self = this.set("passwordHistoryResult", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequireEncryptionResult(value: EasRequireEncryptionResult): Self = this.set("requireEncryptionResult", value.asInstanceOf[js.Any])
+    def setRequireEncryptionResult(value: EasRequireEncryptionResult): Self = StObject.set(x, "requireEncryptionResult", value.asInstanceOf[js.Any])
   }
 }

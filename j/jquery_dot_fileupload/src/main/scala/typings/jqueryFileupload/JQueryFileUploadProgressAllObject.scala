@@ -1,11 +1,12 @@
 package typings.jqueryFileupload
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryFileUploadProgressAllObject extends js.Object {
+trait JQueryFileUploadProgressAllObject extends StObject {
   
   var bitrate: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object JQueryFileUploadProgressAllObject {
   }
   
   @scala.inline
-  implicit class JQueryFileUploadProgressAllObjectOps[Self <: JQueryFileUploadProgressAllObject] (val x: Self) extends AnyVal {
+  implicit class JQueryFileUploadProgressAllObjectMutableBuilder[Self <: JQueryFileUploadProgressAllObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitrateUndefined: Self = StObject.set(x, "bitrate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitrate(value: Double): Self = this.set("bitrate", value.asInstanceOf[js.Any])
+    def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
     
     @scala.inline
-    def deleteBitrate: Self = this.set("bitrate", js.undefined)
+    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoaded(value: Double): Self = this.set("loaded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoaded: Self = this.set("loaded", js.undefined)
-    
-    @scala.inline
-    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal: Self = this.set("total", js.undefined)
+    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

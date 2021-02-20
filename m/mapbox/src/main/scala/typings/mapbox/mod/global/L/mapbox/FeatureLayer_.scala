@@ -1,12 +1,13 @@
 package typings.mapbox.mod.global.L.mapbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FeatureGroup<ILayer> * / any */ @js.native
-trait FeatureLayer_ extends js.Object {
+trait FeatureLayer_ extends StObject {
   
   /**
     * Gets the filter function for this data layer.
@@ -58,36 +59,24 @@ object FeatureLayer_ {
   }
   
   @scala.inline
-  implicit class FeatureLayer_Ops[Self <: FeatureLayer_] (val x: Self) extends AnyVal {
+  implicit class FeatureLayer_MutableBuilder[Self <: FeatureLayer_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetFilter(value: () => FilterFunction): Self = StObject.set(x, "getFilter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetGeoJSON(value: () => js.Any): Self = StObject.set(x, "getGeoJSON", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoadID(value: String => js.Any): Self = StObject.set(x, "loadID", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFilter(value: () => FilterFunction): Self = this.set("getFilter", js.Any.fromFunction0(value))
+    def setLoadURL(value: String => js.Any): Self = StObject.set(x, "loadURL", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetGeoJSON(value: () => js.Any): Self = this.set("getGeoJSON", js.Any.fromFunction0(value))
+    def setSetFilter(value: FilterFunction => js.Any): Self = StObject.set(x, "setFilter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLoadID(value: String => js.Any): Self = this.set("loadID", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLoadURL(value: String => js.Any): Self = this.set("loadURL", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetFilter(value: FilterFunction => js.Any): Self = this.set("setFilter", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetGeoJSON(value: js.Any => FeatureLayer_): Self = this.set("setGeoJSON", js.Any.fromFunction1(value))
+    def setSetGeoJSON(value: js.Any => FeatureLayer_): Self = StObject.set(x, "setGeoJSON", js.Any.fromFunction1(value))
   }
 }

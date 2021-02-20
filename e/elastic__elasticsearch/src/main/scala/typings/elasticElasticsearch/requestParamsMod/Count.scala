@@ -7,6 +7,7 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.closed
 import typings.elasticElasticsearch.elasticElasticsearchStrings.hidden
 import typings.elasticElasticsearch.elasticElasticsearchStrings.none
 import typings.elasticElasticsearch.elasticElasticsearchStrings.open
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,129 +58,117 @@ object Count {
   }
   
   @scala.inline
-  implicit class CountOps[Self <: Count[_], T] (val x: Self with Count[T]) extends AnyVal {
+  implicit class CountMutableBuilder[Self <: Count[_], T] (val x: Self with Count[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow_no_indices(value: Boolean): Self = StObject.set(x, "allow_no_indices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllow_no_indicesUndefined: Self = StObject.set(x, "allow_no_indices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnalyze_wildcard(value: Boolean): Self = StObject.set(x, "analyze_wildcard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_no_indices(value: Boolean): Self = this.set("allow_no_indices", value.asInstanceOf[js.Any])
+    def setAnalyze_wildcardUndefined: Self = StObject.set(x, "analyze_wildcard", js.undefined)
     
     @scala.inline
-    def deleteAllow_no_indices: Self = this.set("allow_no_indices", js.undefined)
+    def setAnalyzer(value: String): Self = StObject.set(x, "analyzer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalyze_wildcard(value: Boolean): Self = this.set("analyze_wildcard", value.asInstanceOf[js.Any])
+    def setAnalyzerUndefined: Self = StObject.set(x, "analyzer", js.undefined)
     
     @scala.inline
-    def deleteAnalyze_wildcard: Self = this.set("analyze_wildcard", js.undefined)
+    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalyzer(value: String): Self = this.set("analyzer", value.asInstanceOf[js.Any])
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def deleteAnalyzer: Self = this.set("analyzer", js.undefined)
+    def setDefault_operator(value: AND | OR): Self = StObject.set(x, "default_operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: T): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setDefault_operatorUndefined: Self = StObject.set(x, "default_operator", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setDf(value: String): Self = StObject.set(x, "df", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault_operator(value: AND | OR): Self = this.set("default_operator", value.asInstanceOf[js.Any])
+    def setDfUndefined: Self = StObject.set(x, "df", js.undefined)
     
     @scala.inline
-    def deleteDefault_operator: Self = this.set("default_operator", js.undefined)
+    def setExpand_wildcards(value: open | closed | hidden | none | all): Self = StObject.set(x, "expand_wildcards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDf(value: String): Self = this.set("df", value.asInstanceOf[js.Any])
+    def setExpand_wildcardsUndefined: Self = StObject.set(x, "expand_wildcards", js.undefined)
     
     @scala.inline
-    def deleteDf: Self = this.set("df", js.undefined)
+    def setIgnore_throttled(value: Boolean): Self = StObject.set(x, "ignore_throttled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpand_wildcards(value: open | closed | hidden | none | all): Self = this.set("expand_wildcards", value.asInstanceOf[js.Any])
+    def setIgnore_throttledUndefined: Self = StObject.set(x, "ignore_throttled", js.undefined)
     
     @scala.inline
-    def deleteExpand_wildcards: Self = this.set("expand_wildcards", js.undefined)
+    def setIgnore_unavailable(value: Boolean): Self = StObject.set(x, "ignore_unavailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnore_throttled(value: Boolean): Self = this.set("ignore_throttled", value.asInstanceOf[js.Any])
+    def setIgnore_unavailableUndefined: Self = StObject.set(x, "ignore_unavailable", js.undefined)
     
     @scala.inline
-    def deleteIgnore_throttled: Self = this.set("ignore_throttled", js.undefined)
+    def setIndex(value: String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnore_unavailable(value: Boolean): Self = this.set("ignore_unavailable", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteIgnore_unavailable: Self = this.set("ignore_unavailable", js.undefined)
+    def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
     
     @scala.inline
-    def setIndexVarargs(value: String*): Self = this.set("index", js.Array(value :_*))
+    def setLenient(value: Boolean): Self = StObject.set(x, "lenient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: String | js.Array[String]): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setLenientUndefined: Self = StObject.set(x, "lenient", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setMin_score(value: Double): Self = StObject.set(x, "min_score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLenient(value: Boolean): Self = this.set("lenient", value.asInstanceOf[js.Any])
+    def setMin_scoreUndefined: Self = StObject.set(x, "min_score", js.undefined)
     
     @scala.inline
-    def deleteLenient: Self = this.set("lenient", js.undefined)
+    def setPreference(value: String): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_score(value: Double): Self = this.set("min_score", value.asInstanceOf[js.Any])
+    def setPreferenceUndefined: Self = StObject.set(x, "preference", js.undefined)
     
     @scala.inline
-    def deleteMin_score: Self = this.set("min_score", js.undefined)
+    def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreference(value: String): Self = this.set("preference", value.asInstanceOf[js.Any])
+    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
     @scala.inline
-    def deletePreference: Self = this.set("preference", js.undefined)
+    def setRouting(value: String | js.Array[String]): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ(value: String): Self = this.set("q", value.asInstanceOf[js.Any])
+    def setRoutingUndefined: Self = StObject.set(x, "routing", js.undefined)
     
     @scala.inline
-    def deleteQ: Self = this.set("q", js.undefined)
+    def setRoutingVarargs(value: String*): Self = StObject.set(x, "routing", js.Array(value :_*))
     
     @scala.inline
-    def setRoutingVarargs(value: String*): Self = this.set("routing", js.Array(value :_*))
+    def setTerminate_after(value: Double): Self = StObject.set(x, "terminate_after", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouting(value: String | js.Array[String]): Self = this.set("routing", value.asInstanceOf[js.Any])
+    def setTerminate_afterUndefined: Self = StObject.set(x, "terminate_after", js.undefined)
     
     @scala.inline
-    def deleteRouting: Self = this.set("routing", js.undefined)
+    def setType(value: String | js.Array[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTerminate_after(value: Double): Self = this.set("terminate_after", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTerminate_after: Self = this.set("terminate_after", js.undefined)
-    
-    @scala.inline
-    def setTypeVarargs(value: String*): Self = this.set("type", js.Array(value :_*))
-    
-    @scala.inline
-    def setType(value: String | js.Array[String]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

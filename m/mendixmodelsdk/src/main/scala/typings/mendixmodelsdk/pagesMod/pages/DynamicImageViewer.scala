@@ -12,6 +12,7 @@ import typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayoutCallArgumen
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,16 +82,20 @@ class DynamicImageViewer protected () extends EntityWidget {
   
   def width_=(newValue: Double): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer")
-@js.native
-object DynamicImageViewer extends js.Object {
+object DynamicImageViewer {
+  
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.create")
+  @js.native
   def create(model: IModel): DynamicImageViewer = js.native
   
   /**
@@ -101,6 +106,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.7.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInBuildingBlockUnderWidget")
+  @js.native
   def createInBuildingBlockUnderWidget(container: BuildingBlock): DynamicImageViewer = js.native
   
   /**
@@ -111,6 +119,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInBuildingBlockUnderWidgets")
+  @js.native
   def createInBuildingBlockUnderWidgets(container: BuildingBlock): DynamicImageViewer = js.native
   
   /**
@@ -121,6 +132,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.7.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInDataViewUnderFooterWidget")
+  @js.native
   def createInDataViewUnderFooterWidget(container: DataView): DynamicImageViewer = js.native
   
   /**
@@ -131,6 +145,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInDataViewUnderFooterWidgets")
+  @js.native
   def createInDataViewUnderFooterWidgets(container: DataView): DynamicImageViewer = js.native
   
   /**
@@ -141,6 +158,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInDataViewUnderWidget")
+  @js.native
   def createInDataViewUnderWidget(container: DataView): DynamicImageViewer = js.native
   
   /**
@@ -151,6 +171,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInDataViewUnderWidgets")
+  @js.native
   def createInDataViewUnderWidgets(container: DataView): DynamicImageViewer = js.native
   
   /**
@@ -161,6 +184,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInDivContainerUnderWidget")
+  @js.native
   def createInDivContainerUnderWidget(container: DivContainer): DynamicImageViewer = js.native
   
   /**
@@ -171,6 +197,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInDivContainerUnderWidgets")
+  @js.native
   def createInDivContainerUnderWidgets(container: DivContainer): DynamicImageViewer = js.native
   
   /**
@@ -181,6 +210,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInGroupBoxUnderWidget")
+  @js.native
   def createInGroupBoxUnderWidget(container: GroupBox): DynamicImageViewer = js.native
   
   /**
@@ -191,6 +223,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInGroupBoxUnderWidgets")
+  @js.native
   def createInGroupBoxUnderWidgets(container: GroupBox): DynamicImageViewer = js.native
   
   /**
@@ -201,6 +236,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInHeaderUnderLeftWidget")
+  @js.native
   def createInHeaderUnderLeftWidget(container: Header): DynamicImageViewer = js.native
   
   /**
@@ -211,6 +249,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInHeaderUnderLeftWidgets")
+  @js.native
   def createInHeaderUnderLeftWidgets(container: Header): DynamicImageViewer = js.native
   
   /**
@@ -221,6 +262,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInHeaderUnderRightWidget")
+  @js.native
   def createInHeaderUnderRightWidget(container: Header): DynamicImageViewer = js.native
   
   /**
@@ -231,6 +275,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInHeaderUnderRightWidgets")
+  @js.native
   def createInHeaderUnderRightWidgets(container: Header): DynamicImageViewer = js.native
   
   /**
@@ -241,6 +288,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInLayoutCallArgumentUnderWidget")
+  @js.native
   def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): DynamicImageViewer = js.native
   
   /**
@@ -251,6 +301,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInLayoutCallArgumentUnderWidgets")
+  @js.native
   def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): DynamicImageViewer = js.native
   
   /**
@@ -261,6 +314,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInLayoutGridColumnUnderWidget")
+  @js.native
   def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): DynamicImageViewer = js.native
   
   /**
@@ -271,6 +327,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInLayoutGridColumnUnderWidgets")
+  @js.native
   def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): DynamicImageViewer = js.native
   
   /**
@@ -281,6 +340,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInLayoutUnderWidget")
+  @js.native
   def createInLayoutUnderWidget(container: Layout): DynamicImageViewer = js.native
   
   /**
@@ -291,6 +353,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInLayoutUnderWidgets")
+  @js.native
   def createInLayoutUnderWidgets(container: Layout): DynamicImageViewer = js.native
   
   /**
@@ -301,6 +366,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInListViewTemplateUnderWidget")
+  @js.native
   def createInListViewTemplateUnderWidget(container: ListViewTemplate): DynamicImageViewer = js.native
   
   /**
@@ -311,6 +379,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInListViewTemplateUnderWidgets")
+  @js.native
   def createInListViewTemplateUnderWidgets(container: ListViewTemplate): DynamicImageViewer = js.native
   
   /**
@@ -321,6 +392,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInListViewUnderWidget")
+  @js.native
   def createInListViewUnderWidget(container: ListView): DynamicImageViewer = js.native
   
   /**
@@ -331,6 +405,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInListViewUnderWidgets")
+  @js.native
   def createInListViewUnderWidgets(container: ListView): DynamicImageViewer = js.native
   
   /**
@@ -341,6 +418,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.1.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInMasterDetailRegionUnderWidget")
+  @js.native
   def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): DynamicImageViewer = js.native
   
   /**
@@ -351,6 +431,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.23.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInNativeLayoutCallArgumentUnderWidgets")
+  @js.native
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): DynamicImageViewer = js.native
   
   /**
@@ -361,6 +444,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.5.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInNativeLayoutContentUnderSidebarWidgets")
+  @js.native
   def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): DynamicImageViewer = js.native
   
   /**
@@ -371,6 +457,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInNativeLayoutContentUnderWidgets")
+  @js.native
   def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): DynamicImageViewer = js.native
   
   /**
@@ -381,6 +470,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.22.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInNativeLayoutUnderHeaderWidget")
+  @js.native
   def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): DynamicImageViewer = js.native
   
   /**
@@ -391,6 +483,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.21.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInNativeLayoutUnderWidgets")
+  @js.native
   def createInNativeLayoutUnderWidgets(container: NativeLayout): DynamicImageViewer = js.native
   
   /**
@@ -401,6 +496,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInNavigationListItemUnderWidget")
+  @js.native
   def createInNavigationListItemUnderWidget(container: NavigationListItem): DynamicImageViewer = js.native
   
   /**
@@ -411,6 +509,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInNavigationListItemUnderWidgets")
+  @js.native
   def createInNavigationListItemUnderWidgets(container: NavigationListItem): DynamicImageViewer = js.native
   
   /**
@@ -421,6 +522,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 6.9.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInReportPaneUnderParameterWidget")
+  @js.native
   def createInReportPaneUnderParameterWidget(container: ReportPane): DynamicImageViewer = js.native
   
   /**
@@ -431,6 +535,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 6.9.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInReportPaneUnderReportWidget")
+  @js.native
   def createInReportPaneUnderReportWidget(container: ReportPane): DynamicImageViewer = js.native
   
   /**
@@ -441,6 +548,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInScrollContainerRegionUnderWidget")
+  @js.native
   def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): DynamicImageViewer = js.native
   
   /**
@@ -451,6 +561,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInScrollContainerRegionUnderWidgets")
+  @js.native
   def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): DynamicImageViewer = js.native
   
   /**
@@ -461,6 +574,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInSnippetUnderWidget")
+  @js.native
   def createInSnippetUnderWidget(container: Snippet): DynamicImageViewer = js.native
   
   /**
@@ -471,6 +587,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInSnippetUnderWidgets")
+  @js.native
   def createInSnippetUnderWidgets(container: Snippet): DynamicImageViewer = js.native
   
   /**
@@ -481,6 +600,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInSplitPaneUnderFirstWidget")
+  @js.native
   def createInSplitPaneUnderFirstWidget(container: SplitPane): DynamicImageViewer = js.native
   
   /**
@@ -491,6 +613,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInSplitPaneUnderFirstWidgets")
+  @js.native
   def createInSplitPaneUnderFirstWidgets(container: SplitPane): DynamicImageViewer = js.native
   
   /**
@@ -501,6 +626,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInSplitPaneUnderSecondWidget")
+  @js.native
   def createInSplitPaneUnderSecondWidget(container: SplitPane): DynamicImageViewer = js.native
   
   /**
@@ -511,6 +639,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInSplitPaneUnderSecondWidgets")
+  @js.native
   def createInSplitPaneUnderSecondWidgets(container: SplitPane): DynamicImageViewer = js.native
   
   /**
@@ -521,6 +652,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInTabPageUnderWidget")
+  @js.native
   def createInTabPageUnderWidget(container: TabPage): DynamicImageViewer = js.native
   
   /**
@@ -531,6 +665,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInTabPageUnderWidgets")
+  @js.native
   def createInTabPageUnderWidgets(container: TabPage): DynamicImageViewer = js.native
   
   /**
@@ -541,6 +678,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInTableCellUnderWidget")
+  @js.native
   def createInTableCellUnderWidget(container: TableCell): DynamicImageViewer = js.native
   
   /**
@@ -551,6 +691,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInTableCellUnderWidgets")
+  @js.native
   def createInTableCellUnderWidgets(container: TableCell): DynamicImageViewer = js.native
   
   /**
@@ -561,6 +704,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInTemplateGridContentsUnderWidget")
+  @js.native
   def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): DynamicImageViewer = js.native
   
   /**
@@ -571,6 +717,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInTemplateGridContentsUnderWidgets")
+  @js.native
   def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): DynamicImageViewer = js.native
   
   /**
@@ -581,6 +730,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInVerticalFlowUnderWidgets")
+  @js.native
   def createInVerticalFlowUnderWidgets(container: VerticalFlow): DynamicImageViewer = js.native
   
   /**
@@ -591,6 +743,9 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInWebLayoutContentUnderWidgets")
+  @js.native
   def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): DynamicImageViewer = js.native
   
   /**
@@ -601,9 +756,22 @@ object DynamicImageViewer extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.2.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.createInWidgetValueUnderWidgets")
+  @js.native
   def createInWidgetValueUnderWidgets(container: WidgetValue): DynamicImageViewer = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DynamicImageViewer.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

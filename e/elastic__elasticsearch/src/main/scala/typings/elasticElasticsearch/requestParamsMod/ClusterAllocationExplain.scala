@@ -1,5 +1,6 @@
 package typings.elasticElasticsearch.requestParamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +23,24 @@ object ClusterAllocationExplain {
   }
   
   @scala.inline
-  implicit class ClusterAllocationExplainOps[Self <: ClusterAllocationExplain[_], T] (val x: Self with ClusterAllocationExplain[T]) extends AnyVal {
+  implicit class ClusterAllocationExplainMutableBuilder[Self <: ClusterAllocationExplain[_], T] (val x: Self with ClusterAllocationExplain[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInclude_disk_info(value: Boolean): Self = StObject.set(x, "include_disk_info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: T): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setInclude_disk_infoUndefined: Self = StObject.set(x, "include_disk_info", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setInclude_yes_decisions(value: Boolean): Self = StObject.set(x, "include_yes_decisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude_disk_info(value: Boolean): Self = this.set("include_disk_info", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInclude_disk_info: Self = this.set("include_disk_info", js.undefined)
-    
-    @scala.inline
-    def setInclude_yes_decisions(value: Boolean): Self = this.set("include_yes_decisions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInclude_yes_decisions: Self = this.set("include_yes_decisions", js.undefined)
+    def setInclude_yes_decisionsUndefined: Self = StObject.set(x, "include_yes_decisions", js.undefined)
   }
 }

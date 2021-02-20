@@ -1,5 +1,6 @@
 package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Template for an email template.
   */
 @js.native
-trait SchemaEmailTemplate extends js.Object {
+trait SchemaEmailTemplate extends StObject {
   
   /**
     * Email body.
@@ -49,54 +50,42 @@ object SchemaEmailTemplate {
   }
   
   @scala.inline
-  implicit class SchemaEmailTemplateOps[Self <: SchemaEmailTemplate] (val x: Self) extends AnyVal {
+  implicit class SchemaEmailTemplateMutableBuilder[Self <: SchemaEmailTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setFromDisplayName(value: String): Self = StObject.set(x, "fromDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setFromDisplayNameUndefined: Self = StObject.set(x, "fromDisplayName", js.undefined)
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setReplyTo(value: String): Self = StObject.set(x, "replyTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromDisplayName(value: String): Self = this.set("fromDisplayName", value.asInstanceOf[js.Any])
+    def setReplyToUndefined: Self = StObject.set(x, "replyTo", js.undefined)
     
     @scala.inline
-    def deleteFromDisplayName: Self = this.set("fromDisplayName", js.undefined)
+    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplyTo(value: String): Self = this.set("replyTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplyTo: Self = this.set("replyTo", js.undefined)
-    
-    @scala.inline
-    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
   }
 }

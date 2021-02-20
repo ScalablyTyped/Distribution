@@ -1,11 +1,12 @@
 package typings.activexInfopath.InfoPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IInitEventHandler extends js.Object {
+trait IInitEventHandler extends StObject {
   
   @JSName("InfoPath.IInitEventHandler_typekey")
   var InfoPathDotIInitEventHandler_typekey: IInitEventHandler = js.native
@@ -25,24 +26,12 @@ object IInitEventHandler {
   }
   
   @scala.inline
-  implicit class IInitEventHandlerOps[Self <: IInitEventHandler] (val x: Self) extends AnyVal {
+  implicit class IInitEventHandlerMutableBuilder[Self <: IInitEventHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInfoPathDotIInitEventHandler_typekey(value: IInitEventHandler): Self = StObject.set(x, "InfoPath.IInitEventHandler_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInfoPathDotIInitEventHandler_typekey(value: IInitEventHandler): Self = this.set("InfoPath.IInitEventHandler_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitEventHandler(value: (js.Any, _XDocument, XdReadOnlyViewMode) => Unit): Self = this.set("InitEventHandler", js.Any.fromFunction3(value))
+    def setInitEventHandler(value: (js.Any, _XDocument, XdReadOnlyViewMode) => Unit): Self = StObject.set(x, "InitEventHandler", js.Any.fromFunction3(value))
   }
 }

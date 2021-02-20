@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImportInstallationMediaMessage extends js.Object {
+trait ImportInstallationMediaMessage extends StObject {
   
   /**
     * The identifier of the custom Availability Zone (AZ) to import the installation media to.
@@ -47,33 +48,21 @@ object ImportInstallationMediaMessage {
   }
   
   @scala.inline
-  implicit class ImportInstallationMediaMessageOps[Self <: ImportInstallationMediaMessage] (val x: Self) extends AnyVal {
+  implicit class ImportInstallationMediaMessageMutableBuilder[Self <: ImportInstallationMediaMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomAvailabilityZoneId(value: String): Self = StObject.set(x, "CustomAvailabilityZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEngineInstallationMediaPath(value: String): Self = StObject.set(x, "EngineInstallationMediaPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomAvailabilityZoneId(value: String): Self = this.set("CustomAvailabilityZoneId", value.asInstanceOf[js.Any])
+    def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEngineInstallationMediaPath(value: String): Self = this.set("EngineInstallationMediaPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOSInstallationMediaPath(value: String): Self = this.set("OSInstallationMediaPath", value.asInstanceOf[js.Any])
+    def setOSInstallationMediaPath(value: String): Self = StObject.set(x, "OSInstallationMediaPath", value.asInstanceOf[js.Any])
   }
 }

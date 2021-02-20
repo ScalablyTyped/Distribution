@@ -3,6 +3,7 @@ package typings.vexflow.global.Vex.Flow
 import typings.vexflow.Vex.Flow.Stroke.Type
 import typings.vexflow.anon.Allvoices
 import typings.vexflow.anon.Leftshift
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,17 +15,15 @@ class Stroke protected ()
   def this(`type`: Type) = this()
   def this(`type`: Type, options: Allvoices) = this()
 }
-/* static members */
-@JSGlobal("Vex.Flow.Stroke")
-@js.native
-object Stroke extends js.Object {
+object Stroke {
   
+  @JSGlobal("Vex.Flow.Stroke.CATEGORY")
+  @js.native
   val CATEGORY: String = js.native
   
-  def format(strokes: js.Array[typings.vexflow.Vex.Flow.Stroke], state: Leftshift): Boolean = js.native
-  
+  @JSGlobal("Vex.Flow.Stroke.Type")
   @js.native
-  object Type extends js.Object {
+  object Type extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.vexflow.Vex.Flow.Stroke.Type with Double] = js.native
@@ -43,4 +42,9 @@ object Stroke extends js.Object {
     
     /* 2 */ val ROLL_UP: typings.vexflow.Vex.Flow.Stroke.Type.ROLL_UP with Double = js.native
   }
+  
+  /* static member */
+  @JSGlobal("Vex.Flow.Stroke.format")
+  @js.native
+  def format(strokes: js.Array[typings.vexflow.Vex.Flow.Stroke], state: Leftshift): Boolean = js.native
 }

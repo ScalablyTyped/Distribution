@@ -1,15 +1,15 @@
 package typings.nodegit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/transfer-progress", JSImport.Namespace)
-@js.native
-object transferProgressMod extends js.Object {
+object transferProgressMod {
   
+  @JSImport("nodegit/transfer-progress", "TransferProgress")
   @js.native
-  class TransferProgress () extends js.Object {
+  class TransferProgress () extends StObject {
     
     var indexedDeltas: Double = js.native
     

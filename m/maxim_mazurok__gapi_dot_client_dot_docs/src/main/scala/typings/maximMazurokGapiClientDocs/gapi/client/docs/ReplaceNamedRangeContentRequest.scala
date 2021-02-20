@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplaceNamedRangeContentRequest extends js.Object {
+trait ReplaceNamedRangeContentRequest extends StObject {
   
   /** The ID of the named range whose content will be replaced. If there is no named range with the given ID a 400 bad request error is returned. */
   var namedRangeId: js.UndefOr[String] = js.native
@@ -28,36 +29,24 @@ object ReplaceNamedRangeContentRequest {
   }
   
   @scala.inline
-  implicit class ReplaceNamedRangeContentRequestOps[Self <: ReplaceNamedRangeContentRequest] (val x: Self) extends AnyVal {
+  implicit class ReplaceNamedRangeContentRequestMutableBuilder[Self <: ReplaceNamedRangeContentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNamedRangeId(value: String): Self = StObject.set(x, "namedRangeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNamedRangeIdUndefined: Self = StObject.set(x, "namedRangeId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamedRangeName(value: String): Self = StObject.set(x, "namedRangeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamedRangeId(value: String): Self = this.set("namedRangeId", value.asInstanceOf[js.Any])
+    def setNamedRangeNameUndefined: Self = StObject.set(x, "namedRangeName", js.undefined)
     
     @scala.inline
-    def deleteNamedRangeId: Self = this.set("namedRangeId", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamedRangeName(value: String): Self = this.set("namedRangeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamedRangeName: Self = this.set("namedRangeName", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

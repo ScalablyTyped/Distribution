@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UniformBuffer extends js.Object {
+trait UniformBuffer extends StObject {
   
   /** @hidden */
   var _alreadyBound: Boolean = js.native

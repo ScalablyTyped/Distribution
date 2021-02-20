@@ -1,13 +1,14 @@
 package typings.vastClient.mod
 
 import typings.std.Storage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vast-client", "VASTClient")
 @js.native
-class VASTClient () extends js.Object {
+class VASTClient () extends StObject {
   def this(/**
     * Used for ignoring the first n calls. Automatically reset 1 hour after the 1st ignored call. Free Lunch capping is disable if sets to 0.
     * Default: 0

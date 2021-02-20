@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CancelJobResponse extends js.Object {
+trait CancelJobResponse extends StObject {
   
   /**
     * A short text description of the job.
@@ -31,36 +32,24 @@ object CancelJobResponse {
   }
   
   @scala.inline
-  implicit class CancelJobResponseOps[Self <: CancelJobResponse] (val x: Self) extends AnyVal {
+  implicit class CancelJobResponseMutableBuilder[Self <: CancelJobResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: JobDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobArn(value: JobArn): Self = StObject.set(x, "jobArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: JobDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setJobArnUndefined: Self = StObject.set(x, "jobArn", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobArn(value: JobArn): Self = this.set("jobArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobArn: Self = this.set("jobArn", js.undefined)
-    
-    @scala.inline
-    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobId: Self = this.set("jobId", js.undefined)
+    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubReport extends js.Object {
+trait SubReport extends StObject {
   
   @JSName("Access.SubReport_typekey")
   var AccessDotSubReport_typekey: SubReport = js.native
@@ -37,36 +38,24 @@ object SubReport {
   }
   
   @scala.inline
-  implicit class SubReportOps[Self <: SubReport] (val x: Self) extends AnyVal {
+  implicit class SubReportMutableBuilder[Self <: SubReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessDotSubReport_typekey(value: SubReport): Self = StObject.set(x, "Access.SubReport_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForm(value: Form): Self = StObject.set(x, "Form", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessDotSubReport_typekey(value: SubReport): Self = this.set("Access.SubReport_typekey", value.asInstanceOf[js.Any])
+    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForm(value: Form): Self = this.set("Form", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = this.set("IsMemberSafe", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReport(value: Report): Self = this.set("Report", value.asInstanceOf[js.Any])
+    def setReport(value: Report): Self = StObject.set(x, "Report", value.asInstanceOf[js.Any])
   }
 }

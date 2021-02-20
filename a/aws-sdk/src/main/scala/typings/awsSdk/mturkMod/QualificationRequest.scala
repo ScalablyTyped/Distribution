@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QualificationRequest extends js.Object {
+trait QualificationRequest extends StObject {
   
   /**
     *  The Worker's answers for the Qualification type's test contained in a QuestionFormAnswers document, if the type has a test and the Worker has submitted answers. If the Worker does not provide any answers, Answer may be empty. 
@@ -46,54 +47,42 @@ object QualificationRequest {
   }
   
   @scala.inline
-  implicit class QualificationRequestOps[Self <: QualificationRequest] (val x: Self) extends AnyVal {
+  implicit class QualificationRequestMutableBuilder[Self <: QualificationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnswer(value: String): Self = StObject.set(x, "Answer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnswerUndefined: Self = StObject.set(x, "Answer", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQualificationRequestId(value: String): Self = StObject.set(x, "QualificationRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnswer(value: String): Self = this.set("Answer", value.asInstanceOf[js.Any])
+    def setQualificationRequestIdUndefined: Self = StObject.set(x, "QualificationRequestId", js.undefined)
     
     @scala.inline
-    def deleteAnswer: Self = this.set("Answer", js.undefined)
+    def setQualificationTypeId(value: EntityId): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQualificationRequestId(value: String): Self = this.set("QualificationRequestId", value.asInstanceOf[js.Any])
+    def setQualificationTypeIdUndefined: Self = StObject.set(x, "QualificationTypeId", js.undefined)
     
     @scala.inline
-    def deleteQualificationRequestId: Self = this.set("QualificationRequestId", js.undefined)
+    def setSubmitTime(value: Timestamp): Self = StObject.set(x, "SubmitTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQualificationTypeId(value: EntityId): Self = this.set("QualificationTypeId", value.asInstanceOf[js.Any])
+    def setSubmitTimeUndefined: Self = StObject.set(x, "SubmitTime", js.undefined)
     
     @scala.inline
-    def deleteQualificationTypeId: Self = this.set("QualificationTypeId", js.undefined)
+    def setTest(value: String): Self = StObject.set(x, "Test", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmitTime(value: Timestamp): Self = this.set("SubmitTime", value.asInstanceOf[js.Any])
+    def setTestUndefined: Self = StObject.set(x, "Test", js.undefined)
     
     @scala.inline
-    def deleteSubmitTime: Self = this.set("SubmitTime", js.undefined)
+    def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTest(value: String): Self = this.set("Test", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTest: Self = this.set("Test", js.undefined)
-    
-    @scala.inline
-    def setWorkerId(value: CustomerId): Self = this.set("WorkerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerId: Self = this.set("WorkerId", js.undefined)
+    def setWorkerIdUndefined: Self = StObject.set(x, "WorkerId", js.undefined)
   }
 }

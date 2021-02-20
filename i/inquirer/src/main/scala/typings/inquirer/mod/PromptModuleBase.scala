@@ -1,6 +1,7 @@
 package typings.inquirer.mod
 
 import typings.inquirer.mod.prompts.PromptConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides prompts for answering questions.
   */
 @js.native
-trait PromptModuleBase extends js.Object {
+trait PromptModuleBase extends StObject {
   
   /**
     * Registers a new prompt-type.
@@ -36,24 +37,12 @@ object PromptModuleBase {
   }
   
   @scala.inline
-  implicit class PromptModuleBaseOps[Self <: PromptModuleBase] (val x: Self) extends AnyVal {
+  implicit class PromptModuleBaseMutableBuilder[Self <: PromptModuleBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegisterPrompt(value: (String, PromptConstructor) => Unit): Self = StObject.set(x, "registerPrompt", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRegisterPrompt(value: (String, PromptConstructor) => Unit): Self = this.set("registerPrompt", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRestoreDefaultPrompts(value: () => Unit): Self = this.set("restoreDefaultPrompts", js.Any.fromFunction0(value))
+    def setRestoreDefaultPrompts(value: () => Unit): Self = StObject.set(x, "restoreDefaultPrompts", js.Any.fromFunction0(value))
   }
 }

@@ -2,12 +2,13 @@ package typings.thrift.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.thrift.anon.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebServerOptions[TProcessor, THandler] extends js.Object {
+trait WebServerOptions[TProcessor, THandler] extends StObject {
   
   var services: StringDictionary[Handler[TProcessor, THandler]] = js.native
 }
@@ -20,21 +21,9 @@ object WebServerOptions {
   }
   
   @scala.inline
-  implicit class WebServerOptionsOps[Self <: WebServerOptions[_, _], TProcessor, THandler] (val x: Self with (WebServerOptions[TProcessor, THandler])) extends AnyVal {
+  implicit class WebServerOptionsMutableBuilder[Self <: WebServerOptions[_, _], TProcessor, THandler] (val x: Self with (WebServerOptions[TProcessor, THandler])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setServices(value: StringDictionary[Handler[TProcessor, THandler]]): Self = this.set("services", value.asInstanceOf[js.Any])
+    def setServices(value: StringDictionary[Handler[TProcessor, THandler]]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.miniprogramWxs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NumberConstructor extends js.Object {
+trait NumberConstructor extends StObject {
   
   // new(value?: any): Number;
   // (value?: any): number;
@@ -49,33 +50,21 @@ object NumberConstructor {
   }
   
   @scala.inline
-  implicit class NumberConstructorOps[Self <: NumberConstructor] (val x: Self) extends AnyVal {
+  implicit class NumberConstructorMutableBuilder[Self <: NumberConstructor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMAX_VALUE(value: Double): Self = StObject.set(x, "MAX_VALUE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMIN_VALUE(value: Double): Self = StObject.set(x, "MIN_VALUE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNEGATIVE_INFINITY(value: Double): Self = StObject.set(x, "NEGATIVE_INFINITY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMAX_VALUE(value: Double): Self = this.set("MAX_VALUE", value.asInstanceOf[js.Any])
+    def setNaN(value: Double): Self = StObject.set(x, "NaN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMIN_VALUE(value: Double): Self = this.set("MIN_VALUE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNEGATIVE_INFINITY(value: Double): Self = this.set("NEGATIVE_INFINITY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNaN(value: Double): Self = this.set("NaN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPOSITIVE_INFINITY(value: Double): Self = this.set("POSITIVE_INFINITY", value.asInstanceOf[js.Any])
+    def setPOSITIVE_INFINITY(value: Double): Self = StObject.set(x, "POSITIVE_INFINITY", value.asInstanceOf[js.Any])
   }
 }

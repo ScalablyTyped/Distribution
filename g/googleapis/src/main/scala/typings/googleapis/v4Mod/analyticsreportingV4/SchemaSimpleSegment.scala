@@ -1,5 +1,6 @@
 package typings.googleapis.v4Mod.analyticsreportingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * conditions that can be combined.
   */
 @js.native
-trait SchemaSimpleSegment extends js.Object {
+trait SchemaSimpleSegment extends StObject {
   
   /**
     * A list of segment filters groups which are combined with logical `AND`
@@ -26,27 +27,15 @@ object SchemaSimpleSegment {
   }
   
   @scala.inline
-  implicit class SchemaSimpleSegmentOps[Self <: SchemaSimpleSegment] (val x: Self) extends AnyVal {
+  implicit class SchemaSimpleSegmentMutableBuilder[Self <: SchemaSimpleSegment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrFiltersForSegment(value: js.Array[SchemaOrFiltersForSegment]): Self = StObject.set(x, "orFiltersForSegment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrFiltersForSegmentUndefined: Self = StObject.set(x, "orFiltersForSegment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOrFiltersForSegmentVarargs(value: SchemaOrFiltersForSegment*): Self = this.set("orFiltersForSegment", js.Array(value :_*))
-    
-    @scala.inline
-    def setOrFiltersForSegment(value: js.Array[SchemaOrFiltersForSegment]): Self = this.set("orFiltersForSegment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrFiltersForSegment: Self = this.set("orFiltersForSegment", js.undefined)
+    def setOrFiltersForSegmentVarargs(value: SchemaOrFiltersForSegment*): Self = StObject.set(x, "orFiltersForSegment", js.Array(value :_*))
   }
 }

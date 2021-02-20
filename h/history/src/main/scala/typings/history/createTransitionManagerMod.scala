@@ -4,18 +4,23 @@ import typings.history.mod.Action
 import typings.history.mod.Location
 import typings.history.mod.LocationListener
 import typings.history.mod.UnregisterCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("history/createTransitionManager", JSImport.Namespace)
-@js.native
-object createTransitionManagerMod extends js.Object {
+object createTransitionManagerMod {
   
+  @JSImport("history/createTransitionManager", JSImport.Default)
+  @js.native
   def default[S](): TransitionManager[S] = js.native
   
+  type Prompt[S] = PromptFunction[S] | Boolean
+  
+  type PromptFunction[S] = js.Function2[/* location */ Location[S], /* action */ Action, js.Any]
+  
   @js.native
-  trait TransitionManager[S] extends js.Object {
+  trait TransitionManager[S] extends StObject {
     
     def appendListener(listener: LocationListener[S]): UnregisterCallback = js.native
     
@@ -31,8 +36,4 @@ object createTransitionManagerMod extends js.Object {
     def setPrompt(): UnregisterCallback = js.native
     def setPrompt(nextPrompt: Prompt[S]): UnregisterCallback = js.native
   }
-  
-  type Prompt[S] = PromptFunction[S] | Boolean
-  
-  type PromptFunction[S] = js.Function2[/* location */ Location[S], /* action */ Action, js.Any]
 }

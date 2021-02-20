@@ -1,5 +1,6 @@
 package typings.googleapis.bigquerydatatransferV1Mod.bigquerydatatransferV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * request proper OAuth tokens.
   */
 @js.native
-trait SchemaDataSource extends js.Object {
+trait SchemaDataSource extends StObject {
   
   /**
     * Indicates the type of authorization.
@@ -121,132 +122,120 @@ object SchemaDataSource {
   }
   
   @scala.inline
-  implicit class SchemaDataSourceOps[Self <: SchemaDataSource] (val x: Self) extends AnyVal {
+  implicit class SchemaDataSourceMutableBuilder[Self <: SchemaDataSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizationType(value: String): Self = StObject.set(x, "authorizationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizationTypeUndefined: Self = StObject.set(x, "authorizationType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationType(value: String): Self = this.set("authorizationType", value.asInstanceOf[js.Any])
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def deleteAuthorizationType: Self = this.set("authorizationType", js.undefined)
+    def setDataRefreshType(value: String): Self = StObject.set(x, "dataRefreshType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setDataRefreshTypeUndefined: Self = StObject.set(x, "dataRefreshType", js.undefined)
     
     @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
+    def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataRefreshType(value: String): Self = this.set("dataRefreshType", value.asInstanceOf[js.Any])
+    def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
     
     @scala.inline
-    def deleteDataRefreshType: Self = this.set("dataRefreshType", js.undefined)
+    def setDefaultDataRefreshWindowDays(value: Double): Self = StObject.set(x, "defaultDataRefreshWindowDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceId(value: String): Self = this.set("dataSourceId", value.asInstanceOf[js.Any])
+    def setDefaultDataRefreshWindowDaysUndefined: Self = StObject.set(x, "defaultDataRefreshWindowDays", js.undefined)
     
     @scala.inline
-    def deleteDataSourceId: Self = this.set("dataSourceId", js.undefined)
+    def setDefaultSchedule(value: String): Self = StObject.set(x, "defaultSchedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultDataRefreshWindowDays(value: Double): Self = this.set("defaultDataRefreshWindowDays", value.asInstanceOf[js.Any])
+    def setDefaultScheduleUndefined: Self = StObject.set(x, "defaultSchedule", js.undefined)
     
     @scala.inline
-    def deleteDefaultDataRefreshWindowDays: Self = this.set("defaultDataRefreshWindowDays", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSchedule(value: String): Self = this.set("defaultSchedule", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDefaultSchedule: Self = this.set("defaultSchedule", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setHelpUrl(value: String): Self = StObject.set(x, "helpUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setHelpUrlUndefined: Self = StObject.set(x, "helpUrl", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setManualRunsDisabled(value: Boolean): Self = StObject.set(x, "manualRunsDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpUrl(value: String): Self = this.set("helpUrl", value.asInstanceOf[js.Any])
+    def setManualRunsDisabledUndefined: Self = StObject.set(x, "manualRunsDisabled", js.undefined)
     
     @scala.inline
-    def deleteHelpUrl: Self = this.set("helpUrl", js.undefined)
+    def setMinimumScheduleInterval(value: String): Self = StObject.set(x, "minimumScheduleInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualRunsDisabled(value: Boolean): Self = this.set("manualRunsDisabled", value.asInstanceOf[js.Any])
+    def setMinimumScheduleIntervalUndefined: Self = StObject.set(x, "minimumScheduleInterval", js.undefined)
     
     @scala.inline
-    def deleteManualRunsDisabled: Self = this.set("manualRunsDisabled", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumScheduleInterval(value: String): Self = this.set("minimumScheduleInterval", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMinimumScheduleInterval: Self = this.set("minimumScheduleInterval", js.undefined)
+    def setParameters(value: js.Array[SchemaDataSourceParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setParametersVarargs(value: SchemaDataSourceParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
     @scala.inline
-    def setParametersVarargs(value: SchemaDataSourceParameter*): Self = this.set("parameters", js.Array(value :_*))
+    def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: js.Array[SchemaDataSourceParameter]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     
     @scala.inline
-    def setScopesVarargs(value: String*): Self = this.set("scopes", js.Array(value :_*))
+    def setSupportsCustomSchedule(value: Boolean): Self = StObject.set(x, "supportsCustomSchedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScopes(value: js.Array[String]): Self = this.set("scopes", value.asInstanceOf[js.Any])
+    def setSupportsCustomScheduleUndefined: Self = StObject.set(x, "supportsCustomSchedule", js.undefined)
     
     @scala.inline
-    def deleteScopes: Self = this.set("scopes", js.undefined)
+    def setSupportsMultipleTransfers(value: Boolean): Self = StObject.set(x, "supportsMultipleTransfers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsCustomSchedule(value: Boolean): Self = this.set("supportsCustomSchedule", value.asInstanceOf[js.Any])
+    def setSupportsMultipleTransfersUndefined: Self = StObject.set(x, "supportsMultipleTransfers", js.undefined)
     
     @scala.inline
-    def deleteSupportsCustomSchedule: Self = this.set("supportsCustomSchedule", js.undefined)
+    def setTransferType(value: String): Self = StObject.set(x, "transferType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsMultipleTransfers(value: Boolean): Self = this.set("supportsMultipleTransfers", value.asInstanceOf[js.Any])
+    def setTransferTypeUndefined: Self = StObject.set(x, "transferType", js.undefined)
     
     @scala.inline
-    def deleteSupportsMultipleTransfers: Self = this.set("supportsMultipleTransfers", js.undefined)
+    def setUpdateDeadlineSeconds(value: Double): Self = StObject.set(x, "updateDeadlineSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransferType(value: String): Self = this.set("transferType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransferType: Self = this.set("transferType", js.undefined)
-    
-    @scala.inline
-    def setUpdateDeadlineSeconds(value: Double): Self = this.set("updateDeadlineSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateDeadlineSeconds: Self = this.set("updateDeadlineSeconds", js.undefined)
+    def setUpdateDeadlineSecondsUndefined: Self = StObject.set(x, "updateDeadlineSeconds", js.undefined)
   }
 }

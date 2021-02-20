@@ -3,12 +3,13 @@ package typings.atom.mod
 import typings.atom.anon.ClipDirection
 import typings.atom.anon.Reversed
 import typings.atom.anon.`26`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisplayMarker extends js.Object {
+trait DisplayMarker extends StObject {
   
   /**
     *  Removes the marker's tail. After calling the marker's head position will be

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContactMatchReasonKind extends js.Object
+sealed trait ContactMatchReasonKind extends StObject
 /** Defines the reasons that a Contact matched a search. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactMatchReasonKind")
 @js.native
-object ContactMatchReasonKind extends js.Object {
+object ContactMatchReasonKind extends StObject {
   
   /** The contact email address field matched. */
   @js.native

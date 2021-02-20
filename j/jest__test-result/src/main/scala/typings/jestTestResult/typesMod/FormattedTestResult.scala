@@ -2,12 +2,13 @@ package typings.jestTestResult.typesMod
 
 import typings.jestTestResult.jestTestResultStrings.failed
 import typings.jestTestResult.jestTestResultStrings.passed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormattedTestResult extends js.Object {
+trait FormattedTestResult extends StObject {
   
   var assertionResults: js.Array[FormattedAssertionResult] = js.native
   
@@ -43,45 +44,33 @@ object FormattedTestResult {
   }
   
   @scala.inline
-  implicit class FormattedTestResultOps[Self <: FormattedTestResult] (val x: Self) extends AnyVal {
+  implicit class FormattedTestResultMutableBuilder[Self <: FormattedTestResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssertionResults(value: js.Array[FormattedAssertionResult]): Self = StObject.set(x, "assertionResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssertionResultsVarargs(value: FormattedAssertionResult*): Self = StObject.set(x, "assertionResults", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoverage(value: js.Any): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssertionResultsVarargs(value: FormattedAssertionResult*): Self = this.set("assertionResults", js.Array(value :_*))
+    def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssertionResults(value: js.Array[FormattedAssertionResult]): Self = this.set("assertionResults", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoverage(value: js.Any): Self = this.set("coverage", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: Double): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setStatus(value: failed | passed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTime(value: Double): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: failed | passed): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
+    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.cryptoJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,30 +29,18 @@ object CipherOption {
   }
   
   @scala.inline
-  implicit class CipherOptionOps[Self <: CipherOption] (val x: Self) extends AnyVal {
+  implicit class CipherOptionMutableBuilder[Self <: CipherOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: Format_): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIv(value: WordArray): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: Format_): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
-    
-    @scala.inline
-    def setIv(value: WordArray): Self = this.set("iv", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIv: Self = this.set("iv", js.undefined)
+    def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
   }
 }

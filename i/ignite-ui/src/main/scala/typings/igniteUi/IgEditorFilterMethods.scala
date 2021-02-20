@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgEditorFilterMethods extends js.Object {
+trait IgEditorFilterMethods extends StObject {
   
   def destroy(): Unit = js.native
   
@@ -35,36 +36,24 @@ object IgEditorFilterMethods {
   }
   
   @scala.inline
-  implicit class IgEditorFilterMethodsOps[Self <: IgEditorFilterMethods] (val x: Self) extends AnyVal {
+  implicit class IgEditorFilterMethodsMutableBuilder[Self <: IgEditorFilterMethods] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExitEditMode(value: () => Unit): Self = StObject.set(x, "exitEditMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasInvalidMessage(value: () => Unit): Self = StObject.set(x, "hasInvalidMessage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExitEditMode(value: () => Unit): Self = this.set("exitEditMode", js.Any.fromFunction0(value))
+    def setSetFocus(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "setFocus", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHasInvalidMessage(value: () => Unit): Self = this.set("hasInvalidMessage", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemove(value: () => Unit): Self = this.set("remove", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetFocus(value: (js.Object, js.Object) => Unit): Self = this.set("setFocus", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setValidator(value: () => Unit): Self = this.set("validator", js.Any.fromFunction0(value))
+    def setValidator(value: () => Unit): Self = StObject.set(x, "validator", js.Any.fromFunction0(value))
   }
 }

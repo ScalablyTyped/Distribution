@@ -1,12 +1,13 @@
 package typings.eggMultipart
 
 import typings.eggMultipart.anon.CurrentDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScheduleOptions extends js.Object {
+trait ScheduleOptions extends StObject {
   
   var cron: js.UndefOr[String] = js.native
   
@@ -31,63 +32,51 @@ object ScheduleOptions {
   }
   
   @scala.inline
-  implicit class ScheduleOptionsOps[Self <: ScheduleOptions] (val x: Self) extends AnyVal {
+  implicit class ScheduleOptionsMutableBuilder[Self <: ScheduleOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCron(value: String): Self = StObject.set(x, "cron", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCronOptions(value: CurrentDate): Self = StObject.set(x, "cronOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCronOptionsUndefined: Self = StObject.set(x, "cronOptions", js.undefined)
     
     @scala.inline
-    def setCron(value: String): Self = this.set("cron", value.asInstanceOf[js.Any])
+    def setCronUndefined: Self = StObject.set(x, "cron", js.undefined)
     
     @scala.inline
-    def deleteCron: Self = this.set("cron", js.undefined)
+    def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCronOptions(value: CurrentDate): Self = this.set("cronOptions", value.asInstanceOf[js.Any])
+    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
     @scala.inline
-    def deleteCronOptions: Self = this.set("cronOptions", js.undefined)
+    def setEnv(value: js.Array[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable(value: Boolean): Self = this.set("disable", value.asInstanceOf[js.Any])
+    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
     @scala.inline
-    def deleteDisable: Self = this.set("disable", js.undefined)
+    def setEnvVarargs(value: String*): Self = StObject.set(x, "env", js.Array(value :_*))
     
     @scala.inline
-    def setEnvVarargs(value: String*): Self = this.set("env", js.Array(value :_*))
+    def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: js.Array[String]): Self = this.set("env", value.asInstanceOf[js.Any])
+    def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
     
     @scala.inline
-    def deleteEnv: Self = this.set("env", js.undefined)
+    def setInterval(value: Double | String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImmediate(value: Boolean): Self = this.set("immediate", value.asInstanceOf[js.Any])
+    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
     @scala.inline
-    def deleteImmediate: Self = this.set("immediate", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterval(value: Double | String): Self = this.set("interval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInterval: Self = this.set("interval", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

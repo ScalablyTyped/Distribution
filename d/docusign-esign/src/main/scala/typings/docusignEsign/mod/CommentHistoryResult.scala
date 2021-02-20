@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommentHistoryResult extends js.Object {
+trait CommentHistoryResult extends StObject {
   
   /**
     * An array of comment tabs that contain information about users' comments on documents.
@@ -17,7 +18,7 @@ trait CommentHistoryResult extends js.Object {
     */
   var count: js.UndefOr[Double] = js.native
   
-   // int32
+  // int32
   var endTimetoken: js.UndefOr[String] = js.native
   
   var startTimetoken: js.UndefOr[String] = js.native
@@ -31,45 +32,33 @@ object CommentHistoryResult {
   }
   
   @scala.inline
-  implicit class CommentHistoryResultOps[Self <: CommentHistoryResult] (val x: Self) extends AnyVal {
+  implicit class CommentHistoryResultMutableBuilder[Self <: CommentHistoryResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComments(value: js.Array[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
     @scala.inline
-    def setCommentsVarargs(value: Comment*): Self = this.set("comments", js.Array(value :_*))
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: js.Array[Comment]): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setEndTimetoken(value: String): Self = StObject.set(x, "endTimetoken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setEndTimetokenUndefined: Self = StObject.set(x, "endTimetoken", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setStartTimetoken(value: String): Self = StObject.set(x, "startTimetoken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTimetoken(value: String): Self = this.set("endTimetoken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndTimetoken: Self = this.set("endTimetoken", js.undefined)
-    
-    @scala.inline
-    def setStartTimetoken(value: String): Self = this.set("startTimetoken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTimetoken: Self = this.set("startTimetoken", js.undefined)
+    def setStartTimetokenUndefined: Self = StObject.set(x, "startTimetoken", js.undefined)
   }
 }

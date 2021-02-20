@@ -1,11 +1,12 @@
 package typings.three.webXRMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XRTransientInputHitTestResult extends js.Object {
+trait XRTransientInputHitTestResult extends StObject {
   
   val inputSource: XRInputSource = js.native
   
@@ -20,27 +21,15 @@ object XRTransientInputHitTestResult {
   }
   
   @scala.inline
-  implicit class XRTransientInputHitTestResultOps[Self <: XRTransientInputHitTestResult] (val x: Self) extends AnyVal {
+  implicit class XRTransientInputHitTestResultMutableBuilder[Self <: XRTransientInputHitTestResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputSource(value: XRInputSource): Self = StObject.set(x, "inputSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResults(value: js.Array[XRHitTestResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInputSource(value: XRInputSource): Self = this.set("inputSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultsVarargs(value: XRHitTestResult*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[XRHitTestResult]): Self = this.set("results", value.asInstanceOf[js.Any])
+    def setResultsVarargs(value: XRHitTestResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

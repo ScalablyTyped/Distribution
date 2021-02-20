@@ -3,13 +3,14 @@ package typings.squareConnect.mod
 import typings.squareConnect.squareConnectStrings.CLOSED_AT
 import typings.squareConnect.squareConnectStrings.CREATED_AT
 import typings.squareConnect.squareConnectStrings.UPDATED_AT
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "SearchOrdersSort")
 @js.native
-class SearchOrdersSort () extends js.Object {
+class SearchOrdersSort () extends StObject {
   
   /**
     * The field to sort by.

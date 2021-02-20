@@ -1,12 +1,13 @@
 package typings.semanticUiVisibility.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-visibility.SemanticUI.VisibilitySettings._Impl, 'checkOnRefresh'> */
 @js.native
-trait PickImplcheckOnRefresh extends js.Object {
+trait PickImplcheckOnRefresh extends StObject {
   
   var checkOnRefresh: Boolean = js.native
 }
@@ -19,21 +20,9 @@ object PickImplcheckOnRefresh {
   }
   
   @scala.inline
-  implicit class PickImplcheckOnRefreshOps[Self <: PickImplcheckOnRefresh] (val x: Self) extends AnyVal {
+  implicit class PickImplcheckOnRefreshMutableBuilder[Self <: PickImplcheckOnRefresh] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCheckOnRefresh(value: Boolean): Self = this.set("checkOnRefresh", value.asInstanceOf[js.Any])
+    def setCheckOnRefresh(value: Boolean): Self = StObject.set(x, "checkOnRefresh", value.asInstanceOf[js.Any])
   }
 }

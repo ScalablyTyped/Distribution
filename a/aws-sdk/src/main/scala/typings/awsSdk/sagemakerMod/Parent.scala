@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Parent extends js.Object {
+trait Parent extends StObject {
   
   /**
     * The name of the experiment.
@@ -26,30 +27,18 @@ object Parent {
   }
   
   @scala.inline
-  implicit class ParentOps[Self <: Parent] (val x: Self) extends AnyVal {
+  implicit class ParentMutableBuilder[Self <: Parent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExperimentName(value: ExperimentEntityName): Self = StObject.set(x, "ExperimentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExperimentNameUndefined: Self = StObject.set(x, "ExperimentName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrialName(value: ExperimentEntityName): Self = StObject.set(x, "TrialName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExperimentName(value: ExperimentEntityName): Self = this.set("ExperimentName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExperimentName: Self = this.set("ExperimentName", js.undefined)
-    
-    @scala.inline
-    def setTrialName(value: ExperimentEntityName): Self = this.set("TrialName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrialName: Self = this.set("TrialName", js.undefined)
+    def setTrialNameUndefined: Self = StObject.set(x, "TrialName", js.undefined)
   }
 }

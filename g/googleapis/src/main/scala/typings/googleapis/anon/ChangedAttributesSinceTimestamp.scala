@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangedAttributesSinceTimestamp extends js.Object {
+trait ChangedAttributesSinceTimestamp extends StObject {
   
   var changedAttributesSinceTimestamp: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object ChangedAttributesSinceTimestamp {
   }
   
   @scala.inline
-  implicit class ChangedAttributesSinceTimestampOps[Self <: ChangedAttributesSinceTimestamp] (val x: Self) extends AnyVal {
+  implicit class ChangedAttributesSinceTimestampMutableBuilder[Self <: ChangedAttributesSinceTimestamp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangedAttributesSinceTimestamp(value: String): Self = StObject.set(x, "changedAttributesSinceTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangedAttributesSinceTimestampUndefined: Self = StObject.set(x, "changedAttributesSinceTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangedMetricsSinceTimestamp(value: String): Self = StObject.set(x, "changedMetricsSinceTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedAttributesSinceTimestamp(value: String): Self = this.set("changedAttributesSinceTimestamp", value.asInstanceOf[js.Any])
+    def setChangedMetricsSinceTimestampUndefined: Self = StObject.set(x, "changedMetricsSinceTimestamp", js.undefined)
     
     @scala.inline
-    def deleteChangedAttributesSinceTimestamp: Self = this.set("changedAttributesSinceTimestamp", js.undefined)
+    def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedMetricsSinceTimestamp(value: String): Self = this.set("changedMetricsSinceTimestamp", value.asInstanceOf[js.Any])
+    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
     @scala.inline
-    def deleteChangedMetricsSinceTimestamp: Self = this.set("changedMetricsSinceTimestamp", js.undefined)
+    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDate(value: String): Self = this.set("endDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndDate: Self = this.set("endDate", js.undefined)
-    
-    @scala.inline
-    def setStartDate(value: String): Self = this.set("startDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDate: Self = this.set("startDate", js.undefined)
+    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateObjectRequest extends js.Object {
+trait CreateObjectRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that is associated with the Directory in which the object will be created. For more information, see arns.
@@ -41,48 +42,36 @@ object CreateObjectRequest {
   }
   
   @scala.inline
-  implicit class CreateObjectRequestOps[Self <: CreateObjectRequest] (val x: Self) extends AnyVal {
+  implicit class CreateObjectRequestMutableBuilder[Self <: CreateObjectRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLinkName(value: LinkName): Self = StObject.set(x, "LinkName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinkNameUndefined: Self = StObject.set(x, "LinkName", js.undefined)
     
     @scala.inline
-    def setDirectoryArn(value: Arn): Self = this.set("DirectoryArn", value.asInstanceOf[js.Any])
+    def setObjectAttributeList(value: AttributeKeyAndValueList): Self = StObject.set(x, "ObjectAttributeList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaFacetsVarargs(value: SchemaFacet*): Self = this.set("SchemaFacets", js.Array(value :_*))
+    def setObjectAttributeListUndefined: Self = StObject.set(x, "ObjectAttributeList", js.undefined)
     
     @scala.inline
-    def setSchemaFacets(value: SchemaFacetList): Self = this.set("SchemaFacets", value.asInstanceOf[js.Any])
+    def setObjectAttributeListVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "ObjectAttributeList", js.Array(value :_*))
     
     @scala.inline
-    def setLinkName(value: LinkName): Self = this.set("LinkName", value.asInstanceOf[js.Any])
+    def setParentReference(value: ObjectReference): Self = StObject.set(x, "ParentReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLinkName: Self = this.set("LinkName", js.undefined)
+    def setParentReferenceUndefined: Self = StObject.set(x, "ParentReference", js.undefined)
     
     @scala.inline
-    def setObjectAttributeListVarargs(value: AttributeKeyAndValue*): Self = this.set("ObjectAttributeList", js.Array(value :_*))
+    def setSchemaFacets(value: SchemaFacetList): Self = StObject.set(x, "SchemaFacets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectAttributeList(value: AttributeKeyAndValueList): Self = this.set("ObjectAttributeList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectAttributeList: Self = this.set("ObjectAttributeList", js.undefined)
-    
-    @scala.inline
-    def setParentReference(value: ObjectReference): Self = this.set("ParentReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentReference: Self = this.set("ParentReference", js.undefined)
+    def setSchemaFacetsVarargs(value: SchemaFacet*): Self = StObject.set(x, "SchemaFacets", js.Array(value :_*))
   }
 }

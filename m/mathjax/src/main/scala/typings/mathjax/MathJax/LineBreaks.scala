@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LineBreaks extends js.Object {
+trait LineBreaks extends StObject {
   
   /*This controls the automatic breaking of expressions: when false, only linebreak="newline" is processed; when
     * true, line breaks are inserted automatically in long expressions.
@@ -29,30 +30,18 @@ object LineBreaks {
   }
   
   @scala.inline
-  implicit class LineBreaksOps[Self <: LineBreaks] (val x: Self) extends AnyVal {
+  implicit class LineBreaksMutableBuilder[Self <: LineBreaks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomatic(value: Boolean): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutomaticUndefined: Self = StObject.set(x, "automatic", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomatic(value: Boolean): Self = this.set("automatic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutomatic: Self = this.set("automatic", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

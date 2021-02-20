@@ -1,13 +1,30 @@
 package typings.sharepoint.SP
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.CompliancePolicy")
-@js.native
-object CompliancePolicy extends js.Object {
+object CompliancePolicy {
+  
+  @js.native
+  sealed trait SPContainerType extends StObject
+  @JSGlobal("SP.CompliancePolicy.SPContainerType")
+  @js.native
+  object SPContainerType extends StObject {
+    
+    // : 1,
+    @js.native
+    sealed trait list extends SPContainerType
+    
+    @js.native
+    sealed trait site extends SPContainerType
+    
+    // : 0,
+    @js.native
+    sealed trait web extends SPContainerType
+  }
   
   @js.native
   trait SPContainerId extends ClientObject {
@@ -45,23 +62,6 @@ object CompliancePolicy extends js.Object {
     def set_version(value: js.Any): js.Any = js.native
     
     def set_webId(value: Guid): Guid = js.native
-  }
-  
-  @js.native
-  sealed trait SPContainerType extends js.Object
-  @js.native
-  object SPContainerType extends js.Object {
-    
-    @js.native
-    sealed trait list extends SPContainerType
-    
-     // : 0,
-    @js.native
-    sealed trait site extends SPContainerType
-    
-     // : 1,
-    @js.native
-    sealed trait web extends SPContainerType
   }
   
   @js.native

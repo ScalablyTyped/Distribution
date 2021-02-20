@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the type of change that occurred for a ContactChanged event. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactChangeType")
 @js.native
-object ContactChangeType extends js.Object {
+object ContactChangeType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactChangeType with Double] = js.native

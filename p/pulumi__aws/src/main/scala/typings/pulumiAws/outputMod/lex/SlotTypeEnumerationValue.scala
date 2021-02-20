@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.lex
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SlotTypeEnumerationValue extends js.Object {
+trait SlotTypeEnumerationValue extends StObject {
   
   /**
     * Additional values related to the slot type value. Each item must be less than or equal to 140 characters in length.
@@ -26,30 +27,18 @@ object SlotTypeEnumerationValue {
   }
   
   @scala.inline
-  implicit class SlotTypeEnumerationValueOps[Self <: SlotTypeEnumerationValue] (val x: Self) extends AnyVal {
+  implicit class SlotTypeEnumerationValueMutableBuilder[Self <: SlotTypeEnumerationValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSynonyms(value: js.Array[String]): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSynonymsUndefined: Self = StObject.set(x, "synonyms", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSynonymsVarargs(value: String*): Self = this.set("synonyms", js.Array(value :_*))
-    
-    @scala.inline
-    def setSynonyms(value: js.Array[String]): Self = this.set("synonyms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSynonyms: Self = this.set("synonyms", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

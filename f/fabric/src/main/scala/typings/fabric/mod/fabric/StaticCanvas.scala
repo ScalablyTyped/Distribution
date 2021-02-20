@@ -6,6 +6,7 @@ import typings.fabric.fabricStrings.setLineDash
 import typings.fabric.fabricStrings.toDataURL
 import typings.fabric.fabricStrings.toDataURLWithQuality
 import typings.std.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,16 +28,22 @@ class StaticCanvas ()
   def this(element: HTMLCanvasElement, options: ICanvasOptions) = this()
 }
 /* static members */
-@JSImport("fabric", "fabric.StaticCanvas")
-@js.native
-object StaticCanvas extends js.Object {
+object StaticCanvas {
+  
+  @JSImport("fabric", "fabric.StaticCanvas")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * @static
     * @type String
     * @default
     */
-  var EMPTY_JSON: String = js.native
+  @JSImport("fabric", "fabric.StaticCanvas.EMPTY_JSON")
+  @js.native
+  def EMPTY_JSON: String = js.native
+  @scala.inline
+  def EMPTY_JSON_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMPTY_JSON")(x.asInstanceOf[js.Any])
   
   /**
     * Provides a way to check support of some of the canvas methods
@@ -47,19 +54,27 @@ object StaticCanvas extends js.Object {
     * @return {Boolean | null} `true` if method is supported (or at least exists),
     *                          `null` if canvas element or context can not be initialized
     */
-  @JSName("supports")
+  @JSImport("fabric", "fabric.StaticCanvas.supports")
+  @js.native
   def supports_getImageData(methodName: getImageData): Boolean = js.native
-  @JSName("supports")
+  @JSImport("fabric", "fabric.StaticCanvas.supports")
+  @js.native
   def supports_setLineDash(methodName: setLineDash): Boolean = js.native
-  @JSName("supports")
+  @JSImport("fabric", "fabric.StaticCanvas.supports")
+  @js.native
   def supports_toDataURL(methodName: toDataURL): Boolean = js.native
-  @JSName("supports")
+  @JSImport("fabric", "fabric.StaticCanvas.supports")
+  @js.native
   def supports_toDataURLWithQuality(methodName: toDataURLWithQuality): Boolean = js.native
   
   /**
     * Returns JSON representation of canvas
     * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
     */
+  @JSImport("fabric", "fabric.StaticCanvas.toJSON")
+  @js.native
   def toJSON(): String = js.native
+  @JSImport("fabric", "fabric.StaticCanvas.toJSON")
+  @js.native
   def toJSON(propertiesToInclude: js.Array[String]): String = js.native
 }

@@ -1,31 +1,28 @@
 package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EnumTextureDetectionMode extends js.Object
+sealed trait EnumTextureDetectionMode extends StObject
 @JSImport("dwt/Dynamsoft.Enum", "DynamsoftEnums.EnumTextureDetectionMode")
 @js.native
-object EnumTextureDetectionMode extends js.Object {
+object EnumTextureDetectionMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumTextureDetectionMode with Double] = js.native
   
   @js.native
   sealed trait TDM_AUTO extends EnumTextureDetectionMode
-  /* 1 */ @js.native
-  object TDM_AUTO extends TopLevel[TDM_AUTO with Double]
+  /* 1 */ val TDM_AUTO: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumTextureDetectionMode.TDM_AUTO with Double = js.native
   
   @js.native
   sealed trait TDM_GENERAL_WIDTH_CONCENTRATION extends EnumTextureDetectionMode
-  /* 2 */ @js.native
-  object TDM_GENERAL_WIDTH_CONCENTRATION extends TopLevel[TDM_GENERAL_WIDTH_CONCENTRATION with Double]
+  /* 2 */ val TDM_GENERAL_WIDTH_CONCENTRATION: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumTextureDetectionMode.TDM_GENERAL_WIDTH_CONCENTRATION with Double = js.native
   
   @js.native
   sealed trait TDM_SKIP extends EnumTextureDetectionMode
-  /* 0 */ @js.native
-  object TDM_SKIP extends TopLevel[TDM_SKIP with Double]
+  /* 0 */ val TDM_SKIP: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumTextureDetectionMode.TDM_SKIP with Double = js.native
 }

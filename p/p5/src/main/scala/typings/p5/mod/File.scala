@@ -1,11 +1,12 @@
 package typings.p5.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait File extends js.Object {
+trait File extends StObject {
   
   /**
     *   URL string containing image data.
@@ -49,36 +50,24 @@ object File {
   }
   
   @scala.inline
-  implicit class FileOps[Self <: File] (val x: Self) extends AnyVal {
+  implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile(value: js.Any): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setSubtype(value: js.Any): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: js.Any): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: js.Any): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubtype(value: js.Any): Self = this.set("subtype", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: js.Any): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

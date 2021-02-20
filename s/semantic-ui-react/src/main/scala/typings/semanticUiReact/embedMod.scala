@@ -1,24 +1,31 @@
 package typings.semanticUiReact
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.semanticUiReact.embedEmbedMod.EmbedProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("semantic-ui-react/dist/commonjs/modules/Embed", JSImport.Namespace)
-@js.native
-object embedMod extends js.Object {
+object embedMod extends Shortcut {
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Embed", JSImport.Default)
   @js.native
   class default protected ()
     extends Component[EmbedProps, ComponentState, js.Any] {
     def this(props: EmbedProps) = this()
     def this(props: EmbedProps, context: js.Any) = this()
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Embed", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentClass[EmbedProps, ComponentState]]
+  val default: ComponentClass[EmbedProps, ComponentState] = js.native
+  
+  type _To = ComponentClass[EmbedProps, ComponentState]
+  
+  /* This means you don't have to write `default`, but can instead just say `embedMod.foo` */
+  override def _to: ComponentClass[EmbedProps, ComponentState] = default
 }

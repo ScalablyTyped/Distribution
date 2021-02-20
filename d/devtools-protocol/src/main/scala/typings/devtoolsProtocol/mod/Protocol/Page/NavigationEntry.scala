@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Page
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationEntry extends js.Object {
+trait NavigationEntry extends StObject {
   
   /**
     * Unique id of the navigation history entry.
@@ -42,33 +43,21 @@ object NavigationEntry {
   }
   
   @scala.inline
-  implicit class NavigationEntryOps[Self <: NavigationEntry] (val x: Self) extends AnyVal {
+  implicit class NavigationEntryMutableBuilder[Self <: NavigationEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: integer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTransitionType(value: TransitionType): Self = StObject.set(x, "transitionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: integer): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransitionType(value: TransitionType): Self = this.set("transitionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserTypedURL(value: String): Self = this.set("userTypedURL", value.asInstanceOf[js.Any])
+    def setUserTypedURL(value: String): Self = StObject.set(x, "userTypedURL", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.grommet.anon
 
 import typings.grommet.utilsMod.BorderType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Panel extends js.Object {
+trait Panel extends StObject {
   
   var border: js.UndefOr[BorderType] = js.native
   
@@ -27,51 +28,39 @@ object Panel {
   }
   
   @scala.inline
-  implicit class PanelOps[Self <: Panel] (val x: Self) extends AnyVal {
+  implicit class PanelMutableBuilder[Self <: Panel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorder(value: BorderType): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderVarargs(value: Error*): Self = StObject.set(x, "border", js.Array(value :_*))
     
     @scala.inline
-    def setBorderVarargs(value: Error*): Self = this.set("border", js.Array(value :_*))
+    def setHeading(value: Level): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: BorderType): Self = this.set("border", value.asInstanceOf[js.Any])
+    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
     @scala.inline
-    def deleteBorder: Self = this.set("border", js.undefined)
+    def setHover(value: Heading): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeading(value: Level): Self = this.set("heading", value.asInstanceOf[js.Any])
+    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
     @scala.inline
-    def deleteHeading: Self = this.set("heading", js.undefined)
+    def setIcons(value: Collapse): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHover(value: Heading): Self = this.set("hover", value.asInstanceOf[js.Any])
+    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def deleteHover: Self = this.set("hover", js.undefined)
+    def setPanel(value: `4`): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcons(value: Collapse): Self = this.set("icons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIcons: Self = this.set("icons", js.undefined)
-    
-    @scala.inline
-    def setPanel(value: `4`): Self = this.set("panel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePanel: Self = this.set("panel", js.undefined)
+    def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
   }
 }

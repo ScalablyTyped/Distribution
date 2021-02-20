@@ -1,11 +1,12 @@
 package typings.googleCloudStorage.fileMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetStorageClassOptions extends js.Object {
+trait SetStorageClassOptions extends StObject {
   
   var userProject: js.UndefOr[String] = js.native
 }
@@ -18,24 +19,12 @@ object SetStorageClassOptions {
   }
   
   @scala.inline
-  implicit class SetStorageClassOptionsOps[Self <: SetStorageClassOptions] (val x: Self) extends AnyVal {
+  implicit class SetStorageClassOptionsMutableBuilder[Self <: SetStorageClassOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUserProject(value: String): Self = this.set("userProject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserProject: Self = this.set("userProject", js.undefined)
+    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

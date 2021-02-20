@@ -1,12 +1,13 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Host that has watch functionality used in --watch mode */
 @js.native
-trait WatchHost extends js.Object {
+trait WatchHost extends StObject {
   
   /** If provided, will be used to reset existing delayed compilation */
   var clearTimeout: js.UndefOr[js.Function1[/* timeoutId */ js.Any, Unit]] = js.native

@@ -1,6 +1,7 @@
 package typings.ckeditorCkeditor5Utils.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +15,9 @@ class CKEditorError protected () extends Error {
   var data: js.UndefOr[js.Object] = js.native
 }
 /* static members */
-@JSImport("@ckeditor/ckeditor5-utils", "CKEditorError")
-@js.native
-object CKEditorError extends js.Object {
+object CKEditorError {
   
+  @JSImport("@ckeditor/ckeditor5-utils", "CKEditorError.isCKEditorError")
+  @js.native
   def isCKEditorError(error: Error): Boolean = js.native
 }

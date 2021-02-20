@@ -1,11 +1,12 @@
 package typings.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LeafletEventHandlerFnMap extends js.Object {
+trait LeafletEventHandlerFnMap extends StObject {
   
   var add: js.UndefOr[LeafletEventHandlerFn] = js.native
   
@@ -116,318 +117,306 @@ object LeafletEventHandlerFnMap {
   }
   
   @scala.inline
-  implicit class LeafletEventHandlerFnMapOps[Self <: LeafletEventHandlerFnMap] (val x: Self) extends AnyVal {
+  implicit class LeafletEventHandlerFnMapMutableBuilder[Self <: LeafletEventHandlerFnMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutopanstart(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "autopanstart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdd(value: /* event */ LeafletEvent => Unit): Self = this.set("add", js.Any.fromFunction1(value))
+    def setAutopanstartUndefined: Self = StObject.set(x, "autopanstart", js.undefined)
     
     @scala.inline
-    def deleteAdd: Self = this.set("add", js.undefined)
+    def setBaselayerchange(value: /* event */ LayersControlEvent => Unit): Self = StObject.set(x, "baselayerchange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutopanstart(value: /* event */ LeafletEvent => Unit): Self = this.set("autopanstart", js.Any.fromFunction1(value))
+    def setBaselayerchangeUndefined: Self = StObject.set(x, "baselayerchange", js.undefined)
     
     @scala.inline
-    def deleteAutopanstart: Self = this.set("autopanstart", js.undefined)
+    def setClick(value: /* event */ LeafletMouseEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBaselayerchange(value: /* event */ LayersControlEvent => Unit): Self = this.set("baselayerchange", js.Any.fromFunction1(value))
+    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
     @scala.inline
-    def deleteBaselayerchange: Self = this.set("baselayerchange", js.undefined)
+    def setContextmenu(value: /* event */ LeafletMouseEvent => Unit): Self = StObject.set(x, "contextmenu", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClick(value: /* event */ LeafletMouseEvent => Unit): Self = this.set("click", js.Any.fromFunction1(value))
+    def setContextmenuUndefined: Self = StObject.set(x, "contextmenu", js.undefined)
     
     @scala.inline
-    def deleteClick: Self = this.set("click", js.undefined)
+    def setDblclick(value: /* event */ LeafletMouseEvent => Unit): Self = StObject.set(x, "dblclick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContextmenu(value: /* event */ LeafletMouseEvent => Unit): Self = this.set("contextmenu", js.Any.fromFunction1(value))
+    def setDblclickUndefined: Self = StObject.set(x, "dblclick", js.undefined)
     
     @scala.inline
-    def deleteContextmenu: Self = this.set("contextmenu", js.undefined)
+    def setDown(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDblclick(value: /* event */ LeafletMouseEvent => Unit): Self = this.set("dblclick", js.Any.fromFunction1(value))
+    def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
     
     @scala.inline
-    def deleteDblclick: Self = this.set("dblclick", js.undefined)
+    def setDrag(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDown(value: /* event */ LeafletEvent => Unit): Self = this.set("down", js.Any.fromFunction1(value))
+    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
     @scala.inline
-    def deleteDown: Self = this.set("down", js.undefined)
+    def setDragend(value: /* event */ DragEndEvent => Unit): Self = StObject.set(x, "dragend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDrag(value: /* event */ LeafletEvent => Unit): Self = this.set("drag", js.Any.fromFunction1(value))
+    def setDragendUndefined: Self = StObject.set(x, "dragend", js.undefined)
     
     @scala.inline
-    def deleteDrag: Self = this.set("drag", js.undefined)
+    def setDragstart(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "dragstart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDragend(value: /* event */ DragEndEvent => Unit): Self = this.set("dragend", js.Any.fromFunction1(value))
+    def setDragstartUndefined: Self = StObject.set(x, "dragstart", js.undefined)
     
     @scala.inline
-    def deleteDragend: Self = this.set("dragend", js.undefined)
+    def setError(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDragstart(value: /* event */ LeafletEvent => Unit): Self = this.set("dragstart", js.Any.fromFunction1(value))
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteDragstart: Self = this.set("dragstart", js.undefined)
+    def setKeydown(value: /* event */ LeafletKeyboardEvent => Unit): Self = StObject.set(x, "keydown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setError(value: /* event */ LeafletEvent => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setKeydownUndefined: Self = StObject.set(x, "keydown", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setKeypress(value: /* event */ LeafletKeyboardEvent => Unit): Self = StObject.set(x, "keypress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKeydown(value: /* event */ LeafletKeyboardEvent => Unit): Self = this.set("keydown", js.Any.fromFunction1(value))
+    def setKeypressUndefined: Self = StObject.set(x, "keypress", js.undefined)
     
     @scala.inline
-    def deleteKeydown: Self = this.set("keydown", js.undefined)
+    def setKeyup(value: /* event */ LeafletKeyboardEvent => Unit): Self = StObject.set(x, "keyup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKeypress(value: /* event */ LeafletKeyboardEvent => Unit): Self = this.set("keypress", js.Any.fromFunction1(value))
+    def setKeyupUndefined: Self = StObject.set(x, "keyup", js.undefined)
     
     @scala.inline
-    def deleteKeypress: Self = this.set("keypress", js.undefined)
+    def setLayeradd(value: /* event */ LayerEvent => Unit): Self = StObject.set(x, "layeradd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKeyup(value: /* event */ LeafletKeyboardEvent => Unit): Self = this.set("keyup", js.Any.fromFunction1(value))
+    def setLayeraddUndefined: Self = StObject.set(x, "layeradd", js.undefined)
     
     @scala.inline
-    def deleteKeyup: Self = this.set("keyup", js.undefined)
+    def setLayerremove(value: /* event */ LayerEvent => Unit): Self = StObject.set(x, "layerremove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLayeradd(value: /* event */ LayerEvent => Unit): Self = this.set("layeradd", js.Any.fromFunction1(value))
+    def setLayerremoveUndefined: Self = StObject.set(x, "layerremove", js.undefined)
     
     @scala.inline
-    def deleteLayeradd: Self = this.set("layeradd", js.undefined)
+    def setLoad(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLayerremove(value: /* event */ LayerEvent => Unit): Self = this.set("layerremove", js.Any.fromFunction1(value))
+    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
     @scala.inline
-    def deleteLayerremove: Self = this.set("layerremove", js.undefined)
+    def setLoading(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "loading", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLoad(value: /* event */ LeafletEvent => Unit): Self = this.set("load", js.Any.fromFunction1(value))
+    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
     @scala.inline
-    def deleteLoad: Self = this.set("load", js.undefined)
+    def setLocationerror(value: /* event */ ErrorEvent => Unit): Self = StObject.set(x, "locationerror", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLoading(value: /* event */ LeafletEvent => Unit): Self = this.set("loading", js.Any.fromFunction1(value))
+    def setLocationerrorUndefined: Self = StObject.set(x, "locationerror", js.undefined)
     
     @scala.inline
-    def deleteLoading: Self = this.set("loading", js.undefined)
+    def setLocationfound(value: /* event */ LocationEvent => Unit): Self = StObject.set(x, "locationfound", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLocationerror(value: /* event */ ErrorEvent => Unit): Self = this.set("locationerror", js.Any.fromFunction1(value))
+    def setLocationfoundUndefined: Self = StObject.set(x, "locationfound", js.undefined)
     
     @scala.inline
-    def deleteLocationerror: Self = this.set("locationerror", js.undefined)
+    def setMousedown(value: /* event */ LeafletMouseEvent => Unit): Self = StObject.set(x, "mousedown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLocationfound(value: /* event */ LocationEvent => Unit): Self = this.set("locationfound", js.Any.fromFunction1(value))
+    def setMousedownUndefined: Self = StObject.set(x, "mousedown", js.undefined)
     
     @scala.inline
-    def deleteLocationfound: Self = this.set("locationfound", js.undefined)
+    def setMousemove(value: /* event */ LeafletMouseEvent => Unit): Self = StObject.set(x, "mousemove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMousedown(value: /* event */ LeafletMouseEvent => Unit): Self = this.set("mousedown", js.Any.fromFunction1(value))
+    def setMousemoveUndefined: Self = StObject.set(x, "mousemove", js.undefined)
     
     @scala.inline
-    def deleteMousedown: Self = this.set("mousedown", js.undefined)
+    def setMouseout(value: /* event */ LeafletMouseEvent => Unit): Self = StObject.set(x, "mouseout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMousemove(value: /* event */ LeafletMouseEvent => Unit): Self = this.set("mousemove", js.Any.fromFunction1(value))
+    def setMouseoutUndefined: Self = StObject.set(x, "mouseout", js.undefined)
     
     @scala.inline
-    def deleteMousemove: Self = this.set("mousemove", js.undefined)
+    def setMouseover(value: /* event */ LeafletMouseEvent => Unit): Self = StObject.set(x, "mouseover", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMouseout(value: /* event */ LeafletMouseEvent => Unit): Self = this.set("mouseout", js.Any.fromFunction1(value))
+    def setMouseoverUndefined: Self = StObject.set(x, "mouseover", js.undefined)
     
     @scala.inline
-    def deleteMouseout: Self = this.set("mouseout", js.undefined)
+    def setMouseup(value: /* event */ LeafletMouseEvent => Unit): Self = StObject.set(x, "mouseup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMouseover(value: /* event */ LeafletMouseEvent => Unit): Self = this.set("mouseover", js.Any.fromFunction1(value))
+    def setMouseupUndefined: Self = StObject.set(x, "mouseup", js.undefined)
     
     @scala.inline
-    def deleteMouseover: Self = this.set("mouseover", js.undefined)
+    def setMove(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "move", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMouseup(value: /* event */ LeafletMouseEvent => Unit): Self = this.set("mouseup", js.Any.fromFunction1(value))
+    def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
     
     @scala.inline
-    def deleteMouseup: Self = this.set("mouseup", js.undefined)
+    def setMoveend(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "moveend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMove(value: /* event */ LeafletEvent => Unit): Self = this.set("move", js.Any.fromFunction1(value))
+    def setMoveendUndefined: Self = StObject.set(x, "moveend", js.undefined)
     
     @scala.inline
-    def deleteMove: Self = this.set("move", js.undefined)
+    def setMovestart(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "movestart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMoveend(value: /* event */ LeafletEvent => Unit): Self = this.set("moveend", js.Any.fromFunction1(value))
+    def setMovestartUndefined: Self = StObject.set(x, "movestart", js.undefined)
     
     @scala.inline
-    def deleteMoveend: Self = this.set("moveend", js.undefined)
+    def setOverlayadd(value: /* event */ LayersControlEvent => Unit): Self = StObject.set(x, "overlayadd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMovestart(value: /* event */ LeafletEvent => Unit): Self = this.set("movestart", js.Any.fromFunction1(value))
+    def setOverlayaddUndefined: Self = StObject.set(x, "overlayadd", js.undefined)
     
     @scala.inline
-    def deleteMovestart: Self = this.set("movestart", js.undefined)
+    def setOverlayremove(value: /* event */ LayersControlEvent => Unit): Self = StObject.set(x, "overlayremove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverlayadd(value: /* event */ LayersControlEvent => Unit): Self = this.set("overlayadd", js.Any.fromFunction1(value))
+    def setOverlayremoveUndefined: Self = StObject.set(x, "overlayremove", js.undefined)
     
     @scala.inline
-    def deleteOverlayadd: Self = this.set("overlayadd", js.undefined)
+    def setPopupclose(value: /* event */ PopupEvent => Unit): Self = StObject.set(x, "popupclose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverlayremove(value: /* event */ LayersControlEvent => Unit): Self = this.set("overlayremove", js.Any.fromFunction1(value))
+    def setPopupcloseUndefined: Self = StObject.set(x, "popupclose", js.undefined)
     
     @scala.inline
-    def deleteOverlayremove: Self = this.set("overlayremove", js.undefined)
+    def setPopupopen(value: /* event */ PopupEvent => Unit): Self = StObject.set(x, "popupopen", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPopupclose(value: /* event */ PopupEvent => Unit): Self = this.set("popupclose", js.Any.fromFunction1(value))
+    def setPopupopenUndefined: Self = StObject.set(x, "popupopen", js.undefined)
     
     @scala.inline
-    def deletePopupclose: Self = this.set("popupclose", js.undefined)
+    def setPreclick(value: /* event */ LeafletMouseEvent => Unit): Self = StObject.set(x, "preclick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPopupopen(value: /* event */ PopupEvent => Unit): Self = this.set("popupopen", js.Any.fromFunction1(value))
+    def setPreclickUndefined: Self = StObject.set(x, "preclick", js.undefined)
     
     @scala.inline
-    def deletePopupopen: Self = this.set("popupopen", js.undefined)
+    def setPredrag(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "predrag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPreclick(value: /* event */ LeafletMouseEvent => Unit): Self = this.set("preclick", js.Any.fromFunction1(value))
+    def setPredragUndefined: Self = StObject.set(x, "predrag", js.undefined)
     
     @scala.inline
-    def deletePreclick: Self = this.set("preclick", js.undefined)
+    def setRemove(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPredrag(value: /* event */ LeafletEvent => Unit): Self = this.set("predrag", js.Any.fromFunction1(value))
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def deletePredrag: Self = this.set("predrag", js.undefined)
+    def setResize(value: /* event */ ResizeEvent => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemove(value: /* event */ LeafletEvent => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
+    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
     @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
+    def setTileerror(value: /* event */ TileErrorEvent => Unit): Self = StObject.set(x, "tileerror", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResize(value: /* event */ ResizeEvent => Unit): Self = this.set("resize", js.Any.fromFunction1(value))
+    def setTileerrorUndefined: Self = StObject.set(x, "tileerror", js.undefined)
     
     @scala.inline
-    def deleteResize: Self = this.set("resize", js.undefined)
+    def setTileload(value: /* event */ TileEvent => Unit): Self = StObject.set(x, "tileload", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTileerror(value: /* event */ TileErrorEvent => Unit): Self = this.set("tileerror", js.Any.fromFunction1(value))
+    def setTileloadUndefined: Self = StObject.set(x, "tileload", js.undefined)
     
     @scala.inline
-    def deleteTileerror: Self = this.set("tileerror", js.undefined)
+    def setTileloadstart(value: /* event */ TileEvent => Unit): Self = StObject.set(x, "tileloadstart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTileload(value: /* event */ TileEvent => Unit): Self = this.set("tileload", js.Any.fromFunction1(value))
+    def setTileloadstartUndefined: Self = StObject.set(x, "tileloadstart", js.undefined)
     
     @scala.inline
-    def deleteTileload: Self = this.set("tileload", js.undefined)
+    def setTileunload(value: /* event */ TileEvent => Unit): Self = StObject.set(x, "tileunload", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTileloadstart(value: /* event */ TileEvent => Unit): Self = this.set("tileloadstart", js.Any.fromFunction1(value))
+    def setTileunloadUndefined: Self = StObject.set(x, "tileunload", js.undefined)
     
     @scala.inline
-    def deleteTileloadstart: Self = this.set("tileloadstart", js.undefined)
+    def setTooltipclose(value: /* event */ TooltipEvent => Unit): Self = StObject.set(x, "tooltipclose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTileunload(value: /* event */ TileEvent => Unit): Self = this.set("tileunload", js.Any.fromFunction1(value))
+    def setTooltipcloseUndefined: Self = StObject.set(x, "tooltipclose", js.undefined)
     
     @scala.inline
-    def deleteTileunload: Self = this.set("tileunload", js.undefined)
+    def setTooltipopen(value: /* event */ TooltipEvent => Unit): Self = StObject.set(x, "tooltipopen", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTooltipclose(value: /* event */ TooltipEvent => Unit): Self = this.set("tooltipclose", js.Any.fromFunction1(value))
+    def setTooltipopenUndefined: Self = StObject.set(x, "tooltipopen", js.undefined)
     
     @scala.inline
-    def deleteTooltipclose: Self = this.set("tooltipclose", js.undefined)
+    def setUnload(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "unload", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTooltipopen(value: /* event */ TooltipEvent => Unit): Self = this.set("tooltipopen", js.Any.fromFunction1(value))
+    def setUnloadUndefined: Self = StObject.set(x, "unload", js.undefined)
     
     @scala.inline
-    def deleteTooltipopen: Self = this.set("tooltipopen", js.undefined)
+    def setUpdate(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUnload(value: /* event */ LeafletEvent => Unit): Self = this.set("unload", js.Any.fromFunction1(value))
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
     @scala.inline
-    def deleteUnload: Self = this.set("unload", js.undefined)
+    def setViewreset(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "viewreset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUpdate(value: /* event */ LeafletEvent => Unit): Self = this.set("update", js.Any.fromFunction1(value))
+    def setViewresetUndefined: Self = StObject.set(x, "viewreset", js.undefined)
     
     @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setZoom(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "zoom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setViewreset(value: /* event */ LeafletEvent => Unit): Self = this.set("viewreset", js.Any.fromFunction1(value))
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
     
     @scala.inline
-    def deleteViewreset: Self = this.set("viewreset", js.undefined)
+    def setZoomanim(value: /* event */ ZoomAnimEvent => Unit): Self = StObject.set(x, "zoomanim", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setZoom(value: /* event */ LeafletEvent => Unit): Self = this.set("zoom", js.Any.fromFunction1(value))
+    def setZoomanimUndefined: Self = StObject.set(x, "zoomanim", js.undefined)
     
     @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomend(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "zoomend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setZoomanim(value: /* event */ ZoomAnimEvent => Unit): Self = this.set("zoomanim", js.Any.fromFunction1(value))
+    def setZoomendUndefined: Self = StObject.set(x, "zoomend", js.undefined)
     
     @scala.inline
-    def deleteZoomanim: Self = this.set("zoomanim", js.undefined)
+    def setZoomlevelschange(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "zoomlevelschange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setZoomend(value: /* event */ LeafletEvent => Unit): Self = this.set("zoomend", js.Any.fromFunction1(value))
+    def setZoomlevelschangeUndefined: Self = StObject.set(x, "zoomlevelschange", js.undefined)
     
     @scala.inline
-    def deleteZoomend: Self = this.set("zoomend", js.undefined)
+    def setZoomstart(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "zoomstart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setZoomlevelschange(value: /* event */ LeafletEvent => Unit): Self = this.set("zoomlevelschange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteZoomlevelschange: Self = this.set("zoomlevelschange", js.undefined)
-    
-    @scala.inline
-    def setZoomstart(value: /* event */ LeafletEvent => Unit): Self = this.set("zoomstart", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteZoomstart: Self = this.set("zoomstart", js.undefined)
+    def setZoomstartUndefined: Self = StObject.set(x, "zoomstart", js.undefined)
   }
 }

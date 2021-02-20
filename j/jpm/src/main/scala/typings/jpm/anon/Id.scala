@@ -1,12 +1,13 @@
 package typings.jpm.anon
 
 import typings.jpm.sidebarMod.SidebarWorker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Id extends js.Object {
+trait Id extends StObject {
   
   var id: js.UndefOr[String] = js.native
   
@@ -33,60 +34,48 @@ object Id {
   }
   
   @scala.inline
-  implicit class IdOps[Self <: Id] (val x: Self) extends AnyVal {
+  implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnAttach(value: /* worker */ SidebarWorker => _): Self = StObject.set(x, "onAttach", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setOnAttachUndefined: Self = StObject.set(x, "onAttach", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setOnDetach(value: () => _): Self = StObject.set(x, "onDetach", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOnDetachUndefined: Self = StObject.set(x, "onDetach", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setOnHide(value: () => _): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnAttach(value: /* worker */ SidebarWorker => _): Self = this.set("onAttach", js.Any.fromFunction1(value))
+    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
     @scala.inline
-    def deleteOnAttach: Self = this.set("onAttach", js.undefined)
+    def setOnReady(value: /* worker */ SidebarWorker => _): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDetach(value: () => _): Self = this.set("onDetach", js.Any.fromFunction0(value))
+    def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
     
     @scala.inline
-    def deleteOnDetach: Self = this.set("onDetach", js.undefined)
+    def setOnShow(value: () => _): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnHide(value: () => _): Self = this.set("onHide", js.Any.fromFunction0(value))
+    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
     @scala.inline
-    def deleteOnHide: Self = this.set("onHide", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnReady(value: /* worker */ SidebarWorker => _): Self = this.set("onReady", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnReady: Self = this.set("onReady", js.undefined)
-    
-    @scala.inline
-    def setOnShow(value: () => _): Self = this.set("onShow", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

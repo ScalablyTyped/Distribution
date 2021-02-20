@@ -1,11 +1,12 @@
 package typings.awsSdk.lakeformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListResourcesResponse extends js.Object {
+trait ListResourcesResponse extends StObject {
   
   /**
     * A continuation token, if this is not the first call to retrieve these resources.
@@ -26,33 +27,21 @@ object ListResourcesResponse {
   }
   
   @scala.inline
-  implicit class ListResourcesResponseOps[Self <: ListResourcesResponse] (val x: Self) extends AnyVal {
+  implicit class ListResourcesResponseMutableBuilder[Self <: ListResourcesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceInfoList(value: ResourceInfoList): Self = StObject.set(x, "ResourceInfoList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setResourceInfoListUndefined: Self = StObject.set(x, "ResourceInfoList", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setResourceInfoListVarargs(value: ResourceInfo*): Self = this.set("ResourceInfoList", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceInfoList(value: ResourceInfoList): Self = this.set("ResourceInfoList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceInfoList: Self = this.set("ResourceInfoList", js.undefined)
+    def setResourceInfoListVarargs(value: ResourceInfo*): Self = StObject.set(x, "ResourceInfoList", js.Array(value :_*))
   }
 }

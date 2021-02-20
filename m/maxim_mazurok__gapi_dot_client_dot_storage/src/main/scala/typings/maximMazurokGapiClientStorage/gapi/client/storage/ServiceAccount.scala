@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientStorage.gapi.client.storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceAccount extends js.Object {
+trait ServiceAccount extends StObject {
   
   /** The ID of the notification. */
   var email_address: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object ServiceAccount {
   }
   
   @scala.inline
-  implicit class ServiceAccountOps[Self <: ServiceAccount] (val x: Self) extends AnyVal {
+  implicit class ServiceAccountMutableBuilder[Self <: ServiceAccount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmail_address(value: String): Self = StObject.set(x, "email_address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmail_addressUndefined: Self = StObject.set(x, "email_address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail_address(value: String): Self = this.set("email_address", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmail_address: Self = this.set("email_address", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

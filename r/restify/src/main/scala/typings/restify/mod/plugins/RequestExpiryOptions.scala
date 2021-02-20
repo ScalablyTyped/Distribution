@@ -1,11 +1,12 @@
 package typings.restify.mod.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestExpiryOptions extends js.Object {
+trait RequestExpiryOptions extends StObject {
   
   /**
     * Header name of the absolute time for request expiration
@@ -31,36 +32,24 @@ object RequestExpiryOptions {
   }
   
   @scala.inline
-  implicit class RequestExpiryOptionsOps[Self <: RequestExpiryOptions] (val x: Self) extends AnyVal {
+  implicit class RequestExpiryOptionsMutableBuilder[Self <: RequestExpiryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsoluteHeader(value: String): Self = StObject.set(x, "absoluteHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbsoluteHeaderUndefined: Self = StObject.set(x, "absoluteHeader", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartHeader(value: String): Self = StObject.set(x, "startHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbsoluteHeader(value: String): Self = this.set("absoluteHeader", value.asInstanceOf[js.Any])
+    def setStartHeaderUndefined: Self = StObject.set(x, "startHeader", js.undefined)
     
     @scala.inline
-    def deleteAbsoluteHeader: Self = this.set("absoluteHeader", js.undefined)
+    def setTimeoutHeader(value: String): Self = StObject.set(x, "timeoutHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartHeader(value: String): Self = this.set("startHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartHeader: Self = this.set("startHeader", js.undefined)
-    
-    @scala.inline
-    def setTimeoutHeader(value: String): Self = this.set("timeoutHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutHeader: Self = this.set("timeoutHeader", js.undefined)
+    def setTimeoutHeaderUndefined: Self = StObject.set(x, "timeoutHeader", js.undefined)
   }
 }

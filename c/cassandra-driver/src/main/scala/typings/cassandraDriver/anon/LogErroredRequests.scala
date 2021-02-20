@@ -1,11 +1,12 @@
 package typings.cassandraDriver.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LogErroredRequests extends js.Object {
+trait LogErroredRequests extends StObject {
   
   var logErroredRequests: js.UndefOr[Boolean] = js.native
   
@@ -28,54 +29,42 @@ object LogErroredRequests {
   }
   
   @scala.inline
-  implicit class LogErroredRequestsOps[Self <: LogErroredRequests] (val x: Self) extends AnyVal {
+  implicit class LogErroredRequestsMutableBuilder[Self <: LogErroredRequests] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogErroredRequests(value: Boolean): Self = StObject.set(x, "logErroredRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogErroredRequestsUndefined: Self = StObject.set(x, "logErroredRequests", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogNormalRequests(value: Boolean): Self = StObject.set(x, "logNormalRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogErroredRequests(value: Boolean): Self = this.set("logErroredRequests", value.asInstanceOf[js.Any])
+    def setLogNormalRequestsUndefined: Self = StObject.set(x, "logNormalRequests", js.undefined)
     
     @scala.inline
-    def deleteLogErroredRequests: Self = this.set("logErroredRequests", js.undefined)
+    def setMessageMaxErrorStackTraceLength(value: Double): Self = StObject.set(x, "messageMaxErrorStackTraceLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogNormalRequests(value: Boolean): Self = this.set("logNormalRequests", value.asInstanceOf[js.Any])
+    def setMessageMaxErrorStackTraceLengthUndefined: Self = StObject.set(x, "messageMaxErrorStackTraceLength", js.undefined)
     
     @scala.inline
-    def deleteLogNormalRequests: Self = this.set("logNormalRequests", js.undefined)
+    def setMessageMaxParameterValueLength(value: Double): Self = StObject.set(x, "messageMaxParameterValueLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageMaxErrorStackTraceLength(value: Double): Self = this.set("messageMaxErrorStackTraceLength", value.asInstanceOf[js.Any])
+    def setMessageMaxParameterValueLengthUndefined: Self = StObject.set(x, "messageMaxParameterValueLength", js.undefined)
     
     @scala.inline
-    def deleteMessageMaxErrorStackTraceLength: Self = this.set("messageMaxErrorStackTraceLength", js.undefined)
+    def setMessageMaxQueryLength(value: Double): Self = StObject.set(x, "messageMaxQueryLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageMaxParameterValueLength(value: Double): Self = this.set("messageMaxParameterValueLength", value.asInstanceOf[js.Any])
+    def setMessageMaxQueryLengthUndefined: Self = StObject.set(x, "messageMaxQueryLength", js.undefined)
     
     @scala.inline
-    def deleteMessageMaxParameterValueLength: Self = this.set("messageMaxParameterValueLength", js.undefined)
+    def setSlowThreshold(value: Double): Self = StObject.set(x, "slowThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageMaxQueryLength(value: Double): Self = this.set("messageMaxQueryLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageMaxQueryLength: Self = this.set("messageMaxQueryLength", js.undefined)
-    
-    @scala.inline
-    def setSlowThreshold(value: Double): Self = this.set("slowThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlowThreshold: Self = this.set("slowThreshold", js.undefined)
+    def setSlowThresholdUndefined: Self = StObject.set(x, "slowThreshold", js.undefined)
   }
 }

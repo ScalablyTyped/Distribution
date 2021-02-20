@@ -1,11 +1,12 @@
 package typings.awsSdk.iotthingsgraphMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetNamespaceDeletionStatusResponse extends js.Object {
+trait GetNamespaceDeletionStatusResponse extends StObject {
   
   /**
     * An error code returned by the namespace deletion task.
@@ -41,48 +42,36 @@ object GetNamespaceDeletionStatusResponse {
   }
   
   @scala.inline
-  implicit class GetNamespaceDeletionStatusResponseOps[Self <: GetNamespaceDeletionStatusResponse] (val x: Self) extends AnyVal {
+  implicit class GetNamespaceDeletionStatusResponseMutableBuilder[Self <: GetNamespaceDeletionStatusResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: NamespaceDeletionStatusErrorCodes): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: NamespaceDeletionStatusErrorCodes): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    def setNamespaceArn(value: Arn): Self = StObject.set(x, "namespaceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setNamespaceArnUndefined: Self = StObject.set(x, "namespaceArn", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    def setNamespaceName(value: NamespaceName): Self = StObject.set(x, "namespaceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespaceArn(value: Arn): Self = this.set("namespaceArn", value.asInstanceOf[js.Any])
+    def setNamespaceNameUndefined: Self = StObject.set(x, "namespaceName", js.undefined)
     
     @scala.inline
-    def deleteNamespaceArn: Self = this.set("namespaceArn", js.undefined)
+    def setStatus(value: NamespaceDeletionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespaceName(value: NamespaceName): Self = this.set("namespaceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespaceName: Self = this.set("namespaceName", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: NamespaceDeletionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

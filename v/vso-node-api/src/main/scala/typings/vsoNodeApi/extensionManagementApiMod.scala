@@ -14,23 +14,24 @@ import typings.vsoNodeApi.extensionManagementInterfacesMod.RequestedExtension
 import typings.vsoNodeApi.galleryInterfacesMod.UserExtensionPolicy
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vso-node-api/ExtensionManagementApi", JSImport.Namespace)
-@js.native
-object extensionManagementApiMod extends js.Object {
+object extensionManagementApiMod {
   
+  @JSImport("vso-node-api/ExtensionManagementApi", "ExtensionManagementApi")
   @js.native
   class ExtensionManagementApi protected () extends IExtensionManagementApi {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
   /* static members */
-  @js.native
-  object ExtensionManagementApi extends js.Object {
+  object ExtensionManagementApi {
     
+    @JSImport("vso-node-api/ExtensionManagementApi", "ExtensionManagementApi.RESOURCE_AREA_ID")
+    @js.native
     val RESOURCE_AREA_ID: String = js.native
   }
   

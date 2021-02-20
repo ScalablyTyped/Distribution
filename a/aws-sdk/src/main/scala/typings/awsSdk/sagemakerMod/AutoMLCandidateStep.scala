@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoMLCandidateStep extends js.Object {
+trait AutoMLCandidateStep extends StObject {
   
   /**
     * The ARN for the Candidate's step.
@@ -35,27 +36,15 @@ object AutoMLCandidateStep {
   }
   
   @scala.inline
-  implicit class AutoMLCandidateStepOps[Self <: AutoMLCandidateStep] (val x: Self) extends AnyVal {
+  implicit class AutoMLCandidateStepMutableBuilder[Self <: AutoMLCandidateStep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCandidateStepArn(value: CandidateStepArn): Self = StObject.set(x, "CandidateStepArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCandidateStepName(value: CandidateStepName): Self = StObject.set(x, "CandidateStepName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCandidateStepArn(value: CandidateStepArn): Self = this.set("CandidateStepArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCandidateStepName(value: CandidateStepName): Self = this.set("CandidateStepName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCandidateStepType(value: CandidateStepType): Self = this.set("CandidateStepType", value.asInstanceOf[js.Any])
+    def setCandidateStepType(value: CandidateStepType): Self = StObject.set(x, "CandidateStepType", value.asInstanceOf[js.Any])
   }
 }

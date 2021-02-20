@@ -5,14 +5,14 @@ import typings.jupyterlabApplication.layoutrestorerMod.ILayoutRestorer
 import typings.jupyterlabApplication.mod.JupyterFrontEnd
 import typings.jupyterlabApputils.commandpaletteMod.ICommandPalette
 import typings.luminoWidgets.mod.CommandPalette
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/apputils-extension/lib/palette", JSImport.Namespace)
-@js.native
-object paletteMod extends js.Object {
+object paletteMod {
   
+  @JSImport("@jupyterlab/apputils-extension/lib/palette", "Palette")
   @js.native
   class Palette protected () extends ICommandPalette {
     /**
@@ -25,17 +25,20 @@ object paletteMod extends js.Object {
     @JSName("placeholder")
     def placeholder_MPalette: String = js.native
   }
-  @js.native
-  object Palette extends js.Object {
+  object Palette {
     
     /**
       * Activate the command palette.
       */
+    @JSImport("@jupyterlab/apputils-extension/lib/palette", "Palette.activate")
+    @js.native
     def activate(app: JupyterFrontEnd[IShell]): ICommandPalette = js.native
     
     /**
       * Restore the command palette.
       */
+    @JSImport("@jupyterlab/apputils-extension/lib/palette", "Palette.restore")
+    @js.native
     def restore(app: JupyterFrontEnd[IShell], restorer: ILayoutRestorer): Unit = js.native
   }
 }

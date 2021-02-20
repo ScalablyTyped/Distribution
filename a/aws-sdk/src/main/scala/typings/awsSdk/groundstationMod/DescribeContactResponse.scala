@@ -1,11 +1,12 @@
 package typings.awsSdk.groundstationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeContactResponse extends js.Object {
+trait DescribeContactResponse extends StObject {
   
   /**
     * UUID of a contact.
@@ -86,105 +87,93 @@ object DescribeContactResponse {
   }
   
   @scala.inline
-  implicit class DescribeContactResponseOps[Self <: DescribeContactResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeContactResponseMutableBuilder[Self <: DescribeContactResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactIdUndefined: Self = StObject.set(x, "contactId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContactStatus(value: ContactStatus): Self = StObject.set(x, "contactStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactId(value: String): Self = this.set("contactId", value.asInstanceOf[js.Any])
+    def setContactStatusUndefined: Self = StObject.set(x, "contactStatus", js.undefined)
     
     @scala.inline
-    def deleteContactId: Self = this.set("contactId", js.undefined)
+    def setDataflowList(value: DataflowList): Self = StObject.set(x, "dataflowList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactStatus(value: ContactStatus): Self = this.set("contactStatus", value.asInstanceOf[js.Any])
+    def setDataflowListUndefined: Self = StObject.set(x, "dataflowList", js.undefined)
     
     @scala.inline
-    def deleteContactStatus: Self = this.set("contactStatus", js.undefined)
+    def setDataflowListVarargs(value: DataflowDetail*): Self = StObject.set(x, "dataflowList", js.Array(value :_*))
     
     @scala.inline
-    def setDataflowListVarargs(value: DataflowDetail*): Self = this.set("dataflowList", js.Array(value :_*))
+    def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataflowList(value: DataflowList): Self = this.set("dataflowList", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteDataflowList: Self = this.set("dataflowList", js.undefined)
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setGroundStation(value: String): Self = StObject.set(x, "groundStation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setGroundStationUndefined: Self = StObject.set(x, "groundStation", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    def setMaximumElevation(value: Elevation): Self = StObject.set(x, "maximumElevation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroundStation(value: String): Self = this.set("groundStation", value.asInstanceOf[js.Any])
+    def setMaximumElevationUndefined: Self = StObject.set(x, "maximumElevation", js.undefined)
     
     @scala.inline
-    def deleteGroundStation: Self = this.set("groundStation", js.undefined)
+    def setMissionProfileArn(value: MissionProfileArn): Self = StObject.set(x, "missionProfileArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumElevation(value: Elevation): Self = this.set("maximumElevation", value.asInstanceOf[js.Any])
+    def setMissionProfileArnUndefined: Self = StObject.set(x, "missionProfileArn", js.undefined)
     
     @scala.inline
-    def deleteMaximumElevation: Self = this.set("maximumElevation", js.undefined)
+    def setPostPassEndTime(value: Timestamp): Self = StObject.set(x, "postPassEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMissionProfileArn(value: MissionProfileArn): Self = this.set("missionProfileArn", value.asInstanceOf[js.Any])
+    def setPostPassEndTimeUndefined: Self = StObject.set(x, "postPassEndTime", js.undefined)
     
     @scala.inline
-    def deleteMissionProfileArn: Self = this.set("missionProfileArn", js.undefined)
+    def setPrePassStartTime(value: Timestamp): Self = StObject.set(x, "prePassStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostPassEndTime(value: Timestamp): Self = this.set("postPassEndTime", value.asInstanceOf[js.Any])
+    def setPrePassStartTimeUndefined: Self = StObject.set(x, "prePassStartTime", js.undefined)
     
     @scala.inline
-    def deletePostPassEndTime: Self = this.set("postPassEndTime", js.undefined)
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrePassStartTime(value: Timestamp): Self = this.set("prePassStartTime", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deletePrePassStartTime: Self = this.set("prePassStartTime", js.undefined)
+    def setSatelliteArn(value: satelliteArn): Self = StObject.set(x, "satelliteArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setSatelliteArnUndefined: Self = StObject.set(x, "satelliteArn", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSatelliteArn(value: satelliteArn): Self = this.set("satelliteArn", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteSatelliteArn: Self = this.set("satelliteArn", js.undefined)
+    def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagsMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

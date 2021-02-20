@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAddressesRequest extends js.Object {
+trait DescribeAddressesRequest extends StObject {
   
   /**
     * [EC2-VPC] Information about the allocation IDs.
@@ -36,51 +37,39 @@ object DescribeAddressesRequest {
   }
   
   @scala.inline
-  implicit class DescribeAddressesRequestOps[Self <: DescribeAddressesRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeAddressesRequestMutableBuilder[Self <: DescribeAddressesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocationIds(value: AllocationIdList): Self = StObject.set(x, "AllocationIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllocationIdsUndefined: Self = StObject.set(x, "AllocationIds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllocationIdsVarargs(value: AllocationId*): Self = StObject.set(x, "AllocationIds", js.Array(value :_*))
     
     @scala.inline
-    def setAllocationIdsVarargs(value: AllocationId*): Self = this.set("AllocationIds", js.Array(value :_*))
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocationIds(value: AllocationIdList): Self = this.set("AllocationIds", value.asInstanceOf[js.Any])
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def deleteAllocationIds: Self = this.set("AllocationIds", js.undefined)
+    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    def setPublicIps(value: PublicIpStringList): Self = StObject.set(x, "PublicIps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    def setPublicIpsUndefined: Self = StObject.set(x, "PublicIps", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("Filters", js.undefined)
-    
-    @scala.inline
-    def setPublicIpsVarargs(value: String*): Self = this.set("PublicIps", js.Array(value :_*))
-    
-    @scala.inline
-    def setPublicIps(value: PublicIpStringList): Self = this.set("PublicIps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicIps: Self = this.set("PublicIps", js.undefined)
+    def setPublicIpsVarargs(value: String*): Self = StObject.set(x, "PublicIps", js.Array(value :_*))
   }
 }

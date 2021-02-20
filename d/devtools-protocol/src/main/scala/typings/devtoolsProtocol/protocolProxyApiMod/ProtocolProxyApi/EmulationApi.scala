@@ -23,12 +23,13 @@ import typings.devtoolsProtocol.mod.Protocol.Emulation.SetUserAgentOverrideReque
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetVirtualTimePolicyRequest
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetVirtualTimePolicyResponse
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetVisibleSizeRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmulationApi extends js.Object {
+trait EmulationApi extends StObject {
   
   /**
     * Tells whether emulation is supported.
@@ -195,96 +196,84 @@ object EmulationApi {
   }
   
   @scala.inline
-  implicit class EmulationApiOps[Self <: EmulationApi] (val x: Self) extends AnyVal {
+  implicit class EmulationApiMutableBuilder[Self <: EmulationApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanEmulate(value: () => js.Promise[CanEmulateResponse]): Self = StObject.set(x, "canEmulate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearDeviceMetricsOverride(value: () => js.Promise[Unit]): Self = StObject.set(x, "clearDeviceMetricsOverride", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClearGeolocationOverride(value: () => js.Promise[Unit]): Self = StObject.set(x, "clearGeolocationOverride", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCanEmulate(value: () => js.Promise[CanEmulateResponse]): Self = this.set("canEmulate", js.Any.fromFunction0(value))
+    def setClearIdleOverride(value: () => js.Promise[Unit]): Self = StObject.set(x, "clearIdleOverride", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearDeviceMetricsOverride(value: () => js.Promise[Unit]): Self = this.set("clearDeviceMetricsOverride", js.Any.fromFunction0(value))
+    def setOn(value: (virtualTimeBudgetExpired, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClearGeolocationOverride(value: () => js.Promise[Unit]): Self = this.set("clearGeolocationOverride", js.Any.fromFunction0(value))
+    def setResetPageScaleFactor(value: () => js.Promise[Unit]): Self = StObject.set(x, "resetPageScaleFactor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearIdleOverride(value: () => js.Promise[Unit]): Self = this.set("clearIdleOverride", js.Any.fromFunction0(value))
+    def setSetCPUThrottlingRate(value: SetCPUThrottlingRateRequest => js.Promise[Unit]): Self = StObject.set(x, "setCPUThrottlingRate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOn(value: (virtualTimeBudgetExpired, js.Function0[Unit]) => Unit): Self = this.set("on", js.Any.fromFunction2(value))
+    def setSetDefaultBackgroundColorOverride(value: SetDefaultBackgroundColorOverrideRequest => js.Promise[Unit]): Self = StObject.set(x, "setDefaultBackgroundColorOverride", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResetPageScaleFactor(value: () => js.Promise[Unit]): Self = this.set("resetPageScaleFactor", js.Any.fromFunction0(value))
+    def setSetDeviceMetricsOverride(value: SetDeviceMetricsOverrideRequest => js.Promise[Unit]): Self = StObject.set(x, "setDeviceMetricsOverride", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetCPUThrottlingRate(value: SetCPUThrottlingRateRequest => js.Promise[Unit]): Self = this.set("setCPUThrottlingRate", js.Any.fromFunction1(value))
+    def setSetDocumentCookieDisabled(value: SetDocumentCookieDisabledRequest => js.Promise[Unit]): Self = StObject.set(x, "setDocumentCookieDisabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDefaultBackgroundColorOverride(value: SetDefaultBackgroundColorOverrideRequest => js.Promise[Unit]): Self = this.set("setDefaultBackgroundColorOverride", js.Any.fromFunction1(value))
+    def setSetEmitTouchEventsForMouse(value: SetEmitTouchEventsForMouseRequest => js.Promise[Unit]): Self = StObject.set(x, "setEmitTouchEventsForMouse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDeviceMetricsOverride(value: SetDeviceMetricsOverrideRequest => js.Promise[Unit]): Self = this.set("setDeviceMetricsOverride", js.Any.fromFunction1(value))
+    def setSetEmulatedMedia(value: SetEmulatedMediaRequest => js.Promise[Unit]): Self = StObject.set(x, "setEmulatedMedia", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDocumentCookieDisabled(value: SetDocumentCookieDisabledRequest => js.Promise[Unit]): Self = this.set("setDocumentCookieDisabled", js.Any.fromFunction1(value))
+    def setSetEmulatedVisionDeficiency(value: SetEmulatedVisionDeficiencyRequest => js.Promise[Unit]): Self = StObject.set(x, "setEmulatedVisionDeficiency", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetEmitTouchEventsForMouse(value: SetEmitTouchEventsForMouseRequest => js.Promise[Unit]): Self = this.set("setEmitTouchEventsForMouse", js.Any.fromFunction1(value))
+    def setSetFocusEmulationEnabled(value: SetFocusEmulationEnabledRequest => js.Promise[Unit]): Self = StObject.set(x, "setFocusEmulationEnabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetEmulatedMedia(value: SetEmulatedMediaRequest => js.Promise[Unit]): Self = this.set("setEmulatedMedia", js.Any.fromFunction1(value))
+    def setSetGeolocationOverride(value: SetGeolocationOverrideRequest => js.Promise[Unit]): Self = StObject.set(x, "setGeolocationOverride", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetEmulatedVisionDeficiency(value: SetEmulatedVisionDeficiencyRequest => js.Promise[Unit]): Self = this.set("setEmulatedVisionDeficiency", js.Any.fromFunction1(value))
+    def setSetIdleOverride(value: SetIdleOverrideRequest => js.Promise[Unit]): Self = StObject.set(x, "setIdleOverride", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFocusEmulationEnabled(value: SetFocusEmulationEnabledRequest => js.Promise[Unit]): Self = this.set("setFocusEmulationEnabled", js.Any.fromFunction1(value))
+    def setSetLocaleOverride(value: SetLocaleOverrideRequest => js.Promise[Unit]): Self = StObject.set(x, "setLocaleOverride", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetGeolocationOverride(value: SetGeolocationOverrideRequest => js.Promise[Unit]): Self = this.set("setGeolocationOverride", js.Any.fromFunction1(value))
+    def setSetNavigatorOverrides(value: SetNavigatorOverridesRequest => js.Promise[Unit]): Self = StObject.set(x, "setNavigatorOverrides", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetIdleOverride(value: SetIdleOverrideRequest => js.Promise[Unit]): Self = this.set("setIdleOverride", js.Any.fromFunction1(value))
+    def setSetPageScaleFactor(value: SetPageScaleFactorRequest => js.Promise[Unit]): Self = StObject.set(x, "setPageScaleFactor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLocaleOverride(value: SetLocaleOverrideRequest => js.Promise[Unit]): Self = this.set("setLocaleOverride", js.Any.fromFunction1(value))
+    def setSetScriptExecutionDisabled(value: SetScriptExecutionDisabledRequest => js.Promise[Unit]): Self = StObject.set(x, "setScriptExecutionDisabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetNavigatorOverrides(value: SetNavigatorOverridesRequest => js.Promise[Unit]): Self = this.set("setNavigatorOverrides", js.Any.fromFunction1(value))
+    def setSetScrollbarsHidden(value: SetScrollbarsHiddenRequest => js.Promise[Unit]): Self = StObject.set(x, "setScrollbarsHidden", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetPageScaleFactor(value: SetPageScaleFactorRequest => js.Promise[Unit]): Self = this.set("setPageScaleFactor", js.Any.fromFunction1(value))
+    def setSetTimezoneOverride(value: SetTimezoneOverrideRequest => js.Promise[Unit]): Self = StObject.set(x, "setTimezoneOverride", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetScriptExecutionDisabled(value: SetScriptExecutionDisabledRequest => js.Promise[Unit]): Self = this.set("setScriptExecutionDisabled", js.Any.fromFunction1(value))
+    def setSetTouchEmulationEnabled(value: SetTouchEmulationEnabledRequest => js.Promise[Unit]): Self = StObject.set(x, "setTouchEmulationEnabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetScrollbarsHidden(value: SetScrollbarsHiddenRequest => js.Promise[Unit]): Self = this.set("setScrollbarsHidden", js.Any.fromFunction1(value))
+    def setSetUserAgentOverride(value: SetUserAgentOverrideRequest => js.Promise[Unit]): Self = StObject.set(x, "setUserAgentOverride", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetTimezoneOverride(value: SetTimezoneOverrideRequest => js.Promise[Unit]): Self = this.set("setTimezoneOverride", js.Any.fromFunction1(value))
+    def setSetVirtualTimePolicy(value: SetVirtualTimePolicyRequest => js.Promise[SetVirtualTimePolicyResponse]): Self = StObject.set(x, "setVirtualTimePolicy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetTouchEmulationEnabled(value: SetTouchEmulationEnabledRequest => js.Promise[Unit]): Self = this.set("setTouchEmulationEnabled", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetUserAgentOverride(value: SetUserAgentOverrideRequest => js.Promise[Unit]): Self = this.set("setUserAgentOverride", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetVirtualTimePolicy(value: SetVirtualTimePolicyRequest => js.Promise[SetVirtualTimePolicyResponse]): Self = this.set("setVirtualTimePolicy", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetVisibleSize(value: SetVisibleSizeRequest => js.Promise[Unit]): Self = this.set("setVisibleSize", js.Any.fromFunction1(value))
+    def setSetVisibleSize(value: SetVisibleSizeRequest => js.Promise[Unit]): Self = StObject.set(x, "setVisibleSize", js.Any.fromFunction1(value))
   }
 }

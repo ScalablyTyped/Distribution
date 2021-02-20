@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationSubscriptionUpdateParameters extends js.Object {
+trait NotificationSubscriptionUpdateParameters extends StObject {
   
   /**
     * Admin-managed settings for the subscription. Only applies to subscriptions where the subscriber is a group.
@@ -65,42 +66,30 @@ object NotificationSubscriptionUpdateParameters {
   }
   
   @scala.inline
-  implicit class NotificationSubscriptionUpdateParametersOps[Self <: NotificationSubscriptionUpdateParameters] (val x: Self) extends AnyVal {
+  implicit class NotificationSubscriptionUpdateParametersMutableBuilder[Self <: NotificationSubscriptionUpdateParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminSettings(value: SubscriptionAdminSettings): Self = StObject.set(x, "adminSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannel(value: ISubscriptionChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminSettings(value: SubscriptionAdminSettings): Self = this.set("adminSettings", value.asInstanceOf[js.Any])
+    def setFilter(value: ISubscriptionFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannel(value: ISubscriptionChannel): Self = this.set("channel", value.asInstanceOf[js.Any])
+    def setScope(value: SubscriptionScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setStatus(value: SubscriptionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: ISubscriptionFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: SubscriptionScope): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: SubscriptionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserSettings(value: SubscriptionUserSettings): Self = this.set("userSettings", value.asInstanceOf[js.Any])
+    def setUserSettings(value: SubscriptionUserSettings): Self = StObject.set(x, "userSettings", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.rascal.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChannelMax extends js.Object {
+trait ChannelMax extends StObject {
   
   var channelMax: Double = js.native
   
@@ -22,27 +23,15 @@ object ChannelMax {
   }
   
   @scala.inline
-  implicit class ChannelMaxOps[Self <: ChannelMax] (val x: Self) extends AnyVal {
+  implicit class ChannelMaxMutableBuilder[Self <: ChannelMax] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelMax(value: Double): Self = StObject.set(x, "channelMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnection_timeout(value: Double): Self = StObject.set(x, "connection_timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChannelMax(value: Double): Self = this.set("channelMax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConnection_timeout(value: Double): Self = this.set("connection_timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeartbeat(value: Double): Self = this.set("heartbeat", value.asInstanceOf[js.Any])
+    def setHeartbeat(value: Double): Self = StObject.set(x, "heartbeat", value.asInstanceOf[js.Any])
   }
 }

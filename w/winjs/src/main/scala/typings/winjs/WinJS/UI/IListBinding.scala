@@ -1,5 +1,6 @@
 package typings.winjs.WinJS.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Retrieves items from a IListDataSource, enumerates the contents of a IListDataSource, and can optionally register for change notifications.
   **/
 @js.native
-trait IListBinding[T] extends js.Object {
+trait IListBinding[T] extends StObject {
   
   //#region Methods
   /**

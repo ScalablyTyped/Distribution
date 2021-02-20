@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociationOverview extends js.Object {
+trait AssociationOverview extends StObject {
   
   /**
     * Returns the number of targets for the association status. For example, if you created an association with two instances, and one of them was successful, this would return the count of instances by status.
@@ -31,36 +32,24 @@ object AssociationOverview {
   }
   
   @scala.inline
-  implicit class AssociationOverviewOps[Self <: AssociationOverview] (val x: Self) extends AnyVal {
+  implicit class AssociationOverviewMutableBuilder[Self <: AssociationOverview] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociationStatusAggregatedCount(value: AssociationStatusAggregatedCount): Self = StObject.set(x, "AssociationStatusAggregatedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociationStatusAggregatedCountUndefined: Self = StObject.set(x, "AssociationStatusAggregatedCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetailedStatus(value: StatusName): Self = StObject.set(x, "DetailedStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationStatusAggregatedCount(value: AssociationStatusAggregatedCount): Self = this.set("AssociationStatusAggregatedCount", value.asInstanceOf[js.Any])
+    def setDetailedStatusUndefined: Self = StObject.set(x, "DetailedStatus", js.undefined)
     
     @scala.inline
-    def deleteAssociationStatusAggregatedCount: Self = this.set("AssociationStatusAggregatedCount", js.undefined)
+    def setStatus(value: StatusName): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailedStatus(value: StatusName): Self = this.set("DetailedStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetailedStatus: Self = this.set("DetailedStatus", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: StatusName): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -9,12 +9,13 @@ import typings.maximMazurokGapiClientMl.anon.KeyName
 import typings.maximMazurokGapiClientMl.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientMl.anon.Oauthtoken
 import typings.maximMazurokGapiClientMl.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModelsResource extends js.Object {
+trait ModelsResource extends StObject {
   
   def create(request: Fields, body: GoogleCloudMlV1Model): Request[GoogleCloudMlV1Model] = js.native
   /**

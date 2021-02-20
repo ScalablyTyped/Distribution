@@ -1,11 +1,12 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaManagedInstanceInstanceHealth extends js.Object {
+trait SchemaManagedInstanceInstanceHealth extends StObject {
   
   /**
     * [Output Only] The current detailed instance health state.
@@ -32,36 +33,24 @@ object SchemaManagedInstanceInstanceHealth {
   }
   
   @scala.inline
-  implicit class SchemaManagedInstanceInstanceHealthOps[Self <: SchemaManagedInstanceInstanceHealth] (val x: Self) extends AnyVal {
+  implicit class SchemaManagedInstanceInstanceHealthMutableBuilder[Self <: SchemaManagedInstanceInstanceHealth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetailedHealthState(value: String): Self = StObject.set(x, "detailedHealthState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetailedHealthStateUndefined: Self = StObject.set(x, "detailedHealthState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHealthCheck(value: String): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailedHealthState(value: String): Self = this.set("detailedHealthState", value.asInstanceOf[js.Any])
+    def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
     
     @scala.inline
-    def deleteDetailedHealthState: Self = this.set("detailedHealthState", js.undefined)
+    def setHealthState(value: String): Self = StObject.set(x, "healthState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthCheck(value: String): Self = this.set("healthCheck", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHealthCheck: Self = this.set("healthCheck", js.undefined)
-    
-    @scala.inline
-    def setHealthState(value: String): Self = this.set("healthState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHealthState: Self = this.set("healthState", js.undefined)
+    def setHealthStateUndefined: Self = StObject.set(x, "healthState", js.undefined)
   }
 }

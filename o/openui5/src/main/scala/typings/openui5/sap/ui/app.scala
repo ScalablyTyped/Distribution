@@ -5,13 +5,12 @@ import typings.openui5.sap.ui.core.Component
 import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.UIComponent
 import typings.openui5.sap.ui.model.Model
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.app")
-@js.native
-object app extends js.Object {
+object app {
   
   @js.native
   trait Application extends Component {

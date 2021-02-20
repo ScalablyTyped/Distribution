@@ -1,11 +1,12 @@
 package typings.awsSdk.translateMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobDetails extends js.Object {
+trait JobDetails extends StObject {
   
   /**
     * The number of documents that could not be processed during a translation job.
@@ -31,36 +32,24 @@ object JobDetails {
   }
   
   @scala.inline
-  implicit class JobDetailsOps[Self <: JobDetails] (val x: Self) extends AnyVal {
+  implicit class JobDetailsMutableBuilder[Self <: JobDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentsWithErrorsCount(value: Integer): Self = StObject.set(x, "DocumentsWithErrorsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentsWithErrorsCountUndefined: Self = StObject.set(x, "DocumentsWithErrorsCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputDocumentsCount(value: Integer): Self = StObject.set(x, "InputDocumentsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentsWithErrorsCount(value: Integer): Self = this.set("DocumentsWithErrorsCount", value.asInstanceOf[js.Any])
+    def setInputDocumentsCountUndefined: Self = StObject.set(x, "InputDocumentsCount", js.undefined)
     
     @scala.inline
-    def deleteDocumentsWithErrorsCount: Self = this.set("DocumentsWithErrorsCount", js.undefined)
+    def setTranslatedDocumentsCount(value: Integer): Self = StObject.set(x, "TranslatedDocumentsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputDocumentsCount(value: Integer): Self = this.set("InputDocumentsCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputDocumentsCount: Self = this.set("InputDocumentsCount", js.undefined)
-    
-    @scala.inline
-    def setTranslatedDocumentsCount(value: Integer): Self = this.set("TranslatedDocumentsCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslatedDocumentsCount: Self = this.set("TranslatedDocumentsCount", js.undefined)
+    def setTranslatedDocumentsCountUndefined: Self = StObject.set(x, "TranslatedDocumentsCount", js.undefined)
   }
 }

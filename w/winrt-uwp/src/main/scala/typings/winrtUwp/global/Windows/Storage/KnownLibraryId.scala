@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Provides values that identify storage libraries. */
 @JSGlobal("Windows.Storage.KnownLibraryId")
 @js.native
-object KnownLibraryId extends js.Object {
+object KnownLibraryId extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.KnownLibraryId with Double] = js.native

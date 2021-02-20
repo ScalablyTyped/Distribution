@@ -1,31 +1,28 @@
 package typings.evernote.mod.Types
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BusinessInvitationStatus extends js.Object
+sealed trait BusinessInvitationStatus extends StObject
 @JSImport("evernote", "Types.BusinessInvitationStatus")
 @js.native
-object BusinessInvitationStatus extends js.Object {
+object BusinessInvitationStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BusinessInvitationStatus with Double] = js.native
   
   @js.native
   sealed trait APPROVED extends BusinessInvitationStatus
-  /* 0 */ @js.native
-  object APPROVED extends TopLevel[APPROVED with Double]
+  /* 0 */ val APPROVED: typings.evernote.mod.Types.BusinessInvitationStatus.APPROVED with Double = js.native
   
   @js.native
   sealed trait REDEEMED extends BusinessInvitationStatus
-  /* 2 */ @js.native
-  object REDEEMED extends TopLevel[REDEEMED with Double]
+  /* 2 */ val REDEEMED: typings.evernote.mod.Types.BusinessInvitationStatus.REDEEMED with Double = js.native
   
   @js.native
   sealed trait REQUESTED extends BusinessInvitationStatus
-  /* 1 */ @js.native
-  object REQUESTED extends TopLevel[REQUESTED with Double]
+  /* 1 */ val REQUESTED: typings.evernote.mod.Types.BusinessInvitationStatus.REQUESTED with Double = js.native
 }

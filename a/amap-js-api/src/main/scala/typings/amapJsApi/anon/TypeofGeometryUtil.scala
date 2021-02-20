@@ -3,12 +3,13 @@ package typings.amapJsApi.anon
 import typings.amapJsApi.AMap.LngLat
 import typings.amapJsApi.AMap.LocationValue
 import typings.amapJsApi.AMap.Pixel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofGeometryUtil extends js.Object {
+trait TypeofGeometryUtil extends StObject {
   
   /**
     * 计算line上距离P最近的点

@@ -2,12 +2,13 @@ package typings.tuyaPanelKit.mod
 
 import typings.tuyaPanelKit.anon.NavigationAny
 import typings.tuyaPanelKit.stackTypesMod.StackNavigationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationParam extends js.Object {
+trait NavigationParam extends StObject {
   
   var router: js.Array[NavigationRoute] = js.native
   
@@ -22,33 +23,21 @@ object NavigationParam {
   }
   
   @scala.inline
-  implicit class NavigationParamOps[Self <: NavigationParam] (val x: Self) extends AnyVal {
+  implicit class NavigationParamMutableBuilder[Self <: NavigationParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRouter(value: js.Array[NavigationRoute]): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRouterVarargs(value: NavigationRoute*): Self = StObject.set(x, "router", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScreenOptions(value: ScreenOptions): Self = StObject.set(x, "screenOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouterVarargs(value: NavigationRoute*): Self = this.set("router", js.Array(value :_*))
+    def setScreenOptionsFunction1(value: /* props */ NavigationAny => StackNavigationOptions): Self = StObject.set(x, "screenOptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRouter(value: js.Array[NavigationRoute]): Self = this.set("router", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScreenOptionsFunction1(value: /* props */ NavigationAny => StackNavigationOptions): Self = this.set("screenOptions", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setScreenOptions(value: ScreenOptions): Self = this.set("screenOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreenOptions: Self = this.set("screenOptions", js.undefined)
+    def setScreenOptionsUndefined: Self = StObject.set(x, "screenOptions", js.undefined)
   }
 }

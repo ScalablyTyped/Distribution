@@ -1,13 +1,16 @@
 package typings.devcert
 
 import typings.devcert.platformsMod.Platform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devcert/dist/platforms/win32", JSImport.Namespace)
-@js.native
-object win32Mod extends js.Object {
+object win32Mod {
+  
+  @JSImport("devcert/dist/platforms/win32", JSImport.Default)
+  @js.native
+  class default () extends WindowsPlatform
   
   @js.native
   trait WindowsPlatform extends Platform {
@@ -18,7 +21,4 @@ object win32Mod extends js.Object {
     
     var encrypt: js.Any = js.native
   }
-  
-  @js.native
-  class default () extends WindowsPlatform
 }

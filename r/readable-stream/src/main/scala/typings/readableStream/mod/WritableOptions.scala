@@ -4,13 +4,14 @@ import typings.node.BufferEncoding
 import typings.readableStream.anon.Chunk
 import typings.std.ArrayLike
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined readable-stream.readable-stream.WritableStateOptions & {  write :(this : readable-stream.readable-stream.Writable, chunk : any, encoding : node.BufferEncoding | string, callback : (error : std.Error | null | undefined): void): void | undefined,   writev :(this : readable-stream.readable-stream.Writable, chunk : std.ArrayLike<{  chunk :any,   encoding :node.BufferEncoding | string}>, callback : (error : std.Error | null | undefined): void): void | undefined,   destroy :(this : readable-stream.readable-stream.Writable, error : std.Error | null, callback : (error : std.Error | null): void): void | undefined,   final :(this : readable-stream.readable-stream.Writable, callback : (error : std.Error | null | undefined): void): void | undefined} */
 @js.native
-trait WritableOptions extends js.Object {
+trait WritableOptions extends StObject {
   
   var decodeStrings: js.UndefOr[Boolean] = js.native
   
@@ -69,31 +70,19 @@ object WritableOptions {
   }
   
   @scala.inline
-  implicit class WritableOptionsOps[Self <: WritableOptions] (val x: Self) extends AnyVal {
+  implicit class WritableOptionsMutableBuilder[Self <: WritableOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecodeStrings(value: Boolean): Self = StObject.set(x, "decodeStrings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecodeStringsUndefined: Self = StObject.set(x, "decodeStrings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultEncoding(value: BufferEncoding): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecodeStrings(value: Boolean): Self = this.set("decodeStrings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDecodeStrings: Self = this.set("decodeStrings", js.undefined)
-    
-    @scala.inline
-    def setDefaultEncoding(value: BufferEncoding): Self = this.set("defaultEncoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultEncoding: Self = this.set("defaultEncoding", js.undefined)
+    def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
     
     @scala.inline
     def setDestroy(
@@ -103,10 +92,10 @@ object WritableOptions {
           /* callback */ js.Function1[/* error */ Error | Null, Unit], 
           Unit
         ]
-    ): Self = this.set("destroy", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     @scala.inline
     def setFinal(
@@ -115,34 +104,34 @@ object WritableOptions {
           /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-    ): Self = this.set("final", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFinal: Self = this.set("final", js.undefined)
+    def setFinalUndefined: Self = StObject.set(x, "final", js.undefined)
     
     @scala.inline
-    def setHighWaterMark(value: Double): Self = this.set("highWaterMark", value.asInstanceOf[js.Any])
+    def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHighWaterMark: Self = this.set("highWaterMark", js.undefined)
+    def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
     
     @scala.inline
-    def setObjectMode(value: Boolean): Self = this.set("objectMode", value.asInstanceOf[js.Any])
+    def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteObjectMode: Self = this.set("objectMode", js.undefined)
+    def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
     
     @scala.inline
-    def setWritableHighWaterMark(value: Double): Self = this.set("writableHighWaterMark", value.asInstanceOf[js.Any])
+    def setWritableHighWaterMark(value: Double): Self = StObject.set(x, "writableHighWaterMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWritableHighWaterMark: Self = this.set("writableHighWaterMark", js.undefined)
+    def setWritableHighWaterMarkUndefined: Self = StObject.set(x, "writableHighWaterMark", js.undefined)
     
     @scala.inline
-    def setWritableObjectMode(value: Boolean): Self = this.set("writableObjectMode", value.asInstanceOf[js.Any])
+    def setWritableObjectMode(value: Boolean): Self = StObject.set(x, "writableObjectMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWritableObjectMode: Self = this.set("writableObjectMode", js.undefined)
+    def setWritableObjectModeUndefined: Self = StObject.set(x, "writableObjectMode", js.undefined)
     
     @scala.inline
     def setWrite(
@@ -153,10 +142,10 @@ object WritableOptions {
           /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-    ): Self = this.set("write", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWrite: Self = this.set("write", js.undefined)
+    def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
     
     @scala.inline
     def setWritev(
@@ -166,9 +155,9 @@ object WritableOptions {
           /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-    ): Self = this.set("writev", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "writev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWritev: Self = this.set("writev", js.undefined)
+    def setWritevUndefined: Self = StObject.set(x, "writev", js.undefined)
   }
 }

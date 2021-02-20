@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NxFieldDescription...
   */
 @js.native
-trait INxFieldDescription extends js.Object {
+trait INxFieldDescription extends StObject {
   
   /**
     * If set to true a logical AND (instead of a logical OR) is used when making selections in a field.
@@ -89,57 +90,45 @@ object INxFieldDescription {
   }
   
   @scala.inline
-  implicit class INxFieldDescriptionOps[Self <: INxFieldDescription] (val x: Self) extends AnyVal {
+  implicit class INxFieldDescriptionMutableBuilder[Self <: INxFieldDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQAndMode(value: Boolean): Self = StObject.set(x, "qAndMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQAndModeUndefined: Self = StObject.set(x, "qAndMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQCardinal(value: Double): Self = StObject.set(x, "qCardinal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQCardinal(value: Double): Self = this.set("qCardinal", value.asInstanceOf[js.Any])
+    def setQDerivedFieldData(value: INxDerivedFieldDescriptionList): Self = StObject.set(x, "qDerivedFieldData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDerivedFieldData(value: INxDerivedFieldDescriptionList): Self = this.set("qDerivedFieldData", value.asInstanceOf[js.Any])
+    def setQIsDefinitionOnly(value: Boolean): Self = StObject.set(x, "qIsDefinitionOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIsDefinitionOnly(value: Boolean): Self = this.set("qIsDefinitionOnly", value.asInstanceOf[js.Any])
+    def setQIsDetail(value: Boolean): Self = StObject.set(x, "qIsDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIsDetail(value: Boolean): Self = this.set("qIsDetail", value.asInstanceOf[js.Any])
+    def setQIsHidden(value: Boolean): Self = StObject.set(x, "qIsHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIsHidden(value: Boolean): Self = this.set("qIsHidden", value.asInstanceOf[js.Any])
+    def setQIsImplicit(value: Boolean): Self = StObject.set(x, "qIsImplicit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIsImplicit(value: Boolean): Self = this.set("qIsImplicit", value.asInstanceOf[js.Any])
+    def setQIsSemantic(value: Boolean): Self = StObject.set(x, "qIsSemantic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIsSemantic(value: Boolean): Self = this.set("qIsSemantic", value.asInstanceOf[js.Any])
+    def setQIsSystem(value: Boolean): Self = StObject.set(x, "qIsSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIsSystem(value: Boolean): Self = this.set("qIsSystem", value.asInstanceOf[js.Any])
+    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQName(value: String): Self = this.set("qName", value.asInstanceOf[js.Any])
+    def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQTagsVarargs(value: String*): Self = this.set("qTags", js.Array(value :_*))
-    
-    @scala.inline
-    def setQTags(value: js.Array[String]): Self = this.set("qTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQAndMode(value: Boolean): Self = this.set("qAndMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQAndMode: Self = this.set("qAndMode", js.undefined)
+    def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
   }
 }

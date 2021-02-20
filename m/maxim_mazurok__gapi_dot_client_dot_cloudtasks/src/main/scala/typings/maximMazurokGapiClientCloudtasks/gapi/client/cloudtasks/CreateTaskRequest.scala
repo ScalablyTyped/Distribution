@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudtasks.gapi.client.cloudtasks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateTaskRequest extends js.Object {
+trait CreateTaskRequest extends StObject {
   
   /**
     * The response_view specifies which subset of the Task will be returned. By default response_view is BASIC; not all information is retrieved by default because some data, such as
@@ -36,30 +37,18 @@ object CreateTaskRequest {
   }
   
   @scala.inline
-  implicit class CreateTaskRequestOps[Self <: CreateTaskRequest] (val x: Self) extends AnyVal {
+  implicit class CreateTaskRequestMutableBuilder[Self <: CreateTaskRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResponseView(value: String): Self = StObject.set(x, "responseView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResponseViewUndefined: Self = StObject.set(x, "responseView", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTask(value: Task): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseView(value: String): Self = this.set("responseView", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseView: Self = this.set("responseView", js.undefined)
-    
-    @scala.inline
-    def setTask(value: Task): Self = this.set("task", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTask: Self = this.set("task", js.undefined)
+    def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
   }
 }

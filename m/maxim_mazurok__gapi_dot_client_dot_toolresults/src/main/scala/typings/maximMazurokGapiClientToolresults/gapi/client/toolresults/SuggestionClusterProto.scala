@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SuggestionClusterProto extends js.Object {
+trait SuggestionClusterProto extends StObject {
   
   /** Category in which these types of suggestions should appear. Always set. */
   var category: js.UndefOr[String] = js.native
@@ -25,33 +26,21 @@ object SuggestionClusterProto {
   }
   
   @scala.inline
-  implicit class SuggestionClusterProtoOps[Self <: SuggestionClusterProto] (val x: Self) extends AnyVal {
+  implicit class SuggestionClusterProtoMutableBuilder[Self <: SuggestionClusterProto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSuggestions(value: js.Array[SuggestionProto]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
-    
-    @scala.inline
-    def setSuggestionsVarargs(value: SuggestionProto*): Self = this.set("suggestions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSuggestions(value: js.Array[SuggestionProto]): Self = this.set("suggestions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestions: Self = this.set("suggestions", js.undefined)
+    def setSuggestionsVarargs(value: SuggestionProto*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
   }
 }

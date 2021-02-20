@@ -3,12 +3,13 @@ package typings.googleapis.plusDomainsV1Mod.plusDomainsV1
 import typings.googleapis.anon.Attachments
 import typings.googleapis.anon.ClientSpecificActorInfo
 import typings.googleapis.anon.Title
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaActivity extends js.Object {
+trait SchemaActivity extends StObject {
   
   /**
     * Identifies who has access to see this activity.
@@ -129,138 +130,126 @@ object SchemaActivity {
   }
   
   @scala.inline
-  implicit class SchemaActivityOps[Self <: SchemaActivity] (val x: Self) extends AnyVal {
+  implicit class SchemaActivityMutableBuilder[Self <: SchemaActivity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccess(value: SchemaAcl): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActor(value: ClientSpecificActorInfo): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccess(value: SchemaAcl): Self = this.set("access", value.asInstanceOf[js.Any])
+    def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
     
     @scala.inline
-    def deleteAccess: Self = this.set("access", js.undefined)
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActor(value: ClientSpecificActorInfo): Self = this.set("actor", value.asInstanceOf[js.Any])
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def deleteActor: Self = this.set("actor", js.undefined)
+    def setAnnotation(value: String): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setAnnotationUndefined: Self = StObject.set(x, "annotation", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setCrosspostSource(value: String): Self = StObject.set(x, "crosspostSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotation(value: String): Self = this.set("annotation", value.asInstanceOf[js.Any])
+    def setCrosspostSourceUndefined: Self = StObject.set(x, "crosspostSource", js.undefined)
     
     @scala.inline
-    def deleteAnnotation: Self = this.set("annotation", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrosspostSource(value: String): Self = this.set("crosspostSource", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteCrosspostSource: Self = this.set("crosspostSource", js.undefined)
+    def setGeocode(value: String): Self = StObject.set(x, "geocode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setGeocodeUndefined: Self = StObject.set(x, "geocode", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeocode(value: String): Self = this.set("geocode", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGeocode: Self = this.set("geocode", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLocation(value: SchemaPlace): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setObject(value: Attachments): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: SchemaPlace): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: Attachments): Self = this.set("object", value.asInstanceOf[js.Any])
+    def setPlaceIdUndefined: Self = StObject.set(x, "placeId", js.undefined)
     
     @scala.inline
-    def deleteObject: Self = this.set("object", js.undefined)
+    def setPlaceName(value: String): Self = StObject.set(x, "placeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceId(value: String): Self = this.set("placeId", value.asInstanceOf[js.Any])
+    def setPlaceNameUndefined: Self = StObject.set(x, "placeName", js.undefined)
     
     @scala.inline
-    def deletePlaceId: Self = this.set("placeId", js.undefined)
+    def setProvider(value: Title): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceName(value: String): Self = this.set("placeName", value.asInstanceOf[js.Any])
+    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
     @scala.inline
-    def deletePlaceName: Self = this.set("placeName", js.undefined)
+    def setPublished(value: String): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvider(value: Title): Self = this.set("provider", value.asInstanceOf[js.Any])
+    def setPublishedUndefined: Self = StObject.set(x, "published", js.undefined)
     
     @scala.inline
-    def deleteProvider: Self = this.set("provider", js.undefined)
+    def setRadius(value: String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublished(value: String): Self = this.set("published", value.asInstanceOf[js.Any])
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def deletePublished: Self = this.set("published", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: String): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteUpdated: Self = this.set("updated", js.undefined)
+    def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setVerb(value: String): Self = this.set("verb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerb: Self = this.set("verb", js.undefined)
+    def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
   }
 }

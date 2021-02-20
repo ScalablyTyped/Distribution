@@ -13,13 +13,14 @@ import typings.std.MouseEvent
 import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<office-ui-fabric-react.office-ui-fabric-react/lib/components/Coachmark/Coachmark.types.ICoachmarkProps> */
 @js.native
-trait PartialICoachmarkProps extends js.Object {
+trait PartialICoachmarkProps extends StObject {
   
   var ariaAlertText: js.UndefOr[String] = js.native
   
@@ -98,240 +99,228 @@ object PartialICoachmarkProps {
   }
   
   @scala.inline
-  implicit class PartialICoachmarkPropsOps[Self <: PartialICoachmarkProps] (val x: Self) extends AnyVal {
+  implicit class PartialICoachmarkPropsMutableBuilder[Self <: PartialICoachmarkProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAriaAlertText(value: String): Self = StObject.set(x, "ariaAlertText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAriaAlertTextUndefined: Self = StObject.set(x, "ariaAlertText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAriaAlertText(value: String): Self = this.set("ariaAlertText", value.asInstanceOf[js.Any])
+    def setAriaDescribedByText(value: String): Self = StObject.set(x, "ariaDescribedByText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAriaAlertText: Self = this.set("ariaAlertText", js.undefined)
+    def setAriaDescribedByTextUndefined: Self = StObject.set(x, "ariaDescribedByText", js.undefined)
     
     @scala.inline
-    def setAriaDescribedBy(value: String): Self = this.set("ariaDescribedBy", value.asInstanceOf[js.Any])
+    def setAriaDescribedByUndefined: Self = StObject.set(x, "ariaDescribedBy", js.undefined)
     
     @scala.inline
-    def deleteAriaDescribedBy: Self = this.set("ariaDescribedBy", js.undefined)
+    def setAriaLabelledBy(value: String): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAriaDescribedByText(value: String): Self = this.set("ariaDescribedByText", value.asInstanceOf[js.Any])
+    def setAriaLabelledByText(value: String): Self = StObject.set(x, "ariaLabelledByText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAriaDescribedByText: Self = this.set("ariaDescribedByText", js.undefined)
+    def setAriaLabelledByTextUndefined: Self = StObject.set(x, "ariaLabelledByText", js.undefined)
     
     @scala.inline
-    def setAriaLabelledBy(value: String): Self = this.set("ariaLabelledBy", value.asInstanceOf[js.Any])
+    def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
     
     @scala.inline
-    def deleteAriaLabelledBy: Self = this.set("ariaLabelledBy", js.undefined)
+    def setBeaconColorOne(value: String): Self = StObject.set(x, "beaconColorOne", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAriaLabelledByText(value: String): Self = this.set("ariaLabelledByText", value.asInstanceOf[js.Any])
+    def setBeaconColorOneUndefined: Self = StObject.set(x, "beaconColorOne", js.undefined)
     
     @scala.inline
-    def deleteAriaLabelledByText: Self = this.set("ariaLabelledByText", js.undefined)
+    def setBeaconColorTwo(value: String): Self = StObject.set(x, "beaconColorTwo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeaconColorOne(value: String): Self = this.set("beaconColorOne", value.asInstanceOf[js.Any])
+    def setBeaconColorTwoUndefined: Self = StObject.set(x, "beaconColorTwo", js.undefined)
     
     @scala.inline
-    def deleteBeaconColorOne: Self = this.set("beaconColorOne", js.undefined)
+    def setBeakHeight(value: Double): Self = StObject.set(x, "beakHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeaconColorTwo(value: String): Self = this.set("beaconColorTwo", value.asInstanceOf[js.Any])
+    def setBeakHeightUndefined: Self = StObject.set(x, "beakHeight", js.undefined)
     
     @scala.inline
-    def deleteBeaconColorTwo: Self = this.set("beaconColorTwo", js.undefined)
+    def setBeakWidth(value: Double): Self = StObject.set(x, "beakWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeakHeight(value: Double): Self = this.set("beakHeight", value.asInstanceOf[js.Any])
+    def setBeakWidthUndefined: Self = StObject.set(x, "beakWidth", js.undefined)
     
     @scala.inline
-    def deleteBeakHeight: Self = this.set("beakHeight", js.undefined)
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeakWidth(value: Double): Self = this.set("beakWidth", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteBeakWidth: Self = this.set("beakWidth", js.undefined)
+    def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapsed(value: Boolean): Self = this.set("collapsed", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteCollapsed: Self = this.set("collapsed", js.undefined)
+    def setComponentRef(value: IRefObject[ICoachmark]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setComponentRefFunction1(value: /* ref */ ICoachmark | Null => scala.Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
     
     @scala.inline
-    def setComponentRefFunction1(value: /* ref */ ICoachmark | Null => scala.Unit): Self = this.set("componentRef", js.Any.fromFunction1(value))
+    def setDelayBeforeCoachmarkAnimation(value: Double): Self = StObject.set(x, "delayBeforeCoachmarkAnimation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentRef(value: IRefObject[ICoachmark]): Self = this.set("componentRef", value.asInstanceOf[js.Any])
+    def setDelayBeforeCoachmarkAnimationUndefined: Self = StObject.set(x, "delayBeforeCoachmarkAnimation", js.undefined)
     
     @scala.inline
-    def deleteComponentRef: Self = this.set("componentRef", js.undefined)
+    def setDelayBeforeMouseOpen(value: Double): Self = StObject.set(x, "delayBeforeMouseOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelayBeforeCoachmarkAnimation(value: Double): Self = this.set("delayBeforeCoachmarkAnimation", value.asInstanceOf[js.Any])
+    def setDelayBeforeMouseOpenUndefined: Self = StObject.set(x, "delayBeforeMouseOpen", js.undefined)
     
     @scala.inline
-    def deleteDelayBeforeCoachmarkAnimation: Self = this.set("delayBeforeCoachmarkAnimation", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelayBeforeMouseOpen(value: Double): Self = this.set("delayBeforeMouseOpen", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteDelayBeforeMouseOpen: Self = this.set("delayBeforeMouseOpen", js.undefined)
+    def setIsCollapsed(value: Boolean): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIsCollapsedUndefined: Self = StObject.set(x, "isCollapsed", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setIsPositionForced(value: Boolean): Self = StObject.set(x, "isPositionForced", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCollapsed(value: Boolean): Self = this.set("isCollapsed", value.asInstanceOf[js.Any])
+    def setIsPositionForcedUndefined: Self = StObject.set(x, "isPositionForced", js.undefined)
     
     @scala.inline
-    def deleteIsCollapsed: Self = this.set("isCollapsed", js.undefined)
+    def setKey(value: typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPositionForced(value: Boolean): Self = this.set("isPositionForced", value.asInstanceOf[js.Any])
+    def setKeyNull: Self = StObject.set(x, "key", null)
     
     @scala.inline
-    def deleteIsPositionForced: Self = this.set("isPositionForced", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setKey(value: typings.react.mod.Key): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setMouseProximityOffset(value: Double): Self = StObject.set(x, "mouseProximityOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setMouseProximityOffsetUndefined: Self = StObject.set(x, "mouseProximityOffset", js.undefined)
     
     @scala.inline
-    def setKeyNull: Self = this.set("key", null)
+    def setOnAnimationOpenEnd(value: () => scala.Unit): Self = StObject.set(x, "onAnimationOpenEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMouseProximityOffset(value: Double): Self = this.set("mouseProximityOffset", value.asInstanceOf[js.Any])
+    def setOnAnimationOpenEndUndefined: Self = StObject.set(x, "onAnimationOpenEnd", js.undefined)
     
     @scala.inline
-    def deleteMouseProximityOffset: Self = this.set("mouseProximityOffset", js.undefined)
+    def setOnAnimationOpenStart(value: () => scala.Unit): Self = StObject.set(x, "onAnimationOpenStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnAnimationOpenEnd(value: () => scala.Unit): Self = this.set("onAnimationOpenEnd", js.Any.fromFunction0(value))
+    def setOnAnimationOpenStartUndefined: Self = StObject.set(x, "onAnimationOpenStart", js.undefined)
     
     @scala.inline
-    def deleteOnAnimationOpenEnd: Self = this.set("onAnimationOpenEnd", js.undefined)
+    def setOnDismiss(value: /* ev */ js.UndefOr[js.Any] => scala.Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnAnimationOpenStart(value: () => scala.Unit): Self = this.set("onAnimationOpenStart", js.Any.fromFunction0(value))
+    def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
     
     @scala.inline
-    def deleteOnAnimationOpenStart: Self = this.set("onAnimationOpenStart", js.undefined)
+    def setOnMouseMove(value: /* e */ MouseEvent => scala.Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDismiss(value: /* ev */ js.UndefOr[js.Any] => scala.Unit): Self = this.set("onDismiss", js.Any.fromFunction1(value))
+    def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
     
     @scala.inline
-    def deleteOnDismiss: Self = this.set("onDismiss", js.undefined)
+    def setPersistentBeak(value: Boolean): Self = StObject.set(x, "persistentBeak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnMouseMove(value: /* e */ MouseEvent => scala.Unit): Self = this.set("onMouseMove", js.Any.fromFunction1(value))
+    def setPersistentBeakUndefined: Self = StObject.set(x, "persistentBeak", js.undefined)
     
     @scala.inline
-    def deleteOnMouseMove: Self = this.set("onMouseMove", js.undefined)
+    def setPositioningContainerProps(value: IPositioningContainerProps): Self = StObject.set(x, "positioningContainerProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersistentBeak(value: Boolean): Self = this.set("persistentBeak", value.asInstanceOf[js.Any])
+    def setPositioningContainerPropsUndefined: Self = StObject.set(x, "positioningContainerProps", js.undefined)
     
     @scala.inline
-    def deletePersistentBeak: Self = this.set("persistentBeak", js.undefined)
+    def setPreventDismissOnLostFocus(value: Boolean): Self = StObject.set(x, "preventDismissOnLostFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositioningContainerProps(value: IPositioningContainerProps): Self = this.set("positioningContainerProps", value.asInstanceOf[js.Any])
+    def setPreventDismissOnLostFocusUndefined: Self = StObject.set(x, "preventDismissOnLostFocus", js.undefined)
     
     @scala.inline
-    def deletePositioningContainerProps: Self = this.set("positioningContainerProps", js.undefined)
+    def setPreventFocusOnMount(value: Boolean): Self = StObject.set(x, "preventFocusOnMount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventDismissOnLostFocus(value: Boolean): Self = this.set("preventDismissOnLostFocus", value.asInstanceOf[js.Any])
+    def setPreventFocusOnMountUndefined: Self = StObject.set(x, "preventFocusOnMount", js.undefined)
     
     @scala.inline
-    def deletePreventDismissOnLostFocus: Self = this.set("preventDismissOnLostFocus", js.undefined)
+    def setRef(value: LegacyRef[CoachmarkBase]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventFocusOnMount(value: Boolean): Self = this.set("preventFocusOnMount", value.asInstanceOf[js.Any])
+    def setRefFunction1(value: /* instance */ CoachmarkBase | Null => scala.Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePreventFocusOnMount: Self = this.set("preventFocusOnMount", js.undefined)
+    def setRefNull: Self = StObject.set(x, "ref", null)
     
     @scala.inline
-    def setRefFunction1(value: /* instance */ CoachmarkBase | Null => scala.Unit): Self = this.set("ref", js.Any.fromFunction1(value))
+    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     @scala.inline
-    def setRef(value: LegacyRef[CoachmarkBase]): Self = this.set("ref", value.asInstanceOf[js.Any])
+    def setStyles(value: IStyleFunctionOrObject[ICoachmarkStyleProps, ICoachmarkStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRef: Self = this.set("ref", js.undefined)
+    def setStylesFunction1(value: ICoachmarkStyleProps => DeepPartial[ICoachmarkStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRefNull: Self = this.set("ref", null)
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def setStylesFunction1(value: ICoachmarkStyleProps => DeepPartial[ICoachmarkStyles]): Self = this.set("styles", js.Any.fromFunction1(value))
+    def setTarget(value: HTMLElement | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: IStyleFunctionOrObject[ICoachmarkStyleProps, ICoachmarkStyles]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setTargetNull: Self = StObject.set(x, "target", null)
     
     @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def setTarget(value: HTMLElement | String): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTeachingBubbleRef(value: ITeachingBubble): Self = StObject.set(x, "teachingBubbleRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTeachingBubbleRefUndefined: Self = StObject.set(x, "teachingBubbleRef", js.undefined)
     
     @scala.inline
-    def setTargetNull: Self = this.set("target", null)
+    def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeachingBubbleRef(value: ITeachingBubble): Self = this.set("teachingBubbleRef", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteTeachingBubbleRef: Self = this.set("teachingBubbleRef", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: ITheme): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

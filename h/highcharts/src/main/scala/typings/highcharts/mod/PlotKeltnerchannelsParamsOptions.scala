@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotKeltnerchannelsParamsOptions extends js.Object {
+trait PlotKeltnerchannelsParamsOptions extends StObject {
   
   /**
     * (Highstock) The point index which indicator calculations will base. For
@@ -40,42 +41,30 @@ object PlotKeltnerchannelsParamsOptions {
   }
   
   @scala.inline
-  implicit class PlotKeltnerchannelsParamsOptionsOps[Self <: PlotKeltnerchannelsParamsOptions] (val x: Self) extends AnyVal {
+  implicit class PlotKeltnerchannelsParamsOptionsMutableBuilder[Self <: PlotKeltnerchannelsParamsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMultiplierATR(value: Double): Self = StObject.set(x, "multiplierATR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setMultiplierATRUndefined: Self = StObject.set(x, "multiplierATR", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiplierATR(value: Double): Self = this.set("multiplierATR", value.asInstanceOf[js.Any])
+    def setPeriodATR(value: Double): Self = StObject.set(x, "periodATR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultiplierATR: Self = this.set("multiplierATR", js.undefined)
+    def setPeriodATRUndefined: Self = StObject.set(x, "periodATR", js.undefined)
     
     @scala.inline
-    def setPeriod(value: Double): Self = this.set("period", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
-    
-    @scala.inline
-    def setPeriodATR(value: Double): Self = this.set("periodATR", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeriodATR: Self = this.set("periodATR", js.undefined)
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

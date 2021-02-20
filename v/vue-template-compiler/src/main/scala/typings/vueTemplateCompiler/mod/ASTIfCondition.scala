@@ -1,11 +1,12 @@
 package typings.vueTemplateCompiler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ASTIfCondition extends js.Object {
+trait ASTIfCondition extends StObject {
   
   var block: ASTElement = js.native
   
@@ -20,27 +21,15 @@ object ASTIfCondition {
   }
   
   @scala.inline
-  implicit class ASTIfConditionOps[Self <: ASTIfCondition] (val x: Self) extends AnyVal {
+  implicit class ASTIfConditionMutableBuilder[Self <: ASTIfCondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlock(value: ASTElement): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExp(value: String): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBlock(value: ASTElement): Self = this.set("block", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExp(value: String): Self = this.set("exp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExp: Self = this.set("exp", js.undefined)
+    def setExpUndefined: Self = StObject.set(x, "exp", js.undefined)
   }
 }

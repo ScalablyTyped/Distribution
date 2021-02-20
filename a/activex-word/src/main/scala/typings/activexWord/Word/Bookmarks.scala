@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bookmarks extends js.Object {
+trait Bookmarks extends StObject {
   
   def Add(Name: String): Bookmark = js.native
   def Add(Name: String, Range: js.Any): Bookmark = js.native

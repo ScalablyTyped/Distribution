@@ -1,13 +1,16 @@
 package typings.devcert
 
 import typings.devcert.platformsMod.Platform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devcert/dist/platforms/linux", JSImport.Namespace)
-@js.native
-object linuxMod extends js.Object {
+object linuxMod {
+  
+  @JSImport("devcert/dist/platforms/linux", JSImport.Default)
+  @js.native
+  class default () extends LinuxPlatform
   
   @js.native
   trait LinuxPlatform extends Platform {
@@ -26,7 +29,4 @@ object linuxMod extends js.Object {
     
     var isFirefoxInstalled: js.Any = js.native
   }
-  
-  @js.native
-  class default () extends LinuxPlatform
 }

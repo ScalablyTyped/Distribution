@@ -1,15 +1,14 @@
 package typings.uniqid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Process extends js.Object {
+  trait Process extends StObject {
     
     def process(): String = js.native
     def process(prefix: js.UndefOr[scala.Nothing], suffix: String): String = js.native

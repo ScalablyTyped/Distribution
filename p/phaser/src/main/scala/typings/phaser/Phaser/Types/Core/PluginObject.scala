@@ -1,11 +1,12 @@
 package typings.phaser.Phaser.Types.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PluginObject extends js.Object {
+trait PluginObject extends StObject {
   
   /**
     * The default set of scene plugins (names).
@@ -36,54 +37,42 @@ object PluginObject {
   }
   
   @scala.inline
-  implicit class PluginObjectOps[Self <: PluginObject] (val x: Self) extends AnyVal {
+  implicit class PluginObjectMutableBuilder[Self <: PluginObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefault(value: js.Array[String]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultMerge(value: js.Array[String]): Self = StObject.set(x, "defaultMerge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultMergeUndefined: Self = StObject.set(x, "defaultMerge", js.undefined)
     
     @scala.inline
-    def setDefaultVarargs(value: String*): Self = this.set("default", js.Array(value :_*))
+    def setDefaultMergeVarargs(value: String*): Self = StObject.set(x, "defaultMerge", js.Array(value :_*))
     
     @scala.inline
-    def setDefault(value: js.Array[String]): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
+    def setDefaultVarargs(value: String*): Self = StObject.set(x, "default", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultMergeVarargs(value: String*): Self = this.set("defaultMerge", js.Array(value :_*))
+    def setGlobal(value: js.Array[PluginObjectItem]): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultMerge(value: js.Array[String]): Self = this.set("defaultMerge", value.asInstanceOf[js.Any])
+    def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     
     @scala.inline
-    def deleteDefaultMerge: Self = this.set("defaultMerge", js.undefined)
+    def setGlobalVarargs(value: PluginObjectItem*): Self = StObject.set(x, "global", js.Array(value :_*))
     
     @scala.inline
-    def setGlobalVarargs(value: PluginObjectItem*): Self = this.set("global", js.Array(value :_*))
+    def setScene(value: js.Array[PluginObjectItem]): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobal(value: js.Array[PluginObjectItem]): Self = this.set("global", value.asInstanceOf[js.Any])
+    def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
     
     @scala.inline
-    def deleteGlobal: Self = this.set("global", js.undefined)
-    
-    @scala.inline
-    def setSceneVarargs(value: PluginObjectItem*): Self = this.set("scene", js.Array(value :_*))
-    
-    @scala.inline
-    def setScene(value: js.Array[PluginObjectItem]): Self = this.set("scene", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScene: Self = this.set("scene", js.undefined)
+    def setSceneVarargs(value: PluginObjectItem*): Self = StObject.set(x, "scene", js.Array(value :_*))
   }
 }

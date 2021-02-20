@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetServiceLinkedRoleDeletionStatusResponse extends js.Object {
+trait GetServiceLinkedRoleDeletionStatusResponse extends StObject {
   
   /**
     * An object that contains details about the reason the deletion failed.
@@ -26,27 +27,15 @@ object GetServiceLinkedRoleDeletionStatusResponse {
   }
   
   @scala.inline
-  implicit class GetServiceLinkedRoleDeletionStatusResponseOps[Self <: GetServiceLinkedRoleDeletionStatusResponse] (val x: Self) extends AnyVal {
+  implicit class GetServiceLinkedRoleDeletionStatusResponseMutableBuilder[Self <: GetServiceLinkedRoleDeletionStatusResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReason(value: DeletionTaskFailureReasonType): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStatus(value: DeletionTaskStatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReason(value: DeletionTaskFailureReasonType): Self = this.set("Reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReason: Self = this.set("Reason", js.undefined)
+    def setStatus(value: DeletionTaskStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

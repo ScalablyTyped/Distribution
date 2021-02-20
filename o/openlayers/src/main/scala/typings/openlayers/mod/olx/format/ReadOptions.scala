@@ -1,12 +1,13 @@
 package typings.openlayers.mod.olx.format
 
 import typings.openlayers.mod.ProjectionLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReadOptions extends js.Object {
+trait ReadOptions extends StObject {
   
   var dataProjection: ProjectionLike = js.native
   
@@ -21,30 +22,18 @@ object ReadOptions {
   }
   
   @scala.inline
-  implicit class ReadOptionsOps[Self <: ReadOptions] (val x: Self) extends AnyVal {
+  implicit class ReadOptionsMutableBuilder[Self <: ReadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataProjection(value: ProjectionLike): Self = StObject.set(x, "dataProjection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataProjectionUndefined: Self = StObject.set(x, "dataProjection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeatureProjection(value: ProjectionLike): Self = StObject.set(x, "featureProjection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataProjection(value: ProjectionLike): Self = this.set("dataProjection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataProjection: Self = this.set("dataProjection", js.undefined)
-    
-    @scala.inline
-    def setFeatureProjection(value: ProjectionLike): Self = this.set("featureProjection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeatureProjection: Self = this.set("featureProjection", js.undefined)
+    def setFeatureProjectionUndefined: Self = StObject.set(x, "featureProjection", js.undefined)
   }
 }

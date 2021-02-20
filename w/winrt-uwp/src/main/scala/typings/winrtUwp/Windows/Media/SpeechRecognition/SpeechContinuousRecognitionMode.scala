@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.SpeechRecognition
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SpeechContinuousRecognitionMode extends js.Object
+sealed trait SpeechContinuousRecognitionMode extends StObject
 /** Specifies the behavior of the speech recognizer during a continuous recognition session. */
 @JSGlobal("Windows.Media.SpeechRecognition.SpeechContinuousRecognitionMode")
 @js.native
-object SpeechContinuousRecognitionMode extends js.Object {
+object SpeechContinuousRecognitionMode extends StObject {
   
   /** Speech recognizer continues listening for and processing speech input after a recognition result is generated. */
   @js.native

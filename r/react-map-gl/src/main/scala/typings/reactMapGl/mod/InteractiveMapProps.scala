@@ -1,6 +1,7 @@
 package typings.reactMapGl.mod
 
 import typings.reactMapGl.reactMapGlStrings.auto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -99,269 +100,257 @@ object InteractiveMapProps {
   }
   
   @scala.inline
-  implicit class InteractiveMapPropsOps[Self <: InteractiveMapProps] (val x: Self) extends AnyVal {
+  implicit class InteractiveMapPropsMutableBuilder[Self <: InteractiveMapProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClickRadius(value: Double): Self = StObject.set(x, "clickRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickRadiusUndefined: Self = StObject.set(x, "clickRadius", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setController(value: MapController): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickRadius(value: Double): Self = this.set("clickRadius", value.asInstanceOf[js.Any])
+    def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
     @scala.inline
-    def deleteClickRadius: Self = this.set("clickRadius", js.undefined)
+    def setDoubleClickZoom(value: Boolean): Self = StObject.set(x, "doubleClickZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setController(value: MapController): Self = this.set("controller", value.asInstanceOf[js.Any])
+    def setDoubleClickZoomUndefined: Self = StObject.set(x, "doubleClickZoom", js.undefined)
     
     @scala.inline
-    def deleteController: Self = this.set("controller", js.undefined)
+    def setDragPan(value: Boolean): Self = StObject.set(x, "dragPan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleClickZoom(value: Boolean): Self = this.set("doubleClickZoom", value.asInstanceOf[js.Any])
+    def setDragPanUndefined: Self = StObject.set(x, "dragPan", js.undefined)
     
     @scala.inline
-    def deleteDoubleClickZoom: Self = this.set("doubleClickZoom", js.undefined)
+    def setDragRotate(value: Boolean): Self = StObject.set(x, "dragRotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragPan(value: Boolean): Self = this.set("dragPan", value.asInstanceOf[js.Any])
+    def setDragRotateUndefined: Self = StObject.set(x, "dragRotate", js.undefined)
     
     @scala.inline
-    def deleteDragPan: Self = this.set("dragPan", js.undefined)
+    def setGetCursor(value: /* state */ ExtraState => Unit): Self = StObject.set(x, "getCursor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDragRotate(value: Boolean): Self = this.set("dragRotate", value.asInstanceOf[js.Any])
+    def setGetCursorUndefined: Self = StObject.set(x, "getCursor", js.undefined)
     
     @scala.inline
-    def deleteDragRotate: Self = this.set("dragRotate", js.undefined)
+    def setInteractiveLayerIds(value: js.Array[String]): Self = StObject.set(x, "interactiveLayerIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCursor(value: /* state */ ExtraState => Unit): Self = this.set("getCursor", js.Any.fromFunction1(value))
+    def setInteractiveLayerIdsUndefined: Self = StObject.set(x, "interactiveLayerIds", js.undefined)
     
     @scala.inline
-    def deleteGetCursor: Self = this.set("getCursor", js.undefined)
+    def setInteractiveLayerIdsVarargs(value: String*): Self = StObject.set(x, "interactiveLayerIds", js.Array(value :_*))
     
     @scala.inline
-    def setInteractiveLayerIdsVarargs(value: String*): Self = this.set("interactiveLayerIds", js.Array(value :_*))
+    def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractiveLayerIds(value: js.Array[String]): Self = this.set("interactiveLayerIds", value.asInstanceOf[js.Any])
+    def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
     
     @scala.inline
-    def deleteInteractiveLayerIds: Self = this.set("interactiveLayerIds", js.undefined)
+    def setMaxPitch(value: Double): Self = StObject.set(x, "maxPitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboard(value: Boolean): Self = this.set("keyboard", value.asInstanceOf[js.Any])
+    def setMaxPitchUndefined: Self = StObject.set(x, "maxPitch", js.undefined)
     
     @scala.inline
-    def deleteKeyboard: Self = this.set("keyboard", js.undefined)
+    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPitch(value: Double): Self = this.set("maxPitch", value.asInstanceOf[js.Any])
+    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
     @scala.inline
-    def deleteMaxPitch: Self = this.set("maxPitch", js.undefined)
+    def setMinPitch(value: Double): Self = StObject.set(x, "minPitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    def setMinPitchUndefined: Self = StObject.set(x, "minPitch", js.undefined)
     
     @scala.inline
-    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinPitch(value: Double): Self = this.set("minPitch", value.asInstanceOf[js.Any])
+    def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
     
     @scala.inline
-    def deleteMinPitch: Self = this.set("minPitch", js.undefined)
+    def setOnClick(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinZoom(value: Double): Self = this.set("minZoom", value.asInstanceOf[js.Any])
+    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def deleteMinZoom: Self = this.set("minZoom", js.undefined)
+    def setOnContextMenu(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnClick(value: /* event */ PointerEvent => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
     
     @scala.inline
-    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    def setOnDblClick(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onDblClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnContextMenu(value: /* event */ PointerEvent => Unit): Self = this.set("onContextMenu", js.Any.fromFunction1(value))
+    def setOnDblClickUndefined: Self = StObject.set(x, "onDblClick", js.undefined)
     
     @scala.inline
-    def deleteOnContextMenu: Self = this.set("onContextMenu", js.undefined)
+    def setOnHover(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onHover", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDblClick(value: /* event */ PointerEvent => Unit): Self = this.set("onDblClick", js.Any.fromFunction1(value))
+    def setOnHoverUndefined: Self = StObject.set(x, "onHover", js.undefined)
     
     @scala.inline
-    def deleteOnDblClick: Self = this.set("onDblClick", js.undefined)
+    def setOnInteractionStateChange(value: /* state */ ExtraState => Unit): Self = StObject.set(x, "onInteractionStateChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnHover(value: /* event */ PointerEvent => Unit): Self = this.set("onHover", js.Any.fromFunction1(value))
+    def setOnInteractionStateChangeUndefined: Self = StObject.set(x, "onInteractionStateChange", js.undefined)
     
     @scala.inline
-    def deleteOnHover: Self = this.set("onHover", js.undefined)
+    def setOnMouseDown(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnInteractionStateChange(value: /* state */ ExtraState => Unit): Self = this.set("onInteractionStateChange", js.Any.fromFunction1(value))
+    def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     
     @scala.inline
-    def deleteOnInteractionStateChange: Self = this.set("onInteractionStateChange", js.undefined)
+    def setOnMouseEnter(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseDown(value: /* event */ PointerEvent => Unit): Self = this.set("onMouseDown", js.Any.fromFunction1(value))
+    def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
     @scala.inline
-    def deleteOnMouseDown: Self = this.set("onMouseDown", js.undefined)
+    def setOnMouseLeave(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseEnter(value: /* event */ PointerEvent => Unit): Self = this.set("onMouseEnter", js.Any.fromFunction1(value))
+    def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
     
     @scala.inline
-    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    def setOnMouseMove(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseLeave(value: /* event */ PointerEvent => Unit): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
+    def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
     
     @scala.inline
-    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    def setOnMouseOut(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseMove(value: /* event */ PointerEvent => Unit): Self = this.set("onMouseMove", js.Any.fromFunction1(value))
+    def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
     
     @scala.inline
-    def deleteOnMouseMove: Self = this.set("onMouseMove", js.undefined)
+    def setOnMouseUp(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseOut(value: /* event */ PointerEvent => Unit): Self = this.set("onMouseOut", js.Any.fromFunction1(value))
+    def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
     
     @scala.inline
-    def deleteOnMouseOut: Self = this.set("onMouseOut", js.undefined)
+    def setOnNativeClick(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onNativeClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseUp(value: /* event */ PointerEvent => Unit): Self = this.set("onMouseUp", js.Any.fromFunction1(value))
+    def setOnNativeClickUndefined: Self = StObject.set(x, "onNativeClick", js.undefined)
     
     @scala.inline
-    def deleteOnMouseUp: Self = this.set("onMouseUp", js.undefined)
+    def setOnTouchEnd(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnNativeClick(value: /* event */ PointerEvent => Unit): Self = this.set("onNativeClick", js.Any.fromFunction1(value))
+    def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
     
     @scala.inline
-    def deleteOnNativeClick: Self = this.set("onNativeClick", js.undefined)
+    def setOnTouchMove(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnTouchEnd(value: /* event */ PointerEvent => Unit): Self = this.set("onTouchEnd", js.Any.fromFunction1(value))
+    def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
     
     @scala.inline
-    def deleteOnTouchEnd: Self = this.set("onTouchEnd", js.undefined)
+    def setOnTouchStart(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnTouchMove(value: /* event */ PointerEvent => Unit): Self = this.set("onTouchMove", js.Any.fromFunction1(value))
+    def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     
     @scala.inline
-    def deleteOnTouchMove: Self = this.set("onTouchMove", js.undefined)
+    def setOnTransitionEnd(value: () => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnTouchStart(value: /* event */ PointerEvent => Unit): Self = this.set("onTouchStart", js.Any.fromFunction1(value))
+    def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
     
     @scala.inline
-    def deleteOnTouchStart: Self = this.set("onTouchStart", js.undefined)
+    def setOnTransitionInterrupt(value: () => Unit): Self = StObject.set(x, "onTransitionInterrupt", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnTransitionEnd(value: () => Unit): Self = this.set("onTransitionEnd", js.Any.fromFunction0(value))
+    def setOnTransitionInterruptUndefined: Self = StObject.set(x, "onTransitionInterrupt", js.undefined)
     
     @scala.inline
-    def deleteOnTransitionEnd: Self = this.set("onTransitionEnd", js.undefined)
+    def setOnTransitionStart(value: () => Unit): Self = StObject.set(x, "onTransitionStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnTransitionInterrupt(value: () => Unit): Self = this.set("onTransitionInterrupt", js.Any.fromFunction0(value))
+    def setOnTransitionStartUndefined: Self = StObject.set(x, "onTransitionStart", js.undefined)
     
     @scala.inline
-    def deleteOnTransitionInterrupt: Self = this.set("onTransitionInterrupt", js.undefined)
+    def setOnViewStateChange(value: /* info */ ContextViewStateChangeInfo => Unit): Self = StObject.set(x, "onViewStateChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnTransitionStart(value: () => Unit): Self = this.set("onTransitionStart", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnTransitionStart: Self = this.set("onTransitionStart", js.undefined)
-    
-    @scala.inline
-    def setOnViewStateChange(value: /* info */ ContextViewStateChangeInfo => Unit): Self = this.set("onViewStateChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnViewStateChange: Self = this.set("onViewStateChange", js.undefined)
+    def setOnViewStateChangeUndefined: Self = StObject.set(x, "onViewStateChange", js.undefined)
     
     @scala.inline
     def setOnViewportChange(
       value: (/* viewState */ ViewportProps, /* interactionState */ ExtraState, /* oldViewState */ ViewportProps) => Unit
-    ): Self = this.set("onViewportChange", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "onViewportChange", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnViewportChange: Self = this.set("onViewportChange", js.undefined)
+    def setOnViewportChangeUndefined: Self = StObject.set(x, "onViewportChange", js.undefined)
     
     @scala.inline
-    def setOnWheel(value: /* event */ PointerEvent => Unit): Self = this.set("onWheel", js.Any.fromFunction1(value))
+    def setOnWheel(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnWheel: Self = this.set("onWheel", js.undefined)
+    def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
     
     @scala.inline
-    def setScrollZoom(value: Boolean): Self = this.set("scrollZoom", value.asInstanceOf[js.Any])
+    def setScrollZoom(value: Boolean): Self = StObject.set(x, "scrollZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollZoom: Self = this.set("scrollZoom", js.undefined)
+    def setScrollZoomUndefined: Self = StObject.set(x, "scrollZoom", js.undefined)
     
     @scala.inline
-    def setTouchAction(value: String): Self = this.set("touchAction", value.asInstanceOf[js.Any])
+    def setTouchAction(value: String): Self = StObject.set(x, "touchAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTouchAction: Self = this.set("touchAction", js.undefined)
+    def setTouchActionUndefined: Self = StObject.set(x, "touchAction", js.undefined)
     
     @scala.inline
-    def setTouchRotate(value: Boolean): Self = this.set("touchRotate", value.asInstanceOf[js.Any])
+    def setTouchRotate(value: Boolean): Self = StObject.set(x, "touchRotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTouchRotate: Self = this.set("touchRotate", js.undefined)
+    def setTouchRotateUndefined: Self = StObject.set(x, "touchRotate", js.undefined)
     
     @scala.inline
-    def setTouchZoom(value: Boolean): Self = this.set("touchZoom", value.asInstanceOf[js.Any])
+    def setTouchZoom(value: Boolean): Self = StObject.set(x, "touchZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTouchZoom: Self = this.set("touchZoom", js.undefined)
+    def setTouchZoomUndefined: Self = StObject.set(x, "touchZoom", js.undefined)
     
     @scala.inline
-    def setTransitionDuration(value: Double | auto): Self = this.set("transitionDuration", value.asInstanceOf[js.Any])
+    def setTransitionDuration(value: Double | auto): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransitionDuration: Self = this.set("transitionDuration", js.undefined)
+    def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     
     @scala.inline
-    def setTransitionEasing(value: /* t */ Double => Double): Self = this.set("transitionEasing", js.Any.fromFunction1(value))
+    def setTransitionEasing(value: /* t */ Double => Double): Self = StObject.set(x, "transitionEasing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTransitionEasing: Self = this.set("transitionEasing", js.undefined)
+    def setTransitionEasingUndefined: Self = StObject.set(x, "transitionEasing", js.undefined)
     
     @scala.inline
-    def setTransitionInterpolator(value: TransitionInterpolator): Self = this.set("transitionInterpolator", value.asInstanceOf[js.Any])
+    def setTransitionInterpolator(value: TransitionInterpolator): Self = StObject.set(x, "transitionInterpolator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransitionInterpolator: Self = this.set("transitionInterpolator", js.undefined)
+    def setTransitionInterpolatorUndefined: Self = StObject.set(x, "transitionInterpolator", js.undefined)
     
     @scala.inline
-    def setTransitionInterruption(value: TRANSITION_EVENTS): Self = this.set("transitionInterruption", value.asInstanceOf[js.Any])
+    def setTransitionInterruption(value: TRANSITION_EVENTS): Self = StObject.set(x, "transitionInterruption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransitionInterruption: Self = this.set("transitionInterruption", js.undefined)
+    def setTransitionInterruptionUndefined: Self = StObject.set(x, "transitionInterruption", js.undefined)
   }
 }

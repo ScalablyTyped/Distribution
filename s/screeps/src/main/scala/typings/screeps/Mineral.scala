@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,33 +54,21 @@ object Mineral {
   }
   
   @scala.inline
-  implicit class MineralOps[Self <: Mineral[_], T /* <: MineralConstant */] (val x: Self with Mineral[T]) extends AnyVal {
+  implicit class MineralMutableBuilder[Self <: Mineral[_], T /* <: MineralConstant */] (val x: Self with Mineral[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: Id[Mineral[T]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMineralAmount(value: Double): Self = StObject.set(x, "mineralAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDensity(value: Double): Self = this.set("density", value.asInstanceOf[js.Any])
+    def setMineralType(value: T): Self = StObject.set(x, "mineralType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Id[Mineral[T]]): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMineralAmount(value: Double): Self = this.set("mineralAmount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMineralType(value: T): Self = this.set("mineralType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTicksToRegeneration(value: Double): Self = this.set("ticksToRegeneration", value.asInstanceOf[js.Any])
+    def setTicksToRegeneration(value: Double): Self = StObject.set(x, "ticksToRegeneration", value.asInstanceOf[js.Any])
   }
 }

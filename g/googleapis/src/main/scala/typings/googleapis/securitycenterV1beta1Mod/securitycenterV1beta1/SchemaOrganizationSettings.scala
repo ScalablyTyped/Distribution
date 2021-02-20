@@ -1,5 +1,6 @@
 package typings.googleapis.securitycenterV1beta1Mod.securitycenterV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Center (Cloud SCC) organization.
   */
 @js.native
-trait SchemaOrganizationSettings extends js.Object {
+trait SchemaOrganizationSettings extends StObject {
   
   /**
     * The configuration used for Asset Discovery runs.
@@ -40,36 +41,24 @@ object SchemaOrganizationSettings {
   }
   
   @scala.inline
-  implicit class SchemaOrganizationSettingsOps[Self <: SchemaOrganizationSettings] (val x: Self) extends AnyVal {
+  implicit class SchemaOrganizationSettingsMutableBuilder[Self <: SchemaOrganizationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetDiscoveryConfig(value: SchemaAssetDiscoveryConfig): Self = StObject.set(x, "assetDiscoveryConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetDiscoveryConfigUndefined: Self = StObject.set(x, "assetDiscoveryConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableAssetDiscovery(value: Boolean): Self = StObject.set(x, "enableAssetDiscovery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetDiscoveryConfig(value: SchemaAssetDiscoveryConfig): Self = this.set("assetDiscoveryConfig", value.asInstanceOf[js.Any])
+    def setEnableAssetDiscoveryUndefined: Self = StObject.set(x, "enableAssetDiscovery", js.undefined)
     
     @scala.inline
-    def deleteAssetDiscoveryConfig: Self = this.set("assetDiscoveryConfig", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableAssetDiscovery(value: Boolean): Self = this.set("enableAssetDiscovery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableAssetDiscovery: Self = this.set("enableAssetDiscovery", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

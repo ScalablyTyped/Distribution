@@ -1,11 +1,12 @@
 package typings.cote.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiscoveryOptions extends js.Object {
+trait DiscoveryOptions extends StObject {
   
   /**
     * Address to bind to.
@@ -88,102 +89,90 @@ object DiscoveryOptions {
   }
   
   @scala.inline
-  implicit class DiscoveryOptionsOps[Self <: DiscoveryOptions] (val x: Self) extends AnyVal {
+  implicit class DiscoveryOptionsMutableBuilder[Self <: DiscoveryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBroadcast(value: String): Self = StObject.set(x, "broadcast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setBroadcastUndefined: Self = StObject.set(x, "broadcast", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setCheckInterval(value: Double): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBroadcast(value: String): Self = this.set("broadcast", value.asInstanceOf[js.Any])
+    def setCheckIntervalUndefined: Self = StObject.set(x, "checkInterval", js.undefined)
     
     @scala.inline
-    def deleteBroadcast: Self = this.set("broadcast", js.undefined)
+    def setDisableScreen(value: Boolean): Self = StObject.set(x, "disableScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckInterval(value: Double): Self = this.set("checkInterval", value.asInstanceOf[js.Any])
+    def setDisableScreenUndefined: Self = StObject.set(x, "disableScreen", js.undefined)
     
     @scala.inline
-    def deleteCheckInterval: Self = this.set("checkInterval", js.undefined)
+    def setHelloInterval(value: Double): Self = StObject.set(x, "helloInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableScreen(value: Boolean): Self = this.set("disableScreen", value.asInstanceOf[js.Any])
+    def setHelloIntervalUndefined: Self = StObject.set(x, "helloInterval", js.undefined)
     
     @scala.inline
-    def deleteDisableScreen: Self = this.set("disableScreen", js.undefined)
+    def setHelloLogsEnabled(value: Boolean): Self = StObject.set(x, "helloLogsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelloInterval(value: Double): Self = this.set("helloInterval", value.asInstanceOf[js.Any])
+    def setHelloLogsEnabledUndefined: Self = StObject.set(x, "helloLogsEnabled", js.undefined)
     
     @scala.inline
-    def deleteHelloInterval: Self = this.set("helloInterval", js.undefined)
+    def setIgnoreProcess(value: Boolean): Self = StObject.set(x, "ignoreProcess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelloLogsEnabled(value: Boolean): Self = this.set("helloLogsEnabled", value.asInstanceOf[js.Any])
+    def setIgnoreProcessUndefined: Self = StObject.set(x, "ignoreProcess", js.undefined)
     
     @scala.inline
-    def deleteHelloLogsEnabled: Self = this.set("helloLogsEnabled", js.undefined)
+    def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreProcess(value: Boolean): Self = this.set("ignoreProcess", value.asInstanceOf[js.Any])
+    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
     @scala.inline
-    def deleteIgnoreProcess: Self = this.set("ignoreProcess", js.undefined)
+    def setMasterTimeout(value: Double): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLog(value: Boolean): Self = this.set("log", value.asInstanceOf[js.Any])
+    def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
     
     @scala.inline
-    def deleteLog: Self = this.set("log", js.undefined)
+    def setMonitor(value: Boolean): Self = StObject.set(x, "monitor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterTimeout(value: Double): Self = this.set("masterTimeout", value.asInstanceOf[js.Any])
+    def setMonitorUndefined: Self = StObject.set(x, "monitor", js.undefined)
     
     @scala.inline
-    def deleteMasterTimeout: Self = this.set("masterTimeout", js.undefined)
+    def setMulticast(value: String): Self = StObject.set(x, "multicast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitor(value: Boolean): Self = this.set("monitor", value.asInstanceOf[js.Any])
+    def setMulticastUndefined: Self = StObject.set(x, "multicast", js.undefined)
     
     @scala.inline
-    def deleteMonitor: Self = this.set("monitor", js.undefined)
+    def setNodeTimeout(value: Double): Self = StObject.set(x, "nodeTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMulticast(value: String): Self = this.set("multicast", value.asInstanceOf[js.Any])
+    def setNodeTimeoutUndefined: Self = StObject.set(x, "nodeTimeout", js.undefined)
     
     @scala.inline
-    def deleteMulticast: Self = this.set("multicast", js.undefined)
+    def setStatusInterval(value: Double): Self = StObject.set(x, "statusInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeTimeout(value: Double): Self = this.set("nodeTimeout", value.asInstanceOf[js.Any])
+    def setStatusIntervalUndefined: Self = StObject.set(x, "statusInterval", js.undefined)
     
     @scala.inline
-    def deleteNodeTimeout: Self = this.set("nodeTimeout", js.undefined)
+    def setStatusLogsEnabled(value: Boolean): Self = StObject.set(x, "statusLogsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusInterval(value: Double): Self = this.set("statusInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusInterval: Self = this.set("statusInterval", js.undefined)
-    
-    @scala.inline
-    def setStatusLogsEnabled(value: Boolean): Self = this.set("statusLogsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusLogsEnabled: Self = this.set("statusLogsEnabled", js.undefined)
+    def setStatusLogsEnabledUndefined: Self = StObject.set(x, "statusLogsEnabled", js.undefined)
   }
 }

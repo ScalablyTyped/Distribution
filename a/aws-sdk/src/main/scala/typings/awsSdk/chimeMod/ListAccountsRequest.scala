@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAccountsRequest extends js.Object {
+trait ListAccountsRequest extends StObject {
   
   /**
     * The maximum number of results to return in a single call. Defaults to 100.
@@ -36,42 +37,30 @@ object ListAccountsRequest {
   }
   
   @scala.inline
-  implicit class ListAccountsRequestOps[Self <: ListAccountsRequest] (val x: Self) extends AnyVal {
+  implicit class ListAccountsRequestMutableBuilder[Self <: ListAccountsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxResults(value: ProfileServiceMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: AccountName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: ProfileServiceMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: AccountName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setUserEmail(value: EmailAddress): Self = StObject.set(x, "UserEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setUserEmail(value: EmailAddress): Self = this.set("UserEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserEmail: Self = this.set("UserEmail", js.undefined)
+    def setUserEmailUndefined: Self = StObject.set(x, "UserEmail", js.undefined)
   }
 }

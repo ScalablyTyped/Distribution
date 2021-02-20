@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CertificateAuthentication extends js.Object {
+trait CertificateAuthentication extends StObject {
   
   /**
     * The ARN of the client certificate. 
@@ -21,24 +22,12 @@ object CertificateAuthentication {
   }
   
   @scala.inline
-  implicit class CertificateAuthenticationOps[Self <: CertificateAuthentication] (val x: Self) extends AnyVal {
+  implicit class CertificateAuthenticationMutableBuilder[Self <: CertificateAuthentication] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientRootCertificateChain(value: String): Self = StObject.set(x, "ClientRootCertificateChain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClientRootCertificateChain(value: String): Self = this.set("ClientRootCertificateChain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientRootCertificateChain: Self = this.set("ClientRootCertificateChain", js.undefined)
+    def setClientRootCertificateChainUndefined: Self = StObject.set(x, "ClientRootCertificateChain", js.undefined)
   }
 }

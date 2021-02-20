@@ -2,6 +2,7 @@ package typings.reactWindow.mod
 
 import typings.react.mod.ComponentType
 import typings.react.mod.Key
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -112,72 +113,60 @@ object ListProps {
   }
   
   @scala.inline
-  implicit class ListPropsOps[Self <: ListProps] (val x: Self) extends AnyVal {
+  implicit class ListPropsMutableBuilder[Self <: ListProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: ComponentType[ListChildComponentProps]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirection(value: CSSDirection | Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def setChildren(value: ComponentType[ListChildComponentProps]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setInitialScrollOffset(value: Double): Self = StObject.set(x, "initialScrollOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemCount(value: Double): Self = this.set("itemCount", value.asInstanceOf[js.Any])
+    def setInitialScrollOffsetUndefined: Self = StObject.set(x, "initialScrollOffset", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: CSSDirection | Direction): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setItemKey(value: (/* index */ Double, /* data */ js.Any) => Key): Self = StObject.set(x, "itemKey", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setItemKeyUndefined: Self = StObject.set(x, "itemKey", js.undefined)
     
     @scala.inline
-    def setInitialScrollOffset(value: Double): Self = this.set("initialScrollOffset", value.asInstanceOf[js.Any])
+    def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitialScrollOffset: Self = this.set("initialScrollOffset", js.undefined)
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def setItemKey(value: (/* index */ Double, /* data */ js.Any) => Key): Self = this.set("itemKey", js.Any.fromFunction2(value))
+    def setOnItemsRendered(value: /* props */ ListOnItemsRenderedProps => _): Self = StObject.set(x, "onItemsRendered", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteItemKey: Self = this.set("itemKey", js.undefined)
+    def setOnItemsRenderedUndefined: Self = StObject.set(x, "onItemsRendered", js.undefined)
     
     @scala.inline
-    def setLayout(value: Layout): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setOnScroll(value: /* props */ ListOnScrollProps => _): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
     @scala.inline
-    def setOnItemsRendered(value: /* props */ ListOnItemsRenderedProps => _): Self = this.set("onItemsRendered", js.Any.fromFunction1(value))
+    def setOverscanCount(value: Double): Self = StObject.set(x, "overscanCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnItemsRendered: Self = this.set("onItemsRendered", js.undefined)
+    def setOverscanCountUndefined: Self = StObject.set(x, "overscanCount", js.undefined)
     
     @scala.inline
-    def setOnScroll(value: /* props */ ListOnScrollProps => _): Self = this.set("onScroll", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
-    
-    @scala.inline
-    def setOverscanCount(value: Double): Self = this.set("overscanCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverscanCount: Self = this.set("overscanCount", js.undefined)
+    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

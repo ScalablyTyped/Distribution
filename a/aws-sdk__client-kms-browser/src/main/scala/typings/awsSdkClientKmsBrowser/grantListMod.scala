@@ -1,13 +1,13 @@
 package typings.awsSdkClientKmsBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-browser/model/_GrantList", JSImport.Namespace)
-@js.native
-object grantListMod extends js.Object {
+object grantListMod {
   
-  @JSName("_GrantList")
+  @JSImport("@aws-sdk/client-kms-browser/model/_GrantList", "_GrantList")
+  @js.native
   val GrantList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
 }

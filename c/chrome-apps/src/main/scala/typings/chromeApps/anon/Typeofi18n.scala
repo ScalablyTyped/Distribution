@@ -3,12 +3,13 @@ package typings.chromeApps.anon
 import typings.chromeApps.chrome.i18n.LanguageCode
 import typings.chromeApps.chrome.i18n.LanguageDetectionResult
 import typings.chromeApps.chrome.i18n.StringSubstitutions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofi18n extends js.Object {
+trait Typeofi18n extends StObject {
   
   /**
     * Detects the language of the provided text using CLD.

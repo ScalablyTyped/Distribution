@@ -1,11 +1,12 @@
 package typings.googleCloudStorage.bucketMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetFilesOptions extends js.Object {
+trait GetFilesOptions extends StObject {
   
   var autoPaginate: js.UndefOr[Boolean] = js.native
   
@@ -40,90 +41,78 @@ object GetFilesOptions {
   }
   
   @scala.inline
-  implicit class GetFilesOptionsOps[Self <: GetFilesOptions] (val x: Self) extends AnyVal {
+  implicit class GetFilesOptionsMutableBuilder[Self <: GetFilesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoPaginate(value: Boolean): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoPaginateUndefined: Self = StObject.set(x, "autoPaginate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPaginate(value: Boolean): Self = this.set("autoPaginate", value.asInstanceOf[js.Any])
+    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
     @scala.inline
-    def deleteAutoPaginate: Self = this.set("autoPaginate", js.undefined)
+    def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelimiter(value: String): Self = this.set("delimiter", value.asInstanceOf[js.Any])
+    def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
     
     @scala.inline
-    def deleteDelimiter: Self = this.set("delimiter", js.undefined)
+    def setEndOffset(value: String): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectory(value: String): Self = this.set("directory", value.asInstanceOf[js.Any])
+    def setEndOffsetUndefined: Self = StObject.set(x, "endOffset", js.undefined)
     
     @scala.inline
-    def deleteDirectory: Self = this.set("directory", js.undefined)
+    def setIncludeTrailingDelimiter(value: Boolean): Self = StObject.set(x, "includeTrailingDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndOffset(value: String): Self = this.set("endOffset", value.asInstanceOf[js.Any])
+    def setIncludeTrailingDelimiterUndefined: Self = StObject.set(x, "includeTrailingDelimiter", js.undefined)
     
     @scala.inline
-    def deleteEndOffset: Self = this.set("endOffset", js.undefined)
+    def setMaxApiCalls(value: Double): Self = StObject.set(x, "maxApiCalls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeTrailingDelimiter(value: Boolean): Self = this.set("includeTrailingDelimiter", value.asInstanceOf[js.Any])
+    def setMaxApiCallsUndefined: Self = StObject.set(x, "maxApiCalls", js.undefined)
     
     @scala.inline
-    def deleteIncludeTrailingDelimiter: Self = this.set("includeTrailingDelimiter", js.undefined)
+    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxApiCalls(value: Double): Self = this.set("maxApiCalls", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteMaxApiCalls: Self = this.set("maxApiCalls", js.undefined)
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
     @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setStartOffset(value: String): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    def setStartOffsetUndefined: Self = StObject.set(x, "startOffset", js.undefined)
     
     @scala.inline
-    def deletePrefix: Self = this.set("prefix", js.undefined)
+    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartOffset(value: String): Self = this.set("startOffset", value.asInstanceOf[js.Any])
+    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
     
     @scala.inline
-    def deleteStartOffset: Self = this.set("startOffset", js.undefined)
+    def setVersions(value: Boolean): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserProject(value: String): Self = this.set("userProject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserProject: Self = this.set("userProject", js.undefined)
-    
-    @scala.inline
-    def setVersions(value: Boolean): Self = this.set("versions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersions: Self = this.set("versions", js.undefined)
+    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
   }
 }

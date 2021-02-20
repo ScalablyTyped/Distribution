@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientApigateway.gapi.client.apigateway
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApigatewayListApiConfigsResponse extends js.Object {
+trait ApigatewayListApiConfigsResponse extends StObject {
   
   /** API Configs. */
   var apiConfigs: js.UndefOr[js.Array[ApigatewayApiConfig]] = js.native
@@ -25,42 +26,30 @@ object ApigatewayListApiConfigsResponse {
   }
   
   @scala.inline
-  implicit class ApigatewayListApiConfigsResponseOps[Self <: ApigatewayListApiConfigsResponse] (val x: Self) extends AnyVal {
+  implicit class ApigatewayListApiConfigsResponseMutableBuilder[Self <: ApigatewayListApiConfigsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiConfigs(value: js.Array[ApigatewayApiConfig]): Self = StObject.set(x, "apiConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiConfigsUndefined: Self = StObject.set(x, "apiConfigs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApiConfigsVarargs(value: ApigatewayApiConfig*): Self = StObject.set(x, "apiConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setApiConfigsVarargs(value: ApigatewayApiConfig*): Self = this.set("apiConfigs", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiConfigs(value: js.Array[ApigatewayApiConfig]): Self = this.set("apiConfigs", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteApiConfigs: Self = this.set("apiConfigs", js.undefined)
+    def setUnreachableLocations(value: js.Array[String]): Self = StObject.set(x, "unreachableLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setUnreachableLocationsUndefined: Self = StObject.set(x, "unreachableLocations", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setUnreachableLocationsVarargs(value: String*): Self = this.set("unreachableLocations", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnreachableLocations(value: js.Array[String]): Self = this.set("unreachableLocations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnreachableLocations: Self = this.set("unreachableLocations", js.undefined)
+    def setUnreachableLocationsVarargs(value: String*): Self = StObject.set(x, "unreachableLocations", js.Array(value :_*))
   }
 }

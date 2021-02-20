@@ -1,11 +1,12 @@
 package typings.awsSdk.eksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Logging extends js.Object {
+trait Logging extends StObject {
   
   /**
     * The cluster control plane logging configuration for your cluster.
@@ -21,27 +22,15 @@ object Logging {
   }
   
   @scala.inline
-  implicit class LoggingOps[Self <: Logging] (val x: Self) extends AnyVal {
+  implicit class LoggingMutableBuilder[Self <: Logging] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterLogging(value: LogSetups): Self = StObject.set(x, "clusterLogging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterLoggingUndefined: Self = StObject.set(x, "clusterLogging", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClusterLoggingVarargs(value: LogSetup*): Self = this.set("clusterLogging", js.Array(value :_*))
-    
-    @scala.inline
-    def setClusterLogging(value: LogSetups): Self = this.set("clusterLogging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClusterLogging: Self = this.set("clusterLogging", js.undefined)
+    def setClusterLoggingVarargs(value: LogSetup*): Self = StObject.set(x, "clusterLogging", js.Array(value :_*))
   }
 }

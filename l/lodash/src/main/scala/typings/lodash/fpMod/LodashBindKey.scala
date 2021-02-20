@@ -6,12 +6,13 @@ import typings.lodash.mod.List
 import typings.lodash.mod.Object
 import typings.lodash.mod.Primitive
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashBindKey extends js.Object {
+trait LodashBindKey extends StObject {
   
   def apply(`object`: js.Object): LodashBindKey1x1 = js.native
   def apply(`object`: js.Object, key: String): js.Function1[/* repeated */ js.Any, _] = js.native

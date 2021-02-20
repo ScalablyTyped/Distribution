@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttributeContext extends js.Object {
+trait AttributeContext extends StObject {
   
   /** Represents an API operation that is involved to a network activity. */
   var api: js.UndefOr[Api] = js.native
@@ -50,38 +51,19 @@ object AttributeContext {
   }
   
   @scala.inline
-  implicit class AttributeContextOps[Self <: AttributeContext] (val x: Self) extends AnyVal {
+  implicit class AttributeContextMutableBuilder[Self <: AttributeContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApi(value: Api): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestination(value: Peer): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApi(value: Api): Self = this.set("api", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApi: Self = this.set("api", js.undefined)
-    
-    @scala.inline
-    def setDestination(value: Peer): Self = this.set("destination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestination: Self = this.set("destination", js.undefined)
-    
-    @scala.inline
-    def setExtensionsVarargs(
-      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AttributeContext with TopLevel[js.Any])*
-    ): Self = this.set("extensions", js.Array(value :_*))
+    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
     @scala.inline
     def setExtensions(
@@ -90,39 +72,46 @@ object AttributeContext {
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AttributeContext with TopLevel[js.Any]
         ]
-    ): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def setOrigin(value: Peer): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setExtensionsVarargs(
+      value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in string ]: any}
+      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AttributeContext with TopLevel[js.Any])*
+    ): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def setOrigin(value: Peer): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest(value: Request): Self = this.set("request", value.asInstanceOf[js.Any])
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
+    def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: Resource): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: Response): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     @scala.inline
-    def deleteResponse: Self = this.set("response", js.undefined)
+    def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: Peer): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSource(value: Peer): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

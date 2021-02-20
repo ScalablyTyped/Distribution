@@ -1,14 +1,15 @@
 package typings.kiiCloudSdk.KiiCloud
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait KiiACLAction extends js.Object
+sealed trait KiiACLAction extends StObject
 @JSGlobal("KiiCloud.KiiACLAction")
 @js.native
-object KiiACLAction extends js.Object {
+object KiiACLAction extends StObject {
   
   @js.native
   sealed trait KiiACLBucketActionCreateObjects extends KiiACLAction

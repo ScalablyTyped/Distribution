@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Access and modify value groups in pivot tables.
   */
 @js.native
-trait PivotValue extends js.Object {
+trait PivotValue extends StObject {
   
   def getDisplayType(): PivotValueDisplayType = js.native
   
@@ -44,42 +45,30 @@ object PivotValue {
   }
   
   @scala.inline
-  implicit class PivotValueOps[Self <: PivotValue] (val x: Self) extends AnyVal {
+  implicit class PivotValueMutableBuilder[Self <: PivotValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDisplayType(value: () => PivotValueDisplayType): Self = StObject.set(x, "getDisplayType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFormula(value: () => String | Null): Self = StObject.set(x, "getFormula", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPivotTable(value: () => PivotTable): Self = StObject.set(x, "getPivotTable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDisplayType(value: () => PivotValueDisplayType): Self = this.set("getDisplayType", js.Any.fromFunction0(value))
+    def setGetSummarizedBy(value: () => PivotTableSummarizeFunction): Self = StObject.set(x, "getSummarizedBy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFormula(value: () => String | Null): Self = this.set("getFormula", js.Any.fromFunction0(value))
+    def setSetDisplayName(value: String => PivotValue): Self = StObject.set(x, "setDisplayName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPivotTable(value: () => PivotTable): Self = this.set("getPivotTable", js.Any.fromFunction0(value))
+    def setSetFormula(value: String => PivotValue): Self = StObject.set(x, "setFormula", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSummarizedBy(value: () => PivotTableSummarizeFunction): Self = this.set("getSummarizedBy", js.Any.fromFunction0(value))
+    def setShowAs(value: PivotValueDisplayType => PivotValue): Self = StObject.set(x, "showAs", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDisplayName(value: String => PivotValue): Self = this.set("setDisplayName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetFormula(value: String => PivotValue): Self = this.set("setFormula", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowAs(value: PivotValueDisplayType => PivotValue): Self = this.set("showAs", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSummarizeBy(value: PivotTableSummarizeFunction => PivotValue): Self = this.set("summarizeBy", js.Any.fromFunction1(value))
+    def setSummarizeBy(value: PivotTableSummarizeFunction => PivotValue): Self = StObject.set(x, "summarizeBy", js.Any.fromFunction1(value))
   }
 }

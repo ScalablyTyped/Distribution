@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class MultiObserver[T] ()
   extends typings.babylonjs.BABYLON.MultiObserver[T]
 /* static members */
-@JSGlobal("BABYLON.MultiObserver")
-@js.native
-object MultiObserver extends js.Object {
+object MultiObserver {
   
   /**
     * Raise a callback when one of the observable will notify
@@ -21,21 +20,29 @@ object MultiObserver extends js.Object {
     * @param scope defines the current scope used to restore the JS context
     * @returns the new MultiObserver
     */
+  @JSGlobal("BABYLON.MultiObserver.Watch")
+  @js.native
   def Watch[T](
     observables: js.Array[typings.babylonjs.BABYLON.Observable[T]],
     callback: js.Function2[/* eventData */ T, /* eventState */ typings.babylonjs.BABYLON.EventState, Unit]
   ): typings.babylonjs.BABYLON.MultiObserver[T] = js.native
+  @JSGlobal("BABYLON.MultiObserver.Watch")
+  @js.native
   def Watch[T](
     observables: js.Array[typings.babylonjs.BABYLON.Observable[T]],
     callback: js.Function2[/* eventData */ T, /* eventState */ typings.babylonjs.BABYLON.EventState, Unit],
     mask: js.UndefOr[scala.Nothing],
     scope: js.Any
   ): typings.babylonjs.BABYLON.MultiObserver[T] = js.native
+  @JSGlobal("BABYLON.MultiObserver.Watch")
+  @js.native
   def Watch[T](
     observables: js.Array[typings.babylonjs.BABYLON.Observable[T]],
     callback: js.Function2[/* eventData */ T, /* eventState */ typings.babylonjs.BABYLON.EventState, Unit],
     mask: Double
   ): typings.babylonjs.BABYLON.MultiObserver[T] = js.native
+  @JSGlobal("BABYLON.MultiObserver.Watch")
+  @js.native
   def Watch[T](
     observables: js.Array[typings.babylonjs.BABYLON.Observable[T]],
     callback: js.Function2[/* eventData */ T, /* eventState */ typings.babylonjs.BABYLON.EventState, Unit],

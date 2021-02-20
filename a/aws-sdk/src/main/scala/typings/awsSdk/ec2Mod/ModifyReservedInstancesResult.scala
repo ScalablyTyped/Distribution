@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyReservedInstancesResult extends js.Object {
+trait ModifyReservedInstancesResult extends StObject {
   
   /**
     * The ID for the modification.
@@ -21,24 +22,12 @@ object ModifyReservedInstancesResult {
   }
   
   @scala.inline
-  implicit class ModifyReservedInstancesResultOps[Self <: ModifyReservedInstancesResult] (val x: Self) extends AnyVal {
+  implicit class ModifyReservedInstancesResultMutableBuilder[Self <: ModifyReservedInstancesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReservedInstancesModificationId(value: String): Self = StObject.set(x, "ReservedInstancesModificationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReservedInstancesModificationId(value: String): Self = this.set("ReservedInstancesModificationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservedInstancesModificationId: Self = this.set("ReservedInstancesModificationId", js.undefined)
+    def setReservedInstancesModificationIdUndefined: Self = StObject.set(x, "ReservedInstancesModificationId", js.undefined)
   }
 }

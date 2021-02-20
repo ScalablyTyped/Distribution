@@ -2,16 +2,15 @@ package typings.expressValidator
 
 import typings.expressValidator.baseMod.CustomSanitizer
 import typings.expressValidator.optionsMod.NormalizeEmailOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("express-validator/src/chain/sanitizers", JSImport.Namespace)
-@js.native
-object sanitizersMod extends js.Object {
+object sanitizersMod {
   
   @js.native
-  trait Sanitizers[Return] extends js.Object {
+  trait Sanitizers[Return] extends StObject {
     
     def blacklist(chars: String): Return = js.native
     

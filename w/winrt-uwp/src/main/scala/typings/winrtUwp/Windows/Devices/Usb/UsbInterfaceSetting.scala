@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Devices.Usb
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an alternate setting and select that setting. The app can get the USB interface descriptors for the setting and its endpoints, and determine whether this setting is currently selected. */
 @js.native
-trait UsbInterfaceSetting extends js.Object {
+trait UsbInterfaceSetting extends StObject {
   
   /** Gets an array of objects that represent descriptors associated with USB bulk IN endpoints that are defined in the alternate setting. */
   var bulkInEndpoints: IVectorView[UsbBulkInEndpointDescriptor] = js.native
@@ -55,42 +56,30 @@ object UsbInterfaceSetting {
   }
   
   @scala.inline
-  implicit class UsbInterfaceSettingOps[Self <: UsbInterfaceSetting] (val x: Self) extends AnyVal {
+  implicit class UsbInterfaceSettingMutableBuilder[Self <: UsbInterfaceSetting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBulkInEndpoints(value: IVectorView[UsbBulkInEndpointDescriptor]): Self = StObject.set(x, "bulkInEndpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBulkOutEndpoints(value: IVectorView[UsbBulkOutEndpointDescriptor]): Self = StObject.set(x, "bulkOutEndpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptors(value: IVectorView[UsbDescriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulkInEndpoints(value: IVectorView[UsbBulkInEndpointDescriptor]): Self = this.set("bulkInEndpoints", value.asInstanceOf[js.Any])
+    def setInterfaceDescriptor(value: UsbInterfaceDescriptor): Self = StObject.set(x, "interfaceDescriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulkOutEndpoints(value: IVectorView[UsbBulkOutEndpointDescriptor]): Self = this.set("bulkOutEndpoints", value.asInstanceOf[js.Any])
+    def setInterruptInEndpoints(value: IVectorView[UsbInterruptInEndpointDescriptor]): Self = StObject.set(x, "interruptInEndpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptors(value: IVectorView[UsbDescriptor]): Self = this.set("descriptors", value.asInstanceOf[js.Any])
+    def setInterruptOutEndpoints(value: IVectorView[UsbInterruptOutEndpointDescriptor]): Self = StObject.set(x, "interruptOutEndpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterfaceDescriptor(value: UsbInterfaceDescriptor): Self = this.set("interfaceDescriptor", value.asInstanceOf[js.Any])
+    def setSelectSettingAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "selectSettingAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInterruptInEndpoints(value: IVectorView[UsbInterruptInEndpointDescriptor]): Self = this.set("interruptInEndpoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInterruptOutEndpoints(value: IVectorView[UsbInterruptOutEndpointDescriptor]): Self = this.set("interruptOutEndpoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectSettingAsync(value: () => IPromiseWithIAsyncAction): Self = this.set("selectSettingAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
   }
 }

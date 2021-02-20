@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentitytoolkitRelyingpartyEmailLinkSigninRequest extends js.Object {
+trait IdentitytoolkitRelyingpartyEmailLinkSigninRequest extends StObject {
   
   /** The email address of the user. */
   var email: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object IdentitytoolkitRelyingpartyEmailLinkSigninRequest {
   }
   
   @scala.inline
-  implicit class IdentitytoolkitRelyingpartyEmailLinkSigninRequestOps[Self <: IdentitytoolkitRelyingpartyEmailLinkSigninRequest] (val x: Self) extends AnyVal {
+  implicit class IdentitytoolkitRelyingpartyEmailLinkSigninRequestMutableBuilder[Self <: IdentitytoolkitRelyingpartyEmailLinkSigninRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setOobCode(value: String): Self = StObject.set(x, "oobCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdToken(value: String): Self = this.set("idToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdToken: Self = this.set("idToken", js.undefined)
-    
-    @scala.inline
-    def setOobCode(value: String): Self = this.set("oobCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOobCode: Self = this.set("oobCode", js.undefined)
+    def setOobCodeUndefined: Self = StObject.set(x, "oobCode", js.undefined)
   }
 }

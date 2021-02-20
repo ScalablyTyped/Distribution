@@ -1,19 +1,29 @@
 package typings.antdMobileRn
 
 import typings.antdMobileRn.anon.ColorString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd-mobile-rn/lib/slider/style/index.native", JSImport.Namespace)
-@js.native
-object sliderStyleIndexNativeMod extends js.Object {
+object sliderStyleIndexNativeMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
-    var maximum: ColorString = js.native
+    @JSImport("antd-mobile-rn/lib/slider/style/index.native", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    var minimum: ColorString = js.native
+    @JSImport("antd-mobile-rn/lib/slider/style/index.native", "default.maximum")
+    @js.native
+    def maximum: ColorString = js.native
+    @scala.inline
+    def maximum_=(x: ColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maximum")(x.asInstanceOf[js.Any])
+    
+    @JSImport("antd-mobile-rn/lib/slider/style/index.native", "default.minimum")
+    @js.native
+    def minimum: ColorString = js.native
+    @scala.inline
+    def minimum_=(x: ColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minimum")(x.asInstanceOf[js.Any])
   }
 }

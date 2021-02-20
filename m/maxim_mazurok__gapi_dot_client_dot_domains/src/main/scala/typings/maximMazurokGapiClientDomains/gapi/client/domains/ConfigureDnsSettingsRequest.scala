@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigureDnsSettingsRequest extends js.Object {
+trait ConfigureDnsSettingsRequest extends StObject {
   
   /** Fields of the `DnsSettings` to update. */
   var dnsSettings: js.UndefOr[DnsSettings] = js.native
@@ -29,36 +30,24 @@ object ConfigureDnsSettingsRequest {
   }
   
   @scala.inline
-  implicit class ConfigureDnsSettingsRequestOps[Self <: ConfigureDnsSettingsRequest] (val x: Self) extends AnyVal {
+  implicit class ConfigureDnsSettingsRequestMutableBuilder[Self <: ConfigureDnsSettingsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDnsSettings(value: DnsSettings): Self = StObject.set(x, "dnsSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDnsSettingsUndefined: Self = StObject.set(x, "dnsSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsSettings(value: DnsSettings): Self = this.set("dnsSettings", value.asInstanceOf[js.Any])
+    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     @scala.inline
-    def deleteDnsSettings: Self = this.set("dnsSettings", js.undefined)
+    def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateMask(value: String): Self = this.set("updateMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateMask: Self = this.set("updateMask", js.undefined)
-    
-    @scala.inline
-    def setValidateOnly(value: Boolean): Self = this.set("validateOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidateOnly: Self = this.set("validateOnly", js.undefined)
+    def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
   }
 }

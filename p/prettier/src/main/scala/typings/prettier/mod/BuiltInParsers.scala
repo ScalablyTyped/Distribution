@@ -1,12 +1,13 @@
 package typings.prettier.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Record<prettier.prettier.BuiltInParserName, prettier.prettier.BuiltInParser> */
 @js.native
-trait BuiltInParsers extends js.Object {
+trait BuiltInParsers extends StObject {
   
   def angular(text: String): AST = js.native
   def angular(text: String, options: js.Any): AST = js.native

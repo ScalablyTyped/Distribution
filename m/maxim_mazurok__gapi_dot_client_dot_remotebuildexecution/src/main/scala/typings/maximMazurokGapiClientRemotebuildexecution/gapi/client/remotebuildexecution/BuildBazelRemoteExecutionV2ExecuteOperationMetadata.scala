@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildBazelRemoteExecutionV2ExecuteOperationMetadata extends js.Object {
+trait BuildBazelRemoteExecutionV2ExecuteOperationMetadata extends StObject {
   
   /** The digest of the Action being executed. */
   var actionDigest: js.UndefOr[BuildBazelRemoteExecutionV2Digest] = js.native
@@ -28,42 +29,30 @@ object BuildBazelRemoteExecutionV2ExecuteOperationMetadata {
   }
   
   @scala.inline
-  implicit class BuildBazelRemoteExecutionV2ExecuteOperationMetadataOps[Self <: BuildBazelRemoteExecutionV2ExecuteOperationMetadata] (val x: Self) extends AnyVal {
+  implicit class BuildBazelRemoteExecutionV2ExecuteOperationMetadataMutableBuilder[Self <: BuildBazelRemoteExecutionV2ExecuteOperationMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionDigest(value: BuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "actionDigest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionDigestUndefined: Self = StObject.set(x, "actionDigest", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionDigest(value: BuildBazelRemoteExecutionV2Digest): Self = this.set("actionDigest", value.asInstanceOf[js.Any])
+    def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
     
     @scala.inline
-    def deleteActionDigest: Self = this.set("actionDigest", js.undefined)
+    def setStderrStreamName(value: String): Self = StObject.set(x, "stderrStreamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStage(value: String): Self = this.set("stage", value.asInstanceOf[js.Any])
+    def setStderrStreamNameUndefined: Self = StObject.set(x, "stderrStreamName", js.undefined)
     
     @scala.inline
-    def deleteStage: Self = this.set("stage", js.undefined)
+    def setStdoutStreamName(value: String): Self = StObject.set(x, "stdoutStreamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStderrStreamName(value: String): Self = this.set("stderrStreamName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStderrStreamName: Self = this.set("stderrStreamName", js.undefined)
-    
-    @scala.inline
-    def setStdoutStreamName(value: String): Self = this.set("stdoutStreamName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStdoutStreamName: Self = this.set("stdoutStreamName", js.undefined)
+    def setStdoutStreamNameUndefined: Self = StObject.set(x, "stdoutStreamName", js.undefined)
   }
 }

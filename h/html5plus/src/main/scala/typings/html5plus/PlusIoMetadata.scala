@@ -1,6 +1,7 @@
 package typings.html5plus
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
   */
 @js.native
-trait PlusIoMetadata extends js.Object {
+trait PlusIoMetadata extends StObject {
   
   /**
     * 包含的子目录数
@@ -54,42 +55,30 @@ object PlusIoMetadata {
   }
   
   @scala.inline
-  implicit class PlusIoMetadataOps[Self <: PlusIoMetadata] (val x: Self) extends AnyVal {
+  implicit class PlusIoMetadataMutableBuilder[Self <: PlusIoMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectoryCount(value: Double): Self = StObject.set(x, "directoryCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectoryCountUndefined: Self = StObject.set(x, "directoryCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileCount(value: Double): Self = StObject.set(x, "fileCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryCount(value: Double): Self = this.set("directoryCount", value.asInstanceOf[js.Any])
+    def setFileCountUndefined: Self = StObject.set(x, "fileCount", js.undefined)
     
     @scala.inline
-    def deleteDirectoryCount: Self = this.set("directoryCount", js.undefined)
+    def setModificationTime(value: Date): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileCount(value: Double): Self = this.set("fileCount", value.asInstanceOf[js.Any])
+    def setModificationTimeUndefined: Self = StObject.set(x, "modificationTime", js.undefined)
     
     @scala.inline
-    def deleteFileCount: Self = this.set("fileCount", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModificationTime(value: Date): Self = this.set("modificationTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModificationTime: Self = this.set("modificationTime", js.undefined)
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

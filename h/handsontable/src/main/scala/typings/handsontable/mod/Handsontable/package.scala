@@ -1,5 +1,6 @@
 package typings.handsontable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,6 +24,9 @@ package object Handsontable {
     * A cell value, which can be anything to support custom cell data types, but by default is `string | number | boolean | undefined`.
     */
   type CellValue = js.Any
+  
+  /* was `typeof _Handsontable.Core` */
+  type Core = typings.handsontable.mod._Handsontable.Core
   
   /**
     * A row object, one of the two ways to supply data to the table, the alternative being an array of values.

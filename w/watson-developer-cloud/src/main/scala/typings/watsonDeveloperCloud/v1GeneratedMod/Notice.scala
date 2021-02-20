@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A notice produced for the collection. */
 @js.native
-trait Notice extends js.Object {
+trait Notice extends StObject {
   
   /** The creation date of the collection in the format yyyy-MM-dd'T'HH:mm:ss.SSS'Z'. */
   var created: js.UndefOr[String] = js.native
@@ -38,60 +39,48 @@ object Notice {
   }
   
   @scala.inline
-  implicit class NoticeOps[Self <: Notice] (val x: Self) extends AnyVal {
+  implicit class NoticeMutableBuilder[Self <: Notice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: String): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setDocument_id(value: String): Self = StObject.set(x, "document_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDocument_idUndefined: Self = StObject.set(x, "document_id", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setNotice_id(value: String): Self = StObject.set(x, "notice_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument_id(value: String): Self = this.set("document_id", value.asInstanceOf[js.Any])
+    def setNotice_idUndefined: Self = StObject.set(x, "notice_id", js.undefined)
     
     @scala.inline
-    def deleteDocument_id: Self = this.set("document_id", js.undefined)
+    def setQuery_id(value: String): Self = StObject.set(x, "query_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotice_id(value: String): Self = this.set("notice_id", value.asInstanceOf[js.Any])
+    def setQuery_idUndefined: Self = StObject.set(x, "query_id", js.undefined)
     
     @scala.inline
-    def deleteNotice_id: Self = this.set("notice_id", js.undefined)
+    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery_id(value: String): Self = this.set("query_id", value.asInstanceOf[js.Any])
+    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
     @scala.inline
-    def deleteQuery_id: Self = this.set("query_id", js.undefined)
+    def setStep(value: String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeverity(value: String): Self = this.set("severity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeverity: Self = this.set("severity", js.undefined)
-    
-    @scala.inline
-    def setStep(value: String): Self = this.set("step", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

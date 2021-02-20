@@ -2,12 +2,13 @@ package typings.wegameApi
 
 import typings.wegameApi.wx.types.ButtonStyle
 import typings.wegameApi.wx.types.ButtonType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatedButton extends js.Object {
+trait CreatedButton extends StObject {
   
   def destroy(): Unit = js.native
   
@@ -15,7 +16,7 @@ trait CreatedButton extends js.Object {
   
   var image: String = js.native
   
-     // res参数会被具体按钮的API定义覆盖为具体信息
+  // res参数会被具体按钮的API定义覆盖为具体信息
   def offTap(callback: js.Function1[/* res */ js.UndefOr[js.Any], Unit]): Unit = js.native
   
   def onTap(callback: js.Function1[/* res */ js.UndefOr[js.Any], Unit]): Unit = js.native
@@ -48,45 +49,33 @@ object CreatedButton {
   }
   
   @scala.inline
-  implicit class CreatedButtonOps[Self <: CreatedButton] (val x: Self) extends AnyVal {
+  implicit class CreatedButtonMutableBuilder[Self <: CreatedButton] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setOffTap(value: js.Function1[/* res */ js.UndefOr[js.Any], Unit] => Unit): Self = StObject.set(x, "offTap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHide(value: () => Unit): Self = this.set("hide", js.Any.fromFunction0(value))
+    def setOnTap(value: js.Function1[/* res */ js.UndefOr[js.Any], Unit] => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOffTap(value: js.Function1[/* res */ js.UndefOr[js.Any], Unit] => Unit): Self = this.set("offTap", js.Any.fromFunction1(value))
+    def setStyle(value: ButtonStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTap(value: js.Function1[/* res */ js.UndefOr[js.Any], Unit] => Unit): Self = this.set("onTap", js.Any.fromFunction1(value))
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: () => Unit): Self = this.set("show", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStyle(value: ButtonStyle): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: ButtonType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: ButtonType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

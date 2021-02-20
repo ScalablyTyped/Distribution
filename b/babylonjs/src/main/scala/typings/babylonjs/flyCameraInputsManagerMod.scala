@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.cameraInputsManagerMod.CameraInputsManager
 import typings.babylonjs.flyCameraMod.FlyCamera
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Cameras/flyCameraInputsManager", JSImport.Namespace)
-@js.native
-object flyCameraInputsManagerMod extends js.Object {
+object flyCameraInputsManagerMod {
   
+  @JSImport("babylonjs/Cameras/flyCameraInputsManager", "FlyCameraInputsManager")
   @js.native
   class FlyCameraInputsManager protected () extends CameraInputsManager[FlyCamera] {
     /**

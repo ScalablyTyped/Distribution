@@ -2,12 +2,13 @@ package typings.androiduix.android.view
 
 import typings.androiduix.android.graphics.Point
 import typings.androiduix.android.graphics.Rect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewParent extends js.Object {
+trait ViewParent extends StObject {
   
   def bringChildToFront(child: View): js.Any = js.native
   
@@ -64,63 +65,51 @@ object ViewParent {
   }
   
   @scala.inline
-  implicit class ViewParentOps[Self <: ViewParent] (val x: Self) extends AnyVal {
+  implicit class ViewParentMutableBuilder[Self <: ViewParent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBringChildToFront(value: View => js.Any): Self = StObject.set(x, "bringChildToFront", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildDrawableStateChanged(value: View => js.Any): Self = StObject.set(x, "childDrawableStateChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildHasTransientStateChanged(value: (View, Boolean) => js.Any): Self = StObject.set(x, "childHasTransientStateChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBringChildToFront(value: View => js.Any): Self = this.set("bringChildToFront", js.Any.fromFunction1(value))
+    def setClearChildFocus(value: View => js.Any): Self = StObject.set(x, "clearChildFocus", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChildDrawableStateChanged(value: View => js.Any): Self = this.set("childDrawableStateChanged", js.Any.fromFunction1(value))
+    def setFocusSearch(value: (View, Double) => View): Self = StObject.set(x, "focusSearch", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setChildHasTransientStateChanged(value: (View, Boolean) => js.Any): Self = this.set("childHasTransientStateChanged", js.Any.fromFunction2(value))
+    def setFocusableViewAvailable(value: View => js.Any): Self = StObject.set(x, "focusableViewAvailable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClearChildFocus(value: View => js.Any): Self = this.set("clearChildFocus", js.Any.fromFunction1(value))
+    def setGetChildVisibleRect(value: (View, Rect, Point) => Boolean): Self = StObject.set(x, "getChildVisibleRect", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setFocusSearch(value: (View, Double) => View): Self = this.set("focusSearch", js.Any.fromFunction2(value))
+    def setGetParent(value: () => ViewParent): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFocusableViewAvailable(value: View => js.Any): Self = this.set("focusableViewAvailable", js.Any.fromFunction1(value))
+    def setInvalidateChild(value: (View, Rect) => js.Any): Self = StObject.set(x, "invalidateChild", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetChildVisibleRect(value: (View, Rect, Point) => Boolean): Self = this.set("getChildVisibleRect", js.Any.fromFunction3(value))
+    def setInvalidateChildInParent(value: (js.Array[Double], Rect) => ViewParent): Self = StObject.set(x, "invalidateChildInParent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetParent(value: () => ViewParent): Self = this.set("getParent", js.Any.fromFunction0(value))
+    def setIsLayoutRequested(value: () => Boolean): Self = StObject.set(x, "isLayoutRequested", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInvalidateChild(value: (View, Rect) => js.Any): Self = this.set("invalidateChild", js.Any.fromFunction2(value))
+    def setRequestChildFocus(value: (View, View) => js.Any): Self = StObject.set(x, "requestChildFocus", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInvalidateChildInParent(value: (js.Array[Double], Rect) => ViewParent): Self = this.set("invalidateChildInParent", js.Any.fromFunction2(value))
+    def setRequestChildRectangleOnScreen(value: (View, Rect, Boolean) => Boolean): Self = StObject.set(x, "requestChildRectangleOnScreen", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setIsLayoutRequested(value: () => Boolean): Self = this.set("isLayoutRequested", js.Any.fromFunction0(value))
+    def setRequestDisallowInterceptTouchEvent(value: Boolean => js.Any): Self = StObject.set(x, "requestDisallowInterceptTouchEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequestChildFocus(value: (View, View) => js.Any): Self = this.set("requestChildFocus", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRequestChildRectangleOnScreen(value: (View, Rect, Boolean) => Boolean): Self = this.set("requestChildRectangleOnScreen", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setRequestDisallowInterceptTouchEvent(value: Boolean => js.Any): Self = this.set("requestDisallowInterceptTouchEvent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRequestLayout(value: () => js.Any): Self = this.set("requestLayout", js.Any.fromFunction0(value))
+    def setRequestLayout(value: () => js.Any): Self = StObject.set(x, "requestLayout", js.Any.fromFunction0(value))
   }
 }

@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MaterialMode extends js.Object
+sealed trait MaterialMode extends StObject
 @JSGlobal("__esri.CIM.MaterialMode")
 @js.native
-object MaterialMode extends js.Object {
+object MaterialMode extends StObject {
   
   /**
     * Multiply materials and textures with color property.

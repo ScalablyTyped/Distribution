@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrafficRoutingConfig extends js.Object {
+trait TrafficRoutingConfig extends StObject {
   
   /**
     * A configuration that shifts traffic from one version of a Lambda function or ECS task set to another in two increments. The original and target Lambda function versions or ECS task sets are specified in the deployment's AppSpec file.
@@ -31,36 +32,24 @@ object TrafficRoutingConfig {
   }
   
   @scala.inline
-  implicit class TrafficRoutingConfigOps[Self <: TrafficRoutingConfig] (val x: Self) extends AnyVal {
+  implicit class TrafficRoutingConfigMutableBuilder[Self <: TrafficRoutingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTimeBasedCanary(value: TimeBasedCanary): Self = StObject.set(x, "timeBasedCanary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTimeBasedCanaryUndefined: Self = StObject.set(x, "timeBasedCanary", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeBasedLinear(value: TimeBasedLinear): Self = StObject.set(x, "timeBasedLinear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeBasedCanary(value: TimeBasedCanary): Self = this.set("timeBasedCanary", value.asInstanceOf[js.Any])
+    def setTimeBasedLinearUndefined: Self = StObject.set(x, "timeBasedLinear", js.undefined)
     
     @scala.inline
-    def deleteTimeBasedCanary: Self = this.set("timeBasedCanary", js.undefined)
+    def setType(value: TrafficRoutingType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeBasedLinear(value: TimeBasedLinear): Self = this.set("timeBasedLinear", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeBasedLinear: Self = this.set("timeBasedLinear", js.undefined)
-    
-    @scala.inline
-    def setType(value: TrafficRoutingType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

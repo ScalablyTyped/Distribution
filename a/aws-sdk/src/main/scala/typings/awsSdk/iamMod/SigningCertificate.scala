@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SigningCertificate extends js.Object {
+trait SigningCertificate extends StObject {
   
   /**
     * The contents of the signing certificate.
@@ -46,36 +47,24 @@ object SigningCertificate {
   }
   
   @scala.inline
-  implicit class SigningCertificateOps[Self <: SigningCertificate] (val x: Self) extends AnyVal {
+  implicit class SigningCertificateMutableBuilder[Self <: SigningCertificate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateBody(value: certificateBodyType): Self = StObject.set(x, "CertificateBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateId(value: certificateIdType): Self = StObject.set(x, "CertificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateBody(value: certificateBodyType): Self = this.set("CertificateBody", value.asInstanceOf[js.Any])
+    def setUploadDate(value: dateType): Self = StObject.set(x, "UploadDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateId(value: certificateIdType): Self = this.set("CertificateId", value.asInstanceOf[js.Any])
+    def setUploadDateUndefined: Self = StObject.set(x, "UploadDate", js.undefined)
     
     @scala.inline
-    def setStatus(value: statusType): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserName(value: userNameType): Self = this.set("UserName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUploadDate(value: dateType): Self = this.set("UploadDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadDate: Self = this.set("UploadDate", js.undefined)
+    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

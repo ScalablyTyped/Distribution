@@ -1,5 +1,6 @@
 package typings.bingmaps.global.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,12 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides an easy method for geocoding address and searching for points of interest from JavaScript.
   * @requires The Microsoft.Maps.Search module.
   */
-@JSGlobal("Microsoft.Maps.Search")
-@js.native
-object Search extends js.Object {
+object Search {
   
+  @JSGlobal("Microsoft.Maps.Search.MatchCode")
   @js.native
-  object MatchCode extends js.Object {
+  object MatchCode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.bingmaps.Microsoft.Maps.Search.MatchCode with Double] = js.native
@@ -29,8 +29,9 @@ object Search extends js.Object {
     /* 3 */ val upHierarchy: typings.bingmaps.Microsoft.Maps.Search.MatchCode.upHierarchy with Double = js.native
   }
   
+  @JSGlobal("Microsoft.Maps.Search.MatchConfidence")
   @js.native
-  object MatchConfidence extends js.Object {
+  object MatchConfidence extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.bingmaps.Microsoft.Maps.Search.MatchConfidence with Double] = js.native
@@ -44,6 +45,7 @@ object Search extends js.Object {
     /* 3 */ val unknown: typings.bingmaps.Microsoft.Maps.Search.MatchConfidence.unknown with Double = js.native
   }
   
+  @JSGlobal("Microsoft.Maps.Search.SearchManager")
   @js.native
   class SearchManager protected ()
     extends typings.bingmaps.Microsoft.Maps.Search.SearchManager {

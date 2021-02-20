@@ -1,11 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolicyTopic extends js.Object {
+trait PolicyTopic extends StObject {
   
   def getId(): String = js.native
   
@@ -22,27 +23,15 @@ object PolicyTopic {
   }
   
   @scala.inline
-  implicit class PolicyTopicOps[Self <: PolicyTopic] (val x: Self) extends AnyVal {
+  implicit class PolicyTopicMutableBuilder[Self <: PolicyTopic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetId(value: () => String): Self = this.set("getId", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetType(value: () => String): Self = this.set("getType", js.Any.fromFunction0(value))
+    def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
   }
 }

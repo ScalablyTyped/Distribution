@@ -1,13 +1,14 @@
 package typings.stremioAddonSdk
 
 import typings.stremioAddonSdk.mod.Manifest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("stremio-addon-sdk/src/landingTemplate", JSImport.Namespace)
-@js.native
-object landingTemplateMod extends js.Object {
+object landingTemplateMod {
   
+  @JSImport("stremio-addon-sdk/src/landingTemplate", JSImport.Default)
+  @js.native
   def default(addonInterface: Manifest): String = js.native
 }

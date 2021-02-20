@@ -7,14 +7,14 @@ import typings.awsSdkClientLambdaNode.typesDeleteFunctionInputMod.DeleteFunction
 import typings.awsSdkClientLambdaNode.typesDeleteFunctionOutputMod.DeleteFunctionOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/commands/DeleteFunctionCommand", JSImport.Namespace)
-@js.native
-object deleteFunctionCommandMod extends js.Object {
+object deleteFunctionCommandMod {
   
+  @JSImport("@aws-sdk/client-lambda-node/commands/DeleteFunctionCommand", "DeleteFunctionCommand")
   @js.native
   class DeleteFunctionCommand protected () extends Command[
           InputTypesUnion, 

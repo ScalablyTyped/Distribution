@@ -4,19 +4,18 @@ import typings.babylonjs.anon.BottomBaseAt
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Meshes/Builders/boxBuilder", JSImport.Namespace)
-@js.native
-object boxBuilderMod extends js.Object {
+object boxBuilderMod {
   
+  @JSImport("babylonjs/Meshes/Builders/boxBuilder", "BoxBuilder")
   @js.native
-  class BoxBuilder () extends js.Object
+  class BoxBuilder () extends StObject
   /* static members */
-  @js.native
-  object BoxBuilder extends js.Object {
+  object BoxBuilder {
     
     /**
       * Creates a box mesh
@@ -33,7 +32,11 @@ object boxBuilderMod extends js.Object {
       * @param scene defines the hosting scene
       * @returns the box mesh
       */
+    @JSImport("babylonjs/Meshes/Builders/boxBuilder", "BoxBuilder.CreateBox")
+    @js.native
     def CreateBox(name: String, options: BottomBaseAt): Mesh = js.native
+    @JSImport("babylonjs/Meshes/Builders/boxBuilder", "BoxBuilder.CreateBox")
+    @js.native
     def CreateBox(name: String, options: BottomBaseAt, scene: Nullable[Scene]): Mesh = js.native
   }
 }

@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.activexLibreoffice.com_.sun.star.container.XChild
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -166,63 +167,51 @@ object XAnimationNode {
   }
   
   @scala.inline
-  implicit class XAnimationNodeOps[Self <: XAnimationNode] (val x: Self) extends AnyVal {
+  implicit class XAnimationNodeMutableBuilder[Self <: XAnimationNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceleration(value: Double): Self = StObject.set(x, "Acceleration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoReverse(value: Boolean): Self = StObject.set(x, "AutoReverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBegin(value: js.Any): Self = StObject.set(x, "Begin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceleration(value: Double): Self = this.set("Acceleration", value.asInstanceOf[js.Any])
+    def setDecelerate(value: Double): Self = StObject.set(x, "Decelerate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoReverse(value: Boolean): Self = this.set("AutoReverse", value.asInstanceOf[js.Any])
+    def setDuration(value: js.Any): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBegin(value: js.Any): Self = this.set("Begin", value.asInstanceOf[js.Any])
+    def setEnd(value: js.Any): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecelerate(value: Double): Self = this.set("Decelerate", value.asInstanceOf[js.Any])
+    def setEndSync(value: js.Any): Self = StObject.set(x, "EndSync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: js.Any): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    def setFill(value: Double): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: js.Any): Self = this.set("End", value.asInstanceOf[js.Any])
+    def setFillDefault(value: Double): Self = StObject.set(x, "FillDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndSync(value: js.Any): Self = this.set("EndSync", value.asInstanceOf[js.Any])
+    def setRepeatCount(value: js.Any): Self = StObject.set(x, "RepeatCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: Double): Self = this.set("Fill", value.asInstanceOf[js.Any])
+    def setRepeatDuration(value: js.Any): Self = StObject.set(x, "RepeatDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillDefault(value: Double): Self = this.set("FillDefault", value.asInstanceOf[js.Any])
+    def setRestart(value: Double): Self = StObject.set(x, "Restart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeatCount(value: js.Any): Self = this.set("RepeatCount", value.asInstanceOf[js.Any])
+    def setRestartDefault(value: Double): Self = StObject.set(x, "RestartDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeatDuration(value: js.Any): Self = this.set("RepeatDuration", value.asInstanceOf[js.Any])
+    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestart(value: Double): Self = this.set("Restart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRestartDefault(value: Double): Self = this.set("RestartDefault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Double): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserData(value: SafeArray[NamedValue]): Self = this.set("UserData", value.asInstanceOf[js.Any])
+    def setUserData(value: SafeArray[NamedValue]): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
   }
 }

@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.linguistic2
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.2
   */
 @js.native
-trait XLanguageGuessing extends js.Object {
+trait XLanguageGuessing extends StObject {
   
   /**
     * returns a list of all supported languages.
@@ -98,45 +99,33 @@ object XLanguageGuessing {
   }
   
   @scala.inline
-  implicit class XLanguageGuessingOps[Self <: XLanguageGuessing] (val x: Self) extends AnyVal {
+  implicit class XLanguageGuessingMutableBuilder[Self <: XLanguageGuessing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableLanguages(value: SafeArray[Locale]): Self = StObject.set(x, "AvailableLanguages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableLanguages(value: SeqEquiv[Locale] => Unit): Self = StObject.set(x, "disableLanguages", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabledLanguages(value: SafeArray[Locale]): Self = StObject.set(x, "DisabledLanguages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableLanguages(value: SafeArray[Locale]): Self = this.set("AvailableLanguages", value.asInstanceOf[js.Any])
+    def setEnableLanguages(value: SeqEquiv[Locale] => Unit): Self = StObject.set(x, "enableLanguages", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisabledLanguages(value: SafeArray[Locale]): Self = this.set("DisabledLanguages", value.asInstanceOf[js.Any])
+    def setEnabledLanguages(value: SafeArray[Locale]): Self = StObject.set(x, "EnabledLanguages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabledLanguages(value: SafeArray[Locale]): Self = this.set("EnabledLanguages", value.asInstanceOf[js.Any])
+    def setGetAvailableLanguages(value: () => SafeArray[Locale]): Self = StObject.set(x, "getAvailableLanguages", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisableLanguages(value: SeqEquiv[Locale] => Unit): Self = this.set("disableLanguages", js.Any.fromFunction1(value))
+    def setGetDisabledLanguages(value: () => SafeArray[Locale]): Self = StObject.set(x, "getDisabledLanguages", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnableLanguages(value: SeqEquiv[Locale] => Unit): Self = this.set("enableLanguages", js.Any.fromFunction1(value))
+    def setGetEnabledLanguages(value: () => SafeArray[Locale]): Self = StObject.set(x, "getEnabledLanguages", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAvailableLanguages(value: () => SafeArray[Locale]): Self = this.set("getAvailableLanguages", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetDisabledLanguages(value: () => SafeArray[Locale]): Self = this.set("getDisabledLanguages", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetEnabledLanguages(value: () => SafeArray[Locale]): Self = this.set("getEnabledLanguages", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGuessPrimaryLanguage(value: (String, Double, Double) => Locale): Self = this.set("guessPrimaryLanguage", js.Any.fromFunction3(value))
+    def setGuessPrimaryLanguage(value: (String, Double, Double) => Locale): Self = StObject.set(x, "guessPrimaryLanguage", js.Any.fromFunction3(value))
   }
 }

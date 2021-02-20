@@ -1,6 +1,7 @@
 package typings.extjs.Ext.grid
 
 import typings.extjs.Ext.layout.component.IAuto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object IColumnComponentLayout {
   }
   
   @scala.inline
-  implicit class IColumnComponentLayoutOps[Self <: IColumnComponentLayout] (val x: Self) extends AnyVal {
+  implicit class IColumnComponentLayoutMutableBuilder[Self <: IColumnComponentLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeginLayoutCycleUndefined: Self = StObject.set(x, "beginLayoutCycle", js.undefined)
     
     @scala.inline
-    def setBeginLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = this.set("beginLayout", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteBeginLayout: Self = this.set("beginLayout", js.undefined)
-    
-    @scala.inline
-    def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = this.set("beginLayoutCycle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteBeginLayoutCycle: Self = this.set("beginLayoutCycle", js.undefined)
+    def setBeginLayoutUndefined: Self = StObject.set(x, "beginLayout", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.pubsubV1Mod.pubsubV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request for the ModifyPushConfig method.
   */
 @js.native
-trait SchemaModifyPushConfigRequest extends js.Object {
+trait SchemaModifyPushConfigRequest extends StObject {
   
   /**
     * The push configuration for future deliveries.  An empty `pushConfig`
@@ -28,24 +29,12 @@ object SchemaModifyPushConfigRequest {
   }
   
   @scala.inline
-  implicit class SchemaModifyPushConfigRequestOps[Self <: SchemaModifyPushConfigRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaModifyPushConfigRequestMutableBuilder[Self <: SchemaModifyPushConfigRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPushConfig(value: SchemaPushConfig): Self = StObject.set(x, "pushConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPushConfig(value: SchemaPushConfig): Self = this.set("pushConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePushConfig: Self = this.set("pushConfig", js.undefined)
+    def setPushConfigUndefined: Self = StObject.set(x, "pushConfig", js.undefined)
   }
 }

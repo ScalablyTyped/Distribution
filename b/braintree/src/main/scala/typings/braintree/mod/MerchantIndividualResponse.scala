@@ -1,11 +1,12 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MerchantIndividualResponse extends js.Object {
+trait MerchantIndividualResponse extends StObject {
   
   var addressDetails: MerchantAddressDetails = js.native
   
@@ -38,51 +39,39 @@ object MerchantIndividualResponse {
   }
   
   @scala.inline
-  implicit class MerchantIndividualResponseOps[Self <: MerchantIndividualResponse] (val x: Self) extends AnyVal {
+  implicit class MerchantIndividualResponseMutableBuilder[Self <: MerchantIndividualResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressDetails(value: MerchantAddressDetails): Self = StObject.set(x, "addressDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateOfBirth(value: String): Self = StObject.set(x, "dateOfBirth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressDetails(value: MerchantAddressDetails): Self = this.set("addressDetails", value.asInstanceOf[js.Any])
+    def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateOfBirth(value: String): Self = this.set("dateOfBirth", value.asInstanceOf[js.Any])
+    def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstName(value: String): Self = this.set("firstName", value.asInstanceOf[js.Any])
+    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
     
     @scala.inline
-    def setLastName(value: String): Self = this.set("lastName", value.asInstanceOf[js.Any])
+    def setSsn(value: String): Self = StObject.set(x, "ssn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhone(value: String): Self = this.set("phone", value.asInstanceOf[js.Any])
+    def setSsnLast4(value: String): Self = StObject.set(x, "ssnLast4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePhone: Self = this.set("phone", js.undefined)
+    def setSsnLast4Undefined: Self = StObject.set(x, "ssnLast4", js.undefined)
     
     @scala.inline
-    def setSsn(value: String): Self = this.set("ssn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsn: Self = this.set("ssn", js.undefined)
-    
-    @scala.inline
-    def setSsnLast4(value: String): Self = this.set("ssnLast4", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsnLast4: Self = this.set("ssnLast4", js.undefined)
+    def setSsnUndefined: Self = StObject.set(x, "ssn", js.undefined)
   }
 }

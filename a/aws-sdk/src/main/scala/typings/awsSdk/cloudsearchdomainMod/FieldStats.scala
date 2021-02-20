@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudsearchdomainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldStats extends js.Object {
+trait FieldStats extends StObject {
   
   /**
     * The number of documents that contain a value in the specified field in the result set.
@@ -56,66 +57,54 @@ object FieldStats {
   }
   
   @scala.inline
-  implicit class FieldStatsOps[Self <: FieldStats] (val x: Self) extends AnyVal {
+  implicit class FieldStatsMutableBuilder[Self <: FieldStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Long): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setMean(value: String): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: String): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMean(value: String): Self = this.set("mean", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMean: Self = this.set("mean", js.undefined)
+    def setMissing(value: Long): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: String): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMissing(value: Long): Self = this.set("missing", value.asInstanceOf[js.Any])
+    def setStddevUndefined: Self = StObject.set(x, "stddev", js.undefined)
     
     @scala.inline
-    def deleteMissing: Self = this.set("missing", js.undefined)
+    def setSum(value: Double): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStddev(value: Double): Self = this.set("stddev", value.asInstanceOf[js.Any])
+    def setSumOfSquares(value: Double): Self = StObject.set(x, "sumOfSquares", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStddev: Self = this.set("stddev", js.undefined)
+    def setSumOfSquaresUndefined: Self = StObject.set(x, "sumOfSquares", js.undefined)
     
     @scala.inline
-    def setSum(value: Double): Self = this.set("sum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSum: Self = this.set("sum", js.undefined)
-    
-    @scala.inline
-    def setSumOfSquares(value: Double): Self = this.set("sumOfSquares", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSumOfSquares: Self = this.set("sumOfSquares", js.undefined)
+    def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
   }
 }

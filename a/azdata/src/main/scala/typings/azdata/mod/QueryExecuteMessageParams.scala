@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryExecuteMessageParams extends js.Object {
+trait QueryExecuteMessageParams extends StObject {
   
   var message: IResultMessage = js.native
   
@@ -20,24 +21,12 @@ object QueryExecuteMessageParams {
   }
   
   @scala.inline
-  implicit class QueryExecuteMessageParamsOps[Self <: QueryExecuteMessageParams] (val x: Self) extends AnyVal {
+  implicit class QueryExecuteMessageParamsMutableBuilder[Self <: QueryExecuteMessageParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: IResultMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMessage(value: IResultMessage): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOwnerUri(value: String): Self = this.set("ownerUri", value.asInstanceOf[js.Any])
+    def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
   }
 }

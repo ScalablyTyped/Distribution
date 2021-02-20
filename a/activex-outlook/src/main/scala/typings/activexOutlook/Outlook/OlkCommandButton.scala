@@ -2,12 +2,13 @@ package typings.activexOutlook.Outlook
 
 import typings.activexStdole.stdole.StdFont
 import typings.activexStdole.stdole.StdPicture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OlkCommandButton extends js.Object {
+trait OlkCommandButton extends StObject {
   
   var Accelerator: String = js.native
   
@@ -60,57 +61,45 @@ object OlkCommandButton {
   }
   
   @scala.inline
-  implicit class OlkCommandButtonOps[Self <: OlkCommandButton] (val x: Self) extends AnyVal {
+  implicit class OlkCommandButtonMutableBuilder[Self <: OlkCommandButton] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccelerator(value: String): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoSize(value: Boolean): Self = StObject.set(x, "AutoSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccelerator(value: String): Self = this.set("Accelerator", value.asInstanceOf[js.Any])
+    def setDisplayDropArrow(value: Boolean): Self = StObject.set(x, "DisplayDropArrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSize(value: Boolean): Self = this.set("AutoSize", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("Caption", value.asInstanceOf[js.Any])
+    def setFont(value: StdFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayDropArrow(value: Boolean): Self = this.set("DisplayDropArrow", value.asInstanceOf[js.Any])
+    def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setMousePointer(value: OlMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: StdFont): Self = this.set("Font", value.asInstanceOf[js.Any])
+    def setOutlookDotOlkCommandButton_typekey(value: OlkCommandButton): Self = StObject.set(x, "Outlook.OlkCommandButton_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseIcon(value: StdPicture): Self = this.set("MouseIcon", value.asInstanceOf[js.Any])
+    def setPicture(value: StdPicture): Self = StObject.set(x, "Picture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMousePointer(value: OlMousePointer): Self = this.set("MousePointer", value.asInstanceOf[js.Any])
+    def setPictureAlignment(value: OlPictureAlignment): Self = StObject.set(x, "PictureAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotOlkCommandButton_typekey(value: OlkCommandButton): Self = this.set("Outlook.OlkCommandButton_typekey", value.asInstanceOf[js.Any])
+    def setTextAlign(value: OlTextAlign): Self = StObject.set(x, "TextAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPicture(value: StdPicture): Self = this.set("Picture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPictureAlignment(value: OlPictureAlignment): Self = this.set("PictureAlignment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextAlign(value: OlTextAlign): Self = this.set("TextAlign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordWrap(value: Boolean): Self = this.set("WordWrap", value.asInstanceOf[js.Any])
+    def setWordWrap(value: Boolean): Self = StObject.set(x, "WordWrap", value.asInstanceOf[js.Any])
   }
 }

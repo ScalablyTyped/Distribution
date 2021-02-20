@@ -15,12 +15,13 @@ import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedString
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.player
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.self
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.target
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MinecraftFilter extends js.Object {
+trait MinecraftFilter extends StObject {
   
   var all_of: js.UndefOr[js.Array[MinecraftFilter]] = js.native
   
@@ -47,68 +48,56 @@ object MinecraftFilter {
   }
   
   @scala.inline
-  implicit class MinecraftFilterOps[Self <: MinecraftFilter] (val x: Self) extends AnyVal {
+  implicit class MinecraftFilterMutableBuilder[Self <: MinecraftFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll_of(value: js.Array[MinecraftFilter]): Self = StObject.set(x, "all_of", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAll_ofUndefined: Self = StObject.set(x, "all_of", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAll_ofVarargs(value: MinecraftFilter*): Self = StObject.set(x, "all_of", js.Array(value :_*))
     
     @scala.inline
-    def setAll_ofVarargs(value: MinecraftFilter*): Self = this.set("all_of", js.Array(value :_*))
+    def setAny_of(value: js.Array[MinecraftFilter]): Self = StObject.set(x, "any_of", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll_of(value: js.Array[MinecraftFilter]): Self = this.set("all_of", value.asInstanceOf[js.Any])
+    def setAny_ofUndefined: Self = StObject.set(x, "any_of", js.undefined)
     
     @scala.inline
-    def deleteAll_of: Self = this.set("all_of", js.undefined)
+    def setAny_ofVarargs(value: MinecraftFilter*): Self = StObject.set(x, "any_of", js.Array(value :_*))
     
     @scala.inline
-    def setAny_ofVarargs(value: MinecraftFilter*): Self = this.set("any_of", js.Array(value :_*))
+    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAny_of(value: js.Array[MinecraftFilter]): Self = this.set("any_of", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAny_of: Self = this.set("any_of", js.undefined)
-    
-    @scala.inline
-    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
+    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     @scala.inline
     def setOperator(
       value: ExclamationmarkEqualssign | Lessthansign | LessthansignEqualssign | LessthansignGreaterthansign | Equalssign | EqualssignEqualssign | Greaterthansign | GreaterthansignEqualssign | equals | not
-    ): Self = this.set("operator", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOperator: Self = this.set("operator", js.undefined)
+    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
     @scala.inline
-    def setSubject(value: other | parent | player | self | target): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setSubject(value: other | parent | player | self | target): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def setTest(value: String): Self = this.set("test", value.asInstanceOf[js.Any])
+    def setTest(value: String): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTest: Self = this.set("test", js.undefined)
+    def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     
     @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CrawlerTargets extends js.Object {
+trait CrawlerTargets extends StObject {
   
   /**
     * Specifies AWS Glue Data Catalog targets.
@@ -41,63 +42,51 @@ object CrawlerTargets {
   }
   
   @scala.inline
-  implicit class CrawlerTargetsOps[Self <: CrawlerTargets] (val x: Self) extends AnyVal {
+  implicit class CrawlerTargetsMutableBuilder[Self <: CrawlerTargets] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalogTargets(value: CatalogTargetList): Self = StObject.set(x, "CatalogTargets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCatalogTargetsUndefined: Self = StObject.set(x, "CatalogTargets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCatalogTargetsVarargs(value: CatalogTarget*): Self = StObject.set(x, "CatalogTargets", js.Array(value :_*))
     
     @scala.inline
-    def setCatalogTargetsVarargs(value: CatalogTarget*): Self = this.set("CatalogTargets", js.Array(value :_*))
+    def setDynamoDBTargets(value: DynamoDBTargetList): Self = StObject.set(x, "DynamoDBTargets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalogTargets(value: CatalogTargetList): Self = this.set("CatalogTargets", value.asInstanceOf[js.Any])
+    def setDynamoDBTargetsUndefined: Self = StObject.set(x, "DynamoDBTargets", js.undefined)
     
     @scala.inline
-    def deleteCatalogTargets: Self = this.set("CatalogTargets", js.undefined)
+    def setDynamoDBTargetsVarargs(value: DynamoDBTarget*): Self = StObject.set(x, "DynamoDBTargets", js.Array(value :_*))
     
     @scala.inline
-    def setDynamoDBTargetsVarargs(value: DynamoDBTarget*): Self = this.set("DynamoDBTargets", js.Array(value :_*))
+    def setJdbcTargets(value: JdbcTargetList): Self = StObject.set(x, "JdbcTargets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamoDBTargets(value: DynamoDBTargetList): Self = this.set("DynamoDBTargets", value.asInstanceOf[js.Any])
+    def setJdbcTargetsUndefined: Self = StObject.set(x, "JdbcTargets", js.undefined)
     
     @scala.inline
-    def deleteDynamoDBTargets: Self = this.set("DynamoDBTargets", js.undefined)
+    def setJdbcTargetsVarargs(value: JdbcTarget*): Self = StObject.set(x, "JdbcTargets", js.Array(value :_*))
     
     @scala.inline
-    def setJdbcTargetsVarargs(value: JdbcTarget*): Self = this.set("JdbcTargets", js.Array(value :_*))
+    def setMongoDBTargets(value: MongoDBTargetList): Self = StObject.set(x, "MongoDBTargets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJdbcTargets(value: JdbcTargetList): Self = this.set("JdbcTargets", value.asInstanceOf[js.Any])
+    def setMongoDBTargetsUndefined: Self = StObject.set(x, "MongoDBTargets", js.undefined)
     
     @scala.inline
-    def deleteJdbcTargets: Self = this.set("JdbcTargets", js.undefined)
+    def setMongoDBTargetsVarargs(value: MongoDBTarget*): Self = StObject.set(x, "MongoDBTargets", js.Array(value :_*))
     
     @scala.inline
-    def setMongoDBTargetsVarargs(value: MongoDBTarget*): Self = this.set("MongoDBTargets", js.Array(value :_*))
+    def setS3Targets(value: S3TargetList): Self = StObject.set(x, "S3Targets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMongoDBTargets(value: MongoDBTargetList): Self = this.set("MongoDBTargets", value.asInstanceOf[js.Any])
+    def setS3TargetsUndefined: Self = StObject.set(x, "S3Targets", js.undefined)
     
     @scala.inline
-    def deleteMongoDBTargets: Self = this.set("MongoDBTargets", js.undefined)
-    
-    @scala.inline
-    def setS3TargetsVarargs(value: S3Target*): Self = this.set("S3Targets", js.Array(value :_*))
-    
-    @scala.inline
-    def setS3Targets(value: S3TargetList): Self = this.set("S3Targets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Targets: Self = this.set("S3Targets", js.undefined)
+    def setS3TargetsVarargs(value: S3Target*): Self = StObject.set(x, "S3Targets", js.Array(value :_*))
   }
 }

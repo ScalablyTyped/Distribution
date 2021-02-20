@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,24 +39,12 @@ object SwipeVisibleElements {
   }
   
   @scala.inline
-  implicit class SwipeVisibleElementsOps[Self <: SwipeVisibleElements] (val x: Self) extends AnyVal {
+  implicit class SwipeVisibleElementsMutableBuilder[Self <: SwipeVisibleElements] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDivider(value: Boolean): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDivider(value: Boolean): Self = this.set("divider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHandle(value: Boolean): Self = this.set("handle", value.asInstanceOf[js.Any])
+    def setHandle(value: Boolean): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
   }
 }

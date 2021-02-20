@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,93 +94,81 @@ object ViewProperties {
   }
   
   @scala.inline
-  implicit class ViewPropertiesOps[Self <: ViewProperties] (val x: Self) extends AnyVal {
+  implicit class ViewPropertiesMutableBuilder[Self <: ViewProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllLayerViews(value: CollectionProperties[LayerViewProperties]): Self = StObject.set(x, "allLayerViews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllLayerViewsUndefined: Self = StObject.set(x, "allLayerViews", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllLayerViewsVarargs(value: LayerViewProperties*): Self = StObject.set(x, "allLayerViews", js.Array(value :_*))
     
     @scala.inline
-    def setAllLayerViewsVarargs(value: LayerViewProperties*): Self = this.set("allLayerViews", js.Array(value :_*))
+    def setAnimation(value: ViewAnimationProperties): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllLayerViews(value: CollectionProperties[LayerViewProperties]): Self = this.set("allLayerViews", value.asInstanceOf[js.Any])
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def deleteAllLayerViews: Self = this.set("allLayerViews", js.undefined)
+    def setBasemapView(value: BasemapViewProperties): Self = StObject.set(x, "basemapView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: ViewAnimationProperties): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setBasemapViewUndefined: Self = StObject.set(x, "basemapView", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setFatalError(value: Error): Self = StObject.set(x, "fatalError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasemapView(value: BasemapViewProperties): Self = this.set("basemapView", value.asInstanceOf[js.Any])
+    def setFatalErrorUndefined: Self = StObject.set(x, "fatalError", js.undefined)
     
     @scala.inline
-    def deleteBasemapView: Self = this.set("basemapView", js.undefined)
+    def setGraphics(value: CollectionProperties[GraphicProperties]): Self = StObject.set(x, "graphics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFatalError(value: Error): Self = this.set("fatalError", value.asInstanceOf[js.Any])
+    def setGraphicsUndefined: Self = StObject.set(x, "graphics", js.undefined)
     
     @scala.inline
-    def deleteFatalError: Self = this.set("fatalError", js.undefined)
+    def setGraphicsVarargs(value: GraphicProperties*): Self = StObject.set(x, "graphics", js.Array(value :_*))
     
     @scala.inline
-    def setGraphicsVarargs(value: GraphicProperties*): Self = this.set("graphics", js.Array(value :_*))
+    def setLayerViews(value: CollectionProperties[LayerViewProperties]): Self = StObject.set(x, "layerViews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphics(value: CollectionProperties[GraphicProperties]): Self = this.set("graphics", value.asInstanceOf[js.Any])
+    def setLayerViewsUndefined: Self = StObject.set(x, "layerViews", js.undefined)
     
     @scala.inline
-    def deleteGraphics: Self = this.set("graphics", js.undefined)
+    def setLayerViewsVarargs(value: LayerViewProperties*): Self = StObject.set(x, "layerViews", js.Array(value :_*))
     
     @scala.inline
-    def setLayerViewsVarargs(value: LayerViewProperties*): Self = this.set("layerViews", js.Array(value :_*))
+    def setMap(value: MapProperties): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerViews(value: CollectionProperties[LayerViewProperties]): Self = this.set("layerViews", value.asInstanceOf[js.Any])
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteLayerViews: Self = this.set("layerViews", js.undefined)
+    def setNavigation(value: NavigationProperties): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: MapProperties): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setPadding(value: ViewPadding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigation(value: NavigationProperties): Self = this.set("navigation", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteNavigation: Self = this.set("navigation", js.undefined)
+    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: ViewPadding): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = this.set("spatialReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpatialReference: Self = this.set("spatialReference", js.undefined)
-    
-    @scala.inline
-    def setTimeExtent(value: TimeExtentProperties): Self = this.set("timeExtent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeExtent: Self = this.set("timeExtent", js.undefined)
+    def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
   }
 }

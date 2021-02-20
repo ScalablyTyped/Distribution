@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Web.Syndication
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SyndicationFormat extends js.Object
+sealed trait SyndicationFormat extends StObject
 /** Specifies the syndication formats supported by the API. */
 @JSGlobal("Windows.Web.Syndication.SyndicationFormat")
 @js.native
-object SyndicationFormat extends js.Object {
+object SyndicationFormat extends StObject {
   
   /** The API supports the Atom 0.3 format. */
   @js.native

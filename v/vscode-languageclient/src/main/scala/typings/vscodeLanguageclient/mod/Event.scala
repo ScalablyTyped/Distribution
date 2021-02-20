@@ -1,12 +1,13 @@
 package typings.vscodeLanguageclient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "Event")
-@js.native
-object Event extends js.Object {
+object Event {
   
+  @JSImport("vscode-languageclient", "Event.None")
+  @js.native
   val None: typings.vscodeJsonrpc.eventsMod.Event[js.Any] = js.native
 }

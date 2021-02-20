@@ -4,12 +4,13 @@ import typings.nodeRedEditorClient.mod.global.JQuery
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.left
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.right
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Offset extends js.Object {
+trait Offset extends StObject {
   
   var align: js.UndefOr[right | left] = js.native
   
@@ -30,42 +31,30 @@ object Offset {
   }
   
   @scala.inline
-  implicit class OffsetOps[Self <: Offset] (val x: Self) extends AnyVal {
+  implicit class OffsetMutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: right | left): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDispose(value: Boolean): Self = StObject.set(x, "dispose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnclose(value: () => Unit): Self = this.set("onclose", js.Any.fromFunction0(value))
+    def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
     
     @scala.inline
-    def setTarget(value: JQuery[HTMLElement]): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setOffset(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: right | left): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setOnclose(value: () => Unit): Self = StObject.set(x, "onclose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDispose(value: Boolean): Self = this.set("dispose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDispose: Self = this.set("dispose", js.undefined)
-    
-    @scala.inline
-    def setOffset(value: js.Tuple2[Double, Double]): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setTarget(value: JQuery[HTMLElement]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

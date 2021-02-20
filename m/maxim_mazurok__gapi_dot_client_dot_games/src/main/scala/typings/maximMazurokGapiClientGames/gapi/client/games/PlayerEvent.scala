@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGames.gapi.client.games
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlayerEvent extends js.Object {
+trait PlayerEvent extends StObject {
   
   /** The ID of the event definition. */
   var definitionId: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object PlayerEvent {
   }
   
   @scala.inline
-  implicit class PlayerEventOps[Self <: PlayerEvent] (val x: Self) extends AnyVal {
+  implicit class PlayerEventMutableBuilder[Self <: PlayerEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefinitionId(value: String): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefinitionIdUndefined: Self = StObject.set(x, "definitionId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormattedNumEvents(value: String): Self = StObject.set(x, "formattedNumEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionId(value: String): Self = this.set("definitionId", value.asInstanceOf[js.Any])
+    def setFormattedNumEventsUndefined: Self = StObject.set(x, "formattedNumEvents", js.undefined)
     
     @scala.inline
-    def deleteDefinitionId: Self = this.set("definitionId", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormattedNumEvents(value: String): Self = this.set("formattedNumEvents", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteFormattedNumEvents: Self = this.set("formattedNumEvents", js.undefined)
+    def setNumEvents(value: String): Self = StObject.set(x, "numEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNumEventsUndefined: Self = StObject.set(x, "numEvents", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPlayerId(value: String): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumEvents(value: String): Self = this.set("numEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumEvents: Self = this.set("numEvents", js.undefined)
-    
-    @scala.inline
-    def setPlayerId(value: String): Self = this.set("playerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlayerId: Self = this.set("playerId", js.undefined)
+    def setPlayerIdUndefined: Self = StObject.set(x, "playerId", js.undefined)
   }
 }

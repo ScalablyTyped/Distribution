@@ -1,13 +1,12 @@
 package typings.vscodeLanguageserver.mod
 
 import typings.vscodeLanguageserverTypes.mod.DocumentUri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver", "LocationLink")
-@js.native
-object LocationLink extends js.Object {
+object LocationLink {
   
   /**
     * Creates a LocationLink literal.
@@ -16,11 +15,15 @@ object LocationLink extends js.Object {
     * @param targetSelectionRange The span of the symbol definition at the target.
     * @param originSelectionRange The span of the symbol being defined in the originating source file.
     */
+  @JSImport("vscode-languageserver", "LocationLink.create")
+  @js.native
   def create(
     targetUri: DocumentUri,
     targetRange: typings.vscodeLanguageserverTypes.mod.Range,
     targetSelectionRange: typings.vscodeLanguageserverTypes.mod.Range
   ): typings.vscodeLanguageserverTypes.mod.LocationLink = js.native
+  @JSImport("vscode-languageserver", "LocationLink.create")
+  @js.native
   def create(
     targetUri: DocumentUri,
     targetRange: typings.vscodeLanguageserverTypes.mod.Range,
@@ -31,5 +34,7 @@ object LocationLink extends js.Object {
   /**
     * Checks whether the given literal conforms to the [LocationLink](#LocationLink) interface.
     */
+  @JSImport("vscode-languageserver", "LocationLink.is")
+  @js.native
   def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.LocationLink */ Boolean = js.native
 }

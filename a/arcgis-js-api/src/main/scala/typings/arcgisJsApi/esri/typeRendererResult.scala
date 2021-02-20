@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,42 +71,30 @@ object typeRendererResult {
   }
   
   @scala.inline
-  implicit class typeRendererResultOps[Self <: typeRendererResult] (val x: Self) extends AnyVal {
+  implicit class typeRendererResultMutableBuilder[Self <: typeRendererResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasemapTheme(value: String): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedUniqueValueInfos(value: js.Array[_]): Self = StObject.set(x, "excludedUniqueValueInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasemapId(value: String): Self = this.set("basemapId", value.asInstanceOf[js.Any])
+    def setExcludedUniqueValueInfosVarargs(value: js.Any*): Self = StObject.set(x, "excludedUniqueValueInfos", js.Array(value :_*))
     
     @scala.inline
-    def setBasemapTheme(value: String): Self = this.set("basemapTheme", value.asInstanceOf[js.Any])
+    def setRenderer(value: UniqueValueRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedUniqueValueInfosVarargs(value: js.Any*): Self = this.set("excludedUniqueValueInfos", js.Array(value :_*))
+    def setTypeScheme(value: TypeScheme): Self = StObject.set(x, "typeScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedUniqueValueInfos(value: js.Array[_]): Self = this.set("excludedUniqueValueInfos", value.asInstanceOf[js.Any])
+    def setUniqueValueInfos(value: js.Array[typeUniqueValueInfo]): Self = StObject.set(x, "uniqueValueInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderer(value: UniqueValueRenderer): Self = this.set("renderer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeScheme(value: TypeScheme): Self = this.set("typeScheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUniqueValueInfosVarargs(value: typeUniqueValueInfo*): Self = this.set("uniqueValueInfos", js.Array(value :_*))
-    
-    @scala.inline
-    def setUniqueValueInfos(value: js.Array[typeUniqueValueInfo]): Self = this.set("uniqueValueInfos", value.asInstanceOf[js.Any])
+    def setUniqueValueInfosVarargs(value: typeUniqueValueInfo*): Self = StObject.set(x, "uniqueValueInfos", js.Array(value :_*))
   }
 }

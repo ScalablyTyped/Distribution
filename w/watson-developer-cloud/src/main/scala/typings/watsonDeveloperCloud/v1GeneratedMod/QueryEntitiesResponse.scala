@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object that contains an array of entities resulting from the query. */
 @js.native
-trait QueryEntitiesResponse extends js.Object {
+trait QueryEntitiesResponse extends StObject {
   
   /** Array of entities that results from the query. */
   var entities: js.UndefOr[js.Array[QueryEntitiesResponseItem]] = js.native
@@ -20,27 +21,15 @@ object QueryEntitiesResponse {
   }
   
   @scala.inline
-  implicit class QueryEntitiesResponseOps[Self <: QueryEntitiesResponse] (val x: Self) extends AnyVal {
+  implicit class QueryEntitiesResponseMutableBuilder[Self <: QueryEntitiesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntities(value: js.Array[QueryEntitiesResponseItem]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEntitiesVarargs(value: QueryEntitiesResponseItem*): Self = this.set("entities", js.Array(value :_*))
-    
-    @scala.inline
-    def setEntities(value: js.Array[QueryEntitiesResponseItem]): Self = this.set("entities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntities: Self = this.set("entities", js.undefined)
+    def setEntitiesVarargs(value: QueryEntitiesResponseItem*): Self = StObject.set(x, "entities", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.apps.v1beta2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * StatefulSetStatus represents the current state of a StatefulSet.
   */
 @js.native
-trait StatefulSetStatus extends js.Object {
+trait StatefulSetStatus extends StObject {
   
   /**
     * collisionCount is the count of hash collisions for the StatefulSet. The StatefulSet controller uses this field as a collision avoidance mechanism when it needs to create the name for the newest ControllerRevision.
@@ -65,72 +66,60 @@ object StatefulSetStatus {
   }
   
   @scala.inline
-  implicit class StatefulSetStatusOps[Self <: StatefulSetStatus] (val x: Self) extends AnyVal {
+  implicit class StatefulSetStatusMutableBuilder[Self <: StatefulSetStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollisionCount(value: Input[Double]): Self = StObject.set(x, "collisionCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollisionCountUndefined: Self = StObject.set(x, "collisionCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditions(value: Input[js.Array[Input[StatefulSetCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicas(value: Input[Double]): Self = this.set("replicas", value.asInstanceOf[js.Any])
+    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
     @scala.inline
-    def setCollisionCount(value: Input[Double]): Self = this.set("collisionCount", value.asInstanceOf[js.Any])
+    def setConditionsVarargs(value: Input[StatefulSetCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def deleteCollisionCount: Self = this.set("collisionCount", js.undefined)
+    def setCurrentReplicas(value: Input[Double]): Self = StObject.set(x, "currentReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionsVarargs(value: Input[StatefulSetCondition]*): Self = this.set("conditions", js.Array(value :_*))
+    def setCurrentReplicasUndefined: Self = StObject.set(x, "currentReplicas", js.undefined)
     
     @scala.inline
-    def setConditions(value: Input[js.Array[Input[StatefulSetCondition]]]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setCurrentRevision(value: Input[String]): Self = StObject.set(x, "currentRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConditions: Self = this.set("conditions", js.undefined)
+    def setCurrentRevisionUndefined: Self = StObject.set(x, "currentRevision", js.undefined)
     
     @scala.inline
-    def setCurrentReplicas(value: Input[Double]): Self = this.set("currentReplicas", value.asInstanceOf[js.Any])
+    def setObservedGeneration(value: Input[Double]): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCurrentReplicas: Self = this.set("currentReplicas", js.undefined)
+    def setObservedGenerationUndefined: Self = StObject.set(x, "observedGeneration", js.undefined)
     
     @scala.inline
-    def setCurrentRevision(value: Input[String]): Self = this.set("currentRevision", value.asInstanceOf[js.Any])
+    def setReadyReplicas(value: Input[Double]): Self = StObject.set(x, "readyReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCurrentRevision: Self = this.set("currentRevision", js.undefined)
+    def setReadyReplicasUndefined: Self = StObject.set(x, "readyReplicas", js.undefined)
     
     @scala.inline
-    def setObservedGeneration(value: Input[Double]): Self = this.set("observedGeneration", value.asInstanceOf[js.Any])
+    def setReplicas(value: Input[Double]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteObservedGeneration: Self = this.set("observedGeneration", js.undefined)
+    def setUpdateRevision(value: Input[String]): Self = StObject.set(x, "updateRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadyReplicas(value: Input[Double]): Self = this.set("readyReplicas", value.asInstanceOf[js.Any])
+    def setUpdateRevisionUndefined: Self = StObject.set(x, "updateRevision", js.undefined)
     
     @scala.inline
-    def deleteReadyReplicas: Self = this.set("readyReplicas", js.undefined)
+    def setUpdatedReplicas(value: Input[Double]): Self = StObject.set(x, "updatedReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateRevision(value: Input[String]): Self = this.set("updateRevision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateRevision: Self = this.set("updateRevision", js.undefined)
-    
-    @scala.inline
-    def setUpdatedReplicas(value: Input[Double]): Self = this.set("updatedReplicas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedReplicas: Self = this.set("updatedReplicas", js.undefined)
+    def setUpdatedReplicasUndefined: Self = StObject.set(x, "updatedReplicas", js.undefined)
   }
 }

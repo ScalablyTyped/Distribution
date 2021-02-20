@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseDeploymentInput extends js.Object {
+trait BaseDeploymentInput extends StObject {
   
   var condition: String = js.native
   
@@ -36,30 +37,18 @@ object BaseDeploymentInput {
   }
   
   @scala.inline
-  implicit class BaseDeploymentInputOps[Self <: BaseDeploymentInput] (val x: Self) extends AnyVal {
+  implicit class BaseDeploymentInputMutableBuilder[Self <: BaseDeploymentInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobCancelTimeoutInMinutes(value: Double): Self = StObject.set(x, "jobCancelTimeoutInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverrideInputs(value: StringDictionary[String]): Self = StObject.set(x, "overrideInputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: String): Self = this.set("condition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJobCancelTimeoutInMinutes(value: Double): Self = this.set("jobCancelTimeoutInMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverrideInputs(value: StringDictionary[String]): Self = this.set("overrideInputs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeoutInMinutes(value: Double): Self = this.set("timeoutInMinutes", value.asInstanceOf[js.Any])
+    def setTimeoutInMinutes(value: Double): Self = StObject.set(x, "timeoutInMinutes", value.asInstanceOf[js.Any])
   }
 }

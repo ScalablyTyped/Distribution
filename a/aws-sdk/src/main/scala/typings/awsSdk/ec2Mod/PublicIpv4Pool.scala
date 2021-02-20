@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PublicIpv4Pool extends js.Object {
+trait PublicIpv4Pool extends StObject {
   
   /**
     * A description of the address pool.
@@ -51,66 +52,54 @@ object PublicIpv4Pool {
   }
   
   @scala.inline
-  implicit class PublicIpv4PoolOps[Self <: PublicIpv4Pool] (val x: Self) extends AnyVal {
+  implicit class PublicIpv4PoolMutableBuilder[Self <: PublicIpv4Pool] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNetworkBorderGroup(value: String): Self = StObject.set(x, "NetworkBorderGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setNetworkBorderGroupUndefined: Self = StObject.set(x, "NetworkBorderGroup", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setPoolAddressRanges(value: PublicIpv4PoolRangeSet): Self = StObject.set(x, "PoolAddressRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkBorderGroup(value: String): Self = this.set("NetworkBorderGroup", value.asInstanceOf[js.Any])
+    def setPoolAddressRangesUndefined: Self = StObject.set(x, "PoolAddressRanges", js.undefined)
     
     @scala.inline
-    def deleteNetworkBorderGroup: Self = this.set("NetworkBorderGroup", js.undefined)
+    def setPoolAddressRangesVarargs(value: PublicIpv4PoolRange*): Self = StObject.set(x, "PoolAddressRanges", js.Array(value :_*))
     
     @scala.inline
-    def setPoolAddressRangesVarargs(value: PublicIpv4PoolRange*): Self = this.set("PoolAddressRanges", js.Array(value :_*))
+    def setPoolId(value: String): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoolAddressRanges(value: PublicIpv4PoolRangeSet): Self = this.set("PoolAddressRanges", value.asInstanceOf[js.Any])
+    def setPoolIdUndefined: Self = StObject.set(x, "PoolId", js.undefined)
     
     @scala.inline
-    def deletePoolAddressRanges: Self = this.set("PoolAddressRanges", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoolId(value: String): Self = this.set("PoolId", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deletePoolId: Self = this.set("PoolId", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setTotalAddressCount(value: Integer): Self = StObject.set(x, "TotalAddressCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setTotalAddressCountUndefined: Self = StObject.set(x, "TotalAddressCount", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTotalAvailableAddressCount(value: Integer): Self = StObject.set(x, "TotalAvailableAddressCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalAddressCount(value: Integer): Self = this.set("TotalAddressCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalAddressCount: Self = this.set("TotalAddressCount", js.undefined)
-    
-    @scala.inline
-    def setTotalAvailableAddressCount(value: Integer): Self = this.set("TotalAvailableAddressCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalAvailableAddressCount: Self = this.set("TotalAvailableAddressCount", js.undefined)
+    def setTotalAvailableAddressCountUndefined: Self = StObject.set(x, "TotalAvailableAddressCount", js.undefined)
   }
 }

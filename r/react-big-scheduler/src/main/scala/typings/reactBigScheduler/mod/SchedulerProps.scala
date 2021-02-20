@@ -1,11 +1,12 @@
 package typings.reactBigScheduler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchedulerProps extends js.Object {
+trait SchedulerProps extends StObject {
   
   def nextClick(schedulerData: SchedulerData): Unit = js.native
   
@@ -32,33 +33,21 @@ object SchedulerProps {
   }
   
   @scala.inline
-  implicit class SchedulerPropsOps[Self <: SchedulerProps] (val x: Self) extends AnyVal {
+  implicit class SchedulerPropsMutableBuilder[Self <: SchedulerProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextClick(value: SchedulerData => Unit): Self = StObject.set(x, "nextClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnSelectDate(value: (SchedulerData, String) => Unit): Self = StObject.set(x, "onSelectDate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnViewChange(value: (SchedulerData, View) => Unit): Self = StObject.set(x, "onViewChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNextClick(value: SchedulerData => Unit): Self = this.set("nextClick", js.Any.fromFunction1(value))
+    def setPrevClick(value: SchedulerData => Unit): Self = StObject.set(x, "prevClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSelectDate(value: (SchedulerData, String) => Unit): Self = this.set("onSelectDate", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setOnViewChange(value: (SchedulerData, View) => Unit): Self = this.set("onViewChange", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setPrevClick(value: SchedulerData => Unit): Self = this.set("prevClick", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSchedulerData(value: SchedulerData): Self = this.set("schedulerData", value.asInstanceOf[js.Any])
+    def setSchedulerData(value: SchedulerData): Self = StObject.set(x, "schedulerData", value.asInstanceOf[js.Any])
   }
 }

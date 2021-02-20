@@ -1,21 +1,22 @@
 package typings.invityApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExchangeCoinInfo extends js.Object {
+trait ExchangeCoinInfo extends StObject {
   
-   // Bitcoin
+  // Bitcoin
   var category: String = js.native
   
-   // BTC
+  // BTC
   var name: String = js.native
   
   var ticker: String = js.native
   
-   // popular
+  // popular
   var token: js.UndefOr[String] = js.native
 }
 object ExchangeCoinInfo {
@@ -27,33 +28,21 @@ object ExchangeCoinInfo {
   }
   
   @scala.inline
-  implicit class ExchangeCoinInfoOps[Self <: ExchangeCoinInfo] (val x: Self) extends AnyVal {
+  implicit class ExchangeCoinInfoMutableBuilder[Self <: ExchangeCoinInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTicker(value: String): Self = StObject.set(x, "ticker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTicker(value: String): Self = this.set("ticker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

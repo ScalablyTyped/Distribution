@@ -5,12 +5,13 @@ import typings.gestalt.gestaltStrings.MasonryDefaultLayout
 import typings.gestalt.gestaltStrings.MasonryUniformRowLayout
 import typings.react.mod.ComponentType
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MasonryProps[T] extends js.Object {
+trait MasonryProps[T] extends StObject {
   
   var columnWidth: js.UndefOr[Double] = js.native
   
@@ -47,93 +48,81 @@ object MasonryProps {
   }
   
   @scala.inline
-  implicit class MasonryPropsOps[Self <: MasonryProps[_], T] (val x: Self with MasonryProps[T]) extends AnyVal {
+  implicit class MasonryPropsMutableBuilder[Self <: MasonryProps[_], T] (val x: Self with MasonryProps[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComp(value: ComponentType[Data[T]]): Self = StObject.set(x, "comp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComp(value: ComponentType[Data[T]]): Self = this.set("comp", value.asInstanceOf[js.Any])
+    def setFlexible(value: Boolean): Self = StObject.set(x, "flexible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: T*): Self = this.set("items", js.Array(value :_*))
+    def setFlexibleUndefined: Self = StObject.set(x, "flexible", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[T]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setGutterWidth(value: Double): Self = StObject.set(x, "gutterWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnWidth(value: Double): Self = this.set("columnWidth", value.asInstanceOf[js.Any])
+    def setGutterWidthUndefined: Self = StObject.set(x, "gutterWidth", js.undefined)
     
     @scala.inline
-    def deleteColumnWidth: Self = this.set("columnWidth", js.undefined)
+    def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlexible(value: Boolean): Self = this.set("flexible", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def deleteFlexible: Self = this.set("flexible", js.undefined)
+    def setLayout(value: MasonryDefaultLayout | MasonryUniformRowLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGutterWidth(value: Double): Self = this.set("gutterWidth", value.asInstanceOf[js.Any])
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def deleteGutterWidth: Self = this.set("gutterWidth", js.undefined)
+    def setLoadItems(value: () => Unit): Self = StObject.set(x, "loadItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLayout(value: MasonryDefaultLayout | MasonryUniformRowLayout): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setLoadItemsUndefined: Self = StObject.set(x, "loadItems", js.undefined)
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setMeasurementStore(value: js.Any): Self = StObject.set(x, "measurementStore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadItems(value: () => Unit): Self = this.set("loadItems", js.Any.fromFunction0(value))
+    def setMeasurementStoreUndefined: Self = StObject.set(x, "measurementStore", js.undefined)
     
     @scala.inline
-    def deleteLoadItems: Self = this.set("loadItems", js.undefined)
+    def setMinCols(value: Double): Self = StObject.set(x, "minCols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasurementStore(value: js.Any): Self = this.set("measurementStore", value.asInstanceOf[js.Any])
+    def setMinColsUndefined: Self = StObject.set(x, "minCols", js.undefined)
     
     @scala.inline
-    def deleteMeasurementStore: Self = this.set("measurementStore", js.undefined)
+    def setScrollContainer(value: () => HTMLElement): Self = StObject.set(x, "scrollContainer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMinCols(value: Double): Self = this.set("minCols", value.asInstanceOf[js.Any])
+    def setScrollContainerUndefined: Self = StObject.set(x, "scrollContainer", js.undefined)
     
     @scala.inline
-    def deleteMinCols: Self = this.set("minCols", js.undefined)
+    def setVirtualBoundsBottom(value: Double): Self = StObject.set(x, "virtualBoundsBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollContainer(value: () => HTMLElement): Self = this.set("scrollContainer", js.Any.fromFunction0(value))
+    def setVirtualBoundsBottomUndefined: Self = StObject.set(x, "virtualBoundsBottom", js.undefined)
     
     @scala.inline
-    def deleteScrollContainer: Self = this.set("scrollContainer", js.undefined)
+    def setVirtualBoundsTop(value: Double): Self = StObject.set(x, "virtualBoundsTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualBoundsBottom(value: Double): Self = this.set("virtualBoundsBottom", value.asInstanceOf[js.Any])
+    def setVirtualBoundsTopUndefined: Self = StObject.set(x, "virtualBoundsTop", js.undefined)
     
     @scala.inline
-    def deleteVirtualBoundsBottom: Self = this.set("virtualBoundsBottom", js.undefined)
+    def setVirtualize(value: Boolean): Self = StObject.set(x, "virtualize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualBoundsTop(value: Double): Self = this.set("virtualBoundsTop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualBoundsTop: Self = this.set("virtualBoundsTop", js.undefined)
-    
-    @scala.inline
-    def setVirtualize(value: Boolean): Self = this.set("virtualize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualize: Self = this.set("virtualize", js.undefined)
+    def setVirtualizeUndefined: Self = StObject.set(x, "virtualize", js.undefined)
   }
 }

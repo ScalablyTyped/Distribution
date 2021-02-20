@@ -1,13 +1,13 @@
 package typings.openui5.global.sap.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.base")
-@js.native
-object base extends js.Object {
+object base {
   
+  @JSGlobal("sap.ui.base.Event")
   @js.native
   class Event protected ()
     extends typings.openui5.sap.ui.base.Event {
@@ -21,6 +21,7 @@ object base extends js.Object {
     def this(sId: String, oSource: typings.openui5.sap.ui.base.EventProvider, mParameters: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.base.EventProvider")
   @js.native
   /**
     * Creates an instance of EventProvider.
@@ -28,6 +29,7 @@ object base extends js.Object {
   abstract class EventProvider ()
     extends typings.openui5.sap.ui.base.EventProvider
   
+  @JSGlobal("sap.ui.base.Interface")
   @js.native
   class Interface protected ()
     extends typings.openui5.sap.ui.base.Interface {
@@ -39,6 +41,7 @@ object base extends js.Object {
     def this(oObject: typings.openui5.sap.ui.base.Object, aMethods: js.Array[String]) = this()
   }
   
+  @JSGlobal("sap.ui.base.ManagedObject")
   @js.native
   class ManagedObject protected ()
     extends typings.openui5.sap.ui.base.ManagedObject {
@@ -89,6 +92,7 @@ object base extends js.Object {
     def this(sId: String, mSettings: js.Any, oScope: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.base.Metadata")
   @js.native
   class Metadata protected ()
     extends typings.openui5.sap.ui.base.Metadata {
@@ -101,6 +105,7 @@ object base extends js.Object {
     def this(sClassName: String, oClassInfo: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.base.Object")
   @js.native
   /**
     * Constructor for a sap.ui.base.Object.
@@ -108,6 +113,7 @@ object base extends js.Object {
   abstract class Object ()
     extends typings.openui5.sap.ui.base.Object
   
+  @JSGlobal("sap.ui.base.ObjectPool")
   @js.native
   class ObjectPool protected ()
     extends typings.openui5.sap.ui.base.ObjectPool {

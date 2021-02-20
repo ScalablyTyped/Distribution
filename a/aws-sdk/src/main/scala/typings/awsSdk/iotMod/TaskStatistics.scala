@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskStatistics extends js.Object {
+trait TaskStatistics extends StObject {
   
   /**
     * The number of checks that did not run because the audit was canceled.
@@ -51,60 +52,48 @@ object TaskStatistics {
   }
   
   @scala.inline
-  implicit class TaskStatisticsOps[Self <: TaskStatistics] (val x: Self) extends AnyVal {
+  implicit class TaskStatisticsMutableBuilder[Self <: TaskStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanceledChecks(value: CanceledChecksCount): Self = StObject.set(x, "canceledChecks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanceledChecksUndefined: Self = StObject.set(x, "canceledChecks", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompliantChecks(value: CompliantChecksCount): Self = StObject.set(x, "compliantChecks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanceledChecks(value: CanceledChecksCount): Self = this.set("canceledChecks", value.asInstanceOf[js.Any])
+    def setCompliantChecksUndefined: Self = StObject.set(x, "compliantChecks", js.undefined)
     
     @scala.inline
-    def deleteCanceledChecks: Self = this.set("canceledChecks", js.undefined)
+    def setFailedChecks(value: FailedChecksCount): Self = StObject.set(x, "failedChecks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompliantChecks(value: CompliantChecksCount): Self = this.set("compliantChecks", value.asInstanceOf[js.Any])
+    def setFailedChecksUndefined: Self = StObject.set(x, "failedChecks", js.undefined)
     
     @scala.inline
-    def deleteCompliantChecks: Self = this.set("compliantChecks", js.undefined)
+    def setInProgressChecks(value: InProgressChecksCount): Self = StObject.set(x, "inProgressChecks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedChecks(value: FailedChecksCount): Self = this.set("failedChecks", value.asInstanceOf[js.Any])
+    def setInProgressChecksUndefined: Self = StObject.set(x, "inProgressChecks", js.undefined)
     
     @scala.inline
-    def deleteFailedChecks: Self = this.set("failedChecks", js.undefined)
+    def setNonCompliantChecks(value: NonCompliantChecksCount): Self = StObject.set(x, "nonCompliantChecks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInProgressChecks(value: InProgressChecksCount): Self = this.set("inProgressChecks", value.asInstanceOf[js.Any])
+    def setNonCompliantChecksUndefined: Self = StObject.set(x, "nonCompliantChecks", js.undefined)
     
     @scala.inline
-    def deleteInProgressChecks: Self = this.set("inProgressChecks", js.undefined)
+    def setTotalChecks(value: TotalChecksCount): Self = StObject.set(x, "totalChecks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonCompliantChecks(value: NonCompliantChecksCount): Self = this.set("nonCompliantChecks", value.asInstanceOf[js.Any])
+    def setTotalChecksUndefined: Self = StObject.set(x, "totalChecks", js.undefined)
     
     @scala.inline
-    def deleteNonCompliantChecks: Self = this.set("nonCompliantChecks", js.undefined)
+    def setWaitingForDataCollectionChecks(value: WaitingForDataCollectionChecksCount): Self = StObject.set(x, "waitingForDataCollectionChecks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalChecks(value: TotalChecksCount): Self = this.set("totalChecks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalChecks: Self = this.set("totalChecks", js.undefined)
-    
-    @scala.inline
-    def setWaitingForDataCollectionChecks(value: WaitingForDataCollectionChecksCount): Self = this.set("waitingForDataCollectionChecks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitingForDataCollectionChecks: Self = this.set("waitingForDataCollectionChecks", js.undefined)
+    def setWaitingForDataCollectionChecksUndefined: Self = StObject.set(x, "waitingForDataCollectionChecks", js.undefined)
   }
 }

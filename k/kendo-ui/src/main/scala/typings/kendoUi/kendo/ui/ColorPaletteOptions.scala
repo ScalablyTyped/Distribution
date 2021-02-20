@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColorPaletteOptions extends js.Object {
+trait ColorPaletteOptions extends StObject {
   
   var change: js.UndefOr[js.Function1[/* e */ ColorPaletteEvent, Unit]] = js.native
   
@@ -28,54 +29,42 @@ object ColorPaletteOptions {
   }
   
   @scala.inline
-  implicit class ColorPaletteOptionsOps[Self <: ColorPaletteOptions] (val x: Self) extends AnyVal {
+  implicit class ColorPaletteOptionsMutableBuilder[Self <: ColorPaletteOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChange(value: /* e */ ColorPaletteEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: /* e */ ColorPaletteEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: Double): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setPalette(value: String | js.Any): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTileSize(value: ColorPaletteTileSize): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPalette(value: String | js.Any): Self = this.set("palette", value.asInstanceOf[js.Any])
+    def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
     
     @scala.inline
-    def deletePalette: Self = this.set("palette", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileSize(value: ColorPaletteTileSize): Self = this.set("tileSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTileSize: Self = this.set("tileSize", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

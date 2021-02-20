@@ -1,12 +1,13 @@
 package typings.googleCloudCommon.utilMod
 
 import typings.teenyRequest.mod.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MakeRequestConfig extends js.Object {
+trait MakeRequestConfig extends StObject {
   
   /**
     * Automatically retry requests if the response is related to rate limits or
@@ -36,48 +37,36 @@ object MakeRequestConfig {
   }
   
   @scala.inline
-  implicit class MakeRequestConfigOps[Self <: MakeRequestConfig] (val x: Self) extends AnyVal {
+  implicit class MakeRequestConfigMutableBuilder[Self <: MakeRequestConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoRetry(value: Boolean): Self = StObject.set(x, "autoRetry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoRetryUndefined: Self = StObject.set(x, "autoRetry", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRetry(value: Boolean): Self = this.set("autoRetry", value.asInstanceOf[js.Any])
+    def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
     
     @scala.inline
-    def deleteAutoRetry: Self = this.set("autoRetry", js.undefined)
+    def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRetries(value: Double): Self = this.set("maxRetries", value.asInstanceOf[js.Any])
+    def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
     
     @scala.inline
-    def deleteMaxRetries: Self = this.set("maxRetries", js.undefined)
+    def setShouldRetryFn(value: /* response */ js.UndefOr[Response[_]] => Boolean): Self = StObject.set(x, "shouldRetryFn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRetries(value: Double): Self = this.set("retries", value.asInstanceOf[js.Any])
+    def setShouldRetryFnUndefined: Self = StObject.set(x, "shouldRetryFn", js.undefined)
     
     @scala.inline
-    def deleteRetries: Self = this.set("retries", js.undefined)
+    def setStream(value: Duplexify): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShouldRetryFn(value: /* response */ js.UndefOr[Response[_]] => Boolean): Self = this.set("shouldRetryFn", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteShouldRetryFn: Self = this.set("shouldRetryFn", js.undefined)
-    
-    @scala.inline
-    def setStream(value: Duplexify): Self = this.set("stream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStream: Self = this.set("stream", js.undefined)
+    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
   }
 }

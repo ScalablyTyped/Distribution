@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientAnalyticsadmin.anon.OauthtokenPrettyPrint
 import typings.maximMazurokGapiClientAnalyticsadmin.anon.PageSize
 import typings.maximMazurokGapiClientAnalyticsadmin.anon.PrettyPrintQuotaUser
 import typings.maximMazurokGapiClientAnalyticsadmin.anon.UpdateMask
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebDataStreamsResource extends js.Object {
+trait WebDataStreamsResource extends StObject {
   
   def create(request: Alt, body: GoogleAnalyticsAdminV1alphaWebDataStream): Request[GoogleAnalyticsAdminV1alphaWebDataStream] = js.native
   /** Creates a web stream with the specified location and attributes. */

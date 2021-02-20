@@ -3,12 +3,13 @@ package typings.svgo.mod
 import typings.svgo.svgoStrings.base64
 import typings.svgo.svgoStrings.enc
 import typings.svgo.svgoStrings.unenc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   /** Output as Data URI string. */
   var datauri: js.UndefOr[base64 | enc | unenc] = js.native
@@ -40,57 +41,45 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatauri(value: base64 | enc | unenc): Self = StObject.set(x, "datauri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatauriUndefined: Self = StObject.set(x, "datauri", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFloatPrecision(value: Double): Self = StObject.set(x, "floatPrecision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatauri(value: base64 | enc | unenc): Self = this.set("datauri", value.asInstanceOf[js.Any])
+    def setFloatPrecisionUndefined: Self = StObject.set(x, "floatPrecision", js.undefined)
     
     @scala.inline
-    def deleteDatauri: Self = this.set("datauri", js.undefined)
+    def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatPrecision(value: Double): Self = this.set("floatPrecision", value.asInstanceOf[js.Any])
+    def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
     
     @scala.inline
-    def deleteFloatPrecision: Self = this.set("floatPrecision", js.undefined)
+    def setJs2svg(value: Js2SvgOptions): Self = StObject.set(x, "js2svg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFull(value: Boolean): Self = this.set("full", value.asInstanceOf[js.Any])
+    def setJs2svgUndefined: Self = StObject.set(x, "js2svg", js.undefined)
     
     @scala.inline
-    def deleteFull: Self = this.set("full", js.undefined)
+    def setPlugins(value: js.Array[PluginConfig]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJs2svg(value: Js2SvgOptions): Self = this.set("js2svg", value.asInstanceOf[js.Any])
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
     @scala.inline
-    def deleteJs2svg: Self = this.set("js2svg", js.undefined)
+    def setPluginsVarargs(value: PluginConfig*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     
     @scala.inline
-    def setPluginsVarargs(value: PluginConfig*): Self = this.set("plugins", js.Array(value :_*))
+    def setSvg2js(value: Svg2JsOptions): Self = StObject.set(x, "svg2js", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlugins(value: js.Array[PluginConfig]): Self = this.set("plugins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
-    
-    @scala.inline
-    def setSvg2js(value: Svg2JsOptions): Self = this.set("svg2js", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSvg2js: Self = this.set("svg2js", js.undefined)
+    def setSvg2jsUndefined: Self = StObject.set(x, "svg2js", js.undefined)
   }
 }

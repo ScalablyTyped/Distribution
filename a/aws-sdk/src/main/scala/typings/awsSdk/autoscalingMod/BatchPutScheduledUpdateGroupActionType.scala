@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchPutScheduledUpdateGroupActionType extends js.Object {
+trait BatchPutScheduledUpdateGroupActionType extends StObject {
   
   /**
     * The name of the Auto Scaling group.
@@ -29,27 +30,15 @@ object BatchPutScheduledUpdateGroupActionType {
   }
   
   @scala.inline
-  implicit class BatchPutScheduledUpdateGroupActionTypeOps[Self <: BatchPutScheduledUpdateGroupActionType] (val x: Self) extends AnyVal {
+  implicit class BatchPutScheduledUpdateGroupActionTypeMutableBuilder[Self <: BatchPutScheduledUpdateGroupActionType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScheduledUpdateGroupActions(value: ScheduledUpdateGroupActionRequests): Self = StObject.set(x, "ScheduledUpdateGroupActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScheduledUpdateGroupActionsVarargs(value: ScheduledUpdateGroupActionRequest*): Self = this.set("ScheduledUpdateGroupActions", js.Array(value :_*))
-    
-    @scala.inline
-    def setScheduledUpdateGroupActions(value: ScheduledUpdateGroupActionRequests): Self = this.set("ScheduledUpdateGroupActions", value.asInstanceOf[js.Any])
+    def setScheduledUpdateGroupActionsVarargs(value: ScheduledUpdateGroupActionRequest*): Self = StObject.set(x, "ScheduledUpdateGroupActions", js.Array(value :_*))
   }
 }

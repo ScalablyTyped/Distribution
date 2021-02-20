@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EachMember extends js.Object {
+trait EachMember extends StObject {
   
   var eachMember: scala.Double = js.native
   
@@ -32,33 +33,21 @@ object EachMember {
   }
   
   @scala.inline
-  implicit class EachMemberOps[Self <: EachMember] (val x: Self) extends AnyVal {
+  implicit class EachMemberMutableBuilder[Self <: EachMember] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEachMember(value: scala.Double): Self = StObject.set(x, "eachMember", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNoDelivery(value: scala.Double): Self = StObject.set(x, "noDelivery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEachMember(value: scala.Double): Self = this.set("eachMember", value.asInstanceOf[js.Any])
+    def setNotSet(value: scala.Double): Self = StObject.set(x, "notSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoDelivery(value: scala.Double): Self = this.set("noDelivery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotSet(value: scala.Double): Self = this.set("notSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreferredEmailAddress(value: scala.Double): Self = this.set("preferredEmailAddress", value.asInstanceOf[js.Any])
+    def setPreferredEmailAddress(value: scala.Double): Self = StObject.set(x, "preferredEmailAddress", value.asInstanceOf[js.Any])
   }
 }

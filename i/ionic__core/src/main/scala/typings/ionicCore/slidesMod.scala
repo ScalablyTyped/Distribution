@@ -3,14 +3,14 @@ package typings.ionicCore
 import typings.ionicCore.componentsMod.global.HTMLIonSlidesElement
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/slides/slides", JSImport.Namespace)
-@js.native
-object slidesMod extends js.Object {
+object slidesMod {
   
+  @JSImport("@ionic/core/dist/types/components/slides/slides", "Slides")
   @js.native
   class Slides () extends ComponentInterface {
     

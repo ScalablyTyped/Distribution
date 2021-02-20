@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,14 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ASPxClientTreeList ()
   extends typings.devexpressWeb.ASPxClientTreeList
-/* static members */
-@JSGlobal("ASPxClientTreeList")
-@js.native
-object ASPxClientTreeList extends js.Object {
+object ASPxClientTreeList {
   
   /**
     * Converts the specified object to the ASPxClientTreeList type. The converted client object specified by the obj parameter.
     * @param obj The client object to be type cast.
     */
+  /* static member */
+  @JSGlobal("ASPxClientTreeList.Cast")
+  @js.native
   def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientTreeList = js.native
 }

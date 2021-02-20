@@ -1,5 +1,6 @@
 package typings.agoraRtcSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If {@link getLocalAudioStats} is called successfully, the {@link LocalAudioStatsMap} provides the UID and {@link LocalAudioStats} of the local user.
   */
 @js.native
-trait LocalAudioStats extends js.Object {
+trait LocalAudioStats extends StObject {
   
   /**
     * Encoding type of the sent audio.
@@ -49,54 +50,42 @@ object LocalAudioStats {
   }
   
   @scala.inline
-  implicit class LocalAudioStatsOps[Self <: LocalAudioStats] (val x: Self) extends AnyVal {
+  implicit class LocalAudioStatsMutableBuilder[Self <: LocalAudioStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodecType(value: String): Self = StObject.set(x, "CodecType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodecTypeUndefined: Self = StObject.set(x, "CodecType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMuteState(value: String): Self = StObject.set(x, "MuteState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodecType(value: String): Self = this.set("CodecType", value.asInstanceOf[js.Any])
+    def setMuteStateUndefined: Self = StObject.set(x, "MuteState", js.undefined)
     
     @scala.inline
-    def deleteCodecType: Self = this.set("CodecType", js.undefined)
+    def setRecordingLevel(value: String): Self = StObject.set(x, "RecordingLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMuteState(value: String): Self = this.set("MuteState", value.asInstanceOf[js.Any])
+    def setRecordingLevelUndefined: Self = StObject.set(x, "RecordingLevel", js.undefined)
     
     @scala.inline
-    def deleteMuteState: Self = this.set("MuteState", js.undefined)
+    def setSamplingRate(value: String): Self = StObject.set(x, "SamplingRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordingLevel(value: String): Self = this.set("RecordingLevel", value.asInstanceOf[js.Any])
+    def setSamplingRateUndefined: Self = StObject.set(x, "SamplingRate", js.undefined)
     
     @scala.inline
-    def deleteRecordingLevel: Self = this.set("RecordingLevel", js.undefined)
+    def setSendBitrate(value: String): Self = StObject.set(x, "SendBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamplingRate(value: String): Self = this.set("SamplingRate", value.asInstanceOf[js.Any])
+    def setSendBitrateUndefined: Self = StObject.set(x, "SendBitrate", js.undefined)
     
     @scala.inline
-    def deleteSamplingRate: Self = this.set("SamplingRate", js.undefined)
+    def setSendLevel(value: String): Self = StObject.set(x, "SendLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendBitrate(value: String): Self = this.set("SendBitrate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSendBitrate: Self = this.set("SendBitrate", js.undefined)
-    
-    @scala.inline
-    def setSendLevel(value: String): Self = this.set("SendLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSendLevel: Self = this.set("SendLevel", js.undefined)
+    def setSendLevelUndefined: Self = StObject.set(x, "SendLevel", js.undefined)
   }
 }

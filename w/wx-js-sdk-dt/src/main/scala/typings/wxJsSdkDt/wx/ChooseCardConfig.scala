@@ -1,6 +1,7 @@
 package typings.wxJsSdkDt.wx
 
 import typings.wxJsSdkDt.anon.CardList
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,54 +59,42 @@ object ChooseCardConfig {
   }
   
   @scala.inline
-  implicit class ChooseCardConfigOps[Self <: ChooseCardConfig] (val x: Self) extends AnyVal {
+  implicit class ChooseCardConfigMutableBuilder[Self <: ChooseCardConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCardIdUndefined: Self = StObject.set(x, "cardId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCardSign(value: String): Self = StObject.set(x, "cardSign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardSign(value: String): Self = this.set("cardSign", value.asInstanceOf[js.Any])
+    def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonceStr(value: String): Self = this.set("nonceStr", value.asInstanceOf[js.Any])
+    def setCardTypeUndefined: Self = StObject.set(x, "cardType", js.undefined)
     
     @scala.inline
-    def setSignType(value: String): Self = this.set("signType", value.asInstanceOf[js.Any])
+    def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setShopId(value: String): Self = StObject.set(x, "shopId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardId(value: String): Self = this.set("cardId", value.asInstanceOf[js.Any])
+    def setShopIdUndefined: Self = StObject.set(x, "shopId", js.undefined)
     
     @scala.inline
-    def deleteCardId: Self = this.set("cardId", js.undefined)
+    def setSignType(value: String): Self = StObject.set(x, "signType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardType(value: String): Self = this.set("cardType", value.asInstanceOf[js.Any])
+    def setSuccess(value: /* res */ CardList => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteCardType: Self = this.set("cardType", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def setShopId(value: String): Self = this.set("shopId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShopId: Self = this.set("shopId", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* res */ CardList => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

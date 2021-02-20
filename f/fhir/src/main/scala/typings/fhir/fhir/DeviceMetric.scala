@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,90 +87,78 @@ object DeviceMetric {
   }
   
   @scala.inline
-  implicit class DeviceMetricOps[Self <: DeviceMetric] (val x: Self) extends AnyVal {
+  implicit class DeviceMetricMutableBuilder[Self <: DeviceMetric] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalibration(value: js.Array[DeviceMetricCalibration]): Self = StObject.set(x, "calibration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalibrationUndefined: Self = StObject.set(x, "calibration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCalibrationVarargs(value: DeviceMetricCalibration*): Self = StObject.set(x, "calibration", js.Array(value :_*))
     
     @scala.inline
-    def setCategory(value: code): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setCategory(value: code): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setColor(value: code): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: CodeableConcept): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set_category(value: Element): Self = this.set("_category", value.asInstanceOf[js.Any])
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_category: Self = this.set("_category", js.undefined)
+    def setMeasurementPeriod(value: Timing): Self = StObject.set(x, "measurementPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_color(value: Element): Self = this.set("_color", value.asInstanceOf[js.Any])
+    def setMeasurementPeriodUndefined: Self = StObject.set(x, "measurementPeriod", js.undefined)
     
     @scala.inline
-    def delete_color: Self = this.set("_color", js.undefined)
+    def setOperationalStatus(value: code): Self = StObject.set(x, "operationalStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_operationalStatus(value: Element): Self = this.set("_operationalStatus", value.asInstanceOf[js.Any])
+    def setOperationalStatusUndefined: Self = StObject.set(x, "operationalStatus", js.undefined)
     
     @scala.inline
-    def delete_operationalStatus: Self = this.set("_operationalStatus", js.undefined)
+    def setParent(value: Reference): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalibrationVarargs(value: DeviceMetricCalibration*): Self = this.set("calibration", js.Array(value :_*))
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def setCalibration(value: js.Array[DeviceMetricCalibration]): Self = this.set("calibration", value.asInstanceOf[js.Any])
+    def setSource(value: Reference): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCalibration: Self = this.set("calibration", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setColor(value: code): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setUnit(value: CodeableConcept): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasurementPeriod(value: Timing): Self = this.set("measurementPeriod", value.asInstanceOf[js.Any])
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
     @scala.inline
-    def deleteMeasurementPeriod: Self = this.set("measurementPeriod", js.undefined)
+    def set_category(value: Element): Self = StObject.set(x, "_category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationalStatus(value: code): Self = this.set("operationalStatus", value.asInstanceOf[js.Any])
+    def set_categoryUndefined: Self = StObject.set(x, "_category", js.undefined)
     
     @scala.inline
-    def deleteOperationalStatus: Self = this.set("operationalStatus", js.undefined)
+    def set_color(value: Element): Self = StObject.set(x, "_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: Reference): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def set_colorUndefined: Self = StObject.set(x, "_color", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def set_operationalStatus(value: Element): Self = StObject.set(x, "_operationalStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: Reference): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setUnit(value: CodeableConcept): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
+    def set_operationalStatusUndefined: Self = StObject.set(x, "_operationalStatus", js.undefined)
   }
 }

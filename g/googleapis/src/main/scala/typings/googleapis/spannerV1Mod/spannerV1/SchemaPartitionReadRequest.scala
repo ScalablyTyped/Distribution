@@ -1,5 +1,6 @@
 package typings.googleapis.spannerV1Mod.spannerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The request for PartitionRead
   */
 @js.native
-trait SchemaPartitionReadRequest extends js.Object {
+trait SchemaPartitionReadRequest extends StObject {
   
   /**
     * The columns of table to be returned for each row matching this request.
@@ -56,57 +57,45 @@ object SchemaPartitionReadRequest {
   }
   
   @scala.inline
-  implicit class SchemaPartitionReadRequestOps[Self <: SchemaPartitionReadRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaPartitionReadRequestMutableBuilder[Self <: SchemaPartitionReadRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsVarargs(value: String*): Self = this.set("columns", js.Array(value :_*))
+    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[String]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setKeySet(value: SchemaKeySet): Self = StObject.set(x, "keySet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: String): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setKeySetUndefined: Self = StObject.set(x, "keySet", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setPartitionOptions(value: SchemaPartitionOptions): Self = StObject.set(x, "partitionOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeySet(value: SchemaKeySet): Self = this.set("keySet", value.asInstanceOf[js.Any])
+    def setPartitionOptionsUndefined: Self = StObject.set(x, "partitionOptions", js.undefined)
     
     @scala.inline
-    def deleteKeySet: Self = this.set("keySet", js.undefined)
+    def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartitionOptions(value: SchemaPartitionOptions): Self = this.set("partitionOptions", value.asInstanceOf[js.Any])
+    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
     
     @scala.inline
-    def deletePartitionOptions: Self = this.set("partitionOptions", js.undefined)
+    def setTransaction(value: SchemaTransactionSelector): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTable(value: String): Self = this.set("table", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTable: Self = this.set("table", js.undefined)
-    
-    @scala.inline
-    def setTransaction(value: SchemaTransactionSelector): Self = this.set("transaction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransaction: Self = this.set("transaction", js.undefined)
+    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

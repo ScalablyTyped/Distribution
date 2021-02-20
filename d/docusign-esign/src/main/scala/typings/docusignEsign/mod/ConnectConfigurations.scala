@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectConfigurations extends js.Object {
+trait ConnectConfigurations extends StObject {
   
   /**
     * When set to **true**, the tracked envelope and recipient events for all users, including users that are added a later time, are sent through Connect.
@@ -258,249 +259,237 @@ object ConnectConfigurations {
   }
   
   @scala.inline
-  implicit class ConnectConfigurationsOps[Self <: ConnectConfigurations] (val x: Self) extends AnyVal {
+  implicit class ConnectConfigurationsMutableBuilder[Self <: ConnectConfigurations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllUsers(value: String): Self = StObject.set(x, "allUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllUsersUndefined: Self = StObject.set(x, "allUsers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowEnvelopePublish(value: String): Self = StObject.set(x, "allowEnvelopePublish", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllUsers(value: String): Self = this.set("allUsers", value.asInstanceOf[js.Any])
+    def setAllowEnvelopePublishUndefined: Self = StObject.set(x, "allowEnvelopePublish", js.undefined)
     
     @scala.inline
-    def deleteAllUsers: Self = this.set("allUsers", js.undefined)
+    def setAllowSalesforcePublish(value: String): Self = StObject.set(x, "allowSalesforcePublish", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowEnvelopePublish(value: String): Self = this.set("allowEnvelopePublish", value.asInstanceOf[js.Any])
+    def setAllowSalesforcePublishUndefined: Self = StObject.set(x, "allowSalesforcePublish", js.undefined)
     
     @scala.inline
-    def deleteAllowEnvelopePublish: Self = this.set("allowEnvelopePublish", js.undefined)
+    def setConfigurationType(value: String): Self = StObject.set(x, "configurationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowSalesforcePublish(value: String): Self = this.set("allowSalesforcePublish", value.asInstanceOf[js.Any])
+    def setConfigurationTypeUndefined: Self = StObject.set(x, "configurationType", js.undefined)
     
     @scala.inline
-    def deleteAllowSalesforcePublish: Self = this.set("allowSalesforcePublish", js.undefined)
+    def setConnectId(value: String): Self = StObject.set(x, "connectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationType(value: String): Self = this.set("configurationType", value.asInstanceOf[js.Any])
+    def setConnectIdUndefined: Self = StObject.set(x, "connectId", js.undefined)
     
     @scala.inline
-    def deleteConfigurationType: Self = this.set("configurationType", js.undefined)
+    def setEnableLog(value: String): Self = StObject.set(x, "enableLog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectId(value: String): Self = this.set("connectId", value.asInstanceOf[js.Any])
+    def setEnableLogUndefined: Self = StObject.set(x, "enableLog", js.undefined)
     
     @scala.inline
-    def deleteConnectId: Self = this.set("connectId", js.undefined)
+    def setEnvelopeEvents(value: js.Array[String]): Self = StObject.set(x, "envelopeEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableLog(value: String): Self = this.set("enableLog", value.asInstanceOf[js.Any])
+    def setEnvelopeEventsUndefined: Self = StObject.set(x, "envelopeEvents", js.undefined)
     
     @scala.inline
-    def deleteEnableLog: Self = this.set("enableLog", js.undefined)
+    def setEnvelopeEventsVarargs(value: String*): Self = StObject.set(x, "envelopeEvents", js.Array(value :_*))
     
     @scala.inline
-    def setEnvelopeEventsVarargs(value: String*): Self = this.set("envelopeEvents", js.Array(value :_*))
+    def setEventData(value: ConnectEventData): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeEvents(value: js.Array[String]): Self = this.set("envelopeEvents", value.asInstanceOf[js.Any])
+    def setEventDataUndefined: Self = StObject.set(x, "eventData", js.undefined)
     
     @scala.inline
-    def deleteEnvelopeEvents: Self = this.set("envelopeEvents", js.undefined)
+    def setExternalFolderId(value: String): Self = StObject.set(x, "externalFolderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventData(value: ConnectEventData): Self = this.set("eventData", value.asInstanceOf[js.Any])
+    def setExternalFolderIdUndefined: Self = StObject.set(x, "externalFolderId", js.undefined)
     
     @scala.inline
-    def deleteEventData: Self = this.set("eventData", js.undefined)
+    def setExternalFolderLabel(value: String): Self = StObject.set(x, "externalFolderLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalFolderId(value: String): Self = this.set("externalFolderId", value.asInstanceOf[js.Any])
+    def setExternalFolderLabelUndefined: Self = StObject.set(x, "externalFolderLabel", js.undefined)
     
     @scala.inline
-    def deleteExternalFolderId: Self = this.set("externalFolderId", js.undefined)
+    def setIncludeCertSoapHeader(value: String): Self = StObject.set(x, "includeCertSoapHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalFolderLabel(value: String): Self = this.set("externalFolderLabel", value.asInstanceOf[js.Any])
+    def setIncludeCertSoapHeaderUndefined: Self = StObject.set(x, "includeCertSoapHeader", js.undefined)
     
     @scala.inline
-    def deleteExternalFolderLabel: Self = this.set("externalFolderLabel", js.undefined)
+    def setIncludeCertificateOfCompletion(value: String): Self = StObject.set(x, "includeCertificateOfCompletion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeCertSoapHeader(value: String): Self = this.set("includeCertSoapHeader", value.asInstanceOf[js.Any])
+    def setIncludeCertificateOfCompletionUndefined: Self = StObject.set(x, "includeCertificateOfCompletion", js.undefined)
     
     @scala.inline
-    def deleteIncludeCertSoapHeader: Self = this.set("includeCertSoapHeader", js.undefined)
+    def setIncludeDocumentFields(value: String): Self = StObject.set(x, "includeDocumentFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeCertificateOfCompletion(value: String): Self = this.set("includeCertificateOfCompletion", value.asInstanceOf[js.Any])
+    def setIncludeDocumentFieldsUndefined: Self = StObject.set(x, "includeDocumentFields", js.undefined)
     
     @scala.inline
-    def deleteIncludeCertificateOfCompletion: Self = this.set("includeCertificateOfCompletion", js.undefined)
+    def setIncludeDocuments(value: String): Self = StObject.set(x, "includeDocuments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeDocumentFields(value: String): Self = this.set("includeDocumentFields", value.asInstanceOf[js.Any])
+    def setIncludeDocumentsUndefined: Self = StObject.set(x, "includeDocuments", js.undefined)
     
     @scala.inline
-    def deleteIncludeDocumentFields: Self = this.set("includeDocumentFields", js.undefined)
+    def setIncludeEnvelopeVoidReason(value: String): Self = StObject.set(x, "includeEnvelopeVoidReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeDocuments(value: String): Self = this.set("includeDocuments", value.asInstanceOf[js.Any])
+    def setIncludeEnvelopeVoidReasonUndefined: Self = StObject.set(x, "includeEnvelopeVoidReason", js.undefined)
     
     @scala.inline
-    def deleteIncludeDocuments: Self = this.set("includeDocuments", js.undefined)
+    def setIncludeHMAC(value: String): Self = StObject.set(x, "includeHMAC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeEnvelopeVoidReason(value: String): Self = this.set("includeEnvelopeVoidReason", value.asInstanceOf[js.Any])
+    def setIncludeHMACUndefined: Self = StObject.set(x, "includeHMAC", js.undefined)
     
     @scala.inline
-    def deleteIncludeEnvelopeVoidReason: Self = this.set("includeEnvelopeVoidReason", js.undefined)
+    def setIncludeSenderAccountasCustomField(value: String): Self = StObject.set(x, "includeSenderAccountasCustomField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeHMAC(value: String): Self = this.set("includeHMAC", value.asInstanceOf[js.Any])
+    def setIncludeSenderAccountasCustomFieldUndefined: Self = StObject.set(x, "includeSenderAccountasCustomField", js.undefined)
     
     @scala.inline
-    def deleteIncludeHMAC: Self = this.set("includeHMAC", js.undefined)
+    def setIncludeTimeZoneInformation(value: String): Self = StObject.set(x, "includeTimeZoneInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeSenderAccountasCustomField(value: String): Self = this.set("includeSenderAccountasCustomField", value.asInstanceOf[js.Any])
+    def setIncludeTimeZoneInformationUndefined: Self = StObject.set(x, "includeTimeZoneInformation", js.undefined)
     
     @scala.inline
-    def deleteIncludeSenderAccountasCustomField: Self = this.set("includeSenderAccountasCustomField", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeTimeZoneInformation(value: String): Self = this.set("includeTimeZoneInformation", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIncludeTimeZoneInformation: Self = this.set("includeTimeZoneInformation", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRecipientEvents(value: js.Array[String]): Self = StObject.set(x, "recipientEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setRecipientEventsUndefined: Self = StObject.set(x, "recipientEvents", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setRecipientEventsVarargs(value: String*): Self = StObject.set(x, "recipientEvents", js.Array(value :_*))
     
     @scala.inline
-    def setRecipientEventsVarargs(value: String*): Self = this.set("recipientEvents", js.Array(value :_*))
+    def setRequireMutualTls(value: String): Self = StObject.set(x, "requireMutualTls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientEvents(value: js.Array[String]): Self = this.set("recipientEvents", value.asInstanceOf[js.Any])
+    def setRequireMutualTlsUndefined: Self = StObject.set(x, "requireMutualTls", js.undefined)
     
     @scala.inline
-    def deleteRecipientEvents: Self = this.set("recipientEvents", js.undefined)
+    def setRequiresAcknowledgement(value: String): Self = StObject.set(x, "requiresAcknowledgement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireMutualTls(value: String): Self = this.set("requireMutualTls", value.asInstanceOf[js.Any])
+    def setRequiresAcknowledgementUndefined: Self = StObject.set(x, "requiresAcknowledgement", js.undefined)
     
     @scala.inline
-    def deleteRequireMutualTls: Self = this.set("requireMutualTls", js.undefined)
+    def setSalesforceApiVersion(value: String): Self = StObject.set(x, "salesforceApiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiresAcknowledgement(value: String): Self = this.set("requiresAcknowledgement", value.asInstanceOf[js.Any])
+    def setSalesforceApiVersionUndefined: Self = StObject.set(x, "salesforceApiVersion", js.undefined)
     
     @scala.inline
-    def deleteRequiresAcknowledgement: Self = this.set("requiresAcknowledgement", js.undefined)
+    def setSalesforceAuthcode(value: String): Self = StObject.set(x, "salesforceAuthcode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSalesforceApiVersion(value: String): Self = this.set("salesforceApiVersion", value.asInstanceOf[js.Any])
+    def setSalesforceAuthcodeUndefined: Self = StObject.set(x, "salesforceAuthcode", js.undefined)
     
     @scala.inline
-    def deleteSalesforceApiVersion: Self = this.set("salesforceApiVersion", js.undefined)
+    def setSalesforceCallBackUrl(value: String): Self = StObject.set(x, "salesforceCallBackUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSalesforceAuthcode(value: String): Self = this.set("salesforceAuthcode", value.asInstanceOf[js.Any])
+    def setSalesforceCallBackUrlUndefined: Self = StObject.set(x, "salesforceCallBackUrl", js.undefined)
     
     @scala.inline
-    def deleteSalesforceAuthcode: Self = this.set("salesforceAuthcode", js.undefined)
+    def setSalesforceDocumentsAsContentFiles(value: String): Self = StObject.set(x, "salesforceDocumentsAsContentFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSalesforceCallBackUrl(value: String): Self = this.set("salesforceCallBackUrl", value.asInstanceOf[js.Any])
+    def setSalesforceDocumentsAsContentFilesUndefined: Self = StObject.set(x, "salesforceDocumentsAsContentFiles", js.undefined)
     
     @scala.inline
-    def deleteSalesforceCallBackUrl: Self = this.set("salesforceCallBackUrl", js.undefined)
+    def setSenderOverride(value: String): Self = StObject.set(x, "senderOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSalesforceDocumentsAsContentFiles(value: String): Self = this.set("salesforceDocumentsAsContentFiles", value.asInstanceOf[js.Any])
+    def setSenderOverrideUndefined: Self = StObject.set(x, "senderOverride", js.undefined)
     
     @scala.inline
-    def deleteSalesforceDocumentsAsContentFiles: Self = this.set("salesforceDocumentsAsContentFiles", js.undefined)
+    def setSenderSelectableItems(value: js.Array[String]): Self = StObject.set(x, "senderSelectableItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderOverride(value: String): Self = this.set("senderOverride", value.asInstanceOf[js.Any])
+    def setSenderSelectableItemsUndefined: Self = StObject.set(x, "senderSelectableItems", js.undefined)
     
     @scala.inline
-    def deleteSenderOverride: Self = this.set("senderOverride", js.undefined)
+    def setSenderSelectableItemsVarargs(value: String*): Self = StObject.set(x, "senderSelectableItems", js.Array(value :_*))
     
     @scala.inline
-    def setSenderSelectableItemsVarargs(value: String*): Self = this.set("senderSelectableItems", js.Array(value :_*))
+    def setSfObjects(value: js.Array[ConnectSalesforceObject]): Self = StObject.set(x, "sfObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderSelectableItems(value: js.Array[String]): Self = this.set("senderSelectableItems", value.asInstanceOf[js.Any])
+    def setSfObjectsUndefined: Self = StObject.set(x, "sfObjects", js.undefined)
     
     @scala.inline
-    def deleteSenderSelectableItems: Self = this.set("senderSelectableItems", js.undefined)
+    def setSfObjectsVarargs(value: ConnectSalesforceObject*): Self = StObject.set(x, "sfObjects", js.Array(value :_*))
     
     @scala.inline
-    def setSfObjectsVarargs(value: ConnectSalesforceObject*): Self = this.set("sfObjects", js.Array(value :_*))
+    def setSignMessageWithX509Certificate(value: String): Self = StObject.set(x, "signMessageWithX509Certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSfObjects(value: js.Array[ConnectSalesforceObject]): Self = this.set("sfObjects", value.asInstanceOf[js.Any])
+    def setSignMessageWithX509CertificateUndefined: Self = StObject.set(x, "signMessageWithX509Certificate", js.undefined)
     
     @scala.inline
-    def deleteSfObjects: Self = this.set("sfObjects", js.undefined)
+    def setSoapNamespace(value: String): Self = StObject.set(x, "soapNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignMessageWithX509Certificate(value: String): Self = this.set("signMessageWithX509Certificate", value.asInstanceOf[js.Any])
+    def setSoapNamespaceUndefined: Self = StObject.set(x, "soapNamespace", js.undefined)
     
     @scala.inline
-    def deleteSignMessageWithX509Certificate: Self = this.set("signMessageWithX509Certificate", js.undefined)
+    def setUrlToPublishTo(value: String): Self = StObject.set(x, "urlToPublishTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSoapNamespace(value: String): Self = this.set("soapNamespace", value.asInstanceOf[js.Any])
+    def setUrlToPublishToUndefined: Self = StObject.set(x, "urlToPublishTo", js.undefined)
     
     @scala.inline
-    def deleteSoapNamespace: Self = this.set("soapNamespace", js.undefined)
+    def setUseSoapInterface(value: String): Self = StObject.set(x, "useSoapInterface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrlToPublishTo(value: String): Self = this.set("urlToPublishTo", value.asInstanceOf[js.Any])
+    def setUseSoapInterfaceUndefined: Self = StObject.set(x, "useSoapInterface", js.undefined)
     
     @scala.inline
-    def deleteUrlToPublishTo: Self = this.set("urlToPublishTo", js.undefined)
+    def setUserIds(value: js.Array[String]): Self = StObject.set(x, "userIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseSoapInterface(value: String): Self = this.set("useSoapInterface", value.asInstanceOf[js.Any])
+    def setUserIdsUndefined: Self = StObject.set(x, "userIds", js.undefined)
     
     @scala.inline
-    def deleteUseSoapInterface: Self = this.set("useSoapInterface", js.undefined)
+    def setUserIdsVarargs(value: String*): Self = StObject.set(x, "userIds", js.Array(value :_*))
     
     @scala.inline
-    def setUserIdsVarargs(value: String*): Self = this.set("userIds", js.Array(value :_*))
+    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserIds(value: js.Array[String]): Self = this.set("userIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserIds: Self = this.set("userIds", js.undefined)
-    
-    @scala.inline
-    def setUserName(value: String): Self = this.set("userName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserName: Self = this.set("userName", js.undefined)
+    def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
   }
 }

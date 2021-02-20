@@ -2,6 +2,7 @@ package typings.typescript.mod.server
 
 import typings.typescript.mod.Path
 import typings.typescript.typescriptStrings.installPackage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,30 +33,18 @@ object InstallPackageRequest {
   }
   
   @scala.inline
-  implicit class InstallPackageRequestOps[Self <: InstallPackageRequest] (val x: Self) extends AnyVal {
+  implicit class InstallPackageRequestMutableBuilder[Self <: InstallPackageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileName(value: Path): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKind(value: installPackage): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: Path): Self = this.set("fileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: installPackage): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProjectRootPath(value: Path): Self = this.set("projectRootPath", value.asInstanceOf[js.Any])
+    def setProjectRootPath(value: Path): Self = StObject.set(x, "projectRootPath", value.asInstanceOf[js.Any])
   }
 }

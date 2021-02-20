@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,45 +63,33 @@ object DirectionsLastRoute {
   }
   
   @scala.inline
-  implicit class DirectionsLastRouteOps[Self <: DirectionsLastRoute] (val x: Self) extends AnyVal {
+  implicit class DirectionsLastRouteMutableBuilder[Self <: DirectionsLastRoute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBarriers(value: js.Array[Graphic]): Self = StObject.set(x, "barriers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBarriersVarargs(value: Graphic*): Self = StObject.set(x, "barriers", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessages(value: js.Array[DirectionsLastRouteMessages]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarriersVarargs(value: Graphic*): Self = this.set("barriers", js.Array(value :_*))
+    def setMessagesVarargs(value: DirectionsLastRouteMessages*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
     @scala.inline
-    def setBarriers(value: js.Array[Graphic]): Self = this.set("barriers", value.asInstanceOf[js.Any])
+    def setPolygonBarriers(value: js.Array[Graphic]): Self = StObject.set(x, "polygonBarriers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessagesVarargs(value: DirectionsLastRouteMessages*): Self = this.set("messages", js.Array(value :_*))
+    def setPolygonBarriersVarargs(value: Graphic*): Self = StObject.set(x, "polygonBarriers", js.Array(value :_*))
     
     @scala.inline
-    def setMessages(value: js.Array[DirectionsLastRouteMessages]): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setPolylineBarriers(value: js.Array[Graphic]): Self = StObject.set(x, "polylineBarriers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolygonBarriersVarargs(value: Graphic*): Self = this.set("polygonBarriers", js.Array(value :_*))
+    def setPolylineBarriersVarargs(value: Graphic*): Self = StObject.set(x, "polylineBarriers", js.Array(value :_*))
     
     @scala.inline
-    def setPolygonBarriers(value: js.Array[Graphic]): Self = this.set("polygonBarriers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPolylineBarriersVarargs(value: Graphic*): Self = this.set("polylineBarriers", js.Array(value :_*))
-    
-    @scala.inline
-    def setPolylineBarriers(value: js.Array[Graphic]): Self = this.set("polylineBarriers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRouteResults(value: RouteResult): Self = this.set("routeResults", value.asInstanceOf[js.Any])
+    def setRouteResults(value: RouteResult): Self = StObject.set(x, "routeResults", value.asInstanceOf[js.Any])
   }
 }

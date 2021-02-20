@@ -1,17 +1,18 @@
 package typings.xadesjs
 
 import typings.xadesjs.signingCertificateMod.CertIDList
-import typings.xmlCore.mod.XmlObject
+import typings.xadesjs.unsignedSignaturePropertiesMod.UnsignedSignatureProperty
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xadesjs/build/types/xml/complete_certificate_refs", JSImport.Namespace)
-@js.native
-object completeCertificateRefsMod extends js.Object {
+object completeCertificateRefsMod {
   
+  @JSImport("xadesjs/build/types/xml/complete_certificate_refs", "CompleteCertificateRefs")
   @js.native
-  class CompleteCertificateRefs () extends XmlObject {
+  class CompleteCertificateRefs () extends UnsignedSignatureProperty {
+    def this(properties: js.Object) = this()
     
     var CertRefs: CertIDList = js.native
     

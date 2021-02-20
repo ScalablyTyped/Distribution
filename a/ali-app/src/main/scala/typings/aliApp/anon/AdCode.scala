@@ -1,11 +1,12 @@
 package typings.aliApp.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdCode extends js.Object {
+trait AdCode extends StObject {
   
   var adCode: String = js.native
   
@@ -20,24 +21,12 @@ object AdCode {
   }
   
   @scala.inline
-  implicit class AdCodeOps[Self <: AdCode] (val x: Self) extends AnyVal {
+  implicit class AdCodeMutableBuilder[Self <: AdCode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdCode(value: String): Self = StObject.set(x, "adCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAdCode(value: String): Self = this.set("adCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
   }
 }

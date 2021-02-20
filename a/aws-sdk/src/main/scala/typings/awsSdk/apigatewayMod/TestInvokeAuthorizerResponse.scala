@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestInvokeAuthorizerResponse extends js.Object {
+trait TestInvokeAuthorizerResponse extends StObject {
   
   var authorization: js.UndefOr[MapOfStringToList] = js.native
   
@@ -48,60 +49,48 @@ object TestInvokeAuthorizerResponse {
   }
   
   @scala.inline
-  implicit class TestInvokeAuthorizerResponseOps[Self <: TestInvokeAuthorizerResponse] (val x: Self) extends AnyVal {
+  implicit class TestInvokeAuthorizerResponseMutableBuilder[Self <: TestInvokeAuthorizerResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorization(value: MapOfStringToList): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizationUndefined: Self = StObject.set(x, "authorization", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClaims(value: MapOfStringToString): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorization(value: MapOfStringToList): Self = this.set("authorization", value.asInstanceOf[js.Any])
+    def setClaimsUndefined: Self = StObject.set(x, "claims", js.undefined)
     
     @scala.inline
-    def deleteAuthorization: Self = this.set("authorization", js.undefined)
+    def setClientStatus(value: Integer): Self = StObject.set(x, "clientStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClaims(value: MapOfStringToString): Self = this.set("claims", value.asInstanceOf[js.Any])
+    def setClientStatusUndefined: Self = StObject.set(x, "clientStatus", js.undefined)
     
     @scala.inline
-    def deleteClaims: Self = this.set("claims", js.undefined)
+    def setLatency(value: Long): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientStatus(value: Integer): Self = this.set("clientStatus", value.asInstanceOf[js.Any])
+    def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
     
     @scala.inline
-    def deleteClientStatus: Self = this.set("clientStatus", js.undefined)
+    def setLog(value: String): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatency(value: Long): Self = this.set("latency", value.asInstanceOf[js.Any])
+    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
     @scala.inline
-    def deleteLatency: Self = this.set("latency", js.undefined)
+    def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLog(value: String): Self = this.set("log", value.asInstanceOf[js.Any])
+    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
     @scala.inline
-    def deleteLog: Self = this.set("log", js.undefined)
+    def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicy(value: String): Self = this.set("policy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicy: Self = this.set("policy", js.undefined)
-    
-    @scala.inline
-    def setPrincipalId(value: String): Self = this.set("principalId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrincipalId: Self = this.set("principalId", js.undefined)
+    def setPrincipalIdUndefined: Self = StObject.set(x, "principalId", js.undefined)
   }
 }

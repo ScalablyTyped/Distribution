@@ -1,56 +1,48 @@
 package typings.angularCompiler.outputAstMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BuiltinTypeName extends js.Object
+sealed trait BuiltinTypeName extends StObject
 @JSImport("@angular/compiler/src/output/output_ast", "BuiltinTypeName")
 @js.native
-object BuiltinTypeName extends js.Object {
+object BuiltinTypeName extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BuiltinTypeName with Double] = js.native
   
   @js.native
   sealed trait Bool extends BuiltinTypeName
-  /* 1 */ @js.native
-  object Bool extends TopLevel[Bool with Double]
+  /* 1 */ val Bool: typings.angularCompiler.outputAstMod.BuiltinTypeName.Bool with Double = js.native
   
   @js.native
   sealed trait Dynamic extends BuiltinTypeName
-  /* 0 */ @js.native
-  object Dynamic extends TopLevel[Dynamic with Double]
+  /* 0 */ val Dynamic: typings.angularCompiler.outputAstMod.BuiltinTypeName.Dynamic with Double = js.native
   
   @js.native
   sealed trait Function extends BuiltinTypeName
-  /* 5 */ @js.native
-  object Function extends TopLevel[Function with Double]
+  /* 5 */ val Function: typings.angularCompiler.outputAstMod.BuiltinTypeName.Function with Double = js.native
   
   @js.native
   sealed trait Inferred extends BuiltinTypeName
-  /* 6 */ @js.native
-  object Inferred extends TopLevel[Inferred with Double]
+  /* 6 */ val Inferred: typings.angularCompiler.outputAstMod.BuiltinTypeName.Inferred with Double = js.native
   
   @js.native
   sealed trait Int extends BuiltinTypeName
-  /* 3 */ @js.native
-  object Int extends TopLevel[Int with Double]
+  /* 3 */ val Int: typings.angularCompiler.outputAstMod.BuiltinTypeName.Int with Double = js.native
   
   @js.native
   sealed trait None extends BuiltinTypeName
-  /* 7 */ @js.native
-  object None extends TopLevel[None with Double]
+  /* 7 */ val None: typings.angularCompiler.outputAstMod.BuiltinTypeName.None with Double = js.native
   
   @js.native
   sealed trait Number extends BuiltinTypeName
-  /* 4 */ @js.native
-  object Number extends TopLevel[Number with Double]
+  /* 4 */ val Number: typings.angularCompiler.outputAstMod.BuiltinTypeName.Number with Double = js.native
   
   @js.native
   sealed trait String extends BuiltinTypeName
-  /* 2 */ @js.native
-  object String extends TopLevel[String with Double]
+  /* 2 */ val String: typings.angularCompiler.outputAstMod.BuiltinTypeName.String with Double = js.native
 }

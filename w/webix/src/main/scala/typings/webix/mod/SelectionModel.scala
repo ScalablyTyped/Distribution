@@ -1,12 +1,12 @@
 package typings.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelectionModel extends js.Object {
+trait SelectionModel extends StObject {
   
   def getSelectedId(as_array: Boolean): String | js.Array[_] = js.native
   
@@ -28,6 +28,3 @@ trait SelectionModel extends js.Object {
   
   def unselectAll(): Unit = js.native
 }
-@JSImport("webix", "SelectionModel")
-@js.native
-object SelectionModel extends TopLevel[SelectionModel]

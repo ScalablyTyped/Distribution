@@ -1,5 +1,6 @@
 package typings.googleapis.gmailV1Mod.gmailV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * in the web interface.
   */
 @js.native
-trait SchemaSendAs extends js.Object {
+trait SchemaSendAs extends StObject {
   
   /**
     * A name that appears in the &quot;From:&quot; header for mail sent using
@@ -91,72 +92,60 @@ object SchemaSendAs {
   }
   
   @scala.inline
-  implicit class SchemaSendAsOps[Self <: SchemaSendAs] (val x: Self) extends AnyVal {
+  implicit class SchemaSendAsMutableBuilder[Self <: SchemaSendAs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDefault(value: Boolean): Self = this.set("isDefault", value.asInstanceOf[js.Any])
+    def setIsPrimaryUndefined: Self = StObject.set(x, "isPrimary", js.undefined)
     
     @scala.inline
-    def deleteIsDefault: Self = this.set("isDefault", js.undefined)
+    def setReplyToAddress(value: String): Self = StObject.set(x, "replyToAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPrimary(value: Boolean): Self = this.set("isPrimary", value.asInstanceOf[js.Any])
+    def setReplyToAddressUndefined: Self = StObject.set(x, "replyToAddress", js.undefined)
     
     @scala.inline
-    def deleteIsPrimary: Self = this.set("isPrimary", js.undefined)
+    def setSendAsEmail(value: String): Self = StObject.set(x, "sendAsEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplyToAddress(value: String): Self = this.set("replyToAddress", value.asInstanceOf[js.Any])
+    def setSendAsEmailUndefined: Self = StObject.set(x, "sendAsEmail", js.undefined)
     
     @scala.inline
-    def deleteReplyToAddress: Self = this.set("replyToAddress", js.undefined)
+    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendAsEmail(value: String): Self = this.set("sendAsEmail", value.asInstanceOf[js.Any])
+    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     
     @scala.inline
-    def deleteSendAsEmail: Self = this.set("sendAsEmail", js.undefined)
+    def setSmtpMsa(value: SchemaSmtpMsa): Self = StObject.set(x, "smtpMsa", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignature(value: String): Self = this.set("signature", value.asInstanceOf[js.Any])
+    def setSmtpMsaUndefined: Self = StObject.set(x, "smtpMsa", js.undefined)
     
     @scala.inline
-    def deleteSignature: Self = this.set("signature", js.undefined)
+    def setTreatAsAlias(value: Boolean): Self = StObject.set(x, "treatAsAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmtpMsa(value: SchemaSmtpMsa): Self = this.set("smtpMsa", value.asInstanceOf[js.Any])
+    def setTreatAsAliasUndefined: Self = StObject.set(x, "treatAsAlias", js.undefined)
     
     @scala.inline
-    def deleteSmtpMsa: Self = this.set("smtpMsa", js.undefined)
+    def setVerificationStatus(value: String): Self = StObject.set(x, "verificationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTreatAsAlias(value: Boolean): Self = this.set("treatAsAlias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTreatAsAlias: Self = this.set("treatAsAlias", js.undefined)
-    
-    @scala.inline
-    def setVerificationStatus(value: String): Self = this.set("verificationStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerificationStatus: Self = this.set("verificationStatus", js.undefined)
+    def setVerificationStatusUndefined: Self = StObject.set(x, "verificationStatus", js.undefined)
   }
 }

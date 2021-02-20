@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldLevelEncryptionSummary extends js.Object {
+trait FieldLevelEncryptionSummary extends StObject {
   
   /**
     * An optional comment about the field-level encryption item.
@@ -41,42 +42,30 @@ object FieldLevelEncryptionSummary {
   }
   
   @scala.inline
-  implicit class FieldLevelEncryptionSummaryOps[Self <: FieldLevelEncryptionSummary] (val x: Self) extends AnyVal {
+  implicit class FieldLevelEncryptionSummaryMutableBuilder[Self <: FieldLevelEncryptionSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentTypeProfileConfig(value: ContentTypeProfileConfig): Self = StObject.set(x, "ContentTypeProfileConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setContentTypeProfileConfigUndefined: Self = StObject.set(x, "ContentTypeProfileConfig", js.undefined)
     
     @scala.inline
-    def setLastModifiedTime(value: timestamp): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("Comment", value.asInstanceOf[js.Any])
+    def setLastModifiedTime(value: timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComment: Self = this.set("Comment", js.undefined)
+    def setQueryArgProfileConfig(value: QueryArgProfileConfig): Self = StObject.set(x, "QueryArgProfileConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentTypeProfileConfig(value: ContentTypeProfileConfig): Self = this.set("ContentTypeProfileConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentTypeProfileConfig: Self = this.set("ContentTypeProfileConfig", js.undefined)
-    
-    @scala.inline
-    def setQueryArgProfileConfig(value: QueryArgProfileConfig): Self = this.set("QueryArgProfileConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryArgProfileConfig: Self = this.set("QueryArgProfileConfig", js.undefined)
+    def setQueryArgProfileConfigUndefined: Self = StObject.set(x, "QueryArgProfileConfig", js.undefined)
   }
 }

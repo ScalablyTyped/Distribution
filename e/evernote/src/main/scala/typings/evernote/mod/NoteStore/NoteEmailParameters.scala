@@ -2,13 +2,14 @@ package typings.evernote.mod.NoteStore
 
 import typings.evernote.anon.CcAddresses
 import typings.evernote.mod.Types.Note
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "NoteStore.NoteEmailParameters")
 @js.native
-class NoteEmailParameters () extends js.Object {
+class NoteEmailParameters () extends StObject {
   def this(args: CcAddresses) = this()
   
   var ccAddresses: js.UndefOr[js.Array[String]] = js.native

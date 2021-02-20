@@ -1,11 +1,12 @@
 package typings.inboxsdk.mod.Lists
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageDescriptor extends js.Object {
+trait ImageDescriptor extends StObject {
   
   var imageClass: js.UndefOr[String] = js.native
   
@@ -24,39 +25,27 @@ object ImageDescriptor {
   }
   
   @scala.inline
-  implicit class ImageDescriptorOps[Self <: ImageDescriptor] (val x: Self) extends AnyVal {
+  implicit class ImageDescriptorMutableBuilder[Self <: ImageDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageClass(value: String): Self = StObject.set(x, "imageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageClassUndefined: Self = StObject.set(x, "imageClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    def setOrderHint(value: Double): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageClass(value: String): Self = this.set("imageClass", value.asInstanceOf[js.Any])
+    def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
     
     @scala.inline
-    def deleteImageClass: Self = this.set("imageClass", js.undefined)
+    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderHint(value: Double): Self = this.set("orderHint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrderHint: Self = this.set("orderHint", js.undefined)
-    
-    @scala.inline
-    def setTooltip(value: String): Self = this.set("tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

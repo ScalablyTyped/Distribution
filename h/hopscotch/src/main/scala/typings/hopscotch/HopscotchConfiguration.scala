@@ -1,12 +1,13 @@
 package typings.hopscotch
 
 import typings.hopscotch.anon.CloseTooltip
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HopscotchConfiguration extends js.Object {
+trait HopscotchConfiguration extends StObject {
   
   var arrowWidth: js.UndefOr[Double] = js.native
   
@@ -55,174 +56,162 @@ object HopscotchConfiguration {
   }
   
   @scala.inline
-  implicit class HopscotchConfigurationOps[Self <: HopscotchConfiguration] (val x: Self) extends AnyVal {
+  implicit class HopscotchConfigurationMutableBuilder[Self <: HopscotchConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrowWidth(value: Double): Self = StObject.set(x, "arrowWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrowWidthUndefined: Self = StObject.set(x, "arrowWidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBubbleWidth(value: Double): Self = StObject.set(x, "bubbleWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowWidth(value: Double): Self = this.set("arrowWidth", value.asInstanceOf[js.Any])
+    def setBubbleWidthUndefined: Self = StObject.set(x, "bubbleWidth", js.undefined)
     
     @scala.inline
-    def deleteArrowWidth: Self = this.set("arrowWidth", js.undefined)
+    def setBuddleHeight(value: Double): Self = StObject.set(x, "buddleHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbleWidth(value: Double): Self = this.set("bubbleWidth", value.asInstanceOf[js.Any])
+    def setBuddleHeightUndefined: Self = StObject.set(x, "buddleHeight", js.undefined)
     
     @scala.inline
-    def deleteBubbleWidth: Self = this.set("bubbleWidth", js.undefined)
+    def setI18n(value: CloseTooltip): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuddleHeight(value: Double): Self = this.set("buddleHeight", value.asInstanceOf[js.Any])
+    def setI18nUndefined: Self = StObject.set(x, "i18n", js.undefined)
     
     @scala.inline
-    def deleteBuddleHeight: Self = this.set("buddleHeight", js.undefined)
+    def setNextOnTargetClick(value: Boolean): Self = StObject.set(x, "nextOnTargetClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setI18n(value: CloseTooltip): Self = this.set("i18n", value.asInstanceOf[js.Any])
+    def setNextOnTargetClickUndefined: Self = StObject.set(x, "nextOnTargetClick", js.undefined)
     
     @scala.inline
-    def deleteI18n: Self = this.set("i18n", js.undefined)
+    def setOnClose(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextOnTargetClick(value: Boolean): Self = this.set("nextOnTargetClick", value.asInstanceOf[js.Any])
+    def setOnCloseFunction0(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteNextOnTargetClick: Self = this.set("nextOnTargetClick", js.undefined)
+    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def setOnCloseVarargs(value: String*): Self = this.set("onClose", js.Array(value :_*))
+    def setOnCloseVarargs(value: String*): Self = StObject.set(x, "onClose", js.Array(value :_*))
     
     @scala.inline
-    def setOnCloseFunction0(value: () => Unit): Self = this.set("onClose", js.Any.fromFunction0(value))
+    def setOnEnd(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClose(value: CallbackNameNamesOrDefinition): Self = this.set("onClose", value.asInstanceOf[js.Any])
+    def setOnEndFunction0(value: () => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
     
     @scala.inline
-    def setOnEndVarargs(value: String*): Self = this.set("onEnd", js.Array(value :_*))
+    def setOnEndVarargs(value: String*): Self = StObject.set(x, "onEnd", js.Array(value :_*))
     
     @scala.inline
-    def setOnEndFunction0(value: () => Unit): Self = this.set("onEnd", js.Any.fromFunction0(value))
+    def setOnError(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnEnd(value: CallbackNameNamesOrDefinition): Self = this.set("onEnd", value.asInstanceOf[js.Any])
+    def setOnErrorFunction0(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnEnd: Self = this.set("onEnd", js.undefined)
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def setOnErrorVarargs(value: String*): Self = this.set("onError", js.Array(value :_*))
+    def setOnErrorVarargs(value: String*): Self = StObject.set(x, "onError", js.Array(value :_*))
     
     @scala.inline
-    def setOnErrorFunction0(value: () => Unit): Self = this.set("onError", js.Any.fromFunction0(value))
+    def setOnNext(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onNext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnError(value: CallbackNameNamesOrDefinition): Self = this.set("onError", value.asInstanceOf[js.Any])
+    def setOnNextFunction0(value: () => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setOnNextUndefined: Self = StObject.set(x, "onNext", js.undefined)
     
     @scala.inline
-    def setOnNextVarargs(value: String*): Self = this.set("onNext", js.Array(value :_*))
+    def setOnNextVarargs(value: String*): Self = StObject.set(x, "onNext", js.Array(value :_*))
     
     @scala.inline
-    def setOnNextFunction0(value: () => Unit): Self = this.set("onNext", js.Any.fromFunction0(value))
+    def setOnPrev(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onPrev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnNext(value: CallbackNameNamesOrDefinition): Self = this.set("onNext", value.asInstanceOf[js.Any])
+    def setOnPrevFunction0(value: () => Unit): Self = StObject.set(x, "onPrev", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnNext: Self = this.set("onNext", js.undefined)
+    def setOnPrevUndefined: Self = StObject.set(x, "onPrev", js.undefined)
     
     @scala.inline
-    def setOnPrevVarargs(value: String*): Self = this.set("onPrev", js.Array(value :_*))
+    def setOnPrevVarargs(value: String*): Self = StObject.set(x, "onPrev", js.Array(value :_*))
     
     @scala.inline
-    def setOnPrevFunction0(value: () => Unit): Self = this.set("onPrev", js.Any.fromFunction0(value))
+    def setOnShow(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPrev(value: CallbackNameNamesOrDefinition): Self = this.set("onPrev", value.asInstanceOf[js.Any])
+    def setOnShowFunction0(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnPrev: Self = this.set("onPrev", js.undefined)
+    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
     @scala.inline
-    def setOnShowVarargs(value: String*): Self = this.set("onShow", js.Array(value :_*))
+    def setOnShowVarargs(value: String*): Self = StObject.set(x, "onShow", js.Array(value :_*))
     
     @scala.inline
-    def setOnShowFunction0(value: () => Unit): Self = this.set("onShow", js.Any.fromFunction0(value))
+    def setOnStart(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnShow(value: CallbackNameNamesOrDefinition): Self = this.set("onShow", value.asInstanceOf[js.Any])
+    def setOnStartFunction0(value: () => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
     
     @scala.inline
-    def setOnStartVarargs(value: String*): Self = this.set("onStart", js.Array(value :_*))
+    def setOnStartVarargs(value: String*): Self = StObject.set(x, "onStart", js.Array(value :_*))
     
     @scala.inline
-    def setOnStartFunction0(value: () => Unit): Self = this.set("onStart", js.Any.fromFunction0(value))
+    def setScrollDuration(value: Double): Self = StObject.set(x, "scrollDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnStart(value: CallbackNameNamesOrDefinition): Self = this.set("onStart", value.asInstanceOf[js.Any])
+    def setScrollDurationUndefined: Self = StObject.set(x, "scrollDuration", js.undefined)
     
     @scala.inline
-    def deleteOnStart: Self = this.set("onStart", js.undefined)
+    def setScrollTopMargin(value: Double): Self = StObject.set(x, "scrollTopMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollDuration(value: Double): Self = this.set("scrollDuration", value.asInstanceOf[js.Any])
+    def setScrollTopMarginUndefined: Self = StObject.set(x, "scrollTopMargin", js.undefined)
     
     @scala.inline
-    def deleteScrollDuration: Self = this.set("scrollDuration", js.undefined)
+    def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollTopMargin(value: Double): Self = this.set("scrollTopMargin", value.asInstanceOf[js.Any])
+    def setShowCloseButtonUndefined: Self = StObject.set(x, "showCloseButton", js.undefined)
     
     @scala.inline
-    def deleteScrollTopMargin: Self = this.set("scrollTopMargin", js.undefined)
+    def setShowNextButton(value: Boolean): Self = StObject.set(x, "showNextButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCloseButton(value: Boolean): Self = this.set("showCloseButton", value.asInstanceOf[js.Any])
+    def setShowNextButtonUndefined: Self = StObject.set(x, "showNextButton", js.undefined)
     
     @scala.inline
-    def deleteShowCloseButton: Self = this.set("showCloseButton", js.undefined)
+    def setShowPrevButton(value: Boolean): Self = StObject.set(x, "showPrevButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowNextButton(value: Boolean): Self = this.set("showNextButton", value.asInstanceOf[js.Any])
+    def setShowPrevButtonUndefined: Self = StObject.set(x, "showPrevButton", js.undefined)
     
     @scala.inline
-    def deleteShowNextButton: Self = this.set("showNextButton", js.undefined)
+    def setSkipIfNoElement(value: Boolean): Self = StObject.set(x, "skipIfNoElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowPrevButton(value: Boolean): Self = this.set("showPrevButton", value.asInstanceOf[js.Any])
+    def setSkipIfNoElementUndefined: Self = StObject.set(x, "skipIfNoElement", js.undefined)
     
     @scala.inline
-    def deleteShowPrevButton: Self = this.set("showPrevButton", js.undefined)
+    def setSmoothScroll(value: Boolean): Self = StObject.set(x, "smoothScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipIfNoElement(value: Boolean): Self = this.set("skipIfNoElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipIfNoElement: Self = this.set("skipIfNoElement", js.undefined)
-    
-    @scala.inline
-    def setSmoothScroll(value: Boolean): Self = this.set("smoothScroll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmoothScroll: Self = this.set("smoothScroll", js.undefined)
+    def setSmoothScrollUndefined: Self = StObject.set(x, "smoothScroll", js.undefined)
   }
 }

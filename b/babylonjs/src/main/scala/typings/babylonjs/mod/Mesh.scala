@@ -7,6 +7,7 @@ import typings.babylonjs.anon.Max
 import typings.babylonjs.capsuleBuilderMod.ICreateCapsuleOptions
 import typings.babylonjs.physicsImpostorMod.IPhysicsEnabledObject
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,46 +65,60 @@ class Mesh protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs", "Mesh")
-@js.native
-object Mesh extends js.Object {
+object Mesh {
   
   /**
     * Mesh side orientation : usually the internal or back surface
     */
+  @JSImport("babylonjs", "Mesh.BACKSIDE")
+  @js.native
   val BACKSIDE: Double = js.native
   
   /**
     * Mesh tile positioning : part tiles on bottom
     */
+  @JSImport("babylonjs", "Mesh.BOTTOM")
+  @js.native
   val BOTTOM: Double = js.native
   
   /**
     * Mesh cap setting : two caps, one at the beginning  and one at the end of the mesh
     */
+  @JSImport("babylonjs", "Mesh.CAP_ALL")
+  @js.native
   val CAP_ALL: Double = js.native
   
   /**
     * Mesh cap setting : one cap at the end of the mesh
     */
+  @JSImport("babylonjs", "Mesh.CAP_END")
+  @js.native
   val CAP_END: Double = js.native
   
   /**
     * Mesh cap setting : one cap at the beginning of the mesh
     */
+  @JSImport("babylonjs", "Mesh.CAP_START")
+  @js.native
   val CAP_START: Double = js.native
   
   /**
     * Mesh tile positioning : part tiles same on left/right or top/bottom
     */
+  @JSImport("babylonjs", "Mesh.CENTER")
+  @js.native
   val CENTER: Double = js.native
   
+  @JSImport("babylonjs", "Mesh.Center")
+  @js.native
   def Center(meshesOrMinMaxVector: js.Array[typings.babylonjs.abstractMeshMod.AbstractMesh]): typings.babylonjs.mathVectorMod.Vector3 = js.native
   /**
     * Returns the center of the `{min:` Vector3`, max:` Vector3`}` or the center of MinMax vector3 computed from a mesh array
     * @param meshesOrMinMaxVector could be an array of meshes or a `{min:` Vector3`, max:` Vector3`}` object
     * @returns a vector3
     */
+  @JSImport("babylonjs", "Mesh.Center")
+  @js.native
   def Center(meshesOrMinMaxVector: Max): typings.babylonjs.mathVectorMod.Vector3 = js.native
   
   /**
@@ -115,7 +130,11 @@ object Mesh extends js.Object {
     * @param sideOrientation defines the mesh side orientation (https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation)
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.CreateBox")
+  @js.native
   def CreateBox(name: String, size: Double): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateBox")
+  @js.native
   def CreateBox(
     name: String,
     size: Double,
@@ -123,12 +142,16 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateBox")
+  @js.native
   def CreateBox(
     name: String,
     size: Double,
     scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
     updatable: Boolean
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateBox")
+  @js.native
   def CreateBox(
     name: String,
     size: Double,
@@ -136,6 +159,8 @@ object Mesh extends js.Object {
     updatable: Boolean,
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateBox")
+  @js.native
   def CreateBox(name: String, size: Double, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
   
   /** Creates a Capsule Mesh
@@ -145,6 +170,8 @@ object Mesh extends js.Object {
     * @returns the capsule mesh
     * @see https://doc.babylonjs.com/how_to/capsule_shape
     */
+  @JSImport("babylonjs", "Mesh.CreateCapsule")
+  @js.native
   def CreateCapsule(name: String, options: ICreateCapsuleOptions, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = js.native
   
   /**
@@ -160,6 +187,8 @@ object Mesh extends js.Object {
     * @param sideOrientation defines the mesh side orientation (https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation)
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.CreateCylinder")
+  @js.native
   def CreateCylinder(
     name: String,
     height: Double,
@@ -168,6 +197,8 @@ object Mesh extends js.Object {
     tessellation: Double,
     subdivisions: js.Any
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateCylinder")
+  @js.native
   def CreateCylinder(
     name: String,
     height: Double,
@@ -179,6 +210,8 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateCylinder")
+  @js.native
   def CreateCylinder(
     name: String,
     height: Double,
@@ -189,6 +222,8 @@ object Mesh extends js.Object {
     scene: js.UndefOr[scala.Nothing],
     updatable: js.Any
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateCylinder")
+  @js.native
   def CreateCylinder(
     name: String,
     height: Double,
@@ -200,6 +235,8 @@ object Mesh extends js.Object {
     updatable: js.Any,
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateCylinder")
+  @js.native
   def CreateCylinder(
     name: String,
     height: Double,
@@ -209,6 +246,8 @@ object Mesh extends js.Object {
     subdivisions: js.Any,
     scene: typings.babylonjs.sceneMod.Scene
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateCylinder")
+  @js.native
   def CreateCylinder(
     name: String,
     height: Double,
@@ -220,6 +259,8 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateCylinder")
+  @js.native
   def CreateCylinder(
     name: String,
     height: Double,
@@ -230,6 +271,8 @@ object Mesh extends js.Object {
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: js.Any
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateCylinder")
+  @js.native
   def CreateCylinder(
     name: String,
     height: Double,
@@ -254,6 +297,8 @@ object Mesh extends js.Object {
     * @param instance is an instance of an existing LineMesh object to be updated with the passed `points` parameter (https://doc.babylonjs.com/how_to/How_to_dynamically_morph_a_mesh#lines-and-dashedlines)
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.CreateDashedLines")
+  @js.native
   def CreateDashedLines(
     name: String,
     points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -261,6 +306,8 @@ object Mesh extends js.Object {
     gapSize: Double,
     dashNb: Double
   ): typings.babylonjs.linesMeshMod.LinesMesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateDashedLines")
+  @js.native
   def CreateDashedLines(
     name: String,
     points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -271,6 +318,8 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     instance: typings.babylonjs.linesMeshMod.LinesMesh
   ): typings.babylonjs.linesMeshMod.LinesMesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateDashedLines")
+  @js.native
   def CreateDashedLines(
     name: String,
     points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -280,6 +329,8 @@ object Mesh extends js.Object {
     scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
     updatable: Boolean
   ): typings.babylonjs.linesMeshMod.LinesMesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateDashedLines")
+  @js.native
   def CreateDashedLines(
     name: String,
     points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -290,6 +341,8 @@ object Mesh extends js.Object {
     updatable: Boolean,
     instance: typings.babylonjs.linesMeshMod.LinesMesh
   ): typings.babylonjs.linesMeshMod.LinesMesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateDashedLines")
+  @js.native
   def CreateDashedLines(
     name: String,
     points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -311,6 +364,8 @@ object Mesh extends js.Object {
     * @param angle sets the angle to rotate the decal
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.CreateDecal")
+  @js.native
   def CreateDecal(
     name: String,
     sourceMesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
@@ -330,7 +385,11 @@ object Mesh extends js.Object {
     * @param sideOrientation defines the mesh side orientation (https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation)
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.CreateDisc")
+  @js.native
   def CreateDisc(name: String, radius: Double, tessellation: Double): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateDisc")
+  @js.native
   def CreateDisc(
     name: String,
     radius: Double,
@@ -339,6 +398,8 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateDisc")
+  @js.native
   def CreateDisc(
     name: String,
     radius: Double,
@@ -346,6 +407,8 @@ object Mesh extends js.Object {
     scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
     updatable: Boolean
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateDisc")
+  @js.native
   def CreateDisc(
     name: String,
     radius: Double,
@@ -354,6 +417,8 @@ object Mesh extends js.Object {
     updatable: Boolean,
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateDisc")
+  @js.native
   def CreateDisc(
     name: String,
     radius: Double,
@@ -372,7 +437,11 @@ object Mesh extends js.Object {
     * @param updatable defines if the mesh must be flagged as updatable
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.CreateGround")
+  @js.native
   def CreateGround(name: String, width: Double, height: Double, subdivisions: Double): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateGround")
+  @js.native
   def CreateGround(
     name: String,
     width: Double,
@@ -381,6 +450,8 @@ object Mesh extends js.Object {
     scene: js.UndefOr[scala.Nothing],
     updatable: Boolean
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateGround")
+  @js.native
   def CreateGround(
     name: String,
     width: Double,
@@ -388,6 +459,8 @@ object Mesh extends js.Object {
     subdivisions: Double,
     scene: typings.babylonjs.sceneMod.Scene
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateGround")
+  @js.native
   def CreateGround(
     name: String,
     width: Double,
@@ -414,6 +487,8 @@ object Mesh extends js.Object {
     * @param alphaFilter will filter any data where the alpha channel is below this value, defaults 0 (all data visible)
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.CreateGroundFromHeightMap")
+  @js.native
   def CreateGroundFromHeightMap(
     name: String,
     url: String,
@@ -424,6 +499,8 @@ object Mesh extends js.Object {
     maxHeight: Double,
     scene: typings.babylonjs.sceneMod.Scene
   ): typings.babylonjs.groundMeshMod.GroundMesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateGroundFromHeightMap")
+  @js.native
   def CreateGroundFromHeightMap(
     name: String,
     url: String,
@@ -437,6 +514,8 @@ object Mesh extends js.Object {
     onReady: js.UndefOr[scala.Nothing],
     alphaFilter: Double
   ): typings.babylonjs.groundMeshMod.GroundMesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateGroundFromHeightMap")
+  @js.native
   def CreateGroundFromHeightMap(
     name: String,
     url: String,
@@ -449,6 +528,8 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     onReady: js.Function1[/* mesh */ typings.babylonjs.groundMeshMod.GroundMesh, Unit]
   ): typings.babylonjs.groundMeshMod.GroundMesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateGroundFromHeightMap")
+  @js.native
   def CreateGroundFromHeightMap(
     name: String,
     url: String,
@@ -462,6 +543,8 @@ object Mesh extends js.Object {
     onReady: js.Function1[/* mesh */ typings.babylonjs.groundMeshMod.GroundMesh, Unit],
     alphaFilter: Double
   ): typings.babylonjs.groundMeshMod.GroundMesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateGroundFromHeightMap")
+  @js.native
   def CreateGroundFromHeightMap(
     name: String,
     url: String,
@@ -473,6 +556,8 @@ object Mesh extends js.Object {
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean
   ): typings.babylonjs.groundMeshMod.GroundMesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateGroundFromHeightMap")
+  @js.native
   def CreateGroundFromHeightMap(
     name: String,
     url: String,
@@ -486,6 +571,8 @@ object Mesh extends js.Object {
     onReady: js.UndefOr[scala.Nothing],
     alphaFilter: Double
   ): typings.babylonjs.groundMeshMod.GroundMesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateGroundFromHeightMap")
+  @js.native
   def CreateGroundFromHeightMap(
     name: String,
     url: String,
@@ -498,6 +585,8 @@ object Mesh extends js.Object {
     updatable: Boolean,
     onReady: js.Function1[/* mesh */ typings.babylonjs.groundMeshMod.GroundMesh, Unit]
   ): typings.babylonjs.groundMeshMod.GroundMesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateGroundFromHeightMap")
+  @js.native
   def CreateGroundFromHeightMap(
     name: String,
     url: String,
@@ -520,7 +609,11 @@ object Mesh extends js.Object {
     * @param scene defines the hosting scene
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.CreateHemisphere")
+  @js.native
   def CreateHemisphere(name: String, segments: Double, diameter: Double): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateHemisphere")
+  @js.native
   def CreateHemisphere(name: String, segments: Double, diameter: Double, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = js.native
   
   /**
@@ -538,6 +631,8 @@ object Mesh extends js.Object {
     * @returns a new Mesh
     * @see https://doc.babylonjs.com/how_to/polyhedra_shapes#icosphere
     */
+  @JSImport("babylonjs", "Mesh.CreateIcoSphere")
+  @js.native
   def CreateIcoSphere(name: String, options: Flat, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = js.native
   
   /**
@@ -553,6 +648,8 @@ object Mesh extends js.Object {
     * @param sideOrientation defines the mesh side orientation (https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation)
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.CreateLathe")
+  @js.native
   def CreateLathe(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -560,6 +657,8 @@ object Mesh extends js.Object {
     tessellation: Double,
     scene: typings.babylonjs.sceneMod.Scene
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateLathe")
+  @js.native
   def CreateLathe(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -569,6 +668,8 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateLathe")
+  @js.native
   def CreateLathe(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -577,6 +678,8 @@ object Mesh extends js.Object {
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateLathe")
+  @js.native
   def CreateLathe(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -596,7 +699,11 @@ object Mesh extends js.Object {
     * @param instance is an instance of an existing LineMesh object to be updated with the passed `points` parameter (https://doc.babylonjs.com/how_to/How_to_dynamically_morph_a_mesh#lines-and-dashedlines).
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.CreateLines")
+  @js.native
   def CreateLines(name: String, points: js.Array[typings.babylonjs.mathVectorMod.Vector3]): typings.babylonjs.linesMeshMod.LinesMesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateLines")
+  @js.native
   def CreateLines(
     name: String,
     points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -604,12 +711,16 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     instance: Nullable[typings.babylonjs.linesMeshMod.LinesMesh]
   ): typings.babylonjs.linesMeshMod.LinesMesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateLines")
+  @js.native
   def CreateLines(
     name: String,
     points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
     updatable: Boolean
   ): typings.babylonjs.linesMeshMod.LinesMesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateLines")
+  @js.native
   def CreateLines(
     name: String,
     points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -617,6 +728,8 @@ object Mesh extends js.Object {
     updatable: Boolean,
     instance: Nullable[typings.babylonjs.linesMeshMod.LinesMesh]
   ): typings.babylonjs.linesMeshMod.LinesMesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateLines")
+  @js.native
   def CreateLines(
     name: String,
     points: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -632,7 +745,11 @@ object Mesh extends js.Object {
     * @param sideOrientation defines the mesh side orientation (https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation)
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.CreatePlane")
+  @js.native
   def CreatePlane(name: String, size: Double, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreatePlane")
+  @js.native
   def CreatePlane(
     name: String,
     size: Double,
@@ -640,7 +757,11 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreatePlane")
+  @js.native
   def CreatePlane(name: String, size: Double, scene: typings.babylonjs.sceneMod.Scene, updatable: Boolean): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreatePlane")
+  @js.native
   def CreatePlane(
     name: String,
     size: Double,
@@ -666,11 +787,15 @@ object Mesh extends js.Object {
     * @param earcutInjection can be used to inject your own earcut reference
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.CreatePolygon")
+  @js.native
   def CreatePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     scene: typings.babylonjs.sceneMod.Scene
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreatePolygon")
+  @js.native
   def CreatePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -680,6 +805,8 @@ object Mesh extends js.Object {
     sideOrientation: js.UndefOr[scala.Nothing],
     earcutInjection: js.Any
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreatePolygon")
+  @js.native
   def CreatePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -688,6 +815,8 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreatePolygon")
+  @js.native
   def CreatePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -697,6 +826,8 @@ object Mesh extends js.Object {
     sideOrientation: Double,
     earcutInjection: js.Any
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreatePolygon")
+  @js.native
   def CreatePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -704,6 +835,8 @@ object Mesh extends js.Object {
     holes: js.UndefOr[scala.Nothing],
     updatable: Boolean
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreatePolygon")
+  @js.native
   def CreatePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -713,6 +846,8 @@ object Mesh extends js.Object {
     sideOrientation: js.UndefOr[scala.Nothing],
     earcutInjection: js.Any
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreatePolygon")
+  @js.native
   def CreatePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -721,6 +856,8 @@ object Mesh extends js.Object {
     updatable: Boolean,
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreatePolygon")
+  @js.native
   def CreatePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -730,12 +867,16 @@ object Mesh extends js.Object {
     sideOrientation: Double,
     earcutInjection: js.Any
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreatePolygon")
+  @js.native
   def CreatePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     scene: typings.babylonjs.sceneMod.Scene,
     holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]]
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreatePolygon")
+  @js.native
   def CreatePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -745,6 +886,8 @@ object Mesh extends js.Object {
     sideOrientation: js.UndefOr[scala.Nothing],
     earcutInjection: js.Any
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreatePolygon")
+  @js.native
   def CreatePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -753,6 +896,8 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreatePolygon")
+  @js.native
   def CreatePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -762,6 +907,8 @@ object Mesh extends js.Object {
     sideOrientation: Double,
     earcutInjection: js.Any
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreatePolygon")
+  @js.native
   def CreatePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -769,6 +916,8 @@ object Mesh extends js.Object {
     holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
     updatable: Boolean
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreatePolygon")
+  @js.native
   def CreatePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -778,6 +927,8 @@ object Mesh extends js.Object {
     sideOrientation: js.UndefOr[scala.Nothing],
     earcutInjection: js.Any
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreatePolygon")
+  @js.native
   def CreatePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -786,6 +937,8 @@ object Mesh extends js.Object {
     updatable: Boolean,
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreatePolygon")
+  @js.native
   def CreatePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -815,6 +968,8 @@ object Mesh extends js.Object {
     * @param scene defines the hosting scene
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.CreatePolyhedron")
+  @js.native
   def CreatePolyhedron(name: String, options: Custom, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = js.native
   
   /**
@@ -831,6 +986,8 @@ object Mesh extends js.Object {
     * @param instance defines an instance of an existing Ribbon object to be updated with the passed `pathArray` parameter (https://doc.babylonjs.com/how_to/How_to_dynamically_morph_a_mesh#ribbon)
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.CreateRibbon")
+  @js.native
   def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
@@ -838,6 +995,8 @@ object Mesh extends js.Object {
     closePath: Boolean,
     offset: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateRibbon")
+  @js.native
   def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
@@ -849,6 +1008,8 @@ object Mesh extends js.Object {
     sideOrientation: js.UndefOr[scala.Nothing],
     instance: typings.babylonjs.meshMod.Mesh
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateRibbon")
+  @js.native
   def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
@@ -859,6 +1020,8 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateRibbon")
+  @js.native
   def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
@@ -870,6 +1033,8 @@ object Mesh extends js.Object {
     sideOrientation: Double,
     instance: typings.babylonjs.meshMod.Mesh
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateRibbon")
+  @js.native
   def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
@@ -879,6 +1044,8 @@ object Mesh extends js.Object {
     scene: js.UndefOr[scala.Nothing],
     updatable: Boolean
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateRibbon")
+  @js.native
   def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
@@ -890,6 +1057,8 @@ object Mesh extends js.Object {
     sideOrientation: js.UndefOr[scala.Nothing],
     instance: typings.babylonjs.meshMod.Mesh
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateRibbon")
+  @js.native
   def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
@@ -900,6 +1069,8 @@ object Mesh extends js.Object {
     updatable: Boolean,
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateRibbon")
+  @js.native
   def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
@@ -911,6 +1082,8 @@ object Mesh extends js.Object {
     sideOrientation: Double,
     instance: typings.babylonjs.meshMod.Mesh
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateRibbon")
+  @js.native
   def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
@@ -919,6 +1092,8 @@ object Mesh extends js.Object {
     offset: Double,
     scene: typings.babylonjs.sceneMod.Scene
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateRibbon")
+  @js.native
   def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
@@ -930,6 +1105,8 @@ object Mesh extends js.Object {
     sideOrientation: js.UndefOr[scala.Nothing],
     instance: typings.babylonjs.meshMod.Mesh
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateRibbon")
+  @js.native
   def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
@@ -940,6 +1117,8 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateRibbon")
+  @js.native
   def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
@@ -951,6 +1130,8 @@ object Mesh extends js.Object {
     sideOrientation: Double,
     instance: typings.babylonjs.meshMod.Mesh
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateRibbon")
+  @js.native
   def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
@@ -960,6 +1141,8 @@ object Mesh extends js.Object {
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateRibbon")
+  @js.native
   def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
@@ -971,6 +1154,8 @@ object Mesh extends js.Object {
     sideOrientation: js.UndefOr[scala.Nothing],
     instance: typings.babylonjs.meshMod.Mesh
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateRibbon")
+  @js.native
   def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
@@ -981,6 +1166,8 @@ object Mesh extends js.Object {
     updatable: Boolean,
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateRibbon")
+  @js.native
   def CreateRibbon(
     name: String,
     pathArray: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
@@ -1003,7 +1190,11 @@ object Mesh extends js.Object {
     * @param sideOrientation defines the mesh side orientation (https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation)
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.CreateSphere")
+  @js.native
   def CreateSphere(name: String, segments: Double, diameter: Double): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateSphere")
+  @js.native
   def CreateSphere(
     name: String,
     segments: Double,
@@ -1012,6 +1203,8 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateSphere")
+  @js.native
   def CreateSphere(
     name: String,
     segments: Double,
@@ -1019,6 +1212,8 @@ object Mesh extends js.Object {
     scene: js.UndefOr[scala.Nothing],
     updatable: Boolean
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateSphere")
+  @js.native
   def CreateSphere(
     name: String,
     segments: Double,
@@ -1027,7 +1222,11 @@ object Mesh extends js.Object {
     updatable: Boolean,
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateSphere")
+  @js.native
   def CreateSphere(name: String, segments: Double, diameter: Double, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateSphere")
+  @js.native
   def CreateSphere(
     name: String,
     segments: Double,
@@ -1036,6 +1235,8 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateSphere")
+  @js.native
   def CreateSphere(
     name: String,
     segments: Double,
@@ -1043,6 +1244,8 @@ object Mesh extends js.Object {
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateSphere")
+  @js.native
   def CreateSphere(
     name: String,
     segments: Double,
@@ -1066,6 +1269,8 @@ object Mesh extends js.Object {
     * @param updatable defines if the mesh must be flagged as updatable
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.CreateTiledGround")
+  @js.native
   def CreateTiledGround(
     name: String,
     xmin: Double,
@@ -1076,6 +1281,8 @@ object Mesh extends js.Object {
     precision: H,
     scene: typings.babylonjs.sceneMod.Scene
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTiledGround")
+  @js.native
   def CreateTiledGround(
     name: String,
     xmin: Double,
@@ -1099,7 +1306,11 @@ object Mesh extends js.Object {
     * @param sideOrientation defines the mesh side orientation (https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation)
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.CreateTorus")
+  @js.native
   def CreateTorus(name: String, diameter: Double, thickness: Double, tessellation: Double): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTorus")
+  @js.native
   def CreateTorus(
     name: String,
     diameter: Double,
@@ -1109,6 +1320,8 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTorus")
+  @js.native
   def CreateTorus(
     name: String,
     diameter: Double,
@@ -1117,6 +1330,8 @@ object Mesh extends js.Object {
     scene: js.UndefOr[scala.Nothing],
     updatable: Boolean
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTorus")
+  @js.native
   def CreateTorus(
     name: String,
     diameter: Double,
@@ -1126,6 +1341,8 @@ object Mesh extends js.Object {
     updatable: Boolean,
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTorus")
+  @js.native
   def CreateTorus(
     name: String,
     diameter: Double,
@@ -1133,6 +1350,8 @@ object Mesh extends js.Object {
     tessellation: Double,
     scene: typings.babylonjs.sceneMod.Scene
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTorus")
+  @js.native
   def CreateTorus(
     name: String,
     diameter: Double,
@@ -1142,6 +1361,8 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTorus")
+  @js.native
   def CreateTorus(
     name: String,
     diameter: Double,
@@ -1150,6 +1371,8 @@ object Mesh extends js.Object {
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTorus")
+  @js.native
   def CreateTorus(
     name: String,
     diameter: Double,
@@ -1174,6 +1397,8 @@ object Mesh extends js.Object {
     * @param sideOrientation defines the mesh side orientation (https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation)
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.CreateTorusKnot")
+  @js.native
   def CreateTorusKnot(
     name: String,
     radius: Double,
@@ -1183,6 +1408,8 @@ object Mesh extends js.Object {
     p: Double,
     q: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTorusKnot")
+  @js.native
   def CreateTorusKnot(
     name: String,
     radius: Double,
@@ -1195,6 +1422,8 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTorusKnot")
+  @js.native
   def CreateTorusKnot(
     name: String,
     radius: Double,
@@ -1206,6 +1435,8 @@ object Mesh extends js.Object {
     scene: js.UndefOr[scala.Nothing],
     updatable: Boolean
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTorusKnot")
+  @js.native
   def CreateTorusKnot(
     name: String,
     radius: Double,
@@ -1218,6 +1449,8 @@ object Mesh extends js.Object {
     updatable: Boolean,
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTorusKnot")
+  @js.native
   def CreateTorusKnot(
     name: String,
     radius: Double,
@@ -1228,6 +1461,8 @@ object Mesh extends js.Object {
     q: Double,
     scene: typings.babylonjs.sceneMod.Scene
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTorusKnot")
+  @js.native
   def CreateTorusKnot(
     name: String,
     radius: Double,
@@ -1240,6 +1475,8 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTorusKnot")
+  @js.native
   def CreateTorusKnot(
     name: String,
     radius: Double,
@@ -1251,6 +1488,8 @@ object Mesh extends js.Object {
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTorusKnot")
+  @js.native
   def CreateTorusKnot(
     name: String,
     radius: Double,
@@ -1282,6 +1521,8 @@ object Mesh extends js.Object {
     * @param instance is an instance of an existing Tube object to be updated with the passed `pathArray` parameter (https://doc.babylonjs.com/how_to/How_to_dynamically_morph_a_mesh#tube)
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.CreateTube")
+  @js.native
   def CreateTube(
     name: String,
     path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1291,6 +1532,8 @@ object Mesh extends js.Object {
     cap: Double,
     scene: typings.babylonjs.sceneMod.Scene
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTube")
+  @js.native
   def CreateTube(
     name: String,
     path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1303,6 +1546,8 @@ object Mesh extends js.Object {
     sideOrientation: js.UndefOr[scala.Nothing],
     instance: typings.babylonjs.meshMod.Mesh
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTube")
+  @js.native
   def CreateTube(
     name: String,
     path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1314,6 +1559,8 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTube")
+  @js.native
   def CreateTube(
     name: String,
     path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1326,6 +1573,8 @@ object Mesh extends js.Object {
     sideOrientation: Double,
     instance: typings.babylonjs.meshMod.Mesh
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTube")
+  @js.native
   def CreateTube(
     name: String,
     path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1336,6 +1585,8 @@ object Mesh extends js.Object {
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTube")
+  @js.native
   def CreateTube(
     name: String,
     path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1348,6 +1599,8 @@ object Mesh extends js.Object {
     sideOrientation: js.UndefOr[scala.Nothing],
     instance: typings.babylonjs.meshMod.Mesh
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTube")
+  @js.native
   def CreateTube(
     name: String,
     path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1359,6 +1612,8 @@ object Mesh extends js.Object {
     updatable: Boolean,
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.CreateTube")
+  @js.native
   def CreateTube(
     name: String,
     path: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1375,11 +1630,15 @@ object Mesh extends js.Object {
   /**
     * Mesh side orientation : by default, `FRONTSIDE`
     */
+  @JSImport("babylonjs", "Mesh.DEFAULTSIDE")
+  @js.native
   val DEFAULTSIDE: Double = js.native
   
   /**
     * Mesh side orientation : both internal and external or front and back surfaces
     */
+  @JSImport("babylonjs", "Mesh.DOUBLESIDE")
+  @js.native
   val DOUBLESIDE: Double = js.native
   
   /**
@@ -1395,12 +1654,16 @@ object Mesh extends js.Object {
     * @param earcutInjection can be used to inject your own earcut reference
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
+  @js.native
   def ExtrudePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
     depth: Double,
     scene: typings.babylonjs.sceneMod.Scene
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
+  @js.native
   def ExtrudePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1411,6 +1674,8 @@ object Mesh extends js.Object {
     sideOrientation: js.UndefOr[scala.Nothing],
     earcutInjection: js.Any
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
+  @js.native
   def ExtrudePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1420,6 +1685,8 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
+  @js.native
   def ExtrudePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1430,6 +1697,8 @@ object Mesh extends js.Object {
     sideOrientation: Double,
     earcutInjection: js.Any
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
+  @js.native
   def ExtrudePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1438,6 +1707,8 @@ object Mesh extends js.Object {
     holes: js.UndefOr[scala.Nothing],
     updatable: Boolean
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
+  @js.native
   def ExtrudePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1448,6 +1719,8 @@ object Mesh extends js.Object {
     sideOrientation: js.UndefOr[scala.Nothing],
     earcutInjection: js.Any
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
+  @js.native
   def ExtrudePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1457,6 +1730,8 @@ object Mesh extends js.Object {
     updatable: Boolean,
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
+  @js.native
   def ExtrudePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1467,6 +1742,8 @@ object Mesh extends js.Object {
     sideOrientation: Double,
     earcutInjection: js.Any
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
+  @js.native
   def ExtrudePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1474,6 +1751,8 @@ object Mesh extends js.Object {
     scene: typings.babylonjs.sceneMod.Scene,
     holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]]
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
+  @js.native
   def ExtrudePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1484,6 +1763,8 @@ object Mesh extends js.Object {
     sideOrientation: js.UndefOr[scala.Nothing],
     earcutInjection: js.Any
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
+  @js.native
   def ExtrudePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1493,6 +1774,8 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
+  @js.native
   def ExtrudePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1503,6 +1786,8 @@ object Mesh extends js.Object {
     sideOrientation: Double,
     earcutInjection: js.Any
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
+  @js.native
   def ExtrudePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1511,6 +1796,8 @@ object Mesh extends js.Object {
     holes: js.Array[js.Array[typings.babylonjs.mathVectorMod.Vector3]],
     updatable: Boolean
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
+  @js.native
   def ExtrudePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1521,6 +1808,8 @@ object Mesh extends js.Object {
     sideOrientation: js.UndefOr[scala.Nothing],
     earcutInjection: js.Any
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
+  @js.native
   def ExtrudePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1530,6 +1819,8 @@ object Mesh extends js.Object {
     updatable: Boolean,
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudePolygon")
+  @js.native
   def ExtrudePolygon(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1558,6 +1849,8 @@ object Mesh extends js.Object {
     * @param instance is an instance of an existing ExtrudedShape object to be updated with the passed `shape`, `path`, `scale` or `rotation` parameters (https://doc.babylonjs.com/how_to/How_to_dynamically_morph_a_mesh#extruded-shape)
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.ExtrudeShape")
+  @js.native
   def ExtrudeShape(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1566,6 +1859,8 @@ object Mesh extends js.Object {
     rotation: Double,
     cap: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudeShape")
+  @js.native
   def ExtrudeShape(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1578,6 +1873,8 @@ object Mesh extends js.Object {
     sideOrientation: js.UndefOr[scala.Nothing],
     instance: typings.babylonjs.meshMod.Mesh
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudeShape")
+  @js.native
   def ExtrudeShape(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1589,6 +1886,8 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudeShape")
+  @js.native
   def ExtrudeShape(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1601,6 +1900,8 @@ object Mesh extends js.Object {
     sideOrientation: Double,
     instance: typings.babylonjs.meshMod.Mesh
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudeShape")
+  @js.native
   def ExtrudeShape(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1611,6 +1912,8 @@ object Mesh extends js.Object {
     scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
     updatable: Boolean
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudeShape")
+  @js.native
   def ExtrudeShape(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1623,6 +1926,8 @@ object Mesh extends js.Object {
     sideOrientation: js.UndefOr[scala.Nothing],
     instance: typings.babylonjs.meshMod.Mesh
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudeShape")
+  @js.native
   def ExtrudeShape(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1634,6 +1939,8 @@ object Mesh extends js.Object {
     updatable: Boolean,
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudeShape")
+  @js.native
   def ExtrudeShape(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1646,6 +1953,8 @@ object Mesh extends js.Object {
     sideOrientation: Double,
     instance: typings.babylonjs.meshMod.Mesh
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudeShape")
+  @js.native
   def ExtrudeShape(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1676,6 +1985,8 @@ object Mesh extends js.Object {
     * @param instance is an instance of an existing ExtrudedShape object to be updated with the passed `shape`, `path`, `scale` or `rotation` parameters (https://doc.babylonjs.com/how_to/how_to_dynamically_morph_a_mesh#extruded-shape)
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.ExtrudeShapeCustom")
+  @js.native
   def ExtrudeShapeCustom(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1687,6 +1998,8 @@ object Mesh extends js.Object {
     cap: Double,
     scene: typings.babylonjs.sceneMod.Scene
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudeShapeCustom")
+  @js.native
   def ExtrudeShapeCustom(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1701,6 +2014,8 @@ object Mesh extends js.Object {
     sideOrientation: js.UndefOr[scala.Nothing],
     instance: typings.babylonjs.meshMod.Mesh
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudeShapeCustom")
+  @js.native
   def ExtrudeShapeCustom(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1714,6 +2029,8 @@ object Mesh extends js.Object {
     updatable: js.UndefOr[scala.Nothing],
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudeShapeCustom")
+  @js.native
   def ExtrudeShapeCustom(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1728,6 +2045,8 @@ object Mesh extends js.Object {
     sideOrientation: Double,
     instance: typings.babylonjs.meshMod.Mesh
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudeShapeCustom")
+  @js.native
   def ExtrudeShapeCustom(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1740,6 +2059,8 @@ object Mesh extends js.Object {
     scene: typings.babylonjs.sceneMod.Scene,
     updatable: Boolean
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudeShapeCustom")
+  @js.native
   def ExtrudeShapeCustom(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1754,6 +2075,8 @@ object Mesh extends js.Object {
     sideOrientation: js.UndefOr[scala.Nothing],
     instance: typings.babylonjs.meshMod.Mesh
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudeShapeCustom")
+  @js.native
   def ExtrudeShapeCustom(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1767,6 +2090,8 @@ object Mesh extends js.Object {
     updatable: Boolean,
     sideOrientation: Double
   ): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs", "Mesh.ExtrudeShapeCustom")
+  @js.native
   def ExtrudeShapeCustom(
     name: String,
     shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
@@ -1785,31 +2110,43 @@ object Mesh extends js.Object {
   /**
     * Mesh pattern setting : rotate pattern and rotate
     */
+  @JSImport("babylonjs", "Mesh.FLIP_N_ROTATE_ROW")
+  @js.native
   val FLIP_N_ROTATE_ROW: Double = js.native
   
   /**
     * Mesh pattern setting : flip and rotate alternate tiles on each row or column
     */
+  @JSImport("babylonjs", "Mesh.FLIP_N_ROTATE_TILE")
+  @js.native
   val FLIP_N_ROTATE_TILE: Double = js.native
   
   /**
     * Mesh pattern setting : flip (reflect in y axis) all tiles on alternate rows
     */
+  @JSImport("babylonjs", "Mesh.FLIP_ROW")
+  @js.native
   val FLIP_ROW: Double = js.native
   
   /**
     * Mesh pattern setting : flip (reflect in y axis) alternate tiles on each row or column
     */
+  @JSImport("babylonjs", "Mesh.FLIP_TILE")
+  @js.native
   val FLIP_TILE: Double = js.native
   
   /**
     * Mesh side orientation : usually the external or front surface
     */
+  @JSImport("babylonjs", "Mesh.FRONTSIDE")
+  @js.native
   val FRONTSIDE: Double = js.native
   
   /**
     * Mesh tile positioning : part tiles on left
     */
+  @JSImport("babylonjs", "Mesh.LEFT")
+  @js.native
   val LEFT: Double = js.native
   
   /**
@@ -1822,7 +2159,11 @@ object Mesh extends js.Object {
     * @param multiMultiMaterials when true (false default), subdivide mesh and accept multiple multi materials, ignores subdivideWithSubMeshes.
     * @returns a new mesh
     */
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(meshes: js.Array[typings.babylonjs.meshMod.Mesh]): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: js.UndefOr[scala.Nothing],
@@ -1831,6 +2172,8 @@ object Mesh extends js.Object {
     subdivideWithSubMeshes: js.UndefOr[scala.Nothing],
     multiMultiMaterials: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: js.UndefOr[scala.Nothing],
@@ -1838,6 +2181,8 @@ object Mesh extends js.Object {
     meshSubclass: js.UndefOr[scala.Nothing],
     subdivideWithSubMeshes: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: js.UndefOr[scala.Nothing],
@@ -1846,12 +2191,16 @@ object Mesh extends js.Object {
     subdivideWithSubMeshes: Boolean,
     multiMultiMaterials: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: js.UndefOr[scala.Nothing],
     allow32BitsIndices: js.UndefOr[scala.Nothing],
     meshSubclass: typings.babylonjs.meshMod.Mesh
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: js.UndefOr[scala.Nothing],
@@ -1860,6 +2209,8 @@ object Mesh extends js.Object {
     subdivideWithSubMeshes: js.UndefOr[scala.Nothing],
     multiMultiMaterials: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: js.UndefOr[scala.Nothing],
@@ -1867,6 +2218,8 @@ object Mesh extends js.Object {
     meshSubclass: typings.babylonjs.meshMod.Mesh,
     subdivideWithSubMeshes: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: js.UndefOr[scala.Nothing],
@@ -1875,11 +2228,15 @@ object Mesh extends js.Object {
     subdivideWithSubMeshes: Boolean,
     multiMultiMaterials: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: js.UndefOr[scala.Nothing],
     allow32BitsIndices: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: js.UndefOr[scala.Nothing],
@@ -1888,6 +2245,8 @@ object Mesh extends js.Object {
     subdivideWithSubMeshes: js.UndefOr[scala.Nothing],
     multiMultiMaterials: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: js.UndefOr[scala.Nothing],
@@ -1895,6 +2254,8 @@ object Mesh extends js.Object {
     meshSubclass: js.UndefOr[scala.Nothing],
     subdivideWithSubMeshes: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: js.UndefOr[scala.Nothing],
@@ -1903,12 +2264,16 @@ object Mesh extends js.Object {
     subdivideWithSubMeshes: Boolean,
     multiMultiMaterials: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: js.UndefOr[scala.Nothing],
     allow32BitsIndices: Boolean,
     meshSubclass: typings.babylonjs.meshMod.Mesh
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: js.UndefOr[scala.Nothing],
@@ -1917,6 +2282,8 @@ object Mesh extends js.Object {
     subdivideWithSubMeshes: js.UndefOr[scala.Nothing],
     multiMultiMaterials: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: js.UndefOr[scala.Nothing],
@@ -1924,6 +2291,8 @@ object Mesh extends js.Object {
     meshSubclass: typings.babylonjs.meshMod.Mesh,
     subdivideWithSubMeshes: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: js.UndefOr[scala.Nothing],
@@ -1932,7 +2301,11 @@ object Mesh extends js.Object {
     subdivideWithSubMeshes: Boolean,
     multiMultiMaterials: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(meshes: js.Array[typings.babylonjs.meshMod.Mesh], disposeSource: Boolean): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: Boolean,
@@ -1941,6 +2314,8 @@ object Mesh extends js.Object {
     subdivideWithSubMeshes: js.UndefOr[scala.Nothing],
     multiMultiMaterials: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: Boolean,
@@ -1948,6 +2323,8 @@ object Mesh extends js.Object {
     meshSubclass: js.UndefOr[scala.Nothing],
     subdivideWithSubMeshes: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: Boolean,
@@ -1956,12 +2333,16 @@ object Mesh extends js.Object {
     subdivideWithSubMeshes: Boolean,
     multiMultiMaterials: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: Boolean,
     allow32BitsIndices: js.UndefOr[scala.Nothing],
     meshSubclass: typings.babylonjs.meshMod.Mesh
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: Boolean,
@@ -1970,6 +2351,8 @@ object Mesh extends js.Object {
     subdivideWithSubMeshes: js.UndefOr[scala.Nothing],
     multiMultiMaterials: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: Boolean,
@@ -1977,6 +2360,8 @@ object Mesh extends js.Object {
     meshSubclass: typings.babylonjs.meshMod.Mesh,
     subdivideWithSubMeshes: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: Boolean,
@@ -1985,11 +2370,15 @@ object Mesh extends js.Object {
     subdivideWithSubMeshes: Boolean,
     multiMultiMaterials: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: Boolean,
     allow32BitsIndices: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: Boolean,
@@ -1998,6 +2387,8 @@ object Mesh extends js.Object {
     subdivideWithSubMeshes: js.UndefOr[scala.Nothing],
     multiMultiMaterials: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: Boolean,
@@ -2005,6 +2396,8 @@ object Mesh extends js.Object {
     meshSubclass: js.UndefOr[scala.Nothing],
     subdivideWithSubMeshes: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: Boolean,
@@ -2013,12 +2406,16 @@ object Mesh extends js.Object {
     subdivideWithSubMeshes: Boolean,
     multiMultiMaterials: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: Boolean,
     allow32BitsIndices: Boolean,
     meshSubclass: typings.babylonjs.meshMod.Mesh
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: Boolean,
@@ -2027,6 +2424,8 @@ object Mesh extends js.Object {
     subdivideWithSubMeshes: js.UndefOr[scala.Nothing],
     multiMultiMaterials: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: Boolean,
@@ -2034,6 +2433,8 @@ object Mesh extends js.Object {
     meshSubclass: typings.babylonjs.meshMod.Mesh,
     subdivideWithSubMeshes: Boolean
   ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+  @JSImport("babylonjs", "Mesh.MergeMeshes")
+  @js.native
   def MergeMeshes(
     meshes: js.Array[typings.babylonjs.meshMod.Mesh],
     disposeSource: Boolean,
@@ -2048,16 +2449,22 @@ object Mesh extends js.Object {
     * @param meshes defines the list of meshes to scan
     * @returns an object `{min:` Vector3`, max:` Vector3`}`
     */
+  @JSImport("babylonjs", "Mesh.MinMax")
+  @js.native
   def MinMax(meshes: js.Array[typings.babylonjs.abstractMeshMod.AbstractMesh]): Max = js.native
   
   /**
     * Mesh cap setting : no cap
     */
+  @JSImport("babylonjs", "Mesh.NO_CAP")
+  @js.native
   val NO_CAP: Double = js.native
   
   /**
     * Mesh pattern setting : no flip or rotate
     */
+  @JSImport("babylonjs", "Mesh.NO_FLIP")
+  @js.native
   val NO_FLIP: Double = js.native
   
   /**
@@ -2067,26 +2474,36 @@ object Mesh extends js.Object {
     * @param rootUrl is the root URL to prefix the `delayLoadingFile` property with
     * @returns a new Mesh
     */
+  @JSImport("babylonjs", "Mesh.Parse")
+  @js.native
   def Parse(parsedMesh: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.meshMod.Mesh = js.native
   
   /**
     * Mesh tile positioning : part tiles on right
     */
+  @JSImport("babylonjs", "Mesh.RIGHT")
+  @js.native
   val RIGHT: Double = js.native
   
   /**
     * Mesh pattern setting : rotate (180degs) all tiles on alternate rows
     */
+  @JSImport("babylonjs", "Mesh.ROTATE_ROW")
+  @js.native
   val ROTATE_ROW: Double = js.native
   
   /**
     * Mesh pattern setting : rotate (180degs) alternate tiles on each row or column
     */
+  @JSImport("babylonjs", "Mesh.ROTATE_TILE")
+  @js.native
   val ROTATE_TILE: Double = js.native
   
   /**
     * Mesh tile positioning : part tiles on top
     */
+  @JSImport("babylonjs", "Mesh.TOP")
+  @js.native
   val TOP: Double = js.native
   
   /**
@@ -2095,15 +2512,25 @@ object Mesh extends js.Object {
     * @returns the default orientation
     * @hidden
     */
+  @JSImport("babylonjs", "Mesh._GetDefaultSideOrientation")
+  @js.native
   def _GetDefaultSideOrientation(): Double = js.native
+  @JSImport("babylonjs", "Mesh._GetDefaultSideOrientation")
+  @js.native
   def _GetDefaultSideOrientation(orientation: Double): Double = js.native
   
   /** @hidden */
+  @JSImport("babylonjs", "Mesh._GroundMeshParser")
+  @js.native
   def _GroundMeshParser(parsedMesh: js.Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshMod.Mesh = js.native
   
   /** @hidden */
+  @JSImport("babylonjs", "Mesh._PhysicsImpostorParser")
+  @js.native
   def _PhysicsImpostorParser(scene: typings.babylonjs.sceneMod.Scene, physicObject: IPhysicsEnabledObject, jsonObject: js.Any): typings.babylonjs.physicsImpostorMod.PhysicsImpostor = js.native
   
   /** @hidden */
+  @JSImport("babylonjs", "Mesh._instancedMeshFactory")
+  @js.native
   def _instancedMeshFactory(name: String, mesh: typings.babylonjs.meshMod.Mesh): typings.babylonjs.instancedMeshMod.InstancedMesh = js.native
 }

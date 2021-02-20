@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.androiddeviceprovisioning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Configuration extends js.Object {
+trait Configuration extends StObject {
   
   /** Required. The name of the organization. Zero-touch enrollment shows this organization name to device users during device provisioning. */
   var companyName: js.UndefOr[String] = js.native
@@ -61,78 +62,66 @@ object Configuration {
   }
   
   @scala.inline
-  implicit class ConfigurationOps[Self <: Configuration] (val x: Self) extends AnyVal {
+  implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompanyNameUndefined: Self = StObject.set(x, "companyName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigurationId(value: String): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanyName(value: String): Self = this.set("companyName", value.asInstanceOf[js.Any])
+    def setConfigurationIdUndefined: Self = StObject.set(x, "configurationId", js.undefined)
     
     @scala.inline
-    def deleteCompanyName: Self = this.set("companyName", js.undefined)
+    def setConfigurationName(value: String): Self = StObject.set(x, "configurationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationId(value: String): Self = this.set("configurationId", value.asInstanceOf[js.Any])
+    def setConfigurationNameUndefined: Self = StObject.set(x, "configurationName", js.undefined)
     
     @scala.inline
-    def deleteConfigurationId: Self = this.set("configurationId", js.undefined)
+    def setContactEmail(value: String): Self = StObject.set(x, "contactEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationName(value: String): Self = this.set("configurationName", value.asInstanceOf[js.Any])
+    def setContactEmailUndefined: Self = StObject.set(x, "contactEmail", js.undefined)
     
     @scala.inline
-    def deleteConfigurationName: Self = this.set("configurationName", js.undefined)
+    def setContactPhone(value: String): Self = StObject.set(x, "contactPhone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactEmail(value: String): Self = this.set("contactEmail", value.asInstanceOf[js.Any])
+    def setContactPhoneUndefined: Self = StObject.set(x, "contactPhone", js.undefined)
     
     @scala.inline
-    def deleteContactEmail: Self = this.set("contactEmail", js.undefined)
+    def setCustomMessage(value: String): Self = StObject.set(x, "customMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactPhone(value: String): Self = this.set("contactPhone", value.asInstanceOf[js.Any])
+    def setCustomMessageUndefined: Self = StObject.set(x, "customMessage", js.undefined)
     
     @scala.inline
-    def deleteContactPhone: Self = this.set("contactPhone", js.undefined)
+    def setDpcExtras(value: String): Self = StObject.set(x, "dpcExtras", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomMessage(value: String): Self = this.set("customMessage", value.asInstanceOf[js.Any])
+    def setDpcExtrasUndefined: Self = StObject.set(x, "dpcExtras", js.undefined)
     
     @scala.inline
-    def deleteCustomMessage: Self = this.set("customMessage", js.undefined)
+    def setDpcResourcePath(value: String): Self = StObject.set(x, "dpcResourcePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDpcExtras(value: String): Self = this.set("dpcExtras", value.asInstanceOf[js.Any])
+    def setDpcResourcePathUndefined: Self = StObject.set(x, "dpcResourcePath", js.undefined)
     
     @scala.inline
-    def deleteDpcExtras: Self = this.set("dpcExtras", js.undefined)
+    def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDpcResourcePath(value: String): Self = this.set("dpcResourcePath", value.asInstanceOf[js.Any])
+    def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
     
     @scala.inline
-    def deleteDpcResourcePath: Self = this.set("dpcResourcePath", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDefault(value: Boolean): Self = this.set("isDefault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsDefault: Self = this.set("isDefault", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

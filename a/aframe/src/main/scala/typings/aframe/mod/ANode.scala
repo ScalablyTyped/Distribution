@@ -1,8 +1,8 @@
 package typings.aframe.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Element
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,6 +45,3 @@ trait ANode extends HTMLElement {
   
   def unregisterMixin(id: String): Unit = js.native
 }
-@JSImport("aframe", "ANode")
-@js.native
-object ANode extends TopLevel[ANode]

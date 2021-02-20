@@ -1,791 +1,636 @@
 package typings.itunesconnectanalytics.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait territory extends js.Object
+sealed trait territory extends StObject
 @JSImport("itunesconnectanalytics", "territory")
 @js.native
-object territory extends js.Object {
+object territory extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[territory with String] = js.native
   
   @js.native
   sealed trait albania extends territory
-  /* "143575" */ @js.native
-  object albania extends TopLevel[albania with String]
+  /* "143575" */ val albania: typings.itunesconnectanalytics.mod.territory.albania with String = js.native
   
   @js.native
   sealed trait algeria extends territory
-  /* "143563" */ @js.native
-  object algeria extends TopLevel[algeria with String]
+  /* "143563" */ val algeria: typings.itunesconnectanalytics.mod.territory.algeria with String = js.native
   
   @js.native
   sealed trait angola extends territory
-  /* "143564" */ @js.native
-  object angola extends TopLevel[angola with String]
+  /* "143564" */ val angola: typings.itunesconnectanalytics.mod.territory.angola with String = js.native
   
   @js.native
   sealed trait anguilla extends territory
-  /* "143538" */ @js.native
-  object anguilla extends TopLevel[anguilla with String]
+  /* "143538" */ val anguilla: typings.itunesconnectanalytics.mod.territory.anguilla with String = js.native
   
   @js.native
   sealed trait antiguaAndBarbuda extends territory
-  /* "143540" */ @js.native
-  object antiguaAndBarbuda extends TopLevel[antiguaAndBarbuda with String]
+  /* "143540" */ val antiguaAndBarbuda: typings.itunesconnectanalytics.mod.territory.antiguaAndBarbuda with String = js.native
   
   @js.native
   sealed trait argentina extends territory
-  /* "143505" */ @js.native
-  object argentina extends TopLevel[argentina with String]
+  /* "143505" */ val argentina: typings.itunesconnectanalytics.mod.territory.argentina with String = js.native
   
   @js.native
   sealed trait armenia extends territory
-  /* "143524" */ @js.native
-  object armenia extends TopLevel[armenia with String]
+  /* "143524" */ val armenia: typings.itunesconnectanalytics.mod.territory.armenia with String = js.native
   
   @js.native
   sealed trait australia extends territory
-  /* "143460" */ @js.native
-  object australia extends TopLevel[australia with String]
+  /* "143460" */ val australia: typings.itunesconnectanalytics.mod.territory.australia with String = js.native
   
   @js.native
   sealed trait austria extends territory
-  /* "143445" */ @js.native
-  object austria extends TopLevel[austria with String]
+  /* "143445" */ val austria: typings.itunesconnectanalytics.mod.territory.austria with String = js.native
   
   @js.native
   sealed trait azerbaijan extends territory
-  /* "143568" */ @js.native
-  object azerbaijan extends TopLevel[azerbaijan with String]
+  /* "143568" */ val azerbaijan: typings.itunesconnectanalytics.mod.territory.azerbaijan with String = js.native
   
   @js.native
   sealed trait bahamas extends territory
-  /* "143539" */ @js.native
-  object bahamas extends TopLevel[bahamas with String]
+  /* "143539" */ val bahamas: typings.itunesconnectanalytics.mod.territory.bahamas with String = js.native
   
   @js.native
   sealed trait bahrain extends territory
-  /* "143559" */ @js.native
-  object bahrain extends TopLevel[bahrain with String]
+  /* "143559" */ val bahrain: typings.itunesconnectanalytics.mod.territory.bahrain with String = js.native
   
   @js.native
   sealed trait barbados extends territory
-  /* "143541" */ @js.native
-  object barbados extends TopLevel[barbados with String]
+  /* "143541" */ val barbados: typings.itunesconnectanalytics.mod.territory.barbados with String = js.native
   
   @js.native
   sealed trait belarus extends territory
-  /* "143565" */ @js.native
-  object belarus extends TopLevel[belarus with String]
+  /* "143565" */ val belarus: typings.itunesconnectanalytics.mod.territory.belarus with String = js.native
   
   @js.native
   sealed trait belgium extends territory
-  /* "143446" */ @js.native
-  object belgium extends TopLevel[belgium with String]
+  /* "143446" */ val belgium: typings.itunesconnectanalytics.mod.territory.belgium with String = js.native
   
   @js.native
   sealed trait belize extends territory
-  /* "143555" */ @js.native
-  object belize extends TopLevel[belize with String]
+  /* "143555" */ val belize: typings.itunesconnectanalytics.mod.territory.belize with String = js.native
   
   @js.native
   sealed trait benin extends territory
-  /* "143576" */ @js.native
-  object benin extends TopLevel[benin with String]
+  /* "143576" */ val benin: typings.itunesconnectanalytics.mod.territory.benin with String = js.native
   
   @js.native
   sealed trait bermuda extends territory
-  /* "143542" */ @js.native
-  object bermuda extends TopLevel[bermuda with String]
+  /* "143542" */ val bermuda: typings.itunesconnectanalytics.mod.territory.bermuda with String = js.native
   
   @js.native
   sealed trait bhutan extends territory
-  /* "143577" */ @js.native
-  object bhutan extends TopLevel[bhutan with String]
+  /* "143577" */ val bhutan: typings.itunesconnectanalytics.mod.territory.bhutan with String = js.native
   
   @js.native
   sealed trait bolivia extends territory
-  /* "143556" */ @js.native
-  object bolivia extends TopLevel[bolivia with String]
+  /* "143556" */ val bolivia: typings.itunesconnectanalytics.mod.territory.bolivia with String = js.native
   
   @js.native
   sealed trait botswana extends territory
-  /* "143525" */ @js.native
-  object botswana extends TopLevel[botswana with String]
+  /* "143525" */ val botswana: typings.itunesconnectanalytics.mod.territory.botswana with String = js.native
   
   @js.native
   sealed trait brazil extends territory
-  /* "143503" */ @js.native
-  object brazil extends TopLevel[brazil with String]
+  /* "143503" */ val brazil: typings.itunesconnectanalytics.mod.territory.brazil with String = js.native
   
   @js.native
   sealed trait bruneiDarussalam extends territory
-  /* "143560" */ @js.native
-  object bruneiDarussalam extends TopLevel[bruneiDarussalam with String]
+  /* "143560" */ val bruneiDarussalam: typings.itunesconnectanalytics.mod.territory.bruneiDarussalam with String = js.native
   
   @js.native
   sealed trait bulgaria extends territory
-  /* "143526" */ @js.native
-  object bulgaria extends TopLevel[bulgaria with String]
+  /* "143526" */ val bulgaria: typings.itunesconnectanalytics.mod.territory.bulgaria with String = js.native
   
   @js.native
   sealed trait burkinaFaso extends territory
-  /* "143578" */ @js.native
-  object burkinaFaso extends TopLevel[burkinaFaso with String]
+  /* "143578" */ val burkinaFaso: typings.itunesconnectanalytics.mod.territory.burkinaFaso with String = js.native
   
   @js.native
   sealed trait cambodia extends territory
-  /* "143579" */ @js.native
-  object cambodia extends TopLevel[cambodia with String]
+  /* "143579" */ val cambodia: typings.itunesconnectanalytics.mod.territory.cambodia with String = js.native
   
   @js.native
   sealed trait canada extends territory
-  /* "143455" */ @js.native
-  object canada extends TopLevel[canada with String]
+  /* "143455" */ val canada: typings.itunesconnectanalytics.mod.territory.canada with String = js.native
   
   @js.native
   sealed trait capeVerde extends territory
-  /* "143580" */ @js.native
-  object capeVerde extends TopLevel[capeVerde with String]
+  /* "143580" */ val capeVerde: typings.itunesconnectanalytics.mod.territory.capeVerde with String = js.native
   
   @js.native
   sealed trait caymanIslands extends territory
-  /* "143544" */ @js.native
-  object caymanIslands extends TopLevel[caymanIslands with String]
+  /* "143544" */ val caymanIslands: typings.itunesconnectanalytics.mod.territory.caymanIslands with String = js.native
   
   @js.native
   sealed trait chad extends territory
-  /* "143581" */ @js.native
-  object chad extends TopLevel[chad with String]
+  /* "143581" */ val chad: typings.itunesconnectanalytics.mod.territory.chad with String = js.native
   
   @js.native
   sealed trait chile extends territory
-  /* "143483" */ @js.native
-  object chile extends TopLevel[chile with String]
+  /* "143483" */ val chile: typings.itunesconnectanalytics.mod.territory.chile with String = js.native
   
   @js.native
   sealed trait china extends territory
-  /* "143465" */ @js.native
-  object china extends TopLevel[china with String]
+  /* "143465" */ val china: typings.itunesconnectanalytics.mod.territory.china with String = js.native
   
   @js.native
   sealed trait colombia extends territory
-  /* "143501" */ @js.native
-  object colombia extends TopLevel[colombia with String]
+  /* "143501" */ val colombia: typings.itunesconnectanalytics.mod.territory.colombia with String = js.native
   
   @js.native
   sealed trait congo extends territory
-  /* "143582" */ @js.native
-  object congo extends TopLevel[congo with String]
+  /* "143582" */ val congo: typings.itunesconnectanalytics.mod.territory.congo with String = js.native
   
   @js.native
   sealed trait costaRica extends territory
-  /* "143495" */ @js.native
-  object costaRica extends TopLevel[costaRica with String]
+  /* "143495" */ val costaRica: typings.itunesconnectanalytics.mod.territory.costaRica with String = js.native
   
   @js.native
   sealed trait croatia extends territory
-  /* "143494" */ @js.native
-  object croatia extends TopLevel[croatia with String]
+  /* "143494" */ val croatia: typings.itunesconnectanalytics.mod.territory.croatia with String = js.native
   
   @js.native
   sealed trait cyprus extends territory
-  /* "143557" */ @js.native
-  object cyprus extends TopLevel[cyprus with String]
+  /* "143557" */ val cyprus: typings.itunesconnectanalytics.mod.territory.cyprus with String = js.native
   
   @js.native
   sealed trait czechRepublic extends territory
-  /* "143489" */ @js.native
-  object czechRepublic extends TopLevel[czechRepublic with String]
+  /* "143489" */ val czechRepublic: typings.itunesconnectanalytics.mod.territory.czechRepublic with String = js.native
   
   @js.native
   sealed trait denmark extends territory
-  /* "143458" */ @js.native
-  object denmark extends TopLevel[denmark with String]
+  /* "143458" */ val denmark: typings.itunesconnectanalytics.mod.territory.denmark with String = js.native
   
   @js.native
   sealed trait dominica extends territory
-  /* "143545" */ @js.native
-  object dominica extends TopLevel[dominica with String]
+  /* "143545" */ val dominica: typings.itunesconnectanalytics.mod.territory.dominica with String = js.native
   
   @js.native
   sealed trait dominicanRepublic extends territory
-  /* "143508" */ @js.native
-  object dominicanRepublic extends TopLevel[dominicanRepublic with String]
+  /* "143508" */ val dominicanRepublic: typings.itunesconnectanalytics.mod.territory.dominicanRepublic with String = js.native
   
   @js.native
   sealed trait ecuador extends territory
-  /* "143509" */ @js.native
-  object ecuador extends TopLevel[ecuador with String]
+  /* "143509" */ val ecuador: typings.itunesconnectanalytics.mod.territory.ecuador with String = js.native
   
   @js.native
   sealed trait egypt extends territory
-  /* "143516" */ @js.native
-  object egypt extends TopLevel[egypt with String]
+  /* "143516" */ val egypt: typings.itunesconnectanalytics.mod.territory.egypt with String = js.native
   
   @js.native
   sealed trait elSalvador extends territory
-  /* "143506" */ @js.native
-  object elSalvador extends TopLevel[elSalvador with String]
+  /* "143506" */ val elSalvador: typings.itunesconnectanalytics.mod.territory.elSalvador with String = js.native
   
   @js.native
   sealed trait estonia extends territory
-  /* "143518" */ @js.native
-  object estonia extends TopLevel[estonia with String]
+  /* "143518" */ val estonia: typings.itunesconnectanalytics.mod.territory.estonia with String = js.native
   
   @js.native
   sealed trait fiji extends territory
-  /* "143583" */ @js.native
-  object fiji extends TopLevel[fiji with String]
+  /* "143583" */ val fiji: typings.itunesconnectanalytics.mod.territory.fiji with String = js.native
   
   @js.native
   sealed trait finland extends territory
-  /* "143447" */ @js.native
-  object finland extends TopLevel[finland with String]
+  /* "143447" */ val finland: typings.itunesconnectanalytics.mod.territory.finland with String = js.native
   
   @js.native
   sealed trait france extends territory
-  /* "143442" */ @js.native
-  object france extends TopLevel[france with String]
+  /* "143442" */ val france: typings.itunesconnectanalytics.mod.territory.france with String = js.native
   
   @js.native
   sealed trait gambia extends territory
-  /* "143584" */ @js.native
-  object gambia extends TopLevel[gambia with String]
+  /* "143584" */ val gambia: typings.itunesconnectanalytics.mod.territory.gambia with String = js.native
   
   @js.native
   sealed trait germany extends territory
-  /* "143443" */ @js.native
-  object germany extends TopLevel[germany with String]
+  /* "143443" */ val germany: typings.itunesconnectanalytics.mod.territory.germany with String = js.native
   
   @js.native
   sealed trait ghana extends territory
-  /* "143573" */ @js.native
-  object ghana extends TopLevel[ghana with String]
+  /* "143573" */ val ghana: typings.itunesconnectanalytics.mod.territory.ghana with String = js.native
   
   @js.native
   sealed trait greece extends territory
-  /* "143448" */ @js.native
-  object greece extends TopLevel[greece with String]
+  /* "143448" */ val greece: typings.itunesconnectanalytics.mod.territory.greece with String = js.native
   
   @js.native
   sealed trait grenada extends territory
-  /* "143546" */ @js.native
-  object grenada extends TopLevel[grenada with String]
+  /* "143546" */ val grenada: typings.itunesconnectanalytics.mod.territory.grenada with String = js.native
   
   @js.native
   sealed trait guatemala extends territory
-  /* "143504" */ @js.native
-  object guatemala extends TopLevel[guatemala with String]
+  /* "143504" */ val guatemala: typings.itunesconnectanalytics.mod.territory.guatemala with String = js.native
   
   @js.native
   sealed trait guinea extends territory
-  /* "143585" */ @js.native
-  object guinea extends TopLevel[guinea with String]
+  /* "143585" */ val guinea: typings.itunesconnectanalytics.mod.territory.guinea with String = js.native
   
   @js.native
   sealed trait guyana extends territory
-  /* "143553" */ @js.native
-  object guyana extends TopLevel[guyana with String]
+  /* "143553" */ val guyana: typings.itunesconnectanalytics.mod.territory.guyana with String = js.native
   
   @js.native
   sealed trait honduras extends territory
-  /* "143510" */ @js.native
-  object honduras extends TopLevel[honduras with String]
+  /* "143510" */ val honduras: typings.itunesconnectanalytics.mod.territory.honduras with String = js.native
   
   @js.native
   sealed trait hongKong extends territory
-  /* "143463" */ @js.native
-  object hongKong extends TopLevel[hongKong with String]
+  /* "143463" */ val hongKong: typings.itunesconnectanalytics.mod.territory.hongKong with String = js.native
   
   @js.native
   sealed trait hungary extends territory
-  /* "143482" */ @js.native
-  object hungary extends TopLevel[hungary with String]
+  /* "143482" */ val hungary: typings.itunesconnectanalytics.mod.territory.hungary with String = js.native
   
   @js.native
   sealed trait iceland extends territory
-  /* "143558" */ @js.native
-  object iceland extends TopLevel[iceland with String]
+  /* "143558" */ val iceland: typings.itunesconnectanalytics.mod.territory.iceland with String = js.native
   
   @js.native
   sealed trait india extends territory
-  /* "143467" */ @js.native
-  object india extends TopLevel[india with String]
+  /* "143467" */ val india: typings.itunesconnectanalytics.mod.territory.india with String = js.native
   
   @js.native
   sealed trait indonesia extends territory
-  /* "143476" */ @js.native
-  object indonesia extends TopLevel[indonesia with String]
+  /* "143476" */ val indonesia: typings.itunesconnectanalytics.mod.territory.indonesia with String = js.native
   
   @js.native
   sealed trait ireland extends territory
-  /* "143449" */ @js.native
-  object ireland extends TopLevel[ireland with String]
+  /* "143449" */ val ireland: typings.itunesconnectanalytics.mod.territory.ireland with String = js.native
   
   @js.native
   sealed trait israel extends territory
-  /* "143491" */ @js.native
-  object israel extends TopLevel[israel with String]
+  /* "143491" */ val israel: typings.itunesconnectanalytics.mod.territory.israel with String = js.native
   
   @js.native
   sealed trait italy extends territory
-  /* "143450" */ @js.native
-  object italy extends TopLevel[italy with String]
+  /* "143450" */ val italy: typings.itunesconnectanalytics.mod.territory.italy with String = js.native
   
   @js.native
   sealed trait jamaica extends territory
-  /* "143511" */ @js.native
-  object jamaica extends TopLevel[jamaica with String]
+  /* "143511" */ val jamaica: typings.itunesconnectanalytics.mod.territory.jamaica with String = js.native
   
   @js.native
   sealed trait japan extends territory
-  /* "143462" */ @js.native
-  object japan extends TopLevel[japan with String]
+  /* "143462" */ val japan: typings.itunesconnectanalytics.mod.territory.japan with String = js.native
   
   @js.native
   sealed trait jordan extends territory
-  /* "143528" */ @js.native
-  object jordan extends TopLevel[jordan with String]
+  /* "143528" */ val jordan: typings.itunesconnectanalytics.mod.territory.jordan with String = js.native
   
   @js.native
   sealed trait kazakhstan extends territory
-  /* "143517" */ @js.native
-  object kazakhstan extends TopLevel[kazakhstan with String]
+  /* "143517" */ val kazakhstan: typings.itunesconnectanalytics.mod.territory.kazakhstan with String = js.native
   
   @js.native
   sealed trait kenya extends territory
-  /* "143529" */ @js.native
-  object kenya extends TopLevel[kenya with String]
+  /* "143529" */ val kenya: typings.itunesconnectanalytics.mod.territory.kenya with String = js.native
   
   @js.native
   sealed trait korea extends territory
-  /* "143466" */ @js.native
-  object korea extends TopLevel[korea with String]
+  /* "143466" */ val korea: typings.itunesconnectanalytics.mod.territory.korea with String = js.native
   
   @js.native
   sealed trait kuwait extends territory
-  /* "143493" */ @js.native
-  object kuwait extends TopLevel[kuwait with String]
+  /* "143493" */ val kuwait: typings.itunesconnectanalytics.mod.territory.kuwait with String = js.native
   
   @js.native
   sealed trait kyrgyzstan extends territory
-  /* "143586" */ @js.native
-  object kyrgyzstan extends TopLevel[kyrgyzstan with String]
+  /* "143586" */ val kyrgyzstan: typings.itunesconnectanalytics.mod.territory.kyrgyzstan with String = js.native
   
   @js.native
   sealed trait lao extends territory
-  /* "143587" */ @js.native
-  object lao extends TopLevel[lao with String]
+  /* "143587" */ val lao: typings.itunesconnectanalytics.mod.territory.lao with String = js.native
   
   @js.native
   sealed trait latvia extends territory
-  /* "143519" */ @js.native
-  object latvia extends TopLevel[latvia with String]
+  /* "143519" */ val latvia: typings.itunesconnectanalytics.mod.territory.latvia with String = js.native
   
   @js.native
   sealed trait lebanon extends territory
-  /* "143497" */ @js.native
-  object lebanon extends TopLevel[lebanon with String]
+  /* "143497" */ val lebanon: typings.itunesconnectanalytics.mod.territory.lebanon with String = js.native
   
   @js.native
   sealed trait liberia extends territory
-  /* "143588" */ @js.native
-  object liberia extends TopLevel[liberia with String]
+  /* "143588" */ val liberia: typings.itunesconnectanalytics.mod.territory.liberia with String = js.native
   
   @js.native
   sealed trait lithuania extends territory
-  /* "143520" */ @js.native
-  object lithuania extends TopLevel[lithuania with String]
+  /* "143520" */ val lithuania: typings.itunesconnectanalytics.mod.territory.lithuania with String = js.native
   
   @js.native
   sealed trait luxembourg extends territory
-  /* "143451" */ @js.native
-  object luxembourg extends TopLevel[luxembourg with String]
+  /* "143451" */ val luxembourg: typings.itunesconnectanalytics.mod.territory.luxembourg with String = js.native
   
   @js.native
   sealed trait macau extends territory
-  /* "143515" */ @js.native
-  object macau extends TopLevel[macau with String]
+  /* "143515" */ val macau: typings.itunesconnectanalytics.mod.territory.macau with String = js.native
   
   @js.native
   sealed trait macedonia extends territory
-  /* "143530" */ @js.native
-  object macedonia extends TopLevel[macedonia with String]
+  /* "143530" */ val macedonia: typings.itunesconnectanalytics.mod.territory.macedonia with String = js.native
   
   @js.native
   sealed trait madagascar extends territory
-  /* "143531" */ @js.native
-  object madagascar extends TopLevel[madagascar with String]
+  /* "143531" */ val madagascar: typings.itunesconnectanalytics.mod.territory.madagascar with String = js.native
   
   @js.native
   sealed trait malawi extends territory
-  /* "143589" */ @js.native
-  object malawi extends TopLevel[malawi with String]
+  /* "143589" */ val malawi: typings.itunesconnectanalytics.mod.territory.malawi with String = js.native
   
   @js.native
   sealed trait malaysia extends territory
-  /* "143473" */ @js.native
-  object malaysia extends TopLevel[malaysia with String]
+  /* "143473" */ val malaysia: typings.itunesconnectanalytics.mod.territory.malaysia with String = js.native
   
   @js.native
   sealed trait mali extends territory
-  /* "143532" */ @js.native
-  object mali extends TopLevel[mali with String]
+  /* "143532" */ val mali: typings.itunesconnectanalytics.mod.territory.mali with String = js.native
   
   @js.native
   sealed trait malta extends territory
-  /* "143521" */ @js.native
-  object malta extends TopLevel[malta with String]
+  /* "143521" */ val malta: typings.itunesconnectanalytics.mod.territory.malta with String = js.native
   
   @js.native
   sealed trait mauritania extends territory
-  /* "143590" */ @js.native
-  object mauritania extends TopLevel[mauritania with String]
+  /* "143590" */ val mauritania: typings.itunesconnectanalytics.mod.territory.mauritania with String = js.native
   
   @js.native
   sealed trait mauritius extends territory
-  /* "143533" */ @js.native
-  object mauritius extends TopLevel[mauritius with String]
+  /* "143533" */ val mauritius: typings.itunesconnectanalytics.mod.territory.mauritius with String = js.native
   
   @js.native
   sealed trait mexico extends territory
-  /* "143468" */ @js.native
-  object mexico extends TopLevel[mexico with String]
+  /* "143468" */ val mexico: typings.itunesconnectanalytics.mod.territory.mexico with String = js.native
   
   @js.native
   sealed trait micronesia extends territory
-  /* "143591" */ @js.native
-  object micronesia extends TopLevel[micronesia with String]
+  /* "143591" */ val micronesia: typings.itunesconnectanalytics.mod.territory.micronesia with String = js.native
   
   @js.native
   sealed trait moldova extends territory
-  /* "143523" */ @js.native
-  object moldova extends TopLevel[moldova with String]
+  /* "143523" */ val moldova: typings.itunesconnectanalytics.mod.territory.moldova with String = js.native
   
   @js.native
   sealed trait mongolia extends territory
-  /* "143592" */ @js.native
-  object mongolia extends TopLevel[mongolia with String]
+  /* "143592" */ val mongolia: typings.itunesconnectanalytics.mod.territory.mongolia with String = js.native
   
   @js.native
   sealed trait montserrat extends territory
-  /* "143547" */ @js.native
-  object montserrat extends TopLevel[montserrat with String]
+  /* "143547" */ val montserrat: typings.itunesconnectanalytics.mod.territory.montserrat with String = js.native
   
   @js.native
   sealed trait mozambique extends territory
-  /* "143593" */ @js.native
-  object mozambique extends TopLevel[mozambique with String]
+  /* "143593" */ val mozambique: typings.itunesconnectanalytics.mod.territory.mozambique with String = js.native
   
   @js.native
   sealed trait namibia extends territory
-  /* "143594" */ @js.native
-  object namibia extends TopLevel[namibia with String]
+  /* "143594" */ val namibia: typings.itunesconnectanalytics.mod.territory.namibia with String = js.native
   
   @js.native
   sealed trait nepal extends territory
-  /* "143484" */ @js.native
-  object nepal extends TopLevel[nepal with String]
+  /* "143484" */ val nepal: typings.itunesconnectanalytics.mod.territory.nepal with String = js.native
   
   @js.native
   sealed trait netherlands extends territory
-  /* "143452" */ @js.native
-  object netherlands extends TopLevel[netherlands with String]
+  /* "143452" */ val netherlands: typings.itunesconnectanalytics.mod.territory.netherlands with String = js.native
   
   @js.native
   sealed trait newZealand extends territory
-  /* "143461" */ @js.native
-  object newZealand extends TopLevel[newZealand with String]
+  /* "143461" */ val newZealand: typings.itunesconnectanalytics.mod.territory.newZealand with String = js.native
   
   @js.native
   sealed trait nicaragua extends territory
-  /* "143512" */ @js.native
-  object nicaragua extends TopLevel[nicaragua with String]
+  /* "143512" */ val nicaragua: typings.itunesconnectanalytics.mod.territory.nicaragua with String = js.native
   
   @js.native
   sealed trait niger extends territory
-  /* "143534" */ @js.native
-  object niger extends TopLevel[niger with String]
+  /* "143534" */ val niger: typings.itunesconnectanalytics.mod.territory.niger with String = js.native
   
   @js.native
   sealed trait nigeria extends territory
-  /* "143561" */ @js.native
-  object nigeria extends TopLevel[nigeria with String]
+  /* "143561" */ val nigeria: typings.itunesconnectanalytics.mod.territory.nigeria with String = js.native
   
   @js.native
   sealed trait norway extends territory
-  /* "143457" */ @js.native
-  object norway extends TopLevel[norway with String]
+  /* "143457" */ val norway: typings.itunesconnectanalytics.mod.territory.norway with String = js.native
   
   @js.native
   sealed trait oman extends territory
-  /* "143562" */ @js.native
-  object oman extends TopLevel[oman with String]
+  /* "143562" */ val oman: typings.itunesconnectanalytics.mod.territory.oman with String = js.native
   
   @js.native
   sealed trait pakistan extends territory
-  /* "143477" */ @js.native
-  object pakistan extends TopLevel[pakistan with String]
+  /* "143477" */ val pakistan: typings.itunesconnectanalytics.mod.territory.pakistan with String = js.native
   
   @js.native
   sealed trait palau extends territory
-  /* "143595" */ @js.native
-  object palau extends TopLevel[palau with String]
+  /* "143595" */ val palau: typings.itunesconnectanalytics.mod.territory.palau with String = js.native
   
   @js.native
   sealed trait panama extends territory
-  /* "143485" */ @js.native
-  object panama extends TopLevel[panama with String]
+  /* "143485" */ val panama: typings.itunesconnectanalytics.mod.territory.panama with String = js.native
   
   @js.native
   sealed trait papuaNewGuinea extends territory
-  /* "143597" */ @js.native
-  object papuaNewGuinea extends TopLevel[papuaNewGuinea with String]
+  /* "143597" */ val papuaNewGuinea: typings.itunesconnectanalytics.mod.territory.papuaNewGuinea with String = js.native
   
   @js.native
   sealed trait paraguay extends territory
-  /* "143513" */ @js.native
-  object paraguay extends TopLevel[paraguay with String]
+  /* "143513" */ val paraguay: typings.itunesconnectanalytics.mod.territory.paraguay with String = js.native
   
   @js.native
   sealed trait peru extends territory
-  /* "143507" */ @js.native
-  object peru extends TopLevel[peru with String]
+  /* "143507" */ val peru: typings.itunesconnectanalytics.mod.territory.peru with String = js.native
   
   @js.native
   sealed trait philippines extends territory
-  /* "143474" */ @js.native
-  object philippines extends TopLevel[philippines with String]
+  /* "143474" */ val philippines: typings.itunesconnectanalytics.mod.territory.philippines with String = js.native
   
   @js.native
   sealed trait poland extends territory
-  /* "143478" */ @js.native
-  object poland extends TopLevel[poland with String]
+  /* "143478" */ val poland: typings.itunesconnectanalytics.mod.territory.poland with String = js.native
   
   @js.native
   sealed trait portugal extends territory
-  /* "143453" */ @js.native
-  object portugal extends TopLevel[portugal with String]
+  /* "143453" */ val portugal: typings.itunesconnectanalytics.mod.territory.portugal with String = js.native
   
   @js.native
   sealed trait qatar extends territory
-  /* "143498" */ @js.native
-  object qatar extends TopLevel[qatar with String]
+  /* "143498" */ val qatar: typings.itunesconnectanalytics.mod.territory.qatar with String = js.native
   
   @js.native
   sealed trait romania extends territory
-  /* "143487" */ @js.native
-  object romania extends TopLevel[romania with String]
+  /* "143487" */ val romania: typings.itunesconnectanalytics.mod.territory.romania with String = js.native
   
   @js.native
   sealed trait russia extends territory
-  /* "143469" */ @js.native
-  object russia extends TopLevel[russia with String]
+  /* "143469" */ val russia: typings.itunesconnectanalytics.mod.territory.russia with String = js.native
   
   @js.native
   sealed trait saintLucia extends territory
-  /* "143549" */ @js.native
-  object saintLucia extends TopLevel[saintLucia with String]
+  /* "143549" */ val saintLucia: typings.itunesconnectanalytics.mod.territory.saintLucia with String = js.native
   
   @js.native
   sealed trait saudiArabia extends territory
-  /* "143479" */ @js.native
-  object saudiArabia extends TopLevel[saudiArabia with String]
+  /* "143479" */ val saudiArabia: typings.itunesconnectanalytics.mod.territory.saudiArabia with String = js.native
   
   @js.native
   sealed trait senegal extends territory
-  /* "143535" */ @js.native
-  object senegal extends TopLevel[senegal with String]
+  /* "143535" */ val senegal: typings.itunesconnectanalytics.mod.territory.senegal with String = js.native
   
   @js.native
   sealed trait seychelles extends territory
-  /* "143599" */ @js.native
-  object seychelles extends TopLevel[seychelles with String]
+  /* "143599" */ val seychelles: typings.itunesconnectanalytics.mod.territory.seychelles with String = js.native
   
   @js.native
   sealed trait sierraLeone extends territory
-  /* "143600" */ @js.native
-  object sierraLeone extends TopLevel[sierraLeone with String]
+  /* "143600" */ val sierraLeone: typings.itunesconnectanalytics.mod.territory.sierraLeone with String = js.native
   
   @js.native
   sealed trait singapore extends territory
-  /* "143464" */ @js.native
-  object singapore extends TopLevel[singapore with String]
+  /* "143464" */ val singapore: typings.itunesconnectanalytics.mod.territory.singapore with String = js.native
   
   @js.native
   sealed trait slovakia extends territory
-  /* "143496" */ @js.native
-  object slovakia extends TopLevel[slovakia with String]
+  /* "143496" */ val slovakia: typings.itunesconnectanalytics.mod.territory.slovakia with String = js.native
   
   @js.native
   sealed trait slovenia extends territory
-  /* "143499" */ @js.native
-  object slovenia extends TopLevel[slovenia with String]
+  /* "143499" */ val slovenia: typings.itunesconnectanalytics.mod.territory.slovenia with String = js.native
   
   @js.native
   sealed trait solomonIslands extends territory
-  /* "143601" */ @js.native
-  object solomonIslands extends TopLevel[solomonIslands with String]
+  /* "143601" */ val solomonIslands: typings.itunesconnectanalytics.mod.territory.solomonIslands with String = js.native
   
   @js.native
   sealed trait southAfrica extends territory
-  /* "143472" */ @js.native
-  object southAfrica extends TopLevel[southAfrica with String]
+  /* "143472" */ val southAfrica: typings.itunesconnectanalytics.mod.territory.southAfrica with String = js.native
   
   @js.native
   sealed trait spain extends territory
-  /* "143454" */ @js.native
-  object spain extends TopLevel[spain with String]
+  /* "143454" */ val spain: typings.itunesconnectanalytics.mod.territory.spain with String = js.native
   
   @js.native
   sealed trait sriLanka extends territory
-  /* "143486" */ @js.native
-  object sriLanka extends TopLevel[sriLanka with String]
+  /* "143486" */ val sriLanka: typings.itunesconnectanalytics.mod.territory.sriLanka with String = js.native
   
   @js.native
   sealed trait stKittsAndNevis extends territory
-  /* "143548" */ @js.native
-  object stKittsAndNevis extends TopLevel[stKittsAndNevis with String]
+  /* "143548" */ val stKittsAndNevis: typings.itunesconnectanalytics.mod.territory.stKittsAndNevis with String = js.native
   
   @js.native
   sealed trait stVincentAndTheGrenadines extends territory
-  /* "143550" */ @js.native
-  object stVincentAndTheGrenadines extends TopLevel[stVincentAndTheGrenadines with String]
+  /* "143550" */ val stVincentAndTheGrenadines: typings.itunesconnectanalytics.mod.territory.stVincentAndTheGrenadines with String = js.native
   
   @js.native
   sealed trait suriname extends territory
-  /* "143554" */ @js.native
-  object suriname extends TopLevel[suriname with String]
+  /* "143554" */ val suriname: typings.itunesconnectanalytics.mod.territory.suriname with String = js.native
   
   @js.native
   sealed trait swaziland extends territory
-  /* "143602" */ @js.native
-  object swaziland extends TopLevel[swaziland with String]
+  /* "143602" */ val swaziland: typings.itunesconnectanalytics.mod.territory.swaziland with String = js.native
   
   @js.native
   sealed trait sweden extends territory
-  /* "143456" */ @js.native
-  object sweden extends TopLevel[sweden with String]
+  /* "143456" */ val sweden: typings.itunesconnectanalytics.mod.territory.sweden with String = js.native
   
   @js.native
   sealed trait switzerland extends territory
-  /* "143459" */ @js.native
-  object switzerland extends TopLevel[switzerland with String]
+  /* "143459" */ val switzerland: typings.itunesconnectanalytics.mod.territory.switzerland with String = js.native
   
   @js.native
   sealed trait sãoToméandPríncipe extends territory
-  /* "143598" */ @js.native
-  object sãoToméandPríncipe extends TopLevel[sãoToméandPríncipe with String]
+  /* "143598" */ val sãoToméandPríncipe: typings.itunesconnectanalytics.mod.territory.sãoToméandPríncipe with String = js.native
   
   @js.native
   sealed trait taiwan extends territory
-  /* "143470" */ @js.native
-  object taiwan extends TopLevel[taiwan with String]
+  /* "143470" */ val taiwan: typings.itunesconnectanalytics.mod.territory.taiwan with String = js.native
   
   @js.native
   sealed trait tajikistan extends territory
-  /* "143603" */ @js.native
-  object tajikistan extends TopLevel[tajikistan with String]
+  /* "143603" */ val tajikistan: typings.itunesconnectanalytics.mod.territory.tajikistan with String = js.native
   
   @js.native
   sealed trait tanzania extends territory
-  /* "143572" */ @js.native
-  object tanzania extends TopLevel[tanzania with String]
+  /* "143572" */ val tanzania: typings.itunesconnectanalytics.mod.territory.tanzania with String = js.native
   
   @js.native
   sealed trait thailand extends territory
-  /* "143475" */ @js.native
-  object thailand extends TopLevel[thailand with String]
+  /* "143475" */ val thailand: typings.itunesconnectanalytics.mod.territory.thailand with String = js.native
   
   @js.native
   sealed trait trinidadAndTobago extends territory
-  /* "143551" */ @js.native
-  object trinidadAndTobago extends TopLevel[trinidadAndTobago with String]
+  /* "143551" */ val trinidadAndTobago: typings.itunesconnectanalytics.mod.territory.trinidadAndTobago with String = js.native
   
   @js.native
   sealed trait tunisia extends territory
-  /* "143536" */ @js.native
-  object tunisia extends TopLevel[tunisia with String]
+  /* "143536" */ val tunisia: typings.itunesconnectanalytics.mod.territory.tunisia with String = js.native
   
   @js.native
   sealed trait turkey extends territory
-  /* "143480" */ @js.native
-  object turkey extends TopLevel[turkey with String]
+  /* "143480" */ val turkey: typings.itunesconnectanalytics.mod.territory.turkey with String = js.native
   
   @js.native
   sealed trait turkmenistan extends territory
-  /* "143604" */ @js.native
-  object turkmenistan extends TopLevel[turkmenistan with String]
+  /* "143604" */ val turkmenistan: typings.itunesconnectanalytics.mod.territory.turkmenistan with String = js.native
   
   @js.native
   sealed trait turksAndCaicos extends territory
-  /* "143552" */ @js.native
-  object turksAndCaicos extends TopLevel[turksAndCaicos with String]
+  /* "143552" */ val turksAndCaicos: typings.itunesconnectanalytics.mod.territory.turksAndCaicos with String = js.native
   
   @js.native
   sealed trait uganda extends territory
-  /* "143537" */ @js.native
-  object uganda extends TopLevel[uganda with String]
+  /* "143537" */ val uganda: typings.itunesconnectanalytics.mod.territory.uganda with String = js.native
   
   @js.native
   sealed trait ukraine extends territory
-  /* "143492" */ @js.native
-  object ukraine extends TopLevel[ukraine with String]
+  /* "143492" */ val ukraine: typings.itunesconnectanalytics.mod.territory.ukraine with String = js.native
   
   @js.native
   sealed trait unitedArabEmirates extends territory
-  /* "143481" */ @js.native
-  object unitedArabEmirates extends TopLevel[unitedArabEmirates with String]
+  /* "143481" */ val unitedArabEmirates: typings.itunesconnectanalytics.mod.territory.unitedArabEmirates with String = js.native
   
   @js.native
   sealed trait unitedKingdom extends territory
-  /* "143444" */ @js.native
-  object unitedKingdom extends TopLevel[unitedKingdom with String]
+  /* "143444" */ val unitedKingdom: typings.itunesconnectanalytics.mod.territory.unitedKingdom with String = js.native
   
   @js.native
   sealed trait unitedStates extends territory
-  /* "143441" */ @js.native
-  object unitedStates extends TopLevel[unitedStates with String]
+  /* "143441" */ val unitedStates: typings.itunesconnectanalytics.mod.territory.unitedStates with String = js.native
   
   @js.native
   sealed trait uruguay extends territory
-  /* "143514" */ @js.native
-  object uruguay extends TopLevel[uruguay with String]
+  /* "143514" */ val uruguay: typings.itunesconnectanalytics.mod.territory.uruguay with String = js.native
   
   @js.native
   sealed trait uzbekistan extends territory
-  /* "143566" */ @js.native
-  object uzbekistan extends TopLevel[uzbekistan with String]
+  /* "143566" */ val uzbekistan: typings.itunesconnectanalytics.mod.territory.uzbekistan with String = js.native
   
   @js.native
   sealed trait venezuela extends territory
-  /* "143502" */ @js.native
-  object venezuela extends TopLevel[venezuela with String]
+  /* "143502" */ val venezuela: typings.itunesconnectanalytics.mod.territory.venezuela with String = js.native
   
   @js.native
   sealed trait vietnam extends territory
-  /* "143471" */ @js.native
-  object vietnam extends TopLevel[vietnam with String]
+  /* "143471" */ val vietnam: typings.itunesconnectanalytics.mod.territory.vietnam with String = js.native
   
   @js.native
   sealed trait virginIslands extends territory
-  /* "143543" */ @js.native
-  object virginIslands extends TopLevel[virginIslands with String]
+  /* "143543" */ val virginIslands: typings.itunesconnectanalytics.mod.territory.virginIslands with String = js.native
   
   @js.native
   sealed trait yemen extends territory
-  /* "143571" */ @js.native
-  object yemen extends TopLevel[yemen with String]
+  /* "143571" */ val yemen: typings.itunesconnectanalytics.mod.territory.yemen with String = js.native
   
   @js.native
   sealed trait zimbabwe extends territory
-  /* "143605" */ @js.native
-  object zimbabwe extends TopLevel[zimbabwe with String]
+  /* "143605" */ val zimbabwe: typings.itunesconnectanalytics.mod.territory.zimbabwe with String = js.native
 }

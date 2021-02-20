@@ -1,16 +1,16 @@
 package typings.tsMockito
 
 import typings.tsMockito.methodStubMod.MethodStub
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts-mockito/lib/MethodStubCollection", JSImport.Namespace)
-@js.native
-object methodStubCollectionMod extends js.Object {
+object methodStubCollectionMod {
   
+  @JSImport("ts-mockito/lib/MethodStubCollection", "MethodStubCollection")
   @js.native
-  class MethodStubCollection () extends js.Object {
+  class MethodStubCollection () extends StObject {
     
     def add(item: MethodStub): Unit = js.native
     

@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IQuickSuggestionsOptions extends js.Object {
+trait IQuickSuggestionsOptions extends StObject {
   
   var comments: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object IQuickSuggestionsOptions {
   }
   
   @scala.inline
-  implicit class IQuickSuggestionsOptionsOps[Self <: IQuickSuggestionsOptions] (val x: Self) extends AnyVal {
+  implicit class IQuickSuggestionsOptionsMutableBuilder[Self <: IQuickSuggestionsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOther(value: Boolean): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: Boolean): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setStrings(value: Boolean): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOther(value: Boolean): Self = this.set("other", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOther: Self = this.set("other", js.undefined)
-    
-    @scala.inline
-    def setStrings(value: Boolean): Self = this.set("strings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrings: Self = this.set("strings", js.undefined)
+    def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
   }
 }

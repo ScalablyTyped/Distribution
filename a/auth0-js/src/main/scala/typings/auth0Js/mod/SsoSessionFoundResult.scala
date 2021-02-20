@@ -2,6 +2,7 @@ package typings.auth0Js.mod
 
 import typings.auth0Js.anon.Name
 import typings.auth0Js.auth0JsBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,39 +38,27 @@ object SsoSessionFoundResult {
   }
   
   @scala.inline
-  implicit class SsoSessionFoundResultOps[Self <: SsoSessionFoundResult] (val x: Self) extends AnyVal {
+  implicit class SsoSessionFoundResultMutableBuilder[Self <: SsoSessionFoundResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastUsedClientID(value: String): Self = StObject.set(x, "lastUsedClientID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastUsedConnection(value: Name): Self = StObject.set(x, "lastUsedConnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastUsedUserID(value: String): Self = StObject.set(x, "lastUsedUserID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUsedClientID(value: String): Self = this.set("lastUsedClientID", value.asInstanceOf[js.Any])
+    def setLastUsedUsername(value: String): Self = StObject.set(x, "lastUsedUsername", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUsedConnection(value: Name): Self = this.set("lastUsedConnection", value.asInstanceOf[js.Any])
+    def setSessionClients(value: js.Array[String]): Self = StObject.set(x, "sessionClients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUsedUserID(value: String): Self = this.set("lastUsedUserID", value.asInstanceOf[js.Any])
+    def setSessionClientsVarargs(value: String*): Self = StObject.set(x, "sessionClients", js.Array(value :_*))
     
     @scala.inline
-    def setLastUsedUsername(value: String): Self = this.set("lastUsedUsername", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSessionClientsVarargs(value: String*): Self = this.set("sessionClients", js.Array(value :_*))
-    
-    @scala.inline
-    def setSessionClients(value: js.Array[String]): Self = this.set("sessionClients", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSso(value: `true`): Self = this.set("sso", value.asInstanceOf[js.Any])
+    def setSso(value: `true`): Self = StObject.set(x, "sso", value.asInstanceOf[js.Any])
   }
 }

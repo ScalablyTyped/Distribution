@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.ApplicationModel.VoiceCommands
 
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables operations on a specific installed command set. */
 @js.native
-trait VoiceCommandDefinition extends js.Object {
+trait VoiceCommandDefinition extends StObject {
   
   /** Gets the language ( xml:lang ) value of the CommandSet element in the Voice Command Definition (VCD) file. */
   var language: String = js.native
@@ -37,27 +38,15 @@ object VoiceCommandDefinition {
   }
   
   @scala.inline
-  implicit class VoiceCommandDefinitionOps[Self <: VoiceCommandDefinition] (val x: Self) extends AnyVal {
+  implicit class VoiceCommandDefinitionMutableBuilder[Self <: VoiceCommandDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetPhraseListAsync(value: (String, IIterable[String]) => IPromiseWithIAsyncAction): Self = this.set("setPhraseListAsync", js.Any.fromFunction2(value))
+    def setSetPhraseListAsync(value: (String, IIterable[String]) => IPromiseWithIAsyncAction): Self = StObject.set(x, "setPhraseListAsync", js.Any.fromFunction2(value))
   }
 }

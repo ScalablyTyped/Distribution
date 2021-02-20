@@ -1,11 +1,12 @@
 package typings.amapJsApi.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArrayBounds extends js.Object {
+trait ArrayBounds extends StObject {
   
   var bounds: js.Array[LngLat] = js.native
   
@@ -34,33 +35,21 @@ object ArrayBounds {
   }
   
   @scala.inline
-  implicit class ArrayBoundsOps[Self <: ArrayBounds] (val x: Self) extends AnyVal {
+  implicit class ArrayBoundsMutableBuilder[Self <: ArrayBounds] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: js.Array[LngLat]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundsVarargs(value: LngLat*): Self = StObject.set(x, "bounds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContains(value: LocationValue => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBoundsVarargs(value: LngLat*): Self = this.set("bounds", js.Array(value :_*))
+    def setGetCenter(value: () => LngLat): Self = StObject.set(x, "getCenter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBounds(value: js.Array[LngLat]): Self = this.set("bounds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContains(value: LocationValue => Boolean): Self = this.set("contains", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetCenter(value: () => LngLat): Self = this.set("getCenter", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToBounds(value: () => Bounds): Self = this.set("toBounds", js.Any.fromFunction0(value))
+    def setToBounds(value: () => Bounds): Self = StObject.set(x, "toBounds", js.Any.fromFunction0(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,42 +29,30 @@ object MobileAppAssignment {
   }
   
   @scala.inline
-  implicit class MobileAppAssignmentOps[Self <: MobileAppAssignment] (val x: Self) extends AnyVal {
+  implicit class MobileAppAssignmentMutableBuilder[Self <: MobileAppAssignment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIntent(value: InstallIntent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSettings(value: NullableOption[MobileAppAssignmentSettings]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntent(value: InstallIntent): Self = this.set("intent", value.asInstanceOf[js.Any])
+    def setSettingsNull: Self = StObject.set(x, "settings", null)
     
     @scala.inline
-    def deleteIntent: Self = this.set("intent", js.undefined)
+    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
     @scala.inline
-    def setSettings(value: NullableOption[MobileAppAssignmentSettings]): Self = this.set("settings", value.asInstanceOf[js.Any])
+    def setTarget(value: NullableOption[DeviceAndAppManagementAssignmentTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSettings: Self = this.set("settings", js.undefined)
+    def setTargetNull: Self = StObject.set(x, "target", null)
     
     @scala.inline
-    def setSettingsNull: Self = this.set("settings", null)
-    
-    @scala.inline
-    def setTarget(value: NullableOption[DeviceAndAppManagementAssignmentTarget]): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
-    
-    @scala.inline
-    def setTargetNull: Self = this.set("target", null)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

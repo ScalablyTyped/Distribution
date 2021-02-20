@@ -1,6 +1,7 @@
 package typings.extjs.Ext.grid
 
 import typings.extjs.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,42 +45,30 @@ object IColumnManager {
   }
   
   @scala.inline
-  implicit class IColumnManagerOps[Self <: IColumnManager] (val x: Self) extends AnyVal {
+  implicit class IColumnManagerMutableBuilder[Self <: IColumnManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetHeaderAtIndex(value: /* index */ js.UndefOr[Double] => typings.extjs.Ext.grid.column.IColumn): Self = StObject.set(x, "getHeaderAtIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetHeaderAtIndexUndefined: Self = StObject.set(x, "getHeaderAtIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetHeaderById(value: /* id */ js.UndefOr[String] => typings.extjs.Ext.grid.column.IColumn): Self = StObject.set(x, "getHeaderById", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetHeaderAtIndex(value: /* index */ js.UndefOr[Double] => typings.extjs.Ext.grid.column.IColumn): Self = this.set("getHeaderAtIndex", js.Any.fromFunction1(value))
+    def setGetHeaderByIdUndefined: Self = StObject.set(x, "getHeaderById", js.undefined)
     
     @scala.inline
-    def deleteGetHeaderAtIndex: Self = this.set("getHeaderAtIndex", js.undefined)
+    def setGetHeaderIndex(value: /* header */ js.UndefOr[typings.extjs.Ext.grid.column.IColumn] => Double): Self = StObject.set(x, "getHeaderIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetHeaderById(value: /* id */ js.UndefOr[String] => typings.extjs.Ext.grid.column.IColumn): Self = this.set("getHeaderById", js.Any.fromFunction1(value))
+    def setGetHeaderIndexUndefined: Self = StObject.set(x, "getHeaderIndex", js.undefined)
     
     @scala.inline
-    def deleteGetHeaderById: Self = this.set("getHeaderById", js.undefined)
+    def setGetVisibleHeaderClosestToIndex(value: /* index */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "getVisibleHeaderClosestToIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetHeaderIndex(value: /* header */ js.UndefOr[typings.extjs.Ext.grid.column.IColumn] => Double): Self = this.set("getHeaderIndex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteGetHeaderIndex: Self = this.set("getHeaderIndex", js.undefined)
-    
-    @scala.inline
-    def setGetVisibleHeaderClosestToIndex(value: /* index */ js.UndefOr[Double] => Unit): Self = this.set("getVisibleHeaderClosestToIndex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteGetVisibleHeaderClosestToIndex: Self = this.set("getVisibleHeaderClosestToIndex", js.undefined)
+    def setGetVisibleHeaderClosestToIndexUndefined: Self = StObject.set(x, "getVisibleHeaderClosestToIndex", js.undefined)
   }
 }

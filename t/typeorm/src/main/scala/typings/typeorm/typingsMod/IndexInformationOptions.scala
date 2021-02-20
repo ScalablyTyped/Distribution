@@ -1,11 +1,12 @@
 package typings.typeorm.typingsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndexInformationOptions extends js.Object {
+trait IndexInformationOptions extends StObject {
   
   /**
     * Returns the full raw index information.
@@ -28,30 +29,18 @@ object IndexInformationOptions {
   }
   
   @scala.inline
-  implicit class IndexInformationOptionsOps[Self <: IndexInformationOptions] (val x: Self) extends AnyVal {
+  implicit class IndexInformationOptionsMutableBuilder[Self <: IndexInformationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFull(value: Boolean): Self = this.set("full", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFull: Self = this.set("full", js.undefined)
-    
-    @scala.inline
-    def setReadPreference(value: ReadPreference | String): Self = this.set("readPreference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadPreference: Self = this.set("readPreference", js.undefined)
+    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
   }
 }

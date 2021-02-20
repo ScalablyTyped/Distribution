@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReposUpdatePullRequestReviewProtectionEndpoint extends js.Object {
+trait ReposUpdatePullRequestReviewProtectionEndpoint extends StObject {
   
   var branch: String = js.native
   
@@ -42,51 +43,39 @@ object ReposUpdatePullRequestReviewProtectionEndpoint {
   }
   
   @scala.inline
-  implicit class ReposUpdatePullRequestReviewProtectionEndpointOps[Self <: ReposUpdatePullRequestReviewProtectionEndpoint] (val x: Self) extends AnyVal {
+  implicit class ReposUpdatePullRequestReviewProtectionEndpointMutableBuilder[Self <: ReposUpdatePullRequestReviewProtectionEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDismiss_stale_reviews(value: Boolean): Self = StObject.set(x, "dismiss_stale_reviews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDismiss_stale_reviewsUndefined: Self = StObject.set(x, "dismiss_stale_reviews", js.undefined)
     
     @scala.inline
-    def setBranch(value: String): Self = this.set("branch", value.asInstanceOf[js.Any])
+    def setDismissal_restrictions(value: ReposUpdatePullRequestReviewProtectionParamsDismissalRestrictions): Self = StObject.set(x, "dismissal_restrictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setDismissal_restrictionsUndefined: Self = StObject.set(x, "dismissal_restrictions", js.undefined)
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDismiss_stale_reviews(value: Boolean): Self = this.set("dismiss_stale_reviews", value.asInstanceOf[js.Any])
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDismiss_stale_reviews: Self = this.set("dismiss_stale_reviews", js.undefined)
+    def setRequire_code_owner_reviews(value: Boolean): Self = StObject.set(x, "require_code_owner_reviews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDismissal_restrictions(value: ReposUpdatePullRequestReviewProtectionParamsDismissalRestrictions): Self = this.set("dismissal_restrictions", value.asInstanceOf[js.Any])
+    def setRequire_code_owner_reviewsUndefined: Self = StObject.set(x, "require_code_owner_reviews", js.undefined)
     
     @scala.inline
-    def deleteDismissal_restrictions: Self = this.set("dismissal_restrictions", js.undefined)
+    def setRequired_approving_review_count(value: Double): Self = StObject.set(x, "required_approving_review_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequire_code_owner_reviews(value: Boolean): Self = this.set("require_code_owner_reviews", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequire_code_owner_reviews: Self = this.set("require_code_owner_reviews", js.undefined)
-    
-    @scala.inline
-    def setRequired_approving_review_count(value: Double): Self = this.set("required_approving_review_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequired_approving_review_count: Self = this.set("required_approving_review_count", js.undefined)
+    def setRequired_approving_review_countUndefined: Self = StObject.set(x, "required_approving_review_count", js.undefined)
   }
 }

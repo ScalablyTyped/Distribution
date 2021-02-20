@@ -1,11 +1,12 @@
 package typings.elasticElasticsearch.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Body extends js.Object {
+trait Body extends StObject {
   
   var body: Null = js.native
   
@@ -24,30 +25,18 @@ object Body {
   }
   
   @scala.inline
-  implicit class BodyOps[Self <: Body] (val x: Self) extends AnyVal {
+  implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: Null): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaders(value: Null): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatusCode(value: Null): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: Null): Self = this.set("body", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeaders(value: Null): Self = this.set("headers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusCode(value: Null): Self = this.set("statusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWarnings(value: Null): Self = this.set("warnings", value.asInstanceOf[js.Any])
+    def setWarnings(value: Null): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
   }
 }

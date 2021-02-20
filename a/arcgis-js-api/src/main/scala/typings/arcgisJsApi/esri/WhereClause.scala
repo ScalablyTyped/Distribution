@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WhereClause extends js.Object {
+trait WhereClause extends StObject {
   
   /**
     * Executes the where clause against a feature to generate a value.
@@ -49,33 +50,21 @@ object WhereClause {
   }
   
   @scala.inline
-  implicit class WhereClauseOps[Self <: WhereClause] (val x: Self) extends AnyVal {
+  implicit class WhereClauseMutableBuilder[Self <: WhereClause] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalculateValue(value: js.Any => js.Any): Self = StObject.set(x, "calculateValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldNames(value: js.Array[String]): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldNamesVarargs(value: String*): Self = StObject.set(x, "fieldNames", js.Array(value :_*))
     
     @scala.inline
-    def setCalculateValue(value: js.Any => js.Any): Self = this.set("calculateValue", js.Any.fromFunction1(value))
+    def setIsStandardized(value: Boolean): Self = StObject.set(x, "isStandardized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldNamesVarargs(value: String*): Self = this.set("fieldNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setFieldNames(value: js.Array[String]): Self = this.set("fieldNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsStandardized(value: Boolean): Self = this.set("isStandardized", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestFeature(value: js.Any => Boolean): Self = this.set("testFeature", js.Any.fromFunction1(value))
+    def setTestFeature(value: js.Any => Boolean): Self = StObject.set(x, "testFeature", js.Any.fromFunction1(value))
   }
 }

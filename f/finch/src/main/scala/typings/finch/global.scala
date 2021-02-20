@@ -1,12 +1,15 @@
 package typings.finch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var Finch: FinchStatic = js.native
+  @JSGlobal("Finch")
+  @js.native
+  def Finch: FinchStatic = js.native
+  @scala.inline
+  def Finch_=(x: FinchStatic): Unit = js.Dynamic.global.updateDynamic("Finch")(x.asInstanceOf[js.Any])
 }

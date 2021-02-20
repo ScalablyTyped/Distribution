@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UsageByAccount extends js.Object {
+trait UsageByAccount extends StObject {
   
   /**
     * The type of currency that the value for the metric (estimatedCost) is reported in.
@@ -36,42 +37,30 @@ object UsageByAccount {
   }
   
   @scala.inline
-  implicit class UsageByAccountOps[Self <: UsageByAccount] (val x: Self) extends AnyVal {
+  implicit class UsageByAccountMutableBuilder[Self <: UsageByAccount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrency(value: Currency): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEstimatedCost(value: string): Self = StObject.set(x, "estimatedCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrency(value: Currency): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setEstimatedCostUndefined: Self = StObject.set(x, "estimatedCost", js.undefined)
     
     @scala.inline
-    def deleteCurrency: Self = this.set("currency", js.undefined)
+    def setServiceLimit(value: ServiceLimit): Self = StObject.set(x, "serviceLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedCost(value: string): Self = this.set("estimatedCost", value.asInstanceOf[js.Any])
+    def setServiceLimitUndefined: Self = StObject.set(x, "serviceLimit", js.undefined)
     
     @scala.inline
-    def deleteEstimatedCost: Self = this.set("estimatedCost", js.undefined)
+    def setType(value: UsageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceLimit(value: ServiceLimit): Self = this.set("serviceLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceLimit: Self = this.set("serviceLimit", js.undefined)
-    
-    @scala.inline
-    def setType(value: UsageType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

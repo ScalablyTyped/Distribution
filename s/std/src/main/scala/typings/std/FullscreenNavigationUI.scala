@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.hide
   - typings.std.stdStrings.show
 */
-trait FullscreenNavigationUI extends js.Object
+trait FullscreenNavigationUI extends StObject
 object FullscreenNavigationUI {
   
   @scala.inline

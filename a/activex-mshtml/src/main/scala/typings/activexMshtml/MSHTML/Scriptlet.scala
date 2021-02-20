@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Scriptlet extends js.Object {
+trait Scriptlet extends StObject {
   
   def AboutBox(): Unit = js.native
   
@@ -40,39 +41,27 @@ object Scriptlet {
   }
   
   @scala.inline
-  implicit class ScriptletOps[Self <: Scriptlet] (val x: Self) extends AnyVal {
+  implicit class ScriptletMutableBuilder[Self <: Scriptlet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAboutBox(value: () => Unit): Self = StObject.set(x, "AboutBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmbed(value: Boolean): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAboutBox(value: () => Unit): Self = this.set("AboutBox", js.Any.fromFunction0(value))
+    def setMSHTMLDotScriptlet_typekey(value: Scriptlet): Self = StObject.set(x, "MSHTML.Scriptlet_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotScriptlet_typekey(value: Scriptlet): Self = this.set("MSHTML.Scriptlet_typekey", value.asInstanceOf[js.Any])
+    def setReadyState(value: Double): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollbar(value: Boolean): Self = this.set("Scrollbar", value.asInstanceOf[js.Any])
+    def setScrollbar(value: Boolean): Self = StObject.set(x, "Scrollbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbed(value: Boolean): Self = this.set("embed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEvent(value: js.Any): Self = this.set("event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadyState(value: Double): Self = this.set("readyState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

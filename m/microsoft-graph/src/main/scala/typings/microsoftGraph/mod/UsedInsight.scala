@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,54 +32,42 @@ object UsedInsight {
   }
   
   @scala.inline
-  implicit class UsedInsightOps[Self <: UsedInsight] (val x: Self) extends AnyVal {
+  implicit class UsedInsightMutableBuilder[Self <: UsedInsight] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastUsed(value: NullableOption[UsageDetails]): Self = StObject.set(x, "lastUsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastUsedNull: Self = StObject.set(x, "lastUsed", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastUsedUndefined: Self = StObject.set(x, "lastUsed", js.undefined)
     
     @scala.inline
-    def setLastUsed(value: NullableOption[UsageDetails]): Self = this.set("lastUsed", value.asInstanceOf[js.Any])
+    def setResource(value: NullableOption[Entity]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastUsed: Self = this.set("lastUsed", js.undefined)
+    def setResourceNull: Self = StObject.set(x, "resource", null)
     
     @scala.inline
-    def setLastUsedNull: Self = this.set("lastUsed", null)
+    def setResourceReference(value: NullableOption[ResourceReference]): Self = StObject.set(x, "resourceReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: NullableOption[Entity]): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setResourceReferenceNull: Self = StObject.set(x, "resourceReference", null)
     
     @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setResourceReferenceUndefined: Self = StObject.set(x, "resourceReference", js.undefined)
     
     @scala.inline
-    def setResourceNull: Self = this.set("resource", null)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     @scala.inline
-    def setResourceReference(value: NullableOption[ResourceReference]): Self = this.set("resourceReference", value.asInstanceOf[js.Any])
+    def setResourceVisualization(value: NullableOption[ResourceVisualization]): Self = StObject.set(x, "resourceVisualization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResourceReference: Self = this.set("resourceReference", js.undefined)
+    def setResourceVisualizationNull: Self = StObject.set(x, "resourceVisualization", null)
     
     @scala.inline
-    def setResourceReferenceNull: Self = this.set("resourceReference", null)
-    
-    @scala.inline
-    def setResourceVisualization(value: NullableOption[ResourceVisualization]): Self = this.set("resourceVisualization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceVisualization: Self = this.set("resourceVisualization", js.undefined)
-    
-    @scala.inline
-    def setResourceVisualizationNull: Self = this.set("resourceVisualization", null)
+    def setResourceVisualizationUndefined: Self = StObject.set(x, "resourceVisualization", js.undefined)
   }
 }

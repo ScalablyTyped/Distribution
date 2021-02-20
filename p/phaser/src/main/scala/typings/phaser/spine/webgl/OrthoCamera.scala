@@ -1,11 +1,12 @@
 package typings.phaser.spine.webgl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrthoCamera extends js.Object {
+trait OrthoCamera extends StObject {
   
   var direction: Vector3 = js.native
   
@@ -65,66 +66,54 @@ object OrthoCamera {
   }
   
   @scala.inline
-  implicit class OrthoCameraOps[Self <: OrthoCamera] (val x: Self) extends AnyVal {
+  implicit class OrthoCameraMutableBuilder[Self <: OrthoCamera] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: Vector3): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFar(value: Double): Self = StObject.set(x, "far", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInverseProjectionView(value: Matrix4): Self = StObject.set(x, "inverseProjectionView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: Vector3): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setNear(value: Double): Self = StObject.set(x, "near", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFar(value: Double): Self = this.set("far", value.asInstanceOf[js.Any])
+    def setPosition(value: Vector3): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInverseProjectionView(value: Matrix4): Self = this.set("inverseProjectionView", value.asInstanceOf[js.Any])
+    def setProjection(value: Matrix4): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNear(value: Double): Self = this.set("near", value.asInstanceOf[js.Any])
+    def setProjectionView(value: Matrix4): Self = StObject.set(x, "projectionView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Vector3): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setScreenToWorld(value: (Vector3, Double, Double) => Vector3): Self = StObject.set(x, "screenToWorld", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setProjection(value: Matrix4): Self = this.set("projection", value.asInstanceOf[js.Any])
+    def setSetViewport(value: (Double, Double) => Unit): Self = StObject.set(x, "setViewport", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setProjectionView(value: Matrix4): Self = this.set("projectionView", value.asInstanceOf[js.Any])
+    def setTmp(value: js.Any): Self = StObject.set(x, "tmp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenToWorld(value: (Vector3, Double, Double) => Vector3): Self = this.set("screenToWorld", js.Any.fromFunction3(value))
+    def setUp(value: Vector3): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetViewport(value: (Double, Double) => Unit): Self = this.set("setViewport", js.Any.fromFunction2(value))
+    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTmp(value: js.Any): Self = this.set("tmp", value.asInstanceOf[js.Any])
+    def setView(value: Matrix4): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUp(value: Vector3): Self = this.set("up", value.asInstanceOf[js.Any])
+    def setViewportHeight(value: Double): Self = StObject.set(x, "viewportHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
+    def setViewportWidth(value: Double): Self = StObject.set(x, "viewportWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setView(value: Matrix4): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewportHeight(value: Double): Self = this.set("viewportHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewportWidth(value: Double): Self = this.set("viewportWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

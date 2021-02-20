@@ -3,12 +3,13 @@ package typings.wechatMiniprogram.WechatMiniprogram
 import typings.wechatMiniprogram.wechatMiniprogramStrings.facial
 import typings.wechatMiniprogram.wechatMiniprogramStrings.fingerPrint
 import typings.wechatMiniprogram.wechatMiniprogramStrings.speech
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CheckIsSupportSoterAuthenticationSuccessCallbackResult extends js.Object {
+trait CheckIsSupportSoterAuthenticationSuccessCallbackResult extends StObject {
   
   var errMsg: String = js.native
   
@@ -29,27 +30,15 @@ object CheckIsSupportSoterAuthenticationSuccessCallbackResult {
   }
   
   @scala.inline
-  implicit class CheckIsSupportSoterAuthenticationSuccessCallbackResultOps[Self <: CheckIsSupportSoterAuthenticationSuccessCallbackResult] (val x: Self) extends AnyVal {
+  implicit class CheckIsSupportSoterAuthenticationSuccessCallbackResultMutableBuilder[Self <: CheckIsSupportSoterAuthenticationSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSupportMode(value: js.Array[fingerPrint | facial | speech]): Self = StObject.set(x, "supportMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportModeVarargs(value: (fingerPrint | facial | speech)*): Self = this.set("supportMode", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportMode(value: js.Array[fingerPrint | facial | speech]): Self = this.set("supportMode", value.asInstanceOf[js.Any])
+    def setSupportModeVarargs(value: (fingerPrint | facial | speech)*): Self = StObject.set(x, "supportMode", js.Array(value :_*))
   }
 }

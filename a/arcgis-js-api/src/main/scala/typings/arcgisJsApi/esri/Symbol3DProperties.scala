@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,33 +31,21 @@ object Symbol3DProperties {
   }
   
   @scala.inline
-  implicit class Symbol3DPropertiesOps[Self <: Symbol3DProperties] (val x: Self) extends AnyVal {
+  implicit class Symbol3DPropertiesMutableBuilder[Self <: Symbol3DProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStyleOrigin(value: Symbol3DStyleOrigin): Self = StObject.set(x, "styleOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStyleOriginUndefined: Self = StObject.set(x, "styleOrigin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSymbolLayers(value: CollectionProperties[Symbol3DLayerProperties]): Self = StObject.set(x, "symbolLayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleOrigin(value: Symbol3DStyleOrigin): Self = this.set("styleOrigin", value.asInstanceOf[js.Any])
+    def setSymbolLayersUndefined: Self = StObject.set(x, "symbolLayers", js.undefined)
     
     @scala.inline
-    def deleteStyleOrigin: Self = this.set("styleOrigin", js.undefined)
-    
-    @scala.inline
-    def setSymbolLayersVarargs(value: Symbol3DLayerProperties*): Self = this.set("symbolLayers", js.Array(value :_*))
-    
-    @scala.inline
-    def setSymbolLayers(value: CollectionProperties[Symbol3DLayerProperties]): Self = this.set("symbolLayers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSymbolLayers: Self = this.set("symbolLayers", js.undefined)
+    def setSymbolLayersVarargs(value: Symbol3DLayerProperties*): Self = StObject.set(x, "symbolLayers", js.Array(value :_*))
   }
 }

@@ -4,12 +4,13 @@ import typings.babelTraverse.mod.Hub
 import typings.babelTraverse.mod.Scope
 import typings.babelTypes.mod.File_
 import typings.babelTypes.mod.Program_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BabelFile extends js.Object {
+trait BabelFile extends StObject {
   
   var ast: File_ = js.native
   
@@ -44,45 +45,33 @@ object BabelFile {
   }
   
   @scala.inline
-  implicit class BabelFileOps[Self <: BabelFile] (val x: Self) extends AnyVal {
+  implicit class BabelFileMutableBuilder[Self <: BabelFile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAst(value: File_): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHub(value: Hub): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAst(value: File_): Self = this.set("ast", value.asInstanceOf[js.Any])
+    def setInputMap(value: js.Object): Self = StObject.set(x, "inputMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setInputMapNull: Self = StObject.set(x, "inputMap", null)
     
     @scala.inline
-    def setHub(value: Hub): Self = this.set("hub", value.asInstanceOf[js.Any])
+    def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: js.Object): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setOpts(value: TransformOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpts(value: TransformOptions): Self = this.set("opts", value.asInstanceOf[js.Any])
+    def setPath(value: typings.babelTraverse.mod.NodePath[Program_]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: typings.babelTraverse.mod.NodePath[Program_]): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScope(value: Scope): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInputMap(value: js.Object): Self = this.set("inputMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInputMapNull: Self = this.set("inputMap", null)
+    def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
   }
 }

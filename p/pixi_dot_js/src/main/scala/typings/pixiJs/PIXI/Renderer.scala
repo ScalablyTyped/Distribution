@@ -15,6 +15,7 @@ import typings.pixiJs.PIXI.systems.StencilSystem
 import typings.pixiJs.PIXI.systems.TextureGCSystem
 import typings.pixiJs.PIXI.systems.TextureSystem
 import typings.std.WebGLRenderingContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEditorCommentsOptions extends js.Object {
+trait IEditorCommentsOptions extends StObject {
   
   /**
     * Ignore empty lines when inserting line comments.
@@ -28,30 +29,18 @@ object IEditorCommentsOptions {
   }
   
   @scala.inline
-  implicit class IEditorCommentsOptionsOps[Self <: IEditorCommentsOptions] (val x: Self) extends AnyVal {
+  implicit class IEditorCommentsOptionsMutableBuilder[Self <: IEditorCommentsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnoreEmptyLines(value: Boolean): Self = StObject.set(x, "ignoreEmptyLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnoreEmptyLinesUndefined: Self = StObject.set(x, "ignoreEmptyLines", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertSpace(value: Boolean): Self = StObject.set(x, "insertSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreEmptyLines(value: Boolean): Self = this.set("ignoreEmptyLines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnoreEmptyLines: Self = this.set("ignoreEmptyLines", js.undefined)
-    
-    @scala.inline
-    def setInsertSpace(value: Boolean): Self = this.set("insertSpace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsertSpace: Self = this.set("insertSpace", js.undefined)
+    def setInsertSpaceUndefined: Self = StObject.set(x, "insertSpace", js.undefined)
   }
 }

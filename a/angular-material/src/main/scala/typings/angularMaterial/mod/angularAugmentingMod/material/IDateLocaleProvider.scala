@@ -1,12 +1,13 @@
 package typings.angularMaterial.mod.angularAugmentingMod.material
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDateLocaleProvider extends js.Object {
+trait IDateLocaleProvider extends StObject {
   
   var dates: js.Array[String] = js.native
   
@@ -54,69 +55,57 @@ object IDateLocaleProvider {
   }
   
   @scala.inline
-  implicit class IDateLocaleProviderOps[Self <: IDateLocaleProvider] (val x: Self) extends AnyVal {
+  implicit class IDateLocaleProviderMutableBuilder[Self <: IDateLocaleProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDates(value: js.Array[String]): Self = StObject.set(x, "dates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatesVarargs(value: String*): Self = StObject.set(x, "dates", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDays(value: js.Array[String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatesVarargs(value: String*): Self = this.set("dates", js.Array(value :_*))
+    def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value :_*))
     
     @scala.inline
-    def setDates(value: js.Array[String]): Self = this.set("dates", value.asInstanceOf[js.Any])
+    def setFirstDayOfWeek(value: Double): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaysVarargs(value: String*): Self = this.set("days", js.Array(value :_*))
+    def setFormatDate(value: Date => String): Self = StObject.set(x, "formatDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDays(value: js.Array[String]): Self = this.set("days", value.asInstanceOf[js.Any])
+    def setMonthHeaderFormatter(value: Date => String): Self = StObject.set(x, "monthHeaderFormatter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFirstDayOfWeek(value: Double): Self = this.set("firstDayOfWeek", value.asInstanceOf[js.Any])
+    def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatDate(value: Date => String): Self = this.set("formatDate", js.Any.fromFunction1(value))
+    def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
     
     @scala.inline
-    def setMonthHeaderFormatter(value: Date => String): Self = this.set("monthHeaderFormatter", js.Any.fromFunction1(value))
+    def setMsgCalendar(value: String): Self = StObject.set(x, "msgCalendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthsVarargs(value: String*): Self = this.set("months", js.Array(value :_*))
+    def setMsgOpenCalendar(value: String): Self = StObject.set(x, "msgOpenCalendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonths(value: js.Array[String]): Self = this.set("months", value.asInstanceOf[js.Any])
+    def setParseDate(value: String => Date): Self = StObject.set(x, "parseDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsgCalendar(value: String): Self = this.set("msgCalendar", value.asInstanceOf[js.Any])
+    def setShortDays(value: js.Array[String]): Self = StObject.set(x, "shortDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsgOpenCalendar(value: String): Self = this.set("msgOpenCalendar", value.asInstanceOf[js.Any])
+    def setShortDaysVarargs(value: String*): Self = StObject.set(x, "shortDays", js.Array(value :_*))
     
     @scala.inline
-    def setParseDate(value: String => Date): Self = this.set("parseDate", js.Any.fromFunction1(value))
+    def setShortMonths(value: js.Array[String]): Self = StObject.set(x, "shortMonths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortDaysVarargs(value: String*): Self = this.set("shortDays", js.Array(value :_*))
+    def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value :_*))
     
     @scala.inline
-    def setShortDays(value: js.Array[String]): Self = this.set("shortDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShortMonthsVarargs(value: String*): Self = this.set("shortMonths", js.Array(value :_*))
-    
-    @scala.inline
-    def setShortMonths(value: js.Array[String]): Self = this.set("shortMonths", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeekNumberFormatter(value: Double => String): Self = this.set("weekNumberFormatter", js.Any.fromFunction1(value))
+    def setWeekNumberFormatter(value: Double => String): Self = StObject.set(x, "weekNumberFormatter", js.Any.fromFunction1(value))
   }
 }

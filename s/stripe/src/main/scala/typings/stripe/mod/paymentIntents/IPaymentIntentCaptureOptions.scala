@@ -1,12 +1,13 @@
 package typings.stripe.mod.paymentIntents
 
 import typings.stripe.mod.setupIntents.ISetupIntentTransferData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPaymentIntentCaptureOptions extends js.Object {
+trait IPaymentIntentCaptureOptions extends StObject {
   
   /**
     * The amount to capture (in cents) from the PaymentIntent, which must be less than or equal to the original amount. Any additional amount will be automatically refunded. Defaults to the full `amount_capturable` if not provided.
@@ -37,42 +38,30 @@ object IPaymentIntentCaptureOptions {
   }
   
   @scala.inline
-  implicit class IPaymentIntentCaptureOptionsOps[Self <: IPaymentIntentCaptureOptions] (val x: Self) extends AnyVal {
+  implicit class IPaymentIntentCaptureOptionsMutableBuilder[Self <: IPaymentIntentCaptureOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount_to_capture(value: Double): Self = StObject.set(x, "amount_to_capture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmount_to_captureUndefined: Self = StObject.set(x, "amount_to_capture", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplication_fee_amount(value: Double): Self = StObject.set(x, "application_fee_amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount_to_capture(value: Double): Self = this.set("amount_to_capture", value.asInstanceOf[js.Any])
+    def setApplication_fee_amountUndefined: Self = StObject.set(x, "application_fee_amount", js.undefined)
     
     @scala.inline
-    def deleteAmount_to_capture: Self = this.set("amount_to_capture", js.undefined)
+    def setOn_behalf_of(value: String): Self = StObject.set(x, "on_behalf_of", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication_fee_amount(value: Double): Self = this.set("application_fee_amount", value.asInstanceOf[js.Any])
+    def setOn_behalf_ofUndefined: Self = StObject.set(x, "on_behalf_of", js.undefined)
     
     @scala.inline
-    def deleteApplication_fee_amount: Self = this.set("application_fee_amount", js.undefined)
+    def setTransfer_data(value: ISetupIntentTransferData): Self = StObject.set(x, "transfer_data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOn_behalf_of(value: String): Self = this.set("on_behalf_of", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOn_behalf_of: Self = this.set("on_behalf_of", js.undefined)
-    
-    @scala.inline
-    def setTransfer_data(value: ISetupIntentTransferData): Self = this.set("transfer_data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransfer_data: Self = this.set("transfer_data", js.undefined)
+    def setTransfer_dataUndefined: Self = StObject.set(x, "transfer_data", js.undefined)
   }
 }

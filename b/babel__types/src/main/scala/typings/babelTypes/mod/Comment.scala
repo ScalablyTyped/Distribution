@@ -1,5 +1,6 @@
 package typings.babelTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.mod.CommentBlock
   - typings.babelTypes.mod.CommentLine
 */
-trait Comment extends js.Object
+trait Comment extends StObject
 object Comment {
   
   @scala.inline
@@ -18,10 +19,10 @@ object Comment {
     start: Double,
     `type`: typings.babelTypes.babelTypesStrings.CommentBlock,
     value: String
-  ): Comment = {
+  ): typings.babelTypes.mod.CommentBlock = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Comment]
+    __obj.asInstanceOf[typings.babelTypes.mod.CommentBlock]
   }
   
   @scala.inline
@@ -31,9 +32,9 @@ object Comment {
     start: Double,
     `type`: typings.babelTypes.babelTypesStrings.CommentLine,
     value: String
-  ): Comment = {
+  ): typings.babelTypes.mod.CommentLine = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Comment]
+    __obj.asInstanceOf[typings.babelTypes.mod.CommentLine]
   }
 }

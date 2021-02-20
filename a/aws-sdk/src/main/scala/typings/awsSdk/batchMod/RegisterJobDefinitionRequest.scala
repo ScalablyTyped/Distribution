@@ -1,11 +1,12 @@
 package typings.awsSdk.batchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterJobDefinitionRequest extends js.Object {
+trait RegisterJobDefinitionRequest extends StObject {
   
   /**
     * An object with various properties specific to single-node container-based jobs. If the job definition's type parameter is container, then you must specify either containerProperties or nodeProperties.
@@ -57,60 +58,48 @@ object RegisterJobDefinitionRequest {
   }
   
   @scala.inline
-  implicit class RegisterJobDefinitionRequestOps[Self <: RegisterJobDefinitionRequest] (val x: Self) extends AnyVal {
+  implicit class RegisterJobDefinitionRequestMutableBuilder[Self <: RegisterJobDefinitionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerProperties(value: ContainerProperties): Self = StObject.set(x, "containerProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerPropertiesUndefined: Self = StObject.set(x, "containerProperties", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobDefinitionName(value: String): Self = StObject.set(x, "jobDefinitionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobDefinitionName(value: String): Self = this.set("jobDefinitionName", value.asInstanceOf[js.Any])
+    def setNodeProperties(value: NodeProperties): Self = StObject.set(x, "nodeProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: JobDefinitionType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setNodePropertiesUndefined: Self = StObject.set(x, "nodeProperties", js.undefined)
     
     @scala.inline
-    def setContainerProperties(value: ContainerProperties): Self = this.set("containerProperties", value.asInstanceOf[js.Any])
+    def setParameters(value: ParametersMap): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainerProperties: Self = this.set("containerProperties", js.undefined)
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def setNodeProperties(value: NodeProperties): Self = this.set("nodeProperties", value.asInstanceOf[js.Any])
+    def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNodeProperties: Self = this.set("nodeProperties", js.undefined)
+    def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
     
     @scala.inline
-    def setParameters(value: ParametersMap): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setTags(value: TagrisTagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def setRetryStrategy(value: RetryStrategy): Self = this.set("retryStrategy", value.asInstanceOf[js.Any])
+    def setTimeout(value: JobTimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRetryStrategy: Self = this.set("retryStrategy", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def setTags(value: TagrisTagsMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: JobTimeout): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setType(value: JobDefinitionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

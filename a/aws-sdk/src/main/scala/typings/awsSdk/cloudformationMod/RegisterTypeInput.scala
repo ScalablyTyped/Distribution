@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterTypeInput extends js.Object {
+trait RegisterTypeInput extends StObject {
   
   /**
     * A unique identifier that acts as an idempotency key for this registration request. Specifying a client request token prevents CloudFormation from generating more than one version of a type from the same registeration request, even if the request is submitted multiple times. 
@@ -46,48 +47,36 @@ object RegisterTypeInput {
   }
   
   @scala.inline
-  implicit class RegisterTypeInputOps[Self <: RegisterTypeInput] (val x: Self) extends AnyVal {
+  implicit class RegisterTypeInputMutableBuilder[Self <: RegisterTypeInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientRequestToken(value: RequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionRoleArn(value: RoleArn): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaHandlerPackage(value: S3Url): Self = this.set("SchemaHandlerPackage", value.asInstanceOf[js.Any])
+    def setExecutionRoleArnUndefined: Self = StObject.set(x, "ExecutionRoleArn", js.undefined)
     
     @scala.inline
-    def setTypeName(value: TypeName): Self = this.set("TypeName", value.asInstanceOf[js.Any])
+    def setLoggingConfig(value: LoggingConfig): Self = StObject.set(x, "LoggingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientRequestToken(value: RequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    def setLoggingConfigUndefined: Self = StObject.set(x, "LoggingConfig", js.undefined)
     
     @scala.inline
-    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    def setSchemaHandlerPackage(value: S3Url): Self = StObject.set(x, "SchemaHandlerPackage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionRoleArn(value: RoleArn): Self = this.set("ExecutionRoleArn", value.asInstanceOf[js.Any])
+    def setType(value: RegistryType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExecutionRoleArn: Self = this.set("ExecutionRoleArn", js.undefined)
+    def setTypeName(value: TypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoggingConfig(value: LoggingConfig): Self = this.set("LoggingConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoggingConfig: Self = this.set("LoggingConfig", js.undefined)
-    
-    @scala.inline
-    def setType(value: RegistryType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

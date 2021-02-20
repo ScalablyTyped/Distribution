@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContributionNodeQuery extends js.Object {
+trait ContributionNodeQuery extends StObject {
   
   /**
     * The contribution ids of the nodes to find.
@@ -35,30 +36,18 @@ object ContributionNodeQuery {
   }
   
   @scala.inline
-  implicit class ContributionNodeQueryOps[Self <: ContributionNodeQuery] (val x: Self) extends AnyVal {
+  implicit class ContributionNodeQueryMutableBuilder[Self <: ContributionNodeQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContributionIds(value: js.Array[String]): Self = StObject.set(x, "contributionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContributionIdsVarargs(value: String*): Self = StObject.set(x, "contributionIds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeProviderDetails(value: Boolean): Self = StObject.set(x, "includeProviderDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContributionIdsVarargs(value: String*): Self = this.set("contributionIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setContributionIds(value: js.Array[String]): Self = this.set("contributionIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeProviderDetails(value: Boolean): Self = this.set("includeProviderDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryOptions(value: ContributionQueryOptions): Self = this.set("queryOptions", value.asInstanceOf[js.Any])
+    def setQueryOptions(value: ContributionQueryOptions): Self = StObject.set(x, "queryOptions", value.asInstanceOf[js.Any])
   }
 }

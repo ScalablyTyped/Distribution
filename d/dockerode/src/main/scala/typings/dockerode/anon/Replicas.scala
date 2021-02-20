@@ -1,11 +1,12 @@
 package typings.dockerode.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Replicas extends js.Object {
+trait Replicas extends StObject {
   
   var Replicas: js.UndefOr[Double] = js.native
 }
@@ -18,24 +19,12 @@ object Replicas {
   }
   
   @scala.inline
-  implicit class ReplicasOps[Self <: Replicas] (val x: Self) extends AnyVal {
+  implicit class ReplicasMutableBuilder[Self <: Replicas] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReplicas(value: Double): Self = StObject.set(x, "Replicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReplicas(value: Double): Self = this.set("Replicas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicas: Self = this.set("Replicas", js.undefined)
+    def setReplicasUndefined: Self = StObject.set(x, "Replicas", js.undefined)
   }
 }

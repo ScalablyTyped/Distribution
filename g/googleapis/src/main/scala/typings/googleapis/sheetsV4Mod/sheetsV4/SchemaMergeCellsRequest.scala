@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Merges all cells in the range.
   */
 @js.native
-trait SchemaMergeCellsRequest extends js.Object {
+trait SchemaMergeCellsRequest extends StObject {
   
   /**
     * How the cells should be merged.
@@ -29,30 +30,18 @@ object SchemaMergeCellsRequest {
   }
   
   @scala.inline
-  implicit class SchemaMergeCellsRequestOps[Self <: SchemaMergeCellsRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaMergeCellsRequestMutableBuilder[Self <: SchemaMergeCellsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMergeType(value: String): Self = StObject.set(x, "mergeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMergeTypeUndefined: Self = StObject.set(x, "mergeType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRange(value: SchemaGridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeType(value: String): Self = this.set("mergeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMergeType: Self = this.set("mergeType", js.undefined)
-    
-    @scala.inline
-    def setRange(value: SchemaGridRange): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.iot
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicRuleErrorActionDynamodbv2 extends js.Object {
+trait TopicRuleErrorActionDynamodbv2 extends StObject {
   
   /**
     * Configuration block with DynamoDB Table to which the message will be written. Nested arguments below.
@@ -27,27 +28,15 @@ object TopicRuleErrorActionDynamodbv2 {
   }
   
   @scala.inline
-  implicit class TopicRuleErrorActionDynamodbv2Ops[Self <: TopicRuleErrorActionDynamodbv2] (val x: Self) extends AnyVal {
+  implicit class TopicRuleErrorActionDynamodbv2MutableBuilder[Self <: TopicRuleErrorActionDynamodbv2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPutItem(value: Input[TopicRuleErrorActionDynamodbv2PutItem]): Self = StObject.set(x, "putItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPutItemUndefined: Self = StObject.set(x, "putItem", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRoleArn(value: Input[String]): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPutItem(value: Input[TopicRuleErrorActionDynamodbv2PutItem]): Self = this.set("putItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePutItem: Self = this.set("putItem", js.undefined)
+    def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

@@ -21,16 +21,18 @@ import typings.uirouterCore.transitionInterfaceMod.TransitionHookScope
 import typings.uirouterCore.transitionInterfaceMod.TransitionOptions
 import typings.uirouterCore.transitionTransitionMod.Transition
 import typings.uirouterCore.viewViewMod.ViewService
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/transition/transitionService", JSImport.Namespace)
-@js.native
-object transitionServiceMod extends js.Object {
+object transitionServiceMod {
   
-  var defaultTransOpts: TransitionOptions = js.native
+  @JSImport("@uirouter/core/lib/transition/transitionService", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
+  @JSImport("@uirouter/core/lib/transition/transitionService", "TransitionService")
   @js.native
   class TransitionService protected ()
     extends IHookRegistry
@@ -280,8 +282,14 @@ object transitionServiceMod extends js.Object {
     def onCreate(criteria: HookMatchCriteria, callback: TransitionCreateHookFn, options: HookRegOptions): js.Function = js.native
   }
   
+  @JSImport("@uirouter/core/lib/transition/transitionService", "defaultTransOpts")
   @js.native
-  trait TransitionServicePluginAPI extends js.Object {
+  def defaultTransOpts: TransitionOptions = js.native
+  @scala.inline
+  def defaultTransOpts_=(x: TransitionOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultTransOpts")(x.asInstanceOf[js.Any])
+  
+  @js.native
+  trait TransitionServicePluginAPI extends StObject {
     
     /**
       * Defines a transition hook type and returns a transition hook registration

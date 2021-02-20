@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SnapshotDiskContainer extends js.Object {
+trait SnapshotDiskContainer extends StObject {
   
   /**
     * The description of the disk image being imported.
@@ -36,42 +37,30 @@ object SnapshotDiskContainer {
   }
   
   @scala.inline
-  implicit class SnapshotDiskContainerOps[Self <: SnapshotDiskContainer] (val x: Self) extends AnyVal {
+  implicit class SnapshotDiskContainerMutableBuilder[Self <: SnapshotDiskContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("Format", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("Format", js.undefined)
+    def setUserBucket(value: UserBucket): Self = StObject.set(x, "UserBucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("Url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("Url", js.undefined)
-    
-    @scala.inline
-    def setUserBucket(value: UserBucket): Self = this.set("UserBucket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserBucket: Self = this.set("UserBucket", js.undefined)
+    def setUserBucketUndefined: Self = StObject.set(x, "UserBucket", js.undefined)
   }
 }

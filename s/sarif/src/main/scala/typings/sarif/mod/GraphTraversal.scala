@@ -1,12 +1,13 @@
 package typings.sarif.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GraphTraversal extends js.Object {
+trait GraphTraversal extends StObject {
   
   /**
     * A description of this graph traversal.
@@ -52,63 +53,51 @@ object GraphTraversal {
   }
   
   @scala.inline
-  implicit class GraphTraversalOps[Self <: GraphTraversal] (val x: Self) extends AnyVal {
+  implicit class GraphTraversalMutableBuilder[Self <: GraphTraversal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEdgeTraversals(value: js.Array[EdgeTraversal]): Self = StObject.set(x, "edgeTraversals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Message): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEdgeTraversalsUndefined: Self = StObject.set(x, "edgeTraversals", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEdgeTraversalsVarargs(value: EdgeTraversal*): Self = StObject.set(x, "edgeTraversals", js.Array(value :_*))
     
     @scala.inline
-    def setEdgeTraversalsVarargs(value: EdgeTraversal*): Self = this.set("edgeTraversals", js.Array(value :_*))
+    def setImmutableState(value: StringDictionary[MultiformatMessageString]): Self = StObject.set(x, "immutableState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgeTraversals(value: js.Array[EdgeTraversal]): Self = this.set("edgeTraversals", value.asInstanceOf[js.Any])
+    def setImmutableStateUndefined: Self = StObject.set(x, "immutableState", js.undefined)
     
     @scala.inline
-    def deleteEdgeTraversals: Self = this.set("edgeTraversals", js.undefined)
+    def setInitialState(value: StringDictionary[MultiformatMessageString]): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImmutableState(value: StringDictionary[MultiformatMessageString]): Self = this.set("immutableState", value.asInstanceOf[js.Any])
+    def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
     @scala.inline
-    def deleteImmutableState: Self = this.set("immutableState", js.undefined)
+    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialState(value: StringDictionary[MultiformatMessageString]): Self = this.set("initialState", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteInitialState: Self = this.set("initialState", js.undefined)
+    def setResultGraphIndex(value: Double): Self = StObject.set(x, "resultGraphIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: PropertyBag): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setResultGraphIndexUndefined: Self = StObject.set(x, "resultGraphIndex", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setRunGraphIndex(value: Double): Self = StObject.set(x, "runGraphIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultGraphIndex(value: Double): Self = this.set("resultGraphIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResultGraphIndex: Self = this.set("resultGraphIndex", js.undefined)
-    
-    @scala.inline
-    def setRunGraphIndex(value: Double): Self = this.set("runGraphIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRunGraphIndex: Self = this.set("runGraphIndex", js.undefined)
+    def setRunGraphIndexUndefined: Self = StObject.set(x, "runGraphIndex", js.undefined)
   }
 }

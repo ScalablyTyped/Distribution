@@ -9,6 +9,7 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.node.httpsMod.Server
 import typings.qs.mod.ParsedQs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Runtime API provided to nodes by Node Registry
   */
 @js.native
-trait NodeAPI[TSets /* <: NodeAPISettingsWithData */] extends js.Object {
+trait NodeAPI[TSets /* <: NodeAPISettingsWithData */] extends StObject {
   
   @JSName("_")
   var _underscore: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.I18nTFunction */ js.Any = js.native

@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchedulerMessagesRecurrenceEditorWeekdays extends js.Object {
+trait SchedulerMessagesRecurrenceEditorWeekdays extends StObject {
   
   var day: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object SchedulerMessagesRecurrenceEditorWeekdays {
   }
   
   @scala.inline
-  implicit class SchedulerMessagesRecurrenceEditorWeekdaysOps[Self <: SchedulerMessagesRecurrenceEditorWeekdays] (val x: Self) extends AnyVal {
+  implicit class SchedulerMessagesRecurrenceEditorWeekdaysMutableBuilder[Self <: SchedulerMessagesRecurrenceEditorWeekdays] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWeekday(value: String): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDay(value: String): Self = this.set("day", value.asInstanceOf[js.Any])
+    def setWeekdayUndefined: Self = StObject.set(x, "weekday", js.undefined)
     
     @scala.inline
-    def deleteDay: Self = this.set("day", js.undefined)
+    def setWeekend(value: String): Self = StObject.set(x, "weekend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeekday(value: String): Self = this.set("weekday", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeekday: Self = this.set("weekday", js.undefined)
-    
-    @scala.inline
-    def setWeekend(value: String): Self = this.set("weekend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeekend: Self = this.set("weekend", js.undefined)
+    def setWeekendUndefined: Self = StObject.set(x, "weekend", js.undefined)
   }
 }

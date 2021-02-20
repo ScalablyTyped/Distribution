@@ -23,12 +23,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`short-date`
 import typings.arcgisJsApi.arcgisJsApiStrings.`short-month-year`
 import typings.arcgisJsApi.arcgisJsApiStrings.default
 import typings.arcgisJsApi.arcgisJsApiStrings.year
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldInfoFormatProperties extends js.Object {
+trait FieldInfoFormatProperties extends StObject {
   
   /**
     * Used only with `Date` fields.
@@ -62,38 +63,26 @@ object FieldInfoFormatProperties {
   }
   
   @scala.inline
-  implicit class FieldInfoFormatPropertiesOps[Self <: FieldInfoFormatProperties] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class FieldInfoFormatPropertiesMutableBuilder[Self <: FieldInfoFormatProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setDateFormat(
       value: default | `short-date` | `short-date-short-time` | `short-date-long-time` | `short-date-long-time-24` | `long-month-day-year` | `long-month-day-year-short-time` | `long-month-day-year-short-time-24` | `long-month-day-year-long-time` | `long-month-day-year-long-time-24` | `day-short-month-year` | `day-short-month-year-short-time` | `day-short-month-year-short-time-24` | `day-short-month-year-long-time` | `day-short-month-year-long-time-24` | `long-date` | `long-date-short-time` | `long-date-short-time-24` | `long-date-long-time` | `long-date-long-time-24` | `long-month-year` | `short-month-year` | year
-    ): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDateFormat: Self = this.set("dateFormat", js.undefined)
+    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
     @scala.inline
-    def setDigitSeparator(value: Boolean): Self = this.set("digitSeparator", value.asInstanceOf[js.Any])
+    def setDigitSeparator(value: Boolean): Self = StObject.set(x, "digitSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDigitSeparator: Self = this.set("digitSeparator", js.undefined)
+    def setDigitSeparatorUndefined: Self = StObject.set(x, "digitSeparator", js.undefined)
     
     @scala.inline
-    def setPlaces(value: Double): Self = this.set("places", value.asInstanceOf[js.Any])
+    def setPlaces(value: Double): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlaces: Self = this.set("places", js.undefined)
+    def setPlacesUndefined: Self = StObject.set(x, "places", js.undefined)
   }
 }

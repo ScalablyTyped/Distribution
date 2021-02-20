@@ -1,21 +1,23 @@
 package typings.svgPathBoundingBox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("svg-path-bounding-box", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("svg-path-bounding-box", JSImport.Namespace)
+  @js.native
   def apply(path: String): BoundingBoxView = js.native
   
   /**
     * pass in initial points if you want
     * @see https://github.com/gabelerner/canvg/blob/860e418aca67b9a41e858a223d74d375793ec364/canvg.js#L449
     */
+  @JSImport("svg-path-bounding-box", "BoundingBox")
   @js.native
-  class BoundingBox protected () extends js.Object {
+  class BoundingBox protected () extends StObject {
     def this(x1: Double, y1: Double, x2: Double, y2: Double) = this()
     
     /** @see http://blog.hackers-cafe.net/2009/06/how-to-calculate-bezier-curves-bounding.html */
@@ -51,8 +53,9 @@ object mod extends js.Object {
     var y2: Double = js.native
   }
   
+  @JSImport("svg-path-bounding-box", "BoundingBoxView")
   @js.native
-  class BoundingBoxView protected () extends js.Object {
+  class BoundingBoxView protected () extends StObject {
     def this(boundingBox: BoundingBox) = this()
     
     var height: Double = js.native
@@ -82,8 +85,9 @@ object mod extends js.Object {
     var y2: Double = js.native
   }
   
+  @JSImport("svg-path-bounding-box", "Path")
   @js.native
-  class Path protected () extends js.Object {
+  class Path protected () extends StObject {
     def this(d: String) = this()
     
     var d: String = js.native

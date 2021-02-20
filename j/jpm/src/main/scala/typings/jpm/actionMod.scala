@@ -1,6 +1,7 @@
 package typings.jpm
 
 import typings.jpm.anon.Badge
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Add a button to the Firefox user interface
   * With this module you can create buttons that display icons and can respond to click events
   */
-@JSImport("sdk/ui/button/action", JSImport.Namespace)
-@js.native
-object actionMod extends js.Object {
+object actionMod {
   
+  @JSImport("sdk/ui/button/action", "ActionButton")
+  @js.native
   def ActionButton(options: Badge): typings.jpm.FFAddonSDK.ActionButton = js.native
 }

@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceEndpointRequest extends js.Object {
+trait ServiceEndpointRequest extends StObject {
   
   var dataSourceDetails: DataSourceDetails = js.native
   
@@ -26,27 +27,15 @@ object ServiceEndpointRequest {
   }
   
   @scala.inline
-  implicit class ServiceEndpointRequestOps[Self <: ServiceEndpointRequest] (val x: Self) extends AnyVal {
+  implicit class ServiceEndpointRequestMutableBuilder[Self <: ServiceEndpointRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSourceDetails(value: DataSourceDetails): Self = StObject.set(x, "dataSourceDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResultTransformationDetails(value: ResultTransformationDetails): Self = StObject.set(x, "resultTransformationDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataSourceDetails(value: DataSourceDetails): Self = this.set("dataSourceDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultTransformationDetails(value: ResultTransformationDetails): Self = this.set("resultTransformationDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceEndpointDetails(value: ServiceEndpointDetails): Self = this.set("serviceEndpointDetails", value.asInstanceOf[js.Any])
+    def setServiceEndpointDetails(value: ServiceEndpointDetails): Self = StObject.set(x, "serviceEndpointDetails", value.asInstanceOf[js.Any])
   }
 }

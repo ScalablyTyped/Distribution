@@ -1,13 +1,14 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.`7`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  column_id :number,   position :string} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'inertia'> */
 @js.native
-trait ProjectsMoveColumnEndpoint extends js.Object {
+trait ProjectsMoveColumnEndpoint extends StObject {
   
   var column_id: Double = js.native
   
@@ -27,27 +28,15 @@ object ProjectsMoveColumnEndpoint {
   }
   
   @scala.inline
-  implicit class ProjectsMoveColumnEndpointOps[Self <: ProjectsMoveColumnEndpoint] (val x: Self) extends AnyVal {
+  implicit class ProjectsMoveColumnEndpointMutableBuilder[Self <: ProjectsMoveColumnEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn_id(value: Double): Self = StObject.set(x, "column_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMediaType(value: `7`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColumn_id(value: Double): Self = this.set("column_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediaType(value: `7`): Self = this.set("mediaType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

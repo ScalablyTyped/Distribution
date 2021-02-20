@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServiceusage.gapi.client.serviceusage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Api extends js.Object {
+trait Api extends StObject {
   
   /** The methods of this interface, in unspecified order. */
   var methods: js.UndefOr[js.Array[Method]] = js.native
@@ -44,69 +45,57 @@ object Api {
   }
   
   @scala.inline
-  implicit class ApiOps[Self <: Api] (val x: Self) extends AnyVal {
+  implicit class ApiMutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMethods(value: js.Array[Method]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMethodsVarargs(value: Method*): Self = StObject.set(x, "methods", js.Array(value :_*))
     
     @scala.inline
-    def setMethodsVarargs(value: Method*): Self = this.set("methods", js.Array(value :_*))
+    def setMixins(value: js.Array[Mixin]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethods(value: js.Array[Method]): Self = this.set("methods", value.asInstanceOf[js.Any])
+    def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
     
     @scala.inline
-    def deleteMethods: Self = this.set("methods", js.undefined)
+    def setMixinsVarargs(value: Mixin*): Self = StObject.set(x, "mixins", js.Array(value :_*))
     
     @scala.inline
-    def setMixinsVarargs(value: Mixin*): Self = this.set("mixins", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMixins(value: js.Array[Mixin]): Self = this.set("mixins", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMixins: Self = this.set("mixins", js.undefined)
+    def setOptions(value: js.Array[Option]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def setOptionsVarargs(value: Option*): Self = this.set("options", js.Array(value :_*))
+    def setSourceContext(value: SourceContext): Self = StObject.set(x, "sourceContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Array[Option]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setSourceContextUndefined: Self = StObject.set(x, "sourceContext", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceContext(value: SourceContext): Self = this.set("sourceContext", value.asInstanceOf[js.Any])
+    def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
     
     @scala.inline
-    def deleteSourceContext: Self = this.set("sourceContext", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyntax(value: String): Self = this.set("syntax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyntax: Self = this.set("syntax", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

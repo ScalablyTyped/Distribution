@@ -12,6 +12,7 @@ import typings.exceljs.exceljsNumbers.`5`
 import typings.exceljs.exceljsNumbers.`7`
 import typings.exceljs.exceljsNumbers.`82`
 import typings.exceljs.exceljsNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.exceljs.exceljsNumbers.`82`
   - typings.exceljs.exceljsNumbers.`119`
 */
-trait PaperSize extends js.Object
+trait PaperSize extends StObject
 object PaperSize {
   
   @scala.inline

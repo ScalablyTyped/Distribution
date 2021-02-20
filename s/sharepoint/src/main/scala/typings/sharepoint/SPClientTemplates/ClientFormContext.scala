@@ -4,12 +4,13 @@ import typings.sharepoint.SPClientForms.ClientValidation.ValidatorSet
 import typings.sharepoint.anon.AllowScriptableWebParts
 import typings.sharepoint.anon.BaseType
 import typings.sharepoint.anon.ExternalListItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientFormContext extends js.Object {
+trait ClientFormContext extends StObject {
   
   var controlMode: Double = js.native
   
@@ -63,60 +64,48 @@ object ClientFormContext {
   }
   
   @scala.inline
-  implicit class ClientFormContextOps[Self <: ClientFormContext] (val x: Self) extends AnyVal {
+  implicit class ClientFormContextMutableBuilder[Self <: ClientFormContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControlMode(value: Double): Self = StObject.set(x, "controlMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldSchema(value: FieldSchemaInForm): Self = StObject.set(x, "fieldSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlMode(value: Double): Self = this.set("controlMode", value.asInstanceOf[js.Any])
+    def setFieldValue(value: js.Any): Self = StObject.set(x, "fieldValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldName(value: String): Self = this.set("fieldName", value.asInstanceOf[js.Any])
+    def setItemAttributes(value: ExternalListItem): Self = StObject.set(x, "itemAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldSchema(value: FieldSchemaInForm): Self = this.set("fieldSchema", value.asInstanceOf[js.Any])
+    def setListAttributes(value: BaseType): Self = StObject.set(x, "listAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldValue(value: js.Any): Self = this.set("fieldValue", value.asInstanceOf[js.Any])
+    def setRegisterClientValidator(value: (String, ValidatorSet) => Unit): Self = StObject.set(x, "registerClientValidator", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setItemAttributes(value: ExternalListItem): Self = this.set("itemAttributes", value.asInstanceOf[js.Any])
+    def setRegisterFocusCallback(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "registerFocusCallback", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setListAttributes(value: BaseType): Self = this.set("listAttributes", value.asInstanceOf[js.Any])
+    def setRegisterGetValueCallback(value: (String, js.Function0[_]) => Unit): Self = StObject.set(x, "registerGetValueCallback", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRegisterClientValidator(value: (String, ValidatorSet) => Unit): Self = this.set("registerClientValidator", js.Any.fromFunction2(value))
+    def setRegisterHasValueChangedCallback(value: (String, js.Function1[/* eventArg */ js.UndefOr[js.Any], Unit]) => Unit): Self = StObject.set(x, "registerHasValueChangedCallback", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRegisterFocusCallback(value: (String, js.Function0[Unit]) => Unit): Self = this.set("registerFocusCallback", js.Any.fromFunction2(value))
+    def setRegisterInitCallback(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "registerInitCallback", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRegisterGetValueCallback(value: (String, js.Function0[_]) => Unit): Self = this.set("registerGetValueCallback", js.Any.fromFunction2(value))
+    def setRegisterValidationErrorCallback(value: (String, js.Function1[/* error */ js.Any, Unit]) => Unit): Self = StObject.set(x, "registerValidationErrorCallback", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRegisterHasValueChangedCallback(value: (String, js.Function1[/* eventArg */ js.UndefOr[js.Any], Unit]) => Unit): Self = this.set("registerHasValueChangedCallback", js.Any.fromFunction2(value))
+    def setUpdateControlValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "updateControlValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRegisterInitCallback(value: (String, js.Function0[Unit]) => Unit): Self = this.set("registerInitCallback", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRegisterValidationErrorCallback(value: (String, js.Function1[/* error */ js.Any, Unit]) => Unit): Self = this.set("registerValidationErrorCallback", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUpdateControlValue(value: (String, js.Any) => Unit): Self = this.set("updateControlValue", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setWebAttributes(value: AllowScriptableWebParts): Self = this.set("webAttributes", value.asInstanceOf[js.Any])
+    def setWebAttributes(value: AllowScriptableWebParts): Self = StObject.set(x, "webAttributes", value.asInstanceOf[js.Any])
   }
 }

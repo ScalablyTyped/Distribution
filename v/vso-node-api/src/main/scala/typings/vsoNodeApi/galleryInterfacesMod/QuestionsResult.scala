@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QuestionsResult extends js.Object {
+trait QuestionsResult extends StObject {
   
   /**
     * Flag indicating if there are more QnA threads to be shown (for paging)
@@ -26,27 +27,15 @@ object QuestionsResult {
   }
   
   @scala.inline
-  implicit class QuestionsResultOps[Self <: QuestionsResult] (val x: Self) extends AnyVal {
+  implicit class QuestionsResultMutableBuilder[Self <: QuestionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasMoreQuestions(value: Boolean): Self = StObject.set(x, "hasMoreQuestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQuestions(value: js.Array[Question]): Self = StObject.set(x, "questions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHasMoreQuestions(value: Boolean): Self = this.set("hasMoreQuestions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuestionsVarargs(value: Question*): Self = this.set("questions", js.Array(value :_*))
-    
-    @scala.inline
-    def setQuestions(value: js.Array[Question]): Self = this.set("questions", value.asInstanceOf[js.Any])
+    def setQuestionsVarargs(value: Question*): Self = StObject.set(x, "questions", js.Array(value :_*))
   }
 }

@@ -4,12 +4,13 @@ import typings.octokitTypes.octokitTypesStrings.asc
 import typings.octokitTypes.octokitTypesStrings.created
 import typings.octokitTypes.octokitTypesStrings.desc
 import typings.octokitTypes.octokitTypesStrings.updated
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivityListReposStarredByAuthenticatedUserEndpoint extends js.Object {
+trait ActivityListReposStarredByAuthenticatedUserEndpoint extends StObject {
   
   /**
     * One of `asc` (ascending) or `desc` (descending).
@@ -40,42 +41,30 @@ object ActivityListReposStarredByAuthenticatedUserEndpoint {
   }
   
   @scala.inline
-  implicit class ActivityListReposStarredByAuthenticatedUserEndpointOps[Self <: ActivityListReposStarredByAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  implicit class ActivityListReposStarredByAuthenticatedUserEndpointMutableBuilder[Self <: ActivityListReposStarredByAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: asc | desc): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
+    def setSort(value: created | updated): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPer_page(value: Double): Self = this.set("per_page", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePer_page: Self = this.set("per_page", js.undefined)
-    
-    @scala.inline
-    def setSort(value: created | updated): Self = this.set("sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

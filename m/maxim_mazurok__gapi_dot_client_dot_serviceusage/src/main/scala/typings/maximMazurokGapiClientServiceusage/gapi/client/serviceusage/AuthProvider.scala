@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServiceusage.gapi.client.serviceusage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthProvider extends js.Object {
+trait AuthProvider extends StObject {
   
   /**
     * The list of JWT [audiences](https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32#section-4.1.3). that are allowed to access. A JWT containing any of these audiences will
@@ -51,57 +52,45 @@ object AuthProvider {
   }
   
   @scala.inline
-  implicit class AuthProviderOps[Self <: AuthProvider] (val x: Self) extends AnyVal {
+  implicit class AuthProviderMutableBuilder[Self <: AuthProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudiences(value: String): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudiencesUndefined: Self = StObject.set(x, "audiences", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudiences(value: String): Self = this.set("audiences", value.asInstanceOf[js.Any])
+    def setAuthorizationUrlUndefined: Self = StObject.set(x, "authorizationUrl", js.undefined)
     
     @scala.inline
-    def deleteAudiences: Self = this.set("audiences", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationUrl(value: String): Self = this.set("authorizationUrl", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteAuthorizationUrl: Self = this.set("authorizationUrl", js.undefined)
+    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setJwksUri(value: String): Self = StObject.set(x, "jwksUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuer(value: String): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    def setJwksUriUndefined: Self = StObject.set(x, "jwksUri", js.undefined)
     
     @scala.inline
-    def deleteIssuer: Self = this.set("issuer", js.undefined)
+    def setJwtLocations(value: js.Array[JwtLocation]): Self = StObject.set(x, "jwtLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJwksUri(value: String): Self = this.set("jwksUri", value.asInstanceOf[js.Any])
+    def setJwtLocationsUndefined: Self = StObject.set(x, "jwtLocations", js.undefined)
     
     @scala.inline
-    def deleteJwksUri: Self = this.set("jwksUri", js.undefined)
-    
-    @scala.inline
-    def setJwtLocationsVarargs(value: JwtLocation*): Self = this.set("jwtLocations", js.Array(value :_*))
-    
-    @scala.inline
-    def setJwtLocations(value: js.Array[JwtLocation]): Self = this.set("jwtLocations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJwtLocations: Self = this.set("jwtLocations", js.undefined)
+    def setJwtLocationsVarargs(value: JwtLocation*): Self = StObject.set(x, "jwtLocations", js.Array(value :_*))
   }
 }

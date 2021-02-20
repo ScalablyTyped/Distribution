@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.awt
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a set of properties to describe the model of an {@link UnoControl} which is embedded in a {@link UnoControlDialogModel} . */
 @js.native
-trait UnoControlDialogElement extends js.Object {
+trait UnoControlDialogElement extends StObject {
   
   /** specifies the height of the control. */
   var Height: Double = js.native
@@ -50,42 +51,30 @@ object UnoControlDialogElement {
   }
   
   @scala.inline
-  implicit class UnoControlDialogElementOps[Self <: UnoControlDialogElement] (val x: Self) extends AnyVal {
+  implicit class UnoControlDialogElementMutableBuilder[Self <: UnoControlDialogElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPositionX(value: String): Self = StObject.set(x, "PositionX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setPositionY(value: String): Self = StObject.set(x, "PositionY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setStep(value: Double): Self = StObject.set(x, "Step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionX(value: String): Self = this.set("PositionX", value.asInstanceOf[js.Any])
+    def setTabIndex(value: Double): Self = StObject.set(x, "TabIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionY(value: String): Self = this.set("PositionY", value.asInstanceOf[js.Any])
+    def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStep(value: Double): Self = this.set("Step", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTabIndex(value: Double): Self = this.set("TabIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("Tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

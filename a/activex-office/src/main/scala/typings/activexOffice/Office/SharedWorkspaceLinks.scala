@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SharedWorkspaceLinks extends js.Object {
+trait SharedWorkspaceLinks extends StObject {
   
   def apply(Index: Double): SharedWorkspaceLink = js.native
   

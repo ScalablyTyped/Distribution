@@ -1,11 +1,12 @@
 package typings.gandiLivedns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Zone extends js.Object {
+trait Zone extends StObject {
   
   var apex_alias: String = js.native
   
@@ -47,48 +48,36 @@ object Zone {
   }
   
   @scala.inline
-  implicit class ZoneOps[Self <: Zone] (val x: Self) extends AnyVal {
+  implicit class ZoneMutableBuilder[Self <: Zone] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApex_alias(value: String): Self = StObject.set(x, "apex_alias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApex_alias(value: String): Self = this.set("apex_alias", value.asInstanceOf[js.Any])
+    def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpire(value: Double): Self = this.set("expire", value.asInstanceOf[js.Any])
+    def setPrimary_ns(value: String): Self = StObject.set(x, "primary_ns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimum(value: Double): Self = this.set("minimum", value.asInstanceOf[js.Any])
+    def setRefresh(value: Double): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary_ns(value: String): Self = this.set("primary_ns", value.asInstanceOf[js.Any])
+    def setSerial(value: Double): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefresh(value: Double): Self = this.set("refresh", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRetry(value: Double): Self = this.set("retry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSerial(value: Double): Self = this.set("serial", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUuid(value: String): Self = this.set("uuid", value.asInstanceOf[js.Any])
+    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

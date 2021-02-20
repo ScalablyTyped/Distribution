@@ -15,26 +15,43 @@ import typings.mysql2.queryMod.QueryOptions
 import typings.mysql2.resultSetHeaderMod.ResultSetHeader
 import typings.mysql2.rowDataPacketMod.RowDataPacket
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mysql2/promise", JSImport.Namespace)
-@js.native
-object promiseMod extends js.Object {
+object promiseMod {
   
+  @JSImport("mysql2/promise", "createConnection")
+  @js.native
   def createConnection(config: ConnectionOptions): js.Promise[Connection] = js.native
+  @JSImport("mysql2/promise", "createConnection")
+  @js.native
   def createConnection(connectionUri: String): js.Promise[Connection] = js.native
   
+  @JSImport("mysql2/promise", "createPool")
+  @js.native
   def createPool(config: PoolOptions): Pool = js.native
   
+  @JSImport("mysql2/promise", "createPoolCluster")
+  @js.native
   def createPoolCluster(): PoolCluster = js.native
+  @JSImport("mysql2/promise", "createPoolCluster")
+  @js.native
   def createPoolCluster(config: PoolClusterOptions): PoolCluster = js.native
   
+  @JSImport("mysql2/promise", "escape")
+  @js.native
   def escape(value: js.Any): String = js.native
   
+  @JSImport("mysql2/promise", "format")
+  @js.native
   def format(sql: String): String = js.native
+  @JSImport("mysql2/promise", "format")
+  @js.native
   def format(sql: String, values: js.Any): String = js.native
+  @JSImport("mysql2/promise", "format")
+  @js.native
   def format(sql: String, values: js.Array[_]): String = js.native
   
   @js.native

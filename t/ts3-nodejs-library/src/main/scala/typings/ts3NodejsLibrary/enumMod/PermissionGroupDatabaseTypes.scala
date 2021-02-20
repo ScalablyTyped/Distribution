@@ -1,15 +1,15 @@
 package typings.ts3NodejsLibrary.enumMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PermissionGroupDatabaseTypes extends js.Object
+sealed trait PermissionGroupDatabaseTypes extends StObject
 @JSImport("ts3-nodejs-library/lib/types/enum", "PermissionGroupDatabaseTypes")
 @js.native
-object PermissionGroupDatabaseTypes extends js.Object {
+object PermissionGroupDatabaseTypes extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PermissionGroupDatabaseTypes with Double] = js.native
@@ -17,18 +17,15 @@ object PermissionGroupDatabaseTypes extends js.Object {
   /** global query group (used for ServerQuery clients) */
   @js.native
   sealed trait Query extends PermissionGroupDatabaseTypes
-  /* 2 */ @js.native
-  object Query extends TopLevel[Query with Double]
+  /* 2 */ val Query: typings.ts3NodejsLibrary.enumMod.PermissionGroupDatabaseTypes.Query with Double = js.native
   
   /** regular group (used for regular clients) */
   @js.native
   sealed trait Regular extends PermissionGroupDatabaseTypes
-  /* 1 */ @js.native
-  object Regular extends TopLevel[Regular with Double]
+  /* 1 */ val Regular: typings.ts3NodejsLibrary.enumMod.PermissionGroupDatabaseTypes.Regular with Double = js.native
   
   /** template group (used for new virtual servers) */
   @js.native
   sealed trait Template extends PermissionGroupDatabaseTypes
-  /* 0 */ @js.native
-  object Template extends TopLevel[Template with Double]
+  /* 0 */ val Template: typings.ts3NodejsLibrary.enumMod.PermissionGroupDatabaseTypes.Template with Double = js.native
 }

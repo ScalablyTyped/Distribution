@@ -1,5 +1,6 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ChannelSection targeting setting.
   */
 @js.native
-trait SchemaChannelSectionTargeting extends js.Object {
+trait SchemaChannelSectionTargeting extends StObject {
   
   /**
     * The country the channel section is targeting.
@@ -34,45 +35,33 @@ object SchemaChannelSectionTargeting {
   }
   
   @scala.inline
-  implicit class SchemaChannelSectionTargetingOps[Self <: SchemaChannelSectionTargeting] (val x: Self) extends AnyVal {
+  implicit class SchemaChannelSectionTargetingMutableBuilder[Self <: SchemaChannelSectionTargeting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountries(value: js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
     
     @scala.inline
-    def setCountriesVarargs(value: String*): Self = this.set("countries", js.Array(value :_*))
+    def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountries(value: js.Array[String]): Self = this.set("countries", value.asInstanceOf[js.Any])
+    def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
     @scala.inline
-    def deleteCountries: Self = this.set("countries", js.undefined)
+    def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
     
     @scala.inline
-    def setLanguagesVarargs(value: String*): Self = this.set("languages", js.Array(value :_*))
+    def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguages(value: js.Array[String]): Self = this.set("languages", value.asInstanceOf[js.Any])
+    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
     @scala.inline
-    def deleteLanguages: Self = this.set("languages", js.undefined)
-    
-    @scala.inline
-    def setRegionsVarargs(value: String*): Self = this.set("regions", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegions(value: js.Array[String]): Self = this.set("regions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegions: Self = this.set("regions", js.undefined)
+    def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
   }
 }

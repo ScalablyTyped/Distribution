@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Action extends js.Object {
+trait Action extends StObject {
   
   /**
     * The GuardDuty finding activity type.
@@ -41,48 +42,36 @@ object Action {
   }
   
   @scala.inline
-  implicit class ActionOps[Self <: Action] (val x: Self) extends AnyVal {
+  implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionType(value: String): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionTypeUndefined: Self = StObject.set(x, "ActionType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAwsApiCallAction(value: AwsApiCallAction): Self = StObject.set(x, "AwsApiCallAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionType(value: String): Self = this.set("ActionType", value.asInstanceOf[js.Any])
+    def setAwsApiCallActionUndefined: Self = StObject.set(x, "AwsApiCallAction", js.undefined)
     
     @scala.inline
-    def deleteActionType: Self = this.set("ActionType", js.undefined)
+    def setDnsRequestAction(value: DnsRequestAction): Self = StObject.set(x, "DnsRequestAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsApiCallAction(value: AwsApiCallAction): Self = this.set("AwsApiCallAction", value.asInstanceOf[js.Any])
+    def setDnsRequestActionUndefined: Self = StObject.set(x, "DnsRequestAction", js.undefined)
     
     @scala.inline
-    def deleteAwsApiCallAction: Self = this.set("AwsApiCallAction", js.undefined)
+    def setNetworkConnectionAction(value: NetworkConnectionAction): Self = StObject.set(x, "NetworkConnectionAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsRequestAction(value: DnsRequestAction): Self = this.set("DnsRequestAction", value.asInstanceOf[js.Any])
+    def setNetworkConnectionActionUndefined: Self = StObject.set(x, "NetworkConnectionAction", js.undefined)
     
     @scala.inline
-    def deleteDnsRequestAction: Self = this.set("DnsRequestAction", js.undefined)
+    def setPortProbeAction(value: PortProbeAction): Self = StObject.set(x, "PortProbeAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkConnectionAction(value: NetworkConnectionAction): Self = this.set("NetworkConnectionAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkConnectionAction: Self = this.set("NetworkConnectionAction", js.undefined)
-    
-    @scala.inline
-    def setPortProbeAction(value: PortProbeAction): Self = this.set("PortProbeAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePortProbeAction: Self = this.set("PortProbeAction", js.undefined)
+    def setPortProbeActionUndefined: Self = StObject.set(x, "PortProbeAction", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.leafletGeosearch.mod
 
 import typings.leafletGeosearch.leafletGeosearchNumbers.`0`
 import typings.leafletGeosearch.leafletGeosearchNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpenStreetMapProviderOptionsResultLimitation extends js.Object {
+trait OpenStreetMapProviderOptionsResultLimitation extends StObject {
   
   var bounded: js.UndefOr[`0` | `1`] = js.native
   
@@ -30,54 +31,42 @@ object OpenStreetMapProviderOptionsResultLimitation {
   }
   
   @scala.inline
-  implicit class OpenStreetMapProviderOptionsResultLimitationOps[Self <: OpenStreetMapProviderOptionsResultLimitation] (val x: Self) extends AnyVal {
+  implicit class OpenStreetMapProviderOptionsResultLimitationMutableBuilder[Self <: OpenStreetMapProviderOptionsResultLimitation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounded(value: `0` | `1`): Self = StObject.set(x, "bounded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundedUndefined: Self = StObject.set(x, "bounded", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountrycodes(value: String): Self = StObject.set(x, "countrycodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounded(value: `0` | `1`): Self = this.set("bounded", value.asInstanceOf[js.Any])
+    def setCountrycodesUndefined: Self = StObject.set(x, "countrycodes", js.undefined)
     
     @scala.inline
-    def deleteBounded: Self = this.set("bounded", js.undefined)
+    def setExclude_place_ids(value: String): Self = StObject.set(x, "exclude_place_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountrycodes(value: String): Self = this.set("countrycodes", value.asInstanceOf[js.Any])
+    def setExclude_place_idsUndefined: Self = StObject.set(x, "exclude_place_ids", js.undefined)
     
     @scala.inline
-    def deleteCountrycodes: Self = this.set("countrycodes", js.undefined)
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude_place_ids(value: String): Self = this.set("exclude_place_ids", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteExclude_place_ids: Self = this.set("exclude_place_ids", js.undefined)
+    def setViewbox(value: String): Self = StObject.set(x, "viewbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setViewboxUndefined: Self = StObject.set(x, "viewbox", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewbox(value: String): Self = this.set("viewbox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewbox: Self = this.set("viewbox", js.undefined)
-    
-    @scala.inline
-    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

@@ -4,13 +4,14 @@ import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import typings.storybookAddonKnobs.filesMod.FilesTypeProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.FunctionComponent<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Files.FilesTypeProps> & {serialize (): undefined, deserialize (): undefined} */
 @js.native
-trait FunctionComponentFilesTyp extends js.Object {
+trait FunctionComponentFilesTyp extends StObject {
   
   def apply(props: PropsWithChildren[FilesTypeProps]): ReactElement | Null = js.native
   def apply(props: PropsWithChildren[FilesTypeProps], context: js.Any): ReactElement | Null = js.native

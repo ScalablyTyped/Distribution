@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeManagement extends js.Object {
+trait NodeManagement extends StObject {
   
   /**
     * A flag that specifies whether the node auto-repair is enabled for the node pool. If enabled, the nodes in this node pool will be monitored and, if they fail health checks too many
@@ -31,36 +32,24 @@ object NodeManagement {
   }
   
   @scala.inline
-  implicit class NodeManagementOps[Self <: NodeManagement] (val x: Self) extends AnyVal {
+  implicit class NodeManagementMutableBuilder[Self <: NodeManagement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoRepair(value: Boolean): Self = StObject.set(x, "autoRepair", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoRepairUndefined: Self = StObject.set(x, "autoRepair", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoUpgrade(value: Boolean): Self = StObject.set(x, "autoUpgrade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRepair(value: Boolean): Self = this.set("autoRepair", value.asInstanceOf[js.Any])
+    def setAutoUpgradeUndefined: Self = StObject.set(x, "autoUpgrade", js.undefined)
     
     @scala.inline
-    def deleteAutoRepair: Self = this.set("autoRepair", js.undefined)
+    def setUpgradeOptions(value: AutoUpgradeOptions): Self = StObject.set(x, "upgradeOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoUpgrade(value: Boolean): Self = this.set("autoUpgrade", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoUpgrade: Self = this.set("autoUpgrade", js.undefined)
-    
-    @scala.inline
-    def setUpgradeOptions(value: AutoUpgradeOptions): Self = this.set("upgradeOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpgradeOptions: Self = this.set("upgradeOptions", js.undefined)
+    def setUpgradeOptionsUndefined: Self = StObject.set(x, "upgradeOptions", js.undefined)
   }
 }

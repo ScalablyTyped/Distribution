@@ -1,15 +1,14 @@
 package typings.cordovaPluginSpinner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SpinnerPlugin")
-@js.native
-object SpinnerPlugin extends js.Object {
+object SpinnerPlugin {
   
   @js.native
-  trait SpinnerPluginStatic extends js.Object {
+  trait SpinnerPluginStatic extends StObject {
     
     /**
       * Blocks user input using an indeterminate spinner.

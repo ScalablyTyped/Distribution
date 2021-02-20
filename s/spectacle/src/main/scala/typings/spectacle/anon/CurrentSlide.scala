@@ -1,11 +1,12 @@
 package typings.spectacle.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CurrentSlide extends js.Object {
+trait CurrentSlide extends StObject {
   
   var currentSlide: Double = js.native
   
@@ -20,24 +21,12 @@ object CurrentSlide {
   }
   
   @scala.inline
-  implicit class CurrentSlideOps[Self <: CurrentSlide] (val x: Self) extends AnyVal {
+  implicit class CurrentSlideMutableBuilder[Self <: CurrentSlide] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentSlide(value: Double): Self = StObject.set(x, "currentSlide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrentSlide(value: Double): Self = this.set("currentSlide", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumberOfSlides(value: Double): Self = this.set("numberOfSlides", value.asInstanceOf[js.Any])
+    def setNumberOfSlides(value: Double): Self = StObject.set(x, "numberOfSlides", value.asInstanceOf[js.Any])
   }
 }

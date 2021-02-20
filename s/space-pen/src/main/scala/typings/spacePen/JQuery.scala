@@ -1,12 +1,13 @@
 package typings.spacePen
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://atom.github.io/space-pen/
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def command(eventName: js.Any, handler: js.Any): js.Any = js.native
   def command(eventName: js.Any, selector: js.Any, handler: js.Any): js.Any = js.native

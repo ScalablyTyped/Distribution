@@ -1,11 +1,12 @@
 package typings.awsSdk.eventbridgeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchRetryStrategy extends js.Object {
+trait BatchRetryStrategy extends StObject {
   
   /**
     * The number of times to attempt to retry, if the job fails. Valid values are 1–10.
@@ -21,24 +22,12 @@ object BatchRetryStrategy {
   }
   
   @scala.inline
-  implicit class BatchRetryStrategyOps[Self <: BatchRetryStrategy] (val x: Self) extends AnyVal {
+  implicit class BatchRetryStrategyMutableBuilder[Self <: BatchRetryStrategy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttempts(value: Integer): Self = StObject.set(x, "Attempts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttempts(value: Integer): Self = this.set("Attempts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttempts: Self = this.set("Attempts", js.undefined)
+    def setAttemptsUndefined: Self = StObject.set(x, "Attempts", js.undefined)
   }
 }

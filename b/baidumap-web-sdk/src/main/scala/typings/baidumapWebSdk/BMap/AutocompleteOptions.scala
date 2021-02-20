@@ -1,12 +1,13 @@
 package typings.baidumapWebSdk.BMap
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutocompleteOptions extends js.Object {
+trait AutocompleteOptions extends StObject {
   
   var input: js.UndefOr[String | HTMLElement] = js.native
   
@@ -25,45 +26,33 @@ object AutocompleteOptions {
   }
   
   @scala.inline
-  implicit class AutocompleteOptionsOps[Self <: AutocompleteOptions] (val x: Self) extends AnyVal {
+  implicit class AutocompleteOptionsMutableBuilder[Self <: AutocompleteOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInput(value: String | HTMLElement): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: String | Map | Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: String | HTMLElement): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setOnSearchComplete(value: /* result */ AutocompleteResult => Unit): Self = StObject.set(x, "onSearchComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLocation(value: String | Map | Point): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setOnSearchCompleteUndefined: Self = StObject.set(x, "onSearchComplete", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSearchComplete(value: /* result */ AutocompleteResult => Unit): Self = this.set("onSearchComplete", js.Any.fromFunction1(value))
+    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
     @scala.inline
-    def deleteOnSearchComplete: Self = this.set("onSearchComplete", js.undefined)
-    
-    @scala.inline
-    def setTypesVarargs(value: String*): Self = this.set("types", js.Array(value :_*))
-    
-    @scala.inline
-    def setTypes(value: js.Array[String]): Self = this.set("types", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypes: Self = this.set("types", js.undefined)
+    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

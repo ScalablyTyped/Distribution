@@ -1,11 +1,12 @@
 package typings.reactNativeChartsWrapper.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Digits extends js.Object {
+trait Digits extends StObject {
   
   var digits: js.UndefOr[Double] = js.native
   
@@ -26,48 +27,36 @@ object Digits {
   }
   
   @scala.inline
-  implicit class DigitsOps[Self <: Digits] (val x: Self) extends AnyVal {
+  implicit class DigitsMutableBuilder[Self <: Digits] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDigits(value: Double): Self = this.set("digits", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDigits: Self = this.set("digits", js.undefined)
+    def setMarkerColor(value: typings.reactNativeChartsWrapper.mod.Color): Self = StObject.set(x, "markerColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setMarkerColorUndefined: Self = StObject.set(x, "markerColor", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setTextColor(value: typings.reactNativeChartsWrapper.mod.Color): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerColor(value: typings.reactNativeChartsWrapper.mod.Color): Self = this.set("markerColor", value.asInstanceOf[js.Any])
+    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
     
     @scala.inline
-    def deleteMarkerColor: Self = this.set("markerColor", js.undefined)
+    def setTextSize(value: Double): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextColor(value: typings.reactNativeChartsWrapper.mod.Color): Self = this.set("textColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextColor: Self = this.set("textColor", js.undefined)
-    
-    @scala.inline
-    def setTextSize(value: Double): Self = this.set("textSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextSize: Self = this.set("textSize", js.undefined)
+    def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
   }
 }

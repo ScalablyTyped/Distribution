@@ -1,16 +1,22 @@
 package typings.opentracing
 
 import typings.opentracing.mockSpanMod.MockSpan
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("opentracing/lib/mock_tracer/mock_report", JSImport.Namespace)
-@js.native
-object mockReportMod extends js.Object {
+object mockReportMod {
   
+  @JSImport("opentracing/lib/mock_tracer/mock_report", JSImport.Default)
   @js.native
-  class MockReport protected () extends js.Object {
+  class default protected () extends MockReport {
+    def this(spans: js.Array[MockSpan]) = this()
+  }
+  
+  @JSImport("opentracing/lib/mock_tracer/mock_report", "MockReport")
+  @js.native
+  class MockReport protected () extends StObject {
     def this(spans: js.Array[MockSpan]) = this()
     
     var debugSpans: js.Any = js.native
@@ -24,10 +30,5 @@ object mockReportMod extends js.Object {
     var spansByUUID: js.Any = js.native
     
     var unfinishedSpans: js.Any = js.native
-  }
-  
-  @js.native
-  class default protected () extends MockReport {
-    def this(spans: js.Array[MockSpan]) = this()
   }
 }

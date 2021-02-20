@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.encryptAuditAndPrompt
   - typings.microsoftGraph.microsoftGraphStrings.encryptAuditAndBlock
 */
-trait WindowsInformationProtectionEnforcementLevel extends js.Object
+trait WindowsInformationProtectionEnforcementLevel extends StObject
 object WindowsInformationProtectionEnforcementLevel {
   
   @scala.inline

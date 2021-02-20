@@ -1,6 +1,7 @@
 package typings.winjs.WinJS
 
 import typings.std.CustomEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Provides application-level functionality, for example activation, storage, and application events.
 **/
-@JSGlobal("WinJS.Application")
-@js.native
-object Application extends js.Object {
+object Application {
   
   //#endregion Functions
   //#region Events

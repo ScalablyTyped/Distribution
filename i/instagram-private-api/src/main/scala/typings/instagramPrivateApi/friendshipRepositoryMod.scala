@@ -2,6 +2,7 @@ package typings.instagramPrivateApi
 
 import typings.instagramPrivateApi.anon.MediaId
 import typings.instagramPrivateApi.anon.TargetPostsAuthorId
+import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.friendshipRepositoryBestiesResponseMod.FriendshipRepositorySetBestiesResponseRootObjectStatus
 import typings.instagramPrivateApi.friendshipRepositoryChangeResponseMod.FriendshipRepositoryChangeResponseFriendshipStatus
 import typings.instagramPrivateApi.friendshipRepositoryChangeResponseMod.FriendshipRepositoryChangeResponseRootObject
@@ -9,16 +10,17 @@ import typings.instagramPrivateApi.friendshipRepositoryShowResponseMod.Friendshi
 import typings.instagramPrivateApi.repositoryMod.Repository
 import typings.instagramPrivateApi.setBestiesInputMod.SetBestiesInput
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/repositories/friendship.repository", JSImport.Namespace)
-@js.native
-object friendshipRepositoryMod extends js.Object {
+object friendshipRepositoryMod {
   
+  @JSImport("instagram-private-api/dist/repositories/friendship.repository", "FriendshipRepository")
   @js.native
-  class FriendshipRepository () extends Repository {
+  class FriendshipRepository protected () extends Repository {
+    def this(client: IgApiClient) = this()
     
     def approve(id: String): js.Promise[FriendshipRepositoryChangeResponseFriendshipStatus] = js.native
     def approve(id: String, mediaIdAttribution: String): js.Promise[FriendshipRepositoryChangeResponseFriendshipStatus] = js.native

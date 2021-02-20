@@ -1,5 +1,6 @@
 package typings.activexWia.WIA
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * through LoadFile. An ImageFile object can be created using "WIA.ImageFile" in a call to CreateObject.
   */
 @js.native
-trait ImageFile extends js.Object {
+trait ImageFile extends StObject {
   
   /** Returns the specified item in the vector by position */
   /** Returns the raw image bits as a Vector of Long values */

@@ -1,11 +1,12 @@
 package typings.firmata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SerialModes extends js.Object {
+trait SerialModes extends StObject {
   
   var CONTINUOUS_READ: SERIAL_MODE = js.native
   
@@ -20,24 +21,12 @@ object SerialModes {
   }
   
   @scala.inline
-  implicit class SerialModesOps[Self <: SerialModes] (val x: Self) extends AnyVal {
+  implicit class SerialModesMutableBuilder[Self <: SerialModes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCONTINUOUS_READ(value: SERIAL_MODE): Self = StObject.set(x, "CONTINUOUS_READ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCONTINUOUS_READ(value: SERIAL_MODE): Self = this.set("CONTINUOUS_READ", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSTOP_READING(value: SERIAL_MODE): Self = this.set("STOP_READING", value.asInstanceOf[js.Any])
+    def setSTOP_READING(value: SERIAL_MODE): Self = StObject.set(x, "STOP_READING", value.asInstanceOf[js.Any])
   }
 }

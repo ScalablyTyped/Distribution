@@ -1,12 +1,13 @@
 package typings.evernote.anon
 
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IncludeExpunged extends js.Object {
+trait IncludeExpunged extends StObject {
   
   var includeExpunged: js.UndefOr[Boolean] = js.native
   
@@ -49,114 +50,102 @@ object IncludeExpunged {
   }
   
   @scala.inline
-  implicit class IncludeExpungedOps[Self <: IncludeExpunged] (val x: Self) extends AnyVal {
+  implicit class IncludeExpungedMutableBuilder[Self <: IncludeExpunged] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeExpunged(value: Boolean): Self = StObject.set(x, "includeExpunged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeExpungedUndefined: Self = StObject.set(x, "includeExpunged", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeLinkedNotebooks(value: Boolean): Self = StObject.set(x, "includeLinkedNotebooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeExpunged(value: Boolean): Self = this.set("includeExpunged", value.asInstanceOf[js.Any])
+    def setIncludeLinkedNotebooksUndefined: Self = StObject.set(x, "includeLinkedNotebooks", js.undefined)
     
     @scala.inline
-    def deleteIncludeExpunged: Self = this.set("includeExpunged", js.undefined)
+    def setIncludeNoteApplicationDataFullMap(value: Boolean): Self = StObject.set(x, "includeNoteApplicationDataFullMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeLinkedNotebooks(value: Boolean): Self = this.set("includeLinkedNotebooks", value.asInstanceOf[js.Any])
+    def setIncludeNoteApplicationDataFullMapUndefined: Self = StObject.set(x, "includeNoteApplicationDataFullMap", js.undefined)
     
     @scala.inline
-    def deleteIncludeLinkedNotebooks: Self = this.set("includeLinkedNotebooks", js.undefined)
+    def setIncludeNoteAttributes(value: Boolean): Self = StObject.set(x, "includeNoteAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeNoteApplicationDataFullMap(value: Boolean): Self = this.set("includeNoteApplicationDataFullMap", value.asInstanceOf[js.Any])
+    def setIncludeNoteAttributesUndefined: Self = StObject.set(x, "includeNoteAttributes", js.undefined)
     
     @scala.inline
-    def deleteIncludeNoteApplicationDataFullMap: Self = this.set("includeNoteApplicationDataFullMap", js.undefined)
+    def setIncludeNoteResourceApplicationDataFullMap(value: Boolean): Self = StObject.set(x, "includeNoteResourceApplicationDataFullMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeNoteAttributes(value: Boolean): Self = this.set("includeNoteAttributes", value.asInstanceOf[js.Any])
+    def setIncludeNoteResourceApplicationDataFullMapUndefined: Self = StObject.set(x, "includeNoteResourceApplicationDataFullMap", js.undefined)
     
     @scala.inline
-    def deleteIncludeNoteAttributes: Self = this.set("includeNoteAttributes", js.undefined)
+    def setIncludeNoteResources(value: Boolean): Self = StObject.set(x, "includeNoteResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeNoteResourceApplicationDataFullMap(value: Boolean): Self = this.set("includeNoteResourceApplicationDataFullMap", value.asInstanceOf[js.Any])
+    def setIncludeNoteResourcesUndefined: Self = StObject.set(x, "includeNoteResources", js.undefined)
     
     @scala.inline
-    def deleteIncludeNoteResourceApplicationDataFullMap: Self = this.set("includeNoteResourceApplicationDataFullMap", js.undefined)
+    def setIncludeNotebooks(value: Boolean): Self = StObject.set(x, "includeNotebooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeNoteResources(value: Boolean): Self = this.set("includeNoteResources", value.asInstanceOf[js.Any])
+    def setIncludeNotebooksUndefined: Self = StObject.set(x, "includeNotebooks", js.undefined)
     
     @scala.inline
-    def deleteIncludeNoteResources: Self = this.set("includeNoteResources", js.undefined)
+    def setIncludeNotes(value: Boolean): Self = StObject.set(x, "includeNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeNotebooks(value: Boolean): Self = this.set("includeNotebooks", value.asInstanceOf[js.Any])
+    def setIncludeNotesUndefined: Self = StObject.set(x, "includeNotes", js.undefined)
     
     @scala.inline
-    def deleteIncludeNotebooks: Self = this.set("includeNotebooks", js.undefined)
+    def setIncludeResourceApplicationDataFullMap(value: Boolean): Self = StObject.set(x, "includeResourceApplicationDataFullMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeNotes(value: Boolean): Self = this.set("includeNotes", value.asInstanceOf[js.Any])
+    def setIncludeResourceApplicationDataFullMapUndefined: Self = StObject.set(x, "includeResourceApplicationDataFullMap", js.undefined)
     
     @scala.inline
-    def deleteIncludeNotes: Self = this.set("includeNotes", js.undefined)
+    def setIncludeResources(value: Boolean): Self = StObject.set(x, "includeResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeResourceApplicationDataFullMap(value: Boolean): Self = this.set("includeResourceApplicationDataFullMap", value.asInstanceOf[js.Any])
+    def setIncludeResourcesUndefined: Self = StObject.set(x, "includeResources", js.undefined)
     
     @scala.inline
-    def deleteIncludeResourceApplicationDataFullMap: Self = this.set("includeResourceApplicationDataFullMap", js.undefined)
+    def setIncludeSearches(value: Boolean): Self = StObject.set(x, "includeSearches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeResources(value: Boolean): Self = this.set("includeResources", value.asInstanceOf[js.Any])
+    def setIncludeSearchesUndefined: Self = StObject.set(x, "includeSearches", js.undefined)
     
     @scala.inline
-    def deleteIncludeResources: Self = this.set("includeResources", js.undefined)
+    def setIncludeSharedNotes(value: Boolean): Self = StObject.set(x, "includeSharedNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeSearches(value: Boolean): Self = this.set("includeSearches", value.asInstanceOf[js.Any])
+    def setIncludeSharedNotesUndefined: Self = StObject.set(x, "includeSharedNotes", js.undefined)
     
     @scala.inline
-    def deleteIncludeSearches: Self = this.set("includeSearches", js.undefined)
+    def setIncludeTags(value: Boolean): Self = StObject.set(x, "includeTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeSharedNotes(value: Boolean): Self = this.set("includeSharedNotes", value.asInstanceOf[js.Any])
+    def setIncludeTagsUndefined: Self = StObject.set(x, "includeTags", js.undefined)
     
     @scala.inline
-    def deleteIncludeSharedNotes: Self = this.set("includeSharedNotes", js.undefined)
+    def setNotebookGuids(value: Set[String]): Self = StObject.set(x, "notebookGuids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeTags(value: Boolean): Self = this.set("includeTags", value.asInstanceOf[js.Any])
+    def setNotebookGuidsUndefined: Self = StObject.set(x, "notebookGuids", js.undefined)
     
     @scala.inline
-    def deleteIncludeTags: Self = this.set("includeTags", js.undefined)
+    def setOmitSharedNotebooks(value: Boolean): Self = StObject.set(x, "omitSharedNotebooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotebookGuids(value: Set[String]): Self = this.set("notebookGuids", value.asInstanceOf[js.Any])
+    def setOmitSharedNotebooksUndefined: Self = StObject.set(x, "omitSharedNotebooks", js.undefined)
     
     @scala.inline
-    def deleteNotebookGuids: Self = this.set("notebookGuids", js.undefined)
+    def setRequireNoteContentClass(value: String): Self = StObject.set(x, "requireNoteContentClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOmitSharedNotebooks(value: Boolean): Self = this.set("omitSharedNotebooks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOmitSharedNotebooks: Self = this.set("omitSharedNotebooks", js.undefined)
-    
-    @scala.inline
-    def setRequireNoteContentClass(value: String): Self = this.set("requireNoteContentClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequireNoteContentClass: Self = this.set("requireNoteContentClass", js.undefined)
+    def setRequireNoteContentClassUndefined: Self = StObject.set(x, "requireNoteContentClass", js.undefined)
   }
 }

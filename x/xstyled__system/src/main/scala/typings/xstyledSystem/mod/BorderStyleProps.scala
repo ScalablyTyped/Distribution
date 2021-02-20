@@ -1,11 +1,12 @@
 package typings.xstyledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BorderStyleProps extends js.Object {
+trait BorderStyleProps extends StObject {
   
   val borderStyle: js.UndefOr[
     ResponsiveValue[
@@ -22,31 +23,19 @@ object BorderStyleProps {
   }
   
   @scala.inline
-  implicit class BorderStylePropsOps[Self <: BorderStyleProps] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBorderStyleVarargs(value: (js.Any | Double)*): Self = this.set("borderStyle", js.Array(value :_*))
+  implicit class BorderStylePropsMutableBuilder[Self <: BorderStyleProps] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setBorderStyle(
       value: ResponsiveValue[
           (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderStyle */ _) | Double
         ]
-    ): Self = this.set("borderStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderStyle: Self = this.set("borderStyle", js.undefined)
+    def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
+    
+    @scala.inline
+    def setBorderStyleVarargs(value: (js.Any | Double)*): Self = StObject.set(x, "borderStyle", js.Array(value :_*))
   }
 }

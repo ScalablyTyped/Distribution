@@ -1,17 +1,18 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DocumentPropertyItem extends js.Object
+sealed trait DocumentPropertyItem extends StObject
 /**
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.DocumentPropertyItem")
 @js.native
-object DocumentPropertyItem extends js.Object {
+object DocumentPropertyItem extends StObject {
   
   @js.native
   sealed trait appName extends DocumentPropertyItem

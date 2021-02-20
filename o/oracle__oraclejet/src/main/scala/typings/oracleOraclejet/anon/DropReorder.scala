@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DropReorder[K, D] extends js.Object {
+trait DropReorder[K, D] extends StObject {
   
   var drag: Rows[K, D] = js.native
   
@@ -22,27 +23,15 @@ object DropReorder {
   }
   
   @scala.inline
-  implicit class DropReorderOps[Self <: DropReorder[_, _], K, D] (val x: Self with (DropReorder[K, D])) extends AnyVal {
+  implicit class DropReorderMutableBuilder[Self <: DropReorder[_, _], K, D] (val x: Self with (DropReorder[K, D])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDrag(value: Rows[K, D]): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrop(value: Columns): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDrag(value: Rows[K, D]): Self = this.set("drag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDrop(value: Columns): Self = this.set("drop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReorder(value: `20`): Self = this.set("reorder", value.asInstanceOf[js.Any])
+    def setReorder(value: `20`): Self = StObject.set(x, "reorder", value.asInstanceOf[js.Any])
   }
 }

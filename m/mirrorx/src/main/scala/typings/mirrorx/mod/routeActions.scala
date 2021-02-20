@@ -1,11 +1,12 @@
 package typings.mirrorx.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait routeActions extends js.Object {
+trait routeActions extends StObject {
   
   def go(n: Double): RouterAction = js.native
   

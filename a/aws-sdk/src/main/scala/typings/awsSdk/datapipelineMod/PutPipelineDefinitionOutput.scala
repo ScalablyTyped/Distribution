@@ -1,11 +1,12 @@
 package typings.awsSdk.datapipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutPipelineDefinitionOutput extends js.Object {
+trait PutPipelineDefinitionOutput extends StObject {
   
   /**
     * Indicates whether there were validation errors, and the pipeline definition is stored but cannot be activated until you correct the pipeline and call PutPipelineDefinition to commit the corrected pipeline.
@@ -31,39 +32,27 @@ object PutPipelineDefinitionOutput {
   }
   
   @scala.inline
-  implicit class PutPipelineDefinitionOutputOps[Self <: PutPipelineDefinitionOutput] (val x: Self) extends AnyVal {
+  implicit class PutPipelineDefinitionOutputMutableBuilder[Self <: PutPipelineDefinitionOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrored(value: Boolean): Self = StObject.set(x, "errored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValidationErrors(value: ValidationErrors): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValidationErrorsUndefined: Self = StObject.set(x, "validationErrors", js.undefined)
     
     @scala.inline
-    def setErrored(value: Boolean): Self = this.set("errored", value.asInstanceOf[js.Any])
+    def setValidationErrorsVarargs(value: ValidationError*): Self = StObject.set(x, "validationErrors", js.Array(value :_*))
     
     @scala.inline
-    def setValidationErrorsVarargs(value: ValidationError*): Self = this.set("validationErrors", js.Array(value :_*))
+    def setValidationWarnings(value: ValidationWarnings): Self = StObject.set(x, "validationWarnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidationErrors(value: ValidationErrors): Self = this.set("validationErrors", value.asInstanceOf[js.Any])
+    def setValidationWarningsUndefined: Self = StObject.set(x, "validationWarnings", js.undefined)
     
     @scala.inline
-    def deleteValidationErrors: Self = this.set("validationErrors", js.undefined)
-    
-    @scala.inline
-    def setValidationWarningsVarargs(value: ValidationWarning*): Self = this.set("validationWarnings", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidationWarnings(value: ValidationWarnings): Self = this.set("validationWarnings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationWarnings: Self = this.set("validationWarnings", js.undefined)
+    def setValidationWarningsVarargs(value: ValidationWarning*): Self = StObject.set(x, "validationWarnings", js.Array(value :_*))
   }
 }

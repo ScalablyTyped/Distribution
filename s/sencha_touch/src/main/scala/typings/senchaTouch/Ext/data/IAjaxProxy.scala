@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.data
 
 import typings.senchaTouch.Ext.data.proxy.IServer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -107,128 +108,116 @@ object IAjaxProxy {
   }
   
   @scala.inline
-  implicit class IAjaxProxyOps[Self <: IAjaxProxy] (val x: Self) extends AnyVal {
+  implicit class IAjaxProxyMutableBuilder[Self <: IAjaxProxy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionMethods(value: js.Any): Self = StObject.set(x, "actionMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActionMethods(value: js.Any): Self = this.set("actionMethods", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActionMethods: Self = this.set("actionMethods", js.undefined)
+    def setActionMethodsUndefined: Self = StObject.set(x, "actionMethods", js.undefined)
     
     @scala.inline
     def setDoRequest(
       value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _
-    ): Self = this.set("doRequest", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "doRequest", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteDoRequest: Self = this.set("doRequest", js.undefined)
+    def setDoRequestUndefined: Self = StObject.set(x, "doRequest", js.undefined)
     
     @scala.inline
-    def setGetHeaders(value: () => _): Self = this.set("getHeaders", js.Any.fromFunction0(value))
+    def setGetHeaders(value: () => _): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetHeaders: Self = this.set("getHeaders", js.undefined)
+    def setGetHeadersUndefined: Self = StObject.set(x, "getHeaders", js.undefined)
     
     @scala.inline
-    def setGetMethod(value: /* request */ js.UndefOr[IRequest] => String): Self = this.set("getMethod", js.Any.fromFunction1(value))
+    def setGetMethod(value: /* request */ js.UndefOr[IRequest] => String): Self = StObject.set(x, "getMethod", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetMethod: Self = this.set("getMethod", js.undefined)
+    def setGetMethodUndefined: Self = StObject.set(x, "getMethod", js.undefined)
     
     @scala.inline
-    def setGetPassword(value: () => String): Self = this.set("getPassword", js.Any.fromFunction0(value))
+    def setGetPassword(value: () => String): Self = StObject.set(x, "getPassword", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetPassword: Self = this.set("getPassword", js.undefined)
+    def setGetPasswordUndefined: Self = StObject.set(x, "getPassword", js.undefined)
     
     @scala.inline
-    def setGetUseDefaultXhrHeader(value: () => Boolean): Self = this.set("getUseDefaultXhrHeader", js.Any.fromFunction0(value))
+    def setGetUseDefaultXhrHeader(value: () => Boolean): Self = StObject.set(x, "getUseDefaultXhrHeader", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetUseDefaultXhrHeader: Self = this.set("getUseDefaultXhrHeader", js.undefined)
+    def setGetUseDefaultXhrHeaderUndefined: Self = StObject.set(x, "getUseDefaultXhrHeader", js.undefined)
     
     @scala.inline
-    def setGetUsername(value: () => String): Self = this.set("getUsername", js.Any.fromFunction0(value))
+    def setGetUsername(value: () => String): Self = StObject.set(x, "getUsername", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetUsername: Self = this.set("getUsername", js.undefined)
+    def setGetUsernameUndefined: Self = StObject.set(x, "getUsername", js.undefined)
     
     @scala.inline
-    def setGetWithCredentials(value: () => Boolean): Self = this.set("getWithCredentials", js.Any.fromFunction0(value))
+    def setGetWithCredentials(value: () => Boolean): Self = StObject.set(x, "getWithCredentials", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetWithCredentials: Self = this.set("getWithCredentials", js.undefined)
+    def setGetWithCredentialsUndefined: Self = StObject.set(x, "getWithCredentials", js.undefined)
     
     @scala.inline
-    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def setSetHeaders(value: /* headers */ js.UndefOr[js.Any] => Unit): Self = this.set("setHeaders", js.Any.fromFunction1(value))
+    def setSetHeaders(value: /* headers */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetHeaders: Self = this.set("setHeaders", js.undefined)
+    def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
     
     @scala.inline
-    def setSetPassword(value: /* password */ js.UndefOr[String] => Unit): Self = this.set("setPassword", js.Any.fromFunction1(value))
+    def setSetPassword(value: /* password */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setPassword", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetPassword: Self = this.set("setPassword", js.undefined)
+    def setSetPasswordUndefined: Self = StObject.set(x, "setPassword", js.undefined)
     
     @scala.inline
-    def setSetUseDefaultXhrHeader(value: /* useDefaultXhrHeader */ js.UndefOr[Boolean] => Unit): Self = this.set("setUseDefaultXhrHeader", js.Any.fromFunction1(value))
+    def setSetUseDefaultXhrHeader(value: /* useDefaultXhrHeader */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setUseDefaultXhrHeader", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetUseDefaultXhrHeader: Self = this.set("setUseDefaultXhrHeader", js.undefined)
+    def setSetUseDefaultXhrHeaderUndefined: Self = StObject.set(x, "setUseDefaultXhrHeader", js.undefined)
     
     @scala.inline
-    def setSetUsername(value: /* username */ js.UndefOr[String] => Unit): Self = this.set("setUsername", js.Any.fromFunction1(value))
+    def setSetUsername(value: /* username */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setUsername", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetUsername: Self = this.set("setUsername", js.undefined)
+    def setSetUsernameUndefined: Self = StObject.set(x, "setUsername", js.undefined)
     
     @scala.inline
-    def setSetWithCredentials(value: /* withCredentials */ js.UndefOr[Boolean] => Unit): Self = this.set("setWithCredentials", js.Any.fromFunction1(value))
+    def setSetWithCredentials(value: /* withCredentials */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setWithCredentials", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetWithCredentials: Self = this.set("setWithCredentials", js.undefined)
+    def setSetWithCredentialsUndefined: Self = StObject.set(x, "setWithCredentials", js.undefined)
     
     @scala.inline
-    def setUseDefaultXhrHeader(value: Boolean): Self = this.set("useDefaultXhrHeader", value.asInstanceOf[js.Any])
+    def setUseDefaultXhrHeader(value: Boolean): Self = StObject.set(x, "useDefaultXhrHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseDefaultXhrHeader: Self = this.set("useDefaultXhrHeader", js.undefined)
+    def setUseDefaultXhrHeaderUndefined: Self = StObject.set(x, "useDefaultXhrHeader", js.undefined)
     
     @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     
     @scala.inline
-    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
+    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
+    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

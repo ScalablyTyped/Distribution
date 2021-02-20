@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see AttributeColumnOptions
   */
 @js.native
-trait DefineAttributeColumnReferencesOptions extends js.Object {
+trait DefineAttributeColumnReferencesOptions extends StObject {
   
   /**
     * When to check for the foreign key constraing
@@ -40,35 +41,23 @@ object DefineAttributeColumnReferencesOptions {
   }
   
   @scala.inline
-  implicit class DefineAttributeColumnReferencesOptionsOps[Self <: DefineAttributeColumnReferencesOptions] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setModel(value: String | (Model[_, _, _])): Self = this.set("model", value.asInstanceOf[js.Any])
+  implicit class DefineAttributeColumnReferencesOptionsMutableBuilder[Self <: DefineAttributeColumnReferencesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setDeferrable(
       value: DeferrableInitiallyDeferred | DeferrableInitiallyImmediate | DeferrableNot | DeferrableSetDeferred | DeferrableSetImmediate
-    ): Self = this.set("deferrable", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "deferrable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeferrable: Self = this.set("deferrable", js.undefined)
+    def setDeferrableUndefined: Self = StObject.set(x, "deferrable", js.undefined)
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    @scala.inline
+    def setModel(value: String | (Model[_, _, _])): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }
 }

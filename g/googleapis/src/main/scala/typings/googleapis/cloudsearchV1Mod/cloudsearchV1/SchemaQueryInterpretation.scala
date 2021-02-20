@@ -1,11 +1,12 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaQueryInterpretation extends js.Object {
+trait SchemaQueryInterpretation extends StObject {
   
   var interpretationType: js.UndefOr[String] = js.native
   
@@ -25,30 +26,18 @@ object SchemaQueryInterpretation {
   }
   
   @scala.inline
-  implicit class SchemaQueryInterpretationOps[Self <: SchemaQueryInterpretation] (val x: Self) extends AnyVal {
+  implicit class SchemaQueryInterpretationMutableBuilder[Self <: SchemaQueryInterpretation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInterpretationType(value: String): Self = StObject.set(x, "interpretationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInterpretationTypeUndefined: Self = StObject.set(x, "interpretationType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInterpretedQuery(value: String): Self = StObject.set(x, "interpretedQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterpretationType(value: String): Self = this.set("interpretationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInterpretationType: Self = this.set("interpretationType", js.undefined)
-    
-    @scala.inline
-    def setInterpretedQuery(value: String): Self = this.set("interpretedQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInterpretedQuery: Self = this.set("interpretedQuery", js.undefined)
+    def setInterpretedQueryUndefined: Self = StObject.set(x, "interpretedQuery", js.undefined)
   }
 }

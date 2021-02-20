@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.text
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,27 +55,15 @@ object XDocumentIndexMark {
   }
   
   @scala.inline
-  implicit class XDocumentIndexMarkOps[Self <: XDocumentIndexMark] (val x: Self) extends AnyVal {
+  implicit class XDocumentIndexMarkMutableBuilder[Self <: XDocumentIndexMark] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetMarkEntry(value: () => String): Self = StObject.set(x, "getMarkEntry", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkEntry(value: String): Self = StObject.set(x, "MarkEntry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMarkEntry(value: String): Self = this.set("MarkEntry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetMarkEntry(value: () => String): Self = this.set("getMarkEntry", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetMarkEntry(value: String => Unit): Self = this.set("setMarkEntry", js.Any.fromFunction1(value))
+    def setSetMarkEntry(value: String => Unit): Self = StObject.set(x, "setMarkEntry", js.Any.fromFunction1(value))
   }
 }

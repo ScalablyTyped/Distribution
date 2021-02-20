@@ -2,12 +2,13 @@ package typings.electron.Electron
 
 import typings.electron.electronStrings.monospaced
 import typings.electron.electronStrings.monospacedDigit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TitleOptions extends js.Object {
+trait TitleOptions extends StObject {
   
   /**
     * The font family variant to display, can be `monospaced` or `monospacedDigit`.
@@ -25,24 +26,12 @@ object TitleOptions {
   }
   
   @scala.inline
-  implicit class TitleOptionsOps[Self <: TitleOptions] (val x: Self) extends AnyVal {
+  implicit class TitleOptionsMutableBuilder[Self <: TitleOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFontType(value: monospaced | monospacedDigit): Self = StObject.set(x, "fontType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFontType(value: monospaced | monospacedDigit): Self = this.set("fontType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFontType: Self = this.set("fontType", js.undefined)
+    def setFontTypeUndefined: Self = StObject.set(x, "fontType", js.undefined)
   }
 }

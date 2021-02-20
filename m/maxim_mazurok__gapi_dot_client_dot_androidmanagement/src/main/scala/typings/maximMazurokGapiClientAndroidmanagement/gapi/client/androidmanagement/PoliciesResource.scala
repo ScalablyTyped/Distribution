@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientAndroidmanagement.anon.Alt
 import typings.maximMazurokGapiClientAndroidmanagement.anon.Oauthtoken
 import typings.maximMazurokGapiClientAndroidmanagement.anon.PrettyPrint
 import typings.maximMazurokGapiClientAndroidmanagement.anon.Resource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PoliciesResource extends js.Object {
+trait PoliciesResource extends StObject {
   
   /** Deletes a policy. This operation is only permitted if no devices are currently referencing the policy. */
   def delete(): Request[js.Object] = js.native

@@ -24,12 +24,12 @@ import typings.handsontable.mod.Handsontable.comments.CommentConfig
 import typings.handsontable.mod.Handsontable.contextMenu.PredefinedMenuItemKey
 import typings.handsontable.mod.Handsontable.nestedHeaders.NestedHeader
 import typings.handsontable.mod.Handsontable.wot.CellCoords
-import typings.handsontable.mod._Handsontable.Core
 import typings.pikaday.mod.PikadayOptions
 import typings.std.HTMLElement
 import typings.std.HTMLTableCellElement
 import typings.std.KeyboardEvent
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -148,7 +148,7 @@ trait GridSettings extends Events {
   
   var editor: js.UndefOr[
     EditorType | (Instantiable6[
-      /* hotInstance */ Core, 
+      /* hotInstance */ typings.handsontable.mod._Handsontable.Core, 
       /* row */ Double, 
       /* col */ Double, 
       /* prop */ String | Double, 
@@ -192,9 +192,13 @@ trait GridSettings extends Events {
   
   var invalidCellClassName: js.UndefOr[String] = js.native
   
-  var isEmptyCol: js.UndefOr[js.ThisFunction1[/* this */ Core, /* col */ Double, Boolean]] = js.native
+  var isEmptyCol: js.UndefOr[
+    js.ThisFunction1[/* this */ typings.handsontable.mod._Handsontable.Core, /* col */ Double, Boolean]
+  ] = js.native
   
-  var isEmptyRow: js.UndefOr[js.ThisFunction1[/* this */ Core, /* row */ Double, Boolean]] = js.native
+  var isEmptyRow: js.UndefOr[
+    js.ThisFunction1[/* this */ typings.handsontable.mod._Handsontable.Core, /* row */ Double, Boolean]
+  ] = js.native
   
   var label: js.UndefOr[LabelOptions] = js.native
   
@@ -336,106 +340,94 @@ object GridSettings {
   }
   
   @scala.inline
-  implicit class GridSettingsOps[Self <: GridSettings] (val x: Self) extends AnyVal {
+  implicit class GridSettingsMutableBuilder[Self <: GridSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveHeaderClassName(value: String): Self = StObject.set(x, "activeHeaderClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveHeaderClassNameUndefined: Self = StObject.set(x, "activeHeaderClassName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveHeaderClassName(value: String): Self = this.set("activeHeaderClassName", value.asInstanceOf[js.Any])
+    def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
     
     @scala.inline
-    def deleteActiveHeaderClassName: Self = this.set("activeHeaderClassName", js.undefined)
+    def setAllowHtml(value: Boolean): Self = StObject.set(x, "allowHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowEmpty(value: Boolean): Self = this.set("allowEmpty", value.asInstanceOf[js.Any])
+    def setAllowHtmlUndefined: Self = StObject.set(x, "allowHtml", js.undefined)
     
     @scala.inline
-    def deleteAllowEmpty: Self = this.set("allowEmpty", js.undefined)
+    def setAllowInsertColumn(value: Boolean): Self = StObject.set(x, "allowInsertColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowHtml(value: Boolean): Self = this.set("allowHtml", value.asInstanceOf[js.Any])
+    def setAllowInsertColumnUndefined: Self = StObject.set(x, "allowInsertColumn", js.undefined)
     
     @scala.inline
-    def deleteAllowHtml: Self = this.set("allowHtml", js.undefined)
+    def setAllowInsertRow(value: Boolean): Self = StObject.set(x, "allowInsertRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowInsertColumn(value: Boolean): Self = this.set("allowInsertColumn", value.asInstanceOf[js.Any])
+    def setAllowInsertRowUndefined: Self = StObject.set(x, "allowInsertRow", js.undefined)
     
     @scala.inline
-    def deleteAllowInsertColumn: Self = this.set("allowInsertColumn", js.undefined)
+    def setAllowInvalid(value: Boolean): Self = StObject.set(x, "allowInvalid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowInsertRow(value: Boolean): Self = this.set("allowInsertRow", value.asInstanceOf[js.Any])
+    def setAllowInvalidUndefined: Self = StObject.set(x, "allowInvalid", js.undefined)
     
     @scala.inline
-    def deleteAllowInsertRow: Self = this.set("allowInsertRow", js.undefined)
+    def setAllowRemoveColumn(value: Boolean): Self = StObject.set(x, "allowRemoveColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowInvalid(value: Boolean): Self = this.set("allowInvalid", value.asInstanceOf[js.Any])
+    def setAllowRemoveColumnUndefined: Self = StObject.set(x, "allowRemoveColumn", js.undefined)
     
     @scala.inline
-    def deleteAllowInvalid: Self = this.set("allowInvalid", js.undefined)
+    def setAllowRemoveRow(value: Boolean): Self = StObject.set(x, "allowRemoveRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowRemoveColumn(value: Boolean): Self = this.set("allowRemoveColumn", value.asInstanceOf[js.Any])
+    def setAllowRemoveRowUndefined: Self = StObject.set(x, "allowRemoveRow", js.undefined)
     
     @scala.inline
-    def deleteAllowRemoveColumn: Self = this.set("allowRemoveColumn", js.undefined)
+    def setAutoColumnSize(value: Settings | Boolean): Self = StObject.set(x, "autoColumnSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowRemoveRow(value: Boolean): Self = this.set("allowRemoveRow", value.asInstanceOf[js.Any])
+    def setAutoColumnSizeUndefined: Self = StObject.set(x, "autoColumnSize", js.undefined)
     
     @scala.inline
-    def deleteAllowRemoveRow: Self = this.set("allowRemoveRow", js.undefined)
+    def setAutoRowSize(value: typings.handsontable.mod.Handsontable.autoRowSize.Settings | Boolean): Self = StObject.set(x, "autoRowSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoColumnSize(value: Settings | Boolean): Self = this.set("autoColumnSize", value.asInstanceOf[js.Any])
+    def setAutoRowSizeUndefined: Self = StObject.set(x, "autoRowSize", js.undefined)
     
     @scala.inline
-    def deleteAutoColumnSize: Self = this.set("autoColumnSize", js.undefined)
+    def setAutoWrapCol(value: Boolean): Self = StObject.set(x, "autoWrapCol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRowSize(value: typings.handsontable.mod.Handsontable.autoRowSize.Settings | Boolean): Self = this.set("autoRowSize", value.asInstanceOf[js.Any])
+    def setAutoWrapColUndefined: Self = StObject.set(x, "autoWrapCol", js.undefined)
     
     @scala.inline
-    def deleteAutoRowSize: Self = this.set("autoRowSize", js.undefined)
+    def setAutoWrapRow(value: Boolean): Self = StObject.set(x, "autoWrapRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoWrapCol(value: Boolean): Self = this.set("autoWrapCol", value.asInstanceOf[js.Any])
+    def setAutoWrapRowUndefined: Self = StObject.set(x, "autoWrapRow", js.undefined)
     
     @scala.inline
-    def deleteAutoWrapCol: Self = this.set("autoWrapCol", js.undefined)
+    def setBindRowsWithHeaders(value: Boolean | loose | strict): Self = StObject.set(x, "bindRowsWithHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoWrapRow(value: Boolean): Self = this.set("autoWrapRow", value.asInstanceOf[js.Any])
+    def setBindRowsWithHeadersUndefined: Self = StObject.set(x, "bindRowsWithHeaders", js.undefined)
     
     @scala.inline
-    def deleteAutoWrapRow: Self = this.set("autoWrapRow", js.undefined)
+    def setCell(value: js.Array[CellSettings]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindRowsWithHeaders(value: Boolean | loose | strict): Self = this.set("bindRowsWithHeaders", value.asInstanceOf[js.Any])
+    def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
     
     @scala.inline
-    def deleteBindRowsWithHeaders: Self = this.set("bindRowsWithHeaders", js.undefined)
-    
-    @scala.inline
-    def setCellVarargs(value: CellSettings*): Self = this.set("cell", js.Array(value :_*))
-    
-    @scala.inline
-    def setCell(value: js.Array[CellSettings]): Self = this.set("cell", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCell: Self = this.set("cell", js.undefined)
+    def setCellVarargs(value: CellSettings*): Self = StObject.set(x, "cell", js.Array(value :_*))
     
     @scala.inline
     def setCells(
@@ -446,244 +438,244 @@ object GridSettings {
           /* prop */ String | Double, 
           CellMeta
         ]
-    ): Self = this.set("cells", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCells: Self = this.set("cells", js.undefined)
+    def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
     @scala.inline
-    def setCheckedTemplate(value: Boolean | String | Double): Self = this.set("checkedTemplate", value.asInstanceOf[js.Any])
+    def setCheckedTemplate(value: Boolean | String | Double): Self = StObject.set(x, "checkedTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCheckedTemplate: Self = this.set("checkedTemplate", js.undefined)
+    def setCheckedTemplateUndefined: Self = StObject.set(x, "checkedTemplate", js.undefined)
     
     @scala.inline
-    def setClassNameVarargs(value: String*): Self = this.set("className", js.Array(value :_*))
+    def setClassName(value: String | js.Array[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String | js.Array[String]): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value :_*))
     
     @scala.inline
-    def setColHeadersVarargs(value: String*): Self = this.set("colHeaders", js.Array(value :_*))
+    def setColHeaders(value: Boolean | js.Array[String] | (js.Function1[/* index */ Double, String])): Self = StObject.set(x, "colHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColHeadersFunction1(value: /* index */ Double => String): Self = this.set("colHeaders", js.Any.fromFunction1(value))
+    def setColHeadersFunction1(value: /* index */ Double => String): Self = StObject.set(x, "colHeaders", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColHeaders(value: Boolean | js.Array[String] | (js.Function1[/* index */ Double, String])): Self = this.set("colHeaders", value.asInstanceOf[js.Any])
+    def setColHeadersUndefined: Self = StObject.set(x, "colHeaders", js.undefined)
     
     @scala.inline
-    def deleteColHeaders: Self = this.set("colHeaders", js.undefined)
-    
-    @scala.inline
-    def setColWidthsVarargs(value: (Double | String)*): Self = this.set("colWidths", js.Array(value :_*))
-    
-    @scala.inline
-    def setColWidthsFunction1(value: /* index */ Double => String | Double): Self = this.set("colWidths", js.Any.fromFunction1(value))
+    def setColHeadersVarargs(value: String*): Self = StObject.set(x, "colHeaders", js.Array(value :_*))
     
     @scala.inline
     def setColWidths(
       value: Double | (js.Array[Double | String]) | String | (js.Function1[/* index */ Double, String | Double])
-    ): Self = this.set("colWidths", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "colWidths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColWidths: Self = this.set("colWidths", js.undefined)
+    def setColWidthsFunction1(value: /* index */ Double => String | Double): Self = StObject.set(x, "colWidths", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCollapsibleColumnsVarargs(value: typings.handsontable.mod.Handsontable.collapsibleColumns.Settings*): Self = this.set("collapsibleColumns", js.Array(value :_*))
+    def setColWidthsUndefined: Self = StObject.set(x, "colWidths", js.undefined)
     
     @scala.inline
-    def setCollapsibleColumns(value: Boolean | js.Array[typings.handsontable.mod.Handsontable.collapsibleColumns.Settings]): Self = this.set("collapsibleColumns", value.asInstanceOf[js.Any])
+    def setColWidthsVarargs(value: (Double | String)*): Self = StObject.set(x, "colWidths", js.Array(value :_*))
     
     @scala.inline
-    def deleteCollapsibleColumns: Self = this.set("collapsibleColumns", js.undefined)
+    def setCollapsibleColumns(value: Boolean | js.Array[typings.handsontable.mod.Handsontable.collapsibleColumns.Settings]): Self = StObject.set(x, "collapsibleColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnHeaderHeightVarargs(value: js.UndefOr[Double]*): Self = this.set("columnHeaderHeight", js.Array(value :_*))
+    def setCollapsibleColumnsUndefined: Self = StObject.set(x, "collapsibleColumns", js.undefined)
     
     @scala.inline
-    def setColumnHeaderHeight(value: Double | js.Array[js.UndefOr[Double]]): Self = this.set("columnHeaderHeight", value.asInstanceOf[js.Any])
+    def setCollapsibleColumnsVarargs(value: typings.handsontable.mod.Handsontable.collapsibleColumns.Settings*): Self = StObject.set(x, "collapsibleColumns", js.Array(value :_*))
     
     @scala.inline
-    def deleteColumnHeaderHeight: Self = this.set("columnHeaderHeight", js.undefined)
+    def setColumnHeaderHeight(value: Double | js.Array[js.UndefOr[Double]]): Self = StObject.set(x, "columnHeaderHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnSorting(value: Boolean | typings.handsontable.mod.Handsontable.columnSorting.Settings): Self = this.set("columnSorting", value.asInstanceOf[js.Any])
+    def setColumnHeaderHeightUndefined: Self = StObject.set(x, "columnHeaderHeight", js.undefined)
     
     @scala.inline
-    def deleteColumnSorting: Self = this.set("columnSorting", js.undefined)
+    def setColumnHeaderHeightVarargs(value: js.UndefOr[Double]*): Self = StObject.set(x, "columnHeaderHeight", js.Array(value :_*))
     
     @scala.inline
-    def setColumnSummaryVarargs(value: typings.handsontable.mod.Handsontable.columnSummary.Settings*): Self = this.set("columnSummary", js.Array(value :_*))
+    def setColumnSorting(value: Boolean | typings.handsontable.mod.Handsontable.columnSorting.Settings): Self = StObject.set(x, "columnSorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnSummaryFunction0(value: () => js.Array[typings.handsontable.mod.Handsontable.columnSummary.Settings]): Self = this.set("columnSummary", js.Any.fromFunction0(value))
+    def setColumnSortingUndefined: Self = StObject.set(x, "columnSorting", js.undefined)
     
     @scala.inline
     def setColumnSummary(
       value: js.Array[typings.handsontable.mod.Handsontable.columnSummary.Settings] | js.Function0[js.Array[typings.handsontable.mod.Handsontable.columnSummary.Settings]]
-    ): Self = this.set("columnSummary", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "columnSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumnSummary: Self = this.set("columnSummary", js.undefined)
+    def setColumnSummaryFunction0(value: () => js.Array[typings.handsontable.mod.Handsontable.columnSummary.Settings]): Self = StObject.set(x, "columnSummary", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColumnsVarargs(value: ColumnSettings*): Self = this.set("columns", js.Array(value :_*))
+    def setColumnSummaryUndefined: Self = StObject.set(x, "columnSummary", js.undefined)
     
     @scala.inline
-    def setColumnsFunction1(value: /* index */ Double => ColumnSettings): Self = this.set("columns", js.Any.fromFunction1(value))
+    def setColumnSummaryVarargs(value: typings.handsontable.mod.Handsontable.columnSummary.Settings*): Self = StObject.set(x, "columnSummary", js.Array(value :_*))
     
     @scala.inline
-    def setColumns(value: js.Array[ColumnSettings] | (js.Function1[/* index */ Double, ColumnSettings])): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setColumns(value: js.Array[ColumnSettings] | (js.Function1[/* index */ Double, ColumnSettings])): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setColumnsFunction1(value: /* index */ Double => ColumnSettings): Self = StObject.set(x, "columns", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCommentedCellClassName(value: String): Self = this.set("commentedCellClassName", value.asInstanceOf[js.Any])
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def deleteCommentedCellClassName: Self = this.set("commentedCellClassName", js.undefined)
+    def setColumnsVarargs(value: ColumnSettings*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setCommentsVarargs(value: CommentConfig*): Self = this.set("comments", js.Array(value :_*))
+    def setCommentedCellClassName(value: String): Self = StObject.set(x, "commentedCellClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: Boolean | typings.handsontable.mod.Handsontable.comments.Settings | js.Array[CommentConfig]): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setCommentedCellClassNameUndefined: Self = StObject.set(x, "commentedCellClassName", js.undefined)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setComments(value: Boolean | typings.handsontable.mod.Handsontable.comments.Settings | js.Array[CommentConfig]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextMenuVarargs(value: PredefinedMenuItemKey*): Self = this.set("contextMenu", js.Array(value :_*))
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    
+    @scala.inline
+    def setCommentsVarargs(value: CommentConfig*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
     @scala.inline
     def setContextMenu(
       value: Boolean | js.Array[PredefinedMenuItemKey] | typings.handsontable.mod.Handsontable.contextMenu.Settings
-    ): Self = this.set("contextMenu", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContextMenu: Self = this.set("contextMenu", js.undefined)
+    def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
     
     @scala.inline
-    def setCopyPaste(value: Boolean | typings.handsontable.mod.Handsontable.copyPaste.Settings): Self = this.set("copyPaste", value.asInstanceOf[js.Any])
+    def setContextMenuVarargs(value: PredefinedMenuItemKey*): Self = StObject.set(x, "contextMenu", js.Array(value :_*))
     
     @scala.inline
-    def deleteCopyPaste: Self = this.set("copyPaste", js.undefined)
+    def setCopyPaste(value: Boolean | typings.handsontable.mod.Handsontable.copyPaste.Settings): Self = StObject.set(x, "copyPaste", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyable(value: Boolean): Self = this.set("copyable", value.asInstanceOf[js.Any])
+    def setCopyPasteUndefined: Self = StObject.set(x, "copyPaste", js.undefined)
     
     @scala.inline
-    def deleteCopyable: Self = this.set("copyable", js.undefined)
+    def setCopyable(value: Boolean): Self = StObject.set(x, "copyable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrectFormat(value: Boolean): Self = this.set("correctFormat", value.asInstanceOf[js.Any])
+    def setCopyableUndefined: Self = StObject.set(x, "copyable", js.undefined)
     
     @scala.inline
-    def deleteCorrectFormat: Self = this.set("correctFormat", js.undefined)
+    def setCorrectFormat(value: Boolean): Self = StObject.set(x, "correctFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentColClassName(value: String): Self = this.set("currentColClassName", value.asInstanceOf[js.Any])
+    def setCorrectFormatUndefined: Self = StObject.set(x, "correctFormat", js.undefined)
     
     @scala.inline
-    def deleteCurrentColClassName: Self = this.set("currentColClassName", js.undefined)
+    def setCurrentColClassName(value: String): Self = StObject.set(x, "currentColClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentHeaderClassName(value: String): Self = this.set("currentHeaderClassName", value.asInstanceOf[js.Any])
+    def setCurrentColClassNameUndefined: Self = StObject.set(x, "currentColClassName", js.undefined)
     
     @scala.inline
-    def deleteCurrentHeaderClassName: Self = this.set("currentHeaderClassName", js.undefined)
+    def setCurrentHeaderClassName(value: String): Self = StObject.set(x, "currentHeaderClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentRowClassName(value: String): Self = this.set("currentRowClassName", value.asInstanceOf[js.Any])
+    def setCurrentHeaderClassNameUndefined: Self = StObject.set(x, "currentHeaderClassName", js.undefined)
     
     @scala.inline
-    def deleteCurrentRowClassName: Self = this.set("currentRowClassName", js.undefined)
+    def setCurrentRowClassName(value: String): Self = StObject.set(x, "currentRowClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomBordersVarargs(value: typings.handsontable.mod.Handsontable.customBorders.Settings*): Self = this.set("customBorders", js.Array(value :_*))
+    def setCurrentRowClassNameUndefined: Self = StObject.set(x, "currentRowClassName", js.undefined)
     
     @scala.inline
-    def setCustomBorders(value: Boolean | js.Array[typings.handsontable.mod.Handsontable.customBorders.Settings]): Self = this.set("customBorders", value.asInstanceOf[js.Any])
+    def setCustomBorders(value: Boolean | js.Array[typings.handsontable.mod.Handsontable.customBorders.Settings]): Self = StObject.set(x, "customBorders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomBorders: Self = this.set("customBorders", js.undefined)
+    def setCustomBordersUndefined: Self = StObject.set(x, "customBorders", js.undefined)
     
     @scala.inline
-    def setDataVarargs(value: (js.Array[CellValue] | RowObject)*): Self = this.set("data", js.Array(value :_*))
+    def setCustomBordersVarargs(value: typings.handsontable.mod.Handsontable.customBorders.Settings*): Self = StObject.set(x, "customBorders", js.Array(value :_*))
     
     @scala.inline
-    def setData(value: js.Array[js.Array[CellValue] | RowObject]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
-    
-    @scala.inline
-    def setDataSchemaVarargs(value: CellValue*): Self = this.set("dataSchema", js.Array(value :_*))
-    
-    @scala.inline
-    def setDataSchemaFunction1(value: /* row */ Double => RowObject | js.Array[CellValue]): Self = this.set("dataSchema", js.Any.fromFunction1(value))
+    def setData(value: js.Array[js.Array[CellValue] | RowObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataSchema(
       value: RowObject | js.Array[CellValue] | (js.Function1[/* row */ Double, RowObject | js.Array[CellValue]])
-    ): Self = this.set("dataSchema", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "dataSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataSchema: Self = this.set("dataSchema", js.undefined)
+    def setDataSchemaFunction1(value: /* row */ Double => RowObject | js.Array[CellValue]): Self = StObject.set(x, "dataSchema", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDateFormat(value: String): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    def setDataSchemaUndefined: Self = StObject.set(x, "dataSchema", js.undefined)
     
     @scala.inline
-    def deleteDateFormat: Self = this.set("dateFormat", js.undefined)
+    def setDataSchemaVarargs(value: CellValue*): Self = StObject.set(x, "dataSchema", js.Array(value :_*))
     
     @scala.inline
-    def setDatePickerConfig(value: PikadayOptions): Self = this.set("datePickerConfig", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteDatePickerConfig: Self = this.set("datePickerConfig", js.undefined)
+    def setDataVarargs(value: (js.Array[CellValue] | RowObject)*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultDate(value: String): Self = this.set("defaultDate", value.asInstanceOf[js.Any])
+    def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultDate: Self = this.set("defaultDate", js.undefined)
+    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
     @scala.inline
-    def setDisableVisualSelectionVarargs(value: (current | area | header)*): Self = this.set("disableVisualSelection", js.Array(value :_*))
+    def setDatePickerConfig(value: PikadayOptions): Self = StObject.set(x, "datePickerConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableVisualSelection(value: Boolean | current | area | header | (js.Array[current | area | header])): Self = this.set("disableVisualSelection", value.asInstanceOf[js.Any])
+    def setDatePickerConfigUndefined: Self = StObject.set(x, "datePickerConfig", js.undefined)
     
     @scala.inline
-    def deleteDisableVisualSelection: Self = this.set("disableVisualSelection", js.undefined)
+    def setDefaultDate(value: String): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragToScroll(value: Boolean): Self = this.set("dragToScroll", value.asInstanceOf[js.Any])
+    def setDefaultDateUndefined: Self = StObject.set(x, "defaultDate", js.undefined)
     
     @scala.inline
-    def deleteDragToScroll: Self = this.set("dragToScroll", js.undefined)
+    def setDisableVisualSelection(value: Boolean | current | area | header | (js.Array[current | area | header])): Self = StObject.set(x, "disableVisualSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropdownMenuVarargs(value: PredefinedMenuItemKey*): Self = this.set("dropdownMenu", js.Array(value :_*))
+    def setDisableVisualSelectionUndefined: Self = StObject.set(x, "disableVisualSelection", js.undefined)
+    
+    @scala.inline
+    def setDisableVisualSelectionVarargs(value: (current | area | header)*): Self = StObject.set(x, "disableVisualSelection", js.Array(value :_*))
+    
+    @scala.inline
+    def setDragToScroll(value: Boolean): Self = StObject.set(x, "dragToScroll", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDragToScrollUndefined: Self = StObject.set(x, "dragToScroll", js.undefined)
     
     @scala.inline
     def setDropdownMenu(
       value: Boolean | js.Array[PredefinedMenuItemKey] | typings.handsontable.mod.Handsontable.contextMenu.Settings
-    ): Self = this.set("dropdownMenu", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "dropdownMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDropdownMenu: Self = this.set("dropdownMenu", js.undefined)
+    def setDropdownMenuUndefined: Self = StObject.set(x, "dropdownMenu", js.undefined)
+    
+    @scala.inline
+    def setDropdownMenuVarargs(value: PredefinedMenuItemKey*): Self = StObject.set(x, "dropdownMenu", js.Array(value :_*))
     
     @scala.inline
     def setEditor(
       value: EditorType | (Instantiable6[
-          /* hotInstance */ Core, 
+          /* hotInstance */ typings.handsontable.mod._Handsontable.Core, 
           /* row */ Double, 
           /* col */ Double, 
           /* prop */ String | Double, 
@@ -691,413 +683,414 @@ object GridSettings {
           /* cellProperties */ CellProperties, 
           Base
         ]) | Boolean | String
-    ): Self = this.set("editor", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEditor: Self = this.set("editor", js.undefined)
+    def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
     
     @scala.inline
-    def setEnterBeginsEditing(value: Boolean): Self = this.set("enterBeginsEditing", value.asInstanceOf[js.Any])
+    def setEnterBeginsEditing(value: Boolean): Self = StObject.set(x, "enterBeginsEditing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnterBeginsEditing: Self = this.set("enterBeginsEditing", js.undefined)
+    def setEnterBeginsEditingUndefined: Self = StObject.set(x, "enterBeginsEditing", js.undefined)
     
     @scala.inline
-    def setEnterMovesFunction1(value: /* event */ KeyboardEvent => CellCoords): Self = this.set("enterMoves", js.Any.fromFunction1(value))
+    def setEnterMoves(value: CellCoords | (js.Function1[/* event */ KeyboardEvent, CellCoords])): Self = StObject.set(x, "enterMoves", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterMoves(value: CellCoords | (js.Function1[/* event */ KeyboardEvent, CellCoords])): Self = this.set("enterMoves", value.asInstanceOf[js.Any])
+    def setEnterMovesFunction1(value: /* event */ KeyboardEvent => CellCoords): Self = StObject.set(x, "enterMoves", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteEnterMoves: Self = this.set("enterMoves", js.undefined)
+    def setEnterMovesUndefined: Self = StObject.set(x, "enterMoves", js.undefined)
     
     @scala.inline
-    def setFillHandle(value: Boolean | vertical | horizontal | typings.handsontable.mod.Handsontable.autoFill.Settings): Self = this.set("fillHandle", value.asInstanceOf[js.Any])
+    def setFillHandle(value: Boolean | vertical | horizontal | typings.handsontable.mod.Handsontable.autoFill.Settings): Self = StObject.set(x, "fillHandle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFillHandle: Self = this.set("fillHandle", js.undefined)
+    def setFillHandleUndefined: Self = StObject.set(x, "fillHandle", js.undefined)
     
     @scala.inline
-    def setFilter(value: Boolean): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setFilter(value: Boolean): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def setFilteringCaseSensitive(value: Boolean): Self = this.set("filteringCaseSensitive", value.asInstanceOf[js.Any])
+    def setFilteringCaseSensitive(value: Boolean): Self = StObject.set(x, "filteringCaseSensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilteringCaseSensitive: Self = this.set("filteringCaseSensitive", js.undefined)
+    def setFilteringCaseSensitiveUndefined: Self = StObject.set(x, "filteringCaseSensitive", js.undefined)
     
     @scala.inline
-    def setFilters(value: Boolean): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setFilters(value: Boolean): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def setFixedColumnsLeft(value: Double): Self = this.set("fixedColumnsLeft", value.asInstanceOf[js.Any])
+    def setFixedColumnsLeft(value: Double): Self = StObject.set(x, "fixedColumnsLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFixedColumnsLeft: Self = this.set("fixedColumnsLeft", js.undefined)
+    def setFixedColumnsLeftUndefined: Self = StObject.set(x, "fixedColumnsLeft", js.undefined)
     
     @scala.inline
-    def setFixedRowsBottom(value: Double): Self = this.set("fixedRowsBottom", value.asInstanceOf[js.Any])
+    def setFixedRowsBottom(value: Double): Self = StObject.set(x, "fixedRowsBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFixedRowsBottom: Self = this.set("fixedRowsBottom", js.undefined)
+    def setFixedRowsBottomUndefined: Self = StObject.set(x, "fixedRowsBottom", js.undefined)
     
     @scala.inline
-    def setFixedRowsTop(value: Double): Self = this.set("fixedRowsTop", value.asInstanceOf[js.Any])
+    def setFixedRowsTop(value: Double): Self = StObject.set(x, "fixedRowsTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFixedRowsTop: Self = this.set("fixedRowsTop", js.undefined)
+    def setFixedRowsTopUndefined: Self = StObject.set(x, "fixedRowsTop", js.undefined)
     
     @scala.inline
-    def setFormulas(value: Boolean | typings.handsontable.mod.Handsontable.formulas.Settings): Self = this.set("formulas", value.asInstanceOf[js.Any])
+    def setFormulas(value: Boolean | typings.handsontable.mod.Handsontable.formulas.Settings): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormulas: Self = this.set("formulas", js.undefined)
+    def setFormulasUndefined: Self = StObject.set(x, "formulas", js.undefined)
     
     @scala.inline
-    def setFragmentSelection(value: Boolean | cell): Self = this.set("fragmentSelection", value.asInstanceOf[js.Any])
+    def setFragmentSelection(value: Boolean | cell): Self = StObject.set(x, "fragmentSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFragmentSelection: Self = this.set("fragmentSelection", js.undefined)
+    def setFragmentSelectionUndefined: Self = StObject.set(x, "fragmentSelection", js.undefined)
     
     @scala.inline
-    def setHeaderTooltips(value: Boolean | typings.handsontable.mod.Handsontable.headerTooltips.Settings): Self = this.set("headerTooltips", value.asInstanceOf[js.Any])
+    def setHeaderTooltips(value: Boolean | typings.handsontable.mod.Handsontable.headerTooltips.Settings): Self = StObject.set(x, "headerTooltips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaderTooltips: Self = this.set("headerTooltips", js.undefined)
+    def setHeaderTooltipsUndefined: Self = StObject.set(x, "headerTooltips", js.undefined)
     
     @scala.inline
-    def setHeightFunction0(value: () => Double | String): Self = this.set("height", js.Any.fromFunction0(value))
+    def setHeight(value: Double | String | (js.Function0[Double | String])): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double | String | (js.Function0[Double | String])): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHeightFunction0(value: () => Double | String): Self = StObject.set(x, "height", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setHiddenColumns(value: Boolean | typings.handsontable.mod.Handsontable.hiddenColumns.Settings): Self = this.set("hiddenColumns", value.asInstanceOf[js.Any])
+    def setHiddenColumns(value: Boolean | typings.handsontable.mod.Handsontable.hiddenColumns.Settings): Self = StObject.set(x, "hiddenColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHiddenColumns: Self = this.set("hiddenColumns", js.undefined)
+    def setHiddenColumnsUndefined: Self = StObject.set(x, "hiddenColumns", js.undefined)
     
     @scala.inline
-    def setHiddenRows(value: Boolean | typings.handsontable.mod.Handsontable.hiddenRows.Settings): Self = this.set("hiddenRows", value.asInstanceOf[js.Any])
+    def setHiddenRows(value: Boolean | typings.handsontable.mod.Handsontable.hiddenRows.Settings): Self = StObject.set(x, "hiddenRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHiddenRows: Self = this.set("hiddenRows", js.undefined)
+    def setHiddenRowsUndefined: Self = StObject.set(x, "hiddenRows", js.undefined)
     
     @scala.inline
-    def setInvalidCellClassName(value: String): Self = this.set("invalidCellClassName", value.asInstanceOf[js.Any])
+    def setInvalidCellClassName(value: String): Self = StObject.set(x, "invalidCellClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInvalidCellClassName: Self = this.set("invalidCellClassName", js.undefined)
+    def setInvalidCellClassNameUndefined: Self = StObject.set(x, "invalidCellClassName", js.undefined)
     
     @scala.inline
-    def setIsEmptyCol(value: js.ThisFunction1[/* this */ Core, /* col */ Double, Boolean]): Self = this.set("isEmptyCol", value.asInstanceOf[js.Any])
+    def setIsEmptyCol(
+      value: js.ThisFunction1[/* this */ typings.handsontable.mod._Handsontable.Core, /* col */ Double, Boolean]
+    ): Self = StObject.set(x, "isEmptyCol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsEmptyCol: Self = this.set("isEmptyCol", js.undefined)
+    def setIsEmptyColUndefined: Self = StObject.set(x, "isEmptyCol", js.undefined)
     
     @scala.inline
-    def setIsEmptyRow(value: js.ThisFunction1[/* this */ Core, /* row */ Double, Boolean]): Self = this.set("isEmptyRow", value.asInstanceOf[js.Any])
+    def setIsEmptyRow(
+      value: js.ThisFunction1[/* this */ typings.handsontable.mod._Handsontable.Core, /* row */ Double, Boolean]
+    ): Self = StObject.set(x, "isEmptyRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsEmptyRow: Self = this.set("isEmptyRow", js.undefined)
+    def setIsEmptyRowUndefined: Self = StObject.set(x, "isEmptyRow", js.undefined)
     
     @scala.inline
-    def setLabel(value: LabelOptions): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabel(value: LabelOptions): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def setLicenseKey(value: String | `non-commercial-and-evaluation`): Self = this.set("licenseKey", value.asInstanceOf[js.Any])
+    def setLicenseKey(value: String | `non-commercial-and-evaluation`): Self = StObject.set(x, "licenseKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLicenseKey: Self = this.set("licenseKey", js.undefined)
+    def setLicenseKeyUndefined: Self = StObject.set(x, "licenseKey", js.undefined)
     
     @scala.inline
-    def setManualColumnFreeze(value: Boolean): Self = this.set("manualColumnFreeze", value.asInstanceOf[js.Any])
+    def setManualColumnFreeze(value: Boolean): Self = StObject.set(x, "manualColumnFreeze", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteManualColumnFreeze: Self = this.set("manualColumnFreeze", js.undefined)
+    def setManualColumnFreezeUndefined: Self = StObject.set(x, "manualColumnFreeze", js.undefined)
     
     @scala.inline
-    def setManualColumnMoveVarargs(value: Double*): Self = this.set("manualColumnMove", js.Array(value :_*))
+    def setManualColumnMove(value: Boolean | js.Array[Double]): Self = StObject.set(x, "manualColumnMove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualColumnMove(value: Boolean | js.Array[Double]): Self = this.set("manualColumnMove", value.asInstanceOf[js.Any])
+    def setManualColumnMoveUndefined: Self = StObject.set(x, "manualColumnMove", js.undefined)
     
     @scala.inline
-    def deleteManualColumnMove: Self = this.set("manualColumnMove", js.undefined)
+    def setManualColumnMoveVarargs(value: Double*): Self = StObject.set(x, "manualColumnMove", js.Array(value :_*))
     
     @scala.inline
-    def setManualColumnResizeVarargs(value: Double*): Self = this.set("manualColumnResize", js.Array(value :_*))
+    def setManualColumnResize(value: Boolean | js.Array[Double]): Self = StObject.set(x, "manualColumnResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualColumnResize(value: Boolean | js.Array[Double]): Self = this.set("manualColumnResize", value.asInstanceOf[js.Any])
+    def setManualColumnResizeUndefined: Self = StObject.set(x, "manualColumnResize", js.undefined)
     
     @scala.inline
-    def deleteManualColumnResize: Self = this.set("manualColumnResize", js.undefined)
+    def setManualColumnResizeVarargs(value: Double*): Self = StObject.set(x, "manualColumnResize", js.Array(value :_*))
     
     @scala.inline
-    def setManualRowMoveVarargs(value: Double*): Self = this.set("manualRowMove", js.Array(value :_*))
+    def setManualRowMove(value: Boolean | js.Array[Double]): Self = StObject.set(x, "manualRowMove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualRowMove(value: Boolean | js.Array[Double]): Self = this.set("manualRowMove", value.asInstanceOf[js.Any])
+    def setManualRowMoveUndefined: Self = StObject.set(x, "manualRowMove", js.undefined)
     
     @scala.inline
-    def deleteManualRowMove: Self = this.set("manualRowMove", js.undefined)
+    def setManualRowMoveVarargs(value: Double*): Self = StObject.set(x, "manualRowMove", js.Array(value :_*))
     
     @scala.inline
-    def setManualRowResizeVarargs(value: Double*): Self = this.set("manualRowResize", js.Array(value :_*))
+    def setManualRowResize(value: Boolean | js.Array[Double]): Self = StObject.set(x, "manualRowResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualRowResize(value: Boolean | js.Array[Double]): Self = this.set("manualRowResize", value.asInstanceOf[js.Any])
+    def setManualRowResizeUndefined: Self = StObject.set(x, "manualRowResize", js.undefined)
     
     @scala.inline
-    def deleteManualRowResize: Self = this.set("manualRowResize", js.undefined)
+    def setManualRowResizeVarargs(value: Double*): Self = StObject.set(x, "manualRowResize", js.Array(value :_*))
     
     @scala.inline
-    def setMaxCols(value: Double): Self = this.set("maxCols", value.asInstanceOf[js.Any])
+    def setMaxCols(value: Double): Self = StObject.set(x, "maxCols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxCols: Self = this.set("maxCols", js.undefined)
+    def setMaxColsUndefined: Self = StObject.set(x, "maxCols", js.undefined)
     
     @scala.inline
-    def setMaxRows(value: Double): Self = this.set("maxRows", value.asInstanceOf[js.Any])
+    def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxRows: Self = this.set("maxRows", js.undefined)
+    def setMaxRowsUndefined: Self = StObject.set(x, "maxRows", js.undefined)
     
     @scala.inline
-    def setMergeCellsVarargs(value: typings.handsontable.mod.Handsontable.mergeCells.Settings*): Self = this.set("mergeCells", js.Array(value :_*))
+    def setMergeCells(value: Boolean | js.Array[typings.handsontable.mod.Handsontable.mergeCells.Settings]): Self = StObject.set(x, "mergeCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeCells(value: Boolean | js.Array[typings.handsontable.mod.Handsontable.mergeCells.Settings]): Self = this.set("mergeCells", value.asInstanceOf[js.Any])
+    def setMergeCellsUndefined: Self = StObject.set(x, "mergeCells", js.undefined)
     
     @scala.inline
-    def deleteMergeCells: Self = this.set("mergeCells", js.undefined)
+    def setMergeCellsVarargs(value: typings.handsontable.mod.Handsontable.mergeCells.Settings*): Self = StObject.set(x, "mergeCells", js.Array(value :_*))
     
     @scala.inline
-    def setMinCols(value: Double): Self = this.set("minCols", value.asInstanceOf[js.Any])
+    def setMinCols(value: Double): Self = StObject.set(x, "minCols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinCols: Self = this.set("minCols", js.undefined)
+    def setMinColsUndefined: Self = StObject.set(x, "minCols", js.undefined)
     
     @scala.inline
-    def setMinRows(value: Double): Self = this.set("minRows", value.asInstanceOf[js.Any])
+    def setMinRows(value: Double): Self = StObject.set(x, "minRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinRows: Self = this.set("minRows", js.undefined)
+    def setMinRowsUndefined: Self = StObject.set(x, "minRows", js.undefined)
     
     @scala.inline
-    def setMinSpareCols(value: Double): Self = this.set("minSpareCols", value.asInstanceOf[js.Any])
+    def setMinSpareCols(value: Double): Self = StObject.set(x, "minSpareCols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinSpareCols: Self = this.set("minSpareCols", js.undefined)
+    def setMinSpareColsUndefined: Self = StObject.set(x, "minSpareCols", js.undefined)
     
     @scala.inline
-    def setMinSpareRows(value: Double): Self = this.set("minSpareRows", value.asInstanceOf[js.Any])
+    def setMinSpareRows(value: Double): Self = StObject.set(x, "minSpareRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinSpareRows: Self = this.set("minSpareRows", js.undefined)
+    def setMinSpareRowsUndefined: Self = StObject.set(x, "minSpareRows", js.undefined)
     
     @scala.inline
-    def setMultiColumnSorting(value: Boolean | typings.handsontable.mod.Handsontable.multiColumnSorting.Settings): Self = this.set("multiColumnSorting", value.asInstanceOf[js.Any])
+    def setMultiColumnSorting(value: Boolean | typings.handsontable.mod.Handsontable.multiColumnSorting.Settings): Self = StObject.set(x, "multiColumnSorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultiColumnSorting: Self = this.set("multiColumnSorting", js.undefined)
+    def setMultiColumnSortingUndefined: Self = StObject.set(x, "multiColumnSorting", js.undefined)
     
     @scala.inline
-    def setNestedHeadersVarargs(value: (js.Array[String | NestedHeader])*): Self = this.set("nestedHeaders", js.Array(value :_*))
+    def setNestedHeaders(value: js.Array[js.Array[String | NestedHeader]]): Self = StObject.set(x, "nestedHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNestedHeaders(value: js.Array[js.Array[String | NestedHeader]]): Self = this.set("nestedHeaders", value.asInstanceOf[js.Any])
+    def setNestedHeadersUndefined: Self = StObject.set(x, "nestedHeaders", js.undefined)
     
     @scala.inline
-    def deleteNestedHeaders: Self = this.set("nestedHeaders", js.undefined)
+    def setNestedHeadersVarargs(value: (js.Array[String | NestedHeader])*): Self = StObject.set(x, "nestedHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setNestedRows(value: Boolean): Self = this.set("nestedRows", value.asInstanceOf[js.Any])
+    def setNestedRows(value: Boolean): Self = StObject.set(x, "nestedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNestedRows: Self = this.set("nestedRows", js.undefined)
+    def setNestedRowsUndefined: Self = StObject.set(x, "nestedRows", js.undefined)
     
     @scala.inline
-    def setNoWordWrapClassName(value: String): Self = this.set("noWordWrapClassName", value.asInstanceOf[js.Any])
+    def setNoWordWrapClassName(value: String): Self = StObject.set(x, "noWordWrapClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNoWordWrapClassName: Self = this.set("noWordWrapClassName", js.undefined)
+    def setNoWordWrapClassNameUndefined: Self = StObject.set(x, "noWordWrapClassName", js.undefined)
     
     @scala.inline
-    def setNumericFormat(value: NumericFormatOptions): Self = this.set("numericFormat", value.asInstanceOf[js.Any])
+    def setNumericFormat(value: NumericFormatOptions): Self = StObject.set(x, "numericFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumericFormat: Self = this.set("numericFormat", js.undefined)
+    def setNumericFormatUndefined: Self = StObject.set(x, "numericFormat", js.undefined)
     
     @scala.inline
-    def setObserveChanges(value: Boolean): Self = this.set("observeChanges", value.asInstanceOf[js.Any])
+    def setObserveChanges(value: Boolean): Self = StObject.set(x, "observeChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteObserveChanges: Self = this.set("observeChanges", js.undefined)
+    def setObserveChangesUndefined: Self = StObject.set(x, "observeChanges", js.undefined)
     
     @scala.inline
-    def setObserveDOMVisibility(value: Boolean): Self = this.set("observeDOMVisibility", value.asInstanceOf[js.Any])
+    def setObserveDOMVisibility(value: Boolean): Self = StObject.set(x, "observeDOMVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteObserveDOMVisibility: Self = this.set("observeDOMVisibility", js.undefined)
+    def setObserveDOMVisibilityUndefined: Self = StObject.set(x, "observeDOMVisibility", js.undefined)
     
     @scala.inline
-    def setOutsideClickDeselectsFunction1(value: /* target */ HTMLElement => Boolean): Self = this.set("outsideClickDeselects", js.Any.fromFunction1(value))
+    def setOutsideClickDeselects(value: Boolean | (js.Function1[/* target */ HTMLElement, Boolean])): Self = StObject.set(x, "outsideClickDeselects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutsideClickDeselects(value: Boolean | (js.Function1[/* target */ HTMLElement, Boolean])): Self = this.set("outsideClickDeselects", value.asInstanceOf[js.Any])
+    def setOutsideClickDeselectsFunction1(value: /* target */ HTMLElement => Boolean): Self = StObject.set(x, "outsideClickDeselects", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOutsideClickDeselects: Self = this.set("outsideClickDeselects", js.undefined)
+    def setOutsideClickDeselectsUndefined: Self = StObject.set(x, "outsideClickDeselects", js.undefined)
     
     @scala.inline
-    def setPersistentState(value: Boolean): Self = this.set("persistentState", value.asInstanceOf[js.Any])
+    def setPersistentState(value: Boolean): Self = StObject.set(x, "persistentState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePersistentState: Self = this.set("persistentState", js.undefined)
+    def setPersistentStateUndefined: Self = StObject.set(x, "persistentState", js.undefined)
     
     @scala.inline
-    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    def setPlaceholderCellClassName(value: String): Self = StObject.set(x, "placeholderCellClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholderCellClassName(value: String): Self = this.set("placeholderCellClassName", value.asInstanceOf[js.Any])
+    def setPlaceholderCellClassNameUndefined: Self = StObject.set(x, "placeholderCellClassName", js.undefined)
     
     @scala.inline
-    def deletePlaceholderCellClassName: Self = this.set("placeholderCellClassName", js.undefined)
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def setPreventOverflow(value: Boolean | vertical | horizontal): Self = this.set("preventOverflow", value.asInstanceOf[js.Any])
+    def setPreventOverflow(value: Boolean | vertical | horizontal): Self = StObject.set(x, "preventOverflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreventOverflow: Self = this.set("preventOverflow", js.undefined)
+    def setPreventOverflowUndefined: Self = StObject.set(x, "preventOverflow", js.undefined)
     
     @scala.inline
-    def setPreventWheel(value: Boolean): Self = this.set("preventWheel", value.asInstanceOf[js.Any])
+    def setPreventWheel(value: Boolean): Self = StObject.set(x, "preventWheel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreventWheel: Self = this.set("preventWheel", js.undefined)
+    def setPreventWheelUndefined: Self = StObject.set(x, "preventWheel", js.undefined)
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setReadOnlyCellClassName(value: String): Self = StObject.set(x, "readOnlyCellClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnlyCellClassName(value: String): Self = this.set("readOnlyCellClassName", value.asInstanceOf[js.Any])
+    def setReadOnlyCellClassNameUndefined: Self = StObject.set(x, "readOnlyCellClassName", js.undefined)
     
     @scala.inline
-    def deleteReadOnlyCellClassName: Self = this.set("readOnlyCellClassName", js.undefined)
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def setRenderAllRows(value: Boolean): Self = this.set("renderAllRows", value.asInstanceOf[js.Any])
+    def setRenderAllRows(value: Boolean): Self = StObject.set(x, "renderAllRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenderAllRows: Self = this.set("renderAllRows", js.undefined)
+    def setRenderAllRowsUndefined: Self = StObject.set(x, "renderAllRows", js.undefined)
+    
+    @scala.inline
+    def setRenderer(value: RendererType | String | typings.handsontable.mod.Handsontable.renderers.Base): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRendererFunction7(
-      value: (/* instance */ Core, /* TD */ HTMLTableCellElement, /* row */ Double, /* col */ Double, /* prop */ String | Double, /* value */ CellValue, /* cellProperties */ CellProperties) => HTMLTableCellElement | Unit
-    ): Self = this.set("renderer", js.Any.fromFunction7(value))
+      value: (/* instance */ typings.handsontable.mod._Handsontable.Core, /* TD */ HTMLTableCellElement, /* row */ Double, /* col */ Double, /* prop */ String | Double, /* value */ CellValue, /* cellProperties */ CellProperties) => HTMLTableCellElement | Unit
+    ): Self = StObject.set(x, "renderer", js.Any.fromFunction7(value))
     
     @scala.inline
-    def setRenderer(value: RendererType | String | typings.handsontable.mod.Handsontable.renderers.Base): Self = this.set("renderer", value.asInstanceOf[js.Any])
+    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
     @scala.inline
-    def deleteRenderer: Self = this.set("renderer", js.undefined)
+    def setRowHeaderWidth(value: Double | js.Array[Double]): Self = StObject.set(x, "rowHeaderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowHeaderWidthVarargs(value: Double*): Self = this.set("rowHeaderWidth", js.Array(value :_*))
+    def setRowHeaderWidthUndefined: Self = StObject.set(x, "rowHeaderWidth", js.undefined)
     
     @scala.inline
-    def setRowHeaderWidth(value: Double | js.Array[Double]): Self = this.set("rowHeaderWidth", value.asInstanceOf[js.Any])
+    def setRowHeaderWidthVarargs(value: Double*): Self = StObject.set(x, "rowHeaderWidth", js.Array(value :_*))
     
     @scala.inline
-    def deleteRowHeaderWidth: Self = this.set("rowHeaderWidth", js.undefined)
+    def setRowHeaders(value: Boolean | js.Array[String] | (js.Function1[/* index */ Double, String])): Self = StObject.set(x, "rowHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowHeadersVarargs(value: String*): Self = this.set("rowHeaders", js.Array(value :_*))
+    def setRowHeadersFunction1(value: /* index */ Double => String): Self = StObject.set(x, "rowHeaders", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRowHeadersFunction1(value: /* index */ Double => String): Self = this.set("rowHeaders", js.Any.fromFunction1(value))
+    def setRowHeadersUndefined: Self = StObject.set(x, "rowHeaders", js.undefined)
     
     @scala.inline
-    def setRowHeaders(value: Boolean | js.Array[String] | (js.Function1[/* index */ Double, String])): Self = this.set("rowHeaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowHeaders: Self = this.set("rowHeaders", js.undefined)
-    
-    @scala.inline
-    def setRowHeightsVarargs(value: (Double | String)*): Self = this.set("rowHeights", js.Array(value :_*))
-    
-    @scala.inline
-    def setRowHeightsFunction1(value: /* index */ Double => String | Double): Self = this.set("rowHeights", js.Any.fromFunction1(value))
+    def setRowHeadersVarargs(value: String*): Self = StObject.set(x, "rowHeaders", js.Array(value :_*))
     
     @scala.inline
     def setRowHeights(
       value: Double | (js.Array[Double | String]) | String | (js.Function1[/* index */ Double, String | Double])
-    ): Self = this.set("rowHeights", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "rowHeights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRowHeights: Self = this.set("rowHeights", js.undefined)
+    def setRowHeightsFunction1(value: /* index */ Double => String | Double): Self = StObject.set(x, "rowHeights", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSearch(value: Boolean | typings.handsontable.mod.Handsontable.search.Settings): Self = this.set("search", value.asInstanceOf[js.Any])
+    def setRowHeightsUndefined: Self = StObject.set(x, "rowHeights", js.undefined)
     
     @scala.inline
-    def deleteSearch: Self = this.set("search", js.undefined)
+    def setRowHeightsVarargs(value: (Double | String)*): Self = StObject.set(x, "rowHeights", js.Array(value :_*))
     
     @scala.inline
-    def setSelectOptionsVarargs(value: String*): Self = this.set("selectOptions", js.Array(value :_*))
+    def setSearch(value: Boolean | typings.handsontable.mod.Handsontable.search.Settings): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectOptions(value: js.Array[String]): Self = this.set("selectOptions", value.asInstanceOf[js.Any])
+    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
     @scala.inline
-    def deleteSelectOptions: Self = this.set("selectOptions", js.undefined)
+    def setSelectOptions(value: js.Array[String]): Self = StObject.set(x, "selectOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionMode(value: single | range | multiple): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
+    def setSelectOptionsUndefined: Self = StObject.set(x, "selectOptions", js.undefined)
     
     @scala.inline
-    def deleteSelectionMode: Self = this.set("selectionMode", js.undefined)
+    def setSelectOptionsVarargs(value: String*): Self = StObject.set(x, "selectOptions", js.Array(value :_*))
     
     @scala.inline
-    def setSkipColumnOnPaste(value: Boolean): Self = this.set("skipColumnOnPaste", value.asInstanceOf[js.Any])
+    def setSelectionMode(value: single | range | multiple): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSkipColumnOnPaste: Self = this.set("skipColumnOnPaste", js.undefined)
+    def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
     
     @scala.inline
-    def setSortByRelevance(value: Boolean): Self = this.set("sortByRelevance", value.asInstanceOf[js.Any])
+    def setSkipColumnOnPaste(value: Boolean): Self = StObject.set(x, "skipColumnOnPaste", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSortByRelevance: Self = this.set("sortByRelevance", js.undefined)
+    def setSkipColumnOnPasteUndefined: Self = StObject.set(x, "skipColumnOnPaste", js.undefined)
     
     @scala.inline
-    def setSourceVarargs(value: (Double | String)*): Self = this.set("source", js.Array(value :_*))
+    def setSortByRelevance(value: Boolean): Self = StObject.set(x, "sortByRelevance", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSortByRelevanceUndefined: Self = StObject.set(x, "sortByRelevance", js.undefined)
     
     @scala.inline
     def setSource(
@@ -1107,135 +1100,138 @@ object GridSettings {
           /* callback */ js.Function1[/* items */ js.Array[String], Unit], 
           Unit
         ])
-    ): Self = this.set("source", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setStartCols(value: Double): Self = this.set("startCols", value.asInstanceOf[js.Any])
+    def setSourceVarargs(value: (Double | String)*): Self = StObject.set(x, "source", js.Array(value :_*))
     
     @scala.inline
-    def deleteStartCols: Self = this.set("startCols", js.undefined)
+    def setStartCols(value: Double): Self = StObject.set(x, "startCols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartRows(value: Double): Self = this.set("startRows", value.asInstanceOf[js.Any])
+    def setStartColsUndefined: Self = StObject.set(x, "startCols", js.undefined)
     
     @scala.inline
-    def deleteStartRows: Self = this.set("startRows", js.undefined)
+    def setStartRows(value: Double): Self = StObject.set(x, "startRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStretchH(value: none | all | last): Self = this.set("stretchH", value.asInstanceOf[js.Any])
+    def setStartRowsUndefined: Self = StObject.set(x, "startRows", js.undefined)
     
     @scala.inline
-    def deleteStretchH: Self = this.set("stretchH", js.undefined)
+    def setStretchH(value: none | all | last): Self = StObject.set(x, "stretchH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
+    def setStretchHUndefined: Self = StObject.set(x, "stretchH", js.undefined)
     
     @scala.inline
-    def deleteStrict: Self = this.set("strict", js.undefined)
+    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabMovesFunction1(value: /* event */ KeyboardEvent => CellCoords): Self = this.set("tabMoves", js.Any.fromFunction1(value))
+    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     
     @scala.inline
-    def setTabMoves(value: CellCoords | (js.Function1[/* event */ KeyboardEvent, CellCoords])): Self = this.set("tabMoves", value.asInstanceOf[js.Any])
+    def setTabMoves(value: CellCoords | (js.Function1[/* event */ KeyboardEvent, CellCoords])): Self = StObject.set(x, "tabMoves", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabMoves: Self = this.set("tabMoves", js.undefined)
+    def setTabMovesFunction1(value: /* event */ KeyboardEvent => CellCoords): Self = StObject.set(x, "tabMoves", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTableClassNameVarargs(value: String*): Self = this.set("tableClassName", js.Array(value :_*))
+    def setTabMovesUndefined: Self = StObject.set(x, "tabMoves", js.undefined)
     
     @scala.inline
-    def setTableClassName(value: String | js.Array[String]): Self = this.set("tableClassName", value.asInstanceOf[js.Any])
+    def setTableClassName(value: String | js.Array[String]): Self = StObject.set(x, "tableClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTableClassName: Self = this.set("tableClassName", js.undefined)
+    def setTableClassNameUndefined: Self = StObject.set(x, "tableClassName", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTableClassNameVarargs(value: String*): Self = StObject.set(x, "tableClassName", js.Array(value :_*))
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrimDropdown(value: Boolean): Self = this.set("trimDropdown", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTrimDropdown: Self = this.set("trimDropdown", js.undefined)
+    def setTrimDropdown(value: Boolean): Self = StObject.set(x, "trimDropdown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrimRowsVarargs(value: Double*): Self = this.set("trimRows", js.Array(value :_*))
+    def setTrimDropdownUndefined: Self = StObject.set(x, "trimDropdown", js.undefined)
     
     @scala.inline
-    def setTrimRows(value: Boolean | js.Array[Double]): Self = this.set("trimRows", value.asInstanceOf[js.Any])
+    def setTrimRows(value: Boolean | js.Array[Double]): Self = StObject.set(x, "trimRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTrimRows: Self = this.set("trimRows", js.undefined)
+    def setTrimRowsUndefined: Self = StObject.set(x, "trimRows", js.undefined)
     
     @scala.inline
-    def setTrimWhitespace(value: Boolean): Self = this.set("trimWhitespace", value.asInstanceOf[js.Any])
+    def setTrimRowsVarargs(value: Double*): Self = StObject.set(x, "trimRows", js.Array(value :_*))
     
     @scala.inline
-    def deleteTrimWhitespace: Self = this.set("trimWhitespace", js.undefined)
+    def setTrimWhitespace(value: Boolean): Self = StObject.set(x, "trimWhitespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: CellType | String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTrimWhitespaceUndefined: Self = StObject.set(x, "trimWhitespace", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setType(value: CellType | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUncheckedTemplate(value: Boolean | String | Double): Self = this.set("uncheckedTemplate", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteUncheckedTemplate: Self = this.set("uncheckedTemplate", js.undefined)
+    def setUncheckedTemplate(value: Boolean | String | Double): Self = StObject.set(x, "uncheckedTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUndo(value: Boolean): Self = this.set("undo", value.asInstanceOf[js.Any])
+    def setUncheckedTemplateUndefined: Self = StObject.set(x, "uncheckedTemplate", js.undefined)
     
     @scala.inline
-    def deleteUndo: Self = this.set("undo", js.undefined)
+    def setUndo(value: Boolean): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidator(value: typings.handsontable.mod.Handsontable.validators.Base | RegExp | ValidatorType | String): Self = this.set("validator", value.asInstanceOf[js.Any])
+    def setUndoUndefined: Self = StObject.set(x, "undo", js.undefined)
     
     @scala.inline
-    def deleteValidator: Self = this.set("validator", js.undefined)
+    def setValidator(value: typings.handsontable.mod.Handsontable.validators.Base | RegExp | ValidatorType | String): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewportColumnRenderingOffset(value: Double | auto): Self = this.set("viewportColumnRenderingOffset", value.asInstanceOf[js.Any])
+    def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
     
     @scala.inline
-    def deleteViewportColumnRenderingOffset: Self = this.set("viewportColumnRenderingOffset", js.undefined)
+    def setViewportColumnRenderingOffset(value: Double | auto): Self = StObject.set(x, "viewportColumnRenderingOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewportRowRenderingOffset(value: Double | auto): Self = this.set("viewportRowRenderingOffset", value.asInstanceOf[js.Any])
+    def setViewportColumnRenderingOffsetUndefined: Self = StObject.set(x, "viewportColumnRenderingOffset", js.undefined)
     
     @scala.inline
-    def deleteViewportRowRenderingOffset: Self = this.set("viewportRowRenderingOffset", js.undefined)
+    def setViewportRowRenderingOffset(value: Double | auto): Self = StObject.set(x, "viewportRowRenderingOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisibleRows(value: Double): Self = this.set("visibleRows", value.asInstanceOf[js.Any])
+    def setViewportRowRenderingOffsetUndefined: Self = StObject.set(x, "viewportRowRenderingOffset", js.undefined)
     
     @scala.inline
-    def deleteVisibleRows: Self = this.set("visibleRows", js.undefined)
+    def setVisibleRows(value: Double): Self = StObject.set(x, "visibleRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidthFunction0(value: () => Double | String): Self = this.set("width", js.Any.fromFunction0(value))
+    def setVisibleRowsUndefined: Self = StObject.set(x, "visibleRows", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double | String | (js.Function0[Double | String])): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double | String | (js.Function0[Double | String])): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthFunction0(value: () => Double | String): Self = StObject.set(x, "width", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setWordWrap(value: Boolean): Self = this.set("wordWrap", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteWordWrap: Self = this.set("wordWrap", js.undefined)
+    def setWordWrap(value: Boolean): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
   }
 }

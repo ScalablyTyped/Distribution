@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.ec2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultSecurityGroupEgress extends js.Object {
+trait DefaultSecurityGroupEgress extends StObject {
   
   /**
     * List of CIDR blocks.
@@ -61,75 +62,63 @@ object DefaultSecurityGroupEgress {
   }
   
   @scala.inline
-  implicit class DefaultSecurityGroupEgressOps[Self <: DefaultSecurityGroupEgress] (val x: Self) extends AnyVal {
+  implicit class DefaultSecurityGroupEgressMutableBuilder[Self <: DefaultSecurityGroupEgress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCidrBlocks(value: js.Array[String]): Self = StObject.set(x, "cidrBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCidrBlocksUndefined: Self = StObject.set(x, "cidrBlocks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCidrBlocksVarargs(value: String*): Self = StObject.set(x, "cidrBlocks", js.Array(value :_*))
     
     @scala.inline
-    def setFromPort(value: Double): Self = this.set("fromPort", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setToPort(value: Double): Self = this.set("toPort", value.asInstanceOf[js.Any])
+    def setFromPort(value: Double): Self = StObject.set(x, "fromPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCidrBlocksVarargs(value: String*): Self = this.set("cidrBlocks", js.Array(value :_*))
+    def setIpv6CidrBlocks(value: js.Array[String]): Self = StObject.set(x, "ipv6CidrBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCidrBlocks(value: js.Array[String]): Self = this.set("cidrBlocks", value.asInstanceOf[js.Any])
+    def setIpv6CidrBlocksUndefined: Self = StObject.set(x, "ipv6CidrBlocks", js.undefined)
     
     @scala.inline
-    def deleteCidrBlocks: Self = this.set("cidrBlocks", js.undefined)
+    def setIpv6CidrBlocksVarargs(value: String*): Self = StObject.set(x, "ipv6CidrBlocks", js.Array(value :_*))
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setPrefixListIds(value: js.Array[String]): Self = StObject.set(x, "prefixListIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setPrefixListIdsUndefined: Self = StObject.set(x, "prefixListIds", js.undefined)
     
     @scala.inline
-    def setIpv6CidrBlocksVarargs(value: String*): Self = this.set("ipv6CidrBlocks", js.Array(value :_*))
+    def setPrefixListIdsVarargs(value: String*): Self = StObject.set(x, "prefixListIds", js.Array(value :_*))
     
     @scala.inline
-    def setIpv6CidrBlocks(value: js.Array[String]): Self = this.set("ipv6CidrBlocks", value.asInstanceOf[js.Any])
+    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIpv6CidrBlocks: Self = this.set("ipv6CidrBlocks", js.undefined)
+    def setSecurityGroups(value: js.Array[String]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefixListIdsVarargs(value: String*): Self = this.set("prefixListIds", js.Array(value :_*))
+    def setSecurityGroupsUndefined: Self = StObject.set(x, "securityGroups", js.undefined)
     
     @scala.inline
-    def setPrefixListIds(value: js.Array[String]): Self = this.set("prefixListIds", value.asInstanceOf[js.Any])
+    def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
     
     @scala.inline
-    def deletePrefixListIds: Self = this.set("prefixListIds", js.undefined)
+    def setSelf(value: Boolean): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroupsVarargs(value: String*): Self = this.set("securityGroups", js.Array(value :_*))
+    def setSelfUndefined: Self = StObject.set(x, "self", js.undefined)
     
     @scala.inline
-    def setSecurityGroups(value: js.Array[String]): Self = this.set("securityGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityGroups: Self = this.set("securityGroups", js.undefined)
-    
-    @scala.inline
-    def setSelf(value: Boolean): Self = this.set("self", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelf: Self = this.set("self", js.undefined)
+    def setToPort(value: Double): Self = StObject.set(x, "toPort", value.asInstanceOf[js.Any])
   }
 }

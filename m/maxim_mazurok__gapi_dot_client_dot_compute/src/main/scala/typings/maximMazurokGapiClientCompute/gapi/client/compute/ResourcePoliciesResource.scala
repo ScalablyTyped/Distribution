@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientCompute.anon.Filter
 import typings.maximMazurokGapiClientCompute.anon.OptionsRequestedPolicyVersionPrettyPrint
 import typings.maximMazurokGapiClientCompute.anon.RegionResource
 import typings.maximMazurokGapiClientCompute.anon.RegionResourcePolicy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourcePoliciesResource extends js.Object {
+trait ResourcePoliciesResource extends StObject {
   
   /** Retrieves an aggregated list of resource policies. */
   def aggregatedList(): Request[ResourcePolicyAggregatedList] = js.native

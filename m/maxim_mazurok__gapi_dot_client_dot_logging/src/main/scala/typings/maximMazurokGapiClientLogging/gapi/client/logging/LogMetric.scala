@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LogMetric extends js.Object {
+trait LogMetric extends StObject {
   
   /**
     * Optional. The bucket_options are required when the logs-based metric is using a DISTRIBUTION value type and it describes the bucket boundaries used to create a histogram of the
@@ -82,82 +83,70 @@ object LogMetric {
   }
   
   @scala.inline
-  implicit class LogMetricOps[Self <: LogMetric] (val x: Self) extends AnyVal {
+  implicit class LogMetricMutableBuilder[Self <: LogMetric] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketOptions(value: BucketOptions): Self = StObject.set(x, "bucketOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketOptionsUndefined: Self = StObject.set(x, "bucketOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketOptions(value: BucketOptions): Self = this.set("bucketOptions", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteBucketOptions: Self = this.set("bucketOptions", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
-    
-    @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
     def setLabelExtractors(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogMetric with TopLevel[js.Any]
-    ): Self = this.set("labelExtractors", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labelExtractors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelExtractors: Self = this.set("labelExtractors", js.undefined)
+    def setLabelExtractorsUndefined: Self = StObject.set(x, "labelExtractors", js.undefined)
     
     @scala.inline
-    def setMetricDescriptor(value: MetricDescriptor): Self = this.set("metricDescriptor", value.asInstanceOf[js.Any])
+    def setMetricDescriptor(value: MetricDescriptor): Self = StObject.set(x, "metricDescriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetricDescriptor: Self = this.set("metricDescriptor", js.undefined)
+    def setMetricDescriptorUndefined: Self = StObject.set(x, "metricDescriptor", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
     @scala.inline
-    def setValueExtractor(value: String): Self = this.set("valueExtractor", value.asInstanceOf[js.Any])
+    def setValueExtractor(value: String): Self = StObject.set(x, "valueExtractor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValueExtractor: Self = this.set("valueExtractor", js.undefined)
+    def setValueExtractorUndefined: Self = StObject.set(x, "valueExtractor", js.undefined)
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

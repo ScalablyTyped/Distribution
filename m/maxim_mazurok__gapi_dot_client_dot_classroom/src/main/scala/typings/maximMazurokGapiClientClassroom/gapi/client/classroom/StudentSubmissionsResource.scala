@@ -9,12 +9,13 @@ import typings.maximMazurokGapiClientClassroom.anon.Resource
 import typings.maximMazurokGapiClientClassroom.anon.UpdateMask
 import typings.maximMazurokGapiClientClassroom.anon.UploadType
 import typings.maximMazurokGapiClientClassroom.anon.Uploadprotocol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StudentSubmissionsResource extends js.Object {
+trait StudentSubmissionsResource extends StObject {
   
   /**
     * Returns a student submission. * `PERMISSION_DENIED` if the requesting user is not permitted to access the requested course, course work, or student submission or for access errors.

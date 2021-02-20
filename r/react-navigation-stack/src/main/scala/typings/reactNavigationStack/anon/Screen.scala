@@ -1,12 +1,13 @@
 package typings.reactNavigationStack.anon
 
 import typings.reactNavigationStack.vendorTypesMod.Layout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Screen extends js.Object {
+trait Screen extends StObject {
   
   /**
     * Layout of the whole screen.
@@ -22,21 +23,9 @@ object Screen {
   }
   
   @scala.inline
-  implicit class ScreenOps[Self <: Screen] (val x: Self) extends AnyVal {
+  implicit class ScreenMutableBuilder[Self <: Screen] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScreen(value: Layout): Self = this.set("screen", value.asInstanceOf[js.Any])
+    def setScreen(value: Layout): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
   }
 }

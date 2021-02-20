@@ -4,6 +4,7 @@ import typings.std.Event
 import typings.std.EventTarget
 import typings.webBluetooth.webBluetoothStrings.advertisementreceived
 import typings.webBluetooth.webBluetoothStrings.gattserverdisconnected
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

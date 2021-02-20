@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Subject extends js.Object {
+trait Subject extends StObject {
   
   /** The country code of the subject. */
   var countryCode: js.UndefOr[String] = js.native
@@ -37,60 +38,48 @@ object Subject {
   }
   
   @scala.inline
-  implicit class SubjectOps[Self <: Subject] (val x: Self) extends AnyVal {
+  implicit class SubjectMutableBuilder[Self <: Subject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    def setLocalityUndefined: Self = StObject.set(x, "locality", js.undefined)
     
     @scala.inline
-    def deleteCountryCode: Self = this.set("countryCode", js.undefined)
+    def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocality(value: String): Self = this.set("locality", value.asInstanceOf[js.Any])
+    def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
     
     @scala.inline
-    def deleteLocality: Self = this.set("locality", js.undefined)
+    def setOrganizationalUnit(value: String): Self = StObject.set(x, "organizationalUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganization(value: String): Self = this.set("organization", value.asInstanceOf[js.Any])
+    def setOrganizationalUnitUndefined: Self = StObject.set(x, "organizationalUnit", js.undefined)
     
     @scala.inline
-    def deleteOrganization: Self = this.set("organization", js.undefined)
+    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizationalUnit(value: String): Self = this.set("organizationalUnit", value.asInstanceOf[js.Any])
+    def setPostalCodeUndefined: Self = StObject.set(x, "postalCode", js.undefined)
     
     @scala.inline
-    def deleteOrganizationalUnit: Self = this.set("organizationalUnit", js.undefined)
+    def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostalCode(value: String): Self = this.set("postalCode", value.asInstanceOf[js.Any])
+    def setProvinceUndefined: Self = StObject.set(x, "province", js.undefined)
     
     @scala.inline
-    def deletePostalCode: Self = this.set("postalCode", js.undefined)
+    def setStreetAddress(value: String): Self = StObject.set(x, "streetAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvince(value: String): Self = this.set("province", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvince: Self = this.set("province", js.undefined)
-    
-    @scala.inline
-    def setStreetAddress(value: String): Self = this.set("streetAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreetAddress: Self = this.set("streetAddress", js.undefined)
+    def setStreetAddressUndefined: Self = StObject.set(x, "streetAddress", js.undefined)
   }
 }

@@ -4,12 +4,13 @@ import typings.node.Buffer
 import typings.stellarBase.stellarBaseStrings.base64
 import typings.stellarBase.stellarBaseStrings.hex
 import typings.stellarBase.stellarBaseStrings.raw
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScpQuorumSet extends js.Object {
+trait ScpQuorumSet extends StObject {
   
   def innerSets(): js.Array[ScpQuorumSet] = js.native
   def innerSets(value: js.Array[ScpQuorumSet]): js.Array[ScpQuorumSet] = js.native

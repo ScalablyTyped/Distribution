@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientAuthentication extends js.Object {
+trait ClientAuthentication extends StObject {
   
   /**
     * 
@@ -30,30 +31,18 @@ object ClientAuthentication {
   }
   
   @scala.inline
-  implicit class ClientAuthenticationOps[Self <: ClientAuthentication] (val x: Self) extends AnyVal {
+  implicit class ClientAuthenticationMutableBuilder[Self <: ClientAuthentication] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSasl(value: Sasl): Self = StObject.set(x, "Sasl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSaslUndefined: Self = StObject.set(x, "Sasl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTls(value: Tls): Self = StObject.set(x, "Tls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSasl(value: Sasl): Self = this.set("Sasl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSasl: Self = this.set("Sasl", js.undefined)
-    
-    @scala.inline
-    def setTls(value: Tls): Self = this.set("Tls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTls: Self = this.set("Tls", js.undefined)
+    def setTlsUndefined: Self = StObject.set(x, "Tls", js.undefined)
   }
 }

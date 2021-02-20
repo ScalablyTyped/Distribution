@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Playback
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TimedMetadataTrackPresentationMode extends js.Object
+sealed trait TimedMetadataTrackPresentationMode extends StObject
 /** Specifies the presentation mode of a timed metadata track. */
 @JSGlobal("Windows.Media.Playback.TimedMetadataTrackPresentationMode")
 @js.native
-object TimedMetadataTrackPresentationMode extends js.Object {
+object TimedMetadataTrackPresentationMode extends StObject {
   
   /** The timed metadata track is presented by the app. */
   @js.native

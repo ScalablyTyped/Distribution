@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Numreupload extends js.Object {
+trait Numreupload extends StObject {
   
   var num_reupload: Double = js.native
   
@@ -22,27 +23,15 @@ object Numreupload {
   }
   
   @scala.inline
-  implicit class NumreuploadOps[Self <: Numreupload] (val x: Self) extends AnyVal {
+  implicit class NumreuploadMutableBuilder[Self <: Numreupload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNum_reupload(value: Double): Self = StObject.set(x, "num_reupload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNum_step_auto_retry(value: Double): Self = StObject.set(x, "num_step_auto_retry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNum_reupload(value: Double): Self = this.set("num_reupload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNum_step_auto_retry(value: Double): Self = this.set("num_step_auto_retry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNum_step_manual_retry(value: Double): Self = this.set("num_step_manual_retry", value.asInstanceOf[js.Any])
+    def setNum_step_manual_retry(value: Double): Self = StObject.set(x, "num_step_manual_retry", value.asInstanceOf[js.Any])
   }
 }

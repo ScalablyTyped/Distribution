@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDatabaseDdlRequest extends js.Object {
+trait UpdateDatabaseDdlRequest extends StObject {
   
   /**
     * If empty, the new update request is assigned an automatically-generated operation ID. Otherwise, `operation_id` is used to construct the name of the resulting Operation. Specifying
@@ -28,33 +29,21 @@ object UpdateDatabaseDdlRequest {
   }
   
   @scala.inline
-  implicit class UpdateDatabaseDdlRequestOps[Self <: UpdateDatabaseDdlRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateDatabaseDdlRequestMutableBuilder[Self <: UpdateDatabaseDdlRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatements(value: js.Array[String]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
     
     @scala.inline
-    def deleteOperationId: Self = this.set("operationId", js.undefined)
-    
-    @scala.inline
-    def setStatementsVarargs(value: String*): Self = this.set("statements", js.Array(value :_*))
-    
-    @scala.inline
-    def setStatements(value: js.Array[String]): Self = this.set("statements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatements: Self = this.set("statements", js.undefined)
+    def setStatementsVarargs(value: String*): Self = StObject.set(x, "statements", js.Array(value :_*))
   }
 }

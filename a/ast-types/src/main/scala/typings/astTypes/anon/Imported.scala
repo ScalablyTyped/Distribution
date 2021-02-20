@@ -3,12 +3,13 @@ package typings.astTypes.anon
 import typings.astTypes.kindsMod.CommentKind
 import typings.astTypes.kindsMod.IdentifierKind
 import typings.astTypes.kindsMod.SourceLocationKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Imported extends js.Object {
+trait Imported extends StObject {
   
   var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
   
@@ -31,69 +32,57 @@ object Imported {
   }
   
   @scala.inline
-  implicit class ImportedOps[Self <: Imported] (val x: Self) extends AnyVal {
+  implicit class ImportedMutableBuilder[Self <: Imported] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentsNull: Self = StObject.set(x, "comments", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def setImported(value: IdentifierKind): Self = this.set("imported", value.asInstanceOf[js.Any])
+    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
     @scala.inline
-    def setCommentsVarargs(value: CommentKind*): Self = this.set("comments", js.Array(value :_*))
+    def setId(value: IdentifierKind): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: js.Array[CommentKind]): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setIdNull: Self = StObject.set(x, "id", null)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setCommentsNull: Self = this.set("comments", null)
+    def setImported(value: IdentifierKind): Self = StObject.set(x, "imported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: IdentifierKind): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLocNull: Self = StObject.set(x, "loc", null)
     
     @scala.inline
-    def setIdNull: Self = this.set("id", null)
+    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
     @scala.inline
-    def setLoc(value: SourceLocationKind): Self = this.set("loc", value.asInstanceOf[js.Any])
+    def setLocal(value: IdentifierKind): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoc: Self = this.set("loc", js.undefined)
+    def setLocalNull: Self = StObject.set(x, "local", null)
     
     @scala.inline
-    def setLocNull: Self = this.set("loc", null)
+    def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
     
     @scala.inline
-    def setLocal(value: IdentifierKind): Self = this.set("local", value.asInstanceOf[js.Any])
+    def setName(value: IdentifierKind): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocal: Self = this.set("local", js.undefined)
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setLocalNull: Self = this.set("local", null)
-    
-    @scala.inline
-    def setName(value: IdentifierKind): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setNameNull: Self = this.set("name", null)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

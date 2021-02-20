@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceUIFrameContext extends js.Object {
+trait ServiceUIFrameContext extends StObject {
   
   def getCachedFrameMessage(key: java.lang.String): java.lang.String = js.native
   
@@ -23,24 +24,12 @@ object ServiceUIFrameContext {
   }
   
   @scala.inline
-  implicit class ServiceUIFrameContextOps[Self <: ServiceUIFrameContext] (val x: Self) extends AnyVal {
+  implicit class ServiceUIFrameContextMutableBuilder[Self <: ServiceUIFrameContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCachedFrameMessage(value: java.lang.String => java.lang.String): Self = StObject.set(x, "getCachedFrameMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetCachedFrameMessage(value: java.lang.String => java.lang.String): Self = this.set("getCachedFrameMessage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPostFrameMessage(value: (java.lang.String, java.lang.String) => Unit): Self = this.set("postFrameMessage", js.Any.fromFunction2(value))
+    def setPostFrameMessage(value: (java.lang.String, java.lang.String) => Unit): Self = StObject.set(x, "postFrameMessage", js.Any.fromFunction2(value))
   }
 }

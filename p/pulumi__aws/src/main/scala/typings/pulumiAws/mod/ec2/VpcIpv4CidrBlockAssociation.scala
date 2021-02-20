@@ -5,6 +5,7 @@ import typings.pulumiAws.vpcIpv4CidrBlockAssociationMod.VpcIpv4CidrBlockAssociat
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,9 +25,7 @@ class VpcIpv4CidrBlockAssociation protected ()
   def this(name: String, args: VpcIpv4CidrBlockAssociationArgs, opts: CustomResourceOptions) = this()
 }
 /* static members */
-@JSImport("@pulumi/aws", "ec2.VpcIpv4CidrBlockAssociation")
-@js.native
-object VpcIpv4CidrBlockAssociation extends js.Object {
+object VpcIpv4CidrBlockAssociation {
   
   /**
     * Get an existing VpcIpv4CidrBlockAssociation resource's state with the given name, ID, and optional extra
@@ -37,14 +36,24 @@ object VpcIpv4CidrBlockAssociation extends js.Object {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
+  @JSImport("@pulumi/aws", "ec2.VpcIpv4CidrBlockAssociation.get")
+  @js.native
   def get(name: String, id: Input[ID]): typings.pulumiAws.vpcIpv4CidrBlockAssociationMod.VpcIpv4CidrBlockAssociation = js.native
+  @JSImport("@pulumi/aws", "ec2.VpcIpv4CidrBlockAssociation.get")
+  @js.native
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.vpcIpv4CidrBlockAssociationMod.VpcIpv4CidrBlockAssociation = js.native
+  @JSImport("@pulumi/aws", "ec2.VpcIpv4CidrBlockAssociation.get")
+  @js.native
   def get(name: String, id: Input[ID], state: VpcIpv4CidrBlockAssociationState): typings.pulumiAws.vpcIpv4CidrBlockAssociationMod.VpcIpv4CidrBlockAssociation = js.native
+  @JSImport("@pulumi/aws", "ec2.VpcIpv4CidrBlockAssociation.get")
+  @js.native
   def get(name: String, id: Input[ID], state: VpcIpv4CidrBlockAssociationState, opts: CustomResourceOptions): typings.pulumiAws.vpcIpv4CidrBlockAssociationMod.VpcIpv4CidrBlockAssociation = js.native
   
   /**
     * Returns true if the given object is an instance of VpcIpv4CidrBlockAssociation.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
+  @JSImport("@pulumi/aws", "ec2.VpcIpv4CidrBlockAssociation.isInstance")
+  @js.native
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation */ Boolean = js.native
 }

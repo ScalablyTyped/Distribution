@@ -1,15 +1,14 @@
 package typings.objectAssignDeep
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait FnCall extends js.Object {
+  trait FnCall extends StObject {
     
     def apply(target: js.Object, sources: js.Any*): js.Any = js.native
     def apply[T, U](target: T, source: U): T with U = js.native

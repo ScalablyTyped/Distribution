@@ -2,6 +2,7 @@ package typings.siesta.Siesta.Test.Action
 
 import typings.siesta.Siesta.Test.Action.Role.IHasTarget
 import typings.siesta.Siesta.Test.IAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,30 +28,18 @@ object MoveCursor {
   }
   
   @scala.inline
-  implicit class MoveCursorOps[Self <: MoveCursor] (val x: Self) extends AnyVal {
+  implicit class MoveCursorMutableBuilder[Self <: MoveCursor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBy(value: js.Any): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setByUndefined: Self = StObject.set(x, "by", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTo(value: js.Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBy(value: js.Any): Self = this.set("by", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBy: Self = this.set("by", js.undefined)
-    
-    @scala.inline
-    def setTo(value: js.Any): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("to", js.undefined)
+    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

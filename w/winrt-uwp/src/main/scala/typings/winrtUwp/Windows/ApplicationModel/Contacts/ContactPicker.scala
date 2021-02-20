@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Controls how the Contact Picker user interface opens and what information it shows. */
 @js.native
-trait ContactPicker extends js.Object {
+trait ContactPicker extends StObject {
   
   /** Sets the text for the confirmation button in the Contact Picker user interface. */
   var commitButtonText: String = js.native
@@ -65,42 +66,30 @@ object ContactPicker {
   }
   
   @scala.inline
-  implicit class ContactPickerOps[Self <: ContactPicker] (val x: Self) extends AnyVal {
+  implicit class ContactPickerMutableBuilder[Self <: ContactPicker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitButtonText(value: String): Self = StObject.set(x, "commitButtonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesiredFields(value: IVector[String]): Self = StObject.set(x, "desiredFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDesiredFieldsWithContactFieldType(value: IVector[ContactFieldType]): Self = StObject.set(x, "desiredFieldsWithContactFieldType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitButtonText(value: String): Self = this.set("commitButtonText", value.asInstanceOf[js.Any])
+    def setPickContactAsync(value: () => IPromiseWithIAsyncOperation[Contact]): Self = StObject.set(x, "pickContactAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDesiredFields(value: IVector[String]): Self = this.set("desiredFields", value.asInstanceOf[js.Any])
+    def setPickContactsAsync(value: () => IPromiseWithIAsyncOperation[IVector[_]]): Self = StObject.set(x, "pickContactsAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDesiredFieldsWithContactFieldType(value: IVector[ContactFieldType]): Self = this.set("desiredFieldsWithContactFieldType", value.asInstanceOf[js.Any])
+    def setPickMultipleContactsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[_]]): Self = StObject.set(x, "pickMultipleContactsAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPickContactAsync(value: () => IPromiseWithIAsyncOperation[Contact]): Self = this.set("pickContactAsync", js.Any.fromFunction0(value))
+    def setPickSingleContactAsync(value: () => IPromiseWithIAsyncOperation[ContactInformation]): Self = StObject.set(x, "pickSingleContactAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPickContactsAsync(value: () => IPromiseWithIAsyncOperation[IVector[_]]): Self = this.set("pickContactsAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPickMultipleContactsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[_]]): Self = this.set("pickMultipleContactsAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPickSingleContactAsync(value: () => IPromiseWithIAsyncOperation[ContactInformation]): Self = this.set("pickSingleContactAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSelectionMode(value: ContactSelectionMode): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
+    def setSelectionMode(value: ContactSelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
   }
 }

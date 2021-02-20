@@ -1,5 +1,6 @@
 package typings.formatjsEcma402Abstract.typesNumberMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.`10000000000000`
   - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.`100000000000000`
 */
-trait DecimalFormatNum extends js.Object
+trait DecimalFormatNum extends StObject
 object DecimalFormatNum {
   
   @scala.inline

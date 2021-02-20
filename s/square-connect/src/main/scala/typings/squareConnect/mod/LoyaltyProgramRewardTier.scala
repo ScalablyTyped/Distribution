@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "LoyaltyProgramRewardTier")
 @js.native
-class LoyaltyProgramRewardTier () extends js.Object {
+class LoyaltyProgramRewardTier () extends StObject {
   
   /**
     * The timestamp when the reward tier was created, in RFC 3339 format.

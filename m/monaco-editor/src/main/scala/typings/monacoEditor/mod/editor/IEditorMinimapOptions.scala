@@ -7,12 +7,13 @@ import typings.monacoEditor.monacoEditorStrings.left
 import typings.monacoEditor.monacoEditorStrings.mouseover
 import typings.monacoEditor.monacoEditorStrings.proportional
 import typings.monacoEditor.monacoEditorStrings.right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEditorMinimapOptions extends js.Object {
+trait IEditorMinimapOptions extends StObject {
   
   /**
     * Enable the rendering of the minimap.
@@ -64,60 +65,48 @@ object IEditorMinimapOptions {
   }
   
   @scala.inline
-  implicit class IEditorMinimapOptionsOps[Self <: IEditorMinimapOptions] (val x: Self) extends AnyVal {
+  implicit class IEditorMinimapOptionsMutableBuilder[Self <: IEditorMinimapOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxColumn(value: Double): Self = StObject.set(x, "maxColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setMaxColumnUndefined: Self = StObject.set(x, "maxColumn", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setRenderCharacters(value: Boolean): Self = StObject.set(x, "renderCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxColumn(value: Double): Self = this.set("maxColumn", value.asInstanceOf[js.Any])
+    def setRenderCharactersUndefined: Self = StObject.set(x, "renderCharacters", js.undefined)
     
     @scala.inline
-    def deleteMaxColumn: Self = this.set("maxColumn", js.undefined)
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderCharacters(value: Boolean): Self = this.set("renderCharacters", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteRenderCharacters: Self = this.set("renderCharacters", js.undefined)
+    def setShowSlider(value: always | mouseover): Self = StObject.set(x, "showSlider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setShowSliderUndefined: Self = StObject.set(x, "showSlider", js.undefined)
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setSide(value: right | left): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowSlider(value: always | mouseover): Self = this.set("showSlider", value.asInstanceOf[js.Any])
+    def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
     
     @scala.inline
-    def deleteShowSlider: Self = this.set("showSlider", js.undefined)
+    def setSize(value: proportional | fill | fit): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSide(value: right | left): Self = this.set("side", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSide: Self = this.set("side", js.undefined)
-    
-    @scala.inline
-    def setSize(value: proportional | fill | fit): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

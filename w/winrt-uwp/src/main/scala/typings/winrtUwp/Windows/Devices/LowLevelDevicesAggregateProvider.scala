@@ -1,21 +1,26 @@
 package typings.winrtUwp.Windows.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LowLevelDevicesAggregateProvider extends js.Object {
+trait LowLevelDevicesAggregateProvider extends StObject {
   
   var adcControllerProvider: js.Any = js.native
   
-   /* unmapped type */ var gpioControllerProvider: js.Any = js.native
+  /* unmapped type */
+  var gpioControllerProvider: js.Any = js.native
   
-   /* unmapped type */ var i2cControllerProvider: js.Any = js.native
+  /* unmapped type */
+  var i2cControllerProvider: js.Any = js.native
   
-   /* unmapped type */ var pwmControllerProvider: js.Any = js.native
+  /* unmapped type */
+  var pwmControllerProvider: js.Any = js.native
   
-   /* unmapped type */ var spiControllerProvider: js.Any = js.native
+  /* unmapped type */
+  var spiControllerProvider: js.Any = js.native
 }
 object LowLevelDevicesAggregateProvider {
   
@@ -32,33 +37,21 @@ object LowLevelDevicesAggregateProvider {
   }
   
   @scala.inline
-  implicit class LowLevelDevicesAggregateProviderOps[Self <: LowLevelDevicesAggregateProvider] (val x: Self) extends AnyVal {
+  implicit class LowLevelDevicesAggregateProviderMutableBuilder[Self <: LowLevelDevicesAggregateProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdcControllerProvider(value: js.Any): Self = StObject.set(x, "adcControllerProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGpioControllerProvider(value: js.Any): Self = StObject.set(x, "gpioControllerProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setI2cControllerProvider(value: js.Any): Self = StObject.set(x, "i2cControllerProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdcControllerProvider(value: js.Any): Self = this.set("adcControllerProvider", value.asInstanceOf[js.Any])
+    def setPwmControllerProvider(value: js.Any): Self = StObject.set(x, "pwmControllerProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGpioControllerProvider(value: js.Any): Self = this.set("gpioControllerProvider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setI2cControllerProvider(value: js.Any): Self = this.set("i2cControllerProvider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPwmControllerProvider(value: js.Any): Self = this.set("pwmControllerProvider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpiControllerProvider(value: js.Any): Self = this.set("spiControllerProvider", value.asInstanceOf[js.Any])
+    def setSpiControllerProvider(value: js.Any): Self = StObject.set(x, "spiControllerProvider", value.asInstanceOf[js.Any])
   }
 }

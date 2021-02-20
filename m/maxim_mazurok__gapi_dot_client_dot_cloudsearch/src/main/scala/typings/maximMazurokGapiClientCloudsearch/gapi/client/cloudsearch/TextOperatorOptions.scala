@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextOperatorOptions extends js.Object {
+trait TextOperatorOptions extends StObject {
   
   /**
     * If true, the text value is tokenized as one atomic value in operator searches and facet matches. For example, if the operator name is "genre" and the value is "science-fiction" the
@@ -31,30 +32,18 @@ object TextOperatorOptions {
   }
   
   @scala.inline
-  implicit class TextOperatorOptionsOps[Self <: TextOperatorOptions] (val x: Self) extends AnyVal {
+  implicit class TextOperatorOptionsMutableBuilder[Self <: TextOperatorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExactMatchWithOperator(value: Boolean): Self = StObject.set(x, "exactMatchWithOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExactMatchWithOperatorUndefined: Self = StObject.set(x, "exactMatchWithOperator", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExactMatchWithOperator(value: Boolean): Self = this.set("exactMatchWithOperator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExactMatchWithOperator: Self = this.set("exactMatchWithOperator", js.undefined)
-    
-    @scala.inline
-    def setOperatorName(value: String): Self = this.set("operatorName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperatorName: Self = this.set("operatorName", js.undefined)
+    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
   }
 }

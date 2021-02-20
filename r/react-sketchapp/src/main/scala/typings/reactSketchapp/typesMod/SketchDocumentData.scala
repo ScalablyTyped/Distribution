@@ -1,11 +1,12 @@
 package typings.reactSketchapp.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchDocumentData extends js.Object {
+trait SketchDocumentData extends StObject {
   
   def addBlankPage(): SketchPage = js.native
   
@@ -47,48 +48,36 @@ object SketchDocumentData {
   }
   
   @scala.inline
-  implicit class SketchDocumentDataOps[Self <: SketchDocumentData] (val x: Self) extends AnyVal {
+  implicit class SketchDocumentDataMutableBuilder[Self <: SketchDocumentData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddBlankPage(value: () => SketchPage): Self = StObject.set(x, "addBlankPage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssets(value: () => SketchAssetCollection): Self = StObject.set(x, "assets", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentPage(value: () => SketchPage): Self = StObject.set(x, "currentPage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddBlankPage(value: () => SketchPage): Self = this.set("addBlankPage", js.Any.fromFunction0(value))
+    def setLayerStyles(value: () => Unit): Self = StObject.set(x, "layerStyles", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAssets(value: () => SketchAssetCollection): Self = this.set("assets", js.Any.fromFunction0(value))
+    def setLayerSymbols(value: () => Unit): Self = StObject.set(x, "layerSymbols", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCurrentPage(value: () => SketchPage): Self = this.set("currentPage", js.Any.fromFunction0(value))
+    def setLayerTextStyles(value: () => SketchSharedStyleContainer): Self = StObject.set(x, "layerTextStyles", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLayerStyles(value: () => Unit): Self = this.set("layerStyles", js.Any.fromFunction0(value))
+    def setPages(value: () => MSArray[SketchPage]): Self = StObject.set(x, "pages", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLayerSymbols(value: () => Unit): Self = this.set("layerSymbols", js.Any.fromFunction0(value))
+    def setRemovePageAtIndex(value: Double => Unit): Self = StObject.set(x, "removePageAtIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLayerTextStyles(value: () => SketchSharedStyleContainer): Self = this.set("layerTextStyles", js.Any.fromFunction0(value))
+    def setSetCurrentPage(value: SketchPage => Unit): Self = StObject.set(x, "setCurrentPage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPages(value: () => MSArray[SketchPage]): Self = this.set("pages", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemovePageAtIndex(value: Double => Unit): Self = this.set("removePageAtIndex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetCurrentPage(value: SketchPage => Unit): Self = this.set("setCurrentPage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSymbolsPageOrCreateIfNecessary(value: () => SketchPage): Self = this.set("symbolsPageOrCreateIfNecessary", js.Any.fromFunction0(value))
+    def setSymbolsPageOrCreateIfNecessary(value: () => SketchPage): Self = StObject.set(x, "symbolsPageOrCreateIfNecessary", js.Any.fromFunction0(value))
   }
 }

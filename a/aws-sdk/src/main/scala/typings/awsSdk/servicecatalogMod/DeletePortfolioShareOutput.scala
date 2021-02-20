@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeletePortfolioShareOutput extends js.Object {
+trait DeletePortfolioShareOutput extends StObject {
   
   /**
     * The portfolio share unique identifier. This will only be returned if delete is made to an organization node.
@@ -21,24 +22,12 @@ object DeletePortfolioShareOutput {
   }
   
   @scala.inline
-  implicit class DeletePortfolioShareOutputOps[Self <: DeletePortfolioShareOutput] (val x: Self) extends AnyVal {
+  implicit class DeletePortfolioShareOutputMutableBuilder[Self <: DeletePortfolioShareOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPortfolioShareToken(value: Id): Self = StObject.set(x, "PortfolioShareToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPortfolioShareToken(value: Id): Self = this.set("PortfolioShareToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePortfolioShareToken: Self = this.set("PortfolioShareToken", js.undefined)
+    def setPortfolioShareTokenUndefined: Self = StObject.set(x, "PortfolioShareToken", js.undefined)
   }
 }

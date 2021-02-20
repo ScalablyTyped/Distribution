@@ -2,12 +2,13 @@ package typings.fancybox
 
 import typings.fancybox.fancyboxStrings.x
 import typings.fancybox.fancyboxStrings.y
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FancyThumbsOptions extends js.Object {
+trait FancyThumbsOptions extends StObject {
   
   /**
     * Display thumbnails on opening
@@ -38,42 +39,30 @@ object FancyThumbsOptions {
   }
   
   @scala.inline
-  implicit class FancyThumbsOptionsOps[Self <: FancyThumbsOptions] (val x: Self) extends AnyVal {
+  implicit class FancyThumbsOptionsMutableBuilder[Self <: FancyThumbsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxis(value: typings.fancybox.fancyboxStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoStart(value: Boolean): Self = this.set("autoStart", value.asInstanceOf[js.Any])
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def deleteAutoStart: Self = this.set("autoStart", js.undefined)
+    def setHideOnClose(value: Boolean): Self = StObject.set(x, "hideOnClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: typings.fancybox.fancyboxStrings.x | y): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setHideOnCloseUndefined: Self = StObject.set(x, "hideOnClose", js.undefined)
     
     @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
+    def setParentEl(value: String): Self = StObject.set(x, "parentEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideOnClose(value: Boolean): Self = this.set("hideOnClose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHideOnClose: Self = this.set("hideOnClose", js.undefined)
-    
-    @scala.inline
-    def setParentEl(value: String): Self = this.set("parentEl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentEl: Self = this.set("parentEl", js.undefined)
+    def setParentElUndefined: Self = StObject.set(x, "parentEl", js.undefined)
   }
 }

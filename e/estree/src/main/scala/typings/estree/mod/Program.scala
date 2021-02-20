@@ -2,6 +2,7 @@ package typings.estree.mod
 
 import typings.estree.estreeStrings.module
 import typings.estree.estreeStrings.script
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,39 +35,27 @@ object Program {
   }
   
   @scala.inline
-  implicit class ProgramOps[Self <: Program] (val x: Self) extends AnyVal {
+  implicit class ProgramMutableBuilder[Self <: Program] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: js.Array[Directive | Statement | ModuleDeclaration]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyVarargs(value: (Directive | Statement | ModuleDeclaration)*): Self = StObject.set(x, "body", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComments(value: js.Array[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyVarargs(value: (Directive | Statement | ModuleDeclaration)*): Self = this.set("body", js.Array(value :_*))
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def setBody(value: js.Array[Directive | Statement | ModuleDeclaration]): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
     @scala.inline
-    def setSourceType(value: script | module): Self = this.set("sourceType", value.asInstanceOf[js.Any])
+    def setSourceType(value: script | module): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: typings.estree.estreeStrings.Program): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCommentsVarargs(value: Comment*): Self = this.set("comments", js.Array(value :_*))
-    
-    @scala.inline
-    def setComments(value: js.Array[Comment]): Self = this.set("comments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setType(value: typings.estree.estreeStrings.Program): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

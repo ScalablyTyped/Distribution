@@ -2,6 +2,7 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.NumberDictionary
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,36 +52,24 @@ object DeliveryViewData {
   }
   
   @scala.inline
-  implicit class DeliveryViewDataOps[Self <: DeliveryViewData] (val x: Self) extends AnyVal {
+  implicit class DeliveryViewDataMutableBuilder[Self <: DeliveryViewData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildIdToParentIdMap(value: NumberDictionary[Double]): Self = StObject.set(x, "childIdToParentIdMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCriteriaStatus(value: TimelineCriteriaStatus): Self = StObject.set(x, "criteriaStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildIdToParentIdMap(value: NumberDictionary[Double]): Self = this.set("childIdToParentIdMap", value.asInstanceOf[js.Any])
+    def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCriteriaStatus(value: TimelineCriteriaStatus): Self = this.set("criteriaStatus", value.asInstanceOf[js.Any])
+    def setTeams(value: js.Array[TimelineTeamData]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDate(value: Date): Self = this.set("endDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartDate(value: Date): Self = this.set("startDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTeamsVarargs(value: TimelineTeamData*): Self = this.set("teams", js.Array(value :_*))
-    
-    @scala.inline
-    def setTeams(value: js.Array[TimelineTeamData]): Self = this.set("teams", value.asInstanceOf[js.Any])
+    def setTeamsVarargs(value: TimelineTeamData*): Self = StObject.set(x, "teams", js.Array(value :_*))
   }
 }

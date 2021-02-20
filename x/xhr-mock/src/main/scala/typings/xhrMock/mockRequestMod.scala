@@ -2,16 +2,19 @@ package typings.xhrMock
 
 import typings.xhrMock.mockHeadersMod.MockHeaders
 import typings.xhrMock.mockURLMod.MockURL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xhr-mock/lib/MockRequest", JSImport.Namespace)
-@js.native
-object mockRequestMod extends js.Object {
+object mockRequestMod {
+  
+  @JSImport("xhr-mock/lib/MockRequest", JSImport.Default)
+  @js.native
+  class default () extends MockRequest
   
   @js.native
-  trait MockRequest extends js.Object {
+  trait MockRequest extends StObject {
     
     var _body: js.Any = js.native
     
@@ -36,7 +39,4 @@ object mockRequestMod extends js.Object {
     def url(): MockURL = js.native
     def url(url: String): MockRequest = js.native
   }
-  
-  @js.native
-  class default () extends MockRequest
 }

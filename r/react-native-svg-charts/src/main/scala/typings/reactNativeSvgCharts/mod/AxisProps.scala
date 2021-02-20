@@ -4,12 +4,13 @@ import typings.d3Scale.mod.ScaleBand_
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeSvgCharts.anon.PartialTextProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AxisProps[T] extends js.Object {
+trait AxisProps[T] extends StObject {
   
   var data: js.Array[T] = js.native
   
@@ -36,69 +37,57 @@ object AxisProps {
   }
   
   @scala.inline
-  implicit class AxisPropsOps[Self <: AxisProps[_], T] (val x: Self with AxisProps[T]) extends AnyVal {
+  implicit class AxisPropsMutableBuilder[Self <: AxisProps[_], T] (val x: Self with AxisProps[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormatLabel(value: (/* value */ js.Any, /* index */ Double) => Double | String): Self = StObject.set(x, "formatLabel", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDataVarargs(value: T*): Self = this.set("data", js.Array(value :_*))
+    def setFormatLabelUndefined: Self = StObject.set(x, "formatLabel", js.undefined)
     
     @scala.inline
-    def setData(value: js.Array[T]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setNumberOfTicks(value: Double): Self = StObject.set(x, "numberOfTicks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatLabel(value: (/* value */ js.Any, /* index */ Double) => Double | String): Self = this.set("formatLabel", js.Any.fromFunction2(value))
+    def setNumberOfTicksUndefined: Self = StObject.set(x, "numberOfTicks", js.undefined)
     
     @scala.inline
-    def deleteFormatLabel: Self = this.set("formatLabel", js.undefined)
+    def setScale(value: () => (ScaleType[js.Any, js.Any]) | ScaleBand_[js.Any]): Self = StObject.set(x, "scale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNumberOfTicks(value: Double): Self = this.set("numberOfTicks", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteNumberOfTicks: Self = this.set("numberOfTicks", js.undefined)
+    def setSpacingInner(value: Double): Self = StObject.set(x, "spacingInner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: () => (ScaleType[js.Any, js.Any]) | ScaleBand_[js.Any]): Self = this.set("scale", js.Any.fromFunction0(value))
+    def setSpacingInnerUndefined: Self = StObject.set(x, "spacingInner", js.undefined)
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setSpacingOuter(value: Double): Self = StObject.set(x, "spacingOuter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpacingInner(value: Double): Self = this.set("spacingInner", value.asInstanceOf[js.Any])
+    def setSpacingOuterUndefined: Self = StObject.set(x, "spacingOuter", js.undefined)
     
     @scala.inline
-    def deleteSpacingInner: Self = this.set("spacingInner", js.undefined)
+    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpacingOuter(value: Double): Self = this.set("spacingOuter", value.asInstanceOf[js.Any])
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def deleteSpacingOuter: Self = this.set("spacingOuter", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setSvg(value: PartialTextProps): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setStyleNull: Self = this.set("style", null)
-    
-    @scala.inline
-    def setSvg(value: PartialTextProps): Self = this.set("svg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSvg: Self = this.set("svg", js.undefined)
+    def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
   }
 }

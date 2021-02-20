@@ -1,11 +1,12 @@
 package typings.nodeHueApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bridge extends js.Object {
+trait Bridge extends StObject {
   
   var bridge: Boolean = js.native
   
@@ -22,33 +23,21 @@ object Bridge {
   }
   
   @scala.inline
-  implicit class BridgeOps[Self <: Bridge] (val x: Self) extends AnyVal {
+  implicit class BridgeMutableBuilder[Self <: Bridge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBridge(value: Boolean): Self = StObject.set(x, "bridge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLights(value: js.Array[String]): Self = StObject.set(x, "lights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLightsVarargs(value: String*): Self = StObject.set(x, "lights", js.Array(value :_*))
     
     @scala.inline
-    def setBridge(value: Boolean): Self = this.set("bridge", value.asInstanceOf[js.Any])
+    def setSensors(value: js.Array[String]): Self = StObject.set(x, "sensors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightsVarargs(value: String*): Self = this.set("lights", js.Array(value :_*))
-    
-    @scala.inline
-    def setLights(value: js.Array[String]): Self = this.set("lights", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSensorsVarargs(value: String*): Self = this.set("sensors", js.Array(value :_*))
-    
-    @scala.inline
-    def setSensors(value: js.Array[String]): Self = this.set("sensors", value.asInstanceOf[js.Any])
+    def setSensorsVarargs(value: String*): Self = StObject.set(x, "sensors", js.Array(value :_*))
   }
 }

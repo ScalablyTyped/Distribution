@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.frame
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.URL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,33 +56,21 @@ object FeatureStateEvent {
   }
   
   @scala.inline
-  implicit class FeatureStateEventOps[Self <: FeatureStateEvent] (val x: Self) extends AnyVal {
+  implicit class FeatureStateEventMutableBuilder[Self <: FeatureStateEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeatureDescriptor(value: String): Self = StObject.set(x, "FeatureDescriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeatureURL(value: URL): Self = StObject.set(x, "FeatureURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsEnabled(value: Boolean): Self = StObject.set(x, "IsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureDescriptor(value: String): Self = this.set("FeatureDescriptor", value.asInstanceOf[js.Any])
+    def setRequery(value: Boolean): Self = StObject.set(x, "Requery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureURL(value: URL): Self = this.set("FeatureURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = this.set("IsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequery(value: Boolean): Self = this.set("Requery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: js.Any): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setState(value: js.Any): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }
 }

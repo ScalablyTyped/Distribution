@@ -1,11 +1,12 @@
 package typings.overwatchApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QuickplayCompetitiveStats extends js.Object {
+trait QuickplayCompetitiveStats extends StObject {
   
   var competitive: js.Array[Stat] = js.native
   
@@ -20,30 +21,18 @@ object QuickplayCompetitiveStats {
   }
   
   @scala.inline
-  implicit class QuickplayCompetitiveStatsOps[Self <: QuickplayCompetitiveStats] (val x: Self) extends AnyVal {
+  implicit class QuickplayCompetitiveStatsMutableBuilder[Self <: QuickplayCompetitiveStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompetitive(value: js.Array[Stat]): Self = StObject.set(x, "competitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompetitiveVarargs(value: Stat*): Self = StObject.set(x, "competitive", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQuickplay(value: js.Array[Stat]): Self = StObject.set(x, "quickplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompetitiveVarargs(value: Stat*): Self = this.set("competitive", js.Array(value :_*))
-    
-    @scala.inline
-    def setCompetitive(value: js.Array[Stat]): Self = this.set("competitive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuickplayVarargs(value: Stat*): Self = this.set("quickplay", js.Array(value :_*))
-    
-    @scala.inline
-    def setQuickplay(value: js.Array[Stat]): Self = this.set("quickplay", value.asInstanceOf[js.Any])
+    def setQuickplayVarargs(value: Stat*): Self = StObject.set(x, "quickplay", js.Array(value :_*))
   }
 }

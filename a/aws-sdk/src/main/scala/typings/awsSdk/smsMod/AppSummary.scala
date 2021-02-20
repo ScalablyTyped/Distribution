@@ -1,11 +1,12 @@
 package typings.awsSdk.smsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppSummary extends js.Object {
+trait AppSummary extends StObject {
   
   /**
     * The unique ID of the application.
@@ -111,132 +112,120 @@ object AppSummary {
   }
   
   @scala.inline
-  implicit class AppSummaryOps[Self <: AppSummary] (val x: Self) extends AnyVal {
+  implicit class AppSummaryMutableBuilder[Self <: AppSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppId(value: AppId): Self = this.set("appId", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
     @scala.inline
-    def deleteAppId: Self = this.set("appId", js.undefined)
+    def setDescription(value: AppDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    def setImportedAppId(value: ImportedAppId): Self = StObject.set(x, "importedAppId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: AppDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setImportedAppIdUndefined: Self = StObject.set(x, "importedAppId", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setLastModified(value: Timestamp): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportedAppId(value: ImportedAppId): Self = this.set("importedAppId", value.asInstanceOf[js.Any])
+    def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
     
     @scala.inline
-    def deleteImportedAppId: Self = this.set("importedAppId", js.undefined)
+    def setLatestReplicationTime(value: Timestamp): Self = StObject.set(x, "latestReplicationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModified(value: Timestamp): Self = this.set("lastModified", value.asInstanceOf[js.Any])
+    def setLatestReplicationTimeUndefined: Self = StObject.set(x, "latestReplicationTime", js.undefined)
     
     @scala.inline
-    def deleteLastModified: Self = this.set("lastModified", js.undefined)
+    def setLaunchConfigurationStatus(value: AppLaunchConfigurationStatus): Self = StObject.set(x, "launchConfigurationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestReplicationTime(value: Timestamp): Self = this.set("latestReplicationTime", value.asInstanceOf[js.Any])
+    def setLaunchConfigurationStatusUndefined: Self = StObject.set(x, "launchConfigurationStatus", js.undefined)
     
     @scala.inline
-    def deleteLatestReplicationTime: Self = this.set("latestReplicationTime", js.undefined)
+    def setLaunchDetails(value: LaunchDetails): Self = StObject.set(x, "launchDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchConfigurationStatus(value: AppLaunchConfigurationStatus): Self = this.set("launchConfigurationStatus", value.asInstanceOf[js.Any])
+    def setLaunchDetailsUndefined: Self = StObject.set(x, "launchDetails", js.undefined)
     
     @scala.inline
-    def deleteLaunchConfigurationStatus: Self = this.set("launchConfigurationStatus", js.undefined)
+    def setLaunchStatus(value: AppLaunchStatus): Self = StObject.set(x, "launchStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchDetails(value: LaunchDetails): Self = this.set("launchDetails", value.asInstanceOf[js.Any])
+    def setLaunchStatusMessage(value: AppLaunchStatusMessage): Self = StObject.set(x, "launchStatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLaunchDetails: Self = this.set("launchDetails", js.undefined)
+    def setLaunchStatusMessageUndefined: Self = StObject.set(x, "launchStatusMessage", js.undefined)
     
     @scala.inline
-    def setLaunchStatus(value: AppLaunchStatus): Self = this.set("launchStatus", value.asInstanceOf[js.Any])
+    def setLaunchStatusUndefined: Self = StObject.set(x, "launchStatus", js.undefined)
     
     @scala.inline
-    def deleteLaunchStatus: Self = this.set("launchStatus", js.undefined)
+    def setName(value: AppName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchStatusMessage(value: AppLaunchStatusMessage): Self = this.set("launchStatusMessage", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLaunchStatusMessage: Self = this.set("launchStatusMessage", js.undefined)
+    def setReplicationConfigurationStatus(value: AppReplicationConfigurationStatus): Self = StObject.set(x, "replicationConfigurationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: AppName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setReplicationConfigurationStatusUndefined: Self = StObject.set(x, "replicationConfigurationStatus", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setReplicationStatus(value: AppReplicationStatus): Self = StObject.set(x, "replicationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationConfigurationStatus(value: AppReplicationConfigurationStatus): Self = this.set("replicationConfigurationStatus", value.asInstanceOf[js.Any])
+    def setReplicationStatusMessage(value: AppReplicationStatusMessage): Self = StObject.set(x, "replicationStatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReplicationConfigurationStatus: Self = this.set("replicationConfigurationStatus", js.undefined)
+    def setReplicationStatusMessageUndefined: Self = StObject.set(x, "replicationStatusMessage", js.undefined)
     
     @scala.inline
-    def setReplicationStatus(value: AppReplicationStatus): Self = this.set("replicationStatus", value.asInstanceOf[js.Any])
+    def setReplicationStatusUndefined: Self = StObject.set(x, "replicationStatus", js.undefined)
     
     @scala.inline
-    def deleteReplicationStatus: Self = this.set("replicationStatus", js.undefined)
+    def setRoleName(value: RoleName): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationStatusMessage(value: AppReplicationStatusMessage): Self = this.set("replicationStatusMessage", value.asInstanceOf[js.Any])
+    def setRoleNameUndefined: Self = StObject.set(x, "roleName", js.undefined)
     
     @scala.inline
-    def deleteReplicationStatusMessage: Self = this.set("replicationStatusMessage", js.undefined)
+    def setStatus(value: AppStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleName(value: RoleName): Self = this.set("roleName", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: AppStatusMessage): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRoleName: Self = this.set("roleName", js.undefined)
+    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
     @scala.inline
-    def setStatus(value: AppStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTotalServerGroups(value: TotalServerGroups): Self = StObject.set(x, "totalServerGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: AppStatusMessage): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    def setTotalServerGroupsUndefined: Self = StObject.set(x, "totalServerGroups", js.undefined)
     
     @scala.inline
-    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
+    def setTotalServers(value: TotalServers): Self = StObject.set(x, "totalServers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalServerGroups(value: TotalServerGroups): Self = this.set("totalServerGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalServerGroups: Self = this.set("totalServerGroups", js.undefined)
-    
-    @scala.inline
-    def setTotalServers(value: TotalServers): Self = this.set("totalServers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalServers: Self = this.set("totalServers", js.undefined)
+    def setTotalServersUndefined: Self = StObject.set(x, "totalServers", js.undefined)
   }
 }

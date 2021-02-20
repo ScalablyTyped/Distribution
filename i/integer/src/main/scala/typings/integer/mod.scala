@@ -3,44 +3,20 @@ package typings.integer
 import typings.integer.integerNumbers.`-1`
 import typings.integer.integerNumbers.`0`
 import typings.integer.integerNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("integer", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("integer", JSImport.Namespace)
+  @js.native
   def apply(`val`: IntLike): IntClass = js.native
   
-  val MAX_VALUE: IntClass = js.native
-  
-  val MIN_VALUE: IntClass = js.native
-  
-  val NEG_ONE: IntClass = js.native
-  
-  val ONE: IntClass = js.native
-  
-  val ZERO: IntClass = js.native
-  
-  def fromBits(low: Double): IntClass = js.native
-  def fromBits(low: Double, high: Double): IntClass = js.native
-  
-  def fromNumber(`val`: Double): IntClass = js.native
-  def fromNumber(`val`: Double, defaultVal: Double): IntClass = js.native
-  def fromNumber(`val`: Double, defaultVal: IntClass): IntClass = js.native
-  
-  def fromString(`val`: String): IntClass = js.native
-  def fromString(`val`: String, radix: js.UndefOr[scala.Nothing], defaultVal: String): IntClass = js.native
-  def fromString(`val`: String, radix: js.UndefOr[scala.Nothing], defaultVal: IntClass): IntClass = js.native
-  def fromString(`val`: String, radix: Double): IntClass = js.native
-  def fromString(`val`: String, radix: Double, defaultVal: String): IntClass = js.native
-  def fromString(`val`: String, radix: Double, defaultVal: IntClass): IntClass = js.native
-  
-  def isInstance(`val`: js.Any): Boolean = js.native
-  
+  @JSImport("integer", "IntClass")
   @js.native
-  class IntClass protected () extends js.Object {
+  class IntClass protected () extends StObject {
     def this(`val`: IntLike) = this()
     
     def abs(): IntClass = js.native
@@ -167,6 +143,66 @@ object mod extends js.Object {
     
     def xor(bits: IntLike): IntClass = js.native
   }
+  
+  @JSImport("integer", "MAX_VALUE")
+  @js.native
+  val MAX_VALUE: IntClass = js.native
+  
+  @JSImport("integer", "MIN_VALUE")
+  @js.native
+  val MIN_VALUE: IntClass = js.native
+  
+  @JSImport("integer", "NEG_ONE")
+  @js.native
+  val NEG_ONE: IntClass = js.native
+  
+  @JSImport("integer", "ONE")
+  @js.native
+  val ONE: IntClass = js.native
+  
+  @JSImport("integer", "ZERO")
+  @js.native
+  val ZERO: IntClass = js.native
+  
+  @JSImport("integer", "fromBits")
+  @js.native
+  def fromBits(low: Double): IntClass = js.native
+  @JSImport("integer", "fromBits")
+  @js.native
+  def fromBits(low: Double, high: Double): IntClass = js.native
+  
+  @JSImport("integer", "fromNumber")
+  @js.native
+  def fromNumber(`val`: Double): IntClass = js.native
+  @JSImport("integer", "fromNumber")
+  @js.native
+  def fromNumber(`val`: Double, defaultVal: Double): IntClass = js.native
+  @JSImport("integer", "fromNumber")
+  @js.native
+  def fromNumber(`val`: Double, defaultVal: IntClass): IntClass = js.native
+  
+  @JSImport("integer", "fromString")
+  @js.native
+  def fromString(`val`: String): IntClass = js.native
+  @JSImport("integer", "fromString")
+  @js.native
+  def fromString(`val`: String, radix: js.UndefOr[scala.Nothing], defaultVal: String): IntClass = js.native
+  @JSImport("integer", "fromString")
+  @js.native
+  def fromString(`val`: String, radix: js.UndefOr[scala.Nothing], defaultVal: IntClass): IntClass = js.native
+  @JSImport("integer", "fromString")
+  @js.native
+  def fromString(`val`: String, radix: Double): IntClass = js.native
+  @JSImport("integer", "fromString")
+  @js.native
+  def fromString(`val`: String, radix: Double, defaultVal: String): IntClass = js.native
+  @JSImport("integer", "fromString")
+  @js.native
+  def fromString(`val`: String, radix: Double, defaultVal: IntClass): IntClass = js.native
+  
+  @JSImport("integer", "isInstance")
+  @js.native
+  def isInstance(`val`: js.Any): Boolean = js.native
   
   type IntLike = Double | String | IntClass
 }

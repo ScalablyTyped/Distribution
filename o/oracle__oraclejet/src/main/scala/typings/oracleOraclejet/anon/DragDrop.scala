@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DragDrop extends js.Object {
+trait DragDrop extends StObject {
   
   var drag: js.UndefOr[ItemsDragStart] = js.native
   
@@ -22,33 +23,21 @@ object DragDrop {
   }
   
   @scala.inline
-  implicit class DragDropOps[Self <: DragDrop] (val x: Self) extends AnyVal {
+  implicit class DragDropMutableBuilder[Self <: DragDrop] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDrag(value: ItemsDragStart): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrop(value: ItemsDragOver): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReorder(value: `14`): Self = this.set("reorder", value.asInstanceOf[js.Any])
+    def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
     
     @scala.inline
-    def setDrag(value: ItemsDragStart): Self = this.set("drag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDrag: Self = this.set("drag", js.undefined)
-    
-    @scala.inline
-    def setDrop(value: ItemsDragOver): Self = this.set("drop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDrop: Self = this.set("drop", js.undefined)
+    def setReorder(value: `14`): Self = StObject.set(x, "reorder", value.asInstanceOf[js.Any])
   }
 }

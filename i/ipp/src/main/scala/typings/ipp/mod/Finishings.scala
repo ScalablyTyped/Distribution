@@ -1,5 +1,6 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -164,7 +165,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ipp.ippStrings.`trim-after-job`
   - typings.ipp.ippStrings.`trim-after-pages`
 */
-trait Finishings extends js.Object
+trait Finishings extends StObject
 object Finishings {
   
   @scala.inline

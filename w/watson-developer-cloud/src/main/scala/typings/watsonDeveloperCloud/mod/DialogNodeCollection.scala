@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An array of dialog nodes. */
 @js.native
-trait DialogNodeCollection extends js.Object {
+trait DialogNodeCollection extends StObject {
   
   /** An array of objects describing the dialog nodes defined for the workspace. */
   var dialog_nodes: js.Array[DialogNode] = js.native
@@ -23,27 +24,15 @@ object DialogNodeCollection {
   }
   
   @scala.inline
-  implicit class DialogNodeCollectionOps[Self <: DialogNodeCollection] (val x: Self) extends AnyVal {
+  implicit class DialogNodeCollectionMutableBuilder[Self <: DialogNodeCollection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDialog_nodes(value: js.Array[DialogNode]): Self = StObject.set(x, "dialog_nodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDialog_nodesVarargs(value: DialogNode*): Self = StObject.set(x, "dialog_nodes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDialog_nodesVarargs(value: DialogNode*): Self = this.set("dialog_nodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setDialog_nodes(value: js.Array[DialogNode]): Self = this.set("dialog_nodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPagination(value: Pagination): Self = this.set("pagination", value.asInstanceOf[js.Any])
+    def setPagination(value: Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
   }
 }

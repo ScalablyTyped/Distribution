@@ -1,5 +1,6 @@
 package typings.googleapis.firebaserulesV1Mod.firebaserulesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * execution.
   */
 @js.native
-trait SchemaFunctionCall extends js.Object {
+trait SchemaFunctionCall extends StObject {
   
   /**
     * The arguments that were provided to the function.
@@ -30,33 +31,21 @@ object SchemaFunctionCall {
   }
   
   @scala.inline
-  implicit class SchemaFunctionCallOps[Self <: SchemaFunctionCall] (val x: Self) extends AnyVal {
+  implicit class SchemaFunctionCallMutableBuilder[Self <: SchemaFunctionCall] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def setArgsVarargs(value: js.Any*): Self = this.set("args", js.Array(value :_*))
+    def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: js.Array[_]): Self = this.set("args", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
-    
-    @scala.inline
-    def setFunction(value: String): Self = this.set("function", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFunction: Self = this.set("function", js.undefined)
+    def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
   }
 }

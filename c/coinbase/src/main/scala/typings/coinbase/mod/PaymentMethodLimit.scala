@@ -1,11 +1,12 @@
 package typings.coinbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaymentMethodLimit extends js.Object {
+trait PaymentMethodLimit extends StObject {
   
   var period_in_days: Double = js.native
   
@@ -22,27 +23,15 @@ object PaymentMethodLimit {
   }
   
   @scala.inline
-  implicit class PaymentMethodLimitOps[Self <: PaymentMethodLimit] (val x: Self) extends AnyVal {
+  implicit class PaymentMethodLimitMutableBuilder[Self <: PaymentMethodLimit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPeriod_in_days(value: Double): Self = StObject.set(x, "period_in_days", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRemaining(value: MoneyHash): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPeriod_in_days(value: Double): Self = this.set("period_in_days", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemaining(value: MoneyHash): Self = this.set("remaining", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal(value: MoneyHash): Self = this.set("total", value.asInstanceOf[js.Any])
+    def setTotal(value: MoneyHash): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

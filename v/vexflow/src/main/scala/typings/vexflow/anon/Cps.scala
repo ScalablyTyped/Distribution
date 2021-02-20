@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cps extends js.Object {
+trait Cps extends StObject {
   
   var cps: js.UndefOr[js.Array[X]] = js.native
   
@@ -30,54 +31,42 @@ object Cps {
   }
   
   @scala.inline
-  implicit class CpsOps[Self <: Cps] (val x: Self) extends AnyVal {
+  implicit class CpsMutableBuilder[Self <: Cps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCps(value: js.Array[X]): Self = StObject.set(x, "cps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCpsUndefined: Self = StObject.set(x, "cps", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCpsVarargs(value: X*): Self = StObject.set(x, "cps", js.Array(value :_*))
     
     @scala.inline
-    def setInvert(value: Boolean): Self = this.set("invert", value.asInstanceOf[js.Any])
+    def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: typings.vexflow.Vex.Flow.Curve.Position): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPosition(value: typings.vexflow.Vex.Flow.Curve.Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY_shift(value: Double): Self = this.set("y_shift", value.asInstanceOf[js.Any])
+    def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpsVarargs(value: X*): Self = this.set("cps", js.Array(value :_*))
+    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
     
     @scala.inline
-    def setCps(value: js.Array[X]): Self = this.set("cps", value.asInstanceOf[js.Any])
+    def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCps: Self = this.set("cps", js.undefined)
+    def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
     
     @scala.inline
-    def setSpacing(value: Double): Self = this.set("spacing", value.asInstanceOf[js.Any])
+    def setX_shift(value: Double): Self = StObject.set(x, "x_shift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpacing: Self = this.set("spacing", js.undefined)
+    def setX_shiftUndefined: Self = StObject.set(x, "x_shift", js.undefined)
     
     @scala.inline
-    def setThickness(value: Double): Self = this.set("thickness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThickness: Self = this.set("thickness", js.undefined)
-    
-    @scala.inline
-    def setX_shift(value: Double): Self = this.set("x_shift", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX_shift: Self = this.set("x_shift", js.undefined)
+    def setY_shift(value: Double): Self = StObject.set(x, "y_shift", value.asInstanceOf[js.Any])
   }
 }

@@ -2,14 +2,14 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsColumn.base", JSImport.Namespace)
-@js.native
-object detailsColumnBaseMod extends js.Object {
+object detailsColumnBaseMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsColumn.base", "DetailsColumnBase")
   @js.native
   class DetailsColumnBase protected ()
     extends Component[IDetailsColumnProps, js.Object, js.Any] {

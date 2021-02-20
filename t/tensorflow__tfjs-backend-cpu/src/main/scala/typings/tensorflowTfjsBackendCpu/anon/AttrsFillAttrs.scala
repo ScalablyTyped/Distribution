@@ -2,12 +2,13 @@ package typings.tensorflowTfjsBackendCpu.anon
 
 import typings.tensorflowTfjsBackendCpu.backendCpuMod.MathBackendCPU
 import typings.tensorflowTfjsCore.kernelNamesMod.FillAttrs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttrsFillAttrs extends js.Object {
+trait AttrsFillAttrs extends StObject {
   
   var attrs: FillAttrs = js.native
   
@@ -22,24 +23,12 @@ object AttrsFillAttrs {
   }
   
   @scala.inline
-  implicit class AttrsFillAttrsOps[Self <: AttrsFillAttrs] (val x: Self) extends AnyVal {
+  implicit class AttrsFillAttrsMutableBuilder[Self <: AttrsFillAttrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttrs(value: FillAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttrs(value: FillAttrs): Self = this.set("attrs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBackend(value: MathBackendCPU): Self = this.set("backend", value.asInstanceOf[js.Any])
+    def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
   }
 }

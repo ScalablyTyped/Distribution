@@ -1,18 +1,20 @@
 package typings.dateFns
 
 import typings.dateFns.anon.Delimiter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/formatDuration/index", JSImport.Namespace)
-@js.native
-object dateFnsFormatDurationIndexMod extends js.Object {
+object dateFnsFormatDurationIndexMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/formatDuration/index", JSImport.Default)
+    @js.native
     def apply(duration: typings.dateFns.mod.Duration): String = js.native
+    @JSImport("date-fns/formatDuration/index", JSImport.Default)
+    @js.native
     def apply(duration: typings.dateFns.mod.Duration, options: Delimiter): String = js.native
   }
 }

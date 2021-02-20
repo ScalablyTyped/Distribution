@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServiceusage.gapi.client.serviceusage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleApiServiceusageV1ServiceConfig extends js.Object {
+trait GoogleApiServiceusageV1ServiceConfig extends StObject {
   
   /** A list of API interfaces exported by this service. Contains only the names, versions, and method names of the interfaces. */
   var apis: js.UndefOr[js.Array[Api]] = js.native
@@ -46,87 +47,75 @@ object GoogleApiServiceusageV1ServiceConfig {
   }
   
   @scala.inline
-  implicit class GoogleApiServiceusageV1ServiceConfigOps[Self <: GoogleApiServiceusageV1ServiceConfig] (val x: Self) extends AnyVal {
+  implicit class GoogleApiServiceusageV1ServiceConfigMutableBuilder[Self <: GoogleApiServiceusageV1ServiceConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApis(value: js.Array[Api]): Self = StObject.set(x, "apis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApisUndefined: Self = StObject.set(x, "apis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApisVarargs(value: Api*): Self = StObject.set(x, "apis", js.Array(value :_*))
     
     @scala.inline
-    def setApisVarargs(value: Api*): Self = this.set("apis", js.Array(value :_*))
+    def setAuthentication(value: Authentication): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApis(value: js.Array[Api]): Self = this.set("apis", value.asInstanceOf[js.Any])
+    def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
     
     @scala.inline
-    def deleteApis: Self = this.set("apis", js.undefined)
+    def setDocumentation(value: Documentation): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthentication(value: Authentication): Self = this.set("authentication", value.asInstanceOf[js.Any])
+    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
     @scala.inline
-    def deleteAuthentication: Self = this.set("authentication", js.undefined)
+    def setEndpoints(value: js.Array[Endpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentation(value: Documentation): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    def setEndpointsUndefined: Self = StObject.set(x, "endpoints", js.undefined)
     
     @scala.inline
-    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
     
     @scala.inline
-    def setEndpointsVarargs(value: Endpoint*): Self = this.set("endpoints", js.Array(value :_*))
+    def setMonitoredResources(value: js.Array[MonitoredResourceDescriptor]): Self = StObject.set(x, "monitoredResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoints(value: js.Array[Endpoint]): Self = this.set("endpoints", value.asInstanceOf[js.Any])
+    def setMonitoredResourcesUndefined: Self = StObject.set(x, "monitoredResources", js.undefined)
     
     @scala.inline
-    def deleteEndpoints: Self = this.set("endpoints", js.undefined)
+    def setMonitoredResourcesVarargs(value: MonitoredResourceDescriptor*): Self = StObject.set(x, "monitoredResources", js.Array(value :_*))
     
     @scala.inline
-    def setMonitoredResourcesVarargs(value: MonitoredResourceDescriptor*): Self = this.set("monitoredResources", js.Array(value :_*))
+    def setMonitoring(value: Monitoring): Self = StObject.set(x, "monitoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitoredResources(value: js.Array[MonitoredResourceDescriptor]): Self = this.set("monitoredResources", value.asInstanceOf[js.Any])
+    def setMonitoringUndefined: Self = StObject.set(x, "monitoring", js.undefined)
     
     @scala.inline
-    def deleteMonitoredResources: Self = this.set("monitoredResources", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitoring(value: Monitoring): Self = this.set("monitoring", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMonitoring: Self = this.set("monitoring", js.undefined)
+    def setQuota(value: Quota): Self = StObject.set(x, "quota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setQuotaUndefined: Self = StObject.set(x, "quota", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuota(value: Quota): Self = this.set("quota", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteQuota: Self = this.set("quota", js.undefined)
+    def setUsage(value: Usage): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setUsage(value: Usage): Self = this.set("usage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsage: Self = this.set("usage", js.undefined)
+    def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
   }
 }

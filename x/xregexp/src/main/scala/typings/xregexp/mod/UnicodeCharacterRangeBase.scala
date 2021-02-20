@@ -1,5 +1,6 @@
 package typings.xregexp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The Unicode character range base interface.
   */
 @js.native
-trait UnicodeCharacterRangeBase extends js.Object {
+trait UnicodeCharacterRangeBase extends StObject {
   
   /**
     * An alternate name for the character range.
@@ -56,51 +57,39 @@ object UnicodeCharacterRangeBase {
   }
   
   @scala.inline
-  implicit class UnicodeCharacterRangeBaseOps[Self <: UnicodeCharacterRangeBase] (val x: Self) extends AnyVal {
+  implicit class UnicodeCharacterRangeBaseMutableBuilder[Self <: UnicodeCharacterRangeBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAstral(value: String): Self = StObject.set(x, "astral", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setAstralUndefined: Self = StObject.set(x, "astral", js.undefined)
     
     @scala.inline
-    def setAlias(value: String): Self = this.set("alias", value.asInstanceOf[js.Any])
+    def setBmp(value: String): Self = StObject.set(x, "bmp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlias: Self = this.set("alias", js.undefined)
+    def setBmpUndefined: Self = StObject.set(x, "bmp", js.undefined)
     
     @scala.inline
-    def setAstral(value: String): Self = this.set("astral", value.asInstanceOf[js.Any])
+    def setInverseOf(value: String): Self = StObject.set(x, "inverseOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAstral: Self = this.set("astral", js.undefined)
+    def setInverseOfUndefined: Self = StObject.set(x, "inverseOf", js.undefined)
     
     @scala.inline
-    def setBmp(value: String): Self = this.set("bmp", value.asInstanceOf[js.Any])
+    def setIsBmpLast(value: Boolean): Self = StObject.set(x, "isBmpLast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBmp: Self = this.set("bmp", js.undefined)
+    def setIsBmpLastUndefined: Self = StObject.set(x, "isBmpLast", js.undefined)
     
     @scala.inline
-    def setInverseOf(value: String): Self = this.set("inverseOf", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInverseOf: Self = this.set("inverseOf", js.undefined)
-    
-    @scala.inline
-    def setIsBmpLast(value: Boolean): Self = this.set("isBmpLast", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsBmpLast: Self = this.set("isBmpLast", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

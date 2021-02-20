@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.kinesis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorParameter extends js.Object {
+trait FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorParameter extends StObject {
   
   /**
     * Parameter name. Valid Values: `LambdaArn`, `NumberOfRetries`, `RoleArn`, `BufferSizeInMBs`, `BufferIntervalInSeconds`
@@ -26,24 +27,12 @@ object FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcess
   }
   
   @scala.inline
-  implicit class FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorParameterOps[Self <: FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorParameter] (val x: Self) extends AnyVal {
+  implicit class FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorParameterMutableBuilder[Self <: FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorParameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameterName(value: String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameterName(value: String): Self = this.set("parameterName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParameterValue(value: String): Self = this.set("parameterValue", value.asInstanceOf[js.Any])
+    def setParameterValue(value: String): Self = StObject.set(x, "parameterValue", value.asInstanceOf[js.Any])
   }
 }

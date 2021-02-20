@@ -1,12 +1,13 @@
 package typings.ot.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ot", "Server")
 @js.native
-class Server protected () extends js.Object {
+class Server protected () extends StObject {
   /**
     * Constructor. Takes the current document as a string and optionally the array
     * of all operations.

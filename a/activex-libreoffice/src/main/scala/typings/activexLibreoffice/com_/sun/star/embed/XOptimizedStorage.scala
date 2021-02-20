@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import typings.activexLibreoffice.com_.sun.star.io.XStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * time and will be deprecated soon! Another solution will be introduced as final one.
   */
 @js.native
-trait XOptimizedStorage extends js.Object {
+trait XOptimizedStorage extends StObject {
   
   /**
     * allows to switch storage persistence to the provided URL. The caller is responsible to be sure that the file referenced by the URL contains the same
@@ -72,39 +73,27 @@ object XOptimizedStorage {
   }
   
   @scala.inline
-  implicit class XOptimizedStorageOps[Self <: XOptimizedStorage] (val x: Self) extends AnyVal {
+  implicit class XOptimizedStorageMutableBuilder[Self <: XOptimizedStorage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachToURL(value: (String, Boolean) => Unit): Self = StObject.set(x, "attachToURL", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyElementDirectlyTo(value: (String, XOptimizedStorage, String) => Unit): Self = StObject.set(x, "copyElementDirectlyTo", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopyStreamElementData(value: (String, XStream) => Unit): Self = StObject.set(x, "copyStreamElementData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAttachToURL(value: (String, Boolean) => Unit): Self = this.set("attachToURL", js.Any.fromFunction2(value))
+    def setGetElementPropertyValue(value: (String, String) => js.Any): Self = StObject.set(x, "getElementPropertyValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCopyElementDirectlyTo(value: (String, XOptimizedStorage, String) => Unit): Self = this.set("copyElementDirectlyTo", js.Any.fromFunction3(value))
+    def setInsertRawNonEncrStreamElementDirect(value: (String, XInputStream) => Unit): Self = StObject.set(x, "insertRawNonEncrStreamElementDirect", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCopyStreamElementData(value: (String, XStream) => Unit): Self = this.set("copyStreamElementData", js.Any.fromFunction2(value))
+    def setInsertStreamElementDirect(value: (String, XInputStream, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "insertStreamElementDirect", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetElementPropertyValue(value: (String, String) => js.Any): Self = this.set("getElementPropertyValue", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setInsertRawNonEncrStreamElementDirect(value: (String, XInputStream) => Unit): Self = this.set("insertRawNonEncrStreamElementDirect", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setInsertStreamElementDirect(value: (String, XInputStream, SeqEquiv[PropertyValue]) => Unit): Self = this.set("insertStreamElementDirect", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setWriteAndAttachToStream(value: XStream => Unit): Self = this.set("writeAndAttachToStream", js.Any.fromFunction1(value))
+    def setWriteAndAttachToStream(value: XStream => Unit): Self = StObject.set(x, "writeAndAttachToStream", js.Any.fromFunction1(value))
   }
 }

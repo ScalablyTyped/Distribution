@@ -1,12 +1,13 @@
 package typings.materializeCss.M
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<MaterialboxOptions> * / any */ @js.native
-trait Materialbox extends js.Object {
+trait Materialbox extends StObject {
   
   /**
     * Caption if specified
@@ -60,39 +61,27 @@ object Materialbox {
   }
   
   @scala.inline
-  implicit class MaterialboxOps[Self <: Materialbox] (val x: Self) extends AnyVal {
+  implicit class MaterialboxMutableBuilder[Self <: Materialbox] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDoneAnimating(value: Boolean): Self = StObject.set(x, "doneAnimating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setOriginalHeight(value: Double): Self = StObject.set(x, "originalHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoneAnimating(value: Boolean): Self = this.set("doneAnimating", value.asInstanceOf[js.Any])
+    def setOriginalWidth(value: Double): Self = StObject.set(x, "originalWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: () => Unit): Self = this.set("open", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOriginalHeight(value: Double): Self = this.set("originalHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOriginalWidth(value: Double): Self = this.set("originalWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverlayActive(value: Boolean): Self = this.set("overlayActive", value.asInstanceOf[js.Any])
+    def setOverlayActive(value: Boolean): Self = StObject.set(x, "overlayActive", value.asInstanceOf[js.Any])
   }
 }

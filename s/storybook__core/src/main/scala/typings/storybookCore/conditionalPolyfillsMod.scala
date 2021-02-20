@@ -1,12 +1,13 @@
 package typings.storybookCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/core/dist/client/manager/conditional-polyfills", JSImport.Namespace)
-@js.native
-object conditionalPolyfillsMod extends js.Object {
+object conditionalPolyfillsMod {
   
+  @JSImport("@storybook/core/dist/client/manager/conditional-polyfills", "importPolyfills")
+  @js.native
   def importPolyfills(): js.Promise[js.Array[Unit]] = js.native
 }

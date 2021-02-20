@@ -3,6 +3,7 @@ package typings.relayRuntime.relayStoreTypesMod
 import typings.relayRuntime.readerNodeMod.ReaderFragment
 import typings.relayRuntime.relayRuntimeTypesMod.DataID
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,8 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.relayRuntime.relayStoreTypesMod.SingularReaderSelector
   - typings.relayRuntime.relayStoreTypesMod.PluralReaderSelector
 */
-trait ReaderSelector extends js.Object
+trait ReaderSelector extends StObject
 object ReaderSelector {
+  
+  @scala.inline
+  def PluralReaderSelector(kind: String, selectors: js.Array[SingularReaderSelector]): typings.relayRuntime.relayStoreTypesMod.PluralReaderSelector = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], selectors = selectors.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.relayRuntime.relayStoreTypesMod.PluralReaderSelector]
+  }
   
   @scala.inline
   def SingularReaderSelector(
@@ -22,14 +29,8 @@ object ReaderSelector {
     node: ReaderFragment,
     owner: RequestDescriptor,
     variables: Variables
-  ): ReaderSelector = {
+  ): typings.relayRuntime.relayStoreTypesMod.SingularReaderSelector = {
     val __obj = js.Dynamic.literal(dataID = dataID.asInstanceOf[js.Any], isWithinUnmatchedTypeRefinement = isWithinUnmatchedTypeRefinement.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ReaderSelector]
-  }
-  
-  @scala.inline
-  def PluralReaderSelector(kind: String, selectors: js.Array[SingularReaderSelector]): ReaderSelector = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], selectors = selectors.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ReaderSelector]
+    __obj.asInstanceOf[typings.relayRuntime.relayStoreTypesMod.SingularReaderSelector]
   }
 }

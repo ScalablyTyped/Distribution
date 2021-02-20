@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Graphics.Printing
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the request from the system to create a print task. This object is available from the PrintTaskRequestedEventArgs object passed to the PrintTaskRequested event. */
 @js.native
-trait PrintTaskRequest extends js.Object {
+trait PrintTaskRequest extends StObject {
   
   /**
     * Creates a new PrintTask which indicates that the app has content to be printed.
@@ -39,27 +40,15 @@ object PrintTaskRequest {
   }
   
   @scala.inline
-  implicit class PrintTaskRequestOps[Self <: PrintTaskRequest] (val x: Self) extends AnyVal {
+  implicit class PrintTaskRequestMutableBuilder[Self <: PrintTaskRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatePrintTask(value: (String, PrintTaskSourceRequestedHandler) => PrintTask): Self = StObject.set(x, "createPrintTask", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreatePrintTask(value: (String, PrintTaskSourceRequestedHandler) => PrintTask): Self = this.set("createPrintTask", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setDeadline(value: Date): Self = this.set("deadline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetDeferral(value: () => PrintTaskRequestedDeferral): Self = this.set("getDeferral", js.Any.fromFunction0(value))
+    def setGetDeferral(value: () => PrintTaskRequestedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
   }
 }

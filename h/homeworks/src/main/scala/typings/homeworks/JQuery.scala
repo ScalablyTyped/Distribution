@@ -16,12 +16,13 @@ import typings.homeworks.homeworks.TabOptions
 import typings.homeworks.homeworks.ToggleOptions
 import typings.homeworks.homeworks.UploadOptions
 import typings.jquery.JQuery.EventHandlerBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   /**
     * @since 1.0.0

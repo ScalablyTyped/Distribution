@@ -3,16 +3,16 @@ package typings.typescriptOptional
 import typings.std.NonNullable
 import typings.typescriptOptional.typesMod.Cases
 import typings.typescriptOptional.typesMod.Option
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typescript-optional/dist/optional", JSImport.Namespace)
-@js.native
-object optionalMod extends js.Object {
+object optionalMod {
   
+  @JSImport("typescript-optional/dist/optional", "Optional")
   @js.native
-  abstract class Optional[T] () extends js.Object {
+  abstract class Optional[T] () extends StObject {
     
     def filter(predicate: js.Function1[/* value */ T, Boolean]): Optional[T] = js.native
     
@@ -49,18 +49,29 @@ object optionalMod extends js.Object {
     def toOption(): Option[T] = js.native
   }
   /* static members */
-  @js.native
-  object Optional extends js.Object {
+  object Optional {
     
+    @JSImport("typescript-optional/dist/optional", "Optional.empty")
+    @js.native
     def empty[T](): Optional[T] = js.native
     
+    @JSImport("typescript-optional/dist/optional", "Optional.from")
+    @js.native
     def from[T](option: Option[T]): Optional[T] = js.native
     
+    @JSImport("typescript-optional/dist/optional", "Optional.of")
+    @js.native
     def of[T](value: T): Optional[T] = js.native
     
+    @JSImport("typescript-optional/dist/optional", "Optional.ofNonNull")
+    @js.native
     def ofNonNull[T](value: T): Optional[T] = js.native
     
+    @JSImport("typescript-optional/dist/optional", "Optional.ofNullable")
+    @js.native
     def ofNullable[T](): Optional[T] = js.native
+    @JSImport("typescript-optional/dist/optional", "Optional.ofNullable")
+    @js.native
     def ofNullable[T](nullable: T): Optional[T] = js.native
   }
 }

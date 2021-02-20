@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewpointProperties extends js.Object {
+trait ViewpointProperties extends StObject {
   
   /**
     * The viewpoint camera (3D only).
@@ -44,42 +45,30 @@ object ViewpointProperties {
   }
   
   @scala.inline
-  implicit class ViewpointPropertiesOps[Self <: ViewpointProperties] (val x: Self) extends AnyVal {
+  implicit class ViewpointPropertiesMutableBuilder[Self <: ViewpointProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCamera(value: CameraProperties): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCamera(value: CameraProperties): Self = this.set("camera", value.asInstanceOf[js.Any])
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def deleteCamera: Self = this.set("camera", js.undefined)
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setTargetGeometry(value: GeometryProperties): Self = StObject.set(x, "targetGeometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
-    
-    @scala.inline
-    def setTargetGeometry(value: GeometryProperties): Self = this.set("targetGeometry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetGeometry: Self = this.set("targetGeometry", js.undefined)
+    def setTargetGeometryUndefined: Self = StObject.set(x, "targetGeometry", js.undefined)
   }
 }

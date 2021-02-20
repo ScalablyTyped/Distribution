@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CodeAction extends js.Object {
+trait CodeAction extends StObject {
   
   /** Text changes to apply to each file as part of the code action */
   var changes: js.Array[FileTextChanges] = js.native
@@ -28,36 +29,24 @@ object CodeAction {
   }
   
   @scala.inline
-  implicit class CodeActionOps[Self <: CodeAction] (val x: Self) extends AnyVal {
+  implicit class CodeActionMutableBuilder[Self <: CodeAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChanges(value: js.Array[FileTextChanges]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangesVarargs(value: FileTextChanges*): Self = StObject.set(x, "changes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommands(value: js.Array[CodeActionCommand]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangesVarargs(value: FileTextChanges*): Self = this.set("changes", js.Array(value :_*))
+    def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
     
     @scala.inline
-    def setChanges(value: js.Array[FileTextChanges]): Self = this.set("changes", value.asInstanceOf[js.Any])
+    def setCommandsVarargs(value: CodeActionCommand*): Self = StObject.set(x, "commands", js.Array(value :_*))
     
     @scala.inline
-    def setDescription(value: java.lang.String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCommandsVarargs(value: CodeActionCommand*): Self = this.set("commands", js.Array(value :_*))
-    
-    @scala.inline
-    def setCommands(value: js.Array[CodeActionCommand]): Self = this.set("commands", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCommands: Self = this.set("commands", js.undefined)
+    def setDescription(value: java.lang.String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
   }
 }

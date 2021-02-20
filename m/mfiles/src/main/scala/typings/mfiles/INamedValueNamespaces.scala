@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait INamedValueNamespaces extends js.Object {
+trait INamedValueNamespaces extends StObject {
   
   def Add(Index: Double, NamedValueNamespace: INamedValueNamespace): Unit = js.native
   

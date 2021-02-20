@@ -2,12 +2,13 @@ package typings.vis.mod
 
 import typings.std.Date
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimelineEventPropertiesResult extends js.Object {
+trait TimelineEventPropertiesResult extends StObject {
   
   /**
     * The original click event.
@@ -68,63 +69,51 @@ object TimelineEventPropertiesResult {
   }
   
   @scala.inline
-  implicit class TimelineEventPropertiesResultOps[Self <: TimelineEventPropertiesResult] (val x: Self) extends AnyVal {
+  implicit class TimelineEventPropertiesResultMutableBuilder[Self <: TimelineEventPropertiesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroup(value: Double): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupNull: Self = StObject.set(x, "group", null)
     
     @scala.inline
-    def setEvent(value: Event): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def setPageX(value: Double): Self = this.set("pageX", value.asInstanceOf[js.Any])
+    def setItem(value: IdType): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageY(value: Double): Self = this.set("pageY", value.asInstanceOf[js.Any])
+    def setItemNull: Self = StObject.set(x, "item", null)
     
     @scala.inline
-    def setSnappedTime(value: Date): Self = this.set("snappedTime", value.asInstanceOf[js.Any])
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
     @scala.inline
-    def setTime(value: Date): Self = this.set("time", value.asInstanceOf[js.Any])
+    def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setSnappedTime(value: Date): Self = StObject.set(x, "snappedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: Double): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setWhat(value: TimelineEventPropertiesResultWhatType): Self = StObject.set(x, "what", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupNull: Self = this.set("group", null)
+    def setWhatUndefined: Self = StObject.set(x, "what", js.undefined)
     
     @scala.inline
-    def setItem(value: IdType): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
-    
-    @scala.inline
-    def setItemNull: Self = this.set("item", null)
-    
-    @scala.inline
-    def setWhat(value: TimelineEventPropertiesResultWhatType): Self = this.set("what", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhat: Self = this.set("what", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

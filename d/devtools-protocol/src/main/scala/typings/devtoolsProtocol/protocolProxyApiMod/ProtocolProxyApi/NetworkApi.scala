@@ -76,12 +76,13 @@ import typings.devtoolsProtocol.mod.Protocol.Network.WebSocketFrameReceivedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.WebSocketFrameSentEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.WebSocketHandshakeResponseReceivedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.WebSocketWillSendHandshakeRequestEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkApi extends js.Object {
+trait NetworkApi extends StObject {
   
   /**
     * Tells whether clearing browser cache is supported.

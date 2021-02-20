@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,42 +61,30 @@ object ISeparatedSyntaxList2 {
   }
   
   @scala.inline
-  implicit class ISeparatedSyntaxList2Ops[Self <: ISeparatedSyntaxList2] (val x: Self) extends AnyVal {
+  implicit class ISeparatedSyntaxList2MutableBuilder[Self <: ISeparatedSyntaxList2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMembers(value: js.Any): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNonSeparatorAt(value: Double => AST): Self = StObject.set(x, "nonSeparatorAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNonSeparatorCount(value: () => Double): Self = StObject.set(x, "nonSeparatorCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_fileName(value: js.Any): Self = this.set("_fileName", value.asInstanceOf[js.Any])
+    def setNonSeparatorIndexOf(value: AST => Double): Self = StObject.set(x, "nonSeparatorIndexOf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_separatorCount(value: js.Any): Self = this.set("_separatorCount", value.asInstanceOf[js.Any])
+    def setSeparatorCount(value: () => Double): Self = StObject.set(x, "separatorCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMembers(value: js.Any): Self = this.set("members", value.asInstanceOf[js.Any])
+    def setStructuralEquals(value: (ISeparatedSyntaxList2, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNonSeparatorAt(value: Double => AST): Self = this.set("nonSeparatorAt", js.Any.fromFunction1(value))
+    def set_fileName(value: js.Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonSeparatorCount(value: () => Double): Self = this.set("nonSeparatorCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setNonSeparatorIndexOf(value: AST => Double): Self = this.set("nonSeparatorIndexOf", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSeparatorCount(value: () => Double): Self = this.set("separatorCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStructuralEquals(value: (ISeparatedSyntaxList2, Boolean) => Boolean): Self = this.set("structuralEquals", js.Any.fromFunction2(value))
+    def set_separatorCount(value: js.Any): Self = StObject.set(x, "_separatorCount", value.asInstanceOf[js.Any])
   }
 }

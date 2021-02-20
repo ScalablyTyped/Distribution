@@ -1,11 +1,12 @@
 package typings.awsSdk.mediapackagevodMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAssetsResponse extends js.Object {
+trait ListAssetsResponse extends StObject {
   
   /**
     * A list of MediaPackage VOD Asset resources.
@@ -26,33 +27,21 @@ object ListAssetsResponse {
   }
   
   @scala.inline
-  implicit class ListAssetsResponseOps[Self <: ListAssetsResponse] (val x: Self) extends AnyVal {
+  implicit class ListAssetsResponseMutableBuilder[Self <: ListAssetsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssets(value: listOfAssetShallow): Self = StObject.set(x, "Assets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetsUndefined: Self = StObject.set(x, "Assets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssetsVarargs(value: AssetShallow*): Self = StObject.set(x, "Assets", js.Array(value :_*))
     
     @scala.inline
-    def setAssetsVarargs(value: AssetShallow*): Self = this.set("Assets", js.Array(value :_*))
+    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssets(value: listOfAssetShallow): Self = this.set("Assets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssets: Self = this.set("Assets", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

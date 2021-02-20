@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAutomationExecutionsResult extends js.Object {
+trait DescribeAutomationExecutionsResult extends StObject {
   
   /**
     * The list of details about each automation execution which has occurred which matches the filter specification, if any.
@@ -26,33 +27,21 @@ object DescribeAutomationExecutionsResult {
   }
   
   @scala.inline
-  implicit class DescribeAutomationExecutionsResultOps[Self <: DescribeAutomationExecutionsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeAutomationExecutionsResultMutableBuilder[Self <: DescribeAutomationExecutionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomationExecutionMetadataList(value: AutomationExecutionMetadataList): Self = StObject.set(x, "AutomationExecutionMetadataList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutomationExecutionMetadataListUndefined: Self = StObject.set(x, "AutomationExecutionMetadataList", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutomationExecutionMetadataListVarargs(value: AutomationExecutionMetadata*): Self = StObject.set(x, "AutomationExecutionMetadataList", js.Array(value :_*))
     
     @scala.inline
-    def setAutomationExecutionMetadataListVarargs(value: AutomationExecutionMetadata*): Self = this.set("AutomationExecutionMetadataList", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomationExecutionMetadataList(value: AutomationExecutionMetadataList): Self = this.set("AutomationExecutionMetadataList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutomationExecutionMetadataList: Self = this.set("AutomationExecutionMetadataList", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

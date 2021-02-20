@@ -3,12 +3,13 @@ package typings.yui
 import typings.yui.Y.IConfig
 import typings.yui.YUITest.IAssert
 import typings.yui.YUITest.YUITestStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait YUI extends js.Object {
+trait YUI extends StObject {
   
   var Assert: IAssert = js.native
   

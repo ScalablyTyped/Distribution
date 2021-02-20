@@ -4,12 +4,13 @@ import typings.chromeApps.chrome.contextMenus.CreateProperties
 import typings.chromeApps.chrome.contextMenus.MenuClickedEvent
 import typings.chromeApps.chrome.contextMenus.UpdateProperties
 import typings.chromeApps.chrome.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofcontextMenus extends js.Object {
+trait TypeofcontextMenus extends StObject {
   
   /**
     * @since Chrome 38.

@@ -1,11 +1,12 @@
 package typings.awsSdk.workdocsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationOptions extends js.Object {
+trait NotificationOptions extends StObject {
   
   /**
     * Text value to be included in the email body.
@@ -26,30 +27,18 @@ object NotificationOptions {
   }
   
   @scala.inline
-  implicit class NotificationOptionsOps[Self <: NotificationOptions] (val x: Self) extends AnyVal {
+  implicit class NotificationOptionsMutableBuilder[Self <: NotificationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmailMessage(value: MessageType): Self = StObject.set(x, "EmailMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailMessageUndefined: Self = StObject.set(x, "EmailMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSendEmail(value: BooleanType): Self = StObject.set(x, "SendEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailMessage(value: MessageType): Self = this.set("EmailMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmailMessage: Self = this.set("EmailMessage", js.undefined)
-    
-    @scala.inline
-    def setSendEmail(value: BooleanType): Self = this.set("SendEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSendEmail: Self = this.set("SendEmail", js.undefined)
+    def setSendEmailUndefined: Self = StObject.set(x, "SendEmail", js.undefined)
   }
 }

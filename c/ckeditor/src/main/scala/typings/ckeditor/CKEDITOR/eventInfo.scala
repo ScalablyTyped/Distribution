@@ -1,12 +1,13 @@
 package typings.ckeditor.CKEDITOR
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait eventInfo extends js.Object {
+trait eventInfo extends StObject {
   
   def cancel(): Unit = js.native
   
@@ -42,42 +43,30 @@ object eventInfo {
   }
   
   @scala.inline
-  implicit class eventInfoOps[Self <: eventInfo] (val x: Self) extends AnyVal {
+  implicit class eventInfoMutableBuilder[Self <: eventInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEditor(value: editor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: () => Unit): Self = this.set("cancel", js.Any.fromFunction0(value))
+    def setListenerData(value: js.Any): Self = StObject.set(x, "listenerData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditor(value: editor): Self = this.set("editor", value.asInstanceOf[js.Any])
+    def setRemoveListener(value: () => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setListenerData(value: js.Any): Self = this.set("listenerData", value.asInstanceOf[js.Any])
+    def setSender(value: StringDictionary[js.Any]): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveListener(value: () => Unit): Self = this.set("removeListener", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSender(value: StringDictionary[js.Any]): Self = this.set("sender", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStop(value: () => Unit): Self = this.set("stop", js.Any.fromFunction0(value))
+    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

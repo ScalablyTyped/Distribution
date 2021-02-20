@@ -6,12 +6,13 @@ import typings.chrome.chrome.notifications.NotificationClosedEvent
 import typings.chrome.chrome.notifications.NotificationOptions
 import typings.chrome.chrome.notifications.NotificationPermissionLevelChangedEvent
 import typings.chrome.chrome.notifications.NotificationShowSettingsEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofnotifications extends js.Object {
+trait Typeofnotifications extends StObject {
   
   def clear(notificationId: String): Unit = js.native
   def clear(notificationId: String, callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = js.native

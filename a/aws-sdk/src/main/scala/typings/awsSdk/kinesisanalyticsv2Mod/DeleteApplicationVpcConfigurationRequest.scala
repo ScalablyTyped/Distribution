@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteApplicationVpcConfigurationRequest extends js.Object {
+trait DeleteApplicationVpcConfigurationRequest extends StObject {
   
   /**
     * The name of an existing application.
@@ -35,27 +36,15 @@ object DeleteApplicationVpcConfigurationRequest {
   }
   
   @scala.inline
-  implicit class DeleteApplicationVpcConfigurationRequestOps[Self <: DeleteApplicationVpcConfigurationRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteApplicationVpcConfigurationRequestMutableBuilder[Self <: DeleteApplicationVpcConfigurationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = this.set("CurrentApplicationVersionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVpcConfigurationId(value: Id): Self = this.set("VpcConfigurationId", value.asInstanceOf[js.Any])
+    def setVpcConfigurationId(value: Id): Self = StObject.set(x, "VpcConfigurationId", value.asInstanceOf[js.Any])
   }
 }

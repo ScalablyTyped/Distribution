@@ -1,12 +1,13 @@
 package typings.numeral
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://numeraljs.com/#use-it
 @js.native
-trait Numeral extends js.Object {
+trait Numeral extends StObject {
   
   def apply(): Numeral = js.native
   def apply(value: js.Any): Numeral = js.native

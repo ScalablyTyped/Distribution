@@ -1,11 +1,12 @@
 package typings.activexAccess.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StatusCode extends js.Object {
+trait StatusCode extends StObject {
   
   var Cancel: Boolean = js.native
   
@@ -26,36 +27,24 @@ object StatusCode {
   }
   
   @scala.inline
-  implicit class StatusCodeOps[Self <: StatusCode] (val x: Self) extends AnyVal {
+  implicit class StatusCodeMutableBuilder[Self <: StatusCode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPDisp(value: js.Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatusCode(value: js.Any): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: Boolean): Self = this.set("Cancel", value.asInstanceOf[js.Any])
+    def setTargetFrameName(value: String): Self = StObject.set(x, "TargetFrameName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusCode(value: js.Any): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
+    def setTargetFrameNameNull: Self = StObject.set(x, "TargetFrameName", null)
     
     @scala.inline
-    def setURL(value: String): Self = this.set("URL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPDisp(value: js.Any): Self = this.set("pDisp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetFrameName(value: String): Self = this.set("TargetFrameName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetFrameNameNull: Self = this.set("TargetFrameName", null)
+    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

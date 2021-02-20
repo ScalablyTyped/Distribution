@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableColumnProperties extends js.Object {
+trait TableColumnProperties extends StObject {
   
   /** The width of the column. Set when the column's `width_type` is FIXED_WIDTH. */
   var width: js.UndefOr[Dimension] = js.native
@@ -22,30 +23,18 @@ object TableColumnProperties {
   }
   
   @scala.inline
-  implicit class TableColumnPropertiesOps[Self <: TableColumnProperties] (val x: Self) extends AnyVal {
+  implicit class TableColumnPropertiesMutableBuilder[Self <: TableColumnProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWidth(value: Dimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWidthType(value: String): Self = StObject.set(x, "widthType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWidthTypeUndefined: Self = StObject.set(x, "widthType", js.undefined)
     
     @scala.inline
-    def setWidth(value: Dimension): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setWidthType(value: String): Self = this.set("widthType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidthType: Self = this.set("widthType", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.fineUploader.coreMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChunkData extends js.Object {
+trait ChunkData extends StObject {
   
   /**
     * the last byte of the current chunk
@@ -36,30 +37,18 @@ object ChunkData {
   }
   
   @scala.inline
-  implicit class ChunkDataOps[Self <: ChunkData] (val x: Self) extends AnyVal {
+  implicit class ChunkDataMutableBuilder[Self <: ChunkData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndByte(value: Double): Self = StObject.set(x, "endByte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPartIndex(value: Double): Self = StObject.set(x, "partIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartByte(value: Double): Self = StObject.set(x, "startByte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndByte(value: Double): Self = this.set("endByte", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPartIndex(value: Double): Self = this.set("partIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartByte(value: Double): Self = this.set("startByte", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalParts(value: Double): Self = this.set("totalParts", value.asInstanceOf[js.Any])
+    def setTotalParts(value: Double): Self = StObject.set(x, "totalParts", value.asInstanceOf[js.Any])
   }
 }

@@ -24,16 +24,16 @@ import typings.typeorm.metadataArgsTransactionEntityMetadataArgsMod.TransactionE
 import typings.typeorm.metadataArgsTransactionRepositoryMetadataArgsMod.TransactionRepositoryMetadataArgs
 import typings.typeorm.metadataArgsTreeMetadataArgsMod.TreeMetadataArgs
 import typings.typeorm.metadataArgsUniqueMetadataArgsMod.UniqueMetadataArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/metadata-args/MetadataArgsStorage", JSImport.Namespace)
-@js.native
-object metadataArgsMetadataArgsStorageMod extends js.Object {
+object metadataArgsMetadataArgsStorageMod {
   
+  @JSImport("typeorm/metadata-args/MetadataArgsStorage", "MetadataArgsStorage")
   @js.native
-  class MetadataArgsStorage () extends js.Object {
+  class MetadataArgsStorage () extends StObject {
     
     val checks: js.Array[CheckMetadataArgs] = js.native
     

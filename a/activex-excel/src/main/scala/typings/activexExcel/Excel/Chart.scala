@@ -58,6 +58,7 @@ import typings.activexOffice.Office.MsoLanguageID
 import typings.activexOffice.Office.Script
 import typings.activexOffice.Office.Scripts
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

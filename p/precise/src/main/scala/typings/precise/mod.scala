@@ -1,17 +1,19 @@
 package typings.precise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("precise", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("precise", JSImport.Namespace)
+  @js.native
   def apply(): Precise = js.native
   
+  @JSImport("precise", "Precise")
   @js.native
-  class Precise () extends js.Object {
+  class Precise () extends StObject {
     
     /**
       * Returns the nanoseconds from `start()` to `stop()`

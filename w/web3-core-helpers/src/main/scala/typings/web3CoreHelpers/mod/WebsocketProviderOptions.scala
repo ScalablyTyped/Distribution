@@ -1,11 +1,12 @@
 package typings.web3CoreHelpers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebsocketProviderOptions extends js.Object {
+trait WebsocketProviderOptions extends StObject {
   
   var clientConfig: js.UndefOr[js.Object] = js.native
   
@@ -34,72 +35,60 @@ object WebsocketProviderOptions {
   }
   
   @scala.inline
-  implicit class WebsocketProviderOptionsOps[Self <: WebsocketProviderOptions] (val x: Self) extends AnyVal {
+  implicit class WebsocketProviderOptionsMutableBuilder[Self <: WebsocketProviderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientConfig(value: js.Object): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientConfigUndefined: Self = StObject.set(x, "clientConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientConfig(value: js.Object): Self = this.set("clientConfig", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteClientConfig: Self = this.set("clientConfig", js.undefined)
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def setReconnect(value: ReconnectOptions): Self = StObject.set(x, "reconnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setReconnectDelay(value: Double): Self = StObject.set(x, "reconnectDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    def setReconnectDelayUndefined: Self = StObject.set(x, "reconnectDelay", js.undefined)
     
     @scala.inline
-    def setReconnect(value: ReconnectOptions): Self = this.set("reconnect", value.asInstanceOf[js.Any])
+    def setReconnectUndefined: Self = StObject.set(x, "reconnect", js.undefined)
     
     @scala.inline
-    def deleteReconnect: Self = this.set("reconnect", js.undefined)
+    def setRequestOptions(value: js.Any): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReconnectDelay(value: Double): Self = this.set("reconnectDelay", value.asInstanceOf[js.Any])
+    def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
     
     @scala.inline
-    def deleteReconnectDelay: Self = this.set("reconnectDelay", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestOptions(value: js.Any): Self = this.set("requestOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestOptions: Self = this.set("requestOptions", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

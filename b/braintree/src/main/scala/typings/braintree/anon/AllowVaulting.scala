@@ -1,12 +1,13 @@
 package typings.braintree.anon
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowVaulting extends js.Object {
+trait AllowVaulting extends StObject {
   
   var allowVaulting: js.UndefOr[Boolean] = js.native
   
@@ -23,36 +24,24 @@ object AllowVaulting {
   }
   
   @scala.inline
-  implicit class AllowVaultingOps[Self <: AllowVaulting] (val x: Self) extends AnyVal {
+  implicit class AllowVaultingMutableBuilder[Self <: AllowVaulting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowVaulting(value: Boolean): Self = StObject.set(x, "allowVaulting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowVaultingUndefined: Self = StObject.set(x, "allowVaulting", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeBillingPostalCode(value: Boolean): Self = StObject.set(x, "includeBillingPostalCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowVaulting(value: Boolean): Self = this.set("allowVaulting", value.asInstanceOf[js.Any])
+    def setIncludeBillingPostalCodeUndefined: Self = StObject.set(x, "includeBillingPostalCode", js.undefined)
     
     @scala.inline
-    def deleteAllowVaulting: Self = this.set("allowVaulting", js.undefined)
+    def setRevokeAfter(value: Date): Self = StObject.set(x, "revokeAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeBillingPostalCode(value: Boolean): Self = this.set("includeBillingPostalCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeBillingPostalCode: Self = this.set("includeBillingPostalCode", js.undefined)
-    
-    @scala.inline
-    def setRevokeAfter(value: Date): Self = this.set("revokeAfter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevokeAfter: Self = this.set("revokeAfter", js.undefined)
+    def setRevokeAfterUndefined: Self = StObject.set(x, "revokeAfter", js.undefined)
   }
 }

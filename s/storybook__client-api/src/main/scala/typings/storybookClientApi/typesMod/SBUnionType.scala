@@ -1,6 +1,7 @@
 package typings.storybookClientApi.typesMod
 
 import typings.storybookClientApi.storybookClientApiStrings.union
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,39 +27,27 @@ object SBUnionType {
   }
   
   @scala.inline
-  implicit class SBUnionTypeOps[Self <: SBUnionType] (val x: Self) extends AnyVal {
+  implicit class SBUnionTypeMutableBuilder[Self <: SBUnionType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: union): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
     @scala.inline
-    def setName(value: union): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueVarargs(value: SBType*): Self = this.set("value", js.Array(value :_*))
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def setValue(value: js.Array[SBType]): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Array[SBType]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaw(value: String): Self = this.set("raw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRaw: Self = this.set("raw", js.undefined)
-    
-    @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setValueVarargs(value: SBType*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

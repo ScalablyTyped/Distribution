@@ -1,6 +1,7 @@
 package typings.node.childProcessMod
 
 import typings.node.nodeStrings.buffer_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,27 +21,15 @@ object SpawnSyncOptionsWithBufferEncoding {
   }
   
   @scala.inline
-  implicit class SpawnSyncOptionsWithBufferEncodingOps[Self <: SpawnSyncOptionsWithBufferEncoding] (val x: Self) extends AnyVal {
+  implicit class SpawnSyncOptionsWithBufferEncodingMutableBuilder[Self <: SpawnSyncOptionsWithBufferEncoding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncoding(value: buffer_): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncodingNull: Self = StObject.set(x, "encoding", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEncoding(value: buffer_): Self = this.set("encoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
-    
-    @scala.inline
-    def setEncodingNull: Self = this.set("encoding", null)
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
   }
 }

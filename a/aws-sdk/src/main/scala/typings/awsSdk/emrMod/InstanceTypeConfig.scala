@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceTypeConfig extends js.Object {
+trait InstanceTypeConfig extends StObject {
   
   /**
     * The bid price for each EC2 Spot instance type as defined by InstanceType. Expressed in USD. If neither BidPrice nor BidPriceAsPercentageOfOnDemandPrice is provided, BidPriceAsPercentageOfOnDemandPrice defaults to 100%. 
@@ -46,54 +47,42 @@ object InstanceTypeConfig {
   }
   
   @scala.inline
-  implicit class InstanceTypeConfigOps[Self <: InstanceTypeConfig] (val x: Self) extends AnyVal {
+  implicit class InstanceTypeConfigMutableBuilder[Self <: InstanceTypeConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBidPrice(value: XmlStringMaxLen256): Self = StObject.set(x, "BidPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBidPriceAsPercentageOfOnDemandPrice(value: NonNegativeDouble): Self = StObject.set(x, "BidPriceAsPercentageOfOnDemandPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBidPriceAsPercentageOfOnDemandPriceUndefined: Self = StObject.set(x, "BidPriceAsPercentageOfOnDemandPrice", js.undefined)
     
     @scala.inline
-    def setInstanceType(value: InstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    def setBidPriceUndefined: Self = StObject.set(x, "BidPrice", js.undefined)
     
     @scala.inline
-    def setBidPrice(value: XmlStringMaxLen256): Self = this.set("BidPrice", value.asInstanceOf[js.Any])
+    def setConfigurations(value: ConfigurationList): Self = StObject.set(x, "Configurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBidPrice: Self = this.set("BidPrice", js.undefined)
+    def setConfigurationsUndefined: Self = StObject.set(x, "Configurations", js.undefined)
     
     @scala.inline
-    def setBidPriceAsPercentageOfOnDemandPrice(value: NonNegativeDouble): Self = this.set("BidPriceAsPercentageOfOnDemandPrice", value.asInstanceOf[js.Any])
+    def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "Configurations", js.Array(value :_*))
     
     @scala.inline
-    def deleteBidPriceAsPercentageOfOnDemandPrice: Self = this.set("BidPriceAsPercentageOfOnDemandPrice", js.undefined)
+    def setEbsConfiguration(value: EbsConfiguration): Self = StObject.set(x, "EbsConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationsVarargs(value: Configuration*): Self = this.set("Configurations", js.Array(value :_*))
+    def setEbsConfigurationUndefined: Self = StObject.set(x, "EbsConfiguration", js.undefined)
     
     @scala.inline
-    def setConfigurations(value: ConfigurationList): Self = this.set("Configurations", value.asInstanceOf[js.Any])
+    def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfigurations: Self = this.set("Configurations", js.undefined)
+    def setWeightedCapacity(value: WholeNumber): Self = StObject.set(x, "WeightedCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEbsConfiguration(value: EbsConfiguration): Self = this.set("EbsConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEbsConfiguration: Self = this.set("EbsConfiguration", js.undefined)
-    
-    @scala.inline
-    def setWeightedCapacity(value: WholeNumber): Self = this.set("WeightedCapacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeightedCapacity: Self = this.set("WeightedCapacity", js.undefined)
+    def setWeightedCapacityUndefined: Self = StObject.set(x, "WeightedCapacity", js.undefined)
   }
 }

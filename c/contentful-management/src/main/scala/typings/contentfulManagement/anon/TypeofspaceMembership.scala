@@ -5,12 +5,13 @@ import typings.contentfulManagement.commonTypesMod.Collection
 import typings.contentfulManagement.commonTypesMod.CollectionProp
 import typings.contentfulManagement.spaceMembershipMod.SpaceMembership
 import typings.contentfulManagement.spaceMembershipMod.SpaceMembershipProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofspaceMembership extends js.Object {
+trait TypeofspaceMembership extends StObject {
   
   def wrapSpaceMembership(http: AxiosInstance, data: SpaceMembershipProps): SpaceMembership = js.native
   
@@ -28,26 +29,14 @@ object TypeofspaceMembership {
   }
   
   @scala.inline
-  implicit class TypeofspaceMembershipOps[Self <: TypeofspaceMembership] (val x: Self) extends AnyVal {
+  implicit class TypeofspaceMembershipMutableBuilder[Self <: TypeofspaceMembership] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWrapSpaceMembership(value: (AxiosInstance, SpaceMembershipProps) => SpaceMembership): Self = this.set("wrapSpaceMembership", js.Any.fromFunction2(value))
+    def setWrapSpaceMembership(value: (AxiosInstance, SpaceMembershipProps) => SpaceMembership): Self = StObject.set(x, "wrapSpaceMembership", js.Any.fromFunction2(value))
     
     @scala.inline
     def setWrapSpaceMembershipCollection(
       value: (AxiosInstance, CollectionProp[SpaceMembershipProps]) => Collection[SpaceMembership, SpaceMembershipProps]
-    ): Self = this.set("wrapSpaceMembershipCollection", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "wrapSpaceMembershipCollection", js.Any.fromFunction2(value))
   }
 }

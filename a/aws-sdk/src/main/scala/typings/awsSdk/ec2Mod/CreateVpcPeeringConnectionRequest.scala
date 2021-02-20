@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateVpcPeeringConnectionRequest extends js.Object {
+trait CreateVpcPeeringConnectionRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -46,57 +47,45 @@ object CreateVpcPeeringConnectionRequest {
   }
   
   @scala.inline
-  implicit class CreateVpcPeeringConnectionRequestOps[Self <: CreateVpcPeeringConnectionRequest] (val x: Self) extends AnyVal {
+  implicit class CreateVpcPeeringConnectionRequestMutableBuilder[Self <: CreateVpcPeeringConnectionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPeerOwnerId(value: String): Self = StObject.set(x, "PeerOwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setPeerOwnerIdUndefined: Self = StObject.set(x, "PeerOwnerId", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setPeerRegion(value: String): Self = StObject.set(x, "PeerRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeerOwnerId(value: String): Self = this.set("PeerOwnerId", value.asInstanceOf[js.Any])
+    def setPeerRegionUndefined: Self = StObject.set(x, "PeerRegion", js.undefined)
     
     @scala.inline
-    def deletePeerOwnerId: Self = this.set("PeerOwnerId", js.undefined)
+    def setPeerVpcId(value: String): Self = StObject.set(x, "PeerVpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeerRegion(value: String): Self = this.set("PeerRegion", value.asInstanceOf[js.Any])
+    def setPeerVpcIdUndefined: Self = StObject.set(x, "PeerVpcId", js.undefined)
     
     @scala.inline
-    def deletePeerRegion: Self = this.set("PeerRegion", js.undefined)
+    def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeerVpcId(value: String): Self = this.set("PeerVpcId", value.asInstanceOf[js.Any])
+    def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
     @scala.inline
-    def deletePeerVpcId: Self = this.set("PeerVpcId", js.undefined)
+    def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
     
     @scala.inline
-    def setTagSpecificationsVarargs(value: TagSpecification*): Self = this.set("TagSpecifications", js.Array(value :_*))
+    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagSpecifications(value: TagSpecificationList): Self = this.set("TagSpecifications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagSpecifications: Self = this.set("TagSpecifications", js.undefined)
-    
-    @scala.inline
-    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

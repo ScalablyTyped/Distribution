@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResizeClusterMessage extends js.Object {
+trait ResizeClusterMessage extends StObject {
   
   /**
     * A boolean value indicating whether the resize operation is using the classic resize process. If you don't provide this parameter or set the value to false, the resize type is elastic. 
@@ -41,45 +42,33 @@ object ResizeClusterMessage {
   }
   
   @scala.inline
-  implicit class ResizeClusterMessageOps[Self <: ResizeClusterMessage] (val x: Self) extends AnyVal {
+  implicit class ResizeClusterMessageMutableBuilder[Self <: ResizeClusterMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassic(value: BooleanOptional): Self = StObject.set(x, "Classic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassicUndefined: Self = StObject.set(x, "Classic", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    def setClusterType(value: String): Self = StObject.set(x, "ClusterType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassic(value: BooleanOptional): Self = this.set("Classic", value.asInstanceOf[js.Any])
+    def setClusterTypeUndefined: Self = StObject.set(x, "ClusterType", js.undefined)
     
     @scala.inline
-    def deleteClassic: Self = this.set("Classic", js.undefined)
+    def setNodeType(value: String): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterType(value: String): Self = this.set("ClusterType", value.asInstanceOf[js.Any])
+    def setNodeTypeUndefined: Self = StObject.set(x, "NodeType", js.undefined)
     
     @scala.inline
-    def deleteClusterType: Self = this.set("ClusterType", js.undefined)
+    def setNumberOfNodes(value: Integer): Self = StObject.set(x, "NumberOfNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeType(value: String): Self = this.set("NodeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeType: Self = this.set("NodeType", js.undefined)
-    
-    @scala.inline
-    def setNumberOfNodes(value: Integer): Self = this.set("NumberOfNodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfNodes: Self = this.set("NumberOfNodes", js.undefined)
+    def setNumberOfNodesUndefined: Self = StObject.set(x, "NumberOfNodes", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.mapboxMapboxSdk.directionsMod
 
 import typings.geojson.mod.LineString
 import typings.geojson.mod.MultiLineString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Route extends js.Object {
+trait Route extends StObject {
   
   /**
     * Float indicating the distance traveled in meters.
@@ -63,45 +64,33 @@ object Route {
   }
   
   @scala.inline
-  implicit class RouteOps[Self <: Route] (val x: Self) extends AnyVal {
+  implicit class RouteMutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeometry(value: LineString | MultiLineString): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setLegs(value: js.Array[Leg]): Self = StObject.set(x, "legs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setLegsVarargs(value: Leg*): Self = StObject.set(x, "legs", js.Array(value :_*))
     
     @scala.inline
-    def setGeometry(value: LineString | MultiLineString): Self = this.set("geometry", value.asInstanceOf[js.Any])
+    def setVoiceLocale(value: String): Self = StObject.set(x, "voiceLocale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegsVarargs(value: Leg*): Self = this.set("legs", js.Array(value :_*))
+    def setVoiceLocaleUndefined: Self = StObject.set(x, "voiceLocale", js.undefined)
     
     @scala.inline
-    def setLegs(value: js.Array[Leg]): Self = this.set("legs", value.asInstanceOf[js.Any])
+    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeight_name(value: String): Self = this.set("weight_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVoiceLocale(value: String): Self = this.set("voiceLocale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoiceLocale: Self = this.set("voiceLocale", js.undefined)
+    def setWeight_name(value: String): Self = StObject.set(x, "weight_name", value.asInstanceOf[js.Any])
   }
 }

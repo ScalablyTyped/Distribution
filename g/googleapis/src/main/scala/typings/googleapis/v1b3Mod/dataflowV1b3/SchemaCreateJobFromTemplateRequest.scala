@@ -1,6 +1,7 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A request to create a Cloud Dataflow job from a template.
   */
 @js.native
-trait SchemaCreateJobFromTemplateRequest extends js.Object {
+trait SchemaCreateJobFromTemplateRequest extends StObject {
   
   /**
     * The runtime environment for the job.
@@ -48,48 +49,36 @@ object SchemaCreateJobFromTemplateRequest {
   }
   
   @scala.inline
-  implicit class SchemaCreateJobFromTemplateRequestOps[Self <: SchemaCreateJobFromTemplateRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaCreateJobFromTemplateRequestMutableBuilder[Self <: SchemaCreateJobFromTemplateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironment(value: SchemaRuntimeEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGcsPath(value: String): Self = StObject.set(x, "gcsPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: SchemaRuntimeEnvironment): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setGcsPathUndefined: Self = StObject.set(x, "gcsPath", js.undefined)
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcsPath(value: String): Self = this.set("gcsPath", value.asInstanceOf[js.Any])
+    def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
     
     @scala.inline
-    def deleteGcsPath: Self = this.set("gcsPath", js.undefined)
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobName(value: String): Self = this.set("jobName", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteJobName: Self = this.set("jobName", js.undefined)
+    def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
-    
-    @scala.inline
-    def setParameters(value: StringDictionary[String]): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
   }
 }

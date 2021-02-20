@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SigningGroup extends js.Object {
+trait SigningGroup extends StObject {
   
   /**
     * The UTC DateTime when the signing group was created. Read only.
@@ -79,83 +80,71 @@ object SigningGroup {
   }
   
   @scala.inline
-  implicit class SigningGroupOps[Self <: SigningGroup] (val x: Self) extends AnyVal {
+  implicit class SigningGroupMutableBuilder[Self <: SigningGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedBy(value: String): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
     
     @scala.inline
-    def setCreated(value: String): Self = this.set("created", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
-    
-    @scala.inline
-    def setCreatedBy(value: String): Self = this.set("createdBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreatedBy: Self = this.set("createdBy", js.undefined)
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
     def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-    ): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def setGroupEmail(value: String): Self = this.set("groupEmail", value.asInstanceOf[js.Any])
+    def setGroupEmail(value: String): Self = StObject.set(x, "groupEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroupEmail: Self = this.set("groupEmail", js.undefined)
+    def setGroupEmailUndefined: Self = StObject.set(x, "groupEmail", js.undefined)
     
     @scala.inline
-    def setGroupName(value: String): Self = this.set("groupName", value.asInstanceOf[js.Any])
+    def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroupName: Self = this.set("groupName", js.undefined)
+    def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
     
     @scala.inline
-    def setGroupType(value: String): Self = this.set("groupType", value.asInstanceOf[js.Any])
+    def setGroupType(value: String): Self = StObject.set(x, "groupType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroupType: Self = this.set("groupType", js.undefined)
+    def setGroupTypeUndefined: Self = StObject.set(x, "groupType", js.undefined)
     
     @scala.inline
-    def setModified(value: String): Self = this.set("modified", value.asInstanceOf[js.Any])
+    def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModified: Self = this.set("modified", js.undefined)
+    def setModifiedBy(value: String): Self = StObject.set(x, "modifiedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedBy(value: String): Self = this.set("modifiedBy", value.asInstanceOf[js.Any])
+    def setModifiedByUndefined: Self = StObject.set(x, "modifiedBy", js.undefined)
     
     @scala.inline
-    def deleteModifiedBy: Self = this.set("modifiedBy", js.undefined)
+    def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
     
     @scala.inline
-    def setSigningGroupId(value: String): Self = this.set("signingGroupId", value.asInstanceOf[js.Any])
+    def setSigningGroupId(value: String): Self = StObject.set(x, "signingGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSigningGroupId: Self = this.set("signingGroupId", js.undefined)
+    def setSigningGroupIdUndefined: Self = StObject.set(x, "signingGroupId", js.undefined)
     
     @scala.inline
-    def setUsersVarargs(value: SigningGroupUser*): Self = this.set("users", js.Array(value :_*))
+    def setUsers(value: js.Array[SigningGroupUser]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsers(value: js.Array[SigningGroupUser]): Self = this.set("users", value.asInstanceOf[js.Any])
+    def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     
     @scala.inline
-    def deleteUsers: Self = this.set("users", js.undefined)
+    def setUsersVarargs(value: SigningGroupUser*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

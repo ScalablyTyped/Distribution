@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.i18n
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Returned by {@link XLocaleData.getForbiddenCharacters()} and used with {@link XForbiddenCharacters} methods.
   */
 @js.native
-trait ForbiddenCharacters extends js.Object {
+trait ForbiddenCharacters extends StObject {
   
   var beginLine: String = js.native
   
@@ -25,24 +26,12 @@ object ForbiddenCharacters {
   }
   
   @scala.inline
-  implicit class ForbiddenCharactersOps[Self <: ForbiddenCharacters] (val x: Self) extends AnyVal {
+  implicit class ForbiddenCharactersMutableBuilder[Self <: ForbiddenCharacters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginLine(value: String): Self = StObject.set(x, "beginLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBeginLine(value: String): Self = this.set("beginLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEndLine(value: String): Self = this.set("endLine", value.asInstanceOf[js.Any])
+    def setEndLine(value: String): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
   }
 }

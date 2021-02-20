@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents an individual item of the Rich Edit's context menu.
   */
 @js.native
-trait ASPxClientRichEditPopupMenuItem extends js.Object {
+trait ASPxClientRichEditPopupMenuItem extends StObject {
   
   /**
     * Returns the menu item's sub-item with the specified index. An ASPxClientRichEditPopupMenuItem object representing the found sub-item.
@@ -106,60 +107,48 @@ object ASPxClientRichEditPopupMenuItem {
   }
   
   @scala.inline
-  implicit class ASPxClientRichEditPopupMenuItemOps[Self <: ASPxClientRichEditPopupMenuItem] (val x: Self) extends AnyVal {
+  implicit class ASPxClientRichEditPopupMenuItemMutableBuilder[Self <: ASPxClientRichEditPopupMenuItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginGroup(value: Boolean): Self = StObject.set(x, "beginGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetItem(value: Double => ASPxClientRichEditPopupMenuItem): Self = StObject.set(x, "GetItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetItem(value: Double => ASPxClientRichEditPopupMenuItem): Self = this.set("GetItem", js.Any.fromFunction1(value))
+    def setGetItemByName(value: String => ASPxClientRichEditPopupMenuItem): Self = StObject.set(x, "GetItemByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetItemByName(value: String => ASPxClientRichEditPopupMenuItem): Self = this.set("GetItemByName", js.Any.fromFunction1(value))
+    def setGetItemCount(value: () => Double): Self = StObject.set(x, "GetItemCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemCount(value: () => Double): Self = this.set("GetItemCount", js.Any.fromFunction0(value))
+    def setGetSubItems(value: () => ASPxClientRichEditPopupMenuItemCollection): Self = StObject.set(x, "GetSubItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSubItems(value: () => ASPxClientRichEditPopupMenuItemCollection): Self = this.set("GetSubItems", js.Any.fromFunction0(value))
+    def setImageClassName(value: String): Self = StObject.set(x, "imageClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginGroup(value: Boolean): Self = this.set("beginGroup", value.asInstanceOf[js.Any])
+    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageClassName(value: String): Self = this.set("imageClassName", value.asInstanceOf[js.Any])
+    def setNavigateUrl(value: String): Self = StObject.set(x, "navigateUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    def setParent(value: ASPxClientRichEditPopupMenuItem): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigateUrl(value: String): Self = this.set("navigateUrl", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: ASPxClientRichEditPopupMenuItem): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTooltip(value: String): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
   }
 }

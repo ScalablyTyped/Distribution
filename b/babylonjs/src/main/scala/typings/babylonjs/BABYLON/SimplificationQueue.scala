@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SimplificationQueue extends js.Object {
+trait SimplificationQueue extends StObject {
   
   var _simplificationArray: js.Any = js.native
   
@@ -49,36 +50,24 @@ object SimplificationQueue {
   }
   
   @scala.inline
-  implicit class SimplificationQueueOps[Self <: SimplificationQueue] (val x: Self) extends AnyVal {
+  implicit class SimplificationQueueMutableBuilder[Self <: SimplificationQueue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddTask(value: ISimplificationTask => Unit): Self = StObject.set(x, "addTask", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecuteNext(value: () => Unit): Self = StObject.set(x, "executeNext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSimplifier(value: js.Any): Self = StObject.set(x, "getSimplifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_simplificationArray(value: js.Any): Self = this.set("_simplificationArray", value.asInstanceOf[js.Any])
+    def setRunSimplification(value: ISimplificationTask => Unit): Self = StObject.set(x, "runSimplification", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddTask(value: ISimplificationTask => Unit): Self = this.set("addTask", js.Any.fromFunction1(value))
+    def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecuteNext(value: () => Unit): Self = this.set("executeNext", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSimplifier(value: js.Any): Self = this.set("getSimplifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRunSimplification(value: ISimplificationTask => Unit): Self = this.set("runSimplification", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRunning(value: Boolean): Self = this.set("running", value.asInstanceOf[js.Any])
+    def set_simplificationArray(value: js.Any): Self = StObject.set(x, "_simplificationArray", value.asInstanceOf[js.Any])
   }
 }

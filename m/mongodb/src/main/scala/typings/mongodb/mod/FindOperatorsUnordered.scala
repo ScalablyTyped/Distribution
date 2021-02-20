@@ -1,11 +1,12 @@
 package typings.mongodb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FindOperatorsUnordered extends js.Object {
+trait FindOperatorsUnordered extends StObject {
   
   var length: scala.Double = js.native
   
@@ -38,39 +39,27 @@ object FindOperatorsUnordered {
   }
   
   @scala.inline
-  implicit class FindOperatorsUnorderedOps[Self <: FindOperatorsUnordered] (val x: Self) extends AnyVal {
+  implicit class FindOperatorsUnorderedMutableBuilder[Self <: FindOperatorsUnordered] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLength(value: scala.Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRemove(value: () => UnorderedBulkOperation): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveOne(value: () => UnorderedBulkOperation): Self = StObject.set(x, "removeOne", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLength(value: scala.Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setReplaceOne(value: js.Object => UnorderedBulkOperation): Self = StObject.set(x, "replaceOne", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemove(value: () => UnorderedBulkOperation): Self = this.set("remove", js.Any.fromFunction0(value))
+    def setUpdate(value: js.Object => UnorderedBulkOperation): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveOne(value: () => UnorderedBulkOperation): Self = this.set("removeOne", js.Any.fromFunction0(value))
+    def setUpdateOne(value: js.Object => UnorderedBulkOperation): Self = StObject.set(x, "updateOne", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReplaceOne(value: js.Object => UnorderedBulkOperation): Self = this.set("replaceOne", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdate(value: js.Object => UnorderedBulkOperation): Self = this.set("update", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateOne(value: js.Object => UnorderedBulkOperation): Self = this.set("updateOne", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpsert(value: () => FindOperatorsUnordered): Self = this.set("upsert", js.Any.fromFunction0(value))
+    def setUpsert(value: () => FindOperatorsUnordered): Self = StObject.set(x, "upsert", js.Any.fromFunction0(value))
   }
 }

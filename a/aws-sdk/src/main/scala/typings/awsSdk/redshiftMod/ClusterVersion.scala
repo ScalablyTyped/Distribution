@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterVersion extends js.Object {
+trait ClusterVersion extends StObject {
   
   /**
     * The name of the cluster parameter group family for the cluster.
@@ -31,36 +32,24 @@ object ClusterVersion {
   }
   
   @scala.inline
-  implicit class ClusterVersionOps[Self <: ClusterVersion] (val x: Self) extends AnyVal {
+  implicit class ClusterVersionMutableBuilder[Self <: ClusterVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterParameterGroupFamily(value: String): Self = StObject.set(x, "ClusterParameterGroupFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterParameterGroupFamilyUndefined: Self = StObject.set(x, "ClusterParameterGroupFamily", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterVersion(value: String): Self = StObject.set(x, "ClusterVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterParameterGroupFamily(value: String): Self = this.set("ClusterParameterGroupFamily", value.asInstanceOf[js.Any])
+    def setClusterVersionUndefined: Self = StObject.set(x, "ClusterVersion", js.undefined)
     
     @scala.inline
-    def deleteClusterParameterGroupFamily: Self = this.set("ClusterParameterGroupFamily", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterVersion(value: String): Self = this.set("ClusterVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClusterVersion: Self = this.set("ClusterVersion", js.undefined)
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
   }
 }

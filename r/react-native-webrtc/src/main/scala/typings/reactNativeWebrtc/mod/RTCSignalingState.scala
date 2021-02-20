@@ -1,5 +1,6 @@
 package typings.reactNativeWebrtc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNativeWebrtc.reactNativeWebrtcStrings.`have-remote-pranswer`
   - typings.reactNativeWebrtc.reactNativeWebrtcStrings.closed
 */
-trait RTCSignalingState extends js.Object
+trait RTCSignalingState extends StObject
 object RTCSignalingState {
   
   @scala.inline

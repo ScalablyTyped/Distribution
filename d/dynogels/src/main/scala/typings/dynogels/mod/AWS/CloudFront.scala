@@ -1,6 +1,7 @@
 package typings.dynogels.mod.AWS
 
 import typings.awsSdk.cloudfrontMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,10 +15,9 @@ class CloudFront ()
   extends typings.awsSdk.mod.CloudFront {
   def this(options: ClientConfiguration) = this()
 }
-@JSImport("dynogels", "AWS.CloudFront")
-@js.native
-object CloudFront extends js.Object {
+object CloudFront {
   
+  @JSImport("dynogels", "AWS.CloudFront.Signer")
   @js.native
   class Signer protected ()
     extends typings.awsSdk.mod.CloudFront.Signer {

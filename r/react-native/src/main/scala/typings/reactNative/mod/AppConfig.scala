@@ -1,12 +1,13 @@
 package typings.reactNative.mod
 
 import typings.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppConfig extends js.Object {
+trait AppConfig extends StObject {
   
   var appKey: String = js.native
   
@@ -23,33 +24,21 @@ object AppConfig {
   }
   
   @scala.inline
-  implicit class AppConfigOps[Self <: AppConfig] (val x: Self) extends AnyVal {
+  implicit class AppConfigMutableBuilder[Self <: AppConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponent(value: () => ComponentType[js.Any]): Self = StObject.set(x, "component", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     @scala.inline
-    def setAppKey(value: String): Self = this.set("appKey", value.asInstanceOf[js.Any])
+    def setRun(value: /* appParameters */ js.Any => Unit): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComponent(value: () => ComponentType[js.Any]): Self = this.set("component", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteComponent: Self = this.set("component", js.undefined)
-    
-    @scala.inline
-    def setRun(value: /* appParameters */ js.Any => Unit): Self = this.set("run", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteRun: Self = this.set("run", js.undefined)
+    def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
   }
 }

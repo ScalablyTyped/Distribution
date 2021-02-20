@@ -2,60 +2,180 @@ package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleCloudPubsub.protosMod.google.protobuf.IDuration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Subscription. */
-trait ISubscription extends js.Object {
+@js.native
+trait ISubscription extends StObject {
+  
   /** Subscription ackDeadlineSeconds */
-  var ackDeadlineSeconds: js.UndefOr[Double | Null] = js.undefined
+  var ackDeadlineSeconds: js.UndefOr[Double | Null] = js.native
+  
   /** Subscription deadLetterPolicy */
-  var deadLetterPolicy: js.UndefOr[IDeadLetterPolicy | Null] = js.undefined
+  var deadLetterPolicy: js.UndefOr[IDeadLetterPolicy | Null] = js.native
+  
+  /** Subscription detached */
+  var detached: js.UndefOr[Boolean | Null] = js.native
+  
   /** Subscription enableMessageOrdering */
-  var enableMessageOrdering: js.UndefOr[Boolean | Null] = js.undefined
+  var enableMessageOrdering: js.UndefOr[Boolean | Null] = js.native
+  
   /** Subscription expirationPolicy */
-  var expirationPolicy: js.UndefOr[IExpirationPolicy | Null] = js.undefined
+  var expirationPolicy: js.UndefOr[IExpirationPolicy | Null] = js.native
+  
+  /** Subscription filter */
+  var filter: js.UndefOr[String | Null] = js.native
+  
   /** Subscription labels */
-  var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
+  var labels: js.UndefOr[StringDictionary[String] | Null] = js.native
+  
   /** Subscription messageRetentionDuration */
-  var messageRetentionDuration: js.UndefOr[IDuration | Null] = js.undefined
+  var messageRetentionDuration: js.UndefOr[IDuration | Null] = js.native
+  
   /** Subscription name */
-  var name: js.UndefOr[String | Null] = js.undefined
+  var name: js.UndefOr[String | Null] = js.native
+  
   /** Subscription pushConfig */
-  var pushConfig: js.UndefOr[IPushConfig | Null] = js.undefined
+  var pushConfig: js.UndefOr[IPushConfig | Null] = js.native
+  
   /** Subscription retainAckedMessages */
-  var retainAckedMessages: js.UndefOr[Boolean | Null] = js.undefined
+  var retainAckedMessages: js.UndefOr[Boolean | Null] = js.native
+  
+  /** Subscription retryPolicy */
+  var retryPolicy: js.UndefOr[IRetryPolicy | Null] = js.native
+  
   /** Subscription topic */
-  var topic: js.UndefOr[String | Null] = js.undefined
+  var topic: js.UndefOr[String | Null] = js.native
 }
-
 object ISubscription {
+  
   @scala.inline
-  def apply(
-    ackDeadlineSeconds: js.UndefOr[Null | Double] = js.undefined,
-    deadLetterPolicy: js.UndefOr[Null | IDeadLetterPolicy] = js.undefined,
-    enableMessageOrdering: js.UndefOr[Null | Boolean] = js.undefined,
-    expirationPolicy: js.UndefOr[Null | IExpirationPolicy] = js.undefined,
-    labels: js.UndefOr[Null | StringDictionary[String]] = js.undefined,
-    messageRetentionDuration: js.UndefOr[Null | IDuration] = js.undefined,
-    name: js.UndefOr[Null | String] = js.undefined,
-    pushConfig: js.UndefOr[Null | IPushConfig] = js.undefined,
-    retainAckedMessages: js.UndefOr[Null | Boolean] = js.undefined,
-    topic: js.UndefOr[Null | String] = js.undefined
-  ): ISubscription = {
+  def apply(): ISubscription = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ackDeadlineSeconds)) __obj.updateDynamic("ackDeadlineSeconds")(ackDeadlineSeconds.asInstanceOf[js.Any])
-    if (!js.isUndefined(deadLetterPolicy)) __obj.updateDynamic("deadLetterPolicy")(deadLetterPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMessageOrdering)) __obj.updateDynamic("enableMessageOrdering")(enableMessageOrdering.asInstanceOf[js.Any])
-    if (!js.isUndefined(expirationPolicy)) __obj.updateDynamic("expirationPolicy")(expirationPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (!js.isUndefined(messageRetentionDuration)) __obj.updateDynamic("messageRetentionDuration")(messageRetentionDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(pushConfig)) __obj.updateDynamic("pushConfig")(pushConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(retainAckedMessages)) __obj.updateDynamic("retainAckedMessages")(retainAckedMessages.asInstanceOf[js.Any])
-    if (!js.isUndefined(topic)) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubscription]
   }
+  
+  @scala.inline
+  implicit class ISubscriptionMutableBuilder[Self <: ISubscription] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAckDeadlineSeconds(value: Double): Self = StObject.set(x, "ackDeadlineSeconds", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAckDeadlineSecondsNull: Self = StObject.set(x, "ackDeadlineSeconds", null)
+    
+    @scala.inline
+    def setAckDeadlineSecondsUndefined: Self = StObject.set(x, "ackDeadlineSeconds", js.undefined)
+    
+    @scala.inline
+    def setDeadLetterPolicy(value: IDeadLetterPolicy): Self = StObject.set(x, "deadLetterPolicy", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDeadLetterPolicyNull: Self = StObject.set(x, "deadLetterPolicy", null)
+    
+    @scala.inline
+    def setDeadLetterPolicyUndefined: Self = StObject.set(x, "deadLetterPolicy", js.undefined)
+    
+    @scala.inline
+    def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDetachedNull: Self = StObject.set(x, "detached", null)
+    
+    @scala.inline
+    def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
+    
+    @scala.inline
+    def setEnableMessageOrdering(value: Boolean): Self = StObject.set(x, "enableMessageOrdering", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setEnableMessageOrderingNull: Self = StObject.set(x, "enableMessageOrdering", null)
+    
+    @scala.inline
+    def setEnableMessageOrderingUndefined: Self = StObject.set(x, "enableMessageOrdering", js.undefined)
+    
+    @scala.inline
+    def setExpirationPolicy(value: IExpirationPolicy): Self = StObject.set(x, "expirationPolicy", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setExpirationPolicyNull: Self = StObject.set(x, "expirationPolicy", null)
+    
+    @scala.inline
+    def setExpirationPolicyUndefined: Self = StObject.set(x, "expirationPolicy", js.undefined)
+    
+    @scala.inline
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFilterNull: Self = StObject.set(x, "filter", null)
+    
+    @scala.inline
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLabelsNull: Self = StObject.set(x, "labels", null)
+    
+    @scala.inline
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    
+    @scala.inline
+    def setMessageRetentionDuration(value: IDuration): Self = StObject.set(x, "messageRetentionDuration", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMessageRetentionDurationNull: Self = StObject.set(x, "messageRetentionDuration", null)
+    
+    @scala.inline
+    def setMessageRetentionDurationUndefined: Self = StObject.set(x, "messageRetentionDuration", js.undefined)
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNameNull: Self = StObject.set(x, "name", null)
+    
+    @scala.inline
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    @scala.inline
+    def setPushConfig(value: IPushConfig): Self = StObject.set(x, "pushConfig", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPushConfigNull: Self = StObject.set(x, "pushConfig", null)
+    
+    @scala.inline
+    def setPushConfigUndefined: Self = StObject.set(x, "pushConfig", js.undefined)
+    
+    @scala.inline
+    def setRetainAckedMessages(value: Boolean): Self = StObject.set(x, "retainAckedMessages", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRetainAckedMessagesNull: Self = StObject.set(x, "retainAckedMessages", null)
+    
+    @scala.inline
+    def setRetainAckedMessagesUndefined: Self = StObject.set(x, "retainAckedMessages", js.undefined)
+    
+    @scala.inline
+    def setRetryPolicy(value: IRetryPolicy): Self = StObject.set(x, "retryPolicy", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRetryPolicyNull: Self = StObject.set(x, "retryPolicy", null)
+    
+    @scala.inline
+    def setRetryPolicyUndefined: Self = StObject.set(x, "retryPolicy", js.undefined)
+    
+    @scala.inline
+    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTopicNull: Self = StObject.set(x, "topic", null)
+    
+    @scala.inline
+    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+  }
 }
-

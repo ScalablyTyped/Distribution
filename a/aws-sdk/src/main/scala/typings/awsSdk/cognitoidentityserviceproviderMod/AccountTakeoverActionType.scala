@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountTakeoverActionType extends js.Object {
+trait AccountTakeoverActionType extends StObject {
   
   /**
     * The event action.    BLOCK Choosing this action will block the request.    MFA_IF_CONFIGURED Throw MFA challenge if user has configured it, else allow the request.    MFA_REQUIRED Throw MFA challenge if user has configured it, else block the request.    NO_ACTION Allow the user sign-in.  
@@ -26,24 +27,12 @@ object AccountTakeoverActionType {
   }
   
   @scala.inline
-  implicit class AccountTakeoverActionTypeOps[Self <: AccountTakeoverActionType] (val x: Self) extends AnyVal {
+  implicit class AccountTakeoverActionTypeMutableBuilder[Self <: AccountTakeoverActionType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventAction(value: AccountTakeoverEventActionType): Self = StObject.set(x, "EventAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEventAction(value: AccountTakeoverEventActionType): Self = this.set("EventAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotify(value: AccountTakeoverActionNotifyType): Self = this.set("Notify", value.asInstanceOf[js.Any])
+    def setNotify(value: AccountTakeoverActionNotifyType): Self = StObject.set(x, "Notify", value.asInstanceOf[js.Any])
   }
 }

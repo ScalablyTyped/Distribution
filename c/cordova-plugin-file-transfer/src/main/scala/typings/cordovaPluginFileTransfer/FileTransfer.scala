@@ -3,6 +3,7 @@ package typings.cordovaPluginFileTransfer
 import typings.cordovaPluginFile.FileEntry
 import typings.std.EventTarget
 import typings.std.ProgressEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and to download files as well.
   */
 @js.native
-trait FileTransfer extends js.Object {
+trait FileTransfer extends StObject {
   
   /**
     * Aborts an in-progress transfer. The onerror callback is passed a FileTransferError object

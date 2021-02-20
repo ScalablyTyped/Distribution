@@ -1,12 +1,13 @@
 package typings.formatjsEcma402Abstract.numberMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<std.Partial<std.Record<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/plural-rules.LDMLPluralRule, T>>, 'other'> & {  other :T} */
 @js.native
-trait LDMLPluralRuleMap[T] extends js.Object {
+trait LDMLPluralRuleMap[T] extends StObject {
   
   var few: js.UndefOr[T] = js.native
   
@@ -29,51 +30,39 @@ object LDMLPluralRuleMap {
   }
   
   @scala.inline
-  implicit class LDMLPluralRuleMapOps[Self <: LDMLPluralRuleMap[_], T] (val x: Self with LDMLPluralRuleMap[T]) extends AnyVal {
+  implicit class LDMLPluralRuleMapMutableBuilder[Self <: LDMLPluralRuleMap[_], T] (val x: Self with LDMLPluralRuleMap[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFew(value: T): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFewUndefined: Self = StObject.set(x, "few", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMany(value: T): Self = StObject.set(x, "many", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOther(value: T): Self = this.set("other", value.asInstanceOf[js.Any])
+    def setManyUndefined: Self = StObject.set(x, "many", js.undefined)
     
     @scala.inline
-    def setFew(value: T): Self = this.set("few", value.asInstanceOf[js.Any])
+    def setOne(value: T): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFew: Self = this.set("few", js.undefined)
+    def setOneUndefined: Self = StObject.set(x, "one", js.undefined)
     
     @scala.inline
-    def setMany(value: T): Self = this.set("many", value.asInstanceOf[js.Any])
+    def setOther(value: T): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMany: Self = this.set("many", js.undefined)
+    def setTwo(value: T): Self = StObject.set(x, "two", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOne(value: T): Self = this.set("one", value.asInstanceOf[js.Any])
+    def setTwoUndefined: Self = StObject.set(x, "two", js.undefined)
     
     @scala.inline
-    def deleteOne: Self = this.set("one", js.undefined)
+    def setZero(value: T): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTwo(value: T): Self = this.set("two", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTwo: Self = this.set("two", js.undefined)
-    
-    @scala.inline
-    def setZero(value: T): Self = this.set("zero", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZero: Self = this.set("zero", js.undefined)
+    def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
   }
 }

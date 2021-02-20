@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTableVersionsResponse extends js.Object {
+trait GetTableVersionsResponse extends StObject {
   
   /**
     * A continuation token, if the list of available versions does not include the last one.
@@ -26,33 +27,21 @@ object GetTableVersionsResponse {
   }
   
   @scala.inline
-  implicit class GetTableVersionsResponseOps[Self <: GetTableVersionsResponse] (val x: Self) extends AnyVal {
+  implicit class GetTableVersionsResponseMutableBuilder[Self <: GetTableVersionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTableVersions(value: GetTableVersionsList): Self = StObject.set(x, "TableVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setTableVersionsUndefined: Self = StObject.set(x, "TableVersions", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setTableVersionsVarargs(value: TableVersion*): Self = this.set("TableVersions", js.Array(value :_*))
-    
-    @scala.inline
-    def setTableVersions(value: GetTableVersionsList): Self = this.set("TableVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableVersions: Self = this.set("TableVersions", js.undefined)
+    def setTableVersionsVarargs(value: TableVersion*): Self = StObject.set(x, "TableVersions", js.Array(value :_*))
   }
 }

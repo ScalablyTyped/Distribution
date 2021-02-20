@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientGameservices.anon.Accesstoken
 import typings.maximMazurokGapiClientGameservices.anon.Alt
 import typings.maximMazurokGapiClientGameservices.anon.Callback
 import typings.maximMazurokGapiClientGameservices.anon.Fields
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigsResource extends js.Object {
+trait ConfigsResource extends StObject {
   
   /**
     * Creates a new game server config in a given project, location, and game server deployment. Game server configs are immutable, and are not applied until referenced in the game server

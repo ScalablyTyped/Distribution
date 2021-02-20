@@ -10,6 +10,7 @@ import typings.fridaGum.StalkerEventFull
 import typings.fridaGum.StalkerOptions
 import typings.fridaGum.StalkerParseOptions
 import typings.fridaGum.ThreadId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +18,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Follows execution on a per thread basis.
   */
-@JSGlobal("Stalker")
-@js.native
-object Stalker extends js.Object {
+object Stalker {
+  
+  @JSGlobal("Stalker")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Calls `callback` synchronously when a call is made to `address`.
@@ -30,7 +33,11 @@ object Stalker extends js.Object {
     *                 thread is about to call the function at `address`.
     * @param data User data to be passed to `StalkerNativeCallProbeCallback`.
     */
+  @JSGlobal("Stalker.addCallProbe")
+  @js.native
   def addCallProbe(address: NativePointerValue, callback: StalkerCallProbeCallback): StalkerCallProbeId = js.native
+  @JSGlobal("Stalker.addCallProbe")
+  @js.native
   def addCallProbe(address: NativePointerValue, callback: StalkerCallProbeCallback, data: NativePointerValue): StalkerCallProbeId = js.native
   
   /**
@@ -44,12 +51,16 @@ object Stalker extends js.Object {
     *
     * @param range Range to exclude.
     */
+  @JSGlobal("Stalker.exclude")
+  @js.native
   def exclude(range: MemoryRange): Unit = js.native
   
   /**
     * Flushes out any buffered events. Useful when you don't want to wait
     * until the next `queueDrainInterval` tick.
     */
+  @JSGlobal("Stalker.flush")
+  @js.native
   def flush(): Unit = js.native
   
   /**
@@ -59,9 +70,17 @@ object Stalker extends js.Object {
     *                 current thread if omitted.
     * @param options Options to customize the instrumentation.
     */
+  @JSGlobal("Stalker.follow")
+  @js.native
   def follow(): Unit = js.native
+  @JSGlobal("Stalker.follow")
+  @js.native
   def follow(threadId: js.UndefOr[scala.Nothing], options: StalkerOptions): Unit = js.native
+  @JSGlobal("Stalker.follow")
+  @js.native
   def follow(threadId: ThreadId): Unit = js.native
+  @JSGlobal("Stalker.follow")
+  @js.native
   def follow(threadId: ThreadId, options: StalkerOptions): Unit = js.native
   
   /**
@@ -69,6 +88,8 @@ object Stalker extends js.Object {
     * needed to avoid race-conditions where the thread just unfollowed is
     * executing its last instructions.
     */
+  @JSGlobal("Stalker.garbageCollect")
+  @js.native
   def garbageCollect(): Unit = js.native
   
   /**
@@ -77,7 +98,11 @@ object Stalker extends js.Object {
     * @param events Binary blob containing zero or more `Gum.Event` values.
     * @param options Options for customizing the output.
     */
+  @JSGlobal("Stalker.parse")
+  @js.native
   def parse(events: ArrayBuffer): js.Array[StalkerEventBare | StalkerEventFull] = js.native
+  @JSGlobal("Stalker.parse")
+  @js.native
   def parse(events: ArrayBuffer, options: StalkerParseOptions): js.Array[StalkerEventBare | StalkerEventFull] = js.native
   
   /**
@@ -85,7 +110,11 @@ object Stalker extends js.Object {
     *
     * Defaults to 16384 events.
     */
-  var queueCapacity: Double = js.native
+  @JSGlobal("Stalker.queueCapacity")
+  @js.native
+  def queueCapacity: Double = js.native
+  @scala.inline
+  def queueCapacity_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queueCapacity")(x.asInstanceOf[js.Any])
   
   /**
     * Time in milliseconds between each time the event queue is drained.
@@ -95,13 +124,19 @@ object Stalker extends js.Object {
     * periodic draining and instead call `Stalker.flush()` when you would
     * like the queue to be drained.
     */
-  var queueDrainInterval: Double = js.native
+  @JSGlobal("Stalker.queueDrainInterval")
+  @js.native
+  def queueDrainInterval: Double = js.native
+  @scala.inline
+  def queueDrainInterval_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queueDrainInterval")(x.asInstanceOf[js.Any])
   
   /**
     * Removes a call probe added by `addCallProbe()`.
     *
     * @param callbackId ID of probe to remove.
     */
+  @JSGlobal("Stalker.removeCallProbe")
+  @js.native
   def removeCallProbe(callbackId: StalkerCallProbeId): Unit = js.native
   
   /**
@@ -112,7 +147,11 @@ object Stalker extends js.Object {
     *
     * Defaults to 1.
     */
-  var trustThreshold: Double = js.native
+  @JSGlobal("Stalker.trustThreshold")
+  @js.native
+  def trustThreshold: Double = js.native
+  @scala.inline
+  def trustThreshold_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trustThreshold")(x.asInstanceOf[js.Any])
   
   /**
     * Stops following the execution of a given thread.
@@ -120,6 +159,10 @@ object Stalker extends js.Object {
     * @param threadId Thread ID to stop following the execution of, or the
     *                 current thread if omitted.
     */
+  @JSGlobal("Stalker.unfollow")
+  @js.native
   def unfollow(): Unit = js.native
+  @JSGlobal("Stalker.unfollow")
+  @js.native
   def unfollow(threadId: ThreadId): Unit = js.native
 }

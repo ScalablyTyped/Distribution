@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShutdownEventConfiguration extends js.Object {
+trait ShutdownEventConfiguration extends StObject {
   
   /**
     * Whether to enable Elastic Load Balancing connection draining. For more information, see Connection Draining 
@@ -26,30 +27,18 @@ object ShutdownEventConfiguration {
   }
   
   @scala.inline
-  implicit class ShutdownEventConfigurationOps[Self <: ShutdownEventConfiguration] (val x: Self) extends AnyVal {
+  implicit class ShutdownEventConfigurationMutableBuilder[Self <: ShutdownEventConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelayUntilElbConnectionsDrained(value: Boolean): Self = StObject.set(x, "DelayUntilElbConnectionsDrained", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayUntilElbConnectionsDrainedUndefined: Self = StObject.set(x, "DelayUntilElbConnectionsDrained", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionTimeout(value: Integer): Self = StObject.set(x, "ExecutionTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelayUntilElbConnectionsDrained(value: Boolean): Self = this.set("DelayUntilElbConnectionsDrained", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDelayUntilElbConnectionsDrained: Self = this.set("DelayUntilElbConnectionsDrained", js.undefined)
-    
-    @scala.inline
-    def setExecutionTimeout(value: Integer): Self = this.set("ExecutionTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExecutionTimeout: Self = this.set("ExecutionTimeout", js.undefined)
+    def setExecutionTimeoutUndefined: Self = StObject.set(x, "ExecutionTimeout", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoscalingPolicyScaleInControl extends js.Object {
+trait AutoscalingPolicyScaleInControl extends StObject {
   
   /**
     * Maximum allowed number (or %) of VMs that can be deducted from the peak recommendation during the window autoscaler looks at when computing recommendations. Possibly all these VMs
@@ -25,30 +26,18 @@ object AutoscalingPolicyScaleInControl {
   }
   
   @scala.inline
-  implicit class AutoscalingPolicyScaleInControlOps[Self <: AutoscalingPolicyScaleInControl] (val x: Self) extends AnyVal {
+  implicit class AutoscalingPolicyScaleInControlMutableBuilder[Self <: AutoscalingPolicyScaleInControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxScaledInReplicas(value: FixedOrPercent): Self = StObject.set(x, "maxScaledInReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxScaledInReplicasUndefined: Self = StObject.set(x, "maxScaledInReplicas", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeWindowSec(value: Double): Self = StObject.set(x, "timeWindowSec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxScaledInReplicas(value: FixedOrPercent): Self = this.set("maxScaledInReplicas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxScaledInReplicas: Self = this.set("maxScaledInReplicas", js.undefined)
-    
-    @scala.inline
-    def setTimeWindowSec(value: Double): Self = this.set("timeWindowSec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeWindowSec: Self = this.set("timeWindowSec", js.undefined)
+    def setTimeWindowSecUndefined: Self = StObject.set(x, "timeWindowSec", js.undefined)
   }
 }

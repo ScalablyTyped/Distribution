@@ -1,5 +1,6 @@
 package typings.handlebars.hbs.AST
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,39 +39,27 @@ object PartialStatement {
   }
   
   @scala.inline
-  implicit class PartialStatementOps[Self <: PartialStatement] (val x: Self) extends AnyVal {
+  implicit class PartialStatementMutableBuilder[Self <: PartialStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: PathExpression | SubExpression): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: Hash): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setParams(value: js.Array[Expression]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndent(value: String): Self = this.set("indent", value.asInstanceOf[js.Any])
+    def setParamsVarargs(value: Expression*): Self = StObject.set(x, "params", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: PathExpression | SubExpression): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStrip(value: StripFlags): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamsVarargs(value: Expression*): Self = this.set("params", js.Array(value :_*))
-    
-    @scala.inline
-    def setParams(value: js.Array[Expression]): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrip(value: StripFlags): Self = this.set("strip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.handlebars.handlebarsStrings.PartialStatement): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: typings.handlebars.handlebarsStrings.PartialStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

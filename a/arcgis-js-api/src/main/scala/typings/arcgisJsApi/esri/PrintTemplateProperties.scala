@@ -17,12 +17,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.png32
 import typings.arcgisJsApi.arcgisJsApiStrings.png8
 import typings.arcgisJsApi.arcgisJsApiStrings.svg
 import typings.arcgisJsApi.arcgisJsApiStrings.svgz
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrintTemplateProperties extends js.Object {
+trait PrintTemplateProperties extends StObject {
   
   /**
     * When `false`, the attribution is not displayed on the printout.
@@ -105,80 +106,68 @@ object PrintTemplateProperties {
   }
   
   @scala.inline
-  implicit class PrintTemplatePropertiesOps[Self <: PrintTemplateProperties] (val x: Self) extends AnyVal {
+  implicit class PrintTemplatePropertiesMutableBuilder[Self <: PrintTemplateProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributionVisible(value: Boolean): Self = StObject.set(x, "attributionVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributionVisibleUndefined: Self = StObject.set(x, "attributionVisible", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportOptions(value: PrintTemplateExportOptions): Self = StObject.set(x, "exportOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributionVisible(value: Boolean): Self = this.set("attributionVisible", value.asInstanceOf[js.Any])
+    def setExportOptionsUndefined: Self = StObject.set(x, "exportOptions", js.undefined)
     
     @scala.inline
-    def deleteAttributionVisible: Self = this.set("attributionVisible", js.undefined)
+    def setForceFeatureAttributes(value: Boolean): Self = StObject.set(x, "forceFeatureAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportOptions(value: PrintTemplateExportOptions): Self = this.set("exportOptions", value.asInstanceOf[js.Any])
+    def setForceFeatureAttributesUndefined: Self = StObject.set(x, "forceFeatureAttributes", js.undefined)
     
     @scala.inline
-    def deleteExportOptions: Self = this.set("exportOptions", js.undefined)
+    def setFormat(value: pdf | png32 | png8 | jpg | gif | eps | svg | svgz): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceFeatureAttributes(value: Boolean): Self = this.set("forceFeatureAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceFeatureAttributes: Self = this.set("forceFeatureAttributes", js.undefined)
-    
-    @scala.inline
-    def setFormat(value: pdf | png32 | png8 | jpg | gif | eps | svg | svgz): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
     def setLayout(
       value: `map-only` | `a3-landscape` | `a3-portrait` | `a4-landscape` | `a4-portrait` | `letter-ansi-a-landscape` | `letter-ansi-a-portrait` | `tabloid-ansi-b-landscape` | `tabloid-ansi-b-portrait`
-    ): Self = this.set("layout", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setLayoutOptions(value: PrintTemplateLayoutOptions): Self = StObject.set(x, "layoutOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayoutOptions(value: PrintTemplateLayoutOptions): Self = this.set("layoutOptions", value.asInstanceOf[js.Any])
+    def setLayoutOptionsUndefined: Self = StObject.set(x, "layoutOptions", js.undefined)
     
     @scala.inline
-    def deleteLayoutOptions: Self = this.set("layoutOptions", js.undefined)
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def setOutScale(value: Double): Self = this.set("outScale", value.asInstanceOf[js.Any])
+    def setOutScale(value: Double): Self = StObject.set(x, "outScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutScale: Self = this.set("outScale", js.undefined)
+    def setOutScaleUndefined: Self = StObject.set(x, "outScale", js.undefined)
     
     @scala.inline
-    def setPreserveScale(value: Boolean): Self = this.set("preserveScale", value.asInstanceOf[js.Any])
+    def setPreserveScale(value: Boolean): Self = StObject.set(x, "preserveScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreserveScale: Self = this.set("preserveScale", js.undefined)
+    def setPreserveScaleUndefined: Self = StObject.set(x, "preserveScale", js.undefined)
     
     @scala.inline
-    def setScalePreserved(value: Boolean): Self = this.set("scalePreserved", value.asInstanceOf[js.Any])
+    def setScalePreserved(value: Boolean): Self = StObject.set(x, "scalePreserved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScalePreserved: Self = this.set("scalePreserved", js.undefined)
+    def setScalePreservedUndefined: Self = StObject.set(x, "scalePreserved", js.undefined)
     
     @scala.inline
-    def setShowLabels(value: Boolean): Self = this.set("showLabels", value.asInstanceOf[js.Any])
+    def setShowLabels(value: Boolean): Self = StObject.set(x, "showLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowLabels: Self = this.set("showLabels", js.undefined)
+    def setShowLabelsUndefined: Self = StObject.set(x, "showLabels", js.undefined)
   }
 }

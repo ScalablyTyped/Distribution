@@ -2,12 +2,13 @@ package typings.box2d.Box2D.Collision
 
 import typings.box2d.Box2D.Common.Math.b2Mat22
 import typings.box2d.Box2D.Common.Math.b2Vec2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2OBB extends js.Object {
+trait b2OBB extends StObject {
   
   /**
     * The rotation matrix.
@@ -33,27 +34,15 @@ object b2OBB {
   }
   
   @scala.inline
-  implicit class b2OBBOps[Self <: b2OBB] (val x: Self) extends AnyVal {
+  implicit class b2OBBMutableBuilder[Self <: b2OBB] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: b2Vec2): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtents(value: b2Vec2): Self = StObject.set(x, "extents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setR(value: b2Mat22): Self = this.set("R", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCenter(value: b2Vec2): Self = this.set("center", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExtents(value: b2Vec2): Self = this.set("extents", value.asInstanceOf[js.Any])
+    def setR(value: b2Mat22): Self = StObject.set(x, "R", value.asInstanceOf[js.Any])
   }
 }

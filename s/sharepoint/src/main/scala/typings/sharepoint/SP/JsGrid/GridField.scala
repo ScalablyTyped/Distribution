@@ -1,11 +1,12 @@
 package typings.sharepoint.SP.JsGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridField extends js.Object {
+trait GridField extends StObject {
   
   def CompareSingleDataEqual(dataValue1: js.Any, dataValue2: js.Any): Boolean = js.native
   
@@ -65,66 +66,54 @@ object GridField {
   }
   
   @scala.inline
-  implicit class GridFieldOps[Self <: GridField] (val x: Self) extends AnyVal {
+  implicit class GridFieldMutableBuilder[Self <: GridField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompareSingleDataEqual(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "CompareSingleDataEqual", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCsrInfo(value: js.Any): Self = StObject.set(x, "csrInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateOnly(value: Boolean): Self = StObject.set(x, "dateOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompareSingleDataEqual(value: (js.Any, js.Any) => Boolean): Self = this.set("CompareSingleDataEqual", js.Any.fromFunction2(value))
+    def setGetDefaultCellStyleId(value: () => js.Any): Self = StObject.set(x, "GetDefaultCellStyleId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDefaultCellStyleId(value: () => js.Any): Self = this.set("GetDefaultCellStyleId", js.Any.fromFunction0(value))
+    def setGetEditMode(value: () => EditMode): Self = StObject.set(x, "GetEditMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEditMode(value: () => EditMode): Self = this.set("GetEditMode", js.Any.fromFunction0(value))
+    def setGetIsMultiValue(value: () => Boolean): Self = StObject.set(x, "GetIsMultiValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIsMultiValue(value: () => Boolean): Self = this.set("GetIsMultiValue", js.Any.fromFunction0(value))
+    def setGetMultiValuePropType(value: () => js.Any): Self = StObject.set(x, "GetMultiValuePropType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMultiValuePropType(value: () => js.Any): Self = this.set("GetMultiValuePropType", js.Any.fromFunction0(value))
+    def setGetPropType(value: () => js.Any): Self = StObject.set(x, "GetPropType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPropType(value: () => js.Any): Self = this.set("GetPropType", js.Any.fromFunction0(value))
+    def setGetSingleValuePropType(value: () => js.Any): Self = StObject.set(x, "GetSingleValuePropType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSingleValuePropType(value: () => js.Any): Self = this.set("GetSingleValuePropType", js.Any.fromFunction0(value))
+    def setHasDataValue(value: Boolean): Self = StObject.set(x, "hasDataValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetEditMode(value: EditMode => Unit): Self = this.set("SetEditMode", js.Any.fromFunction1(value))
+    def setHasLocalizedValue(value: Boolean): Self = StObject.set(x, "hasLocalizedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetIsMultiValue(value: js.Any => Unit): Self = this.set("SetIsMultiValue", js.Any.fromFunction1(value))
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetSingleValuePropType(value: js.Any => Unit): Self = this.set("SetSingleValuePropType", js.Any.fromFunction1(value))
+    def setSetEditMode(value: EditMode => Unit): Self = StObject.set(x, "SetEditMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCsrInfo(value: js.Any): Self = this.set("csrInfo", value.asInstanceOf[js.Any])
+    def setSetIsMultiValue(value: js.Any => Unit): Self = StObject.set(x, "SetIsMultiValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDateOnly(value: Boolean): Self = this.set("dateOnly", value.asInstanceOf[js.Any])
+    def setSetSingleValuePropType(value: js.Any => Unit): Self = StObject.set(x, "SetSingleValuePropType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHasDataValue(value: Boolean): Self = this.set("hasDataValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasLocalizedValue(value: Boolean): Self = this.set("hasLocalizedValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextDirection(value: TextDirection): Self = this.set("textDirection", value.asInstanceOf[js.Any])
+    def setTextDirection(value: TextDirection): Self = StObject.set(x, "textDirection", value.asInstanceOf[js.Any])
   }
 }

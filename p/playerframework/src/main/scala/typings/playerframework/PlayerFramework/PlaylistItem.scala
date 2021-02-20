@@ -1,11 +1,12 @@
 package typings.playerframework.PlayerFramework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlaylistItem extends js.Object {
+trait PlaylistItem extends StObject {
   
   var src: String = js.native
   
@@ -20,30 +21,18 @@ object PlaylistItem {
   }
   
   @scala.inline
-  implicit class PlaylistItemOps[Self <: PlaylistItem] (val x: Self) extends AnyVal {
+  implicit class PlaylistItemMutableBuilder[Self <: PlaylistItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTracks(value: js.Array[_]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTracksVarargs(value: js.Any*): Self = this.set("tracks", js.Array(value :_*))
-    
-    @scala.inline
-    def setTracks(value: js.Array[_]): Self = this.set("tracks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTracks: Self = this.set("tracks", js.undefined)
+    def setTracksVarargs(value: js.Any*): Self = StObject.set(x, "tracks", js.Array(value :_*))
   }
 }

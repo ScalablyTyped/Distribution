@@ -4,6 +4,7 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.anon.Color
 import typings.tuyaPanelKit.themeMod.BackgroundProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,63 +33,51 @@ object TopBarProps {
   }
   
   @scala.inline
-  implicit class TopBarPropsOps[Self <: TopBarProps] (val x: Self) extends AnyVal {
+  implicit class TopBarPropsMutableBuilder[Self <: TopBarProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[TopBarActionProps]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: TopBarActionProps*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setActionsVarargs(value: TopBarActionProps*): Self = this.set("actions", js.Array(value :_*))
+    def setBackground(value: BackgroundProps): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: js.Array[TopBarActionProps]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setContentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: BackgroundProps): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setContentStyleNull: Self = StObject.set(x, "contentStyle", null)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
     
     @scala.inline
-    def setContentStyle(value: StyleProp[ViewStyle]): Self = this.set("contentStyle", value.asInstanceOf[js.Any])
+    def setLeftActions(value: js.Array[TopBarActionProps]): Self = StObject.set(x, "leftActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentStyle: Self = this.set("contentStyle", js.undefined)
+    def setLeftActionsUndefined: Self = StObject.set(x, "leftActions", js.undefined)
     
     @scala.inline
-    def setContentStyleNull: Self = this.set("contentStyle", null)
+    def setLeftActionsVarargs(value: TopBarActionProps*): Self = StObject.set(x, "leftActions", js.Array(value :_*))
     
     @scala.inline
-    def setLeftActionsVarargs(value: TopBarActionProps*): Self = this.set("leftActions", js.Array(value :_*))
+    def setOnBack(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onBack", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLeftActions(value: js.Array[TopBarActionProps]): Self = this.set("leftActions", value.asInstanceOf[js.Any])
+    def setOnBackUndefined: Self = StObject.set(x, "onBack", js.undefined)
     
     @scala.inline
-    def deleteLeftActions: Self = this.set("leftActions", js.undefined)
+    def setTheme(value: Color): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnBack(value: /* repeated */ js.Any => Unit): Self = this.set("onBack", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnBack: Self = this.set("onBack", js.undefined)
-    
-    @scala.inline
-    def setTheme(value: Color): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

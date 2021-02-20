@@ -1,11 +1,12 @@
 package typings.awsSdk.ioteventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SNSTopicPublishAction extends js.Object {
+trait SNSTopicPublishAction extends StObject {
   
   /**
     * You can configure the action payload when you send a message as an Amazon SNS push notification.
@@ -26,27 +27,15 @@ object SNSTopicPublishAction {
   }
   
   @scala.inline
-  implicit class SNSTopicPublishActionOps[Self <: SNSTopicPublishAction] (val x: Self) extends AnyVal {
+  implicit class SNSTopicPublishActionMutableBuilder[Self <: SNSTopicPublishAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTargetArn(value: AmazonResourceName): Self = this.set("targetArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPayload(value: Payload): Self = this.set("payload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
+    def setTargetArn(value: AmazonResourceName): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
   }
 }

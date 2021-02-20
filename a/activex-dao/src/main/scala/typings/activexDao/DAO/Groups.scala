@@ -1,11 +1,12 @@
 package typings.activexDao.DAO
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Groups extends js.Object {
+trait Groups extends StObject {
   
   def apply(Item: String): Group = js.native
   def apply(Item: Double): Group = js.native

@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OverflowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
+trait OverflowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
     * The overflow CSS property sets what to do when an element's content is too big to fit in its block
@@ -55,22 +56,7 @@ object OverflowProps {
   }
   
   @scala.inline
-  implicit class OverflowPropsOps[Self <: OverflowProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with OverflowProps[ThemeType]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOverflowVarargs(value: (js.Any | Null)*): Self = this.set("overflow", js.Array(value :_*))
+  implicit class OverflowPropsMutableBuilder[Self <: OverflowProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with OverflowProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setOverflow(
@@ -78,16 +64,16 @@ object OverflowProps {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ _, 
           ThemeType
         ]
-    ): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverflow: Self = this.set("overflow", js.undefined)
+    def setOverflowNull: Self = StObject.set(x, "overflow", null)
     
     @scala.inline
-    def setOverflowNull: Self = this.set("overflow", null)
+    def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
     @scala.inline
-    def setOverflowXVarargs(value: (js.Any | Null)*): Self = this.set("overflowX", js.Array(value :_*))
+    def setOverflowVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "overflow", js.Array(value :_*))
     
     @scala.inline
     def setOverflowX(
@@ -95,16 +81,16 @@ object OverflowProps {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ _, 
           ThemeType
         ]
-    ): Self = this.set("overflowX", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverflowX: Self = this.set("overflowX", js.undefined)
+    def setOverflowXNull: Self = StObject.set(x, "overflowX", null)
     
     @scala.inline
-    def setOverflowXNull: Self = this.set("overflowX", null)
+    def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
     
     @scala.inline
-    def setOverflowYVarargs(value: (js.Any | Null)*): Self = this.set("overflowY", js.Array(value :_*))
+    def setOverflowXVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "overflowX", js.Array(value :_*))
     
     @scala.inline
     def setOverflowY(
@@ -112,12 +98,15 @@ object OverflowProps {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ _, 
           ThemeType
         ]
-    ): Self = this.set("overflowY", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverflowY: Self = this.set("overflowY", js.undefined)
+    def setOverflowYNull: Self = StObject.set(x, "overflowY", null)
     
     @scala.inline
-    def setOverflowYNull: Self = this.set("overflowY", null)
+    def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
+    
+    @scala.inline
+    def setOverflowYVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "overflowY", js.Array(value :_*))
   }
 }

@@ -13,6 +13,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.quad
 import typings.arcgisJsApi.arcgisJsApiStrings.round
 import typings.arcgisJsApi.arcgisJsApiStrings.square
 import typings.arcgisJsApi.arcgisJsApiStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -99,78 +100,66 @@ object PathSymbol3DLayerProperties {
   }
   
   @scala.inline
-  implicit class PathSymbol3DLayerPropertiesOps[Self <: PathSymbol3DLayerProperties] (val x: Self) extends AnyVal {
+  implicit class PathSymbol3DLayerPropertiesMutableBuilder[Self <: PathSymbol3DLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: center | bottom | top): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCap(value: none | butt | square | round): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: center | bottom | top): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setCapUndefined: Self = StObject.set(x, "cap", js.undefined)
     
     @scala.inline
-    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    def setCastShadows(value: Boolean): Self = StObject.set(x, "castShadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCap(value: none | butt | square | round): Self = this.set("cap", value.asInstanceOf[js.Any])
+    def setCastShadowsUndefined: Self = StObject.set(x, "castShadows", js.undefined)
     
     @scala.inline
-    def deleteCap: Self = this.set("cap", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCastShadows(value: Boolean): Self = this.set("castShadows", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteCastShadows: Self = this.set("castShadows", js.undefined)
+    def setJoin(value: miter | bevel | round): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setMaterial(value: PathSymbol3DLayerMaterialProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJoin(value: miter | bevel | round): Self = this.set("join", value.asInstanceOf[js.Any])
+    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
     @scala.inline
-    def deleteJoin: Self = this.set("join", js.undefined)
+    def setProfile(value: circle | quad): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaterial(value: PathSymbol3DLayerMaterialProperties): Self = this.set("material", value.asInstanceOf[js.Any])
+    def setProfileRotation(value: heading | all): Self = StObject.set(x, "profileRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaterial: Self = this.set("material", js.undefined)
+    def setProfileRotationUndefined: Self = StObject.set(x, "profileRotation", js.undefined)
     
     @scala.inline
-    def setProfile(value: circle | quad): Self = this.set("profile", value.asInstanceOf[js.Any])
+    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
     @scala.inline
-    def deleteProfile: Self = this.set("profile", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileRotation(value: heading | all): Self = this.set("profileRotation", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteProfileRotation: Self = this.set("profileRotation", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

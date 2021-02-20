@@ -1,5 +1,6 @@
 package typings.chromeApps.chrome
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,6 +15,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @requires Permissions: 'power'
   * @since Chrome 27.
   */
-@JSGlobal("chrome.power")
-@js.native
-object power extends js.Object
+object power

@@ -13,12 +13,13 @@ import typings.maximMazurokGapiClientCompute.anon.RegionRequestIdResourceUserIp
 import typings.maximMazurokGapiClientCompute.anon.RegionResource
 import typings.maximMazurokGapiClientCompute.anon.ResourceSourceImage
 import typings.maximMazurokGapiClientCompute.anon.SourceImageUserIp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionDisksResource extends js.Object {
+trait RegionDisksResource extends StObject {
   
   /** Adds existing resource policies to a regional disk. You can only add one policy which will be applied to this disk for scheduling snapshot creation. */
   def addResourcePolicies(request: AltDiskFields): Request[Operation] = js.native

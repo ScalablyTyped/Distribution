@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hashes extends js.Object {
+trait Hashes extends StObject {
   
   // The CRC32 value of the file in little endian (if available). Read-only.
   var crc32Hash: js.UndefOr[NullableOption[String]] = js.native
@@ -31,54 +32,42 @@ object Hashes {
   }
   
   @scala.inline
-  implicit class HashesOps[Self <: Hashes] (val x: Self) extends AnyVal {
+  implicit class HashesMutableBuilder[Self <: Hashes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCrc32Hash(value: NullableOption[String]): Self = StObject.set(x, "crc32Hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrc32HashNull: Self = StObject.set(x, "crc32Hash", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrc32HashUndefined: Self = StObject.set(x, "crc32Hash", js.undefined)
     
     @scala.inline
-    def setCrc32Hash(value: NullableOption[String]): Self = this.set("crc32Hash", value.asInstanceOf[js.Any])
+    def setQuickXorHash(value: NullableOption[String]): Self = StObject.set(x, "quickXorHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCrc32Hash: Self = this.set("crc32Hash", js.undefined)
+    def setQuickXorHashNull: Self = StObject.set(x, "quickXorHash", null)
     
     @scala.inline
-    def setCrc32HashNull: Self = this.set("crc32Hash", null)
+    def setQuickXorHashUndefined: Self = StObject.set(x, "quickXorHash", js.undefined)
     
     @scala.inline
-    def setQuickXorHash(value: NullableOption[String]): Self = this.set("quickXorHash", value.asInstanceOf[js.Any])
+    def setSha1Hash(value: NullableOption[String]): Self = StObject.set(x, "sha1Hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuickXorHash: Self = this.set("quickXorHash", js.undefined)
+    def setSha1HashNull: Self = StObject.set(x, "sha1Hash", null)
     
     @scala.inline
-    def setQuickXorHashNull: Self = this.set("quickXorHash", null)
+    def setSha1HashUndefined: Self = StObject.set(x, "sha1Hash", js.undefined)
     
     @scala.inline
-    def setSha1Hash(value: NullableOption[String]): Self = this.set("sha1Hash", value.asInstanceOf[js.Any])
+    def setSha256Hash(value: NullableOption[String]): Self = StObject.set(x, "sha256Hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSha1Hash: Self = this.set("sha1Hash", js.undefined)
+    def setSha256HashNull: Self = StObject.set(x, "sha256Hash", null)
     
     @scala.inline
-    def setSha1HashNull: Self = this.set("sha1Hash", null)
-    
-    @scala.inline
-    def setSha256Hash(value: NullableOption[String]): Self = this.set("sha256Hash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSha256Hash: Self = this.set("sha256Hash", js.undefined)
-    
-    @scala.inline
-    def setSha256HashNull: Self = this.set("sha256Hash", null)
+    def setSha256HashUndefined: Self = StObject.set(x, "sha256Hash", js.undefined)
   }
 }

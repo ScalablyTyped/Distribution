@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.UsersUpdateAuthenticatedEndpoint
 import typings.octokitTypes.endpointsMod.UsersUpdateAuthenticatedRequestOptions
 import typings.octokitTypes.endpointsMod.UsersUpdateAuthenticatedResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersUsersUpdateAuthenticatedEndpoint extends js.Object {
+trait ParametersUsersUpdateAuthenticatedEndpoint extends StObject {
   
   var parameters: UsersUpdateAuthenticatedEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersUsersUpdateAuthenticatedEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersUsersUpdateAuthenticatedEndpointOps[Self <: ParametersUsersUpdateAuthenticatedEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersUsersUpdateAuthenticatedEndpointMutableBuilder[Self <: ParametersUsersUpdateAuthenticatedEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: UsersUpdateAuthenticatedEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: UsersUpdateAuthenticatedRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: UsersUpdateAuthenticatedEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: UsersUpdateAuthenticatedRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[UsersUpdateAuthenticatedResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[UsersUpdateAuthenticatedResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

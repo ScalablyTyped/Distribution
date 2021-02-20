@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserDetail extends js.Object {
+trait UserDetail extends StObject {
   
   var Arn: js.UndefOr[arnType] = js.native
   
@@ -63,90 +64,78 @@ object UserDetail {
   }
   
   @scala.inline
-  implicit class UserDetailOps[Self <: UserDetail] (val x: Self) extends AnyVal {
+  implicit class UserDetailMutableBuilder[Self <: UserDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachedManagedPolicies(value: attachedPoliciesListType): Self = StObject.set(x, "AttachedManagedPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: arnType): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setAttachedManagedPoliciesUndefined: Self = StObject.set(x, "AttachedManagedPolicies", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setAttachedManagedPoliciesVarargs(value: AttachedPolicy*): Self = StObject.set(x, "AttachedManagedPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setAttachedManagedPoliciesVarargs(value: AttachedPolicy*): Self = this.set("AttachedManagedPolicies", js.Array(value :_*))
+    def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachedManagedPolicies(value: attachedPoliciesListType): Self = this.set("AttachedManagedPolicies", value.asInstanceOf[js.Any])
+    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
     @scala.inline
-    def deleteAttachedManagedPolicies: Self = this.set("AttachedManagedPolicies", js.undefined)
+    def setGroupList(value: groupNameListType): Self = StObject.set(x, "GroupList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDate(value: dateType): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    def setGroupListUndefined: Self = StObject.set(x, "GroupList", js.undefined)
     
     @scala.inline
-    def deleteCreateDate: Self = this.set("CreateDate", js.undefined)
+    def setGroupListVarargs(value: groupNameType*): Self = StObject.set(x, "GroupList", js.Array(value :_*))
     
     @scala.inline
-    def setGroupListVarargs(value: groupNameType*): Self = this.set("GroupList", js.Array(value :_*))
+    def setPath(value: pathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupList(value: groupNameListType): Self = this.set("GroupList", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
     
     @scala.inline
-    def deleteGroupList: Self = this.set("GroupList", js.undefined)
+    def setPermissionsBoundary(value: AttachedPermissionsBoundary): Self = StObject.set(x, "PermissionsBoundary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: pathType): Self = this.set("Path", value.asInstanceOf[js.Any])
+    def setPermissionsBoundaryUndefined: Self = StObject.set(x, "PermissionsBoundary", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("Path", js.undefined)
+    def setTags(value: tagListType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionsBoundary(value: AttachedPermissionsBoundary): Self = this.set("PermissionsBoundary", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deletePermissionsBoundary: Self = this.set("PermissionsBoundary", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setUserId(value: idType): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: tagListType): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserId(value: idType): Self = this.set("UserId", value.asInstanceOf[js.Any])
+    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
     
     @scala.inline
-    def deleteUserId: Self = this.set("UserId", js.undefined)
+    def setUserPolicyList(value: policyDetailListType): Self = StObject.set(x, "UserPolicyList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserName(value: userNameType): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    def setUserPolicyListUndefined: Self = StObject.set(x, "UserPolicyList", js.undefined)
     
     @scala.inline
-    def deleteUserName: Self = this.set("UserName", js.undefined)
-    
-    @scala.inline
-    def setUserPolicyListVarargs(value: PolicyDetail*): Self = this.set("UserPolicyList", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserPolicyList(value: policyDetailListType): Self = this.set("UserPolicyList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserPolicyList: Self = this.set("UserPolicyList", js.undefined)
+    def setUserPolicyListVarargs(value: PolicyDetail*): Self = StObject.set(x, "UserPolicyList", js.Array(value :_*))
   }
 }

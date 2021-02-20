@@ -1,5 +1,6 @@
 package typings.mongodb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,21 +19,9 @@ object BulkWriteDeleteManyOperation {
   }
   
   @scala.inline
-  implicit class BulkWriteDeleteManyOperationOps[Self <: BulkWriteDeleteManyOperation[_], TSchema] (val x: Self with BulkWriteDeleteManyOperation[TSchema]) extends AnyVal {
+  implicit class BulkWriteDeleteManyOperationMutableBuilder[Self <: BulkWriteDeleteManyOperation[_], TSchema] (val x: Self with BulkWriteDeleteManyOperation[TSchema]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeleteMany(value: BulkWriteDeleteOperation[TSchema]): Self = this.set("deleteMany", value.asInstanceOf[js.Any])
+    def setDeleteMany(value: BulkWriteDeleteOperation[TSchema]): Self = StObject.set(x, "deleteMany", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.ssh2Streams.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Header extends js.Object {
+trait Header extends StObject {
   
   /**
     * Any text that comes after the software name/version.
@@ -36,33 +37,21 @@ object Header {
   }
   
   @scala.inline
-  implicit class HeaderOps[Self <: Header] (val x: Self) extends AnyVal {
+  implicit class HeaderMutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGreeting(value: String): Self = StObject.set(x, "greeting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGreetingUndefined: Self = StObject.set(x, "greeting", js.undefined)
     
     @scala.inline
-    def setComments(value: String): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setIdentRaw(value: String): Self = StObject.set(x, "identRaw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentRaw(value: String): Self = this.set("identRaw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersions(value: Versions): Self = this.set("versions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGreeting(value: String): Self = this.set("greeting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGreeting: Self = this.set("greeting", js.undefined)
+    def setVersions(value: Versions): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
   }
 }

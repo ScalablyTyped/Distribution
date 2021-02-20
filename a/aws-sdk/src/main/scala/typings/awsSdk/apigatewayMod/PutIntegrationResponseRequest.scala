@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutIntegrationResponseRequest extends js.Object {
+trait PutIntegrationResponseRequest extends StObject {
   
   /**
     * Specifies how to handle response payload content type conversions. Supported values are CONVERT_TO_BINARY and CONVERT_TO_TEXT, with the following behaviors:  CONVERT_TO_BINARY: Converts a response payload from a Base64-encoded string to the corresponding binary blob. CONVERT_TO_TEXT: Converts a response payload from a binary blob to a Base64-encoded string.  If this property is not defined, the response payload will be passed through from the integration response to the method response without modification.
@@ -56,54 +57,42 @@ object PutIntegrationResponseRequest {
   }
   
   @scala.inline
-  implicit class PutIntegrationResponseRequestOps[Self <: PutIntegrationResponseRequest] (val x: Self) extends AnyVal {
+  implicit class PutIntegrationResponseRequestMutableBuilder[Self <: PutIntegrationResponseRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentHandling(value: ContentHandlingStrategy): Self = StObject.set(x, "contentHandling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentHandlingUndefined: Self = StObject.set(x, "contentHandling", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpMethod(value: String): Self = this.set("httpMethod", value.asInstanceOf[js.Any])
+    def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: String): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    def setResponseParameters(value: MapOfStringToString): Self = StObject.set(x, "responseParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestApiId(value: String): Self = this.set("restApiId", value.asInstanceOf[js.Any])
+    def setResponseParametersUndefined: Self = StObject.set(x, "responseParameters", js.undefined)
     
     @scala.inline
-    def setStatusCode(value: StatusCode): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    def setResponseTemplates(value: MapOfStringToString): Self = StObject.set(x, "responseTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentHandling(value: ContentHandlingStrategy): Self = this.set("contentHandling", value.asInstanceOf[js.Any])
+    def setResponseTemplatesUndefined: Self = StObject.set(x, "responseTemplates", js.undefined)
     
     @scala.inline
-    def deleteContentHandling: Self = this.set("contentHandling", js.undefined)
+    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseParameters(value: MapOfStringToString): Self = this.set("responseParameters", value.asInstanceOf[js.Any])
+    def setSelectionPattern(value: String): Self = StObject.set(x, "selectionPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResponseParameters: Self = this.set("responseParameters", js.undefined)
+    def setSelectionPatternUndefined: Self = StObject.set(x, "selectionPattern", js.undefined)
     
     @scala.inline
-    def setResponseTemplates(value: MapOfStringToString): Self = this.set("responseTemplates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseTemplates: Self = this.set("responseTemplates", js.undefined)
-    
-    @scala.inline
-    def setSelectionPattern(value: String): Self = this.set("selectionPattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectionPattern: Self = this.set("selectionPattern", js.undefined)
+    def setStatusCode(value: StatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SerachFieldMatch...
   */
 @js.native
-trait ISerachFieldMatch extends js.Object {
+trait ISerachFieldMatch extends StObject {
   
   /**
     * Position of the field in the list of fields, starting from 0.
@@ -42,36 +43,24 @@ object ISerachFieldMatch {
   }
   
   @scala.inline
-  implicit class ISerachFieldMatchOps[Self <: ISerachFieldMatch] (val x: Self) extends AnyVal {
+  implicit class ISerachFieldMatchMutableBuilder[Self <: ISerachFieldMatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQField(value: Double): Self = StObject.set(x, "qField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQNoOfMatches(value: Double): Self = StObject.set(x, "qNoOfMatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQTerms(value: js.Array[Double]): Self = StObject.set(x, "qTerms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQField(value: Double): Self = this.set("qField", value.asInstanceOf[js.Any])
+    def setQTermsVarargs(value: Double*): Self = StObject.set(x, "qTerms", js.Array(value :_*))
     
     @scala.inline
-    def setQNoOfMatches(value: Double): Self = this.set("qNoOfMatches", value.asInstanceOf[js.Any])
+    def setQValues(value: js.Array[Double]): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQTermsVarargs(value: Double*): Self = this.set("qTerms", js.Array(value :_*))
-    
-    @scala.inline
-    def setQTerms(value: js.Array[Double]): Self = this.set("qTerms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQValuesVarargs(value: Double*): Self = this.set("qValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setQValues(value: js.Array[Double]): Self = this.set("qValues", value.asInstanceOf[js.Any])
+    def setQValuesVarargs(value: Double*): Self = StObject.set(x, "qValues", js.Array(value :_*))
   }
 }

@@ -6,12 +6,13 @@ import typings.pouchdbCore.pouchdbCoreStrings.all_docs
 import typings.pouchdbCore.pouchdbCoreStrings.main_only
 import typings.pouchdbCore.pouchdbCoreStrings.now
 import typings.pouchdbFind.PouchDB.Find.Selector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangesOptions extends js.Object {
+trait ChangesOptions extends StObject {
   
   /** Include attachments. */
   var attachments: js.UndefOr[Boolean] = js.native
@@ -122,138 +123,126 @@ object ChangesOptions {
   }
   
   @scala.inline
-  implicit class ChangesOptionsOps[Self <: ChangesOptions] (val x: Self) extends AnyVal {
+  implicit class ChangesOptionsMutableBuilder[Self <: ChangesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachments(value: Boolean): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatch_size(value: Double): Self = StObject.set(x, "batch_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachments(value: Boolean): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    def setBatch_sizeUndefined: Self = StObject.set(x, "batch_size", js.undefined)
     
     @scala.inline
-    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatch_size(value: Double): Self = this.set("batch_size", value.asInstanceOf[js.Any])
+    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
     @scala.inline
-    def deleteBatch_size: Self = this.set("batch_size", js.undefined)
+    def setConflicts(value: Boolean): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinary(value: Boolean): Self = this.set("binary", value.asInstanceOf[js.Any])
+    def setConflictsUndefined: Self = StObject.set(x, "conflicts", js.undefined)
     
     @scala.inline
-    def deleteBinary: Self = this.set("binary", js.undefined)
+    def setDescending(value: Boolean): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConflicts(value: Boolean): Self = this.set("conflicts", value.asInstanceOf[js.Any])
+    def setDescendingUndefined: Self = StObject.set(x, "descending", js.undefined)
     
     @scala.inline
-    def deleteConflicts: Self = this.set("conflicts", js.undefined)
+    def setDoc_ids(value: js.Array[String]): Self = StObject.set(x, "doc_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescending(value: Boolean): Self = this.set("descending", value.asInstanceOf[js.Any])
+    def setDoc_idsUndefined: Self = StObject.set(x, "doc_ids", js.undefined)
     
     @scala.inline
-    def deleteDescending: Self = this.set("descending", js.undefined)
+    def setDoc_idsVarargs(value: String*): Self = StObject.set(x, "doc_ids", js.Array(value :_*))
     
     @scala.inline
-    def setDoc_idsVarargs(value: String*): Self = this.set("doc_ids", js.Array(value :_*))
+    def setFilter(value: String | (js.Function2[/* doc */ js.Any, /* params */ js.Any, _])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoc_ids(value: js.Array[String]): Self = this.set("doc_ids", value.asInstanceOf[js.Any])
+    def setFilterFunction2(value: (/* doc */ js.Any, /* params */ js.Any) => _): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteDoc_ids: Self = this.set("doc_ids", js.undefined)
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def setFilterFunction2(value: (/* doc */ js.Any, /* params */ js.Any) => _): Self = this.set("filter", js.Any.fromFunction2(value))
+    def setHeartbeat(value: Double | `false`): Self = StObject.set(x, "heartbeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String | (js.Function2[/* doc */ js.Any, /* params */ js.Any, _])): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setHeartbeatUndefined: Self = StObject.set(x, "heartbeat", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setInclude_docs(value: Boolean): Self = StObject.set(x, "include_docs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeartbeat(value: Double | `false`): Self = this.set("heartbeat", value.asInstanceOf[js.Any])
+    def setInclude_docsUndefined: Self = StObject.set(x, "include_docs", js.undefined)
     
     @scala.inline
-    def deleteHeartbeat: Self = this.set("heartbeat", js.undefined)
+    def setLimit(value: Double | `false`): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude_docs(value: Boolean): Self = this.set("include_docs", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteInclude_docs: Self = this.set("include_docs", js.undefined)
+    def setLive(value: Boolean): Self = StObject.set(x, "live", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double | `false`): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setLiveUndefined: Self = StObject.set(x, "live", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setQuery_params(value: StringDictionary[js.Any]): Self = StObject.set(x, "query_params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLive(value: Boolean): Self = this.set("live", value.asInstanceOf[js.Any])
+    def setQuery_paramsUndefined: Self = StObject.set(x, "query_params", js.undefined)
     
     @scala.inline
-    def deleteLive: Self = this.set("live", js.undefined)
+    def setReturn_docs(value: Boolean): Self = StObject.set(x, "return_docs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery_params(value: StringDictionary[js.Any]): Self = this.set("query_params", value.asInstanceOf[js.Any])
+    def setReturn_docsUndefined: Self = StObject.set(x, "return_docs", js.undefined)
     
     @scala.inline
-    def deleteQuery_params: Self = this.set("query_params", js.undefined)
+    def setSelector(value: Selector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturn_docs(value: Boolean): Self = this.set("return_docs", value.asInstanceOf[js.Any])
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
     @scala.inline
-    def deleteReturn_docs: Self = this.set("return_docs", js.undefined)
+    def setSeq_interval(value: Double): Self = StObject.set(x, "seq_interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: Selector): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setSeq_intervalUndefined: Self = StObject.set(x, "seq_interval", js.undefined)
     
     @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setSince(value: now | Double | String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeq_interval(value: Double): Self = this.set("seq_interval", value.asInstanceOf[js.Any])
+    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
     
     @scala.inline
-    def deleteSeq_interval: Self = this.set("seq_interval", js.undefined)
+    def setStyle(value: main_only | all_docs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSince(value: now | Double | String): Self = this.set("since", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteSince: Self = this.set("since", js.undefined)
+    def setTimeout(value: Double | `false`): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: main_only | all_docs): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double | `false`): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setView(value: String): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

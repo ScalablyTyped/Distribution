@@ -1,24 +1,42 @@
 package typings.inversifyRestifyUtils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("inversify-restify-utils/dts/constants", JSImport.Namespace)
-@js.native
-object constantsMod extends js.Object {
+object constantsMod {
   
-  @js.native
-  object METADATA_KEY extends js.Object {
+  object METADATA_KEY {
     
-    var controller: String = js.native
+    @JSImport("inversify-restify-utils/dts/constants", "METADATA_KEY")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var controllerMethod: String = js.native
+    @JSImport("inversify-restify-utils/dts/constants", "METADATA_KEY.controller")
+    @js.native
+    def controller: String = js.native
+    
+    @JSImport("inversify-restify-utils/dts/constants", "METADATA_KEY.controllerMethod")
+    @js.native
+    def controllerMethod: String = js.native
+    @scala.inline
+    def controllerMethod_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controllerMethod")(x.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def controller_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controller")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object TYPE extends js.Object {
+  object TYPE {
     
-    var Controller: js.Symbol = js.native
+    @JSImport("inversify-restify-utils/dts/constants", "TYPE")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("inversify-restify-utils/dts/constants", "TYPE.Controller")
+    @js.native
+    def Controller: js.Symbol = js.native
+    @scala.inline
+    def Controller_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Controller")(x.asInstanceOf[js.Any])
   }
 }

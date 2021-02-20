@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticinferenceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAcceleratorOfferingsResponse extends js.Object {
+trait DescribeAcceleratorOfferingsResponse extends StObject {
   
   /**
     *  The list of accelerator type offerings for a specific location. 
@@ -21,27 +22,15 @@ object DescribeAcceleratorOfferingsResponse {
   }
   
   @scala.inline
-  implicit class DescribeAcceleratorOfferingsResponseOps[Self <: DescribeAcceleratorOfferingsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeAcceleratorOfferingsResponseMutableBuilder[Self <: DescribeAcceleratorOfferingsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceleratorTypeOfferings(value: AcceleratorTypeOfferingList): Self = StObject.set(x, "acceleratorTypeOfferings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceleratorTypeOfferingsUndefined: Self = StObject.set(x, "acceleratorTypeOfferings", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAcceleratorTypeOfferingsVarargs(value: AcceleratorTypeOffering*): Self = this.set("acceleratorTypeOfferings", js.Array(value :_*))
-    
-    @scala.inline
-    def setAcceleratorTypeOfferings(value: AcceleratorTypeOfferingList): Self = this.set("acceleratorTypeOfferings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAcceleratorTypeOfferings: Self = this.set("acceleratorTypeOfferings", js.undefined)
+    def setAcceleratorTypeOfferingsVarargs(value: AcceleratorTypeOffering*): Self = StObject.set(x, "acceleratorTypeOfferings", js.Array(value :_*))
   }
 }

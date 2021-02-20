@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHTMLMSCSSKeyframeRule extends js.Object {
+trait IHTMLMSCSSKeyframeRule extends StObject {
   
   @JSName("MSHTML.IHTMLMSCSSKeyframeRule_typekey")
   var MSHTMLDotIHTMLMSCSSKeyframeRule_typekey: IHTMLMSCSSKeyframeRule = js.native
@@ -28,27 +29,15 @@ object IHTMLMSCSSKeyframeRule {
   }
   
   @scala.inline
-  implicit class IHTMLMSCSSKeyframeRuleOps[Self <: IHTMLMSCSSKeyframeRule] (val x: Self) extends AnyVal {
+  implicit class IHTMLMSCSSKeyframeRuleMutableBuilder[Self <: IHTMLMSCSSKeyframeRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyText(value: String): Self = StObject.set(x, "keyText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMSHTMLDotIHTMLMSCSSKeyframeRule_typekey(value: IHTMLMSCSSKeyframeRule): Self = StObject.set(x, "MSHTML.IHTMLMSCSSKeyframeRule_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMSHTMLDotIHTMLMSCSSKeyframeRule_typekey(value: IHTMLMSCSSKeyframeRule): Self = this.set("MSHTML.IHTMLMSCSSKeyframeRule_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyText(value: String): Self = this.set("keyText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: IHTMLRuleStyle): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: IHTMLRuleStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

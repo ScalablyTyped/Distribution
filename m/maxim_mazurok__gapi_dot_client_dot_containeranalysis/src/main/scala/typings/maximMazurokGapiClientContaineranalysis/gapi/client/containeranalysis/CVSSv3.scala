@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CVSSv3 extends js.Object {
+trait CVSSv3 extends StObject {
   
   var attackComplexity: js.UndefOr[String] = js.native
   
@@ -40,84 +41,72 @@ object CVSSv3 {
   }
   
   @scala.inline
-  implicit class CVSSv3Ops[Self <: CVSSv3] (val x: Self) extends AnyVal {
+  implicit class CVSSv3MutableBuilder[Self <: CVSSv3] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttackComplexity(value: String): Self = StObject.set(x, "attackComplexity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttackComplexityUndefined: Self = StObject.set(x, "attackComplexity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttackVector(value: String): Self = StObject.set(x, "attackVector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttackComplexity(value: String): Self = this.set("attackComplexity", value.asInstanceOf[js.Any])
+    def setAttackVectorUndefined: Self = StObject.set(x, "attackVector", js.undefined)
     
     @scala.inline
-    def deleteAttackComplexity: Self = this.set("attackComplexity", js.undefined)
+    def setAvailabilityImpact(value: String): Self = StObject.set(x, "availabilityImpact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttackVector(value: String): Self = this.set("attackVector", value.asInstanceOf[js.Any])
+    def setAvailabilityImpactUndefined: Self = StObject.set(x, "availabilityImpact", js.undefined)
     
     @scala.inline
-    def deleteAttackVector: Self = this.set("attackVector", js.undefined)
+    def setBaseScore(value: Double): Self = StObject.set(x, "baseScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityImpact(value: String): Self = this.set("availabilityImpact", value.asInstanceOf[js.Any])
+    def setBaseScoreUndefined: Self = StObject.set(x, "baseScore", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityImpact: Self = this.set("availabilityImpact", js.undefined)
+    def setConfidentialityImpact(value: String): Self = StObject.set(x, "confidentialityImpact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseScore(value: Double): Self = this.set("baseScore", value.asInstanceOf[js.Any])
+    def setConfidentialityImpactUndefined: Self = StObject.set(x, "confidentialityImpact", js.undefined)
     
     @scala.inline
-    def deleteBaseScore: Self = this.set("baseScore", js.undefined)
+    def setExploitabilityScore(value: Double): Self = StObject.set(x, "exploitabilityScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidentialityImpact(value: String): Self = this.set("confidentialityImpact", value.asInstanceOf[js.Any])
+    def setExploitabilityScoreUndefined: Self = StObject.set(x, "exploitabilityScore", js.undefined)
     
     @scala.inline
-    def deleteConfidentialityImpact: Self = this.set("confidentialityImpact", js.undefined)
+    def setImpactScore(value: Double): Self = StObject.set(x, "impactScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExploitabilityScore(value: Double): Self = this.set("exploitabilityScore", value.asInstanceOf[js.Any])
+    def setImpactScoreUndefined: Self = StObject.set(x, "impactScore", js.undefined)
     
     @scala.inline
-    def deleteExploitabilityScore: Self = this.set("exploitabilityScore", js.undefined)
+    def setIntegrityImpact(value: String): Self = StObject.set(x, "integrityImpact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpactScore(value: Double): Self = this.set("impactScore", value.asInstanceOf[js.Any])
+    def setIntegrityImpactUndefined: Self = StObject.set(x, "integrityImpact", js.undefined)
     
     @scala.inline
-    def deleteImpactScore: Self = this.set("impactScore", js.undefined)
+    def setPrivilegesRequired(value: String): Self = StObject.set(x, "privilegesRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegrityImpact(value: String): Self = this.set("integrityImpact", value.asInstanceOf[js.Any])
+    def setPrivilegesRequiredUndefined: Self = StObject.set(x, "privilegesRequired", js.undefined)
     
     @scala.inline
-    def deleteIntegrityImpact: Self = this.set("integrityImpact", js.undefined)
+    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivilegesRequired(value: String): Self = this.set("privilegesRequired", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deletePrivilegesRequired: Self = this.set("privilegesRequired", js.undefined)
+    def setUserInteraction(value: String): Self = StObject.set(x, "userInteraction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
-    
-    @scala.inline
-    def setUserInteraction(value: String): Self = this.set("userInteraction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserInteraction: Self = this.set("userInteraction", js.undefined)
+    def setUserInteractionUndefined: Self = StObject.set(x, "userInteraction", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITileSourceOptions extends js.Object {
+trait ITileSourceOptions extends StObject {
   
   /**
     * A bounding box that specifies where tiles are available.
@@ -37,42 +38,30 @@ object ITileSourceOptions {
   }
   
   @scala.inline
-  implicit class ITileSourceOptionsOps[Self <: ITileSourceOptions] (val x: Self) extends AnyVal {
+  implicit class ITileSourceOptionsMutableBuilder[Self <: ITileSourceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: LocationRect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUriConstructorFunction1(value: /* tile */ PyramidTileId => String): Self = this.set("uriConstructor", js.Any.fromFunction1(value))
+    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
     @scala.inline
-    def setUriConstructor(value: String | (js.Function1[/* tile */ PyramidTileId, String])): Self = this.set("uriConstructor", value.asInstanceOf[js.Any])
+    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounds(value: LocationRect): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
     
     @scala.inline
-    def deleteBounds: Self = this.set("bounds", js.undefined)
+    def setUriConstructor(value: String | (js.Function1[/* tile */ PyramidTileId, String])): Self = StObject.set(x, "uriConstructor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
-    
-    @scala.inline
-    def setMinZoom(value: Double): Self = this.set("minZoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinZoom: Self = this.set("minZoom", js.undefined)
+    def setUriConstructorFunction1(value: /* tile */ PyramidTileId => String): Self = StObject.set(x, "uriConstructor", js.Any.fromFunction1(value))
   }
 }

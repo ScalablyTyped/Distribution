@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateTagOptionInput extends js.Object {
+trait UpdateTagOptionInput extends StObject {
   
   /**
     * The updated active state.
@@ -31,33 +32,21 @@ object UpdateTagOptionInput {
   }
   
   @scala.inline
-  implicit class UpdateTagOptionInputOps[Self <: UpdateTagOptionInput] (val x: Self) extends AnyVal {
+  implicit class UpdateTagOptionInputMutableBuilder[Self <: UpdateTagOptionInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: TagOptionActive): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "Active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: TagOptionId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: TagOptionId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setValue(value: TagOptionValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: TagOptionActive): Self = this.set("Active", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActive: Self = this.set("Active", js.undefined)
-    
-    @scala.inline
-    def setValue(value: TagOptionValue): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("Value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

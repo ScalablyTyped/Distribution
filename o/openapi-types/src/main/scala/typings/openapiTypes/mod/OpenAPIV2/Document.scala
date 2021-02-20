@@ -1,5 +1,6 @@
 package typings.openapiTypes.mod.OpenAPIV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,133 +56,121 @@ object Document {
   }
   
   @scala.inline
-  implicit class DocumentOps[Self <: Document] (val x: Self) extends AnyVal {
+  implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsumes(value: MimeTypes): Self = StObject.set(x, "consumes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfo(value: InfoObject): Self = this.set("info", value.asInstanceOf[js.Any])
+    def setConsumesUndefined: Self = StObject.set(x, "consumes", js.undefined)
     
     @scala.inline
-    def setPaths(value: PathsObject): Self = this.set("paths", value.asInstanceOf[js.Any])
+    def setConsumesVarargs(value: String*): Self = StObject.set(x, "consumes", js.Array(value :_*))
     
     @scala.inline
-    def setSwagger(value: String): Self = this.set("swagger", value.asInstanceOf[js.Any])
+    def setDefinitions(value: DefinitionsObject): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasePath(value: String): Self = this.set("basePath", value.asInstanceOf[js.Any])
+    def setDefinitionsUndefined: Self = StObject.set(x, "definitions", js.undefined)
     
     @scala.inline
-    def deleteBasePath: Self = this.set("basePath", js.undefined)
+    def setExternalDocs(value: ExternalDocumentationObject): Self = StObject.set(x, "externalDocs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumesVarargs(value: String*): Self = this.set("consumes", js.Array(value :_*))
+    def setExternalDocsUndefined: Self = StObject.set(x, "externalDocs", js.undefined)
     
     @scala.inline
-    def setConsumes(value: MimeTypes): Self = this.set("consumes", value.asInstanceOf[js.Any])
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConsumes: Self = this.set("consumes", js.undefined)
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def setDefinitions(value: DefinitionsObject): Self = this.set("definitions", value.asInstanceOf[js.Any])
+    def setInfo(value: InfoObject): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefinitions: Self = this.set("definitions", js.undefined)
+    def setParameters(value: ParametersDefinitionsObject): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalDocs(value: ExternalDocumentationObject): Self = this.set("externalDocs", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteExternalDocs: Self = this.set("externalDocs", js.undefined)
+    def setPaths(value: PathsObject): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setProduces(value: MimeTypes): Self = StObject.set(x, "produces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setProducesUndefined: Self = StObject.set(x, "produces", js.undefined)
     
     @scala.inline
-    def setParameters(value: ParametersDefinitionsObject): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setProducesVarargs(value: String*): Self = StObject.set(x, "produces", js.Array(value :_*))
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setResponses(value: ResponsesDefinitionsObject): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProducesVarargs(value: String*): Self = this.set("produces", js.Array(value :_*))
+    def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
     @scala.inline
-    def setProduces(value: MimeTypes): Self = this.set("produces", value.asInstanceOf[js.Any])
+    def setSchemes(value: js.Array[String]): Self = StObject.set(x, "schemes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProduces: Self = this.set("produces", js.undefined)
+    def setSchemesUndefined: Self = StObject.set(x, "schemes", js.undefined)
     
     @scala.inline
-    def setResponses(value: ResponsesDefinitionsObject): Self = this.set("responses", value.asInstanceOf[js.Any])
+    def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value :_*))
     
     @scala.inline
-    def deleteResponses: Self = this.set("responses", js.undefined)
+    def setSecurity(value: js.Array[SecurityRequirementObject]): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemesVarargs(value: String*): Self = this.set("schemes", js.Array(value :_*))
+    def setSecurityDefinitions(value: SecurityDefinitionsObject): Self = StObject.set(x, "securityDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemes(value: js.Array[String]): Self = this.set("schemes", value.asInstanceOf[js.Any])
+    def setSecurityDefinitionsUndefined: Self = StObject.set(x, "securityDefinitions", js.undefined)
     
     @scala.inline
-    def deleteSchemes: Self = this.set("schemes", js.undefined)
+    def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
     
     @scala.inline
-    def setSecurityVarargs(value: SecurityRequirementObject*): Self = this.set("security", js.Array(value :_*))
+    def setSecurityVarargs(value: SecurityRequirementObject*): Self = StObject.set(x, "security", js.Array(value :_*))
     
     @scala.inline
-    def setSecurity(value: js.Array[SecurityRequirementObject]): Self = this.set("security", value.asInstanceOf[js.Any])
+    def setSwagger(value: String): Self = StObject.set(x, "swagger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSecurity: Self = this.set("security", js.undefined)
+    def setTags(value: js.Array[TagObject]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityDefinitions(value: SecurityDefinitionsObject): Self = this.set("securityDefinitions", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteSecurityDefinitions: Self = this.set("securityDefinitions", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: TagObject*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: js.Array[TagObject]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def `setX-express-openapi-additional-middlewareVarargs`(value: (js.Function3[js.Any, js.Any, js.Any, js.Promise[Unit] | Unit])*): Self = this.set("x-express-openapi-additional-middleware", js.Array(value :_*))
+    def setTagsVarargs(value: TagObject*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
     def `setX-express-openapi-additional-middleware`(
       value: js.Array[
           js.Function3[/* request */ _, /* response */ _, /* next */ _, js.Promise[Unit] | Unit]
         ]
-    ): Self = this.set("x-express-openapi-additional-middleware", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "x-express-openapi-additional-middleware", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteX-express-openapi-additional-middleware`: Self = this.set("x-express-openapi-additional-middleware", js.undefined)
+    def `setX-express-openapi-additional-middlewareUndefined`: Self = StObject.set(x, "x-express-openapi-additional-middleware", js.undefined)
     
     @scala.inline
-    def `setX-express-openapi-validation-strict`(value: Boolean): Self = this.set("x-express-openapi-validation-strict", value.asInstanceOf[js.Any])
+    def `setX-express-openapi-additional-middlewareVarargs`(value: (js.Function3[js.Any, js.Any, js.Any, js.Promise[Unit] | Unit])*): Self = StObject.set(x, "x-express-openapi-additional-middleware", js.Array(value :_*))
     
     @scala.inline
-    def `deleteX-express-openapi-validation-strict`: Self = this.set("x-express-openapi-validation-strict", js.undefined)
+    def `setX-express-openapi-validation-strict`(value: Boolean): Self = StObject.set(x, "x-express-openapi-validation-strict", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def `setX-express-openapi-validation-strictUndefined`: Self = StObject.set(x, "x-express-openapi-validation-strict", js.undefined)
   }
 }

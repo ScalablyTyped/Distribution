@@ -12,14 +12,14 @@ import typings.ts3NodejsLibrary.propertyTypesMod.ChannelEdit
 import typings.ts3NodejsLibrary.responseTypesMod.ChannelEntry
 import typings.ts3NodejsLibrary.responseTypesMod.ChannelInfo
 import typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts3-nodejs-library/lib/node/Channel", JSImport.Namespace)
-@js.native
-object channelMod extends js.Object {
+object channelMod {
   
+  @JSImport("ts3-nodejs-library/lib/node/Channel", "TeamSpeakChannel")
   @js.native
   class TeamSpeakChannel protected () extends Abstract[ChannelEntry] {
     def this(parent: TeamSpeak, list: ChannelEntry) = this()
@@ -142,14 +142,19 @@ object channelMod extends js.Object {
     def totalClientsFamily: Double = js.native
   }
   /* static members */
-  @js.native
-  object TeamSpeakChannel extends js.Object {
+  object TeamSpeakChannel {
     
     /** retrieves the client id from a string or teamspeak client */
+    @JSImport("ts3-nodejs-library/lib/node/Channel", "TeamSpeakChannel.getId")
+    @js.native
     def getId[T /* <: ChannelType */](): js.UndefOr[String] = js.native
+    @JSImport("ts3-nodejs-library/lib/node/Channel", "TeamSpeakChannel.getId")
+    @js.native
     def getId[T /* <: ChannelType */](channel: T): js.UndefOr[String] = js.native
     
     /** retrieves the clients from an array */
+    @JSImport("ts3-nodejs-library/lib/node/Channel", "TeamSpeakChannel.getMultipleIds")
+    @js.native
     def getMultipleIds(channels: MultiChannelType): js.Array[String] = js.native
     
     type ChannelType = String | TeamSpeakChannel

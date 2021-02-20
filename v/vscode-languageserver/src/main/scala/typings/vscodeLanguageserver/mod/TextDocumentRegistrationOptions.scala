@@ -1,12 +1,13 @@
 package typings.vscodeLanguageserver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver", "TextDocumentRegistrationOptions")
-@js.native
-object TextDocumentRegistrationOptions extends js.Object {
+object TextDocumentRegistrationOptions {
   
+  @JSImport("vscode-languageserver", "TextDocumentRegistrationOptions.is")
+  @js.native
   def is(value: js.Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.TextDocumentRegistrationOptions */ Boolean = js.native
 }

@@ -5,6 +5,7 @@ import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OneNote.Interfaces.NotebookData
 import typings.officeJsPreview.OneNote.Interfaces.NotebookLoadOptions
 import typings.officeJsPreview.anon.Expand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,12 +7,13 @@ import typings.dynatrace.dynatraceStrings.c
 import typings.dynatrace.dynatraceStrings.i
 import typings.dynatrace.dynatraceStrings.s
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait dynaTrace extends js.Object {
+trait dynaTrace extends StObject {
   
   /**
     * @description Adds a listener that is called when the user is leaving the page,

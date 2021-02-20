@@ -1,306 +1,51 @@
 package typings.protobufjs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Error
 import typings.std.RegExp
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("protobufjs", "util")
-@js.native
-object util extends js.Object {
+object util {
   
-  /**
-    * Returns a promise from a node-style callback function.
-    * @param fn Function to call
-    * @param ctx Function context
-    * @param params Function arguments
-    * @returns Promisified function
-    */
-  def asPromise(fn: asPromiseCallback, ctx: js.Any, params: js.Any*): js.Promise[_] = js.native
+  @JSImport("protobufjs", "util")
+  @js.native
+  val ^ : js.Any = js.native
   
-  /**
-    * Converts a string to camel case.
-    * @param str String to convert
-    * @returns Converted string
-    */
-  def camelCase(str: String): String = js.native
-  
-  /**
-    * Compares reflected fields by id.
-    * @param a First field
-    * @param b Second field
-    * @returns Comparison value
-    */
-  def compareFieldsById(a: Field, b: Field): Double = js.native
-  
-  /**
-    * Decorator helper for enums (TypeScript).
-    * @param object Enum object
-    * @returns Reflected enum
-    */
-  def decorateEnum(`object`: js.Object): Enum = js.native
-  
-  /** Decorator root (TypeScript). */
-  var decorateRoot: Root = js.native
-  
-  /**
-    * Decorator helper for types (TypeScript).
-    * @param ctor Constructor function
-    * @param [typeName] Type name, defaults to the constructor's name
-    * @returns Reflected type
-    */
-  def decorateType[T /* <: Message[T] */](ctor: Constructor[T]): Type = js.native
-  def decorateType[T /* <: Message[T] */](ctor: Constructor[T], typeName: String): Type = js.native
-  
-  /** An immuable empty array. */
-  val emptyArray: js.Array[js.Any] = js.native
-  
-  /** An immutable empty object. */
-  val emptyObject: js.Object = js.native
-  
-  /**
-    * Fetches the contents of a file.
-    * @param filename File path or url
-    * @param options Fetch options
-    * @param callback Callback function
-    */
-  def fetch(filename: String, options: IFetchOptions, callback: FetchCallback): Unit = js.native
-  /**
-    * Fetches the contents of a file.
-    * @param path File path or url
-    * @param [options] Fetch options
-    * @returns Promise
-    */
-  def fetch(path: String): js.Promise[String | Uint8Array] = js.native
-  /**
-    * Fetches the contents of a file.
-    * @param path File path or url
-    * @param callback Callback function
-    */
-  def fetch(path: String, callback: FetchCallback): Unit = js.native
-  def fetch(path: String, options: IFetchOptions): js.Promise[String | Uint8Array] = js.native
-  
-  /** Global object reference. */
-  var global: js.Object = js.native
-  
-  /**
-    * Requires a module only if available.
-    * @param moduleName Module to require
-    * @returns Required module if available and not empty, otherwise `null`
-    */
-  def inquire(moduleName: String): js.Object = js.native
-  
-  /**
-    * Tests if the specified value is an integer.
-    * @param value Value to test
-    * @returns `true` if the value is an integer
-    */
-  def isInteger(value: js.Any): Boolean = js.native
-  
-  /** Whether running within node or not. */
-  var isNode: Boolean = js.native
-  
-  /**
-    * Tests if the specified value is a non-null object.
-    * @param value Value to test
-    * @returns `true` if the value is a non-null object
-    */
-  def isObject(value: js.Any): Boolean = js.native
-  
-  /**
-    * Tests whether the specified name is a reserved word in JS.
-    * @param name Name to test
-    * @returns `true` if reserved, otherwise `false`
-    */
-  def isReserved(name: String): Boolean = js.native
-  
-  /**
-    * Checks if a property on a message is considered to be present.
-    * @param obj Plain object or message instance
-    * @param prop Property name
-    * @returns `true` if considered to be present, otherwise `false`
-    */
-  @JSName("isSet")
-  def isSet_(obj: js.Object, prop: String): Boolean = js.native
-  
-  /**
-    * Tests if the specified value is a string.
-    * @param value Value to test
-    * @returns `true` if the value is a string
-    */
-  def isString(value: js.Any): Boolean = js.native
-  
-  /**
-    * Checks if a property on a message is considered to be present.
-    * This is an alias of {@link util.isSet}.
-    * @param obj Plain object or message instance
-    * @param prop Property name
-    * @returns `true` if considered to be present, otherwise `false`
-    */
-  def isset(obj: js.Object, prop: String): Boolean = js.native
-  
-  /** Regular expression used to verify 2 bit (`bool`) map keys. */
-  val key2Re: RegExp = js.native
-  
-  /** Regular expression used to verify 32 bit (`int32` etc.) map keys. */
-  val key32Re: RegExp = js.native
-  
-  /** Regular expression used to verify 64 bit (`int64` etc.) map keys. */
-  val key64Re: RegExp = js.native
-  
-  /**
-    * Converts the first character of a string to lower case.
-    * @param str String to convert
-    * @returns Converted string
-    */
-  def lcFirst(str: String): String = js.native
-  
-  /**
-    * Converts an 8 characters long hash string to a long or number.
-    * @param hash Hash
-    * @param [unsigned=false] Whether unsigned or not
-    * @returns Original value
-    */
-  def longFromHash(hash: String): typings.protobufjs.mod.Long | Double = js.native
-  def longFromHash(hash: String, unsigned: Boolean): typings.protobufjs.mod.Long | Double = js.native
-  
-  def longToHash(value: Double): String = js.native
-  /**
-    * Converts a number or long to an 8 characters long hash string.
-    * @param value Value to convert
-    * @returns Hash
-    */
-  def longToHash(value: typings.protobufjs.mod.Long): String = js.native
-  
-  /**
-    * Merges the properties of the source object into the destination object.
-    * @param dst Destination object
-    * @param src Source object
-    * @param [ifNotSet=false] Merges only if the key is not already set
-    * @returns Destination object
-    */
-  def merge(dst: StringDictionary[js.Any], src: StringDictionary[js.Any]): StringDictionary[js.Any] = js.native
-  def merge(dst: StringDictionary[js.Any], src: StringDictionary[js.Any], ifNotSet: Boolean): StringDictionary[js.Any] = js.native
-  
-  /**
-    * Creates a new buffer of whatever type supported by the environment.
-    * @param [sizeOrArray=0] Buffer size or number array
-    * @returns Buffer
-    */
-  def newBuffer(): Uint8Array | typings.protobufjs.mod.Buffer = js.native
-  def newBuffer(sizeOrArray: js.Array[Double]): Uint8Array | typings.protobufjs.mod.Buffer = js.native
-  def newBuffer(sizeOrArray: Double): Uint8Array | typings.protobufjs.mod.Buffer = js.native
-  
-  /**
-    * Creates a custom error constructor.
-    * @param name Error name
-    * @returns Custom error constructor
-    */
-  def newError(name: String): Constructor[Error] = js.native
-  
-  /**
-    * Builds a getter for a oneof's present field name.
-    * @param fieldNames Field names
-    * @returns Unbound getter
-    */
-  def oneOfGetter(fieldNames: js.Array[String]): OneOfGetter = js.native
-  
-  /**
-    * Builds a setter for a oneof's present field name.
-    * @param fieldNames Field names
-    * @returns Unbound setter
-    */
-  def oneOfSetter(fieldNames: js.Array[String]): OneOfSetter = js.native
-  
-  /**
-    * A general purpose buffer pool.
-    * @param alloc Allocator
-    * @param slice Slicer
-    * @param [size=8192] Slab size
-    * @returns Pooled allocator
-    */
-  def pool(alloc: PoolAllocator, slice: PoolSlicer): PoolAllocator = js.native
-  def pool(alloc: PoolAllocator, slice: PoolSlicer, size: Double): PoolAllocator = js.native
-  
-  /**
-    * Returns a safe property accessor for the specified property name.
-    * @param prop Property name
-    * @returns Safe accessor
-    */
-  def safeProp(prop: String): String = js.native
-  
-  /**
-    * Sets the value of a property by property path. If a value already exists, it is turned to an array
-    * @param dst Destination object
-    * @param path dot '.' delimited path of the property to set
-    * @param value the value to set
-    * @returns Destination object
-    */
-  def setProperty(dst: StringDictionary[js.Any], path: String, value: js.Object): StringDictionary[js.Any] = js.native
-  
-  /**
-    * Converts an object's values to an array.
-    * @param object Object to convert
-    * @returns Converted array
-    */
-  def toArray(`object`: StringDictionary[js.Any]): js.Array[_] = js.native
-  
-  /**
-    * Default conversion options used for {@link Message#toJSON} implementations.
-    *
-    * These options are close to proto3's JSON mapping with the exception that internal types like Any are handled just like messages. More precisely:
-    *
-    * - Longs become strings
-    * - Enums become string keys
-    * - Bytes become base64 encoded strings
-    * - (Sub-)Messages become plain objects
-    * - Maps become plain objects with all string keys
-    * - Repeated fields become arrays
-    * - NaN and Infinity for float and double fields become strings
-    *
-    * @see https://developers.google.com/protocol-buffers/docs/proto3?hl=en#json
-    */
-  var toJSONOptions: IConversionOptions = js.native
-  
-  /**
-    * Converts an array of keys immediately followed by their respective value to an object, omitting undefined values.
-    * @param array Array to convert
-    * @returns Converted object
-    */
-  def toObject(array: js.Array[_]): StringDictionary[js.Any] = js.native
-  
-  /**
-    * Converts the first character of a string to upper case.
-    * @param str String to convert
-    * @returns Converted string
-    */
-  def ucFirst(str: String): String = js.native
-  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("protobufjs", "util.Array")
   @js.native
   class Array protected () extends Uint8Array {
     def this(params: js.Any*) = this()
   }
   /** Array implementation used in the browser. `Uint8Array` if supported, otherwise `Array`. */
+  @JSImport("protobufjs", "util.Array")
   @js.native
-  object Array extends TopLevel[Constructor[Uint8Array]]
+  def Array: Constructor[Uint8Array] = js.native
+  @scala.inline
+  def Array_=(x: Constructor[Uint8Array]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Array")(x.asInstanceOf[js.Any])
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("protobufjs", "util.Buffer")
   @js.native
   class Buffer protected () extends Uint8Array {
     def this(params: js.Any*) = this()
   }
   /** Node's Buffer class if available. */
+  @JSImport("protobufjs", "util.Buffer")
   @js.native
-  object Buffer
-    extends TopLevel[Constructor[typings.protobufjs.mod.Buffer]]
+  def Buffer: Constructor[typings.protobufjs.mod.Buffer] = js.native
+  @scala.inline
+  def Buffer_=(x: Constructor[typings.protobufjs.mod.Buffer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Buffer")(x.asInstanceOf[js.Any])
   
   /** A minimal event emitter. */
+  @JSImport("protobufjs", "util.EventEmitter")
   @js.native
   /** Constructs a new event emitter instance. */
-  class EventEmitter () extends js.Object {
+  class EventEmitter () extends StObject {
     
     /**
       * Emits an event by calling its listeners with the specified arguments.
@@ -332,19 +77,22 @@ object util extends js.Object {
     def on(evt: String, fn: EventEmitterListener, ctx: js.Any): this.type = js.native
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("protobufjs", "util.Long")
   @js.native
   class Long protected ()
     extends typings.protobufjs.mod.Long {
     def this(params: js.Any*) = this()
   }
   /** Long.js's Long class if available. */
+  @JSImport("protobufjs", "util.Long")
   @js.native
-  object Long
-    extends TopLevel[Constructor[typings.protobufjs.mod.Long]]
+  def Long: Constructor[typings.protobufjs.mod.Long] = js.native
   
   /** Helper class for working with the low and high bits of a 64 bit value. */
+  @JSImport("protobufjs", "util.LongBits")
   @js.native
-  class LongBits protected () extends js.Object {
+  class LongBits protected () extends StObject {
     /**
       * Constructs new long bits.
       * @param lo Low 32 bits, unsigned
@@ -398,17 +146,26 @@ object util extends js.Object {
       */
     def zzEncode(): LongBits = js.native
   }
-  /* static members */
-  @js.native
-  object LongBits extends js.Object {
+  object LongBits {
     
+    @JSImport("protobufjs", "util.LongBits")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("protobufjs", "util.LongBits.from")
+    @js.native
     def from(value: String): LongBits = js.native
+    @JSImport("protobufjs", "util.LongBits.from")
+    @js.native
     def from(value: Double): LongBits = js.native
     /**
       * Constructs new long bits from a number, long or string.
       * @param value Value
       * @returns Instance
       */
+    /* static member */
+    @JSImport("protobufjs", "util.LongBits.from")
+    @js.native
     def from(value: typings.protobufjs.mod.Long): LongBits = js.native
     
     /**
@@ -416,6 +173,9 @@ object util extends js.Object {
       * @param hash Hash
       * @returns Bits
       */
+    /* static member */
+    @JSImport("protobufjs", "util.LongBits.fromHash")
+    @js.native
     def fromHash(hash: String): LongBits = js.native
     
     /**
@@ -423,16 +183,34 @@ object util extends js.Object {
       * @param value Value
       * @returns Instance
       */
+    /* static member */
+    @JSImport("protobufjs", "util.LongBits.fromNumber")
+    @js.native
     def fromNumber(value: Double): LongBits = js.native
     
     /** Zero bits. */
-    var zero: LongBits = js.native
+    /* static member */
+    @JSImport("protobufjs", "util.LongBits.zero")
+    @js.native
+    def zero: LongBits = js.native
     
     /** Zero hash. */
-    var zeroHash: String = js.native
+    /* static member */
+    @JSImport("protobufjs", "util.LongBits.zeroHash")
+    @js.native
+    def zeroHash: String = js.native
+    @scala.inline
+    def zeroHash_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zeroHash")(x.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def zero_=(x: LongBits): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zero")(x.asInstanceOf[js.Any])
   }
   
+  @scala.inline
+  def Long_=(x: Constructor[typings.protobufjs.mod.Long]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Long")(x.asInstanceOf[js.Any])
+  
   /** Error subclass indicating a protocol specifc error. */
+  @JSImport("protobufjs", "util.ProtocolError")
   @js.native
   class ProtocolError[T /* <: Message[T] */] protected () extends Error {
     /**
@@ -447,9 +225,19 @@ object util extends js.Object {
     var instance: Message[T] = js.native
   }
   
-  /** A minimal base64 implementation for number arrays. */
+  /**
+    * Returns a promise from a node-style callback function.
+    * @param fn Function to call
+    * @param ctx Function context
+    * @param params Function arguments
+    * @returns Promisified function
+    */
+  @JSImport("protobufjs", "util.asPromise")
   @js.native
-  object base64 extends js.Object {
+  def asPromise(fn: asPromiseCallback, ctx: js.Any, params: js.Any*): js.Promise[_] = js.native
+  
+  /** A minimal base64 implementation for number arrays. */
+  object base64 {
     
     /**
       * Decodes a base64 encoded string to a buffer.
@@ -459,6 +247,8 @@ object util extends js.Object {
       * @returns Number of bytes written
       * @throws {Error} If encoding is invalid
       */
+    @JSImport("protobufjs", "util.base64.decode")
+    @js.native
     def decode(string: String, buffer: Uint8Array, offset: Double): Double = js.native
     
     /**
@@ -468,6 +258,8 @@ object util extends js.Object {
       * @param end Source end
       * @returns Base64 encoded string
       */
+    @JSImport("protobufjs", "util.base64.encode")
+    @js.native
     def encode(buffer: Uint8Array, start: Double, end: Double): String = js.native
     
     /**
@@ -475,6 +267,8 @@ object util extends js.Object {
       * @param string Base64 encoded string
       * @returns Byte length
       */
+    @JSImport("protobufjs", "util.base64.length")
+    @js.native
     def length(string: String): Double = js.native
     
     /**
@@ -482,18 +276,32 @@ object util extends js.Object {
       * @param string String to test
       * @returns `true` if probably base64 encoded, otherwise false
       */
+    @JSImport("protobufjs", "util.base64.test")
+    @js.native
     def test(string: String): Boolean = js.native
   }
   
+  /**
+    * Converts a string to camel case.
+    * @param str String to convert
+    * @returns Converted string
+    */
+  @JSImport("protobufjs", "util.camelCase")
   @js.native
-  object codegen extends js.Object {
+  def camelCase(str: String): String = js.native
+  
+  object codegen {
     
     /**
       * Begins generating a function.
       * @param [functionName] Function name if not anonymous
       * @returns Appender that appends code to the function's body
       */
+    @JSImport("protobufjs", "util.codegen")
+    @js.native
     def apply(): Codegen = js.native
+    @JSImport("protobufjs", "util.codegen")
+    @js.native
     def apply(functionName: String): Codegen = js.native
     /**
       * Begins generating a function.
@@ -501,16 +309,105 @@ object util extends js.Object {
       * @param [functionName] Function name if not anonymous
       * @returns Appender that appends code to the function's body
       */
+    @JSImport("protobufjs", "util.codegen")
+    @js.native
     def apply(functionParams: js.Array[String]): Codegen = js.native
+    @JSImport("protobufjs", "util.codegen")
+    @js.native
     def apply(functionParams: js.Array[String], functionName: String): Codegen = js.native
+    @JSImport("protobufjs", "util.codegen")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** When set to `true`, codegen will log generated code to console. Useful for debugging. */
-    var verbose: Boolean = js.native
+    @JSImport("protobufjs", "util.codegen.verbose")
+    @js.native
+    def verbose: Boolean = js.native
+    @scala.inline
+    def verbose_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("verbose")(x.asInstanceOf[js.Any])
   }
   
-  /** Reads / writes floats / doubles from / to buffers. */
+  /**
+    * Compares reflected fields by id.
+    * @param a First field
+    * @param b Second field
+    * @returns Comparison value
+    */
+  @JSImport("protobufjs", "util.compareFieldsById")
   @js.native
-  object float extends js.Object {
+  def compareFieldsById(a: Field, b: Field): Double = js.native
+  
+  /**
+    * Decorator helper for enums (TypeScript).
+    * @param object Enum object
+    * @returns Reflected enum
+    */
+  @JSImport("protobufjs", "util.decorateEnum")
+  @js.native
+  def decorateEnum(`object`: js.Object): Enum = js.native
+  
+  /** Decorator root (TypeScript). */
+  @JSImport("protobufjs", "util.decorateRoot")
+  @js.native
+  def decorateRoot: Root = js.native
+  @scala.inline
+  def decorateRoot_=(x: Root): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decorateRoot")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Decorator helper for types (TypeScript).
+    * @param ctor Constructor function
+    * @param [typeName] Type name, defaults to the constructor's name
+    * @returns Reflected type
+    */
+  @JSImport("protobufjs", "util.decorateType")
+  @js.native
+  def decorateType[T /* <: Message[T] */](ctor: Constructor[T]): Type = js.native
+  @JSImport("protobufjs", "util.decorateType")
+  @js.native
+  def decorateType[T /* <: Message[T] */](ctor: Constructor[T], typeName: String): Type = js.native
+  
+  /** An immuable empty array. */
+  @JSImport("protobufjs", "util.emptyArray")
+  @js.native
+  val emptyArray: js.Array[js.Any] = js.native
+  
+  /** An immutable empty object. */
+  @JSImport("protobufjs", "util.emptyObject")
+  @js.native
+  val emptyObject: js.Object = js.native
+  
+  /**
+    * Fetches the contents of a file.
+    * @param filename File path or url
+    * @param options Fetch options
+    * @param callback Callback function
+    */
+  @JSImport("protobufjs", "util.fetch")
+  @js.native
+  def fetch(filename: String, options: IFetchOptions, callback: FetchCallback): Unit = js.native
+  /**
+    * Fetches the contents of a file.
+    * @param path File path or url
+    * @param [options] Fetch options
+    * @returns Promise
+    */
+  @JSImport("protobufjs", "util.fetch")
+  @js.native
+  def fetch(path: String): js.Promise[String | Uint8Array] = js.native
+  /**
+    * Fetches the contents of a file.
+    * @param path File path or url
+    * @param callback Callback function
+    */
+  @JSImport("protobufjs", "util.fetch")
+  @js.native
+  def fetch(path: String, callback: FetchCallback): Unit = js.native
+  @JSImport("protobufjs", "util.fetch")
+  @js.native
+  def fetch(path: String, options: IFetchOptions): js.Promise[String | Uint8Array] = js.native
+  
+  /** Reads / writes floats / doubles from / to buffers. */
+  object float {
     
     /**
       * Reads a 64 bit double from a buffer using big endian byte order.
@@ -518,6 +415,8 @@ object util extends js.Object {
       * @param pos Source buffer offset
       * @returns Value read
       */
+    @JSImport("protobufjs", "util.float.readDoubleBE")
+    @js.native
     def readDoubleBE(buf: Uint8Array, pos: Double): Double = js.native
     
     /**
@@ -526,6 +425,8 @@ object util extends js.Object {
       * @param pos Source buffer offset
       * @returns Value read
       */
+    @JSImport("protobufjs", "util.float.readDoubleLE")
+    @js.native
     def readDoubleLE(buf: Uint8Array, pos: Double): Double = js.native
     
     /**
@@ -534,6 +435,8 @@ object util extends js.Object {
       * @param pos Source buffer offset
       * @returns Value read
       */
+    @JSImport("protobufjs", "util.float.readFloatBE")
+    @js.native
     def readFloatBE(buf: Uint8Array, pos: Double): Double = js.native
     
     /**
@@ -542,6 +445,8 @@ object util extends js.Object {
       * @param pos Source buffer offset
       * @returns Value read
       */
+    @JSImport("protobufjs", "util.float.readFloatLE")
+    @js.native
     def readFloatLE(buf: Uint8Array, pos: Double): Double = js.native
     
     /**
@@ -550,6 +455,8 @@ object util extends js.Object {
       * @param buf Target buffer
       * @param pos Target buffer offset
       */
+    @JSImport("protobufjs", "util.float.writeDoubleBE")
+    @js.native
     def writeDoubleBE(`val`: Double, buf: Uint8Array, pos: Double): Unit = js.native
     
     /**
@@ -558,6 +465,8 @@ object util extends js.Object {
       * @param buf Target buffer
       * @param pos Target buffer offset
       */
+    @JSImport("protobufjs", "util.float.writeDoubleLE")
+    @js.native
     def writeDoubleLE(`val`: Double, buf: Uint8Array, pos: Double): Unit = js.native
     
     /**
@@ -566,6 +475,8 @@ object util extends js.Object {
       * @param buf Target buffer
       * @param pos Target buffer offset
       */
+    @JSImport("protobufjs", "util.float.writeFloatBE")
+    @js.native
     def writeFloatBE(`val`: Double, buf: Uint8Array, pos: Double): Unit = js.native
     
     /**
@@ -574,23 +485,206 @@ object util extends js.Object {
       * @param buf Target buffer
       * @param pos Target buffer offset
       */
+    @JSImport("protobufjs", "util.float.writeFloatLE")
+    @js.native
     def writeFloatLE(`val`: Double, buf: Uint8Array, pos: Double): Unit = js.native
   }
   
-  /** Node's fs module if available. */
+  /** Global object reference. */
+  @JSImport("protobufjs", "util.global")
   @js.native
-  object fs
-    extends /* k */ StringDictionary[js.Any]
+  def global: js.Object = js.native
+  @scala.inline
+  def global_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("global")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Requires a module only if available.
+    * @param moduleName Module to require
+    * @returns Required module if available and not empty, otherwise `null`
+    */
+  @JSImport("protobufjs", "util.inquire")
+  @js.native
+  def inquire(moduleName: String): js.Object = js.native
+  
+  /**
+    * Tests if the specified value is an integer.
+    * @param value Value to test
+    * @returns `true` if the value is an integer
+    */
+  @JSImport("protobufjs", "util.isInteger")
+  @js.native
+  def isInteger(value: js.Any): Boolean = js.native
+  
+  /** Whether running within node or not. */
+  @JSImport("protobufjs", "util.isNode")
+  @js.native
+  def isNode: Boolean = js.native
+  @scala.inline
+  def isNode_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isNode")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Tests if the specified value is a non-null object.
+    * @param value Value to test
+    * @returns `true` if the value is a non-null object
+    */
+  @JSImport("protobufjs", "util.isObject")
+  @js.native
+  def isObject(value: js.Any): Boolean = js.native
+  
+  /**
+    * Tests whether the specified name is a reserved word in JS.
+    * @param name Name to test
+    * @returns `true` if reserved, otherwise `false`
+    */
+  @JSImport("protobufjs", "util.isReserved")
+  @js.native
+  def isReserved(name: String): Boolean = js.native
+  
+  /**
+    * Checks if a property on a message is considered to be present.
+    * @param obj Plain object or message instance
+    * @param prop Property name
+    * @returns `true` if considered to be present, otherwise `false`
+    */
+  @JSImport("protobufjs", "util.isSet")
+  @js.native
+  def isSet_(obj: js.Object, prop: String): Boolean = js.native
+  
+  /**
+    * Tests if the specified value is a string.
+    * @param value Value to test
+    * @returns `true` if the value is a string
+    */
+  @JSImport("protobufjs", "util.isString")
+  @js.native
+  def isString(value: js.Any): Boolean = js.native
+  
+  /**
+    * Checks if a property on a message is considered to be present.
+    * This is an alias of {@link util.isSet}.
+    * @param obj Plain object or message instance
+    * @param prop Property name
+    * @returns `true` if considered to be present, otherwise `false`
+    */
+  @JSImport("protobufjs", "util.isset")
+  @js.native
+  def isset(obj: js.Object, prop: String): Boolean = js.native
+  
+  /** Regular expression used to verify 2 bit (`bool`) map keys. */
+  @JSImport("protobufjs", "util.key2Re")
+  @js.native
+  val key2Re: RegExp = js.native
+  
+  /** Regular expression used to verify 32 bit (`int32` etc.) map keys. */
+  @JSImport("protobufjs", "util.key32Re")
+  @js.native
+  val key32Re: RegExp = js.native
+  
+  /** Regular expression used to verify 64 bit (`int64` etc.) map keys. */
+  @JSImport("protobufjs", "util.key64Re")
+  @js.native
+  val key64Re: RegExp = js.native
+  
+  /**
+    * Converts the first character of a string to lower case.
+    * @param str String to convert
+    * @returns Converted string
+    */
+  @JSImport("protobufjs", "util.lcFirst")
+  @js.native
+  def lcFirst(str: String): String = js.native
+  
+  /**
+    * Converts an 8 characters long hash string to a long or number.
+    * @param hash Hash
+    * @param [unsigned=false] Whether unsigned or not
+    * @returns Original value
+    */
+  @JSImport("protobufjs", "util.longFromHash")
+  @js.native
+  def longFromHash(hash: String): typings.protobufjs.mod.Long | Double = js.native
+  @JSImport("protobufjs", "util.longFromHash")
+  @js.native
+  def longFromHash(hash: String, unsigned: Boolean): typings.protobufjs.mod.Long | Double = js.native
+  
+  @JSImport("protobufjs", "util.longToHash")
+  @js.native
+  def longToHash(value: Double): String = js.native
+  /**
+    * Converts a number or long to an 8 characters long hash string.
+    * @param value Value to convert
+    * @returns Hash
+    */
+  @JSImport("protobufjs", "util.longToHash")
+  @js.native
+  def longToHash(value: typings.protobufjs.mod.Long): String = js.native
+  
+  /**
+    * Merges the properties of the source object into the destination object.
+    * @param dst Destination object
+    * @param src Source object
+    * @param [ifNotSet=false] Merges only if the key is not already set
+    * @returns Destination object
+    */
+  @JSImport("protobufjs", "util.merge")
+  @js.native
+  def merge(dst: StringDictionary[js.Any], src: StringDictionary[js.Any]): StringDictionary[js.Any] = js.native
+  @JSImport("protobufjs", "util.merge")
+  @js.native
+  def merge(dst: StringDictionary[js.Any], src: StringDictionary[js.Any], ifNotSet: Boolean): StringDictionary[js.Any] = js.native
+  
+  /**
+    * Creates a new buffer of whatever type supported by the environment.
+    * @param [sizeOrArray=0] Buffer size or number array
+    * @returns Buffer
+    */
+  @JSImport("protobufjs", "util.newBuffer")
+  @js.native
+  def newBuffer(): Uint8Array | typings.protobufjs.mod.Buffer = js.native
+  @JSImport("protobufjs", "util.newBuffer")
+  @js.native
+  def newBuffer(sizeOrArray: js.Array[Double]): Uint8Array | typings.protobufjs.mod.Buffer = js.native
+  @JSImport("protobufjs", "util.newBuffer")
+  @js.native
+  def newBuffer(sizeOrArray: Double): Uint8Array | typings.protobufjs.mod.Buffer = js.native
+  
+  /**
+    * Creates a custom error constructor.
+    * @param name Error name
+    * @returns Custom error constructor
+    */
+  @JSImport("protobufjs", "util.newError")
+  @js.native
+  def newError(name: String): Constructor[Error] = js.native
+  
+  /**
+    * Builds a getter for a oneof's present field name.
+    * @param fieldNames Field names
+    * @returns Unbound getter
+    */
+  @JSImport("protobufjs", "util.oneOfGetter")
+  @js.native
+  def oneOfGetter(fieldNames: js.Array[String]): OneOfGetter = js.native
+  
+  /**
+    * Builds a setter for a oneof's present field name.
+    * @param fieldNames Field names
+    * @returns Unbound setter
+    */
+  @JSImport("protobufjs", "util.oneOfSetter")
+  @js.native
+  def oneOfSetter(fieldNames: js.Array[String]): OneOfSetter = js.native
   
   /** A minimal path module to resolve Unix, Windows and URL paths alike. */
-  @js.native
-  object path extends js.Object {
+  object path {
     
     /**
       * Tests if the specified path is absolute.
       * @param path Path to test
       * @returns `true` if path is absolute
       */
+    @JSImport("protobufjs", "util.path.isAbsolute")
+    @js.native
     def isAbsolute(path: String): Boolean = js.native
     
     /**
@@ -598,6 +692,8 @@ object util extends js.Object {
       * @param path Path to normalize
       * @returns Normalized path
       */
+    @JSImport("protobufjs", "util.path.normalize")
+    @js.native
     def normalize(path: String): String = js.native
     
     /**
@@ -607,19 +703,106 @@ object util extends js.Object {
       * @param [alreadyNormalized=false] `true` if both paths are already known to be normalized
       * @returns Path to the include file
       */
+    @JSImport("protobufjs", "util.path.resolve")
+    @js.native
     def resolve(originPath: String, includePath: String): String = js.native
+    @JSImport("protobufjs", "util.path.resolve")
+    @js.native
     def resolve(originPath: String, includePath: String, alreadyNormalized: Boolean): String = js.native
   }
   
-  /** A minimal UTF8 implementation for number arrays. */
+  /**
+    * A general purpose buffer pool.
+    * @param alloc Allocator
+    * @param slice Slicer
+    * @param [size=8192] Slab size
+    * @returns Pooled allocator
+    */
+  @JSImport("protobufjs", "util.pool")
   @js.native
-  object utf8 extends js.Object {
+  def pool(alloc: PoolAllocator, slice: PoolSlicer): PoolAllocator = js.native
+  @JSImport("protobufjs", "util.pool")
+  @js.native
+  def pool(alloc: PoolAllocator, slice: PoolSlicer, size: Double): PoolAllocator = js.native
+  
+  /**
+    * Returns a safe property accessor for the specified property name.
+    * @param prop Property name
+    * @returns Safe accessor
+    */
+  @JSImport("protobufjs", "util.safeProp")
+  @js.native
+  def safeProp(prop: String): String = js.native
+  
+  /**
+    * Sets the value of a property by property path. If a value already exists, it is turned to an array
+    * @param dst Destination object
+    * @param path dot '.' delimited path of the property to set
+    * @param value the value to set
+    * @returns Destination object
+    */
+  @JSImport("protobufjs", "util.setProperty")
+  @js.native
+  def setProperty(dst: StringDictionary[js.Any], path: String, value: js.Object): StringDictionary[js.Any] = js.native
+  
+  /**
+    * Converts an object's values to an array.
+    * @param object Object to convert
+    * @returns Converted array
+    */
+  @JSImport("protobufjs", "util.toArray")
+  @js.native
+  def toArray(`object`: StringDictionary[js.Any]): js.Array[_] = js.native
+  
+  /**
+    * Default conversion options used for {@link Message#toJSON} implementations.
+    *
+    * These options are close to proto3's JSON mapping with the exception that internal types like Any are handled just like messages. More precisely:
+    *
+    * - Longs become strings
+    * - Enums become string keys
+    * - Bytes become base64 encoded strings
+    * - (Sub-)Messages become plain objects
+    * - Maps become plain objects with all string keys
+    * - Repeated fields become arrays
+    * - NaN and Infinity for float and double fields become strings
+    *
+    * @see https://developers.google.com/protocol-buffers/docs/proto3?hl=en#json
+    */
+  @JSImport("protobufjs", "util.toJSONOptions")
+  @js.native
+  def toJSONOptions: IConversionOptions = js.native
+  @scala.inline
+  def toJSONOptions_=(x: IConversionOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toJSONOptions")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Converts an array of keys immediately followed by their respective value to an object, omitting undefined values.
+    * @param array Array to convert
+    * @returns Converted object
+    */
+  @JSImport("protobufjs", "util.toObject")
+  @js.native
+  def toObject(array: js.Array[_]): StringDictionary[js.Any] = js.native
+  
+  /**
+    * Converts the first character of a string to upper case.
+    * @param str String to convert
+    * @returns Converted string
+    */
+  @JSImport("protobufjs", "util.ucFirst")
+  @js.native
+  def ucFirst(str: String): String = js.native
+  
+  /** A minimal UTF8 implementation for number arrays. */
+  object utf8 {
     
     /**
       * Calculates the UTF8 byte length of a string.
       * @param string String
       * @returns Byte length
       */
+    @JSImport("protobufjs", "util.utf8.length")
+    @js.native
     def length(string: String): Double = js.native
     
     /**
@@ -629,6 +812,8 @@ object util extends js.Object {
       * @param end Source end
       * @returns String read
       */
+    @JSImport("protobufjs", "util.utf8.read")
+    @js.native
     def read(buffer: Uint8Array, start: Double, end: Double): String = js.native
     
     /**
@@ -638,6 +823,11 @@ object util extends js.Object {
       * @param offset Destination offset
       * @returns Bytes written
       */
+    @JSImport("protobufjs", "util.utf8.write")
+    @js.native
     def write(string: String, buffer: Uint8Array, offset: Double): Double = js.native
   }
+  
+  /** Node's fs module if available. */
+  object fs
 }

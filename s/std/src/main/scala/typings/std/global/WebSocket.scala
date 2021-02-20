@@ -1,11 +1,11 @@
 package typings.std.global
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("WebSocket")
 @js.native
 class WebSocket protected ()
@@ -14,21 +14,21 @@ class WebSocket protected ()
   def this(url: java.lang.String, protocols: java.lang.String) = this()
   def this(url: java.lang.String, protocols: js.Array[java.lang.String]) = this()
 }
-@JSGlobal("WebSocket")
-@js.native
-object WebSocket
-  extends Instantiable1[/* url */ java.lang.String, typings.std.WebSocket]
-     with Instantiable2[
-      /* url */ java.lang.String, 
-      (/* protocols */ js.Array[java.lang.String]) | (/* protocols */ java.lang.String), 
-      typings.std.WebSocket
-    ] {
+object WebSocket {
   
+  @JSGlobal("WebSocket.CLOSED")
+  @js.native
   val CLOSED: Double = js.native
   
+  @JSGlobal("WebSocket.CLOSING")
+  @js.native
   val CLOSING: Double = js.native
   
+  @JSGlobal("WebSocket.CONNECTING")
+  @js.native
   val CONNECTING: Double = js.native
   
+  @JSGlobal("WebSocket.OPEN")
+  @js.native
   val OPEN: Double = js.native
 }

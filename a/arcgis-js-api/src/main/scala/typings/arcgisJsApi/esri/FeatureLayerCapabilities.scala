@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,39 +79,27 @@ object FeatureLayerCapabilities {
   }
   
   @scala.inline
-  implicit class FeatureLayerCapabilitiesOps[Self <: FeatureLayerCapabilities] (val x: Self) extends AnyVal {
+  implicit class FeatureLayerCapabilitiesMutableBuilder[Self <: FeatureLayerCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachment(value: FeatureLayerCapabilitiesAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setData(value: FeatureLayerCapabilitiesData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEditing(value: FeatureLayerCapabilitiesEditing): Self = StObject.set(x, "editing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachment(value: FeatureLayerCapabilitiesAttachment): Self = this.set("attachment", value.asInstanceOf[js.Any])
+    def setMetadata(value: FeatureLayerCapabilitiesMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: FeatureLayerCapabilitiesData): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setOperations(value: FeatureLayerCapabilitiesOperations): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditing(value: FeatureLayerCapabilitiesEditing): Self = this.set("editing", value.asInstanceOf[js.Any])
+    def setQuery(value: FeatureLayerCapabilitiesQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: FeatureLayerCapabilitiesMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperations(value: FeatureLayerCapabilitiesOperations): Self = this.set("operations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuery(value: FeatureLayerCapabilitiesQuery): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryRelated(value: FeatureLayerCapabilitiesQueryRelated): Self = this.set("queryRelated", value.asInstanceOf[js.Any])
+    def setQueryRelated(value: FeatureLayerCapabilitiesQueryRelated): Self = StObject.set(x, "queryRelated", value.asInstanceOf[js.Any])
   }
 }

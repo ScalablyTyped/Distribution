@@ -4,6 +4,7 @@ import typings.backbone.mod.Model
 import typings.backbone.mod.ModelSetOptions
 import typings.std.DocumentFragment
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

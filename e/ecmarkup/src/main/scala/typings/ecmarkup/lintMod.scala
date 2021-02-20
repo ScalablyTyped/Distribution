@@ -3,13 +3,14 @@ package typings.ecmarkup
 import typings.ecmarkup.specMod.Spec
 import typings.ecmarkup.specMod.Warning
 import typings.std.Document
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ecmarkup/lib/lint/lint", JSImport.Namespace)
-@js.native
-object lintMod extends js.Object {
+object lintMod {
   
+  @JSImport("ecmarkup/lib/lint/lint", "lint")
+  @js.native
   def lint(report: js.Function1[/* err */ Warning, Unit], sourceText: String, spec: Spec, document: Document): Unit = js.native
 }

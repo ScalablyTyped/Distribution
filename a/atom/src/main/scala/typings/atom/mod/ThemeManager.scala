@@ -1,11 +1,12 @@
 package typings.atom.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThemeManager extends js.Object {
+trait ThemeManager extends StObject {
   
   // Managing Enabled Themes
   /** Returns an Array of strings all the active theme names. */
@@ -48,36 +49,24 @@ object ThemeManager {
   }
   
   @scala.inline
-  implicit class ThemeManagerOps[Self <: ThemeManager] (val x: Self) extends AnyVal {
+  implicit class ThemeManagerMutableBuilder[Self <: ThemeManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetActiveThemeNames(value: () => js.UndefOr[js.Array[String]]): Self = StObject.set(x, "getActiveThemeNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetActiveThemes(value: () => js.UndefOr[js.Array[Package]]): Self = StObject.set(x, "getActiveThemes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetEnabledThemeNames(value: () => js.Array[String]): Self = StObject.set(x, "getEnabledThemeNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActiveThemeNames(value: () => js.UndefOr[js.Array[String]]): Self = this.set("getActiveThemeNames", js.Any.fromFunction0(value))
+    def setGetLoadedThemeNames(value: () => js.UndefOr[js.Array[String]]): Self = StObject.set(x, "getLoadedThemeNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActiveThemes(value: () => js.UndefOr[js.Array[Package]]): Self = this.set("getActiveThemes", js.Any.fromFunction0(value))
+    def setGetLoadedThemes(value: () => js.UndefOr[js.Array[Package]]): Self = StObject.set(x, "getLoadedThemes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEnabledThemeNames(value: () => js.Array[String]): Self = this.set("getEnabledThemeNames", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetLoadedThemeNames(value: () => js.UndefOr[js.Array[String]]): Self = this.set("getLoadedThemeNames", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetLoadedThemes(value: () => js.UndefOr[js.Array[Package]]): Self = this.set("getLoadedThemes", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnDidChangeActiveThemes(value: js.Function0[Unit] => Disposable): Self = this.set("onDidChangeActiveThemes", js.Any.fromFunction1(value))
+    def setOnDidChangeActiveThemes(value: js.Function0[Unit] => Disposable): Self = StObject.set(x, "onDidChangeActiveThemes", js.Any.fromFunction1(value))
   }
 }

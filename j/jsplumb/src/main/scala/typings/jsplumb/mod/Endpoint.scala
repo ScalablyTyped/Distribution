@@ -2,6 +2,7 @@ package typings.jsplumb.mod
 
 import typings.std.Element
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,63 +64,51 @@ object Endpoint {
   }
   
   @scala.inline
-  implicit class EndpointOps[Self <: Endpoint] (val x: Self) extends AnyVal {
+  implicit class EndpointMutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: Anchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnections(value: js.Array[Connection]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
     
     @scala.inline
-    def setAnchor(value: Anchor): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value :_*))
     
     @scala.inline
-    def setConnectorSelector(value: () => Connection): Self = this.set("connectorSelector", js.Any.fromFunction0(value))
+    def setConnectorSelector(value: () => Connection): Self = StObject.set(x, "connectorSelector", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetElement(value: () => Element): Self = this.set("getElement", js.Any.fromFunction0(value))
+    def setGetElement(value: () => Element): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEnabled(value: () => Boolean): Self = this.set("isEnabled", js.Any.fromFunction0(value))
+    def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaxConnections(value: Double): Self = this.set("maxConnections", value.asInstanceOf[js.Any])
+    def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetElement(value: Element => Unit): Self = this.set("setElement", js.Any.fromFunction1(value))
+    def setSetElement(value: Element => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetEnabled(value: Boolean => Unit): Self = this.set("setEnabled", js.Any.fromFunction1(value))
+    def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "setEnabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetEndpoint(value: EndpointSpec => Unit): Self = this.set("setEndpoint", js.Any.fromFunction1(value))
+    def setSetEndpoint(value: EndpointSpec => Unit): Self = StObject.set(x, "setEndpoint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHover(value: Boolean => Unit): Self = this.set("setHover", js.Any.fromFunction1(value))
+    def setSetHover(value: Boolean => Unit): Self = StObject.set(x, "setHover", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setType(value: EndpointId): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConnectionsVarargs(value: Connection*): Self = this.set("connections", js.Array(value :_*))
-    
-    @scala.inline
-    def setConnections(value: js.Array[Connection]): Self = this.set("connections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnections: Self = this.set("connections", js.undefined)
+    def setType(value: EndpointId): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

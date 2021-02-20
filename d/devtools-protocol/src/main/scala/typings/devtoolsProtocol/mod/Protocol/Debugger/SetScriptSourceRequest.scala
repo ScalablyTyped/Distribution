@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Debugger
 
 import typings.devtoolsProtocol.mod.Protocol.Runtime.ScriptId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetScriptSourceRequest extends js.Object {
+trait SetScriptSourceRequest extends StObject {
   
   /**
     * If true the change will not actually be applied. Dry run may be used to get result
@@ -33,30 +34,18 @@ object SetScriptSourceRequest {
   }
   
   @scala.inline
-  implicit class SetScriptSourceRequestOps[Self <: SetScriptSourceRequest] (val x: Self) extends AnyVal {
+  implicit class SetScriptSourceRequestMutableBuilder[Self <: SetScriptSourceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptId(value: ScriptId): Self = this.set("scriptId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScriptSource(value: String): Self = this.set("scriptSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("dryRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDryRun: Self = this.set("dryRun", js.undefined)
+    def setScriptSource(value: String): Self = StObject.set(x, "scriptSource", value.asInstanceOf[js.Any])
   }
 }

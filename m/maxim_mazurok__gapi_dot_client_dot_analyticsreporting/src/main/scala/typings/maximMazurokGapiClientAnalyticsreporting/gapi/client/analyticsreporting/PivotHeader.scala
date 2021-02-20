@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsreporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotHeader extends js.Object {
+trait PivotHeader extends StObject {
   
   /** A single pivot section header. */
   var pivotHeaderEntries: js.UndefOr[js.Array[PivotHeaderEntry]] = js.native
@@ -22,33 +23,21 @@ object PivotHeader {
   }
   
   @scala.inline
-  implicit class PivotHeaderOps[Self <: PivotHeader] (val x: Self) extends AnyVal {
+  implicit class PivotHeaderMutableBuilder[Self <: PivotHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPivotHeaderEntries(value: js.Array[PivotHeaderEntry]): Self = StObject.set(x, "pivotHeaderEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPivotHeaderEntriesUndefined: Self = StObject.set(x, "pivotHeaderEntries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPivotHeaderEntriesVarargs(value: PivotHeaderEntry*): Self = StObject.set(x, "pivotHeaderEntries", js.Array(value :_*))
     
     @scala.inline
-    def setPivotHeaderEntriesVarargs(value: PivotHeaderEntry*): Self = this.set("pivotHeaderEntries", js.Array(value :_*))
+    def setTotalPivotGroupsCount(value: Double): Self = StObject.set(x, "totalPivotGroupsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPivotHeaderEntries(value: js.Array[PivotHeaderEntry]): Self = this.set("pivotHeaderEntries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePivotHeaderEntries: Self = this.set("pivotHeaderEntries", js.undefined)
-    
-    @scala.inline
-    def setTotalPivotGroupsCount(value: Double): Self = this.set("totalPivotGroupsCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalPivotGroupsCount: Self = this.set("totalPivotGroupsCount", js.undefined)
+    def setTotalPivotGroupsCountUndefined: Self = StObject.set(x, "totalPivotGroupsCount", js.undefined)
   }
 }

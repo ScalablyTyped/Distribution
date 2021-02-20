@@ -2,6 +2,7 @@ package typings.activexOutlook.Outlook
 
 import typings.activexOutlook.activexOutlookNumbers.`0`
 import typings.activexOutlook.activexOutlookNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexOutlook.activexOutlookNumbers.`0`
   - typings.activexOutlook.activexOutlookNumbers.`1`
 */
-trait OlPictureAlignment extends js.Object
+trait OlPictureAlignment extends StObject
 object OlPictureAlignment {
   
   @scala.inline

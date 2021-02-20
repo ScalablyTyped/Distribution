@@ -1,13 +1,14 @@
 package typings.materialUiStyles
 
 import typings.materialUiStyles.withStylesWithStylesMod.StyleRules
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/styles/createStyles", JSImport.Namespace)
-@js.native
-object createStylesMod extends js.Object {
+object createStylesMod {
   
+  @JSImport("@material-ui/styles/createStyles", JSImport.Default)
+  @js.native
   def default[ClassKey /* <: String */, Props /* <: js.Object */](styles: StyleRules[Props, ClassKey]): StyleRules[Props, ClassKey] = js.native
 }

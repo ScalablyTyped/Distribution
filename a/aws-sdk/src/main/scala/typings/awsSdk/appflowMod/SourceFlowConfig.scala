@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceFlowConfig extends js.Object {
+trait SourceFlowConfig extends StObject {
   
   /**
     *  The name of the connector profile. This name must be unique for each connector profile in the AWS account. 
@@ -36,36 +37,24 @@ object SourceFlowConfig {
   }
   
   @scala.inline
-  implicit class SourceFlowConfigOps[Self <: SourceFlowConfig] (val x: Self) extends AnyVal {
+  implicit class SourceFlowConfigMutableBuilder[Self <: SourceFlowConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectorProfileNameUndefined: Self = StObject.set(x, "connectorProfileName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectorType(value: ConnectorType): Self = StObject.set(x, "connectorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorType(value: ConnectorType): Self = this.set("connectorType", value.asInstanceOf[js.Any])
+    def setIncrementalPullConfig(value: IncrementalPullConfig): Self = StObject.set(x, "incrementalPullConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceConnectorProperties(value: SourceConnectorProperties): Self = this.set("sourceConnectorProperties", value.asInstanceOf[js.Any])
+    def setIncrementalPullConfigUndefined: Self = StObject.set(x, "incrementalPullConfig", js.undefined)
     
     @scala.inline
-    def setConnectorProfileName(value: ConnectorProfileName): Self = this.set("connectorProfileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnectorProfileName: Self = this.set("connectorProfileName", js.undefined)
-    
-    @scala.inline
-    def setIncrementalPullConfig(value: IncrementalPullConfig): Self = this.set("incrementalPullConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncrementalPullConfig: Self = this.set("incrementalPullConfig", js.undefined)
+    def setSourceConnectorProperties(value: SourceConnectorProperties): Self = StObject.set(x, "sourceConnectorProperties", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.gmailV1Mod.gmailV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A single MIME message part.
   */
 @js.native
-trait SchemaMessagePart extends js.Object {
+trait SchemaMessagePart extends StObject {
   
   /**
     * The message part body for this part, which may be empty for container
@@ -56,60 +57,48 @@ object SchemaMessagePart {
   }
   
   @scala.inline
-  implicit class SchemaMessagePartOps[Self <: SchemaMessagePart] (val x: Self) extends AnyVal {
+  implicit class SchemaMessagePartMutableBuilder[Self <: SchemaMessagePart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: SchemaMessagePartBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: SchemaMessagePartBody): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setHeaders(value: js.Array[SchemaMessagePartHeader]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteFilename: Self = this.set("filename", js.undefined)
+    def setHeadersVarargs(value: SchemaMessagePartHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
     @scala.inline
-    def setHeadersVarargs(value: SchemaMessagePartHeader*): Self = this.set("headers", js.Array(value :_*))
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Array[SchemaMessagePartHeader]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setPartId(value: String): Self = StObject.set(x, "partId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    def setPartIdUndefined: Self = StObject.set(x, "partId", js.undefined)
     
     @scala.inline
-    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    def setParts(value: js.Array[SchemaMessagePart]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartId(value: String): Self = this.set("partId", value.asInstanceOf[js.Any])
+    def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
     
     @scala.inline
-    def deletePartId: Self = this.set("partId", js.undefined)
-    
-    @scala.inline
-    def setPartsVarargs(value: SchemaMessagePart*): Self = this.set("parts", js.Array(value :_*))
-    
-    @scala.inline
-    def setParts(value: js.Array[SchemaMessagePart]): Self = this.set("parts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParts: Self = this.set("parts", js.undefined)
+    def setPartsVarargs(value: SchemaMessagePart*): Self = StObject.set(x, "parts", js.Array(value :_*))
   }
 }

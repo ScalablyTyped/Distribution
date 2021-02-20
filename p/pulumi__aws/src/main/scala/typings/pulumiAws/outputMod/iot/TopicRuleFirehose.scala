@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.iot
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicRuleFirehose extends js.Object {
+trait TopicRuleFirehose extends StObject {
   
   /**
     * The delivery stream name.
@@ -31,30 +32,18 @@ object TopicRuleFirehose {
   }
   
   @scala.inline
-  implicit class TopicRuleFirehoseOps[Self <: TopicRuleFirehose] (val x: Self) extends AnyVal {
+  implicit class TopicRuleFirehoseMutableBuilder[Self <: TopicRuleFirehose] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeliveryStreamName(value: String): Self = StObject.set(x, "deliveryStreamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryStreamName(value: String): Self = this.set("deliveryStreamName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoleArn(value: String): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeparator(value: String): Self = this.set("separator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeparator: Self = this.set("separator", js.undefined)
+    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
   }
 }

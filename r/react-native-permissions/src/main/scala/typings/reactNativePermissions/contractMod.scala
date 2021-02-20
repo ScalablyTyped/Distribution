@@ -8,16 +8,15 @@ import typings.reactNativePermissions.typesMod.NotificationsResponse
 import typings.reactNativePermissions.typesMod.Permission
 import typings.reactNativePermissions.typesMod.PermissionStatus
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-permissions/dist/typescript/contract", JSImport.Namespace)
-@js.native
-object contractMod extends js.Object {
+object contractMod {
   
   @js.native
-  trait Contract extends js.Object {
+  trait Contract extends StObject {
     
     def check(permission: Permission): js.Promise[PermissionStatus] = js.native
     

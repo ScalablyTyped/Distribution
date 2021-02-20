@@ -1,12 +1,13 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxAccountFolders Class */
 @js.native
-trait FaxAccountFolders extends js.Object {
+trait FaxAccountFolders extends StObject {
   
   @JSName("FAXCOMEXLib.FaxAccountFolders_typekey")
   var FAXCOMEXLibDotFaxAccountFolders_typekey: FaxAccountFolders = js.native
@@ -39,33 +40,21 @@ object FaxAccountFolders {
   }
   
   @scala.inline
-  implicit class FaxAccountFoldersOps[Self <: FaxAccountFolders] (val x: Self) extends AnyVal {
+  implicit class FaxAccountFoldersMutableBuilder[Self <: FaxAccountFolders] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFAXCOMEXLibDotFaxAccountFolders_typekey(value: FaxAccountFolders): Self = StObject.set(x, "FAXCOMEXLib.FaxAccountFolders_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncomingArchive(value: FaxAccountIncomingArchive): Self = StObject.set(x, "IncomingArchive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncomingQueue(value: FaxAccountIncomingQueue): Self = StObject.set(x, "IncomingQueue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFAXCOMEXLibDotFaxAccountFolders_typekey(value: FaxAccountFolders): Self = this.set("FAXCOMEXLib.FaxAccountFolders_typekey", value.asInstanceOf[js.Any])
+    def setOutgoingArchive(value: FaxAccountOutgoingArchive): Self = StObject.set(x, "OutgoingArchive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncomingArchive(value: FaxAccountIncomingArchive): Self = this.set("IncomingArchive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncomingQueue(value: FaxAccountIncomingQueue): Self = this.set("IncomingQueue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutgoingArchive(value: FaxAccountOutgoingArchive): Self = this.set("OutgoingArchive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutgoingQueue(value: FaxAccountOutgoingQueue): Self = this.set("OutgoingQueue", value.asInstanceOf[js.Any])
+    def setOutgoingQueue(value: FaxAccountOutgoingQueue): Self = StObject.set(x, "OutgoingQueue", value.asInstanceOf[js.Any])
   }
 }

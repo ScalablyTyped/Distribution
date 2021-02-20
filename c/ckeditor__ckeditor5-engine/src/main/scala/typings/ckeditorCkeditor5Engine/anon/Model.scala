@@ -2,12 +2,13 @@ package typings.ckeditorCkeditor5Engine.anon
 
 import typings.ckeditorCkeditor5Engine.mod.view.Element
 import typings.ckeditorCkeditor5Engine.mod.view.MatcherPattern
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Model extends js.Object {
+trait Model extends StObject {
   
   var model: String | js.Object = js.native
   
@@ -24,39 +25,27 @@ object Model {
   }
   
   @scala.inline
-  implicit class ModelOps[Self <: Model] (val x: Self) extends AnyVal {
+  implicit class ModelMutableBuilder[Self <: Model] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModel(value: String | js.Object): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUpcastAlso(value: MatcherPattern | js.Array[MatcherPattern]): Self = StObject.set(x, "upcastAlso", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpcastAlsoFunction1(value: /* element */ Element => Null | Attribute): Self = StObject.set(x, "upcastAlso", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setModel(value: String | js.Object): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setUpcastAlsoUndefined: Self = StObject.set(x, "upcastAlso", js.undefined)
     
     @scala.inline
-    def setUpcastAlsoVarargs(value: MatcherPattern*): Self = this.set("upcastAlso", js.Array(value :_*))
+    def setUpcastAlsoVarargs(value: MatcherPattern*): Self = StObject.set(x, "upcastAlso", js.Array(value :_*))
     
     @scala.inline
-    def setUpcastAlsoFunction1(value: /* element */ Element => Null | Attribute): Self = this.set("upcastAlso", js.Any.fromFunction1(value))
+    def setView(value: String | js.Object): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpcastAlso(value: MatcherPattern | js.Array[MatcherPattern]): Self = this.set("upcastAlso", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpcastAlso: Self = this.set("upcastAlso", js.undefined)
-    
-    @scala.inline
-    def setView(value: String | js.Object): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

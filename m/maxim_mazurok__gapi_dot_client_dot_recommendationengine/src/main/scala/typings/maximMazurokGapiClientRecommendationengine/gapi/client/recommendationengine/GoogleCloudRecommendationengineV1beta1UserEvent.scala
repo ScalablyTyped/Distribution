@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommendationengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudRecommendationengineV1beta1UserEvent extends js.Object {
+trait GoogleCloudRecommendationengineV1beta1UserEvent extends StObject {
   
   /** Optional. User event detailed information common across different recommendation types. */
   var eventDetail: js.UndefOr[GoogleCloudRecommendationengineV1beta1EventDetail] = js.native
@@ -45,54 +46,42 @@ object GoogleCloudRecommendationengineV1beta1UserEvent {
   }
   
   @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1UserEventOps[Self <: GoogleCloudRecommendationengineV1beta1UserEvent] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudRecommendationengineV1beta1UserEventMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1UserEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventDetail(value: GoogleCloudRecommendationengineV1beta1EventDetail): Self = StObject.set(x, "eventDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventDetailUndefined: Self = StObject.set(x, "eventDetail", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventDetail(value: GoogleCloudRecommendationengineV1beta1EventDetail): Self = this.set("eventDetail", value.asInstanceOf[js.Any])
+    def setEventSourceUndefined: Self = StObject.set(x, "eventSource", js.undefined)
     
     @scala.inline
-    def deleteEventDetail: Self = this.set("eventDetail", js.undefined)
+    def setEventTime(value: String): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventSource(value: String): Self = this.set("eventSource", value.asInstanceOf[js.Any])
+    def setEventTimeUndefined: Self = StObject.set(x, "eventTime", js.undefined)
     
     @scala.inline
-    def deleteEventSource: Self = this.set("eventSource", js.undefined)
+    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTime(value: String): Self = this.set("eventTime", value.asInstanceOf[js.Any])
+    def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
     
     @scala.inline
-    def deleteEventTime: Self = this.set("eventTime", js.undefined)
+    def setProductEventDetail(value: GoogleCloudRecommendationengineV1beta1ProductEventDetail): Self = StObject.set(x, "productEventDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventType(value: String): Self = this.set("eventType", value.asInstanceOf[js.Any])
+    def setProductEventDetailUndefined: Self = StObject.set(x, "productEventDetail", js.undefined)
     
     @scala.inline
-    def deleteEventType: Self = this.set("eventType", js.undefined)
+    def setUserInfo(value: GoogleCloudRecommendationengineV1beta1UserInfo): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductEventDetail(value: GoogleCloudRecommendationengineV1beta1ProductEventDetail): Self = this.set("productEventDetail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductEventDetail: Self = this.set("productEventDetail", js.undefined)
-    
-    @scala.inline
-    def setUserInfo(value: GoogleCloudRecommendationengineV1beta1UserInfo): Self = this.set("userInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserInfo: Self = this.set("userInfo", js.undefined)
+    def setUserInfoUndefined: Self = StObject.set(x, "userInfo", js.undefined)
   }
 }

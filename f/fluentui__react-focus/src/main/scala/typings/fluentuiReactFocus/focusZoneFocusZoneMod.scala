@@ -3,14 +3,14 @@ package typings.fluentuiReactFocus
 import typings.fluentuiReactFocus.focusZoneTypesMod.IFocusZone
 import typings.fluentuiReactFocus.focusZoneTypesMod.IFocusZoneProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@fluentui/react-focus/lib/components/FocusZone/FocusZone", JSImport.Namespace)
-@js.native
-object focusZoneFocusZoneMod extends js.Object {
+object focusZoneFocusZoneMod {
   
+  @JSImport("@fluentui/react-focus/lib/components/FocusZone/FocusZone", "FocusZone")
   @js.native
   class FocusZone protected ()
     extends Component[IFocusZoneProps, js.Object, js.Any]
@@ -133,19 +133,32 @@ object focusZoneFocusZoneMod extends js.Object {
     def componentWillUnmount_MFocusZone(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object FocusZone extends js.Object {
+  object FocusZone {
+    
+    @JSImport("@fluentui/react-focus/lib/components/FocusZone/FocusZone", "FocusZone")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Handle global tab presses so that we can patch tabindexes on the fly.
       * HEADS UP: This must not be an arrow function in order to be referentially equal among instances
       * for ref counting to work correctly!
       */
-    var _onKeyDownCapture: js.Any = js.native
+    @JSImport("@fluentui/react-focus/lib/components/FocusZone/FocusZone", "FocusZone._onKeyDownCapture")
+    @js.native
+    def _onKeyDownCapture: js.Any = js.native
+    @scala.inline
+    def _onKeyDownCapture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_onKeyDownCapture")(x.asInstanceOf[js.Any])
     
-    var defaultProps: IFocusZoneProps = js.native
+    @JSImport("@fluentui/react-focus/lib/components/FocusZone/FocusZone", "FocusZone.defaultProps")
+    @js.native
+    def defaultProps: IFocusZoneProps = js.native
+    @scala.inline
+    def defaultProps_=(x: IFocusZoneProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     /** Used for testing purposes only. */
+    @JSImport("@fluentui/react-focus/lib/components/FocusZone/FocusZone", "FocusZone.getOuterZones")
+    @js.native
     def getOuterZones(): Double = js.native
   }
 }

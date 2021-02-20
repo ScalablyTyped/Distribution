@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DateStampProperties extends js.Object {
+trait DateStampProperties extends StObject {
   
   /**
     * The height of the rectangle.
@@ -36,42 +37,30 @@ object DateStampProperties {
   }
   
   @scala.inline
-  implicit class DateStampPropertiesOps[Self <: DateStampProperties] (val x: Self) extends AnyVal {
+  implicit class DateStampPropertiesMutableBuilder[Self <: DateStampProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateAreaHeight(value: String): Self = StObject.set(x, "dateAreaHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateAreaHeightUndefined: Self = StObject.set(x, "dateAreaHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateAreaWidth(value: String): Self = StObject.set(x, "dateAreaWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateAreaHeight(value: String): Self = this.set("dateAreaHeight", value.asInstanceOf[js.Any])
+    def setDateAreaWidthUndefined: Self = StObject.set(x, "dateAreaWidth", js.undefined)
     
     @scala.inline
-    def deleteDateAreaHeight: Self = this.set("dateAreaHeight", js.undefined)
+    def setDateAreaX(value: String): Self = StObject.set(x, "dateAreaX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateAreaWidth(value: String): Self = this.set("dateAreaWidth", value.asInstanceOf[js.Any])
+    def setDateAreaXUndefined: Self = StObject.set(x, "dateAreaX", js.undefined)
     
     @scala.inline
-    def deleteDateAreaWidth: Self = this.set("dateAreaWidth", js.undefined)
+    def setDateAreaY(value: String): Self = StObject.set(x, "dateAreaY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateAreaX(value: String): Self = this.set("dateAreaX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDateAreaX: Self = this.set("dateAreaX", js.undefined)
-    
-    @scala.inline
-    def setDateAreaY(value: String): Self = this.set("dateAreaY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDateAreaY: Self = this.set("dateAreaY", js.undefined)
+    def setDateAreaYUndefined: Self = StObject.set(x, "dateAreaY", js.undefined)
   }
 }

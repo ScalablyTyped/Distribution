@@ -13,6 +13,7 @@ import typings.activexWia.activexWiaStrings.`LeftcurlybracketB441F425-8C6E-11D2-
 import typings.activexWia.activexWiaStrings.`LeftcurlybracketC00EB793-8C6E-11D2-977A-0000F87A926FRightcurlybracket`
 import typings.activexWia.activexWiaStrings.`LeftcurlybracketC686DCEE-54F2-419E-9A27-2FC7F2E98F9ERightcurlybracket`
 import typings.activexWia.activexWiaStrings.`LeftcurlybracketFC4767C1-C8B3-48A2-9CFA-2E90CB3D3590Rightcurlybracket`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexWia.activexWiaStrings.`Leftcurlybracket9D095B89-37D6-4877-AFED-62A297DC6DBERightcurlybracket`
   - typings.activexWia.activexWiaStrings.`LeftcurlybracketB441F425-8C6E-11D2-977A-0000F87A926FRightcurlybracket`
 */
-trait EventID extends js.Object
+trait EventID extends StObject
 object EventID {
   
   @scala.inline

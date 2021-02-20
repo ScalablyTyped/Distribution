@@ -1,12 +1,13 @@
 package typings.fabric.fabricImplMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric/fabric-impl", "BaseBrush")
 @js.native
-class BaseBrush () extends js.Object {
+class BaseBrush () extends StObject {
   
   /**
     * Color of a brush

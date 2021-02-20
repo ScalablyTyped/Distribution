@@ -1,5 +1,6 @@
 package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * resources within a BaseType
   */
 @js.native
-trait SchemaCollectionOverride extends js.Object {
+trait SchemaCollectionOverride extends StObject {
   
   /**
     * The collection that identifies this resource within its service.
@@ -35,36 +36,24 @@ object SchemaCollectionOverride {
   }
   
   @scala.inline
-  implicit class SchemaCollectionOverrideOps[Self <: SchemaCollectionOverride] (val x: Self) extends AnyVal {
+  implicit class SchemaCollectionOverrideMutableBuilder[Self <: SchemaCollectionOverride] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMethodMap(value: SchemaMethodMap): Self = StObject.set(x, "methodMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollection(value: String): Self = this.set("collection", value.asInstanceOf[js.Any])
+    def setMethodMapUndefined: Self = StObject.set(x, "methodMap", js.undefined)
     
     @scala.inline
-    def deleteCollection: Self = this.set("collection", js.undefined)
+    def setOptions(value: SchemaOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethodMap(value: SchemaMethodMap): Self = this.set("methodMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMethodMap: Self = this.set("methodMap", js.undefined)
-    
-    @scala.inline
-    def setOptions(value: SchemaOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2LinkValueSpecLinkDialogSpec extends js.Object {
+trait GoogleActionsV2LinkValueSpecLinkDialogSpec extends StObject {
   
   /**
     * The name of the app or site this request wishes to linking to.
@@ -34,30 +35,18 @@ object GoogleActionsV2LinkValueSpecLinkDialogSpec {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2LinkValueSpecLinkDialogSpecOps[Self <: GoogleActionsV2LinkValueSpecLinkDialogSpec] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2LinkValueSpecLinkDialogSpecMutableBuilder[Self <: GoogleActionsV2LinkValueSpecLinkDialogSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestLinkReason(value: String): Self = StObject.set(x, "requestLinkReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationName(value: String): Self = this.set("destinationName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationName: Self = this.set("destinationName", js.undefined)
-    
-    @scala.inline
-    def setRequestLinkReason(value: String): Self = this.set("requestLinkReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestLinkReason: Self = this.set("requestLinkReason", js.undefined)
+    def setRequestLinkReasonUndefined: Self = StObject.set(x, "requestLinkReason", js.undefined)
   }
 }

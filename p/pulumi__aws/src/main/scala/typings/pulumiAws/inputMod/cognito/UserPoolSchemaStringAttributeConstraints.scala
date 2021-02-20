@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.cognito
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserPoolSchemaStringAttributeConstraints extends js.Object {
+trait UserPoolSchemaStringAttributeConstraints extends StObject {
   
   /**
     * The maximum length of an attribute value of the string type.
@@ -27,30 +28,18 @@ object UserPoolSchemaStringAttributeConstraints {
   }
   
   @scala.inline
-  implicit class UserPoolSchemaStringAttributeConstraintsOps[Self <: UserPoolSchemaStringAttributeConstraints] (val x: Self) extends AnyVal {
+  implicit class UserPoolSchemaStringAttributeConstraintsMutableBuilder[Self <: UserPoolSchemaStringAttributeConstraints] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxLength(value: Input[String]): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinLength(value: Input[String]): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLength(value: Input[String]): Self = this.set("maxLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
-    
-    @scala.inline
-    def setMinLength(value: Input[String]): Self = this.set("minLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinLength: Self = this.set("minLength", js.undefined)
+    def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
   }
 }

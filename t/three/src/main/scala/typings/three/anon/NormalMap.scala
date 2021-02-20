@@ -1,12 +1,13 @@
 package typings.three.anon
 
 import typings.three.uniformsLibMod.IUniform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NormalMap extends js.Object {
+trait NormalMap extends StObject {
   
   var normalMap: IUniform = js.native
   
@@ -21,24 +22,12 @@ object NormalMap {
   }
   
   @scala.inline
-  implicit class NormalMapOps[Self <: NormalMap] (val x: Self) extends AnyVal {
+  implicit class NormalMapMutableBuilder[Self <: NormalMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNormalMap(value: IUniform): Self = StObject.set(x, "normalMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNormalMap(value: IUniform): Self = this.set("normalMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNormalScale(value: IUniform): Self = this.set("normalScale", value.asInstanceOf[js.Any])
+    def setNormalScale(value: IUniform): Self = StObject.set(x, "normalScale", value.asInstanceOf[js.Any])
   }
 }

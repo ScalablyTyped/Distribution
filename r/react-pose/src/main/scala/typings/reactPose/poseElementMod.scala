@@ -3,9 +3,9 @@ package typings.reactPose
 import org.scalablytyped.runtime.StringDictionary
 import typings.popmotionPose.typesMod.DomPopmotionConfig
 import typings.popmotionPose.typesMod.DomPopmotionPoser
-import typings.react.mod.Component
 import typings.react.mod.ConsumerProps
 import typings.react.mod.ExoticComponent
+import typings.react.mod.PureComponent
 import typings.reactPose.anon.Dictkey
 import typings.reactPose.typesMod.ChildRegistration
 import typings.reactPose.typesMod.CurrentPose
@@ -13,19 +13,17 @@ import typings.reactPose.typesMod.PopStyle
 import typings.reactPose.typesMod.PoseElementInternalProps
 import typings.std.Element
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-pose/lib/components/PoseElement", JSImport.Namespace)
-@js.native
-object poseElementMod extends js.Object {
+object poseElementMod {
   
-  val PoseParentConsumer: ExoticComponent[ConsumerProps[js.Object]] = js.native
-  
+  @JSImport("react-pose/lib/components/PoseElement", "PoseElement")
   @js.native
   class PoseElement protected ()
-    extends Component[PoseElementInternalProps, js.Object, js.Any] {
+    extends PureComponent[PoseElementInternalProps, js.Object, js.Any] {
     def this(props: PoseElementInternalProps) = this()
     
     var children: Set[ChildRegistration] = js.native
@@ -73,4 +71,8 @@ object poseElementMod extends js.Object {
     
     var styleProps: StringDictionary[js.Any] = js.native
   }
+  
+  @JSImport("react-pose/lib/components/PoseElement", "PoseParentConsumer")
+  @js.native
+  val PoseParentConsumer: ExoticComponent[ConsumerProps[js.Object]] = js.native
 }

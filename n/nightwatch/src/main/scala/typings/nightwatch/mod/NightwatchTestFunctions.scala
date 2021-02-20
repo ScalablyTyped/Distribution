@@ -1,6 +1,7 @@
 package typings.nightwatch.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,89 +32,77 @@ object NightwatchTestFunctions {
   }
   
   @scala.inline
-  implicit class NightwatchTestFunctionsOps[Self <: NightwatchTestFunctions] (val x: Self) extends AnyVal {
+  implicit class NightwatchTestFunctionsMutableBuilder[Self <: NightwatchTestFunctions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `set@disabled`(value: Boolean): Self = StObject.set(x, "@disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `set@disabledUndefined`: Self = StObject.set(x, "@disabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `set@tags`(value: String | js.Array[String]): Self = StObject.set(x, "@tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set@disabled`(value: Boolean): Self = this.set("@disabled", value.asInstanceOf[js.Any])
+    def `set@tagsUndefined`: Self = StObject.set(x, "@tags", js.undefined)
     
     @scala.inline
-    def `delete@disabled`: Self = this.set("@disabled", js.undefined)
+    def `set@tagsVarargs`(value: String*): Self = StObject.set(x, "@tags", js.Array(value :_*))
     
     @scala.inline
-    def `set@tagsVarargs`(value: String*): Self = this.set("@tags", js.Array(value :_*))
+    def setAfter(value: NightwatchTestHook): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set@tags`(value: String | js.Array[String]): Self = this.set("@tags", value.asInstanceOf[js.Any])
+    def setAfterEach(value: NightwatchTestHook): Self = StObject.set(x, "afterEach", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `delete@tags`: Self = this.set("@tags", js.undefined)
-    
-    @scala.inline
-    def setAfterFunction2(
-      value: (/* browser */ NightwatchBrowser, /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit]) => Unit
-    ): Self = this.set("after", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setAfterFunction1(value: /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit] => Unit): Self = this.set("after", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setAfter(value: NightwatchTestHook): Self = this.set("after", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAfter: Self = this.set("after", js.undefined)
+    def setAfterEachFunction1(value: /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit] => Unit): Self = StObject.set(x, "afterEach", js.Any.fromFunction1(value))
     
     @scala.inline
     def setAfterEachFunction2(
       value: (/* browser */ NightwatchBrowser, /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit]) => Unit
-    ): Self = this.set("afterEach", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "afterEach", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAfterEachFunction1(value: /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit] => Unit): Self = this.set("afterEach", js.Any.fromFunction1(value))
+    def setAfterEachUndefined: Self = StObject.set(x, "afterEach", js.undefined)
     
     @scala.inline
-    def setAfterEach(value: NightwatchTestHook): Self = this.set("afterEach", value.asInstanceOf[js.Any])
+    def setAfterFunction1(value: /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit] => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAfterEach: Self = this.set("afterEach", js.undefined)
-    
-    @scala.inline
-    def setBeforeFunction2(
+    def setAfterFunction2(
       value: (/* browser */ NightwatchBrowser, /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit]) => Unit
-    ): Self = this.set("before", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "after", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBeforeFunction1(value: /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit] => Unit): Self = this.set("before", js.Any.fromFunction1(value))
+    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
     @scala.inline
-    def setBefore(value: NightwatchTestHook): Self = this.set("before", value.asInstanceOf[js.Any])
+    def setBefore(value: NightwatchTestHook): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBefore: Self = this.set("before", js.undefined)
+    def setBeforeEach(value: NightwatchTestHook): Self = StObject.set(x, "beforeEach", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setBeforeEachFunction1(value: /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit] => Unit): Self = StObject.set(x, "beforeEach", js.Any.fromFunction1(value))
     
     @scala.inline
     def setBeforeEachFunction2(
       value: (/* browser */ NightwatchBrowser, /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit]) => Unit
-    ): Self = this.set("beforeEach", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "beforeEach", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBeforeEachFunction1(value: /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit] => Unit): Self = this.set("beforeEach", js.Any.fromFunction1(value))
+    def setBeforeEachUndefined: Self = StObject.set(x, "beforeEach", js.undefined)
     
     @scala.inline
-    def setBeforeEach(value: NightwatchTestHook): Self = this.set("beforeEach", value.asInstanceOf[js.Any])
+    def setBeforeFunction1(value: /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit] => Unit): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBeforeEach: Self = this.set("beforeEach", js.undefined)
+    def setBeforeFunction2(
+      value: (/* browser */ NightwatchBrowser, /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit]) => Unit
+    ): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
   }
 }

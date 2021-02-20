@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Target
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateBrowserContextRequest extends js.Object {
+trait CreateBrowserContextRequest extends StObject {
   
   /**
     * If specified, disposes this context when debugging session disconnects.
@@ -31,36 +32,24 @@ object CreateBrowserContextRequest {
   }
   
   @scala.inline
-  implicit class CreateBrowserContextRequestOps[Self <: CreateBrowserContextRequest] (val x: Self) extends AnyVal {
+  implicit class CreateBrowserContextRequestMutableBuilder[Self <: CreateBrowserContextRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisposeOnDetach(value: Boolean): Self = StObject.set(x, "disposeOnDetach", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisposeOnDetachUndefined: Self = StObject.set(x, "disposeOnDetach", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProxyBypassList(value: String): Self = StObject.set(x, "proxyBypassList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisposeOnDetach(value: Boolean): Self = this.set("disposeOnDetach", value.asInstanceOf[js.Any])
+    def setProxyBypassListUndefined: Self = StObject.set(x, "proxyBypassList", js.undefined)
     
     @scala.inline
-    def deleteDisposeOnDetach: Self = this.set("disposeOnDetach", js.undefined)
+    def setProxyServer(value: String): Self = StObject.set(x, "proxyServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxyBypassList(value: String): Self = this.set("proxyBypassList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProxyBypassList: Self = this.set("proxyBypassList", js.undefined)
-    
-    @scala.inline
-    def setProxyServer(value: String): Self = this.set("proxyServer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProxyServer: Self = this.set("proxyServer", js.undefined)
+    def setProxyServerUndefined: Self = StObject.set(x, "proxyServer", js.undefined)
   }
 }

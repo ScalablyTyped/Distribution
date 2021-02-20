@@ -1,13 +1,14 @@
 package typings.recurlyRecurlyJs.anon
 
 import typings.recurlyRecurlyJs.elementsMod.CommonElementStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @recurly/recurly-js.@recurly/recurly-js/lib/elements.CardElementOptions & {  selector :string | undefined} */
 @js.native
-trait CardElementOptionsselecto extends js.Object {
+trait CardElementOptionsselecto extends StObject {
   
   /**
     * If false, the card brand icon will be hidden
@@ -50,48 +51,36 @@ object CardElementOptionsselecto {
   }
   
   @scala.inline
-  implicit class CardElementOptionsselectoOps[Self <: CardElementOptionsselecto] (val x: Self) extends AnyVal {
+  implicit class CardElementOptionsselectoMutableBuilder[Self <: CardElementOptionsselecto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayIcon(value: Boolean): Self = StObject.set(x, "displayIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayIconUndefined: Self = StObject.set(x, "displayIcon", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputType(value: String): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayIcon(value: Boolean): Self = this.set("displayIcon", value.asInstanceOf[js.Any])
+    def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
     
     @scala.inline
-    def deleteDisplayIcon: Self = this.set("displayIcon", js.undefined)
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputType(value: String): Self = this.set("inputType", value.asInstanceOf[js.Any])
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
     @scala.inline
-    def deleteInputType: Self = this.set("inputType", js.undefined)
+    def setStyle(value: CommonElementStyle with Placeholder): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setTabIndex(value: String): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: CommonElementStyle with Placeholder): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setTabIndex(value: String): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
   }
 }

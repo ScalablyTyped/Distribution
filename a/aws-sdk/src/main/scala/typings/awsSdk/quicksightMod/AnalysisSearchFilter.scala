@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnalysisSearchFilter extends js.Object {
+trait AnalysisSearchFilter extends StObject {
   
   /**
     * The name of the value that you want to use as a filter, for example "Name": "QUICKSIGHT_USER".
@@ -31,36 +32,24 @@ object AnalysisSearchFilter {
   }
   
   @scala.inline
-  implicit class AnalysisSearchFilterOps[Self <: AnalysisSearchFilter] (val x: Self) extends AnyVal {
+  implicit class AnalysisSearchFilterMutableBuilder[Self <: AnalysisSearchFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: AnalysisFilterAttribute): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperator(value: FilterOperator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: AnalysisFilterAttribute): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOperatorUndefined: Self = StObject.set(x, "Operator", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperator(value: FilterOperator): Self = this.set("Operator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperator: Self = this.set("Operator", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("Value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

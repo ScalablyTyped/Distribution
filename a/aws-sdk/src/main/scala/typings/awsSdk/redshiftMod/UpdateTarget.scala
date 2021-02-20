@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateTarget extends js.Object {
+trait UpdateTarget extends StObject {
   
   /**
     * The cluster version for the new maintenance track.
@@ -31,39 +32,27 @@ object UpdateTarget {
   }
   
   @scala.inline
-  implicit class UpdateTargetOps[Self <: UpdateTarget] (val x: Self) extends AnyVal {
+  implicit class UpdateTargetMutableBuilder[Self <: UpdateTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatabaseVersion(value: String): Self = StObject.set(x, "DatabaseVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatabaseVersionUndefined: Self = StObject.set(x, "DatabaseVersion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaintenanceTrackName(value: String): Self = StObject.set(x, "MaintenanceTrackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseVersion(value: String): Self = this.set("DatabaseVersion", value.asInstanceOf[js.Any])
+    def setMaintenanceTrackNameUndefined: Self = StObject.set(x, "MaintenanceTrackName", js.undefined)
     
     @scala.inline
-    def deleteDatabaseVersion: Self = this.set("DatabaseVersion", js.undefined)
+    def setSupportedOperations(value: SupportedOperationList): Self = StObject.set(x, "SupportedOperations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaintenanceTrackName(value: String): Self = this.set("MaintenanceTrackName", value.asInstanceOf[js.Any])
+    def setSupportedOperationsUndefined: Self = StObject.set(x, "SupportedOperations", js.undefined)
     
     @scala.inline
-    def deleteMaintenanceTrackName: Self = this.set("MaintenanceTrackName", js.undefined)
-    
-    @scala.inline
-    def setSupportedOperationsVarargs(value: SupportedOperation*): Self = this.set("SupportedOperations", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportedOperations(value: SupportedOperationList): Self = this.set("SupportedOperations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedOperations: Self = this.set("SupportedOperations", js.undefined)
+    def setSupportedOperationsVarargs(value: SupportedOperation*): Self = StObject.set(x, "SupportedOperations", js.Array(value :_*))
   }
 }

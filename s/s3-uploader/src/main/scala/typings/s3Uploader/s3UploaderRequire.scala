@@ -1,5 +1,6 @@
 package typings.s3Uploader
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("s3-uploader", JSImport.Namespace)
 @js.native
-object s3UploaderRequire extends js.Object
+object s3UploaderRequire extends StObject

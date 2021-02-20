@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Relevance extends js.Object {
+trait Relevance extends StObject {
   
   /**
     * Specifies the time period that the boost applies to. For example, to make the boost apply to documents with the field value within the last month, you would use "2628000s". Once the field value is beyond the specified range, the effect of the boost drops off. The higher the importance, the faster the effect drops off. If you don't specify a value, the default is 3 months. The value of the field is a numeric string followed by the character "s", for example "86400s" for one day, or "604800s" for one week.  Only applies to DATE fields.
@@ -41,48 +42,36 @@ object Relevance {
   }
   
   @scala.inline
-  implicit class RelevanceOps[Self <: Relevance] (val x: Self) extends AnyVal {
+  implicit class RelevanceMutableBuilder[Self <: Relevance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: Duration): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFreshness(value: DocumentMetadataBoolean): Self = StObject.set(x, "Freshness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Duration): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    def setFreshnessUndefined: Self = StObject.set(x, "Freshness", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("Duration", js.undefined)
+    def setImportance(value: Importance): Self = StObject.set(x, "Importance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFreshness(value: DocumentMetadataBoolean): Self = this.set("Freshness", value.asInstanceOf[js.Any])
+    def setImportanceUndefined: Self = StObject.set(x, "Importance", js.undefined)
     
     @scala.inline
-    def deleteFreshness: Self = this.set("Freshness", js.undefined)
+    def setRankOrder(value: Order): Self = StObject.set(x, "RankOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportance(value: Importance): Self = this.set("Importance", value.asInstanceOf[js.Any])
+    def setRankOrderUndefined: Self = StObject.set(x, "RankOrder", js.undefined)
     
     @scala.inline
-    def deleteImportance: Self = this.set("Importance", js.undefined)
+    def setValueImportanceMap(value: ValueImportanceMap): Self = StObject.set(x, "ValueImportanceMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRankOrder(value: Order): Self = this.set("RankOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRankOrder: Self = this.set("RankOrder", js.undefined)
-    
-    @scala.inline
-    def setValueImportanceMap(value: ValueImportanceMap): Self = this.set("ValueImportanceMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueImportanceMap: Self = this.set("ValueImportanceMap", js.undefined)
+    def setValueImportanceMapUndefined: Self = StObject.set(x, "ValueImportanceMap", js.undefined)
   }
 }

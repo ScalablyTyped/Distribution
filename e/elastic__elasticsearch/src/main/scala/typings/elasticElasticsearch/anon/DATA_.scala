@@ -1,11 +1,12 @@
 package typings.elasticElasticsearch.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DATA_ extends js.Object {
+trait DATA_ extends StObject {
   
   var DATA: String = js.native
   
@@ -24,30 +25,18 @@ object DATA_ {
   }
   
   @scala.inline
-  implicit class DATA_Ops[Self <: DATA_] (val x: Self) extends AnyVal {
+  implicit class DATA_MutableBuilder[Self <: DATA_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDATA(value: String): Self = StObject.set(x, "DATA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setINGEST(value: String): Self = StObject.set(x, "INGEST", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMASTER(value: String): Self = StObject.set(x, "MASTER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDATA(value: String): Self = this.set("DATA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setINGEST(value: String): Self = this.set("INGEST", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMASTER(value: String): Self = this.set("MASTER", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setML(value: String): Self = this.set("ML", value.asInstanceOf[js.Any])
+    def setML(value: String): Self = StObject.set(x, "ML", value.asInstanceOf[js.Any])
   }
 }

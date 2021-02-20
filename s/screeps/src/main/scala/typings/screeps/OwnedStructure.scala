@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,27 +43,15 @@ object OwnedStructure {
   }
   
   @scala.inline
-  implicit class OwnedStructureOps[Self <: OwnedStructure[_], T /* <: StructureConstant */] (val x: Self with OwnedStructure[T]) extends AnyVal {
+  implicit class OwnedStructureMutableBuilder[Self <: OwnedStructure[_], T /* <: StructureConstant */] (val x: Self with OwnedStructure[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMy(value: Boolean): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOwner(value: Owner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMy(value: Boolean): Self = this.set("my", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOwner(value: Owner): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

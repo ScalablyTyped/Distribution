@@ -6,14 +6,14 @@ import typings.angularCore.mod.EventEmitter
 import typings.angularCore.mod.Renderer2
 import typings.homeworks.homeworks.TabEvent
 import typings.homeworks.managerMod.HomeworksManager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("homeworks/lib/ng2-homeworks/src/components/tab/component.tab", JSImport.Namespace)
-@js.native
-object componentTabMod extends js.Object {
+object componentTabMod {
   
+  @JSImport("homeworks/lib/ng2-homeworks/src/components/tab/component.tab", "WorksTab")
   @js.native
   class WorksTab protected () extends HomeworksManager {
     def this(renderer: Renderer2, elementRef: ElementRef[_]) = this()
@@ -40,6 +40,7 @@ object componentTabMod extends js.Object {
     var wrapperElement: js.Any = js.native
   }
   
+  @JSImport("homeworks/lib/ng2-homeworks/src/components/tab/component.tab", "WorksTabItem")
   @js.native
   class WorksTabItem protected ()
     extends HomeworksManager
@@ -64,6 +65,7 @@ object componentTabMod extends js.Object {
     var titleElement: js.Any = js.native
   }
   
+  @JSImport("homeworks/lib/ng2-homeworks/src/components/tab/component.tab", "WorksTabTitle")
   @js.native
   class WorksTabTitle protected () extends HomeworksManager {
     def this(renderer: Renderer2, elementRef: ElementRef[_]) = this()

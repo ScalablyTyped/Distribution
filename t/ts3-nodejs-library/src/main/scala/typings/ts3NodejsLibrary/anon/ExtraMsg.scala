@@ -1,11 +1,12 @@
 package typings.ts3NodejsLibrary.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtraMsg extends js.Object {
+trait ExtraMsg extends StObject {
   
   var extraMsg: js.UndefOr[String] = js.native
   
@@ -26,39 +27,27 @@ object ExtraMsg {
   }
   
   @scala.inline
-  implicit class ExtraMsgOps[Self <: ExtraMsg] (val x: Self) extends AnyVal {
+  implicit class ExtraMsgMutableBuilder[Self <: ExtraMsg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtraMsg(value: String): Self = StObject.set(x, "extraMsg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtraMsgUndefined: Self = StObject.set(x, "extraMsg", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailedPermid(value: Double): Self = StObject.set(x, "failedPermid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setFailedPermidUndefined: Self = StObject.set(x, "failedPermid", js.undefined)
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsg(value: String): Self = this.set("msg", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraMsg(value: String): Self = this.set("extraMsg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtraMsg: Self = this.set("extraMsg", js.undefined)
-    
-    @scala.inline
-    def setFailedPermid(value: Double): Self = this.set("failedPermid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailedPermid: Self = this.set("failedPermid", js.undefined)
+    def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.jasmineAjax
 
 import typings.std.XMLHttpRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JasmineAjaxParamParser extends js.Object {
+trait JasmineAjaxParamParser extends StObject {
   
   def parse(paramString: String): js.Any = js.native
   
@@ -21,24 +22,12 @@ object JasmineAjaxParamParser {
   }
   
   @scala.inline
-  implicit class JasmineAjaxParamParserOps[Self <: JasmineAjaxParamParser] (val x: Self) extends AnyVal {
+  implicit class JasmineAjaxParamParserMutableBuilder[Self <: JasmineAjaxParamParser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParse(value: String => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParse(value: String => js.Any): Self = this.set("parse", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTest(value: XMLHttpRequest => Boolean): Self = this.set("test", js.Any.fromFunction1(value))
+    def setTest(value: XMLHttpRequest => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
   }
 }

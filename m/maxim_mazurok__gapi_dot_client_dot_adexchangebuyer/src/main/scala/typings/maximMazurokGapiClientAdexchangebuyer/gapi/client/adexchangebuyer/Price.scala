@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuyer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Price extends js.Object {
+trait Price extends StObject {
   
   /** The price value in micros. */
   var amountMicros: js.UndefOr[Double] = js.native
@@ -28,42 +29,30 @@ object Price {
   }
   
   @scala.inline
-  implicit class PriceOps[Self <: Price] (val x: Self) extends AnyVal {
+  implicit class PriceMutableBuilder[Self <: Price] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmountMicros(value: Double): Self = StObject.set(x, "amountMicros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountMicrosUndefined: Self = StObject.set(x, "amountMicros", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmountMicros(value: Double): Self = this.set("amountMicros", value.asInstanceOf[js.Any])
+    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
     @scala.inline
-    def deleteAmountMicros: Self = this.set("amountMicros", js.undefined)
+    def setExpectedCpmMicros(value: Double): Self = StObject.set(x, "expectedCpmMicros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    def setExpectedCpmMicrosUndefined: Self = StObject.set(x, "expectedCpmMicros", js.undefined)
     
     @scala.inline
-    def deleteCurrencyCode: Self = this.set("currencyCode", js.undefined)
+    def setPricingType(value: String): Self = StObject.set(x, "pricingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectedCpmMicros(value: Double): Self = this.set("expectedCpmMicros", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpectedCpmMicros: Self = this.set("expectedCpmMicros", js.undefined)
-    
-    @scala.inline
-    def setPricingType(value: String): Self = this.set("pricingType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePricingType: Self = this.set("pricingType", js.undefined)
+    def setPricingTypeUndefined: Self = StObject.set(x, "pricingType", js.undefined)
   }
 }

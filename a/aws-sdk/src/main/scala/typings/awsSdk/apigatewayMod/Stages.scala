@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Stages extends js.Object {
+trait Stages extends StObject {
   
   /**
     * The current page of elements from this collection.
@@ -21,27 +22,15 @@ object Stages {
   }
   
   @scala.inline
-  implicit class StagesOps[Self <: Stages] (val x: Self) extends AnyVal {
+  implicit class StagesMutableBuilder[Self <: Stages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItem(value: ListOfStage): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItemVarargs(value: Stage*): Self = this.set("item", js.Array(value :_*))
-    
-    @scala.inline
-    def setItem(value: ListOfStage): Self = this.set("item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
+    def setItemVarargs(value: Stage*): Self = StObject.set(x, "item", js.Array(value :_*))
   }
 }

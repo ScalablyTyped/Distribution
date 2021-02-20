@@ -1,6 +1,7 @@
 package typings.actionsOnGoogle.v2Mod
 
 import typings.actionsOnGoogle.decisionMod.TransactionDecisionArgument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,36 +36,24 @@ object GoogleActionsTransactionsV3TransactionDecisionValue {
   }
   
   @scala.inline
-  implicit class GoogleActionsTransactionsV3TransactionDecisionValueOps[Self <: GoogleActionsTransactionsV3TransactionDecisionValue] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsTransactionsV3TransactionDecisionValueMutableBuilder[Self <: GoogleActionsTransactionsV3TransactionDecisionValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeliveryAddress(value: GoogleActionsV2Location): Self = StObject.set(x, "deliveryAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeliveryAddressUndefined: Self = StObject.set(x, "deliveryAddress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrder(value: GoogleActionsOrdersV3Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryAddress(value: GoogleActionsV2Location): Self = this.set("deliveryAddress", value.asInstanceOf[js.Any])
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def deleteDeliveryAddress: Self = this.set("deliveryAddress", js.undefined)
+    def setTransactionDecision(value: GoogleActionsTransactionsV3TransactionDecisionValueTransactionDecision): Self = StObject.set(x, "transactionDecision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: GoogleActionsOrdersV3Order): Self = this.set("order", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
-    
-    @scala.inline
-    def setTransactionDecision(value: GoogleActionsTransactionsV3TransactionDecisionValueTransactionDecision): Self = this.set("transactionDecision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransactionDecision: Self = this.set("transactionDecision", js.undefined)
+    def setTransactionDecisionUndefined: Self = StObject.set(x, "transactionDecision", js.undefined)
   }
 }

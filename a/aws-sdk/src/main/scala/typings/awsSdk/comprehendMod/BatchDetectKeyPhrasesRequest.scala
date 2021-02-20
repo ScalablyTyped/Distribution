@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDetectKeyPhrasesRequest extends js.Object {
+trait BatchDetectKeyPhrasesRequest extends StObject {
   
   /**
     * The language of the input documents. You can specify any of the primary languages supported by Amazon Comprehend. All documents must be in the same language.
@@ -26,27 +27,15 @@ object BatchDetectKeyPhrasesRequest {
   }
   
   @scala.inline
-  implicit class BatchDetectKeyPhrasesRequestOps[Self <: BatchDetectKeyPhrasesRequest] (val x: Self) extends AnyVal {
+  implicit class BatchDetectKeyPhrasesRequestMutableBuilder[Self <: BatchDetectKeyPhrasesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTextList(value: CustomerInputStringList): Self = StObject.set(x, "TextList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextListVarargs(value: CustomerInputString*): Self = this.set("TextList", js.Array(value :_*))
-    
-    @scala.inline
-    def setTextList(value: CustomerInputStringList): Self = this.set("TextList", value.asInstanceOf[js.Any])
+    def setTextListVarargs(value: CustomerInputString*): Self = StObject.set(x, "TextList", js.Array(value :_*))
   }
 }

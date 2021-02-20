@@ -1,12 +1,13 @@
 package typings.ipfsHttpServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ipfs-http-server/dist/src/error-handler", JSImport.Namespace)
-@js.native
-object errorHandlerMod extends js.Object {
+object errorHandlerMod {
   
+  @JSImport("ipfs-http-server/dist/src/error-handler", JSImport.Namespace)
+  @js.native
   def apply(server: js.Any): Unit = js.native
 }

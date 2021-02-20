@@ -1,12 +1,13 @@
 package typings.tensorflowTfjsCore.kernelNamesMod
 
 import typings.tensorflowTfjsCore.fusedTypesMod.Activation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FusedMatMulAttrs extends js.Object {
+trait FusedMatMulAttrs extends StObject {
   
   var activation: Activation = js.native
   
@@ -23,27 +24,15 @@ object FusedMatMulAttrs {
   }
   
   @scala.inline
-  implicit class FusedMatMulAttrsOps[Self <: FusedMatMulAttrs] (val x: Self) extends AnyVal {
+  implicit class FusedMatMulAttrsMutableBuilder[Self <: FusedMatMulAttrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivation(value: Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTransposeA(value: Boolean): Self = StObject.set(x, "transposeA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActivation(value: Activation): Self = this.set("activation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransposeA(value: Boolean): Self = this.set("transposeA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransposeB(value: Boolean): Self = this.set("transposeB", value.asInstanceOf[js.Any])
+    def setTransposeB(value: Boolean): Self = StObject.set(x, "transposeB", value.asInstanceOf[js.Any])
   }
 }

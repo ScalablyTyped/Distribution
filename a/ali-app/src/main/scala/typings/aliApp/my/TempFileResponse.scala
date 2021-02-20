@@ -1,11 +1,12 @@
 package typings.aliApp.my
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TempFileResponse extends js.Object {
+trait TempFileResponse extends StObject {
   
   /** 文件的临时路径 */
   var apFilePath: String = js.native
@@ -19,21 +20,9 @@ object TempFileResponse {
   }
   
   @scala.inline
-  implicit class TempFileResponseOps[Self <: TempFileResponse] (val x: Self) extends AnyVal {
+  implicit class TempFileResponseMutableBuilder[Self <: TempFileResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApFilePath(value: String): Self = this.set("apFilePath", value.asInstanceOf[js.Any])
+    def setApFilePath(value: String): Self = StObject.set(x, "apFilePath", value.asInstanceOf[js.Any])
   }
 }

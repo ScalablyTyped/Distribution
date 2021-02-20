@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmulateNetworkConditionsRequest extends js.Object {
+trait EmulateNetworkConditionsRequest extends StObject {
   
   /**
     * Connection type if known.
@@ -41,36 +42,24 @@ object EmulateNetworkConditionsRequest {
   }
   
   @scala.inline
-  implicit class EmulateNetworkConditionsRequestOps[Self <: EmulateNetworkConditionsRequest] (val x: Self) extends AnyVal {
+  implicit class EmulateNetworkConditionsRequestMutableBuilder[Self <: EmulateNetworkConditionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionType(value: ConnectionType): Self = StObject.set(x, "connectionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionTypeUndefined: Self = StObject.set(x, "connectionType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDownloadThroughput(value: Double): Self = StObject.set(x, "downloadThroughput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadThroughput(value: Double): Self = this.set("downloadThroughput", value.asInstanceOf[js.Any])
+    def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatency(value: Double): Self = this.set("latency", value.asInstanceOf[js.Any])
+    def setOffline(value: Boolean): Self = StObject.set(x, "offline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffline(value: Boolean): Self = this.set("offline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUploadThroughput(value: Double): Self = this.set("uploadThroughput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConnectionType(value: ConnectionType): Self = this.set("connectionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnectionType: Self = this.set("connectionType", js.undefined)
+    def setUploadThroughput(value: Double): Self = StObject.set(x, "uploadThroughput", value.asInstanceOf[js.Any])
   }
 }

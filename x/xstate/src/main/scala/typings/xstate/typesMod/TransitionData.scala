@@ -1,11 +1,12 @@
 package typings.xstate.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransitionData[TContext, TEvent /* <: EventObject */] extends js.Object {
+trait TransitionData[TContext, TEvent /* <: EventObject */] extends StObject {
   
   var actions: ActionMap[TContext, TEvent] = js.native
   
@@ -22,33 +23,21 @@ object TransitionData {
   }
   
   @scala.inline
-  implicit class TransitionDataOps[Self <: TransitionData[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (TransitionData[TContext, TEvent])) extends AnyVal {
+  implicit class TransitionDataMutableBuilder[Self <: TransitionData[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (TransitionData[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: ActionMap[TContext, TEvent]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivities(value: ActivityMap): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
     
     @scala.inline
-    def setActions(value: ActionMap[TContext, TEvent]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setValue(value: StateValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivities(value: ActivityMap): Self = this.set("activities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActivities: Self = this.set("activities", js.undefined)
-    
-    @scala.inline
-    def setValue(value: StateValue): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

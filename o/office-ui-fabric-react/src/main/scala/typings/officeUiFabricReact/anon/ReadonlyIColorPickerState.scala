@@ -1,13 +1,14 @@
 package typings.officeUiFabricReact.anon
 
 import typings.officeUiFabricReact.interfacesMod.IColor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<office-ui-fabric-react.office-ui-fabric-react/lib/components/ColorPicker/ColorPicker.base.IColorPickerState> */
 @js.native
-trait ReadonlyIColorPickerState extends js.Object {
+trait ReadonlyIColorPickerState extends StObject {
   
   val color: IColor = js.native
   
@@ -22,27 +23,15 @@ object ReadonlyIColorPickerState {
   }
   
   @scala.inline
-  implicit class ReadonlyIColorPickerStateOps[Self <: ReadonlyIColorPickerState] (val x: Self) extends AnyVal {
+  implicit class ReadonlyIColorPickerStateMutableBuilder[Self <: ReadonlyIColorPickerState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: IColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEditingColor(value: Component): Self = StObject.set(x, "editingColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColor(value: IColor): Self = this.set("color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEditingColor(value: Component): Self = this.set("editingColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEditingColor: Self = this.set("editingColor", js.undefined)
+    def setEditingColorUndefined: Self = StObject.set(x, "editingColor", js.undefined)
   }
 }

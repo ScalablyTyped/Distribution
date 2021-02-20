@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateCachePolicyResult extends js.Object {
+trait CreateCachePolicyResult extends StObject {
   
   /**
     * A cache policy.
@@ -31,36 +32,24 @@ object CreateCachePolicyResult {
   }
   
   @scala.inline
-  implicit class CreateCachePolicyResultOps[Self <: CreateCachePolicyResult] (val x: Self) extends AnyVal {
+  implicit class CreateCachePolicyResultMutableBuilder[Self <: CreateCachePolicyResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCachePolicy(value: CachePolicy): Self = StObject.set(x, "CachePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCachePolicyUndefined: Self = StObject.set(x, "CachePolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCachePolicy(value: CachePolicy): Self = this.set("CachePolicy", value.asInstanceOf[js.Any])
+    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
     @scala.inline
-    def deleteCachePolicy: Self = this.set("CachePolicy", js.undefined)
+    def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setETag(value: String): Self = this.set("ETag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteETag: Self = this.set("ETag", js.undefined)
-    
-    @scala.inline
-    def setLocation(value: String): Self = this.set("Location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("Location", js.undefined)
+    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
   }
 }

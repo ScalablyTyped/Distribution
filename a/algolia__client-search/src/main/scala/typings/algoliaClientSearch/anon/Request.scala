@@ -2,12 +2,13 @@ package typings.algoliaClientSearch.anon
 
 import typings.algoliaClientSearch.mod.BrowseRequestData
 import typings.algoliaClientSearch.mod.BrowseResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Request[TObject] extends js.Object {
+trait Request[TObject] extends StObject {
   
   def request(data: BrowseRequestData): js.Promise[BrowseResponse[TObject]] = js.native
   
@@ -25,24 +26,12 @@ object Request {
   }
   
   @scala.inline
-  implicit class RequestOps[Self <: Request[_], TObject] (val x: Self with Request[TObject]) extends AnyVal {
+  implicit class RequestMutableBuilder[Self <: Request[_], TObject] (val x: Self with Request[TObject]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequest(value: BrowseRequestData => js.Promise[BrowseResponse[TObject]]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRequest(value: BrowseRequestData => js.Promise[BrowseResponse[TObject]]): Self = this.set("request", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShouldStop(value: BrowseResponse[TObject] => Boolean): Self = this.set("shouldStop", js.Any.fromFunction1(value))
+    def setShouldStop(value: BrowseResponse[TObject] => Boolean): Self = StObject.set(x, "shouldStop", js.Any.fromFunction1(value))
   }
 }

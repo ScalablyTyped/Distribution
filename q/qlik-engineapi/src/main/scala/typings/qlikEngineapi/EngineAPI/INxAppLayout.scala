@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NxAppLayout ...
   */
 @js.native
-trait INxAppLayout extends js.Object {
+trait INxAppLayout extends StObject {
   
   /**
     * In Qlik Sense Enterprise, this property corresponds to the app identifier (GUID).
@@ -93,57 +94,45 @@ object INxAppLayout {
   }
   
   @scala.inline
-  implicit class INxAppLayoutOps[Self <: INxAppLayout] (val x: Self) extends AnyVal {
+  implicit class INxAppLayoutMutableBuilder[Self <: INxAppLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQFileName(value: String): Self = StObject.set(x, "qFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQHasData(value: Boolean): Self = StObject.set(x, "qHasData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQHasScript(value: Boolean): Self = StObject.set(x, "qHasScript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFileName(value: String): Self = this.set("qFileName", value.asInstanceOf[js.Any])
+    def setQIsOpenedWithoutData(value: Boolean): Self = StObject.set(x, "qIsOpenedWithoutData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQHasData(value: Boolean): Self = this.set("qHasData", value.asInstanceOf[js.Any])
+    def setQLastReloadTime(value: String): Self = StObject.set(x, "qLastReloadTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQHasScript(value: Boolean): Self = this.set("qHasScript", value.asInstanceOf[js.Any])
+    def setQLocaleInfo(value: ILocaleInfo): Self = StObject.set(x, "qLocaleInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIsOpenedWithoutData(value: Boolean): Self = this.set("qIsOpenedWithoutData", value.asInstanceOf[js.Any])
+    def setQMeta(value: INxMeta): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQLastReloadTime(value: String): Self = this.set("qLastReloadTime", value.asInstanceOf[js.Any])
+    def setQModified(value: Boolean): Self = StObject.set(x, "qModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQLocaleInfo(value: ILocaleInfo): Self = this.set("qLocaleInfo", value.asInstanceOf[js.Any])
+    def setQReadOnly(value: Boolean): Self = StObject.set(x, "qReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQMeta(value: INxMeta): Self = this.set("qMeta", value.asInstanceOf[js.Any])
+    def setQStateNames(value: js.Array[String]): Self = StObject.set(x, "qStateNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQModified(value: Boolean): Self = this.set("qModified", value.asInstanceOf[js.Any])
+    def setQStateNamesVarargs(value: String*): Self = StObject.set(x, "qStateNames", js.Array(value :_*))
     
     @scala.inline
-    def setQReadOnly(value: Boolean): Self = this.set("qReadOnly", value.asInstanceOf[js.Any])
+    def setQThumbnail(value: IStaticContentUrl): Self = StObject.set(x, "qThumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQStateNamesVarargs(value: String*): Self = this.set("qStateNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setQStateNames(value: js.Array[String]): Self = this.set("qStateNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQThumbnail(value: IStaticContentUrl): Self = this.set("qThumbnail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQTitle(value: String): Self = this.set("qTitle", value.asInstanceOf[js.Any])
+    def setQTitle(value: String): Self = StObject.set(x, "qTitle", value.asInstanceOf[js.Any])
   }
 }

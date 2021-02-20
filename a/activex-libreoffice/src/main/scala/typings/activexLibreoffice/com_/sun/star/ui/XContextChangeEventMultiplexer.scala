@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.ui
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,30 +64,18 @@ object XContextChangeEventMultiplexer {
   }
   
   @scala.inline
-  implicit class XContextChangeEventMultiplexerOps[Self <: XContextChangeEventMultiplexer] (val x: Self) extends AnyVal {
+  implicit class XContextChangeEventMultiplexerMutableBuilder[Self <: XContextChangeEventMultiplexer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddContextChangeEventListener(value: (XContextChangeEventListener, XInterface) => Unit): Self = StObject.set(x, "addContextChangeEventListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBroadcastContextChangeEvent(value: (ContextChangeEventObject, XInterface) => Unit): Self = StObject.set(x, "broadcastContextChangeEvent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveAllContextChangeEventListeners(value: XContextChangeEventListener => Unit): Self = StObject.set(x, "removeAllContextChangeEventListeners", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddContextChangeEventListener(value: (XContextChangeEventListener, XInterface) => Unit): Self = this.set("addContextChangeEventListener", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setBroadcastContextChangeEvent(value: (ContextChangeEventObject, XInterface) => Unit): Self = this.set("broadcastContextChangeEvent", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemoveAllContextChangeEventListeners(value: XContextChangeEventListener => Unit): Self = this.set("removeAllContextChangeEventListeners", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveContextChangeEventListener(value: (XContextChangeEventListener, XInterface) => Unit): Self = this.set("removeContextChangeEventListener", js.Any.fromFunction2(value))
+    def setRemoveContextChangeEventListener(value: (XContextChangeEventListener, XInterface) => Unit): Self = StObject.set(x, "removeContextChangeEventListener", js.Any.fromFunction2(value))
   }
 }

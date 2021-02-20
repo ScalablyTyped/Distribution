@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/esm/styles/hljs/shades-of-purple", JSImport.Namespace)
-@js.native
-object hljsShadesOfPurpleMod extends js.Object {
+object hljsShadesOfPurpleMod {
   
+  @JSImport("react-syntax-highlighter/dist/esm/styles/hljs/shades-of-purple", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

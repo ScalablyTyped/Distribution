@@ -17,6 +17,7 @@ import typings.std.NonNullable
 import typings.std.Parameters
 import typings.std.Pick
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // stubTrue
 // stubFalse
 @js.native
-trait LoDashStatic extends js.Object {
+trait LoDashStatic extends StObject {
   
   def apply(): String = js.native
   def apply(value: java.lang.String): String = js.native

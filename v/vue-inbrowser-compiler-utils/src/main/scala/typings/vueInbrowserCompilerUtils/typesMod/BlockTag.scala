@@ -1,5 +1,6 @@
 package typings.vueInbrowserCompilerUtils.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,18 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vueInbrowserCompilerUtils.typesMod.ParamTag
   - typings.vueInbrowserCompilerUtils.typesMod.Tag
 */
-trait BlockTag extends js.Object
+trait BlockTag extends StObject
 object BlockTag {
   
   @scala.inline
-  def ParamTag(title: String): BlockTag = {
+  def ParamTag(title: String): typings.vueInbrowserCompilerUtils.typesMod.ParamTag = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BlockTag]
+    __obj.asInstanceOf[typings.vueInbrowserCompilerUtils.typesMod.ParamTag]
   }
   
   @scala.inline
-  def Tag(content: String | Boolean, title: String): BlockTag = {
+  def Tag(content: String | Boolean, title: String): typings.vueInbrowserCompilerUtils.typesMod.Tag = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BlockTag]
+    __obj.asInstanceOf[typings.vueInbrowserCompilerUtils.typesMod.Tag]
   }
 }

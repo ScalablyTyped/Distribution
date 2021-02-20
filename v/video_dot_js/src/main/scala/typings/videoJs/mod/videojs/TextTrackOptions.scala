@@ -2,6 +2,7 @@ package typings.videoJs.mod.videojs
 
 import typings.videoJs.mod.videojs.TextTrack.Kind
 import typings.videoJs.mod.videojs.TextTrack.Mode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,54 +32,42 @@ object TextTrackOptions {
   }
   
   @scala.inline
-  implicit class TextTrackOptionsOps[Self <: TextTrackOptions] (val x: Self) extends AnyVal {
+  implicit class TextTrackOptionsMutableBuilder[Self <: TextTrackOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: Kind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: Boolean): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
+    def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: Kind): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: Mode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setSrclang(value: String): Self = StObject.set(x, "srclang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setSrclangUndefined: Self = StObject.set(x, "srclang", js.undefined)
     
     @scala.inline
-    def deleteSrc: Self = this.set("src", js.undefined)
+    def setTech(value: Tech): Self = StObject.set(x, "tech", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrclang(value: String): Self = this.set("srclang", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSrclang: Self = this.set("srclang", js.undefined)
-    
-    @scala.inline
-    def setTech(value: Tech): Self = this.set("tech", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTech: Self = this.set("tech", js.undefined)
+    def setTechUndefined: Self = StObject.set(x, "tech", js.undefined)
   }
 }

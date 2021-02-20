@@ -1,11 +1,12 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WeatherForecastResult extends js.Object {
+trait WeatherForecastResult extends StObject {
   
   var adcode: String = js.native
   
@@ -35,39 +36,27 @@ object WeatherForecastResult {
   }
   
   @scala.inline
-  implicit class WeatherForecastResultOps[Self <: WeatherForecastResult] (val x: Self) extends AnyVal {
+  implicit class WeatherForecastResultMutableBuilder[Self <: WeatherForecastResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForecasts(value: js.Array[Forecast]): Self = StObject.set(x, "forecasts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdcode(value: String): Self = this.set("adcode", value.asInstanceOf[js.Any])
+    def setForecastsVarargs(value: Forecast*): Self = StObject.set(x, "forecasts", js.Array(value :_*))
     
     @scala.inline
-    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForecastsVarargs(value: Forecast*): Self = this.set("forecasts", js.Array(value :_*))
+    def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForecasts(value: js.Array[Forecast]): Self = this.set("forecasts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInfo(value: String): Self = this.set("info", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProvince(value: String): Self = this.set("province", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReportTime(value: String): Self = this.set("reportTime", value.asInstanceOf[js.Any])
+    def setReportTime(value: String): Self = StObject.set(x, "reportTime", value.asInstanceOf[js.Any])
   }
 }

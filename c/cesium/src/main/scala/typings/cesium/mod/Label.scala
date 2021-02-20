@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Label")
 @js.native
-class Label () extends js.Object {
+class Label () extends StObject {
   
   var backgroundColor: Color = js.native
   
@@ -61,10 +62,16 @@ class Label () extends js.Object {
   
   var verticalOrigin: Property = js.native
 }
-/* static members */
-@JSImport("cesium", "Label")
-@js.native
-object Label extends js.Object {
+object Label {
   
-  var enableRightToLeftDetection: Boolean = js.native
+  @JSImport("cesium", "Label")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("cesium", "Label.enableRightToLeftDetection")
+  @js.native
+  def enableRightToLeftDetection: Boolean = js.native
+  @scala.inline
+  def enableRightToLeftDetection_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enableRightToLeftDetection")(x.asInstanceOf[js.Any])
 }

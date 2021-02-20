@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Security.ExchangeActiveSyncProvisioning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EasPasswordExpirationResult extends js.Object
+sealed trait EasPasswordExpirationResult extends StObject
 /** Results of querying on the password expiration information. These values are mapped against the HRESULT codes returned from the EAS policy engine. */
 @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult")
 @js.native
-object EasPasswordExpirationResult extends js.Object {
+object EasPasswordExpirationResult extends StObject {
   
   /** One or more admins are not allowed to change their passwords. */
   @js.native

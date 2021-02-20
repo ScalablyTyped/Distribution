@@ -2,12 +2,13 @@ package typings.activexExcel.Excel
 
 import typings.activexOffice.Office.MsoEditingType
 import typings.activexOffice.Office.MsoSegmentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShapeNodes extends js.Object {
+trait ShapeNodes extends StObject {
   
   def apply(Index: String): ShapeNode = js.native
   def apply(Index: Double): ShapeNode = js.native

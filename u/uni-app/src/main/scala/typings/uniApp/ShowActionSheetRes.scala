@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShowActionSheetRes extends js.Object {
+trait ShowActionSheetRes extends StObject {
   
   /**
     * 用户点击的按钮，从上到下的顺序，从0开始
@@ -21,24 +22,12 @@ object ShowActionSheetRes {
   }
   
   @scala.inline
-  implicit class ShowActionSheetResOps[Self <: ShowActionSheetRes] (val x: Self) extends AnyVal {
+  implicit class ShowActionSheetResMutableBuilder[Self <: ShowActionSheetRes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTapIndex(value: Double): Self = StObject.set(x, "tapIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTapIndex(value: Double): Self = this.set("tapIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTapIndex: Self = this.set("tapIndex", js.undefined)
+    def setTapIndexUndefined: Self = StObject.set(x, "tapIndex", js.undefined)
   }
 }

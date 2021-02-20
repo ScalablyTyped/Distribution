@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VariantProperty extends js.Object {
+trait VariantProperty extends StObject {
   
   /**
     * The type of variant property. The supported values are:    DesiredInstanceCount: Overrides the existing variant instance counts using the ProductionVariant$InitialInstanceCount values in the CreateEndpointConfigInput$ProductionVariants.    DesiredWeight: Overrides the existing variant weights using the ProductionVariant$InitialVariantWeight values in the CreateEndpointConfigInput$ProductionVariants.    DataCaptureConfig: (Not currently supported.)  
@@ -21,21 +22,9 @@ object VariantProperty {
   }
   
   @scala.inline
-  implicit class VariantPropertyOps[Self <: VariantProperty] (val x: Self) extends AnyVal {
+  implicit class VariantPropertyMutableBuilder[Self <: VariantProperty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVariantPropertyType(value: VariantPropertyType): Self = this.set("VariantPropertyType", value.asInstanceOf[js.Any])
+    def setVariantPropertyType(value: VariantPropertyType): Self = StObject.set(x, "VariantPropertyType", value.asInstanceOf[js.Any])
   }
 }

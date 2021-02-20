@@ -2,6 +2,7 @@ package typings.uirouterAngularjs.mod
 
 import typings.uirouterAngularjs.interfaceMod.Ng1ViewDeclaration
 import typings.uirouterAngularjs.templateFactoryMod.TemplateFactory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

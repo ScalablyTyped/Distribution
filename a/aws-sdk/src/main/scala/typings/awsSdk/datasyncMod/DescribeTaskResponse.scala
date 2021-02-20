@@ -1,11 +1,12 @@
 package typings.awsSdk.datasyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTaskResponse extends js.Object {
+trait DescribeTaskResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon CloudWatch log group that was used to monitor and log events in the task. For more information on these groups, see Working with Log Groups and Log Streams in the Amazon CloudWatch User Guide.
@@ -91,117 +92,105 @@ object DescribeTaskResponse {
   }
   
   @scala.inline
-  implicit class DescribeTaskResponseOps[Self <: DescribeTaskResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeTaskResponseMutableBuilder[Self <: DescribeTaskResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudWatchLogGroupArn(value: LogGroupArn): Self = StObject.set(x, "CloudWatchLogGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudWatchLogGroupArnUndefined: Self = StObject.set(x, "CloudWatchLogGroupArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudWatchLogGroupArn(value: LogGroupArn): Self = this.set("CloudWatchLogGroupArn", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteCloudWatchLogGroupArn: Self = this.set("CloudWatchLogGroupArn", js.undefined)
+    def setCurrentTaskExecutionArn(value: TaskExecutionArn): Self = StObject.set(x, "CurrentTaskExecutionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Time): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setCurrentTaskExecutionArnUndefined: Self = StObject.set(x, "CurrentTaskExecutionArn", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setDestinationLocationArn(value: LocationArn): Self = StObject.set(x, "DestinationLocationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTaskExecutionArn(value: TaskExecutionArn): Self = this.set("CurrentTaskExecutionArn", value.asInstanceOf[js.Any])
+    def setDestinationLocationArnUndefined: Self = StObject.set(x, "DestinationLocationArn", js.undefined)
     
     @scala.inline
-    def deleteCurrentTaskExecutionArn: Self = this.set("CurrentTaskExecutionArn", js.undefined)
+    def setDestinationNetworkInterfaceArns(value: DestinationNetworkInterfaceArns): Self = StObject.set(x, "DestinationNetworkInterfaceArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationLocationArn(value: LocationArn): Self = this.set("DestinationLocationArn", value.asInstanceOf[js.Any])
+    def setDestinationNetworkInterfaceArnsUndefined: Self = StObject.set(x, "DestinationNetworkInterfaceArns", js.undefined)
     
     @scala.inline
-    def deleteDestinationLocationArn: Self = this.set("DestinationLocationArn", js.undefined)
+    def setDestinationNetworkInterfaceArnsVarargs(value: NetworkInterfaceArn*): Self = StObject.set(x, "DestinationNetworkInterfaceArns", js.Array(value :_*))
     
     @scala.inline
-    def setDestinationNetworkInterfaceArnsVarargs(value: NetworkInterfaceArn*): Self = this.set("DestinationNetworkInterfaceArns", js.Array(value :_*))
+    def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationNetworkInterfaceArns(value: DestinationNetworkInterfaceArns): Self = this.set("DestinationNetworkInterfaceArns", value.asInstanceOf[js.Any])
+    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
     @scala.inline
-    def deleteDestinationNetworkInterfaceArns: Self = this.set("DestinationNetworkInterfaceArns", js.undefined)
+    def setErrorDetail(value: String): Self = StObject.set(x, "ErrorDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: String): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    def setErrorDetailUndefined: Self = StObject.set(x, "ErrorDetail", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
+    def setExcludes(value: FilterList): Self = StObject.set(x, "Excludes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorDetail(value: String): Self = this.set("ErrorDetail", value.asInstanceOf[js.Any])
+    def setExcludesUndefined: Self = StObject.set(x, "Excludes", js.undefined)
     
     @scala.inline
-    def deleteErrorDetail: Self = this.set("ErrorDetail", js.undefined)
+    def setExcludesVarargs(value: FilterRule*): Self = StObject.set(x, "Excludes", js.Array(value :_*))
     
     @scala.inline
-    def setExcludesVarargs(value: FilterRule*): Self = this.set("Excludes", js.Array(value :_*))
+    def setName(value: TagValue): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludes(value: FilterList): Self = this.set("Excludes", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteExcludes: Self = this.set("Excludes", js.undefined)
+    def setOptions(value: Options): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: TagValue): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setSchedule(value: TaskSchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: Options): Self = this.set("Options", value.asInstanceOf[js.Any])
+    def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("Options", js.undefined)
+    def setSourceLocationArn(value: LocationArn): Self = StObject.set(x, "SourceLocationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedule(value: TaskSchedule): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    def setSourceLocationArnUndefined: Self = StObject.set(x, "SourceLocationArn", js.undefined)
     
     @scala.inline
-    def deleteSchedule: Self = this.set("Schedule", js.undefined)
+    def setSourceNetworkInterfaceArns(value: SourceNetworkInterfaceArns): Self = StObject.set(x, "SourceNetworkInterfaceArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceLocationArn(value: LocationArn): Self = this.set("SourceLocationArn", value.asInstanceOf[js.Any])
+    def setSourceNetworkInterfaceArnsUndefined: Self = StObject.set(x, "SourceNetworkInterfaceArns", js.undefined)
     
     @scala.inline
-    def deleteSourceLocationArn: Self = this.set("SourceLocationArn", js.undefined)
+    def setSourceNetworkInterfaceArnsVarargs(value: NetworkInterfaceArn*): Self = StObject.set(x, "SourceNetworkInterfaceArns", js.Array(value :_*))
     
     @scala.inline
-    def setSourceNetworkInterfaceArnsVarargs(value: NetworkInterfaceArn*): Self = this.set("SourceNetworkInterfaceArns", js.Array(value :_*))
+    def setStatus(value: TaskStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceNetworkInterfaceArns(value: SourceNetworkInterfaceArns): Self = this.set("SourceNetworkInterfaceArns", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteSourceNetworkInterfaceArns: Self = this.set("SourceNetworkInterfaceArns", js.undefined)
+    def setTaskArn(value: TaskArn): Self = StObject.set(x, "TaskArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: TaskStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setTaskArn(value: TaskArn): Self = this.set("TaskArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskArn: Self = this.set("TaskArn", js.undefined)
+    def setTaskArnUndefined: Self = StObject.set(x, "TaskArn", js.undefined)
   }
 }

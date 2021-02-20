@@ -4,16 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sentryCore.anon.Dictkey
 import typings.sentryTypes.dsnMod.DsnLike
 import typings.sentryUtils.mod.Dsn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sentry/core/dist/api", JSImport.Namespace)
-@js.native
-object apiMod extends js.Object {
+object apiMod {
   
+  @JSImport("@sentry/core/dist/api", "API")
   @js.native
-  class API protected () extends js.Object {
+  class API protected () extends StObject {
     /** Create a new instance of API */
     def this(dsn: DsnLike) = this()
     

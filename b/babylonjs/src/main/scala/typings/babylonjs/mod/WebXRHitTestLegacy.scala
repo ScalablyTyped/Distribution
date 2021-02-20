@@ -6,6 +6,7 @@ import typings.babylonjs.XRRay
 import typings.babylonjs.XRReferenceSpace
 import typings.babylonjs.XRSession
 import typings.babylonjs.webXRHitTestLegacyMod.IWebXRLegacyHitTestOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,13 +30,13 @@ class WebXRHitTestLegacy protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs", "WebXRHitTestLegacy")
-@js.native
-object WebXRHitTestLegacy extends js.Object {
+object WebXRHitTestLegacy {
   
   /**
     * The module's name
     */
+  @JSImport("babylonjs", "WebXRHitTestLegacy.Name")
+  @js.native
   val Name: String = js.native
   
   /**
@@ -43,6 +44,8 @@ object WebXRHitTestLegacy extends js.Object {
     * This is an integer representing the implementation version.
     * This number does not correspond to the WebXR specs version
     */
+  @JSImport("babylonjs", "WebXRHitTestLegacy.Version")
+  @js.native
   val Version: Double = js.native
   
   /**
@@ -54,7 +57,11 @@ object WebXRHitTestLegacy extends js.Object {
     * @param filter filter function that will filter the results
     * @returns a promise that resolves with an array of native XR hit result in xr coordinates system
     */
+  @JSImport("babylonjs", "WebXRHitTestLegacy.XRHitTestWithRay")
+  @js.native
   def XRHitTestWithRay(xrSession: XRSession, xrRay: XRRay, referenceSpace: XRReferenceSpace): js.Promise[js.Array[XRHitResult]] = js.native
+  @JSImport("babylonjs", "WebXRHitTestLegacy.XRHitTestWithRay")
+  @js.native
   def XRHitTestWithRay(
     xrSession: XRSession,
     xrRay: XRRay,
@@ -68,5 +75,7 @@ object WebXRHitTestLegacy extends js.Object {
     * @param referenceSpace the reference space to use for this hit test
     * @returns a promise that resolves with an array of native XR hit result in xr coordinates system
     */
+  @JSImport("babylonjs", "WebXRHitTestLegacy.XRHitTestWithSelectEvent")
+  @js.native
   def XRHitTestWithSelectEvent(event: XRInputSourceEvent, referenceSpace: XRReferenceSpace): js.Promise[js.Array[XRHitResult]] = js.native
 }

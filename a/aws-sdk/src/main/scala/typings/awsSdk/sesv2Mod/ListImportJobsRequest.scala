@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListImportJobsRequest extends js.Object {
+trait ListImportJobsRequest extends StObject {
   
   /**
     * The destination of the import job, which can be used to list import jobs that have a certain ImportDestinationType.
@@ -31,36 +32,24 @@ object ListImportJobsRequest {
   }
   
   @scala.inline
-  implicit class ListImportJobsRequestOps[Self <: ListImportJobsRequest] (val x: Self) extends AnyVal {
+  implicit class ListImportJobsRequestMutableBuilder[Self <: ListImportJobsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImportDestinationType(value: ImportDestinationType): Self = StObject.set(x, "ImportDestinationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImportDestinationTypeUndefined: Self = StObject.set(x, "ImportDestinationType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportDestinationType(value: ImportDestinationType): Self = this.set("ImportDestinationType", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteImportDestinationType: Self = this.set("ImportDestinationType", js.undefined)
+    def setPageSize(value: MaxItems): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setPageSize(value: MaxItems): Self = this.set("PageSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageSize: Self = this.set("PageSize", js.undefined)
+    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
   }
 }

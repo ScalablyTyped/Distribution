@@ -1,12 +1,13 @@
 package typings.businessRulesEngine.mod
 
 import typings.q.mod.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IValidator extends js.Object {
+trait IValidator extends StObject {
   
   var Error: IError = js.native
   
@@ -27,27 +28,15 @@ object IValidator {
   }
   
   @scala.inline
-  implicit class IValidatorOps[Self <: IValidator] (val x: Self) extends AnyVal {
+  implicit class IValidatorMutableBuilder[Self <: IValidator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: IError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValidate(value: js.Any => IValidationFailure): Self = StObject.set(x, "Validate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setError(value: IError): Self = this.set("Error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidate(value: js.Any => IValidationFailure): Self = this.set("Validate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setValidateAsync(value: js.Any => Promise[IValidationFailure]): Self = this.set("ValidateAsync", js.Any.fromFunction1(value))
+    def setValidateAsync(value: js.Any => Promise[IValidationFailure]): Self = StObject.set(x, "ValidateAsync", js.Any.fromFunction1(value))
   }
 }

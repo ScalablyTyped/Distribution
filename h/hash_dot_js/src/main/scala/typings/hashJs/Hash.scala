@@ -1,12 +1,13 @@
 package typings.hashJs
 
 import typings.hashJs.hashJsStrings.hex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hash extends js.Object {
+trait Hash extends StObject {
   
   def hmac(hash: BlockHash[_], key: js.Any): Hmac = js.native
   @JSName("hmac")

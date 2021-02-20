@@ -3,21 +3,30 @@ package typings.hyphen
 import typings.hyphen.mod.HyphenationFunctionAsync
 import typings.hyphen.mod.HyphenationFunctionSync
 import typings.hyphen.mod.PatternsDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("hyphen/la-x-liturgic", JSImport.Namespace)
-@js.native
-object laXLiturgicMod extends js.Object {
+object laXLiturgicMod {
   
+  @JSImport("hyphen/la-x-liturgic", "hyphenate")
+  @js.native
   val hyphenate: HyphenationFunctionAsync = js.native
   
+  @JSImport("hyphen/la-x-liturgic", "hyphenateHTML")
+  @js.native
   val hyphenateHTML: HyphenationFunctionAsync = js.native
   
+  @JSImport("hyphen/la-x-liturgic", "hyphenateHTMLSync")
+  @js.native
   val hyphenateHTMLSync: HyphenationFunctionSync = js.native
   
+  @JSImport("hyphen/la-x-liturgic", "hyphenateSync")
+  @js.native
   val hyphenateSync: HyphenationFunctionSync = js.native
   
+  @JSImport("hyphen/la-x-liturgic", "patterns")
+  @js.native
   val patterns: PatternsDefinition = js.native
 }

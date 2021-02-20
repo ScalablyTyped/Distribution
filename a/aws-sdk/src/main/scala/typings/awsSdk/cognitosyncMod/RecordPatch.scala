@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitosyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecordPatch extends js.Object {
+trait RecordPatch extends StObject {
   
   /**
     * The last modified date of the client device.
@@ -41,39 +42,27 @@ object RecordPatch {
   }
   
   @scala.inline
-  implicit class RecordPatchOps[Self <: RecordPatch] (val x: Self) extends AnyVal {
+  implicit class RecordPatchMutableBuilder[Self <: RecordPatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceLastModifiedDate(value: Date): Self = StObject.set(x, "DeviceLastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceLastModifiedDateUndefined: Self = StObject.set(x, "DeviceLastModifiedDate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: RecordKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: RecordKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    def setOp(value: Operation): Self = StObject.set(x, "Op", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOp(value: Operation): Self = this.set("Op", value.asInstanceOf[js.Any])
+    def setSyncCount(value: Long): Self = StObject.set(x, "SyncCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyncCount(value: Long): Self = this.set("SyncCount", value.asInstanceOf[js.Any])
+    def setValue(value: RecordValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceLastModifiedDate(value: Date): Self = this.set("DeviceLastModifiedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceLastModifiedDate: Self = this.set("DeviceLastModifiedDate", js.undefined)
-    
-    @scala.inline
-    def setValue(value: RecordValue): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("Value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

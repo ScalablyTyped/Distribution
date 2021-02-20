@@ -1,11 +1,12 @@
 package typings.onesignalCordovaPlugin.OneSignalCordovaPlugin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OSSubscriptionState extends js.Object {
+trait OSSubscriptionState extends StObject {
   
   var pushToken: String = js.native
   
@@ -24,30 +25,18 @@ object OSSubscriptionState {
   }
   
   @scala.inline
-  implicit class OSSubscriptionStateOps[Self <: OSSubscriptionState] (val x: Self) extends AnyVal {
+  implicit class OSSubscriptionStateMutableBuilder[Self <: OSSubscriptionState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPushToken(value: String): Self = StObject.set(x, "pushToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubscribed(value: Boolean): Self = StObject.set(x, "subscribed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPushToken(value: String): Self = this.set("pushToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscribed(value: Boolean): Self = this.set("subscribed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserSubscriptionSetting(value: Boolean): Self = this.set("userSubscriptionSetting", value.asInstanceOf[js.Any])
+    def setUserSubscriptionSetting(value: Boolean): Self = StObject.set(x, "userSubscriptionSetting", value.asInstanceOf[js.Any])
   }
 }

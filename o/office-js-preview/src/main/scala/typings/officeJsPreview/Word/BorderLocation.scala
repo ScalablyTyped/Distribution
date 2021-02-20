@@ -1,17 +1,18 @@
 package typings.officeJsPreview.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BorderLocation extends js.Object
+sealed trait BorderLocation extends StObject
 /**
   * [Api set: WordApi]
   */
 @JSGlobal("Word.BorderLocation")
 @js.native
-object BorderLocation extends js.Object {
+object BorderLocation extends StObject {
   
   @js.native
   sealed trait all extends BorderLocation

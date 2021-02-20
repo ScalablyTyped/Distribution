@@ -1,14 +1,14 @@
 package typings.forkTsCheckerWebpackPlugin
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fork-ts-checker-webpack-plugin/lib/rpc/error/RpcMessagePortClosedError", JSImport.Namespace)
-@js.native
-object rpcMessagePortClosedErrorMod extends js.Object {
+object rpcMessagePortClosedErrorMod {
   
+  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/error/RpcMessagePortClosedError", "RpcMessagePortClosedError")
   @js.native
   class RpcMessagePortClosedError () extends Error
 }

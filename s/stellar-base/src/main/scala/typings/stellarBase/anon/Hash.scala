@@ -2,12 +2,13 @@ package typings.stellarBase.anon
 
 import typings.node.Buffer
 import typings.stellarBase.xdrMod.xdr.LedgerHeaderHistoryEntryExt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hash extends js.Object {
+trait Hash extends StObject {
   
   var ext: LedgerHeaderHistoryEntryExt = js.native
   
@@ -28,27 +29,15 @@ object Hash {
   }
   
   @scala.inline
-  implicit class HashOps[Self <: Hash] (val x: Self) extends AnyVal {
+  implicit class HashMutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExt(value: LedgerHeaderHistoryEntryExt): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHash(value: Buffer): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExt(value: LedgerHeaderHistoryEntryExt): Self = this.set("ext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHash(value: Buffer): Self = this.set("hash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeader(value: typings.stellarBase.xdrMod.xdr.LedgerHeader): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setHeader(value: typings.stellarBase.xdrMod.xdr.LedgerHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
   }
 }

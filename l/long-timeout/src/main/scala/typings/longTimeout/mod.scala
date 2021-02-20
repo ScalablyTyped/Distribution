@@ -1,23 +1,15 @@
 package typings.longTimeout
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("long-timeout", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def clearInterval(timer: Interval): Unit = js.native
-  
-  def clearTimeout(timer: Timeout): Unit = js.native
-  
-  def setInterval(listener: Listener, ms: Double): Interval = js.native
-  
-  def setTimeout(listener: Listener, ms: Double): Timeout = js.native
-  
+  @JSImport("long-timeout", "Timeout")
   @js.native
-  class Timeout protected () extends js.Object {
+  class Timeout protected () extends StObject {
     def this(listener: Listener, ms: Double) = this()
     
     var after: Double = js.native
@@ -36,6 +28,22 @@ object mod extends js.Object {
     
     var unreffed: Boolean = js.native
   }
+  
+  @JSImport("long-timeout", "clearInterval")
+  @js.native
+  def clearInterval(timer: Interval): Unit = js.native
+  
+  @JSImport("long-timeout", "clearTimeout")
+  @js.native
+  def clearTimeout(timer: Timeout): Unit = js.native
+  
+  @JSImport("long-timeout", "setInterval")
+  @js.native
+  def setInterval(listener: Listener, ms: Double): Interval = js.native
+  
+  @JSImport("long-timeout", "setTimeout")
+  @js.native
+  def setTimeout(listener: Listener, ms: Double): Timeout = js.native
   
   type Interval = Timeout
   

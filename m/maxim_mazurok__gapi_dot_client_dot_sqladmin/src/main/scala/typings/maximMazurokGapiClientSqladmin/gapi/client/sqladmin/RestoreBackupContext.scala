@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RestoreBackupContext extends js.Object {
+trait RestoreBackupContext extends StObject {
   
   /** The ID of the backup run to restore from. */
   var backupRunId: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object RestoreBackupContext {
   }
   
   @scala.inline
-  implicit class RestoreBackupContextOps[Self <: RestoreBackupContext] (val x: Self) extends AnyVal {
+  implicit class RestoreBackupContextMutableBuilder[Self <: RestoreBackupContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupRunId(value: String): Self = StObject.set(x, "backupRunId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupRunIdUndefined: Self = StObject.set(x, "backupRunId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupRunId(value: String): Self = this.set("backupRunId", value.asInstanceOf[js.Any])
+    def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
     
     @scala.inline
-    def deleteBackupRunId: Self = this.set("backupRunId", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: String): Self = this.set("instanceId", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteInstanceId: Self = this.set("instanceId", js.undefined)
+    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setProject(value: String): Self = this.set("project", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProject: Self = this.set("project", js.undefined)
+    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
   }
 }

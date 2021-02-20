@@ -2,40 +2,84 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2
 
 import typings.dialogflow.mod.google.rpc.IStatus
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a DetectIntentResponse. */
-trait IDetectIntentResponse extends js.Object {
+@js.native
+trait IDetectIntentResponse extends StObject {
+  
   /** DetectIntentResponse outputAudio */
-  var outputAudio: js.UndefOr[Uint8Array | String | Null] = js.undefined
+  var outputAudio: js.UndefOr[Uint8Array | String | Null] = js.native
+  
   /** DetectIntentResponse outputAudioConfig */
-  var outputAudioConfig: js.UndefOr[IOutputAudioConfig | Null] = js.undefined
+  var outputAudioConfig: js.UndefOr[IOutputAudioConfig | Null] = js.native
+  
   /** DetectIntentResponse queryResult */
-  var queryResult: js.UndefOr[IQueryResult | Null] = js.undefined
+  var queryResult: js.UndefOr[IQueryResult | Null] = js.native
+  
   /** DetectIntentResponse responseId */
-  var responseId: js.UndefOr[String | Null] = js.undefined
+  var responseId: js.UndefOr[String | Null] = js.native
+  
   /** DetectIntentResponse webhookStatus */
-  var webhookStatus: js.UndefOr[IStatus | Null] = js.undefined
+  var webhookStatus: js.UndefOr[IStatus | Null] = js.native
 }
-
 object IDetectIntentResponse {
+  
   @scala.inline
-  def apply(
-    outputAudio: js.UndefOr[Null | Uint8Array | String] = js.undefined,
-    outputAudioConfig: js.UndefOr[Null | IOutputAudioConfig] = js.undefined,
-    queryResult: js.UndefOr[Null | IQueryResult] = js.undefined,
-    responseId: js.UndefOr[Null | String] = js.undefined,
-    webhookStatus: js.UndefOr[Null | IStatus] = js.undefined
-  ): IDetectIntentResponse = {
+  def apply(): IDetectIntentResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(outputAudio)) __obj.updateDynamic("outputAudio")(outputAudio.asInstanceOf[js.Any])
-    if (!js.isUndefined(outputAudioConfig)) __obj.updateDynamic("outputAudioConfig")(outputAudioConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(queryResult)) __obj.updateDynamic("queryResult")(queryResult.asInstanceOf[js.Any])
-    if (!js.isUndefined(responseId)) __obj.updateDynamic("responseId")(responseId.asInstanceOf[js.Any])
-    if (!js.isUndefined(webhookStatus)) __obj.updateDynamic("webhookStatus")(webhookStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetectIntentResponse]
   }
+  
+  @scala.inline
+  implicit class IDetectIntentResponseMutableBuilder[Self <: IDetectIntentResponse] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setOutputAudio(value: Uint8Array | String): Self = StObject.set(x, "outputAudio", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOutputAudioConfig(value: IOutputAudioConfig): Self = StObject.set(x, "outputAudioConfig", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOutputAudioConfigNull: Self = StObject.set(x, "outputAudioConfig", null)
+    
+    @scala.inline
+    def setOutputAudioConfigUndefined: Self = StObject.set(x, "outputAudioConfig", js.undefined)
+    
+    @scala.inline
+    def setOutputAudioNull: Self = StObject.set(x, "outputAudio", null)
+    
+    @scala.inline
+    def setOutputAudioUndefined: Self = StObject.set(x, "outputAudio", js.undefined)
+    
+    @scala.inline
+    def setQueryResult(value: IQueryResult): Self = StObject.set(x, "queryResult", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setQueryResultNull: Self = StObject.set(x, "queryResult", null)
+    
+    @scala.inline
+    def setQueryResultUndefined: Self = StObject.set(x, "queryResult", js.undefined)
+    
+    @scala.inline
+    def setResponseId(value: String): Self = StObject.set(x, "responseId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setResponseIdNull: Self = StObject.set(x, "responseId", null)
+    
+    @scala.inline
+    def setResponseIdUndefined: Self = StObject.set(x, "responseId", js.undefined)
+    
+    @scala.inline
+    def setWebhookStatus(value: IStatus): Self = StObject.set(x, "webhookStatus", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWebhookStatusNull: Self = StObject.set(x, "webhookStatus", null)
+    
+    @scala.inline
+    def setWebhookStatusUndefined: Self = StObject.set(x, "webhookStatus", js.undefined)
+  }
 }
-

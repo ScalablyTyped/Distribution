@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents intent parameters.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2IntentParameter extends js.Object {
+trait SchemaGoogleCloudDialogflowV2IntentParameter extends StObject {
   
   /**
     * Optional. The default value to use when the `value` yields an empty
@@ -68,69 +69,57 @@ object SchemaGoogleCloudDialogflowV2IntentParameter {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2IntentParameterOps[Self <: SchemaGoogleCloudDialogflowV2IntentParameter] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2IntentParameterMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2IntentParameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setEntityTypeDisplayName(value: String): Self = StObject.set(x, "entityTypeDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setEntityTypeDisplayNameUndefined: Self = StObject.set(x, "entityTypeDisplayName", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setIsList(value: Boolean): Self = StObject.set(x, "isList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityTypeDisplayName(value: String): Self = this.set("entityTypeDisplayName", value.asInstanceOf[js.Any])
+    def setIsListUndefined: Self = StObject.set(x, "isList", js.undefined)
     
     @scala.inline
-    def deleteEntityTypeDisplayName: Self = this.set("entityTypeDisplayName", js.undefined)
+    def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsList(value: Boolean): Self = this.set("isList", value.asInstanceOf[js.Any])
+    def setMandatoryUndefined: Self = StObject.set(x, "mandatory", js.undefined)
     
     @scala.inline
-    def deleteIsList: Self = this.set("isList", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMandatory(value: Boolean): Self = this.set("mandatory", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMandatory: Self = this.set("mandatory", js.undefined)
+    def setPrompts(value: js.Array[String]): Self = StObject.set(x, "prompts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPromptsUndefined: Self = StObject.set(x, "prompts", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPromptsVarargs(value: String*): Self = StObject.set(x, "prompts", js.Array(value :_*))
     
     @scala.inline
-    def setPromptsVarargs(value: String*): Self = this.set("prompts", js.Array(value :_*))
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrompts(value: js.Array[String]): Self = this.set("prompts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrompts: Self = this.set("prompts", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

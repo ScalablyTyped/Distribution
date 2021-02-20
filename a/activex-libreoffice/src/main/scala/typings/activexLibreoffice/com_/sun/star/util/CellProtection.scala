@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.util
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes the kind of protection for a protectable cell. */
 @js.native
-trait CellProtection extends js.Object {
+trait CellProtection extends StObject {
   
   /** specifies if the formula is hidden from the user. */
   var IsFormulaHidden: Boolean = js.native
@@ -29,30 +30,18 @@ object CellProtection {
   }
   
   @scala.inline
-  implicit class CellProtectionOps[Self <: CellProtection] (val x: Self) extends AnyVal {
+  implicit class CellProtectionMutableBuilder[Self <: CellProtection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsFormulaHidden(value: Boolean): Self = StObject.set(x, "IsFormulaHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsHidden(value: Boolean): Self = StObject.set(x, "IsHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsLocked(value: Boolean): Self = StObject.set(x, "IsLocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFormulaHidden(value: Boolean): Self = this.set("IsFormulaHidden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsHidden(value: Boolean): Self = this.set("IsHidden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsLocked(value: Boolean): Self = this.set("IsLocked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsPrintHidden(value: Boolean): Self = this.set("IsPrintHidden", value.asInstanceOf[js.Any])
+    def setIsPrintHidden(value: Boolean): Self = StObject.set(x, "IsPrintHidden", value.asInstanceOf[js.Any])
   }
 }

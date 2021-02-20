@@ -7,13 +7,14 @@ import typings.underscore.mod.Dictionary
 import typings.underscore.mod.List
 import typings.underscore.mod.ListIterator
 import typings.underscore.mod.MemoIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backbone", "Collection")
 @js.native
-class Collection[TModel /* <: Model[_, ModelSetOptions, js.Object] */] () extends js.Object {
+class Collection[TModel /* <: Model[_, ModelSetOptions, js.Object] */] () extends StObject {
   def this(models: js.Array[js.Object | TModel]) = this()
   def this(models: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(models: js.Array[js.Object | TModel], options: js.Any) = this()
@@ -340,14 +341,16 @@ class Collection[TModel /* <: Model[_, ModelSetOptions, js.Object] */] () extend
   
   def without(values: TModel*): js.Array[TModel] = js.native
 }
-/* static members */
-@JSImport("backbone", "Collection")
-@js.native
-object Collection extends js.Object {
+object Collection {
   
   /**
     * Do not use, prefer TypeScript's extend functionality.
     **/
+  /* static member */
+  @JSImport("backbone", "Collection.extend")
+  @js.native
   def extend(properties: js.Any): js.Any = js.native
+  @JSImport("backbone", "Collection.extend")
+  @js.native
   def extend(properties: js.Any, classProperties: js.Any): js.Any = js.native
 }

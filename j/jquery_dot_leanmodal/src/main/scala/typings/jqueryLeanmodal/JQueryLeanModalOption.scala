@@ -1,11 +1,12 @@
 package typings.jqueryLeanmodal
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryLeanModalOption extends js.Object {
+trait JQueryLeanModalOption extends StObject {
   
   var closeButton: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object JQueryLeanModalOption {
   }
   
   @scala.inline
-  implicit class JQueryLeanModalOptionOps[Self <: JQueryLeanModalOption] (val x: Self) extends AnyVal {
+  implicit class JQueryLeanModalOptionMutableBuilder[Self <: JQueryLeanModalOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseButton(value: String): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverlay(value: Double): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseButton(value: String): Self = this.set("closeButton", value.asInstanceOf[js.Any])
+    def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     
     @scala.inline
-    def deleteCloseButton: Self = this.set("closeButton", js.undefined)
+    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlay(value: Double): Self = this.set("overlay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverlay: Self = this.set("overlay", js.undefined)
-    
-    @scala.inline
-    def setTop(value: Double): Self = this.set("top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

@@ -3,12 +3,13 @@ package typings.devtoolsProtocol.protocolProxyApiMod.ProtocolProxyApi
 import typings.devtoolsProtocol.devtoolsProtocolStrings.entryAdded
 import typings.devtoolsProtocol.mod.Protocol.Log.EntryAddedEvent
 import typings.devtoolsProtocol.mod.Protocol.Log.StartViolationsReportRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LogApi extends js.Object {
+trait LogApi extends StObject {
   
   /**
     * Clears the log.
@@ -58,36 +59,24 @@ object LogApi {
   }
   
   @scala.inline
-  implicit class LogApiOps[Self <: LogApi] (val x: Self) extends AnyVal {
+  implicit class LogApiMutableBuilder[Self <: LogApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: () => js.Promise[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClear(value: () => js.Promise[Unit]): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setOn(value: (entryAdded, js.Function1[/* params */ EntryAddedEvent, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDisable(value: () => js.Promise[Unit]): Self = this.set("disable", js.Any.fromFunction0(value))
+    def setStartViolationsReport(value: StartViolationsReportRequest => js.Promise[Unit]): Self = StObject.set(x, "startViolationsReport", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnable(value: () => js.Promise[Unit]): Self = this.set("enable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOn(value: (entryAdded, js.Function1[/* params */ EntryAddedEvent, Unit]) => Unit): Self = this.set("on", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setStartViolationsReport(value: StartViolationsReportRequest => js.Promise[Unit]): Self = this.set("startViolationsReport", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStopViolationsReport(value: () => js.Promise[Unit]): Self = this.set("stopViolationsReport", js.Any.fromFunction0(value))
+    def setStopViolationsReport(value: () => js.Promise[Unit]): Self = StObject.set(x, "stopViolationsReport", js.Any.fromFunction0(value))
   }
 }

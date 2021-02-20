@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** UtteranceAnalysis. */
 @js.native
-trait UtteranceAnalysis extends js.Object {
+trait UtteranceAnalysis extends StObject {
   
   /** **`2017-09-21`:** An error message if the utterance contains more than 500 characters. The service does not analyze the utterance. **`2016-05-19`:** Not returned. */
   var error: js.UndefOr[String] = js.native
@@ -29,36 +30,24 @@ object UtteranceAnalysis {
   }
   
   @scala.inline
-  implicit class UtteranceAnalysisOps[Self <: UtteranceAnalysis] (val x: Self) extends AnyVal {
+  implicit class UtteranceAnalysisMutableBuilder[Self <: UtteranceAnalysis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTones(value: js.Array[ToneChatScore]): Self = StObject.set(x, "tones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTonesVarargs(value: ToneChatScore*): Self = this.set("tones", js.Array(value :_*))
+    def setTonesVarargs(value: ToneChatScore*): Self = StObject.set(x, "tones", js.Array(value :_*))
     
     @scala.inline
-    def setTones(value: js.Array[ToneChatScore]): Self = this.set("tones", value.asInstanceOf[js.Any])
+    def setUtterance_id(value: Double): Self = StObject.set(x, "utterance_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUtterance_id(value: Double): Self = this.set("utterance_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUtterance_text(value: String): Self = this.set("utterance_text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setUtterance_text(value: String): Self = StObject.set(x, "utterance_text", value.asInstanceOf[js.Any])
   }
 }

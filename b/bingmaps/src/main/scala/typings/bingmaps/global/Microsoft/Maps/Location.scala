@@ -1,5 +1,6 @@
 package typings.bingmaps.global.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +17,7 @@ class Location protected ()
   def this(latitude: js.Any, longitude: js.Any) = this()
 }
 /* static members */
-@JSGlobal("Microsoft.Maps.Location")
-@js.native
-object Location extends js.Object {
+object Location {
   
   /**
     * Determines if two locations are equal.
@@ -26,6 +25,8 @@ object Location extends js.Object {
     * @param location2 The second location to test.
     * @returns True if both locations are equivalent.
     */
+  @JSGlobal("Microsoft.Maps.Location.areEqual")
+  @js.native
   def areEqual(
     location1: typings.bingmaps.Microsoft.Maps.Location,
     location2: typings.bingmaps.Microsoft.Maps.Location
@@ -36,6 +37,8 @@ object Location extends js.Object {
     * @param source A Location or Location-like object that contains the same properties.
     * @returns A copy of the map location.
     */
+  @JSGlobal("Microsoft.Maps.Location.cloneFrom")
+  @js.native
   def cloneFrom(source: typings.bingmaps.Microsoft.Maps.Location): typings.bingmaps.Microsoft.Maps.Location = js.native
   
   /**
@@ -43,6 +46,8 @@ object Location extends js.Object {
     * @param longitude The input longitude.
     * @returns The longitude normalized to within -180 and +180.
     */
+  @JSGlobal("Microsoft.Maps.Location.normalizeLongitude")
+  @js.native
   def normalizeLongitude(longitude: Double): Double = js.native
   
   /**
@@ -50,5 +55,7 @@ object Location extends js.Object {
     * @param str The location string.
     * @returns The parsed location or null otherwise.
     */
+  @JSGlobal("Microsoft.Maps.Location.parseLatLong")
+  @js.native
   def parseLatLong(str: String): typings.bingmaps.Microsoft.Maps.Location = js.native
 }

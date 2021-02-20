@@ -3,12 +3,13 @@ package typings.evernote.anon
 import typings.evernote.mod.Types.Contact
 import typings.evernote.mod.Types.MessageThreadID
 import typings.evernote.mod.Types.SharedNotePrivilegeLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NoteGuid extends js.Object {
+trait NoteGuid extends StObject {
   
   var noteGuid: js.UndefOr[typings.evernote.mod.Types.Guid] = js.native
   
@@ -27,45 +28,33 @@ object NoteGuid {
   }
   
   @scala.inline
-  implicit class NoteGuidOps[Self <: NoteGuid] (val x: Self) extends AnyVal {
+  implicit class NoteGuidMutableBuilder[Self <: NoteGuid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNoteGuid(value: typings.evernote.mod.Types.Guid): Self = StObject.set(x, "noteGuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNoteGuidUndefined: Self = StObject.set(x, "noteGuid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrivilege(value: SharedNotePrivilegeLevel): Self = StObject.set(x, "privilege", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoteGuid(value: typings.evernote.mod.Types.Guid): Self = this.set("noteGuid", value.asInstanceOf[js.Any])
+    def setPrivilegeUndefined: Self = StObject.set(x, "privilege", js.undefined)
     
     @scala.inline
-    def deleteNoteGuid: Self = this.set("noteGuid", js.undefined)
+    def setRecipientContacts(value: js.Array[Contact]): Self = StObject.set(x, "recipientContacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivilege(value: SharedNotePrivilegeLevel): Self = this.set("privilege", value.asInstanceOf[js.Any])
+    def setRecipientContactsUndefined: Self = StObject.set(x, "recipientContacts", js.undefined)
     
     @scala.inline
-    def deletePrivilege: Self = this.set("privilege", js.undefined)
+    def setRecipientContactsVarargs(value: Contact*): Self = StObject.set(x, "recipientContacts", js.Array(value :_*))
     
     @scala.inline
-    def setRecipientContactsVarargs(value: Contact*): Self = this.set("recipientContacts", js.Array(value :_*))
+    def setRecipientThreadId(value: MessageThreadID): Self = StObject.set(x, "recipientThreadId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientContacts(value: js.Array[Contact]): Self = this.set("recipientContacts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecipientContacts: Self = this.set("recipientContacts", js.undefined)
-    
-    @scala.inline
-    def setRecipientThreadId(value: MessageThreadID): Self = this.set("recipientThreadId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecipientThreadId: Self = this.set("recipientThreadId", js.undefined)
+    def setRecipientThreadIdUndefined: Self = StObject.set(x, "recipientThreadId", js.undefined)
   }
 }

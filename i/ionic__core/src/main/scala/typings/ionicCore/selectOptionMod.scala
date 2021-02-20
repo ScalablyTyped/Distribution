@@ -2,14 +2,14 @@ package typings.ionicCore
 
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/select-option/select-option", JSImport.Namespace)
-@js.native
-object selectOptionMod extends js.Object {
+object selectOptionMod {
   
+  @JSImport("@ionic/core/dist/types/components/select-option/select-option", "SelectOption")
   @js.native
   class SelectOption () extends ComponentInterface {
     

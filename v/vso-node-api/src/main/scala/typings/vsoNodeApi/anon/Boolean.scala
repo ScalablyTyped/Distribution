@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Boolean extends js.Object {
+trait Boolean extends StObject {
   
   var boolean: scala.Double = js.native
   
@@ -38,39 +39,27 @@ object Boolean {
   }
   
   @scala.inline
-  implicit class BooleanOps[Self <: Boolean] (val x: Self) extends AnyVal {
+  implicit class BooleanMutableBuilder[Self <: Boolean] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoolean(value: scala.Double): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchFilter(value: scala.Double): Self = StObject.set(x, "branchFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMultiLine(value: scala.Double): Self = StObject.set(x, "multiLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoolean(value: scala.Double): Self = this.set("boolean", value.asInstanceOf[js.Any])
+    def setPickList(value: scala.Double): Self = StObject.set(x, "pickList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchFilter(value: scala.Double): Self = this.set("branchFilter", value.asInstanceOf[js.Any])
+    def setRadio(value: scala.Double): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiLine(value: scala.Double): Self = this.set("multiLine", value.asInstanceOf[js.Any])
+    def setString(value: scala.Double): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPickList(value: scala.Double): Self = this.set("pickList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRadio(value: scala.Double): Self = this.set("radio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setString(value: scala.Double): Self = this.set("string", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStringList(value: scala.Double): Self = this.set("stringList", value.asInstanceOf[js.Any])
+    def setStringList(value: scala.Double): Self = StObject.set(x, "stringList", value.asInstanceOf[js.Any])
   }
 }

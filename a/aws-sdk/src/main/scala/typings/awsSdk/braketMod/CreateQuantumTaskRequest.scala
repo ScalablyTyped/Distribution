@@ -1,11 +1,12 @@
 package typings.awsSdk.braketMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateQuantumTaskRequest extends js.Object {
+trait CreateQuantumTaskRequest extends StObject {
   
   /**
     * The action associated with the task.
@@ -63,48 +64,36 @@ object CreateQuantumTaskRequest {
   }
   
   @scala.inline
-  implicit class CreateQuantumTaskRequestOps[Self <: CreateQuantumTaskRequest] (val x: Self) extends AnyVal {
+  implicit class CreateQuantumTaskRequestMutableBuilder[Self <: CreateQuantumTaskRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: JsonValue): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientToken(value: String64): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceArn(value: DeviceArn): Self = StObject.set(x, "deviceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: JsonValue): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setDeviceParameters(value: CreateQuantumTaskRequestDeviceParametersString): Self = StObject.set(x, "deviceParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: String64): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    def setDeviceParametersUndefined: Self = StObject.set(x, "deviceParameters", js.undefined)
     
     @scala.inline
-    def setDeviceArn(value: DeviceArn): Self = this.set("deviceArn", value.asInstanceOf[js.Any])
+    def setOutputS3Bucket(value: CreateQuantumTaskRequestOutputS3BucketString): Self = StObject.set(x, "outputS3Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputS3Bucket(value: CreateQuantumTaskRequestOutputS3BucketString): Self = this.set("outputS3Bucket", value.asInstanceOf[js.Any])
+    def setOutputS3KeyPrefix(value: CreateQuantumTaskRequestOutputS3KeyPrefixString): Self = StObject.set(x, "outputS3KeyPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputS3KeyPrefix(value: CreateQuantumTaskRequestOutputS3KeyPrefixString): Self = this.set("outputS3KeyPrefix", value.asInstanceOf[js.Any])
+    def setShots(value: CreateQuantumTaskRequestShotsLong): Self = StObject.set(x, "shots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShots(value: CreateQuantumTaskRequestShotsLong): Self = this.set("shots", value.asInstanceOf[js.Any])
+    def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceParameters(value: CreateQuantumTaskRequestDeviceParametersString): Self = this.set("deviceParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceParameters: Self = this.set("deviceParameters", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagsMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

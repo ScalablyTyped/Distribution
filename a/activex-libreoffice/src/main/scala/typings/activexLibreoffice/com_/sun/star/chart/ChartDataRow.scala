@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.chart
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated Deprecated
   */
 @js.native
-trait ChartDataRow extends js.Object {
+trait ChartDataRow extends StObject {
   
   /** The name of the data row. */
   var Name: String = js.native
@@ -29,24 +30,12 @@ object ChartDataRow {
   }
   
   @scala.inline
-  implicit class ChartDataRowOps[Self <: ChartDataRow] (val x: Self) extends AnyVal {
+  implicit class ChartDataRowMutableBuilder[Self <: ChartDataRow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPoints(value: SafeArray[SafeArray[ChartDataValue]]): Self = this.set("Points", value.asInstanceOf[js.Any])
+    def setPoints(value: SafeArray[SafeArray[ChartDataValue]]): Self = StObject.set(x, "Points", value.asInstanceOf[js.Any])
   }
 }

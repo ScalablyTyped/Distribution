@@ -1,11 +1,12 @@
 package typings.awsSdk.worklinkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAuditStreamConfigurationResponse extends js.Object {
+trait DescribeAuditStreamConfigurationResponse extends StObject {
   
   /**
     * The ARN of the Amazon Kinesis data stream that will receive the audit events.
@@ -21,24 +22,12 @@ object DescribeAuditStreamConfigurationResponse {
   }
   
   @scala.inline
-  implicit class DescribeAuditStreamConfigurationResponseOps[Self <: DescribeAuditStreamConfigurationResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeAuditStreamConfigurationResponseMutableBuilder[Self <: DescribeAuditStreamConfigurationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuditStreamArn(value: AuditStreamArn): Self = StObject.set(x, "AuditStreamArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAuditStreamArn(value: AuditStreamArn): Self = this.set("AuditStreamArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuditStreamArn: Self = this.set("AuditStreamArn", js.undefined)
+    def setAuditStreamArnUndefined: Self = StObject.set(x, "AuditStreamArn", js.undefined)
   }
 }

@@ -1,18 +1,31 @@
 package typings.angularCore.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Output extends js.Object {
+trait Output extends StObject {
   
   /**
     * The name of the DOM property to which the output property is bound.
     */
   var bindingPropertyName: js.UndefOr[String] = js.native
 }
-@JSImport("@angular/core", "Output")
-@js.native
-object Output extends TopLevel[OutputDecorator]
+object Output {
+  
+  @JSImport("@angular/core", "Output")
+  @js.native
+  val ^ : OutputDecorator = js.native
+  
+  @scala.inline
+  implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setBindingPropertyName(value: String): Self = StObject.set(x, "bindingPropertyName", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setBindingPropertyNameUndefined: Self = StObject.set(x, "bindingPropertyName", js.undefined)
+  }
+}

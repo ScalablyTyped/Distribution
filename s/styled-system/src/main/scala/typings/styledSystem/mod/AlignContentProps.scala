@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlignContentProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
+trait AlignContentProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
     * The CSS align-content property sets how the browser distributes space between and around content items
@@ -29,22 +30,7 @@ object AlignContentProps {
   }
   
   @scala.inline
-  implicit class AlignContentPropsOps[Self <: AlignContentProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with AlignContentProps[ThemeType]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlignContentVarargs(value: (js.Any | Null)*): Self = this.set("alignContent", js.Array(value :_*))
+  implicit class AlignContentPropsMutableBuilder[Self <: AlignContentProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with AlignContentProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setAlignContent(
@@ -52,12 +38,15 @@ object AlignContentProps {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignContent */ _, 
           ThemeType
         ]
-    ): Self = this.set("alignContent", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlignContent: Self = this.set("alignContent", js.undefined)
+    def setAlignContentNull: Self = StObject.set(x, "alignContent", null)
     
     @scala.inline
-    def setAlignContentNull: Self = this.set("alignContent", null)
+    def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
+    
+    @scala.inline
+    def setAlignContentVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "alignContent", js.Array(value :_*))
   }
 }

@@ -2,6 +2,7 @@ package typings.babylonjs.materialsIndexMod
 
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -95,10 +96,16 @@ class EquiRectangularCubeTexture protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/Materials/index", "EquiRectangularCubeTexture")
-@js.native
-object EquiRectangularCubeTexture extends js.Object {
+object EquiRectangularCubeTexture {
+  
+  @JSImport("babylonjs/Materials/index", "EquiRectangularCubeTexture")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** The six faces of the cube. */
-  var _FacesMapping: js.Any = js.native
+  @JSImport("babylonjs/Materials/index", "EquiRectangularCubeTexture._FacesMapping")
+  @js.native
+  def _FacesMapping: js.Any = js.native
+  @scala.inline
+  def _FacesMapping_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FacesMapping")(x.asInstanceOf[js.Any])
 }

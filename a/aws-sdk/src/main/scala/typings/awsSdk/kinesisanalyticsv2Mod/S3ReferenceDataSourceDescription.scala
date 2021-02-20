@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3ReferenceDataSourceDescription extends js.Object {
+trait S3ReferenceDataSourceDescription extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the S3 bucket.
@@ -31,30 +32,18 @@ object S3ReferenceDataSourceDescription {
   }
   
   @scala.inline
-  implicit class S3ReferenceDataSourceDescriptionOps[Self <: S3ReferenceDataSourceDescription] (val x: Self) extends AnyVal {
+  implicit class S3ReferenceDataSourceDescriptionMutableBuilder[Self <: S3ReferenceDataSourceDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketARN(value: BucketARN): Self = StObject.set(x, "BucketARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileKey(value: FileKey): Self = StObject.set(x, "FileKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReferenceRoleARN(value: RoleARN): Self = StObject.set(x, "ReferenceRoleARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketARN(value: BucketARN): Self = this.set("BucketARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFileKey(value: FileKey): Self = this.set("FileKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReferenceRoleARN(value: RoleARN): Self = this.set("ReferenceRoleARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReferenceRoleARN: Self = this.set("ReferenceRoleARN", js.undefined)
+    def setReferenceRoleARNUndefined: Self = StObject.set(x, "ReferenceRoleARN", js.undefined)
   }
 }

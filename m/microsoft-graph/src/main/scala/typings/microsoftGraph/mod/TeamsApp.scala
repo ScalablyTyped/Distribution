@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,57 +29,45 @@ object TeamsApp {
   }
   
   @scala.inline
-  implicit class TeamsAppOps[Self <: TeamsApp] (val x: Self) extends AnyVal {
+  implicit class TeamsAppMutableBuilder[Self <: TeamsApp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppDefinitions(value: NullableOption[js.Array[TeamsAppDefinition]]): Self = StObject.set(x, "appDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppDefinitionsNull: Self = StObject.set(x, "appDefinitions", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppDefinitionsUndefined: Self = StObject.set(x, "appDefinitions", js.undefined)
     
     @scala.inline
-    def setAppDefinitionsVarargs(value: TeamsAppDefinition*): Self = this.set("appDefinitions", js.Array(value :_*))
+    def setAppDefinitionsVarargs(value: TeamsAppDefinition*): Self = StObject.set(x, "appDefinitions", js.Array(value :_*))
     
     @scala.inline
-    def setAppDefinitions(value: NullableOption[js.Array[TeamsAppDefinition]]): Self = this.set("appDefinitions", value.asInstanceOf[js.Any])
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppDefinitions: Self = this.set("appDefinitions", js.undefined)
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def setAppDefinitionsNull: Self = this.set("appDefinitions", null)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setDistributionMethod(value: NullableOption[TeamsAppDistributionMethod]): Self = StObject.set(x, "distributionMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setDistributionMethodNull: Self = StObject.set(x, "distributionMethod", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setDistributionMethodUndefined: Self = StObject.set(x, "distributionMethod", js.undefined)
     
     @scala.inline
-    def setDistributionMethod(value: NullableOption[TeamsAppDistributionMethod]): Self = this.set("distributionMethod", value.asInstanceOf[js.Any])
+    def setExternalId(value: NullableOption[String]): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDistributionMethod: Self = this.set("distributionMethod", js.undefined)
+    def setExternalIdNull: Self = StObject.set(x, "externalId", null)
     
     @scala.inline
-    def setDistributionMethodNull: Self = this.set("distributionMethod", null)
-    
-    @scala.inline
-    def setExternalId(value: NullableOption[String]): Self = this.set("externalId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExternalId: Self = this.set("externalId", js.undefined)
-    
-    @scala.inline
-    def setExternalIdNull: Self = this.set("externalId", null)
+    def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
   }
 }

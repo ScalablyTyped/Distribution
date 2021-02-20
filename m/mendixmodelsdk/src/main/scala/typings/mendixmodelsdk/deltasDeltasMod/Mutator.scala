@@ -3,6 +3,7 @@ package typings.mendixmodelsdk.deltasDeltasMod
 import typings.mendixmodelsdk.mendixmodelsdkStrings.ADD
 import typings.mendixmodelsdk.mendixmodelsdkStrings.CHANGE
 import typings.mendixmodelsdk.mendixmodelsdkStrings.REMOVE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,24 +13,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mendixmodelsdk.deltasDeltasMod.IAddMutator
   - typings.mendixmodelsdk.deltasDeltasMod.IRemoveMutator
 */
-trait Mutator extends js.Object
+trait Mutator extends StObject
 object Mutator {
   
   @scala.inline
-  def IChangeMutator(mutatorType: CHANGE): Mutator = {
-    val __obj = js.Dynamic.literal(mutatorType = mutatorType.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Mutator]
-  }
-  
-  @scala.inline
-  def IAddMutator(mutatorType: ADD, value: PrimitiveValue): Mutator = {
+  def IAddMutator(mutatorType: ADD, value: PrimitiveValue): typings.mendixmodelsdk.deltasDeltasMod.IAddMutator = {
     val __obj = js.Dynamic.literal(mutatorType = mutatorType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Mutator]
+    __obj.asInstanceOf[typings.mendixmodelsdk.deltasDeltasMod.IAddMutator]
   }
   
   @scala.inline
-  def IRemoveMutator(mutatorType: REMOVE, removalIndex: Double): Mutator = {
+  def IChangeMutator(mutatorType: CHANGE): typings.mendixmodelsdk.deltasDeltasMod.IChangeMutator = {
+    val __obj = js.Dynamic.literal(mutatorType = mutatorType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.mendixmodelsdk.deltasDeltasMod.IChangeMutator]
+  }
+  
+  @scala.inline
+  def IRemoveMutator(mutatorType: REMOVE, removalIndex: Double): typings.mendixmodelsdk.deltasDeltasMod.IRemoveMutator = {
     val __obj = js.Dynamic.literal(mutatorType = mutatorType.asInstanceOf[js.Any], removalIndex = removalIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Mutator]
+    __obj.asInstanceOf[typings.mendixmodelsdk.deltasDeltasMod.IRemoveMutator]
   }
 }

@@ -6,21 +6,31 @@ import typings.antd.responsiveObserveMod.ScreenMap
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd/lib/grid", JSImport.Namespace)
-@js.native
-object libGridMod extends js.Object {
+object libGridMod {
   
+  object default {
+    
+    @JSImport("antd/lib/grid", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("antd/lib/grid", "default.useBreakpoint")
+    @js.native
+    def useBreakpoint: js.Function0[ScreenMap] = js.native
+    @scala.inline
+    def useBreakpoint_=(x: js.Function0[ScreenMap]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useBreakpoint")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("antd/lib/grid", "Col")
+  @js.native
   val Col: ForwardRefExoticComponent[ColProps with RefAttributes[HTMLDivElement]] = js.native
   
-  val Row: ForwardRefExoticComponent[RowProps with RefAttributes[HTMLDivElement]] = js.native
-  
+  @JSImport("antd/lib/grid", "Row")
   @js.native
-  object default extends js.Object {
-    
-    var useBreakpoint: js.Function0[ScreenMap] = js.native
-  }
+  val Row: ForwardRefExoticComponent[RowProps with RefAttributes[HTMLDivElement]] = js.native
 }

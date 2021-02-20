@@ -1,12 +1,13 @@
 package typings.glVec3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gl-vec3/sqrLen", JSImport.Namespace)
-@js.native
-object sqrLenMod extends js.Object {
+object sqrLenMod {
   
+  @JSImport("gl-vec3/sqrLen", JSImport.Default)
+  @js.native
   def default(a: js.Array[Double]): js.Array[Double] = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FailedCreateSimulationJobRequest extends js.Object {
+trait FailedCreateSimulationJobRequest extends StObject {
   
   /**
     * The time, in milliseconds since the epoch, when the simulation job batch failed.
@@ -36,42 +37,30 @@ object FailedCreateSimulationJobRequest {
   }
   
   @scala.inline
-  implicit class FailedCreateSimulationJobRequestOps[Self <: FailedCreateSimulationJobRequest] (val x: Self) extends AnyVal {
+  implicit class FailedCreateSimulationJobRequestMutableBuilder[Self <: FailedCreateSimulationJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailedAt(value: FailedAt): Self = StObject.set(x, "failedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedAtUndefined: Self = StObject.set(x, "failedAt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureCode(value: SimulationJobErrorCode): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedAt(value: FailedAt): Self = this.set("failedAt", value.asInstanceOf[js.Any])
+    def setFailureCodeUndefined: Self = StObject.set(x, "failureCode", js.undefined)
     
     @scala.inline
-    def deleteFailedAt: Self = this.set("failedAt", js.undefined)
+    def setFailureReason(value: GenericString): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureCode(value: SimulationJobErrorCode): Self = this.set("failureCode", value.asInstanceOf[js.Any])
+    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
     @scala.inline
-    def deleteFailureCode: Self = this.set("failureCode", js.undefined)
+    def setRequest(value: SimulationJobRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: GenericString): Self = this.set("failureReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
-    
-    @scala.inline
-    def setRequest(value: SimulationJobRequest): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
   }
 }

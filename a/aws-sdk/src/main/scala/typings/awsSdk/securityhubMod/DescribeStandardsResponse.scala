@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeStandardsResponse extends js.Object {
+trait DescribeStandardsResponse extends StObject {
   
   /**
     * The pagination token to use to request the next page of results.
@@ -26,33 +27,21 @@ object DescribeStandardsResponse {
   }
   
   @scala.inline
-  implicit class DescribeStandardsResponseOps[Self <: DescribeStandardsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeStandardsResponseMutableBuilder[Self <: DescribeStandardsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStandards(value: Standards): Self = StObject.set(x, "Standards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setStandardsUndefined: Self = StObject.set(x, "Standards", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setStandardsVarargs(value: Standard*): Self = this.set("Standards", js.Array(value :_*))
-    
-    @scala.inline
-    def setStandards(value: Standards): Self = this.set("Standards", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStandards: Self = this.set("Standards", js.undefined)
+    def setStandardsVarargs(value: Standard*): Self = StObject.set(x, "Standards", js.Array(value :_*))
   }
 }

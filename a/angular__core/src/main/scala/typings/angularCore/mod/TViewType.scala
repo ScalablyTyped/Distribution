@@ -3,6 +3,7 @@ package typings.angularCore.mod
 import typings.angularCore.angularCoreNumbers.`0`
 import typings.angularCore.angularCoreNumbers.`1`
 import typings.angularCore.angularCoreNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.angularCore.angularCoreNumbers.`1`
   - typings.angularCore.angularCoreNumbers.`2`
 */
-trait TViewType extends js.Object
+trait TViewType extends StObject
 object TViewType {
   
   /**

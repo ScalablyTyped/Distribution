@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfluenceBlogToIndexFieldMapping extends js.Object {
+trait ConfluenceBlogToIndexFieldMapping extends StObject {
   
   /**
     * The name of the field in the data source. 
@@ -31,36 +32,24 @@ object ConfluenceBlogToIndexFieldMapping {
   }
   
   @scala.inline
-  implicit class ConfluenceBlogToIndexFieldMappingOps[Self <: ConfluenceBlogToIndexFieldMapping] (val x: Self) extends AnyVal {
+  implicit class ConfluenceBlogToIndexFieldMappingMutableBuilder[Self <: ConfluenceBlogToIndexFieldMapping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSourceFieldName(value: ConfluenceBlogFieldName): Self = StObject.set(x, "DataSourceFieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceFieldNameUndefined: Self = StObject.set(x, "DataSourceFieldName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateFieldFormat(value: DataSourceDateFieldFormat): Self = StObject.set(x, "DateFieldFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceFieldName(value: ConfluenceBlogFieldName): Self = this.set("DataSourceFieldName", value.asInstanceOf[js.Any])
+    def setDateFieldFormatUndefined: Self = StObject.set(x, "DateFieldFormat", js.undefined)
     
     @scala.inline
-    def deleteDataSourceFieldName: Self = this.set("DataSourceFieldName", js.undefined)
+    def setIndexFieldName(value: IndexFieldName): Self = StObject.set(x, "IndexFieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateFieldFormat(value: DataSourceDateFieldFormat): Self = this.set("DateFieldFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDateFieldFormat: Self = this.set("DateFieldFormat", js.undefined)
-    
-    @scala.inline
-    def setIndexFieldName(value: IndexFieldName): Self = this.set("IndexFieldName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndexFieldName: Self = this.set("IndexFieldName", js.undefined)
+    def setIndexFieldNameUndefined: Self = StObject.set(x, "IndexFieldName", js.undefined)
   }
 }

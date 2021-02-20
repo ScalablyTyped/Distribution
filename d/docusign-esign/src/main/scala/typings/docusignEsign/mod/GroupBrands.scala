@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroupBrands extends js.Object {
+trait GroupBrands extends StObject {
   
   /**
     * A list of brands.
@@ -35,45 +36,33 @@ object GroupBrands {
   }
   
   @scala.inline
-  implicit class GroupBrandsOps[Self <: GroupBrands] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBrandsVarargs(
-      value: (/* Information about a brand that is associated with an account. A brand applies custom styles and text to an envelope. */ Brand)*
-    ): Self = this.set("brands", js.Array(value :_*))
+  implicit class GroupBrandsMutableBuilder[Self <: GroupBrands] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setBrands(
       value: js.Array[
           /* Information about a brand that is associated with an account. A brand applies custom styles and text to an envelope. */ Brand
         ]
-    ): Self = this.set("brands", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "brands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBrands: Self = this.set("brands", js.undefined)
+    def setBrandsUndefined: Self = StObject.set(x, "brands", js.undefined)
     
     @scala.inline
-    def setRecipientBrandIdDefault(value: String): Self = this.set("recipientBrandIdDefault", value.asInstanceOf[js.Any])
+    def setBrandsVarargs(
+      value: (/* Information about a brand that is associated with an account. A brand applies custom styles and text to an envelope. */ Brand)*
+    ): Self = StObject.set(x, "brands", js.Array(value :_*))
     
     @scala.inline
-    def deleteRecipientBrandIdDefault: Self = this.set("recipientBrandIdDefault", js.undefined)
+    def setRecipientBrandIdDefault(value: String): Self = StObject.set(x, "recipientBrandIdDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderBrandIdDefault(value: String): Self = this.set("senderBrandIdDefault", value.asInstanceOf[js.Any])
+    def setRecipientBrandIdDefaultUndefined: Self = StObject.set(x, "recipientBrandIdDefault", js.undefined)
     
     @scala.inline
-    def deleteSenderBrandIdDefault: Self = this.set("senderBrandIdDefault", js.undefined)
+    def setSenderBrandIdDefault(value: String): Self = StObject.set(x, "senderBrandIdDefault", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSenderBrandIdDefaultUndefined: Self = StObject.set(x, "senderBrandIdDefault", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * EventSeries contain information on series of events, i.e. thing that was/is happening continuously for some time.
   */
 @js.native
-trait EventSeries extends js.Object {
+trait EventSeries extends StObject {
   
   /**
     * Number of occurrences in this series up to the last heartbeat time
@@ -35,36 +36,24 @@ object EventSeries {
   }
   
   @scala.inline
-  implicit class EventSeriesOps[Self <: EventSeries] (val x: Self) extends AnyVal {
+  implicit class EventSeriesMutableBuilder[Self <: EventSeries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Input[Double]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastObservedTime(value: Input[String]): Self = StObject.set(x, "lastObservedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Input[Double]): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setLastObservedTimeUndefined: Self = StObject.set(x, "lastObservedTime", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setState(value: Input[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastObservedTime(value: Input[String]): Self = this.set("lastObservedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastObservedTime: Self = this.set("lastObservedTime", js.undefined)
-    
-    @scala.inline
-    def setState(value: Input[String]): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

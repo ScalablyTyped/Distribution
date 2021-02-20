@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ContainerState holds a possible state of container. Only one of its members may be specified. If none of them is specified, the default one is ContainerStateWaiting.
   */
 @js.native
-trait ContainerState extends js.Object {
+trait ContainerState extends StObject {
   
   /**
     * Details about a running container
@@ -38,27 +39,15 @@ object ContainerState {
   }
   
   @scala.inline
-  implicit class ContainerStateOps[Self <: ContainerState] (val x: Self) extends AnyVal {
+  implicit class ContainerStateMutableBuilder[Self <: ContainerState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRunning(value: ContainerStateRunning): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTerminated(value: ContainerStateTerminated): Self = StObject.set(x, "terminated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRunning(value: ContainerStateRunning): Self = this.set("running", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTerminated(value: ContainerStateTerminated): Self = this.set("terminated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWaiting(value: ContainerStateWaiting): Self = this.set("waiting", value.asInstanceOf[js.Any])
+    def setWaiting(value: ContainerStateWaiting): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStandaloneThemeData extends js.Object {
+trait IStandaloneThemeData extends StObject {
   
   var base: BuiltinTheme = js.native
   
@@ -26,42 +27,30 @@ object IStandaloneThemeData {
   }
   
   @scala.inline
-  implicit class IStandaloneThemeDataOps[Self <: IStandaloneThemeData] (val x: Self) extends AnyVal {
+  implicit class IStandaloneThemeDataMutableBuilder[Self <: IStandaloneThemeData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBase(value: BuiltinTheme): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColors(value: IColors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncodedTokensColors(value: js.Array[String]): Self = StObject.set(x, "encodedTokensColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase(value: BuiltinTheme): Self = this.set("base", value.asInstanceOf[js.Any])
+    def setEncodedTokensColorsUndefined: Self = StObject.set(x, "encodedTokensColors", js.undefined)
     
     @scala.inline
-    def setColors(value: IColors): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setEncodedTokensColorsVarargs(value: String*): Self = StObject.set(x, "encodedTokensColors", js.Array(value :_*))
     
     @scala.inline
-    def setInherit(value: Boolean): Self = this.set("inherit", value.asInstanceOf[js.Any])
+    def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRulesVarargs(value: ITokenThemeRule*): Self = this.set("rules", js.Array(value :_*))
+    def setRules(value: js.Array[ITokenThemeRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRules(value: js.Array[ITokenThemeRule]): Self = this.set("rules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEncodedTokensColorsVarargs(value: String*): Self = this.set("encodedTokensColors", js.Array(value :_*))
-    
-    @scala.inline
-    def setEncodedTokensColors(value: js.Array[String]): Self = this.set("encodedTokensColors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncodedTokensColors: Self = this.set("encodedTokensColors", js.undefined)
+    def setRulesVarargs(value: ITokenThemeRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

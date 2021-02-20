@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadSigningCertificateResponse extends js.Object {
+trait UploadSigningCertificateResponse extends StObject {
   
   /**
     * Information about the certificate.
@@ -21,21 +22,9 @@ object UploadSigningCertificateResponse {
   }
   
   @scala.inline
-  implicit class UploadSigningCertificateResponseOps[Self <: UploadSigningCertificateResponse] (val x: Self) extends AnyVal {
+  implicit class UploadSigningCertificateResponseMutableBuilder[Self <: UploadSigningCertificateResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCertificate(value: SigningCertificate): Self = this.set("Certificate", value.asInstanceOf[js.Any])
+    def setCertificate(value: SigningCertificate): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.reactTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UsePaginationInstanceProps[D /* <: js.Object */] extends js.Object {
+trait UsePaginationInstanceProps[D /* <: js.Object */] extends StObject {
   
   var canNextPage: Boolean = js.native
   

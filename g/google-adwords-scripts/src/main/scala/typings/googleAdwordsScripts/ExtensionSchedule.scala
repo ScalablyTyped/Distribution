@@ -1,5 +1,6 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Video
 // Non-entity
 @js.native
-trait ExtensionSchedule extends js.Object {
+trait ExtensionSchedule extends StObject {
   
   def getDayOfWeek(): DayOfWeekString = js.native
   
@@ -34,33 +35,21 @@ object ExtensionSchedule {
   }
   
   @scala.inline
-  implicit class ExtensionScheduleOps[Self <: ExtensionSchedule] (val x: Self) extends AnyVal {
+  implicit class ExtensionScheduleMutableBuilder[Self <: ExtensionSchedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDayOfWeek(value: () => DayOfWeekString): Self = StObject.set(x, "getDayOfWeek", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetEndHour(value: () => Double): Self = StObject.set(x, "getEndHour", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetEndMinute(value: () => Double): Self = StObject.set(x, "getEndMinute", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDayOfWeek(value: () => DayOfWeekString): Self = this.set("getDayOfWeek", js.Any.fromFunction0(value))
+    def setGetStartHour(value: () => Double): Self = StObject.set(x, "getStartHour", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEndHour(value: () => Double): Self = this.set("getEndHour", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetEndMinute(value: () => Double): Self = this.set("getEndMinute", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetStartHour(value: () => Double): Self = this.set("getStartHour", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetStartMinute(value: () => Double): Self = this.set("getStartMinute", js.Any.fromFunction0(value))
+    def setGetStartMinute(value: () => Double): Self = StObject.set(x, "getStartMinute", js.Any.fromFunction0(value))
   }
 }

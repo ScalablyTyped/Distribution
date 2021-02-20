@@ -1,11 +1,12 @@
 package typings.nodeHueApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait On extends js.Object {
+trait On extends StObject {
   
   var on: Boolean = js.native
 }
@@ -18,21 +19,9 @@ object On {
   }
   
   @scala.inline
-  implicit class OnOps[Self <: On] (val x: Self) extends AnyVal {
+  implicit class OnMutableBuilder[Self <: On] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOn(value: Boolean): Self = this.set("on", value.asInstanceOf[js.Any])
+    def setOn(value: Boolean): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
   }
 }

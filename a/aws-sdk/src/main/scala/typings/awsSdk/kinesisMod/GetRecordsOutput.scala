@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRecordsOutput extends js.Object {
+trait GetRecordsOutput extends StObject {
   
   var ChildShards: js.UndefOr[ChildShardList] = js.native
   
@@ -33,45 +34,33 @@ object GetRecordsOutput {
   }
   
   @scala.inline
-  implicit class GetRecordsOutputOps[Self <: GetRecordsOutput] (val x: Self) extends AnyVal {
+  implicit class GetRecordsOutputMutableBuilder[Self <: GetRecordsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildShards(value: ChildShardList): Self = StObject.set(x, "ChildShards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildShardsUndefined: Self = StObject.set(x, "ChildShards", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildShardsVarargs(value: ChildShard*): Self = StObject.set(x, "ChildShards", js.Array(value :_*))
     
     @scala.inline
-    def setRecordsVarargs(value: Record*): Self = this.set("Records", js.Array(value :_*))
+    def setMillisBehindLatest(value: MillisBehindLatest): Self = StObject.set(x, "MillisBehindLatest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecords(value: RecordList): Self = this.set("Records", value.asInstanceOf[js.Any])
+    def setMillisBehindLatestUndefined: Self = StObject.set(x, "MillisBehindLatest", js.undefined)
     
     @scala.inline
-    def setChildShardsVarargs(value: ChildShard*): Self = this.set("ChildShards", js.Array(value :_*))
+    def setNextShardIterator(value: ShardIterator): Self = StObject.set(x, "NextShardIterator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildShards(value: ChildShardList): Self = this.set("ChildShards", value.asInstanceOf[js.Any])
+    def setNextShardIteratorUndefined: Self = StObject.set(x, "NextShardIterator", js.undefined)
     
     @scala.inline
-    def deleteChildShards: Self = this.set("ChildShards", js.undefined)
+    def setRecords(value: RecordList): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMillisBehindLatest(value: MillisBehindLatest): Self = this.set("MillisBehindLatest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMillisBehindLatest: Self = this.set("MillisBehindLatest", js.undefined)
-    
-    @scala.inline
-    def setNextShardIterator(value: ShardIterator): Self = this.set("NextShardIterator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextShardIterator: Self = this.set("NextShardIterator", js.undefined)
+    def setRecordsVarargs(value: Record*): Self = StObject.set(x, "Records", js.Array(value :_*))
   }
 }

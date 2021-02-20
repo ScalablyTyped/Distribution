@@ -1,11 +1,12 @@
 package typings.igniteUi.Infragistics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ZoombarProviderDataChart extends js.Object {
+trait ZoombarProviderDataChart extends StObject {
   
   def clean(): Unit = js.native
   
@@ -47,48 +48,36 @@ object ZoombarProviderDataChart {
   }
   
   @scala.inline
-  implicit class ZoombarProviderDataChartOps[Self <: ZoombarProviderDataChart] (val x: Self) extends AnyVal {
+  implicit class ZoombarProviderDataChartMutableBuilder[Self <: ZoombarProviderDataChart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClean(value: () => Unit): Self = StObject.set(x, "clean", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCleanOptsForZoom(value: js.Object => Unit): Self = StObject.set(x, "cleanOptsForZoom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateClone(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "createClone", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClean(value: () => Unit): Self = this.set("clean", js.Any.fromFunction0(value))
+    def setGetBaseOpts(value: js.Object => Unit): Self = StObject.set(x, "getBaseOpts", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCleanOptsForZoom(value: js.Object => Unit): Self = this.set("cleanOptsForZoom", js.Any.fromFunction1(value))
+    def setSetSize(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "setSize", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateClone(value: (js.Object, js.Object) => Unit): Self = this.set("createClone", js.Any.fromFunction2(value))
+    def setSyncMinWidth(value: js.Object => Unit): Self = StObject.set(x, "syncMinWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetBaseOpts(value: js.Object => Unit): Self = this.set("getBaseOpts", js.Any.fromFunction1(value))
+    def setTargetObject(value: js.Object => Unit): Self = StObject.set(x, "targetObject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetSize(value: (js.Object, js.Object) => Unit): Self = this.set("setSize", js.Any.fromFunction2(value))
+    def setTargetWidth(value: () => Unit): Self = StObject.set(x, "targetWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSyncMinWidth(value: js.Object => Unit): Self = this.set("syncMinWidth", js.Any.fromFunction1(value))
+    def setUpdate(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTargetObject(value: js.Object => Unit): Self = this.set("targetObject", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTargetWidth(value: () => Unit): Self = this.set("targetWidth", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdate(value: (js.Object, js.Object) => Unit): Self = this.set("update", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setWidgetName(value: () => Unit): Self = this.set("widgetName", js.Any.fromFunction0(value))
+    def setWidgetName(value: () => Unit): Self = StObject.set(x, "widgetName", js.Any.fromFunction0(value))
   }
 }

@@ -1,12 +1,13 @@
 package typings.scrollmagic.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("scrollmagic", "Scene")
 @js.native
-class Scene () extends js.Object {
+class Scene () extends StObject {
   def this(options: SceneConstructorOptions) = this()
   
   /* addIndicators Plugin */

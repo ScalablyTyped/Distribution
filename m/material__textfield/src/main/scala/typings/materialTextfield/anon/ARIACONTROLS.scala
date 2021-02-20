@@ -1,11 +1,12 @@
 package typings.materialTextfield.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ARIACONTROLS extends js.Object {
+trait ARIACONTROLS extends StObject {
   
   var ARIA_CONTROLS: String = js.native
   
@@ -47,48 +48,36 @@ object ARIACONTROLS {
   }
   
   @scala.inline
-  implicit class ARIACONTROLSOps[Self <: ARIACONTROLS] (val x: Self) extends AnyVal {
+  implicit class ARIACONTROLSMutableBuilder[Self <: ARIACONTROLS] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setARIA_CONTROLS(value: String): Self = StObject.set(x, "ARIA_CONTROLS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setARIA_DESCRIBEDBY(value: String): Self = StObject.set(x, "ARIA_DESCRIBEDBY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setINPUT_SELECTOR(value: String): Self = StObject.set(x, "INPUT_SELECTOR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setARIA_CONTROLS(value: String): Self = this.set("ARIA_CONTROLS", value.asInstanceOf[js.Any])
+    def setLABEL_SELECTOR(value: String): Self = StObject.set(x, "LABEL_SELECTOR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setARIA_DESCRIBEDBY(value: String): Self = this.set("ARIA_DESCRIBEDBY", value.asInstanceOf[js.Any])
+    def setLEADING_ICON_SELECTOR(value: String): Self = StObject.set(x, "LEADING_ICON_SELECTOR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setINPUT_SELECTOR(value: String): Self = this.set("INPUT_SELECTOR", value.asInstanceOf[js.Any])
+    def setLINE_RIPPLE_SELECTOR(value: String): Self = StObject.set(x, "LINE_RIPPLE_SELECTOR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLABEL_SELECTOR(value: String): Self = this.set("LABEL_SELECTOR", value.asInstanceOf[js.Any])
+    def setOUTLINE_SELECTOR(value: String): Self = StObject.set(x, "OUTLINE_SELECTOR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLEADING_ICON_SELECTOR(value: String): Self = this.set("LEADING_ICON_SELECTOR", value.asInstanceOf[js.Any])
+    def setPREFIX_SELECTOR(value: String): Self = StObject.set(x, "PREFIX_SELECTOR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLINE_RIPPLE_SELECTOR(value: String): Self = this.set("LINE_RIPPLE_SELECTOR", value.asInstanceOf[js.Any])
+    def setSUFFIX_SELECTOR(value: String): Self = StObject.set(x, "SUFFIX_SELECTOR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOUTLINE_SELECTOR(value: String): Self = this.set("OUTLINE_SELECTOR", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPREFIX_SELECTOR(value: String): Self = this.set("PREFIX_SELECTOR", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSUFFIX_SELECTOR(value: String): Self = this.set("SUFFIX_SELECTOR", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTRAILING_ICON_SELECTOR(value: String): Self = this.set("TRAILING_ICON_SELECTOR", value.asInstanceOf[js.Any])
+    def setTRAILING_ICON_SELECTOR(value: String): Self = StObject.set(x, "TRAILING_ICON_SELECTOR", value.asInstanceOf[js.Any])
   }
 }

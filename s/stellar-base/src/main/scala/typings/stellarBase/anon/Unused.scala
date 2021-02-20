@@ -1,11 +1,12 @@
 package typings.stellarBase.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Unused extends js.Object {
+trait Unused extends StObject {
   
   var unused: Double = js.native
 }
@@ -18,21 +19,9 @@ object Unused {
   }
   
   @scala.inline
-  implicit class UnusedOps[Self <: Unused] (val x: Self) extends AnyVal {
+  implicit class UnusedMutableBuilder[Self <: Unused] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUnused(value: Double): Self = this.set("unused", value.asInstanceOf[js.Any])
+    def setUnused(value: Double): Self = StObject.set(x, "unused", value.asInstanceOf[js.Any])
   }
 }

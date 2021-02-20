@@ -1,5 +1,6 @@
 package typings.fhirJsClient.FHIR.SMART
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Context passed to create a SMART client directly without completing the SMART on FHIR OAuth2 authorization workflow
   */
 @js.native
-trait Context extends js.Object {
+trait Context extends StObject {
   
   /**
     * Authorization context
@@ -39,39 +40,27 @@ object Context {
   }
   
   @scala.inline
-  implicit class ContextOps[Self <: Context] (val x: Self) extends AnyVal {
+  implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: AuthContext): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPatientId(value: String): Self = StObject.set(x, "patientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceUrl(value: String): Self = this.set("serviceUrl", value.asInstanceOf[js.Any])
+    def setPatientIdUndefined: Self = StObject.set(x, "patientId", js.undefined)
     
     @scala.inline
-    def setAuth(value: AuthContext): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setServiceUrl(value: String): Self = StObject.set(x, "serviceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatientId(value: String): Self = this.set("patientId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePatientId: Self = this.set("patientId", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

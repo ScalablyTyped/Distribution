@@ -1,6 +1,7 @@
 package typings.googleapis.cloudprivatecatalogV1beta1Mod.cloudprivatecatalogV1beta1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * context.
   */
 @js.native
-trait SchemaGoogleCloudPrivatecatalogV1beta1Product extends js.Object {
+trait SchemaGoogleCloudPrivatecatalogV1beta1Product extends StObject {
   
   /**
     * Output only. The type of the product asset. It can be one of the
@@ -86,54 +87,42 @@ object SchemaGoogleCloudPrivatecatalogV1beta1Product {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudPrivatecatalogV1beta1ProductOps[Self <: SchemaGoogleCloudPrivatecatalogV1beta1Product] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudPrivatecatalogV1beta1ProductMutableBuilder[Self <: SchemaGoogleCloudPrivatecatalogV1beta1Product] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetType(value: String): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetType(value: String): Self = this.set("assetType", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteAssetType: Self = this.set("assetType", js.undefined)
+    def setDisplayMetadata(value: StringDictionary[js.Any]): Self = StObject.set(x, "displayMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDisplayMetadataUndefined: Self = StObject.set(x, "displayMetadata", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setIconUri(value: String): Self = StObject.set(x, "iconUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayMetadata(value: StringDictionary[js.Any]): Self = this.set("displayMetadata", value.asInstanceOf[js.Any])
+    def setIconUriUndefined: Self = StObject.set(x, "iconUri", js.undefined)
     
     @scala.inline
-    def deleteDisplayMetadata: Self = this.set("displayMetadata", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconUri(value: String): Self = this.set("iconUri", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIconUri: Self = this.set("iconUri", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

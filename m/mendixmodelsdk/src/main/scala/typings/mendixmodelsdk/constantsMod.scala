@@ -8,22 +8,21 @@ import typings.mendixmodelsdk.projectsMod.projects.IDocument
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.versionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.versionChecksMod.StructureType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/constants", JSImport.Namespace)
-@js.native
-object constantsMod extends js.Object {
+object constantsMod {
   
+  @JSImport("mendixmodelsdk/dist/gen/constants", "StructureVersionInfo")
   @js.native
   class StructureVersionInfo protected ()
     extends typings.mendixmodelsdk.internalMod.StructureVersionInfo {
     def this(info: IStructureVersionInfo, structureType: StructureType) = this()
   }
   
-  @js.native
-  object constants extends js.Object {
+  object constants {
     
     /**
       * See: {@link https://docs.mendix.com/refguide/constants relevant section in reference guide}
@@ -37,7 +36,8 @@ object constantsMod extends js.Object {
     - typings.mendixmodelsdk.elementsMod.IByNameReferrable because Already inherited
     - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
-    - typings.mendixmodelsdk.constantsMod.constants.IConstant because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @js.native
+    - typings.mendixmodelsdk.constantsMod.constants.IConstant because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/constants", "constants.Constant")
+    @js.native
     class Constant protected () extends Document {
       def this(
         model: AbstractModel,
@@ -73,19 +73,34 @@ object constantsMod extends js.Object {
       def `type`: DataType = js.native
       def type_=(newValue: DataType): Unit = js.native
     }
-    /* static members */
-    @js.native
-    object Constant extends js.Object {
+    object Constant {
+      
+      @JSImport("mendixmodelsdk/dist/gen/constants", "constants.Constant")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Creates a new Constant unit in the SDK and on the server.
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/constants", "constants.Constant.createIn")
+      @js.native
       def createIn(container: IFolderBase): Constant = js.native
       
-      var structureTypeName: String = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/constants", "constants.Constant.structureTypeName")
+      @js.native
+      def structureTypeName: String = js.native
+      @scala.inline
+      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
-      var versionInfo: StructureVersionInfo = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/constants", "constants.Constant.versionInfo")
+      @js.native
+      def versionInfo: StructureVersionInfo = js.native
+      @scala.inline
+      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**

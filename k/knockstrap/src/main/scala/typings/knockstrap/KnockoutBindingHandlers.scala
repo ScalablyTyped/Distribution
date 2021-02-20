@@ -1,11 +1,12 @@
 package typings.knockstrap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutBindingHandlers extends js.Object {
+trait KnockoutBindingHandlers extends StObject {
   
   var alert: AlertKnockoutBindingHandler = js.native
   
@@ -44,53 +45,41 @@ object KnockoutBindingHandlers {
   }
   
   @scala.inline
-  implicit class KnockoutBindingHandlersOps[Self <: KnockoutBindingHandlers] (val x: Self) extends AnyVal {
+  implicit class KnockoutBindingHandlersMutableBuilder[Self <: KnockoutBindingHandlers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlert(value: AlertKnockoutBindingHandler): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlert(value: AlertKnockoutBindingHandler): Self = this.set("alert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCarousel(value: CarouselKnockoutBindingHandler): Self = this.set("carousel", value.asInstanceOf[js.Any])
+    def setCarousel(value: CarouselKnockoutBindingHandler): Self = StObject.set(x, "carousel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCheckbox(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
-    ): Self = this.set("checkbox", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModal(value: ModalKnockoutBindingHandler): Self = this.set("modal", value.asInstanceOf[js.Any])
+    def setModal(value: ModalKnockoutBindingHandler): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopover(value: PopoverKnockoutBindingHandler): Self = this.set("popover", value.asInstanceOf[js.Any])
+    def setPopover(value: PopoverKnockoutBindingHandler): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: ProgressKnockoutBindingHandler): Self = this.set("progress", value.asInstanceOf[js.Any])
+    def setProgress(value: ProgressKnockoutBindingHandler): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRadio(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
-    ): Self = this.set("radio", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setToggle(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
-    ): Self = this.set("toggle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTooltip(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
-    ): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
   }
 }

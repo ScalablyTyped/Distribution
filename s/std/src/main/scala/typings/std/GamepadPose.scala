@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This Gamepad API interface represents the pose of a WebVR controller at a given timestamp (which includes orientation, position, velocity, and acceleration information.) */
 @js.native
-trait GamepadPose extends js.Object {
+trait GamepadPose extends StObject {
   
   val angularAcceleration: Float32Array | Null = js.native
   
@@ -33,60 +34,48 @@ object GamepadPose {
   }
   
   @scala.inline
-  implicit class GamepadPoseOps[Self <: GamepadPose] (val x: Self) extends AnyVal {
+  implicit class GamepadPoseMutableBuilder[Self <: GamepadPose] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngularAcceleration(value: Float32Array): Self = StObject.set(x, "angularAcceleration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngularAccelerationNull: Self = StObject.set(x, "angularAcceleration", null)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAngularVelocity(value: Float32Array): Self = StObject.set(x, "angularVelocity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasOrientation(value: scala.Boolean): Self = this.set("hasOrientation", value.asInstanceOf[js.Any])
+    def setAngularVelocityNull: Self = StObject.set(x, "angularVelocity", null)
     
     @scala.inline
-    def setHasPosition(value: scala.Boolean): Self = this.set("hasPosition", value.asInstanceOf[js.Any])
+    def setHasOrientation(value: scala.Boolean): Self = StObject.set(x, "hasOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngularAcceleration(value: Float32Array): Self = this.set("angularAcceleration", value.asInstanceOf[js.Any])
+    def setHasPosition(value: scala.Boolean): Self = StObject.set(x, "hasPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngularAccelerationNull: Self = this.set("angularAcceleration", null)
+    def setLinearAcceleration(value: Float32Array): Self = StObject.set(x, "linearAcceleration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngularVelocity(value: Float32Array): Self = this.set("angularVelocity", value.asInstanceOf[js.Any])
+    def setLinearAccelerationNull: Self = StObject.set(x, "linearAcceleration", null)
     
     @scala.inline
-    def setAngularVelocityNull: Self = this.set("angularVelocity", null)
+    def setLinearVelocity(value: Float32Array): Self = StObject.set(x, "linearVelocity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinearAcceleration(value: Float32Array): Self = this.set("linearAcceleration", value.asInstanceOf[js.Any])
+    def setLinearVelocityNull: Self = StObject.set(x, "linearVelocity", null)
     
     @scala.inline
-    def setLinearAccelerationNull: Self = this.set("linearAcceleration", null)
+    def setOrientation(value: Float32Array): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinearVelocity(value: Float32Array): Self = this.set("linearVelocity", value.asInstanceOf[js.Any])
+    def setOrientationNull: Self = StObject.set(x, "orientation", null)
     
     @scala.inline
-    def setLinearVelocityNull: Self = this.set("linearVelocity", null)
+    def setPosition(value: Float32Array): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: Float32Array): Self = this.set("orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrientationNull: Self = this.set("orientation", null)
-    
-    @scala.inline
-    def setPosition(value: Float32Array): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPositionNull: Self = this.set("position", null)
+    def setPositionNull: Self = StObject.set(x, "position", null)
   }
 }

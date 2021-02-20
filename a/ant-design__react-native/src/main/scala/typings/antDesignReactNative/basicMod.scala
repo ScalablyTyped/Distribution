@@ -2,13 +2,16 @@ package typings.antDesignReactNative
 
 import typings.antDesignReactNative.anon.ActiveSections
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/react-native/lib/accordion/demo/basic", JSImport.Namespace)
-@js.native
-object basicMod extends js.Object {
+object basicMod {
+  
+  @JSImport("@ant-design/react-native/lib/accordion/demo/basic", JSImport.Default)
+  @js.native
+  class default () extends AccordionExmple
   
   @js.native
   trait AccordionExmple
@@ -19,7 +22,4 @@ object basicMod extends js.Object {
     @JSName("state")
     var state_AccordionExmple: ActiveSections = js.native
   }
-  
-  @js.native
-  class default () extends AccordionExmple
 }

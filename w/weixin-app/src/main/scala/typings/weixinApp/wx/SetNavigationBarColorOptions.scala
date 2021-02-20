@@ -3,6 +3,7 @@ package typings.weixinApp.wx
 import typings.weixinApp.anon.Duration
 import typings.weixinApp.weixinAppStrings.Numbersign000000
 import typings.weixinApp.weixinAppStrings.Numbersignffffff
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,30 +36,18 @@ object SetNavigationBarColorOptions {
   }
   
   @scala.inline
-  implicit class SetNavigationBarColorOptionsOps[Self <: SetNavigationBarColorOptions] (val x: Self) extends AnyVal {
+  implicit class SetNavigationBarColorOptionsMutableBuilder[Self <: SetNavigationBarColorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: Duration): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFrontColor(value: Numbersignffffff | Numbersign000000): Self = this.set("frontColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAnimation(value: Duration): Self = this.set("animation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setFrontColor(value: Numbersignffffff | Numbersign000000): Self = StObject.set(x, "frontColor", value.asInstanceOf[js.Any])
   }
 }

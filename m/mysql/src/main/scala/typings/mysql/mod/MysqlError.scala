@@ -1,6 +1,7 @@
 package typings.mysql.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,57 +60,45 @@ object MysqlError {
   }
   
   @scala.inline
-  implicit class MysqlErrorOps[Self <: MysqlError] (val x: Self) extends AnyVal {
+  implicit class MysqlErrorMutableBuilder[Self <: MysqlError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrno(value: Double): Self = StObject.set(x, "errno", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setFieldCount(value: Double): Self = StObject.set(x, "fieldCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrno(value: Double): Self = this.set("errno", value.asInstanceOf[js.Any])
+    def setFieldCountUndefined: Self = StObject.set(x, "fieldCount", js.undefined)
     
     @scala.inline
-    def setFatal(value: Boolean): Self = this.set("fatal", value.asInstanceOf[js.Any])
+    def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldCount(value: Double): Self = this.set("fieldCount", value.asInstanceOf[js.Any])
+    def setSqlMessage(value: String): Self = StObject.set(x, "sqlMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFieldCount: Self = this.set("fieldCount", js.undefined)
+    def setSqlMessageUndefined: Self = StObject.set(x, "sqlMessage", js.undefined)
     
     @scala.inline
-    def setSql(value: String): Self = this.set("sql", value.asInstanceOf[js.Any])
+    def setSqlState(value: String): Self = StObject.set(x, "sqlState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSql: Self = this.set("sql", js.undefined)
+    def setSqlStateMarker(value: String): Self = StObject.set(x, "sqlStateMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSqlMessage(value: String): Self = this.set("sqlMessage", value.asInstanceOf[js.Any])
+    def setSqlStateMarkerUndefined: Self = StObject.set(x, "sqlStateMarker", js.undefined)
     
     @scala.inline
-    def deleteSqlMessage: Self = this.set("sqlMessage", js.undefined)
+    def setSqlStateUndefined: Self = StObject.set(x, "sqlState", js.undefined)
     
     @scala.inline
-    def setSqlState(value: String): Self = this.set("sqlState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSqlState: Self = this.set("sqlState", js.undefined)
-    
-    @scala.inline
-    def setSqlStateMarker(value: String): Self = this.set("sqlStateMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSqlStateMarker: Self = this.set("sqlStateMarker", js.undefined)
+    def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
   }
 }

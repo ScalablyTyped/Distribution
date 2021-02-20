@@ -5,13 +5,14 @@ import typings.rcTree.interfaceMod.DataNode
 import typings.rcTree.interfaceMod.FlattenNode
 import typings.rcTree.treeMod.TreeProps
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<rc-tree.rc-tree/es/Tree.TreeState> */
 @js.native
-trait PartialTreeState extends js.Object {
+trait PartialTreeState extends StObject {
   
   var activeKey: js.UndefOr[typings.rcTree.interfaceMod.Key] = js.native
   
@@ -56,147 +57,135 @@ object PartialTreeState {
   }
   
   @scala.inline
-  implicit class PartialTreeStateOps[Self <: PartialTreeState] (val x: Self) extends AnyVal {
+  implicit class PartialTreeStateMutableBuilder[Self <: PartialTreeState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveKey(value: typings.rcTree.interfaceMod.Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveKeyUndefined: Self = StObject.set(x, "activeKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckedKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "checkedKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveKey(value: typings.rcTree.interfaceMod.Key): Self = this.set("activeKey", value.asInstanceOf[js.Any])
+    def setCheckedKeysUndefined: Self = StObject.set(x, "checkedKeys", js.undefined)
     
     @scala.inline
-    def deleteActiveKey: Self = this.set("activeKey", js.undefined)
+    def setCheckedKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "checkedKeys", js.Array(value :_*))
     
     @scala.inline
-    def setCheckedKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = this.set("checkedKeys", js.Array(value :_*))
+    def setDragNodesKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "dragNodesKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckedKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = this.set("checkedKeys", value.asInstanceOf[js.Any])
+    def setDragNodesKeysUndefined: Self = StObject.set(x, "dragNodesKeys", js.undefined)
     
     @scala.inline
-    def deleteCheckedKeys: Self = this.set("checkedKeys", js.undefined)
+    def setDragNodesKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "dragNodesKeys", js.Array(value :_*))
     
     @scala.inline
-    def setDragNodesKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = this.set("dragNodesKeys", js.Array(value :_*))
+    def setDragOverNodeKey(value: typings.rcTree.interfaceMod.Key): Self = StObject.set(x, "dragOverNodeKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragNodesKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = this.set("dragNodesKeys", value.asInstanceOf[js.Any])
+    def setDragOverNodeKeyUndefined: Self = StObject.set(x, "dragOverNodeKey", js.undefined)
     
     @scala.inline
-    def deleteDragNodesKeys: Self = this.set("dragNodesKeys", js.undefined)
+    def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragOverNodeKey(value: typings.rcTree.interfaceMod.Key): Self = this.set("dragOverNodeKey", value.asInstanceOf[js.Any])
+    def setDraggingUndefined: Self = StObject.set(x, "dragging", js.undefined)
     
     @scala.inline
-    def deleteDragOverNodeKey: Self = this.set("dragOverNodeKey", js.undefined)
+    def setDropPosition(value: Double): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragging(value: Boolean): Self = this.set("dragging", value.asInstanceOf[js.Any])
+    def setDropPositionUndefined: Self = StObject.set(x, "dropPosition", js.undefined)
     
     @scala.inline
-    def deleteDragging: Self = this.set("dragging", js.undefined)
+    def setExpandedKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "expandedKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropPosition(value: Double): Self = this.set("dropPosition", value.asInstanceOf[js.Any])
+    def setExpandedKeysUndefined: Self = StObject.set(x, "expandedKeys", js.undefined)
     
     @scala.inline
-    def deleteDropPosition: Self = this.set("dropPosition", js.undefined)
+    def setExpandedKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "expandedKeys", js.Array(value :_*))
     
     @scala.inline
-    def setExpandedKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = this.set("expandedKeys", js.Array(value :_*))
+    def setFlattenNodes(value: js.Array[FlattenNode]): Self = StObject.set(x, "flattenNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandedKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = this.set("expandedKeys", value.asInstanceOf[js.Any])
+    def setFlattenNodesUndefined: Self = StObject.set(x, "flattenNodes", js.undefined)
     
     @scala.inline
-    def deleteExpandedKeys: Self = this.set("expandedKeys", js.undefined)
+    def setFlattenNodesVarargs(value: FlattenNode*): Self = StObject.set(x, "flattenNodes", js.Array(value :_*))
     
     @scala.inline
-    def setFlattenNodesVarargs(value: FlattenNode*): Self = this.set("flattenNodes", js.Array(value :_*))
+    def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlattenNodes(value: js.Array[FlattenNode]): Self = this.set("flattenNodes", value.asInstanceOf[js.Any])
+    def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
     
     @scala.inline
-    def deleteFlattenNodes: Self = this.set("flattenNodes", js.undefined)
+    def setHalfCheckedKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "halfCheckedKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocused(value: Boolean): Self = this.set("focused", value.asInstanceOf[js.Any])
+    def setHalfCheckedKeysUndefined: Self = StObject.set(x, "halfCheckedKeys", js.undefined)
     
     @scala.inline
-    def deleteFocused: Self = this.set("focused", js.undefined)
+    def setHalfCheckedKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "halfCheckedKeys", js.Array(value :_*))
     
     @scala.inline
-    def setHalfCheckedKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = this.set("halfCheckedKeys", js.Array(value :_*))
+    def setKeyEntities(value: Record[typings.rcTree.interfaceMod.Key, DataEntity]): Self = StObject.set(x, "keyEntities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHalfCheckedKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = this.set("halfCheckedKeys", value.asInstanceOf[js.Any])
+    def setKeyEntitiesUndefined: Self = StObject.set(x, "keyEntities", js.undefined)
     
     @scala.inline
-    def deleteHalfCheckedKeys: Self = this.set("halfCheckedKeys", js.undefined)
+    def setListChanging(value: Boolean): Self = StObject.set(x, "listChanging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyEntities(value: Record[typings.rcTree.interfaceMod.Key, DataEntity]): Self = this.set("keyEntities", value.asInstanceOf[js.Any])
+    def setListChangingUndefined: Self = StObject.set(x, "listChanging", js.undefined)
     
     @scala.inline
-    def deleteKeyEntities: Self = this.set("keyEntities", js.undefined)
+    def setLoadedKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "loadedKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListChanging(value: Boolean): Self = this.set("listChanging", value.asInstanceOf[js.Any])
+    def setLoadedKeysUndefined: Self = StObject.set(x, "loadedKeys", js.undefined)
     
     @scala.inline
-    def deleteListChanging: Self = this.set("listChanging", js.undefined)
+    def setLoadedKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "loadedKeys", js.Array(value :_*))
     
     @scala.inline
-    def setLoadedKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = this.set("loadedKeys", js.Array(value :_*))
+    def setLoadingKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "loadingKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadedKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = this.set("loadedKeys", value.asInstanceOf[js.Any])
+    def setLoadingKeysUndefined: Self = StObject.set(x, "loadingKeys", js.undefined)
     
     @scala.inline
-    def deleteLoadedKeys: Self = this.set("loadedKeys", js.undefined)
+    def setLoadingKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "loadingKeys", js.Array(value :_*))
     
     @scala.inline
-    def setLoadingKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = this.set("loadingKeys", js.Array(value :_*))
+    def setPrevProps(value: TreeProps): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadingKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = this.set("loadingKeys", value.asInstanceOf[js.Any])
+    def setPrevPropsUndefined: Self = StObject.set(x, "prevProps", js.undefined)
     
     @scala.inline
-    def deleteLoadingKeys: Self = this.set("loadingKeys", js.undefined)
+    def setSelectedKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "selectedKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrevProps(value: TreeProps): Self = this.set("prevProps", value.asInstanceOf[js.Any])
+    def setSelectedKeysUndefined: Self = StObject.set(x, "selectedKeys", js.undefined)
     
     @scala.inline
-    def deletePrevProps: Self = this.set("prevProps", js.undefined)
+    def setSelectedKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "selectedKeys", js.Array(value :_*))
     
     @scala.inline
-    def setSelectedKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = this.set("selectedKeys", js.Array(value :_*))
+    def setTreeData(value: js.Array[DataNode]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = this.set("selectedKeys", value.asInstanceOf[js.Any])
+    def setTreeDataUndefined: Self = StObject.set(x, "treeData", js.undefined)
     
     @scala.inline
-    def deleteSelectedKeys: Self = this.set("selectedKeys", js.undefined)
-    
-    @scala.inline
-    def setTreeDataVarargs(value: DataNode*): Self = this.set("treeData", js.Array(value :_*))
-    
-    @scala.inline
-    def setTreeData(value: js.Array[DataNode]): Self = this.set("treeData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTreeData: Self = this.set("treeData", js.undefined)
+    def setTreeDataVarargs(value: DataNode*): Self = StObject.set(x, "treeData", js.Array(value :_*))
   }
 }

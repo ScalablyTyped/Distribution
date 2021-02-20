@@ -1,6 +1,7 @@
 package typings.protractor.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,60 +55,48 @@ object DefaultTimeoutInterval {
   }
   
   @scala.inline
-  implicit class DefaultTimeoutIntervalOps[Self <: DefaultTimeoutInterval] (val x: Self) extends AnyVal {
+  implicit class DefaultTimeoutIntervalMutableBuilder[Self <: DefaultTimeoutInterval] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultTimeoutInterval(value: Double): Self = StObject.set(x, "defaultTimeoutInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultTimeoutIntervalUndefined: Self = StObject.set(x, "defaultTimeoutInterval", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGrep(value: String): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTimeoutInterval(value: Double): Self = this.set("defaultTimeoutInterval", value.asInstanceOf[js.Any])
+    def setGrepUndefined: Self = StObject.set(x, "grep", js.undefined)
     
     @scala.inline
-    def deleteDefaultTimeoutInterval: Self = this.set("defaultTimeoutInterval", js.undefined)
+    def setInvertGrep(value: Boolean): Self = StObject.set(x, "invertGrep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrep(value: String): Self = this.set("grep", value.asInstanceOf[js.Any])
+    def setInvertGrepUndefined: Self = StObject.set(x, "invertGrep", js.undefined)
     
     @scala.inline
-    def deleteGrep: Self = this.set("grep", js.undefined)
+    def setPrint(value: () => Unit): Self = StObject.set(x, "print", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInvertGrep(value: Boolean): Self = this.set("invertGrep", value.asInstanceOf[js.Any])
+    def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
     
     @scala.inline
-    def deleteInvertGrep: Self = this.set("invertGrep", js.undefined)
+    def setRandom(value: Boolean): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrint(value: () => Unit): Self = this.set("print", js.Any.fromFunction0(value))
+    def setRandomUndefined: Self = StObject.set(x, "random", js.undefined)
     
     @scala.inline
-    def deletePrint: Self = this.set("print", js.undefined)
+    def setSeed(value: String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRandom(value: Boolean): Self = this.set("random", value.asInstanceOf[js.Any])
+    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
     
     @scala.inline
-    def deleteRandom: Self = this.set("random", js.undefined)
+    def setShowColors(value: Boolean): Self = StObject.set(x, "showColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeed(value: String): Self = this.set("seed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeed: Self = this.set("seed", js.undefined)
-    
-    @scala.inline
-    def setShowColors(value: Boolean): Self = this.set("showColors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowColors: Self = this.set("showColors", js.undefined)
+    def setShowColorsUndefined: Self = StObject.set(x, "showColors", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.angularFormly.AngularFormly
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFormOptionsAPI extends js.Object {
+trait IFormOptionsAPI extends StObject {
   
   var data: js.UndefOr[StringDictionary[js.Any]] = js.native
   
@@ -33,72 +34,60 @@ object IFormOptionsAPI {
   }
   
   @scala.inline
-  implicit class IFormOptionsAPIOps[Self <: IFormOptionsAPI] (val x: Self) extends AnyVal {
+  implicit class IFormOptionsAPIMutableBuilder[Self <: IFormOptionsAPI] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldTransform(value: js.Function | js.Array[js.Function]): Self = StObject.set(x, "fieldTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: StringDictionary[js.Any]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setFieldTransformUndefined: Self = StObject.set(x, "fieldTransform", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setFieldTransformVarargs(value: js.Function*): Self = StObject.set(x, "fieldTransform", js.Array(value :_*))
     
     @scala.inline
-    def setFieldTransformVarargs(value: js.Function*): Self = this.set("fieldTransform", js.Array(value :_*))
+    def setFormState(value: js.Object): Self = StObject.set(x, "formState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldTransform(value: js.Function | js.Array[js.Function]): Self = this.set("fieldTransform", value.asInstanceOf[js.Any])
+    def setFormStateUndefined: Self = StObject.set(x, "formState", js.undefined)
     
     @scala.inline
-    def deleteFieldTransform: Self = this.set("fieldTransform", js.undefined)
+    def setRemoveChromeAutoComplete(value: Boolean): Self = StObject.set(x, "removeChromeAutoComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormState(value: js.Object): Self = this.set("formState", value.asInstanceOf[js.Any])
+    def setRemoveChromeAutoCompleteUndefined: Self = StObject.set(x, "removeChromeAutoComplete", js.undefined)
     
     @scala.inline
-    def deleteFormState: Self = this.set("formState", js.undefined)
+    def setResetModel(value: js.Function): Self = StObject.set(x, "resetModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveChromeAutoComplete(value: Boolean): Self = this.set("removeChromeAutoComplete", value.asInstanceOf[js.Any])
+    def setResetModelUndefined: Self = StObject.set(x, "resetModel", js.undefined)
     
     @scala.inline
-    def deleteRemoveChromeAutoComplete: Self = this.set("removeChromeAutoComplete", js.undefined)
+    def setTemplateManipulators(value: ITemplateManipulators): Self = StObject.set(x, "templateManipulators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetModel(value: js.Function): Self = this.set("resetModel", value.asInstanceOf[js.Any])
+    def setTemplateManipulatorsUndefined: Self = StObject.set(x, "templateManipulators", js.undefined)
     
     @scala.inline
-    def deleteResetModel: Self = this.set("resetModel", js.undefined)
+    def setUpdateInitialValue(value: js.Function): Self = StObject.set(x, "updateInitialValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateManipulators(value: ITemplateManipulators): Self = this.set("templateManipulators", value.asInstanceOf[js.Any])
+    def setUpdateInitialValueUndefined: Self = StObject.set(x, "updateInitialValue", js.undefined)
     
     @scala.inline
-    def deleteTemplateManipulators: Self = this.set("templateManipulators", js.undefined)
+    def setWrapper(value: String | js.Array[String]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateInitialValue(value: js.Function): Self = this.set("updateInitialValue", value.asInstanceOf[js.Any])
+    def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
     
     @scala.inline
-    def deleteUpdateInitialValue: Self = this.set("updateInitialValue", js.undefined)
-    
-    @scala.inline
-    def setWrapperVarargs(value: String*): Self = this.set("wrapper", js.Array(value :_*))
-    
-    @scala.inline
-    def setWrapper(value: String | js.Array[String]): Self = this.set("wrapper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapper: Self = this.set("wrapper", js.undefined)
+    def setWrapperVarargs(value: String*): Self = StObject.set(x, "wrapper", js.Array(value :_*))
   }
 }

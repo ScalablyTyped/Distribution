@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Part of the WebGL API and represents the information returned by calling the WebGLRenderingContext.getActiveAttrib() and WebGLRenderingContext.getActiveUniform() methods. */
 @js.native
-trait WebGLActiveInfo extends js.Object {
+trait WebGLActiveInfo extends StObject {
   
   val name: java.lang.String = js.native
   
@@ -24,27 +25,15 @@ object WebGLActiveInfo {
   }
   
   @scala.inline
-  implicit class WebGLActiveInfoOps[Self <: WebGLActiveInfo] (val x: Self) extends AnyVal {
+  implicit class WebGLActiveInfoMutableBuilder[Self <: WebGLActiveInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSize(value: GLint): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: java.lang.String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: GLint): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: GLenum): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: GLenum): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -3,12 +3,13 @@ package typings.yandexMaps.anon
 import typings.yandexMaps.mod.IDataManager
 import typings.yandexMaps.mod.IGeoObject
 import typings.yandexMaps.mod.IGeometry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Children extends js.Object {
+trait Children extends StObject {
   
   var children: js.UndefOr[js.Array[IGeoObject[IGeometry]]] = js.native
   
@@ -25,39 +26,27 @@ object Children {
   }
   
   @scala.inline
-  implicit class ChildrenOps[Self <: Children] (val x: Self) extends AnyVal {
+  implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Array[IGeoObject[IGeometry]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenVarargs(value: IGeoObject[IGeometry]*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setChildrenVarargs(value: IGeoObject[IGeometry]*): Self = this.set("children", js.Array(value :_*))
+    def setGeometry(value: IGeometry | js.Object): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Array[IGeoObject[IGeometry]]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setProperties(value: IDataManager | js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometry(value: IGeometry | js.Object): Self = this.set("geometry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGeometry: Self = this.set("geometry", js.undefined)
-    
-    @scala.inline
-    def setProperties(value: IDataManager | js.Object): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewerCertificate extends js.Object {
+trait ViewerCertificate extends StObject {
   
   /**
     * If the distribution uses Aliases (alternate domain names or CNAMEs) and the SSL/TLS certificate is stored in AWS Certificate Manager (ACM), provide the Amazon Resource Name (ARN) of the ACM certificate. CloudFront only supports ACM certificates in the US East (N. Virginia) Region (us-east-1). If you specify an ACM certificate ARN, you must also specify values for MinimumProtocolVerison and SSLSupportMethod. 
@@ -51,60 +52,48 @@ object ViewerCertificate {
   }
   
   @scala.inline
-  implicit class ViewerCertificateOps[Self <: ViewerCertificate] (val x: Self) extends AnyVal {
+  implicit class ViewerCertificateMutableBuilder[Self <: ViewerCertificate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setACMCertificateArn(value: String): Self = StObject.set(x, "ACMCertificateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setACMCertificateArnUndefined: Self = StObject.set(x, "ACMCertificateArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificate(value: String): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setACMCertificateArn(value: String): Self = this.set("ACMCertificateArn", value.asInstanceOf[js.Any])
+    def setCertificateSource(value: CertificateSource): Self = StObject.set(x, "CertificateSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteACMCertificateArn: Self = this.set("ACMCertificateArn", js.undefined)
+    def setCertificateSourceUndefined: Self = StObject.set(x, "CertificateSource", js.undefined)
     
     @scala.inline
-    def setCertificate(value: String): Self = this.set("Certificate", value.asInstanceOf[js.Any])
+    def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
     
     @scala.inline
-    def deleteCertificate: Self = this.set("Certificate", js.undefined)
+    def setCloudFrontDefaultCertificate(value: Boolean): Self = StObject.set(x, "CloudFrontDefaultCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateSource(value: CertificateSource): Self = this.set("CertificateSource", value.asInstanceOf[js.Any])
+    def setCloudFrontDefaultCertificateUndefined: Self = StObject.set(x, "CloudFrontDefaultCertificate", js.undefined)
     
     @scala.inline
-    def deleteCertificateSource: Self = this.set("CertificateSource", js.undefined)
+    def setIAMCertificateId(value: String): Self = StObject.set(x, "IAMCertificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudFrontDefaultCertificate(value: Boolean): Self = this.set("CloudFrontDefaultCertificate", value.asInstanceOf[js.Any])
+    def setIAMCertificateIdUndefined: Self = StObject.set(x, "IAMCertificateId", js.undefined)
     
     @scala.inline
-    def deleteCloudFrontDefaultCertificate: Self = this.set("CloudFrontDefaultCertificate", js.undefined)
+    def setMinimumProtocolVersion(value: MinimumProtocolVersion): Self = StObject.set(x, "MinimumProtocolVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIAMCertificateId(value: String): Self = this.set("IAMCertificateId", value.asInstanceOf[js.Any])
+    def setMinimumProtocolVersionUndefined: Self = StObject.set(x, "MinimumProtocolVersion", js.undefined)
     
     @scala.inline
-    def deleteIAMCertificateId: Self = this.set("IAMCertificateId", js.undefined)
+    def setSSLSupportMethod(value: SSLSupportMethod): Self = StObject.set(x, "SSLSupportMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumProtocolVersion(value: MinimumProtocolVersion): Self = this.set("MinimumProtocolVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumProtocolVersion: Self = this.set("MinimumProtocolVersion", js.undefined)
-    
-    @scala.inline
-    def setSSLSupportMethod(value: SSLSupportMethod): Self = this.set("SSLSupportMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSSLSupportMethod: Self = this.set("SSLSupportMethod", js.undefined)
+    def setSSLSupportMethodUndefined: Self = StObject.set(x, "SSLSupportMethod", js.undefined)
   }
 }

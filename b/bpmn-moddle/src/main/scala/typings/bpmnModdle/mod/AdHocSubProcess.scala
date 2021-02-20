@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,27 +53,15 @@ object AdHocSubProcess {
   }
   
   @scala.inline
-  implicit class AdHocSubProcessOps[Self <: AdHocSubProcess] (val x: Self) extends AnyVal {
+  implicit class AdHocSubProcessMutableBuilder[Self <: AdHocSubProcess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelRemainingInstances(value: Boolean): Self = StObject.set(x, "cancelRemainingInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletionCondition(value: Expression): Self = StObject.set(x, "completionCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCancelRemainingInstances(value: Boolean): Self = this.set("cancelRemainingInstances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCompletionCondition(value: Expression): Self = this.set("completionCondition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrdering(value: AdHocOrdering): Self = this.set("ordering", value.asInstanceOf[js.Any])
+    def setOrdering(value: AdHocOrdering): Self = StObject.set(x, "ordering", value.asInstanceOf[js.Any])
   }
 }

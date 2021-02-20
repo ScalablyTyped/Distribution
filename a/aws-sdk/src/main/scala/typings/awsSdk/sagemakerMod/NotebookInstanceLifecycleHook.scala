@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotebookInstanceLifecycleHook extends js.Object {
+trait NotebookInstanceLifecycleHook extends StObject {
   
   /**
     * A base64-encoded string that contains a shell script for a notebook instance lifecycle configuration.
@@ -21,24 +22,12 @@ object NotebookInstanceLifecycleHook {
   }
   
   @scala.inline
-  implicit class NotebookInstanceLifecycleHookOps[Self <: NotebookInstanceLifecycleHook] (val x: Self) extends AnyVal {
+  implicit class NotebookInstanceLifecycleHookMutableBuilder[Self <: NotebookInstanceLifecycleHook] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: NotebookInstanceLifecycleConfigContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContent(value: NotebookInstanceLifecycleConfigContent): Self = this.set("Content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContent: Self = this.set("Content", js.undefined)
+    def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
   }
 }

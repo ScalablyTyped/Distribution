@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuditAdvertiserResponse extends js.Object {
+trait AuditAdvertiserResponse extends StObject {
   
   /**
     * The number of individual targeting options from the following targeting types that are assigned to a line item under this advertiser. These individual targeting options count
@@ -51,66 +52,54 @@ object AuditAdvertiserResponse {
   }
   
   @scala.inline
-  implicit class AuditAdvertiserResponseOps[Self <: AuditAdvertiserResponse] (val x: Self) extends AnyVal {
+  implicit class AuditAdvertiserResponseMutableBuilder[Self <: AuditAdvertiserResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdGroupCriteriaCount(value: String): Self = StObject.set(x, "adGroupCriteriaCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdGroupCriteriaCountUndefined: Self = StObject.set(x, "adGroupCriteriaCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCampaignCriteriaCount(value: String): Self = StObject.set(x, "campaignCriteriaCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdGroupCriteriaCount(value: String): Self = this.set("adGroupCriteriaCount", value.asInstanceOf[js.Any])
+    def setCampaignCriteriaCountUndefined: Self = StObject.set(x, "campaignCriteriaCount", js.undefined)
     
     @scala.inline
-    def deleteAdGroupCriteriaCount: Self = this.set("adGroupCriteriaCount", js.undefined)
+    def setChannelsCount(value: String): Self = StObject.set(x, "channelsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaignCriteriaCount(value: String): Self = this.set("campaignCriteriaCount", value.asInstanceOf[js.Any])
+    def setChannelsCountUndefined: Self = StObject.set(x, "channelsCount", js.undefined)
     
     @scala.inline
-    def deleteCampaignCriteriaCount: Self = this.set("campaignCriteriaCount", js.undefined)
+    def setNegativeKeywordListsCount(value: String): Self = StObject.set(x, "negativeKeywordListsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelsCount(value: String): Self = this.set("channelsCount", value.asInstanceOf[js.Any])
+    def setNegativeKeywordListsCountUndefined: Self = StObject.set(x, "negativeKeywordListsCount", js.undefined)
     
     @scala.inline
-    def deleteChannelsCount: Self = this.set("channelsCount", js.undefined)
+    def setNegativelyTargetedChannelsCount(value: String): Self = StObject.set(x, "negativelyTargetedChannelsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegativeKeywordListsCount(value: String): Self = this.set("negativeKeywordListsCount", value.asInstanceOf[js.Any])
+    def setNegativelyTargetedChannelsCountUndefined: Self = StObject.set(x, "negativelyTargetedChannelsCount", js.undefined)
     
     @scala.inline
-    def deleteNegativeKeywordListsCount: Self = this.set("negativeKeywordListsCount", js.undefined)
+    def setUsedCampaignsCount(value: String): Self = StObject.set(x, "usedCampaignsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegativelyTargetedChannelsCount(value: String): Self = this.set("negativelyTargetedChannelsCount", value.asInstanceOf[js.Any])
+    def setUsedCampaignsCountUndefined: Self = StObject.set(x, "usedCampaignsCount", js.undefined)
     
     @scala.inline
-    def deleteNegativelyTargetedChannelsCount: Self = this.set("negativelyTargetedChannelsCount", js.undefined)
+    def setUsedInsertionOrdersCount(value: String): Self = StObject.set(x, "usedInsertionOrdersCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsedCampaignsCount(value: String): Self = this.set("usedCampaignsCount", value.asInstanceOf[js.Any])
+    def setUsedInsertionOrdersCountUndefined: Self = StObject.set(x, "usedInsertionOrdersCount", js.undefined)
     
     @scala.inline
-    def deleteUsedCampaignsCount: Self = this.set("usedCampaignsCount", js.undefined)
+    def setUsedLineItemsCount(value: String): Self = StObject.set(x, "usedLineItemsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsedInsertionOrdersCount(value: String): Self = this.set("usedInsertionOrdersCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsedInsertionOrdersCount: Self = this.set("usedInsertionOrdersCount", js.undefined)
-    
-    @scala.inline
-    def setUsedLineItemsCount(value: String): Self = this.set("usedLineItemsCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsedLineItemsCount: Self = this.set("usedLineItemsCount", js.undefined)
+    def setUsedLineItemsCountUndefined: Self = StObject.set(x, "usedLineItemsCount", js.undefined)
   }
 }

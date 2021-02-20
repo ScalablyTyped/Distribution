@@ -3,13 +3,14 @@ package typings.angularCommon.httpHttpMod
 import typings.angularCommon.anon.Headers
 import typings.angularCommon.httpHttpMod.HttpEventType.Response
 import typings.angularCommon.httpHttpMod.HttpEventType.ResponseHeader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/http/http", "HttpResponseBase")
 @js.native
-abstract class HttpResponseBase protected () extends js.Object {
+abstract class HttpResponseBase protected () extends StObject {
   /**
     * Super-constructor for all responses.
     *

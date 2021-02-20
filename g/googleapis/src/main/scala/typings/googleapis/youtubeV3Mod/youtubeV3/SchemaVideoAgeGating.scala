@@ -1,11 +1,12 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaVideoAgeGating extends js.Object {
+trait SchemaVideoAgeGating extends StObject {
   
   /**
     * Indicates whether or not the video has alcoholic beverage content. Only
@@ -36,36 +37,24 @@ object SchemaVideoAgeGating {
   }
   
   @scala.inline
-  implicit class SchemaVideoAgeGatingOps[Self <: SchemaVideoAgeGating] (val x: Self) extends AnyVal {
+  implicit class SchemaVideoAgeGatingMutableBuilder[Self <: SchemaVideoAgeGating] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlcoholContent(value: Boolean): Self = StObject.set(x, "alcoholContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlcoholContentUndefined: Self = StObject.set(x, "alcoholContent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRestricted(value: Boolean): Self = StObject.set(x, "restricted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlcoholContent(value: Boolean): Self = this.set("alcoholContent", value.asInstanceOf[js.Any])
+    def setRestrictedUndefined: Self = StObject.set(x, "restricted", js.undefined)
     
     @scala.inline
-    def deleteAlcoholContent: Self = this.set("alcoholContent", js.undefined)
+    def setVideoGameRating(value: String): Self = StObject.set(x, "videoGameRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestricted(value: Boolean): Self = this.set("restricted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestricted: Self = this.set("restricted", js.undefined)
-    
-    @scala.inline
-    def setVideoGameRating(value: String): Self = this.set("videoGameRating", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoGameRating: Self = this.set("videoGameRating", js.undefined)
+    def setVideoGameRatingUndefined: Self = StObject.set(x, "videoGameRating", js.undefined)
   }
 }

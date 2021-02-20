@@ -4,12 +4,13 @@ import typings.pg.mod.QueryArrayConfig
 import typings.pg.mod.QueryArrayResult
 import typings.pg.mod.QueryConfig
 import typings.pg.mod.QueryResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DB extends js.Object {
+trait DB extends StObject {
   
   def query(queryConfig: QueryArrayConfig[js.Array[_]]): js.Promise[QueryArrayResult[js.Array[_]]] = js.native
   def query(queryConfig: QueryArrayConfig[js.Array[_]], values: js.Array[_]): js.Promise[QueryArrayResult[js.Array[_]]] = js.native

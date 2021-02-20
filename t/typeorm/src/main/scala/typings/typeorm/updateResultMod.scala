@@ -1,16 +1,16 @@
 package typings.typeorm
 
 import typings.typeorm.objectLiteralMod.ObjectLiteral
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/query-builder/result/UpdateResult", JSImport.Namespace)
-@js.native
-object updateResultMod extends js.Object {
+object updateResultMod {
   
+  @JSImport("typeorm/browser/query-builder/result/UpdateResult", "UpdateResult")
   @js.native
-  class UpdateResult () extends js.Object {
+  class UpdateResult () extends StObject {
     
     /**
       * Number of affected rows/documents

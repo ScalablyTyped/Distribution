@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHTMLTableSection extends js.Object {
+trait IHTMLTableSection extends StObject {
   
   @JSName("MSHTML.IHTMLTableSection_typekey")
   var MSHTMLDotIHTMLTableSection_typekey: IHTMLTableSection = js.native

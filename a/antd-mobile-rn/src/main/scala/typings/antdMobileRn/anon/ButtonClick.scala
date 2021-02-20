@@ -2,12 +2,13 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.reactNative.mod.RegisteredStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ButtonClick extends js.Object {
+trait ButtonClick extends StObject {
   
   def buttonClick(): Unit = js.native
   
@@ -24,27 +25,15 @@ object ButtonClick {
   }
   
   @scala.inline
-  implicit class ButtonClickOps[Self <: ButtonClick] (val x: Self) extends AnyVal {
+  implicit class ButtonClickMutableBuilder[Self <: ButtonClick] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtonClick(value: () => Unit): Self = StObject.set(x, "buttonClick", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonType(value: String): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setButtonClick(value: () => Unit): Self = this.set("buttonClick", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setButtonType(value: String): Self = this.set("buttonType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyles(value: StringDictionary[RegisteredStyle[_]]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setStyles(value: StringDictionary[RegisteredStyle[_]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

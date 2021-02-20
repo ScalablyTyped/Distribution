@@ -1,20 +1,21 @@
 package typings.contentfulManagement.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined type-fest.type-fest.Except<contentful-management.contentful-management/dist/typings/entities/locale.LocaleProps, 'sys'> */
 @js.native
-trait ExceptLocalePropssys extends js.Object {
+trait ExceptLocalePropssys extends StObject {
+  
+  var default: Boolean = js.native
   
   var code: String = js.native
   
   var contentDeliveryApi: Boolean = js.native
   
   var contentManagementApi: Boolean = js.native
-  
-  var default: Boolean = js.native
   
   var fallbackCode: String = js.native
   
@@ -39,39 +40,27 @@ object ExceptLocalePropssys {
   }
   
   @scala.inline
-  implicit class ExceptLocalePropssysOps[Self <: ExceptLocalePropssys] (val x: Self) extends AnyVal {
+  implicit class ExceptLocalePropssysMutableBuilder[Self <: ExceptLocalePropssys] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentDeliveryApi(value: Boolean): Self = StObject.set(x, "contentDeliveryApi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentManagementApi(value: Boolean): Self = StObject.set(x, "contentManagementApi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentDeliveryApi(value: Boolean): Self = this.set("contentDeliveryApi", value.asInstanceOf[js.Any])
+    def setFallbackCode(value: String): Self = StObject.set(x, "fallbackCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentManagementApi(value: Boolean): Self = this.set("contentManagementApi", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: Boolean): Self = this.set("default", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFallbackCode(value: String): Self = this.set("fallbackCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptional(value: Boolean): Self = this.set("optional", value.asInstanceOf[js.Any])
+    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("monaco-editor", "editor.BareFontInfo")
 @js.native
-class BareFontInfo () extends js.Object {
+class BareFontInfo () extends StObject {
   
   val _bareFontInfoBrand: Unit = js.native
   

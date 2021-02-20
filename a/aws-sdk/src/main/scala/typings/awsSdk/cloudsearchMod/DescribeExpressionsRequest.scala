@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudsearchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeExpressionsRequest extends js.Object {
+trait DescribeExpressionsRequest extends StObject {
   
   /**
     * Whether to display the deployed configuration (true) or include any pending changes (false). Defaults to false.
@@ -31,36 +32,24 @@ object DescribeExpressionsRequest {
   }
   
   @scala.inline
-  implicit class DescribeExpressionsRequestOps[Self <: DescribeExpressionsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeExpressionsRequestMutableBuilder[Self <: DescribeExpressionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeployed(value: Boolean): Self = StObject.set(x, "Deployed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeployedUndefined: Self = StObject.set(x, "Deployed", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setExpressionNames(value: StandardNameList): Self = StObject.set(x, "ExpressionNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeployed(value: Boolean): Self = this.set("Deployed", value.asInstanceOf[js.Any])
+    def setExpressionNamesUndefined: Self = StObject.set(x, "ExpressionNames", js.undefined)
     
     @scala.inline
-    def deleteDeployed: Self = this.set("Deployed", js.undefined)
-    
-    @scala.inline
-    def setExpressionNamesVarargs(value: StandardName*): Self = this.set("ExpressionNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setExpressionNames(value: StandardNameList): Self = this.set("ExpressionNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpressionNames: Self = this.set("ExpressionNames", js.undefined)
+    def setExpressionNamesVarargs(value: StandardName*): Self = StObject.set(x, "ExpressionNames", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.firefoxWebextBrowser.browser.webNavigation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnCreatedNavigationTargetDetails extends js.Object {
+trait OnCreatedNavigationTargetDetails extends StObject {
   
   /**
     * The ID of the frame with sourceTabId in which the navigation is triggered. 0 indicates the main frame.
@@ -43,36 +44,24 @@ object OnCreatedNavigationTargetDetails {
   }
   
   @scala.inline
-  implicit class OnCreatedNavigationTargetDetailsOps[Self <: OnCreatedNavigationTargetDetails] (val x: Self) extends AnyVal {
+  implicit class OnCreatedNavigationTargetDetailsMutableBuilder[Self <: OnCreatedNavigationTargetDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSourceFrameId(value: Double): Self = StObject.set(x, "sourceFrameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSourceProcessId(value: Double): Self = StObject.set(x, "sourceProcessId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceTabId(value: Double): Self = StObject.set(x, "sourceTabId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceFrameId(value: Double): Self = this.set("sourceFrameId", value.asInstanceOf[js.Any])
+    def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceProcessId(value: Double): Self = this.set("sourceProcessId", value.asInstanceOf[js.Any])
+    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceTabId(value: Double): Self = this.set("sourceTabId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTabId(value: Double): Self = this.set("tabId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeStamp(value: Double): Self = this.set("timeStamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.budgetsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateBudgetActionRequest extends js.Object {
+trait UpdateBudgetActionRequest extends StObject {
   
   var AccountId: typings.awsSdk.budgetsMod.AccountId = js.native
   
@@ -43,66 +44,54 @@ object UpdateBudgetActionRequest {
   }
   
   @scala.inline
-  implicit class UpdateBudgetActionRequestOps[Self <: UpdateBudgetActionRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateBudgetActionRequestMutableBuilder[Self <: UpdateBudgetActionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionId(value: ActionId): Self = StObject.set(x, "ActionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionThreshold(value: ActionThreshold): Self = StObject.set(x, "ActionThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    def setActionThresholdUndefined: Self = StObject.set(x, "ActionThreshold", js.undefined)
     
     @scala.inline
-    def setActionId(value: ActionId): Self = this.set("ActionId", value.asInstanceOf[js.Any])
+    def setApprovalModel(value: ApprovalModel): Self = StObject.set(x, "ApprovalModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBudgetName(value: BudgetName): Self = this.set("BudgetName", value.asInstanceOf[js.Any])
+    def setApprovalModelUndefined: Self = StObject.set(x, "ApprovalModel", js.undefined)
     
     @scala.inline
-    def setActionThreshold(value: ActionThreshold): Self = this.set("ActionThreshold", value.asInstanceOf[js.Any])
+    def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActionThreshold: Self = this.set("ActionThreshold", js.undefined)
+    def setDefinition(value: Definition): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprovalModel(value: ApprovalModel): Self = this.set("ApprovalModel", value.asInstanceOf[js.Any])
+    def setDefinitionUndefined: Self = StObject.set(x, "Definition", js.undefined)
     
     @scala.inline
-    def deleteApprovalModel: Self = this.set("ApprovalModel", js.undefined)
+    def setExecutionRoleArn(value: RoleArn): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinition(value: Definition): Self = this.set("Definition", value.asInstanceOf[js.Any])
+    def setExecutionRoleArnUndefined: Self = StObject.set(x, "ExecutionRoleArn", js.undefined)
     
     @scala.inline
-    def deleteDefinition: Self = this.set("Definition", js.undefined)
+    def setNotificationType(value: NotificationType): Self = StObject.set(x, "NotificationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionRoleArn(value: RoleArn): Self = this.set("ExecutionRoleArn", value.asInstanceOf[js.Any])
+    def setNotificationTypeUndefined: Self = StObject.set(x, "NotificationType", js.undefined)
     
     @scala.inline
-    def deleteExecutionRoleArn: Self = this.set("ExecutionRoleArn", js.undefined)
+    def setSubscribers(value: Subscribers): Self = StObject.set(x, "Subscribers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationType(value: NotificationType): Self = this.set("NotificationType", value.asInstanceOf[js.Any])
+    def setSubscribersUndefined: Self = StObject.set(x, "Subscribers", js.undefined)
     
     @scala.inline
-    def deleteNotificationType: Self = this.set("NotificationType", js.undefined)
-    
-    @scala.inline
-    def setSubscribersVarargs(value: Subscriber*): Self = this.set("Subscribers", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubscribers(value: Subscribers): Self = this.set("Subscribers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscribers: Self = this.set("Subscribers", js.undefined)
+    def setSubscribersVarargs(value: Subscriber*): Self = StObject.set(x, "Subscribers", js.Array(value :_*))
   }
 }

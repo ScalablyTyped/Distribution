@@ -7,12 +7,13 @@ import typings.angularCommon.angularCommonStrings.json
 import typings.angularCommon.angularCommonStrings.text
 import typings.angularCommon.httpHttpMod.HttpHeaders
 import typings.angularCommon.httpHttpMod.HttpParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetHeaders[V] extends js.Object {
+trait SetHeaders[V] extends StObject {
   
   var body: js.UndefOr[V | Null] = js.native
   
@@ -43,81 +44,69 @@ object SetHeaders {
   }
   
   @scala.inline
-  implicit class SetHeadersOps[Self <: SetHeaders[_], V] (val x: Self with SetHeaders[V]) extends AnyVal {
+  implicit class SetHeadersMutableBuilder[Self <: SetHeaders[_], V] (val x: Self with SetHeaders[V]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: V): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyNull: Self = StObject.set(x, "body", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def setBody(value: V): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setHeaders(value: HttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setBodyNull: Self = this.set("body", null)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: HttpHeaders): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setParams(value: HttpParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setReportProgress(value: Boolean): Self = StObject.set(x, "reportProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: HttpParams): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setReportProgressUndefined: Self = StObject.set(x, "reportProgress", js.undefined)
     
     @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setResponseType(value: arraybuffer | blob | json | text): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportProgress(value: Boolean): Self = this.set("reportProgress", value.asInstanceOf[js.Any])
+    def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
     @scala.inline
-    def deleteReportProgress: Self = this.set("reportProgress", js.undefined)
+    def setSetHeaders(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "setHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseType(value: arraybuffer | blob | json | text): Self = this.set("responseType", value.asInstanceOf[js.Any])
+    def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
     
     @scala.inline
-    def deleteResponseType: Self = this.set("responseType", js.undefined)
+    def setSetParams(value: StringDictionary[String]): Self = StObject.set(x, "setParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetHeaders(value: StringDictionary[String | js.Array[String]]): Self = this.set("setHeaders", value.asInstanceOf[js.Any])
+    def setSetParamsUndefined: Self = StObject.set(x, "setParams", js.undefined)
     
     @scala.inline
-    def deleteSetHeaders: Self = this.set("setHeaders", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetParams(value: StringDictionary[String]): Self = this.set("setParams", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteSetParams: Self = this.set("setParams", js.undefined)
+    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
+    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

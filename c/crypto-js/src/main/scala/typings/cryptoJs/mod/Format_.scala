@@ -1,5 +1,6 @@
 package typings.cryptoJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Formatting strategy.
   */
 @js.native
-trait Format_ extends js.Object {
+trait Format_ extends StObject {
   
   /**
     * Converts an OpenSSL-compatible string to a cipher params object.
@@ -45,24 +46,12 @@ object Format_ {
   }
   
   @scala.inline
-  implicit class Format_Ops[Self <: Format_] (val x: Self) extends AnyVal {
+  implicit class Format_MutableBuilder[Self <: Format_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParse(value: String => CipherParams): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParse(value: String => CipherParams): Self = this.set("parse", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStringify(value: CipherParams => String): Self = this.set("stringify", js.Any.fromFunction1(value))
+    def setStringify(value: CipherParams => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
   }
 }

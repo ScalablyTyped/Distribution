@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListCodeRepositoriesOutput extends js.Object {
+trait ListCodeRepositoriesOutput extends StObject {
   
   /**
     * Gets a list of summaries of the Git repositories. Each summary specifies the following values for the repository:    Name   Amazon Resource Name (ARN)   Creation time   Last modified time   Configuration information, including the URL location of the repository and the ARN of the AWS Secrets Manager secret that contains the credentials used to access the repository.  
@@ -26,30 +27,18 @@ object ListCodeRepositoriesOutput {
   }
   
   @scala.inline
-  implicit class ListCodeRepositoriesOutputOps[Self <: ListCodeRepositoriesOutput] (val x: Self) extends AnyVal {
+  implicit class ListCodeRepositoriesOutputMutableBuilder[Self <: ListCodeRepositoriesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodeRepositorySummaryList(value: CodeRepositorySummaryList): Self = StObject.set(x, "CodeRepositorySummaryList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeRepositorySummaryListVarargs(value: CodeRepositorySummary*): Self = StObject.set(x, "CodeRepositorySummaryList", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeRepositorySummaryListVarargs(value: CodeRepositorySummary*): Self = this.set("CodeRepositorySummaryList", js.Array(value :_*))
-    
-    @scala.inline
-    def setCodeRepositorySummaryList(value: CodeRepositorySummaryList): Self = this.set("CodeRepositorySummaryList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

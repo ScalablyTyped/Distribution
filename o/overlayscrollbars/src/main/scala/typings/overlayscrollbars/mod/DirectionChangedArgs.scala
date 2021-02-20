@@ -1,11 +1,12 @@
 package typings.overlayscrollbars.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectionChangedArgs extends js.Object {
+trait DirectionChangedArgs extends StObject {
   
   var dir: String = js.native
   
@@ -20,24 +21,12 @@ object DirectionChangedArgs {
   }
   
   @scala.inline
-  implicit class DirectionChangedArgsOps[Self <: DirectionChangedArgs] (val x: Self) extends AnyVal {
+  implicit class DirectionChangedArgsMutableBuilder[Self <: DirectionChangedArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsRTL(value: Double): Self = this.set("isRTL", value.asInstanceOf[js.Any])
+    def setIsRTL(value: Double): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
   }
 }

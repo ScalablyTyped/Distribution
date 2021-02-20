@@ -1,11 +1,12 @@
 package typings.webidl2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParseOptions extends js.Object {
+trait ParseOptions extends StObject {
   
   /** Boolean indicating whether the result should include EOF node or not. */
   var concrete: js.UndefOr[Boolean] = js.native
@@ -22,30 +23,18 @@ object ParseOptions {
   }
   
   @scala.inline
-  implicit class ParseOptionsOps[Self <: ParseOptions] (val x: Self) extends AnyVal {
+  implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConcrete(value: Boolean): Self = StObject.set(x, "concrete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConcreteUndefined: Self = StObject.set(x, "concrete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcrete(value: Boolean): Self = this.set("concrete", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConcrete: Self = this.set("concrete", js.undefined)
-    
-    @scala.inline
-    def setSourceName(value: String): Self = this.set("sourceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceName: Self = this.set("sourceName", js.undefined)
+    def setSourceNameUndefined: Self = StObject.set(x, "sourceName", js.undefined)
   }
 }

@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,57 +58,45 @@ object ParamsResourceSpreadsheetsValuesBatchget {
   }
   
   @scala.inline
-  implicit class ParamsResourceSpreadsheetsValuesBatchgetOps[Self <: ParamsResourceSpreadsheetsValuesBatchget] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceSpreadsheetsValuesBatchgetMutableBuilder[Self <: ParamsResourceSpreadsheetsValuesBatchget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateTimeRenderOption(value: String): Self = StObject.set(x, "dateTimeRenderOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setDateTimeRenderOptionUndefined: Self = StObject.set(x, "dateTimeRenderOption", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setMajorDimension(value: String): Self = StObject.set(x, "majorDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateTimeRenderOption(value: String): Self = this.set("dateTimeRenderOption", value.asInstanceOf[js.Any])
+    def setMajorDimensionUndefined: Self = StObject.set(x, "majorDimension", js.undefined)
     
     @scala.inline
-    def deleteDateTimeRenderOption: Self = this.set("dateTimeRenderOption", js.undefined)
+    def setRanges(value: js.Array[String]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorDimension(value: String): Self = this.set("majorDimension", value.asInstanceOf[js.Any])
+    def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
     @scala.inline
-    def deleteMajorDimension: Self = this.set("majorDimension", js.undefined)
+    def setRangesVarargs(value: String*): Self = StObject.set(x, "ranges", js.Array(value :_*))
     
     @scala.inline
-    def setRangesVarargs(value: String*): Self = this.set("ranges", js.Array(value :_*))
+    def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRanges(value: js.Array[String]): Self = this.set("ranges", value.asInstanceOf[js.Any])
+    def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
     
     @scala.inline
-    def deleteRanges: Self = this.set("ranges", js.undefined)
+    def setValueRenderOption(value: String): Self = StObject.set(x, "valueRenderOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpreadsheetId(value: String): Self = this.set("spreadsheetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpreadsheetId: Self = this.set("spreadsheetId", js.undefined)
-    
-    @scala.inline
-    def setValueRenderOption(value: String): Self = this.set("valueRenderOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueRenderOption: Self = this.set("valueRenderOption", js.undefined)
+    def setValueRenderOptionUndefined: Self = StObject.set(x, "valueRenderOption", js.undefined)
   }
 }

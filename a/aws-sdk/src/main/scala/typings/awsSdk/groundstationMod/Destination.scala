@@ -1,11 +1,12 @@
 package typings.awsSdk.groundstationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Destination extends js.Object {
+trait Destination extends StObject {
   
   /**
     * Additional details for a Config, if type is dataflow endpoint or antenna demod decode.
@@ -36,42 +37,30 @@ object Destination {
   }
   
   @scala.inline
-  implicit class DestinationOps[Self <: Destination] (val x: Self) extends AnyVal {
+  implicit class DestinationMutableBuilder[Self <: Destination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigDetails(value: ConfigDetails): Self = StObject.set(x, "configDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigDetailsUndefined: Self = StObject.set(x, "configDetails", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigDetails(value: ConfigDetails): Self = this.set("configDetails", value.asInstanceOf[js.Any])
+    def setConfigIdUndefined: Self = StObject.set(x, "configId", js.undefined)
     
     @scala.inline
-    def deleteConfigDetails: Self = this.set("configDetails", js.undefined)
+    def setConfigType(value: ConfigCapabilityType): Self = StObject.set(x, "configType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigId(value: String): Self = this.set("configId", value.asInstanceOf[js.Any])
+    def setConfigTypeUndefined: Self = StObject.set(x, "configType", js.undefined)
     
     @scala.inline
-    def deleteConfigId: Self = this.set("configId", js.undefined)
+    def setDataflowDestinationRegion(value: String): Self = StObject.set(x, "dataflowDestinationRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigType(value: ConfigCapabilityType): Self = this.set("configType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigType: Self = this.set("configType", js.undefined)
-    
-    @scala.inline
-    def setDataflowDestinationRegion(value: String): Self = this.set("dataflowDestinationRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataflowDestinationRegion: Self = this.set("dataflowDestinationRegion", js.undefined)
+    def setDataflowDestinationRegionUndefined: Self = StObject.set(x, "dataflowDestinationRegion", js.undefined)
   }
 }

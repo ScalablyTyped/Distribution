@@ -21,6 +21,7 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.focusedCardChanged
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.focusedCellChanging
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.selectionChanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,12 +49,12 @@ trait BootstrapCardView extends BootstrapGridBase {
   
   def focus(): Unit = js.native
   
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def focusEditor(columnFieldNameOrId: String): Unit = js.native
   def focusEditor(columnIndex: Double): Unit = js.native
   def focusEditor(column: BootstrapCardViewColumn): Unit = js.native
   
-   // tslint:disable-line:unified-signatures unified-signatures
+  // tslint:disable-line:unified-signatures unified-signatures
   def getCardKey(visibleIndex: Double): String = js.native
   
   def getColumn(columnIndex: Double): BootstrapCardViewColumn | Null = js.native
@@ -64,18 +65,18 @@ trait BootstrapCardView extends BootstrapGridBase {
   
   def getColumnCount(): Double = js.native
   
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def getEditValue(columnFieldNameOrId: String): String = js.native
   def getEditValue(columnIndex: Double): String = js.native
   def getEditValue(column: BootstrapCardViewColumn): String = js.native
   
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def getEditor(columnFieldNameOrId: String): BootstrapClientEdit = js.native
   def getEditor(columnIndex: Double): BootstrapClientEdit = js.native
-   // tslint:disable-line:unified-signatures unified-signatures
+  // tslint:disable-line:unified-signatures unified-signatures
   def getEditor(column: BootstrapCardViewColumn): BootstrapClientEdit = js.native
   
-   // tslint:disable-line:unified-signatures unified-signatures
+  // tslint:disable-line:unified-signatures unified-signatures
   def getFocusedCardIndex(): Double = js.native
   
   def getFocusedCell(): BootstrapCardViewCellInfo | Null = js.native
@@ -108,24 +109,24 @@ trait BootstrapCardView extends BootstrapGridBase {
   
   def isNewCardEditing(): Boolean = js.native
   
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def moveColumn(columnFieldNameOrId: String): Unit = js.native
-   // tslint:disable-line:unified-signatures unified-signatures
+  // tslint:disable-line:unified-signatures unified-signatures
   def moveColumn(columnFieldNameOrId: String, moveToColumnVisibleIndex: Double): Unit = js.native
-   // tslint:disable-line:unified-signatures unified-signatures
+  // tslint:disable-line:unified-signatures unified-signatures
   def moveColumn(columnFieldNameOrId: String, moveToColumnVisibleIndex: Double, moveBefore: Boolean): Unit = js.native
   def moveColumn(columnIndex: Double): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def moveColumn(columnIndex: Double, moveToColumnVisibleIndex: Double): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def moveColumn(columnIndex: Double, moveToColumnVisibleIndex: Double, moveBefore: Boolean): Unit = js.native
   def moveColumn(column: BootstrapCardViewColumn): Unit = js.native
-   // tslint:disable-line:unified-signatures unified-signatures
+  // tslint:disable-line:unified-signatures unified-signatures
   def moveColumn(column: BootstrapCardViewColumn, moveToColumnVisibleIndex: Double): Unit = js.native
-   // tslint:disable-line:unified-signatures unified-signatures unified-signatures
+  // tslint:disable-line:unified-signatures unified-signatures unified-signatures
   def moveColumn(column: BootstrapCardViewColumn, moveToColumnVisibleIndex: Double, moveBefore: Boolean): Unit = js.native
   
-   // tslint:disable-line:unified-signatures unified-signatures unified-signatures
+  // tslint:disable-line:unified-signatures unified-signatures unified-signatures
   def nextPage(): Unit = js.native
   
   @JSName("off")
@@ -620,23 +621,23 @@ trait BootstrapCardView extends BootstrapGridBase {
   def selectCardOnPage(visibleIndex: Double): Unit = js.native
   def selectCardOnPage(visibleIndex: Double, selected: Boolean): Unit = js.native
   
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def selectCards(): Unit = js.native
   
   def selectCardsByKey(key: js.Any): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def selectCardsByKey(key: js.Any, selected: Boolean): Unit = js.native
   def selectCardsByKey(keys: js.Array[_]): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def selectCardsByKey(keys: js.Array[_], selected: Boolean): Unit = js.native
   
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def setEditValue(columnFieldNameOrId: String, value: String): Unit = js.native
   def setEditValue(columnIndex: Double, value: String): Unit = js.native
-   // tslint:disable-line:unified-signatures unified-signatures
+  // tslint:disable-line:unified-signatures unified-signatures
   def setEditValue(column: BootstrapCardViewColumn, value: String): Unit = js.native
   
-   // tslint:disable-line:unified-signatures unified-signatures
+  // tslint:disable-line:unified-signatures unified-signatures
   def setFilterEnabled(isFilterEnabled: Boolean): Unit = js.native
   
   def setFocusedCardIndex(visibleIndex: Double): Unit = js.native
@@ -651,30 +652,30 @@ trait BootstrapCardView extends BootstrapGridBase {
   
   def showFilterControl(): Unit = js.native
   
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def sortBy(columnFieldNameOrId: String): Unit = js.native
-   // tslint:disable-line:unified-signatures unified-signatures
+  // tslint:disable-line:unified-signatures unified-signatures
   def sortBy(columnFieldNameOrId: String, sortOrder: String): Unit = js.native
-   // tslint:disable-line:unified-signatures unified-signatures
+  // tslint:disable-line:unified-signatures unified-signatures
   def sortBy(columnFieldNameOrId: String, sortOrder: String, reset: Boolean): Unit = js.native
-   // tslint:disable-line:unified-signatures unified-signatures
+  // tslint:disable-line:unified-signatures unified-signatures
   def sortBy(columnFieldNameOrId: String, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
   def sortBy(columnIndex: Double): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def sortBy(columnIndex: Double, sortOrder: String): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def sortBy(columnIndex: Double, sortOrder: String, reset: Boolean): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def sortBy(columnIndex: Double, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
   def sortBy(column: BootstrapCardViewColumn): Unit = js.native
-   // tslint:disable-line:unified-signatures unified-signatures
+  // tslint:disable-line:unified-signatures unified-signatures
   def sortBy(column: BootstrapCardViewColumn, sortOrder: String): Unit = js.native
-   // tslint:disable-line:unified-signatures unified-signatures unified-signatures
+  // tslint:disable-line:unified-signatures unified-signatures unified-signatures
   def sortBy(column: BootstrapCardViewColumn, sortOrder: String, reset: Boolean): Unit = js.native
-   // tslint:disable-line:unified-signatures unified-signatures unified-signatures
+  // tslint:disable-line:unified-signatures unified-signatures unified-signatures
   def sortBy(column: BootstrapCardViewColumn, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
   
-   // tslint:disable-line:unified-signatures unified-signatures unified-signatures
+  // tslint:disable-line:unified-signatures unified-signatures unified-signatures
   def startEditCard(visibleIndex: Double): Unit = js.native
   
   def startEditCardByKey(key: js.Any): Unit = js.native
@@ -688,7 +689,7 @@ trait BootstrapCardView extends BootstrapGridBase {
   def unselectCardsByKey(key: js.Any): Unit = js.native
   def unselectCardsByKey(keys: js.Array[_]): Unit = js.native
   
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def unselectFilteredCards(): Unit = js.native
   
   def updateEdit(): Unit = js.native

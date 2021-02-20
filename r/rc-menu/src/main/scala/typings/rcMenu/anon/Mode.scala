@@ -1,11 +1,12 @@
 package typings.rcMenu.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mode extends js.Object {
+trait Mode extends StObject {
   
   var manualRef: js.Function0[Unit] = js.native
   
@@ -41,42 +42,30 @@ object Mode {
   }
   
   @scala.inline
-  implicit class ModeOps[Self <: Mode] (val x: Self) extends AnyVal {
+  implicit class ModeMutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setManualRef(value: () => Unit): Self = StObject.set(x, "manualRef", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnMouseEnter(value: () => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setManualRef(value: () => Unit): Self = this.set("manualRef", js.Any.fromFunction0(value))
+    def setOnMouseLeave(value: () => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setOnTitleClick(value: () => Unit): Self = StObject.set(x, "onTitleClick", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnMouseEnter(value: () => Unit): Self = this.set("onMouseEnter", js.Any.fromFunction0(value))
+    def setOnTitleMouseEnter(value: () => Unit): Self = StObject.set(x, "onTitleMouseEnter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnMouseLeave(value: () => Unit): Self = this.set("onMouseLeave", js.Any.fromFunction0(value))
+    def setOnTitleMouseLeave(value: () => Unit): Self = StObject.set(x, "onTitleMouseLeave", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnTitleClick(value: () => Unit): Self = this.set("onTitleClick", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnTitleMouseEnter(value: () => Unit): Self = this.set("onTitleMouseEnter", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnTitleMouseLeave(value: () => Unit): Self = this.set("onTitleMouseLeave", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.formatjsEcma402Abstract.numberMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Intl.NumberFormatOptions & @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/number.NumberFormatDigitOptions & {  localeMatcher :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/number.NumberFormatOptionsLocaleMatcher | undefined,   style :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/number.NumberFormatOptionsStyle | undefined,   compactDisplay :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/number.NumberFormatOptionsCompactDisplay | undefined,   currencyDisplay :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/number.NumberFormatOptionsCurrencyDisplay | undefined,   currencySign :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/number.NumberFormatOptionsCurrencySign | undefined,   notation :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/number.NumberFormatOptionsNotation | undefined,   signDisplay :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/number.NumberFormatOptionsSignDisplay | undefined,   unit :string | undefined,   unitDisplay :@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/number.NumberFormatOptionsUnitDisplay | undefined,   numberingSystem :string | undefined} */
 @js.native
-trait NumberFormatOptions extends js.Object {
+trait NumberFormatOptions extends StObject {
   
   var compactDisplay: js.UndefOr[String] with js.UndefOr[NumberFormatOptionsCompactDisplay] = js.native
   
@@ -60,96 +61,84 @@ object NumberFormatOptions {
   }
   
   @scala.inline
-  implicit class NumberFormatOptionsOps[Self <: NumberFormatOptions] (val x: Self) extends AnyVal {
+  implicit class NumberFormatOptionsMutableBuilder[Self <: NumberFormatOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompactDisplay(value: js.UndefOr[String] with js.UndefOr[NumberFormatOptionsCompactDisplay]): Self = StObject.set(x, "compactDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrencyDisplay(value: js.UndefOr[String] with js.UndefOr[NumberFormatOptionsCurrencyDisplay]): Self = StObject.set(x, "currencyDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompactDisplay(value: js.UndefOr[String] with js.UndefOr[NumberFormatOptionsCompactDisplay]): Self = this.set("compactDisplay", value.asInstanceOf[js.Any])
+    def setCurrencySign(value: js.UndefOr[String] with js.UndefOr[NumberFormatOptionsCurrencySign]): Self = StObject.set(x, "currencySign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyDisplay(value: js.UndefOr[String] with js.UndefOr[NumberFormatOptionsCurrencyDisplay]): Self = this.set("currencyDisplay", value.asInstanceOf[js.Any])
+    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
     @scala.inline
-    def setCurrencySign(value: js.UndefOr[String] with js.UndefOr[NumberFormatOptionsCurrencySign]): Self = this.set("currencySign", value.asInstanceOf[js.Any])
+    def setLocaleMatcher(value: js.UndefOr[String] with js.UndefOr[NumberFormatOptionsLocaleMatcher]): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocaleMatcher(value: js.UndefOr[String] with js.UndefOr[NumberFormatOptionsLocaleMatcher]): Self = this.set("localeMatcher", value.asInstanceOf[js.Any])
+    def setMaximumFractionDigits(value: Double): Self = StObject.set(x, "maximumFractionDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotation(value: js.UndefOr[String] with js.UndefOr[NumberFormatOptionsNotation]): Self = this.set("notation", value.asInstanceOf[js.Any])
+    def setMaximumFractionDigitsUndefined: Self = StObject.set(x, "maximumFractionDigits", js.undefined)
     
     @scala.inline
-    def setSignDisplay(value: js.UndefOr[String] with js.UndefOr[NumberFormatOptionsSignDisplay]): Self = this.set("signDisplay", value.asInstanceOf[js.Any])
+    def setMaximumSignificantDigits(value: Double): Self = StObject.set(x, "maximumSignificantDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: js.UndefOr[String] with js.UndefOr[NumberFormatOptionsStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setMaximumSignificantDigitsUndefined: Self = StObject.set(x, "maximumSignificantDigits", js.undefined)
     
     @scala.inline
-    def setUnitDisplay(value: js.UndefOr[String] with js.UndefOr[NumberFormatOptionsUnitDisplay]): Self = this.set("unitDisplay", value.asInstanceOf[js.Any])
+    def setMinimumFractionDigits(value: Double): Self = StObject.set(x, "minimumFractionDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setMinimumFractionDigitsUndefined: Self = StObject.set(x, "minimumFractionDigits", js.undefined)
     
     @scala.inline
-    def deleteCurrency: Self = this.set("currency", js.undefined)
+    def setMinimumIntegerDigits(value: Double): Self = StObject.set(x, "minimumIntegerDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumFractionDigits(value: Double): Self = this.set("maximumFractionDigits", value.asInstanceOf[js.Any])
+    def setMinimumIntegerDigitsUndefined: Self = StObject.set(x, "minimumIntegerDigits", js.undefined)
     
     @scala.inline
-    def deleteMaximumFractionDigits: Self = this.set("maximumFractionDigits", js.undefined)
+    def setMinimumSignificantDigits(value: Double): Self = StObject.set(x, "minimumSignificantDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumSignificantDigits(value: Double): Self = this.set("maximumSignificantDigits", value.asInstanceOf[js.Any])
+    def setMinimumSignificantDigitsUndefined: Self = StObject.set(x, "minimumSignificantDigits", js.undefined)
     
     @scala.inline
-    def deleteMaximumSignificantDigits: Self = this.set("maximumSignificantDigits", js.undefined)
+    def setNotation(value: js.UndefOr[String] with js.UndefOr[NumberFormatOptionsNotation]): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumFractionDigits(value: Double): Self = this.set("minimumFractionDigits", value.asInstanceOf[js.Any])
+    def setNumberingSystem(value: String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumFractionDigits: Self = this.set("minimumFractionDigits", js.undefined)
+    def setNumberingSystemUndefined: Self = StObject.set(x, "numberingSystem", js.undefined)
     
     @scala.inline
-    def setMinimumIntegerDigits(value: Double): Self = this.set("minimumIntegerDigits", value.asInstanceOf[js.Any])
+    def setSignDisplay(value: js.UndefOr[String] with js.UndefOr[NumberFormatOptionsSignDisplay]): Self = StObject.set(x, "signDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumIntegerDigits: Self = this.set("minimumIntegerDigits", js.undefined)
+    def setStyle(value: js.UndefOr[String] with js.UndefOr[NumberFormatOptionsStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumSignificantDigits(value: Double): Self = this.set("minimumSignificantDigits", value.asInstanceOf[js.Any])
+    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumSignificantDigits: Self = this.set("minimumSignificantDigits", js.undefined)
+    def setUnitDisplay(value: js.UndefOr[String] with js.UndefOr[NumberFormatOptionsUnitDisplay]): Self = StObject.set(x, "unitDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberingSystem(value: String): Self = this.set("numberingSystem", value.asInstanceOf[js.Any])
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
     @scala.inline
-    def deleteNumberingSystem: Self = this.set("numberingSystem", js.undefined)
+    def setUseGrouping(value: Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
-    
-    @scala.inline
-    def setUseGrouping(value: Boolean): Self = this.set("useGrouping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseGrouping: Self = this.set("useGrouping", js.undefined)
+    def setUseGroupingUndefined: Self = StObject.set(x, "useGrouping", js.undefined)
   }
 }

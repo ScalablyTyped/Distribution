@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Queue extends js.Object {
+trait Queue extends StObject {
   
   /**
     * An identifier for this resource that is unique within all of AWS.
@@ -71,81 +72,69 @@ object Queue {
   }
   
   @scala.inline
-  implicit class QueueOps[Self <: Queue] (val x: Self) extends AnyVal {
+  implicit class QueueMutableBuilder[Self <: Queue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedAt(value: timestampUnix): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     @scala.inline
-    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setCreatedAt(value: timestampUnix): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    def setLastUpdated(value: timestampUnix): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
     
     @scala.inline
-    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setPricingPlan(value: PricingPlan): Self = StObject.set(x, "PricingPlan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdated(value: timestampUnix): Self = this.set("LastUpdated", value.asInstanceOf[js.Any])
+    def setPricingPlanUndefined: Self = StObject.set(x, "PricingPlan", js.undefined)
     
     @scala.inline
-    def deleteLastUpdated: Self = this.set("LastUpdated", js.undefined)
+    def setProgressingJobsCount(value: integer): Self = StObject.set(x, "ProgressingJobsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPricingPlan(value: PricingPlan): Self = this.set("PricingPlan", value.asInstanceOf[js.Any])
+    def setProgressingJobsCountUndefined: Self = StObject.set(x, "ProgressingJobsCount", js.undefined)
     
     @scala.inline
-    def deletePricingPlan: Self = this.set("PricingPlan", js.undefined)
+    def setReservationPlan(value: ReservationPlan): Self = StObject.set(x, "ReservationPlan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressingJobsCount(value: integer): Self = this.set("ProgressingJobsCount", value.asInstanceOf[js.Any])
+    def setReservationPlanUndefined: Self = StObject.set(x, "ReservationPlan", js.undefined)
     
     @scala.inline
-    def deleteProgressingJobsCount: Self = this.set("ProgressingJobsCount", js.undefined)
+    def setStatus(value: QueueStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservationPlan(value: ReservationPlan): Self = this.set("ReservationPlan", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteReservationPlan: Self = this.set("ReservationPlan", js.undefined)
+    def setSubmittedJobsCount(value: integer): Self = StObject.set(x, "SubmittedJobsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: QueueStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setSubmittedJobsCountUndefined: Self = StObject.set(x, "SubmittedJobsCount", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmittedJobsCount(value: integer): Self = this.set("SubmittedJobsCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubmittedJobsCount: Self = this.set("SubmittedJobsCount", js.undefined)
-    
-    @scala.inline
-    def setType(value: Type): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

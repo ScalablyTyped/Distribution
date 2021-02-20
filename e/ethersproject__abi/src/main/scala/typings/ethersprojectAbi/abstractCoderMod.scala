@@ -7,18 +7,16 @@ import typings.ethersprojectBignumber.mod.BigNumber
 import typings.ethersprojectBytes.mod.BytesLike
 import typings.std.ReadonlyArray
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ethersproject/abi/lib/coders/abstract-coder", JSImport.Namespace)
-@js.native
-object abstractCoderMod extends js.Object {
+object abstractCoderMod {
   
-  def checkResultErrors(result: Result): js.Array[Error] = js.native
-  
+  @JSImport("@ethersproject/abi/lib/coders/abstract-coder", "Coder")
   @js.native
-  abstract class Coder protected () extends js.Object {
+  abstract class Coder protected () extends StObject {
     def this(name: String, `type`: String, localName: String, dynamic: Boolean) = this()
     
     def _throwError(message: String, value: js.Any): Unit = js.native
@@ -36,8 +34,9 @@ object abstractCoderMod extends js.Object {
     val `type`: String = js.native
   }
   
+  @JSImport("@ethersproject/abi/lib/coders/abstract-coder", "Reader")
   @js.native
-  class Reader protected () extends js.Object {
+  class Reader protected () extends StObject {
     def this(data: BytesLike) = this()
     def this(data: BytesLike, wordSize: Double) = this()
     def this(data: BytesLike, wordSize: js.UndefOr[scala.Nothing], coerceFunc: CoerceFunc) = this()
@@ -66,19 +65,16 @@ object abstractCoderMod extends js.Object {
     val wordSize: Double = js.native
   }
   /* static members */
-  @js.native
-  object Reader extends js.Object {
+  object Reader {
     
+    @JSImport("@ethersproject/abi/lib/coders/abstract-coder", "Reader.coerce")
+    @js.native
     def coerce(name: String, value: js.Any): js.Any = js.native
   }
   
+  @JSImport("@ethersproject/abi/lib/coders/abstract-coder", "Writer")
   @js.native
-  trait Result
-    extends ReadonlyArray[js.Any]
-       with /* key */ StringDictionary[js.Any]
-  
-  @js.native
-  class Writer () extends js.Object {
+  class Writer () extends StObject {
     def this(wordSize: Double) = this()
     
     var _data: Uint8Array = js.native
@@ -102,5 +98,14 @@ object abstractCoderMod extends js.Object {
     def writeValue(value: BigNumberish): Double = js.native
   }
   
+  @JSImport("@ethersproject/abi/lib/coders/abstract-coder", "checkResultErrors")
+  @js.native
+  def checkResultErrors(result: Result): js.Array[Error] = js.native
+  
   type CoerceFunc = js.Function2[/* type */ String, /* value */ js.Any, js.Any]
+  
+  @js.native
+  trait Result
+    extends ReadonlyArray[js.Any]
+       with /* key */ StringDictionary[js.Any]
 }

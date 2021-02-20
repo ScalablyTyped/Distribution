@@ -1,11 +1,12 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBackupPlanVersionsOutput extends js.Object {
+trait ListBackupPlanVersionsOutput extends StObject {
   
   /**
     * An array of version list items containing metadata about your backup plans.
@@ -26,33 +27,21 @@ object ListBackupPlanVersionsOutput {
   }
   
   @scala.inline
-  implicit class ListBackupPlanVersionsOutputOps[Self <: ListBackupPlanVersionsOutput] (val x: Self) extends AnyVal {
+  implicit class ListBackupPlanVersionsOutputMutableBuilder[Self <: ListBackupPlanVersionsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupPlanVersionsList(value: BackupPlanVersionsList): Self = StObject.set(x, "BackupPlanVersionsList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupPlanVersionsListUndefined: Self = StObject.set(x, "BackupPlanVersionsList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackupPlanVersionsListVarargs(value: BackupPlansListMember*): Self = StObject.set(x, "BackupPlanVersionsList", js.Array(value :_*))
     
     @scala.inline
-    def setBackupPlanVersionsListVarargs(value: BackupPlansListMember*): Self = this.set("BackupPlanVersionsList", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupPlanVersionsList(value: BackupPlanVersionsList): Self = this.set("BackupPlanVersionsList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBackupPlanVersionsList: Self = this.set("BackupPlanVersionsList", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

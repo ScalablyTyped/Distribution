@@ -1,6 +1,7 @@
 package typings.appleMapkitJsBrowser.mapkit
 
 import typings.appleMapkitJsBrowser.mapkit.Directions.Transport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A single route between a requested start and end point.
   */
 @js.native
-trait RouteStep extends js.Object {
+trait RouteStep extends StObject {
   
   /**
     * The step distance in meters.
@@ -40,33 +41,21 @@ object RouteStep {
   }
   
   @scala.inline
-  implicit class RouteStepOps[Self <: RouteStep] (val x: Self) extends AnyVal {
+  implicit class RouteStepMutableBuilder[Self <: RouteStep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstructions(value: String): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: js.Array[Coordinate]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setPathVarargs(value: Coordinate*): Self = StObject.set(x, "path", js.Array(value :_*))
     
     @scala.inline
-    def setInstructions(value: String): Self = this.set("instructions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPathVarargs(value: Coordinate*): Self = this.set("path", js.Array(value :_*))
-    
-    @scala.inline
-    def setPath(value: js.Array[Coordinate]): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransportType(value: Transport): Self = this.set("transportType", value.asInstanceOf[js.Any])
+    def setTransportType(value: Transport): Self = StObject.set(x, "transportType", value.asInstanceOf[js.Any])
   }
 }

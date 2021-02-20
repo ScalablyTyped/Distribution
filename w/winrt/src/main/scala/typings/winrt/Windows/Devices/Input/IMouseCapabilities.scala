@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Devices.Input
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMouseCapabilities extends js.Object {
+trait IMouseCapabilities extends StObject {
   
   var horizontalWheelPresent: Double = js.native
   
@@ -32,33 +33,21 @@ object IMouseCapabilities {
   }
   
   @scala.inline
-  implicit class IMouseCapabilitiesOps[Self <: IMouseCapabilities] (val x: Self) extends AnyVal {
+  implicit class IMouseCapabilitiesMutableBuilder[Self <: IMouseCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHorizontalWheelPresent(value: Double): Self = StObject.set(x, "horizontalWheelPresent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMousePresent(value: Double): Self = StObject.set(x, "mousePresent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumberOfButtons(value: Double): Self = StObject.set(x, "numberOfButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalWheelPresent(value: Double): Self = this.set("horizontalWheelPresent", value.asInstanceOf[js.Any])
+    def setSwapButtons(value: Double): Self = StObject.set(x, "swapButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMousePresent(value: Double): Self = this.set("mousePresent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumberOfButtons(value: Double): Self = this.set("numberOfButtons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSwapButtons(value: Double): Self = this.set("swapButtons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticalWheelPresent(value: Double): Self = this.set("verticalWheelPresent", value.asInstanceOf[js.Any])
+    def setVerticalWheelPresent(value: Double): Self = StObject.set(x, "verticalWheelPresent", value.asInstanceOf[js.Any])
   }
 }

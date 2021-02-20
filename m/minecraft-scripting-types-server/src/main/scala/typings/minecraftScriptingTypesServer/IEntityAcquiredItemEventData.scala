@@ -2,6 +2,7 @@ package typings.minecraftScriptingTypesServer
 
 import typings.minecraftScriptingTypesShared.IEntity
 import typings.minecraftScriptingTypesShared.IItemStack
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This event is triggered whenever an entity acquires an item.
   */
 @js.native
-trait IEntityAcquiredItemEventData extends js.Object {
+trait IEntityAcquiredItemEventData extends StObject {
   
   /**
     * The total number of items acquired by the entity during this event
@@ -52,33 +53,21 @@ object IEntityAcquiredItemEventData {
   }
   
   @scala.inline
-  implicit class IEntityAcquiredItemEventDataOps[Self <: IEntityAcquiredItemEventData] (val x: Self) extends AnyVal {
+  implicit class IEntityAcquiredItemEventDataMutableBuilder[Self <: IEntityAcquiredItemEventData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcquired_amount(value: Double): Self = StObject.set(x, "acquired_amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcquisition_method(value: String): Self = StObject.set(x, "acquisition_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcquired_amount(value: Double): Self = this.set("acquired_amount", value.asInstanceOf[js.Any])
+    def setItem_stack(value: IItemStack): Self = StObject.set(x, "item_stack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcquisition_method(value: String): Self = this.set("acquisition_method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEntity(value: IEntity): Self = this.set("entity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItem_stack(value: IItemStack): Self = this.set("item_stack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecondary_entity(value: IEntity): Self = this.set("secondary_entity", value.asInstanceOf[js.Any])
+    def setSecondary_entity(value: IEntity): Self = StObject.set(x, "secondary_entity", value.asInstanceOf[js.Any])
   }
 }

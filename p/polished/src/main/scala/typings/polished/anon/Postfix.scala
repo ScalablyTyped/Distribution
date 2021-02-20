@@ -1,12 +1,13 @@
 package typings.polished.anon
 
 import typings.polished.polishedStrings.Exclamationmark
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Postfix extends js.Object {
+trait Postfix extends StObject {
   
   var postfix: ArgCount = js.native
   
@@ -23,27 +24,15 @@ object Postfix {
   }
   
   @scala.inline
-  implicit class PostfixOps[Self <: Postfix] (val x: Self) extends AnyVal {
+  implicit class PostfixMutableBuilder[Self <: Postfix] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPostfix(value: ArgCount): Self = StObject.set(x, "postfix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegSymbol(value: Exclamationmark): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPostfix(value: ArgCount): Self = this.set("postfix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegSymbol(value: Exclamationmark): Self = this.set("regSymbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbol(value: Exclamationmark): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    def setSymbol(value: Exclamationmark): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

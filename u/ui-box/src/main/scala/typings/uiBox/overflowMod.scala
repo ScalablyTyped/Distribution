@@ -4,19 +4,26 @@ import typings.uiBox.typesEnhancersMod.PropAliases
 import typings.uiBox.typesEnhancersMod.PropEnhancers
 import typings.uiBox.typesEnhancersMod.PropTypesMapping
 import typings.uiBox.typesEnhancersMod.PropValidators
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ui-box/dist/src/enhancers/overflow", JSImport.Namespace)
-@js.native
-object overflowMod extends js.Object {
+object overflowMod {
   
+  @JSImport("ui-box/dist/src/enhancers/overflow", "propAliases")
+  @js.native
   val propAliases: PropAliases = js.native
   
+  @JSImport("ui-box/dist/src/enhancers/overflow", "propEnhancers")
+  @js.native
   val propEnhancers: PropEnhancers = js.native
   
+  @JSImport("ui-box/dist/src/enhancers/overflow", "propTypes")
+  @js.native
   val propTypes: PropTypesMapping = js.native
   
+  @JSImport("ui-box/dist/src/enhancers/overflow", "propValidators")
+  @js.native
   val propValidators: PropValidators = js.native
 }

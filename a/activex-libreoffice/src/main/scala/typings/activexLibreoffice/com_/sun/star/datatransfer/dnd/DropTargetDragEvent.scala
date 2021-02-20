@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.datatransfer.dnd
 
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,33 +59,21 @@ object DropTargetDragEvent {
   }
   
   @scala.inline
-  implicit class DropTargetDragEventOps[Self <: DropTargetDragEvent] (val x: Self) extends AnyVal {
+  implicit class DropTargetDragEventMutableBuilder[Self <: DropTargetDragEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: XDropTargetDragContext): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDropAction(value: Double): Self = StObject.set(x, "DropAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocationX(value: Double): Self = StObject.set(x, "LocationX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: XDropTargetDragContext): Self = this.set("Context", value.asInstanceOf[js.Any])
+    def setLocationY(value: Double): Self = StObject.set(x, "LocationY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropAction(value: Double): Self = this.set("DropAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocationX(value: Double): Self = this.set("LocationX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocationY(value: Double): Self = this.set("LocationY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceActions(value: Double): Self = this.set("SourceActions", value.asInstanceOf[js.Any])
+    def setSourceActions(value: Double): Self = StObject.set(x, "SourceActions", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchLayerProperties extends js.Object {
+trait SearchLayerProperties extends StObject {
   
   /**
     * The field to use for search.
@@ -37,36 +38,24 @@ object SearchLayerProperties {
   }
   
   @scala.inline
-  implicit class SearchLayerPropertiesOps[Self <: SearchLayerProperties] (val x: Self) extends AnyVal {
+  implicit class SearchLayerPropertiesMutableBuilder[Self <: SearchLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setField(value: SearchLayerFieldProperties): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: SearchLayerFieldProperties): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setSubLayer(value: Double): Self = StObject.set(x, "subLayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setSubLayer(value: Double): Self = this.set("subLayer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubLayer: Self = this.set("subLayer", js.undefined)
+    def setSubLayerUndefined: Self = StObject.set(x, "subLayer", js.undefined)
   }
 }

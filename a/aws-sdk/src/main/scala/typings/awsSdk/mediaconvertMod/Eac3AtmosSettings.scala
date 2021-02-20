@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Eac3AtmosSettings extends js.Object {
+trait Eac3AtmosSettings extends StObject {
   
   /**
     * Specify the average bitrate in bits per second.
@@ -95,108 +96,96 @@ object Eac3AtmosSettings {
   }
   
   @scala.inline
-  implicit class Eac3AtmosSettingsOps[Self <: Eac3AtmosSettings] (val x: Self) extends AnyVal {
+  implicit class Eac3AtmosSettingsMutableBuilder[Self <: Eac3AtmosSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitrate(value: integerMin384000Max768000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBitstreamMode(value: Eac3AtmosBitstreamMode): Self = StObject.set(x, "BitstreamMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitrate(value: integerMin384000Max768000): Self = this.set("Bitrate", value.asInstanceOf[js.Any])
+    def setBitstreamModeUndefined: Self = StObject.set(x, "BitstreamMode", js.undefined)
     
     @scala.inline
-    def deleteBitrate: Self = this.set("Bitrate", js.undefined)
+    def setCodingMode(value: Eac3AtmosCodingMode): Self = StObject.set(x, "CodingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitstreamMode(value: Eac3AtmosBitstreamMode): Self = this.set("BitstreamMode", value.asInstanceOf[js.Any])
+    def setCodingModeUndefined: Self = StObject.set(x, "CodingMode", js.undefined)
     
     @scala.inline
-    def deleteBitstreamMode: Self = this.set("BitstreamMode", js.undefined)
+    def setDialogueIntelligence(value: Eac3AtmosDialogueIntelligence): Self = StObject.set(x, "DialogueIntelligence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodingMode(value: Eac3AtmosCodingMode): Self = this.set("CodingMode", value.asInstanceOf[js.Any])
+    def setDialogueIntelligenceUndefined: Self = StObject.set(x, "DialogueIntelligence", js.undefined)
     
     @scala.inline
-    def deleteCodingMode: Self = this.set("CodingMode", js.undefined)
+    def setDynamicRangeCompressionLine(value: Eac3AtmosDynamicRangeCompressionLine): Self = StObject.set(x, "DynamicRangeCompressionLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDialogueIntelligence(value: Eac3AtmosDialogueIntelligence): Self = this.set("DialogueIntelligence", value.asInstanceOf[js.Any])
+    def setDynamicRangeCompressionLineUndefined: Self = StObject.set(x, "DynamicRangeCompressionLine", js.undefined)
     
     @scala.inline
-    def deleteDialogueIntelligence: Self = this.set("DialogueIntelligence", js.undefined)
+    def setDynamicRangeCompressionRf(value: Eac3AtmosDynamicRangeCompressionRf): Self = StObject.set(x, "DynamicRangeCompressionRf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicRangeCompressionLine(value: Eac3AtmosDynamicRangeCompressionLine): Self = this.set("DynamicRangeCompressionLine", value.asInstanceOf[js.Any])
+    def setDynamicRangeCompressionRfUndefined: Self = StObject.set(x, "DynamicRangeCompressionRf", js.undefined)
     
     @scala.inline
-    def deleteDynamicRangeCompressionLine: Self = this.set("DynamicRangeCompressionLine", js.undefined)
+    def setLoRoCenterMixLevel(value: doubleMinNegative6Max3): Self = StObject.set(x, "LoRoCenterMixLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicRangeCompressionRf(value: Eac3AtmosDynamicRangeCompressionRf): Self = this.set("DynamicRangeCompressionRf", value.asInstanceOf[js.Any])
+    def setLoRoCenterMixLevelUndefined: Self = StObject.set(x, "LoRoCenterMixLevel", js.undefined)
     
     @scala.inline
-    def deleteDynamicRangeCompressionRf: Self = this.set("DynamicRangeCompressionRf", js.undefined)
+    def setLoRoSurroundMixLevel(value: doubleMinNegative60MaxNegative1): Self = StObject.set(x, "LoRoSurroundMixLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoRoCenterMixLevel(value: doubleMinNegative6Max3): Self = this.set("LoRoCenterMixLevel", value.asInstanceOf[js.Any])
+    def setLoRoSurroundMixLevelUndefined: Self = StObject.set(x, "LoRoSurroundMixLevel", js.undefined)
     
     @scala.inline
-    def deleteLoRoCenterMixLevel: Self = this.set("LoRoCenterMixLevel", js.undefined)
+    def setLtRtCenterMixLevel(value: doubleMinNegative6Max3): Self = StObject.set(x, "LtRtCenterMixLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoRoSurroundMixLevel(value: doubleMinNegative60MaxNegative1): Self = this.set("LoRoSurroundMixLevel", value.asInstanceOf[js.Any])
+    def setLtRtCenterMixLevelUndefined: Self = StObject.set(x, "LtRtCenterMixLevel", js.undefined)
     
     @scala.inline
-    def deleteLoRoSurroundMixLevel: Self = this.set("LoRoSurroundMixLevel", js.undefined)
+    def setLtRtSurroundMixLevel(value: doubleMinNegative60MaxNegative1): Self = StObject.set(x, "LtRtSurroundMixLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLtRtCenterMixLevel(value: doubleMinNegative6Max3): Self = this.set("LtRtCenterMixLevel", value.asInstanceOf[js.Any])
+    def setLtRtSurroundMixLevelUndefined: Self = StObject.set(x, "LtRtSurroundMixLevel", js.undefined)
     
     @scala.inline
-    def deleteLtRtCenterMixLevel: Self = this.set("LtRtCenterMixLevel", js.undefined)
+    def setMeteringMode(value: Eac3AtmosMeteringMode): Self = StObject.set(x, "MeteringMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLtRtSurroundMixLevel(value: doubleMinNegative60MaxNegative1): Self = this.set("LtRtSurroundMixLevel", value.asInstanceOf[js.Any])
+    def setMeteringModeUndefined: Self = StObject.set(x, "MeteringMode", js.undefined)
     
     @scala.inline
-    def deleteLtRtSurroundMixLevel: Self = this.set("LtRtSurroundMixLevel", js.undefined)
+    def setSampleRate(value: integerMin48000Max48000): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeteringMode(value: Eac3AtmosMeteringMode): Self = this.set("MeteringMode", value.asInstanceOf[js.Any])
+    def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
     
     @scala.inline
-    def deleteMeteringMode: Self = this.set("MeteringMode", js.undefined)
+    def setSpeechThreshold(value: integerMin1Max100): Self = StObject.set(x, "SpeechThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampleRate(value: integerMin48000Max48000): Self = this.set("SampleRate", value.asInstanceOf[js.Any])
+    def setSpeechThresholdUndefined: Self = StObject.set(x, "SpeechThreshold", js.undefined)
     
     @scala.inline
-    def deleteSampleRate: Self = this.set("SampleRate", js.undefined)
+    def setStereoDownmix(value: Eac3AtmosStereoDownmix): Self = StObject.set(x, "StereoDownmix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeechThreshold(value: integerMin1Max100): Self = this.set("SpeechThreshold", value.asInstanceOf[js.Any])
+    def setStereoDownmixUndefined: Self = StObject.set(x, "StereoDownmix", js.undefined)
     
     @scala.inline
-    def deleteSpeechThreshold: Self = this.set("SpeechThreshold", js.undefined)
+    def setSurroundExMode(value: Eac3AtmosSurroundExMode): Self = StObject.set(x, "SurroundExMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStereoDownmix(value: Eac3AtmosStereoDownmix): Self = this.set("StereoDownmix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStereoDownmix: Self = this.set("StereoDownmix", js.undefined)
-    
-    @scala.inline
-    def setSurroundExMode(value: Eac3AtmosSurroundExMode): Self = this.set("SurroundExMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSurroundExMode: Self = this.set("SurroundExMode", js.undefined)
+    def setSurroundExModeUndefined: Self = StObject.set(x, "SurroundExMode", js.undefined)
   }
 }

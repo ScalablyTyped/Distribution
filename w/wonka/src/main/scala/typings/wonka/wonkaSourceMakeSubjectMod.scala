@@ -1,13 +1,14 @@
 package typings.wonka
 
 import typings.wonka.wonkaTypesMod.Subject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonka/src/sources/wonka_source_makeSubject", JSImport.Namespace)
-@js.native
-object wonkaSourceMakeSubjectMod extends js.Object {
+object wonkaSourceMakeSubjectMod {
   
+  @JSImport("wonka/src/sources/wonka_source_makeSubject", "makeSubject")
+  @js.native
   def makeSubject[A](): Subject[A] = js.native
 }

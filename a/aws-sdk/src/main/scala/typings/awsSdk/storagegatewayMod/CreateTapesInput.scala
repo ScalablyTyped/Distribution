@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateTapesInput extends js.Object {
+trait CreateTapesInput extends StObject {
   
   /**
     * A unique identifier that you use to retry a request. If you retry a request, use the same ClientToken you specified in the initial request.  Using the same ClientToken prevents creating the tape multiple times. 
@@ -72,66 +73,54 @@ object CreateTapesInput {
   }
   
   @scala.inline
-  implicit class CreateTapesInputOps[Self <: CreateTapesInput] (val x: Self) extends AnyVal {
+  implicit class CreateTapesInputMutableBuilder[Self <: CreateTapesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKMSEncrypted(value: Boolean): Self = StObject.set(x, "KMSEncrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: ClientToken): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    def setKMSEncryptedUndefined: Self = StObject.set(x, "KMSEncrypted", js.undefined)
     
     @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    def setKMSKey(value: KMSKey): Self = StObject.set(x, "KMSKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumTapesToCreate(value: NumTapesToCreate): Self = this.set("NumTapesToCreate", value.asInstanceOf[js.Any])
+    def setKMSKeyUndefined: Self = StObject.set(x, "KMSKey", js.undefined)
     
     @scala.inline
-    def setTapeBarcodePrefix(value: TapeBarcodePrefix): Self = this.set("TapeBarcodePrefix", value.asInstanceOf[js.Any])
+    def setNumTapesToCreate(value: NumTapesToCreate): Self = StObject.set(x, "NumTapesToCreate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTapeSizeInBytes(value: TapeSize): Self = this.set("TapeSizeInBytes", value.asInstanceOf[js.Any])
+    def setPoolId(value: PoolId): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKMSEncrypted(value: Boolean): Self = this.set("KMSEncrypted", value.asInstanceOf[js.Any])
+    def setPoolIdUndefined: Self = StObject.set(x, "PoolId", js.undefined)
     
     @scala.inline
-    def deleteKMSEncrypted: Self = this.set("KMSEncrypted", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKMSKey(value: KMSKey): Self = this.set("KMSKey", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteKMSKey: Self = this.set("KMSKey", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setPoolId(value: PoolId): Self = this.set("PoolId", value.asInstanceOf[js.Any])
+    def setTapeBarcodePrefix(value: TapeBarcodePrefix): Self = StObject.set(x, "TapeBarcodePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePoolId: Self = this.set("PoolId", js.undefined)
+    def setTapeSizeInBytes(value: TapeSize): Self = StObject.set(x, "TapeSizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setWorm(value: scala.Boolean): Self = StObject.set(x, "Worm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setWorm(value: scala.Boolean): Self = this.set("Worm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorm: Self = this.set("Worm", js.undefined)
+    def setWormUndefined: Self = StObject.set(x, "Worm", js.undefined)
   }
 }

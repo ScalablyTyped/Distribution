@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.chart2.data
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,24 +33,12 @@ object XNumericalDataSequence {
   }
   
   @scala.inline
-  implicit class XNumericalDataSequenceOps[Self <: XNumericalDataSequence] (val x: Self) extends AnyVal {
+  implicit class XNumericalDataSequenceMutableBuilder[Self <: XNumericalDataSequence] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetNumericalData(value: () => SafeArray[Double]): Self = StObject.set(x, "getNumericalData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNumericalData(value: SafeArray[Double]): Self = this.set("NumericalData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetNumericalData(value: () => SafeArray[Double]): Self = this.set("getNumericalData", js.Any.fromFunction0(value))
+    def setNumericalData(value: SafeArray[Double]): Self = StObject.set(x, "NumericalData", value.asInstanceOf[js.Any])
   }
 }

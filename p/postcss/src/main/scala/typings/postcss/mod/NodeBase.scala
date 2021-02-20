@@ -1,11 +1,12 @@
 package typings.postcss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeBase extends js.Object {
+trait NodeBase extends StObject {
   
   def after(newNode: String): this.type = js.native
   def after(newNode: js.Array[Node]): this.type = js.native

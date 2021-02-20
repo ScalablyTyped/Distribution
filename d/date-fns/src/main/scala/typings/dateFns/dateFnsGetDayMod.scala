@@ -8,18 +8,20 @@ import typings.dateFns.dateFnsNumbers.`4`
 import typings.dateFns.dateFnsNumbers.`5`
 import typings.dateFns.dateFnsNumbers.`6`
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/getDay", JSImport.Namespace)
-@js.native
-object dateFnsGetDayMod extends js.Object {
+object dateFnsGetDayMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/getDay", JSImport.Default)
+    @js.native
     def apply(date: Double): `0` | `1` | `2` | `3` | `4` | `5` | `6` = js.native
+    @JSImport("date-fns/getDay", JSImport.Default)
+    @js.native
     def apply(date: Date): `0` | `1` | `2` | `3` | `4` | `5` | `6` = js.native
   }
 }

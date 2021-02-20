@@ -1,11 +1,12 @@
 package typings.awsSdk.wafregionalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRateBasedRuleManagedKeysResponse extends js.Object {
+trait GetRateBasedRuleManagedKeysResponse extends StObject {
   
   /**
     * An array of IP addresses that currently are blocked by the specified RateBasedRule. 
@@ -26,33 +27,21 @@ object GetRateBasedRuleManagedKeysResponse {
   }
   
   @scala.inline
-  implicit class GetRateBasedRuleManagedKeysResponseOps[Self <: GetRateBasedRuleManagedKeysResponse] (val x: Self) extends AnyVal {
+  implicit class GetRateBasedRuleManagedKeysResponseMutableBuilder[Self <: GetRateBasedRuleManagedKeysResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setManagedKeys(value: ManagedKeys): Self = StObject.set(x, "ManagedKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManagedKeysUndefined: Self = StObject.set(x, "ManagedKeys", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManagedKeysVarargs(value: ManagedKey*): Self = StObject.set(x, "ManagedKeys", js.Array(value :_*))
     
     @scala.inline
-    def setManagedKeysVarargs(value: ManagedKey*): Self = this.set("ManagedKeys", js.Array(value :_*))
+    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagedKeys(value: ManagedKeys): Self = this.set("ManagedKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManagedKeys: Self = this.set("ManagedKeys", js.undefined)
-    
-    @scala.inline
-    def setNextMarker(value: NextMarker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

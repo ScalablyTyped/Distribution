@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,39 +40,27 @@ object EpisodeOfCareDiagnosis {
   }
   
   @scala.inline
-  implicit class EpisodeOfCareDiagnosisOps[Self <: EpisodeOfCareDiagnosis] (val x: Self) extends AnyVal {
+  implicit class EpisodeOfCareDiagnosisMutableBuilder[Self <: EpisodeOfCareDiagnosis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: Reference): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRank(value: positiveInt): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
     
     @scala.inline
-    def setCondition(value: Reference): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setRole(value: CodeableConcept): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_rank(value: Element): Self = this.set("_rank", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def delete_rank: Self = this.set("_rank", js.undefined)
+    def set_rank(value: Element): Self = StObject.set(x, "_rank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRank(value: positiveInt): Self = this.set("rank", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRank: Self = this.set("rank", js.undefined)
-    
-    @scala.inline
-    def setRole(value: CodeableConcept): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def set_rankUndefined: Self = StObject.set(x, "_rank", js.undefined)
   }
 }

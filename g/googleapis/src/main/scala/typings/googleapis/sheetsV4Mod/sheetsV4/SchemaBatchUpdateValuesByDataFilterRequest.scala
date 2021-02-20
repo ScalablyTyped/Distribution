@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The request for updating more than one range of values in a spreadsheet.
   */
 @js.native
-trait SchemaBatchUpdateValuesByDataFilterRequest extends js.Object {
+trait SchemaBatchUpdateValuesByDataFilterRequest extends StObject {
   
   /**
     * The new values to apply to the spreadsheet.  If more than one range is
@@ -56,51 +57,39 @@ object SchemaBatchUpdateValuesByDataFilterRequest {
   }
   
   @scala.inline
-  implicit class SchemaBatchUpdateValuesByDataFilterRequestOps[Self <: SchemaBatchUpdateValuesByDataFilterRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaBatchUpdateValuesByDataFilterRequestMutableBuilder[Self <: SchemaBatchUpdateValuesByDataFilterRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Array[SchemaDataFilterValueRange]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataVarargs(value: SchemaDataFilterValueRange*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setDataVarargs(value: SchemaDataFilterValueRange*): Self = this.set("data", js.Array(value :_*))
+    def setIncludeValuesInResponse(value: Boolean): Self = StObject.set(x, "includeValuesInResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[SchemaDataFilterValueRange]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setIncludeValuesInResponseUndefined: Self = StObject.set(x, "includeValuesInResponse", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setResponseDateTimeRenderOption(value: String): Self = StObject.set(x, "responseDateTimeRenderOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeValuesInResponse(value: Boolean): Self = this.set("includeValuesInResponse", value.asInstanceOf[js.Any])
+    def setResponseDateTimeRenderOptionUndefined: Self = StObject.set(x, "responseDateTimeRenderOption", js.undefined)
     
     @scala.inline
-    def deleteIncludeValuesInResponse: Self = this.set("includeValuesInResponse", js.undefined)
+    def setResponseValueRenderOption(value: String): Self = StObject.set(x, "responseValueRenderOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseDateTimeRenderOption(value: String): Self = this.set("responseDateTimeRenderOption", value.asInstanceOf[js.Any])
+    def setResponseValueRenderOptionUndefined: Self = StObject.set(x, "responseValueRenderOption", js.undefined)
     
     @scala.inline
-    def deleteResponseDateTimeRenderOption: Self = this.set("responseDateTimeRenderOption", js.undefined)
+    def setValueInputOption(value: String): Self = StObject.set(x, "valueInputOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseValueRenderOption(value: String): Self = this.set("responseValueRenderOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseValueRenderOption: Self = this.set("responseValueRenderOption", js.undefined)
-    
-    @scala.inline
-    def setValueInputOption(value: String): Self = this.set("valueInputOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueInputOption: Self = this.set("valueInputOption", js.undefined)
+    def setValueInputOptionUndefined: Self = StObject.set(x, "valueInputOption", js.undefined)
   }
 }

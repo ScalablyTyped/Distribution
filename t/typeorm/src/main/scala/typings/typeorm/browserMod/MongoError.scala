@@ -1,5 +1,6 @@
 package typings.typeorm.browserMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,9 @@ class MongoError protected ()
   def this(message: String) = this()
 }
 /* static members */
-@JSImport("typeorm/browser", "MongoError")
-@js.native
-object MongoError extends js.Object {
+object MongoError {
   
+  @JSImport("typeorm/browser", "MongoError.create")
+  @js.native
   def create(options: js.Object): typings.typeorm.typingsMod.MongoError = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicPreference extends js.Object {
+trait TopicPreference extends StObject {
   
   /**
     * The contact's subscription status to a topic which is either OPT_IN or OPT_OUT.
@@ -26,24 +27,12 @@ object TopicPreference {
   }
   
   @scala.inline
-  implicit class TopicPreferenceOps[Self <: TopicPreference] (val x: Self) extends AnyVal {
+  implicit class TopicPreferenceMutableBuilder[Self <: TopicPreference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSubscriptionStatus(value: SubscriptionStatus): Self = StObject.set(x, "SubscriptionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSubscriptionStatus(value: SubscriptionStatus): Self = this.set("SubscriptionStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopicName(value: TopicName): Self = this.set("TopicName", value.asInstanceOf[js.Any])
+    def setTopicName(value: TopicName): Self = StObject.set(x, "TopicName", value.asInstanceOf[js.Any])
   }
 }

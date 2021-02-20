@@ -7,14 +7,14 @@ import typings.awsSdkClientCodecommitNode.typesDeleteRepositoryInputMod.DeleteRe
 import typings.awsSdkClientCodecommitNode.typesDeleteRepositoryOutputMod.DeleteRepositoryOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/commands/DeleteRepositoryCommand", JSImport.Namespace)
-@js.native
-object deleteRepositoryCommandMod extends js.Object {
+object deleteRepositoryCommandMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/commands/DeleteRepositoryCommand", "DeleteRepositoryCommand")
   @js.native
   class DeleteRepositoryCommand protected () extends Command[
           InputTypesUnion, 

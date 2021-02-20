@@ -1,11 +1,12 @@
 package typings.webix.webix
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroupMethods extends js.Object {
+trait GroupMethods extends StObject {
   
   def any(property: String, data: js.Any): Unit = js.native
   
@@ -35,36 +36,24 @@ object GroupMethods {
   }
   
   @scala.inline
-  implicit class GroupMethodsOps[Self <: GroupMethods] (val x: Self) extends AnyVal {
+  implicit class GroupMethodsMutableBuilder[Self <: GroupMethods] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAny(value: (String, js.Any) => Unit): Self = StObject.set(x, "any", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCount(value: (String, js.Any) => Unit): Self = StObject.set(x, "count", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMax(value: (String, js.Any) => Unit): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAny(value: (String, js.Any) => Unit): Self = this.set("any", js.Any.fromFunction2(value))
+    def setMin(value: (String, js.Any) => Unit): Self = StObject.set(x, "min", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCount(value: (String, js.Any) => Unit): Self = this.set("count", js.Any.fromFunction2(value))
+    def setString(value: (String, js.Any) => Unit): Self = StObject.set(x, "string", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMax(value: (String, js.Any) => Unit): Self = this.set("max", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setMin(value: (String, js.Any) => Unit): Self = this.set("min", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setString(value: (String, js.Any) => Unit): Self = this.set("string", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSum(value: (String, js.Any) => Unit): Self = this.set("sum", js.Any.fromFunction2(value))
+    def setSum(value: (String, js.Any) => Unit): Self = StObject.set(x, "sum", js.Any.fromFunction2(value))
   }
 }

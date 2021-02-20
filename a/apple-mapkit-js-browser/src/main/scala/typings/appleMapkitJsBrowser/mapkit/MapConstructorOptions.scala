@@ -1,5 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An object that contains options for initializing a map's features.
   */
 @js.native
-trait MapConstructorOptions extends js.Object {
+trait MapConstructorOptions extends StObject {
   
   /**
     * A delegate method for modifying cluster annotations.
@@ -152,174 +153,162 @@ object MapConstructorOptions {
   }
   
   @scala.inline
-  implicit class MapConstructorOptionsOps[Self <: MapConstructorOptions] (val x: Self) extends AnyVal {
+  implicit class MapConstructorOptionsMutableBuilder[Self <: MapConstructorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotationForCluster(value: /* annotation */ Annotation => Unit): Self = StObject.set(x, "annotationForCluster", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationForClusterUndefined: Self = StObject.set(x, "annotationForCluster", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnnotations(value: js.Array[Annotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationForCluster(value: /* annotation */ Annotation => Unit): Self = this.set("annotationForCluster", js.Any.fromFunction1(value))
+    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
     @scala.inline
-    def deleteAnnotationForCluster: Self = this.set("annotationForCluster", js.undefined)
+    def setAnnotationsVarargs(value: Annotation*): Self = StObject.set(x, "annotations", js.Array(value :_*))
     
     @scala.inline
-    def setAnnotationsVarargs(value: Annotation*): Self = this.set("annotations", js.Array(value :_*))
+    def setCenter(value: Coordinate): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotations(value: js.Array[Annotation]): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    def setColorScheme(value: String): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: Coordinate): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setIsRotationEnabled(value: Boolean): Self = StObject.set(x, "isRotationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorScheme(value: String): Self = this.set("colorScheme", value.asInstanceOf[js.Any])
+    def setIsRotationEnabledUndefined: Self = StObject.set(x, "isRotationEnabled", js.undefined)
     
     @scala.inline
-    def deleteColorScheme: Self = this.set("colorScheme", js.undefined)
+    def setIsScrollEnabled(value: Boolean): Self = StObject.set(x, "isScrollEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRotationEnabled(value: Boolean): Self = this.set("isRotationEnabled", value.asInstanceOf[js.Any])
+    def setIsScrollEnabledUndefined: Self = StObject.set(x, "isScrollEnabled", js.undefined)
     
     @scala.inline
-    def deleteIsRotationEnabled: Self = this.set("isRotationEnabled", js.undefined)
+    def setIsZoomEnabled(value: Boolean): Self = StObject.set(x, "isZoomEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsScrollEnabled(value: Boolean): Self = this.set("isScrollEnabled", value.asInstanceOf[js.Any])
+    def setIsZoomEnabledUndefined: Self = StObject.set(x, "isZoomEnabled", js.undefined)
     
     @scala.inline
-    def deleteIsScrollEnabled: Self = this.set("isScrollEnabled", js.undefined)
+    def setMapType(value: String): Self = StObject.set(x, "mapType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsZoomEnabled(value: Boolean): Self = this.set("isZoomEnabled", value.asInstanceOf[js.Any])
+    def setMapTypeUndefined: Self = StObject.set(x, "mapType", js.undefined)
     
     @scala.inline
-    def deleteIsZoomEnabled: Self = this.set("isZoomEnabled", js.undefined)
+    def setOverlays(value: js.Array[Overlay]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapType(value: String): Self = this.set("mapType", value.asInstanceOf[js.Any])
+    def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
     
     @scala.inline
-    def deleteMapType: Self = this.set("mapType", js.undefined)
+    def setOverlaysVarargs(value: Overlay*): Self = StObject.set(x, "overlays", js.Array(value :_*))
     
     @scala.inline
-    def setOverlaysVarargs(value: Overlay*): Self = this.set("overlays", js.Array(value :_*))
+    def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlays(value: js.Array[Overlay]): Self = this.set("overlays", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteOverlays: Self = this.set("overlays", js.undefined)
+    def setPointOfInterestFilter(value: PointOfInterestFilter): Self = StObject.set(x, "pointOfInterestFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: Padding): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setPointOfInterestFilterUndefined: Self = StObject.set(x, "pointOfInterestFilter", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setRegion(value: CoordinateRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointOfInterestFilter(value: PointOfInterestFilter): Self = this.set("pointOfInterestFilter", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deletePointOfInterestFilter: Self = this.set("pointOfInterestFilter", js.undefined)
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: CoordinateRegion): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setSelectedAnnotation(value: Annotation): Self = StObject.set(x, "selectedAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setSelectedAnnotationUndefined: Self = StObject.set(x, "selectedAnnotation", js.undefined)
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setSelectedOverlay(value: Overlay): Self = StObject.set(x, "selectedOverlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedAnnotation(value: Annotation): Self = this.set("selectedAnnotation", value.asInstanceOf[js.Any])
+    def setSelectedOverlayUndefined: Self = StObject.set(x, "selectedOverlay", js.undefined)
     
     @scala.inline
-    def deleteSelectedAnnotation: Self = this.set("selectedAnnotation", js.undefined)
+    def setShowsCompass(value: String): Self = StObject.set(x, "showsCompass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedOverlay(value: Overlay): Self = this.set("selectedOverlay", value.asInstanceOf[js.Any])
+    def setShowsCompassUndefined: Self = StObject.set(x, "showsCompass", js.undefined)
     
     @scala.inline
-    def deleteSelectedOverlay: Self = this.set("selectedOverlay", js.undefined)
+    def setShowsMapTypeControl(value: Boolean): Self = StObject.set(x, "showsMapTypeControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowsCompass(value: String): Self = this.set("showsCompass", value.asInstanceOf[js.Any])
+    def setShowsMapTypeControlUndefined: Self = StObject.set(x, "showsMapTypeControl", js.undefined)
     
     @scala.inline
-    def deleteShowsCompass: Self = this.set("showsCompass", js.undefined)
+    def setShowsPointsOfInterest(value: Boolean): Self = StObject.set(x, "showsPointsOfInterest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowsMapTypeControl(value: Boolean): Self = this.set("showsMapTypeControl", value.asInstanceOf[js.Any])
+    def setShowsPointsOfInterestUndefined: Self = StObject.set(x, "showsPointsOfInterest", js.undefined)
     
     @scala.inline
-    def deleteShowsMapTypeControl: Self = this.set("showsMapTypeControl", js.undefined)
+    def setShowsScale(value: String): Self = StObject.set(x, "showsScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowsPointsOfInterest(value: Boolean): Self = this.set("showsPointsOfInterest", value.asInstanceOf[js.Any])
+    def setShowsScaleUndefined: Self = StObject.set(x, "showsScale", js.undefined)
     
     @scala.inline
-    def deleteShowsPointsOfInterest: Self = this.set("showsPointsOfInterest", js.undefined)
+    def setShowsUserLocation(value: Boolean): Self = StObject.set(x, "showsUserLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowsScale(value: String): Self = this.set("showsScale", value.asInstanceOf[js.Any])
+    def setShowsUserLocationControl(value: Boolean): Self = StObject.set(x, "showsUserLocationControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowsScale: Self = this.set("showsScale", js.undefined)
+    def setShowsUserLocationControlUndefined: Self = StObject.set(x, "showsUserLocationControl", js.undefined)
     
     @scala.inline
-    def setShowsUserLocation(value: Boolean): Self = this.set("showsUserLocation", value.asInstanceOf[js.Any])
+    def setShowsUserLocationUndefined: Self = StObject.set(x, "showsUserLocation", js.undefined)
     
     @scala.inline
-    def deleteShowsUserLocation: Self = this.set("showsUserLocation", js.undefined)
+    def setShowsZoomControl(value: Boolean): Self = StObject.set(x, "showsZoomControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowsUserLocationControl(value: Boolean): Self = this.set("showsUserLocationControl", value.asInstanceOf[js.Any])
+    def setShowsZoomControlUndefined: Self = StObject.set(x, "showsZoomControl", js.undefined)
     
     @scala.inline
-    def deleteShowsUserLocationControl: Self = this.set("showsUserLocationControl", js.undefined)
+    def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowsZoomControl(value: Boolean): Self = this.set("showsZoomControl", value.asInstanceOf[js.Any])
+    def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     
     @scala.inline
-    def deleteShowsZoomControl: Self = this.set("showsZoomControl", js.undefined)
+    def setTracksUserLocation(value: Boolean): Self = StObject.set(x, "tracksUserLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTintColor(value: String): Self = this.set("tintColor", value.asInstanceOf[js.Any])
+    def setTracksUserLocationUndefined: Self = StObject.set(x, "tracksUserLocation", js.undefined)
     
     @scala.inline
-    def deleteTintColor: Self = this.set("tintColor", js.undefined)
+    def setVisibleMapRect(value: MapRect): Self = StObject.set(x, "visibleMapRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTracksUserLocation(value: Boolean): Self = this.set("tracksUserLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTracksUserLocation: Self = this.set("tracksUserLocation", js.undefined)
-    
-    @scala.inline
-    def setVisibleMapRect(value: MapRect): Self = this.set("visibleMapRect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibleMapRect: Self = this.set("visibleMapRect", js.undefined)
+    def setVisibleMapRectUndefined: Self = StObject.set(x, "visibleMapRect", js.undefined)
   }
 }

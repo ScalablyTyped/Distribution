@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.topicalExploreFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicalExploreFeedResponseChannel extends js.Object {
+trait TopicalExploreFeedResponseChannel extends StObject {
   
   var channel_id: String = js.native
   
@@ -38,39 +39,27 @@ object TopicalExploreFeedResponseChannel {
   }
   
   @scala.inline
-  implicit class TopicalExploreFeedResponseChannelOps[Self <: TopicalExploreFeedResponseChannel] (val x: Self) extends AnyVal {
+  implicit class TopicalExploreFeedResponseChannelMutableBuilder[Self <: TopicalExploreFeedResponseChannel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel_id(value: String): Self = StObject.set(x, "channel_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannel_type(value: String): Self = StObject.set(x, "channel_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannel_id(value: String): Self = this.set("channel_id", value.asInstanceOf[js.Any])
+    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannel_type(value: String): Self = this.set("channel_type", value.asInstanceOf[js.Any])
+    def setMedia(value: TopicalExploreFeedResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setMedia_count(value: Double): Self = StObject.set(x, "media_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: String): Self = this.set("header", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMedia(value: TopicalExploreFeedResponseMedia): Self = this.set("media", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMedia_count(value: Double): Self = this.set("media_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

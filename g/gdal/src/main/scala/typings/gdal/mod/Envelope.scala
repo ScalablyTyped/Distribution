@@ -1,12 +1,13 @@
 package typings.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gdal", "Envelope")
 @js.native
-class Envelope protected () extends js.Object {
+class Envelope protected () extends StObject {
   def this(bounds: EnvelopeBounds) = this()
   
   def contains(envelope: Envelope): Boolean = js.native

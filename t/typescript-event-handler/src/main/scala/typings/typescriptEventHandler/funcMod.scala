@@ -1,12 +1,11 @@
 package typings.typescriptEventHandler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typescript-event-handler/dist/func", JSImport.Namespace)
-@js.native
-object funcMod extends js.Object {
+object funcMod {
   
   type Action[TInput] = Func[TInput, Unit]
   

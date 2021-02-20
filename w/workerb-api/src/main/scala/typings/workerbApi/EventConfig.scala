@@ -9,12 +9,13 @@ import typings.workerbApi.workerbApiStrings.mousemove
 import typings.workerbApi.workerbApiStrings.mouseout
 import typings.workerbApi.workerbApiStrings.mouseover
 import typings.workerbApi.workerbApiStrings.mouseup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventConfig extends js.Object {
+trait EventConfig extends StObject {
   
   /**
     * An object used to specify the event properties. For key related event types, KeyboardEvent is supported. For mouse related event types, MouseEvent is supported.
@@ -37,29 +38,17 @@ object EventConfig {
   }
   
   @scala.inline
-  implicit class EventConfigOps[Self <: EventConfig] (val x: Self) extends AnyVal {
+  implicit class EventConfigMutableBuilder[Self <: EventConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventProps(value: js.Object): Self = StObject.set(x, "eventProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventPropsUndefined: Self = StObject.set(x, "eventProps", js.undefined)
     
     @scala.inline
     def setEventType(
       value: keydown | keyup | mousedown | mouseenter | mouseleave | mousemove | mouseout | mouseover | mouseup
-    ): Self = this.set("eventType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEventProps(value: js.Object): Self = this.set("eventProps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventProps: Self = this.set("eventProps", js.undefined)
+    ): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
   }
 }

@@ -1,19 +1,21 @@
 package typings.gitlab
 
+import typings.gitlab.baseServiceMod.BaseServiceOptions
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.PaginatedRequestOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gitlab/dist/types/core/services/PipelineScheduleVariables", JSImport.Namespace)
-@js.native
-object pipelineScheduleVariablesMod extends js.Object {
+object pipelineScheduleVariablesMod {
   
+  @JSImport("gitlab/dist/types/core/services/PipelineScheduleVariables", "PipelineScheduleVariables")
   @js.native
   class PipelineScheduleVariables () extends BaseService {
+    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(projectId: String, pipelineScheduleId: Double): js.Promise[GetResponse] = js.native
     def all(projectId: String, pipelineScheduleId: Double, options: PaginatedRequestOptions): js.Promise[GetResponse] = js.native

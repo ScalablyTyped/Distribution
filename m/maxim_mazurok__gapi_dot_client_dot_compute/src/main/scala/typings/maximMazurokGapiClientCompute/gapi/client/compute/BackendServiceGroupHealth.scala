@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackendServiceGroupHealth extends js.Object {
+trait BackendServiceGroupHealth extends StObject {
   
   /** Metadata defined as annotations on the network endpoint group. */
   var annotations: js.UndefOr[
@@ -30,43 +31,31 @@ object BackendServiceGroupHealth {
   }
   
   @scala.inline
-  implicit class BackendServiceGroupHealthOps[Self <: BackendServiceGroupHealth] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class BackendServiceGroupHealthMutableBuilder[Self <: BackendServiceGroupHealth] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAnnotations(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.BackendServiceGroupHealth with TopLevel[js.Any]
-    ): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
     @scala.inline
-    def setHealthStatusVarargs(value: HealthStatus*): Self = this.set("healthStatus", js.Array(value :_*))
+    def setHealthStatus(value: js.Array[HealthStatus]): Self = StObject.set(x, "healthStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthStatus(value: js.Array[HealthStatus]): Self = this.set("healthStatus", value.asInstanceOf[js.Any])
+    def setHealthStatusUndefined: Self = StObject.set(x, "healthStatus", js.undefined)
     
     @scala.inline
-    def deleteHealthStatus: Self = this.set("healthStatus", js.undefined)
+    def setHealthStatusVarargs(value: HealthStatus*): Self = StObject.set(x, "healthStatus", js.Array(value :_*))
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

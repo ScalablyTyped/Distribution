@@ -5,6 +5,7 @@ import typings.activexAdodb.activexAdodbNumbers.`0`
 import typings.activexAdodb.activexAdodbNumbers.`1`
 import typings.activexAdodb.activexAdodbNumbers.`2`
 import typings.activexAdodb.activexAdodbNumbers.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexAdodb.activexAdodbNumbers.`3`
   - typings.activexAdodb.activexAdodbNumbers.`-1`
 */
-trait CursorTypeEnum extends js.Object
+trait CursorTypeEnum extends StObject
 object CursorTypeEnum {
   
   @scala.inline

@@ -12,12 +12,13 @@ import typings.vscodeLanguageserverProtocol.protocolSelectionRangeMod.SelectionR
 import typings.vscodeLanguageserverProtocol.protocolSelectionRangeMod.SelectionRangeRegistrationOptions
 import typings.vscodeLanguageserverProtocol.protocolTypeDefinitionMod.TypeDefinitionOptions
 import typings.vscodeLanguageserverProtocol.protocolTypeDefinitionMod.TypeDefinitionRegistrationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait _ServerCapabilities[T] extends js.Object {
+trait _ServerCapabilities[T] extends StObject {
   
   /**
     * The server provides code actions. CodeActionOptions may only be
@@ -153,162 +154,150 @@ object _ServerCapabilities {
   }
   
   @scala.inline
-  implicit class _ServerCapabilitiesOps[Self <: _ServerCapabilities[_], T] (val x: Self with _ServerCapabilities[T]) extends AnyVal {
+  implicit class _ServerCapabilitiesMutableBuilder[Self <: _ServerCapabilities[_], T] (val x: Self with _ServerCapabilities[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodeActionProvider(value: Boolean | CodeActionOptions): Self = StObject.set(x, "codeActionProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeActionProviderUndefined: Self = StObject.set(x, "codeActionProvider", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodeLensProvider(value: CodeLensOptions): Self = StObject.set(x, "codeLensProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeActionProvider(value: Boolean | CodeActionOptions): Self = this.set("codeActionProvider", value.asInstanceOf[js.Any])
+    def setCodeLensProviderUndefined: Self = StObject.set(x, "codeLensProvider", js.undefined)
     
     @scala.inline
-    def deleteCodeActionProvider: Self = this.set("codeActionProvider", js.undefined)
+    def setColorProvider(value: Boolean | DocumentColorOptions | DocumentColorRegistrationOptions): Self = StObject.set(x, "colorProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeLensProvider(value: CodeLensOptions): Self = this.set("codeLensProvider", value.asInstanceOf[js.Any])
+    def setColorProviderUndefined: Self = StObject.set(x, "colorProvider", js.undefined)
     
     @scala.inline
-    def deleteCodeLensProvider: Self = this.set("codeLensProvider", js.undefined)
+    def setCompletionProvider(value: CompletionOptions): Self = StObject.set(x, "completionProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorProvider(value: Boolean | DocumentColorOptions | DocumentColorRegistrationOptions): Self = this.set("colorProvider", value.asInstanceOf[js.Any])
+    def setCompletionProviderUndefined: Self = StObject.set(x, "completionProvider", js.undefined)
     
     @scala.inline
-    def deleteColorProvider: Self = this.set("colorProvider", js.undefined)
+    def setDeclarationProvider(value: Boolean | DeclarationOptions | DeclarationRegistrationOptions): Self = StObject.set(x, "declarationProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletionProvider(value: CompletionOptions): Self = this.set("completionProvider", value.asInstanceOf[js.Any])
+    def setDeclarationProviderUndefined: Self = StObject.set(x, "declarationProvider", js.undefined)
     
     @scala.inline
-    def deleteCompletionProvider: Self = this.set("completionProvider", js.undefined)
+    def setDefinitionProvider(value: Boolean | DefinitionOptions): Self = StObject.set(x, "definitionProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeclarationProvider(value: Boolean | DeclarationOptions | DeclarationRegistrationOptions): Self = this.set("declarationProvider", value.asInstanceOf[js.Any])
+    def setDefinitionProviderUndefined: Self = StObject.set(x, "definitionProvider", js.undefined)
     
     @scala.inline
-    def deleteDeclarationProvider: Self = this.set("declarationProvider", js.undefined)
+    def setDocumentFormattingProvider(value: Boolean | DocumentFormattingOptions): Self = StObject.set(x, "documentFormattingProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionProvider(value: Boolean | DefinitionOptions): Self = this.set("definitionProvider", value.asInstanceOf[js.Any])
+    def setDocumentFormattingProviderUndefined: Self = StObject.set(x, "documentFormattingProvider", js.undefined)
     
     @scala.inline
-    def deleteDefinitionProvider: Self = this.set("definitionProvider", js.undefined)
+    def setDocumentHighlightProvider(value: Boolean | DocumentHighlightOptions): Self = StObject.set(x, "documentHighlightProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentFormattingProvider(value: Boolean | DocumentFormattingOptions): Self = this.set("documentFormattingProvider", value.asInstanceOf[js.Any])
+    def setDocumentHighlightProviderUndefined: Self = StObject.set(x, "documentHighlightProvider", js.undefined)
     
     @scala.inline
-    def deleteDocumentFormattingProvider: Self = this.set("documentFormattingProvider", js.undefined)
+    def setDocumentLinkProvider(value: DocumentLinkOptions): Self = StObject.set(x, "documentLinkProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentHighlightProvider(value: Boolean | DocumentHighlightOptions): Self = this.set("documentHighlightProvider", value.asInstanceOf[js.Any])
+    def setDocumentLinkProviderUndefined: Self = StObject.set(x, "documentLinkProvider", js.undefined)
     
     @scala.inline
-    def deleteDocumentHighlightProvider: Self = this.set("documentHighlightProvider", js.undefined)
+    def setDocumentOnTypeFormattingProvider(value: DocumentOnTypeFormattingOptions): Self = StObject.set(x, "documentOnTypeFormattingProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentLinkProvider(value: DocumentLinkOptions): Self = this.set("documentLinkProvider", value.asInstanceOf[js.Any])
+    def setDocumentOnTypeFormattingProviderUndefined: Self = StObject.set(x, "documentOnTypeFormattingProvider", js.undefined)
     
     @scala.inline
-    def deleteDocumentLinkProvider: Self = this.set("documentLinkProvider", js.undefined)
+    def setDocumentRangeFormattingProvider(value: Boolean | DocumentRangeFormattingOptions): Self = StObject.set(x, "documentRangeFormattingProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentOnTypeFormattingProvider(value: DocumentOnTypeFormattingOptions): Self = this.set("documentOnTypeFormattingProvider", value.asInstanceOf[js.Any])
+    def setDocumentRangeFormattingProviderUndefined: Self = StObject.set(x, "documentRangeFormattingProvider", js.undefined)
     
     @scala.inline
-    def deleteDocumentOnTypeFormattingProvider: Self = this.set("documentOnTypeFormattingProvider", js.undefined)
+    def setDocumentSymbolProvider(value: Boolean | DocumentSymbolOptions): Self = StObject.set(x, "documentSymbolProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentRangeFormattingProvider(value: Boolean | DocumentRangeFormattingOptions): Self = this.set("documentRangeFormattingProvider", value.asInstanceOf[js.Any])
+    def setDocumentSymbolProviderUndefined: Self = StObject.set(x, "documentSymbolProvider", js.undefined)
     
     @scala.inline
-    def deleteDocumentRangeFormattingProvider: Self = this.set("documentRangeFormattingProvider", js.undefined)
+    def setExecuteCommandProvider(value: ExecuteCommandOptions): Self = StObject.set(x, "executeCommandProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentSymbolProvider(value: Boolean | DocumentSymbolOptions): Self = this.set("documentSymbolProvider", value.asInstanceOf[js.Any])
+    def setExecuteCommandProviderUndefined: Self = StObject.set(x, "executeCommandProvider", js.undefined)
     
     @scala.inline
-    def deleteDocumentSymbolProvider: Self = this.set("documentSymbolProvider", js.undefined)
+    def setExperimental(value: T): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecuteCommandProvider(value: ExecuteCommandOptions): Self = this.set("executeCommandProvider", value.asInstanceOf[js.Any])
+    def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
     
     @scala.inline
-    def deleteExecuteCommandProvider: Self = this.set("executeCommandProvider", js.undefined)
+    def setFoldingRangeProvider(value: Boolean | FoldingRangeOptions | FoldingRangeRegistrationOptions): Self = StObject.set(x, "foldingRangeProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExperimental(value: T): Self = this.set("experimental", value.asInstanceOf[js.Any])
+    def setFoldingRangeProviderUndefined: Self = StObject.set(x, "foldingRangeProvider", js.undefined)
     
     @scala.inline
-    def deleteExperimental: Self = this.set("experimental", js.undefined)
+    def setHoverProvider(value: Boolean | HoverOptions): Self = StObject.set(x, "hoverProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFoldingRangeProvider(value: Boolean | FoldingRangeOptions | FoldingRangeRegistrationOptions): Self = this.set("foldingRangeProvider", value.asInstanceOf[js.Any])
+    def setHoverProviderUndefined: Self = StObject.set(x, "hoverProvider", js.undefined)
     
     @scala.inline
-    def deleteFoldingRangeProvider: Self = this.set("foldingRangeProvider", js.undefined)
+    def setImplementationProvider(value: Boolean | ImplementationOptions | ImplementationRegistrationOptions): Self = StObject.set(x, "implementationProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverProvider(value: Boolean | HoverOptions): Self = this.set("hoverProvider", value.asInstanceOf[js.Any])
+    def setImplementationProviderUndefined: Self = StObject.set(x, "implementationProvider", js.undefined)
     
     @scala.inline
-    def deleteHoverProvider: Self = this.set("hoverProvider", js.undefined)
+    def setReferencesProvider(value: Boolean | ReferenceOptions): Self = StObject.set(x, "referencesProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImplementationProvider(value: Boolean | ImplementationOptions | ImplementationRegistrationOptions): Self = this.set("implementationProvider", value.asInstanceOf[js.Any])
+    def setReferencesProviderUndefined: Self = StObject.set(x, "referencesProvider", js.undefined)
     
     @scala.inline
-    def deleteImplementationProvider: Self = this.set("implementationProvider", js.undefined)
+    def setRenameProvider(value: Boolean | RenameOptions): Self = StObject.set(x, "renameProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferencesProvider(value: Boolean | ReferenceOptions): Self = this.set("referencesProvider", value.asInstanceOf[js.Any])
+    def setRenameProviderUndefined: Self = StObject.set(x, "renameProvider", js.undefined)
     
     @scala.inline
-    def deleteReferencesProvider: Self = this.set("referencesProvider", js.undefined)
+    def setSelectionRangeProvider(value: Boolean | SelectionRangeOptions | SelectionRangeRegistrationOptions): Self = StObject.set(x, "selectionRangeProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenameProvider(value: Boolean | RenameOptions): Self = this.set("renameProvider", value.asInstanceOf[js.Any])
+    def setSelectionRangeProviderUndefined: Self = StObject.set(x, "selectionRangeProvider", js.undefined)
     
     @scala.inline
-    def deleteRenameProvider: Self = this.set("renameProvider", js.undefined)
+    def setSignatureHelpProvider(value: SignatureHelpOptions): Self = StObject.set(x, "signatureHelpProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionRangeProvider(value: Boolean | SelectionRangeOptions | SelectionRangeRegistrationOptions): Self = this.set("selectionRangeProvider", value.asInstanceOf[js.Any])
+    def setSignatureHelpProviderUndefined: Self = StObject.set(x, "signatureHelpProvider", js.undefined)
     
     @scala.inline
-    def deleteSelectionRangeProvider: Self = this.set("selectionRangeProvider", js.undefined)
+    def setTextDocumentSync(value: TextDocumentSyncOptions | TextDocumentSyncKind): Self = StObject.set(x, "textDocumentSync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatureHelpProvider(value: SignatureHelpOptions): Self = this.set("signatureHelpProvider", value.asInstanceOf[js.Any])
+    def setTextDocumentSyncUndefined: Self = StObject.set(x, "textDocumentSync", js.undefined)
     
     @scala.inline
-    def deleteSignatureHelpProvider: Self = this.set("signatureHelpProvider", js.undefined)
+    def setTypeDefinitionProvider(value: Boolean | TypeDefinitionOptions | TypeDefinitionRegistrationOptions): Self = StObject.set(x, "typeDefinitionProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDocumentSync(value: TextDocumentSyncOptions | TextDocumentSyncKind): Self = this.set("textDocumentSync", value.asInstanceOf[js.Any])
+    def setTypeDefinitionProviderUndefined: Self = StObject.set(x, "typeDefinitionProvider", js.undefined)
     
     @scala.inline
-    def deleteTextDocumentSync: Self = this.set("textDocumentSync", js.undefined)
+    def setWorkspaceSymbolProvider(value: Boolean | WorkspaceSymbolOptions): Self = StObject.set(x, "workspaceSymbolProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeDefinitionProvider(value: Boolean | TypeDefinitionOptions | TypeDefinitionRegistrationOptions): Self = this.set("typeDefinitionProvider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeDefinitionProvider: Self = this.set("typeDefinitionProvider", js.undefined)
-    
-    @scala.inline
-    def setWorkspaceSymbolProvider(value: Boolean | WorkspaceSymbolOptions): Self = this.set("workspaceSymbolProvider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkspaceSymbolProvider: Self = this.set("workspaceSymbolProvider", js.undefined)
+    def setWorkspaceSymbolProviderUndefined: Self = StObject.set(x, "workspaceSymbolProvider", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.algoliasearch.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,54 +58,42 @@ object RequestOptionsPickSaveSyn {
   }
   
   @scala.inline
-  implicit class RequestOptionsPickSaveSynOps[Self <: RequestOptionsPickSaveSyn] (val x: Self) extends AnyVal {
+  implicit class RequestOptionsPickSaveSynMutableBuilder[Self <: RequestOptionsPickSaveSyn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheable(value: Boolean): Self = StObject.set(x, "cacheable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheableUndefined: Self = StObject.set(x, "cacheable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: Record[String, _]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheable(value: Boolean): Self = this.set("cacheable", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteCacheable: Self = this.set("cacheable", js.undefined)
+    def setForwardToReplicas(value: Boolean): Self = StObject.set(x, "forwardToReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: Record[String, _]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setForwardToReplicasUndefined: Self = StObject.set(x, "forwardToReplicas", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForwardToReplicas(value: Boolean): Self = this.set("forwardToReplicas", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteForwardToReplicas: Self = this.set("forwardToReplicas", js.undefined)
+    def setQueryParameters(value: Record[String, _]): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: Record[String, String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryParameters(value: Record[String, _]): Self = this.set("queryParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryParameters: Self = this.set("queryParameters", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

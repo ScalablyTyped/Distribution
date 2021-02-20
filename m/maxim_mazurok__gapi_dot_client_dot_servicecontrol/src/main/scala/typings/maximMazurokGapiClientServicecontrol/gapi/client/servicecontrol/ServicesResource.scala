@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 import typings.maximMazurokGapiClientServicecontrol.anon.Accesstoken
 import typings.maximMazurokGapiClientServicecontrol.anon.Alt
 import typings.maximMazurokGapiClientServicecontrol.anon.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServicesResource extends js.Object {
+trait ServicesResource extends StObject {
   
   /**
     * Private Preview. This feature is only available for approved services. This method provides admission control for services that are integrated with [Service

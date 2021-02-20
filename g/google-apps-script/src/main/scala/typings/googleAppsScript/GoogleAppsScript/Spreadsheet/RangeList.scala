@@ -8,6 +8,7 @@ import typings.googleAppsScript.googleAppsScriptStrings.left
 import typings.googleAppsScript.googleAppsScriptStrings.middle
 import typings.googleAppsScript.googleAppsScriptStrings.normal
 import typings.googleAppsScript.googleAppsScriptStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * to apply operations on collections of non-adjacent ranges or cells.
   */
 @js.native
-trait RangeList extends js.Object {
+trait RangeList extends StObject {
   
   def activate(): RangeList = js.native
   

@@ -1,5 +1,6 @@
 package typings.googleapis.cloudiotV1Mod.cloudiotV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response for `ListDeviceStates`.
   */
 @js.native
-trait SchemaListDeviceStatesResponse extends js.Object {
+trait SchemaListDeviceStatesResponse extends StObject {
   
   /**
     * The last few device states. States are listed in descending order of
@@ -25,27 +26,15 @@ object SchemaListDeviceStatesResponse {
   }
   
   @scala.inline
-  implicit class SchemaListDeviceStatesResponseOps[Self <: SchemaListDeviceStatesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListDeviceStatesResponseMutableBuilder[Self <: SchemaListDeviceStatesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceStates(value: js.Array[SchemaDeviceState]): Self = StObject.set(x, "deviceStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceStatesUndefined: Self = StObject.set(x, "deviceStates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeviceStatesVarargs(value: SchemaDeviceState*): Self = this.set("deviceStates", js.Array(value :_*))
-    
-    @scala.inline
-    def setDeviceStates(value: js.Array[SchemaDeviceState]): Self = this.set("deviceStates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceStates: Self = this.set("deviceStates", js.undefined)
+    def setDeviceStatesVarargs(value: SchemaDeviceState*): Self = StObject.set(x, "deviceStates", js.Array(value :_*))
   }
 }

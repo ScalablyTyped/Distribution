@@ -1,30 +1,27 @@
 package typings.smoothScrollbar
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("smooth-scrollbar/track/direction", JSImport.Namespace)
-@js.native
-object directionMod extends js.Object {
+object directionMod {
   
   @js.native
-  sealed trait TrackDirection extends js.Object
+  sealed trait TrackDirection extends StObject
+  @JSImport("smooth-scrollbar/track/direction", "TrackDirection")
   @js.native
-  object TrackDirection extends js.Object {
+  object TrackDirection extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[TrackDirection with String] = js.native
     
     @js.native
     sealed trait X extends TrackDirection
-    /* "x" */ @js.native
-    object X extends TopLevel[X with String]
+    /* "x" */ val X: typings.smoothScrollbar.directionMod.TrackDirection.X with String = js.native
     
     @js.native
     sealed trait Y extends TrackDirection
-    /* "y" */ @js.native
-    object Y extends TopLevel[Y with String]
+    /* "y" */ val Y: typings.smoothScrollbar.directionMod.TrackDirection.Y with String = js.native
   }
 }

@@ -1,11 +1,12 @@
 package typings.mapboxMapboxSdk.directionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Intersection extends js.Object {
+trait Intersection extends StObject {
   
   /**
     * A list of bearing values (for example [0,90,180,270]) that are available at the intersection.
@@ -64,63 +65,51 @@ object Intersection {
   }
   
   @scala.inline
-  implicit class IntersectionOps[Self <: Intersection] (val x: Self) extends AnyVal {
+  implicit class IntersectionMutableBuilder[Self <: Intersection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBearings(value: js.Array[Double]): Self = StObject.set(x, "bearings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBearingsVarargs(value: Double*): Self = StObject.set(x, "bearings", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClasses(value: js.Array[DirectionsClass]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBearingsVarargs(value: Double*): Self = this.set("bearings", js.Array(value :_*))
+    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def setBearings(value: js.Array[Double]): Self = this.set("bearings", value.asInstanceOf[js.Any])
+    def setClassesVarargs(value: DirectionsClass*): Self = StObject.set(x, "classes", js.Array(value :_*))
     
     @scala.inline
-    def setEntryVarargs(value: Boolean*): Self = this.set("entry", js.Array(value :_*))
+    def setEntry(value: js.Array[Boolean]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntry(value: js.Array[Boolean]): Self = this.set("entry", value.asInstanceOf[js.Any])
+    def setEntryVarargs(value: Boolean*): Self = StObject.set(x, "entry", js.Array(value :_*))
     
     @scala.inline
-    def setLanesVarargs(value: Lane*): Self = this.set("lanes", js.Array(value :_*))
+    def setIn(value: Double): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanes(value: js.Array[Lane]): Self = this.set("lanes", value.asInstanceOf[js.Any])
+    def setInUndefined: Self = StObject.set(x, "in", js.undefined)
     
     @scala.inline
-    def setLocationVarargs(value: Double*): Self = this.set("location", js.Array(value :_*))
+    def setLanes(value: js.Array[Lane]): Self = StObject.set(x, "lanes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: js.Array[Double]): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setLanesVarargs(value: Lane*): Self = StObject.set(x, "lanes", js.Array(value :_*))
     
     @scala.inline
-    def setClassesVarargs(value: DirectionsClass*): Self = this.set("classes", js.Array(value :_*))
+    def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClasses(value: js.Array[DirectionsClass]): Self = this.set("classes", value.asInstanceOf[js.Any])
+    def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
     
     @scala.inline
-    def deleteClasses: Self = this.set("classes", js.undefined)
+    def setOut(value: Double): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIn(value: Double): Self = this.set("in", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIn: Self = this.set("in", js.undefined)
-    
-    @scala.inline
-    def setOut(value: Double): Self = this.set("out", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOut: Self = this.set("out", js.undefined)
+    def setOutUndefined: Self = StObject.set(x, "out", js.undefined)
   }
 }

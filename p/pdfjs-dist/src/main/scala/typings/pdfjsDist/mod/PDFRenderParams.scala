@@ -1,12 +1,13 @@
 package typings.pdfjsDist.mod
 
 import typings.std.CanvasRenderingContext2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PDFRenderParams extends js.Object {
+trait PDFRenderParams extends StObject {
   
   var canvasContext: CanvasRenderingContext2D = js.native
   
@@ -29,51 +30,39 @@ object PDFRenderParams {
   }
   
   @scala.inline
-  implicit class PDFRenderParamsOps[Self <: PDFRenderParams] (val x: Self) extends AnyVal {
+  implicit class PDFRenderParamsMutableBuilder[Self <: PDFRenderParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanvasContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "canvasContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContinueCallback(value: /* _continue */ js.Function0[Unit] => Unit): Self = StObject.set(x, "continueCallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContinueCallbackUndefined: Self = StObject.set(x, "continueCallback", js.undefined)
     
     @scala.inline
-    def setCanvasContext(value: CanvasRenderingContext2D): Self = this.set("canvasContext", value.asInstanceOf[js.Any])
+    def setImageLayer(value: PDFRenderImageLayer): Self = StObject.set(x, "imageLayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinueCallback(value: /* _continue */ js.Function0[Unit] => Unit): Self = this.set("continueCallback", js.Any.fromFunction1(value))
+    def setImageLayerUndefined: Self = StObject.set(x, "imageLayer", js.undefined)
     
     @scala.inline
-    def deleteContinueCallback: Self = this.set("continueCallback", js.undefined)
+    def setRenderInteractiveForms(value: Boolean): Self = StObject.set(x, "renderInteractiveForms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageLayer(value: PDFRenderImageLayer): Self = this.set("imageLayer", value.asInstanceOf[js.Any])
+    def setRenderInteractiveFormsUndefined: Self = StObject.set(x, "renderInteractiveForms", js.undefined)
     
     @scala.inline
-    def deleteImageLayer: Self = this.set("imageLayer", js.undefined)
+    def setTextLayer(value: PDFRenderTextLayer): Self = StObject.set(x, "textLayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderInteractiveForms(value: Boolean): Self = this.set("renderInteractiveForms", value.asInstanceOf[js.Any])
+    def setTextLayerUndefined: Self = StObject.set(x, "textLayer", js.undefined)
     
     @scala.inline
-    def deleteRenderInteractiveForms: Self = this.set("renderInteractiveForms", js.undefined)
+    def setViewport(value: PDFPageViewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextLayer(value: PDFRenderTextLayer): Self = this.set("textLayer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextLayer: Self = this.set("textLayer", js.undefined)
-    
-    @scala.inline
-    def setViewport(value: PDFPageViewport): Self = this.set("viewport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewport: Self = this.set("viewport", js.undefined)
+    def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
   }
 }

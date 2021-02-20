@@ -8,12 +8,13 @@ import typings.wechatMiniprogram.WechatMiniprogram.EventChannel
 import typings.wechatMiniprogram.WechatMiniprogram.IAnyObject
 import typings.wechatMiniprogram.WechatMiniprogram.IntersectionObserver
 import typings.wechatMiniprogram.WechatMiniprogram.SelectorQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceMethods[D /* <: DataOption */] extends js.Object {
+trait InstanceMethods[D /* <: DataOption */] extends StObject {
   
   /**
     * 执行关键帧动画，详见[动画](https://developers.weixin.qq.com/miniprogram/dev/framework/view/animation.html)

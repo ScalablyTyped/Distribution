@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains the settings defining a misspelled interval.
   */
 @js.native
-trait MisspelledInterval extends js.Object {
+trait MisspelledInterval extends StObject {
   
   /**
     * Gets the spelling error type.
@@ -56,39 +57,27 @@ object MisspelledInterval {
   }
   
   @scala.inline
-  implicit class MisspelledIntervalOps[Self <: MisspelledInterval] (val x: Self) extends AnyVal {
+  implicit class MisspelledIntervalMutableBuilder[Self <: MisspelledInterval] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorType(value: SpellingErrorType): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorType(value: SpellingErrorType): Self = this.set("errorType", value.asInstanceOf[js.Any])
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterval(value: Interval): Self = this.set("interval", value.asInstanceOf[js.Any])
+    def setSuggestions(value: js.Array[String]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setSuggestionsVarargs(value: String*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
     
     @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuggestionsVarargs(value: String*): Self = this.set("suggestions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSuggestions(value: js.Array[String]): Self = this.set("suggestions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWord(value: String): Self = this.set("word", value.asInstanceOf[js.Any])
+    def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
   }
 }

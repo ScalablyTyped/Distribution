@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,33 +45,21 @@ object BuildingFilterBlock {
   }
   
   @scala.inline
-  implicit class BuildingFilterBlockOps[Self <: BuildingFilterBlock] (val x: Self) extends AnyVal {
+  implicit class BuildingFilterBlockMutableBuilder[Self <: BuildingFilterBlock] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterExpression(value: String): Self = StObject.set(x, "filterExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterMode(value: BuildingFilterBlockFilterMode): Self = StObject.set(x, "filterMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterModeUndefined: Self = StObject.set(x, "filterMode", js.undefined)
     
     @scala.inline
-    def setFilterExpression(value: String): Self = this.set("filterExpression", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterMode(value: BuildingFilterBlockFilterMode): Self = this.set("filterMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterMode: Self = this.set("filterMode", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

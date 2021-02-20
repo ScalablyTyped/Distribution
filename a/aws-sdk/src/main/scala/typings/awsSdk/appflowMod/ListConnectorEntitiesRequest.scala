@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListConnectorEntitiesRequest extends js.Object {
+trait ListConnectorEntitiesRequest extends StObject {
   
   /**
     *  The name of the connector profile. The name is unique for each ConnectorProfile in the AWS account, and is used to query the downstream connector. 
@@ -31,36 +32,24 @@ object ListConnectorEntitiesRequest {
   }
   
   @scala.inline
-  implicit class ListConnectorEntitiesRequestOps[Self <: ListConnectorEntitiesRequest] (val x: Self) extends AnyVal {
+  implicit class ListConnectorEntitiesRequestMutableBuilder[Self <: ListConnectorEntitiesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectorProfileNameUndefined: Self = StObject.set(x, "connectorProfileName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectorType(value: ConnectorType): Self = StObject.set(x, "connectorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorProfileName(value: ConnectorProfileName): Self = this.set("connectorProfileName", value.asInstanceOf[js.Any])
+    def setConnectorTypeUndefined: Self = StObject.set(x, "connectorType", js.undefined)
     
     @scala.inline
-    def deleteConnectorProfileName: Self = this.set("connectorProfileName", js.undefined)
+    def setEntitiesPath(value: EntitiesPath): Self = StObject.set(x, "entitiesPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorType(value: ConnectorType): Self = this.set("connectorType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnectorType: Self = this.set("connectorType", js.undefined)
-    
-    @scala.inline
-    def setEntitiesPath(value: EntitiesPath): Self = this.set("entitiesPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntitiesPath: Self = this.set("entitiesPath", js.undefined)
+    def setEntitiesPathUndefined: Self = StObject.set(x, "entitiesPath", js.undefined)
   }
 }

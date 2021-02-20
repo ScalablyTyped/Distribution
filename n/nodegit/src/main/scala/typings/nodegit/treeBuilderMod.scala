@@ -4,16 +4,16 @@ import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.treeEntryMod.TreeEntry
 import typings.nodegit.treeMod.Tree
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/tree-builder", JSImport.Namespace)
-@js.native
-object treeBuilderMod extends js.Object {
+object treeBuilderMod {
   
+  @JSImport("nodegit/tree-builder", "Treebuilder")
   @js.native
-  class Treebuilder () extends js.Object {
+  class Treebuilder () extends StObject {
     
     def clear(): Unit = js.native
     
@@ -30,10 +30,13 @@ object treeBuilderMod extends js.Object {
     def write(): js.Promise[Oid] = js.native
   }
   /* static members */
-  @js.native
-  object Treebuilder extends js.Object {
+  object Treebuilder {
     
+    @JSImport("nodegit/tree-builder", "Treebuilder.create")
+    @js.native
     def create(repo: Repository): js.Promise[Treebuilder] = js.native
+    @JSImport("nodegit/tree-builder", "Treebuilder.create")
+    @js.native
     def create(repo: Repository, source: Tree): js.Promise[Treebuilder] = js.native
   }
 }

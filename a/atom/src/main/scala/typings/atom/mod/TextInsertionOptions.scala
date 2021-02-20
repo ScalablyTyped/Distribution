@@ -1,5 +1,6 @@
 package typings.atom.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,48 +40,36 @@ object TextInsertionOptions {
   }
   
   @scala.inline
-  implicit class TextInsertionOptionsOps[Self <: TextInsertionOptions] (val x: Self) extends AnyVal {
+  implicit class TextInsertionOptionsMutableBuilder[Self <: TextInsertionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoDecreaseIndent(value: Boolean): Self = StObject.set(x, "autoDecreaseIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoDecreaseIndentUndefined: Self = StObject.set(x, "autoDecreaseIndent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoIndent(value: Boolean): Self = StObject.set(x, "autoIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDecreaseIndent(value: Boolean): Self = this.set("autoDecreaseIndent", value.asInstanceOf[js.Any])
+    def setAutoIndentNewline(value: Boolean): Self = StObject.set(x, "autoIndentNewline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoDecreaseIndent: Self = this.set("autoDecreaseIndent", js.undefined)
+    def setAutoIndentNewlineUndefined: Self = StObject.set(x, "autoIndentNewline", js.undefined)
     
     @scala.inline
-    def setAutoIndent(value: Boolean): Self = this.set("autoIndent", value.asInstanceOf[js.Any])
+    def setAutoIndentUndefined: Self = StObject.set(x, "autoIndent", js.undefined)
     
     @scala.inline
-    def deleteAutoIndent: Self = this.set("autoIndent", js.undefined)
+    def setPreserveTrailingLineIndentation(value: Boolean): Self = StObject.set(x, "preserveTrailingLineIndentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoIndentNewline(value: Boolean): Self = this.set("autoIndentNewline", value.asInstanceOf[js.Any])
+    def setPreserveTrailingLineIndentationUndefined: Self = StObject.set(x, "preserveTrailingLineIndentation", js.undefined)
     
     @scala.inline
-    def deleteAutoIndentNewline: Self = this.set("autoIndentNewline", js.undefined)
+    def setSelect(value: Boolean): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveTrailingLineIndentation(value: Boolean): Self = this.set("preserveTrailingLineIndentation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreserveTrailingLineIndentation: Self = this.set("preserveTrailingLineIndentation", js.undefined)
-    
-    @scala.inline
-    def setSelect(value: Boolean): Self = this.set("select", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
   }
 }

@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Devices.SmartCards
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents info about a smart card. */
 @js.native
-trait SmartCard extends js.Object {
+trait SmartCard extends StObject {
   
   /**
     * Establishes a connection to the smart card and returns a SmartCardConnection object representing the connection.
@@ -45,30 +46,18 @@ object SmartCard {
   }
   
   @scala.inline
-  implicit class SmartCardOps[Self <: SmartCard] (val x: Self) extends AnyVal {
+  implicit class SmartCardMutableBuilder[Self <: SmartCard] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectAsync(value: () => IPromiseWithIAsyncOperation[SmartCardConnection]): Self = StObject.set(x, "connectAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAnswerToResetAsync(value: () => IPromiseWithIAsyncOperation[IBuffer]): Self = StObject.set(x, "getAnswerToResetAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetStatusAsync(value: () => IPromiseWithIAsyncOperation[SmartCardStatus]): Self = StObject.set(x, "getStatusAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConnectAsync(value: () => IPromiseWithIAsyncOperation[SmartCardConnection]): Self = this.set("connectAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetAnswerToResetAsync(value: () => IPromiseWithIAsyncOperation[IBuffer]): Self = this.set("getAnswerToResetAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetStatusAsync(value: () => IPromiseWithIAsyncOperation[SmartCardStatus]): Self = this.set("getStatusAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReader(value: SmartCardReader): Self = this.set("reader", value.asInstanceOf[js.Any])
+    def setReader(value: SmartCardReader): Self = StObject.set(x, "reader", value.asInstanceOf[js.Any])
   }
 }

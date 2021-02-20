@@ -1,12 +1,13 @@
 package typings.oracleOraclejet.anon
 
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsInitial extends js.Object {
+trait IsInitial extends StObject {
   
   var isInitial: Boolean = js.native
   
@@ -25,30 +26,18 @@ object IsInitial {
   }
   
   @scala.inline
-  implicit class IsInitialOps[Self <: IsInitial] (val x: Self) extends AnyVal {
+  implicit class IsInitialMutableBuilder[Self <: IsInitial] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsInitial(value: Boolean): Self = StObject.set(x, "isInitial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewViewModel(value: js.Object): Self = StObject.set(x, "newViewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInitial(value: Boolean): Self = this.set("isInitial", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewViewModel(value: js.Object): Self = this.set("newViewModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNode(value: Node): Self = this.set("node", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldViewModel(value: js.Object): Self = this.set("oldViewModel", value.asInstanceOf[js.Any])
+    def setOldViewModel(value: js.Object): Self = StObject.set(x, "oldViewModel", value.asInstanceOf[js.Any])
   }
 }

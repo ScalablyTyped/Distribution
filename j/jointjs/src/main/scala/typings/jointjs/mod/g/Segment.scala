@@ -1,13 +1,14 @@
 package typings.jointjs.mod.g
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Segment extends js.Object {
+trait Segment extends StObject {
   
-   // getter or directly assigned
+  // getter or directly assigned
   def bbox(): Rect | Null = js.native
   
   def closestPoint(p: Point): Point = js.native
@@ -31,7 +32,7 @@ trait Segment extends js.Object {
   
   def divideAtT(t: Double): js.Tuple2[Segment, Segment] = js.native
   
-   // getter, `never` for Moveto
+  // getter, `never` for Moveto
   var end: Point | Null = js.native
   
   def equals(segment: Segment): Boolean = js.native

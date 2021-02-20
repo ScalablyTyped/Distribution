@@ -1,11 +1,12 @@
 package typings.ace.AceAjax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Document extends js.Object {
+trait Document extends StObject {
   
   /**
     * Applies all the changes previously accumulated. These can be either `'includeText'`, `'insertLines'`, `'removeText'`, and `'removeLines'`.
@@ -250,105 +251,93 @@ object Document {
   }
   
   @scala.inline
-  implicit class DocumentOps[Self <: Document] (val x: Self) extends AnyVal {
+  implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyDeltas(value: js.Array[Delta] => Unit): Self = StObject.set(x, "applyDeltas", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateAnchor(value: (Double, Double) => Unit): Self = StObject.set(x, "createAnchor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAllLines(value: () => js.Array[String]): Self = StObject.set(x, "getAllLines", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplyDeltas(value: js.Array[Delta] => Unit): Self = this.set("applyDeltas", js.Any.fromFunction1(value))
+    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateAnchor(value: (Double, Double) => Unit): Self = this.set("createAnchor", js.Any.fromFunction2(value))
+    def setGetLine(value: Double => String): Self = StObject.set(x, "getLine", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAllLines(value: () => js.Array[String]): Self = this.set("getAllLines", js.Any.fromFunction0(value))
+    def setGetLines(value: (Double, Double) => js.Array[String]): Self = StObject.set(x, "getLines", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetLength(value: () => Double): Self = this.set("getLength", js.Any.fromFunction0(value))
+    def setGetNewLineCharacter(value: () => String): Self = StObject.set(x, "getNewLineCharacter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLine(value: Double => String): Self = this.set("getLine", js.Any.fromFunction1(value))
+    def setGetNewLineMode(value: () => String): Self = StObject.set(x, "getNewLineMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLines(value: (Double, Double) => js.Array[String]): Self = this.set("getLines", js.Any.fromFunction2(value))
+    def setGetTextRange(value: Range => String): Self = StObject.set(x, "getTextRange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNewLineCharacter(value: () => String): Self = this.set("getNewLineCharacter", js.Any.fromFunction0(value))
+    def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNewLineMode(value: () => String): Self = this.set("getNewLineMode", js.Any.fromFunction0(value))
+    def setIndexToPosition(value: (Double, Double) => Position): Self = StObject.set(x, "indexToPosition", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetTextRange(value: Range => String): Self = this.set("getTextRange", js.Any.fromFunction1(value))
+    def setInsert(value: (Position, String) => js.Any): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetValue(value: () => String): Self = this.set("getValue", js.Any.fromFunction0(value))
+    def setInsertFullLines(value: (Double, js.Array[String]) => js.Any): Self = StObject.set(x, "insertFullLines", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIndexToPosition(value: (Double, Double) => Position): Self = this.set("indexToPosition", js.Any.fromFunction2(value))
+    def setInsertInLine(value: (js.Any, String) => js.Any): Self = StObject.set(x, "insertInLine", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInsert(value: (Position, String) => js.Any): Self = this.set("insert", js.Any.fromFunction2(value))
+    def setInsertLines(value: (Double, js.Array[String]) => js.Any): Self = StObject.set(x, "insertLines", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInsertFullLines(value: (Double, js.Array[String]) => js.Any): Self = this.set("insertFullLines", js.Any.fromFunction2(value))
+    def setInsertMergedLines(value: (Double, js.Array[String]) => js.Any): Self = StObject.set(x, "insertMergedLines", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInsertInLine(value: (js.Any, String) => js.Any): Self = this.set("insertInLine", js.Any.fromFunction2(value))
+    def setInsertNewLine(value: Position => js.Any): Self = StObject.set(x, "insertNewLine", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsertLines(value: (Double, js.Array[String]) => js.Any): Self = this.set("insertLines", js.Any.fromFunction2(value))
+    def setIsNewLine(value: String => Boolean): Self = StObject.set(x, "isNewLine", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsertMergedLines(value: (Double, js.Array[String]) => js.Any): Self = this.set("insertMergedLines", js.Any.fromFunction2(value))
+    def setOn(value: (String, js.Function1[/* e */ js.Any, _]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInsertNewLine(value: Position => js.Any): Self = this.set("insertNewLine", js.Any.fromFunction1(value))
+    def setPositionToIndex(value: (Position, Double) => Double): Self = StObject.set(x, "positionToIndex", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsNewLine(value: String => Boolean): Self = this.set("isNewLine", js.Any.fromFunction1(value))
+    def setRemove(value: Range => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOn(value: (String, js.Function1[/* e */ js.Any, _]) => Unit): Self = this.set("on", js.Any.fromFunction2(value))
+    def setRemoveFullLines(value: (Double, Double) => js.Array[String]): Self = StObject.set(x, "removeFullLines", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPositionToIndex(value: (Position, Double) => Double): Self = this.set("positionToIndex", js.Any.fromFunction2(value))
+    def setRemoveInLine(value: (Double, Double, Double) => js.Any): Self = StObject.set(x, "removeInLine", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setRemove(value: Range => js.Any): Self = this.set("remove", js.Any.fromFunction1(value))
+    def setRemoveLines(value: (Double, Double) => js.Array[String]): Self = StObject.set(x, "removeLines", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRemoveFullLines(value: (Double, Double) => js.Array[String]): Self = this.set("removeFullLines", js.Any.fromFunction2(value))
+    def setRemoveNewLine(value: Double => Unit): Self = StObject.set(x, "removeNewLine", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveInLine(value: (Double, Double, Double) => js.Any): Self = this.set("removeInLine", js.Any.fromFunction3(value))
+    def setReplace(value: (Range, String) => js.Any): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRemoveLines(value: (Double, Double) => js.Array[String]): Self = this.set("removeLines", js.Any.fromFunction2(value))
+    def setRevertDeltas(value: js.Array[Delta] => Unit): Self = StObject.set(x, "revertDeltas", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveNewLine(value: Double => Unit): Self = this.set("removeNewLine", js.Any.fromFunction1(value))
+    def setSetNewLineMode(value: String => Unit): Self = StObject.set(x, "setNewLineMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReplace(value: (Range, String) => js.Any): Self = this.set("replace", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRevertDeltas(value: js.Array[Delta] => Unit): Self = this.set("revertDeltas", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetNewLineMode(value: String => Unit): Self = this.set("setNewLineMode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetValue(value: String => Unit): Self = this.set("setValue", js.Any.fromFunction1(value))
+    def setSetValue(value: String => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
   }
 }

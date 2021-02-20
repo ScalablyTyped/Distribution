@@ -2,6 +2,7 @@ package typings.officeUiFabricReact.indexBundleMod
 
 import typings.officeUiFabricReact.anon.BeakWidth
 import typings.officeUiFabricReact.calloutTypesMod.ICalloutProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +14,15 @@ class CalloutContentBase protected ()
   def this(props: ICalloutProps) = this()
 }
 /* static members */
-@JSImport("office-ui-fabric-react/lib/index.bundle", "CalloutContentBase")
-@js.native
-object CalloutContentBase extends js.Object {
+object CalloutContentBase {
   
-  var defaultProps: BeakWidth = js.native
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "CalloutContentBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "CalloutContentBase.defaultProps")
+  @js.native
+  def defaultProps: BeakWidth = js.native
+  @scala.inline
+  def defaultProps_=(x: BeakWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

@@ -10,16 +10,16 @@ import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.pointsCloudSystemMod.PointsCloudSystem
 import typings.babylonjs.typesMod.Nullable
 import typings.std.ArrayBufferView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Particles/cloudPoint", JSImport.Namespace)
-@js.native
-object cloudPointMod extends js.Object {
+object cloudPointMod {
   
+  @JSImport("babylonjs/Particles/cloudPoint", "CloudPoint")
   @js.native
-  class CloudPoint protected () extends js.Object {
+  class CloudPoint protected () extends StObject {
     /**
       * Creates a Point Cloud object.
       * Don't create particles manually, use instead the PCS internal tools like _addParticle()
@@ -175,8 +175,9 @@ object cloudPointMod extends js.Object {
     var velocity: Vector3 = js.native
   }
   
+  @JSImport("babylonjs/Particles/cloudPoint", "PointsGroup")
   @js.native
-  class PointsGroup protected () extends js.Object {
+  class PointsGroup protected () extends StObject {
     /**
       * Creates a points group object. This is an internal reference to produce particles for the PCS.
       * PCS internal tool, don't use it manually.

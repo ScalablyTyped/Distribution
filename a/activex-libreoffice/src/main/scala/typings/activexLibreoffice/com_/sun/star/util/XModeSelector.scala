@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.util
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,36 +49,24 @@ object XModeSelector {
   }
   
   @scala.inline
-  implicit class XModeSelectorOps[Self <: XModeSelector] (val x: Self) extends AnyVal {
+  implicit class XModeSelectorMutableBuilder[Self <: XModeSelector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetMode(value: () => String): Self = StObject.set(x, "getMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSupportedModes(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedModes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: String): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("Mode", value.asInstanceOf[js.Any])
+    def setSetMode(value: String => Unit): Self = StObject.set(x, "setMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSupportedModes(value: SafeArray[String]): Self = this.set("SupportedModes", value.asInstanceOf[js.Any])
+    def setSupportedModes(value: SafeArray[String]): Self = StObject.set(x, "SupportedModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMode(value: () => String): Self = this.set("getMode", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSupportedModes(value: () => SafeArray[String]): Self = this.set("getSupportedModes", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetMode(value: String => Unit): Self = this.set("setMode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSupportsMode(value: String => Boolean): Self = this.set("supportsMode", js.Any.fromFunction1(value))
+    def setSupportsMode(value: String => Boolean): Self = StObject.set(x, "supportsMode", js.Any.fromFunction1(value))
   }
 }

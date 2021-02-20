@@ -1,17 +1,16 @@
 package typings.babylonjs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.postProcessMod.PostProcess
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/tonemapPostProcess", JSImport.Namespace)
-@js.native
-object tonemapPostProcessMod extends js.Object {
+object tonemapPostProcessMod {
   
+  @JSImport("babylonjs/PostProcesses/tonemapPostProcess", "TonemapPostProcess")
   @js.native
   class TonemapPostProcess protected () extends PostProcess {
     /**
@@ -105,9 +104,10 @@ object tonemapPostProcessMod extends js.Object {
   }
   
   @js.native
-  sealed trait TonemappingOperator extends js.Object
+  sealed trait TonemappingOperator extends StObject
+  @JSImport("babylonjs/PostProcesses/tonemapPostProcess", "TonemappingOperator")
   @js.native
-  object TonemappingOperator extends js.Object {
+  object TonemappingOperator extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[TonemappingOperator with Double] = js.native
@@ -115,25 +115,21 @@ object tonemapPostProcessMod extends js.Object {
     /** Hable */
     @js.native
     sealed trait Hable extends TonemappingOperator
-    /* 0 */ @js.native
-    object Hable extends TopLevel[Hable with Double]
+    /* 0 */ val Hable: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator.Hable with Double = js.native
     
     /** HejiDawson */
     @js.native
     sealed trait HejiDawson extends TonemappingOperator
-    /* 2 */ @js.native
-    object HejiDawson extends TopLevel[HejiDawson with Double]
+    /* 2 */ val HejiDawson: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator.HejiDawson with Double = js.native
     
     /** Photographic */
     @js.native
     sealed trait Photographic extends TonemappingOperator
-    /* 3 */ @js.native
-    object Photographic extends TopLevel[Photographic with Double]
+    /* 3 */ val Photographic: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator.Photographic with Double = js.native
     
     /** Reinhard */
     @js.native
     sealed trait Reinhard extends TonemappingOperator
-    /* 1 */ @js.native
-    object Reinhard extends TopLevel[Reinhard with Double]
+    /* 1 */ val Reinhard: typings.babylonjs.tonemapPostProcessMod.TonemappingOperator.Reinhard with Double = js.native
   }
 }

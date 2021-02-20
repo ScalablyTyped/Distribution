@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The default constructor produces the Point(0,0).
   */
-class Point () extends js.Object {
+class Point () extends StObject {
   /**
     * The two-argument constructor produces the Point(x, y).
     * @param {number} x
@@ -189,10 +190,7 @@ class Point () extends js.Object {
   /**Gets or sets the y value of the Point.*/
   var y: Double = js.native
 }
-/* static members */
-@JSImport("go", "Point")
-@js.native
-object Point extends js.Object {
+object Point {
   
   /**
     * This static function returns the angle in degrees of the line from point P to point Q.
@@ -201,6 +199,9 @@ object Point extends js.Object {
     * @param {number} qx
     * @param {number} qy
     */
+  /* static member */
+  @JSImport("go", "Point.direction")
+  @js.native
   def direction(px: Double, py: Double, qx: Double, qy: Double): Double = js.native
   
   /**
@@ -213,6 +214,9 @@ object Point extends js.Object {
     * @param {number} bx
     * @param {number} by
     */
+  /* static member */
+  @JSImport("go", "Point.distanceLineSegmentSquared")
+  @js.native
   def distanceLineSegmentSquared(px: Double, py: Double, ax: Double, ay: Double, bx: Double, by: Double): Double = js.native
   
   /**
@@ -222,17 +226,26 @@ object Point extends js.Object {
     * @param {number} qx
     * @param {number} qy
     */
+  /* static member */
+  @JSImport("go", "Point.distanceSquared")
+  @js.native
   def distanceSquared(px: Double, py: Double, qx: Double, qy: Double): Double = js.native
   
   /**
     * This static function can be used to read in a Point from a string that was produced by Point.stringify.
     * @param {string} str
     */
+  /* static member */
+  @JSImport("go", "Point.parse")
+  @js.native
   def parse(str: String): Point = js.native
   
   /**
     * This static function can be used to write out a Point as a string that can be read by Point.parse.
     * @param {Point} val
     */
+  /* static member */
+  @JSImport("go", "Point.stringify")
+  @js.native
   def stringify(`val`: Point): String = js.native
 }

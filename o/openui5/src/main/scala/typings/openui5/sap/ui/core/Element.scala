@@ -3,6 +3,7 @@ package typings.openui5.sap.ui.core
 import typings.jquery.JQueryStatic
 import typings.openui5.sap.ui.base.ManagedObject
 import typings.openui5.sap.ui.model.Binding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

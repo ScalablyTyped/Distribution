@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.three.boneMod.Bone
 import typings.three.geometryMod.MorphTarget
 import typings.three.mod.AnimationClip
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

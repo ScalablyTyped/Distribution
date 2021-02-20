@@ -2,14 +2,21 @@ package typings.reactWindow.mod
 
 import typings.react.mod.Component
 import typings.reactWindow.anon.ScrollLeft
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-window", "FixedSizeGrid")
 @js.native
-class FixedSizeGrid ()
+class FixedSizeGrid protected ()
   extends Component[FixedSizeGridProps, js.Object, js.Any] {
+  def this(props: FixedSizeGridProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: FixedSizeGridProps, context: js.Any) = this()
   
   /**
     * Scroll to the specified offsets.

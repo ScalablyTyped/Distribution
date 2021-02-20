@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Entity extends js.Object {
+trait Entity extends StObject {
   
   @JSName("Access.Entity_typekey")
   var AccessDotEntity_typekey: Entity = js.native

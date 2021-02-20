@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArcGISMapService extends js.Object {
+trait ArcGISMapService extends StObject {
   
   /**
     * Indicates the layer's supported capabilities.
@@ -65,36 +66,24 @@ object ArcGISMapService {
   }
   
   @scala.inline
-  implicit class ArcGISMapServiceOps[Self <: ArcGISMapService] (val x: Self) extends AnyVal {
+  implicit class ArcGISMapServiceMutableBuilder[Self <: ArcGISMapService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapabilities(value: ArcGISMapServiceCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullExtent(value: Extent): Self = StObject.set(x, "fullExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilities(value: ArcGISMapServiceCapabilities): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyright(value: String): Self = this.set("copyright", value.asInstanceOf[js.Any])
+    def setSpatialReference(value: SpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullExtent(value: Extent): Self = this.set("fullExtent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLegendEnabled(value: Boolean): Self = this.set("legendEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpatialReference(value: SpatialReference): Self = this.set("spatialReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

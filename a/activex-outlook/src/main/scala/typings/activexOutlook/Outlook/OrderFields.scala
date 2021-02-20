@@ -1,11 +1,12 @@
 package typings.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderFields extends js.Object {
+trait OrderFields extends StObject {
   
   def Add(PropertyName: String): OrderField = js.native
   def Add(PropertyName: String, IsDescending: js.Any): OrderField = js.native

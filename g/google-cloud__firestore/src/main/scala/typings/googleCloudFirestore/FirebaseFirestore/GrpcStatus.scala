@@ -1,15 +1,16 @@
 package typings.googleCloudFirestore.FirebaseFirestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GrpcStatus extends js.Object
-
+sealed trait GrpcStatus extends StObject
 @JSGlobal("FirebaseFirestore.GrpcStatus")
 @js.native
-object GrpcStatus extends js.Object {
+object GrpcStatus extends StObject {
+  
   @js.native
   sealed trait ABORTED extends GrpcStatus
   
@@ -60,6 +61,4 @@ object GrpcStatus extends js.Object {
   
   @js.native
   sealed trait UNKNOWN extends GrpcStatus
-  
 }
-

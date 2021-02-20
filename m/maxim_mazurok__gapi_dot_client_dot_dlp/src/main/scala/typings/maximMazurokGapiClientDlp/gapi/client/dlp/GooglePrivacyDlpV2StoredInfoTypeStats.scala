@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2StoredInfoTypeStats extends js.Object {
+trait GooglePrivacyDlpV2StoredInfoTypeStats extends StObject {
   
   /** StoredInfoType where findings are defined by a dictionary of phrases. */
   var largeCustomDictionary: js.UndefOr[GooglePrivacyDlpV2LargeCustomDictionaryStats] = js.native
@@ -19,24 +20,12 @@ object GooglePrivacyDlpV2StoredInfoTypeStats {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2StoredInfoTypeStatsOps[Self <: GooglePrivacyDlpV2StoredInfoTypeStats] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2StoredInfoTypeStatsMutableBuilder[Self <: GooglePrivacyDlpV2StoredInfoTypeStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLargeCustomDictionary(value: GooglePrivacyDlpV2LargeCustomDictionaryStats): Self = StObject.set(x, "largeCustomDictionary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLargeCustomDictionary(value: GooglePrivacyDlpV2LargeCustomDictionaryStats): Self = this.set("largeCustomDictionary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLargeCustomDictionary: Self = this.set("largeCustomDictionary", js.undefined)
+    def setLargeCustomDictionaryUndefined: Self = StObject.set(x, "largeCustomDictionary", js.undefined)
   }
 }

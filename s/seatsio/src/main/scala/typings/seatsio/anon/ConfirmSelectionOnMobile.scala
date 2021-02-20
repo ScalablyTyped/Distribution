@@ -1,11 +1,12 @@
 package typings.seatsio.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfirmSelectionOnMobile extends js.Object {
+trait ConfirmSelectionOnMobile extends StObject {
   
   var confirmSelectionOnMobile: js.UndefOr[String] = js.native
   
@@ -32,66 +33,54 @@ object ConfirmSelectionOnMobile {
   }
   
   @scala.inline
-  implicit class ConfirmSelectionOnMobileOps[Self <: ConfirmSelectionOnMobile] (val x: Self) extends AnyVal {
+  implicit class ConfirmSelectionOnMobileMutableBuilder[Self <: ConfirmSelectionOnMobile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfirmSelectionOnMobile(value: String): Self = StObject.set(x, "confirmSelectionOnMobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfirmSelectionOnMobileUndefined: Self = StObject.set(x, "confirmSelectionOnMobile", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowActionHint(value: Boolean): Self = StObject.set(x, "showActionHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirmSelectionOnMobile(value: String): Self = this.set("confirmSelectionOnMobile", value.asInstanceOf[js.Any])
+    def setShowActionHintUndefined: Self = StObject.set(x, "showActionHint", js.undefined)
     
     @scala.inline
-    def deleteConfirmSelectionOnMobile: Self = this.set("confirmSelectionOnMobile", js.undefined)
+    def setShowAvailability(value: Boolean): Self = StObject.set(x, "showAvailability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowActionHint(value: Boolean): Self = this.set("showActionHint", value.asInstanceOf[js.Any])
+    def setShowAvailabilityUndefined: Self = StObject.set(x, "showAvailability", js.undefined)
     
     @scala.inline
-    def deleteShowActionHint: Self = this.set("showActionHint", js.undefined)
+    def setShowCategory(value: Boolean): Self = StObject.set(x, "showCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAvailability(value: Boolean): Self = this.set("showAvailability", value.asInstanceOf[js.Any])
+    def setShowCategoryUndefined: Self = StObject.set(x, "showCategory", js.undefined)
     
     @scala.inline
-    def deleteShowAvailability: Self = this.set("showAvailability", js.undefined)
+    def setShowLabel(value: Boolean): Self = StObject.set(x, "showLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCategory(value: Boolean): Self = this.set("showCategory", value.asInstanceOf[js.Any])
+    def setShowLabelUndefined: Self = StObject.set(x, "showLabel", js.undefined)
     
     @scala.inline
-    def deleteShowCategory: Self = this.set("showCategory", js.undefined)
+    def setShowPricing(value: Boolean): Self = StObject.set(x, "showPricing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowLabel(value: Boolean): Self = this.set("showLabel", value.asInstanceOf[js.Any])
+    def setShowPricingUndefined: Self = StObject.set(x, "showPricing", js.undefined)
     
     @scala.inline
-    def deleteShowLabel: Self = this.set("showLabel", js.undefined)
+    def setShowUnavailableNotice(value: Boolean): Self = StObject.set(x, "showUnavailableNotice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowPricing(value: Boolean): Self = this.set("showPricing", value.asInstanceOf[js.Any])
+    def setShowUnavailableNoticeUndefined: Self = StObject.set(x, "showUnavailableNotice", js.undefined)
     
     @scala.inline
-    def deleteShowPricing: Self = this.set("showPricing", js.undefined)
+    def setStylizedLabel(value: Boolean): Self = StObject.set(x, "stylizedLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowUnavailableNotice(value: Boolean): Self = this.set("showUnavailableNotice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowUnavailableNotice: Self = this.set("showUnavailableNotice", js.undefined)
-    
-    @scala.inline
-    def setStylizedLabel(value: Boolean): Self = this.set("stylizedLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStylizedLabel: Self = this.set("stylizedLabel", js.undefined)
+    def setStylizedLabelUndefined: Self = StObject.set(x, "stylizedLabel", js.undefined)
   }
 }

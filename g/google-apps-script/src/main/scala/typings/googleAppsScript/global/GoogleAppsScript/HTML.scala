@@ -1,12 +1,11 @@
 package typings.googleAppsScript.global.GoogleAppsScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GoogleAppsScript.HTML")
-@js.native
-object HTML extends js.Object {
+object HTML {
   
   /**
     * An enum representing the sandbox modes that can be used for client-side HtmlService
@@ -33,8 +32,9 @@ object HTML extends js.Object {
     *       alert(google.script.sandbox.mode);
     *     </script>
     */
+  @JSGlobal("GoogleAppsScript.HTML.SandboxMode")
   @js.native
-  object SandboxMode extends js.Object {
+  object SandboxMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.HTML.SandboxMode with Double] = js.native
@@ -60,8 +60,9 @@ object HTML extends js.Object {
     *     var output = HtmlService.createHtmlOutput('<b>Hello, world!</b>');
     *     output.setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
     */
+  @JSGlobal("GoogleAppsScript.HTML.XFrameOptionsMode")
   @js.native
-  object XFrameOptionsMode extends js.Object {
+  object XFrameOptionsMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.HTML.XFrameOptionsMode with Double] = js.native

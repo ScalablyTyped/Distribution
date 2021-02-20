@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TapeInfo extends js.Object {
+trait TapeInfo extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the gateway. Use the ListGateways operation to return a list of gateways for your account and AWS Region.
@@ -56,66 +57,54 @@ object TapeInfo {
   }
   
   @scala.inline
-  implicit class TapeInfoOps[Self <: TapeInfo] (val x: Self) extends AnyVal {
+  implicit class TapeInfoMutableBuilder[Self <: TapeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPoolEntryDate(value: Time): Self = StObject.set(x, "PoolEntryDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    def setPoolEntryDateUndefined: Self = StObject.set(x, "PoolEntryDate", js.undefined)
     
     @scala.inline
-    def deleteGatewayARN: Self = this.set("GatewayARN", js.undefined)
+    def setPoolId(value: PoolId): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoolEntryDate(value: Time): Self = this.set("PoolEntryDate", value.asInstanceOf[js.Any])
+    def setPoolIdUndefined: Self = StObject.set(x, "PoolId", js.undefined)
     
     @scala.inline
-    def deletePoolEntryDate: Self = this.set("PoolEntryDate", js.undefined)
+    def setRetentionStartDate(value: Time): Self = StObject.set(x, "RetentionStartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoolId(value: PoolId): Self = this.set("PoolId", value.asInstanceOf[js.Any])
+    def setRetentionStartDateUndefined: Self = StObject.set(x, "RetentionStartDate", js.undefined)
     
     @scala.inline
-    def deletePoolId: Self = this.set("PoolId", js.undefined)
+    def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetentionStartDate(value: Time): Self = this.set("RetentionStartDate", value.asInstanceOf[js.Any])
+    def setTapeARNUndefined: Self = StObject.set(x, "TapeARN", js.undefined)
     
     @scala.inline
-    def deleteRetentionStartDate: Self = this.set("RetentionStartDate", js.undefined)
+    def setTapeBarcode(value: TapeBarcode): Self = StObject.set(x, "TapeBarcode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTapeARN(value: TapeARN): Self = this.set("TapeARN", value.asInstanceOf[js.Any])
+    def setTapeBarcodeUndefined: Self = StObject.set(x, "TapeBarcode", js.undefined)
     
     @scala.inline
-    def deleteTapeARN: Self = this.set("TapeARN", js.undefined)
+    def setTapeSizeInBytes(value: TapeSize): Self = StObject.set(x, "TapeSizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTapeBarcode(value: TapeBarcode): Self = this.set("TapeBarcode", value.asInstanceOf[js.Any])
+    def setTapeSizeInBytesUndefined: Self = StObject.set(x, "TapeSizeInBytes", js.undefined)
     
     @scala.inline
-    def deleteTapeBarcode: Self = this.set("TapeBarcode", js.undefined)
+    def setTapeStatus(value: TapeStatus): Self = StObject.set(x, "TapeStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTapeSizeInBytes(value: TapeSize): Self = this.set("TapeSizeInBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTapeSizeInBytes: Self = this.set("TapeSizeInBytes", js.undefined)
-    
-    @scala.inline
-    def setTapeStatus(value: TapeStatus): Self = this.set("TapeStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTapeStatus: Self = this.set("TapeStatus", js.undefined)
+    def setTapeStatusUndefined: Self = StObject.set(x, "TapeStatus", js.undefined)
   }
 }

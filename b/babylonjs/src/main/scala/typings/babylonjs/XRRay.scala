@@ -2,13 +2,14 @@ package typings.babylonjs
 
 import typings.std.DOMPointReadOnly
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Experimental/Draft features
 @js.native
-trait XRRay extends js.Object {
+trait XRRay extends StObject {
   
   var direction: DOMPointReadOnly = js.native
   
@@ -25,27 +26,15 @@ object XRRay {
   }
   
   @scala.inline
-  implicit class XRRayOps[Self <: XRRay] (val x: Self) extends AnyVal {
+  implicit class XRRayMutableBuilder[Self <: XRRay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: DOMPointReadOnly): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatrix(value: Float32Array): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDirection(value: DOMPointReadOnly): Self = this.set("direction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMatrix(value: Float32Array): Self = this.set("matrix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrigin(value: DOMPointReadOnly): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setOrigin(value: DOMPointReadOnly): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }
 }

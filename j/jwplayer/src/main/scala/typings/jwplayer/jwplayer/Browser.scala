@@ -1,11 +1,12 @@
 package typings.jwplayer.jwplayer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Browser extends js.Object {
+trait Browser extends StObject {
   
   var chrome: Boolean = js.native
   
@@ -41,42 +42,30 @@ object Browser {
   }
   
   @scala.inline
-  implicit class BrowserOps[Self <: Browser] (val x: Self) extends AnyVal {
+  implicit class BrowserMutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChrome(value: Boolean): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEdge(value: Boolean): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFacebook(value: Boolean): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChrome(value: Boolean): Self = this.set("chrome", value.asInstanceOf[js.Any])
+    def setFirefox(value: Boolean): Self = StObject.set(x, "firefox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdge(value: Boolean): Self = this.set("edge", value.asInstanceOf[js.Any])
+    def setIe(value: Boolean): Self = StObject.set(x, "ie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacebook(value: Boolean): Self = this.set("facebook", value.asInstanceOf[js.Any])
+    def setMsie(value: Boolean): Self = StObject.set(x, "msie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirefox(value: Boolean): Self = this.set("firefox", value.asInstanceOf[js.Any])
+    def setSafari(value: Boolean): Self = StObject.set(x, "safari", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIe(value: Boolean): Self = this.set("ie", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMsie(value: Boolean): Self = this.set("msie", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSafari(value: Boolean): Self = this.set("safari", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: Version): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

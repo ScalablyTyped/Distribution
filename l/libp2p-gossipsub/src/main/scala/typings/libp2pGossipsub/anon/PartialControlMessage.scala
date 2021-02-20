@@ -4,13 +4,14 @@ import typings.libp2pGossipsub.messageMod.ControlGraft
 import typings.libp2pGossipsub.messageMod.ControlIHave
 import typings.libp2pGossipsub.messageMod.ControlIWant
 import typings.libp2pGossipsub.messageMod.ControlPrune
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<libp2p-gossipsub.libp2p-gossipsub/src/message.ControlMessage> */
 @js.native
-trait PartialControlMessage extends js.Object {
+trait PartialControlMessage extends StObject {
   
   var graft: js.UndefOr[js.Array[ControlGraft]] = js.native
   
@@ -29,54 +30,42 @@ object PartialControlMessage {
   }
   
   @scala.inline
-  implicit class PartialControlMessageOps[Self <: PartialControlMessage] (val x: Self) extends AnyVal {
+  implicit class PartialControlMessageMutableBuilder[Self <: PartialControlMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGraft(value: js.Array[ControlGraft]): Self = StObject.set(x, "graft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGraftUndefined: Self = StObject.set(x, "graft", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGraftVarargs(value: ControlGraft*): Self = StObject.set(x, "graft", js.Array(value :_*))
     
     @scala.inline
-    def setGraftVarargs(value: ControlGraft*): Self = this.set("graft", js.Array(value :_*))
+    def setIhave(value: js.Array[ControlIHave]): Self = StObject.set(x, "ihave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraft(value: js.Array[ControlGraft]): Self = this.set("graft", value.asInstanceOf[js.Any])
+    def setIhaveUndefined: Self = StObject.set(x, "ihave", js.undefined)
     
     @scala.inline
-    def deleteGraft: Self = this.set("graft", js.undefined)
+    def setIhaveVarargs(value: ControlIHave*): Self = StObject.set(x, "ihave", js.Array(value :_*))
     
     @scala.inline
-    def setIhaveVarargs(value: ControlIHave*): Self = this.set("ihave", js.Array(value :_*))
+    def setIwant(value: js.Array[ControlIWant]): Self = StObject.set(x, "iwant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIhave(value: js.Array[ControlIHave]): Self = this.set("ihave", value.asInstanceOf[js.Any])
+    def setIwantUndefined: Self = StObject.set(x, "iwant", js.undefined)
     
     @scala.inline
-    def deleteIhave: Self = this.set("ihave", js.undefined)
+    def setIwantVarargs(value: ControlIWant*): Self = StObject.set(x, "iwant", js.Array(value :_*))
     
     @scala.inline
-    def setIwantVarargs(value: ControlIWant*): Self = this.set("iwant", js.Array(value :_*))
+    def setPrune(value: js.Array[ControlPrune]): Self = StObject.set(x, "prune", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIwant(value: js.Array[ControlIWant]): Self = this.set("iwant", value.asInstanceOf[js.Any])
+    def setPruneUndefined: Self = StObject.set(x, "prune", js.undefined)
     
     @scala.inline
-    def deleteIwant: Self = this.set("iwant", js.undefined)
-    
-    @scala.inline
-    def setPruneVarargs(value: ControlPrune*): Self = this.set("prune", js.Array(value :_*))
-    
-    @scala.inline
-    def setPrune(value: js.Array[ControlPrune]): Self = this.set("prune", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrune: Self = this.set("prune", js.undefined)
+    def setPruneVarargs(value: ControlPrune*): Self = StObject.set(x, "prune", js.Array(value :_*))
   }
 }

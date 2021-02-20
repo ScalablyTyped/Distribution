@@ -1,12 +1,11 @@
 package typings.openlayers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openlayers", "has")
-@js.native
-object has extends js.Object {
+object has {
   
   /**
     * True if both the library and browser support Canvas.  Always `false`
@@ -14,6 +13,8 @@ object has extends js.Object {
     * @const
     * @api stable
     */
+  @JSImport("openlayers", "has.CANVAS")
+  @js.native
   val CANVAS: Boolean = js.native
   
   /**
@@ -21,6 +22,8 @@ object has extends js.Object {
     * @const
     * @api stable
     */
+  @JSImport("openlayers", "has.DEVICE_ORIENTATION")
+  @js.native
   val DEVICE_ORIENTATION: Boolean = js.native
   
   /**
@@ -29,6 +32,8 @@ object has extends js.Object {
     * @const
     * @api stable
     */
+  @JSImport("openlayers", "has.DEVICE_PIXEL_RATIO")
+  @js.native
   val DEVICE_PIXEL_RATIO: Double = js.native
   
   /**
@@ -36,6 +41,8 @@ object has extends js.Object {
     * @const
     * @api stable
     */
+  @JSImport("openlayers", "has.GEOLOCATION")
+  @js.native
   val GEOLOCATION: Boolean = js.native
   
   /**
@@ -43,6 +50,8 @@ object has extends js.Object {
     * @const
     * @api stable
     */
+  @JSImport("openlayers", "has.TOUCH")
+  @js.native
   val TOUCH: Boolean = js.native
   
   /**
@@ -51,5 +60,7 @@ object has extends js.Object {
     * @const
     * @api stable
     */
+  @JSImport("openlayers", "has.WEBGL")
+  @js.native
   val WEBGL: Boolean = js.native
 }

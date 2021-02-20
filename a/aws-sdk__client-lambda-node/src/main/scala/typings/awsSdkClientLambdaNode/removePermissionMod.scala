@@ -1,12 +1,13 @@
 package typings.awsSdkClientLambdaNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/model/RemovePermission", JSImport.Namespace)
-@js.native
-object removePermissionMod extends js.Object {
+object removePermissionMod {
   
+  @JSImport("@aws-sdk/client-lambda-node/model/RemovePermission", "RemovePermission")
+  @js.native
   val RemovePermission: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
 }

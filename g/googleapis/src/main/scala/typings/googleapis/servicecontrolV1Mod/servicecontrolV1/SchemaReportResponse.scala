@@ -1,5 +1,6 @@
 package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response message for the Report method.
   */
 @js.native
-trait SchemaReportResponse extends js.Object {
+trait SchemaReportResponse extends StObject {
   
   /**
     * Partial failures, one for each `Operation` in the request that failed
@@ -49,42 +50,30 @@ object SchemaReportResponse {
   }
   
   @scala.inline
-  implicit class SchemaReportResponseOps[Self <: SchemaReportResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaReportResponseMutableBuilder[Self <: SchemaReportResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReportErrors(value: js.Array[SchemaReportError]): Self = StObject.set(x, "reportErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReportErrorsUndefined: Self = StObject.set(x, "reportErrors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReportErrorsVarargs(value: SchemaReportError*): Self = StObject.set(x, "reportErrors", js.Array(value :_*))
     
     @scala.inline
-    def setReportErrorsVarargs(value: SchemaReportError*): Self = this.set("reportErrors", js.Array(value :_*))
+    def setReportInfos(value: js.Array[SchemaReportInfo]): Self = StObject.set(x, "reportInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportErrors(value: js.Array[SchemaReportError]): Self = this.set("reportErrors", value.asInstanceOf[js.Any])
+    def setReportInfosUndefined: Self = StObject.set(x, "reportInfos", js.undefined)
     
     @scala.inline
-    def deleteReportErrors: Self = this.set("reportErrors", js.undefined)
+    def setReportInfosVarargs(value: SchemaReportInfo*): Self = StObject.set(x, "reportInfos", js.Array(value :_*))
     
     @scala.inline
-    def setReportInfosVarargs(value: SchemaReportInfo*): Self = this.set("reportInfos", js.Array(value :_*))
+    def setServiceConfigId(value: String): Self = StObject.set(x, "serviceConfigId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportInfos(value: js.Array[SchemaReportInfo]): Self = this.set("reportInfos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportInfos: Self = this.set("reportInfos", js.undefined)
-    
-    @scala.inline
-    def setServiceConfigId(value: String): Self = this.set("serviceConfigId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceConfigId: Self = this.set("serviceConfigId", js.undefined)
+    def setServiceConfigIdUndefined: Self = StObject.set(x, "serviceConfigId", js.undefined)
   }
 }

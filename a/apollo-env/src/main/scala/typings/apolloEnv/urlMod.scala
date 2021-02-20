@@ -5,14 +5,14 @@ import typings.apolloEnv.arrayMod.global.Array
 import typings.node.NodeJS.Dict
 import typings.node.urlMod.URL_
 import typings.std.Iterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("apollo-env/lib/fetch/url", JSImport.Namespace)
-@js.native
-object urlMod extends js.Object {
+object urlMod {
   
+  @JSImport("apollo-env/lib/fetch/url", "URL")
   @js.native
   class URL protected () extends URL_ {
     def this(input: String) = this()
@@ -20,6 +20,7 @@ object urlMod extends js.Object {
     def this(input: String, base: URL_) = this()
   }
   
+  @JSImport("apollo-env/lib/fetch/url", "URLSearchParams")
   @js.native
   class URLSearchParams ()
     extends typings.node.urlMod.URLSearchParams {

@@ -1,6 +1,7 @@
 package typings.sharepoint.SPClientTemplates
 
 import typings.sharepoint.anon.LookupId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,45 +67,33 @@ object FieldSchemaInFormLookup {
   }
   
   @scala.inline
-  implicit class FieldSchemaInFormLookupOps[Self <: FieldSchemaInFormLookup] (val x: Self) extends AnyVal {
+  implicit class FieldSchemaInFormLookupMutableBuilder[Self <: FieldSchemaInFormLookup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowMultipleValues(value: Boolean): Self = StObject.set(x, "AllowMultipleValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseDisplayFormUrl(value: String): Self = StObject.set(x, "BaseDisplayFormUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChoiceCount(value: Double): Self = StObject.set(x, "ChoiceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowMultipleValues(value: Boolean): Self = this.set("AllowMultipleValues", value.asInstanceOf[js.Any])
+    def setChoices(value: js.Array[LookupId]): Self = StObject.set(x, "Choices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseDisplayFormUrl(value: String): Self = this.set("BaseDisplayFormUrl", value.asInstanceOf[js.Any])
+    def setChoicesVarargs(value: LookupId*): Self = StObject.set(x, "Choices", js.Array(value :_*))
     
     @scala.inline
-    def setChoiceCount(value: Double): Self = this.set("ChoiceCount", value.asInstanceOf[js.Any])
+    def setDependentLookup(value: Boolean): Self = StObject.set(x, "DependentLookup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChoicesVarargs(value: LookupId*): Self = this.set("Choices", js.Array(value :_*))
+    def setLookupListId(value: String): Self = StObject.set(x, "LookupListId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChoices(value: js.Array[LookupId]): Self = this.set("Choices", value.asInstanceOf[js.Any])
+    def setMaxQueryResult(value: String): Self = StObject.set(x, "MaxQueryResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependentLookup(value: Boolean): Self = this.set("DependentLookup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLookupListId(value: String): Self = this.set("LookupListId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxQueryResult(value: String): Self = this.set("MaxQueryResult", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThrottled(value: Boolean): Self = this.set("Throttled", value.asInstanceOf[js.Any])
+    def setThrottled(value: Boolean): Self = StObject.set(x, "Throttled", value.asInstanceOf[js.Any])
   }
 }

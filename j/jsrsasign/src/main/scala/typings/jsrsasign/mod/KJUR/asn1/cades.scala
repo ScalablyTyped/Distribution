@@ -10,6 +10,7 @@ import typings.jsrsasign.anon.Hash
 import typings.jsrsasign.anon.Length
 import typings.jsrsasign.anon.Res
 import typings.jsrsasign.jsrsasign.KJUR.asn1.cms.Attribute
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -153,12 +154,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * esthex = info.obj.getContentInfoEncodedHex(); // CAdES-T
   * ```
   */
-@JSImport("jsrsasign", "KJUR.asn1.cades")
-@js.native
-object cades extends js.Object {
+object cades {
   
-  @js.native
-  object CAdESUtil extends js.Object {
+  object CAdESUtil {
     
     /**
       * parse CMS SignedData to add unsigned attributes
@@ -183,6 +181,8 @@ object cades extends js.Object {
       * info = KJUR.asn1.cades.CAdESUtil.parseSignedDataForAddingUnsigned(beshex);
       * sd = info.obj;
       */
+    @JSImport("jsrsasign", "KJUR.asn1.cades.CAdESUtil.parseSignedDataForAddingUnsigned")
+    @js.native
     def parseSignedDataForAddingUnsigned(hex: String): Algs = js.native
     
     /**
@@ -209,6 +209,8 @@ object cades extends js.Object {
       * future version. That's way this version provides support
       * for CAdES-T and not for CAdES-C.
       */
+    @JSImport("jsrsasign", "KJUR.asn1.cades.CAdESUtil.parseSignerInfoForAddingUnsigned")
+    @js.native
     def parseSignerInfoForAddingUnsigned(hex: String, iSI: Double, nth: Double): Digalg = js.native
   }
   
@@ -224,6 +226,7 @@ object cades extends js.Object {
     * @example
     * o = new KJUR.asn1.cades.CompleteCertificateRefs([certPEM1,certPEM2]);
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cades.CompleteCertificateRefs")
   @js.native
   class CompleteCertificateRefs ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.cades.CompleteCertificateRefs {
@@ -243,6 +246,7 @@ object cades extends js.Object {
     * o = new KJUR.asn1.cades.OtherCertID(certPEM);
     * o = new KJUR.asn1.cades.OtherCertID({cert:certPEM, hasis: false});
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cades.OtherCertID")
   @js.native
   class OtherCertID ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.cades.OtherCertID {
@@ -267,6 +271,7 @@ object cades extends js.Object {
     * o = new KJUR.asn1.cades.OtherHash({alg: 'sha256', cert: certPEM});
     * o = new KJUR.asn1.cades.OtherHash({cert: certPEM});
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cades.OtherHash")
   @js.native
   class OtherHash ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.cades.OtherHash {
@@ -287,6 +292,7 @@ object cades extends js.Object {
     * OtherHashValue ::= OCTET STRING
     * ```
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cades.OtherHashAlgAndValue")
   @js.native
   class OtherHashAlgAndValue ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
@@ -317,6 +323,7 @@ object cades extends js.Object {
     *   hash: {alg: 'sha1', hash: 'a1a2a3a4...'}
     * });
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cades.SignaturePolicyIdentifier")
   @js.native
   class SignaturePolicyIdentifier () extends Attribute {
     def this(params: Hash) = this()
@@ -332,6 +339,7 @@ object cades extends js.Object {
     * SignatureTimeStampToken ::= TimeStampToken
     * ```
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cades.SignatureTimeStamp")
   @js.native
   class SignatureTimeStamp () extends Attribute {
     def this(params: Res) = this()

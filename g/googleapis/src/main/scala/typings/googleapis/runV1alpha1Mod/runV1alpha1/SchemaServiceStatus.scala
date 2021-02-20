@@ -1,5 +1,6 @@
 package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The current state of the Service. Output only.
   */
 @js.native
-trait SchemaServiceStatus extends js.Object {
+trait SchemaServiceStatus extends StObject {
   
   /**
     * From RouteStatus. Similar to domain, information on where the service is
@@ -69,66 +70,54 @@ object SchemaServiceStatus {
   }
   
   @scala.inline
-  implicit class SchemaServiceStatusOps[Self <: SchemaServiceStatus] (val x: Self) extends AnyVal {
+  implicit class SchemaServiceStatusMutableBuilder[Self <: SchemaServiceStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: SchemaAddressable): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditions(value: js.Array[SchemaServiceCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: SchemaAddressable): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setConditionsVarargs(value: SchemaServiceCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def setConditionsVarargs(value: SchemaServiceCondition*): Self = this.set("conditions", js.Array(value :_*))
+    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: js.Array[SchemaServiceCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     @scala.inline
-    def deleteConditions: Self = this.set("conditions", js.undefined)
+    def setLatestCreatedRevisionName(value: String): Self = StObject.set(x, "latestCreatedRevisionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setLatestCreatedRevisionNameUndefined: Self = StObject.set(x, "latestCreatedRevisionName", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
+    def setLatestReadyRevisionName(value: String): Self = StObject.set(x, "latestReadyRevisionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestCreatedRevisionName(value: String): Self = this.set("latestCreatedRevisionName", value.asInstanceOf[js.Any])
+    def setLatestReadyRevisionNameUndefined: Self = StObject.set(x, "latestReadyRevisionName", js.undefined)
     
     @scala.inline
-    def deleteLatestCreatedRevisionName: Self = this.set("latestCreatedRevisionName", js.undefined)
+    def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestReadyRevisionName(value: String): Self = this.set("latestReadyRevisionName", value.asInstanceOf[js.Any])
+    def setObservedGenerationUndefined: Self = StObject.set(x, "observedGeneration", js.undefined)
     
     @scala.inline
-    def deleteLatestReadyRevisionName: Self = this.set("latestReadyRevisionName", js.undefined)
+    def setTraffic(value: js.Array[SchemaTrafficTarget]): Self = StObject.set(x, "traffic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObservedGeneration(value: Double): Self = this.set("observedGeneration", value.asInstanceOf[js.Any])
+    def setTrafficUndefined: Self = StObject.set(x, "traffic", js.undefined)
     
     @scala.inline
-    def deleteObservedGeneration: Self = this.set("observedGeneration", js.undefined)
-    
-    @scala.inline
-    def setTrafficVarargs(value: SchemaTrafficTarget*): Self = this.set("traffic", js.Array(value :_*))
-    
-    @scala.inline
-    def setTraffic(value: js.Array[SchemaTrafficTarget]): Self = this.set("traffic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraffic: Self = this.set("traffic", js.undefined)
+    def setTrafficVarargs(value: SchemaTrafficTarget*): Self = StObject.set(x, "traffic", js.Array(value :_*))
   }
 }

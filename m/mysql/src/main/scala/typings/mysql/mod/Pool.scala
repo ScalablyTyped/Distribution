@@ -5,6 +5,7 @@ import typings.mysql.mysqlStrings.connection
 import typings.mysql.mysqlStrings.enqueue
 import typings.mysql.mysqlStrings.error
 import typings.mysql.mysqlStrings.release
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

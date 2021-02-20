@@ -1,18 +1,18 @@
 package typings.googleAppsScript.global.GoogleAppsScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GoogleAppsScript.Data_Studio")
-@js.native
-object DataStudio extends js.Object {
+object DataStudio {
   
   /**
     * An enum that defines the aggregation types that can be set for a Field.
     */
+  @JSGlobal("GoogleAppsScript.Data_Studio.AggregationType")
   @js.native
-  object AggregationType extends js.Object {
+  object AggregationType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.DataStudio.AggregationType with Double] = js.native
@@ -37,8 +37,9 @@ object DataStudio extends js.Object {
   /**
     * An enum that defines the authentication types that can be set for a connector.
     */
+  @JSGlobal("GoogleAppsScript.Data_Studio.AuthType")
   @js.native
-  object AuthType extends js.Object {
+  object AuthType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.DataStudio.AuthType with Double] = js.native
@@ -57,8 +58,9 @@ object DataStudio extends js.Object {
   /**
     * An enum that defines the BigQuery parameter types that you can set.
     */
+  @JSGlobal("GoogleAppsScript.Data_Studio.BigQueryParameterType")
   @js.native
-  object BigQueryParameterType extends js.Object {
+  object BigQueryParameterType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -77,8 +79,9 @@ object DataStudio extends js.Object {
   /**
     * An enum that defines the types that can be set for a Field.
     */
+  @JSGlobal("GoogleAppsScript.Data_Studio.FieldType")
   @js.native
-  object FieldType extends js.Object {
+  object FieldType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.DataStudio.FieldType with Double] = js.native

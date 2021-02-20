@@ -1,11 +1,12 @@
 package typings.serverless.awsProviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Alb extends js.Object {
+trait Alb extends StObject {
   
   var authorizers: js.UndefOr[Authorizers] = js.native
   
@@ -20,30 +21,18 @@ object Alb {
   }
   
   @scala.inline
-  implicit class AlbOps[Self <: Alb] (val x: Self) extends AnyVal {
+  implicit class AlbMutableBuilder[Self <: Alb] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizers(value: Authorizers): Self = StObject.set(x, "authorizers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizersUndefined: Self = StObject.set(x, "authorizers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetGroupPrefix(value: String): Self = StObject.set(x, "targetGroupPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizers(value: Authorizers): Self = this.set("authorizers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthorizers: Self = this.set("authorizers", js.undefined)
-    
-    @scala.inline
-    def setTargetGroupPrefix(value: String): Self = this.set("targetGroupPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetGroupPrefix: Self = this.set("targetGroupPrefix", js.undefined)
+    def setTargetGroupPrefixUndefined: Self = StObject.set(x, "targetGroupPrefix", js.undefined)
   }
 }

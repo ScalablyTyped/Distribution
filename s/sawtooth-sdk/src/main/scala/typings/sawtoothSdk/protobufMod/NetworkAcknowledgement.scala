@@ -1,12 +1,12 @@
 package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.NetworkAcknowledgement.Status
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,16 +31,41 @@ class NetworkAcknowledgement () extends INetworkAcknowledgement {
   def toJSON(): StringDictionary[js.Any] = js.native
 }
 /* static members */
-@JSImport("sawtooth-sdk/protobuf", "NetworkAcknowledgement")
-@js.native
-object NetworkAcknowledgement extends js.Object {
+object NetworkAcknowledgement {
+  
+  @js.native
+  sealed trait Status extends StObject
+  /** Status enum. */
+  @JSImport("sawtooth-sdk/protobuf", "NetworkAcknowledgement.Status")
+  @js.native
+  object Status extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[Status with Double] = js.native
+    
+    @js.native
+    sealed trait ERROR extends Status
+    /* 2 */ val ERROR: typings.sawtoothSdk.protobufMod.NetworkAcknowledgement.Status.ERROR with Double = js.native
+    
+    @js.native
+    sealed trait OK extends Status
+    /* 1 */ val OK: typings.sawtoothSdk.protobufMod.NetworkAcknowledgement.Status.OK with Double = js.native
+    
+    @js.native
+    sealed trait STATUS_UNSET extends Status
+    /* 0 */ val STATUS_UNSET: typings.sawtoothSdk.protobufMod.NetworkAcknowledgement.Status.STATUS_UNSET with Double = js.native
+  }
   
   /**
     * Creates a new NetworkAcknowledgement instance using the specified properties.
     * @param [properties] Properties to set
     * @returns NetworkAcknowledgement instance
     */
+  @JSImport("sawtooth-sdk/protobuf", "NetworkAcknowledgement.create")
+  @js.native
   def create(): NetworkAcknowledgement = js.native
+  @JSImport("sawtooth-sdk/protobuf", "NetworkAcknowledgement.create")
+  @js.native
   def create(properties: INetworkAcknowledgement): NetworkAcknowledgement = js.native
   
   /**
@@ -51,9 +76,17 @@ object NetworkAcknowledgement extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "NetworkAcknowledgement.decode")
+  @js.native
   def decode(reader: Reader): NetworkAcknowledgement = js.native
+  @JSImport("sawtooth-sdk/protobuf", "NetworkAcknowledgement.decode")
+  @js.native
   def decode(reader: Reader, length: Double): NetworkAcknowledgement = js.native
+  @JSImport("sawtooth-sdk/protobuf", "NetworkAcknowledgement.decode")
+  @js.native
   def decode(reader: Uint8Array): NetworkAcknowledgement = js.native
+  @JSImport("sawtooth-sdk/protobuf", "NetworkAcknowledgement.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): NetworkAcknowledgement = js.native
   
   /**
@@ -63,7 +96,11 @@ object NetworkAcknowledgement extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "NetworkAcknowledgement.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): NetworkAcknowledgement = js.native
+  @JSImport("sawtooth-sdk/protobuf", "NetworkAcknowledgement.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): NetworkAcknowledgement = js.native
   
   /**
@@ -72,7 +109,11 @@ object NetworkAcknowledgement extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "NetworkAcknowledgement.encode")
+  @js.native
   def encode(message: INetworkAcknowledgement): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "NetworkAcknowledgement.encode")
+  @js.native
   def encode(message: INetworkAcknowledgement, writer: Writer): Writer = js.native
   
   /**
@@ -81,7 +122,11 @@ object NetworkAcknowledgement extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "NetworkAcknowledgement.encodeDelimited")
+  @js.native
   def encodeDelimited(message: INetworkAcknowledgement): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "NetworkAcknowledgement.encodeDelimited")
+  @js.native
   def encodeDelimited(message: INetworkAcknowledgement, writer: Writer): Writer = js.native
   
   /**
@@ -89,6 +134,8 @@ object NetworkAcknowledgement extends js.Object {
     * @param object Plain object
     * @returns NetworkAcknowledgement
     */
+  @JSImport("sawtooth-sdk/protobuf", "NetworkAcknowledgement.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): NetworkAcknowledgement = js.native
   
   /**
@@ -97,7 +144,11 @@ object NetworkAcknowledgement extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("sawtooth-sdk/protobuf", "NetworkAcknowledgement.toObject")
+  @js.native
   def toObject(message: NetworkAcknowledgement): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk/protobuf", "NetworkAcknowledgement.toObject")
+  @js.native
   def toObject(message: NetworkAcknowledgement, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -105,30 +156,7 @@ object NetworkAcknowledgement extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("sawtooth-sdk/protobuf", "NetworkAcknowledgement.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
-  
-  @js.native
-  sealed trait Status extends js.Object
-  /** Status enum. */
-  @js.native
-  object Status extends js.Object {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Status with Double] = js.native
-    
-    @js.native
-    sealed trait ERROR extends Status
-    /* 2 */ @js.native
-    object ERROR extends TopLevel[ERROR with Double]
-    
-    @js.native
-    sealed trait OK extends Status
-    /* 1 */ @js.native
-    object OK extends TopLevel[OK with Double]
-    
-    @js.native
-    sealed trait STATUS_UNSET extends Status
-    /* 0 */ @js.native
-    object STATUS_UNSET extends TopLevel[STATUS_UNSET with Double]
-  }
 }

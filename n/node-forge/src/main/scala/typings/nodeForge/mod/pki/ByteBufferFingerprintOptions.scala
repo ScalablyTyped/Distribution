@@ -3,12 +3,13 @@ package typings.nodeForge.mod.pki
 import typings.nodeForge.mod.md.MessageDigest
 import typings.nodeForge.nodeForgeStrings.RSAPublicKey
 import typings.nodeForge.nodeForgeStrings.SubjectPublicKeyInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ByteBufferFingerprintOptions extends js.Object {
+trait ByteBufferFingerprintOptions extends StObject {
   
   /**
     * @description the delimiter to use between bytes for `hex` encoded output
@@ -34,36 +35,24 @@ object ByteBufferFingerprintOptions {
   }
   
   @scala.inline
-  implicit class ByteBufferFingerprintOptionsOps[Self <: ByteBufferFingerprintOptions] (val x: Self) extends AnyVal {
+  implicit class ByteBufferFingerprintOptionsMutableBuilder[Self <: ByteBufferFingerprintOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMd(value: MessageDigest): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelimiter(value: String): Self = this.set("delimiter", value.asInstanceOf[js.Any])
+    def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
     
     @scala.inline
-    def deleteDelimiter: Self = this.set("delimiter", js.undefined)
+    def setType(value: SubjectPublicKeyInfo | RSAPublicKey): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMd(value: MessageDigest): Self = this.set("md", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMd: Self = this.set("md", js.undefined)
-    
-    @scala.inline
-    def setType(value: SubjectPublicKeyInfo | RSAPublicKey): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -2,19 +2,19 @@ package typings.materialUi
 
 import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/image/photo-size-select-actual", JSImport.Namespace)
-@js.native
-object photoSizeSelectActualMod extends js.Object {
+object photoSizeSelectActualMod {
   
+  @JSImport("material-ui/svg-icons/image/photo-size-select-actual", JSImport.Default)
+  @js.native
+  class default () extends ImagePhotoSizeSelectActual
+  
+  @JSImport("material-ui/svg-icons/image/photo-size-select-actual", "ImagePhotoSizeSelectActual")
   @js.native
   class ImagePhotoSizeSelectActual ()
-    extends Component[SvgIconProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
 }

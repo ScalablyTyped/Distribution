@@ -1,11 +1,12 @@
 package typings.awsSdk.elbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Listener extends js.Object {
+trait Listener extends StObject {
   
   /**
     * The port on which the instance is listening.
@@ -41,39 +42,27 @@ object Listener {
   }
   
   @scala.inline
-  implicit class ListenerOps[Self <: Listener] (val x: Self) extends AnyVal {
+  implicit class ListenerMutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstancePort(value: InstancePort): Self = StObject.set(x, "InstancePort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceProtocol(value: Protocol): Self = StObject.set(x, "InstanceProtocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceProtocolUndefined: Self = StObject.set(x, "InstanceProtocol", js.undefined)
     
     @scala.inline
-    def setInstancePort(value: InstancePort): Self = this.set("InstancePort", value.asInstanceOf[js.Any])
+    def setLoadBalancerPort(value: AccessPointPort): Self = StObject.set(x, "LoadBalancerPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadBalancerPort(value: AccessPointPort): Self = this.set("LoadBalancerPort", value.asInstanceOf[js.Any])
+    def setProtocol(value: Protocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: Protocol): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    def setSSLCertificateId(value: SSLCertificateId): Self = StObject.set(x, "SSLCertificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceProtocol(value: Protocol): Self = this.set("InstanceProtocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceProtocol: Self = this.set("InstanceProtocol", js.undefined)
-    
-    @scala.inline
-    def setSSLCertificateId(value: SSLCertificateId): Self = this.set("SSLCertificateId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSSLCertificateId: Self = this.set("SSLCertificateId", js.undefined)
+    def setSSLCertificateIdUndefined: Self = StObject.set(x, "SSLCertificateId", js.undefined)
   }
 }

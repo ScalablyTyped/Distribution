@@ -3,6 +3,7 @@ package typings.reactInstantsearchCore.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.reactInstantsearchCore.anon.Dictkey
 import typings.reactInstantsearchCore.anon.Max
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,90 +45,78 @@ object SearchState {
   }
   
   @scala.inline
-  implicit class SearchStateOps[Self <: SearchState] (val x: Self) extends AnyVal {
+  implicit class SearchStateMutableBuilder[Self <: SearchState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigure(value: Dictkey): Self = StObject.set(x, "configure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigureUndefined: Self = StObject.set(x, "configure", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHierarchicalMenu(value: StringDictionary[String]): Self = StObject.set(x, "hierarchicalMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigure(value: Dictkey): Self = this.set("configure", value.asInstanceOf[js.Any])
+    def setHierarchicalMenuUndefined: Self = StObject.set(x, "hierarchicalMenu", js.undefined)
     
     @scala.inline
-    def deleteConfigure: Self = this.set("configure", js.undefined)
+    def setHitsPerPage(value: Double): Self = StObject.set(x, "hitsPerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHierarchicalMenu(value: StringDictionary[String]): Self = this.set("hierarchicalMenu", value.asInstanceOf[js.Any])
+    def setHitsPerPageUndefined: Self = StObject.set(x, "hitsPerPage", js.undefined)
     
     @scala.inline
-    def deleteHierarchicalMenu: Self = this.set("hierarchicalMenu", js.undefined)
+    def setIndices(value: StringDictionary[typings.reactInstantsearchCore.anon.Configure]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHitsPerPage(value: Double): Self = this.set("hitsPerPage", value.asInstanceOf[js.Any])
+    def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
     
     @scala.inline
-    def deleteHitsPerPage: Self = this.set("hitsPerPage", js.undefined)
+    def setMenu(value: StringDictionary[String]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndices(value: StringDictionary[typings.reactInstantsearchCore.anon.Configure]): Self = this.set("indices", value.asInstanceOf[js.Any])
+    def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
     
     @scala.inline
-    def deleteIndices: Self = this.set("indices", js.undefined)
+    def setMultiRange(value: StringDictionary[String]): Self = StObject.set(x, "multiRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenu(value: StringDictionary[String]): Self = this.set("menu", value.asInstanceOf[js.Any])
+    def setMultiRangeUndefined: Self = StObject.set(x, "multiRange", js.undefined)
     
     @scala.inline
-    def deleteMenu: Self = this.set("menu", js.undefined)
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiRange(value: StringDictionary[String]): Self = this.set("multiRange", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def deleteMultiRange: Self = this.set("multiRange", js.undefined)
+    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
+    def setRange(value: StringDictionary[Max]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setRefinementList(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "refinementList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: StringDictionary[Max]): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setRefinementListUndefined: Self = StObject.set(x, "refinementList", js.undefined)
     
     @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefinementList(value: StringDictionary[js.Array[String]]): Self = this.set("refinementList", value.asInstanceOf[js.Any])
+    def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
     
     @scala.inline
-    def deleteRefinementList: Self = this.set("refinementList", js.undefined)
+    def setToggle(value: StringDictionary[Boolean]): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortBy(value: String): Self = this.set("sortBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortBy: Self = this.set("sortBy", js.undefined)
-    
-    @scala.inline
-    def setToggle(value: StringDictionary[Boolean]): Self = this.set("toggle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToggle: Self = this.set("toggle", js.undefined)
+    def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
   }
 }

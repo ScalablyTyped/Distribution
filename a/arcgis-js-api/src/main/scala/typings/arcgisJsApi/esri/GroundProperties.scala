@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,48 +45,36 @@ object GroundProperties {
   }
   
   @scala.inline
-  implicit class GroundPropertiesOps[Self <: GroundProperties] (val x: Self) extends AnyVal {
+  implicit class GroundPropertiesMutableBuilder[Self <: GroundProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayers(value: CollectionProperties[ElevationLayerProperties]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLayersVarargs(value: ElevationLayerProperties*): Self = StObject.set(x, "layers", js.Array(value :_*))
     
     @scala.inline
-    def setLayersVarargs(value: ElevationLayerProperties*): Self = this.set("layers", js.Array(value :_*))
+    def setNavigationConstraint(value: GroundNavigationConstraintProperties): Self = StObject.set(x, "navigationConstraint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayers(value: CollectionProperties[ElevationLayerProperties]): Self = this.set("layers", value.asInstanceOf[js.Any])
+    def setNavigationConstraintUndefined: Self = StObject.set(x, "navigationConstraint", js.undefined)
     
     @scala.inline
-    def deleteLayers: Self = this.set("layers", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigationConstraint(value: GroundNavigationConstraintProperties): Self = this.set("navigationConstraint", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteNavigationConstraint: Self = this.set("navigationConstraint", js.undefined)
+    def setSurfaceColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "surfaceColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setSurfaceColorUndefined: Self = StObject.set(x, "surfaceColor", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
-    
-    @scala.inline
-    def setSurfaceColorVarargs(value: Double*): Self = this.set("surfaceColor", js.Array(value :_*))
-    
-    @scala.inline
-    def setSurfaceColor(value: Color_ | js.Array[Double] | String): Self = this.set("surfaceColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSurfaceColor: Self = this.set("surfaceColor", js.undefined)
+    def setSurfaceColorVarargs(value: Double*): Self = StObject.set(x, "surfaceColor", js.Array(value :_*))
   }
 }

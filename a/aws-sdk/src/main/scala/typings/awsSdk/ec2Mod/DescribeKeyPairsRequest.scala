@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeKeyPairsRequest extends js.Object {
+trait DescribeKeyPairsRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -36,51 +37,39 @@ object DescribeKeyPairsRequest {
   }
   
   @scala.inline
-  implicit class DescribeKeyPairsRequestOps[Self <: DescribeKeyPairsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeKeyPairsRequestMutableBuilder[Self <: DescribeKeyPairsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    def setKeyNames(value: KeyNameStringList): Self = StObject.set(x, "KeyNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    def setKeyNamesUndefined: Self = StObject.set(x, "KeyNames", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("Filters", js.undefined)
+    def setKeyNamesVarargs(value: KeyPairName*): Self = StObject.set(x, "KeyNames", js.Array(value :_*))
     
     @scala.inline
-    def setKeyNamesVarargs(value: KeyPairName*): Self = this.set("KeyNames", js.Array(value :_*))
+    def setKeyPairIds(value: KeyPairIdStringList): Self = StObject.set(x, "KeyPairIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyNames(value: KeyNameStringList): Self = this.set("KeyNames", value.asInstanceOf[js.Any])
+    def setKeyPairIdsUndefined: Self = StObject.set(x, "KeyPairIds", js.undefined)
     
     @scala.inline
-    def deleteKeyNames: Self = this.set("KeyNames", js.undefined)
-    
-    @scala.inline
-    def setKeyPairIdsVarargs(value: KeyPairId*): Self = this.set("KeyPairIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setKeyPairIds(value: KeyPairIdStringList): Self = this.set("KeyPairIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyPairIds: Self = this.set("KeyPairIds", js.undefined)
+    def setKeyPairIdsVarargs(value: KeyPairId*): Self = StObject.set(x, "KeyPairIds", js.Array(value :_*))
   }
 }

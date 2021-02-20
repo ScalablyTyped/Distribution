@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateFailoverConfig extends js.Object {
+trait UpdateFailoverConfig extends StObject {
   
   /**
     * Recovery window time to look for dash-7 packets
@@ -23,30 +24,18 @@ object UpdateFailoverConfig {
   }
   
   @scala.inline
-  implicit class UpdateFailoverConfigOps[Self <: UpdateFailoverConfig] (val x: Self) extends AnyVal {
+  implicit class UpdateFailoverConfigMutableBuilder[Self <: UpdateFailoverConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecoveryWindow(value: integer): Self = StObject.set(x, "RecoveryWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecoveryWindowUndefined: Self = StObject.set(x, "RecoveryWindow", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setState(value: State): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecoveryWindow(value: integer): Self = this.set("RecoveryWindow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecoveryWindow: Self = this.set("RecoveryWindow", js.undefined)
-    
-    @scala.inline
-    def setState(value: State): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

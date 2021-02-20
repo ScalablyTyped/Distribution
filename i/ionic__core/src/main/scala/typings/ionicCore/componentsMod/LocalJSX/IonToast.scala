@@ -12,12 +12,13 @@ import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.sanitizationMod.IonicSafeString
 import typings.ionicCore.toastInterfaceMod.ToastButton
 import typings.std.CustomEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonToast extends js.Object {
+trait IonToast extends StObject {
   
   /**
     * If `true`, the toast will animate.
@@ -113,126 +114,114 @@ object IonToast {
   }
   
   @scala.inline
-  implicit class IonToastOps[Self <: IonToast] (val x: Self) extends AnyVal {
+  implicit class IonToastMutableBuilder[Self <: IonToast] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtons(value: js.Array[ToastButton | String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     @scala.inline
-    def deleteAnimated: Self = this.set("animated", js.undefined)
+    def setButtonsVarargs(value: (ToastButton | String)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
     @scala.inline
-    def setButtonsVarargs(value: (ToastButton | String)*): Self = this.set("buttons", js.Array(value :_*))
+    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtons(value: js.Array[ToastButton | String]): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteButtons: Self = this.set("buttons", js.undefined)
+    def setCssClass(value: String | js.Array[String]): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setCssClassVarargs(value: String*): Self = StObject.set(x, "cssClass", js.Array(value :_*))
     
     @scala.inline
-    def setCssClassVarargs(value: String*): Self = this.set("cssClass", js.Array(value :_*))
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssClass(value: String | js.Array[String]): Self = this.set("cssClass", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteCssClass: Self = this.set("cssClass", js.undefined)
+    def setEnterAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "enterAnimation", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEnterAnimationUndefined: Self = StObject.set(x, "enterAnimation", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = this.set("enterAnimation", js.Any.fromFunction2(value))
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def deleteEnterAnimation: Self = this.set("enterAnimation", js.undefined)
+    def setKeyboardClose(value: Boolean): Self = StObject.set(x, "keyboardClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: String): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setKeyboardCloseUndefined: Self = StObject.set(x, "keyboardClose", js.undefined)
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setLeaveAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "leaveAnimation", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setKeyboardClose(value: Boolean): Self = this.set("keyboardClose", value.asInstanceOf[js.Any])
+    def setLeaveAnimationUndefined: Self = StObject.set(x, "leaveAnimation", js.undefined)
     
     @scala.inline
-    def deleteKeyboardClose: Self = this.set("keyboardClose", js.undefined)
+    def setMessage(value: String | IonicSafeString): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeaveAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = this.set("leaveAnimation", js.Any.fromFunction2(value))
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteLeaveAnimation: Self = this.set("leaveAnimation", js.undefined)
+    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String | IonicSafeString): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setOnIonToastDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onIonToastDidDismiss", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMode(value: ios | md): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setOnIonToastDidDismissUndefined: Self = StObject.set(x, "onIonToastDidDismiss", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setOnIonToastDidPresent(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonToastDidPresent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonToastDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = this.set("onIonToastDidDismiss", js.Any.fromFunction1(value))
+    def setOnIonToastDidPresentUndefined: Self = StObject.set(x, "onIonToastDidPresent", js.undefined)
     
     @scala.inline
-    def deleteOnIonToastDidDismiss: Self = this.set("onIonToastDidDismiss", js.undefined)
+    def setOnIonToastWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onIonToastWillDismiss", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonToastDidPresent(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonToastDidPresent", js.Any.fromFunction1(value))
+    def setOnIonToastWillDismissUndefined: Self = StObject.set(x, "onIonToastWillDismiss", js.undefined)
     
     @scala.inline
-    def deleteOnIonToastDidPresent: Self = this.set("onIonToastDidPresent", js.undefined)
+    def setOnIonToastWillPresent(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonToastWillPresent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonToastWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = this.set("onIonToastWillDismiss", js.Any.fromFunction1(value))
+    def setOnIonToastWillPresentUndefined: Self = StObject.set(x, "onIonToastWillPresent", js.undefined)
     
     @scala.inline
-    def deleteOnIonToastWillDismiss: Self = this.set("onIonToastWillDismiss", js.undefined)
+    def setPosition(value: top | bottom | middle): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnIonToastWillPresent(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonToastWillPresent", js.Any.fromFunction1(value))
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteOnIonToastWillPresent: Self = this.set("onIonToastWillPresent", js.undefined)
+    def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: top | bottom | middle): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setTranslucent(value: Boolean): Self = this.set("translucent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslucent: Self = this.set("translucent", js.undefined)
+    def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
   }
 }

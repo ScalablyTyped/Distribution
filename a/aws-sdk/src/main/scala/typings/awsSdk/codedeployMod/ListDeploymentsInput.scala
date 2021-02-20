@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDeploymentsInput extends js.Object {
+trait ListDeploymentsInput extends StObject {
   
   /**
     * The name of an AWS CodeDeploy application associated with the IAM user or AWS account.  If applicationName is specified, then deploymentGroupName must be specified. If it is not specified, then deploymentGroupName must not be specified.  
@@ -46,57 +47,45 @@ object ListDeploymentsInput {
   }
   
   @scala.inline
-  implicit class ListDeploymentsInputOps[Self <: ListDeploymentsInput] (val x: Self) extends AnyVal {
+  implicit class ListDeploymentsInputMutableBuilder[Self <: ListDeploymentsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTimeRange(value: TimeRange): Self = StObject.set(x, "createTimeRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationName(value: ApplicationName): Self = this.set("applicationName", value.asInstanceOf[js.Any])
+    def setCreateTimeRangeUndefined: Self = StObject.set(x, "createTimeRange", js.undefined)
     
     @scala.inline
-    def deleteApplicationName: Self = this.set("applicationName", js.undefined)
+    def setDeploymentGroupName(value: DeploymentGroupName): Self = StObject.set(x, "deploymentGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTimeRange(value: TimeRange): Self = this.set("createTimeRange", value.asInstanceOf[js.Any])
+    def setDeploymentGroupNameUndefined: Self = StObject.set(x, "deploymentGroupName", js.undefined)
     
     @scala.inline
-    def deleteCreateTimeRange: Self = this.set("createTimeRange", js.undefined)
+    def setExternalId(value: ExternalId): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentGroupName(value: DeploymentGroupName): Self = this.set("deploymentGroupName", value.asInstanceOf[js.Any])
+    def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
     
     @scala.inline
-    def deleteDeploymentGroupName: Self = this.set("deploymentGroupName", js.undefined)
+    def setIncludeOnlyStatuses(value: DeploymentStatusList): Self = StObject.set(x, "includeOnlyStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalId(value: ExternalId): Self = this.set("externalId", value.asInstanceOf[js.Any])
+    def setIncludeOnlyStatusesUndefined: Self = StObject.set(x, "includeOnlyStatuses", js.undefined)
     
     @scala.inline
-    def deleteExternalId: Self = this.set("externalId", js.undefined)
+    def setIncludeOnlyStatusesVarargs(value: DeploymentStatus*): Self = StObject.set(x, "includeOnlyStatuses", js.Array(value :_*))
     
     @scala.inline
-    def setIncludeOnlyStatusesVarargs(value: DeploymentStatus*): Self = this.set("includeOnlyStatuses", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeOnlyStatuses(value: DeploymentStatusList): Self = this.set("includeOnlyStatuses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeOnlyStatuses: Self = this.set("includeOnlyStatuses", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

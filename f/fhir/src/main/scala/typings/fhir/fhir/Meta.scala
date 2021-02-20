@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,78 +60,66 @@ object Meta {
   }
   
   @scala.inline
-  implicit class MetaOps[Self <: Meta] (val x: Self) extends AnyVal {
+  implicit class MetaMutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastUpdated(value: instant): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastUpdatedUndefined: Self = StObject.set(x, "lastUpdated", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProfile(value: js.Array[uri]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_lastUpdated(value: Element): Self = this.set("_lastUpdated", value.asInstanceOf[js.Any])
+    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
     @scala.inline
-    def delete_lastUpdated: Self = this.set("_lastUpdated", js.undefined)
+    def setProfileVarargs(value: uri*): Self = StObject.set(x, "profile", js.Array(value :_*))
     
     @scala.inline
-    def set_profileVarargs(value: Element*): Self = this.set("_profile", js.Array(value :_*))
+    def setSecurity(value: js.Array[Coding]): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_profile(value: js.Array[Element]): Self = this.set("_profile", value.asInstanceOf[js.Any])
+    def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
     
     @scala.inline
-    def delete_profile: Self = this.set("_profile", js.undefined)
+    def setSecurityVarargs(value: Coding*): Self = StObject.set(x, "security", js.Array(value :_*))
     
     @scala.inline
-    def set_versionId(value: Element): Self = this.set("_versionId", value.asInstanceOf[js.Any])
+    def setTag(value: js.Array[Coding]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_versionId: Self = this.set("_versionId", js.undefined)
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
     @scala.inline
-    def setLastUpdated(value: instant): Self = this.set("lastUpdated", value.asInstanceOf[js.Any])
+    def setTagVarargs(value: Coding*): Self = StObject.set(x, "tag", js.Array(value :_*))
     
     @scala.inline
-    def deleteLastUpdated: Self = this.set("lastUpdated", js.undefined)
+    def setVersionId(value: id): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileVarargs(value: uri*): Self = this.set("profile", js.Array(value :_*))
+    def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
     
     @scala.inline
-    def setProfile(value: js.Array[uri]): Self = this.set("profile", value.asInstanceOf[js.Any])
+    def set_lastUpdated(value: Element): Self = StObject.set(x, "_lastUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProfile: Self = this.set("profile", js.undefined)
+    def set_lastUpdatedUndefined: Self = StObject.set(x, "_lastUpdated", js.undefined)
     
     @scala.inline
-    def setSecurityVarargs(value: Coding*): Self = this.set("security", js.Array(value :_*))
+    def set_profile(value: js.Array[Element]): Self = StObject.set(x, "_profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurity(value: js.Array[Coding]): Self = this.set("security", value.asInstanceOf[js.Any])
+    def set_profileUndefined: Self = StObject.set(x, "_profile", js.undefined)
     
     @scala.inline
-    def deleteSecurity: Self = this.set("security", js.undefined)
+    def set_profileVarargs(value: Element*): Self = StObject.set(x, "_profile", js.Array(value :_*))
     
     @scala.inline
-    def setTagVarargs(value: Coding*): Self = this.set("tag", js.Array(value :_*))
+    def set_versionId(value: Element): Self = StObject.set(x, "_versionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: js.Array[Coding]): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
-    
-    @scala.inline
-    def setVersionId(value: id): Self = this.set("versionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionId: Self = this.set("versionId", js.undefined)
+    def set_versionIdUndefined: Self = StObject.set(x, "_versionId", js.undefined)
   }
 }

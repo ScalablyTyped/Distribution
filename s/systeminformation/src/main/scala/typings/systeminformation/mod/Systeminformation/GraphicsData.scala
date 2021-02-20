@@ -1,11 +1,12 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GraphicsData extends js.Object {
+trait GraphicsData extends StObject {
   
   var controllers: js.Array[GraphicsControllerData] = js.native
   
@@ -20,30 +21,18 @@ object GraphicsData {
   }
   
   @scala.inline
-  implicit class GraphicsDataOps[Self <: GraphicsData] (val x: Self) extends AnyVal {
+  implicit class GraphicsDataMutableBuilder[Self <: GraphicsData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControllers(value: js.Array[GraphicsControllerData]): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControllersVarargs(value: GraphicsControllerData*): Self = StObject.set(x, "controllers", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplays(value: js.Array[GraphicsDisplayData]): Self = StObject.set(x, "displays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControllersVarargs(value: GraphicsControllerData*): Self = this.set("controllers", js.Array(value :_*))
-    
-    @scala.inline
-    def setControllers(value: js.Array[GraphicsControllerData]): Self = this.set("controllers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDisplaysVarargs(value: GraphicsDisplayData*): Self = this.set("displays", js.Array(value :_*))
-    
-    @scala.inline
-    def setDisplays(value: js.Array[GraphicsDisplayData]): Self = this.set("displays", value.asInstanceOf[js.Any])
+    def setDisplaysVarargs(value: GraphicsDisplayData*): Self = StObject.set(x, "displays", js.Array(value :_*))
   }
 }

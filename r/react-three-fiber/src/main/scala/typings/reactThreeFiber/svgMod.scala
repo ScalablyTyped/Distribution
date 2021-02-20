@@ -24,60 +24,117 @@ import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.three.mod.Camera
 import typings.three.mod.Object3D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-three-fiber/targets/svg", JSImport.Namespace)
-@js.native
-object svgMod extends js.Object {
+object svgMod {
   
+  @JSImport("react-three-fiber/targets/svg", "Canvas")
+  @js.native
   val Canvas: MemoExoticComponent[js.Function1[/* hasChildrenProps */ ContainerProps, Element]] = js.native
   
+  @JSImport("react-three-fiber/targets/svg", "Renderer")
+  @js.native
   val Renderer: Reconciler[js.Any, js.Any, js.Any, js.Any] = js.native
   
+  @JSImport("react-three-fiber/targets/svg", "ResizeContainer")
+  @js.native
   val ResizeContainer: NamedExoticComponent[ResizeContainerProps] = js.native
   
+  @JSImport("react-three-fiber/targets/svg", "addAfterEffect")
+  @js.native
   def addAfterEffect(callback: GlobalRenderCallback): js.Function0[Unit] = js.native
   
+  @JSImport("react-three-fiber/targets/svg", "addEffect")
+  @js.native
   def addEffect(callback: GlobalRenderCallback): js.Function0[Unit] = js.native
   
+  @JSImport("react-three-fiber/targets/svg", "addTail")
+  @js.native
   def addTail(callback: GlobalRenderCallback): js.Function0[Unit] = js.native
   
+  @JSImport("react-three-fiber/targets/svg", "applyProps")
+  @js.native
   def applyProps(instance: js.Any, newProps: js.Any): Unit = js.native
+  @JSImport("react-three-fiber/targets/svg", "applyProps")
+  @js.native
   def applyProps(instance: js.Any, newProps: js.Any, oldProps: js.UndefOr[scala.Nothing], accumulative: Boolean): Unit = js.native
+  @JSImport("react-three-fiber/targets/svg", "applyProps")
+  @js.native
   def applyProps(instance: js.Any, newProps: js.Any, oldProps: js.Any): Unit = js.native
+  @JSImport("react-three-fiber/targets/svg", "applyProps")
+  @js.native
   def applyProps(instance: js.Any, newProps: js.Any, oldProps: js.Any, accumulative: Boolean): Unit = js.native
   
+  @JSImport("react-three-fiber/targets/svg", "createPortal")
+  @js.native
   def createPortal(children: ReactNode, containerInfo: js.Any): Children = js.native
+  @JSImport("react-three-fiber/targets/svg", "createPortal")
+  @js.native
   def createPortal(children: ReactNode, containerInfo: js.Any, implementation: js.UndefOr[scala.Nothing], key: js.Any): Children = js.native
+  @JSImport("react-three-fiber/targets/svg", "createPortal")
+  @js.native
   def createPortal(children: ReactNode, containerInfo: js.Any, implementation: js.Any): Children = js.native
+  @JSImport("react-three-fiber/targets/svg", "createPortal")
+  @js.native
   def createPortal(children: ReactNode, containerInfo: js.Any, implementation: js.Any, key: js.Any): Children = js.native
   
+  @JSImport("react-three-fiber/targets/svg", "extend")
+  @js.native
   def extend(objects: js.Object): Unit = js.native
   
+  @JSImport("react-three-fiber/targets/svg", "forceResize")
+  @js.native
   def forceResize(): Unit = js.native
   
+  @JSImport("react-three-fiber/targets/svg", "invalidate")
+  @js.native
   def invalidate(): Unit = js.native
+  @JSImport("react-three-fiber/targets/svg", "invalidate")
+  @js.native
   def invalidate(state: js.UndefOr[scala.Nothing], frames: Double): Unit = js.native
+  @JSImport("react-three-fiber/targets/svg", "invalidate")
+  @js.native
   def invalidate(state: Boolean): Unit = js.native
+  @JSImport("react-three-fiber/targets/svg", "invalidate")
+  @js.native
   def invalidate(state: Boolean, frames: Double): Unit = js.native
+  @JSImport("react-three-fiber/targets/svg", "invalidate")
+  @js.native
   def invalidate(state: MutableRefObject[CanvasContext]): Unit = js.native
+  @JSImport("react-three-fiber/targets/svg", "invalidate")
+  @js.native
   def invalidate(state: MutableRefObject[CanvasContext], frames: Double): Unit = js.native
   
+  @JSImport("react-three-fiber/targets/svg", "isOrthographicCamera")
+  @js.native
   def isOrthographicCamera(`def`: Camera): /* is three.three.OrthographicCamera */ Boolean = js.native
   
+  @JSImport("react-three-fiber/targets/svg", "render")
+  @js.native
   def render(element: ReactNode, container: Object3D): js.Any = js.native
+  @JSImport("react-three-fiber/targets/svg", "render")
+  @js.native
   def render(element: ReactNode, container: Object3D, state: MutableRefObject[CanvasContext]): js.Any = js.native
   
+  @JSImport("react-three-fiber/targets/svg", "renderGl")
+  @js.native
   def renderGl(state: MutableRefObject[CanvasContext], timestamp: Double): Double = js.native
+  @JSImport("react-three-fiber/targets/svg", "renderGl")
+  @js.native
   def renderGl(
     state: MutableRefObject[CanvasContext],
     timestamp: Double,
     repeat: js.UndefOr[scala.Nothing],
     runGlobalEffects: Boolean
   ): Double = js.native
+  @JSImport("react-three-fiber/targets/svg", "renderGl")
+  @js.native
   def renderGl(state: MutableRefObject[CanvasContext], timestamp: Double, repeat: Double): Double = js.native
+  @JSImport("react-three-fiber/targets/svg", "renderGl")
+  @js.native
   def renderGl(
     state: MutableRefObject[CanvasContext],
     timestamp: Double,
@@ -85,53 +142,98 @@ object svgMod extends js.Object {
     runGlobalEffects: Boolean
   ): Double = js.native
   
+  @JSImport("react-three-fiber/targets/svg", "stateContext")
+  @js.native
   val stateContext: Context[SharedCanvasContext] = js.native
   
+  @JSImport("react-three-fiber/targets/svg", "unmountComponentAtNode")
+  @js.native
   def unmountComponentAtNode(container: Object3D): Unit = js.native
+  @JSImport("react-three-fiber/targets/svg", "unmountComponentAtNode")
+  @js.native
   def unmountComponentAtNode(container: Object3D, callback: js.Function1[/* c */ Object3D, Unit]): Unit = js.native
   
+  @JSImport("react-three-fiber/targets/svg", "useCanvas")
+  @js.native
   def useCanvas(props: UseCanvasProps): DomEventHandlers = js.native
   
+  @JSImport("react-three-fiber/targets/svg", "useFrame")
+  @js.native
   def useFrame(callback: RenderCallback): Null = js.native
+  @JSImport("react-three-fiber/targets/svg", "useFrame")
+  @js.native
   def useFrame(callback: RenderCallback, renderPriority: Double): Null = js.native
   
+  @JSImport("react-three-fiber/targets/svg", "useGraph")
+  @js.native
   def useGraph(`object`: Object3D): ObjectMap = js.native
   
-  def useResource[T](): MutableRefObject[T] = js.native
-  def useResource[T](optionalRef: MutableRefObject[T]): MutableRefObject[T] = js.native
-  
-  def useThree(): SharedCanvasContext = js.native
-  
-  def useUpdate[T](callback: js.Function1[/* props */ T, Unit], dependents: js.Array[_]): MutableRefObject[js.UndefOr[T]] = js.native
-  def useUpdate[T](
-    callback: js.Function1[/* props */ T, Unit],
-    dependents: js.Array[_],
-    optionalRef: MutableRefObject[T]
-  ): MutableRefObject[js.UndefOr[T]] = js.native
-  
-  @js.native
-  object useLoader extends js.Object {
+  object useLoader {
     
+    @JSImport("react-three-fiber/targets/svg", "useLoader")
+    @js.native
     def apply[T](Proto: Instantiable0[LoaderResult[T]], input: String | js.Array[String]): T = js.native
+    @JSImport("react-three-fiber/targets/svg", "useLoader")
+    @js.native
     def apply[T](
       Proto: Instantiable0[LoaderResult[T]],
       input: String | js.Array[String],
       extensions: js.UndefOr[scala.Nothing],
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
     ): T = js.native
+    @JSImport("react-three-fiber/targets/svg", "useLoader")
+    @js.native
     def apply[T](Proto: Instantiable0[LoaderResult[T]], input: String | js.Array[String], extensions: Extensions): T = js.native
+    @JSImport("react-three-fiber/targets/svg", "useLoader")
+    @js.native
     def apply[T](
       Proto: Instantiable0[LoaderResult[T]],
       input: String | js.Array[String],
       extensions: Extensions,
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
     ): T = js.native
+    @JSImport("react-three-fiber/targets/svg", "useLoader")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var preload: js.Function3[
+    @JSImport("react-three-fiber/targets/svg", "useLoader.preload")
+    @js.native
+    def preload: js.Function3[
         /* Proto */ Instantiable0[LoaderResult[js.Any]], 
         /* url */ String | js.Array[String], 
         /* extensions */ js.UndefOr[Extensions], 
         js.UndefOr[scala.Nothing]
       ] = js.native
+    @scala.inline
+    def preload_=(
+      x: js.Function3[
+          /* Proto */ Instantiable0[LoaderResult[js.Any]], 
+          /* url */ String | js.Array[String], 
+          /* extensions */ js.UndefOr[Extensions], 
+          js.UndefOr[scala.Nothing]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preload")(x.asInstanceOf[js.Any])
   }
+  
+  @JSImport("react-three-fiber/targets/svg", "useResource")
+  @js.native
+  def useResource[T](): MutableRefObject[T] = js.native
+  @JSImport("react-three-fiber/targets/svg", "useResource")
+  @js.native
+  def useResource[T](optionalRef: MutableRefObject[T]): MutableRefObject[T] = js.native
+  
+  @JSImport("react-three-fiber/targets/svg", "useThree")
+  @js.native
+  def useThree(): SharedCanvasContext = js.native
+  
+  @JSImport("react-three-fiber/targets/svg", "useUpdate")
+  @js.native
+  def useUpdate[T](callback: js.Function1[/* props */ T, Unit], dependents: js.Array[_]): MutableRefObject[js.UndefOr[T]] = js.native
+  @JSImport("react-three-fiber/targets/svg", "useUpdate")
+  @js.native
+  def useUpdate[T](
+    callback: js.Function1[/* props */ T, Unit],
+    dependents: js.Array[_],
+    optionalRef: MutableRefObject[T]
+  ): MutableRefObject[js.UndefOr[T]] = js.native
 }

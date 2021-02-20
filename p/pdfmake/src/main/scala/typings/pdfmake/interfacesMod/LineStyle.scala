@@ -1,12 +1,13 @@
 package typings.pdfmake.interfacesMod
 
 import typings.pdfmake.anon.Length
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LineStyle extends js.Object {
+trait LineStyle extends StObject {
   
   var dash: js.UndefOr[Length] = js.native
 }
@@ -19,24 +20,12 @@ object LineStyle {
   }
   
   @scala.inline
-  implicit class LineStyleOps[Self <: LineStyle] (val x: Self) extends AnyVal {
+  implicit class LineStyleMutableBuilder[Self <: LineStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDash(value: Length): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDash(value: Length): Self = this.set("dash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDash: Self = this.set("dash", js.undefined)
+    def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
   }
 }

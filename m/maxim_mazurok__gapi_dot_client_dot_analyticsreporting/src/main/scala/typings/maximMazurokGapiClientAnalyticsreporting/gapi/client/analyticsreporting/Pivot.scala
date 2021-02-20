@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsreporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pivot extends js.Object {
+trait Pivot extends StObject {
   
   /**
     * DimensionFilterClauses are logically combined with an `AND` operator: only data that is included by all these DimensionFilterClauses contributes to the values in this pivot region.
@@ -44,57 +45,45 @@ object Pivot {
   }
   
   @scala.inline
-  implicit class PivotOps[Self <: Pivot] (val x: Self) extends AnyVal {
+  implicit class PivotMutableBuilder[Self <: Pivot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensionFilterClauses(value: js.Array[DimensionFilterClause]): Self = StObject.set(x, "dimensionFilterClauses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionFilterClausesUndefined: Self = StObject.set(x, "dimensionFilterClauses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimensionFilterClausesVarargs(value: DimensionFilterClause*): Self = StObject.set(x, "dimensionFilterClauses", js.Array(value :_*))
     
     @scala.inline
-    def setDimensionFilterClausesVarargs(value: DimensionFilterClause*): Self = this.set("dimensionFilterClauses", js.Array(value :_*))
+    def setDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionFilterClauses(value: js.Array[DimensionFilterClause]): Self = this.set("dimensionFilterClauses", value.asInstanceOf[js.Any])
+    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
     @scala.inline
-    def deleteDimensionFilterClauses: Self = this.set("dimensionFilterClauses", js.undefined)
+    def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
     
     @scala.inline
-    def setDimensionsVarargs(value: Dimension*): Self = this.set("dimensions", js.Array(value :_*))
+    def setMaxGroupCount(value: Double): Self = StObject.set(x, "maxGroupCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensions(value: js.Array[Dimension]): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    def setMaxGroupCountUndefined: Self = StObject.set(x, "maxGroupCount", js.undefined)
     
     @scala.inline
-    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxGroupCount(value: Double): Self = this.set("maxGroupCount", value.asInstanceOf[js.Any])
+    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
     @scala.inline
-    def deleteMaxGroupCount: Self = this.set("maxGroupCount", js.undefined)
+    def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
     @scala.inline
-    def setMetricsVarargs(value: Metric*): Self = this.set("metrics", js.Array(value :_*))
+    def setStartGroup(value: Double): Self = StObject.set(x, "startGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetrics(value: js.Array[Metric]): Self = this.set("metrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetrics: Self = this.set("metrics", js.undefined)
-    
-    @scala.inline
-    def setStartGroup(value: Double): Self = this.set("startGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartGroup: Self = this.set("startGroup", js.undefined)
+    def setStartGroupUndefined: Self = StObject.set(x, "startGroup", js.undefined)
   }
 }

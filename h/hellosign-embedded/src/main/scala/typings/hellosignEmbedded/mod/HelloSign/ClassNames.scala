@@ -7,12 +7,13 @@ import typings.hellosignEmbedded.hellosignEmbeddedStrings.`x-hellosign-embedded_
 import typings.hellosignEmbedded.hellosignEmbeddedStrings.`x-hellosign-embedded__modal-content`
 import typings.hellosignEmbedded.hellosignEmbeddedStrings.`x-hellosign-embedded__modal-screen`
 import typings.hellosignEmbedded.hellosignEmbeddedStrings.`x-hellosign-embedded`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassNames extends js.Object {
+trait ClassNames extends StObject {
   
   var BASE: `x-hellosign-embedded` = js.native
   
@@ -45,39 +46,27 @@ object ClassNames {
   }
   
   @scala.inline
-  implicit class ClassNamesOps[Self <: ClassNames] (val x: Self) extends AnyVal {
+  implicit class ClassNamesMutableBuilder[Self <: ClassNames] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBASE(value: `x-hellosign-embedded`): Self = StObject.set(x, "BASE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBASE_IN_MODAL(value: `x-hellosign-embedded--in-modal`): Self = StObject.set(x, "BASE_IN_MODAL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIFRAME(value: `x-hellosign-embedded__iframe`): Self = StObject.set(x, "IFRAME", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBASE(value: `x-hellosign-embedded`): Self = this.set("BASE", value.asInstanceOf[js.Any])
+    def setMODAL_CLOSE(value: `x-hellosign-embedded__modal-close`): Self = StObject.set(x, "MODAL_CLOSE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBASE_IN_MODAL(value: `x-hellosign-embedded--in-modal`): Self = this.set("BASE_IN_MODAL", value.asInstanceOf[js.Any])
+    def setMODAL_CLOSE_BTN(value: `x-hellosign-embedded__modal-close-button`): Self = StObject.set(x, "MODAL_CLOSE_BTN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIFRAME(value: `x-hellosign-embedded__iframe`): Self = this.set("IFRAME", value.asInstanceOf[js.Any])
+    def setMODAL_CONTENT(value: `x-hellosign-embedded__modal-content`): Self = StObject.set(x, "MODAL_CONTENT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMODAL_CLOSE(value: `x-hellosign-embedded__modal-close`): Self = this.set("MODAL_CLOSE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMODAL_CLOSE_BTN(value: `x-hellosign-embedded__modal-close-button`): Self = this.set("MODAL_CLOSE_BTN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMODAL_CONTENT(value: `x-hellosign-embedded__modal-content`): Self = this.set("MODAL_CONTENT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMODAL_SCREEN(value: `x-hellosign-embedded__modal-screen`): Self = this.set("MODAL_SCREEN", value.asInstanceOf[js.Any])
+    def setMODAL_SCREEN(value: `x-hellosign-embedded__modal-screen`): Self = StObject.set(x, "MODAL_SCREEN", value.asInstanceOf[js.Any])
   }
 }

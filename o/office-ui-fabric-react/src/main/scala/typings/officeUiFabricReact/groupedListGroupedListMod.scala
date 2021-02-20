@@ -2,13 +2,14 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.groupedListTypesMod.IGroupedListProps
 import typings.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/GroupedList/GroupedList", JSImport.Namespace)
-@js.native
-object groupedListGroupedListMod extends js.Object {
+object groupedListGroupedListMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/GroupedList/GroupedList", "GroupedList")
+  @js.native
   val GroupedList: FunctionComponent[IGroupedListProps] = js.native
 }

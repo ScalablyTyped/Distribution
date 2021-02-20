@@ -3,78 +3,36 @@ package typings.phaser.global.Phaser
 import typings.phaser.Phaser.Types.Scenes.SettingsConfig
 import typings.phaser.Phaser.Types.Scenes.SettingsObject
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Scenes")
-@js.native
-object Scenes extends js.Object {
+object Scenes {
   
-  /**
-    * Scene state.
-    */
-  var CREATING: integer = js.native
-  
-  /**
-    * Scene state.
-    */
-  var DESTROYED: integer = js.native
-  
-  /**
-    * Builds an array of which physics plugins should be activated for the given Scene.
-    * @param sys The scene system to get the physics systems of.
-    */
-  def GetPhysicsPlugins(sys: typings.phaser.Phaser.Scenes.Systems): js.Array[_] = js.native
-  
-  /**
-    * Builds an array of which plugins (not including physics plugins) should be activated for the given Scene.
-    * @param sys The Scene Systems object to check for plugins.
-    */
-  def GetScenePlugins(sys: typings.phaser.Phaser.Scenes.Systems): js.Array[_] = js.native
-  
-  /**
-    * Scene state.
-    */
-  var INIT: integer = js.native
-  
-  /**
-    * Scene state.
-    */
-  var LOADING: integer = js.native
-  
-  /**
-    * Scene state.
-    */
-  var PAUSED: integer = js.native
-  
-  /**
-    * Scene state.
-    */
-  var PENDING: integer = js.native
-  
-  /**
-    * Scene state.
-    */
-  var RUNNING: integer = js.native
-  
-  /**
-    * Scene state.
-    */
-  var SHUTDOWN: integer = js.native
-  
-  /**
-    * Scene state.
-    */
-  var SLEEPING: integer = js.native
-  
-  /**
-    * Scene state.
-    */
-  var START: integer = js.native
-  
+  @JSGlobal("Phaser.Scenes")
   @js.native
-  object Events extends js.Object {
+  val ^ : js.Any = js.native
+  
+  /**
+    * Scene state.
+    */
+  @JSGlobal("Phaser.Scenes.CREATING")
+  @js.native
+  def CREATING: integer = js.native
+  @scala.inline
+  def CREATING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CREATING")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Scene state.
+    */
+  @JSGlobal("Phaser.Scenes.DESTROYED")
+  @js.native
+  def DESTROYED: integer = js.native
+  @scala.inline
+  def DESTROYED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DESTROYED")(x.asInstanceOf[js.Any])
+  
+  object Events {
     
     /**
       * The Scene Systems Boot Event.
@@ -83,6 +41,8 @@ object Scenes extends js.Object {
       * 
       * Listen to it from a Scene using `this.scene.events.on('boot', listener)`.
       */
+    @JSGlobal("Phaser.Scenes.Events.BOOT")
+    @js.native
     val BOOT: js.Any = js.native
     
     /**
@@ -96,6 +56,8 @@ object Scenes extends js.Object {
       * 
       * Listen to it from a Scene using `this.scene.events.on('create', listener)`.
       */
+    @JSGlobal("Phaser.Scenes.Events.CREATE")
+    @js.native
     val CREATE: js.Any = js.native
     
     /**
@@ -107,6 +69,8 @@ object Scenes extends js.Object {
       * 
       * You should destroy any resources that may be in use by your Scene in this event handler.
       */
+    @JSGlobal("Phaser.Scenes.Events.DESTROY")
+    @js.native
     val DESTROY: js.Any = js.native
     
     /**
@@ -117,6 +81,8 @@ object Scenes extends js.Object {
       * 
       * Listen to it from a Scene using `this.scene.events.on('pause', listener)`.
       */
+    @JSGlobal("Phaser.Scenes.Events.PAUSE")
+    @js.native
     val PAUSE: js.Any = js.native
     
     /**
@@ -136,6 +102,8 @@ object Scenes extends js.Object {
       * 
       * A Scene will only run its step if it is active.
       */
+    @JSGlobal("Phaser.Scenes.Events.POST_UPDATE")
+    @js.native
     val POST_UPDATE: js.Any = js.native
     
     /**
@@ -155,6 +123,8 @@ object Scenes extends js.Object {
       * 
       * A Scene will only run its step if it is active.
       */
+    @JSGlobal("Phaser.Scenes.Events.PRE_UPDATE")
+    @js.native
     val PRE_UPDATE: js.Any = js.native
     
     /**
@@ -166,6 +136,8 @@ object Scenes extends js.Object {
       * 
       * Listen to it from a Scene using `this.scene.events.on('ready', listener)`.
       */
+    @JSGlobal("Phaser.Scenes.Events.READY")
+    @js.native
     val READY: js.Any = js.native
     
     /**
@@ -186,6 +158,8 @@ object Scenes extends js.Object {
       * A Scene will only render if it is visible and active.
       * By the time this event is dispatched, the Scene will have already been rendered.
       */
+    @JSGlobal("Phaser.Scenes.Events.RENDER")
+    @js.native
     val RENDER: js.Any = js.native
     
     /**
@@ -196,6 +170,8 @@ object Scenes extends js.Object {
       * 
       * Listen to it from a Scene using `this.scene.events.on('resume', listener)`.
       */
+    @JSGlobal("Phaser.Scenes.Events.RESUME")
+    @js.native
     val RESUME: js.Any = js.native
     
     /**
@@ -209,6 +185,8 @@ object Scenes extends js.Object {
       * that the Scene may, at any time, become active again. A shutdown Scene is not 'destroyed', it's simply not
       * currently active. Use the [DESTROY]{@linkcode Phaser.Scenes.Events#event:DESTROY} event to completely clear resources.
       */
+    @JSGlobal("Phaser.Scenes.Events.SHUTDOWN")
+    @js.native
     val SHUTDOWN: js.Any = js.native
     
     /**
@@ -219,6 +197,8 @@ object Scenes extends js.Object {
       * 
       * Listen to it from a Scene using `this.scene.events.on('sleep', listener)`.
       */
+    @JSGlobal("Phaser.Scenes.Events.SLEEP")
+    @js.native
     val SLEEP: js.Any = js.native
     
     /**
@@ -228,6 +208,8 @@ object Scenes extends js.Object {
       * 
       * Listen to it from a Scene using `this.scene.events.on('start', listener)`.
       */
+    @JSGlobal("Phaser.Scenes.Events.START")
+    @js.native
     val START: js.Any = js.native
     
     /**
@@ -248,6 +230,8 @@ object Scenes extends js.Object {
       * 4. [TRANSITION_WAKE]{@linkcode Phaser.Scenes.Events#event:TRANSITION_WAKE} - the Target Scene will emit this event if it was asleep and has been woken-up to be transitioned to.
       * 5. [TRANSITION_COMPLETE]{@linkcode Phaser.Scenes.Events#event:TRANSITION_COMPLETE} - the Target Scene will emit this event when the transition finishes.
       */
+    @JSGlobal("Phaser.Scenes.Events.TRANSITION_COMPLETE")
+    @js.native
     val TRANSITION_COMPLETE: js.Any = js.native
     
     /**
@@ -268,6 +252,8 @@ object Scenes extends js.Object {
       * 4. [TRANSITION_WAKE]{@linkcode Phaser.Scenes.Events#event:TRANSITION_WAKE} - the Target Scene will emit this event if it was asleep and has been woken-up to be transitioned to.
       * 5. [TRANSITION_COMPLETE]{@linkcode Phaser.Scenes.Events#event:TRANSITION_COMPLETE} - the Target Scene will emit this event when the transition finishes.
       */
+    @JSGlobal("Phaser.Scenes.Events.TRANSITION_INIT")
+    @js.native
     val TRANSITION_INIT: js.Any = js.native
     
     /**
@@ -285,6 +271,8 @@ object Scenes extends js.Object {
       * 4. [TRANSITION_WAKE]{@linkcode Phaser.Scenes.Events#event:TRANSITION_WAKE} - the Target Scene will emit this event if it was asleep and has been woken-up to be transitioned to.
       * 5. [TRANSITION_COMPLETE]{@linkcode Phaser.Scenes.Events#event:TRANSITION_COMPLETE} - the Target Scene will emit this event when the transition finishes.
       */
+    @JSGlobal("Phaser.Scenes.Events.TRANSITION_OUT")
+    @js.native
     val TRANSITION_OUT: js.Any = js.native
     
     /**
@@ -308,6 +296,8 @@ object Scenes extends js.Object {
       * 4. [TRANSITION_WAKE]{@linkcode Phaser.Scenes.Events#event:TRANSITION_WAKE} - the Target Scene will emit this event if it was asleep and has been woken-up to be transitioned to.
       * 5. [TRANSITION_COMPLETE]{@linkcode Phaser.Scenes.Events#event:TRANSITION_COMPLETE} - the Target Scene will emit this event when the transition finishes.
       */
+    @JSGlobal("Phaser.Scenes.Events.TRANSITION_START")
+    @js.native
     val TRANSITION_START: js.Any = js.native
     
     /**
@@ -326,6 +316,8 @@ object Scenes extends js.Object {
       * 4. [TRANSITION_WAKE]{@linkcode Phaser.Scenes.Events#event:TRANSITION_WAKE} - the Target Scene will emit this event if it was asleep and has been woken-up to be transitioned to.
       * 5. [TRANSITION_COMPLETE]{@linkcode Phaser.Scenes.Events#event:TRANSITION_COMPLETE} - the Target Scene will emit this event when the transition finishes.
       */
+    @JSGlobal("Phaser.Scenes.Events.TRANSITION_WAKE")
+    @js.native
     val TRANSITION_WAKE: js.Any = js.native
     
     /**
@@ -345,6 +337,8 @@ object Scenes extends js.Object {
       * 
       * A Scene will only run its step if it is active.
       */
+    @JSGlobal("Phaser.Scenes.Events.UPDATE")
+    @js.native
     val UPDATE: js.Any = js.native
     
     /**
@@ -355,8 +349,98 @@ object Scenes extends js.Object {
       * 
       * Listen to it from a Scene using `this.scene.events.on('wake', listener)`.
       */
+    @JSGlobal("Phaser.Scenes.Events.WAKE")
+    @js.native
     val WAKE: js.Any = js.native
   }
+  
+  /**
+    * Builds an array of which physics plugins should be activated for the given Scene.
+    * @param sys The scene system to get the physics systems of.
+    */
+  @JSGlobal("Phaser.Scenes.GetPhysicsPlugins")
+  @js.native
+  def GetPhysicsPlugins(sys: typings.phaser.Phaser.Scenes.Systems): js.Array[_] = js.native
+  
+  /**
+    * Builds an array of which plugins (not including physics plugins) should be activated for the given Scene.
+    * @param sys The Scene Systems object to check for plugins.
+    */
+  @JSGlobal("Phaser.Scenes.GetScenePlugins")
+  @js.native
+  def GetScenePlugins(sys: typings.phaser.Phaser.Scenes.Systems): js.Array[_] = js.native
+  
+  /**
+    * Scene state.
+    */
+  @JSGlobal("Phaser.Scenes.INIT")
+  @js.native
+  def INIT: integer = js.native
+  @scala.inline
+  def INIT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INIT")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Scene state.
+    */
+  @JSGlobal("Phaser.Scenes.LOADING")
+  @js.native
+  def LOADING: integer = js.native
+  @scala.inline
+  def LOADING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADING")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Scene state.
+    */
+  @JSGlobal("Phaser.Scenes.PAUSED")
+  @js.native
+  def PAUSED: integer = js.native
+  @scala.inline
+  def PAUSED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAUSED")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Scene state.
+    */
+  @JSGlobal("Phaser.Scenes.PENDING")
+  @js.native
+  def PENDING: integer = js.native
+  @scala.inline
+  def PENDING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PENDING")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Scene state.
+    */
+  @JSGlobal("Phaser.Scenes.RUNNING")
+  @js.native
+  def RUNNING: integer = js.native
+  @scala.inline
+  def RUNNING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RUNNING")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Scene state.
+    */
+  @JSGlobal("Phaser.Scenes.SHUTDOWN")
+  @js.native
+  def SHUTDOWN: integer = js.native
+  @scala.inline
+  def SHUTDOWN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHUTDOWN")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Scene state.
+    */
+  @JSGlobal("Phaser.Scenes.SLEEPING")
+  @js.native
+  def SLEEPING: integer = js.native
+  @scala.inline
+  def SLEEPING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SLEEPING")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Scene state.
+    */
+  @JSGlobal("Phaser.Scenes.START")
+  @js.native
+  def START: integer = js.native
+  @scala.inline
+  def START_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("START")(x.asInstanceOf[js.Any])
   
   /**
     * The Scene Manager.
@@ -364,6 +448,7 @@ object Scenes extends js.Object {
     * The Scene Manager is a Game level system, responsible for creating, processing and updating all of the
     * Scenes in a Game instance.
     */
+  @JSGlobal("Phaser.Scenes.SceneManager")
   @js.native
   class SceneManager protected ()
     extends typings.phaser.Phaser.Scenes.SceneManager {
@@ -378,6 +463,7 @@ object Scenes extends js.Object {
   /**
     * A proxy class to the Global Scene Manager.
     */
+  @JSGlobal("Phaser.Scenes.ScenePlugin")
   @js.native
   class ScenePlugin protected ()
     extends typings.phaser.Phaser.Scenes.ScenePlugin {
@@ -388,14 +474,17 @@ object Scenes extends js.Object {
     def this(scene: typings.phaser.Phaser.Scene) = this()
   }
   
-  @js.native
-  object Settings extends js.Object {
+  object Settings {
     
     /**
       * Takes a Scene configuration object and returns a fully formed System Settings object.
       * @param config The Scene configuration object used to create this Scene Settings.
       */
+    @JSGlobal("Phaser.Scenes.Settings.create")
+    @js.native
     def create(config: String): SettingsObject = js.native
+    @JSGlobal("Phaser.Scenes.Settings.create")
+    @js.native
     def create(config: SettingsConfig): SettingsObject = js.native
   }
   
@@ -406,6 +495,7 @@ object Scenes extends js.Object {
     * It is responsible for managing all of the plugins a Scene has running, including the display list, and
     * handling the update step and renderer. It also contains references to global systems belonging to Game.
     */
+  @JSGlobal("Phaser.Scenes.Systems")
   @js.native
   class Systems protected ()
     extends typings.phaser.Phaser.Scenes.Systems {

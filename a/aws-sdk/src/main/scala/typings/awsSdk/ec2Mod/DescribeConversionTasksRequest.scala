@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeConversionTasksRequest extends js.Object {
+trait DescribeConversionTasksRequest extends StObject {
   
   /**
     * The conversion task IDs.
@@ -26,33 +27,21 @@ object DescribeConversionTasksRequest {
   }
   
   @scala.inline
-  implicit class DescribeConversionTasksRequestOps[Self <: DescribeConversionTasksRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeConversionTasksRequestMutableBuilder[Self <: DescribeConversionTasksRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConversionTaskIds(value: ConversionIdStringList): Self = StObject.set(x, "ConversionTaskIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConversionTaskIdsUndefined: Self = StObject.set(x, "ConversionTaskIds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConversionTaskIdsVarargs(value: ConversionTaskId*): Self = StObject.set(x, "ConversionTaskIds", js.Array(value :_*))
     
     @scala.inline
-    def setConversionTaskIdsVarargs(value: ConversionTaskId*): Self = this.set("ConversionTaskIds", js.Array(value :_*))
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversionTaskIds(value: ConversionIdStringList): Self = this.set("ConversionTaskIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConversionTaskIds: Self = this.set("ConversionTaskIds", js.undefined)
-    
-    @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
   }
 }

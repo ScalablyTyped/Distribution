@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTCDtlsFingerprint extends js.Object {
+trait RTCDtlsFingerprint extends StObject {
   
   var algorithm: js.UndefOr[java.lang.String] = js.native
   
@@ -20,30 +21,18 @@ object RTCDtlsFingerprint {
   }
   
   @scala.inline
-  implicit class RTCDtlsFingerprintOps[Self <: RTCDtlsFingerprint] (val x: Self) extends AnyVal {
+  implicit class RTCDtlsFingerprintMutableBuilder[Self <: RTCDtlsFingerprint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: java.lang.String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue(value: java.lang.String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithm(value: java.lang.String): Self = this.set("algorithm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlgorithm: Self = this.set("algorithm", js.undefined)
-    
-    @scala.inline
-    def setValue(value: java.lang.String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

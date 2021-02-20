@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CategoriesLabelCloseIcon extends js.Object {
+trait CategoriesLabelCloseIcon extends StObject {
   
   var categories: js.UndefOr[Confirmation] = js.native
   
@@ -20,30 +21,18 @@ object CategoriesLabelCloseIcon {
   }
   
   @scala.inline
-  implicit class CategoriesLabelCloseIconOps[Self <: CategoriesLabelCloseIcon] (val x: Self) extends AnyVal {
+  implicit class CategoriesLabelCloseIconMutableBuilder[Self <: CategoriesLabelCloseIcon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategories(value: Confirmation): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelCloseIcon(value: String): Self = StObject.set(x, "labelCloseIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: Confirmation): Self = this.set("categories", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCategories: Self = this.set("categories", js.undefined)
-    
-    @scala.inline
-    def setLabelCloseIcon(value: String): Self = this.set("labelCloseIcon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelCloseIcon: Self = this.set("labelCloseIcon", js.undefined)
+    def setLabelCloseIconUndefined: Self = StObject.set(x, "labelCloseIcon", js.undefined)
   }
 }

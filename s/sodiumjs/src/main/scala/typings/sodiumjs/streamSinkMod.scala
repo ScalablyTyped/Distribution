@@ -2,14 +2,14 @@ package typings.sodiumjs
 
 import typings.sodiumjs.lambdaMod.Lambda2_
 import typings.sodiumjs.streamMod.StreamWithSend
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sodiumjs/dist/typings/sodium/StreamSink", JSImport.Namespace)
-@js.native
-object streamSinkMod extends js.Object {
+object streamSinkMod {
   
+  @JSImport("sodiumjs/dist/typings/sodium/StreamSink", "StreamSink")
   @js.native
   class StreamSink[A] () extends StreamWithSend[A] {
     def this(f: js.Function2[/* l */ A, /* r */ A, A]) = this()

@@ -1,13 +1,13 @@
 package typings.plottable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/core/dataset", JSImport.Namespace)
-@js.native
-object datasetMod extends js.Object {
+object datasetMod {
   
+  @JSImport("plottable/build/src/core/dataset", "Dataset")
   @js.native
   /**
     * A Dataset contains an array of data and some metadata.
@@ -17,7 +17,7 @@ object datasetMod extends js.Object {
     * @param {any[]} [data=[]] The data for this Dataset.
     * @param {any} [metadata={}] An object containing additional information.
     */
-  class Dataset () extends js.Object {
+  class Dataset () extends StObject {
     def this(data: js.Array[_]) = this()
     def this(data: js.UndefOr[scala.Nothing], metadata: js.Any) = this()
     def this(data: js.Array[_], metadata: js.Any) = this()

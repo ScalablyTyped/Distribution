@@ -1,11 +1,12 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkShaderFactory extends js.Object {
+trait SkShaderFactory extends StObject {
   
   /**
     * Returns a shader that combines the given shaders with a BlendMode.
@@ -43,27 +44,15 @@ object SkShaderFactory {
   }
   
   @scala.inline
-  implicit class SkShaderFactoryOps[Self <: SkShaderFactory] (val x: Self) extends AnyVal {
+  implicit class SkShaderFactoryMutableBuilder[Self <: SkShaderFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlend(value: (BlendMode, SkShader, SkShader) => SkShader): Self = StObject.set(x, "Blend", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColor(value: (InputColor, ColorSpace) => SkShader): Self = StObject.set(x, "Color", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBlend(value: (BlendMode, SkShader, SkShader) => SkShader): Self = this.set("Blend", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setColor(value: (InputColor, ColorSpace) => SkShader): Self = this.set("Color", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setLerp(value: (Double, SkShader, SkShader) => SkShader): Self = this.set("Lerp", js.Any.fromFunction3(value))
+    def setLerp(value: (Double, SkShader, SkShader) => SkShader): Self = StObject.set(x, "Lerp", js.Any.fromFunction3(value))
   }
 }

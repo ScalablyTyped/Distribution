@@ -5,13 +5,14 @@ import typings.fundamentalReact.listMod.ListFooterProps
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/List/List.ListFooterProps> & {  displayName :'List.Footer'} */
 @js.native
-trait FunctionComponentListFoot extends js.Object {
+trait FunctionComponentListFoot extends StObject {
   
   def apply(props: PropsWithChildren[ListFooterProps]): ReactElement | Null = js.native
   def apply(props: PropsWithChildren[ListFooterProps], context: js.Any): ReactElement | Null = js.native

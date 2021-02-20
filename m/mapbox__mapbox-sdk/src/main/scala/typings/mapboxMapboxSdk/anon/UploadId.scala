@@ -1,11 +1,12 @@
 package typings.mapboxMapboxSdk.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadId extends js.Object {
+trait UploadId extends StObject {
   
   var uploadId: String = js.native
 }
@@ -18,21 +19,9 @@ object UploadId {
   }
   
   @scala.inline
-  implicit class UploadIdOps[Self <: UploadId] (val x: Self) extends AnyVal {
+  implicit class UploadIdMutableBuilder[Self <: UploadId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUploadId(value: String): Self = this.set("uploadId", value.asInstanceOf[js.Any])
+    def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
   }
 }

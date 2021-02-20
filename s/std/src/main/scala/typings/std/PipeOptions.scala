@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PipeOptions extends js.Object {
+trait PipeOptions extends StObject {
   
   var preventAbort: js.UndefOr[scala.Boolean] = js.native
   
@@ -24,42 +25,30 @@ object PipeOptions {
   }
   
   @scala.inline
-  implicit class PipeOptionsOps[Self <: PipeOptions] (val x: Self) extends AnyVal {
+  implicit class PipeOptionsMutableBuilder[Self <: PipeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPreventAbort(value: scala.Boolean): Self = StObject.set(x, "preventAbort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreventAbortUndefined: Self = StObject.set(x, "preventAbort", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreventCancel(value: scala.Boolean): Self = StObject.set(x, "preventCancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventAbort(value: scala.Boolean): Self = this.set("preventAbort", value.asInstanceOf[js.Any])
+    def setPreventCancelUndefined: Self = StObject.set(x, "preventCancel", js.undefined)
     
     @scala.inline
-    def deletePreventAbort: Self = this.set("preventAbort", js.undefined)
+    def setPreventClose(value: scala.Boolean): Self = StObject.set(x, "preventClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventCancel(value: scala.Boolean): Self = this.set("preventCancel", value.asInstanceOf[js.Any])
+    def setPreventCloseUndefined: Self = StObject.set(x, "preventClose", js.undefined)
     
     @scala.inline
-    def deletePreventCancel: Self = this.set("preventCancel", js.undefined)
+    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventClose(value: scala.Boolean): Self = this.set("preventClose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreventClose: Self = this.set("preventClose", js.undefined)
-    
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = this.set("signal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignal: Self = this.set("signal", js.undefined)
+    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
   }
 }

@@ -4,22 +4,21 @@ import typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletBarcodeSymbology
 import typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletItemKind
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides types for interacting with the Wallet feature of Windows Phone from a Windows Runtime app. */
-@JSGlobal("Windows.ApplicationModel.Wallet")
-@js.native
-object Wallet extends js.Object {
+object Wallet {
   
   /** Defines a set of asynchronous actions and operations that manage the wallet items in the system wallet database. These can be used to read the existing items, or to add and remove items. */
-  @js.native
-  object System extends js.Object {
+  object System {
     
     /** Defines values used by the GetAppStatusForItem method indicating if an app is installed for the specified WalletItem . */
+    @JSGlobal("Windows.ApplicationModel.Wallet.System.WalletItemAppAssociation")
     @js.native
-    object WalletItemAppAssociation extends js.Object {
+    object WalletItemAppAssociation extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[
@@ -34,29 +33,33 @@ object Wallet extends js.Object {
     }
     
     /** Defines a set of asynchronous actions and operations that manage the wallet items in the system wallet database. These can be used to read the existing items, or to add and remove items. */
+    @JSGlobal("Windows.ApplicationModel.Wallet.System.WalletItemSystemStore")
     @js.native
     abstract class WalletItemSystemStore ()
       extends typings.winrtUwp.Windows.ApplicationModel.Wallet.System.WalletItemSystemStore
     
     /** Provides a static method to get an instance of the system wallet store for this app. */
+    @JSGlobal("Windows.ApplicationModel.Wallet.System.WalletManagerSystem")
     @js.native
     abstract class WalletManagerSystem ()
       extends typings.winrtUwp.Windows.ApplicationModel.Wallet.System.WalletManagerSystem
-    /* static members */
-    @js.native
-    object WalletManagerSystem extends js.Object {
+    object WalletManagerSystem {
       
       /**
         * Requests an instance of the system wallet store for the app.
         * @return An asynchronous operation that, on successful completion, returns an instance of the default wallet store. If you use Asynchronous programming, the result type is a single WalletItemSystemStore object.
         */
+      /* static member */
+      @JSGlobal("Windows.ApplicationModel.Wallet.System.WalletManagerSystem.requestStoreAsync")
+      @js.native
       def requestStoreAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Wallet.System.WalletItemSystemStore] = js.native
     }
   }
   
   /** Represents the action that was taken on the item that caused your app to launch. */
+  @JSGlobal("Windows.ApplicationModel.Wallet.WalletActionKind")
   @js.native
-  object WalletActionKind extends js.Object {
+  object WalletActionKind extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletActionKind with Double] = js.native
@@ -73,6 +76,7 @@ object Wallet extends js.Object {
   }
   
   /** Represents a bar code assigned to a wallet item. */
+  @JSGlobal("Windows.ApplicationModel.Wallet.WalletBarcode")
   @js.native
   class WalletBarcode protected ()
     extends typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletBarcode {
@@ -90,8 +94,9 @@ object Wallet extends js.Object {
   }
   
   /** Represents the barcode symbology types that are supported for a WalletItem . */
+  @JSGlobal("Windows.ApplicationModel.Wallet.WalletBarcodeSymbology")
   @js.native
-  object WalletBarcodeSymbology extends js.Object {
+  object WalletBarcodeSymbology extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -124,8 +129,9 @@ object Wallet extends js.Object {
   }
   
   /** Describes the position in the detail view of a wallet item that a WalletItemCustomProperty record should be displayed at. */
+  @JSGlobal("Windows.ApplicationModel.Wallet.WalletDetailViewPosition")
   @js.native
-  object WalletDetailViewPosition extends js.Object {
+  object WalletDetailViewPosition extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -164,6 +170,7 @@ object Wallet extends js.Object {
   }
   
   /** Represents an item (data) that is stored in the wallet. */
+  @JSGlobal("Windows.ApplicationModel.Wallet.WalletItem")
   @js.native
   class WalletItem protected ()
     extends typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletItem {
@@ -176,6 +183,7 @@ object Wallet extends js.Object {
   }
   
   /** Defines a custom property on a wallet item. Apps can show data in the details view or back of card view of the item. */
+  @JSGlobal("Windows.ApplicationModel.Wallet.WalletItemCustomProperty")
   @js.native
   class WalletItemCustomProperty protected ()
     extends typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletItemCustomProperty {
@@ -188,8 +196,9 @@ object Wallet extends js.Object {
   }
   
   /** Represents the kinds (classifications) of wallet items supported. */
+  @JSGlobal("Windows.ApplicationModel.Wallet.WalletItemKind")
   @js.native
-  object WalletItemKind extends js.Object {
+  object WalletItemKind extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletItemKind with Double] = js.native
@@ -210,34 +219,39 @@ object Wallet extends js.Object {
   }
   
   /** Defines a set of asynchronous actions and operations that manage the wallet items in the wallet database. These can be used to read the existing items, or to add and remove items. */
+  @JSGlobal("Windows.ApplicationModel.Wallet.WalletItemStore")
   @js.native
   abstract class WalletItemStore ()
     extends typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletItemStore
   
   /** Provides a static method to get an instance of the default wallet store for this app. */
+  @JSGlobal("Windows.ApplicationModel.Wallet.WalletManager")
   @js.native
   abstract class WalletManager ()
     extends typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletManager
-  /* static members */
-  @js.native
-  object WalletManager extends js.Object {
+  object WalletManager {
     
     /**
       * Requests an instance of the default wallet store for the app.
       * @return An asynchronous operation that, on successful completion, returns an instance of the default wallet store. If you use Asynchronous programming, the result type is a single WalletItemStore object.
       */
+    /* static member */
+    @JSGlobal("Windows.ApplicationModel.Wallet.WalletManager.requestStoreAsync")
+    @js.native
     def requestStoreAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletItemStore] = js.native
   }
   
   /** Represents relevant location data for a wallet item. */
+  @JSGlobal("Windows.ApplicationModel.Wallet.WalletRelevantLocation")
   @js.native
   /** Initializes a new instance of the WalletRelevantLocation class. */
   class WalletRelevantLocation ()
     extends typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletRelevantLocation
   
   /** Describes the position in the summary view of a wallet item that a WalletItemCustomProperty should be displayed. */
+  @JSGlobal("Windows.ApplicationModel.Wallet.WalletSummaryViewPosition")
   @js.native
-  object WalletSummaryViewPosition extends js.Object {
+  object WalletSummaryViewPosition extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -252,12 +266,14 @@ object Wallet extends js.Object {
   }
   
   /** Represents a single wallet transaction in the transaction history. */
+  @JSGlobal("Windows.ApplicationModel.Wallet.WalletTransaction")
   @js.native
   /** Initializes a new instance of the WalletTransaction class. */
   class WalletTransaction ()
     extends typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletTransaction
   
   /** Represents a wallet verb, which is potentially used for app activation. This is a string suitable for UI that is descriptive of the action. */
+  @JSGlobal("Windows.ApplicationModel.Wallet.WalletVerb")
   @js.native
   class WalletVerb protected ()
     extends typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletVerb {

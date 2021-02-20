@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountTakeoverActionsType extends js.Object {
+trait AccountTakeoverActionsType extends StObject {
   
   /**
     * Action to take for a high risk.
@@ -31,36 +32,24 @@ object AccountTakeoverActionsType {
   }
   
   @scala.inline
-  implicit class AccountTakeoverActionsTypeOps[Self <: AccountTakeoverActionsType] (val x: Self) extends AnyVal {
+  implicit class AccountTakeoverActionsTypeMutableBuilder[Self <: AccountTakeoverActionsType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighAction(value: AccountTakeoverActionType): Self = StObject.set(x, "HighAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighActionUndefined: Self = StObject.set(x, "HighAction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLowAction(value: AccountTakeoverActionType): Self = StObject.set(x, "LowAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighAction(value: AccountTakeoverActionType): Self = this.set("HighAction", value.asInstanceOf[js.Any])
+    def setLowActionUndefined: Self = StObject.set(x, "LowAction", js.undefined)
     
     @scala.inline
-    def deleteHighAction: Self = this.set("HighAction", js.undefined)
+    def setMediumAction(value: AccountTakeoverActionType): Self = StObject.set(x, "MediumAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowAction(value: AccountTakeoverActionType): Self = this.set("LowAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLowAction: Self = this.set("LowAction", js.undefined)
-    
-    @scala.inline
-    def setMediumAction(value: AccountTakeoverActionType): Self = this.set("MediumAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMediumAction: Self = this.set("MediumAction", js.undefined)
+    def setMediumActionUndefined: Self = StObject.set(x, "MediumAction", js.undefined)
   }
 }

@@ -4,13 +4,14 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdIcon.fontIconMod.FontIconProps
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/material-icons/types/HourglassFullFontIcon", JSImport.Namespace)
-@js.native
-object hourglassFullFontIconMod extends js.Object {
+object hourglassFullFontIconMod {
   
+  @JSImport("@react-md/material-icons/types/HourglassFullFontIcon", "HourglassFullFontIcon")
+  @js.native
   val HourglassFullFontIcon: ForwardRefExoticComponent[FontIconProps with RefAttributes[HTMLElement]] = js.native
 }

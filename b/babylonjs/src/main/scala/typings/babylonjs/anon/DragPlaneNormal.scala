@@ -1,12 +1,13 @@
 package typings.babylonjs.anon
 
 import typings.babylonjs.BABYLON.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DragPlaneNormal extends js.Object {
+trait DragPlaneNormal extends StObject {
   
   var delta: Vector3 = js.native
   
@@ -33,33 +34,21 @@ object DragPlaneNormal {
   }
   
   @scala.inline
-  implicit class DragPlaneNormalOps[Self <: DragPlaneNormal] (val x: Self) extends AnyVal {
+  implicit class DragPlaneNormalMutableBuilder[Self <: DragPlaneNormal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelta(value: Vector3): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDragDistance(value: Double): Self = StObject.set(x, "dragDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDragPlaneNormal(value: Vector3): Self = StObject.set(x, "dragPlaneNormal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelta(value: Vector3): Self = this.set("delta", value.asInstanceOf[js.Any])
+    def setDragPlanePoint(value: Vector3): Self = StObject.set(x, "dragPlanePoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragDistance(value: Double): Self = this.set("dragDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDragPlaneNormal(value: Vector3): Self = this.set("dragPlaneNormal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDragPlanePoint(value: Vector3): Self = this.set("dragPlanePoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPointerId(value: Double): Self = this.set("pointerId", value.asInstanceOf[js.Any])
+    def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
   }
 }

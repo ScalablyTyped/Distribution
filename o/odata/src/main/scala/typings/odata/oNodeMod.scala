@@ -4,21 +4,14 @@ import typings.odata.odataConfigMod.OdataConfig
 import typings.odata.odataQueryMod.OdataQuery
 import typings.std.RequestInit
 import typings.std.URL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("odata/dist/types/o.node", JSImport.Namespace)
-@js.native
-object oNodeMod extends js.Object {
+object oNodeMod {
   
-  def o(rootUrl: String): typings.odata.ohandlerMod.OHandler = js.native
-  def o(rootUrl: String, config: js.Any): typings.odata.ohandlerMod.OHandler = js.native
-  def o(rootUrl: String, config: OdataConfig): typings.odata.ohandlerMod.OHandler = js.native
-  def o(rootUrl: URL): typings.odata.ohandlerMod.OHandler = js.native
-  def o(rootUrl: URL, config: js.Any): typings.odata.ohandlerMod.OHandler = js.native
-  def o(rootUrl: URL, config: OdataConfig): typings.odata.ohandlerMod.OHandler = js.native
-  
+  @JSImport("odata/dist/types/o.node", "OBatch")
   @js.native
   class OBatch protected ()
     extends typings.odata.obatchMod.OBatch {
@@ -38,16 +31,37 @@ object oNodeMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("odata/dist/types/o.node", "OHandler")
   @js.native
   class OHandler protected ()
     extends typings.odata.ohandlerMod.OHandler {
     def this(config: OdataConfig) = this()
   }
   
+  @JSImport("odata/dist/types/o.node", "ORequest")
   @js.native
   class ORequest protected ()
     extends typings.odata.orequestMod.ORequest {
     def this(url: String, config: RequestInit) = this()
     def this(url: URL, config: RequestInit) = this()
   }
+  
+  @JSImport("odata/dist/types/o.node", "o")
+  @js.native
+  def o(rootUrl: String): typings.odata.ohandlerMod.OHandler = js.native
+  @JSImport("odata/dist/types/o.node", "o")
+  @js.native
+  def o(rootUrl: String, config: js.Any): typings.odata.ohandlerMod.OHandler = js.native
+  @JSImport("odata/dist/types/o.node", "o")
+  @js.native
+  def o(rootUrl: String, config: OdataConfig): typings.odata.ohandlerMod.OHandler = js.native
+  @JSImport("odata/dist/types/o.node", "o")
+  @js.native
+  def o(rootUrl: URL): typings.odata.ohandlerMod.OHandler = js.native
+  @JSImport("odata/dist/types/o.node", "o")
+  @js.native
+  def o(rootUrl: URL, config: js.Any): typings.odata.ohandlerMod.OHandler = js.native
+  @JSImport("odata/dist/types/o.node", "o")
+  @js.native
+  def o(rootUrl: URL, config: OdataConfig): typings.odata.ohandlerMod.OHandler = js.native
 }

@@ -4,16 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.cssSelectorParser.cssSelectorParserBooleans.`true`
 import typings.cssSelectorParser.parserContextMod.PseudoSelectorType
 import typings.cssSelectorParser.selectorMod.Selector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("css-selector-parser", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("css-selector-parser", "CssSelectorParser")
   @js.native
-  class CssSelectorParser () extends js.Object {
+  class CssSelectorParser () extends StObject {
     
     var attrEqualityMods: StringDictionary[`true`] = js.native
     

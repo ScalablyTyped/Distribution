@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DeleteOptions extends js.Object
+sealed trait DeleteOptions extends StObject
 @JSImport("vso-node-api/interfaces/BuildInterfaces", "DeleteOptions")
 @js.native
-object DeleteOptions extends js.Object {
+object DeleteOptions extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DeleteOptions with Double] = js.native
@@ -19,54 +19,47 @@ object DeleteOptions extends js.Object {
     */
   @js.native
   sealed trait All extends DeleteOptions
-  /* 31 */ @js.native
-  object All extends TopLevel[All with Double]
+  /* 31 */ val All: typings.vsoNodeApi.buildInterfacesMod.DeleteOptions.All with Double = js.native
   
   /**
     * The build should be deleted.
     */
   @js.native
   sealed trait Details extends DeleteOptions
-  /* 8 */ @js.native
-  object Details extends TopLevel[Details with Double]
+  /* 8 */ val Details: typings.vsoNodeApi.buildInterfacesMod.DeleteOptions.Details with Double = js.native
   
   /**
     * The drop location should be deleted.
     */
   @js.native
   sealed trait DropLocation extends DeleteOptions
-  /* 1 */ @js.native
-  object DropLocation extends TopLevel[DropLocation with Double]
+  /* 1 */ val DropLocation: typings.vsoNodeApi.buildInterfacesMod.DeleteOptions.DropLocation with Double = js.native
   
   /**
     * The version control label should be deleted.
     */
   @js.native
   sealed trait Label extends DeleteOptions
-  /* 4 */ @js.native
-  object Label extends TopLevel[Label with Double]
+  /* 4 */ val Label: typings.vsoNodeApi.buildInterfacesMod.DeleteOptions.Label with Double = js.native
   
   /**
     * No data should be deleted. This value should not be used.
     */
   @js.native
   sealed trait None extends DeleteOptions
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  /* 0 */ val None: typings.vsoNodeApi.buildInterfacesMod.DeleteOptions.None with Double = js.native
   
   /**
     * Published symbols should be deleted.
     */
   @js.native
   sealed trait Symbols extends DeleteOptions
-  /* 16 */ @js.native
-  object Symbols extends TopLevel[Symbols with Double]
+  /* 16 */ val Symbols: typings.vsoNodeApi.buildInterfacesMod.DeleteOptions.Symbols with Double = js.native
   
   /**
     * The test results should be deleted.
     */
   @js.native
   sealed trait TestResults extends DeleteOptions
-  /* 2 */ @js.native
-  object TestResults extends TopLevel[TestResults with Double]
+  /* 2 */ val TestResults: typings.vsoNodeApi.buildInterfacesMod.DeleteOptions.TestResults with Double = js.native
 }

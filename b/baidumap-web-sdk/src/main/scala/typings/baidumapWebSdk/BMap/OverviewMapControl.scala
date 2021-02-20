@@ -3,6 +3,7 @@ package typings.baidumapWebSdk.BMap
 import typings.baidumapWebSdk.anon.IsOpen
 import typings.baidumapWebSdk.anon.Target
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,33 +47,21 @@ object OverviewMapControl {
   }
   
   @scala.inline
-  implicit class OverviewMapControlOps[Self <: OverviewMapControl] (val x: Self) extends AnyVal {
+  implicit class OverviewMapControlMutableBuilder[Self <: OverviewMapControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeView(value: () => Unit): Self = StObject.set(x, "changeView", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSize(value: () => Size): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnviewchanged(value: IsOpen => Unit): Self = StObject.set(x, "onviewchanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChangeView(value: () => Unit): Self = this.set("changeView", js.Any.fromFunction0(value))
+    def setOnviewchanging(value: Target => Unit): Self = StObject.set(x, "onviewchanging", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSize(value: () => Size): Self = this.set("getSize", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnviewchanged(value: IsOpen => Unit): Self = this.set("onviewchanged", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnviewchanging(value: Target => Unit): Self = this.set("onviewchanging", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSize(value: Size => Unit): Self = this.set("setSize", js.Any.fromFunction1(value))
+    def setSetSize(value: Size => Unit): Self = StObject.set(x, "setSize", js.Any.fromFunction1(value))
   }
 }

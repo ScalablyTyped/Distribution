@@ -1,16 +1,14 @@
 package typings.phaser.phaserMod
 
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("phaser", "Structs")
-@js.native
-object Structs extends js.Object {
+object Structs {
   
-  @js.native
-  object Events extends js.Object {
+  object Events {
     
     /**
       * The Process Queue Add Event.
@@ -21,6 +19,8 @@ object Structs extends js.Object {
       * 
       * In that instance, listen to this event from within a Scene using: `this.sys.updateList.on('add', listener)`.
       */
+    @JSImport("phaser", "Structs.Events.PROCESS_QUEUE_ADD")
+    @js.native
     val PROCESS_QUEUE_ADD: js.Any = js.native
     
     /**
@@ -32,12 +32,15 @@ object Structs extends js.Object {
       * 
       * In that instance, listen to this event from within a Scene using: `this.sys.updateList.on('remove', listener)`.
       */
+    @JSImport("phaser", "Structs.Events.PROCESS_QUEUE_REMOVE")
+    @js.native
     val PROCESS_QUEUE_REMOVE: js.Any = js.native
   }
   
   /**
     * List is a generic implementation of an ordered list which contains utility methods for retrieving, manipulating, and iterating items.
     */
+  @JSImport("phaser", "Structs.List")
   @js.native
   class List[T] protected ()
     extends typings.phaser.Phaser.Structs.List[T] {
@@ -59,6 +62,7 @@ object Structs extends js.Object {
     * ]);
     * ```
     */
+  @JSImport("phaser", "Structs.Map")
   @js.native
   class Map[K, V] protected ()
     extends typings.phaser.Phaser.Structs.Map[K, V] {
@@ -81,6 +85,7 @@ object Structs extends js.Object {
     * being destroyed immediately. This allows the Process Queue to carefully process each item at a specific, fixed
     * time, rather than at the time of the request from the API.
     */
+  @JSImport("phaser", "Structs.ProcessQueue")
   @js.native
   class ProcessQueue[T] ()
     extends typings.phaser.Phaser.Structs.ProcessQueue[T]
@@ -97,6 +102,7 @@ object Structs extends js.Object {
     * 
     * rbush is forked from https://github.com/mourner/rbush by Vladimir Agafonkin
     */
+  @JSImport("phaser", "Structs.RTree")
   @js.native
   class RTree ()
     extends typings.phaser.Phaser.Structs.RTree
@@ -104,6 +110,7 @@ object Structs extends js.Object {
   /**
     * A Set is a collection of unique elements.
     */
+  @JSImport("phaser", "Structs.Set")
   @js.native
   /**
     * 
@@ -121,6 +128,7 @@ object Structs extends js.Object {
     * to a defined min-max range. You can also control the dominant axis. When dimensions are given to the Size component
     * that would cause it to exceed its min-max range, the dimensions are adjusted based on the dominant axis.
     */
+  @JSImport("phaser", "Structs.Size")
   @js.native
   /**
     * 
@@ -167,33 +175,46 @@ object Structs extends js.Object {
     def this(width: Double, height: Double, aspectMode: js.UndefOr[scala.Nothing], parent: js.Any) = this()
     def this(width: Double, height: Double, aspectMode: integer, parent: js.Any) = this()
   }
-  /* static members */
-  @js.native
-  object Size extends js.Object {
+  object Size {
     
     /**
       * The width and height are automatically adjusted to make the size cover the entire target area while keeping the aspect ratio. This may extend further out than the target size.
       */
+    /* static member */
+    @JSImport("phaser", "Structs.Size.ENVELOP")
+    @js.native
     val ENVELOP: integer = js.native
     
     /**
       * The width and height are automatically adjusted to fit inside the given target area, while keeping the aspect ratio. Depending on the aspect ratio there may be some space inside the area which is not covered.
       */
+    /* static member */
+    @JSImport("phaser", "Structs.Size.FIT")
+    @js.native
     val FIT: integer = js.native
     
     /**
       * The width is automatically adjusted based on the height.
       */
+    /* static member */
+    @JSImport("phaser", "Structs.Size.HEIGHT_CONTROLS_WIDTH")
+    @js.native
     val HEIGHT_CONTROLS_WIDTH: integer = js.native
     
     /**
       * Do not make the size fit the aspect ratio. Change the ratio when the size changes.
       */
+    /* static member */
+    @JSImport("phaser", "Structs.Size.NONE")
+    @js.native
     val NONE: integer = js.native
     
     /**
       * The height is automatically adjusted based on the width.
       */
+    /* static member */
+    @JSImport("phaser", "Structs.Size.WIDTH_CONTROLS_HEIGHT")
+    @js.native
     val WIDTH_CONTROLS_HEIGHT: integer = js.native
   }
 }

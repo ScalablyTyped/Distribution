@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdAscending extends js.Object {
+trait IdAscending extends StObject {
   
   var idAscending: scala.Double = js.native
   
@@ -29,30 +30,18 @@ object IdAscending {
   }
   
   @scala.inline
-  implicit class IdAscendingOps[Self <: IdAscending] (val x: Self) extends AnyVal {
+  implicit class IdAscendingMutableBuilder[Self <: IdAscending] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdAscending(value: scala.Double): Self = StObject.set(x, "idAscending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdDescending(value: scala.Double): Self = StObject.set(x, "idDescending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNameAscending(value: scala.Double): Self = StObject.set(x, "nameAscending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdAscending(value: scala.Double): Self = this.set("idAscending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdDescending(value: scala.Double): Self = this.set("idDescending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNameAscending(value: scala.Double): Self = this.set("nameAscending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNameDescending(value: scala.Double): Self = this.set("nameDescending", value.asInstanceOf[js.Any])
+    def setNameDescending(value: scala.Double): Self = StObject.set(x, "nameDescending", value.asInstanceOf[js.Any])
   }
 }

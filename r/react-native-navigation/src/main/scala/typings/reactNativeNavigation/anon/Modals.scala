@@ -1,11 +1,12 @@
 package typings.reactNativeNavigation.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Modals extends js.Object {
+trait Modals extends StObject {
   
   var modals: js.Array[_] = js.native
   
@@ -22,33 +23,21 @@ object Modals {
   }
   
   @scala.inline
-  implicit class ModalsOps[Self <: Modals] (val x: Self) extends AnyVal {
+  implicit class ModalsMutableBuilder[Self <: Modals] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModals(value: js.Array[_]): Self = StObject.set(x, "modals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModalsVarargs(value: js.Any*): Self = StObject.set(x, "modals", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverlays(value: js.Array[_]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModalsVarargs(value: js.Any*): Self = this.set("modals", js.Array(value :_*))
+    def setOverlaysVarargs(value: js.Any*): Self = StObject.set(x, "overlays", js.Array(value :_*))
     
     @scala.inline
-    def setModals(value: js.Array[_]): Self = this.set("modals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverlaysVarargs(value: js.Any*): Self = this.set("overlays", js.Array(value :_*))
-    
-    @scala.inline
-    def setOverlays(value: js.Array[_]): Self = this.set("overlays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoot(value: js.Any): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

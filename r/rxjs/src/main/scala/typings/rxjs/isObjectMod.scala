@@ -1,12 +1,13 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/util/isObject", JSImport.Namespace)
-@js.native
-object isObjectMod extends js.Object {
+object isObjectMod {
   
+  @JSImport("rxjs/internal/util/isObject", "isObject")
+  @js.native
   def isObject(x: js.Any): /* is std.Object */ Boolean = js.native
 }

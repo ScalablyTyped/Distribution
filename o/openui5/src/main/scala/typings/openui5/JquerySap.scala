@@ -1,11 +1,12 @@
 package typings.openui5
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JquerySap extends js.Object {
+trait JquerySap extends StObject {
   
   // Adds a whitelist entry for URL valiadtion 
   def addUrlWhitelist(protocol: js.Any, host: js.Any, port: js.Any, path: js.Any): Unit = js.native

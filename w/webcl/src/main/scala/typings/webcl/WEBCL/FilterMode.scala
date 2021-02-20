@@ -2,6 +2,7 @@ package typings.webcl.WEBCL
 
 import typings.webcl.webclNumbers.`0x1140`
 import typings.webcl.webclNumbers.`0x1141`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webcl.webclNumbers.`0x1140`
   - typings.webcl.webclNumbers.`0x1141`
 */
-trait FilterMode extends js.Object
+trait FilterMode extends StObject
 object FilterMode {
   
   @scala.inline

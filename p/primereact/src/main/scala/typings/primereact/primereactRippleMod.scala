@@ -1,16 +1,22 @@
 package typings.primereact
 
 import typings.primereact.rippleMod.RippleProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("primereact/ripple", JSImport.Namespace)
-@js.native
-object primereactRippleMod extends js.Object {
+object primereactRippleMod {
   
+  @JSImport("primereact/ripple", "Ripple")
   @js.native
-  class Ripple ()
-    extends Component[RippleProps, js.Any, js.Any]
+  class Ripple protected ()
+    extends typings.primereact.rippleMod.Ripple {
+    def this(props: RippleProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: RippleProps, context: js.Any) = this()
+  }
 }

@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultFontFamily extends js.Object {
+trait DefaultFontFamily extends StObject {
   
   /**
     * Defaults to `Script`.
@@ -46,54 +47,42 @@ object DefaultFontFamily {
   }
   
   @scala.inline
-  implicit class DefaultFontFamilyOps[Self <: DefaultFontFamily] (val x: Self) extends AnyVal {
+  implicit class DefaultFontFamilyMutableBuilder[Self <: DefaultFontFamily] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCursive(value: String): Self = StObject.set(x, "cursive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCursiveUndefined: Self = StObject.set(x, "cursive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFantasy(value: String): Self = StObject.set(x, "fantasy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursive(value: String): Self = this.set("cursive", value.asInstanceOf[js.Any])
+    def setFantasyUndefined: Self = StObject.set(x, "fantasy", js.undefined)
     
     @scala.inline
-    def deleteCursive: Self = this.set("cursive", js.undefined)
+    def setMonospace(value: String): Self = StObject.set(x, "monospace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFantasy(value: String): Self = this.set("fantasy", value.asInstanceOf[js.Any])
+    def setMonospaceUndefined: Self = StObject.set(x, "monospace", js.undefined)
     
     @scala.inline
-    def deleteFantasy: Self = this.set("fantasy", js.undefined)
+    def setSansSerif(value: String): Self = StObject.set(x, "sansSerif", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonospace(value: String): Self = this.set("monospace", value.asInstanceOf[js.Any])
+    def setSansSerifUndefined: Self = StObject.set(x, "sansSerif", js.undefined)
     
     @scala.inline
-    def deleteMonospace: Self = this.set("monospace", js.undefined)
+    def setSerif(value: String): Self = StObject.set(x, "serif", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSansSerif(value: String): Self = this.set("sansSerif", value.asInstanceOf[js.Any])
+    def setSerifUndefined: Self = StObject.set(x, "serif", js.undefined)
     
     @scala.inline
-    def deleteSansSerif: Self = this.set("sansSerif", js.undefined)
+    def setStandard(value: String): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerif(value: String): Self = this.set("serif", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSerif: Self = this.set("serif", js.undefined)
-    
-    @scala.inline
-    def setStandard(value: String): Self = this.set("standard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStandard: Self = this.set("standard", js.undefined)
+    def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
   }
 }

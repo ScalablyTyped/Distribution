@@ -2,6 +2,7 @@ package typings.tuyaPanelKit.mod
 
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,45 +27,33 @@ object ToastErrorProps {
   }
   
   @scala.inline
-  implicit class ToastErrorPropsOps[Self <: ToastErrorProps] (val x: Self) extends AnyVal {
+  implicit class ToastErrorPropsMutableBuilder[Self <: ToastErrorProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDUndefined: Self = StObject.set(x, "d", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setIconfontStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "iconfontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setD(value: String): Self = this.set("d", value.asInstanceOf[js.Any])
+    def setIconfontStyleNull: Self = StObject.set(x, "iconfontStyle", null)
     
     @scala.inline
-    def deleteD: Self = this.set("d", js.undefined)
+    def setIconfontStyleUndefined: Self = StObject.set(x, "iconfontStyle", js.undefined)
     
     @scala.inline
-    def setIconfontStyle(value: StyleProp[ViewStyle]): Self = this.set("iconfontStyle", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIconfontStyle: Self = this.set("iconfontStyle", js.undefined)
-    
-    @scala.inline
-    def setIconfontStyleNull: Self = this.set("iconfontStyle", null)
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

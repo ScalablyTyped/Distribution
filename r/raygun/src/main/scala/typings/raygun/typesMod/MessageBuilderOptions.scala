@@ -1,11 +1,12 @@
 package typings.raygun.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageBuilderOptions extends js.Object {
+trait MessageBuilderOptions extends StObject {
   
   var filters: js.UndefOr[js.Array[String]] = js.native
   
@@ -24,45 +25,33 @@ object MessageBuilderOptions {
   }
   
   @scala.inline
-  implicit class MessageBuilderOptionsOps[Self <: MessageBuilderOptions] (val x: Self) extends AnyVal {
+  implicit class MessageBuilderOptionsMutableBuilder[Self <: MessageBuilderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilters(value: js.Array[String]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiltersVarargs(value: String*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: String*): Self = this.set("filters", js.Array(value :_*))
+    def setInnerErrorFieldName(value: String): Self = StObject.set(x, "innerErrorFieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: js.Array[String]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setInnerErrorFieldNameUndefined: Self = StObject.set(x, "innerErrorFieldName", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setReportColumnNumbers(value: Boolean): Self = StObject.set(x, "reportColumnNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerErrorFieldName(value: String): Self = this.set("innerErrorFieldName", value.asInstanceOf[js.Any])
+    def setReportColumnNumbersUndefined: Self = StObject.set(x, "reportColumnNumbers", js.undefined)
     
     @scala.inline
-    def deleteInnerErrorFieldName: Self = this.set("innerErrorFieldName", js.undefined)
+    def setUseHumanStringForObject(value: Boolean): Self = StObject.set(x, "useHumanStringForObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportColumnNumbers(value: Boolean): Self = this.set("reportColumnNumbers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportColumnNumbers: Self = this.set("reportColumnNumbers", js.undefined)
-    
-    @scala.inline
-    def setUseHumanStringForObject(value: Boolean): Self = this.set("useHumanStringForObject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseHumanStringForObject: Self = this.set("useHumanStringForObject", js.undefined)
+    def setUseHumanStringForObjectUndefined: Self = StObject.set(x, "useHumanStringForObject", js.undefined)
   }
 }

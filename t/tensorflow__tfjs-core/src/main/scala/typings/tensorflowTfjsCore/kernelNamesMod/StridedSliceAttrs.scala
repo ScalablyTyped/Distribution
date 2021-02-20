@@ -1,11 +1,12 @@
 package typings.tensorflowTfjsCore.kernelNamesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StridedSliceAttrs extends js.Object {
+trait StridedSliceAttrs extends StObject {
   
   var begin: js.Array[Double] = js.native
   
@@ -41,51 +42,39 @@ object StridedSliceAttrs {
   }
   
   @scala.inline
-  implicit class StridedSliceAttrsOps[Self <: StridedSliceAttrs] (val x: Self) extends AnyVal {
+  implicit class StridedSliceAttrsMutableBuilder[Self <: StridedSliceAttrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBegin(value: js.Array[Double]): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginMask(value: Double): Self = StObject.set(x, "beginMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeginVarargs(value: Double*): Self = StObject.set(x, "begin", js.Array(value :_*))
     
     @scala.inline
-    def setBeginVarargs(value: Double*): Self = this.set("begin", js.Array(value :_*))
+    def setEllipsisMask(value: Double): Self = StObject.set(x, "ellipsisMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBegin(value: js.Array[Double]): Self = this.set("begin", value.asInstanceOf[js.Any])
+    def setEnd(value: js.Array[Double]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginMask(value: Double): Self = this.set("beginMask", value.asInstanceOf[js.Any])
+    def setEndMask(value: Double): Self = StObject.set(x, "endMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEllipsisMask(value: Double): Self = this.set("ellipsisMask", value.asInstanceOf[js.Any])
+    def setEndVarargs(value: Double*): Self = StObject.set(x, "end", js.Array(value :_*))
     
     @scala.inline
-    def setEndVarargs(value: Double*): Self = this.set("end", js.Array(value :_*))
+    def setNewAxisMask(value: Double): Self = StObject.set(x, "newAxisMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: js.Array[Double]): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setShrinkAxisMask(value: Double): Self = StObject.set(x, "shrinkAxisMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndMask(value: Double): Self = this.set("endMask", value.asInstanceOf[js.Any])
+    def setStrides(value: js.Array[Double]): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewAxisMask(value: Double): Self = this.set("newAxisMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShrinkAxisMask(value: Double): Self = this.set("shrinkAxisMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStridesVarargs(value: Double*): Self = this.set("strides", js.Array(value :_*))
-    
-    @scala.inline
-    def setStrides(value: js.Array[Double]): Self = this.set("strides", value.asInstanceOf[js.Any])
+    def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
   }
 }

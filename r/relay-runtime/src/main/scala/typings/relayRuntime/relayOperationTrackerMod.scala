@@ -2,16 +2,16 @@ package typings.relayRuntime
 
 import typings.relayRuntime.relayStoreTypesMod.RequestDescriptor
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("relay-runtime/lib/store/RelayOperationTracker", JSImport.Namespace)
-@js.native
-object relayOperationTrackerMod extends js.Object {
+object relayOperationTrackerMod {
   
+  @JSImport("relay-runtime/lib/store/RelayOperationTracker", "RelayOperationTracker")
   @js.native
-  class RelayOperationTracker () extends js.Object {
+  class RelayOperationTracker () extends StObject {
     
     def _resolveOwnerResolvers(owner: RequestDescriptor): Unit = js.native
     

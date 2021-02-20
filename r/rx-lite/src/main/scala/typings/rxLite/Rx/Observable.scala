@@ -6,6 +6,7 @@ import typings.rxLite.anon.Instantiable
 import typings.rxLite.anon.InstantiableIPromise
 import typings.std.Date
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,11 +20,11 @@ trait Observable[T] extends IObservable[T] {
   def `catch`(second: Observable[T]): Observable[T] = js.native
   
   def catchException(handler: js.Function1[/* exception */ Error, IPromise[T] | Observable[T]]): Observable[T] = js.native
-      // alias for catch
+  // alias for catch
   def catchException(second: Observable[T]): Observable[T] = js.native
   
   def combineLatest[T2](second: IPromise[T2]): Observable[js.Tuple2[T, T2]] = js.native
-      // alias for catch
+  // alias for catch
   def combineLatest[T2](second: Observable[T2]): Observable[js.Tuple2[T, T2]] = js.native
   def combineLatest[T2, TResult](second: IPromise[T2], resultSelector: js.Function2[/* v1 */ T, /* v2 */ T2, TResult]): Observable[TResult] = js.native
   def combineLatest[T2, T3](second: IPromise[T2], third: IPromise[T3]): Observable[js.Tuple3[T, T2, T3]] = js.native
@@ -245,16 +246,16 @@ trait Observable[T] extends IObservable[T] {
   
   def concatAll(): T = js.native
   
-      // alias for selectConcat
+  // alias for selectConcat
   def concatMap[R](
     selector: js.Function2[/* value */ T, /* index */ Double, js.Array[R] | IPromise[R] | Observable[R]]
   ): Observable[R] = js.native
-      // alias for selectConcat
+  // alias for selectConcat
   def concatMap[R](sequence: js.Array[R]): Observable[R] = js.native
-      // alias for selectConcat
+  // alias for selectConcat
   def concatMap[R](sequence: Observable[R]): Observable[R] = js.native
-      // alias for concatAll
-      // alias for selectConcat
+  // alias for concatAll
+  // alias for selectConcat
   def concatMap[T2, R](
     selector: js.Function2[/* value */ T, /* index */ Double, IPromise[T2] | Observable[T2]],
     resultSelector: js.Function3[/* value1 */ T, /* value2 */ T2, /* index */ Double, R]
@@ -310,7 +311,7 @@ trait Observable[T] extends IObservable[T] {
     onCompleted: js.Function0[Unit]
   ): Observable[T] = js.native
   
-      // alias for do
+  // alias for do
   def doAction(): Observable[T] = js.native
   def doAction(observer: Observer[T]): Observable[T] = js.native
   def doAction(
@@ -343,7 +344,7 @@ trait Observable[T] extends IObservable[T] {
   def doOnError(onError: js.Function1[/* exception */ js.Any, Unit]): Observable[T] = js.native
   def doOnError(onError: js.Function1[/* exception */ js.Any, Unit], thisArg: js.Any): Observable[T] = js.native
   
-      // alias for do
+  // alias for do
   def doOnNext(onNext: js.Function1[/* value */ T, Unit]): Observable[T] = js.native
   def doOnNext(onNext: js.Function1[/* value */ T, Unit], thisArg: js.Any): Observable[T] = js.native
   
@@ -382,13 +383,13 @@ trait Observable[T] extends IObservable[T] {
   
   def finallyAction(action: js.Function0[Unit]): Observable[T] = js.native
   
-      // alias for selectMany
+  // alias for selectMany
   def flatMap[TResult](other: IPromise[TResult]): Observable[TResult] = js.native
-      // alias for selectMany
+  // alias for selectMany
   def flatMap[TResult](other: Observable[TResult]): Observable[TResult] = js.native
-      // alias for selectMany
+  // alias for selectMany
   def flatMap[TResult](selector: js.Function1[/* value */ T, js.Array[TResult] | IPromise[TResult] | Observable[TResult]]): Observable[TResult] = js.native
-      // alias for selectMany
+  // alias for selectMany
   def flatMap[TOther, TResult](
     selector: js.Function1[/* value */ T, IPromise[TOther] | Observable[TOther]],
     resultSelector: js.Function2[/* item */ T, /* other */ TOther, TResult]
@@ -455,7 +456,7 @@ trait Observable[T] extends IObservable[T] {
     onCompleted: js.Function0[Unit]
   ): IDisposable = js.native
   
-      // alias for finally
+  // alias for finally
   def ignoreElements(): Observable[T] = js.native
   
   def map[TResult](selector: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], TResult]): Observable[TResult] = js.native
@@ -466,7 +467,7 @@ trait Observable[T] extends IObservable[T] {
   
   def materialize(): Observable[Notification[T]] = js.native
   
-      // alias for selectConcat
+  // alias for selectConcat
   def merge(maxConcurrent: Double): T = js.native
   def merge(other: IPromise[T]): Observable[T] = js.native
   def merge(other: Observable[T]): Observable[T] = js.native
@@ -475,7 +476,7 @@ trait Observable[T] extends IObservable[T] {
   
   def mergeObservable(): T = js.native
   
-      // alias for select
+  // alias for select
   def pluck[TResult](prop: String): Observable[TResult] = js.native
   
   def publish(): ConnectableObservable[T] = js.native
@@ -544,7 +545,7 @@ trait Observable[T] extends IObservable[T] {
     resultSelector: js.Function2[/* item */ T, /* other */ TOther, TResult]
   ): Observable[TResult] = js.native
   
-      // alias for selectMany
+  // alias for selectMany
   /**
     * Projects each notification of an observable sequence to an observable sequence and merges the resulting observable sequences into one observable sequence.
     * @param onNext A transform function to apply to each element; the second parameter of the function represents the index of the source element.
@@ -581,13 +582,13 @@ trait Observable[T] extends IObservable[T] {
     thisArg: js.Any
   ): Observable[TResult] = js.native
   
-      // alias for selectSwitch
+  // alias for selectSwitch
   def skip(count: Double): Observable[T] = js.native
   
   def skipLast(count: Double): Observable[T] = js.native
   
   def skipUntil[T2](other: IPromise[T2]): Observable[T] = js.native
-      // alias for mergeAll
+  // alias for mergeAll
   def skipUntil[T2](other: Observable[T2]): Observable[T] = js.native
   
   def skipWhile(predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): Observable[T] = js.native
@@ -603,7 +604,7 @@ trait Observable[T] extends IObservable[T] {
   
   def switchLatest(): T = js.native
   
-      // alias for selectSwitch
+  // alias for selectSwitch
   /**
     *  Projects each element of an observable sequence into a new sequence of observable sequences by incorporating the element's index and then
     *  transforms an observable sequence of observable sequences into an observable sequence producing values only from the most recent observable sequence.
@@ -627,7 +628,7 @@ trait Observable[T] extends IObservable[T] {
   def takeLastBuffer(count: Double): Observable[js.Array[T]] = js.native
   
   def takeUntil[T2](other: IPromise[T2]): Observable[T] = js.native
-      // alias for switch
+  // alias for switch
   def takeUntil[T2](other: Observable[T2]): Observable[T] = js.native
   
   def takeWhile(predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): Observable[T] = js.native
@@ -636,9 +637,9 @@ trait Observable[T] extends IObservable[T] {
     thisArg: js.Any
   ): Observable[T] = js.native
   
-      // alias for do
+  // alias for do
   def tap(): Observable[T] = js.native
-      // alias for do
+  // alias for do
   def tap(observer: Observer[T]): Observable[T] = js.native
   def tap(
     onNext: js.UndefOr[scala.Nothing],
@@ -697,7 +698,7 @@ trait Observable[T] extends IObservable[T] {
   def timestamp(): Observable[Timestamp[T]] = js.native
   def timestamp(scheduler: IScheduler): Observable[Timestamp[T]] = js.native
   
-      // alias for subscribe
+  // alias for subscribe
   def toArray(): Observable[js.Array[T]] = js.native
   
   /**
@@ -713,7 +714,7 @@ trait Observable[T] extends IObservable[T] {
     */
   def toPromise(): IPromise[T] = js.native
   def toPromise(promiseCtor: InstantiableIPromise[T]): IPromise[T] = js.native
-   // alias for where
+  // alias for where
   /**
     * Converts an existing observable sequence to an ES6 Compatible Promise
     * @example

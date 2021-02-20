@@ -1,5 +1,6 @@
 package typings.postmanCollection.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,39 +23,27 @@ object ScriptDefinition {
   }
   
   @scala.inline
-  implicit class ScriptDefinitionOps[Self <: ScriptDefinition] (val x: Self) extends AnyVal {
+  implicit class ScriptDefinitionMutableBuilder[Self <: ScriptDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExec(value: String | js.Array[String]): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecVarargs(value: String*): Self = StObject.set(x, "exec", js.Array(value :_*))
     
     @scala.inline
-    def setExecVarargs(value: String*): Self = this.set("exec", js.Array(value :_*))
+    def setSrc(value: String | Url): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExec(value: String | js.Array[String]): Self = this.set("exec", value.asInstanceOf[js.Any])
+    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
     @scala.inline
-    def deleteExec: Self = this.set("exec", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: String | Url): Self = this.set("src", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSrc: Self = this.set("src", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

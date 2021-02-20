@@ -1,12 +1,13 @@
 package typings.reduxPersist
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-persist/es/stateReconciler/hardSet", JSImport.Namespace)
-@js.native
-object hardSetMod extends js.Object {
+object hardSetMod {
   
+  @JSImport("redux-persist/es/stateReconciler/hardSet", JSImport.Default)
+  @js.native
   def default[S](inboundState: S): S = js.native
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPeople.gapi.client.people
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainMembership extends js.Object {
+trait DomainMembership extends StObject {
   
   /** True if the person is in the viewer's G Suite domain. */
   var inViewerDomain: js.UndefOr[Boolean] = js.native
@@ -19,24 +20,12 @@ object DomainMembership {
   }
   
   @scala.inline
-  implicit class DomainMembershipOps[Self <: DomainMembership] (val x: Self) extends AnyVal {
+  implicit class DomainMembershipMutableBuilder[Self <: DomainMembership] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInViewerDomain(value: Boolean): Self = StObject.set(x, "inViewerDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInViewerDomain(value: Boolean): Self = this.set("inViewerDomain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInViewerDomain: Self = this.set("inViewerDomain", js.undefined)
+    def setInViewerDomainUndefined: Self = StObject.set(x, "inViewerDomain", js.undefined)
   }
 }

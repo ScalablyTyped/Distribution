@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDhcpOptionsResult extends js.Object {
+trait CreateDhcpOptionsResult extends StObject {
   
   /**
     * A set of DHCP options.
@@ -21,24 +22,12 @@ object CreateDhcpOptionsResult {
   }
   
   @scala.inline
-  implicit class CreateDhcpOptionsResultOps[Self <: CreateDhcpOptionsResult] (val x: Self) extends AnyVal {
+  implicit class CreateDhcpOptionsResultMutableBuilder[Self <: CreateDhcpOptionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDhcpOptions(value: DhcpOptions): Self = StObject.set(x, "DhcpOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDhcpOptions(value: DhcpOptions): Self = this.set("DhcpOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDhcpOptions: Self = this.set("DhcpOptions", js.undefined)
+    def setDhcpOptionsUndefined: Self = StObject.set(x, "DhcpOptions", js.undefined)
   }
 }

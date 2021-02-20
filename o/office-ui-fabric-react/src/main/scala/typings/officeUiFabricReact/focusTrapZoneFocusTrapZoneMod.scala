@@ -3,14 +3,14 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.focusTrapZoneTypesMod.IFocusTrapZone
 import typings.officeUiFabricReact.focusTrapZoneTypesMod.IFocusTrapZoneProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/FocusTrapZone/FocusTrapZone", JSImport.Namespace)
-@js.native
-object focusTrapZoneFocusTrapZoneMod extends js.Object {
+object focusTrapZoneFocusTrapZoneMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/FocusTrapZone/FocusTrapZone", "FocusTrapZone")
   @js.native
   class FocusTrapZone protected ()
     extends Component[IFocusTrapZoneProps, js.Object, js.Any]
@@ -76,9 +76,16 @@ object focusTrapZoneFocusTrapZoneMod extends js.Object {
     def componentWillUnmount_MFocusTrapZone(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object FocusTrapZone extends js.Object {
+  object FocusTrapZone {
     
-    var _focusStack: js.Any = js.native
+    @JSImport("office-ui-fabric-react/lib/components/FocusTrapZone/FocusTrapZone", "FocusTrapZone")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/components/FocusTrapZone/FocusTrapZone", "FocusTrapZone._focusStack")
+    @js.native
+    def _focusStack: js.Any = js.native
+    @scala.inline
+    def _focusStack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_focusStack")(x.asInstanceOf[js.Any])
   }
 }

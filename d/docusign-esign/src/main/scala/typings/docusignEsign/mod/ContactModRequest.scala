@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContactModRequest extends js.Object {
+trait ContactModRequest extends StObject {
   
   /**
     * A list of contacts.
@@ -21,27 +22,15 @@ object ContactModRequest {
   }
   
   @scala.inline
-  implicit class ContactModRequestOps[Self <: ContactModRequest] (val x: Self) extends AnyVal {
+  implicit class ContactModRequestMutableBuilder[Self <: ContactModRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContactList(value: js.Array[Contact]): Self = StObject.set(x, "contactList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactListUndefined: Self = StObject.set(x, "contactList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContactListVarargs(value: Contact*): Self = this.set("contactList", js.Array(value :_*))
-    
-    @scala.inline
-    def setContactList(value: js.Array[Contact]): Self = this.set("contactList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContactList: Self = this.set("contactList", js.undefined)
+    def setContactListVarargs(value: Contact*): Self = StObject.set(x, "contactList", js.Array(value :_*))
   }
 }

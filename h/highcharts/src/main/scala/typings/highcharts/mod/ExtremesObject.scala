@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtremesObject extends js.Object {
+trait ExtremesObject extends StObject {
   
   /**
     * The maximum value of the axis' associated series.
@@ -52,36 +53,24 @@ object ExtremesObject {
   }
   
   @scala.inline
-  implicit class ExtremesObjectOps[Self <: ExtremesObject] (val x: Self) extends AnyVal {
+  implicit class ExtremesObjectMutableBuilder[Self <: ExtremesObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataMax(value: Double): Self = StObject.set(x, "dataMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataMin(value: Double): Self = StObject.set(x, "dataMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataMax(value: Double): Self = this.set("dataMax", value.asInstanceOf[js.Any])
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataMin(value: Double): Self = this.set("dataMin", value.asInstanceOf[js.Any])
+    def setUserMax(value: Double): Self = StObject.set(x, "userMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserMax(value: Double): Self = this.set("userMax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserMin(value: Double): Self = this.set("userMin", value.asInstanceOf[js.Any])
+    def setUserMin(value: Double): Self = StObject.set(x, "userMin", value.asInstanceOf[js.Any])
   }
 }

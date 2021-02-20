@@ -6,6 +6,7 @@ import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NORMAL
 import typings.mangopay2NodejsSdk.mod.Timestamp
 import typings.mangopay2NodejsSdk.mod.address.AddressData
 import typings.mangopay2NodejsSdk.typesMod.CountryISO
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,60 +94,48 @@ object UserNaturalData {
   }
   
   @scala.inline
-  implicit class UserNaturalDataOps[Self <: UserNaturalData] (val x: Self) extends AnyVal {
+  implicit class UserNaturalDataMutableBuilder[Self <: UserNaturalData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String | AddressData): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBirthday(value: Timestamp): Self = StObject.set(x, "Birthday", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapacity(value: NORMAL | DECLARATIVE): Self = StObject.set(x, "Capacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String | AddressData): Self = this.set("Address", value.asInstanceOf[js.Any])
+    def setCountryOfResidence(value: CountryISO): Self = StObject.set(x, "CountryOfResidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBirthday(value: Timestamp): Self = this.set("Birthday", value.asInstanceOf[js.Any])
+    def setFirstName(value: String): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacity(value: NORMAL | DECLARATIVE): Self = this.set("Capacity", value.asInstanceOf[js.Any])
+    def setIncomeRange(value: IncomeRange): Self = StObject.set(x, "IncomeRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryOfResidence(value: CountryISO): Self = this.set("CountryOfResidence", value.asInstanceOf[js.Any])
+    def setLastName(value: String): Self = StObject.set(x, "LastName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstName(value: String): Self = this.set("FirstName", value.asInstanceOf[js.Any])
+    def setNationality(value: CountryISO): Self = StObject.set(x, "Nationality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncomeRange(value: IncomeRange): Self = this.set("IncomeRange", value.asInstanceOf[js.Any])
+    def setOccupation(value: String): Self = StObject.set(x, "Occupation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastName(value: String): Self = this.set("LastName", value.asInstanceOf[js.Any])
+    def setPersonType(value: NATURAL): Self = StObject.set(x, "PersonType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNationality(value: CountryISO): Self = this.set("Nationality", value.asInstanceOf[js.Any])
+    def setProofOfAddress(value: String): Self = StObject.set(x, "ProofOfAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOccupation(value: String): Self = this.set("Occupation", value.asInstanceOf[js.Any])
+    def setProofOfAddressNull: Self = StObject.set(x, "ProofOfAddress", null)
     
     @scala.inline
-    def setPersonType(value: NATURAL): Self = this.set("PersonType", value.asInstanceOf[js.Any])
+    def setProofOfIdentity(value: String): Self = StObject.set(x, "ProofOfIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProofOfAddress(value: String): Self = this.set("ProofOfAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProofOfAddressNull: Self = this.set("ProofOfAddress", null)
-    
-    @scala.inline
-    def setProofOfIdentity(value: String): Self = this.set("ProofOfIdentity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProofOfIdentityNull: Self = this.set("ProofOfIdentity", null)
+    def setProofOfIdentityNull: Self = StObject.set(x, "ProofOfIdentity", null)
   }
 }

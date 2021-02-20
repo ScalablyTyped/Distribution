@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FaceMatch extends js.Object {
+trait FaceMatch extends StObject {
   
   /**
     * Describes the face properties such as the bounding box, face ID, image ID of the source image, and external image ID that you assigned.
@@ -26,30 +27,18 @@ object FaceMatch {
   }
   
   @scala.inline
-  implicit class FaceMatchOps[Self <: FaceMatch] (val x: Self) extends AnyVal {
+  implicit class FaceMatchMutableBuilder[Self <: FaceMatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFace(value: Face): Self = StObject.set(x, "Face", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFaceUndefined: Self = StObject.set(x, "Face", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSimilarity(value: Percent): Self = StObject.set(x, "Similarity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFace(value: Face): Self = this.set("Face", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFace: Self = this.set("Face", js.undefined)
-    
-    @scala.inline
-    def setSimilarity(value: Percent): Self = this.set("Similarity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSimilarity: Self = this.set("Similarity", js.undefined)
+    def setSimilarityUndefined: Self = StObject.set(x, "Similarity", js.undefined)
   }
 }

@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface exposes the methods and properties used to control and configure tethering capabilities for a specific network account. */
 @js.native
-trait NetworkOperatorTetheringManager extends js.Object {
+trait NetworkOperatorTetheringManager extends StObject {
   
   /** Gets the current number of connected clients on the tethering network. */
   var clientCount: Double = js.native
@@ -69,42 +70,30 @@ object NetworkOperatorTetheringManager {
   }
   
   @scala.inline
-  implicit class NetworkOperatorTetheringManagerOps[Self <: NetworkOperatorTetheringManager] (val x: Self) extends AnyVal {
+  implicit class NetworkOperatorTetheringManagerMutableBuilder[Self <: NetworkOperatorTetheringManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientCount(value: Double): Self = StObject.set(x, "clientCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigureAccessPointAsync(value: NetworkOperatorTetheringAccessPointConfiguration => IPromiseWithIAsyncAction): Self = StObject.set(x, "configureAccessPointAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCurrentAccessPointConfiguration(value: () => NetworkOperatorTetheringAccessPointConfiguration): Self = StObject.set(x, "getCurrentAccessPointConfiguration", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClientCount(value: Double): Self = this.set("clientCount", value.asInstanceOf[js.Any])
+    def setGetTetheringClients(value: () => IVectorView[NetworkOperatorTetheringClient]): Self = StObject.set(x, "getTetheringClients", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConfigureAccessPointAsync(value: NetworkOperatorTetheringAccessPointConfiguration => IPromiseWithIAsyncAction): Self = this.set("configureAccessPointAsync", js.Any.fromFunction1(value))
+    def setMaxClientCount(value: Double): Self = StObject.set(x, "maxClientCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCurrentAccessPointConfiguration(value: () => NetworkOperatorTetheringAccessPointConfiguration): Self = this.set("getCurrentAccessPointConfiguration", js.Any.fromFunction0(value))
+    def setStartTetheringAsync(value: () => IPromiseWithIAsyncOperation[NetworkOperatorTetheringOperationResult]): Self = StObject.set(x, "startTetheringAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTetheringClients(value: () => IVectorView[NetworkOperatorTetheringClient]): Self = this.set("getTetheringClients", js.Any.fromFunction0(value))
+    def setStopTetheringAsync(value: () => IPromiseWithIAsyncOperation[NetworkOperatorTetheringOperationResult]): Self = StObject.set(x, "stopTetheringAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaxClientCount(value: Double): Self = this.set("maxClientCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTetheringAsync(value: () => IPromiseWithIAsyncOperation[NetworkOperatorTetheringOperationResult]): Self = this.set("startTetheringAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStopTetheringAsync(value: () => IPromiseWithIAsyncOperation[NetworkOperatorTetheringOperationResult]): Self = this.set("stopTetheringAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTetheringOperationalState(value: TetheringOperationalState): Self = this.set("tetheringOperationalState", value.asInstanceOf[js.Any])
+    def setTetheringOperationalState(value: TetheringOperationalState): Self = StObject.set(x, "tetheringOperationalState", value.asInstanceOf[js.Any])
   }
 }

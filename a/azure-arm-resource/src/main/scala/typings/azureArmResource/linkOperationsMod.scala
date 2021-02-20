@@ -7,16 +7,15 @@ import typings.azureArmResource.linkModelsMod.ResourceLink
 import typings.azureArmResource.linkModelsMod.ResourceLinkResult
 import typings.msRest.mod.HttpOperationResponse
 import typings.msRest.mod.ServiceCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("azure-arm-resource/lib/link/operations", JSImport.Namespace)
-@js.native
-object linkOperationsMod extends js.Object {
+object linkOperationsMod {
   
   @js.native
-  trait Operations extends js.Object {
+  trait Operations extends StObject {
     
     /**
       * Lists all of the available Microsoft.Resources REST API operations.
@@ -130,7 +129,7 @@ object linkOperationsMod extends js.Object {
   }
   
   @js.native
-  trait ResourceLinks extends js.Object {
+  trait ResourceLinks extends StObject {
     
     /**
       * Creates or updates a resource link between the specified resources.

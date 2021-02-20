@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.flowcontrol.v1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * PriorityLevelConfigurationStatus represents the current state of a "request-priority".
   */
 @js.native
-trait PriorityLevelConfigurationStatus extends js.Object {
+trait PriorityLevelConfigurationStatus extends StObject {
   
   /**
     * `conditions` is the current state of "request-priority".
@@ -24,24 +25,12 @@ object PriorityLevelConfigurationStatus {
   }
   
   @scala.inline
-  implicit class PriorityLevelConfigurationStatusOps[Self <: PriorityLevelConfigurationStatus] (val x: Self) extends AnyVal {
+  implicit class PriorityLevelConfigurationStatusMutableBuilder[Self <: PriorityLevelConfigurationStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditions(value: js.Array[PriorityLevelConfigurationCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConditionsVarargs(value: PriorityLevelConfigurationCondition*): Self = this.set("conditions", js.Array(value :_*))
-    
-    @scala.inline
-    def setConditions(value: js.Array[PriorityLevelConfigurationCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setConditionsVarargs(value: PriorityLevelConfigurationCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
   }
 }

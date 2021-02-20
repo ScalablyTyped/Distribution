@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait YumSettings extends js.Object {
+trait YumSettings extends StObject {
   
   /** List of packages to exclude from update. These packages are excluded by using the yum `--exclude` flag. */
   var excludes: js.UndefOr[js.Array[String]] = js.native
@@ -31,48 +32,36 @@ object YumSettings {
   }
   
   @scala.inline
-  implicit class YumSettingsOps[Self <: YumSettings] (val x: Self) extends AnyVal {
+  implicit class YumSettingsMutableBuilder[Self <: YumSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value :_*))
     
     @scala.inline
-    def setExcludesVarargs(value: String*): Self = this.set("excludes", js.Array(value :_*))
+    def setExclusivePackages(value: js.Array[String]): Self = StObject.set(x, "exclusivePackages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludes(value: js.Array[String]): Self = this.set("excludes", value.asInstanceOf[js.Any])
+    def setExclusivePackagesUndefined: Self = StObject.set(x, "exclusivePackages", js.undefined)
     
     @scala.inline
-    def deleteExcludes: Self = this.set("excludes", js.undefined)
+    def setExclusivePackagesVarargs(value: String*): Self = StObject.set(x, "exclusivePackages", js.Array(value :_*))
     
     @scala.inline
-    def setExclusivePackagesVarargs(value: String*): Self = this.set("exclusivePackages", js.Array(value :_*))
+    def setMinimal(value: Boolean): Self = StObject.set(x, "minimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusivePackages(value: js.Array[String]): Self = this.set("exclusivePackages", value.asInstanceOf[js.Any])
+    def setMinimalUndefined: Self = StObject.set(x, "minimal", js.undefined)
     
     @scala.inline
-    def deleteExclusivePackages: Self = this.set("exclusivePackages", js.undefined)
+    def setSecurity(value: Boolean): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimal(value: Boolean): Self = this.set("minimal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimal: Self = this.set("minimal", js.undefined)
-    
-    @scala.inline
-    def setSecurity(value: Boolean): Self = this.set("security", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurity: Self = this.set("security", js.undefined)
+    def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
   }
 }

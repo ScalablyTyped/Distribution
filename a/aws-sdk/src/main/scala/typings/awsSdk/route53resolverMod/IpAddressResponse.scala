@@ -1,11 +1,12 @@
 package typings.awsSdk.route53resolverMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IpAddressResponse extends js.Object {
+trait IpAddressResponse extends StObject {
   
   /**
     * The date and time that the IP address was created, in Unix time format and Coordinated Universal Time (UTC).
@@ -51,60 +52,48 @@ object IpAddressResponse {
   }
   
   @scala.inline
-  implicit class IpAddressResponseOps[Self <: IpAddressResponse] (val x: Self) extends AnyVal {
+  implicit class IpAddressResponseMutableBuilder[Self <: IpAddressResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: Rfc3339TimeString): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIp(value: Ip): Self = StObject.set(x, "Ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Rfc3339TimeString): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setIpId(value: ResourceId): Self = StObject.set(x, "IpId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setIpIdUndefined: Self = StObject.set(x, "IpId", js.undefined)
     
     @scala.inline
-    def setIp(value: Ip): Self = this.set("Ip", value.asInstanceOf[js.Any])
+    def setIpUndefined: Self = StObject.set(x, "Ip", js.undefined)
     
     @scala.inline
-    def deleteIp: Self = this.set("Ip", js.undefined)
+    def setModificationTime(value: Rfc3339TimeString): Self = StObject.set(x, "ModificationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpId(value: ResourceId): Self = this.set("IpId", value.asInstanceOf[js.Any])
+    def setModificationTimeUndefined: Self = StObject.set(x, "ModificationTime", js.undefined)
     
     @scala.inline
-    def deleteIpId: Self = this.set("IpId", js.undefined)
+    def setStatus(value: IpAddressStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModificationTime(value: Rfc3339TimeString): Self = this.set("ModificationTime", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModificationTime: Self = this.set("ModificationTime", js.undefined)
+    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
     @scala.inline
-    def setStatus(value: IpAddressStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: StatusMessage): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
-    
-    @scala.inline
-    def setSubnetId(value: SubnetId): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
   }
 }

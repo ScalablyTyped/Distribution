@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeStackInstanceInput extends js.Object {
+trait DescribeStackInstanceInput extends StObject {
   
   /**
     * The ID of an AWS account that's associated with this stack instance.
@@ -31,27 +32,15 @@ object DescribeStackInstanceInput {
   }
   
   @scala.inline
-  implicit class DescribeStackInstanceInputOps[Self <: DescribeStackInstanceInput] (val x: Self) extends AnyVal {
+  implicit class DescribeStackInstanceInputMutableBuilder[Self <: DescribeStackInstanceInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStackInstanceAccount(value: Account): Self = StObject.set(x, "StackInstanceAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStackInstanceRegion(value: Region): Self = StObject.set(x, "StackInstanceRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStackInstanceAccount(value: Account): Self = this.set("StackInstanceAccount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStackInstanceRegion(value: Region): Self = this.set("StackInstanceRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStackSetName(value: StackSetName): Self = this.set("StackSetName", value.asInstanceOf[js.Any])
+    def setStackSetName(value: StackSetName): Self = StObject.set(x, "StackSetName", value.asInstanceOf[js.Any])
   }
 }

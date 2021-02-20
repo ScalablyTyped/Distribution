@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientStorage.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Age extends js.Object {
+trait Age extends StObject {
   
   /** Age of an object (in days). This condition is satisfied when an object reaches the specified age. */
   var age: js.UndefOr[Double] = js.native
@@ -69,81 +70,69 @@ object Age {
   }
   
   @scala.inline
-  implicit class AgeOps[Self <: Age] (val x: Self) extends AnyVal {
+  implicit class AgeMutableBuilder[Self <: Age] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgeUndefined: Self = StObject.set(x, "age", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedBefore(value: String): Self = StObject.set(x, "createdBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAge(value: Double): Self = this.set("age", value.asInstanceOf[js.Any])
+    def setCreatedBeforeUndefined: Self = StObject.set(x, "createdBefore", js.undefined)
     
     @scala.inline
-    def deleteAge: Self = this.set("age", js.undefined)
+    def setCustomTimeBefore(value: String): Self = StObject.set(x, "customTimeBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedBefore(value: String): Self = this.set("createdBefore", value.asInstanceOf[js.Any])
+    def setCustomTimeBeforeUndefined: Self = StObject.set(x, "customTimeBefore", js.undefined)
     
     @scala.inline
-    def deleteCreatedBefore: Self = this.set("createdBefore", js.undefined)
+    def setDaysSinceCustomTime(value: Double): Self = StObject.set(x, "daysSinceCustomTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomTimeBefore(value: String): Self = this.set("customTimeBefore", value.asInstanceOf[js.Any])
+    def setDaysSinceCustomTimeUndefined: Self = StObject.set(x, "daysSinceCustomTime", js.undefined)
     
     @scala.inline
-    def deleteCustomTimeBefore: Self = this.set("customTimeBefore", js.undefined)
+    def setDaysSinceNoncurrentTime(value: Double): Self = StObject.set(x, "daysSinceNoncurrentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaysSinceCustomTime(value: Double): Self = this.set("daysSinceCustomTime", value.asInstanceOf[js.Any])
+    def setDaysSinceNoncurrentTimeUndefined: Self = StObject.set(x, "daysSinceNoncurrentTime", js.undefined)
     
     @scala.inline
-    def deleteDaysSinceCustomTime: Self = this.set("daysSinceCustomTime", js.undefined)
+    def setIsLive(value: Boolean): Self = StObject.set(x, "isLive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaysSinceNoncurrentTime(value: Double): Self = this.set("daysSinceNoncurrentTime", value.asInstanceOf[js.Any])
+    def setIsLiveUndefined: Self = StObject.set(x, "isLive", js.undefined)
     
     @scala.inline
-    def deleteDaysSinceNoncurrentTime: Self = this.set("daysSinceNoncurrentTime", js.undefined)
+    def setMatchesPattern(value: String): Self = StObject.set(x, "matchesPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLive(value: Boolean): Self = this.set("isLive", value.asInstanceOf[js.Any])
+    def setMatchesPatternUndefined: Self = StObject.set(x, "matchesPattern", js.undefined)
     
     @scala.inline
-    def deleteIsLive: Self = this.set("isLive", js.undefined)
+    def setMatchesStorageClass(value: js.Array[String]): Self = StObject.set(x, "matchesStorageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchesPattern(value: String): Self = this.set("matchesPattern", value.asInstanceOf[js.Any])
+    def setMatchesStorageClassUndefined: Self = StObject.set(x, "matchesStorageClass", js.undefined)
     
     @scala.inline
-    def deleteMatchesPattern: Self = this.set("matchesPattern", js.undefined)
+    def setMatchesStorageClassVarargs(value: String*): Self = StObject.set(x, "matchesStorageClass", js.Array(value :_*))
     
     @scala.inline
-    def setMatchesStorageClassVarargs(value: String*): Self = this.set("matchesStorageClass", js.Array(value :_*))
+    def setNoncurrentTimeBefore(value: String): Self = StObject.set(x, "noncurrentTimeBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchesStorageClass(value: js.Array[String]): Self = this.set("matchesStorageClass", value.asInstanceOf[js.Any])
+    def setNoncurrentTimeBeforeUndefined: Self = StObject.set(x, "noncurrentTimeBefore", js.undefined)
     
     @scala.inline
-    def deleteMatchesStorageClass: Self = this.set("matchesStorageClass", js.undefined)
+    def setNumNewerVersions(value: Double): Self = StObject.set(x, "numNewerVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoncurrentTimeBefore(value: String): Self = this.set("noncurrentTimeBefore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoncurrentTimeBefore: Self = this.set("noncurrentTimeBefore", js.undefined)
-    
-    @scala.inline
-    def setNumNewerVersions(value: Double): Self = this.set("numNewerVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumNewerVersions: Self = this.set("numNewerVersions", js.undefined)
+    def setNumNewerVersionsUndefined: Self = StObject.set(x, "numNewerVersions", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An email field in a Contact.
   */
 @js.native
-trait EmailField extends js.Object {
+trait EmailField extends StObject {
   
   def deleteEmailField(): Unit = js.native
   

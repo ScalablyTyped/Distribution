@@ -1,5 +1,6 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googlemaps.googlemapsStrings.LineString
   - typings.googlemaps.googlemapsStrings.Polygon
 */
-trait DrawingMode extends js.Object
+trait DrawingMode extends StObject
 object DrawingMode {
   
   @scala.inline

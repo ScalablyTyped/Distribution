@@ -1,12 +1,13 @@
 package typings.itunesconnectanalytics.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("itunesconnectanalytics", "Itunes")
 @js.native
-class Itunes protected () extends js.Object {
+class Itunes protected () extends StObject {
   def this(username: String, password: String, options: ItunesOptions) = this()
   
   def changeProvider(

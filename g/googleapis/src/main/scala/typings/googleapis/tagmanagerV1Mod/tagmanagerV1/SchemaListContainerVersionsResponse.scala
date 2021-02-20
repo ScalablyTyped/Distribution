@@ -1,5 +1,6 @@
 package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * List container versions response.
   */
 @js.native
-trait SchemaListContainerVersionsResponse extends js.Object {
+trait SchemaListContainerVersionsResponse extends StObject {
   
   /**
     * All versions of a GTM Container.
@@ -29,36 +30,24 @@ object SchemaListContainerVersionsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListContainerVersionsResponseOps[Self <: SchemaListContainerVersionsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListContainerVersionsResponseMutableBuilder[Self <: SchemaListContainerVersionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerVersion(value: js.Array[SchemaContainerVersion]): Self = StObject.set(x, "containerVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerVersionHeader(value: js.Array[SchemaContainerVersionHeader]): Self = StObject.set(x, "containerVersionHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerVersionHeaderUndefined: Self = StObject.set(x, "containerVersionHeader", js.undefined)
     
     @scala.inline
-    def setContainerVersionVarargs(value: SchemaContainerVersion*): Self = this.set("containerVersion", js.Array(value :_*))
+    def setContainerVersionHeaderVarargs(value: SchemaContainerVersionHeader*): Self = StObject.set(x, "containerVersionHeader", js.Array(value :_*))
     
     @scala.inline
-    def setContainerVersion(value: js.Array[SchemaContainerVersion]): Self = this.set("containerVersion", value.asInstanceOf[js.Any])
+    def setContainerVersionUndefined: Self = StObject.set(x, "containerVersion", js.undefined)
     
     @scala.inline
-    def deleteContainerVersion: Self = this.set("containerVersion", js.undefined)
-    
-    @scala.inline
-    def setContainerVersionHeaderVarargs(value: SchemaContainerVersionHeader*): Self = this.set("containerVersionHeader", js.Array(value :_*))
-    
-    @scala.inline
-    def setContainerVersionHeader(value: js.Array[SchemaContainerVersionHeader]): Self = this.set("containerVersionHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainerVersionHeader: Self = this.set("containerVersionHeader", js.undefined)
+    def setContainerVersionVarargs(value: SchemaContainerVersion*): Self = StObject.set(x, "containerVersion", js.Array(value :_*))
   }
 }

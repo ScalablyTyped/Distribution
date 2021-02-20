@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.wafregional
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebAclRule extends js.Object {
+trait WebAclRule extends StObject {
   
   /**
     * Configuration block of the action that CloudFront or AWS WAF takes when a web request matches the conditions in the rule.  Not used if `type` is `GROUP`. Detailed below.
@@ -42,42 +43,30 @@ object WebAclRule {
   }
   
   @scala.inline
-  implicit class WebAclRuleOps[Self <: WebAclRule] (val x: Self) extends AnyVal {
+  implicit class WebAclRuleMutableBuilder[Self <: WebAclRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: WebAclRuleAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverrideAction(value: WebAclRuleOverrideAction): Self = StObject.set(x, "overrideAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setOverrideActionUndefined: Self = StObject.set(x, "overrideAction", js.undefined)
     
     @scala.inline
-    def setRuleId(value: String): Self = this.set("ruleId", value.asInstanceOf[js.Any])
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: WebAclRuleAction): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrideAction(value: WebAclRuleOverrideAction): Self = this.set("overrideAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverrideAction: Self = this.set("overrideAction", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

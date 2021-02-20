@@ -1,26 +1,27 @@
 package typings.yayson
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.yayson.mod.JsonOptions
-import typings.yayson.mod.Presenter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait TypeofPresenter extends Instantiable0[Presenter] {
+  trait TypeofPresenter extends StObject {
     
+    /* static member */
     var adapter: String = js.native
     
+    /* static member */
     def render(instanceOrCollection: js.Object): js.Any = js.native
     def render(instanceOrCollection: js.Object, options: JsonOptions): js.Any = js.native
+    /* static member */
     def render[T](instanceOrCollection: js.Thenable[T]): js.Thenable[T] = js.native
     def render[T](instanceOrCollection: js.Thenable[T], options: JsonOptions): js.Thenable[T] = js.native
     
+    /* static member */
     def toJSON(instanceOrCollection: js.Object): js.Any = js.native
     def toJSON(instanceOrCollection: js.Object, options: JsonOptions): js.Any = js.native
   }

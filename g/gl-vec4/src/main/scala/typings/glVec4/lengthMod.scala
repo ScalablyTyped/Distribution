@@ -1,12 +1,13 @@
 package typings.glVec4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gl-vec4/length", JSImport.Namespace)
-@js.native
-object lengthMod extends js.Object {
+object lengthMod {
   
+  @JSImport("gl-vec4/length", JSImport.Default)
+  @js.native
   def default(a: js.Array[Double]): Double = js.native
 }

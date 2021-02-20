@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,30 +49,18 @@ object TryStatement {
   }
   
   @scala.inline
-  implicit class TryStatementOps[Self <: TryStatement] (val x: Self) extends AnyVal {
+  implicit class TryStatementMutableBuilder[Self <: TryStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCatchClause(value: CatchClause): Self = StObject.set(x, "catchClause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFinallyClause(value: FinallyClause): Self = StObject.set(x, "finallyClause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlock(value: Block): Self = this.set("block", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCatchClause(value: CatchClause): Self = this.set("catchClause", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFinallyClause(value: FinallyClause): Self = this.set("finallyClause", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStructuralEquals(value: (TryStatement, Boolean) => Boolean): Self = this.set("structuralEquals", js.Any.fromFunction2(value))
+    def setStructuralEquals(value: (TryStatement, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

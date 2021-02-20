@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#eles.dijkstra
   */
 @js.native
-trait SearchDijkstraOptions extends js.Object {
+trait SearchDijkstraOptions extends StObject {
   
   /**
     * A boolean indicating whether the algorithm should only go along edges from source to target (default false).
@@ -36,33 +37,21 @@ object SearchDijkstraOptions {
   }
   
   @scala.inline
-  implicit class SearchDijkstraOptionsOps[Self <: SearchDijkstraOptions] (val x: Self) extends AnyVal {
+  implicit class SearchDijkstraOptionsMutableBuilder[Self <: SearchDijkstraOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoot(value: Selector | CollectionArgument): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: Selector | CollectionArgument): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setWeight(value: /* edge */ EdgeCollection => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDirected(value: Boolean): Self = this.set("directed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirected: Self = this.set("directed", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: /* edge */ EdgeCollection => Double): Self = this.set("weight", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

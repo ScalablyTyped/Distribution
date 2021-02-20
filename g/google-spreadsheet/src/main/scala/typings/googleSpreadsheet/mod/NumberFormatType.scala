@@ -1,5 +1,6 @@
 package typings.googleSpreadsheet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleSpreadsheet.googleSpreadsheetStrings.TIME
   - typings.googleSpreadsheet.googleSpreadsheetStrings.SCIENTIFIC
 */
-trait NumberFormatType extends js.Object
+trait NumberFormatType extends StObject
 object NumberFormatType {
   
   @scala.inline

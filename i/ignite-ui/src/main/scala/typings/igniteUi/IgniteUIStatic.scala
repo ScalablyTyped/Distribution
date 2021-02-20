@@ -2,12 +2,13 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgniteUIStatic extends js.Object {
+trait IgniteUIStatic extends StObject {
   
   var ArrayDataSource: Instantiable1[/* settings */ DataSourceSettings, typings.igniteUi.Infragistics.ArrayDataSource] = js.native
   

@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.sdbc
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -92,36 +93,24 @@ object XClob {
   }
   
   @scala.inline
-  implicit class XClobOps[Self <: XClob] (val x: Self) extends AnyVal {
+  implicit class XClobMutableBuilder[Self <: XClob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharacterStream(value: XInputStream): Self = StObject.set(x, "CharacterStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCharacterStream(value: () => XInputStream): Self = StObject.set(x, "getCharacterStream", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSubString(value: (Double, Double) => String): Self = StObject.set(x, "getSubString", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCharacterStream(value: XInputStream): Self = this.set("CharacterStream", value.asInstanceOf[js.Any])
+    def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCharacterStream(value: () => XInputStream): Self = this.set("getCharacterStream", js.Any.fromFunction0(value))
+    def setPosition(value: (String, Double) => Double): Self = StObject.set(x, "position", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetSubString(value: (Double, Double) => String): Self = this.set("getSubString", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setLength(value: () => Double): Self = this.set("length", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPosition(value: (String, Double) => Double): Self = this.set("position", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setPositionOfClob(value: (XClob, Double) => Double): Self = this.set("positionOfClob", js.Any.fromFunction2(value))
+    def setPositionOfClob(value: (XClob, Double) => Double): Self = StObject.set(x, "positionOfClob", js.Any.fromFunction2(value))
   }
 }

@@ -1,18 +1,19 @@
 package typings.uriTemplates
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("uri-templates", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("uri-templates", JSImport.Namespace)
+  @js.native
   def apply(template: String): URITemplate = js.native
   
   @js.native
-  trait URITemplate extends js.Object {
+  trait URITemplate extends StObject {
     
     def fill(callback: js.Function1[/* varName */ String, String]): String = js.native
     def fill(vars: StringDictionary[String | StringDictionary[String]]): String = js.native

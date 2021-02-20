@@ -1,14 +1,14 @@
 package typings.typedoc
 
 import typings.typedoc.modelsTypesMod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/models/types/indexed-access", JSImport.Namespace)
-@js.native
-object typesIndexedAccessMod extends js.Object {
+object typesIndexedAccessMod {
   
+  @JSImport("typedoc/dist/lib/models/types/indexed-access", "IndexedAccessType")
   @js.native
   class IndexedAccessType protected () extends Type {
     def this(objectType: Type, indexType: Type) = this()

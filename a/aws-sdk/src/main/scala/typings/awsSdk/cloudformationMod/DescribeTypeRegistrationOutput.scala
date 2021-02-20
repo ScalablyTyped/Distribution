@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTypeRegistrationOutput extends js.Object {
+trait DescribeTypeRegistrationOutput extends StObject {
   
   /**
     * The description of the type registration request.
@@ -36,42 +37,30 @@ object DescribeTypeRegistrationOutput {
   }
   
   @scala.inline
-  implicit class DescribeTypeRegistrationOutputOps[Self <: DescribeTypeRegistrationOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeTypeRegistrationOutputMutableBuilder[Self <: DescribeTypeRegistrationOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProgressStatus(value: RegistrationStatus): Self = StObject.set(x, "ProgressStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setProgressStatusUndefined: Self = StObject.set(x, "ProgressStatus", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setTypeArn(value: TypeArn): Self = StObject.set(x, "TypeArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressStatus(value: RegistrationStatus): Self = this.set("ProgressStatus", value.asInstanceOf[js.Any])
+    def setTypeArnUndefined: Self = StObject.set(x, "TypeArn", js.undefined)
     
     @scala.inline
-    def deleteProgressStatus: Self = this.set("ProgressStatus", js.undefined)
+    def setTypeVersionArn(value: TypeArn): Self = StObject.set(x, "TypeVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeArn(value: TypeArn): Self = this.set("TypeArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeArn: Self = this.set("TypeArn", js.undefined)
-    
-    @scala.inline
-    def setTypeVersionArn(value: TypeArn): Self = this.set("TypeVersionArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeVersionArn: Self = this.set("TypeVersionArn", js.undefined)
+    def setTypeVersionArnUndefined: Self = StObject.set(x, "TypeVersionArn", js.undefined)
   }
 }

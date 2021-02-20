@@ -1,11 +1,12 @@
 package typings.styledSystemCss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OverwriteCSSProperties extends js.Object {
+trait OverwriteCSSProperties extends StObject {
   
   /**
     * The **`box-shadow`** CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the
@@ -64,42 +65,30 @@ object OverwriteCSSProperties {
   }
   
   @scala.inline
-  implicit class OverwriteCSSPropertiesOps[Self <: OverwriteCSSProperties] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class OverwriteCSSPropertiesMutableBuilder[Self <: OverwriteCSSProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setBoxShadow(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double
-    ): Self = this.set("boxShadow", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoxShadow: Self = this.set("boxShadow", js.undefined)
+    def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
     
     @scala.inline
     def setFontWeight(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | String
-    ): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
     def setZIndex(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | String
-    ): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

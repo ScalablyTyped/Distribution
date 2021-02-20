@@ -3,14 +3,14 @@ package typings.jupyterlabUiComponents
 import typings.luminoWidgets.contextmenuMod.ContextMenu.IOptions
 import typings.luminoWidgets.mod.ContextMenu
 import typings.luminoWidgets.mod.Menu
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/ui-components/lib/icon/widgets/menusvg", JSImport.Namespace)
-@js.native
-object menusvgMod extends js.Object {
+object menusvgMod {
   
+  @JSImport("@jupyterlab/ui-components/lib/icon/widgets/menusvg", "ContextMenuSvg")
   @js.native
   class ContextMenuSvg protected () extends ContextMenu {
     /**
@@ -24,6 +24,7 @@ object menusvgMod extends js.Object {
     val menu_ContextMenuSvg: MenuSvg = js.native
   }
   
+  @JSImport("@jupyterlab/ui-components/lib/icon/widgets/menusvg", "MenuSvg")
   @js.native
   class MenuSvg protected () extends Menu {
     /**
@@ -33,18 +34,25 @@ object menusvgMod extends js.Object {
       */
     def this(options: typings.luminoWidgets.menuMod.Menu.IOptions) = this()
   }
-  @js.native
-  object MenuSvg extends js.Object {
-    
-    val defaultRenderer: Renderer = js.native
-    
-    def overrideDefaultRenderer(menu: Menu): Unit = js.native
+  object MenuSvg {
     
     /**
       * a modified implementation of the Menu Renderer
       */
+    @JSImport("@jupyterlab/ui-components/lib/icon/widgets/menusvg", "MenuSvg.Renderer")
     @js.native
+    /**
+      * Construct a new renderer.
+      */
     class Renderer ()
       extends typings.luminoWidgets.mod.Menu.Renderer
+    
+    @JSImport("@jupyterlab/ui-components/lib/icon/widgets/menusvg", "MenuSvg.defaultRenderer")
+    @js.native
+    val defaultRenderer: Renderer = js.native
+    
+    @JSImport("@jupyterlab/ui-components/lib/icon/widgets/menusvg", "MenuSvg.overrideDefaultRenderer")
+    @js.native
+    def overrideDefaultRenderer(menu: Menu): Unit = js.native
   }
 }

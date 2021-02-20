@@ -1,5 +1,6 @@
 package typings.deezerSdk.DeezerSdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See: {@link https://developers.deezer.com/sdk/javascript | Introduction}
   */
 @js.native
-trait DZ extends js.Object {
+trait DZ extends StObject {
   
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/events-subscribe | Subscribe to an event}

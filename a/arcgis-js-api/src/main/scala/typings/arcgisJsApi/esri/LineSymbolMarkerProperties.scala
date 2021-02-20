@@ -9,12 +9,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.diamond
 import typings.arcgisJsApi.arcgisJsApiStrings.end
 import typings.arcgisJsApi.arcgisJsApiStrings.square
 import typings.arcgisJsApi.arcgisJsApiStrings.x
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LineSymbolMarkerProperties extends js.Object {
+trait LineSymbolMarkerProperties extends StObject {
   
   /**
     * The color of the marker.
@@ -46,39 +47,27 @@ object LineSymbolMarkerProperties {
   }
   
   @scala.inline
-  implicit class LineSymbolMarkerPropertiesOps[Self <: LineSymbolMarkerProperties] (val x: Self) extends AnyVal {
+  implicit class LineSymbolMarkerPropertiesMutableBuilder[Self <: LineSymbolMarkerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
     
     @scala.inline
-    def setColorVarargs(value: Double*): Self = this.set("color", js.Array(value :_*))
+    def setPlacement(value: begin | end | `begin-end`): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Color_ | js.Array[Double] | String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setStyle(value: arrow | circle | square | diamond | cross | typings.arcgisJsApi.arcgisJsApiStrings.x): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacement(value: begin | end | `begin-end`): Self = this.set("placement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlacement: Self = this.set("placement", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: arrow | circle | square | diamond | cross | typings.arcgisJsApi.arcgisJsApiStrings.x): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

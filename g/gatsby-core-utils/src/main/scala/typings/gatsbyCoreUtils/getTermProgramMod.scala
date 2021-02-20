@@ -1,12 +1,13 @@
 package typings.gatsbyCoreUtils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gatsby-core-utils/dist/get-term-program", JSImport.Namespace)
-@js.native
-object getTermProgramMod extends js.Object {
+object getTermProgramMod {
   
+  @JSImport("gatsby-core-utils/dist/get-term-program", "getTermProgram")
+  @js.native
   def getTermProgram(): js.UndefOr[String] = js.native
 }

@@ -1,11 +1,12 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColorSpaceEnumValues extends js.Object {
+trait ColorSpaceEnumValues extends StObject {
   
   val ADOBE_RGB: ColorSpace = js.native
   
@@ -23,27 +24,15 @@ object ColorSpaceEnumValues {
   }
   
   @scala.inline
-  implicit class ColorSpaceEnumValuesOps[Self <: ColorSpaceEnumValues] (val x: Self) extends AnyVal {
+  implicit class ColorSpaceEnumValuesMutableBuilder[Self <: ColorSpaceEnumValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setADOBE_RGB(value: ColorSpace): Self = StObject.set(x, "ADOBE_RGB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDISPLAY_P3(value: ColorSpace): Self = StObject.set(x, "DISPLAY_P3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setADOBE_RGB(value: ColorSpace): Self = this.set("ADOBE_RGB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDISPLAY_P3(value: ColorSpace): Self = this.set("DISPLAY_P3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSRGB(value: ColorSpace): Self = this.set("SRGB", value.asInstanceOf[js.Any])
+    def setSRGB(value: ColorSpace): Self = StObject.set(x, "SRGB", value.asInstanceOf[js.Any])
   }
 }

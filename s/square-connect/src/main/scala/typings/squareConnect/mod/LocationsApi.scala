@@ -1,5 +1,6 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new LocationsApi.
   * @param apiClient Optional API client implementation to use, default to {@link module:ApiClient#instance} if unspecified.
   */
-class LocationsApi () extends js.Object {
+class LocationsApi () extends StObject {
   def this(apiClient: ApiClient) = this()
   
   /**

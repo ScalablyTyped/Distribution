@@ -1,11 +1,12 @@
 package typings.awsSdk.supportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CaseDetails extends js.Object {
+trait CaseDetails extends StObject {
   
   /**
     * The AWS Support case ID requested or returned in the call. The case ID is an alphanumeric string formatted as shown in this example: case-12345678910-2013-c4c1d2bf33c5cf47 
@@ -76,93 +77,81 @@ object CaseDetails {
   }
   
   @scala.inline
-  implicit class CaseDetailsOps[Self <: CaseDetails] (val x: Self) extends AnyVal {
+  implicit class CaseDetailsMutableBuilder[Self <: CaseDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaseId(value: CaseId): Self = StObject.set(x, "caseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaseIdUndefined: Self = StObject.set(x, "caseId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoryCode(value: CategoryCode): Self = StObject.set(x, "categoryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseId(value: CaseId): Self = this.set("caseId", value.asInstanceOf[js.Any])
+    def setCategoryCodeUndefined: Self = StObject.set(x, "categoryCode", js.undefined)
     
     @scala.inline
-    def deleteCaseId: Self = this.set("caseId", js.undefined)
+    def setCcEmailAddresses(value: CcEmailAddressList): Self = StObject.set(x, "ccEmailAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryCode(value: CategoryCode): Self = this.set("categoryCode", value.asInstanceOf[js.Any])
+    def setCcEmailAddressesUndefined: Self = StObject.set(x, "ccEmailAddresses", js.undefined)
     
     @scala.inline
-    def deleteCategoryCode: Self = this.set("categoryCode", js.undefined)
+    def setCcEmailAddressesVarargs(value: CcEmailAddress*): Self = StObject.set(x, "ccEmailAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setCcEmailAddressesVarargs(value: CcEmailAddress*): Self = this.set("ccEmailAddresses", js.Array(value :_*))
+    def setDisplayId(value: DisplayId): Self = StObject.set(x, "displayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCcEmailAddresses(value: CcEmailAddressList): Self = this.set("ccEmailAddresses", value.asInstanceOf[js.Any])
+    def setDisplayIdUndefined: Self = StObject.set(x, "displayId", js.undefined)
     
     @scala.inline
-    def deleteCcEmailAddresses: Self = this.set("ccEmailAddresses", js.undefined)
+    def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayId(value: DisplayId): Self = this.set("displayId", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteDisplayId: Self = this.set("displayId", js.undefined)
+    def setRecentCommunications(value: RecentCaseCommunications): Self = StObject.set(x, "recentCommunications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: Language): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setRecentCommunicationsUndefined: Self = StObject.set(x, "recentCommunications", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setServiceCode(value: ServiceCode): Self = StObject.set(x, "serviceCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecentCommunications(value: RecentCaseCommunications): Self = this.set("recentCommunications", value.asInstanceOf[js.Any])
+    def setServiceCodeUndefined: Self = StObject.set(x, "serviceCode", js.undefined)
     
     @scala.inline
-    def deleteRecentCommunications: Self = this.set("recentCommunications", js.undefined)
+    def setSeverityCode(value: SeverityCode): Self = StObject.set(x, "severityCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceCode(value: ServiceCode): Self = this.set("serviceCode", value.asInstanceOf[js.Any])
+    def setSeverityCodeUndefined: Self = StObject.set(x, "severityCode", js.undefined)
     
     @scala.inline
-    def deleteServiceCode: Self = this.set("serviceCode", js.undefined)
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeverityCode(value: SeverityCode): Self = this.set("severityCode", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSeverityCode: Self = this.set("severityCode", js.undefined)
+    def setSubject(value: Subject): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setSubmittedBy(value: SubmittedBy): Self = StObject.set(x, "submittedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: Subject): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setSubmittedByUndefined: Self = StObject.set(x, "submittedBy", js.undefined)
     
     @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
+    def setTimeCreated(value: TimeCreated): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmittedBy(value: SubmittedBy): Self = this.set("submittedBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubmittedBy: Self = this.set("submittedBy", js.undefined)
-    
-    @scala.inline
-    def setTimeCreated(value: TimeCreated): Self = this.set("timeCreated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeCreated: Self = this.set("timeCreated", js.undefined)
+    def setTimeCreatedUndefined: Self = StObject.set(x, "timeCreated", js.undefined)
   }
 }

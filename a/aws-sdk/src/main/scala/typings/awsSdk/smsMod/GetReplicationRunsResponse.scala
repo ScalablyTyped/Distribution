@@ -1,11 +1,12 @@
 package typings.awsSdk.smsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetReplicationRunsResponse extends js.Object {
+trait GetReplicationRunsResponse extends StObject {
   
   /**
     * The token required to retrieve the next set of results. This value is null when there are no more results to return.
@@ -31,39 +32,27 @@ object GetReplicationRunsResponse {
   }
   
   @scala.inline
-  implicit class GetReplicationRunsResponseOps[Self <: GetReplicationRunsResponse] (val x: Self) extends AnyVal {
+  implicit class GetReplicationRunsResponseMutableBuilder[Self <: GetReplicationRunsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplicationJob(value: ReplicationJob): Self = StObject.set(x, "replicationJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setReplicationJobUndefined: Self = StObject.set(x, "replicationJob", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setReplicationRunList(value: ReplicationRunList): Self = StObject.set(x, "replicationRunList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationJob(value: ReplicationJob): Self = this.set("replicationJob", value.asInstanceOf[js.Any])
+    def setReplicationRunListUndefined: Self = StObject.set(x, "replicationRunList", js.undefined)
     
     @scala.inline
-    def deleteReplicationJob: Self = this.set("replicationJob", js.undefined)
-    
-    @scala.inline
-    def setReplicationRunListVarargs(value: ReplicationRun*): Self = this.set("replicationRunList", js.Array(value :_*))
-    
-    @scala.inline
-    def setReplicationRunList(value: ReplicationRunList): Self = this.set("replicationRunList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicationRunList: Self = this.set("replicationRunList", js.undefined)
+    def setReplicationRunListVarargs(value: ReplicationRun*): Self = StObject.set(x, "replicationRunList", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.sketchapp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.sketchapp.sketchappNumbers.`3`
   - typings.sketchapp.sketchappNumbers.`4`
 */
-trait SketchMSCurveMode extends js.Object
+trait SketchMSCurveMode extends StObject
 object SketchMSCurveMode {
   
   @scala.inline

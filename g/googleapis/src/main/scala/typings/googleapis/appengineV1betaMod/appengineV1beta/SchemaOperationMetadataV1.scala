@@ -1,5 +1,6 @@
 package typings.googleapis.appengineV1betaMod.appengineV1beta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Metadata for the given google.longrunning.Operation.
   */
 @js.native
-trait SchemaOperationMetadataV1 extends js.Object {
+trait SchemaOperationMetadataV1 extends StObject {
   
   var createVersionMetadata: js.UndefOr[SchemaCreateVersionMetadataV1] = js.native
   
@@ -59,69 +60,57 @@ object SchemaOperationMetadataV1 {
   }
   
   @scala.inline
-  implicit class SchemaOperationMetadataV1Ops[Self <: SchemaOperationMetadataV1] (val x: Self) extends AnyVal {
+  implicit class SchemaOperationMetadataV1MutableBuilder[Self <: SchemaOperationMetadataV1] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateVersionMetadata(value: SchemaCreateVersionMetadataV1): Self = StObject.set(x, "createVersionMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateVersionMetadataUndefined: Self = StObject.set(x, "createVersionMetadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateVersionMetadata(value: SchemaCreateVersionMetadataV1): Self = this.set("createVersionMetadata", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteCreateVersionMetadata: Self = this.set("createVersionMetadata", js.undefined)
+    def setEphemeralMessage(value: String): Self = StObject.set(x, "ephemeralMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setEphemeralMessageUndefined: Self = StObject.set(x, "ephemeralMessage", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setInsertTime(value: String): Self = StObject.set(x, "insertTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEphemeralMessage(value: String): Self = this.set("ephemeralMessage", value.asInstanceOf[js.Any])
+    def setInsertTimeUndefined: Self = StObject.set(x, "insertTime", js.undefined)
     
     @scala.inline
-    def deleteEphemeralMessage: Self = this.set("ephemeralMessage", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertTime(value: String): Self = this.set("insertTime", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteInsertTime: Self = this.set("insertTime", js.undefined)
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
     @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setWarning(value: js.Array[String]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     
     @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
-    
-    @scala.inline
-    def setWarningVarargs(value: String*): Self = this.set("warning", js.Array(value :_*))
-    
-    @scala.inline
-    def setWarning(value: js.Array[String]): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningVarargs(value: String*): Self = StObject.set(x, "warning", js.Array(value :_*))
   }
 }

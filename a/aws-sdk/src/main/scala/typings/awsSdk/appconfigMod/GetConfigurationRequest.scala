@@ -1,11 +1,12 @@
 package typings.awsSdk.appconfigMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetConfigurationRequest extends js.Object {
+trait GetConfigurationRequest extends StObject {
   
   /**
     * The application to get. Specify either the application name or the application ID.
@@ -46,36 +47,24 @@ object GetConfigurationRequest {
   }
   
   @scala.inline
-  implicit class GetConfigurationRequestOps[Self <: GetConfigurationRequest] (val x: Self) extends AnyVal {
+  implicit class GetConfigurationRequestMutableBuilder[Self <: GetConfigurationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: StringWithLengthBetween1And64): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientConfigurationVersion(value: Version): Self = StObject.set(x, "ClientConfigurationVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientConfigurationVersionUndefined: Self = StObject.set(x, "ClientConfigurationVersion", js.undefined)
     
     @scala.inline
-    def setApplication(value: StringWithLengthBetween1And64): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setClientId(value: StringWithLengthBetween1And64): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: StringWithLengthBetween1And64): Self = this.set("ClientId", value.asInstanceOf[js.Any])
+    def setConfiguration(value: StringWithLengthBetween1And64): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration(value: StringWithLengthBetween1And64): Self = this.set("Configuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnvironment(value: StringWithLengthBetween1And64): Self = this.set("Environment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientConfigurationVersion(value: Version): Self = this.set("ClientConfigurationVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientConfigurationVersion: Self = this.set("ClientConfigurationVersion", js.undefined)
+    def setEnvironment(value: StringWithLengthBetween1And64): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
   }
 }

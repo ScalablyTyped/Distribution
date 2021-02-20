@@ -1,12 +1,13 @@
 package typings.libp2pGossipsub.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<libp2p-gossipsub.libp2p-gossipsub/src/score/peer-score-thresholds.PeerScoreThresholds> */
 @js.native
-trait PartialPeerScoreThreshold extends js.Object {
+trait PartialPeerScoreThreshold extends StObject {
   
   var acceptPXThreshold: js.UndefOr[Double] = js.native
   
@@ -27,48 +28,36 @@ object PartialPeerScoreThreshold {
   }
   
   @scala.inline
-  implicit class PartialPeerScoreThresholdOps[Self <: PartialPeerScoreThreshold] (val x: Self) extends AnyVal {
+  implicit class PartialPeerScoreThresholdMutableBuilder[Self <: PartialPeerScoreThreshold] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptPXThreshold(value: Double): Self = StObject.set(x, "acceptPXThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptPXThresholdUndefined: Self = StObject.set(x, "acceptPXThreshold", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGossipThreshold(value: Double): Self = StObject.set(x, "gossipThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptPXThreshold(value: Double): Self = this.set("acceptPXThreshold", value.asInstanceOf[js.Any])
+    def setGossipThresholdUndefined: Self = StObject.set(x, "gossipThreshold", js.undefined)
     
     @scala.inline
-    def deleteAcceptPXThreshold: Self = this.set("acceptPXThreshold", js.undefined)
+    def setGraylistThreshold(value: Double): Self = StObject.set(x, "graylistThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGossipThreshold(value: Double): Self = this.set("gossipThreshold", value.asInstanceOf[js.Any])
+    def setGraylistThresholdUndefined: Self = StObject.set(x, "graylistThreshold", js.undefined)
     
     @scala.inline
-    def deleteGossipThreshold: Self = this.set("gossipThreshold", js.undefined)
+    def setOpportunisticGraftThreshold(value: Double): Self = StObject.set(x, "opportunisticGraftThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraylistThreshold(value: Double): Self = this.set("graylistThreshold", value.asInstanceOf[js.Any])
+    def setOpportunisticGraftThresholdUndefined: Self = StObject.set(x, "opportunisticGraftThreshold", js.undefined)
     
     @scala.inline
-    def deleteGraylistThreshold: Self = this.set("graylistThreshold", js.undefined)
+    def setPublishThreshold(value: Double): Self = StObject.set(x, "publishThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpportunisticGraftThreshold(value: Double): Self = this.set("opportunisticGraftThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpportunisticGraftThreshold: Self = this.set("opportunisticGraftThreshold", js.undefined)
-    
-    @scala.inline
-    def setPublishThreshold(value: Double): Self = this.set("publishThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublishThreshold: Self = this.set("publishThreshold", js.undefined)
+    def setPublishThresholdUndefined: Self = StObject.set(x, "publishThreshold", js.undefined)
   }
 }

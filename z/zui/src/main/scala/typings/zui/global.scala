@@ -1,15 +1,15 @@
 package typings.zui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
+  @JSGlobal("ERRORS")
   @js.native
-  object ERRORS extends js.Object {
+  object ERRORS extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.zui.ERRORS with Double] = js.native
@@ -40,15 +40,16 @@ object global extends js.Object {
   /**
     * messager
     */
+  @JSGlobal("MessagerTypeEnum")
   @js.native
-  object MessagerTypeEnum extends js.Object {
+  object MessagerTypeEnum extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.zui.MessagerTypeEnum with Double] = js.native
     
-    /* 5 */ val danger: typings.zui.MessagerTypeEnum.danger with Double = js.native
-    
     /* 0 */ val default: typings.zui.MessagerTypeEnum.default with Double = js.native
+    
+    /* 5 */ val danger: typings.zui.MessagerTypeEnum.danger with Double = js.native
     
     /* 6 */ val important: typings.zui.MessagerTypeEnum.important with Double = js.native
     
@@ -63,8 +64,9 @@ object global extends js.Object {
     /* 4 */ val warning: typings.zui.MessagerTypeEnum.warning with Double = js.native
   }
   
+  @JSGlobal("STATUS")
   @js.native
-  object STATUS extends js.Object {
+  object STATUS extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.zui.STATUS with Double] = js.native

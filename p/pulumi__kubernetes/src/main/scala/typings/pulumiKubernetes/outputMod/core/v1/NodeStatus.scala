@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NodeStatus is information about the current status of a node.
   */
 @js.native
-trait NodeStatus extends js.Object {
+trait NodeStatus extends StObject {
   
   /**
     * List of addresses reachable to the node. Queried from cloud provider, if available. More info: https://kubernetes.io/docs/concepts/nodes/node/#addresses Note: This field is declared as mergeable, but the merge key is not sufficiently unique, which can cause data corruption when it is merged. Callers should instead use a full-replacement patch. See http://pr.k8s.io/79391 for an example.
@@ -87,66 +88,54 @@ object NodeStatus {
   }
   
   @scala.inline
-  implicit class NodeStatusOps[Self <: NodeStatus] (val x: Self) extends AnyVal {
+  implicit class NodeStatusMutableBuilder[Self <: NodeStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddresses(value: js.Array[NodeAddress]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressesVarargs(value: NodeAddress*): Self = StObject.set(x, "addresses", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllocatable(value: StringDictionary[String]): Self = StObject.set(x, "allocatable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressesVarargs(value: NodeAddress*): Self = this.set("addresses", js.Array(value :_*))
+    def setCapacity(value: StringDictionary[String]): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddresses(value: js.Array[NodeAddress]): Self = this.set("addresses", value.asInstanceOf[js.Any])
+    def setConditions(value: js.Array[NodeCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocatable(value: StringDictionary[String]): Self = this.set("allocatable", value.asInstanceOf[js.Any])
+    def setConditionsVarargs(value: NodeCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def setCapacity(value: StringDictionary[String]): Self = this.set("capacity", value.asInstanceOf[js.Any])
+    def setConfig(value: NodeConfigStatus): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionsVarargs(value: NodeCondition*): Self = this.set("conditions", js.Array(value :_*))
+    def setDaemonEndpoints(value: NodeDaemonEndpoints): Self = StObject.set(x, "daemonEndpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: js.Array[NodeCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setImages(value: js.Array[ContainerImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: NodeConfigStatus): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setImagesVarargs(value: ContainerImage*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def setDaemonEndpoints(value: NodeDaemonEndpoints): Self = this.set("daemonEndpoints", value.asInstanceOf[js.Any])
+    def setNodeInfo(value: NodeSystemInfo): Self = StObject.set(x, "nodeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagesVarargs(value: ContainerImage*): Self = this.set("images", js.Array(value :_*))
+    def setPhase(value: String): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages(value: js.Array[ContainerImage]): Self = this.set("images", value.asInstanceOf[js.Any])
+    def setVolumesAttached(value: js.Array[AttachedVolume]): Self = StObject.set(x, "volumesAttached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeInfo(value: NodeSystemInfo): Self = this.set("nodeInfo", value.asInstanceOf[js.Any])
+    def setVolumesAttachedVarargs(value: AttachedVolume*): Self = StObject.set(x, "volumesAttached", js.Array(value :_*))
     
     @scala.inline
-    def setPhase(value: String): Self = this.set("phase", value.asInstanceOf[js.Any])
+    def setVolumesInUse(value: js.Array[String]): Self = StObject.set(x, "volumesInUse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumesAttachedVarargs(value: AttachedVolume*): Self = this.set("volumesAttached", js.Array(value :_*))
-    
-    @scala.inline
-    def setVolumesAttached(value: js.Array[AttachedVolume]): Self = this.set("volumesAttached", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolumesInUseVarargs(value: String*): Self = this.set("volumesInUse", js.Array(value :_*))
-    
-    @scala.inline
-    def setVolumesInUse(value: js.Array[String]): Self = this.set("volumesInUse", value.asInstanceOf[js.Any])
+    def setVolumesInUseVarargs(value: String*): Self = StObject.set(x, "volumesInUse", js.Array(value :_*))
   }
 }

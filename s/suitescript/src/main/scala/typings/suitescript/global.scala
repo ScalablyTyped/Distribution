@@ -5,13 +5,12 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
   /**
     * create a subrecord on body field on the current record on a page.
@@ -22,6 +21,8 @@ object global extends js.Object {
     * @since 2011.2
     * @param fldnam
     */
+  @JSGlobal("createSubrecord")
+  @js.native
   def createSubrecord(fldnam: String): Unit = js.native
   
   /**
@@ -33,6 +34,8 @@ object global extends js.Object {
     * @since 2011.2
     * @param fldnam
     */
+  @JSGlobal("editSubrecord")
+  @js.native
   def editSubrecord(fldnam: String): Unit = js.native
   
   /**
@@ -47,6 +50,8 @@ object global extends js.Object {
     * @param days
     * @return
     */
+  @JSGlobal("nlapiAddDays")
+  @js.native
   def nlapiAddDays(d: js.Any, days: js.Any): js.Any = js.native
   
   /**
@@ -61,6 +66,8 @@ object global extends js.Object {
     * @param months
     * @return
     */
+  @JSGlobal("nlapiAddMonths")
+  @js.native
   def nlapiAddMonths(d: js.Any, months: js.Any): js.Any = js.native
   
   /**
@@ -82,7 +89,11 @@ object global extends js.Object {
     * @param properties?
     * @return
     */
+  @JSGlobal("nlapiAttachRecord")
+  @js.native
   def nlapiAttachRecord(type1: String, id1: js.Any, type2: String, id2: js.Any): Unit = js.native
+  @JSGlobal("nlapiAttachRecord")
+  @js.native
   def nlapiAttachRecord(type1: String, id1: js.Any, type2: String, id2: js.Any, properties: js.Any): Unit = js.native
   
   /**
@@ -96,6 +107,8 @@ object global extends js.Object {
     * @param type
     * @return
     */
+  @JSGlobal("nlapiCancelLineItem")
+  @js.native
   def nlapiCancelLineItem(`type`: String): js.Any = js.native
   
   /**
@@ -108,6 +121,8 @@ object global extends js.Object {
     * @param type
     * @return
     */
+  @JSGlobal("nlapiCommitLineItem")
+  @js.native
   def nlapiCommitLineItem(`type`: String): js.Any = js.native
   
   /**
@@ -125,7 +140,11 @@ object global extends js.Object {
     * @param initializeValues
     * @return
     */
+  @JSGlobal("nlapiCopyRecord")
+  @js.native
   def nlapiCopyRecord(`type`: String, id: js.Any): nlobjRecord = js.native
+  @JSGlobal("nlapiCopyRecord")
+  @js.native
   def nlapiCopyRecord(`type`: String, id: js.Any, initializeValues: js.Any): nlobjRecord = js.native
   
   /**
@@ -141,7 +160,11 @@ object global extends js.Object {
     * @param hideHeader?
     * @return
     */
+  @JSGlobal("nlapiCreateAssistant")
+  @js.native
   def nlapiCreateAssistant(title: String): js.Any = js.native
+  @JSGlobal("nlapiCreateAssistant")
+  @js.native
   def nlapiCreateAssistant(title: String, hideHeader: Boolean): js.Any = js.native
   
   /**
@@ -155,6 +178,8 @@ object global extends js.Object {
     * @param type
     * @param fldnam
     */
+  @JSGlobal("nlapiCreateCurrentLineSubrecord")
+  @js.native
   def nlapiCreateCurrentLineSubrecord(`type`: String, fldnam: String): Unit = js.native
   
   /**
@@ -169,6 +194,8 @@ object global extends js.Object {
     * @param id
     * @return
     */
+  @JSGlobal("nlapiCreateEmailMerger")
+  @js.native
   def nlapiCreateEmailMerger(id: js.Any): js.Any = js.native
   
   /**
@@ -185,7 +212,11 @@ object global extends js.Object {
     * @param suppressEmail?
     * @return
     */
+  @JSGlobal("nlapiCreateError")
+  @js.native
   def nlapiCreateError(code: String, details: String): js.Any = js.native
+  @JSGlobal("nlapiCreateError")
+  @js.native
   def nlapiCreateError(code: String, details: String, suppressEmail: Boolean): js.Any = js.native
   
   /**
@@ -203,6 +234,8 @@ object global extends js.Object {
     * @param contents
     * @return
     */
+  @JSGlobal("nlapiCreateFile")
+  @js.native
   def nlapiCreateFile(name: String, `type`: String, contents: String): nlobjFile = js.native
   
   /**
@@ -218,7 +251,11 @@ object global extends js.Object {
     * @param hideHeader?
     * @return
     */
+  @JSGlobal("nlapiCreateForm")
+  @js.native
   def nlapiCreateForm(title: String): nlobjForm = js.native
+  @JSGlobal("nlapiCreateForm")
+  @js.native
   def nlapiCreateForm(title: String, hideHeader: Boolean): nlobjForm = js.native
   
   /**
@@ -234,7 +271,11 @@ object global extends js.Object {
     * @param hideHeader?
     * @return
     */
+  @JSGlobal("nlapiCreateList")
+  @js.native
   def nlapiCreateList(title: String): js.Any = js.native
+  @JSGlobal("nlapiCreateList")
+  @js.native
   def nlapiCreateList(title: String, hideHeader: Boolean): js.Any = js.native
   
   /**
@@ -253,24 +294,36 @@ object global extends js.Object {
     * @param initializeValues
     * @return
     */
+  @JSGlobal("nlapiCreateRecord")
+  @js.native
   def nlapiCreateRecord(`type`: String): nlobjRecord = js.native
+  @JSGlobal("nlapiCreateRecord")
+  @js.native
   def nlapiCreateRecord(`type`: String, initializeValues: js.Any): nlobjRecord = js.native
   
+  @JSGlobal("nlapiCreateSearch")
+  @js.native
   def nlapiCreateSearch(
     `type`: String,
     filters: js.Array[nlobjSearchFilter],
     columns: js.Array[typings.suitescript.nlobjSearchColumn]
   ): nlobjSearch = js.native
+  @JSGlobal("nlapiCreateSearch")
+  @js.native
   def nlapiCreateSearch(
     `type`: String,
     filters: js.Array[nlobjSearchFilter],
     columns: typings.suitescript.nlobjSearchColumn
   ): nlobjSearch = js.native
+  @JSGlobal("nlapiCreateSearch")
+  @js.native
   def nlapiCreateSearch(
     `type`: String,
     filters: nlobjSearchFilter,
     columns: js.Array[typings.suitescript.nlobjSearchColumn]
   ): nlobjSearch = js.native
+  @JSGlobal("nlapiCreateSearch")
+  @js.native
   def nlapiCreateSearch(`type`: String, filters: nlobjSearchFilter, columns: typings.suitescript.nlobjSearchColumn): nlobjSearch = js.native
   
   /**
@@ -283,6 +336,8 @@ object global extends js.Object {
     * @return {nlobjTemplateRenderer}
     * @return
     */
+  @JSGlobal("nlapiCreateTemplateRenderer")
+  @js.native
   def nlapiCreateTemplateRenderer(): js.Any = js.native
   
   /**
@@ -297,7 +352,11 @@ object global extends js.Object {
     * @param formattype?
     * @return
     */
+  @JSGlobal("nlapiDateToString")
+  @js.native
   def nlapiDateToString(d: Date): String = js.native
+  @JSGlobal("nlapiDateToString")
+  @js.native
   def nlapiDateToString(d: Date, formattype: String): String = js.native
   
   /**
@@ -312,6 +371,8 @@ object global extends js.Object {
     * @param id
     * @return
     */
+  @JSGlobal("nlapiDeleteFile")
+  @js.native
   def nlapiDeleteFile(id: js.Any): js.Any = js.native
   
   /**
@@ -332,6 +393,8 @@ object global extends js.Object {
     * @param id
     * @return
     */
+  @JSGlobal("nlapiDeleteRecord")
+  @js.native
   def nlapiDeleteRecord(`type`: String, id: js.Any): Unit = js.native
   
   /**
@@ -353,11 +416,19 @@ object global extends js.Object {
     * @param properties?
     * @return
     */
+  @JSGlobal("nlapiDetachRecord")
+  @js.native
   def nlapiDetachRecord(type1: String, id1: js.Any, type2: String, id2: js.Any): Unit = js.native
+  @JSGlobal("nlapiDetachRecord")
+  @js.native
   def nlapiDetachRecord(type1: String, id1: js.Any, type2: String, id2: js.Any, properties: js.Any): Unit = js.native
   
+  @JSGlobal("nlapiDisableField")
+  @js.native
   def nlapiDisableField(fldnam: String, `val`: js.Any): Unit = js.native
   
+  @JSGlobal("nlapiDisableLineItemField")
+  @js.native
   def nlapiDisableLineItemField(`type`: String, fldnam: String, `val`: Boolean): Unit = js.native
   
   /**
@@ -371,6 +442,8 @@ object global extends js.Object {
     * @param type
     * @param fldnam
     */
+  @JSGlobal("nlapiEditCurrentLineItemSubrecord")
+  @js.native
   def nlapiEditCurrentLineItemSubrecord(`type`: String, fldnam: String): Unit = js.native
   
   /**
@@ -383,7 +456,11 @@ object global extends js.Object {
     * @param s
     * @return
     */
+  @JSGlobal("nlapiEncrypt")
+  @js.native
   def nlapiEncrypt(s: String, algotithm: String): String = js.native
+  @JSGlobal("nlapiEncrypt")
+  @js.native
   def nlapiEncrypt(s: String, algotithm: String, key: String): String = js.native
   
   /**
@@ -396,6 +473,8 @@ object global extends js.Object {
     * @param text
     * @return
     */
+  @JSGlobal("nlapiEscapeXML")
+  @js.native
   def nlapiEscapeXML(text: String): String = js.native
   
   /**
@@ -413,7 +492,11 @@ object global extends js.Object {
     * @param date?
     * @return
     */
+  @JSGlobal("nlapiExchangeRate")
+  @js.native
   def nlapiExchangeRate(fromCurrency: js.Any, toCurrency: js.Any): js.Any = js.native
+  @JSGlobal("nlapiExchangeRate")
+  @js.native
   def nlapiExchangeRate(fromCurrency: js.Any, toCurrency: js.Any, date: String): js.Any = js.native
   
   /**
@@ -432,6 +515,8 @@ object global extends js.Object {
     * @param val
     * @return
     */
+  @JSGlobal("nlapiFindLineItemMatrixValue")
+  @js.native
   def nlapiFindLineItemMatrixValue(`type`: String, fldnam: String, column: js.Any, `val`: String): js.Any = js.native
   
   /**
@@ -448,6 +533,8 @@ object global extends js.Object {
     * @param val
     * @return
     */
+  @JSGlobal("nlapiFindLineItemValue")
+  @js.native
   def nlapiFindLineItemValue(`type`: String, fldnam: String, `val`: String): js.Any = js.native
   
   /**
@@ -460,6 +547,8 @@ object global extends js.Object {
     * @param str
     * @return
     */
+  @JSGlobal("nlapiFormatCurrency")
+  @js.native
   def nlapiFormatCurrency(str: String): String = js.native
   
   /**
@@ -471,6 +560,8 @@ object global extends js.Object {
     * @param name
     * @return
     */
+  @JSGlobal("nlapiGetCache")
+  @js.native
   def nlapiGetCache(name: String): js.Any = js.native
   
   /**
@@ -481,6 +572,8 @@ object global extends js.Object {
     * @since    2007.0
     * @return
     */
+  @JSGlobal("nlapiGetContext")
+  @js.native
   def nlapiGetContext(): js.Any = js.native
   
   /**
@@ -497,6 +590,8 @@ object global extends js.Object {
     * @param timezone
     * @return
     */
+  @JSGlobal("nlapiGetCurrentLineItemDateTimeValue")
+  @js.native
   def nlapiGetCurrentLineItemDateTimeValue(`type`: String, fldnam: String, timezone: String): String = js.native
   
   /**
@@ -509,6 +604,8 @@ object global extends js.Object {
     * @param type
     * @return
     */
+  @JSGlobal("nlapiGetCurrentLineItemIndex")
+  @js.native
   def nlapiGetCurrentLineItemIndex(`type`: String): js.Any = js.native
   
   /**
@@ -525,6 +622,8 @@ object global extends js.Object {
     * @param column
     * @return
     */
+  @JSGlobal("nlapiGetCurrentLineItemMatrixValue")
+  @js.native
   def nlapiGetCurrentLineItemMatrixValue(`type`: String, fldnam: String, column: js.Any): String = js.native
   
   /**
@@ -539,6 +638,8 @@ object global extends js.Object {
     * @param fldnam
     * @return
     */
+  @JSGlobal("nlapiGetCurrentLineItemText")
+  @js.native
   def nlapiGetCurrentLineItemText(`type`: String, fldnam: String): String = js.native
   
   /**
@@ -553,6 +654,8 @@ object global extends js.Object {
     * @param fldnam
     * @return
     */
+  @JSGlobal("nlapiGetCurrentLineItemValue")
+  @js.native
   def nlapiGetCurrentLineItemValue(`type`: String, fldnam: String): String = js.native
   
   /**
@@ -563,6 +666,8 @@ object global extends js.Object {
     * @since    2005.0
     * @return
     */
+  @JSGlobal("nlapiGetDepartment")
+  @js.native
   def nlapiGetDepartment(): js.Any = js.native
   
   /**
@@ -575,6 +680,8 @@ object global extends js.Object {
     * @param fldnam
     * @return
     */
+  @JSGlobal("nlapiGetField")
+  @js.native
   def nlapiGetField(fldnam: String): js.Any = js.native
   
   /**
@@ -587,6 +694,8 @@ object global extends js.Object {
     * @param fldnam
     * @return
     */
+  @JSGlobal("nlapiGetFieldMandatory")
+  @js.native
   def nlapiGetFieldMandatory(fldnam: String): Boolean = js.native
   
   /**
@@ -599,6 +708,8 @@ object global extends js.Object {
     * @param fldnam
     * @return
     */
+  @JSGlobal("nlapiGetFieldText")
+  @js.native
   def nlapiGetFieldText(fldnam: String): String = js.native
   
   /**
@@ -610,6 +721,8 @@ object global extends js.Object {
     * @since    2009.1
     * @param fldnam
     */
+  @JSGlobal("nlapiGetFieldTexts")
+  @js.native
   def nlapiGetFieldTexts(fldnam: String): Unit = js.native
   
   /**
@@ -622,6 +735,8 @@ object global extends js.Object {
     * @param fldnam
     * @return
     */
+  @JSGlobal("nlapiGetFieldValue")
+  @js.native
   def nlapiGetFieldValue(fldnam: String): String = js.native
   
   /**
@@ -633,6 +748,8 @@ object global extends js.Object {
     * @since    2005.0
     * @param fldnam
     */
+  @JSGlobal("nlapiGetFieldValues")
+  @js.native
   def nlapiGetFieldValues(fldnam: String): Unit = js.native
   
   /**
@@ -643,6 +760,8 @@ object global extends js.Object {
     * @param jobType
     * @return
     */
+  @JSGlobal("nlapiGetJobManager")
+  @js.native
   def nlapiGetJobManager(jobType: js.Any): js.Any = js.native
   
   /**
@@ -655,6 +774,8 @@ object global extends js.Object {
     * @param type
     * @return
     */
+  @JSGlobal("nlapiGetLineItemCount")
+  @js.native
   def nlapiGetLineItemCount(`type`: String): String | Double = js.native
   
   /**
@@ -673,6 +794,8 @@ object global extends js.Object {
     * @param timezone
     * @return
     */
+  @JSGlobal("nlapiGetLineItemDateTimeValue")
+  @js.native
   def nlapiGetLineItemDateTimeValue(`type`: String, fldnam: String, linenum: js.Any, timezone: String): String = js.native
   
   /**
@@ -689,7 +812,11 @@ object global extends js.Object {
     * @param linenum?
     * @return
     */
+  @JSGlobal("nlapiGetLineItemField")
+  @js.native
   def nlapiGetLineItemField(`type`: String, fldnam: String): js.Any = js.native
+  @JSGlobal("nlapiGetLineItemField")
+  @js.native
   def nlapiGetLineItemField(`type`: String, fldnam: String, linenum: js.Any): js.Any = js.native
   
   /**
@@ -705,6 +832,8 @@ object global extends js.Object {
     * @param fldnam
     * @return
     */
+  @JSGlobal("nlapiGetLineItemMandatory")
+  @js.native
   def nlapiGetLineItemMandatory(`type`: String, fldnam: String): Boolean = js.native
   
   /**
@@ -723,6 +852,8 @@ object global extends js.Object {
     * @param column
     * @return
     */
+  @JSGlobal("nlapiGetLineItemMatrixField")
+  @js.native
   def nlapiGetLineItemMatrixField(`type`: String, fldnam: String, linenum: js.Any, column: js.Any): js.Any = js.native
   
   /**
@@ -740,6 +871,8 @@ object global extends js.Object {
     * @param linenum
     * @param column
     */
+  @JSGlobal("nlapiGetLineItemMatrixValue")
+  @js.native
   def nlapiGetLineItemMatrixValue(`type`: String, fldnam: String, linenum: js.Any, column: js.Any): Unit = js.native
   
   /**
@@ -756,6 +889,8 @@ object global extends js.Object {
     * @param linenum
     * @return
     */
+  @JSGlobal("nlapiGetLineItemText")
+  @js.native
   def nlapiGetLineItemText(`type`: String, fldnam: String, linenum: js.Any): String = js.native
   
   /**
@@ -772,6 +907,8 @@ object global extends js.Object {
     * @param linenum
     * @return
     */
+  @JSGlobal("nlapiGetLineItemValue")
+  @js.native
   def nlapiGetLineItemValue(`type`: String, fldnam: String, linenum: js.Any): String = js.native
   
   /**
@@ -782,6 +919,8 @@ object global extends js.Object {
     * @since    2005.0
     * @return
     */
+  @JSGlobal("nlapiGetLocation")
+  @js.native
   def nlapiGetLocation(): js.Any = js.native
   
   /**
@@ -789,6 +928,8 @@ object global extends js.Object {
     *
     * @since 2012.2
     */
+  @JSGlobal("nlapiGetLogin")
+  @js.native
   def nlapiGetLogin(): Unit = js.native
   
   /**
@@ -803,6 +944,8 @@ object global extends js.Object {
     * @param fldnam
     * @return
     */
+  @JSGlobal("nlapiGetMatrixCount")
+  @js.native
   def nlapiGetMatrixCount(`type`: String, fldnam: String): js.Any = js.native
   
   /**
@@ -819,6 +962,8 @@ object global extends js.Object {
     * @param column
     * @return
     */
+  @JSGlobal("nlapiGetMatrixField")
+  @js.native
   def nlapiGetMatrixField(`type`: String, fldnam: String, column: js.Any): js.Any = js.native
   
   /**
@@ -835,6 +980,8 @@ object global extends js.Object {
     * @param column
     * @return
     */
+  @JSGlobal("nlapiGetMatrixValue")
+  @js.native
   def nlapiGetMatrixValue(`type`: String, fldnam: String, column: js.Any): String = js.native
   
   /**
@@ -846,6 +993,8 @@ object global extends js.Object {
     * @since 2008.1
     * @return
     */
+  @JSGlobal("nlapiGetNewRecord")
+  @js.native
   def nlapiGetNewRecord(): js.Any = js.native
   
   /**
@@ -857,6 +1006,8 @@ object global extends js.Object {
     * @since 2008.1
     * @return
     */
+  @JSGlobal("nlapiGetOldRecord")
+  @js.native
   def nlapiGetOldRecord(): js.Any = js.native
   
   /**
@@ -867,6 +1018,8 @@ object global extends js.Object {
     * @since    2007.0
     * @return
     */
+  @JSGlobal("nlapiGetRecordId")
+  @js.native
   def nlapiGetRecordId(): js.Any = js.native
   
   /**
@@ -877,6 +1030,8 @@ object global extends js.Object {
     * @since    2007.0
     * @return
     */
+  @JSGlobal("nlapiGetRecordType")
+  @js.native
   def nlapiGetRecordType(): String = js.native
   
   /**
@@ -887,6 +1042,8 @@ object global extends js.Object {
     * @since    2005.0
     * @return
     */
+  @JSGlobal("nlapiGetRole")
+  @js.native
   def nlapiGetRole(): js.Any = js.native
   
   /**
@@ -897,6 +1054,8 @@ object global extends js.Object {
     * @since    2008.1
     * @return
     */
+  @JSGlobal("nlapiGetSubsidiary")
+  @js.native
   def nlapiGetSubsidiary(): js.Any = js.native
   
   /**
@@ -907,6 +1066,8 @@ object global extends js.Object {
     * @since    2005.0
     * @return
     */
+  @JSGlobal("nlapiGetUser")
+  @js.native
   def nlapiGetUser(): js.Any = js.native
   
   /**
@@ -924,6 +1085,8 @@ object global extends js.Object {
     * @param workflowid
     * @return
     */
+  @JSGlobal("nlapiInitiateWorkflow")
+  @js.native
   def nlapiInitiateWorkflow(recordtype: String, id: js.Any, workflowid: js.Any): js.Any = js.native
   
   /**
@@ -942,6 +1105,8 @@ object global extends js.Object {
     * @param parameters
     * @return
     */
+  @JSGlobal("nlapiInitiateWorkflowAsync")
+  @js.native
   def nlapiInitiateWorkflowAsync(recordType: js.Any, id: js.Any, workflowId: js.Any, parameters: js.Any): String = js.native
   
   /**
@@ -955,7 +1120,11 @@ object global extends js.Object {
     * @param type
     * @param line?
     */
+  @JSGlobal("nlapiInsertLineItem")
+  @js.native
   def nlapiInsertLineItem(`type`: String): Unit = js.native
+  @JSGlobal("nlapiInsertLineItem")
+  @js.native
   def nlapiInsertLineItem(`type`: String, line: js.Any): Unit = js.native
   
   /**
@@ -977,7 +1146,11 @@ object global extends js.Object {
     * @param selected?
     * @return
     */
+  @JSGlobal("nlapiInsertLineItemOption")
+  @js.native
   def nlapiInsertLineItemOption(`type`: String, fldnam: String, value: String, text: String): js.Any = js.native
+  @JSGlobal("nlapiInsertLineItemOption")
+  @js.native
   def nlapiInsertLineItemOption(`type`: String, fldnam: String, value: String, text: String, selected: Boolean): js.Any = js.native
   
   /**
@@ -997,7 +1170,11 @@ object global extends js.Object {
     * @param selected?
     * @return
     */
+  @JSGlobal("nlapiInsertSelectOption")
+  @js.native
   def nlapiInsertSelectOption(fldnam: String, value: String, text: String): js.Any = js.native
+  @JSGlobal("nlapiInsertSelectOption")
+  @js.native
   def nlapiInsertSelectOption(fldnam: String, value: String, text: String, selected: Boolean): js.Any = js.native
   
   /**
@@ -1011,6 +1188,8 @@ object global extends js.Object {
     * @param type
     * @return
     */
+  @JSGlobal("nlapiIsLineItemChanged")
+  @js.native
   def nlapiIsLineItemChanged(`type`: String): Boolean = js.native
   
   /**
@@ -1025,6 +1204,8 @@ object global extends js.Object {
     * @param type
     * @return
     */
+  @JSGlobal("nlapiLoadConfiguration")
+  @js.native
   def nlapiLoadConfiguration(`type`: String): js.Any = js.native
   
   /**
@@ -1039,6 +1220,8 @@ object global extends js.Object {
     * @param id
     * @return
     */
+  @JSGlobal("nlapiLoadFile")
+  @js.native
   def nlapiLoadFile(id: js.Any): js.Any = js.native
   
   /**
@@ -1061,9 +1244,15 @@ object global extends js.Object {
     * @param initializeValues
     * @return
     */
+  @JSGlobal("nlapiLoadRecord")
+  @js.native
   def nlapiLoadRecord(`type`: String, id: js.Any): nlobjRecord = js.native
+  @JSGlobal("nlapiLoadRecord")
+  @js.native
   def nlapiLoadRecord(`type`: String, id: js.Any, initializeValues: js.Any): nlobjRecord = js.native
   
+  @JSGlobal("nlapiLoadSearch")
+  @js.native
   def nlapiLoadSearch(fldnam: String, `val`: js.Any): Unit = js.native
   
   /**
@@ -1080,7 +1269,11 @@ object global extends js.Object {
     * @param details?
     * @return
     */
+  @JSGlobal("nlapiLogExecution")
+  @js.native
   def nlapiLogExecution(`type`: String, title: String): js.Any = js.native
+  @JSGlobal("nlapiLogExecution")
+  @js.native
   def nlapiLogExecution(`type`: String, title: String, details: String): js.Any = js.native
   
   /**
@@ -1100,9 +1293,17 @@ object global extends js.Object {
     * @param fields
     * @param text?
     */
+  @JSGlobal("nlapiLookupField")
+  @js.native
   def nlapiLookupField(`type`: String, id: Double, fields: String): String = js.native
+  @JSGlobal("nlapiLookupField")
+  @js.native
   def nlapiLookupField(`type`: String, id: Double, fields: String, text: Boolean): String = js.native
+  @JSGlobal("nlapiLookupField")
+  @js.native
   def nlapiLookupField(`type`: String, id: Double, fields: js.Array[String]): js.Any = js.native
+  @JSGlobal("nlapiLookupField")
+  @js.native
   def nlapiLookupField(`type`: String, id: Double, fields: js.Array[String], text: Boolean): js.Any = js.native
   
   /**
@@ -1128,7 +1329,11 @@ object global extends js.Object {
     * @param fields?
     * @return
     */
+  @JSGlobal("nlapiMergeRecord")
+  @js.native
   def nlapiMergeRecord(id: js.Any, baseType: String, baseId: js.Any): js.Any = js.native
+  @JSGlobal("nlapiMergeRecord")
+  @js.native
   def nlapiMergeRecord(
     id: js.Any,
     baseType: String,
@@ -1137,7 +1342,11 @@ object global extends js.Object {
     altId: js.UndefOr[scala.Nothing],
     fields: js.Any
   ): js.Any = js.native
+  @JSGlobal("nlapiMergeRecord")
+  @js.native
   def nlapiMergeRecord(id: js.Any, baseType: String, baseId: js.Any, altType: js.UndefOr[scala.Nothing], altId: js.Any): js.Any = js.native
+  @JSGlobal("nlapiMergeRecord")
+  @js.native
   def nlapiMergeRecord(
     id: js.Any,
     baseType: String,
@@ -1146,7 +1355,11 @@ object global extends js.Object {
     altId: js.Any,
     fields: js.Any
   ): js.Any = js.native
+  @JSGlobal("nlapiMergeRecord")
+  @js.native
   def nlapiMergeRecord(id: js.Any, baseType: String, baseId: js.Any, altType: String): js.Any = js.native
+  @JSGlobal("nlapiMergeRecord")
+  @js.native
   def nlapiMergeRecord(
     id: js.Any,
     baseType: String,
@@ -1155,7 +1368,11 @@ object global extends js.Object {
     altId: js.UndefOr[scala.Nothing],
     fields: js.Any
   ): js.Any = js.native
+  @JSGlobal("nlapiMergeRecord")
+  @js.native
   def nlapiMergeRecord(id: js.Any, baseType: String, baseId: js.Any, altType: String, altId: js.Any): js.Any = js.native
+  @JSGlobal("nlapiMergeRecord")
+  @js.native
   def nlapiMergeRecord(id: js.Any, baseType: String, baseId: js.Any, altType: String, altId: js.Any, fields: js.Any): js.Any = js.native
   
   /**
@@ -1170,6 +1387,8 @@ object global extends js.Object {
     * @param ssoAppKey
     * @return
     */
+  @JSGlobal("nlapiOutboundSSO")
+  @js.native
   def nlapiOutboundSSO(ssoAppKey: String): String = js.native
   
   /**
@@ -1190,9 +1409,17 @@ object global extends js.Object {
     * @param properties?
     * @return
     */
+  @JSGlobal("nlapiPrintRecord")
+  @js.native
   def nlapiPrintRecord(`type`: String, id: js.Any): js.Any = js.native
+  @JSGlobal("nlapiPrintRecord")
+  @js.native
   def nlapiPrintRecord(`type`: String, id: js.Any, format: js.UndefOr[scala.Nothing], properties: js.Any): js.Any = js.native
+  @JSGlobal("nlapiPrintRecord")
+  @js.native
   def nlapiPrintRecord(`type`: String, id: js.Any, format: String): js.Any = js.native
+  @JSGlobal("nlapiPrintRecord")
+  @js.native
   def nlapiPrintRecord(`type`: String, id: js.Any, format: String, properties: js.Any): js.Any = js.native
   
   /**
@@ -1206,6 +1433,8 @@ object global extends js.Object {
     * @since 2005.0
     * @param type
     */
+  @JSGlobal("nlapiRefreshLineItems")
+  @js.native
   def nlapiRefreshLineItems(`type`: String): Unit = js.native
   
   /**
@@ -1219,6 +1448,8 @@ object global extends js.Object {
     * @param type
     * @param fldnam
     */
+  @JSGlobal("nlapiRemoveCurrentLineItemSubrecord")
+  @js.native
   def nlapiRemoveCurrentLineItemSubrecord(`type`: String, fldnam: String): Unit = js.native
   
   /**
@@ -1233,7 +1464,11 @@ object global extends js.Object {
     * @param line?
     * @return
     */
+  @JSGlobal("nlapiRemoveLineItem")
+  @js.native
   def nlapiRemoveLineItem(`type`: String): js.Any = js.native
+  @JSGlobal("nlapiRemoveLineItem")
+  @js.native
   def nlapiRemoveLineItem(`type`: String, line: js.Any): js.Any = js.native
   
   /**
@@ -1251,6 +1486,8 @@ object global extends js.Object {
     * @param value
     * @return
     */
+  @JSGlobal("nlapiRemoveLineItemOption")
+  @js.native
   def nlapiRemoveLineItemOption(`type`: String, fldnam: String, value: String): js.Any = js.native
   
   /**
@@ -1266,6 +1503,8 @@ object global extends js.Object {
     * @param value
     * @return
     */
+  @JSGlobal("nlapiRemoveSelectOption")
+  @js.native
   def nlapiRemoveSelectOption(fldnam: String, value: String): js.Any = js.native
   
   /**
@@ -1291,7 +1530,11 @@ object global extends js.Object {
     * @param method
     * @return
     */
+  @JSGlobal("nlapiRequestURL")
+  @js.native
   def nlapiRequestURL(url: String): js.Any = js.native
+  @JSGlobal("nlapiRequestURL")
+  @js.native
   def nlapiRequestURL(
     url: String,
     postdata: js.UndefOr[scala.Nothing],
@@ -1299,12 +1542,16 @@ object global extends js.Object {
     callback: js.UndefOr[scala.Nothing],
     method: js.Any
   ): js.Any = js.native
+  @JSGlobal("nlapiRequestURL")
+  @js.native
   def nlapiRequestURL(
     url: String,
     postdata: js.UndefOr[scala.Nothing],
     headers: js.UndefOr[scala.Nothing],
     callback: js.Any
   ): js.Any = js.native
+  @JSGlobal("nlapiRequestURL")
+  @js.native
   def nlapiRequestURL(
     url: String,
     postdata: js.UndefOr[scala.Nothing],
@@ -1312,7 +1559,11 @@ object global extends js.Object {
     callback: js.Any,
     method: js.Any
   ): js.Any = js.native
+  @JSGlobal("nlapiRequestURL")
+  @js.native
   def nlapiRequestURL(url: String, postdata: js.UndefOr[scala.Nothing], headers: js.Any): js.Any = js.native
+  @JSGlobal("nlapiRequestURL")
+  @js.native
   def nlapiRequestURL(
     url: String,
     postdata: js.UndefOr[scala.Nothing],
@@ -1320,7 +1571,11 @@ object global extends js.Object {
     callback: js.UndefOr[scala.Nothing],
     method: js.Any
   ): js.Any = js.native
+  @JSGlobal("nlapiRequestURL")
+  @js.native
   def nlapiRequestURL(url: String, postdata: js.UndefOr[scala.Nothing], headers: js.Any, callback: js.Any): js.Any = js.native
+  @JSGlobal("nlapiRequestURL")
+  @js.native
   def nlapiRequestURL(
     url: String,
     postdata: js.UndefOr[scala.Nothing],
@@ -1328,7 +1583,11 @@ object global extends js.Object {
     callback: js.Any,
     method: js.Any
   ): js.Any = js.native
+  @JSGlobal("nlapiRequestURL")
+  @js.native
   def nlapiRequestURL(url: String, postdata: js.Any): js.Any = js.native
+  @JSGlobal("nlapiRequestURL")
+  @js.native
   def nlapiRequestURL(
     url: String,
     postdata: js.Any,
@@ -1336,7 +1595,11 @@ object global extends js.Object {
     callback: js.UndefOr[scala.Nothing],
     method: js.Any
   ): js.Any = js.native
+  @JSGlobal("nlapiRequestURL")
+  @js.native
   def nlapiRequestURL(url: String, postdata: js.Any, headers: js.UndefOr[scala.Nothing], callback: js.Any): js.Any = js.native
+  @JSGlobal("nlapiRequestURL")
+  @js.native
   def nlapiRequestURL(
     url: String,
     postdata: js.Any,
@@ -1344,7 +1607,11 @@ object global extends js.Object {
     callback: js.Any,
     method: js.Any
   ): js.Any = js.native
+  @JSGlobal("nlapiRequestURL")
+  @js.native
   def nlapiRequestURL(url: String, postdata: js.Any, headers: js.Any): js.Any = js.native
+  @JSGlobal("nlapiRequestURL")
+  @js.native
   def nlapiRequestURL(
     url: String,
     postdata: js.Any,
@@ -1352,7 +1619,11 @@ object global extends js.Object {
     callback: js.UndefOr[scala.Nothing],
     method: js.Any
   ): js.Any = js.native
+  @JSGlobal("nlapiRequestURL")
+  @js.native
   def nlapiRequestURL(url: String, postdata: js.Any, headers: js.Any, callback: js.Any): js.Any = js.native
+  @JSGlobal("nlapiRequestURL")
+  @js.native
   def nlapiRequestURL(url: String, postdata: js.Any, headers: js.Any, callback: js.Any, method: js.Any): js.Any = js.native
   
   /**
@@ -1371,9 +1642,17 @@ object global extends js.Object {
     * @param pagemode?
     * @return
     */
+  @JSGlobal("nlapiResolveURL")
+  @js.native
   def nlapiResolveURL(`type`: String, subtype: String): String = js.native
+  @JSGlobal("nlapiResolveURL")
+  @js.native
   def nlapiResolveURL(`type`: String, subtype: String, id: js.UndefOr[scala.Nothing], pagemode: String): String = js.native
+  @JSGlobal("nlapiResolveURL")
+  @js.native
   def nlapiResolveURL(`type`: String, subtype: String, id: String): String = js.native
+  @JSGlobal("nlapiResolveURL")
+  @js.native
   def nlapiResolveURL(`type`: String, subtype: String, id: String, pagemode: String): String = js.native
   
   /**
@@ -1392,7 +1671,11 @@ object global extends js.Object {
     * @param parameters
     * @return
     */
+  @JSGlobal("nlapiScheduleScript")
+  @js.native
   def nlapiScheduleScript(script: String, deployment: String): String = js.native
+  @JSGlobal("nlapiScheduleScript")
+  @js.native
   def nlapiScheduleScript(script: String, deployment: String, parameters: js.Any): String = js.native
   
   /**
@@ -1410,7 +1693,11 @@ object global extends js.Object {
     * @param fields
     * @param id?
     */
+  @JSGlobal("nlapiSearchDuplicate")
+  @js.native
   def nlapiSearchDuplicate(`type`: String, fields: js.Any): js.Array[nlobjSearchResult] = js.native
+  @JSGlobal("nlapiSearchDuplicate")
+  @js.native
   def nlapiSearchDuplicate(`type`: String, fields: js.Any, id: js.Any): js.Array[nlobjSearchResult] = js.native
   
   /**
@@ -1424,6 +1711,8 @@ object global extends js.Object {
     * @since    2008.1
     * @param keywords
     */
+  @JSGlobal("nlapiSearchGlobal")
+  @js.native
   def nlapiSearchGlobal(keywords: String): js.Array[nlobjSearchResult] = js.native
   
   /**
@@ -1452,6 +1741,8 @@ object global extends js.Object {
     * @param filters
     * @param columns
     */
+  @JSGlobal("nlapiSearchRecord")
+  @js.native
   def nlapiSearchRecord(`type`: String, id: js.Any, filters: js.Any, columns: js.Any): js.Array[nlobjSearchResult] = js.native
   
   /**
@@ -1466,6 +1757,8 @@ object global extends js.Object {
     * @param linenum
     * @return
     */
+  @JSGlobal("nlapiSelectLineItem")
+  @js.native
   def nlapiSelectLineItem(`type`: String, linenum: js.Any): js.Any = js.native
   
   /**
@@ -1479,6 +1772,8 @@ object global extends js.Object {
     * @param type
     * @return
     */
+  @JSGlobal("nlapiSelectNewLineItem")
+  @js.native
   def nlapiSelectNewLineItem(`type`: String): js.Any = js.native
   
   /**
@@ -1493,6 +1788,8 @@ object global extends js.Object {
     * @param xpath
     * @return
     */
+  @JSGlobal("nlapiSelectNode")
+  @js.native
   def nlapiSelectNode(node: js.Any, xpath: String): js.Any = js.native
   
   /**
@@ -1506,6 +1803,8 @@ object global extends js.Object {
     * @param node
     * @param xpath
     */
+  @JSGlobal("nlapiSelectNodes")
+  @js.native
   def nlapiSelectNodes(node: js.Any, xpath: String): js.Any = js.native
   
   /**
@@ -1520,6 +1819,8 @@ object global extends js.Object {
     * @param xpath
     * @return
     */
+  @JSGlobal("nlapiSelectValue")
+  @js.native
   def nlapiSelectValue(node: js.Any, xpath: String): String = js.native
   
   /**
@@ -1533,6 +1834,8 @@ object global extends js.Object {
     * @param node
     * @param xpath
     */
+  @JSGlobal("nlapiSelectValues")
+  @js.native
   def nlapiSelectValues(node: js.Any, xpath: String): Unit = js.native
   
   /**
@@ -1549,6 +1852,8 @@ object global extends js.Object {
     * @param recipientid
     * @return
     */
+  @JSGlobal("nlapiSendCampaignEmail")
+  @js.native
   def nlapiSendCampaignEmail(campaigneventid: js.Any, recipientid: js.Any): js.Any = js.native
   
   /**
@@ -1584,6 +1889,8 @@ object global extends js.Object {
     * @param replyTo
     * @return
     */
+  @JSGlobal("nlapiSendEmail")
+  @js.native
   def nlapiSendEmail(
     author: Double,
     recipient: String | Double,
@@ -1620,6 +1927,8 @@ object global extends js.Object {
     * @param files
     * @return
     */
+  @JSGlobal("nlapiSendFax")
+  @js.native
   def nlapiSendFax(from: js.Any, to: js.Any, subject: String, body: String, records: js.Any, files: js.Any): js.Any = js.native
   
   /**
@@ -1639,6 +1948,8 @@ object global extends js.Object {
     * @param timezone
     * @return
     */
+  @JSGlobal("nlapiSetCurrentLineItemDateTimeValue")
+  @js.native
   def nlapiSetCurrentLineItemDateTimeValue(`type`: String, fldnam: String, value: String, timezone: String): js.Any = js.native
   
   /**
@@ -1663,7 +1974,11 @@ object global extends js.Object {
     * @param synchronous?
     * @return
     */
+  @JSGlobal("nlapiSetCurrentLineItemMatrixValue")
+  @js.native
   def nlapiSetCurrentLineItemMatrixValue(`type`: String, fldnam: String, column: js.Any, value: String): js.Any = js.native
+  @JSGlobal("nlapiSetCurrentLineItemMatrixValue")
+  @js.native
   def nlapiSetCurrentLineItemMatrixValue(
     `type`: String,
     fldnam: String,
@@ -1672,7 +1987,11 @@ object global extends js.Object {
     firefieldchanged: js.UndefOr[scala.Nothing],
     synchronous: Boolean
   ): js.Any = js.native
+  @JSGlobal("nlapiSetCurrentLineItemMatrixValue")
+  @js.native
   def nlapiSetCurrentLineItemMatrixValue(`type`: String, fldnam: String, column: js.Any, value: String, firefieldchanged: Boolean): js.Any = js.native
+  @JSGlobal("nlapiSetCurrentLineItemMatrixValue")
+  @js.native
   def nlapiSetCurrentLineItemMatrixValue(
     `type`: String,
     fldnam: String,
@@ -1701,7 +2020,11 @@ object global extends js.Object {
     * @param synchronous?
     * @return
     */
+  @JSGlobal("nlapiSetCurrentLineItemText")
+  @js.native
   def nlapiSetCurrentLineItemText(`type`: String, fldnam: String, txt: String): js.Any = js.native
+  @JSGlobal("nlapiSetCurrentLineItemText")
+  @js.native
   def nlapiSetCurrentLineItemText(
     `type`: String,
     fldnam: String,
@@ -1709,7 +2032,11 @@ object global extends js.Object {
     firefieldchanged: js.UndefOr[scala.Nothing],
     synchronous: Boolean
   ): js.Any = js.native
+  @JSGlobal("nlapiSetCurrentLineItemText")
+  @js.native
   def nlapiSetCurrentLineItemText(`type`: String, fldnam: String, txt: String, firefieldchanged: Boolean): js.Any = js.native
+  @JSGlobal("nlapiSetCurrentLineItemText")
+  @js.native
   def nlapiSetCurrentLineItemText(`type`: String, fldnam: String, txt: String, firefieldchanged: Boolean, synchronous: Boolean): js.Any = js.native
   
   /**
@@ -1731,7 +2058,11 @@ object global extends js.Object {
     * @param synchronous?
     * @return
     */
+  @JSGlobal("nlapiSetCurrentLineItemValue")
+  @js.native
   def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: String): Unit = js.native
+  @JSGlobal("nlapiSetCurrentLineItemValue")
+  @js.native
   def nlapiSetCurrentLineItemValue(
     `type`: String,
     fldnam: String,
@@ -1739,9 +2070,17 @@ object global extends js.Object {
     firefieldchanged: js.UndefOr[scala.Nothing],
     synchronous: Boolean
   ): Unit = js.native
+  @JSGlobal("nlapiSetCurrentLineItemValue")
+  @js.native
   def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: String, firefieldchanged: Boolean): Unit = js.native
+  @JSGlobal("nlapiSetCurrentLineItemValue")
+  @js.native
   def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: String, firefieldchanged: Boolean, synchronous: Boolean): Unit = js.native
+  @JSGlobal("nlapiSetCurrentLineItemValue")
+  @js.native
   def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: Double): Unit = js.native
+  @JSGlobal("nlapiSetCurrentLineItemValue")
+  @js.native
   def nlapiSetCurrentLineItemValue(
     `type`: String,
     fldnam: String,
@@ -1749,7 +2088,11 @@ object global extends js.Object {
     firefieldchanged: js.UndefOr[scala.Nothing],
     synchronous: Boolean
   ): Unit = js.native
+  @JSGlobal("nlapiSetCurrentLineItemValue")
+  @js.native
   def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: Double, firefieldchanged: Boolean): Unit = js.native
+  @JSGlobal("nlapiSetCurrentLineItemValue")
+  @js.native
   def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: Double, firefieldchanged: Boolean, synchronous: Boolean): Unit = js.native
   
   /**
@@ -1764,6 +2107,8 @@ object global extends js.Object {
     * @param mandatory
     * @return
     */
+  @JSGlobal("nlapiSetFieldMandatory")
+  @js.native
   def nlapiSetFieldMandatory(fldnam: String, mandatory: Boolean): js.Any = js.native
   
   /**
@@ -1783,9 +2128,17 @@ object global extends js.Object {
     * @param synchronous?
     * @return
     */
+  @JSGlobal("nlapiSetFieldText")
+  @js.native
   def nlapiSetFieldText(fldnam: String, txt: String): js.Any = js.native
+  @JSGlobal("nlapiSetFieldText")
+  @js.native
   def nlapiSetFieldText(fldnam: String, txt: String, firefieldchanged: js.UndefOr[scala.Nothing], synchronous: Boolean): js.Any = js.native
+  @JSGlobal("nlapiSetFieldText")
+  @js.native
   def nlapiSetFieldText(fldnam: String, txt: String, firefieldchanged: Boolean): js.Any = js.native
+  @JSGlobal("nlapiSetFieldText")
+  @js.native
   def nlapiSetFieldText(fldnam: String, txt: String, firefieldchanged: Boolean, synchronous: Boolean): js.Any = js.native
   
   /**
@@ -1806,9 +2159,17 @@ object global extends js.Object {
     * @param synchronous?
     * @return
     */
+  @JSGlobal("nlapiSetFieldTexts")
+  @js.native
   def nlapiSetFieldTexts(fldnam: String, texts: js.Any): js.Any = js.native
+  @JSGlobal("nlapiSetFieldTexts")
+  @js.native
   def nlapiSetFieldTexts(fldnam: String, texts: js.Any, firefieldchanged: js.UndefOr[scala.Nothing], synchronous: Boolean): js.Any = js.native
+  @JSGlobal("nlapiSetFieldTexts")
+  @js.native
   def nlapiSetFieldTexts(fldnam: String, texts: js.Any, firefieldchanged: Boolean): js.Any = js.native
+  @JSGlobal("nlapiSetFieldTexts")
+  @js.native
   def nlapiSetFieldTexts(fldnam: String, texts: js.Any, firefieldchanged: Boolean, synchronous: Boolean): js.Any = js.native
   
   /**
@@ -1829,9 +2190,17 @@ object global extends js.Object {
     * @param synchronous?
     * @return
     */
+  @JSGlobal("nlapiSetFieldValue")
+  @js.native
   def nlapiSetFieldValue(fldnam: String, value: String): js.Any = js.native
+  @JSGlobal("nlapiSetFieldValue")
+  @js.native
   def nlapiSetFieldValue(fldnam: String, value: String, firefieldchanged: js.UndefOr[scala.Nothing], synchronous: Boolean): js.Any = js.native
+  @JSGlobal("nlapiSetFieldValue")
+  @js.native
   def nlapiSetFieldValue(fldnam: String, value: String, firefieldchanged: Boolean): js.Any = js.native
+  @JSGlobal("nlapiSetFieldValue")
+  @js.native
   def nlapiSetFieldValue(fldnam: String, value: String, firefieldchanged: Boolean, synchronous: Boolean): js.Any = js.native
   
   /**
@@ -1852,9 +2221,17 @@ object global extends js.Object {
     * @param synchronous?
     * @return
     */
+  @JSGlobal("nlapiSetFieldValues")
+  @js.native
   def nlapiSetFieldValues(fldnam: String, values: js.Any): js.Any = js.native
+  @JSGlobal("nlapiSetFieldValues")
+  @js.native
   def nlapiSetFieldValues(fldnam: String, values: js.Any, firefieldchanged: js.UndefOr[scala.Nothing], synchronous: Boolean): js.Any = js.native
+  @JSGlobal("nlapiSetFieldValues")
+  @js.native
   def nlapiSetFieldValues(fldnam: String, values: js.Any, firefieldchanged: Boolean): js.Any = js.native
+  @JSGlobal("nlapiSetFieldValues")
+  @js.native
   def nlapiSetFieldValues(fldnam: String, values: js.Any, firefieldchanged: Boolean, synchronous: Boolean): js.Any = js.native
   
   /**
@@ -1874,6 +2251,8 @@ object global extends js.Object {
     * @param value
     * @param timezone
     */
+  @JSGlobal("nlapiSetLineItemDateTimeValue")
+  @js.native
   def nlapiSetLineItemDateTimeValue(`type`: String, fldnam: String, linenum: js.Any, value: js.Any, timezone: String): Unit = js.native
   
   /**
@@ -1893,6 +2272,8 @@ object global extends js.Object {
     * @param linenum
     * @return
     */
+  @JSGlobal("nlapiSetLineItemDisabled")
+  @js.native
   def nlapiSetLineItemDisabled(`type`: String, fldnam: String, disable: Boolean, linenum: js.Any): js.Any = js.native
   
   /**
@@ -1910,6 +2291,8 @@ object global extends js.Object {
     * @param mandatory
     * @return
     */
+  @JSGlobal("nlapiSetLineItemMandatory")
+  @js.native
   def nlapiSetLineItemMandatory(`type`: String, fldnam: String, mandatory: Boolean): js.Any = js.native
   
   /**
@@ -1927,7 +2310,11 @@ object global extends js.Object {
     * @param linenum
     * @param value
     */
+  @JSGlobal("nlapiSetLineItemValue")
+  @js.native
   def nlapiSetLineItemValue(`type`: String, fldnam: String, linenum: js.Any, value: String): Unit = js.native
+  @JSGlobal("nlapiSetLineItemValue")
+  @js.native
   def nlapiSetLineItemValue(`type`: String, fldnam: String, linenum: js.Any, value: Double): Unit = js.native
   
   /**
@@ -1951,7 +2338,11 @@ object global extends js.Object {
     * @param synchronous?
     * @return
     */
+  @JSGlobal("nlapiSetMatrixValue")
+  @js.native
   def nlapiSetMatrixValue(`type`: String, fldnam: String, column: js.Any, value: String): js.Any = js.native
+  @JSGlobal("nlapiSetMatrixValue")
+  @js.native
   def nlapiSetMatrixValue(
     `type`: String,
     fldnam: String,
@@ -1960,7 +2351,11 @@ object global extends js.Object {
     firefieldchanged: js.UndefOr[scala.Nothing],
     synchronous: Boolean
   ): js.Any = js.native
+  @JSGlobal("nlapiSetMatrixValue")
+  @js.native
   def nlapiSetMatrixValue(`type`: String, fldnam: String, column: js.Any, value: String, firefieldchanged: Boolean): js.Any = js.native
+  @JSGlobal("nlapiSetMatrixValue")
+  @js.native
   def nlapiSetMatrixValue(
     `type`: String,
     fldnam: String,
@@ -1988,7 +2383,11 @@ object global extends js.Object {
     * @param parameters?
     * @return
     */
+  @JSGlobal("nlapiSetRedirectURL")
+  @js.native
   def nlapiSetRedirectURL(`type`: String, identifier: String): Unit = js.native
+  @JSGlobal("nlapiSetRedirectURL")
+  @js.native
   def nlapiSetRedirectURL(
     `type`: String,
     identifier: String,
@@ -1996,7 +2395,11 @@ object global extends js.Object {
     editmode: js.UndefOr[scala.Nothing],
     parameters: js.Any
   ): Unit = js.native
+  @JSGlobal("nlapiSetRedirectURL")
+  @js.native
   def nlapiSetRedirectURL(`type`: String, identifier: String, id: js.UndefOr[scala.Nothing], editmode: Boolean): Unit = js.native
+  @JSGlobal("nlapiSetRedirectURL")
+  @js.native
   def nlapiSetRedirectURL(
     `type`: String,
     identifier: String,
@@ -2004,7 +2407,11 @@ object global extends js.Object {
     editmode: Boolean,
     parameters: js.Any
   ): Unit = js.native
+  @JSGlobal("nlapiSetRedirectURL")
+  @js.native
   def nlapiSetRedirectURL(`type`: String, identifier: String, id: String): Unit = js.native
+  @JSGlobal("nlapiSetRedirectURL")
+  @js.native
   def nlapiSetRedirectURL(
     `type`: String,
     identifier: String,
@@ -2012,9 +2419,17 @@ object global extends js.Object {
     editmode: js.UndefOr[scala.Nothing],
     parameters: js.Any
   ): Unit = js.native
+  @JSGlobal("nlapiSetRedirectURL")
+  @js.native
   def nlapiSetRedirectURL(`type`: String, identifier: String, id: String, editmode: Boolean): Unit = js.native
+  @JSGlobal("nlapiSetRedirectURL")
+  @js.native
   def nlapiSetRedirectURL(`type`: String, identifier: String, id: String, editmode: Boolean, parameters: js.Any): Unit = js.native
+  @JSGlobal("nlapiSetRedirectURL")
+  @js.native
   def nlapiSetRedirectURL(`type`: String, identifier: String, id: Double): Unit = js.native
+  @JSGlobal("nlapiSetRedirectURL")
+  @js.native
   def nlapiSetRedirectURL(
     `type`: String,
     identifier: String,
@@ -2022,7 +2437,11 @@ object global extends js.Object {
     editmode: js.UndefOr[scala.Nothing],
     parameters: js.Any
   ): Unit = js.native
+  @JSGlobal("nlapiSetRedirectURL")
+  @js.native
   def nlapiSetRedirectURL(`type`: String, identifier: String, id: Double, editmode: Boolean): Unit = js.native
+  @JSGlobal("nlapiSetRedirectURL")
+  @js.native
   def nlapiSetRedirectURL(`type`: String, identifier: String, id: Double, editmode: Boolean, parameters: js.Any): Unit = js.native
   
   /**
@@ -2037,7 +2456,11 @@ object global extends js.Object {
     * @param format
     * @return
     */
+  @JSGlobal("nlapiStringToDate")
+  @js.native
   def nlapiStringToDate(str: String): Date = js.native
+  @JSGlobal("nlapiStringToDate")
+  @js.native
   def nlapiStringToDate(str: String, format: String): Date = js.native
   
   /**
@@ -2051,6 +2474,8 @@ object global extends js.Object {
     * @param str
     * @return
     */
+  @JSGlobal("nlapiStringToXML")
+  @js.native
   def nlapiStringToXML(str: String): js.Any = js.native
   
   /**
@@ -2064,6 +2489,8 @@ object global extends js.Object {
     * @since 2009.2
     * @param setup
     */
+  @JSGlobal("nlapiSubmitConfiguration")
+  @js.native
   def nlapiSubmitConfiguration(setup: js.Any): Unit = js.native
   
   /**
@@ -2086,7 +2513,11 @@ object global extends js.Object {
     * @param doSourcing?
     * @return
     */
+  @JSGlobal("nlapiSubmitField")
+  @js.native
   def nlapiSubmitField(`type`: String, id: js.Any, fields: js.Any, values: js.Any): Unit = js.native
+  @JSGlobal("nlapiSubmitField")
+  @js.native
   def nlapiSubmitField(`type`: String, id: js.Any, fields: js.Any, values: js.Any, doSourcing: Boolean): Unit = js.native
   
   /**
@@ -2101,6 +2532,8 @@ object global extends js.Object {
     * @param file
     * @return
     */
+  @JSGlobal("nlapiSubmitFile")
+  @js.native
   def nlapiSubmitFile(file: nlobjFile): js.Any = js.native
   
   /**
@@ -2122,9 +2555,17 @@ object global extends js.Object {
     * @param ignoreMandatoryFields?
     * @return
     */
+  @JSGlobal("nlapiSubmitRecord")
+  @js.native
   def nlapiSubmitRecord(record: js.Any): js.Any = js.native
+  @JSGlobal("nlapiSubmitRecord")
+  @js.native
   def nlapiSubmitRecord(record: js.Any, doSourcing: js.UndefOr[scala.Nothing], ignoreMandatoryFields: Boolean): js.Any = js.native
+  @JSGlobal("nlapiSubmitRecord")
+  @js.native
   def nlapiSubmitRecord(record: js.Any, doSourcing: Boolean): js.Any = js.native
+  @JSGlobal("nlapiSubmitRecord")
+  @js.native
   def nlapiSubmitRecord(record: js.Any, doSourcing: Boolean, ignoreMandatoryFields: Boolean): js.Any = js.native
   
   /**
@@ -2151,7 +2592,11 @@ object global extends js.Object {
     * @param transformValues?
     * @return
     */
+  @JSGlobal("nlapiTransformRecord")
+  @js.native
   def nlapiTransformRecord(`type`: String, id: js.Any, transformType: String): nlobjRecord = js.native
+  @JSGlobal("nlapiTransformRecord")
+  @js.native
   def nlapiTransformRecord(`type`: String, id: js.Any, transformType: String, transformValues: js.Any): nlobjRecord = js.native
   
   /**
@@ -2173,6 +2618,8 @@ object global extends js.Object {
     * @param stateid
     * @return
     */
+  @JSGlobal("nlapiTriggerWorkflow")
+  @js.native
   def nlapiTriggerWorkflow(recordtype: String, id: js.Any, workflowid: js.Any, actionid: js.Any, stateid: js.Any): js.Any = js.native
   
   /**
@@ -2189,6 +2636,8 @@ object global extends js.Object {
     * @param schemaDocument
     * @param schemaFolderId
     */
+  @JSGlobal("nlapiValidateXML")
+  @js.native
   def nlapiValidateXML(xmlDocument: js.Any, schemaDocument: js.Any, schemaFolderId: String): Unit = js.native
   
   /**
@@ -2202,6 +2651,8 @@ object global extends js.Object {
     * @param type
     * @param fldnam
     */
+  @JSGlobal("nlapiViewCurrentLineItemSubrecord")
+  @js.native
   def nlapiViewCurrentLineItemSubrecord(`type`: String, fldnam: String): Unit = js.native
   
   /**
@@ -2216,6 +2667,8 @@ object global extends js.Object {
     * @param fldnam
     * @param linenum
     */
+  @JSGlobal("nlapiViewLineItemSubrecord")
+  @js.native
   def nlapiViewLineItemSubrecord(`type`: String, fldnam: String, linenum: js.Any): Unit = js.native
   
   /**
@@ -2232,6 +2685,8 @@ object global extends js.Object {
     * @param id
     * @return
     */
+  @JSGlobal("nlapiVoidTransaction")
+  @js.native
   def nlapiVoidTransaction(`type`: String, id: String): String = js.native
   
   /**
@@ -2246,6 +2701,8 @@ object global extends js.Object {
     * @param input
     * @return
     */
+  @JSGlobal("nlapiXMLToPDF")
+  @js.native
   def nlapiXMLToPDF(input: String): js.Any = js.native
   
   /**
@@ -2259,31 +2716,13 @@ object global extends js.Object {
     * @param xml
     * @return
     */
+  @JSGlobal("nlapiXMLToString")
+  @js.native
   def nlapiXMLToString(xml: js.Any): String = js.native
   
+  @JSGlobal("nlapiYieldScript")
+  @js.native
   def nlapiYieldScript(): Unit = js.native
-  
-  /**
-    * remove a subrecord on body field on the current record on a page.
-    * @restriction supported in client and user event scripts only.
-    * @param {string}    fldnam body field name
-    * @retun {void}
-    *
-    * @since 2011.2
-    * @param fldnam
-    */
-  def removeSubrecord(fldnam: String): Unit = js.native
-  
-  /**
-    * view a subrecord on body field on the current record on a page.
-    * @restriction supported in client and user event scripts only.
-    * @param {string}    fldnam body field name
-    * @retun {nlobjSubrecord}
-    *
-    * @since 2011.2
-    * @param fldnam
-    */
-  def viewSubrecord(fldnam: String): Unit = js.native
   
   /**
     * Return a new instance of nlobjError used system or user-defined error object.
@@ -2292,6 +2731,7 @@ object global extends js.Object {
     * @return {nlobjError}
     * @constructor
     */
+  @JSGlobal("nlobjError")
   @js.native
   class nlobjError protected ()
     extends typings.suitescript.nlobjError
@@ -2318,6 +2758,7 @@ object global extends js.Object {
     *
     * @since 2007.0
     */
+  @JSGlobal("nlobjSearchColumn")
   @js.native
   class nlobjSearchColumn protected ()
     extends typings.suitescript.nlobjSearchColumn
@@ -2341,4 +2782,30 @@ object global extends js.Object {
     def this(name: String, join: js.UndefOr[scala.Nothing], summary: String) = this()
     def this(name: String, join: String, summary: String) = this()
   }
+  
+  /**
+    * remove a subrecord on body field on the current record on a page.
+    * @restriction supported in client and user event scripts only.
+    * @param {string}    fldnam body field name
+    * @retun {void}
+    *
+    * @since 2011.2
+    * @param fldnam
+    */
+  @JSGlobal("removeSubrecord")
+  @js.native
+  def removeSubrecord(fldnam: String): Unit = js.native
+  
+  /**
+    * view a subrecord on body field on the current record on a page.
+    * @restriction supported in client and user event scripts only.
+    * @param {string}    fldnam body field name
+    * @retun {nlobjSubrecord}
+    *
+    * @since 2011.2
+    * @param fldnam
+    */
+  @JSGlobal("viewSubrecord")
+  @js.native
+  def viewSubrecord(fldnam: String): Unit = js.native
 }

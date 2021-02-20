@@ -1,13 +1,14 @@
 package typings.plotlyJs.anon
 
 import typings.plotlyJs.mod.Dash
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.ShapeLine> */
 @js.native
-trait PartialShapeLine extends js.Object {
+trait PartialShapeLine extends StObject {
   
   var color: js.UndefOr[String] = js.native
   
@@ -24,36 +25,24 @@ object PartialShapeLine {
   }
   
   @scala.inline
-  implicit class PartialShapeLineOps[Self <: PartialShapeLine] (val x: Self) extends AnyVal {
+  implicit class PartialShapeLineMutableBuilder[Self <: PartialShapeLine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDash(value: Dash): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDash(value: Dash): Self = this.set("dash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDash: Self = this.set("dash", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

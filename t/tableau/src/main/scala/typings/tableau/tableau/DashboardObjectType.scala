@@ -1,14 +1,15 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DashboardObjectType extends js.Object
+sealed trait DashboardObjectType extends StObject
 @JSGlobal("tableau.DashboardObjectType")
 @js.native
-object DashboardObjectType extends js.Object {
+object DashboardObjectType extends StObject {
   
   @js.native
   sealed trait ADDIN extends DashboardObjectType

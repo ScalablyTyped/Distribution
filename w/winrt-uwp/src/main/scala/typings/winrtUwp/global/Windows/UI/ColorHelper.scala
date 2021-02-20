@@ -1,6 +1,7 @@
 package typings.winrtUwp.global.Windows.UI
 
 import typings.winrtUwp.Windows.UI.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,10 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class ColorHelper ()
   extends typings.winrtUwp.Windows.UI.ColorHelper
-/* static members */
-@JSGlobal("Windows.UI.ColorHelper")
-@js.native
-object ColorHelper extends js.Object {
+object ColorHelper {
   
   /**
     * Generates a Color structure, based on discrete Byte values for ARGB components. C# and Microsoft Visual Basic code should use Color.FromArgb instead.
@@ -23,5 +21,8 @@ object ColorHelper extends js.Object {
     * @param b The B component of the desired color. Range is 0-255.
     * @return The generated Color value.
     */
+  /* static member */
+  @JSGlobal("Windows.UI.ColorHelper.fromArgb")
+  @js.native
   def fromArgb(a: Double, r: Double, g: Double, b: Double): Color = js.native
 }

@@ -1,11 +1,12 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GeometricShapeType extends js.Object
+sealed trait GeometricShapeType extends StObject
 /**
   *
   * Specifies the shape type for a GeometricShape object.
@@ -14,7 +15,7 @@ sealed trait GeometricShapeType extends js.Object
   */
 @JSGlobal("Excel.GeometricShapeType")
 @js.native
-object GeometricShapeType extends js.Object {
+object GeometricShapeType extends StObject {
   
   @js.native
   sealed trait accentBorderCallout1 extends GeometricShapeType

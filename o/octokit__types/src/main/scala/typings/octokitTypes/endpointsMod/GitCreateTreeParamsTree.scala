@@ -8,12 +8,13 @@ import typings.octokitTypes.octokitTypesStrings.`160000`
 import typings.octokitTypes.octokitTypesStrings.blob
 import typings.octokitTypes.octokitTypesStrings.commit
 import typings.octokitTypes.octokitTypesStrings.tree
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitCreateTreeParamsTree extends js.Object {
+trait GitCreateTreeParamsTree extends StObject {
   
   var content: js.UndefOr[String] = js.native
   
@@ -34,51 +35,39 @@ object GitCreateTreeParamsTree {
   }
   
   @scala.inline
-  implicit class GitCreateTreeParamsTreeOps[Self <: GitCreateTreeParamsTree] (val x: Self) extends AnyVal {
+  implicit class GitCreateTreeParamsTreeMutableBuilder[Self <: GitCreateTreeParamsTree] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: `100644` | `100755` | `040000` | `160000` | `120000`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: `100644` | `100755` | `040000` | `160000` | `120000`): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setShaNull: Self = StObject.set(x, "sha", null)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
     
     @scala.inline
-    def setSha(value: String): Self = this.set("sha", value.asInstanceOf[js.Any])
+    def setType(value: blob | tree | commit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSha: Self = this.set("sha", js.undefined)
-    
-    @scala.inline
-    def setShaNull: Self = this.set("sha", null)
-    
-    @scala.inline
-    def setType(value: blob | tree | commit): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

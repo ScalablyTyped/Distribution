@@ -1,6 +1,7 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,36 +24,24 @@ object IVaultUIEvents {
   }
   
   @scala.inline
-  implicit class IVaultUIEventsOps[Self <: IVaultUIEvents] (val x: Self) extends AnyVal {
+  implicit class IVaultUIEventsMutableBuilder[Self <: IVaultUIEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnNewVaultEntry(value: /* vaultEntry */ IVaultEntry => Unit | IVaultEntryEvents): Self = StObject.set(x, "OnNewVaultEntry", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnNewVaultEntryUndefined: Self = StObject.set(x, "OnNewVaultEntry", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnStarted(value: () => Unit): Self = StObject.set(x, "OnStarted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnNewVaultEntry(value: /* vaultEntry */ IVaultEntry => Unit | IVaultEntryEvents): Self = this.set("OnNewVaultEntry", js.Any.fromFunction1(value))
+    def setOnStartedUndefined: Self = StObject.set(x, "OnStarted", js.undefined)
     
     @scala.inline
-    def deleteOnNewVaultEntry: Self = this.set("OnNewVaultEntry", js.undefined)
+    def setOnStop(value: () => Unit): Self = StObject.set(x, "OnStop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnStarted(value: () => Unit): Self = this.set("OnStarted", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnStarted: Self = this.set("OnStarted", js.undefined)
-    
-    @scala.inline
-    def setOnStop(value: () => Unit): Self = this.set("OnStop", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnStop: Self = this.set("OnStop", js.undefined)
+    def setOnStopUndefined: Self = StObject.set(x, "OnStop", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicRulePayload extends js.Object {
+trait TopicRulePayload extends StObject {
   
   /**
     * The actions associated with the rule.
@@ -46,51 +47,39 @@ object TopicRulePayload {
   }
   
   @scala.inline
-  implicit class TopicRulePayloadOps[Self <: TopicRulePayload] (val x: Self) extends AnyVal {
+  implicit class TopicRulePayloadMutableBuilder[Self <: TopicRulePayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: ActionList): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAwsIotSqlVersion(value: AwsIotSqlVersion): Self = StObject.set(x, "awsIotSqlVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsVarargs(value: Action*): Self = this.set("actions", js.Array(value :_*))
+    def setAwsIotSqlVersionUndefined: Self = StObject.set(x, "awsIotSqlVersion", js.undefined)
     
     @scala.inline
-    def setActions(value: ActionList): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSql(value: SQL): Self = this.set("sql", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setAwsIotSqlVersion(value: AwsIotSqlVersion): Self = this.set("awsIotSqlVersion", value.asInstanceOf[js.Any])
+    def setErrorAction(value: Action): Self = StObject.set(x, "errorAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAwsIotSqlVersion: Self = this.set("awsIotSqlVersion", js.undefined)
+    def setErrorActionUndefined: Self = StObject.set(x, "errorAction", js.undefined)
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setRuleDisabled(value: IsDisabled): Self = StObject.set(x, "ruleDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setRuleDisabledUndefined: Self = StObject.set(x, "ruleDisabled", js.undefined)
     
     @scala.inline
-    def setErrorAction(value: Action): Self = this.set("errorAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorAction: Self = this.set("errorAction", js.undefined)
-    
-    @scala.inline
-    def setRuleDisabled(value: IsDisabled): Self = this.set("ruleDisabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleDisabled: Self = this.set("ruleDisabled", js.undefined)
+    def setSql(value: SQL): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
   }
 }

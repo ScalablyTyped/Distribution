@@ -8,12 +8,13 @@ import typings.devtoolsProtocol.mod.Protocol.Cast.SetSinkToUseRequest
 import typings.devtoolsProtocol.mod.Protocol.Cast.SinksUpdatedEvent
 import typings.devtoolsProtocol.mod.Protocol.Cast.StartTabMirroringRequest
 import typings.devtoolsProtocol.mod.Protocol.Cast.StopCastingRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CastApi extends js.Object {
+trait CastApi extends StObject {
   
   /**
     * Stops observing for sinks and issues.

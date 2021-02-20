@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISVGSVGElement extends js.Object {
+trait ISVGSVGElement extends StObject {
   
   @JSName("MSHTML.ISVGSVGElement_typekey")
   var MSHTMLDotISVGSVGElement_typekey: ISVGSVGElement = js.native
@@ -136,135 +137,123 @@ object ISVGSVGElement {
   }
   
   @scala.inline
-  implicit class ISVGSVGElementOps[Self <: ISVGSVGElement] (val x: Self) extends AnyVal {
+  implicit class ISVGSVGElementMutableBuilder[Self <: ISVGSVGElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationsPaused(value: () => Boolean): Self = StObject.set(x, "animationsPaused", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckEnclosure(value: (ISVGElement, SVGRect) => Boolean): Self = StObject.set(x, "checkEnclosure", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckIntersection(value: (ISVGElement, SVGRect) => Boolean): Self = StObject.set(x, "checkIntersection", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMSHTMLDotISVGSVGElement_typekey(value: ISVGSVGElement): Self = this.set("MSHTML.ISVGSVGElement_typekey", value.asInstanceOf[js.Any])
+    def setContentScriptType(value: String): Self = StObject.set(x, "contentScriptType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationsPaused(value: () => Boolean): Self = this.set("animationsPaused", js.Any.fromFunction0(value))
+    def setContentStyleType(value: String): Self = StObject.set(x, "contentStyleType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckEnclosure(value: (ISVGElement, SVGRect) => Boolean): Self = this.set("checkEnclosure", js.Any.fromFunction2(value))
+    def setCreateSVGAngle(value: () => SVGAngle): Self = StObject.set(x, "createSVGAngle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCheckIntersection(value: (ISVGElement, SVGRect) => Boolean): Self = this.set("checkIntersection", js.Any.fromFunction2(value))
+    def setCreateSVGLength(value: () => SVGLength): Self = StObject.set(x, "createSVGLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContentScriptType(value: String): Self = this.set("contentScriptType", value.asInstanceOf[js.Any])
+    def setCreateSVGMatrix(value: () => SVGMatrix): Self = StObject.set(x, "createSVGMatrix", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContentStyleType(value: String): Self = this.set("contentStyleType", value.asInstanceOf[js.Any])
+    def setCreateSVGNumber(value: () => SVGNumber): Self = StObject.set(x, "createSVGNumber", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateSVGAngle(value: () => SVGAngle): Self = this.set("createSVGAngle", js.Any.fromFunction0(value))
+    def setCreateSVGPoint(value: () => SVGPoint): Self = StObject.set(x, "createSVGPoint", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateSVGLength(value: () => SVGLength): Self = this.set("createSVGLength", js.Any.fromFunction0(value))
+    def setCreateSVGRect(value: () => SVGRect): Self = StObject.set(x, "createSVGRect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateSVGMatrix(value: () => SVGMatrix): Self = this.set("createSVGMatrix", js.Any.fromFunction0(value))
+    def setCreateSVGTransform(value: () => SVGTransform): Self = StObject.set(x, "createSVGTransform", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateSVGNumber(value: () => SVGNumber): Self = this.set("createSVGNumber", js.Any.fromFunction0(value))
+    def setCreateSVGTransformFromMatrix(value: SVGMatrix => SVGTransform): Self = StObject.set(x, "createSVGTransformFromMatrix", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateSVGPoint(value: () => SVGPoint): Self = this.set("createSVGPoint", js.Any.fromFunction0(value))
+    def setCurrentScale(value: Double): Self = StObject.set(x, "currentScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateSVGRect(value: () => SVGRect): Self = this.set("createSVGRect", js.Any.fromFunction0(value))
+    def setCurrentTranslate(value: SVGPoint): Self = StObject.set(x, "currentTranslate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateSVGTransform(value: () => SVGTransform): Self = this.set("createSVGTransform", js.Any.fromFunction0(value))
+    def setCurrentView(value: ISVGViewSpec): Self = StObject.set(x, "currentView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateSVGTransformFromMatrix(value: SVGMatrix => SVGTransform): Self = this.set("createSVGTransformFromMatrix", js.Any.fromFunction1(value))
+    def setDeselectAll(value: () => Unit): Self = StObject.set(x, "deselectAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCurrentScale(value: Double): Self = this.set("currentScale", value.asInstanceOf[js.Any])
+    def setForceRedraw(value: () => Unit): Self = StObject.set(x, "forceRedraw", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCurrentTranslate(value: SVGPoint): Self = this.set("currentTranslate", value.asInstanceOf[js.Any])
+    def setGetCurrentTime(value: () => Double): Self = StObject.set(x, "getCurrentTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCurrentView(value: ISVGViewSpec): Self = this.set("currentView", value.asInstanceOf[js.Any])
+    def setGetElementById(value: String => IHTMLElement): Self = StObject.set(x, "getElementById", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeselectAll(value: () => Unit): Self = this.set("deselectAll", js.Any.fromFunction0(value))
+    def setGetEnclosureList(value: (SVGRect, ISVGElement) => js.Any): Self = StObject.set(x, "getEnclosureList", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setForceRedraw(value: () => Unit): Self = this.set("forceRedraw", js.Any.fromFunction0(value))
+    def setGetIntersectionList(value: (SVGRect, ISVGElement) => js.Any): Self = StObject.set(x, "getIntersectionList", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCurrentTime(value: () => Double): Self = this.set("getCurrentTime", js.Any.fromFunction0(value))
+    def setHeight(value: SVGAnimatedLength): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetElementById(value: String => IHTMLElement): Self = this.set("getElementById", js.Any.fromFunction1(value))
+    def setMSHTMLDotISVGSVGElement_typekey(value: ISVGSVGElement): Self = StObject.set(x, "MSHTML.ISVGSVGElement_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetEnclosureList(value: (SVGRect, ISVGElement) => js.Any): Self = this.set("getEnclosureList", js.Any.fromFunction2(value))
+    def setPauseAnimations(value: () => Unit): Self = StObject.set(x, "pauseAnimations", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIntersectionList(value: (SVGRect, ISVGElement) => js.Any): Self = this.set("getIntersectionList", js.Any.fromFunction2(value))
+    def setPixelUnitToMillimeterX(value: Double): Self = StObject.set(x, "pixelUnitToMillimeterX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: SVGAnimatedLength): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setPixelUnitToMillimeterY(value: Double): Self = StObject.set(x, "pixelUnitToMillimeterY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPauseAnimations(value: () => Unit): Self = this.set("pauseAnimations", js.Any.fromFunction0(value))
+    def setScreenPixelToMillimeterX(value: Double): Self = StObject.set(x, "screenPixelToMillimeterX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelUnitToMillimeterX(value: Double): Self = this.set("pixelUnitToMillimeterX", value.asInstanceOf[js.Any])
+    def setScreenPixelToMillimeterY(value: Double): Self = StObject.set(x, "screenPixelToMillimeterY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelUnitToMillimeterY(value: Double): Self = this.set("pixelUnitToMillimeterY", value.asInstanceOf[js.Any])
+    def setSetCurrentTime(value: Double => Unit): Self = StObject.set(x, "setCurrentTime", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScreenPixelToMillimeterX(value: Double): Self = this.set("screenPixelToMillimeterX", value.asInstanceOf[js.Any])
+    def setSuspendRedraw(value: Double => Double): Self = StObject.set(x, "suspendRedraw", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScreenPixelToMillimeterY(value: Double): Self = this.set("screenPixelToMillimeterY", value.asInstanceOf[js.Any])
+    def setUnpauseAnimations(value: () => Unit): Self = StObject.set(x, "unpauseAnimations", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetCurrentTime(value: Double => Unit): Self = this.set("setCurrentTime", js.Any.fromFunction1(value))
+    def setUnsuspendRedraw(value: Double => Unit): Self = StObject.set(x, "unsuspendRedraw", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSuspendRedraw(value: Double => Double): Self = this.set("suspendRedraw", js.Any.fromFunction1(value))
+    def setUnsuspendRedrawAll(value: () => Unit): Self = StObject.set(x, "unsuspendRedrawAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setUnpauseAnimations(value: () => Unit): Self = this.set("unpauseAnimations", js.Any.fromFunction0(value))
+    def setUseCurrentView(value: Boolean): Self = StObject.set(x, "useCurrentView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnsuspendRedraw(value: Double => Unit): Self = this.set("unsuspendRedraw", js.Any.fromFunction1(value))
+    def setViewport(value: SVGRect): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnsuspendRedrawAll(value: () => Unit): Self = this.set("unsuspendRedrawAll", js.Any.fromFunction0(value))
+    def setWidth(value: SVGAnimatedLength): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseCurrentView(value: Boolean): Self = this.set("useCurrentView", value.asInstanceOf[js.Any])
+    def setX(value: SVGAnimatedLength): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewport(value: SVGRect): Self = this.set("viewport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: SVGAnimatedLength): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX(value: SVGAnimatedLength): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: SVGAnimatedLength): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setY(value: SVGAnimatedLength): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

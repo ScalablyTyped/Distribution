@@ -1,13 +1,13 @@
 package typings.openui5.global.sap.ui.model.odata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.model.odata.type")
-@js.native
-object `type` extends js.Object {
+object `type` {
   
+  @JSGlobal("sap.ui.model.odata.type.Boolean")
   @js.native
   class Boolean protected ()
     extends typings.openui5.sap.ui.model.odata.`type`.Boolean {
@@ -22,6 +22,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.type.Byte")
   @js.native
   class Byte protected ()
     extends typings.openui5.sap.ui.model.odata.`type`.Byte {
@@ -35,6 +36,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.type.Date")
   @js.native
   class Date protected ()
     extends typings.openui5.sap.ui.model.odata.`type`.Date {
@@ -48,6 +50,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.type.DateTime")
   @js.native
   class DateTime protected ()
     extends typings.openui5.sap.ui.model.odata.`type`.DateTime {
@@ -61,6 +64,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.type.DateTimeBase")
   @js.native
   abstract class DateTimeBase protected ()
     extends typings.openui5.sap.ui.model.odata.`type`.DateTimeBase {
@@ -75,6 +79,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.type.DateTimeOffset")
   @js.native
   class DateTimeOffset protected ()
     extends typings.openui5.sap.ui.model.odata.`type`.DateTimeOffset {
@@ -88,6 +93,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.type.Decimal")
   @js.native
   class Decimal protected ()
     extends typings.openui5.sap.ui.model.odata.`type`.Decimal {
@@ -104,6 +110,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.type.Double")
   @js.native
   class Double protected ()
     extends typings.openui5.sap.ui.model.odata.`type`.Double {
@@ -118,6 +125,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.type.Guid")
   @js.native
   class Guid protected ()
     extends typings.openui5.sap.ui.model.odata.`type`.Guid {
@@ -132,6 +140,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.type.Int")
   @js.native
   class Int protected ()
     extends typings.openui5.sap.ui.model.odata.`type`.Int {
@@ -145,6 +154,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.type.Int16")
   @js.native
   class Int16 protected ()
     extends typings.openui5.sap.ui.model.odata.`type`.Int16 {
@@ -159,6 +169,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.type.Int32")
   @js.native
   class Int32 protected ()
     extends typings.openui5.sap.ui.model.odata.`type`.Int32 {
@@ -173,6 +184,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.type.Int64")
   @js.native
   class Int64 protected ()
     extends typings.openui5.sap.ui.model.odata.`type`.Int64 {
@@ -186,6 +198,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.type.ODataType")
   @js.native
   class ODataType protected ()
     extends typings.openui5.sap.ui.model.odata.`type`.ODataType {
@@ -199,6 +212,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.type.Raw")
   @js.native
   class Raw protected ()
     extends typings.openui5.sap.ui.model.odata.`type`.Raw {
@@ -211,6 +225,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.type.SByte")
   @js.native
   class SByte protected ()
     extends typings.openui5.sap.ui.model.odata.`type`.SByte {
@@ -224,6 +239,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.type.Single")
   @js.native
   class Single protected ()
     extends typings.openui5.sap.ui.model.odata.`type`.Single {
@@ -238,6 +254,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.type.String")
   @js.native
   class String protected ()
     extends typings.openui5.sap.ui.model.odata.`type`.String {
@@ -252,6 +269,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.type.Time")
   @js.native
   class Time protected ()
     extends typings.openui5.sap.ui.model.odata.`type`.Time {
@@ -265,6 +283,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.odata.type.TimeOfDay")
   @js.native
   class TimeOfDay protected ()
     extends typings.openui5.sap.ui.model.odata.`type`.TimeOfDay {

@@ -5,6 +5,7 @@ import typings.heremaps.anon.Context
 import typings.heremaps.anon.Isolines
 import typings.heremaps.anon.Items
 import typings.heremaps.anon.Language
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,36 +34,24 @@ object ServiceResult {
   }
   
   @scala.inline
-  implicit class ServiceResultOps[Self <: ServiceResult] (val x: Self) extends AnyVal {
+  implicit class ServiceResultMutableBuilder[Self <: ServiceResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResponse(value: Isolines): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResponseUndefined: Self = StObject.set(x, "Response", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResults(value: Items): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: Isolines): Self = this.set("Response", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def deleteResponse: Self = this.set("Response", js.undefined)
+    def setSearch(value: Context): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResults(value: Items): Self = this.set("results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
-    
-    @scala.inline
-    def setSearch(value: Context): Self = this.set("search", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearch: Self = this.set("search", js.undefined)
+    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
   }
 }

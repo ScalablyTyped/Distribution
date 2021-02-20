@@ -1,12 +1,13 @@
 package typings.natsHemera.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Reply extends js.Object {
+trait Reply extends StObject {
   
   var error: Error = js.native
   

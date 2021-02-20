@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SmsFilterActionType extends js.Object
+sealed trait SmsFilterActionType extends StObject
 /** Values that describe the action to be taken on a message filter. */
 @JSGlobal("Windows.Devices.Sms.SmsFilterActionType")
 @js.native
-object SmsFilterActionType extends js.Object {
+object SmsFilterActionType extends StObject {
   
   /** Filters with this action type are applied after Peek filters. Messages filtered on this action type are delivered to your app. A copy of the message can also be delivered to the messaging application to be shown to the user if appropriate. Note that if multiple applications register the same filter with this action type, each application gets its own copy of the message. */
   @js.native

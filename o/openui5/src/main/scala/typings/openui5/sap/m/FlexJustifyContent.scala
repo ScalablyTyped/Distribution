@@ -1,17 +1,18 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FlexJustifyContent extends js.Object
+sealed trait FlexJustifyContent extends StObject
 /**
   * Available options for the layout of elements along the main axis of the flexbox layout.
   */
 @JSGlobal("sap.m.FlexJustifyContent")
 @js.native
-object FlexJustifyContent extends js.Object {
+object FlexJustifyContent extends StObject {
   
   @js.native
   sealed trait Center extends FlexJustifyContent

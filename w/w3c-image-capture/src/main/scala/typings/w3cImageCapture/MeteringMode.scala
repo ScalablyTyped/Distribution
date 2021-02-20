@@ -1,5 +1,6 @@
 package typings.w3cImageCapture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.w3cImageCapture.w3cImageCaptureStrings.`single-shot`
   - typings.w3cImageCapture.w3cImageCaptureStrings.continuous
 */
-trait MeteringMode extends js.Object
+trait MeteringMode extends StObject
 object MeteringMode {
   
   @scala.inline

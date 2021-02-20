@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLDivisions extends js.Object {
+trait HTMLDivisions extends StObject {
   
   def Add(): HTMLDivision = js.native
   def Add(Range: js.Any): HTMLDivision = js.native

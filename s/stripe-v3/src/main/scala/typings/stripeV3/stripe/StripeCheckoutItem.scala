@@ -1,11 +1,12 @@
 package typings.stripeV3.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StripeCheckoutItem extends js.Object {
+trait StripeCheckoutItem extends StObject {
   
   var plan: js.UndefOr[String] = js.native
   
@@ -22,33 +23,21 @@ object StripeCheckoutItem {
   }
   
   @scala.inline
-  implicit class StripeCheckoutItemOps[Self <: StripeCheckoutItem] (val x: Self) extends AnyVal {
+  implicit class StripeCheckoutItemMutableBuilder[Self <: StripeCheckoutItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantity(value: Double): Self = this.set("quantity", value.asInstanceOf[js.Any])
+    def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlan(value: String): Self = this.set("plan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlan: Self = this.set("plan", js.undefined)
-    
-    @scala.inline
-    def setSku(value: String): Self = this.set("sku", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSku: Self = this.set("sku", js.undefined)
+    def setSkuUndefined: Self = StObject.set(x, "sku", js.undefined)
   }
 }

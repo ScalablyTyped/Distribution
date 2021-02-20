@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CacheEngineVersionMessage extends js.Object {
+trait CacheEngineVersionMessage extends StObject {
   
   /**
     * A list of cache engine version details. Each element in the list contains detailed information about one cache engine version.
@@ -26,33 +27,21 @@ object CacheEngineVersionMessage {
   }
   
   @scala.inline
-  implicit class CacheEngineVersionMessageOps[Self <: CacheEngineVersionMessage] (val x: Self) extends AnyVal {
+  implicit class CacheEngineVersionMessageMutableBuilder[Self <: CacheEngineVersionMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheEngineVersions(value: CacheEngineVersionList): Self = StObject.set(x, "CacheEngineVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheEngineVersionsUndefined: Self = StObject.set(x, "CacheEngineVersions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCacheEngineVersionsVarargs(value: CacheEngineVersion*): Self = StObject.set(x, "CacheEngineVersions", js.Array(value :_*))
     
     @scala.inline
-    def setCacheEngineVersionsVarargs(value: CacheEngineVersion*): Self = this.set("CacheEngineVersions", js.Array(value :_*))
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheEngineVersions(value: CacheEngineVersionList): Self = this.set("CacheEngineVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCacheEngineVersions: Self = this.set("CacheEngineVersions", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

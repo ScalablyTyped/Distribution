@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortalLayerProperties extends js.Object {
+trait PortalLayerProperties extends StObject {
   
   /**
     * The portal item from which the layer is loaded.
@@ -23,24 +24,12 @@ object PortalLayerProperties {
   }
   
   @scala.inline
-  implicit class PortalLayerPropertiesOps[Self <: PortalLayerProperties] (val x: Self) extends AnyVal {
+  implicit class PortalLayerPropertiesMutableBuilder[Self <: PortalLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPortalItem(value: PortalItemProperties): Self = this.set("portalItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePortalItem: Self = this.set("portalItem", js.undefined)
+    def setPortalItemUndefined: Self = StObject.set(x, "portalItem", js.undefined)
   }
 }

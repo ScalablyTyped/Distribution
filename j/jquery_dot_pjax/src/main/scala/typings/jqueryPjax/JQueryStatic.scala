@@ -1,12 +1,13 @@
 package typings.jqueryPjax
 
 import typings.jquery.JQueryXHR
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryStatic extends js.Object {
+trait JQueryStatic extends StObject {
   
   /**
     * Loads a URL with ajax, puts the response body inside a container, then pushState()'s the loaded URL.

@@ -1,31 +1,28 @@
 package typings.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EChatInfoType extends js.Object
+sealed trait EChatInfoType extends StObject
 @JSImport("steam-client", "EChatInfoType")
 @js.native
-object EChatInfoType extends js.Object {
+object EChatInfoType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EChatInfoType with Double] = js.native
   
   @js.native
   sealed trait InfoUpdate extends EChatInfoType
-  /* 2 */ @js.native
-  object InfoUpdate extends TopLevel[InfoUpdate with Double]
+  /* 2 */ val InfoUpdate: typings.steamClient.mod.EChatInfoType.InfoUpdate with Double = js.native
   
   @js.native
   sealed trait MemberLimitChange extends EChatInfoType
-  /* 3 */ @js.native
-  object MemberLimitChange extends TopLevel[MemberLimitChange with Double]
+  /* 3 */ val MemberLimitChange: typings.steamClient.mod.EChatInfoType.MemberLimitChange with Double = js.native
   
   @js.native
   sealed trait StateChange extends EChatInfoType
-  /* 1 */ @js.native
-  object StateChange extends TopLevel[StateChange with Double]
+  /* 1 */ val StateChange: typings.steamClient.mod.EChatInfoType.StateChange with Double = js.native
 }

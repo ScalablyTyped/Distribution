@@ -1,6 +1,7 @@
 package typings.spotifyWebApiJs.SpotifyApi
 
 import typings.spotifyWebApiJs.spotifyWebApiJsStrings.show
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [show object (simplified)](https://developer.spotify.com/documentation/web-api/reference/object-model/#show-object-simplified)
   */
 @js.native
-trait ShowObjectSimplified extends js.Object {
+trait ShowObjectSimplified extends StObject {
   
   var available_markets: js.UndefOr[js.Array[String]] = js.native
   
@@ -67,78 +68,66 @@ object ShowObjectSimplified {
   }
   
   @scala.inline
-  implicit class ShowObjectSimplifiedOps[Self <: ShowObjectSimplified] (val x: Self) extends AnyVal {
+  implicit class ShowObjectSimplifiedMutableBuilder[Self <: ShowObjectSimplified] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailable_markets(value: js.Array[String]): Self = StObject.set(x, "available_markets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailable_marketsUndefined: Self = StObject.set(x, "available_markets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailable_marketsVarargs(value: String*): Self = StObject.set(x, "available_markets", js.Array(value :_*))
     
     @scala.inline
-    def setCopyrightsVarargs(value: CopyrightObject*): Self = this.set("copyrights", js.Array(value :_*))
+    def setCopyrights(value: js.Array[CopyrightObject]): Self = StObject.set(x, "copyrights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyrights(value: js.Array[CopyrightObject]): Self = this.set("copyrights", value.asInstanceOf[js.Any])
+    def setCopyrightsVarargs(value: CopyrightObject*): Self = StObject.set(x, "copyrights", js.Array(value :_*))
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplicit(value: Boolean): Self = this.set("explicit", value.asInstanceOf[js.Any])
+    def setExplicit(value: Boolean): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternal_urls(value: ExternalUrlObject): Self = this.set("external_urls", value.asInstanceOf[js.Any])
+    def setExternal_urls(value: ExternalUrlObject): Self = StObject.set(x, "external_urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagesVarargs(value: ImageObject*): Self = this.set("images", js.Array(value :_*))
+    def setImages(value: js.Array[ImageObject]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages(value: js.Array[ImageObject]): Self = this.set("images", value.asInstanceOf[js.Any])
+    def setImagesVarargs(value: ImageObject*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def setIs_externally_hosted(value: Boolean): Self = this.set("is_externally_hosted", value.asInstanceOf[js.Any])
+    def setIs_externally_hosted(value: Boolean): Self = StObject.set(x, "is_externally_hosted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguagesVarargs(value: String*): Self = this.set("languages", js.Array(value :_*))
+    def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguages(value: js.Array[String]): Self = this.set("languages", value.asInstanceOf[js.Any])
+    def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
     
     @scala.inline
-    def setMedia_type(value: String): Self = this.set("media_type", value.asInstanceOf[js.Any])
+    def setMedia_type(value: String): Self = StObject.set(x, "media_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublisher(value: String): Self = this.set("publisher", value.asInstanceOf[js.Any])
+    def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: show): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: show): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAvailable_marketsVarargs(value: String*): Self = this.set("available_markets", js.Array(value :_*))
-    
-    @scala.inline
-    def setAvailable_markets(value: js.Array[String]): Self = this.set("available_markets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvailable_markets: Self = this.set("available_markets", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

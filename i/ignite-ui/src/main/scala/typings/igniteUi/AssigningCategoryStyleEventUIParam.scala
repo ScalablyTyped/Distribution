@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssigningCategoryStyleEventUIParam extends js.Object {
+trait AssigningCategoryStyleEventUIParam extends StObject {
   
   /**
     * Used to get reference to chart object.
@@ -80,102 +81,90 @@ object AssigningCategoryStyleEventUIParam {
   }
   
   @scala.inline
-  implicit class AssigningCategoryStyleEventUIParamOps[Self <: AssigningCategoryStyleEventUIParam] (val x: Self) extends AnyVal {
+  implicit class AssigningCategoryStyleEventUIParamMutableBuilder[Self <: AssigningCategoryStyleEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChart(value: js.Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndDate(value: js.Any): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChart(value: js.Any): Self = this.set("chart", value.asInstanceOf[js.Any])
+    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
     @scala.inline
-    def deleteChart: Self = this.set("chart", js.undefined)
+    def setEndIndex(value: js.Any): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDate(value: js.Any): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
     
     @scala.inline
-    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    def setFill(value: js.Any): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndIndex(value: js.Any): Self = this.set("endIndex", value.asInstanceOf[js.Any])
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def deleteEndIndex: Self = this.set("endIndex", js.undefined)
+    def setGetItems(value: js.Any): Self = StObject.set(x, "getItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: js.Any): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setGetItemsUndefined: Self = StObject.set(x, "getItems", js.undefined)
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setHasDateRange(value: js.Any): Self = StObject.set(x, "hasDateRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetItems(value: js.Any): Self = this.set("getItems", value.asInstanceOf[js.Any])
+    def setHasDateRangeUndefined: Self = StObject.set(x, "hasDateRange", js.undefined)
     
     @scala.inline
-    def deleteGetItems: Self = this.set("getItems", js.undefined)
+    def setHighlightingHandled(value: js.Any): Self = StObject.set(x, "highlightingHandled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasDateRange(value: js.Any): Self = this.set("hasDateRange", value.asInstanceOf[js.Any])
+    def setHighlightingHandledUndefined: Self = StObject.set(x, "highlightingHandled", js.undefined)
     
     @scala.inline
-    def deleteHasDateRange: Self = this.set("hasDateRange", js.undefined)
+    def setMaxAllSeriesHighlightingProgress(value: js.Any): Self = StObject.set(x, "maxAllSeriesHighlightingProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightingHandled(value: js.Any): Self = this.set("highlightingHandled", value.asInstanceOf[js.Any])
+    def setMaxAllSeriesHighlightingProgressUndefined: Self = StObject.set(x, "maxAllSeriesHighlightingProgress", js.undefined)
     
     @scala.inline
-    def deleteHighlightingHandled: Self = this.set("highlightingHandled", js.undefined)
+    def setOpacity(value: js.Any): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAllSeriesHighlightingProgress(value: js.Any): Self = this.set("maxAllSeriesHighlightingProgress", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteMaxAllSeriesHighlightingProgress: Self = this.set("maxAllSeriesHighlightingProgress", js.undefined)
+    def setSeries(value: js.Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: js.Any): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setStartDate(value: js.Any): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeries(value: js.Any): Self = this.set("series", value.asInstanceOf[js.Any])
+    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
     @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
+    def setStartIndex(value: js.Any): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartDate(value: js.Any): Self = this.set("startDate", value.asInstanceOf[js.Any])
+    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
     
     @scala.inline
-    def deleteStartDate: Self = this.set("startDate", js.undefined)
+    def setStroke(value: js.Any): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartIndex(value: js.Any): Self = this.set("startIndex", value.asInstanceOf[js.Any])
+    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
     @scala.inline
-    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+    def setSumAllSeriesHighlightingProgress(value: js.Any): Self = StObject.set(x, "sumAllSeriesHighlightingProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStroke(value: js.Any): Self = this.set("stroke", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStroke: Self = this.set("stroke", js.undefined)
-    
-    @scala.inline
-    def setSumAllSeriesHighlightingProgress(value: js.Any): Self = this.set("sumAllSeriesHighlightingProgress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSumAllSeriesHighlightingProgress: Self = this.set("sumAllSeriesHighlightingProgress", js.undefined)
+    def setSumAllSeriesHighlightingProgressUndefined: Self = StObject.set(x, "sumAllSeriesHighlightingProgress", js.undefined)
   }
 }

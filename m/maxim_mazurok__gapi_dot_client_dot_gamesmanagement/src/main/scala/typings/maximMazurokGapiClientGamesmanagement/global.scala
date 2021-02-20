@@ -7,37 +7,47 @@ import typings.maximMazurokGapiClientGamesmanagement.gapi.client.gamesmanagement
 import typings.maximMazurokGapiClientGamesmanagement.gapi.client.gamesmanagement.ScoresResource
 import typings.maximMazurokGapiClientGamesmanagement.maximMazurokGapiClientGamesmanagementStrings.gamesmanagement
 import typings.maximMazurokGapiClientGamesmanagement.maximMazurokGapiClientGamesmanagementStrings.v1management
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
-      /** Load Google Play Game Management v1management */
-      def load(name: gamesmanagement, version: v1management): js.Thenable[Unit] = js.native
-      def load(name: gamesmanagement, version: v1management, callback: js.Function0[_]): Unit = js.native
-      
-      @js.native
-      object gamesmanagement extends js.Object {
+      object gamesmanagement {
         
+        @JSGlobal("gapi.client.gamesmanagement.achievements")
+        @js.native
         val achievements: AchievementsResource = js.native
         
+        @JSGlobal("gapi.client.gamesmanagement.applications")
+        @js.native
         val applications: ApplicationsResource = js.native
         
+        @JSGlobal("gapi.client.gamesmanagement.events")
+        @js.native
         val events: EventsResource = js.native
         
+        @JSGlobal("gapi.client.gamesmanagement.players")
+        @js.native
         val players: PlayersResource = js.native
         
+        @JSGlobal("gapi.client.gamesmanagement.scores")
+        @js.native
         val scores: ScoresResource = js.native
       }
+      
+      /** Load Google Play Game Management v1management */
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: gamesmanagement, version: v1management): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: gamesmanagement, version: v1management, callback: js.Function0[_]): Unit = js.native
     }
   }
 }

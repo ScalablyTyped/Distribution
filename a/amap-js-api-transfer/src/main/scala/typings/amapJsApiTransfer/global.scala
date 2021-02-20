@@ -1,17 +1,16 @@
 package typings.amapJsApiTransfer
 
 import typings.amapJsApiTransfer.AMap.Transfer.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object AMap extends js.Object {
+  object AMap {
     
+    @JSGlobal("AMap.Transfer")
     @js.native
     class Transfer protected ()
       extends typings.amapJsApiTransfer.AMap.Transfer {
@@ -22,8 +21,9 @@ object global extends js.Object {
       def this(options: Options) = this()
     }
     
+    @JSGlobal("AMap.TransferPolicy")
     @js.native
-    object TransferPolicy extends js.Object {
+    object TransferPolicy extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.amapJsApiTransfer.AMap.TransferPolicy with Double] = js.native

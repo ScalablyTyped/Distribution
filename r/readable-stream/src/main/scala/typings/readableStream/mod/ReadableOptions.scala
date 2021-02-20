@@ -2,13 +2,14 @@ package typings.readableStream.mod
 
 import typings.node.BufferEncoding
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined readable-stream.readable-stream.ReadableStateOptions & {  read :(this : readable-stream.readable-stream._Readable, size : number): void | undefined,   destroy :(this : readable-stream.readable-stream._Readable, error : std.Error | null, callback : (error : std.Error | null): void): void | undefined} */
 @js.native
-trait ReadableOptions extends js.Object {
+trait ReadableOptions extends StObject {
   
   var defaultEncoding: js.UndefOr[BufferEncoding] = js.native
   
@@ -42,25 +43,13 @@ object ReadableOptions {
   }
   
   @scala.inline
-  implicit class ReadableOptionsOps[Self <: ReadableOptions] (val x: Self) extends AnyVal {
+  implicit class ReadableOptionsMutableBuilder[Self <: ReadableOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultEncoding(value: BufferEncoding): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDefaultEncoding(value: BufferEncoding): Self = this.set("defaultEncoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultEncoding: Self = this.set("defaultEncoding", js.undefined)
+    def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
     
     @scala.inline
     def setDestroy(
@@ -70,45 +59,45 @@ object ReadableOptions {
           /* callback */ js.Function1[/* error */ Error | Null, Unit], 
           Unit
         ]
-    ): Self = this.set("destroy", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     @scala.inline
-    def setEncoding(value: BufferEncoding): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def setHighWaterMark(value: Double): Self = this.set("highWaterMark", value.asInstanceOf[js.Any])
+    def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHighWaterMark: Self = this.set("highWaterMark", js.undefined)
+    def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
     
     @scala.inline
-    def setObjectMode(value: Boolean): Self = this.set("objectMode", value.asInstanceOf[js.Any])
+    def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteObjectMode: Self = this.set("objectMode", js.undefined)
+    def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
     
     @scala.inline
-    def setRead(value: js.ThisFunction1[/* this */ _Readable, /* size */ Double, Unit]): Self = this.set("read", value.asInstanceOf[js.Any])
+    def setRead(value: js.ThisFunction1[/* this */ _Readable, /* size */ Double, Unit]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRead: Self = this.set("read", js.undefined)
+    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
     @scala.inline
-    def setReadableHighWaterMark(value: Double): Self = this.set("readableHighWaterMark", value.asInstanceOf[js.Any])
+    def setReadableHighWaterMark(value: Double): Self = StObject.set(x, "readableHighWaterMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReadableHighWaterMark: Self = this.set("readableHighWaterMark", js.undefined)
+    def setReadableHighWaterMarkUndefined: Self = StObject.set(x, "readableHighWaterMark", js.undefined)
     
     @scala.inline
-    def setReadableObjectMode(value: Boolean): Self = this.set("readableObjectMode", value.asInstanceOf[js.Any])
+    def setReadableObjectMode(value: Boolean): Self = StObject.set(x, "readableObjectMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReadableObjectMode: Self = this.set("readableObjectMode", js.undefined)
+    def setReadableObjectModeUndefined: Self = StObject.set(x, "readableObjectMode", js.undefined)
   }
 }

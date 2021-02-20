@@ -1,13 +1,14 @@
 package typings.k6.htmlMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("k6/html", "Selection")
 @js.native
-abstract class Selection () extends js.Object {
+abstract class Selection () extends StObject {
   
   /**
     * Get the value of an attribute for the first element in the Selection.
@@ -87,7 +88,7 @@ abstract class Selection () extends js.Object {
     * @returns Selected elements.
     */
   def filter(selector: Selection): Selection = js.native
-   // tslint:disable:unified-signatures
+  // tslint:disable:unified-signatures
   /**
     * Reduce the set of matched elements to those that match the selector
     * or pass the function's test.

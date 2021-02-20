@@ -1,5 +1,6 @@
 package typings.ionicCore.stencilPublicRuntimeMod.JSXBase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,87 +49,75 @@ object ButtonHTMLAttributes {
   }
   
   @scala.inline
-  implicit class ButtonHTMLAttributesOps[Self <: ButtonHTMLAttributes[_], T] (val x: Self with ButtonHTMLAttributes[T]) extends AnyVal {
+  implicit class ButtonHTMLAttributesMutableBuilder[Self <: ButtonHTMLAttributes[_], T] (val x: Self with ButtonHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
     
     @scala.inline
-    def setForm(value: String): Self = this.set("form", value.asInstanceOf[js.Any])
+    def setFormEncType(value: String): Self = StObject.set(x, "formEncType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForm: Self = this.set("form", js.undefined)
+    def setFormEncTypeUndefined: Self = StObject.set(x, "formEncType", js.undefined)
     
     @scala.inline
-    def setFormAction(value: String): Self = this.set("formAction", value.asInstanceOf[js.Any])
+    def setFormMethod(value: String): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormAction: Self = this.set("formAction", js.undefined)
+    def setFormMethodUndefined: Self = StObject.set(x, "formMethod", js.undefined)
     
     @scala.inline
-    def setFormEncType(value: String): Self = this.set("formEncType", value.asInstanceOf[js.Any])
+    def setFormNoValidate(value: Boolean): Self = StObject.set(x, "formNoValidate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormEncType: Self = this.set("formEncType", js.undefined)
+    def setFormNoValidateUndefined: Self = StObject.set(x, "formNoValidate", js.undefined)
     
     @scala.inline
-    def setFormMethod(value: String): Self = this.set("formMethod", value.asInstanceOf[js.Any])
+    def setFormTarget(value: String): Self = StObject.set(x, "formTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormMethod: Self = this.set("formMethod", js.undefined)
+    def setFormTargetUndefined: Self = StObject.set(x, "formTarget", js.undefined)
     
     @scala.inline
-    def setFormNoValidate(value: Boolean): Self = this.set("formNoValidate", value.asInstanceOf[js.Any])
+    def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
     @scala.inline
-    def deleteFormNoValidate: Self = this.set("formNoValidate", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormTarget(value: String): Self = this.set("formTarget", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteFormTarget: Self = this.set("formTarget", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setValueVarargs(value: String*): Self = this.set("value", js.Array(value :_*))
-    
-    @scala.inline
-    def setValue(value: String | js.Array[String] | Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

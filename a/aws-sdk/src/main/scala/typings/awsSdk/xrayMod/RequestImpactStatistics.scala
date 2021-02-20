@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestImpactStatistics extends js.Object {
+trait RequestImpactStatistics extends StObject {
   
   /**
     * The number of requests that have resulted in a fault,
@@ -31,36 +32,24 @@ object RequestImpactStatistics {
   }
   
   @scala.inline
-  implicit class RequestImpactStatisticsOps[Self <: RequestImpactStatistics] (val x: Self) extends AnyVal {
+  implicit class RequestImpactStatisticsMutableBuilder[Self <: RequestImpactStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFaultCount(value: NullableLong): Self = StObject.set(x, "FaultCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFaultCountUndefined: Self = StObject.set(x, "FaultCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOkCount(value: NullableLong): Self = StObject.set(x, "OkCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaultCount(value: NullableLong): Self = this.set("FaultCount", value.asInstanceOf[js.Any])
+    def setOkCountUndefined: Self = StObject.set(x, "OkCount", js.undefined)
     
     @scala.inline
-    def deleteFaultCount: Self = this.set("FaultCount", js.undefined)
+    def setTotalCount(value: NullableLong): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOkCount(value: NullableLong): Self = this.set("OkCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOkCount: Self = this.set("OkCount", js.undefined)
-    
-    @scala.inline
-    def setTotalCount(value: NullableLong): Self = this.set("TotalCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalCount: Self = this.set("TotalCount", js.undefined)
+    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
   }
 }

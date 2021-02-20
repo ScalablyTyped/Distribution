@@ -1,11 +1,12 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrinterIccProfiles extends js.Object {
+trait PrinterIccProfiles extends StObject {
   
   var `profile-name`: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object PrinterIccProfiles {
   }
   
   @scala.inline
-  implicit class PrinterIccProfilesOps[Self <: PrinterIccProfiles] (val x: Self) extends AnyVal {
+  implicit class PrinterIccProfilesMutableBuilder[Self <: PrinterIccProfiles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setProfile-name`(value: String): Self = StObject.set(x, "profile-name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setProfile-nameUndefined`: Self = StObject.set(x, "profile-name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setProfile-url`(value: String): Self = StObject.set(x, "profile-url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setProfile-name`(value: String): Self = this.set("profile-name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteProfile-name`: Self = this.set("profile-name", js.undefined)
-    
-    @scala.inline
-    def `setProfile-url`(value: String): Self = this.set("profile-url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteProfile-url`: Self = this.set("profile-url", js.undefined)
+    def `setProfile-urlUndefined`: Self = StObject.set(x, "profile-url", js.undefined)
   }
 }

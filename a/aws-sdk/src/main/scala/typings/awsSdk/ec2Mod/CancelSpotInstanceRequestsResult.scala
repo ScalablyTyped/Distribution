@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CancelSpotInstanceRequestsResult extends js.Object {
+trait CancelSpotInstanceRequestsResult extends StObject {
   
   /**
     * One or more Spot Instance requests.
@@ -21,27 +22,15 @@ object CancelSpotInstanceRequestsResult {
   }
   
   @scala.inline
-  implicit class CancelSpotInstanceRequestsResultOps[Self <: CancelSpotInstanceRequestsResult] (val x: Self) extends AnyVal {
+  implicit class CancelSpotInstanceRequestsResultMutableBuilder[Self <: CancelSpotInstanceRequestsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelledSpotInstanceRequests(value: CancelledSpotInstanceRequestList): Self = StObject.set(x, "CancelledSpotInstanceRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelledSpotInstanceRequestsUndefined: Self = StObject.set(x, "CancelledSpotInstanceRequests", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCancelledSpotInstanceRequestsVarargs(value: CancelledSpotInstanceRequest*): Self = this.set("CancelledSpotInstanceRequests", js.Array(value :_*))
-    
-    @scala.inline
-    def setCancelledSpotInstanceRequests(value: CancelledSpotInstanceRequestList): Self = this.set("CancelledSpotInstanceRequests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCancelledSpotInstanceRequests: Self = this.set("CancelledSpotInstanceRequests", js.undefined)
+    def setCancelledSpotInstanceRequestsVarargs(value: CancelledSpotInstanceRequest*): Self = StObject.set(x, "CancelledSpotInstanceRequests", js.Array(value :_*))
   }
 }

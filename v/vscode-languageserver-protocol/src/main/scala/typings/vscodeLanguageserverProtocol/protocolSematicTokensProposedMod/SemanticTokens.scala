@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SemanticTokens extends js.Object {
+trait SemanticTokens extends StObject {
   
   /**
     * The actual tokens. For a detailed description about how the data is
@@ -22,9 +23,31 @@ trait SemanticTokens extends js.Object {
     */
   var resultId: js.UndefOr[String] = js.native
 }
-@JSImport("vscode-languageserver-protocol/lib/protocol.sematicTokens.proposed", "SemanticTokens")
-@js.native
-object SemanticTokens extends js.Object {
+object SemanticTokens {
   
+  @scala.inline
+  def apply(data: js.Array[Double]): SemanticTokens = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SemanticTokens]
+  }
+  
+  @JSImport("vscode-languageserver-protocol/lib/protocol.sematicTokens.proposed", "SemanticTokens.is")
+  @js.native
   def is(value: js.Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.sematicTokens.proposed.SemanticTokens */ Boolean = js.native
+  
+  @scala.inline
+  implicit class SemanticTokensMutableBuilder[Self <: SemanticTokens] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
+    
+    @scala.inline
+    def setResultId(value: String): Self = StObject.set(x, "resultId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setResultIdUndefined: Self = StObject.set(x, "resultId", js.undefined)
+  }
 }

@@ -6,12 +6,13 @@ import typings.stellarBase.xdrMod.xdr.MuxedAccount
 import typings.stellarBase.xdrMod.xdr.SequenceNumber
 import typings.stellarBase.xdrMod.xdr.TimeBounds
 import typings.stellarBase.xdrMod.xdr.TransactionExt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fee extends js.Object {
+trait Fee extends StObject {
   
   var ext: TransactionExt = js.native
   
@@ -43,45 +44,33 @@ object Fee {
   }
   
   @scala.inline
-  implicit class FeeOps[Self <: Fee] (val x: Self) extends AnyVal {
+  implicit class FeeMutableBuilder[Self <: Fee] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExt(value: TransactionExt): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFee(value: Double): Self = StObject.set(x, "fee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMemo(value: Memo): Self = StObject.set(x, "memo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExt(value: TransactionExt): Self = this.set("ext", value.asInstanceOf[js.Any])
+    def setOperations(value: js.Array[typings.stellarBase.xdrMod.xdr.Operation[Operation]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFee(value: Double): Self = this.set("fee", value.asInstanceOf[js.Any])
+    def setOperationsVarargs(value: typings.stellarBase.xdrMod.xdr.Operation[Operation]*): Self = StObject.set(x, "operations", js.Array(value :_*))
     
     @scala.inline
-    def setMemo(value: Memo): Self = this.set("memo", value.asInstanceOf[js.Any])
+    def setSeqNum(value: SequenceNumber): Self = StObject.set(x, "seqNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationsVarargs(value: typings.stellarBase.xdrMod.xdr.Operation[Operation]*): Self = this.set("operations", js.Array(value :_*))
+    def setSourceAccount(value: MuxedAccount): Self = StObject.set(x, "sourceAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperations(value: js.Array[typings.stellarBase.xdrMod.xdr.Operation[Operation]]): Self = this.set("operations", value.asInstanceOf[js.Any])
+    def setTimeBounds(value: TimeBounds): Self = StObject.set(x, "timeBounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeqNum(value: SequenceNumber): Self = this.set("seqNum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceAccount(value: MuxedAccount): Self = this.set("sourceAccount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeBounds(value: TimeBounds): Self = this.set("timeBounds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeBoundsNull: Self = this.set("timeBounds", null)
+    def setTimeBoundsNull: Self = StObject.set(x, "timeBounds", null)
   }
 }

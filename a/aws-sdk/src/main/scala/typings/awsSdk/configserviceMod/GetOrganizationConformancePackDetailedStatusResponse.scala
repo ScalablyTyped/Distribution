@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetOrganizationConformancePackDetailedStatusResponse extends js.Object {
+trait GetOrganizationConformancePackDetailedStatusResponse extends StObject {
   
   /**
     * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response. 
@@ -26,33 +27,21 @@ object GetOrganizationConformancePackDetailedStatusResponse {
   }
   
   @scala.inline
-  implicit class GetOrganizationConformancePackDetailedStatusResponseOps[Self <: GetOrganizationConformancePackDetailedStatusResponse] (val x: Self) extends AnyVal {
+  implicit class GetOrganizationConformancePackDetailedStatusResponseMutableBuilder[Self <: GetOrganizationConformancePackDetailedStatusResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrganizationConformancePackDetailedStatuses(value: OrganizationConformancePackDetailedStatuses): Self = StObject.set(x, "OrganizationConformancePackDetailedStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setOrganizationConformancePackDetailedStatusesUndefined: Self = StObject.set(x, "OrganizationConformancePackDetailedStatuses", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setOrganizationConformancePackDetailedStatusesVarargs(value: OrganizationConformancePackDetailedStatus*): Self = this.set("OrganizationConformancePackDetailedStatuses", js.Array(value :_*))
-    
-    @scala.inline
-    def setOrganizationConformancePackDetailedStatuses(value: OrganizationConformancePackDetailedStatuses): Self = this.set("OrganizationConformancePackDetailedStatuses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrganizationConformancePackDetailedStatuses: Self = this.set("OrganizationConformancePackDetailedStatuses", js.undefined)
+    def setOrganizationConformancePackDetailedStatusesVarargs(value: OrganizationConformancePackDetailedStatus*): Self = StObject.set(x, "OrganizationConformancePackDetailedStatuses", js.Array(value :_*))
   }
 }

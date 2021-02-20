@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.UI.Core.AnimationMetrics
 
 import typings.winrtUwp.Windows.Foundation.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides methods that enable you to retrieve the parameters of an opacity (fade in or fade out) animation. */
 @js.native
-trait OpacityAnimation extends js.Object {
+trait OpacityAnimation extends StObject {
   
   /** Gets the location of the first control point for the cubic Bézier curve that describes how the opacity should animate over time. */
   var control1: Point = js.native
@@ -48,39 +49,27 @@ object OpacityAnimation {
   }
   
   @scala.inline
-  implicit class OpacityAnimationOps[Self <: OpacityAnimation] (val x: Self) extends AnyVal {
+  implicit class OpacityAnimationMutableBuilder[Self <: OpacityAnimation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControl1(value: Point): Self = StObject.set(x, "control1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControl2(value: Point): Self = StObject.set(x, "control2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControl1(value: Point): Self = this.set("control1", value.asInstanceOf[js.Any])
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControl2(value: Point): Self = this.set("control2", value.asInstanceOf[js.Any])
+    def setFinalOpacity(value: Double): Self = StObject.set(x, "finalOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setInitialOpacity(value: Double): Self = StObject.set(x, "initialOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFinalOpacity(value: Double): Self = this.set("finalOpacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitialOpacity(value: Double): Self = this.set("initialOpacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: PropertyAnimationType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: PropertyAnimationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryInterpretationOptions extends js.Object {
+trait QueryInterpretationOptions extends StObject {
   
   /**
     * Flag to disable natural language (NL) interpretation of queries. Default is false, Set to true to disable natural language interpretation. NL interpretation only applies to
@@ -28,30 +29,18 @@ object QueryInterpretationOptions {
   }
   
   @scala.inline
-  implicit class QueryInterpretationOptionsOps[Self <: QueryInterpretationOptions] (val x: Self) extends AnyVal {
+  implicit class QueryInterpretationOptionsMutableBuilder[Self <: QueryInterpretationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableNlInterpretation(value: Boolean): Self = StObject.set(x, "disableNlInterpretation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableNlInterpretationUndefined: Self = StObject.set(x, "disableNlInterpretation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableVerbatimMode(value: Boolean): Self = StObject.set(x, "enableVerbatimMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableNlInterpretation(value: Boolean): Self = this.set("disableNlInterpretation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisableNlInterpretation: Self = this.set("disableNlInterpretation", js.undefined)
-    
-    @scala.inline
-    def setEnableVerbatimMode(value: Boolean): Self = this.set("enableVerbatimMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableVerbatimMode: Self = this.set("enableVerbatimMode", js.undefined)
+    def setEnableVerbatimModeUndefined: Self = StObject.set(x, "enableVerbatimMode", js.undefined)
   }
 }

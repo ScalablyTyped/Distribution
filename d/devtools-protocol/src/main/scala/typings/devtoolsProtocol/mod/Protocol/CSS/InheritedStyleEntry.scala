@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.CSS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InheritedStyleEntry extends js.Object {
+trait InheritedStyleEntry extends StObject {
   
   /**
     * The ancestor node's inline style, if any, in the style inheritance chain.
@@ -26,30 +27,18 @@ object InheritedStyleEntry {
   }
   
   @scala.inline
-  implicit class InheritedStyleEntryOps[Self <: InheritedStyleEntry] (val x: Self) extends AnyVal {
+  implicit class InheritedStyleEntryMutableBuilder[Self <: InheritedStyleEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInlineStyle(value: CSSStyle): Self = StObject.set(x, "inlineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInlineStyleUndefined: Self = StObject.set(x, "inlineStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatchedCSSRules(value: js.Array[RuleMatch]): Self = StObject.set(x, "matchedCSSRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchedCSSRulesVarargs(value: RuleMatch*): Self = this.set("matchedCSSRules", js.Array(value :_*))
-    
-    @scala.inline
-    def setMatchedCSSRules(value: js.Array[RuleMatch]): Self = this.set("matchedCSSRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInlineStyle(value: CSSStyle): Self = this.set("inlineStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInlineStyle: Self = this.set("inlineStyle", js.undefined)
+    def setMatchedCSSRulesVarargs(value: RuleMatch*): Self = StObject.set(x, "matchedCSSRules", js.Array(value :_*))
   }
 }

@@ -2,16 +2,15 @@ package typings.materialTabBar
 
 import typings.materialTab.typesMod.MDCTabDimensions
 import typings.std.ClientRect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/tab-bar/adapter", JSImport.Namespace)
-@js.native
-object adapterMod extends js.Object {
+object adapterMod {
   
   @js.native
-  trait MDCTabBarAdapter extends js.Object {
+  trait MDCTabBarAdapter extends StObject {
     
     /**
       * Activates the tab at the given index with the given client rect

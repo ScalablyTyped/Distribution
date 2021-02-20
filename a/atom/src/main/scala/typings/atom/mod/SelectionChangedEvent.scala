@@ -1,11 +1,12 @@
 package typings.atom.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelectionChangedEvent extends js.Object {
+trait SelectionChangedEvent extends StObject {
   
   var newBufferRange: Range = js.native
   
@@ -32,33 +33,21 @@ object SelectionChangedEvent {
   }
   
   @scala.inline
-  implicit class SelectionChangedEventOps[Self <: SelectionChangedEvent] (val x: Self) extends AnyVal {
+  implicit class SelectionChangedEventMutableBuilder[Self <: SelectionChangedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewBufferRange(value: Range): Self = StObject.set(x, "newBufferRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewScreenRange(value: Range): Self = StObject.set(x, "newScreenRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOldBufferRange(value: Range): Self = StObject.set(x, "oldBufferRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewBufferRange(value: Range): Self = this.set("newBufferRange", value.asInstanceOf[js.Any])
+    def setOldScreenRange(value: Range): Self = StObject.set(x, "oldScreenRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewScreenRange(value: Range): Self = this.set("newScreenRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldBufferRange(value: Range): Self = this.set("oldBufferRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldScreenRange(value: Range): Self = this.set("oldScreenRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelection(value: Selection): Self = this.set("selection", value.asInstanceOf[js.Any])
+    def setSelection(value: Selection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
   }
 }

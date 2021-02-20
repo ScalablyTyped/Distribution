@@ -1,24 +1,25 @@
 package typings.vis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BorderDashes extends js.Object {
+trait BorderDashes extends StObject {
   
   var borderDashes: js.UndefOr[Boolean | js.Array[Double]] = js.native
   
-   // only for borders
+  // only for borders
   var borderRadius: js.UndefOr[Double] = js.native
   
-       // only for box shape
+  // only for box shape
   var interpolation: js.UndefOr[Boolean] = js.native
   
-    // only for image and circularImage shapes
+  // only for image and circularImage shapes
   var useBorderWithImage: js.UndefOr[Boolean] = js.native
   
-    // only for image and circularImage shapes
+  // only for image and circularImage shapes
   var useImageSize: js.UndefOr[Boolean] = js.native
 }
 object BorderDashes {
@@ -30,51 +31,39 @@ object BorderDashes {
   }
   
   @scala.inline
-  implicit class BorderDashesOps[Self <: BorderDashes] (val x: Self) extends AnyVal {
+  implicit class BorderDashesMutableBuilder[Self <: BorderDashes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderDashes(value: Boolean | js.Array[Double]): Self = StObject.set(x, "borderDashes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderDashesUndefined: Self = StObject.set(x, "borderDashes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderDashesVarargs(value: Double*): Self = StObject.set(x, "borderDashes", js.Array(value :_*))
     
     @scala.inline
-    def setBorderDashesVarargs(value: Double*): Self = this.set("borderDashes", js.Array(value :_*))
+    def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderDashes(value: Boolean | js.Array[Double]): Self = this.set("borderDashes", value.asInstanceOf[js.Any])
+    def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
     @scala.inline
-    def deleteBorderDashes: Self = this.set("borderDashes", js.undefined)
+    def setInterpolation(value: Boolean): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderRadius(value: Double): Self = this.set("borderRadius", value.asInstanceOf[js.Any])
+    def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
     
     @scala.inline
-    def deleteBorderRadius: Self = this.set("borderRadius", js.undefined)
+    def setUseBorderWithImage(value: Boolean): Self = StObject.set(x, "useBorderWithImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterpolation(value: Boolean): Self = this.set("interpolation", value.asInstanceOf[js.Any])
+    def setUseBorderWithImageUndefined: Self = StObject.set(x, "useBorderWithImage", js.undefined)
     
     @scala.inline
-    def deleteInterpolation: Self = this.set("interpolation", js.undefined)
+    def setUseImageSize(value: Boolean): Self = StObject.set(x, "useImageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseBorderWithImage(value: Boolean): Self = this.set("useBorderWithImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseBorderWithImage: Self = this.set("useBorderWithImage", js.undefined)
-    
-    @scala.inline
-    def setUseImageSize(value: Boolean): Self = this.set("useImageSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseImageSize: Self = this.set("useImageSize", js.undefined)
+    def setUseImageSizeUndefined: Self = StObject.set(x, "useImageSize", js.undefined)
   }
 }

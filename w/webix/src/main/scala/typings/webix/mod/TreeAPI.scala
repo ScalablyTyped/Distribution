@@ -1,12 +1,12 @@
 package typings.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeAPI extends js.Object {
+trait TreeAPI extends StObject {
   
   def close(id: String): Unit = js.native
   def close(id: Double): Unit = js.native
@@ -29,6 +29,3 @@ trait TreeAPI extends js.Object {
   
   def setState(state: js.Any): Unit = js.native
 }
-@JSImport("webix", "TreeAPI")
-@js.native
-object TreeAPI extends TopLevel[TreeAPI]

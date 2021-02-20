@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientFirebaserules.anon.Alt
 import typings.maximMazurokGapiClientFirebaserules.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectsResource extends js.Object {
+trait ProjectsResource extends StObject {
   
   var releases: ReleasesResource = js.native
   

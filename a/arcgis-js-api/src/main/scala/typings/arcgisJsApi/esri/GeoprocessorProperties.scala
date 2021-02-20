@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,48 +52,36 @@ object GeoprocessorProperties {
   }
   
   @scala.inline
-  implicit class GeoprocessorPropertiesOps[Self <: GeoprocessorProperties] (val x: Self) extends AnyVal {
+  implicit class GeoprocessorPropertiesMutableBuilder[Self <: GeoprocessorProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProcessExtent(value: ExtentProperties): Self = StObject.set(x, "processExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutSpatialReference(value: SpatialReferenceProperties): Self = this.set("outSpatialReference", value.asInstanceOf[js.Any])
+    def setProcessExtentUndefined: Self = StObject.set(x, "processExtent", js.undefined)
     
     @scala.inline
-    def deleteOutSpatialReference: Self = this.set("outSpatialReference", js.undefined)
+    def setProcessSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "processSpatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessExtent(value: ExtentProperties): Self = this.set("processExtent", value.asInstanceOf[js.Any])
+    def setProcessSpatialReferenceUndefined: Self = StObject.set(x, "processSpatialReference", js.undefined)
     
     @scala.inline
-    def deleteProcessExtent: Self = this.set("processExtent", js.undefined)
+    def setReturnM(value: Boolean): Self = StObject.set(x, "returnM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessSpatialReference(value: SpatialReferenceProperties): Self = this.set("processSpatialReference", value.asInstanceOf[js.Any])
+    def setReturnMUndefined: Self = StObject.set(x, "returnM", js.undefined)
     
     @scala.inline
-    def deleteProcessSpatialReference: Self = this.set("processSpatialReference", js.undefined)
+    def setReturnZ(value: Boolean): Self = StObject.set(x, "returnZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnM(value: Boolean): Self = this.set("returnM", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnM: Self = this.set("returnM", js.undefined)
-    
-    @scala.inline
-    def setReturnZ(value: Boolean): Self = this.set("returnZ", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnZ: Self = this.set("returnZ", js.undefined)
+    def setReturnZUndefined: Self = StObject.set(x, "returnZ", js.undefined)
   }
 }

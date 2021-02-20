@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The ANGLE_instanced_arrays extension is part of the WebGL API and allows to draw the same object, or groups of similar objects multiple times, if they share the same vertex data, primitive count and type. */
 @js.native
-trait ANGLEInstancedArrays extends js.Object {
+trait ANGLEInstancedArrays extends StObject {
   
   val VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE: GLenum = js.native
   
@@ -30,30 +31,18 @@ object ANGLEInstancedArrays {
   }
   
   @scala.inline
-  implicit class ANGLEInstancedArraysOps[Self <: ANGLEInstancedArrays] (val x: Self) extends AnyVal {
+  implicit class ANGLEInstancedArraysMutableBuilder[Self <: ANGLEInstancedArrays] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDrawArraysInstancedANGLE(value: (GLenum, GLint, GLsizei, GLsizei) => Unit): Self = StObject.set(x, "drawArraysInstancedANGLE", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrawElementsInstancedANGLE(value: (GLenum, GLsizei, GLenum, GLintptr, GLsizei) => Unit): Self = StObject.set(x, "drawElementsInstancedANGLE", js.Any.fromFunction5(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE(value: GLenum): Self = StObject.set(x, "VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE(value: GLenum): Self = this.set("VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDrawArraysInstancedANGLE(value: (GLenum, GLint, GLsizei, GLsizei) => Unit): Self = this.set("drawArraysInstancedANGLE", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setDrawElementsInstancedANGLE(value: (GLenum, GLsizei, GLenum, GLintptr, GLsizei) => Unit): Self = this.set("drawElementsInstancedANGLE", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setVertexAttribDivisorANGLE(value: (GLuint, GLuint) => Unit): Self = this.set("vertexAttribDivisorANGLE", js.Any.fromFunction2(value))
+    def setVertexAttribDivisorANGLE(value: (GLuint, GLuint) => Unit): Self = StObject.set(x, "vertexAttribDivisorANGLE", js.Any.fromFunction2(value))
   }
 }

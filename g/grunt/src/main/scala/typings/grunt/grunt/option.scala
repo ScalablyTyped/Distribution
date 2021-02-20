@@ -1,18 +1,17 @@
 package typings.grunt.grunt
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("grunt.option")
-@js.native
-object option extends js.Object {
+object option {
   
   /**
     * {@link http://gruntjs.com/api/grunt.option}
     */
   @js.native
-  trait OptionModule extends js.Object {
+  trait OptionModule extends StObject {
     
     def apply[T](key: String): T = js.native
     /**

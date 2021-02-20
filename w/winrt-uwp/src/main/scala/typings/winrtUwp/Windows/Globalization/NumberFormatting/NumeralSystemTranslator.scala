@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Globalization.NumberFormatting
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Translates digits of the Latin numerical system into digits of another numerical system. */
 @js.native
-trait NumeralSystemTranslator extends js.Object {
+trait NumeralSystemTranslator extends StObject {
   
   /** Gets the BCP-47 language tag(s) used to initialize this NumeralSystemTranslator object. */
   var languages: IVectorView[String] = js.native
@@ -39,30 +40,18 @@ object NumeralSystemTranslator {
   }
   
   @scala.inline
-  implicit class NumeralSystemTranslatorOps[Self <: NumeralSystemTranslator] (val x: Self) extends AnyVal {
+  implicit class NumeralSystemTranslatorMutableBuilder[Self <: NumeralSystemTranslator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguages(value: IVectorView[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNumeralSystem(value: String): Self = StObject.set(x, "numeralSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResolvedLanguage(value: String): Self = StObject.set(x, "resolvedLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguages(value: IVectorView[String]): Self = this.set("languages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumeralSystem(value: String): Self = this.set("numeralSystem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolvedLanguage(value: String): Self = this.set("resolvedLanguage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTranslateNumerals(value: String => String): Self = this.set("translateNumerals", js.Any.fromFunction1(value))
+    def setTranslateNumerals(value: String => String): Self = StObject.set(x, "translateNumerals", js.Any.fromFunction1(value))
   }
 }

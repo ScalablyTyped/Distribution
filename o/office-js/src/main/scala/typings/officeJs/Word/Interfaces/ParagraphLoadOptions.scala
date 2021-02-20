@@ -1,5 +1,6 @@
 package typings.officeJs.Word.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi 1.1]
   */
 @js.native
-trait ParagraphLoadOptions extends js.Object {
+trait ParagraphLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -252,192 +253,180 @@ object ParagraphLoadOptions {
   }
   
   @scala.inline
-  implicit class ParagraphLoadOptionsOps[Self <: ParagraphLoadOptions] (val x: Self) extends AnyVal {
+  implicit class ParagraphLoadOptionsMutableBuilder[Self <: ParagraphLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlignment(value: Boolean): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setFirstLineIndent(value: Boolean): Self = StObject.set(x, "firstLineIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: Boolean): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    def setFirstLineIndentUndefined: Self = StObject.set(x, "firstLineIndent", js.undefined)
     
     @scala.inline
-    def deleteAlignment: Self = this.set("alignment", js.undefined)
+    def setFont(value: FontLoadOptions): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstLineIndent(value: Boolean): Self = this.set("firstLineIndent", value.asInstanceOf[js.Any])
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteFirstLineIndent: Self = this.set("firstLineIndent", js.undefined)
+    def setIsLastParagraph(value: Boolean): Self = StObject.set(x, "isLastParagraph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: FontLoadOptions): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setIsLastParagraphUndefined: Self = StObject.set(x, "isLastParagraph", js.undefined)
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setIsListItem(value: Boolean): Self = StObject.set(x, "isListItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLastParagraph(value: Boolean): Self = this.set("isLastParagraph", value.asInstanceOf[js.Any])
+    def setIsListItemUndefined: Self = StObject.set(x, "isListItem", js.undefined)
     
     @scala.inline
-    def deleteIsLastParagraph: Self = this.set("isLastParagraph", js.undefined)
+    def setLeftIndent(value: Boolean): Self = StObject.set(x, "leftIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsListItem(value: Boolean): Self = this.set("isListItem", value.asInstanceOf[js.Any])
+    def setLeftIndentUndefined: Self = StObject.set(x, "leftIndent", js.undefined)
     
     @scala.inline
-    def deleteIsListItem: Self = this.set("isListItem", js.undefined)
+    def setLineSpacing(value: Boolean): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftIndent(value: Boolean): Self = this.set("leftIndent", value.asInstanceOf[js.Any])
+    def setLineSpacingUndefined: Self = StObject.set(x, "lineSpacing", js.undefined)
     
     @scala.inline
-    def deleteLeftIndent: Self = this.set("leftIndent", js.undefined)
+    def setLineUnitAfter(value: Boolean): Self = StObject.set(x, "lineUnitAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineSpacing(value: Boolean): Self = this.set("lineSpacing", value.asInstanceOf[js.Any])
+    def setLineUnitAfterUndefined: Self = StObject.set(x, "lineUnitAfter", js.undefined)
     
     @scala.inline
-    def deleteLineSpacing: Self = this.set("lineSpacing", js.undefined)
+    def setLineUnitBefore(value: Boolean): Self = StObject.set(x, "lineUnitBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineUnitAfter(value: Boolean): Self = this.set("lineUnitAfter", value.asInstanceOf[js.Any])
+    def setLineUnitBeforeUndefined: Self = StObject.set(x, "lineUnitBefore", js.undefined)
     
     @scala.inline
-    def deleteLineUnitAfter: Self = this.set("lineUnitAfter", js.undefined)
+    def setList(value: ListLoadOptions): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineUnitBefore(value: Boolean): Self = this.set("lineUnitBefore", value.asInstanceOf[js.Any])
+    def setListItem(value: ListItemLoadOptions): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineUnitBefore: Self = this.set("lineUnitBefore", js.undefined)
+    def setListItemOrNullObject(value: ListItemLoadOptions): Self = StObject.set(x, "listItemOrNullObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setList(value: ListLoadOptions): Self = this.set("list", value.asInstanceOf[js.Any])
+    def setListItemOrNullObjectUndefined: Self = StObject.set(x, "listItemOrNullObject", js.undefined)
     
     @scala.inline
-    def deleteList: Self = this.set("list", js.undefined)
+    def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
     
     @scala.inline
-    def setListItem(value: ListItemLoadOptions): Self = this.set("listItem", value.asInstanceOf[js.Any])
+    def setListOrNullObject(value: ListLoadOptions): Self = StObject.set(x, "listOrNullObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListItem: Self = this.set("listItem", js.undefined)
+    def setListOrNullObjectUndefined: Self = StObject.set(x, "listOrNullObject", js.undefined)
     
     @scala.inline
-    def setListItemOrNullObject(value: ListItemLoadOptions): Self = this.set("listItemOrNullObject", value.asInstanceOf[js.Any])
+    def setListUndefined: Self = StObject.set(x, "list", js.undefined)
     
     @scala.inline
-    def deleteListItemOrNullObject: Self = this.set("listItemOrNullObject", js.undefined)
+    def setOutlineLevel(value: Boolean): Self = StObject.set(x, "outlineLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListOrNullObject(value: ListLoadOptions): Self = this.set("listOrNullObject", value.asInstanceOf[js.Any])
+    def setOutlineLevelUndefined: Self = StObject.set(x, "outlineLevel", js.undefined)
     
     @scala.inline
-    def deleteListOrNullObject: Self = this.set("listOrNullObject", js.undefined)
+    def setParentBody(value: BodyLoadOptions): Self = StObject.set(x, "parentBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineLevel(value: Boolean): Self = this.set("outlineLevel", value.asInstanceOf[js.Any])
+    def setParentBodyUndefined: Self = StObject.set(x, "parentBody", js.undefined)
     
     @scala.inline
-    def deleteOutlineLevel: Self = this.set("outlineLevel", js.undefined)
+    def setParentContentControl(value: ContentControlLoadOptions): Self = StObject.set(x, "parentContentControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentBody(value: BodyLoadOptions): Self = this.set("parentBody", value.asInstanceOf[js.Any])
+    def setParentContentControlOrNullObject(value: ContentControlLoadOptions): Self = StObject.set(x, "parentContentControlOrNullObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentBody: Self = this.set("parentBody", js.undefined)
+    def setParentContentControlOrNullObjectUndefined: Self = StObject.set(x, "parentContentControlOrNullObject", js.undefined)
     
     @scala.inline
-    def setParentContentControl(value: ContentControlLoadOptions): Self = this.set("parentContentControl", value.asInstanceOf[js.Any])
+    def setParentContentControlUndefined: Self = StObject.set(x, "parentContentControl", js.undefined)
     
     @scala.inline
-    def deleteParentContentControl: Self = this.set("parentContentControl", js.undefined)
+    def setParentTable(value: TableLoadOptions): Self = StObject.set(x, "parentTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentContentControlOrNullObject(value: ContentControlLoadOptions): Self = this.set("parentContentControlOrNullObject", value.asInstanceOf[js.Any])
+    def setParentTableCell(value: TableCellLoadOptions): Self = StObject.set(x, "parentTableCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentContentControlOrNullObject: Self = this.set("parentContentControlOrNullObject", js.undefined)
+    def setParentTableCellOrNullObject(value: TableCellLoadOptions): Self = StObject.set(x, "parentTableCellOrNullObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentTable(value: TableLoadOptions): Self = this.set("parentTable", value.asInstanceOf[js.Any])
+    def setParentTableCellOrNullObjectUndefined: Self = StObject.set(x, "parentTableCellOrNullObject", js.undefined)
     
     @scala.inline
-    def deleteParentTable: Self = this.set("parentTable", js.undefined)
+    def setParentTableCellUndefined: Self = StObject.set(x, "parentTableCell", js.undefined)
     
     @scala.inline
-    def setParentTableCell(value: TableCellLoadOptions): Self = this.set("parentTableCell", value.asInstanceOf[js.Any])
+    def setParentTableOrNullObject(value: TableLoadOptions): Self = StObject.set(x, "parentTableOrNullObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentTableCell: Self = this.set("parentTableCell", js.undefined)
+    def setParentTableOrNullObjectUndefined: Self = StObject.set(x, "parentTableOrNullObject", js.undefined)
     
     @scala.inline
-    def setParentTableCellOrNullObject(value: TableCellLoadOptions): Self = this.set("parentTableCellOrNullObject", value.asInstanceOf[js.Any])
+    def setParentTableUndefined: Self = StObject.set(x, "parentTable", js.undefined)
     
     @scala.inline
-    def deleteParentTableCellOrNullObject: Self = this.set("parentTableCellOrNullObject", js.undefined)
+    def setRightIndent(value: Boolean): Self = StObject.set(x, "rightIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentTableOrNullObject(value: TableLoadOptions): Self = this.set("parentTableOrNullObject", value.asInstanceOf[js.Any])
+    def setRightIndentUndefined: Self = StObject.set(x, "rightIndent", js.undefined)
     
     @scala.inline
-    def deleteParentTableOrNullObject: Self = this.set("parentTableOrNullObject", js.undefined)
+    def setSpaceAfter(value: Boolean): Self = StObject.set(x, "spaceAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightIndent(value: Boolean): Self = this.set("rightIndent", value.asInstanceOf[js.Any])
+    def setSpaceAfterUndefined: Self = StObject.set(x, "spaceAfter", js.undefined)
     
     @scala.inline
-    def deleteRightIndent: Self = this.set("rightIndent", js.undefined)
+    def setSpaceBefore(value: Boolean): Self = StObject.set(x, "spaceBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfter(value: Boolean): Self = this.set("spaceAfter", value.asInstanceOf[js.Any])
+    def setSpaceBeforeUndefined: Self = StObject.set(x, "spaceBefore", js.undefined)
     
     @scala.inline
-    def deleteSpaceAfter: Self = this.set("spaceAfter", js.undefined)
+    def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceBefore(value: Boolean): Self = this.set("spaceBefore", value.asInstanceOf[js.Any])
+    def setStyleBuiltIn(value: Boolean): Self = StObject.set(x, "styleBuiltIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpaceBefore: Self = this.set("spaceBefore", js.undefined)
+    def setStyleBuiltInUndefined: Self = StObject.set(x, "styleBuiltIn", js.undefined)
     
     @scala.inline
-    def setStyle(value: Boolean): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTableNestingLevel(value: Boolean): Self = StObject.set(x, "tableNestingLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleBuiltIn(value: Boolean): Self = this.set("styleBuiltIn", value.asInstanceOf[js.Any])
+    def setTableNestingLevelUndefined: Self = StObject.set(x, "tableNestingLevel", js.undefined)
     
     @scala.inline
-    def deleteStyleBuiltIn: Self = this.set("styleBuiltIn", js.undefined)
+    def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableNestingLevel(value: Boolean): Self = this.set("tableNestingLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableNestingLevel: Self = this.set("tableNestingLevel", js.undefined)
-    
-    @scala.inline
-    def setText(value: Boolean): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

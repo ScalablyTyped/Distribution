@@ -1,55 +1,184 @@
 package typings.kendoUi.anon
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable2
+import typings.kendoUi.kendo.mobile.ui.ActionSheet
+import typings.kendoUi.kendo.mobile.ui.ActionSheetOptions
+import typings.kendoUi.kendo.mobile.ui.BackButton
+import typings.kendoUi.kendo.mobile.ui.BackButtonOptions
+import typings.kendoUi.kendo.mobile.ui.Badge
+import typings.kendoUi.kendo.mobile.ui.BadgeOptions
+import typings.kendoUi.kendo.mobile.ui.Button
+import typings.kendoUi.kendo.mobile.ui.ButtonGroup
+import typings.kendoUi.kendo.mobile.ui.ButtonGroupOptions
+import typings.kendoUi.kendo.mobile.ui.ButtonOptions
+import typings.kendoUi.kendo.mobile.ui.Collapsible
+import typings.kendoUi.kendo.mobile.ui.CollapsibleOptions
+import typings.kendoUi.kendo.mobile.ui.DetailButton
+import typings.kendoUi.kendo.mobile.ui.DetailButtonOptions
+import typings.kendoUi.kendo.mobile.ui.Drawer
+import typings.kendoUi.kendo.mobile.ui.DrawerOptions
+import typings.kendoUi.kendo.mobile.ui.Layout
+import typings.kendoUi.kendo.mobile.ui.LayoutOptions
+import typings.kendoUi.kendo.mobile.ui.ListView
+import typings.kendoUi.kendo.mobile.ui.ListViewOptions
+import typings.kendoUi.kendo.mobile.ui.Loader
+import typings.kendoUi.kendo.mobile.ui.LoaderOptions
+import typings.kendoUi.kendo.mobile.ui.ModalView
+import typings.kendoUi.kendo.mobile.ui.ModalViewOptions
+import typings.kendoUi.kendo.mobile.ui.NavBar
+import typings.kendoUi.kendo.mobile.ui.NavBarOptions
+import typings.kendoUi.kendo.mobile.ui.Pane
+import typings.kendoUi.kendo.mobile.ui.PaneOptions
+import typings.kendoUi.kendo.mobile.ui.PopOver
+import typings.kendoUi.kendo.mobile.ui.PopOverOptions
+import typings.kendoUi.kendo.mobile.ui.ScrollView
+import typings.kendoUi.kendo.mobile.ui.ScrollViewOptions
+import typings.kendoUi.kendo.mobile.ui.Scroller
+import typings.kendoUi.kendo.mobile.ui.ScrollerOptions
+import typings.kendoUi.kendo.mobile.ui.SplitView
+import typings.kendoUi.kendo.mobile.ui.SplitViewOptions
+import typings.kendoUi.kendo.mobile.ui.Switch
+import typings.kendoUi.kendo.mobile.ui.SwitchOptions
+import typings.kendoUi.kendo.mobile.ui.TabStrip
+import typings.kendoUi.kendo.mobile.ui.TabStripOptions
+import typings.kendoUi.kendo.mobile.ui.View
+import typings.kendoUi.kendo.mobile.ui.ViewOptions
 import typings.kendoUi.kendo.mobile.ui.Widget
+import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofuiActionSheet extends js.Object {
+trait TypeofuiActionSheet extends StObject {
   
-  var ActionSheet: TypeofActionSheet = js.native
+  var ActionSheet: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[ActionSheetOptions], 
+    typings.kendoUi.kendo.mobile.ui.ActionSheet
+  ]) with TypeofActionSheet = js.native
   
-  var BackButton: TypeofBackButton = js.native
+  var BackButton: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[BackButtonOptions], 
+    typings.kendoUi.kendo.mobile.ui.BackButton
+  ]) with TypeofBackButton = js.native
   
-  var Badge: TypeofBadge = js.native
+  var Badge: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[BadgeOptions], 
+    typings.kendoUi.kendo.mobile.ui.Badge
+  ]) with TypeofBadge = js.native
   
-  var Button: TypeofButtonInstantiable = js.native
+  var Button: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[ButtonOptions], 
+    typings.kendoUi.kendo.mobile.ui.Button
+  ]) with TypeofButtonExtend = js.native
   
-  var ButtonGroup: TypeofButtonGroupInstantiable = js.native
+  var ButtonGroup: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[ButtonGroupOptions], 
+    typings.kendoUi.kendo.mobile.ui.ButtonGroup
+  ]) with TypeofButtonGroupExtend = js.native
   
-  var Collapsible: TypeofCollapsible = js.native
+  var Collapsible: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[CollapsibleOptions], 
+    typings.kendoUi.kendo.mobile.ui.Collapsible
+  ]) with TypeofCollapsible = js.native
   
-  var DetailButton: TypeofDetailButton = js.native
+  var DetailButton: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[DetailButtonOptions], 
+    typings.kendoUi.kendo.mobile.ui.DetailButton
+  ]) with TypeofDetailButton = js.native
   
-  var Drawer: TypeofDrawerInstantiable = js.native
+  var Drawer: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[DrawerOptions], 
+    typings.kendoUi.kendo.mobile.ui.Drawer
+  ]) with TypeofDrawerExtend = js.native
   
-  var Layout: TypeofLayout = js.native
+  var Layout: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[LayoutOptions], 
+    typings.kendoUi.kendo.mobile.ui.Layout
+  ]) with TypeofLayout = js.native
   
-  var ListView: TypeofListViewInstantiable = js.native
+  var ListView: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[ListViewOptions], 
+    typings.kendoUi.kendo.mobile.ui.ListView
+  ]) with TypeofListViewExtend = js.native
   
-  var Loader: TypeofLoaderInstantiable = js.native
+  var Loader: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[LoaderOptions], 
+    typings.kendoUi.kendo.mobile.ui.Loader
+  ]) with TypeofLoaderExtend = js.native
   
-  var ModalView: TypeofModalView = js.native
+  var ModalView: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[ModalViewOptions], 
+    typings.kendoUi.kendo.mobile.ui.ModalView
+  ]) with TypeofModalView = js.native
   
-  var NavBar: TypeofNavBar = js.native
+  var NavBar: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[NavBarOptions], 
+    typings.kendoUi.kendo.mobile.ui.NavBar
+  ]) with TypeofNavBar = js.native
   
-  var Pane: TypeofPane = js.native
+  var Pane: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[PaneOptions], 
+    typings.kendoUi.kendo.mobile.ui.Pane
+  ]) with TypeofPane = js.native
   
-  var PopOver: TypeofPopOver = js.native
+  var PopOver: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[PopOverOptions], 
+    typings.kendoUi.kendo.mobile.ui.PopOver
+  ]) with TypeofPopOver = js.native
   
-  var ScrollView: TypeofScrollViewInstantiable = js.native
+  var ScrollView: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[ScrollViewOptions], 
+    typings.kendoUi.kendo.mobile.ui.ScrollView
+  ]) with TypeofScrollViewExtend = js.native
   
-  var Scroller: TypeofScroller = js.native
+  var Scroller: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[ScrollerOptions], 
+    typings.kendoUi.kendo.mobile.ui.Scroller
+  ]) with TypeofScroller = js.native
   
-  var SplitView: TypeofSplitView = js.native
+  var SplitView: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[SplitViewOptions], 
+    typings.kendoUi.kendo.mobile.ui.SplitView
+  ]) with TypeofSplitView = js.native
   
-  var Switch: TypeofSwitchInstantiable = js.native
+  var Switch: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[SwitchOptions], 
+    typings.kendoUi.kendo.mobile.ui.Switch
+  ]) with TypeofSwitchExtend = js.native
   
-  var TabStrip: TypeofTabStripInstantiable = js.native
+  var TabStrip: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[TabStripOptions], 
+    typings.kendoUi.kendo.mobile.ui.TabStrip
+  ]) with TypeofTabStripExtend = js.native
   
-  var View: TypeofView = js.native
+  var View: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[ViewOptions], 
+    typings.kendoUi.kendo.mobile.ui.View
+  ]) with TypeofView = js.native
   
   var Widget: Instantiable0[typings.kendoUi.kendo.mobile.ui.Widget] = js.native
 }
@@ -57,27 +186,27 @@ object TypeofuiActionSheet {
   
   @scala.inline
   def apply(
-    ActionSheet: TypeofActionSheet,
-    BackButton: TypeofBackButton,
-    Badge: TypeofBadge,
-    Button: TypeofButtonInstantiable,
-    ButtonGroup: TypeofButtonGroupInstantiable,
-    Collapsible: TypeofCollapsible,
-    DetailButton: TypeofDetailButton,
-    Drawer: TypeofDrawerInstantiable,
-    Layout: TypeofLayout,
-    ListView: TypeofListViewInstantiable,
-    Loader: TypeofLoaderInstantiable,
-    ModalView: TypeofModalView,
-    NavBar: TypeofNavBar,
-    Pane: TypeofPane,
-    PopOver: TypeofPopOver,
-    ScrollView: TypeofScrollViewInstantiable,
-    Scroller: TypeofScroller,
-    SplitView: TypeofSplitView,
-    Switch: TypeofSwitchInstantiable,
-    TabStrip: TypeofTabStripInstantiable,
-    View: TypeofView,
+    ActionSheet: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ActionSheetOptions], ActionSheet]) with TypeofActionSheet,
+    BackButton: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[BackButtonOptions], BackButton]) with TypeofBackButton,
+    Badge: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[BadgeOptions], Badge]) with TypeofBadge,
+    Button: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ButtonOptions], Button]) with TypeofButtonExtend,
+    ButtonGroup: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ButtonGroupOptions], ButtonGroup]) with TypeofButtonGroupExtend,
+    Collapsible: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[CollapsibleOptions], Collapsible]) with TypeofCollapsible,
+    DetailButton: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[DetailButtonOptions], DetailButton]) with TypeofDetailButton,
+    Drawer: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[DrawerOptions], Drawer]) with TypeofDrawerExtend,
+    Layout: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[LayoutOptions], Layout]) with TypeofLayout,
+    ListView: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ListViewOptions], ListView]) with TypeofListViewExtend,
+    Loader: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[LoaderOptions], Loader]) with TypeofLoaderExtend,
+    ModalView: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ModalViewOptions], ModalView]) with TypeofModalView,
+    NavBar: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[NavBarOptions], NavBar]) with TypeofNavBar,
+    Pane: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[PaneOptions], Pane]) with TypeofPane,
+    PopOver: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[PopOverOptions], PopOver]) with TypeofPopOver,
+    ScrollView: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ScrollViewOptions], ScrollView]) with TypeofScrollViewExtend,
+    Scroller: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ScrollerOptions], Scroller]) with TypeofScroller,
+    SplitView: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[SplitViewOptions], SplitView]) with TypeofSplitView,
+    Switch: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[SwitchOptions], Switch]) with TypeofSwitchExtend,
+    TabStrip: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[TabStripOptions], TabStrip]) with TypeofTabStripExtend,
+    View: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ViewOptions], View]) with TypeofView,
     Widget: Instantiable0[Widget]
   ): TypeofuiActionSheet = {
     val __obj = js.Dynamic.literal(ActionSheet = ActionSheet.asInstanceOf[js.Any], BackButton = BackButton.asInstanceOf[js.Any], Badge = Badge.asInstanceOf[js.Any], Button = Button.asInstanceOf[js.Any], ButtonGroup = ButtonGroup.asInstanceOf[js.Any], Collapsible = Collapsible.asInstanceOf[js.Any], DetailButton = DetailButton.asInstanceOf[js.Any], Drawer = Drawer.asInstanceOf[js.Any], Layout = Layout.asInstanceOf[js.Any], ListView = ListView.asInstanceOf[js.Any], Loader = Loader.asInstanceOf[js.Any], ModalView = ModalView.asInstanceOf[js.Any], NavBar = NavBar.asInstanceOf[js.Any], Pane = Pane.asInstanceOf[js.Any], PopOver = PopOver.asInstanceOf[js.Any], ScrollView = ScrollView.asInstanceOf[js.Any], Scroller = Scroller.asInstanceOf[js.Any], SplitView = SplitView.asInstanceOf[js.Any], Switch = Switch.asInstanceOf[js.Any], TabStrip = TabStrip.asInstanceOf[js.Any], View = View.asInstanceOf[js.Any], Widget = Widget.asInstanceOf[js.Any])
@@ -85,84 +214,114 @@ object TypeofuiActionSheet {
   }
   
   @scala.inline
-  implicit class TypeofuiActionSheetOps[Self <: TypeofuiActionSheet] (val x: Self) extends AnyVal {
+  implicit class TypeofuiActionSheetMutableBuilder[Self <: TypeofuiActionSheet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionSheet(
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ActionSheetOptions], ActionSheet]) with TypeofActionSheet
+    ): Self = StObject.set(x, "ActionSheet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackButton(
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[BackButtonOptions], BackButton]) with TypeofBackButton
+    ): Self = StObject.set(x, "BackButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBadge(
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[BadgeOptions], Badge]) with TypeofBadge
+    ): Self = StObject.set(x, "Badge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionSheet(value: TypeofActionSheet): Self = this.set("ActionSheet", value.asInstanceOf[js.Any])
+    def setButton(
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ButtonOptions], Button]) with TypeofButtonExtend
+    ): Self = StObject.set(x, "Button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackButton(value: TypeofBackButton): Self = this.set("BackButton", value.asInstanceOf[js.Any])
+    def setButtonGroup(
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ButtonGroupOptions], ButtonGroup]) with TypeofButtonGroupExtend
+    ): Self = StObject.set(x, "ButtonGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadge(value: TypeofBadge): Self = this.set("Badge", value.asInstanceOf[js.Any])
+    def setCollapsible(
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[CollapsibleOptions], Collapsible]) with TypeofCollapsible
+    ): Self = StObject.set(x, "Collapsible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: TypeofButtonInstantiable): Self = this.set("Button", value.asInstanceOf[js.Any])
+    def setDetailButton(
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[DetailButtonOptions], DetailButton]) with TypeofDetailButton
+    ): Self = StObject.set(x, "DetailButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonGroup(value: TypeofButtonGroupInstantiable): Self = this.set("ButtonGroup", value.asInstanceOf[js.Any])
+    def setDrawer(
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[DrawerOptions], Drawer]) with TypeofDrawerExtend
+    ): Self = StObject.set(x, "Drawer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapsible(value: TypeofCollapsible): Self = this.set("Collapsible", value.asInstanceOf[js.Any])
+    def setLayout(
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[LayoutOptions], Layout]) with TypeofLayout
+    ): Self = StObject.set(x, "Layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailButton(value: TypeofDetailButton): Self = this.set("DetailButton", value.asInstanceOf[js.Any])
+    def setListView(
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ListViewOptions], ListView]) with TypeofListViewExtend
+    ): Self = StObject.set(x, "ListView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawer(value: TypeofDrawerInstantiable): Self = this.set("Drawer", value.asInstanceOf[js.Any])
+    def setLoader(
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[LoaderOptions], Loader]) with TypeofLoaderExtend
+    ): Self = StObject.set(x, "Loader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: TypeofLayout): Self = this.set("Layout", value.asInstanceOf[js.Any])
+    def setModalView(
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ModalViewOptions], ModalView]) with TypeofModalView
+    ): Self = StObject.set(x, "ModalView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListView(value: TypeofListViewInstantiable): Self = this.set("ListView", value.asInstanceOf[js.Any])
+    def setNavBar(
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[NavBarOptions], NavBar]) with TypeofNavBar
+    ): Self = StObject.set(x, "NavBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoader(value: TypeofLoaderInstantiable): Self = this.set("Loader", value.asInstanceOf[js.Any])
+    def setPane(
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[PaneOptions], Pane]) with TypeofPane
+    ): Self = StObject.set(x, "Pane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModalView(value: TypeofModalView): Self = this.set("ModalView", value.asInstanceOf[js.Any])
+    def setPopOver(
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[PopOverOptions], PopOver]) with TypeofPopOver
+    ): Self = StObject.set(x, "PopOver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavBar(value: TypeofNavBar): Self = this.set("NavBar", value.asInstanceOf[js.Any])
+    def setScrollView(
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ScrollViewOptions], ScrollView]) with TypeofScrollViewExtend
+    ): Self = StObject.set(x, "ScrollView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPane(value: TypeofPane): Self = this.set("Pane", value.asInstanceOf[js.Any])
+    def setScroller(
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ScrollerOptions], Scroller]) with TypeofScroller
+    ): Self = StObject.set(x, "Scroller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopOver(value: TypeofPopOver): Self = this.set("PopOver", value.asInstanceOf[js.Any])
+    def setSplitView(
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[SplitViewOptions], SplitView]) with TypeofSplitView
+    ): Self = StObject.set(x, "SplitView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollView(value: TypeofScrollViewInstantiable): Self = this.set("ScrollView", value.asInstanceOf[js.Any])
+    def setSwitch(
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[SwitchOptions], Switch]) with TypeofSwitchExtend
+    ): Self = StObject.set(x, "Switch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScroller(value: TypeofScroller): Self = this.set("Scroller", value.asInstanceOf[js.Any])
+    def setTabStrip(
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[TabStripOptions], TabStrip]) with TypeofTabStripExtend
+    ): Self = StObject.set(x, "TabStrip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplitView(value: TypeofSplitView): Self = this.set("SplitView", value.asInstanceOf[js.Any])
+    def setView(
+      value: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[ViewOptions], View]) with TypeofView
+    ): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwitch(value: TypeofSwitchInstantiable): Self = this.set("Switch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTabStrip(value: TypeofTabStripInstantiable): Self = this.set("TabStrip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setView(value: TypeofView): Self = this.set("View", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidget(value: Instantiable0[Widget]): Self = this.set("Widget", value.asInstanceOf[js.Any])
+    def setWidget(value: Instantiable0[Widget]): Self = StObject.set(x, "Widget", value.asInstanceOf[js.Any])
   }
 }

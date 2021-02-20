@@ -2,12 +2,13 @@ package typings.natsHemera.mod
 
 import typings.natsHemera.natsHemeraNumbers.`2000`
 import typings.node.streamMod.Stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Config extends js.Object {
+trait Config extends StObject {
   
   var bloomrun: js.UndefOr[BloomrunConfig] = js.native
   
@@ -44,96 +45,84 @@ object Config {
   }
   
   @scala.inline
-  implicit class ConfigOps[Self <: Config] (val x: Self) extends AnyVal {
+  implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBloomrun(value: BloomrunConfig): Self = StObject.set(x, "bloomrun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBloomrunUndefined: Self = StObject.set(x, "bloomrun", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildLogger(value: Boolean): Self = StObject.set(x, "childLogger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBloomrun(value: BloomrunConfig): Self = this.set("bloomrun", value.asInstanceOf[js.Any])
+    def setChildLoggerUndefined: Self = StObject.set(x, "childLogger", js.undefined)
     
     @scala.inline
-    def deleteBloomrun: Self = this.set("bloomrun", js.undefined)
+    def setErrio(value: ErrioConfig): Self = StObject.set(x, "errio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildLogger(value: Boolean): Self = this.set("childLogger", value.asInstanceOf[js.Any])
+    def setErrioUndefined: Self = StObject.set(x, "errio", js.undefined)
     
     @scala.inline
-    def deleteChildLogger: Self = this.set("childLogger", js.undefined)
+    def setLoad(value: LoadConfig): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrio(value: ErrioConfig): Self = this.set("errio", value.asInstanceOf[js.Any])
+    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
     @scala.inline
-    def deleteErrio: Self = this.set("errio", js.undefined)
+    def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoad(value: LoadConfig): Self = this.set("load", value.asInstanceOf[js.Any])
+    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
     @scala.inline
-    def deleteLoad: Self = this.set("load", js.undefined)
+    def setLogger(value: Logger | Stream): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogLevel(value: LogLevel): Self = this.set("logLevel", value.asInstanceOf[js.Any])
+    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
     @scala.inline
-    def deleteLogLevel: Self = this.set("logLevel", js.undefined)
+    def setMaxRecursion(value: Double): Self = StObject.set(x, "maxRecursion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogger(value: Logger | Stream): Self = this.set("logger", value.asInstanceOf[js.Any])
+    def setMaxRecursionUndefined: Self = StObject.set(x, "maxRecursion", js.undefined)
     
     @scala.inline
-    def deleteLogger: Self = this.set("logger", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRecursion(value: Double): Self = this.set("maxRecursion", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMaxRecursion: Self = this.set("maxRecursion", js.undefined)
+    def setPluginTimeout(value: Double): Self = StObject.set(x, "pluginTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPluginTimeoutUndefined: Self = StObject.set(x, "pluginTimeout", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPrettyLog(value: Boolean): Self = StObject.set(x, "prettyLog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPluginTimeout(value: Double): Self = this.set("pluginTimeout", value.asInstanceOf[js.Any])
+    def setPrettyLogUndefined: Self = StObject.set(x, "prettyLog", js.undefined)
     
     @scala.inline
-    def deletePluginTimeout: Self = this.set("pluginTimeout", js.undefined)
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrettyLog(value: Boolean): Self = this.set("prettyLog", value.asInstanceOf[js.Any])
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
     @scala.inline
-    def deletePrettyLog: Self = this.set("prettyLog", js.undefined)
+    def setTimeout(value: Double | `2000`): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
+    def setTraceLog(value: Boolean): Self = StObject.set(x, "traceLog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double | `2000`): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setTraceLog(value: Boolean): Self = this.set("traceLog", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraceLog: Self = this.set("traceLog", js.undefined)
+    def setTraceLogUndefined: Self = StObject.set(x, "traceLog", js.undefined)
   }
 }

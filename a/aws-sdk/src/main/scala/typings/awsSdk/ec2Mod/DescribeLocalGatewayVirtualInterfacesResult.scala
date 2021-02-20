@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeLocalGatewayVirtualInterfacesResult extends js.Object {
+trait DescribeLocalGatewayVirtualInterfacesResult extends StObject {
   
   /**
     * Information about the virtual interfaces.
@@ -26,33 +27,21 @@ object DescribeLocalGatewayVirtualInterfacesResult {
   }
   
   @scala.inline
-  implicit class DescribeLocalGatewayVirtualInterfacesResultOps[Self <: DescribeLocalGatewayVirtualInterfacesResult] (val x: Self) extends AnyVal {
+  implicit class DescribeLocalGatewayVirtualInterfacesResultMutableBuilder[Self <: DescribeLocalGatewayVirtualInterfacesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalGatewayVirtualInterfaces(value: LocalGatewayVirtualInterfaceSet): Self = StObject.set(x, "LocalGatewayVirtualInterfaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalGatewayVirtualInterfacesUndefined: Self = StObject.set(x, "LocalGatewayVirtualInterfaces", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalGatewayVirtualInterfacesVarargs(value: LocalGatewayVirtualInterface*): Self = StObject.set(x, "LocalGatewayVirtualInterfaces", js.Array(value :_*))
     
     @scala.inline
-    def setLocalGatewayVirtualInterfacesVarargs(value: LocalGatewayVirtualInterface*): Self = this.set("LocalGatewayVirtualInterfaces", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalGatewayVirtualInterfaces(value: LocalGatewayVirtualInterfaceSet): Self = this.set("LocalGatewayVirtualInterfaces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocalGatewayVirtualInterfaces: Self = this.set("LocalGatewayVirtualInterfaces", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

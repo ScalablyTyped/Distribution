@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVision.gapi.client.vision
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnnotateFileRequest extends js.Object {
+trait AnnotateFileRequest extends StObject {
   
   /** Required. Requested features. */
   var features: js.UndefOr[js.Array[Feature]] = js.native
@@ -32,48 +33,36 @@ object AnnotateFileRequest {
   }
   
   @scala.inline
-  implicit class AnnotateFileRequestOps[Self <: AnnotateFileRequest] (val x: Self) extends AnyVal {
+  implicit class AnnotateFileRequestMutableBuilder[Self <: AnnotateFileRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeatures(value: js.Array[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "features", js.Array(value :_*))
     
     @scala.inline
-    def setFeaturesVarargs(value: Feature*): Self = this.set("features", js.Array(value :_*))
+    def setImageContext(value: ImageContext): Self = StObject.set(x, "imageContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: js.Array[Feature]): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setImageContextUndefined: Self = StObject.set(x, "imageContext", js.undefined)
     
     @scala.inline
-    def deleteFeatures: Self = this.set("features", js.undefined)
+    def setInputConfig(value: InputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageContext(value: ImageContext): Self = this.set("imageContext", value.asInstanceOf[js.Any])
+    def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
     
     @scala.inline
-    def deleteImageContext: Self = this.set("imageContext", js.undefined)
+    def setPages(value: js.Array[Double]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputConfig(value: InputConfig): Self = this.set("inputConfig", value.asInstanceOf[js.Any])
+    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
     @scala.inline
-    def deleteInputConfig: Self = this.set("inputConfig", js.undefined)
-    
-    @scala.inline
-    def setPagesVarargs(value: Double*): Self = this.set("pages", js.Array(value :_*))
-    
-    @scala.inline
-    def setPages(value: js.Array[Double]): Self = this.set("pages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePages: Self = this.set("pages", js.undefined)
+    def setPagesVarargs(value: Double*): Self = StObject.set(x, "pages", js.Array(value :_*))
   }
 }

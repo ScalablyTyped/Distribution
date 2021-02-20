@@ -2,12 +2,13 @@ package typings.chartJs.mod
 
 import typings.moment.mod.Moment
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartPoint extends js.Object {
+trait ChartPoint extends StObject {
   
   var r: js.UndefOr[Double] = js.native
   
@@ -26,42 +27,30 @@ object ChartPoint {
   }
   
   @scala.inline
-  implicit class ChartPointOps[Self <: ChartPoint] (val x: Self) extends AnyVal {
+  implicit class ChartPointMutableBuilder[Self <: ChartPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setT(value: Double | String | Date | Moment): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setR(value: Double): Self = this.set("r", value.asInstanceOf[js.Any])
+    def setTUndefined: Self = StObject.set(x, "t", js.undefined)
     
     @scala.inline
-    def deleteR: Self = this.set("r", js.undefined)
+    def setX(value: Double | String | Date | Moment): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setT(value: Double | String | Date | Moment): Self = this.set("t", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteT: Self = this.set("t", js.undefined)
+    def setY(value: Double | String | Date | Moment): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double | String | Date | Moment): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setY(value: Double | String | Date | Moment): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

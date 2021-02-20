@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionalinventoryCustomBatchRequestEntry extends js.Object {
+trait RegionalinventoryCustomBatchRequestEntry extends StObject {
   
   /** An entry ID, unique within the batch request. */
   var batchId: js.UndefOr[Double] = js.native
@@ -31,48 +32,36 @@ object RegionalinventoryCustomBatchRequestEntry {
   }
   
   @scala.inline
-  implicit class RegionalinventoryCustomBatchRequestEntryOps[Self <: RegionalinventoryCustomBatchRequestEntry] (val x: Self) extends AnyVal {
+  implicit class RegionalinventoryCustomBatchRequestEntryMutableBuilder[Self <: RegionalinventoryCustomBatchRequestEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchId(value: Double): Self = this.set("batchId", value.asInstanceOf[js.Any])
+    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
     @scala.inline
-    def deleteBatchId: Self = this.set("batchId", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerchantId(value: String): Self = this.set("merchantId", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteMerchantId: Self = this.set("merchantId", js.undefined)
+    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setRegionalInventory(value: RegionalInventory): Self = StObject.set(x, "regionalInventory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductId: Self = this.set("productId", js.undefined)
-    
-    @scala.inline
-    def setRegionalInventory(value: RegionalInventory): Self = this.set("regionalInventory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegionalInventory: Self = this.set("regionalInventory", js.undefined)
+    def setRegionalInventoryUndefined: Self = StObject.set(x, "regionalInventory", js.undefined)
   }
 }

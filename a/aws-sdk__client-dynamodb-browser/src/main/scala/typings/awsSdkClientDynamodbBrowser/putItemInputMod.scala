@@ -1,12 +1,13 @@
 package typings.awsSdkClientDynamodbBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/model/PutItemInput", JSImport.Namespace)
-@js.native
-object putItemInputMod extends js.Object {
+object putItemInputMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-browser/model/PutItemInput", "PutItemInput")
+  @js.native
   val PutItemInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

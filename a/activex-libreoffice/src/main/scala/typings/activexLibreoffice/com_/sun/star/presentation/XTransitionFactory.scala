@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.presentation
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.rendering.XBitmap
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,24 +53,12 @@ object XTransitionFactory {
   }
   
   @scala.inline
-  implicit class XTransitionFactoryOps[Self <: XTransitionFactory] (val x: Self) extends AnyVal {
+  implicit class XTransitionFactoryMutableBuilder[Self <: XTransitionFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTransition(value: (Double, Double, XSlideShowView, XBitmap, XBitmap) => XTransition): Self = StObject.set(x, "createTransition", js.Any.fromFunction5(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateTransition(value: (Double, Double, XSlideShowView, XBitmap, XBitmap) => XTransition): Self = this.set("createTransition", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setHasTransition(value: (Double, Double) => Boolean): Self = this.set("hasTransition", js.Any.fromFunction2(value))
+    def setHasTransition(value: (Double, Double) => Boolean): Self = StObject.set(x, "hasTransition", js.Any.fromFunction2(value))
   }
 }

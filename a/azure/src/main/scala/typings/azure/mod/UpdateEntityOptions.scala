@@ -1,5 +1,6 @@
 package typings.azure.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,24 +19,12 @@ object UpdateEntityOptions {
   }
   
   @scala.inline
-  implicit class UpdateEntityOptionsOps[Self <: UpdateEntityOptions] (val x: Self) extends AnyVal {
+  implicit class UpdateEntityOptionsMutableBuilder[Self <: UpdateEntityOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckEtag(value: Boolean): Self = StObject.set(x, "checkEtag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCheckEtag(value: Boolean): Self = this.set("checkEtag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCheckEtag: Self = this.set("checkEtag", js.undefined)
+    def setCheckEtagUndefined: Self = StObject.set(x, "checkEtag", js.undefined)
   }
 }

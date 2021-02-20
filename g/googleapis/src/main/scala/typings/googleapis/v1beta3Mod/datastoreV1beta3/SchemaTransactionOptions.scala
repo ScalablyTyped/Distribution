@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta3Mod.datastoreV1beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * setting ReadOptions.new_transaction in read requests.
   */
 @js.native
-trait SchemaTransactionOptions extends js.Object {
+trait SchemaTransactionOptions extends StObject {
   
   /**
     * The transaction should only allow reads.
@@ -31,30 +32,18 @@ object SchemaTransactionOptions {
   }
   
   @scala.inline
-  implicit class SchemaTransactionOptionsOps[Self <: SchemaTransactionOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaTransactionOptionsMutableBuilder[Self <: SchemaTransactionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReadOnly(value: SchemaReadOnly): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadWrite(value: SchemaReadWrite): Self = StObject.set(x, "readWrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: SchemaReadOnly): Self = this.set("readOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
-    
-    @scala.inline
-    def setReadWrite(value: SchemaReadWrite): Self = this.set("readWrite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadWrite: Self = this.set("readWrite", js.undefined)
+    def setReadWriteUndefined: Self = StObject.set(x, "readWrite", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.luxon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.luxon.luxonStrings.thai
   - typings.luxon.luxonStrings.tibt
 */
-trait NumberingSystem extends js.Object
+trait NumberingSystem extends StObject
 object NumberingSystem {
   
   @scala.inline

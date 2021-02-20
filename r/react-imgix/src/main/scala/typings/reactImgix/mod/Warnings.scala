@@ -1,5 +1,6 @@
 package typings.reactImgix.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactImgix.reactImgixStrings.sizesAttribute
   - typings.reactImgix.reactImgixStrings.invalidARFormat
 */
-trait Warnings extends js.Object
+trait Warnings extends StObject
 object Warnings {
   
   @scala.inline

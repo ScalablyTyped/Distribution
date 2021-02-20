@@ -10,6 +10,7 @@ import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`4`
 import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`512`
 import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`64`
 import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`1`
   - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`2`
 */
-trait FAX_ACCESS_RIGHTS_ENUM_2 extends js.Object
+trait FAX_ACCESS_RIGHTS_ENUM_2 extends StObject
 object FAX_ACCESS_RIGHTS_ENUM_2 {
   
   @scala.inline

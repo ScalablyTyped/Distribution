@@ -1,32 +1,16 @@
 package typings.mobservable
 
-import org.scalablytyped.runtime.TopLevel
 import typings.mobservable.interfacesMod.IContextInfoStruct
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobservable/lib/dnode", JSImport.Namespace)
-@js.native
-object dnodeMod extends js.Object {
+object dnodeMod {
   
-  def checkIfStateIsBeingModifiedDuringView(context: IContextInfoStruct): Unit = js.native
-  
-  def isComputingView(): Boolean = js.native
-  
-  def isInTransaction(): Boolean = js.native
-  
-  def runAfterTransaction(action: js.Function0[Unit]): Unit = js.native
-  
-  def stackDepth(): js.Any = js.native
-  
-  def transaction[T](action: js.Function0[T]): T = js.native
-  def transaction[T](action: js.Function0[T], thisArg: js.Any): T = js.native
-  
-  def untracked[T](action: js.Function0[T]): T = js.native
-  
+  @JSImport("mobservable/lib/dnode", "DataNode")
   @js.native
-  class DataNode protected () extends js.Object {
+  class DataNode protected () extends StObject {
     def this(context: IContextInfoStruct) = this()
     
     def addObserver(node: ViewNode): Unit = js.native
@@ -60,31 +44,31 @@ object dnodeMod extends js.Object {
   }
   
   @js.native
-  sealed trait NodeState extends js.Object
+  sealed trait NodeState extends StObject
+  @JSImport("mobservable/lib/dnode", "NodeState")
   @js.native
-  object NodeState extends js.Object {
+  object NodeState extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[NodeState with Double] = js.native
     
     @js.native
     sealed trait PENDING extends NodeState
-    /* 1 */ @js.native
-    object PENDING extends TopLevel[PENDING with Double]
+    /* 1 */ val PENDING: typings.mobservable.dnodeMod.NodeState.PENDING with Double = js.native
     
     @js.native
     sealed trait READY extends NodeState
-    /* 2 */ @js.native
-    object READY extends TopLevel[READY with Double]
+    /* 2 */ val READY: typings.mobservable.dnodeMod.NodeState.READY with Double = js.native
     
     @js.native
     sealed trait STALE extends NodeState
-    /* 0 */ @js.native
-    object STALE extends TopLevel[STALE with Double]
+    /* 0 */ val STALE: typings.mobservable.dnodeMod.NodeState.STALE with Double = js.native
   }
   
+  @JSImport("mobservable/lib/dnode", "ViewNode")
   @js.native
-  class ViewNode () extends DataNode {
+  class ViewNode protected () extends DataNode {
+    def this(context: IContextInfoStruct) = this()
     
     /* private */ def bindDependencies(): js.Any = js.native
     
@@ -118,4 +102,35 @@ object dnodeMod extends js.Object {
     
     def wakeUp(): Unit = js.native
   }
+  
+  @JSImport("mobservable/lib/dnode", "checkIfStateIsBeingModifiedDuringView")
+  @js.native
+  def checkIfStateIsBeingModifiedDuringView(context: IContextInfoStruct): Unit = js.native
+  
+  @JSImport("mobservable/lib/dnode", "isComputingView")
+  @js.native
+  def isComputingView(): Boolean = js.native
+  
+  @JSImport("mobservable/lib/dnode", "isInTransaction")
+  @js.native
+  def isInTransaction(): Boolean = js.native
+  
+  @JSImport("mobservable/lib/dnode", "runAfterTransaction")
+  @js.native
+  def runAfterTransaction(action: js.Function0[Unit]): Unit = js.native
+  
+  @JSImport("mobservable/lib/dnode", "stackDepth")
+  @js.native
+  def stackDepth(): js.Any = js.native
+  
+  @JSImport("mobservable/lib/dnode", "transaction")
+  @js.native
+  def transaction[T](action: js.Function0[T]): T = js.native
+  @JSImport("mobservable/lib/dnode", "transaction")
+  @js.native
+  def transaction[T](action: js.Function0[T], thisArg: js.Any): T = js.native
+  
+  @JSImport("mobservable/lib/dnode", "untracked")
+  @js.native
+  def untracked[T](action: js.Function0[T]): T = js.native
 }

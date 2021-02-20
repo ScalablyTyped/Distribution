@@ -1,5 +1,6 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,9 +35,15 @@ class FlowPanelModel () extends PanelModel {
   def produceHtml(): String = js.native
 }
 /* static members */
-@JSImport("survey-knockout", "FlowPanelModel")
-@js.native
-object FlowPanelModel extends js.Object {
+object FlowPanelModel {
   
-  var contentElementNamePrefix: String = js.native
+  @JSImport("survey-knockout", "FlowPanelModel")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("survey-knockout", "FlowPanelModel.contentElementNamePrefix")
+  @js.native
+  def contentElementNamePrefix: String = js.native
+  @scala.inline
+  def contentElementNamePrefix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contentElementNamePrefix")(x.asInstanceOf[js.Any])
 }

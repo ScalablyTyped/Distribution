@@ -1,6 +1,7 @@
 package typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A Change indicates the most recent state of an element.
   */
 @js.native
-trait SchemaGoogleWatcherV1Change extends js.Object {
+trait SchemaGoogleWatcherV1Change extends StObject {
   
   /**
     * If true, this Change is followed by more Changes that are in the same
@@ -54,48 +55,36 @@ object SchemaGoogleWatcherV1Change {
   }
   
   @scala.inline
-  implicit class SchemaGoogleWatcherV1ChangeOps[Self <: SchemaGoogleWatcherV1Change] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleWatcherV1ChangeMutableBuilder[Self <: SchemaGoogleWatcherV1Change] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinued(value: Boolean): Self = StObject.set(x, "continued", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContinuedUndefined: Self = StObject.set(x, "continued", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinued(value: Boolean): Self = this.set("continued", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteContinued: Self = this.set("continued", js.undefined)
+    def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: StringDictionary[js.Any]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setResumeMarker(value: String): Self = StObject.set(x, "resumeMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: String): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setResumeMarkerUndefined: Self = StObject.set(x, "resumeMarker", js.undefined)
     
     @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResumeMarker(value: String): Self = this.set("resumeMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResumeMarker: Self = this.set("resumeMarker", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

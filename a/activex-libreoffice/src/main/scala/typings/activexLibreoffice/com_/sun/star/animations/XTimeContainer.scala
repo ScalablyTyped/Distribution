@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,33 +64,21 @@ object XTimeContainer {
   }
   
   @scala.inline
-  implicit class XTimeContainerOps[Self <: XTimeContainer] (val x: Self) extends AnyVal {
+  implicit class XTimeContainerMutableBuilder[Self <: XTimeContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendChild(value: XAnimationNode => XAnimationNode): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsertAfter(value: (XAnimationNode, XAnimationNode) => XAnimationNode): Self = StObject.set(x, "insertAfter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertBefore(value: (XAnimationNode, XAnimationNode) => XAnimationNode): Self = StObject.set(x, "insertBefore", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAppendChild(value: XAnimationNode => XAnimationNode): Self = this.set("appendChild", js.Any.fromFunction1(value))
+    def setRemoveChild(value: XAnimationNode => XAnimationNode): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsertAfter(value: (XAnimationNode, XAnimationNode) => XAnimationNode): Self = this.set("insertAfter", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setInsertBefore(value: (XAnimationNode, XAnimationNode) => XAnimationNode): Self = this.set("insertBefore", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemoveChild(value: XAnimationNode => XAnimationNode): Self = this.set("removeChild", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReplaceChild(value: (XAnimationNode, XAnimationNode) => XAnimationNode): Self = this.set("replaceChild", js.Any.fromFunction2(value))
+    def setReplaceChild(value: (XAnimationNode, XAnimationNode) => XAnimationNode): Self = StObject.set(x, "replaceChild", js.Any.fromFunction2(value))
   }
 }

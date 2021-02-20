@@ -1,12 +1,13 @@
 package typings.dateFormatJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Internationalization strings
 @js.native
-trait DateFormatI18n extends js.Object {
+trait DateFormatI18n extends StObject {
   
   var dayNames: js.Array[String] = js.native
   
@@ -21,30 +22,18 @@ object DateFormatI18n {
   }
   
   @scala.inline
-  implicit class DateFormatI18nOps[Self <: DateFormatI18n] (val x: Self) extends AnyVal {
+  implicit class DateFormatI18nMutableBuilder[Self <: DateFormatI18n] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDayNames(value: js.Array[String]): Self = StObject.set(x, "dayNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMonthNames(value: js.Array[String]): Self = StObject.set(x, "monthNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayNamesVarargs(value: String*): Self = this.set("dayNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setDayNames(value: js.Array[String]): Self = this.set("dayNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMonthNamesVarargs(value: String*): Self = this.set("monthNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setMonthNames(value: js.Array[String]): Self = this.set("monthNames", value.asInstanceOf[js.Any])
+    def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
   }
 }

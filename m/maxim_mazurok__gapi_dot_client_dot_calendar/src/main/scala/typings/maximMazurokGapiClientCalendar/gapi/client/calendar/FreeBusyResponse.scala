@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FreeBusyResponse extends js.Object {
+trait FreeBusyResponse extends StObject {
   
   /** List of free/busy information for calendars. */
   var calendars: js.UndefOr[
@@ -40,56 +41,44 @@ object FreeBusyResponse {
   }
   
   @scala.inline
-  implicit class FreeBusyResponseOps[Self <: FreeBusyResponse] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class FreeBusyResponseMutableBuilder[Self <: FreeBusyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setCalendars(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.FreeBusyCalendar}
       */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.FreeBusyResponse with TopLevel[js.Any]
-    ): Self = this.set("calendars", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCalendars: Self = this.set("calendars", js.undefined)
+    def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
     
     @scala.inline
     def setGroups(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.FreeBusyGroup}
       */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.FreeBusyResponse with TopLevel[js.Any]
-    ): Self = this.set("groups", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroups: Self = this.set("groups", js.undefined)
+    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def setTimeMax(value: String): Self = this.set("timeMax", value.asInstanceOf[js.Any])
+    def setTimeMax(value: String): Self = StObject.set(x, "timeMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeMax: Self = this.set("timeMax", js.undefined)
+    def setTimeMaxUndefined: Self = StObject.set(x, "timeMax", js.undefined)
     
     @scala.inline
-    def setTimeMin(value: String): Self = this.set("timeMin", value.asInstanceOf[js.Any])
+    def setTimeMin(value: String): Self = StObject.set(x, "timeMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeMin: Self = this.set("timeMin", js.undefined)
+    def setTimeMinUndefined: Self = StObject.set(x, "timeMin", js.undefined)
   }
 }

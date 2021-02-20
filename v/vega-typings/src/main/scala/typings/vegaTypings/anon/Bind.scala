@@ -4,12 +4,13 @@ import typings.vegaTypings.configMod.DefaultsConfig
 import typings.vegaTypings.vegaTypingsStrings.any
 import typings.vegaTypings.vegaTypingsStrings.container
 import typings.vegaTypings.vegaTypingsStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bind extends js.Object {
+trait Bind extends StObject {
   
   var bind: js.UndefOr[any | container | none] = js.native
   
@@ -34,69 +35,57 @@ object Bind {
   }
   
   @scala.inline
-  implicit class BindOps[Self <: Bind] (val x: Self) extends AnyVal {
+  implicit class BindMutableBuilder[Self <: Bind] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBind(value: any | container | none): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaults(value: DefaultsConfig): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBind(value: any | container | none): Self = this.set("bind", value.asInstanceOf[js.Any])
+    def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
     
     @scala.inline
-    def deleteBind: Self = this.set("bind", js.undefined)
+    def setGlobalCursor(value: Boolean): Self = StObject.set(x, "globalCursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaults(value: DefaultsConfig): Self = this.set("defaults", value.asInstanceOf[js.Any])
+    def setGlobalCursorUndefined: Self = StObject.set(x, "globalCursor", js.undefined)
     
     @scala.inline
-    def deleteDefaults: Self = this.set("defaults", js.undefined)
+    def setSelector(value: Boolean | js.Array[String]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalCursor(value: Boolean): Self = this.set("globalCursor", value.asInstanceOf[js.Any])
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
     @scala.inline
-    def deleteGlobalCursor: Self = this.set("globalCursor", js.undefined)
+    def setSelectorVarargs(value: String*): Self = StObject.set(x, "selector", js.Array(value :_*))
     
     @scala.inline
-    def setSelectorVarargs(value: String*): Self = this.set("selector", js.Array(value :_*))
+    def setTimer(value: Boolean): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: Boolean | js.Array[String]): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setTimerUndefined: Self = StObject.set(x, "timer", js.undefined)
     
     @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setView(value: Boolean | js.Array[String]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimer(value: Boolean): Self = this.set("timer", value.asInstanceOf[js.Any])
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
     @scala.inline
-    def deleteTimer: Self = this.set("timer", js.undefined)
+    def setViewVarargs(value: String*): Self = StObject.set(x, "view", js.Array(value :_*))
     
     @scala.inline
-    def setViewVarargs(value: String*): Self = this.set("view", js.Array(value :_*))
+    def setWindow(value: Boolean | js.Array[String]): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setView(value: Boolean | js.Array[String]): Self = this.set("view", value.asInstanceOf[js.Any])
+    def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     
     @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
-    
-    @scala.inline
-    def setWindowVarargs(value: String*): Self = this.set("window", js.Array(value :_*))
-    
-    @scala.inline
-    def setWindow(value: Boolean | js.Array[String]): Self = this.set("window", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindow: Self = this.set("window", js.undefined)
+    def setWindowVarargs(value: String*): Self = StObject.set(x, "window", js.Array(value :_*))
   }
 }

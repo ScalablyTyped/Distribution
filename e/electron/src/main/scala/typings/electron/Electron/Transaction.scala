@@ -5,12 +5,13 @@ import typings.electron.electronStrings.failed
 import typings.electron.electronStrings.purchased
 import typings.electron.electronStrings.purchasing
 import typings.electron.electronStrings.restored
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Transaction extends js.Object {
+trait Transaction extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/transaction
   /**
@@ -63,39 +64,27 @@ object Transaction {
   }
   
   @scala.inline
-  implicit class TransactionOps[Self <: Transaction] (val x: Self) extends AnyVal {
+  implicit class TransactionMutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginalTransactionIdentifier(value: String): Self = StObject.set(x, "originalTransactionIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: Double): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    def setPayment(value: Payment): Self = StObject.set(x, "payment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setTransactionDate(value: String): Self = StObject.set(x, "transactionDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalTransactionIdentifier(value: String): Self = this.set("originalTransactionIdentifier", value.asInstanceOf[js.Any])
+    def setTransactionIdentifier(value: String): Self = StObject.set(x, "transactionIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayment(value: Payment): Self = this.set("payment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransactionDate(value: String): Self = this.set("transactionDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransactionIdentifier(value: String): Self = this.set("transactionIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransactionState(value: purchasing | purchased | failed | restored | deferred): Self = this.set("transactionState", value.asInstanceOf[js.Any])
+    def setTransactionState(value: purchasing | purchased | failed | restored | deferred): Self = StObject.set(x, "transactionState", value.asInstanceOf[js.Any])
   }
 }

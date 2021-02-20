@@ -1,16 +1,22 @@
 package typings.primereact
 
 import typings.primereact.rowMod.RowProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("primereact/row", JSImport.Namespace)
-@js.native
-object primereactRowMod extends js.Object {
+object primereactRowMod {
   
+  @JSImport("primereact/row", "Row")
   @js.native
-  class Row ()
-    extends Component[RowProps, js.Any, js.Any]
+  class Row protected ()
+    extends typings.primereact.rowMod.Row {
+    def this(props: RowProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: RowProps, context: js.Any) = this()
+  }
 }

@@ -1,11 +1,12 @@
 package typings.raphael.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RaphaelFontFace extends js.Object {
+trait RaphaelFontFace extends StObject {
   
   /**
     * The ascent property of this font, such as `270`.
@@ -119,57 +120,45 @@ object RaphaelFontFace {
   }
   
   @scala.inline
-  implicit class RaphaelFontFaceOps[Self <: RaphaelFontFace] (val x: Self) extends AnyVal {
+  implicit class RaphaelFontFaceMutableBuilder[Self <: RaphaelFontFace] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAscent(value: Double | String): Self = StObject.set(x, "ascent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBbox(value: String): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescent(value: Double | String): Self = StObject.set(x, "descent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAscent(value: Double | String): Self = this.set("ascent", value.asInstanceOf[js.Any])
+    def `setFont-family`(value: String): Self = StObject.set(x, "font-family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBbox(value: String): Self = this.set("bbox", value.asInstanceOf[js.Any])
+    def `setFont-stretch`(value: String): Self = StObject.set(x, "font-stretch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescent(value: Double | String): Self = this.set("descent", value.asInstanceOf[js.Any])
+    def `setFont-style`(value: String): Self = StObject.set(x, "font-style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-family`(value: String): Self = this.set("font-family", value.asInstanceOf[js.Any])
+    def `setFont-weight`(value: Double | String): Self = StObject.set(x, "font-weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-stretch`(value: String): Self = this.set("font-stretch", value.asInstanceOf[js.Any])
+    def `setPanose-1`(value: String): Self = StObject.set(x, "panose-1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-style`(value: String): Self = this.set("font-style", value.asInstanceOf[js.Any])
+    def `setUnderline-position`(value: Double | String): Self = StObject.set(x, "underline-position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-weight`(value: Double | String): Self = this.set("font-weight", value.asInstanceOf[js.Any])
+    def `setUnderline-thickness`(value: Double | String): Self = StObject.set(x, "underline-thickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPanose-1`(value: String): Self = this.set("panose-1", value.asInstanceOf[js.Any])
+    def `setUnicode-range`(value: String): Self = StObject.set(x, "unicode-range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setUnderline-position`(value: Double | String): Self = this.set("underline-position", value.asInstanceOf[js.Any])
+    def `setUnits-per-em`(value: Double | String): Self = StObject.set(x, "units-per-em", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setUnderline-thickness`(value: Double | String): Self = this.set("underline-thickness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setUnicode-range`(value: String): Self = this.set("unicode-range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setUnits-per-em`(value: Double | String): Self = this.set("units-per-em", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setX-height`(value: Double | String): Self = this.set("x-height", value.asInstanceOf[js.Any])
+    def `setX-height`(value: Double | String): Self = StObject.set(x, "x-height", value.asInstanceOf[js.Any])
   }
 }

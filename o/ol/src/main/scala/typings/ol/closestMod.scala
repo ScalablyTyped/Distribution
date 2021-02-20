@@ -1,13 +1,14 @@
 package typings.ol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/geom/flat/closest", JSImport.Namespace)
-@js.native
-object closestMod extends js.Object {
+object closestMod {
   
+  @JSImport("ol/geom/flat/closest", "arrayMaxSquaredDelta")
+  @js.native
   def arrayMaxSquaredDelta(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -16,6 +17,8 @@ object closestMod extends js.Object {
     max: Double
   ): Double = js.native
   
+  @JSImport("ol/geom/flat/closest", "assignClosestArrayPoint")
+  @js.native
   def assignClosestArrayPoint(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -28,6 +31,8 @@ object closestMod extends js.Object {
     closestPoint: js.Array[Double],
     minSquaredDistance: Double
   ): Double = js.native
+  @JSImport("ol/geom/flat/closest", "assignClosestArrayPoint")
+  @js.native
   def assignClosestArrayPoint(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -42,6 +47,8 @@ object closestMod extends js.Object {
     opt_tmpPoint: js.Array[Double]
   ): Double = js.native
   
+  @JSImport("ol/geom/flat/closest", "assignClosestMultiArrayPoint")
+  @js.native
   def assignClosestMultiArrayPoint(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -54,6 +61,8 @@ object closestMod extends js.Object {
     closestPoint: js.Array[Double],
     minSquaredDistance: Double
   ): Double = js.native
+  @JSImport("ol/geom/flat/closest", "assignClosestMultiArrayPoint")
+  @js.native
   def assignClosestMultiArrayPoint(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -68,6 +77,8 @@ object closestMod extends js.Object {
     opt_tmpPoint: js.Array[Double]
   ): Double = js.native
   
+  @JSImport("ol/geom/flat/closest", "assignClosestPoint")
+  @js.native
   def assignClosestPoint(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -80,6 +91,8 @@ object closestMod extends js.Object {
     closestPoint: js.Array[Double],
     minSquaredDistance: Double
   ): Double = js.native
+  @JSImport("ol/geom/flat/closest", "assignClosestPoint")
+  @js.native
   def assignClosestPoint(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -94,8 +107,12 @@ object closestMod extends js.Object {
     opt_tmpPoint: js.Array[Double]
   ): Double = js.native
   
+  @JSImport("ol/geom/flat/closest", "maxSquaredDelta")
+  @js.native
   def maxSquaredDelta(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double, max: Double): Double = js.native
   
+  @JSImport("ol/geom/flat/closest", "multiArrayMaxSquaredDelta")
+  @js.native
   def multiArrayMaxSquaredDelta(
     flatCoordinates: js.Array[Double],
     offset: Double,

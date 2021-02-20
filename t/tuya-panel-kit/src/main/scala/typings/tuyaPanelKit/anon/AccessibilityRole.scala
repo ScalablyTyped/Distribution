@@ -4,12 +4,13 @@ import typings.reactNative.mod.GestureResponderEvent
 import typings.std.HTMLAnchorElement
 import typings.std.MouseEvent
 import typings.tuyaPanelKit.tuyaPanelKitStrings.link
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessibilityRole extends js.Object {
+trait AccessibilityRole extends StObject {
   
   var accessibilityRole: link = js.native
   

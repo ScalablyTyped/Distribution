@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GitAsyncOperationStatus extends js.Object
+sealed trait GitAsyncOperationStatus extends StObject
 @JSImport("vso-node-api/interfaces/GitInterfaces", "GitAsyncOperationStatus")
 @js.native
-object GitAsyncOperationStatus extends js.Object {
+object GitAsyncOperationStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GitAsyncOperationStatus with Double] = js.native
@@ -19,38 +19,33 @@ object GitAsyncOperationStatus extends js.Object {
     */
   @js.native
   sealed trait Abandoned extends GitAsyncOperationStatus
-  /* 5 */ @js.native
-  object Abandoned extends TopLevel[Abandoned with Double]
+  /* 5 */ val Abandoned: typings.vsoNodeApi.gitInterfacesMod.GitAsyncOperationStatus.Abandoned with Double = js.native
   
   /**
     * The operation has completed.
     */
   @js.native
   sealed trait Completed extends GitAsyncOperationStatus
-  /* 3 */ @js.native
-  object Completed extends TopLevel[Completed with Double]
+  /* 3 */ val Completed: typings.vsoNodeApi.gitInterfacesMod.GitAsyncOperationStatus.Completed with Double = js.native
   
   /**
     * The operation has failed. Check for an error message.
     */
   @js.native
   sealed trait Failed extends GitAsyncOperationStatus
-  /* 4 */ @js.native
-  object Failed extends TopLevel[Failed with Double]
+  /* 4 */ val Failed: typings.vsoNodeApi.gitInterfacesMod.GitAsyncOperationStatus.Failed with Double = js.native
   
   /**
     * The operation is currently in progress.
     */
   @js.native
   sealed trait InProgress extends GitAsyncOperationStatus
-  /* 2 */ @js.native
-  object InProgress extends TopLevel[InProgress with Double]
+  /* 2 */ val InProgress: typings.vsoNodeApi.gitInterfacesMod.GitAsyncOperationStatus.InProgress with Double = js.native
   
   /**
     * The operation is waiting in a queue and has not yet started.
     */
   @js.native
   sealed trait Queued extends GitAsyncOperationStatus
-  /* 1 */ @js.native
-  object Queued extends TopLevel[Queued with Double]
+  /* 1 */ val Queued: typings.vsoNodeApi.gitInterfacesMod.GitAsyncOperationStatus.Queued with Double = js.native
 }

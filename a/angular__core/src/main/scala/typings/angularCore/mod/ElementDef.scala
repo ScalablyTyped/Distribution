@@ -1,12 +1,13 @@
 package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ElementDef extends js.Object {
+trait ElementDef extends StObject {
   
   /**
     * same as visiblePublicProviders, but also includes private providers
@@ -46,81 +47,69 @@ object ElementDef {
   }
   
   @scala.inline
-  implicit class ElementDefOps[Self <: ElementDef] (val x: Self) extends AnyVal {
+  implicit class ElementDefMutableBuilder[Self <: ElementDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllProviders(value: StringDictionary[NodeDef]): Self = StObject.set(x, "allProviders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllProvidersNull: Self = StObject.set(x, "allProviders", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttrs(value: js.Array[js.Tuple3[String, String, String]]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllProviders(value: StringDictionary[NodeDef]): Self = this.set("allProviders", value.asInstanceOf[js.Any])
+    def setAttrsNull: Self = StObject.set(x, "attrs", null)
     
     @scala.inline
-    def setAllProvidersNull: Self = this.set("allProviders", null)
+    def setAttrsVarargs(value: (js.Tuple3[String, String, String])*): Self = StObject.set(x, "attrs", js.Array(value :_*))
     
     @scala.inline
-    def setAttrsVarargs(value: (js.Tuple3[String, String, String])*): Self = this.set("attrs", js.Array(value :_*))
+    def setComponentProvider(value: NodeDef): Self = StObject.set(x, "componentProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttrs(value: js.Array[js.Tuple3[String, String, String]]): Self = this.set("attrs", value.asInstanceOf[js.Any])
+    def setComponentProviderNull: Self = StObject.set(x, "componentProvider", null)
     
     @scala.inline
-    def setAttrsNull: Self = this.set("attrs", null)
+    def setComponentRendererType(value: RendererType2): Self = StObject.set(x, "componentRendererType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentProvider(value: NodeDef): Self = this.set("componentProvider", value.asInstanceOf[js.Any])
+    def setComponentRendererTypeNull: Self = StObject.set(x, "componentRendererType", null)
     
     @scala.inline
-    def setComponentProviderNull: Self = this.set("componentProvider", null)
+    def setComponentView(value: ViewDefinitionFactory): Self = StObject.set(x, "componentView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentRendererType(value: RendererType2): Self = this.set("componentRendererType", value.asInstanceOf[js.Any])
+    def setComponentViewNull: Self = StObject.set(x, "componentView", null)
     
     @scala.inline
-    def setComponentRendererTypeNull: Self = this.set("componentRendererType", null)
+    def setHandleEvent(value: (/* view */ ViewData, /* eventName */ String, /* event */ js.Any) => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setComponentView(value: ViewDefinitionFactory): Self = this.set("componentView", value.asInstanceOf[js.Any])
+    def setHandleEventNull: Self = StObject.set(x, "handleEvent", null)
     
     @scala.inline
-    def setComponentViewNull: Self = this.set("componentView", null)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleEvent(value: (/* view */ ViewData, /* eventName */ String, /* event */ js.Any) => Boolean): Self = this.set("handleEvent", js.Any.fromFunction3(value))
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setHandleEventNull: Self = this.set("handleEvent", null)
+    def setNs(value: String): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNsNull: Self = StObject.set(x, "ns", null)
     
     @scala.inline
-    def setNameNull: Self = this.set("name", null)
+    def setPublicProviders(value: StringDictionary[NodeDef]): Self = StObject.set(x, "publicProviders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNs(value: String): Self = this.set("ns", value.asInstanceOf[js.Any])
+    def setPublicProvidersNull: Self = StObject.set(x, "publicProviders", null)
     
     @scala.inline
-    def setNsNull: Self = this.set("ns", null)
+    def setTemplate(value: ɵViewDefinition): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicProviders(value: StringDictionary[NodeDef]): Self = this.set("publicProviders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublicProvidersNull: Self = this.set("publicProviders", null)
-    
-    @scala.inline
-    def setTemplate(value: ɵViewDefinition): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTemplateNull: Self = this.set("template", null)
+    def setTemplateNull: Self = StObject.set(x, "template", null)
   }
 }

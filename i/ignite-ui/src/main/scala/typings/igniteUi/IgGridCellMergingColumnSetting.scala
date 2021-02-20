@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,42 +55,30 @@ object IgGridCellMergingColumnSetting {
   }
   
   @scala.inline
-  implicit class IgGridCellMergingColumnSettingOps[Self <: IgGridCellMergingColumnSetting] (val x: Self) extends AnyVal {
+  implicit class IgGridCellMergingColumnSettingMutableBuilder[Self <: IgGridCellMergingColumnSetting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
     @scala.inline
-    def deleteColumnIndex: Self = this.set("columnIndex", js.undefined)
+    def setMergeOn(value: String): Self = StObject.set(x, "mergeOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnKey(value: String): Self = this.set("columnKey", value.asInstanceOf[js.Any])
+    def setMergeOnUndefined: Self = StObject.set(x, "mergeOn", js.undefined)
     
     @scala.inline
-    def deleteColumnKey: Self = this.set("columnKey", js.undefined)
+    def setMergeStrategy(value: String | js.Function): Self = StObject.set(x, "mergeStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeOn(value: String): Self = this.set("mergeOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMergeOn: Self = this.set("mergeOn", js.undefined)
-    
-    @scala.inline
-    def setMergeStrategy(value: String | js.Function): Self = this.set("mergeStrategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMergeStrategy: Self = this.set("mergeStrategy", js.undefined)
+    def setMergeStrategyUndefined: Self = StObject.set(x, "mergeStrategy", js.undefined)
   }
 }

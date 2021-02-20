@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.Media
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,36 +37,24 @@ object AudioPlayerEventMap {
   }
   
   @scala.inline
-  implicit class AudioPlayerEventMapOps[Self <: AudioPlayerEventMap] (val x: Self) extends AnyVal {
+  implicit class AudioPlayerEventMapMutableBuilder[Self <: AudioPlayerEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChange(value: AudioPlayerChangeEvent): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplete(value: AudioPlayerCompleteEvent): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: AudioPlayerErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: AudioPlayerChangeEvent): Self = this.set("change", value.asInstanceOf[js.Any])
+    def setMetadata(value: AudioPlayerMetadataEvent): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplete(value: AudioPlayerCompleteEvent): Self = this.set("complete", value.asInstanceOf[js.Any])
+    def setProgress(value: AudioPlayerProgressEvent): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: AudioPlayerErrorEvent): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetadata(value: AudioPlayerMetadataEvent): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProgress(value: AudioPlayerProgressEvent): Self = this.set("progress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeek(value: AudioPlayerSeekEvent): Self = this.set("seek", value.asInstanceOf[js.Any])
+    def setSeek(value: AudioPlayerSeekEvent): Self = StObject.set(x, "seek", value.asInstanceOf[js.Any])
   }
 }

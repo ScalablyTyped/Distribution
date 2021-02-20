@@ -1,12 +1,13 @@
 package typings.firefox
 
 import typings.std.DOMError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DOMRequest[T] extends js.Object {
+trait DOMRequest[T] extends StObject {
   
   var error: DOMError = js.native
   
@@ -16,7 +17,7 @@ trait DOMRequest[T] extends js.Object {
   
   var readyState: String = js.native
   
-   // "done" or "pending"
+  // "done" or "pending"
   var result: T = js.native
 }
 object DOMRequest {
@@ -28,33 +29,21 @@ object DOMRequest {
   }
   
   @scala.inline
-  implicit class DOMRequestOps[Self <: DOMRequest[_], T] (val x: Self with DOMRequest[T]) extends AnyVal {
+  implicit class DOMRequestMutableBuilder[Self <: DOMRequest[_], T] (val x: Self with DOMRequest[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: DOMError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnerror(value: js.Function): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnsuccess(value: js.Function): Self = StObject.set(x, "onsuccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: DOMError): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setReadyState(value: String): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnerror(value: js.Function): Self = this.set("onerror", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnsuccess(value: js.Function): Self = this.set("onsuccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadyState(value: String): Self = this.set("readyState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResult(value: T): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setResult(value: T): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

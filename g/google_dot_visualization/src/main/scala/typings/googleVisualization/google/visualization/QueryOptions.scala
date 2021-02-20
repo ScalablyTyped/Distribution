@@ -1,11 +1,12 @@
 package typings.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryOptions extends js.Object {
+trait QueryOptions extends StObject {
   
   var makeRequestParams: js.UndefOr[js.Object] = js.native
   
@@ -20,30 +21,18 @@ object QueryOptions {
   }
   
   @scala.inline
-  implicit class QueryOptionsOps[Self <: QueryOptions] (val x: Self) extends AnyVal {
+  implicit class QueryOptionsMutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMakeRequestParams(value: js.Object): Self = StObject.set(x, "makeRequestParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMakeRequestParamsUndefined: Self = StObject.set(x, "makeRequestParams", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSendMethod(value: String): Self = StObject.set(x, "sendMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMakeRequestParams(value: js.Object): Self = this.set("makeRequestParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMakeRequestParams: Self = this.set("makeRequestParams", js.undefined)
-    
-    @scala.inline
-    def setSendMethod(value: String): Self = this.set("sendMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSendMethod: Self = this.set("sendMethod", js.undefined)
+    def setSendMethodUndefined: Self = StObject.set(x, "sendMethod", js.undefined)
   }
 }

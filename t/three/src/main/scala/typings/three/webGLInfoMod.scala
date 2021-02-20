@@ -4,16 +4,16 @@ import typings.std.WebGLRenderingContext
 import typings.three.anon.Calls
 import typings.three.anon.Textures
 import typings.three.webGLProgramMod.WebGLProgram
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/renderers/webgl/WebGLInfo", JSImport.Namespace)
-@js.native
-object webGLInfoMod extends js.Object {
+object webGLInfoMod {
   
+  @JSImport("three/src/renderers/webgl/WebGLInfo", "WebGLInfo")
   @js.native
-  class WebGLInfo protected () extends js.Object {
+  class WebGLInfo protected () extends StObject {
     def this(gl: WebGLRenderingContext) = this()
     
     /**

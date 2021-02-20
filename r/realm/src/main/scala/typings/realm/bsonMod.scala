@@ -1,15 +1,13 @@
 package typings.realm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("realm/types/bson", JSImport.Namespace)
-@js.native
-object bsonMod extends js.Object {
+object bsonMod {
   
-  @js.native
-  object Realm extends js.Object {
+  object Realm {
     
     type Binary = typings.bson.mod.Binary
     

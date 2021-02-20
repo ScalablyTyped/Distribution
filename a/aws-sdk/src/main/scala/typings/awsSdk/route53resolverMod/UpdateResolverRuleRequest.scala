@@ -1,11 +1,12 @@
 package typings.awsSdk.route53resolverMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateResolverRuleRequest extends js.Object {
+trait UpdateResolverRuleRequest extends StObject {
   
   /**
     * The new settings for the Resolver rule.
@@ -26,24 +27,12 @@ object UpdateResolverRuleRequest {
   }
   
   @scala.inline
-  implicit class UpdateResolverRuleRequestOps[Self <: UpdateResolverRuleRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateResolverRuleRequestMutableBuilder[Self <: UpdateResolverRuleRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: ResolverRuleConfig): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfig(value: ResolverRuleConfig): Self = this.set("Config", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolverRuleId(value: ResourceId): Self = this.set("ResolverRuleId", value.asInstanceOf[js.Any])
+    def setResolverRuleId(value: ResourceId): Self = StObject.set(x, "ResolverRuleId", value.asInstanceOf[js.Any])
   }
 }

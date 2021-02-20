@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompletionContext extends js.Object {
+trait CompletionContext extends StObject {
   
   /**
     * Character that triggered the completion item provider.
@@ -30,27 +31,15 @@ object CompletionContext {
   }
   
   @scala.inline
-  implicit class CompletionContextOps[Self <: CompletionContext] (val x: Self) extends AnyVal {
+  implicit class CompletionContextMutableBuilder[Self <: CompletionContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTriggerCharacter(value: String): Self = StObject.set(x, "triggerCharacter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTriggerCharacterUndefined: Self = StObject.set(x, "triggerCharacter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTriggerKind(value: CompletionTriggerKind): Self = this.set("triggerKind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggerCharacter(value: String): Self = this.set("triggerCharacter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerCharacter: Self = this.set("triggerCharacter", js.undefined)
+    def setTriggerKind(value: CompletionTriggerKind): Self = StObject.set(x, "triggerKind", value.asInstanceOf[js.Any])
   }
 }

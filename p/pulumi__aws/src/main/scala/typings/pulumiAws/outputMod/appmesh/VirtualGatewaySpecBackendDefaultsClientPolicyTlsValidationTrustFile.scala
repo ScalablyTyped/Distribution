@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.appmesh
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile extends js.Object {
+trait VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile extends StObject {
   
   /**
     * The certificate chain for the certificate. Must be between 1 and 255 characters in length.
@@ -21,21 +22,9 @@ object VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile {
   }
   
   @scala.inline
-  implicit class VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileOps[Self <: VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile] (val x: Self) extends AnyVal {
+  implicit class VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileMutableBuilder[Self <: VirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCertificateChain(value: String): Self = this.set("certificateChain", value.asInstanceOf[js.Any])
+    def setCertificateChain(value: String): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
   }
 }

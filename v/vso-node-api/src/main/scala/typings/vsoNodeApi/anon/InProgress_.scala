@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InProgress_ extends js.Object {
+trait InProgress_ extends StObject {
   
   var abandoned: scala.Double = js.native
   
@@ -32,33 +33,21 @@ object InProgress_ {
   }
   
   @scala.inline
-  implicit class InProgress_Ops[Self <: InProgress_] (val x: Self) extends AnyVal {
+  implicit class InProgress_MutableBuilder[Self <: InProgress_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbandoned(value: scala.Double): Self = StObject.set(x, "abandoned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleted(value: scala.Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailed(value: scala.Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbandoned(value: scala.Double): Self = this.set("abandoned", value.asInstanceOf[js.Any])
+    def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleted(value: scala.Double): Self = this.set("completed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFailed(value: scala.Double): Self = this.set("failed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInProgress(value: scala.Double): Self = this.set("inProgress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueued(value: scala.Double): Self = this.set("queued", value.asInstanceOf[js.Any])
+    def setQueued(value: scala.Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
   }
 }

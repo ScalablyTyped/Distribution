@@ -4,31 +4,35 @@ import typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata.Pro
 import typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata.V1alphaResource
 import typings.maximMazurokGapiClientAnalyticsdata.maximMazurokGapiClientAnalyticsdataStrings.analyticsdata
 import typings.maximMazurokGapiClientAnalyticsdata.maximMazurokGapiClientAnalyticsdataStrings.v1alpha
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
-      /** Load Google Analytics Data API v1alpha */
-      def load(name: analyticsdata, version: v1alpha): js.Thenable[Unit] = js.native
-      def load(name: analyticsdata, version: v1alpha, callback: js.Function0[_]): Unit = js.native
-      
-      @js.native
-      object analyticsdata extends js.Object {
+      object analyticsdata {
         
+        @JSGlobal("gapi.client.analyticsdata.properties")
+        @js.native
         val properties: PropertiesResource = js.native
         
+        @JSGlobal("gapi.client.analyticsdata.v1alpha")
+        @js.native
         val v1alpha: V1alphaResource = js.native
       }
+      
+      /** Load Google Analytics Data API v1alpha */
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: analyticsdata, version: v1alpha): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: analyticsdata, version: v1alpha, callback: js.Function0[_]): Unit = js.native
     }
   }
 }

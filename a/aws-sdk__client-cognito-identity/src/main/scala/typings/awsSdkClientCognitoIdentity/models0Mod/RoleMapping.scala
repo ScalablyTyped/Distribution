@@ -1,11 +1,12 @@
 package typings.awsSdkClientCognitoIdentity.models0Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoleMapping extends js.Object {
+trait RoleMapping extends StObject {
   
   /**
     * <p>If you specify Token or Rules as the <code>Type</code>,
@@ -32,9 +33,37 @@ trait RoleMapping extends js.Object {
     */
   var Type: js.UndefOr[RoleMappingType | String] = js.native
 }
-@JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "RoleMapping")
-@js.native
-object RoleMapping extends js.Object {
+object RoleMapping {
   
+  @scala.inline
+  def apply(): RoleMapping = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[RoleMapping]
+  }
+  
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "RoleMapping.filterSensitiveLog")
+  @js.native
   def filterSensitiveLog(obj: RoleMapping): js.Any = js.native
+  
+  @scala.inline
+  implicit class RoleMappingMutableBuilder[Self <: RoleMapping] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAmbiguousRoleResolution(value: AmbiguousRoleResolutionType | String): Self = StObject.set(x, "AmbiguousRoleResolution", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAmbiguousRoleResolutionUndefined: Self = StObject.set(x, "AmbiguousRoleResolution", js.undefined)
+    
+    @scala.inline
+    def setRulesConfiguration(value: RulesConfigurationType): Self = StObject.set(x, "RulesConfiguration", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRulesConfigurationUndefined: Self = StObject.set(x, "RulesConfiguration", js.undefined)
+    
+    @scala.inline
+    def setType(value: RoleMappingType | String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+  }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Thumbnail extends js.Object {
+trait Thumbnail extends StObject {
   
   /** The thumbnail's content type, i.e. "image/png". Always set. */
   var contentType: js.UndefOr[String] = js.native
@@ -31,42 +32,30 @@ object Thumbnail {
   }
   
   @scala.inline
-  implicit class ThumbnailOps[Self <: Thumbnail] (val x: Self) extends AnyVal {
+  implicit class ThumbnailMutableBuilder[Self <: Thumbnail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setHeightPx(value: Double): Self = StObject.set(x, "heightPx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setHeightPxUndefined: Self = StObject.set(x, "heightPx", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setWidthPx(value: Double): Self = StObject.set(x, "widthPx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeightPx(value: Double): Self = this.set("heightPx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeightPx: Self = this.set("heightPx", js.undefined)
-    
-    @scala.inline
-    def setWidthPx(value: Double): Self = this.set("widthPx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidthPx: Self = this.set("widthPx", js.undefined)
+    def setWidthPxUndefined: Self = StObject.set(x, "widthPx", js.undefined)
   }
 }

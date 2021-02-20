@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgGridModalDialogMethods extends js.Object {
+trait IgGridModalDialogMethods extends StObject {
   
   /**
     * Changes the widget language to global language. Global language is the value in $.ig.util.language
@@ -54,45 +55,33 @@ object IgGridModalDialogMethods {
   }
   
   @scala.inline
-  implicit class IgGridModalDialogMethodsOps[Self <: IgGridModalDialogMethods] (val x: Self) extends AnyVal {
+  implicit class IgGridModalDialogMethodsMutableBuilder[Self <: IgGridModalDialogMethods] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangeLocale(value: () => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeGlobalLanguage(value: () => Unit): Self = this.set("changeGlobalLanguage", js.Any.fromFunction0(value))
+    def setCloseModalDialog(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "closeModalDialog", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setChangeGlobalRegional(value: () => Unit): Self = this.set("changeGlobalRegional", js.Any.fromFunction0(value))
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeLocale(value: () => Unit): Self = this.set("changeLocale", js.Any.fromFunction0(value))
+    def setGetCaptionButtonContainer(value: () => Unit): Self = StObject.set(x, "getCaptionButtonContainer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCloseModalDialog(value: (js.Object, js.Object) => Unit): Self = this.set("closeModalDialog", js.Any.fromFunction2(value))
+    def setGetContent(value: () => Unit): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setGetFooter(value: () => Unit): Self = StObject.set(x, "getFooter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCaptionButtonContainer(value: () => Unit): Self = this.set("getCaptionButtonContainer", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetContent(value: () => Unit): Self = this.set("getContent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetFooter(value: () => Unit): Self = this.set("getFooter", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOpenModalDialog(value: () => Unit): Self = this.set("openModalDialog", js.Any.fromFunction0(value))
+    def setOpenModalDialog(value: () => Unit): Self = StObject.set(x, "openModalDialog", js.Any.fromFunction0(value))
   }
 }

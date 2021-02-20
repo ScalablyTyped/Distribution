@@ -4,6 +4,7 @@ import typings.babelTypes.babelTypesStrings.ExportAllDeclaration
 import typings.babelTypes.babelTypesStrings.ExportDefaultDeclaration
 import typings.babelTypes.babelTypesStrings.ExportNamedDeclaration
 import typings.babelTypes.babelTypesStrings.ImportDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.ts36Mod.ExportNamedDeclaration_
   - typings.babelTypes.ts36Mod.ImportDeclaration_
 */
-trait ModuleDeclaration extends js.Object
+trait ModuleDeclaration extends StObject
 object ModuleDeclaration {
   
   @scala.inline
@@ -24,10 +25,10 @@ object ModuleDeclaration {
     source: StringLiteral_,
     start: Double,
     `type`: ExportAllDeclaration
-  ): ModuleDeclaration = {
+  ): typings.babelTypes.ts36Mod.ExportAllDeclaration_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleDeclaration]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.ExportAllDeclaration_]
   }
   
   @scala.inline
@@ -37,10 +38,10 @@ object ModuleDeclaration {
     loc: SourceLocation,
     start: Double,
     `type`: ExportDefaultDeclaration
-  ): ModuleDeclaration = {
+  ): typings.babelTypes.ts36Mod.ExportDefaultDeclaration_ = {
     val __obj = js.Dynamic.literal(declaration = declaration.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleDeclaration]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.ExportDefaultDeclaration_]
   }
   
   @scala.inline
@@ -51,10 +52,10 @@ object ModuleDeclaration {
     specifiers: js.Array[ExportSpecifier_],
     start: Double,
     `type`: ExportNamedDeclaration
-  ): ModuleDeclaration = {
+  ): typings.babelTypes.ts36Mod.ExportNamedDeclaration_ = {
     val __obj = js.Dynamic.literal(declaration = declaration.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], specifiers = specifiers.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleDeclaration]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.ExportNamedDeclaration_]
   }
   
   @scala.inline
@@ -65,9 +66,9 @@ object ModuleDeclaration {
     specifiers: js.Array[ImportSpecifier_ | ImportDefaultSpecifier_ | ImportNamespaceSpecifier_],
     start: Double,
     `type`: ImportDeclaration
-  ): ModuleDeclaration = {
+  ): typings.babelTypes.ts36Mod.ImportDeclaration_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], specifiers = specifiers.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleDeclaration]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.ImportDeclaration_]
   }
 }

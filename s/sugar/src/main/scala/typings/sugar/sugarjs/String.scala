@@ -8,16 +8,17 @@ import typings.sugar.sugarStrings.NFC
 import typings.sugar.sugarStrings.NFD
 import typings.sugar.sugarStrings.NFKC
 import typings.sugar.sugarStrings.NFKD
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sugarjs.String")
-@js.native
-object String extends js.Object {
+object String {
+  
+  type Chainable[RawValue] = ChainableBase[RawValue] with typings.sugar.sugarjs.Object.ChainableBase[RawValue]
   
   @js.native
-  trait ChainableBase[RawValue] extends js.Object {
+  trait ChainableBase[RawValue] extends StObject {
     
     def anchor(name: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     
@@ -694,8 +695,6 @@ object String extends js.Object {
     def zenkaku(instance: java.lang.String): java.lang.String = js.native
     def zenkaku(instance: java.lang.String, mode: java.lang.String): java.lang.String = js.native
   }
-  
-  type Chainable[RawValue] = ChainableBase[RawValue] with typings.sugar.sugarjs.Object.ChainableBase[RawValue]
   
   type replaceFn = js.Function4[
     /* tag */ java.lang.String, 

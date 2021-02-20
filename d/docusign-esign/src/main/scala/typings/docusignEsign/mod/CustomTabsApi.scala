@@ -1,12 +1,13 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("docusign-esign", "CustomTabsApi")
 @js.native
-class CustomTabsApi protected () extends js.Object {
+class CustomTabsApi protected () extends StObject {
   def this(apiClient: ApiClient) = this()
   
   def _delete(accountId: String, customTabId: String): js.Promise[Unit] = js.native

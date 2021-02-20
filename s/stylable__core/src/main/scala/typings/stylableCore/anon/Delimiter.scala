@@ -3,12 +3,13 @@ package typings.stylableCore.anon
 import typings.stylableCore.customValuesMod.Box_
 import typings.stylableCore.stylableCoreStrings.Comma
 import typings.stylableCore.stylableCoreStrings.Space
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Delimiter extends js.Object {
+trait Delimiter extends StObject {
   
   var delimiter: Comma | Space = js.native
   
@@ -23,27 +24,15 @@ object Delimiter {
   }
   
   @scala.inline
-  implicit class DelimiterOps[Self <: Delimiter] (val x: Self) extends AnyVal {
+  implicit class DelimiterMutableBuilder[Self <: Delimiter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelimiter(value: Comma | Space): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParts(value: js.Array[String | (Box_[String, _])]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDelimiter(value: Comma | Space): Self = this.set("delimiter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPartsVarargs(value: (String | (Box_[String, js.Any]))*): Self = this.set("parts", js.Array(value :_*))
-    
-    @scala.inline
-    def setParts(value: js.Array[String | (Box_[String, _])]): Self = this.set("parts", value.asInstanceOf[js.Any])
+    def setPartsVarargs(value: (String | (Box_[String, js.Any]))*): Self = StObject.set(x, "parts", js.Array(value :_*))
   }
 }

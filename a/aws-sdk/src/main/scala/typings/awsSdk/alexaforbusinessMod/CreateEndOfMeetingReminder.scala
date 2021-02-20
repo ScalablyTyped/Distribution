@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateEndOfMeetingReminder extends js.Object {
+trait CreateEndOfMeetingReminder extends StObject {
   
   /**
     * Whether an end of meeting reminder is enabled or not.
@@ -35,30 +36,18 @@ object CreateEndOfMeetingReminder {
   }
   
   @scala.inline
-  implicit class CreateEndOfMeetingReminderOps[Self <: CreateEndOfMeetingReminder] (val x: Self) extends AnyVal {
+  implicit class CreateEndOfMeetingReminderMutableBuilder[Self <: CreateEndOfMeetingReminder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReminderAtMinutes(value: EndOfMeetingReminderMinutesList): Self = StObject.set(x, "ReminderAtMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReminderAtMinutesVarargs(value: Minutes*): Self = StObject.set(x, "ReminderAtMinutes", js.Array(value :_*))
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReminderAtMinutesVarargs(value: Minutes*): Self = this.set("ReminderAtMinutes", js.Array(value :_*))
-    
-    @scala.inline
-    def setReminderAtMinutes(value: EndOfMeetingReminderMinutesList): Self = this.set("ReminderAtMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReminderType(value: EndOfMeetingReminderType): Self = this.set("ReminderType", value.asInstanceOf[js.Any])
+    def setReminderType(value: EndOfMeetingReminderType): Self = StObject.set(x, "ReminderType", value.asInstanceOf[js.Any])
   }
 }

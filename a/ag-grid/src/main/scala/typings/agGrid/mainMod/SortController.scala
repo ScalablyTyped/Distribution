@@ -1,5 +1,6 @@
 package typings.agGrid.mainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class SortController ()
   extends typings.agGrid.sortControllerMod.SortController
 /* static members */
-@JSImport("ag-grid/dist/lib/main", "SortController")
-@js.native
-object SortController extends js.Object {
+object SortController {
   
-  var DEFAULT_SORTING_ORDER: js.Any = js.native
+  @JSImport("ag-grid/dist/lib/main", "SortController")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("ag-grid/dist/lib/main", "SortController.DEFAULT_SORTING_ORDER")
+  @js.native
+  def DEFAULT_SORTING_ORDER: js.Any = js.native
+  @scala.inline
+  def DEFAULT_SORTING_ORDER_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_SORTING_ORDER")(x.asInstanceOf[js.Any])
 }

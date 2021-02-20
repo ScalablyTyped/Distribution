@@ -1,11 +1,12 @@
 package typings.stripe.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Id extends js.Object {
+trait Id extends StObject {
   
   /**
     * ID of the API request that caused the event. If null, the event was
@@ -29,33 +30,21 @@ object Id {
   }
   
   @scala.inline
-  implicit class IdOps[Self <: Id] (val x: Self) extends AnyVal {
+  implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdNull: Self = StObject.set(x, "id", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdempotency_key(value: String): Self = StObject.set(x, "idempotency_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIdempotency_keyNull: Self = StObject.set(x, "idempotency_key", null)
     
     @scala.inline
-    def setIdNull: Self = this.set("id", null)
-    
-    @scala.inline
-    def setIdempotency_key(value: String): Self = this.set("idempotency_key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdempotency_key: Self = this.set("idempotency_key", js.undefined)
-    
-    @scala.inline
-    def setIdempotency_keyNull: Self = this.set("idempotency_key", null)
+    def setIdempotency_keyUndefined: Self = StObject.set(x, "idempotency_key", js.undefined)
   }
 }

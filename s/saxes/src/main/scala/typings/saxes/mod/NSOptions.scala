@@ -1,12 +1,13 @@
 package typings.saxes.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NSOptions extends js.Object {
+trait NSOptions extends StObject {
   
   /**
     * A plain object whose key, value pairs define namespaces known before
@@ -33,36 +34,24 @@ object NSOptions {
   }
   
   @scala.inline
-  implicit class NSOptionsOps[Self <: NSOptions] (val x: Self) extends AnyVal {
+  implicit class NSOptionsMutableBuilder[Self <: NSOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalNamespaces(value: Record[String, String]): Self = StObject.set(x, "additionalNamespaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalNamespacesUndefined: Self = StObject.set(x, "additionalNamespaces", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResolvePrefix(value: /* prefix */ String => js.UndefOr[String]): Self = StObject.set(x, "resolvePrefix", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdditionalNamespaces(value: Record[String, String]): Self = this.set("additionalNamespaces", value.asInstanceOf[js.Any])
+    def setResolvePrefixUndefined: Self = StObject.set(x, "resolvePrefix", js.undefined)
     
     @scala.inline
-    def deleteAdditionalNamespaces: Self = this.set("additionalNamespaces", js.undefined)
+    def setXmlns(value: Boolean): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolvePrefix(value: /* prefix */ String => js.UndefOr[String]): Self = this.set("resolvePrefix", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteResolvePrefix: Self = this.set("resolvePrefix", js.undefined)
-    
-    @scala.inline
-    def setXmlns(value: Boolean): Self = this.set("xmlns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXmlns: Self = this.set("xmlns", js.undefined)
+    def setXmlnsUndefined: Self = StObject.set(x, "xmlns", js.undefined)
   }
 }

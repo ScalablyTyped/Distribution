@@ -2,6 +2,7 @@ package typings.grammarkdown.nodesMod
 
 import typings.grammarkdown.tokensMod.SyntaxKind.ButKeyword
 import typings.grammarkdown.tokensMod.SyntaxKind.NotKeyword
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("grammarkdown/dist/nodes", "ButNotSymbol")
 @js.native
 class ButNotSymbol protected ()
-  extends Node[typings.grammarkdown.tokensMod.SyntaxKind.ButNotSymbol]
+  extends LexicalSymbolBase[typings.grammarkdown.tokensMod.SyntaxKind.ButNotSymbol]
      with _LexicalSymbol {
   def this(left: LexicalSymbol) = this()
   def this(left: LexicalSymbol, butKeyword: Token[ButKeyword]) = this()

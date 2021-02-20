@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * left alone and skipped.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2CharsToIgnore extends js.Object {
+trait SchemaGooglePrivacyDlpV2CharsToIgnore extends StObject {
   
   var charactersToSkip: js.UndefOr[String] = js.native
   
@@ -24,30 +25,18 @@ object SchemaGooglePrivacyDlpV2CharsToIgnore {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2CharsToIgnoreOps[Self <: SchemaGooglePrivacyDlpV2CharsToIgnore] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2CharsToIgnoreMutableBuilder[Self <: SchemaGooglePrivacyDlpV2CharsToIgnore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharactersToSkip(value: String): Self = StObject.set(x, "charactersToSkip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharactersToSkipUndefined: Self = StObject.set(x, "charactersToSkip", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommonCharactersToIgnore(value: String): Self = StObject.set(x, "commonCharactersToIgnore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharactersToSkip(value: String): Self = this.set("charactersToSkip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCharactersToSkip: Self = this.set("charactersToSkip", js.undefined)
-    
-    @scala.inline
-    def setCommonCharactersToIgnore(value: String): Self = this.set("commonCharactersToIgnore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCommonCharactersToIgnore: Self = this.set("commonCharactersToIgnore", js.undefined)
+    def setCommonCharactersToIgnoreUndefined: Self = StObject.set(x, "commonCharactersToIgnore", js.undefined)
   }
 }

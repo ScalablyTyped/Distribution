@@ -11,14 +11,14 @@ import typings.typeorm.typeormStrings.DESC
 import typings.typeorm.typeormStrings.`NULLS FIRST`
 import typings.typeorm.typeormStrings.`NULLS LAST`
 import typings.typeorm.whereExpressionMod.WhereExpression
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/query-builder/UpdateQueryBuilder", JSImport.Namespace)
-@js.native
-object updateQueryBuilderMod extends js.Object {
+object updateQueryBuilderMod {
   
+  @JSImport("typeorm/browser/query-builder/UpdateQueryBuilder", "UpdateQueryBuilder")
   @js.native
   class UpdateQueryBuilder[Entity] protected ()
     extends QueryBuilder[Entity]

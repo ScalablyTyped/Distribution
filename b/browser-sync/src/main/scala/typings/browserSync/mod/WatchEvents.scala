@@ -1,5 +1,6 @@
 package typings.browserSync.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.browserSync.browserSyncStrings.addDir
   - typings.browserSync.browserSyncStrings.unlinkDir
 */
-trait WatchEvents extends js.Object
+trait WatchEvents extends StObject
 object WatchEvents {
   
   @scala.inline

@@ -5,12 +5,13 @@ import typings.jqueryFinger.jqueryFingerStrings.drag
 import typings.jqueryFinger.jqueryFingerStrings.flick
 import typings.jqueryFinger.jqueryFingerStrings.press
 import typings.jqueryFinger.jqueryFingerStrings.tap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   @JSName("on")
   def on_doubletap(

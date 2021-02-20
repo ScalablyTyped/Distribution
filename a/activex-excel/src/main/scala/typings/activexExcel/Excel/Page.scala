@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Page extends js.Object {
+trait Page extends StObject {
   
   val CenterFooter: HeaderFooter = js.native
   
@@ -40,39 +41,27 @@ object Page {
   }
   
   @scala.inline
-  implicit class PageOps[Self <: Page] (val x: Self) extends AnyVal {
+  implicit class PageMutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenterFooter(value: HeaderFooter): Self = StObject.set(x, "CenterFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterHeader(value: HeaderFooter): Self = StObject.set(x, "CenterHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcelDotPage_typekey(value: Page): Self = StObject.set(x, "Excel.Page_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterFooter(value: HeaderFooter): Self = this.set("CenterFooter", value.asInstanceOf[js.Any])
+    def setLeftFooter(value: HeaderFooter): Self = StObject.set(x, "LeftFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterHeader(value: HeaderFooter): Self = this.set("CenterHeader", value.asInstanceOf[js.Any])
+    def setLeftHeader(value: HeaderFooter): Self = StObject.set(x, "LeftHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelDotPage_typekey(value: Page): Self = this.set("Excel.Page_typekey", value.asInstanceOf[js.Any])
+    def setRightFooter(value: HeaderFooter): Self = StObject.set(x, "RightFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftFooter(value: HeaderFooter): Self = this.set("LeftFooter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLeftHeader(value: HeaderFooter): Self = this.set("LeftHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightFooter(value: HeaderFooter): Self = this.set("RightFooter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightHeader(value: HeaderFooter): Self = this.set("RightHeader", value.asInstanceOf[js.Any])
+    def setRightHeader(value: HeaderFooter): Self = StObject.set(x, "RightHeader", value.asInstanceOf[js.Any])
   }
 }

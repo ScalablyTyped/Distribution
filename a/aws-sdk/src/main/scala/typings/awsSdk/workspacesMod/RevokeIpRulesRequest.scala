@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RevokeIpRulesRequest extends js.Object {
+trait RevokeIpRulesRequest extends StObject {
   
   /**
     * The identifier of the group.
@@ -26,27 +27,15 @@ object RevokeIpRulesRequest {
   }
   
   @scala.inline
-  implicit class RevokeIpRulesRequestOps[Self <: RevokeIpRulesRequest] (val x: Self) extends AnyVal {
+  implicit class RevokeIpRulesRequestMutableBuilder[Self <: RevokeIpRulesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupId(value: IpGroupId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUserRules(value: IpRevokedRuleList): Self = StObject.set(x, "UserRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGroupId(value: IpGroupId): Self = this.set("GroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserRulesVarargs(value: IpRule*): Self = this.set("UserRules", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserRules(value: IpRevokedRuleList): Self = this.set("UserRules", value.asInstanceOf[js.Any])
+    def setUserRulesVarargs(value: IpRule*): Self = StObject.set(x, "UserRules", js.Array(value :_*))
   }
 }

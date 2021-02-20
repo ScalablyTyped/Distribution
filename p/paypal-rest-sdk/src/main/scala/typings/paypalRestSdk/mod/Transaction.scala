@@ -2,12 +2,13 @@ package typings.paypalRestSdk.mod
 
 import typings.paypalRestSdk.anon.Allowedpaymentmethod
 import typings.paypalRestSdk.anon.Items
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Transaction extends js.Object {
+trait Transaction extends StObject {
   
   var amount: Amount = js.native
   
@@ -46,102 +47,90 @@ object Transaction {
   }
   
   @scala.inline
-  implicit class TransactionOps[Self <: Transaction] (val x: Self) extends AnyVal {
+  implicit class TransactionMutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: Amount): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustom(value: String): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     @scala.inline
-    def setAmount(value: Amount): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom(value: String): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCustom: Self = this.set("custom", js.undefined)
+    def setInvoice_number(value: String): Self = StObject.set(x, "invoice_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setInvoice_numberUndefined: Self = StObject.set(x, "invoice_number", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setItem_list(value: Items): Self = StObject.set(x, "item_list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvoice_number(value: String): Self = this.set("invoice_number", value.asInstanceOf[js.Any])
+    def setItem_listUndefined: Self = StObject.set(x, "item_list", js.undefined)
     
     @scala.inline
-    def deleteInvoice_number: Self = this.set("invoice_number", js.undefined)
+    def setNote_to_payee(value: String): Self = StObject.set(x, "note_to_payee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem_list(value: Items): Self = this.set("item_list", value.asInstanceOf[js.Any])
+    def setNote_to_payeeUndefined: Self = StObject.set(x, "note_to_payee", js.undefined)
     
     @scala.inline
-    def deleteItem_list: Self = this.set("item_list", js.undefined)
+    def setNotify_url(value: String): Self = StObject.set(x, "notify_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNote_to_payee(value: String): Self = this.set("note_to_payee", value.asInstanceOf[js.Any])
+    def setNotify_urlUndefined: Self = StObject.set(x, "notify_url", js.undefined)
     
     @scala.inline
-    def deleteNote_to_payee: Self = this.set("note_to_payee", js.undefined)
+    def setOrder_url(value: String): Self = StObject.set(x, "order_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotify_url(value: String): Self = this.set("notify_url", value.asInstanceOf[js.Any])
+    def setOrder_urlUndefined: Self = StObject.set(x, "order_url", js.undefined)
     
     @scala.inline
-    def deleteNotify_url: Self = this.set("notify_url", js.undefined)
+    def setPayee(value: Payee): Self = StObject.set(x, "payee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder_url(value: String): Self = this.set("order_url", value.asInstanceOf[js.Any])
+    def setPayeeUndefined: Self = StObject.set(x, "payee", js.undefined)
     
     @scala.inline
-    def deleteOrder_url: Self = this.set("order_url", js.undefined)
+    def setPayment_options(value: Allowedpaymentmethod): Self = StObject.set(x, "payment_options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayee(value: Payee): Self = this.set("payee", value.asInstanceOf[js.Any])
+    def setPayment_optionsUndefined: Self = StObject.set(x, "payment_options", js.undefined)
     
     @scala.inline
-    def deletePayee: Self = this.set("payee", js.undefined)
+    def setPurchase_order(value: String): Self = StObject.set(x, "purchase_order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayment_options(value: Allowedpaymentmethod): Self = this.set("payment_options", value.asInstanceOf[js.Any])
+    def setPurchase_orderUndefined: Self = StObject.set(x, "purchase_order", js.undefined)
     
     @scala.inline
-    def deletePayment_options: Self = this.set("payment_options", js.undefined)
+    def setReference_id(value: String): Self = StObject.set(x, "reference_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurchase_order(value: String): Self = this.set("purchase_order", value.asInstanceOf[js.Any])
+    def setReference_idUndefined: Self = StObject.set(x, "reference_id", js.undefined)
     
     @scala.inline
-    def deletePurchase_order: Self = this.set("purchase_order", js.undefined)
+    def setRelated_resources(value: js.Array[RelatedResources]): Self = StObject.set(x, "related_resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReference_id(value: String): Self = this.set("reference_id", value.asInstanceOf[js.Any])
+    def setRelated_resourcesUndefined: Self = StObject.set(x, "related_resources", js.undefined)
     
     @scala.inline
-    def deleteReference_id: Self = this.set("reference_id", js.undefined)
+    def setRelated_resourcesVarargs(value: RelatedResources*): Self = StObject.set(x, "related_resources", js.Array(value :_*))
     
     @scala.inline
-    def setRelated_resourcesVarargs(value: RelatedResources*): Self = this.set("related_resources", js.Array(value :_*))
+    def setSoft_descriptor(value: String): Self = StObject.set(x, "soft_descriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelated_resources(value: js.Array[RelatedResources]): Self = this.set("related_resources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelated_resources: Self = this.set("related_resources", js.undefined)
-    
-    @scala.inline
-    def setSoft_descriptor(value: String): Self = this.set("soft_descriptor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSoft_descriptor: Self = this.set("soft_descriptor", js.undefined)
+    def setSoft_descriptorUndefined: Self = StObject.set(x, "soft_descriptor", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.swiper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HashNavigationOptions extends js.Object {
+trait HashNavigationOptions extends StObject {
   
   /**
     * Works in addition to hashnav to replace current url state with the
@@ -32,30 +33,18 @@ object HashNavigationOptions {
   }
   
   @scala.inline
-  implicit class HashNavigationOptionsOps[Self <: HashNavigationOptions] (val x: Self) extends AnyVal {
+  implicit class HashNavigationOptionsMutableBuilder[Self <: HashNavigationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReplaceState(value: Boolean): Self = StObject.set(x, "replaceState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReplaceStateUndefined: Self = StObject.set(x, "replaceState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWatchState(value: Boolean): Self = StObject.set(x, "watchState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplaceState(value: Boolean): Self = this.set("replaceState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplaceState: Self = this.set("replaceState", js.undefined)
-    
-    @scala.inline
-    def setWatchState(value: Boolean): Self = this.set("watchState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWatchState: Self = this.set("watchState", js.undefined)
+    def setWatchStateUndefined: Self = StObject.set(x, "watchState", js.undefined)
   }
 }

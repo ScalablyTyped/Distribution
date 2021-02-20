@@ -1,11 +1,12 @@
 package typings.awsSdk.codestarMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Toolchain extends js.Object {
+trait Toolchain extends StObject {
   
   /**
     * The service role ARN for AWS CodeStar to use for the toolchain template during stack provisioning.
@@ -31,33 +32,21 @@ object Toolchain {
   }
   
   @scala.inline
-  implicit class ToolchainOps[Self <: Toolchain] (val x: Self) extends AnyVal {
+  implicit class ToolchainMutableBuilder[Self <: Toolchain] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource(value: ToolchainSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: ToolchainSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setStackParameters(value: TemplateParameterMap): Self = StObject.set(x, "stackParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
-    
-    @scala.inline
-    def setStackParameters(value: TemplateParameterMap): Self = this.set("stackParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackParameters: Self = this.set("stackParameters", js.undefined)
+    def setStackParametersUndefined: Self = StObject.set(x, "stackParameters", js.undefined)
   }
 }

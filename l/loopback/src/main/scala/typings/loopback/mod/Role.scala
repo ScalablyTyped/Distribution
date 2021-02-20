@@ -1,6 +1,7 @@
 package typings.loopback.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,11 +14,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "Role")
 @js.native
-class Role () extends PersistedModel
-/* static members */
-@JSImport("loopback", "Role")
-@js.native
-object Role extends js.Object {
+class Role protected () extends PersistedModel {
+  def this(data: js.Any) = this()
+}
+object Role {
   
   /**
     * List roles for a given principal.
@@ -26,6 +26,9 @@ object Role extends js.Object {
     * @param {Error} err Error object.
     * @param {string[]} roles An Array of role IDs
     */
+  /* static member */
+  @JSImport("loopback", "Role.getRoles")
+  @js.native
   def getRoles(context: js.Any, callback: js.Function2[/* err */ Error, /* roles */ js.Array[String], Unit]): Unit = js.native
   
   /**
@@ -34,6 +37,9 @@ object Role extends js.Object {
     * @param {Error} err Error object.
     * @param {boolean} isAuthenticated True if the user is authenticated.
     */
+  /* static member */
+  @JSImport("loopback", "Role.isAuthenticated")
+  @js.native
   def isAuthenticated(context: js.Any, callback: js.Function2[/* err */ Error, /* isAuthenticated */ Boolean, Unit]): Unit = js.native
   
   /**
@@ -44,6 +50,9 @@ object Role extends js.Object {
     * @param {Error} err Error object.
     * @param {boolean} isInRole True if the principal is in the specified role.
     */
+  /* static member */
+  @JSImport("loopback", "Role.isInRole")
+  @js.native
   def isInRole(
     role: String,
     context: js.Any,
@@ -57,6 +66,9 @@ object Role extends js.Object {
     * @param {*} userId The user ID
     * @param {() => void} callback Callback function
     */
+  /* static member */
+  @JSImport("loopback", "Role.isOwner")
+  @js.native
   def isOwner(modelClass: js.Function0[Unit], modelId: js.Any, userId: js.Any, callback: js.Function0[Unit]): Unit = js.native
   
   /**
@@ -66,6 +78,9 @@ object Role extends js.Object {
     * if a principal is in the specified role.
     * Should provide a callback or return a promise.
     */
+  /* static member */
+  @JSImport("loopback", "Role.registerResolver")
+  @js.native
   def registerResolver(
     role: String,
     resolver: js.Function3[

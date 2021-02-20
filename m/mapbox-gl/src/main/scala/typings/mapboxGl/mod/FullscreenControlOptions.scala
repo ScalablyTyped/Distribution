@@ -1,12 +1,13 @@
 package typings.mapboxGl.mod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FullscreenControlOptions extends js.Object {
+trait FullscreenControlOptions extends StObject {
   
   /**
     * A compatible DOM element which should be made full screen.
@@ -23,27 +24,15 @@ object FullscreenControlOptions {
   }
   
   @scala.inline
-  implicit class FullscreenControlOptionsOps[Self <: FullscreenControlOptions] (val x: Self) extends AnyVal {
+  implicit class FullscreenControlOptionsMutableBuilder[Self <: FullscreenControlOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerNull: Self = StObject.set(x, "container", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContainer(value: HTMLElement): Self = this.set("container", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
-    
-    @scala.inline
-    def setContainerNull: Self = this.set("container", null)
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
   }
 }

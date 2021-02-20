@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RelationalDatabaseEndpoint extends js.Object {
+trait RelationalDatabaseEndpoint extends StObject {
   
   /**
     * Specifies the DNS address of the database.
@@ -26,30 +27,18 @@ object RelationalDatabaseEndpoint {
   }
   
   @scala.inline
-  implicit class RelationalDatabaseEndpointOps[Self <: RelationalDatabaseEndpoint] (val x: Self) extends AnyVal {
+  implicit class RelationalDatabaseEndpointMutableBuilder[Self <: RelationalDatabaseEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: NonEmptyString): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPort(value: integer): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: NonEmptyString): Self = this.set("address", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
-    
-    @scala.inline
-    def setPort(value: integer): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.playmusic.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlaylistItem extends js.Object {
+trait PlaylistItem extends StObject {
   
   var absolutePosition: js.UndefOr[String] = js.native
   
@@ -38,84 +39,72 @@ object PlaylistItem {
   }
   
   @scala.inline
-  implicit class PlaylistItemOps[Self <: PlaylistItem] (val x: Self) extends AnyVal {
+  implicit class PlaylistItemMutableBuilder[Self <: PlaylistItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsolutePosition(value: String): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbsolutePositionUndefined: Self = StObject.set(x, "absolutePosition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbsolutePosition(value: String): Self = this.set("absolutePosition", value.asInstanceOf[js.Any])
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def deleteAbsolutePosition: Self = this.set("absolutePosition", js.undefined)
+    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
     @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
+    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
     @scala.inline
-    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLastModifiedTimestamp(value: String): Self = StObject.set(x, "lastModifiedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLastModifiedTimestampUndefined: Self = StObject.set(x, "lastModifiedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPlaylistId(value: String): Self = StObject.set(x, "playlistId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedTimestamp(value: String): Self = this.set("lastModifiedTimestamp", value.asInstanceOf[js.Any])
+    def setPlaylistIdUndefined: Self = StObject.set(x, "playlistId", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedTimestamp: Self = this.set("lastModifiedTimestamp", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaylistId(value: String): Self = this.set("playlistId", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deletePlaylistId: Self = this.set("playlistId", js.undefined)
+    def setTrack(value: PlaylistTrack): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setTrackId(value: String): Self = StObject.set(x, "trackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setTrackIdUndefined: Self = StObject.set(x, "trackId", js.undefined)
     
     @scala.inline
-    def setTrack(value: PlaylistTrack): Self = this.set("track", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrack: Self = this.set("track", js.undefined)
-    
-    @scala.inline
-    def setTrackId(value: String): Self = this.set("trackId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackId: Self = this.set("trackId", js.undefined)
+    def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
   }
 }

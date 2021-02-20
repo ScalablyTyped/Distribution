@@ -1,11 +1,12 @@
 package typings.wxServerSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiPolygon extends js.Object {
+trait MultiPolygon extends StObject {
   
   def apply(polygons: js.Array[Polygon]): MultiPolygon = js.native
   

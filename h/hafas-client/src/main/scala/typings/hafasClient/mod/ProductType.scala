@@ -9,6 +9,7 @@ import typings.hafasClient.hafasClientStrings.taxi
 import typings.hafasClient.hafasClientStrings.train
 import typings.hafasClient.hafasClientStrings.walking
 import typings.hafasClient.hafasClientStrings.watercraft
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,11 +20,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * stations and look different. Therefore, they are two distinct products subway and suburban.
   */
 @js.native
-trait ProductType extends js.Object {
-  
-  var bitmasks: js.Array[Double] = js.native
+trait ProductType extends StObject {
   
   var default: Boolean = js.native
+  
+  var bitmasks: js.Array[Double] = js.native
   
   var id: String = js.native
   
@@ -49,39 +50,27 @@ object ProductType {
   }
   
   @scala.inline
-  implicit class ProductTypeOps[Self <: ProductType] (val x: Self) extends AnyVal {
+  implicit class ProductTypeMutableBuilder[Self <: ProductType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitmasks(value: js.Array[Double]): Self = StObject.set(x, "bitmasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitmasksVarargs(value: Double*): Self = StObject.set(x, "bitmasks", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitmasksVarargs(value: Double*): Self = this.set("bitmasks", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitmasks(value: js.Array[Double]): Self = this.set("bitmasks", value.asInstanceOf[js.Any])
+    def setMode(value: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: Boolean): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMode(value: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShort(value: String): Self = this.set("short", value.asInstanceOf[js.Any])
+    def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
   }
 }

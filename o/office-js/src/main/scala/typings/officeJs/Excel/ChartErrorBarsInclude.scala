@@ -1,11 +1,12 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartErrorBarsInclude extends js.Object
+sealed trait ChartErrorBarsInclude extends StObject
 /**
   *
   * Represents which parts of the error bar to include.
@@ -14,7 +15,7 @@ sealed trait ChartErrorBarsInclude extends js.Object
   */
 @JSGlobal("Excel.ChartErrorBarsInclude")
 @js.native
-object ChartErrorBarsInclude extends js.Object {
+object ChartErrorBarsInclude extends StObject {
   
   @js.native
   sealed trait both extends ChartErrorBarsInclude

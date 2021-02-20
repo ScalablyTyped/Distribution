@@ -48,22 +48,21 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.textsMod.texts.Text
 import typings.mendixmodelsdk.versionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.versionChecksMod.StructureType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/nativepages", JSImport.Namespace)
-@js.native
-object nativepagesMod extends js.Object {
+object nativepagesMod {
   
+  @JSImport("mendixmodelsdk/dist/gen/nativepages", "StructureVersionInfo")
   @js.native
   class StructureVersionInfo protected ()
     extends typings.mendixmodelsdk.internalMod.StructureVersionInfo {
     def this(info: IStructureVersionInfo, structureType: StructureType) = this()
   }
   
-  @js.native
-  object nativepages extends js.Object {
+  object nativepages {
     
     /**
       * Interfaces and instance classes for types from the Mendix sub meta model `NativePages`.
@@ -75,6 +74,7 @@ object nativepagesMod extends js.Object {
       *
       * In version 8.0.0: introduced
       */
+    @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.BottomBarItem")
     @js.native
     class BottomBarItem protected () extends Element[IModel] {
       def this(
@@ -109,15 +109,20 @@ object nativepagesMod extends js.Object {
       
       def page_=(newValue: IPage | Null): Unit = js.native
     }
-    /* static members */
-    @js.native
-    object BottomBarItem extends js.Object {
+    object BottomBarItem {
+      
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.BottomBarItem")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Creates and returns a new BottomBarItem instance in the SDK and on the server.
         * Expects one argument: the IModel object the instance will "live on".
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.BottomBarItem.create")
+      @js.native
       def create(model: IModel): BottomBarItem = js.native
       
       /**
@@ -128,34 +133,25 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  8.0.0 and higher
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.BottomBarItem.createIn")
+      @js.native
       def createIn(container: NativeNavigationProfile): BottomBarItem = js.native
       
-      var structureTypeName: String = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.BottomBarItem.structureTypeName")
+      @js.native
+      def structureTypeName: String = js.native
+      @scala.inline
+      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
-      var versionInfo: StructureVersionInfo = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.BottomBarItem.versionInfo")
+      @js.native
+      def versionInfo: StructureVersionInfo = js.native
+      @scala.inline
+      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
-    
-    /**
-      * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-      *
-      * @ignore
-      *
-      * In version 8.0.0: deleted
-      * In version 7.21.0: introduced
-      */
-    @js.native
-    trait INativeLayout extends IFormBase
-    
-    /**
-      * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-      *
-      * @ignore
-      *
-      * In version 8.0.0: deleted
-      * In version 7.21.0: introduced
-      */
-    @js.native
-    trait INativePage extends IFormBase
     
     /**
       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
@@ -175,7 +171,8 @@ object nativepagesMod extends js.Object {
     - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
     - typings.mendixmodelsdk.pagesMod.pages.IFormBase because Already inherited
-    - typings.mendixmodelsdk.nativepagesMod.nativepages.INativeLayout because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
+    - typings.mendixmodelsdk.nativepagesMod.nativepages.INativeLayout because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativeLayout")
+    @js.native
     class NativeLayout protected () extends FormBase {
       def this(
         model: AbstractModel,
@@ -196,19 +193,34 @@ object nativepagesMod extends js.Object {
       
       def widgets: IList[Widget] = js.native
     }
-    /* static members */
-    @js.native
-    object NativeLayout extends js.Object {
+    object NativeLayout {
+      
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativeLayout")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Creates a new NativeLayout unit in the SDK and on the server.
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativeLayout.createIn")
+      @js.native
       def createIn(container: IFolderBase): NativeLayout = js.native
       
-      var structureTypeName: String = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativeLayout.structureTypeName")
+      @js.native
+      def structureTypeName: String = js.native
+      @scala.inline
+      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
-      var versionInfo: StructureVersionInfo = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativeLayout.versionInfo")
+      @js.native
+      def versionInfo: StructureVersionInfo = js.native
+      @scala.inline
+      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -219,6 +231,7 @@ object nativepagesMod extends js.Object {
       * In version 8.0.0: deleted
       * In version 7.23.0: introduced
       */
+    @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativeLayoutCallArgument")
     @js.native
     class NativeLayoutCallArgument protected () extends Element[IModel] {
       def this(
@@ -240,15 +253,20 @@ object nativepagesMod extends js.Object {
       
       def widgets: IList[Widget] = js.native
     }
-    /* static members */
-    @js.native
-    object NativeLayoutCallArgument extends js.Object {
+    object NativeLayoutCallArgument {
+      
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativeLayoutCallArgument")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Creates and returns a new NativeLayoutCallArgument instance in the SDK and on the server.
         * Expects one argument: the IModel object the instance will "live on".
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativeLayoutCallArgument.create")
+      @js.native
       def create(model: IModel): NativeLayoutCallArgument = js.native
       
       /**
@@ -259,11 +277,24 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativeLayoutCallArgument.createIn")
+      @js.native
       def createIn(container: NativePage): NativeLayoutCallArgument = js.native
       
-      var structureTypeName: String = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativeLayoutCallArgument.structureTypeName")
+      @js.native
+      def structureTypeName: String = js.native
+      @scala.inline
+      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
-      var versionInfo: StructureVersionInfo = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativeLayoutCallArgument.versionInfo")
+      @js.native
+      def versionInfo: StructureVersionInfo = js.native
+      @scala.inline
+      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -284,7 +315,8 @@ object nativepagesMod extends js.Object {
     - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
     - typings.mendixmodelsdk.pagesMod.pages.IFormBase because Already inherited
-    - typings.mendixmodelsdk.nativepagesMod.nativepages.INativePage because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
+    - typings.mendixmodelsdk.nativepagesMod.nativepages.INativePage because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePage")
+    @js.native
     class NativePage protected () extends FormBase {
       def this(
         model: AbstractModel,
@@ -317,19 +349,34 @@ object nativepagesMod extends js.Object {
       
       def layout_=(newValue: INativeLayout): Unit = js.native
     }
-    /* static members */
-    @js.native
-    object NativePage extends js.Object {
+    object NativePage {
+      
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePage")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Creates a new NativePage unit in the SDK and on the server.
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePage.createIn")
+      @js.native
       def createIn(container: IFolderBase): NativePage = js.native
       
-      var structureTypeName: String = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePage.structureTypeName")
+      @js.native
+      def structureTypeName: String = js.native
+      @scala.inline
+      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
-      var versionInfo: StructureVersionInfo = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePage.versionInfo")
+      @js.native
+      def versionInfo: StructureVersionInfo = js.native
+      @scala.inline
+      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -340,6 +387,7 @@ object nativepagesMod extends js.Object {
       * In version 8.0.0: deleted
       * In version 7.23.0: introduced
       */
+    @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction")
     @js.native
     class NativePageClientAction protected () extends ClientAction {
       def this(
@@ -362,15 +410,20 @@ object nativepagesMod extends js.Object {
       
       def page_=(newValue: INativePage | Null): Unit = js.native
     }
-    /* static members */
-    @js.native
-    object NativePageClientAction extends js.Object {
+    object NativePageClientAction {
+      
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
         * Expects one argument: the IModel object the instance will "live on".
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.create")
+      @js.native
       def create(model: IModel): NativePageClientAction = js.native
       
       /**
@@ -381,6 +434,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInActionButtonUnderAction")
+      @js.native
       def createInActionButtonUnderAction(container: ActionButton): NativePageClientAction = js.native
       
       /**
@@ -391,6 +447,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInActionItemUnderAction")
+      @js.native
       def createInActionItemUnderAction(container: ActionItem): NativePageClientAction = js.native
       
       /**
@@ -401,6 +460,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInAssociationWidgetUnderOnChangeAction")
+      @js.native
       def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): NativePageClientAction = js.native
       
       /**
@@ -411,6 +473,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInAttributeWidgetUnderOnChangeAction")
+      @js.native
       def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): NativePageClientAction = js.native
       
       /**
@@ -421,6 +486,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInAttributeWidgetUnderOnEnterAction")
+      @js.native
       def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): NativePageClientAction = js.native
       
       /**
@@ -431,6 +499,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInAttributeWidgetUnderOnLeaveAction")
+      @js.native
       def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): NativePageClientAction = js.native
       
       /**
@@ -441,6 +512,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInDynamicImageViewerUnderClickAction")
+      @js.native
       def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): NativePageClientAction = js.native
       
       /**
@@ -451,6 +525,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInGridActionButtonUnderAction")
+      @js.native
       def createInGridActionButtonUnderAction(container: GridActionButton): NativePageClientAction = js.native
       
       /**
@@ -461,6 +538,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInListViewUnderClickAction")
+      @js.native
       def createInListViewUnderClickAction(container: ListView): NativePageClientAction = js.native
       
       /**
@@ -471,6 +551,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInMenuItemUnderAction")
+      @js.native
       def createInMenuItemUnderAction(container: MenuItem): NativePageClientAction = js.native
       
       /**
@@ -481,6 +564,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInReferenceSetSelectorUnderOnChangeAction")
+      @js.native
       def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): NativePageClientAction = js.native
       
       /**
@@ -491,6 +577,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInStaticImageViewerUnderClickAction")
+      @js.native
       def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): NativePageClientAction = js.native
       
       /**
@@ -501,11 +590,24 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInWidgetValueUnderAction")
+      @js.native
       def createInWidgetValueUnderAction(container: WidgetValue): NativePageClientAction = js.native
       
-      var structureTypeName: String = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.structureTypeName")
+      @js.native
+      def structureTypeName: String = js.native
+      @scala.inline
+      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
-      var versionInfo: StructureVersionInfo = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.versionInfo")
+      @js.native
+      def versionInfo: StructureVersionInfo = js.native
+      @scala.inline
+      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -516,6 +618,7 @@ object nativepagesMod extends js.Object {
       * In version 8.0.0: deleted
       * In version 7.23.0: introduced
       */
+    @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder")
     @js.native
     class NativePlaceholder protected () extends Widget {
       def this(
@@ -527,15 +630,20 @@ object nativepagesMod extends js.Object {
         container: AbstractElement[IAbstractModel, Container]
       ) = this()
     }
-    /* static members */
-    @js.native
-    object NativePlaceholder extends js.Object {
+    object NativePlaceholder {
+      
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
         * Expects one argument: the IModel object the instance will "live on".
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.create")
+      @js.native
       def create(model: IModel): NativePlaceholder = js.native
       
       /**
@@ -546,6 +654,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInBuildingBlockUnderWidgets")
+      @js.native
       def createInBuildingBlockUnderWidgets(container: BuildingBlock): NativePlaceholder = js.native
       
       /**
@@ -556,6 +667,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInDataViewUnderFooterWidgets")
+      @js.native
       def createInDataViewUnderFooterWidgets(container: DataView): NativePlaceholder = js.native
       
       /**
@@ -566,6 +680,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInDataViewUnderWidgets")
+      @js.native
       def createInDataViewUnderWidgets(container: DataView): NativePlaceholder = js.native
       
       /**
@@ -576,6 +693,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInDivContainerUnderWidgets")
+      @js.native
       def createInDivContainerUnderWidgets(container: DivContainer): NativePlaceholder = js.native
       
       /**
@@ -586,6 +706,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInGroupBoxUnderWidgets")
+      @js.native
       def createInGroupBoxUnderWidgets(container: GroupBox): NativePlaceholder = js.native
       
       /**
@@ -596,6 +719,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInHeaderUnderLeftWidgets")
+      @js.native
       def createInHeaderUnderLeftWidgets(container: Header): NativePlaceholder = js.native
       
       /**
@@ -606,6 +732,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInHeaderUnderRightWidgets")
+      @js.native
       def createInHeaderUnderRightWidgets(container: Header): NativePlaceholder = js.native
       
       /**
@@ -616,6 +745,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInLayoutCallArgumentUnderWidgets")
+      @js.native
       def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): NativePlaceholder = js.native
       
       /**
@@ -626,6 +758,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInLayoutGridColumnUnderWidgets")
+      @js.native
       def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): NativePlaceholder = js.native
       
       /**
@@ -636,6 +771,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInLayoutUnderWidgets")
+      @js.native
       def createInLayoutUnderWidgets(container: Layout): NativePlaceholder = js.native
       
       /**
@@ -646,6 +784,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInListViewTemplateUnderWidgets")
+      @js.native
       def createInListViewTemplateUnderWidgets(container: ListViewTemplate): NativePlaceholder = js.native
       
       /**
@@ -656,6 +797,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInListViewUnderWidgets")
+      @js.native
       def createInListViewUnderWidgets(container: ListView): NativePlaceholder = js.native
       
       /**
@@ -666,6 +810,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInNativeLayoutCallArgumentUnderWidgets")
+      @js.native
       def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): NativePlaceholder = js.native
       
       /**
@@ -676,6 +823,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInNativeLayoutUnderHeaderWidget")
+      @js.native
       def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): NativePlaceholder = js.native
       
       /**
@@ -686,6 +836,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInNativeLayoutUnderWidgets")
+      @js.native
       def createInNativeLayoutUnderWidgets(container: NativeLayout): NativePlaceholder = js.native
       
       /**
@@ -696,6 +849,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInNavigationListItemUnderWidgets")
+      @js.native
       def createInNavigationListItemUnderWidgets(container: NavigationListItem): NativePlaceholder = js.native
       
       /**
@@ -706,6 +862,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInScrollContainerRegionUnderWidgets")
+      @js.native
       def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): NativePlaceholder = js.native
       
       /**
@@ -716,6 +875,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInSnippetUnderWidgets")
+      @js.native
       def createInSnippetUnderWidgets(container: Snippet): NativePlaceholder = js.native
       
       /**
@@ -726,6 +888,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInSplitPaneUnderFirstWidgets")
+      @js.native
       def createInSplitPaneUnderFirstWidgets(container: SplitPane): NativePlaceholder = js.native
       
       /**
@@ -736,6 +901,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInSplitPaneUnderSecondWidgets")
+      @js.native
       def createInSplitPaneUnderSecondWidgets(container: SplitPane): NativePlaceholder = js.native
       
       /**
@@ -746,6 +914,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInTabPageUnderWidgets")
+      @js.native
       def createInTabPageUnderWidgets(container: TabPage): NativePlaceholder = js.native
       
       /**
@@ -756,6 +927,9 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInTableCellUnderWidgets")
+      @js.native
       def createInTableCellUnderWidgets(container: TableCell): NativePlaceholder = js.native
       
       /**
@@ -766,11 +940,46 @@ object nativepagesMod extends js.Object {
         * Warning! Can only be used on models with the following Mendix meta model versions:
         *  7.23.0 to 7.23.0
         */
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInTemplateGridContentsUnderWidgets")
+      @js.native
       def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): NativePlaceholder = js.native
       
-      var structureTypeName: String = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.structureTypeName")
+      @js.native
+      def structureTypeName: String = js.native
+      @scala.inline
+      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
-      var versionInfo: StructureVersionInfo = js.native
+      /* static member */
+      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.versionInfo")
+      @js.native
+      def versionInfo: StructureVersionInfo = js.native
+      @scala.inline
+      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
+    
+    /**
+      * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+      *
+      * @ignore
+      *
+      * In version 8.0.0: deleted
+      * In version 7.21.0: introduced
+      */
+    @js.native
+    trait INativeLayout extends IFormBase
+    
+    /**
+      * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+      *
+      * @ignore
+      *
+      * In version 8.0.0: deleted
+      * In version 7.21.0: introduced
+      */
+    @js.native
+    trait INativePage extends IFormBase
   }
 }

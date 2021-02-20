@@ -1,9 +1,10 @@
 package typings.googleGax.mod
 
 import typings.googleGax.gaxMod.CallOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-gax", "CallSettings")
 @js.native
@@ -22,9 +23,6 @@ import scala.scalajs.js.annotation._
   * in the page streaming request.
   * @param {Object} settings.otherArgs - Additional arguments to be passed to
   *   the API calls.
-  * @param {Function=} settings.promise - A constructor for a promise that
-  * implements the ES6 specification of promise. If not provided, native
-  * promises will be used.
   *
   * @constructor
   */
@@ -32,4 +30,3 @@ class CallSettings ()
   extends typings.googleGax.gaxMod.CallSettings {
   def this(settings: CallOptions) = this()
 }
-

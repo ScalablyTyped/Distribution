@@ -4,12 +4,13 @@ import typings.c3.anon.Min
 import typings.c3.c3Strings.drag
 import typings.c3.c3Strings.scroll
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ZoomOptions extends js.Object {
+trait ZoomOptions extends StObject {
   
   /**
     * Disable the default animation of zoom. This option is useful when you want to get the zoomed domain by `onzoom` or `onzoomend` handlers and override the default animation behavior.
@@ -71,84 +72,72 @@ object ZoomOptions {
   }
   
   @scala.inline
-  implicit class ZoomOptionsOps[Self <: ZoomOptions] (val x: Self) extends AnyVal {
+  implicit class ZoomOptionsMutableBuilder[Self <: ZoomOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableDefaultBehavior(value: Boolean): Self = StObject.set(x, "disableDefaultBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableDefaultBehaviorUndefined: Self = StObject.set(x, "disableDefaultBehavior", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableDefaultBehavior(value: Boolean): Self = this.set("disableDefaultBehavior", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDisableDefaultBehavior: Self = this.set("disableDefaultBehavior", js.undefined)
+    def setExtent(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setInitialRange(value: Domain): Self = StObject.set(x, "initialRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtent(value: js.Tuple2[Double, Double]): Self = this.set("extent", value.asInstanceOf[js.Any])
+    def setInitialRangeUndefined: Self = StObject.set(x, "initialRange", js.undefined)
     
     @scala.inline
-    def deleteExtent: Self = this.set("extent", js.undefined)
+    def setOnzoom(value: js.ThisFunction1[/* this */ ChartAPI, /* domain */ Domain, Unit]): Self = StObject.set(x, "onzoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialRange(value: Domain): Self = this.set("initialRange", value.asInstanceOf[js.Any])
+    def setOnzoomUndefined: Self = StObject.set(x, "onzoom", js.undefined)
     
     @scala.inline
-    def deleteInitialRange: Self = this.set("initialRange", js.undefined)
+    def setOnzoomend(value: js.ThisFunction1[/* this */ ChartAPI, /* domain */ Domain, Unit]): Self = StObject.set(x, "onzoomend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnzoom(value: js.ThisFunction1[/* this */ ChartAPI, /* domain */ Domain, Unit]): Self = this.set("onzoom", value.asInstanceOf[js.Any])
+    def setOnzoomendUndefined: Self = StObject.set(x, "onzoomend", js.undefined)
     
     @scala.inline
-    def deleteOnzoom: Self = this.set("onzoom", js.undefined)
+    def setOnzoomstart(value: js.ThisFunction1[/* this */ ChartAPI, /* event */ Event, Unit]): Self = StObject.set(x, "onzoomstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnzoomend(value: js.ThisFunction1[/* this */ ChartAPI, /* domain */ Domain, Unit]): Self = this.set("onzoomend", value.asInstanceOf[js.Any])
+    def setOnzoomstartUndefined: Self = StObject.set(x, "onzoomstart", js.undefined)
     
     @scala.inline
-    def deleteOnzoomend: Self = this.set("onzoomend", js.undefined)
+    def setPriveleged(value: Boolean): Self = StObject.set(x, "priveleged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnzoomstart(value: js.ThisFunction1[/* this */ ChartAPI, /* event */ Event, Unit]): Self = this.set("onzoomstart", value.asInstanceOf[js.Any])
+    def setPrivelegedUndefined: Self = StObject.set(x, "priveleged", js.undefined)
     
     @scala.inline
-    def deleteOnzoomstart: Self = this.set("onzoomstart", js.undefined)
+    def setRescale(value: Boolean): Self = StObject.set(x, "rescale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriveleged(value: Boolean): Self = this.set("priveleged", value.asInstanceOf[js.Any])
+    def setRescaleUndefined: Self = StObject.set(x, "rescale", js.undefined)
     
     @scala.inline
-    def deletePriveleged: Self = this.set("priveleged", js.undefined)
+    def setType(value: scroll | drag): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRescale(value: Boolean): Self = this.set("rescale", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteRescale: Self = this.set("rescale", js.undefined)
+    def setX(value: Min): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: scroll | drag): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setX(value: Min): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

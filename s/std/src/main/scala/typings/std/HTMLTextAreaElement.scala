@@ -3,6 +3,7 @@ package typings.std
 import typings.std.stdStrings.backward
 import typings.std.stdStrings.forward
 import typings.std.stdStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

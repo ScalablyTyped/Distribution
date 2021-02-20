@@ -1,14 +1,14 @@
 package typings.exceljs.mod
 
 import typings.exceljs.exceljsStrings.promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("exceljs", "config")
-@js.native
-object config extends js.Object {
+object config {
   
-  @JSName("setValue")
+  @JSImport("exceljs", "config.setValue")
+  @js.native
   def setValue_promise(key: promise, promise: js.Any): Unit = js.native
 }

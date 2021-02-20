@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextRetrievalMode extends js.Object {
+trait TextRetrievalMode extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -43,42 +44,30 @@ object TextRetrievalMode {
   }
   
   @scala.inline
-  implicit class TextRetrievalModeOps[Self <: TextRetrievalMode] (val x: Self) extends AnyVal {
+  implicit class TextRetrievalModeMutableBuilder[Self <: TextRetrievalMode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuplicate(value: TextRetrievalMode): Self = StObject.set(x, "Duplicate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setIncludeFieldCodes(value: Boolean): Self = StObject.set(x, "IncludeFieldCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setIncludeHiddenText(value: Boolean): Self = StObject.set(x, "IncludeHiddenText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuplicate(value: TextRetrievalMode): Self = this.set("Duplicate", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeFieldCodes(value: Boolean): Self = this.set("IncludeFieldCodes", value.asInstanceOf[js.Any])
+    def setViewType(value: WdViewType): Self = StObject.set(x, "ViewType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeHiddenText(value: Boolean): Self = this.set("IncludeHiddenText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewType(value: WdViewType): Self = this.set("ViewType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotTextRetrievalMode_typekey(value: TextRetrievalMode): Self = this.set("Word.TextRetrievalMode_typekey", value.asInstanceOf[js.Any])
+    def setWordDotTextRetrievalMode_typekey(value: TextRetrievalMode): Self = StObject.set(x, "Word.TextRetrievalMode_typekey", value.asInstanceOf[js.Any])
   }
 }

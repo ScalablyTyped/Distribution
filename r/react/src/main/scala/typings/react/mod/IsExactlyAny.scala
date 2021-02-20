@@ -1,5 +1,6 @@
 package typings.react.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,4 +11,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.react.reactBooleans.`false`
   - typings.react.reactBooleans.`true`
 */
-trait IsExactlyAny[T] extends js.Object
+trait IsExactlyAny[T] extends StObject

@@ -2,16 +2,20 @@ package typings.simplecrawler
 
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("simplecrawler/cookies", JSImport.Namespace)
-@js.native
-object cookiesMod extends js.Object {
+object cookiesMod {
   
+  @JSImport("simplecrawler/cookies", JSImport.Default)
   @js.native
-  class Cookie protected () extends js.Object {
+  class default () extends CookieJar
+  
+  @JSImport("simplecrawler/cookies", "Cookie")
+  @js.native
+  class Cookie protected () extends StObject {
     def this(name: String, value: String, expires: String) = this()
     def this(name: String, value: String, expires: Double) = this()
     def this(name: String, value: String, expires: String, path: String) = this()
@@ -94,9 +98,10 @@ object cookiesMod extends js.Object {
     var value: String = js.native
   }
   /* static members */
-  @js.native
-  object Cookie extends js.Object {
+  object Cookie {
     
+    @JSImport("simplecrawler/cookies", "Cookie.fromString")
+    @js.native
     def fromString(content: String): Cookie = js.native
   }
   
@@ -404,7 +409,4 @@ object cookiesMod extends js.Object {
         ]
     ): js.Array[Cookie] = js.native
   }
-  
-  @js.native
-  class default () extends CookieJar
 }

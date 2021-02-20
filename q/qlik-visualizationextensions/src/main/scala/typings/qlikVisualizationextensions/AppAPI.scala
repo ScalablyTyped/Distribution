@@ -4,16 +4,15 @@ import typings.angular.mod.IPromise
 import typings.qlikVisualizationextensions.FieldAPI.IQField
 import typings.qlikVisualizationextensions.SelectionStateAPI.IQSelectionState
 import typings.qlikVisualizationextensions.TableAPI.IQTable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("AppAPI")
-@js.native
-object AppAPI extends js.Object {
+object AppAPI {
   
   @js.native
-  trait IApp extends js.Object {
+  trait IApp extends StObject {
     
     /**
       * Adds an alternate state in the app. Multiple states within a Qlik Sense

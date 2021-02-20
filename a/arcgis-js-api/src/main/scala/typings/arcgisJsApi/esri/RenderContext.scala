@@ -3,6 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.std.Object
 import typings.std.PropertyKey
 import typings.std.WebGLRenderingContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,33 +64,21 @@ object RenderContext {
   }
   
   @scala.inline
-  implicit class RenderContextOps[Self <: RenderContext] (val x: Self) extends AnyVal {
+  implicit class RenderContextMutableBuilder[Self <: RenderContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindRenderTarget(value: () => Unit): Self = StObject.set(x, "bindRenderTarget", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCamera(value: RenderCamera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGl(value: WebGLRenderingContext): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindRenderTarget(value: () => Unit): Self = this.set("bindRenderTarget", js.Any.fromFunction0(value))
+    def setResetWebGLState(value: () => Unit): Self = StObject.set(x, "resetWebGLState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCamera(value: RenderCamera): Self = this.set("camera", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGl(value: WebGLRenderingContext): Self = this.set("gl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResetWebGLState(value: () => Unit): Self = this.set("resetWebGLState", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSunLight(value: SunLight): Self = this.set("sunLight", value.asInstanceOf[js.Any])
+    def setSunLight(value: SunLight): Self = StObject.set(x, "sunLight", value.asInstanceOf[js.Any])
   }
 }

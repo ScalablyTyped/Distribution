@@ -4,13 +4,14 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdIcon.fontIconMod.FontIconProps
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/material-icons/types/PermContactCalendarFontIcon", JSImport.Namespace)
-@js.native
-object permContactCalendarFontIconMod extends js.Object {
+object permContactCalendarFontIconMod {
   
+  @JSImport("@react-md/material-icons/types/PermContactCalendarFontIcon", "PermContactCalendarFontIcon")
+  @js.native
   val PermContactCalendarFontIcon: ForwardRefExoticComponent[FontIconProps with RefAttributes[HTMLElement]] = js.native
 }

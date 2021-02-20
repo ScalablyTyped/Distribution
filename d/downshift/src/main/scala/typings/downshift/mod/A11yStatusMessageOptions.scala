@@ -1,11 +1,12 @@
 package typings.downshift.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait A11yStatusMessageOptions[Item] extends js.Object {
+trait A11yStatusMessageOptions[Item] extends StObject {
   
   var highlightedIndex: Double | Null = js.native
   

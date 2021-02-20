@@ -1,11 +1,12 @@
 package typings.karma.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientOptions extends js.Object {
+trait ClientOptions extends StObject {
   
   /**
     * @default undefined
@@ -63,57 +64,45 @@ object ClientOptions {
   }
   
   @scala.inline
-  implicit class ClientOptionsOps[Self <: ClientOptions] (val x: Self) extends AnyVal {
+  implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    def setCaptureConsole(value: Boolean): Self = StObject.set(x, "captureConsole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setCaptureConsoleUndefined: Self = StObject.set(x, "captureConsole", js.undefined)
     
     @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
+    def setClearContext(value: Boolean): Self = StObject.set(x, "clearContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureConsole(value: Boolean): Self = this.set("captureConsole", value.asInstanceOf[js.Any])
+    def setClearContextUndefined: Self = StObject.set(x, "clearContext", js.undefined)
     
     @scala.inline
-    def deleteCaptureConsole: Self = this.set("captureConsole", js.undefined)
+    def setClientDisplayNone(value: Boolean): Self = StObject.set(x, "clientDisplayNone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearContext(value: Boolean): Self = this.set("clearContext", value.asInstanceOf[js.Any])
+    def setClientDisplayNoneUndefined: Self = StObject.set(x, "clientDisplayNone", js.undefined)
     
     @scala.inline
-    def deleteClearContext: Self = this.set("clearContext", js.undefined)
+    def setRunInParent(value: Boolean): Self = StObject.set(x, "runInParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientDisplayNone(value: Boolean): Self = this.set("clientDisplayNone", value.asInstanceOf[js.Any])
+    def setRunInParentUndefined: Self = StObject.set(x, "runInParent", js.undefined)
     
     @scala.inline
-    def deleteClientDisplayNone: Self = this.set("clientDisplayNone", js.undefined)
+    def setUseIframe(value: Boolean): Self = StObject.set(x, "useIframe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunInParent(value: Boolean): Self = this.set("runInParent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRunInParent: Self = this.set("runInParent", js.undefined)
-    
-    @scala.inline
-    def setUseIframe(value: Boolean): Self = this.set("useIframe", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseIframe: Self = this.set("useIframe", js.undefined)
+    def setUseIframeUndefined: Self = StObject.set(x, "useIframe", js.undefined)
   }
 }

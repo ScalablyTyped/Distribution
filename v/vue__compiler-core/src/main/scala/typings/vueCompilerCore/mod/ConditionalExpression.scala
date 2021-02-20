@@ -1,6 +1,7 @@
 package typings.vueCompilerCore.mod
 
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`19`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,33 +39,21 @@ object ConditionalExpression {
   }
   
   @scala.inline
-  implicit class ConditionalExpressionOps[Self <: ConditionalExpression] (val x: Self) extends AnyVal {
+  implicit class ConditionalExpressionMutableBuilder[Self <: ConditionalExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternate(value: JSChildNode): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsequent(value: JSChildNode): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewline(value: Boolean): Self = StObject.set(x, "newline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternate(value: JSChildNode): Self = this.set("alternate", value.asInstanceOf[js.Any])
+    def setTest(value: JSChildNode): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsequent(value: JSChildNode): Self = this.set("consequent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewline(value: Boolean): Self = this.set("newline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTest(value: JSChildNode): Self = this.set("test", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: `19`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: `19`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

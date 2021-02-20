@@ -1,13 +1,14 @@
 package typings.activexLibreoffice.com_.sun.star.ucb
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A list of folders. */
 @js.native
-trait FolderList extends js.Object {
+trait FolderList extends StObject {
   
   /** The command to process on this list of folders. */
   var Command: FolderListCommand = js.native
@@ -24,24 +25,12 @@ object FolderList {
   }
   
   @scala.inline
-  implicit class FolderListOps[Self <: FolderList] (val x: Self) extends AnyVal {
+  implicit class FolderListMutableBuilder[Self <: FolderList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommand(value: FolderListCommand): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCommand(value: FolderListCommand): Self = this.set("Command", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setList(value: SafeArray[FolderListEntry]): Self = this.set("List", value.asInstanceOf[js.Any])
+    def setList(value: SafeArray[FolderListEntry]): Self = StObject.set(x, "List", value.asInstanceOf[js.Any])
   }
 }

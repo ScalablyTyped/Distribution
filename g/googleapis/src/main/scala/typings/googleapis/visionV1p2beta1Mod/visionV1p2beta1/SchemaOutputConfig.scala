@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The desired output location and metadata.
   */
 @js.native
-trait SchemaOutputConfig extends js.Object {
+trait SchemaOutputConfig extends StObject {
   
   /**
     * The max number of response protos to put into each output JSON file on
@@ -36,30 +37,18 @@ object SchemaOutputConfig {
   }
   
   @scala.inline
-  implicit class SchemaOutputConfigOps[Self <: SchemaOutputConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaOutputConfigMutableBuilder[Self <: SchemaOutputConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGcsDestination(value: SchemaGcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchSize(value: Double): Self = this.set("batchSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBatchSize: Self = this.set("batchSize", js.undefined)
-    
-    @scala.inline
-    def setGcsDestination(value: SchemaGcsDestination): Self = this.set("gcsDestination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGcsDestination: Self = this.set("gcsDestination", js.undefined)
+    def setGcsDestinationUndefined: Self = StObject.set(x, "gcsDestination", js.undefined)
   }
 }

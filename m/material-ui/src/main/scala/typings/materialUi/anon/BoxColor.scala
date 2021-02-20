@@ -1,11 +1,12 @@
 package typings.materialUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BoxColor extends js.Object {
+trait BoxColor extends StObject {
   
   var boxColor: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object BoxColor {
   }
   
   @scala.inline
-  implicit class BoxColorOps[Self <: BoxColor] (val x: Self) extends AnyVal {
+  implicit class BoxColorMutableBuilder[Self <: BoxColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoxColor(value: String): Self = StObject.set(x, "boxColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoxColorUndefined: Self = StObject.set(x, "boxColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckedColor(value: String): Self = StObject.set(x, "checkedColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxColor(value: String): Self = this.set("boxColor", value.asInstanceOf[js.Any])
+    def setCheckedColorUndefined: Self = StObject.set(x, "checkedColor", js.undefined)
     
     @scala.inline
-    def deleteBoxColor: Self = this.set("boxColor", js.undefined)
+    def setDisabledColor(value: String): Self = StObject.set(x, "disabledColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckedColor(value: String): Self = this.set("checkedColor", value.asInstanceOf[js.Any])
+    def setDisabledColorUndefined: Self = StObject.set(x, "disabledColor", js.undefined)
     
     @scala.inline
-    def deleteCheckedColor: Self = this.set("checkedColor", js.undefined)
+    def setLabelColor(value: String): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledColor(value: String): Self = this.set("disabledColor", value.asInstanceOf[js.Any])
+    def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
     
     @scala.inline
-    def deleteDisabledColor: Self = this.set("disabledColor", js.undefined)
+    def setLabelDisabledColor(value: String): Self = StObject.set(x, "labelDisabledColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelColor(value: String): Self = this.set("labelColor", value.asInstanceOf[js.Any])
+    def setLabelDisabledColorUndefined: Self = StObject.set(x, "labelDisabledColor", js.undefined)
     
     @scala.inline
-    def deleteLabelColor: Self = this.set("labelColor", js.undefined)
+    def setRequiredColor(value: String): Self = StObject.set(x, "requiredColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelDisabledColor(value: String): Self = this.set("labelDisabledColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelDisabledColor: Self = this.set("labelDisabledColor", js.undefined)
-    
-    @scala.inline
-    def setRequiredColor(value: String): Self = this.set("requiredColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequiredColor: Self = this.set("requiredColor", js.undefined)
+    def setRequiredColorUndefined: Self = StObject.set(x, "requiredColor", js.undefined)
   }
 }

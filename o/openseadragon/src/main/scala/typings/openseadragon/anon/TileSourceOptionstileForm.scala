@@ -1,13 +1,14 @@
 package typings.openseadragon.anon
 
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined openseadragon.openseadragon.TileSourceOptions & {  tileFormat :string | undefined} */
 @js.native
-trait TileSourceOptionstileForm extends js.Object {
+trait TileSourceOptionstileForm extends StObject {
   
   var ajaxHeaders: js.UndefOr[js.Object] = js.native
   
@@ -48,108 +49,96 @@ object TileSourceOptionstileForm {
   }
   
   @scala.inline
-  implicit class TileSourceOptionstileFormOps[Self <: TileSourceOptionstileForm] (val x: Self) extends AnyVal {
+  implicit class TileSourceOptionstileFormMutableBuilder[Self <: TileSourceOptionstileForm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAjaxHeaders(value: js.Object): Self = StObject.set(x, "ajaxHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAjaxHeadersUndefined: Self = StObject.set(x, "ajaxHeaders", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAjaxWithCredentials(value: Boolean): Self = StObject.set(x, "ajaxWithCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAjaxHeaders(value: js.Object): Self = this.set("ajaxHeaders", value.asInstanceOf[js.Any])
+    def setAjaxWithCredentialsUndefined: Self = StObject.set(x, "ajaxWithCredentials", js.undefined)
     
     @scala.inline
-    def deleteAjaxHeaders: Self = this.set("ajaxHeaders", js.undefined)
+    def setGetTileUrl(value: (/* l */ Double, /* x */ Double, /* y */ Double) => String): Self = StObject.set(x, "getTileUrl", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAjaxWithCredentials(value: Boolean): Self = this.set("ajaxWithCredentials", value.asInstanceOf[js.Any])
+    def setGetTileUrlUndefined: Self = StObject.set(x, "getTileUrl", js.undefined)
     
     @scala.inline
-    def deleteAjaxWithCredentials: Self = this.set("ajaxWithCredentials", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTileUrl(value: (/* l */ Double, /* x */ Double, /* y */ Double) => String): Self = this.set("getTileUrl", js.Any.fromFunction3(value))
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteGetTileUrl: Self = this.set("getTileUrl", js.undefined)
+    def setMaxLevel(value: Double): Self = StObject.set(x, "maxLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setMaxLevelUndefined: Self = StObject.set(x, "maxLevel", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setMinLevel(value: Double): Self = StObject.set(x, "minLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLevel(value: Double): Self = this.set("maxLevel", value.asInstanceOf[js.Any])
+    def setMinLevelUndefined: Self = StObject.set(x, "minLevel", js.undefined)
     
     @scala.inline
-    def deleteMaxLevel: Self = this.set("maxLevel", js.undefined)
+    def setReferenceStripThumbnailUrl(value: String): Self = StObject.set(x, "referenceStripThumbnailUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinLevel(value: Double): Self = this.set("minLevel", value.asInstanceOf[js.Any])
+    def setReferenceStripThumbnailUrlUndefined: Self = StObject.set(x, "referenceStripThumbnailUrl", js.undefined)
     
     @scala.inline
-    def deleteMinLevel: Self = this.set("minLevel", js.undefined)
+    def setSuccess(value: /* event */ Event => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReferenceStripThumbnailUrl(value: String): Self = this.set("referenceStripThumbnailUrl", value.asInstanceOf[js.Any])
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def deleteReferenceStripThumbnailUrl: Self = this.set("referenceStripThumbnailUrl", js.undefined)
+    def setTileFormat(value: String): Self = StObject.set(x, "tileFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: /* event */ Event => Unit): Self = this.set("success", js.Any.fromFunction1(value))
+    def setTileFormatUndefined: Self = StObject.set(x, "tileFormat", js.undefined)
     
     @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileFormat(value: String): Self = this.set("tileFormat", value.asInstanceOf[js.Any])
+    def setTileHeightUndefined: Self = StObject.set(x, "tileHeight", js.undefined)
     
     @scala.inline
-    def deleteTileFormat: Self = this.set("tileFormat", js.undefined)
+    def setTileOverlap(value: Double): Self = StObject.set(x, "tileOverlap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileHeight(value: Double): Self = this.set("tileHeight", value.asInstanceOf[js.Any])
+    def setTileOverlapUndefined: Self = StObject.set(x, "tileOverlap", js.undefined)
     
     @scala.inline
-    def deleteTileHeight: Self = this.set("tileHeight", js.undefined)
+    def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileOverlap(value: Double): Self = this.set("tileOverlap", value.asInstanceOf[js.Any])
+    def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
     
     @scala.inline
-    def deleteTileOverlap: Self = this.set("tileOverlap", js.undefined)
+    def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileSize(value: Double): Self = this.set("tileSize", value.asInstanceOf[js.Any])
+    def setTileWidthUndefined: Self = StObject.set(x, "tileWidth", js.undefined)
     
     @scala.inline
-    def deleteTileSize: Self = this.set("tileSize", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileWidth(value: Double): Self = this.set("tileWidth", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteTileWidth: Self = this.set("tileWidth", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

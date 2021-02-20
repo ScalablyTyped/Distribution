@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyEventSubscriptionMessage extends js.Object {
+trait ModifyEventSubscriptionMessage extends StObject {
   
   /**
     * A Boolean value indicating if the subscription is enabled. true indicates the subscription is enabled 
@@ -51,63 +52,51 @@ object ModifyEventSubscriptionMessage {
   }
   
   @scala.inline
-  implicit class ModifyEventSubscriptionMessageOps[Self <: ModifyEventSubscriptionMessage] (val x: Self) extends AnyVal {
+  implicit class ModifyEventSubscriptionMessageMutableBuilder[Self <: ModifyEventSubscriptionMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: BooleanOptional): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventCategories(value: EventCategoriesList): Self = StObject.set(x, "EventCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscriptionName(value: String): Self = this.set("SubscriptionName", value.asInstanceOf[js.Any])
+    def setEventCategoriesUndefined: Self = StObject.set(x, "EventCategories", js.undefined)
     
     @scala.inline
-    def setEnabled(value: BooleanOptional): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "EventCategories", js.Array(value :_*))
     
     @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    def setSeverity(value: String): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventCategoriesVarargs(value: String*): Self = this.set("EventCategories", js.Array(value :_*))
+    def setSeverityUndefined: Self = StObject.set(x, "Severity", js.undefined)
     
     @scala.inline
-    def setEventCategories(value: EventCategoriesList): Self = this.set("EventCategories", value.asInstanceOf[js.Any])
+    def setSnsTopicArn(value: String): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEventCategories: Self = this.set("EventCategories", js.undefined)
+    def setSnsTopicArnUndefined: Self = StObject.set(x, "SnsTopicArn", js.undefined)
     
     @scala.inline
-    def setSeverity(value: String): Self = this.set("Severity", value.asInstanceOf[js.Any])
+    def setSourceIds(value: SourceIdsList): Self = StObject.set(x, "SourceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSeverity: Self = this.set("Severity", js.undefined)
+    def setSourceIdsUndefined: Self = StObject.set(x, "SourceIds", js.undefined)
     
     @scala.inline
-    def setSnsTopicArn(value: String): Self = this.set("SnsTopicArn", value.asInstanceOf[js.Any])
+    def setSourceIdsVarargs(value: String*): Self = StObject.set(x, "SourceIds", js.Array(value :_*))
     
     @scala.inline
-    def deleteSnsTopicArn: Self = this.set("SnsTopicArn", js.undefined)
+    def setSourceType(value: String): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceIdsVarargs(value: String*): Self = this.set("SourceIds", js.Array(value :_*))
+    def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
     
     @scala.inline
-    def setSourceIds(value: SourceIdsList): Self = this.set("SourceIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceIds: Self = this.set("SourceIds", js.undefined)
-    
-    @scala.inline
-    def setSourceType(value: String): Self = this.set("SourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceType: Self = this.set("SourceType", js.undefined)
+    def setSubscriptionName(value: String): Self = StObject.set(x, "SubscriptionName", value.asInstanceOf[js.Any])
   }
 }

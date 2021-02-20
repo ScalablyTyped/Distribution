@@ -10,12 +10,13 @@ import typings.octokitTypes.octokitTypesStrings.qa
 import typings.octokitTypes.octokitTypesStrings.queued
 import typings.octokitTypes.octokitTypesStrings.staging
 import typings.octokitTypes.octokitTypesStrings.success
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReposCreateDeploymentStatusEndpoint extends js.Object {
+trait ReposCreateDeploymentStatusEndpoint extends StObject {
   
   /**
     * Adds a new `inactive` status to all prior non-transient, non-production environment deployments with the same repository and `environment` name as the created status's deployment. An `inactive` status is only added to deployments that had a `success` state. Default: `true`
@@ -76,66 +77,54 @@ object ReposCreateDeploymentStatusEndpoint {
   }
   
   @scala.inline
-  implicit class ReposCreateDeploymentStatusEndpointOps[Self <: ReposCreateDeploymentStatusEndpoint] (val x: Self) extends AnyVal {
+  implicit class ReposCreateDeploymentStatusEndpointMutableBuilder[Self <: ReposCreateDeploymentStatusEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuto_inactive(value: Boolean): Self = StObject.set(x, "auto_inactive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuto_inactiveUndefined: Self = StObject.set(x, "auto_inactive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeployment_id(value: Double): Self = StObject.set(x, "deployment_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeployment_id(value: Double): Self = this.set("deployment_id", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setEnvironment(value: production | staging | qa): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: error | failure | inactive | in_progress | queued | pending | success): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def setAuto_inactive(value: Boolean): Self = this.set("auto_inactive", value.asInstanceOf[js.Any])
+    def setEnvironment_url(value: String): Self = StObject.set(x, "environment_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuto_inactive: Self = this.set("auto_inactive", js.undefined)
+    def setEnvironment_urlUndefined: Self = StObject.set(x, "environment_url", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setLog_url(value: String): Self = StObject.set(x, "log_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setLog_urlUndefined: Self = StObject.set(x, "log_url", js.undefined)
     
     @scala.inline
-    def setEnvironment(value: production | staging | qa): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment_url(value: String): Self = this.set("environment_url", value.asInstanceOf[js.Any])
+    def setState(value: error | failure | inactive | in_progress | queued | pending | success): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvironment_url: Self = this.set("environment_url", js.undefined)
+    def setTarget_url(value: String): Self = StObject.set(x, "target_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLog_url(value: String): Self = this.set("log_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLog_url: Self = this.set("log_url", js.undefined)
-    
-    @scala.inline
-    def setTarget_url(value: String): Self = this.set("target_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget_url: Self = this.set("target_url", js.undefined)
+    def setTarget_urlUndefined: Self = StObject.set(x, "target_url", js.undefined)
   }
 }

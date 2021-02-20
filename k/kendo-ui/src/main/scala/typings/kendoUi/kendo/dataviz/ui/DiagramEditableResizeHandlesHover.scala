@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiagramEditableResizeHandlesHover extends js.Object {
+trait DiagramEditableResizeHandlesHover extends StObject {
   
   var fill: js.UndefOr[String | DiagramEditableResizeHandlesHoverFill] = js.native
   
@@ -20,30 +21,18 @@ object DiagramEditableResizeHandlesHover {
   }
   
   @scala.inline
-  implicit class DiagramEditableResizeHandlesHoverOps[Self <: DiagramEditableResizeHandlesHover] (val x: Self) extends AnyVal {
+  implicit class DiagramEditableResizeHandlesHoverMutableBuilder[Self <: DiagramEditableResizeHandlesHover] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFill(value: String | DiagramEditableResizeHandlesHoverFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStroke(value: DiagramEditableResizeHandlesHoverStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: String | DiagramEditableResizeHandlesHoverFill): Self = this.set("fill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
-    
-    @scala.inline
-    def setStroke(value: DiagramEditableResizeHandlesHoverStroke): Self = this.set("stroke", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStroke: Self = this.set("stroke", js.undefined)
+    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
   }
 }

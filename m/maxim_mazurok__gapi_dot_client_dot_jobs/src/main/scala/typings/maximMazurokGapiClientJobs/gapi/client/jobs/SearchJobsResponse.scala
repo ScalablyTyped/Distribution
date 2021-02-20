@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchJobsResponse extends js.Object {
+trait SearchJobsResponse extends StObject {
   
   /**
     * If query broadening is enabled, we may append additional results from the broadened query. This number indicates how many of the jobs returned in the jobs field are from the
@@ -50,78 +51,66 @@ object SearchJobsResponse {
   }
   
   @scala.inline
-  implicit class SearchJobsResponseOps[Self <: SearchJobsResponse] (val x: Self) extends AnyVal {
+  implicit class SearchJobsResponseMutableBuilder[Self <: SearchJobsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBroadenedQueryJobsCount(value: Double): Self = StObject.set(x, "broadenedQueryJobsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBroadenedQueryJobsCountUndefined: Self = StObject.set(x, "broadenedQueryJobsCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEstimatedTotalSize(value: Double): Self = StObject.set(x, "estimatedTotalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBroadenedQueryJobsCount(value: Double): Self = this.set("broadenedQueryJobsCount", value.asInstanceOf[js.Any])
+    def setEstimatedTotalSizeUndefined: Self = StObject.set(x, "estimatedTotalSize", js.undefined)
     
     @scala.inline
-    def deleteBroadenedQueryJobsCount: Self = this.set("broadenedQueryJobsCount", js.undefined)
+    def setHistogramResults(value: HistogramResults): Self = StObject.set(x, "histogramResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedTotalSize(value: Double): Self = this.set("estimatedTotalSize", value.asInstanceOf[js.Any])
+    def setHistogramResultsUndefined: Self = StObject.set(x, "histogramResults", js.undefined)
     
     @scala.inline
-    def deleteEstimatedTotalSize: Self = this.set("estimatedTotalSize", js.undefined)
+    def setLocationFilters(value: js.Array[Location]): Self = StObject.set(x, "locationFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistogramResults(value: HistogramResults): Self = this.set("histogramResults", value.asInstanceOf[js.Any])
+    def setLocationFiltersUndefined: Self = StObject.set(x, "locationFilters", js.undefined)
     
     @scala.inline
-    def deleteHistogramResults: Self = this.set("histogramResults", js.undefined)
+    def setLocationFiltersVarargs(value: Location*): Self = StObject.set(x, "locationFilters", js.Array(value :_*))
     
     @scala.inline
-    def setLocationFiltersVarargs(value: Location*): Self = this.set("locationFilters", js.Array(value :_*))
+    def setMatchingJobs(value: js.Array[MatchingJob]): Self = StObject.set(x, "matchingJobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationFilters(value: js.Array[Location]): Self = this.set("locationFilters", value.asInstanceOf[js.Any])
+    def setMatchingJobsUndefined: Self = StObject.set(x, "matchingJobs", js.undefined)
     
     @scala.inline
-    def deleteLocationFilters: Self = this.set("locationFilters", js.undefined)
+    def setMatchingJobsVarargs(value: MatchingJob*): Self = StObject.set(x, "matchingJobs", js.Array(value :_*))
     
     @scala.inline
-    def setMatchingJobsVarargs(value: MatchingJob*): Self = this.set("matchingJobs", js.Array(value :_*))
+    def setMetadata(value: ResponseMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchingJobs(value: js.Array[MatchingJob]): Self = this.set("matchingJobs", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteMatchingJobs: Self = this.set("matchingJobs", js.undefined)
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: ResponseMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setSpellCorrection(value: SpellingCorrection): Self = StObject.set(x, "spellCorrection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setSpellCorrectionUndefined: Self = StObject.set(x, "spellCorrection", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpellCorrection(value: SpellingCorrection): Self = this.set("spellCorrection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpellCorrection: Self = this.set("spellCorrection", js.undefined)
-    
-    @scala.inline
-    def setTotalSize(value: Double): Self = this.set("totalSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalSize: Self = this.set("totalSize", js.undefined)
+    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
   }
 }

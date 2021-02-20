@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -109,42 +110,30 @@ object GraphicDescriptor {
   }
   
   @scala.inline
-  implicit class GraphicDescriptorOps[Self <: GraphicDescriptor] (val x: Self) extends AnyVal {
+  implicit class GraphicDescriptorMutableBuilder[Self <: GraphicDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha(value: Boolean): Self = StObject.set(x, "Alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimated(value: Boolean): Self = StObject.set(x, "Animated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBitsPerPixel(value: Double): Self = StObject.set(x, "BitsPerPixel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha(value: Boolean): Self = this.set("Alpha", value.asInstanceOf[js.Any])
+    def setGraphicType(value: Double): Self = StObject.set(x, "GraphicType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimated(value: Boolean): Self = this.set("Animated", value.asInstanceOf[js.Any])
+    def setMimeType(value: String): Self = StObject.set(x, "MimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitsPerPixel(value: Double): Self = this.set("BitsPerPixel", value.asInstanceOf[js.Any])
+    def setSize100thMM(value: Size): Self = StObject.set(x, "Size100thMM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphicType(value: Double): Self = this.set("GraphicType", value.asInstanceOf[js.Any])
+    def setSizePixel(value: Size): Self = StObject.set(x, "SizePixel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimeType(value: String): Self = this.set("MimeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize100thMM(value: Size): Self = this.set("Size100thMM", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSizePixel(value: Size): Self = this.set("SizePixel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransparent(value: Boolean): Self = this.set("Transparent", value.asInstanceOf[js.Any])
+    def setTransparent(value: Boolean): Self = StObject.set(x, "Transparent", value.asInstanceOf[js.Any])
   }
 }

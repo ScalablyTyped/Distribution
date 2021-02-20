@@ -4,6 +4,7 @@ import typings.googlemaps.google.maps.LatLng
 import typings.googlemaps.google.maps.LatLngLiteral
 import typings.googlemaps.google.maps.Marker
 import typings.markerAnimateUnobtrusive.jQuery.easing.IEasingType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

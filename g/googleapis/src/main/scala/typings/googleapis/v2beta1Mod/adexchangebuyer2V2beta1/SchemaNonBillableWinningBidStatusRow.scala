@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the buyer was not billed, as described by the specified status.
   */
 @js.native
-trait SchemaNonBillableWinningBidStatusRow extends js.Object {
+trait SchemaNonBillableWinningBidStatusRow extends StObject {
   
   /**
     * The number of bids with the specified status.
@@ -35,36 +36,24 @@ object SchemaNonBillableWinningBidStatusRow {
   }
   
   @scala.inline
-  implicit class SchemaNonBillableWinningBidStatusRowOps[Self <: SchemaNonBillableWinningBidStatusRow] (val x: Self) extends AnyVal {
+  implicit class SchemaNonBillableWinningBidStatusRowMutableBuilder[Self <: SchemaNonBillableWinningBidStatusRow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBidCount(value: SchemaMetricValue): Self = StObject.set(x, "bidCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBidCountUndefined: Self = StObject.set(x, "bidCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRowDimensions(value: SchemaRowDimensions): Self = StObject.set(x, "rowDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBidCount(value: SchemaMetricValue): Self = this.set("bidCount", value.asInstanceOf[js.Any])
+    def setRowDimensionsUndefined: Self = StObject.set(x, "rowDimensions", js.undefined)
     
     @scala.inline
-    def deleteBidCount: Self = this.set("bidCount", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowDimensions(value: SchemaRowDimensions): Self = this.set("rowDimensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowDimensions: Self = this.set("rowDimensions", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

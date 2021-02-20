@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OMathGroupChar extends js.Object {
+trait OMathGroupChar extends StObject {
   
   var AlignTop: Boolean = js.native
   
@@ -43,42 +44,30 @@ object OMathGroupChar {
   }
   
   @scala.inline
-  implicit class OMathGroupCharOps[Self <: OMathGroupChar] (val x: Self) extends AnyVal {
+  implicit class OMathGroupCharMutableBuilder[Self <: OMathGroupChar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignTop(value: Boolean): Self = StObject.set(x, "AlignTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChar(value: Double): Self = StObject.set(x, "Char", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignTop(value: Boolean): Self = this.set("AlignTop", value.asInstanceOf[js.Any])
+    def setCharTop(value: Boolean): Self = StObject.set(x, "CharTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChar(value: Double): Self = this.set("Char", value.asInstanceOf[js.Any])
+    def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharTop(value: Boolean): Self = this.set("CharTop", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setE(value: OMath): Self = this.set("E", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotOMathGroupChar_typekey(value: OMathGroupChar): Self = this.set("Word.OMathGroupChar_typekey", value.asInstanceOf[js.Any])
+    def setWordDotOMathGroupChar_typekey(value: OMathGroupChar): Self = StObject.set(x, "Word.OMathGroupChar_typekey", value.asInstanceOf[js.Any])
   }
 }

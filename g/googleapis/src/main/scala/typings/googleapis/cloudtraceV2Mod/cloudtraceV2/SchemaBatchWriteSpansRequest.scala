@@ -1,5 +1,6 @@
 package typings.googleapis.cloudtraceV2Mod.cloudtraceV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The request message for the `BatchWriteSpans` method.
   */
 @js.native
-trait SchemaBatchWriteSpansRequest extends js.Object {
+trait SchemaBatchWriteSpansRequest extends StObject {
   
   /**
     * A list of new spans. The span names must not match existing spans, or the
@@ -25,27 +26,15 @@ object SchemaBatchWriteSpansRequest {
   }
   
   @scala.inline
-  implicit class SchemaBatchWriteSpansRequestOps[Self <: SchemaBatchWriteSpansRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaBatchWriteSpansRequestMutableBuilder[Self <: SchemaBatchWriteSpansRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSpans(value: js.Array[SchemaSpan]): Self = StObject.set(x, "spans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSpansUndefined: Self = StObject.set(x, "spans", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSpansVarargs(value: SchemaSpan*): Self = this.set("spans", js.Array(value :_*))
-    
-    @scala.inline
-    def setSpans(value: js.Array[SchemaSpan]): Self = this.set("spans", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpans: Self = this.set("spans", js.undefined)
+    def setSpansVarargs(value: SchemaSpan*): Self = StObject.set(x, "spans", js.Array(value :_*))
   }
 }

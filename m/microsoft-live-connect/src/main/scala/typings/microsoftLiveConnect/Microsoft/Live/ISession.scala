@@ -1,5 +1,6 @@
 package typings.microsoftLiveConnect.Microsoft.Live
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the user's session.
   */
 @js.native
-trait ISession extends js.Object {
+trait ISession extends StObject {
   
   /**
     * The user's access token.
@@ -57,45 +58,33 @@ object ISession {
   }
   
   @scala.inline
-  implicit class ISessionOps[Self <: ISession] (val x: Self) extends AnyVal {
+  implicit class ISessionMutableBuilder[Self <: ISession] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthentication_token(value: String): Self = StObject.set(x, "authentication_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccess_token(value: String): Self = this.set("access_token", value.asInstanceOf[js.Any])
+    def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     
     @scala.inline
-    def setAuthentication_token(value: String): Self = this.set("authentication_token", value.asInstanceOf[js.Any])
+    def setExpires_in(value: Double): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpires(value: Double): Self = this.set("expires", value.asInstanceOf[js.Any])
+    def setExpires_inUndefined: Self = StObject.set(x, "expires_in", js.undefined)
     
     @scala.inline
-    def deleteExpires: Self = this.set("expires", js.undefined)
+    def setScope(value: js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpires_in(value: Double): Self = this.set("expires_in", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteExpires_in: Self = this.set("expires_in", js.undefined)
-    
-    @scala.inline
-    def setScopeVarargs(value: String*): Self = this.set("scope", js.Array(value :_*))
-    
-    @scala.inline
-    def setScope(value: js.Array[String]): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
   }
 }

@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -95,45 +96,33 @@ object XCanvasFont {
   }
   
   @scala.inline
-  implicit class XCanvasFontOps[Self <: XCanvasFont] (val x: Self) extends AnyVal {
+  implicit class XCanvasFontMutableBuilder[Self <: XCanvasFont] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableSizes(value: SafeArray[Double]): Self = StObject.set(x, "AvailableSizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTextLayout(value: (StringContext, Double, Double) => XTextLayout): Self = StObject.set(x, "createTextLayout", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtraFontProperties(value: SafeArray[PropertyValue]): Self = StObject.set(x, "ExtraFontProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableSizes(value: SafeArray[Double]): Self = this.set("AvailableSizes", value.asInstanceOf[js.Any])
+    def setFontMetrics(value: FontMetrics): Self = StObject.set(x, "FontMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraFontProperties(value: SafeArray[PropertyValue]): Self = this.set("ExtraFontProperties", value.asInstanceOf[js.Any])
+    def setFontRequest(value: FontRequest): Self = StObject.set(x, "FontRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontMetrics(value: FontMetrics): Self = this.set("FontMetrics", value.asInstanceOf[js.Any])
+    def setGetAvailableSizes(value: () => SafeArray[Double]): Self = StObject.set(x, "getAvailableSizes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFontRequest(value: FontRequest): Self = this.set("FontRequest", value.asInstanceOf[js.Any])
+    def setGetExtraFontProperties(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getExtraFontProperties", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateTextLayout(value: (StringContext, Double, Double) => XTextLayout): Self = this.set("createTextLayout", js.Any.fromFunction3(value))
+    def setGetFontMetrics(value: () => FontMetrics): Self = StObject.set(x, "getFontMetrics", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAvailableSizes(value: () => SafeArray[Double]): Self = this.set("getAvailableSizes", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetExtraFontProperties(value: () => SafeArray[PropertyValue]): Self = this.set("getExtraFontProperties", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetFontMetrics(value: () => FontMetrics): Self = this.set("getFontMetrics", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetFontRequest(value: () => FontRequest): Self = this.set("getFontRequest", js.Any.fromFunction0(value))
+    def setGetFontRequest(value: () => FontRequest): Self = StObject.set(x, "getFontRequest", js.Any.fromFunction0(value))
   }
 }

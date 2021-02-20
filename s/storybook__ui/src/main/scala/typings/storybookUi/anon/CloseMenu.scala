@@ -1,12 +1,13 @@
 package typings.storybookUi.anon
 
 import typings.storybookUi.sidebarTypesMod.DownshiftItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloseMenu extends js.Object {
+trait CloseMenu extends StObject {
   
   def closeMenu(): Unit = js.native
   def closeMenu(cb: js.Function0[Unit]): Unit = js.native

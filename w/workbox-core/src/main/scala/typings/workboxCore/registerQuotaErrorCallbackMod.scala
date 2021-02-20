@@ -1,12 +1,13 @@
 package typings.workboxCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("workbox-core/registerQuotaErrorCallback", JSImport.Namespace)
-@js.native
-object registerQuotaErrorCallbackMod extends js.Object {
+object registerQuotaErrorCallbackMod {
   
+  @JSImport("workbox-core/registerQuotaErrorCallback", "registerQuotaErrorCallback")
+  @js.native
   def registerQuotaErrorCallback(callback: js.Function0[Unit]): Unit = js.native
 }

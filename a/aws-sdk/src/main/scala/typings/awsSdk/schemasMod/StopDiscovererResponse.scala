@@ -1,11 +1,12 @@
 package typings.awsSdk.schemasMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StopDiscovererResponse extends js.Object {
+trait StopDiscovererResponse extends StObject {
   
   /**
     * The ID of the discoverer.
@@ -26,30 +27,18 @@ object StopDiscovererResponse {
   }
   
   @scala.inline
-  implicit class StopDiscovererResponseOps[Self <: StopDiscovererResponse] (val x: Self) extends AnyVal {
+  implicit class StopDiscovererResponseMutableBuilder[Self <: StopDiscovererResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiscovererId(value: string): Self = StObject.set(x, "DiscovererId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiscovererIdUndefined: Self = StObject.set(x, "DiscovererId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setState(value: DiscovererState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscovererId(value: string): Self = this.set("DiscovererId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDiscovererId: Self = this.set("DiscovererId", js.undefined)
-    
-    @scala.inline
-    def setState(value: DiscovererState): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

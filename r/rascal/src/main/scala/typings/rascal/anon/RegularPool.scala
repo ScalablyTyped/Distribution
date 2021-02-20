@@ -1,11 +1,12 @@
 package typings.rascal.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegularPool extends js.Object {
+trait RegularPool extends StObject {
   
   var confirmPool: Autostart = js.native
   
@@ -20,24 +21,12 @@ object RegularPool {
   }
   
   @scala.inline
-  implicit class RegularPoolOps[Self <: RegularPool] (val x: Self) extends AnyVal {
+  implicit class RegularPoolMutableBuilder[Self <: RegularPool] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfirmPool(value: Autostart): Self = StObject.set(x, "confirmPool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfirmPool(value: Autostart): Self = this.set("confirmPool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegularPool(value: Autostart): Self = this.set("regularPool", value.asInstanceOf[js.Any])
+    def setRegularPool(value: Autostart): Self = StObject.set(x, "regularPool", value.asInstanceOf[js.Any])
   }
 }

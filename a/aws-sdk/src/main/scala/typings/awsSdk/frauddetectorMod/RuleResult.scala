@@ -1,11 +1,12 @@
 package typings.awsSdk.frauddetectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleResult extends js.Object {
+trait RuleResult extends StObject {
   
   /**
     * The outcomes of the matched rule, based on the rule execution mode.
@@ -26,33 +27,21 @@ object RuleResult {
   }
   
   @scala.inline
-  implicit class RuleResultOps[Self <: RuleResult] (val x: Self) extends AnyVal {
+  implicit class RuleResultMutableBuilder[Self <: RuleResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOutcomes(value: ListOfStrings): Self = StObject.set(x, "outcomes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOutcomesUndefined: Self = StObject.set(x, "outcomes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutcomesVarargs(value: String*): Self = StObject.set(x, "outcomes", js.Array(value :_*))
     
     @scala.inline
-    def setOutcomesVarargs(value: String*): Self = this.set("outcomes", js.Array(value :_*))
+    def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutcomes(value: ListOfStrings): Self = this.set("outcomes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutcomes: Self = this.set("outcomes", js.undefined)
-    
-    @scala.inline
-    def setRuleId(value: String): Self = this.set("ruleId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleId: Self = this.set("ruleId", js.undefined)
+    def setRuleIdUndefined: Self = StObject.set(x, "ruleId", js.undefined)
   }
 }

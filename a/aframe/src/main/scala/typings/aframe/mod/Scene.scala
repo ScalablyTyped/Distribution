@@ -4,6 +4,7 @@ import typings.std.EventListener
 import typings.std.HTMLCanvasElement
 import typings.three.mod.Camera
 import typings.three.mod.WebGLRenderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +39,7 @@ trait Scene
   
   var renderer: WebGLRenderer = js.native
   
-   // THREE.VREffect
+  // THREE.VREffect
   var systems: ObjectMap[System[_]] = js.native
   
   var time: Double = js.native

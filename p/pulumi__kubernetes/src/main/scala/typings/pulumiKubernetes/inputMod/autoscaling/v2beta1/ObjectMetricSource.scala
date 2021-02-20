@@ -2,6 +2,7 @@ package typings.pulumiKubernetes.inputMod.autoscaling.v2beta1
 
 import typings.pulumiKubernetes.inputMod.meta.v1.LabelSelector
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ObjectMetricSource indicates how to scale on a metric describing a kubernetes object (for example, hits-per-second on an Ingress object).
   */
 @js.native
-trait ObjectMetricSource extends js.Object {
+trait ObjectMetricSource extends StObject {
   
   /**
     * averageValue is the target value of the average of the metric across all relevant pods (as a quantity)
@@ -46,39 +47,27 @@ object ObjectMetricSource {
   }
   
   @scala.inline
-  implicit class ObjectMetricSourceOps[Self <: ObjectMetricSource] (val x: Self) extends AnyVal {
+  implicit class ObjectMetricSourceMutableBuilder[Self <: ObjectMetricSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAverageValue(value: Input[String]): Self = StObject.set(x, "averageValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAverageValueUndefined: Self = StObject.set(x, "averageValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricName(value: Input[String]): Self = this.set("metricName", value.asInstanceOf[js.Any])
+    def setSelector(value: Input[LabelSelector]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: Input[CrossVersionObjectReference]): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
     @scala.inline
-    def setTargetValue(value: Input[String]): Self = this.set("targetValue", value.asInstanceOf[js.Any])
+    def setTarget(value: Input[CrossVersionObjectReference]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverageValue(value: Input[String]): Self = this.set("averageValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAverageValue: Self = this.set("averageValue", js.undefined)
-    
-    @scala.inline
-    def setSelector(value: Input[LabelSelector]): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setTargetValue(value: Input[String]): Self = StObject.set(x, "targetValue", value.asInstanceOf[js.Any])
   }
 }

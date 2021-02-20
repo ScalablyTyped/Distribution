@@ -1,11 +1,12 @@
 package typings.awsSdk.outpostsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteOutpostInput extends js.Object {
+trait DeleteOutpostInput extends StObject {
   
   var OutpostId: typings.awsSdk.outpostsMod.OutpostId = js.native
 }
@@ -18,21 +19,9 @@ object DeleteOutpostInput {
   }
   
   @scala.inline
-  implicit class DeleteOutpostInputOps[Self <: DeleteOutpostInput] (val x: Self) extends AnyVal {
+  implicit class DeleteOutpostInputMutableBuilder[Self <: DeleteOutpostInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOutpostId(value: OutpostId): Self = this.set("OutpostId", value.asInstanceOf[js.Any])
+    def setOutpostId(value: OutpostId): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
   }
 }

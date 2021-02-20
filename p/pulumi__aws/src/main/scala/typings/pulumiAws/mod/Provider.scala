@@ -2,6 +2,7 @@ package typings.pulumiAws.mod
 
 import typings.pulumiAws.providerMod.ProviderArgs
 import typings.pulumiPulumi.resourceMod.ResourceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,13 +24,13 @@ class Provider protected ()
   def this(name: String, args: ProviderArgs, opts: ResourceOptions) = this()
 }
 /* static members */
-@JSImport("@pulumi/aws", "Provider")
-@js.native
-object Provider extends js.Object {
+object Provider {
   
   /**
     * Returns true if the given object is an instance of Provider.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
+  @JSImport("@pulumi/aws", "Provider.isInstance")
+  @js.native
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/provider.Provider */ Boolean = js.native
 }

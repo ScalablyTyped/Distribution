@@ -1,11 +1,12 @@
 package typings.plotlyJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotScene extends js.Object {
+trait PlotScene extends StObject {
   
   var center: Point = js.native
   
@@ -22,27 +23,15 @@ object PlotScene {
   }
   
   @scala.inline
-  implicit class PlotSceneOps[Self <: PlotScene] (val x: Self) extends AnyVal {
+  implicit class PlotSceneMutableBuilder[Self <: PlotScene] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEye(value: Point): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCenter(value: Point): Self = this.set("center", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEye(value: Point): Self = this.set("eye", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUp(value: Point): Self = this.set("up", value.asInstanceOf[js.Any])
+    def setUp(value: Point): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
   }
 }

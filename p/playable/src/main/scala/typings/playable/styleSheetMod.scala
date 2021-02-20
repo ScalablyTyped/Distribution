@@ -2,16 +2,16 @@ package typings.playable
 
 import typings.playable.coreTypesMod.IStyles
 import typings.playable.themeTypesMod.ICSSRules
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/ui/core/theme/style-sheet", JSImport.Namespace)
-@js.native
-object styleSheetMod extends js.Object {
+object styleSheetMod {
   
+  @JSImport("playable/dist/src/modules/ui/core/theme/style-sheet", "StyleSheet")
   @js.native
-  class StyleSheet () extends js.Object {
+  class StyleSheet () extends StObject {
     
     var _classNamesByModule: js.Any = js.native
     

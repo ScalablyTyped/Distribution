@@ -2,12 +2,13 @@ package typings.babelCore.mod
 
 import typings.babelCore.anon.File
 import typings.babelTypes.mod.File_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BabelFileResult extends js.Object {
+trait BabelFileResult extends StObject {
   
   var ast: js.UndefOr[File_ | Null] = js.native
   
@@ -28,57 +29,45 @@ object BabelFileResult {
   }
   
   @scala.inline
-  implicit class BabelFileResultOps[Self <: BabelFileResult] (val x: Self) extends AnyVal {
+  implicit class BabelFileResultMutableBuilder[Self <: BabelFileResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAst(value: File_): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAstNull: Self = StObject.set(x, "ast", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAstUndefined: Self = StObject.set(x, "ast", js.undefined)
     
     @scala.inline
-    def setAst(value: File_): Self = this.set("ast", value.asInstanceOf[js.Any])
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAst: Self = this.set("ast", js.undefined)
+    def setCodeNull: Self = StObject.set(x, "code", null)
     
     @scala.inline
-    def setAstNull: Self = this.set("ast", null)
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setIgnored(value: Boolean): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
     
     @scala.inline
-    def setCodeNull: Self = this.set("code", null)
+    def setMap(value: File): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnored(value: Boolean): Self = this.set("ignored", value.asInstanceOf[js.Any])
+    def setMapNull: Self = StObject.set(x, "map", null)
     
     @scala.inline
-    def deleteIgnored: Self = this.set("ignored", js.undefined)
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def setMap(value: File): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setMetadata(value: BabelFileMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
-    
-    @scala.inline
-    def setMapNull: Self = this.set("map", null)
-    
-    @scala.inline
-    def setMetadata(value: BabelFileMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

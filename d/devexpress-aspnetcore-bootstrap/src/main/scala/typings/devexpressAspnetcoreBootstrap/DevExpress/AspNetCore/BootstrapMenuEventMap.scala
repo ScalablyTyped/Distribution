@@ -1,5 +1,6 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,33 +34,21 @@ object BootstrapMenuEventMap {
   }
   
   @scala.inline
-  implicit class BootstrapMenuEventMapOps[Self <: BootstrapMenuEventMap] (val x: Self) extends AnyVal {
+  implicit class BootstrapMenuEventMapMutableBuilder[Self <: BootstrapMenuEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseUp(value: MenuItemEventArgs): Self = StObject.set(x, "closeUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemClick(value: MenuItemClickEventArgs): Self = StObject.set(x, "itemClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemMouseOut(value: MenuItemMouseEventArgs): Self = StObject.set(x, "itemMouseOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseUp(value: MenuItemEventArgs): Self = this.set("closeUp", value.asInstanceOf[js.Any])
+    def setItemMouseOver(value: MenuItemMouseEventArgs): Self = StObject.set(x, "itemMouseOver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemClick(value: MenuItemClickEventArgs): Self = this.set("itemClick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemMouseOut(value: MenuItemMouseEventArgs): Self = this.set("itemMouseOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemMouseOver(value: MenuItemMouseEventArgs): Self = this.set("itemMouseOver", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPopUp(value: MenuItemEventArgs): Self = this.set("popUp", value.asInstanceOf[js.Any])
+    def setPopUp(value: MenuItemEventArgs): Self = StObject.set(x, "popUp", value.asInstanceOf[js.Any])
   }
 }

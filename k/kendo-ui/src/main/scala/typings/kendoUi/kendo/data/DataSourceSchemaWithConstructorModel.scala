@@ -1,6 +1,8 @@
 package typings.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.kendoUi.anon.TypeofModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataSourceSchemaWithConstructorModel extends DataSourceSchema {
   
   @JSName("model")
-  var model_DataSourceSchemaWithConstructorModel: js.UndefOr[TypeofModel] = js.native
+  var model_DataSourceSchemaWithConstructorModel: js.UndefOr[TypeofModel with (Instantiable1[/* data */ js.UndefOr[js.Any], Model])] = js.native
 }
 object DataSourceSchemaWithConstructorModel {
   
@@ -20,24 +22,12 @@ object DataSourceSchemaWithConstructorModel {
   }
   
   @scala.inline
-  implicit class DataSourceSchemaWithConstructorModelOps[Self <: DataSourceSchemaWithConstructorModel] (val x: Self) extends AnyVal {
+  implicit class DataSourceSchemaWithConstructorModelMutableBuilder[Self <: DataSourceSchemaWithConstructorModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModel(value: TypeofModel with (Instantiable1[/* data */ js.UndefOr[js.Any], Model])): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setModel(value: TypeofModel): Self = this.set("model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.aceBuilds.mod.Ace
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyboardHandler extends js.Object {
+trait KeyboardHandler extends StObject {
   
   var handleKeyboard: js.Function = js.native
 }
@@ -18,21 +19,9 @@ object KeyboardHandler {
   }
   
   @scala.inline
-  implicit class KeyboardHandlerOps[Self <: KeyboardHandler] (val x: Self) extends AnyVal {
+  implicit class KeyboardHandlerMutableBuilder[Self <: KeyboardHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHandleKeyboard(value: js.Function): Self = this.set("handleKeyboard", value.asInstanceOf[js.Any])
+    def setHandleKeyboard(value: js.Function): Self = StObject.set(x, "handleKeyboard", value.asInstanceOf[js.Any])
   }
 }

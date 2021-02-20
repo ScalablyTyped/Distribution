@@ -1,5 +1,6 @@
 package typings.winjs.mod.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   **/
 @JSImport("winjs", "UI.AppBarIcon")
 @js.native
-object AppBarIcon extends js.Object {
+object AppBarIcon extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winjs.WinJS.UI.AppBarIcon with Double] = js.native

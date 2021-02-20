@@ -1,11 +1,12 @@
 package typings.formatjsEcma402Abstract.numberMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RawNumberFormatResult extends js.Object {
+trait RawNumberFormatResult extends StObject {
   
   var formattedString: String = js.native
   
@@ -22,27 +23,15 @@ object RawNumberFormatResult {
   }
   
   @scala.inline
-  implicit class RawNumberFormatResultOps[Self <: RawNumberFormatResult] (val x: Self) extends AnyVal {
+  implicit class RawNumberFormatResultMutableBuilder[Self <: RawNumberFormatResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormattedString(value: String): Self = StObject.set(x, "formattedString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntegerDigitsCount(value: Double): Self = StObject.set(x, "integerDigitsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFormattedString(value: String): Self = this.set("formattedString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIntegerDigitsCount(value: Double): Self = this.set("integerDigitsCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoundedNumber(value: Double): Self = this.set("roundedNumber", value.asInstanceOf[js.Any])
+    def setRoundedNumber(value: Double): Self = StObject.set(x, "roundedNumber", value.asInstanceOf[js.Any])
   }
 }

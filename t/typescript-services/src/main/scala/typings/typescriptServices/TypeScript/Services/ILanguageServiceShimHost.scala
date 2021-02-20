@@ -1,6 +1,7 @@
 package typings.typescriptServices.TypeScript.Services
 
 import typings.typescriptServices.TypeScript.ILogger
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,54 +61,42 @@ object ILanguageServiceShimHost {
   }
   
   @scala.inline
-  implicit class ILanguageServiceShimHostOps[Self <: ILanguageServiceShimHost] (val x: Self) extends AnyVal {
+  implicit class ILanguageServiceShimHostMutableBuilder[Self <: ILanguageServiceShimHost] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectoryExists(value: String => Boolean): Self = StObject.set(x, "directoryExists", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileExists(value: String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCompilationSettings(value: () => String): Self = StObject.set(x, "getCompilationSettings", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDirectoryExists(value: String => Boolean): Self = this.set("directoryExists", js.Any.fromFunction1(value))
+    def setGetDiagnosticsObject(value: () => ILanguageServicesDiagnostics): Self = StObject.set(x, "getDiagnosticsObject", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFileExists(value: String => Boolean): Self = this.set("fileExists", js.Any.fromFunction1(value))
+    def setGetLocalizedDiagnosticMessages(value: () => String): Self = StObject.set(x, "getLocalizedDiagnosticMessages", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCompilationSettings(value: () => String): Self = this.set("getCompilationSettings", js.Any.fromFunction0(value))
+    def setGetParentDirectory(value: String => String): Self = StObject.set(x, "getParentDirectory", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDiagnosticsObject(value: () => ILanguageServicesDiagnostics): Self = this.set("getDiagnosticsObject", js.Any.fromFunction0(value))
+    def setGetScriptByteOrderMark(value: String => Double): Self = StObject.set(x, "getScriptByteOrderMark", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLocalizedDiagnosticMessages(value: () => String): Self = this.set("getLocalizedDiagnosticMessages", js.Any.fromFunction0(value))
+    def setGetScriptFileNames(value: () => String): Self = StObject.set(x, "getScriptFileNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetParentDirectory(value: String => String): Self = this.set("getParentDirectory", js.Any.fromFunction1(value))
+    def setGetScriptIsOpen(value: String => Boolean): Self = StObject.set(x, "getScriptIsOpen", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetScriptByteOrderMark(value: String => Double): Self = this.set("getScriptByteOrderMark", js.Any.fromFunction1(value))
+    def setGetScriptSnapshot(value: String => IScriptSnapshotShim): Self = StObject.set(x, "getScriptSnapshot", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetScriptFileNames(value: () => String): Self = this.set("getScriptFileNames", js.Any.fromFunction0(value))
+    def setGetScriptVersion(value: String => Double): Self = StObject.set(x, "getScriptVersion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetScriptIsOpen(value: String => Boolean): Self = this.set("getScriptIsOpen", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetScriptSnapshot(value: String => IScriptSnapshotShim): Self = this.set("getScriptSnapshot", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetScriptVersion(value: String => Double): Self = this.set("getScriptVersion", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setResolveRelativePath(value: (String, String) => String): Self = this.set("resolveRelativePath", js.Any.fromFunction2(value))
+    def setResolveRelativePath(value: (String, String) => String): Self = StObject.set(x, "resolveRelativePath", js.Any.fromFunction2(value))
   }
 }

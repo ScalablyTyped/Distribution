@@ -2,6 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.anon.Partialcapacitynumberrand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,14 +68,7 @@ class GPUParticleSystem protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.GPUParticleSystem")
-@js.native
-object GPUParticleSystem extends js.Object {
-  
-  /**
-    * Gets a boolean indicating if the GPU particles can be rendered on current browser
-    */
-  def IsSupported: Boolean = js.native
+object GPUParticleSystem {
   
   /**
     * Parses a JSON object to create a GPU particle system.
@@ -84,14 +78,22 @@ object GPUParticleSystem extends js.Object {
     * @param doNotStart Ignore the preventAutoStart attribute and does not start
     * @returns the parsed GPU particle system
     */
+  @JSGlobal("BABYLON.GPUParticleSystem.Parse")
+  @js.native
   def Parse(parsedParticleSystem: js.Any, sceneOrEngine: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.GPUParticleSystem = js.native
+  @JSGlobal("BABYLON.GPUParticleSystem.Parse")
+  @js.native
   def Parse(
     parsedParticleSystem: js.Any,
     sceneOrEngine: typings.babylonjs.BABYLON.Scene,
     rootUrl: String,
     doNotStart: Boolean
   ): typings.babylonjs.BABYLON.GPUParticleSystem = js.native
+  @JSGlobal("BABYLON.GPUParticleSystem.Parse")
+  @js.native
   def Parse(parsedParticleSystem: js.Any, sceneOrEngine: typings.babylonjs.BABYLON.ThinEngine, rootUrl: String): typings.babylonjs.BABYLON.GPUParticleSystem = js.native
+  @JSGlobal("BABYLON.GPUParticleSystem.Parse")
+  @js.native
   def Parse(
     parsedParticleSystem: js.Any,
     sceneOrEngine: typings.babylonjs.BABYLON.ThinEngine,

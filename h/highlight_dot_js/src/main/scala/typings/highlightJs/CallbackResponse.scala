@@ -1,12 +1,13 @@
 package typings.highlightJs
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CallbackResponse extends js.Object {
+trait CallbackResponse extends StObject {
   
   var data: Record[String, _] = js.native
   
@@ -21,24 +22,12 @@ object CallbackResponse {
   }
   
   @scala.inline
-  implicit class CallbackResponseOps[Self <: CallbackResponse] (val x: Self) extends AnyVal {
+  implicit class CallbackResponseMutableBuilder[Self <: CallbackResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: Record[String, _]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setData(value: Record[String, _]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIgnoreMatch(value: () => Unit): Self = this.set("ignoreMatch", js.Any.fromFunction0(value))
+    def setIgnoreMatch(value: () => Unit): Self = StObject.set(x, "ignoreMatch", js.Any.fromFunction0(value))
   }
 }

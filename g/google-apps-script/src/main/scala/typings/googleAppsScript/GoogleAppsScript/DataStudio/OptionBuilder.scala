@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .addOption(option2);
   */
 @js.native
-trait OptionBuilder extends js.Object {
+trait OptionBuilder extends StObject {
   
   def setLabel(label: String): OptionBuilder = js.native
   
@@ -41,24 +42,12 @@ object OptionBuilder {
   }
   
   @scala.inline
-  implicit class OptionBuilderOps[Self <: OptionBuilder] (val x: Self) extends AnyVal {
+  implicit class OptionBuilderMutableBuilder[Self <: OptionBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetLabel(value: String => OptionBuilder): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetLabel(value: String => OptionBuilder): Self = this.set("setLabel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetValue(value: String => OptionBuilder): Self = this.set("setValue", js.Any.fromFunction1(value))
+    def setSetValue(value: String => OptionBuilder): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
   }
 }

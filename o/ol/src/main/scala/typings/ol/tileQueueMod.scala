@@ -2,14 +2,21 @@ package typings.ol
 
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.pluggableMapMod.FrameState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/TileQueue", JSImport.Namespace)
-@js.native
-object tileQueueMod extends js.Object {
+object tileQueueMod {
   
+  @JSImport("ol/TileQueue", JSImport.Default)
+  @js.native
+  class default protected () extends TileQueue {
+    def this(tilePriorityFunction: PriorityFunction, tileChangeCallback: js.Function0[_]) = this()
+  }
+  
+  @JSImport("ol/TileQueue", "getTilePriority")
+  @js.native
   def getTilePriority(
     frameState: FrameState,
     tile: typings.ol.olTileMod.default,
@@ -17,6 +24,14 @@ object tileQueueMod extends js.Object {
     tileCenter: Coordinate,
     tileResolution: Double
   ): Double = js.native
+  
+  type PriorityFunction = js.Function4[
+    /* p0 */ typings.ol.olTileMod.default, 
+    /* p1 */ String, 
+    /* p2 */ Coordinate, 
+    /* p3 */ Double, 
+    Double
+  ]
   
   @js.native
   trait TileQueue
@@ -30,17 +45,4 @@ object tileQueueMod extends js.Object {
     
     def loadMoreTiles(maxTotalLoading: Double, maxNewLoads: Double): Unit = js.native
   }
-  
-  @js.native
-  class default protected () extends TileQueue {
-    def this(tilePriorityFunction: PriorityFunction, tileChangeCallback: js.Function0[_]) = this()
-  }
-  
-  type PriorityFunction = js.Function4[
-    /* p0 */ typings.ol.olTileMod.default, 
-    /* p1 */ String, 
-    /* p2 */ Coordinate, 
-    /* p3 */ Double, 
-    Double
-  ]
 }

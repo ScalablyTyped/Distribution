@@ -1,12 +1,13 @@
 package typings.webgme.anon
 
 import typings.webgme.GmeCommon.Message
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FinishTime extends js.Object {
+trait FinishTime extends StObject {
   
   var finishTime: String = js.native
   
@@ -25,33 +26,21 @@ object FinishTime {
   }
   
   @scala.inline
-  implicit class FinishTimeOps[Self <: FinishTime] (val x: Self) extends AnyVal {
+  implicit class FinishTimeMutableBuilder[Self <: FinishTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinishTime(value: String): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
     @scala.inline
-    def setFinishTime(value: String): Self = this.set("finishTime", value.asInstanceOf[js.Any])
+    def setPluginName(value: String): Self = StObject.set(x, "pluginName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessagesVarargs(value: Message*): Self = this.set("messages", js.Array(value :_*))
-    
-    @scala.inline
-    def setMessages(value: js.Array[Message]): Self = this.set("messages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPluginName(value: String): Self = this.set("pluginName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccess(value: Boolean): Self = this.set("success", value.asInstanceOf[js.Any])
+    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

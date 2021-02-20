@@ -1,5 +1,6 @@
 package typings.wavEncoder
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("wav-encoder", JSImport.Namespace)
 @js.native
-object wavEncoderRequire extends js.Object
+object wavEncoderRequire extends StObject

@@ -1,11 +1,12 @@
 package typings.awsSdk.braketMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDeviceResponse extends js.Object {
+trait GetDeviceResponse extends StObject {
   
   /**
     * The ARN of the device.
@@ -53,36 +54,24 @@ object GetDeviceResponse {
   }
   
   @scala.inline
-  implicit class GetDeviceResponseOps[Self <: GetDeviceResponse] (val x: Self) extends AnyVal {
+  implicit class GetDeviceResponseMutableBuilder[Self <: GetDeviceResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceArn(value: DeviceArn): Self = StObject.set(x, "deviceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceCapabilities(value: JsonValue): Self = StObject.set(x, "deviceCapabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceArn(value: DeviceArn): Self = this.set("deviceArn", value.asInstanceOf[js.Any])
+    def setDeviceStatus(value: DeviceStatus): Self = StObject.set(x, "deviceStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceCapabilities(value: JsonValue): Self = this.set("deviceCapabilities", value.asInstanceOf[js.Any])
+    def setDeviceType(value: DeviceType): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceName(value: String): Self = this.set("deviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeviceStatus(value: DeviceStatus): Self = this.set("deviceStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeviceType(value: DeviceType): Self = this.set("deviceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProviderName(value: String): Self = this.set("providerName", value.asInstanceOf[js.Any])
+    def setProviderName(value: String): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
   }
 }

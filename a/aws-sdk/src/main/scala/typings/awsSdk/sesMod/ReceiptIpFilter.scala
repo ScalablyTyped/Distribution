@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReceiptIpFilter extends js.Object {
+trait ReceiptIpFilter extends StObject {
   
   /**
     * A single IP address or a range of IP addresses that you want to block or allow, specified in Classless Inter-Domain Routing (CIDR) notation. An example of a single email address is 10.0.0.1. An example of a range of IP addresses is 10.0.0.1/24. For more information about CIDR notation, see RFC 2317.
@@ -26,24 +27,12 @@ object ReceiptIpFilter {
   }
   
   @scala.inline
-  implicit class ReceiptIpFilterOps[Self <: ReceiptIpFilter] (val x: Self) extends AnyVal {
+  implicit class ReceiptIpFilterMutableBuilder[Self <: ReceiptIpFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCidr(value: Cidr): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCidr(value: Cidr): Self = this.set("Cidr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPolicy(value: ReceiptFilterPolicy): Self = this.set("Policy", value.asInstanceOf[js.Any])
+    def setPolicy(value: ReceiptFilterPolicy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
   }
 }

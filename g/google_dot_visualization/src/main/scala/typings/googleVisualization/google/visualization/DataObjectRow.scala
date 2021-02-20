@@ -1,11 +1,12 @@
 package typings.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataObjectRow extends js.Object {
+trait DataObjectRow extends StObject {
   
   var c: js.Array[DataObjectCell] = js.native
   
@@ -20,30 +21,18 @@ object DataObjectRow {
   }
   
   @scala.inline
-  implicit class DataObjectRowOps[Self <: DataObjectRow] (val x: Self) extends AnyVal {
+  implicit class DataObjectRowMutableBuilder[Self <: DataObjectRow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setC(value: js.Array[DataObjectCell]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCVarargs(value: DataObjectCell*): Self = StObject.set(x, "c", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setP(value: js.Any): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCVarargs(value: DataObjectCell*): Self = this.set("c", js.Array(value :_*))
-    
-    @scala.inline
-    def setC(value: js.Array[DataObjectCell]): Self = this.set("c", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setP(value: js.Any): Self = this.set("p", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteP: Self = this.set("p", js.undefined)
+    def setPUndefined: Self = StObject.set(x, "p", js.undefined)
   }
 }

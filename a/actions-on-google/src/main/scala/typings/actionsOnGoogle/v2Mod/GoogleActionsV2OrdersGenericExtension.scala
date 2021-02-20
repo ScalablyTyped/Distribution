@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2OrdersGenericExtension extends js.Object {
+trait GoogleActionsV2OrdersGenericExtension extends StObject {
   
   /**
     * Locations associated with the order. Up to 2 locations.
@@ -26,33 +27,21 @@ object GoogleActionsV2OrdersGenericExtension {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2OrdersGenericExtensionOps[Self <: GoogleActionsV2OrdersGenericExtension] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2OrdersGenericExtensionMutableBuilder[Self <: GoogleActionsV2OrdersGenericExtension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocations(value: js.Array[GoogleActionsV2OrdersOrderLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocationsVarargs(value: GoogleActionsV2OrdersOrderLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
     @scala.inline
-    def setLocationsVarargs(value: GoogleActionsV2OrdersOrderLocation*): Self = this.set("locations", js.Array(value :_*))
+    def setTime(value: GoogleActionsV2OrdersTime): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocations(value: js.Array[GoogleActionsV2OrdersOrderLocation]): Self = this.set("locations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocations: Self = this.set("locations", js.undefined)
-    
-    @scala.inline
-    def setTime(value: GoogleActionsV2OrdersTime): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

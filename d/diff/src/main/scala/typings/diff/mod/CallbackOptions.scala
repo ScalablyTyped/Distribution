@@ -1,11 +1,12 @@
 package typings.diff.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CallbackOptions extends js.Object {
+trait CallbackOptions extends StObject {
   
   /**
     * Callback to call with the result instead of returning the result directly.

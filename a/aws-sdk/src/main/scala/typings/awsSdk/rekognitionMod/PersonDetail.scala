@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PersonDetail extends js.Object {
+trait PersonDetail extends StObject {
   
   /**
     * Bounding box around the detected person.
@@ -31,36 +32,24 @@ object PersonDetail {
   }
   
   @scala.inline
-  implicit class PersonDetailOps[Self <: PersonDetail] (val x: Self) extends AnyVal {
+  implicit class PersonDetailMutableBuilder[Self <: PersonDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFace(value: FaceDetail): Self = StObject.set(x, "Face", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingBox(value: BoundingBox): Self = this.set("BoundingBox", value.asInstanceOf[js.Any])
+    def setFaceUndefined: Self = StObject.set(x, "Face", js.undefined)
     
     @scala.inline
-    def deleteBoundingBox: Self = this.set("BoundingBox", js.undefined)
+    def setIndex(value: PersonIndex): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFace(value: FaceDetail): Self = this.set("Face", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFace: Self = this.set("Face", js.undefined)
-    
-    @scala.inline
-    def setIndex(value: PersonIndex): Self = this.set("Index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndex: Self = this.set("Index", js.undefined)
+    def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
   }
 }

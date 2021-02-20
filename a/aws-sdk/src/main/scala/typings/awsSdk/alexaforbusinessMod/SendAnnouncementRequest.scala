@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendAnnouncementRequest extends js.Object {
+trait SendAnnouncementRequest extends StObject {
   
   /**
     * The unique, user-specified identifier for the request that ensures idempotency.
@@ -36,36 +37,24 @@ object SendAnnouncementRequest {
   }
   
   @scala.inline
-  implicit class SendAnnouncementRequestOps[Self <: SendAnnouncementRequest] (val x: Self) extends AnyVal {
+  implicit class SendAnnouncementRequestMutableBuilder[Self <: SendAnnouncementRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContent(value: Content): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoomFilters(value: FilterList): Self = StObject.set(x, "RoomFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    def setRoomFiltersVarargs(value: Filter*): Self = StObject.set(x, "RoomFilters", js.Array(value :_*))
     
     @scala.inline
-    def setContent(value: Content): Self = this.set("Content", value.asInstanceOf[js.Any])
+    def setTimeToLiveInSeconds(value: TimeToLiveInSeconds): Self = StObject.set(x, "TimeToLiveInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoomFiltersVarargs(value: Filter*): Self = this.set("RoomFilters", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoomFilters(value: FilterList): Self = this.set("RoomFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeToLiveInSeconds(value: TimeToLiveInSeconds): Self = this.set("TimeToLiveInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeToLiveInSeconds: Self = this.set("TimeToLiveInSeconds", js.undefined)
+    def setTimeToLiveInSecondsUndefined: Self = StObject.set(x, "TimeToLiveInSeconds", js.undefined)
   }
 }

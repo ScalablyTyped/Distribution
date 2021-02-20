@@ -1,11 +1,12 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VectorHelpers extends js.Object {
+trait VectorHelpers extends StObject {
   
   /**
     * Adds 2 vectors together, term by term, returning a new Vector.
@@ -86,45 +87,33 @@ object VectorHelpers {
   }
   
   @scala.inline
-  implicit class VectorHelpersOps[Self <: VectorHelpers] (val x: Self) extends AnyVal {
+  implicit class VectorHelpersMutableBuilder[Self <: VectorHelpers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (VectorN, VectorN) => VectorN): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCross(value: (Vector3, Vector3) => Vector3): Self = StObject.set(x, "cross", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDist(value: (VectorN, VectorN) => Double): Self = StObject.set(x, "dist", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAdd(value: (VectorN, VectorN) => VectorN): Self = this.set("add", js.Any.fromFunction2(value))
+    def setDot(value: (VectorN, VectorN) => Double): Self = StObject.set(x, "dot", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCross(value: (Vector3, Vector3) => Vector3): Self = this.set("cross", js.Any.fromFunction2(value))
+    def setLength(value: VectorN => Double): Self = StObject.set(x, "length", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDist(value: (VectorN, VectorN) => Double): Self = this.set("dist", js.Any.fromFunction2(value))
+    def setLengthSquared(value: VectorN => Double): Self = StObject.set(x, "lengthSquared", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDot(value: (VectorN, VectorN) => Double): Self = this.set("dot", js.Any.fromFunction2(value))
+    def setMulScalar(value: (VectorN, Double) => VectorN): Self = StObject.set(x, "mulScalar", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLength(value: VectorN => Double): Self = this.set("length", js.Any.fromFunction1(value))
+    def setNormalize(value: VectorN => VectorN): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLengthSquared(value: VectorN => Double): Self = this.set("lengthSquared", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMulScalar(value: (VectorN, Double) => VectorN): Self = this.set("mulScalar", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setNormalize(value: VectorN => VectorN): Self = this.set("normalize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSub(value: (VectorN, VectorN) => VectorN): Self = this.set("sub", js.Any.fromFunction2(value))
+    def setSub(value: (VectorN, VectorN) => VectorN): Self = StObject.set(x, "sub", js.Any.fromFunction2(value))
   }
 }

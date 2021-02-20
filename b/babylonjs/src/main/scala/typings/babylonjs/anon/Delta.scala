@@ -1,11 +1,12 @@
 package typings.babylonjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Delta extends js.Object {
+trait Delta extends StObject {
   
   var delta: js.UndefOr[Double] = js.native
   
@@ -24,45 +25,33 @@ object Delta {
   }
   
   @scala.inline
-  implicit class DeltaOps[Self <: Delta] (val x: Self) extends AnyVal {
+  implicit class DeltaMutableBuilder[Self <: Delta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFacetNb(value: Double): Self = StObject.set(x, "facetNb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelta(value: Double): Self = this.set("delta", value.asInstanceOf[js.Any])
+    def setFacetNbUndefined: Self = StObject.set(x, "facetNb", js.undefined)
     
     @scala.inline
-    def deleteDelta: Self = this.set("delta", js.undefined)
+    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetNb(value: Double): Self = this.set("facetNb", value.asInstanceOf[js.Any])
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
     @scala.inline
-    def deleteFacetNb: Self = this.set("facetNb", js.undefined)
+    def setStorage(value: js.Array[js.Any]): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: Double): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
     
     @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
-    
-    @scala.inline
-    def setStorageVarargs(value: js.Any*): Self = this.set("storage", js.Array(value :_*))
-    
-    @scala.inline
-    def setStorage(value: js.Array[js.Any]): Self = this.set("storage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorage: Self = this.set("storage", js.undefined)
+    def setStorageVarargs(value: js.Any*): Self = StObject.set(x, "storage", js.Array(value :_*))
   }
 }

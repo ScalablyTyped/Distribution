@@ -3,14 +3,14 @@ package typings.soap
 import typings.node.Buffer
 import typings.soap.wssecurityMod.IWSSecurityOptions
 import typings.soap.wssecuritycertMod.IWSSecurityCertOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("soap/lib/security", JSImport.Namespace)
-@js.native
-object securityMod extends js.Object {
+object securityMod {
   
+  @JSImport("soap/lib/security", "BasicAuthSecurity")
   @js.native
   class BasicAuthSecurity protected ()
     extends typings.soap.basicAuthSecurityMod.BasicAuthSecurity {
@@ -18,6 +18,7 @@ object securityMod extends js.Object {
     def this(username: String, password: String, defaults: js.Any) = this()
   }
   
+  @JSImport("soap/lib/security", "BearerSecurity")
   @js.native
   class BearerSecurity protected ()
     extends typings.soap.bearerSecurityMod.BearerSecurity {
@@ -25,6 +26,7 @@ object securityMod extends js.Object {
     def this(token: String, defaults: js.Any) = this()
   }
   
+  @JSImport("soap/lib/security", "ClientSSLSecurity")
   @js.native
   class ClientSSLSecurity protected ()
     extends typings.soap.clientSSLSecurityMod.ClientSSLSecurity {
@@ -70,6 +72,7 @@ object securityMod extends js.Object {
     def this(key: Buffer, cert: Buffer, ca: Buffer, defaults: js.Any) = this()
   }
   
+  @JSImport("soap/lib/security", "ClientSSLSecurityPFX")
   @js.native
   class ClientSSLSecurityPFX protected ()
     extends typings.soap.clientSSLSecurityPFXMod.ClientSSLSecurityPFX {
@@ -79,12 +82,14 @@ object securityMod extends js.Object {
     def this(pfx: Buffer, defaults: js.Any) = this()
   }
   
+  @JSImport("soap/lib/security", "NTLMSecurity")
   @js.native
   class NTLMSecurity protected ()
     extends typings.soap.ntlmsecurityMod.NTLMSecurity {
     def this(defaults: js.Any) = this()
   }
   
+  @JSImport("soap/lib/security", "WSSecurity")
   @js.native
   class WSSecurity protected ()
     extends typings.soap.wssecurityMod.WSSecurity {
@@ -93,6 +98,7 @@ object securityMod extends js.Object {
     def this(username: String, password: String, options: IWSSecurityOptions) = this()
   }
   
+  @JSImport("soap/lib/security", "WSSecurityCert")
   @js.native
   class WSSecurityCert protected ()
     extends typings.soap.wssecuritycertMod.WSSecurityCert {

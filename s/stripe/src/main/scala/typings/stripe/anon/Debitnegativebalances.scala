@@ -1,11 +1,12 @@
 package typings.stripe.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Debitnegativebalances extends js.Object {
+trait Debitnegativebalances extends StObject {
   
   /**
     * A Boolean indicating if Stripe should try to reclaim negative balances from
@@ -37,36 +38,24 @@ object Debitnegativebalances {
   }
   
   @scala.inline
-  implicit class DebitnegativebalancesOps[Self <: Debitnegativebalances] (val x: Self) extends AnyVal {
+  implicit class DebitnegativebalancesMutableBuilder[Self <: Debitnegativebalances] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDebit_negative_balances(value: Boolean): Self = StObject.set(x, "debit_negative_balances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDebit_negative_balancesUndefined: Self = StObject.set(x, "debit_negative_balances", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSchedule(value: Delaydays): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebit_negative_balances(value: Boolean): Self = this.set("debit_negative_balances", value.asInstanceOf[js.Any])
+    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
     @scala.inline
-    def deleteDebit_negative_balances: Self = this.set("debit_negative_balances", js.undefined)
+    def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedule(value: Delaydays): Self = this.set("schedule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchedule: Self = this.set("schedule", js.undefined)
-    
-    @scala.inline
-    def setStatement_descriptor(value: String): Self = this.set("statement_descriptor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatement_descriptor: Self = this.set("statement_descriptor", js.undefined)
+    def setStatement_descriptorUndefined: Self = StObject.set(x, "statement_descriptor", js.undefined)
   }
 }

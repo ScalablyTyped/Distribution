@@ -1,11 +1,12 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaQueryParameter extends js.Object {
+trait SchemaQueryParameter extends StObject {
   
   /**
     * [Optional] If unset, this is a positional parameter. Otherwise, should be
@@ -32,36 +33,24 @@ object SchemaQueryParameter {
   }
   
   @scala.inline
-  implicit class SchemaQueryParameterOps[Self <: SchemaQueryParameter] (val x: Self) extends AnyVal {
+  implicit class SchemaQueryParameterMutableBuilder[Self <: SchemaQueryParameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameterType(value: SchemaQueryParameterType): Self = StObject.set(x, "parameterType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParameterTypeUndefined: Self = StObject.set(x, "parameterType", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setParameterValue(value: SchemaQueryParameterValue): Self = StObject.set(x, "parameterValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterType(value: SchemaQueryParameterType): Self = this.set("parameterType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterType: Self = this.set("parameterType", js.undefined)
-    
-    @scala.inline
-    def setParameterValue(value: SchemaQueryParameterValue): Self = this.set("parameterValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterValue: Self = this.set("parameterValue", js.undefined)
+    def setParameterValueUndefined: Self = StObject.set(x, "parameterValue", js.undefined)
   }
 }

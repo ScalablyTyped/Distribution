@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Analysiskey extends js.Object {
+trait Analysiskey extends StObject {
   
   /**
     * Identifies the configuration under which the analysis was executed. For example, in GitHub Actions this includes the workflow filename and job name.
@@ -56,39 +57,27 @@ object Analysiskey {
   }
   
   @scala.inline
-  implicit class AnalysiskeyOps[Self <: Analysiskey] (val x: Self) extends AnyVal {
+  implicit class AnalysiskeyMutableBuilder[Self <: Analysiskey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalysis_key(value: String): Self = StObject.set(x, "analysis_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommit_sha(value: String): Self = StObject.set(x, "commit_sha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalysis_key(value: String): Self = this.set("analysis_key", value.asInstanceOf[js.Any])
+    def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommit_sha(value: String): Self = this.set("commit_sha", value.asInstanceOf[js.Any])
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: String): Self = this.set("environment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRef(value: String): Self = this.set("ref", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTool_name(value: String): Self = this.set("tool_name", value.asInstanceOf[js.Any])
+    def setTool_name(value: String): Self = StObject.set(x, "tool_name", value.asInstanceOf[js.Any])
   }
 }

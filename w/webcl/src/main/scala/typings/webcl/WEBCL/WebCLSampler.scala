@@ -1,12 +1,13 @@
 package typings.webcl.WEBCL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3.7
 @js.native
-trait WebCLSampler extends js.Object {
+trait WebCLSampler extends StObject {
   
   def getInfo(name: SamplerInfo): js.Any = js.native
   
@@ -21,24 +22,12 @@ object WebCLSampler {
   }
   
   @scala.inline
-  implicit class WebCLSamplerOps[Self <: WebCLSampler] (val x: Self) extends AnyVal {
+  implicit class WebCLSamplerMutableBuilder[Self <: WebCLSampler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetInfo(value: SamplerInfo => js.Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetInfo(value: SamplerInfo => js.Any): Self = this.set("getInfo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRelease(value: () => Unit): Self = this.set("release", js.Any.fromFunction0(value))
+    def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
   }
 }

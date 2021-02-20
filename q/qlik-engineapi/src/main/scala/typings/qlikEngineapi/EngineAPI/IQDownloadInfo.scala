@@ -1,11 +1,12 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IQDownloadInfo extends js.Object {
+trait IQDownloadInfo extends StObject {
   
   /**
     * FileSize of the generated QVF
@@ -26,24 +27,12 @@ object IQDownloadInfo {
   }
   
   @scala.inline
-  implicit class IQDownloadInfoOps[Self <: IQDownloadInfo] (val x: Self) extends AnyVal {
+  implicit class IQDownloadInfoMutableBuilder[Self <: IQDownloadInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQFileSize(value: Double): Self = StObject.set(x, "qFileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQFileSize(value: Double): Self = this.set("qFileSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQUrl(value: String): Self = this.set("qUrl", value.asInstanceOf[js.Any])
+    def setQUrl(value: String): Self = StObject.set(x, "qUrl", value.asInstanceOf[js.Any])
   }
 }

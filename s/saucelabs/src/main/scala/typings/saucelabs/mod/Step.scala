@@ -10,6 +10,7 @@ import typings.saucelabs.saucelabsStrings.SKIPPED
 import typings.saucelabs.saucelabsStrings.SUCCESS
 import typings.saucelabs.saucelabsStrings.UNKNOWN
 import typings.saucelabs.saucelabsStrings.WARNING
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,78 +48,66 @@ object Step {
   }
   
   @scala.inline
-  implicit class StepOps[Self <: Step] (val x: Self) extends AnyVal {
+  implicit class StepMutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: ScriptError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasReplayImage(value: Boolean): Self = StObject.set(x, "hasReplayImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: ScriptError): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setHasReplayImageUndefined: Self = StObject.set(x, "hasReplayImage", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasReplayImage(value: Boolean): Self = this.set("hasReplayImage", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHasReplayImage: Self = this.set("hasReplayImage", js.undefined)
+    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Id): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: Double): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setOrientation(value: PORTRAIT | LANDSCAPE): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setRecordedImage(value: Id): Self = StObject.set(x, "recordedImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: PORTRAIT | LANDSCAPE): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setRecordedImageUndefined: Self = StObject.set(x, "recordedImage", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setResolvedPosition(value: Point): Self = StObject.set(x, "resolvedPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordedImage(value: Id): Self = this.set("recordedImage", value.asInstanceOf[js.Any])
+    def setResolvedPositionUndefined: Self = StObject.set(x, "resolvedPosition", js.undefined)
     
     @scala.inline
-    def deleteRecordedImage: Self = this.set("recordedImage", js.undefined)
+    def setStatus(value: UNKNOWN | SUCCESS | WARNING | FAILURE | SKIPPED | ABORTED | CANCELED): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolvedPosition(value: Point): Self = this.set("resolvedPosition", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteResolvedPosition: Self = this.set("resolvedPosition", js.undefined)
+    def setWarning(value: ScriptWarning): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: UNKNOWN | SUCCESS | WARNING | FAILURE | SKIPPED | ABORTED | CANCELED): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: ScriptWarning): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

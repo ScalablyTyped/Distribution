@@ -3,42 +3,51 @@ package typings.plottable.mod
 import typings.plottable.anon.X
 import typings.plottable.interfacesMod.Point
 import typings.plottable.scaleMod.TransformableScale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable", "Interactions")
-@js.native
-object Interactions extends js.Object {
+object Interactions {
   
-  def zoomOut(value: Double, zoom: Double, center: Double): Double = js.native
-  
+  @JSImport("plottable", "Interactions.Click")
   @js.native
   class Click ()
     extends typings.plottable.interactionsMod.Click
   /* static members */
-  @js.native
-  object Click extends js.Object {
+  object Click {
     
-    /* private */ def _pointsEqual(p1: js.Any, p2: js.Any): js.Any = js.native
+    @JSImport("plottable", "Interactions.Click._pointsEqual")
+    @js.native
+    def _pointsEqual(p1: js.Any, p2: js.Any): js.Any = js.native
   }
   
+  @JSImport("plottable", "Interactions.Drag")
   @js.native
   class Drag ()
     extends typings.plottable.interactionsMod.Drag {
     def this(mouseButton: Double) = this()
   }
   /* static members */
-  @js.native
-  object Drag extends js.Object {
+  object Drag {
     
-    var _DEFAULT_MOUSE_FILTER: js.Any = js.native
+    @JSImport("plottable", "Interactions.Drag")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("plottable", "Interactions.Drag._DEFAULT_MOUSE_FILTER")
+    @js.native
+    def _DEFAULT_MOUSE_FILTER: js.Any = js.native
+    @scala.inline
+    def _DEFAULT_MOUSE_FILTER_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_MOUSE_FILTER")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("plottable", "Interactions.Key")
   @js.native
   class Key ()
-    extends typings.plottable.keyInteractionMod.Key
+    extends typings.plottable.interactionsMod.Key
   
+  @JSImport("plottable", "Interactions.PanZoom")
   @js.native
   /**
     * A PanZoom Interaction updates the domains of an x-scale and/or a y-scale
@@ -55,20 +64,36 @@ object Interactions extends js.Object {
     def this(xScale: TransformableScale[_, Double], yScale: TransformableScale[_, Double]) = this()
   }
   /* static members */
-  @js.native
-  object PanZoom extends js.Object {
+  object PanZoom {
+    
+    @JSImport("plottable", "Interactions.PanZoom")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * The number of pixels occupied in a line.
       */
-    var _PIXELS_PER_LINE: js.Any = js.native
+    @JSImport("plottable", "Interactions.PanZoom._PIXELS_PER_LINE")
+    @js.native
+    def _PIXELS_PER_LINE: js.Any = js.native
+    @scala.inline
+    def _PIXELS_PER_LINE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_PIXELS_PER_LINE")(x.asInstanceOf[js.Any])
     
-    /* private */ def _pointDistance(point1: js.Any, point2: js.Any): js.Any = js.native
+    @JSImport("plottable", "Interactions.PanZoom._pointDistance")
+    @js.native
+    def _pointDistance(point1: js.Any, point2: js.Any): js.Any = js.native
     
+    @JSImport("plottable", "Interactions.PanZoom.centerPoint")
+    @js.native
     def centerPoint(point1: Point, point2: Point): X = js.native
   }
   
+  @JSImport("plottable", "Interactions.Pointer")
   @js.native
   class Pointer ()
-    extends typings.plottable.pointerInteractionMod.Pointer
+    extends typings.plottable.interactionsMod.Pointer
+  
+  @JSImport("plottable", "Interactions.zoomOut")
+  @js.native
+  def zoomOut(value: Double, zoom: Double, center: Double): Double = js.native
 }

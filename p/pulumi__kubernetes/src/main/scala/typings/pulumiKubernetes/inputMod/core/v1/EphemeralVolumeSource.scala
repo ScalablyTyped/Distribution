@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents an ephemeral volume that is handled by a normal storage driver.
   */
 @js.native
-trait EphemeralVolumeSource extends js.Object {
+trait EphemeralVolumeSource extends StObject {
   
   /**
     * Specifies a read-only configuration for the volume. Defaults to false (read/write).
@@ -36,30 +37,18 @@ object EphemeralVolumeSource {
   }
   
   @scala.inline
-  implicit class EphemeralVolumeSourceOps[Self <: EphemeralVolumeSource] (val x: Self) extends AnyVal {
+  implicit class EphemeralVolumeSourceMutableBuilder[Self <: EphemeralVolumeSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVolumeClaimTemplate(value: Input[PersistentVolumeClaimTemplate]): Self = StObject.set(x, "volumeClaimTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = this.set("readOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
-    
-    @scala.inline
-    def setVolumeClaimTemplate(value: Input[PersistentVolumeClaimTemplate]): Self = this.set("volumeClaimTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeClaimTemplate: Self = this.set("volumeClaimTemplate", js.undefined)
+    def setVolumeClaimTemplateUndefined: Self = StObject.set(x, "volumeClaimTemplate", js.undefined)
   }
 }

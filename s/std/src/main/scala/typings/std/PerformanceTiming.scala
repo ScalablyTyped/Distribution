@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A legacy interface kept for backwards compatibility and contains properties that offer performance timing information for various events which occur during the loading and use of the current page. You get a PerformanceTiming object describing your page using the window.performance.timing property. */
 @js.native
-trait PerformanceTiming extends js.Object {
+trait PerformanceTiming extends StObject {
   
   val connectEnd: Double = js.native
   
@@ -84,84 +85,72 @@ object PerformanceTiming {
   }
   
   @scala.inline
-  implicit class PerformanceTimingOps[Self <: PerformanceTiming] (val x: Self) extends AnyVal {
+  implicit class PerformanceTimingMutableBuilder[Self <: PerformanceTiming] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectEnd(value: Double): Self = StObject.set(x, "connectEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectStart(value: Double): Self = StObject.set(x, "connectStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomComplete(value: Double): Self = StObject.set(x, "domComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectEnd(value: Double): Self = this.set("connectEnd", value.asInstanceOf[js.Any])
+    def setDomContentLoadedEventEnd(value: Double): Self = StObject.set(x, "domContentLoadedEventEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectStart(value: Double): Self = this.set("connectStart", value.asInstanceOf[js.Any])
+    def setDomContentLoadedEventStart(value: Double): Self = StObject.set(x, "domContentLoadedEventStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomComplete(value: Double): Self = this.set("domComplete", value.asInstanceOf[js.Any])
+    def setDomInteractive(value: Double): Self = StObject.set(x, "domInteractive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomContentLoadedEventEnd(value: Double): Self = this.set("domContentLoadedEventEnd", value.asInstanceOf[js.Any])
+    def setDomLoading(value: Double): Self = StObject.set(x, "domLoading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomContentLoadedEventStart(value: Double): Self = this.set("domContentLoadedEventStart", value.asInstanceOf[js.Any])
+    def setDomainLookupEnd(value: Double): Self = StObject.set(x, "domainLookupEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomInteractive(value: Double): Self = this.set("domInteractive", value.asInstanceOf[js.Any])
+    def setDomainLookupStart(value: Double): Self = StObject.set(x, "domainLookupStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomLoading(value: Double): Self = this.set("domLoading", value.asInstanceOf[js.Any])
+    def setFetchStart(value: Double): Self = StObject.set(x, "fetchStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainLookupEnd(value: Double): Self = this.set("domainLookupEnd", value.asInstanceOf[js.Any])
+    def setLoadEventEnd(value: Double): Self = StObject.set(x, "loadEventEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainLookupStart(value: Double): Self = this.set("domainLookupStart", value.asInstanceOf[js.Any])
+    def setLoadEventStart(value: Double): Self = StObject.set(x, "loadEventStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetchStart(value: Double): Self = this.set("fetchStart", value.asInstanceOf[js.Any])
+    def setNavigationStart(value: Double): Self = StObject.set(x, "navigationStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadEventEnd(value: Double): Self = this.set("loadEventEnd", value.asInstanceOf[js.Any])
+    def setRedirectEnd(value: Double): Self = StObject.set(x, "redirectEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadEventStart(value: Double): Self = this.set("loadEventStart", value.asInstanceOf[js.Any])
+    def setRedirectStart(value: Double): Self = StObject.set(x, "redirectStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigationStart(value: Double): Self = this.set("navigationStart", value.asInstanceOf[js.Any])
+    def setRequestStart(value: Double): Self = StObject.set(x, "requestStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectEnd(value: Double): Self = this.set("redirectEnd", value.asInstanceOf[js.Any])
+    def setResponseEnd(value: Double): Self = StObject.set(x, "responseEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectStart(value: Double): Self = this.set("redirectStart", value.asInstanceOf[js.Any])
+    def setResponseStart(value: Double): Self = StObject.set(x, "responseStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestStart(value: Double): Self = this.set("requestStart", value.asInstanceOf[js.Any])
+    def setSecureConnectionStart(value: Double): Self = StObject.set(x, "secureConnectionStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseEnd(value: Double): Self = this.set("responseEnd", value.asInstanceOf[js.Any])
+    def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setResponseStart(value: Double): Self = this.set("responseStart", value.asInstanceOf[js.Any])
+    def setUnloadEventEnd(value: Double): Self = StObject.set(x, "unloadEventEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecureConnectionStart(value: Double): Self = this.set("secureConnectionStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToJSON(value: () => js.Any): Self = this.set("toJSON", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUnloadEventEnd(value: Double): Self = this.set("unloadEventEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnloadEventStart(value: Double): Self = this.set("unloadEventStart", value.asInstanceOf[js.Any])
+    def setUnloadEventStart(value: Double): Self = StObject.set(x, "unloadEventStart", value.asInstanceOf[js.Any])
   }
 }

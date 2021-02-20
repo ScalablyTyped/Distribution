@@ -1,5 +1,6 @@
 package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * requiring additional scopes or permissions.
   */
 @js.native
-trait SchemaOAuthRequirements extends js.Object {
+trait SchemaOAuthRequirements extends StObject {
   
   /**
     * The list of publicly documented OAuth scopes that are allowed access. An
@@ -40,24 +41,12 @@ object SchemaOAuthRequirements {
   }
   
   @scala.inline
-  implicit class SchemaOAuthRequirementsOps[Self <: SchemaOAuthRequirements] (val x: Self) extends AnyVal {
+  implicit class SchemaOAuthRequirementsMutableBuilder[Self <: SchemaOAuthRequirements] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanonicalScopes(value: String): Self = StObject.set(x, "canonicalScopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCanonicalScopes(value: String): Self = this.set("canonicalScopes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCanonicalScopes: Self = this.set("canonicalScopes", js.undefined)
+    def setCanonicalScopesUndefined: Self = StObject.set(x, "canonicalScopes", js.undefined)
   }
 }

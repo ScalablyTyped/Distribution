@@ -1,11 +1,12 @@
 package typings.awsSdk.codestarnotificationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventTypeSummary extends js.Object {
+trait EventTypeSummary extends StObject {
   
   /**
     * The system-generated ID of the event.
@@ -36,42 +37,30 @@ object EventTypeSummary {
   }
   
   @scala.inline
-  implicit class EventTypeSummaryOps[Self <: EventTypeSummary] (val x: Self) extends AnyVal {
+  implicit class EventTypeSummaryMutableBuilder[Self <: EventTypeSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventTypeId(value: EventTypeId): Self = StObject.set(x, "EventTypeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventTypeIdUndefined: Self = StObject.set(x, "EventTypeId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventTypeName(value: EventTypeName): Self = StObject.set(x, "EventTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTypeId(value: EventTypeId): Self = this.set("EventTypeId", value.asInstanceOf[js.Any])
+    def setEventTypeNameUndefined: Self = StObject.set(x, "EventTypeName", js.undefined)
     
     @scala.inline
-    def deleteEventTypeId: Self = this.set("EventTypeId", js.undefined)
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTypeName(value: EventTypeName): Self = this.set("EventTypeName", value.asInstanceOf[js.Any])
+    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
     @scala.inline
-    def deleteEventTypeName: Self = this.set("EventTypeName", js.undefined)
+    def setServiceName(value: ServiceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
-    
-    @scala.inline
-    def setServiceName(value: ServiceName): Self = this.set("ServiceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceName: Self = this.set("ServiceName", js.undefined)
+    def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
   }
 }

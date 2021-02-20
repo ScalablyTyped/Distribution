@@ -1,11 +1,12 @@
 package typings.stremioAddonSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FullManifestResource extends js.Object {
+trait FullManifestResource extends StObject {
   
   /**
     * Use this if you want your addon to be called only for specific content IDs
@@ -33,36 +34,24 @@ object FullManifestResource {
   }
   
   @scala.inline
-  implicit class FullManifestResourceOps[Self <: FullManifestResource] (val x: Self) extends AnyVal {
+  implicit class FullManifestResourceMutableBuilder[Self <: FullManifestResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdPrefixes(value: js.Array[String]): Self = StObject.set(x, "idPrefixes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdPrefixesUndefined: Self = StObject.set(x, "idPrefixes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdPrefixesVarargs(value: String*): Self = StObject.set(x, "idPrefixes", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: ShortManifestResource): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: ShortManifestResource): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypesVarargs(value: ContentType*): Self = this.set("types", js.Array(value :_*))
+    def setTypes(value: js.Array[ContentType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypes(value: js.Array[ContentType]): Self = this.set("types", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdPrefixesVarargs(value: String*): Self = this.set("idPrefixes", js.Array(value :_*))
-    
-    @scala.inline
-    def setIdPrefixes(value: js.Array[String]): Self = this.set("idPrefixes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdPrefixes: Self = this.set("idPrefixes", js.undefined)
+    def setTypesVarargs(value: ContentType*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

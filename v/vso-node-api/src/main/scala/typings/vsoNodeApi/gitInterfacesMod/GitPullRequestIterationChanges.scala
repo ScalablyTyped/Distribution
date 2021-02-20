@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitPullRequestIterationChanges extends js.Object {
+trait GitPullRequestIterationChanges extends StObject {
   
   /**
     * Changes made in the iteration.
@@ -31,30 +32,18 @@ object GitPullRequestIterationChanges {
   }
   
   @scala.inline
-  implicit class GitPullRequestIterationChangesOps[Self <: GitPullRequestIterationChanges] (val x: Self) extends AnyVal {
+  implicit class GitPullRequestIterationChangesMutableBuilder[Self <: GitPullRequestIterationChanges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeEntries(value: js.Array[GitPullRequestChange]): Self = StObject.set(x, "changeEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeEntriesVarargs(value: GitPullRequestChange*): Self = StObject.set(x, "changeEntries", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextSkip(value: Double): Self = StObject.set(x, "nextSkip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeEntriesVarargs(value: GitPullRequestChange*): Self = this.set("changeEntries", js.Array(value :_*))
-    
-    @scala.inline
-    def setChangeEntries(value: js.Array[GitPullRequestChange]): Self = this.set("changeEntries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextSkip(value: Double): Self = this.set("nextSkip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextTop(value: Double): Self = this.set("nextTop", value.asInstanceOf[js.Any])
+    def setNextTop(value: Double): Self = StObject.set(x, "nextTop", value.asInstanceOf[js.Any])
   }
 }

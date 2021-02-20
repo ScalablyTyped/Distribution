@@ -1,12 +1,15 @@
 package typings.json2csv
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("json2csv/JSON2CSVParser", JSImport.Namespace)
-@js.native
-object json2csvparserMod extends js.Object {
+object json2csvparserMod {
+  
+  @JSImport("json2csv/JSON2CSVParser", JSImport.Default)
+  @js.native
+  class default[T] () extends JSON2CSVParser[T]
   
   @js.native
   trait JSON2CSVParser[T]
@@ -39,7 +42,4 @@ object json2csvparserMod extends js.Object {
       */
     /* protected */ def processData(data: js.Array[T]): String = js.native
   }
-  
-  @js.native
-  class default[T] () extends JSON2CSVParser[T]
 }

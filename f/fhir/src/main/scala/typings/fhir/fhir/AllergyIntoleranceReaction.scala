@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,81 +70,69 @@ object AllergyIntoleranceReaction {
   }
   
   @scala.inline
-  implicit class AllergyIntoleranceReactionOps[Self <: AllergyIntoleranceReaction] (val x: Self) extends AnyVal {
+  implicit class AllergyIntoleranceReactionMutableBuilder[Self <: AllergyIntoleranceReaction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExposureRoute(value: CodeableConcept): Self = StObject.set(x, "exposureRoute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManifestationVarargs(value: CodeableConcept*): Self = this.set("manifestation", js.Array(value :_*))
+    def setExposureRouteUndefined: Self = StObject.set(x, "exposureRoute", js.undefined)
     
     @scala.inline
-    def setManifestation(value: js.Array[CodeableConcept]): Self = this.set("manifestation", value.asInstanceOf[js.Any])
+    def setManifestation(value: js.Array[CodeableConcept]): Self = StObject.set(x, "manifestation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    def setManifestationVarargs(value: CodeableConcept*): Self = StObject.set(x, "manifestation", js.Array(value :_*))
     
     @scala.inline
-    def delete_description: Self = this.set("_description", js.undefined)
+    def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_onset(value: Element): Self = this.set("_onset", value.asInstanceOf[js.Any])
+    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
     @scala.inline
-    def delete_onset: Self = this.set("_onset", js.undefined)
+    def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value :_*))
     
     @scala.inline
-    def set_severity(value: Element): Self = this.set("_severity", value.asInstanceOf[js.Any])
+    def setOnset(value: dateTime): Self = StObject.set(x, "onset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_severity: Self = this.set("_severity", js.undefined)
+    def setOnsetUndefined: Self = StObject.set(x, "onset", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setSeverity(value: code): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
     @scala.inline
-    def setExposureRoute(value: CodeableConcept): Self = this.set("exposureRoute", value.asInstanceOf[js.Any])
+    def setSubstance(value: CodeableConcept): Self = StObject.set(x, "substance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExposureRoute: Self = this.set("exposureRoute", js.undefined)
+    def setSubstanceUndefined: Self = StObject.set(x, "substance", js.undefined)
     
     @scala.inline
-    def setNoteVarargs(value: Annotation*): Self = this.set("note", js.Array(value :_*))
+    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNote(value: js.Array[Annotation]): Self = this.set("note", value.asInstanceOf[js.Any])
+    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
     @scala.inline
-    def deleteNote: Self = this.set("note", js.undefined)
+    def set_onset(value: Element): Self = StObject.set(x, "_onset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnset(value: dateTime): Self = this.set("onset", value.asInstanceOf[js.Any])
+    def set_onsetUndefined: Self = StObject.set(x, "_onset", js.undefined)
     
     @scala.inline
-    def deleteOnset: Self = this.set("onset", js.undefined)
+    def set_severity(value: Element): Self = StObject.set(x, "_severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeverity(value: code): Self = this.set("severity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeverity: Self = this.set("severity", js.undefined)
-    
-    @scala.inline
-    def setSubstance(value: CodeableConcept): Self = this.set("substance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubstance: Self = this.set("substance", js.undefined)
+    def set_severityUndefined: Self = StObject.set(x, "_severity", js.undefined)
   }
 }

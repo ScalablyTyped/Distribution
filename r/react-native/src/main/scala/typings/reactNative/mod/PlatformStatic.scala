@@ -2,12 +2,13 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.reactNative.anon.Default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlatformStatic extends js.Object {
+trait PlatformStatic extends StObject {
   
   var Version: Double | String = js.native
   

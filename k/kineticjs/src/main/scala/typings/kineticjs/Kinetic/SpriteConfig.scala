@@ -1,5 +1,6 @@
 package typings.kineticjs.Kinetic
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,39 +27,27 @@ object SpriteConfig {
   }
   
   @scala.inline
-  implicit class SpriteConfigOps[Self <: SpriteConfig] (val x: Self) extends AnyVal {
+  implicit class SpriteConfigMutableBuilder[Self <: SpriteConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: js.Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimations(value: js.Any): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: js.Any): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setAnimationsUndefined: Self = StObject.set(x, "animations", js.undefined)
     
     @scala.inline
-    def setAnimation(value: js.Any): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
     
     @scala.inline
-    def setAnimations(value: js.Any): Self = this.set("animations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnimations: Self = this.set("animations", js.undefined)
-    
-    @scala.inline
-    def setFrameRate(value: Double): Self = this.set("frameRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFrameRate: Self = this.set("frameRate", js.undefined)
+    def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
   }
 }

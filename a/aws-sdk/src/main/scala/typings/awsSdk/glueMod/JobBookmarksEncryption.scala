@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobBookmarksEncryption extends js.Object {
+trait JobBookmarksEncryption extends StObject {
   
   /**
     * The encryption mode to use for job bookmarks data.
@@ -26,30 +27,18 @@ object JobBookmarksEncryption {
   }
   
   @scala.inline
-  implicit class JobBookmarksEncryptionOps[Self <: JobBookmarksEncryption] (val x: Self) extends AnyVal {
+  implicit class JobBookmarksEncryptionMutableBuilder[Self <: JobBookmarksEncryption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobBookmarksEncryptionMode(value: JobBookmarksEncryptionMode): Self = StObject.set(x, "JobBookmarksEncryptionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobBookmarksEncryptionModeUndefined: Self = StObject.set(x, "JobBookmarksEncryptionMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKmsKeyArn(value: KmsKeyArn): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobBookmarksEncryptionMode(value: JobBookmarksEncryptionMode): Self = this.set("JobBookmarksEncryptionMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobBookmarksEncryptionMode: Self = this.set("JobBookmarksEncryptionMode", js.undefined)
-    
-    @scala.inline
-    def setKmsKeyArn(value: KmsKeyArn): Self = this.set("KmsKeyArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKmsKeyArn: Self = this.set("KmsKeyArn", js.undefined)
+    def setKmsKeyArnUndefined: Self = StObject.set(x, "KmsKeyArn", js.undefined)
   }
 }

@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientContent.anon.FieldsKey
 import typings.maximMazurokGapiClientContent.anon.Key
 import typings.maximMazurokGapiClientContent.anon.KeyMerchantId
 import typings.maximMazurokGapiClientContent.anon.UploadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatafeedsResource extends js.Object {
+trait DatafeedsResource extends StObject {
   
   /** Deletes, fetches, gets, inserts and updates multiple datafeeds in a single request. */
   def custombatch(request: FieldsKey): Request[DatafeedsCustomBatchResponse] = js.native

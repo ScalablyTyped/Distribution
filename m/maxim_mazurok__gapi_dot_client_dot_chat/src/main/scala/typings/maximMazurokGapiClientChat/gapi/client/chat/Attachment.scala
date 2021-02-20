@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientChat.gapi.client.chat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attachment extends js.Object {
+trait Attachment extends StObject {
   
   /** A reference to the attachment data. This is used with the media API to download the attachment data. */
   var attachmentDataRef: js.UndefOr[AttachmentDataRef] = js.native
@@ -40,66 +41,54 @@ object Attachment {
   }
   
   @scala.inline
-  implicit class AttachmentOps[Self <: Attachment] (val x: Self) extends AnyVal {
+  implicit class AttachmentMutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachmentDataRef(value: AttachmentDataRef): Self = StObject.set(x, "attachmentDataRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentDataRefUndefined: Self = StObject.set(x, "attachmentDataRef", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentName(value: String): Self = StObject.set(x, "contentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentDataRef(value: AttachmentDataRef): Self = this.set("attachmentDataRef", value.asInstanceOf[js.Any])
+    def setContentNameUndefined: Self = StObject.set(x, "contentName", js.undefined)
     
     @scala.inline
-    def deleteAttachmentDataRef: Self = this.set("attachmentDataRef", js.undefined)
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentName(value: String): Self = this.set("contentName", value.asInstanceOf[js.Any])
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def deleteContentName: Self = this.set("contentName", js.undefined)
+    def setDownloadUri(value: String): Self = StObject.set(x, "downloadUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setDownloadUriUndefined: Self = StObject.set(x, "downloadUri", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setDriveDataRef(value: DriveDataRef): Self = StObject.set(x, "driveDataRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadUri(value: String): Self = this.set("downloadUri", value.asInstanceOf[js.Any])
+    def setDriveDataRefUndefined: Self = StObject.set(x, "driveDataRef", js.undefined)
     
     @scala.inline
-    def deleteDownloadUri: Self = this.set("downloadUri", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriveDataRef(value: DriveDataRef): Self = this.set("driveDataRef", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDriveDataRef: Self = this.set("driveDataRef", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setThumbnailUri(value: String): Self = StObject.set(x, "thumbnailUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setThumbnailUri(value: String): Self = this.set("thumbnailUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnailUri: Self = this.set("thumbnailUri", js.undefined)
+    def setThumbnailUriUndefined: Self = StObject.set(x, "thumbnailUri", js.undefined)
   }
 }

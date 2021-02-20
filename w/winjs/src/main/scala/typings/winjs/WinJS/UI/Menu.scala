@@ -4,6 +4,7 @@ import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.winjs.anon.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a menu flyout for displaying commands.
   **/
 @js.native
-trait Menu extends js.Object {
+trait Menu extends StObject {
   
   //#endregion Events
   //#region Methods

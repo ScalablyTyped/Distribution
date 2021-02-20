@@ -7,35 +7,45 @@ import typings.maximMazurokGapiClientVision.gapi.client.vision.OperationsResourc
 import typings.maximMazurokGapiClientVision.gapi.client.vision.ProjectsResource
 import typings.maximMazurokGapiClientVision.maximMazurokGapiClientVisionStrings.v1
 import typings.maximMazurokGapiClientVision.maximMazurokGapiClientVisionStrings.vision
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
       /** Load Cloud Vision API v1 */
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: vision, version: v1): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: vision, version: v1, callback: js.Function0[_]): Unit = js.native
       
-      @js.native
-      object vision extends js.Object {
+      object vision {
         
+        @JSGlobal("gapi.client.vision.files")
+        @js.native
         val files: FilesResource = js.native
         
+        @JSGlobal("gapi.client.vision.images")
+        @js.native
         val images: ImagesResource = js.native
         
+        @JSGlobal("gapi.client.vision.locations")
+        @js.native
         val locations: LocationsResource = js.native
         
+        @JSGlobal("gapi.client.vision.operations")
+        @js.native
         val operations: OperationsResource = js.native
         
+        @JSGlobal("gapi.client.vision.projects")
+        @js.native
         val projects: ProjectsResource = js.native
       }
     }

@@ -1,5 +1,6 @@
 package typings.googleapis.cloudbillingV1Mod.cloudbillingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the pricing information for a SKU at a single point of time.
   */
 @js.native
-trait SchemaPricingInfo extends js.Object {
+trait SchemaPricingInfo extends StObject {
   
   /**
     * Aggregation Info. This can be left unspecified if the pricing expression
@@ -55,48 +56,36 @@ object SchemaPricingInfo {
   }
   
   @scala.inline
-  implicit class SchemaPricingInfoOps[Self <: SchemaPricingInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaPricingInfoMutableBuilder[Self <: SchemaPricingInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregationInfo(value: SchemaAggregationInfo): Self = StObject.set(x, "aggregationInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregationInfoUndefined: Self = StObject.set(x, "aggregationInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrencyConversionRate(value: Double): Self = StObject.set(x, "currencyConversionRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregationInfo(value: SchemaAggregationInfo): Self = this.set("aggregationInfo", value.asInstanceOf[js.Any])
+    def setCurrencyConversionRateUndefined: Self = StObject.set(x, "currencyConversionRate", js.undefined)
     
     @scala.inline
-    def deleteAggregationInfo: Self = this.set("aggregationInfo", js.undefined)
+    def setEffectiveTime(value: String): Self = StObject.set(x, "effectiveTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyConversionRate(value: Double): Self = this.set("currencyConversionRate", value.asInstanceOf[js.Any])
+    def setEffectiveTimeUndefined: Self = StObject.set(x, "effectiveTime", js.undefined)
     
     @scala.inline
-    def deleteCurrencyConversionRate: Self = this.set("currencyConversionRate", js.undefined)
+    def setPricingExpression(value: SchemaPricingExpression): Self = StObject.set(x, "pricingExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectiveTime(value: String): Self = this.set("effectiveTime", value.asInstanceOf[js.Any])
+    def setPricingExpressionUndefined: Self = StObject.set(x, "pricingExpression", js.undefined)
     
     @scala.inline
-    def deleteEffectiveTime: Self = this.set("effectiveTime", js.undefined)
+    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPricingExpression(value: SchemaPricingExpression): Self = this.set("pricingExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePricingExpression: Self = this.set("pricingExpression", js.undefined)
-    
-    @scala.inline
-    def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummary: Self = this.set("summary", js.undefined)
+    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

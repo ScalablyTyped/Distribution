@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.catbox.mod.ClientApi
 import typings.catbox.mod.ClientOptions
 import typings.catbox.mod.PolicyOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,48 +44,36 @@ object ServerOptionsCache {
   }
   
   @scala.inline
-  implicit class ServerOptionsCacheOps[Self <: ServerOptionsCache] (val x: Self) extends AnyVal {
+  implicit class ServerOptionsCacheMutableBuilder[Self <: ServerOptionsCache] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEngine(value: ClientApi[_]): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngine(value: ClientApi[_]): Self = this.set("engine", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteEngine: Self = this.set("engine", js.undefined)
+    def setPartition(value: String): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setProvider(value: CacheProvider[ClientOptions]): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartition(value: String): Self = this.set("partition", value.asInstanceOf[js.Any])
+    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
     @scala.inline
-    def deletePartition: Self = this.set("partition", js.undefined)
+    def setShared(value: Boolean): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvider(value: CacheProvider[ClientOptions]): Self = this.set("provider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvider: Self = this.set("provider", js.undefined)
-    
-    @scala.inline
-    def setShared(value: Boolean): Self = this.set("shared", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShared: Self = this.set("shared", js.undefined)
+    def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
   }
 }

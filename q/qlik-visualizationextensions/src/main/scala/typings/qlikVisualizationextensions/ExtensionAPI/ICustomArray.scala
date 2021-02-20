@@ -1,5 +1,6 @@
 package typings.qlikVisualizationextensions.ExtensionAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,33 +37,21 @@ object ICustomArray {
   }
   
   @scala.inline
-  implicit class ICustomArrayOps[Self <: ICustomArray] (val x: Self) extends AnyVal {
+  implicit class ICustomArrayMutableBuilder[Self <: ICustomArray] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddTranslation(value: String): Self = StObject.set(x, "addTranslation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowAdd(value: Boolean): Self = StObject.set(x, "allowAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowMove(value: Boolean): Self = StObject.set(x, "allowMove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddTranslation(value: String): Self = this.set("addTranslation", value.asInstanceOf[js.Any])
+    def setAllowRemove(value: Boolean): Self = StObject.set(x, "allowRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowAdd(value: Boolean): Self = this.set("allowAdd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAllowMove(value: Boolean): Self = this.set("allowMove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAllowRemove(value: Boolean): Self = this.set("allowRemove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemTitleRef(value: String): Self = this.set("itemTitleRef", value.asInstanceOf[js.Any])
+    def setItemTitleRef(value: String): Self = StObject.set(x, "itemTitleRef", value.asInstanceOf[js.Any])
   }
 }

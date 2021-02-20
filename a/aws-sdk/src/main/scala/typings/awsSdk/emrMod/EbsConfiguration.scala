@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EbsConfiguration extends js.Object {
+trait EbsConfiguration extends StObject {
   
   /**
     * An array of Amazon EBS volume specifications attached to a cluster instance.
@@ -26,33 +27,21 @@ object EbsConfiguration {
   }
   
   @scala.inline
-  implicit class EbsConfigurationOps[Self <: EbsConfiguration] (val x: Self) extends AnyVal {
+  implicit class EbsConfigurationMutableBuilder[Self <: EbsConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEbsBlockDeviceConfigs(value: EbsBlockDeviceConfigList): Self = StObject.set(x, "EbsBlockDeviceConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEbsBlockDeviceConfigsUndefined: Self = StObject.set(x, "EbsBlockDeviceConfigs", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEbsBlockDeviceConfigsVarargs(value: EbsBlockDeviceConfig*): Self = StObject.set(x, "EbsBlockDeviceConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setEbsBlockDeviceConfigsVarargs(value: EbsBlockDeviceConfig*): Self = this.set("EbsBlockDeviceConfigs", js.Array(value :_*))
+    def setEbsOptimized(value: BooleanObject): Self = StObject.set(x, "EbsOptimized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEbsBlockDeviceConfigs(value: EbsBlockDeviceConfigList): Self = this.set("EbsBlockDeviceConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEbsBlockDeviceConfigs: Self = this.set("EbsBlockDeviceConfigs", js.undefined)
-    
-    @scala.inline
-    def setEbsOptimized(value: BooleanObject): Self = this.set("EbsOptimized", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEbsOptimized: Self = this.set("EbsOptimized", js.undefined)
+    def setEbsOptimizedUndefined: Self = StObject.set(x, "EbsOptimized", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.phaser.Phaser.GameObjects
 
 import typings.phaser.Phaser.Types.GameObjects.BitmapText.DisplayCallback
 import typings.phaser.Phaser.Types.GameObjects.BitmapText.DisplayCallbackConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

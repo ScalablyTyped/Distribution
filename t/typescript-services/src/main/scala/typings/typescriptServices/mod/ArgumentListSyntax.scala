@@ -2,6 +2,7 @@ package typings.typescriptServices.mod
 
 import typings.typescriptServices.TypeScript.ISeparatedSyntaxList
 import typings.typescriptServices.TypeScript.ISyntaxToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,12 +19,15 @@ class ArgumentListSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-/* static members */
-@JSImport("typescript-services", "ArgumentListSyntax")
-@js.native
-object ArgumentListSyntax extends js.Object {
+object ArgumentListSyntax {
   
+  /* static member */
+  @JSImport("typescript-services", "ArgumentListSyntax.create")
+  @js.native
   def create(openParenToken: ISyntaxToken, closeParenToken: ISyntaxToken): typings.typescriptServices.TypeScript.ArgumentListSyntax = js.native
   
+  /* static member */
+  @JSImport("typescript-services", "ArgumentListSyntax.create1")
+  @js.native
   def create1(): typings.typescriptServices.TypeScript.ArgumentListSyntax = js.native
 }

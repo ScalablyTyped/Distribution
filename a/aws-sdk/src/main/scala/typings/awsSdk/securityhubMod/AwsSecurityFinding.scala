@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsSecurityFinding extends js.Object {
+trait AwsSecurityFinding extends StObject {
   
   /**
     * The AWS account ID that a finding is generated in.
@@ -199,207 +200,195 @@ object AwsSecurityFinding {
   }
   
   @scala.inline
-  implicit class AwsSecurityFindingOps[Self <: AwsSecurityFinding] (val x: Self) extends AnyVal {
+  implicit class AwsSecurityFindingMutableBuilder[Self <: AwsSecurityFinding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsAccountId(value: NonEmptyString): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompliance(value: Compliance): Self = StObject.set(x, "Compliance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplianceUndefined: Self = StObject.set(x, "Compliance", js.undefined)
     
     @scala.inline
-    def setAwsAccountId(value: NonEmptyString): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    def setConfidence(value: Integer): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: NonEmptyString): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
     @scala.inline
-    def setDescription(value: NonEmptyString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setCreatedAt(value: NonEmptyString): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneratorId(value: NonEmptyString): Self = this.set("GeneratorId", value.asInstanceOf[js.Any])
+    def setCriticality(value: Integer): Self = StObject.set(x, "Criticality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: NonEmptyString): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setCriticalityUndefined: Self = StObject.set(x, "Criticality", js.undefined)
     
     @scala.inline
-    def setProductArn(value: NonEmptyString): Self = this.set("ProductArn", value.asInstanceOf[js.Any])
+    def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourcesVarargs(value: Resource*): Self = this.set("Resources", js.Array(value :_*))
+    def setFirstObservedAt(value: NonEmptyString): Self = StObject.set(x, "FirstObservedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResources(value: ResourceList): Self = this.set("Resources", value.asInstanceOf[js.Any])
+    def setFirstObservedAtUndefined: Self = StObject.set(x, "FirstObservedAt", js.undefined)
     
     @scala.inline
-    def setSchemaVersion(value: NonEmptyString): Self = this.set("SchemaVersion", value.asInstanceOf[js.Any])
+    def setGeneratorId(value: NonEmptyString): Self = StObject.set(x, "GeneratorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeverity(value: Severity): Self = this.set("Severity", value.asInstanceOf[js.Any])
+    def setId(value: NonEmptyString): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: NonEmptyString): Self = this.set("Title", value.asInstanceOf[js.Any])
+    def setLastObservedAt(value: NonEmptyString): Self = StObject.set(x, "LastObservedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypesVarargs(value: NonEmptyString*): Self = this.set("Types", js.Array(value :_*))
+    def setLastObservedAtUndefined: Self = StObject.set(x, "LastObservedAt", js.undefined)
     
     @scala.inline
-    def setTypes(value: TypeList): Self = this.set("Types", value.asInstanceOf[js.Any])
+    def setMalware(value: MalwareList): Self = StObject.set(x, "Malware", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatedAt(value: NonEmptyString): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
+    def setMalwareUndefined: Self = StObject.set(x, "Malware", js.undefined)
     
     @scala.inline
-    def setCompliance(value: Compliance): Self = this.set("Compliance", value.asInstanceOf[js.Any])
+    def setMalwareVarargs(value: Malware*): Self = StObject.set(x, "Malware", js.Array(value :_*))
     
     @scala.inline
-    def deleteCompliance: Self = this.set("Compliance", js.undefined)
+    def setNetwork(value: Network): Self = StObject.set(x, "Network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Integer): Self = this.set("Confidence", value.asInstanceOf[js.Any])
+    def setNetworkPath(value: NetworkPathList): Self = StObject.set(x, "NetworkPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfidence: Self = this.set("Confidence", js.undefined)
+    def setNetworkPathUndefined: Self = StObject.set(x, "NetworkPath", js.undefined)
     
     @scala.inline
-    def setCriticality(value: Integer): Self = this.set("Criticality", value.asInstanceOf[js.Any])
+    def setNetworkPathVarargs(value: NetworkPathComponent*): Self = StObject.set(x, "NetworkPath", js.Array(value :_*))
     
     @scala.inline
-    def deleteCriticality: Self = this.set("Criticality", js.undefined)
+    def setNetworkUndefined: Self = StObject.set(x, "Network", js.undefined)
     
     @scala.inline
-    def setFirstObservedAt(value: NonEmptyString): Self = this.set("FirstObservedAt", value.asInstanceOf[js.Any])
+    def setNote(value: Note): Self = StObject.set(x, "Note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFirstObservedAt: Self = this.set("FirstObservedAt", js.undefined)
+    def setNoteUndefined: Self = StObject.set(x, "Note", js.undefined)
     
     @scala.inline
-    def setLastObservedAt(value: NonEmptyString): Self = this.set("LastObservedAt", value.asInstanceOf[js.Any])
+    def setPatchSummary(value: PatchSummary): Self = StObject.set(x, "PatchSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastObservedAt: Self = this.set("LastObservedAt", js.undefined)
+    def setPatchSummaryUndefined: Self = StObject.set(x, "PatchSummary", js.undefined)
     
     @scala.inline
-    def setMalwareVarargs(value: Malware*): Self = this.set("Malware", js.Array(value :_*))
+    def setProcess(value: ProcessDetails): Self = StObject.set(x, "Process", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMalware(value: MalwareList): Self = this.set("Malware", value.asInstanceOf[js.Any])
+    def setProcessUndefined: Self = StObject.set(x, "Process", js.undefined)
     
     @scala.inline
-    def deleteMalware: Self = this.set("Malware", js.undefined)
+    def setProductArn(value: NonEmptyString): Self = StObject.set(x, "ProductArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetwork(value: Network): Self = this.set("Network", value.asInstanceOf[js.Any])
+    def setProductFields(value: FieldMap): Self = StObject.set(x, "ProductFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNetwork: Self = this.set("Network", js.undefined)
+    def setProductFieldsUndefined: Self = StObject.set(x, "ProductFields", js.undefined)
     
     @scala.inline
-    def setNetworkPathVarargs(value: NetworkPathComponent*): Self = this.set("NetworkPath", js.Array(value :_*))
+    def setRecordState(value: RecordState): Self = StObject.set(x, "RecordState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkPath(value: NetworkPathList): Self = this.set("NetworkPath", value.asInstanceOf[js.Any])
+    def setRecordStateUndefined: Self = StObject.set(x, "RecordState", js.undefined)
     
     @scala.inline
-    def deleteNetworkPath: Self = this.set("NetworkPath", js.undefined)
+    def setRelatedFindings(value: RelatedFindingList): Self = StObject.set(x, "RelatedFindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNote(value: Note): Self = this.set("Note", value.asInstanceOf[js.Any])
+    def setRelatedFindingsUndefined: Self = StObject.set(x, "RelatedFindings", js.undefined)
     
     @scala.inline
-    def deleteNote: Self = this.set("Note", js.undefined)
+    def setRelatedFindingsVarargs(value: RelatedFinding*): Self = StObject.set(x, "RelatedFindings", js.Array(value :_*))
     
     @scala.inline
-    def setPatchSummary(value: PatchSummary): Self = this.set("PatchSummary", value.asInstanceOf[js.Any])
+    def setRemediation(value: Remediation): Self = StObject.set(x, "Remediation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePatchSummary: Self = this.set("PatchSummary", js.undefined)
+    def setRemediationUndefined: Self = StObject.set(x, "Remediation", js.undefined)
     
     @scala.inline
-    def setProcess(value: ProcessDetails): Self = this.set("Process", value.asInstanceOf[js.Any])
+    def setResources(value: ResourceList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProcess: Self = this.set("Process", js.undefined)
+    def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "Resources", js.Array(value :_*))
     
     @scala.inline
-    def setProductFields(value: FieldMap): Self = this.set("ProductFields", value.asInstanceOf[js.Any])
+    def setSchemaVersion(value: NonEmptyString): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProductFields: Self = this.set("ProductFields", js.undefined)
+    def setSeverity(value: Severity): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordState(value: RecordState): Self = this.set("RecordState", value.asInstanceOf[js.Any])
+    def setSourceUrl(value: NonEmptyString): Self = StObject.set(x, "SourceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecordState: Self = this.set("RecordState", js.undefined)
+    def setSourceUrlUndefined: Self = StObject.set(x, "SourceUrl", js.undefined)
     
     @scala.inline
-    def setRelatedFindingsVarargs(value: RelatedFinding*): Self = this.set("RelatedFindings", js.Array(value :_*))
+    def setThreatIntelIndicators(value: ThreatIntelIndicatorList): Self = StObject.set(x, "ThreatIntelIndicators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatedFindings(value: RelatedFindingList): Self = this.set("RelatedFindings", value.asInstanceOf[js.Any])
+    def setThreatIntelIndicatorsUndefined: Self = StObject.set(x, "ThreatIntelIndicators", js.undefined)
     
     @scala.inline
-    def deleteRelatedFindings: Self = this.set("RelatedFindings", js.undefined)
+    def setThreatIntelIndicatorsVarargs(value: ThreatIntelIndicator*): Self = StObject.set(x, "ThreatIntelIndicators", js.Array(value :_*))
     
     @scala.inline
-    def setRemediation(value: Remediation): Self = this.set("Remediation", value.asInstanceOf[js.Any])
+    def setTitle(value: NonEmptyString): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRemediation: Self = this.set("Remediation", js.undefined)
+    def setTypes(value: TypeList): Self = StObject.set(x, "Types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceUrl(value: NonEmptyString): Self = this.set("SourceUrl", value.asInstanceOf[js.Any])
+    def setTypesVarargs(value: NonEmptyString*): Self = StObject.set(x, "Types", js.Array(value :_*))
     
     @scala.inline
-    def deleteSourceUrl: Self = this.set("SourceUrl", js.undefined)
+    def setUpdatedAt(value: NonEmptyString): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreatIntelIndicatorsVarargs(value: ThreatIntelIndicator*): Self = this.set("ThreatIntelIndicators", js.Array(value :_*))
+    def setUserDefinedFields(value: FieldMap): Self = StObject.set(x, "UserDefinedFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreatIntelIndicators(value: ThreatIntelIndicatorList): Self = this.set("ThreatIntelIndicators", value.asInstanceOf[js.Any])
+    def setUserDefinedFieldsUndefined: Self = StObject.set(x, "UserDefinedFields", js.undefined)
     
     @scala.inline
-    def deleteThreatIntelIndicators: Self = this.set("ThreatIntelIndicators", js.undefined)
+    def setVerificationState(value: VerificationState): Self = StObject.set(x, "VerificationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserDefinedFields(value: FieldMap): Self = this.set("UserDefinedFields", value.asInstanceOf[js.Any])
+    def setVerificationStateUndefined: Self = StObject.set(x, "VerificationState", js.undefined)
     
     @scala.inline
-    def deleteUserDefinedFields: Self = this.set("UserDefinedFields", js.undefined)
+    def setVulnerabilities(value: VulnerabilityList): Self = StObject.set(x, "Vulnerabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerificationState(value: VerificationState): Self = this.set("VerificationState", value.asInstanceOf[js.Any])
+    def setVulnerabilitiesUndefined: Self = StObject.set(x, "Vulnerabilities", js.undefined)
     
     @scala.inline
-    def deleteVerificationState: Self = this.set("VerificationState", js.undefined)
+    def setVulnerabilitiesVarargs(value: Vulnerability*): Self = StObject.set(x, "Vulnerabilities", js.Array(value :_*))
     
     @scala.inline
-    def setVulnerabilitiesVarargs(value: Vulnerability*): Self = this.set("Vulnerabilities", js.Array(value :_*))
+    def setWorkflow(value: Workflow): Self = StObject.set(x, "Workflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVulnerabilities(value: VulnerabilityList): Self = this.set("Vulnerabilities", value.asInstanceOf[js.Any])
+    def setWorkflowState(value: WorkflowState): Self = StObject.set(x, "WorkflowState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVulnerabilities: Self = this.set("Vulnerabilities", js.undefined)
+    def setWorkflowStateUndefined: Self = StObject.set(x, "WorkflowState", js.undefined)
     
     @scala.inline
-    def setWorkflow(value: Workflow): Self = this.set("Workflow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkflow: Self = this.set("Workflow", js.undefined)
-    
-    @scala.inline
-    def setWorkflowState(value: WorkflowState): Self = this.set("WorkflowState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkflowState: Self = this.set("WorkflowState", js.undefined)
+    def setWorkflowUndefined: Self = StObject.set(x, "Workflow", js.undefined)
   }
 }

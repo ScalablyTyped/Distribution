@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -423,420 +424,408 @@ object IgGridFilteringLocale {
   }
   
   @scala.inline
-  implicit class IgGridFilteringLocaleOps[Self <: IgGridFilteringLocale] (val x: Self) extends AnyVal {
+  implicit class IgGridFilteringLocaleMutableBuilder[Self <: IgGridFilteringLocale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvancedButtonLabel(value: String): Self = StObject.set(x, "advancedButtonLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvancedButtonLabelUndefined: Self = StObject.set(x, "advancedButtonLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterLabel(value: String): Self = StObject.set(x, "afterLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvancedButtonLabel(value: String): Self = this.set("advancedButtonLabel", value.asInstanceOf[js.Any])
+    def setAfterLabelUndefined: Self = StObject.set(x, "afterLabel", js.undefined)
     
     @scala.inline
-    def deleteAdvancedButtonLabel: Self = this.set("advancedButtonLabel", js.undefined)
+    def setAfterNullText(value: String): Self = StObject.set(x, "afterNullText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterLabel(value: String): Self = this.set("afterLabel", value.asInstanceOf[js.Any])
+    def setAfterNullTextUndefined: Self = StObject.set(x, "afterNullText", js.undefined)
     
     @scala.inline
-    def deleteAfterLabel: Self = this.set("afterLabel", js.undefined)
+    def setAtAfterLabel(value: String): Self = StObject.set(x, "atAfterLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterNullText(value: String): Self = this.set("afterNullText", value.asInstanceOf[js.Any])
+    def setAtAfterLabelUndefined: Self = StObject.set(x, "atAfterLabel", js.undefined)
     
     @scala.inline
-    def deleteAfterNullText: Self = this.set("afterNullText", js.undefined)
+    def setAtBeforeLabel(value: String): Self = StObject.set(x, "atBeforeLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtAfterLabel(value: String): Self = this.set("atAfterLabel", value.asInstanceOf[js.Any])
+    def setAtBeforeLabelUndefined: Self = StObject.set(x, "atBeforeLabel", js.undefined)
     
     @scala.inline
-    def deleteAtAfterLabel: Self = this.set("atAfterLabel", js.undefined)
+    def setAtLabel(value: String): Self = StObject.set(x, "atLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtBeforeLabel(value: String): Self = this.set("atBeforeLabel", value.asInstanceOf[js.Any])
+    def setAtLabelUndefined: Self = StObject.set(x, "atLabel", js.undefined)
     
     @scala.inline
-    def deleteAtBeforeLabel: Self = this.set("atBeforeLabel", js.undefined)
+    def setBeforeLabel(value: String): Self = StObject.set(x, "beforeLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtLabel(value: String): Self = this.set("atLabel", value.asInstanceOf[js.Any])
+    def setBeforeLabelUndefined: Self = StObject.set(x, "beforeLabel", js.undefined)
     
     @scala.inline
-    def deleteAtLabel: Self = this.set("atLabel", js.undefined)
+    def setBeforeNullText(value: String): Self = StObject.set(x, "beforeNullText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeLabel(value: String): Self = this.set("beforeLabel", value.asInstanceOf[js.Any])
+    def setBeforeNullTextUndefined: Self = StObject.set(x, "beforeNullText", js.undefined)
     
     @scala.inline
-    def deleteBeforeLabel: Self = this.set("beforeLabel", js.undefined)
+    def setClearLabel(value: String): Self = StObject.set(x, "clearLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeNullText(value: String): Self = this.set("beforeNullText", value.asInstanceOf[js.Any])
+    def setClearLabelUndefined: Self = StObject.set(x, "clearLabel", js.undefined)
     
     @scala.inline
-    def deleteBeforeNullText: Self = this.set("beforeNullText", js.undefined)
+    def setContainsLabel(value: String): Self = StObject.set(x, "containsLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearLabel(value: String): Self = this.set("clearLabel", value.asInstanceOf[js.Any])
+    def setContainsLabelUndefined: Self = StObject.set(x, "containsLabel", js.undefined)
     
     @scala.inline
-    def deleteClearLabel: Self = this.set("clearLabel", js.undefined)
+    def setContainsNullText(value: String): Self = StObject.set(x, "containsNullText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainsLabel(value: String): Self = this.set("containsLabel", value.asInstanceOf[js.Any])
+    def setContainsNullTextUndefined: Self = StObject.set(x, "containsNullText", js.undefined)
     
     @scala.inline
-    def deleteContainsLabel: Self = this.set("containsLabel", js.undefined)
+    def setDoesNotContainLabel(value: String): Self = StObject.set(x, "doesNotContainLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainsNullText(value: String): Self = this.set("containsNullText", value.asInstanceOf[js.Any])
+    def setDoesNotContainLabelUndefined: Self = StObject.set(x, "doesNotContainLabel", js.undefined)
     
     @scala.inline
-    def deleteContainsNullText: Self = this.set("containsNullText", js.undefined)
+    def setDoesNotContainNullText(value: String): Self = StObject.set(x, "doesNotContainNullText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoesNotContainLabel(value: String): Self = this.set("doesNotContainLabel", value.asInstanceOf[js.Any])
+    def setDoesNotContainNullTextUndefined: Self = StObject.set(x, "doesNotContainNullText", js.undefined)
     
     @scala.inline
-    def deleteDoesNotContainLabel: Self = this.set("doesNotContainLabel", js.undefined)
+    def setDoesNotEqualLabel(value: String): Self = StObject.set(x, "doesNotEqualLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoesNotContainNullText(value: String): Self = this.set("doesNotContainNullText", value.asInstanceOf[js.Any])
+    def setDoesNotEqualLabelUndefined: Self = StObject.set(x, "doesNotEqualLabel", js.undefined)
     
     @scala.inline
-    def deleteDoesNotContainNullText: Self = this.set("doesNotContainNullText", js.undefined)
+    def setDoesNotEqualNullText(value: String): Self = StObject.set(x, "doesNotEqualNullText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoesNotEqualLabel(value: String): Self = this.set("doesNotEqualLabel", value.asInstanceOf[js.Any])
+    def setDoesNotEqualNullTextUndefined: Self = StObject.set(x, "doesNotEqualNullText", js.undefined)
     
     @scala.inline
-    def deleteDoesNotEqualLabel: Self = this.set("doesNotEqualLabel", js.undefined)
+    def setEmptyNullText(value: String): Self = StObject.set(x, "emptyNullText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoesNotEqualNullText(value: String): Self = this.set("doesNotEqualNullText", value.asInstanceOf[js.Any])
+    def setEmptyNullTextUndefined: Self = StObject.set(x, "emptyNullText", js.undefined)
     
     @scala.inline
-    def deleteDoesNotEqualNullText: Self = this.set("doesNotEqualNullText", js.undefined)
+    def setEndsWithLabel(value: String): Self = StObject.set(x, "endsWithLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmptyNullText(value: String): Self = this.set("emptyNullText", value.asInstanceOf[js.Any])
+    def setEndsWithLabelUndefined: Self = StObject.set(x, "endsWithLabel", js.undefined)
     
     @scala.inline
-    def deleteEmptyNullText: Self = this.set("emptyNullText", js.undefined)
+    def setEndsWithNullText(value: String): Self = StObject.set(x, "endsWithNullText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndsWithLabel(value: String): Self = this.set("endsWithLabel", value.asInstanceOf[js.Any])
+    def setEndsWithNullTextUndefined: Self = StObject.set(x, "endsWithNullText", js.undefined)
     
     @scala.inline
-    def deleteEndsWithLabel: Self = this.set("endsWithLabel", js.undefined)
+    def setEqualsLabel(value: String): Self = StObject.set(x, "equalsLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndsWithNullText(value: String): Self = this.set("endsWithNullText", value.asInstanceOf[js.Any])
+    def setEqualsLabelUndefined: Self = StObject.set(x, "equalsLabel", js.undefined)
     
     @scala.inline
-    def deleteEndsWithNullText: Self = this.set("endsWithNullText", js.undefined)
+    def setEqualsNullText(value: String): Self = StObject.set(x, "equalsNullText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEqualsLabel(value: String): Self = this.set("equalsLabel", value.asInstanceOf[js.Any])
+    def setEqualsNullTextUndefined: Self = StObject.set(x, "equalsNullText", js.undefined)
     
     @scala.inline
-    def deleteEqualsLabel: Self = this.set("equalsLabel", js.undefined)
+    def setFalseLabel(value: String): Self = StObject.set(x, "falseLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEqualsNullText(value: String): Self = this.set("equalsNullText", value.asInstanceOf[js.Any])
+    def setFalseLabelUndefined: Self = StObject.set(x, "falseLabel", js.undefined)
     
     @scala.inline
-    def deleteEqualsNullText: Self = this.set("equalsNullText", js.undefined)
+    def setFeatureChooserText(value: String): Self = StObject.set(x, "featureChooserText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFalseLabel(value: String): Self = this.set("falseLabel", value.asInstanceOf[js.Any])
+    def setFeatureChooserTextAdvancedFilter(value: String): Self = StObject.set(x, "featureChooserTextAdvancedFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFalseLabel: Self = this.set("falseLabel", js.undefined)
+    def setFeatureChooserTextAdvancedFilterUndefined: Self = StObject.set(x, "featureChooserTextAdvancedFilter", js.undefined)
     
     @scala.inline
-    def setFeatureChooserText(value: String): Self = this.set("featureChooserText", value.asInstanceOf[js.Any])
+    def setFeatureChooserTextHide(value: String): Self = StObject.set(x, "featureChooserTextHide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFeatureChooserText: Self = this.set("featureChooserText", js.undefined)
+    def setFeatureChooserTextHideUndefined: Self = StObject.set(x, "featureChooserTextHide", js.undefined)
     
     @scala.inline
-    def setFeatureChooserTextAdvancedFilter(value: String): Self = this.set("featureChooserTextAdvancedFilter", value.asInstanceOf[js.Any])
+    def setFeatureChooserTextUndefined: Self = StObject.set(x, "featureChooserText", js.undefined)
     
     @scala.inline
-    def deleteFeatureChooserTextAdvancedFilter: Self = this.set("featureChooserTextAdvancedFilter", js.undefined)
+    def setFilterDialogAddLabel(value: String): Self = StObject.set(x, "filterDialogAddLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureChooserTextHide(value: String): Self = this.set("featureChooserTextHide", value.asInstanceOf[js.Any])
+    def setFilterDialogAddLabelUndefined: Self = StObject.set(x, "filterDialogAddLabel", js.undefined)
     
     @scala.inline
-    def deleteFeatureChooserTextHide: Self = this.set("featureChooserTextHide", js.undefined)
+    def setFilterDialogAllLabel(value: String): Self = StObject.set(x, "filterDialogAllLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterDialogAddLabel(value: String): Self = this.set("filterDialogAddLabel", value.asInstanceOf[js.Any])
+    def setFilterDialogAllLabelUndefined: Self = StObject.set(x, "filterDialogAllLabel", js.undefined)
     
     @scala.inline
-    def deleteFilterDialogAddLabel: Self = this.set("filterDialogAddLabel", js.undefined)
+    def setFilterDialogAnyLabel(value: String): Self = StObject.set(x, "filterDialogAnyLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterDialogAllLabel(value: String): Self = this.set("filterDialogAllLabel", value.asInstanceOf[js.Any])
+    def setFilterDialogAnyLabelUndefined: Self = StObject.set(x, "filterDialogAnyLabel", js.undefined)
     
     @scala.inline
-    def deleteFilterDialogAllLabel: Self = this.set("filterDialogAllLabel", js.undefined)
+    def setFilterDialogCancelLabel(value: String): Self = StObject.set(x, "filterDialogCancelLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterDialogAnyLabel(value: String): Self = this.set("filterDialogAnyLabel", value.asInstanceOf[js.Any])
+    def setFilterDialogCancelLabelUndefined: Self = StObject.set(x, "filterDialogCancelLabel", js.undefined)
     
     @scala.inline
-    def deleteFilterDialogAnyLabel: Self = this.set("filterDialogAnyLabel", js.undefined)
+    def setFilterDialogCaptionLabel(value: String): Self = StObject.set(x, "filterDialogCaptionLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterDialogCancelLabel(value: String): Self = this.set("filterDialogCancelLabel", value.asInstanceOf[js.Any])
+    def setFilterDialogCaptionLabelUndefined: Self = StObject.set(x, "filterDialogCaptionLabel", js.undefined)
     
     @scala.inline
-    def deleteFilterDialogCancelLabel: Self = this.set("filterDialogCancelLabel", js.undefined)
+    def setFilterDialogClearAllLabel(value: String): Self = StObject.set(x, "filterDialogClearAllLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterDialogCaptionLabel(value: String): Self = this.set("filterDialogCaptionLabel", value.asInstanceOf[js.Any])
+    def setFilterDialogClearAllLabelUndefined: Self = StObject.set(x, "filterDialogClearAllLabel", js.undefined)
     
     @scala.inline
-    def deleteFilterDialogCaptionLabel: Self = this.set("filterDialogCaptionLabel", js.undefined)
+    def setFilterDialogCloseLabel(value: String): Self = StObject.set(x, "filterDialogCloseLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterDialogClearAllLabel(value: String): Self = this.set("filterDialogClearAllLabel", value.asInstanceOf[js.Any])
+    def setFilterDialogCloseLabelUndefined: Self = StObject.set(x, "filterDialogCloseLabel", js.undefined)
     
     @scala.inline
-    def deleteFilterDialogClearAllLabel: Self = this.set("filterDialogClearAllLabel", js.undefined)
+    def setFilterDialogConditionDropDownLabel(value: String): Self = StObject.set(x, "filterDialogConditionDropDownLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterDialogCloseLabel(value: String): Self = this.set("filterDialogCloseLabel", value.asInstanceOf[js.Any])
+    def setFilterDialogConditionDropDownLabelUndefined: Self = StObject.set(x, "filterDialogConditionDropDownLabel", js.undefined)
     
     @scala.inline
-    def deleteFilterDialogCloseLabel: Self = this.set("filterDialogCloseLabel", js.undefined)
+    def setFilterDialogConditionLabel1(value: String): Self = StObject.set(x, "filterDialogConditionLabel1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterDialogConditionDropDownLabel(value: String): Self = this.set("filterDialogConditionDropDownLabel", value.asInstanceOf[js.Any])
+    def setFilterDialogConditionLabel1Undefined: Self = StObject.set(x, "filterDialogConditionLabel1", js.undefined)
     
     @scala.inline
-    def deleteFilterDialogConditionDropDownLabel: Self = this.set("filterDialogConditionDropDownLabel", js.undefined)
+    def setFilterDialogConditionLabel2(value: String): Self = StObject.set(x, "filterDialogConditionLabel2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterDialogConditionLabel1(value: String): Self = this.set("filterDialogConditionLabel1", value.asInstanceOf[js.Any])
+    def setFilterDialogConditionLabel2Undefined: Self = StObject.set(x, "filterDialogConditionLabel2", js.undefined)
     
     @scala.inline
-    def deleteFilterDialogConditionLabel1: Self = this.set("filterDialogConditionLabel1", js.undefined)
+    def setFilterDialogErrorLabel(value: String): Self = StObject.set(x, "filterDialogErrorLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterDialogConditionLabel2(value: String): Self = this.set("filterDialogConditionLabel2", value.asInstanceOf[js.Any])
+    def setFilterDialogErrorLabelUndefined: Self = StObject.set(x, "filterDialogErrorLabel", js.undefined)
     
     @scala.inline
-    def deleteFilterDialogConditionLabel2: Self = this.set("filterDialogConditionLabel2", js.undefined)
+    def setFilterDialogOkLabel(value: String): Self = StObject.set(x, "filterDialogOkLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterDialogErrorLabel(value: String): Self = this.set("filterDialogErrorLabel", value.asInstanceOf[js.Any])
+    def setFilterDialogOkLabelUndefined: Self = StObject.set(x, "filterDialogOkLabel", js.undefined)
     
     @scala.inline
-    def deleteFilterDialogErrorLabel: Self = this.set("filterDialogErrorLabel", js.undefined)
+    def setFilterSummaryTemplate(value: String): Self = StObject.set(x, "filterSummaryTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterDialogOkLabel(value: String): Self = this.set("filterDialogOkLabel", value.asInstanceOf[js.Any])
+    def setFilterSummaryTemplateUndefined: Self = StObject.set(x, "filterSummaryTemplate", js.undefined)
     
     @scala.inline
-    def deleteFilterDialogOkLabel: Self = this.set("filterDialogOkLabel", js.undefined)
+    def setFilterSummaryTitleLabel(value: String): Self = StObject.set(x, "filterSummaryTitleLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterSummaryTemplate(value: String): Self = this.set("filterSummaryTemplate", value.asInstanceOf[js.Any])
+    def setFilterSummaryTitleLabelUndefined: Self = StObject.set(x, "filterSummaryTitleLabel", js.undefined)
     
     @scala.inline
-    def deleteFilterSummaryTemplate: Self = this.set("filterSummaryTemplate", js.undefined)
+    def setGreaterThanLabel(value: String): Self = StObject.set(x, "greaterThanLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterSummaryTitleLabel(value: String): Self = this.set("filterSummaryTitleLabel", value.asInstanceOf[js.Any])
+    def setGreaterThanLabelUndefined: Self = StObject.set(x, "greaterThanLabel", js.undefined)
     
     @scala.inline
-    def deleteFilterSummaryTitleLabel: Self = this.set("filterSummaryTitleLabel", js.undefined)
+    def setGreaterThanNullText(value: String): Self = StObject.set(x, "greaterThanNullText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreaterThanLabel(value: String): Self = this.set("greaterThanLabel", value.asInstanceOf[js.Any])
+    def setGreaterThanNullTextUndefined: Self = StObject.set(x, "greaterThanNullText", js.undefined)
     
     @scala.inline
-    def deleteGreaterThanLabel: Self = this.set("greaterThanLabel", js.undefined)
+    def setGreaterThanOrEqualToLabel(value: String): Self = StObject.set(x, "greaterThanOrEqualToLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreaterThanNullText(value: String): Self = this.set("greaterThanNullText", value.asInstanceOf[js.Any])
+    def setGreaterThanOrEqualToLabelUndefined: Self = StObject.set(x, "greaterThanOrEqualToLabel", js.undefined)
     
     @scala.inline
-    def deleteGreaterThanNullText: Self = this.set("greaterThanNullText", js.undefined)
+    def setGreaterThanOrEqualToNullText(value: String): Self = StObject.set(x, "greaterThanOrEqualToNullText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreaterThanOrEqualToLabel(value: String): Self = this.set("greaterThanOrEqualToLabel", value.asInstanceOf[js.Any])
+    def setGreaterThanOrEqualToNullTextUndefined: Self = StObject.set(x, "greaterThanOrEqualToNullText", js.undefined)
     
     @scala.inline
-    def deleteGreaterThanOrEqualToLabel: Self = this.set("greaterThanOrEqualToLabel", js.undefined)
+    def setLastMonthLabel(value: String): Self = StObject.set(x, "lastMonthLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreaterThanOrEqualToNullText(value: String): Self = this.set("greaterThanOrEqualToNullText", value.asInstanceOf[js.Any])
+    def setLastMonthLabelUndefined: Self = StObject.set(x, "lastMonthLabel", js.undefined)
     
     @scala.inline
-    def deleteGreaterThanOrEqualToNullText: Self = this.set("greaterThanOrEqualToNullText", js.undefined)
+    def setLastYearLabel(value: String): Self = StObject.set(x, "lastYearLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastMonthLabel(value: String): Self = this.set("lastMonthLabel", value.asInstanceOf[js.Any])
+    def setLastYearLabelUndefined: Self = StObject.set(x, "lastYearLabel", js.undefined)
     
     @scala.inline
-    def deleteLastMonthLabel: Self = this.set("lastMonthLabel", js.undefined)
+    def setLessThanLabel(value: String): Self = StObject.set(x, "lessThanLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastYearLabel(value: String): Self = this.set("lastYearLabel", value.asInstanceOf[js.Any])
+    def setLessThanLabelUndefined: Self = StObject.set(x, "lessThanLabel", js.undefined)
     
     @scala.inline
-    def deleteLastYearLabel: Self = this.set("lastYearLabel", js.undefined)
+    def setLessThanNullText(value: String): Self = StObject.set(x, "lessThanNullText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLessThanLabel(value: String): Self = this.set("lessThanLabel", value.asInstanceOf[js.Any])
+    def setLessThanNullTextUndefined: Self = StObject.set(x, "lessThanNullText", js.undefined)
     
     @scala.inline
-    def deleteLessThanLabel: Self = this.set("lessThanLabel", js.undefined)
+    def setLessThanOrEqualToLabel(value: String): Self = StObject.set(x, "lessThanOrEqualToLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLessThanNullText(value: String): Self = this.set("lessThanNullText", value.asInstanceOf[js.Any])
+    def setLessThanOrEqualToLabelUndefined: Self = StObject.set(x, "lessThanOrEqualToLabel", js.undefined)
     
     @scala.inline
-    def deleteLessThanNullText: Self = this.set("lessThanNullText", js.undefined)
+    def setLessThanOrEqualToNullText(value: String): Self = StObject.set(x, "lessThanOrEqualToNullText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLessThanOrEqualToLabel(value: String): Self = this.set("lessThanOrEqualToLabel", value.asInstanceOf[js.Any])
+    def setLessThanOrEqualToNullTextUndefined: Self = StObject.set(x, "lessThanOrEqualToNullText", js.undefined)
     
     @scala.inline
-    def deleteLessThanOrEqualToLabel: Self = this.set("lessThanOrEqualToLabel", js.undefined)
+    def setNextMonthLabel(value: String): Self = StObject.set(x, "nextMonthLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLessThanOrEqualToNullText(value: String): Self = this.set("lessThanOrEqualToNullText", value.asInstanceOf[js.Any])
+    def setNextMonthLabelUndefined: Self = StObject.set(x, "nextMonthLabel", js.undefined)
     
     @scala.inline
-    def deleteLessThanOrEqualToNullText: Self = this.set("lessThanOrEqualToNullText", js.undefined)
+    def setNextYearLabel(value: String): Self = StObject.set(x, "nextYearLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextMonthLabel(value: String): Self = this.set("nextMonthLabel", value.asInstanceOf[js.Any])
+    def setNextYearLabelUndefined: Self = StObject.set(x, "nextYearLabel", js.undefined)
     
     @scala.inline
-    def deleteNextMonthLabel: Self = this.set("nextMonthLabel", js.undefined)
+    def setNoFilterLabel(value: String): Self = StObject.set(x, "noFilterLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextYearLabel(value: String): Self = this.set("nextYearLabel", value.asInstanceOf[js.Any])
+    def setNoFilterLabelUndefined: Self = StObject.set(x, "noFilterLabel", js.undefined)
     
     @scala.inline
-    def deleteNextYearLabel: Self = this.set("nextYearLabel", js.undefined)
+    def setNotAtLabel(value: String): Self = StObject.set(x, "notAtLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoFilterLabel(value: String): Self = this.set("noFilterLabel", value.asInstanceOf[js.Any])
+    def setNotAtLabelUndefined: Self = StObject.set(x, "notAtLabel", js.undefined)
     
     @scala.inline
-    def deleteNoFilterLabel: Self = this.set("noFilterLabel", js.undefined)
+    def setNotEmptyNullText(value: String): Self = StObject.set(x, "notEmptyNullText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotAtLabel(value: String): Self = this.set("notAtLabel", value.asInstanceOf[js.Any])
+    def setNotEmptyNullTextUndefined: Self = StObject.set(x, "notEmptyNullText", js.undefined)
     
     @scala.inline
-    def deleteNotAtLabel: Self = this.set("notAtLabel", js.undefined)
+    def setNotNullNullText(value: String): Self = StObject.set(x, "notNullNullText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotEmptyNullText(value: String): Self = this.set("notEmptyNullText", value.asInstanceOf[js.Any])
+    def setNotNullNullTextUndefined: Self = StObject.set(x, "notNullNullText", js.undefined)
     
     @scala.inline
-    def deleteNotEmptyNullText: Self = this.set("notEmptyNullText", js.undefined)
+    def setNotOnLabel(value: String): Self = StObject.set(x, "notOnLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotNullNullText(value: String): Self = this.set("notNullNullText", value.asInstanceOf[js.Any])
+    def setNotOnLabelUndefined: Self = StObject.set(x, "notOnLabel", js.undefined)
     
     @scala.inline
-    def deleteNotNullNullText: Self = this.set("notNullNullText", js.undefined)
+    def setNotOnNullText(value: String): Self = StObject.set(x, "notOnNullText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotOnLabel(value: String): Self = this.set("notOnLabel", value.asInstanceOf[js.Any])
+    def setNotOnNullTextUndefined: Self = StObject.set(x, "notOnNullText", js.undefined)
     
     @scala.inline
-    def deleteNotOnLabel: Self = this.set("notOnLabel", js.undefined)
+    def setNullNullText(value: String): Self = StObject.set(x, "nullNullText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotOnNullText(value: String): Self = this.set("notOnNullText", value.asInstanceOf[js.Any])
+    def setNullNullTextUndefined: Self = StObject.set(x, "nullNullText", js.undefined)
     
     @scala.inline
-    def deleteNotOnNullText: Self = this.set("notOnNullText", js.undefined)
+    def setOnLabel(value: String): Self = StObject.set(x, "onLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNullNullText(value: String): Self = this.set("nullNullText", value.asInstanceOf[js.Any])
+    def setOnLabelUndefined: Self = StObject.set(x, "onLabel", js.undefined)
     
     @scala.inline
-    def deleteNullNullText: Self = this.set("nullNullText", js.undefined)
+    def setOnNullText(value: String): Self = StObject.set(x, "onNullText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnLabel(value: String): Self = this.set("onLabel", value.asInstanceOf[js.Any])
+    def setOnNullTextUndefined: Self = StObject.set(x, "onNullText", js.undefined)
     
     @scala.inline
-    def deleteOnLabel: Self = this.set("onLabel", js.undefined)
+    def setStartsWithLabel(value: String): Self = StObject.set(x, "startsWithLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnNullText(value: String): Self = this.set("onNullText", value.asInstanceOf[js.Any])
+    def setStartsWithLabelUndefined: Self = StObject.set(x, "startsWithLabel", js.undefined)
     
     @scala.inline
-    def deleteOnNullText: Self = this.set("onNullText", js.undefined)
+    def setStartsWithNullText(value: String): Self = StObject.set(x, "startsWithNullText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartsWithLabel(value: String): Self = this.set("startsWithLabel", value.asInstanceOf[js.Any])
+    def setStartsWithNullTextUndefined: Self = StObject.set(x, "startsWithNullText", js.undefined)
     
     @scala.inline
-    def deleteStartsWithLabel: Self = this.set("startsWithLabel", js.undefined)
+    def setThisMonthLabel(value: String): Self = StObject.set(x, "thisMonthLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartsWithNullText(value: String): Self = this.set("startsWithNullText", value.asInstanceOf[js.Any])
+    def setThisMonthLabelUndefined: Self = StObject.set(x, "thisMonthLabel", js.undefined)
     
     @scala.inline
-    def deleteStartsWithNullText: Self = this.set("startsWithNullText", js.undefined)
+    def setThisYearLabel(value: String): Self = StObject.set(x, "thisYearLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThisMonthLabel(value: String): Self = this.set("thisMonthLabel", value.asInstanceOf[js.Any])
+    def setThisYearLabelUndefined: Self = StObject.set(x, "thisYearLabel", js.undefined)
     
     @scala.inline
-    def deleteThisMonthLabel: Self = this.set("thisMonthLabel", js.undefined)
+    def setTodayLabel(value: String): Self = StObject.set(x, "todayLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThisYearLabel(value: String): Self = this.set("thisYearLabel", value.asInstanceOf[js.Any])
+    def setTodayLabelUndefined: Self = StObject.set(x, "todayLabel", js.undefined)
     
     @scala.inline
-    def deleteThisYearLabel: Self = this.set("thisYearLabel", js.undefined)
+    def setTooltipTemplate(value: String): Self = StObject.set(x, "tooltipTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTodayLabel(value: String): Self = this.set("todayLabel", value.asInstanceOf[js.Any])
+    def setTooltipTemplateUndefined: Self = StObject.set(x, "tooltipTemplate", js.undefined)
     
     @scala.inline
-    def deleteTodayLabel: Self = this.set("todayLabel", js.undefined)
+    def setTrueLabel(value: String): Self = StObject.set(x, "trueLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipTemplate(value: String): Self = this.set("tooltipTemplate", value.asInstanceOf[js.Any])
+    def setTrueLabelUndefined: Self = StObject.set(x, "trueLabel", js.undefined)
     
     @scala.inline
-    def deleteTooltipTemplate: Self = this.set("tooltipTemplate", js.undefined)
+    def setYesterdayLabel(value: String): Self = StObject.set(x, "yesterdayLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrueLabel(value: String): Self = this.set("trueLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrueLabel: Self = this.set("trueLabel", js.undefined)
-    
-    @scala.inline
-    def setYesterdayLabel(value: String): Self = this.set("yesterdayLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYesterdayLabel: Self = this.set("yesterdayLabel", js.undefined)
+    def setYesterdayLabelUndefined: Self = StObject.set(x, "yesterdayLabel", js.undefined)
   }
 }

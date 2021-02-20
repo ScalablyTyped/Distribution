@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -132,63 +133,51 @@ object XPrintAreas {
   }
   
   @scala.inline
-  implicit class XPrintAreasOps[Self <: XPrintAreas] (val x: Self) extends AnyVal {
+  implicit class XPrintAreasMutableBuilder[Self <: XPrintAreas] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetPrintAreas(value: () => SafeArray[CellRangeAddress]): Self = StObject.set(x, "getPrintAreas", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPrintTitleColumns(value: () => Boolean): Self = StObject.set(x, "getPrintTitleColumns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPrintTitleRows(value: () => Boolean): Self = StObject.set(x, "getPrintTitleRows", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPrintAreas(value: SafeArray[CellRangeAddress]): Self = this.set("PrintAreas", value.asInstanceOf[js.Any])
+    def setGetTitleColumns(value: () => CellRangeAddress): Self = StObject.set(x, "getTitleColumns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPrintTitleColumns(value: Boolean): Self = this.set("PrintTitleColumns", value.asInstanceOf[js.Any])
+    def setGetTitleRows(value: () => CellRangeAddress): Self = StObject.set(x, "getTitleRows", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPrintTitleRows(value: Boolean): Self = this.set("PrintTitleRows", value.asInstanceOf[js.Any])
+    def setPrintAreas(value: SafeArray[CellRangeAddress]): Self = StObject.set(x, "PrintAreas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleColumns(value: CellRangeAddress): Self = this.set("TitleColumns", value.asInstanceOf[js.Any])
+    def setPrintTitleColumns(value: Boolean): Self = StObject.set(x, "PrintTitleColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleRows(value: CellRangeAddress): Self = this.set("TitleRows", value.asInstanceOf[js.Any])
+    def setPrintTitleRows(value: Boolean): Self = StObject.set(x, "PrintTitleRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPrintAreas(value: () => SafeArray[CellRangeAddress]): Self = this.set("getPrintAreas", js.Any.fromFunction0(value))
+    def setSetPrintAreas(value: SeqEquiv[CellRangeAddress] => Unit): Self = StObject.set(x, "setPrintAreas", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPrintTitleColumns(value: () => Boolean): Self = this.set("getPrintTitleColumns", js.Any.fromFunction0(value))
+    def setSetPrintTitleColumns(value: Boolean => Unit): Self = StObject.set(x, "setPrintTitleColumns", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPrintTitleRows(value: () => Boolean): Self = this.set("getPrintTitleRows", js.Any.fromFunction0(value))
+    def setSetPrintTitleRows(value: Boolean => Unit): Self = StObject.set(x, "setPrintTitleRows", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTitleColumns(value: () => CellRangeAddress): Self = this.set("getTitleColumns", js.Any.fromFunction0(value))
+    def setSetTitleColumns(value: CellRangeAddress => Unit): Self = StObject.set(x, "setTitleColumns", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTitleRows(value: () => CellRangeAddress): Self = this.set("getTitleRows", js.Any.fromFunction0(value))
+    def setSetTitleRows(value: CellRangeAddress => Unit): Self = StObject.set(x, "setTitleRows", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetPrintAreas(value: SeqEquiv[CellRangeAddress] => Unit): Self = this.set("setPrintAreas", js.Any.fromFunction1(value))
+    def setTitleColumns(value: CellRangeAddress): Self = StObject.set(x, "TitleColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetPrintTitleColumns(value: Boolean => Unit): Self = this.set("setPrintTitleColumns", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPrintTitleRows(value: Boolean => Unit): Self = this.set("setPrintTitleRows", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTitleColumns(value: CellRangeAddress => Unit): Self = this.set("setTitleColumns", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTitleRows(value: CellRangeAddress => Unit): Self = this.set("setTitleRows", js.Any.fromFunction1(value))
+    def setTitleRows(value: CellRangeAddress): Self = StObject.set(x, "TitleRows", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.azureSb.mod.Azure.ServiceBus.Results.Models
 
 import typings.azureSb.anon.Author
 import typings.azureSb.mod.Azure.ServiceBus.DateString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,36 +41,24 @@ object Rule {
   }
   
   @scala.inline
-  implicit class RuleOps[Self <: Rule] (val x: Self) extends AnyVal {
+  implicit class RuleMutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String | SqlFilter): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilter(value: SqlFilter | CorrelationFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: String | SqlFilter): Self = this.set("Action", value.asInstanceOf[js.Any])
+    def setRuleName(value: String): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: SqlFilter | CorrelationFilter): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    def setSubscriptionName(value: String): Self = StObject.set(x, "SubscriptionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRuleName(value: String): Self = this.set("RuleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscriptionName(value: String): Self = this.set("SubscriptionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopicName(value: String): Self = this.set("TopicName", value.asInstanceOf[js.Any])
+    def setTopicName(value: String): Self = StObject.set(x, "TopicName", value.asInstanceOf[js.Any])
   }
 }

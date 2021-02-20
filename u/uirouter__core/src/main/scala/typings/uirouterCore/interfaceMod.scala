@@ -1,16 +1,19 @@
 package typings.uirouterCore
 
 import typings.uirouterCore.routerMod.UIRouter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/interface", JSImport.Namespace)
-@js.native
-object interfaceMod extends js.Object {
+object interfaceMod {
+  
+  @JSImport("@uirouter/core/lib/interface", "UIRouterPluginBase")
+  @js.native
+  abstract class UIRouterPluginBase () extends UIRouterPlugin
   
   @js.native
-  trait Disposable extends js.Object {
+  trait Disposable extends StObject {
     
     /** Instructs the Disposable to clean up any resources */
     def dispose(): js.Any = js.native
@@ -18,7 +21,7 @@ object interfaceMod extends js.Object {
   }
   
   @js.native
-  trait UIInjector extends js.Object {
+  trait UIInjector extends StObject {
     
     /**
       * Gets a value from the injector.
@@ -107,7 +110,4 @@ object interfaceMod extends js.Object {
     
     var name: String = js.native
   }
-  
-  @js.native
-  abstract class UIRouterPluginBase () extends UIRouterPlugin
 }

@@ -2,6 +2,7 @@ package typings.got.mod
 
 import typings.got.gotBooleans.`true`
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,39 +27,27 @@ object GotFormOptions {
   }
   
   @scala.inline
-  implicit class GotFormOptionsOps[Self <: GotFormOptions[_], E /* <: String | Null */] (val x: Self with GotFormOptions[E]) extends AnyVal {
+  implicit class GotFormOptionsMutableBuilder[Self <: GotFormOptions[_], E /* <: String | Null */] (val x: Self with GotFormOptions[E]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: Record[String, _]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForm(value: `true`): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForm(value: `true`): Self = this.set("form", value.asInstanceOf[js.Any])
+    def setHooks(value: Hooks[GotFormOptions[E], Record[String, _]]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: Record[String, _]): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHooks(value: Hooks[GotFormOptions[E], Record[String, _]]): Self = this.set("hooks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHooks: Self = this.set("hooks", js.undefined)
-    
-    @scala.inline
-    def setJson(value: Boolean): Self = this.set("json", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJson: Self = this.set("json", js.undefined)
+    def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
   }
 }

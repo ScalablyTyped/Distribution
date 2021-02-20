@@ -18,6 +18,7 @@ import typings.std.ProgressEvent
 import typings.std.XMLHttpRequest
 import typings.std.XMLHttpRequestEventTarget
 import typings.std.XMLHttpRequestResponseType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

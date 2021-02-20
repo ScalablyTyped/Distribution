@@ -1,13 +1,14 @@
 package typings.azureSb.mod
 
-import typings.azureSb.wrapserviceMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure-sb", "WrapService")
 @js.native
-class WrapService protected () extends ^ {
+class WrapService protected ()
+  extends typings.azureSb.wrapserviceMod.^ {
   def this(acsHost: String) = this()
   def this(acsHost: String, issuer: String) = this()
   def this(acsHost: String, issuer: js.UndefOr[scala.Nothing], accessKey: String) = this()

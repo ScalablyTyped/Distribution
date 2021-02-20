@@ -2,16 +2,16 @@ package typings.hyperlorisTyson
 
 import typings.hyperlorisTyson.jsonPropertyMod.Access
 import typings.hyperlorisTyson.typeTokenMod.ClassType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@hyperloris/tyson/dist/types/reflect/jsonPropertyMetadata", JSImport.Namespace)
-@js.native
-object jsonPropertyMetadataMod extends js.Object {
+object jsonPropertyMetadataMod {
   
+  @JSImport("@hyperloris/tyson/dist/types/reflect/jsonPropertyMetadata", "JsonPropertyMetadata")
   @js.native
-  class JsonPropertyMetadata protected () extends js.Object {
+  class JsonPropertyMetadata protected () extends StObject {
     def this(name: String, `type`: js.Array[_], access: Access, required: Boolean, ignoreType: Boolean) = this()
     def this(name: String, `type`: ClassType[_], access: Access, required: Boolean, ignoreType: Boolean) = this()
     

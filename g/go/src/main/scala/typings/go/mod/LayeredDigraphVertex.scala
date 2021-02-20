@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,6 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** This holds LayeredDigraphLayout-specific information about Nodes.*/
 @JSImport("go", "LayeredDigraphVertex")
 @js.native
+/**
+  * This constructs a vertex that does not know about any Node.
+  */
 class LayeredDigraphVertex () extends LayoutVertex {
   
   /**The column to which the node is assigned.*/

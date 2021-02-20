@@ -1,27 +1,50 @@
 package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ListTopicSnapshotsResponse. */
-trait IListTopicSnapshotsResponse extends js.Object {
+@js.native
+trait IListTopicSnapshotsResponse extends StObject {
+  
   /** ListTopicSnapshotsResponse nextPageToken */
-  var nextPageToken: js.UndefOr[String | Null] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.native
+  
   /** ListTopicSnapshotsResponse snapshots */
-  var snapshots: js.UndefOr[js.Array[String] | Null] = js.undefined
+  var snapshots: js.UndefOr[js.Array[String] | Null] = js.native
 }
-
 object IListTopicSnapshotsResponse {
+  
   @scala.inline
-  def apply(
-    nextPageToken: js.UndefOr[Null | String] = js.undefined,
-    snapshots: js.UndefOr[Null | js.Array[String]] = js.undefined
-  ): IListTopicSnapshotsResponse = {
+  def apply(): IListTopicSnapshotsResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(nextPageToken)) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapshots)) __obj.updateDynamic("snapshots")(snapshots.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListTopicSnapshotsResponse]
   }
+  
+  @scala.inline
+  implicit class IListTopicSnapshotsResponseMutableBuilder[Self <: IListTopicSnapshotsResponse] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
+    @scala.inline
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    
+    @scala.inline
+    def setSnapshots(value: js.Array[String]): Self = StObject.set(x, "snapshots", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSnapshotsNull: Self = StObject.set(x, "snapshots", null)
+    
+    @scala.inline
+    def setSnapshotsUndefined: Self = StObject.set(x, "snapshots", js.undefined)
+    
+    @scala.inline
+    def setSnapshotsVarargs(value: String*): Self = StObject.set(x, "snapshots", js.Array(value :_*))
+  }
 }
-

@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "WageSetting")
 @js.native
-class WageSetting () extends js.Object {
+class WageSetting () extends StObject {
   
   /**
     * The timestamp in RFC 3339 format describing when the wage setting object was created.

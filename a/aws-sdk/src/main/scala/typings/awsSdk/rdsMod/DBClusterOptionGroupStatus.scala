@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DBClusterOptionGroupStatus extends js.Object {
+trait DBClusterOptionGroupStatus extends StObject {
   
   /**
     * Specifies the name of the DB cluster option group.
@@ -26,30 +27,18 @@ object DBClusterOptionGroupStatus {
   }
   
   @scala.inline
-  implicit class DBClusterOptionGroupStatusOps[Self <: DBClusterOptionGroupStatus] (val x: Self) extends AnyVal {
+  implicit class DBClusterOptionGroupStatusMutableBuilder[Self <: DBClusterOptionGroupStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDBClusterOptionGroupName(value: String): Self = StObject.set(x, "DBClusterOptionGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDBClusterOptionGroupNameUndefined: Self = StObject.set(x, "DBClusterOptionGroupName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBClusterOptionGroupName(value: String): Self = this.set("DBClusterOptionGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDBClusterOptionGroupName: Self = this.set("DBClusterOptionGroupName", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.vueCompilerCore.mod
 
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`17`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,24 +22,12 @@ object DirectiveArguments {
   }
   
   @scala.inline
-  implicit class DirectiveArgumentsOps[Self <: DirectiveArguments] (val x: Self) extends AnyVal {
+  implicit class DirectiveArgumentsMutableBuilder[Self <: DirectiveArguments] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElements(value: js.Array[DirectiveArgumentNode]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setElementsVarargs(value: DirectiveArgumentNode*): Self = this.set("elements", js.Array(value :_*))
-    
-    @scala.inline
-    def setElements(value: js.Array[DirectiveArgumentNode]): Self = this.set("elements", value.asInstanceOf[js.Any])
+    def setElementsVarargs(value: DirectiveArgumentNode*): Self = StObject.set(x, "elements", js.Array(value :_*))
   }
 }

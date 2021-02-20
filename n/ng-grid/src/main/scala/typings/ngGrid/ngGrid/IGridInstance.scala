@@ -1,11 +1,12 @@
 package typings.ngGrid.ngGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGridInstance extends js.Object {
+trait IGridInstance extends StObject {
   
   @JSName("$canvas")
   var $canvas: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any = js.native
@@ -158,180 +159,168 @@ object IGridInstance {
   }
   
   @scala.inline
-  implicit class IGridInstanceOps[Self <: IGridInstance] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class IGridInstanceMutableBuilder[Self <: IGridInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
     def set$canvas(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
-    ): Self = this.set("$canvas", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "$canvas", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$footerPanel(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
-    ): Self = this.set("$footerPanel", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "$footerPanel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$groupPanel(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
-    ): Self = this.set("$groupPanel", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "$groupPanel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$headerContainer(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
-    ): Self = this.set("$headerContainer", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "$headerContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$headerScroller(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
-    ): Self = this.set("$headerScroller", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "$headerScroller", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$headers(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
-    ): Self = this.set("$headers", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "$headers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$root(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
-    ): Self = this.set("$root", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "$root", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$topPanel(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
-    ): Self = this.set("$topPanel", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "$topPanel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$viewport(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
-    ): Self = this.set("$viewport", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "$viewport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildColumnDefsFromData(value: () => Unit): Self = this.set("buildColumnDefsFromData", js.Any.fromFunction0(value))
+    def setBuildColumnDefsFromData(value: () => Unit): Self = StObject.set(x, "buildColumnDefsFromData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBuildColumns(value: () => Unit): Self = this.set("buildColumns", js.Any.fromFunction0(value))
+    def setBuildColumns(value: () => Unit): Self = StObject.set(x, "buildColumns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCalcMaxCanvasHeight(value: () => Unit): Self = this.set("calcMaxCanvasHeight", js.Any.fromFunction0(value))
+    def setCalcMaxCanvasHeight(value: () => Unit): Self = StObject.set(x, "calcMaxCanvasHeight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearSortingData(value: () => Unit): Self = this.set("clearSortingData", js.Any.fromFunction0(value))
+    def setClearSortingData(value: () => Unit): Self = StObject.set(x, "clearSortingData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConfig(value: IGridOptions): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setConfig(value: IGridOptions): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigureColumnWidths(value: () => Unit): Self = this.set("configureColumnWidths", js.Any.fromFunction0(value))
+    def setConfigureColumnWidths(value: () => Unit): Self = StObject.set(x, "configureColumnWidths", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementDims(value: IElementDimension): Self = this.set("elementDims", value.asInstanceOf[js.Any])
+    def setElementDims(value: IElementDimension): Self = StObject.set(x, "elementDims", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventProvider(value: IEventProvider): Self = this.set("eventProvider", value.asInstanceOf[js.Any])
+    def setEventProvider(value: IEventProvider): Self = StObject.set(x, "eventProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilteredRowsVarargs(value: IRow*): Self = this.set("filteredRows", js.Array(value :_*))
+    def setFilteredRows(value: js.Array[IRow]): Self = StObject.set(x, "filteredRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilteredRows(value: js.Array[IRow]): Self = this.set("filteredRows", value.asInstanceOf[js.Any])
+    def setFilteredRowsVarargs(value: IRow*): Self = StObject.set(x, "filteredRows", js.Array(value :_*))
     
     @scala.inline
-    def setFixColumnIndexes(value: () => Unit): Self = this.set("fixColumnIndexes", js.Any.fromFunction0(value))
+    def setFixColumnIndexes(value: () => Unit): Self = StObject.set(x, "fixColumnIndexes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFixGroupIndexes(value: () => Unit): Self = this.set("fixGroupIndexes", js.Any.fromFunction0(value))
+    def setFixGroupIndexes(value: () => Unit): Self = StObject.set(x, "fixGroupIndexes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFooterController(value: js.Any): Self = this.set("footerController", value.asInstanceOf[js.Any])
+    def setFooterController(value: js.Any): Self = StObject.set(x, "footerController", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTemplate(value: String => js.Any): Self = this.set("getTemplate", js.Any.fromFunction1(value))
+    def setGetTemplate(value: String => js.Any): Self = StObject.set(x, "getTemplate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGridId(value: String): Self = this.set("gridId", value.asInstanceOf[js.Any])
+    def setGridId(value: String): Self = StObject.set(x, "gridId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInit(value: () => js.Any): Self = this.set("init", js.Any.fromFunction0(value))
+    def setInit(value: () => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInitTemplates(value: () => js.Any): Self = this.set("initTemplates", js.Any.fromFunction0(value))
+    def setInitTemplates(value: () => js.Any): Self = StObject.set(x, "initTemplates", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLastSortedColumnsVarargs(value: IColumn*): Self = this.set("lastSortedColumns", js.Array(value :_*))
+    def setLastSortedColumns(value: js.Array[IColumn]): Self = StObject.set(x, "lastSortedColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSortedColumns(value: js.Array[IColumn]): Self = this.set("lastSortedColumns", value.asInstanceOf[js.Any])
+    def setLastSortedColumnsVarargs(value: IColumn*): Self = StObject.set(x, "lastSortedColumns", js.Array(value :_*))
     
     @scala.inline
-    def setLateBindColumns(value: Boolean): Self = this.set("lateBindColumns", value.asInstanceOf[js.Any])
+    def setLateBindColumns(value: Boolean): Self = StObject.set(x, "lateBindColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCanvasHt(value: Double): Self = this.set("maxCanvasHt", value.asInstanceOf[js.Any])
+    def setMaxCanvasHt(value: Double): Self = StObject.set(x, "maxCanvasHt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinRowsToRender(value: () => Unit): Self = this.set("minRowsToRender", js.Any.fromFunction0(value))
+    def setMinRowsToRender(value: () => Unit): Self = StObject.set(x, "minRowsToRender", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPrevScrollIndex(value: Double): Self = this.set("prevScrollIndex", value.asInstanceOf[js.Any])
+    def setPrevScrollIndex(value: Double): Self = StObject.set(x, "prevScrollIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrevScrollTop(value: Double): Self = this.set("prevScrollTop", value.asInstanceOf[js.Any])
+    def setPrevScrollTop(value: Double): Self = StObject.set(x, "prevScrollTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshDomSizes(value: () => Unit): Self = this.set("refreshDomSizes", js.Any.fromFunction0(value))
+    def setRefreshDomSizes(value: () => Unit): Self = StObject.set(x, "refreshDomSizes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setResizeOnData(value: IColumn => Unit): Self = this.set("resizeOnData", js.Any.fromFunction1(value))
+    def setResizeOnData(value: IColumn => Unit): Self = StObject.set(x, "resizeOnData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRootDim(value: IDimension): Self = this.set("rootDim", value.asInstanceOf[js.Any])
+    def setRootDim(value: IDimension): Self = StObject.set(x, "rootDim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowCacheVarargs(value: IRow*): Self = this.set("rowCache", js.Array(value :_*))
+    def setRowCache(value: js.Array[IRow]): Self = StObject.set(x, "rowCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowCache(value: js.Array[IRow]): Self = this.set("rowCache", value.asInstanceOf[js.Any])
+    def setRowCacheVarargs(value: IRow*): Self = StObject.set(x, "rowCache", js.Array(value :_*))
     
     @scala.inline
-    def setRowFactory(value: IRowFactory): Self = this.set("rowFactory", value.asInstanceOf[js.Any])
+    def setRowFactory(value: IRowFactory): Self = StObject.set(x, "rowFactory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowMapVarargs(value: IRow*): Self = this.set("rowMap", js.Array(value :_*))
+    def setRowMap(value: js.Array[IRow]): Self = StObject.set(x, "rowMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowMap(value: js.Array[IRow]): Self = this.set("rowMap", value.asInstanceOf[js.Any])
+    def setRowMapVarargs(value: IRow*): Self = StObject.set(x, "rowMap", js.Array(value :_*))
     
     @scala.inline
-    def setSearchProvider(value: ISearchProvider): Self = this.set("searchProvider", value.asInstanceOf[js.Any])
+    def setSearchProvider(value: ISearchProvider): Self = StObject.set(x, "searchProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetRenderedRows(value: js.Array[IRow] => Unit): Self = this.set("setRenderedRows", js.Any.fromFunction1(value))
+    def setSetRenderedRows(value: js.Array[IRow] => Unit): Self = StObject.set(x, "setRenderedRows", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSortActual(value: () => Unit): Self = this.set("sortActual", js.Any.fromFunction0(value))
+    def setSortActual(value: () => Unit): Self = StObject.set(x, "sortActual", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSortColumnsInit(value: () => Unit): Self = this.set("sortColumnsInit", js.Any.fromFunction0(value))
+    def setSortColumnsInit(value: () => Unit): Self = StObject.set(x, "sortColumnsInit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSortData(value: (IColumn, js.Any) => Unit): Self = this.set("sortData", js.Any.fromFunction2(value))
+    def setSortData(value: (IColumn, js.Any) => Unit): Self = StObject.set(x, "sortData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setStyleProvider(value: IStyleProvider): Self = this.set("styleProvider", value.asInstanceOf[js.Any])
+    def setStyleProvider(value: IStyleProvider): Self = StObject.set(x, "styleProvider", value.asInstanceOf[js.Any])
   }
 }

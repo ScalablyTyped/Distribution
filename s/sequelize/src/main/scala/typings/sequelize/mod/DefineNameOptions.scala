@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see DefineOptions
   */
 @js.native
-trait DefineNameOptions extends js.Object {
+trait DefineNameOptions extends StObject {
   
   /**
     * Plural model name
@@ -31,30 +32,18 @@ object DefineNameOptions {
   }
   
   @scala.inline
-  implicit class DefineNameOptionsOps[Self <: DefineNameOptions] (val x: Self) extends AnyVal {
+  implicit class DefineNameOptionsMutableBuilder[Self <: DefineNameOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlural(value: String): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPluralUndefined: Self = StObject.set(x, "plural", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSingular(value: String): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlural(value: String): Self = this.set("plural", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlural: Self = this.set("plural", js.undefined)
-    
-    @scala.inline
-    def setSingular(value: String): Self = this.set("singular", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSingular: Self = this.set("singular", js.undefined)
+    def setSingularUndefined: Self = StObject.set(x, "singular", js.undefined)
   }
 }

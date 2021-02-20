@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The object returned to the <Titanium.UI.WebView.backForwardList> method.
   */
 @js.native
-trait BackForwardList extends js.Object {
+trait BackForwardList extends StObject {
   
   /**
     * The item immediately preceding the current item.
@@ -44,54 +45,42 @@ object BackForwardList {
   }
   
   @scala.inline
-  implicit class BackForwardListOps[Self <: BackForwardList] (val x: Self) extends AnyVal {
+  implicit class BackForwardListMutableBuilder[Self <: BackForwardList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackItem(value: BackForwardListItem): Self = StObject.set(x, "backItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackItemUndefined: Self = StObject.set(x, "backItem", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackList(value: js.Array[BackForwardListItem]): Self = StObject.set(x, "backList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackItem(value: BackForwardListItem): Self = this.set("backItem", value.asInstanceOf[js.Any])
+    def setBackListUndefined: Self = StObject.set(x, "backList", js.undefined)
     
     @scala.inline
-    def deleteBackItem: Self = this.set("backItem", js.undefined)
+    def setBackListVarargs(value: BackForwardListItem*): Self = StObject.set(x, "backList", js.Array(value :_*))
     
     @scala.inline
-    def setBackListVarargs(value: BackForwardListItem*): Self = this.set("backList", js.Array(value :_*))
+    def setCurrentItem(value: BackForwardListItem): Self = StObject.set(x, "currentItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackList(value: js.Array[BackForwardListItem]): Self = this.set("backList", value.asInstanceOf[js.Any])
+    def setCurrentItemUndefined: Self = StObject.set(x, "currentItem", js.undefined)
     
     @scala.inline
-    def deleteBackList: Self = this.set("backList", js.undefined)
+    def setForwardItem(value: BackForwardListItem): Self = StObject.set(x, "forwardItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentItem(value: BackForwardListItem): Self = this.set("currentItem", value.asInstanceOf[js.Any])
+    def setForwardItemUndefined: Self = StObject.set(x, "forwardItem", js.undefined)
     
     @scala.inline
-    def deleteCurrentItem: Self = this.set("currentItem", js.undefined)
+    def setForwardList(value: js.Array[BackForwardListItem]): Self = StObject.set(x, "forwardList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForwardItem(value: BackForwardListItem): Self = this.set("forwardItem", value.asInstanceOf[js.Any])
+    def setForwardListUndefined: Self = StObject.set(x, "forwardList", js.undefined)
     
     @scala.inline
-    def deleteForwardItem: Self = this.set("forwardItem", js.undefined)
-    
-    @scala.inline
-    def setForwardListVarargs(value: BackForwardListItem*): Self = this.set("forwardList", js.Array(value :_*))
-    
-    @scala.inline
-    def setForwardList(value: js.Array[BackForwardListItem]): Self = this.set("forwardList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForwardList: Self = this.set("forwardList", js.undefined)
+    def setForwardListVarargs(value: BackForwardListItem*): Self = StObject.set(x, "forwardList", js.Array(value :_*))
   }
 }

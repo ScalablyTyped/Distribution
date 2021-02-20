@@ -1,11 +1,12 @@
 package typings.awsSdk.syntheticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanaryStatus extends js.Object {
+trait CanaryStatus extends StObject {
   
   /**
     * The current state of the canary.
@@ -31,36 +32,24 @@ object CanaryStatus {
   }
   
   @scala.inline
-  implicit class CanaryStatusOps[Self <: CanaryStatus] (val x: Self) extends AnyVal {
+  implicit class CanaryStatusMutableBuilder[Self <: CanaryStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setState(value: CanaryState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStateReason(value: String): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStateReasonCode(value: CanaryStateReasonCode): Self = StObject.set(x, "StateReasonCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: CanaryState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setStateReasonCodeUndefined: Self = StObject.set(x, "StateReasonCode", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setStateReasonUndefined: Self = StObject.set(x, "StateReason", js.undefined)
     
     @scala.inline
-    def setStateReason(value: String): Self = this.set("StateReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateReason: Self = this.set("StateReason", js.undefined)
-    
-    @scala.inline
-    def setStateReasonCode(value: CanaryStateReasonCode): Self = this.set("StateReasonCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateReasonCode: Self = this.set("StateReasonCode", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

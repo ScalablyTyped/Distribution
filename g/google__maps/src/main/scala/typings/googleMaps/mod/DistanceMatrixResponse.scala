@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistanceMatrixResponse extends js.Object {
+trait DistanceMatrixResponse extends StObject {
   
   /**
     * contains an array of addresses as returned by the API from your original request.
@@ -46,42 +47,30 @@ object DistanceMatrixResponse {
   }
   
   @scala.inline
-  implicit class DistanceMatrixResponseOps[Self <: DistanceMatrixResponse] (val x: Self) extends AnyVal {
+  implicit class DistanceMatrixResponseMutableBuilder[Self <: DistanceMatrixResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination_addresses(value: js.Array[String]): Self = StObject.set(x, "destination_addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestination_addressesVarargs(value: String*): Self = StObject.set(x, "destination_addresses", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination_addressesVarargs(value: String*): Self = this.set("destination_addresses", js.Array(value :_*))
+    def setOrigin_addresses(value: js.Array[String]): Self = StObject.set(x, "origin_addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination_addresses(value: js.Array[String]): Self = this.set("destination_addresses", value.asInstanceOf[js.Any])
+    def setOrigin_addressesVarargs(value: String*): Self = StObject.set(x, "origin_addresses", js.Array(value :_*))
     
     @scala.inline
-    def setError_message(value: String): Self = this.set("error_message", value.asInstanceOf[js.Any])
+    def setRows(value: js.Array[DistanceMatrixRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin_addressesVarargs(value: String*): Self = this.set("origin_addresses", js.Array(value :_*))
+    def setRowsVarargs(value: DistanceMatrixRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
     @scala.inline
-    def setOrigin_addresses(value: js.Array[String]): Self = this.set("origin_addresses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowsVarargs(value: DistanceMatrixRow*): Self = this.set("rows", js.Array(value :_*))
-    
-    @scala.inline
-    def setRows(value: js.Array[DistanceMatrixRow]): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: DistanceMatrixResponseTopLevelStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: DistanceMatrixResponseTopLevelStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

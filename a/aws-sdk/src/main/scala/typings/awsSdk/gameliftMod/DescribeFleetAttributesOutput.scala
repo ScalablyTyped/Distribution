@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeFleetAttributesOutput extends js.Object {
+trait DescribeFleetAttributesOutput extends StObject {
   
   /**
     * A collection of objects containing attribute metadata for each requested fleet ID. Attribute objects are returned only for fleets that currently exist.
@@ -26,33 +27,21 @@ object DescribeFleetAttributesOutput {
   }
   
   @scala.inline
-  implicit class DescribeFleetAttributesOutputOps[Self <: DescribeFleetAttributesOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeFleetAttributesOutputMutableBuilder[Self <: DescribeFleetAttributesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFleetAttributes(value: FleetAttributesList): Self = StObject.set(x, "FleetAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFleetAttributesUndefined: Self = StObject.set(x, "FleetAttributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFleetAttributesVarargs(value: FleetAttributes*): Self = StObject.set(x, "FleetAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setFleetAttributesVarargs(value: FleetAttributes*): Self = this.set("FleetAttributes", js.Array(value :_*))
+    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetAttributes(value: FleetAttributesList): Self = this.set("FleetAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFleetAttributes: Self = this.set("FleetAttributes", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

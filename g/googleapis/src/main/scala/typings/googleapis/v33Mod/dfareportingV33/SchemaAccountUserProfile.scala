@@ -1,5 +1,6 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * UserProfiles is for accessing the API.
   */
 @js.native
-trait SchemaAccountUserProfile extends js.Object {
+trait SchemaAccountUserProfile extends StObject {
   
   /**
     * Account ID of the user profile. This is a read-only field that can be
@@ -118,114 +119,102 @@ object SchemaAccountUserProfile {
   }
   
   @scala.inline
-  implicit class SchemaAccountUserProfileOps[Self <: SchemaAccountUserProfile] (val x: Self) extends AnyVal {
+  implicit class SchemaAccountUserProfileMutableBuilder[Self <: SchemaAccountUserProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setAdvertiserFilter(value: SchemaObjectFilter): Self = StObject.set(x, "advertiserFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setAdvertiserFilterUndefined: Self = StObject.set(x, "advertiserFilter", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setCampaignFilter(value: SchemaObjectFilter): Self = StObject.set(x, "campaignFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiserFilter(value: SchemaObjectFilter): Self = this.set("advertiserFilter", value.asInstanceOf[js.Any])
+    def setCampaignFilterUndefined: Self = StObject.set(x, "campaignFilter", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserFilter: Self = this.set("advertiserFilter", js.undefined)
+    def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaignFilter(value: SchemaObjectFilter): Self = this.set("campaignFilter", value.asInstanceOf[js.Any])
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def deleteCampaignFilter: Self = this.set("campaignFilter", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: String): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setSiteFilter(value: SchemaObjectFilter): Self = StObject.set(x, "siteFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSiteFilterUndefined: Self = StObject.set(x, "siteFilter", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSubaccountId(value: String): Self = StObject.set(x, "subaccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSiteFilter(value: SchemaObjectFilter): Self = this.set("siteFilter", value.asInstanceOf[js.Any])
+    def setSubaccountIdUndefined: Self = StObject.set(x, "subaccountId", js.undefined)
     
     @scala.inline
-    def deleteSiteFilter: Self = this.set("siteFilter", js.undefined)
+    def setTraffickerType(value: String): Self = StObject.set(x, "traffickerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
+    def setTraffickerTypeUndefined: Self = StObject.set(x, "traffickerType", js.undefined)
     
     @scala.inline
-    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
+    def setUserAccessType(value: String): Self = StObject.set(x, "userAccessType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTraffickerType(value: String): Self = this.set("traffickerType", value.asInstanceOf[js.Any])
+    def setUserAccessTypeUndefined: Self = StObject.set(x, "userAccessType", js.undefined)
     
     @scala.inline
-    def deleteTraffickerType: Self = this.set("traffickerType", js.undefined)
+    def setUserRoleFilter(value: SchemaObjectFilter): Self = StObject.set(x, "userRoleFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserAccessType(value: String): Self = this.set("userAccessType", value.asInstanceOf[js.Any])
+    def setUserRoleFilterUndefined: Self = StObject.set(x, "userRoleFilter", js.undefined)
     
     @scala.inline
-    def deleteUserAccessType: Self = this.set("userAccessType", js.undefined)
+    def setUserRoleId(value: String): Self = StObject.set(x, "userRoleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserRoleFilter(value: SchemaObjectFilter): Self = this.set("userRoleFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserRoleFilter: Self = this.set("userRoleFilter", js.undefined)
-    
-    @scala.inline
-    def setUserRoleId(value: String): Self = this.set("userRoleId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserRoleId: Self = this.set("userRoleId", js.undefined)
+    def setUserRoleIdUndefined: Self = StObject.set(x, "userRoleId", js.undefined)
   }
 }

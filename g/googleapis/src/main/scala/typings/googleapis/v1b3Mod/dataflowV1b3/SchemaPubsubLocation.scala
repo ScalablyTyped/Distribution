@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * streaming Dataflow job.
   */
 @js.native
-trait SchemaPubsubLocation extends js.Object {
+trait SchemaPubsubLocation extends StObject {
   
   /**
     * Indicates whether the pipeline allows late-arriving data.
@@ -60,60 +61,48 @@ object SchemaPubsubLocation {
   }
   
   @scala.inline
-  implicit class SchemaPubsubLocationOps[Self <: SchemaPubsubLocation] (val x: Self) extends AnyVal {
+  implicit class SchemaPubsubLocationMutableBuilder[Self <: SchemaPubsubLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDropLateData(value: Boolean): Self = StObject.set(x, "dropLateData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDropLateDataUndefined: Self = StObject.set(x, "dropLateData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdLabel(value: String): Self = StObject.set(x, "idLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropLateData(value: Boolean): Self = this.set("dropLateData", value.asInstanceOf[js.Any])
+    def setIdLabelUndefined: Self = StObject.set(x, "idLabel", js.undefined)
     
     @scala.inline
-    def deleteDropLateData: Self = this.set("dropLateData", js.undefined)
+    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdLabel(value: String): Self = this.set("idLabel", value.asInstanceOf[js.Any])
+    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
     
     @scala.inline
-    def deleteIdLabel: Self = this.set("idLabel", js.undefined)
+    def setTimestampLabel(value: String): Self = StObject.set(x, "timestampLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscription(value: String): Self = this.set("subscription", value.asInstanceOf[js.Any])
+    def setTimestampLabelUndefined: Self = StObject.set(x, "timestampLabel", js.undefined)
     
     @scala.inline
-    def deleteSubscription: Self = this.set("subscription", js.undefined)
+    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestampLabel(value: String): Self = this.set("timestampLabel", value.asInstanceOf[js.Any])
+    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     
     @scala.inline
-    def deleteTimestampLabel: Self = this.set("timestampLabel", js.undefined)
+    def setTrackingSubscription(value: String): Self = StObject.set(x, "trackingSubscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopic(value: String): Self = this.set("topic", value.asInstanceOf[js.Any])
+    def setTrackingSubscriptionUndefined: Self = StObject.set(x, "trackingSubscription", js.undefined)
     
     @scala.inline
-    def deleteTopic: Self = this.set("topic", js.undefined)
+    def setWithAttributes(value: Boolean): Self = StObject.set(x, "withAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackingSubscription(value: String): Self = this.set("trackingSubscription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackingSubscription: Self = this.set("trackingSubscription", js.undefined)
-    
-    @scala.inline
-    def setWithAttributes(value: Boolean): Self = this.set("withAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithAttributes: Self = this.set("withAttributes", js.undefined)
+    def setWithAttributesUndefined: Self = StObject.set(x, "withAttributes", js.undefined)
   }
 }

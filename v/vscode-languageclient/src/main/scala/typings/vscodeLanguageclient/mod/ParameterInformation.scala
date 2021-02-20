@@ -1,12 +1,11 @@
 package typings.vscodeLanguageclient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "ParameterInformation")
-@js.native
-object ParameterInformation extends js.Object {
+object ParameterInformation {
   
   /**
     * Creates a new parameter information literal.
@@ -14,8 +13,16 @@ object ParameterInformation extends js.Object {
     * @param label A label string.
     * @param documentation A doc string.
     */
+  @JSImport("vscode-languageclient", "ParameterInformation.create")
+  @js.native
   def create(label: String): typings.vscodeLanguageserverTypes.mod.ParameterInformation = js.native
+  @JSImport("vscode-languageclient", "ParameterInformation.create")
+  @js.native
   def create(label: String, documentation: String): typings.vscodeLanguageserverTypes.mod.ParameterInformation = js.native
+  @JSImport("vscode-languageclient", "ParameterInformation.create")
+  @js.native
   def create(label: js.Tuple2[Double, Double]): typings.vscodeLanguageserverTypes.mod.ParameterInformation = js.native
+  @JSImport("vscode-languageclient", "ParameterInformation.create")
+  @js.native
   def create(label: js.Tuple2[Double, Double], documentation: String): typings.vscodeLanguageserverTypes.mod.ParameterInformation = js.native
 }

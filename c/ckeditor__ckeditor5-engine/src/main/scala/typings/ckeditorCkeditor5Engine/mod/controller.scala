@@ -13,15 +13,15 @@ import typings.ckeditorCkeditor5Engine.mod.view.View
 import typings.ckeditorCkeditor5Utils.mod.Emitter
 import typings.ckeditorCkeditor5Utils.mod.Observable
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ckeditor/ckeditor5-engine", "controller")
-@js.native
-object controller extends js.Object {
+object controller {
   
   // engine/controller/datacontroller
+  @JSImport("@ckeditor/ckeditor5-engine", "controller.DataController")
   @js.native
   class DataController protected () extends Observable {
     def this(model: Model) = this()
@@ -67,6 +67,7 @@ object controller extends js.Object {
   }
   
   // engine/controller/editingcontroller
+  @JSImport("@ckeditor/ckeditor5-engine", "controller.EditingController")
   @js.native
   class EditingController protected () extends Observable {
     def this(model: Model) = this()

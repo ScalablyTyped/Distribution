@@ -11,12 +11,13 @@ import typings.chromeApps.chromeAppsStrings.install_
 import typings.chromeApps.chromeAppsStrings.shared_module_update_
 import typings.chromeApps.chromeAppsStrings.update_
 import typings.std.Exclude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstalledDetails extends js.Object {
+trait InstalledDetails extends StObject {
   
   /**
     * Optional.
@@ -62,19 +63,19 @@ object InstalledDetails {
   }
   
   @scala.inline
-  implicit class InstalledDetailsOps[Self <: InstalledDetails] (val x: Self) extends AnyVal {
+  implicit class InstalledDetailsMutableBuilder[Self <: InstalledDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreviousVersion(value: String): Self = StObject.set(x, "previousVersion", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPreviousVersionUndefined: Self = StObject.set(x, "previousVersion", js.undefined)
     
     @scala.inline
     def setReason(
@@ -86,18 +87,6 @@ object InstalledDetails {
             install_ | update_ | chrome_update_ | shared_module_update_
           ]
         ]
-    ): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setPreviousVersion(value: String): Self = this.set("previousVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreviousVersion: Self = this.set("previousVersion", js.undefined)
+    ): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

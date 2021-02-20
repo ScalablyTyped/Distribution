@@ -1,23 +1,16 @@
 package typings.reactNativeShare.mod
 
 import typings.reactNativeShare.anon.OptionssocialSocial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-share", JSImport.Default)
-@js.native
-object default extends js.Object {
+object default {
   
-  def isPackageInstalled(packageName: String): js.Promise[ShareSingleReturn] = js.native
-  
-  def open(options: MultipleOptions): js.Promise[OpenReturn] = js.native
-  def open(options: Options): js.Promise[OpenReturn] = js.native
-  
-  def shareSingle(options: OptionssocialSocial): js.Promise[ShareSingleReturn] = js.native
-  
+  @JSImport("react-native-share", "default.InstagramStories")
   @js.native
-  object InstagramStories extends js.Object {
+  object InstagramStories extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.reactNativeShare.mod.Share.InstagramStories with String] = js.native
@@ -29,8 +22,9 @@ object default extends js.Object {
     /* "shareStickerImage" */ val SHARE_STICKER_IMAGE: typings.reactNativeShare.mod.Share.InstagramStories.SHARE_STICKER_IMAGE with String = js.native
   }
   
+  @JSImport("react-native-share", "default.Social")
   @js.native
-  object Social extends js.Object {
+  object Social extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.reactNativeShare.mod.Share.Social with String] = js.native
@@ -55,4 +49,19 @@ object default extends js.Object {
     
     /* "whatsapp" */ val WHATSAPP: typings.reactNativeShare.mod.Share.Social.WHATSAPP with String = js.native
   }
+  
+  @JSImport("react-native-share", "default.isPackageInstalled")
+  @js.native
+  def isPackageInstalled(packageName: String): js.Promise[ShareSingleReturn] = js.native
+  
+  @JSImport("react-native-share", "default.open")
+  @js.native
+  def open(options: MultipleOptions): js.Promise[OpenReturn] = js.native
+  @JSImport("react-native-share", "default.open")
+  @js.native
+  def open(options: Options): js.Promise[OpenReturn] = js.native
+  
+  @JSImport("react-native-share", "default.shareSingle")
+  @js.native
+  def shareSingle(options: OptionssocialSocial): js.Promise[ShareSingleReturn] = js.native
 }

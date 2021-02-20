@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutubereporting.gapi.client.youtubereporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GdataDiffUploadResponse extends js.Object {
+trait GdataDiffUploadResponse extends StObject {
   
   /** gdata */
   var objectVersion: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object GdataDiffUploadResponse {
   }
   
   @scala.inline
-  implicit class GdataDiffUploadResponseOps[Self <: GdataDiffUploadResponse] (val x: Self) extends AnyVal {
+  implicit class GdataDiffUploadResponseMutableBuilder[Self <: GdataDiffUploadResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjectVersion(value: String): Self = StObject.set(x, "objectVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectVersionUndefined: Self = StObject.set(x, "objectVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginalObject(value: GdataCompositeMedia): Self = StObject.set(x, "originalObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectVersion(value: String): Self = this.set("objectVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectVersion: Self = this.set("objectVersion", js.undefined)
-    
-    @scala.inline
-    def setOriginalObject(value: GdataCompositeMedia): Self = this.set("originalObject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalObject: Self = this.set("originalObject", js.undefined)
+    def setOriginalObjectUndefined: Self = StObject.set(x, "originalObject", js.undefined)
   }
 }

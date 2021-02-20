@@ -11,14 +11,14 @@ import typings.firebaseDatabase.queryMod.Query
 import typings.firebaseDatabase.repoMod.Repo
 import typings.firebaseDatabase.transactionResultMod.TransactionResult
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/api/Reference", JSImport.Namespace)
-@js.native
-object referenceMod extends js.Object {
+object referenceMod {
   
+  @JSImport("@firebase/database/dist/src/api/Reference", "Reference")
   @js.native
   class Reference protected () extends Query {
     /**

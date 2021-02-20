@@ -1,6 +1,5 @@
 package typings.angularHttp
 
-import org.scalablytyped.runtime.TopLevel
 import typings.angularHttp.bodyMod.Body
 import typings.angularHttp.enumsMod.ContentType
 import typings.angularHttp.enumsMod.RequestMethod
@@ -8,22 +7,25 @@ import typings.angularHttp.enumsMod.ResponseContentType
 import typings.angularHttp.headersMod.Headers
 import typings.angularHttp.interfacesMod.RequestArgs
 import typings.std.ArrayBufferConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/http/src/static_request", JSImport.Namespace)
-@js.native
-object staticRequestMod extends js.Object {
+object staticRequestMod {
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("@angular/http/src/static_request", "ArrayBuffer")
   @js.native
   class ArrayBuffer protected ()
     extends typings.std.ArrayBuffer {
     def this(byteLength: Double) = this()
   }
+  @JSImport("@angular/http/src/static_request", "ArrayBuffer")
   @js.native
-  object ArrayBuffer extends TopLevel[ArrayBufferConstructor]
+  val ArrayBuffer: ArrayBufferConstructor = js.native
   
+  @JSImport("@angular/http/src/static_request", "Request")
   @js.native
   class Request protected () extends Body {
     def this(requestOptions: RequestArgs) = this()

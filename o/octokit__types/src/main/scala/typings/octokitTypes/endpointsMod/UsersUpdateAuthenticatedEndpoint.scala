@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UsersUpdateAuthenticatedEndpoint extends js.Object {
+trait UsersUpdateAuthenticatedEndpoint extends StObject {
   
   /**
     * The new short biography of the user.
@@ -56,66 +57,54 @@ object UsersUpdateAuthenticatedEndpoint {
   }
   
   @scala.inline
-  implicit class UsersUpdateAuthenticatedEndpointOps[Self <: UsersUpdateAuthenticatedEndpoint] (val x: Self) extends AnyVal {
+  implicit class UsersUpdateAuthenticatedEndpointMutableBuilder[Self <: UsersUpdateAuthenticatedEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBio(value: String): Self = StObject.set(x, "bio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBioUndefined: Self = StObject.set(x, "bio", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlog(value: String): Self = StObject.set(x, "blog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBio(value: String): Self = this.set("bio", value.asInstanceOf[js.Any])
+    def setBlogUndefined: Self = StObject.set(x, "blog", js.undefined)
     
     @scala.inline
-    def deleteBio: Self = this.set("bio", js.undefined)
+    def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlog(value: String): Self = this.set("blog", value.asInstanceOf[js.Any])
+    def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
     
     @scala.inline
-    def deleteBlog: Self = this.set("blog", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompany(value: String): Self = this.set("company", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteCompany: Self = this.set("company", js.undefined)
+    def setHireable(value: Boolean): Self = StObject.set(x, "hireable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setHireableUndefined: Self = StObject.set(x, "hireable", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHireable(value: Boolean): Self = this.set("hireable", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteHireable: Self = this.set("hireable", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setTwitter_username(value: String): Self = StObject.set(x, "twitter_username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setTwitter_username(value: String): Self = this.set("twitter_username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTwitter_username: Self = this.set("twitter_username", js.undefined)
+    def setTwitter_usernameUndefined: Self = StObject.set(x, "twitter_username", js.undefined)
   }
 }

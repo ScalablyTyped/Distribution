@@ -1,29 +1,37 @@
 package typings.reactSelect
 
+import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.CSSProperties
 import typings.react.mod.ComponentType
 import typings.react.mod.Ref
 import typings.reactSelect.typesMod.ClassNamesState
 import typings.reactSelect.typesMod.Theme
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-select/src/components/Input", JSImport.Namespace)
-@js.native
-object componentsInputMod extends js.Object {
+object componentsInputMod extends Shortcut {
   
-  val Input: ComponentType[InputProps] = js.native
-  
+  @JSImport("react-select/src/components/Input", JSImport.Default)
+  @js.native
   val default: ComponentType[InputProps] = js.native
   
+  @JSImport("react-select/src/components/Input", "Input")
+  @js.native
+  val Input: ComponentType[InputProps] = js.native
+  
+  @JSImport("react-select/src/components/Input", "inputCSS")
+  @js.native
   def inputCSS(props: InputProps): CSSProperties = js.native
   
+  @JSImport("react-select/src/components/Input", "inputStyle")
+  @js.native
   def inputStyle(isHidden: Boolean): CSSProperties = js.native
   
   /* Inlined react-select.react-select/src/types.PropsWithStyles & {cx (a : string | null, b : react-select.react-select/src/types.ClassNamesState, c : string): string | void, innerRef (element : react.react.Ref<any>): void,   isHidden :boolean,   isDisabled :boolean | undefined,   className :string | undefined} */
   @js.native
-  trait InputProps extends js.Object {
+  trait InputProps extends StObject {
     
     var className: js.UndefOr[String] = js.native
     
@@ -48,4 +56,9 @@ object componentsInputMod extends js.Object {
     
     var theme: Theme = js.native
   }
+  
+  type _To = ComponentType[InputProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `componentsInputMod.foo` */
+  override def _to: ComponentType[InputProps] = default
 }

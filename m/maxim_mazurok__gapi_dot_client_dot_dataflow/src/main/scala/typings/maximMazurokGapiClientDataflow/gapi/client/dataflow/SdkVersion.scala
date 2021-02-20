@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SdkVersion extends js.Object {
+trait SdkVersion extends StObject {
   
   /** The support status for this SDK version. */
   var sdkSupportStatus: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object SdkVersion {
   }
   
   @scala.inline
-  implicit class SdkVersionOps[Self <: SdkVersion] (val x: Self) extends AnyVal {
+  implicit class SdkVersionMutableBuilder[Self <: SdkVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSdkSupportStatus(value: String): Self = StObject.set(x, "sdkSupportStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSdkSupportStatusUndefined: Self = StObject.set(x, "sdkSupportStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSdkSupportStatus(value: String): Self = this.set("sdkSupportStatus", value.asInstanceOf[js.Any])
+    def setVersionDisplayName(value: String): Self = StObject.set(x, "versionDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSdkSupportStatus: Self = this.set("sdkSupportStatus", js.undefined)
+    def setVersionDisplayNameUndefined: Self = StObject.set(x, "versionDisplayName", js.undefined)
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setVersionDisplayName(value: String): Self = this.set("versionDisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionDisplayName: Self = this.set("versionDisplayName", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

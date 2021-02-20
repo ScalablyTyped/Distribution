@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateUserHierarchyGroupResponse extends js.Object {
+trait CreateUserHierarchyGroupResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the hierarchy group. 
@@ -26,30 +27,18 @@ object CreateUserHierarchyGroupResponse {
   }
   
   @scala.inline
-  implicit class CreateUserHierarchyGroupResponseOps[Self <: CreateUserHierarchyGroupResponse] (val x: Self) extends AnyVal {
+  implicit class CreateUserHierarchyGroupResponseMutableBuilder[Self <: CreateUserHierarchyGroupResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHierarchyGroupArn(value: ARN): Self = StObject.set(x, "HierarchyGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHierarchyGroupArnUndefined: Self = StObject.set(x, "HierarchyGroupArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHierarchyGroupId(value: HierarchyGroupId): Self = StObject.set(x, "HierarchyGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHierarchyGroupArn(value: ARN): Self = this.set("HierarchyGroupArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHierarchyGroupArn: Self = this.set("HierarchyGroupArn", js.undefined)
-    
-    @scala.inline
-    def setHierarchyGroupId(value: HierarchyGroupId): Self = this.set("HierarchyGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHierarchyGroupId: Self = this.set("HierarchyGroupId", js.undefined)
+    def setHierarchyGroupIdUndefined: Self = StObject.set(x, "HierarchyGroupId", js.undefined)
   }
 }

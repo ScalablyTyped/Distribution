@@ -1,11 +1,12 @@
 package typings.riotGamesApi.RiotGamesAPI.Match
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParticipantFrame extends js.Object {
+trait ParticipantFrame extends StObject {
   
   var currentGold: Double = js.native
   
@@ -47,48 +48,36 @@ object ParticipantFrame {
   }
   
   @scala.inline
-  implicit class ParticipantFrameOps[Self <: ParticipantFrame] (val x: Self) extends AnyVal {
+  implicit class ParticipantFrameMutableBuilder[Self <: ParticipantFrame] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentGold(value: Double): Self = StObject.set(x, "currentGold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDominionScore(value: Double): Self = StObject.set(x, "dominionScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJungleMinionsKilled(value: Double): Self = StObject.set(x, "jungleMinionsKilled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentGold(value: Double): Self = this.set("currentGold", value.asInstanceOf[js.Any])
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDominionScore(value: Double): Self = this.set("dominionScore", value.asInstanceOf[js.Any])
+    def setMinionsKilled(value: Double): Self = StObject.set(x, "minionsKilled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJungleMinionsKilled(value: Double): Self = this.set("jungleMinionsKilled", value.asInstanceOf[js.Any])
+    def setParticipantId(value: Double): Self = StObject.set(x, "participantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinionsKilled(value: Double): Self = this.set("minionsKilled", value.asInstanceOf[js.Any])
+    def setTeamScore(value: Double): Self = StObject.set(x, "teamScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParticipantId(value: Double): Self = this.set("participantId", value.asInstanceOf[js.Any])
+    def setTotalGold(value: Double): Self = StObject.set(x, "totalGold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Position): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTeamScore(value: Double): Self = this.set("teamScore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalGold(value: Double): Self = this.set("totalGold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXp(value: Double): Self = this.set("xp", value.asInstanceOf[js.Any])
+    def setXp(value: Double): Self = StObject.set(x, "xp", value.asInstanceOf[js.Any])
   }
 }

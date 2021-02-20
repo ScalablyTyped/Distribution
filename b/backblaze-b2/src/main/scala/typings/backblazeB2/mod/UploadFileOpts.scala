@@ -2,6 +2,7 @@ package typings.backblazeB2.mod
 
 import typings.node.Buffer
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,63 +55,51 @@ object UploadFileOpts {
   }
   
   @scala.inline
-  implicit class UploadFileOptsOps[Self <: UploadFileOpts] (val x: Self) extends AnyVal {
+  implicit class UploadFileOptsMutableBuilder[Self <: UploadFileOpts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentLengthUndefined: Self = StObject.set(x, "contentLength", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: Buffer): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUploadAuthToken(value: String): Self = this.set("uploadAuthToken", value.asInstanceOf[js.Any])
+    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
     @scala.inline
-    def setUploadUrl(value: String): Self = this.set("uploadUrl", value.asInstanceOf[js.Any])
+    def setInfo(value: Record[String, String]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentLength(value: Double): Self = this.set("contentLength", value.asInstanceOf[js.Any])
+    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
     @scala.inline
-    def deleteContentLength: Self = this.set("contentLength", js.undefined)
+    def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
     
     @scala.inline
-    def deleteHash: Self = this.set("hash", js.undefined)
+    def setOnUploadProgress(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInfo(value: Record[String, String]): Self = this.set("info", value.asInstanceOf[js.Any])
+    def setOnUploadProgressNull: Self = StObject.set(x, "onUploadProgress", null)
     
     @scala.inline
-    def deleteInfo: Self = this.set("info", js.undefined)
+    def setOnUploadProgressUndefined: Self = StObject.set(x, "onUploadProgress", js.undefined)
     
     @scala.inline
-    def setMime(value: String): Self = this.set("mime", value.asInstanceOf[js.Any])
+    def setUploadAuthToken(value: String): Self = StObject.set(x, "uploadAuthToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMime: Self = this.set("mime", js.undefined)
-    
-    @scala.inline
-    def setOnUploadProgress(value: /* event */ js.Any => Unit): Self = this.set("onUploadProgress", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnUploadProgress: Self = this.set("onUploadProgress", js.undefined)
-    
-    @scala.inline
-    def setOnUploadProgressNull: Self = this.set("onUploadProgress", null)
+    def setUploadUrl(value: String): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
   }
 }

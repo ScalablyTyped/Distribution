@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript.Services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,42 +46,30 @@ object FormatCodeOptions {
   }
   
   @scala.inline
-  implicit class FormatCodeOptionsOps[Self <: FormatCodeOptions] (val x: Self) extends AnyVal {
+  implicit class FormatCodeOptionsMutableBuilder[Self <: FormatCodeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInsertSpaceAfterCommaDelimiter(value: Boolean): Self = StObject.set(x, "InsertSpaceAfterCommaDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsertSpaceAfterFunctionKeywordForAnonymousFunctions(value: Boolean): Self = StObject.set(x, "InsertSpaceAfterFunctionKeywordForAnonymousFunctions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertSpaceAfterKeywordsInControlFlowStatements(value: Boolean): Self = StObject.set(x, "InsertSpaceAfterKeywordsInControlFlowStatements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaceAfterCommaDelimiter(value: Boolean): Self = this.set("InsertSpaceAfterCommaDelimiter", value.asInstanceOf[js.Any])
+    def setInsertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis(value: Boolean): Self = StObject.set(x, "InsertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaceAfterFunctionKeywordForAnonymousFunctions(value: Boolean): Self = this.set("InsertSpaceAfterFunctionKeywordForAnonymousFunctions", value.asInstanceOf[js.Any])
+    def setInsertSpaceAfterSemicolonInForStatements(value: Boolean): Self = StObject.set(x, "InsertSpaceAfterSemicolonInForStatements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaceAfterKeywordsInControlFlowStatements(value: Boolean): Self = this.set("InsertSpaceAfterKeywordsInControlFlowStatements", value.asInstanceOf[js.Any])
+    def setInsertSpaceBeforeAndAfterBinaryOperators(value: Boolean): Self = StObject.set(x, "InsertSpaceBeforeAndAfterBinaryOperators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis(value: Boolean): Self = this.set("InsertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis", value.asInstanceOf[js.Any])
+    def setPlaceOpenBraceOnNewLineForControlBlocks(value: Boolean): Self = StObject.set(x, "PlaceOpenBraceOnNewLineForControlBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaceAfterSemicolonInForStatements(value: Boolean): Self = this.set("InsertSpaceAfterSemicolonInForStatements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInsertSpaceBeforeAndAfterBinaryOperators(value: Boolean): Self = this.set("InsertSpaceBeforeAndAfterBinaryOperators", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlaceOpenBraceOnNewLineForControlBlocks(value: Boolean): Self = this.set("PlaceOpenBraceOnNewLineForControlBlocks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlaceOpenBraceOnNewLineForFunctions(value: Boolean): Self = this.set("PlaceOpenBraceOnNewLineForFunctions", value.asInstanceOf[js.Any])
+    def setPlaceOpenBraceOnNewLineForFunctions(value: Boolean): Self = StObject.set(x, "PlaceOpenBraceOnNewLineForFunctions", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.jsrsasign.jsrsasign
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ECCurveFp extends js.Object {
+trait ECCurveFp extends StObject {
   
   var a: ECFieldElementFp = js.native
   
@@ -36,7 +37,7 @@ object ECCurveFp {
     a: ECFieldElementFp,
     b: ECFieldElementFp,
     decodePointHex: () => ECPointFp | Null,
-    equals: () => Boolean,
+    equals_ : () => Boolean,
     fromBigInteger: () => ECFieldElementFp,
     getA: () => ECFieldElementFp,
     getB: () => ECFieldElementFp,
@@ -45,56 +46,45 @@ object ECCurveFp {
     infinity: ECPointFp,
     q: BigInteger
   ): ECCurveFp = {
-    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], decodePointHex = js.Any.fromFunction0(decodePointHex), equals = js.Any.fromFunction0(equals), fromBigInteger = js.Any.fromFunction0(fromBigInteger), getA = js.Any.fromFunction0(getA), getB = js.Any.fromFunction0(getB), getInfinity = js.Any.fromFunction0(getInfinity), getQ = js.Any.fromFunction0(getQ), infinity = infinity.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], decodePointHex = js.Any.fromFunction0(decodePointHex), fromBigInteger = js.Any.fromFunction0(fromBigInteger), getA = js.Any.fromFunction0(getA), getB = js.Any.fromFunction0(getB), getInfinity = js.Any.fromFunction0(getInfinity), getQ = js.Any.fromFunction0(getQ), infinity = infinity.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any])
+    __obj.updateDynamic("equals")(js.Any.fromFunction0(equals_))
     __obj.asInstanceOf[ECCurveFp]
   }
   
   @scala.inline
-  implicit class ECCurveFpOps[Self <: ECCurveFp] (val x: Self) extends AnyVal {
+  implicit class ECCurveFpMutableBuilder[Self <: ECCurveFp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setA(value: ECFieldElementFp): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setB(value: ECFieldElementFp): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecodePointHex(value: () => ECPointFp | Null): Self = StObject.set(x, "decodePointHex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setA(value: ECFieldElementFp): Self = this.set("a", value.asInstanceOf[js.Any])
+    def setEquals_(value: () => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setB(value: ECFieldElementFp): Self = this.set("b", value.asInstanceOf[js.Any])
+    def setFromBigInteger(value: () => ECFieldElementFp): Self = StObject.set(x, "fromBigInteger", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDecodePointHex(value: () => ECPointFp | Null): Self = this.set("decodePointHex", js.Any.fromFunction0(value))
+    def setGetA(value: () => ECFieldElementFp): Self = StObject.set(x, "getA", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEquals(value: () => Boolean): Self = this.set("equals", js.Any.fromFunction0(value))
+    def setGetB(value: () => ECFieldElementFp): Self = StObject.set(x, "getB", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFromBigInteger(value: () => ECFieldElementFp): Self = this.set("fromBigInteger", js.Any.fromFunction0(value))
+    def setGetInfinity(value: () => ECPointFp): Self = StObject.set(x, "getInfinity", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetA(value: () => ECFieldElementFp): Self = this.set("getA", js.Any.fromFunction0(value))
+    def setGetQ(value: () => BigInteger): Self = StObject.set(x, "getQ", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetB(value: () => ECFieldElementFp): Self = this.set("getB", js.Any.fromFunction0(value))
+    def setInfinity(value: ECPointFp): Self = StObject.set(x, "infinity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetInfinity(value: () => ECPointFp): Self = this.set("getInfinity", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetQ(value: () => BigInteger): Self = this.set("getQ", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setInfinity(value: ECPointFp): Self = this.set("infinity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQ(value: BigInteger): Self = this.set("q", value.asInstanceOf[js.Any])
+    def setQ(value: BigInteger): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
   }
 }

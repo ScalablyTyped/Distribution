@@ -3,13 +3,18 @@ package typings.playable
 import typings.playable.fullScreenManagerTypesMod.IFullScreenHelper
 import typings.std.EventListener
 import typings.std.HTMLVideoElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/full-screen-manager/ios", JSImport.Namespace)
-@js.native
-object iosMod extends js.Object {
+object iosMod {
+  
+  @JSImport("playable/dist/src/modules/full-screen-manager/ios", JSImport.Default)
+  @js.native
+  class default protected () extends IOSFullScreen {
+    def this(elem: HTMLVideoElement, callback: EventListener) = this()
+  }
   
   @js.native
   trait IOSFullScreen extends IFullScreenHelper {
@@ -33,10 +38,5 @@ object iosMod extends js.Object {
     
     @JSName("isInFullScreen")
     def isInFullScreen_MIOSFullScreen: Boolean = js.native
-  }
-  
-  @js.native
-  class default protected () extends IOSFullScreen {
-    def this(elem: HTMLVideoElement, callback: EventListener) = this()
   }
 }

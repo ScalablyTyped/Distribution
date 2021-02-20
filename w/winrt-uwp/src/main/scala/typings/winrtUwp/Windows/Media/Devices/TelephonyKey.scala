@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TelephonyKey extends js.Object
+sealed trait TelephonyKey extends StObject
 /** Indicates the keypad button that was pressed on a telephony device. */
 @JSGlobal("Windows.Media.Devices.TelephonyKey")
 @js.native
-object TelephonyKey extends js.Object {
+object TelephonyKey extends StObject {
   
   /** Keypad button A. */
   @js.native

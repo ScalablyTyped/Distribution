@@ -1,5 +1,6 @@
 package typings.googleapis.appengineV1betaMod.appengineV1beta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Custom static error page to be served when an error occurs.
   */
 @js.native
-trait SchemaErrorHandler extends js.Object {
+trait SchemaErrorHandler extends StObject {
   
   /**
     * Error condition this handler applies to.
@@ -34,36 +35,24 @@ object SchemaErrorHandler {
   }
   
   @scala.inline
-  implicit class SchemaErrorHandlerOps[Self <: SchemaErrorHandler] (val x: Self) extends AnyVal {
+  implicit class SchemaErrorHandlerMutableBuilder[Self <: SchemaErrorHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: String): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    def setStaticFile(value: String): Self = StObject.set(x, "staticFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMimeType: Self = this.set("mimeType", js.undefined)
-    
-    @scala.inline
-    def setStaticFile(value: String): Self = this.set("staticFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStaticFile: Self = this.set("staticFile", js.undefined)
+    def setStaticFileUndefined: Self = StObject.set(x, "staticFile", js.undefined)
   }
 }

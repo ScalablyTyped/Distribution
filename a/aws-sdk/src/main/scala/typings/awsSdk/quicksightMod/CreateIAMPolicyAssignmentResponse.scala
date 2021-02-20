@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateIAMPolicyAssignmentResponse extends js.Object {
+trait CreateIAMPolicyAssignmentResponse extends StObject {
   
   /**
     * The ID for the assignment.
@@ -51,60 +52,48 @@ object CreateIAMPolicyAssignmentResponse {
   }
   
   @scala.inline
-  implicit class CreateIAMPolicyAssignmentResponseOps[Self <: CreateIAMPolicyAssignmentResponse] (val x: Self) extends AnyVal {
+  implicit class CreateIAMPolicyAssignmentResponseMutableBuilder[Self <: CreateIAMPolicyAssignmentResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignmentId(value: String): Self = StObject.set(x, "AssignmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignmentIdUndefined: Self = StObject.set(x, "AssignmentId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssignmentName(value: IAMPolicyAssignmentName): Self = StObject.set(x, "AssignmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignmentId(value: String): Self = this.set("AssignmentId", value.asInstanceOf[js.Any])
+    def setAssignmentNameUndefined: Self = StObject.set(x, "AssignmentName", js.undefined)
     
     @scala.inline
-    def deleteAssignmentId: Self = this.set("AssignmentId", js.undefined)
+    def setAssignmentStatus(value: AssignmentStatus): Self = StObject.set(x, "AssignmentStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignmentName(value: IAMPolicyAssignmentName): Self = this.set("AssignmentName", value.asInstanceOf[js.Any])
+    def setAssignmentStatusUndefined: Self = StObject.set(x, "AssignmentStatus", js.undefined)
     
     @scala.inline
-    def deleteAssignmentName: Self = this.set("AssignmentName", js.undefined)
+    def setIdentities(value: IdentityMap): Self = StObject.set(x, "Identities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignmentStatus(value: AssignmentStatus): Self = this.set("AssignmentStatus", value.asInstanceOf[js.Any])
+    def setIdentitiesUndefined: Self = StObject.set(x, "Identities", js.undefined)
     
     @scala.inline
-    def deleteAssignmentStatus: Self = this.set("AssignmentStatus", js.undefined)
+    def setPolicyArn(value: Arn): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentities(value: IdentityMap): Self = this.set("Identities", value.asInstanceOf[js.Any])
+    def setPolicyArnUndefined: Self = StObject.set(x, "PolicyArn", js.undefined)
     
     @scala.inline
-    def deleteIdentities: Self = this.set("Identities", js.undefined)
+    def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyArn(value: Arn): Self = this.set("PolicyArn", value.asInstanceOf[js.Any])
+    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
     @scala.inline
-    def deletePolicyArn: Self = this.set("PolicyArn", js.undefined)
+    def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestId(value: String): Self = this.set("RequestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestId: Self = this.set("RequestId", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: StatusCode): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

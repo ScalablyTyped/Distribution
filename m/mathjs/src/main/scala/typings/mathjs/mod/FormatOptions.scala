@@ -4,12 +4,13 @@ import typings.mathjs.mathjsStrings.auto
 import typings.mathjs.mathjsStrings.engineering
 import typings.mathjs.mathjsStrings.exponential
 import typings.mathjs.mathjsStrings.fixed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormatOptions extends js.Object {
+trait FormatOptions extends StObject {
   
   /**
     * Available values: 'ratio' (default) or 'decimal'. For example
@@ -59,48 +60,36 @@ object FormatOptions {
   }
   
   @scala.inline
-  implicit class FormatOptionsOps[Self <: FormatOptions] (val x: Self) extends AnyVal {
+  implicit class FormatOptionsMutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFraction(value: String): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFractionUndefined: Self = StObject.set(x, "fraction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLowerExp(value: Double): Self = StObject.set(x, "lowerExp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFraction(value: String): Self = this.set("fraction", value.asInstanceOf[js.Any])
+    def setLowerExpUndefined: Self = StObject.set(x, "lowerExp", js.undefined)
     
     @scala.inline
-    def deleteFraction: Self = this.set("fraction", js.undefined)
+    def setNotation(value: fixed | exponential | engineering | auto): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerExp(value: Double): Self = this.set("lowerExp", value.asInstanceOf[js.Any])
+    def setNotationUndefined: Self = StObject.set(x, "notation", js.undefined)
     
     @scala.inline
-    def deleteLowerExp: Self = this.set("lowerExp", js.undefined)
+    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotation(value: fixed | exponential | engineering | auto): Self = this.set("notation", value.asInstanceOf[js.Any])
+    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
     @scala.inline
-    def deleteNotation: Self = this.set("notation", js.undefined)
+    def setUpperExp(value: Double): Self = StObject.set(x, "upperExp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrecision: Self = this.set("precision", js.undefined)
-    
-    @scala.inline
-    def setUpperExp(value: Double): Self = this.set("upperExp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpperExp: Self = this.set("upperExp", js.undefined)
+    def setUpperExpUndefined: Self = StObject.set(x, "upperExp", js.undefined)
   }
 }

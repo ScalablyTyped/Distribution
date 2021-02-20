@@ -1,11 +1,12 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ASPxDesignerElementSerializationInfo extends js.Object {
+trait ASPxDesignerElementSerializationInfo extends StObject {
   
   var array: Boolean = js.native
   
@@ -53,63 +54,51 @@ object ASPxDesignerElementSerializationInfo {
   }
   
   @scala.inline
-  implicit class ASPxDesignerElementSerializationInfoOps[Self <: ASPxDesignerElementSerializationInfo] (val x: Self) extends AnyVal {
+  implicit class ASPxDesignerElementSerializationInfoMutableBuilder[Self <: ASPxDesignerElementSerializationInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArray(value: Boolean): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultVal(value: js.Any): Self = StObject.set(x, "defaultVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabled(value: js.Any): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArray(value: Boolean): Self = this.set("array", value.asInstanceOf[js.Any])
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultVal(value: js.Any): Self = this.set("defaultVal", value.asInstanceOf[js.Any])
+    def setEditor(value: ASPxDesignerElementEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: js.Any): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setInfo(value: js.Array[ASPxDesignerElementSerializationInfo]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setInfoVarargs(value: ASPxDesignerElementSerializationInfo*): Self = StObject.set(x, "info", js.Array(value :_*))
     
     @scala.inline
-    def setEditor(value: ASPxDesignerElementEditor): Self = this.set("editor", value.asInstanceOf[js.Any])
+    def setLink(value: Boolean): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoVarargs(value: ASPxDesignerElementSerializationInfo*): Self = this.set("info", js.Array(value :_*))
+    def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfo(value: js.Array[ASPxDesignerElementSerializationInfo]): Self = this.set("info", value.asInstanceOf[js.Any])
+    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: Boolean): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setValidationRules(value: js.Array[_]): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelName(value: String): Self = this.set("modelName", value.asInstanceOf[js.Any])
+    def setValidationRulesVarargs(value: js.Any*): Self = StObject.set(x, "validationRules", js.Array(value :_*))
     
     @scala.inline
-    def setPropertyName(value: String): Self = this.set("propertyName", value.asInstanceOf[js.Any])
+    def setValuesArray(value: js.Array[ASPxDesignerElementEditorItem]): Self = StObject.set(x, "valuesArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidationRulesVarargs(value: js.Any*): Self = this.set("validationRules", js.Array(value :_*))
+    def setValuesArrayVarargs(value: ASPxDesignerElementEditorItem*): Self = StObject.set(x, "valuesArray", js.Array(value :_*))
     
     @scala.inline
-    def setValidationRules(value: js.Array[_]): Self = this.set("validationRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesArrayVarargs(value: ASPxDesignerElementEditorItem*): Self = this.set("valuesArray", js.Array(value :_*))
-    
-    @scala.inline
-    def setValuesArray(value: js.Array[ASPxDesignerElementEditorItem]): Self = this.set("valuesArray", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: js.Any): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: js.Any): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

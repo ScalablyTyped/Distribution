@@ -1,12 +1,13 @@
 package typings.git.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "LooseStorage")
 @js.native
-class LooseStorage protected () extends js.Object {
+class LooseStorage protected () extends StObject {
   def this(directory: js.Any) = this()
   
   var directory: js.Any = js.native
@@ -22,9 +23,9 @@ class LooseStorage protected () extends js.Object {
   def unpack_object_header_gently(buf: js.Any): js.Array[_] = js.native
 }
 /* static members */
-@JSImport("git", "LooseStorage")
-@js.native
-object LooseStorage extends js.Object {
+object LooseStorage {
   
+  @JSImport("git", "LooseStorage.verify_header")
+  @js.native
   def verify_header(`type`: js.Any, size: js.Any): Unit = js.native
 }

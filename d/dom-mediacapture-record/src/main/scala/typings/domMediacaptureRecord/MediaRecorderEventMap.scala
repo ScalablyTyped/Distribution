@@ -1,12 +1,13 @@
 package typings.domMediacaptureRecord
 
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaRecorderEventMap extends js.Object {
+trait MediaRecorderEventMap extends StObject {
   
   var dataavailable: BlobEvent = js.native
   
@@ -36,36 +37,24 @@ object MediaRecorderEventMap {
   }
   
   @scala.inline
-  implicit class MediaRecorderEventMapOps[Self <: MediaRecorderEventMap] (val x: Self) extends AnyVal {
+  implicit class MediaRecorderEventMapMutableBuilder[Self <: MediaRecorderEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataavailable(value: BlobEvent): Self = StObject.set(x, "dataavailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setError(value: MediaRecorderErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPause(value: Event): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataavailable(value: BlobEvent): Self = this.set("dataavailable", value.asInstanceOf[js.Any])
+    def setResume(value: Event): Self = StObject.set(x, "resume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: MediaRecorderErrorEvent): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setStart(value: Event): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPause(value: Event): Self = this.set("pause", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResume(value: Event): Self = this.set("resume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Event): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStop(value: Event): Self = this.set("stop", value.asInstanceOf[js.Any])
+    def setStop(value: Event): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
   }
 }

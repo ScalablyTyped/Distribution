@@ -1,11 +1,12 @@
 package typings.meteor.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Algorithm extends js.Object {
+trait Algorithm extends StObject {
   
   var algorithm: String = js.native
   
@@ -20,24 +21,12 @@ object Algorithm {
   }
   
   @scala.inline
-  implicit class AlgorithmOps[Self <: Algorithm] (val x: Self) extends AnyVal {
+  implicit class AlgorithmMutableBuilder[Self <: Algorithm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlgorithm(value: String): Self = this.set("algorithm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDigest(value: String): Self = this.set("digest", value.asInstanceOf[js.Any])
+    def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
   }
 }

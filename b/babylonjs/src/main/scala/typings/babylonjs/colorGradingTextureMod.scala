@@ -4,14 +4,14 @@ import typings.babylonjs.baseTextureMod.BaseTexture
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Textures/colorGradingTexture", JSImport.Namespace)
-@js.native
-object colorGradingTextureMod extends js.Object {
+object colorGradingTextureMod {
   
+  @JSImport("babylonjs/Materials/Textures/colorGradingTexture", "ColorGradingTexture")
   @js.native
   class ColorGradingTexture protected () extends BaseTexture {
     /**
@@ -51,8 +51,11 @@ object colorGradingTextureMod extends js.Object {
     var url: String = js.native
   }
   /* static members */
-  @js.native
-  object ColorGradingTexture extends js.Object {
+  object ColorGradingTexture {
+    
+    @JSImport("babylonjs/Materials/Textures/colorGradingTexture", "ColorGradingTexture")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Parses a color grading texture serialized by Babylon.
@@ -61,11 +64,17 @@ object colorGradingTextureMod extends js.Object {
       * @param rootUrl The root url of the data assets to load
       * @return A color gradind texture
       */
+    @JSImport("babylonjs/Materials/Textures/colorGradingTexture", "ColorGradingTexture.Parse")
+    @js.native
     def Parse(parsedTexture: js.Any, scene: Scene): Nullable[ColorGradingTexture] = js.native
     
     /**
       * Empty line regex stored for GC.
       */
-    var _noneEmptyLineRegex: js.Any = js.native
+    @JSImport("babylonjs/Materials/Textures/colorGradingTexture", "ColorGradingTexture._noneEmptyLineRegex")
+    @js.native
+    def _noneEmptyLineRegex: js.Any = js.native
+    @scala.inline
+    def _noneEmptyLineRegex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_noneEmptyLineRegex")(x.asInstanceOf[js.Any])
   }
 }

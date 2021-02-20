@@ -8,13 +8,14 @@ import typings.stylableWebpackPlugin.stylableWebpackPluginStrings.external
 import typings.stylableWebpackPlugin.stylableWebpackPluginStrings.isolated
 import typings.stylableWebpackPlugin.stylableWebpackPluginStrings.shared
 import typings.stylableWebpackPlugin.typesMod.StylableModule
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@stylable/webpack-plugin.@stylable/webpack-plugin/cjs/types.StylableWebpackPluginOptions> */
 @js.native
-trait PartialStylableWebpackPlu extends js.Object {
+trait PartialStylableWebpackPlu extends StObject {
   
   var afterTransform: js.UndefOr[
     (js.Function3[
@@ -78,164 +79,152 @@ object PartialStylableWebpackPlu {
   }
   
   @scala.inline
-  implicit class PartialStylableWebpackPluOps[Self <: PartialStylableWebpackPlu] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class PartialStylableWebpackPluMutableBuilder[Self <: PartialStylableWebpackPlu] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAfterTransform(
       value: (/* results */ StylableResults, /* module */ StylableModule, /* stylable */ Stylable) => Unit
-    ): Self = this.set("afterTransform", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "afterTransform", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteAfterTransform: Self = this.set("afterTransform", js.undefined)
+    def setAfterTransformNull: Self = StObject.set(x, "afterTransform", null)
     
     @scala.inline
-    def setAfterTransformNull: Self = this.set("afterTransform", null)
+    def setAfterTransformUndefined: Self = StObject.set(x, "afterTransform", js.undefined)
     
     @scala.inline
-    def setBootstrap(value: AutoInit): Self = this.set("bootstrap", value.asInstanceOf[js.Any])
+    def setBootstrap(value: AutoInit): Self = StObject.set(x, "bootstrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBootstrap: Self = this.set("bootstrap", js.undefined)
+    def setBootstrapUndefined: Self = StObject.set(x, "bootstrap", js.undefined)
     
     @scala.inline
-    def setCreateRuntimeChunk(value: Boolean): Self = this.set("createRuntimeChunk", value.asInstanceOf[js.Any])
+    def setCreateRuntimeChunk(value: Boolean): Self = StObject.set(x, "createRuntimeChunk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreateRuntimeChunk: Self = this.set("createRuntimeChunk", js.undefined)
+    def setCreateRuntimeChunkUndefined: Self = StObject.set(x, "createRuntimeChunk", js.undefined)
     
     @scala.inline
-    def setExperimentalHMR(value: Boolean): Self = this.set("experimentalHMR", value.asInstanceOf[js.Any])
+    def setExperimentalHMR(value: Boolean): Self = StObject.set(x, "experimentalHMR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExperimentalHMR: Self = this.set("experimentalHMR", js.undefined)
+    def setExperimentalHMRUndefined: Self = StObject.set(x, "experimentalHMR", js.undefined)
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilename: Self = this.set("filename", js.undefined)
+    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
     @scala.inline
-    def setGenerate(value: AfterTransform): Self = this.set("generate", value.asInstanceOf[js.Any])
+    def setGenerate(value: AfterTransform): Self = StObject.set(x, "generate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGenerate: Self = this.set("generate", js.undefined)
+    def setGenerateUndefined: Self = StObject.set(x, "generate", js.undefined)
     
     @scala.inline
-    def setGlobalRuntimeId(value: String): Self = this.set("globalRuntimeId", value.asInstanceOf[js.Any])
+    def setGlobalRuntimeId(value: String): Self = StObject.set(x, "globalRuntimeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGlobalRuntimeId: Self = this.set("globalRuntimeId", js.undefined)
+    def setGlobalRuntimeIdUndefined: Self = StObject.set(x, "globalRuntimeId", js.undefined)
     
     @scala.inline
-    def setIncludeCSSInJS(value: Boolean): Self = this.set("includeCSSInJS", value.asInstanceOf[js.Any])
+    def setIncludeCSSInJS(value: Boolean): Self = StObject.set(x, "includeCSSInJS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncludeCSSInJS: Self = this.set("includeCSSInJS", js.undefined)
+    def setIncludeCSSInJSUndefined: Self = StObject.set(x, "includeCSSInJS", js.undefined)
     
     @scala.inline
-    def setIncludeDynamicModulesInCSS(value: Boolean): Self = this.set("includeDynamicModulesInCSS", value.asInstanceOf[js.Any])
+    def setIncludeDynamicModulesInCSS(value: Boolean): Self = StObject.set(x, "includeDynamicModulesInCSS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncludeDynamicModulesInCSS: Self = this.set("includeDynamicModulesInCSS", js.undefined)
+    def setIncludeDynamicModulesInCSSUndefined: Self = StObject.set(x, "includeDynamicModulesInCSS", js.undefined)
     
     @scala.inline
-    def setOptimize(value: ClassNameOptimizations): Self = this.set("optimize", value.asInstanceOf[js.Any])
+    def setOptimize(value: ClassNameOptimizations): Self = StObject.set(x, "optimize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptimize: Self = this.set("optimize", js.undefined)
+    def setOptimizeStylableModulesPerChunks(value: Boolean): Self = StObject.set(x, "optimizeStylableModulesPerChunks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptimizeStylableModulesPerChunks(value: Boolean): Self = this.set("optimizeStylableModulesPerChunks", value.asInstanceOf[js.Any])
+    def setOptimizeStylableModulesPerChunksUndefined: Self = StObject.set(x, "optimizeStylableModulesPerChunks", js.undefined)
     
     @scala.inline
-    def deleteOptimizeStylableModulesPerChunks: Self = this.set("optimizeStylableModulesPerChunks", js.undefined)
+    def setOptimizeUndefined: Self = StObject.set(x, "optimize", js.undefined)
     
     @scala.inline
-    def setOptimizer(value: StylableOptimizer): Self = this.set("optimizer", value.asInstanceOf[js.Any])
+    def setOptimizer(value: StylableOptimizer): Self = StObject.set(x, "optimizer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptimizer: Self = this.set("optimizer", js.undefined)
+    def setOptimizerUndefined: Self = StObject.set(x, "optimizer", js.undefined)
     
     @scala.inline
-    def setOutputCSS(value: Boolean): Self = this.set("outputCSS", value.asInstanceOf[js.Any])
+    def setOutputCSS(value: Boolean): Self = StObject.set(x, "outputCSS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutputCSS: Self = this.set("outputCSS", js.undefined)
+    def setOutputCSSUndefined: Self = StObject.set(x, "outputCSS", js.undefined)
     
     @scala.inline
-    def setPluginsVarargs(value: Apply*): Self = this.set("plugins", js.Array(value :_*))
+    def setPlugins(value: js.Array[Apply]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlugins(value: js.Array[Apply]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
     @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
+    def setPluginsVarargs(value: Apply*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     
     @scala.inline
-    def setRequireModule(value: /* path */ String => _): Self = this.set("requireModule", js.Any.fromFunction1(value))
+    def setRequireModule(value: /* path */ String => _): Self = StObject.set(x, "requireModule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRequireModule: Self = this.set("requireModule", js.undefined)
+    def setRequireModuleUndefined: Self = StObject.set(x, "requireModule", js.undefined)
     
     @scala.inline
-    def setResolveNamespace(value: () => String): Self = this.set("resolveNamespace", js.Any.fromFunction0(value))
+    def setResolveNamespace(value: () => String): Self = StObject.set(x, "resolveNamespace", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteResolveNamespace: Self = this.set("resolveNamespace", js.undefined)
+    def setResolveNamespaceUndefined: Self = StObject.set(x, "resolveNamespace", js.undefined)
     
     @scala.inline
-    def setRuntimeMode(value: isolated | shared | external): Self = this.set("runtimeMode", value.asInstanceOf[js.Any])
+    def setRuntimeMode(value: isolated | shared | external): Self = StObject.set(x, "runtimeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRuntimeMode: Self = this.set("runtimeMode", js.undefined)
+    def setRuntimeModeUndefined: Self = StObject.set(x, "runtimeMode", js.undefined)
     
     @scala.inline
-    def setSkipDynamicCSSEmit(value: Boolean): Self = this.set("skipDynamicCSSEmit", value.asInstanceOf[js.Any])
+    def setSkipDynamicCSSEmit(value: Boolean): Self = StObject.set(x, "skipDynamicCSSEmit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSkipDynamicCSSEmit: Self = this.set("skipDynamicCSSEmit", js.undefined)
+    def setSkipDynamicCSSEmitUndefined: Self = StObject.set(x, "skipDynamicCSSEmit", js.undefined)
     
     @scala.inline
-    def setTransformHooks(value: TransformHooks): Self = this.set("transformHooks", value.asInstanceOf[js.Any])
+    def setTransformHooks(value: TransformHooks): Self = StObject.set(x, "transformHooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransformHooks: Self = this.set("transformHooks", js.undefined)
+    def setTransformHooksUndefined: Self = StObject.set(x, "transformHooks", js.undefined)
     
     @scala.inline
-    def setUnsafeBuildNamespace(value: Boolean): Self = this.set("unsafeBuildNamespace", value.asInstanceOf[js.Any])
+    def setUnsafeBuildNamespace(value: Boolean): Self = StObject.set(x, "unsafeBuildNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnsafeBuildNamespace: Self = this.set("unsafeBuildNamespace", js.undefined)
+    def setUnsafeBuildNamespaceUndefined: Self = StObject.set(x, "unsafeBuildNamespace", js.undefined)
     
     @scala.inline
-    def setUnsafeMuteDiagnostics(value: DUPLICATEMODULENAMESPACE): Self = this.set("unsafeMuteDiagnostics", value.asInstanceOf[js.Any])
+    def setUnsafeMuteDiagnostics(value: DUPLICATEMODULENAMESPACE): Self = StObject.set(x, "unsafeMuteDiagnostics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnsafeMuteDiagnostics: Self = this.set("unsafeMuteDiagnostics", js.undefined)
+    def setUnsafeMuteDiagnosticsUndefined: Self = StObject.set(x, "unsafeMuteDiagnostics", js.undefined)
     
     @scala.inline
-    def setUseEntryModuleInjection(value: Boolean): Self = this.set("useEntryModuleInjection", value.asInstanceOf[js.Any])
+    def setUseEntryModuleInjection(value: Boolean): Self = StObject.set(x, "useEntryModuleInjection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseEntryModuleInjection: Self = this.set("useEntryModuleInjection", js.undefined)
+    def setUseEntryModuleInjectionUndefined: Self = StObject.set(x, "useEntryModuleInjection", js.undefined)
     
     @scala.inline
-    def setUseWeakDeps(value: Boolean): Self = this.set("useWeakDeps", value.asInstanceOf[js.Any])
+    def setUseWeakDeps(value: Boolean): Self = StObject.set(x, "useWeakDeps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseWeakDeps: Self = this.set("useWeakDeps", js.undefined)
+    def setUseWeakDepsUndefined: Self = StObject.set(x, "useWeakDeps", js.undefined)
   }
 }

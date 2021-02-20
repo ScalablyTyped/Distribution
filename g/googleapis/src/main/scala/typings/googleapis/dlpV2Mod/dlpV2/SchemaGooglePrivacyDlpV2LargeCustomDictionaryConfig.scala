@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * dictionaries that satisfy the size requirements.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2LargeCustomDictionaryConfig extends js.Object {
+trait SchemaGooglePrivacyDlpV2LargeCustomDictionaryConfig extends StObject {
   
   /**
     * Field in a BigQuery table where each cell represents a dictionary phrase.
@@ -42,36 +43,24 @@ object SchemaGooglePrivacyDlpV2LargeCustomDictionaryConfig {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2LargeCustomDictionaryConfigOps[Self <: SchemaGooglePrivacyDlpV2LargeCustomDictionaryConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2LargeCustomDictionaryConfigMutableBuilder[Self <: SchemaGooglePrivacyDlpV2LargeCustomDictionaryConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBigQueryField(value: SchemaGooglePrivacyDlpV2BigQueryField): Self = StObject.set(x, "bigQueryField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBigQueryFieldUndefined: Self = StObject.set(x, "bigQueryField", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloudStorageFileSet(value: SchemaGooglePrivacyDlpV2CloudStorageFileSet): Self = StObject.set(x, "cloudStorageFileSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBigQueryField(value: SchemaGooglePrivacyDlpV2BigQueryField): Self = this.set("bigQueryField", value.asInstanceOf[js.Any])
+    def setCloudStorageFileSetUndefined: Self = StObject.set(x, "cloudStorageFileSet", js.undefined)
     
     @scala.inline
-    def deleteBigQueryField: Self = this.set("bigQueryField", js.undefined)
+    def setOutputPath(value: SchemaGooglePrivacyDlpV2CloudStoragePath): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudStorageFileSet(value: SchemaGooglePrivacyDlpV2CloudStorageFileSet): Self = this.set("cloudStorageFileSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCloudStorageFileSet: Self = this.set("cloudStorageFileSet", js.undefined)
-    
-    @scala.inline
-    def setOutputPath(value: SchemaGooglePrivacyDlpV2CloudStoragePath): Self = this.set("outputPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputPath: Self = this.set("outputPath", js.undefined)
+    def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteTrustRequest extends js.Object {
+trait DeleteTrustRequest extends StObject {
   
   /**
     * Delete a conditional forwarder as part of a DeleteTrustRequest.
@@ -26,27 +27,15 @@ object DeleteTrustRequest {
   }
   
   @scala.inline
-  implicit class DeleteTrustRequestOps[Self <: DeleteTrustRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteTrustRequestMutableBuilder[Self <: DeleteTrustRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleteAssociatedConditionalForwarder(value: DeleteAssociatedConditionalForwarder): Self = StObject.set(x, "DeleteAssociatedConditionalForwarder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteAssociatedConditionalForwarderUndefined: Self = StObject.set(x, "DeleteAssociatedConditionalForwarder", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTrustId(value: TrustId): Self = this.set("TrustId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeleteAssociatedConditionalForwarder(value: DeleteAssociatedConditionalForwarder): Self = this.set("DeleteAssociatedConditionalForwarder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeleteAssociatedConditionalForwarder: Self = this.set("DeleteAssociatedConditionalForwarder", js.undefined)
+    def setTrustId(value: TrustId): Self = StObject.set(x, "TrustId", value.asInstanceOf[js.Any])
   }
 }

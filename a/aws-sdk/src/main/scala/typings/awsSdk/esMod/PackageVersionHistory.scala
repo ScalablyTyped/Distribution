@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PackageVersionHistory extends js.Object {
+trait PackageVersionHistory extends StObject {
   
   /**
     * A message associated with the version.
@@ -31,36 +32,24 @@ object PackageVersionHistory {
   }
   
   @scala.inline
-  implicit class PackageVersionHistoryOps[Self <: PackageVersionHistory] (val x: Self) extends AnyVal {
+  implicit class PackageVersionHistoryMutableBuilder[Self <: PackageVersionHistory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitMessage(value: CommitMessage): Self = StObject.set(x, "CommitMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommitMessageUndefined: Self = StObject.set(x, "CommitMessage", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitMessage(value: CommitMessage): Self = this.set("CommitMessage", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     @scala.inline
-    def deleteCommitMessage: Self = this.set("CommitMessage", js.undefined)
+    def setPackageVersion(value: PackageVersion): Self = StObject.set(x, "PackageVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: CreatedAt): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
-    
-    @scala.inline
-    def setPackageVersion(value: PackageVersion): Self = this.set("PackageVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackageVersion: Self = this.set("PackageVersion", js.undefined)
+    def setPackageVersionUndefined: Self = StObject.set(x, "PackageVersion", js.undefined)
   }
 }

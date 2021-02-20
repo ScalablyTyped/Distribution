@@ -1,11 +1,12 @@
 package typings.awsSdk.lexmodelbuildingserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBotChannelAssociationsRequest extends js.Object {
+trait GetBotChannelAssociationsRequest extends StObject {
   
   /**
     * An alias pointing to the specific version of the Amazon Lex bot to which this association is being made.
@@ -41,42 +42,30 @@ object GetBotChannelAssociationsRequest {
   }
   
   @scala.inline
-  implicit class GetBotChannelAssociationsRequestOps[Self <: GetBotChannelAssociationsRequest] (val x: Self) extends AnyVal {
+  implicit class GetBotChannelAssociationsRequestMutableBuilder[Self <: GetBotChannelAssociationsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBotAlias(value: AliasNameOrListAll): Self = StObject.set(x, "botAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBotAlias(value: AliasNameOrListAll): Self = this.set("botAlias", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def setBotName(value: BotName): Self = this.set("botName", value.asInstanceOf[js.Any])
+    def setNameContains(value: BotChannelName): Self = StObject.set(x, "nameContains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setNameContainsUndefined: Self = StObject.set(x, "nameContains", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameContains(value: BotChannelName): Self = this.set("nameContains", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNameContains: Self = this.set("nameContains", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

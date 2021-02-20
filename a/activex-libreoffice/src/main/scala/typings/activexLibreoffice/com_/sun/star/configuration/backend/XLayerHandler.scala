@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.configuration.backend
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -192,57 +193,45 @@ object XLayerHandler {
   }
   
   @scala.inline
-  implicit class XLayerHandlerOps[Self <: XLayerHandler] (val x: Self) extends AnyVal {
+  implicit class XLayerHandlerMutableBuilder[Self <: XLayerHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddOrReplaceNode(value: (String, Double) => Unit): Self = StObject.set(x, "addOrReplaceNode", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddOrReplaceNodeFromTemplate(value: (String, TemplateIdentifier, Double) => Unit): Self = StObject.set(x, "addOrReplaceNodeFromTemplate", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddProperty(value: (String, Double, `type`) => Unit): Self = StObject.set(x, "addProperty", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAddOrReplaceNode(value: (String, Double) => Unit): Self = this.set("addOrReplaceNode", js.Any.fromFunction2(value))
+    def setAddPropertyWithValue(value: (String, Double, js.Any) => Unit): Self = StObject.set(x, "addPropertyWithValue", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAddOrReplaceNodeFromTemplate(value: (String, TemplateIdentifier, Double) => Unit): Self = this.set("addOrReplaceNodeFromTemplate", js.Any.fromFunction3(value))
+    def setDropNode(value: String => Unit): Self = StObject.set(x, "dropNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddProperty(value: (String, Double, `type`) => Unit): Self = this.set("addProperty", js.Any.fromFunction3(value))
+    def setEndLayer(value: () => Unit): Self = StObject.set(x, "endLayer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddPropertyWithValue(value: (String, Double, js.Any) => Unit): Self = this.set("addPropertyWithValue", js.Any.fromFunction3(value))
+    def setEndNode(value: () => Unit): Self = StObject.set(x, "endNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDropNode(value: String => Unit): Self = this.set("dropNode", js.Any.fromFunction1(value))
+    def setEndProperty(value: () => Unit): Self = StObject.set(x, "endProperty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEndLayer(value: () => Unit): Self = this.set("endLayer", js.Any.fromFunction0(value))
+    def setOverrideNode(value: (String, Double, Boolean) => Unit): Self = StObject.set(x, "overrideNode", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setEndNode(value: () => Unit): Self = this.set("endNode", js.Any.fromFunction0(value))
+    def setOverrideProperty(value: (String, Double, `type`, Boolean) => Unit): Self = StObject.set(x, "overrideProperty", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setEndProperty(value: () => Unit): Self = this.set("endProperty", js.Any.fromFunction0(value))
+    def setSetPropertyValue(value: js.Any => Unit): Self = StObject.set(x, "setPropertyValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverrideNode(value: (String, Double, Boolean) => Unit): Self = this.set("overrideNode", js.Any.fromFunction3(value))
+    def setSetPropertyValueForLocale(value: (js.Any, String) => Unit): Self = StObject.set(x, "setPropertyValueForLocale", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOverrideProperty(value: (String, Double, `type`, Boolean) => Unit): Self = this.set("overrideProperty", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setSetPropertyValue(value: js.Any => Unit): Self = this.set("setPropertyValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPropertyValueForLocale(value: (js.Any, String) => Unit): Self = this.set("setPropertyValueForLocale", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setStartLayer(value: () => Unit): Self = this.set("startLayer", js.Any.fromFunction0(value))
+    def setStartLayer(value: () => Unit): Self = StObject.set(x, "startLayer", js.Any.fromFunction0(value))
   }
 }

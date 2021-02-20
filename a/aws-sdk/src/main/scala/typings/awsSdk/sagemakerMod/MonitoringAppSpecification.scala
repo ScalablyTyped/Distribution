@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MonitoringAppSpecification extends js.Object {
+trait MonitoringAppSpecification extends StObject {
   
   /**
     * An array of arguments for the container used to run the monitoring job.
@@ -41,51 +42,39 @@ object MonitoringAppSpecification {
   }
   
   @scala.inline
-  implicit class MonitoringAppSpecificationOps[Self <: MonitoringAppSpecification] (val x: Self) extends AnyVal {
+  implicit class MonitoringAppSpecificationMutableBuilder[Self <: MonitoringAppSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerArguments(value: MonitoringContainerArguments): Self = StObject.set(x, "ContainerArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerArgumentsUndefined: Self = StObject.set(x, "ContainerArguments", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerArgumentsVarargs(value: ContainerArgument*): Self = StObject.set(x, "ContainerArguments", js.Array(value :_*))
     
     @scala.inline
-    def setImageUri(value: ImageUri): Self = this.set("ImageUri", value.asInstanceOf[js.Any])
+    def setContainerEntrypoint(value: ContainerEntrypoint): Self = StObject.set(x, "ContainerEntrypoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerArgumentsVarargs(value: ContainerArgument*): Self = this.set("ContainerArguments", js.Array(value :_*))
+    def setContainerEntrypointUndefined: Self = StObject.set(x, "ContainerEntrypoint", js.undefined)
     
     @scala.inline
-    def setContainerArguments(value: MonitoringContainerArguments): Self = this.set("ContainerArguments", value.asInstanceOf[js.Any])
+    def setContainerEntrypointVarargs(value: ContainerEntrypointString*): Self = StObject.set(x, "ContainerEntrypoint", js.Array(value :_*))
     
     @scala.inline
-    def deleteContainerArguments: Self = this.set("ContainerArguments", js.undefined)
+    def setImageUri(value: ImageUri): Self = StObject.set(x, "ImageUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerEntrypointVarargs(value: ContainerEntrypointString*): Self = this.set("ContainerEntrypoint", js.Array(value :_*))
+    def setPostAnalyticsProcessorSourceUri(value: S3Uri): Self = StObject.set(x, "PostAnalyticsProcessorSourceUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerEntrypoint(value: ContainerEntrypoint): Self = this.set("ContainerEntrypoint", value.asInstanceOf[js.Any])
+    def setPostAnalyticsProcessorSourceUriUndefined: Self = StObject.set(x, "PostAnalyticsProcessorSourceUri", js.undefined)
     
     @scala.inline
-    def deleteContainerEntrypoint: Self = this.set("ContainerEntrypoint", js.undefined)
+    def setRecordPreprocessorSourceUri(value: S3Uri): Self = StObject.set(x, "RecordPreprocessorSourceUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostAnalyticsProcessorSourceUri(value: S3Uri): Self = this.set("PostAnalyticsProcessorSourceUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostAnalyticsProcessorSourceUri: Self = this.set("PostAnalyticsProcessorSourceUri", js.undefined)
-    
-    @scala.inline
-    def setRecordPreprocessorSourceUri(value: S3Uri): Self = this.set("RecordPreprocessorSourceUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordPreprocessorSourceUri: Self = this.set("RecordPreprocessorSourceUri", js.undefined)
+    def setRecordPreprocessorSourceUriUndefined: Self = StObject.set(x, "RecordPreprocessorSourceUri", js.undefined)
   }
 }

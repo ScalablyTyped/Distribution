@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains paragraph formatting settings.
   */
 @js.native
-trait ParagraphFormattingSettings extends js.Object {
+trait ParagraphFormattingSettings extends StObject {
   
   /**
     * Specifies the paragraph alignment.
@@ -104,60 +105,48 @@ object ParagraphFormattingSettings {
   }
   
   @scala.inline
-  implicit class ParagraphFormattingSettingsOps[Self <: ParagraphFormattingSettings] (val x: Self) extends AnyVal {
+  implicit class ParagraphFormattingSettingsMutableBuilder[Self <: ParagraphFormattingSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignment(value: ParagraphAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackColor(value: String): Self = StObject.set(x, "backColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextualSpacing(value: Boolean): Self = StObject.set(x, "contextualSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: ParagraphAlignment): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    def setFirstLineIndent(value: Double): Self = StObject.set(x, "firstLineIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackColor(value: String): Self = this.set("backColor", value.asInstanceOf[js.Any])
+    def setFirstLineIndentType(value: ParagraphFirstLineIndent): Self = StObject.set(x, "firstLineIndentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextualSpacing(value: Boolean): Self = this.set("contextualSpacing", value.asInstanceOf[js.Any])
+    def setKeepLinesTogether(value: Boolean): Self = StObject.set(x, "keepLinesTogether", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstLineIndent(value: Double): Self = this.set("firstLineIndent", value.asInstanceOf[js.Any])
+    def setLeftIndent(value: Double): Self = StObject.set(x, "leftIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstLineIndentType(value: ParagraphFirstLineIndent): Self = this.set("firstLineIndentType", value.asInstanceOf[js.Any])
+    def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepLinesTogether(value: Boolean): Self = this.set("keepLinesTogether", value.asInstanceOf[js.Any])
+    def setLineSpacingType(value: ParagraphLineSpacingType): Self = StObject.set(x, "lineSpacingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftIndent(value: Double): Self = this.set("leftIndent", value.asInstanceOf[js.Any])
+    def setOutlineLevel(value: Double): Self = StObject.set(x, "outlineLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineSpacing(value: Double): Self = this.set("lineSpacing", value.asInstanceOf[js.Any])
+    def setPageBreakBefore(value: Boolean): Self = StObject.set(x, "pageBreakBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineSpacingType(value: ParagraphLineSpacingType): Self = this.set("lineSpacingType", value.asInstanceOf[js.Any])
+    def setRightIndent(value: Double): Self = StObject.set(x, "rightIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineLevel(value: Double): Self = this.set("outlineLevel", value.asInstanceOf[js.Any])
+    def setSpacingAfter(value: Double): Self = StObject.set(x, "spacingAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageBreakBefore(value: Boolean): Self = this.set("pageBreakBefore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightIndent(value: Double): Self = this.set("rightIndent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpacingAfter(value: Double): Self = this.set("spacingAfter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpacingBefore(value: Double): Self = this.set("spacingBefore", value.asInstanceOf[js.Any])
+    def setSpacingBefore(value: Double): Self = StObject.set(x, "spacingBefore", value.asInstanceOf[js.Any])
   }
 }

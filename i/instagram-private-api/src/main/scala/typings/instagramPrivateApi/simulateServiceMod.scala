@@ -1,16 +1,18 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.repositoryMod.Repository
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/services/simulate.service", JSImport.Namespace)
-@js.native
-object simulateServiceMod extends js.Object {
+object simulateServiceMod {
   
+  @JSImport("instagram-private-api/dist/services/simulate.service", "SimulateService")
   @js.native
-  class SimulateService () extends Repository {
+  class SimulateService protected () extends Repository {
+    def this(client: IgApiClient) = this()
     
     var facebookOta: js.Any = js.native
     
@@ -29,9 +31,16 @@ object simulateServiceMod extends js.Object {
     /* private */ def preLoginFlowRequests: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object SimulateService extends js.Object {
+  object SimulateService {
     
-    var executeRequestsFlow: js.Any = js.native
+    @JSImport("instagram-private-api/dist/services/simulate.service", "SimulateService")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("instagram-private-api/dist/services/simulate.service", "SimulateService.executeRequestsFlow")
+    @js.native
+    def executeRequestsFlow: js.Any = js.native
+    @scala.inline
+    def executeRequestsFlow_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("executeRequestsFlow")(x.asInstanceOf[js.Any])
   }
 }

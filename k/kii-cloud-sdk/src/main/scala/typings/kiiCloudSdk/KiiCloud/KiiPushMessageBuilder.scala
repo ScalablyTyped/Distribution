@@ -1,6 +1,7 @@
 package typings.kiiCloudSdk.KiiCloud
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Builder of push message
   */
 @js.native
-trait KiiPushMessageBuilder extends js.Object {
+trait KiiPushMessageBuilder extends StObject {
   
   /**
     * Set alert for APNS subscribers.

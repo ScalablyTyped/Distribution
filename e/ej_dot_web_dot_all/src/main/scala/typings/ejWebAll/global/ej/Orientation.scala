@@ -1,12 +1,13 @@
 package typings.ejWebAll.global.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.Orientation")
 @js.native
-object Orientation extends js.Object {
+object Orientation extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Orientation with Double] = js.native

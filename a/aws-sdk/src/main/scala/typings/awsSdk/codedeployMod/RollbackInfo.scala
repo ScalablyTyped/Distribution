@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RollbackInfo extends js.Object {
+trait RollbackInfo extends StObject {
   
   /**
     * The ID of the deployment rollback.
@@ -31,36 +32,24 @@ object RollbackInfo {
   }
   
   @scala.inline
-  implicit class RollbackInfoOps[Self <: RollbackInfo] (val x: Self) extends AnyVal {
+  implicit class RollbackInfoMutableBuilder[Self <: RollbackInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRollbackDeploymentId(value: DeploymentId): Self = StObject.set(x, "rollbackDeploymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRollbackDeploymentIdUndefined: Self = StObject.set(x, "rollbackDeploymentId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRollbackMessage(value: Description): Self = StObject.set(x, "rollbackMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRollbackDeploymentId(value: DeploymentId): Self = this.set("rollbackDeploymentId", value.asInstanceOf[js.Any])
+    def setRollbackMessageUndefined: Self = StObject.set(x, "rollbackMessage", js.undefined)
     
     @scala.inline
-    def deleteRollbackDeploymentId: Self = this.set("rollbackDeploymentId", js.undefined)
+    def setRollbackTriggeringDeploymentId(value: DeploymentId): Self = StObject.set(x, "rollbackTriggeringDeploymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRollbackMessage(value: Description): Self = this.set("rollbackMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRollbackMessage: Self = this.set("rollbackMessage", js.undefined)
-    
-    @scala.inline
-    def setRollbackTriggeringDeploymentId(value: DeploymentId): Self = this.set("rollbackTriggeringDeploymentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRollbackTriggeringDeploymentId: Self = this.set("rollbackTriggeringDeploymentId", js.undefined)
+    def setRollbackTriggeringDeploymentIdUndefined: Self = StObject.set(x, "rollbackTriggeringDeploymentId", js.undefined)
   }
 }

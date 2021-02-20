@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioSelector extends js.Object {
+trait AudioSelector extends StObject {
   
   /**
     * The name of this AudioSelector. AudioDescriptions will use this name to uniquely identify this Selector.  Selector names should be unique per input.
@@ -26,27 +27,15 @@ object AudioSelector {
   }
   
   @scala.inline
-  implicit class AudioSelectorOps[Self <: AudioSelector] (val x: Self) extends AnyVal {
+  implicit class AudioSelectorMutableBuilder[Self <: AudioSelector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: stringMin1): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSelectorSettings(value: AudioSelectorSettings): Self = StObject.set(x, "SelectorSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: stringMin1): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectorSettings(value: AudioSelectorSettings): Self = this.set("SelectorSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectorSettings: Self = this.set("SelectorSettings", js.undefined)
+    def setSelectorSettingsUndefined: Self = StObject.set(x, "SelectorSettings", js.undefined)
   }
 }

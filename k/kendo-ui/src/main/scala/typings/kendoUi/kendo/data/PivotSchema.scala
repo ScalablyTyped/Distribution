@@ -1,5 +1,6 @@
 package typings.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,66 +33,54 @@ object PivotSchema {
   }
   
   @scala.inline
-  implicit class PivotSchemaOps[Self <: PivotSchema] (val x: Self) extends AnyVal {
+  implicit class PivotSchemaMutableBuilder[Self <: PivotSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxes(value: js.Any): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCatalogs(value: js.Any): Self = StObject.set(x, "catalogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxes(value: js.Any): Self = this.set("axes", value.asInstanceOf[js.Any])
+    def setCatalogsUndefined: Self = StObject.set(x, "catalogs", js.undefined)
     
     @scala.inline
-    def deleteAxes: Self = this.set("axes", js.undefined)
+    def setCube(value: js.Any): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalogs(value: js.Any): Self = this.set("catalogs", value.asInstanceOf[js.Any])
+    def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
     
     @scala.inline
-    def deleteCatalogs: Self = this.set("catalogs", js.undefined)
+    def setCubes(value: js.Any): Self = StObject.set(x, "cubes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCube(value: js.Any): Self = this.set("cube", value.asInstanceOf[js.Any])
+    def setCubesUndefined: Self = StObject.set(x, "cubes", js.undefined)
     
     @scala.inline
-    def deleteCube: Self = this.set("cube", js.undefined)
+    def setDimensions(value: js.Any): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCubes(value: js.Any): Self = this.set("cubes", value.asInstanceOf[js.Any])
+    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
     @scala.inline
-    def deleteCubes: Self = this.set("cubes", js.undefined)
+    def setHierarchies(value: js.Any): Self = StObject.set(x, "hierarchies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensions(value: js.Any): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    def setHierarchiesUndefined: Self = StObject.set(x, "hierarchies", js.undefined)
     
     @scala.inline
-    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    def setLevels(value: js.Any): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHierarchies(value: js.Any): Self = this.set("hierarchies", value.asInstanceOf[js.Any])
+    def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
     @scala.inline
-    def deleteHierarchies: Self = this.set("hierarchies", js.undefined)
+    def setMeasures(value: js.Any): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevels(value: js.Any): Self = this.set("levels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLevels: Self = this.set("levels", js.undefined)
-    
-    @scala.inline
-    def setMeasures(value: js.Any): Self = this.set("measures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeasures: Self = this.set("measures", js.undefined)
+    def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
   }
 }

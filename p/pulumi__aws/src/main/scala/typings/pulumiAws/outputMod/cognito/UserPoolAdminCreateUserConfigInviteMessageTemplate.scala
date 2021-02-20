@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.cognito
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserPoolAdminCreateUserConfigInviteMessageTemplate extends js.Object {
+trait UserPoolAdminCreateUserConfigInviteMessageTemplate extends StObject {
   
   /**
     * The email message template. Must contain the `{####}` placeholder. Conflicts with `emailVerificationMessage` argument.
@@ -31,36 +32,24 @@ object UserPoolAdminCreateUserConfigInviteMessageTemplate {
   }
   
   @scala.inline
-  implicit class UserPoolAdminCreateUserConfigInviteMessageTemplateOps[Self <: UserPoolAdminCreateUserConfigInviteMessageTemplate] (val x: Self) extends AnyVal {
+  implicit class UserPoolAdminCreateUserConfigInviteMessageTemplateMutableBuilder[Self <: UserPoolAdminCreateUserConfigInviteMessageTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmailMessage(value: String): Self = StObject.set(x, "emailMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailMessageUndefined: Self = StObject.set(x, "emailMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmailSubject(value: String): Self = StObject.set(x, "emailSubject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailMessage(value: String): Self = this.set("emailMessage", value.asInstanceOf[js.Any])
+    def setEmailSubjectUndefined: Self = StObject.set(x, "emailSubject", js.undefined)
     
     @scala.inline
-    def deleteEmailMessage: Self = this.set("emailMessage", js.undefined)
+    def setSmsMessage(value: String): Self = StObject.set(x, "smsMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailSubject(value: String): Self = this.set("emailSubject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmailSubject: Self = this.set("emailSubject", js.undefined)
-    
-    @scala.inline
-    def setSmsMessage(value: String): Self = this.set("smsMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmsMessage: Self = this.set("smsMessage", js.undefined)
+    def setSmsMessageUndefined: Self = StObject.set(x, "smsMessage", js.undefined)
   }
 }

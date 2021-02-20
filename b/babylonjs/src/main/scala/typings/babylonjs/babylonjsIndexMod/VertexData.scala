@@ -22,6 +22,7 @@ import typings.babylonjs.capsuleBuilderMod.ICreateCapsuleOptions
 import typings.babylonjs.mathColorMod.Color4
 import typings.babylonjs.mathVectorMod.Vector4
 import typings.babylonjs.typesMod.FloatArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,13 +32,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class VertexData ()
   extends typings.babylonjs.meshVertexDataMod.VertexData
 /* static members */
-@JSImport("babylonjs/Meshes/index", "VertexData")
-@js.native
-object VertexData extends js.Object {
+object VertexData {
+  
+  @JSImport("babylonjs/Meshes/index", "VertexData")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Mesh side orientation : usually the internal or back surface
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.BACKSIDE")
+  @js.native
   val BACKSIDE: Double = js.native
   
   /**
@@ -58,7 +63,11 @@ object VertexData extends js.Object {
     * * distanceTo : optional Vector3 to compute the facet depth from this location
     * * depthSortedFacets : optional array of depthSortedFacets to store the facet distances from the reference location
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.ComputeNormals")
+  @js.native
   def ComputeNormals(positions: js.Any, indices: js.Any, normals: js.Any): Unit = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.ComputeNormals")
+  @js.native
   def ComputeNormals(positions: js.Any, indices: js.Any, normals: js.Any, options: BInfo): Unit = js.native
   
   /**
@@ -75,6 +84,8 @@ object VertexData extends js.Object {
     * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
     * @returns the VertexData of the box
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreateBox")
+  @js.native
   def CreateBox(options: Depth): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   
   /**
@@ -82,7 +93,11 @@ object VertexData extends js.Object {
     * @param options an object used to set the following optional parameters for the capsule, required but can be empty
     * @returns the VertexData of the Capsule
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreateCapsule")
+  @js.native
   def CreateCapsule(): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreateCapsule")
+  @js.native
   def CreateCapsule(options: ICreateCapsuleOptions): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   
   /**
@@ -104,6 +119,8 @@ object VertexData extends js.Object {
     * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
     * @returns the VertexData of the cylinder, cone or prism
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreateCylinder")
+  @js.native
   def CreateCylinder(options: Diameter): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   
   /**
@@ -115,6 +132,8 @@ object VertexData extends js.Object {
     *  - dashNb the intended total number of dashes, optional, default 200
     * @returns the VertexData for the DashedLines
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreateDashedLines")
+  @js.native
   def CreateDashedLines(options: DashNb): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   
   /**
@@ -128,6 +147,8 @@ object VertexData extends js.Object {
     * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
     * @returns the VertexData of the box
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreateDisc")
+  @js.native
   def CreateDisc(options: Radius): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   
   /**
@@ -138,6 +159,8 @@ object VertexData extends js.Object {
     *  - subdivisions the number of subdivisions per side, optional, default 1
     * @returns the VertexData of the Ground
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreateGround")
+  @js.native
   def CreateGround(options: Subdivisions): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   
   /**
@@ -155,6 +178,8 @@ object VertexData extends js.Object {
     * * alphaFilter Remove any data where the alpha channel is below this value, defaults 0 (all data visible)
     * @returns the VertexData of the Ground designed from a heightmap
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreateGroundFromHeightMap")
+  @js.native
   def CreateGroundFromHeightMap(options: AlphaFilter): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   
   /**
@@ -171,6 +196,8 @@ object VertexData extends js.Object {
     * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
     * @returns the VertexData of the IcoSphere
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreateIcoSphere")
+  @js.native
   def CreateIcoSphere(options: RadiusX): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   
   /**
@@ -180,6 +207,8 @@ object VertexData extends js.Object {
     *  - colors an array of line colors, each of the line colors being an array of successive Color4, one per line point
     * @returns the VertexData of the LineSystem
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreateLineSystem")
+  @js.native
   def CreateLineSystem(options: Colors): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   
   /**
@@ -193,6 +222,8 @@ object VertexData extends js.Object {
     * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
     * @returns the VertexData of the box
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePlane")
+  @js.native
   def CreatePlane(options: SideOrientation): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   
   /**
@@ -207,7 +238,11 @@ object VertexData extends js.Object {
     * @param wrap a boolean, default false, when true and fUVs used texture is wrapped around all sides, when false texture is applied side
     * @returns the VertexData of the Polygon
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(polygon: typings.babylonjs.meshMod.Mesh, sideOrientation: Double): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -217,6 +252,8 @@ object VertexData extends js.Object {
     backUVs: js.UndefOr[scala.Nothing],
     wrap: Boolean
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -225,6 +262,8 @@ object VertexData extends js.Object {
     frontUVs: js.UndefOr[scala.Nothing],
     backUVs: Vector4
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -234,6 +273,8 @@ object VertexData extends js.Object {
     backUVs: Vector4,
     wrap: Boolean
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -241,6 +282,8 @@ object VertexData extends js.Object {
     fColors: js.UndefOr[scala.Nothing],
     frontUVs: Vector4
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -250,6 +293,8 @@ object VertexData extends js.Object {
     backUVs: js.UndefOr[scala.Nothing],
     wrap: Boolean
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -258,6 +303,8 @@ object VertexData extends js.Object {
     frontUVs: Vector4,
     backUVs: Vector4
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -267,12 +314,16 @@ object VertexData extends js.Object {
     backUVs: Vector4,
     wrap: Boolean
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
     fUV: js.UndefOr[scala.Nothing],
     fColors: js.Array[Color4]
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -282,6 +333,8 @@ object VertexData extends js.Object {
     backUVs: js.UndefOr[scala.Nothing],
     wrap: Boolean
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -290,6 +343,8 @@ object VertexData extends js.Object {
     frontUVs: js.UndefOr[scala.Nothing],
     backUVs: Vector4
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -299,6 +354,8 @@ object VertexData extends js.Object {
     backUVs: Vector4,
     wrap: Boolean
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -306,6 +363,8 @@ object VertexData extends js.Object {
     fColors: js.Array[Color4],
     frontUVs: Vector4
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -315,6 +374,8 @@ object VertexData extends js.Object {
     backUVs: js.UndefOr[scala.Nothing],
     wrap: Boolean
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -323,6 +384,8 @@ object VertexData extends js.Object {
     frontUVs: Vector4,
     backUVs: Vector4
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -332,7 +395,11 @@ object VertexData extends js.Object {
     backUVs: Vector4,
     wrap: Boolean
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(polygon: typings.babylonjs.meshMod.Mesh, sideOrientation: Double, fUV: js.Array[Vector4]): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -342,6 +409,8 @@ object VertexData extends js.Object {
     backUVs: js.UndefOr[scala.Nothing],
     wrap: Boolean
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -350,6 +419,8 @@ object VertexData extends js.Object {
     frontUVs: js.UndefOr[scala.Nothing],
     backUVs: Vector4
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -359,6 +430,8 @@ object VertexData extends js.Object {
     backUVs: Vector4,
     wrap: Boolean
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -366,6 +439,8 @@ object VertexData extends js.Object {
     fColors: js.UndefOr[scala.Nothing],
     frontUVs: Vector4
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -375,6 +450,8 @@ object VertexData extends js.Object {
     backUVs: js.UndefOr[scala.Nothing],
     wrap: Boolean
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -383,6 +460,8 @@ object VertexData extends js.Object {
     frontUVs: Vector4,
     backUVs: Vector4
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -392,12 +471,16 @@ object VertexData extends js.Object {
     backUVs: Vector4,
     wrap: Boolean
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
     fUV: js.Array[Vector4],
     fColors: js.Array[Color4]
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -407,6 +490,8 @@ object VertexData extends js.Object {
     backUVs: js.UndefOr[scala.Nothing],
     wrap: Boolean
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -415,6 +500,8 @@ object VertexData extends js.Object {
     frontUVs: js.UndefOr[scala.Nothing],
     backUVs: Vector4
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -424,6 +511,8 @@ object VertexData extends js.Object {
     backUVs: Vector4,
     wrap: Boolean
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -431,6 +520,8 @@ object VertexData extends js.Object {
     fColors: js.Array[Color4],
     frontUVs: Vector4
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -440,6 +531,8 @@ object VertexData extends js.Object {
     backUVs: js.UndefOr[scala.Nothing],
     wrap: Boolean
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -448,6 +541,8 @@ object VertexData extends js.Object {
     frontUVs: Vector4,
     backUVs: Vector4
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolygon")
+  @js.native
   def CreatePolygon(
     polygon: typings.babylonjs.meshMod.Mesh,
     sideOrientation: Double,
@@ -478,6 +573,8 @@ object VertexData extends js.Object {
     * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
     * @returns the VertexData of the Polyhedron
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreatePolyhedron")
+  @js.native
   def CreatePolyhedron(options: FaceColors): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   
   /**
@@ -495,6 +592,8 @@ object VertexData extends js.Object {
     * * colors a linear array, of length 4 * number of vertices, of custom color values, optional
     * @returns the VertexData of the ribbon
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreateRibbon")
+  @js.native
   def CreateRibbon(options: BackUVs): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   
   /**
@@ -512,6 +611,8 @@ object VertexData extends js.Object {
     * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
     * @returns the VertexData of the ellipsoid
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreateSphere")
+  @js.native
   def CreateSphere(options: Arc): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   
   /**
@@ -523,6 +624,8 @@ object VertexData extends js.Object {
     * * sideOrientation optional and takes the values : Mesh.FRONTSIDE (default), Mesh.BACKSIDE or Mesh.DOUBLESIDE
     * @returns the VertexData of the box
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreateTiledBox")
+  @js.native
   def CreateTiledBox(options: AlignHorizontal): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   
   /**
@@ -536,6 +639,8 @@ object VertexData extends js.Object {
     * * precision a javascript object {w: positive integer, h: positive integer}, `w` and `h` are the numbers of subdivisions on the tile width and height, default {w: 2, h: 2}
     * @returns the VertexData of the TiledGround
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreateTiledGround")
+  @js.native
   def CreateTiledGround(options: Precision): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   
   /**
@@ -550,6 +655,8 @@ object VertexData extends js.Object {
     * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
     * @returns the VertexData of the tiled plane
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreateTiledPlane")
+  @js.native
   def CreateTiledPlane(options: AlignVertical): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   
   /**
@@ -563,6 +670,8 @@ object VertexData extends js.Object {
     * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
     * @returns the VertexData of the torus
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreateTorus")
+  @js.native
   def CreateTorus(options: FrontUVs): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   
   /**
@@ -579,16 +688,22 @@ object VertexData extends js.Object {
     * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
     * @returns the VertexData of the Torus Knot
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.CreateTorusKnot")
+  @js.native
   def CreateTorusKnot(options: P): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   
   /**
     * Mesh side orientation : by default, `FRONTSIDE`
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.DEFAULTSIDE")
+  @js.native
   val DEFAULTSIDE: Double = js.native
   
   /**
     * Mesh side orientation : both internal and external or front and back surfaces
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.DOUBLESIDE")
+  @js.native
   val DOUBLESIDE: Double = js.native
   
   /**
@@ -598,13 +713,21 @@ object VertexData extends js.Object {
     * @param forceCopy indicating that the VertexData must be cloned, optional, default false
     * @returns the object VertexData associated to the passed mesh
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.ExtractFromGeometry")
+  @js.native
   def ExtractFromGeometry(geometry: typings.babylonjs.geometryMod.Geometry): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.ExtractFromGeometry")
+  @js.native
   def ExtractFromGeometry(
     geometry: typings.babylonjs.geometryMod.Geometry,
     copyWhenShared: js.UndefOr[scala.Nothing],
     forceCopy: Boolean
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.ExtractFromGeometry")
+  @js.native
   def ExtractFromGeometry(geometry: typings.babylonjs.geometryMod.Geometry, copyWhenShared: Boolean): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.ExtractFromGeometry")
+  @js.native
   def ExtractFromGeometry(geometry: typings.babylonjs.geometryMod.Geometry, copyWhenShared: Boolean, forceCopy: Boolean): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   
   /**
@@ -614,18 +737,28 @@ object VertexData extends js.Object {
     * @param forceCopy indicating that the VertexData must be cloned, optional, default false
     * @returns the object VertexData associated to the passed mesh
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.ExtractFromMesh")
+  @js.native
   def ExtractFromMesh(mesh: typings.babylonjs.meshMod.Mesh): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.ExtractFromMesh")
+  @js.native
   def ExtractFromMesh(
     mesh: typings.babylonjs.meshMod.Mesh,
     copyWhenShared: js.UndefOr[scala.Nothing],
     forceCopy: Boolean
   ): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.ExtractFromMesh")
+  @js.native
   def ExtractFromMesh(mesh: typings.babylonjs.meshMod.Mesh, copyWhenShared: Boolean): typings.babylonjs.meshVertexDataMod.VertexData = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData.ExtractFromMesh")
+  @js.native
   def ExtractFromMesh(mesh: typings.babylonjs.meshMod.Mesh, copyWhenShared: Boolean, forceCopy: Boolean): typings.babylonjs.meshVertexDataMod.VertexData = js.native
   
   /**
     * Mesh side orientation : usually the external or front surface
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.FRONTSIDE")
+  @js.native
   val FRONTSIDE: Double = js.native
   
   /**
@@ -633,9 +766,13 @@ object VertexData extends js.Object {
     * @param parsedVertexData the parsed data from an imported file
     * @param geometry the geometry to apply the VertexData to
     */
+  @JSImport("babylonjs/Meshes/index", "VertexData.ImportVertexData")
+  @js.native
   def ImportVertexData(parsedVertexData: js.Any, geometry: typings.babylonjs.geometryMod.Geometry): Unit = js.native
   
   /** @hidden */
+  @JSImport("babylonjs/Meshes/index", "VertexData._ComputeSides")
+  @js.native
   def _ComputeSides(
     sideOrientation: Double,
     positions: FloatArray,
@@ -643,6 +780,8 @@ object VertexData extends js.Object {
     normals: FloatArray,
     uvs: FloatArray
   ): Unit = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData._ComputeSides")
+  @js.native
   def _ComputeSides(
     sideOrientation: Double,
     positions: FloatArray,
@@ -652,6 +791,8 @@ object VertexData extends js.Object {
     frontUVs: js.UndefOr[scala.Nothing],
     backUVs: Vector4
   ): Unit = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData._ComputeSides")
+  @js.native
   def _ComputeSides(
     sideOrientation: Double,
     positions: FloatArray,
@@ -660,6 +801,8 @@ object VertexData extends js.Object {
     uvs: FloatArray,
     frontUVs: Vector4
   ): Unit = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData._ComputeSides")
+  @js.native
   def _ComputeSides(
     sideOrientation: Double,
     positions: FloatArray,
@@ -670,5 +813,9 @@ object VertexData extends js.Object {
     backUVs: Vector4
   ): Unit = js.native
   
-  var _ExtractFrom: js.Any = js.native
+  @JSImport("babylonjs/Meshes/index", "VertexData._ExtractFrom")
+  @js.native
+  def _ExtractFrom: js.Any = js.native
+  @scala.inline
+  def _ExtractFrom_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ExtractFrom")(x.asInstanceOf[js.Any])
 }

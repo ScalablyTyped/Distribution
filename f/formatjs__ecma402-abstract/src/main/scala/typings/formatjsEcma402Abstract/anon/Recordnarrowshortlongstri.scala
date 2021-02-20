@@ -1,12 +1,13 @@
 package typings.formatjsEcma402Abstract.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Record<'narrow' | 'short' | 'long', string | undefined> */
 @js.native
-trait Recordnarrowshortlongstri extends js.Object {
+trait Recordnarrowshortlongstri extends StObject {
   
   var long: js.UndefOr[String] = js.native
   
@@ -23,36 +24,24 @@ object Recordnarrowshortlongstri {
   }
   
   @scala.inline
-  implicit class RecordnarrowshortlongstriOps[Self <: Recordnarrowshortlongstri] (val x: Self) extends AnyVal {
+  implicit class RecordnarrowshortlongstriMutableBuilder[Self <: Recordnarrowshortlongstri] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLong(value: String): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLongUndefined: Self = StObject.set(x, "long", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNarrow(value: String): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLong(value: String): Self = this.set("long", value.asInstanceOf[js.Any])
+    def setNarrowUndefined: Self = StObject.set(x, "narrow", js.undefined)
     
     @scala.inline
-    def deleteLong: Self = this.set("long", js.undefined)
+    def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNarrow(value: String): Self = this.set("narrow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNarrow: Self = this.set("narrow", js.undefined)
-    
-    @scala.inline
-    def setShort(value: String): Self = this.set("short", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShort: Self = this.set("short", js.undefined)
+    def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
   }
 }

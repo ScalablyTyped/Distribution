@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutRecordsResultEntry extends js.Object {
+trait PutRecordsResultEntry extends StObject {
   
   /**
     * The error code for an individual record result. ErrorCodes can be either ProvisionedThroughputExceededException or InternalFailure.
@@ -36,42 +37,30 @@ object PutRecordsResultEntry {
   }
   
   @scala.inline
-  implicit class PutRecordsResultEntryOps[Self <: PutRecordsResultEntry] (val x: Self) extends AnyVal {
+  implicit class PutRecordsResultEntryMutableBuilder[Self <: PutRecordsResultEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: ErrorCode): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
+    def setSequenceNumber(value: SequenceNumber): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: ErrorMessage): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    def setSequenceNumberUndefined: Self = StObject.set(x, "SequenceNumber", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    def setShardId(value: ShardId): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequenceNumber(value: SequenceNumber): Self = this.set("SequenceNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSequenceNumber: Self = this.set("SequenceNumber", js.undefined)
-    
-    @scala.inline
-    def setShardId(value: ShardId): Self = this.set("ShardId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShardId: Self = this.set("ShardId", js.undefined)
+    def setShardIdUndefined: Self = StObject.set(x, "ShardId", js.undefined)
   }
 }

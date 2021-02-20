@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateMultiplexProgramRequest extends js.Object {
+trait CreateMultiplexProgramRequest extends StObject {
   
   /**
     * ID of the multiplex where the program is to be created.
@@ -42,30 +43,18 @@ object CreateMultiplexProgramRequest {
   }
   
   @scala.inline
-  implicit class CreateMultiplexProgramRequestOps[Self <: CreateMultiplexProgramRequest] (val x: Self) extends AnyVal {
+  implicit class CreateMultiplexProgramRequestMutableBuilder[Self <: CreateMultiplexProgramRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMultiplexId(value: string): Self = StObject.set(x, "MultiplexId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMultiplexProgramSettings(value: MultiplexProgramSettings): Self = StObject.set(x, "MultiplexProgramSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProgramName(value: string): Self = StObject.set(x, "ProgramName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiplexId(value: string): Self = this.set("MultiplexId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMultiplexProgramSettings(value: MultiplexProgramSettings): Self = this.set("MultiplexProgramSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProgramName(value: string): Self = this.set("ProgramName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestId(value: string): Self = this.set("RequestId", value.asInstanceOf[js.Any])
+    def setRequestId(value: string): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
   }
 }

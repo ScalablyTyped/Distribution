@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3DestinationSettings extends js.Object {
+trait S3DestinationSettings extends StObject {
   
   /**
     * Optional. Have MediaConvert automatically apply Amazon S3 access control for the outputs in this output group. When you don't use this setting, S3 automatically applies the default access control list PRIVATE.
@@ -26,30 +27,18 @@ object S3DestinationSettings {
   }
   
   @scala.inline
-  implicit class S3DestinationSettingsOps[Self <: S3DestinationSettings] (val x: Self) extends AnyVal {
+  implicit class S3DestinationSettingsMutableBuilder[Self <: S3DestinationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessControl(value: S3DestinationAccessControl): Self = StObject.set(x, "AccessControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessControlUndefined: Self = StObject.set(x, "AccessControl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryption(value: S3EncryptionSettings): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessControl(value: S3DestinationAccessControl): Self = this.set("AccessControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccessControl: Self = this.set("AccessControl", js.undefined)
-    
-    @scala.inline
-    def setEncryption(value: S3EncryptionSettings): Self = this.set("Encryption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
   }
 }

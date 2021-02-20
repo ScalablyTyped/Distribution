@@ -2,6 +2,7 @@ package typings.mapboxGl.mod
 
 import typings.mapboxGl.mapboxGlStrings.map
 import typings.mapboxGl.mapboxGlStrings.viewport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,78 +39,66 @@ object HillshadePaint {
   }
   
   @scala.inline
-  implicit class HillshadePaintOps[Self <: HillshadePaint] (val x: Self) extends AnyVal {
+  implicit class HillshadePaintMutableBuilder[Self <: HillshadePaint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setHillshade-accent-color`(value: String | Expression): Self = StObject.set(x, "hillshade-accent-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setHillshade-accent-color-transition`(value: Transition): Self = StObject.set(x, "hillshade-accent-color-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setHillshade-accent-color-transitionUndefined`: Self = StObject.set(x, "hillshade-accent-color-transition", js.undefined)
     
     @scala.inline
-    def `setHillshade-accent-color`(value: String | Expression): Self = this.set("hillshade-accent-color", value.asInstanceOf[js.Any])
+    def `setHillshade-accent-colorUndefined`: Self = StObject.set(x, "hillshade-accent-color", js.undefined)
     
     @scala.inline
-    def `deleteHillshade-accent-color`: Self = this.set("hillshade-accent-color", js.undefined)
+    def `setHillshade-exaggeration`(value: Double | Expression): Self = StObject.set(x, "hillshade-exaggeration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setHillshade-accent-color-transition`(value: Transition): Self = this.set("hillshade-accent-color-transition", value.asInstanceOf[js.Any])
+    def `setHillshade-exaggeration-transition`(value: Transition): Self = StObject.set(x, "hillshade-exaggeration-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteHillshade-accent-color-transition`: Self = this.set("hillshade-accent-color-transition", js.undefined)
+    def `setHillshade-exaggeration-transitionUndefined`: Self = StObject.set(x, "hillshade-exaggeration-transition", js.undefined)
     
     @scala.inline
-    def `setHillshade-exaggeration`(value: Double | Expression): Self = this.set("hillshade-exaggeration", value.asInstanceOf[js.Any])
+    def `setHillshade-exaggerationUndefined`: Self = StObject.set(x, "hillshade-exaggeration", js.undefined)
     
     @scala.inline
-    def `deleteHillshade-exaggeration`: Self = this.set("hillshade-exaggeration", js.undefined)
+    def `setHillshade-highlight-color`(value: String | Expression): Self = StObject.set(x, "hillshade-highlight-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setHillshade-exaggeration-transition`(value: Transition): Self = this.set("hillshade-exaggeration-transition", value.asInstanceOf[js.Any])
+    def `setHillshade-highlight-color-transition`(value: Transition): Self = StObject.set(x, "hillshade-highlight-color-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteHillshade-exaggeration-transition`: Self = this.set("hillshade-exaggeration-transition", js.undefined)
+    def `setHillshade-highlight-color-transitionUndefined`: Self = StObject.set(x, "hillshade-highlight-color-transition", js.undefined)
     
     @scala.inline
-    def `setHillshade-highlight-color`(value: String | Expression): Self = this.set("hillshade-highlight-color", value.asInstanceOf[js.Any])
+    def `setHillshade-highlight-colorUndefined`: Self = StObject.set(x, "hillshade-highlight-color", js.undefined)
     
     @scala.inline
-    def `deleteHillshade-highlight-color`: Self = this.set("hillshade-highlight-color", js.undefined)
+    def `setHillshade-illumination-anchor`(value: map | viewport): Self = StObject.set(x, "hillshade-illumination-anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setHillshade-highlight-color-transition`(value: Transition): Self = this.set("hillshade-highlight-color-transition", value.asInstanceOf[js.Any])
+    def `setHillshade-illumination-anchorUndefined`: Self = StObject.set(x, "hillshade-illumination-anchor", js.undefined)
     
     @scala.inline
-    def `deleteHillshade-highlight-color-transition`: Self = this.set("hillshade-highlight-color-transition", js.undefined)
+    def `setHillshade-illumination-direction`(value: Double | Expression): Self = StObject.set(x, "hillshade-illumination-direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setHillshade-illumination-anchor`(value: map | viewport): Self = this.set("hillshade-illumination-anchor", value.asInstanceOf[js.Any])
+    def `setHillshade-illumination-directionUndefined`: Self = StObject.set(x, "hillshade-illumination-direction", js.undefined)
     
     @scala.inline
-    def `deleteHillshade-illumination-anchor`: Self = this.set("hillshade-illumination-anchor", js.undefined)
+    def `setHillshade-shadow-color`(value: String | Expression): Self = StObject.set(x, "hillshade-shadow-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setHillshade-illumination-direction`(value: Double | Expression): Self = this.set("hillshade-illumination-direction", value.asInstanceOf[js.Any])
+    def `setHillshade-shadow-color-transition`(value: Transition): Self = StObject.set(x, "hillshade-shadow-color-transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteHillshade-illumination-direction`: Self = this.set("hillshade-illumination-direction", js.undefined)
+    def `setHillshade-shadow-color-transitionUndefined`: Self = StObject.set(x, "hillshade-shadow-color-transition", js.undefined)
     
     @scala.inline
-    def `setHillshade-shadow-color`(value: String | Expression): Self = this.set("hillshade-shadow-color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteHillshade-shadow-color`: Self = this.set("hillshade-shadow-color", js.undefined)
-    
-    @scala.inline
-    def `setHillshade-shadow-color-transition`(value: Transition): Self = this.set("hillshade-shadow-color-transition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteHillshade-shadow-color-transition`: Self = this.set("hillshade-shadow-color-transition", js.undefined)
+    def `setHillshade-shadow-colorUndefined`: Self = StObject.set(x, "hillshade-shadow-color", js.undefined)
   }
 }

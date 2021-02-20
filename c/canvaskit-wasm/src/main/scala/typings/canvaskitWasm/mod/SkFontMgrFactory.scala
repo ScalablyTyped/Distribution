@@ -1,12 +1,13 @@
 package typings.canvaskitWasm.mod
 
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkFontMgrFactory extends js.Object {
+trait SkFontMgrFactory extends StObject {
   
   /**
     * Create an SkFontMgr with the created font data. Returns null if buffers was empty.
@@ -29,24 +30,12 @@ object SkFontMgrFactory {
   }
   
   @scala.inline
-  implicit class SkFontMgrFactoryOps[Self <: SkFontMgrFactory] (val x: Self) extends AnyVal {
+  implicit class SkFontMgrFactoryMutableBuilder[Self <: SkFontMgrFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromData(value: /* repeated */ ArrayBuffer => SkFontMgr | Null): Self = StObject.set(x, "FromData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFromData(value: /* repeated */ ArrayBuffer => SkFontMgr | Null): Self = this.set("FromData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRefDefault(value: () => SkFontMgr): Self = this.set("RefDefault", js.Any.fromFunction0(value))
+    def setRefDefault(value: () => SkFontMgr): Self = StObject.set(x, "RefDefault", js.Any.fromFunction0(value))
   }
 }

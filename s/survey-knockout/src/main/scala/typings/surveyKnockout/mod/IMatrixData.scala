@@ -1,11 +1,12 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMatrixData extends js.Object {
+trait IMatrixData extends StObject {
   
   def onMatrixRowChanged(row: MatrixRowModel): Unit = js.native
 }
@@ -18,21 +19,9 @@ object IMatrixData {
   }
   
   @scala.inline
-  implicit class IMatrixDataOps[Self <: IMatrixData] (val x: Self) extends AnyVal {
+  implicit class IMatrixDataMutableBuilder[Self <: IMatrixData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnMatrixRowChanged(value: MatrixRowModel => Unit): Self = this.set("onMatrixRowChanged", js.Any.fromFunction1(value))
+    def setOnMatrixRowChanged(value: MatrixRowModel => Unit): Self = StObject.set(x, "onMatrixRowChanged", js.Any.fromFunction1(value))
   }
 }

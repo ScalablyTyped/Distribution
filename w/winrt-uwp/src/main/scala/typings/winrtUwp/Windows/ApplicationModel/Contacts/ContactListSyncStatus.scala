@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContactListSyncStatus extends js.Object
+sealed trait ContactListSyncStatus extends StObject
 /** Defines the ContactList sync status. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactListSyncStatus")
 @js.native
-object ContactListSyncStatus extends js.Object {
+object ContactListSyncStatus extends StObject {
   
   /** There was an authentication error. */
   @js.native

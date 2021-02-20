@@ -6,13 +6,14 @@ import typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Poi
 import typings.std.HTMLDivElement
 import typings.std.HTMLLIElement
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined amap-js-api-place-search.AMap.PlaceSearch.SelectChangeEventData & {  event :std.MouseEvent,   infoWindow :amap-js-api.AMap.InfoWindow<any>,   infoWindowContentDom :std.HTMLDivElement} */
 @js.native
-trait SelectChangeEventDataeven extends js.Object {
+trait SelectChangeEventDataeven extends StObject {
   
   /**
     * 当前选中的POI的信息
@@ -63,45 +64,33 @@ object SelectChangeEventDataeven {
   }
   
   @scala.inline
-  implicit class SelectChangeEventDataevenOps[Self <: SelectChangeEventDataeven] (val x: Self) extends AnyVal {
+  implicit class SelectChangeEventDataevenMutableBuilder[Self <: SelectChangeEventDataeven] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Array[Poi]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataVarargs(value: Poi*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent(value: MouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: Poi*): Self = this.set("data", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[Poi]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: MouseEvent): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setInfoWindow(value: InfoWindow[_]): Self = StObject.set(x, "infoWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInfoWindowContentDom(value: HTMLDivElement): Self = StObject.set(x, "infoWindowContentDom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setListElement(value: HTMLLIElement): Self = StObject.set(x, "listElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoWindow(value: InfoWindow[_]): Self = this.set("infoWindow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInfoWindowContentDom(value: HTMLDivElement): Self = this.set("infoWindowContentDom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setListElement(value: HTMLLIElement): Self = this.set("listElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMarker(value: Marker[_]): Self = this.set("marker", value.asInstanceOf[js.Any])
+    def setMarker(value: Marker[_]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
   }
 }

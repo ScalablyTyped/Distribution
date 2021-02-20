@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Graphics.Imaging
 
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides read access to image properties and metadata. A particular instance of BitmapPropertiesView may represent the entire contents of the frame metadata, or any nested metadata block within the frame. */
 @js.native
-trait BitmapPropertiesView extends js.Object {
+trait BitmapPropertiesView extends StObject {
   
   /**
     * Asynchronously retrieves one or more bitmap properties.
@@ -26,21 +27,9 @@ object BitmapPropertiesView {
   }
   
   @scala.inline
-  implicit class BitmapPropertiesViewOps[Self <: BitmapPropertiesView] (val x: Self) extends AnyVal {
+  implicit class BitmapPropertiesViewMutableBuilder[Self <: BitmapPropertiesView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetPropertiesAsync(value: IIterable[String] => IPromiseWithIAsyncOperation[BitmapPropertySet]): Self = this.set("getPropertiesAsync", js.Any.fromFunction1(value))
+    def setGetPropertiesAsync(value: IIterable[String] => IPromiseWithIAsyncOperation[BitmapPropertySet]): Self = StObject.set(x, "getPropertiesAsync", js.Any.fromFunction1(value))
   }
 }

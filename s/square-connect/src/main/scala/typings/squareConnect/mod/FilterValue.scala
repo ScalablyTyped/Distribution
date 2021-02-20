@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "FilterValue")
 @js.native
-class FilterValue () extends js.Object {
+class FilterValue () extends StObject {
   
   /**
     * A list of terms that must be present on the field of the resource.

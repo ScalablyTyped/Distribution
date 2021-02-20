@@ -1,5 +1,6 @@
 package typings.googleapis.v21Mod.contentV21
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * asynchronously.
   */
 @js.native
-trait SchemaProductStatus extends js.Object {
+trait SchemaProductStatus extends StObject {
   
   /**
     * Date on which the item has been created, in ISO 8601 format.
@@ -66,78 +67,66 @@ object SchemaProductStatus {
   }
   
   @scala.inline
-  implicit class SchemaProductStatusOps[Self <: SchemaProductStatus] (val x: Self) extends AnyVal {
+  implicit class SchemaProductStatusMutableBuilder[Self <: SchemaProductStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationStatuses(value: js.Array[SchemaProductStatusDestinationStatus]): Self = StObject.set(x, "destinationStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: String): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    def setDestinationStatusesUndefined: Self = StObject.set(x, "destinationStatuses", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    def setDestinationStatusesVarargs(value: SchemaProductStatusDestinationStatus*): Self = StObject.set(x, "destinationStatuses", js.Array(value :_*))
     
     @scala.inline
-    def setDestinationStatusesVarargs(value: SchemaProductStatusDestinationStatus*): Self = this.set("destinationStatuses", js.Array(value :_*))
+    def setGoogleExpirationDate(value: String): Self = StObject.set(x, "googleExpirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationStatuses(value: js.Array[SchemaProductStatusDestinationStatus]): Self = this.set("destinationStatuses", value.asInstanceOf[js.Any])
+    def setGoogleExpirationDateUndefined: Self = StObject.set(x, "googleExpirationDate", js.undefined)
     
     @scala.inline
-    def deleteDestinationStatuses: Self = this.set("destinationStatuses", js.undefined)
+    def setItemLevelIssues(value: js.Array[SchemaProductStatusItemLevelIssue]): Self = StObject.set(x, "itemLevelIssues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleExpirationDate(value: String): Self = this.set("googleExpirationDate", value.asInstanceOf[js.Any])
+    def setItemLevelIssuesUndefined: Self = StObject.set(x, "itemLevelIssues", js.undefined)
     
     @scala.inline
-    def deleteGoogleExpirationDate: Self = this.set("googleExpirationDate", js.undefined)
+    def setItemLevelIssuesVarargs(value: SchemaProductStatusItemLevelIssue*): Self = StObject.set(x, "itemLevelIssues", js.Array(value :_*))
     
     @scala.inline
-    def setItemLevelIssuesVarargs(value: SchemaProductStatusItemLevelIssue*): Self = this.set("itemLevelIssues", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemLevelIssues(value: js.Array[SchemaProductStatusItemLevelIssue]): Self = this.set("itemLevelIssues", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteItemLevelIssues: Self = this.set("itemLevelIssues", js.undefined)
+    def setLastUpdateDate(value: String): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLastUpdateDateUndefined: Self = StObject.set(x, "lastUpdateDate", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdateDate(value: String): Self = this.set("lastUpdateDate", value.asInstanceOf[js.Any])
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def deleteLastUpdateDate: Self = this.set("lastUpdateDate", js.undefined)
+    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
     @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductId: Self = this.set("productId", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

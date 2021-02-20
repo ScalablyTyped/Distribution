@@ -1,5 +1,6 @@
 package typings.extjs.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,72 +52,60 @@ object IAbstractPlugin {
   }
   
   @scala.inline
-  implicit class IAbstractPluginOps[Self <: IAbstractPlugin] (val x: Self) extends AnyVal {
+  implicit class IAbstractPluginMutableBuilder[Self <: IAbstractPlugin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClonePlugin(value: /* overrideCfg */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "clonePlugin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClonePluginUndefined: Self = StObject.set(x, "clonePlugin", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClonePlugin(value: /* overrideCfg */ js.UndefOr[js.Any] => Unit): Self = this.set("clonePlugin", js.Any.fromFunction1(value))
+    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     @scala.inline
-    def deleteClonePlugin: Self = this.set("clonePlugin", js.undefined)
+    def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
     @scala.inline
-    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisable(value: () => Unit): Self = this.set("disable", js.Any.fromFunction0(value))
+    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
     @scala.inline
-    def deleteDisable: Self = this.set("disable", js.undefined)
+    def setGetCmp(value: () => IComponent): Self = StObject.set(x, "getCmp", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnable(value: () => Unit): Self = this.set("enable", js.Any.fromFunction0(value))
+    def setGetCmpUndefined: Self = StObject.set(x, "getCmp", js.undefined)
     
     @scala.inline
-    def deleteEnable: Self = this.set("enable", js.undefined)
+    def setInit(value: /* client */ js.UndefOr[IComponent] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCmp(value: () => IComponent): Self = this.set("getCmp", js.Any.fromFunction0(value))
+    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def deleteGetCmp: Self = this.set("getCmp", js.undefined)
+    def setIsPlugin(value: Boolean): Self = StObject.set(x, "isPlugin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInit(value: /* client */ js.UndefOr[IComponent] => Unit): Self = this.set("init", js.Any.fromFunction1(value))
+    def setIsPluginUndefined: Self = StObject.set(x, "isPlugin", js.undefined)
     
     @scala.inline
-    def deleteInit: Self = this.set("init", js.undefined)
+    def setPluginId(value: java.lang.String): Self = StObject.set(x, "pluginId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPlugin(value: Boolean): Self = this.set("isPlugin", value.asInstanceOf[js.Any])
+    def setPluginIdUndefined: Self = StObject.set(x, "pluginId", js.undefined)
     
     @scala.inline
-    def deleteIsPlugin: Self = this.set("isPlugin", js.undefined)
+    def setSetCmp(value: /* cmp */ js.UndefOr[IComponent] => Unit): Self = StObject.set(x, "setCmp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPluginId(value: java.lang.String): Self = this.set("pluginId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePluginId: Self = this.set("pluginId", js.undefined)
-    
-    @scala.inline
-    def setSetCmp(value: /* cmp */ js.UndefOr[IComponent] => Unit): Self = this.set("setCmp", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetCmp: Self = this.set("setCmp", js.undefined)
+    def setSetCmpUndefined: Self = StObject.set(x, "setCmp", js.undefined)
   }
 }

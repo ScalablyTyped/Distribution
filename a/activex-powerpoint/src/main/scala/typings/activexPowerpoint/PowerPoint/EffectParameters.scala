@@ -1,12 +1,13 @@
 package typings.activexPowerpoint.PowerPoint
 
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EffectParameters extends js.Object {
+trait EffectParameters extends StObject {
   
   var Amount: Double = js.native
   
@@ -47,45 +48,33 @@ object EffectParameters {
   }
   
   @scala.inline
-  implicit class EffectParametersOps[Self <: EffectParameters] (val x: Self) extends AnyVal {
+  implicit class EffectParametersMutableBuilder[Self <: EffectParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor2(value: ColorFormat): Self = StObject.set(x, "Color2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: Double): Self = this.set("Amount", value.asInstanceOf[js.Any])
+    def setDirection(value: MsoAnimDirection): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setFontName(value: String): Self = StObject.set(x, "FontName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor2(value: ColorFormat): Self = this.set("Color2", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: MsoAnimDirection): Self = this.set("Direction", value.asInstanceOf[js.Any])
+    def setPowerPointDotEffectParameters_typekey(value: EffectParameters): Self = StObject.set(x, "PowerPoint.EffectParameters_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontName(value: String): Self = this.set("FontName", value.asInstanceOf[js.Any])
+    def setRelative(value: MsoTriState): Self = StObject.set(x, "Relative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPowerPointDotEffectParameters_typekey(value: EffectParameters): Self = this.set("PowerPoint.EffectParameters_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelative(value: MsoTriState): Self = this.set("Relative", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("Size", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
   }
 }

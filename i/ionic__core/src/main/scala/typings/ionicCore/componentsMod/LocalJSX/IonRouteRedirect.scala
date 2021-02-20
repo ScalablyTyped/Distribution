@@ -1,12 +1,13 @@
 package typings.ionicCore.componentsMod.LocalJSX
 
 import typings.std.CustomEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonRouteRedirect extends js.Object {
+trait IonRouteRedirect extends StObject {
   
   /**
     * A redirect route, redirects "from" a URL "to" another URL. This property is that "from" URL. It needs to be an exact match of the navigated URL in order to apply.  The path specified in this value is always an absolute path, even if the initial `/` slash is not specified.
@@ -32,36 +33,24 @@ object IonRouteRedirect {
   }
   
   @scala.inline
-  implicit class IonRouteRedirectOps[Self <: IonRouteRedirect] (val x: Self) extends AnyVal {
+  implicit class IonRouteRedirectMutableBuilder[Self <: IonRouteRedirect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnIonRouteRedirectChanged(value: /* event */ CustomEvent[_] => Unit): Self = StObject.set(x, "onIonRouteRedirectChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnIonRouteRedirectChangedUndefined: Self = StObject.set(x, "onIonRouteRedirectChanged", js.undefined)
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnIonRouteRedirectChanged(value: /* event */ CustomEvent[_] => Unit): Self = this.set("onIonRouteRedirectChanged", js.Any.fromFunction1(value))
+    def setToNull: Self = StObject.set(x, "to", null)
     
     @scala.inline
-    def deleteOnIonRouteRedirectChanged: Self = this.set("onIonRouteRedirectChanged", js.undefined)
-    
-    @scala.inline
-    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("to", js.undefined)
-    
-    @scala.inline
-    def setToNull: Self = this.set("to", null)
+    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

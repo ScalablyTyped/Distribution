@@ -1,12 +1,13 @@
 package typings.hapiHapi.anon
 
 import typings.hapiIron.mod.SealOptionsSub
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Integrity extends js.Object {
+trait Integrity extends StObject {
   
   var integrity: js.UndefOr[SealOptionsSub] = js.native
   
@@ -21,27 +22,15 @@ object Integrity {
   }
   
   @scala.inline
-  implicit class IntegrityOps[Self <: Integrity] (val x: Self) extends AnyVal {
+  implicit class IntegrityMutableBuilder[Self <: Integrity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIntegrity(value: SealOptionsSub): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIntegrity(value: SealOptionsSub): Self = this.set("integrity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIntegrity: Self = this.set("integrity", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
   }
 }

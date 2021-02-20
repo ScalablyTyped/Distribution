@@ -1,12 +1,13 @@
 package typings.gatsbyCoreUtils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gatsby-core-utils/dist/get-gatsby-version", JSImport.Namespace)
-@js.native
-object getGatsbyVersionMod extends js.Object {
+object getGatsbyVersionMod {
   
+  @JSImport("gatsby-core-utils/dist/get-gatsby-version", "getGatsbyVersion")
+  @js.native
   def getGatsbyVersion(): String = js.native
 }

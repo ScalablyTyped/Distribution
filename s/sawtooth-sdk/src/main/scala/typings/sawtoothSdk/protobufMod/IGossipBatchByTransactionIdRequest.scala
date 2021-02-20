@@ -1,11 +1,12 @@
 package typings.sawtoothSdk.protobufMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGossipBatchByTransactionIdRequest extends js.Object {
+trait IGossipBatchByTransactionIdRequest extends StObject {
   
   /** GossipBatchByTransactionIdRequest ids */
   var ids: js.UndefOr[js.Array[String] | Null] = js.native
@@ -25,48 +26,36 @@ object IGossipBatchByTransactionIdRequest {
   }
   
   @scala.inline
-  implicit class IGossipBatchByTransactionIdRequestOps[Self <: IGossipBatchByTransactionIdRequest] (val x: Self) extends AnyVal {
+  implicit class IGossipBatchByTransactionIdRequestMutableBuilder[Self <: IGossipBatchByTransactionIdRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdsNull: Self = StObject.set(x, "ids", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
     @scala.inline
-    def setIdsVarargs(value: String*): Self = this.set("ids", js.Array(value :_*))
+    def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
     @scala.inline
-    def setIds(value: js.Array[String]): Self = this.set("ids", value.asInstanceOf[js.Any])
+    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIds: Self = this.set("ids", js.undefined)
+    def setNonceNull: Self = StObject.set(x, "nonce", null)
     
     @scala.inline
-    def setIdsNull: Self = this.set("ids", null)
+    def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     @scala.inline
-    def setNonce(value: String): Self = this.set("nonce", value.asInstanceOf[js.Any])
+    def setTimeToLive(value: Double): Self = StObject.set(x, "timeToLive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNonce: Self = this.set("nonce", js.undefined)
+    def setTimeToLiveNull: Self = StObject.set(x, "timeToLive", null)
     
     @scala.inline
-    def setNonceNull: Self = this.set("nonce", null)
-    
-    @scala.inline
-    def setTimeToLive(value: Double): Self = this.set("timeToLive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeToLive: Self = this.set("timeToLive", js.undefined)
-    
-    @scala.inline
-    def setTimeToLiveNull: Self = this.set("timeToLive", null)
+    def setTimeToLiveUndefined: Self = StObject.set(x, "timeToLive", js.undefined)
   }
 }

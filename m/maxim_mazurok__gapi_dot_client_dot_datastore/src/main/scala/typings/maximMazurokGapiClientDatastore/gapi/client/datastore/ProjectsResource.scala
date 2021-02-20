@@ -11,12 +11,13 @@ import typings.maximMazurokGapiClientDatastore.anon.Resource
 import typings.maximMazurokGapiClientDatastore.anon.UploadType
 import typings.maximMazurokGapiClientDatastore.anon.Uploadprotocol
 import typings.maximMazurokGapiClientDatastore.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectsResource extends js.Object {
+trait ProjectsResource extends StObject {
   
   def allocateIds(request: Alt, body: AllocateIdsRequest): Request[AllocateIdsResponse] = js.native
   /** Allocates IDs for the given keys, which is useful for referencing an entity before it is inserted. */

@@ -3,12 +3,13 @@ package typings.angular.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.angular.JQuery
 import typings.angular.anon.Instance
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITemplateLinkingFunctionOptions extends js.Object {
+trait ITemplateLinkingFunctionOptions extends StObject {
   
   var futureParentElement: js.UndefOr[JQuery] = js.native
   
@@ -25,36 +26,24 @@ object ITemplateLinkingFunctionOptions {
   }
   
   @scala.inline
-  implicit class ITemplateLinkingFunctionOptionsOps[Self <: ITemplateLinkingFunctionOptions] (val x: Self) extends AnyVal {
+  implicit class ITemplateLinkingFunctionOptionsMutableBuilder[Self <: ITemplateLinkingFunctionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFutureParentElement(value: JQuery): Self = StObject.set(x, "futureParentElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFutureParentElementUndefined: Self = StObject.set(x, "futureParentElement", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParentBoundTranscludeFn(value: ITranscludeFunction): Self = StObject.set(x, "parentBoundTranscludeFn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFutureParentElement(value: JQuery): Self = this.set("futureParentElement", value.asInstanceOf[js.Any])
+    def setParentBoundTranscludeFnUndefined: Self = StObject.set(x, "parentBoundTranscludeFn", js.undefined)
     
     @scala.inline
-    def deleteFutureParentElement: Self = this.set("futureParentElement", js.undefined)
+    def setTranscludeControllers(value: StringDictionary[Instance]): Self = StObject.set(x, "transcludeControllers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentBoundTranscludeFn(value: ITranscludeFunction): Self = this.set("parentBoundTranscludeFn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentBoundTranscludeFn: Self = this.set("parentBoundTranscludeFn", js.undefined)
-    
-    @scala.inline
-    def setTranscludeControllers(value: StringDictionary[Instance]): Self = this.set("transcludeControllers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranscludeControllers: Self = this.set("transcludeControllers", js.undefined)
+    def setTranscludeControllersUndefined: Self = StObject.set(x, "transcludeControllers", js.undefined)
   }
 }

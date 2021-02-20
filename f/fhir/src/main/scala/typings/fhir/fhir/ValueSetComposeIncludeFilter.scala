@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,45 +50,33 @@ object ValueSetComposeIncludeFilter {
   }
   
   @scala.inline
-  implicit class ValueSetComposeIncludeFilterOps[Self <: ValueSetComposeIncludeFilter] (val x: Self) extends AnyVal {
+  implicit class ValueSetComposeIncludeFilterMutableBuilder[Self <: ValueSetComposeIncludeFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOp(value: code): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProperty(value: code): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue(value: code): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOp(value: code): Self = this.set("op", value.asInstanceOf[js.Any])
+    def set_op(value: Element): Self = StObject.set(x, "_op", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperty(value: code): Self = this.set("property", value.asInstanceOf[js.Any])
+    def set_opUndefined: Self = StObject.set(x, "_op", js.undefined)
     
     @scala.inline
-    def setValue(value: code): Self = this.set("value", value.asInstanceOf[js.Any])
+    def set_property(value: Element): Self = StObject.set(x, "_property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_op(value: Element): Self = this.set("_op", value.asInstanceOf[js.Any])
+    def set_propertyUndefined: Self = StObject.set(x, "_property", js.undefined)
     
     @scala.inline
-    def delete_op: Self = this.set("_op", js.undefined)
+    def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_property(value: Element): Self = this.set("_property", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_property: Self = this.set("_property", js.undefined)
-    
-    @scala.inline
-    def set_value(value: Element): Self = this.set("_value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_value: Self = this.set("_value", js.undefined)
+    def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
   }
 }

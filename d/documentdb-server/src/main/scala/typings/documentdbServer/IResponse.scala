@@ -1,5 +1,6 @@
 package typings.documentdbServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Note: this object not available in pre-triggers
   */
 @js.native
-trait IResponse extends js.Object {
+trait IResponse extends StObject {
   
   def appendBody(value: String): Unit = js.native
   def appendBody(value: js.Object): Unit = js.native

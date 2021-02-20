@@ -1,11 +1,12 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextStyle extends js.Object {
+trait TextStyle extends StObject {
   
   var backgroundColor: js.UndefOr[InputColor] = js.native
   
@@ -50,141 +51,129 @@ object TextStyle {
   }
   
   @scala.inline
-  implicit class TextStyleOps[Self <: TextStyle] (val x: Self) extends AnyVal {
+  implicit class TextStyleMutableBuilder[Self <: TextStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: InputColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundColorVarargs(value: Double*): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
     
     @scala.inline
-    def setBackgroundColorVarargs(value: Double*): Self = this.set("backgroundColor", js.Array(value :_*))
+    def setColor(value: InputColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: InputColor): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
     
     @scala.inline
-    def setColorVarargs(value: Double*): Self = this.set("color", js.Array(value :_*))
+    def setDecoration(value: Double): Self = StObject.set(x, "decoration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: InputColor): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDecorationColor(value: InputColor): Self = StObject.set(x, "decorationColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setDecorationColorUndefined: Self = StObject.set(x, "decorationColor", js.undefined)
     
     @scala.inline
-    def setDecoration(value: Double): Self = this.set("decoration", value.asInstanceOf[js.Any])
+    def setDecorationColorVarargs(value: Double*): Self = StObject.set(x, "decorationColor", js.Array(value :_*))
     
     @scala.inline
-    def deleteDecoration: Self = this.set("decoration", js.undefined)
+    def setDecorationThickness(value: Double): Self = StObject.set(x, "decorationThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecorationColorVarargs(value: Double*): Self = this.set("decorationColor", js.Array(value :_*))
+    def setDecorationThicknessUndefined: Self = StObject.set(x, "decorationThickness", js.undefined)
     
     @scala.inline
-    def setDecorationColor(value: InputColor): Self = this.set("decorationColor", value.asInstanceOf[js.Any])
+    def setDecorationUndefined: Self = StObject.set(x, "decoration", js.undefined)
     
     @scala.inline
-    def deleteDecorationColor: Self = this.set("decorationColor", js.undefined)
+    def setDecrationStyle(value: DecorationStyle): Self = StObject.set(x, "decrationStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecorationThickness(value: Double): Self = this.set("decorationThickness", value.asInstanceOf[js.Any])
+    def setDecrationStyleUndefined: Self = StObject.set(x, "decrationStyle", js.undefined)
     
     @scala.inline
-    def deleteDecorationThickness: Self = this.set("decorationThickness", js.undefined)
+    def setFontFamilies(value: js.Array[String]): Self = StObject.set(x, "fontFamilies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecrationStyle(value: DecorationStyle): Self = this.set("decrationStyle", value.asInstanceOf[js.Any])
+    def setFontFamiliesUndefined: Self = StObject.set(x, "fontFamilies", js.undefined)
     
     @scala.inline
-    def deleteDecrationStyle: Self = this.set("decrationStyle", js.undefined)
+    def setFontFamiliesVarargs(value: String*): Self = StObject.set(x, "fontFamilies", js.Array(value :_*))
     
     @scala.inline
-    def setFontFamiliesVarargs(value: String*): Self = this.set("fontFamilies", js.Array(value :_*))
+    def setFontFeatures(value: js.Array[TextFontFeatures]): Self = StObject.set(x, "fontFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamilies(value: js.Array[String]): Self = this.set("fontFamilies", value.asInstanceOf[js.Any])
+    def setFontFeaturesUndefined: Self = StObject.set(x, "fontFeatures", js.undefined)
     
     @scala.inline
-    def deleteFontFamilies: Self = this.set("fontFamilies", js.undefined)
+    def setFontFeaturesVarargs(value: TextFontFeatures*): Self = StObject.set(x, "fontFeatures", js.Array(value :_*))
     
     @scala.inline
-    def setFontFeaturesVarargs(value: TextFontFeatures*): Self = this.set("fontFeatures", js.Array(value :_*))
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFeatures(value: js.Array[TextFontFeatures]): Self = this.set("fontFeatures", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteFontFeatures: Self = this.set("fontFeatures", js.undefined)
+    def setFontStyle(value: FontStyle): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setForegroundColor(value: InputColor): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStyle(value: FontStyle): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
     
     @scala.inline
-    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    def setForegroundColorVarargs(value: Double*): Self = StObject.set(x, "foregroundColor", js.Array(value :_*))
     
     @scala.inline
-    def setForegroundColorVarargs(value: Double*): Self = this.set("foregroundColor", js.Array(value :_*))
+    def setHeightMultiplier(value: Double): Self = StObject.set(x, "heightMultiplier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForegroundColor(value: InputColor): Self = this.set("foregroundColor", value.asInstanceOf[js.Any])
+    def setHeightMultiplierUndefined: Self = StObject.set(x, "heightMultiplier", js.undefined)
     
     @scala.inline
-    def deleteForegroundColor: Self = this.set("foregroundColor", js.undefined)
+    def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeightMultiplier(value: Double): Self = this.set("heightMultiplier", value.asInstanceOf[js.Any])
+    def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
     
     @scala.inline
-    def deleteHeightMultiplier: Self = this.set("heightMultiplier", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLetterSpacing(value: Double): Self = this.set("letterSpacing", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLetterSpacing: Self = this.set("letterSpacing", js.undefined)
+    def setShadows(value: js.Array[TextShadow]): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setShadowsVarargs(value: TextShadow*): Self = StObject.set(x, "shadows", js.Array(value :_*))
     
     @scala.inline
-    def setShadowsVarargs(value: TextShadow*): Self = this.set("shadows", js.Array(value :_*))
+    def setTextBaseline(value: TextBaseline): Self = StObject.set(x, "textBaseline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadows(value: js.Array[TextShadow]): Self = this.set("shadows", value.asInstanceOf[js.Any])
+    def setTextBaselineUndefined: Self = StObject.set(x, "textBaseline", js.undefined)
     
     @scala.inline
-    def deleteShadows: Self = this.set("shadows", js.undefined)
+    def setWordSpacing(value: Double): Self = StObject.set(x, "wordSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextBaseline(value: TextBaseline): Self = this.set("textBaseline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextBaseline: Self = this.set("textBaseline", js.undefined)
-    
-    @scala.inline
-    def setWordSpacing(value: Double): Self = this.set("wordSpacing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWordSpacing: Self = this.set("wordSpacing", js.undefined)
+    def setWordSpacingUndefined: Self = StObject.set(x, "wordSpacing", js.undefined)
   }
 }

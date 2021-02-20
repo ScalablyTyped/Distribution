@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChannelSummary extends js.Object {
+trait ChannelSummary extends StObject {
   
   /**
     * The name of the channel.
@@ -46,54 +47,42 @@ object ChannelSummary {
   }
   
   @scala.inline
-  implicit class ChannelSummaryOps[Self <: ChannelSummary] (val x: Self) extends AnyVal {
+  implicit class ChannelSummaryMutableBuilder[Self <: ChannelSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelName(value: ChannelName): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelNameUndefined: Self = StObject.set(x, "channelName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelStorage(value: ChannelStorageSummary): Self = StObject.set(x, "channelStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelName(value: ChannelName): Self = this.set("channelName", value.asInstanceOf[js.Any])
+    def setChannelStorageUndefined: Self = StObject.set(x, "channelStorage", js.undefined)
     
     @scala.inline
-    def deleteChannelName: Self = this.set("channelName", js.undefined)
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelStorage(value: ChannelStorageSummary): Self = this.set("channelStorage", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
     @scala.inline
-    def deleteChannelStorage: Self = this.set("channelStorage", js.undefined)
+    def setLastMessageArrivalTime(value: Timestamp): Self = StObject.set(x, "lastMessageArrivalTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    def setLastMessageArrivalTimeUndefined: Self = StObject.set(x, "lastMessageArrivalTime", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastMessageArrivalTime(value: Timestamp): Self = this.set("lastMessageArrivalTime", value.asInstanceOf[js.Any])
+    def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     
     @scala.inline
-    def deleteLastMessageArrivalTime: Self = this.set("lastMessageArrivalTime", js.undefined)
+    def setStatus(value: ChannelStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdateTime(value: Timestamp): Self = this.set("lastUpdateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastUpdateTime: Self = this.set("lastUpdateTime", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: ChannelStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

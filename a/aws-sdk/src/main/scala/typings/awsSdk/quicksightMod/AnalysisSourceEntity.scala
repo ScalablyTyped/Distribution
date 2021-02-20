@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnalysisSourceEntity extends js.Object {
+trait AnalysisSourceEntity extends StObject {
   
   /**
     * The source template for the source entity of the analysis.
@@ -21,24 +22,12 @@ object AnalysisSourceEntity {
   }
   
   @scala.inline
-  implicit class AnalysisSourceEntityOps[Self <: AnalysisSourceEntity] (val x: Self) extends AnyVal {
+  implicit class AnalysisSourceEntityMutableBuilder[Self <: AnalysisSourceEntity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSourceTemplate(value: AnalysisSourceTemplate): Self = StObject.set(x, "SourceTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSourceTemplate(value: AnalysisSourceTemplate): Self = this.set("SourceTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceTemplate: Self = this.set("SourceTemplate", js.undefined)
+    def setSourceTemplateUndefined: Self = StObject.set(x, "SourceTemplate", js.undefined)
   }
 }

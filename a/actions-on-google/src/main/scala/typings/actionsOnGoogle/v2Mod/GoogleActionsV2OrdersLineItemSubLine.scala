@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2OrdersLineItemSubLine extends js.Object {
+trait GoogleActionsV2OrdersLineItemSubLine extends StObject {
   
   /**
     * A generic line item (e.g. add-on).
@@ -26,30 +27,18 @@ object GoogleActionsV2OrdersLineItemSubLine {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2OrdersLineItemSubLineOps[Self <: GoogleActionsV2OrdersLineItemSubLine] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2OrdersLineItemSubLineMutableBuilder[Self <: GoogleActionsV2OrdersLineItemSubLine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLineItem(value: GoogleActionsV2OrdersLineItem): Self = StObject.set(x, "lineItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLineItemUndefined: Self = StObject.set(x, "lineItem", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineItem(value: GoogleActionsV2OrdersLineItem): Self = this.set("lineItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineItem: Self = this.set("lineItem", js.undefined)
-    
-    @scala.inline
-    def setNote(value: String): Self = this.set("note", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNote: Self = this.set("note", js.undefined)
+    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReservedCacheNodeMessage extends js.Object {
+trait ReservedCacheNodeMessage extends StObject {
   
   /**
     * Provides an identifier to allow retrieval of paginated results.
@@ -26,33 +27,21 @@ object ReservedCacheNodeMessage {
   }
   
   @scala.inline
-  implicit class ReservedCacheNodeMessageOps[Self <: ReservedCacheNodeMessage] (val x: Self) extends AnyVal {
+  implicit class ReservedCacheNodeMessageMutableBuilder[Self <: ReservedCacheNodeMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReservedCacheNodes(value: ReservedCacheNodeList): Self = StObject.set(x, "ReservedCacheNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setReservedCacheNodesUndefined: Self = StObject.set(x, "ReservedCacheNodes", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setReservedCacheNodesVarargs(value: ReservedCacheNode*): Self = this.set("ReservedCacheNodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setReservedCacheNodes(value: ReservedCacheNodeList): Self = this.set("ReservedCacheNodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservedCacheNodes: Self = this.set("ReservedCacheNodes", js.undefined)
+    def setReservedCacheNodesVarargs(value: ReservedCacheNode*): Self = StObject.set(x, "ReservedCacheNodes", js.Array(value :_*))
   }
 }

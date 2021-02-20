@@ -1,11 +1,12 @@
 package typings.websocket.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IConfig extends js.Object {
+trait IConfig extends StObject {
   
   /**
     * If true, fragmented messages will be automatically assembled and the full
@@ -59,54 +60,42 @@ object IConfig {
   }
   
   @scala.inline
-  implicit class IConfigOps[Self <: IConfig] (val x: Self) extends AnyVal {
+  implicit class IConfigMutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssembleFragments(value: Boolean): Self = StObject.set(x, "assembleFragments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssembleFragmentsUndefined: Self = StObject.set(x, "assembleFragments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloseTimeout(value: Double): Self = StObject.set(x, "closeTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssembleFragments(value: Boolean): Self = this.set("assembleFragments", value.asInstanceOf[js.Any])
+    def setCloseTimeoutUndefined: Self = StObject.set(x, "closeTimeout", js.undefined)
     
     @scala.inline
-    def deleteAssembleFragments: Self = this.set("assembleFragments", js.undefined)
+    def setFragmentOutgoingMessages(value: Boolean): Self = StObject.set(x, "fragmentOutgoingMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseTimeout(value: Double): Self = this.set("closeTimeout", value.asInstanceOf[js.Any])
+    def setFragmentOutgoingMessagesUndefined: Self = StObject.set(x, "fragmentOutgoingMessages", js.undefined)
     
     @scala.inline
-    def deleteCloseTimeout: Self = this.set("closeTimeout", js.undefined)
+    def setFragmentationThreshold(value: Double): Self = StObject.set(x, "fragmentationThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragmentOutgoingMessages(value: Boolean): Self = this.set("fragmentOutgoingMessages", value.asInstanceOf[js.Any])
+    def setFragmentationThresholdUndefined: Self = StObject.set(x, "fragmentationThreshold", js.undefined)
     
     @scala.inline
-    def deleteFragmentOutgoingMessages: Self = this.set("fragmentOutgoingMessages", js.undefined)
+    def setMaxReceivedFrameSize(value: Double): Self = StObject.set(x, "maxReceivedFrameSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragmentationThreshold(value: Double): Self = this.set("fragmentationThreshold", value.asInstanceOf[js.Any])
+    def setMaxReceivedFrameSizeUndefined: Self = StObject.set(x, "maxReceivedFrameSize", js.undefined)
     
     @scala.inline
-    def deleteFragmentationThreshold: Self = this.set("fragmentationThreshold", js.undefined)
+    def setMaxReceivedMessageSize(value: Double): Self = StObject.set(x, "maxReceivedMessageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxReceivedFrameSize(value: Double): Self = this.set("maxReceivedFrameSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxReceivedFrameSize: Self = this.set("maxReceivedFrameSize", js.undefined)
-    
-    @scala.inline
-    def setMaxReceivedMessageSize(value: Double): Self = this.set("maxReceivedMessageSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxReceivedMessageSize: Self = this.set("maxReceivedMessageSize", js.undefined)
+    def setMaxReceivedMessageSizeUndefined: Self = StObject.set(x, "maxReceivedMessageSize", js.undefined)
   }
 }

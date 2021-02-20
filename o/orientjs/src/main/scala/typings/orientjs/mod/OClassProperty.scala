@@ -3,13 +3,14 @@ package typings.orientjs.mod
 import typings.orientjs.anon.Fields
 import typings.orientjs.anon.Force
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("orientjs", "OClassProperty")
 @js.native
-class OClassProperty () extends js.Object {
+class OClassProperty () extends StObject {
   
   def alter(name: String): js.Promise[OClass] = js.native
   def alter(name: String, setting: js.Any): js.Promise[OClass] = js.native

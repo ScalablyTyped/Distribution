@@ -1,11 +1,12 @@
 package typings.figma.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VectorNetwork extends js.Object {
+trait VectorNetwork extends StObject {
   
   val regions: js.UndefOr[js.Array[VectorRegion]] = js.native
   
@@ -22,39 +23,27 @@ object VectorNetwork {
   }
   
   @scala.inline
-  implicit class VectorNetworkOps[Self <: VectorNetwork] (val x: Self) extends AnyVal {
+  implicit class VectorNetworkMutableBuilder[Self <: VectorNetwork] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegions(value: js.Array[VectorRegion]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegionsVarargs(value: VectorRegion*): Self = StObject.set(x, "regions", js.Array(value :_*))
     
     @scala.inline
-    def setSegmentsVarargs(value: VectorSegment*): Self = this.set("segments", js.Array(value :_*))
+    def setSegments(value: js.Array[VectorSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegments(value: js.Array[VectorSegment]): Self = this.set("segments", value.asInstanceOf[js.Any])
+    def setSegmentsVarargs(value: VectorSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
     
     @scala.inline
-    def setVerticesVarargs(value: VectorVertex*): Self = this.set("vertices", js.Array(value :_*))
+    def setVertices(value: js.Array[VectorVertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVertices(value: js.Array[VectorVertex]): Self = this.set("vertices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegionsVarargs(value: VectorRegion*): Self = this.set("regions", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegions(value: js.Array[VectorRegion]): Self = this.set("regions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegions: Self = this.set("regions", js.undefined)
+    def setVerticesVarargs(value: VectorVertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
   }
 }

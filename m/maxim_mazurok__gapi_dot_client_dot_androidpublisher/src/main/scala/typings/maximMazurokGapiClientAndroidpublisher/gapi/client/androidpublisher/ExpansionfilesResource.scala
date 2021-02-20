@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientAndroidpublisher.anon.EditId
 import typings.maximMazurokGapiClientAndroidpublisher.anon.ExpansionFileType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExpansionfilesResource extends js.Object {
+trait ExpansionfilesResource extends StObject {
   
   /** Fetches the expansion file configuration for the specified APK. */
   def get(): Request[ExpansionFile] = js.native

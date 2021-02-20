@@ -4,12 +4,13 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.array
 import typings.devtoolsProtocol.devtoolsProtocolStrings.date
 import typings.devtoolsProtocol.devtoolsProtocolStrings.number
 import typings.devtoolsProtocol.devtoolsProtocolStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Key extends js.Object {
+trait Key extends StObject {
   
   /**
     * Array value.
@@ -46,48 +47,36 @@ object Key {
   }
   
   @scala.inline
-  implicit class KeyOps[Self <: Key] (val x: Self) extends AnyVal {
+  implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArray(value: js.Array[Key]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArrayVarargs(value: Key*): Self = StObject.set(x, "array", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: number | string | date | array): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayVarargs(value: Key*): Self = this.set("array", js.Array(value :_*))
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def setArray(value: js.Array[Key]): Self = this.set("array", value.asInstanceOf[js.Any])
+    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArray: Self = this.set("array", js.undefined)
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
     @scala.inline
-    def setDate(value: Double): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
     
     @scala.inline
-    def setNumber(value: Double): Self = this.set("number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
-    
-    @scala.inline
-    def setString(value: String): Self = this.set("string", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteString: Self = this.set("string", js.undefined)
+    def setType(value: number | string | date | array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

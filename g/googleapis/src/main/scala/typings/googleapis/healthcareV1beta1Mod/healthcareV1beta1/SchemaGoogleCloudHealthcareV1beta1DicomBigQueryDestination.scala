@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The BigQuery table where the output should be written.
   */
 @js.native
-trait SchemaGoogleCloudHealthcareV1beta1DicomBigQueryDestination extends js.Object {
+trait SchemaGoogleCloudHealthcareV1beta1DicomBigQueryDestination extends StObject {
   
   /**
     * If the destination table already exists and this flag is `TRUE`, the
@@ -33,30 +34,18 @@ object SchemaGoogleCloudHealthcareV1beta1DicomBigQueryDestination {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudHealthcareV1beta1DicomBigQueryDestinationOps[Self <: SchemaGoogleCloudHealthcareV1beta1DicomBigQueryDestination] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudHealthcareV1beta1DicomBigQueryDestinationMutableBuilder[Self <: SchemaGoogleCloudHealthcareV1beta1DicomBigQueryDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTableUri(value: String): Self = StObject.set(x, "tableUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForce: Self = this.set("force", js.undefined)
-    
-    @scala.inline
-    def setTableUri(value: String): Self = this.set("tableUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableUri: Self = this.set("tableUri", js.undefined)
+    def setTableUriUndefined: Self = StObject.set(x, "tableUri", js.undefined)
   }
 }

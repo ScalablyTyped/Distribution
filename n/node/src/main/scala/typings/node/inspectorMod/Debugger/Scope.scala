@@ -1,6 +1,7 @@
 package typings.node.inspectorMod.Debugger
 
 import typings.node.inspectorMod.Runtime.RemoteObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Scope description.
   */
 @js.native
-trait Scope extends js.Object {
+trait Scope extends StObject {
   
   /**
     * Location in the source code where scope ends
@@ -44,42 +45,30 @@ object Scope {
   }
   
   @scala.inline
-  implicit class ScopeOps[Self <: Scope] (val x: Self) extends AnyVal {
+  implicit class ScopeMutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndLocation(value: Location): Self = StObject.set(x, "endLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndLocationUndefined: Self = StObject.set(x, "endLocation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: RemoteObject): Self = this.set("object", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setObject(value: RemoteObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndLocation(value: Location): Self = this.set("endLocation", value.asInstanceOf[js.Any])
+    def setStartLocation(value: Location): Self = StObject.set(x, "startLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndLocation: Self = this.set("endLocation", js.undefined)
+    def setStartLocationUndefined: Self = StObject.set(x, "startLocation", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setStartLocation(value: Location): Self = this.set("startLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartLocation: Self = this.set("startLocation", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

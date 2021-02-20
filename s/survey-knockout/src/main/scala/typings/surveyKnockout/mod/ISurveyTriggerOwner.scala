@@ -1,11 +1,12 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISurveyTriggerOwner extends js.Object {
+trait ISurveyTriggerOwner extends StObject {
   
   def copyTriggerValue(name: String, fromName: String): js.Any = js.native
   
@@ -32,33 +33,21 @@ object ISurveyTriggerOwner {
   }
   
   @scala.inline
-  implicit class ISurveyTriggerOwnerOps[Self <: ISurveyTriggerOwner] (val x: Self) extends AnyVal {
+  implicit class ISurveyTriggerOwnerMutableBuilder[Self <: ISurveyTriggerOwner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyTriggerValue(value: (String, String) => js.Any): Self = StObject.set(x, "copyTriggerValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFocusQuestion(value: String => Boolean): Self = StObject.set(x, "focusQuestion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetObjects(value: (js.Array[String], js.Array[String]) => js.Array[_]): Self = StObject.set(x, "getObjects", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCopyTriggerValue(value: (String, String) => js.Any): Self = this.set("copyTriggerValue", js.Any.fromFunction2(value))
+    def setSetCompleted(value: () => js.Any): Self = StObject.set(x, "setCompleted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFocusQuestion(value: String => Boolean): Self = this.set("focusQuestion", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetObjects(value: (js.Array[String], js.Array[String]) => js.Array[_]): Self = this.set("getObjects", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetCompleted(value: () => js.Any): Self = this.set("setCompleted", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetTriggerValue(value: (String, js.Any, Boolean) => js.Any): Self = this.set("setTriggerValue", js.Any.fromFunction3(value))
+    def setSetTriggerValue(value: (String, js.Any, Boolean) => js.Any): Self = StObject.set(x, "setTriggerValue", js.Any.fromFunction3(value))
   }
 }

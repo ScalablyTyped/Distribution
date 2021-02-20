@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemporalLayerProperties extends js.Object {
+trait TemporalLayerProperties extends StObject {
   
   /**
     * The layer's time extent.
@@ -44,42 +45,30 @@ object TemporalLayerProperties {
   }
   
   @scala.inline
-  implicit class TemporalLayerPropertiesOps[Self <: TemporalLayerProperties] (val x: Self) extends AnyVal {
+  implicit class TemporalLayerPropertiesMutableBuilder[Self <: TemporalLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeInfo(value: TimeInfoProperties): Self = StObject.set(x, "timeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeExtent(value: TimeExtentProperties): Self = this.set("timeExtent", value.asInstanceOf[js.Any])
+    def setTimeInfoUndefined: Self = StObject.set(x, "timeInfo", js.undefined)
     
     @scala.inline
-    def deleteTimeExtent: Self = this.set("timeExtent", js.undefined)
+    def setTimeOffset(value: TimeIntervalProperties): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeInfo(value: TimeInfoProperties): Self = this.set("timeInfo", value.asInstanceOf[js.Any])
+    def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
     
     @scala.inline
-    def deleteTimeInfo: Self = this.set("timeInfo", js.undefined)
+    def setUseViewTime(value: Boolean): Self = StObject.set(x, "useViewTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeOffset(value: TimeIntervalProperties): Self = this.set("timeOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeOffset: Self = this.set("timeOffset", js.undefined)
-    
-    @scala.inline
-    def setUseViewTime(value: Boolean): Self = this.set("useViewTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseViewTime: Self = this.set("useViewTime", js.undefined)
+    def setUseViewTimeUndefined: Self = StObject.set(x, "useViewTime", js.undefined)
   }
 }

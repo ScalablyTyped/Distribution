@@ -2,12 +2,13 @@ package typings.waterline.mod
 
 import typings.std.Date
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttributeValidations extends js.Object {
+trait AttributeValidations extends StObject {
   
   var custom: js.UndefOr[AttributeValidation[js.Function]] = js.native
   
@@ -60,276 +61,264 @@ object AttributeValidations {
   }
   
   @scala.inline
-  implicit class AttributeValidationsOps[Self <: AttributeValidations] (val x: Self) extends AnyVal {
+  implicit class AttributeValidationsMutableBuilder[Self <: AttributeValidations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustom(value: AttributeValidation[js.Function]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomFunction0(value: () => js.Function): Self = StObject.set(x, "custom", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomFunction1(value: /* cb */ js.Function1[js.Function, js.Any] => Unit): Self = StObject.set(x, "custom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCustomFunction1(value: /* cb */ js.Function1[js.Function, js.Any] => Unit): Self = this.set("custom", js.Any.fromFunction1(value))
+    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     @scala.inline
-    def setCustomFunction0(value: () => js.Function): Self = this.set("custom", js.Any.fromFunction0(value))
+    def setIsAfter(value: AttributeValidation[Date]): Self = StObject.set(x, "isAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom(value: AttributeValidation[js.Function]): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setIsAfterFunction0(value: () => Date): Self = StObject.set(x, "isAfter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteCustom: Self = this.set("custom", js.undefined)
+    def setIsAfterFunction1(value: /* cb */ js.Function1[Date, js.Any] => Unit): Self = StObject.set(x, "isAfter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsAfterFunction1(value: /* cb */ js.Function1[Date, js.Any] => Unit): Self = this.set("isAfter", js.Any.fromFunction1(value))
+    def setIsAfterUndefined: Self = StObject.set(x, "isAfter", js.undefined)
     
     @scala.inline
-    def setIsAfterFunction0(value: () => Date): Self = this.set("isAfter", js.Any.fromFunction0(value))
+    def setIsBefore(value: AttributeValidation[Date]): Self = StObject.set(x, "isBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAfter(value: AttributeValidation[Date]): Self = this.set("isAfter", value.asInstanceOf[js.Any])
+    def setIsBeforeFunction0(value: () => Date): Self = StObject.set(x, "isBefore", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsAfter: Self = this.set("isAfter", js.undefined)
+    def setIsBeforeFunction1(value: /* cb */ js.Function1[Date, js.Any] => Unit): Self = StObject.set(x, "isBefore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsBeforeFunction1(value: /* cb */ js.Function1[Date, js.Any] => Unit): Self = this.set("isBefore", js.Any.fromFunction1(value))
+    def setIsBeforeUndefined: Self = StObject.set(x, "isBefore", js.undefined)
     
     @scala.inline
-    def setIsBeforeFunction0(value: () => Date): Self = this.set("isBefore", js.Any.fromFunction0(value))
+    def setIsBoolean(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isBoolean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBefore(value: AttributeValidation[Date]): Self = this.set("isBefore", value.asInstanceOf[js.Any])
+    def setIsBooleanFunction0(value: () => Boolean): Self = StObject.set(x, "isBoolean", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsBefore: Self = this.set("isBefore", js.undefined)
+    def setIsBooleanFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isBoolean", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsBooleanFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = this.set("isBoolean", js.Any.fromFunction1(value))
+    def setIsBooleanUndefined: Self = StObject.set(x, "isBoolean", js.undefined)
     
     @scala.inline
-    def setIsBooleanFunction0(value: () => Boolean): Self = this.set("isBoolean", js.Any.fromFunction0(value))
+    def setIsCreditCard(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isCreditCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBoolean(value: AttributeValidation[Boolean]): Self = this.set("isBoolean", value.asInstanceOf[js.Any])
+    def setIsCreditCardFunction0(value: () => Boolean): Self = StObject.set(x, "isCreditCard", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsBoolean: Self = this.set("isBoolean", js.undefined)
+    def setIsCreditCardFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isCreditCard", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsCreditCardFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = this.set("isCreditCard", js.Any.fromFunction1(value))
+    def setIsCreditCardUndefined: Self = StObject.set(x, "isCreditCard", js.undefined)
     
     @scala.inline
-    def setIsCreditCardFunction0(value: () => Boolean): Self = this.set("isCreditCard", js.Any.fromFunction0(value))
+    def setIsEmail(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCreditCard(value: AttributeValidation[Boolean]): Self = this.set("isCreditCard", value.asInstanceOf[js.Any])
+    def setIsEmailFunction0(value: () => Boolean): Self = StObject.set(x, "isEmail", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsCreditCard: Self = this.set("isCreditCard", js.undefined)
+    def setIsEmailFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isEmail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsEmailFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = this.set("isEmail", js.Any.fromFunction1(value))
+    def setIsEmailUndefined: Self = StObject.set(x, "isEmail", js.undefined)
     
     @scala.inline
-    def setIsEmailFunction0(value: () => Boolean): Self = this.set("isEmail", js.Any.fromFunction0(value))
+    def setIsHexColor(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isHexColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEmail(value: AttributeValidation[Boolean]): Self = this.set("isEmail", value.asInstanceOf[js.Any])
+    def setIsHexColorFunction0(value: () => Boolean): Self = StObject.set(x, "isHexColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsEmail: Self = this.set("isEmail", js.undefined)
+    def setIsHexColorFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isHexColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsHexColorFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = this.set("isHexColor", js.Any.fromFunction1(value))
+    def setIsHexColorUndefined: Self = StObject.set(x, "isHexColor", js.undefined)
     
     @scala.inline
-    def setIsHexColorFunction0(value: () => Boolean): Self = this.set("isHexColor", js.Any.fromFunction0(value))
+    def setIsIP(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isIP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHexColor(value: AttributeValidation[Boolean]): Self = this.set("isHexColor", value.asInstanceOf[js.Any])
+    def setIsIPFunction0(value: () => Boolean): Self = StObject.set(x, "isIP", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsHexColor: Self = this.set("isHexColor", js.undefined)
+    def setIsIPFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isIP", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsIPFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = this.set("isIP", js.Any.fromFunction1(value))
+    def setIsIPUndefined: Self = StObject.set(x, "isIP", js.undefined)
     
     @scala.inline
-    def setIsIPFunction0(value: () => Boolean): Self = this.set("isIP", js.Any.fromFunction0(value))
+    def setIsIn(value: AttributeValidation[js.Array[String]]): Self = StObject.set(x, "isIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIP(value: AttributeValidation[Boolean]): Self = this.set("isIP", value.asInstanceOf[js.Any])
+    def setIsInFunction0(value: () => js.Array[String]): Self = StObject.set(x, "isIn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsIP: Self = this.set("isIP", js.undefined)
+    def setIsInFunction1(value: /* cb */ js.Function1[js.Array[String], js.Any] => Unit): Self = StObject.set(x, "isIn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsInVarargs(value: String*): Self = this.set("isIn", js.Array(value :_*))
+    def setIsInUndefined: Self = StObject.set(x, "isIn", js.undefined)
     
     @scala.inline
-    def setIsInFunction1(value: /* cb */ js.Function1[js.Array[String], js.Any] => Unit): Self = this.set("isIn", js.Any.fromFunction1(value))
+    def setIsInVarargs(value: String*): Self = StObject.set(x, "isIn", js.Array(value :_*))
     
     @scala.inline
-    def setIsInFunction0(value: () => js.Array[String]): Self = this.set("isIn", js.Any.fromFunction0(value))
+    def setIsInteger(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isInteger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIn(value: AttributeValidation[js.Array[String]]): Self = this.set("isIn", value.asInstanceOf[js.Any])
+    def setIsIntegerFunction0(value: () => Boolean): Self = StObject.set(x, "isInteger", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsIn: Self = this.set("isIn", js.undefined)
+    def setIsIntegerFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isInteger", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsIntegerFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = this.set("isInteger", js.Any.fromFunction1(value))
+    def setIsIntegerUndefined: Self = StObject.set(x, "isInteger", js.undefined)
     
     @scala.inline
-    def setIsIntegerFunction0(value: () => Boolean): Self = this.set("isInteger", js.Any.fromFunction0(value))
+    def setIsNotEmptyString(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isNotEmptyString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInteger(value: AttributeValidation[Boolean]): Self = this.set("isInteger", value.asInstanceOf[js.Any])
+    def setIsNotEmptyStringFunction0(value: () => Boolean): Self = StObject.set(x, "isNotEmptyString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsInteger: Self = this.set("isInteger", js.undefined)
+    def setIsNotEmptyStringFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isNotEmptyString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsNotEmptyStringFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = this.set("isNotEmptyString", js.Any.fromFunction1(value))
+    def setIsNotEmptyStringUndefined: Self = StObject.set(x, "isNotEmptyString", js.undefined)
     
     @scala.inline
-    def setIsNotEmptyStringFunction0(value: () => Boolean): Self = this.set("isNotEmptyString", js.Any.fromFunction0(value))
+    def setIsNotIn(value: AttributeValidation[js.Array[String]]): Self = StObject.set(x, "isNotIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNotEmptyString(value: AttributeValidation[Boolean]): Self = this.set("isNotEmptyString", value.asInstanceOf[js.Any])
+    def setIsNotInFunction0(value: () => js.Array[String]): Self = StObject.set(x, "isNotIn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsNotEmptyString: Self = this.set("isNotEmptyString", js.undefined)
+    def setIsNotInFunction1(value: /* cb */ js.Function1[js.Array[String], js.Any] => Unit): Self = StObject.set(x, "isNotIn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsNotInVarargs(value: String*): Self = this.set("isNotIn", js.Array(value :_*))
+    def setIsNotInUndefined: Self = StObject.set(x, "isNotIn", js.undefined)
     
     @scala.inline
-    def setIsNotInFunction1(value: /* cb */ js.Function1[js.Array[String], js.Any] => Unit): Self = this.set("isNotIn", js.Any.fromFunction1(value))
+    def setIsNotInVarargs(value: String*): Self = StObject.set(x, "isNotIn", js.Array(value :_*))
     
     @scala.inline
-    def setIsNotInFunction0(value: () => js.Array[String]): Self = this.set("isNotIn", js.Any.fromFunction0(value))
+    def setIsNumber(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNotIn(value: AttributeValidation[js.Array[String]]): Self = this.set("isNotIn", value.asInstanceOf[js.Any])
+    def setIsNumberFunction0(value: () => Boolean): Self = StObject.set(x, "isNumber", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsNotIn: Self = this.set("isNotIn", js.undefined)
+    def setIsNumberFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isNumber", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsNumberFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = this.set("isNumber", js.Any.fromFunction1(value))
+    def setIsNumberUndefined: Self = StObject.set(x, "isNumber", js.undefined)
     
     @scala.inline
-    def setIsNumberFunction0(value: () => Boolean): Self = this.set("isNumber", js.Any.fromFunction0(value))
+    def setIsString(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNumber(value: AttributeValidation[Boolean]): Self = this.set("isNumber", value.asInstanceOf[js.Any])
+    def setIsStringFunction0(value: () => Boolean): Self = StObject.set(x, "isString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsNumber: Self = this.set("isNumber", js.undefined)
+    def setIsStringFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsStringFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = this.set("isString", js.Any.fromFunction1(value))
+    def setIsStringUndefined: Self = StObject.set(x, "isString", js.undefined)
     
     @scala.inline
-    def setIsStringFunction0(value: () => Boolean): Self = this.set("isString", js.Any.fromFunction0(value))
+    def setIsURL(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsString(value: AttributeValidation[Boolean]): Self = this.set("isString", value.asInstanceOf[js.Any])
+    def setIsURLFunction0(value: () => Boolean): Self = StObject.set(x, "isURL", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsString: Self = this.set("isString", js.undefined)
+    def setIsURLFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isURL", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsURLFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = this.set("isURL", js.Any.fromFunction1(value))
+    def setIsURLUndefined: Self = StObject.set(x, "isURL", js.undefined)
     
     @scala.inline
-    def setIsURLFunction0(value: () => Boolean): Self = this.set("isURL", js.Any.fromFunction0(value))
+    def setIsUUID(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isUUID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsURL(value: AttributeValidation[Boolean]): Self = this.set("isURL", value.asInstanceOf[js.Any])
+    def setIsUUIDFunction0(value: () => Boolean): Self = StObject.set(x, "isUUID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsURL: Self = this.set("isURL", js.undefined)
+    def setIsUUIDFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = StObject.set(x, "isUUID", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsUUIDFunction1(value: /* cb */ js.Function1[Boolean, js.Any] => Unit): Self = this.set("isUUID", js.Any.fromFunction1(value))
+    def setIsUUIDUndefined: Self = StObject.set(x, "isUUID", js.undefined)
     
     @scala.inline
-    def setIsUUIDFunction0(value: () => Boolean): Self = this.set("isUUID", js.Any.fromFunction0(value))
+    def setMax(value: AttributeValidation[Double]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsUUID(value: AttributeValidation[Boolean]): Self = this.set("isUUID", value.asInstanceOf[js.Any])
+    def setMaxFunction0(value: () => Double): Self = StObject.set(x, "max", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsUUID: Self = this.set("isUUID", js.undefined)
+    def setMaxFunction1(value: /* cb */ js.Function1[Double, js.Any] => Unit): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaxFunction1(value: /* cb */ js.Function1[Double, js.Any] => Unit): Self = this.set("max", js.Any.fromFunction1(value))
+    def setMaxLength(value: AttributeValidation[Double]): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFunction0(value: () => Double): Self = this.set("max", js.Any.fromFunction0(value))
+    def setMaxLengthFunction0(value: () => Double): Self = StObject.set(x, "maxLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMax(value: AttributeValidation[Double]): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMaxLengthFunction1(value: /* cb */ js.Function1[Double, js.Any] => Unit): Self = StObject.set(x, "maxLength", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
     @scala.inline
-    def setMaxLengthFunction1(value: /* cb */ js.Function1[Double, js.Any] => Unit): Self = this.set("maxLength", js.Any.fromFunction1(value))
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def setMaxLengthFunction0(value: () => Double): Self = this.set("maxLength", js.Any.fromFunction0(value))
+    def setMin(value: AttributeValidation[Double]): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLength(value: AttributeValidation[Double]): Self = this.set("maxLength", value.asInstanceOf[js.Any])
+    def setMinFunction0(value: () => Double): Self = StObject.set(x, "min", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
+    def setMinFunction1(value: /* cb */ js.Function1[Double, js.Any] => Unit): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinFunction1(value: /* cb */ js.Function1[Double, js.Any] => Unit): Self = this.set("min", js.Any.fromFunction1(value))
+    def setMinLength(value: AttributeValidation[Double]): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinFunction0(value: () => Double): Self = this.set("min", js.Any.fromFunction0(value))
+    def setMinLengthFunction0(value: () => Double): Self = StObject.set(x, "minLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMin(value: AttributeValidation[Double]): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setMinLengthFunction1(value: /* cb */ js.Function1[Double, js.Any] => Unit): Self = StObject.set(x, "minLength", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
     
     @scala.inline
-    def setMinLengthFunction1(value: /* cb */ js.Function1[Double, js.Any] => Unit): Self = this.set("minLength", js.Any.fromFunction1(value))
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def setMinLengthFunction0(value: () => Double): Self = this.set("minLength", js.Any.fromFunction0(value))
+    def setRegex(value: AttributeValidation[RegExp]): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinLength(value: AttributeValidation[Double]): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    def setRegexFunction0(value: () => RegExp): Self = StObject.set(x, "regex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteMinLength: Self = this.set("minLength", js.undefined)
+    def setRegexFunction1(value: /* cb */ js.Function1[RegExp, js.Any] => Unit): Self = StObject.set(x, "regex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegexFunction1(value: /* cb */ js.Function1[RegExp, js.Any] => Unit): Self = this.set("regex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRegexFunction0(value: () => RegExp): Self = this.set("regex", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRegex(value: AttributeValidation[RegExp]): Self = this.set("regex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegex: Self = this.set("regex", js.undefined)
+    def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
   }
 }

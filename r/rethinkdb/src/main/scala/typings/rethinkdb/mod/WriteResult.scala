@@ -1,12 +1,13 @@
 package typings.rethinkdb.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WriteResult extends js.Object {
+trait WriteResult extends StObject {
   
   var deleted: Double = js.native
   
@@ -42,45 +43,33 @@ object WriteResult {
   }
   
   @scala.inline
-  implicit class WriteResultOps[Self <: WriteResult] (val x: Self) extends AnyVal {
+  implicit class WriteResultMutableBuilder[Self <: WriteResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleted(value: Double): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrors(value: Double): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirst_error(value: Error): Self = StObject.set(x, "first_error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Double): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setGenerated_keys(value: js.Array[String]): Self = StObject.set(x, "generated_keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: Double): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setGenerated_keysVarargs(value: String*): Self = StObject.set(x, "generated_keys", js.Array(value :_*))
     
     @scala.inline
-    def setFirst_error(value: Error): Self = this.set("first_error", value.asInstanceOf[js.Any])
+    def setInserted(value: Double): Self = StObject.set(x, "inserted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerated_keysVarargs(value: String*): Self = this.set("generated_keys", js.Array(value :_*))
+    def setReplaced(value: Double): Self = StObject.set(x, "replaced", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerated_keys(value: js.Array[String]): Self = this.set("generated_keys", value.asInstanceOf[js.Any])
+    def setSkipped(value: Double): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInserted(value: Double): Self = this.set("inserted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReplaced(value: Double): Self = this.set("replaced", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkipped(value: Double): Self = this.set("skipped", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnchanged(value: Double): Self = this.set("unchanged", value.asInstanceOf[js.Any])
+    def setUnchanged(value: Double): Self = StObject.set(x, "unchanged", value.asInstanceOf[js.Any])
   }
 }

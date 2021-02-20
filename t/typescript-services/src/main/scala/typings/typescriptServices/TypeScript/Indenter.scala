@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Indenter extends js.Object {
+trait Indenter extends StObject {
   
   def decreaseIndent(): Unit = js.native
   
@@ -24,30 +25,18 @@ object Indenter {
   }
   
   @scala.inline
-  implicit class IndenterOps[Self <: Indenter] (val x: Self) extends AnyVal {
+  implicit class IndenterMutableBuilder[Self <: Indenter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecreaseIndent(value: () => Unit): Self = StObject.set(x, "decreaseIndent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetIndent(value: () => String): Self = StObject.set(x, "getIndent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncreaseIndent(value: () => Unit): Self = StObject.set(x, "increaseIndent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDecreaseIndent(value: () => Unit): Self = this.set("decreaseIndent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetIndent(value: () => String): Self = this.set("getIndent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIncreaseIndent(value: () => Unit): Self = this.set("increaseIndent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIndentAmt(value: Double): Self = this.set("indentAmt", value.asInstanceOf[js.Any])
+    def setIndentAmt(value: Double): Self = StObject.set(x, "indentAmt", value.asInstanceOf[js.Any])
   }
 }

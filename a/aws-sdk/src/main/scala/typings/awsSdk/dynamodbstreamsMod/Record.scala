@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbstreamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Record extends js.Object {
+trait Record extends StObject {
   
   /**
     * The region in which the GetRecords request was received.
@@ -51,60 +52,48 @@ object Record {
   }
   
   @scala.inline
-  implicit class RecordOps[Self <: Record] (val x: Self) extends AnyVal {
+  implicit class RecordMutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsRegionUndefined: Self = StObject.set(x, "awsRegion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDynamodb(value: StreamRecord): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsRegion(value: String): Self = this.set("awsRegion", value.asInstanceOf[js.Any])
+    def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
     
     @scala.inline
-    def deleteAwsRegion: Self = this.set("awsRegion", js.undefined)
+    def setEventID(value: String): Self = StObject.set(x, "eventID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamodb(value: StreamRecord): Self = this.set("dynamodb", value.asInstanceOf[js.Any])
+    def setEventIDUndefined: Self = StObject.set(x, "eventID", js.undefined)
     
     @scala.inline
-    def deleteDynamodb: Self = this.set("dynamodb", js.undefined)
+    def setEventName(value: OperationType): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventID(value: String): Self = this.set("eventID", value.asInstanceOf[js.Any])
+    def setEventNameUndefined: Self = StObject.set(x, "eventName", js.undefined)
     
     @scala.inline
-    def deleteEventID: Self = this.set("eventID", js.undefined)
+    def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventName(value: OperationType): Self = this.set("eventName", value.asInstanceOf[js.Any])
+    def setEventSourceUndefined: Self = StObject.set(x, "eventSource", js.undefined)
     
     @scala.inline
-    def deleteEventName: Self = this.set("eventName", js.undefined)
+    def setEventVersion(value: String): Self = StObject.set(x, "eventVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventSource(value: String): Self = this.set("eventSource", value.asInstanceOf[js.Any])
+    def setEventVersionUndefined: Self = StObject.set(x, "eventVersion", js.undefined)
     
     @scala.inline
-    def deleteEventSource: Self = this.set("eventSource", js.undefined)
+    def setUserIdentity(value: Identity): Self = StObject.set(x, "userIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventVersion(value: String): Self = this.set("eventVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventVersion: Self = this.set("eventVersion", js.undefined)
-    
-    @scala.inline
-    def setUserIdentity(value: Identity): Self = this.set("userIdentity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserIdentity: Self = this.set("userIdentity", js.undefined)
+    def setUserIdentityUndefined: Self = StObject.set(x, "userIdentity", js.undefined)
   }
 }

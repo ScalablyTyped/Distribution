@@ -1,12 +1,13 @@
 package typings.pulumiAws.outputMod.glue
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TriggerAction extends js.Object {
+trait TriggerAction extends StObject {
   
   /**
     * Arguments to be passed to the job. You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue itself consumes.
@@ -47,54 +48,42 @@ object TriggerAction {
   }
   
   @scala.inline
-  implicit class TriggerActionOps[Self <: TriggerAction] (val x: Self) extends AnyVal {
+  implicit class TriggerActionMutableBuilder[Self <: TriggerAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArguments(value: StringDictionary[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrawlerName(value: String): Self = StObject.set(x, "crawlerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArguments(value: StringDictionary[String]): Self = this.set("arguments", value.asInstanceOf[js.Any])
+    def setCrawlerNameUndefined: Self = StObject.set(x, "crawlerName", js.undefined)
     
     @scala.inline
-    def deleteArguments: Self = this.set("arguments", js.undefined)
+    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrawlerName(value: String): Self = this.set("crawlerName", value.asInstanceOf[js.Any])
+    def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
     
     @scala.inline
-    def deleteCrawlerName: Self = this.set("crawlerName", js.undefined)
+    def setNotificationProperty(value: TriggerActionNotificationProperty): Self = StObject.set(x, "notificationProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobName(value: String): Self = this.set("jobName", value.asInstanceOf[js.Any])
+    def setNotificationPropertyUndefined: Self = StObject.set(x, "notificationProperty", js.undefined)
     
     @scala.inline
-    def deleteJobName: Self = this.set("jobName", js.undefined)
+    def setSecurityConfiguration(value: String): Self = StObject.set(x, "securityConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationProperty(value: TriggerActionNotificationProperty): Self = this.set("notificationProperty", value.asInstanceOf[js.Any])
+    def setSecurityConfigurationUndefined: Self = StObject.set(x, "securityConfiguration", js.undefined)
     
     @scala.inline
-    def deleteNotificationProperty: Self = this.set("notificationProperty", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityConfiguration(value: String): Self = this.set("securityConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityConfiguration: Self = this.set("securityConfiguration", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.std
 
 import typings.std.stdBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,18 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.IteratorYieldResult[T]
   - typings.std.IteratorReturnResult[TReturn]
 */
-trait IteratorResult[T, TReturn] extends js.Object
+trait IteratorResult[T, TReturn] extends StObject
 object IteratorResult {
   
   @scala.inline
-  def IteratorYieldResult[T, TReturn](value: T): IteratorResult[T, TReturn] = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IteratorResult[T, TReturn]]
+  def IteratorReturnResult[TReturn](done: `true`, value: TReturn): typings.std.IteratorReturnResult[TReturn] = {
+    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.std.IteratorReturnResult[TReturn]]
   }
   
   @scala.inline
-  def IteratorReturnResult[T, TReturn](done: `true`, value: TReturn): IteratorResult[T, TReturn] = {
-    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IteratorResult[T, TReturn]]
+  def IteratorYieldResult[T](value: T): typings.std.IteratorYieldResult[T] = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.std.IteratorYieldResult[T]]
   }
 }

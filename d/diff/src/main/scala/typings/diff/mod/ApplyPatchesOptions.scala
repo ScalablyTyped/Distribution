@@ -1,5 +1,6 @@
 package typings.diff.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,27 +27,15 @@ object ApplyPatchesOptions {
   }
   
   @scala.inline
-  implicit class ApplyPatchesOptionsOps[Self <: ApplyPatchesOptions] (val x: Self) extends AnyVal {
+  implicit class ApplyPatchesOptionsMutableBuilder[Self <: ApplyPatchesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoadFile(value: (ParsedDiff, js.Function2[/* err */ js.Any, /* data */ String, Unit]) => Unit): Self = StObject.set(x, "loadFile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComplete(value: js.Any => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLoadFile(value: (ParsedDiff, js.Function2[/* err */ js.Any, /* data */ String, Unit]) => Unit): Self = this.set("loadFile", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setPatched(value: (ParsedDiff, String, js.Function1[/* err */ js.Any, Unit]) => Unit): Self = this.set("patched", js.Any.fromFunction3(value))
+    def setPatched(value: (ParsedDiff, String, js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "patched", js.Any.fromFunction3(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.fridaGum.Java
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VM extends js.Object {
+trait VM extends StObject {
   
   /**
     * Gets a wrapper for the current thread's `JNIEnv`.
@@ -38,27 +39,15 @@ object VM {
   }
   
   @scala.inline
-  implicit class VMOps[Self <: VM] (val x: Self) extends AnyVal {
+  implicit class VMMutableBuilder[Self <: VM] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetEnv(value: () => Env): Self = StObject.set(x, "getEnv", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPerform(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "perform", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetEnv(value: () => Env): Self = this.set("getEnv", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPerform(value: js.Function0[Unit] => Unit): Self = this.set("perform", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTryGetEnv(value: () => Env | Null): Self = this.set("tryGetEnv", js.Any.fromFunction0(value))
+    def setTryGetEnv(value: () => Env | Null): Self = StObject.set(x, "tryGetEnv", js.Any.fromFunction0(value))
   }
 }

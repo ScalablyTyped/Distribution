@@ -3,6 +3,7 @@ package typings.phaser.Phaser.Physics.Matter
 import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.Phaser.Types.Physics.Matter.MatterBody
 import typings.phaser.phaserBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See also the `MatterPhysics.alignBody` method.
   */
 @js.native
-trait BodyBounds extends js.Object {
+trait BodyBounds extends StObject {
   
   /**
     * A Vector2 that stores the temporary bounds center value during calculations by methods in this class.

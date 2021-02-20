@@ -4,14 +4,15 @@ import typings.blueprintjsCore.anon.DisplayName
 import typings.blueprintjsCore.constructorMod.IConstructor
 import typings.react.mod.Component
 import typings.react.mod.ReactElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/core/lib/esm/components/hotkeys/hotkeysTarget", JSImport.Namespace)
-@js.native
-object hotkeysTargetMod extends js.Object {
+object hotkeysTargetMod {
   
+  @JSImport("@blueprintjs/core/lib/esm/components/hotkeys/hotkeysTarget", "HotkeysTarget")
+  @js.native
   def HotkeysTarget[T /* <: IConstructor[IHotkeysTargetComponent] */](WrappedComponent: T): DisplayName with T = js.native
   
   @js.native

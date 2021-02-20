@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CoverInfo extends js.Object {
+trait CoverInfo extends StObject {
   
   var coverInfo: js.UndefOr[LeftImageOffset] = js.native
   
@@ -22,36 +23,24 @@ object CoverInfo {
   }
   
   @scala.inline
-  implicit class CoverInfoOps[Self <: CoverInfo] (val x: Self) extends AnyVal {
+  implicit class CoverInfoMutableBuilder[Self <: CoverInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoverInfo(value: LeftImageOffset): Self = StObject.set(x, "coverInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoverInfoUndefined: Self = StObject.set(x, "coverInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoverPhoto(value: Height): Self = StObject.set(x, "coverPhoto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoverInfo(value: LeftImageOffset): Self = this.set("coverInfo", value.asInstanceOf[js.Any])
+    def setCoverPhotoUndefined: Self = StObject.set(x, "coverPhoto", js.undefined)
     
     @scala.inline
-    def deleteCoverInfo: Self = this.set("coverInfo", js.undefined)
+    def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoverPhoto(value: Height): Self = this.set("coverPhoto", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCoverPhoto: Self = this.set("coverPhoto", js.undefined)
-    
-    @scala.inline
-    def setLayout(value: String): Self = this.set("layout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
   }
 }

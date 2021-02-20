@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FolderItemV2 extends js.Object {
+trait FolderItemV2 extends StObject {
   
   /**
     * If the item is an envelope, this is the UTC DateTime when the envelope was completed.
@@ -116,138 +117,126 @@ object FolderItemV2 {
   }
   
   @scala.inline
-  implicit class FolderItemV2Ops[Self <: FolderItemV2] (val x: Self) extends AnyVal {
+  implicit class FolderItemV2MutableBuilder[Self <: FolderItemV2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompletedDateTime(value: String): Self = StObject.set(x, "completedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletedDateTimeUndefined: Self = StObject.set(x, "completedDateTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedDateTime(value: String): Self = this.set("completedDateTime", value.asInstanceOf[js.Any])
+    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
     @scala.inline
-    def deleteCompletedDateTime: Self = this.set("completedDateTime", js.undefined)
+    def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDateTime(value: String): Self = this.set("createdDateTime", value.asInstanceOf[js.Any])
+    def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
     
     @scala.inline
-    def deleteCreatedDateTime: Self = this.set("createdDateTime", js.undefined)
+    def setEnvelopeUri(value: String): Self = StObject.set(x, "envelopeUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeId(value: String): Self = this.set("envelopeId", value.asInstanceOf[js.Any])
+    def setEnvelopeUriUndefined: Self = StObject.set(x, "envelopeUri", js.undefined)
     
     @scala.inline
-    def deleteEnvelopeId: Self = this.set("envelopeId", js.undefined)
+    def setExpireDateTime(value: String): Self = StObject.set(x, "expireDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeUri(value: String): Self = this.set("envelopeUri", value.asInstanceOf[js.Any])
+    def setExpireDateTimeUndefined: Self = StObject.set(x, "expireDateTime", js.undefined)
     
     @scala.inline
-    def deleteEnvelopeUri: Self = this.set("envelopeUri", js.undefined)
+    def setFolderId(value: String): Self = StObject.set(x, "folderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpireDateTime(value: String): Self = this.set("expireDateTime", value.asInstanceOf[js.Any])
+    def setFolderIdUndefined: Self = StObject.set(x, "folderId", js.undefined)
     
     @scala.inline
-    def deleteExpireDateTime: Self = this.set("expireDateTime", js.undefined)
+    def setFolderUri(value: String): Self = StObject.set(x, "folderUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolderId(value: String): Self = this.set("folderId", value.asInstanceOf[js.Any])
+    def setFolderUriUndefined: Self = StObject.set(x, "folderUri", js.undefined)
     
     @scala.inline
-    def deleteFolderId: Self = this.set("folderId", js.undefined)
+    def setIs21CFRPart11(value: String): Self = StObject.set(x, "is21CFRPart11", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolderUri(value: String): Self = this.set("folderUri", value.asInstanceOf[js.Any])
+    def setIs21CFRPart11Undefined: Self = StObject.set(x, "is21CFRPart11", js.undefined)
     
     @scala.inline
-    def deleteFolderUri: Self = this.set("folderUri", js.undefined)
+    def setOwnerName(value: String): Self = StObject.set(x, "ownerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs21CFRPart11(value: String): Self = this.set("is21CFRPart11", value.asInstanceOf[js.Any])
+    def setOwnerNameUndefined: Self = StObject.set(x, "ownerName", js.undefined)
     
     @scala.inline
-    def deleteIs21CFRPart11: Self = this.set("is21CFRPart11", js.undefined)
+    def setRecipients(value: /* Envelope recipients */ EnvelopeRecipients): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerName(value: String): Self = this.set("ownerName", value.asInstanceOf[js.Any])
+    def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
     @scala.inline
-    def deleteOwnerName: Self = this.set("ownerName", js.undefined)
+    def setRecipientsUri(value: String): Self = StObject.set(x, "recipientsUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipients(value: /* Envelope recipients */ EnvelopeRecipients): Self = this.set("recipients", value.asInstanceOf[js.Any])
+    def setRecipientsUriUndefined: Self = StObject.set(x, "recipientsUri", js.undefined)
     
     @scala.inline
-    def deleteRecipients: Self = this.set("recipients", js.undefined)
+    def setSenderCompany(value: String): Self = StObject.set(x, "senderCompany", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientsUri(value: String): Self = this.set("recipientsUri", value.asInstanceOf[js.Any])
+    def setSenderCompanyUndefined: Self = StObject.set(x, "senderCompany", js.undefined)
     
     @scala.inline
-    def deleteRecipientsUri: Self = this.set("recipientsUri", js.undefined)
+    def setSenderEmail(value: String): Self = StObject.set(x, "senderEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderCompany(value: String): Self = this.set("senderCompany", value.asInstanceOf[js.Any])
+    def setSenderEmailUndefined: Self = StObject.set(x, "senderEmail", js.undefined)
     
     @scala.inline
-    def deleteSenderCompany: Self = this.set("senderCompany", js.undefined)
+    def setSenderName(value: String): Self = StObject.set(x, "senderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderEmail(value: String): Self = this.set("senderEmail", value.asInstanceOf[js.Any])
+    def setSenderNameUndefined: Self = StObject.set(x, "senderName", js.undefined)
     
     @scala.inline
-    def deleteSenderEmail: Self = this.set("senderEmail", js.undefined)
+    def setSenderUserId(value: String): Self = StObject.set(x, "senderUserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderName(value: String): Self = this.set("senderName", value.asInstanceOf[js.Any])
+    def setSenderUserIdUndefined: Self = StObject.set(x, "senderUserId", js.undefined)
     
     @scala.inline
-    def deleteSenderName: Self = this.set("senderName", js.undefined)
+    def setSentDateTime(value: String): Self = StObject.set(x, "sentDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSenderUserId(value: String): Self = this.set("senderUserId", value.asInstanceOf[js.Any])
+    def setSentDateTimeUndefined: Self = StObject.set(x, "sentDateTime", js.undefined)
     
     @scala.inline
-    def deleteSenderUserId: Self = this.set("senderUserId", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentDateTime(value: String): Self = this.set("sentDateTime", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSentDateTime: Self = this.set("sentDateTime", js.undefined)
+    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
     
     @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
+    def setTemplateUri(value: String): Self = StObject.set(x, "templateUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateId(value: String): Self = this.set("templateId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateId: Self = this.set("templateId", js.undefined)
-    
-    @scala.inline
-    def setTemplateUri(value: String): Self = this.set("templateUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateUri: Self = this.set("templateUri", js.undefined)
+    def setTemplateUriUndefined: Self = StObject.set(x, "templateUri", js.undefined)
   }
 }

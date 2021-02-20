@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Dictionary of options for the <Titanium.Contacts.showContacts> method.
   */
 @js.native
-trait showContactsParams extends js.Object {
+trait showContactsParams extends StObject {
   
   /**
     * Determines whether to animate the show/hide of the contacts picker (iPhone, iPad only.)
@@ -52,51 +53,39 @@ object showContactsParams {
   }
   
   @scala.inline
-  implicit class showContactsParamsOps[Self <: showContactsParams] (val x: Self) extends AnyVal {
+  implicit class showContactsParamsMutableBuilder[Self <: showContactsParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancel(value: /* param0 */ js.Any => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def deleteAnimated: Self = this.set("animated", js.undefined)
+    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: /* param0 */ js.Any => Unit): Self = this.set("cancel", js.Any.fromFunction1(value))
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    def setSelectedPerson(value: /* param0 */ js.Any => Unit): Self = StObject.set(x, "selectedPerson", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFields(value: js.Array[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setSelectedPersonUndefined: Self = StObject.set(x, "selectedPerson", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setSelectedProperty(value: /* param0 */ js.Any => Unit): Self = StObject.set(x, "selectedProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectedPerson(value: /* param0 */ js.Any => Unit): Self = this.set("selectedPerson", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSelectedPerson: Self = this.set("selectedPerson", js.undefined)
-    
-    @scala.inline
-    def setSelectedProperty(value: /* param0 */ js.Any => Unit): Self = this.set("selectedProperty", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSelectedProperty: Self = this.set("selectedProperty", js.undefined)
+    def setSelectedPropertyUndefined: Self = StObject.set(x, "selectedProperty", js.undefined)
   }
 }

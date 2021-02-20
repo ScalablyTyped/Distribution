@@ -10,16 +10,59 @@ import typings.rotJs.typesMod.DisplayOptions
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.TouchEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rot-js/lib/display/display", JSImport.Namespace)
-@js.native
-object displayMod extends js.Object {
+object displayMod {
+  
+  @JSImport("rot-js/lib/display/display", JSImport.Default)
+  @js.native
+  class default () extends Display {
+    def this(options: PartialDisplayOptions) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("rot-js/lib/display/display", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("rot-js/lib/display/display", "default.Hex")
+    @js.native
+    def Hex: Instantiable0[typings.rotJs.hexMod.default] = js.native
+    @scala.inline
+    def Hex_=(x: Instantiable0[typings.rotJs.hexMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hex")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rot-js/lib/display/display", "default.Rect")
+    @js.native
+    def Rect: TypeofRect = js.native
+    @scala.inline
+    def Rect_=(x: TypeofRect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Rect")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rot-js/lib/display/display", "default.Term")
+    @js.native
+    def Term: Instantiable0[typings.rotJs.termMod.default] = js.native
+    @scala.inline
+    def Term_=(x: Instantiable0[typings.rotJs.termMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Term")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rot-js/lib/display/display", "default.Tile")
+    @js.native
+    def Tile: Instantiable0[typings.rotJs.tileMod.default] = js.native
+    
+    @JSImport("rot-js/lib/display/display", "default.TileGL")
+    @js.native
+    def TileGL: TypeofTileGL = js.native
+    @scala.inline
+    def TileGL_=(x: TypeofTileGL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TileGL")(x.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def Tile_=(x: Instantiable0[typings.rotJs.tileMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tile")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
-  trait Display extends js.Object {
+  trait Display extends StObject {
     
     /**
       * Debug helper, ideal as a map generator callback. Always bound to this.
@@ -124,24 +167,5 @@ object displayMod extends js.Object {
       * @see ROT.Display
       */
     def setOptions(options: PartialDisplayOptions): this.type = js.native
-  }
-  
-  @js.native
-  class default () extends Display {
-    def this(options: PartialDisplayOptions) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var Hex: Instantiable0[typings.rotJs.hexMod.default] = js.native
-    
-    var Rect: TypeofRect = js.native
-    
-    var Term: Instantiable0[typings.rotJs.termMod.default] = js.native
-    
-    var Tile: Instantiable0[typings.rotJs.tileMod.default] = js.native
-    
-    var TileGL: TypeofTileGL = js.native
   }
 }

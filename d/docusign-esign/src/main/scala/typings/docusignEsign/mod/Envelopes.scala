@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Envelopes extends js.Object {
+trait Envelopes extends StObject {
   
   /**
     * Reserved for DocuSign.
@@ -483,482 +484,470 @@ object Envelopes {
   }
   
   @scala.inline
-  implicit class EnvelopesOps[Self <: Envelopes] (val x: Self) extends AnyVal {
+  implicit class EnvelopesMutableBuilder[Self <: Envelopes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessControlListBase64(value: String): Self = StObject.set(x, "accessControlListBase64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessControlListBase64Undefined: Self = StObject.set(x, "accessControlListBase64", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowComments(value: String): Self = StObject.set(x, "allowComments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessControlListBase64(value: String): Self = this.set("accessControlListBase64", value.asInstanceOf[js.Any])
+    def setAllowCommentsUndefined: Self = StObject.set(x, "allowComments", js.undefined)
     
     @scala.inline
-    def deleteAccessControlListBase64: Self = this.set("accessControlListBase64", js.undefined)
+    def setAllowMarkup(value: String): Self = StObject.set(x, "allowMarkup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowComments(value: String): Self = this.set("allowComments", value.asInstanceOf[js.Any])
+    def setAllowMarkupUndefined: Self = StObject.set(x, "allowMarkup", js.undefined)
     
     @scala.inline
-    def deleteAllowComments: Self = this.set("allowComments", js.undefined)
+    def setAllowReassign(value: String): Self = StObject.set(x, "allowReassign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowMarkup(value: String): Self = this.set("allowMarkup", value.asInstanceOf[js.Any])
+    def setAllowReassignUndefined: Self = StObject.set(x, "allowReassign", js.undefined)
     
     @scala.inline
-    def deleteAllowMarkup: Self = this.set("allowMarkup", js.undefined)
+    def setAllowViewHistory(value: String): Self = StObject.set(x, "allowViewHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowReassign(value: String): Self = this.set("allowReassign", value.asInstanceOf[js.Any])
+    def setAllowViewHistoryUndefined: Self = StObject.set(x, "allowViewHistory", js.undefined)
     
     @scala.inline
-    def deleteAllowReassign: Self = this.set("allowReassign", js.undefined)
+    def setAnySigner(value: String): Self = StObject.set(x, "anySigner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowViewHistory(value: String): Self = this.set("allowViewHistory", value.asInstanceOf[js.Any])
+    def setAnySignerUndefined: Self = StObject.set(x, "anySigner", js.undefined)
     
     @scala.inline
-    def deleteAllowViewHistory: Self = this.set("allowViewHistory", js.undefined)
+    def setAsynchronous(value: String): Self = StObject.set(x, "asynchronous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnySigner(value: String): Self = this.set("anySigner", value.asInstanceOf[js.Any])
+    def setAsynchronousUndefined: Self = StObject.set(x, "asynchronous", js.undefined)
     
     @scala.inline
-    def deleteAnySigner: Self = this.set("anySigner", js.undefined)
+    def setAttachmentsUri(value: String): Self = StObject.set(x, "attachmentsUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsynchronous(value: String): Self = this.set("asynchronous", value.asInstanceOf[js.Any])
+    def setAttachmentsUriUndefined: Self = StObject.set(x, "attachmentsUri", js.undefined)
     
     @scala.inline
-    def deleteAsynchronous: Self = this.set("asynchronous", js.undefined)
+    def setAuthoritativeCopy(value: String): Self = StObject.set(x, "authoritativeCopy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentsUri(value: String): Self = this.set("attachmentsUri", value.asInstanceOf[js.Any])
+    def setAuthoritativeCopyDefault(value: String): Self = StObject.set(x, "authoritativeCopyDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttachmentsUri: Self = this.set("attachmentsUri", js.undefined)
+    def setAuthoritativeCopyDefaultUndefined: Self = StObject.set(x, "authoritativeCopyDefault", js.undefined)
     
     @scala.inline
-    def setAuthoritativeCopy(value: String): Self = this.set("authoritativeCopy", value.asInstanceOf[js.Any])
+    def setAuthoritativeCopyUndefined: Self = StObject.set(x, "authoritativeCopy", js.undefined)
     
     @scala.inline
-    def deleteAuthoritativeCopy: Self = this.set("authoritativeCopy", js.undefined)
+    def setAutoNavigation(value: String): Self = StObject.set(x, "autoNavigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthoritativeCopyDefault(value: String): Self = this.set("authoritativeCopyDefault", value.asInstanceOf[js.Any])
+    def setAutoNavigationUndefined: Self = StObject.set(x, "autoNavigation", js.undefined)
     
     @scala.inline
-    def deleteAuthoritativeCopyDefault: Self = this.set("authoritativeCopyDefault", js.undefined)
+    def setBrandId(value: String): Self = StObject.set(x, "brandId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoNavigation(value: String): Self = this.set("autoNavigation", value.asInstanceOf[js.Any])
+    def setBrandIdUndefined: Self = StObject.set(x, "brandId", js.undefined)
     
     @scala.inline
-    def deleteAutoNavigation: Self = this.set("autoNavigation", js.undefined)
+    def setBrandLock(value: String): Self = StObject.set(x, "brandLock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrandId(value: String): Self = this.set("brandId", value.asInstanceOf[js.Any])
+    def setBrandLockUndefined: Self = StObject.set(x, "brandLock", js.undefined)
     
     @scala.inline
-    def deleteBrandId: Self = this.set("brandId", js.undefined)
+    def setCertificateUri(value: String): Self = StObject.set(x, "certificateUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrandLock(value: String): Self = this.set("brandLock", value.asInstanceOf[js.Any])
+    def setCertificateUriUndefined: Self = StObject.set(x, "certificateUri", js.undefined)
     
     @scala.inline
-    def deleteBrandLock: Self = this.set("brandLock", js.undefined)
+    def setCompletedDateTime(value: String): Self = StObject.set(x, "completedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateUri(value: String): Self = this.set("certificateUri", value.asInstanceOf[js.Any])
+    def setCompletedDateTimeUndefined: Self = StObject.set(x, "completedDateTime", js.undefined)
     
     @scala.inline
-    def deleteCertificateUri: Self = this.set("certificateUri", js.undefined)
+    def setCopyRecipientData(value: String): Self = StObject.set(x, "copyRecipientData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedDateTime(value: String): Self = this.set("completedDateTime", value.asInstanceOf[js.Any])
+    def setCopyRecipientDataUndefined: Self = StObject.set(x, "copyRecipientData", js.undefined)
     
     @scala.inline
-    def deleteCompletedDateTime: Self = this.set("completedDateTime", js.undefined)
+    def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyRecipientData(value: String): Self = this.set("copyRecipientData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCopyRecipientData: Self = this.set("copyRecipientData", js.undefined)
-    
-    @scala.inline
-    def setCreatedDateTime(value: String): Self = this.set("createdDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreatedDateTime: Self = this.set("createdDateTime", js.undefined)
+    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
     @scala.inline
     def setCustomFields(
       value: /* An `accountCustomField` is an envelope custom field that you set at the account level. Applying custom fields enables account administators
       to group and manage envelopes.  */ AccountCustomFields
-    ): Self = this.set("customFields", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomFields: Self = this.set("customFields", js.undefined)
+    def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
     
     @scala.inline
-    def setCustomFieldsUri(value: String): Self = this.set("customFieldsUri", value.asInstanceOf[js.Any])
+    def setCustomFieldsUri(value: String): Self = StObject.set(x, "customFieldsUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomFieldsUri: Self = this.set("customFieldsUri", js.undefined)
+    def setCustomFieldsUriUndefined: Self = StObject.set(x, "customFieldsUri", js.undefined)
     
     @scala.inline
-    def setDeclinedDateTime(value: String): Self = this.set("declinedDateTime", value.asInstanceOf[js.Any])
+    def setDeclinedDateTime(value: String): Self = StObject.set(x, "declinedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeclinedDateTime: Self = this.set("declinedDateTime", js.undefined)
+    def setDeclinedDateTimeUndefined: Self = StObject.set(x, "declinedDateTime", js.undefined)
     
     @scala.inline
-    def setDeletedDateTime(value: String): Self = this.set("deletedDateTime", value.asInstanceOf[js.Any])
+    def setDeletedDateTime(value: String): Self = StObject.set(x, "deletedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeletedDateTime: Self = this.set("deletedDateTime", js.undefined)
+    def setDeletedDateTimeUndefined: Self = StObject.set(x, "deletedDateTime", js.undefined)
     
     @scala.inline
-    def setDeliveredDateTime(value: String): Self = this.set("deliveredDateTime", value.asInstanceOf[js.Any])
+    def setDeliveredDateTime(value: String): Self = StObject.set(x, "deliveredDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeliveredDateTime: Self = this.set("deliveredDateTime", js.undefined)
+    def setDeliveredDateTimeUndefined: Self = StObject.set(x, "deliveredDateTime", js.undefined)
     
     @scala.inline
-    def setDisableResponsiveDocument(value: String): Self = this.set("disableResponsiveDocument", value.asInstanceOf[js.Any])
+    def setDisableResponsiveDocument(value: String): Self = StObject.set(x, "disableResponsiveDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableResponsiveDocument: Self = this.set("disableResponsiveDocument", js.undefined)
+    def setDisableResponsiveDocumentUndefined: Self = StObject.set(x, "disableResponsiveDocument", js.undefined)
     
     @scala.inline
-    def setDocumentsCombinedUri(value: String): Self = this.set("documentsCombinedUri", value.asInstanceOf[js.Any])
+    def setDocumentsCombinedUri(value: String): Self = StObject.set(x, "documentsCombinedUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocumentsCombinedUri: Self = this.set("documentsCombinedUri", js.undefined)
+    def setDocumentsCombinedUriUndefined: Self = StObject.set(x, "documentsCombinedUri", js.undefined)
     
     @scala.inline
-    def setDocumentsUri(value: String): Self = this.set("documentsUri", value.asInstanceOf[js.Any])
+    def setDocumentsUri(value: String): Self = StObject.set(x, "documentsUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocumentsUri: Self = this.set("documentsUri", js.undefined)
+    def setDocumentsUriUndefined: Self = StObject.set(x, "documentsUri", js.undefined)
     
     @scala.inline
-    def setEmailBlurb(value: String): Self = this.set("emailBlurb", value.asInstanceOf[js.Any])
+    def setEmailBlurb(value: String): Self = StObject.set(x, "emailBlurb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmailBlurb: Self = this.set("emailBlurb", js.undefined)
+    def setEmailBlurbUndefined: Self = StObject.set(x, "emailBlurb", js.undefined)
     
     @scala.inline
-    def setEmailSettings(value: EmailSettings): Self = this.set("emailSettings", value.asInstanceOf[js.Any])
+    def setEmailSettings(value: EmailSettings): Self = StObject.set(x, "emailSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmailSettings: Self = this.set("emailSettings", js.undefined)
+    def setEmailSettingsUndefined: Self = StObject.set(x, "emailSettings", js.undefined)
     
     @scala.inline
-    def setEmailSubject(value: String): Self = this.set("emailSubject", value.asInstanceOf[js.Any])
+    def setEmailSubject(value: String): Self = StObject.set(x, "emailSubject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmailSubject: Self = this.set("emailSubject", js.undefined)
+    def setEmailSubjectUndefined: Self = StObject.set(x, "emailSubject", js.undefined)
     
     @scala.inline
-    def setEnableWetSign(value: String): Self = this.set("enableWetSign", value.asInstanceOf[js.Any])
+    def setEnableWetSign(value: String): Self = StObject.set(x, "enableWetSign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnableWetSign: Self = this.set("enableWetSign", js.undefined)
+    def setEnableWetSignUndefined: Self = StObject.set(x, "enableWetSign", js.undefined)
     
     @scala.inline
-    def setEnforceSignerVisibility(value: String): Self = this.set("enforceSignerVisibility", value.asInstanceOf[js.Any])
+    def setEnforceSignerVisibility(value: String): Self = StObject.set(x, "enforceSignerVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnforceSignerVisibility: Self = this.set("enforceSignerVisibility", js.undefined)
+    def setEnforceSignerVisibilityUndefined: Self = StObject.set(x, "enforceSignerVisibility", js.undefined)
     
     @scala.inline
-    def setEnvelopeAttachmentsVarargs(value: (/* Contains information about an attachment. */ Attachment)*): Self = this.set("envelopeAttachments", js.Array(value :_*))
+    def setEnvelopeAttachments(value: js.Array[/* Contains information about an attachment. */ Attachment]): Self = StObject.set(x, "envelopeAttachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeAttachments(value: js.Array[/* Contains information about an attachment. */ Attachment]): Self = this.set("envelopeAttachments", value.asInstanceOf[js.Any])
+    def setEnvelopeAttachmentsUndefined: Self = StObject.set(x, "envelopeAttachments", js.undefined)
     
     @scala.inline
-    def deleteEnvelopeAttachments: Self = this.set("envelopeAttachments", js.undefined)
+    def setEnvelopeAttachmentsVarargs(value: (/* Contains information about an attachment. */ Attachment)*): Self = StObject.set(x, "envelopeAttachments", js.Array(value :_*))
     
     @scala.inline
-    def setEnvelopeDocumentsVarargs(value: (/* This object contains details about the envelope document. */ EnvelopeDocument)*): Self = this.set("envelopeDocuments", js.Array(value :_*))
+    def setEnvelopeDocuments(value: js.Array[/* This object contains details about the envelope document. */ EnvelopeDocument]): Self = StObject.set(x, "envelopeDocuments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeDocuments(value: js.Array[/* This object contains details about the envelope document. */ EnvelopeDocument]): Self = this.set("envelopeDocuments", value.asInstanceOf[js.Any])
+    def setEnvelopeDocumentsUndefined: Self = StObject.set(x, "envelopeDocuments", js.undefined)
     
     @scala.inline
-    def deleteEnvelopeDocuments: Self = this.set("envelopeDocuments", js.undefined)
+    def setEnvelopeDocumentsVarargs(value: (/* This object contains details about the envelope document. */ EnvelopeDocument)*): Self = StObject.set(x, "envelopeDocuments", js.Array(value :_*))
     
     @scala.inline
-    def setEnvelopeId(value: String): Self = this.set("envelopeId", value.asInstanceOf[js.Any])
+    def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvelopeId: Self = this.set("envelopeId", js.undefined)
+    def setEnvelopeIdStamping(value: String): Self = StObject.set(x, "envelopeIdStamping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeIdStamping(value: String): Self = this.set("envelopeIdStamping", value.asInstanceOf[js.Any])
+    def setEnvelopeIdStampingUndefined: Self = StObject.set(x, "envelopeIdStamping", js.undefined)
     
     @scala.inline
-    def deleteEnvelopeIdStamping: Self = this.set("envelopeIdStamping", js.undefined)
+    def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
     
     @scala.inline
-    def setEnvelopeLocation(value: String): Self = this.set("envelopeLocation", value.asInstanceOf[js.Any])
+    def setEnvelopeLocation(value: String): Self = StObject.set(x, "envelopeLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvelopeLocation: Self = this.set("envelopeLocation", js.undefined)
+    def setEnvelopeLocationUndefined: Self = StObject.set(x, "envelopeLocation", js.undefined)
     
     @scala.inline
-    def setEnvelopeMetadata(value: EnvelopeMetadata): Self = this.set("envelopeMetadata", value.asInstanceOf[js.Any])
+    def setEnvelopeMetadata(value: EnvelopeMetadata): Self = StObject.set(x, "envelopeMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvelopeMetadata: Self = this.set("envelopeMetadata", js.undefined)
+    def setEnvelopeMetadataUndefined: Self = StObject.set(x, "envelopeMetadata", js.undefined)
     
     @scala.inline
-    def setEnvelopeUri(value: String): Self = this.set("envelopeUri", value.asInstanceOf[js.Any])
+    def setEnvelopeUri(value: String): Self = StObject.set(x, "envelopeUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvelopeUri: Self = this.set("envelopeUri", js.undefined)
+    def setEnvelopeUriUndefined: Self = StObject.set(x, "envelopeUri", js.undefined)
     
     @scala.inline
-    def setExpireAfter(value: String): Self = this.set("expireAfter", value.asInstanceOf[js.Any])
+    def setExpireAfter(value: String): Self = StObject.set(x, "expireAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpireAfter: Self = this.set("expireAfter", js.undefined)
+    def setExpireAfterUndefined: Self = StObject.set(x, "expireAfter", js.undefined)
     
     @scala.inline
-    def setExpireDateTime(value: String): Self = this.set("expireDateTime", value.asInstanceOf[js.Any])
+    def setExpireDateTime(value: String): Self = StObject.set(x, "expireDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpireDateTime: Self = this.set("expireDateTime", js.undefined)
+    def setExpireDateTimeUndefined: Self = StObject.set(x, "expireDateTime", js.undefined)
     
     @scala.inline
-    def setExpireEnabled(value: String): Self = this.set("expireEnabled", value.asInstanceOf[js.Any])
+    def setExpireEnabled(value: String): Self = StObject.set(x, "expireEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpireEnabled: Self = this.set("expireEnabled", js.undefined)
+    def setExpireEnabledUndefined: Self = StObject.set(x, "expireEnabled", js.undefined)
     
     @scala.inline
-    def setExternalEnvelopeId(value: String): Self = this.set("externalEnvelopeId", value.asInstanceOf[js.Any])
+    def setExternalEnvelopeId(value: String): Self = StObject.set(x, "externalEnvelopeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternalEnvelopeId: Self = this.set("externalEnvelopeId", js.undefined)
+    def setExternalEnvelopeIdUndefined: Self = StObject.set(x, "externalEnvelopeId", js.undefined)
     
     @scala.inline
-    def setFoldersVarargs(value: (/* This object contains details about a folder. */ Folder)*): Self = this.set("folders", js.Array(value :_*))
+    def setFolders(value: js.Array[/* This object contains details about a folder. */ Folder]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolders(value: js.Array[/* This object contains details about a folder. */ Folder]): Self = this.set("folders", value.asInstanceOf[js.Any])
+    def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
     
     @scala.inline
-    def deleteFolders: Self = this.set("folders", js.undefined)
+    def setFoldersVarargs(value: (/* This object contains details about a folder. */ Folder)*): Self = StObject.set(x, "folders", js.Array(value :_*))
     
     @scala.inline
-    def setHasComments(value: String): Self = this.set("hasComments", value.asInstanceOf[js.Any])
+    def setHasComments(value: String): Self = StObject.set(x, "hasComments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasComments: Self = this.set("hasComments", js.undefined)
+    def setHasCommentsUndefined: Self = StObject.set(x, "hasComments", js.undefined)
     
     @scala.inline
-    def setHasFormDataChanged(value: String): Self = this.set("hasFormDataChanged", value.asInstanceOf[js.Any])
+    def setHasFormDataChanged(value: String): Self = StObject.set(x, "hasFormDataChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasFormDataChanged: Self = this.set("hasFormDataChanged", js.undefined)
+    def setHasFormDataChangedUndefined: Self = StObject.set(x, "hasFormDataChanged", js.undefined)
     
     @scala.inline
-    def setHasWavFile(value: String): Self = this.set("hasWavFile", value.asInstanceOf[js.Any])
+    def setHasWavFile(value: String): Self = StObject.set(x, "hasWavFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasWavFile: Self = this.set("hasWavFile", js.undefined)
+    def setHasWavFileUndefined: Self = StObject.set(x, "hasWavFile", js.undefined)
     
     @scala.inline
-    def setHolder(value: String): Self = this.set("holder", value.asInstanceOf[js.Any])
+    def setHolder(value: String): Self = StObject.set(x, "holder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHolder: Self = this.set("holder", js.undefined)
+    def setHolderUndefined: Self = StObject.set(x, "holder", js.undefined)
     
     @scala.inline
-    def setInitialSentDateTime(value: String): Self = this.set("initialSentDateTime", value.asInstanceOf[js.Any])
+    def setInitialSentDateTime(value: String): Self = StObject.set(x, "initialSentDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitialSentDateTime: Self = this.set("initialSentDateTime", js.undefined)
+    def setInitialSentDateTimeUndefined: Self = StObject.set(x, "initialSentDateTime", js.undefined)
     
     @scala.inline
-    def setIs21CFRPart11(value: String): Self = this.set("is21CFRPart11", value.asInstanceOf[js.Any])
+    def setIs21CFRPart11(value: String): Self = StObject.set(x, "is21CFRPart11", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIs21CFRPart11: Self = this.set("is21CFRPart11", js.undefined)
+    def setIs21CFRPart11Undefined: Self = StObject.set(x, "is21CFRPart11", js.undefined)
     
     @scala.inline
-    def setIsDynamicEnvelope(value: String): Self = this.set("isDynamicEnvelope", value.asInstanceOf[js.Any])
+    def setIsDynamicEnvelope(value: String): Self = StObject.set(x, "isDynamicEnvelope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsDynamicEnvelope: Self = this.set("isDynamicEnvelope", js.undefined)
+    def setIsDynamicEnvelopeUndefined: Self = StObject.set(x, "isDynamicEnvelope", js.undefined)
     
     @scala.inline
-    def setIsSignatureProviderEnvelope(value: String): Self = this.set("isSignatureProviderEnvelope", value.asInstanceOf[js.Any])
+    def setIsSignatureProviderEnvelope(value: String): Self = StObject.set(x, "isSignatureProviderEnvelope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsSignatureProviderEnvelope: Self = this.set("isSignatureProviderEnvelope", js.undefined)
+    def setIsSignatureProviderEnvelopeUndefined: Self = StObject.set(x, "isSignatureProviderEnvelope", js.undefined)
     
     @scala.inline
-    def setLastModifiedDateTime(value: String): Self = this.set("lastModifiedDateTime", value.asInstanceOf[js.Any])
+    def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastModifiedDateTime: Self = this.set("lastModifiedDateTime", js.undefined)
+    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setLockInformation(value: /* This section provides information about envelope locks. */ EnvelopeLocks): Self = this.set("lockInformation", value.asInstanceOf[js.Any])
+    def setLockInformation(value: /* This section provides information about envelope locks. */ EnvelopeLocks): Self = StObject.set(x, "lockInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLockInformation: Self = this.set("lockInformation", js.undefined)
+    def setLockInformationUndefined: Self = StObject.set(x, "lockInformation", js.undefined)
     
     @scala.inline
-    def setMessageLock(value: String): Self = this.set("messageLock", value.asInstanceOf[js.Any])
+    def setMessageLock(value: String): Self = StObject.set(x, "messageLock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessageLock: Self = this.set("messageLock", js.undefined)
+    def setMessageLockUndefined: Self = StObject.set(x, "messageLock", js.undefined)
     
     @scala.inline
     def setNotification(
       value: /* A complex element that specifies the notification settings for the envelope. */ Notification
-    ): Self = this.set("notification", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotification: Self = this.set("notification", js.undefined)
+    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
     @scala.inline
-    def setNotificationUri(value: String): Self = this.set("notificationUri", value.asInstanceOf[js.Any])
+    def setNotificationUri(value: String): Self = StObject.set(x, "notificationUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotificationUri: Self = this.set("notificationUri", js.undefined)
+    def setNotificationUriUndefined: Self = StObject.set(x, "notificationUri", js.undefined)
     
     @scala.inline
-    def setPowerForm(value: /* Contains details about a PowerForm. */ PowerForm): Self = this.set("powerForm", value.asInstanceOf[js.Any])
+    def setPowerForm(value: /* Contains details about a PowerForm. */ PowerForm): Self = StObject.set(x, "powerForm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePowerForm: Self = this.set("powerForm", js.undefined)
+    def setPowerFormUndefined: Self = StObject.set(x, "powerForm", js.undefined)
     
     @scala.inline
-    def setPurgeCompletedDate(value: String): Self = this.set("purgeCompletedDate", value.asInstanceOf[js.Any])
+    def setPurgeCompletedDate(value: String): Self = StObject.set(x, "purgeCompletedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePurgeCompletedDate: Self = this.set("purgeCompletedDate", js.undefined)
+    def setPurgeCompletedDateUndefined: Self = StObject.set(x, "purgeCompletedDate", js.undefined)
     
     @scala.inline
-    def setPurgeRequestDate(value: String): Self = this.set("purgeRequestDate", value.asInstanceOf[js.Any])
+    def setPurgeRequestDate(value: String): Self = StObject.set(x, "purgeRequestDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePurgeRequestDate: Self = this.set("purgeRequestDate", js.undefined)
+    def setPurgeRequestDateUndefined: Self = StObject.set(x, "purgeRequestDate", js.undefined)
     
     @scala.inline
-    def setPurgeState(value: String): Self = this.set("purgeState", value.asInstanceOf[js.Any])
+    def setPurgeState(value: String): Self = StObject.set(x, "purgeState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePurgeState: Self = this.set("purgeState", js.undefined)
+    def setPurgeStateUndefined: Self = StObject.set(x, "purgeState", js.undefined)
     
     @scala.inline
-    def setRecipients(value: /* Envelope recipients */ EnvelopeRecipients): Self = this.set("recipients", value.asInstanceOf[js.Any])
+    def setRecipients(value: /* Envelope recipients */ EnvelopeRecipients): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecipients: Self = this.set("recipients", js.undefined)
+    def setRecipientsLock(value: String): Self = StObject.set(x, "recipientsLock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientsLock(value: String): Self = this.set("recipientsLock", value.asInstanceOf[js.Any])
+    def setRecipientsLockUndefined: Self = StObject.set(x, "recipientsLock", js.undefined)
     
     @scala.inline
-    def deleteRecipientsLock: Self = this.set("recipientsLock", js.undefined)
+    def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
     @scala.inline
-    def setRecipientsUri(value: String): Self = this.set("recipientsUri", value.asInstanceOf[js.Any])
+    def setRecipientsUri(value: String): Self = StObject.set(x, "recipientsUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecipientsUri: Self = this.set("recipientsUri", js.undefined)
+    def setRecipientsUriUndefined: Self = StObject.set(x, "recipientsUri", js.undefined)
     
     @scala.inline
-    def setSender(value: UserInfo): Self = this.set("sender", value.asInstanceOf[js.Any])
+    def setSender(value: UserInfo): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSender: Self = this.set("sender", js.undefined)
+    def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
     
     @scala.inline
-    def setSentDateTime(value: String): Self = this.set("sentDateTime", value.asInstanceOf[js.Any])
+    def setSentDateTime(value: String): Self = StObject.set(x, "sentDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSentDateTime: Self = this.set("sentDateTime", js.undefined)
+    def setSentDateTimeUndefined: Self = StObject.set(x, "sentDateTime", js.undefined)
     
     @scala.inline
-    def setSignerCanSignOnMobile(value: String): Self = this.set("signerCanSignOnMobile", value.asInstanceOf[js.Any])
+    def setSignerCanSignOnMobile(value: String): Self = StObject.set(x, "signerCanSignOnMobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSignerCanSignOnMobile: Self = this.set("signerCanSignOnMobile", js.undefined)
+    def setSignerCanSignOnMobileUndefined: Self = StObject.set(x, "signerCanSignOnMobile", js.undefined)
     
     @scala.inline
-    def setSigningLocation(value: String): Self = this.set("signingLocation", value.asInstanceOf[js.Any])
+    def setSigningLocation(value: String): Self = StObject.set(x, "signingLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSigningLocation: Self = this.set("signingLocation", js.undefined)
+    def setSigningLocationUndefined: Self = StObject.set(x, "signingLocation", js.undefined)
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusChangedDateTime(value: String): Self = StObject.set(x, "statusChangedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusChangedDateTime(value: String): Self = this.set("statusChangedDateTime", value.asInstanceOf[js.Any])
+    def setStatusChangedDateTimeUndefined: Self = StObject.set(x, "statusChangedDateTime", js.undefined)
     
     @scala.inline
-    def deleteStatusChangedDateTime: Self = this.set("statusChangedDateTime", js.undefined)
+    def setStatusDateTime(value: String): Self = StObject.set(x, "statusDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusDateTime(value: String): Self = this.set("statusDateTime", value.asInstanceOf[js.Any])
+    def setStatusDateTimeUndefined: Self = StObject.set(x, "statusDateTime", js.undefined)
     
     @scala.inline
-    def deleteStatusDateTime: Self = this.set("statusDateTime", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setTemplatesUri(value: String): Self = this.set("templatesUri", value.asInstanceOf[js.Any])
+    def setTemplatesUri(value: String): Self = StObject.set(x, "templatesUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTemplatesUri: Self = this.set("templatesUri", js.undefined)
+    def setTemplatesUriUndefined: Self = StObject.set(x, "templatesUri", js.undefined)
     
     @scala.inline
-    def setTransactionId(value: String): Self = this.set("transactionId", value.asInstanceOf[js.Any])
+    def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransactionId: Self = this.set("transactionId", js.undefined)
+    def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
     
     @scala.inline
-    def setUseDisclosure(value: String): Self = this.set("useDisclosure", value.asInstanceOf[js.Any])
+    def setUseDisclosure(value: String): Self = StObject.set(x, "useDisclosure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseDisclosure: Self = this.set("useDisclosure", js.undefined)
+    def setUseDisclosureUndefined: Self = StObject.set(x, "useDisclosure", js.undefined)
     
     @scala.inline
-    def setVoidedDateTime(value: String): Self = this.set("voidedDateTime", value.asInstanceOf[js.Any])
+    def setVoidedDateTime(value: String): Self = StObject.set(x, "voidedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVoidedDateTime: Self = this.set("voidedDateTime", js.undefined)
+    def setVoidedDateTimeUndefined: Self = StObject.set(x, "voidedDateTime", js.undefined)
     
     @scala.inline
-    def setVoidedReason(value: String): Self = this.set("voidedReason", value.asInstanceOf[js.Any])
+    def setVoidedReason(value: String): Self = StObject.set(x, "voidedReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVoidedReason: Self = this.set("voidedReason", js.undefined)
+    def setVoidedReasonUndefined: Self = StObject.set(x, "voidedReason", js.undefined)
   }
 }

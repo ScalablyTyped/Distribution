@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The client-side equivalent of the CrosshairValueItem class.
   */
 @js.native
-trait ASPxClientCrosshairValueItem extends js.Object {
+trait ASPxClientCrosshairValueItem extends StObject {
   
   /**
     * Gets an index of a point for which this crosshair value item is displayed.
@@ -29,24 +30,12 @@ object ASPxClientCrosshairValueItem {
   }
   
   @scala.inline
-  implicit class ASPxClientCrosshairValueItemOps[Self <: ASPxClientCrosshairValueItem] (val x: Self) extends AnyVal {
+  implicit class ASPxClientCrosshairValueItemMutableBuilder[Self <: ASPxClientCrosshairValueItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPointIndex(value: Double): Self = StObject.set(x, "pointIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPointIndex(value: Double): Self = this.set("pointIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

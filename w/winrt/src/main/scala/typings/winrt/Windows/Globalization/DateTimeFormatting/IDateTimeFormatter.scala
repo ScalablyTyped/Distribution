@@ -2,12 +2,13 @@ package typings.winrt.Windows.Globalization.DateTimeFormatting
 
 import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDateTimeFormatter extends js.Object {
+trait IDateTimeFormatter extends StObject {
   
   var calendar: String = js.native
   
@@ -70,69 +71,57 @@ object IDateTimeFormatter {
   }
   
   @scala.inline
-  implicit class IDateTimeFormatterOps[Self <: IDateTimeFormatter] (val x: Self) extends AnyVal {
+  implicit class IDateTimeFormatterMutableBuilder[Self <: IDateTimeFormatter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendar(value: String): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClock(value: String): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: Date => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCalendar(value: String): Self = this.set("calendar", value.asInstanceOf[js.Any])
+    def setGeographicRegion(value: String): Self = StObject.set(x, "geographicRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClock(value: String): Self = this.set("clock", value.asInstanceOf[js.Any])
+    def setIncludeDay(value: DayFormat): Self = StObject.set(x, "includeDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: Date => String): Self = this.set("format", js.Any.fromFunction1(value))
+    def setIncludeDayOfWeek(value: DayOfWeekFormat): Self = StObject.set(x, "includeDayOfWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeographicRegion(value: String): Self = this.set("geographicRegion", value.asInstanceOf[js.Any])
+    def setIncludeHour(value: HourFormat): Self = StObject.set(x, "includeHour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeDay(value: DayFormat): Self = this.set("includeDay", value.asInstanceOf[js.Any])
+    def setIncludeMinute(value: MinuteFormat): Self = StObject.set(x, "includeMinute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeDayOfWeek(value: DayOfWeekFormat): Self = this.set("includeDayOfWeek", value.asInstanceOf[js.Any])
+    def setIncludeMonth(value: MonthFormat): Self = StObject.set(x, "includeMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeHour(value: HourFormat): Self = this.set("includeHour", value.asInstanceOf[js.Any])
+    def setIncludeSecond(value: SecondFormat): Self = StObject.set(x, "includeSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeMinute(value: MinuteFormat): Self = this.set("includeMinute", value.asInstanceOf[js.Any])
+    def setIncludeYear(value: YearFormat): Self = StObject.set(x, "includeYear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeMonth(value: MonthFormat): Self = this.set("includeMonth", value.asInstanceOf[js.Any])
+    def setLanguages(value: IVectorView[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeSecond(value: SecondFormat): Self = this.set("includeSecond", value.asInstanceOf[js.Any])
+    def setNumeralSystem(value: String): Self = StObject.set(x, "numeralSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeYear(value: YearFormat): Self = this.set("includeYear", value.asInstanceOf[js.Any])
+    def setPatterns(value: IVectorView[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguages(value: IVectorView[String]): Self = this.set("languages", value.asInstanceOf[js.Any])
+    def setResolvedGeographicRegion(value: String): Self = StObject.set(x, "resolvedGeographicRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumeralSystem(value: String): Self = this.set("numeralSystem", value.asInstanceOf[js.Any])
+    def setResolvedLanguage(value: String): Self = StObject.set(x, "resolvedLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatterns(value: IVectorView[String]): Self = this.set("patterns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolvedGeographicRegion(value: String): Self = this.set("resolvedGeographicRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolvedLanguage(value: String): Self = this.set("resolvedLanguage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }
 }

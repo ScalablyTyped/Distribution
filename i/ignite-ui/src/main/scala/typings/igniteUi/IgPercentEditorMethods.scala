@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgPercentEditorMethods extends js.Object {
+trait IgPercentEditorMethods extends StObject {
   
   /**
     * Changes the the regional settings of widget element to the language specified in [options.regional](ui.ignumericeditor#options:regional)

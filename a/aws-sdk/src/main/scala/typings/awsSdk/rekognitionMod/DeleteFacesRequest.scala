@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteFacesRequest extends js.Object {
+trait DeleteFacesRequest extends StObject {
   
   /**
     * Collection from which to remove the specific faces.
@@ -26,27 +27,15 @@ object DeleteFacesRequest {
   }
   
   @scala.inline
-  implicit class DeleteFacesRequestOps[Self <: DeleteFacesRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteFacesRequestMutableBuilder[Self <: DeleteFacesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollectionId(value: CollectionId): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFaceIds(value: FaceIdList): Self = StObject.set(x, "FaceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCollectionId(value: CollectionId): Self = this.set("CollectionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFaceIdsVarargs(value: FaceId*): Self = this.set("FaceIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setFaceIds(value: FaceIdList): Self = this.set("FaceIds", value.asInstanceOf[js.Any])
+    def setFaceIdsVarargs(value: FaceId*): Self = StObject.set(x, "FaceIds", js.Array(value :_*))
   }
 }

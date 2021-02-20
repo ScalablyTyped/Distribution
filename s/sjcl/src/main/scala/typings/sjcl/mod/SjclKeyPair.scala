@@ -1,11 +1,12 @@
 package typings.sjcl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SjclKeyPair[P /* <: SjclECCPublicKey */, S /* <: SjclECCSecretKey */] extends js.Object {
+trait SjclKeyPair[P /* <: SjclECCPublicKey */, S /* <: SjclECCSecretKey */] extends StObject {
   
   var pub: P = js.native
   
@@ -20,24 +21,12 @@ object SjclKeyPair {
   }
   
   @scala.inline
-  implicit class SjclKeyPairOps[Self <: SjclKeyPair[_, _], P /* <: SjclECCPublicKey */, S /* <: SjclECCSecretKey */] (val x: Self with (SjclKeyPair[P, S])) extends AnyVal {
+  implicit class SjclKeyPairMutableBuilder[Self <: SjclKeyPair[_, _], P /* <: SjclECCPublicKey */, S /* <: SjclECCSecretKey */] (val x: Self with (SjclKeyPair[P, S])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPub(value: P): Self = StObject.set(x, "pub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPub(value: P): Self = this.set("pub", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSec(value: S): Self = this.set("sec", value.asInstanceOf[js.Any])
+    def setSec(value: S): Self = StObject.set(x, "sec", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Database instance import request.
   */
 @js.native
-trait SchemaInstancesImportRequest extends js.Object {
+trait SchemaInstancesImportRequest extends StObject {
   
   /**
     * Contains details about the import operation.
@@ -24,24 +25,12 @@ object SchemaInstancesImportRequest {
   }
   
   @scala.inline
-  implicit class SchemaInstancesImportRequestOps[Self <: SchemaInstancesImportRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaInstancesImportRequestMutableBuilder[Self <: SchemaInstancesImportRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImportContext(value: SchemaImportContext): Self = StObject.set(x, "importContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setImportContext(value: SchemaImportContext): Self = this.set("importContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImportContext: Self = this.set("importContext", js.undefined)
+    def setImportContextUndefined: Self = StObject.set(x, "importContext", js.undefined)
   }
 }

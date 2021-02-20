@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoggingConfig extends js.Object {
+trait LoggingConfig extends StObject {
   
   /**
     * The Amazon CloudWatch log group to which CloudFormation sends error logging information when invoking the type's handlers.
@@ -26,24 +27,12 @@ object LoggingConfig {
   }
   
   @scala.inline
-  implicit class LoggingConfigOps[Self <: LoggingConfig] (val x: Self) extends AnyVal {
+  implicit class LoggingConfigMutableBuilder[Self <: LoggingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = this.set("LogGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogRoleArn(value: RoleArn): Self = this.set("LogRoleArn", value.asInstanceOf[js.Any])
+    def setLogRoleArn(value: RoleArn): Self = StObject.set(x, "LogRoleArn", value.asInstanceOf[js.Any])
   }
 }

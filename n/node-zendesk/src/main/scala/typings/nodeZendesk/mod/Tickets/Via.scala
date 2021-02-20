@@ -1,11 +1,12 @@
 package typings.nodeZendesk.mod.Tickets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Via extends js.Object {
+trait Via extends StObject {
   
   var channel: ViaChannel = js.native
   
@@ -20,24 +21,12 @@ object Via {
   }
   
   @scala.inline
-  implicit class ViaOps[Self <: Via] (val x: Self) extends AnyVal {
+  implicit class ViaMutableBuilder[Self <: Via] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel(value: ViaChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChannel(value: ViaChannel): Self = this.set("channel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: ViaSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: ViaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

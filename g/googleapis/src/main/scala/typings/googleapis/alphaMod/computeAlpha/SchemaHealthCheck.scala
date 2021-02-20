@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * supported protocols.
   */
 @js.native
-trait SchemaHealthCheck extends js.Object {
+trait SchemaHealthCheck extends StObject {
   
   /**
     * How often (in seconds) to send a health check. The default value is 5
@@ -114,132 +115,120 @@ object SchemaHealthCheck {
   }
   
   @scala.inline
-  implicit class SchemaHealthCheckOps[Self <: SchemaHealthCheck] (val x: Self) extends AnyVal {
+  implicit class SchemaHealthCheckMutableBuilder[Self <: SchemaHealthCheck] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckIntervalSec(value: Double): Self = StObject.set(x, "checkIntervalSec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckIntervalSecUndefined: Self = StObject.set(x, "checkIntervalSec", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckIntervalSec(value: Double): Self = this.set("checkIntervalSec", value.asInstanceOf[js.Any])
+    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
     @scala.inline
-    def deleteCheckIntervalSec: Self = this.set("checkIntervalSec", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    def setHealthyThreshold(value: Double): Self = StObject.set(x, "healthyThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setHealthyThresholdUndefined: Self = StObject.set(x, "healthyThreshold", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setHttp2HealthCheck(value: SchemaHTTP2HealthCheck): Self = StObject.set(x, "http2HealthCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthyThreshold(value: Double): Self = this.set("healthyThreshold", value.asInstanceOf[js.Any])
+    def setHttp2HealthCheckUndefined: Self = StObject.set(x, "http2HealthCheck", js.undefined)
     
     @scala.inline
-    def deleteHealthyThreshold: Self = this.set("healthyThreshold", js.undefined)
+    def setHttpHealthCheck(value: Schema$HTTPHealthCheck): Self = StObject.set(x, "httpHealthCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttp2HealthCheck(value: SchemaHTTP2HealthCheck): Self = this.set("http2HealthCheck", value.asInstanceOf[js.Any])
+    def setHttpHealthCheckUndefined: Self = StObject.set(x, "httpHealthCheck", js.undefined)
     
     @scala.inline
-    def deleteHttp2HealthCheck: Self = this.set("http2HealthCheck", js.undefined)
+    def setHttpsHealthCheck(value: Schema$HTTPSHealthCheck): Self = StObject.set(x, "httpsHealthCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpHealthCheck(value: Schema$HTTPHealthCheck): Self = this.set("httpHealthCheck", value.asInstanceOf[js.Any])
+    def setHttpsHealthCheckUndefined: Self = StObject.set(x, "httpsHealthCheck", js.undefined)
     
     @scala.inline
-    def deleteHttpHealthCheck: Self = this.set("httpHealthCheck", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpsHealthCheck(value: Schema$HTTPSHealthCheck): Self = this.set("httpsHealthCheck", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHttpsHealthCheck: Self = this.set("httpsHealthCheck", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setSelfLinkWithId(value: String): Self = StObject.set(x, "selfLinkWithId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setSelfLinkWithIdUndefined: Self = StObject.set(x, "selfLinkWithId", js.undefined)
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setSslHealthCheck(value: SchemaSSLHealthCheck): Self = StObject.set(x, "sslHealthCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLinkWithId(value: String): Self = this.set("selfLinkWithId", value.asInstanceOf[js.Any])
+    def setSslHealthCheckUndefined: Self = StObject.set(x, "sslHealthCheck", js.undefined)
     
     @scala.inline
-    def deleteSelfLinkWithId: Self = this.set("selfLinkWithId", js.undefined)
+    def setTcpHealthCheck(value: SchemaTCPHealthCheck): Self = StObject.set(x, "tcpHealthCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSslHealthCheck(value: SchemaSSLHealthCheck): Self = this.set("sslHealthCheck", value.asInstanceOf[js.Any])
+    def setTcpHealthCheckUndefined: Self = StObject.set(x, "tcpHealthCheck", js.undefined)
     
     @scala.inline
-    def deleteSslHealthCheck: Self = this.set("sslHealthCheck", js.undefined)
+    def setTimeoutSec(value: Double): Self = StObject.set(x, "timeoutSec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTcpHealthCheck(value: SchemaTCPHealthCheck): Self = this.set("tcpHealthCheck", value.asInstanceOf[js.Any])
+    def setTimeoutSecUndefined: Self = StObject.set(x, "timeoutSec", js.undefined)
     
     @scala.inline
-    def deleteTcpHealthCheck: Self = this.set("tcpHealthCheck", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeoutSec(value: Double): Self = this.set("timeoutSec", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTimeoutSec: Self = this.set("timeoutSec", js.undefined)
+    def setUdpHealthCheck(value: SchemaUDPHealthCheck): Self = StObject.set(x, "udpHealthCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUdpHealthCheckUndefined: Self = StObject.set(x, "udpHealthCheck", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setUnhealthyThreshold(value: Double): Self = StObject.set(x, "unhealthyThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUdpHealthCheck(value: SchemaUDPHealthCheck): Self = this.set("udpHealthCheck", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUdpHealthCheck: Self = this.set("udpHealthCheck", js.undefined)
-    
-    @scala.inline
-    def setUnhealthyThreshold(value: Double): Self = this.set("unhealthyThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnhealthyThreshold: Self = this.set("unhealthyThreshold", js.undefined)
+    def setUnhealthyThresholdUndefined: Self = StObject.set(x, "unhealthyThreshold", js.undefined)
   }
 }

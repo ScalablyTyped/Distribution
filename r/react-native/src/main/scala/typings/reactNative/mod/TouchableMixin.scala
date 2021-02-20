@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://github.com/facebook/react-native/blob/0.34-stable\Libraries\Components\Touchable\Touchable.js
   */
 @js.native
-trait TouchableMixin extends js.Object {
+trait TouchableMixin extends StObject {
   
   /**
     * Returns the number of millis to wait before triggering a highlight.
@@ -84,45 +85,33 @@ object TouchableMixin {
   }
   
   @scala.inline
-  implicit class TouchableMixinOps[Self <: TouchableMixin] (val x: Self) extends AnyVal {
+  implicit class TouchableMixinMutableBuilder[Self <: TouchableMixin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTouchableGetHighlightDelayMS(value: () => Double): Self = StObject.set(x, "touchableGetHighlightDelayMS", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTouchableGetHitSlop(value: () => Insets): Self = StObject.set(x, "touchableGetHitSlop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTouchableGetLongPressDelayMS(value: () => Double): Self = StObject.set(x, "touchableGetLongPressDelayMS", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTouchableGetHighlightDelayMS(value: () => Double): Self = this.set("touchableGetHighlightDelayMS", js.Any.fromFunction0(value))
+    def setTouchableGetPressOutDelayMS(value: () => Double): Self = StObject.set(x, "touchableGetPressOutDelayMS", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTouchableGetHitSlop(value: () => Insets): Self = this.set("touchableGetHitSlop", js.Any.fromFunction0(value))
+    def setTouchableGetPressRectOffset(value: () => Insets): Self = StObject.set(x, "touchableGetPressRectOffset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTouchableGetLongPressDelayMS(value: () => Double): Self = this.set("touchableGetLongPressDelayMS", js.Any.fromFunction0(value))
+    def setTouchableHandleActivePressIn(value: GestureResponderEvent => Unit): Self = StObject.set(x, "touchableHandleActivePressIn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTouchableGetPressOutDelayMS(value: () => Double): Self = this.set("touchableGetPressOutDelayMS", js.Any.fromFunction0(value))
+    def setTouchableHandleActivePressOut(value: GestureResponderEvent => Unit): Self = StObject.set(x, "touchableHandleActivePressOut", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTouchableGetPressRectOffset(value: () => Insets): Self = this.set("touchableGetPressRectOffset", js.Any.fromFunction0(value))
+    def setTouchableHandleLongPress(value: GestureResponderEvent => Unit): Self = StObject.set(x, "touchableHandleLongPress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTouchableHandleActivePressIn(value: GestureResponderEvent => Unit): Self = this.set("touchableHandleActivePressIn", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTouchableHandleActivePressOut(value: GestureResponderEvent => Unit): Self = this.set("touchableHandleActivePressOut", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTouchableHandleLongPress(value: GestureResponderEvent => Unit): Self = this.set("touchableHandleLongPress", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTouchableHandlePress(value: GestureResponderEvent => Unit): Self = this.set("touchableHandlePress", js.Any.fromFunction1(value))
+    def setTouchableHandlePress(value: GestureResponderEvent => Unit): Self = StObject.set(x, "touchableHandlePress", js.Any.fromFunction1(value))
   }
 }

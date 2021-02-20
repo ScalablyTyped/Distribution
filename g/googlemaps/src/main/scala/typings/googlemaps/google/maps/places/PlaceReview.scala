@@ -1,11 +1,12 @@
 package typings.googlemaps.google.maps.places
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlaceReview extends js.Object {
+trait PlaceReview extends StObject {
   
   var aspects: js.Array[PlaceAspectRating] = js.native
   
@@ -44,51 +45,39 @@ object PlaceReview {
   }
   
   @scala.inline
-  implicit class PlaceReviewOps[Self <: PlaceReview] (val x: Self) extends AnyVal {
+  implicit class PlaceReviewMutableBuilder[Self <: PlaceReview] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAspects(value: js.Array[PlaceAspectRating]): Self = StObject.set(x, "aspects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAspectsVarargs(value: PlaceAspectRating*): Self = StObject.set(x, "aspects", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthor_name(value: String): Self = StObject.set(x, "author_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAspectsVarargs(value: PlaceAspectRating*): Self = this.set("aspects", js.Array(value :_*))
+    def setAuthor_url(value: String): Self = StObject.set(x, "author_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAspects(value: js.Array[PlaceAspectRating]): Self = this.set("aspects", value.asInstanceOf[js.Any])
+    def setAuthor_urlUndefined: Self = StObject.set(x, "author_url", js.undefined)
     
     @scala.inline
-    def setAuthor_name(value: String): Self = this.set("author_name", value.asInstanceOf[js.Any])
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setProfile_photo_url(value: String): Self = StObject.set(x, "profile_photo_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile_photo_url(value: String): Self = this.set("profile_photo_url", value.asInstanceOf[js.Any])
+    def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRating(value: Double): Self = this.set("rating", value.asInstanceOf[js.Any])
+    def setRelative_time_description(value: String): Self = StObject.set(x, "relative_time_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelative_time_description(value: String): Self = this.set("relative_time_description", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAuthor_url(value: String): Self = this.set("author_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthor_url: Self = this.set("author_url", js.undefined)
+    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

@@ -4,6 +4,7 @@ import typings.std.Date
 import typings.titanium.Dictionary
 import typings.titanium.daysOfTheWeekDictionary
 import typings.titanium.recurrenceEndDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The Calendar module provides an API for accessing the native calendar functionality.
   */
-@JSGlobal("Titanium.Calendar")
-@js.native
-object Calendar extends js.Object {
+object Calendar {
   
   /**
     * An object that represents a single alert for an event in an calendar.

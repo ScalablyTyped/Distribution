@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.cloudfront
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistributionOrderedCacheBehavior extends js.Object {
+trait DistributionOrderedCacheBehavior extends StObject {
   
   /**
     * Controls which HTTP methods CloudFront
@@ -120,96 +121,84 @@ object DistributionOrderedCacheBehavior {
   }
   
   @scala.inline
-  implicit class DistributionOrderedCacheBehaviorOps[Self <: DistributionOrderedCacheBehavior] (val x: Self) extends AnyVal {
+  implicit class DistributionOrderedCacheBehaviorMutableBuilder[Self <: DistributionOrderedCacheBehavior] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedMethods(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedMethodsVarargs(value: Input[String]*): Self = StObject.set(x, "allowedMethods", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCachedMethods(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "cachedMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedMethodsVarargs(value: Input[String]*): Self = this.set("allowedMethods", js.Array(value :_*))
+    def setCachedMethodsVarargs(value: Input[String]*): Self = StObject.set(x, "cachedMethods", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedMethods(value: Input[js.Array[Input[String]]]): Self = this.set("allowedMethods", value.asInstanceOf[js.Any])
+    def setCompress(value: Input[Boolean]): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCachedMethodsVarargs(value: Input[String]*): Self = this.set("cachedMethods", js.Array(value :_*))
+    def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
     
     @scala.inline
-    def setCachedMethods(value: Input[js.Array[Input[String]]]): Self = this.set("cachedMethods", value.asInstanceOf[js.Any])
+    def setDefaultTtl(value: Input[Double]): Self = StObject.set(x, "defaultTtl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForwardedValues(value: Input[DistributionOrderedCacheBehaviorForwardedValues]): Self = this.set("forwardedValues", value.asInstanceOf[js.Any])
+    def setDefaultTtlUndefined: Self = StObject.set(x, "defaultTtl", js.undefined)
     
     @scala.inline
-    def setPathPattern(value: Input[String]): Self = this.set("pathPattern", value.asInstanceOf[js.Any])
+    def setFieldLevelEncryptionId(value: Input[String]): Self = StObject.set(x, "fieldLevelEncryptionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetOriginId(value: Input[String]): Self = this.set("targetOriginId", value.asInstanceOf[js.Any])
+    def setFieldLevelEncryptionIdUndefined: Self = StObject.set(x, "fieldLevelEncryptionId", js.undefined)
     
     @scala.inline
-    def setViewerProtocolPolicy(value: Input[String]): Self = this.set("viewerProtocolPolicy", value.asInstanceOf[js.Any])
+    def setForwardedValues(value: Input[DistributionOrderedCacheBehaviorForwardedValues]): Self = StObject.set(x, "forwardedValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompress(value: Input[Boolean]): Self = this.set("compress", value.asInstanceOf[js.Any])
+    def setLambdaFunctionAssociations(value: Input[js.Array[Input[DistributionOrderedCacheBehaviorLambdaFunctionAssociation]]]): Self = StObject.set(x, "lambdaFunctionAssociations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompress: Self = this.set("compress", js.undefined)
+    def setLambdaFunctionAssociationsUndefined: Self = StObject.set(x, "lambdaFunctionAssociations", js.undefined)
     
     @scala.inline
-    def setDefaultTtl(value: Input[Double]): Self = this.set("defaultTtl", value.asInstanceOf[js.Any])
+    def setLambdaFunctionAssociationsVarargs(value: Input[DistributionOrderedCacheBehaviorLambdaFunctionAssociation]*): Self = StObject.set(x, "lambdaFunctionAssociations", js.Array(value :_*))
     
     @scala.inline
-    def deleteDefaultTtl: Self = this.set("defaultTtl", js.undefined)
+    def setMaxTtl(value: Input[Double]): Self = StObject.set(x, "maxTtl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldLevelEncryptionId(value: Input[String]): Self = this.set("fieldLevelEncryptionId", value.asInstanceOf[js.Any])
+    def setMaxTtlUndefined: Self = StObject.set(x, "maxTtl", js.undefined)
     
     @scala.inline
-    def deleteFieldLevelEncryptionId: Self = this.set("fieldLevelEncryptionId", js.undefined)
+    def setMinTtl(value: Input[Double]): Self = StObject.set(x, "minTtl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLambdaFunctionAssociationsVarargs(value: Input[DistributionOrderedCacheBehaviorLambdaFunctionAssociation]*): Self = this.set("lambdaFunctionAssociations", js.Array(value :_*))
+    def setMinTtlUndefined: Self = StObject.set(x, "minTtl", js.undefined)
     
     @scala.inline
-    def setLambdaFunctionAssociations(value: Input[js.Array[Input[DistributionOrderedCacheBehaviorLambdaFunctionAssociation]]]): Self = this.set("lambdaFunctionAssociations", value.asInstanceOf[js.Any])
+    def setPathPattern(value: Input[String]): Self = StObject.set(x, "pathPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLambdaFunctionAssociations: Self = this.set("lambdaFunctionAssociations", js.undefined)
+    def setSmoothStreaming(value: Input[Boolean]): Self = StObject.set(x, "smoothStreaming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTtl(value: Input[Double]): Self = this.set("maxTtl", value.asInstanceOf[js.Any])
+    def setSmoothStreamingUndefined: Self = StObject.set(x, "smoothStreaming", js.undefined)
     
     @scala.inline
-    def deleteMaxTtl: Self = this.set("maxTtl", js.undefined)
+    def setTargetOriginId(value: Input[String]): Self = StObject.set(x, "targetOriginId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinTtl(value: Input[Double]): Self = this.set("minTtl", value.asInstanceOf[js.Any])
+    def setTrustedSigners(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "trustedSigners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinTtl: Self = this.set("minTtl", js.undefined)
+    def setTrustedSignersUndefined: Self = StObject.set(x, "trustedSigners", js.undefined)
     
     @scala.inline
-    def setSmoothStreaming(value: Input[Boolean]): Self = this.set("smoothStreaming", value.asInstanceOf[js.Any])
+    def setTrustedSignersVarargs(value: Input[String]*): Self = StObject.set(x, "trustedSigners", js.Array(value :_*))
     
     @scala.inline
-    def deleteSmoothStreaming: Self = this.set("smoothStreaming", js.undefined)
-    
-    @scala.inline
-    def setTrustedSignersVarargs(value: Input[String]*): Self = this.set("trustedSigners", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrustedSigners(value: Input[js.Array[Input[String]]]): Self = this.set("trustedSigners", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrustedSigners: Self = this.set("trustedSigners", js.undefined)
+    def setViewerProtocolPolicy(value: Input[String]): Self = StObject.set(x, "viewerProtocolPolicy", value.asInstanceOf[js.Any])
   }
 }

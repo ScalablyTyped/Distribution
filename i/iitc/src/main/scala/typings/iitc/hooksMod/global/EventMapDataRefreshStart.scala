@@ -1,12 +1,13 @@
 package typings.iitc.hooksMod.global
 
 import typings.leaflet.mod.LatLngBounds_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventMapDataRefreshStart extends js.Object {
+trait EventMapDataRefreshStart extends StObject {
   
   var bounds: LatLngBounds_ = js.native
   
@@ -33,33 +34,21 @@ object EventMapDataRefreshStart {
   }
   
   @scala.inline
-  implicit class EventMapDataRefreshStartOps[Self <: EventMapDataRefreshStart] (val x: Self) extends AnyVal {
+  implicit class EventMapDataRefreshStartMutableBuilder[Self <: EventMapDataRefreshStart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: LatLngBounds_): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataZoom(value: Double): Self = StObject.set(x, "dataZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMapZoom(value: Double): Self = StObject.set(x, "mapZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounds(value: LatLngBounds_): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setMinPortalLevel(value: Double): Self = StObject.set(x, "minPortalLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataZoom(value: Double): Self = this.set("dataZoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMapZoom(value: Double): Self = this.set("mapZoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinPortalLevel(value: Double): Self = this.set("minPortalLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTileBounds(value: LatLngBounds_): Self = this.set("tileBounds", value.asInstanceOf[js.Any])
+    def setTileBounds(value: LatLngBounds_): Self = StObject.set(x, "tileBounds", value.asInstanceOf[js.Any])
   }
 }

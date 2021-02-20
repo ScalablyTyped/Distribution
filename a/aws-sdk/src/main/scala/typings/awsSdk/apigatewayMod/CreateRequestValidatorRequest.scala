@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateRequestValidatorRequest extends js.Object {
+trait CreateRequestValidatorRequest extends StObject {
   
   /**
     * The name of the to-be-created RequestValidator.
@@ -36,39 +37,27 @@ object CreateRequestValidatorRequest {
   }
   
   @scala.inline
-  implicit class CreateRequestValidatorRequestOps[Self <: CreateRequestValidatorRequest] (val x: Self) extends AnyVal {
+  implicit class CreateRequestValidatorRequestMutableBuilder[Self <: CreateRequestValidatorRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestApiId(value: String): Self = this.set("restApiId", value.asInstanceOf[js.Any])
+    def setValidateRequestBody(value: Boolean): Self = StObject.set(x, "validateRequestBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setValidateRequestBodyUndefined: Self = StObject.set(x, "validateRequestBody", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setValidateRequestParameters(value: Boolean): Self = StObject.set(x, "validateRequestParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidateRequestBody(value: Boolean): Self = this.set("validateRequestBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidateRequestBody: Self = this.set("validateRequestBody", js.undefined)
-    
-    @scala.inline
-    def setValidateRequestParameters(value: Boolean): Self = this.set("validateRequestParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidateRequestParameters: Self = this.set("validateRequestParameters", js.undefined)
+    def setValidateRequestParametersUndefined: Self = StObject.set(x, "validateRequestParameters", js.undefined)
   }
 }

@@ -1,14 +1,14 @@
 package typings.typeorm
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/error/QueryRunnerAlreadyReleasedError", JSImport.Namespace)
-@js.native
-object queryRunnerAlreadyReleasedErrorMod extends js.Object {
+object queryRunnerAlreadyReleasedErrorMod {
   
+  @JSImport("typeorm/browser/error/QueryRunnerAlreadyReleasedError", "QueryRunnerAlreadyReleasedError")
   @js.native
   class QueryRunnerAlreadyReleasedError () extends Error
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaShipmentInvoiceLineItemInvoice extends js.Object {
+trait SchemaShipmentInvoiceLineItemInvoice extends StObject {
   
   /**
     * ID of the line item. Either lineItemId or productId must be set.
@@ -40,45 +41,33 @@ object SchemaShipmentInvoiceLineItemInvoice {
   }
   
   @scala.inline
-  implicit class SchemaShipmentInvoiceLineItemInvoiceOps[Self <: SchemaShipmentInvoiceLineItemInvoice] (val x: Self) extends AnyVal {
+  implicit class SchemaShipmentInvoiceLineItemInvoiceMutableBuilder[Self <: SchemaShipmentInvoiceLineItemInvoice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLineItemIdUndefined: Self = StObject.set(x, "lineItemId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineItemId(value: String): Self = this.set("lineItemId", value.asInstanceOf[js.Any])
+    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
     @scala.inline
-    def deleteLineItemId: Self = this.set("lineItemId", js.undefined)
+    def setShipmentUnitIds(value: js.Array[String]): Self = StObject.set(x, "shipmentUnitIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
+    def setShipmentUnitIdsUndefined: Self = StObject.set(x, "shipmentUnitIds", js.undefined)
     
     @scala.inline
-    def deleteProductId: Self = this.set("productId", js.undefined)
+    def setShipmentUnitIdsVarargs(value: String*): Self = StObject.set(x, "shipmentUnitIds", js.Array(value :_*))
     
     @scala.inline
-    def setShipmentUnitIdsVarargs(value: String*): Self = this.set("shipmentUnitIds", js.Array(value :_*))
+    def setUnitInvoice(value: SchemaUnitInvoice): Self = StObject.set(x, "unitInvoice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShipmentUnitIds(value: js.Array[String]): Self = this.set("shipmentUnitIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShipmentUnitIds: Self = this.set("shipmentUnitIds", js.undefined)
-    
-    @scala.inline
-    def setUnitInvoice(value: SchemaUnitInvoice): Self = this.set("unitInvoice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnitInvoice: Self = this.set("unitInvoice", js.undefined)
+    def setUnitInvoiceUndefined: Self = StObject.set(x, "unitInvoice", js.undefined)
   }
 }

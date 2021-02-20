@@ -2,6 +2,7 @@ package typings.sharepoint.SP.JsGrid
 
 import typings.sharepoint.anon.Bottom
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ trait IEditControlCellContext extends IEditActorCellContext {
   
   var cellHeight: Double = js.native
   
-   // TODO: Determine correct type
+  // TODO: Determine correct type
   var cellRect: js.Any = js.native
   
   var cellStyle: js.Any = js.native
@@ -52,42 +53,30 @@ object IEditControlCellContext {
   }
   
   @scala.inline
-  implicit class IEditControlCellContextOps[Self <: IEditControlCellContext] (val x: Self) extends AnyVal {
+  implicit class IEditControlCellContextMutableBuilder[Self <: IEditControlCellContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellRect(value: js.Any): Self = StObject.set(x, "cellRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellStyle(value: js.Any): Self = StObject.set(x, "cellStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHide(value: HTMLElement => Unit): Self = this.set("Hide", js.Any.fromFunction1(value))
+    def setCellWidth(value: Double): Self = StObject.set(x, "cellWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotifyEditComplete(value: () => Unit): Self = this.set("NotifyEditComplete", js.Any.fromFunction0(value))
+    def setHide(value: HTMLElement => Unit): Self = StObject.set(x, "Hide", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNotifyExpandControl(value: () => Unit): Self = this.set("NotifyExpandControl", js.Any.fromFunction0(value))
+    def setNotifyEditComplete(value: () => Unit): Self = StObject.set(x, "NotifyEditComplete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setShow(value: HTMLElement => Unit): Self = this.set("Show", js.Any.fromFunction1(value))
+    def setNotifyExpandControl(value: () => Unit): Self = StObject.set(x, "NotifyExpandControl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCellHeight(value: Double): Self = this.set("cellHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCellRect(value: js.Any): Self = this.set("cellRect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCellStyle(value: js.Any): Self = this.set("cellStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCellWidth(value: Double): Self = this.set("cellWidth", value.asInstanceOf[js.Any])
+    def setShow(value: HTMLElement => Unit): Self = StObject.set(x, "Show", js.Any.fromFunction1(value))
   }
 }

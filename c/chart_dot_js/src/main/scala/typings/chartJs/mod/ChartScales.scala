@@ -1,11 +1,12 @@
 package typings.chartJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartScales extends js.Object {
+trait ChartScales extends StObject {
   
   var display: js.UndefOr[Boolean] = js.native
   
@@ -32,72 +33,60 @@ object ChartScales {
   }
   
   @scala.inline
-  implicit class ChartScalesOps[Self <: ChartScales] (val x: Self) extends AnyVal {
+  implicit class ChartScalesMutableBuilder[Self <: ChartScales] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGridLines(value: GridLineOptions): Self = StObject.set(x, "gridLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay(value: Boolean): Self = this.set("display", value.asInstanceOf[js.Any])
+    def setGridLinesUndefined: Self = StObject.set(x, "gridLines", js.undefined)
     
     @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def setPosition(value: PositionType | String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridLines(value: GridLineOptions): Self = this.set("gridLines", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteGridLines: Self = this.set("gridLines", js.undefined)
+    def setScaleLabel(value: ScaleTitleOptions): Self = StObject.set(x, "scaleLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: PositionType | String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setScaleLabelUndefined: Self = StObject.set(x, "scaleLabel", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setTicks(value: TickOptions): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleLabel(value: ScaleTitleOptions): Self = this.set("scaleLabel", value.asInstanceOf[js.Any])
+    def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
     
     @scala.inline
-    def deleteScaleLabel: Self = this.set("scaleLabel", js.undefined)
+    def setType(value: ScaleType | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicks(value: TickOptions): Self = this.set("ticks", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTicks: Self = this.set("ticks", js.undefined)
+    def setXAxes(value: js.Array[ChartXAxe]): Self = StObject.set(x, "xAxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ScaleType | String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setXAxesUndefined: Self = StObject.set(x, "xAxes", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setXAxesVarargs(value: ChartXAxe*): Self = StObject.set(x, "xAxes", js.Array(value :_*))
     
     @scala.inline
-    def setXAxesVarargs(value: ChartXAxe*): Self = this.set("xAxes", js.Array(value :_*))
+    def setYAxes(value: js.Array[ChartYAxe]): Self = StObject.set(x, "yAxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXAxes(value: js.Array[ChartXAxe]): Self = this.set("xAxes", value.asInstanceOf[js.Any])
+    def setYAxesUndefined: Self = StObject.set(x, "yAxes", js.undefined)
     
     @scala.inline
-    def deleteXAxes: Self = this.set("xAxes", js.undefined)
-    
-    @scala.inline
-    def setYAxesVarargs(value: ChartYAxe*): Self = this.set("yAxes", js.Array(value :_*))
-    
-    @scala.inline
-    def setYAxes(value: js.Array[ChartYAxe]): Self = this.set("yAxes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYAxes: Self = this.set("yAxes", js.undefined)
+    def setYAxesVarargs(value: ChartYAxe*): Self = StObject.set(x, "yAxes", js.Array(value :_*))
   }
 }

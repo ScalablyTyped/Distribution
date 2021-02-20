@@ -28,12 +28,13 @@ import typings.gestalt.gestaltStrings.sm
 import typings.gestalt.gestaltStrings.watermelon
 import typings.gestalt.gestaltStrings.white
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextProps extends js.Object {
+trait TextProps extends StObject {
   
   var align: js.UndefOr[left | right | center | justify] = js.native
   
@@ -64,74 +65,62 @@ object TextProps {
   }
   
   @scala.inline
-  implicit class TextPropsOps[Self <: TextProps] (val x: Self) extends AnyVal {
+  implicit class TextPropsMutableBuilder[Self <: TextProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: left | right | center | justify): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: left | right | center | justify): Self = this.set("align", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
-    
-    @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
     def setColor(
       value: blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white
-    ): Self = this.set("color", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setInline(value: Boolean): Self = this.set("inline", value.asInstanceOf[js.Any])
+    def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInline: Self = this.set("inline", js.undefined)
+    def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
     
     @scala.inline
-    def setItalic(value: Boolean): Self = this.set("italic", value.asInstanceOf[js.Any])
+    def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItalic: Self = this.set("italic", js.undefined)
+    def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
     
     @scala.inline
-    def setOverflow(value: normal | breakWord): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    def setOverflow(value: normal | breakWord): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverflow: Self = this.set("overflow", js.undefined)
+    def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
     @scala.inline
-    def setSize(value: sm | md | lg): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: sm | md | lg): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def setTruncate(value: Boolean): Self = this.set("truncate", value.asInstanceOf[js.Any])
+    def setTruncate(value: Boolean): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTruncate: Self = this.set("truncate", js.undefined)
+    def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
     
     @scala.inline
-    def setWeight(value: bold | normal): Self = this.set("weight", value.asInstanceOf[js.Any])
+    def setWeight(value: bold | normal): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

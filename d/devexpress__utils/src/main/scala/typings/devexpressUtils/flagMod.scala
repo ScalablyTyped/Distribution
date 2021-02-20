@@ -1,14 +1,14 @@
 package typings.devexpressUtils
 
 import typings.devexpressUtils.typesMod.ICloneable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/class/flag", JSImport.Namespace)
-@js.native
-object flagMod extends js.Object {
+object flagMod {
   
+  @JSImport("@devexpress/utils/lib/class/flag", "Flag")
   @js.native
   class Flag () extends ICloneable[Flag] {
     def this(initValue: Double) = this()

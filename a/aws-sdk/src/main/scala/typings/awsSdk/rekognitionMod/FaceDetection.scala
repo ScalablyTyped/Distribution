@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FaceDetection extends js.Object {
+trait FaceDetection extends StObject {
   
   /**
     * The face properties for the detected face.
@@ -26,30 +27,18 @@ object FaceDetection {
   }
   
   @scala.inline
-  implicit class FaceDetectionOps[Self <: FaceDetection] (val x: Self) extends AnyVal {
+  implicit class FaceDetectionMutableBuilder[Self <: FaceDetection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFace(value: FaceDetail): Self = StObject.set(x, "Face", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFaceUndefined: Self = StObject.set(x, "Face", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFace(value: FaceDetail): Self = this.set("Face", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFace: Self = this.set("Face", js.undefined)
-    
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

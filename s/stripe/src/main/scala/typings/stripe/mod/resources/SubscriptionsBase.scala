@@ -5,18 +5,21 @@ import typings.stripe.mod.IDeleteConfirmation
 import typings.stripe.mod.IList
 import typings.stripe.mod.IListPromise
 import typings.stripe.mod.IResponseFn
+import typings.stripe.mod.Stripe
 import typings.stripe.mod.StripeResource
 import typings.stripe.mod.subscriptions.ISubscription
 import typings.stripe.mod.subscriptions.ISubscriptionCancellationOptions
 import typings.stripe.mod.subscriptions.ISubscriptionListOptions
 import typings.stripe.mod.subscriptions.ISubscriptionUpdateOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.SubscriptionsBase")
 @js.native
-class SubscriptionsBase () extends StripeResource {
+class SubscriptionsBase protected () extends StripeResource {
+  def this(stripe: Stripe, urlData: js.Any) = this()
   
   def del(subscriptionId: String): js.Promise[ISubscription] = js.native
   def del(subscriptionId: String, data: ISubscriptionCancellationOptions): js.Promise[ISubscription] = js.native

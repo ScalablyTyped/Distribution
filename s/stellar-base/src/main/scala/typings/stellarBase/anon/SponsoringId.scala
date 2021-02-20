@@ -2,12 +2,13 @@ package typings.stellarBase.anon
 
 import typings.stellarBase.xdrMod.xdr.LedgerEntryExtensionV1Ext
 import typings.stellarBase.xdrMod.xdr.SponsorshipDescriptor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SponsoringId extends js.Object {
+trait SponsoringId extends StObject {
   
   var ext: LedgerEntryExtensionV1Ext = js.native
   
@@ -22,27 +23,15 @@ object SponsoringId {
   }
   
   @scala.inline
-  implicit class SponsoringIdOps[Self <: SponsoringId] (val x: Self) extends AnyVal {
+  implicit class SponsoringIdMutableBuilder[Self <: SponsoringId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExt(value: LedgerEntryExtensionV1Ext): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSponsoringId(value: SponsorshipDescriptor): Self = StObject.set(x, "sponsoringId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExt(value: LedgerEntryExtensionV1Ext): Self = this.set("ext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSponsoringId(value: SponsorshipDescriptor): Self = this.set("sponsoringId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSponsoringId: Self = this.set("sponsoringId", js.undefined)
+    def setSponsoringIdUndefined: Self = StObject.set(x, "sponsoringId", js.undefined)
   }
 }

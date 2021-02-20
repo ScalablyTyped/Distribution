@@ -2,6 +2,7 @@ package typings.parameter.mod
 
 import typings.parameter.parameterStrings.password
 import typings.parameter.parameterStrings.passwordQuestionmark
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ParameterRulePassword extends _ParameterRuleItem {
   
+  var default: js.UndefOr[js.Any] = js.native
+  
   var allowEmpty: js.UndefOr[Boolean] = js.native
   
   var compare: js.UndefOr[String] = js.native
   
   var convertType: js.UndefOr[ParameterConvertType] = js.native
-  
-  var default: js.UndefOr[js.Any] = js.native
   
   var empty: js.UndefOr[Boolean] = js.native
   
@@ -42,84 +43,72 @@ object ParameterRulePassword {
   }
   
   @scala.inline
-  implicit class ParameterRulePasswordOps[Self <: ParameterRulePassword] (val x: Self) extends AnyVal {
+  implicit class ParameterRulePasswordMutableBuilder[Self <: ParameterRulePassword] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompare(value: String): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: password | passwordQuestionmark): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
     
     @scala.inline
-    def setAllowEmpty(value: Boolean): Self = this.set("allowEmpty", value.asInstanceOf[js.Any])
+    def setConvertType(value: ParameterConvertType): Self = StObject.set(x, "convertType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowEmpty: Self = this.set("allowEmpty", js.undefined)
+    def setConvertTypeFunction1(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "convertType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCompare(value: String): Self = this.set("compare", value.asInstanceOf[js.Any])
+    def setConvertTypeUndefined: Self = StObject.set(x, "convertType", js.undefined)
     
     @scala.inline
-    def deleteCompare: Self = this.set("compare", js.undefined)
+    def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertTypeFunction1(value: /* value */ js.Any => js.Any): Self = this.set("convertType", js.Any.fromFunction1(value))
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def setConvertType(value: ParameterConvertType): Self = this.set("convertType", value.asInstanceOf[js.Any])
+    def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConvertType: Self = this.set("convertType", js.undefined)
+    def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
     
     @scala.inline
-    def setDefault(value: js.Any): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def setEmpty(value: Boolean): Self = this.set("empty", value.asInstanceOf[js.Any])
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmpty: Self = this.set("empty", js.undefined)
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
     
     @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setType(value: password | passwordQuestionmark): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setWidelyUndefined(value: Boolean): Self = StObject.set(x, "widelyUndefined", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrim(value: Boolean): Self = this.set("trim", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrim: Self = this.set("trim", js.undefined)
-    
-    @scala.inline
-    def setWidelyUndefined(value: Boolean): Self = this.set("widelyUndefined", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidelyUndefined: Self = this.set("widelyUndefined", js.undefined)
+    def setWidelyUndefinedUndefined: Self = StObject.set(x, "widelyUndefined", js.undefined)
   }
 }

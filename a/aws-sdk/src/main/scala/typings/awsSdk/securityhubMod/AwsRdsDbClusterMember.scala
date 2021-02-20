@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsRdsDbClusterMember extends js.Object {
+trait AwsRdsDbClusterMember extends StObject {
   
   /**
     * The status of the DB cluster parameter group for this member of the DB cluster.
@@ -36,42 +37,30 @@ object AwsRdsDbClusterMember {
   }
   
   @scala.inline
-  implicit class AwsRdsDbClusterMemberOps[Self <: AwsRdsDbClusterMember] (val x: Self) extends AnyVal {
+  implicit class AwsRdsDbClusterMemberMutableBuilder[Self <: AwsRdsDbClusterMember] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDbClusterParameterGroupStatus(value: NonEmptyString): Self = StObject.set(x, "DbClusterParameterGroupStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDbClusterParameterGroupStatusUndefined: Self = StObject.set(x, "DbClusterParameterGroupStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDbInstanceIdentifier(value: NonEmptyString): Self = StObject.set(x, "DbInstanceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbClusterParameterGroupStatus(value: NonEmptyString): Self = this.set("DbClusterParameterGroupStatus", value.asInstanceOf[js.Any])
+    def setDbInstanceIdentifierUndefined: Self = StObject.set(x, "DbInstanceIdentifier", js.undefined)
     
     @scala.inline
-    def deleteDbClusterParameterGroupStatus: Self = this.set("DbClusterParameterGroupStatus", js.undefined)
+    def setIsClusterWriter(value: Boolean): Self = StObject.set(x, "IsClusterWriter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbInstanceIdentifier(value: NonEmptyString): Self = this.set("DbInstanceIdentifier", value.asInstanceOf[js.Any])
+    def setIsClusterWriterUndefined: Self = StObject.set(x, "IsClusterWriter", js.undefined)
     
     @scala.inline
-    def deleteDbInstanceIdentifier: Self = this.set("DbInstanceIdentifier", js.undefined)
+    def setPromotionTier(value: Integer): Self = StObject.set(x, "PromotionTier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsClusterWriter(value: Boolean): Self = this.set("IsClusterWriter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsClusterWriter: Self = this.set("IsClusterWriter", js.undefined)
-    
-    @scala.inline
-    def setPromotionTier(value: Integer): Self = this.set("PromotionTier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePromotionTier: Self = this.set("PromotionTier", js.undefined)
+    def setPromotionTierUndefined: Self = StObject.set(x, "PromotionTier", js.undefined)
   }
 }

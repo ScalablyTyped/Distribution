@@ -4,12 +4,13 @@ import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.LEFT_BOT
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.LEFT_TOP
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.RIGHT_BOTTOM
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.RIGHT_TOP
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AxisLimitLine extends js.Object {
+trait AxisLimitLine extends StObject {
   
   var label: js.UndefOr[String] = js.native
   
@@ -38,72 +39,60 @@ object AxisLimitLine {
   }
   
   @scala.inline
-  implicit class AxisLimitLineOps[Self <: AxisLimitLine] (val x: Self) extends AnyVal {
+  implicit class AxisLimitLineMutableBuilder[Self <: AxisLimitLine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelPosition(value: LEFT_TOP | LEFT_BOTTOM | RIGHT_TOP | RIGHT_BOTTOM): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLineColor(value: Color): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelPosition(value: LEFT_TOP | LEFT_BOTTOM | RIGHT_TOP | RIGHT_BOTTOM): Self = this.set("labelPosition", value.asInstanceOf[js.Any])
+    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
     @scala.inline
-    def deleteLabelPosition: Self = this.set("labelPosition", js.undefined)
+    def setLineDashLengths(value: js.Array[Double]): Self = StObject.set(x, "lineDashLengths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineColor(value: Color): Self = this.set("lineColor", value.asInstanceOf[js.Any])
+    def setLineDashLengthsUndefined: Self = StObject.set(x, "lineDashLengths", js.undefined)
     
     @scala.inline
-    def deleteLineColor: Self = this.set("lineColor", js.undefined)
+    def setLineDashLengthsVarargs(value: Double*): Self = StObject.set(x, "lineDashLengths", js.Array(value :_*))
     
     @scala.inline
-    def setLineDashLengthsVarargs(value: Double*): Self = this.set("lineDashLengths", js.Array(value :_*))
+    def setLineDashPhase(value: Double): Self = StObject.set(x, "lineDashPhase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineDashLengths(value: js.Array[Double]): Self = this.set("lineDashLengths", value.asInstanceOf[js.Any])
+    def setLineDashPhaseUndefined: Self = StObject.set(x, "lineDashPhase", js.undefined)
     
     @scala.inline
-    def deleteLineDashLengths: Self = this.set("lineDashLengths", js.undefined)
+    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineDashPhase(value: Double): Self = this.set("lineDashPhase", value.asInstanceOf[js.Any])
+    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
     @scala.inline
-    def deleteLineDashPhase: Self = this.set("lineDashPhase", js.undefined)
+    def setValueFont(value: String): Self = StObject.set(x, "valueFont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    def setValueFontUndefined: Self = StObject.set(x, "valueFont", js.undefined)
     
     @scala.inline
-    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    def setValueTextColor(value: Color): Self = StObject.set(x, "valueTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueFont(value: String): Self = this.set("valueFont", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueFont: Self = this.set("valueFont", js.undefined)
-    
-    @scala.inline
-    def setValueTextColor(value: Color): Self = this.set("valueTextColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueTextColor: Self = this.set("valueTextColor", js.undefined)
+    def setValueTextColorUndefined: Self = StObject.set(x, "valueTextColor", js.undefined)
   }
 }

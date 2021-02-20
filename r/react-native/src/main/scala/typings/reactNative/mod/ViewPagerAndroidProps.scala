@@ -5,6 +5,7 @@ import typings.reactNative.reactNativeStrings.Idle
 import typings.reactNative.reactNativeStrings.Settling
 import typings.reactNative.reactNativeStrings.`on-drag`
 import typings.reactNative.reactNativeStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,60 +80,48 @@ object ViewPagerAndroidProps {
   }
   
   @scala.inline
-  implicit class ViewPagerAndroidPropsOps[Self <: ViewPagerAndroidProps] (val x: Self) extends AnyVal {
+  implicit class ViewPagerAndroidPropsMutableBuilder[Self <: ViewPagerAndroidProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitialPage(value: Double): Self = StObject.set(x, "initialPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitialPageUndefined: Self = StObject.set(x, "initialPage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyboardDismissMode(value: none | `on-drag`): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialPage(value: Double): Self = this.set("initialPage", value.asInstanceOf[js.Any])
+    def setKeyboardDismissModeUndefined: Self = StObject.set(x, "keyboardDismissMode", js.undefined)
     
     @scala.inline
-    def deleteInitialPage: Self = this.set("initialPage", js.undefined)
+    def setOnPageScroll(value: /* event */ NativeSyntheticEvent[ViewPagerAndroidOnPageScrollEventData] => Unit): Self = StObject.set(x, "onPageScroll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKeyboardDismissMode(value: none | `on-drag`): Self = this.set("keyboardDismissMode", value.asInstanceOf[js.Any])
+    def setOnPageScrollStateChanged(value: /* state */ Idle | Dragging | Settling => Unit): Self = StObject.set(x, "onPageScrollStateChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteKeyboardDismissMode: Self = this.set("keyboardDismissMode", js.undefined)
+    def setOnPageScrollStateChangedUndefined: Self = StObject.set(x, "onPageScrollStateChanged", js.undefined)
     
     @scala.inline
-    def setOnPageScroll(value: /* event */ NativeSyntheticEvent[ViewPagerAndroidOnPageScrollEventData] => Unit): Self = this.set("onPageScroll", js.Any.fromFunction1(value))
+    def setOnPageScrollUndefined: Self = StObject.set(x, "onPageScroll", js.undefined)
     
     @scala.inline
-    def deleteOnPageScroll: Self = this.set("onPageScroll", js.undefined)
+    def setOnPageSelected(value: /* event */ NativeSyntheticEvent[ViewPagerAndroidOnPageSelectedEventData] => Unit): Self = StObject.set(x, "onPageSelected", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPageScrollStateChanged(value: /* state */ Idle | Dragging | Settling => Unit): Self = this.set("onPageScrollStateChanged", js.Any.fromFunction1(value))
+    def setOnPageSelectedUndefined: Self = StObject.set(x, "onPageSelected", js.undefined)
     
     @scala.inline
-    def deleteOnPageScrollStateChanged: Self = this.set("onPageScrollStateChanged", js.undefined)
+    def setPageMargin(value: Double): Self = StObject.set(x, "pageMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPageSelected(value: /* event */ NativeSyntheticEvent[ViewPagerAndroidOnPageSelectedEventData] => Unit): Self = this.set("onPageSelected", js.Any.fromFunction1(value))
+    def setPageMarginUndefined: Self = StObject.set(x, "pageMargin", js.undefined)
     
     @scala.inline
-    def deleteOnPageSelected: Self = this.set("onPageSelected", js.undefined)
+    def setScrollEnabled(value: Boolean): Self = StObject.set(x, "scrollEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageMargin(value: Double): Self = this.set("pageMargin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageMargin: Self = this.set("pageMargin", js.undefined)
-    
-    @scala.inline
-    def setScrollEnabled(value: Boolean): Self = this.set("scrollEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollEnabled: Self = this.set("scrollEnabled", js.undefined)
+    def setScrollEnabledUndefined: Self = StObject.set(x, "scrollEnabled", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.highcharts.sonificationMod.highchartsAugmentingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * of playing a certain pitch for a specified duration.
   */
 @js.native
-trait Instrument extends js.Object {
+trait Instrument extends StObject {
   
   /**
     * Return a copy of an instrument. Only one instrument instance can play

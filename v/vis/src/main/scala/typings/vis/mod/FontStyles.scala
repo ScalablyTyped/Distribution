@@ -1,11 +1,12 @@
 package typings.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FontStyles extends js.Object {
+trait FontStyles extends StObject {
   
   var color: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object FontStyles {
   }
   
   @scala.inline
-  implicit class FontStylesOps[Self <: FontStyles] (val x: Self) extends AnyVal {
+  implicit class FontStylesMutableBuilder[Self <: FontStyles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFace(value: String): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setFaceUndefined: Self = StObject.set(x, "face", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setMod(value: String): Self = StObject.set(x, "mod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFace(value: String): Self = this.set("face", value.asInstanceOf[js.Any])
+    def setModUndefined: Self = StObject.set(x, "mod", js.undefined)
     
     @scala.inline
-    def deleteFace: Self = this.set("face", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMod(value: String): Self = this.set("mod", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteMod: Self = this.set("mod", js.undefined)
+    def setVadjust(value: Double): Self = StObject.set(x, "vadjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setVadjust(value: Double): Self = this.set("vadjust", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVadjust: Self = this.set("vadjust", js.undefined)
+    def setVadjustUndefined: Self = StObject.set(x, "vadjust", js.undefined)
   }
 }

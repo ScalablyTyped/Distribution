@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GatewayPlatform extends js.Object {
+trait GatewayPlatform extends StObject {
   
   /**
     * A gateway that runs on AWS IoT Greengrass.
@@ -21,21 +22,9 @@ object GatewayPlatform {
   }
   
   @scala.inline
-  implicit class GatewayPlatformOps[Self <: GatewayPlatform] (val x: Self) extends AnyVal {
+  implicit class GatewayPlatformMutableBuilder[Self <: GatewayPlatform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGreengrass(value: Greengrass): Self = this.set("greengrass", value.asInstanceOf[js.Any])
+    def setGreengrass(value: Greengrass): Self = StObject.set(x, "greengrass", value.asInstanceOf[js.Any])
   }
 }

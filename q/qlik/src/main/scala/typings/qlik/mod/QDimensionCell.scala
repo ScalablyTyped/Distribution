@@ -1,11 +1,12 @@
 package typings.qlik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QDimensionCell extends js.Object {
+trait QDimensionCell extends StObject {
   
   var qElemNumber: Double = js.native
   
@@ -26,36 +27,24 @@ object QDimensionCell {
   }
   
   @scala.inline
-  implicit class QDimensionCellOps[Self <: QDimensionCell] (val x: Self) extends AnyVal {
+  implicit class QDimensionCellMutableBuilder[Self <: QDimensionCell] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQElemNumber(value: Double): Self = StObject.set(x, "qElemNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQNum(value: Double): Self = StObject.set(x, "qNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQNumUndefined: Self = StObject.set(x, "qNum", js.undefined)
     
     @scala.inline
-    def setQElemNumber(value: Double): Self = this.set("qElemNumber", value.asInstanceOf[js.Any])
+    def setQState(value: String): Self = StObject.set(x, "qState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQState(value: String): Self = this.set("qState", value.asInstanceOf[js.Any])
+    def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQText(value: String): Self = this.set("qText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelect(value: () => Unit): Self = this.set("select", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setQNum(value: Double): Self = this.set("qNum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQNum: Self = this.set("qNum", js.undefined)
+    def setSelect(value: () => Unit): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
   }
 }

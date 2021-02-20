@@ -1,12 +1,12 @@
 package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Media.Encoding
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,17 +40,38 @@ class Media () extends IMedia {
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-/* static members */
-@JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Media")
-@js.native
-object Media extends js.Object {
+object Media {
+  
+  @js.native
+  sealed trait Encoding extends StObject
+  /** Encoding enum. */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Media.Encoding")
+  @js.native
+  object Encoding extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[Encoding with Double] = js.native
+    
+    @js.native
+    sealed trait BASE64 extends Encoding
+    /* 0 */ val BASE64: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Media.Encoding.BASE64 with Double = js.native
+    
+    @js.native
+    sealed trait UTF8 extends Encoding
+    /* 1 */ val UTF8: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Media.Encoding.UTF8 with Double = js.native
+  }
   
   /**
     * Creates a new Media instance using the specified properties.
     * @param [properties] Properties to set
     * @returns Media instance
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Media.create")
+  @js.native
   def create(): Media = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Media.create")
+  @js.native
   def create(properties: IMedia): Media = js.native
   
   /**
@@ -61,9 +82,18 @@ object Media extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Media.decode")
+  @js.native
   def decode(reader: Reader): Media = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Media.decode")
+  @js.native
   def decode(reader: Reader, length: Double): Media = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Media.decode")
+  @js.native
   def decode(reader: Uint8Array): Media = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Media.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): Media = js.native
   
   /**
@@ -73,7 +103,12 @@ object Media extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Media.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): Media = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Media.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): Media = js.native
   
   /**
@@ -82,7 +117,12 @@ object Media extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Media.encode")
+  @js.native
   def encode(message: IMedia): Writer = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Media.encode")
+  @js.native
   def encode(message: IMedia, writer: Writer): Writer = js.native
   
   /**
@@ -91,7 +131,12 @@ object Media extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Media.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IMedia): Writer = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Media.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IMedia, writer: Writer): Writer = js.native
   
   /**
@@ -99,6 +144,9 @@ object Media extends js.Object {
     * @param object Plain object
     * @returns Media
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Media.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): Media = js.native
   
   /**
@@ -107,7 +155,12 @@ object Media extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Media.toObject")
+  @js.native
   def toObject(message: Media): StringDictionary[js.Any] = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Media.toObject")
+  @js.native
   def toObject(message: Media, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -115,25 +168,8 @@ object Media extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Media.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
-  
-  @js.native
-  sealed trait Encoding extends js.Object
-  /** Encoding enum. */
-  @js.native
-  object Encoding extends js.Object {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Encoding with Double] = js.native
-    
-    @js.native
-    sealed trait BASE64 extends Encoding
-    /* 0 */ @js.native
-    object BASE64 extends TopLevel[BASE64 with Double]
-    
-    @js.native
-    sealed trait UTF8 extends Encoding
-    /* 1 */ @js.native
-    object UTF8 extends TopLevel[UTF8 with Double]
-  }
 }

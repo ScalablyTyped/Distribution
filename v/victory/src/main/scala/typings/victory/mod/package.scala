@@ -1,5 +1,6 @@
 package typings.victory
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,4 +73,10 @@ package object mod {
   type VictoryNumberCallback = js.Function1[/* args */ typings.victory.mod.CallbackArgs, scala.Double]
   
   type VictoryStringOrNumberCallback = js.Function1[/* args */ typings.victory.mod.CallbackArgs, java.lang.String | scala.Double]
+  
+  @scala.inline
+  def VictoryTheme: typings.victory.mod.VictoryThemeInterface = typings.victory.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VictoryTheme").asInstanceOf[typings.victory.mod.VictoryThemeInterface]
+  
+  @scala.inline
+  def createContainer[V, W](c1: typings.victory.mod.ContainerType, c2: typings.victory.mod.ContainerType): typings.react.mod.ComponentType[V with W] = (typings.victory.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createContainer")(c1.asInstanceOf[js.Any], c2.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ComponentType[V with W]]
 }

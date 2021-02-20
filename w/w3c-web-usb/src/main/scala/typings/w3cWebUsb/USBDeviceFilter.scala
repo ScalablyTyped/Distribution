@@ -1,11 +1,12 @@
 package typings.w3cWebUsb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait USBDeviceFilter extends js.Object {
+trait USBDeviceFilter extends StObject {
   
   var classCode: js.UndefOr[Double] = js.native
   
@@ -28,54 +29,42 @@ object USBDeviceFilter {
   }
   
   @scala.inline
-  implicit class USBDeviceFilterOps[Self <: USBDeviceFilter] (val x: Self) extends AnyVal {
+  implicit class USBDeviceFilterMutableBuilder[Self <: USBDeviceFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassCode(value: Double): Self = StObject.set(x, "classCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassCodeUndefined: Self = StObject.set(x, "classCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProductId(value: Double): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassCode(value: Double): Self = this.set("classCode", value.asInstanceOf[js.Any])
+    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
     @scala.inline
-    def deleteClassCode: Self = this.set("classCode", js.undefined)
+    def setProtocolCode(value: Double): Self = StObject.set(x, "protocolCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: Double): Self = this.set("productId", value.asInstanceOf[js.Any])
+    def setProtocolCodeUndefined: Self = StObject.set(x, "protocolCode", js.undefined)
     
     @scala.inline
-    def deleteProductId: Self = this.set("productId", js.undefined)
+    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocolCode(value: Double): Self = this.set("protocolCode", value.asInstanceOf[js.Any])
+    def setSerialNumberUndefined: Self = StObject.set(x, "serialNumber", js.undefined)
     
     @scala.inline
-    def deleteProtocolCode: Self = this.set("protocolCode", js.undefined)
+    def setSubclassCode(value: Double): Self = StObject.set(x, "subclassCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialNumber(value: String): Self = this.set("serialNumber", value.asInstanceOf[js.Any])
+    def setSubclassCodeUndefined: Self = StObject.set(x, "subclassCode", js.undefined)
     
     @scala.inline
-    def deleteSerialNumber: Self = this.set("serialNumber", js.undefined)
+    def setVendorId(value: Double): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubclassCode(value: Double): Self = this.set("subclassCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubclassCode: Self = this.set("subclassCode", js.undefined)
-    
-    @scala.inline
-    def setVendorId(value: Double): Self = this.set("vendorId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVendorId: Self = this.set("vendorId", js.undefined)
+    def setVendorIdUndefined: Self = StObject.set(x, "vendorId", js.undefined)
   }
 }

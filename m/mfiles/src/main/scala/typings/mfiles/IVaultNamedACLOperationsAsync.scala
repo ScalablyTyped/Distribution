@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFNamedACLType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultNamedACLOperationsAsync extends js.Object {
+trait IVaultNamedACLOperationsAsync extends StObject {
   
   def AddNamedACLAdmin(NamedACLAdmin: INamedACLAdmin): Unit = js.native
   def AddNamedACLAdmin(

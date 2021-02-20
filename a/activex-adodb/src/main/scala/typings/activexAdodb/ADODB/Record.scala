@@ -1,11 +1,12 @@
 package typings.activexAdodb.ADODB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Record extends js.Object {
+trait Record extends StObject {
   
   @JSName("ADODB.Record_typekey")
   var ADODBDotRecord_typekey: Record = js.native

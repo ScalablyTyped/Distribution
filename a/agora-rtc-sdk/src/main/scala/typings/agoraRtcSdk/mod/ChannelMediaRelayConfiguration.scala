@@ -1,5 +1,6 @@
 package typings.agoraRtcSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Use this interface to set the media stream relay when calling {@link startChannelMediaRelay} or {@link updateChannelMediaRelay}.
   */
 @js.native
-trait ChannelMediaRelayConfiguration extends js.Object {
+trait ChannelMediaRelayConfiguration extends StObject {
   
   /**
     * Removes the destination channel.
@@ -84,27 +85,15 @@ object ChannelMediaRelayConfiguration {
   }
   
   @scala.inline
-  implicit class ChannelMediaRelayConfigurationOps[Self <: ChannelMediaRelayConfiguration] (val x: Self) extends AnyVal {
+  implicit class ChannelMediaRelayConfigurationMutableBuilder[Self <: ChannelMediaRelayConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRemoveDestChannelInfo(value: String => Unit): Self = StObject.set(x, "removeDestChannelInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetDestChannelInfo(value: (String, js.Any) => Unit): Self = StObject.set(x, "setDestChannelInfo", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRemoveDestChannelInfo(value: String => Unit): Self = this.set("removeDestChannelInfo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDestChannelInfo(value: (String, js.Any) => Unit): Self = this.set("setDestChannelInfo", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetSrcChannelInfo(value: js.Any => Unit): Self = this.set("setSrcChannelInfo", js.Any.fromFunction1(value))
+    def setSetSrcChannelInfo(value: js.Any => Unit): Self = StObject.set(x, "setSrcChannelInfo", js.Any.fromFunction1(value))
   }
 }

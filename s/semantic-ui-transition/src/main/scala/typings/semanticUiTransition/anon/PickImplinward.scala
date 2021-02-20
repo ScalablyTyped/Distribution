@@ -1,12 +1,13 @@
 package typings.semanticUiTransition.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-transition.SemanticUI.Transition.ClassNameSettings._Impl, 'inward'> */
 @js.native
-trait PickImplinward extends js.Object {
+trait PickImplinward extends StObject {
   
   var inward: String = js.native
 }
@@ -19,21 +20,9 @@ object PickImplinward {
   }
   
   @scala.inline
-  implicit class PickImplinwardOps[Self <: PickImplinward] (val x: Self) extends AnyVal {
+  implicit class PickImplinwardMutableBuilder[Self <: PickImplinward] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInward(value: String): Self = this.set("inward", value.asInstanceOf[js.Any])
+    def setInward(value: String): Self = StObject.set(x, "inward", value.asInstanceOf[js.Any])
   }
 }

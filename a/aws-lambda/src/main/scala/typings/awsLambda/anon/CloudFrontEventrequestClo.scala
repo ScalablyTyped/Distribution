@@ -1,13 +1,14 @@
 package typings.awsLambda.anon
 
 import typings.awsLambda.cloudfrontMod.CloudFrontRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-lambda.aws-lambda/common/cloudfront.CloudFrontEvent & {  request :aws-lambda.aws-lambda/common/cloudfront.CloudFrontRequest} */
 @js.native
-trait CloudFrontEventrequestClo extends js.Object {
+trait CloudFrontEventrequestClo extends StObject {
   
   var config: DistributionDomainName = js.native
   
@@ -22,24 +23,12 @@ object CloudFrontEventrequestClo {
   }
   
   @scala.inline
-  implicit class CloudFrontEventrequestCloOps[Self <: CloudFrontEventrequestClo] (val x: Self) extends AnyVal {
+  implicit class CloudFrontEventrequestCloMutableBuilder[Self <: CloudFrontEventrequestClo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: DistributionDomainName): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfig(value: DistributionDomainName): Self = this.set("config", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: CloudFrontRequest): Self = this.set("request", value.asInstanceOf[js.Any])
+    def setRequest(value: CloudFrontRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

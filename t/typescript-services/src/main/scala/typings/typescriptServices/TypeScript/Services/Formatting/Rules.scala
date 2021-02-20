@@ -2,6 +2,7 @@ package typings.typescriptServices.TypeScript.Services.Formatting
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -287,291 +288,279 @@ object Rules {
   }
   
   @scala.inline
-  implicit class RulesOps[Self <: Rules] (val x: Self) extends AnyVal {
+  implicit class RulesMutableBuilder[Self <: Rules] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControlOpenBraceLeftTokenRange(value: TokenRange): Self = StObject.set(x, "ControlOpenBraceLeftTokenRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFunctionOpenBraceLeftTokenRange(value: TokenRange): Self = StObject.set(x, "FunctionOpenBraceLeftTokenRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRuleName(value: Rule => js.Any): Self = StObject.set(x, "getRuleName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setControlOpenBraceLeftTokenRange(value: TokenRange): Self = this.set("ControlOpenBraceLeftTokenRange", value.asInstanceOf[js.Any])
+    def setHighPriorityCommonRules(value: js.Array[Rule]): Self = StObject.set(x, "HighPriorityCommonRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionOpenBraceLeftTokenRange(value: TokenRange): Self = this.set("FunctionOpenBraceLeftTokenRange", value.asInstanceOf[js.Any])
+    def setHighPriorityCommonRulesVarargs(value: Rule*): Self = StObject.set(x, "HighPriorityCommonRules", js.Array(value :_*))
     
     @scala.inline
-    def setHighPriorityCommonRulesVarargs(value: Rule*): Self = this.set("HighPriorityCommonRules", js.Array(value :_*))
+    def setIgnoreAfterLineComment(value: Rule): Self = StObject.set(x, "IgnoreAfterLineComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighPriorityCommonRules(value: js.Array[Rule]): Self = this.set("HighPriorityCommonRules", value.asInstanceOf[js.Any])
+    def setIgnoreBeforeComment(value: Rule): Self = StObject.set(x, "IgnoreBeforeComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreAfterLineComment(value: Rule): Self = this.set("IgnoreAfterLineComment", value.asInstanceOf[js.Any])
+    def setLowPriorityCommonRules(value: js.Array[Rule]): Self = StObject.set(x, "LowPriorityCommonRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreBeforeComment(value: Rule): Self = this.set("IgnoreBeforeComment", value.asInstanceOf[js.Any])
+    def setLowPriorityCommonRulesVarargs(value: Rule*): Self = StObject.set(x, "LowPriorityCommonRules", js.Array(value :_*))
     
     @scala.inline
-    def setLowPriorityCommonRulesVarargs(value: Rule*): Self = this.set("LowPriorityCommonRules", js.Array(value :_*))
+    def setNewLineAfterOpenBraceInBlockContext(value: Rule): Self = StObject.set(x, "NewLineAfterOpenBraceInBlockContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowPriorityCommonRules(value: js.Array[Rule]): Self = this.set("LowPriorityCommonRules", value.asInstanceOf[js.Any])
+    def setNewLineBeforeCloseBraceInBlockContext(value: Rule): Self = StObject.set(x, "NewLineBeforeCloseBraceInBlockContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewLineAfterOpenBraceInBlockContext(value: Rule): Self = this.set("NewLineAfterOpenBraceInBlockContext", value.asInstanceOf[js.Any])
+    def setNewLineBeforeOpenBraceInControl(value: Rule): Self = StObject.set(x, "NewLineBeforeOpenBraceInControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewLineBeforeCloseBraceInBlockContext(value: Rule): Self = this.set("NewLineBeforeCloseBraceInBlockContext", value.asInstanceOf[js.Any])
+    def setNewLineBeforeOpenBraceInFunction(value: Rule): Self = StObject.set(x, "NewLineBeforeOpenBraceInFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewLineBeforeOpenBraceInControl(value: Rule): Self = this.set("NewLineBeforeOpenBraceInControl", value.asInstanceOf[js.Any])
+    def setNewLineBeforeOpenBraceInTypeScriptDeclWithBlock(value: Rule): Self = StObject.set(x, "NewLineBeforeOpenBraceInTypeScriptDeclWithBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewLineBeforeOpenBraceInFunction(value: Rule): Self = this.set("NewLineBeforeOpenBraceInFunction", value.asInstanceOf[js.Any])
+    def setNoSpaceAfterAnonymousFunctionKeyword(value: Rule): Self = StObject.set(x, "NoSpaceAfterAnonymousFunctionKeyword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewLineBeforeOpenBraceInTypeScriptDeclWithBlock(value: Rule): Self = this.set("NewLineBeforeOpenBraceInTypeScriptDeclWithBlock", value.asInstanceOf[js.Any])
+    def setNoSpaceAfterBinaryOperator(value: Rule): Self = StObject.set(x, "NoSpaceAfterBinaryOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceAfterAnonymousFunctionKeyword(value: Rule): Self = this.set("NoSpaceAfterAnonymousFunctionKeyword", value.asInstanceOf[js.Any])
+    def setNoSpaceAfterCloseAngularBracket(value: Rule): Self = StObject.set(x, "NoSpaceAfterCloseAngularBracket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceAfterBinaryOperator(value: Rule): Self = this.set("NoSpaceAfterBinaryOperator", value.asInstanceOf[js.Any])
+    def setNoSpaceAfterCloseBrace(value: Rule): Self = StObject.set(x, "NoSpaceAfterCloseBrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceAfterCloseAngularBracket(value: Rule): Self = this.set("NoSpaceAfterCloseAngularBracket", value.asInstanceOf[js.Any])
+    def setNoSpaceAfterCloseBracket(value: Rule): Self = StObject.set(x, "NoSpaceAfterCloseBracket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceAfterCloseBrace(value: Rule): Self = this.set("NoSpaceAfterCloseBrace", value.asInstanceOf[js.Any])
+    def setNoSpaceAfterComma(value: Rule): Self = StObject.set(x, "NoSpaceAfterComma", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceAfterCloseBracket(value: Rule): Self = this.set("NoSpaceAfterCloseBracket", value.asInstanceOf[js.Any])
+    def setNoSpaceAfterConstructor(value: Rule): Self = StObject.set(x, "NoSpaceAfterConstructor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceAfterComma(value: Rule): Self = this.set("NoSpaceAfterComma", value.asInstanceOf[js.Any])
+    def setNoSpaceAfterDot(value: Rule): Self = StObject.set(x, "NoSpaceAfterDot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceAfterConstructor(value: Rule): Self = this.set("NoSpaceAfterConstructor", value.asInstanceOf[js.Any])
+    def setNoSpaceAfterEllipsis(value: Rule): Self = StObject.set(x, "NoSpaceAfterEllipsis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceAfterDot(value: Rule): Self = this.set("NoSpaceAfterDot", value.asInstanceOf[js.Any])
+    def setNoSpaceAfterKeywordInControl(value: Rule): Self = StObject.set(x, "NoSpaceAfterKeywordInControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceAfterEllipsis(value: Rule): Self = this.set("NoSpaceAfterEllipsis", value.asInstanceOf[js.Any])
+    def setNoSpaceAfterModuleImport(value: Rule): Self = StObject.set(x, "NoSpaceAfterModuleImport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceAfterKeywordInControl(value: Rule): Self = this.set("NoSpaceAfterKeywordInControl", value.asInstanceOf[js.Any])
+    def setNoSpaceAfterOpenAngularBracket(value: Rule): Self = StObject.set(x, "NoSpaceAfterOpenAngularBracket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceAfterModuleImport(value: Rule): Self = this.set("NoSpaceAfterModuleImport", value.asInstanceOf[js.Any])
+    def setNoSpaceAfterOpenBracket(value: Rule): Self = StObject.set(x, "NoSpaceAfterOpenBracket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceAfterOpenAngularBracket(value: Rule): Self = this.set("NoSpaceAfterOpenAngularBracket", value.asInstanceOf[js.Any])
+    def setNoSpaceAfterOpenParen(value: Rule): Self = StObject.set(x, "NoSpaceAfterOpenParen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceAfterOpenBracket(value: Rule): Self = this.set("NoSpaceAfterOpenBracket", value.asInstanceOf[js.Any])
+    def setNoSpaceAfterOptionalParameters(value: Rule): Self = StObject.set(x, "NoSpaceAfterOptionalParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceAfterOpenParen(value: Rule): Self = this.set("NoSpaceAfterOpenParen", value.asInstanceOf[js.Any])
+    def setNoSpaceAfterSemicolonInFor(value: Rule): Self = StObject.set(x, "NoSpaceAfterSemicolonInFor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceAfterOptionalParameters(value: Rule): Self = this.set("NoSpaceAfterOptionalParameters", value.asInstanceOf[js.Any])
+    def setNoSpaceAfterUnaryPredecrementOperator(value: Rule): Self = StObject.set(x, "NoSpaceAfterUnaryPredecrementOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceAfterSemicolonInFor(value: Rule): Self = this.set("NoSpaceAfterSemicolonInFor", value.asInstanceOf[js.Any])
+    def setNoSpaceAfterUnaryPrefixOperator(value: Rule): Self = StObject.set(x, "NoSpaceAfterUnaryPrefixOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceAfterUnaryPredecrementOperator(value: Rule): Self = this.set("NoSpaceAfterUnaryPredecrementOperator", value.asInstanceOf[js.Any])
+    def setNoSpaceAfterUnaryPreincrementOperator(value: Rule): Self = StObject.set(x, "NoSpaceAfterUnaryPreincrementOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceAfterUnaryPrefixOperator(value: Rule): Self = this.set("NoSpaceAfterUnaryPrefixOperator", value.asInstanceOf[js.Any])
+    def setNoSpaceBeforeBinaryOperator(value: Rule): Self = StObject.set(x, "NoSpaceBeforeBinaryOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceAfterUnaryPreincrementOperator(value: Rule): Self = this.set("NoSpaceAfterUnaryPreincrementOperator", value.asInstanceOf[js.Any])
+    def setNoSpaceBeforeCloseAngularBracket(value: Rule): Self = StObject.set(x, "NoSpaceBeforeCloseAngularBracket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceBeforeBinaryOperator(value: Rule): Self = this.set("NoSpaceBeforeBinaryOperator", value.asInstanceOf[js.Any])
+    def setNoSpaceBeforeCloseBracket(value: Rule): Self = StObject.set(x, "NoSpaceBeforeCloseBracket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceBeforeCloseAngularBracket(value: Rule): Self = this.set("NoSpaceBeforeCloseAngularBracket", value.asInstanceOf[js.Any])
+    def setNoSpaceBeforeCloseParen(value: Rule): Self = StObject.set(x, "NoSpaceBeforeCloseParen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceBeforeCloseBracket(value: Rule): Self = this.set("NoSpaceBeforeCloseBracket", value.asInstanceOf[js.Any])
+    def setNoSpaceBeforeColon(value: Rule): Self = StObject.set(x, "NoSpaceBeforeColon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceBeforeCloseParen(value: Rule): Self = this.set("NoSpaceBeforeCloseParen", value.asInstanceOf[js.Any])
+    def setNoSpaceBeforeComma(value: Rule): Self = StObject.set(x, "NoSpaceBeforeComma", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceBeforeColon(value: Rule): Self = this.set("NoSpaceBeforeColon", value.asInstanceOf[js.Any])
+    def setNoSpaceBeforeDot(value: Rule): Self = StObject.set(x, "NoSpaceBeforeDot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceBeforeComma(value: Rule): Self = this.set("NoSpaceBeforeComma", value.asInstanceOf[js.Any])
+    def setNoSpaceBeforeOpenAngularBracket(value: Rule): Self = StObject.set(x, "NoSpaceBeforeOpenAngularBracket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceBeforeDot(value: Rule): Self = this.set("NoSpaceBeforeDot", value.asInstanceOf[js.Any])
+    def setNoSpaceBeforeOpenBracket(value: Rule): Self = StObject.set(x, "NoSpaceBeforeOpenBracket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceBeforeOpenAngularBracket(value: Rule): Self = this.set("NoSpaceBeforeOpenAngularBracket", value.asInstanceOf[js.Any])
+    def setNoSpaceBeforeOpenParenInFuncCall(value: Rule): Self = StObject.set(x, "NoSpaceBeforeOpenParenInFuncCall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceBeforeOpenBracket(value: Rule): Self = this.set("NoSpaceBeforeOpenBracket", value.asInstanceOf[js.Any])
+    def setNoSpaceBeforeOpenParenInFuncDecl(value: Rule): Self = StObject.set(x, "NoSpaceBeforeOpenParenInFuncDecl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceBeforeOpenParenInFuncCall(value: Rule): Self = this.set("NoSpaceBeforeOpenParenInFuncCall", value.asInstanceOf[js.Any])
+    def setNoSpaceBeforeQMark(value: Rule): Self = StObject.set(x, "NoSpaceBeforeQMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceBeforeOpenParenInFuncDecl(value: Rule): Self = this.set("NoSpaceBeforeOpenParenInFuncDecl", value.asInstanceOf[js.Any])
+    def setNoSpaceBeforeSemicolon(value: Rule): Self = StObject.set(x, "NoSpaceBeforeSemicolon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceBeforeQMark(value: Rule): Self = this.set("NoSpaceBeforeQMark", value.asInstanceOf[js.Any])
+    def setNoSpaceBeforeUnaryPostdecrementOperator(value: Rule): Self = StObject.set(x, "NoSpaceBeforeUnaryPostdecrementOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceBeforeSemicolon(value: Rule): Self = this.set("NoSpaceBeforeSemicolon", value.asInstanceOf[js.Any])
+    def setNoSpaceBeforeUnaryPostincrementOperator(value: Rule): Self = StObject.set(x, "NoSpaceBeforeUnaryPostincrementOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceBeforeUnaryPostdecrementOperator(value: Rule): Self = this.set("NoSpaceBeforeUnaryPostdecrementOperator", value.asInstanceOf[js.Any])
+    def setNoSpaceBetweenCloseParenAndAngularBracket(value: Rule): Self = StObject.set(x, "NoSpaceBetweenCloseParenAndAngularBracket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceBeforeUnaryPostincrementOperator(value: Rule): Self = this.set("NoSpaceBeforeUnaryPostincrementOperator", value.asInstanceOf[js.Any])
+    def setNoSpaceBetweenEmptyBraceBrackets(value: Rule): Self = StObject.set(x, "NoSpaceBetweenEmptyBraceBrackets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceBetweenCloseParenAndAngularBracket(value: Rule): Self = this.set("NoSpaceBetweenCloseParenAndAngularBracket", value.asInstanceOf[js.Any])
+    def setNoSpaceBetweenEmptyInterfaceBraceBrackets(value: Rule): Self = StObject.set(x, "NoSpaceBetweenEmptyInterfaceBraceBrackets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceBetweenEmptyBraceBrackets(value: Rule): Self = this.set("NoSpaceBetweenEmptyBraceBrackets", value.asInstanceOf[js.Any])
+    def setNoSpaceBetweenParens(value: Rule): Self = StObject.set(x, "NoSpaceBetweenParens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceBetweenEmptyInterfaceBraceBrackets(value: Rule): Self = this.set("NoSpaceBetweenEmptyInterfaceBraceBrackets", value.asInstanceOf[js.Any])
+    def setNoSpaceBetweenReturnAndSemicolon(value: Rule): Self = StObject.set(x, "NoSpaceBetweenReturnAndSemicolon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceBetweenParens(value: Rule): Self = this.set("NoSpaceBetweenParens", value.asInstanceOf[js.Any])
+    def setSpaceAfterAddWhenFollowedByPreincrement(value: Rule): Self = StObject.set(x, "SpaceAfterAddWhenFollowedByPreincrement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSpaceBetweenReturnAndSemicolon(value: Rule): Self = this.set("NoSpaceBetweenReturnAndSemicolon", value.asInstanceOf[js.Any])
+    def setSpaceAfterAddWhenFollowedByUnaryPlus(value: Rule): Self = StObject.set(x, "SpaceAfterAddWhenFollowedByUnaryPlus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterAddWhenFollowedByPreincrement(value: Rule): Self = this.set("SpaceAfterAddWhenFollowedByPreincrement", value.asInstanceOf[js.Any])
+    def setSpaceAfterAnonymousFunctionKeyword(value: Rule): Self = StObject.set(x, "SpaceAfterAnonymousFunctionKeyword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterAddWhenFollowedByUnaryPlus(value: Rule): Self = this.set("SpaceAfterAddWhenFollowedByUnaryPlus", value.asInstanceOf[js.Any])
+    def setSpaceAfterArrow(value: Rule): Self = StObject.set(x, "SpaceAfterArrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterAnonymousFunctionKeyword(value: Rule): Self = this.set("SpaceAfterAnonymousFunctionKeyword", value.asInstanceOf[js.Any])
+    def setSpaceAfterBinaryKeywordOperator(value: Rule): Self = StObject.set(x, "SpaceAfterBinaryKeywordOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterArrow(value: Rule): Self = this.set("SpaceAfterArrow", value.asInstanceOf[js.Any])
+    def setSpaceAfterBinaryOperator(value: Rule): Self = StObject.set(x, "SpaceAfterBinaryOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterBinaryKeywordOperator(value: Rule): Self = this.set("SpaceAfterBinaryKeywordOperator", value.asInstanceOf[js.Any])
+    def setSpaceAfterCertainKeywords(value: Rule): Self = StObject.set(x, "SpaceAfterCertainKeywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterBinaryOperator(value: Rule): Self = this.set("SpaceAfterBinaryOperator", value.asInstanceOf[js.Any])
+    def setSpaceAfterCertainTypeScriptKeywords(value: Rule): Self = StObject.set(x, "SpaceAfterCertainTypeScriptKeywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterCertainKeywords(value: Rule): Self = this.set("SpaceAfterCertainKeywords", value.asInstanceOf[js.Any])
+    def setSpaceAfterCloseBrace(value: Rule): Self = StObject.set(x, "SpaceAfterCloseBrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterCertainTypeScriptKeywords(value: Rule): Self = this.set("SpaceAfterCertainTypeScriptKeywords", value.asInstanceOf[js.Any])
+    def setSpaceAfterColon(value: Rule): Self = StObject.set(x, "SpaceAfterColon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterCloseBrace(value: Rule): Self = this.set("SpaceAfterCloseBrace", value.asInstanceOf[js.Any])
+    def setSpaceAfterComma(value: Rule): Self = StObject.set(x, "SpaceAfterComma", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterColon(value: Rule): Self = this.set("SpaceAfterColon", value.asInstanceOf[js.Any])
+    def setSpaceAfterFunctionInFuncDecl(value: Rule): Self = StObject.set(x, "SpaceAfterFunctionInFuncDecl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterComma(value: Rule): Self = this.set("SpaceAfterComma", value.asInstanceOf[js.Any])
+    def setSpaceAfterGetSetInMember(value: Rule): Self = StObject.set(x, "SpaceAfterGetSetInMember", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterFunctionInFuncDecl(value: Rule): Self = this.set("SpaceAfterFunctionInFuncDecl", value.asInstanceOf[js.Any])
+    def setSpaceAfterKeywordInControl(value: Rule): Self = StObject.set(x, "SpaceAfterKeywordInControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterGetSetInMember(value: Rule): Self = this.set("SpaceAfterGetSetInMember", value.asInstanceOf[js.Any])
+    def setSpaceAfterModuleName(value: Rule): Self = StObject.set(x, "SpaceAfterModuleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterKeywordInControl(value: Rule): Self = this.set("SpaceAfterKeywordInControl", value.asInstanceOf[js.Any])
+    def setSpaceAfterOpenBrace(value: Rule): Self = StObject.set(x, "SpaceAfterOpenBrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterModuleName(value: Rule): Self = this.set("SpaceAfterModuleName", value.asInstanceOf[js.Any])
+    def setSpaceAfterOpenParen(value: Rule): Self = StObject.set(x, "SpaceAfterOpenParen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterOpenBrace(value: Rule): Self = this.set("SpaceAfterOpenBrace", value.asInstanceOf[js.Any])
+    def setSpaceAfterPostdecrementWhenFollowedBySubtract(value: Rule): Self = StObject.set(x, "SpaceAfterPostdecrementWhenFollowedBySubtract", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterOpenParen(value: Rule): Self = this.set("SpaceAfterOpenParen", value.asInstanceOf[js.Any])
+    def setSpaceAfterPostincrementWhenFollowedByAdd(value: Rule): Self = StObject.set(x, "SpaceAfterPostincrementWhenFollowedByAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterPostdecrementWhenFollowedBySubtract(value: Rule): Self = this.set("SpaceAfterPostdecrementWhenFollowedBySubtract", value.asInstanceOf[js.Any])
+    def setSpaceAfterQMark(value: Rule): Self = StObject.set(x, "SpaceAfterQMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterPostincrementWhenFollowedByAdd(value: Rule): Self = this.set("SpaceAfterPostincrementWhenFollowedByAdd", value.asInstanceOf[js.Any])
+    def setSpaceAfterSemicolon(value: Rule): Self = StObject.set(x, "SpaceAfterSemicolon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterQMark(value: Rule): Self = this.set("SpaceAfterQMark", value.asInstanceOf[js.Any])
+    def setSpaceAfterSemicolonInFor(value: Rule): Self = StObject.set(x, "SpaceAfterSemicolonInFor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterSemicolon(value: Rule): Self = this.set("SpaceAfterSemicolon", value.asInstanceOf[js.Any])
+    def setSpaceAfterSubtractWhenFollowedByPredecrement(value: Rule): Self = StObject.set(x, "SpaceAfterSubtractWhenFollowedByPredecrement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterSemicolonInFor(value: Rule): Self = this.set("SpaceAfterSemicolonInFor", value.asInstanceOf[js.Any])
+    def setSpaceAfterSubtractWhenFollowedByUnaryMinus(value: Rule): Self = StObject.set(x, "SpaceAfterSubtractWhenFollowedByUnaryMinus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterSubtractWhenFollowedByPredecrement(value: Rule): Self = this.set("SpaceAfterSubtractWhenFollowedByPredecrement", value.asInstanceOf[js.Any])
+    def setSpaceAfterTryFinally(value: Rule): Self = StObject.set(x, "SpaceAfterTryFinally", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterSubtractWhenFollowedByUnaryMinus(value: Rule): Self = this.set("SpaceAfterSubtractWhenFollowedByUnaryMinus", value.asInstanceOf[js.Any])
+    def setSpaceAfterVoidOperator(value: Rule): Self = StObject.set(x, "SpaceAfterVoidOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterTryFinally(value: Rule): Self = this.set("SpaceAfterTryFinally", value.asInstanceOf[js.Any])
+    def setSpaceBeforeBinaryKeywordOperator(value: Rule): Self = StObject.set(x, "SpaceBeforeBinaryKeywordOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterVoidOperator(value: Rule): Self = this.set("SpaceAfterVoidOperator", value.asInstanceOf[js.Any])
+    def setSpaceBeforeBinaryOperator(value: Rule): Self = StObject.set(x, "SpaceBeforeBinaryOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceBeforeBinaryKeywordOperator(value: Rule): Self = this.set("SpaceBeforeBinaryKeywordOperator", value.asInstanceOf[js.Any])
+    def setSpaceBeforeCertainTypeScriptKeywords(value: Rule): Self = StObject.set(x, "SpaceBeforeCertainTypeScriptKeywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceBeforeBinaryOperator(value: Rule): Self = this.set("SpaceBeforeBinaryOperator", value.asInstanceOf[js.Any])
+    def setSpaceBeforeCloseBrace(value: Rule): Self = StObject.set(x, "SpaceBeforeCloseBrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceBeforeCertainTypeScriptKeywords(value: Rule): Self = this.set("SpaceBeforeCertainTypeScriptKeywords", value.asInstanceOf[js.Any])
+    def setSpaceBeforeCloseParen(value: Rule): Self = StObject.set(x, "SpaceBeforeCloseParen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceBeforeCloseBrace(value: Rule): Self = this.set("SpaceBeforeCloseBrace", value.asInstanceOf[js.Any])
+    def setSpaceBeforeOpenBraceInControl(value: Rule): Self = StObject.set(x, "SpaceBeforeOpenBraceInControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceBeforeCloseParen(value: Rule): Self = this.set("SpaceBeforeCloseParen", value.asInstanceOf[js.Any])
+    def setSpaceBeforeOpenBraceInFunction(value: Rule): Self = StObject.set(x, "SpaceBeforeOpenBraceInFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceBeforeOpenBraceInControl(value: Rule): Self = this.set("SpaceBeforeOpenBraceInControl", value.asInstanceOf[js.Any])
+    def setSpaceBeforeOpenBraceInTypeScriptDeclWithBlock(value: Rule): Self = StObject.set(x, "SpaceBeforeOpenBraceInTypeScriptDeclWithBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceBeforeOpenBraceInFunction(value: Rule): Self = this.set("SpaceBeforeOpenBraceInFunction", value.asInstanceOf[js.Any])
+    def setSpaceBetweenCloseBraceAndElse(value: Rule): Self = StObject.set(x, "SpaceBetweenCloseBraceAndElse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceBeforeOpenBraceInTypeScriptDeclWithBlock(value: Rule): Self = this.set("SpaceBeforeOpenBraceInTypeScriptDeclWithBlock", value.asInstanceOf[js.Any])
+    def setSpaceBetweenCloseBraceAndWhile(value: Rule): Self = StObject.set(x, "SpaceBetweenCloseBraceAndWhile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceBetweenCloseBraceAndElse(value: Rule): Self = this.set("SpaceBetweenCloseBraceAndElse", value.asInstanceOf[js.Any])
+    def setSpaceBetweenStatements(value: Rule): Self = StObject.set(x, "SpaceBetweenStatements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceBetweenCloseBraceAndWhile(value: Rule): Self = this.set("SpaceBetweenCloseBraceAndWhile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpaceBetweenStatements(value: Rule): Self = this.set("SpaceBetweenStatements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeScriptOpenBraceLeftTokenRange(value: TokenRange): Self = this.set("TypeScriptOpenBraceLeftTokenRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetRuleName(value: Rule => js.Any): Self = this.set("getRuleName", js.Any.fromFunction1(value))
+    def setTypeScriptOpenBraceLeftTokenRange(value: TokenRange): Self = StObject.set(x, "TypeScriptOpenBraceLeftTokenRange", value.asInstanceOf[js.Any])
   }
 }

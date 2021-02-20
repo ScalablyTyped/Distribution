@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddApplicationOutputRequest extends js.Object {
+trait AddApplicationOutputRequest extends StObject {
   
   /**
     * The name of the application to which you want to add the output configuration.
@@ -35,27 +36,15 @@ object AddApplicationOutputRequest {
   }
   
   @scala.inline
-  implicit class AddApplicationOutputRequestOps[Self <: AddApplicationOutputRequest] (val x: Self) extends AnyVal {
+  implicit class AddApplicationOutputRequestMutableBuilder[Self <: AddApplicationOutputRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = this.set("CurrentApplicationVersionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutput(value: Output): Self = this.set("Output", value.asInstanceOf[js.Any])
+    def setOutput(value: Output): Self = StObject.set(x, "Output", value.asInstanceOf[js.Any])
   }
 }

@@ -3,6 +3,7 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.DeclareExportAllDeclaration
 import typings.babelTypes.babelTypesStrings.`type`
 import typings.babelTypes.babelTypesStrings.value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,30 +34,18 @@ object DeclareExportAllDeclaration_ {
   }
   
   @scala.inline
-  implicit class DeclareExportAllDeclaration_Ops[Self <: DeclareExportAllDeclaration_] (val x: Self) extends AnyVal {
+  implicit class DeclareExportAllDeclaration_MutableBuilder[Self <: DeclareExportAllDeclaration_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportKind(value: `type` | value): Self = StObject.set(x, "exportKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportKindNull: Self = StObject.set(x, "exportKind", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource(value: StringLiteral_): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: StringLiteral_): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: DeclareExportAllDeclaration): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExportKind(value: `type` | value): Self = this.set("exportKind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExportKindNull: Self = this.set("exportKind", null)
+    def setType(value: DeclareExportAllDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

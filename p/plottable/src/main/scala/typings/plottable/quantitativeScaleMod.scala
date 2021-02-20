@@ -4,14 +4,14 @@ import typings.plottable.scaleMod.Scale
 import typings.plottable.scalesMod.IPaddingExceptionsProvider
 import typings.plottable.scalesMod.ITransformableScale
 import typings.plottable.tickGeneratorsMod.ITickGenerator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/scales/quantitativeScale", JSImport.Namespace)
-@js.native
-object quantitativeScaleMod extends js.Object {
+object quantitativeScaleMod {
   
+  @JSImport("plottable/build/src/scales/quantitativeScale", "QuantitativeScale")
   @js.native
   /**
     * A QuantitativeScale is a Scale that maps number-like values to numbers.
@@ -144,9 +144,16 @@ object quantitativeScaleMod extends js.Object {
     def tickGenerator(generator: ITickGenerator[D]): this.type = js.native
   }
   /* static members */
-  @js.native
-  object QuantitativeScale extends js.Object {
+  object QuantitativeScale {
     
-    var _DEFAULT_NUM_TICKS: Double = js.native
+    @JSImport("plottable/build/src/scales/quantitativeScale", "QuantitativeScale")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("plottable/build/src/scales/quantitativeScale", "QuantitativeScale._DEFAULT_NUM_TICKS")
+    @js.native
+    def _DEFAULT_NUM_TICKS: Double = js.native
+    @scala.inline
+    def _DEFAULT_NUM_TICKS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_NUM_TICKS")(x.asInstanceOf[js.Any])
   }
 }

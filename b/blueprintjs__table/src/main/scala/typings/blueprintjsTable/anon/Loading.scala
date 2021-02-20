@@ -1,11 +1,12 @@
 package typings.blueprintjsTable.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Loading extends js.Object {
+trait Loading extends StObject {
   
   var loading: Boolean = js.native
   
@@ -20,24 +21,12 @@ object Loading {
   }
   
   @scala.inline
-  implicit class LoadingOps[Self <: Loading] (val x: Self) extends AnyVal {
+  implicit class LoadingMutableBuilder[Self <: Loading] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLoading(value: Boolean): Self = this.set("loading", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenderMode(value: typings.blueprintjsTable.renderModeMod.RenderMode): Self = this.set("renderMode", value.asInstanceOf[js.Any])
+    def setRenderMode(value: typings.blueprintjsTable.renderModeMod.RenderMode): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
   }
 }

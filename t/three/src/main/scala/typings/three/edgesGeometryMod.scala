@@ -3,14 +3,14 @@ package typings.three
 import typings.three.anon.ThresholdAngle
 import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.geometryMod.Geometry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/geometries/EdgesGeometry", JSImport.Namespace)
-@js.native
-object edgesGeometryMod extends js.Object {
+object edgesGeometryMod {
   
+  @JSImport("three/src/geometries/EdgesGeometry", "EdgesGeometry")
   @js.native
   class EdgesGeometry protected () extends BufferGeometry {
     /**

@@ -1,12 +1,13 @@
 package typings.chrome.anon
 
 import typings.chrome.chrome.input.ime.AssistiveWindowProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContextID extends js.Object {
+trait ContextID extends StObject {
   
   var contextID: Double = js.native
   
@@ -21,24 +22,12 @@ object ContextID {
   }
   
   @scala.inline
-  implicit class ContextIDOps[Self <: ContextID] (val x: Self) extends AnyVal {
+  implicit class ContextIDMutableBuilder[Self <: ContextID] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContextID(value: Double): Self = this.set("contextID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperties(value: AssistiveWindowProperties): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setProperties(value: AssistiveWindowProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

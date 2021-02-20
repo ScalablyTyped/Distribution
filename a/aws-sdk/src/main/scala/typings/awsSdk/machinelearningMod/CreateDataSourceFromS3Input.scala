@@ -1,11 +1,12 @@
 package typings.awsSdk.machinelearningMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDataSourceFromS3Input extends js.Object {
+trait CreateDataSourceFromS3Input extends StObject {
   
   /**
     * The compute statistics for a DataSource. The statistics are generated from the observation data referenced by a DataSource. Amazon ML uses the statistics internally during MLModel training. This parameter must be set to true if the DataSource needs to be used for MLModel training.
@@ -36,36 +37,24 @@ object CreateDataSourceFromS3Input {
   }
   
   @scala.inline
-  implicit class CreateDataSourceFromS3InputOps[Self <: CreateDataSourceFromS3Input] (val x: Self) extends AnyVal {
+  implicit class CreateDataSourceFromS3InputMutableBuilder[Self <: CreateDataSourceFromS3Input] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputeStatistics(value: ComputeStatistics): Self = StObject.set(x, "ComputeStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputeStatisticsUndefined: Self = StObject.set(x, "ComputeStatistics", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSourceId(value: EntityId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceId(value: EntityId): Self = this.set("DataSourceId", value.asInstanceOf[js.Any])
+    def setDataSourceName(value: EntityName): Self = StObject.set(x, "DataSourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSpec(value: S3DataSpec): Self = this.set("DataSpec", value.asInstanceOf[js.Any])
+    def setDataSourceNameUndefined: Self = StObject.set(x, "DataSourceName", js.undefined)
     
     @scala.inline
-    def setComputeStatistics(value: ComputeStatistics): Self = this.set("ComputeStatistics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComputeStatistics: Self = this.set("ComputeStatistics", js.undefined)
-    
-    @scala.inline
-    def setDataSourceName(value: EntityName): Self = this.set("DataSourceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataSourceName: Self = this.set("DataSourceName", js.undefined)
+    def setDataSpec(value: S3DataSpec): Self = StObject.set(x, "DataSpec", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 
 import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
   - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 */
-trait MeasureKind extends js.Object
+trait MeasureKind extends StObject
 object MeasureKind {
   
   /** use the radius measurement. This option cannot be used from the GUI Interface. */

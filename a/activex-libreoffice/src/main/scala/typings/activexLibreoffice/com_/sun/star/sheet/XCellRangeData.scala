@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,27 +55,15 @@ object XCellRangeData {
   }
   
   @scala.inline
-  implicit class XCellRangeDataOps[Self <: XCellRangeData] (val x: Self) extends AnyVal {
+  implicit class XCellRangeDataMutableBuilder[Self <: XCellRangeData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataArray(value: SafeArray[SafeArray[_]]): Self = StObject.set(x, "DataArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDataArray(value: () => SafeArray[SafeArray[_]]): Self = StObject.set(x, "getDataArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataArray(value: SafeArray[SafeArray[_]]): Self = this.set("DataArray", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetDataArray(value: () => SafeArray[SafeArray[_]]): Self = this.set("getDataArray", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDataArray(value: SeqEquiv[SeqEquiv[_]] => Unit): Self = this.set("setDataArray", js.Any.fromFunction1(value))
+    def setSetDataArray(value: SeqEquiv[SeqEquiv[_]] => Unit): Self = StObject.set(x, "setDataArray", js.Any.fromFunction1(value))
   }
 }

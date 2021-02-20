@@ -1,20 +1,15 @@
 package typings.nodeHueApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("node-hue-api", "lightState")
-@js.native
-object lightState extends js.Object {
+object lightState {
   
-  def create(): State = js.native
-  def create(values: js.Object): State = js.native
-  
-  def isLightState(obj: js.Object): /* is node-hue-api.node-hue-api.lightState.State */ Boolean = js.native
-  
+  @JSImport("node-hue-api", "lightState.State")
   @js.native
-  class State () extends js.Object {
+  class State () extends StObject {
     
     /**
       * Adds the alert state
@@ -266,4 +261,15 @@ object lightState extends js.Object {
       */
     def xy_inc(value: Double): State = js.native
   }
+  
+  @JSImport("node-hue-api", "lightState.create")
+  @js.native
+  def create(): State = js.native
+  @JSImport("node-hue-api", "lightState.create")
+  @js.native
+  def create(values: js.Object): State = js.native
+  
+  @JSImport("node-hue-api", "lightState.isLightState")
+  @js.native
+  def isLightState(obj: js.Object): /* is node-hue-api.node-hue-api.lightState.State */ Boolean = js.native
 }

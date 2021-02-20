@@ -1,11 +1,12 @@
 package typings.dndCore.interfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BeginDragPayload extends js.Object {
+trait BeginDragPayload extends StObject {
   
   var clientOffset: XYCoord | Null = js.native
   
@@ -28,42 +29,30 @@ object BeginDragPayload {
   }
   
   @scala.inline
-  implicit class BeginDragPayloadOps[Self <: BeginDragPayload] (val x: Self) extends AnyVal {
+  implicit class BeginDragPayloadMutableBuilder[Self <: BeginDragPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientOffset(value: XYCoord): Self = StObject.set(x, "clientOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientOffsetNull: Self = StObject.set(x, "clientOffset", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsSourcePublic(value: Boolean): Self = StObject.set(x, "isSourcePublic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSourcePublic(value: Boolean): Self = this.set("isSourcePublic", value.asInstanceOf[js.Any])
+    def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: js.Any): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setItemType(value: Identifier): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemType(value: Identifier): Self = this.set("itemType", value.asInstanceOf[js.Any])
+    def setSourceClientOffset(value: XYCoord): Self = StObject.set(x, "sourceClientOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceId(value: Identifier): Self = this.set("sourceId", value.asInstanceOf[js.Any])
+    def setSourceClientOffsetNull: Self = StObject.set(x, "sourceClientOffset", null)
     
     @scala.inline
-    def setClientOffset(value: XYCoord): Self = this.set("clientOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientOffsetNull: Self = this.set("clientOffset", null)
-    
-    @scala.inline
-    def setSourceClientOffset(value: XYCoord): Self = this.set("sourceClientOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceClientOffsetNull: Self = this.set("sourceClientOffset", null)
+    def setSourceId(value: Identifier): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,23 +1,21 @@
 package typings.handsontable.mod.Handsontable
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.handsontable.mod._Handsontable.Core
 import typings.std.HTMLTableCellElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("handsontable", "Handsontable.cellTypes")
-@js.native
-object cellTypes extends js.Object {
+object cellTypes {
   
   @js.native
-  trait Autocomplete extends js.Object {
+  trait Autocomplete extends StObject {
     
     var editor: Instantiable0[typings.handsontable.mod.Handsontable._editors.Autocomplete] = js.native
     
     def renderer(
-      instance: Core,
+      instance: typings.handsontable.mod._Handsontable.Core,
       TD: HTMLTableCellElement,
       row: Double,
       col: Double,
@@ -26,7 +24,7 @@ object cellTypes extends js.Object {
       cellProperties: CellProperties
     ): HTMLTableCellElement | Unit = js.native
     def renderer(
-      instance: Core,
+      instance: typings.handsontable.mod._Handsontable.Core,
       TD: HTMLTableCellElement,
       row: Double,
       col: Double,
@@ -43,12 +41,12 @@ object cellTypes extends js.Object {
   }
   
   @js.native
-  trait Checkbox extends js.Object {
+  trait Checkbox extends StObject {
     
     var editor: Instantiable0[typings.handsontable.mod.Handsontable._editors.Checkbox] = js.native
     
     def renderer(
-      instance: Core,
+      instance: typings.handsontable.mod._Handsontable.Core,
       TD: HTMLTableCellElement,
       row: Double,
       col: Double,
@@ -57,7 +55,7 @@ object cellTypes extends js.Object {
       cellProperties: CellProperties
     ): HTMLTableCellElement | Unit = js.native
     def renderer(
-      instance: Core,
+      instance: typings.handsontable.mod._Handsontable.Core,
       TD: HTMLTableCellElement,
       row: Double,
       col: Double,
@@ -70,12 +68,12 @@ object cellTypes extends js.Object {
   }
   
   @js.native
-  trait Date extends js.Object {
+  trait Date extends StObject {
     
     var editor: Instantiable0[typings.handsontable.mod.Handsontable._editors.Date] = js.native
     
     def renderer(
-      instance: Core,
+      instance: typings.handsontable.mod._Handsontable.Core,
       TD: HTMLTableCellElement,
       row: Double,
       col: Double,
@@ -84,7 +82,7 @@ object cellTypes extends js.Object {
       cellProperties: CellProperties
     ): HTMLTableCellElement | Unit = js.native
     def renderer(
-      instance: Core,
+      instance: typings.handsontable.mod._Handsontable.Core,
       TD: HTMLTableCellElement,
       row: Double,
       col: Double,
@@ -101,12 +99,12 @@ object cellTypes extends js.Object {
   }
   
   @js.native
-  trait Dropdown extends js.Object {
+  trait Dropdown extends StObject {
     
     var editor: Instantiable0[typings.handsontable.mod.Handsontable._editors.Dropdown] = js.native
     
     def renderer(
-      instance: Core,
+      instance: typings.handsontable.mod._Handsontable.Core,
       TD: HTMLTableCellElement,
       row: Double,
       col: Double,
@@ -115,7 +113,7 @@ object cellTypes extends js.Object {
       cellProperties: CellProperties
     ): HTMLTableCellElement | Unit = js.native
     def renderer(
-      instance: Core,
+      instance: typings.handsontable.mod._Handsontable.Core,
       TD: HTMLTableCellElement,
       row: Double,
       col: Double,
@@ -132,12 +130,12 @@ object cellTypes extends js.Object {
   }
   
   @js.native
-  trait Handsontable extends js.Object {
+  trait Handsontable extends StObject {
     
     var editor: Instantiable0[typings.handsontable.mod.Handsontable._editors.Handsontable] = js.native
     
     def renderer(
-      instance: Core,
+      instance: typings.handsontable.mod._Handsontable.Core,
       TD: HTMLTableCellElement,
       row: Double,
       col: Double,
@@ -146,7 +144,7 @@ object cellTypes extends js.Object {
       cellProperties: CellProperties
     ): HTMLTableCellElement | Unit = js.native
     def renderer(
-      instance: Core,
+      instance: typings.handsontable.mod._Handsontable.Core,
       TD: HTMLTableCellElement,
       row: Double,
       col: Double,
@@ -159,14 +157,14 @@ object cellTypes extends js.Object {
   }
   
   @js.native
-  trait Numeric extends js.Object {
+  trait Numeric extends StObject {
     
     var dataType: String = js.native
     
     var editor: Instantiable0[typings.handsontable.mod.Handsontable._editors.Numeric] = js.native
     
     def renderer(
-      instance: Core,
+      instance: typings.handsontable.mod._Handsontable.Core,
       TD: HTMLTableCellElement,
       row: Double,
       col: Double,
@@ -175,7 +173,7 @@ object cellTypes extends js.Object {
       cellProperties: CellProperties
     ): HTMLTableCellElement | Unit = js.native
     def renderer(
-      instance: Core,
+      instance: typings.handsontable.mod._Handsontable.Core,
       TD: HTMLTableCellElement,
       row: Double,
       col: Double,
@@ -192,14 +190,14 @@ object cellTypes extends js.Object {
   }
   
   @js.native
-  trait Password extends js.Object {
+  trait Password extends StObject {
     
     var copyable: Boolean = js.native
     
     var editor: Instantiable0[typings.handsontable.mod.Handsontable._editors.Password] = js.native
     
     def renderer(
-      instance: Core,
+      instance: typings.handsontable.mod._Handsontable.Core,
       TD: HTMLTableCellElement,
       row: Double,
       col: Double,
@@ -208,7 +206,7 @@ object cellTypes extends js.Object {
       cellProperties: CellProperties
     ): HTMLTableCellElement | Unit = js.native
     def renderer(
-      instance: Core,
+      instance: typings.handsontable.mod._Handsontable.Core,
       TD: HTMLTableCellElement,
       row: Double,
       col: Double,
@@ -221,12 +219,12 @@ object cellTypes extends js.Object {
   }
   
   @js.native
-  trait Text extends js.Object {
+  trait Text extends StObject {
     
     var editor: Instantiable0[typings.handsontable.mod.Handsontable._editors.Text] = js.native
     
     def renderer(
-      instance: Core,
+      instance: typings.handsontable.mod._Handsontable.Core,
       TD: HTMLTableCellElement,
       row: Double,
       col: Double,
@@ -235,7 +233,7 @@ object cellTypes extends js.Object {
       cellProperties: CellProperties
     ): HTMLTableCellElement | Unit = js.native
     def renderer(
-      instance: Core,
+      instance: typings.handsontable.mod._Handsontable.Core,
       TD: HTMLTableCellElement,
       row: Double,
       col: Double,
@@ -248,12 +246,12 @@ object cellTypes extends js.Object {
   }
   
   @js.native
-  trait Time extends js.Object {
+  trait Time extends StObject {
     
     var editor: Instantiable0[typings.handsontable.mod.Handsontable._editors.Text] = js.native
     
     def renderer(
-      instance: Core,
+      instance: typings.handsontable.mod._Handsontable.Core,
       TD: HTMLTableCellElement,
       row: Double,
       col: Double,
@@ -262,7 +260,7 @@ object cellTypes extends js.Object {
       cellProperties: CellProperties
     ): HTMLTableCellElement | Unit = js.native
     def renderer(
-      instance: Core,
+      instance: typings.handsontable.mod._Handsontable.Core,
       TD: HTMLTableCellElement,
       row: Double,
       col: Double,

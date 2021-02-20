@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.ApplicationModel.Activation.ActivationKind
 import typings.winrtUwp.Windows.ApplicationModel.Activation.ApplicationExecutionState
 import typings.winrtUwp.Windows.ApplicationModel.Activation.SplashScreen
 import typings.winrtUwp.Windows.Storage.Provider.CachedFileUpdaterUI
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the activated event that fires when the user saves or opens a file that needs updates from the app. */
 @js.native
-trait WebUICachedFileUpdaterActivatedEventArgs extends js.Object {
+trait WebUICachedFileUpdaterActivatedEventArgs extends StObject {
   
   /** Gets the app activated operation. */
   var activatedOperation: ActivatedOperation = js.native
@@ -42,33 +43,21 @@ object WebUICachedFileUpdaterActivatedEventArgs {
   }
   
   @scala.inline
-  implicit class WebUICachedFileUpdaterActivatedEventArgsOps[Self <: WebUICachedFileUpdaterActivatedEventArgs] (val x: Self) extends AnyVal {
+  implicit class WebUICachedFileUpdaterActivatedEventArgsMutableBuilder[Self <: WebUICachedFileUpdaterActivatedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCachedFileUpdaterUI(value: CachedFileUpdaterUI): Self = StObject.set(x, "cachedFileUpdaterUI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivatedOperation(value: ActivatedOperation): Self = this.set("activatedOperation", value.asInstanceOf[js.Any])
+    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCachedFileUpdaterUI(value: CachedFileUpdaterUI): Self = this.set("cachedFileUpdaterUI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: ActivationKind): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = this.set("previousExecutionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = this.set("splashScreen", value.asInstanceOf[js.Any])
+    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
   }
 }

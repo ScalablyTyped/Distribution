@@ -1,17 +1,18 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CalculationType extends js.Object
+sealed trait CalculationType extends StObject
 /**
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.CalculationType")
 @js.native
-object CalculationType extends js.Object {
+object CalculationType extends StObject {
   
   /**
     * This will mark all cells as dirty and then recalculate them.

@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StageDeclaration extends js.Object {
+trait StageDeclaration extends StObject {
   
   /**
     * The actions included in a stage.
@@ -31,36 +32,24 @@ object StageDeclaration {
   }
   
   @scala.inline
-  implicit class StageDeclarationOps[Self <: StageDeclaration] (val x: Self) extends AnyVal {
+  implicit class StageDeclarationMutableBuilder[Self <: StageDeclaration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: StageActionDeclarationList): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsVarargs(value: ActionDeclaration*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockers(value: StageBlockerDeclarationList): Self = StObject.set(x, "blockers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsVarargs(value: ActionDeclaration*): Self = this.set("actions", js.Array(value :_*))
+    def setBlockersUndefined: Self = StObject.set(x, "blockers", js.undefined)
     
     @scala.inline
-    def setActions(value: StageActionDeclarationList): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setBlockersVarargs(value: BlockerDeclaration*): Self = StObject.set(x, "blockers", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: StageName): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBlockersVarargs(value: BlockerDeclaration*): Self = this.set("blockers", js.Array(value :_*))
-    
-    @scala.inline
-    def setBlockers(value: StageBlockerDeclarationList): Self = this.set("blockers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBlockers: Self = this.set("blockers", js.undefined)
+    def setName(value: StageName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

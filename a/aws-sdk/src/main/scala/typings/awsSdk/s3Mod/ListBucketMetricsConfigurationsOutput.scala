@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBucketMetricsConfigurationsOutput extends js.Object {
+trait ListBucketMetricsConfigurationsOutput extends StObject {
   
   /**
     * The marker that is used as a starting point for this metrics configuration list response. This value is present if it was sent in the request.
@@ -36,45 +37,33 @@ object ListBucketMetricsConfigurationsOutput {
   }
   
   @scala.inline
-  implicit class ListBucketMetricsConfigurationsOutputOps[Self <: ListBucketMetricsConfigurationsOutput] (val x: Self) extends AnyVal {
+  implicit class ListBucketMetricsConfigurationsOutputMutableBuilder[Self <: ListBucketMetricsConfigurationsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinuationToken(value: Token): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContinuationTokenUndefined: Self = StObject.set(x, "ContinuationToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsTruncated(value: IsTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuationToken(value: Token): Self = this.set("ContinuationToken", value.asInstanceOf[js.Any])
+    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
     @scala.inline
-    def deleteContinuationToken: Self = this.set("ContinuationToken", js.undefined)
+    def setMetricsConfigurationList(value: MetricsConfigurationList): Self = StObject.set(x, "MetricsConfigurationList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTruncated(value: IsTruncated): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    def setMetricsConfigurationListUndefined: Self = StObject.set(x, "MetricsConfigurationList", js.undefined)
     
     @scala.inline
-    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
+    def setMetricsConfigurationListVarargs(value: MetricsConfiguration*): Self = StObject.set(x, "MetricsConfigurationList", js.Array(value :_*))
     
     @scala.inline
-    def setMetricsConfigurationListVarargs(value: MetricsConfiguration*): Self = this.set("MetricsConfigurationList", js.Array(value :_*))
+    def setNextContinuationToken(value: NextToken): Self = StObject.set(x, "NextContinuationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricsConfigurationList(value: MetricsConfigurationList): Self = this.set("MetricsConfigurationList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricsConfigurationList: Self = this.set("MetricsConfigurationList", js.undefined)
-    
-    @scala.inline
-    def setNextContinuationToken(value: NextToken): Self = this.set("NextContinuationToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextContinuationToken: Self = this.set("NextContinuationToken", js.undefined)
+    def setNextContinuationTokenUndefined: Self = StObject.set(x, "NextContinuationToken", js.undefined)
   }
 }

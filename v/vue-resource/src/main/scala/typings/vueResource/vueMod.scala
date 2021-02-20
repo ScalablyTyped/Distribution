@@ -1,16 +1,15 @@
 package typings.vueResource
 
 import typings.vueResource.anon.Call
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vue/types/vue", JSImport.Namespace)
-@js.native
-object vueMod extends js.Object {
+object vueMod {
   
   @js.native
-  trait Vue extends js.Object {
+  trait Vue extends StObject {
     
     @JSName("$http")
     def $http(

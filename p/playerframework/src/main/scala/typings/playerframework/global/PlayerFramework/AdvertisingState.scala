@@ -1,5 +1,6 @@
 package typings.playerframework.global.PlayerFramework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Enumerations
 @JSGlobal("PlayerFramework.AdvertisingState")
 @js.native
-object AdvertisingState extends js.Object {
+object AdvertisingState extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.playerframework.PlayerFramework.AdvertisingState with Double] = js.native

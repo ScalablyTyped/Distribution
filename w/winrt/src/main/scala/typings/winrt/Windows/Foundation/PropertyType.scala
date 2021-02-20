@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Foundation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PropertyType extends js.Object
+sealed trait PropertyType extends StObject
 @JSGlobal("Windows.Foundation.PropertyType")
 @js.native
-object PropertyType extends js.Object {
+object PropertyType extends StObject {
   
   @js.native
   sealed trait boolean extends PropertyType

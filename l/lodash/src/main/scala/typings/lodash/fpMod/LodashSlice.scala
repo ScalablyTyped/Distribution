@@ -2,12 +2,13 @@ package typings.lodash.fpMod
 
 import typings.lodash.mod.List
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashSlice extends js.Object {
+trait LodashSlice extends StObject {
   
   def apply(start: Double): LodashSlice1x1 = js.native
   def apply(start: Double, end: Double): LodashSlice1x3 = js.native

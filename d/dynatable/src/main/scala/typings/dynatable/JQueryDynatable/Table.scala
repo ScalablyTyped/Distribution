@@ -1,11 +1,12 @@
 package typings.dynatable.JQueryDynatable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Table extends js.Object {
+trait Table extends StObject {
   
   /**
     * Selector used by dynatable in order to find the table body rows
@@ -57,51 +58,39 @@ object Table {
   }
   
   @scala.inline
-  implicit class TableOps[Self <: Table] (val x: Self) extends AnyVal {
+  implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBodyRowSelector(value: String): Self = StObject.set(x, "bodyRowSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyRowSelectorUndefined: Self = StObject.set(x, "bodyRowSelector", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyRowSelector(value: String): Self = this.set("bodyRowSelector", value.asInstanceOf[js.Any])
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def deleteBodyRowSelector: Self = this.set("bodyRowSelector", js.undefined)
+    def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsVarargs(value: Column*): Self = this.set("columns", js.Array(value :_*))
+    def setDefaultColumnIdStyle(value: String): Self = StObject.set(x, "defaultColumnIdStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[Column]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setDefaultColumnIdStyleUndefined: Self = StObject.set(x, "defaultColumnIdStyle", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setHeadRowClass(value: String): Self = StObject.set(x, "headRowClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultColumnIdStyle(value: String): Self = this.set("defaultColumnIdStyle", value.asInstanceOf[js.Any])
+    def setHeadRowClassUndefined: Self = StObject.set(x, "headRowClass", js.undefined)
     
     @scala.inline
-    def deleteDefaultColumnIdStyle: Self = this.set("defaultColumnIdStyle", js.undefined)
+    def setHeadRowSelector(value: String): Self = StObject.set(x, "headRowSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadRowClass(value: String): Self = this.set("headRowClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeadRowClass: Self = this.set("headRowClass", js.undefined)
-    
-    @scala.inline
-    def setHeadRowSelector(value: String): Self = this.set("headRowSelector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeadRowSelector: Self = this.set("headRowSelector", js.undefined)
+    def setHeadRowSelectorUndefined: Self = StObject.set(x, "headRowSelector", js.undefined)
   }
 }

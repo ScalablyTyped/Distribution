@@ -4,12 +4,13 @@ import typings.chromeApps.chromeAppsStrings.fullscreen_
 import typings.chromeApps.chromeAppsStrings.maximized_
 import typings.chromeApps.chromeAppsStrings.minimized_
 import typings.chromeApps.chromeAppsStrings.normal_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FULLSCREEN extends js.Object {
+trait FULLSCREEN extends StObject {
   
   var FULLSCREEN: fullscreen_ = js.native
   
@@ -28,30 +29,18 @@ object FULLSCREEN {
   }
   
   @scala.inline
-  implicit class FULLSCREENOps[Self <: FULLSCREEN] (val x: Self) extends AnyVal {
+  implicit class FULLSCREENMutableBuilder[Self <: FULLSCREEN] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFULLSCREEN(value: fullscreen_): Self = StObject.set(x, "FULLSCREEN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMAXIMIZED(value: maximized_): Self = StObject.set(x, "MAXIMIZED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMINIMIZED(value: minimized_): Self = StObject.set(x, "MINIMIZED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFULLSCREEN(value: fullscreen_): Self = this.set("FULLSCREEN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMAXIMIZED(value: maximized_): Self = this.set("MAXIMIZED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMINIMIZED(value: minimized_): Self = this.set("MINIMIZED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNORMAL(value: normal_): Self = this.set("NORMAL", value.asInstanceOf[js.Any])
+    def setNORMAL(value: normal_): Self = StObject.set(x, "NORMAL", value.asInstanceOf[js.Any])
   }
 }

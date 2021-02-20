@@ -3,6 +3,7 @@ package typings.html5plus
 import typings.html5plus.html5plusStrings.amap
 import typings.html5plus.html5plusStrings.baidu
 import typings.html5plus.html5plusStrings.system
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
   */
 @js.native
-trait PlusGeolocationPositionOptions extends js.Object {
+trait PlusGeolocationPositionOptions extends StObject {
   
   /**
     * 指定获取的定位数据坐标系类型
@@ -88,54 +89,42 @@ object PlusGeolocationPositionOptions {
   }
   
   @scala.inline
-  implicit class PlusGeolocationPositionOptionsOps[Self <: PlusGeolocationPositionOptions] (val x: Self) extends AnyVal {
+  implicit class PlusGeolocationPositionOptionsMutableBuilder[Self <: PlusGeolocationPositionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoordsType(value: String): Self = StObject.set(x, "coordsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoordsTypeUndefined: Self = StObject.set(x, "coordsType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableHighAccuracy(value: Boolean): Self = StObject.set(x, "enableHighAccuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoordsType(value: String): Self = this.set("coordsType", value.asInstanceOf[js.Any])
+    def setEnableHighAccuracyUndefined: Self = StObject.set(x, "enableHighAccuracy", js.undefined)
     
     @scala.inline
-    def deleteCoordsType: Self = this.set("coordsType", js.undefined)
+    def setGeocode(value: Boolean): Self = StObject.set(x, "geocode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableHighAccuracy(value: Boolean): Self = this.set("enableHighAccuracy", value.asInstanceOf[js.Any])
+    def setGeocodeUndefined: Self = StObject.set(x, "geocode", js.undefined)
     
     @scala.inline
-    def deleteEnableHighAccuracy: Self = this.set("enableHighAccuracy", js.undefined)
+    def setMaximumAge(value: Double): Self = StObject.set(x, "maximumAge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeocode(value: Boolean): Self = this.set("geocode", value.asInstanceOf[js.Any])
+    def setMaximumAgeUndefined: Self = StObject.set(x, "maximumAge", js.undefined)
     
     @scala.inline
-    def deleteGeocode: Self = this.set("geocode", js.undefined)
+    def setProvider(value: system | baidu | amap): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumAge(value: Double): Self = this.set("maximumAge", value.asInstanceOf[js.Any])
+    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
     @scala.inline
-    def deleteMaximumAge: Self = this.set("maximumAge", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvider(value: system | baidu | amap): Self = this.set("provider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvider: Self = this.set("provider", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

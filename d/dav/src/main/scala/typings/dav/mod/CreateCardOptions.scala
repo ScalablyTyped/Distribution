@@ -1,12 +1,13 @@
 package typings.dav.mod
 
 import typings.dav.mod.transport.Transport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateCardOptions extends js.Object {
+trait CreateCardOptions extends StObject {
   
   /**
     * VCARD object.
@@ -37,36 +38,24 @@ object CreateCardOptions {
   }
   
   @scala.inline
-  implicit class CreateCardOptionsOps[Self <: CreateCardOptions] (val x: Self) extends AnyVal {
+  implicit class CreateCardOptionsMutableBuilder[Self <: CreateCardOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSandbox(value: Sandbox): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setXhr(value: Transport): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSandbox(value: Sandbox): Self = this.set("sandbox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSandbox: Self = this.set("sandbox", js.undefined)
-    
-    @scala.inline
-    def setXhr(value: Transport): Self = this.set("xhr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXhr: Self = this.set("xhr", js.undefined)
+    def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
   }
 }

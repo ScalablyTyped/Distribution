@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterEmptyReviews extends js.Object {
+trait FilterEmptyReviews extends StObject {
   
   var filterEmptyReviews: scala.Double = js.native
   
@@ -22,27 +23,15 @@ object FilterEmptyReviews {
   }
   
   @scala.inline
-  implicit class FilterEmptyReviewsOps[Self <: FilterEmptyReviews] (val x: Self) extends AnyVal {
+  implicit class FilterEmptyReviewsMutableBuilder[Self <: FilterEmptyReviews] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterEmptyReviews(value: scala.Double): Self = StObject.set(x, "filterEmptyReviews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterEmptyUserNames(value: scala.Double): Self = StObject.set(x, "filterEmptyUserNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFilterEmptyReviews(value: scala.Double): Self = this.set("filterEmptyReviews", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFilterEmptyUserNames(value: scala.Double): Self = this.set("filterEmptyUserNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

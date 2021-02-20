@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScriptBootstrapActionConfig extends js.Object {
+trait ScriptBootstrapActionConfig extends StObject {
   
   /**
     * A list of command line arguments to pass to the bootstrap action script.
@@ -26,30 +27,18 @@ object ScriptBootstrapActionConfig {
   }
   
   @scala.inline
-  implicit class ScriptBootstrapActionConfigOps[Self <: ScriptBootstrapActionConfig] (val x: Self) extends AnyVal {
+  implicit class ScriptBootstrapActionConfigMutableBuilder[Self <: ScriptBootstrapActionConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: XmlStringList): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsUndefined: Self = StObject.set(x, "Args", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgsVarargs(value: XmlString*): Self = StObject.set(x, "Args", js.Array(value :_*))
     
     @scala.inline
-    def setPath(value: XmlString): Self = this.set("Path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setArgsVarargs(value: XmlString*): Self = this.set("Args", js.Array(value :_*))
-    
-    @scala.inline
-    def setArgs(value: XmlStringList): Self = this.set("Args", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArgs: Self = this.set("Args", js.undefined)
+    def setPath(value: XmlString): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
   }
 }

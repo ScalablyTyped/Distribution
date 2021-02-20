@@ -4,18 +4,14 @@ import typings.grpcGrpcJs.anon.LocalityPath
 import typings.grpcGrpcJs.loadBalancerMod.ChannelControlHelper
 import typings.grpcGrpcJs.loadBalancerMod.LoadBalancer
 import typings.grpcGrpcJs.subchannelMod.SubchannelAddress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@grpc/grpc-js/build/src/load-balancer-priority", JSImport.Namespace)
-@js.native
-object loadBalancerPriorityMod extends js.Object {
+object loadBalancerPriorityMod {
   
-  def isLocalitySubchannelAddress(address: SubchannelAddress): /* is @grpc/grpc-js.@grpc/grpc-js/build/src/load-balancer-priority.LocalitySubchannelAddress */ Boolean = js.native
-  
-  def setup(): Unit = js.native
-  
+  @JSImport("@grpc/grpc-js/build/src/load-balancer-priority", "PriorityLoadBalancer")
   @js.native
   class PriorityLoadBalancer protected () extends LoadBalancer {
     def this(channelControlHelper: ChannelControlHelper) = this()
@@ -82,6 +78,14 @@ object loadBalancerPriorityMod extends js.Object {
     
     var updateState: js.Any = js.native
   }
+  
+  @JSImport("@grpc/grpc-js/build/src/load-balancer-priority", "isLocalitySubchannelAddress")
+  @js.native
+  def isLocalitySubchannelAddress(address: SubchannelAddress): /* is @grpc/grpc-js.@grpc/grpc-js/build/src/load-balancer-priority.LocalitySubchannelAddress */ Boolean = js.native
+  
+  @JSImport("@grpc/grpc-js/build/src/load-balancer-priority", "setup")
+  @js.native
+  def setup(): Unit = js.native
   
   type LocalitySubchannelAddress = SubchannelAddress with LocalityPath
 }

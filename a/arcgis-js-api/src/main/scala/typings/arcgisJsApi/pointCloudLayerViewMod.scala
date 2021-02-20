@@ -1,12 +1,11 @@
 package typings.arcgisJsApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("esri/views/layers/PointCloudLayerView", JSImport.Namespace)
-@js.native
-object pointCloudLayerViewMod extends js.Object {
+object pointCloudLayerViewMod {
   
   type PointCloudLayerView = typings.arcgisJsApi.esri.PointCloudLayerView
 }

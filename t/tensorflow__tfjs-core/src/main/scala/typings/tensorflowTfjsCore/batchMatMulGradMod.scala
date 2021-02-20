@@ -1,13 +1,14 @@
 package typings.tensorflowTfjsCore
 
 import typings.tensorflowTfjsCore.kernelRegistryMod.GradConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/gradients/BatchMatMul_grad", JSImport.Namespace)
-@js.native
-object batchMatMulGradMod extends js.Object {
+object batchMatMulGradMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/gradients/BatchMatMul_grad", "batchMatMulGradConfig")
+  @js.native
   val batchMatMulGradConfig: GradConfig = js.native
 }

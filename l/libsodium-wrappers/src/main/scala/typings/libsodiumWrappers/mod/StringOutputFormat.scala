@@ -1,5 +1,6 @@
 package typings.libsodiumWrappers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.libsodiumWrappers.libsodiumWrappersStrings.hex
   - typings.libsodiumWrappers.libsodiumWrappersStrings.base64
 */
-trait StringOutputFormat extends js.Object
+trait StringOutputFormat extends StObject
 object StringOutputFormat {
   
   @scala.inline

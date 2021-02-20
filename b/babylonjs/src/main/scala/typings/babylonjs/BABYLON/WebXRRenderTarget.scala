@@ -3,6 +3,7 @@ package typings.babylonjs.BABYLON
 import typings.babylonjs.WebGLRenderingContext
 import typings.babylonjs.XRSession
 import typings.babylonjs.XRWebGLLayer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,30 +41,18 @@ object WebXRRenderTarget {
   }
   
   @scala.inline
-  implicit class WebXRRenderTargetOps[Self <: WebXRRenderTarget] (val x: Self) extends AnyVal {
+  implicit class WebXRRenderTargetMutableBuilder[Self <: WebXRRenderTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanvasContext(value: WebGLRenderingContext): Self = StObject.set(x, "canvasContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitializeXRLayerAsync(value: XRSession => js.Promise[XRWebGLLayer]): Self = StObject.set(x, "initializeXRLayerAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setXrLayer(value: Nullable[XRWebGLLayer]): Self = StObject.set(x, "xrLayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanvasContext(value: WebGLRenderingContext): Self = this.set("canvasContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitializeXRLayerAsync(value: XRSession => js.Promise[XRWebGLLayer]): Self = this.set("initializeXRLayerAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setXrLayer(value: Nullable[XRWebGLLayer]): Self = this.set("xrLayer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXrLayerNull: Self = this.set("xrLayer", null)
+    def setXrLayerNull: Self = StObject.set(x, "xrLayer", null)
   }
 }

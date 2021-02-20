@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,33 +31,21 @@ object MeshProperties {
   }
   
   @scala.inline
-  implicit class MeshPropertiesOps[Self <: MeshProperties] (val x: Self) extends AnyVal {
+  implicit class MeshPropertiesMutableBuilder[Self <: MeshProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponents(value: js.Array[MeshComponentProperties]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponentsVarargs(value: MeshComponentProperties*): Self = StObject.set(x, "components", js.Array(value :_*))
     
     @scala.inline
-    def setComponentsVarargs(value: MeshComponentProperties*): Self = this.set("components", js.Array(value :_*))
+    def setVertexAttributes(value: MeshVertexAttributesProperties): Self = StObject.set(x, "vertexAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponents(value: js.Array[MeshComponentProperties]): Self = this.set("components", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComponents: Self = this.set("components", js.undefined)
-    
-    @scala.inline
-    def setVertexAttributes(value: MeshVertexAttributesProperties): Self = this.set("vertexAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertexAttributes: Self = this.set("vertexAttributes", js.undefined)
+    def setVertexAttributesUndefined: Self = StObject.set(x, "vertexAttributes", js.undefined)
   }
 }

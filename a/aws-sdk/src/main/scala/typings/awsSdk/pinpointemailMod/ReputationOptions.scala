@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointemailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReputationOptions extends js.Object {
+trait ReputationOptions extends StObject {
   
   /**
     * The date and time (in Unix time) when the reputation metrics were last given a fresh start. When your account is given a fresh start, your reputation metrics are calculated starting from the date of the fresh start.
@@ -26,30 +27,18 @@ object ReputationOptions {
   }
   
   @scala.inline
-  implicit class ReputationOptionsOps[Self <: ReputationOptions] (val x: Self) extends AnyVal {
+  implicit class ReputationOptionsMutableBuilder[Self <: ReputationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastFreshStart(value: LastFreshStart): Self = StObject.set(x, "LastFreshStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastFreshStartUndefined: Self = StObject.set(x, "LastFreshStart", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReputationMetricsEnabled(value: Enabled): Self = StObject.set(x, "ReputationMetricsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastFreshStart(value: LastFreshStart): Self = this.set("LastFreshStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastFreshStart: Self = this.set("LastFreshStart", js.undefined)
-    
-    @scala.inline
-    def setReputationMetricsEnabled(value: Enabled): Self = this.set("ReputationMetricsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReputationMetricsEnabled: Self = this.set("ReputationMetricsEnabled", js.undefined)
+    def setReputationMetricsEnabledUndefined: Self = StObject.set(x, "ReputationMetricsEnabled", js.undefined)
   }
 }

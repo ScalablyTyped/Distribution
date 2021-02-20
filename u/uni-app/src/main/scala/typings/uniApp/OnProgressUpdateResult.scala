@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnProgressUpdateResult extends js.Object {
+trait OnProgressUpdateResult extends StObject {
   
   /**
     * 上传进度百分比
@@ -31,36 +32,24 @@ object OnProgressUpdateResult {
   }
   
   @scala.inline
-  implicit class OnProgressUpdateResultOps[Self <: OnProgressUpdateResult] (val x: Self) extends AnyVal {
+  implicit class OnProgressUpdateResultMutableBuilder[Self <: OnProgressUpdateResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotalBytesExpectedToSend(value: Double): Self = StObject.set(x, "totalBytesExpectedToSend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: Double): Self = this.set("progress", value.asInstanceOf[js.Any])
+    def setTotalBytesExpectedToSendUndefined: Self = StObject.set(x, "totalBytesExpectedToSend", js.undefined)
     
     @scala.inline
-    def deleteProgress: Self = this.set("progress", js.undefined)
+    def setTotalBytesSent(value: Double): Self = StObject.set(x, "totalBytesSent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalBytesExpectedToSend(value: Double): Self = this.set("totalBytesExpectedToSend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalBytesExpectedToSend: Self = this.set("totalBytesExpectedToSend", js.undefined)
-    
-    @scala.inline
-    def setTotalBytesSent(value: Double): Self = this.set("totalBytesSent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalBytesSent: Self = this.set("totalBytesSent", js.undefined)
+    def setTotalBytesSentUndefined: Self = StObject.set(x, "totalBytesSent", js.undefined)
   }
 }

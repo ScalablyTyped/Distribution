@@ -1,12 +1,13 @@
 package typings.officeUiFabricReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "PersonaInitialsColor")
 @js.native
-object PersonaInitialsColor extends js.Object {
+object PersonaInitialsColor extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.personaTypesMod.PersonaInitialsColor with Double] = js.native

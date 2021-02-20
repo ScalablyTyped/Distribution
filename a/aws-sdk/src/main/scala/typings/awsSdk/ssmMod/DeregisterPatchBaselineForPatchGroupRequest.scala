@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeregisterPatchBaselineForPatchGroupRequest extends js.Object {
+trait DeregisterPatchBaselineForPatchGroupRequest extends StObject {
   
   /**
     * The ID of the patch baseline to deregister the patch group from.
@@ -26,24 +27,12 @@ object DeregisterPatchBaselineForPatchGroupRequest {
   }
   
   @scala.inline
-  implicit class DeregisterPatchBaselineForPatchGroupRequestOps[Self <: DeregisterPatchBaselineForPatchGroupRequest] (val x: Self) extends AnyVal {
+  implicit class DeregisterPatchBaselineForPatchGroupRequestMutableBuilder[Self <: DeregisterPatchBaselineForPatchGroupRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBaselineId(value: BaselineId): Self = this.set("BaselineId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPatchGroup(value: PatchGroup): Self = this.set("PatchGroup", value.asInstanceOf[js.Any])
+    def setPatchGroup(value: PatchGroup): Self = StObject.set(x, "PatchGroup", value.asInstanceOf[js.Any])
   }
 }

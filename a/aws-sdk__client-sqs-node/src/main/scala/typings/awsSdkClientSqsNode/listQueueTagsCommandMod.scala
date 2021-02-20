@@ -7,14 +7,14 @@ import typings.awsSdkClientSqsNode.typesListQueueTagsInputMod.ListQueueTagsInput
 import typings.awsSdkClientSqsNode.typesListQueueTagsOutputMod.ListQueueTagsOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-sqs-node/commands/ListQueueTagsCommand", JSImport.Namespace)
-@js.native
-object listQueueTagsCommandMod extends js.Object {
+object listQueueTagsCommandMod {
   
+  @JSImport("@aws-sdk/client-sqs-node/commands/ListQueueTagsCommand", "ListQueueTagsCommand")
   @js.native
   class ListQueueTagsCommand protected () extends Command[
           InputTypesUnion, 

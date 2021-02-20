@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsJobRateIncreaseCriteria extends js.Object {
+trait AwsJobRateIncreaseCriteria extends StObject {
   
   /**
     * When this number of things have been notified, it will initiate an increase in the rollout rate.
@@ -26,30 +27,18 @@ object AwsJobRateIncreaseCriteria {
   }
   
   @scala.inline
-  implicit class AwsJobRateIncreaseCriteriaOps[Self <: AwsJobRateIncreaseCriteria] (val x: Self) extends AnyVal {
+  implicit class AwsJobRateIncreaseCriteriaMutableBuilder[Self <: AwsJobRateIncreaseCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNumberOfNotifiedThings(value: AwsJobRateIncreaseCriteriaNumberOfThings): Self = StObject.set(x, "numberOfNotifiedThings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNumberOfNotifiedThingsUndefined: Self = StObject.set(x, "numberOfNotifiedThings", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumberOfSucceededThings(value: AwsJobRateIncreaseCriteriaNumberOfThings): Self = StObject.set(x, "numberOfSucceededThings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfNotifiedThings(value: AwsJobRateIncreaseCriteriaNumberOfThings): Self = this.set("numberOfNotifiedThings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfNotifiedThings: Self = this.set("numberOfNotifiedThings", js.undefined)
-    
-    @scala.inline
-    def setNumberOfSucceededThings(value: AwsJobRateIncreaseCriteriaNumberOfThings): Self = this.set("numberOfSucceededThings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfSucceededThings: Self = this.set("numberOfSucceededThings", js.undefined)
+    def setNumberOfSucceededThingsUndefined: Self = StObject.set(x, "numberOfSucceededThings", js.undefined)
   }
 }

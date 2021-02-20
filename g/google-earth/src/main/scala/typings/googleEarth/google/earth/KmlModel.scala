@@ -1,5 +1,6 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,7 +58,7 @@ object KmlModel {
   def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
-    equals: KmlObject => Boolean,
+    equals_ : KmlObject => Boolean,
     getAltitudeMode: () => KmlAltitudeModeEnum,
     getId: () => String,
     getLink: () => KmlLink,
@@ -80,47 +81,36 @@ object KmlModel {
     setOrientation: KmlOrientation => Unit,
     setScale: KmlScale => Unit
   ): KmlModel = {
-    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), equals = js.Any.fromFunction1(equals), getAltitudeMode = js.Any.fromFunction0(getAltitudeMode), getId = js.Any.fromFunction0(getId), getLink = js.Any.fromFunction0(getLink), getLocation = js.Any.fromFunction0(getLocation), getOrientation = js.Any.fromFunction0(getOrientation), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getScale = js.Any.fromFunction0(getScale), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), setAltitudeMode = js.Any.fromFunction1(setAltitudeMode), setLink = js.Any.fromFunction1(setLink), setLocation = js.Any.fromFunction1(setLocation), setOrientation = js.Any.fromFunction1(setOrientation), setScale = js.Any.fromFunction1(setScale))
+    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), getAltitudeMode = js.Any.fromFunction0(getAltitudeMode), getId = js.Any.fromFunction0(getId), getLink = js.Any.fromFunction0(getLink), getLocation = js.Any.fromFunction0(getLocation), getOrientation = js.Any.fromFunction0(getOrientation), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getScale = js.Any.fromFunction0(getScale), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), setAltitudeMode = js.Any.fromFunction1(setAltitudeMode), setLink = js.Any.fromFunction1(setLink), setLocation = js.Any.fromFunction1(setLocation), setOrientation = js.Any.fromFunction1(setOrientation), setScale = js.Any.fromFunction1(setScale))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[KmlModel]
   }
   
   @scala.inline
-  implicit class KmlModelOps[Self <: KmlModel] (val x: Self) extends AnyVal {
+  implicit class KmlModelMutableBuilder[Self <: KmlModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetLink(value: () => KmlLink): Self = StObject.set(x, "getLink", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLocation(value: () => KmlLocation): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetOrientation(value: () => KmlOrientation): Self = StObject.set(x, "getOrientation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLink(value: () => KmlLink): Self = this.set("getLink", js.Any.fromFunction0(value))
+    def setGetScale(value: () => KmlScale): Self = StObject.set(x, "getScale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLocation(value: () => KmlLocation): Self = this.set("getLocation", js.Any.fromFunction0(value))
+    def setSetLink(value: KmlLink => Unit): Self = StObject.set(x, "setLink", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetOrientation(value: () => KmlOrientation): Self = this.set("getOrientation", js.Any.fromFunction0(value))
+    def setSetLocation(value: KmlLocation => Unit): Self = StObject.set(x, "setLocation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetScale(value: () => KmlScale): Self = this.set("getScale", js.Any.fromFunction0(value))
+    def setSetOrientation(value: KmlOrientation => Unit): Self = StObject.set(x, "setOrientation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLink(value: KmlLink => Unit): Self = this.set("setLink", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetLocation(value: KmlLocation => Unit): Self = this.set("setLocation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOrientation(value: KmlOrientation => Unit): Self = this.set("setOrientation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetScale(value: KmlScale => Unit): Self = this.set("setScale", js.Any.fromFunction1(value))
+    def setSetScale(value: KmlScale => Unit): Self = StObject.set(x, "setScale", js.Any.fromFunction1(value))
   }
 }

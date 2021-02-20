@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Process extends js.Object {
+trait Process extends StObject {
   
   // User account identifier (user account context the process ran under) for example, AccountName, SID, and so on.
   var accountName: js.UndefOr[NullableOption[String]] = js.native
@@ -59,126 +60,114 @@ object Process {
   }
   
   @scala.inline
-  implicit class ProcessOps[Self <: Process] (val x: Self) extends AnyVal {
+  implicit class ProcessMutableBuilder[Self <: Process] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountName(value: NullableOption[String]): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountNameNull: Self = StObject.set(x, "accountName", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
     
     @scala.inline
-    def setAccountName(value: NullableOption[String]): Self = this.set("accountName", value.asInstanceOf[js.Any])
+    def setCommandLine(value: NullableOption[String]): Self = StObject.set(x, "commandLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccountName: Self = this.set("accountName", js.undefined)
+    def setCommandLineNull: Self = StObject.set(x, "commandLine", null)
     
     @scala.inline
-    def setAccountNameNull: Self = this.set("accountName", null)
+    def setCommandLineUndefined: Self = StObject.set(x, "commandLine", js.undefined)
     
     @scala.inline
-    def setCommandLine(value: NullableOption[String]): Self = this.set("commandLine", value.asInstanceOf[js.Any])
+    def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCommandLine: Self = this.set("commandLine", js.undefined)
+    def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
     
     @scala.inline
-    def setCommandLineNull: Self = this.set("commandLine", null)
+    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
     @scala.inline
-    def setCreatedDateTime(value: NullableOption[String]): Self = this.set("createdDateTime", value.asInstanceOf[js.Any])
+    def setFileHash(value: NullableOption[FileHash]): Self = StObject.set(x, "fileHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedDateTime: Self = this.set("createdDateTime", js.undefined)
+    def setFileHashNull: Self = StObject.set(x, "fileHash", null)
     
     @scala.inline
-    def setCreatedDateTimeNull: Self = this.set("createdDateTime", null)
+    def setFileHashUndefined: Self = StObject.set(x, "fileHash", js.undefined)
     
     @scala.inline
-    def setFileHash(value: NullableOption[FileHash]): Self = this.set("fileHash", value.asInstanceOf[js.Any])
+    def setIntegrityLevel(value: NullableOption[ProcessIntegrityLevel]): Self = StObject.set(x, "integrityLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFileHash: Self = this.set("fileHash", js.undefined)
+    def setIntegrityLevelNull: Self = StObject.set(x, "integrityLevel", null)
     
     @scala.inline
-    def setFileHashNull: Self = this.set("fileHash", null)
+    def setIntegrityLevelUndefined: Self = StObject.set(x, "integrityLevel", js.undefined)
     
     @scala.inline
-    def setIntegrityLevel(value: NullableOption[ProcessIntegrityLevel]): Self = this.set("integrityLevel", value.asInstanceOf[js.Any])
+    def setIsElevated(value: NullableOption[Boolean]): Self = StObject.set(x, "isElevated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIntegrityLevel: Self = this.set("integrityLevel", js.undefined)
+    def setIsElevatedNull: Self = StObject.set(x, "isElevated", null)
     
     @scala.inline
-    def setIntegrityLevelNull: Self = this.set("integrityLevel", null)
+    def setIsElevatedUndefined: Self = StObject.set(x, "isElevated", js.undefined)
     
     @scala.inline
-    def setIsElevated(value: NullableOption[Boolean]): Self = this.set("isElevated", value.asInstanceOf[js.Any])
+    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsElevated: Self = this.set("isElevated", js.undefined)
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setIsElevatedNull: Self = this.set("isElevated", null)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setName(value: NullableOption[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParentProcessCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "parentProcessCreatedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setParentProcessCreatedDateTimeNull: Self = StObject.set(x, "parentProcessCreatedDateTime", null)
     
     @scala.inline
-    def setNameNull: Self = this.set("name", null)
+    def setParentProcessCreatedDateTimeUndefined: Self = StObject.set(x, "parentProcessCreatedDateTime", js.undefined)
     
     @scala.inline
-    def setParentProcessCreatedDateTime(value: NullableOption[String]): Self = this.set("parentProcessCreatedDateTime", value.asInstanceOf[js.Any])
+    def setParentProcessId(value: NullableOption[Double]): Self = StObject.set(x, "parentProcessId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentProcessCreatedDateTime: Self = this.set("parentProcessCreatedDateTime", js.undefined)
+    def setParentProcessIdNull: Self = StObject.set(x, "parentProcessId", null)
     
     @scala.inline
-    def setParentProcessCreatedDateTimeNull: Self = this.set("parentProcessCreatedDateTime", null)
+    def setParentProcessIdUndefined: Self = StObject.set(x, "parentProcessId", js.undefined)
     
     @scala.inline
-    def setParentProcessId(value: NullableOption[Double]): Self = this.set("parentProcessId", value.asInstanceOf[js.Any])
+    def setParentProcessName(value: NullableOption[String]): Self = StObject.set(x, "parentProcessName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentProcessId: Self = this.set("parentProcessId", js.undefined)
+    def setParentProcessNameNull: Self = StObject.set(x, "parentProcessName", null)
     
     @scala.inline
-    def setParentProcessIdNull: Self = this.set("parentProcessId", null)
+    def setParentProcessNameUndefined: Self = StObject.set(x, "parentProcessName", js.undefined)
     
     @scala.inline
-    def setParentProcessName(value: NullableOption[String]): Self = this.set("parentProcessName", value.asInstanceOf[js.Any])
+    def setPath(value: NullableOption[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentProcessName: Self = this.set("parentProcessName", js.undefined)
+    def setPathNull: Self = StObject.set(x, "path", null)
     
     @scala.inline
-    def setParentProcessNameNull: Self = this.set("parentProcessName", null)
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def setPath(value: NullableOption[String]): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setProcessId(value: NullableOption[Double]): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setProcessIdNull: Self = StObject.set(x, "processId", null)
     
     @scala.inline
-    def setPathNull: Self = this.set("path", null)
-    
-    @scala.inline
-    def setProcessId(value: NullableOption[Double]): Self = this.set("processId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProcessId: Self = this.set("processId", js.undefined)
-    
-    @scala.inline
-    def setProcessIdNull: Self = this.set("processId", null)
+    def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
   }
 }

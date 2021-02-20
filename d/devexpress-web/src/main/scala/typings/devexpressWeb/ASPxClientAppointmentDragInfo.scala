@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Stores information about an appointment drag operation.
   */
 @js.native
-trait ASPxClientAppointmentDragInfo extends js.Object {
+trait ASPxClientAppointmentDragInfo extends StObject {
   
   /**
     * Gets the dragged appointment's identifier.
@@ -50,39 +51,27 @@ object ASPxClientAppointmentDragInfo {
   }
   
   @scala.inline
-  implicit class ASPxClientAppointmentDragInfoOps[Self <: ASPxClientAppointmentDragInfo] (val x: Self) extends AnyVal {
+  implicit class ASPxClientAppointmentDragInfoMutableBuilder[Self <: ASPxClientAppointmentDragInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewInterval(value: ASPxClientTimeInterval): Self = StObject.set(x, "newInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewResources(value: js.Array[String]): Self = StObject.set(x, "newResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppointmentId(value: String): Self = this.set("appointmentId", value.asInstanceOf[js.Any])
+    def setNewResourcesVarargs(value: String*): Self = StObject.set(x, "newResources", js.Array(value :_*))
     
     @scala.inline
-    def setNewInterval(value: ASPxClientTimeInterval): Self = this.set("newInterval", value.asInstanceOf[js.Any])
+    def setOldInterval(value: ASPxClientTimeInterval): Self = StObject.set(x, "oldInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewResourcesVarargs(value: String*): Self = this.set("newResources", js.Array(value :_*))
+    def setOldResources(value: js.Array[String]): Self = StObject.set(x, "oldResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewResources(value: js.Array[String]): Self = this.set("newResources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldInterval(value: ASPxClientTimeInterval): Self = this.set("oldInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldResourcesVarargs(value: String*): Self = this.set("oldResources", js.Array(value :_*))
-    
-    @scala.inline
-    def setOldResources(value: js.Array[String]): Self = this.set("oldResources", value.asInstanceOf[js.Any])
+    def setOldResourcesVarargs(value: String*): Self = StObject.set(x, "oldResources", js.Array(value :_*))
   }
 }

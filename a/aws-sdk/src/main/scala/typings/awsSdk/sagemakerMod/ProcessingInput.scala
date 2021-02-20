@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProcessingInput extends js.Object {
+trait ProcessingInput extends StObject {
   
   /**
     * The name of the inputs for the processing job.
@@ -26,24 +27,12 @@ object ProcessingInput {
   }
   
   @scala.inline
-  implicit class ProcessingInputOps[Self <: ProcessingInput] (val x: Self) extends AnyVal {
+  implicit class ProcessingInputMutableBuilder[Self <: ProcessingInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputName(value: String): Self = StObject.set(x, "InputName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInputName(value: String): Self = this.set("InputName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setS3Input(value: ProcessingS3Input): Self = this.set("S3Input", value.asInstanceOf[js.Any])
+    def setS3Input(value: ProcessingS3Input): Self = StObject.set(x, "S3Input", value.asInstanceOf[js.Any])
   }
 }

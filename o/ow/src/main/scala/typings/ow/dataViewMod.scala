@@ -3,14 +3,14 @@ package typings.ow
 import typings.ow.predicateMod.Predicate
 import typings.ow.predicateMod.PredicateOptions
 import typings.std.DataView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ow/dist/source/predicates/data-view", JSImport.Namespace)
-@js.native
-object dataViewMod extends js.Object {
+object dataViewMod {
   
+  @JSImport("ow/dist/source/predicates/data-view", "DataViewPredicate")
   @js.native
   /**
     @hidden

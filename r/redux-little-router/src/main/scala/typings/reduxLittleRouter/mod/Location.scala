@@ -1,5 +1,6 @@
 package typings.reduxLittleRouter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,69 +33,57 @@ object Location {
   }
   
   @scala.inline
-  implicit class LocationOps[Self <: Location] (val x: Self) extends AnyVal {
+  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptions(value: LocationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasename(value: String): Self = this.set("basename", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteBasename: Self = this.set("basename", js.undefined)
+    def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: LocationOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setPrevious(value: Location): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: Params): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     
     @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrevious(value: Location): Self = this.set("previous", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deletePrevious: Self = this.set("previous", js.undefined)
+    def setQueue(value: js.Array[Location]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: Query): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setQueueVarargs(value: Location*): Self = StObject.set(x, "queue", js.Array(value :_*))
     
     @scala.inline
-    def setQueueVarargs(value: Location*): Self = this.set("queue", js.Array(value :_*))
+    def setResult(value: ObjectLiteral[_]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueue(value: js.Array[Location]): Self = this.set("queue", value.asInstanceOf[js.Any])
+    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
     @scala.inline
-    def deleteQueue: Self = this.set("queue", js.undefined)
+    def setRoutes(value: Routes): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: ObjectLiteral[_]): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResult: Self = this.set("result", js.undefined)
-    
-    @scala.inline
-    def setRoutes(value: Routes): Self = this.set("routes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoutes: Self = this.set("routes", js.undefined)
+    def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
   }
 }

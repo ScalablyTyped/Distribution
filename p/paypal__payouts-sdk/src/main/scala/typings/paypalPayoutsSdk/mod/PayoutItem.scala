@@ -1,12 +1,13 @@
 package typings.paypalPayoutsSdk.mod
 
 import typings.paypalPayoutsSdk.anon.Phone
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PayoutItem extends js.Object {
+trait PayoutItem extends StObject {
   
   var alternate_notification_method: js.UndefOr[Phone] = js.native
   
@@ -33,60 +34,48 @@ object PayoutItem {
   }
   
   @scala.inline
-  implicit class PayoutItemOps[Self <: PayoutItem] (val x: Self) extends AnyVal {
+  implicit class PayoutItemMutableBuilder[Self <: PayoutItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternate_notification_method(value: Phone): Self = StObject.set(x, "alternate_notification_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternate_notification_methodUndefined: Self = StObject.set(x, "alternate_notification_method", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAmount(value: typings.paypalPayoutsSdk.anon.Currency): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: typings.paypalPayoutsSdk.anon.Currency): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceiver(value: String): Self = this.set("receiver", value.asInstanceOf[js.Any])
+    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
     @scala.inline
-    def setAlternate_notification_method(value: Phone): Self = this.set("alternate_notification_method", value.asInstanceOf[js.Any])
+    def setNotification_language(value: String): Self = StObject.set(x, "notification_language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlternate_notification_method: Self = this.set("alternate_notification_method", js.undefined)
+    def setNotification_languageUndefined: Self = StObject.set(x, "notification_language", js.undefined)
     
     @scala.inline
-    def setNote(value: String): Self = this.set("note", value.asInstanceOf[js.Any])
+    def setReceiver(value: String): Self = StObject.set(x, "receiver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNote: Self = this.set("note", js.undefined)
+    def setRecipient_type(value: RecipientType): Self = StObject.set(x, "recipient_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotification_language(value: String): Self = this.set("notification_language", value.asInstanceOf[js.Any])
+    def setRecipient_typeUndefined: Self = StObject.set(x, "recipient_type", js.undefined)
     
     @scala.inline
-    def deleteNotification_language: Self = this.set("notification_language", js.undefined)
+    def setRecipient_wallet(value: RecipientWallet): Self = StObject.set(x, "recipient_wallet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipient_type(value: RecipientType): Self = this.set("recipient_type", value.asInstanceOf[js.Any])
+    def setRecipient_walletUndefined: Self = StObject.set(x, "recipient_wallet", js.undefined)
     
     @scala.inline
-    def deleteRecipient_type: Self = this.set("recipient_type", js.undefined)
+    def setSender_item_id(value: String): Self = StObject.set(x, "sender_item_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipient_wallet(value: RecipientWallet): Self = this.set("recipient_wallet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecipient_wallet: Self = this.set("recipient_wallet", js.undefined)
-    
-    @scala.inline
-    def setSender_item_id(value: String): Self = this.set("sender_item_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSender_item_id: Self = this.set("sender_item_id", js.undefined)
+    def setSender_item_idUndefined: Self = StObject.set(x, "sender_item_id", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.apiV2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.VIBER
   - typings.actionsOnGoogle.actionsOnGoogleStrings.ACTIONS_ON_GOOGLE
 */
-trait GoogleCloudDialogflowV2IntentDefaultResponsePlatforms extends js.Object
+trait GoogleCloudDialogflowV2IntentDefaultResponsePlatforms extends StObject
 object GoogleCloudDialogflowV2IntentDefaultResponsePlatforms {
   
   @scala.inline

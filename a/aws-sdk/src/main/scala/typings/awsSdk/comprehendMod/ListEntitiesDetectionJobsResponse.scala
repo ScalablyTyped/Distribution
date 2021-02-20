@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListEntitiesDetectionJobsResponse extends js.Object {
+trait ListEntitiesDetectionJobsResponse extends StObject {
   
   /**
     * A list containing the properties of each job that is returned.
@@ -26,33 +27,21 @@ object ListEntitiesDetectionJobsResponse {
   }
   
   @scala.inline
-  implicit class ListEntitiesDetectionJobsResponseOps[Self <: ListEntitiesDetectionJobsResponse] (val x: Self) extends AnyVal {
+  implicit class ListEntitiesDetectionJobsResponseMutableBuilder[Self <: ListEntitiesDetectionJobsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntitiesDetectionJobPropertiesList(value: EntitiesDetectionJobPropertiesList): Self = StObject.set(x, "EntitiesDetectionJobPropertiesList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntitiesDetectionJobPropertiesListUndefined: Self = StObject.set(x, "EntitiesDetectionJobPropertiesList", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntitiesDetectionJobPropertiesListVarargs(value: EntitiesDetectionJobProperties*): Self = StObject.set(x, "EntitiesDetectionJobPropertiesList", js.Array(value :_*))
     
     @scala.inline
-    def setEntitiesDetectionJobPropertiesListVarargs(value: EntitiesDetectionJobProperties*): Self = this.set("EntitiesDetectionJobPropertiesList", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntitiesDetectionJobPropertiesList(value: EntitiesDetectionJobPropertiesList): Self = this.set("EntitiesDetectionJobPropertiesList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntitiesDetectionJobPropertiesList: Self = this.set("EntitiesDetectionJobPropertiesList", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

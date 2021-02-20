@@ -1,11 +1,12 @@
 package typings.grommet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `28` extends js.Object {
+trait `28` extends StObject {
   
   var dark: js.UndefOr[js.Array[String]] = js.native
   
@@ -20,36 +21,24 @@ object `28` {
   }
   
   @scala.inline
-  implicit class `28Ops`[Self <: `28`] (val x: Self) extends AnyVal {
+  implicit class `28MutableBuilder`[Self <: `28`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDark(value: js.Array[String]): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDarkVarargs(value: String*): Self = StObject.set(x, "dark", js.Array(value :_*))
     
     @scala.inline
-    def setDarkVarargs(value: String*): Self = this.set("dark", js.Array(value :_*))
+    def setLight(value: js.Array[String]): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDark(value: js.Array[String]): Self = this.set("dark", value.asInstanceOf[js.Any])
+    def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
     
     @scala.inline
-    def deleteDark: Self = this.set("dark", js.undefined)
-    
-    @scala.inline
-    def setLightVarargs(value: String*): Self = this.set("light", js.Array(value :_*))
-    
-    @scala.inline
-    def setLight(value: js.Array[String]): Self = this.set("light", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLight: Self = this.set("light", js.undefined)
+    def setLightVarargs(value: String*): Self = StObject.set(x, "light", js.Array(value :_*))
   }
 }

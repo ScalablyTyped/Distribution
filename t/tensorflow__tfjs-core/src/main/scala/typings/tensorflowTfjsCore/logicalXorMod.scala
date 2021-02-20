@@ -3,20 +3,23 @@ package typings.tensorflowTfjsCore
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/ops/logical_xor", JSImport.Namespace)
-@js.native
-object logicalXorMod extends js.Object {
+object logicalXorMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/logical_xor", "logicalXor")
   @js.native
-  object logicalXor extends js.Object {
-    
-    def apply[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-    def apply[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-    def apply[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-    def apply[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
-  }
+  def logicalXor[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
+  @JSImport("@tensorflow/tfjs-core/dist/ops/logical_xor", "logicalXor")
+  @js.native
+  def logicalXor[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
+  @JSImport("@tensorflow/tfjs-core/dist/ops/logical_xor", "logicalXor")
+  @js.native
+  def logicalXor[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
+  @JSImport("@tensorflow/tfjs-core/dist/ops/logical_xor", "logicalXor")
+  @js.native
+  def logicalXor[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
 }

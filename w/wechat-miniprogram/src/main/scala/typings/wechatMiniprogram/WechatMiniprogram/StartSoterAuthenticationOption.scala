@@ -3,12 +3,13 @@ package typings.wechatMiniprogram.WechatMiniprogram
 import typings.wechatMiniprogram.wechatMiniprogramStrings.facial
 import typings.wechatMiniprogram.wechatMiniprogramStrings.fingerPrint
 import typings.wechatMiniprogram.wechatMiniprogramStrings.speech
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartSoterAuthenticationOption extends js.Object {
+trait StartSoterAuthenticationOption extends StObject {
   
   /** 验证描述，即识别过程中显示在界面上的对话框提示内容 */
   var authContent: js.UndefOr[String] = js.native
@@ -42,51 +43,39 @@ object StartSoterAuthenticationOption {
   }
   
   @scala.inline
-  implicit class StartSoterAuthenticationOptionOps[Self <: StartSoterAuthenticationOption] (val x: Self) extends AnyVal {
+  implicit class StartSoterAuthenticationOptionMutableBuilder[Self <: StartSoterAuthenticationOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthContent(value: String): Self = StObject.set(x, "authContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthContentUndefined: Self = StObject.set(x, "authContent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChallenge(value: String): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChallenge(value: String): Self = this.set("challenge", value.asInstanceOf[js.Any])
+    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequestAuthModesVarargs(value: (fingerPrint | facial | speech)*): Self = this.set("requestAuthModes", js.Array(value :_*))
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def setRequestAuthModes(value: js.Array[fingerPrint | facial | speech]): Self = this.set("requestAuthModes", value.asInstanceOf[js.Any])
+    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAuthContent(value: String): Self = this.set("authContent", value.asInstanceOf[js.Any])
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteAuthContent: Self = this.set("authContent", js.undefined)
+    def setRequestAuthModes(value: js.Array[fingerPrint | facial | speech]): Self = StObject.set(x, "requestAuthModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    def setRequestAuthModesVarargs(value: (fingerPrint | facial | speech)*): Self = StObject.set(x, "requestAuthModes", js.Array(value :_*))
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setSuccess(value: /* result */ StartSoterAuthenticationSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("fail", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* result */ StartSoterAuthenticationSuccessCallbackResult => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

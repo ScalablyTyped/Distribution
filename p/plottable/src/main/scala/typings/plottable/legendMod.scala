@@ -6,14 +6,14 @@ import typings.plottable.interfacesMod.IEntity
 import typings.plottable.interfacesMod.Point
 import typings.plottable.scalesMod.Color
 import typings.plottable.symbolFactoriesMod.SymbolFactory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/components/legend", JSImport.Namespace)
-@js.native
-object legendMod extends js.Object {
+object legendMod {
   
+  @JSImport("plottable/build/src/components/legend", "Legend")
   @js.native
   class Legend protected () extends Component {
     /**
@@ -179,22 +179,37 @@ object legendMod extends js.Object {
     def symbolOpacity(symbolOpacity: Double): this.type = js.native
   }
   /* static members */
-  @js.native
-  object Legend extends js.Object {
+  object Legend {
+    
+    @JSImport("plottable/build/src/components/legend", "Legend")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * The css class applied to each legend entry
       */
-    var LEGEND_ENTRY_CLASS: String = js.native
+    @JSImport("plottable/build/src/components/legend", "Legend.LEGEND_ENTRY_CLASS")
+    @js.native
+    def LEGEND_ENTRY_CLASS: String = js.native
+    @scala.inline
+    def LEGEND_ENTRY_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEGEND_ENTRY_CLASS")(x.asInstanceOf[js.Any])
     
     /**
       * The css class applied to each legend row
       */
-    var LEGEND_ROW_CLASS: String = js.native
+    @JSImport("plottable/build/src/components/legend", "Legend.LEGEND_ROW_CLASS")
+    @js.native
+    def LEGEND_ROW_CLASS: String = js.native
+    @scala.inline
+    def LEGEND_ROW_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEGEND_ROW_CLASS")(x.asInstanceOf[js.Any])
     
     /**
       * The css class applied to each legend symbol
       */
-    var LEGEND_SYMBOL_CLASS: String = js.native
+    @JSImport("plottable/build/src/components/legend", "Legend.LEGEND_SYMBOL_CLASS")
+    @js.native
+    def LEGEND_SYMBOL_CLASS: String = js.native
+    @scala.inline
+    def LEGEND_SYMBOL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEGEND_SYMBOL_CLASS")(x.asInstanceOf[js.Any])
   }
 }

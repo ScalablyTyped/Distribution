@@ -1,5 +1,6 @@
 package typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request message for the `BatchEnableServices` method.
   */
 @js.native
-trait SchemaBatchEnableServicesRequest extends js.Object {
+trait SchemaBatchEnableServicesRequest extends StObject {
   
   /**
     * The identifiers of the services to enable on the project.  A valid
@@ -30,27 +31,15 @@ object SchemaBatchEnableServicesRequest {
   }
   
   @scala.inline
-  implicit class SchemaBatchEnableServicesRequestOps[Self <: SchemaBatchEnableServicesRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaBatchEnableServicesRequestMutableBuilder[Self <: SchemaBatchEnableServicesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setServiceIds(value: js.Array[String]): Self = StObject.set(x, "serviceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServiceIdsUndefined: Self = StObject.set(x, "serviceIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setServiceIdsVarargs(value: String*): Self = this.set("serviceIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setServiceIds(value: js.Array[String]): Self = this.set("serviceIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceIds: Self = this.set("serviceIds", js.undefined)
+    def setServiceIdsVarargs(value: String*): Self = StObject.set(x, "serviceIds", js.Array(value :_*))
   }
 }

@@ -1,18 +1,48 @@
 package typings.antDesignReactNative
 
-import typings.antDesignReactNative.anon.ColsData
 import typings.antDesignReactNative.anon.DataValue
 import typings.antDesignReactNative.anon.ValueArray
 import typings.antDesignReactNative.cascaderTypesMod.CascaderProps
 import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/react-native/lib/picker/cascader/Cascader", JSImport.Namespace)
-@js.native
-object cascaderCascaderMod extends js.Object {
+object cascaderCascaderMod {
+  
+  @JSImport("@ant-design/react-native/lib/picker/cascader/Cascader", JSImport.Default)
+  @js.native
+  class default () extends Cascader
+  object default {
+    
+    /* static member */
+    object defaultProps {
+      
+      @JSImport("@ant-design/react-native/lib/picker/cascader/Cascader", "default.defaultProps")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("@ant-design/react-native/lib/picker/cascader/Cascader", "default.defaultProps.cols")
+      @js.native
+      def cols: Double = js.native
+      @scala.inline
+      def cols_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cols")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@ant-design/react-native/lib/picker/cascader/Cascader", "default.defaultProps.data")
+      @js.native
+      def data: js.Array[scala.Nothing] = js.native
+      @scala.inline
+      def data_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("data")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@ant-design/react-native/lib/picker/cascader/Cascader", "default.defaultProps.disabled")
+      @js.native
+      def disabled: Boolean = js.native
+      @scala.inline
+      def disabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
+    }
+  }
   
   @js.native
   trait Cascader
@@ -29,14 +59,5 @@ object cascaderCascaderMod extends js.Object {
     
     @JSName("state")
     var state_Cascader: ValueArray = js.native
-  }
-  
-  @js.native
-  class default () extends Cascader
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var defaultProps: ColsData = js.native
   }
 }

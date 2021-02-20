@@ -1,11 +1,12 @@
 package typings.awsSdk.computeoptimizerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoScalingGroupRecommendation extends js.Object {
+trait AutoScalingGroupRecommendation extends StObject {
   
   /**
     * The AWS account ID of the Auto Scaling group.
@@ -61,78 +62,66 @@ object AutoScalingGroupRecommendation {
   }
   
   @scala.inline
-  implicit class AutoScalingGroupRecommendationOps[Self <: AutoScalingGroupRecommendation] (val x: Self) extends AnyVal {
+  implicit class AutoScalingGroupRecommendationMutableBuilder[Self <: AutoScalingGroupRecommendation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoScalingGroupArn(value: AutoScalingGroupArn): Self = StObject.set(x, "autoScalingGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: AccountId): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setAutoScalingGroupArnUndefined: Self = StObject.set(x, "autoScalingGroupArn", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setAutoScalingGroupName(value: AutoScalingGroupName): Self = StObject.set(x, "autoScalingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScalingGroupArn(value: AutoScalingGroupArn): Self = this.set("autoScalingGroupArn", value.asInstanceOf[js.Any])
+    def setAutoScalingGroupNameUndefined: Self = StObject.set(x, "autoScalingGroupName", js.undefined)
     
     @scala.inline
-    def deleteAutoScalingGroupArn: Self = this.set("autoScalingGroupArn", js.undefined)
+    def setCurrentConfiguration(value: AutoScalingGroupConfiguration): Self = StObject.set(x, "currentConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScalingGroupName(value: AutoScalingGroupName): Self = this.set("autoScalingGroupName", value.asInstanceOf[js.Any])
+    def setCurrentConfigurationUndefined: Self = StObject.set(x, "currentConfiguration", js.undefined)
     
     @scala.inline
-    def deleteAutoScalingGroupName: Self = this.set("autoScalingGroupName", js.undefined)
+    def setFinding(value: Finding): Self = StObject.set(x, "finding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentConfiguration(value: AutoScalingGroupConfiguration): Self = this.set("currentConfiguration", value.asInstanceOf[js.Any])
+    def setFindingUndefined: Self = StObject.set(x, "finding", js.undefined)
     
     @scala.inline
-    def deleteCurrentConfiguration: Self = this.set("currentConfiguration", js.undefined)
+    def setLastRefreshTimestamp(value: LastRefreshTimestamp): Self = StObject.set(x, "lastRefreshTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinding(value: Finding): Self = this.set("finding", value.asInstanceOf[js.Any])
+    def setLastRefreshTimestampUndefined: Self = StObject.set(x, "lastRefreshTimestamp", js.undefined)
     
     @scala.inline
-    def deleteFinding: Self = this.set("finding", js.undefined)
+    def setLookBackPeriodInDays(value: LookBackPeriodInDays): Self = StObject.set(x, "lookBackPeriodInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastRefreshTimestamp(value: LastRefreshTimestamp): Self = this.set("lastRefreshTimestamp", value.asInstanceOf[js.Any])
+    def setLookBackPeriodInDaysUndefined: Self = StObject.set(x, "lookBackPeriodInDays", js.undefined)
     
     @scala.inline
-    def deleteLastRefreshTimestamp: Self = this.set("lastRefreshTimestamp", js.undefined)
+    def setRecommendationOptions(value: AutoScalingGroupRecommendationOptions): Self = StObject.set(x, "recommendationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLookBackPeriodInDays(value: LookBackPeriodInDays): Self = this.set("lookBackPeriodInDays", value.asInstanceOf[js.Any])
+    def setRecommendationOptionsUndefined: Self = StObject.set(x, "recommendationOptions", js.undefined)
     
     @scala.inline
-    def deleteLookBackPeriodInDays: Self = this.set("lookBackPeriodInDays", js.undefined)
+    def setRecommendationOptionsVarargs(value: AutoScalingGroupRecommendationOption*): Self = StObject.set(x, "recommendationOptions", js.Array(value :_*))
     
     @scala.inline
-    def setRecommendationOptionsVarargs(value: AutoScalingGroupRecommendationOption*): Self = this.set("recommendationOptions", js.Array(value :_*))
+    def setUtilizationMetrics(value: UtilizationMetrics): Self = StObject.set(x, "utilizationMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecommendationOptions(value: AutoScalingGroupRecommendationOptions): Self = this.set("recommendationOptions", value.asInstanceOf[js.Any])
+    def setUtilizationMetricsUndefined: Self = StObject.set(x, "utilizationMetrics", js.undefined)
     
     @scala.inline
-    def deleteRecommendationOptions: Self = this.set("recommendationOptions", js.undefined)
-    
-    @scala.inline
-    def setUtilizationMetricsVarargs(value: UtilizationMetric*): Self = this.set("utilizationMetrics", js.Array(value :_*))
-    
-    @scala.inline
-    def setUtilizationMetrics(value: UtilizationMetrics): Self = this.set("utilizationMetrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUtilizationMetrics: Self = this.set("utilizationMetrics", js.undefined)
+    def setUtilizationMetricsVarargs(value: UtilizationMetric*): Self = StObject.set(x, "utilizationMetrics", js.Array(value :_*))
   }
 }

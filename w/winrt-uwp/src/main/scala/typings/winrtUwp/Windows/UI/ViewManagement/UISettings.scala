@@ -7,13 +7,14 @@ import typings.winrtUwp.Windows.UI.Color
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.colorvalueschanged
 import typings.winrtUwp.winrtUwpStrings.textscalefactorchanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains a set of common app user interface settings and operations. */
 @js.native
-trait UISettings extends js.Object {
+trait UISettings extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

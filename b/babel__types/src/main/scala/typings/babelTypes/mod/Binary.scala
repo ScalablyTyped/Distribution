@@ -23,10 +23,10 @@ import typings.babelTypes.babelTypesStrings.QuestionmarkQuestionmark
 import typings.babelTypes.babelTypesStrings.Slash
 import typings.babelTypes.babelTypesStrings.Verticalline
 import typings.babelTypes.babelTypesStrings.VerticallineVerticalline
-import typings.babelTypes.babelTypesStrings.^
 import typings.babelTypes.babelTypesStrings.`-_`
 import typings.babelTypes.babelTypesStrings.in
 import typings.babelTypes.babelTypesStrings.instanceof
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,13 +41,13 @@ object Binary {
   @scala.inline
   def BinaryExpression_(
     left: Expression | PrivateName_,
-    operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | ^  | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign,
+    operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | typings.babelTypes.babelTypesStrings.^ | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign,
     right: Expression,
     `type`: BinaryExpression
-  ): Binary = {
+  ): typings.babelTypes.mod.BinaryExpression_ = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Binary]
+    __obj.asInstanceOf[typings.babelTypes.mod.BinaryExpression_]
   }
   
   @scala.inline
@@ -56,9 +56,9 @@ object Binary {
     operator: VerticallineVerticalline | AmpersandAmpersand | QuestionmarkQuestionmark,
     right: Expression,
     `type`: LogicalExpression
-  ): Binary = {
+  ): typings.babelTypes.mod.LogicalExpression_ = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Binary]
+    __obj.asInstanceOf[typings.babelTypes.mod.LogicalExpression_]
   }
 }

@@ -3,12 +3,13 @@ package typings.musicmatch.mod
 import typings.musicmatch.musicmatchStrings.dfxp
 import typings.musicmatch.musicmatchStrings.lrc
 import typings.musicmatch.musicmatchStrings.stledu
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrackSubtitleParams extends js.Object {
+trait TrackSubtitleParams extends StObject {
   
   var f_subtitle_length: js.UndefOr[Double] = js.native
   
@@ -29,48 +30,36 @@ object TrackSubtitleParams {
   }
   
   @scala.inline
-  implicit class TrackSubtitleParamsOps[Self <: TrackSubtitleParams] (val x: Self) extends AnyVal {
+  implicit class TrackSubtitleParamsMutableBuilder[Self <: TrackSubtitleParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setF_subtitle_length(value: Double): Self = StObject.set(x, "f_subtitle_length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setF_subtitle_lengthUndefined: Self = StObject.set(x, "f_subtitle_length", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setF_subtitle_length_max_deviation(value: Double): Self = StObject.set(x, "f_subtitle_length_max_deviation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF_subtitle_length(value: Double): Self = this.set("f_subtitle_length", value.asInstanceOf[js.Any])
+    def setF_subtitle_length_max_deviationUndefined: Self = StObject.set(x, "f_subtitle_length_max_deviation", js.undefined)
     
     @scala.inline
-    def deleteF_subtitle_length: Self = this.set("f_subtitle_length", js.undefined)
+    def setSubtitle_format(value: lrc | dfxp | stledu): Self = StObject.set(x, "subtitle_format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF_subtitle_length_max_deviation(value: Double): Self = this.set("f_subtitle_length_max_deviation", value.asInstanceOf[js.Any])
+    def setSubtitle_formatUndefined: Self = StObject.set(x, "subtitle_format", js.undefined)
     
     @scala.inline
-    def deleteF_subtitle_length_max_deviation: Self = this.set("f_subtitle_length_max_deviation", js.undefined)
+    def setTrack_id(value: Double): Self = StObject.set(x, "track_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtitle_format(value: lrc | dfxp | stledu): Self = this.set("subtitle_format", value.asInstanceOf[js.Any])
+    def setTrack_idUndefined: Self = StObject.set(x, "track_id", js.undefined)
     
     @scala.inline
-    def deleteSubtitle_format: Self = this.set("subtitle_format", js.undefined)
+    def setTrack_mbid(value: Double): Self = StObject.set(x, "track_mbid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrack_id(value: Double): Self = this.set("track_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrack_id: Self = this.set("track_id", js.undefined)
-    
-    @scala.inline
-    def setTrack_mbid(value: Double): Self = this.set("track_mbid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrack_mbid: Self = this.set("track_mbid", js.undefined)
+    def setTrack_mbidUndefined: Self = StObject.set(x, "track_mbid", js.undefined)
   }
 }

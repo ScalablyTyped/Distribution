@@ -7,12 +7,13 @@ import typings.chrome.chrome.history.HistoryVisitedEvent
 import typings.chrome.chrome.history.Range
 import typings.chrome.chrome.history.Url
 import typings.chrome.chrome.history.VisitItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofhistory extends js.Object {
+trait Typeofhistory extends StObject {
   
   def addUrl(details: Url): Unit = js.native
   def addUrl(details: Url, callback: js.Function0[Unit]): Unit = js.native

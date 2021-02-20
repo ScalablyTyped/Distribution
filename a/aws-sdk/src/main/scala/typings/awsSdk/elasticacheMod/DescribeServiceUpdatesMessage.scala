@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeServiceUpdatesMessage extends js.Object {
+trait DescribeServiceUpdatesMessage extends StObject {
   
   /**
     * An optional marker returned from a prior request. Use this marker for pagination of results from this operation. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
@@ -36,45 +37,33 @@ object DescribeServiceUpdatesMessage {
   }
   
   @scala.inline
-  implicit class DescribeServiceUpdatesMessageOps[Self <: DescribeServiceUpdatesMessage] (val x: Self) extends AnyVal {
+  implicit class DescribeServiceUpdatesMessageMutableBuilder[Self <: DescribeServiceUpdatesMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setServiceUpdateName(value: String): Self = StObject.set(x, "ServiceUpdateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    def setServiceUpdateNameUndefined: Self = StObject.set(x, "ServiceUpdateName", js.undefined)
     
     @scala.inline
-    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    def setServiceUpdateStatus(value: ServiceUpdateStatusList): Self = StObject.set(x, "ServiceUpdateStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceUpdateName(value: String): Self = this.set("ServiceUpdateName", value.asInstanceOf[js.Any])
+    def setServiceUpdateStatusUndefined: Self = StObject.set(x, "ServiceUpdateStatus", js.undefined)
     
     @scala.inline
-    def deleteServiceUpdateName: Self = this.set("ServiceUpdateName", js.undefined)
-    
-    @scala.inline
-    def setServiceUpdateStatusVarargs(value: ServiceUpdateStatus*): Self = this.set("ServiceUpdateStatus", js.Array(value :_*))
-    
-    @scala.inline
-    def setServiceUpdateStatus(value: ServiceUpdateStatusList): Self = this.set("ServiceUpdateStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceUpdateStatus: Self = this.set("ServiceUpdateStatus", js.undefined)
+    def setServiceUpdateStatusVarargs(value: ServiceUpdateStatus*): Self = StObject.set(x, "ServiceUpdateStatus", js.Array(value :_*))
   }
 }

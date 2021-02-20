@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProductionVariantSummary extends js.Object {
+trait ProductionVariantSummary extends StObject {
   
   /**
     * The number of instances associated with the variant.
@@ -46,54 +47,42 @@ object ProductionVariantSummary {
   }
   
   @scala.inline
-  implicit class ProductionVariantSummaryOps[Self <: ProductionVariantSummary] (val x: Self) extends AnyVal {
+  implicit class ProductionVariantSummaryMutableBuilder[Self <: ProductionVariantSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentInstanceCount(value: TaskCount): Self = StObject.set(x, "CurrentInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentInstanceCountUndefined: Self = StObject.set(x, "CurrentInstanceCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentWeight(value: VariantWeight): Self = StObject.set(x, "CurrentWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVariantName(value: VariantName): Self = this.set("VariantName", value.asInstanceOf[js.Any])
+    def setCurrentWeightUndefined: Self = StObject.set(x, "CurrentWeight", js.undefined)
     
     @scala.inline
-    def setCurrentInstanceCount(value: TaskCount): Self = this.set("CurrentInstanceCount", value.asInstanceOf[js.Any])
+    def setDeployedImages(value: DeployedImages): Self = StObject.set(x, "DeployedImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCurrentInstanceCount: Self = this.set("CurrentInstanceCount", js.undefined)
+    def setDeployedImagesUndefined: Self = StObject.set(x, "DeployedImages", js.undefined)
     
     @scala.inline
-    def setCurrentWeight(value: VariantWeight): Self = this.set("CurrentWeight", value.asInstanceOf[js.Any])
+    def setDeployedImagesVarargs(value: DeployedImage*): Self = StObject.set(x, "DeployedImages", js.Array(value :_*))
     
     @scala.inline
-    def deleteCurrentWeight: Self = this.set("CurrentWeight", js.undefined)
+    def setDesiredInstanceCount(value: TaskCount): Self = StObject.set(x, "DesiredInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeployedImagesVarargs(value: DeployedImage*): Self = this.set("DeployedImages", js.Array(value :_*))
+    def setDesiredInstanceCountUndefined: Self = StObject.set(x, "DesiredInstanceCount", js.undefined)
     
     @scala.inline
-    def setDeployedImages(value: DeployedImages): Self = this.set("DeployedImages", value.asInstanceOf[js.Any])
+    def setDesiredWeight(value: VariantWeight): Self = StObject.set(x, "DesiredWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeployedImages: Self = this.set("DeployedImages", js.undefined)
+    def setDesiredWeightUndefined: Self = StObject.set(x, "DesiredWeight", js.undefined)
     
     @scala.inline
-    def setDesiredInstanceCount(value: TaskCount): Self = this.set("DesiredInstanceCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDesiredInstanceCount: Self = this.set("DesiredInstanceCount", js.undefined)
-    
-    @scala.inline
-    def setDesiredWeight(value: VariantWeight): Self = this.set("DesiredWeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDesiredWeight: Self = this.set("DesiredWeight", js.undefined)
+    def setVariantName(value: VariantName): Self = StObject.set(x, "VariantName", value.asInstanceOf[js.Any])
   }
 }

@@ -5,6 +5,7 @@ import typings.angularCore.angularCoreNumbers.`100`
 import typings.angularCore.angularCoreNumbers.`1`
 import typings.angularCore.angularCoreNumbers.`200`
 import typings.angularCore.angularCoreNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.angularCore.angularCoreNumbers.`100`
   - typings.angularCore.angularCoreNumbers.`200`
 */
-trait ɵPlayState extends js.Object
+trait ɵPlayState extends StObject
 object ɵPlayState {
   
   @scala.inline

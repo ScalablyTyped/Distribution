@@ -1,11 +1,12 @@
 package typings.awsSdk.wafregionalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListRegexMatchSetsResponse extends js.Object {
+trait ListRegexMatchSetsResponse extends StObject {
   
   /**
     * If you have more RegexMatchSet objects than the number that you specified for Limit in the request, the response includes a NextMarker value. To list more RegexMatchSet objects, submit another ListRegexMatchSets request, and specify the NextMarker value from the response in the NextMarker value in the next request.
@@ -26,33 +27,21 @@ object ListRegexMatchSetsResponse {
   }
   
   @scala.inline
-  implicit class ListRegexMatchSetsResponseOps[Self <: ListRegexMatchSetsResponse] (val x: Self) extends AnyVal {
+  implicit class ListRegexMatchSetsResponseMutableBuilder[Self <: ListRegexMatchSetsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegexMatchSets(value: RegexMatchSetSummaries): Self = StObject.set(x, "RegexMatchSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextMarker(value: NextMarker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
+    def setRegexMatchSetsUndefined: Self = StObject.set(x, "RegexMatchSets", js.undefined)
     
     @scala.inline
-    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
-    
-    @scala.inline
-    def setRegexMatchSetsVarargs(value: RegexMatchSetSummary*): Self = this.set("RegexMatchSets", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegexMatchSets(value: RegexMatchSetSummaries): Self = this.set("RegexMatchSets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegexMatchSets: Self = this.set("RegexMatchSets", js.undefined)
+    def setRegexMatchSetsVarargs(value: RegexMatchSetSummary*): Self = StObject.set(x, "RegexMatchSets", js.Array(value :_*))
   }
 }

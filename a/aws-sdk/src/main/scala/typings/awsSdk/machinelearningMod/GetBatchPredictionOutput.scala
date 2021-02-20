@@ -1,11 +1,12 @@
 package typings.awsSdk.machinelearningMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBatchPredictionOutput extends js.Object {
+trait GetBatchPredictionOutput extends StObject {
   
   /**
     * The ID of the DataSource that was used to create the BatchPrediction. 
@@ -101,120 +102,108 @@ object GetBatchPredictionOutput {
   }
   
   @scala.inline
-  implicit class GetBatchPredictionOutputOps[Self <: GetBatchPredictionOutput] (val x: Self) extends AnyVal {
+  implicit class GetBatchPredictionOutputMutableBuilder[Self <: GetBatchPredictionOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchPredictionDataSourceId(value: EntityId): Self = StObject.set(x, "BatchPredictionDataSourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchPredictionDataSourceIdUndefined: Self = StObject.set(x, "BatchPredictionDataSourceId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchPredictionId(value: EntityId): Self = StObject.set(x, "BatchPredictionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchPredictionDataSourceId(value: EntityId): Self = this.set("BatchPredictionDataSourceId", value.asInstanceOf[js.Any])
+    def setBatchPredictionIdUndefined: Self = StObject.set(x, "BatchPredictionId", js.undefined)
     
     @scala.inline
-    def deleteBatchPredictionDataSourceId: Self = this.set("BatchPredictionDataSourceId", js.undefined)
+    def setComputeTime(value: LongType): Self = StObject.set(x, "ComputeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchPredictionId(value: EntityId): Self = this.set("BatchPredictionId", value.asInstanceOf[js.Any])
+    def setComputeTimeUndefined: Self = StObject.set(x, "ComputeTime", js.undefined)
     
     @scala.inline
-    def deleteBatchPredictionId: Self = this.set("BatchPredictionId", js.undefined)
+    def setCreatedAt(value: EpochTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputeTime(value: LongType): Self = this.set("ComputeTime", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     @scala.inline
-    def deleteComputeTime: Self = this.set("ComputeTime", js.undefined)
+    def setCreatedByIamUser(value: AwsUserArn): Self = StObject.set(x, "CreatedByIamUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: EpochTime): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    def setCreatedByIamUserUndefined: Self = StObject.set(x, "CreatedByIamUser", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    def setFinishedAt(value: EpochTime): Self = StObject.set(x, "FinishedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedByIamUser(value: AwsUserArn): Self = this.set("CreatedByIamUser", value.asInstanceOf[js.Any])
+    def setFinishedAtUndefined: Self = StObject.set(x, "FinishedAt", js.undefined)
     
     @scala.inline
-    def deleteCreatedByIamUser: Self = this.set("CreatedByIamUser", js.undefined)
+    def setInputDataLocationS3(value: S3Url): Self = StObject.set(x, "InputDataLocationS3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinishedAt(value: EpochTime): Self = this.set("FinishedAt", value.asInstanceOf[js.Any])
+    def setInputDataLocationS3Undefined: Self = StObject.set(x, "InputDataLocationS3", js.undefined)
     
     @scala.inline
-    def deleteFinishedAt: Self = this.set("FinishedAt", js.undefined)
+    def setInvalidRecordCount(value: LongType): Self = StObject.set(x, "InvalidRecordCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputDataLocationS3(value: S3Url): Self = this.set("InputDataLocationS3", value.asInstanceOf[js.Any])
+    def setInvalidRecordCountUndefined: Self = StObject.set(x, "InvalidRecordCount", js.undefined)
     
     @scala.inline
-    def deleteInputDataLocationS3: Self = this.set("InputDataLocationS3", js.undefined)
+    def setLastUpdatedAt(value: EpochTime): Self = StObject.set(x, "LastUpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidRecordCount(value: LongType): Self = this.set("InvalidRecordCount", value.asInstanceOf[js.Any])
+    def setLastUpdatedAtUndefined: Self = StObject.set(x, "LastUpdatedAt", js.undefined)
     
     @scala.inline
-    def deleteInvalidRecordCount: Self = this.set("InvalidRecordCount", js.undefined)
+    def setLogUri(value: PresignedS3Url): Self = StObject.set(x, "LogUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedAt(value: EpochTime): Self = this.set("LastUpdatedAt", value.asInstanceOf[js.Any])
+    def setLogUriUndefined: Self = StObject.set(x, "LogUri", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedAt: Self = this.set("LastUpdatedAt", js.undefined)
+    def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogUri(value: PresignedS3Url): Self = this.set("LogUri", value.asInstanceOf[js.Any])
+    def setMLModelIdUndefined: Self = StObject.set(x, "MLModelId", js.undefined)
     
     @scala.inline
-    def deleteLogUri: Self = this.set("LogUri", js.undefined)
+    def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMLModelId(value: EntityId): Self = this.set("MLModelId", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
     @scala.inline
-    def deleteMLModelId: Self = this.set("MLModelId", js.undefined)
+    def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: Message): Self = this.set("Message", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("Message", js.undefined)
+    def setOutputUri(value: S3Url): Self = StObject.set(x, "OutputUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: EntityName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOutputUriUndefined: Self = StObject.set(x, "OutputUri", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setStartedAt(value: EpochTime): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputUri(value: S3Url): Self = this.set("OutputUri", value.asInstanceOf[js.Any])
+    def setStartedAtUndefined: Self = StObject.set(x, "StartedAt", js.undefined)
     
     @scala.inline
-    def deleteOutputUri: Self = this.set("OutputUri", js.undefined)
+    def setStatus(value: EntityStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartedAt(value: EpochTime): Self = this.set("StartedAt", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteStartedAt: Self = this.set("StartedAt", js.undefined)
+    def setTotalRecordCount(value: LongType): Self = StObject.set(x, "TotalRecordCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: EntityStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setTotalRecordCount(value: LongType): Self = this.set("TotalRecordCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalRecordCount: Self = this.set("TotalRecordCount", js.undefined)
+    def setTotalRecordCountUndefined: Self = StObject.set(x, "TotalRecordCount", js.undefined)
   }
 }

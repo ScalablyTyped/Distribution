@@ -1,5 +1,6 @@
 package typings.babylonjs.legacyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,13 +20,13 @@ class WebXRControllerPhysics protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "WebXRControllerPhysics")
-@js.native
-object WebXRControllerPhysics extends js.Object {
+object WebXRControllerPhysics {
   
   /**
     * The module's name
     */
+  @JSImport("babylonjs/Legacy/legacy", "WebXRControllerPhysics.Name")
+  @js.native
   val Name: String = js.native
   
   /**
@@ -33,5 +34,7 @@ object WebXRControllerPhysics extends js.Object {
     * This is an integer representing the implementation version.
     * This number does not correspond to the webxr specs version
     */
+  @JSImport("babylonjs/Legacy/legacy", "WebXRControllerPhysics.Version")
+  @js.native
   val Version: Double = js.native
 }

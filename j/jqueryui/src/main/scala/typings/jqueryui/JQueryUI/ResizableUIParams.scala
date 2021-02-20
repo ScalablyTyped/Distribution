@@ -1,12 +1,13 @@
 package typings.jqueryui.JQueryUI
 
 import typings.jqueryui.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResizableUIParams extends js.Object {
+trait ResizableUIParams extends StObject {
   
   var element: JQuery = js.native
   
@@ -39,39 +40,27 @@ object ResizableUIParams {
   }
   
   @scala.inline
-  implicit class ResizableUIParamsOps[Self <: ResizableUIParams] (val x: Self) extends AnyVal {
+  implicit class ResizableUIParamsMutableBuilder[Self <: ResizableUIParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElement(value: JQuery): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHelper(value: JQuery): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginalElement(value: JQuery): Self = StObject.set(x, "originalElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: JQuery): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setOriginalPosition(value: js.Any): Self = StObject.set(x, "originalPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelper(value: JQuery): Self = this.set("helper", value.asInstanceOf[js.Any])
+    def setOriginalSize(value: js.Any): Self = StObject.set(x, "originalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalElement(value: JQuery): Self = this.set("originalElement", value.asInstanceOf[js.Any])
+    def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalPosition(value: js.Any): Self = this.set("originalPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOriginalSize(value: js.Any): Self = this.set("originalSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: js.Any): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: js.Any): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

@@ -1,43 +1,71 @@
 package typings.rcMenu.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassName extends js.Object {
+trait ClassName extends StObject {
   
   var className: String = js.native
   
-  var tag: String = js.native
+  var focusable: Boolean = js.native
+  
+  var inlineIndent: Double = js.native
+  
+  var level: Double = js.native
+  
+  var manualRef: js.Function0[Unit] = js.native
+  
+  var mode: String = js.native
+  
+  var prefixCls: String = js.native
+  
+  var visible: Boolean = js.native
 }
 object ClassName {
   
   @scala.inline
-  def apply(className: String, tag: String): ClassName = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+  def apply(
+    className: String,
+    focusable: Boolean,
+    inlineIndent: Double,
+    level: Double,
+    manualRef: () => Unit,
+    mode: String,
+    prefixCls: String,
+    visible: Boolean
+  ): ClassName = {
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], focusable = focusable.asInstanceOf[js.Any], inlineIndent = inlineIndent.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], manualRef = js.Any.fromFunction0(manualRef), mode = mode.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassName]
   }
   
   @scala.inline
-  implicit class ClassNameOps[Self <: ClassName] (val x: Self) extends AnyVal {
+  implicit class ClassNameMutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInlineIndent(value: Double): Self = StObject.set(x, "inlineIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setManualRef(value: () => Unit): Self = StObject.set(x, "manualRef", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

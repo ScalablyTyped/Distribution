@@ -1,12 +1,13 @@
 package typings.handsontable.mod.Handsontable.plugins
 
 import typings.handsontable.mod._Handsontable.Core
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItemsFactory extends js.Object {
+trait ItemsFactory extends StObject {
   
   var defaultOrderPattern: js.Array[_] | Unit = js.native
   

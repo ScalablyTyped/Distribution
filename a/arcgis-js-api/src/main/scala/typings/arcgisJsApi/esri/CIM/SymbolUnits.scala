@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SymbolUnits extends js.Object
+sealed trait SymbolUnits extends StObject
 @JSGlobal("__esri.CIM.SymbolUnits")
 @js.native
-object SymbolUnits extends js.Object {
+object SymbolUnits extends StObject {
   
   /**
     * Absolute units.

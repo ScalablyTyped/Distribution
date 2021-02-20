@@ -1,12 +1,13 @@
 package typings.request.mod
 
 import typings.request.anon.Body
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Multipart extends js.Object {
+trait Multipart extends StObject {
   
   var chunked: js.UndefOr[Boolean] = js.native
   
@@ -21,33 +22,21 @@ object Multipart {
   }
   
   @scala.inline
-  implicit class MultipartOps[Self <: Multipart] (val x: Self) extends AnyVal {
+  implicit class MultipartMutableBuilder[Self <: Multipart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChunked(value: Boolean): Self = StObject.set(x, "chunked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChunkedUndefined: Self = StObject.set(x, "chunked", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: js.Array[Body]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunked(value: Boolean): Self = this.set("chunked", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteChunked: Self = this.set("chunked", js.undefined)
-    
-    @scala.inline
-    def setDataVarargs(value: Body*): Self = this.set("data", js.Array(value :_*))
-    
-    @scala.inline
-    def setData(value: js.Array[Body]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDataVarargs(value: Body*): Self = StObject.set(x, "data", js.Array(value :_*))
   }
 }

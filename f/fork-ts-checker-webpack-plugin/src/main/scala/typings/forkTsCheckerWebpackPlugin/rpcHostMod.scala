@@ -1,15 +1,16 @@
 package typings.forkTsCheckerWebpackPlugin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fork-ts-checker-webpack-plugin/lib/rpc/RpcHost", JSImport.Namespace)
-@js.native
-object rpcHostMod extends js.Object {
+object rpcHostMod {
+  
+  type RpcDispatcher = js.Function1[/* message */ js.Any, js.Promise[Unit]]
   
   @js.native
-  trait RpcHost extends js.Object {
+  trait RpcHost extends StObject {
     
     def dispatch[TMessage](message: TMessage): js.Promise[Unit] = js.native
     @JSName("dispatch")
@@ -17,6 +18,4 @@ object rpcHostMod extends js.Object {
     
     def register(dispatch: RpcDispatcher): Unit = js.native
   }
-  
-  type RpcDispatcher = js.Function1[/* message */ js.Any, js.Promise[Unit]]
 }

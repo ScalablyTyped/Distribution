@@ -1,19 +1,22 @@
 package typings.gitAddRemote
 
 import typings.node.childProcessMod.ExecException
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("git-add-remote", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("git-add-remote", JSImport.Namespace)
+  @js.native
   def apply(): AddRemote = js.native
+  @JSImport("git-add-remote", JSImport.Namespace)
+  @js.native
   def apply(cwd: String): AddRemote = js.native
   
   @js.native
-  trait AddRemote extends js.Object {
+  trait AddRemote extends StObject {
     
     def apply(
       name: String,

@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.xstate.anon.ContextAny
 import typings.xstate.interpreterMod.Clock
 import typings.xstate.interpreterMod.Interpreter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,45 +60,33 @@ object InterpreterOptions {
   }
   
   @scala.inline
-  implicit class InterpreterOptionsOps[Self <: InterpreterOptions] (val x: Self) extends AnyVal {
+  implicit class InterpreterOptionsMutableBuilder[Self <: InterpreterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClock(value: Clock): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeferEvents(value: Boolean): Self = StObject.set(x, "deferEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDevTools(value: Boolean | js.Object): Self = StObject.set(x, "devTools", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClock(value: Clock): Self = this.set("clock", value.asInstanceOf[js.Any])
+    def setExecute(value: Boolean): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeferEvents(value: Boolean): Self = this.set("deferEvents", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevTools(value: Boolean | js.Object): Self = this.set("devTools", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setExecute(value: Boolean): Self = this.set("execute", value.asInstanceOf[js.Any])
+    def setLogger(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLogger(value: /* repeated */ js.Any => Unit): Self = this.set("logger", js.Any.fromFunction1(value))
+    def setParent(value: Interpreter[_, _, _, ContextAny]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setParent(value: Interpreter[_, _, _, ContextAny]): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

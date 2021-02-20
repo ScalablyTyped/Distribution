@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Statistics extends js.Object {
+trait Statistics extends StObject {
   
   /**
     * The approximate number of objects that the job has yet to process during its current run.
@@ -26,30 +27,18 @@ object Statistics {
   }
   
   @scala.inline
-  implicit class StatisticsOps[Self <: Statistics] (val x: Self) extends AnyVal {
+  implicit class StatisticsMutableBuilder[Self <: Statistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApproximateNumberOfObjectsToProcess(value: double): Self = StObject.set(x, "approximateNumberOfObjectsToProcess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApproximateNumberOfObjectsToProcessUndefined: Self = StObject.set(x, "approximateNumberOfObjectsToProcess", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumberOfRuns(value: double): Self = StObject.set(x, "numberOfRuns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApproximateNumberOfObjectsToProcess(value: double): Self = this.set("approximateNumberOfObjectsToProcess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApproximateNumberOfObjectsToProcess: Self = this.set("approximateNumberOfObjectsToProcess", js.undefined)
-    
-    @scala.inline
-    def setNumberOfRuns(value: double): Self = this.set("numberOfRuns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfRuns: Self = this.set("numberOfRuns", js.undefined)
+    def setNumberOfRunsUndefined: Self = StObject.set(x, "numberOfRuns", js.undefined)
   }
 }

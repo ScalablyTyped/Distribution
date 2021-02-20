@@ -1,5 +1,6 @@
 package typings.youtube.YT
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,33 +32,21 @@ object IPlaylistSettings {
   }
   
   @scala.inline
-  implicit class IPlaylistSettingsOps[Self <: IPlaylistSettings] (val x: Self) extends AnyVal {
+  implicit class IPlaylistSettingsMutableBuilder[Self <: IPlaylistSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setList(value: String): Self = this.set("list", value.asInstanceOf[js.Any])
+    def setListType(value: ListType): Self = StObject.set(x, "listType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
-    
-    @scala.inline
-    def setListType(value: ListType): Self = this.set("listType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteListType: Self = this.set("listType", js.undefined)
+    def setListTypeUndefined: Self = StObject.set(x, "listType", js.undefined)
   }
 }

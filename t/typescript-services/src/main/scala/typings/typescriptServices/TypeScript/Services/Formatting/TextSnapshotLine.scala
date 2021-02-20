@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript.Services.Formatting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,33 +43,21 @@ object TextSnapshotLine {
   }
   
   @scala.inline
-  implicit class TextSnapshotLineOps[Self <: TextSnapshotLine] (val x: Self) extends AnyVal {
+  implicit class TextSnapshotLineMutableBuilder[Self <: TextSnapshotLine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set_end(value: js.Any): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_lineBreak(value: js.Any): Self = StObject.set(x, "_lineBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_lineNumber(value: js.Any): Self = StObject.set(x, "_lineNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_end(value: js.Any): Self = this.set("_end", value.asInstanceOf[js.Any])
+    def set_snapshot(value: js.Any): Self = StObject.set(x, "_snapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_lineBreak(value: js.Any): Self = this.set("_lineBreak", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_lineNumber(value: js.Any): Self = this.set("_lineNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_snapshot(value: js.Any): Self = this.set("_snapshot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_start(value: js.Any): Self = this.set("_start", value.asInstanceOf[js.Any])
+    def set_start(value: js.Any): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
   }
 }

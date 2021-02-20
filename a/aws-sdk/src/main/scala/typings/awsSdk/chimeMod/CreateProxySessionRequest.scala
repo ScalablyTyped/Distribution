@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateProxySessionRequest extends js.Object {
+trait CreateProxySessionRequest extends StObject {
   
   /**
     * The proxy session capabilities.
@@ -60,63 +61,51 @@ object CreateProxySessionRequest {
   }
   
   @scala.inline
-  implicit class CreateProxySessionRequestOps[Self <: CreateProxySessionRequest] (val x: Self) extends AnyVal {
+  implicit class CreateProxySessionRequestMutableBuilder[Self <: CreateProxySessionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapabilities(value: CapabilityList): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "Capabilities", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpiryMinutes(value: PositiveInteger): Self = StObject.set(x, "ExpiryMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilitiesVarargs(value: Capability*): Self = this.set("Capabilities", js.Array(value :_*))
+    def setExpiryMinutesUndefined: Self = StObject.set(x, "ExpiryMinutes", js.undefined)
     
     @scala.inline
-    def setCapabilities(value: CapabilityList): Self = this.set("Capabilities", value.asInstanceOf[js.Any])
+    def setGeoMatchLevel(value: GeoMatchLevel): Self = StObject.set(x, "GeoMatchLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParticipantPhoneNumbersVarargs(value: E164PhoneNumber*): Self = this.set("ParticipantPhoneNumbers", js.Array(value :_*))
+    def setGeoMatchLevelUndefined: Self = StObject.set(x, "GeoMatchLevel", js.undefined)
     
     @scala.inline
-    def setParticipantPhoneNumbers(value: ParticipantPhoneNumberList): Self = this.set("ParticipantPhoneNumbers", value.asInstanceOf[js.Any])
+    def setGeoMatchParams(value: GeoMatchParams): Self = StObject.set(x, "GeoMatchParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVoiceConnectorId(value: NonEmptyString128): Self = this.set("VoiceConnectorId", value.asInstanceOf[js.Any])
+    def setGeoMatchParamsUndefined: Self = StObject.set(x, "GeoMatchParams", js.undefined)
     
     @scala.inline
-    def setExpiryMinutes(value: PositiveInteger): Self = this.set("ExpiryMinutes", value.asInstanceOf[js.Any])
+    def setName(value: ProxySessionNameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpiryMinutes: Self = this.set("ExpiryMinutes", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def setGeoMatchLevel(value: GeoMatchLevel): Self = this.set("GeoMatchLevel", value.asInstanceOf[js.Any])
+    def setNumberSelectionBehavior(value: NumberSelectionBehavior): Self = StObject.set(x, "NumberSelectionBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGeoMatchLevel: Self = this.set("GeoMatchLevel", js.undefined)
+    def setNumberSelectionBehaviorUndefined: Self = StObject.set(x, "NumberSelectionBehavior", js.undefined)
     
     @scala.inline
-    def setGeoMatchParams(value: GeoMatchParams): Self = this.set("GeoMatchParams", value.asInstanceOf[js.Any])
+    def setParticipantPhoneNumbers(value: ParticipantPhoneNumberList): Self = StObject.set(x, "ParticipantPhoneNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGeoMatchParams: Self = this.set("GeoMatchParams", js.undefined)
+    def setParticipantPhoneNumbersVarargs(value: E164PhoneNumber*): Self = StObject.set(x, "ParticipantPhoneNumbers", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: ProxySessionNameString): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setNumberSelectionBehavior(value: NumberSelectionBehavior): Self = this.set("NumberSelectionBehavior", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberSelectionBehavior: Self = this.set("NumberSelectionBehavior", js.undefined)
+    def setVoiceConnectorId(value: NonEmptyString128): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
   }
 }

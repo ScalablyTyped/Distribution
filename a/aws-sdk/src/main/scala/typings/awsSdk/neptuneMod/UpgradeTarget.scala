@@ -1,11 +1,12 @@
 package typings.awsSdk.neptuneMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpgradeTarget extends js.Object {
+trait UpgradeTarget extends StObject {
   
   /**
     * A value that indicates whether the target version is applied to any source DB instances that have AutoMinorVersionUpgrade set to true.
@@ -41,48 +42,36 @@ object UpgradeTarget {
   }
   
   @scala.inline
-  implicit class UpgradeTargetOps[Self <: UpgradeTarget] (val x: Self) extends AnyVal {
+  implicit class UpgradeTargetMutableBuilder[Self <: UpgradeTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoUpgrade(value: Boolean): Self = StObject.set(x, "AutoUpgrade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoUpgradeUndefined: Self = StObject.set(x, "AutoUpgrade", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoUpgrade(value: Boolean): Self = this.set("AutoUpgrade", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteAutoUpgrade: Self = this.set("AutoUpgrade", js.undefined)
+    def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
     @scala.inline
-    def deleteEngine: Self = this.set("Engine", js.undefined)
+    def setIsMajorVersionUpgrade(value: Boolean): Self = StObject.set(x, "IsMajorVersionUpgrade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
-    
-    @scala.inline
-    def setIsMajorVersionUpgrade(value: Boolean): Self = this.set("IsMajorVersionUpgrade", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsMajorVersionUpgrade: Self = this.set("IsMajorVersionUpgrade", js.undefined)
+    def setIsMajorVersionUpgradeUndefined: Self = StObject.set(x, "IsMajorVersionUpgrade", js.undefined)
   }
 }

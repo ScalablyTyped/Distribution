@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImportDataSource extends js.Object {
+trait ImportDataSource extends StObject {
   
   /**
     * The data format of the import job's data source.
@@ -26,24 +27,12 @@ object ImportDataSource {
   }
   
   @scala.inline
-  implicit class ImportDataSourceOps[Self <: ImportDataSource] (val x: Self) extends AnyVal {
+  implicit class ImportDataSourceMutableBuilder[Self <: ImportDataSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataFormat(value: DataFormat): Self = StObject.set(x, "DataFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataFormat(value: DataFormat): Self = this.set("DataFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setS3Url(value: S3Url): Self = this.set("S3Url", value.asInstanceOf[js.Any])
+    def setS3Url(value: S3Url): Self = StObject.set(x, "S3Url", value.asInstanceOf[js.Any])
   }
 }

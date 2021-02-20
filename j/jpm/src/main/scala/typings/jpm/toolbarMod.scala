@@ -5,6 +5,7 @@ import typings.jpm.jpmStrings.attach
 import typings.jpm.jpmStrings.detach
 import typings.jpm.jpmStrings.hide
 import typings.jpm.jpmStrings.show
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,13 +13,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Add a toolbar to the Firefox user interface. A toolbar is a horizontal strip of user interface real estate
   */
-@JSImport("sdk/ui/toolbar", JSImport.Namespace)
-@js.native
-object toolbarMod extends js.Object {
+object toolbarMod {
   
-  def Toolbar(options: Hidden): Toolbar = js.native
   @js.native
-  trait Toolbar extends js.Object {
+  trait Toolbar extends StObject {
     
     def destroy(): Unit = js.native
     
@@ -64,11 +62,14 @@ object toolbarMod extends js.Object {
     
     var title: String = js.native
   }
+  @JSImport("sdk/ui/toolbar", "Toolbar")
+  @js.native
+  def Toolbar(options: Hidden): Toolbar = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.jpm.FFAddonSDK.Frame
     - typings.jpm.FFAddonSDK.ActionButton
     - typings.jpm.FFAddonSDK.ToggleButton
   */
-  trait ToolbarItem extends js.Object
+  trait ToolbarItem extends StObject
 }

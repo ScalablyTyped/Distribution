@@ -2,6 +2,7 @@ package typings.oracleOraclejet.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.oracleOraclejet.ojmodelMod.Model
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,66 +36,54 @@ object Comparator {
   }
   
   @scala.inline
-  implicit class ComparatorOps[Self <: Comparator] (val x: Self) extends AnyVal {
+  implicit class ComparatorMutableBuilder[Self <: Comparator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComparator(value: String | (js.Function2[/* model1 */ Model, /* model2 */ js.UndefOr[Model], Double])): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComparatorFunction2(value: (/* model1 */ Model, /* model2 */ js.UndefOr[Model]) => Double): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComparatorNull: Self = StObject.set(x, "comparator", null)
     
     @scala.inline
-    def setComparatorFunction2(value: (/* model1 */ Model, /* model2 */ js.UndefOr[Model]) => Double): Self = this.set("comparator", js.Any.fromFunction2(value))
+    def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
     
     @scala.inline
-    def setComparator(value: String | (js.Function2[/* model1 */ Model, /* model2 */ js.UndefOr[Model], Double])): Self = this.set("comparator", value.asInstanceOf[js.Any])
+    def setFetchSize(value: Double): Self = StObject.set(x, "fetchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComparator: Self = this.set("comparator", js.undefined)
+    def setFetchSizeUndefined: Self = StObject.set(x, "fetchSize", js.undefined)
     
     @scala.inline
-    def setComparatorNull: Self = this.set("comparator", null)
+    def setInitialize(value: (/* models */ js.Array[Model], /* options */ js.Object) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFetchSize(value: Double): Self = this.set("fetchSize", value.asInstanceOf[js.Any])
+    def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
     
     @scala.inline
-    def deleteFetchSize: Self = this.set("fetchSize", js.undefined)
+    def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialize(value: (/* models */ js.Array[Model], /* options */ js.Object) => Unit): Self = this.set("initialize", js.Any.fromFunction2(value))
+    def setModelLimit(value: Double): Self = StObject.set(x, "modelLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitialize: Self = this.set("initialize", js.undefined)
+    def setModelLimitUndefined: Self = StObject.set(x, "modelLimit", js.undefined)
     
     @scala.inline
-    def setModel(value: Model): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setParse(value: /* data */ js.Any => _): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setModelLimit(value: Double): Self = this.set("modelLimit", value.asInstanceOf[js.Any])
+    def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
     
     @scala.inline
-    def deleteModelLimit: Self = this.set("modelLimit", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParse(value: /* data */ js.Any => _): Self = this.set("parse", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteParse: Self = this.set("parse", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

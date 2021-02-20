@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MergePullRequestBySquashOutput extends js.Object {
+trait MergePullRequestBySquashOutput extends StObject {
   
   var pullRequest: js.UndefOr[PullRequest] = js.native
 }
@@ -18,24 +19,12 @@ object MergePullRequestBySquashOutput {
   }
   
   @scala.inline
-  implicit class MergePullRequestBySquashOutputOps[Self <: MergePullRequestBySquashOutput] (val x: Self) extends AnyVal {
+  implicit class MergePullRequestBySquashOutputMutableBuilder[Self <: MergePullRequestBySquashOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPullRequest(value: PullRequest): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPullRequest(value: PullRequest): Self = this.set("pullRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePullRequest: Self = this.set("pullRequest", js.undefined)
+    def setPullRequestUndefined: Self = StObject.set(x, "pullRequest", js.undefined)
   }
 }

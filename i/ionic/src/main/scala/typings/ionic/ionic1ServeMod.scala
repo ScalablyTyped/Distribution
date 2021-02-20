@@ -4,14 +4,14 @@ import typings.ionic.definitionsMod.Ionic1ServeOptions
 import typings.ionic.ionic1Mod.Ionic1Project
 import typings.ionic.libServeMod.ServeRunner
 import typings.ionic.libServeMod.ServeRunnerDeps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/lib/project/ionic1/serve", JSImport.Namespace)
-@js.native
-object ionic1ServeMod extends js.Object {
+object ionic1ServeMod {
   
+  @JSImport("ionic/lib/project/ionic1/serve", "Ionic1ServeRunner")
   @js.native
   class Ionic1ServeRunner protected () extends ServeRunner[Ionic1ServeOptions] {
     def this(e: Ionic1ServeRunnerDeps) = this()

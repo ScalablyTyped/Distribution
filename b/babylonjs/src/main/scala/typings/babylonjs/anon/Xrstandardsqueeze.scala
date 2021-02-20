@@ -1,11 +1,12 @@
 package typings.babylonjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Xrstandardsqueeze extends js.Object {
+trait Xrstandardsqueeze extends StObject {
   
   var `xr-standard-squeeze`: RootNodeName = js.native
   
@@ -33,30 +34,18 @@ object Xrstandardsqueeze {
   }
   
   @scala.inline
-  implicit class XrstandardsqueezeOps[Self <: Xrstandardsqueeze] (val x: Self) extends AnyVal {
+  implicit class XrstandardsqueezeMutableBuilder[Self <: Xrstandardsqueeze] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setXr-standard-squeeze`(value: RootNodeName): Self = StObject.set(x, "xr-standard-squeeze", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setXr-standard-thumbstick`(value: RootNodeName): Self = StObject.set(x, "xr-standard-thumbstick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setXr-standard-touchpad`(value: LabelAnchorNodeName): Self = StObject.set(x, "xr-standard-touchpad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setXr-standard-squeeze`(value: RootNodeName): Self = this.set("xr-standard-squeeze", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setXr-standard-thumbstick`(value: RootNodeName): Self = this.set("xr-standard-thumbstick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setXr-standard-touchpad`(value: LabelAnchorNodeName): Self = this.set("xr-standard-touchpad", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setXr-standard-trigger`(value: RootNodeName): Self = this.set("xr-standard-trigger", value.asInstanceOf[js.Any])
+    def `setXr-standard-trigger`(value: RootNodeName): Self = StObject.set(x, "xr-standard-trigger", value.asInstanceOf[js.Any])
   }
 }

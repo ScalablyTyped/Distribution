@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CategoricalValue extends js.Object {
+trait CategoricalValue extends StObject {
   
   /**
     * Counts of all categories for the categorical feature. If there are more than ten categories, we return top ten (by count) and return one more CategoryCount with category "_OTHER_"
@@ -22,27 +23,15 @@ object CategoricalValue {
   }
   
   @scala.inline
-  implicit class CategoricalValueOps[Self <: CategoricalValue] (val x: Self) extends AnyVal {
+  implicit class CategoricalValueMutableBuilder[Self <: CategoricalValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategoryCounts(value: js.Array[CategoryCount]): Self = StObject.set(x, "categoryCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryCountsUndefined: Self = StObject.set(x, "categoryCounts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCategoryCountsVarargs(value: CategoryCount*): Self = this.set("categoryCounts", js.Array(value :_*))
-    
-    @scala.inline
-    def setCategoryCounts(value: js.Array[CategoryCount]): Self = this.set("categoryCounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCategoryCounts: Self = this.set("categoryCounts", js.undefined)
+    def setCategoryCountsVarargs(value: CategoryCount*): Self = StObject.set(x, "categoryCounts", js.Array(value :_*))
   }
 }

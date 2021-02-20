@@ -1,12 +1,13 @@
 package typings.chromeApps.anon
 
 import typings.chromeApps.chromeAppsStrings.read_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Defaulticon extends js.Object {
+trait Defaulticon extends StObject {
   
   /** Icon */
   var default_icon: String = js.native
@@ -34,42 +35,30 @@ object Defaulticon {
   }
   
   @scala.inline
-  implicit class DefaulticonOps[Self <: Defaulticon] (val x: Self) extends AnyVal {
+  implicit class DefaulticonMutableBuilder[Self <: Defaulticon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefault_icon(value: String): Self = StObject.set(x, "default_icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefault_title(value: String): Self = StObject.set(x, "default_title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFile_access(value: js.Array[read_ | String]): Self = StObject.set(x, "file_access", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault_icon(value: String): Self = this.set("default_icon", value.asInstanceOf[js.Any])
+    def setFile_accessUndefined: Self = StObject.set(x, "file_access", js.undefined)
     
     @scala.inline
-    def setDefault_title(value: String): Self = this.set("default_title", value.asInstanceOf[js.Any])
+    def setFile_accessVarargs(value: (read_ | String)*): Self = StObject.set(x, "file_access", js.Array(value :_*))
     
     @scala.inline
-    def setFile_filtersVarargs(value: String*): Self = this.set("file_filters", js.Array(value :_*))
+    def setFile_filters(value: js.Array[String]): Self = StObject.set(x, "file_filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile_filters(value: js.Array[String]): Self = this.set("file_filters", value.asInstanceOf[js.Any])
+    def setFile_filtersVarargs(value: String*): Self = StObject.set(x, "file_filters", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFile_accessVarargs(value: (read_ | String)*): Self = this.set("file_access", js.Array(value :_*))
-    
-    @scala.inline
-    def setFile_access(value: js.Array[read_ | String]): Self = this.set("file_access", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFile_access: Self = this.set("file_access", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

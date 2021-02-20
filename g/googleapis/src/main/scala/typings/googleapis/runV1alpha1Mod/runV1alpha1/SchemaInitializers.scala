@@ -1,5 +1,6 @@
 package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Initializers tracks the progress of initialization.
   */
 @js.native
-trait SchemaInitializers extends js.Object {
+trait SchemaInitializers extends StObject {
   
   /**
     * Pending is a list of initializers that must execute in order before this
@@ -28,27 +29,15 @@ object SchemaInitializers {
   }
   
   @scala.inline
-  implicit class SchemaInitializersOps[Self <: SchemaInitializers] (val x: Self) extends AnyVal {
+  implicit class SchemaInitializersMutableBuilder[Self <: SchemaInitializers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPending(value: js.Array[SchemaInitializer]): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPendingVarargs(value: SchemaInitializer*): Self = this.set("pending", js.Array(value :_*))
-    
-    @scala.inline
-    def setPending(value: js.Array[SchemaInitializer]): Self = this.set("pending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePending: Self = this.set("pending", js.undefined)
+    def setPendingVarargs(value: SchemaInitializer*): Self = StObject.set(x, "pending", js.Array(value :_*))
   }
 }

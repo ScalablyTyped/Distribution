@@ -1,12 +1,13 @@
 package typings.sjcl.mod
 
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SjclArrayBufferCCMMode extends js.Object {
+trait SjclArrayBufferCCMMode extends StObject {
   
   def compat_decrypt(prf: SjclCipher, ciphertext: BitArray_, iv: BitArray_): BitArray_ = js.native
   def compat_decrypt(

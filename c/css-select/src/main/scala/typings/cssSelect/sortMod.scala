@@ -1,13 +1,14 @@
 package typings.cssSelect
 
 import typings.cssSelect.typesMod.InternalSelector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("css-select/lib/sort", JSImport.Namespace)
-@js.native
-object sortMod extends js.Object {
+object sortMod {
   
+  @JSImport("css-select/lib/sort", JSImport.Default)
+  @js.native
   def default(arr: js.Array[InternalSelector]): Unit = js.native
 }

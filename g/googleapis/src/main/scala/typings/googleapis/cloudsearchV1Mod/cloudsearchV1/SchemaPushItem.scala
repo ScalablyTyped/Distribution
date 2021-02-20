@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents an item to be pushed to the indexing queue.
   */
 @js.native
-trait SchemaPushItem extends js.Object {
+trait SchemaPushItem extends StObject {
   
   /**
     * Content hash of the item according to the repository. If specified, this
@@ -69,60 +70,48 @@ object SchemaPushItem {
   }
   
   @scala.inline
-  implicit class SchemaPushItemOps[Self <: SchemaPushItem] (val x: Self) extends AnyVal {
+  implicit class SchemaPushItemMutableBuilder[Self <: SchemaPushItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentHash(value: String): Self = StObject.set(x, "contentHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentHashUndefined: Self = StObject.set(x, "contentHash", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetadataHash(value: String): Self = StObject.set(x, "metadataHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentHash(value: String): Self = this.set("contentHash", value.asInstanceOf[js.Any])
+    def setMetadataHashUndefined: Self = StObject.set(x, "metadataHash", js.undefined)
     
     @scala.inline
-    def deleteContentHash: Self = this.set("contentHash", js.undefined)
+    def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataHash(value: String): Self = this.set("metadataHash", value.asInstanceOf[js.Any])
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     @scala.inline
-    def deleteMetadataHash: Self = this.set("metadataHash", js.undefined)
+    def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayload(value: String): Self = this.set("payload", value.asInstanceOf[js.Any])
+    def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
     
     @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
+    def setRepositoryError(value: SchemaRepositoryError): Self = StObject.set(x, "repositoryError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueue(value: String): Self = this.set("queue", value.asInstanceOf[js.Any])
+    def setRepositoryErrorUndefined: Self = StObject.set(x, "repositoryError", js.undefined)
     
     @scala.inline
-    def deleteQueue: Self = this.set("queue", js.undefined)
+    def setStructuredDataHash(value: String): Self = StObject.set(x, "structuredDataHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryError(value: SchemaRepositoryError): Self = this.set("repositoryError", value.asInstanceOf[js.Any])
+    def setStructuredDataHashUndefined: Self = StObject.set(x, "structuredDataHash", js.undefined)
     
     @scala.inline
-    def deleteRepositoryError: Self = this.set("repositoryError", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStructuredDataHash(value: String): Self = this.set("structuredDataHash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStructuredDataHash: Self = this.set("structuredDataHash", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

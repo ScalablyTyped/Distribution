@@ -1,12 +1,13 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaTrainingOptions extends js.Object {
+trait SchemaTrainingOptions extends StObject {
   
   /**
     * The column to split data with. This column won&#39;t be used as a
@@ -114,123 +115,111 @@ object SchemaTrainingOptions {
   }
   
   @scala.inline
-  implicit class SchemaTrainingOptionsOps[Self <: SchemaTrainingOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaTrainingOptionsMutableBuilder[Self <: SchemaTrainingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSplitColumn(value: String): Self = StObject.set(x, "dataSplitColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSplitColumnUndefined: Self = StObject.set(x, "dataSplitColumn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSplitEvalFraction(value: Double): Self = StObject.set(x, "dataSplitEvalFraction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSplitColumn(value: String): Self = this.set("dataSplitColumn", value.asInstanceOf[js.Any])
+    def setDataSplitEvalFractionUndefined: Self = StObject.set(x, "dataSplitEvalFraction", js.undefined)
     
     @scala.inline
-    def deleteDataSplitColumn: Self = this.set("dataSplitColumn", js.undefined)
+    def setDataSplitMethod(value: String): Self = StObject.set(x, "dataSplitMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSplitEvalFraction(value: Double): Self = this.set("dataSplitEvalFraction", value.asInstanceOf[js.Any])
+    def setDataSplitMethodUndefined: Self = StObject.set(x, "dataSplitMethod", js.undefined)
     
     @scala.inline
-    def deleteDataSplitEvalFraction: Self = this.set("dataSplitEvalFraction", js.undefined)
+    def setDistanceType(value: String): Self = StObject.set(x, "distanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSplitMethod(value: String): Self = this.set("dataSplitMethod", value.asInstanceOf[js.Any])
+    def setDistanceTypeUndefined: Self = StObject.set(x, "distanceType", js.undefined)
     
     @scala.inline
-    def deleteDataSplitMethod: Self = this.set("dataSplitMethod", js.undefined)
+    def setEarlyStop(value: Boolean): Self = StObject.set(x, "earlyStop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceType(value: String): Self = this.set("distanceType", value.asInstanceOf[js.Any])
+    def setEarlyStopUndefined: Self = StObject.set(x, "earlyStop", js.undefined)
     
     @scala.inline
-    def deleteDistanceType: Self = this.set("distanceType", js.undefined)
+    def setInitialLearnRate(value: Double): Self = StObject.set(x, "initialLearnRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEarlyStop(value: Boolean): Self = this.set("earlyStop", value.asInstanceOf[js.Any])
+    def setInitialLearnRateUndefined: Self = StObject.set(x, "initialLearnRate", js.undefined)
     
     @scala.inline
-    def deleteEarlyStop: Self = this.set("earlyStop", js.undefined)
+    def setInputLabelColumns(value: js.Array[String]): Self = StObject.set(x, "inputLabelColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialLearnRate(value: Double): Self = this.set("initialLearnRate", value.asInstanceOf[js.Any])
+    def setInputLabelColumnsUndefined: Self = StObject.set(x, "inputLabelColumns", js.undefined)
     
     @scala.inline
-    def deleteInitialLearnRate: Self = this.set("initialLearnRate", js.undefined)
+    def setInputLabelColumnsVarargs(value: String*): Self = StObject.set(x, "inputLabelColumns", js.Array(value :_*))
     
     @scala.inline
-    def setInputLabelColumnsVarargs(value: String*): Self = this.set("inputLabelColumns", js.Array(value :_*))
+    def setL1Regularization(value: Double): Self = StObject.set(x, "l1Regularization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputLabelColumns(value: js.Array[String]): Self = this.set("inputLabelColumns", value.asInstanceOf[js.Any])
+    def setL1RegularizationUndefined: Self = StObject.set(x, "l1Regularization", js.undefined)
     
     @scala.inline
-    def deleteInputLabelColumns: Self = this.set("inputLabelColumns", js.undefined)
+    def setL2Regularization(value: Double): Self = StObject.set(x, "l2Regularization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL1Regularization(value: Double): Self = this.set("l1Regularization", value.asInstanceOf[js.Any])
+    def setL2RegularizationUndefined: Self = StObject.set(x, "l2Regularization", js.undefined)
     
     @scala.inline
-    def deleteL1Regularization: Self = this.set("l1Regularization", js.undefined)
+    def setLabelClassWeights(value: StringDictionary[Double]): Self = StObject.set(x, "labelClassWeights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL2Regularization(value: Double): Self = this.set("l2Regularization", value.asInstanceOf[js.Any])
+    def setLabelClassWeightsUndefined: Self = StObject.set(x, "labelClassWeights", js.undefined)
     
     @scala.inline
-    def deleteL2Regularization: Self = this.set("l2Regularization", js.undefined)
+    def setLearnRate(value: Double): Self = StObject.set(x, "learnRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelClassWeights(value: StringDictionary[Double]): Self = this.set("labelClassWeights", value.asInstanceOf[js.Any])
+    def setLearnRateStrategy(value: String): Self = StObject.set(x, "learnRateStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelClassWeights: Self = this.set("labelClassWeights", js.undefined)
+    def setLearnRateStrategyUndefined: Self = StObject.set(x, "learnRateStrategy", js.undefined)
     
     @scala.inline
-    def setLearnRate(value: Double): Self = this.set("learnRate", value.asInstanceOf[js.Any])
+    def setLearnRateUndefined: Self = StObject.set(x, "learnRate", js.undefined)
     
     @scala.inline
-    def deleteLearnRate: Self = this.set("learnRate", js.undefined)
+    def setLossType(value: String): Self = StObject.set(x, "lossType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLearnRateStrategy(value: String): Self = this.set("learnRateStrategy", value.asInstanceOf[js.Any])
+    def setLossTypeUndefined: Self = StObject.set(x, "lossType", js.undefined)
     
     @scala.inline
-    def deleteLearnRateStrategy: Self = this.set("learnRateStrategy", js.undefined)
+    def setMaxIterations(value: String): Self = StObject.set(x, "maxIterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLossType(value: String): Self = this.set("lossType", value.asInstanceOf[js.Any])
+    def setMaxIterationsUndefined: Self = StObject.set(x, "maxIterations", js.undefined)
     
     @scala.inline
-    def deleteLossType: Self = this.set("lossType", js.undefined)
+    def setMinRelativeProgress(value: Double): Self = StObject.set(x, "minRelativeProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxIterations(value: String): Self = this.set("maxIterations", value.asInstanceOf[js.Any])
+    def setMinRelativeProgressUndefined: Self = StObject.set(x, "minRelativeProgress", js.undefined)
     
     @scala.inline
-    def deleteMaxIterations: Self = this.set("maxIterations", js.undefined)
+    def setNumClusters(value: String): Self = StObject.set(x, "numClusters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinRelativeProgress(value: Double): Self = this.set("minRelativeProgress", value.asInstanceOf[js.Any])
+    def setNumClustersUndefined: Self = StObject.set(x, "numClusters", js.undefined)
     
     @scala.inline
-    def deleteMinRelativeProgress: Self = this.set("minRelativeProgress", js.undefined)
+    def setWarmStart(value: Boolean): Self = StObject.set(x, "warmStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumClusters(value: String): Self = this.set("numClusters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumClusters: Self = this.set("numClusters", js.undefined)
-    
-    @scala.inline
-    def setWarmStart(value: Boolean): Self = this.set("warmStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarmStart: Self = this.set("warmStart", js.undefined)
+    def setWarmStartUndefined: Self = StObject.set(x, "warmStart", js.undefined)
   }
 }

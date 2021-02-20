@@ -1,12 +1,13 @@
 package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldName extends js.Object {
+trait FieldName extends StObject {
   
   var fieldName: String = js.native
   
@@ -33,36 +34,24 @@ object FieldName {
   }
   
   @scala.inline
-  implicit class FieldNameOps[Self <: FieldName] (val x: Self) extends AnyVal {
+  implicit class FieldNameMutableBuilder[Self <: FieldName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParentTypeName(value: String): Self = StObject.set(x, "parentTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelectionSetGraphQL(value: String): Self = StObject.set(x, "selectionSetGraphQL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldName(value: String): Self = this.set("fieldName", value.asInstanceOf[js.Any])
+    def setSelectionSetList(value: js.Array[String]): Self = StObject.set(x, "selectionSetList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentTypeName(value: String): Self = this.set("parentTypeName", value.asInstanceOf[js.Any])
+    def setSelectionSetListVarargs(value: String*): Self = StObject.set(x, "selectionSetList", js.Array(value :_*))
     
     @scala.inline
-    def setSelectionSetGraphQL(value: String): Self = this.set("selectionSetGraphQL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectionSetListVarargs(value: String*): Self = this.set("selectionSetList", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelectionSetList(value: js.Array[String]): Self = this.set("selectionSetList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariables(value: StringDictionary[js.Any]): Self = this.set("variables", value.asInstanceOf[js.Any])
+    def setVariables(value: StringDictionary[js.Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.oakdexPokedex.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MoveStatModifier extends js.Object {
+trait MoveStatModifier extends StObject {
   
   var affects_user: js.UndefOr[Boolean] = js.native
   
@@ -22,30 +23,18 @@ object MoveStatModifier {
   }
   
   @scala.inline
-  implicit class MoveStatModifierOps[Self <: MoveStatModifier] (val x: Self) extends AnyVal {
+  implicit class MoveStatModifierMutableBuilder[Self <: MoveStatModifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAffects_user(value: Boolean): Self = StObject.set(x, "affects_user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAffects_userUndefined: Self = StObject.set(x, "affects_user", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChange_by(value: Double): Self = StObject.set(x, "change_by", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange_by(value: Double): Self = this.set("change_by", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStat(value: String): Self = this.set("stat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAffects_user(value: Boolean): Self = this.set("affects_user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAffects_user: Self = this.set("affects_user", js.undefined)
+    def setStat(value: String): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
   }
 }

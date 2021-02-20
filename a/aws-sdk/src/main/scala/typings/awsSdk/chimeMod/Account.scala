@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Account extends js.Object {
+trait Account extends StObject {
   
   /**
     * The Amazon Chime account ID.
@@ -56,63 +57,51 @@ object Account {
   }
   
   @scala.inline
-  implicit class AccountOps[Self <: Account] (val x: Self) extends AnyVal {
+  implicit class AccountMutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountType(value: AccountType): Self = StObject.set(x, "AccountType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountTypeUndefined: Self = StObject.set(x, "AccountType", js.undefined)
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    def setAwsAccountId(value: String): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsAccountId(value: String): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    def setCreatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
     @scala.inline
-    def setAccountType(value: AccountType): Self = this.set("AccountType", value.asInstanceOf[js.Any])
+    def setDefaultLicense(value: License): Self = StObject.set(x, "DefaultLicense", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccountType: Self = this.set("AccountType", js.undefined)
+    def setDefaultLicenseUndefined: Self = StObject.set(x, "DefaultLicense", js.undefined)
     
     @scala.inline
-    def setCreatedTimestamp(value: Iso8601Timestamp): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    def setSigninDelegateGroups(value: SigninDelegateGroupList): Self = StObject.set(x, "SigninDelegateGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultLicense(value: License): Self = this.set("DefaultLicense", value.asInstanceOf[js.Any])
+    def setSigninDelegateGroupsUndefined: Self = StObject.set(x, "SigninDelegateGroups", js.undefined)
     
     @scala.inline
-    def deleteDefaultLicense: Self = this.set("DefaultLicense", js.undefined)
+    def setSigninDelegateGroupsVarargs(value: SigninDelegateGroup*): Self = StObject.set(x, "SigninDelegateGroups", js.Array(value :_*))
     
     @scala.inline
-    def setSigninDelegateGroupsVarargs(value: SigninDelegateGroup*): Self = this.set("SigninDelegateGroups", js.Array(value :_*))
+    def setSupportedLicenses(value: LicenseList): Self = StObject.set(x, "SupportedLicenses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigninDelegateGroups(value: SigninDelegateGroupList): Self = this.set("SigninDelegateGroups", value.asInstanceOf[js.Any])
+    def setSupportedLicensesUndefined: Self = StObject.set(x, "SupportedLicenses", js.undefined)
     
     @scala.inline
-    def deleteSigninDelegateGroups: Self = this.set("SigninDelegateGroups", js.undefined)
-    
-    @scala.inline
-    def setSupportedLicensesVarargs(value: License*): Self = this.set("SupportedLicenses", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportedLicenses(value: LicenseList): Self = this.set("SupportedLicenses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedLicenses: Self = this.set("SupportedLicenses", js.undefined)
+    def setSupportedLicensesVarargs(value: License*): Self = StObject.set(x, "SupportedLicenses", js.Array(value :_*))
   }
 }

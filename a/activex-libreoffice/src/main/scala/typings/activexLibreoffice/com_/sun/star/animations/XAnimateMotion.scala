@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,24 +72,12 @@ object XAnimateMotion {
   }
   
   @scala.inline
-  implicit class XAnimateMotionOps[Self <: XAnimateMotion] (val x: Self) extends AnyVal {
+  implicit class XAnimateMotionMutableBuilder[Self <: XAnimateMotion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrigin(value: js.Any): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOrigin(value: js.Any): Self = this.set("Origin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: js.Any): Self = this.set("Path", value.asInstanceOf[js.Any])
+    def setPath(value: js.Any): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
   }
 }

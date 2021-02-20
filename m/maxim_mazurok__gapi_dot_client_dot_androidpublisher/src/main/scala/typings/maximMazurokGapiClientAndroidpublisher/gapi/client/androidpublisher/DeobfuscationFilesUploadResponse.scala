@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeobfuscationFilesUploadResponse extends js.Object {
+trait DeobfuscationFilesUploadResponse extends StObject {
   
   /** The uploaded Deobfuscation File configuration. */
   var deobfuscationFile: js.UndefOr[DeobfuscationFile] = js.native
@@ -19,24 +20,12 @@ object DeobfuscationFilesUploadResponse {
   }
   
   @scala.inline
-  implicit class DeobfuscationFilesUploadResponseOps[Self <: DeobfuscationFilesUploadResponse] (val x: Self) extends AnyVal {
+  implicit class DeobfuscationFilesUploadResponseMutableBuilder[Self <: DeobfuscationFilesUploadResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeobfuscationFile(value: DeobfuscationFile): Self = StObject.set(x, "deobfuscationFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeobfuscationFile(value: DeobfuscationFile): Self = this.set("deobfuscationFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeobfuscationFile: Self = this.set("deobfuscationFile", js.undefined)
+    def setDeobfuscationFileUndefined: Self = StObject.set(x, "deobfuscationFile", js.undefined)
   }
 }

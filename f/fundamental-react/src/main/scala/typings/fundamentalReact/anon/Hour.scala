@@ -2,12 +2,13 @@ package typings.fundamentalReact.anon
 
 import typings.fundamentalReact.fundamentalReactNumbers.`0`
 import typings.fundamentalReact.fundamentalReactNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hour extends js.Object {
+trait Hour extends StObject {
   
   var hour: String = js.native
   
@@ -26,30 +27,18 @@ object Hour {
   }
   
   @scala.inline
-  implicit class HourOps[Self <: Hour] (val x: Self) extends AnyVal {
+  implicit class HourMutableBuilder[Self <: Hour] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHour(value: String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMeridiem(value: `0` | `1`): Self = StObject.set(x, "meridiem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinute(value: String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHour(value: String): Self = this.set("hour", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMeridiem(value: `0` | `1`): Self = this.set("meridiem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinute(value: String): Self = this.set("minute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecond(value: String): Self = this.set("second", value.asInstanceOf[js.Any])
+    def setSecond(value: String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
   }
 }

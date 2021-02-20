@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,33 +48,21 @@ object XChartTypeContainer {
   }
   
   @scala.inline
-  implicit class XChartTypeContainerOps[Self <: XChartTypeContainer] (val x: Self) extends AnyVal {
+  implicit class XChartTypeContainerMutableBuilder[Self <: XChartTypeContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddChartType(value: XChartType => Unit): Self = StObject.set(x, "addChartType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChartTypes(value: SafeArray[XChartType]): Self = StObject.set(x, "ChartTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetChartTypes(value: () => SafeArray[XChartType]): Self = StObject.set(x, "getChartTypes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChartTypes(value: SafeArray[XChartType]): Self = this.set("ChartTypes", value.asInstanceOf[js.Any])
+    def setRemoveChartType(value: XChartType => Unit): Self = StObject.set(x, "removeChartType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddChartType(value: XChartType => Unit): Self = this.set("addChartType", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetChartTypes(value: () => SafeArray[XChartType]): Self = this.set("getChartTypes", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveChartType(value: XChartType => Unit): Self = this.set("removeChartType", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetChartTypes(value: SeqEquiv[XChartType] => Unit): Self = this.set("setChartTypes", js.Any.fromFunction1(value))
+    def setSetChartTypes(value: SeqEquiv[XChartType] => Unit): Self = StObject.set(x, "setChartTypes", js.Any.fromFunction1(value))
   }
 }

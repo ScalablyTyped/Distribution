@@ -1,12 +1,13 @@
 package typings.playable.uiMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("playable/dist/src/constants/events/ui", JSImport.Default)
 @js.native
-object default extends js.Object {
+object default extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[UIEvent with String] = js.native

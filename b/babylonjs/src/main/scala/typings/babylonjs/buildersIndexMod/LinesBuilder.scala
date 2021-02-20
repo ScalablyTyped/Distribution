@@ -6,6 +6,7 @@ import typings.babylonjs.anon.Points
 import typings.babylonjs.linesMeshMod.LinesMesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class LinesBuilder ()
   extends typings.babylonjs.linesBuilderMod.LinesBuilder
 /* static members */
-@JSImport("babylonjs/Meshes/Builders/index", "LinesBuilder")
-@js.native
-object LinesBuilder extends js.Object {
+object LinesBuilder {
   
   /**
     * Creates a dashed line mesh
@@ -37,7 +36,11 @@ object LinesBuilder extends js.Object {
     * @returns the dashed line mesh
     * @see https://doc.babylonjs.com/how_to/parametric_shapes#dashed-lines
     */
+  @JSImport("babylonjs/Meshes/Builders/index", "LinesBuilder.CreateDashedLines")
+  @js.native
   def CreateDashedLines(name: String, options: DashSize): LinesMesh = js.native
+  @JSImport("babylonjs/Meshes/Builders/index", "LinesBuilder.CreateDashedLines")
+  @js.native
   def CreateDashedLines(name: String, options: DashSize, scene: Nullable[Scene]): LinesMesh = js.native
   
   /**
@@ -57,6 +60,8 @@ object LinesBuilder extends js.Object {
     * @param scene defines the hosting scene
     * @returns a new line system mesh
     */
+  @JSImport("babylonjs/Meshes/Builders/index", "LinesBuilder.CreateLineSystem")
+  @js.native
   def CreateLineSystem(name: String, options: Instance, scene: Nullable[Scene]): LinesMesh = js.native
   
   /**
@@ -75,6 +80,10 @@ object LinesBuilder extends js.Object {
     * @param scene defines the hosting scene
     * @returns a new line mesh
     */
+  @JSImport("babylonjs/Meshes/Builders/index", "LinesBuilder.CreateLines")
+  @js.native
   def CreateLines(name: String, options: Points): LinesMesh = js.native
+  @JSImport("babylonjs/Meshes/Builders/index", "LinesBuilder.CreateLines")
+  @js.native
   def CreateLines(name: String, options: Points, scene: Nullable[Scene]): LinesMesh = js.native
 }

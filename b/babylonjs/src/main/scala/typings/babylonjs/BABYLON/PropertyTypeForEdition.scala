@@ -1,14 +1,15 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PropertyTypeForEdition extends js.Object
+sealed trait PropertyTypeForEdition extends StObject
 @JSGlobal("BABYLON.PropertyTypeForEdition")
 @js.native
-object PropertyTypeForEdition extends js.Object {
+object PropertyTypeForEdition extends StObject {
   
   /** property is a boolean */
   @js.native

@@ -3,6 +3,24 @@
 
 Typings are for version 6.0
 
+## Library description:
+Emits a json file with assets paths
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | assets-webpack-plugin |
+| Keywords           | webpack, plugin, generate, assets, hashes |
+| # releases         | 15 |
+| # dependents       | 241 |
+| # downloads        | 10688993 |
+| # stars            | 31 |
+
+## Links
+- [Homepage](https://github.com/ztoben/assets-webpack-plugin)
+- [Bugs](https://github.com/ztoben/assets-webpack-plugin/issues)
+- [Repository](https://github.com/ztoben/assets-webpack-plugin)
+- [Npm](https://www.npmjs.com/package/assets-webpack-plugin)
+    
 
 
 ## Note

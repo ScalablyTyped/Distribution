@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrajectoryClassifier extends js.Object {
+trait TrajectoryClassifier extends StObject {
   
   var _levenshteinAlphabet: js.Any = js.native
   
@@ -61,42 +62,30 @@ object TrajectoryClassifier {
   }
   
   @scala.inline
-  implicit class TrajectoryClassifierOps[Self <: TrajectoryClassifier] (val x: Self) extends AnyVal {
+  implicit class TrajectoryClassifierMutableBuilder[Self <: TrajectoryClassifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddTrajectoryToClassification(value: (Trajectory, String) => Unit): Self = StObject.set(x, "addTrajectoryToClassification", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassifyTrajectory(value: Trajectory => Nullable[String]): Self = StObject.set(x, "classifyTrajectory", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteClassification(value: String => Boolean): Self = StObject.set(x, "deleteClassification", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_levenshteinAlphabet(value: js.Any): Self = this.set("_levenshteinAlphabet", value.asInstanceOf[js.Any])
+    def setSerialize(value: () => String): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_maximumAllowableMatchCost(value: js.Any): Self = this.set("_maximumAllowableMatchCost", value.asInstanceOf[js.Any])
+    def set_levenshteinAlphabet(value: js.Any): Self = StObject.set(x, "_levenshteinAlphabet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_nameToDescribedTrajectory(value: js.Any): Self = this.set("_nameToDescribedTrajectory", value.asInstanceOf[js.Any])
+    def set_maximumAllowableMatchCost(value: js.Any): Self = StObject.set(x, "_maximumAllowableMatchCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_vector3Alphabet(value: js.Any): Self = this.set("_vector3Alphabet", value.asInstanceOf[js.Any])
+    def set_nameToDescribedTrajectory(value: js.Any): Self = StObject.set(x, "_nameToDescribedTrajectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddTrajectoryToClassification(value: (Trajectory, String) => Unit): Self = this.set("addTrajectoryToClassification", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setClassifyTrajectory(value: Trajectory => Nullable[String]): Self = this.set("classifyTrajectory", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDeleteClassification(value: String => Boolean): Self = this.set("deleteClassification", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSerialize(value: () => String): Self = this.set("serialize", js.Any.fromFunction0(value))
+    def set_vector3Alphabet(value: js.Any): Self = StObject.set(x, "_vector3Alphabet", value.asInstanceOf[js.Any])
   }
 }

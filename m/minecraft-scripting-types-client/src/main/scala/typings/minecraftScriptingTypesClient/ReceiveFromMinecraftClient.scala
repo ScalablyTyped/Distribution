@@ -6,6 +6,7 @@ import typings.minecraftScriptingTypesClient.minecraftScriptingTypesClientString
 import typings.minecraftScriptingTypesClient.minecraftScriptingTypesClientStrings.minecraftColonpick_hit_result_changed
 import typings.minecraftScriptingTypesClient.minecraftScriptingTypesClientStrings.minecraftColonpick_hit_result_continuous
 import typings.minecraftScriptingTypesClient.minecraftScriptingTypesClientStrings.minecraftColonui_event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.minecraftScriptingTypesClient.minecraftScriptingTypesClientStrings.minecraftColonpick_hit_result_continuous
   - typings.minecraftScriptingTypesClient.minecraftScriptingTypesClientStrings.minecraftColonui_event
 */
-trait ReceiveFromMinecraftClient extends js.Object
+trait ReceiveFromMinecraftClient extends StObject
 object ReceiveFromMinecraftClient {
   
   /**

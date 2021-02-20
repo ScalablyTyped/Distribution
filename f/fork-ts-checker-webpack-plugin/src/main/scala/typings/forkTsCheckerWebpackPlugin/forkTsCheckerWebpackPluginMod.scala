@@ -2,18 +2,18 @@ package typings.forkTsCheckerWebpackPlugin
 
 import typings.forkTsCheckerWebpackPlugin.anon.Canceled
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginOptionsMod.ForkTsCheckerWebpackPluginOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fork-ts-checker-webpack-plugin/lib/ForkTsCheckerWebpackPlugin", JSImport.Namespace)
-@js.native
-object forkTsCheckerWebpackPluginMod extends js.Object {
+object forkTsCheckerWebpackPluginMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin * / any
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin * / any */ @js.native
-  class ForkTsCheckerWebpackPlugin () extends js.Object {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin * / any */ @JSImport("fork-ts-checker-webpack-plugin/lib/ForkTsCheckerWebpackPlugin", "ForkTsCheckerWebpackPlugin")
+  @js.native
+  class ForkTsCheckerWebpackPlugin () extends StObject {
     def this(options: ForkTsCheckerWebpackPluginOptions) = this()
     
     @JSName("apply")
@@ -23,14 +23,18 @@ object forkTsCheckerWebpackPluginMod extends js.Object {
     
     val options: js.Any = js.native
   }
-  /* static members */
-  @js.native
-  object ForkTsCheckerWebpackPlugin extends js.Object {
+  object ForkTsCheckerWebpackPlugin {
     
+    /* static member */
+    @JSImport("fork-ts-checker-webpack-plugin/lib/ForkTsCheckerWebpackPlugin", "ForkTsCheckerWebpackPlugin.getCompilerHooks")
+    @js.native
     def getCompilerHooks(
       compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
     ): Canceled = js.native
     
+    /* static member */
+    @JSImport("fork-ts-checker-webpack-plugin/lib/ForkTsCheckerWebpackPlugin", "ForkTsCheckerWebpackPlugin.version")
+    @js.native
     val version: String = js.native
   }
 }

@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientLogging.gapi.client.logging
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientLogging.anon.LogName
 import typings.maximMazurokGapiClientLogging.anon.PageSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LogsResource extends js.Object {
+trait LogsResource extends StObject {
   
   /**
     * Deletes all the log entries in a log. The log reappears if it receives new entries. Log entries written shortly before the delete operation might not be deleted. Entries received

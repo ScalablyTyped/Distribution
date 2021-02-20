@@ -3,12 +3,13 @@ package typings.electron.Electron
 import typings.electron.electronStrings.available
 import typings.electron.electronStrings.unavailable
 import typings.electron.electronStrings.unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Display extends js.Object {
+trait Display extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/display
   /**
@@ -94,60 +95,48 @@ object Display {
   }
   
   @scala.inline
-  implicit class DisplayOps[Self <: Display] (val x: Self) extends AnyVal {
+  implicit class DisplayMutableBuilder[Self <: Display] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccelerometerSupport(value: available | unavailable | unknown_): Self = StObject.set(x, "accelerometerSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBounds(value: Rectangle): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorDepth(value: Double): Self = StObject.set(x, "colorDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccelerometerSupport(value: available | unavailable | unknown_): Self = this.set("accelerometerSupport", value.asInstanceOf[js.Any])
+    def setColorSpace(value: String): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounds(value: Rectangle): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setDepthPerComponent(value: Double): Self = StObject.set(x, "depthPerComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorDepth(value: Double): Self = this.set("colorDepth", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorSpace(value: String): Self = this.set("colorSpace", value.asInstanceOf[js.Any])
+    def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepthPerComponent(value: Double): Self = this.set("depthPerComponent", value.asInstanceOf[js.Any])
+    def setMonochrome(value: Boolean): Self = StObject.set(x, "monochrome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternal(value: Boolean): Self = this.set("internal", value.asInstanceOf[js.Any])
+    def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonochrome(value: Boolean): Self = this.set("monochrome", value.asInstanceOf[js.Any])
+    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setTouchSupport(value: available | unavailable | unknown_): Self = StObject.set(x, "touchSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleFactor(value: Double): Self = this.set("scaleFactor", value.asInstanceOf[js.Any])
+    def setWorkArea(value: Rectangle): Self = StObject.set(x, "workArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Size): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchSupport(value: available | unavailable | unknown_): Self = this.set("touchSupport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkArea(value: Rectangle): Self = this.set("workArea", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkAreaSize(value: Size): Self = this.set("workAreaSize", value.asInstanceOf[js.Any])
+    def setWorkAreaSize(value: Size): Self = StObject.set(x, "workAreaSize", value.asInstanceOf[js.Any])
   }
 }

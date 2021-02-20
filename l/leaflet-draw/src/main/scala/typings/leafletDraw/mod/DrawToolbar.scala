@@ -2,6 +2,7 @@ package typings.leafletDraw.mod
 
 import typings.leafletDraw.mod.Control.DrawConstructorOptions
 import typings.leafletDraw.mod.Draw.Feature
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("leaflet", "DrawToolbar")
 @js.native
 class DrawToolbar () extends Toolbar {
+  def this(options: ToolbarOptions) = this()
   
   def getActions(handler: Feature): js.Array[ToolbarAction] = js.native
   

@@ -4,12 +4,13 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NCDHW
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NDHWC
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Conv3DAttrs extends js.Object {
+trait Conv3DAttrs extends StObject {
   
   var dataFormat: NDHWC | NCDHW = js.native
   
@@ -33,30 +34,18 @@ object Conv3DAttrs {
   }
   
   @scala.inline
-  implicit class Conv3DAttrsOps[Self <: Conv3DAttrs] (val x: Self) extends AnyVal {
+  implicit class Conv3DAttrsMutableBuilder[Self <: Conv3DAttrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataFormat(value: NDHWC | NCDHW): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDilations(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "dilations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPad(value: valid_ | same_): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFormat(value: NDHWC | NCDHW): Self = this.set("dataFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDilations(value: (js.Tuple3[Double, Double, Double]) | Double): Self = this.set("dilations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPad(value: valid_ | same_): Self = this.set("pad", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrides(value: (js.Tuple3[Double, Double, Double]) | Double): Self = this.set("strides", value.asInstanceOf[js.Any])
+    def setStrides(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.materialUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataHeight extends js.Object {
+trait DataHeight extends StObject {
   
   var dataHeight: js.UndefOr[Double] = js.native
   
@@ -28,54 +29,42 @@ object DataHeight {
   }
   
   @scala.inline
-  implicit class DataHeightOps[Self <: DataHeight] (val x: Self) extends AnyVal {
+  implicit class DataHeightMutableBuilder[Self <: DataHeight] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataHeight(value: Double): Self = StObject.set(x, "dataHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataHeightUndefined: Self = StObject.set(x, "dataHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataHeight(value: Double): Self = this.set("dataHeight", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteDataHeight: Self = this.set("dataHeight", js.undefined)
+    def setHoverColor(value: String): Self = StObject.set(x, "hoverColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHoverColorUndefined: Self = StObject.set(x, "hoverColor", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverColor(value: String): Self = this.set("hoverColor", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteHoverColor: Self = this.set("hoverColor", js.undefined)
+    def setRightIconDesktopFill(value: String): Self = StObject.set(x, "rightIconDesktopFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setRightIconDesktopFillUndefined: Self = StObject.set(x, "rightIconDesktopFill", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setSelectedTextColor(value: String): Self = StObject.set(x, "selectedTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightIconDesktopFill(value: String): Self = this.set("rightIconDesktopFill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRightIconDesktopFill: Self = this.set("rightIconDesktopFill", js.undefined)
-    
-    @scala.inline
-    def setSelectedTextColor(value: String): Self = this.set("selectedTextColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedTextColor: Self = this.set("selectedTextColor", js.undefined)
+    def setSelectedTextColorUndefined: Self = StObject.set(x, "selectedTextColor", js.undefined)
   }
 }

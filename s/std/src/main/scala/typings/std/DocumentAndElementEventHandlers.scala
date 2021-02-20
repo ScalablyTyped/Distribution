@@ -3,12 +3,13 @@ package typings.std
 import typings.std.stdStrings.copy
 import typings.std.stdStrings.cut
 import typings.std.stdStrings.paste
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentAndElementEventHandlers extends js.Object {
+trait DocumentAndElementEventHandlers extends StObject {
   
   def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native

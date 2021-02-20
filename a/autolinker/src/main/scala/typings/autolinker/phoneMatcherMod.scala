@@ -1,17 +1,24 @@
 package typings.autolinker
 
 import typings.autolinker.matcherMatcherMod.Matcher
+import typings.autolinker.matcherMatcherMod.MatcherConfig
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("autolinker/dist/commonjs/matcher/phone-matcher", JSImport.Namespace)
-@js.native
-object phoneMatcherMod extends js.Object {
+object phoneMatcherMod {
   
+  @JSImport("autolinker/dist/commonjs/matcher/phone-matcher", "PhoneMatcher")
   @js.native
-  class PhoneMatcher () extends Matcher {
+  class PhoneMatcher protected () extends Matcher {
+    /**
+      * @method constructor
+      * @param {Object} cfg The configuration properties for the Matcher
+      *   instance, specified in an Object (map).
+      */
+    def this(cfg: MatcherConfig) = this()
     
     /**
       * The regular expression to match Phone numbers. Example matches:

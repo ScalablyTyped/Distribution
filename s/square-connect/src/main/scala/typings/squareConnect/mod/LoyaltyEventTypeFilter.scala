@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "LoyaltyEventTypeFilter")
 @js.native
-class LoyaltyEventTypeFilter () extends js.Object {
+class LoyaltyEventTypeFilter () extends StObject {
   
   /**
     * The loyalty event types used to filter the result. If multiple values are specified, the endpoint uses a logical OR to combine them.

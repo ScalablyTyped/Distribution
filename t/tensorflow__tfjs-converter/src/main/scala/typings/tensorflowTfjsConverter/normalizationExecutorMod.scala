@@ -1,15 +1,18 @@
 package typings.tensorflowTfjsConverter
 
 import typings.tensorflowTfjsConverter.operationsTypesMod.InternalOpExecutor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-converter/dist/operations/executors/normalization_executor", JSImport.Namespace)
-@js.native
-object normalizationExecutorMod extends js.Object {
+object normalizationExecutorMod {
   
+  @JSImport("@tensorflow/tfjs-converter/dist/operations/executors/normalization_executor", "CATEGORY")
+  @js.native
   val CATEGORY: /* "normalization" */ String = js.native
   
+  @JSImport("@tensorflow/tfjs-converter/dist/operations/executors/normalization_executor", "executeOp")
+  @js.native
   val executeOp: InternalOpExecutor = js.native
 }

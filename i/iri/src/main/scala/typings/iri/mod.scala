@@ -1,19 +1,15 @@
 package typings.iri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("iri", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def fromURI(uri: String): IRI = js.native
-  
-  def toIRIString(uri: String): String = js.native
-  
+  @JSImport("iri", "IRI")
   @js.native
-  class IRI protected () extends js.Object {
+  class IRI protected () extends StObject {
     /**
       * The constructor takes a single argument, a URI or IRI string:
       */
@@ -100,4 +96,12 @@ object mod extends js.Object {
       */
     def userinfo(): String | Null = js.native
   }
+  
+  @JSImport("iri", "fromURI")
+  @js.native
+  def fromURI(uri: String): IRI = js.native
+  
+  @JSImport("iri", "toIRIString")
+  @js.native
+  def toIRIString(uri: String): String = js.native
 }

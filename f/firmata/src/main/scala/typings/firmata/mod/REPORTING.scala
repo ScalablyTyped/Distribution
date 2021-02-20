@@ -2,6 +2,7 @@ package typings.firmata.mod
 
 import typings.firmata.firmataNumbers.`0`
 import typings.firmata.firmataNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firmata.firmataNumbers.`1`
   - typings.firmata.firmataNumbers.`0`
 */
-trait REPORTING extends js.Object
+trait REPORTING extends StObject
 object REPORTING {
   
   @scala.inline

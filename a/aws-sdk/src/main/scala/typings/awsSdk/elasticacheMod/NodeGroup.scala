@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeGroup extends js.Object {
+trait NodeGroup extends StObject {
   
   /**
     * The identifier for the node group (shard). A Redis (cluster mode disabled) replication group contains only 1 node group; therefore, the node group ID is 0001. A Redis (cluster mode enabled) replication group contains 1 to 90 node groups numbered 0001 to 0090. Optionally, the user can provide the id for a node group. 
@@ -46,57 +47,45 @@ object NodeGroup {
   }
   
   @scala.inline
-  implicit class NodeGroupOps[Self <: NodeGroup] (val x: Self) extends AnyVal {
+  implicit class NodeGroupMutableBuilder[Self <: NodeGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNodeGroupId(value: String): Self = StObject.set(x, "NodeGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNodeGroupIdUndefined: Self = StObject.set(x, "NodeGroupId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodeGroupMembers(value: NodeGroupMemberList): Self = StObject.set(x, "NodeGroupMembers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeGroupId(value: String): Self = this.set("NodeGroupId", value.asInstanceOf[js.Any])
+    def setNodeGroupMembersUndefined: Self = StObject.set(x, "NodeGroupMembers", js.undefined)
     
     @scala.inline
-    def deleteNodeGroupId: Self = this.set("NodeGroupId", js.undefined)
+    def setNodeGroupMembersVarargs(value: NodeGroupMember*): Self = StObject.set(x, "NodeGroupMembers", js.Array(value :_*))
     
     @scala.inline
-    def setNodeGroupMembersVarargs(value: NodeGroupMember*): Self = this.set("NodeGroupMembers", js.Array(value :_*))
+    def setPrimaryEndpoint(value: Endpoint): Self = StObject.set(x, "PrimaryEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeGroupMembers(value: NodeGroupMemberList): Self = this.set("NodeGroupMembers", value.asInstanceOf[js.Any])
+    def setPrimaryEndpointUndefined: Self = StObject.set(x, "PrimaryEndpoint", js.undefined)
     
     @scala.inline
-    def deleteNodeGroupMembers: Self = this.set("NodeGroupMembers", js.undefined)
+    def setReaderEndpoint(value: Endpoint): Self = StObject.set(x, "ReaderEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryEndpoint(value: Endpoint): Self = this.set("PrimaryEndpoint", value.asInstanceOf[js.Any])
+    def setReaderEndpointUndefined: Self = StObject.set(x, "ReaderEndpoint", js.undefined)
     
     @scala.inline
-    def deletePrimaryEndpoint: Self = this.set("PrimaryEndpoint", js.undefined)
+    def setSlots(value: String): Self = StObject.set(x, "Slots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReaderEndpoint(value: Endpoint): Self = this.set("ReaderEndpoint", value.asInstanceOf[js.Any])
+    def setSlotsUndefined: Self = StObject.set(x, "Slots", js.undefined)
     
     @scala.inline
-    def deleteReaderEndpoint: Self = this.set("ReaderEndpoint", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlots(value: String): Self = this.set("Slots", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlots: Self = this.set("Slots", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

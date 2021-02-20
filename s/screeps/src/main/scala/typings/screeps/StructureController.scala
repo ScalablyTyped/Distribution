@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -113,69 +114,57 @@ object StructureController {
   }
   
   @scala.inline
-  implicit class StructureControllerOps[Self <: StructureController] (val x: Self) extends AnyVal {
+  implicit class StructureControllerMutableBuilder[Self <: StructureController] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivateSafeMode(value: () => ScreepsReturnCode): Self = StObject.set(x, "activateSafeMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsPowerEnabled(value: Boolean): Self = StObject.set(x, "isPowerEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivateSafeMode(value: () => ScreepsReturnCode): Self = this.set("activateSafeMode", js.Any.fromFunction0(value))
+    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPowerEnabled(value: Boolean): Self = this.set("isPowerEnabled", value.asInstanceOf[js.Any])
+    def setProgressTotal(value: Double): Self = StObject.set(x, "progressTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setReservation(value: ReservationDefinition): Self = StObject.set(x, "reservation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: Double): Self = this.set("progress", value.asInstanceOf[js.Any])
+    def setReservationUndefined: Self = StObject.set(x, "reservation", js.undefined)
     
     @scala.inline
-    def setProgressTotal(value: Double): Self = this.set("progressTotal", value.asInstanceOf[js.Any])
+    def setSafeMode(value: Double): Self = StObject.set(x, "safeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSafeModeAvailable(value: Double): Self = this.set("safeModeAvailable", value.asInstanceOf[js.Any])
+    def setSafeModeAvailable(value: Double): Self = StObject.set(x, "safeModeAvailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicksToDowngrade(value: Double): Self = this.set("ticksToDowngrade", value.asInstanceOf[js.Any])
+    def setSafeModeCooldown(value: Double): Self = StObject.set(x, "safeModeCooldown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnclaim(value: () => ScreepsReturnCode): Self = this.set("unclaim", js.Any.fromFunction0(value))
+    def setSafeModeCooldownUndefined: Self = StObject.set(x, "safeModeCooldown", js.undefined)
     
     @scala.inline
-    def setUpgradeBlocked(value: Double): Self = this.set("upgradeBlocked", value.asInstanceOf[js.Any])
+    def setSafeModeUndefined: Self = StObject.set(x, "safeMode", js.undefined)
     
     @scala.inline
-    def setReservation(value: ReservationDefinition): Self = this.set("reservation", value.asInstanceOf[js.Any])
+    def setSign(value: SignDefinition): Self = StObject.set(x, "sign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReservation: Self = this.set("reservation", js.undefined)
+    def setSignUndefined: Self = StObject.set(x, "sign", js.undefined)
     
     @scala.inline
-    def setSafeMode(value: Double): Self = this.set("safeMode", value.asInstanceOf[js.Any])
+    def setTicksToDowngrade(value: Double): Self = StObject.set(x, "ticksToDowngrade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSafeMode: Self = this.set("safeMode", js.undefined)
+    def setUnclaim(value: () => ScreepsReturnCode): Self = StObject.set(x, "unclaim", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSafeModeCooldown(value: Double): Self = this.set("safeModeCooldown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSafeModeCooldown: Self = this.set("safeModeCooldown", js.undefined)
-    
-    @scala.inline
-    def setSign(value: SignDefinition): Self = this.set("sign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSign: Self = this.set("sign", js.undefined)
+    def setUpgradeBlocked(value: Double): Self = StObject.set(x, "upgradeBlocked", value.asInstanceOf[js.Any])
   }
 }

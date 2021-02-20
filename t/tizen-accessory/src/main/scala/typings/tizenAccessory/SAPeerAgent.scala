@@ -1,11 +1,12 @@
 package typings.tizenAccessory
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SAPeerAgent extends js.Object {
+trait SAPeerAgent extends StObject {
   
   val appName: String = js.native
   
@@ -35,39 +36,27 @@ object SAPeerAgent {
   }
   
   @scala.inline
-  implicit class SAPeerAgentOps[Self <: SAPeerAgent] (val x: Self) extends AnyVal {
+  implicit class SAPeerAgentMutableBuilder[Self <: SAPeerAgent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeature(value: js.Array[String]): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeatureVarargs(value: String*): Self = StObject.set(x, "feature", js.Array(value :_*))
     
     @scala.inline
-    def setAppName(value: String): Self = this.set("appName", value.asInstanceOf[js.Any])
+    def setMaxAllowedDataSize(value: Double): Self = StObject.set(x, "maxAllowedDataSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureVarargs(value: String*): Self = this.set("feature", js.Array(value :_*))
+    def setPeerAccessory(value: SAPeerAccessory): Self = StObject.set(x, "peerAccessory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeature(value: js.Array[String]): Self = this.set("feature", value.asInstanceOf[js.Any])
+    def setPeerId(value: String): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAllowedDataSize(value: Double): Self = this.set("maxAllowedDataSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPeerAccessory(value: SAPeerAccessory): Self = this.set("peerAccessory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPeerId(value: String): Self = this.set("peerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProfileVersion(value: String): Self = this.set("profileVersion", value.asInstanceOf[js.Any])
+    def setProfileVersion(value: String): Self = StObject.set(x, "profileVersion", value.asInstanceOf[js.Any])
   }
 }

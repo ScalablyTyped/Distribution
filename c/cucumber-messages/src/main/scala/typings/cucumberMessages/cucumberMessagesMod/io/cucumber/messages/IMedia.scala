@@ -1,13 +1,14 @@
 package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Media.Encoding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Media. */
 @js.native
-trait IMedia extends js.Object {
+trait IMedia extends StObject {
   
   /**
     * The content type of the data. This can be any valid
@@ -29,36 +30,24 @@ object IMedia {
   }
   
   @scala.inline
-  implicit class IMediaOps[Self <: IMedia] (val x: Self) extends AnyVal {
+  implicit class IMediaMutableBuilder[Self <: IMedia] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentTypeNull: Self = StObject.set(x, "contentType", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setEncoding(value: Encoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setEncodingNull: Self = StObject.set(x, "encoding", null)
     
     @scala.inline
-    def setContentTypeNull: Self = this.set("contentType", null)
-    
-    @scala.inline
-    def setEncoding(value: Encoding): Self = this.set("encoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
-    
-    @scala.inline
-    def setEncodingNull: Self = this.set("encoding", null)
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
   }
 }

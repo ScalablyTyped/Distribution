@@ -1,11 +1,12 @@
 package typings.antDesignReactNative.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnableMask extends js.Object {
+trait EnableMask extends StObject {
   
   var enableMask: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object EnableMask {
   }
   
   @scala.inline
-  implicit class EnableMaskOps[Self <: EnableMask] (val x: Self) extends AnyVal {
+  implicit class EnableMaskMutableBuilder[Self <: EnableMask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableMask(value: Boolean): Self = StObject.set(x, "enableMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableMaskUndefined: Self = StObject.set(x, "enableMask", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableStack(value: Boolean): Self = StObject.set(x, "enableStack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableMask(value: Boolean): Self = this.set("enableMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableMask: Self = this.set("enableMask", js.undefined)
-    
-    @scala.inline
-    def setEnableStack(value: Boolean): Self = this.set("enableStack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableStack: Self = this.set("enableStack", js.undefined)
+    def setEnableStackUndefined: Self = StObject.set(x, "enableStack", js.undefined)
   }
 }

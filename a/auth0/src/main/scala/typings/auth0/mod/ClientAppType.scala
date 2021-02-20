@@ -1,5 +1,6 @@
 package typings.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.auth0.auth0Strings.zendesk
   - typings.auth0.auth0Strings.zoom
 */
-trait ClientAppType extends js.Object
+trait ClientAppType extends StObject
 object ClientAppType {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IExplorerExtensibilityGroup extends js.Object {
+trait IExplorerExtensibilityGroup extends StObject {
   
   /**
     * Gets the list of options added to a type
@@ -26,27 +27,15 @@ object IExplorerExtensibilityGroup {
   }
   
   @scala.inline
-  implicit class IExplorerExtensibilityGroupOps[Self <: IExplorerExtensibilityGroup] (val x: Self) extends AnyVal {
+  implicit class IExplorerExtensibilityGroupMutableBuilder[Self <: IExplorerExtensibilityGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntries(value: js.Array[IExplorerExtensibilityOption]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntriesVarargs(value: IExplorerExtensibilityOption*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEntriesVarargs(value: IExplorerExtensibilityOption*): Self = this.set("entries", js.Array(value :_*))
-    
-    @scala.inline
-    def setEntries(value: js.Array[IExplorerExtensibilityOption]): Self = this.set("entries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPredicate(value: js.Any => Boolean): Self = this.set("predicate", js.Any.fromFunction1(value))
+    def setPredicate(value: js.Any => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
   }
 }

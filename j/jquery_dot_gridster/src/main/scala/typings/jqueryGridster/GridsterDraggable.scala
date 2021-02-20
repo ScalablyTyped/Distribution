@@ -2,12 +2,13 @@ package typings.jqueryGridster
 
 import typings.jqueryGridster.anon.Helper
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridsterDraggable extends js.Object {
+trait GridsterDraggable extends StObject {
   
   var distance: js.UndefOr[Double] = js.native
   
@@ -34,66 +35,54 @@ object GridsterDraggable {
   }
   
   @scala.inline
-  implicit class GridsterDraggableOps[Self <: GridsterDraggable] (val x: Self) extends AnyVal {
+  implicit class GridsterDraggableMutableBuilder[Self <: GridsterDraggable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrag(value: (/* event */ Event, /* ui */ GridsterUi) => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
     @scala.inline
-    def deleteDistance: Self = this.set("distance", js.undefined)
+    def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrag(value: (/* event */ Event, /* ui */ GridsterUi) => Unit): Self = this.set("drag", js.Any.fromFunction2(value))
+    def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
     
     @scala.inline
-    def deleteDrag: Self = this.set("drag", js.undefined)
+    def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandle(value: String): Self = this.set("handle", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteHandle: Self = this.set("handle", js.undefined)
+    def setLimit(value: Boolean): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Any): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setOffset_left(value: Double): Self = StObject.set(x, "offset_left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Boolean): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setOffset_leftUndefined: Self = StObject.set(x, "offset_left", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setStart(value: (/* event */ Event, /* ui */ Helper) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOffset_left(value: Double): Self = this.set("offset_left", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteOffset_left: Self = this.set("offset_left", js.undefined)
+    def setStop(value: (/* event */ Event, /* ui */ Helper) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setStart(value: (/* event */ Event, /* ui */ Helper) => Unit): Self = this.set("start", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
-    
-    @scala.inline
-    def setStop(value: (/* event */ Event, /* ui */ Helper) => Unit): Self = this.set("stop", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteStop: Self = this.set("stop", js.undefined)
+    def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
   }
 }

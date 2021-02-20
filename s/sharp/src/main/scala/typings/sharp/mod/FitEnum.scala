@@ -5,12 +5,13 @@ import typings.sharp.sharpStrings.cover
 import typings.sharp.sharpStrings.fill
 import typings.sharp.sharpStrings.inside
 import typings.sharp.sharpStrings.outside
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FitEnum extends js.Object {
+trait FitEnum extends StObject {
   
   var contain: typings.sharp.sharpStrings.contain = js.native
   
@@ -31,33 +32,21 @@ object FitEnum {
   }
   
   @scala.inline
-  implicit class FitEnumOps[Self <: FitEnum] (val x: Self) extends AnyVal {
+  implicit class FitEnumMutableBuilder[Self <: FitEnum] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContain(value: contain): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCover(value: cover): Self = StObject.set(x, "cover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFill(value: fill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContain(value: contain): Self = this.set("contain", value.asInstanceOf[js.Any])
+    def setInside(value: inside): Self = StObject.set(x, "inside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCover(value: cover): Self = this.set("cover", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFill(value: fill): Self = this.set("fill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInside(value: inside): Self = this.set("inside", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutside(value: outside): Self = this.set("outside", value.asInstanceOf[js.Any])
+    def setOutside(value: outside): Self = StObject.set(x, "outside", value.asInstanceOf[js.Any])
   }
 }

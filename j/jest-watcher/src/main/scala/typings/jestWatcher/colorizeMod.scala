@@ -1,12 +1,13 @@
 package typings.jestWatcher
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jest-watcher/build/lib/colorize", JSImport.Namespace)
-@js.native
-object colorizeMod extends js.Object {
+object colorizeMod {
   
+  @JSImport("jest-watcher/build/lib/colorize", JSImport.Default)
+  @js.native
   def default(str: String, start: Double, end: Double): String = js.native
 }

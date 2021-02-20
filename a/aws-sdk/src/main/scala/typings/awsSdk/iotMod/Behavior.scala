@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Behavior extends js.Object {
+trait Behavior extends StObject {
   
   /**
     * The criteria that determine if a device is behaving normally in regard to the metric.
@@ -36,39 +37,27 @@ object Behavior {
   }
   
   @scala.inline
-  implicit class BehaviorOps[Self <: Behavior] (val x: Self) extends AnyVal {
+  implicit class BehaviorMutableBuilder[Self <: Behavior] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCriteria(value: BehaviorCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetric(value: BehaviorMetric): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: BehaviorName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setMetricDimension(value: MetricDimension): Self = StObject.set(x, "metricDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCriteria(value: BehaviorCriteria): Self = this.set("criteria", value.asInstanceOf[js.Any])
+    def setMetricDimensionUndefined: Self = StObject.set(x, "metricDimension", js.undefined)
     
     @scala.inline
-    def deleteCriteria: Self = this.set("criteria", js.undefined)
+    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
     @scala.inline
-    def setMetric(value: BehaviorMetric): Self = this.set("metric", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetric: Self = this.set("metric", js.undefined)
-    
-    @scala.inline
-    def setMetricDimension(value: MetricDimension): Self = this.set("metricDimension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricDimension: Self = this.set("metricDimension", js.undefined)
+    def setName(value: BehaviorName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

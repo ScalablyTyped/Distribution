@@ -1,11 +1,12 @@
 package typings.tizenCommonWeb.applicationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationControlDataArrayReplyCallback extends js.Object {
+trait ApplicationControlDataArrayReplyCallback extends StObject {
   
   /**
     * Called when the callee application calls `RequestedApplicationControl.replyFailure()`.
@@ -30,30 +31,18 @@ object ApplicationControlDataArrayReplyCallback {
   }
   
   @scala.inline
-  implicit class ApplicationControlDataArrayReplyCallbackOps[Self <: ApplicationControlDataArrayReplyCallback] (val x: Self) extends AnyVal {
+  implicit class ApplicationControlDataArrayReplyCallbackMutableBuilder[Self <: ApplicationControlDataArrayReplyCallback] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnfailure(value: () => Unit): Self = StObject.set(x, "onfailure", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnfailureUndefined: Self = StObject.set(x, "onfailure", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnsuccess(value: /* data */ js.UndefOr[js.Array[ApplicationControlData]] => Unit): Self = StObject.set(x, "onsuccess", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnfailure(value: () => Unit): Self = this.set("onfailure", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnfailure: Self = this.set("onfailure", js.undefined)
-    
-    @scala.inline
-    def setOnsuccess(value: /* data */ js.UndefOr[js.Array[ApplicationControlData]] => Unit): Self = this.set("onsuccess", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnsuccess: Self = this.set("onsuccess", js.undefined)
+    def setOnsuccessUndefined: Self = StObject.set(x, "onsuccess", js.undefined)
   }
 }

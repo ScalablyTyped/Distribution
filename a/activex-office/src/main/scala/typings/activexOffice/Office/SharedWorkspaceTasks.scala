@@ -1,12 +1,13 @@
 package typings.activexOffice.Office
 
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SharedWorkspaceTasks extends js.Object {
+trait SharedWorkspaceTasks extends StObject {
   
   def apply(Index: Double): SharedWorkspaceTask = js.native
   

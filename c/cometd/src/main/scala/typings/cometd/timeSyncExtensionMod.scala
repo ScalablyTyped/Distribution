@@ -5,13 +5,16 @@ import typings.cometd.mod.Extension
 import typings.cometd.mod.Listener
 import typings.cometd.mod.Message
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cometd/TimeSyncExtension", JSImport.Namespace)
-@js.native
-object timeSyncExtensionMod extends js.Object {
+object timeSyncExtensionMod {
+  
+  @JSImport("cometd/TimeSyncExtension", JSImport.Default)
+  @js.native
+  class default () extends TimeSyncExtension
   
   @js.native
   trait TimeSyncExtension extends Extension {
@@ -60,7 +63,4 @@ object timeSyncExtensionMod extends js.Object {
     @JSName("unregistered")
     def unregistered_MTimeSyncExtension(): Unit = js.native
   }
-  
-  @js.native
-  class default () extends TimeSyncExtension
 }

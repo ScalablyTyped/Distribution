@@ -1,11 +1,12 @@
 package typings.webgme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BehindSecureProxy extends js.Object {
+trait BehindSecureProxy extends StObject {
   
   /**
     * Indicate if the webgme server is behind a secure proxy 
@@ -69,45 +70,33 @@ object BehindSecureProxy {
   }
   
   @scala.inline
-  implicit class BehindSecureProxyOps[Self <: BehindSecureProxy] (val x: Self) extends AnyVal {
+  implicit class BehindSecureProxyMutableBuilder[Self <: BehindSecureProxy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBehindSecureProxy(value: Boolean): Self = StObject.set(x, "behindSecureProxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtlibExcludes(value: js.Array[String]): Self = StObject.set(x, "extlibExcludes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtlibExcludesVarargs(value: String*): Self = StObject.set(x, "extlibExcludes", js.Array(value :_*))
     
     @scala.inline
-    def setBehindSecureProxy(value: Boolean): Self = this.set("behindSecureProxy", value.asInstanceOf[js.Any])
+    def setHandle(value: Fd): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtlibExcludesVarargs(value: String*): Self = this.set("extlibExcludes", js.Array(value :_*))
+    def setHandleNull: Self = StObject.set(x, "handle", null)
     
     @scala.inline
-    def setExtlibExcludes(value: js.Array[String]): Self = this.set("extlibExcludes", value.asInstanceOf[js.Any])
+    def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLog(value: js.Any): Self = this.set("log", value.asInstanceOf[js.Any])
+    def setMaxWorkers(value: Double): Self = StObject.set(x, "maxWorkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWorkers(value: Double): Self = this.set("maxWorkers", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHandle(value: Fd): Self = this.set("handle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHandleNull: Self = this.set("handle", null)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

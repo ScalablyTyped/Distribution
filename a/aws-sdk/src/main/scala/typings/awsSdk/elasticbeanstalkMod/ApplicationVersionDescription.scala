@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationVersionDescription extends js.Object {
+trait ApplicationVersionDescription extends StObject {
   
   /**
     * The name of the application to which the application version belongs.
@@ -66,78 +67,66 @@ object ApplicationVersionDescription {
   }
   
   @scala.inline
-  implicit class ApplicationVersionDescriptionOps[Self <: ApplicationVersionDescription] (val x: Self) extends AnyVal {
+  implicit class ApplicationVersionDescriptionMutableBuilder[Self <: ApplicationVersionDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationVersionArn(value: ApplicationVersionArn): Self = StObject.set(x, "ApplicationVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    def setApplicationVersionArnUndefined: Self = StObject.set(x, "ApplicationVersionArn", js.undefined)
     
     @scala.inline
-    def deleteApplicationName: Self = this.set("ApplicationName", js.undefined)
+    def setBuildArn(value: String): Self = StObject.set(x, "BuildArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationVersionArn(value: ApplicationVersionArn): Self = this.set("ApplicationVersionArn", value.asInstanceOf[js.Any])
+    def setBuildArnUndefined: Self = StObject.set(x, "BuildArn", js.undefined)
     
     @scala.inline
-    def deleteApplicationVersionArn: Self = this.set("ApplicationVersionArn", js.undefined)
+    def setDateCreated(value: CreationDate): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildArn(value: String): Self = this.set("BuildArn", value.asInstanceOf[js.Any])
+    def setDateCreatedUndefined: Self = StObject.set(x, "DateCreated", js.undefined)
     
     @scala.inline
-    def deleteBuildArn: Self = this.set("BuildArn", js.undefined)
+    def setDateUpdated(value: UpdateDate): Self = StObject.set(x, "DateUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateCreated(value: CreationDate): Self = this.set("DateCreated", value.asInstanceOf[js.Any])
+    def setDateUpdatedUndefined: Self = StObject.set(x, "DateUpdated", js.undefined)
     
     @scala.inline
-    def deleteDateCreated: Self = this.set("DateCreated", js.undefined)
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateUpdated(value: UpdateDate): Self = this.set("DateUpdated", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteDateUpdated: Self = this.set("DateUpdated", js.undefined)
+    def setSourceBuildInformation(value: SourceBuildInformation): Self = StObject.set(x, "SourceBuildInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setSourceBuildInformationUndefined: Self = StObject.set(x, "SourceBuildInformation", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setSourceBundle(value: S3Location): Self = StObject.set(x, "SourceBundle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceBuildInformation(value: SourceBuildInformation): Self = this.set("SourceBuildInformation", value.asInstanceOf[js.Any])
+    def setSourceBundleUndefined: Self = StObject.set(x, "SourceBundle", js.undefined)
     
     @scala.inline
-    def deleteSourceBuildInformation: Self = this.set("SourceBuildInformation", js.undefined)
+    def setStatus(value: ApplicationVersionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceBundle(value: S3Location): Self = this.set("SourceBundle", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteSourceBundle: Self = this.set("SourceBundle", js.undefined)
+    def setVersionLabel(value: VersionLabel): Self = StObject.set(x, "VersionLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: ApplicationVersionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setVersionLabel(value: VersionLabel): Self = this.set("VersionLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionLabel: Self = this.set("VersionLabel", js.undefined)
+    def setVersionLabelUndefined: Self = StObject.set(x, "VersionLabel", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.algoliaClientSearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteByFiltersOptions extends js.Object {
+trait DeleteByFiltersOptions extends StObject {
   
   /**
     * Search for entries around a central geolocation, enabling a geo search within a circular area.
@@ -58,81 +59,69 @@ object DeleteByFiltersOptions {
   }
   
   @scala.inline
-  implicit class DeleteByFiltersOptionsOps[Self <: DeleteByFiltersOptions] (val x: Self) extends AnyVal {
+  implicit class DeleteByFiltersOptionsMutableBuilder[Self <: DeleteByFiltersOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAroundLatLng(value: String): Self = StObject.set(x, "aroundLatLng", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAroundLatLngUndefined: Self = StObject.set(x, "aroundLatLng", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAroundLatLngViaIP(value: Boolean): Self = StObject.set(x, "aroundLatLngViaIP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAroundLatLng(value: String): Self = this.set("aroundLatLng", value.asInstanceOf[js.Any])
+    def setAroundLatLngViaIPUndefined: Self = StObject.set(x, "aroundLatLngViaIP", js.undefined)
     
     @scala.inline
-    def deleteAroundLatLng: Self = this.set("aroundLatLng", js.undefined)
+    def setFacetFilters(value: String | (js.Array[js.Array[String] | String])): Self = StObject.set(x, "facetFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAroundLatLngViaIP(value: Boolean): Self = this.set("aroundLatLngViaIP", value.asInstanceOf[js.Any])
+    def setFacetFiltersUndefined: Self = StObject.set(x, "facetFilters", js.undefined)
     
     @scala.inline
-    def deleteAroundLatLngViaIP: Self = this.set("aroundLatLngViaIP", js.undefined)
+    def setFacetFiltersVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "facetFilters", js.Array(value :_*))
     
     @scala.inline
-    def setFacetFiltersVarargs(value: (js.Array[String] | String)*): Self = this.set("facetFilters", js.Array(value :_*))
+    def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetFilters(value: String | (js.Array[js.Array[String] | String])): Self = this.set("facetFilters", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def deleteFacetFilters: Self = this.set("facetFilters", js.undefined)
+    def setInsideBoundingBox(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "insideBoundingBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: String): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setInsideBoundingBoxUndefined: Self = StObject.set(x, "insideBoundingBox", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setInsideBoundingBoxVarargs(value: js.Array[Double]*): Self = StObject.set(x, "insideBoundingBox", js.Array(value :_*))
     
     @scala.inline
-    def setInsideBoundingBoxVarargs(value: js.Array[Double]*): Self = this.set("insideBoundingBox", js.Array(value :_*))
+    def setInsidePolygon(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "insidePolygon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsideBoundingBox(value: js.Array[js.Array[Double]]): Self = this.set("insideBoundingBox", value.asInstanceOf[js.Any])
+    def setInsidePolygonUndefined: Self = StObject.set(x, "insidePolygon", js.undefined)
     
     @scala.inline
-    def deleteInsideBoundingBox: Self = this.set("insideBoundingBox", js.undefined)
+    def setInsidePolygonVarargs(value: js.Array[Double]*): Self = StObject.set(x, "insidePolygon", js.Array(value :_*))
     
     @scala.inline
-    def setInsidePolygonVarargs(value: js.Array[Double]*): Self = this.set("insidePolygon", js.Array(value :_*))
+    def setNumericFilters(value: String | (js.Array[js.Array[String] | String])): Self = StObject.set(x, "numericFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsidePolygon(value: js.Array[js.Array[Double]]): Self = this.set("insidePolygon", value.asInstanceOf[js.Any])
+    def setNumericFiltersUndefined: Self = StObject.set(x, "numericFilters", js.undefined)
     
     @scala.inline
-    def deleteInsidePolygon: Self = this.set("insidePolygon", js.undefined)
+    def setNumericFiltersVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "numericFilters", js.Array(value :_*))
     
     @scala.inline
-    def setNumericFiltersVarargs(value: (js.Array[String] | String)*): Self = this.set("numericFilters", js.Array(value :_*))
+    def setTagFilters(value: String | (js.Array[js.Array[String] | String])): Self = StObject.set(x, "tagFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumericFilters(value: String | (js.Array[js.Array[String] | String])): Self = this.set("numericFilters", value.asInstanceOf[js.Any])
+    def setTagFiltersUndefined: Self = StObject.set(x, "tagFilters", js.undefined)
     
     @scala.inline
-    def deleteNumericFilters: Self = this.set("numericFilters", js.undefined)
-    
-    @scala.inline
-    def setTagFiltersVarargs(value: (js.Array[String] | String)*): Self = this.set("tagFilters", js.Array(value :_*))
-    
-    @scala.inline
-    def setTagFilters(value: String | (js.Array[js.Array[String] | String])): Self = this.set("tagFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagFilters: Self = this.set("tagFilters", js.undefined)
+    def setTagFiltersVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "tagFilters", js.Array(value :_*))
   }
 }

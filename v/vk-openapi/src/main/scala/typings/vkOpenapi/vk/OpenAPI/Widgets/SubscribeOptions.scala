@@ -1,12 +1,13 @@
 package typings.vkOpenapi.vk.OpenAPI.Widgets
 
 import typings.vkOpenapi.vk.OpenAPI.NumericBoolean
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubscribeOptions extends js.Object {
+trait SubscribeOptions extends StObject {
   
   var mode: js.UndefOr[NumericBoolean] = js.native
   
@@ -21,30 +22,18 @@ object SubscribeOptions {
   }
   
   @scala.inline
-  implicit class SubscribeOptionsOps[Self <: SubscribeOptions] (val x: Self) extends AnyVal {
+  implicit class SubscribeOptionsMutableBuilder[Self <: SubscribeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMode(value: NumericBoolean): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSoft(value: NumericBoolean): Self = StObject.set(x, "soft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: NumericBoolean): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
-    
-    @scala.inline
-    def setSoft(value: NumericBoolean): Self = this.set("soft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSoft: Self = this.set("soft", js.undefined)
+    def setSoftUndefined: Self = StObject.set(x, "soft", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MatchmakingTicket extends js.Object {
+trait MatchmakingTicket extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) associated with the GameLift matchmaking configuration resource that is used with this ticket.
@@ -71,87 +72,75 @@ object MatchmakingTicket {
   }
   
   @scala.inline
-  implicit class MatchmakingTicketOps[Self <: MatchmakingTicket] (val x: Self) extends AnyVal {
+  implicit class MatchmakingTicketMutableBuilder[Self <: MatchmakingTicket] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationArn(value: MatchmakingConfigurationArn): Self = StObject.set(x, "ConfigurationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationArnUndefined: Self = StObject.set(x, "ConfigurationArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigurationName(value: MatchmakingIdStringModel): Self = StObject.set(x, "ConfigurationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationArn(value: MatchmakingConfigurationArn): Self = this.set("ConfigurationArn", value.asInstanceOf[js.Any])
+    def setConfigurationNameUndefined: Self = StObject.set(x, "ConfigurationName", js.undefined)
     
     @scala.inline
-    def deleteConfigurationArn: Self = this.set("ConfigurationArn", js.undefined)
+    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationName(value: MatchmakingIdStringModel): Self = this.set("ConfigurationName", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def deleteConfigurationName: Self = this.set("ConfigurationName", js.undefined)
+    def setEstimatedWaitTime(value: WholeNumber): Self = StObject.set(x, "EstimatedWaitTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setEstimatedWaitTimeUndefined: Self = StObject.set(x, "EstimatedWaitTime", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setGameSessionConnectionInfo(value: GameSessionConnectionInfo): Self = StObject.set(x, "GameSessionConnectionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedWaitTime(value: WholeNumber): Self = this.set("EstimatedWaitTime", value.asInstanceOf[js.Any])
+    def setGameSessionConnectionInfoUndefined: Self = StObject.set(x, "GameSessionConnectionInfo", js.undefined)
     
     @scala.inline
-    def deleteEstimatedWaitTime: Self = this.set("EstimatedWaitTime", js.undefined)
+    def setPlayers(value: PlayerList): Self = StObject.set(x, "Players", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameSessionConnectionInfo(value: GameSessionConnectionInfo): Self = this.set("GameSessionConnectionInfo", value.asInstanceOf[js.Any])
+    def setPlayersUndefined: Self = StObject.set(x, "Players", js.undefined)
     
     @scala.inline
-    def deleteGameSessionConnectionInfo: Self = this.set("GameSessionConnectionInfo", js.undefined)
+    def setPlayersVarargs(value: Player*): Self = StObject.set(x, "Players", js.Array(value :_*))
     
     @scala.inline
-    def setPlayersVarargs(value: Player*): Self = this.set("Players", js.Array(value :_*))
+    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayers(value: PlayerList): Self = this.set("Players", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
     @scala.inline
-    def deletePlayers: Self = this.set("Players", js.undefined)
+    def setStatus(value: MatchmakingConfigurationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Timestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: StringModel): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
     @scala.inline
-    def setStatus(value: MatchmakingConfigurationStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStatusReason(value: StringModel): Self = StObject.set(x, "StatusReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusReasonUndefined: Self = StObject.set(x, "StatusReason", js.undefined)
     
     @scala.inline
-    def setStatusMessage(value: StringModel): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    def setTicketId(value: MatchmakingIdStringModel): Self = StObject.set(x, "TicketId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusReason(value: StringModel): Self = this.set("StatusReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusReason: Self = this.set("StatusReason", js.undefined)
-    
-    @scala.inline
-    def setTicketId(value: MatchmakingIdStringModel): Self = this.set("TicketId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTicketId: Self = this.set("TicketId", js.undefined)
+    def setTicketIdUndefined: Self = StObject.set(x, "TicketId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortForwardingConfig extends js.Object {
+trait PortForwardingConfig extends StObject {
   
   /**
     * The port mappings for the configuration.
@@ -21,27 +22,15 @@ object PortForwardingConfig {
   }
   
   @scala.inline
-  implicit class PortForwardingConfigOps[Self <: PortForwardingConfig] (val x: Self) extends AnyVal {
+  implicit class PortForwardingConfigMutableBuilder[Self <: PortForwardingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPortMappings(value: PortMappingList): Self = StObject.set(x, "portMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPortMappingsUndefined: Self = StObject.set(x, "portMappings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPortMappingsVarargs(value: PortMapping*): Self = this.set("portMappings", js.Array(value :_*))
-    
-    @scala.inline
-    def setPortMappings(value: PortMappingList): Self = this.set("portMappings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePortMappings: Self = this.set("portMappings", js.undefined)
+    def setPortMappingsVarargs(value: PortMapping*): Self = StObject.set(x, "portMappings", js.Array(value :_*))
   }
 }

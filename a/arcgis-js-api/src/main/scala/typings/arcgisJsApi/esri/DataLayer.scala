@@ -10,6 +10,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.overlaps
 import typings.arcgisJsApi.arcgisJsApiStrings.relation
 import typings.arcgisJsApi.arcgisJsApiStrings.touches
 import typings.arcgisJsApi.arcgisJsApiStrings.within
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

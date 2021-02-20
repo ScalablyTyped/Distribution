@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonline
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LighthouseAuditResultV5 extends js.Object {
+trait LighthouseAuditResultV5 extends StObject {
   
   /** The description of the audit. */
   var description: js.UndefOr[String] = js.native
@@ -57,88 +58,76 @@ object LighthouseAuditResultV5 {
   }
   
   @scala.inline
-  implicit class LighthouseAuditResultV5Ops[Self <: LighthouseAuditResultV5] (val x: Self) extends AnyVal {
+  implicit class LighthouseAuditResultV5MutableBuilder[Self <: LighthouseAuditResultV5] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
     def setDetails(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseAuditResultV5 with TopLevel[js.Any]
-    ): Self = this.set("details", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def setDisplayValue(value: String): Self = this.set("displayValue", value.asInstanceOf[js.Any])
+    def setDisplayValue(value: String): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayValue: Self = this.set("displayValue", js.undefined)
+    def setDisplayValueUndefined: Self = StObject.set(x, "displayValue", js.undefined)
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def setExplanation(value: String): Self = this.set("explanation", value.asInstanceOf[js.Any])
+    def setExplanation(value: String): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExplanation: Self = this.set("explanation", js.undefined)
+    def setExplanationUndefined: Self = StObject.set(x, "explanation", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setNumericValue(value: Double): Self = this.set("numericValue", value.asInstanceOf[js.Any])
+    def setNumericValue(value: Double): Self = StObject.set(x, "numericValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumericValue: Self = this.set("numericValue", js.undefined)
+    def setNumericValueUndefined: Self = StObject.set(x, "numericValue", js.undefined)
     
     @scala.inline
-    def setScore(value: js.Any): Self = this.set("score", value.asInstanceOf[js.Any])
+    def setScore(value: js.Any): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScore: Self = this.set("score", js.undefined)
+    def setScoreDisplayMode(value: String): Self = StObject.set(x, "scoreDisplayMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScoreDisplayMode(value: String): Self = this.set("scoreDisplayMode", value.asInstanceOf[js.Any])
+    def setScoreDisplayModeUndefined: Self = StObject.set(x, "scoreDisplayMode", js.undefined)
     
     @scala.inline
-    def deleteScoreDisplayMode: Self = this.set("scoreDisplayMode", js.undefined)
+    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setWarnings(value: js.Any): Self = this.set("warnings", value.asInstanceOf[js.Any])
+    def setWarnings(value: js.Any): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWarnings: Self = this.set("warnings", js.undefined)
+    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
   }
 }

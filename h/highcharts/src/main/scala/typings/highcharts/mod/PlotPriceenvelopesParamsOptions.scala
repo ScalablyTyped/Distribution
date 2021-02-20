@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotPriceenvelopesParamsOptions extends js.Object {
+trait PlotPriceenvelopesParamsOptions extends StObject {
   
   /**
     * (Highstock) Percentage below the moving average that should be displayed.
@@ -42,42 +43,30 @@ object PlotPriceenvelopesParamsOptions {
   }
   
   @scala.inline
-  implicit class PlotPriceenvelopesParamsOptionsOps[Self <: PlotPriceenvelopesParamsOptions] (val x: Self) extends AnyVal {
+  implicit class PlotPriceenvelopesParamsOptionsMutableBuilder[Self <: PlotPriceenvelopesParamsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottomBand(value: Double): Self = StObject.set(x, "bottomBand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBottomBandUndefined: Self = StObject.set(x, "bottomBand", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomBand(value: Double): Self = this.set("bottomBand", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteBottomBand: Self = this.set("bottomBand", js.undefined)
+    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setTopBand(value: Double): Self = StObject.set(x, "topBand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: Double): Self = this.set("period", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
-    
-    @scala.inline
-    def setTopBand(value: Double): Self = this.set("topBand", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopBand: Self = this.set("topBand", js.undefined)
+    def setTopBandUndefined: Self = StObject.set(x, "topBand", js.undefined)
   }
 }

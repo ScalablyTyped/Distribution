@@ -1,5 +1,6 @@
 package typings.googleapis.tpuV1Mod.tpuV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request for StopNode.
   */
 @js.native
-trait SchemaStopNodeRequest extends js.Object
+trait SchemaStopNodeRequest extends StObject

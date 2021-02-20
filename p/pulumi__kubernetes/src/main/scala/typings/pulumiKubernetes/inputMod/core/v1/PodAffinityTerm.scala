@@ -2,6 +2,7 @@ package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiKubernetes.inputMod.meta.v1.LabelSelector
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Defines a set of pods (namely those matching the labelSelector relative to the given namespace(s)) that this pod should be co-located (affinity) or not co-located (anti-affinity) with, where co-located is defined as running on a node whose value of the label with key <topologyKey> matches that of any node on which a pod of the set of pods is running
   */
 @js.native
-trait PodAffinityTerm extends js.Object {
+trait PodAffinityTerm extends StObject {
   
   /**
     * A label query over a set of resources, in this case pods.
@@ -36,36 +37,24 @@ object PodAffinityTerm {
   }
   
   @scala.inline
-  implicit class PodAffinityTermOps[Self <: PodAffinityTerm] (val x: Self) extends AnyVal {
+  implicit class PodAffinityTermMutableBuilder[Self <: PodAffinityTerm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabelSelector(value: Input[LabelSelector]): Self = StObject.set(x, "labelSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelSelectorUndefined: Self = StObject.set(x, "labelSelector", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamespaces(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopologyKey(value: Input[String]): Self = this.set("topologyKey", value.asInstanceOf[js.Any])
+    def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
     
     @scala.inline
-    def setLabelSelector(value: Input[LabelSelector]): Self = this.set("labelSelector", value.asInstanceOf[js.Any])
+    def setNamespacesVarargs(value: Input[String]*): Self = StObject.set(x, "namespaces", js.Array(value :_*))
     
     @scala.inline
-    def deleteLabelSelector: Self = this.set("labelSelector", js.undefined)
-    
-    @scala.inline
-    def setNamespacesVarargs(value: Input[String]*): Self = this.set("namespaces", js.Array(value :_*))
-    
-    @scala.inline
-    def setNamespaces(value: Input[js.Array[Input[String]]]): Self = this.set("namespaces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespaces: Self = this.set("namespaces", js.undefined)
+    def setTopologyKey(value: Input[String]): Self = StObject.set(x, "topologyKey", value.asInstanceOf[js.Any])
   }
 }

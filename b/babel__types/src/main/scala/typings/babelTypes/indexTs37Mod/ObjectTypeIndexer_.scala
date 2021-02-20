@@ -1,6 +1,7 @@
 package typings.babelTypes.indexTs37Mod
 
 import typings.babelTypes.babelTypesStrings.ObjectTypeIndexer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,42 +36,30 @@ object ObjectTypeIndexer_ {
   }
   
   @scala.inline
-  implicit class ObjectTypeIndexer_Ops[Self <: ObjectTypeIndexer_] (val x: Self) extends AnyVal {
+  implicit class ObjectTypeIndexer_MutableBuilder[Self <: ObjectTypeIndexer_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdNull: Self = StObject.set(x, "id", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: FlowType): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: FlowType): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatic(value: Boolean): Self = this.set("static", value.asInstanceOf[js.Any])
+    def setType(value: ObjectTypeIndexer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ObjectTypeIndexer): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setValue(value: FlowType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: FlowType): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setVariance(value: Variance_): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Identifier_): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdNull: Self = this.set("id", null)
-    
-    @scala.inline
-    def setVariance(value: Variance_): Self = this.set("variance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVarianceNull: Self = this.set("variance", null)
+    def setVarianceNull: Self = StObject.set(x, "variance", null)
   }
 }

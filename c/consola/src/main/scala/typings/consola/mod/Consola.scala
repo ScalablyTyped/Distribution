@@ -1,13 +1,14 @@
 package typings.consola.mod
 
 import typings.node.NodeJS.WritableStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("consola", "Consola")
 @js.native
-class Consola protected () extends js.Object {
+class Consola protected () extends StObject {
   def this(options: ConsolaOptions) = this()
   
   // Reporter

@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IShellUI extends js.Object {
+trait IShellUI extends StObject {
   
   def CreatePersistentBrowserContent(url: String, parameters: js.Any): Double = js.native
   

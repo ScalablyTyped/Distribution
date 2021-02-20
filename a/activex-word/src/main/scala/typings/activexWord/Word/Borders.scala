@@ -1,12 +1,13 @@
 package typings.activexWord.Word
 
 import typings.activexWord.activexWordNumbers.`9999999`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Borders extends js.Object {
+trait Borders extends StObject {
   
   var AlwaysInFront: Boolean = js.native
   
@@ -110,108 +111,96 @@ object Borders {
   }
   
   @scala.inline
-  implicit class BordersOps[Self <: Borders] (val x: Self) extends AnyVal {
+  implicit class BordersMutableBuilder[Self <: Borders] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlwaysInFront(value: Boolean): Self = StObject.set(x, "AlwaysInFront", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplyPageBordersToAllSections(value: () => Unit): Self = StObject.set(x, "ApplyPageBordersToAllSections", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAlwaysInFront(value: Boolean): Self = this.set("AlwaysInFront", value.asInstanceOf[js.Any])
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyPageBordersToAllSections(value: () => Unit): Self = this.set("ApplyPageBordersToAllSections", js.Any.fromFunction0(value))
+    def setDistanceFrom(value: WdBorderDistanceFrom): Self = StObject.set(x, "DistanceFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setDistanceFromBottom(value: Double): Self = StObject.set(x, "DistanceFromBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setDistanceFromLeft(value: Double): Self = StObject.set(x, "DistanceFromLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceFrom(value: WdBorderDistanceFrom): Self = this.set("DistanceFrom", value.asInstanceOf[js.Any])
+    def setDistanceFromRight(value: Double): Self = StObject.set(x, "DistanceFromRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceFromBottom(value: Double): Self = this.set("DistanceFromBottom", value.asInstanceOf[js.Any])
+    def setDistanceFromTop(value: Double): Self = StObject.set(x, "DistanceFromTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceFromLeft(value: Double): Self = this.set("DistanceFromLeft", value.asInstanceOf[js.Any])
+    def setEnable(value: Boolean | `9999999` | WdLineStyle): Self = StObject.set(x, "Enable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceFromRight(value: Double): Self = this.set("DistanceFromRight", value.asInstanceOf[js.Any])
+    def setEnableFirstPageInSection(value: Boolean): Self = StObject.set(x, "EnableFirstPageInSection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceFromTop(value: Double): Self = this.set("DistanceFromTop", value.asInstanceOf[js.Any])
+    def setEnableOtherPagesInSection(value: Boolean): Self = StObject.set(x, "EnableOtherPagesInSection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnable(value: Boolean | `9999999` | WdLineStyle): Self = this.set("Enable", value.asInstanceOf[js.Any])
+    def setHasHorizontal(value: Boolean): Self = StObject.set(x, "HasHorizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableFirstPageInSection(value: Boolean): Self = this.set("EnableFirstPageInSection", value.asInstanceOf[js.Any])
+    def setHasVertical(value: Boolean): Self = StObject.set(x, "HasVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableOtherPagesInSection(value: Boolean): Self = this.set("EnableOtherPagesInSection", value.asInstanceOf[js.Any])
+    def setInsideColor(value: WdColor): Self = StObject.set(x, "InsideColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasHorizontal(value: Boolean): Self = this.set("HasHorizontal", value.asInstanceOf[js.Any])
+    def setInsideColorIndex(value: WdColorIndex): Self = StObject.set(x, "InsideColorIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasVertical(value: Boolean): Self = this.set("HasVertical", value.asInstanceOf[js.Any])
+    def setInsideLineStyle(value: WdLineStyle): Self = StObject.set(x, "InsideLineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsideColor(value: WdColor): Self = this.set("InsideColor", value.asInstanceOf[js.Any])
+    def setInsideLineWidth(value: WdLineWidth): Self = StObject.set(x, "InsideLineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsideColorIndex(value: WdColorIndex): Self = this.set("InsideColorIndex", value.asInstanceOf[js.Any])
+    def setItem(value: WdBorderType => Border): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsideLineStyle(value: WdLineStyle): Self = this.set("InsideLineStyle", value.asInstanceOf[js.Any])
+    def setJoinBorders(value: Boolean): Self = StObject.set(x, "JoinBorders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsideLineWidth(value: WdLineWidth): Self = this.set("InsideLineWidth", value.asInstanceOf[js.Any])
+    def setOutsideColor(value: WdColor): Self = StObject.set(x, "OutsideColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: WdBorderType => Border): Self = this.set("Item", js.Any.fromFunction1(value))
+    def setOutsideColorIndex(value: WdColorIndex): Self = StObject.set(x, "OutsideColorIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJoinBorders(value: Boolean): Self = this.set("JoinBorders", value.asInstanceOf[js.Any])
+    def setOutsideLineStyle(value: WdLineStyle): Self = StObject.set(x, "OutsideLineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutsideColor(value: WdColor): Self = this.set("OutsideColor", value.asInstanceOf[js.Any])
+    def setOutsideLineWidth(value: WdLineWidth): Self = StObject.set(x, "OutsideLineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutsideColorIndex(value: WdColorIndex): Self = this.set("OutsideColorIndex", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutsideLineStyle(value: WdLineStyle): Self = this.set("OutsideLineStyle", value.asInstanceOf[js.Any])
+    def setShadow(value: Boolean): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutsideLineWidth(value: WdLineWidth): Self = this.set("OutsideLineWidth", value.asInstanceOf[js.Any])
+    def setSurroundFooter(value: Boolean): Self = StObject.set(x, "SurroundFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setSurroundHeader(value: Boolean): Self = StObject.set(x, "SurroundHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadow(value: Boolean): Self = this.set("Shadow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSurroundFooter(value: Boolean): Self = this.set("SurroundFooter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSurroundHeader(value: Boolean): Self = this.set("SurroundHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotBorders_typekey(value: Borders): Self = this.set("Word.Borders_typekey", value.asInstanceOf[js.Any])
+    def setWordDotBorders_typekey(value: Borders): Self = StObject.set(x, "Word.Borders_typekey", value.asInstanceOf[js.Any])
   }
 }

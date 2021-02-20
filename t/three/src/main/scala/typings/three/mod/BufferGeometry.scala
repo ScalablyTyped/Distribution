@@ -1,5 +1,6 @@
 package typings.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class BufferGeometry ()
   extends typings.three.bufferGeometryMod.BufferGeometry
 /* static members */
-@JSImport("three", "BufferGeometry")
-@js.native
-object BufferGeometry extends js.Object {
+object BufferGeometry {
   
-  var MaxIndex: Double = js.native
+  @JSImport("three", "BufferGeometry")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("three", "BufferGeometry.MaxIndex")
+  @js.native
+  def MaxIndex: Double = js.native
+  @scala.inline
+  def MaxIndex_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MaxIndex")(x.asInstanceOf[js.Any])
 }

@@ -1,5 +1,6 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,21 +29,9 @@ object RequestHandleWithPromise {
   }
   
   @scala.inline
-  implicit class RequestHandleWithPromiseOps[Self <: RequestHandleWithPromise[_], T] (val x: Self with RequestHandleWithPromise[T]) extends AnyVal {
+  implicit class RequestHandleWithPromiseMutableBuilder[Self <: RequestHandleWithPromise[_], T] (val x: Self with RequestHandleWithPromise[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAsPromise(value: () => js.Promise[ClientResponse[T]]): Self = this.set("asPromise", js.Any.fromFunction0(value))
+    def setAsPromise(value: () => js.Promise[ClientResponse[T]]): Self = StObject.set(x, "asPromise", js.Any.fromFunction0(value))
   }
 }

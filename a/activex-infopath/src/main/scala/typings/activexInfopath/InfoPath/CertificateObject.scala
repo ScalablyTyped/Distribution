@@ -1,11 +1,12 @@
 package typings.activexInfopath.InfoPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CertificateObject extends js.Object {
+trait CertificateObject extends StObject {
   
   val ExpirationDate: String = js.native
   
@@ -34,33 +35,21 @@ object CertificateObject {
   }
   
   @scala.inline
-  implicit class CertificateObjectOps[Self <: CertificateObject] (val x: Self) extends AnyVal {
+  implicit class CertificateObjectMutableBuilder[Self <: CertificateObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpirationDate(value: String): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfoPathDotCertificateObject_typekey(value: CertificateObject): Self = StObject.set(x, "InfoPath.CertificateObject_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIssuedBy(value: String): Self = StObject.set(x, "IssuedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationDate(value: String): Self = this.set("ExpirationDate", value.asInstanceOf[js.Any])
+    def setIssuedTo(value: String): Self = StObject.set(x, "IssuedTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoPathDotCertificateObject_typekey(value: CertificateObject): Self = this.set("InfoPath.CertificateObject_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIssuedBy(value: String): Self = this.set("IssuedBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIssuedTo(value: String): Self = this.set("IssuedTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: XdCertificateStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStatus(value: XdCertificateStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

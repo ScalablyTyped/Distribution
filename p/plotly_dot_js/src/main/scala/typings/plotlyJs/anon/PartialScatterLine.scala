@@ -7,13 +7,14 @@ import typings.plotlyJs.plotlyJsStrings.linear
 import typings.plotlyJs.plotlyJsStrings.spline
 import typings.plotlyJs.plotlyJsStrings.vh
 import typings.plotlyJs.plotlyJsStrings.vhv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.ScatterLine> */
 @js.native
-trait PartialScatterLine extends js.Object {
+trait PartialScatterLine extends StObject {
   
   var color: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
   
@@ -36,57 +37,45 @@ object PartialScatterLine {
   }
   
   @scala.inline
-  implicit class PartialScatterLineOps[Self <: PartialScatterLine] (val x: Self) extends AnyVal {
+  implicit class PartialScatterLineMutableBuilder[Self <: PartialScatterLine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value :_*))
     
     @scala.inline
-    def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = this.set("color", js.Array(value :_*))
+    def setDash(value: Dash): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: typings.plotlyJs.mod.Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setShape(value: linear | spline | hv | vh | hvh | vhv): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDash(value: Dash): Self = this.set("dash", value.asInstanceOf[js.Any])
+    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
     @scala.inline
-    def deleteDash: Self = this.set("dash", js.undefined)
+    def setSimplify(value: Boolean): Self = StObject.set(x, "simplify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShape(value: linear | spline | hv | vh | hvh | vhv): Self = this.set("shape", value.asInstanceOf[js.Any])
+    def setSimplifyUndefined: Self = StObject.set(x, "simplify", js.undefined)
     
     @scala.inline
-    def deleteShape: Self = this.set("shape", js.undefined)
+    def setSmoothing(value: Double): Self = StObject.set(x, "smoothing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSimplify(value: Boolean): Self = this.set("simplify", value.asInstanceOf[js.Any])
+    def setSmoothingUndefined: Self = StObject.set(x, "smoothing", js.undefined)
     
     @scala.inline
-    def deleteSimplify: Self = this.set("simplify", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmoothing(value: Double): Self = this.set("smoothing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmoothing: Self = this.set("smoothing", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

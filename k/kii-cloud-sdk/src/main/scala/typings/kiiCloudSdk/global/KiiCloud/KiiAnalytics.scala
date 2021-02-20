@@ -1,6 +1,7 @@
 package typings.kiiCloudSdk.global.KiiCloud
 
 import typings.kiiCloudSdk.anon.`19`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,16 +13,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class KiiAnalytics ()
   extends typings.kiiCloudSdk.KiiCloud.KiiAnalytics
-/* static members */
-@JSGlobal("KiiCloud.KiiAnalytics")
-@js.native
-object KiiAnalytics extends js.Object {
+object KiiAnalytics {
   
   /**
     * Retrieve the current app ID
     *
     * @return The current app ID
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiAnalytics.getAppID")
+  @js.native
   def getAppID(): String = js.native
   
   /**
@@ -29,6 +30,9 @@ object KiiAnalytics extends js.Object {
     *
     * @return The current app key
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiAnalytics.getAppKey")
+  @js.native
   def getAppKey(): String = js.native
   
   /**
@@ -37,6 +41,9 @@ object KiiAnalytics extends js.Object {
     *
     * @return deviceId.
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiAnalytics.getDeviceId")
+  @js.native
   def getDeviceId(): String = js.native
   
   /**
@@ -46,6 +53,9 @@ object KiiAnalytics extends js.Object {
     *
     * @return current version number of the SDK
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiAnalytics.getSDKVersion")
+  @js.native
   def getSDKVersion(): String = js.native
   
   /**
@@ -66,6 +76,9 @@ object KiiAnalytics extends js.Object {
     *     // initialize with deviceId
     *     Kii.initializeWithSite("my-app-id", "my-app-key", KiiAnalyticsSite.JP, "my-device-id");
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiAnalytics.initialize")
+  @js.native
   def initialize(appID: String, appKey: String, deviceid: String): Unit = js.native
   
   /**
@@ -87,6 +100,9 @@ object KiiAnalytics extends js.Object {
     *     // initialize with deviceId
     *     Kii.initializeWithSite("my-app-id", "my-app-key", KiiAnalyticsSite.JP, "my-device-id");
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiAnalytics.initializeWithSite")
+  @js.native
   def initializeWithSite(
     appID: String,
     appKey: String,
@@ -99,6 +115,9 @@ object KiiAnalytics extends js.Object {
     *
     * @return True if printing logs, false otherwise
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiAnalytics.isLogging")
+  @js.native
   def isLogging(): Boolean = js.native
   
   /**
@@ -111,6 +130,9 @@ object KiiAnalytics extends js.Object {
     * @example
     *         KiiAnalytics.logger("My message");
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiAnalytics.logger")
+  @js.native
   def logger(message: String): Unit = js.native
   
   /**
@@ -120,6 +142,9 @@ object KiiAnalytics extends js.Object {
     *
     * @param url A string containing the desired endpoint
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiAnalytics.setBaseURL")
+  @js.native
   def setBaseURL(url: String): Unit = js.native
   
   /**
@@ -132,6 +157,9 @@ object KiiAnalytics extends js.Object {
     * @example
     *         KiiAnalytics.setLogging(true);
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiAnalytics.setLogging")
+  @js.native
   def setLogging(True: Boolean): Unit = js.native
   
   /**
@@ -151,6 +179,9 @@ object KiiAnalytics extends js.Object {
     *       </li>
     *     </ul>
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiAnalytics.trackEvent")
+  @js.native
   def trackEvent(eventName: String): js.Promise[Unit] = js.native
   
   /**
@@ -174,6 +205,9 @@ object KiiAnalytics extends js.Object {
     *       </li>
     *     </ul>
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiAnalytics.trackEventWithExtras")
+  @js.native
   def trackEventWithExtras(eventName: String, extras: js.Any): js.Promise[Unit] = js.native
   
   /**
@@ -198,6 +232,11 @@ object KiiAnalytics extends js.Object {
     *       </li>
     *     </ul>
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiAnalytics.trackEventWithExtrasAndCallbacks")
+  @js.native
   def trackEventWithExtrasAndCallbacks(eventName: String, extras: js.Any): js.Promise[Unit] = js.native
+  @JSGlobal("KiiCloud.KiiAnalytics.trackEventWithExtrasAndCallbacks")
+  @js.native
   def trackEventWithExtrasAndCallbacks(eventName: String, extras: js.Any, callbacks: `19`): js.Promise[Unit] = js.native
 }

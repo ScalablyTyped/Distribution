@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Input
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SynthesizeScrollGestureRequest extends js.Object {
+trait SynthesizeScrollGestureRequest extends StObject {
   
   /**
     * Which type of input events to be generated (default: 'default', which queries the platform
@@ -80,84 +81,72 @@ object SynthesizeScrollGestureRequest {
   }
   
   @scala.inline
-  implicit class SynthesizeScrollGestureRequestOps[Self <: SynthesizeScrollGestureRequest] (val x: Self) extends AnyVal {
+  implicit class SynthesizeScrollGestureRequestMutableBuilder[Self <: SynthesizeScrollGestureRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGestureSourceType(value: GestureSourceType): Self = StObject.set(x, "gestureSourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGestureSourceTypeUndefined: Self = StObject.set(x, "gestureSourceType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInteractionMarkerName(value: String): Self = StObject.set(x, "interactionMarkerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setInteractionMarkerNameUndefined: Self = StObject.set(x, "interactionMarkerName", js.undefined)
     
     @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setPreventFling(value: Boolean): Self = StObject.set(x, "preventFling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGestureSourceType(value: GestureSourceType): Self = this.set("gestureSourceType", value.asInstanceOf[js.Any])
+    def setPreventFlingUndefined: Self = StObject.set(x, "preventFling", js.undefined)
     
     @scala.inline
-    def deleteGestureSourceType: Self = this.set("gestureSourceType", js.undefined)
+    def setRepeatCount(value: integer): Self = StObject.set(x, "repeatCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractionMarkerName(value: String): Self = this.set("interactionMarkerName", value.asInstanceOf[js.Any])
+    def setRepeatCountUndefined: Self = StObject.set(x, "repeatCount", js.undefined)
     
     @scala.inline
-    def deleteInteractionMarkerName: Self = this.set("interactionMarkerName", js.undefined)
+    def setRepeatDelayMs(value: integer): Self = StObject.set(x, "repeatDelayMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventFling(value: Boolean): Self = this.set("preventFling", value.asInstanceOf[js.Any])
+    def setRepeatDelayMsUndefined: Self = StObject.set(x, "repeatDelayMs", js.undefined)
     
     @scala.inline
-    def deletePreventFling: Self = this.set("preventFling", js.undefined)
+    def setSpeed(value: integer): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeatCount(value: integer): Self = this.set("repeatCount", value.asInstanceOf[js.Any])
+    def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
     
     @scala.inline
-    def deleteRepeatCount: Self = this.set("repeatCount", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeatDelayMs(value: integer): Self = this.set("repeatDelayMs", value.asInstanceOf[js.Any])
+    def setXDistance(value: Double): Self = StObject.set(x, "xDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRepeatDelayMs: Self = this.set("repeatDelayMs", js.undefined)
+    def setXDistanceUndefined: Self = StObject.set(x, "xDistance", js.undefined)
     
     @scala.inline
-    def setSpeed(value: integer): Self = this.set("speed", value.asInstanceOf[js.Any])
+    def setXOverscroll(value: Double): Self = StObject.set(x, "xOverscroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpeed: Self = this.set("speed", js.undefined)
+    def setXOverscrollUndefined: Self = StObject.set(x, "xOverscroll", js.undefined)
     
     @scala.inline
-    def setXDistance(value: Double): Self = this.set("xDistance", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteXDistance: Self = this.set("xDistance", js.undefined)
+    def setYDistance(value: Double): Self = StObject.set(x, "yDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXOverscroll(value: Double): Self = this.set("xOverscroll", value.asInstanceOf[js.Any])
+    def setYDistanceUndefined: Self = StObject.set(x, "yDistance", js.undefined)
     
     @scala.inline
-    def deleteXOverscroll: Self = this.set("xOverscroll", js.undefined)
+    def setYOverscroll(value: Double): Self = StObject.set(x, "yOverscroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYDistance(value: Double): Self = this.set("yDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYDistance: Self = this.set("yDistance", js.undefined)
-    
-    @scala.inline
-    def setYOverscroll(value: Double): Self = this.set("yOverscroll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYOverscroll: Self = this.set("yOverscroll", js.undefined)
+    def setYOverscrollUndefined: Self = StObject.set(x, "yOverscroll", js.undefined)
   }
 }

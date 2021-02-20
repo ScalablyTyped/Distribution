@@ -7,13 +7,14 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.cueentered
 import typings.winrtUwp.winrtUwpStrings.cueexited
 import typings.winrtUwp.winrtUwpStrings.trackfailed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a timed metadata track. The track contains a list of IMediaCue objects and raises events at the beginning and end of the time window of each cue. */
 @js.native
-trait TimedMetadataTrack extends js.Object {
+trait TimedMetadataTrack extends StObject {
   
   /** Gets the list of media cues in the TimedMetadataTrack that are currently active. A cue is considered active after its StartTime has been reached until its Duration has been exceeded. */
   var activeCues: IVectorView[IMediaCue] = js.native

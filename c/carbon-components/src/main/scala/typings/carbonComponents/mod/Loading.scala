@@ -1,7 +1,7 @@
 package typings.carbonComponents.mod
 
-import typings.carbonComponents.anon.Active
 import typings.std.WeakMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +12,16 @@ class Loading protected ()
   extends typings.carbonComponents.componentsMod.Loading {
   def this(element: js.Any, options: js.Any) = this()
 }
-/* static members */
-@JSImport("carbon-components", "Loading")
-@js.native
-object Loading extends js.Object {
+object Loading {
   
-  var components: WeakMap[js.Object, _] = js.native
+  @JSImport("carbon-components", "Loading")
+  @js.native
+  val ^ : js.Any = js.native
   
-  def options: Active = js.native
+  /* static member */
+  @JSImport("carbon-components", "Loading.components")
+  @js.native
+  def components: WeakMap[js.Object, js.Any] = js.native
+  @scala.inline
+  def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
 }

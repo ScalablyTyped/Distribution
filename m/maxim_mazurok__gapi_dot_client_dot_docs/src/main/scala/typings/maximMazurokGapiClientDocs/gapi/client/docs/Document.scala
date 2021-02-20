@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Document extends js.Object {
+trait Document extends StObject {
   
   /** Output only. The main body of the document. */
   var body: js.UndefOr[Body] = js.native
@@ -107,150 +108,138 @@ object Document {
   }
   
   @scala.inline
-  implicit class DocumentOps[Self <: Document] (val x: Self) extends AnyVal {
+  implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: Body): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setDocumentStyle(value: DocumentStyle): Self = StObject.set(x, "documentStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentId(value: String): Self = this.set("documentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentId: Self = this.set("documentId", js.undefined)
-    
-    @scala.inline
-    def setDocumentStyle(value: DocumentStyle): Self = this.set("documentStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentStyle: Self = this.set("documentStyle", js.undefined)
+    def setDocumentStyleUndefined: Self = StObject.set(x, "documentStyle", js.undefined)
     
     @scala.inline
     def setFooters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.Footer}
       */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document with TopLevel[js.Any]
-    ): Self = this.set("footers", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "footers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFooters: Self = this.set("footers", js.undefined)
+    def setFootersUndefined: Self = StObject.set(x, "footers", js.undefined)
     
     @scala.inline
     def setFootnotes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.Footnote}
       */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document with TopLevel[js.Any]
-    ): Self = this.set("footnotes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "footnotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFootnotes: Self = this.set("footnotes", js.undefined)
+    def setFootnotesUndefined: Self = StObject.set(x, "footnotes", js.undefined)
     
     @scala.inline
     def setHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.Header}
       */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document with TopLevel[js.Any]
-    ): Self = this.set("headers", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
     def setInlineObjects(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.InlineObject}
       */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document with TopLevel[js.Any]
-    ): Self = this.set("inlineObjects", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "inlineObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInlineObjects: Self = this.set("inlineObjects", js.undefined)
+    def setInlineObjectsUndefined: Self = StObject.set(x, "inlineObjects", js.undefined)
     
     @scala.inline
     def setLists(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.List}
       */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document with TopLevel[js.Any]
-    ): Self = this.set("lists", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLists: Self = this.set("lists", js.undefined)
+    def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
     
     @scala.inline
     def setNamedRanges(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.NamedRanges}
       */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document with TopLevel[js.Any]
-    ): Self = this.set("namedRanges", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "namedRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNamedRanges: Self = this.set("namedRanges", js.undefined)
+    def setNamedRangesUndefined: Self = StObject.set(x, "namedRanges", js.undefined)
     
     @scala.inline
-    def setNamedStyles(value: NamedStyles): Self = this.set("namedStyles", value.asInstanceOf[js.Any])
+    def setNamedStyles(value: NamedStyles): Self = StObject.set(x, "namedStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNamedStyles: Self = this.set("namedStyles", js.undefined)
+    def setNamedStylesUndefined: Self = StObject.set(x, "namedStyles", js.undefined)
     
     @scala.inline
     def setPositionedObjects(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.PositionedObject}
       */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document with TopLevel[js.Any]
-    ): Self = this.set("positionedObjects", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "positionedObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePositionedObjects: Self = this.set("positionedObjects", js.undefined)
+    def setPositionedObjectsUndefined: Self = StObject.set(x, "positionedObjects", js.undefined)
     
     @scala.inline
-    def setRevisionId(value: String): Self = this.set("revisionId", value.asInstanceOf[js.Any])
+    def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRevisionId: Self = this.set("revisionId", js.undefined)
+    def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
     
     @scala.inline
     def setSuggestedDocumentStyleChanges(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedDocumentStyle}
       */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document with TopLevel[js.Any]
-    ): Self = this.set("suggestedDocumentStyleChanges", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "suggestedDocumentStyleChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSuggestedDocumentStyleChanges: Self = this.set("suggestedDocumentStyleChanges", js.undefined)
+    def setSuggestedDocumentStyleChangesUndefined: Self = StObject.set(x, "suggestedDocumentStyleChanges", js.undefined)
     
     @scala.inline
     def setSuggestedNamedStylesChanges(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedNamedStyles}
       */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document with TopLevel[js.Any]
-    ): Self = this.set("suggestedNamedStylesChanges", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "suggestedNamedStylesChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSuggestedNamedStylesChanges: Self = this.set("suggestedNamedStylesChanges", js.undefined)
+    def setSuggestedNamedStylesChangesUndefined: Self = StObject.set(x, "suggestedNamedStylesChanges", js.undefined)
     
     @scala.inline
-    def setSuggestionsViewMode(value: String): Self = this.set("suggestionsViewMode", value.asInstanceOf[js.Any])
+    def setSuggestionsViewMode(value: String): Self = StObject.set(x, "suggestionsViewMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSuggestionsViewMode: Self = this.set("suggestionsViewMode", js.undefined)
+    def setSuggestionsViewModeUndefined: Self = StObject.set(x, "suggestionsViewMode", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

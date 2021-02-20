@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,102 +76,90 @@ object ConsentExcept {
   }
   
   @scala.inline
-  implicit class ConsentExceptOps[Self <: ConsentExcept] (val x: Self) extends AnyVal {
+  implicit class ConsentExceptMutableBuilder[Self <: ConsentExcept] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: js.Array[CodeableConcept]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionVarargs(value: CodeableConcept*): Self = StObject.set(x, "action", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setActor(value: js.Array[ConsentExceptActor]): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
     
     @scala.inline
-    def delete_type: Self = this.set("_type", js.undefined)
+    def setActorVarargs(value: ConsentExceptActor*): Self = StObject.set(x, "actor", js.Array(value :_*))
     
     @scala.inline
-    def setActionVarargs(value: CodeableConcept*): Self = this.set("action", js.Array(value :_*))
+    def setClass(value: js.Array[Coding]): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: js.Array[CodeableConcept]): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setClassVarargs(value: Coding*): Self = StObject.set(x, "class", js.Array(value :_*))
     
     @scala.inline
-    def setActorVarargs(value: ConsentExceptActor*): Self = this.set("actor", js.Array(value :_*))
+    def setCode(value: js.Array[Coding]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActor(value: js.Array[ConsentExceptActor]): Self = this.set("actor", value.asInstanceOf[js.Any])
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def deleteActor: Self = this.set("actor", js.undefined)
+    def setCodeVarargs(value: Coding*): Self = StObject.set(x, "code", js.Array(value :_*))
     
     @scala.inline
-    def setClassVarargs(value: Coding*): Self = this.set("class", js.Array(value :_*))
+    def setData(value: js.Array[ConsentExceptData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: js.Array[Coding]): Self = this.set("class", value.asInstanceOf[js.Any])
+    def setDataPeriod(value: Period): Self = StObject.set(x, "dataPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClass: Self = this.set("class", js.undefined)
+    def setDataPeriodUndefined: Self = StObject.set(x, "dataPeriod", js.undefined)
     
     @scala.inline
-    def setCodeVarargs(value: Coding*): Self = this.set("code", js.Array(value :_*))
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setCode(value: js.Array[Coding]): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setDataVarargs(value: ConsentExceptData*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: ConsentExceptData*): Self = this.set("data", js.Array(value :_*))
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def setData(value: js.Array[ConsentExceptData]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setPurpose(value: js.Array[Coding]): Self = StObject.set(x, "purpose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setPurposeUndefined: Self = StObject.set(x, "purpose", js.undefined)
     
     @scala.inline
-    def setDataPeriod(value: Period): Self = this.set("dataPeriod", value.asInstanceOf[js.Any])
+    def setPurposeVarargs(value: Coding*): Self = StObject.set(x, "purpose", js.Array(value :_*))
     
     @scala.inline
-    def deleteDataPeriod: Self = this.set("dataPeriod", js.undefined)
+    def setSecurityLabel(value: js.Array[Coding]): Self = StObject.set(x, "securityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    def setSecurityLabelUndefined: Self = StObject.set(x, "securityLabel", js.undefined)
     
     @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def setSecurityLabelVarargs(value: Coding*): Self = StObject.set(x, "securityLabel", js.Array(value :_*))
     
     @scala.inline
-    def setPurposeVarargs(value: Coding*): Self = this.set("purpose", js.Array(value :_*))
+    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurpose(value: js.Array[Coding]): Self = this.set("purpose", value.asInstanceOf[js.Any])
+    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePurpose: Self = this.set("purpose", js.undefined)
-    
-    @scala.inline
-    def setSecurityLabelVarargs(value: Coding*): Self = this.set("securityLabel", js.Array(value :_*))
-    
-    @scala.inline
-    def setSecurityLabel(value: js.Array[Coding]): Self = this.set("securityLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityLabel: Self = this.set("securityLabel", js.undefined)
+    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.xrm.Xrm.Controls
 
 import typings.xrm.Xrm.Events.ContextSensitiveHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains methods which can be used to perform data validations in a control even before the user commits (saves) the value in a form.
   */
 @js.native
-trait UiKeyPressable extends js.Object {
+trait UiKeyPressable extends StObject {
   
   /**
     * Use this to add a function as an event handler for the keypress event so that the function is called when you type a character in the specific text or number field.
@@ -48,27 +49,15 @@ object UiKeyPressable {
   }
   
   @scala.inline
-  implicit class UiKeyPressableOps[Self <: UiKeyPressable] (val x: Self) extends AnyVal {
+  implicit class UiKeyPressableMutableBuilder[Self <: UiKeyPressable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddOnKeyPress(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "addOnKeyPress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFireOnKeyPress(value: () => Unit): Self = StObject.set(x, "fireOnKeyPress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddOnKeyPress(value: ContextSensitiveHandler => Unit): Self = this.set("addOnKeyPress", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFireOnKeyPress(value: () => Unit): Self = this.set("fireOnKeyPress", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveOnKeyPress(value: ContextSensitiveHandler => Unit): Self = this.set("removeOnKeyPress", js.Any.fromFunction1(value))
+    def setRemoveOnKeyPress(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "removeOnKeyPress", js.Any.fromFunction1(value))
   }
 }

@@ -2,6 +2,7 @@ package typings.microsoftGraph.mod.CallRecords
 
 import typings.microsoftGraph.mod.Entity
 import typings.microsoftGraph.mod.NullableOption
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,69 +43,57 @@ object Segment {
   }
   
   @scala.inline
-  implicit class SegmentOps[Self <: Segment] (val x: Self) extends AnyVal {
+  implicit class SegmentMutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallee(value: NullableOption[Endpoint]): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalleeNull: Self = StObject.set(x, "callee", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCalleeUndefined: Self = StObject.set(x, "callee", js.undefined)
     
     @scala.inline
-    def setCallee(value: NullableOption[Endpoint]): Self = this.set("callee", value.asInstanceOf[js.Any])
+    def setCaller(value: NullableOption[Endpoint]): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCallee: Self = this.set("callee", js.undefined)
+    def setCallerNull: Self = StObject.set(x, "caller", null)
     
     @scala.inline
-    def setCalleeNull: Self = this.set("callee", null)
+    def setCallerUndefined: Self = StObject.set(x, "caller", js.undefined)
     
     @scala.inline
-    def setCaller(value: NullableOption[Endpoint]): Self = this.set("caller", value.asInstanceOf[js.Any])
+    def setEndDateTime(value: String): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCaller: Self = this.set("caller", js.undefined)
+    def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
     
     @scala.inline
-    def setCallerNull: Self = this.set("caller", null)
+    def setFailureInfo(value: NullableOption[FailureInfo]): Self = StObject.set(x, "failureInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDateTime(value: String): Self = this.set("endDateTime", value.asInstanceOf[js.Any])
+    def setFailureInfoNull: Self = StObject.set(x, "failureInfo", null)
     
     @scala.inline
-    def deleteEndDateTime: Self = this.set("endDateTime", js.undefined)
+    def setFailureInfoUndefined: Self = StObject.set(x, "failureInfo", js.undefined)
     
     @scala.inline
-    def setFailureInfo(value: NullableOption[FailureInfo]): Self = this.set("failureInfo", value.asInstanceOf[js.Any])
+    def setMedia(value: NullableOption[js.Array[Media]]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFailureInfo: Self = this.set("failureInfo", js.undefined)
+    def setMediaNull: Self = StObject.set(x, "media", null)
     
     @scala.inline
-    def setFailureInfoNull: Self = this.set("failureInfo", null)
+    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
     @scala.inline
-    def setMediaVarargs(value: Media*): Self = this.set("media", js.Array(value :_*))
+    def setMediaVarargs(value: Media*): Self = StObject.set(x, "media", js.Array(value :_*))
     
     @scala.inline
-    def setMedia(value: NullableOption[js.Array[Media]]): Self = this.set("media", value.asInstanceOf[js.Any])
+    def setStartDateTime(value: String): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMedia: Self = this.set("media", js.undefined)
-    
-    @scala.inline
-    def setMediaNull: Self = this.set("media", null)
-    
-    @scala.inline
-    def setStartDateTime(value: String): Self = this.set("startDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDateTime: Self = this.set("startDateTime", js.undefined)
+    def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
   }
 }

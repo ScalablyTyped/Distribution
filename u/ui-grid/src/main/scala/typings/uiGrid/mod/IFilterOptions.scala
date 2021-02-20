@@ -1,11 +1,12 @@
 package typings.uiGrid.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFilterOptions extends js.Object {
+trait IFilterOptions extends StObject {
   
   /**
     * String that will be set to the <input>.ariaLabel attribute. This is what is read as a label to screen reader users.
@@ -75,30 +76,13 @@ object IFilterOptions {
   }
   
   @scala.inline
-  implicit class IFilterOptionsOps[Self <: IFilterOptions] (val x: Self) extends AnyVal {
+  implicit class IFilterOptionsMutableBuilder[Self <: IFilterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAriaLabel(value: String): Self = this.set("ariaLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAriaLabel: Self = this.set("ariaLabel", js.undefined)
-    
-    @scala.inline
-    def setConditionFunction4(
-      value: (/* searchTerm */ String, /* cellValue */ js.Any, /* row */ IGridRow, /* column */ IGridColumn) => Boolean
-    ): Self = this.set("condition", js.Any.fromFunction4(value))
+    def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
     
     @scala.inline
     def setCondition(
@@ -109,54 +93,59 @@ object IFilterOptions {
           /* column */ IGridColumn, 
           Boolean
         ])
-    ): Self = this.set("condition", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setConditionFunction4(
+      value: (/* searchTerm */ String, /* cellValue */ js.Any, /* row */ IGridRow, /* column */ IGridColumn) => Boolean
+    ): Self = StObject.set(x, "condition", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setDisableCancelFilterButton(value: Boolean): Self = this.set("disableCancelFilterButton", value.asInstanceOf[js.Any])
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def deleteDisableCancelFilterButton: Self = this.set("disableCancelFilterButton", js.undefined)
+    def setDisableCancelFilterButton(value: Boolean): Self = StObject.set(x, "disableCancelFilterButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: IFilterFlags): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setDisableCancelFilterButtonUndefined: Self = StObject.set(x, "disableCancelFilterButton", js.undefined)
     
     @scala.inline
-    def deleteFlags: Self = this.set("flags", js.undefined)
+    def setFlags(value: IFilterFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoTerm(value: Boolean): Self = this.set("noTerm", value.asInstanceOf[js.Any])
+    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
     @scala.inline
-    def deleteNoTerm: Self = this.set("noTerm", js.undefined)
+    def setNoTerm(value: Boolean): Self = StObject.set(x, "noTerm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    def setNoTermUndefined: Self = StObject.set(x, "noTerm", js.undefined)
     
     @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectOptionsVarargs(value: ISelectOption*): Self = this.set("selectOptions", js.Array(value :_*))
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def setSelectOptions(value: js.Array[ISelectOption]): Self = this.set("selectOptions", value.asInstanceOf[js.Any])
+    def setSelectOptions(value: js.Array[ISelectOption]): Self = StObject.set(x, "selectOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectOptions: Self = this.set("selectOptions", js.undefined)
+    def setSelectOptionsUndefined: Self = StObject.set(x, "selectOptions", js.undefined)
     
     @scala.inline
-    def setTerm(value: String): Self = this.set("term", value.asInstanceOf[js.Any])
+    def setSelectOptionsVarargs(value: ISelectOption*): Self = StObject.set(x, "selectOptions", js.Array(value :_*))
     
     @scala.inline
-    def deleteTerm: Self = this.set("term", js.undefined)
+    def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Double | String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setType(value: Double | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

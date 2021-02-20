@@ -1,11 +1,12 @@
 package typings.awsSdk.resourcegroupsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroupQuery extends js.Object {
+trait GroupQuery extends StObject {
   
   /**
     * The name of the resource group that is associated with the specified resource query.
@@ -26,24 +27,12 @@ object GroupQuery {
   }
   
   @scala.inline
-  implicit class GroupQueryOps[Self <: GroupQuery] (val x: Self) extends AnyVal {
+  implicit class GroupQueryMutableBuilder[Self <: GroupQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGroupName(value: GroupName): Self = this.set("GroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceQuery(value: ResourceQuery): Self = this.set("ResourceQuery", value.asInstanceOf[js.Any])
+    def setResourceQuery(value: ResourceQuery): Self = StObject.set(x, "ResourceQuery", value.asInstanceOf[js.Any])
   }
 }

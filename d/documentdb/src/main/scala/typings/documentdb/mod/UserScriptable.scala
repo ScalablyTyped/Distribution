@@ -1,5 +1,6 @@
 package typings.documentdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +23,24 @@ object UserScriptable {
   }
   
   @scala.inline
-  implicit class UserScriptableOps[Self <: UserScriptable] (val x: Self) extends AnyVal {
+  implicit class UserScriptableMutableBuilder[Self <: UserScriptable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: UserFunction): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyFunction1(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "body", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def setBodyFunction1(value: /* repeated */ js.Any => Unit): Self = this.set("body", js.Any.fromFunction1(value))
+    def setServerScript(value: UserFunction): Self = StObject.set(x, "serverScript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: UserFunction): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setServerScriptFunction1(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "serverScript", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
-    
-    @scala.inline
-    def setServerScriptFunction1(value: /* repeated */ js.Any => Unit): Self = this.set("serverScript", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setServerScript(value: UserFunction): Self = this.set("serverScript", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerScript: Self = this.set("serverScript", js.undefined)
+    def setServerScriptUndefined: Self = StObject.set(x, "serverScript", js.undefined)
   }
 }

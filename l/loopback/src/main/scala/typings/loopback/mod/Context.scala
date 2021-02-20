@@ -1,5 +1,6 @@
 package typings.loopback.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @returns {AccessContext}
   */
 @js.native
-trait Context extends js.Object {
+trait Context extends StObject {
   
   /** The access type */
   var accesType: String = js.native
@@ -62,45 +63,33 @@ object Context {
   }
   
   @scala.inline
-  implicit class ContextOps[Self <: Context] (val x: Self) extends AnyVal {
+  implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccesType(value: String): Self = StObject.set(x, "accesType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessToken(value: AccessToken): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccesType(value: String): Self = this.set("accesType", value.asInstanceOf[js.Any])
+    def setModel(value: () => Unit): Self = StObject.set(x, "model", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAccessToken(value: AccessToken): Self = this.set("accessToken", value.asInstanceOf[js.Any])
+    def setModelId(value: String): Self = StObject.set(x, "modelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: () => Unit): Self = this.set("model", js.Any.fromFunction0(value))
+    def setPrincipals(value: js.Array[Principal]): Self = StObject.set(x, "principals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelId(value: String): Self = this.set("modelId", value.asInstanceOf[js.Any])
+    def setPrincipalsVarargs(value: Principal*): Self = StObject.set(x, "principals", js.Array(value :_*))
     
     @scala.inline
-    def setModelName(value: String): Self = this.set("modelName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrincipalsVarargs(value: Principal*): Self = this.set("principals", js.Array(value :_*))
-    
-    @scala.inline
-    def setPrincipals(value: js.Array[Principal]): Self = this.set("principals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperty(value: String): Self = this.set("property", value.asInstanceOf[js.Any])
+    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
   }
 }

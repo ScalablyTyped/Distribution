@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrganizationConfigRule extends js.Object {
+trait OrganizationConfigRule extends StObject {
   
   /**
     * A comma-separated list of accounts excluded from organization config rule.
@@ -49,51 +50,39 @@ object OrganizationConfigRule {
   }
   
   @scala.inline
-  implicit class OrganizationConfigRuleOps[Self <: OrganizationConfigRule] (val x: Self) extends AnyVal {
+  implicit class OrganizationConfigRuleMutableBuilder[Self <: OrganizationConfigRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludedAccounts(value: ExcludedAccounts): Self = StObject.set(x, "ExcludedAccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludedAccountsUndefined: Self = StObject.set(x, "ExcludedAccounts", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedAccountsVarargs(value: AccountId*): Self = StObject.set(x, "ExcludedAccounts", js.Array(value :_*))
     
     @scala.inline
-    def setOrganizationConfigRuleArn(value: StringWithCharLimit256): Self = this.set("OrganizationConfigRuleArn", value.asInstanceOf[js.Any])
+    def setLastUpdateTime(value: Date): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizationConfigRuleName(value: OrganizationConfigRuleName): Self = this.set("OrganizationConfigRuleName", value.asInstanceOf[js.Any])
+    def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
     
     @scala.inline
-    def setExcludedAccountsVarargs(value: AccountId*): Self = this.set("ExcludedAccounts", js.Array(value :_*))
+    def setOrganizationConfigRuleArn(value: StringWithCharLimit256): Self = StObject.set(x, "OrganizationConfigRuleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedAccounts(value: ExcludedAccounts): Self = this.set("ExcludedAccounts", value.asInstanceOf[js.Any])
+    def setOrganizationConfigRuleName(value: OrganizationConfigRuleName): Self = StObject.set(x, "OrganizationConfigRuleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExcludedAccounts: Self = this.set("ExcludedAccounts", js.undefined)
+    def setOrganizationCustomRuleMetadata(value: OrganizationCustomRuleMetadata): Self = StObject.set(x, "OrganizationCustomRuleMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdateTime(value: Date): Self = this.set("LastUpdateTime", value.asInstanceOf[js.Any])
+    def setOrganizationCustomRuleMetadataUndefined: Self = StObject.set(x, "OrganizationCustomRuleMetadata", js.undefined)
     
     @scala.inline
-    def deleteLastUpdateTime: Self = this.set("LastUpdateTime", js.undefined)
+    def setOrganizationManagedRuleMetadata(value: OrganizationManagedRuleMetadata): Self = StObject.set(x, "OrganizationManagedRuleMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizationCustomRuleMetadata(value: OrganizationCustomRuleMetadata): Self = this.set("OrganizationCustomRuleMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrganizationCustomRuleMetadata: Self = this.set("OrganizationCustomRuleMetadata", js.undefined)
-    
-    @scala.inline
-    def setOrganizationManagedRuleMetadata(value: OrganizationManagedRuleMetadata): Self = this.set("OrganizationManagedRuleMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrganizationManagedRuleMetadata: Self = this.set("OrganizationManagedRuleMetadata", js.undefined)
+    def setOrganizationManagedRuleMetadataUndefined: Self = StObject.set(x, "OrganizationManagedRuleMetadata", js.undefined)
   }
 }

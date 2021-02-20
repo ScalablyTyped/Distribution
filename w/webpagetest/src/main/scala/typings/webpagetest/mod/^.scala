@@ -1,5 +1,6 @@
 package typings.webpagetest.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,15 +18,4 @@ class ^ () extends WebPageTest {
 }
 @JSImport("webpagetest", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  
-  var defaultListenPort: Double = js.native
-  
-  var defaultServer: String = js.native
-  
-  var defaultWaitResultsPort: Double = js.native
-  
-  def scriptToString(script: TestScript): String = js.native
-  
-  var version: String = js.native
-}
+object ^ extends StObject

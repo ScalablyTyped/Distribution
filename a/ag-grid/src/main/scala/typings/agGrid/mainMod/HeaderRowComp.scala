@@ -2,6 +2,7 @@ package typings.agGrid.mainMod
 
 import typings.agGrid.dragAndDropServiceMod.DropTarget
 import typings.agGrid.headerRowCompMod.HeaderRowType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

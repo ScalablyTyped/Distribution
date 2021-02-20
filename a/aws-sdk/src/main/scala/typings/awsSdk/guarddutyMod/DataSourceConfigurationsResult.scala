@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSourceConfigurationsResult extends js.Object {
+trait DataSourceConfigurationsResult extends StObject {
   
   /**
     * An object that contains information on the status of CloudTrail as a data source.
@@ -41,30 +42,18 @@ object DataSourceConfigurationsResult {
   }
   
   @scala.inline
-  implicit class DataSourceConfigurationsResultOps[Self <: DataSourceConfigurationsResult] (val x: Self) extends AnyVal {
+  implicit class DataSourceConfigurationsResultMutableBuilder[Self <: DataSourceConfigurationsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudTrail(value: CloudTrailConfigurationResult): Self = StObject.set(x, "CloudTrail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDNSLogs(value: DNSLogsConfigurationResult): Self = StObject.set(x, "DNSLogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlowLogs(value: FlowLogsConfigurationResult): Self = StObject.set(x, "FlowLogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudTrail(value: CloudTrailConfigurationResult): Self = this.set("CloudTrail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDNSLogs(value: DNSLogsConfigurationResult): Self = this.set("DNSLogs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFlowLogs(value: FlowLogsConfigurationResult): Self = this.set("FlowLogs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setS3Logs(value: S3LogsConfigurationResult): Self = this.set("S3Logs", value.asInstanceOf[js.Any])
+    def setS3Logs(value: S3LogsConfigurationResult): Self = StObject.set(x, "S3Logs", value.asInstanceOf[js.Any])
   }
 }

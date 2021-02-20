@@ -4,6 +4,7 @@ import typings.reactNative.reactNativeStrings.readystatechange
 import typings.std.Document
 import typings.std.Event
 import typings.std.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

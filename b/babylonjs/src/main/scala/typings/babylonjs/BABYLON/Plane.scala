@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Plane extends js.Object {
+trait Plane extends StObject {
   
   /**
     * @returns the plane coordinates as a new array of 4 elements [a, b, c, d].
@@ -100,51 +101,39 @@ object Plane {
   }
   
   @scala.inline
-  implicit class PlaneOps[Self <: Plane] (val x: Self) extends AnyVal {
+  implicit class PlaneMutableBuilder[Self <: Plane] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsArray(value: () => js.Array[Double]): Self = StObject.set(x, "asArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyFromPoints(value: (DeepImmutable[Vector3], DeepImmutable[Vector3], DeepImmutable[Vector3]) => Plane): Self = StObject.set(x, "copyFromPoints", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsArray(value: () => js.Array[Double]): Self = this.set("asArray", js.Any.fromFunction0(value))
+    def setDotCoordinate(value: DeepImmutable[Vector3] => Double): Self = StObject.set(x, "dotCoordinate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCopyFromPoints(value: (DeepImmutable[Vector3], DeepImmutable[Vector3], DeepImmutable[Vector3]) => Plane): Self = this.set("copyFromPoints", js.Any.fromFunction3(value))
+    def setGetClassName(value: () => String): Self = StObject.set(x, "getClassName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setD(value: Double): Self = this.set("d", value.asInstanceOf[js.Any])
+    def setGetHashCode(value: () => Double): Self = StObject.set(x, "getHashCode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDotCoordinate(value: DeepImmutable[Vector3] => Double): Self = this.set("dotCoordinate", js.Any.fromFunction1(value))
+    def setIsFrontFacingTo(value: (DeepImmutable[Vector3], Double) => Boolean): Self = StObject.set(x, "isFrontFacingTo", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetClassName(value: () => String): Self = this.set("getClassName", js.Any.fromFunction0(value))
+    def setNormal(value: Vector3): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetHashCode(value: () => Double): Self = this.set("getHashCode", js.Any.fromFunction0(value))
+    def setNormalize(value: () => Plane): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsFrontFacingTo(value: (DeepImmutable[Vector3], Double) => Boolean): Self = this.set("isFrontFacingTo", js.Any.fromFunction2(value))
+    def setSignedDistanceTo(value: DeepImmutable[Vector3] => Double): Self = StObject.set(x, "signedDistanceTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNormal(value: Vector3): Self = this.set("normal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNormalize(value: () => Plane): Self = this.set("normalize", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSignedDistanceTo(value: DeepImmutable[Vector3] => Double): Self = this.set("signedDistanceTo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTransform(value: DeepImmutable[Matrix] => Plane): Self = this.set("transform", js.Any.fromFunction1(value))
+    def setTransform(value: DeepImmutable[Matrix] => Plane): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
   }
 }

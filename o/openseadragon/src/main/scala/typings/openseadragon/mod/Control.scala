@@ -1,13 +1,14 @@
 package typings.openseadragon.mod
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openseadragon", "Control")
 @js.native
-class Control protected () extends js.Object {
+class Control protected () extends StObject {
   def this(element: Element, options: TControlOptions, container: Element) = this()
   
   var anchor: ControlAnchor = js.native

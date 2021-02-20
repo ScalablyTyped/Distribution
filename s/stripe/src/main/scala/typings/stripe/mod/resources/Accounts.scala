@@ -7,6 +7,7 @@ import typings.stripe.mod.IList
 import typings.stripe.mod.IListOptions
 import typings.stripe.mod.IListPromise
 import typings.stripe.mod.IResponseFn
+import typings.stripe.mod.Stripe
 import typings.stripe.mod.StripeResource
 import typings.stripe.mod.accounts.IAccount
 import typings.stripe.mod.accounts.IAccountCreationOptions
@@ -24,13 +25,15 @@ import typings.stripe.mod.accounts.IRejectReason
 import typings.stripe.mod.bankAccounts.IBankAccount
 import typings.stripe.mod.cards.ICard
 import typings.stripe.mod.cards.ICardUpdateOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Accounts")
 @js.native
-class Accounts () extends StripeResource {
+class Accounts protected () extends StripeResource {
+  def this(stripe: Stripe, urlData: js.Any) = this()
   
   def create(data: IAccountCreationOptions): js.Promise[IAccount] = js.native
   /**

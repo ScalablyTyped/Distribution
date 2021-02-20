@@ -1,11 +1,12 @@
 package typings.vueTemplateCompiler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModuleOptions extends js.Object {
+trait ModuleOptions extends StObject {
   
   def genData(el: ASTElement): String = js.native
   
@@ -33,45 +34,33 @@ object ModuleOptions {
   }
   
   @scala.inline
-  implicit class ModuleOptionsOps[Self <: ModuleOptions] (val x: Self) extends AnyVal {
+  implicit class ModuleOptionsMutableBuilder[Self <: ModuleOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGenData(value: ASTElement => String): Self = StObject.set(x, "genData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPostTransformNode(value: ASTElement => Unit): Self = StObject.set(x, "postTransformNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreTransformNode(value: ASTElement => js.UndefOr[ASTElement]): Self = StObject.set(x, "preTransformNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGenData(value: ASTElement => String): Self = this.set("genData", js.Any.fromFunction1(value))
+    def setStaticKeys(value: js.Array[String]): Self = StObject.set(x, "staticKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostTransformNode(value: ASTElement => Unit): Self = this.set("postTransformNode", js.Any.fromFunction1(value))
+    def setStaticKeysUndefined: Self = StObject.set(x, "staticKeys", js.undefined)
     
     @scala.inline
-    def setPreTransformNode(value: ASTElement => js.UndefOr[ASTElement]): Self = this.set("preTransformNode", js.Any.fromFunction1(value))
+    def setStaticKeysVarargs(value: String*): Self = StObject.set(x, "staticKeys", js.Array(value :_*))
     
     @scala.inline
-    def setTransformNode(value: ASTElement => js.UndefOr[ASTElement]): Self = this.set("transformNode", js.Any.fromFunction1(value))
+    def setTransformCode(value: (/* el */ ASTElement, /* code */ String) => String): Self = StObject.set(x, "transformCode", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setStaticKeysVarargs(value: String*): Self = this.set("staticKeys", js.Array(value :_*))
+    def setTransformCodeUndefined: Self = StObject.set(x, "transformCode", js.undefined)
     
     @scala.inline
-    def setStaticKeys(value: js.Array[String]): Self = this.set("staticKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStaticKeys: Self = this.set("staticKeys", js.undefined)
-    
-    @scala.inline
-    def setTransformCode(value: (/* el */ ASTElement, /* code */ String) => String): Self = this.set("transformCode", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteTransformCode: Self = this.set("transformCode", js.undefined)
+    def setTransformNode(value: ASTElement => js.UndefOr[ASTElement]): Self = StObject.set(x, "transformNode", js.Any.fromFunction1(value))
   }
 }

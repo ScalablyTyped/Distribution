@@ -1,12 +1,13 @@
 package typings.mithril.mod
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Route extends js.Object {
+trait Route extends StObject {
   
   /** Creates application routes and mounts Components and/or RouteResolvers to a DOM element. */
   def apply(element: Element, defaultRoute: String, routes: RouteDefs): Unit = js.native

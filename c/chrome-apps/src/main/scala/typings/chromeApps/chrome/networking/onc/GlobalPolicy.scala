@@ -1,11 +1,12 @@
 package typings.chromeApps.chrome.networking.onc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlobalPolicy extends js.Object {
+trait GlobalPolicy extends StObject {
   
   /**
     * If true, only policy networks may auto connect.
@@ -37,39 +38,27 @@ object GlobalPolicy {
   }
   
   @scala.inline
-  implicit class GlobalPolicyOps[Self <: GlobalPolicy] (val x: Self) extends AnyVal {
+  implicit class GlobalPolicyMutableBuilder[Self <: GlobalPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowOnlyPolicyNetworksToAutoconnect(value: Boolean): Self = StObject.set(x, "AllowOnlyPolicyNetworksToAutoconnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowOnlyPolicyNetworksToAutoconnectUndefined: Self = StObject.set(x, "AllowOnlyPolicyNetworksToAutoconnect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowOnlyPolicyNetworksToConnect(value: Boolean): Self = StObject.set(x, "AllowOnlyPolicyNetworksToConnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowOnlyPolicyNetworksToAutoconnect(value: Boolean): Self = this.set("AllowOnlyPolicyNetworksToAutoconnect", value.asInstanceOf[js.Any])
+    def setAllowOnlyPolicyNetworksToConnectUndefined: Self = StObject.set(x, "AllowOnlyPolicyNetworksToConnect", js.undefined)
     
     @scala.inline
-    def deleteAllowOnlyPolicyNetworksToAutoconnect: Self = this.set("AllowOnlyPolicyNetworksToAutoconnect", js.undefined)
+    def setBlacklistedHexSSIDs(value: js.Array[String]): Self = StObject.set(x, "BlacklistedHexSSIDs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowOnlyPolicyNetworksToConnect(value: Boolean): Self = this.set("AllowOnlyPolicyNetworksToConnect", value.asInstanceOf[js.Any])
+    def setBlacklistedHexSSIDsUndefined: Self = StObject.set(x, "BlacklistedHexSSIDs", js.undefined)
     
     @scala.inline
-    def deleteAllowOnlyPolicyNetworksToConnect: Self = this.set("AllowOnlyPolicyNetworksToConnect", js.undefined)
-    
-    @scala.inline
-    def setBlacklistedHexSSIDsVarargs(value: String*): Self = this.set("BlacklistedHexSSIDs", js.Array(value :_*))
-    
-    @scala.inline
-    def setBlacklistedHexSSIDs(value: js.Array[String]): Self = this.set("BlacklistedHexSSIDs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBlacklistedHexSSIDs: Self = this.set("BlacklistedHexSSIDs", js.undefined)
+    def setBlacklistedHexSSIDsVarargs(value: String*): Self = StObject.set(x, "BlacklistedHexSSIDs", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * backend service.
   */
 @js.native
-trait SchemaClientTlsSettings extends js.Object {
+trait SchemaClientTlsSettings extends StObject {
   
   /**
     * Configures the mechanism to obtain client-side security certificates and
@@ -51,45 +52,33 @@ object SchemaClientTlsSettings {
   }
   
   @scala.inline
-  implicit class SchemaClientTlsSettingsOps[Self <: SchemaClientTlsSettings] (val x: Self) extends AnyVal {
+  implicit class SchemaClientTlsSettingsMutableBuilder[Self <: SchemaClientTlsSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientTlsContext(value: SchemaTlsContext): Self = StObject.set(x, "clientTlsContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientTlsContextUndefined: Self = StObject.set(x, "clientTlsContext", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientTlsContext(value: SchemaTlsContext): Self = this.set("clientTlsContext", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteClientTlsContext: Self = this.set("clientTlsContext", js.undefined)
+    def setSni(value: String): Self = StObject.set(x, "sni", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setSniUndefined: Self = StObject.set(x, "sni", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setSubjectAltNames(value: js.Array[String]): Self = StObject.set(x, "subjectAltNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSni(value: String): Self = this.set("sni", value.asInstanceOf[js.Any])
+    def setSubjectAltNamesUndefined: Self = StObject.set(x, "subjectAltNames", js.undefined)
     
     @scala.inline
-    def deleteSni: Self = this.set("sni", js.undefined)
-    
-    @scala.inline
-    def setSubjectAltNamesVarargs(value: String*): Self = this.set("subjectAltNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubjectAltNames(value: js.Array[String]): Self = this.set("subjectAltNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubjectAltNames: Self = this.set("subjectAltNames", js.undefined)
+    def setSubjectAltNamesVarargs(value: String*): Self = StObject.set(x, "subjectAltNames", js.Array(value :_*))
   }
 }

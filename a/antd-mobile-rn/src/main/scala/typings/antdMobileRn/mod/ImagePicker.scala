@@ -3,6 +3,7 @@ package typings.antdMobileRn.mod
 import typings.antdMobileRn.anon.Files
 import typings.antdMobileRn.imagePickerIndexNativeMod.ImagePickerNativeProps
 import typings.antdMobileRn.imagePickerIndexNativeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +14,15 @@ class ImagePicker protected () extends default {
   def this(props: ImagePickerNativeProps) = this()
 }
 /* static members */
-@JSImport("antd-mobile-rn", "ImagePicker")
-@js.native
-object ImagePicker extends js.Object {
+object ImagePicker {
   
-  var defaultProps: Files = js.native
+  @JSImport("antd-mobile-rn", "ImagePicker")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile-rn", "ImagePicker.defaultProps")
+  @js.native
+  def defaultProps: Files = js.native
+  @scala.inline
+  def defaultProps_=(x: Files): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

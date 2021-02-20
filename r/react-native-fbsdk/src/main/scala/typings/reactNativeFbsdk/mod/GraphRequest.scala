@@ -1,12 +1,13 @@
 package typings.reactNativeFbsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-fbsdk", "GraphRequest")
 @js.native
-class GraphRequest protected () extends js.Object {
+class GraphRequest protected () extends StObject {
   /**
     * Constructs a new Graph API request.
     */

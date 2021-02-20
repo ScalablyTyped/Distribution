@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.i18n
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A sequence of CalendarItems is contained in {@link Calendar.Days} , {@link Calendar.Months} , {@link Calendar.Eras}
   */
 @js.native
-trait CalendarItem extends js.Object {
+trait CalendarItem extends StObject {
   
   var AbbrevName: String = js.native
   
@@ -28,27 +29,15 @@ object CalendarItem {
   }
   
   @scala.inline
-  implicit class CalendarItemOps[Self <: CalendarItem] (val x: Self) extends AnyVal {
+  implicit class CalendarItemMutableBuilder[Self <: CalendarItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbbrevName(value: String): Self = StObject.set(x, "AbbrevName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAbbrevName(value: String): Self = this.set("AbbrevName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFullName(value: String): Self = this.set("FullName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setID(value: String): Self = this.set("ID", value.asInstanceOf[js.Any])
+    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
   }
 }

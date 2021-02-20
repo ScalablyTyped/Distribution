@@ -1,13 +1,14 @@
 package typings.officeUiFabricReact.anon
 
 import typings.officeUiFabricReact.buttonTypesMod.IButtonProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/SearchBox/SearchBox.types.ISearchBoxProps, 'disableAnimation' | 'clearButtonProps'> */
 @js.native
-trait PickISearchBoxPropsdisabl extends js.Object {
+trait PickISearchBoxPropsdisabl extends StObject {
   
   var clearButtonProps: js.UndefOr[IButtonProps] = js.native
   
@@ -22,30 +23,18 @@ object PickISearchBoxPropsdisabl {
   }
   
   @scala.inline
-  implicit class PickISearchBoxPropsdisablOps[Self <: PickISearchBoxPropsdisabl] (val x: Self) extends AnyVal {
+  implicit class PickISearchBoxPropsdisablMutableBuilder[Self <: PickISearchBoxPropsdisabl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearButtonProps(value: IButtonProps): Self = StObject.set(x, "clearButtonProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearButtonPropsUndefined: Self = StObject.set(x, "clearButtonProps", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableAnimation(value: Boolean): Self = StObject.set(x, "disableAnimation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearButtonProps(value: IButtonProps): Self = this.set("clearButtonProps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClearButtonProps: Self = this.set("clearButtonProps", js.undefined)
-    
-    @scala.inline
-    def setDisableAnimation(value: Boolean): Self = this.set("disableAnimation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisableAnimation: Self = this.set("disableAnimation", js.undefined)
+    def setDisableAnimationUndefined: Self = StObject.set(x, "disableAnimation", js.undefined)
   }
 }

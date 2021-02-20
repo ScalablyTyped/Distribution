@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentCanarySettings extends js.Object {
+trait DeploymentCanarySettings extends StObject {
   
   /**
     * The percentage (0.0-100.0) of traffic routed to the canary deployment.
@@ -31,36 +32,24 @@ object DeploymentCanarySettings {
   }
   
   @scala.inline
-  implicit class DeploymentCanarySettingsOps[Self <: DeploymentCanarySettings] (val x: Self) extends AnyVal {
+  implicit class DeploymentCanarySettingsMutableBuilder[Self <: DeploymentCanarySettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPercentTraffic(value: Double): Self = StObject.set(x, "percentTraffic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPercentTrafficUndefined: Self = StObject.set(x, "percentTraffic", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStageVariableOverrides(value: MapOfStringToString): Self = StObject.set(x, "stageVariableOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentTraffic(value: Double): Self = this.set("percentTraffic", value.asInstanceOf[js.Any])
+    def setStageVariableOverridesUndefined: Self = StObject.set(x, "stageVariableOverrides", js.undefined)
     
     @scala.inline
-    def deletePercentTraffic: Self = this.set("percentTraffic", js.undefined)
+    def setUseStageCache(value: Boolean): Self = StObject.set(x, "useStageCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStageVariableOverrides(value: MapOfStringToString): Self = this.set("stageVariableOverrides", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStageVariableOverrides: Self = this.set("stageVariableOverrides", js.undefined)
-    
-    @scala.inline
-    def setUseStageCache(value: Boolean): Self = this.set("useStageCache", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseStageCache: Self = this.set("useStageCache", js.undefined)
+    def setUseStageCacheUndefined: Self = StObject.set(x, "useStageCache", js.undefined)
   }
 }

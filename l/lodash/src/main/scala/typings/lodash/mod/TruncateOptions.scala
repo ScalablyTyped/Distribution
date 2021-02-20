@@ -1,12 +1,13 @@
 package typings.lodash.mod
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TruncateOptions extends js.Object {
+trait TruncateOptions extends StObject {
   
   /**
     * @see _.length
@@ -32,36 +33,24 @@ object TruncateOptions {
   }
   
   @scala.inline
-  implicit class TruncateOptionsOps[Self <: TruncateOptions] (val x: Self) extends AnyVal {
+  implicit class TruncateOptionsMutableBuilder[Self <: TruncateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOmission(value: java.lang.String): Self = StObject.set(x, "omission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setOmissionUndefined: Self = StObject.set(x, "omission", js.undefined)
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setSeparator(value: java.lang.String | RegExp): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOmission(value: java.lang.String): Self = this.set("omission", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOmission: Self = this.set("omission", js.undefined)
-    
-    @scala.inline
-    def setSeparator(value: java.lang.String | RegExp): Self = this.set("separator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeparator: Self = this.set("separator", js.undefined)
+    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
   }
 }

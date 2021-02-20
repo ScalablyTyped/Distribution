@@ -1,12 +1,13 @@
 package typings.stremioAddonSdk.mod
 
 import typings.stremioAddonSdk.anon.Adult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Manifest extends js.Object {
+trait Manifest extends StObject {
   
   /**
     * Array of Catalog objects, a list of other addon manifests.
@@ -101,90 +102,78 @@ object Manifest {
   }
   
   @scala.inline
-  implicit class ManifestOps[Self <: Manifest] (val x: Self) extends AnyVal {
+  implicit class ManifestMutableBuilder[Self <: Manifest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddonCatalogs(value: js.Array[ManifestCatalog]): Self = StObject.set(x, "addonCatalogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddonCatalogsUndefined: Self = StObject.set(x, "addonCatalogs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddonCatalogsVarargs(value: ManifestCatalog*): Self = StObject.set(x, "addonCatalogs", js.Array(value :_*))
     
     @scala.inline
-    def setCatalogsVarargs(value: ManifestCatalog*): Self = this.set("catalogs", js.Array(value :_*))
+    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalogs(value: js.Array[ManifestCatalog]): Self = this.set("catalogs", value.asInstanceOf[js.Any])
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setBehaviorHints(value: Adult): Self = StObject.set(x, "behaviorHints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setBehaviorHintsUndefined: Self = StObject.set(x, "behaviorHints", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setCatalogs(value: js.Array[ManifestCatalog]): Self = StObject.set(x, "catalogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourcesVarargs(value: (FullManifestResource | ShortManifestResource)*): Self = this.set("resources", js.Array(value :_*))
+    def setCatalogsVarargs(value: ManifestCatalog*): Self = StObject.set(x, "catalogs", js.Array(value :_*))
     
     @scala.inline
-    def setResources(value: js.Array[FullManifestResource | ShortManifestResource]): Self = this.set("resources", value.asInstanceOf[js.Any])
+    def setContactEmail(value: String): Self = StObject.set(x, "contactEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypesVarargs(value: ContentType*): Self = this.set("types", js.Array(value :_*))
+    def setContactEmailUndefined: Self = StObject.set(x, "contactEmail", js.undefined)
     
     @scala.inline
-    def setTypes(value: js.Array[ContentType]): Self = this.set("types", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddonCatalogsVarargs(value: ManifestCatalog*): Self = this.set("addonCatalogs", js.Array(value :_*))
+    def setIdPrefixes(value: js.Array[String]): Self = StObject.set(x, "idPrefixes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddonCatalogs(value: js.Array[ManifestCatalog]): Self = this.set("addonCatalogs", value.asInstanceOf[js.Any])
+    def setIdPrefixesUndefined: Self = StObject.set(x, "idPrefixes", js.undefined)
     
     @scala.inline
-    def deleteAddonCatalogs: Self = this.set("addonCatalogs", js.undefined)
+    def setIdPrefixesVarargs(value: String*): Self = StObject.set(x, "idPrefixes", js.Array(value :_*))
     
     @scala.inline
-    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
     @scala.inline
-    def setBehaviorHints(value: Adult): Self = this.set("behaviorHints", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBehaviorHints: Self = this.set("behaviorHints", js.undefined)
+    def setResources(value: js.Array[FullManifestResource | ShortManifestResource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactEmail(value: String): Self = this.set("contactEmail", value.asInstanceOf[js.Any])
+    def setResourcesVarargs(value: (FullManifestResource | ShortManifestResource)*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
     @scala.inline
-    def deleteContactEmail: Self = this.set("contactEmail", js.undefined)
+    def setTypes(value: js.Array[ContentType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdPrefixesVarargs(value: String*): Self = this.set("idPrefixes", js.Array(value :_*))
+    def setTypesVarargs(value: ContentType*): Self = StObject.set(x, "types", js.Array(value :_*))
     
     @scala.inline
-    def setIdPrefixes(value: js.Array[String]): Self = this.set("idPrefixes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdPrefixes: Self = this.set("idPrefixes", js.undefined)
-    
-    @scala.inline
-    def setLogo(value: String): Self = this.set("logo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogo: Self = this.set("logo", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

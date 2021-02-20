@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetAlarmStateInput extends js.Object {
+trait SetAlarmStateInput extends StObject {
   
   /**
     * The name of the alarm.
@@ -36,33 +37,21 @@ object SetAlarmStateInput {
   }
   
   @scala.inline
-  implicit class SetAlarmStateInputOps[Self <: SetAlarmStateInput] (val x: Self) extends AnyVal {
+  implicit class SetAlarmStateInputMutableBuilder[Self <: SetAlarmStateInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlarmName(value: AlarmName): Self = StObject.set(x, "AlarmName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStateReason(value: StateReason): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStateReasonData(value: StateReasonData): Self = StObject.set(x, "StateReasonData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlarmName(value: AlarmName): Self = this.set("AlarmName", value.asInstanceOf[js.Any])
+    def setStateReasonDataUndefined: Self = StObject.set(x, "StateReasonData", js.undefined)
     
     @scala.inline
-    def setStateReason(value: StateReason): Self = this.set("StateReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStateValue(value: StateValue): Self = this.set("StateValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStateReasonData(value: StateReasonData): Self = this.set("StateReasonData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateReasonData: Self = this.set("StateReasonData", js.undefined)
+    def setStateValue(value: StateValue): Self = StObject.set(x, "StateValue", value.asInstanceOf[js.Any])
   }
 }

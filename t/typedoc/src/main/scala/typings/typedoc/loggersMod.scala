@@ -1,15 +1,14 @@
 package typings.typedoc
 
-import org.scalablytyped.runtime.TopLevel
 import typings.typescript.mod.Diagnostic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/utils/loggers", JSImport.Namespace)
-@js.native
-object loggersMod extends js.Object {
+object loggersMod {
   
+  @JSImport("typedoc/dist/lib/utils/loggers", "CallbackLogger")
   @js.native
   class CallbackLogger protected () extends Logger {
     def this(callback: js.Function) = this()
@@ -17,45 +16,43 @@ object loggersMod extends js.Object {
     var callback: js.Function = js.native
   }
   
+  @JSImport("typedoc/dist/lib/utils/loggers", "ConsoleLogger")
   @js.native
   class ConsoleLogger () extends Logger
   
   @js.native
-  sealed trait LogLevel extends js.Object
+  sealed trait LogLevel extends StObject
+  @JSImport("typedoc/dist/lib/utils/loggers", "LogLevel")
   @js.native
-  object LogLevel extends js.Object {
+  object LogLevel extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[LogLevel with Double] = js.native
     
     @js.native
     sealed trait Error extends LogLevel
-    /* 3 */ @js.native
-    object Error extends TopLevel[Error with Double]
+    /* 3 */ val Error: typings.typedoc.loggersMod.LogLevel.Error with Double = js.native
     
     @js.native
     sealed trait Info extends LogLevel
-    /* 1 */ @js.native
-    object Info extends TopLevel[Info with Double]
+    /* 1 */ val Info: typings.typedoc.loggersMod.LogLevel.Info with Double = js.native
     
     @js.native
     sealed trait Success extends LogLevel
-    /* 4 */ @js.native
-    object Success extends TopLevel[Success with Double]
+    /* 4 */ val Success: typings.typedoc.loggersMod.LogLevel.Success with Double = js.native
     
     @js.native
     sealed trait Verbose extends LogLevel
-    /* 0 */ @js.native
-    object Verbose extends TopLevel[Verbose with Double]
+    /* 0 */ val Verbose: typings.typedoc.loggersMod.LogLevel.Verbose with Double = js.native
     
     @js.native
     sealed trait Warn extends LogLevel
-    /* 2 */ @js.native
-    object Warn extends TopLevel[Warn with Double]
+    /* 2 */ val Warn: typings.typedoc.loggersMod.LogLevel.Warn with Double = js.native
   }
   
+  @JSImport("typedoc/dist/lib/utils/loggers", "Logger")
   @js.native
-  class Logger () extends js.Object {
+  class Logger () extends StObject {
     
     def diagnostic(diagnostic: Diagnostic): Unit = js.native
     

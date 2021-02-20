@@ -1,12 +1,13 @@
 package typings.ejWebAll.global.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.ImagePosition")
 @js.native
-object ImagePosition extends js.Object {
+object ImagePosition extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.ImagePosition with Double] = js.native

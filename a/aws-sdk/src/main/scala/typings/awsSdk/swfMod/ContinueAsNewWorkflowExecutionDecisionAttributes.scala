@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContinueAsNewWorkflowExecutionDecisionAttributes extends js.Object {
+trait ContinueAsNewWorkflowExecutionDecisionAttributes extends StObject {
   
   /**
     * If set, specifies the policy to use for the child workflow executions of the new execution if it is terminated by calling the TerminateWorkflowExecution action explicitly or due to an expired timeout. This policy overrides the default child policy specified when registering the workflow type using RegisterWorkflowType. The supported child policies are:    TERMINATE – The child executions are terminated.    REQUEST_CANCEL – A request to cancel is attempted for each child execution by recording a WorkflowExecutionCancelRequested event in its history. It is up to the decider to take appropriate actions when it receives an execution history with this event.    ABANDON – No action is taken. The child executions continue to run.    A child policy for this workflow execution must be specified either as a default for the workflow type or through this parameter. If neither this parameter is set nor a default child policy was specified at registration time then a fault is returned. 
@@ -61,75 +62,63 @@ object ContinueAsNewWorkflowExecutionDecisionAttributes {
   }
   
   @scala.inline
-  implicit class ContinueAsNewWorkflowExecutionDecisionAttributesOps[Self <: ContinueAsNewWorkflowExecutionDecisionAttributes] (val x: Self) extends AnyVal {
+  implicit class ContinueAsNewWorkflowExecutionDecisionAttributesMutableBuilder[Self <: ContinueAsNewWorkflowExecutionDecisionAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildPolicy(value: ChildPolicy): Self = StObject.set(x, "childPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildPolicyUndefined: Self = StObject.set(x, "childPolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "executionStartToCloseTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildPolicy(value: ChildPolicy): Self = this.set("childPolicy", value.asInstanceOf[js.Any])
+    def setExecutionStartToCloseTimeoutUndefined: Self = StObject.set(x, "executionStartToCloseTimeout", js.undefined)
     
     @scala.inline
-    def deleteChildPolicy: Self = this.set("childPolicy", js.undefined)
+    def setInput(value: Data): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionStartToCloseTimeout(value: DurationInSecondsOptional): Self = this.set("executionStartToCloseTimeout", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def deleteExecutionStartToCloseTimeout: Self = this.set("executionStartToCloseTimeout", js.undefined)
+    def setLambdaRole(value: Arn): Self = StObject.set(x, "lambdaRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: Data): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setLambdaRoleUndefined: Self = StObject.set(x, "lambdaRole", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setTagList(value: TagList): Self = StObject.set(x, "tagList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLambdaRole(value: Arn): Self = this.set("lambdaRole", value.asInstanceOf[js.Any])
+    def setTagListUndefined: Self = StObject.set(x, "tagList", js.undefined)
     
     @scala.inline
-    def deleteLambdaRole: Self = this.set("lambdaRole", js.undefined)
+    def setTagListVarargs(value: Tag*): Self = StObject.set(x, "tagList", js.Array(value :_*))
     
     @scala.inline
-    def setTagListVarargs(value: Tag*): Self = this.set("tagList", js.Array(value :_*))
+    def setTaskList(value: TaskList): Self = StObject.set(x, "taskList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagList(value: TagList): Self = this.set("tagList", value.asInstanceOf[js.Any])
+    def setTaskListUndefined: Self = StObject.set(x, "taskList", js.undefined)
     
     @scala.inline
-    def deleteTagList: Self = this.set("tagList", js.undefined)
+    def setTaskPriority(value: TaskPriority): Self = StObject.set(x, "taskPriority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskList(value: TaskList): Self = this.set("taskList", value.asInstanceOf[js.Any])
+    def setTaskPriorityUndefined: Self = StObject.set(x, "taskPriority", js.undefined)
     
     @scala.inline
-    def deleteTaskList: Self = this.set("taskList", js.undefined)
+    def setTaskStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "taskStartToCloseTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskPriority(value: TaskPriority): Self = this.set("taskPriority", value.asInstanceOf[js.Any])
+    def setTaskStartToCloseTimeoutUndefined: Self = StObject.set(x, "taskStartToCloseTimeout", js.undefined)
     
     @scala.inline
-    def deleteTaskPriority: Self = this.set("taskPriority", js.undefined)
+    def setWorkflowTypeVersion(value: Version): Self = StObject.set(x, "workflowTypeVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskStartToCloseTimeout(value: DurationInSecondsOptional): Self = this.set("taskStartToCloseTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskStartToCloseTimeout: Self = this.set("taskStartToCloseTimeout", js.undefined)
-    
-    @scala.inline
-    def setWorkflowTypeVersion(value: Version): Self = this.set("workflowTypeVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkflowTypeVersion: Self = this.set("workflowTypeVersion", js.undefined)
+    def setWorkflowTypeVersionUndefined: Self = StObject.set(x, "workflowTypeVersion", js.undefined)
   }
 }

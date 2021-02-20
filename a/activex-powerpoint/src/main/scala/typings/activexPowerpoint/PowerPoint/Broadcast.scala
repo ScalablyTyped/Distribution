@@ -1,11 +1,12 @@
 package typings.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Broadcast extends js.Object {
+trait Broadcast extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
@@ -40,39 +41,27 @@ object Broadcast {
   }
   
   @scala.inline
-  implicit class BroadcastOps[Self <: Broadcast] (val x: Self) extends AnyVal {
+  implicit class BroadcastMutableBuilder[Self <: Broadcast] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttendeeUrl(value: String): Self = StObject.set(x, "AttendeeUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd(value: () => Unit): Self = StObject.set(x, "End", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setIsBroadcasting(value: Boolean): Self = StObject.set(x, "IsBroadcasting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttendeeUrl(value: String): Self = this.set("AttendeeUrl", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: () => Unit): Self = this.set("End", js.Any.fromFunction0(value))
+    def setPowerPointDotBroadcast_typekey(value: Broadcast): Self = StObject.set(x, "PowerPoint.Broadcast_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBroadcasting(value: Boolean): Self = this.set("IsBroadcasting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPowerPointDotBroadcast_typekey(value: Broadcast): Self = this.set("PowerPoint.Broadcast_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: String => Unit): Self = this.set("Start", js.Any.fromFunction1(value))
+    def setStart(value: String => Unit): Self = StObject.set(x, "Start", js.Any.fromFunction1(value))
   }
 }

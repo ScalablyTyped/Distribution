@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormatProperties extends js.Object {
+trait FormatProperties extends StObject {
   
   /**
     * Contains information that describes how this Format should be converted.
@@ -65,63 +66,51 @@ object FormatProperties {
   }
   
   @scala.inline
-  implicit class FormatPropertiesOps[Self <: FormatProperties] (val x: Self) extends AnyVal {
+  implicit class FormatPropertiesMutableBuilder[Self <: FormatProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConversionInfo(value: ConversionInfo): Self = StObject.set(x, "conversionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConversionInfoUndefined: Self = StObject.set(x, "conversionInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoordinateSegments(value: js.Array[CoordinateSegment]): Self = StObject.set(x, "coordinateSegments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversionInfo(value: ConversionInfo): Self = this.set("conversionInfo", value.asInstanceOf[js.Any])
+    def setCoordinateSegmentsUndefined: Self = StObject.set(x, "coordinateSegments", js.undefined)
     
     @scala.inline
-    def deleteConversionInfo: Self = this.set("conversionInfo", js.undefined)
+    def setCoordinateSegmentsVarargs(value: CoordinateSegment*): Self = StObject.set(x, "coordinateSegments", js.Array(value :_*))
     
     @scala.inline
-    def setCoordinateSegmentsVarargs(value: CoordinateSegment*): Self = this.set("coordinateSegments", js.Array(value :_*))
+    def setCurrentPattern(value: String): Self = StObject.set(x, "currentPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoordinateSegments(value: js.Array[CoordinateSegment]): Self = this.set("coordinateSegments", value.asInstanceOf[js.Any])
+    def setCurrentPatternUndefined: Self = StObject.set(x, "currentPattern", js.undefined)
     
     @scala.inline
-    def deleteCoordinateSegments: Self = this.set("coordinateSegments", js.undefined)
+    def setDefaultPattern(value: String): Self = StObject.set(x, "defaultPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPattern(value: String): Self = this.set("currentPattern", value.asInstanceOf[js.Any])
+    def setDefaultPatternUndefined: Self = StObject.set(x, "defaultPattern", js.undefined)
     
     @scala.inline
-    def deleteCurrentPattern: Self = this.set("currentPattern", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultPattern(value: String): Self = this.set("defaultPattern", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDefaultPattern: Self = this.set("defaultPattern", js.undefined)
+    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setViewModel(value: CoordinateConversionViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = this.set("spatialReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpatialReference: Self = this.set("spatialReference", js.undefined)
-    
-    @scala.inline
-    def setViewModel(value: CoordinateConversionViewModelProperties): Self = this.set("viewModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewModel: Self = this.set("viewModel", js.undefined)
+    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
   }
 }

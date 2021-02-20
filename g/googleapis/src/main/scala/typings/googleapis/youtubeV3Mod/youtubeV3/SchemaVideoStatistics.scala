@@ -1,5 +1,6 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * viewed or liked.
   */
 @js.native
-trait SchemaVideoStatistics extends js.Object {
+trait SchemaVideoStatistics extends StObject {
   
   /**
     * The number of comments for the video.
@@ -48,48 +49,36 @@ object SchemaVideoStatistics {
   }
   
   @scala.inline
-  implicit class SchemaVideoStatisticsOps[Self <: SchemaVideoStatistics] (val x: Self) extends AnyVal {
+  implicit class SchemaVideoStatisticsMutableBuilder[Self <: SchemaVideoStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommentCount(value: String): Self = StObject.set(x, "commentCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentCountUndefined: Self = StObject.set(x, "commentCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDislikeCount(value: String): Self = StObject.set(x, "dislikeCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentCount(value: String): Self = this.set("commentCount", value.asInstanceOf[js.Any])
+    def setDislikeCountUndefined: Self = StObject.set(x, "dislikeCount", js.undefined)
     
     @scala.inline
-    def deleteCommentCount: Self = this.set("commentCount", js.undefined)
+    def setFavoriteCount(value: String): Self = StObject.set(x, "favoriteCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDislikeCount(value: String): Self = this.set("dislikeCount", value.asInstanceOf[js.Any])
+    def setFavoriteCountUndefined: Self = StObject.set(x, "favoriteCount", js.undefined)
     
     @scala.inline
-    def deleteDislikeCount: Self = this.set("dislikeCount", js.undefined)
+    def setLikeCount(value: String): Self = StObject.set(x, "likeCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFavoriteCount(value: String): Self = this.set("favoriteCount", value.asInstanceOf[js.Any])
+    def setLikeCountUndefined: Self = StObject.set(x, "likeCount", js.undefined)
     
     @scala.inline
-    def deleteFavoriteCount: Self = this.set("favoriteCount", js.undefined)
+    def setViewCount(value: String): Self = StObject.set(x, "viewCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLikeCount(value: String): Self = this.set("likeCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLikeCount: Self = this.set("likeCount", js.undefined)
-    
-    @scala.inline
-    def setViewCount(value: String): Self = this.set("viewCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewCount: Self = this.set("viewCount", js.undefined)
+    def setViewCountUndefined: Self = StObject.set(x, "viewCount", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.atom.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CursorPositionChangedEvent extends js.Object {
+trait CursorPositionChangedEvent extends StObject {
   
   var cursor: Cursor = js.native
   
@@ -35,36 +36,24 @@ object CursorPositionChangedEvent {
   }
   
   @scala.inline
-  implicit class CursorPositionChangedEventOps[Self <: CursorPositionChangedEvent] (val x: Self) extends AnyVal {
+  implicit class CursorPositionChangedEventMutableBuilder[Self <: CursorPositionChangedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCursor(value: Cursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewBufferPosition(value: Point): Self = StObject.set(x, "newBufferPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewScreenPosition(value: Point): Self = StObject.set(x, "newScreenPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursor(value: Cursor): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setOldBufferPosition(value: Point): Self = StObject.set(x, "oldBufferPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewBufferPosition(value: Point): Self = this.set("newBufferPosition", value.asInstanceOf[js.Any])
+    def setOldScreenPosition(value: Point): Self = StObject.set(x, "oldScreenPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewScreenPosition(value: Point): Self = this.set("newScreenPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldBufferPosition(value: Point): Self = this.set("oldBufferPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldScreenPosition(value: Point): Self = this.set("oldScreenPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextChanged(value: Boolean): Self = this.set("textChanged", value.asInstanceOf[js.Any])
+    def setTextChanged(value: Boolean): Self = StObject.set(x, "textChanged", value.asInstanceOf[js.Any])
   }
 }

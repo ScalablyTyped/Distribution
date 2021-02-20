@@ -5,6 +5,7 @@ import typings.node.nodeStrings.inherit
 import typings.node.nodeStrings.ipc
 import typings.node.nodeStrings.pipe
 import typings.node.streamMod.Stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,60 +36,48 @@ object ForkOptions {
   }
   
   @scala.inline
-  implicit class ForkOptionsOps[Self <: ForkOptions] (val x: Self) extends AnyVal {
+  implicit class ForkOptionsMutableBuilder[Self <: ForkOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecArgv(value: js.Array[String]): Self = StObject.set(x, "execArgv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetached(value: Boolean): Self = this.set("detached", value.asInstanceOf[js.Any])
+    def setExecArgvUndefined: Self = StObject.set(x, "execArgv", js.undefined)
     
     @scala.inline
-    def deleteDetached: Self = this.set("detached", js.undefined)
+    def setExecArgvVarargs(value: String*): Self = StObject.set(x, "execArgv", js.Array(value :_*))
     
     @scala.inline
-    def setExecArgvVarargs(value: String*): Self = this.set("execArgv", js.Array(value :_*))
+    def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecArgv(value: js.Array[String]): Self = this.set("execArgv", value.asInstanceOf[js.Any])
+    def setExecPathUndefined: Self = StObject.set(x, "execPath", js.undefined)
     
     @scala.inline
-    def deleteExecArgv: Self = this.set("execArgv", js.undefined)
+    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecPath(value: String): Self = this.set("execPath", value.asInstanceOf[js.Any])
+    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
     @scala.inline
-    def deleteExecPath: Self = this.set("execPath", js.undefined)
+    def setStdio(value: StdioOptions): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
     
     @scala.inline
-    def deleteSilent: Self = this.set("silent", js.undefined)
+    def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value :_*))
     
     @scala.inline
-    def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = this.set("stdio", js.Array(value :_*))
+    def setWindowsVerbatimArguments(value: Boolean): Self = StObject.set(x, "windowsVerbatimArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStdio(value: StdioOptions): Self = this.set("stdio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStdio: Self = this.set("stdio", js.undefined)
-    
-    @scala.inline
-    def setWindowsVerbatimArguments(value: Boolean): Self = this.set("windowsVerbatimArguments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowsVerbatimArguments: Self = this.set("windowsVerbatimArguments", js.undefined)
+    def setWindowsVerbatimArgumentsUndefined: Self = StObject.set(x, "windowsVerbatimArguments", js.undefined)
   }
 }

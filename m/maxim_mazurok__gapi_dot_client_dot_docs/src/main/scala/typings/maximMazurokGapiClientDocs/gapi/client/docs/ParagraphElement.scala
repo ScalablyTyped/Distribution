@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParagraphElement extends js.Object {
+trait ParagraphElement extends StObject {
   
   /** An auto text paragraph element. */
   var autoText: js.UndefOr[AutoText] = js.native
@@ -46,78 +47,66 @@ object ParagraphElement {
   }
   
   @scala.inline
-  implicit class ParagraphElementOps[Self <: ParagraphElement] (val x: Self) extends AnyVal {
+  implicit class ParagraphElementMutableBuilder[Self <: ParagraphElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoText(value: AutoText): Self = StObject.set(x, "autoText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoTextUndefined: Self = StObject.set(x, "autoText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnBreak(value: ColumnBreak): Self = StObject.set(x, "columnBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoText(value: AutoText): Self = this.set("autoText", value.asInstanceOf[js.Any])
+    def setColumnBreakUndefined: Self = StObject.set(x, "columnBreak", js.undefined)
     
     @scala.inline
-    def deleteAutoText: Self = this.set("autoText", js.undefined)
+    def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnBreak(value: ColumnBreak): Self = this.set("columnBreak", value.asInstanceOf[js.Any])
+    def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
     
     @scala.inline
-    def deleteColumnBreak: Self = this.set("columnBreak", js.undefined)
+    def setEquation(value: Equation): Self = StObject.set(x, "equation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndIndex(value: Double): Self = this.set("endIndex", value.asInstanceOf[js.Any])
+    def setEquationUndefined: Self = StObject.set(x, "equation", js.undefined)
     
     @scala.inline
-    def deleteEndIndex: Self = this.set("endIndex", js.undefined)
+    def setFootnoteReference(value: FootnoteReference): Self = StObject.set(x, "footnoteReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEquation(value: Equation): Self = this.set("equation", value.asInstanceOf[js.Any])
+    def setFootnoteReferenceUndefined: Self = StObject.set(x, "footnoteReference", js.undefined)
     
     @scala.inline
-    def deleteEquation: Self = this.set("equation", js.undefined)
+    def setHorizontalRule(value: HorizontalRule): Self = StObject.set(x, "horizontalRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFootnoteReference(value: FootnoteReference): Self = this.set("footnoteReference", value.asInstanceOf[js.Any])
+    def setHorizontalRuleUndefined: Self = StObject.set(x, "horizontalRule", js.undefined)
     
     @scala.inline
-    def deleteFootnoteReference: Self = this.set("footnoteReference", js.undefined)
+    def setInlineObjectElement(value: InlineObjectElement): Self = StObject.set(x, "inlineObjectElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalRule(value: HorizontalRule): Self = this.set("horizontalRule", value.asInstanceOf[js.Any])
+    def setInlineObjectElementUndefined: Self = StObject.set(x, "inlineObjectElement", js.undefined)
     
     @scala.inline
-    def deleteHorizontalRule: Self = this.set("horizontalRule", js.undefined)
+    def setPageBreak(value: PageBreak): Self = StObject.set(x, "pageBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInlineObjectElement(value: InlineObjectElement): Self = this.set("inlineObjectElement", value.asInstanceOf[js.Any])
+    def setPageBreakUndefined: Self = StObject.set(x, "pageBreak", js.undefined)
     
     @scala.inline
-    def deleteInlineObjectElement: Self = this.set("inlineObjectElement", js.undefined)
+    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageBreak(value: PageBreak): Self = this.set("pageBreak", value.asInstanceOf[js.Any])
+    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
     
     @scala.inline
-    def deletePageBreak: Self = this.set("pageBreak", js.undefined)
+    def setTextRun(value: TextRun): Self = StObject.set(x, "textRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
-    
-    @scala.inline
-    def setTextRun(value: TextRun): Self = this.set("textRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextRun: Self = this.set("textRun", js.undefined)
+    def setTextRunUndefined: Self = StObject.set(x, "textRun", js.undefined)
   }
 }

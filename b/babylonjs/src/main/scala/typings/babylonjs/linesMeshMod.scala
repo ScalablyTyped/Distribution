@@ -7,14 +7,14 @@ import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.nodeMod.Node
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Meshes/linesMesh", JSImport.Namespace)
-@js.native
-object linesMeshMod extends js.Object {
+object linesMeshMod {
   
+  @JSImport("babylonjs/Meshes/linesMesh", "InstancedLinesMesh")
   @js.native
   class InstancedLinesMesh protected () extends InstancedMesh {
     def this(name: String, source: LinesMesh) = this()
@@ -27,6 +27,7 @@ object linesMeshMod extends js.Object {
     var intersectionThreshold: Double = js.native
   }
   
+  @JSImport("babylonjs/Meshes/linesMesh", "LinesMesh")
   @js.native
   class LinesMesh protected () extends Mesh {
     /**

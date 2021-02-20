@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Encryption extends js.Object {
+trait Encryption extends StObject {
   
   /**
     * The type of algorithm that is used for the encryption (such as aes128, aes192, or aes256).
@@ -61,66 +62,54 @@ object Encryption {
   }
   
   @scala.inline
-  implicit class EncryptionOps[Self <: Encryption] (val x: Self) extends AnyVal {
+  implicit class EncryptionMutableBuilder[Self <: Encryption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: Algorithm): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstantInitializationVector(value: string): Self = StObject.set(x, "ConstantInitializationVector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConstantInitializationVectorUndefined: Self = StObject.set(x, "ConstantInitializationVector", js.undefined)
     
     @scala.inline
-    def setAlgorithm(value: Algorithm): Self = this.set("Algorithm", value.asInstanceOf[js.Any])
+    def setDeviceId(value: string): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: string): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setDeviceIdUndefined: Self = StObject.set(x, "DeviceId", js.undefined)
     
     @scala.inline
-    def setConstantInitializationVector(value: string): Self = this.set("ConstantInitializationVector", value.asInstanceOf[js.Any])
+    def setKeyType(value: KeyType): Self = StObject.set(x, "KeyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConstantInitializationVector: Self = this.set("ConstantInitializationVector", js.undefined)
+    def setKeyTypeUndefined: Self = StObject.set(x, "KeyType", js.undefined)
     
     @scala.inline
-    def setDeviceId(value: string): Self = this.set("DeviceId", value.asInstanceOf[js.Any])
+    def setRegion(value: string): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceId: Self = this.set("DeviceId", js.undefined)
+    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
     @scala.inline
-    def setKeyType(value: KeyType): Self = this.set("KeyType", value.asInstanceOf[js.Any])
+    def setResourceId(value: string): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeyType: Self = this.set("KeyType", js.undefined)
+    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
     @scala.inline
-    def setRegion(value: string): Self = this.set("Region", value.asInstanceOf[js.Any])
+    def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegion: Self = this.set("Region", js.undefined)
+    def setSecretArn(value: string): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: string): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    def setSecretArnUndefined: Self = StObject.set(x, "SecretArn", js.undefined)
     
     @scala.inline
-    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
+    def setUrl(value: string): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretArn(value: string): Self = this.set("SecretArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecretArn: Self = this.set("SecretArn", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: string): Self = this.set("Url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("Url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

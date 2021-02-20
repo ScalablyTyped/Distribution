@@ -1,11 +1,12 @@
 package typings.chessboardjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChessBoardInstance extends js.Object {
+trait ChessBoardInstance extends StObject {
   
   def clear(): Unit = js.native
   def clear(useAnimation: Boolean): Unit = js.native

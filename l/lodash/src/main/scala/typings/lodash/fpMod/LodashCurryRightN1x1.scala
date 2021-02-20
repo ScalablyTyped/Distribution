@@ -4,12 +4,13 @@ import typings.lodash.mod.RightCurriedFunction2
 import typings.lodash.mod.RightCurriedFunction3
 import typings.lodash.mod.RightCurriedFunction4
 import typings.lodash.mod.RightCurriedFunction5
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashCurryRightN1x1 extends js.Object {
+trait LodashCurryRightN1x1 extends StObject {
   
   def apply(func: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
   def apply[T1, T2, R](func: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): RightCurriedFunction2[T1, T2, R] = js.native

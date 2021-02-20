@@ -1,5 +1,6 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SATURDAY
   - typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SUNDAY
 */
-trait DayOfWeekString extends js.Object
+trait DayOfWeekString extends StObject
 object DayOfWeekString {
   
   @scala.inline

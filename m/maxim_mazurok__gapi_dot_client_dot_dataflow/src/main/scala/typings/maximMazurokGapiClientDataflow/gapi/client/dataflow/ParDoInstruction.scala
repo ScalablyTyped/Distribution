@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParDoInstruction extends js.Object {
+trait ParDoInstruction extends StObject {
   
   /** The input. */
   var input: js.UndefOr[InstructionInput] = js.native
@@ -36,58 +37,46 @@ object ParDoInstruction {
   }
   
   @scala.inline
-  implicit class ParDoInstructionOps[Self <: ParDoInstruction] (val x: Self) extends AnyVal {
+  implicit class ParDoInstructionMutableBuilder[Self <: ParDoInstruction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInput(value: InstructionInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMultiOutputInfos(value: js.Array[MultiOutputInfo]): Self = StObject.set(x, "multiOutputInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: InstructionInput): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setMultiOutputInfosUndefined: Self = StObject.set(x, "multiOutputInfos", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setMultiOutputInfosVarargs(value: MultiOutputInfo*): Self = StObject.set(x, "multiOutputInfos", js.Array(value :_*))
     
     @scala.inline
-    def setMultiOutputInfosVarargs(value: MultiOutputInfo*): Self = this.set("multiOutputInfos", js.Array(value :_*))
+    def setNumOutputs(value: Double): Self = StObject.set(x, "numOutputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiOutputInfos(value: js.Array[MultiOutputInfo]): Self = this.set("multiOutputInfos", value.asInstanceOf[js.Any])
+    def setNumOutputsUndefined: Self = StObject.set(x, "numOutputs", js.undefined)
     
     @scala.inline
-    def deleteMultiOutputInfos: Self = this.set("multiOutputInfos", js.undefined)
+    def setSideInputs(value: js.Array[SideInputInfo]): Self = StObject.set(x, "sideInputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumOutputs(value: Double): Self = this.set("numOutputs", value.asInstanceOf[js.Any])
+    def setSideInputsUndefined: Self = StObject.set(x, "sideInputs", js.undefined)
     
     @scala.inline
-    def deleteNumOutputs: Self = this.set("numOutputs", js.undefined)
-    
-    @scala.inline
-    def setSideInputsVarargs(value: SideInputInfo*): Self = this.set("sideInputs", js.Array(value :_*))
-    
-    @scala.inline
-    def setSideInputs(value: js.Array[SideInputInfo]): Self = this.set("sideInputs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSideInputs: Self = this.set("sideInputs", js.undefined)
+    def setSideInputsVarargs(value: SideInputInfo*): Self = StObject.set(x, "sideInputs", js.Array(value :_*))
     
     @scala.inline
     def setUserFn(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ParDoInstruction with TopLevel[js.Any]
-    ): Self = this.set("userFn", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "userFn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserFn: Self = this.set("userFn", js.undefined)
+    def setUserFnUndefined: Self = StObject.set(x, "userFn", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Security
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SafetyTipInfo extends js.Object {
+trait SafetyTipInfo extends StObject {
   
   /**
     * The URL the safety tip suggested ("Did you mean?"). Only filled in for lookalike matches.
@@ -26,27 +27,15 @@ object SafetyTipInfo {
   }
   
   @scala.inline
-  implicit class SafetyTipInfoOps[Self <: SafetyTipInfo] (val x: Self) extends AnyVal {
+  implicit class SafetyTipInfoMutableBuilder[Self <: SafetyTipInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSafeUrl(value: String): Self = StObject.set(x, "safeUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSafeUrlUndefined: Self = StObject.set(x, "safeUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSafetyTipStatus(value: SafetyTipStatus): Self = this.set("safetyTipStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSafeUrl(value: String): Self = this.set("safeUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSafeUrl: Self = this.set("safeUrl", js.undefined)
+    def setSafetyTipStatus(value: SafetyTipStatus): Self = StObject.set(x, "safetyTipStatus", value.asInstanceOf[js.Any])
   }
 }

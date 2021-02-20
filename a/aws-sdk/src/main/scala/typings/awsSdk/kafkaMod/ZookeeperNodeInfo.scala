@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ZookeeperNodeInfo extends js.Object {
+trait ZookeeperNodeInfo extends StObject {
   
   /**
     * 
@@ -51,51 +52,39 @@ object ZookeeperNodeInfo {
   }
   
   @scala.inline
-  implicit class ZookeeperNodeInfoOps[Self <: ZookeeperNodeInfo] (val x: Self) extends AnyVal {
+  implicit class ZookeeperNodeInfoMutableBuilder[Self <: ZookeeperNodeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachedENIId(value: string): Self = StObject.set(x, "AttachedENIId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachedENIIdUndefined: Self = StObject.set(x, "AttachedENIId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientVpcIpAddress(value: string): Self = StObject.set(x, "ClientVpcIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachedENIId(value: string): Self = this.set("AttachedENIId", value.asInstanceOf[js.Any])
+    def setClientVpcIpAddressUndefined: Self = StObject.set(x, "ClientVpcIpAddress", js.undefined)
     
     @scala.inline
-    def deleteAttachedENIId: Self = this.set("AttachedENIId", js.undefined)
+    def setEndpoints(value: listOfString): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientVpcIpAddress(value: string): Self = this.set("ClientVpcIpAddress", value.asInstanceOf[js.Any])
+    def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
     
     @scala.inline
-    def deleteClientVpcIpAddress: Self = this.set("ClientVpcIpAddress", js.undefined)
+    def setEndpointsVarargs(value: string*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
     
     @scala.inline
-    def setEndpointsVarargs(value: string*): Self = this.set("Endpoints", js.Array(value :_*))
+    def setZookeeperId(value: double): Self = StObject.set(x, "ZookeeperId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoints(value: listOfString): Self = this.set("Endpoints", value.asInstanceOf[js.Any])
+    def setZookeeperIdUndefined: Self = StObject.set(x, "ZookeeperId", js.undefined)
     
     @scala.inline
-    def deleteEndpoints: Self = this.set("Endpoints", js.undefined)
+    def setZookeeperVersion(value: string): Self = StObject.set(x, "ZookeeperVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZookeeperId(value: double): Self = this.set("ZookeeperId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZookeeperId: Self = this.set("ZookeeperId", js.undefined)
-    
-    @scala.inline
-    def setZookeeperVersion(value: string): Self = this.set("ZookeeperVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZookeeperVersion: Self = this.set("ZookeeperVersion", js.undefined)
+    def setZookeeperVersionUndefined: Self = StObject.set(x, "ZookeeperVersion", js.undefined)
   }
 }

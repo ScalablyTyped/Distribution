@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PostDeploy extends js.Object {
+trait PostDeploy extends StObject {
   
   var all: scala.Double = js.native
   
@@ -24,30 +25,18 @@ object PostDeploy {
   }
   
   @scala.inline
-  implicit class PostDeployOps[Self <: PostDeploy] (val x: Self) extends AnyVal {
+  implicit class PostDeployMutableBuilder[Self <: PostDeploy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPostDeploy(value: scala.Double): Self = StObject.set(x, "postDeploy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreDeploy(value: scala.Double): Self = StObject.set(x, "preDeploy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: scala.Double): Self = this.set("all", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPostDeploy(value: scala.Double): Self = this.set("postDeploy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreDeploy(value: scala.Double): Self = this.set("preDeploy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUndefined(value: scala.Double): Self = this.set("undefined", value.asInstanceOf[js.Any])
+    def setUndefined(value: scala.Double): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
   }
 }

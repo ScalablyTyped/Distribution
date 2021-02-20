@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,30 +55,18 @@ object EditFieldsInfo {
   }
   
   @scala.inline
-  implicit class EditFieldsInfoOps[Self <: EditFieldsInfo] (val x: Self) extends AnyVal {
+  implicit class EditFieldsInfoMutableBuilder[Self <: EditFieldsInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDateField(value: String): Self = StObject.set(x, "creationDateField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatorField(value: String): Self = StObject.set(x, "creatorField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEditDateField(value: String): Self = StObject.set(x, "editDateField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDateField(value: String): Self = this.set("creationDateField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCreatorField(value: String): Self = this.set("creatorField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEditDateField(value: String): Self = this.set("editDateField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEditorField(value: String): Self = this.set("editorField", value.asInstanceOf[js.Any])
+    def setEditorField(value: String): Self = StObject.set(x, "editorField", value.asInstanceOf[js.Any])
   }
 }

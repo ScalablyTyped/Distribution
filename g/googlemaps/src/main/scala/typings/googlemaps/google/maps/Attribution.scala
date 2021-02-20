@@ -1,12 +1,13 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO find source documentation
 @js.native
-trait Attribution extends js.Object {
+trait Attribution extends StObject {
   
   var iosDeepLinkId: js.UndefOr[String] = js.native
   
@@ -23,36 +24,24 @@ object Attribution {
   }
   
   @scala.inline
-  implicit class AttributionOps[Self <: Attribution] (val x: Self) extends AnyVal {
+  implicit class AttributionMutableBuilder[Self <: Attribution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIosDeepLinkId(value: String): Self = StObject.set(x, "iosDeepLinkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIosDeepLinkIdUndefined: Self = StObject.set(x, "iosDeepLinkId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIosDeepLinkId(value: String): Self = this.set("iosDeepLinkId", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteIosDeepLinkId: Self = this.set("iosDeepLinkId", js.undefined)
+    def setWebUrl(value: String): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setWebUrl(value: String): Self = this.set("webUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebUrl: Self = this.set("webUrl", js.undefined)
+    def setWebUrlUndefined: Self = StObject.set(x, "webUrl", js.undefined)
   }
 }

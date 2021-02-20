@@ -4,6 +4,7 @@ import typings.solidityParserAntlr.solidityParserAntlrStrings.`private`
 import typings.solidityParserAntlr.solidityParserAntlrStrings.default
 import typings.solidityParserAntlr.solidityParserAntlrStrings.internal
 import typings.solidityParserAntlr.solidityParserAntlrStrings.public
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,57 +49,45 @@ object VariableDeclaration {
   }
   
   @scala.inline
-  implicit class VariableDeclarationOps[Self <: VariableDeclaration] (val x: Self) extends AnyVal {
+  implicit class VariableDeclarationMutableBuilder[Self <: VariableDeclaration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsDeclaredConst(value: Boolean): Self = StObject.set(x, "isDeclaredConst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIndexed(value: Boolean): Self = this.set("isIndexed", value.asInstanceOf[js.Any])
+    def setIsDeclaredConstUndefined: Self = StObject.set(x, "isDeclaredConst", js.undefined)
     
     @scala.inline
-    def setIsStateVar(value: Boolean): Self = this.set("isStateVar", value.asInstanceOf[js.Any])
+    def setIsIndexed(value: Boolean): Self = StObject.set(x, "isIndexed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setIsStateVar(value: Boolean): Self = StObject.set(x, "isStateVar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclaration): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeName(value: TypeName): Self = this.set("typeName", value.asInstanceOf[js.Any])
+    def setStorageLocation(value: String): Self = StObject.set(x, "storageLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpression(value: Expression): Self = this.set("expression", value.asInstanceOf[js.Any])
+    def setStorageLocationUndefined: Self = StObject.set(x, "storageLocation", js.undefined)
     
     @scala.inline
-    def deleteExpression: Self = this.set("expression", js.undefined)
+    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDeclaredConst(value: Boolean): Self = this.set("isDeclaredConst", value.asInstanceOf[js.Any])
+    def setTypeName(value: TypeName): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsDeclaredConst: Self = this.set("isDeclaredConst", js.undefined)
+    def setVisibility(value: public | `private` | internal | default): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageLocation(value: String): Self = this.set("storageLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageLocation: Self = this.set("storageLocation", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: public | `private` | internal | default): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

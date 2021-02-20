@@ -1,11 +1,12 @@
 package typings.marked.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MarkedOptions extends js.Object {
+trait MarkedOptions extends StObject {
   
   /**
     * A prefix URL for any relative link.
@@ -125,130 +126,118 @@ object MarkedOptions {
   }
   
   @scala.inline
-  implicit class MarkedOptionsOps[Self <: MarkedOptions] (val x: Self) extends AnyVal {
+  implicit class MarkedOptionsMutableBuilder[Self <: MarkedOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBreaks(value: Boolean): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseUrl(value: String): Self = this.set("baseUrl", value.asInstanceOf[js.Any])
+    def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
     
     @scala.inline
-    def deleteBaseUrl: Self = this.set("baseUrl", js.undefined)
+    def setGfm(value: Boolean): Self = StObject.set(x, "gfm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreaks(value: Boolean): Self = this.set("breaks", value.asInstanceOf[js.Any])
+    def setGfmUndefined: Self = StObject.set(x, "gfm", js.undefined)
     
     @scala.inline
-    def deleteBreaks: Self = this.set("breaks", js.undefined)
+    def setHeaderIds(value: Boolean): Self = StObject.set(x, "headerIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGfm(value: Boolean): Self = this.set("gfm", value.asInstanceOf[js.Any])
+    def setHeaderIdsUndefined: Self = StObject.set(x, "headerIds", js.undefined)
     
     @scala.inline
-    def deleteGfm: Self = this.set("gfm", js.undefined)
+    def setHeaderPrefix(value: String): Self = StObject.set(x, "headerPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderIds(value: Boolean): Self = this.set("headerIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaderIds: Self = this.set("headerIds", js.undefined)
-    
-    @scala.inline
-    def setHeaderPrefix(value: String): Self = this.set("headerPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaderPrefix: Self = this.set("headerPrefix", js.undefined)
+    def setHeaderPrefixUndefined: Self = StObject.set(x, "headerPrefix", js.undefined)
     
     @scala.inline
     def setHighlight(
       value: (/* code */ String, /* lang */ String, /* callback */ js.UndefOr[
           js.Function2[/* error */ js.UndefOr[js.Any], /* code */ js.UndefOr[String], Unit]
         ]) => String | Unit
-    ): Self = this.set("highlight", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "highlight", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteHighlight: Self = this.set("highlight", js.undefined)
+    def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
     
     @scala.inline
-    def setLangPrefix(value: String): Self = this.set("langPrefix", value.asInstanceOf[js.Any])
+    def setLangPrefix(value: String): Self = StObject.set(x, "langPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLangPrefix: Self = this.set("langPrefix", js.undefined)
+    def setLangPrefixUndefined: Self = StObject.set(x, "langPrefix", js.undefined)
     
     @scala.inline
-    def setMangle(value: Boolean): Self = this.set("mangle", value.asInstanceOf[js.Any])
+    def setMangle(value: Boolean): Self = StObject.set(x, "mangle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMangle: Self = this.set("mangle", js.undefined)
+    def setMangleUndefined: Self = StObject.set(x, "mangle", js.undefined)
     
     @scala.inline
-    def setPedantic(value: Boolean): Self = this.set("pedantic", value.asInstanceOf[js.Any])
+    def setPedantic(value: Boolean): Self = StObject.set(x, "pedantic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePedantic: Self = this.set("pedantic", js.undefined)
+    def setPedanticUndefined: Self = StObject.set(x, "pedantic", js.undefined)
     
     @scala.inline
-    def setRenderer(value: Renderer): Self = this.set("renderer", value.asInstanceOf[js.Any])
+    def setRenderer(value: Renderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenderer: Self = this.set("renderer", js.undefined)
+    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
     @scala.inline
-    def setSanitize(value: Boolean): Self = this.set("sanitize", value.asInstanceOf[js.Any])
+    def setSanitize(value: Boolean): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSanitize: Self = this.set("sanitize", js.undefined)
+    def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
     
     @scala.inline
-    def setSanitizer(value: /* html */ String => String): Self = this.set("sanitizer", js.Any.fromFunction1(value))
+    def setSanitizer(value: /* html */ String => String): Self = StObject.set(x, "sanitizer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSanitizer: Self = this.set("sanitizer", js.undefined)
+    def setSanitizerUndefined: Self = StObject.set(x, "sanitizer", js.undefined)
     
     @scala.inline
-    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSilent: Self = this.set("silent", js.undefined)
+    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
     @scala.inline
-    def setSmartLists(value: Boolean): Self = this.set("smartLists", value.asInstanceOf[js.Any])
+    def setSmartLists(value: Boolean): Self = StObject.set(x, "smartLists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSmartLists: Self = this.set("smartLists", js.undefined)
+    def setSmartListsUndefined: Self = StObject.set(x, "smartLists", js.undefined)
     
     @scala.inline
-    def setSmartypants(value: Boolean): Self = this.set("smartypants", value.asInstanceOf[js.Any])
+    def setSmartypants(value: Boolean): Self = StObject.set(x, "smartypants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSmartypants: Self = this.set("smartypants", js.undefined)
+    def setSmartypantsUndefined: Self = StObject.set(x, "smartypants", js.undefined)
     
     @scala.inline
-    def setTokenizer(value: Tokenizer): Self = this.set("tokenizer", value.asInstanceOf[js.Any])
+    def setTokenizer(value: Tokenizer): Self = StObject.set(x, "tokenizer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTokenizer: Self = this.set("tokenizer", js.undefined)
+    def setTokenizerUndefined: Self = StObject.set(x, "tokenizer", js.undefined)
     
     @scala.inline
-    def setWalkTokens(value: (/* tokens */ TokensList, /* callback */ js.Function1[/* token */ Token, Unit]) => _): Self = this.set("walkTokens", js.Any.fromFunction2(value))
+    def setWalkTokens(value: (/* tokens */ TokensList, /* callback */ js.Function1[/* token */ Token, Unit]) => _): Self = StObject.set(x, "walkTokens", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteWalkTokens: Self = this.set("walkTokens", js.undefined)
+    def setWalkTokensUndefined: Self = StObject.set(x, "walkTokens", js.undefined)
     
     @scala.inline
-    def setXhtml(value: Boolean): Self = this.set("xhtml", value.asInstanceOf[js.Any])
+    def setXhtml(value: Boolean): Self = StObject.set(x, "xhtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteXhtml: Self = this.set("xhtml", js.undefined)
+    def setXhtmlUndefined: Self = StObject.set(x, "xhtml", js.undefined)
   }
 }

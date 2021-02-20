@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Playback
 
 import typings.winrtUwp.Windows.Media.Core.TimedMetadataTrack
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the MediaPlaybackTimedMetadataTrackList::PresentationModeChanged event. */
 @js.native
-trait TimedMetadataPresentationModeChangedEventArgs extends js.Object {
+trait TimedMetadataPresentationModeChangedEventArgs extends StObject {
   
   /** Gets the new presentation mode. */
   var newPresentationMode: TimedMetadataTrackPresentationMode = js.native
@@ -31,27 +32,15 @@ object TimedMetadataPresentationModeChangedEventArgs {
   }
   
   @scala.inline
-  implicit class TimedMetadataPresentationModeChangedEventArgsOps[Self <: TimedMetadataPresentationModeChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class TimedMetadataPresentationModeChangedEventArgsMutableBuilder[Self <: TimedMetadataPresentationModeChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewPresentationMode(value: TimedMetadataTrackPresentationMode): Self = StObject.set(x, "newPresentationMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOldPresentationMode(value: TimedMetadataTrackPresentationMode): Self = StObject.set(x, "oldPresentationMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNewPresentationMode(value: TimedMetadataTrackPresentationMode): Self = this.set("newPresentationMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldPresentationMode(value: TimedMetadataTrackPresentationMode): Self = this.set("oldPresentationMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrack(value: TimedMetadataTrack): Self = this.set("track", value.asInstanceOf[js.Any])
+    def setTrack(value: TimedMetadataTrack): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
   }
 }

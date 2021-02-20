@@ -2,6 +2,7 @@ package typings.postmanCollection.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.postmanCollection.anon.Any
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,11 +39,19 @@ class Variable () extends Property[VariableDefinition] {
   def valueType(typeName: String, _noCast: Boolean): String = js.native
 }
 /* static members */
-@JSImport("postman-collection", "Variable")
-@js.native
-object Variable extends js.Object {
+object Variable {
   
+  @JSImport("postman-collection", "Variable")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("postman-collection", "Variable.isVariable")
+  @js.native
   def isVariable(obj: js.Any): Boolean = js.native
   
-  var types: Any = js.native
+  @JSImport("postman-collection", "Variable.types")
+  @js.native
+  def types: Any = js.native
+  @scala.inline
+  def types_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("types")(x.asInstanceOf[js.Any])
 }

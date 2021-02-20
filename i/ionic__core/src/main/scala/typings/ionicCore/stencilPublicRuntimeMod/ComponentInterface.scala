@@ -1,6 +1,7 @@
 package typings.ionicCore.stencilPublicRuntimeMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,78 +83,66 @@ object ComponentInterface {
   }
   
   @scala.inline
-  implicit class ComponentInterfaceOps[Self <: ComponentInterface] (val x: Self) extends AnyVal {
+  implicit class ComponentInterfaceMutableBuilder[Self <: ComponentInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentDidLoad(value: () => Unit): Self = StObject.set(x, "componentDidLoad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentDidLoadUndefined: Self = StObject.set(x, "componentDidLoad", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponentDidRender(value: () => Unit): Self = StObject.set(x, "componentDidRender", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComponentDidLoad(value: () => Unit): Self = this.set("componentDidLoad", js.Any.fromFunction0(value))
+    def setComponentDidRenderUndefined: Self = StObject.set(x, "componentDidRender", js.undefined)
     
     @scala.inline
-    def deleteComponentDidLoad: Self = this.set("componentDidLoad", js.undefined)
+    def setComponentDidUpdate(value: () => Unit): Self = StObject.set(x, "componentDidUpdate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComponentDidRender(value: () => Unit): Self = this.set("componentDidRender", js.Any.fromFunction0(value))
+    def setComponentDidUpdateUndefined: Self = StObject.set(x, "componentDidUpdate", js.undefined)
     
     @scala.inline
-    def deleteComponentDidRender: Self = this.set("componentDidRender", js.undefined)
+    def setComponentShouldUpdate(value: (/* newVal */ js.Any, /* oldVal */ js.Any, /* propName */ String) => Boolean | Unit): Self = StObject.set(x, "componentShouldUpdate", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setComponentDidUpdate(value: () => Unit): Self = this.set("componentDidUpdate", js.Any.fromFunction0(value))
+    def setComponentShouldUpdateUndefined: Self = StObject.set(x, "componentShouldUpdate", js.undefined)
     
     @scala.inline
-    def deleteComponentDidUpdate: Self = this.set("componentDidUpdate", js.undefined)
+    def setComponentWillLoad(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "componentWillLoad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComponentShouldUpdate(value: (/* newVal */ js.Any, /* oldVal */ js.Any, /* propName */ String) => Boolean | Unit): Self = this.set("componentShouldUpdate", js.Any.fromFunction3(value))
+    def setComponentWillLoadUndefined: Self = StObject.set(x, "componentWillLoad", js.undefined)
     
     @scala.inline
-    def deleteComponentShouldUpdate: Self = this.set("componentShouldUpdate", js.undefined)
+    def setComponentWillRender(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "componentWillRender", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComponentWillLoad(value: () => js.Promise[Unit] | Unit): Self = this.set("componentWillLoad", js.Any.fromFunction0(value))
+    def setComponentWillRenderUndefined: Self = StObject.set(x, "componentWillRender", js.undefined)
     
     @scala.inline
-    def deleteComponentWillLoad: Self = this.set("componentWillLoad", js.undefined)
+    def setComponentWillUpdate(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "componentWillUpdate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComponentWillRender(value: () => js.Promise[Unit] | Unit): Self = this.set("componentWillRender", js.Any.fromFunction0(value))
+    def setComponentWillUpdateUndefined: Self = StObject.set(x, "componentWillUpdate", js.undefined)
     
     @scala.inline
-    def deleteComponentWillRender: Self = this.set("componentWillRender", js.undefined)
+    def setConnectedCallback(value: () => Unit): Self = StObject.set(x, "connectedCallback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComponentWillUpdate(value: () => js.Promise[Unit] | Unit): Self = this.set("componentWillUpdate", js.Any.fromFunction0(value))
+    def setConnectedCallbackUndefined: Self = StObject.set(x, "connectedCallback", js.undefined)
     
     @scala.inline
-    def deleteComponentWillUpdate: Self = this.set("componentWillUpdate", js.undefined)
+    def setDisconnectedCallback(value: () => Unit): Self = StObject.set(x, "disconnectedCallback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConnectedCallback(value: () => Unit): Self = this.set("connectedCallback", js.Any.fromFunction0(value))
+    def setDisconnectedCallbackUndefined: Self = StObject.set(x, "disconnectedCallback", js.undefined)
     
     @scala.inline
-    def deleteConnectedCallback: Self = this.set("connectedCallback", js.undefined)
+    def setRender(value: () => _): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisconnectedCallback(value: () => Unit): Self = this.set("disconnectedCallback", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteDisconnectedCallback: Self = this.set("disconnectedCallback", js.undefined)
-    
-    @scala.inline
-    def setRender(value: () => _): Self = this.set("render", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteRender: Self = this.set("render", js.undefined)
+    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.ejWebAll.global.ej.datavisualization
 import typings.ejWebAll.JQuery
 import typings.ejWebAll.ej.Model
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,17 +17,15 @@ class Map protected ()
   def this(element: JQuery, options: Model) = this()
   def this(element: Element, options: Model) = this()
 }
-/* static members */
-@JSGlobal("ej.datavisualization.Map")
-@js.native
-object Map extends js.Object {
+object Map {
   
-  var Locale: js.Any = js.native
-  
-  var fn: typings.ejWebAll.ej.datavisualization.Map = js.native
-  
+  @JSGlobal("ej.datavisualization.Map")
   @js.native
-  object BingMapType extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("ej.datavisualization.Map.BingMapType")
+  @js.native
+  object BingMapType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Map.BingMapType with Double] = js.native
@@ -38,8 +37,9 @@ object Map extends js.Object {
     /* 2 */ val Road: typings.ejWebAll.ej.datavisualization.Map.BingMapType.Road with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Map.ColorPalette")
   @js.native
-  object ColorPalette extends js.Object {
+  object ColorPalette extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Map.ColorPalette with Double] = js.native
@@ -53,8 +53,9 @@ object Map extends js.Object {
     /* 2 */ val Palette3: typings.ejWebAll.ej.datavisualization.Map.ColorPalette.Palette3 with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Map.DockPosition")
   @js.native
-  object DockPosition extends js.Object {
+  object DockPosition extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Map.DockPosition with Double] = js.native
@@ -68,8 +69,9 @@ object Map extends js.Object {
     /* 0 */ val Top: typings.ejWebAll.ej.datavisualization.Map.DockPosition.Top with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Map.FontStyle")
   @js.native
-  object FontStyle extends js.Object {
+  object FontStyle extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Map.FontStyle with Double] = js.native
@@ -79,8 +81,9 @@ object Map extends js.Object {
     /* 0 */ val Normal: typings.ejWebAll.ej.datavisualization.Map.FontStyle.Normal with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Map.FontWeight")
   @js.native
-  object FontWeight extends js.Object {
+  object FontWeight extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Map.FontWeight with Double] = js.native
@@ -92,8 +95,9 @@ object Map extends js.Object {
     /* 0 */ val Regular: typings.ejWebAll.ej.datavisualization.Map.FontWeight.Regular with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Map.GeometryType")
   @js.native
-  object GeometryType extends js.Object {
+  object GeometryType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Map.GeometryType with Double] = js.native
@@ -103,8 +107,9 @@ object Map extends js.Object {
     /* 1 */ val Normal: typings.ejWebAll.ej.datavisualization.Map.GeometryType.Normal with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Map.LabelOrientation")
   @js.native
-  object LabelOrientation extends js.Object {
+  object LabelOrientation extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Map.LabelOrientation with Double] = js.native
@@ -114,8 +119,9 @@ object Map extends js.Object {
     /* 1 */ val Vertical: typings.ejWebAll.ej.datavisualization.Map.LabelOrientation.Vertical with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Map.LabelSize")
   @js.native
-  object LabelSize extends js.Object {
+  object LabelSize extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Map.LabelSize with Double] = js.native
@@ -125,8 +131,9 @@ object Map extends js.Object {
     /* 0 */ val Fixed: typings.ejWebAll.ej.datavisualization.Map.LabelSize.Fixed with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Map.LayerType")
   @js.native
-  object LayerType extends js.Object {
+  object LayerType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Map.LayerType with Double] = js.native
@@ -138,8 +145,9 @@ object Map extends js.Object {
     /* 1 */ val Osm: typings.ejWebAll.ej.datavisualization.Map.LayerType.Osm with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Map.LegendIcons")
   @js.native
-  object LegendIcons extends js.Object {
+  object LegendIcons extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Map.LegendIcons with Double] = js.native
@@ -149,8 +157,9 @@ object Map extends js.Object {
     /* 0 */ val Rectangle: typings.ejWebAll.ej.datavisualization.Map.LegendIcons.Rectangle with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Map.LegendType")
   @js.native
-  object LegendType extends js.Object {
+  object LegendType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Map.LegendType with Double] = js.native
@@ -160,8 +169,16 @@ object Map extends js.Object {
     /* 0 */ val Layers: typings.ejWebAll.ej.datavisualization.Map.LegendType.Layers with Double = js.native
   }
   
+  /* static member */
+  @JSGlobal("ej.datavisualization.Map.Locale")
   @js.native
-  object Mode extends js.Object {
+  def Locale: js.Any = js.native
+  @scala.inline
+  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("ej.datavisualization.Map.Mode")
+  @js.native
+  object Mode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Map.Mode with Double] = js.native
@@ -171,8 +188,9 @@ object Map extends js.Object {
     /* 1 */ val Interactive: typings.ejWebAll.ej.datavisualization.Map.Mode.Interactive with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Map.Position")
   @js.native
-  object Position extends js.Object {
+  object Position extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Map.Position with Double] = js.native
@@ -198,8 +216,9 @@ object Map extends js.Object {
     /* 3 */ val Topright: typings.ejWebAll.ej.datavisualization.Map.Position.Topright with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Map.SelectionMode")
   @js.native
-  object SelectionMode extends js.Object {
+  object SelectionMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Map.SelectionMode with Double] = js.native
@@ -208,4 +227,11 @@ object Map extends js.Object {
     
     /* 1 */ val Multiple: typings.ejWebAll.ej.datavisualization.Map.SelectionMode.Multiple with Double = js.native
   }
+  
+  /* static member */
+  @JSGlobal("ej.datavisualization.Map.fn")
+  @js.native
+  def fn: typings.ejWebAll.ej.datavisualization.Map = js.native
+  @scala.inline
+  def fn_=(x: typings.ejWebAll.ej.datavisualization.Map): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

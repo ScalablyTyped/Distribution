@@ -2,16 +2,16 @@ package typings.fastCsvFormat
 
 import typings.fastCsvFormat.formatterOptionsMod.FormatterOptions
 import typings.fastCsvFormat.typesMod.Row
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@fast-csv/format/build/src/formatter/FieldFormatter", JSImport.Namespace)
-@js.native
-object fieldFormatterMod extends js.Object {
+object fieldFormatterMod {
   
+  @JSImport("@fast-csv/format/build/src/formatter/FieldFormatter", "FieldFormatter")
   @js.native
-  class FieldFormatter[I /* <: Row */, O /* <: Row */] protected () extends js.Object {
+  class FieldFormatter[I /* <: Row */, O /* <: Row */] protected () extends StObject {
     def this(formatterOptions: FormatterOptions[I, O]) = this()
     
     val ESCAPE_REGEXP: js.Any = js.native

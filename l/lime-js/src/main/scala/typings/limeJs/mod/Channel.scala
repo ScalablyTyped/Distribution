@@ -1,12 +1,13 @@
 package typings.limeJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("lime-js", "Channel")
 @js.native
-class Channel protected () extends js.Object {
+class Channel protected () extends StObject {
   def this(transport: Transport, autoReplyPings: Boolean, autoNotifyReceipt: Boolean) = this()
   
   var localNode: String = js.native

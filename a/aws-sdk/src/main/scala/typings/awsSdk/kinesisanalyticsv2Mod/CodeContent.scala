@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CodeContent extends js.Object {
+trait CodeContent extends StObject {
   
   /**
     * Information about the Amazon S3 bucket containing the application code.
@@ -31,36 +32,24 @@ object CodeContent {
   }
   
   @scala.inline
-  implicit class CodeContentOps[Self <: CodeContent] (val x: Self) extends AnyVal {
+  implicit class CodeContentMutableBuilder[Self <: CodeContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setS3ContentLocation(value: S3ContentLocation): Self = StObject.set(x, "S3ContentLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setS3ContentLocationUndefined: Self = StObject.set(x, "S3ContentLocation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTextContent(value: TextContent): Self = StObject.set(x, "TextContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3ContentLocation(value: S3ContentLocation): Self = this.set("S3ContentLocation", value.asInstanceOf[js.Any])
+    def setTextContentUndefined: Self = StObject.set(x, "TextContent", js.undefined)
     
     @scala.inline
-    def deleteS3ContentLocation: Self = this.set("S3ContentLocation", js.undefined)
+    def setZipFileContent(value: ZipFileContent): Self = StObject.set(x, "ZipFileContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextContent(value: TextContent): Self = this.set("TextContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextContent: Self = this.set("TextContent", js.undefined)
-    
-    @scala.inline
-    def setZipFileContent(value: ZipFileContent): Self = this.set("ZipFileContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZipFileContent: Self = this.set("ZipFileContent", js.undefined)
+    def setZipFileContentUndefined: Self = StObject.set(x, "ZipFileContent", js.undefined)
   }
 }

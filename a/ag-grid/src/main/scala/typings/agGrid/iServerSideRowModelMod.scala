@@ -1,13 +1,12 @@
 package typings.agGrid
 
 import typings.agGrid.iRowModelMod.IRowModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/interfaces/iServerSideRowModel", JSImport.Namespace)
-@js.native
-object iServerSideRowModelMod extends js.Object {
+object iServerSideRowModelMod {
   
   @js.native
   trait IServerSideRowModel extends IRowModel {

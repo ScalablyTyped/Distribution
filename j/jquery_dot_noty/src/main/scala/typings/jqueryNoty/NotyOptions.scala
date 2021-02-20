@@ -4,12 +4,13 @@ import typings.jqueryNoty.jqueryNotyStrings.backdrop
 import typings.jqueryNoty.jqueryNotyStrings.button
 import typings.jqueryNoty.jqueryNotyStrings.click
 import typings.jqueryNoty.jqueryNotyStrings.hover
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotyOptions extends js.Object {
+trait NotyOptions extends StObject {
   
   var animation: js.UndefOr[NotyAnimationOptions] = js.native
   
@@ -63,117 +64,105 @@ object NotyOptions {
   }
   
   @scala.inline
-  implicit class NotyOptionsOps[Self <: NotyOptions] (val x: Self) extends AnyVal {
+  implicit class NotyOptionsMutableBuilder[Self <: NotyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: NotyAnimationOptions): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtons(value: js.Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: NotyAnimationOptions): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setCallback(value: NotyCallbackOptions): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtons(value: js.Any): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def deleteButtons: Self = this.set("buttons", js.undefined)
+    def setCloseWith(value: js.Array[click | button | hover | backdrop]): Self = StObject.set(x, "closeWith", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: NotyCallbackOptions): Self = this.set("callback", value.asInstanceOf[js.Any])
+    def setCloseWithUndefined: Self = StObject.set(x, "closeWith", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setCloseWithVarargs(value: (click | button | hover | backdrop)*): Self = StObject.set(x, "closeWith", js.Array(value :_*))
     
     @scala.inline
-    def setCloseWithVarargs(value: (click | button | hover | backdrop)*): Self = this.set("closeWith", js.Array(value :_*))
+    def setDismissQueue(value: Boolean): Self = StObject.set(x, "dismissQueue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseWith(value: js.Array[click | button | hover | backdrop]): Self = this.set("closeWith", value.asInstanceOf[js.Any])
+    def setDismissQueueUndefined: Self = StObject.set(x, "dismissQueue", js.undefined)
     
     @scala.inline
-    def deleteCloseWith: Self = this.set("closeWith", js.undefined)
+    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDismissQueue(value: Boolean): Self = this.set("dismissQueue", value.asInstanceOf[js.Any])
+    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
     @scala.inline
-    def deleteDismissQueue: Self = this.set("dismissQueue", js.undefined)
+    def setKiller(value: Boolean): Self = StObject.set(x, "killer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
+    def setKillerUndefined: Self = StObject.set(x, "killer", js.undefined)
     
     @scala.inline
-    def deleteForce: Self = this.set("force", js.undefined)
+    def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKiller(value: Boolean): Self = this.set("killer", value.asInstanceOf[js.Any])
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def deleteKiller: Self = this.set("killer", js.undefined)
+    def setMaxVisible(value: Double): Self = StObject.set(x, "maxVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: String): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setMaxVisibleUndefined: Self = StObject.set(x, "maxVisible", js.undefined)
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxVisible(value: Double): Self = this.set("maxVisible", value.asInstanceOf[js.Any])
+    def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
     
     @scala.inline
-    def deleteMaxVisible: Self = this.set("maxVisible", js.undefined)
+    def setProgressBar(value: Boolean): Self = StObject.set(x, "progressBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModal(value: Boolean): Self = this.set("modal", value.asInstanceOf[js.Any])
+    def setProgressBarUndefined: Self = StObject.set(x, "progressBar", js.undefined)
     
     @scala.inline
-    def deleteModal: Self = this.set("modal", js.undefined)
+    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressBar(value: Boolean): Self = this.set("progressBar", value.asInstanceOf[js.Any])
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def deleteProgressBar: Self = this.set("progressBar", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: js.Any): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

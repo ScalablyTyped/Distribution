@@ -1,6 +1,7 @@
 package typings.std
 
 import typings.std.stdStrings.required_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.optional
   - typings.std.stdStrings.required_
 */
-trait MediaKeysRequirement extends js.Object
+trait MediaKeysRequirement extends StObject
 object MediaKeysRequirement {
   
   @scala.inline

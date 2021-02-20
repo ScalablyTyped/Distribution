@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.HumanInterfaceDevice
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes a numeric control for a given HID device. */
 @js.native
-trait HidNumericControlDescription extends js.Object {
+trait HidNumericControlDescription extends StObject {
   
   /** Retrieves a Boolean value which indicates whether the control supports a null, or out-of-range, value. */
   var hasNull: Boolean = js.native
@@ -83,66 +84,54 @@ object HidNumericControlDescription {
   }
   
   @scala.inline
-  implicit class HidNumericControlDescriptionOps[Self <: HidNumericControlDescription] (val x: Self) extends AnyVal {
+  implicit class HidNumericControlDescriptionMutableBuilder[Self <: HidNumericControlDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasNull(value: Boolean): Self = StObject.set(x, "hasNull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsAbsolute(value: Boolean): Self = StObject.set(x, "isAbsolute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasNull(value: Boolean): Self = this.set("hasNull", value.asInstanceOf[js.Any])
+    def setLogicalMaximum(value: Double): Self = StObject.set(x, "logicalMaximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLogicalMinimum(value: Double): Self = StObject.set(x, "logicalMinimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAbsolute(value: Boolean): Self = this.set("isAbsolute", value.asInstanceOf[js.Any])
+    def setParentCollections(value: IVectorView[HidCollection]): Self = StObject.set(x, "parentCollections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogicalMaximum(value: Double): Self = this.set("logicalMaximum", value.asInstanceOf[js.Any])
+    def setPhysicalMaximum(value: Double): Self = StObject.set(x, "physicalMaximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogicalMinimum(value: Double): Self = this.set("logicalMinimum", value.asInstanceOf[js.Any])
+    def setPhysicalMinimum(value: Double): Self = StObject.set(x, "physicalMinimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentCollections(value: IVectorView[HidCollection]): Self = this.set("parentCollections", value.asInstanceOf[js.Any])
+    def setReportCount(value: Double): Self = StObject.set(x, "reportCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhysicalMaximum(value: Double): Self = this.set("physicalMaximum", value.asInstanceOf[js.Any])
+    def setReportId(value: Double): Self = StObject.set(x, "reportId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhysicalMinimum(value: Double): Self = this.set("physicalMinimum", value.asInstanceOf[js.Any])
+    def setReportSize(value: Double): Self = StObject.set(x, "reportSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportCount(value: Double): Self = this.set("reportCount", value.asInstanceOf[js.Any])
+    def setReportType(value: HidReportType): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportId(value: Double): Self = this.set("reportId", value.asInstanceOf[js.Any])
+    def setUnit(value: Double): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportSize(value: Double): Self = this.set("reportSize", value.asInstanceOf[js.Any])
+    def setUnitExponent(value: Double): Self = StObject.set(x, "unitExponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportType(value: HidReportType): Self = this.set("reportType", value.asInstanceOf[js.Any])
+    def setUsageId(value: Double): Self = StObject.set(x, "usageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnit(value: Double): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnitExponent(value: Double): Self = this.set("unitExponent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsageId(value: Double): Self = this.set("usageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsagePage(value: Double): Self = this.set("usagePage", value.asInstanceOf[js.Any])
+    def setUsagePage(value: Double): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
   }
 }

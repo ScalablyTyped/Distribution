@@ -1,13 +1,20 @@
 package typings.antd
 
+import org.scalablytyped.runtime.Shortcut
 import typings.antd.localeProviderMod.Locale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd/lib/locale/bg_BG", JSImport.Namespace)
-@js.native
-object libLocaleBgBGMod extends js.Object {
+object libLocaleBgBGMod extends Shortcut {
   
+  @JSImport("antd/lib/locale/bg_BG", JSImport.Default)
+  @js.native
   val default: Locale = js.native
+  
+  type _To = Locale
+  
+  /* This means you don't have to write `default`, but can instead just say `libLocaleBgBGMod.foo` */
+  override def _to: Locale = default
 }

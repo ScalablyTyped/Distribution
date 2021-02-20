@@ -1,13 +1,14 @@
 package typings.squareConnect.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "OrderLineItemDiscount")
 @js.native
-class OrderLineItemDiscount () extends js.Object {
+class OrderLineItemDiscount () extends StObject {
   
   /**
     * The total declared monetary amount of the discount. `amount_money` is not set for percentage-based discounts.

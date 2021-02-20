@@ -1,17 +1,24 @@
 package typings.luminoWidgets
 
 import typings.luminoWidgets.layoutMod.Layout
+import typings.luminoWidgets.layoutMod.Layout.IOptions
 import typings.luminoWidgets.widgetMod.Widget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@lumino/widgets/types/panellayout", JSImport.Namespace)
-@js.native
-object panellayoutMod extends js.Object {
+object panellayoutMod {
   
+  @JSImport("@lumino/widgets/types/panellayout", "PanelLayout")
   @js.native
+  /**
+    * Construct a new layout.
+    *
+    * @param options - The options for initializing the layout.
+    */
   class PanelLayout () extends Layout {
+    def this(options: IOptions) = this()
     
     var _widgets: js.Any = js.native
     

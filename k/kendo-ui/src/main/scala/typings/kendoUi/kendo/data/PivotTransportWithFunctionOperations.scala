@@ -1,5 +1,6 @@
 package typings.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object PivotTransportWithFunctionOperations {
   }
   
   @scala.inline
-  implicit class PivotTransportWithFunctionOperationsOps[Self <: PivotTransportWithFunctionOperations] (val x: Self) extends AnyVal {
+  implicit class PivotTransportWithFunctionOperationsMutableBuilder[Self <: PivotTransportWithFunctionOperations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiscover(value: /* options */ DataSourceTransportOptions => Unit): Self = StObject.set(x, "discover", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiscoverUndefined: Self = StObject.set(x, "discover", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRead(value: /* options */ DataSourceTransportOptions => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDiscover(value: /* options */ DataSourceTransportOptions => Unit): Self = this.set("discover", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteDiscover: Self = this.set("discover", js.undefined)
-    
-    @scala.inline
-    def setRead(value: /* options */ DataSourceTransportOptions => Unit): Self = this.set("read", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteRead: Self = this.set("read", js.undefined)
+    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.twineSugarcube.anon
 
 import typings.twineSugarcube.audioMod.AudioTrack
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Add extends js.Object {
+trait Add extends StObject {
   
   /**
     * Adds an audio track with the given track ID.
@@ -90,33 +91,21 @@ object Add {
   }
   
   @scala.inline
-  implicit class AddOps[Self <: Add] (val x: Self) extends AnyVal {
+  implicit class AddMutableBuilder[Self <: Add] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (String, /* repeated */ String) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelete(value: String => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdd(value: (String, /* repeated */ String) => Unit): Self = this.set("add", js.Any.fromFunction2(value))
+    def setGet(value: String => AudioTrack | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDelete(value: String => Unit): Self = this.set("delete", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGet(value: String => AudioTrack | Null): Self = this.set("get", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHas(value: String => Boolean): Self = this.set("has", js.Any.fromFunction1(value))
+    def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
   }
 }

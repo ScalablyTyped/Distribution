@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The comparison of the two submitted documents. */
 @js.native
-trait CompareReturn extends js.Object {
+trait CompareReturn extends StObject {
   
   /** A list of pairs of elements that semantically align between the compared documents. */
   var aligned_elements: js.UndefOr[js.Array[AlignedElement]] = js.native
@@ -32,57 +33,45 @@ object CompareReturn {
   }
   
   @scala.inline
-  implicit class CompareReturnOps[Self <: CompareReturn] (val x: Self) extends AnyVal {
+  implicit class CompareReturnMutableBuilder[Self <: CompareReturn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAligned_elements(value: js.Array[AlignedElement]): Self = StObject.set(x, "aligned_elements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAligned_elementsUndefined: Self = StObject.set(x, "aligned_elements", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAligned_elementsVarargs(value: AlignedElement*): Self = StObject.set(x, "aligned_elements", js.Array(value :_*))
     
     @scala.inline
-    def setAligned_elementsVarargs(value: AlignedElement*): Self = this.set("aligned_elements", js.Array(value :_*))
+    def setDocuments(value: js.Array[Document]): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAligned_elements(value: js.Array[AlignedElement]): Self = this.set("aligned_elements", value.asInstanceOf[js.Any])
+    def setDocumentsUndefined: Self = StObject.set(x, "documents", js.undefined)
     
     @scala.inline
-    def deleteAligned_elements: Self = this.set("aligned_elements", js.undefined)
+    def setDocumentsVarargs(value: Document*): Self = StObject.set(x, "documents", js.Array(value :_*))
     
     @scala.inline
-    def setDocumentsVarargs(value: Document*): Self = this.set("documents", js.Array(value :_*))
+    def setModel_id(value: String): Self = StObject.set(x, "model_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocuments(value: js.Array[Document]): Self = this.set("documents", value.asInstanceOf[js.Any])
+    def setModel_idUndefined: Self = StObject.set(x, "model_id", js.undefined)
     
     @scala.inline
-    def deleteDocuments: Self = this.set("documents", js.undefined)
+    def setModel_version(value: String): Self = StObject.set(x, "model_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel_id(value: String): Self = this.set("model_id", value.asInstanceOf[js.Any])
+    def setModel_versionUndefined: Self = StObject.set(x, "model_version", js.undefined)
     
     @scala.inline
-    def deleteModel_id: Self = this.set("model_id", js.undefined)
+    def setUnaligned_elements(value: js.Array[UnalignedElement]): Self = StObject.set(x, "unaligned_elements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel_version(value: String): Self = this.set("model_version", value.asInstanceOf[js.Any])
+    def setUnaligned_elementsUndefined: Self = StObject.set(x, "unaligned_elements", js.undefined)
     
     @scala.inline
-    def deleteModel_version: Self = this.set("model_version", js.undefined)
-    
-    @scala.inline
-    def setUnaligned_elementsVarargs(value: UnalignedElement*): Self = this.set("unaligned_elements", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnaligned_elements(value: js.Array[UnalignedElement]): Self = this.set("unaligned_elements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnaligned_elements: Self = this.set("unaligned_elements", js.undefined)
+    def setUnaligned_elementsVarargs(value: UnalignedElement*): Self = StObject.set(x, "unaligned_elements", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.daxMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateParameterGroupResponse extends js.Object {
+trait CreateParameterGroupResponse extends StObject {
   
   /**
     * Represents the output of a CreateParameterGroup action.
@@ -21,24 +22,12 @@ object CreateParameterGroupResponse {
   }
   
   @scala.inline
-  implicit class CreateParameterGroupResponseOps[Self <: CreateParameterGroupResponse] (val x: Self) extends AnyVal {
+  implicit class CreateParameterGroupResponseMutableBuilder[Self <: CreateParameterGroupResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameterGroup(value: ParameterGroup): Self = StObject.set(x, "ParameterGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameterGroup(value: ParameterGroup): Self = this.set("ParameterGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterGroup: Self = this.set("ParameterGroup", js.undefined)
+    def setParameterGroupUndefined: Self = StObject.set(x, "ParameterGroup", js.undefined)
   }
 }

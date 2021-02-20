@@ -1,11 +1,12 @@
 package typings.mendixmodelsdk.transportInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILockWorkingCopyResponse extends js.Object {
+trait ILockWorkingCopyResponse extends StObject {
   
   var merge: ILockData = js.native
   
@@ -20,27 +21,15 @@ object ILockWorkingCopyResponse {
   }
   
   @scala.inline
-  implicit class ILockWorkingCopyResponseOps[Self <: ILockWorkingCopyResponse] (val x: Self) extends AnyVal {
+  implicit class ILockWorkingCopyResponseMutableBuilder[Self <: ILockWorkingCopyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMerge(value: ILockData): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreviousMerge(value: ILockData): Self = StObject.set(x, "previousMerge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMerge(value: ILockData): Self = this.set("merge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousMerge(value: ILockData): Self = this.set("previousMerge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousMergeNull: Self = this.set("previousMerge", null)
+    def setPreviousMergeNull: Self = StObject.set(x, "previousMerge", null)
   }
 }

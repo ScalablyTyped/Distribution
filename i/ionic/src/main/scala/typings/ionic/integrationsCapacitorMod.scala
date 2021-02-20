@@ -5,18 +5,20 @@ import typings.ionic.definitionsMod.ProjectIntegration
 import typings.ionic.libIntegrationsMod.BaseIntegration
 import typings.ionic.libIntegrationsMod.IntegationUnion
 import typings.ionic.libIntegrationsMod.IntegrationConfig
+import typings.ionic.libIntegrationsMod.IntegrationDeps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/lib/integrations/capacitor", JSImport.Namespace)
-@js.native
-object integrationsCapacitorMod extends js.Object {
+object integrationsCapacitorMod {
   
+  @JSImport("ionic/lib/integrations/capacitor", "Integration")
   @js.native
-  class Integration ()
+  class Integration protected ()
     extends BaseIntegration[ProjectIntegration]
        with IntegationUnion {
+    def this(e: IntegrationDeps) = this()
     
     @JSName("archiveUrl")
     val archiveUrl_Integration: js.UndefOr[scala.Nothing] = js.native

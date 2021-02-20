@@ -4,6 +4,7 @@ import typings.webcl.webclNumbers.`-1`
 import typings.webcl.webclNumbers.`-2`
 import typings.webcl.webclNumbers.`-3`
 import typings.webcl.webclNumbers.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webcl.webclNumbers.`-2`
   - typings.webcl.webclNumbers.`-3`
 */
-trait BuildStatus extends js.Object
+trait BuildStatus extends StObject
 object BuildStatus {
   
   @scala.inline

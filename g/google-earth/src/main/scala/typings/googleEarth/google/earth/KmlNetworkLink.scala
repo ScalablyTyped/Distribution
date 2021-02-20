@@ -1,5 +1,6 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,7 +65,7 @@ object KmlNetworkLink {
   def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
-    equals: KmlObject => Boolean,
+    equals_ : KmlObject => Boolean,
     getAbstractView: () => KmlAbstractView,
     getAddress: () => String,
     getBalloonHtml: () => String,
@@ -114,44 +115,33 @@ object KmlNetworkLink {
     setTimePrimitive: KmlTimePrimitive => Unit,
     setVisibility: Boolean => Unit
   ): KmlNetworkLink = {
-    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), equals = js.Any.fromFunction1(equals), getAbstractView = js.Any.fromFunction0(getAbstractView), getAddress = js.Any.fromFunction0(getAddress), getBalloonHtml = js.Any.fromFunction0(getBalloonHtml), getBalloonHtmlUnsafe = js.Any.fromFunction0(getBalloonHtmlUnsafe), getComputedStyle = js.Any.fromFunction0(getComputedStyle), getDescription = js.Any.fromFunction0(getDescription), getFlyToView = js.Any.fromFunction0(getFlyToView), getId = js.Any.fromFunction0(getId), getKml = js.Any.fromFunction0(getKml), getLink = js.Any.fromFunction0(getLink), getName = js.Any.fromFunction0(getName), getNextSibling = js.Any.fromFunction0(getNextSibling), getOpacity = js.Any.fromFunction0(getOpacity), getOpen = js.Any.fromFunction0(getOpen), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getPreviousSibling = js.Any.fromFunction0(getPreviousSibling), getRefreshVisibility = js.Any.fromFunction0(getRefreshVisibility), getRegion = js.Any.fromFunction0(getRegion), getSnippet = js.Any.fromFunction0(getSnippet), getStyleSelector = js.Any.fromFunction0(getStyleSelector), getStyleUrl = js.Any.fromFunction0(getStyleUrl), getTimePrimitive = js.Any.fromFunction0(getTimePrimitive), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), getVisibility = js.Any.fromFunction0(getVisibility), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), set = js.Any.fromFunction3(set), setAbstractView = js.Any.fromFunction1(setAbstractView), setAddress = js.Any.fromFunction1(setAddress), setDescription = js.Any.fromFunction1(setDescription), setFlyToView = js.Any.fromFunction1(setFlyToView), setLink = js.Any.fromFunction1(setLink), setName = js.Any.fromFunction1(setName), setOpacity = js.Any.fromFunction1(setOpacity), setOpen = js.Any.fromFunction1(setOpen), setRefreshVisibility = js.Any.fromFunction1(setRefreshVisibility), setRegion = js.Any.fromFunction1(setRegion), setSnippet = js.Any.fromFunction1(setSnippet), setStyleSelector = js.Any.fromFunction1(setStyleSelector), setStyleUrl = js.Any.fromFunction1(setStyleUrl), setTimePrimitive = js.Any.fromFunction1(setTimePrimitive), setVisibility = js.Any.fromFunction1(setVisibility))
+    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), getAbstractView = js.Any.fromFunction0(getAbstractView), getAddress = js.Any.fromFunction0(getAddress), getBalloonHtml = js.Any.fromFunction0(getBalloonHtml), getBalloonHtmlUnsafe = js.Any.fromFunction0(getBalloonHtmlUnsafe), getComputedStyle = js.Any.fromFunction0(getComputedStyle), getDescription = js.Any.fromFunction0(getDescription), getFlyToView = js.Any.fromFunction0(getFlyToView), getId = js.Any.fromFunction0(getId), getKml = js.Any.fromFunction0(getKml), getLink = js.Any.fromFunction0(getLink), getName = js.Any.fromFunction0(getName), getNextSibling = js.Any.fromFunction0(getNextSibling), getOpacity = js.Any.fromFunction0(getOpacity), getOpen = js.Any.fromFunction0(getOpen), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getPreviousSibling = js.Any.fromFunction0(getPreviousSibling), getRefreshVisibility = js.Any.fromFunction0(getRefreshVisibility), getRegion = js.Any.fromFunction0(getRegion), getSnippet = js.Any.fromFunction0(getSnippet), getStyleSelector = js.Any.fromFunction0(getStyleSelector), getStyleUrl = js.Any.fromFunction0(getStyleUrl), getTimePrimitive = js.Any.fromFunction0(getTimePrimitive), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), getVisibility = js.Any.fromFunction0(getVisibility), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), set = js.Any.fromFunction3(set), setAbstractView = js.Any.fromFunction1(setAbstractView), setAddress = js.Any.fromFunction1(setAddress), setDescription = js.Any.fromFunction1(setDescription), setFlyToView = js.Any.fromFunction1(setFlyToView), setLink = js.Any.fromFunction1(setLink), setName = js.Any.fromFunction1(setName), setOpacity = js.Any.fromFunction1(setOpacity), setOpen = js.Any.fromFunction1(setOpen), setRefreshVisibility = js.Any.fromFunction1(setRefreshVisibility), setRegion = js.Any.fromFunction1(setRegion), setSnippet = js.Any.fromFunction1(setSnippet), setStyleSelector = js.Any.fromFunction1(setStyleSelector), setStyleUrl = js.Any.fromFunction1(setStyleUrl), setTimePrimitive = js.Any.fromFunction1(setTimePrimitive), setVisibility = js.Any.fromFunction1(setVisibility))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[KmlNetworkLink]
   }
   
   @scala.inline
-  implicit class KmlNetworkLinkOps[Self <: KmlNetworkLink] (val x: Self) extends AnyVal {
+  implicit class KmlNetworkLinkMutableBuilder[Self <: KmlNetworkLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetFlyToView(value: () => Boolean): Self = StObject.set(x, "getFlyToView", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLink(value: () => KmlLink): Self = StObject.set(x, "getLink", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRefreshVisibility(value: () => Boolean): Self = StObject.set(x, "getRefreshVisibility", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFlyToView(value: () => Boolean): Self = this.set("getFlyToView", js.Any.fromFunction0(value))
+    def setSet(value: (KmlLink, Boolean, Boolean) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetLink(value: () => KmlLink): Self = this.set("getLink", js.Any.fromFunction0(value))
+    def setSetFlyToView(value: Boolean => Unit): Self = StObject.set(x, "setFlyToView", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetRefreshVisibility(value: () => Boolean): Self = this.set("getRefreshVisibility", js.Any.fromFunction0(value))
+    def setSetLink(value: KmlLink => Unit): Self = StObject.set(x, "setLink", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet(value: (KmlLink, Boolean, Boolean) => Unit): Self = this.set("set", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetFlyToView(value: Boolean => Unit): Self = this.set("setFlyToView", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetLink(value: KmlLink => Unit): Self = this.set("setLink", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetRefreshVisibility(value: Boolean => Unit): Self = this.set("setRefreshVisibility", js.Any.fromFunction1(value))
+    def setSetRefreshVisibility(value: Boolean => Unit): Self = StObject.set(x, "setRefreshVisibility", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SymbolInformation extends js.Object {
+trait SymbolInformation extends StObject {
   
   /**
     * The name of the symbol containing this symbol. This information is for
@@ -43,9 +44,13 @@ trait SymbolInformation extends js.Object {
     */
   var name: String = js.native
 }
-@JSImport("vscode-languageserver-types", "SymbolInformation")
-@js.native
-object SymbolInformation extends js.Object {
+object SymbolInformation {
+  
+  @scala.inline
+  def apply(kind: SymbolKind, location: Location, name: String): SymbolInformation = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SymbolInformation]
+  }
   
   /**
     * Creates a new symbol information literal.
@@ -56,7 +61,11 @@ object SymbolInformation extends js.Object {
     * @param uri The resource of the location of symbol, defaults to the current document.
     * @param containerName The name of the symbol containing the symbol.
     */
+  @JSImport("vscode-languageserver-types", "SymbolInformation.create")
+  @js.native
   def create(name: String, kind: SymbolKind, range: Range): SymbolInformation = js.native
+  @JSImport("vscode-languageserver-types", "SymbolInformation.create")
+  @js.native
   def create(
     name: String,
     kind: SymbolKind,
@@ -64,6 +73,35 @@ object SymbolInformation extends js.Object {
     uri: js.UndefOr[scala.Nothing],
     containerName: String
   ): SymbolInformation = js.native
+  @JSImport("vscode-languageserver-types", "SymbolInformation.create")
+  @js.native
   def create(name: String, kind: SymbolKind, range: Range, uri: String): SymbolInformation = js.native
+  @JSImport("vscode-languageserver-types", "SymbolInformation.create")
+  @js.native
   def create(name: String, kind: SymbolKind, range: Range, uri: String, containerName: String): SymbolInformation = js.native
+  
+  @scala.inline
+  implicit class SymbolInformationMutableBuilder[Self <: SymbolInformation] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+    
+    @scala.inline
+    def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    
+    @scala.inline
+    def setKind(value: SymbolKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
 }

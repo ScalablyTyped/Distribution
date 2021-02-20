@@ -16,6 +16,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.style.XStyle
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -110,33 +111,21 @@ object AppletShape {
   }
   
   @scala.inline
-  implicit class AppletShapeOps[Self <: AppletShape] (val x: Self) extends AnyVal {
+  implicit class AppletShapeMutableBuilder[Self <: AppletShape] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppletCode(value: String): Self = StObject.set(x, "AppletCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppletCodeBase(value: String): Self = StObject.set(x, "AppletCodeBase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppletCommands(value: SafeArray[PropertyValue]): Self = StObject.set(x, "AppletCommands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppletCode(value: String): Self = this.set("AppletCode", value.asInstanceOf[js.Any])
+    def setAppletIsScript(value: Boolean): Self = StObject.set(x, "AppletIsScript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppletCodeBase(value: String): Self = this.set("AppletCodeBase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAppletCommands(value: SafeArray[PropertyValue]): Self = this.set("AppletCommands", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAppletIsScript(value: Boolean): Self = this.set("AppletIsScript", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAppletName(value: String): Self = this.set("AppletName", value.asInstanceOf[js.Any])
+    def setAppletName(value: String): Self = StObject.set(x, "AppletName", value.asInstanceOf[js.Any])
   }
 }

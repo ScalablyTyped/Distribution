@@ -1,11 +1,12 @@
 package typings.microsoftAjax.Sys
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NotifyCollectionChangedAction extends js.Object
+sealed trait NotifyCollectionChangedAction extends StObject
 //#endregion
 //#region Enumerations
 /**
@@ -14,7 +15,7 @@ sealed trait NotifyCollectionChangedAction extends js.Object
   */
 @JSGlobal("Sys.NotifyCollectionChangedAction")
 @js.native
-object NotifyCollectionChangedAction extends js.Object {
+object NotifyCollectionChangedAction extends StObject {
   
   /**
     * The integer 0, indicating the changed action to the collection is add.

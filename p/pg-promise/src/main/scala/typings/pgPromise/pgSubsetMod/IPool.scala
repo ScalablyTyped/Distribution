@@ -3,6 +3,7 @@ package typings.pgPromise.pgSubsetMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ trait IPool extends EventEmitter {
   def end(): js.Promise[js.UndefOr[scala.Nothing]] = js.native
   def end(cb: js.Function1[/* err */ Error, _]): js.Any = js.native
   
-   // connection options
+  // connection options
   val ended: Boolean = js.native
   
   val ending: Boolean = js.native

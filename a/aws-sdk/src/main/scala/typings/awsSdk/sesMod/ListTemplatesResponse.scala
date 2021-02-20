@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTemplatesResponse extends js.Object {
+trait ListTemplatesResponse extends StObject {
   
   /**
     * A token indicating that there are additional email templates available to be listed. Pass this token to a subsequent call to ListTemplates to retrieve the next 50 email templates.
@@ -26,33 +27,21 @@ object ListTemplatesResponse {
   }
   
   @scala.inline
-  implicit class ListTemplatesResponseOps[Self <: ListTemplatesResponse] (val x: Self) extends AnyVal {
+  implicit class ListTemplatesResponseMutableBuilder[Self <: ListTemplatesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTemplatesMetadata(value: TemplateMetadataList): Self = StObject.set(x, "TemplatesMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setTemplatesMetadataUndefined: Self = StObject.set(x, "TemplatesMetadata", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setTemplatesMetadataVarargs(value: TemplateMetadata*): Self = this.set("TemplatesMetadata", js.Array(value :_*))
-    
-    @scala.inline
-    def setTemplatesMetadata(value: TemplateMetadataList): Self = this.set("TemplatesMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplatesMetadata: Self = this.set("TemplatesMetadata", js.undefined)
+    def setTemplatesMetadataVarargs(value: TemplateMetadata*): Self = StObject.set(x, "TemplatesMetadata", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Git extends js.Object {
+trait Git extends StObject {
   
   var git: scala.Double = js.native
   
@@ -20,24 +21,12 @@ object Git {
   }
   
   @scala.inline
-  implicit class GitOps[Self <: Git] (val x: Self) extends AnyVal {
+  implicit class GitMutableBuilder[Self <: Git] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGit(value: scala.Double): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGit(value: scala.Double): Self = this.set("git", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTfvc(value: scala.Double): Self = this.set("tfvc", value.asInstanceOf[js.Any])
+    def setTfvc(value: scala.Double): Self = StObject.set(x, "tfvc", value.asInstanceOf[js.Any])
   }
 }

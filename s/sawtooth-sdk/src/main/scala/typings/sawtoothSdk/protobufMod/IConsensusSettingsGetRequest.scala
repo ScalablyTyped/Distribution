@@ -1,12 +1,13 @@
 package typings.sawtoothSdk.protobufMod
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IConsensusSettingsGetRequest extends js.Object {
+trait IConsensusSettingsGetRequest extends StObject {
   
   /** ConsensusSettingsGetRequest blockId */
   var blockId: js.UndefOr[Uint8Array | Null] = js.native
@@ -23,39 +24,27 @@ object IConsensusSettingsGetRequest {
   }
   
   @scala.inline
-  implicit class IConsensusSettingsGetRequestOps[Self <: IConsensusSettingsGetRequest] (val x: Self) extends AnyVal {
+  implicit class IConsensusSettingsGetRequestMutableBuilder[Self <: IConsensusSettingsGetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockId(value: Uint8Array): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockIdNull: Self = StObject.set(x, "blockId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockIdUndefined: Self = StObject.set(x, "blockId", js.undefined)
     
     @scala.inline
-    def setBlockId(value: Uint8Array): Self = this.set("blockId", value.asInstanceOf[js.Any])
+    def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlockId: Self = this.set("blockId", js.undefined)
+    def setKeysNull: Self = StObject.set(x, "keys", null)
     
     @scala.inline
-    def setBlockIdNull: Self = this.set("blockId", null)
+    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
     @scala.inline
-    def setKeysVarargs(value: String*): Self = this.set("keys", js.Array(value :_*))
-    
-    @scala.inline
-    def setKeys(value: js.Array[String]): Self = this.set("keys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeys: Self = this.set("keys", js.undefined)
-    
-    @scala.inline
-    def setKeysNull: Self = this.set("keys", null)
+    def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
   }
 }

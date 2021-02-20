@@ -5,6 +5,7 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,16 +30,18 @@ class ConsensusFailBlockRequest () extends IConsensusFailBlockRequest {
   def toJSON(): StringDictionary[js.Any] = js.native
 }
 /* static members */
-@JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockRequest")
-@js.native
-object ConsensusFailBlockRequest extends js.Object {
+object ConsensusFailBlockRequest {
   
   /**
     * Creates a new ConsensusFailBlockRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ConsensusFailBlockRequest instance
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockRequest.create")
+  @js.native
   def create(): ConsensusFailBlockRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockRequest.create")
+  @js.native
   def create(properties: IConsensusFailBlockRequest): ConsensusFailBlockRequest = js.native
   
   /**
@@ -49,9 +52,17 @@ object ConsensusFailBlockRequest extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockRequest.decode")
+  @js.native
   def decode(reader: Reader): ConsensusFailBlockRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockRequest.decode")
+  @js.native
   def decode(reader: Reader, length: Double): ConsensusFailBlockRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockRequest.decode")
+  @js.native
   def decode(reader: Uint8Array): ConsensusFailBlockRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockRequest.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): ConsensusFailBlockRequest = js.native
   
   /**
@@ -61,7 +72,11 @@ object ConsensusFailBlockRequest extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockRequest.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): ConsensusFailBlockRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockRequest.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): ConsensusFailBlockRequest = js.native
   
   /**
@@ -70,7 +85,11 @@ object ConsensusFailBlockRequest extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockRequest.encode")
+  @js.native
   def encode(message: IConsensusFailBlockRequest): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockRequest.encode")
+  @js.native
   def encode(message: IConsensusFailBlockRequest, writer: Writer): Writer = js.native
   
   /**
@@ -79,7 +98,11 @@ object ConsensusFailBlockRequest extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockRequest.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IConsensusFailBlockRequest): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockRequest.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IConsensusFailBlockRequest, writer: Writer): Writer = js.native
   
   /**
@@ -87,6 +110,8 @@ object ConsensusFailBlockRequest extends js.Object {
     * @param object Plain object
     * @returns ConsensusFailBlockRequest
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockRequest.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): ConsensusFailBlockRequest = js.native
   
   /**
@@ -95,7 +120,11 @@ object ConsensusFailBlockRequest extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockRequest.toObject")
+  @js.native
   def toObject(message: ConsensusFailBlockRequest): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockRequest.toObject")
+  @js.native
   def toObject(message: ConsensusFailBlockRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -103,5 +132,7 @@ object ConsensusFailBlockRequest extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusFailBlockRequest.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

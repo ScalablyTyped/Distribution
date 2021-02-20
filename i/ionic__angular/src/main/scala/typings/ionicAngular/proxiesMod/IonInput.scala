@@ -6,6 +6,7 @@ import typings.angularCore.mod.EventEmitter
 import typings.angularCore.mod.NgZone
 import typings.std.CustomEvent
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

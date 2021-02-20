@@ -2,12 +2,13 @@ package typings.activexLibreoffice.com_.sun.star.chart2.data
 
 import typings.activexLibreoffice.com_.sun.star.chart.ChartDataRowSource
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TabularDataProviderArguments extends js.Object {
+trait TabularDataProviderArguments extends StObject {
   
   /**
     * the range address string spanning all data.
@@ -93,36 +94,24 @@ object TabularDataProviderArguments {
   }
   
   @scala.inline
-  implicit class TabularDataProviderArgumentsOps[Self <: TabularDataProviderArguments] (val x: Self) extends AnyVal {
+  implicit class TabularDataProviderArgumentsMutableBuilder[Self <: TabularDataProviderArguments] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellRangeRepresentation(value: String): Self = StObject.set(x, "CellRangeRepresentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataRowSource(value: ChartDataRowSource): Self = StObject.set(x, "DataRowSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirstCellAsLabel(value: Boolean): Self = StObject.set(x, "FirstCellAsLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellRangeRepresentation(value: String): Self = this.set("CellRangeRepresentation", value.asInstanceOf[js.Any])
+    def setHasCategories(value: Boolean): Self = StObject.set(x, "HasCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataRowSource(value: ChartDataRowSource): Self = this.set("DataRowSource", value.asInstanceOf[js.Any])
+    def setSequenceMapping(value: SafeArray[Double]): Self = StObject.set(x, "SequenceMapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstCellAsLabel(value: Boolean): Self = this.set("FirstCellAsLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasCategories(value: Boolean): Self = this.set("HasCategories", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSequenceMapping(value: SafeArray[Double]): Self = this.set("SequenceMapping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTableNumberList(value: String): Self = this.set("TableNumberList", value.asInstanceOf[js.Any])
+    def setTableNumberList(value: String): Self = StObject.set(x, "TableNumberList", value.asInstanceOf[js.Any])
   }
 }

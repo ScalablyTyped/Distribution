@@ -1,11 +1,12 @@
 package typings.chrome.chrome.fileSystemProvider
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationOptions extends js.Object {
+trait NotificationOptions extends StObject {
   
   /** The type of the change which happened to the observed entry. If it is DELETED, then the observed entry will be automatically removed from the list of observed entries. */
   var changeType: String = js.native
@@ -34,45 +35,33 @@ object NotificationOptions {
   }
   
   @scala.inline
-  implicit class NotificationOptionsOps[Self <: NotificationOptions] (val x: Self) extends AnyVal {
+  implicit class NotificationOptionsMutableBuilder[Self <: NotificationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeType(value: String): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChanges(value: js.Array[NotificationChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
     
     @scala.inline
-    def setChangeType(value: String): Self = this.set("changeType", value.asInstanceOf[js.Any])
+    def setChangesVarargs(value: NotificationChange*): Self = StObject.set(x, "changes", js.Array(value :_*))
     
     @scala.inline
-    def setFileSystemId(value: String): Self = this.set("fileSystemId", value.asInstanceOf[js.Any])
+    def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObservedPath(value: String): Self = this.set("observedPath", value.asInstanceOf[js.Any])
+    def setObservedPath(value: String): Self = StObject.set(x, "observedPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecursive(value: Boolean): Self = this.set("recursive", value.asInstanceOf[js.Any])
+    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangesVarargs(value: NotificationChange*): Self = this.set("changes", js.Array(value :_*))
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChanges(value: js.Array[NotificationChange]): Self = this.set("changes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChanges: Self = this.set("changes", js.undefined)
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

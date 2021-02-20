@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientProdTtSasportal.gapi.client.prodTtSasportal
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SasPortalDeviceAirInterface extends js.Object {
+trait SasPortalDeviceAirInterface extends StObject {
   
   /** This field specifies the radio access technology that is used for the CBSD. Conditional */
   var radioTechnology: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object SasPortalDeviceAirInterface {
   }
   
   @scala.inline
-  implicit class SasPortalDeviceAirInterfaceOps[Self <: SasPortalDeviceAirInterface] (val x: Self) extends AnyVal {
+  implicit class SasPortalDeviceAirInterfaceMutableBuilder[Self <: SasPortalDeviceAirInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRadioTechnology(value: String): Self = StObject.set(x, "radioTechnology", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRadioTechnologyUndefined: Self = StObject.set(x, "radioTechnology", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSupportedSpec(value: String): Self = StObject.set(x, "supportedSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadioTechnology(value: String): Self = this.set("radioTechnology", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadioTechnology: Self = this.set("radioTechnology", js.undefined)
-    
-    @scala.inline
-    def setSupportedSpec(value: String): Self = this.set("supportedSpec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedSpec: Self = this.set("supportedSpec", js.undefined)
+    def setSupportedSpecUndefined: Self = StObject.set(x, "supportedSpec", js.undefined)
   }
 }

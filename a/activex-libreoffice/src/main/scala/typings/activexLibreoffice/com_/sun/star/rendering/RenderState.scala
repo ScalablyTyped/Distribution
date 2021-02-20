@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 
 import typings.activexLibreoffice.com_.sun.star.geometry.AffineMatrix2D
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0
   */
 @js.native
-trait RenderState extends js.Object {
+trait RenderState extends StObject {
   
   /**
     * The affine transform associated with this render operation.
@@ -67,30 +68,18 @@ object RenderState {
   }
   
   @scala.inline
-  implicit class RenderStateOps[Self <: RenderState] (val x: Self) extends AnyVal {
+  implicit class RenderStateMutableBuilder[Self <: RenderState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAffineTransform(value: AffineMatrix2D): Self = StObject.set(x, "AffineTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClip(value: XPolyPolygon2D): Self = StObject.set(x, "Clip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompositeOperation(value: Double): Self = StObject.set(x, "CompositeOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAffineTransform(value: AffineMatrix2D): Self = this.set("AffineTransform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClip(value: XPolyPolygon2D): Self = this.set("Clip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCompositeOperation(value: Double): Self = this.set("CompositeOperation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeviceColor(value: SafeArray[ColorComponent]): Self = this.set("DeviceColor", value.asInstanceOf[js.Any])
+    def setDeviceColor(value: SafeArray[ColorComponent]): Self = StObject.set(x, "DeviceColor", value.asInstanceOf[js.Any])
   }
 }

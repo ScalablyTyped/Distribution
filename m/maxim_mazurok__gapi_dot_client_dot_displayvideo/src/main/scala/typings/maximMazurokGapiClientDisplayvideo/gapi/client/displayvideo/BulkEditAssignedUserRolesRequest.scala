@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulkEditAssignedUserRolesRequest extends js.Object {
+trait BulkEditAssignedUserRolesRequest extends StObject {
   
   /** The assigned user roles to create in batch, specified as a list of AssignedUserRoles. */
   var createdAssignedUserRoles: js.UndefOr[js.Array[AssignedUserRole]] = js.native
@@ -22,36 +23,24 @@ object BulkEditAssignedUserRolesRequest {
   }
   
   @scala.inline
-  implicit class BulkEditAssignedUserRolesRequestOps[Self <: BulkEditAssignedUserRolesRequest] (val x: Self) extends AnyVal {
+  implicit class BulkEditAssignedUserRolesRequestMutableBuilder[Self <: BulkEditAssignedUserRolesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAssignedUserRoles(value: js.Array[AssignedUserRole]): Self = StObject.set(x, "createdAssignedUserRoles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAssignedUserRolesUndefined: Self = StObject.set(x, "createdAssignedUserRoles", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedAssignedUserRolesVarargs(value: AssignedUserRole*): Self = StObject.set(x, "createdAssignedUserRoles", js.Array(value :_*))
     
     @scala.inline
-    def setCreatedAssignedUserRolesVarargs(value: AssignedUserRole*): Self = this.set("createdAssignedUserRoles", js.Array(value :_*))
+    def setDeletedAssignedUserRoles(value: js.Array[String]): Self = StObject.set(x, "deletedAssignedUserRoles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAssignedUserRoles(value: js.Array[AssignedUserRole]): Self = this.set("createdAssignedUserRoles", value.asInstanceOf[js.Any])
+    def setDeletedAssignedUserRolesUndefined: Self = StObject.set(x, "deletedAssignedUserRoles", js.undefined)
     
     @scala.inline
-    def deleteCreatedAssignedUserRoles: Self = this.set("createdAssignedUserRoles", js.undefined)
-    
-    @scala.inline
-    def setDeletedAssignedUserRolesVarargs(value: String*): Self = this.set("deletedAssignedUserRoles", js.Array(value :_*))
-    
-    @scala.inline
-    def setDeletedAssignedUserRoles(value: js.Array[String]): Self = this.set("deletedAssignedUserRoles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeletedAssignedUserRoles: Self = this.set("deletedAssignedUserRoles", js.undefined)
+    def setDeletedAssignedUserRolesVarargs(value: String*): Self = StObject.set(x, "deletedAssignedUserRoles", js.Array(value :_*))
   }
 }

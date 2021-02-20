@@ -10,6 +10,7 @@ import typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayout
 import typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayoutCallArgument
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,16 +32,20 @@ class LoginIdTextBox protected () extends LoginTextBox {
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox")
-@js.native
-object LoginIdTextBox extends js.Object {
+object LoginIdTextBox {
+  
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.create")
+  @js.native
   def create(model: IModel): LoginIdTextBox = js.native
   
   /**
@@ -51,6 +56,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.7.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInBuildingBlockUnderWidget")
+  @js.native
   def createInBuildingBlockUnderWidget(container: BuildingBlock): LoginIdTextBox = js.native
   
   /**
@@ -61,6 +69,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInBuildingBlockUnderWidgets")
+  @js.native
   def createInBuildingBlockUnderWidgets(container: BuildingBlock): LoginIdTextBox = js.native
   
   /**
@@ -71,6 +82,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInDataViewUnderFooterWidget")
+  @js.native
   def createInDataViewUnderFooterWidget(container: DataView): LoginIdTextBox = js.native
   
   /**
@@ -81,6 +95,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInDataViewUnderFooterWidgets")
+  @js.native
   def createInDataViewUnderFooterWidgets(container: DataView): LoginIdTextBox = js.native
   
   /**
@@ -91,6 +108,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInDataViewUnderWidget")
+  @js.native
   def createInDataViewUnderWidget(container: DataView): LoginIdTextBox = js.native
   
   /**
@@ -101,6 +121,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInDataViewUnderWidgets")
+  @js.native
   def createInDataViewUnderWidgets(container: DataView): LoginIdTextBox = js.native
   
   /**
@@ -111,6 +134,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInDivContainerUnderWidget")
+  @js.native
   def createInDivContainerUnderWidget(container: DivContainer): LoginIdTextBox = js.native
   
   /**
@@ -121,6 +147,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInDivContainerUnderWidgets")
+  @js.native
   def createInDivContainerUnderWidgets(container: DivContainer): LoginIdTextBox = js.native
   
   /**
@@ -131,6 +160,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInGroupBoxUnderWidget")
+  @js.native
   def createInGroupBoxUnderWidget(container: GroupBox): LoginIdTextBox = js.native
   
   /**
@@ -141,6 +173,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInGroupBoxUnderWidgets")
+  @js.native
   def createInGroupBoxUnderWidgets(container: GroupBox): LoginIdTextBox = js.native
   
   /**
@@ -151,6 +186,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInHeaderUnderLeftWidget")
+  @js.native
   def createInHeaderUnderLeftWidget(container: Header): LoginIdTextBox = js.native
   
   /**
@@ -161,6 +199,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInHeaderUnderLeftWidgets")
+  @js.native
   def createInHeaderUnderLeftWidgets(container: Header): LoginIdTextBox = js.native
   
   /**
@@ -171,6 +212,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInHeaderUnderRightWidget")
+  @js.native
   def createInHeaderUnderRightWidget(container: Header): LoginIdTextBox = js.native
   
   /**
@@ -181,6 +225,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInHeaderUnderRightWidgets")
+  @js.native
   def createInHeaderUnderRightWidgets(container: Header): LoginIdTextBox = js.native
   
   /**
@@ -191,6 +238,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInLayoutCallArgumentUnderWidget")
+  @js.native
   def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): LoginIdTextBox = js.native
   
   /**
@@ -201,6 +251,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInLayoutCallArgumentUnderWidgets")
+  @js.native
   def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): LoginIdTextBox = js.native
   
   /**
@@ -211,6 +264,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInLayoutGridColumnUnderWidget")
+  @js.native
   def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): LoginIdTextBox = js.native
   
   /**
@@ -221,6 +277,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInLayoutGridColumnUnderWidgets")
+  @js.native
   def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): LoginIdTextBox = js.native
   
   /**
@@ -231,6 +290,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInLayoutUnderWidget")
+  @js.native
   def createInLayoutUnderWidget(container: Layout): LoginIdTextBox = js.native
   
   /**
@@ -241,6 +303,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInLayoutUnderWidgets")
+  @js.native
   def createInLayoutUnderWidgets(container: Layout): LoginIdTextBox = js.native
   
   /**
@@ -251,6 +316,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInListViewTemplateUnderWidget")
+  @js.native
   def createInListViewTemplateUnderWidget(container: ListViewTemplate): LoginIdTextBox = js.native
   
   /**
@@ -261,6 +329,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInListViewTemplateUnderWidgets")
+  @js.native
   def createInListViewTemplateUnderWidgets(container: ListViewTemplate): LoginIdTextBox = js.native
   
   /**
@@ -271,6 +342,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInListViewUnderWidget")
+  @js.native
   def createInListViewUnderWidget(container: ListView): LoginIdTextBox = js.native
   
   /**
@@ -281,6 +355,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInListViewUnderWidgets")
+  @js.native
   def createInListViewUnderWidgets(container: ListView): LoginIdTextBox = js.native
   
   /**
@@ -291,6 +368,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.1.0 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInMasterDetailRegionUnderWidget")
+  @js.native
   def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): LoginIdTextBox = js.native
   
   /**
@@ -301,6 +381,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.23.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInNativeLayoutCallArgumentUnderWidgets")
+  @js.native
   def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): LoginIdTextBox = js.native
   
   /**
@@ -311,6 +394,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.5.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInNativeLayoutContentUnderSidebarWidgets")
+  @js.native
   def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): LoginIdTextBox = js.native
   
   /**
@@ -321,6 +407,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInNativeLayoutContentUnderWidgets")
+  @js.native
   def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): LoginIdTextBox = js.native
   
   /**
@@ -331,6 +420,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.22.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInNativeLayoutUnderHeaderWidget")
+  @js.native
   def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): LoginIdTextBox = js.native
   
   /**
@@ -341,6 +433,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.21.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInNativeLayoutUnderWidgets")
+  @js.native
   def createInNativeLayoutUnderWidgets(container: NativeLayout): LoginIdTextBox = js.native
   
   /**
@@ -351,6 +446,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInNavigationListItemUnderWidget")
+  @js.native
   def createInNavigationListItemUnderWidget(container: NavigationListItem): LoginIdTextBox = js.native
   
   /**
@@ -361,6 +459,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInNavigationListItemUnderWidgets")
+  @js.native
   def createInNavigationListItemUnderWidgets(container: NavigationListItem): LoginIdTextBox = js.native
   
   /**
@@ -371,6 +472,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInScrollContainerRegionUnderWidget")
+  @js.native
   def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): LoginIdTextBox = js.native
   
   /**
@@ -381,6 +485,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInScrollContainerRegionUnderWidgets")
+  @js.native
   def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): LoginIdTextBox = js.native
   
   /**
@@ -391,6 +498,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInSnippetUnderWidget")
+  @js.native
   def createInSnippetUnderWidget(container: Snippet): LoginIdTextBox = js.native
   
   /**
@@ -401,6 +511,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInSnippetUnderWidgets")
+  @js.native
   def createInSnippetUnderWidgets(container: Snippet): LoginIdTextBox = js.native
   
   /**
@@ -411,6 +524,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInSplitPaneUnderFirstWidget")
+  @js.native
   def createInSplitPaneUnderFirstWidget(container: SplitPane): LoginIdTextBox = js.native
   
   /**
@@ -421,6 +537,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInSplitPaneUnderFirstWidgets")
+  @js.native
   def createInSplitPaneUnderFirstWidgets(container: SplitPane): LoginIdTextBox = js.native
   
   /**
@@ -431,6 +550,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInSplitPaneUnderSecondWidget")
+  @js.native
   def createInSplitPaneUnderSecondWidget(container: SplitPane): LoginIdTextBox = js.native
   
   /**
@@ -441,6 +563,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 to 7.23.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInSplitPaneUnderSecondWidgets")
+  @js.native
   def createInSplitPaneUnderSecondWidgets(container: SplitPane): LoginIdTextBox = js.native
   
   /**
@@ -451,6 +576,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInTabPageUnderWidget")
+  @js.native
   def createInTabPageUnderWidget(container: TabPage): LoginIdTextBox = js.native
   
   /**
@@ -461,6 +589,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInTabPageUnderWidgets")
+  @js.native
   def createInTabPageUnderWidgets(container: TabPage): LoginIdTextBox = js.native
   
   /**
@@ -471,6 +602,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInTableCellUnderWidget")
+  @js.native
   def createInTableCellUnderWidget(container: TableCell): LoginIdTextBox = js.native
   
   /**
@@ -481,6 +615,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInTableCellUnderWidgets")
+  @js.native
   def createInTableCellUnderWidgets(container: TableCell): LoginIdTextBox = js.native
   
   /**
@@ -491,6 +628,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInTemplateGridContentsUnderWidget")
+  @js.native
   def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): LoginIdTextBox = js.native
   
   /**
@@ -501,6 +641,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInTemplateGridContentsUnderWidgets")
+  @js.native
   def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): LoginIdTextBox = js.native
   
   /**
@@ -511,6 +654,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.0.2 to 7.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInVerticalFlowUnderWidgets")
+  @js.native
   def createInVerticalFlowUnderWidgets(container: VerticalFlow): LoginIdTextBox = js.native
   
   /**
@@ -521,6 +667,9 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInWebLayoutContentUnderWidgets")
+  @js.native
   def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): LoginIdTextBox = js.native
   
   /**
@@ -531,9 +680,22 @@ object LoginIdTextBox extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.2.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInWidgetValueUnderWidgets")
+  @js.native
   def createInWidgetValueUnderWidgets(container: WidgetValue): LoginIdTextBox = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

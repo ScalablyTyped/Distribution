@@ -1,5 +1,6 @@
 package typings.atom.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,27 +26,15 @@ object LineDataExtended {
   }
   
   @scala.inline
-  implicit class LineDataExtendedOps[Self <: LineDataExtended] (val x: Self) extends AnyVal {
+  implicit class LineDataExtendedMutableBuilder[Self <: LineDataExtended] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFoldable(value: Boolean): Self = StObject.set(x, "foldable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxDigits(value: Double): Self = StObject.set(x, "maxDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFoldable(value: Boolean): Self = this.set("foldable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxDigits(value: Double): Self = this.set("maxDigits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSoftWrapped(value: Boolean): Self = this.set("softWrapped", value.asInstanceOf[js.Any])
+    def setSoftWrapped(value: Boolean): Self = StObject.set(x, "softWrapped", value.asInstanceOf[js.Any])
   }
 }

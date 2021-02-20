@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SAMLOptionsInput extends js.Object {
+trait SAMLOptionsInput extends StObject {
   
   /**
     * True if SAML is enabled.
@@ -51,60 +52,48 @@ object SAMLOptionsInput {
   }
   
   @scala.inline
-  implicit class SAMLOptionsInputOps[Self <: SAMLOptionsInput] (val x: Self) extends AnyVal {
+  implicit class SAMLOptionsInputMutableBuilder[Self <: SAMLOptionsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdp(value: SAMLIdp): Self = StObject.set(x, "Idp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setIdpUndefined: Self = StObject.set(x, "Idp", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    def setMasterBackendRole(value: BackendRole): Self = StObject.set(x, "MasterBackendRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdp(value: SAMLIdp): Self = this.set("Idp", value.asInstanceOf[js.Any])
+    def setMasterBackendRoleUndefined: Self = StObject.set(x, "MasterBackendRole", js.undefined)
     
     @scala.inline
-    def deleteIdp: Self = this.set("Idp", js.undefined)
+    def setMasterUserName(value: Username): Self = StObject.set(x, "MasterUserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterBackendRole(value: BackendRole): Self = this.set("MasterBackendRole", value.asInstanceOf[js.Any])
+    def setMasterUserNameUndefined: Self = StObject.set(x, "MasterUserName", js.undefined)
     
     @scala.inline
-    def deleteMasterBackendRole: Self = this.set("MasterBackendRole", js.undefined)
+    def setRolesKey(value: String): Self = StObject.set(x, "RolesKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterUserName(value: Username): Self = this.set("MasterUserName", value.asInstanceOf[js.Any])
+    def setRolesKeyUndefined: Self = StObject.set(x, "RolesKey", js.undefined)
     
     @scala.inline
-    def deleteMasterUserName: Self = this.set("MasterUserName", js.undefined)
+    def setSessionTimeoutMinutes(value: IntegerClass): Self = StObject.set(x, "SessionTimeoutMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRolesKey(value: String): Self = this.set("RolesKey", value.asInstanceOf[js.Any])
+    def setSessionTimeoutMinutesUndefined: Self = StObject.set(x, "SessionTimeoutMinutes", js.undefined)
     
     @scala.inline
-    def deleteRolesKey: Self = this.set("RolesKey", js.undefined)
+    def setSubjectKey(value: String): Self = StObject.set(x, "SubjectKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionTimeoutMinutes(value: IntegerClass): Self = this.set("SessionTimeoutMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionTimeoutMinutes: Self = this.set("SessionTimeoutMinutes", js.undefined)
-    
-    @scala.inline
-    def setSubjectKey(value: String): Self = this.set("SubjectKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubjectKey: Self = this.set("SubjectKey", js.undefined)
+    def setSubjectKeyUndefined: Self = StObject.set(x, "SubjectKey", js.undefined)
   }
 }

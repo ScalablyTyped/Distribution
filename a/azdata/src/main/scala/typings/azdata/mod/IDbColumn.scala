@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDbColumn extends js.Object {
+trait IDbColumn extends StObject {
   
   var allowDBNull: js.UndefOr[Boolean] = js.native
   
@@ -84,165 +85,153 @@ object IDbColumn {
   }
   
   @scala.inline
-  implicit class IDbColumnOps[Self <: IDbColumn] (val x: Self) extends AnyVal {
+  implicit class IDbColumnMutableBuilder[Self <: IDbColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowDBNull(value: Boolean): Self = StObject.set(x, "allowDBNull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowDBNullUndefined: Self = StObject.set(x, "allowDBNull", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseCatalogName(value: String): Self = StObject.set(x, "baseCatalogName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseCatalogName(value: String): Self = this.set("baseCatalogName", value.asInstanceOf[js.Any])
+    def setBaseColumnName(value: String): Self = StObject.set(x, "baseColumnName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseColumnName(value: String): Self = this.set("baseColumnName", value.asInstanceOf[js.Any])
+    def setBaseSchemaName(value: String): Self = StObject.set(x, "baseSchemaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseSchemaName(value: String): Self = this.set("baseSchemaName", value.asInstanceOf[js.Any])
+    def setBaseServerName(value: String): Self = StObject.set(x, "baseServerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseServerName(value: String): Self = this.set("baseServerName", value.asInstanceOf[js.Any])
+    def setBaseTableName(value: String): Self = StObject.set(x, "baseTableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseTableName(value: String): Self = this.set("baseTableName", value.asInstanceOf[js.Any])
+    def setColumnName(value: String): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnName(value: String): Self = this.set("columnName", value.asInstanceOf[js.Any])
+    def setColumnOrdinal(value: Double): Self = StObject.set(x, "columnOrdinal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: String): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    def setColumnOrdinalUndefined: Self = StObject.set(x, "columnOrdinal", js.undefined)
     
     @scala.inline
-    def setDataTypeName(value: String): Self = this.set("dataTypeName", value.asInstanceOf[js.Any])
+    def setColumnSize(value: Double): Self = StObject.set(x, "columnSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUdtAssemblyQualifiedName(value: String): Self = this.set("udtAssemblyQualifiedName", value.asInstanceOf[js.Any])
+    def setColumnSizeUndefined: Self = StObject.set(x, "columnSize", js.undefined)
     
     @scala.inline
-    def setAllowDBNull(value: Boolean): Self = this.set("allowDBNull", value.asInstanceOf[js.Any])
+    def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowDBNull: Self = this.set("allowDBNull", js.undefined)
+    def setDataTypeName(value: String): Self = StObject.set(x, "dataTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnOrdinal(value: Double): Self = this.set("columnOrdinal", value.asInstanceOf[js.Any])
+    def setIsAliased(value: Boolean): Self = StObject.set(x, "isAliased", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumnOrdinal: Self = this.set("columnOrdinal", js.undefined)
+    def setIsAliasedUndefined: Self = StObject.set(x, "isAliased", js.undefined)
     
     @scala.inline
-    def setColumnSize(value: Double): Self = this.set("columnSize", value.asInstanceOf[js.Any])
+    def setIsAutoIncrement(value: Boolean): Self = StObject.set(x, "isAutoIncrement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumnSize: Self = this.set("columnSize", js.undefined)
+    def setIsAutoIncrementUndefined: Self = StObject.set(x, "isAutoIncrement", js.undefined)
     
     @scala.inline
-    def setIsAliased(value: Boolean): Self = this.set("isAliased", value.asInstanceOf[js.Any])
+    def setIsBytes(value: Boolean): Self = StObject.set(x, "isBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsAliased: Self = this.set("isAliased", js.undefined)
+    def setIsBytesUndefined: Self = StObject.set(x, "isBytes", js.undefined)
     
     @scala.inline
-    def setIsAutoIncrement(value: Boolean): Self = this.set("isAutoIncrement", value.asInstanceOf[js.Any])
+    def setIsChars(value: Boolean): Self = StObject.set(x, "isChars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsAutoIncrement: Self = this.set("isAutoIncrement", js.undefined)
+    def setIsCharsUndefined: Self = StObject.set(x, "isChars", js.undefined)
     
     @scala.inline
-    def setIsBytes(value: Boolean): Self = this.set("isBytes", value.asInstanceOf[js.Any])
+    def setIsExpression(value: Boolean): Self = StObject.set(x, "isExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsBytes: Self = this.set("isBytes", js.undefined)
+    def setIsExpressionUndefined: Self = StObject.set(x, "isExpression", js.undefined)
     
     @scala.inline
-    def setIsChars(value: Boolean): Self = this.set("isChars", value.asInstanceOf[js.Any])
+    def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsChars: Self = this.set("isChars", js.undefined)
+    def setIsHiddenUndefined: Self = StObject.set(x, "isHidden", js.undefined)
     
     @scala.inline
-    def setIsExpression(value: Boolean): Self = this.set("isExpression", value.asInstanceOf[js.Any])
+    def setIsIdentity(value: Boolean): Self = StObject.set(x, "isIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsExpression: Self = this.set("isExpression", js.undefined)
+    def setIsIdentityUndefined: Self = StObject.set(x, "isIdentity", js.undefined)
     
     @scala.inline
-    def setIsHidden(value: Boolean): Self = this.set("isHidden", value.asInstanceOf[js.Any])
+    def setIsJson(value: Boolean): Self = StObject.set(x, "isJson", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsHidden: Self = this.set("isHidden", js.undefined)
+    def setIsJsonUndefined: Self = StObject.set(x, "isJson", js.undefined)
     
     @scala.inline
-    def setIsIdentity(value: Boolean): Self = this.set("isIdentity", value.asInstanceOf[js.Any])
+    def setIsKey(value: Boolean): Self = StObject.set(x, "isKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsIdentity: Self = this.set("isIdentity", js.undefined)
+    def setIsKeyUndefined: Self = StObject.set(x, "isKey", js.undefined)
     
     @scala.inline
-    def setIsJson(value: Boolean): Self = this.set("isJson", value.asInstanceOf[js.Any])
+    def setIsLong(value: Boolean): Self = StObject.set(x, "isLong", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsJson: Self = this.set("isJson", js.undefined)
+    def setIsLongUndefined: Self = StObject.set(x, "isLong", js.undefined)
     
     @scala.inline
-    def setIsKey(value: Boolean): Self = this.set("isKey", value.asInstanceOf[js.Any])
+    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsKey: Self = this.set("isKey", js.undefined)
+    def setIsReadOnlyUndefined: Self = StObject.set(x, "isReadOnly", js.undefined)
     
     @scala.inline
-    def setIsLong(value: Boolean): Self = this.set("isLong", value.asInstanceOf[js.Any])
+    def setIsSqlVariant(value: Boolean): Self = StObject.set(x, "isSqlVariant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsLong: Self = this.set("isLong", js.undefined)
+    def setIsSqlVariantUndefined: Self = StObject.set(x, "isSqlVariant", js.undefined)
     
     @scala.inline
-    def setIsReadOnly(value: Boolean): Self = this.set("isReadOnly", value.asInstanceOf[js.Any])
+    def setIsUdt(value: Boolean): Self = StObject.set(x, "isUdt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsReadOnly: Self = this.set("isReadOnly", js.undefined)
+    def setIsUdtUndefined: Self = StObject.set(x, "isUdt", js.undefined)
     
     @scala.inline
-    def setIsSqlVariant(value: Boolean): Self = this.set("isSqlVariant", value.asInstanceOf[js.Any])
+    def setIsUnique(value: Boolean): Self = StObject.set(x, "isUnique", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsSqlVariant: Self = this.set("isSqlVariant", js.undefined)
+    def setIsUniqueUndefined: Self = StObject.set(x, "isUnique", js.undefined)
     
     @scala.inline
-    def setIsUdt(value: Boolean): Self = this.set("isUdt", value.asInstanceOf[js.Any])
+    def setIsXml(value: Boolean): Self = StObject.set(x, "isXml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsUdt: Self = this.set("isUdt", js.undefined)
+    def setIsXmlUndefined: Self = StObject.set(x, "isXml", js.undefined)
     
     @scala.inline
-    def setIsUnique(value: Boolean): Self = this.set("isUnique", value.asInstanceOf[js.Any])
+    def setNumericPrecision(value: Double): Self = StObject.set(x, "numericPrecision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsUnique: Self = this.set("isUnique", js.undefined)
+    def setNumericPrecisionUndefined: Self = StObject.set(x, "numericPrecision", js.undefined)
     
     @scala.inline
-    def setIsXml(value: Boolean): Self = this.set("isXml", value.asInstanceOf[js.Any])
+    def setNumericScale(value: Double): Self = StObject.set(x, "numericScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsXml: Self = this.set("isXml", js.undefined)
+    def setNumericScaleUndefined: Self = StObject.set(x, "numericScale", js.undefined)
     
     @scala.inline
-    def setNumericPrecision(value: Double): Self = this.set("numericPrecision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumericPrecision: Self = this.set("numericPrecision", js.undefined)
-    
-    @scala.inline
-    def setNumericScale(value: Double): Self = this.set("numericScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumericScale: Self = this.set("numericScale", js.undefined)
+    def setUdtAssemblyQualifiedName(value: String): Self = StObject.set(x, "udtAssemblyQualifiedName", value.asInstanceOf[js.Any])
   }
 }

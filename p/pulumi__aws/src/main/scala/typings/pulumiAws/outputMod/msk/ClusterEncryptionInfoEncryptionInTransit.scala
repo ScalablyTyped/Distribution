@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.msk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterEncryptionInfoEncryptionInTransit extends js.Object {
+trait ClusterEncryptionInfoEncryptionInTransit extends StObject {
   
   /**
     * Encryption setting for data in transit between clients and brokers. Valid values: `TLS`, `TLS_PLAINTEXT`, and `PLAINTEXT`. Default value is `TLS`.
@@ -26,30 +27,18 @@ object ClusterEncryptionInfoEncryptionInTransit {
   }
   
   @scala.inline
-  implicit class ClusterEncryptionInfoEncryptionInTransitOps[Self <: ClusterEncryptionInfoEncryptionInTransit] (val x: Self) extends AnyVal {
+  implicit class ClusterEncryptionInfoEncryptionInTransitMutableBuilder[Self <: ClusterEncryptionInfoEncryptionInTransit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientBroker(value: String): Self = StObject.set(x, "clientBroker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientBrokerUndefined: Self = StObject.set(x, "clientBroker", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInCluster(value: Boolean): Self = StObject.set(x, "inCluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientBroker(value: String): Self = this.set("clientBroker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientBroker: Self = this.set("clientBroker", js.undefined)
-    
-    @scala.inline
-    def setInCluster(value: Boolean): Self = this.set("inCluster", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInCluster: Self = this.set("inCluster", js.undefined)
+    def setInClusterUndefined: Self = StObject.set(x, "inCluster", js.undefined)
   }
 }

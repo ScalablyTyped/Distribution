@@ -1,11 +1,12 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaInternalIpOwner extends js.Object {
+trait SchemaInternalIpOwner extends StObject {
   
   /**
     * IP CIDR range being owned.
@@ -31,39 +32,27 @@ object SchemaInternalIpOwner {
   }
   
   @scala.inline
-  implicit class SchemaInternalIpOwnerOps[Self <: SchemaInternalIpOwner] (val x: Self) extends AnyVal {
+  implicit class SchemaInternalIpOwnerMutableBuilder[Self <: SchemaInternalIpOwner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIpCidrRangeUndefined: Self = StObject.set(x, "ipCidrRange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpCidrRange(value: String): Self = this.set("ipCidrRange", value.asInstanceOf[js.Any])
+    def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
     
     @scala.inline
-    def deleteIpCidrRange: Self = this.set("ipCidrRange", js.undefined)
+    def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
     
     @scala.inline
-    def setOwnersVarargs(value: String*): Self = this.set("owners", js.Array(value :_*))
+    def setSystemOwned(value: Boolean): Self = StObject.set(x, "systemOwned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwners(value: js.Array[String]): Self = this.set("owners", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwners: Self = this.set("owners", js.undefined)
-    
-    @scala.inline
-    def setSystemOwned(value: Boolean): Self = this.set("systemOwned", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystemOwned: Self = this.set("systemOwned", js.undefined)
+    def setSystemOwnedUndefined: Self = StObject.set(x, "systemOwned", js.undefined)
   }
 }

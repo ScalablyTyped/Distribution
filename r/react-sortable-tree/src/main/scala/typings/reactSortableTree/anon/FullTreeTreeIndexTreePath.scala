@@ -2,13 +2,14 @@ package typings.reactSortableTree.anon
 
 import typings.reactSortableTree.mod.NumberOrStringArray
 import typings.reactSortableTree.mod.TreeItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-sortable-tree.react-sortable-tree.FullTree & react-sortable-tree.react-sortable-tree.TreeIndex & react-sortable-tree.react-sortable-tree.TreePath & {  parentNode :react-sortable-tree.react-sortable-tree.TreeItem} */
 @js.native
-trait FullTreeTreeIndexTreePath extends js.Object {
+trait FullTreeTreeIndexTreePath extends StObject {
   
   var parentNode: TreeItem = js.native
   
@@ -27,36 +28,24 @@ object FullTreeTreeIndexTreePath {
   }
   
   @scala.inline
-  implicit class FullTreeTreeIndexTreePathOps[Self <: FullTreeTreeIndexTreePath] (val x: Self) extends AnyVal {
+  implicit class FullTreeTreeIndexTreePathMutableBuilder[Self <: FullTreeTreeIndexTreePath] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParentNode(value: TreeItem): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPath(value: NumberOrStringArray): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
     
     @scala.inline
-    def setParentNode(value: TreeItem): Self = this.set("parentNode", value.asInstanceOf[js.Any])
+    def setTreeData(value: js.Array[TreeItem]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathVarargs(value: (String | Double)*): Self = this.set("path", js.Array(value :_*))
+    def setTreeDataVarargs(value: TreeItem*): Self = StObject.set(x, "treeData", js.Array(value :_*))
     
     @scala.inline
-    def setPath(value: NumberOrStringArray): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTreeDataVarargs(value: TreeItem*): Self = this.set("treeData", js.Array(value :_*))
-    
-    @scala.inline
-    def setTreeData(value: js.Array[TreeItem]): Self = this.set("treeData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTreeIndex(value: Double): Self = this.set("treeIndex", value.asInstanceOf[js.Any])
+    def setTreeIndex(value: Double): Self = StObject.set(x, "treeIndex", value.asInstanceOf[js.Any])
   }
 }

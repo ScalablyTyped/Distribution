@@ -1,13 +1,12 @@
 package typings.awsSdkClientSqsNode
 
 import typings.awsSdkClientSqsNode.typesQueueDoesNotExistMod.QueueDoesNotExist
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-sqs-node/types/GetQueueUrlExceptionsUnion", JSImport.Namespace)
-@js.native
-object getQueueUrlExceptionsUnionMod extends js.Object {
+object getQueueUrlExceptionsUnionMod {
   
   type GetQueueUrlExceptionsUnion = QueueDoesNotExist
 }

@@ -1,21 +1,22 @@
 package typings.lazypipe
 
 import typings.node.NodeJS.ReadWriteStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lazypipe", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Initializes a lazypipe.
     */
+  @JSImport("lazypipe", JSImport.Namespace)
+  @js.native
   def apply(): IPipelineBuilder = js.native
   
   @js.native
-  trait IPipelineBuilder extends js.Object {
+  trait IPipelineBuilder extends StObject {
     
     /**
       * Returns a stream where all the internal steps are processed sequentially

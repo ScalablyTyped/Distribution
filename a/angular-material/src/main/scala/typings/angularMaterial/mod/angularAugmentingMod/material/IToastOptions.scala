@@ -8,12 +8,13 @@ import typings.angular.mod.IScope
 import typings.angular.mod.Injectable
 import typings.angularMaterial.angularMaterialBooleans.`false`
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IToastOptions extends js.Object {
+trait IToastOptions extends StObject {
   
   var autoWrap: js.UndefOr[Boolean] = js.native
   
@@ -23,20 +24,20 @@ trait IToastOptions extends js.Object {
   
   var controllerAs: js.UndefOr[String] = js.native
   
-   // default: false
+  // default: false
   var hideDelay: js.UndefOr[Double | `false`] = js.native
   
   var locals: js.UndefOr[StringDictionary[js.Any]] = js.native
   
   var parent: js.UndefOr[String | Element | JQuery] = js.native
   
-   // default (ms): 3000
+  // default (ms): 3000
   var position: js.UndefOr[String] = js.native
   
-   // default: new child scope
+  // default: new child scope
   var preserveScope: js.UndefOr[Boolean] = js.native
   
-   // default: false
+  // default: false
   var resolve: js.UndefOr[ResolveObject] = js.native
   
   var scope: js.UndefOr[IScope] = js.native
@@ -45,7 +46,7 @@ trait IToastOptions extends js.Object {
   
   var templateUrl: js.UndefOr[String] = js.native
   
-   // any combination of 'bottom'/'left'/'top'/'right'/'fit'; default: 'bottom left'
+  // any combination of 'bottom'/'left'/'top'/'right'/'fit'; default: 'bottom left'
   var toastClass: js.UndefOr[String] = js.native
 }
 object IToastOptions {
@@ -57,108 +58,96 @@ object IToastOptions {
   }
   
   @scala.inline
-  implicit class IToastOptionsOps[Self <: IToastOptions] (val x: Self) extends AnyVal {
+  implicit class IToastOptionsMutableBuilder[Self <: IToastOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoWrap(value: Boolean): Self = StObject.set(x, "autoWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoWrapUndefined: Self = StObject.set(x, "autoWrap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBindToController(value: Boolean): Self = StObject.set(x, "bindToController", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoWrap(value: Boolean): Self = this.set("autoWrap", value.asInstanceOf[js.Any])
+    def setBindToControllerUndefined: Self = StObject.set(x, "bindToController", js.undefined)
     
     @scala.inline
-    def deleteAutoWrap: Self = this.set("autoWrap", js.undefined)
+    def setController(value: String | Injectable[IControllerConstructor]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindToController(value: Boolean): Self = this.set("bindToController", value.asInstanceOf[js.Any])
+    def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBindToController: Self = this.set("bindToController", js.undefined)
+    def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
     
     @scala.inline
-    def setControllerVarargs(value: (String | IControllerConstructor)*): Self = this.set("controller", js.Array(value :_*))
+    def setControllerFunction1(value: /* repeated */ js.Any => Unit | IController): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setControllerFunction1(value: /* repeated */ js.Any => Unit | IController): Self = this.set("controller", js.Any.fromFunction1(value))
+    def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
     @scala.inline
-    def setController(value: String | Injectable[IControllerConstructor]): Self = this.set("controller", value.asInstanceOf[js.Any])
+    def setControllerVarargs(value: (String | IControllerConstructor)*): Self = StObject.set(x, "controller", js.Array(value :_*))
     
     @scala.inline
-    def deleteController: Self = this.set("controller", js.undefined)
+    def setHideDelay(value: Double | `false`): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControllerAs(value: String): Self = this.set("controllerAs", value.asInstanceOf[js.Any])
+    def setHideDelayUndefined: Self = StObject.set(x, "hideDelay", js.undefined)
     
     @scala.inline
-    def deleteControllerAs: Self = this.set("controllerAs", js.undefined)
+    def setLocals(value: StringDictionary[js.Any]): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideDelay(value: Double | `false`): Self = this.set("hideDelay", value.asInstanceOf[js.Any])
+    def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
     
     @scala.inline
-    def deleteHideDelay: Self = this.set("hideDelay", js.undefined)
+    def setParent(value: String | Element | JQuery): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocals(value: StringDictionary[js.Any]): Self = this.set("locals", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteLocals: Self = this.set("locals", js.undefined)
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: String | Element | JQuery): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setPreserveScope(value: Boolean): Self = StObject.set(x, "preserveScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPreserveScopeUndefined: Self = StObject.set(x, "preserveScope", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setResolve(value: ResolveObject): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveScope(value: Boolean): Self = this.set("preserveScope", value.asInstanceOf[js.Any])
+    def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
     
     @scala.inline
-    def deletePreserveScope: Self = this.set("preserveScope", js.undefined)
+    def setScope(value: IScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolve(value: ResolveObject): Self = this.set("resolve", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteResolve: Self = this.set("resolve", js.undefined)
+    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: IScope): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setToastClass(value: String): Self = StObject.set(x, "toastClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateUrl(value: String): Self = this.set("templateUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateUrl: Self = this.set("templateUrl", js.undefined)
-    
-    @scala.inline
-    def setToastClass(value: String): Self = this.set("toastClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToastClass: Self = this.set("toastClass", js.undefined)
+    def setToastClassUndefined: Self = StObject.set(x, "toastClass", js.undefined)
   }
 }

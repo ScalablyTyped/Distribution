@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribePatchGroupsResult extends js.Object {
+trait DescribePatchGroupsResult extends StObject {
   
   /**
     * Each entry in the array contains: PatchGroup: string (between 1 and 256 characters, Regex: ^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$) PatchBaselineIdentity: A PatchBaselineIdentity element. 
@@ -26,33 +27,21 @@ object DescribePatchGroupsResult {
   }
   
   @scala.inline
-  implicit class DescribePatchGroupsResultOps[Self <: DescribePatchGroupsResult] (val x: Self) extends AnyVal {
+  implicit class DescribePatchGroupsResultMutableBuilder[Self <: DescribePatchGroupsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMappings(value: PatchGroupPatchBaselineMappingList): Self = StObject.set(x, "Mappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMappingsUndefined: Self = StObject.set(x, "Mappings", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMappingsVarargs(value: PatchGroupPatchBaselineMapping*): Self = StObject.set(x, "Mappings", js.Array(value :_*))
     
     @scala.inline
-    def setMappingsVarargs(value: PatchGroupPatchBaselineMapping*): Self = this.set("Mappings", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMappings(value: PatchGroupPatchBaselineMappingList): Self = this.set("Mappings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMappings: Self = this.set("Mappings", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

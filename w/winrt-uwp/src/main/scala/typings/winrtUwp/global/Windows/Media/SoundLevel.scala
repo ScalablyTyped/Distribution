@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the sound level of the capture or render stream. */
 @JSGlobal("Windows.Media.SoundLevel")
 @js.native
-object SoundLevel extends js.Object {
+object SoundLevel extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.SoundLevel with Double] = js.native

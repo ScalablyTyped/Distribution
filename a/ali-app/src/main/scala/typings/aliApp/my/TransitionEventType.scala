@@ -1,5 +1,6 @@
 package typings.aliApp.my
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.aliApp.aliAppStrings.animationiteration
   - typings.aliApp.aliAppStrings.animationend
 */
-trait TransitionEventType extends js.Object
+trait TransitionEventType extends StObject
 object TransitionEventType {
   
   @scala.inline

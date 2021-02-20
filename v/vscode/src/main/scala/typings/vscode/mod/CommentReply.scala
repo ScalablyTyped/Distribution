@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommentReply extends js.Object {
+trait CommentReply extends StObject {
   
   /**
     * The value in the comment editor
@@ -26,24 +27,12 @@ object CommentReply {
   }
   
   @scala.inline
-  implicit class CommentReplyOps[Self <: CommentReply] (val x: Self) extends AnyVal {
+  implicit class CommentReplyMutableBuilder[Self <: CommentReply] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThread(value: CommentThread): Self = this.set("thread", value.asInstanceOf[js.Any])
+    def setThread(value: CommentThread): Self = StObject.set(x, "thread", value.asInstanceOf[js.Any])
   }
 }

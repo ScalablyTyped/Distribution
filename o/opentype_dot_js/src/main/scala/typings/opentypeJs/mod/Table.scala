@@ -1,6 +1,7 @@
 package typings.opentypeJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,39 +35,27 @@ object Table {
   }
   
   @scala.inline
-  implicit class TableOps[Self <: Table] (val x: Self) extends AnyVal {
+  implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncode(value: () => js.Array[Double]): Self = StObject.set(x, "encode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setEncode(value: () => js.Array[Double]): Self = this.set("encode", js.Any.fromFunction0(value))
+    def setSizeOf(value: () => Double): Self = StObject.set(x, "sizeOf", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFieldsVarargs(value: Field*): Self = this.set("fields", js.Array(value :_*))
+    def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: js.Array[Field]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setTables(value: js.Array[Table]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeOf(value: () => Double): Self = this.set("sizeOf", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTableName(value: String): Self = this.set("tableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTablesVarargs(value: Table*): Self = this.set("tables", js.Array(value :_*))
-    
-    @scala.inline
-    def setTables(value: js.Array[Table]): Self = this.set("tables", value.asInstanceOf[js.Any])
+    def setTablesVarargs(value: Table*): Self = StObject.set(x, "tables", js.Array(value :_*))
   }
 }

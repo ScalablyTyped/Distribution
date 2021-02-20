@@ -1,12 +1,13 @@
 package typings.devexpressAspnetcoreBootstrap.global.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("DevExpress.AspNetCore.WeekDays")
 @js.native
-object WeekDays extends js.Object {
+object WeekDays extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.WeekDays with Double] = js.native

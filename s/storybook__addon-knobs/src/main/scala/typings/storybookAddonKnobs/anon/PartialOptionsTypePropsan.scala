@@ -2,13 +2,14 @@ package typings.storybookAddonKnobs.anon
 
 import typings.storybookAddonKnobs.optionsMod.OptionsKnobOptionsDisplay
 import typings.storybookAddonKnobs.optionsMod.OptionsTypeKnob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Options.OptionsTypeProps<any>> */
 @js.native
-trait PartialOptionsTypePropsan extends js.Object {
+trait PartialOptionsTypePropsan extends StObject {
   
   var display: js.UndefOr[OptionsKnobOptionsDisplay] = js.native
   
@@ -25,36 +26,24 @@ object PartialOptionsTypePropsan {
   }
   
   @scala.inline
-  implicit class PartialOptionsTypePropsanOps[Self <: PartialOptionsTypePropsan] (val x: Self) extends AnyVal {
+  implicit class PartialOptionsTypePropsanMutableBuilder[Self <: PartialOptionsTypePropsan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplay(value: OptionsKnobOptionsDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKnob(value: OptionsTypeKnob[_]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay(value: OptionsKnobOptionsDisplay): Self = this.set("display", value.asInstanceOf[js.Any])
+    def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
     
     @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def setOnChange(value: /* value */ js.Any => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKnob(value: OptionsTypeKnob[_]): Self = this.set("knob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKnob: Self = this.set("knob", js.undefined)
-    
-    @scala.inline
-    def setOnChange(value: /* value */ js.Any => _): Self = this.set("onChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
   }
 }

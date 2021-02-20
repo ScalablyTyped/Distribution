@@ -1,5 +1,6 @@
 package typings.googleapis.firestoreV1Mod.firestoreV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The index configuration for this field.
   */
 @js.native
-trait SchemaGoogleFirestoreAdminV1IndexConfig extends js.Object {
+trait SchemaGoogleFirestoreAdminV1IndexConfig extends StObject {
   
   /**
     * Output only. Specifies the resource name of the `Field` from which this
@@ -48,45 +49,33 @@ object SchemaGoogleFirestoreAdminV1IndexConfig {
   }
   
   @scala.inline
-  implicit class SchemaGoogleFirestoreAdminV1IndexConfigOps[Self <: SchemaGoogleFirestoreAdminV1IndexConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleFirestoreAdminV1IndexConfigMutableBuilder[Self <: SchemaGoogleFirestoreAdminV1IndexConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAncestorField(value: String): Self = StObject.set(x, "ancestorField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAncestorFieldUndefined: Self = StObject.set(x, "ancestorField", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexes(value: js.Array[SchemaGoogleFirestoreAdminV1Index]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAncestorField(value: String): Self = this.set("ancestorField", value.asInstanceOf[js.Any])
+    def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
     
     @scala.inline
-    def deleteAncestorField: Self = this.set("ancestorField", js.undefined)
+    def setIndexesVarargs(value: SchemaGoogleFirestoreAdminV1Index*): Self = StObject.set(x, "indexes", js.Array(value :_*))
     
     @scala.inline
-    def setIndexesVarargs(value: SchemaGoogleFirestoreAdminV1Index*): Self = this.set("indexes", js.Array(value :_*))
+    def setReverting(value: Boolean): Self = StObject.set(x, "reverting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexes(value: js.Array[SchemaGoogleFirestoreAdminV1Index]): Self = this.set("indexes", value.asInstanceOf[js.Any])
+    def setRevertingUndefined: Self = StObject.set(x, "reverting", js.undefined)
     
     @scala.inline
-    def deleteIndexes: Self = this.set("indexes", js.undefined)
+    def setUsesAncestorConfig(value: Boolean): Self = StObject.set(x, "usesAncestorConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReverting(value: Boolean): Self = this.set("reverting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReverting: Self = this.set("reverting", js.undefined)
-    
-    @scala.inline
-    def setUsesAncestorConfig(value: Boolean): Self = this.set("usesAncestorConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsesAncestorConfig: Self = this.set("usesAncestorConfig", js.undefined)
+    def setUsesAncestorConfigUndefined: Self = StObject.set(x, "usesAncestorConfig", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.wafregionalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegexPatternSetUpdate extends js.Object {
+trait RegexPatternSetUpdate extends StObject {
   
   /**
     * Specifies whether to insert or delete a RegexPatternString.
@@ -26,24 +27,12 @@ object RegexPatternSetUpdate {
   }
   
   @scala.inline
-  implicit class RegexPatternSetUpdateOps[Self <: RegexPatternSetUpdate] (val x: Self) extends AnyVal {
+  implicit class RegexPatternSetUpdateMutableBuilder[Self <: RegexPatternSetUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAction(value: ChangeAction): Self = this.set("Action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegexPatternString(value: RegexPatternString): Self = this.set("RegexPatternString", value.asInstanceOf[js.Any])
+    def setRegexPatternString(value: RegexPatternString): Self = StObject.set(x, "RegexPatternString", value.asInstanceOf[js.Any])
   }
 }

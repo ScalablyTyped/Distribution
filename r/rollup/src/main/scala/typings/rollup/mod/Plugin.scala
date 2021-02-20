@@ -3,6 +3,7 @@ package typings.rollup.mod
 import typings.rollup.anon.CustomResolution
 import typings.rollup.anon.Left
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<rollup.rollup.PluginHooks> */
 /* Inlined parent std.Partial<rollup.rollup.OutputPluginValueHooks> */
 @js.native
-trait Plugin extends js.Object {
+trait Plugin extends StObject {
   
   // for inter-plugin communication
   var api: js.UndefOr[js.Any] = js.native
@@ -126,48 +127,33 @@ object Plugin {
   }
   
   @scala.inline
-  implicit class PluginOps[Self <: Plugin] (val x: Self) extends AnyVal {
+  implicit class PluginMutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApi(value: js.Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAugmentChunkHash(value: js.ThisFunction1[/* this */ PluginContext, /* chunk */ PreRenderedChunk, String | Unit]): Self = StObject.set(x, "augmentChunkHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setAugmentChunkHashUndefined: Self = StObject.set(x, "augmentChunkHash", js.undefined)
     
     @scala.inline
-    def setApi(value: js.Any): Self = this.set("api", value.asInstanceOf[js.Any])
+    def setBanner(value: AddonHook): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApi: Self = this.set("api", js.undefined)
-    
-    @scala.inline
-    def setAugmentChunkHash(value: js.ThisFunction1[/* this */ PluginContext, /* chunk */ PreRenderedChunk, String | Unit]): Self = this.set("augmentChunkHash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAugmentChunkHash: Self = this.set("augmentChunkHash", js.undefined)
-    
-    @scala.inline
-    def setBanner(value: AddonHook): Self = this.set("banner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBanner: Self = this.set("banner", js.undefined)
+    def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
     
     @scala.inline
     def setBuildEnd(
       value: js.ThisFunction1[/* this */ PluginContext, /* err */ js.UndefOr[Error], js.Promise[Unit] | Unit]
-    ): Self = this.set("buildEnd", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "buildEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBuildEnd: Self = this.set("buildEnd", js.undefined)
+    def setBuildEndUndefined: Self = StObject.set(x, "buildEnd", js.undefined)
     
     @scala.inline
     def setBuildStart(
@@ -176,28 +162,28 @@ object Plugin {
           /* options */ NormalizedInputOptions, 
           js.Promise[Unit] | Unit
         ]
-    ): Self = this.set("buildStart", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "buildStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBuildStart: Self = this.set("buildStart", js.undefined)
+    def setBuildStartUndefined: Self = StObject.set(x, "buildStart", js.undefined)
     
     @scala.inline
-    def setCacheKey(value: String): Self = this.set("cacheKey", value.asInstanceOf[js.Any])
+    def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCacheKey: Self = this.set("cacheKey", js.undefined)
+    def setCacheKeyUndefined: Self = StObject.set(x, "cacheKey", js.undefined)
     
     @scala.inline
-    def setCloseWatcher(value: js.ThisFunction0[/* this */ PluginContext, Unit]): Self = this.set("closeWatcher", value.asInstanceOf[js.Any])
+    def setCloseWatcher(value: js.ThisFunction0[/* this */ PluginContext, Unit]): Self = StObject.set(x, "closeWatcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloseWatcher: Self = this.set("closeWatcher", js.undefined)
+    def setCloseWatcherUndefined: Self = StObject.set(x, "closeWatcher", js.undefined)
     
     @scala.inline
-    def setFooter(value: AddonHook): Self = this.set("footer", value.asInstanceOf[js.Any])
+    def setFooter(value: AddonHook): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFooter: Self = this.set("footer", js.undefined)
+    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
     @scala.inline
     def setGenerateBundle(
@@ -208,28 +194,31 @@ object Plugin {
           /* isWrite */ Boolean, 
           Unit | js.Promise[Unit]
         ]
-    ): Self = this.set("generateBundle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "generateBundle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGenerateBundle: Self = this.set("generateBundle", js.undefined)
+    def setGenerateBundleUndefined: Self = StObject.set(x, "generateBundle", js.undefined)
     
     @scala.inline
-    def setIntro(value: AddonHook): Self = this.set("intro", value.asInstanceOf[js.Any])
+    def setIntro(value: AddonHook): Self = StObject.set(x, "intro", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIntro: Self = this.set("intro", js.undefined)
+    def setIntroUndefined: Self = StObject.set(x, "intro", js.undefined)
     
     @scala.inline
-    def setLoad(value: LoadHook): Self = this.set("load", value.asInstanceOf[js.Any])
+    def setLoad(value: LoadHook): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoad: Self = this.set("load", js.undefined)
+    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
     @scala.inline
-    def setModuleParsed(value: ModuleParsedHook): Self = this.set("moduleParsed", value.asInstanceOf[js.Any])
+    def setModuleParsed(value: ModuleParsedHook): Self = StObject.set(x, "moduleParsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModuleParsed: Self = this.set("moduleParsed", js.undefined)
+    def setModuleParsedUndefined: Self = StObject.set(x, "moduleParsed", js.undefined)
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOptions(
@@ -238,10 +227,10 @@ object Plugin {
           /* options */ InputOptions, 
           js.UndefOr[(js.Promise[js.UndefOr[InputOptions | Null]]) | InputOptions | Null]
         ]
-    ): Self = this.set("options", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
     def setOutputOptions(
@@ -250,38 +239,38 @@ object Plugin {
           /* options */ OutputOptions, 
           js.UndefOr[OutputOptions | Null]
         ]
-    ): Self = this.set("outputOptions", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "outputOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutputOptions: Self = this.set("outputOptions", js.undefined)
+    def setOutputOptionsUndefined: Self = StObject.set(x, "outputOptions", js.undefined)
     
     @scala.inline
-    def setOutro(value: AddonHook): Self = this.set("outro", value.asInstanceOf[js.Any])
+    def setOutro(value: AddonHook): Self = StObject.set(x, "outro", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutro: Self = this.set("outro", js.undefined)
+    def setOutroUndefined: Self = StObject.set(x, "outro", js.undefined)
     
     @scala.inline
-    def setRenderChunk(value: RenderChunkHook): Self = this.set("renderChunk", value.asInstanceOf[js.Any])
+    def setRenderChunk(value: RenderChunkHook): Self = StObject.set(x, "renderChunk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenderChunk: Self = this.set("renderChunk", js.undefined)
+    def setRenderChunkUndefined: Self = StObject.set(x, "renderChunk", js.undefined)
     
     @scala.inline
     def setRenderDynamicImport(
       value: js.ThisFunction1[/* this */ PluginContext, /* options */ CustomResolution, js.UndefOr[Left | Null]]
-    ): Self = this.set("renderDynamicImport", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "renderDynamicImport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenderDynamicImport: Self = this.set("renderDynamicImport", js.undefined)
+    def setRenderDynamicImportUndefined: Self = StObject.set(x, "renderDynamicImport", js.undefined)
     
     @scala.inline
     def setRenderError(
       value: js.ThisFunction1[/* this */ PluginContext, /* err */ js.UndefOr[Error], js.Promise[Unit] | Unit]
-    ): Self = this.set("renderError", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "renderError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenderError: Self = this.set("renderError", js.undefined)
+    def setRenderErrorUndefined: Self = StObject.set(x, "renderError", js.undefined)
     
     @scala.inline
     def setRenderStart(
@@ -291,52 +280,52 @@ object Plugin {
           /* inputOptions */ NormalizedInputOptions, 
           js.Promise[Unit] | Unit
         ]
-    ): Self = this.set("renderStart", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "renderStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenderStart: Self = this.set("renderStart", js.undefined)
+    def setRenderStartUndefined: Self = StObject.set(x, "renderStart", js.undefined)
     
     @scala.inline
-    def setResolveAssetUrl(value: ResolveAssetUrlHook): Self = this.set("resolveAssetUrl", value.asInstanceOf[js.Any])
+    def setResolveAssetUrl(value: ResolveAssetUrlHook): Self = StObject.set(x, "resolveAssetUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResolveAssetUrl: Self = this.set("resolveAssetUrl", js.undefined)
+    def setResolveAssetUrlUndefined: Self = StObject.set(x, "resolveAssetUrl", js.undefined)
     
     @scala.inline
-    def setResolveDynamicImport(value: ResolveDynamicImportHook): Self = this.set("resolveDynamicImport", value.asInstanceOf[js.Any])
+    def setResolveDynamicImport(value: ResolveDynamicImportHook): Self = StObject.set(x, "resolveDynamicImport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResolveDynamicImport: Self = this.set("resolveDynamicImport", js.undefined)
+    def setResolveDynamicImportUndefined: Self = StObject.set(x, "resolveDynamicImport", js.undefined)
     
     @scala.inline
-    def setResolveFileUrl(value: ResolveFileUrlHook): Self = this.set("resolveFileUrl", value.asInstanceOf[js.Any])
+    def setResolveFileUrl(value: ResolveFileUrlHook): Self = StObject.set(x, "resolveFileUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResolveFileUrl: Self = this.set("resolveFileUrl", js.undefined)
+    def setResolveFileUrlUndefined: Self = StObject.set(x, "resolveFileUrl", js.undefined)
     
     @scala.inline
-    def setResolveId(value: ResolveIdHook): Self = this.set("resolveId", value.asInstanceOf[js.Any])
+    def setResolveId(value: ResolveIdHook): Self = StObject.set(x, "resolveId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResolveId: Self = this.set("resolveId", js.undefined)
+    def setResolveIdUndefined: Self = StObject.set(x, "resolveId", js.undefined)
     
     @scala.inline
-    def setResolveImportMeta(value: ResolveImportMetaHook): Self = this.set("resolveImportMeta", value.asInstanceOf[js.Any])
+    def setResolveImportMeta(value: ResolveImportMetaHook): Self = StObject.set(x, "resolveImportMeta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResolveImportMeta: Self = this.set("resolveImportMeta", js.undefined)
+    def setResolveImportMetaUndefined: Self = StObject.set(x, "resolveImportMeta", js.undefined)
     
     @scala.inline
-    def setTransform(value: TransformHook): Self = this.set("transform", value.asInstanceOf[js.Any])
+    def setTransform(value: TransformHook): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
     @scala.inline
-    def setWatchChange(value: WatchChangeHook): Self = this.set("watchChange", value.asInstanceOf[js.Any])
+    def setWatchChange(value: WatchChangeHook): Self = StObject.set(x, "watchChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWatchChange: Self = this.set("watchChange", js.undefined)
+    def setWatchChangeUndefined: Self = StObject.set(x, "watchChange", js.undefined)
     
     @scala.inline
     def setWriteBundle(
@@ -346,9 +335,9 @@ object Plugin {
           /* bundle */ OutputBundle, 
           Unit | js.Promise[Unit]
         ]
-    ): Self = this.set("writeBundle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "writeBundle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWriteBundle: Self = this.set("writeBundle", js.undefined)
+    def setWriteBundleUndefined: Self = StObject.set(x, "writeBundle", js.undefined)
   }
 }

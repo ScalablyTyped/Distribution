@@ -1,5 +1,6 @@
 package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Kubernetes Engine service configuration.
   */
 @js.native
-trait SchemaServerConfig extends js.Object {
+trait SchemaServerConfig extends StObject {
   
   /**
     * Version of Kubernetes the service deploys by default.
@@ -44,57 +45,45 @@ object SchemaServerConfig {
   }
   
   @scala.inline
-  implicit class SchemaServerConfigOps[Self <: SchemaServerConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaServerConfigMutableBuilder[Self <: SchemaServerConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultClusterVersion(value: String): Self = StObject.set(x, "defaultClusterVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultClusterVersionUndefined: Self = StObject.set(x, "defaultClusterVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultImageType(value: String): Self = StObject.set(x, "defaultImageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultClusterVersion(value: String): Self = this.set("defaultClusterVersion", value.asInstanceOf[js.Any])
+    def setDefaultImageTypeUndefined: Self = StObject.set(x, "defaultImageType", js.undefined)
     
     @scala.inline
-    def deleteDefaultClusterVersion: Self = this.set("defaultClusterVersion", js.undefined)
+    def setValidImageTypes(value: js.Array[String]): Self = StObject.set(x, "validImageTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultImageType(value: String): Self = this.set("defaultImageType", value.asInstanceOf[js.Any])
+    def setValidImageTypesUndefined: Self = StObject.set(x, "validImageTypes", js.undefined)
     
     @scala.inline
-    def deleteDefaultImageType: Self = this.set("defaultImageType", js.undefined)
+    def setValidImageTypesVarargs(value: String*): Self = StObject.set(x, "validImageTypes", js.Array(value :_*))
     
     @scala.inline
-    def setValidImageTypesVarargs(value: String*): Self = this.set("validImageTypes", js.Array(value :_*))
+    def setValidMasterVersions(value: js.Array[String]): Self = StObject.set(x, "validMasterVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidImageTypes(value: js.Array[String]): Self = this.set("validImageTypes", value.asInstanceOf[js.Any])
+    def setValidMasterVersionsUndefined: Self = StObject.set(x, "validMasterVersions", js.undefined)
     
     @scala.inline
-    def deleteValidImageTypes: Self = this.set("validImageTypes", js.undefined)
+    def setValidMasterVersionsVarargs(value: String*): Self = StObject.set(x, "validMasterVersions", js.Array(value :_*))
     
     @scala.inline
-    def setValidMasterVersionsVarargs(value: String*): Self = this.set("validMasterVersions", js.Array(value :_*))
+    def setValidNodeVersions(value: js.Array[String]): Self = StObject.set(x, "validNodeVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidMasterVersions(value: js.Array[String]): Self = this.set("validMasterVersions", value.asInstanceOf[js.Any])
+    def setValidNodeVersionsUndefined: Self = StObject.set(x, "validNodeVersions", js.undefined)
     
     @scala.inline
-    def deleteValidMasterVersions: Self = this.set("validMasterVersions", js.undefined)
-    
-    @scala.inline
-    def setValidNodeVersionsVarargs(value: String*): Self = this.set("validNodeVersions", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidNodeVersions(value: js.Array[String]): Self = this.set("validNodeVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidNodeVersions: Self = this.set("validNodeVersions", js.undefined)
+    def setValidNodeVersionsVarargs(value: String*): Self = StObject.set(x, "validNodeVersions", js.Array(value :_*))
   }
 }

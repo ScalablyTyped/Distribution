@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArtifactInstanceData extends js.Object {
+trait ArtifactInstanceData extends StObject {
   
   var accountName: String = js.native
   
@@ -24,30 +25,18 @@ object ArtifactInstanceData {
   }
   
   @scala.inline
-  implicit class ArtifactInstanceDataOps[Self <: ArtifactInstanceData] (val x: Self) extends AnyVal {
+  implicit class ArtifactInstanceDataMutableBuilder[Self <: ArtifactInstanceData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationToken(value: String): Self = StObject.set(x, "authenticationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTfsUrl(value: String): Self = StObject.set(x, "tfsUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountName(value: String): Self = this.set("accountName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAuthenticationToken(value: String): Self = this.set("authenticationToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTfsUrl(value: String): Self = this.set("tfsUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

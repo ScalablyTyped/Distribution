@@ -1,5 +1,6 @@
 package typings.sharepoint.SPClientTemplates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,66 +82,54 @@ object FieldSchemaInFormDateTime {
   }
   
   @scala.inline
-  implicit class FieldSchemaInFormDateTimeOps[Self <: FieldSchemaInFormDateTime] (val x: Self) extends AnyVal {
+  implicit class FieldSchemaInFormDateTimeMutableBuilder[Self <: FieldSchemaInFormDateTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendarType(value: DateTimeCalendarType): Self = StObject.set(x, "CalendarType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayFormat(value: DateTimeDisplayFormat): Self = StObject.set(x, "DisplayFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirstDayOfWeek(value: Double): Self = StObject.set(x, "FirstDayOfWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendarType(value: DateTimeCalendarType): Self = this.set("CalendarType", value.asInstanceOf[js.Any])
+    def setFirstWeekOfYear(value: Double): Self = StObject.set(x, "FirstWeekOfYear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayFormat(value: DateTimeDisplayFormat): Self = this.set("DisplayFormat", value.asInstanceOf[js.Any])
+    def setHijriAdjustment(value: Double): Self = StObject.set(x, "HijriAdjustment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstDayOfWeek(value: Double): Self = this.set("FirstDayOfWeek", value.asInstanceOf[js.Any])
+    def setHoursMode24(value: Boolean): Self = StObject.set(x, "HoursMode24", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstWeekOfYear(value: Double): Self = this.set("FirstWeekOfYear", value.asInstanceOf[js.Any])
+    def setHoursOptions(value: js.Array[String]): Self = StObject.set(x, "HoursOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHijriAdjustment(value: Double): Self = this.set("HijriAdjustment", value.asInstanceOf[js.Any])
+    def setHoursOptionsVarargs(value: String*): Self = StObject.set(x, "HoursOptions", js.Array(value :_*))
     
     @scala.inline
-    def setHoursMode24(value: Boolean): Self = this.set("HoursMode24", value.asInstanceOf[js.Any])
+    def setLanguageId(value: String): Self = StObject.set(x, "LanguageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoursOptionsVarargs(value: String*): Self = this.set("HoursOptions", js.Array(value :_*))
+    def setLocaleId(value: String): Self = StObject.set(x, "LocaleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoursOptions(value: js.Array[String]): Self = this.set("HoursOptions", value.asInstanceOf[js.Any])
+    def setMaxJDay(value: Double): Self = StObject.set(x, "MaxJDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageId(value: String): Self = this.set("LanguageId", value.asInstanceOf[js.Any])
+    def setMinJDay(value: Double): Self = StObject.set(x, "MinJDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocaleId(value: String): Self = this.set("LocaleId", value.asInstanceOf[js.Any])
+    def setShowWeekNumber(value: Boolean): Self = StObject.set(x, "ShowWeekNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxJDay(value: Double): Self = this.set("MaxJDay", value.asInstanceOf[js.Any])
+    def setTimeSeparator(value: String): Self = StObject.set(x, "TimeSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinJDay(value: Double): Self = this.set("MinJDay", value.asInstanceOf[js.Any])
+    def setTimeZoneDifference(value: String): Self = StObject.set(x, "TimeZoneDifference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowWeekNumber(value: Boolean): Self = this.set("ShowWeekNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeSeparator(value: String): Self = this.set("TimeSeparator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeZoneDifference(value: String): Self = this.set("TimeZoneDifference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkWeek(value: String): Self = this.set("WorkWeek", value.asInstanceOf[js.Any])
+    def setWorkWeek(value: String): Self = StObject.set(x, "WorkWeek", value.asInstanceOf[js.Any])
   }
 }

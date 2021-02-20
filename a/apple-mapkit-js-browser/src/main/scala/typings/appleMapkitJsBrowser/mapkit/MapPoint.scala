@@ -1,5 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * two-dimensional surface.
   */
 @js.native
-trait MapPoint extends js.Object {
+trait MapPoint extends StObject {
   
   /**
     * Returns a copy of a map point.
@@ -44,43 +45,32 @@ object MapPoint {
   @scala.inline
   def apply(
     copy: () => MapPoint,
-    equals: MapPoint => Boolean,
+    equals_ : MapPoint => Boolean,
     toCoordinate: () => Coordinate,
     x: Double,
     y: Double
   ): MapPoint = {
-    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), equals = js.Any.fromFunction1(equals), toCoordinate = js.Any.fromFunction0(toCoordinate), x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), toCoordinate = js.Any.fromFunction0(toCoordinate), x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[MapPoint]
   }
   
   @scala.inline
-  implicit class MapPointOps[Self <: MapPoint] (val x: Self) extends AnyVal {
+  implicit class MapPointMutableBuilder[Self <: MapPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopy(value: () => MapPoint): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEquals_(value: MapPoint => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setToCoordinate(value: () => Coordinate): Self = StObject.set(x, "toCoordinate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCopy(value: () => MapPoint): Self = this.set("copy", js.Any.fromFunction0(value))
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEquals(value: MapPoint => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToCoordinate(value: () => Coordinate): Self = this.set("toCoordinate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

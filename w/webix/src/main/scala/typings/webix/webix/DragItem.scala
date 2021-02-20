@@ -2,12 +2,13 @@ package typings.webix.webix
 
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DragItem extends js.Object {
+trait DragItem extends StObject {
   
   @JSName("$drag")
   def $drag(source: HTMLElement, ev: Event): String = js.native

@@ -2,14 +2,14 @@ package typings.typeorm
 
 import typings.typeorm.expoExpoDriverMod.ExpoDriver
 import typings.typeorm.sqliteAbstractAbstractSqliteQueryRunnerMod.AbstractSqliteQueryRunner
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/driver/expo/ExpoQueryRunner", JSImport.Namespace)
-@js.native
-object expoExpoQueryRunnerMod extends js.Object {
+object expoExpoQueryRunnerMod {
   
+  @JSImport("typeorm/driver/expo/ExpoQueryRunner", "ExpoQueryRunner")
   @js.native
   class ExpoQueryRunner protected () extends AbstractSqliteQueryRunner {
     def this(driver: ExpoDriver) = this()

@@ -3,12 +3,13 @@ package typings.chromeApps.anon
 import typings.chromeApps.chromeAppsStrings.Connected_
 import typings.chromeApps.chromeAppsStrings.Connecting_
 import typings.chromeApps.chromeAppsStrings.Disconnected_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CONNECTED extends js.Object {
+trait CONNECTED extends StObject {
   
   var CONNECTED: Connected_ = js.native
   
@@ -25,27 +26,15 @@ object CONNECTED {
   }
   
   @scala.inline
-  implicit class CONNECTEDOps[Self <: CONNECTED] (val x: Self) extends AnyVal {
+  implicit class CONNECTEDMutableBuilder[Self <: CONNECTED] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCONNECTED(value: Connected_): Self = StObject.set(x, "CONNECTED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCONNECTING(value: Connecting_): Self = StObject.set(x, "CONNECTING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCONNECTED(value: Connected_): Self = this.set("CONNECTED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCONNECTING(value: Connecting_): Self = this.set("CONNECTING", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDISCONNECTED(value: Disconnected_): Self = this.set("DISCONNECTED", value.asInstanceOf[js.Any])
+    def setDISCONNECTED(value: Disconnected_): Self = StObject.set(x, "DISCONNECTED", value.asInstanceOf[js.Any])
   }
 }

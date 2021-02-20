@@ -1,5 +1,6 @@
 package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response for a request to delete attachments.
   */
 @js.native
-trait SchemaDeleteAttachmentsResponse extends js.Object {
+trait SchemaDeleteAttachmentsResponse extends StObject {
   
   /**
     * The number of attachments that were deleted.
@@ -24,24 +25,12 @@ object SchemaDeleteAttachmentsResponse {
   }
   
   @scala.inline
-  implicit class SchemaDeleteAttachmentsResponseOps[Self <: SchemaDeleteAttachmentsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaDeleteAttachmentsResponseMutableBuilder[Self <: SchemaDeleteAttachmentsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNumDeleted(value: Double): Self = StObject.set(x, "numDeleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNumDeleted(value: Double): Self = this.set("numDeleted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumDeleted: Self = this.set("numDeleted", js.undefined)
+    def setNumDeletedUndefined: Self = StObject.set(x, "numDeleted", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The default constructor produces the Size(0,0).
   */
-class Size () extends js.Object {
+class Size () extends StObject {
   /**
     * The two-argument constructor produces the Size(w,h).
     * @param {number} w this number must not be negative.
@@ -67,20 +68,23 @@ class Size () extends js.Object {
   /**Gets or sets the width value of the Size.*/
   var width: Double = js.native
 }
-/* static members */
-@JSImport("go", "Size")
-@js.native
-object Size extends js.Object {
+object Size {
   
   /**
     * This static function can be used to read in a Size from a string that was produced by Size.stringify.
     * @param {string} str
     */
+  /* static member */
+  @JSImport("go", "Size.parse")
+  @js.native
   def parse(str: String): Size = js.native
   
   /**
     * This static function can be used to write out a Size as a string that can be read by Size.parse.
     * @param {Size} val
     */
+  /* static member */
+  @JSImport("go", "Size.stringify")
+  @js.native
   def stringify(`val`: Size): String = js.native
 }

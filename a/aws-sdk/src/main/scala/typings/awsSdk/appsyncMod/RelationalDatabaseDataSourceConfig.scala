@@ -1,11 +1,12 @@
 package typings.awsSdk.appsyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RelationalDatabaseDataSourceConfig extends js.Object {
+trait RelationalDatabaseDataSourceConfig extends StObject {
   
   /**
     * Amazon RDS HTTP endpoint settings.
@@ -26,30 +27,18 @@ object RelationalDatabaseDataSourceConfig {
   }
   
   @scala.inline
-  implicit class RelationalDatabaseDataSourceConfigOps[Self <: RelationalDatabaseDataSourceConfig] (val x: Self) extends AnyVal {
+  implicit class RelationalDatabaseDataSourceConfigMutableBuilder[Self <: RelationalDatabaseDataSourceConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRdsHttpEndpointConfig(value: RdsHttpEndpointConfig): Self = StObject.set(x, "rdsHttpEndpointConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRdsHttpEndpointConfigUndefined: Self = StObject.set(x, "rdsHttpEndpointConfig", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelationalDatabaseSourceType(value: RelationalDatabaseSourceType): Self = StObject.set(x, "relationalDatabaseSourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRdsHttpEndpointConfig(value: RdsHttpEndpointConfig): Self = this.set("rdsHttpEndpointConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRdsHttpEndpointConfig: Self = this.set("rdsHttpEndpointConfig", js.undefined)
-    
-    @scala.inline
-    def setRelationalDatabaseSourceType(value: RelationalDatabaseSourceType): Self = this.set("relationalDatabaseSourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelationalDatabaseSourceType: Self = this.set("relationalDatabaseSourceType", js.undefined)
+    def setRelationalDatabaseSourceTypeUndefined: Self = StObject.set(x, "relationalDatabaseSourceType", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,123 +47,111 @@ object MailFolder {
   }
   
   @scala.inline
-  implicit class MailFolderOps[Self <: MailFolder] (val x: Self) extends AnyVal {
+  implicit class MailFolderMutableBuilder[Self <: MailFolder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildFolderCount(value: NullableOption[Double]): Self = StObject.set(x, "childFolderCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildFolderCountNull: Self = StObject.set(x, "childFolderCount", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildFolderCountUndefined: Self = StObject.set(x, "childFolderCount", js.undefined)
     
     @scala.inline
-    def setChildFolderCount(value: NullableOption[Double]): Self = this.set("childFolderCount", value.asInstanceOf[js.Any])
+    def setChildFolders(value: NullableOption[js.Array[MailFolder]]): Self = StObject.set(x, "childFolders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildFolderCount: Self = this.set("childFolderCount", js.undefined)
+    def setChildFoldersNull: Self = StObject.set(x, "childFolders", null)
     
     @scala.inline
-    def setChildFolderCountNull: Self = this.set("childFolderCount", null)
+    def setChildFoldersUndefined: Self = StObject.set(x, "childFolders", js.undefined)
     
     @scala.inline
-    def setChildFoldersVarargs(value: MailFolder*): Self = this.set("childFolders", js.Array(value :_*))
+    def setChildFoldersVarargs(value: MailFolder*): Self = StObject.set(x, "childFolders", js.Array(value :_*))
     
     @scala.inline
-    def setChildFolders(value: NullableOption[js.Array[MailFolder]]): Self = this.set("childFolders", value.asInstanceOf[js.Any])
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildFolders: Self = this.set("childFolders", js.undefined)
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def setChildFoldersNull: Self = this.set("childFolders", null)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setMessageRules(value: NullableOption[js.Array[MessageRule]]): Self = StObject.set(x, "messageRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setMessageRulesNull: Self = StObject.set(x, "messageRules", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setMessageRulesUndefined: Self = StObject.set(x, "messageRules", js.undefined)
     
     @scala.inline
-    def setMessageRulesVarargs(value: MessageRule*): Self = this.set("messageRules", js.Array(value :_*))
+    def setMessageRulesVarargs(value: MessageRule*): Self = StObject.set(x, "messageRules", js.Array(value :_*))
     
     @scala.inline
-    def setMessageRules(value: NullableOption[js.Array[MessageRule]]): Self = this.set("messageRules", value.asInstanceOf[js.Any])
+    def setMessages(value: NullableOption[js.Array[Message]]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessageRules: Self = this.set("messageRules", js.undefined)
+    def setMessagesNull: Self = StObject.set(x, "messages", null)
     
     @scala.inline
-    def setMessageRulesNull: Self = this.set("messageRules", null)
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def setMessagesVarargs(value: Message*): Self = this.set("messages", js.Array(value :_*))
+    def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
     @scala.inline
-    def setMessages(value: NullableOption[js.Array[Message]]): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setMultiValueExtendedProperties(value: NullableOption[js.Array[MultiValueLegacyExtendedProperty]]): Self = StObject.set(x, "multiValueExtendedProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setMultiValueExtendedPropertiesNull: Self = StObject.set(x, "multiValueExtendedProperties", null)
     
     @scala.inline
-    def setMessagesNull: Self = this.set("messages", null)
+    def setMultiValueExtendedPropertiesUndefined: Self = StObject.set(x, "multiValueExtendedProperties", js.undefined)
     
     @scala.inline
-    def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = this.set("multiValueExtendedProperties", js.Array(value :_*))
+    def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = StObject.set(x, "multiValueExtendedProperties", js.Array(value :_*))
     
     @scala.inline
-    def setMultiValueExtendedProperties(value: NullableOption[js.Array[MultiValueLegacyExtendedProperty]]): Self = this.set("multiValueExtendedProperties", value.asInstanceOf[js.Any])
+    def setParentFolderId(value: NullableOption[String]): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultiValueExtendedProperties: Self = this.set("multiValueExtendedProperties", js.undefined)
+    def setParentFolderIdNull: Self = StObject.set(x, "parentFolderId", null)
     
     @scala.inline
-    def setMultiValueExtendedPropertiesNull: Self = this.set("multiValueExtendedProperties", null)
+    def setParentFolderIdUndefined: Self = StObject.set(x, "parentFolderId", js.undefined)
     
     @scala.inline
-    def setParentFolderId(value: NullableOption[String]): Self = this.set("parentFolderId", value.asInstanceOf[js.Any])
+    def setSingleValueExtendedProperties(value: NullableOption[js.Array[SingleValueLegacyExtendedProperty]]): Self = StObject.set(x, "singleValueExtendedProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentFolderId: Self = this.set("parentFolderId", js.undefined)
+    def setSingleValueExtendedPropertiesNull: Self = StObject.set(x, "singleValueExtendedProperties", null)
     
     @scala.inline
-    def setParentFolderIdNull: Self = this.set("parentFolderId", null)
+    def setSingleValueExtendedPropertiesUndefined: Self = StObject.set(x, "singleValueExtendedProperties", js.undefined)
     
     @scala.inline
-    def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = this.set("singleValueExtendedProperties", js.Array(value :_*))
+    def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = StObject.set(x, "singleValueExtendedProperties", js.Array(value :_*))
     
     @scala.inline
-    def setSingleValueExtendedProperties(value: NullableOption[js.Array[SingleValueLegacyExtendedProperty]]): Self = this.set("singleValueExtendedProperties", value.asInstanceOf[js.Any])
+    def setTotalItemCount(value: NullableOption[Double]): Self = StObject.set(x, "totalItemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSingleValueExtendedProperties: Self = this.set("singleValueExtendedProperties", js.undefined)
+    def setTotalItemCountNull: Self = StObject.set(x, "totalItemCount", null)
     
     @scala.inline
-    def setSingleValueExtendedPropertiesNull: Self = this.set("singleValueExtendedProperties", null)
+    def setTotalItemCountUndefined: Self = StObject.set(x, "totalItemCount", js.undefined)
     
     @scala.inline
-    def setTotalItemCount(value: NullableOption[Double]): Self = this.set("totalItemCount", value.asInstanceOf[js.Any])
+    def setUnreadItemCount(value: NullableOption[Double]): Self = StObject.set(x, "unreadItemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTotalItemCount: Self = this.set("totalItemCount", js.undefined)
+    def setUnreadItemCountNull: Self = StObject.set(x, "unreadItemCount", null)
     
     @scala.inline
-    def setTotalItemCountNull: Self = this.set("totalItemCount", null)
-    
-    @scala.inline
-    def setUnreadItemCount(value: NullableOption[Double]): Self = this.set("unreadItemCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnreadItemCount: Self = this.set("unreadItemCount", js.undefined)
-    
-    @scala.inline
-    def setUnreadItemCountNull: Self = this.set("unreadItemCount", null)
+    def setUnreadItemCountUndefined: Self = StObject.set(x, "unreadItemCount", js.undefined)
   }
 }

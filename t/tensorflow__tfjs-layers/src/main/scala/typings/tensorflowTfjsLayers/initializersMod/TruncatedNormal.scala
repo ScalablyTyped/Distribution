@@ -1,5 +1,6 @@
 package typings.tensorflowTfjsLayers.initializersMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,10 +21,16 @@ class TruncatedNormal protected () extends Initializer {
   var stddev: js.Any = js.native
 }
 /* static members */
-@JSImport("@tensorflow/tfjs-layers/dist/initializers", "TruncatedNormal")
-@js.native
-object TruncatedNormal extends js.Object {
+object TruncatedNormal {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/initializers", "TruncatedNormal")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** @nocollapse */
-  var className: String = js.native
+  @JSImport("@tensorflow/tfjs-layers/dist/initializers", "TruncatedNormal.className")
+  @js.native
+  def className: String = js.native
+  @scala.inline
+  def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
 }

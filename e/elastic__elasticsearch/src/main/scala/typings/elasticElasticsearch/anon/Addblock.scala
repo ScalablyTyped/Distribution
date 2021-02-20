@@ -60,12 +60,13 @@ import typings.elasticElasticsearch.transportMod.TransportRequestCallback
 import typings.elasticElasticsearch.transportMod.TransportRequestOptions
 import typings.elasticElasticsearch.transportMod.TransportRequestPromise
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Addblock extends js.Object {
+trait Addblock extends StObject {
   
   def addBlock[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def addBlock[TResponse, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native

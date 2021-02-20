@@ -1,5 +1,6 @@
 package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The actor of a Drive activity.
   */
 @js.native
-trait SchemaActor extends js.Object {
+trait SchemaActor extends StObject {
   
   /**
     * An administrator.
@@ -44,48 +45,36 @@ object SchemaActor {
   }
   
   @scala.inline
-  implicit class SchemaActorOps[Self <: SchemaActor] (val x: Self) extends AnyVal {
+  implicit class SchemaActorMutableBuilder[Self <: SchemaActor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdministrator(value: SchemaAdministrator): Self = StObject.set(x, "administrator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdministratorUndefined: Self = StObject.set(x, "administrator", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnonymous(value: SchemaAnonymousUser): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdministrator(value: SchemaAdministrator): Self = this.set("administrator", value.asInstanceOf[js.Any])
+    def setAnonymousUndefined: Self = StObject.set(x, "anonymous", js.undefined)
     
     @scala.inline
-    def deleteAdministrator: Self = this.set("administrator", js.undefined)
+    def setImpersonation(value: SchemaImpersonation): Self = StObject.set(x, "impersonation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnonymous(value: SchemaAnonymousUser): Self = this.set("anonymous", value.asInstanceOf[js.Any])
+    def setImpersonationUndefined: Self = StObject.set(x, "impersonation", js.undefined)
     
     @scala.inline
-    def deleteAnonymous: Self = this.set("anonymous", js.undefined)
+    def setSystem(value: SchemaSystemEvent): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpersonation(value: SchemaImpersonation): Self = this.set("impersonation", value.asInstanceOf[js.Any])
+    def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
     
     @scala.inline
-    def deleteImpersonation: Self = this.set("impersonation", js.undefined)
+    def setUser(value: SchemaUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystem(value: SchemaSystemEvent): Self = this.set("system", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystem: Self = this.set("system", js.undefined)
-    
-    @scala.inline
-    def setUser(value: SchemaUser): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

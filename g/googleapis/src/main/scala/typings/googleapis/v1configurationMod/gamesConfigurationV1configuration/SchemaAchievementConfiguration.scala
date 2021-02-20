@@ -1,5 +1,6 @@
 package typings.googleapis.v1configurationMod.gamesConfigurationV1configuration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for an achievement configuration resource.
   */
 @js.native
-trait SchemaAchievementConfiguration extends js.Object {
+trait SchemaAchievementConfiguration extends StObject {
   
   /**
     * The type of the achievement. Possible values are:   -
@@ -65,66 +66,54 @@ object SchemaAchievementConfiguration {
   }
   
   @scala.inline
-  implicit class SchemaAchievementConfigurationOps[Self <: SchemaAchievementConfiguration] (val x: Self) extends AnyVal {
+  implicit class SchemaAchievementConfigurationMutableBuilder[Self <: SchemaAchievementConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAchievementType(value: String): Self = StObject.set(x, "achievementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAchievementTypeUndefined: Self = StObject.set(x, "achievementType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDraft(value: SchemaAchievementConfigurationDetail): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAchievementType(value: String): Self = this.set("achievementType", value.asInstanceOf[js.Any])
+    def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
     
     @scala.inline
-    def deleteAchievementType: Self = this.set("achievementType", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraft(value: SchemaAchievementConfigurationDetail): Self = this.set("draft", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDraft: Self = this.set("draft", js.undefined)
+    def setInitialState(value: String): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialState(value: String): Self = this.set("initialState", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteInitialState: Self = this.set("initialState", js.undefined)
+    def setPublished(value: SchemaAchievementConfigurationDetail): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPublishedUndefined: Self = StObject.set(x, "published", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setStepsToUnlock(value: Double): Self = StObject.set(x, "stepsToUnlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublished(value: SchemaAchievementConfigurationDetail): Self = this.set("published", value.asInstanceOf[js.Any])
+    def setStepsToUnlockUndefined: Self = StObject.set(x, "stepsToUnlock", js.undefined)
     
     @scala.inline
-    def deletePublished: Self = this.set("published", js.undefined)
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepsToUnlock(value: Double): Self = this.set("stepsToUnlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStepsToUnlock: Self = this.set("stepsToUnlock", js.undefined)
-    
-    @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

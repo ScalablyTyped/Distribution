@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageInfo extends js.Object {
+trait ImageInfo extends StObject {
   
   /**
     * Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization.
@@ -30,54 +31,42 @@ object ImageInfo {
   }
   
   @scala.inline
-  implicit class ImageInfoOps[Self <: ImageInfo] (val x: Self) extends AnyVal {
+  implicit class ImageInfoMutableBuilder[Self <: ImageInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddImageQuery(value: NullableOption[Boolean]): Self = StObject.set(x, "addImageQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddImageQueryNull: Self = StObject.set(x, "addImageQuery", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddImageQueryUndefined: Self = StObject.set(x, "addImageQuery", js.undefined)
     
     @scala.inline
-    def setAddImageQuery(value: NullableOption[Boolean]): Self = this.set("addImageQuery", value.asInstanceOf[js.Any])
+    def setAlternateText(value: NullableOption[String]): Self = StObject.set(x, "alternateText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddImageQuery: Self = this.set("addImageQuery", js.undefined)
+    def setAlternateTextNull: Self = StObject.set(x, "alternateText", null)
     
     @scala.inline
-    def setAddImageQueryNull: Self = this.set("addImageQuery", null)
+    def setAlternateTextUndefined: Self = StObject.set(x, "alternateText", js.undefined)
     
     @scala.inline
-    def setAlternateText(value: NullableOption[String]): Self = this.set("alternateText", value.asInstanceOf[js.Any])
+    def setAlternativeText(value: NullableOption[String]): Self = StObject.set(x, "alternativeText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlternateText: Self = this.set("alternateText", js.undefined)
+    def setAlternativeTextNull: Self = StObject.set(x, "alternativeText", null)
     
     @scala.inline
-    def setAlternateTextNull: Self = this.set("alternateText", null)
+    def setAlternativeTextUndefined: Self = StObject.set(x, "alternativeText", js.undefined)
     
     @scala.inline
-    def setAlternativeText(value: NullableOption[String]): Self = this.set("alternativeText", value.asInstanceOf[js.Any])
+    def setIconUrl(value: NullableOption[String]): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlternativeText: Self = this.set("alternativeText", js.undefined)
+    def setIconUrlNull: Self = StObject.set(x, "iconUrl", null)
     
     @scala.inline
-    def setAlternativeTextNull: Self = this.set("alternativeText", null)
-    
-    @scala.inline
-    def setIconUrl(value: NullableOption[String]): Self = this.set("iconUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIconUrl: Self = this.set("iconUrl", js.undefined)
-    
-    @scala.inline
-    def setIconUrlNull: Self = this.set("iconUrl", null)
+    def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
   }
 }

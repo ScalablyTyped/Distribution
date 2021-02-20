@@ -1,11 +1,12 @@
 package typings.azureArmResource.resourceModelsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentProperties extends js.Object {
+trait DeploymentProperties extends StObject {
   
   /**
     * The debug setting of the deployment.
@@ -63,57 +64,45 @@ object DeploymentProperties {
   }
   
   @scala.inline
-  implicit class DeploymentPropertiesOps[Self <: DeploymentProperties] (val x: Self) extends AnyVal {
+  implicit class DeploymentPropertiesMutableBuilder[Self <: DeploymentProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDebugSetting(value: DebugSetting): Self = StObject.set(x, "debugSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDebugSettingUndefined: Self = StObject.set(x, "debugSetting", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setOnErrorDeployment(value: OnErrorDeployment): Self = StObject.set(x, "onErrorDeployment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebugSetting(value: DebugSetting): Self = this.set("debugSetting", value.asInstanceOf[js.Any])
+    def setOnErrorDeploymentUndefined: Self = StObject.set(x, "onErrorDeployment", js.undefined)
     
     @scala.inline
-    def deleteDebugSetting: Self = this.set("debugSetting", js.undefined)
+    def setParameters(value: js.Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnErrorDeployment(value: OnErrorDeployment): Self = this.set("onErrorDeployment", value.asInstanceOf[js.Any])
+    def setParametersLink(value: ParametersLink): Self = StObject.set(x, "parametersLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnErrorDeployment: Self = this.set("onErrorDeployment", js.undefined)
+    def setParametersLinkUndefined: Self = StObject.set(x, "parametersLink", js.undefined)
     
     @scala.inline
-    def setParameters(value: js.Any): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParametersLink(value: ParametersLink): Self = this.set("parametersLink", value.asInstanceOf[js.Any])
+    def setTemplateLink(value: TemplateLink): Self = StObject.set(x, "templateLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParametersLink: Self = this.set("parametersLink", js.undefined)
+    def setTemplateLinkUndefined: Self = StObject.set(x, "templateLink", js.undefined)
     
     @scala.inline
-    def setTemplate(value: js.Any): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
-    
-    @scala.inline
-    def setTemplateLink(value: TemplateLink): Self = this.set("templateLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateLink: Self = this.set("templateLink", js.undefined)
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

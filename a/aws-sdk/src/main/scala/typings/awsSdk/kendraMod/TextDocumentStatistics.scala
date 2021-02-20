@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextDocumentStatistics extends js.Object {
+trait TextDocumentStatistics extends StObject {
   
   /**
     * The total size, in bytes, of the indexed documents.
@@ -26,24 +27,12 @@ object TextDocumentStatistics {
   }
   
   @scala.inline
-  implicit class TextDocumentStatisticsOps[Self <: TextDocumentStatistics] (val x: Self) extends AnyVal {
+  implicit class TextDocumentStatisticsMutableBuilder[Self <: TextDocumentStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndexedTextBytes(value: IndexedTextBytes): Self = StObject.set(x, "IndexedTextBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIndexedTextBytes(value: IndexedTextBytes): Self = this.set("IndexedTextBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIndexedTextDocumentsCount(value: IndexedTextDocumentsCount): Self = this.set("IndexedTextDocumentsCount", value.asInstanceOf[js.Any])
+    def setIndexedTextDocumentsCount(value: IndexedTextDocumentsCount): Self = StObject.set(x, "IndexedTextDocumentsCount", value.asInstanceOf[js.Any])
   }
 }

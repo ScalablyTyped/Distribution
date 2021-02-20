@@ -1,15 +1,15 @@
 package typings.plottable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/utils/map", JSImport.Namespace)
-@js.native
-object mapMod extends js.Object {
+object mapMod {
   
+  @JSImport("plottable/build/src/utils/map", "Map")
   @js.native
-  class Map[K, V] () extends js.Object {
+  class Map[K, V] () extends StObject {
     
     var _es6Map: js.Any = js.native
     

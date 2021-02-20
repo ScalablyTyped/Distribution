@@ -1,12 +1,13 @@
 package typings.sawtoothSdk.protobufMod
 
 import typings.sawtoothSdk.protobufMod.ConsensusStateGetResponse.Status
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IConsensusStateGetResponse extends js.Object {
+trait IConsensusStateGetResponse extends StObject {
   
   /** ConsensusStateGetResponse entries */
   var entries: js.UndefOr[js.Array[IConsensusStateEntry] | Null] = js.native
@@ -23,39 +24,27 @@ object IConsensusStateGetResponse {
   }
   
   @scala.inline
-  implicit class IConsensusStateGetResponseOps[Self <: IConsensusStateGetResponse] (val x: Self) extends AnyVal {
+  implicit class IConsensusStateGetResponseMutableBuilder[Self <: IConsensusStateGetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntries(value: js.Array[IConsensusStateEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntriesNull: Self = StObject.set(x, "entries", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
     @scala.inline
-    def setEntriesVarargs(value: IConsensusStateEntry*): Self = this.set("entries", js.Array(value :_*))
+    def setEntriesVarargs(value: IConsensusStateEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
     @scala.inline
-    def setEntries(value: js.Array[IConsensusStateEntry]): Self = this.set("entries", value.asInstanceOf[js.Any])
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEntries: Self = this.set("entries", js.undefined)
+    def setStatusNull: Self = StObject.set(x, "status", null)
     
     @scala.inline
-    def setEntriesNull: Self = this.set("entries", null)
-    
-    @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setStatusNull: Self = this.set("status", null)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

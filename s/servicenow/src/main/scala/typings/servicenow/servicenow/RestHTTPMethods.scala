@@ -1,5 +1,6 @@
 package typings.servicenow.servicenow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.servicenow.servicenowStrings.head
   - typings.servicenow.servicenowStrings.options
 */
-trait RestHTTPMethods extends js.Object
+trait RestHTTPMethods extends StObject
 object RestHTTPMethods {
   
   @scala.inline

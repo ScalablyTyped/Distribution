@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SslCert insert response.
   */
 @js.native
-trait SchemaSslCertsInsertResponse extends js.Object {
+trait SchemaSslCertsInsertResponse extends StObject {
   
   /**
     * The new client certificate and private key. For First Generation
@@ -43,42 +44,30 @@ object SchemaSslCertsInsertResponse {
   }
   
   @scala.inline
-  implicit class SchemaSslCertsInsertResponseOps[Self <: SchemaSslCertsInsertResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaSslCertsInsertResponseMutableBuilder[Self <: SchemaSslCertsInsertResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientCert(value: SchemaSslCertDetail): Self = StObject.set(x, "clientCert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientCertUndefined: Self = StObject.set(x, "clientCert", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientCert(value: SchemaSslCertDetail): Self = this.set("clientCert", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteClientCert: Self = this.set("clientCert", js.undefined)
+    def setOperation(value: SchemaOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setServerCaCert(value: SchemaSslCert): Self = StObject.set(x, "serverCaCert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation(value: SchemaOperation): Self = this.set("operation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
-    
-    @scala.inline
-    def setServerCaCert(value: SchemaSslCert): Self = this.set("serverCaCert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerCaCert: Self = this.set("serverCaCert", js.undefined)
+    def setServerCaCertUndefined: Self = StObject.set(x, "serverCaCert", js.undefined)
   }
 }

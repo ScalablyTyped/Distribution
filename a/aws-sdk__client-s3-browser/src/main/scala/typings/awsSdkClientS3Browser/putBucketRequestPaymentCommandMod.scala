@@ -7,14 +7,14 @@ import typings.awsSdkClientS3Browser.typesPutBucketRequestPaymentInputMod.PutBuc
 import typings.awsSdkClientS3Browser.typesPutBucketRequestPaymentOutputMod.PutBucketRequestPaymentOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-browser/commands/PutBucketRequestPaymentCommand", JSImport.Namespace)
-@js.native
-object putBucketRequestPaymentCommandMod extends js.Object {
+object putBucketRequestPaymentCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-browser/commands/PutBucketRequestPaymentCommand", "PutBucketRequestPaymentCommand")
   @js.native
   class PutBucketRequestPaymentCommand protected () extends Command[
           InputTypesUnion, 

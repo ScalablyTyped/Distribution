@@ -1,5 +1,6 @@
 package typings.filesystem
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interface represents a file system.
   */
 @js.native
-trait FileSystemSync extends js.Object {
+trait FileSystemSync extends StObject {
   
   /**
     * This is the name of the file system. The specifics of naming filesystems is unspecified, but a name must be unique across the list of exposed file systems.
@@ -29,24 +30,12 @@ object FileSystemSync {
   }
   
   @scala.inline
-  implicit class FileSystemSyncOps[Self <: FileSystemSync] (val x: Self) extends AnyVal {
+  implicit class FileSystemSyncMutableBuilder[Self <: FileSystemSync] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoot(value: DirectoryEntrySync): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setRoot(value: DirectoryEntrySync): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

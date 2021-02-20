@@ -7,13 +7,14 @@ import typings.intercomClient.userMod.Avatar
 import typings.intercomClient.userMod.LocationData
 import typings.intercomClient.userMod.Segment
 import typings.intercomClient.userMod.SocialProfile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<intercom-client.intercom-client/Visitor.Visitor> */
 @js.native
-trait PartialVisitor extends js.Object {
+trait PartialVisitor extends StObject {
   
   var avatar: js.UndefOr[Avatar] = js.native
   
@@ -52,120 +53,108 @@ object PartialVisitor {
   }
   
   @scala.inline
-  implicit class PartialVisitorOps[Self <: PartialVisitor] (val x: Self) extends AnyVal {
+  implicit class PartialVisitorMutableBuilder[Self <: PartialVisitor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvatar(value: Avatar): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvatar(value: Avatar): Self = this.set("avatar", value.asInstanceOf[js.Any])
+    def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
     
     @scala.inline
-    def deleteAvatar: Self = this.set("avatar", js.undefined)
+    def setCustom_attributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: Double): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setCustom_attributesUndefined: Self = StObject.set(x, "custom_attributes", js.undefined)
     
     @scala.inline
-    def deleteCreated_at: Self = this.set("created_at", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom_attributes(value: StringDictionary[js.Any]): Self = this.set("custom_attributes", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCustom_attributes: Self = this.set("custom_attributes", js.undefined)
+    def setLast_request_at(value: Double): Self = StObject.set(x, "last_request_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLast_request_atNull: Self = StObject.set(x, "last_request_at", null)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLast_request_atUndefined: Self = StObject.set(x, "last_request_at", js.undefined)
     
     @scala.inline
-    def setLast_request_at(value: Double): Self = this.set("last_request_at", value.asInstanceOf[js.Any])
+    def setLocation_data(value: LocationData | js.Object): Self = StObject.set(x, "location_data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLast_request_at: Self = this.set("last_request_at", js.undefined)
+    def setLocation_dataUndefined: Self = StObject.set(x, "location_data", js.undefined)
     
     @scala.inline
-    def setLast_request_atNull: Self = this.set("last_request_at", null)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation_data(value: LocationData | js.Object): Self = this.set("location_data", value.asInstanceOf[js.Any])
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def deleteLocation_data: Self = this.set("location_data", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSegments(value: js.Array[Segment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
     @scala.inline
-    def setNameNull: Self = this.set("name", null)
+    def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value :_*))
     
     @scala.inline
-    def setSegmentsVarargs(value: Segment*): Self = this.set("segments", js.Array(value :_*))
+    def setSocial_profiles(value: js.Array[SocialProfile]): Self = StObject.set(x, "social_profiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegments(value: js.Array[Segment]): Self = this.set("segments", value.asInstanceOf[js.Any])
+    def setSocial_profilesUndefined: Self = StObject.set(x, "social_profiles", js.undefined)
     
     @scala.inline
-    def deleteSegments: Self = this.set("segments", js.undefined)
+    def setSocial_profilesVarargs(value: SocialProfile*): Self = StObject.set(x, "social_profiles", js.Array(value :_*))
     
     @scala.inline
-    def setSocial_profilesVarargs(value: SocialProfile*): Self = this.set("social_profiles", js.Array(value :_*))
+    def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocial_profiles(value: js.Array[SocialProfile]): Self = this.set("social_profiles", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteSocial_profiles: Self = this.set("social_profiles", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    def setType(value: visitor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Array[Tag]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setUnsubscribed_from_emails(value: Boolean): Self = StObject.set(x, "unsubscribed_from_emails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: visitor): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUnsubscribed_from_emailsUndefined: Self = StObject.set(x, "unsubscribed_from_emails", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setUpdated_at(value: Double): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnsubscribed_from_emails(value: Boolean): Self = this.set("unsubscribed_from_emails", value.asInstanceOf[js.Any])
+    def setUpdated_atUndefined: Self = StObject.set(x, "updated_at", js.undefined)
     
     @scala.inline
-    def deleteUnsubscribed_from_emails: Self = this.set("unsubscribed_from_emails", js.undefined)
+    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdated_at(value: Double): Self = this.set("updated_at", value.asInstanceOf[js.Any])
+    def setUser_idNull: Self = StObject.set(x, "user_id", null)
     
     @scala.inline
-    def deleteUpdated_at: Self = this.set("updated_at", js.undefined)
-    
-    @scala.inline
-    def setUser_id(value: String): Self = this.set("user_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser_id: Self = this.set("user_id", js.undefined)
-    
-    @scala.inline
-    def setUser_idNull: Self = this.set("user_id", null)
+    def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
   }
 }

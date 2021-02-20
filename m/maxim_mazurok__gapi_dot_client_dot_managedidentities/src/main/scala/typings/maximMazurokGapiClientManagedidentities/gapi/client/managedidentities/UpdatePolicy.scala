@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientManagedidentities.gapi.client.managedidentities
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdatePolicy extends js.Object {
+trait UpdatePolicy extends StObject {
   
   /** Optional. Relative scheduling channel applied to resource. */
   var channel: js.UndefOr[String] = js.native
@@ -28,39 +29,27 @@ object UpdatePolicy {
   }
   
   @scala.inline
-  implicit class UpdatePolicyOps[Self <: UpdatePolicy] (val x: Self) extends AnyVal {
+  implicit class UpdatePolicyMutableBuilder[Self <: UpdatePolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDenyMaintenancePeriods(value: js.Array[DenyMaintenancePeriod]): Self = StObject.set(x, "denyMaintenancePeriods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannel(value: String): Self = this.set("channel", value.asInstanceOf[js.Any])
+    def setDenyMaintenancePeriodsUndefined: Self = StObject.set(x, "denyMaintenancePeriods", js.undefined)
     
     @scala.inline
-    def deleteChannel: Self = this.set("channel", js.undefined)
+    def setDenyMaintenancePeriodsVarargs(value: DenyMaintenancePeriod*): Self = StObject.set(x, "denyMaintenancePeriods", js.Array(value :_*))
     
     @scala.inline
-    def setDenyMaintenancePeriodsVarargs(value: DenyMaintenancePeriod*): Self = this.set("denyMaintenancePeriods", js.Array(value :_*))
+    def setWindow(value: MaintenanceWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDenyMaintenancePeriods(value: js.Array[DenyMaintenancePeriod]): Self = this.set("denyMaintenancePeriods", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDenyMaintenancePeriods: Self = this.set("denyMaintenancePeriods", js.undefined)
-    
-    @scala.inline
-    def setWindow(value: MaintenanceWindow): Self = this.set("window", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindow: Self = this.set("window", js.undefined)
+    def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,24 +21,12 @@ object BPMNDiagram {
   }
   
   @scala.inline
-  implicit class BPMNDiagramOps[Self <: BPMNDiagram] (val x: Self) extends AnyVal {
+  implicit class BPMNDiagramMutableBuilder[Self <: BPMNDiagram] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabelStyle(value: BPMNLabelStyle): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLabelStyle(value: BPMNLabelStyle): Self = this.set("labelStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlane(value: BPMNPlane): Self = this.set("plane", value.asInstanceOf[js.Any])
+    def setPlane(value: BPMNPlane): Self = StObject.set(x, "plane", value.asInstanceOf[js.Any])
   }
 }

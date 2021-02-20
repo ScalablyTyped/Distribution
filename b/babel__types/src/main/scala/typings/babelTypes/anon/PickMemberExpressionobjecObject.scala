@@ -3,13 +3,14 @@ package typings.babelTypes.anon
 import typings.babelTypes.mod.Expression
 import typings.babelTypes.mod.Identifier_
 import typings.babelTypes.mod.PrivateName_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@babel/types.@babel/types.MemberExpression, 'object' | 'property'> */
 @js.native
-trait PickMemberExpressionobjecObject extends js.Object {
+trait PickMemberExpressionobjecObject extends StObject {
   
   var `object`: Expression = js.native
   
@@ -25,24 +26,12 @@ object PickMemberExpressionobjecObject {
   }
   
   @scala.inline
-  implicit class PickMemberExpressionobjecObjectOps[Self <: PickMemberExpressionobjecObject] (val x: Self) extends AnyVal {
+  implicit class PickMemberExpressionobjecObjectMutableBuilder[Self <: PickMemberExpressionobjecObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObject(value: Expression): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setObject(value: Expression): Self = this.set("object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperty(value: Expression | Identifier_ | PrivateName_): Self = this.set("property", value.asInstanceOf[js.Any])
+    def setProperty(value: Expression | Identifier_ | PrivateName_): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
   }
 }

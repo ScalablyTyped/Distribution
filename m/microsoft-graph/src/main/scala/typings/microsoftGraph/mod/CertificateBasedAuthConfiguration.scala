@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,27 +20,15 @@ object CertificateBasedAuthConfiguration {
   }
   
   @scala.inline
-  implicit class CertificateBasedAuthConfigurationOps[Self <: CertificateBasedAuthConfiguration] (val x: Self) extends AnyVal {
+  implicit class CertificateBasedAuthConfigurationMutableBuilder[Self <: CertificateBasedAuthConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateAuthorities(value: js.Array[CertificateAuthority]): Self = StObject.set(x, "certificateAuthorities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateAuthoritiesUndefined: Self = StObject.set(x, "certificateAuthorities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCertificateAuthoritiesVarargs(value: CertificateAuthority*): Self = this.set("certificateAuthorities", js.Array(value :_*))
-    
-    @scala.inline
-    def setCertificateAuthorities(value: js.Array[CertificateAuthority]): Self = this.set("certificateAuthorities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificateAuthorities: Self = this.set("certificateAuthorities", js.undefined)
+    def setCertificateAuthoritiesVarargs(value: CertificateAuthority*): Self = StObject.set(x, "certificateAuthorities", js.Array(value :_*))
   }
 }

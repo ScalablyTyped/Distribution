@@ -1,13 +1,14 @@
 package typings.rxjsCompat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/debounce", JSImport.Namespace)
-@js.native
-object operatorDebounceMod extends js.Object {
+object operatorDebounceMod {
   
+  @JSImport("rxjs-compat/operator/debounce", "debounce")
+  @js.native
   def debounce[T](
     durationSelector: js.Function1[
       /* value */ T, 

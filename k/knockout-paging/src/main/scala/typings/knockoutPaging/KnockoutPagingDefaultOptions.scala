@@ -1,11 +1,12 @@
 package typings.knockoutPaging
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutPagingDefaultOptions extends js.Object {
+trait KnockoutPagingDefaultOptions extends StObject {
   
   var pageNumber: Double = js.native
   
@@ -20,24 +21,12 @@ object KnockoutPagingDefaultOptions {
   }
   
   @scala.inline
-  implicit class KnockoutPagingDefaultOptionsOps[Self <: KnockoutPagingDefaultOptions] (val x: Self) extends AnyVal {
+  implicit class KnockoutPagingDefaultOptionsMutableBuilder[Self <: KnockoutPagingDefaultOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPageNumber(value: Double): Self = this.set("pageNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
   }
 }

@@ -3,12 +3,13 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.octokitTypesStrings.APPROVE
 import typings.octokitTypes.octokitTypesStrings.COMMENT
 import typings.octokitTypes.octokitTypesStrings.REQUEST_CHANGES
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PullsSubmitReviewEndpoint extends js.Object {
+trait PullsSubmitReviewEndpoint extends StObject {
   
   /**
     * The body text of the pull request review
@@ -43,39 +44,27 @@ object PullsSubmitReviewEndpoint {
   }
   
   @scala.inline
-  implicit class PullsSubmitReviewEndpointOps[Self <: PullsSubmitReviewEndpoint] (val x: Self) extends AnyVal {
+  implicit class PullsSubmitReviewEndpointMutableBuilder[Self <: PullsSubmitReviewEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent(value: APPROVE | REQUEST_CHANGES | COMMENT): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: APPROVE | REQUEST_CHANGES | COMMENT): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setPull_number(value: Double): Self = StObject.set(x, "pull_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPull_number(value: Double): Self = this.set("pull_number", value.asInstanceOf[js.Any])
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReview_id(value: Double): Self = this.set("review_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setReview_id(value: Double): Self = StObject.set(x, "review_id", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.imagebuilderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListInfrastructureConfigurationsResponse extends js.Object {
+trait ListInfrastructureConfigurationsResponse extends StObject {
   
   /**
     * The list of infrastructure configurations. 
@@ -31,39 +32,27 @@ object ListInfrastructureConfigurationsResponse {
   }
   
   @scala.inline
-  implicit class ListInfrastructureConfigurationsResponseOps[Self <: ListInfrastructureConfigurationsResponse] (val x: Self) extends AnyVal {
+  implicit class ListInfrastructureConfigurationsResponseMutableBuilder[Self <: ListInfrastructureConfigurationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInfrastructureConfigurationSummaryList(value: InfrastructureConfigurationSummaryList): Self = StObject.set(x, "infrastructureConfigurationSummaryList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfrastructureConfigurationSummaryListUndefined: Self = StObject.set(x, "infrastructureConfigurationSummaryList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfrastructureConfigurationSummaryListVarargs(value: InfrastructureConfigurationSummary*): Self = StObject.set(x, "infrastructureConfigurationSummaryList", js.Array(value :_*))
     
     @scala.inline
-    def setInfrastructureConfigurationSummaryListVarargs(value: InfrastructureConfigurationSummary*): Self = this.set("infrastructureConfigurationSummaryList", js.Array(value :_*))
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfrastructureConfigurationSummaryList(value: InfrastructureConfigurationSummaryList): Self = this.set("infrastructureConfigurationSummaryList", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteInfrastructureConfigurationSummaryList: Self = this.set("infrastructureConfigurationSummaryList", js.undefined)
+    def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setRequestId(value: NonEmptyString): Self = this.set("requestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestId: Self = this.set("requestId", js.undefined)
+    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

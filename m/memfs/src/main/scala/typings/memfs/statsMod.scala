@@ -4,16 +4,36 @@ import typings.memfs.memfsBooleans.`false`
 import typings.memfs.memfsBooleans.`true`
 import typings.memfs.nodeMod.Node
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("memfs/lib/Stats", JSImport.Namespace)
-@js.native
-object statsMod extends js.Object {
+object statsMod {
   
+  @JSImport("memfs/lib/Stats", JSImport.Default)
   @js.native
-  class Stats[T] () extends js.Object {
+  class default[T] () extends Stats[T]
+  /* static members */
+  object default {
+    
+    @JSImport("memfs/lib/Stats", "default.build")
+    @js.native
+    def build(node: Node): Stats[TStatNumber] = js.native
+    @JSImport("memfs/lib/Stats", "default.build")
+    @js.native
+    def build(node: Node, bigint: Boolean): Stats[TStatNumber] = js.native
+    @JSImport("memfs/lib/Stats", "default.build")
+    @js.native
+    def build_false(node: Node, bigint: `false`): Stats[Double] = js.native
+    @JSImport("memfs/lib/Stats", "default.build")
+    @js.native
+    def build_true(node: Node, bigint: `true`): Stats[js.BigInt] = js.native
+  }
+  
+  @JSImport("memfs/lib/Stats", "Stats")
+  @js.native
+  class Stats[T] () extends StObject {
     
     var _checkModeProperty: js.Any = js.native
     
@@ -68,28 +88,19 @@ object statsMod extends js.Object {
     var uid: T = js.native
   }
   /* static members */
-  @js.native
-  object Stats extends js.Object {
+  object Stats {
     
+    @JSImport("memfs/lib/Stats", "Stats.build")
+    @js.native
     def build(node: Node): Stats[TStatNumber] = js.native
+    @JSImport("memfs/lib/Stats", "Stats.build")
+    @js.native
     def build(node: Node, bigint: Boolean): Stats[TStatNumber] = js.native
-    @JSName("build")
+    @JSImport("memfs/lib/Stats", "Stats.build")
+    @js.native
     def build_false(node: Node, bigint: `false`): Stats[Double] = js.native
-    @JSName("build")
-    def build_true(node: Node, bigint: `true`): Stats[js.BigInt] = js.native
-  }
-  
-  @js.native
-  class default[T] () extends Stats[T]
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def build(node: Node): Stats[TStatNumber] = js.native
-    def build(node: Node, bigint: Boolean): Stats[TStatNumber] = js.native
-    @JSName("build")
-    def build_false(node: Node, bigint: `false`): Stats[Double] = js.native
-    @JSName("build")
+    @JSImport("memfs/lib/Stats", "Stats.build")
+    @js.native
     def build_true(node: Node, bigint: `true`): Stats[js.BigInt] = js.native
   }
   

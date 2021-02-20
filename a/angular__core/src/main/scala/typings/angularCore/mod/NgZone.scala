@@ -1,13 +1,14 @@
 package typings.angularCore.mod
 
 import typings.angularCore.anon.EnableLongStackTrace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "NgZone")
 @js.native
-class NgZone protected () extends js.Object {
+class NgZone protected () extends StObject {
   def this(hasEnableLongStackTraceShouldCoalesceEventChangeDetection: EnableLongStackTrace) = this()
   
   val hasPendingMacrotasks: Boolean = js.native
@@ -138,13 +139,17 @@ class NgZone protected () extends js.Object {
   ): T = js.native
 }
 /* static members */
-@JSImport("@angular/core", "NgZone")
-@js.native
-object NgZone extends js.Object {
+object NgZone {
   
+  @JSImport("@angular/core", "NgZone.assertInAngularZone")
+  @js.native
   def assertInAngularZone(): Unit = js.native
   
+  @JSImport("@angular/core", "NgZone.assertNotInAngularZone")
+  @js.native
   def assertNotInAngularZone(): Unit = js.native
   
+  @JSImport("@angular/core", "NgZone.isInAngularZone")
+  @js.native
   def isInAngularZone(): Boolean = js.native
 }

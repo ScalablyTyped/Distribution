@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Queue extends js.Object {
+trait Queue extends StObject {
   
   /*Process the commands in the queue, provided the queue is not waiting for another command to complete. This
     * method is used internally; you should not need to call it yourself.
@@ -69,55 +70,44 @@ object Queue {
     pending: Double,
     queue: js.Array[_],
     running: Double,
-    wait: js.Function => js.Function
+    wait_ : js.Function => js.Function
   ): Queue = {
-    val __obj = js.Dynamic.literal(Process = js.Any.fromFunction0(Process), Push = js.Any.fromFunction1(Push), Resume = js.Any.fromFunction0(Resume), Suspend = js.Any.fromFunction0(Suspend), call = js.Any.fromFunction0(call), pending = pending.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], running = running.asInstanceOf[js.Any], wait = js.Any.fromFunction1(wait))
+    val __obj = js.Dynamic.literal(Process = js.Any.fromFunction0(Process), Push = js.Any.fromFunction1(Push), Resume = js.Any.fromFunction0(Resume), Suspend = js.Any.fromFunction0(Suspend), call = js.Any.fromFunction0(call), pending = pending.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], running = running.asInstanceOf[js.Any])
+    __obj.updateDynamic("wait")(js.Any.fromFunction1(wait_))
     __obj.asInstanceOf[Queue]
   }
   
   @scala.inline
-  implicit class QueueOps[Self <: Queue] (val x: Self) extends AnyVal {
+  implicit class QueueMutableBuilder[Self <: Queue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCall(value: () => Unit): Self = StObject.set(x, "call", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProcess(value: () => Unit): Self = StObject.set(x, "Process", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setProcess(value: () => Unit): Self = this.set("Process", js.Any.fromFunction0(value))
+    def setPush(value: js.Array[_] => CallbackObject): Self = StObject.set(x, "Push", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPush(value: js.Array[_] => CallbackObject): Self = this.set("Push", js.Any.fromFunction1(value))
+    def setQueue(value: js.Array[_]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResume(value: () => Unit): Self = this.set("Resume", js.Any.fromFunction0(value))
+    def setQueueVarargs(value: js.Any*): Self = StObject.set(x, "queue", js.Array(value :_*))
     
     @scala.inline
-    def setSuspend(value: () => Unit): Self = this.set("Suspend", js.Any.fromFunction0(value))
+    def setResume(value: () => Unit): Self = StObject.set(x, "Resume", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCall(value: () => Unit): Self = this.set("call", js.Any.fromFunction0(value))
+    def setRunning(value: Double): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPending(value: Double): Self = this.set("pending", value.asInstanceOf[js.Any])
+    def setSuspend(value: () => Unit): Self = StObject.set(x, "Suspend", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setQueueVarargs(value: js.Any*): Self = this.set("queue", js.Array(value :_*))
-    
-    @scala.inline
-    def setQueue(value: js.Array[_]): Self = this.set("queue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRunning(value: Double): Self = this.set("running", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWait(value: js.Function => js.Function): Self = this.set("wait", js.Any.fromFunction1(value))
+    def setWait_(value: js.Function => js.Function): Self = StObject.set(x, "wait", js.Any.fromFunction1(value))
   }
 }

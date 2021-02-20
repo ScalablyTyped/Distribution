@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateSdfDownloadTaskRequest extends js.Object {
+trait CreateSdfDownloadTaskRequest extends StObject {
   
   /** The ID of the advertiser to download SDF for. */
   var advertiserId: js.UndefOr[String] = js.native
@@ -40,54 +41,42 @@ object CreateSdfDownloadTaskRequest {
   }
   
   @scala.inline
-  implicit class CreateSdfDownloadTaskRequestOps[Self <: CreateSdfDownloadTaskRequest] (val x: Self) extends AnyVal {
+  implicit class CreateSdfDownloadTaskRequestMutableBuilder[Self <: CreateSdfDownloadTaskRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdFilter(value: IdFilter): Self = StObject.set(x, "idFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    def setIdFilterUndefined: Self = StObject.set(x, "idFilter", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    def setInventorySourceFilter(value: InventorySourceFilter): Self = StObject.set(x, "inventorySourceFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdFilter(value: IdFilter): Self = this.set("idFilter", value.asInstanceOf[js.Any])
+    def setInventorySourceFilterUndefined: Self = StObject.set(x, "inventorySourceFilter", js.undefined)
     
     @scala.inline
-    def deleteIdFilter: Self = this.set("idFilter", js.undefined)
+    def setParentEntityFilter(value: ParentEntityFilter): Self = StObject.set(x, "parentEntityFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInventorySourceFilter(value: InventorySourceFilter): Self = this.set("inventorySourceFilter", value.asInstanceOf[js.Any])
+    def setParentEntityFilterUndefined: Self = StObject.set(x, "parentEntityFilter", js.undefined)
     
     @scala.inline
-    def deleteInventorySourceFilter: Self = this.set("inventorySourceFilter", js.undefined)
+    def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentEntityFilter(value: ParentEntityFilter): Self = this.set("parentEntityFilter", value.asInstanceOf[js.Any])
+    def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
     
     @scala.inline
-    def deleteParentEntityFilter: Self = this.set("parentEntityFilter", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartnerId(value: String): Self = this.set("partnerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartnerId: Self = this.set("partnerId", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

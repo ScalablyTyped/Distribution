@@ -1,16 +1,16 @@
 package typings.nodegit
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/buf", JSImport.Namespace)
-@js.native
-object bufMod extends js.Object {
+object bufMod {
   
+  @JSImport("nodegit/buf", "Buf")
   @js.native
-  class Buf () extends js.Object {
+  class Buf () extends StObject {
     
     var asize: Double = js.native
     

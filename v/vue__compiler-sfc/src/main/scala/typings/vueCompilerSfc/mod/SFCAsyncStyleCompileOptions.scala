@@ -1,6 +1,7 @@
 package typings.vueCompilerSfc.mod
 
 import typings.vueCompilerSfc.anon.GenerateScopedName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,36 +24,24 @@ object SFCAsyncStyleCompileOptions {
   }
   
   @scala.inline
-  implicit class SFCAsyncStyleCompileOptionsOps[Self <: SFCAsyncStyleCompileOptions] (val x: Self) extends AnyVal {
+  implicit class SFCAsyncStyleCompileOptionsMutableBuilder[Self <: SFCAsyncStyleCompileOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsAsync(value: Boolean): Self = StObject.set(x, "isAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsAsyncUndefined: Self = StObject.set(x, "isAsync", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModules(value: Boolean): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAsync(value: Boolean): Self = this.set("isAsync", value.asInstanceOf[js.Any])
+    def setModulesOptions(value: GenerateScopedName): Self = StObject.set(x, "modulesOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsAsync: Self = this.set("isAsync", js.undefined)
+    def setModulesOptionsUndefined: Self = StObject.set(x, "modulesOptions", js.undefined)
     
     @scala.inline
-    def setModules(value: Boolean): Self = this.set("modules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModules: Self = this.set("modules", js.undefined)
-    
-    @scala.inline
-    def setModulesOptions(value: GenerateScopedName): Self = this.set("modulesOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModulesOptions: Self = this.set("modulesOptions", js.undefined)
+    def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
   }
 }

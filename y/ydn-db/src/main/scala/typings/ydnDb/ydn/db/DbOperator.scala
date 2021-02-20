@@ -1,11 +1,12 @@
 package typings.ydnDb.ydn.db
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DbOperator extends js.Object {
+trait DbOperator extends StObject {
   
   def add(store_name: String, value: js.Any): Request = js.native
   def add(store_name: String, value: js.Any, key: js.Any): Request = js.native

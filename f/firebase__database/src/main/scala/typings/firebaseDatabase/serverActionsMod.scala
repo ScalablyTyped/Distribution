@@ -2,16 +2,16 @@ package typings.firebaseDatabase
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseDatabase.queryMod.Query
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/ServerActions", JSImport.Namespace)
-@js.native
-object serverActionsMod extends js.Object {
+object serverActionsMod {
   
+  @JSImport("@firebase/database/dist/src/core/ServerActions", "ServerActions")
   @js.native
-  abstract class ServerActions () extends js.Object {
+  abstract class ServerActions () extends StObject {
     
     /**
       * Get the server value satisfying this query.

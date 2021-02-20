@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ControlInReportEvents extends js.Object {
+trait ControlInReportEvents extends StObject {
   
   @JSName("Access._ControlInReportEvents_typekey")
   var AccessDot_ControlInReportEvents_typekey: ControlInReportEvents = js.native

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FixedOrPercent extends js.Object {
+trait FixedOrPercent extends StObject {
   
   /** Specifies a fixed value. */
   var fixed: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object FixedOrPercent {
   }
   
   @scala.inline
-  implicit class FixedOrPercentOps[Self <: FixedOrPercent] (val x: Self) extends AnyVal {
+  implicit class FixedOrPercentMutableBuilder[Self <: FixedOrPercent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFixed(value: Double): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixed(value: Double): Self = this.set("fixed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFixed: Self = this.set("fixed", js.undefined)
-    
-    @scala.inline
-    def setPercent(value: Double): Self = this.set("percent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePercent: Self = this.set("percent", js.undefined)
+    def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
   }
 }

@@ -2,14 +2,14 @@ package typings.smartystreetsJavascriptSdk.mod
 
 import typings.smartystreetsJavascriptSdk.anon.AddressCount
 import typings.smartystreetsJavascriptSdk.anon.Addresses
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("smartystreets-javascript-sdk", "usExtract")
-@js.native
-object usExtract extends js.Object {
+object usExtract {
   
+  @JSImport("smartystreets-javascript-sdk", "usExtract.Lookup")
   @js.native
   class Lookup protected ()
     extends typings.smartystreetsJavascriptSdk.mod.core.Lookup {
@@ -28,8 +28,9 @@ object usExtract extends js.Object {
     var text: String = js.native
   }
   
+  @JSImport("smartystreets-javascript-sdk", "usExtract.Result")
   @js.native
-  class Result protected () extends js.Object {
+  class Result protected () extends StObject {
     def this(x: Addresses) = this()
     
     var addressees: js.Array[_] = js.native

@@ -1,24 +1,25 @@
 package typings.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CORSRule extends js.Object {
+trait CORSRule extends StObject {
   
-   // configure for Access-Control-Allow-Methods header
+  // configure for Access-Control-Allow-Methods header
   var allowedHeader: js.UndefOr[String | js.Array[String]] = js.native
   
-   // configure for Access-Control-Allow-Origin header
+  // configure for Access-Control-Allow-Origin header
   var allowedMethod: String | js.Array[String] = js.native
   
   var allowedOrigin: String | js.Array[String] = js.native
   
-   // configure for Access-Control-Allow-Headers header
+  // configure for Access-Control-Allow-Headers header
   var exposeHeader: js.UndefOr[String | js.Array[String]] = js.native
   
-   // configure for Access-Control-Expose-Headers header
+  // configure for Access-Control-Expose-Headers header
   var maxAgeSeconds: js.UndefOr[String | js.Array[String]] = js.native
 }
 object CORSRule {
@@ -30,57 +31,45 @@ object CORSRule {
   }
   
   @scala.inline
-  implicit class CORSRuleOps[Self <: CORSRule] (val x: Self) extends AnyVal {
+  implicit class CORSRuleMutableBuilder[Self <: CORSRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedHeader(value: String | js.Array[String]): Self = StObject.set(x, "allowedHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedHeaderUndefined: Self = StObject.set(x, "allowedHeader", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedHeaderVarargs(value: String*): Self = StObject.set(x, "allowedHeader", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedMethodVarargs(value: String*): Self = this.set("allowedMethod", js.Array(value :_*))
+    def setAllowedMethod(value: String | js.Array[String]): Self = StObject.set(x, "allowedMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedMethod(value: String | js.Array[String]): Self = this.set("allowedMethod", value.asInstanceOf[js.Any])
+    def setAllowedMethodVarargs(value: String*): Self = StObject.set(x, "allowedMethod", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedOriginVarargs(value: String*): Self = this.set("allowedOrigin", js.Array(value :_*))
+    def setAllowedOrigin(value: String | js.Array[String]): Self = StObject.set(x, "allowedOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedOrigin(value: String | js.Array[String]): Self = this.set("allowedOrigin", value.asInstanceOf[js.Any])
+    def setAllowedOriginVarargs(value: String*): Self = StObject.set(x, "allowedOrigin", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedHeaderVarargs(value: String*): Self = this.set("allowedHeader", js.Array(value :_*))
+    def setExposeHeader(value: String | js.Array[String]): Self = StObject.set(x, "exposeHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedHeader(value: String | js.Array[String]): Self = this.set("allowedHeader", value.asInstanceOf[js.Any])
+    def setExposeHeaderUndefined: Self = StObject.set(x, "exposeHeader", js.undefined)
     
     @scala.inline
-    def deleteAllowedHeader: Self = this.set("allowedHeader", js.undefined)
+    def setExposeHeaderVarargs(value: String*): Self = StObject.set(x, "exposeHeader", js.Array(value :_*))
     
     @scala.inline
-    def setExposeHeaderVarargs(value: String*): Self = this.set("exposeHeader", js.Array(value :_*))
+    def setMaxAgeSeconds(value: String | js.Array[String]): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposeHeader(value: String | js.Array[String]): Self = this.set("exposeHeader", value.asInstanceOf[js.Any])
+    def setMaxAgeSecondsUndefined: Self = StObject.set(x, "maxAgeSeconds", js.undefined)
     
     @scala.inline
-    def deleteExposeHeader: Self = this.set("exposeHeader", js.undefined)
-    
-    @scala.inline
-    def setMaxAgeSecondsVarargs(value: String*): Self = this.set("maxAgeSeconds", js.Array(value :_*))
-    
-    @scala.inline
-    def setMaxAgeSeconds(value: String | js.Array[String]): Self = this.set("maxAgeSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxAgeSeconds: Self = this.set("maxAgeSeconds", js.undefined)
+    def setMaxAgeSecondsVarargs(value: String*): Self = StObject.set(x, "maxAgeSeconds", js.Array(value :_*))
   }
 }

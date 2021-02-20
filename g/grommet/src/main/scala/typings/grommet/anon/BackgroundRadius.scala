@@ -1,11 +1,12 @@
 package typings.grommet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackgroundRadius extends js.Object {
+trait BackgroundRadius extends StObject {
   
   var background: js.UndefOr[`3`] = js.native
   
@@ -20,30 +21,18 @@ object BackgroundRadius {
   }
   
   @scala.inline
-  implicit class BackgroundRadiusOps[Self <: BackgroundRadius] (val x: Self) extends AnyVal {
+  implicit class BackgroundRadiusMutableBuilder[Self <: BackgroundRadius] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: `3`): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRadius(value: String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: `3`): Self = this.set("background", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
-    
-    @scala.inline
-    def setRadius(value: String): Self = this.set("radius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
   }
 }

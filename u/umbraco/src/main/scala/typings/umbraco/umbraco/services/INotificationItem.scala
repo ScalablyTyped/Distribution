@@ -1,5 +1,6 @@
 package typings.umbraco.umbraco.services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Notification Item
   */
 @js.native
-trait INotificationItem extends js.Object {
+trait INotificationItem extends StObject {
   
   /*Collection of button actions to append (label, func, cssClass)*/
   var actions: js.Array[IButtonAction] = js.native
@@ -49,42 +50,30 @@ object INotificationItem {
   }
   
   @scala.inline
-  implicit class INotificationItemOps[Self <: INotificationItem] (val x: Self) extends AnyVal {
+  implicit class INotificationItemMutableBuilder[Self <: INotificationItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[IButtonAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsVarargs(value: IButtonAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsVarargs(value: IButtonAction*): Self = this.set("actions", js.Array(value :_*))
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: js.Array[IButtonAction]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadline(value: String): Self = this.set("headline", value.asInstanceOf[js.Any])
+    def setType(value: NotificationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSticky(value: Boolean): Self = this.set("sticky", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: NotificationType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setView(value: String): Self = this.set("view", value.asInstanceOf[js.Any])
+    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

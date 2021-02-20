@@ -1,11 +1,12 @@
 package typings.sparkpost.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransmissionOptions extends js.Object {
+trait TransmissionOptions extends StObject {
   
   /** Whether click tracking is enabled for this transmission */
   var click_tracking: js.UndefOr[Boolean] = js.native
@@ -40,66 +41,54 @@ object TransmissionOptions {
   }
   
   @scala.inline
-  implicit class TransmissionOptionsOps[Self <: TransmissionOptions] (val x: Self) extends AnyVal {
+  implicit class TransmissionOptionsMutableBuilder[Self <: TransmissionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick_tracking(value: Boolean): Self = StObject.set(x, "click_tracking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClick_trackingUndefined: Self = StObject.set(x, "click_tracking", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInline_css(value: Boolean): Self = StObject.set(x, "inline_css", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick_tracking(value: Boolean): Self = this.set("click_tracking", value.asInstanceOf[js.Any])
+    def setInline_cssUndefined: Self = StObject.set(x, "inline_css", js.undefined)
     
     @scala.inline
-    def deleteClick_tracking: Self = this.set("click_tracking", js.undefined)
+    def setIp_pool(value: String): Self = StObject.set(x, "ip_pool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInline_css(value: Boolean): Self = this.set("inline_css", value.asInstanceOf[js.Any])
+    def setIp_poolUndefined: Self = StObject.set(x, "ip_pool", js.undefined)
     
     @scala.inline
-    def deleteInline_css: Self = this.set("inline_css", js.undefined)
+    def setOpen_tracking(value: Boolean): Self = StObject.set(x, "open_tracking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIp_pool(value: String): Self = this.set("ip_pool", value.asInstanceOf[js.Any])
+    def setOpen_trackingUndefined: Self = StObject.set(x, "open_tracking", js.undefined)
     
     @scala.inline
-    def deleteIp_pool: Self = this.set("ip_pool", js.undefined)
+    def setSandbox(value: Boolean): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen_tracking(value: Boolean): Self = this.set("open_tracking", value.asInstanceOf[js.Any])
+    def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
     
     @scala.inline
-    def deleteOpen_tracking: Self = this.set("open_tracking", js.undefined)
+    def setSkip_suppression(value: Boolean): Self = StObject.set(x, "skip_suppression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSandbox(value: Boolean): Self = this.set("sandbox", value.asInstanceOf[js.Any])
+    def setSkip_suppressionUndefined: Self = StObject.set(x, "skip_suppression", js.undefined)
     
     @scala.inline
-    def deleteSandbox: Self = this.set("sandbox", js.undefined)
+    def setStart_time(value: String): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkip_suppression(value: Boolean): Self = this.set("skip_suppression", value.asInstanceOf[js.Any])
+    def setStart_timeUndefined: Self = StObject.set(x, "start_time", js.undefined)
     
     @scala.inline
-    def deleteSkip_suppression: Self = this.set("skip_suppression", js.undefined)
+    def setTransactional(value: Boolean): Self = StObject.set(x, "transactional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart_time(value: String): Self = this.set("start_time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart_time: Self = this.set("start_time", js.undefined)
-    
-    @scala.inline
-    def setTransactional(value: Boolean): Self = this.set("transactional", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransactional: Self = this.set("transactional", js.undefined)
+    def setTransactionalUndefined: Self = StObject.set(x, "transactional", js.undefined)
   }
 }

@@ -7,6 +7,7 @@ import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.ClientStateListResponse.IEntry
 import typings.sawtoothSdk.protobufMod.IClientStateListResponse
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,83 +23,10 @@ class ClientStateListResponse ()
   def this(properties: IClientStateListResponse) = this()
 }
 /* static members */
-@JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse")
-@js.native
-object ClientStateListResponse extends js.Object {
-  
-  /**
-    * Creates a new ClientStateListResponse instance using the specified properties.
-    * @param [properties] Properties to set
-    * @returns ClientStateListResponse instance
-    */
-  def create(): typings.sawtoothSdk.protobufMod.ClientStateListResponse = js.native
-  def create(properties: IClientStateListResponse): typings.sawtoothSdk.protobufMod.ClientStateListResponse = js.native
-  
-  /**
-    * Decodes a ClientStateListResponse message from the specified reader or buffer.
-    * @param reader Reader or buffer to decode from
-    * @param [length] Message length if known beforehand
-    * @returns ClientStateListResponse
-    * @throws {Error} If the payload is not a reader or valid buffer
-    * @throws {$protobuf.util.ProtocolError} If required fields are missing
-    */
-  def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ClientStateListResponse = js.native
-  def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ClientStateListResponse = js.native
-  def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientStateListResponse = js.native
-  def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ClientStateListResponse = js.native
-  
-  /**
-    * Decodes a ClientStateListResponse message from the specified reader or buffer, length delimited.
-    * @param reader Reader or buffer to decode from
-    * @returns ClientStateListResponse
-    * @throws {Error} If the payload is not a reader or valid buffer
-    * @throws {$protobuf.util.ProtocolError} If required fields are missing
-    */
-  def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ClientStateListResponse = js.native
-  def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientStateListResponse = js.native
-  
-  /**
-    * Encodes the specified ClientStateListResponse message. Does not implicitly {@link ClientStateListResponse.verify|verify} messages.
-    * @param message ClientStateListResponse message or plain object to encode
-    * @param [writer] Writer to encode to
-    * @returns Writer
-    */
-  def encode(message: IClientStateListResponse): Writer = js.native
-  def encode(message: IClientStateListResponse, writer: Writer): Writer = js.native
-  
-  /**
-    * Encodes the specified ClientStateListResponse message, length delimited. Does not implicitly {@link ClientStateListResponse.verify|verify} messages.
-    * @param message ClientStateListResponse message or plain object to encode
-    * @param [writer] Writer to encode to
-    * @returns Writer
-    */
-  def encodeDelimited(message: IClientStateListResponse): Writer = js.native
-  def encodeDelimited(message: IClientStateListResponse, writer: Writer): Writer = js.native
-  
-  /**
-    * Creates a ClientStateListResponse message from a plain object. Also converts values to their respective internal types.
-    * @param object Plain object
-    * @returns ClientStateListResponse
-    */
-  def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ClientStateListResponse = js.native
-  
-  /**
-    * Creates a plain object from a ClientStateListResponse message. Also converts values to other types if specified.
-    * @param message ClientStateListResponse
-    * @param [options] Conversion options
-    * @returns Plain object
-    */
-  def toObject(message: typings.sawtoothSdk.protobufMod.ClientStateListResponse): StringDictionary[js.Any] = js.native
-  def toObject(message: typings.sawtoothSdk.protobufMod.ClientStateListResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
-  
-  /**
-    * Verifies a ClientStateListResponse message.
-    * @param message Plain object to verify
-    * @returns `null` if valid, otherwise the reason why it is not
-    */
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+object ClientStateListResponse {
   
   /** Represents an Entry. */
+  @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.Entry")
   @js.native
   /**
     * Constructs a new Entry.
@@ -108,16 +36,19 @@ object ClientStateListResponse extends js.Object {
     extends typings.sawtoothSdk.protobufMod.ClientStateListResponse.Entry {
     def this(properties: IEntry) = this()
   }
-  /* static members */
-  @js.native
-  object Entry extends js.Object {
+  object Entry {
     
     /**
       * Creates a new Entry instance using the specified properties.
       * @param [properties] Properties to set
       * @returns Entry instance
       */
+    /* static member */
+    @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.Entry.create")
+    @js.native
     def create(): typings.sawtoothSdk.protobufMod.ClientStateListResponse.Entry = js.native
+    @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.Entry.create")
+    @js.native
     def create(properties: IEntry): typings.sawtoothSdk.protobufMod.ClientStateListResponse.Entry = js.native
     
     /**
@@ -128,9 +59,18 @@ object ClientStateListResponse extends js.Object {
       * @throws {Error} If the payload is not a reader or valid buffer
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
+    /* static member */
+    @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.Entry.decode")
+    @js.native
     def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ClientStateListResponse.Entry = js.native
+    @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.Entry.decode")
+    @js.native
     def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ClientStateListResponse.Entry = js.native
+    @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.Entry.decode")
+    @js.native
     def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientStateListResponse.Entry = js.native
+    @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.Entry.decode")
+    @js.native
     def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ClientStateListResponse.Entry = js.native
     
     /**
@@ -140,7 +80,12 @@ object ClientStateListResponse extends js.Object {
       * @throws {Error} If the payload is not a reader or valid buffer
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
+    /* static member */
+    @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.Entry.decodeDelimited")
+    @js.native
     def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ClientStateListResponse.Entry = js.native
+    @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.Entry.decodeDelimited")
+    @js.native
     def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientStateListResponse.Entry = js.native
     
     /**
@@ -149,7 +94,12 @@ object ClientStateListResponse extends js.Object {
       * @param [writer] Writer to encode to
       * @returns Writer
       */
+    /* static member */
+    @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.Entry.encode")
+    @js.native
     def encode(message: IEntry): Writer = js.native
+    @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.Entry.encode")
+    @js.native
     def encode(message: IEntry, writer: Writer): Writer = js.native
     
     /**
@@ -158,7 +108,12 @@ object ClientStateListResponse extends js.Object {
       * @param [writer] Writer to encode to
       * @returns Writer
       */
+    /* static member */
+    @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.Entry.encodeDelimited")
+    @js.native
     def encodeDelimited(message: IEntry): Writer = js.native
+    @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.Entry.encodeDelimited")
+    @js.native
     def encodeDelimited(message: IEntry, writer: Writer): Writer = js.native
     
     /**
@@ -166,6 +121,9 @@ object ClientStateListResponse extends js.Object {
       * @param object Plain object
       * @returns Entry
       */
+    /* static member */
+    @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.Entry.fromObject")
+    @js.native
     def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ClientStateListResponse.Entry = js.native
     
     /**
@@ -174,7 +132,12 @@ object ClientStateListResponse extends js.Object {
       * @param [options] Conversion options
       * @returns Plain object
       */
+    /* static member */
+    @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.Entry.toObject")
+    @js.native
     def toObject(message: typings.sawtoothSdk.protobufMod.ClientStateListResponse.Entry): StringDictionary[js.Any] = js.native
+    @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.Entry.toObject")
+    @js.native
     def toObject(
       message: typings.sawtoothSdk.protobufMod.ClientStateListResponse.Entry,
       options: IConversionOptions
@@ -185,12 +148,16 @@ object ClientStateListResponse extends js.Object {
       * @param message Plain object to verify
       * @returns `null` if valid, otherwise the reason why it is not
       */
+    /* static member */
+    @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.Entry.verify")
+    @js.native
     def verify(message: StringDictionary[js.Any]): String | Null = js.native
   }
   
   /** Status enum. */
+  @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.Status")
   @js.native
-  object Status extends js.Object {
+  object Status extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.sawtoothSdk.protobufMod.ClientStateListResponse.Status with Double] = js.native
@@ -215,4 +182,108 @@ object ClientStateListResponse extends js.Object {
     
     /* 0 */ val STATUS_UNSET: typings.sawtoothSdk.protobufMod.ClientStateListResponse.Status.STATUS_UNSET with Double = js.native
   }
+  
+  /**
+    * Creates a new ClientStateListResponse instance using the specified properties.
+    * @param [properties] Properties to set
+    * @returns ClientStateListResponse instance
+    */
+  @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.create")
+  @js.native
+  def create(): typings.sawtoothSdk.protobufMod.ClientStateListResponse = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.create")
+  @js.native
+  def create(properties: IClientStateListResponse): typings.sawtoothSdk.protobufMod.ClientStateListResponse = js.native
+  
+  /**
+    * Decodes a ClientStateListResponse message from the specified reader or buffer.
+    * @param reader Reader or buffer to decode from
+    * @param [length] Message length if known beforehand
+    * @returns ClientStateListResponse
+    * @throws {Error} If the payload is not a reader or valid buffer
+    * @throws {$protobuf.util.ProtocolError} If required fields are missing
+    */
+  @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.decode")
+  @js.native
+  def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ClientStateListResponse = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.decode")
+  @js.native
+  def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ClientStateListResponse = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.decode")
+  @js.native
+  def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientStateListResponse = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.decode")
+  @js.native
+  def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ClientStateListResponse = js.native
+  
+  /**
+    * Decodes a ClientStateListResponse message from the specified reader or buffer, length delimited.
+    * @param reader Reader or buffer to decode from
+    * @returns ClientStateListResponse
+    * @throws {Error} If the payload is not a reader or valid buffer
+    * @throws {$protobuf.util.ProtocolError} If required fields are missing
+    */
+  @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.decodeDelimited")
+  @js.native
+  def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ClientStateListResponse = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.decodeDelimited")
+  @js.native
+  def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientStateListResponse = js.native
+  
+  /**
+    * Encodes the specified ClientStateListResponse message. Does not implicitly {@link ClientStateListResponse.verify|verify} messages.
+    * @param message ClientStateListResponse message or plain object to encode
+    * @param [writer] Writer to encode to
+    * @returns Writer
+    */
+  @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.encode")
+  @js.native
+  def encode(message: IClientStateListResponse): Writer = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.encode")
+  @js.native
+  def encode(message: IClientStateListResponse, writer: Writer): Writer = js.native
+  
+  /**
+    * Encodes the specified ClientStateListResponse message, length delimited. Does not implicitly {@link ClientStateListResponse.verify|verify} messages.
+    * @param message ClientStateListResponse message or plain object to encode
+    * @param [writer] Writer to encode to
+    * @returns Writer
+    */
+  @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.encodeDelimited")
+  @js.native
+  def encodeDelimited(message: IClientStateListResponse): Writer = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.encodeDelimited")
+  @js.native
+  def encodeDelimited(message: IClientStateListResponse, writer: Writer): Writer = js.native
+  
+  /**
+    * Creates a ClientStateListResponse message from a plain object. Also converts values to their respective internal types.
+    * @param object Plain object
+    * @returns ClientStateListResponse
+    */
+  @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.fromObject")
+  @js.native
+  def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ClientStateListResponse = js.native
+  
+  /**
+    * Creates a plain object from a ClientStateListResponse message. Also converts values to other types if specified.
+    * @param message ClientStateListResponse
+    * @param [options] Conversion options
+    * @returns Plain object
+    */
+  @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.toObject")
+  @js.native
+  def toObject(message: typings.sawtoothSdk.protobufMod.ClientStateListResponse): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.toObject")
+  @js.native
+  def toObject(message: typings.sawtoothSdk.protobufMod.ClientStateListResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  
+  /**
+    * Verifies a ClientStateListResponse message.
+    * @param message Plain object to verify
+    * @returns `null` if valid, otherwise the reason why it is not
+    */
+  @JSImport("sawtooth-sdk", "protobuf.ClientStateListResponse.verify")
+  @js.native
+  def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

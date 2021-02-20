@@ -1,5 +1,6 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,33 +38,21 @@ object ListDataValidationFailure {
   }
   
   @scala.inline
-  implicit class ListDataValidationFailureOps[Self <: ListDataValidationFailure] (val x: Self) extends AnyVal {
+  implicit class ListDataValidationFailureMutableBuilder[Self <: ListDataValidationFailure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_displayName(value: () => String): Self = StObject.set(x, "get_displayName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_message(value: () => String): Self = StObject.set(x, "get_message", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_displayName(value: () => String): Self = this.set("get_displayName", js.Any.fromFunction0(value))
+    def setGet_reason(value: () => ListDataValidationFailureReason): Self = StObject.set(x, "get_reason", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_message(value: () => String): Self = this.set("get_message", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_name(value: () => String): Self = this.set("get_name", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_reason(value: () => ListDataValidationFailureReason): Self = this.set("get_reason", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_validationType(value: () => ListDataValidationType): Self = this.set("get_validationType", js.Any.fromFunction0(value))
+    def setGet_validationType(value: () => ListDataValidationType): Self = StObject.set(x, "get_validationType", js.Any.fromFunction0(value))
   }
 }

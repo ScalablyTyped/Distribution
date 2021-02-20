@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XDocumentHandler
 import typings.activexLibreoffice.com_.sun.star.xml.wrapper.XXMLElementWrapper
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -121,51 +122,39 @@ object XSAXEventKeeper {
   }
   
   @scala.inline
-  implicit class XSAXEventKeeperOps[Self <: XSAXEventKeeper] (val x: Self) extends AnyVal {
+  implicit class XSAXEventKeeperMutableBuilder[Self <: XSAXEventKeeper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddBlocker(value: () => Double): Self = StObject.set(x, "addBlocker", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddElementCollector(value: () => Double): Self = StObject.set(x, "addElementCollector", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentBlockingNode(value: XXMLElementWrapper): Self = StObject.set(x, "CurrentBlockingNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentBlockingNode(value: XXMLElementWrapper): Self = this.set("CurrentBlockingNode", value.asInstanceOf[js.Any])
+    def setGetCurrentBlockingNode(value: () => XXMLElementWrapper): Self = StObject.set(x, "getCurrentBlockingNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddBlocker(value: () => Double): Self = this.set("addBlocker", js.Any.fromFunction0(value))
+    def setGetElement(value: Double => XXMLElementWrapper): Self = StObject.set(x, "getElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddElementCollector(value: () => Double): Self = this.set("addElementCollector", js.Any.fromFunction0(value))
+    def setIsBlocking(value: () => Boolean): Self = StObject.set(x, "isBlocking", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentBlockingNode(value: () => XXMLElementWrapper): Self = this.set("getCurrentBlockingNode", js.Any.fromFunction0(value))
+    def setPrintBufferNodeTree(value: () => String): Self = StObject.set(x, "printBufferNodeTree", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetElement(value: Double => XXMLElementWrapper): Self = this.set("getElement", js.Any.fromFunction1(value))
+    def setRemoveBlocker(value: Double => Unit): Self = StObject.set(x, "removeBlocker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsBlocking(value: () => Boolean): Self = this.set("isBlocking", js.Any.fromFunction0(value))
+    def setRemoveElementCollector(value: Double => Unit): Self = StObject.set(x, "removeElementCollector", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPrintBufferNodeTree(value: () => String): Self = this.set("printBufferNodeTree", js.Any.fromFunction0(value))
+    def setSetElement(value: (Double, XXMLElementWrapper) => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRemoveBlocker(value: Double => Unit): Self = this.set("removeBlocker", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveElementCollector(value: Double => Unit): Self = this.set("removeElementCollector", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetElement(value: (Double, XXMLElementWrapper) => Unit): Self = this.set("setElement", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetNextHandler(value: XDocumentHandler => XDocumentHandler): Self = this.set("setNextHandler", js.Any.fromFunction1(value))
+    def setSetNextHandler(value: XDocumentHandler => XDocumentHandler): Self = StObject.set(x, "setNextHandler", js.Any.fromFunction1(value))
   }
 }

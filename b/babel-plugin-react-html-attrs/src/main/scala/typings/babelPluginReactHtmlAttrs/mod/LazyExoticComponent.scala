@@ -1,12 +1,13 @@
 package typings.babelPluginReactHtmlAttrs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ExoticComponent<babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ComponentPropsWithRef<T>> & { readonly _result :T} */
 @js.native
-trait LazyExoticComponent[T /* <: ComponentType[_] */] extends js.Object {
+trait LazyExoticComponent[T /* <: ComponentType[_] */] extends StObject {
   
   /**
     * **NOTE**: Exotic components are not callable.

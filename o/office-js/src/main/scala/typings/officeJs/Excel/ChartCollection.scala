@@ -10,6 +10,7 @@ import typings.officeJs.OfficeExtension.LoadOption
 import typings.officeJs.officeJsStrings.Auto
 import typings.officeJs.officeJsStrings.Columns
 import typings.officeJs.officeJsStrings.Rows
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShrinkPolicy extends js.Object {
+trait ShrinkPolicy extends StObject {
   
   /**
     * The desired timeout for decommissioning an instance. Overrides the default YARN decommissioning timeout.
@@ -26,30 +27,18 @@ object ShrinkPolicy {
   }
   
   @scala.inline
-  implicit class ShrinkPolicyOps[Self <: ShrinkPolicy] (val x: Self) extends AnyVal {
+  implicit class ShrinkPolicyMutableBuilder[Self <: ShrinkPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecommissionTimeout(value: Integer): Self = StObject.set(x, "DecommissionTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecommissionTimeoutUndefined: Self = StObject.set(x, "DecommissionTimeout", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceResizePolicy(value: InstanceResizePolicy): Self = StObject.set(x, "InstanceResizePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecommissionTimeout(value: Integer): Self = this.set("DecommissionTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDecommissionTimeout: Self = this.set("DecommissionTimeout", js.undefined)
-    
-    @scala.inline
-    def setInstanceResizePolicy(value: InstanceResizePolicy): Self = this.set("InstanceResizePolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceResizePolicy: Self = this.set("InstanceResizePolicy", js.undefined)
+    def setInstanceResizePolicyUndefined: Self = StObject.set(x, "InstanceResizePolicy", js.undefined)
   }
 }

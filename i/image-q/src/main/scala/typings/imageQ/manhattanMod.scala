@@ -1,14 +1,14 @@
 package typings.imageQ
 
 import typings.imageQ.abstractDistanceCalculatorMod.AbstractDistanceCalculator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("image-q/dist/distance/manhattan", JSImport.Namespace)
-@js.native
-object manhattanMod extends js.Object {
+object manhattanMod {
   
+  @JSImport("image-q/dist/distance/manhattan", "AbstractManhattan")
   @js.native
   abstract class AbstractManhattan () extends AbstractDistanceCalculator {
     
@@ -21,12 +21,15 @@ object manhattanMod extends js.Object {
     var _kR: Double = js.native
   }
   
+  @JSImport("image-q/dist/distance/manhattan", "Manhattan")
   @js.native
   class Manhattan () extends AbstractManhattan
   
+  @JSImport("image-q/dist/distance/manhattan", "ManhattanNommyde")
   @js.native
   class ManhattanNommyde () extends AbstractManhattan
   
+  @JSImport("image-q/dist/distance/manhattan", "ManhattanSRGB")
   @js.native
   class ManhattanSRGB () extends AbstractManhattan
 }

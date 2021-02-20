@@ -4,14 +4,15 @@ import typings.formatjsEcma402Abstract.dateTimeMod.IntlDateTimeFormatPart
 import typings.formatjsEcma402Abstract.formatDateTimePatternMod.FormatDateTimePatternImplDetails
 import typings.formatjsEcma402Abstract.toLocalTimeMod.ToLocalTimeImplDetails
 import typings.std.Intl.DateTimeFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@formatjs/ecma402-abstract/lib/DateTimeFormat/PartitionDateTimeRangePattern", JSImport.Namespace)
-@js.native
-object partitionDateTimeRangePatternMod extends js.Object {
+object partitionDateTimeRangePatternMod {
   
+  @JSImport("@formatjs/ecma402-abstract/lib/DateTimeFormat/PartitionDateTimeRangePattern", "PartitionDateTimeRangePattern")
+  @js.native
   def PartitionDateTimeRangePattern(
     dtf: DateTimeFormat,
     x: Double,

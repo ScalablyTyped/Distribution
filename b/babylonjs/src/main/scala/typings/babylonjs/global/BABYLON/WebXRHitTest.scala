@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.IWebXRHitTestOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,13 +25,13 @@ class WebXRHitTest protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.WebXRHitTest")
-@js.native
-object WebXRHitTest extends js.Object {
+object WebXRHitTest {
   
   /**
     * The module's name
     */
+  @JSGlobal("BABYLON.WebXRHitTest.Name")
+  @js.native
   val Name: String = js.native
   
   /**
@@ -38,5 +39,7 @@ object WebXRHitTest extends js.Object {
     * This is an integer representing the implementation version.
     * This number does not correspond to the WebXR specs version
     */
+  @JSGlobal("BABYLON.WebXRHitTest.Version")
+  @js.native
   val Version: Double = js.native
 }

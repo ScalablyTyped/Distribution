@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeBasedLinear extends js.Object {
+trait TimeBasedLinear extends StObject {
   
   /**
     * The number of minutes between each incremental traffic shift of a TimeBasedLinear deployment.
@@ -26,30 +27,18 @@ object TimeBasedLinear {
   }
   
   @scala.inline
-  implicit class TimeBasedLinearOps[Self <: TimeBasedLinear] (val x: Self) extends AnyVal {
+  implicit class TimeBasedLinearMutableBuilder[Self <: TimeBasedLinear] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLinearInterval(value: WaitTimeInMins): Self = StObject.set(x, "linearInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLinearIntervalUndefined: Self = StObject.set(x, "linearInterval", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinearPercentage(value: Percentage): Self = StObject.set(x, "linearPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinearInterval(value: WaitTimeInMins): Self = this.set("linearInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinearInterval: Self = this.set("linearInterval", js.undefined)
-    
-    @scala.inline
-    def setLinearPercentage(value: Percentage): Self = this.set("linearPercentage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinearPercentage: Self = this.set("linearPercentage", js.undefined)
+    def setLinearPercentageUndefined: Self = StObject.set(x, "linearPercentage", js.undefined)
   }
 }

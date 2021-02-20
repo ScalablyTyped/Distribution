@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetServiceRoleForAccountResponse extends js.Object {
+trait GetServiceRoleForAccountResponse extends StObject {
   
   /**
     * The time when the service role was associated with the account.
@@ -26,30 +27,18 @@ object GetServiceRoleForAccountResponse {
   }
   
   @scala.inline
-  implicit class GetServiceRoleForAccountResponseOps[Self <: GetServiceRoleForAccountResponse] (val x: Self) extends AnyVal {
+  implicit class GetServiceRoleForAccountResponseMutableBuilder[Self <: GetServiceRoleForAccountResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociatedAt(value: string): Self = StObject.set(x, "AssociatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociatedAtUndefined: Self = StObject.set(x, "AssociatedAt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociatedAt(value: string): Self = this.set("AssociatedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssociatedAt: Self = this.set("AssociatedAt", js.undefined)
-    
-    @scala.inline
-    def setRoleArn(value: string): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeClustersRequest extends js.Object {
+trait DescribeClustersRequest extends StObject {
   
   /**
     * A list of up to 100 cluster names or full cluster Amazon Resource Name (ARN) entries. If you do not specify a cluster, the default cluster is assumed.
@@ -26,36 +27,24 @@ object DescribeClustersRequest {
   }
   
   @scala.inline
-  implicit class DescribeClustersRequestOps[Self <: DescribeClustersRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeClustersRequestMutableBuilder[Self <: DescribeClustersRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusters(value: StringList): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClustersVarargs(value: String*): Self = StObject.set(x, "clusters", js.Array(value :_*))
     
     @scala.inline
-    def setClustersVarargs(value: String*): Self = this.set("clusters", js.Array(value :_*))
+    def setInclude(value: ClusterFieldList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusters(value: StringList): Self = this.set("clusters", value.asInstanceOf[js.Any])
+    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
     @scala.inline
-    def deleteClusters: Self = this.set("clusters", js.undefined)
-    
-    @scala.inline
-    def setIncludeVarargs(value: ClusterField*): Self = this.set("include", js.Array(value :_*))
-    
-    @scala.inline
-    def setInclude(value: ClusterFieldList): Self = this.set("include", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInclude: Self = this.set("include", js.undefined)
+    def setIncludeVarargs(value: ClusterField*): Self = StObject.set(x, "include", js.Array(value :_*))
   }
 }

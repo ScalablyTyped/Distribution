@@ -1,5 +1,6 @@
 package typings.cordovaPluginInappbrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.message
   - typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.customscheme
 */
-trait channel extends js.Object
+trait channel extends StObject
 object channel {
   
   @scala.inline

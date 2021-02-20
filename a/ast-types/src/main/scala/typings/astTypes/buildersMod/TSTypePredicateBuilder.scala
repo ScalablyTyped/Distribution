@@ -5,12 +5,13 @@ import typings.astTypes.kindsMod.IdentifierKind
 import typings.astTypes.kindsMod.TSThisTypeKind
 import typings.astTypes.kindsMod.TSTypeAnnotationKind
 import typings.astTypes.namedTypesMod.namedTypes.TSTypePredicate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TSTypePredicateBuilder extends js.Object {
+trait TSTypePredicateBuilder extends StObject {
   
   def apply(parameterName: IdentifierKind): TSTypePredicate = js.native
   def apply(parameterName: IdentifierKind, typeAnnotation: js.UndefOr[scala.Nothing], asserts: Boolean): TSTypePredicate = js.native

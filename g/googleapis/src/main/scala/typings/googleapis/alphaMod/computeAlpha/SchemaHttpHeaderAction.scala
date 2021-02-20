@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * request is passed along to the selected backendService.
   */
 @js.native
-trait SchemaHttpHeaderAction extends js.Object {
+trait SchemaHttpHeaderAction extends StObject {
   
   /**
     * Headers to add to a matching request prior to forwarding the request to
@@ -44,54 +45,42 @@ object SchemaHttpHeaderAction {
   }
   
   @scala.inline
-  implicit class SchemaHttpHeaderActionOps[Self <: SchemaHttpHeaderAction] (val x: Self) extends AnyVal {
+  implicit class SchemaHttpHeaderActionMutableBuilder[Self <: SchemaHttpHeaderAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequestHeadersToAdd(value: js.Array[SchemaHttpHeaderOption]): Self = StObject.set(x, "requestHeadersToAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequestHeadersToAddUndefined: Self = StObject.set(x, "requestHeadersToAdd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestHeadersToAddVarargs(value: SchemaHttpHeaderOption*): Self = StObject.set(x, "requestHeadersToAdd", js.Array(value :_*))
     
     @scala.inline
-    def setRequestHeadersToAddVarargs(value: SchemaHttpHeaderOption*): Self = this.set("requestHeadersToAdd", js.Array(value :_*))
+    def setRequestHeadersToRemove(value: js.Array[String]): Self = StObject.set(x, "requestHeadersToRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestHeadersToAdd(value: js.Array[SchemaHttpHeaderOption]): Self = this.set("requestHeadersToAdd", value.asInstanceOf[js.Any])
+    def setRequestHeadersToRemoveUndefined: Self = StObject.set(x, "requestHeadersToRemove", js.undefined)
     
     @scala.inline
-    def deleteRequestHeadersToAdd: Self = this.set("requestHeadersToAdd", js.undefined)
+    def setRequestHeadersToRemoveVarargs(value: String*): Self = StObject.set(x, "requestHeadersToRemove", js.Array(value :_*))
     
     @scala.inline
-    def setRequestHeadersToRemoveVarargs(value: String*): Self = this.set("requestHeadersToRemove", js.Array(value :_*))
+    def setResponseHeadersToAdd(value: js.Array[SchemaHttpHeaderOption]): Self = StObject.set(x, "responseHeadersToAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestHeadersToRemove(value: js.Array[String]): Self = this.set("requestHeadersToRemove", value.asInstanceOf[js.Any])
+    def setResponseHeadersToAddUndefined: Self = StObject.set(x, "responseHeadersToAdd", js.undefined)
     
     @scala.inline
-    def deleteRequestHeadersToRemove: Self = this.set("requestHeadersToRemove", js.undefined)
+    def setResponseHeadersToAddVarargs(value: SchemaHttpHeaderOption*): Self = StObject.set(x, "responseHeadersToAdd", js.Array(value :_*))
     
     @scala.inline
-    def setResponseHeadersToAddVarargs(value: SchemaHttpHeaderOption*): Self = this.set("responseHeadersToAdd", js.Array(value :_*))
+    def setResponseHeadersToRemove(value: js.Array[String]): Self = StObject.set(x, "responseHeadersToRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseHeadersToAdd(value: js.Array[SchemaHttpHeaderOption]): Self = this.set("responseHeadersToAdd", value.asInstanceOf[js.Any])
+    def setResponseHeadersToRemoveUndefined: Self = StObject.set(x, "responseHeadersToRemove", js.undefined)
     
     @scala.inline
-    def deleteResponseHeadersToAdd: Self = this.set("responseHeadersToAdd", js.undefined)
-    
-    @scala.inline
-    def setResponseHeadersToRemoveVarargs(value: String*): Self = this.set("responseHeadersToRemove", js.Array(value :_*))
-    
-    @scala.inline
-    def setResponseHeadersToRemove(value: js.Array[String]): Self = this.set("responseHeadersToRemove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseHeadersToRemove: Self = this.set("responseHeadersToRemove", js.undefined)
+    def setResponseHeadersToRemoveVarargs(value: String*): Self = StObject.set(x, "responseHeadersToRemove", js.Array(value :_*))
   }
 }

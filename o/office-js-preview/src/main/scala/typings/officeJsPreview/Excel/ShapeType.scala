@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShapeType extends js.Object
+sealed trait ShapeType extends StObject
 /**
   *
   * Specifies the type of a shape.
@@ -14,7 +15,7 @@ sealed trait ShapeType extends js.Object
   */
 @JSGlobal("Excel.ShapeType")
 @js.native
-object ShapeType extends js.Object {
+object ShapeType extends StObject {
   
   @js.native
   sealed trait geometricShape extends ShapeType

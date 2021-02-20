@@ -1,11 +1,12 @@
 package typings.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEventController extends js.Object {
+trait IEventController extends StObject {
   
   var onStartListening: js.UndefOr[js.Function2[/* events */ IEventManager[js.Object], /* type */ String, Unit]] = js.native
   
@@ -20,30 +21,18 @@ object IEventController {
   }
   
   @scala.inline
-  implicit class IEventControllerOps[Self <: IEventController] (val x: Self) extends AnyVal {
+  implicit class IEventControllerMutableBuilder[Self <: IEventController] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnStartListening(value: (/* events */ IEventManager[js.Object], /* type */ String) => Unit): Self = StObject.set(x, "onStartListening", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnStartListeningUndefined: Self = StObject.set(x, "onStartListening", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnStopListening(value: (/* events */ IEventManager[js.Object], /* type */ String) => Unit): Self = StObject.set(x, "onStopListening", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnStartListening(value: (/* events */ IEventManager[js.Object], /* type */ String) => Unit): Self = this.set("onStartListening", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnStartListening: Self = this.set("onStartListening", js.undefined)
-    
-    @scala.inline
-    def setOnStopListening(value: (/* events */ IEventManager[js.Object], /* type */ String) => Unit): Self = this.set("onStopListening", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnStopListening: Self = this.set("onStopListening", js.undefined)
+    def setOnStopListeningUndefined: Self = StObject.set(x, "onStopListening", js.undefined)
   }
 }

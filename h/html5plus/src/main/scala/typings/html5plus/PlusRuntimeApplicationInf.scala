@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
   */
 @js.native
-trait PlusRuntimeApplicationInf extends js.Object {
+trait PlusRuntimeApplicationInf extends StObject {
   
   /**
     * 程序的操作行为
@@ -57,42 +58,30 @@ object PlusRuntimeApplicationInf {
   }
   
   @scala.inline
-  implicit class PlusRuntimeApplicationInfOps[Self <: PlusRuntimeApplicationInf] (val x: Self) extends AnyVal {
+  implicit class PlusRuntimeApplicationInfMutableBuilder[Self <: PlusRuntimeApplicationInf] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setNewTask(value: Boolean): Self = StObject.set(x, "newTask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtra(value: js.Any): Self = this.set("extra", value.asInstanceOf[js.Any])
+    def setNewTaskUndefined: Self = StObject.set(x, "newTask", js.undefined)
     
     @scala.inline
-    def deleteExtra: Self = this.set("extra", js.undefined)
+    def setPname(value: String): Self = StObject.set(x, "pname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewTask(value: Boolean): Self = this.set("newTask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewTask: Self = this.set("newTask", js.undefined)
-    
-    @scala.inline
-    def setPname(value: String): Self = this.set("pname", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePname: Self = this.set("pname", js.undefined)
+    def setPnameUndefined: Self = StObject.set(x, "pname", js.undefined)
   }
 }

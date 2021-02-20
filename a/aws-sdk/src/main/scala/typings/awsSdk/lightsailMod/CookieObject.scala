@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CookieObject extends js.Object {
+trait CookieObject extends StObject {
   
   /**
     * The specific cookies to forward to your distribution's origin.
@@ -26,33 +27,21 @@ object CookieObject {
   }
   
   @scala.inline
-  implicit class CookieObjectOps[Self <: CookieObject] (val x: Self) extends AnyVal {
+  implicit class CookieObjectMutableBuilder[Self <: CookieObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCookiesAllowList(value: StringList): Self = StObject.set(x, "cookiesAllowList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCookiesAllowListUndefined: Self = StObject.set(x, "cookiesAllowList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCookiesAllowListVarargs(value: String*): Self = StObject.set(x, "cookiesAllowList", js.Array(value :_*))
     
     @scala.inline
-    def setCookiesAllowListVarargs(value: String*): Self = this.set("cookiesAllowList", js.Array(value :_*))
+    def setOption(value: ForwardValues): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCookiesAllowList(value: StringList): Self = this.set("cookiesAllowList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCookiesAllowList: Self = this.set("cookiesAllowList", js.undefined)
-    
-    @scala.inline
-    def setOption(value: ForwardValues): Self = this.set("option", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOption: Self = this.set("option", js.undefined)
+    def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
   }
 }

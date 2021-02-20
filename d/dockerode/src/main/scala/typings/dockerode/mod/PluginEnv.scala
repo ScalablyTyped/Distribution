@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PluginEnv extends js.Object {
+trait PluginEnv extends StObject {
   
   var Description: String = js.native
   
@@ -24,33 +25,21 @@ object PluginEnv {
   }
   
   @scala.inline
-  implicit class PluginEnvOps[Self <: PluginEnv] (val x: Self) extends AnyVal {
+  implicit class PluginEnvMutableBuilder[Self <: PluginEnv] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSettable(value: js.Array[String]): Self = StObject.set(x, "Settable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setSettableVarargs(value: String*): Self = StObject.set(x, "Settable", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSettableVarargs(value: String*): Self = this.set("Settable", js.Array(value :_*))
-    
-    @scala.inline
-    def setSettable(value: js.Array[String]): Self = this.set("Settable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

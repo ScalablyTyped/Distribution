@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommendationengine
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudRecommendationengineV1beta1PredictRequest extends js.Object {
+trait GoogleCloudRecommendationengineV1beta1PredictRequest extends StObject {
   
   /**
     * Optional. Use dryRun mode for this prediction query. If set to true, a dummy model will be used that returns arbitrary catalog items. Note that the dryRun mode should only be used
@@ -69,68 +70,56 @@ object GoogleCloudRecommendationengineV1beta1PredictRequest {
   }
   
   @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1PredictRequestOps[Self <: GoogleCloudRecommendationengineV1beta1PredictRequest] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudRecommendationengineV1beta1PredictRequestMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1PredictRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("dryRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDryRun: Self = this.set("dryRun", js.undefined)
-    
-    @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictRequest with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
     def setParams(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictRequest with TopLevel[js.Any]
-    ): Self = this.set("params", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def setUserEvent(value: GoogleCloudRecommendationengineV1beta1UserEvent): Self = this.set("userEvent", value.asInstanceOf[js.Any])
+    def setUserEvent(value: GoogleCloudRecommendationengineV1beta1UserEvent): Self = StObject.set(x, "userEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserEvent: Self = this.set("userEvent", js.undefined)
+    def setUserEventUndefined: Self = StObject.set(x, "userEvent", js.undefined)
   }
 }

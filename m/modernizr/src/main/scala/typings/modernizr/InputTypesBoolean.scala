@@ -1,11 +1,12 @@
 package typings.modernizr
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputTypesBoolean extends js.Object {
+trait InputTypesBoolean extends StObject {
   
   var color: Boolean = js.native
   
@@ -57,57 +58,45 @@ object InputTypesBoolean {
   }
   
   @scala.inline
-  implicit class InputTypesBooleanOps[Self <: InputTypesBoolean] (val x: Self) extends AnyVal {
+  implicit class InputTypesBooleanMutableBuilder[Self <: InputTypesBoolean] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDate(value: Boolean): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatetime(value: Boolean): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Boolean): Self = this.set("color", value.asInstanceOf[js.Any])
+    def `setDatetime-local`(value: Boolean): Self = StObject.set(x, "datetime-local", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Boolean): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setEmail(value: Boolean): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatetime(value: Boolean): Self = this.set("datetime", value.asInstanceOf[js.Any])
+    def setMonth(value: Boolean): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDatetime-local`(value: Boolean): Self = this.set("datetime-local", value.asInstanceOf[js.Any])
+    def setNumber(value: Boolean): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: Boolean): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonth(value: Boolean): Self = this.set("month", value.asInstanceOf[js.Any])
+    def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: Boolean): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setTel(value: Boolean): Self = StObject.set(x, "tel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: Boolean): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setTime(value: Boolean): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch(value: Boolean): Self = this.set("search", value.asInstanceOf[js.Any])
+    def setUrl(value: Boolean): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTel(value: Boolean): Self = this.set("tel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTime(value: Boolean): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: Boolean): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeek(value: Boolean): Self = this.set("week", value.asInstanceOf[js.Any])
+    def setWeek(value: Boolean): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
   }
 }

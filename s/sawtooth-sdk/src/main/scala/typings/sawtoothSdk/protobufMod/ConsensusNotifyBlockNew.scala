@@ -5,6 +5,7 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,16 +26,18 @@ class ConsensusNotifyBlockNew () extends IConsensusNotifyBlockNew {
   def toJSON(): StringDictionary[js.Any] = js.native
 }
 /* static members */
-@JSImport("sawtooth-sdk/protobuf", "ConsensusNotifyBlockNew")
-@js.native
-object ConsensusNotifyBlockNew extends js.Object {
+object ConsensusNotifyBlockNew {
   
   /**
     * Creates a new ConsensusNotifyBlockNew instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ConsensusNotifyBlockNew instance
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusNotifyBlockNew.create")
+  @js.native
   def create(): ConsensusNotifyBlockNew = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusNotifyBlockNew.create")
+  @js.native
   def create(properties: IConsensusNotifyBlockNew): ConsensusNotifyBlockNew = js.native
   
   /**
@@ -45,9 +48,17 @@ object ConsensusNotifyBlockNew extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusNotifyBlockNew.decode")
+  @js.native
   def decode(reader: Reader): ConsensusNotifyBlockNew = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusNotifyBlockNew.decode")
+  @js.native
   def decode(reader: Reader, length: Double): ConsensusNotifyBlockNew = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusNotifyBlockNew.decode")
+  @js.native
   def decode(reader: Uint8Array): ConsensusNotifyBlockNew = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusNotifyBlockNew.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): ConsensusNotifyBlockNew = js.native
   
   /**
@@ -57,7 +68,11 @@ object ConsensusNotifyBlockNew extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusNotifyBlockNew.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): ConsensusNotifyBlockNew = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusNotifyBlockNew.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): ConsensusNotifyBlockNew = js.native
   
   /**
@@ -66,7 +81,11 @@ object ConsensusNotifyBlockNew extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusNotifyBlockNew.encode")
+  @js.native
   def encode(message: IConsensusNotifyBlockNew): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusNotifyBlockNew.encode")
+  @js.native
   def encode(message: IConsensusNotifyBlockNew, writer: Writer): Writer = js.native
   
   /**
@@ -75,7 +94,11 @@ object ConsensusNotifyBlockNew extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusNotifyBlockNew.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IConsensusNotifyBlockNew): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusNotifyBlockNew.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IConsensusNotifyBlockNew, writer: Writer): Writer = js.native
   
   /**
@@ -83,6 +106,8 @@ object ConsensusNotifyBlockNew extends js.Object {
     * @param object Plain object
     * @returns ConsensusNotifyBlockNew
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusNotifyBlockNew.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): ConsensusNotifyBlockNew = js.native
   
   /**
@@ -91,7 +116,11 @@ object ConsensusNotifyBlockNew extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusNotifyBlockNew.toObject")
+  @js.native
   def toObject(message: ConsensusNotifyBlockNew): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusNotifyBlockNew.toObject")
+  @js.native
   def toObject(message: ConsensusNotifyBlockNew, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -99,5 +128,7 @@ object ConsensusNotifyBlockNew extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("sawtooth-sdk/protobuf", "ConsensusNotifyBlockNew.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

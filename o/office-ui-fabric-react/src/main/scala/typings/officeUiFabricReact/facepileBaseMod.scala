@@ -4,14 +4,14 @@ import typings.officeUiFabricReact.facepileTypesMod.IFacepileProps
 import typings.officeUiFabricReact.officeUiFabricReactStrings._empty
 import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/Facepile/Facepile.base", JSImport.Namespace)
-@js.native
-object facepileBaseMod extends js.Object {
+object facepileBaseMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/Facepile/Facepile.base", "FacepileBase")
   @js.native
   class FacepileBase protected ()
     extends Component[IFacepileProps, js.Object, js.Any] {
@@ -54,9 +54,16 @@ object facepileBaseMod extends js.Object {
     /* protected */ def onRenderAriaDescription(): js.UndefOr[_empty | Element] = js.native
   }
   /* static members */
-  @js.native
-  object FacepileBase extends js.Object {
+  object FacepileBase {
     
-    var defaultProps: IFacepileProps = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Facepile/Facepile.base", "FacepileBase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/components/Facepile/Facepile.base", "FacepileBase.defaultProps")
+    @js.native
+    def defaultProps: IFacepileProps = js.native
+    @scala.inline
+    def defaultProps_=(x: IFacepileProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

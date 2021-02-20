@@ -1,5 +1,6 @@
 package typings.chartist.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,39 +23,27 @@ object IChartistStepAxis {
   }
   
   @scala.inline
-  implicit class IChartistStepAxisOps[Self <: IChartistStepAxis] (val x: Self) extends AnyVal {
+  implicit class IChartistStepAxisMutableBuilder[Self <: IChartistStepAxis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStretch(value: Boolean): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTicks(value: js.Array[Double | String]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStretch(value: Boolean): Self = this.set("stretch", value.asInstanceOf[js.Any])
+    def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
     
     @scala.inline
-    def deleteStretch: Self = this.set("stretch", js.undefined)
+    def setTicksVarargs(value: (Double | String)*): Self = StObject.set(x, "ticks", js.Array(value :_*))
     
     @scala.inline
-    def setTicksVarargs(value: (Double | String)*): Self = this.set("ticks", js.Array(value :_*))
+    def setType(value: IStepAxisStatic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicks(value: js.Array[Double | String]): Self = this.set("ticks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTicks: Self = this.set("ticks", js.undefined)
-    
-    @scala.inline
-    def setType(value: IStepAxisStatic): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains event details for the event raised when an SMS message is received. */
 @js.native
-trait SmsMessageReceivedTriggerDetails extends js.Object {
+trait SmsMessageReceivedTriggerDetails extends StObject {
   
   /** Delivers the filtered message to the messaging app. */
   def accept(): Unit = js.native
@@ -54,45 +55,33 @@ object SmsMessageReceivedTriggerDetails {
   }
   
   @scala.inline
-  implicit class SmsMessageReceivedTriggerDetailsOps[Self <: SmsMessageReceivedTriggerDetails] (val x: Self) extends AnyVal {
+  implicit class SmsMessageReceivedTriggerDetailsMutableBuilder[Self <: SmsMessageReceivedTriggerDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccept(value: () => Unit): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppMessage(value: SmsAppMessage): Self = StObject.set(x, "appMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBroadcastMessage(value: SmsBroadcastMessage): Self = StObject.set(x, "broadcastMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccept(value: () => Unit): Self = this.set("accept", js.Any.fromFunction0(value))
+    def setDrop(value: () => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAppMessage(value: SmsAppMessage): Self = this.set("appMessage", value.asInstanceOf[js.Any])
+    def setMessageType(value: SmsMessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBroadcastMessage(value: SmsBroadcastMessage): Self = this.set("broadcastMessage", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: SmsStatusMessage): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrop(value: () => Unit): Self = this.set("drop", js.Any.fromFunction0(value))
+    def setTextMessage(value: SmsTextMessage2): Self = StObject.set(x, "textMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageType(value: SmsMessageType): Self = this.set("messageType", value.asInstanceOf[js.Any])
+    def setVoicemailMessage(value: SmsVoicemailMessage): Self = StObject.set(x, "voicemailMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: SmsStatusMessage): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextMessage(value: SmsTextMessage2): Self = this.set("textMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVoicemailMessage(value: SmsVoicemailMessage): Self = this.set("voicemailMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWapMessage(value: SmsWapMessage): Self = this.set("wapMessage", value.asInstanceOf[js.Any])
+    def setWapMessage(value: SmsWapMessage): Self = StObject.set(x, "wapMessage", value.asInstanceOf[js.Any])
   }
 }

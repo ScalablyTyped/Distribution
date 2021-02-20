@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,14 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class MVCxClientVerticalGrid ()
   extends typings.devexpressWeb.MVCxClientVerticalGrid
-/* static members */
-@JSGlobal("MVCxClientVerticalGrid")
-@js.native
-object MVCxClientVerticalGrid extends js.Object {
+object MVCxClientVerticalGrid {
   
   /**
     * Converts the specified object to the MVCxClientVerticalGrid type. The converted client object specified by the obj parameter.
     * @param obj The client object to be type cast.
     */
+  /* static member */
+  @JSGlobal("MVCxClientVerticalGrid.Cast")
+  @js.native
   def Cast(obj: js.Any): typings.devexpressWeb.MVCxClientVerticalGrid = js.native
 }

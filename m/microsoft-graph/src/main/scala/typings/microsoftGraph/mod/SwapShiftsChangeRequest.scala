@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,27 +20,15 @@ object SwapShiftsChangeRequest {
   }
   
   @scala.inline
-  implicit class SwapShiftsChangeRequestOps[Self <: SwapShiftsChangeRequest] (val x: Self) extends AnyVal {
+  implicit class SwapShiftsChangeRequestMutableBuilder[Self <: SwapShiftsChangeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecipientShiftId(value: NullableOption[String]): Self = StObject.set(x, "recipientShiftId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecipientShiftIdNull: Self = StObject.set(x, "recipientShiftId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRecipientShiftId(value: NullableOption[String]): Self = this.set("recipientShiftId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecipientShiftId: Self = this.set("recipientShiftId", js.undefined)
-    
-    @scala.inline
-    def setRecipientShiftIdNull: Self = this.set("recipientShiftId", null)
+    def setRecipientShiftIdUndefined: Self = StObject.set(x, "recipientShiftId", js.undefined)
   }
 }

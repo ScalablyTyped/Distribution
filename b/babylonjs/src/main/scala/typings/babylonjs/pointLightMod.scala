@@ -3,14 +3,14 @@ package typings.babylonjs
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.shadowLightMod.ShadowLight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Lights/pointLight", JSImport.Namespace)
-@js.native
-object pointLightMod extends js.Object {
+object pointLightMod {
   
+  @JSImport("babylonjs/Lights/pointLight", "PointLight")
   @js.native
   class PointLight protected () extends ShadowLight {
     /**

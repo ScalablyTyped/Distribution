@@ -1,12 +1,14 @@
 package typings.forestExpressMongoose.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forest-express-mongoose", "RecordCreator")
 @js.native
-class RecordCreator () extends AbstractRecordTool {
+class RecordCreator protected () extends AbstractRecordTool {
+  def this(model: js.Object) = this()
   
   def create(record: js.Object): js.Promise[js.Object] = js.native
   

@@ -1,5 +1,6 @@
 package typings.reactBootstrapTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactBootstrapTable.reactBootstrapTableStrings.success
   - typings.reactBootstrapTable.reactBootstrapTableStrings.error
 */
-trait EditValidatorType extends js.Object
+trait EditValidatorType extends StObject
 object EditValidatorType {
   
   @scala.inline

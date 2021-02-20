@@ -1,5 +1,6 @@
 package typings.victory.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,7 +47,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.victory.victoryStrings.sinOut
   - typings.victory.victoryStrings.sinInOut
 */
-trait AnimationEasing extends js.Object
+trait AnimationEasing extends StObject
 object AnimationEasing {
   
   @scala.inline

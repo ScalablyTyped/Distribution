@@ -1,11 +1,12 @@
 package typings.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DivOverlayOptions extends js.Object {
+trait DivOverlayOptions extends StObject {
   
   var className: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object DivOverlayOptions {
   }
   
   @scala.inline
-  implicit class DivOverlayOptionsOps[Self <: DivOverlayOptions] (val x: Self) extends AnyVal {
+  implicit class DivOverlayOptionsMutableBuilder[Self <: DivOverlayOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffset(value: PointExpression): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: PointExpression): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setZoomAnimation(value: Boolean): Self = StObject.set(x, "zoomAnimation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPane(value: String): Self = this.set("pane", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePane: Self = this.set("pane", js.undefined)
-    
-    @scala.inline
-    def setZoomAnimation(value: Boolean): Self = this.set("zoomAnimation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomAnimation: Self = this.set("zoomAnimation", js.undefined)
+    def setZoomAnimationUndefined: Self = StObject.set(x, "zoomAnimation", js.undefined)
   }
 }

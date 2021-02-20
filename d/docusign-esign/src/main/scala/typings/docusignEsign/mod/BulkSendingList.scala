@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulkSendingList extends js.Object {
+trait BulkSendingList extends StObject {
   
   /**
     * An array of `bulkCopy` objects. Each object represents an instance or copy of an envelope and contains details such as the recipient, custom fields, tabs,
@@ -32,39 +33,27 @@ object BulkSendingList {
   }
   
   @scala.inline
-  implicit class BulkSendingListOps[Self <: BulkSendingList] (val x: Self) extends AnyVal {
+  implicit class BulkSendingListMutableBuilder[Self <: BulkSendingList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBulkCopies(value: js.Array[BulkSendingCopy]): Self = StObject.set(x, "bulkCopies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBulkCopiesUndefined: Self = StObject.set(x, "bulkCopies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBulkCopiesVarargs(value: BulkSendingCopy*): Self = StObject.set(x, "bulkCopies", js.Array(value :_*))
     
     @scala.inline
-    def setBulkCopiesVarargs(value: BulkSendingCopy*): Self = this.set("bulkCopies", js.Array(value :_*))
+    def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulkCopies(value: js.Array[BulkSendingCopy]): Self = this.set("bulkCopies", value.asInstanceOf[js.Any])
+    def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
     
     @scala.inline
-    def deleteBulkCopies: Self = this.set("bulkCopies", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListId(value: String): Self = this.set("listId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteListId: Self = this.set("listId", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

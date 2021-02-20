@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.kendo.data.DataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PagerOptions extends js.Object {
+trait PagerOptions extends StObject {
   
   var autoBind: js.UndefOr[Boolean] = js.native
   
@@ -47,108 +48,96 @@ object PagerOptions {
   }
   
   @scala.inline
-  implicit class PagerOptionsOps[Self <: PagerOptions] (val x: Self) extends AnyVal {
+  implicit class PagerOptionsMutableBuilder[Self <: PagerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonCount(value: Double): Self = StObject.set(x, "buttonCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoBind(value: Boolean): Self = this.set("autoBind", value.asInstanceOf[js.Any])
+    def setButtonCountUndefined: Self = StObject.set(x, "buttonCount", js.undefined)
     
     @scala.inline
-    def deleteAutoBind: Self = this.set("autoBind", js.undefined)
+    def setChange(value: /* e */ PagerChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setButtonCount(value: Double): Self = this.set("buttonCount", value.asInstanceOf[js.Any])
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def deleteButtonCount: Self = this.set("buttonCount", js.undefined)
+    def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: /* e */ PagerChangeEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
+    def setInfo(value: Boolean): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: js.Any | DataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setInput(value: Boolean): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfo(value: Boolean): Self = this.set("info", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def deleteInfo: Self = this.set("info", js.undefined)
+    def setLinkTemplate(value: String): Self = StObject.set(x, "linkTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: Boolean): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setLinkTemplateUndefined: Self = StObject.set(x, "linkTemplate", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setMessages(value: PagerMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkTemplate(value: String): Self = this.set("linkTemplate", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteLinkTemplate: Self = this.set("linkTemplate", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: PagerMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setNumeric(value: Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPageSizes(value: Boolean | js.Any): Self = StObject.set(x, "pageSizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumeric(value: Boolean): Self = this.set("numeric", value.asInstanceOf[js.Any])
+    def setPageSizesUndefined: Self = StObject.set(x, "pageSizes", js.undefined)
     
     @scala.inline
-    def deleteNumeric: Self = this.set("numeric", js.undefined)
+    def setPreviousNext(value: Boolean): Self = StObject.set(x, "previousNext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSizes(value: Boolean | js.Any): Self = this.set("pageSizes", value.asInstanceOf[js.Any])
+    def setPreviousNextUndefined: Self = StObject.set(x, "previousNext", js.undefined)
     
     @scala.inline
-    def deletePageSizes: Self = this.set("pageSizes", js.undefined)
+    def setRefresh(value: Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousNext(value: Boolean): Self = this.set("previousNext", value.asInstanceOf[js.Any])
+    def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
     
     @scala.inline
-    def deletePreviousNext: Self = this.set("previousNext", js.undefined)
+    def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefresh(value: Boolean): Self = this.set("refresh", value.asInstanceOf[js.Any])
+    def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
     
     @scala.inline
-    def deleteRefresh: Self = this.set("refresh", js.undefined)
+    def setSelectTemplate(value: String): Self = StObject.set(x, "selectTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponsive(value: Boolean): Self = this.set("responsive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponsive: Self = this.set("responsive", js.undefined)
-    
-    @scala.inline
-    def setSelectTemplate(value: String): Self = this.set("selectTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectTemplate: Self = this.set("selectTemplate", js.undefined)
+    def setSelectTemplateUndefined: Self = StObject.set(x, "selectTemplate", js.undefined)
   }
 }

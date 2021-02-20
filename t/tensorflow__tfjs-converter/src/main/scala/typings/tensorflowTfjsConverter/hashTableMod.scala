@@ -3,16 +3,16 @@ package typings.tensorflowTfjsConverter
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-converter/dist/executor/hash_table", JSImport.Namespace)
-@js.native
-object hashTableMod extends js.Object {
+object hashTableMod {
   
+  @JSImport("@tensorflow/tfjs-converter/dist/executor/hash_table", "HashTable")
   @js.native
-  class HashTable protected () extends js.Object {
+  class HashTable protected () extends StObject {
     /**
       * Constructor of HashTable. Creates a hash table.
       *

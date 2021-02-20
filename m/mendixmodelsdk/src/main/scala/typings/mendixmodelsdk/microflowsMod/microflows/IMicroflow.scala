@@ -3,6 +3,7 @@ package typings.mendixmodelsdk.microflowsMod.microflows
 import typings.mendixmodelsdk.codeactionsMod.codeactions.IMicroflowActionInfo
 import typings.mendixmodelsdk.instancesMod.IList
 import typings.mendixmodelsdk.securityMod.security.IModuleRole
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

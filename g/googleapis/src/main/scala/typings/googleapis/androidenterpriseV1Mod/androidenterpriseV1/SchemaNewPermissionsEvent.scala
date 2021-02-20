@@ -1,5 +1,6 @@
 package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An event generated when new permissions are added to an app.
   */
 @js.native
-trait SchemaNewPermissionsEvent extends js.Object {
+trait SchemaNewPermissionsEvent extends StObject {
   
   /**
     * The set of permissions that the enterprise admin has already approved for
@@ -39,42 +40,30 @@ object SchemaNewPermissionsEvent {
   }
   
   @scala.inline
-  implicit class SchemaNewPermissionsEventOps[Self <: SchemaNewPermissionsEvent] (val x: Self) extends AnyVal {
+  implicit class SchemaNewPermissionsEventMutableBuilder[Self <: SchemaNewPermissionsEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprovedPermissions(value: js.Array[String]): Self = StObject.set(x, "approvedPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApprovedPermissionsUndefined: Self = StObject.set(x, "approvedPermissions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApprovedPermissionsVarargs(value: String*): Self = StObject.set(x, "approvedPermissions", js.Array(value :_*))
     
     @scala.inline
-    def setApprovedPermissionsVarargs(value: String*): Self = this.set("approvedPermissions", js.Array(value :_*))
+    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprovedPermissions(value: js.Array[String]): Self = this.set("approvedPermissions", value.asInstanceOf[js.Any])
+    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
     @scala.inline
-    def deleteApprovedPermissions: Self = this.set("approvedPermissions", js.undefined)
+    def setRequestedPermissions(value: js.Array[String]): Self = StObject.set(x, "requestedPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
+    def setRequestedPermissionsUndefined: Self = StObject.set(x, "requestedPermissions", js.undefined)
     
     @scala.inline
-    def deleteProductId: Self = this.set("productId", js.undefined)
-    
-    @scala.inline
-    def setRequestedPermissionsVarargs(value: String*): Self = this.set("requestedPermissions", js.Array(value :_*))
-    
-    @scala.inline
-    def setRequestedPermissions(value: js.Array[String]): Self = this.set("requestedPermissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestedPermissions: Self = this.set("requestedPermissions", js.undefined)
+    def setRequestedPermissionsVarargs(value: String*): Self = StObject.set(x, "requestedPermissions", js.Array(value :_*))
   }
 }

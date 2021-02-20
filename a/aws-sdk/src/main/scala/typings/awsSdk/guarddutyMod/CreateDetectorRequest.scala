@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDetectorRequest extends js.Object {
+trait CreateDetectorRequest extends StObject {
   
   /**
     * The idempotency token for the create request.
@@ -41,45 +42,33 @@ object CreateDetectorRequest {
   }
   
   @scala.inline
-  implicit class CreateDetectorRequestOps[Self <: CreateDetectorRequest] (val x: Self) extends AnyVal {
+  implicit class CreateDetectorRequestMutableBuilder[Self <: CreateDetectorRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSources(value: DataSourceConfigurations): Self = StObject.set(x, "DataSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnable(value: Boolean): Self = this.set("Enable", value.asInstanceOf[js.Any])
+    def setDataSourcesUndefined: Self = StObject.set(x, "DataSources", js.undefined)
     
     @scala.inline
-    def setClientToken(value: ClientToken): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    def setEnable(value: Boolean): Self = StObject.set(x, "Enable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    def setFindingPublishingFrequency(value: FindingPublishingFrequency): Self = StObject.set(x, "FindingPublishingFrequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSources(value: DataSourceConfigurations): Self = this.set("DataSources", value.asInstanceOf[js.Any])
+    def setFindingPublishingFrequencyUndefined: Self = StObject.set(x, "FindingPublishingFrequency", js.undefined)
     
     @scala.inline
-    def deleteDataSources: Self = this.set("DataSources", js.undefined)
+    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFindingPublishingFrequency(value: FindingPublishingFrequency): Self = this.set("FindingPublishingFrequency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFindingPublishingFrequency: Self = this.set("FindingPublishingFrequency", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

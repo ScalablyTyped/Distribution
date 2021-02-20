@@ -1,5 +1,6 @@
 package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * it.
   */
 @js.native
-trait SchemaNamespace extends js.Object {
+trait SchemaNamespace extends StObject {
   
   /**
     * Resource name of this namespace. Namespaces names have the format:
@@ -34,30 +35,18 @@ object SchemaNamespace {
   }
   
   @scala.inline
-  implicit class SchemaNamespaceOps[Self <: SchemaNamespace] (val x: Self) extends AnyVal {
+  implicit class SchemaNamespaceMutableBuilder[Self <: SchemaNamespace] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNamespaceName(value: String): Self = StObject.set(x, "namespaceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNamespaceNameUndefined: Self = StObject.set(x, "namespaceName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServingVisibility(value: String): Self = StObject.set(x, "servingVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespaceName(value: String): Self = this.set("namespaceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespaceName: Self = this.set("namespaceName", js.undefined)
-    
-    @scala.inline
-    def setServingVisibility(value: String): Self = this.set("servingVisibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServingVisibility: Self = this.set("servingVisibility", js.undefined)
+    def setServingVisibilityUndefined: Self = StObject.set(x, "servingVisibility", js.undefined)
   }
 }

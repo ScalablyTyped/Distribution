@@ -1,11 +1,12 @@
 package typings.awsSdk.fmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutAppsListResponse extends js.Object {
+trait PutAppsListResponse extends StObject {
   
   /**
     * The details of the AWS Firewall Manager applications list.
@@ -26,30 +27,18 @@ object PutAppsListResponse {
   }
   
   @scala.inline
-  implicit class PutAppsListResponseOps[Self <: PutAppsListResponse] (val x: Self) extends AnyVal {
+  implicit class PutAppsListResponseMutableBuilder[Self <: PutAppsListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppsList(value: AppsListData): Self = StObject.set(x, "AppsList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppsListArn(value: ResourceArn): Self = StObject.set(x, "AppsListArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppsListArnUndefined: Self = StObject.set(x, "AppsListArn", js.undefined)
     
     @scala.inline
-    def setAppsList(value: AppsListData): Self = this.set("AppsList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAppsList: Self = this.set("AppsList", js.undefined)
-    
-    @scala.inline
-    def setAppsListArn(value: ResourceArn): Self = this.set("AppsListArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAppsListArn: Self = this.set("AppsListArn", js.undefined)
+    def setAppsListUndefined: Self = StObject.set(x, "AppsList", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.algoliaClientSearch.mod
 
 import typings.algoliaClientSearch.anon.ReadonlyPromisevoid
 import typings.algoliaTransporter.mod.Transporter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchClient extends js.Object {
+trait SearchClient extends StObject {
   
   /**
     * Mutates the transporter, adding the given user agent.

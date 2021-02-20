@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloudAuditOptions extends js.Object {
+trait CloudAuditOptions extends StObject {
   
   /** Information used by the Cloud Audit Logging pipeline. */
   var authorizationLoggingOptions: js.UndefOr[AuthorizationLoggingOptions] = js.native
@@ -22,30 +23,18 @@ object CloudAuditOptions {
   }
   
   @scala.inline
-  implicit class CloudAuditOptionsOps[Self <: CloudAuditOptions] (val x: Self) extends AnyVal {
+  implicit class CloudAuditOptionsMutableBuilder[Self <: CloudAuditOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizationLoggingOptions(value: AuthorizationLoggingOptions): Self = StObject.set(x, "authorizationLoggingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizationLoggingOptionsUndefined: Self = StObject.set(x, "authorizationLoggingOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogName(value: String): Self = StObject.set(x, "logName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationLoggingOptions(value: AuthorizationLoggingOptions): Self = this.set("authorizationLoggingOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthorizationLoggingOptions: Self = this.set("authorizationLoggingOptions", js.undefined)
-    
-    @scala.inline
-    def setLogName(value: String): Self = this.set("logName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogName: Self = this.set("logName", js.undefined)
+    def setLogNameUndefined: Self = StObject.set(x, "logName", js.undefined)
   }
 }

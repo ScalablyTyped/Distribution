@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextCase extends js.Object
+sealed trait TextCase extends StObject
 @JSGlobal("__esri.CIM.TextCase")
 @js.native
-object TextCase extends js.Object {
+object TextCase extends StObject {
   
   /**
     * Text is all upper case.

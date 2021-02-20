@@ -1,11 +1,12 @@
 package typings.awsSdk.secretsmanagerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecretVersionsListEntry extends js.Object {
+trait SecretVersionsListEntry extends StObject {
   
   /**
     * The date and time this version of the secret was created.
@@ -36,45 +37,33 @@ object SecretVersionsListEntry {
   }
   
   @scala.inline
-  implicit class SecretVersionsListEntryOps[Self <: SecretVersionsListEntry] (val x: Self) extends AnyVal {
+  implicit class SecretVersionsListEntryMutableBuilder[Self <: SecretVersionsListEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedDate(value: CreatedDateType): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastAccessedDate(value: LastAccessedDateType): Self = StObject.set(x, "LastAccessedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: CreatedDateType): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    def setLastAccessedDateUndefined: Self = StObject.set(x, "LastAccessedDate", js.undefined)
     
     @scala.inline
-    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    def setVersionId(value: SecretVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastAccessedDate(value: LastAccessedDateType): Self = this.set("LastAccessedDate", value.asInstanceOf[js.Any])
+    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
     
     @scala.inline
-    def deleteLastAccessedDate: Self = this.set("LastAccessedDate", js.undefined)
+    def setVersionStages(value: SecretVersionStagesType): Self = StObject.set(x, "VersionStages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersionId(value: SecretVersionIdType): Self = this.set("VersionId", value.asInstanceOf[js.Any])
+    def setVersionStagesUndefined: Self = StObject.set(x, "VersionStages", js.undefined)
     
     @scala.inline
-    def deleteVersionId: Self = this.set("VersionId", js.undefined)
-    
-    @scala.inline
-    def setVersionStagesVarargs(value: SecretVersionStageType*): Self = this.set("VersionStages", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersionStages(value: SecretVersionStagesType): Self = this.set("VersionStages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionStages: Self = this.set("VersionStages", js.undefined)
+    def setVersionStagesVarargs(value: SecretVersionStageType*): Self = StObject.set(x, "VersionStages", js.Array(value :_*))
   }
 }

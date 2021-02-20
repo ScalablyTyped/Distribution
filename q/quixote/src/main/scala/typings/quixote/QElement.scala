@@ -1,12 +1,13 @@
 package typings.quixote
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QElement extends js.Object {
+trait QElement extends StObject {
   
   // Compare the element's descriptors to a set of expected values and throw an exception if they don't match
   def assert(expected: ElementDescriptor): Unit = js.native

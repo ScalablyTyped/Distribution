@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Document conversion settings. */
 @js.native
-trait Conversions extends js.Object {
+trait Conversions extends StObject {
   
   /** A list of HTML conversion settings. */
   var html: js.UndefOr[HtmlSettings] = js.native
@@ -32,51 +33,39 @@ object Conversions {
   }
   
   @scala.inline
-  implicit class ConversionsOps[Self <: Conversions] (val x: Self) extends AnyVal {
+  implicit class ConversionsMutableBuilder[Self <: Conversions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHtml(value: HtmlSettings): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJson_normalizations(value: js.Array[NormalizationOperation]): Self = StObject.set(x, "json_normalizations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml(value: HtmlSettings): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setJson_normalizationsUndefined: Self = StObject.set(x, "json_normalizations", js.undefined)
     
     @scala.inline
-    def deleteHtml: Self = this.set("html", js.undefined)
+    def setJson_normalizationsVarargs(value: NormalizationOperation*): Self = StObject.set(x, "json_normalizations", js.Array(value :_*))
     
     @scala.inline
-    def setJson_normalizationsVarargs(value: NormalizationOperation*): Self = this.set("json_normalizations", js.Array(value :_*))
+    def setPdf(value: PdfSettings): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJson_normalizations(value: js.Array[NormalizationOperation]): Self = this.set("json_normalizations", value.asInstanceOf[js.Any])
+    def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
     
     @scala.inline
-    def deleteJson_normalizations: Self = this.set("json_normalizations", js.undefined)
+    def setSegment(value: SegmentSettings): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPdf(value: PdfSettings): Self = this.set("pdf", value.asInstanceOf[js.Any])
+    def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
     
     @scala.inline
-    def deletePdf: Self = this.set("pdf", js.undefined)
+    def setWord(value: WordSettings): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegment(value: SegmentSettings): Self = this.set("segment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegment: Self = this.set("segment", js.undefined)
-    
-    @scala.inline
-    def setWord(value: WordSettings): Self = this.set("word", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWord: Self = this.set("word", js.undefined)
+    def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
   }
 }

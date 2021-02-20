@@ -2,6 +2,7 @@ package typings.mongodb.mod
 
 import typings.mongodb.anon.Collation
 import typings.mongodb.anon.Document
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,42 +15,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mongodb.mod.BulkWriteDeleteOneOperation[TSchema]
   - typings.mongodb.mod.BulkWriteDeleteManyOperation[TSchema]
 */
-trait BulkWriteOperation[TSchema] extends js.Object
+trait BulkWriteOperation[TSchema] extends StObject
 object BulkWriteOperation {
   
   @scala.inline
-  def BulkWriteDeleteManyOperation[TSchema](deleteMany: BulkWriteDeleteOperation[TSchema]): BulkWriteOperation[TSchema] = {
+  def BulkWriteDeleteManyOperation[TSchema](deleteMany: BulkWriteDeleteOperation[TSchema]): typings.mongodb.mod.BulkWriteDeleteManyOperation[TSchema] = {
     val __obj = js.Dynamic.literal(deleteMany = deleteMany.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BulkWriteOperation[TSchema]]
+    __obj.asInstanceOf[typings.mongodb.mod.BulkWriteDeleteManyOperation[TSchema]]
   }
   
   @scala.inline
-  def BulkWriteInsertOneOperation[TSchema](insertOne: Document[TSchema]): BulkWriteOperation[TSchema] = {
-    val __obj = js.Dynamic.literal(insertOne = insertOne.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BulkWriteOperation[TSchema]]
-  }
-  
-  @scala.inline
-  def BulkWriteReplaceOneOperation[TSchema](replaceOne: Collation[TSchema]): BulkWriteOperation[TSchema] = {
-    val __obj = js.Dynamic.literal(replaceOne = replaceOne.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BulkWriteOperation[TSchema]]
-  }
-  
-  @scala.inline
-  def BulkWriteUpdateOneOperation[TSchema](updateOne: BulkWriteUpdateOperation[TSchema]): BulkWriteOperation[TSchema] = {
-    val __obj = js.Dynamic.literal(updateOne = updateOne.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BulkWriteOperation[TSchema]]
-  }
-  
-  @scala.inline
-  def BulkWriteDeleteOneOperation[TSchema](deleteOne: BulkWriteDeleteOperation[TSchema]): BulkWriteOperation[TSchema] = {
+  def BulkWriteDeleteOneOperation[TSchema](deleteOne: BulkWriteDeleteOperation[TSchema]): typings.mongodb.mod.BulkWriteDeleteOneOperation[TSchema] = {
     val __obj = js.Dynamic.literal(deleteOne = deleteOne.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BulkWriteOperation[TSchema]]
+    __obj.asInstanceOf[typings.mongodb.mod.BulkWriteDeleteOneOperation[TSchema]]
   }
   
   @scala.inline
-  def BulkWriteUpdateManyOperation[TSchema](updateMany: BulkWriteUpdateOperation[TSchema]): BulkWriteOperation[TSchema] = {
+  def BulkWriteInsertOneOperation[TSchema](insertOne: Document[TSchema]): typings.mongodb.mod.BulkWriteInsertOneOperation[TSchema] = {
+    val __obj = js.Dynamic.literal(insertOne = insertOne.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.mongodb.mod.BulkWriteInsertOneOperation[TSchema]]
+  }
+  
+  @scala.inline
+  def BulkWriteReplaceOneOperation[TSchema](replaceOne: Collation[TSchema]): typings.mongodb.mod.BulkWriteReplaceOneOperation[TSchema] = {
+    val __obj = js.Dynamic.literal(replaceOne = replaceOne.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.mongodb.mod.BulkWriteReplaceOneOperation[TSchema]]
+  }
+  
+  @scala.inline
+  def BulkWriteUpdateManyOperation[TSchema](updateMany: BulkWriteUpdateOperation[TSchema]): typings.mongodb.mod.BulkWriteUpdateManyOperation[TSchema] = {
     val __obj = js.Dynamic.literal(updateMany = updateMany.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BulkWriteOperation[TSchema]]
+    __obj.asInstanceOf[typings.mongodb.mod.BulkWriteUpdateManyOperation[TSchema]]
+  }
+  
+  @scala.inline
+  def BulkWriteUpdateOneOperation[TSchema](updateOne: BulkWriteUpdateOperation[TSchema]): typings.mongodb.mod.BulkWriteUpdateOneOperation[TSchema] = {
+    val __obj = js.Dynamic.literal(updateOne = updateOne.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.mongodb.mod.BulkWriteUpdateOneOperation[TSchema]]
   }
 }

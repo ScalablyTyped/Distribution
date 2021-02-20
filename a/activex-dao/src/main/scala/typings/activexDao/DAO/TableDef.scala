@@ -1,12 +1,13 @@
 package typings.activexDao.DAO
 
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableDef extends js.Object {
+trait TableDef extends StObject {
   
   var Attributes: TableDefAttributeEnum = js.native
   

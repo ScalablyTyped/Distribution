@@ -3,13 +3,14 @@ package typings.semanticUiDimmer.anon
 import typings.semanticUiDimmer.semanticUiDimmerBooleans.`false`
 import typings.semanticUiDimmer.semanticUiDimmerStrings.click
 import typings.semanticUiDimmer.semanticUiDimmerStrings.hover
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dimmer.SemanticUI.DimmerSettings._Impl, 'on'> */
 @js.native
-trait PickImplon extends js.Object {
+trait PickImplon extends StObject {
   
   var on: `false` | hover | click = js.native
 }
@@ -22,21 +23,9 @@ object PickImplon {
   }
   
   @scala.inline
-  implicit class PickImplonOps[Self <: PickImplon] (val x: Self) extends AnyVal {
+  implicit class PickImplonMutableBuilder[Self <: PickImplon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOn(value: `false` | hover | click): Self = this.set("on", value.asInstanceOf[js.Any])
+    def setOn(value: `false` | hover | click): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
   }
 }

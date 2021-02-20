@@ -1,12 +1,13 @@
 package typings.akuminaCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line interface-name
 @js.native
-trait IConstants extends js.Object {
+trait IConstants extends StObject {
   
   var FORCETEMPLATEURL: Boolean = js.native
   
@@ -135,135 +136,123 @@ object IConstants {
   }
   
   @scala.inline
-  implicit class IConstantsOps[Self <: IConstants] (val x: Self) extends AnyVal {
+  implicit class IConstantsMutableBuilder[Self <: IConstants] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFORCETEMPLATEURL(value: Boolean): Self = StObject.set(x, "FORCETEMPLATEURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLOADER_STEPS_ENABLE_AUTOCLEAR(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_AUTOCLEAR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLOADER_STEPS_ENABLE_AUTOLOGINTOAPPMANAGER(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_AUTOLOGINTOAPPMANAGER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFORCETEMPLATEURL(value: Boolean): Self = this.set("FORCETEMPLATEURL", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_DEBUGINFO(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_DEBUGINFO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_AUTOCLEAR(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_AUTOCLEAR", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_DETECTMULTIPLEVISIBLELANGS(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_DETECTMULTIPLEVISIBLELANGS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_AUTOLOGINTOAPPMANAGER(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_AUTOLOGINTOAPPMANAGER", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_DISPLAYLOADER(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_DISPLAYLOADER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_DEBUGINFO(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_DEBUGINFO", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_DISPLAYSHAREPOINTBAR(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_DISPLAYSHAREPOINTBAR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_DETECTMULTIPLEVISIBLELANGS(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_DETECTMULTIPLEVISIBLELANGS", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_EVENTSUBSCRIPTION(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_EVENTSUBSCRIPTION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_DISPLAYLOADER(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_DISPLAYLOADER", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_FETCHADGROUPS(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_FETCHADGROUPS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_DISPLAYSHAREPOINTBAR(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_DISPLAYSHAREPOINTBAR", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_FETCHCONFIGCONTEXT(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_FETCHCONFIGCONTEXT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_EVENTSUBSCRIPTION(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_EVENTSUBSCRIPTION", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_FETCHLANGUAGENEUTRALLISTS(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_FETCHLANGUAGENEUTRALLISTS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_FETCHADGROUPS(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_FETCHADGROUPS", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_FETCHLANGUAGES(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_FETCHLANGUAGES", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_FETCHCONFIGCONTEXT(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_FETCHCONFIGCONTEXT", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_FETCHPAGEPERMISSIONS(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_FETCHPAGEPERMISSIONS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_FETCHLANGUAGENEUTRALLISTS(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_FETCHLANGUAGENEUTRALLISTS", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_FETCHSPGROUPS(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_FETCHSPGROUPS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_FETCHLANGUAGES(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_FETCHLANGUAGES", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_FETCHUSERPROPERTIES(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_FETCHUSERPROPERTIES", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_FETCHPAGEPERMISSIONS(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_FETCHPAGEPERMISSIONS", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_FETCHWORKSPACECONTEXT(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_FETCHWORKSPACECONTEXT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_FETCHSPGROUPS(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_FETCHSPGROUPS", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_GETADDITIONALMARKUP(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_GETADDITIONALMARKUP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_FETCHUSERPROPERTIES(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_FETCHUSERPROPERTIES", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_GETGRAPHTOKEN(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_GETGRAPHTOKEN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_FETCHWORKSPACECONTEXT(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_FETCHWORKSPACECONTEXT", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_GETINDIVIDUALWIDGETSJS(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_GETINDIVIDUALWIDGETSJS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_GETADDITIONALMARKUP(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_GETADDITIONALMARKUP", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_GETINTERCHANGELOGINURL(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_GETINTERCHANGELOGINURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_GETGRAPHTOKEN(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_GETGRAPHTOKEN", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_GETLOADINGTEMPLATE(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_GETLOADINGTEMPLATE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_GETINDIVIDUALWIDGETSJS(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_GETINDIVIDUALWIDGETSJS", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_GETWIDGETJS(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_GETWIDGETJS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_GETINTERCHANGELOGINURL(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_GETINTERCHANGELOGINURL", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_INDEXPAGEDATA(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_INDEXPAGEDATA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_GETLOADINGTEMPLATE(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_GETLOADINGTEMPLATE", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_INITSNIPPETS(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_INITSNIPPETS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_GETWIDGETJS(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_GETWIDGETJS", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_INITWIDGETS(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_INITWIDGETS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_INDEXPAGEDATA(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_INDEXPAGEDATA", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_LOADDASHBOARDWIDGETS(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_LOADDASHBOARDWIDGETS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_INITSNIPPETS(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_INITSNIPPETS", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_LOADUSERLANGSETTINGS(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_LOADUSERLANGSETTINGS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_INITWIDGETS(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_INITWIDGETS", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_LOADWIDGETSINSTANCES(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_LOADWIDGETSINSTANCES", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_LOADDASHBOARDWIDGETS(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_LOADDASHBOARDWIDGETS", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_LOADWIDGETSTYPES(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_LOADWIDGETSTYPES", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_LOADUSERLANGSETTINGS(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_LOADUSERLANGSETTINGS", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_PROVISIONDASHBOARD(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_PROVISIONDASHBOARD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_LOADWIDGETSINSTANCES(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_LOADWIDGETSINSTANCES", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_REFRESHAKTOKEN(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_REFRESHAKTOKEN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_LOADWIDGETSTYPES(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_LOADWIDGETSTYPES", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_RESUMEMAINWINDOWLOADER(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_RESUMEMAINWINDOWLOADER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_PROVISIONDASHBOARD(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_PROVISIONDASHBOARD", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_SETSITETHEME(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_SETSITETHEME", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_REFRESHAKTOKEN(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_REFRESHAKTOKEN", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_TRAYMENU(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_TRAYMENU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_RESUMEMAINWINDOWLOADER(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_RESUMEMAINWINDOWLOADER", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_VALIDATEINTERCHANGEKEY(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_VALIDATEINTERCHANGEKEY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_SETSITETHEME(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_SETSITETHEME", value.asInstanceOf[js.Any])
+    def setLOADER_STEPS_ENABLE_VALIDATEWORKSPACECONFIG(value: Boolean): Self = StObject.set(x, "LOADER_STEPS_ENABLE_VALIDATEWORKSPACECONFIG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_TRAYMENU(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_TRAYMENU", value.asInstanceOf[js.Any])
+    def setLOG_LEVEL(value: Double): Self = StObject.set(x, "LOG_LEVEL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_VALIDATEINTERCHANGEKEY(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_VALIDATEINTERCHANGEKEY", value.asInstanceOf[js.Any])
+    def setREDIRECTONERROR(value: Boolean): Self = StObject.set(x, "REDIRECTONERROR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOADER_STEPS_ENABLE_VALIDATEWORKSPACECONFIG(value: Boolean): Self = this.set("LOADER_STEPS_ENABLE_VALIDATEWORKSPACECONFIG", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLOG_LEVEL(value: Double): Self = this.set("LOG_LEVEL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setREDIRECTONERROR(value: Boolean): Self = this.set("REDIRECTONERROR", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWIDGET_OPTIONS_LOADFROMAPPMANAGER(value: Boolean): Self = this.set("WIDGET_OPTIONS_LOADFROMAPPMANAGER", value.asInstanceOf[js.Any])
+    def setWIDGET_OPTIONS_LOADFROMAPPMANAGER(value: Boolean): Self = StObject.set(x, "WIDGET_OPTIONS_LOADFROMAPPMANAGER", value.asInstanceOf[js.Any])
   }
 }

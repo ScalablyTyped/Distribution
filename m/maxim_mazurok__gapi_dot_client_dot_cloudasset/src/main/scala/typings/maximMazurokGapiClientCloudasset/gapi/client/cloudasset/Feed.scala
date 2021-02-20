@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Feed extends js.Object {
+trait Feed extends StObject {
   
   /**
     * A list of the full names of the assets to receive updates. You must specify either or both of asset_names and asset_types. Only asset updates matching specified asset_names or
@@ -50,60 +51,48 @@ object Feed {
   }
   
   @scala.inline
-  implicit class FeedOps[Self <: Feed] (val x: Self) extends AnyVal {
+  implicit class FeedMutableBuilder[Self <: Feed] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetNames(value: js.Array[String]): Self = StObject.set(x, "assetNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetNamesUndefined: Self = StObject.set(x, "assetNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssetNamesVarargs(value: String*): Self = StObject.set(x, "assetNames", js.Array(value :_*))
     
     @scala.inline
-    def setAssetNamesVarargs(value: String*): Self = this.set("assetNames", js.Array(value :_*))
+    def setAssetTypes(value: js.Array[String]): Self = StObject.set(x, "assetTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetNames(value: js.Array[String]): Self = this.set("assetNames", value.asInstanceOf[js.Any])
+    def setAssetTypesUndefined: Self = StObject.set(x, "assetTypes", js.undefined)
     
     @scala.inline
-    def deleteAssetNames: Self = this.set("assetNames", js.undefined)
+    def setAssetTypesVarargs(value: String*): Self = StObject.set(x, "assetTypes", js.Array(value :_*))
     
     @scala.inline
-    def setAssetTypesVarargs(value: String*): Self = this.set("assetTypes", js.Array(value :_*))
+    def setCondition(value: Expr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetTypes(value: js.Array[String]): Self = this.set("assetTypes", value.asInstanceOf[js.Any])
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def deleteAssetTypes: Self = this.set("assetTypes", js.undefined)
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: Expr): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setFeedOutputConfig(value: FeedOutputConfig): Self = StObject.set(x, "feedOutputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setFeedOutputConfigUndefined: Self = StObject.set(x, "feedOutputConfig", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeedOutputConfig(value: FeedOutputConfig): Self = this.set("feedOutputConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeedOutputConfig: Self = this.set("feedOutputConfig", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

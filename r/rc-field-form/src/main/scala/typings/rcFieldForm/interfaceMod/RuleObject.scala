@@ -1,6 +1,7 @@
 package typings.rcFieldForm.interfaceMod
 
 import typings.rcFieldForm.rcFieldFormStrings.array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,19 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.rcFieldForm.interfaceMod.AggregationRule
   - typings.rcFieldForm.interfaceMod.ArrayRule
 */
-trait RuleObject extends js.Object
+trait RuleObject extends StObject
 object RuleObject {
   
   @scala.inline
-  def AggregationRule(): RuleObject = {
+  def AggregationRule(): typings.rcFieldForm.interfaceMod.AggregationRule = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[RuleObject]
+    __obj.asInstanceOf[typings.rcFieldForm.interfaceMod.AggregationRule]
   }
   
   @scala.inline
-  def ArrayRule(`type`: array): RuleObject = {
+  def ArrayRule(`type`: array): typings.rcFieldForm.interfaceMod.ArrayRule = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RuleObject]
+    __obj.asInstanceOf[typings.rcFieldForm.interfaceMod.ArrayRule]
   }
 }

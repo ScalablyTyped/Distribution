@@ -1,19 +1,18 @@
 package typings.babylonjs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.babylonjs.observableMod.Observable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Gamepads/xboxGamepad", JSImport.Namespace)
-@js.native
-object xboxGamepadMod extends js.Object {
+object xboxGamepadMod {
   
   @js.native
-  sealed trait Xbox360Button extends js.Object
+  sealed trait Xbox360Button extends StObject
+  @JSImport("babylonjs/Gamepads/xboxGamepad", "Xbox360Button")
   @js.native
-  object Xbox360Button extends js.Object {
+  object Xbox360Button extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Xbox360Button with Double] = js.native
@@ -21,68 +20,59 @@ object xboxGamepadMod extends js.Object {
     /** A */
     @js.native
     sealed trait A extends Xbox360Button
-    /* 0 */ @js.native
-    object A extends TopLevel[A with Double]
+    /* 0 */ val A: typings.babylonjs.xboxGamepadMod.Xbox360Button.A with Double = js.native
     
     /** B */
     @js.native
     sealed trait B extends Xbox360Button
-    /* 1 */ @js.native
-    object B extends TopLevel[B with Double]
+    /* 1 */ val B: typings.babylonjs.xboxGamepadMod.Xbox360Button.B with Double = js.native
     
     /** Back */
     @js.native
     sealed trait Back extends Xbox360Button
-    /* 8 */ @js.native
-    object Back extends TopLevel[Back with Double]
+    /* 8 */ val Back: typings.babylonjs.xboxGamepadMod.Xbox360Button.Back with Double = js.native
     
     /** Left button */
     @js.native
     sealed trait LB extends Xbox360Button
-    /* 4 */ @js.native
-    object LB extends TopLevel[LB with Double]
+    /* 4 */ val LB: typings.babylonjs.xboxGamepadMod.Xbox360Button.LB with Double = js.native
     
     /** Left stick */
     @js.native
     sealed trait LeftStick extends Xbox360Button
-    /* 10 */ @js.native
-    object LeftStick extends TopLevel[LeftStick with Double]
+    /* 10 */ val LeftStick: typings.babylonjs.xboxGamepadMod.Xbox360Button.LeftStick with Double = js.native
     
     /** Right button */
     @js.native
     sealed trait RB extends Xbox360Button
-    /* 5 */ @js.native
-    object RB extends TopLevel[RB with Double]
+    /* 5 */ val RB: typings.babylonjs.xboxGamepadMod.Xbox360Button.RB with Double = js.native
     
     /** Right stick */
     @js.native
     sealed trait RightStick extends Xbox360Button
-    /* 11 */ @js.native
-    object RightStick extends TopLevel[RightStick with Double]
+    /* 11 */ val RightStick: typings.babylonjs.xboxGamepadMod.Xbox360Button.RightStick with Double = js.native
     
     /** Start */
     @js.native
     sealed trait Start extends Xbox360Button
-    /* 9 */ @js.native
-    object Start extends TopLevel[Start with Double]
+    /* 9 */ val Start: typings.babylonjs.xboxGamepadMod.Xbox360Button.Start with Double = js.native
     
     /** X */
     @js.native
     sealed trait X extends Xbox360Button
-    /* 2 */ @js.native
-    object X extends TopLevel[X with Double]
+    /* 2 */ val X: typings.babylonjs.xboxGamepadMod.Xbox360Button.X with Double = js.native
     
     /** Y */
     @js.native
     sealed trait Y extends Xbox360Button
-    /* 3 */ @js.native
-    object Y extends TopLevel[Y with Double]
+    /* 3 */ val Y: typings.babylonjs.xboxGamepadMod.Xbox360Button.Y with Double = js.native
   }
   
   @js.native
-  sealed trait Xbox360Dpad extends js.Object
+  sealed trait Xbox360Dpad extends StObject
+  @JSImport("babylonjs/Gamepads/xboxGamepad", "Xbox360Dpad")
   @js.native
-  object Xbox360Dpad extends js.Object {
+  object Xbox360Dpad extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Xbox360Dpad with Double] = js.native
@@ -90,28 +80,25 @@ object xboxGamepadMod extends js.Object {
     /** Down */
     @js.native
     sealed trait Down extends Xbox360Dpad
-    /* 13 */ @js.native
-    object Down extends TopLevel[Down with Double]
+    /* 13 */ val Down: typings.babylonjs.xboxGamepadMod.Xbox360Dpad.Down with Double = js.native
     
     /** Left */
     @js.native
     sealed trait Left extends Xbox360Dpad
-    /* 14 */ @js.native
-    object Left extends TopLevel[Left with Double]
+    /* 14 */ val Left: typings.babylonjs.xboxGamepadMod.Xbox360Dpad.Left with Double = js.native
     
     /** Right */
     @js.native
     sealed trait Right extends Xbox360Dpad
-    /* 15 */ @js.native
-    object Right extends TopLevel[Right with Double]
+    /* 15 */ val Right: typings.babylonjs.xboxGamepadMod.Xbox360Dpad.Right with Double = js.native
     
     /** Up */
     @js.native
     sealed trait Up extends Xbox360Dpad
-    /* 12 */ @js.native
-    object Up extends TopLevel[Up with Double]
+    /* 12 */ val Up: typings.babylonjs.xboxGamepadMod.Xbox360Dpad.Up with Double = js.native
   }
   
+  @JSImport("babylonjs/Gamepads/xboxGamepad", "Xbox360Pad")
   @js.native
   class Xbox360Pad protected ()
     extends typings.babylonjs.gamepadMod.Gamepad {

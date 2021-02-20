@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutRemediationExceptionsRequest extends js.Object {
+trait PutRemediationExceptionsRequest extends StObject {
   
   /**
     * The name of the AWS Config rule for which you want to create remediation exception.
@@ -36,39 +37,27 @@ object PutRemediationExceptionsRequest {
   }
   
   @scala.inline
-  implicit class PutRemediationExceptionsRequestOps[Self <: PutRemediationExceptionsRequest] (val x: Self) extends AnyVal {
+  implicit class PutRemediationExceptionsRequestMutableBuilder[Self <: PutRemediationExceptionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpirationTime(value: Date): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpirationTimeUndefined: Self = StObject.set(x, "ExpirationTime", js.undefined)
     
     @scala.inline
-    def setConfigRuleName(value: ConfigRuleName): Self = this.set("ConfigRuleName", value.asInstanceOf[js.Any])
+    def setMessage(value: StringWithCharLimit1024): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceKeysVarargs(value: RemediationExceptionResourceKey*): Self = this.set("ResourceKeys", js.Array(value :_*))
+    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
     @scala.inline
-    def setResourceKeys(value: RemediationExceptionResourceKeys): Self = this.set("ResourceKeys", value.asInstanceOf[js.Any])
+    def setResourceKeys(value: RemediationExceptionResourceKeys): Self = StObject.set(x, "ResourceKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationTime(value: Date): Self = this.set("ExpirationTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpirationTime: Self = this.set("ExpirationTime", js.undefined)
-    
-    @scala.inline
-    def setMessage(value: StringWithCharLimit1024): Self = this.set("Message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("Message", js.undefined)
+    def setResourceKeysVarargs(value: RemediationExceptionResourceKey*): Self = StObject.set(x, "ResourceKeys", js.Array(value :_*))
   }
 }

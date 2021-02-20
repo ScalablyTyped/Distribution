@@ -1,5 +1,6 @@
 package typings.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.8]
   */
 @js.native
-trait DataValidationLoadOptions extends js.Object {
+trait DataValidationLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -79,60 +80,48 @@ object DataValidationLoadOptions {
   }
   
   @scala.inline
-  implicit class DataValidationLoadOptionsOps[Self <: DataValidationLoadOptions] (val x: Self) extends AnyVal {
+  implicit class DataValidationLoadOptionsMutableBuilder[Self <: DataValidationLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorAlert(value: Boolean): Self = StObject.set(x, "errorAlert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setErrorAlertUndefined: Self = StObject.set(x, "errorAlert", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setIgnoreBlanks(value: Boolean): Self = StObject.set(x, "ignoreBlanks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorAlert(value: Boolean): Self = this.set("errorAlert", value.asInstanceOf[js.Any])
+    def setIgnoreBlanksUndefined: Self = StObject.set(x, "ignoreBlanks", js.undefined)
     
     @scala.inline
-    def deleteErrorAlert: Self = this.set("errorAlert", js.undefined)
+    def setPrompt(value: Boolean): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreBlanks(value: Boolean): Self = this.set("ignoreBlanks", value.asInstanceOf[js.Any])
+    def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
     
     @scala.inline
-    def deleteIgnoreBlanks: Self = this.set("ignoreBlanks", js.undefined)
+    def setRule(value: Boolean): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrompt(value: Boolean): Self = this.set("prompt", value.asInstanceOf[js.Any])
+    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     
     @scala.inline
-    def deletePrompt: Self = this.set("prompt", js.undefined)
+    def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRule(value: Boolean): Self = this.set("rule", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteRule: Self = this.set("rule", js.undefined)
+    def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Boolean): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setValid(value: Boolean): Self = this.set("valid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValid: Self = this.set("valid", js.undefined)
+    def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
   }
 }

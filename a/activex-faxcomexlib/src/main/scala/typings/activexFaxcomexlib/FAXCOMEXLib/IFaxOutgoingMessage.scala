@@ -1,13 +1,14 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** IFaxOutgoingMessage interface */
 @js.native
-trait IFaxOutgoingMessage extends js.Object {
+trait IFaxOutgoingMessage extends StObject {
   
   /** Called Station ID */
   val CSID: String = js.native
@@ -95,75 +96,63 @@ object IFaxOutgoingMessage {
   }
   
   @scala.inline
-  implicit class IFaxOutgoingMessageOps[Self <: IFaxOutgoingMessage] (val x: Self) extends AnyVal {
+  implicit class IFaxOutgoingMessageMutableBuilder[Self <: IFaxOutgoingMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCSID(value: String): Self = StObject.set(x, "CSID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyTiff(value: String => Unit): Self = StObject.set(x, "CopyTiff", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCSID(value: String): Self = this.set("CSID", value.asInstanceOf[js.Any])
+    def setDeviceName(value: String): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyTiff(value: String => Unit): Self = this.set("CopyTiff", js.Any.fromFunction1(value))
+    def setDocumentName(value: String): Self = StObject.set(x, "DocumentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceName(value: String): Self = this.set("DeviceName", value.asInstanceOf[js.Any])
+    def setOriginalScheduledTime(value: VarDate): Self = StObject.set(x, "OriginalScheduledTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentName(value: String): Self = this.set("DocumentName", value.asInstanceOf[js.Any])
+    def setPages(value: Double): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setPriority(value: FAX_PRIORITY_TYPE_ENUM): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalScheduledTime(value: VarDate): Self = this.set("OriginalScheduledTime", value.asInstanceOf[js.Any])
+    def setRecipient(value: FaxRecipient): Self = StObject.set(x, "Recipient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPages(value: Double): Self = this.set("Pages", value.asInstanceOf[js.Any])
+    def setRetries(value: Double): Self = StObject.set(x, "Retries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: FAX_PRIORITY_TYPE_ENUM): Self = this.set("Priority", value.asInstanceOf[js.Any])
+    def setSender(value: FaxSender): Self = StObject.set(x, "Sender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipient(value: FaxRecipient): Self = this.set("Recipient", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetries(value: Double): Self = this.set("Retries", value.asInstanceOf[js.Any])
+    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSender(value: FaxSender): Self = this.set("Sender", value.asInstanceOf[js.Any])
+    def setSubmissionId(value: String): Self = StObject.set(x, "SubmissionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("Size", value.asInstanceOf[js.Any])
+    def setSubmissionTime(value: VarDate): Self = StObject.set(x, "SubmissionTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: String): Self = this.set("Subject", value.asInstanceOf[js.Any])
+    def setTSID(value: String): Self = StObject.set(x, "TSID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmissionId(value: String): Self = this.set("SubmissionId", value.asInstanceOf[js.Any])
+    def setTransmissionEnd(value: VarDate): Self = StObject.set(x, "TransmissionEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmissionTime(value: VarDate): Self = this.set("SubmissionTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTSID(value: String): Self = this.set("TSID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransmissionEnd(value: VarDate): Self = this.set("TransmissionEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransmissionStart(value: VarDate): Self = this.set("TransmissionStart", value.asInstanceOf[js.Any])
+    def setTransmissionStart(value: VarDate): Self = StObject.set(x, "TransmissionStart", value.asInstanceOf[js.Any])
   }
 }

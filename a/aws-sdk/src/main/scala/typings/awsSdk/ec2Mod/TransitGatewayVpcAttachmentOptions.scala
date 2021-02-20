@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransitGatewayVpcAttachmentOptions extends js.Object {
+trait TransitGatewayVpcAttachmentOptions extends StObject {
   
   /**
     * Indicates whether appliance mode support is enabled.
@@ -31,36 +32,24 @@ object TransitGatewayVpcAttachmentOptions {
   }
   
   @scala.inline
-  implicit class TransitGatewayVpcAttachmentOptionsOps[Self <: TransitGatewayVpcAttachmentOptions] (val x: Self) extends AnyVal {
+  implicit class TransitGatewayVpcAttachmentOptionsMutableBuilder[Self <: TransitGatewayVpcAttachmentOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplianceModeSupport(value: ApplianceModeSupportValue): Self = StObject.set(x, "ApplianceModeSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplianceModeSupportUndefined: Self = StObject.set(x, "ApplianceModeSupport", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDnsSupport(value: DnsSupportValue): Self = StObject.set(x, "DnsSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplianceModeSupport(value: ApplianceModeSupportValue): Self = this.set("ApplianceModeSupport", value.asInstanceOf[js.Any])
+    def setDnsSupportUndefined: Self = StObject.set(x, "DnsSupport", js.undefined)
     
     @scala.inline
-    def deleteApplianceModeSupport: Self = this.set("ApplianceModeSupport", js.undefined)
+    def setIpv6Support(value: Ipv6SupportValue): Self = StObject.set(x, "Ipv6Support", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsSupport(value: DnsSupportValue): Self = this.set("DnsSupport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDnsSupport: Self = this.set("DnsSupport", js.undefined)
-    
-    @scala.inline
-    def setIpv6Support(value: Ipv6SupportValue): Self = this.set("Ipv6Support", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpv6Support: Self = this.set("Ipv6Support", js.undefined)
+    def setIpv6SupportUndefined: Self = StObject.set(x, "Ipv6Support", js.undefined)
   }
 }

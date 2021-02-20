@@ -10,6 +10,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.quantile
 import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -153,108 +154,96 @@ object relationshipCreateRendererParams {
   }
   
   @scala.inline
-  implicit class relationshipCreateRendererParamsOps[Self <: relationshipCreateRendererParams] (val x: Self) extends AnyVal {
+  implicit class relationshipCreateRendererParamsMutableBuilder[Self <: relationshipCreateRendererParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassificationMethod(value: quantile | `equal-interval` | `natural-breaks`): Self = StObject.set(x, "classificationMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField1(value: relationshipCreateRendererParamsField1): Self = this.set("field1", value.asInstanceOf[js.Any])
+    def setClassificationMethodUndefined: Self = StObject.set(x, "classificationMethod", js.undefined)
     
     @scala.inline
-    def setField2(value: relationshipCreateRendererParamsField2): Self = this.set("field2", value.asInstanceOf[js.Any])
+    def setColorMixMode(value: String): Self = StObject.set(x, "colorMixMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setColorMixModeUndefined: Self = StObject.set(x, "colorMixMode", js.undefined)
     
     @scala.inline
-    def setView(value: View): Self = this.set("view", value.asInstanceOf[js.Any])
+    def setDefaultSymbolEnabled(value: Boolean): Self = StObject.set(x, "defaultSymbolEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasemap(value: String | Basemap): Self = this.set("basemap", value.asInstanceOf[js.Any])
+    def setDefaultSymbolEnabledUndefined: Self = StObject.set(x, "defaultSymbolEnabled", js.undefined)
     
     @scala.inline
-    def deleteBasemap: Self = this.set("basemap", js.undefined)
+    def setEdgesType(value: String): Self = StObject.set(x, "edgesType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassificationMethod(value: quantile | `equal-interval` | `natural-breaks`): Self = this.set("classificationMethod", value.asInstanceOf[js.Any])
+    def setEdgesTypeUndefined: Self = StObject.set(x, "edgesType", js.undefined)
     
     @scala.inline
-    def deleteClassificationMethod: Self = this.set("classificationMethod", js.undefined)
+    def setField1(value: relationshipCreateRendererParamsField1): Self = StObject.set(x, "field1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorMixMode(value: String): Self = this.set("colorMixMode", value.asInstanceOf[js.Any])
+    def setField2(value: relationshipCreateRendererParamsField2): Self = StObject.set(x, "field2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColorMixMode: Self = this.set("colorMixMode", js.undefined)
+    def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSymbolEnabled(value: Boolean): Self = this.set("defaultSymbolEnabled", value.asInstanceOf[js.Any])
+    def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
     @scala.inline
-    def deleteDefaultSymbolEnabled: Self = this.set("defaultSymbolEnabled", js.undefined)
+    def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgesType(value: String): Self = this.set("edgesType", value.asInstanceOf[js.Any])
+    def setLegendOptions(value: relationshipCreateRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEdgesType: Self = this.set("edgesType", js.undefined)
+    def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
     
     @scala.inline
-    def setFocus(value: String): Self = this.set("focus", value.asInstanceOf[js.Any])
+    def setNumClasses(value: Double): Self = StObject.set(x, "numClasses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFocus: Self = this.set("focus", js.undefined)
+    def setNumClassesUndefined: Self = StObject.set(x, "numClasses", js.undefined)
     
     @scala.inline
-    def setLegendOptions(value: relationshipCreateRendererParamsLegendOptions): Self = this.set("legendOptions", value.asInstanceOf[js.Any])
+    def setOutlineOptimizationEnabled(value: Boolean): Self = StObject.set(x, "outlineOptimizationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLegendOptions: Self = this.set("legendOptions", js.undefined)
+    def setOutlineOptimizationEnabledUndefined: Self = StObject.set(x, "outlineOptimizationEnabled", js.undefined)
     
     @scala.inline
-    def setNumClasses(value: Double): Self = this.set("numClasses", value.asInstanceOf[js.Any])
+    def setRelationshipScheme(value: RelationshipScheme): Self = StObject.set(x, "relationshipScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumClasses: Self = this.set("numClasses", js.undefined)
+    def setRelationshipSchemeUndefined: Self = StObject.set(x, "relationshipScheme", js.undefined)
     
     @scala.inline
-    def setOutlineOptimizationEnabled(value: Boolean): Self = this.set("outlineOptimizationEnabled", value.asInstanceOf[js.Any])
+    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutlineOptimizationEnabled: Self = this.set("outlineOptimizationEnabled", js.undefined)
+    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
     @scala.inline
-    def setRelationshipScheme(value: RelationshipScheme): Self = this.set("relationshipScheme", value.asInstanceOf[js.Any])
+    def setSizeOptimizationEnabled(value: Boolean): Self = StObject.set(x, "sizeOptimizationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRelationshipScheme: Self = this.set("relationshipScheme", js.undefined)
+    def setSizeOptimizationEnabledUndefined: Self = StObject.set(x, "sizeOptimizationEnabled", js.undefined)
     
     @scala.inline
-    def setSignal(value: AbortSignal): Self = this.set("signal", value.asInstanceOf[js.Any])
+    def setSymbolType(value: `2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSignal: Self = this.set("signal", js.undefined)
+    def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
     
     @scala.inline
-    def setSizeOptimizationEnabled(value: Boolean): Self = this.set("sizeOptimizationEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeOptimizationEnabled: Self = this.set("sizeOptimizationEnabled", js.undefined)
-    
-    @scala.inline
-    def setSymbolType(value: `2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`): Self = this.set("symbolType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSymbolType: Self = this.set("symbolType", js.undefined)
+    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AcceptMatchInput extends js.Object {
+trait AcceptMatchInput extends StObject {
   
   /**
     * Player response to the proposed match.
@@ -31,30 +32,18 @@ object AcceptMatchInput {
   }
   
   @scala.inline
-  implicit class AcceptMatchInputOps[Self <: AcceptMatchInput] (val x: Self) extends AnyVal {
+  implicit class AcceptMatchInputMutableBuilder[Self <: AcceptMatchInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptanceType(value: AcceptanceType): Self = StObject.set(x, "AcceptanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlayerIds(value: StringList): Self = StObject.set(x, "PlayerIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlayerIdsVarargs(value: NonZeroAndMaxString*): Self = StObject.set(x, "PlayerIds", js.Array(value :_*))
     
     @scala.inline
-    def setAcceptanceType(value: AcceptanceType): Self = this.set("AcceptanceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlayerIdsVarargs(value: NonZeroAndMaxString*): Self = this.set("PlayerIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setPlayerIds(value: StringList): Self = this.set("PlayerIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTicketId(value: MatchmakingIdStringModel): Self = this.set("TicketId", value.asInstanceOf[js.Any])
+    def setTicketId(value: MatchmakingIdStringModel): Self = StObject.set(x, "TicketId", value.asInstanceOf[js.Any])
   }
 }

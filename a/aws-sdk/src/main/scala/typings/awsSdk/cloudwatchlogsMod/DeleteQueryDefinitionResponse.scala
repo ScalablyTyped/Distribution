@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchlogsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteQueryDefinitionResponse extends js.Object {
+trait DeleteQueryDefinitionResponse extends StObject {
   
   /**
     * A value of TRUE indicates that the operation succeeded. FALSE indicates that the operation failed.
@@ -21,24 +22,12 @@ object DeleteQueryDefinitionResponse {
   }
   
   @scala.inline
-  implicit class DeleteQueryDefinitionResponseOps[Self <: DeleteQueryDefinitionResponse] (val x: Self) extends AnyVal {
+  implicit class DeleteQueryDefinitionResponseMutableBuilder[Self <: DeleteQueryDefinitionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSuccess(value: Success): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSuccess(value: Success): Self = this.set("success", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

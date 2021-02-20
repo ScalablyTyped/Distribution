@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SipRuleTargetApplication extends js.Object {
+trait SipRuleTargetApplication extends StObject {
   
   /**
     * AWS Region of target application.
@@ -31,36 +32,24 @@ object SipRuleTargetApplication {
   }
   
   @scala.inline
-  implicit class SipRuleTargetApplicationOps[Self <: SipRuleTargetApplication] (val x: Self) extends AnyVal {
+  implicit class SipRuleTargetApplicationMutableBuilder[Self <: SipRuleTargetApplication] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsRegion(value: String): Self = StObject.set(x, "AwsRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsRegionUndefined: Self = StObject.set(x, "AwsRegion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPriority(value: SipApplicationPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsRegion(value: String): Self = this.set("AwsRegion", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
     
     @scala.inline
-    def deleteAwsRegion: Self = this.set("AwsRegion", js.undefined)
+    def setSipMediaApplicationId(value: NonEmptyString): Self = StObject.set(x, "SipMediaApplicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: SipApplicationPriority): Self = this.set("Priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriority: Self = this.set("Priority", js.undefined)
-    
-    @scala.inline
-    def setSipMediaApplicationId(value: NonEmptyString): Self = this.set("SipMediaApplicationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSipMediaApplicationId: Self = this.set("SipMediaApplicationId", js.undefined)
+    def setSipMediaApplicationIdUndefined: Self = StObject.set(x, "SipMediaApplicationId", js.undefined)
   }
 }

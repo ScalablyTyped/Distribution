@@ -8,6 +8,7 @@ import typings.activexOffice.activexOfficeNumbers.`-4152`
 import typings.activexOffice.activexOfficeNumbers.`1`
 import typings.activexOffice.activexOfficeNumbers.`5`
 import typings.activexOffice.activexOfficeNumbers.`7`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexOffice.activexOfficeNumbers.`-4131`
   - typings.activexOffice.activexOfficeNumbers.`-4152`
 */
-trait XlHAlign extends js.Object
+trait XlHAlign extends StObject
 object XlHAlign {
   
   @scala.inline

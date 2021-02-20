@@ -1,12 +1,13 @@
 package typings.mapbox.mod.global.L.mapbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Control * / any */ @js.native
-trait LegendControl_ extends js.Object {
+trait LegendControl_ extends StObject {
   
   /**
     * Adds a legend to the legendControl.
@@ -29,27 +30,15 @@ object LegendControl_ {
   }
   
   @scala.inline
-  implicit class LegendControl_Ops[Self <: LegendControl_] (val x: Self) extends AnyVal {
+  implicit class LegendControl_MutableBuilder[Self <: LegendControl_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddLegend(value: String => js.Any): Self = StObject.set(x, "addLegend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnAdd(value: Map_ => js.Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddLegend(value: String => js.Any): Self = this.set("addLegend", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnAdd(value: Map_ => js.Any): Self = this.set("onAdd", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveLegend(value: String => js.Any): Self = this.set("removeLegend", js.Any.fromFunction1(value))
+    def setRemoveLegend(value: String => js.Any): Self = StObject.set(x, "removeLegend", js.Any.fromFunction1(value))
   }
 }

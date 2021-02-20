@@ -1,11 +1,12 @@
 package typings.stripeV3.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Base extends js.Object {
+trait Base extends StObject {
   
   var base: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object Base {
   }
   
   @scala.inline
-  implicit class BaseOps[Self <: Base] (val x: Self) extends AnyVal {
+  implicit class BaseMutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplete(value: String): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase(value: String): Self = this.set("base", value.asInstanceOf[js.Any])
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def deleteBase: Self = this.set("base", js.undefined)
+    def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplete(value: String): Self = this.set("complete", value.asInstanceOf[js.Any])
+    def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmpty(value: String): Self = this.set("empty", value.asInstanceOf[js.Any])
+    def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
     @scala.inline
-    def deleteEmpty: Self = this.set("empty", js.undefined)
+    def setInvalid(value: String): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus(value: String): Self = this.set("focus", value.asInstanceOf[js.Any])
+    def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
     
     @scala.inline
-    def deleteFocus: Self = this.set("focus", js.undefined)
+    def setWebkitAutofill(value: String): Self = StObject.set(x, "webkitAutofill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalid(value: String): Self = this.set("invalid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvalid: Self = this.set("invalid", js.undefined)
-    
-    @scala.inline
-    def setWebkitAutofill(value: String): Self = this.set("webkitAutofill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebkitAutofill: Self = this.set("webkitAutofill", js.undefined)
+    def setWebkitAutofillUndefined: Self = StObject.set(x, "webkitAutofill", js.undefined)
   }
 }

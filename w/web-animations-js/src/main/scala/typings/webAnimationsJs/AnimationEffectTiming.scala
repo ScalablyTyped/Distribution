@@ -1,11 +1,12 @@
 package typings.webAnimationsJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationEffectTiming extends js.Object {
+trait AnimationEffectTiming extends StObject {
   
   var delay: js.UndefOr[Double] = js.native
   
@@ -34,72 +35,60 @@ object AnimationEffectTiming {
   }
   
   @scala.inline
-  implicit class AnimationEffectTimingOps[Self <: AnimationEffectTiming] (val x: Self) extends AnyVal {
+  implicit class AnimationEffectTimingMutableBuilder[Self <: AnimationEffectTiming] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirection(value: AnimationEffectTimingPlaybackDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: AnimationEffectTimingPlaybackDirection): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setEndDelay(value: Double): Self = StObject.set(x, "endDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasing(value: String): Self = this.set("easing", value.asInstanceOf[js.Any])
+    def setEndDelayUndefined: Self = StObject.set(x, "endDelay", js.undefined)
     
     @scala.inline
-    def deleteEasing: Self = this.set("easing", js.undefined)
+    def setFill(value: AnimationEffectTimingFillMode): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDelay(value: Double): Self = this.set("endDelay", value.asInstanceOf[js.Any])
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def deleteEndDelay: Self = this.set("endDelay", js.undefined)
+    def setIterationStart(value: Double): Self = StObject.set(x, "iterationStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: AnimationEffectTimingFillMode): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setIterationStartUndefined: Self = StObject.set(x, "iterationStart", js.undefined)
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIterationStart(value: Double): Self = this.set("iterationStart", value.asInstanceOf[js.Any])
+    def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
     
     @scala.inline
-    def deleteIterationStart: Self = this.set("iterationStart", js.undefined)
+    def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIterations(value: Double): Self = this.set("iterations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIterations: Self = this.set("iterations", js.undefined)
-    
-    @scala.inline
-    def setPlaybackRate(value: Double): Self = this.set("playbackRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlaybackRate: Self = this.set("playbackRate", js.undefined)
+    def setPlaybackRateUndefined: Self = StObject.set(x, "playbackRate", js.undefined)
   }
 }

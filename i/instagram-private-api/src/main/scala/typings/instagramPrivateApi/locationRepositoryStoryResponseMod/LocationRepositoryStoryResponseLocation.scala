@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.locationRepositoryStoryResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationRepositoryStoryResponseLocation extends js.Object {
+trait LocationRepositoryStoryResponseLocation extends StObject {
   
   var address: js.UndefOr[String] = js.native
   
@@ -42,81 +43,69 @@ object LocationRepositoryStoryResponseLocation {
   }
   
   @scala.inline
-  implicit class LocationRepositoryStoryResponseLocationOps[Self <: LocationRepositoryStoryResponseLocation] (val x: Self) extends AnyVal {
+  implicit class LocationRepositoryStoryResponseLocationMutableBuilder[Self <: LocationRepositoryStoryResponseLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLat(value: Double): Self = this.set("lat", value.asInstanceOf[js.Any])
+    def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
     
     @scala.inline
-    def setLng(value: String | Double): Self = this.set("lng", value.asInstanceOf[js.Any])
+    def setExternal_source(value: String): Self = StObject.set(x, "external_source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setExternal_sourceUndefined: Self = StObject.set(x, "external_source", js.undefined)
     
     @scala.inline
-    def setPk(value: Double): Self = this.set("pk", value.asInstanceOf[js.Any])
+    def setFacebook_places_id(value: Double): Self = StObject.set(x, "facebook_places_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShort_name(value: String): Self = this.set("short_name", value.asInstanceOf[js.Any])
+    def setFacebook_places_idUndefined: Self = StObject.set(x, "facebook_places_id", js.undefined)
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setLng(value: String | Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    def setLocation_dict(value: LocationRepositoryStoryResponseLocationDict): Self = StObject.set(x, "location_dict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCity: Self = this.set("city", js.undefined)
+    def setLocation_dictUndefined: Self = StObject.set(x, "location_dict", js.undefined)
     
     @scala.inline
-    def setExternal_source(value: String): Self = this.set("external_source", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternal_source: Self = this.set("external_source", js.undefined)
+    def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacebook_places_id(value: Double): Self = this.set("facebook_places_id", value.asInstanceOf[js.Any])
+    def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFacebook_places_id: Self = this.set("facebook_places_id", js.undefined)
+    def setProfile_pic_urlUndefined: Self = StObject.set(x, "profile_pic_url", js.undefined)
     
     @scala.inline
-    def setLocation_dict(value: LocationRepositoryStoryResponseLocationDict): Self = this.set("location_dict", value.asInstanceOf[js.Any])
+    def setProfile_pic_username(value: String): Self = StObject.set(x, "profile_pic_username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation_dict: Self = this.set("location_dict", js.undefined)
+    def setProfile_pic_usernameUndefined: Self = StObject.set(x, "profile_pic_username", js.undefined)
     
     @scala.inline
-    def setProfile_pic_url(value: String): Self = this.set("profile_pic_url", value.asInstanceOf[js.Any])
+    def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProfile_pic_url: Self = this.set("profile_pic_url", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile_pic_username(value: String): Self = this.set("profile_pic_username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfile_pic_username: Self = this.set("profile_pic_username", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

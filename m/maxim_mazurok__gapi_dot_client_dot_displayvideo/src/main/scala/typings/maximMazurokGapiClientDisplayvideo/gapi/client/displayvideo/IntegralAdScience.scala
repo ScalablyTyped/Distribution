@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IntegralAdScience extends js.Object {
+trait IntegralAdScience extends StObject {
   
   /** The custom segment ID provided by Integral Ad Science. The ID must be between `1000001` and `1999999`, inclusive. */
   var customSegmentId: js.UndefOr[js.Array[String]] = js.native
@@ -58,105 +59,93 @@ object IntegralAdScience {
   }
   
   @scala.inline
-  implicit class IntegralAdScienceOps[Self <: IntegralAdScience] (val x: Self) extends AnyVal {
+  implicit class IntegralAdScienceMutableBuilder[Self <: IntegralAdScience] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomSegmentId(value: js.Array[String]): Self = StObject.set(x, "customSegmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomSegmentIdUndefined: Self = StObject.set(x, "customSegmentId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomSegmentIdVarargs(value: String*): Self = StObject.set(x, "customSegmentId", js.Array(value :_*))
     
     @scala.inline
-    def setCustomSegmentIdVarargs(value: String*): Self = this.set("customSegmentId", js.Array(value :_*))
+    def setDisplayViewability(value: String): Self = StObject.set(x, "displayViewability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomSegmentId(value: js.Array[String]): Self = this.set("customSegmentId", value.asInstanceOf[js.Any])
+    def setDisplayViewabilityUndefined: Self = StObject.set(x, "displayViewability", js.undefined)
     
     @scala.inline
-    def deleteCustomSegmentId: Self = this.set("customSegmentId", js.undefined)
+    def setExcludeUnrateable(value: Boolean): Self = StObject.set(x, "excludeUnrateable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayViewability(value: String): Self = this.set("displayViewability", value.asInstanceOf[js.Any])
+    def setExcludeUnrateableUndefined: Self = StObject.set(x, "excludeUnrateable", js.undefined)
     
     @scala.inline
-    def deleteDisplayViewability: Self = this.set("displayViewability", js.undefined)
+    def setExcludedAdFraudRisk(value: String): Self = StObject.set(x, "excludedAdFraudRisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeUnrateable(value: Boolean): Self = this.set("excludeUnrateable", value.asInstanceOf[js.Any])
+    def setExcludedAdFraudRiskUndefined: Self = StObject.set(x, "excludedAdFraudRisk", js.undefined)
     
     @scala.inline
-    def deleteExcludeUnrateable: Self = this.set("excludeUnrateable", js.undefined)
+    def setExcludedAdultRisk(value: String): Self = StObject.set(x, "excludedAdultRisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedAdFraudRisk(value: String): Self = this.set("excludedAdFraudRisk", value.asInstanceOf[js.Any])
+    def setExcludedAdultRiskUndefined: Self = StObject.set(x, "excludedAdultRisk", js.undefined)
     
     @scala.inline
-    def deleteExcludedAdFraudRisk: Self = this.set("excludedAdFraudRisk", js.undefined)
+    def setExcludedAlcoholRisk(value: String): Self = StObject.set(x, "excludedAlcoholRisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedAdultRisk(value: String): Self = this.set("excludedAdultRisk", value.asInstanceOf[js.Any])
+    def setExcludedAlcoholRiskUndefined: Self = StObject.set(x, "excludedAlcoholRisk", js.undefined)
     
     @scala.inline
-    def deleteExcludedAdultRisk: Self = this.set("excludedAdultRisk", js.undefined)
+    def setExcludedDrugsRisk(value: String): Self = StObject.set(x, "excludedDrugsRisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedAlcoholRisk(value: String): Self = this.set("excludedAlcoholRisk", value.asInstanceOf[js.Any])
+    def setExcludedDrugsRiskUndefined: Self = StObject.set(x, "excludedDrugsRisk", js.undefined)
     
     @scala.inline
-    def deleteExcludedAlcoholRisk: Self = this.set("excludedAlcoholRisk", js.undefined)
+    def setExcludedGamblingRisk(value: String): Self = StObject.set(x, "excludedGamblingRisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedDrugsRisk(value: String): Self = this.set("excludedDrugsRisk", value.asInstanceOf[js.Any])
+    def setExcludedGamblingRiskUndefined: Self = StObject.set(x, "excludedGamblingRisk", js.undefined)
     
     @scala.inline
-    def deleteExcludedDrugsRisk: Self = this.set("excludedDrugsRisk", js.undefined)
+    def setExcludedHateSpeechRisk(value: String): Self = StObject.set(x, "excludedHateSpeechRisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedGamblingRisk(value: String): Self = this.set("excludedGamblingRisk", value.asInstanceOf[js.Any])
+    def setExcludedHateSpeechRiskUndefined: Self = StObject.set(x, "excludedHateSpeechRisk", js.undefined)
     
     @scala.inline
-    def deleteExcludedGamblingRisk: Self = this.set("excludedGamblingRisk", js.undefined)
+    def setExcludedIllegalDownloadsRisk(value: String): Self = StObject.set(x, "excludedIllegalDownloadsRisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedHateSpeechRisk(value: String): Self = this.set("excludedHateSpeechRisk", value.asInstanceOf[js.Any])
+    def setExcludedIllegalDownloadsRiskUndefined: Self = StObject.set(x, "excludedIllegalDownloadsRisk", js.undefined)
     
     @scala.inline
-    def deleteExcludedHateSpeechRisk: Self = this.set("excludedHateSpeechRisk", js.undefined)
+    def setExcludedOffensiveLanguageRisk(value: String): Self = StObject.set(x, "excludedOffensiveLanguageRisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedIllegalDownloadsRisk(value: String): Self = this.set("excludedIllegalDownloadsRisk", value.asInstanceOf[js.Any])
+    def setExcludedOffensiveLanguageRiskUndefined: Self = StObject.set(x, "excludedOffensiveLanguageRisk", js.undefined)
     
     @scala.inline
-    def deleteExcludedIllegalDownloadsRisk: Self = this.set("excludedIllegalDownloadsRisk", js.undefined)
+    def setExcludedViolenceRisk(value: String): Self = StObject.set(x, "excludedViolenceRisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedOffensiveLanguageRisk(value: String): Self = this.set("excludedOffensiveLanguageRisk", value.asInstanceOf[js.Any])
+    def setExcludedViolenceRiskUndefined: Self = StObject.set(x, "excludedViolenceRisk", js.undefined)
     
     @scala.inline
-    def deleteExcludedOffensiveLanguageRisk: Self = this.set("excludedOffensiveLanguageRisk", js.undefined)
+    def setTraqScoreOption(value: String): Self = StObject.set(x, "traqScoreOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedViolenceRisk(value: String): Self = this.set("excludedViolenceRisk", value.asInstanceOf[js.Any])
+    def setTraqScoreOptionUndefined: Self = StObject.set(x, "traqScoreOption", js.undefined)
     
     @scala.inline
-    def deleteExcludedViolenceRisk: Self = this.set("excludedViolenceRisk", js.undefined)
+    def setVideoViewability(value: String): Self = StObject.set(x, "videoViewability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTraqScoreOption(value: String): Self = this.set("traqScoreOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraqScoreOption: Self = this.set("traqScoreOption", js.undefined)
-    
-    @scala.inline
-    def setVideoViewability(value: String): Self = this.set("videoViewability", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoViewability: Self = this.set("videoViewability", js.undefined)
+    def setVideoViewabilityUndefined: Self = StObject.set(x, "videoViewability", js.undefined)
   }
 }

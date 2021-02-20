@@ -1,5 +1,6 @@
 package typings.googleapis.v31Mod.dfareportingV31
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Click-through URL
   */
 @js.native
-trait SchemaCreativeClickThroughUrl extends js.Object {
+trait SchemaCreativeClickThroughUrl extends StObject {
   
   /**
     * Read-only convenience field representing the actual URL that will be used
@@ -39,36 +40,24 @@ object SchemaCreativeClickThroughUrl {
   }
   
   @scala.inline
-  implicit class SchemaCreativeClickThroughUrlOps[Self <: SchemaCreativeClickThroughUrl] (val x: Self) extends AnyVal {
+  implicit class SchemaCreativeClickThroughUrlMutableBuilder[Self <: SchemaCreativeClickThroughUrl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputedClickThroughUrl(value: String): Self = StObject.set(x, "computedClickThroughUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputedClickThroughUrlUndefined: Self = StObject.set(x, "computedClickThroughUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomClickThroughUrl(value: String): Self = StObject.set(x, "customClickThroughUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputedClickThroughUrl(value: String): Self = this.set("computedClickThroughUrl", value.asInstanceOf[js.Any])
+    def setCustomClickThroughUrlUndefined: Self = StObject.set(x, "customClickThroughUrl", js.undefined)
     
     @scala.inline
-    def deleteComputedClickThroughUrl: Self = this.set("computedClickThroughUrl", js.undefined)
+    def setLandingPageId(value: String): Self = StObject.set(x, "landingPageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomClickThroughUrl(value: String): Self = this.set("customClickThroughUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomClickThroughUrl: Self = this.set("customClickThroughUrl", js.undefined)
-    
-    @scala.inline
-    def setLandingPageId(value: String): Self = this.set("landingPageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLandingPageId: Self = this.set("landingPageId", js.undefined)
+    def setLandingPageIdUndefined: Self = StObject.set(x, "landingPageId", js.undefined)
   }
 }

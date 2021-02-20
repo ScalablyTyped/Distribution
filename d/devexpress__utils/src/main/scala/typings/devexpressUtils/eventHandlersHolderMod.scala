@@ -4,16 +4,16 @@ import typings.std.AddEventListenerOptions
 import typings.std.Document
 import typings.std.Element
 import typings.std.EventListenerOrEventListenerObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/class/event-handlers-holder", JSImport.Namespace)
-@js.native
-object eventHandlersHolderMod extends js.Object {
+object eventHandlersHolderMod {
   
+  @JSImport("@devexpress/utils/lib/class/event-handlers-holder", "DomEventHandlersHolder")
   @js.native
-  class DomEventHandlersHolder () extends js.Object {
+  class DomEventHandlersHolder () extends StObject {
     
     def addListener(element: Document, eventName: String, handler: EventListenerOrEventListenerObject): Unit = js.native
     def addListener(

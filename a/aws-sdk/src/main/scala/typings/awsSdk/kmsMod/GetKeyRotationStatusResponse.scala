@@ -1,11 +1,12 @@
 package typings.awsSdk.kmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetKeyRotationStatusResponse extends js.Object {
+trait GetKeyRotationStatusResponse extends StObject {
   
   /**
     * A Boolean value that specifies whether key rotation is enabled.
@@ -21,24 +22,12 @@ object GetKeyRotationStatusResponse {
   }
   
   @scala.inline
-  implicit class GetKeyRotationStatusResponseOps[Self <: GetKeyRotationStatusResponse] (val x: Self) extends AnyVal {
+  implicit class GetKeyRotationStatusResponseMutableBuilder[Self <: GetKeyRotationStatusResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyRotationEnabled(value: BooleanType): Self = StObject.set(x, "KeyRotationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKeyRotationEnabled(value: BooleanType): Self = this.set("KeyRotationEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyRotationEnabled: Self = this.set("KeyRotationEnabled", js.undefined)
+    def setKeyRotationEnabledUndefined: Self = StObject.set(x, "KeyRotationEnabled", js.undefined)
   }
 }

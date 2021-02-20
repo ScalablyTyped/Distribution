@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.sheet
 
 import typings.activexLibreoffice.com_.sun.star.util.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XColorScaleEntry extends js.Object {
+trait XColorScaleEntry extends StObject {
   
   var Color: typings.activexLibreoffice.com_.sun.star.util.Color = js.native
   
@@ -48,45 +49,33 @@ object XColorScaleEntry {
   }
   
   @scala.inline
-  implicit class XColorScaleEntryOps[Self <: XColorScaleEntry] (val x: Self) extends AnyVal {
+  implicit class XColorScaleEntryMutableBuilder[Self <: XColorScaleEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: Color): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetColor(value: () => Color): Self = StObject.set(x, "getColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColor(value: Color): Self = this.set("Color", value.asInstanceOf[js.Any])
+    def setGetFormula(value: () => String): Self = StObject.set(x, "getFormula", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFormula(value: String): Self = this.set("Formula", value.asInstanceOf[js.Any])
+    def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setType(value: Double): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setSetColor(value: Color => Unit): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetColor(value: () => Color): Self = this.set("getColor", js.Any.fromFunction0(value))
+    def setSetFormula(value: String => Unit): Self = StObject.set(x, "setFormula", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFormula(value: () => String): Self = this.set("getFormula", js.Any.fromFunction0(value))
+    def setSetType(value: Double => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetType(value: () => Double): Self = this.set("getType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetColor(value: Color => Unit): Self = this.set("setColor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetFormula(value: String => Unit): Self = this.set("setFormula", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetType(value: Double => Unit): Self = this.set("setType", js.Any.fromFunction1(value))
+    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

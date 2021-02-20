@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.appmesh
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouteSpecHttp2RouteRetryPolicy extends js.Object {
+trait RouteSpecHttp2RouteRetryPolicy extends StObject {
   
   /**
     * List of HTTP retry events.
@@ -38,42 +39,30 @@ object RouteSpecHttp2RouteRetryPolicy {
   }
   
   @scala.inline
-  implicit class RouteSpecHttp2RouteRetryPolicyOps[Self <: RouteSpecHttp2RouteRetryPolicy] (val x: Self) extends AnyVal {
+  implicit class RouteSpecHttp2RouteRetryPolicyMutableBuilder[Self <: RouteSpecHttp2RouteRetryPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHttpRetryEvents(value: js.Array[String]): Self = StObject.set(x, "httpRetryEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHttpRetryEventsUndefined: Self = StObject.set(x, "httpRetryEvents", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpRetryEventsVarargs(value: String*): Self = StObject.set(x, "httpRetryEvents", js.Array(value :_*))
     
     @scala.inline
-    def setMaxRetries(value: Double): Self = this.set("maxRetries", value.asInstanceOf[js.Any])
+    def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerRetryTimeout(value: RouteSpecHttp2RouteRetryPolicyPerRetryTimeout): Self = this.set("perRetryTimeout", value.asInstanceOf[js.Any])
+    def setPerRetryTimeout(value: RouteSpecHttp2RouteRetryPolicyPerRetryTimeout): Self = StObject.set(x, "perRetryTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpRetryEventsVarargs(value: String*): Self = this.set("httpRetryEvents", js.Array(value :_*))
+    def setTcpRetryEvents(value: js.Array[String]): Self = StObject.set(x, "tcpRetryEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpRetryEvents(value: js.Array[String]): Self = this.set("httpRetryEvents", value.asInstanceOf[js.Any])
+    def setTcpRetryEventsUndefined: Self = StObject.set(x, "tcpRetryEvents", js.undefined)
     
     @scala.inline
-    def deleteHttpRetryEvents: Self = this.set("httpRetryEvents", js.undefined)
-    
-    @scala.inline
-    def setTcpRetryEventsVarargs(value: String*): Self = this.set("tcpRetryEvents", js.Array(value :_*))
-    
-    @scala.inline
-    def setTcpRetryEvents(value: js.Array[String]): Self = this.set("tcpRetryEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTcpRetryEvents: Self = this.set("tcpRetryEvents", js.undefined)
+    def setTcpRetryEventsVarargs(value: String*): Self = StObject.set(x, "tcpRetryEvents", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.chatV1Mod.chatV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * example, an Apps Script can be invoked to handle the form.
   */
 @js.native
-trait SchemaFormAction extends js.Object {
+trait SchemaFormAction extends StObject {
   
   /**
     * Apps Script function to invoke when the containing element is
@@ -31,33 +32,21 @@ object SchemaFormAction {
   }
   
   @scala.inline
-  implicit class SchemaFormActionOps[Self <: SchemaFormAction] (val x: Self) extends AnyVal {
+  implicit class SchemaFormActionMutableBuilder[Self <: SchemaFormAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionMethodName(value: String): Self = StObject.set(x, "actionMethodName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionMethodNameUndefined: Self = StObject.set(x, "actionMethodName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameters(value: js.Array[SchemaActionParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionMethodName(value: String): Self = this.set("actionMethodName", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteActionMethodName: Self = this.set("actionMethodName", js.undefined)
-    
-    @scala.inline
-    def setParametersVarargs(value: SchemaActionParameter*): Self = this.set("parameters", js.Array(value :_*))
-    
-    @scala.inline
-    def setParameters(value: js.Array[SchemaActionParameter]): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setParametersVarargs(value: SchemaActionParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
   }
 }

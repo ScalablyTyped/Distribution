@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AppointmentCalendarOtherAppReadAccess extends js.Object
+sealed trait AppointmentCalendarOtherAppReadAccess extends StObject
 /** Specifies the level of read access provided to an app calendar. */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentCalendarOtherAppReadAccess")
 @js.native
-object AppointmentCalendarOtherAppReadAccess extends js.Object {
+object AppointmentCalendarOtherAppReadAccess extends StObject {
   
   /** Other apps on the device can read all properties of appointments in the calendar. */
   @js.native

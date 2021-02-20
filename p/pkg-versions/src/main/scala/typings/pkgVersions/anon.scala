@@ -1,16 +1,15 @@
 package typings.pkgVersions
 
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Call extends js.Object {
+  trait Call extends StObject {
     
     /**
     	Get the version numbers of a package from the npm registry.

@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Config extends js.Object {
+trait Config extends StObject {
   
   var AsciiMath: js.UndefOr[AsciiMathInputProcessor] = js.native
   
@@ -204,267 +205,255 @@ object Config {
   }
   
   @scala.inline
-  implicit class ConfigOps[Self <: Config] (val x: Self) extends AnyVal {
+  implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsciiMath(value: AsciiMathInputProcessor): Self = StObject.set(x, "AsciiMath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsciiMathUndefined: Self = StObject.set(x, "AsciiMath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsciimath2jax(value: Asciimath2jaxPreprocessor): Self = StObject.set(x, "asciimath2jax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsciiMath(value: AsciiMathInputProcessor): Self = this.set("AsciiMath", value.asInstanceOf[js.Any])
+    def setAsciimath2jaxUndefined: Self = StObject.set(x, "asciimath2jax", js.undefined)
     
     @scala.inline
-    def deleteAsciiMath: Self = this.set("AsciiMath", js.undefined)
+    def setCommonHTML(value: CommonHTMLOutputProcessor): Self = StObject.set(x, "CommonHTML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommonHTML(value: CommonHTMLOutputProcessor): Self = this.set("CommonHTML", value.asInstanceOf[js.Any])
+    def setCommonHTMLUndefined: Self = StObject.set(x, "CommonHTML", js.undefined)
     
     @scala.inline
-    def deleteCommonHTML: Self = this.set("CommonHTML", js.undefined)
+    def setConfig(value: js.Array[String]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWarnings(value: FontWarnings): Self = this.set("FontWarnings", value.asInstanceOf[js.Any])
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def deleteFontWarnings: Self = this.set("FontWarnings", js.undefined)
+    def setConfigVarargs(value: String*): Self = StObject.set(x, "config", js.Array(value :_*))
     
     @scala.inline
-    def `setHTML-CSS`(value: HTMLCSSOutputProcessor): Self = this.set("HTML-CSS", value.asInstanceOf[js.Any])
+    def setDelayStartupUntil(value: String): Self = StObject.set(x, "delayStartupUntil", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteHTML-CSS`: Self = this.set("HTML-CSS", js.undefined)
+    def setDelayStartupUntilUndefined: Self = StObject.set(x, "delayStartupUntil", js.undefined)
     
     @scala.inline
-    def setMMLorHTML(value: MMLorHTMLConfiguration): Self = this.set("MMLorHTML", value.asInstanceOf[js.Any])
+    def setDisplayAlign(value: String): Self = StObject.set(x, "displayAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMMLorHTML: Self = this.set("MMLorHTML", js.undefined)
+    def setDisplayAlignUndefined: Self = StObject.set(x, "displayAlign", js.undefined)
     
     @scala.inline
-    def setMatchWebFonts(value: MatchWebFonts): Self = this.set("MatchWebFonts", value.asInstanceOf[js.Any])
+    def setDisplayIndent(value: String): Self = StObject.set(x, "displayIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMatchWebFonts: Self = this.set("MatchWebFonts", js.undefined)
+    def setDisplayIndentUndefined: Self = StObject.set(x, "displayIndent", js.undefined)
     
     @scala.inline
-    def setMathEvents(value: MathEvents): Self = this.set("MathEvents", value.asInstanceOf[js.Any])
+    def setElements(value: js.Array[String]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMathEvents: Self = this.set("MathEvents", js.undefined)
+    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
     @scala.inline
-    def setMathML(value: MathMLInputProcessor): Self = this.set("MathML", value.asInstanceOf[js.Any])
+    def setElementsVarargs(value: String*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
     @scala.inline
-    def deleteMathML: Self = this.set("MathML", js.undefined)
+    def setErrorSettings(value: ErrorSettings): Self = StObject.set(x, "errorSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMathMenu(value: MathMenu): Self = this.set("MathMenu", value.asInstanceOf[js.Any])
+    def setErrorSettingsUndefined: Self = StObject.set(x, "errorSettings", js.undefined)
     
     @scala.inline
-    def deleteMathMenu: Self = this.set("MathMenu", js.undefined)
+    def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMathZoom(value: MathZoom): Self = this.set("MathZoom", value.asInstanceOf[js.Any])
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def deleteMathZoom: Self = this.set("MathZoom", js.undefined)
+    def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def setNativeMML(value: NativeMMLOutputProcessor): Self = this.set("NativeMML", value.asInstanceOf[js.Any])
+    def setFontWarnings(value: FontWarnings): Self = StObject.set(x, "FontWarnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNativeMML: Self = this.set("NativeMML", js.undefined)
+    def setFontWarningsUndefined: Self = StObject.set(x, "FontWarnings", js.undefined)
     
     @scala.inline
-    def setSVG(value: SVGOutputProcessor): Self = this.set("SVG", value.asInstanceOf[js.Any])
+    def `setHTML-CSS`(value: HTMLCSSOutputProcessor): Self = StObject.set(x, "HTML-CSS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSVG: Self = this.set("SVG", js.undefined)
+    def `setHTML-CSSUndefined`: Self = StObject.set(x, "HTML-CSS", js.undefined)
     
     @scala.inline
-    def setSafe(value: Safe): Self = this.set("Safe", value.asInstanceOf[js.Any])
+    def setJax(value: js.Array[String]): Self = StObject.set(x, "jax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSafe: Self = this.set("Safe", js.undefined)
+    def setJaxUndefined: Self = StObject.set(x, "jax", js.undefined)
     
     @scala.inline
-    def setTeX(value: TeXInputProcessor): Self = this.set("TeX", value.asInstanceOf[js.Any])
+    def setJaxVarargs(value: String*): Self = StObject.set(x, "jax", js.Array(value :_*))
     
     @scala.inline
-    def deleteTeX: Self = this.set("TeX", js.undefined)
+    def setJsMath2jax(value: JSMath2jaxPreprocessor): Self = StObject.set(x, "jsMath2jax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsciimath2jax(value: Asciimath2jaxPreprocessor): Self = this.set("asciimath2jax", value.asInstanceOf[js.Any])
+    def setJsMath2jaxUndefined: Self = StObject.set(x, "jsMath2jax", js.undefined)
     
     @scala.inline
-    def deleteAsciimath2jax: Self = this.set("asciimath2jax", js.undefined)
+    def setMMLorHTML(value: MMLorHTMLConfiguration): Self = StObject.set(x, "MMLorHTML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigVarargs(value: String*): Self = this.set("config", js.Array(value :_*))
+    def setMMLorHTMLUndefined: Self = StObject.set(x, "MMLorHTML", js.undefined)
     
     @scala.inline
-    def setConfig(value: js.Array[String]): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setMatchWebFonts(value: MatchWebFonts): Self = StObject.set(x, "MatchWebFonts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setMatchWebFontsUndefined: Self = StObject.set(x, "MatchWebFonts", js.undefined)
     
     @scala.inline
-    def setDelayStartupUntil(value: String): Self = this.set("delayStartupUntil", value.asInstanceOf[js.Any])
+    def setMathEvents(value: MathEvents): Self = StObject.set(x, "MathEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDelayStartupUntil: Self = this.set("delayStartupUntil", js.undefined)
+    def setMathEventsUndefined: Self = StObject.set(x, "MathEvents", js.undefined)
     
     @scala.inline
-    def setDisplayAlign(value: String): Self = this.set("displayAlign", value.asInstanceOf[js.Any])
+    def setMathML(value: MathMLInputProcessor): Self = StObject.set(x, "MathML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayAlign: Self = this.set("displayAlign", js.undefined)
+    def setMathMLUndefined: Self = StObject.set(x, "MathML", js.undefined)
     
     @scala.inline
-    def setDisplayIndent(value: String): Self = this.set("displayIndent", value.asInstanceOf[js.Any])
+    def setMathMenu(value: MathMenu): Self = StObject.set(x, "MathMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayIndent: Self = this.set("displayIndent", js.undefined)
+    def setMathMenuUndefined: Self = StObject.set(x, "MathMenu", js.undefined)
     
     @scala.inline
-    def setElementsVarargs(value: String*): Self = this.set("elements", js.Array(value :_*))
+    def setMathZoom(value: MathZoom): Self = StObject.set(x, "MathZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElements(value: js.Array[String]): Self = this.set("elements", value.asInstanceOf[js.Any])
+    def setMathZoomUndefined: Self = StObject.set(x, "MathZoom", js.undefined)
     
     @scala.inline
-    def deleteElements: Self = this.set("elements", js.undefined)
+    def setMenuSettings(value: MenuSettings): Self = StObject.set(x, "menuSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorSettings(value: ErrorSettings): Self = this.set("errorSettings", value.asInstanceOf[js.Any])
+    def setMenuSettingsUndefined: Self = StObject.set(x, "menuSettings", js.undefined)
     
     @scala.inline
-    def deleteErrorSettings: Self = this.set("errorSettings", js.undefined)
+    def setMessageStyle(value: String): Self = StObject.set(x, "messageStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionsVarargs(value: String*): Self = this.set("extensions", js.Array(value :_*))
+    def setMessageStyleUndefined: Self = StObject.set(x, "messageStyle", js.undefined)
     
     @scala.inline
-    def setExtensions(value: js.Array[String]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setMml2jax(value: MML2jaxPreprocessor): Self = StObject.set(x, "mml2jax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    def setMml2jaxUndefined: Self = StObject.set(x, "mml2jax", js.undefined)
     
     @scala.inline
-    def setJaxVarargs(value: String*): Self = this.set("jax", js.Array(value :_*))
+    def setNativeMML(value: NativeMMLOutputProcessor): Self = StObject.set(x, "NativeMML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJax(value: js.Array[String]): Self = this.set("jax", value.asInstanceOf[js.Any])
+    def setNativeMMLUndefined: Self = StObject.set(x, "NativeMML", js.undefined)
     
     @scala.inline
-    def deleteJax: Self = this.set("jax", js.undefined)
+    def setPositionToHash(value: Boolean): Self = StObject.set(x, "positionToHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsMath2jax(value: JSMath2jaxPreprocessor): Self = this.set("jsMath2jax", value.asInstanceOf[js.Any])
+    def setPositionToHashUndefined: Self = StObject.set(x, "positionToHash", js.undefined)
     
     @scala.inline
-    def deleteJsMath2jax: Self = this.set("jsMath2jax", js.undefined)
+    def setPostJax(value: js.Any): Self = StObject.set(x, "postJax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuSettings(value: MenuSettings): Self = this.set("menuSettings", value.asInstanceOf[js.Any])
+    def setPostJaxUndefined: Self = StObject.set(x, "postJax", js.undefined)
     
     @scala.inline
-    def deleteMenuSettings: Self = this.set("menuSettings", js.undefined)
+    def setPreJax(value: js.Any): Self = StObject.set(x, "preJax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageStyle(value: String): Self = this.set("messageStyle", value.asInstanceOf[js.Any])
+    def setPreJaxUndefined: Self = StObject.set(x, "preJax", js.undefined)
     
     @scala.inline
-    def deleteMessageStyle: Self = this.set("messageStyle", js.undefined)
+    def setPreRemoveClass(value: String): Self = StObject.set(x, "preRemoveClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMml2jax(value: MML2jaxPreprocessor): Self = this.set("mml2jax", value.asInstanceOf[js.Any])
+    def setPreRemoveClassUndefined: Self = StObject.set(x, "preRemoveClass", js.undefined)
     
     @scala.inline
-    def deleteMml2jax: Self = this.set("mml2jax", js.undefined)
+    def setSVG(value: SVGOutputProcessor): Self = StObject.set(x, "SVG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionToHash(value: Boolean): Self = this.set("positionToHash", value.asInstanceOf[js.Any])
+    def setSVGUndefined: Self = StObject.set(x, "SVG", js.undefined)
     
     @scala.inline
-    def deletePositionToHash: Self = this.set("positionToHash", js.undefined)
+    def setSafe(value: Safe): Self = StObject.set(x, "Safe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostJax(value: js.Any): Self = this.set("postJax", value.asInstanceOf[js.Any])
+    def setSafeUndefined: Self = StObject.set(x, "Safe", js.undefined)
     
     @scala.inline
-    def deletePostJax: Self = this.set("postJax", js.undefined)
+    def setShowMathMenu(value: Boolean): Self = StObject.set(x, "showMathMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreJax(value: js.Any): Self = this.set("preJax", value.asInstanceOf[js.Any])
+    def setShowMathMenuMSIE(value: Boolean): Self = StObject.set(x, "showMathMenuMSIE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreJax: Self = this.set("preJax", js.undefined)
+    def setShowMathMenuMSIEUndefined: Self = StObject.set(x, "showMathMenuMSIE", js.undefined)
     
     @scala.inline
-    def setPreRemoveClass(value: String): Self = this.set("preRemoveClass", value.asInstanceOf[js.Any])
+    def setShowMathMenuUndefined: Self = StObject.set(x, "showMathMenu", js.undefined)
     
     @scala.inline
-    def deletePreRemoveClass: Self = this.set("preRemoveClass", js.undefined)
+    def setShowProcessingMessages(value: Boolean): Self = StObject.set(x, "showProcessingMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMathMenu(value: Boolean): Self = this.set("showMathMenu", value.asInstanceOf[js.Any])
+    def setShowProcessingMessagesUndefined: Self = StObject.set(x, "showProcessingMessages", js.undefined)
     
     @scala.inline
-    def deleteShowMathMenu: Self = this.set("showMathMenu", js.undefined)
+    def setSkipStartupTypeset(value: Boolean): Self = StObject.set(x, "skipStartupTypeset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMathMenuMSIE(value: Boolean): Self = this.set("showMathMenuMSIE", value.asInstanceOf[js.Any])
+    def setSkipStartupTypesetUndefined: Self = StObject.set(x, "skipStartupTypeset", js.undefined)
     
     @scala.inline
-    def deleteShowMathMenuMSIE: Self = this.set("showMathMenuMSIE", js.undefined)
+    def setStyleSheets(value: js.Array[String]): Self = StObject.set(x, "styleSheets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowProcessingMessages(value: Boolean): Self = this.set("showProcessingMessages", value.asInstanceOf[js.Any])
+    def setStyleSheetsUndefined: Self = StObject.set(x, "styleSheets", js.undefined)
     
     @scala.inline
-    def deleteShowProcessingMessages: Self = this.set("showProcessingMessages", js.undefined)
+    def setStyleSheetsVarargs(value: String*): Self = StObject.set(x, "styleSheets", js.Array(value :_*))
     
     @scala.inline
-    def setSkipStartupTypeset(value: Boolean): Self = this.set("skipStartupTypeset", value.asInstanceOf[js.Any])
+    def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSkipStartupTypeset: Self = this.set("skipStartupTypeset", js.undefined)
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def setStyleSheetsVarargs(value: String*): Self = this.set("styleSheets", js.Array(value :_*))
+    def setTeX(value: TeXInputProcessor): Self = StObject.set(x, "TeX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleSheets(value: js.Array[String]): Self = this.set("styleSheets", value.asInstanceOf[js.Any])
+    def setTeXUndefined: Self = StObject.set(x, "TeX", js.undefined)
     
     @scala.inline
-    def deleteStyleSheets: Self = this.set("styleSheets", js.undefined)
+    def setTex2jax(value: TEX2jaxPreprocessor): Self = StObject.set(x, "tex2jax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: js.Any): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setTex2jaxUndefined: Self = StObject.set(x, "tex2jax", js.undefined)
     
     @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def `setV1Dot0-compatible`(value: Boolean): Self = StObject.set(x, "v1.0-compatible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTex2jax(value: TEX2jaxPreprocessor): Self = this.set("tex2jax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTex2jax: Self = this.set("tex2jax", js.undefined)
-    
-    @scala.inline
-    def `setV1Dot0-compatible`(value: Boolean): Self = this.set("v1.0-compatible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteV1Dot0-compatible`: Self = this.set("v1.0-compatible", js.undefined)
+    def `setV1Dot0-compatibleUndefined`: Self = StObject.set(x, "v1.0-compatible", js.undefined)
   }
 }

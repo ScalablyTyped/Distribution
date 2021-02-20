@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.chart
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -98,45 +99,33 @@ object XChartDataArray {
   }
   
   @scala.inline
-  implicit class XChartDataArrayOps[Self <: XChartDataArray] (val x: Self) extends AnyVal {
+  implicit class XChartDataArrayMutableBuilder[Self <: XChartDataArray] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnDescriptions(value: SafeArray[String]): Self = StObject.set(x, "ColumnDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setData(value: SafeArray[SafeArray[Double]]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetColumnDescriptions(value: () => SafeArray[String]): Self = StObject.set(x, "getColumnDescriptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColumnDescriptions(value: SafeArray[String]): Self = this.set("ColumnDescriptions", value.asInstanceOf[js.Any])
+    def setGetData(value: () => SafeArray[SafeArray[Double]]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setData(value: SafeArray[SafeArray[Double]]): Self = this.set("Data", value.asInstanceOf[js.Any])
+    def setGetRowDescriptions(value: () => SafeArray[String]): Self = StObject.set(x, "getRowDescriptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRowDescriptions(value: SafeArray[String]): Self = this.set("RowDescriptions", value.asInstanceOf[js.Any])
+    def setRowDescriptions(value: SafeArray[String]): Self = StObject.set(x, "RowDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetColumnDescriptions(value: () => SafeArray[String]): Self = this.set("getColumnDescriptions", js.Any.fromFunction0(value))
+    def setSetColumnDescriptions(value: SeqEquiv[String] => Unit): Self = StObject.set(x, "setColumnDescriptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetData(value: () => SafeArray[SafeArray[Double]]): Self = this.set("getData", js.Any.fromFunction0(value))
+    def setSetData(value: SeqEquiv[SeqEquiv[Double]] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetRowDescriptions(value: () => SafeArray[String]): Self = this.set("getRowDescriptions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetColumnDescriptions(value: SeqEquiv[String] => Unit): Self = this.set("setColumnDescriptions", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetData(value: SeqEquiv[SeqEquiv[Double]] => Unit): Self = this.set("setData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetRowDescriptions(value: SeqEquiv[String] => Unit): Self = this.set("setRowDescriptions", js.Any.fromFunction1(value))
+    def setSetRowDescriptions(value: SeqEquiv[String] => Unit): Self = StObject.set(x, "setRowDescriptions", js.Any.fromFunction1(value))
   }
 }

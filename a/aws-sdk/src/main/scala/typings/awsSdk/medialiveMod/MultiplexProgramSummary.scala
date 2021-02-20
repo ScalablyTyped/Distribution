@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiplexProgramSummary extends js.Object {
+trait MultiplexProgramSummary extends StObject {
   
   /**
     * The MediaLive Channel associated with the program.
@@ -26,30 +27,18 @@ object MultiplexProgramSummary {
   }
   
   @scala.inline
-  implicit class MultiplexProgramSummaryOps[Self <: MultiplexProgramSummary] (val x: Self) extends AnyVal {
+  implicit class MultiplexProgramSummaryMutableBuilder[Self <: MultiplexProgramSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelId(value: string): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelIdUndefined: Self = StObject.set(x, "ChannelId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProgramName(value: string): Self = StObject.set(x, "ProgramName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelId(value: string): Self = this.set("ChannelId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChannelId: Self = this.set("ChannelId", js.undefined)
-    
-    @scala.inline
-    def setProgramName(value: string): Self = this.set("ProgramName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgramName: Self = this.set("ProgramName", js.undefined)
+    def setProgramNameUndefined: Self = StObject.set(x, "ProgramName", js.undefined)
   }
 }

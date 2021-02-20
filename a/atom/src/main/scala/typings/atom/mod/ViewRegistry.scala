@@ -2,12 +2,13 @@ package typings.atom.mod
 
 import typings.atom.anon.Instantiable
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewRegistry extends js.Object {
+trait ViewRegistry extends StObject {
   
   /**
     *  Add a provider that will be used to construct views in the workspace's view

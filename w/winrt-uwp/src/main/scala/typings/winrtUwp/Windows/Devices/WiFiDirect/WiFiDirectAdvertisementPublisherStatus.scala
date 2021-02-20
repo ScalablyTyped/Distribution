@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.WiFiDirect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WiFiDirectAdvertisementPublisherStatus extends js.Object
+sealed trait WiFiDirectAdvertisementPublisherStatus extends StObject
 /** Represents the possible states of the WiFiDirectAdvertisementPublisher . */
 @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisherStatus")
 @js.native
-object WiFiDirectAdvertisementPublisherStatus extends js.Object {
+object WiFiDirectAdvertisementPublisherStatus extends StObject {
   
   /** The publisher is aborted due to error. */
   @js.native

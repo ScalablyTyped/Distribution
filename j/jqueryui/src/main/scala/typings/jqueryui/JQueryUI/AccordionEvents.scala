@@ -1,12 +1,13 @@
 package typings.jqueryui.JQueryUI
 
 import typings.jquery.JQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccordionEvents extends js.Object {
+trait AccordionEvents extends StObject {
   
   var activate: js.UndefOr[AccordionEvent] = js.native
   
@@ -23,36 +24,24 @@ object AccordionEvents {
   }
   
   @scala.inline
-  implicit class AccordionEventsOps[Self <: AccordionEvents] (val x: Self) extends AnyVal {
+  implicit class AccordionEventsMutableBuilder[Self <: AccordionEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivate(value: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeforeActivate(value: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Unit): Self = StObject.set(x, "beforeActivate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setActivate(value: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Unit): Self = this.set("activate", js.Any.fromFunction2(value))
+    def setBeforeActivateUndefined: Self = StObject.set(x, "beforeActivate", js.undefined)
     
     @scala.inline
-    def deleteActivate: Self = this.set("activate", js.undefined)
+    def setCreate(value: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBeforeActivate(value: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Unit): Self = this.set("beforeActivate", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteBeforeActivate: Self = this.set("beforeActivate", js.undefined)
-    
-    @scala.inline
-    def setCreate(value: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Unit): Self = this.set("create", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteCreate: Self = this.set("create", js.undefined)
+    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
   }
 }

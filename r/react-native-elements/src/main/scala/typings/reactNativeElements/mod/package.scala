@@ -1,5 +1,6 @@
 package typings.reactNativeElements
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,10 +48,122 @@ package object mod {
   
   type Theme[T] = typings.reactNativeElements.anon.PartialFullTheme with T
   
+  @scala.inline
+  def ThemeContext: typings.react.mod.Context[typings.reactNativeElements.mod.ThemeProps[js.Object]] = typings.reactNativeElements.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ThemeContext").asInstanceOf[typings.react.mod.Context[typings.reactNativeElements.mod.ThemeProps[js.Object]]]
+  
   type TouchableComponent = typings.reactNative.mod.TouchableHighlightProps
   
   type UpdateTheme = js.Function1[
     /* updates */ typings.reactNativeElements.anon.RecursivePartialFullTheme, 
     scala.Unit
   ]
+  
+  @scala.inline
+  def colors: typings.reactNativeElements.mod.Colors_ = typings.reactNativeElements.mod.^.asInstanceOf[js.Dynamic].selectDynamic("colors").asInstanceOf[typings.reactNativeElements.mod.Colors_]
+  
+  @scala.inline
+  def getIconType(`type`: typings.reactNativeElements.mod.IconType): js.Any = typings.reactNativeElements.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getIconType")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def normalize(size: scala.Double): scala.Double = typings.reactNativeElements.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(size.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
+  
+  @scala.inline
+  def registerCustomIconType(id: java.lang.String, font: js.Any): scala.Unit = (typings.reactNativeElements.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerCustomIconType")(id.asInstanceOf[js.Any], font.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  
+  @scala.inline
+  def withBadge(): js.Function1[
+    /* WrappedComponent */ typings.react.mod.ComponentType[js.Object], 
+    typings.react.mod.ComponentType[js.Object]
+  ] = typings.reactNativeElements.mod.^.asInstanceOf[js.Dynamic].applyDynamic("withBadge")().asInstanceOf[js.Function1[
+    /* WrappedComponent */ typings.react.mod.ComponentType[js.Object], 
+    typings.react.mod.ComponentType[js.Object]
+  ]]
+  @scala.inline
+  def withBadge(
+    /**
+    * Text value to be displayed by badge
+    */
+  value: js.UndefOr[typings.react.mod.ReactNode],
+    /**
+    * Options to configure the badge
+    */
+  options: typings.reactNativeElements.anon.bottomnumberundefinedleft
+  ): js.Function1[
+    /* WrappedComponent */ typings.react.mod.ComponentType[js.Object], 
+    typings.react.mod.ComponentType[js.Object]
+  ] = (typings.reactNativeElements.mod.^.asInstanceOf[js.Dynamic].applyDynamic("withBadge")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* WrappedComponent */ typings.react.mod.ComponentType[js.Object], 
+    typings.react.mod.ComponentType[js.Object]
+  ]]
+  @scala.inline
+  def withBadge(/**
+    * Text value to be displayed by badge
+    */
+  value: js.Function0[typings.react.mod.ReactNode]): js.Function1[
+    /* WrappedComponent */ typings.react.mod.ComponentType[js.Object], 
+    typings.react.mod.ComponentType[js.Object]
+  ] = typings.reactNativeElements.mod.^.asInstanceOf[js.Dynamic].applyDynamic("withBadge")(value.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* WrappedComponent */ typings.react.mod.ComponentType[js.Object], 
+    typings.react.mod.ComponentType[js.Object]
+  ]]
+  @scala.inline
+  def withBadge(
+    /**
+    * Text value to be displayed by badge
+    */
+  value: js.Function0[typings.react.mod.ReactNode],
+    /**
+    * Options to configure the badge
+    */
+  options: typings.reactNativeElements.anon.bottomnumberundefinedleft
+  ): js.Function1[
+    /* WrappedComponent */ typings.react.mod.ComponentType[js.Object], 
+    typings.react.mod.ComponentType[js.Object]
+  ] = (typings.reactNativeElements.mod.^.asInstanceOf[js.Dynamic].applyDynamic("withBadge")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* WrappedComponent */ typings.react.mod.ComponentType[js.Object], 
+    typings.react.mod.ComponentType[js.Object]
+  ]]
+  @scala.inline
+  def withBadge(/**
+    * Text value to be displayed by badge
+    */
+  value: typings.react.mod.ReactNode): js.Function1[
+    /* WrappedComponent */ typings.react.mod.ComponentType[js.Object], 
+    typings.react.mod.ComponentType[js.Object]
+  ] = typings.reactNativeElements.mod.^.asInstanceOf[js.Dynamic].applyDynamic("withBadge")(value.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* WrappedComponent */ typings.react.mod.ComponentType[js.Object], 
+    typings.react.mod.ComponentType[js.Object]
+  ]]
+  
+  @scala.inline
+  def withTheme[P, T](component: typings.react.mod.ComponentType[P with typings.reactNativeElements.mod.ThemeProps[T]]): typings.react.mod.ComponentClass[
+    typings.std.Omit[
+      P, 
+      /* keyof react-native-elements.react-native-elements.ThemeProps<T> */ typings.reactNativeElements.reactNativeElementsStrings.theme | typings.reactNativeElements.reactNativeElementsStrings.updateTheme | typings.reactNativeElements.reactNativeElementsStrings.replaceTheme
+    ], 
+    typings.react.mod.ComponentState
+  ] = typings.reactNativeElements.mod.^.asInstanceOf[js.Dynamic].applyDynamic("withTheme")(component.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentClass[
+    typings.std.Omit[
+      P, 
+      /* keyof react-native-elements.react-native-elements.ThemeProps<T> */ typings.reactNativeElements.reactNativeElementsStrings.theme | typings.reactNativeElements.reactNativeElementsStrings.updateTheme | typings.reactNativeElements.reactNativeElementsStrings.replaceTheme
+    ], 
+    typings.react.mod.ComponentState
+  ]]
+  @scala.inline
+  def withTheme[P, T](
+    component: typings.react.mod.ComponentType[P with typings.reactNativeElements.mod.ThemeProps[T]],
+    themeKey: java.lang.String
+  ): typings.react.mod.ComponentClass[
+    typings.std.Omit[
+      P, 
+      /* keyof react-native-elements.react-native-elements.ThemeProps<T> */ typings.reactNativeElements.reactNativeElementsStrings.theme | typings.reactNativeElements.reactNativeElementsStrings.updateTheme | typings.reactNativeElements.reactNativeElementsStrings.replaceTheme
+    ], 
+    typings.react.mod.ComponentState
+  ] = (typings.reactNativeElements.mod.^.asInstanceOf[js.Dynamic].applyDynamic("withTheme")(component.asInstanceOf[js.Any], themeKey.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ComponentClass[
+    typings.std.Omit[
+      P, 
+      /* keyof react-native-elements.react-native-elements.ThemeProps<T> */ typings.reactNativeElements.reactNativeElementsStrings.theme | typings.reactNativeElements.reactNativeElementsStrings.updateTheme | typings.reactNativeElements.reactNativeElementsStrings.replaceTheme
+    ], 
+    typings.react.mod.ComponentState
+  ]]
 }

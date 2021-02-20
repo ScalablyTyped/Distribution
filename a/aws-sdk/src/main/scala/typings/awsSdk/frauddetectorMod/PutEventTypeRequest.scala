@@ -1,11 +1,12 @@
 package typings.awsSdk.frauddetectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutEventTypeRequest extends js.Object {
+trait PutEventTypeRequest extends StObject {
   
   /**
     * The description of the event type.
@@ -46,57 +47,45 @@ object PutEventTypeRequest {
   }
   
   @scala.inline
-  implicit class PutEventTypeRequestOps[Self <: PutEventTypeRequest] (val x: Self) extends AnyVal {
+  implicit class PutEventTypeRequestMutableBuilder[Self <: PutEventTypeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntityTypes(value: NonEmptyListOfStrings): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityTypesVarargs(value: String*): Self = this.set("entityTypes", js.Array(value :_*))
+    def setEntityTypesVarargs(value: String*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
     
     @scala.inline
-    def setEntityTypes(value: NonEmptyListOfStrings): Self = this.set("entityTypes", value.asInstanceOf[js.Any])
+    def setEventVariables(value: NonEmptyListOfStrings): Self = StObject.set(x, "eventVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventVariablesVarargs(value: String*): Self = this.set("eventVariables", js.Array(value :_*))
+    def setEventVariablesVarargs(value: String*): Self = StObject.set(x, "eventVariables", js.Array(value :_*))
     
     @scala.inline
-    def setEventVariables(value: NonEmptyListOfStrings): Self = this.set("eventVariables", value.asInstanceOf[js.Any])
+    def setLabels(value: ListOfStrings): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: identifier): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setDescription(value: description): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setName(value: identifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelsVarargs(value: String*): Self = this.set("labels", js.Array(value :_*))
+    def setTags(value: tagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: ListOfStrings): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: tagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

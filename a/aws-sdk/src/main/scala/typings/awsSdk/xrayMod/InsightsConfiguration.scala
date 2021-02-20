@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsightsConfiguration extends js.Object {
+trait InsightsConfiguration extends StObject {
   
   /**
     * Set the InsightsEnabled value to true to enable insights or false to disable insights.
@@ -26,30 +27,18 @@ object InsightsConfiguration {
   }
   
   @scala.inline
-  implicit class InsightsConfigurationOps[Self <: InsightsConfiguration] (val x: Self) extends AnyVal {
+  implicit class InsightsConfigurationMutableBuilder[Self <: InsightsConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInsightsEnabled(value: NullableBoolean): Self = StObject.set(x, "InsightsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsightsEnabledUndefined: Self = StObject.set(x, "InsightsEnabled", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotificationsEnabled(value: NullableBoolean): Self = StObject.set(x, "NotificationsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsightsEnabled(value: NullableBoolean): Self = this.set("InsightsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsightsEnabled: Self = this.set("InsightsEnabled", js.undefined)
-    
-    @scala.inline
-    def setNotificationsEnabled(value: NullableBoolean): Self = this.set("NotificationsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationsEnabled: Self = this.set("NotificationsEnabled", js.undefined)
+    def setNotificationsEnabledUndefined: Self = StObject.set(x, "NotificationsEnabled", js.undefined)
   }
 }

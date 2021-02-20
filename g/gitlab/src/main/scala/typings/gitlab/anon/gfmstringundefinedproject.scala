@@ -1,12 +1,13 @@
 package typings.gitlab.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  gfm :string | undefined,   project :string | number | undefined} & gitlab.gitlab/dist/types/core/infrastructure.Sudo */
 @js.native
-trait gfmstringundefinedproject extends js.Object {
+trait gfmstringundefinedproject extends StObject {
   
   var gfm: js.UndefOr[String] = js.native
   
@@ -23,36 +24,24 @@ object gfmstringundefinedproject {
   }
   
   @scala.inline
-  implicit class gfmstringundefinedprojectOps[Self <: gfmstringundefinedproject] (val x: Self) extends AnyVal {
+  implicit class gfmstringundefinedprojectMutableBuilder[Self <: gfmstringundefinedproject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGfm(value: String): Self = StObject.set(x, "gfm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGfmUndefined: Self = StObject.set(x, "gfm", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProject(value: String | Double): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGfm(value: String): Self = this.set("gfm", value.asInstanceOf[js.Any])
+    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
     @scala.inline
-    def deleteGfm: Self = this.set("gfm", js.undefined)
+    def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProject(value: String | Double): Self = this.set("project", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProject: Self = this.set("project", js.undefined)
-    
-    @scala.inline
-    def setSudo(value: String | Double): Self = this.set("sudo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSudo: Self = this.set("sudo", js.undefined)
+    def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
   }
 }

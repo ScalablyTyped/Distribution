@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,87 +47,75 @@ object ThreatAssessmentRequest {
   }
   
   @scala.inline
-  implicit class ThreatAssessmentRequestOps[Self <: ThreatAssessmentRequest] (val x: Self) extends AnyVal {
+  implicit class ThreatAssessmentRequestMutableBuilder[Self <: ThreatAssessmentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: ThreatCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentType(value: NullableOption[ThreatAssessmentContentType]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: ThreatCategory): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setContentTypeNull: Self = StObject.set(x, "contentType", null)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def setContentType(value: NullableOption[ThreatAssessmentContentType]): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setCreatedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setCreatedByNull: Self = StObject.set(x, "createdBy", null)
     
     @scala.inline
-    def setContentTypeNull: Self = this.set("contentType", null)
+    def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
     
     @scala.inline
-    def setCreatedBy(value: NullableOption[IdentitySet]): Self = this.set("createdBy", value.asInstanceOf[js.Any])
+    def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedBy: Self = this.set("createdBy", js.undefined)
+    def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
     
     @scala.inline
-    def setCreatedByNull: Self = this.set("createdBy", null)
+    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
     @scala.inline
-    def setCreatedDateTime(value: NullableOption[String]): Self = this.set("createdDateTime", value.asInstanceOf[js.Any])
+    def setExpectedAssessment(value: ThreatExpectedAssessment): Self = StObject.set(x, "expectedAssessment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedDateTime: Self = this.set("createdDateTime", js.undefined)
+    def setExpectedAssessmentUndefined: Self = StObject.set(x, "expectedAssessment", js.undefined)
     
     @scala.inline
-    def setCreatedDateTimeNull: Self = this.set("createdDateTime", null)
+    def setRequestSource(value: NullableOption[ThreatAssessmentRequestSource]): Self = StObject.set(x, "requestSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectedAssessment(value: ThreatExpectedAssessment): Self = this.set("expectedAssessment", value.asInstanceOf[js.Any])
+    def setRequestSourceNull: Self = StObject.set(x, "requestSource", null)
     
     @scala.inline
-    def deleteExpectedAssessment: Self = this.set("expectedAssessment", js.undefined)
+    def setRequestSourceUndefined: Self = StObject.set(x, "requestSource", js.undefined)
     
     @scala.inline
-    def setRequestSource(value: NullableOption[ThreatAssessmentRequestSource]): Self = this.set("requestSource", value.asInstanceOf[js.Any])
+    def setResults(value: NullableOption[js.Array[ThreatAssessmentResult]]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequestSource: Self = this.set("requestSource", js.undefined)
+    def setResultsNull: Self = StObject.set(x, "results", null)
     
     @scala.inline
-    def setRequestSourceNull: Self = this.set("requestSource", null)
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def setResultsVarargs(value: ThreatAssessmentResult*): Self = this.set("results", js.Array(value :_*))
+    def setResultsVarargs(value: ThreatAssessmentResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     
     @scala.inline
-    def setResults(value: NullableOption[js.Array[ThreatAssessmentResult]]): Self = this.set("results", value.asInstanceOf[js.Any])
+    def setStatus(value: NullableOption[ThreatAssessmentStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    def setStatusNull: Self = StObject.set(x, "status", null)
     
     @scala.inline
-    def setResultsNull: Self = this.set("results", null)
-    
-    @scala.inline
-    def setStatus(value: NullableOption[ThreatAssessmentStatus]): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setStatusNull: Self = this.set("status", null)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

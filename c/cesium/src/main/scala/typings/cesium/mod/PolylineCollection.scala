@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.DebugShowBoundingVolumeModelMatrix
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "PolylineCollection")
 @js.native
-class PolylineCollection () extends js.Object {
+class PolylineCollection () extends StObject {
   def this(options: DebugShowBoundingVolumeModelMatrix) = this()
   
   def add(): Polyline = js.native

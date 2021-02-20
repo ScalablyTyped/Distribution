@@ -1,14 +1,14 @@
 package typings.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait html extends js.Object {
+trait html extends StObject {
   
   def addCss(node: HTMLElement, name: String): Unit = js.native
   
@@ -61,7 +61,3 @@ trait html extends js.Object {
   
   def triggerEvent(node: HTMLElement, `type`: String, name: String): Unit = js.native
 }
-@JSImport("webix", "html")
-@js.native
-object html
-  extends TopLevel[typings.webix.webix.html]

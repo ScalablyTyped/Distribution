@@ -1,12 +1,13 @@
 package typings.grammarkdown.grammarkdownMod
 
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnownOption extends js.Object {
+trait KnownOption extends StObject {
   
   var aliasFor: js.UndefOr[js.Array[String]] = js.native
   
@@ -43,90 +44,78 @@ object KnownOption {
   }
   
   @scala.inline
-  implicit class KnownOptionOps[Self <: KnownOption] (val x: Self) extends AnyVal {
+  implicit class KnownOptionMutableBuilder[Self <: KnownOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAliasFor(value: js.Array[String]): Self = StObject.set(x, "aliasFor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasForUndefined: Self = StObject.set(x, "aliasFor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAliasForVarargs(value: String*): Self = StObject.set(x, "aliasFor", js.Array(value :_*))
     
     @scala.inline
-    def setLongName(value: String): Self = this.set("longName", value.asInstanceOf[js.Any])
+    def setConvert(value: (/* key */ String, /* value */ String, /* raw */ RawArguments) => _): Self = StObject.set(x, "convert", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAliasForVarargs(value: String*): Self = this.set("aliasFor", js.Array(value :_*))
+    def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
     
     @scala.inline
-    def setAliasFor(value: js.Array[String]): Self = this.set("aliasFor", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAliasFor: Self = this.set("aliasFor", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setConvert(value: (/* key */ String, /* value */ String, /* raw */ RawArguments) => _): Self = this.set("convert", js.Any.fromFunction3(value))
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConvert: Self = this.set("convert", js.undefined)
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setIsUsage(value: Boolean): Self = StObject.set(x, "isUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setIsUsageUndefined: Self = StObject.set(x, "isUsage", js.undefined)
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setLongName(value: String): Self = StObject.set(x, "longName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setMany(value: Boolean): Self = StObject.set(x, "many", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsUsage(value: Boolean): Self = this.set("isUsage", value.asInstanceOf[js.Any])
+    def setManyUndefined: Self = StObject.set(x, "many", js.undefined)
     
     @scala.inline
-    def deleteIsUsage: Self = this.set("isUsage", js.undefined)
+    def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMany(value: Boolean): Self = this.set("many", value.asInstanceOf[js.Any])
+    def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
     
     @scala.inline
-    def deleteMany: Self = this.set("many", js.undefined)
+    def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParam(value: String): Self = this.set("param", value.asInstanceOf[js.Any])
+    def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
     
     @scala.inline
-    def deleteParam: Self = this.set("param", js.undefined)
+    def setType(value: String | (Map[String, _])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortName(value: String): Self = this.set("shortName", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteShortName: Self = this.set("shortName", js.undefined)
+    def setValidate(value: (/* key */ String, /* value */ String, /* raw */ RawArguments) => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setType(value: String | (Map[String, _])): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setValidate(value: (/* key */ String, /* value */ String, /* raw */ RawArguments) => Boolean): Self = this.set("validate", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteValidate: Self = this.set("validate", js.undefined)
+    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Categories extends js.Object {
+trait Categories extends StObject {
   
   var PNAccessDeniedCategory: String = js.native
   
@@ -50,51 +51,39 @@ object Categories {
   }
   
   @scala.inline
-  implicit class CategoriesOps[Self <: Categories] (val x: Self) extends AnyVal {
+  implicit class CategoriesMutableBuilder[Self <: Categories] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPNAccessDeniedCategory(value: String): Self = StObject.set(x, "PNAccessDeniedCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPNBadRequestCategory(value: String): Self = StObject.set(x, "PNBadRequestCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPNConnectedCategory(value: String): Self = StObject.set(x, "PNConnectedCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPNAccessDeniedCategory(value: String): Self = this.set("PNAccessDeniedCategory", value.asInstanceOf[js.Any])
+    def setPNMalformedResponseCategory(value: String): Self = StObject.set(x, "PNMalformedResponseCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPNBadRequestCategory(value: String): Self = this.set("PNBadRequestCategory", value.asInstanceOf[js.Any])
+    def setPNNetworkDownCategory(value: String): Self = StObject.set(x, "PNNetworkDownCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPNConnectedCategory(value: String): Self = this.set("PNConnectedCategory", value.asInstanceOf[js.Any])
+    def setPNNetworkIssuesCategory(value: String): Self = StObject.set(x, "PNNetworkIssuesCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPNMalformedResponseCategory(value: String): Self = this.set("PNMalformedResponseCategory", value.asInstanceOf[js.Any])
+    def setPNNetworkUpCategory(value: String): Self = StObject.set(x, "PNNetworkUpCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPNNetworkDownCategory(value: String): Self = this.set("PNNetworkDownCategory", value.asInstanceOf[js.Any])
+    def setPNReconnectedCategory(value: String): Self = StObject.set(x, "PNReconnectedCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPNNetworkIssuesCategory(value: String): Self = this.set("PNNetworkIssuesCategory", value.asInstanceOf[js.Any])
+    def setPNRequestMessageCountExceedCategory(value: String): Self = StObject.set(x, "PNRequestMessageCountExceedCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPNNetworkUpCategory(value: String): Self = this.set("PNNetworkUpCategory", value.asInstanceOf[js.Any])
+    def setPNTimeoutCategory(value: String): Self = StObject.set(x, "PNTimeoutCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPNReconnectedCategory(value: String): Self = this.set("PNReconnectedCategory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPNRequestMessageCountExceedCategory(value: String): Self = this.set("PNRequestMessageCountExceedCategory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPNTimeoutCategory(value: String): Self = this.set("PNTimeoutCategory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPNUnknownCategory(value: String): Self = this.set("PNUnknownCategory", value.asInstanceOf[js.Any])
+    def setPNUnknownCategory(value: String): Self = StObject.set(x, "PNUnknownCategory", value.asInstanceOf[js.Any])
   }
 }

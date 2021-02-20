@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateCustomAvailabilityZoneResult extends js.Object {
+trait CreateCustomAvailabilityZoneResult extends StObject {
   
   var CustomAvailabilityZone: js.UndefOr[typings.awsSdk.rdsMod.CustomAvailabilityZone] = js.native
 }
@@ -18,24 +19,12 @@ object CreateCustomAvailabilityZoneResult {
   }
   
   @scala.inline
-  implicit class CreateCustomAvailabilityZoneResultOps[Self <: CreateCustomAvailabilityZoneResult] (val x: Self) extends AnyVal {
+  implicit class CreateCustomAvailabilityZoneResultMutableBuilder[Self <: CreateCustomAvailabilityZoneResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomAvailabilityZone(value: CustomAvailabilityZone): Self = StObject.set(x, "CustomAvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCustomAvailabilityZone(value: CustomAvailabilityZone): Self = this.set("CustomAvailabilityZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomAvailabilityZone: Self = this.set("CustomAvailabilityZone", js.undefined)
+    def setCustomAvailabilityZoneUndefined: Self = StObject.set(x, "CustomAvailabilityZone", js.undefined)
   }
 }

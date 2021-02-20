@@ -1,11 +1,12 @@
 package typings.sparkpost.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Showrecipients extends js.Object {
+trait Showrecipients extends StObject {
   
   var show_recipients: js.UndefOr[Boolean] = js.native
 }
@@ -18,24 +19,12 @@ object Showrecipients {
   }
   
   @scala.inline
-  implicit class ShowrecipientsOps[Self <: Showrecipients] (val x: Self) extends AnyVal {
+  implicit class ShowrecipientsMutableBuilder[Self <: Showrecipients] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShow_recipients(value: Boolean): Self = StObject.set(x, "show_recipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setShow_recipients(value: Boolean): Self = this.set("show_recipients", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow_recipients: Self = this.set("show_recipients", js.undefined)
+    def setShow_recipientsUndefined: Self = StObject.set(x, "show_recipients", js.undefined)
   }
 }

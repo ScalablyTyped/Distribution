@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPlatformBranchesResult extends js.Object {
+trait ListPlatformBranchesResult extends StObject {
   
   /**
     * In a paginated request, if this value isn't null, it's the token that you can pass in a subsequent request to get the next response page.
@@ -26,33 +27,21 @@ object ListPlatformBranchesResult {
   }
   
   @scala.inline
-  implicit class ListPlatformBranchesResultOps[Self <: ListPlatformBranchesResult] (val x: Self) extends AnyVal {
+  implicit class ListPlatformBranchesResultMutableBuilder[Self <: ListPlatformBranchesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlatformBranchSummaryList(value: PlatformBranchSummaryList): Self = StObject.set(x, "PlatformBranchSummaryList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setPlatformBranchSummaryListUndefined: Self = StObject.set(x, "PlatformBranchSummaryList", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setPlatformBranchSummaryListVarargs(value: PlatformBranchSummary*): Self = this.set("PlatformBranchSummaryList", js.Array(value :_*))
-    
-    @scala.inline
-    def setPlatformBranchSummaryList(value: PlatformBranchSummaryList): Self = this.set("PlatformBranchSummaryList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlatformBranchSummaryList: Self = this.set("PlatformBranchSummaryList", js.undefined)
+    def setPlatformBranchSummaryListVarargs(value: PlatformBranchSummary*): Self = StObject.set(x, "PlatformBranchSummaryList", js.Array(value :_*))
   }
 }

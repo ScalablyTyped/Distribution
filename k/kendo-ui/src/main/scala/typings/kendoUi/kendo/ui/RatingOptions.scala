@@ -4,12 +4,13 @@ import typings.kendoUi.kendoUiStrings.continuous
 import typings.kendoUi.kendoUiStrings.half
 import typings.kendoUi.kendoUiStrings.item
 import typings.kendoUi.kendoUiStrings.single
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RatingOptions extends js.Object {
+trait RatingOptions extends StObject {
   
   var change: js.UndefOr[js.Function1[/* e */ RatingChangeEvent, Unit]] = js.native
   
@@ -50,102 +51,90 @@ object RatingOptions {
   }
   
   @scala.inline
-  implicit class RatingOptionsOps[Self <: RatingOptions] (val x: Self) extends AnyVal {
+  implicit class RatingOptionsMutableBuilder[Self <: RatingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChange(value: /* e */ RatingChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecision(value: String | item | half): Self = this.set("precision", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def setSelection(value: String | continuous | single): Self = this.set("selection", value.asInstanceOf[js.Any])
+    def setHoveredTemplate(value: String | js.Function): Self = StObject.set(x, "hoveredTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: /* e */ RatingChangeEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    def setHoveredTemplateUndefined: Self = StObject.set(x, "hoveredTemplate", js.undefined)
     
     @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
+    def setItemTemplate(value: String | js.Function): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setItemTemplateUndefined: Self = StObject.set(x, "itemTemplate", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setLabel(value: Boolean | RatingLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoveredTemplate(value: String | js.Function): Self = this.set("hoveredTemplate", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteHoveredTemplate: Self = this.set("hoveredTemplate", js.undefined)
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemTemplate(value: String | js.Function): Self = this.set("itemTemplate", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteItemTemplate: Self = this.set("itemTemplate", js.undefined)
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: Boolean | RatingLabel): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setPrecision(value: String | item | half): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSelect(value: /* e */ RatingSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
     @scala.inline
-    def setReadonly(value: Boolean): Self = this.set("readonly", value.asInstanceOf[js.Any])
+    def setSelectValueOnFocus(value: Double): Self = StObject.set(x, "selectValueOnFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReadonly: Self = this.set("readonly", js.undefined)
+    def setSelectValueOnFocusUndefined: Self = StObject.set(x, "selectValueOnFocus", js.undefined)
     
     @scala.inline
-    def setSelect(value: /* e */ RatingSelectEvent => Unit): Self = this.set("select", js.Any.fromFunction1(value))
+    def setSelectedTemplate(value: String | js.Function): Self = StObject.set(x, "selectedTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setSelectedTemplateUndefined: Self = StObject.set(x, "selectedTemplate", js.undefined)
     
     @scala.inline
-    def setSelectValueOnFocus(value: Double): Self = this.set("selectValueOnFocus", value.asInstanceOf[js.Any])
+    def setSelection(value: String | continuous | single): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectValueOnFocus: Self = this.set("selectValueOnFocus", js.undefined)
+    def setTooltip(value: Boolean): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedTemplate(value: String | js.Function): Self = this.set("selectedTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedTemplate: Self = this.set("selectedTemplate", js.undefined)
-    
-    @scala.inline
-    def setTooltip(value: Boolean): Self = this.set("tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

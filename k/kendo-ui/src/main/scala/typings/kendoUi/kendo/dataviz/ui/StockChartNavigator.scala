@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StockChartNavigator extends js.Object {
+trait StockChartNavigator extends StObject {
   
   var autoBind: js.UndefOr[Boolean] = js.native
   
@@ -34,75 +35,63 @@ object StockChartNavigator {
   }
   
   @scala.inline
-  implicit class StockChartNavigatorOps[Self <: StockChartNavigator] (val x: Self) extends AnyVal {
+  implicit class StockChartNavigatorMutableBuilder[Self <: StockChartNavigator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoryAxis(value: StockChartNavigatorCategoryAxis): Self = StObject.set(x, "categoryAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoBind(value: Boolean): Self = this.set("autoBind", value.asInstanceOf[js.Any])
+    def setCategoryAxisUndefined: Self = StObject.set(x, "categoryAxis", js.undefined)
     
     @scala.inline
-    def deleteAutoBind: Self = this.set("autoBind", js.undefined)
+    def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryAxis(value: StockChartNavigatorCategoryAxis): Self = this.set("categoryAxis", value.asInstanceOf[js.Any])
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteCategoryAxis: Self = this.set("categoryAxis", js.undefined)
+    def setDateField(value: String): Self = StObject.set(x, "dateField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setDateFieldUndefined: Self = StObject.set(x, "dateField", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setHint(value: StockChartNavigatorHint): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateField(value: String): Self = this.set("dateField", value.asInstanceOf[js.Any])
+    def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
     
     @scala.inline
-    def deleteDateField: Self = this.set("dateField", js.undefined)
+    def setPane(value: StockChartNavigatorPane): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHint(value: StockChartNavigatorHint): Self = this.set("hint", value.asInstanceOf[js.Any])
+    def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
     
     @scala.inline
-    def deleteHint: Self = this.set("hint", js.undefined)
+    def setSelect(value: StockChartNavigatorSelect): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPane(value: StockChartNavigatorPane): Self = this.set("pane", value.asInstanceOf[js.Any])
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
     @scala.inline
-    def deletePane: Self = this.set("pane", js.undefined)
+    def setSeries(value: js.Array[StockChartNavigatorSeriesItem]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: StockChartNavigatorSelect): Self = this.set("select", value.asInstanceOf[js.Any])
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setSeriesVarargs(value: StockChartNavigatorSeriesItem*): Self = StObject.set(x, "series", js.Array(value :_*))
     
     @scala.inline
-    def setSeriesVarargs(value: StockChartNavigatorSeriesItem*): Self = this.set("series", js.Array(value :_*))
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeries(value: js.Array[StockChartNavigatorSeriesItem]): Self = this.set("series", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

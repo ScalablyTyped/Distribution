@@ -7,14 +7,15 @@ import typings.stylableCore.diagnosticsMod.Diagnostics
 import typings.stylableCore.parserMod.CssParser
 import typings.stylableCore.stylableProcessorMod.StylableMeta
 import typings.stylableCore.typesMod.ModuleResolver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@stylable/core/cjs/create-infra-structure", JSImport.Namespace)
-@js.native
-object createInfraStructureMod extends js.Object {
+object createInfraStructureMod {
   
+  @JSImport("@stylable/core/cjs/create-infra-structure", "createInfrastructure")
+  @js.native
   def createInfrastructure(
     projectRoot: String,
     fileSystem: MinimalFS,
@@ -28,7 +29,7 @@ object createInfraStructureMod extends js.Object {
   ): StylableInfrastructure = js.native
   
   @js.native
-  trait StylableInfrastructure extends js.Object {
+  trait StylableInfrastructure extends StObject {
     
     var fileProcessor: FileProcessor[StylableMeta] = js.native
     

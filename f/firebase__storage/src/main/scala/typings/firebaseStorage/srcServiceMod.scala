@@ -7,25 +7,17 @@ import typings.firebaseStorage.requestMod.Request
 import typings.firebaseStorage.requestinfoMod.RequestInfo
 import typings.firebaseStorage.srcReferenceMod.Reference
 import typings.firebaseStorage.xhriopoolMod.XhrIoPool
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/storage/dist/src/service", JSImport.Namespace)
-@js.native
-object srcServiceMod extends js.Object {
-  
-  def isUrl(): Boolean = js.native
-  def isUrl(path: String): Boolean = js.native
-  
-  def ref(storageOrRef: Reference): Reference = js.native
-  def ref(storageOrRef: Reference, path: String): Reference = js.native
-  def ref(storage: StorageService): Reference = js.native
-  def ref(storage: StorageService, url: String): Reference = js.native
+object srcServiceMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _FirebaseService * / any */ @js.native
-  class StorageService protected () extends js.Object {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _FirebaseService * / any */ @JSImport("@firebase/storage/dist/src/service", "StorageService")
+  @js.native
+  class StorageService protected () extends StObject {
     def this(
       app: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseApp */ js.Any,
       /**
@@ -113,4 +105,24 @@ object srcServiceMod extends js.Object {
     def maxUploadRetryTime: Double = js.native
     def maxUploadRetryTime_=(time: Double): Unit = js.native
   }
+  
+  @JSImport("@firebase/storage/dist/src/service", "isUrl")
+  @js.native
+  def isUrl(): Boolean = js.native
+  @JSImport("@firebase/storage/dist/src/service", "isUrl")
+  @js.native
+  def isUrl(path: String): Boolean = js.native
+  
+  @JSImport("@firebase/storage/dist/src/service", "ref")
+  @js.native
+  def ref(storageOrRef: Reference): Reference = js.native
+  @JSImport("@firebase/storage/dist/src/service", "ref")
+  @js.native
+  def ref(storageOrRef: Reference, path: String): Reference = js.native
+  @JSImport("@firebase/storage/dist/src/service", "ref")
+  @js.native
+  def ref(storage: StorageService): Reference = js.native
+  @JSImport("@firebase/storage/dist/src/service", "ref")
+  @js.native
+  def ref(storage: StorageService, url: String): Reference = js.native
 }

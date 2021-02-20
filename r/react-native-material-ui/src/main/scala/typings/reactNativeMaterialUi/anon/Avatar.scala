@@ -1,12 +1,13 @@
 package typings.reactNativeMaterialUi.anon
 
 import typings.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Avatar extends js.Object {
+trait Avatar extends StObject {
   
   var avatar: js.UndefOr[Element] = js.native
   
@@ -21,30 +22,18 @@ object Avatar {
   }
   
   @scala.inline
-  implicit class AvatarOps[Self <: Avatar] (val x: Self) extends AnyVal {
+  implicit class AvatarMutableBuilder[Self <: Avatar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvatar(value: Element): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAvatar(value: Element): Self = this.set("avatar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvatar: Self = this.set("avatar", js.undefined)
-    
-    @scala.inline
-    def setOnPress(value: () => Unit): Self = this.set("onPress", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DissociatePackageResponse extends js.Object {
+trait DissociatePackageResponse extends StObject {
   
   /**
     * DomainPackageDetails
@@ -21,24 +22,12 @@ object DissociatePackageResponse {
   }
   
   @scala.inline
-  implicit class DissociatePackageResponseOps[Self <: DissociatePackageResponse] (val x: Self) extends AnyVal {
+  implicit class DissociatePackageResponseMutableBuilder[Self <: DissociatePackageResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainPackageDetails(value: DomainPackageDetails): Self = StObject.set(x, "DomainPackageDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDomainPackageDetails(value: DomainPackageDetails): Self = this.set("DomainPackageDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomainPackageDetails: Self = this.set("DomainPackageDetails", js.undefined)
+    def setDomainPackageDetailsUndefined: Self = StObject.set(x, "DomainPackageDetails", js.undefined)
   }
 }

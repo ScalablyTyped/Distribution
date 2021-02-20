@@ -1,12 +1,13 @@
 package typings.webix.webix
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Touch extends js.Object {
+trait Touch extends StObject {
   
   var config: js.Any = js.native
   
@@ -33,33 +34,21 @@ object Touch {
   }
   
   @scala.inline
-  implicit class TouchOps[Self <: Touch] (val x: Self) extends AnyVal {
+  implicit class TouchMutableBuilder[Self <: Touch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConfig(value: js.Any): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setLimit(value: Boolean => Unit): Self = StObject.set(x, "limit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisable(value: () => Unit): Self = this.set("disable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setEnable(value: () => Unit): Self = this.set("enable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLimit(value: Boolean => Unit): Self = this.set("limit", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setScrollTo(value: (HTMLElement, Double, Double, String) => Unit): Self = this.set("scrollTo", js.Any.fromFunction4(value))
+    def setScrollTo(value: (HTMLElement, Double, Double, String) => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction4(value))
   }
 }

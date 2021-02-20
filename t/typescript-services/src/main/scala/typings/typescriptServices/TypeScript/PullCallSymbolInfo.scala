@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PullCallSymbolInfo extends js.Object {
+trait PullCallSymbolInfo extends StObject {
   
   var ast: AST = js.native
   
@@ -35,39 +36,27 @@ object PullCallSymbolInfo {
   }
   
   @scala.inline
-  implicit class PullCallSymbolInfoOps[Self <: PullCallSymbolInfo] (val x: Self) extends AnyVal {
+  implicit class PullCallSymbolInfoMutableBuilder[Self <: PullCallSymbolInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAst(value: AST): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCandidateSignature(value: PullSignatureSymbol): Self = StObject.set(x, "candidateSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnclosingScopeSymbol(value: PullSymbol): Self = StObject.set(x, "enclosingScopeSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAst(value: AST): Self = this.set("ast", value.asInstanceOf[js.Any])
+    def setIsConstructorCall(value: Boolean): Self = StObject.set(x, "isConstructorCall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCandidateSignature(value: PullSignatureSymbol): Self = this.set("candidateSignature", value.asInstanceOf[js.Any])
+    def setResolvedSignatures(value: js.Array[PullSignatureSymbol]): Self = StObject.set(x, "resolvedSignatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnclosingScopeSymbol(value: PullSymbol): Self = this.set("enclosingScopeSymbol", value.asInstanceOf[js.Any])
+    def setResolvedSignaturesVarargs(value: PullSignatureSymbol*): Self = StObject.set(x, "resolvedSignatures", js.Array(value :_*))
     
     @scala.inline
-    def setIsConstructorCall(value: Boolean): Self = this.set("isConstructorCall", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolvedSignaturesVarargs(value: PullSignatureSymbol*): Self = this.set("resolvedSignatures", js.Array(value :_*))
-    
-    @scala.inline
-    def setResolvedSignatures(value: js.Array[PullSignatureSymbol]): Self = this.set("resolvedSignatures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetSymbol(value: PullSymbol): Self = this.set("targetSymbol", value.asInstanceOf[js.Any])
+    def setTargetSymbol(value: PullSymbol): Self = StObject.set(x, "targetSymbol", value.asInstanceOf[js.Any])
   }
 }

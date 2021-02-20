@@ -3,12 +3,13 @@ package typings.gun.anon
 import typings.gun.gunBooleans.`false`
 import typings.gun.mod.Gun.ArrayAsRecord
 import typings.gun.mod.Gun.ChainReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Gun[DataType, ReferenceKey] extends js.Object {
+trait Gun[DataType, ReferenceKey] extends StObject {
   
   var gun: ChainReference[DataType, ReferenceKey, `false`] = js.native
   
@@ -29,27 +30,15 @@ object Gun {
   }
   
   @scala.inline
-  implicit class GunOps[Self <: Gun[_, _], DataType, ReferenceKey] (val x: Self with (Gun[DataType, ReferenceKey])) extends AnyVal {
+  implicit class GunMutableBuilder[Self <: Gun[_, _], DataType, ReferenceKey] (val x: Self with (Gun[DataType, ReferenceKey])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGun(value: ChainReference[DataType, ReferenceKey, `false`]): Self = StObject.set(x, "gun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKey(value: ReferenceKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGun(value: ChainReference[DataType, ReferenceKey, `false`]): Self = this.set("gun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKey(value: ReferenceKey): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPut(value: ArrayAsRecord[DataType]): Self = this.set("put", value.asInstanceOf[js.Any])
+    def setPut(value: ArrayAsRecord[DataType]): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

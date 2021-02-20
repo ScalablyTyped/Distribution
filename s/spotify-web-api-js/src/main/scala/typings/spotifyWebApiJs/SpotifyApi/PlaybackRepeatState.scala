@@ -1,5 +1,6 @@
 package typings.spotifyWebApiJs.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.spotifyWebApiJs.spotifyWebApiJsStrings.track
   - typings.spotifyWebApiJs.spotifyWebApiJsStrings.context
 */
-trait PlaybackRepeatState extends js.Object
+trait PlaybackRepeatState extends StObject
 object PlaybackRepeatState {
   
   @scala.inline

@@ -1,18 +1,20 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.feedMod.Feed
 import typings.instagramPrivateApi.userStoryFeedResponseMod.UserStoryFeedResponseItemsItem
 import typings.instagramPrivateApi.userStoryFeedResponseMod.UserStoryFeedResponseRootObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/feeds/user-story.feed", JSImport.Namespace)
-@js.native
-object userStoryFeedMod extends js.Object {
+object userStoryFeedMod {
   
+  @JSImport("instagram-private-api/dist/feeds/user-story.feed", "UserStoryFeed")
   @js.native
-  class UserStoryFeed () extends Feed[UserStoryFeedResponseRootObject, UserStoryFeedResponseItemsItem] {
+  class UserStoryFeed protected () extends Feed[UserStoryFeedResponseRootObject, UserStoryFeedResponseItemsItem] {
+    def this(client: IgApiClient) = this()
     
     def request(): js.Promise[UserStoryFeedResponseRootObject] = js.native
     

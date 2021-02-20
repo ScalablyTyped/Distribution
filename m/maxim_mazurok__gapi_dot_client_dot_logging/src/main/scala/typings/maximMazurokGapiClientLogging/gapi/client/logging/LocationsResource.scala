@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientLogging.gapi.client.logging
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientLogging.anon.Accesstoken
 import typings.maximMazurokGapiClientLogging.anon.Filter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationsResource extends js.Object {
+trait LocationsResource extends StObject {
   
   var buckets: BucketsResource = js.native
   

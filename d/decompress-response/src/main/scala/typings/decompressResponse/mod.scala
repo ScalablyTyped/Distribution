@@ -1,13 +1,12 @@
 package typings.decompressResponse
 
 import typings.node.httpMod.IncomingMessage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("decompress-response", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   Decompress a HTTP response if needed.
@@ -22,5 +21,7 @@ object mod extends js.Object {
   });
   ```
   */
+  @JSImport("decompress-response", JSImport.Namespace)
+  @js.native
   def apply(response: IncomingMessage): IncomingMessage = js.native
 }

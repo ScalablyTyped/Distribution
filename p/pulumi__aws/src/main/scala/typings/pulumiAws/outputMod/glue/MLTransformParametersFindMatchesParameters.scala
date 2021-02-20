@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.glue
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MLTransformParametersFindMatchesParameters extends js.Object {
+trait MLTransformParametersFindMatchesParameters extends StObject {
   
   /**
     * The value that is selected when tuning your transform for a balance between accuracy and cost.
@@ -36,42 +37,30 @@ object MLTransformParametersFindMatchesParameters {
   }
   
   @scala.inline
-  implicit class MLTransformParametersFindMatchesParametersOps[Self <: MLTransformParametersFindMatchesParameters] (val x: Self) extends AnyVal {
+  implicit class MLTransformParametersFindMatchesParametersMutableBuilder[Self <: MLTransformParametersFindMatchesParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccuracyCostTradeOff(value: Double): Self = StObject.set(x, "accuracyCostTradeOff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccuracyCostTradeOffUndefined: Self = StObject.set(x, "accuracyCostTradeOff", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnforceProvidedLabels(value: Boolean): Self = StObject.set(x, "enforceProvidedLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccuracyCostTradeOff(value: Double): Self = this.set("accuracyCostTradeOff", value.asInstanceOf[js.Any])
+    def setEnforceProvidedLabelsUndefined: Self = StObject.set(x, "enforceProvidedLabels", js.undefined)
     
     @scala.inline
-    def deleteAccuracyCostTradeOff: Self = this.set("accuracyCostTradeOff", js.undefined)
+    def setPrecisionRecallTradeOff(value: Double): Self = StObject.set(x, "precisionRecallTradeOff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnforceProvidedLabels(value: Boolean): Self = this.set("enforceProvidedLabels", value.asInstanceOf[js.Any])
+    def setPrecisionRecallTradeOffUndefined: Self = StObject.set(x, "precisionRecallTradeOff", js.undefined)
     
     @scala.inline
-    def deleteEnforceProvidedLabels: Self = this.set("enforceProvidedLabels", js.undefined)
+    def setPrimaryKeyColumnName(value: String): Self = StObject.set(x, "primaryKeyColumnName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecisionRecallTradeOff(value: Double): Self = this.set("precisionRecallTradeOff", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrecisionRecallTradeOff: Self = this.set("precisionRecallTradeOff", js.undefined)
-    
-    @scala.inline
-    def setPrimaryKeyColumnName(value: String): Self = this.set("primaryKeyColumnName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimaryKeyColumnName: Self = this.set("primaryKeyColumnName", js.undefined)
+    def setPrimaryKeyColumnNameUndefined: Self = StObject.set(x, "primaryKeyColumnName", js.undefined)
   }
 }

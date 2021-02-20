@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer extends js.Object {
+trait GoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer extends StObject {
   
   /** The piece of text from the `source` knowledge base document that answers this conversational query. */
   var answer: js.UndefOr[String] = js.native
@@ -39,48 +40,36 @@ object GoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1KnowledgeAnswersAnswerOps[Self <: GoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowV2beta1KnowledgeAnswersAnswerMutableBuilder[Self <: GoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnswer(value: String): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnswerUndefined: Self = StObject.set(x, "answer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFaqQuestion(value: String): Self = StObject.set(x, "faqQuestion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnswer(value: String): Self = this.set("answer", value.asInstanceOf[js.Any])
+    def setFaqQuestionUndefined: Self = StObject.set(x, "faqQuestion", js.undefined)
     
     @scala.inline
-    def deleteAnswer: Self = this.set("answer", js.undefined)
+    def setMatchConfidence(value: Double): Self = StObject.set(x, "matchConfidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaqQuestion(value: String): Self = this.set("faqQuestion", value.asInstanceOf[js.Any])
+    def setMatchConfidenceLevel(value: String): Self = StObject.set(x, "matchConfidenceLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFaqQuestion: Self = this.set("faqQuestion", js.undefined)
+    def setMatchConfidenceLevelUndefined: Self = StObject.set(x, "matchConfidenceLevel", js.undefined)
     
     @scala.inline
-    def setMatchConfidence(value: Double): Self = this.set("matchConfidence", value.asInstanceOf[js.Any])
+    def setMatchConfidenceUndefined: Self = StObject.set(x, "matchConfidence", js.undefined)
     
     @scala.inline
-    def deleteMatchConfidence: Self = this.set("matchConfidence", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchConfidenceLevel(value: String): Self = this.set("matchConfidenceLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchConfidenceLevel: Self = this.set("matchConfidenceLevel", js.undefined)
-    
-    @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

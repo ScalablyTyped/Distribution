@@ -1,12 +1,13 @@
 package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IObjectAnimation[T] extends js.Object {
+trait IObjectAnimation[T] extends StObject {
   
   /**
     * Animates object's properties

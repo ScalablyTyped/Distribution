@@ -1,11 +1,12 @@
 package typings.gapiYoutube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Home extends js.Object {
+trait Home extends StObject {
   
   /**
     * The channelId parameter specifies a unique YouTube channel ID. The API will then return a list of that channel's activities.
@@ -61,69 +62,57 @@ object Home {
   }
   
   @scala.inline
-  implicit class HomeOps[Self <: Home] (val x: Self) extends AnyVal {
+  implicit class HomeMutableBuilder[Self <: Home] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHome(value: Boolean): Self = StObject.set(x, "home", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPart(value: String): Self = this.set("part", value.asInstanceOf[js.Any])
+    def setHomeUndefined: Self = StObject.set(x, "home", js.undefined)
     
     @scala.inline
-    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def setHome(value: Boolean): Self = this.set("home", value.asInstanceOf[js.Any])
+    def setMine(value: Boolean): Self = StObject.set(x, "mine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHome: Self = this.set("home", js.undefined)
+    def setMineUndefined: Self = StObject.set(x, "mine", js.undefined)
     
     @scala.inline
-    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
-    def setMine(value: Boolean): Self = this.set("mine", value.asInstanceOf[js.Any])
+    def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMine: Self = this.set("mine", js.undefined)
+    def setPublishedAfter(value: String): Self = StObject.set(x, "publishedAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    def setPublishedAfterUndefined: Self = StObject.set(x, "publishedAfter", js.undefined)
     
     @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setPublishedBefore(value: String): Self = StObject.set(x, "publishedBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishedAfter(value: String): Self = this.set("publishedAfter", value.asInstanceOf[js.Any])
+    def setPublishedBeforeUndefined: Self = StObject.set(x, "publishedBefore", js.undefined)
     
     @scala.inline
-    def deletePublishedAfter: Self = this.set("publishedAfter", js.undefined)
+    def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishedBefore(value: String): Self = this.set("publishedBefore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublishedBefore: Self = this.set("publishedBefore", js.undefined)
-    
-    @scala.inline
-    def setRegionCode(value: String): Self = this.set("regionCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegionCode: Self = this.set("regionCode", js.undefined)
+    def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
   }
 }

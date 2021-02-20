@@ -1,13 +1,16 @@
 package typings.popmotion
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("popmotion/lib/utils/apply-offset", JSImport.Namespace)
-@js.native
-object applyOffsetMod extends js.Object {
+object applyOffsetMod {
   
+  @JSImport("popmotion/lib/utils/apply-offset", "applyOffset")
+  @js.native
   def applyOffset(from: Double): js.Function1[/* v */ Double, Double] = js.native
+  @JSImport("popmotion/lib/utils/apply-offset", "applyOffset")
+  @js.native
   def applyOffset(from: Double, to: Double): js.Function1[/* v */ Double, Double] = js.native
 }

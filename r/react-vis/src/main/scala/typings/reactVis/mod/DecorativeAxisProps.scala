@@ -1,6 +1,7 @@
 package typings.reactVis.mod
 
 import typings.reactVis.anon.Y
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ trait DecorativeAxisProps extends AbstractSeriesProps[DecorativeAxisPoint] {
   
   var tickSize: js.UndefOr[Double] = js.native
   
-   // default: 10
+  // default: 10
   var tickValue: js.UndefOr[js.Function1[/* x */ js.Any, String | Double]] = js.native
 }
 object DecorativeAxisProps {
@@ -30,48 +31,36 @@ object DecorativeAxisProps {
   }
   
   @scala.inline
-  implicit class DecorativeAxisPropsOps[Self <: DecorativeAxisProps] (val x: Self) extends AnyVal {
+  implicit class DecorativeAxisPropsMutableBuilder[Self <: DecorativeAxisProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxisDomain(value: js.Array[Double]): Self = StObject.set(x, "axisDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisDomainVarargs(value: Double*): Self = StObject.set(x, "axisDomain", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxisEnd(value: Y): Self = StObject.set(x, "axisEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisDomainVarargs(value: Double*): Self = this.set("axisDomain", js.Array(value :_*))
+    def setAxisStart(value: Y): Self = StObject.set(x, "axisStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisDomain(value: js.Array[Double]): Self = this.set("axisDomain", value.asInstanceOf[js.Any])
+    def setNumberOfTicks(value: Double): Self = StObject.set(x, "numberOfTicks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisEnd(value: Y): Self = this.set("axisEnd", value.asInstanceOf[js.Any])
+    def setNumberOfTicksUndefined: Self = StObject.set(x, "numberOfTicks", js.undefined)
     
     @scala.inline
-    def setAxisStart(value: Y): Self = this.set("axisStart", value.asInstanceOf[js.Any])
+    def setTickSize(value: Double): Self = StObject.set(x, "tickSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfTicks(value: Double): Self = this.set("numberOfTicks", value.asInstanceOf[js.Any])
+    def setTickSizeUndefined: Self = StObject.set(x, "tickSize", js.undefined)
     
     @scala.inline
-    def deleteNumberOfTicks: Self = this.set("numberOfTicks", js.undefined)
+    def setTickValue(value: /* x */ js.Any => String | Double): Self = StObject.set(x, "tickValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTickSize(value: Double): Self = this.set("tickSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTickSize: Self = this.set("tickSize", js.undefined)
-    
-    @scala.inline
-    def setTickValue(value: /* x */ js.Any => String | Double): Self = this.set("tickValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteTickValue: Self = this.set("tickValue", js.undefined)
+    def setTickValueUndefined: Self = StObject.set(x, "tickValue", js.undefined)
   }
 }

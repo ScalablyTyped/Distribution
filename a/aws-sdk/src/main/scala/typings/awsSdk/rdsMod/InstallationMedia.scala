@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstallationMedia extends js.Object {
+trait InstallationMedia extends StObject {
   
   /**
     * The custom Availability Zone (AZ) that contains the installation media.
@@ -56,66 +57,54 @@ object InstallationMedia {
   }
   
   @scala.inline
-  implicit class InstallationMediaOps[Self <: InstallationMedia] (val x: Self) extends AnyVal {
+  implicit class InstallationMediaMutableBuilder[Self <: InstallationMedia] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomAvailabilityZoneId(value: String): Self = StObject.set(x, "CustomAvailabilityZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomAvailabilityZoneIdUndefined: Self = StObject.set(x, "CustomAvailabilityZoneId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomAvailabilityZoneId(value: String): Self = this.set("CustomAvailabilityZoneId", value.asInstanceOf[js.Any])
+    def setEngineInstallationMediaPath(value: String): Self = StObject.set(x, "EngineInstallationMediaPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomAvailabilityZoneId: Self = this.set("CustomAvailabilityZoneId", js.undefined)
+    def setEngineInstallationMediaPathUndefined: Self = StObject.set(x, "EngineInstallationMediaPath", js.undefined)
     
     @scala.inline
-    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
     
     @scala.inline
-    def deleteEngine: Self = this.set("Engine", js.undefined)
+    def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineInstallationMediaPath(value: String): Self = this.set("EngineInstallationMediaPath", value.asInstanceOf[js.Any])
+    def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
     @scala.inline
-    def deleteEngineInstallationMediaPath: Self = this.set("EngineInstallationMediaPath", js.undefined)
+    def setFailureCause(value: InstallationMediaFailureCause): Self = StObject.set(x, "FailureCause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    def setFailureCauseUndefined: Self = StObject.set(x, "FailureCause", js.undefined)
     
     @scala.inline
-    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    def setInstallationMediaId(value: String): Self = StObject.set(x, "InstallationMediaId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureCause(value: InstallationMediaFailureCause): Self = this.set("FailureCause", value.asInstanceOf[js.Any])
+    def setInstallationMediaIdUndefined: Self = StObject.set(x, "InstallationMediaId", js.undefined)
     
     @scala.inline
-    def deleteFailureCause: Self = this.set("FailureCause", js.undefined)
+    def setOSInstallationMediaPath(value: String): Self = StObject.set(x, "OSInstallationMediaPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallationMediaId(value: String): Self = this.set("InstallationMediaId", value.asInstanceOf[js.Any])
+    def setOSInstallationMediaPathUndefined: Self = StObject.set(x, "OSInstallationMediaPath", js.undefined)
     
     @scala.inline
-    def deleteInstallationMediaId: Self = this.set("InstallationMediaId", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOSInstallationMediaPath(value: String): Self = this.set("OSInstallationMediaPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOSInstallationMediaPath: Self = this.set("OSInstallationMediaPath", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

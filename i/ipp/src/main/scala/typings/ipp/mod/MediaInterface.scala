@@ -1,11 +1,12 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaInterface extends js.Object {
+trait MediaInterface extends StObject {
   
   var `media-back-coating`: js.UndefOr[MediaCoating] = js.native
   
@@ -58,144 +59,132 @@ object MediaInterface {
   }
   
   @scala.inline
-  implicit class MediaInterfaceOps[Self <: MediaInterface] (val x: Self) extends AnyVal {
+  implicit class MediaInterfaceMutableBuilder[Self <: MediaInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setMedia-back-coating`(value: MediaCoating): Self = StObject.set(x, "media-back-coating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setMedia-back-coatingUndefined`: Self = StObject.set(x, "media-back-coating", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setMedia-bottom-margin`(value: Double): Self = StObject.set(x, "media-bottom-margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-back-coating`(value: MediaCoating): Self = this.set("media-back-coating", value.asInstanceOf[js.Any])
+    def `setMedia-bottom-marginUndefined`: Self = StObject.set(x, "media-bottom-margin", js.undefined)
     
     @scala.inline
-    def `deleteMedia-back-coating`: Self = this.set("media-back-coating", js.undefined)
+    def `setMedia-color`(value: MediaColor): Self = StObject.set(x, "media-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-bottom-margin`(value: Double): Self = this.set("media-bottom-margin", value.asInstanceOf[js.Any])
+    def `setMedia-colorUndefined`: Self = StObject.set(x, "media-color", js.undefined)
     
     @scala.inline
-    def `deleteMedia-bottom-margin`: Self = this.set("media-bottom-margin", js.undefined)
+    def `setMedia-front-coating`(value: MediaCoating): Self = StObject.set(x, "media-front-coating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-color`(value: MediaColor): Self = this.set("media-color", value.asInstanceOf[js.Any])
+    def `setMedia-front-coatingUndefined`: Self = StObject.set(x, "media-front-coating", js.undefined)
     
     @scala.inline
-    def `deleteMedia-color`: Self = this.set("media-color", js.undefined)
+    def `setMedia-grain`(value: MediaGrain): Self = StObject.set(x, "media-grain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-front-coating`(value: MediaCoating): Self = this.set("media-front-coating", value.asInstanceOf[js.Any])
+    def `setMedia-grainUndefined`: Self = StObject.set(x, "media-grain", js.undefined)
     
     @scala.inline
-    def `deleteMedia-front-coating`: Self = this.set("media-front-coating", js.undefined)
+    def `setMedia-hole-count`(value: Double): Self = StObject.set(x, "media-hole-count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-grain`(value: MediaGrain): Self = this.set("media-grain", value.asInstanceOf[js.Any])
+    def `setMedia-hole-countUndefined`: Self = StObject.set(x, "media-hole-count", js.undefined)
     
     @scala.inline
-    def `deleteMedia-grain`: Self = this.set("media-grain", js.undefined)
+    def `setMedia-info`(value: String): Self = StObject.set(x, "media-info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-hole-count`(value: Double): Self = this.set("media-hole-count", value.asInstanceOf[js.Any])
+    def `setMedia-infoUndefined`: Self = StObject.set(x, "media-info", js.undefined)
     
     @scala.inline
-    def `deleteMedia-hole-count`: Self = this.set("media-hole-count", js.undefined)
+    def `setMedia-key`(value: MediaSizeName | MediaName): Self = StObject.set(x, "media-key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-info`(value: String): Self = this.set("media-info", value.asInstanceOf[js.Any])
+    def `setMedia-keyUndefined`: Self = StObject.set(x, "media-key", js.undefined)
     
     @scala.inline
-    def `deleteMedia-info`: Self = this.set("media-info", js.undefined)
+    def `setMedia-left-margin`(value: Double): Self = StObject.set(x, "media-left-margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-key`(value: MediaSizeName | MediaName): Self = this.set("media-key", value.asInstanceOf[js.Any])
+    def `setMedia-left-marginUndefined`: Self = StObject.set(x, "media-left-margin", js.undefined)
     
     @scala.inline
-    def `deleteMedia-key`: Self = this.set("media-key", js.undefined)
+    def `setMedia-order-count`(value: Double): Self = StObject.set(x, "media-order-count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-left-margin`(value: Double): Self = this.set("media-left-margin", value.asInstanceOf[js.Any])
+    def `setMedia-order-countUndefined`: Self = StObject.set(x, "media-order-count", js.undefined)
     
     @scala.inline
-    def `deleteMedia-left-margin`: Self = this.set("media-left-margin", js.undefined)
+    def `setMedia-pre-printed`(value: MediaPrePrinted): Self = StObject.set(x, "media-pre-printed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-order-count`(value: Double): Self = this.set("media-order-count", value.asInstanceOf[js.Any])
+    def `setMedia-pre-printedUndefined`: Self = StObject.set(x, "media-pre-printed", js.undefined)
     
     @scala.inline
-    def `deleteMedia-order-count`: Self = this.set("media-order-count", js.undefined)
+    def `setMedia-recycled`(value: MediaPrePrinted): Self = StObject.set(x, "media-recycled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-pre-printed`(value: MediaPrePrinted): Self = this.set("media-pre-printed", value.asInstanceOf[js.Any])
+    def `setMedia-recycledUndefined`: Self = StObject.set(x, "media-recycled", js.undefined)
     
     @scala.inline
-    def `deleteMedia-pre-printed`: Self = this.set("media-pre-printed", js.undefined)
+    def `setMedia-right-margin`(value: Double): Self = StObject.set(x, "media-right-margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-recycled`(value: MediaPrePrinted): Self = this.set("media-recycled", value.asInstanceOf[js.Any])
+    def `setMedia-right-marginUndefined`: Self = StObject.set(x, "media-right-margin", js.undefined)
     
     @scala.inline
-    def `deleteMedia-recycled`: Self = this.set("media-recycled", js.undefined)
+    def `setMedia-size`(value: MediaSize): Self = StObject.set(x, "media-size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-right-margin`(value: Double): Self = this.set("media-right-margin", value.asInstanceOf[js.Any])
+    def `setMedia-size-name`(value: MediaSizeName): Self = StObject.set(x, "media-size-name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteMedia-right-margin`: Self = this.set("media-right-margin", js.undefined)
+    def `setMedia-size-nameUndefined`: Self = StObject.set(x, "media-size-name", js.undefined)
     
     @scala.inline
-    def `setMedia-size`(value: MediaSize): Self = this.set("media-size", value.asInstanceOf[js.Any])
+    def `setMedia-sizeUndefined`: Self = StObject.set(x, "media-size", js.undefined)
     
     @scala.inline
-    def `deleteMedia-size`: Self = this.set("media-size", js.undefined)
+    def `setMedia-source`(value: MediaSource): Self = StObject.set(x, "media-source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-size-name`(value: MediaSizeName): Self = this.set("media-size-name", value.asInstanceOf[js.Any])
+    def `setMedia-sourceUndefined`: Self = StObject.set(x, "media-source", js.undefined)
     
     @scala.inline
-    def `deleteMedia-size-name`: Self = this.set("media-size-name", js.undefined)
+    def `setMedia-thickness`(value: Double): Self = StObject.set(x, "media-thickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-source`(value: MediaSource): Self = this.set("media-source", value.asInstanceOf[js.Any])
+    def `setMedia-thicknessUndefined`: Self = StObject.set(x, "media-thickness", js.undefined)
     
     @scala.inline
-    def `deleteMedia-source`: Self = this.set("media-source", js.undefined)
+    def `setMedia-tooth`(value: MediaTooth): Self = StObject.set(x, "media-tooth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-thickness`(value: Double): Self = this.set("media-thickness", value.asInstanceOf[js.Any])
+    def `setMedia-toothUndefined`: Self = StObject.set(x, "media-tooth", js.undefined)
     
     @scala.inline
-    def `deleteMedia-thickness`: Self = this.set("media-thickness", js.undefined)
+    def `setMedia-top-margin`(value: Double): Self = StObject.set(x, "media-top-margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-tooth`(value: MediaTooth): Self = this.set("media-tooth", value.asInstanceOf[js.Any])
+    def `setMedia-top-marginUndefined`: Self = StObject.set(x, "media-top-margin", js.undefined)
     
     @scala.inline
-    def `deleteMedia-tooth`: Self = this.set("media-tooth", js.undefined)
+    def `setMedia-type`(value: MediaType): Self = StObject.set(x, "media-type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-top-margin`(value: Double): Self = this.set("media-top-margin", value.asInstanceOf[js.Any])
+    def `setMedia-typeUndefined`: Self = StObject.set(x, "media-type", js.undefined)
     
     @scala.inline
-    def `deleteMedia-top-margin`: Self = this.set("media-top-margin", js.undefined)
+    def `setMedia-weight-metric`(value: Double): Self = StObject.set(x, "media-weight-metric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMedia-type`(value: MediaType): Self = this.set("media-type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteMedia-type`: Self = this.set("media-type", js.undefined)
-    
-    @scala.inline
-    def `setMedia-weight-metric`(value: Double): Self = this.set("media-weight-metric", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteMedia-weight-metric`: Self = this.set("media-weight-metric", js.undefined)
+    def `setMedia-weight-metricUndefined`: Self = StObject.set(x, "media-weight-metric", js.undefined)
   }
 }

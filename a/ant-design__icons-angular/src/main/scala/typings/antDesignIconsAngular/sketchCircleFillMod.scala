@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/fill/SketchCircleFill", JSImport.Namespace)
-@js.native
-object sketchCircleFillMod extends js.Object {
+object sketchCircleFillMod {
   
+  @JSImport("@ant-design/icons-angular/icons/fill/SketchCircleFill", "SketchCircleFill")
+  @js.native
   val SketchCircleFill: IconDefinition = js.native
 }

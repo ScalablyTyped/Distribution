@@ -1,12 +1,13 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxOutboundRoutingGroup Class */
 @js.native
-trait FaxOutboundRoutingGroup extends js.Object {
+trait FaxOutboundRoutingGroup extends StObject {
   
   /** Ordered collection of device IDs */
   def DeviceIds(lIndex: Double): Double = js.native

@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RsaOtherPrimesInfo extends js.Object {
+trait RsaOtherPrimesInfo extends StObject {
   
   var d: js.UndefOr[java.lang.String] = js.native
   
@@ -22,36 +23,24 @@ object RsaOtherPrimesInfo {
   }
   
   @scala.inline
-  implicit class RsaOtherPrimesInfoOps[Self <: RsaOtherPrimesInfo] (val x: Self) extends AnyVal {
+  implicit class RsaOtherPrimesInfoMutableBuilder[Self <: RsaOtherPrimesInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setD(value: java.lang.String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDUndefined: Self = StObject.set(x, "d", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setR(value: java.lang.String): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setD(value: java.lang.String): Self = this.set("d", value.asInstanceOf[js.Any])
+    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
     @scala.inline
-    def deleteD: Self = this.set("d", js.undefined)
+    def setT(value: java.lang.String): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setR(value: java.lang.String): Self = this.set("r", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteR: Self = this.set("r", js.undefined)
-    
-    @scala.inline
-    def setT(value: java.lang.String): Self = this.set("t", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteT: Self = this.set("t", js.undefined)
+    def setTUndefined: Self = StObject.set(x, "t", js.undefined)
   }
 }

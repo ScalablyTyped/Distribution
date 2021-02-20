@@ -1,12 +1,13 @@
 package typings.box2d.Box2D.Collision
 
 import typings.box2d.Box2D.Common.Math.b2Vec2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2DynamicTree extends js.Object {
+trait b2DynamicTree extends StObject {
   
   /**
     * Create a proxy. Provide a tight fitting AABB and a userData.
@@ -90,44 +91,32 @@ object b2DynamicTree {
   }
   
   @scala.inline
-  implicit class b2DynamicTreeOps[Self <: b2DynamicTree] (val x: Self) extends AnyVal {
+  implicit class b2DynamicTreeMutableBuilder[Self <: b2DynamicTree] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateProxy(value: (b2AABB, js.Any) => b2DynamicTreeNode): Self = StObject.set(x, "CreateProxy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestroyProxy(value: b2DynamicTreeNode => Unit): Self = StObject.set(x, "DestroyProxy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFatAABB(value: b2DynamicTreeNode => b2AABB): Self = StObject.set(x, "GetFatAABB", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateProxy(value: (b2AABB, js.Any) => b2DynamicTreeNode): Self = this.set("CreateProxy", js.Any.fromFunction2(value))
+    def setGetUserData(value: b2DynamicTreeNode => js.Any): Self = StObject.set(x, "GetUserData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDestroyProxy(value: b2DynamicTreeNode => Unit): Self = this.set("DestroyProxy", js.Any.fromFunction1(value))
+    def setMoveProxy(value: (b2DynamicTreeNode, b2AABB, b2Vec2) => Boolean): Self = StObject.set(x, "MoveProxy", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetFatAABB(value: b2DynamicTreeNode => b2AABB): Self = this.set("GetFatAABB", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetUserData(value: b2DynamicTreeNode => js.Any): Self = this.set("GetUserData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMoveProxy(value: (b2DynamicTreeNode, b2AABB, b2Vec2) => Boolean): Self = this.set("MoveProxy", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setQuery(value: (js.Function1[/* proxy */ b2DynamicTreeNode, Boolean], b2AABB) => Unit): Self = this.set("Query", js.Any.fromFunction2(value))
+    def setQuery(value: (js.Function1[/* proxy */ b2DynamicTreeNode, Boolean], b2AABB) => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction2(value))
     
     @scala.inline
     def setRayCast(
       value: (js.Function2[/* input */ b2RayCastInput, /* proxy */ b2DynamicTreeNode, Double], b2RayCastInput) => Unit
-    ): Self = this.set("RayCast", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "RayCast", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRebalance(value: Double => Unit): Self = this.set("Rebalance", js.Any.fromFunction1(value))
+    def setRebalance(value: Double => Unit): Self = StObject.set(x, "Rebalance", js.Any.fromFunction1(value))
   }
 }

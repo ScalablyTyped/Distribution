@@ -1,14 +1,15 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EventReceiverSynchronization extends js.Object
+sealed trait EventReceiverSynchronization extends StObject
 @JSGlobal("SP.EventReceiverSynchronization")
 @js.native
-object EventReceiverSynchronization extends js.Object {
+object EventReceiverSynchronization extends StObject {
   
   @js.native
   sealed trait asynchronous extends EventReceiverSynchronization

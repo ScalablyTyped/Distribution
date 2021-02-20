@@ -1,15 +1,15 @@
 package typings.nodegit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/ref-spec", JSImport.Namespace)
-@js.native
-object refSpecMod extends js.Object {
+object refSpecMod {
   
+  @JSImport("nodegit/ref-spec", "Refspec")
   @js.native
-  class Refspec () extends js.Object {
+  class Refspec () extends StObject {
     
     def direction(): Double = js.native
     

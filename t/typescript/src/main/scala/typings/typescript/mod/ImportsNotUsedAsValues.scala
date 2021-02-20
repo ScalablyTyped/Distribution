@@ -1,31 +1,28 @@
 package typings.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ImportsNotUsedAsValues extends js.Object
+sealed trait ImportsNotUsedAsValues extends StObject
 @JSImport("typescript", "ImportsNotUsedAsValues")
 @js.native
-object ImportsNotUsedAsValues extends js.Object {
+object ImportsNotUsedAsValues extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ImportsNotUsedAsValues with Double] = js.native
   
   @js.native
   sealed trait Error extends ImportsNotUsedAsValues
-  /* 2 */ @js.native
-  object Error extends TopLevel[Error with Double]
+  /* 2 */ val Error: typings.typescript.mod.ImportsNotUsedAsValues.Error with Double = js.native
   
   @js.native
   sealed trait Preserve extends ImportsNotUsedAsValues
-  /* 1 */ @js.native
-  object Preserve extends TopLevel[Preserve with Double]
+  /* 1 */ val Preserve: typings.typescript.mod.ImportsNotUsedAsValues.Preserve with Double = js.native
   
   @js.native
   sealed trait Remove extends ImportsNotUsedAsValues
-  /* 0 */ @js.native
-  object Remove extends TopLevel[Remove with Double]
+  /* 0 */ val Remove: typings.typescript.mod.ImportsNotUsedAsValues.Remove with Double = js.native
 }

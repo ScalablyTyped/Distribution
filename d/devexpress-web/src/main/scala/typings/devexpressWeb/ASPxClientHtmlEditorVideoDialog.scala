@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,33 +67,21 @@ object ASPxClientHtmlEditorVideoDialog {
   }
   
   @scala.inline
-  implicit class ASPxClientHtmlEditorVideoDialogOps[Self <: ASPxClientHtmlEditorVideoDialog] (val x: Self) extends AnyVal {
+  implicit class ASPxClientHtmlEditorVideoDialogMutableBuilder[Self <: ASPxClientHtmlEditorVideoDialog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAutoPlayCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetAutoPlayCheckBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLoopCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetLoopCheckBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPosterTextBox(value: () => ASPxClientTextBox): Self = StObject.set(x, "GetPosterTextBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAutoPlayCheckBox(value: () => ASPxClientCheckBox): Self = this.set("GetAutoPlayCheckBox", js.Any.fromFunction0(value))
+    def setGetPreloadModeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetPreloadModeComboBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLoopCheckBox(value: () => ASPxClientCheckBox): Self = this.set("GetLoopCheckBox", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPosterTextBox(value: () => ASPxClientTextBox): Self = this.set("GetPosterTextBox", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPreloadModeComboBox(value: () => ASPxClientComboBox): Self = this.set("GetPreloadModeComboBox", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetShowPlayerControlsCheckBox(value: () => ASPxClientCheckBox): Self = this.set("GetShowPlayerControlsCheckBox", js.Any.fromFunction0(value))
+    def setGetShowPlayerControlsCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetShowPlayerControlsCheckBox", js.Any.fromFunction0(value))
   }
 }

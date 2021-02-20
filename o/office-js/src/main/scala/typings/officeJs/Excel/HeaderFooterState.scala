@@ -1,17 +1,18 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HeaderFooterState extends js.Object
+sealed trait HeaderFooterState extends StObject
 /**
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.HeaderFooterState")
 @js.native
-object HeaderFooterState extends js.Object {
+object HeaderFooterState extends StObject {
   
   /**
     * Only one general header/footer is used for all pages printed.

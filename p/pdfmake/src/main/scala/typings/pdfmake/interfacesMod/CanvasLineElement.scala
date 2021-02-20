@@ -1,12 +1,13 @@
 package typings.pdfmake.interfacesMod
 
 import typings.pdfmake.anon.Length
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanvasLineElement extends js.Object {
+trait CanvasLineElement extends StObject {
   
   var dash: js.UndefOr[Length] = js.native
   
@@ -23,36 +24,24 @@ object CanvasLineElement {
   }
   
   @scala.inline
-  implicit class CanvasLineElementOps[Self <: CanvasLineElement] (val x: Self) extends AnyVal {
+  implicit class CanvasLineElementMutableBuilder[Self <: CanvasLineElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDash(value: Length): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDash(value: Length): Self = this.set("dash", value.asInstanceOf[js.Any])
+    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
     @scala.inline
-    def deleteDash: Self = this.set("dash", js.undefined)
+    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineColor(value: String): Self = this.set("lineColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineColor: Self = this.set("lineColor", js.undefined)
-    
-    @scala.inline
-    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
   }
 }

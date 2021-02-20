@@ -4,6 +4,7 @@ import typings.std.stdStrings.abort
 import typings.std.stdStrings.close
 import typings.std.stdStrings.error
 import typings.std.stdStrings.versionchange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

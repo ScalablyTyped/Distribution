@@ -1,15 +1,12 @@
 package typings.ember.mod.Ember
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.TopLevel
 import typings.emberError.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A subclass of the JavaScript Error object for use in Ember.
-  */
+/* was `typeof EmberError` */
 @JSImport("ember", "Ember.Error")
 @js.native
-object Error extends TopLevel[Instantiable0[default]]
+class Error () extends default

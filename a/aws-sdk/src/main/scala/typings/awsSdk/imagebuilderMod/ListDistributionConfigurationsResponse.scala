@@ -1,11 +1,12 @@
 package typings.awsSdk.imagebuilderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDistributionConfigurationsResponse extends js.Object {
+trait ListDistributionConfigurationsResponse extends StObject {
   
   /**
     * The list of distributions. 
@@ -31,39 +32,27 @@ object ListDistributionConfigurationsResponse {
   }
   
   @scala.inline
-  implicit class ListDistributionConfigurationsResponseOps[Self <: ListDistributionConfigurationsResponse] (val x: Self) extends AnyVal {
+  implicit class ListDistributionConfigurationsResponseMutableBuilder[Self <: ListDistributionConfigurationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistributionConfigurationSummaryList(value: DistributionConfigurationSummaryList): Self = StObject.set(x, "distributionConfigurationSummaryList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistributionConfigurationSummaryListUndefined: Self = StObject.set(x, "distributionConfigurationSummaryList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistributionConfigurationSummaryListVarargs(value: DistributionConfigurationSummary*): Self = StObject.set(x, "distributionConfigurationSummaryList", js.Array(value :_*))
     
     @scala.inline
-    def setDistributionConfigurationSummaryListVarargs(value: DistributionConfigurationSummary*): Self = this.set("distributionConfigurationSummaryList", js.Array(value :_*))
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistributionConfigurationSummaryList(value: DistributionConfigurationSummaryList): Self = this.set("distributionConfigurationSummaryList", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteDistributionConfigurationSummaryList: Self = this.set("distributionConfigurationSummaryList", js.undefined)
+    def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setRequestId(value: NonEmptyString): Self = this.set("requestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestId: Self = this.set("requestId", js.undefined)
+    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

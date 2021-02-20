@@ -1,12 +1,13 @@
 package typings.activexInfopath.InfoPath
 
 import typings.activexMsxml2.MSXML2.IXMLDOMNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DAVAdapterObject extends js.Object {
+trait DAVAdapterObject extends StObject {
   
   var FileName: String = js.native
   
@@ -47,45 +48,33 @@ object DAVAdapterObject {
   }
   
   @scala.inline
-  implicit class DAVAdapterObjectOps[Self <: DAVAdapterObject] (val x: Self) extends AnyVal {
+  implicit class DAVAdapterObjectMutableBuilder[Self <: DAVAdapterObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFolderURL(value: String): Self = StObject.set(x, "FolderURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfoPathDotDAVAdapterObject_typekey(value: DAVAdapterObject): Self = StObject.set(x, "InfoPath.DAVAdapterObject_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("FileName", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolderURL(value: String): Self = this.set("FolderURL", value.asInstanceOf[js.Any])
+    def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInfoPathDotDAVAdapterObject_typekey(value: DAVAdapterObject): Self = this.set("InfoPath.DAVAdapterObject_typekey", value.asInstanceOf[js.Any])
+    def setQueryAllowed(value: Boolean): Self = StObject.set(x, "QueryAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSubmit(value: () => Unit): Self = StObject.set(x, "Submit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setQuery(value: () => Unit): Self = this.set("Query", js.Any.fromFunction0(value))
+    def setSubmitAllowed(value: Boolean): Self = StObject.set(x, "SubmitAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryAllowed(value: Boolean): Self = this.set("QueryAllowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubmit(value: () => Unit): Self = this.set("Submit", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSubmitAllowed(value: Boolean): Self = this.set("SubmitAllowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubmitData(value: IXMLDOMNode => Unit): Self = this.set("SubmitData", js.Any.fromFunction1(value))
+    def setSubmitData(value: IXMLDOMNode => Unit): Self = StObject.set(x, "SubmitData", js.Any.fromFunction1(value))
   }
 }

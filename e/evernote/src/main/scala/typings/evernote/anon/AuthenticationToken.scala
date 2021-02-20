@@ -4,12 +4,13 @@ import typings.evernote.mod.Types.Timestamp
 import typings.evernote.mod.Types.User
 import typings.evernote.mod.UserStore.PublicUserInfo
 import typings.evernote.mod.UserStore.UserUrls
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthenticationToken extends js.Object {
+trait AuthenticationToken extends StObject {
   
   var authenticationToken: js.UndefOr[String] = js.native
   
@@ -40,78 +41,66 @@ object AuthenticationToken {
   }
   
   @scala.inline
-  implicit class AuthenticationTokenOps[Self <: AuthenticationToken] (val x: Self) extends AnyVal {
+  implicit class AuthenticationTokenMutableBuilder[Self <: AuthenticationToken] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticationToken(value: String): Self = StObject.set(x, "authenticationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationTokenUndefined: Self = StObject.set(x, "authenticationToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentTime(value: Timestamp): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationToken(value: String): Self = this.set("authenticationToken", value.asInstanceOf[js.Any])
+    def setCurrentTimeUndefined: Self = StObject.set(x, "currentTime", js.undefined)
     
     @scala.inline
-    def deleteAuthenticationToken: Self = this.set("authenticationToken", js.undefined)
+    def setExpiration(value: Timestamp): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTime(value: Timestamp): Self = this.set("currentTime", value.asInstanceOf[js.Any])
+    def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
     
     @scala.inline
-    def deleteCurrentTime: Self = this.set("currentTime", js.undefined)
+    def setNoteStoreUrl(value: String): Self = StObject.set(x, "noteStoreUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiration(value: Timestamp): Self = this.set("expiration", value.asInstanceOf[js.Any])
+    def setNoteStoreUrlUndefined: Self = StObject.set(x, "noteStoreUrl", js.undefined)
     
     @scala.inline
-    def deleteExpiration: Self = this.set("expiration", js.undefined)
+    def setPublicUserInfo(value: PublicUserInfo): Self = StObject.set(x, "publicUserInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoteStoreUrl(value: String): Self = this.set("noteStoreUrl", value.asInstanceOf[js.Any])
+    def setPublicUserInfoUndefined: Self = StObject.set(x, "publicUserInfo", js.undefined)
     
     @scala.inline
-    def deleteNoteStoreUrl: Self = this.set("noteStoreUrl", js.undefined)
+    def setSecondFactorDeliveryHint(value: String): Self = StObject.set(x, "secondFactorDeliveryHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicUserInfo(value: PublicUserInfo): Self = this.set("publicUserInfo", value.asInstanceOf[js.Any])
+    def setSecondFactorDeliveryHintUndefined: Self = StObject.set(x, "secondFactorDeliveryHint", js.undefined)
     
     @scala.inline
-    def deletePublicUserInfo: Self = this.set("publicUserInfo", js.undefined)
+    def setSecondFactorRequired(value: Boolean): Self = StObject.set(x, "secondFactorRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondFactorDeliveryHint(value: String): Self = this.set("secondFactorDeliveryHint", value.asInstanceOf[js.Any])
+    def setSecondFactorRequiredUndefined: Self = StObject.set(x, "secondFactorRequired", js.undefined)
     
     @scala.inline
-    def deleteSecondFactorDeliveryHint: Self = this.set("secondFactorDeliveryHint", js.undefined)
+    def setUrls(value: UserUrls): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondFactorRequired(value: Boolean): Self = this.set("secondFactorRequired", value.asInstanceOf[js.Any])
+    def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
     @scala.inline
-    def deleteSecondFactorRequired: Self = this.set("secondFactorRequired", js.undefined)
+    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrls(value: UserUrls): Self = this.set("urls", value.asInstanceOf[js.Any])
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
     @scala.inline
-    def deleteUrls: Self = this.set("urls", js.undefined)
+    def setWebApiUrlPrefix(value: String): Self = StObject.set(x, "webApiUrlPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser(value: User): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
-    
-    @scala.inline
-    def setWebApiUrlPrefix(value: String): Self = this.set("webApiUrlPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebApiUrlPrefix: Self = this.set("webApiUrlPrefix", js.undefined)
+    def setWebApiUrlPrefixUndefined: Self = StObject.set(x, "webApiUrlPrefix", js.undefined)
   }
 }

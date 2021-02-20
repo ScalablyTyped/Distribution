@@ -1,5 +1,6 @@
 package typings.box2d.global.Box2D.Dynamics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,22 +10,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class b2Body ()
   extends typings.box2d.Box2D.Dynamics.b2Body
 /* static members */
-@JSGlobal("Box2D.Dynamics.b2Body")
-@js.native
-object b2Body extends js.Object {
+object b2Body {
+  
+  @JSGlobal("Box2D.Dynamics.b2Body")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Dynamic Body
     **/
-  var b2_dynamicBody: Double = js.native
+  @JSGlobal("Box2D.Dynamics.b2Body.b2_dynamicBody")
+  @js.native
+  def b2_dynamicBody: Double = js.native
+  @scala.inline
+  def b2_dynamicBody_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("b2_dynamicBody")(x.asInstanceOf[js.Any])
   
   /**
     * Kinematic Body
     **/
-  var b2_kinematicBody: Double = js.native
+  @JSGlobal("Box2D.Dynamics.b2Body.b2_kinematicBody")
+  @js.native
+  def b2_kinematicBody: Double = js.native
+  @scala.inline
+  def b2_kinematicBody_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("b2_kinematicBody")(x.asInstanceOf[js.Any])
   
   /**
     * Static Body
     **/
-  var b2_staticBody: Double = js.native
+  @JSGlobal("Box2D.Dynamics.b2Body.b2_staticBody")
+  @js.native
+  def b2_staticBody: Double = js.native
+  @scala.inline
+  def b2_staticBody_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("b2_staticBody")(x.asInstanceOf[js.Any])
 }

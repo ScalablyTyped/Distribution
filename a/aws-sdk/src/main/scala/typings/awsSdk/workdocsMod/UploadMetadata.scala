@@ -1,11 +1,12 @@
 package typings.awsSdk.workdocsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadMetadata extends js.Object {
+trait UploadMetadata extends StObject {
   
   /**
     * The signed headers.
@@ -26,30 +27,18 @@ object UploadMetadata {
   }
   
   @scala.inline
-  implicit class UploadMetadataOps[Self <: UploadMetadata] (val x: Self) extends AnyVal {
+  implicit class UploadMetadataMutableBuilder[Self <: UploadMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSignedHeaders(value: SignedHeaderMap): Self = StObject.set(x, "SignedHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSignedHeadersUndefined: Self = StObject.set(x, "SignedHeaders", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUploadUrl(value: UrlType): Self = StObject.set(x, "UploadUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignedHeaders(value: SignedHeaderMap): Self = this.set("SignedHeaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignedHeaders: Self = this.set("SignedHeaders", js.undefined)
-    
-    @scala.inline
-    def setUploadUrl(value: UrlType): Self = this.set("UploadUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadUrl: Self = this.set("UploadUrl", js.undefined)
+    def setUploadUrlUndefined: Self = StObject.set(x, "UploadUrl", js.undefined)
   }
 }

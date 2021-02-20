@@ -1,12 +1,13 @@
 package typings.ionicCore.componentsMod.LocalJSX
 
 import typings.std.CustomEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonItemSliding extends js.Object {
+trait IonItemSliding extends StObject {
   
   /**
     * If `true`, the user cannot interact with the sliding item.
@@ -27,30 +28,18 @@ object IonItemSliding {
   }
   
   @scala.inline
-  implicit class IonItemSlidingOps[Self <: IonItemSliding] (val x: Self) extends AnyVal {
+  implicit class IonItemSlidingMutableBuilder[Self <: IonItemSliding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnIonDrag(value: /* event */ CustomEvent[_] => Unit): Self = StObject.set(x, "onIonDrag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
-    
-    @scala.inline
-    def setOnIonDrag(value: /* event */ CustomEvent[_] => Unit): Self = this.set("onIonDrag", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnIonDrag: Self = this.set("onIonDrag", js.undefined)
+    def setOnIonDragUndefined: Self = StObject.set(x, "onIonDrag", js.undefined)
   }
 }

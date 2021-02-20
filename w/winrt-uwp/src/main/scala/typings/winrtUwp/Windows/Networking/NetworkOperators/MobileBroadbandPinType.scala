@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MobileBroadbandPinType extends js.Object
+sealed trait MobileBroadbandPinType extends StObject
 /** Describes the possible types for a mobile broadband PIN. */
 @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandPinType")
 @js.native
-object MobileBroadbandPinType extends js.Object {
+object MobileBroadbandPinType extends StObject {
   
   /** This is a PIN that allows the device to be personalized to a specific company. For more information about this PIN type, see section 22.022 of the 3GPP specification. */
   @js.native

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientHomegraph.gapi.client.homegraph
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceInfo extends js.Object {
+trait DeviceInfo extends StObject {
   
   /** Device hardware version. */
   var hwVersion: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object DeviceInfo {
   }
   
   @scala.inline
-  implicit class DeviceInfoOps[Self <: DeviceInfo] (val x: Self) extends AnyVal {
+  implicit class DeviceInfoMutableBuilder[Self <: DeviceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHwVersion(value: String): Self = StObject.set(x, "hwVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHwVersionUndefined: Self = StObject.set(x, "hwVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHwVersion(value: String): Self = this.set("hwVersion", value.asInstanceOf[js.Any])
+    def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
     
     @scala.inline
-    def deleteHwVersion: Self = this.set("hwVersion", js.undefined)
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteManufacturer: Self = this.set("manufacturer", js.undefined)
+    def setSwVersion(value: String): Self = StObject.set(x, "swVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
-    
-    @scala.inline
-    def setSwVersion(value: String): Self = this.set("swVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSwVersion: Self = this.set("swVersion", js.undefined)
+    def setSwVersionUndefined: Self = StObject.set(x, "swVersion", js.undefined)
   }
 }

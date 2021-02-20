@@ -1,11 +1,12 @@
 package typings.cesium.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Always extends js.Object {
+trait Always extends StObject {
   
   def always(e: js.Any, t: js.Any): js.Any = js.native
   
@@ -34,33 +35,21 @@ object Always {
   }
   
   @scala.inline
-  implicit class AlwaysOps[Self <: Always] (val x: Self) extends AnyVal {
+  implicit class AlwaysMutableBuilder[Self <: Always] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlways(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "always", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOtherwise(value: js.Any => js.Any): Self = StObject.set(x, "otherwise", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSpread(value: js.Any => js.Any): Self = StObject.set(x, "spread", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAlways(value: (js.Any, js.Any) => js.Any): Self = this.set("always", js.Any.fromFunction2(value))
+    def setThen(value: js.Any => js.Any): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOtherwise(value: js.Any => js.Any): Self = this.set("otherwise", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSpread(value: js.Any => js.Any): Self = this.set("spread", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setThen(value: js.Any => js.Any): Self = this.set("then", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setYield(value: js.Any => js.Any): Self = this.set("yield", js.Any.fromFunction1(value))
+    def setYield(value: js.Any => js.Any): Self = StObject.set(x, "yield", js.Any.fromFunction1(value))
   }
 }

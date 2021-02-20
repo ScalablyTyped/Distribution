@@ -1,6 +1,7 @@
 package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents information regarding an operation.
   */
 @js.native
-trait SchemaOperation extends js.Object {
+trait SchemaOperation extends StObject {
   
   /**
     * Identity of the consumer who is using the service. This field should be
@@ -127,105 +128,93 @@ object SchemaOperation {
   }
   
   @scala.inline
-  implicit class SchemaOperationOps[Self <: SchemaOperation] (val x: Self) extends AnyVal {
+  implicit class SchemaOperationMutableBuilder[Self <: SchemaOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumerId(value: String): Self = StObject.set(x, "consumerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumerIdUndefined: Self = StObject.set(x, "consumerId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumerId(value: String): Self = this.set("consumerId", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteConsumerId: Self = this.set("consumerId", js.undefined)
+    def setImportance(value: String): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setImportanceUndefined: Self = StObject.set(x, "importance", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportance(value: String): Self = this.set("importance", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteImportance: Self = this.set("importance", js.undefined)
+    def setLogEntries(value: js.Array[SchemaLogEntry]): Self = StObject.set(x, "logEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setLogEntriesUndefined: Self = StObject.set(x, "logEntries", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLogEntriesVarargs(value: SchemaLogEntry*): Self = StObject.set(x, "logEntries", js.Array(value :_*))
     
     @scala.inline
-    def setLogEntriesVarargs(value: SchemaLogEntry*): Self = this.set("logEntries", js.Array(value :_*))
+    def setMetricValueSets(value: js.Array[SchemaMetricValueSet]): Self = StObject.set(x, "metricValueSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogEntries(value: js.Array[SchemaLogEntry]): Self = this.set("logEntries", value.asInstanceOf[js.Any])
+    def setMetricValueSetsUndefined: Self = StObject.set(x, "metricValueSets", js.undefined)
     
     @scala.inline
-    def deleteLogEntries: Self = this.set("logEntries", js.undefined)
+    def setMetricValueSetsVarargs(value: SchemaMetricValueSet*): Self = StObject.set(x, "metricValueSets", js.Array(value :_*))
     
     @scala.inline
-    def setMetricValueSetsVarargs(value: SchemaMetricValueSet*): Self = this.set("metricValueSets", js.Array(value :_*))
+    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricValueSets(value: js.Array[SchemaMetricValueSet]): Self = this.set("metricValueSets", value.asInstanceOf[js.Any])
+    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
     @scala.inline
-    def deleteMetricValueSets: Self = this.set("metricValueSets", js.undefined)
+    def setOperationName(value: String): Self = StObject.set(x, "operationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    def setOperationNameUndefined: Self = StObject.set(x, "operationName", js.undefined)
     
     @scala.inline
-    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    def setQuotaProperties(value: SchemaQuotaProperties): Self = StObject.set(x, "quotaProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationName(value: String): Self = this.set("operationName", value.asInstanceOf[js.Any])
+    def setQuotaPropertiesUndefined: Self = StObject.set(x, "quotaProperties", js.undefined)
     
     @scala.inline
-    def deleteOperationName: Self = this.set("operationName", js.undefined)
+    def setResourceContainer(value: String): Self = StObject.set(x, "resourceContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuotaProperties(value: SchemaQuotaProperties): Self = this.set("quotaProperties", value.asInstanceOf[js.Any])
+    def setResourceContainerUndefined: Self = StObject.set(x, "resourceContainer", js.undefined)
     
     @scala.inline
-    def deleteQuotaProperties: Self = this.set("quotaProperties", js.undefined)
+    def setResources(value: js.Array[SchemaResourceInfo]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceContainer(value: String): Self = this.set("resourceContainer", value.asInstanceOf[js.Any])
+    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
     @scala.inline
-    def deleteResourceContainer: Self = this.set("resourceContainer", js.undefined)
+    def setResourcesVarargs(value: SchemaResourceInfo*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
     @scala.inline
-    def setResourcesVarargs(value: SchemaResourceInfo*): Self = this.set("resources", js.Array(value :_*))
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResources(value: js.Array[SchemaResourceInfo]): Self = this.set("resources", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteResources: Self = this.set("resources", js.undefined)
+    def setUserLabels(value: StringDictionary[String]): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
-    
-    @scala.inline
-    def setUserLabels(value: StringDictionary[String]): Self = this.set("userLabels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserLabels: Self = this.set("userLabels", js.undefined)
+    def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)
   }
 }

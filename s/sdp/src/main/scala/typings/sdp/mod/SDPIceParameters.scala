@@ -1,11 +1,12 @@
 package typings.sdp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SDPIceParameters extends js.Object {
+trait SDPIceParameters extends StObject {
   
   var iceLite: js.UndefOr[Boolean] = js.native
   
@@ -22,30 +23,18 @@ object SDPIceParameters {
   }
   
   @scala.inline
-  implicit class SDPIceParametersOps[Self <: SDPIceParameters] (val x: Self) extends AnyVal {
+  implicit class SDPIceParametersMutableBuilder[Self <: SDPIceParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIceLite(value: Boolean): Self = StObject.set(x, "iceLite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIceLiteUndefined: Self = StObject.set(x, "iceLite", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsernameFragment(value: String): Self = this.set("usernameFragment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIceLite(value: Boolean): Self = this.set("iceLite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIceLite: Self = this.set("iceLite", js.undefined)
+    def setUsernameFragment(value: String): Self = StObject.set(x, "usernameFragment", value.asInstanceOf[js.Any])
   }
 }

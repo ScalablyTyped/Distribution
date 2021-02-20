@@ -1,12 +1,13 @@
 package typings.officeUiFabricReact.indexBundleMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "TooltipOverflowMode")
 @js.native
-object TooltipOverflowMode extends js.Object {
+object TooltipOverflowMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.tooltipHostTypesMod.TooltipOverflowMode with Double] = js.native

@@ -1,5 +1,6 @@
 package typings.azure.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +23,24 @@ object PageRangeOptions {
   }
   
   @scala.inline
-  implicit class PageRangeOptionsOps[Self <: PageRangeOptions] (val x: Self) extends AnyVal {
+  implicit class PageRangeOptionsMutableBuilder[Self <: PageRangeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRangeEnd(value: Double): Self = StObject.set(x, "rangeEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRangeEndUndefined: Self = StObject.set(x, "rangeEnd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRangeStart(value: Double): Self = StObject.set(x, "rangeStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeEnd(value: Double): Self = this.set("rangeEnd", value.asInstanceOf[js.Any])
+    def setRangeStartUndefined: Self = StObject.set(x, "rangeStart", js.undefined)
     
     @scala.inline
-    def deleteRangeEnd: Self = this.set("rangeEnd", js.undefined)
+    def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeStart(value: Double): Self = this.set("rangeStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRangeStart: Self = this.set("rangeStart", js.undefined)
-    
-    @scala.inline
-    def setSnapshotId(value: String): Self = this.set("snapshotId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotId: Self = this.set("snapshotId", js.undefined)
+    def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,63 +61,51 @@ object ImagingManifest {
   }
   
   @scala.inline
-  implicit class ImagingManifestOps[Self <: ImagingManifest] (val x: Self) extends AnyVal {
+  implicit class ImagingManifestMutableBuilder[Self <: ImagingManifest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthor(value: Reference): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthoringTime(value: dateTime): Self = StObject.set(x, "authoringTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatient(value: Reference): Self = this.set("patient", value.asInstanceOf[js.Any])
+    def setAuthoringTimeUndefined: Self = StObject.set(x, "authoringTime", js.undefined)
     
     @scala.inline
-    def setStudyVarargs(value: ImagingManifestStudy*): Self = this.set("study", js.Array(value :_*))
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStudy(value: js.Array[ImagingManifestStudy]): Self = this.set("study", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set_authoringTime(value: Element): Self = this.set("_authoringTime", value.asInstanceOf[js.Any])
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_authoringTime: Self = this.set("_authoringTime", js.undefined)
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_description: Self = this.set("_description", js.undefined)
+    def setStudy(value: js.Array[ImagingManifestStudy]): Self = StObject.set(x, "study", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: Reference): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setStudyVarargs(value: ImagingManifestStudy*): Self = StObject.set(x, "study", js.Array(value :_*))
     
     @scala.inline
-    def deleteAuthor: Self = this.set("author", js.undefined)
+    def set_authoringTime(value: Element): Self = StObject.set(x, "_authoringTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthoringTime(value: dateTime): Self = this.set("authoringTime", value.asInstanceOf[js.Any])
+    def set_authoringTimeUndefined: Self = StObject.set(x, "_authoringTime", js.undefined)
     
     @scala.inline
-    def deleteAuthoringTime: Self = this.set("authoringTime", js.undefined)
+    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
-    
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
   }
 }

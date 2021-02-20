@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Comment extends js.Object {
+trait Comment extends StObject {
   
   /** A change on an assignment. */
   var assignment: js.UndefOr[Assignment] = js.native
@@ -28,45 +29,33 @@ object Comment {
   }
   
   @scala.inline
-  implicit class CommentOps[Self <: Comment] (val x: Self) extends AnyVal {
+  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignment(value: Assignment): Self = StObject.set(x, "assignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignmentUndefined: Self = StObject.set(x, "assignment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMentionedUsers(value: js.Array[User]): Self = StObject.set(x, "mentionedUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignment(value: Assignment): Self = this.set("assignment", value.asInstanceOf[js.Any])
+    def setMentionedUsersUndefined: Self = StObject.set(x, "mentionedUsers", js.undefined)
     
     @scala.inline
-    def deleteAssignment: Self = this.set("assignment", js.undefined)
+    def setMentionedUsersVarargs(value: User*): Self = StObject.set(x, "mentionedUsers", js.Array(value :_*))
     
     @scala.inline
-    def setMentionedUsersVarargs(value: User*): Self = this.set("mentionedUsers", js.Array(value :_*))
+    def setPost(value: Post): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMentionedUsers(value: js.Array[User]): Self = this.set("mentionedUsers", value.asInstanceOf[js.Any])
+    def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
     
     @scala.inline
-    def deleteMentionedUsers: Self = this.set("mentionedUsers", js.undefined)
+    def setSuggestion(value: Suggestion): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPost(value: Post): Self = this.set("post", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePost: Self = this.set("post", js.undefined)
-    
-    @scala.inline
-    def setSuggestion(value: Suggestion): Self = this.set("suggestion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestion: Self = this.set("suggestion", js.undefined)
+    def setSuggestionUndefined: Self = StObject.set(x, "suggestion", js.undefined)
   }
 }

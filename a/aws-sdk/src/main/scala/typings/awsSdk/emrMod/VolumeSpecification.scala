@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VolumeSpecification extends js.Object {
+trait VolumeSpecification extends StObject {
   
   /**
     * The number of I/O operations per second (IOPS) that the volume supports.
@@ -31,30 +32,18 @@ object VolumeSpecification {
   }
   
   @scala.inline
-  implicit class VolumeSpecificationOps[Self <: VolumeSpecification] (val x: Self) extends AnyVal {
+  implicit class VolumeSpecificationMutableBuilder[Self <: VolumeSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIops(value: Integer): Self = StObject.set(x, "Iops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIopsUndefined: Self = StObject.set(x, "Iops", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSizeInGB(value: Integer): Self = StObject.set(x, "SizeInGB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeInGB(value: Integer): Self = this.set("SizeInGB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolumeType(value: String): Self = this.set("VolumeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIops(value: Integer): Self = this.set("Iops", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIops: Self = this.set("Iops", js.undefined)
+    def setVolumeType(value: String): Self = StObject.set(x, "VolumeType", value.asInstanceOf[js.Any])
   }
 }

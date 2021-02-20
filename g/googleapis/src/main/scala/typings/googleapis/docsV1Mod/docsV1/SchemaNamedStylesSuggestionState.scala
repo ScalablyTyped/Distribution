@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The suggestion state of a NamedStyles message.
   */
 @js.native
-trait SchemaNamedStylesSuggestionState extends js.Object {
+trait SchemaNamedStylesSuggestionState extends StObject {
   
   /**
     * A mask that indicates which of the fields on the corresponding NamedStyle
@@ -27,27 +28,15 @@ object SchemaNamedStylesSuggestionState {
   }
   
   @scala.inline
-  implicit class SchemaNamedStylesSuggestionStateOps[Self <: SchemaNamedStylesSuggestionState] (val x: Self) extends AnyVal {
+  implicit class SchemaNamedStylesSuggestionStateMutableBuilder[Self <: SchemaNamedStylesSuggestionState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStylesSuggestionStates(value: js.Array[SchemaNamedStyleSuggestionState]): Self = StObject.set(x, "stylesSuggestionStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStylesSuggestionStatesUndefined: Self = StObject.set(x, "stylesSuggestionStates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStylesSuggestionStatesVarargs(value: SchemaNamedStyleSuggestionState*): Self = this.set("stylesSuggestionStates", js.Array(value :_*))
-    
-    @scala.inline
-    def setStylesSuggestionStates(value: js.Array[SchemaNamedStyleSuggestionState]): Self = this.set("stylesSuggestionStates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStylesSuggestionStates: Self = this.set("stylesSuggestionStates", js.undefined)
+    def setStylesSuggestionStatesVarargs(value: SchemaNamedStyleSuggestionState*): Self = StObject.set(x, "stylesSuggestionStates", js.Array(value :_*))
   }
 }

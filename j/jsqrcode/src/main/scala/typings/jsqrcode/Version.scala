@@ -1,11 +1,12 @@
 package typings.jsqrcode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Version extends js.Object {
+trait Version extends StObject {
   
   val AlignmentPatternCenters: js.Array[Double] = js.native
   
@@ -44,45 +45,33 @@ object Version {
   }
   
   @scala.inline
-  implicit class VersionOps[Self <: Version] (val x: Self) extends AnyVal {
+  implicit class VersionMutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignmentPatternCenters(value: js.Array[Double]): Self = StObject.set(x, "AlignmentPatternCenters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignmentPatternCentersVarargs(value: Double*): Self = StObject.set(x, "AlignmentPatternCenters", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuildFunctionPattern(value: () => BitMatrix): Self = StObject.set(x, "buildFunctionPattern", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAlignmentPatternCentersVarargs(value: Double*): Self = this.set("AlignmentPatternCenters", js.Array(value :_*))
+    def setDimensionForVersion(value: Double): Self = StObject.set(x, "DimensionForVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignmentPatternCenters(value: js.Array[Double]): Self = this.set("AlignmentPatternCenters", value.asInstanceOf[js.Any])
+    def setEcBlocks(value: js.Array[ECBlocks]): Self = StObject.set(x, "ecBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionForVersion(value: Double): Self = this.set("DimensionForVersion", value.asInstanceOf[js.Any])
+    def setEcBlocksVarargs(value: ECBlocks*): Self = StObject.set(x, "ecBlocks", js.Array(value :_*))
     
     @scala.inline
-    def setTotalCodewords(value: Double): Self = this.set("TotalCodewords", value.asInstanceOf[js.Any])
+    def setGetECBlocksForLevel(value: ErrorCorrectionLevel => ECBlocks): Self = StObject.set(x, "getECBlocksForLevel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVersionNumber(value: Double): Self = this.set("VersionNumber", value.asInstanceOf[js.Any])
+    def setTotalCodewords(value: Double): Self = StObject.set(x, "TotalCodewords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildFunctionPattern(value: () => BitMatrix): Self = this.set("buildFunctionPattern", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setEcBlocksVarargs(value: ECBlocks*): Self = this.set("ecBlocks", js.Array(value :_*))
-    
-    @scala.inline
-    def setEcBlocks(value: js.Array[ECBlocks]): Self = this.set("ecBlocks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetECBlocksForLevel(value: ErrorCorrectionLevel => ECBlocks): Self = this.set("getECBlocksForLevel", js.Any.fromFunction1(value))
+    def setVersionNumber(value: Double): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
   }
 }

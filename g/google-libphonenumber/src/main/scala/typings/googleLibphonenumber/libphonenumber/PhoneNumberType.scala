@@ -1,14 +1,15 @@
 package typings.googleLibphonenumber.libphonenumber
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhoneNumberType extends js.Object
+sealed trait PhoneNumberType extends StObject
 @JSGlobal("libphonenumber.PhoneNumberType")
 @js.native
-object PhoneNumberType extends js.Object {
+object PhoneNumberType extends StObject {
   
   @js.native
   sealed trait FIXED_LINE extends PhoneNumberType

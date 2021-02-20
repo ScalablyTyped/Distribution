@@ -1,11 +1,12 @@
 package typings.firefoxWebextBrowser.browser.manifest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThemeIcons extends js.Object {
+trait ThemeIcons extends StObject {
   
   /** The dark icon to use for light themes */
   var dark: ExtensionURL = js.native
@@ -25,27 +26,15 @@ object ThemeIcons {
   }
   
   @scala.inline
-  implicit class ThemeIconsOps[Self <: ThemeIcons] (val x: Self) extends AnyVal {
+  implicit class ThemeIconsMutableBuilder[Self <: ThemeIcons] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDark(value: ExtensionURL): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLight(value: ExtensionURL): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDark(value: ExtensionURL): Self = this.set("dark", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLight(value: ExtensionURL): Self = this.set("light", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

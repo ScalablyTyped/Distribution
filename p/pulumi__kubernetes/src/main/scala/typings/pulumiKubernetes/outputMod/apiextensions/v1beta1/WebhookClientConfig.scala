@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.apiextensions.v1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * WebhookClientConfig contains the information to make a TLS connection with the webhook.
   */
 @js.native
-trait WebhookClientConfig extends js.Object {
+trait WebhookClientConfig extends StObject {
   
   /**
     * caBundle is a PEM encoded CA bundle which will be used to validate the webhook's server certificate. If unspecified, system trust roots on the apiserver are used.
@@ -46,27 +47,15 @@ object WebhookClientConfig {
   }
   
   @scala.inline
-  implicit class WebhookClientConfigOps[Self <: WebhookClientConfig] (val x: Self) extends AnyVal {
+  implicit class WebhookClientConfigMutableBuilder[Self <: WebhookClientConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaBundle(value: String): Self = StObject.set(x, "caBundle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setService(value: ServiceReference): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCaBundle(value: String): Self = this.set("caBundle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setService(value: ServiceReference): Self = this.set("service", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

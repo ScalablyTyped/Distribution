@@ -1,12 +1,13 @@
 package typings.fridaGum.ObjC
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProxySpec[D /* <: ProxyData */, T, S] extends js.Object {
+trait ProxySpec[D /* <: ProxyData */, T, S] extends StObject {
   
   /**
     * Callbacks for getting notified about events.
@@ -44,49 +45,37 @@ object ProxySpec {
   }
   
   @scala.inline
-  implicit class ProxySpecOps[Self <: ProxySpec[_, _, _], D /* <: ProxyData */, T, S] (val x: Self with (ProxySpec[D, T, S])) extends AnyVal {
+  implicit class ProxySpecMutableBuilder[Self <: ProxySpec[_, _, _], D /* <: ProxyData */, T, S] (val x: Self with (ProxySpec[D, T, S])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvents(value: ProxyEventCallbacks[D, T, S]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEvents(value: ProxyEventCallbacks[D, T, S]): Self = this.set("events", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
     def setMethods(
       value: StringDictionary[
           (UserMethodImplementation[D, T, S]) | (MethodSpec[UserMethodImplementation[D, T, S]])
         ]
-    ): Self = this.set("methods", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMethods: Self = this.set("methods", js.undefined)
+    def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setProtocolsVarargs(value: Protocol*): Self = this.set("protocols", js.Array(value :_*))
+    def setProtocols(value: js.Array[Protocol]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocols(value: js.Array[Protocol]): Self = this.set("protocols", value.asInstanceOf[js.Any])
+    def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
     
     @scala.inline
-    def deleteProtocols: Self = this.set("protocols", js.undefined)
+    def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value :_*))
   }
 }

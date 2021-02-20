@@ -9,24 +9,28 @@ import typings.std.ReferenceErrorConstructor
 import typings.std.SyntaxErrorConstructor
 import typings.std.TypeErrorConstructor
 import typings.std.URIErrorConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts-custom-error", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def customErrorFactory[Properties](fn: js.ThisFunction1[/* this */ Properties, /* repeated */ js.Any, Unit]): CustomErrorConstructor[Properties] = js.native
-  def customErrorFactory[Properties](
-    fn: js.ThisFunction1[/* this */ Properties, /* repeated */ js.Any, Unit],
-    parent: GenericErrorConstructor
-  ): CustomErrorConstructor[Properties] = js.native
-  
+  @JSImport("ts-custom-error", "CustomError")
   @js.native
   class CustomError () extends Error {
     def this(message: String) = this()
   }
+  
+  @JSImport("ts-custom-error", "customErrorFactory")
+  @js.native
+  def customErrorFactory[Properties](fn: js.ThisFunction1[/* this */ Properties, /* repeated */ js.Any, Unit]): CustomErrorConstructor[Properties] = js.native
+  @JSImport("ts-custom-error", "customErrorFactory")
+  @js.native
+  def customErrorFactory[Properties](
+    fn: js.ThisFunction1[/* this */ Properties, /* repeated */ js.Any, Unit],
+    parent: GenericErrorConstructor
+  ): CustomErrorConstructor[Properties] = js.native
   
   @js.native
   trait CustomErrorConstructor[Properties /* <: CustomErrorProperties */] extends ErrorConstructor {

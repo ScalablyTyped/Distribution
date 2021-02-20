@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientDatacatalog.anon.Key
 import typings.maximMazurokGapiClientDatacatalog.anon.Oauthtoken
 import typings.maximMazurokGapiClientDatacatalog.anon.PrettyPrint
 import typings.maximMazurokGapiClientDatacatalog.anon.TagTemplateId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TagTemplatesResource extends js.Object {
+trait TagTemplatesResource extends StObject {
   
   def create(request: CallbackFields, body: GoogleCloudDatacatalogV1beta1TagTemplate): Request[GoogleCloudDatacatalogV1beta1TagTemplate] = js.native
   /**

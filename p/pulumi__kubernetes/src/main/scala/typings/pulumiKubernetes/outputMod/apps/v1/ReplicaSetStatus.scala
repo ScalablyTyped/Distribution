@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.apps.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ReplicaSetStatus represents the current status of a ReplicaSet.
   */
 @js.native
-trait ReplicaSetStatus extends js.Object {
+trait ReplicaSetStatus extends StObject {
   
   /**
     * The number of available replicas (ready for at least minReadySeconds) for this replica set.
@@ -56,39 +57,27 @@ object ReplicaSetStatus {
   }
   
   @scala.inline
-  implicit class ReplicaSetStatusOps[Self <: ReplicaSetStatus] (val x: Self) extends AnyVal {
+  implicit class ReplicaSetStatusMutableBuilder[Self <: ReplicaSetStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableReplicas(value: Double): Self = StObject.set(x, "availableReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditions(value: js.Array[ReplicaSetCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditionsVarargs(value: ReplicaSetCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def setAvailableReplicas(value: Double): Self = this.set("availableReplicas", value.asInstanceOf[js.Any])
+    def setFullyLabeledReplicas(value: Double): Self = StObject.set(x, "fullyLabeledReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionsVarargs(value: ReplicaSetCondition*): Self = this.set("conditions", js.Array(value :_*))
+    def setObservedGeneration(value: Double): Self = StObject.set(x, "observedGeneration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: js.Array[ReplicaSetCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setReadyReplicas(value: Double): Self = StObject.set(x, "readyReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullyLabeledReplicas(value: Double): Self = this.set("fullyLabeledReplicas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObservedGeneration(value: Double): Self = this.set("observedGeneration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadyReplicas(value: Double): Self = this.set("readyReplicas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReplicas(value: Double): Self = this.set("replicas", value.asInstanceOf[js.Any])
+    def setReplicas(value: Double): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
   }
 }

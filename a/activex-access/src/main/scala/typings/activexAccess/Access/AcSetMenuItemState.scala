@@ -4,6 +4,7 @@ import typings.activexAccess.activexAccessNumbers.`0`
 import typings.activexAccess.activexAccessNumbers.`1`
 import typings.activexAccess.activexAccessNumbers.`2`
 import typings.activexAccess.activexAccessNumbers.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexAccess.activexAccessNumbers.`2`
   - typings.activexAccess.activexAccessNumbers.`0`
 */
-trait AcSetMenuItemState extends js.Object
+trait AcSetMenuItemState extends StObject
 object AcSetMenuItemState {
   
   @scala.inline

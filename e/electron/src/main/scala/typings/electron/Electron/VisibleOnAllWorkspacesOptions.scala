@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VisibleOnAllWorkspacesOptions extends js.Object {
+trait VisibleOnAllWorkspacesOptions extends StObject {
   
   /**
     * Sets whether the window should be visible above fullscreen windows
@@ -23,24 +24,12 @@ object VisibleOnAllWorkspacesOptions {
   }
   
   @scala.inline
-  implicit class VisibleOnAllWorkspacesOptionsOps[Self <: VisibleOnAllWorkspacesOptions] (val x: Self) extends AnyVal {
+  implicit class VisibleOnAllWorkspacesOptionsMutableBuilder[Self <: VisibleOnAllWorkspacesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVisibleOnFullScreen(value: Boolean): Self = StObject.set(x, "visibleOnFullScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVisibleOnFullScreen(value: Boolean): Self = this.set("visibleOnFullScreen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibleOnFullScreen: Self = this.set("visibleOnFullScreen", js.undefined)
+    def setVisibleOnFullScreenUndefined: Self = StObject.set(x, "visibleOnFullScreen", js.undefined)
   }
 }

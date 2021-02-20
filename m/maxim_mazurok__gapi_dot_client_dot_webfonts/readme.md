@@ -3,6 +3,24 @@
 
 Typings are for version 1.0.20201015
 
+## Library description:
+TypeScript typings for Web Fonts Developer API v1
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @maxim_mazurok/gapi.client.webfonts |
+| Keywords           | - |
+| # releases         | 5 |
+| # dependents       | 1 |
+| # downloads        | 738 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)
+- [Bugs](https://github.com/Maxim-Mazurok/google-api-typings-generator/issues)
+- [Repository](https://github.com/Maxim-Mazurok/google-api-typings-generator)
+- [Npm](https://www.npmjs.com/package/%40maxim_mazurok%2Fgapi.client.webfonts)
+    
 
 
 ## Note

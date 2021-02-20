@@ -2,6 +2,7 @@ package typings.parameter.mod
 
 import typings.parameter.parameterStrings.`object`
 import typings.parameter.parameterStrings.objectQuestionmark
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,27 +27,15 @@ object ParameterRuleObject {
   }
   
   @scala.inline
-  implicit class ParameterRuleObjectOps[Self <: ParameterRuleObject] (val x: Self) extends AnyVal {
+  implicit class ParameterRuleObjectMutableBuilder[Self <: ParameterRuleObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRule(value: ParameterRules): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: `object` | objectQuestionmark): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRule(value: ParameterRules): Self = this.set("rule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRule: Self = this.set("rule", js.undefined)
+    def setType(value: `object` | objectQuestionmark): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

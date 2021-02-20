@@ -1,11 +1,12 @@
 package typings.protobufjs.descriptorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFieldOptions extends js.Object {
+trait IFieldOptions extends StObject {
   
   var jstype: js.UndefOr[IFieldOptionsJSType] = js.native
   
@@ -20,30 +21,18 @@ object IFieldOptions {
   }
   
   @scala.inline
-  implicit class IFieldOptionsOps[Self <: IFieldOptions] (val x: Self) extends AnyVal {
+  implicit class IFieldOptionsMutableBuilder[Self <: IFieldOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJstype(value: IFieldOptionsJSType): Self = StObject.set(x, "jstype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJstypeUndefined: Self = StObject.set(x, "jstype", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPacked(value: Boolean): Self = StObject.set(x, "packed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJstype(value: IFieldOptionsJSType): Self = this.set("jstype", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJstype: Self = this.set("jstype", js.undefined)
-    
-    @scala.inline
-    def setPacked(value: Boolean): Self = this.set("packed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePacked: Self = this.set("packed", js.undefined)
+    def setPackedUndefined: Self = StObject.set(x, "packed", js.undefined)
   }
 }

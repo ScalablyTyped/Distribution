@@ -1,12 +1,13 @@
 package typings.winrtUwp.anon
 
 import typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItemsPnpObject extends js.Object {
+trait ItemsPnpObject extends StObject {
   
   /** Provides the destination for the result. Size the initial array size as a "capacity" in order to specify how many results should be retrieved. */ var items: PnpObject = js.native
   
@@ -21,24 +22,12 @@ object ItemsPnpObject {
   }
   
   @scala.inline
-  implicit class ItemsPnpObjectOps[Self <: ItemsPnpObject] (val x: Self) extends AnyVal {
+  implicit class ItemsPnpObjectMutableBuilder[Self <: ItemsPnpObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: PnpObject): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItems(value: PnpObject): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnValue(value: Double): Self = this.set("returnValue", value.asInstanceOf[js.Any])
+    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

@@ -1,14 +1,14 @@
 package typings.rollupPluginTypescript2
 
 import typings.rollupPluginTypescript2.icacheMod.ICache
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rollup-plugin-typescript2/dist/nocache", JSImport.Namespace)
-@js.native
-object nocacheMod extends js.Object {
+object nocacheMod {
   
+  @JSImport("rollup-plugin-typescript2/dist/nocache", "NoCache")
   @js.native
   class NoCache[DataType] () extends ICache[DataType]
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.loggingV2beta1Mod.loggingV2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * deploy an application.
   */
 @js.native
-trait SchemaSourceReference extends js.Object {
+trait SchemaSourceReference extends StObject {
   
   /**
     * Optional. A URI string identifying the repository. Example:
@@ -32,30 +33,18 @@ object SchemaSourceReference {
   }
   
   @scala.inline
-  implicit class SchemaSourceReferenceOps[Self <: SchemaSourceReference] (val x: Self) extends AnyVal {
+  implicit class SchemaSourceReferenceMutableBuilder[Self <: SchemaSourceReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepository(value: String): Self = this.set("repository", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepository: Self = this.set("repository", js.undefined)
-    
-    @scala.inline
-    def setRevisionId(value: String): Self = this.set("revisionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisionId: Self = this.set("revisionId", js.undefined)
+    def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
   }
 }

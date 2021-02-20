@@ -1,11 +1,12 @@
 package typings.jsGraphAlgorithms.JsGraphs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BellmanFord extends js.Object {
+trait BellmanFord extends StObject {
   
   var cost: js.Any = js.native
   
@@ -41,42 +42,30 @@ object BellmanFord {
   }
   
   @scala.inline
-  implicit class BellmanFordOps[Self <: BellmanFord] (val x: Self) extends AnyVal {
+  implicit class BellmanFordMutableBuilder[Self <: BellmanFord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCost(value: js.Any): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistanceTo(value: Double => Double): Self = StObject.set(x, "distanceTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEdgeTo(value: js.Any): Self = StObject.set(x, "edgeTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCost(value: js.Any): Self = this.set("cost", value.asInstanceOf[js.Any])
+    def setHasPathTo(value: Double => Boolean): Self = StObject.set(x, "hasPathTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDistanceTo(value: Double => Double): Self = this.set("distanceTo", js.Any.fromFunction1(value))
+    def setMarked(value: js.Any): Self = StObject.set(x, "marked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgeTo(value: js.Any): Self = this.set("edgeTo", value.asInstanceOf[js.Any])
+    def setPathTo(value: Double => js.Array[Edge]): Self = StObject.set(x, "pathTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHasPathTo(value: Double => Boolean): Self = this.set("hasPathTo", js.Any.fromFunction1(value))
+    def setRelax(value: Edge => Unit): Self = StObject.set(x, "relax", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMarked(value: js.Any): Self = this.set("marked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPathTo(value: Double => js.Array[Edge]): Self = this.set("pathTo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRelax(value: Edge => Unit): Self = this.set("relax", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setS(value: js.Any): Self = this.set("s", value.asInstanceOf[js.Any])
+    def setS(value: js.Any): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
   }
 }

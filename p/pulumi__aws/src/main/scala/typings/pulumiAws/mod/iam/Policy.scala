@@ -5,6 +5,7 @@ import typings.pulumiAws.iamPolicyMod.PolicyState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,9 +25,7 @@ class Policy protected ()
   def this(name: String, args: PolicyArgs, opts: CustomResourceOptions) = this()
 }
 /* static members */
-@JSImport("@pulumi/aws", "iam.Policy")
-@js.native
-object Policy extends js.Object {
+object Policy {
   
   /**
     * Get an existing Policy resource's state with the given name, ID, and optional extra
@@ -37,14 +36,24 @@ object Policy extends js.Object {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
+  @JSImport("@pulumi/aws", "iam.Policy.get")
+  @js.native
   def get(name: String, id: Input[ID]): typings.pulumiAws.iamPolicyMod.Policy = js.native
+  @JSImport("@pulumi/aws", "iam.Policy.get")
+  @js.native
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.iamPolicyMod.Policy = js.native
+  @JSImport("@pulumi/aws", "iam.Policy.get")
+  @js.native
   def get(name: String, id: Input[ID], state: PolicyState): typings.pulumiAws.iamPolicyMod.Policy = js.native
+  @JSImport("@pulumi/aws", "iam.Policy.get")
+  @js.native
   def get(name: String, id: Input[ID], state: PolicyState, opts: CustomResourceOptions): typings.pulumiAws.iamPolicyMod.Policy = js.native
   
   /**
     * Returns true if the given object is an instance of Policy.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
+  @JSImport("@pulumi/aws", "iam.Policy.isInstance")
+  @js.native
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/policy.Policy */ Boolean = js.native
 }

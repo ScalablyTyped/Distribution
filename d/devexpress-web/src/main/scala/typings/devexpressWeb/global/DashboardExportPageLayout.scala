@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,18 +12,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class DashboardExportPageLayout ()
   extends typings.devexpressWeb.DashboardExportPageLayout
-/* static members */
-@JSGlobal("DashboardExportPageLayout")
-@js.native
-object DashboardExportPageLayout extends js.Object {
+object DashboardExportPageLayout {
   
   /**
     * The page orientation used to export a dashboard (dashboard item) is landscape.
     */
+  /* static member */
+  @JSGlobal("DashboardExportPageLayout.Landscape")
+  @js.native
   val Landscape: String = js.native
   
   /**
     * The page orientation used to export a dashboard (dashboard item) is portrait.
     */
+  /* static member */
+  @JSGlobal("DashboardExportPageLayout.Portrait")
+  @js.native
   val Portrait: String = js.native
 }

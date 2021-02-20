@@ -1,11 +1,12 @@
 package typings.pulumiAws.inputMod.glue
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetScriptDagEdge extends js.Object {
+trait GetScriptDagEdge extends StObject {
   
   /**
     * The ID of the node at which the edge starts.
@@ -31,30 +32,18 @@ object GetScriptDagEdge {
   }
   
   @scala.inline
-  implicit class GetScriptDagEdgeOps[Self <: GetScriptDagEdge] (val x: Self) extends AnyVal {
+  implicit class GetScriptDagEdgeMutableBuilder[Self <: GetScriptDagEdge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetParameter(value: String): Self = StObject.set(x, "targetParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetParameter(value: String): Self = this.set("targetParameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetParameter: Self = this.set("targetParameter", js.undefined)
+    def setTargetParameterUndefined: Self = StObject.set(x, "targetParameter", js.undefined)
   }
 }

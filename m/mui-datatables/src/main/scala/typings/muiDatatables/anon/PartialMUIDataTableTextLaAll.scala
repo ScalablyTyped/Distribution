@@ -1,12 +1,13 @@
 package typings.muiDatatables.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mui-datatables.mui-datatables.MUIDataTableTextLabelsFilter> */
 @js.native
-trait PartialMUIDataTableTextLaAll extends js.Object {
+trait PartialMUIDataTableTextLaAll extends StObject {
   
   var all: js.UndefOr[String] = js.native
   
@@ -23,36 +24,24 @@ object PartialMUIDataTableTextLaAll {
   }
   
   @scala.inline
-  implicit class PartialMUIDataTableTextLaAllOps[Self <: PartialMUIDataTableTextLaAll] (val x: Self) extends AnyVal {
+  implicit class PartialMUIDataTableTextLaAllMutableBuilder[Self <: PartialMUIDataTableTextLaAll] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReset(value: String): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: String): Self = this.set("all", value.asInstanceOf[js.Any])
+    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
     @scala.inline
-    def deleteAll: Self = this.set("all", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReset(value: String): Self = this.set("reset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReset: Self = this.set("reset", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

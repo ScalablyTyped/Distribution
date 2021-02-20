@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,48 +54,36 @@ object IgTreeGridDataSourceSettings {
   }
   
   @scala.inline
-  implicit class IgTreeGridDataSourceSettingsOps[Self <: IgTreeGridDataSourceSettings] (val x: Self) extends AnyVal {
+  implicit class IgTreeGridDataSourceSettingsMutableBuilder[Self <: IgTreeGridDataSourceSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataLevelKey(value: String): Self = StObject.set(x, "dataLevelKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataLevelKeyUndefined: Self = StObject.set(x, "dataLevelKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpandedKey(value: String): Self = StObject.set(x, "expandedKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataLevelKey(value: String): Self = this.set("dataLevelKey", value.asInstanceOf[js.Any])
+    def setExpandedKeyUndefined: Self = StObject.set(x, "expandedKey", js.undefined)
     
     @scala.inline
-    def deleteDataLevelKey: Self = this.set("dataLevelKey", js.undefined)
+    def setInitialFlatDataView(value: Boolean): Self = StObject.set(x, "initialFlatDataView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandedKey(value: String): Self = this.set("expandedKey", value.asInstanceOf[js.Any])
+    def setInitialFlatDataViewUndefined: Self = StObject.set(x, "initialFlatDataView", js.undefined)
     
     @scala.inline
-    def deleteExpandedKey: Self = this.set("expandedKey", js.undefined)
+    def setPropertyDataLevel(value: js.Any): Self = StObject.set(x, "propertyDataLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialFlatDataView(value: Boolean): Self = this.set("initialFlatDataView", value.asInstanceOf[js.Any])
+    def setPropertyDataLevelUndefined: Self = StObject.set(x, "propertyDataLevel", js.undefined)
     
     @scala.inline
-    def deleteInitialFlatDataView: Self = this.set("initialFlatDataView", js.undefined)
+    def setPropertyExpanded(value: js.Any): Self = StObject.set(x, "propertyExpanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyDataLevel(value: js.Any): Self = this.set("propertyDataLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePropertyDataLevel: Self = this.set("propertyDataLevel", js.undefined)
-    
-    @scala.inline
-    def setPropertyExpanded(value: js.Any): Self = this.set("propertyExpanded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePropertyExpanded: Self = this.set("propertyExpanded", js.undefined)
+    def setPropertyExpandedUndefined: Self = StObject.set(x, "propertyExpanded", js.undefined)
   }
 }

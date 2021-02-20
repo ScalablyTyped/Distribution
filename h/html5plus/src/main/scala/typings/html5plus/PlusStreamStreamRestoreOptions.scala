@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
   */
 @js.native
-trait PlusStreamStreamRestoreOptions extends js.Object {
+trait PlusStreamStreamRestoreOptions extends StObject {
   
   /**
     * 流应用运行参数
@@ -56,42 +57,30 @@ object PlusStreamStreamRestoreOptions {
   }
   
   @scala.inline
-  implicit class PlusStreamStreamRestoreOptionsOps[Self <: PlusStreamStreamRestoreOptions] (val x: Self) extends AnyVal {
+  implicit class PlusStreamStreamRestoreOptionsMutableBuilder[Self <: PlusStreamStreamRestoreOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtras(value: js.Any): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtrasUndefined: Self = StObject.set(x, "extras", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSplash(value: String): Self = StObject.set(x, "splash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtras(value: js.Any): Self = this.set("extras", value.asInstanceOf[js.Any])
+    def setSplashUndefined: Self = StObject.set(x, "splash", js.undefined)
     
     @scala.inline
-    def deleteExtras: Self = this.set("extras", js.undefined)
+    def setSplashscreen(value: PlusStreamStreamRestoreSplashscreenOptions): Self = StObject.set(x, "splashscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplash(value: String): Self = this.set("splash", value.asInstanceOf[js.Any])
+    def setSplashscreenUndefined: Self = StObject.set(x, "splashscreen", js.undefined)
     
     @scala.inline
-    def deleteSplash: Self = this.set("splash", js.undefined)
+    def setStyles(value: PlusStreamLaunchWebviewStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplashscreen(value: PlusStreamStreamRestoreSplashscreenOptions): Self = this.set("splashscreen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSplashscreen: Self = this.set("splashscreen", js.undefined)
-    
-    @scala.inline
-    def setStyles(value: PlusStreamLaunchWebviewStyles): Self = this.set("styles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

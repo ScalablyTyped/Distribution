@@ -1,5 +1,6 @@
 package typings.elasticElasticsearch.requestParamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,75 +35,63 @@ object MlGetTrainedModels {
   }
   
   @scala.inline
-  implicit class MlGetTrainedModelsOps[Self <: MlGetTrainedModels] (val x: Self) extends AnyVal {
+  implicit class MlGetTrainedModelsMutableBuilder[Self <: MlGetTrainedModels] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow_no_match(value: Boolean): Self = StObject.set(x, "allow_no_match", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllow_no_matchUndefined: Self = StObject.set(x, "allow_no_match", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecompress_definition(value: Boolean): Self = StObject.set(x, "decompress_definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_no_match(value: Boolean): Self = this.set("allow_no_match", value.asInstanceOf[js.Any])
+    def setDecompress_definitionUndefined: Self = StObject.set(x, "decompress_definition", js.undefined)
     
     @scala.inline
-    def deleteAllow_no_match: Self = this.set("allow_no_match", js.undefined)
+    def setFor_export(value: Boolean): Self = StObject.set(x, "for_export", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecompress_definition(value: Boolean): Self = this.set("decompress_definition", value.asInstanceOf[js.Any])
+    def setFor_exportUndefined: Self = StObject.set(x, "for_export", js.undefined)
     
     @scala.inline
-    def deleteDecompress_definition: Self = this.set("decompress_definition", js.undefined)
+    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFor_export(value: Boolean): Self = this.set("for_export", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def deleteFor_export: Self = this.set("for_export", js.undefined)
+    def setInclude(value: String): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: Double): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setInclude_model_definition(value: Boolean): Self = StObject.set(x, "include_model_definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude(value: String): Self = this.set("include", value.asInstanceOf[js.Any])
+    def setInclude_model_definitionUndefined: Self = StObject.set(x, "include_model_definition", js.undefined)
     
     @scala.inline
-    def deleteInclude: Self = this.set("include", js.undefined)
+    def setModel_id(value: String): Self = StObject.set(x, "model_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude_model_definition(value: Boolean): Self = this.set("include_model_definition", value.asInstanceOf[js.Any])
+    def setModel_idUndefined: Self = StObject.set(x, "model_id", js.undefined)
     
     @scala.inline
-    def deleteInclude_model_definition: Self = this.set("include_model_definition", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel_id(value: String): Self = this.set("model_id", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteModel_id: Self = this.set("model_id", js.undefined)
+    def setTags(value: String | js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: String | js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

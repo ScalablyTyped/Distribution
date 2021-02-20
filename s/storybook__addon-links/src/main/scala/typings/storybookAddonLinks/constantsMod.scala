@@ -1,24 +1,42 @@
 package typings.storybookAddonLinks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/addon-links/dist/constants", JSImport.Namespace)
-@js.native
-object constantsMod extends js.Object {
+object constantsMod {
   
+  object default {
+    
+    @JSImport("@storybook/addon-links/dist/constants", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@storybook/addon-links/dist/constants", "default.NAVIGATE")
+    @js.native
+    def NAVIGATE: String = js.native
+    @scala.inline
+    def NAVIGATE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAVIGATE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@storybook/addon-links/dist/constants", "default.RECEIVE")
+    @js.native
+    def RECEIVE: String = js.native
+    @scala.inline
+    def RECEIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RECEIVE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@storybook/addon-links/dist/constants", "default.REQUEST")
+    @js.native
+    def REQUEST: String = js.native
+    @scala.inline
+    def REQUEST_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEST")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("@storybook/addon-links/dist/constants", "ADDON_ID")
+  @js.native
   val ADDON_ID: /* "storybook/links" */ String = js.native
   
-  val PARAM_KEY: /* "links" */ String = js.native
-  
+  @JSImport("@storybook/addon-links/dist/constants", "PARAM_KEY")
   @js.native
-  object default extends js.Object {
-    
-    var NAVIGATE: String = js.native
-    
-    var RECEIVE: String = js.native
-    
-    var REQUEST: String = js.native
-  }
+  val PARAM_KEY: /* "links" */ String = js.native
 }

@@ -1,5 +1,6 @@
 package typings.node.cryptoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.node.nodeStrings.pem
   - typings.node.nodeStrings.der
 */
-trait KeyFormat extends js.Object
+trait KeyFormat extends StObject
 object KeyFormat {
   
   @scala.inline

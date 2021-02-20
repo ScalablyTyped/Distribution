@@ -1,14 +1,15 @@
 package typings.javaApplet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait JavaAppletStatus extends js.Object
+sealed trait JavaAppletStatus extends StObject
 @JSGlobal("JavaAppletStatus")
 @js.native
-object JavaAppletStatus extends js.Object {
+object JavaAppletStatus extends StObject {
   
   /**
     * @summary Error while loading applet.

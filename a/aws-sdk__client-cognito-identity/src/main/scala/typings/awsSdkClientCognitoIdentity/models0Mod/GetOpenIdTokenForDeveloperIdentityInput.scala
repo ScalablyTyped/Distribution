@@ -1,12 +1,13 @@
 package typings.awsSdkClientCognitoIdentity.models0Mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetOpenIdTokenForDeveloperIdentityInput extends js.Object {
+trait GetOpenIdTokenForDeveloperIdentityInput extends StObject {
   
   /**
     * <p>A unique identifier in the format REGION:GUID.</p>
@@ -44,9 +45,43 @@ trait GetOpenIdTokenForDeveloperIdentityInput extends js.Object {
     */
   var TokenDuration: js.UndefOr[Double] = js.native
 }
-@JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetOpenIdTokenForDeveloperIdentityInput")
-@js.native
-object GetOpenIdTokenForDeveloperIdentityInput extends js.Object {
+object GetOpenIdTokenForDeveloperIdentityInput {
   
+  @scala.inline
+  def apply(): GetOpenIdTokenForDeveloperIdentityInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[GetOpenIdTokenForDeveloperIdentityInput]
+  }
+  
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetOpenIdTokenForDeveloperIdentityInput.filterSensitiveLog")
+  @js.native
   def filterSensitiveLog(obj: GetOpenIdTokenForDeveloperIdentityInput): js.Any = js.native
+  
+  @scala.inline
+  implicit class GetOpenIdTokenForDeveloperIdentityInputMutableBuilder[Self <: GetOpenIdTokenForDeveloperIdentityInput] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
+    
+    @scala.inline
+    def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
+    
+    @scala.inline
+    def setLogins(value: StringDictionary[String]): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
+    
+    @scala.inline
+    def setTokenDuration(value: Double): Self = StObject.set(x, "TokenDuration", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTokenDurationUndefined: Self = StObject.set(x, "TokenDuration", js.undefined)
+  }
 }

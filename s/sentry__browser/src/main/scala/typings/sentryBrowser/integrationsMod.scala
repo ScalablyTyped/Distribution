@@ -4,14 +4,14 @@ import typings.sentryBrowser.anon.Key
 import typings.sentryBrowser.anon.PartialBreadcrumbsOptions
 import typings.sentryBrowser.anon.PartialTryCatchOptions
 import typings.sentryBrowser.globalhandlersMod.GlobalHandlersIntegrations
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sentry/browser/dist/integrations", JSImport.Namespace)
-@js.native
-object integrationsMod extends js.Object {
+object integrationsMod {
   
+  @JSImport("@sentry/browser/dist/integrations", "Breadcrumbs")
   @js.native
   /**
     * @inheritDoc
@@ -21,15 +21,23 @@ object integrationsMod extends js.Object {
     def this(options: PartialBreadcrumbsOptions) = this()
   }
   /* static members */
-  @js.native
-  object Breadcrumbs extends js.Object {
+  object Breadcrumbs {
+    
+    @JSImport("@sentry/browser/dist/integrations", "Breadcrumbs")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * @inheritDoc
       */
-    var id: String = js.native
+    @JSImport("@sentry/browser/dist/integrations", "Breadcrumbs.id")
+    @js.native
+    def id: String = js.native
+    @scala.inline
+    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("@sentry/browser/dist/integrations", "GlobalHandlers")
   @js.native
   /** JSDoc */
   class GlobalHandlers ()
@@ -37,15 +45,23 @@ object integrationsMod extends js.Object {
     def this(options: GlobalHandlersIntegrations) = this()
   }
   /* static members */
-  @js.native
-  object GlobalHandlers extends js.Object {
+  object GlobalHandlers {
+    
+    @JSImport("@sentry/browser/dist/integrations", "GlobalHandlers")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * @inheritDoc
       */
-    var id: String = js.native
+    @JSImport("@sentry/browser/dist/integrations", "GlobalHandlers.id")
+    @js.native
+    def id: String = js.native
+    @scala.inline
+    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("@sentry/browser/dist/integrations", "LinkedErrors")
   @js.native
   /**
     * @inheritDoc
@@ -55,15 +71,23 @@ object integrationsMod extends js.Object {
     def this(options: Key) = this()
   }
   /* static members */
-  @js.native
-  object LinkedErrors extends js.Object {
+  object LinkedErrors {
+    
+    @JSImport("@sentry/browser/dist/integrations", "LinkedErrors")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * @inheritDoc
       */
-    var id: String = js.native
+    @JSImport("@sentry/browser/dist/integrations", "LinkedErrors.id")
+    @js.native
+    def id: String = js.native
+    @scala.inline
+    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("@sentry/browser/dist/integrations", "TryCatch")
   @js.native
   /**
     * @inheritDoc
@@ -73,25 +97,40 @@ object integrationsMod extends js.Object {
     def this(options: PartialTryCatchOptions) = this()
   }
   /* static members */
-  @js.native
-  object TryCatch extends js.Object {
+  object TryCatch {
+    
+    @JSImport("@sentry/browser/dist/integrations", "TryCatch")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * @inheritDoc
       */
-    var id: String = js.native
+    @JSImport("@sentry/browser/dist/integrations", "TryCatch.id")
+    @js.native
+    def id: String = js.native
+    @scala.inline
+    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("@sentry/browser/dist/integrations", "UserAgent")
   @js.native
   class UserAgent ()
     extends typings.sentryBrowser.useragentMod.UserAgent
   /* static members */
-  @js.native
-  object UserAgent extends js.Object {
+  object UserAgent {
+    
+    @JSImport("@sentry/browser/dist/integrations", "UserAgent")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * @inheritDoc
       */
-    var id: String = js.native
+    @JSImport("@sentry/browser/dist/integrations", "UserAgent.id")
+    @js.native
+    def id: String = js.native
+    @scala.inline
+    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
 }

@@ -4,14 +4,31 @@ import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialGridList.adapterMod.MDCGridListAdapter
 import typings.materialGridList.anon.PartialMDCGridListAdapter
 import typings.materialGridList.anon.TILESELECTOR
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/grid-list/foundation", JSImport.Namespace)
-@js.native
-object foundationMod extends js.Object {
+object foundationMod {
   
+  @JSImport("@material/grid-list/foundation", JSImport.Default)
+  @js.native
+  class default () extends MDCGridListFoundation {
+    def this(adapter: PartialMDCGridListAdapter) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("@material/grid-list/foundation", "default.defaultAdapter")
+    @js.native
+    val defaultAdapter: MDCGridListAdapter = js.native
+    
+    @JSImport("@material/grid-list/foundation", "default.strings")
+    @js.native
+    val strings: TILESELECTOR = js.native
+  }
+  
+  @JSImport("@material/grid-list/foundation", "MDCGridListFoundation")
   @js.native
   class MDCGridListFoundation () extends MDCFoundation[MDCGridListAdapter] {
     def this(adapter: PartialMDCGridListAdapter) = this()
@@ -19,24 +36,14 @@ object foundationMod extends js.Object {
     def alignCenter(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MDCGridListFoundation extends js.Object {
+  object MDCGridListFoundation {
     
+    @JSImport("@material/grid-list/foundation", "MDCGridListFoundation.defaultAdapter")
+    @js.native
     val defaultAdapter: MDCGridListAdapter = js.native
     
-    val strings: TILESELECTOR = js.native
-  }
-  
-  @js.native
-  class default () extends MDCGridListFoundation {
-    def this(adapter: PartialMDCGridListAdapter) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    val defaultAdapter: MDCGridListAdapter = js.native
-    
+    @JSImport("@material/grid-list/foundation", "MDCGridListFoundation.strings")
+    @js.native
     val strings: TILESELECTOR = js.native
   }
 }

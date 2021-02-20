@@ -1,15 +1,26 @@
 package typings.baseui.inputMod
 
-import org.scalablytyped.runtime.TopLevel
+import typings.baseui.baseuiStrings.textarea
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CUSTOM_INPUT_TYPE extends js.Object {
+trait CUSTOM_INPUT_TYPE extends StObject {
   
   var textarea: typings.baseui.baseuiStrings.textarea = js.native
 }
-@JSImport("baseui/input", "CUSTOM_INPUT_TYPE")
-@js.native
-object CUSTOM_INPUT_TYPE extends TopLevel[CUSTOM_INPUT_TYPE]
+object CUSTOM_INPUT_TYPE {
+  
+  @JSImport("baseui/input", "CUSTOM_INPUT_TYPE")
+  @js.native
+  val ^ : CUSTOM_INPUT_TYPE = js.native
+  
+  @scala.inline
+  implicit class CUSTOM_INPUT_TYPEMutableBuilder[Self <: CUSTOM_INPUT_TYPE] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setTextarea(value: textarea): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
+  }
+}

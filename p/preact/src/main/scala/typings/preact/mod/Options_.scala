@@ -2,6 +2,7 @@ package typings.preact.mod
 
 import typings.std.Event
 import typings.std.FrameRequestCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 	 * Global options for preact
 	 */
 @js.native
-trait Options_ extends js.Object {
+trait Options_ extends StObject {
   
   var __suspenseDidResolve: js.UndefOr[js.Function2[/* vnode */ VNode[js.Object], /* cb */ js.Function0[Unit], Unit]] = js.native
   
@@ -43,66 +44,54 @@ object Options_ {
   }
   
   @scala.inline
-  implicit class Options_Ops[Self <: Options_] (val x: Self) extends AnyVal {
+  implicit class Options_MutableBuilder[Self <: Options_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDebounceRendering(value: /* cb */ js.Function0[Unit] => Unit): Self = StObject.set(x, "debounceRendering", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDebounceRenderingUndefined: Self = StObject.set(x, "debounceRendering", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiffed(value: /* vnode */ VNode[js.Object] => Unit): Self = StObject.set(x, "diffed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set__suspenseDidResolve(value: (/* vnode */ VNode[js.Object], /* cb */ js.Function0[Unit]) => Unit): Self = this.set("__suspenseDidResolve", js.Any.fromFunction2(value))
+    def setDiffedUndefined: Self = StObject.set(x, "diffed", js.undefined)
     
     @scala.inline
-    def delete__suspenseDidResolve: Self = this.set("__suspenseDidResolve", js.undefined)
+    def setEvent(value: /* e */ Event => _): Self = StObject.set(x, "event", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDebounceRendering(value: /* cb */ js.Function0[Unit] => Unit): Self = this.set("debounceRendering", js.Any.fromFunction1(value))
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def deleteDebounceRendering: Self = this.set("debounceRendering", js.undefined)
+    def setRequestAnimationFrame(value: /* callback */ FrameRequestCallback => Double): Self = StObject.set(x, "requestAnimationFrame", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDiffed(value: /* vnode */ VNode[js.Object] => Unit): Self = this.set("diffed", js.Any.fromFunction1(value))
+    def setRequestAnimationFrameUndefined: Self = StObject.set(x, "requestAnimationFrame", js.undefined)
     
     @scala.inline
-    def deleteDiffed: Self = this.set("diffed", js.undefined)
+    def setUnmount(value: /* vnode */ VNode[js.Object] => Unit): Self = StObject.set(x, "unmount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEvent(value: /* e */ Event => _): Self = this.set("event", js.Any.fromFunction1(value))
+    def setUnmountUndefined: Self = StObject.set(x, "unmount", js.undefined)
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setUseDebugValue(value: /* value */ String | Double => Unit): Self = StObject.set(x, "useDebugValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequestAnimationFrame(value: /* callback */ FrameRequestCallback => Double): Self = this.set("requestAnimationFrame", js.Any.fromFunction1(value))
+    def setUseDebugValueUndefined: Self = StObject.set(x, "useDebugValue", js.undefined)
     
     @scala.inline
-    def deleteRequestAnimationFrame: Self = this.set("requestAnimationFrame", js.undefined)
+    def setVnode(value: /* vnode */ VNode[js.Object] => Unit): Self = StObject.set(x, "vnode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUnmount(value: /* vnode */ VNode[js.Object] => Unit): Self = this.set("unmount", js.Any.fromFunction1(value))
+    def setVnodeUndefined: Self = StObject.set(x, "vnode", js.undefined)
     
     @scala.inline
-    def deleteUnmount: Self = this.set("unmount", js.undefined)
+    def set__suspenseDidResolve(value: (/* vnode */ VNode[js.Object], /* cb */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "__suspenseDidResolve", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUseDebugValue(value: /* value */ String | Double => Unit): Self = this.set("useDebugValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteUseDebugValue: Self = this.set("useDebugValue", js.undefined)
-    
-    @scala.inline
-    def setVnode(value: /* vnode */ VNode[js.Object] => Unit): Self = this.set("vnode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteVnode: Self = this.set("vnode", js.undefined)
+    def set__suspenseDidResolveUndefined: Self = StObject.set(x, "__suspenseDidResolve", js.undefined)
   }
 }

@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertyState
 import typings.activexLibreoffice.com_.sun.star.util.XCloneable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

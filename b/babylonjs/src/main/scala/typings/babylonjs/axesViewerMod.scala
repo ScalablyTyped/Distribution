@@ -4,16 +4,16 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.transformNodeMod.TransformNode
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Debug/axesViewer", JSImport.Namespace)
-@js.native
-object axesViewerMod extends js.Object {
+object axesViewerMod {
   
+  @JSImport("babylonjs/Debug/axesViewer", "AxesViewer")
   @js.native
-  class AxesViewer protected () extends js.Object {
+  class AxesViewer protected () extends StObject {
     /**
       * Creates a new AxesViewer
       * @param scene defines the hosting scene
@@ -180,9 +180,16 @@ object axesViewerMod extends js.Object {
     def zAxis: TransformNode = js.native
   }
   /* static members */
-  @js.native
-  object AxesViewer extends js.Object {
+  object AxesViewer {
     
-    var _SetRenderingGroupId: js.Any = js.native
+    @JSImport("babylonjs/Debug/axesViewer", "AxesViewer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("babylonjs/Debug/axesViewer", "AxesViewer._SetRenderingGroupId")
+    @js.native
+    def _SetRenderingGroupId: js.Any = js.native
+    @scala.inline
+    def _SetRenderingGroupId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SetRenderingGroupId")(x.asInstanceOf[js.Any])
   }
 }

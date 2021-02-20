@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SeekRequest extends js.Object {
+trait SeekRequest extends StObject {
   
   /** The snapshot to seek to. The snapshot's topic must be the same as that of the provided subscription. Format is `projects/{project}/snapshots/{snap}`. */
   var snapshot: js.UndefOr[String] = js.native
@@ -27,30 +28,18 @@ object SeekRequest {
   }
   
   @scala.inline
-  implicit class SeekRequestOps[Self <: SeekRequest] (val x: Self) extends AnyVal {
+  implicit class SeekRequestMutableBuilder[Self <: SeekRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSnapshot(value: String): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshot(value: String): Self = this.set("snapshot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshot: Self = this.set("snapshot", js.undefined)
-    
-    @scala.inline
-    def setTime(value: String): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

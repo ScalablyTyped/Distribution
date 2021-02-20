@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
 @js.native
-trait PlusNativeObjAnimationViewStyles extends js.Object {
+trait PlusNativeObjAnimationViewStyles extends StObject {
   
   /**
     * 动画窗口上绘制的背景图片
@@ -52,42 +53,30 @@ object PlusNativeObjAnimationViewStyles {
   }
   
   @scala.inline
-  implicit class PlusNativeObjAnimationViewStylesOps[Self <: PlusNativeObjAnimationViewStyles] (val x: Self) extends AnyVal {
+  implicit class PlusNativeObjAnimationViewStylesMutableBuilder[Self <: PlusNativeObjAnimationViewStyles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitmap(value: PlusNativeObjBitmap): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitmapUndefined: Self = StObject.set(x, "bitmap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitmap(value: PlusNativeObjBitmap): Self = this.set("bitmap", value.asInstanceOf[js.Any])
+    def setTextRect(value: PlusNativeObjRect): Self = StObject.set(x, "textRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBitmap: Self = this.set("bitmap", js.undefined)
+    def setTextRectUndefined: Self = StObject.set(x, "textRect", js.undefined)
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setTextStyles(value: PlusNativeObjTextStyles): Self = StObject.set(x, "textStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextStylesUndefined: Self = StObject.set(x, "textStyles", js.undefined)
     
     @scala.inline
-    def setTextRect(value: PlusNativeObjRect): Self = this.set("textRect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextRect: Self = this.set("textRect", js.undefined)
-    
-    @scala.inline
-    def setTextStyles(value: PlusNativeObjTextStyles): Self = this.set("textStyles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextStyles: Self = this.set("textStyles", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

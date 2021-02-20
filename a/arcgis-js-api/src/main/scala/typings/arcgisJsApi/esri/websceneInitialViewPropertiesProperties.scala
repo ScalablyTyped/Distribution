@@ -2,12 +2,13 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.global
 import typings.arcgisJsApi.arcgisJsApiStrings.local
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait websceneInitialViewPropertiesProperties extends js.Object {
+trait websceneInitialViewPropertiesProperties extends StObject {
   
   /**
     * The initial environment settings of the [WebScene](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html).
@@ -46,42 +47,30 @@ object websceneInitialViewPropertiesProperties {
   }
   
   @scala.inline
-  implicit class websceneInitialViewPropertiesPropertiesOps[Self <: websceneInitialViewPropertiesProperties] (val x: Self) extends AnyVal {
+  implicit class websceneInitialViewPropertiesPropertiesMutableBuilder[Self <: websceneInitialViewPropertiesProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironment(value: EnvironmentProperties): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: EnvironmentProperties): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    def setViewingMode(value: global | local): Self = StObject.set(x, "viewingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = this.set("spatialReference", value.asInstanceOf[js.Any])
+    def setViewingModeUndefined: Self = StObject.set(x, "viewingMode", js.undefined)
     
     @scala.inline
-    def deleteSpatialReference: Self = this.set("spatialReference", js.undefined)
+    def setViewpoint(value: ViewpointProperties): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewingMode(value: global | local): Self = this.set("viewingMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewingMode: Self = this.set("viewingMode", js.undefined)
-    
-    @scala.inline
-    def setViewpoint(value: ViewpointProperties): Self = this.set("viewpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewpoint: Self = this.set("viewpoint", js.undefined)
+    def setViewpointUndefined: Self = StObject.set(x, "viewpoint", js.undefined)
   }
 }

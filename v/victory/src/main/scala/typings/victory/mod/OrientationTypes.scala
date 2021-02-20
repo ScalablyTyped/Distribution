@@ -1,5 +1,6 @@
 package typings.victory.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.victory.victoryStrings.left
   - typings.victory.victoryStrings.right
 */
-trait OrientationTypes extends js.Object
+trait OrientationTypes extends StObject
 object OrientationTypes {
   
   @scala.inline

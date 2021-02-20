@@ -8,12 +8,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.org_admin
 import typings.arcgisJsApi.arcgisJsApiStrings.org_publisher
 import typings.arcgisJsApi.arcgisJsApiStrings.org_user
 import typings.arcgisJsApi.arcgisJsApiStrings.public
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortalUserProperties extends js.Object {
+trait PortalUserProperties extends StObject {
   
   /**
     * Indicates the level of access of the user.
@@ -136,114 +137,102 @@ object PortalUserProperties {
   }
   
   @scala.inline
-  implicit class PortalUserPropertiesOps[Self <: PortalUserProperties] (val x: Self) extends AnyVal {
+  implicit class PortalUserPropertiesMutableBuilder[Self <: PortalUserProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccess(value: `private` | org_ | public): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreated(value: DateProperties): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccess(value: `private` | org_ | public): Self = this.set("access", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def deleteAccess: Self = this.set("access", js.undefined)
+    def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: DateProperties): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCulture(value: String): Self = this.set("culture", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCulture: Self = this.set("culture", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setFullNameUndefined: Self = StObject.set(x, "fullName", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setModified(value: DateProperties): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullName(value: String): Self = this.set("fullName", value.asInstanceOf[js.Any])
+    def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
     
     @scala.inline
-    def deleteFullName: Self = this.set("fullName", js.undefined)
+    def setOrgId(value: String): Self = StObject.set(x, "orgId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModified(value: DateProperties): Self = this.set("modified", value.asInstanceOf[js.Any])
+    def setOrgIdUndefined: Self = StObject.set(x, "orgId", js.undefined)
     
     @scala.inline
-    def deleteModified: Self = this.set("modified", js.undefined)
+    def setPortal(value: PortalProperties): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrgId(value: String): Self = this.set("orgId", value.asInstanceOf[js.Any])
+    def setPortalUndefined: Self = StObject.set(x, "portal", js.undefined)
     
     @scala.inline
-    def deleteOrgId: Self = this.set("orgId", js.undefined)
+    def setPreferredView(value: String): Self = StObject.set(x, "preferredView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortal(value: PortalProperties): Self = this.set("portal", value.asInstanceOf[js.Any])
+    def setPreferredViewUndefined: Self = StObject.set(x, "preferredView", js.undefined)
     
     @scala.inline
-    def deletePortal: Self = this.set("portal", js.undefined)
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredView(value: String): Self = this.set("preferredView", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deletePreferredView: Self = this.set("preferredView", js.undefined)
+    def setRole(value: org_admin | org_publisher | org_user): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setRoleId(value: String): Self = StObject.set(x, "roleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setRoleIdUndefined: Self = StObject.set(x, "roleId", js.undefined)
     
     @scala.inline
-    def setRole(value: org_admin | org_publisher | org_user): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleId(value: String): Self = this.set("roleId", value.asInstanceOf[js.Any])
+    def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     
     @scala.inline
-    def deleteRoleId: Self = this.set("roleId", js.undefined)
+    def setUnits(value: english | metric): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceJSON(value: js.Any): Self = this.set("sourceJSON", value.asInstanceOf[js.Any])
+    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
     @scala.inline
-    def deleteSourceJSON: Self = this.set("sourceJSON", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnits(value: english | metric): Self = this.set("units", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnits: Self = this.set("units", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

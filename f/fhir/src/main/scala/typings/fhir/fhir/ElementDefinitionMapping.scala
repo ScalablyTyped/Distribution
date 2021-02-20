@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,60 +60,48 @@ object ElementDefinitionMapping {
   }
   
   @scala.inline
-  implicit class ElementDefinitionMappingOps[Self <: ElementDefinitionMapping] (val x: Self) extends AnyVal {
+  implicit class ElementDefinitionMappingMutableBuilder[Self <: ElementDefinitionMapping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentity(value: id): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentity(value: id): Self = this.set("identity", value.asInstanceOf[js.Any])
+    def setLanguage(value: code): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: String): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def set_comment(value: Element): Self = this.set("_comment", value.asInstanceOf[js.Any])
+    def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_comment: Self = this.set("_comment", js.undefined)
+    def set_comment(value: Element): Self = StObject.set(x, "_comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_identity(value: Element): Self = this.set("_identity", value.asInstanceOf[js.Any])
+    def set_commentUndefined: Self = StObject.set(x, "_comment", js.undefined)
     
     @scala.inline
-    def delete_identity: Self = this.set("_identity", js.undefined)
+    def set_identity(value: Element): Self = StObject.set(x, "_identity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_language(value: Element): Self = this.set("_language", value.asInstanceOf[js.Any])
+    def set_identityUndefined: Self = StObject.set(x, "_identity", js.undefined)
     
     @scala.inline
-    def delete_language: Self = this.set("_language", js.undefined)
+    def set_language(value: Element): Self = StObject.set(x, "_language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_map(value: Element): Self = this.set("_map", value.asInstanceOf[js.Any])
+    def set_languageUndefined: Self = StObject.set(x, "_language", js.undefined)
     
     @scala.inline
-    def delete_map: Self = this.set("_map", js.undefined)
+    def set_map(value: Element): Self = StObject.set(x, "_map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
-    
-    @scala.inline
-    def setLanguage(value: code): Self = this.set("language", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def set_mapUndefined: Self = StObject.set(x, "_map", js.undefined)
   }
 }

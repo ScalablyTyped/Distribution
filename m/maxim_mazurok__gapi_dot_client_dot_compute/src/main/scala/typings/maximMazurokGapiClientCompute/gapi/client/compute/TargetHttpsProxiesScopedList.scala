@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.maximMazurokGapiClientCompute.anon.Code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetHttpsProxiesScopedList extends js.Object {
+trait TargetHttpsProxiesScopedList extends StObject {
   
   /** A list of TargetHttpsProxies contained in this scope. */
   var targetHttpsProxies: js.UndefOr[js.Array[TargetHttpsProxy]] = js.native
@@ -23,33 +24,21 @@ object TargetHttpsProxiesScopedList {
   }
   
   @scala.inline
-  implicit class TargetHttpsProxiesScopedListOps[Self <: TargetHttpsProxiesScopedList] (val x: Self) extends AnyVal {
+  implicit class TargetHttpsProxiesScopedListMutableBuilder[Self <: TargetHttpsProxiesScopedList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTargetHttpsProxies(value: js.Array[TargetHttpsProxy]): Self = StObject.set(x, "targetHttpsProxies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTargetHttpsProxiesUndefined: Self = StObject.set(x, "targetHttpsProxies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetHttpsProxiesVarargs(value: TargetHttpsProxy*): Self = StObject.set(x, "targetHttpsProxies", js.Array(value :_*))
     
     @scala.inline
-    def setTargetHttpsProxiesVarargs(value: TargetHttpsProxy*): Self = this.set("targetHttpsProxies", js.Array(value :_*))
+    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetHttpsProxies(value: js.Array[TargetHttpsProxy]): Self = this.set("targetHttpsProxies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetHttpsProxies: Self = this.set("targetHttpsProxies", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

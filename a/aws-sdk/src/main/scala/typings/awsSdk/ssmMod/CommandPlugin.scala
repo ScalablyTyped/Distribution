@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommandPlugin extends js.Object {
+trait CommandPlugin extends StObject {
   
   /**
     * The name of the plugin. Must be one of the following: aws:updateAgent, aws:domainjoin, aws:applications, aws:runPowerShellScript, aws:psmodule, aws:cloudWatch, aws:runShellScript, or aws:updateSSMAgent. 
@@ -76,90 +77,78 @@ object CommandPlugin {
   }
   
   @scala.inline
-  implicit class CommandPluginOps[Self <: CommandPlugin] (val x: Self) extends AnyVal {
+  implicit class CommandPluginMutableBuilder[Self <: CommandPlugin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: CommandPluginName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutput(value: CommandPluginOutput): Self = StObject.set(x, "Output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: CommandPluginName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOutputS3BucketName(value: S3BucketName): Self = StObject.set(x, "OutputS3BucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setOutputS3BucketNameUndefined: Self = StObject.set(x, "OutputS3BucketName", js.undefined)
     
     @scala.inline
-    def setOutput(value: CommandPluginOutput): Self = this.set("Output", value.asInstanceOf[js.Any])
+    def setOutputS3KeyPrefix(value: S3KeyPrefix): Self = StObject.set(x, "OutputS3KeyPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutput: Self = this.set("Output", js.undefined)
+    def setOutputS3KeyPrefixUndefined: Self = StObject.set(x, "OutputS3KeyPrefix", js.undefined)
     
     @scala.inline
-    def setOutputS3BucketName(value: S3BucketName): Self = this.set("OutputS3BucketName", value.asInstanceOf[js.Any])
+    def setOutputS3Region(value: S3Region): Self = StObject.set(x, "OutputS3Region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutputS3BucketName: Self = this.set("OutputS3BucketName", js.undefined)
+    def setOutputS3RegionUndefined: Self = StObject.set(x, "OutputS3Region", js.undefined)
     
     @scala.inline
-    def setOutputS3KeyPrefix(value: S3KeyPrefix): Self = this.set("OutputS3KeyPrefix", value.asInstanceOf[js.Any])
+    def setOutputUndefined: Self = StObject.set(x, "Output", js.undefined)
     
     @scala.inline
-    def deleteOutputS3KeyPrefix: Self = this.set("OutputS3KeyPrefix", js.undefined)
+    def setResponseCode(value: ResponseCode): Self = StObject.set(x, "ResponseCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputS3Region(value: S3Region): Self = this.set("OutputS3Region", value.asInstanceOf[js.Any])
+    def setResponseCodeUndefined: Self = StObject.set(x, "ResponseCode", js.undefined)
     
     @scala.inline
-    def deleteOutputS3Region: Self = this.set("OutputS3Region", js.undefined)
+    def setResponseFinishDateTime(value: DateTime): Self = StObject.set(x, "ResponseFinishDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseCode(value: ResponseCode): Self = this.set("ResponseCode", value.asInstanceOf[js.Any])
+    def setResponseFinishDateTimeUndefined: Self = StObject.set(x, "ResponseFinishDateTime", js.undefined)
     
     @scala.inline
-    def deleteResponseCode: Self = this.set("ResponseCode", js.undefined)
+    def setResponseStartDateTime(value: DateTime): Self = StObject.set(x, "ResponseStartDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseFinishDateTime(value: DateTime): Self = this.set("ResponseFinishDateTime", value.asInstanceOf[js.Any])
+    def setResponseStartDateTimeUndefined: Self = StObject.set(x, "ResponseStartDateTime", js.undefined)
     
     @scala.inline
-    def deleteResponseFinishDateTime: Self = this.set("ResponseFinishDateTime", js.undefined)
+    def setStandardErrorUrl(value: Url): Self = StObject.set(x, "StandardErrorUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseStartDateTime(value: DateTime): Self = this.set("ResponseStartDateTime", value.asInstanceOf[js.Any])
+    def setStandardErrorUrlUndefined: Self = StObject.set(x, "StandardErrorUrl", js.undefined)
     
     @scala.inline
-    def deleteResponseStartDateTime: Self = this.set("ResponseStartDateTime", js.undefined)
+    def setStandardOutputUrl(value: Url): Self = StObject.set(x, "StandardOutputUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandardErrorUrl(value: Url): Self = this.set("StandardErrorUrl", value.asInstanceOf[js.Any])
+    def setStandardOutputUrlUndefined: Self = StObject.set(x, "StandardOutputUrl", js.undefined)
     
     @scala.inline
-    def deleteStandardErrorUrl: Self = this.set("StandardErrorUrl", js.undefined)
+    def setStatus(value: CommandPluginStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandardOutputUrl(value: Url): Self = this.set("StandardOutputUrl", value.asInstanceOf[js.Any])
+    def setStatusDetails(value: StatusDetails): Self = StObject.set(x, "StatusDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStandardOutputUrl: Self = this.set("StandardOutputUrl", js.undefined)
+    def setStatusDetailsUndefined: Self = StObject.set(x, "StatusDetails", js.undefined)
     
     @scala.inline
-    def setStatus(value: CommandPluginStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setStatusDetails(value: StatusDetails): Self = this.set("StatusDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusDetails: Self = this.set("StatusDetails", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

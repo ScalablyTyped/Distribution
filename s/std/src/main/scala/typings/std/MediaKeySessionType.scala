@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.`persistent-license`
   - typings.std.stdStrings.temporary
 */
-trait MediaKeySessionType extends js.Object
+trait MediaKeySessionType extends StObject
 object MediaKeySessionType {
   
   @scala.inline

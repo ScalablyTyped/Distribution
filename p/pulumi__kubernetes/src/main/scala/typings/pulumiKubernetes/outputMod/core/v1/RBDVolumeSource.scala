@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a Rados Block Device mount that lasts the lifetime of a pod. RBD volumes support ownership management and SELinux relabeling.
   */
 @js.native
-trait RBDVolumeSource extends js.Object {
+trait RBDVolumeSource extends StObject {
   
   /**
     * Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd
@@ -68,45 +69,33 @@ object RBDVolumeSource {
   }
   
   @scala.inline
-  implicit class RBDVolumeSourceOps[Self <: RBDVolumeSource] (val x: Self) extends AnyVal {
+  implicit class RBDVolumeSourceMutableBuilder[Self <: RBDVolumeSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyring(value: String): Self = StObject.set(x, "keyring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFsType(value: String): Self = this.set("fsType", value.asInstanceOf[js.Any])
+    def setMonitors(value: js.Array[String]): Self = StObject.set(x, "monitors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setMonitorsVarargs(value: String*): Self = StObject.set(x, "monitors", js.Array(value :_*))
     
     @scala.inline
-    def setKeyring(value: String): Self = this.set("keyring", value.asInstanceOf[js.Any])
+    def setPool(value: String): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitorsVarargs(value: String*): Self = this.set("monitors", js.Array(value :_*))
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitors(value: js.Array[String]): Self = this.set("monitors", value.asInstanceOf[js.Any])
+    def setSecretRef(value: LocalObjectReference): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPool(value: String): Self = this.set("pool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecretRef(value: LocalObjectReference): Self = this.set("secretRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

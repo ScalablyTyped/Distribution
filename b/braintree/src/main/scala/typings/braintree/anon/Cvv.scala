@@ -1,11 +1,12 @@
 package typings.braintree.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cvv extends js.Object {
+trait Cvv extends StObject {
   
   var cardholderName: js.UndefOr[String] = js.native
   
@@ -30,60 +31,48 @@ object Cvv {
   }
   
   @scala.inline
-  implicit class CvvOps[Self <: Cvv] (val x: Self) extends AnyVal {
+  implicit class CvvMutableBuilder[Self <: Cvv] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCardholderName(value: String): Self = StObject.set(x, "cardholderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCardholderNameUndefined: Self = StObject.set(x, "cardholderName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCvv(value: String): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardholderName(value: String): Self = this.set("cardholderName", value.asInstanceOf[js.Any])
+    def setCvvUndefined: Self = StObject.set(x, "cvv", js.undefined)
     
     @scala.inline
-    def deleteCardholderName: Self = this.set("cardholderName", js.undefined)
+    def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCvv(value: String): Self = this.set("cvv", value.asInstanceOf[js.Any])
+    def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
     
     @scala.inline
-    def deleteCvv: Self = this.set("cvv", js.undefined)
+    def setExpirationMonth(value: String): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationDate(value: String): Self = this.set("expirationDate", value.asInstanceOf[js.Any])
+    def setExpirationMonthUndefined: Self = StObject.set(x, "expirationMonth", js.undefined)
     
     @scala.inline
-    def deleteExpirationDate: Self = this.set("expirationDate", js.undefined)
+    def setExpirationYear(value: String): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationMonth(value: String): Self = this.set("expirationMonth", value.asInstanceOf[js.Any])
+    def setExpirationYearUndefined: Self = StObject.set(x, "expirationYear", js.undefined)
     
     @scala.inline
-    def deleteExpirationMonth: Self = this.set("expirationMonth", js.undefined)
+    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationYear(value: String): Self = this.set("expirationYear", value.asInstanceOf[js.Any])
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
     @scala.inline
-    def deleteExpirationYear: Self = this.set("expirationYear", js.undefined)
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: String): Self = this.set("number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
-    
-    @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

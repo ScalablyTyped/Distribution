@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Security.Cryptography.Core
 
 import typings.winrt.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IKeyDerivationAlgorithmProvider extends js.Object {
+trait IKeyDerivationAlgorithmProvider extends StObject {
   
   var algorithmName: String = js.native
   
@@ -21,24 +22,12 @@ object IKeyDerivationAlgorithmProvider {
   }
   
   @scala.inline
-  implicit class IKeyDerivationAlgorithmProviderOps[Self <: IKeyDerivationAlgorithmProvider] (val x: Self) extends AnyVal {
+  implicit class IKeyDerivationAlgorithmProviderMutableBuilder[Self <: IKeyDerivationAlgorithmProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithmName(value: String): Self = StObject.set(x, "algorithmName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlgorithmName(value: String): Self = this.set("algorithmName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCreateKey(value: IBuffer => CryptographicKey): Self = this.set("createKey", js.Any.fromFunction1(value))
+    def setCreateKey(value: IBuffer => CryptographicKey): Self = StObject.set(x, "createKey", js.Any.fromFunction1(value))
   }
 }

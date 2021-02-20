@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResetClusterParameterGroupMessage extends js.Object {
+trait ResetClusterParameterGroupMessage extends StObject {
   
   /**
     * The name of the cluster parameter group to be reset.
@@ -31,36 +32,24 @@ object ResetClusterParameterGroupMessage {
   }
   
   @scala.inline
-  implicit class ResetClusterParameterGroupMessageOps[Self <: ResetClusterParameterGroupMessage] (val x: Self) extends AnyVal {
+  implicit class ResetClusterParameterGroupMessageMutableBuilder[Self <: ResetClusterParameterGroupMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParameters(value: ParametersList): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def setParameterGroupName(value: String): Self = this.set("ParameterGroupName", value.asInstanceOf[js.Any])
+    def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
     
     @scala.inline
-    def setParametersVarargs(value: Parameter*): Self = this.set("Parameters", js.Array(value :_*))
+    def setResetAllParameters(value: Boolean): Self = StObject.set(x, "ResetAllParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: ParametersList): Self = this.set("Parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
-    
-    @scala.inline
-    def setResetAllParameters(value: Boolean): Self = this.set("ResetAllParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResetAllParameters: Self = this.set("ResetAllParameters", js.undefined)
+    def setResetAllParametersUndefined: Self = StObject.set(x, "ResetAllParameters", js.undefined)
   }
 }

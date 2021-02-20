@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoMetadata extends js.Object {
+trait VideoMetadata extends StObject {
   
   /**
     * Type of compression used in the analyzed video. 
@@ -46,54 +47,42 @@ object VideoMetadata {
   }
   
   @scala.inline
-  implicit class VideoMetadataOps[Self <: VideoMetadata] (val x: Self) extends AnyVal {
+  implicit class VideoMetadataMutableBuilder[Self <: VideoMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodec(value: String): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodecUndefined: Self = StObject.set(x, "Codec", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDurationMillis(value: ULong): Self = StObject.set(x, "DurationMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodec(value: String): Self = this.set("Codec", value.asInstanceOf[js.Any])
+    def setDurationMillisUndefined: Self = StObject.set(x, "DurationMillis", js.undefined)
     
     @scala.inline
-    def deleteCodec: Self = this.set("Codec", js.undefined)
+    def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationMillis(value: ULong): Self = this.set("DurationMillis", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
     @scala.inline
-    def deleteDurationMillis: Self = this.set("DurationMillis", js.undefined)
+    def setFrameHeight(value: ULong): Self = StObject.set(x, "FrameHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("Format", value.asInstanceOf[js.Any])
+    def setFrameHeightUndefined: Self = StObject.set(x, "FrameHeight", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("Format", js.undefined)
+    def setFrameRate(value: Float): Self = StObject.set(x, "FrameRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameHeight(value: ULong): Self = this.set("FrameHeight", value.asInstanceOf[js.Any])
+    def setFrameRateUndefined: Self = StObject.set(x, "FrameRate", js.undefined)
     
     @scala.inline
-    def deleteFrameHeight: Self = this.set("FrameHeight", js.undefined)
+    def setFrameWidth(value: ULong): Self = StObject.set(x, "FrameWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameRate(value: Float): Self = this.set("FrameRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFrameRate: Self = this.set("FrameRate", js.undefined)
-    
-    @scala.inline
-    def setFrameWidth(value: ULong): Self = this.set("FrameWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFrameWidth: Self = this.set("FrameWidth", js.undefined)
+    def setFrameWidthUndefined: Self = StObject.set(x, "FrameWidth", js.undefined)
   }
 }

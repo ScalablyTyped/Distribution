@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PartnerCost extends js.Object {
+trait PartnerCost extends StObject {
   
   /** Required. The type of the partner cost. */
   var costType: js.UndefOr[String] = js.native
@@ -40,48 +41,36 @@ object PartnerCost {
   }
   
   @scala.inline
-  implicit class PartnerCostOps[Self <: PartnerCost] (val x: Self) extends AnyVal {
+  implicit class PartnerCostMutableBuilder[Self <: PartnerCost] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCostType(value: String): Self = StObject.set(x, "costType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCostTypeUndefined: Self = StObject.set(x, "costType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeeAmount(value: String): Self = StObject.set(x, "feeAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCostType(value: String): Self = this.set("costType", value.asInstanceOf[js.Any])
+    def setFeeAmountUndefined: Self = StObject.set(x, "feeAmount", js.undefined)
     
     @scala.inline
-    def deleteCostType: Self = this.set("costType", js.undefined)
+    def setFeePercentageMillis(value: String): Self = StObject.set(x, "feePercentageMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeeAmount(value: String): Self = this.set("feeAmount", value.asInstanceOf[js.Any])
+    def setFeePercentageMillisUndefined: Self = StObject.set(x, "feePercentageMillis", js.undefined)
     
     @scala.inline
-    def deleteFeeAmount: Self = this.set("feeAmount", js.undefined)
+    def setFeeType(value: String): Self = StObject.set(x, "feeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeePercentageMillis(value: String): Self = this.set("feePercentageMillis", value.asInstanceOf[js.Any])
+    def setFeeTypeUndefined: Self = StObject.set(x, "feeType", js.undefined)
     
     @scala.inline
-    def deleteFeePercentageMillis: Self = this.set("feePercentageMillis", js.undefined)
+    def setInvoiceType(value: String): Self = StObject.set(x, "invoiceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeeType(value: String): Self = this.set("feeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeeType: Self = this.set("feeType", js.undefined)
-    
-    @scala.inline
-    def setInvoiceType(value: String): Self = this.set("invoiceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvoiceType: Self = this.set("invoiceType", js.undefined)
+    def setInvoiceTypeUndefined: Self = StObject.set(x, "invoiceType", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.googleMarkerclustererplus
 import typings.googlemaps.google.maps.LatLng
 import typings.googlemaps.google.maps.OverlayView
 import typings.googlemaps.google.maps.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

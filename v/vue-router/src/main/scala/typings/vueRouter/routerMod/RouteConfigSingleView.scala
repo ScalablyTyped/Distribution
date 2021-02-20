@@ -5,6 +5,7 @@ import typings.vue.optionsMod.DefaultData
 import typings.vue.optionsMod.DefaultMethods
 import typings.vue.optionsMod.DefaultProps
 import typings.vue.optionsMod.EsModuleComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,19 +28,20 @@ object RouteConfigSingleView {
   }
   
   @scala.inline
-  implicit class RouteConfigSingleViewOps[Self <: RouteConfigSingleView] (val x: Self) extends AnyVal {
+  implicit class RouteConfigSingleViewMutableBuilder[Self <: RouteConfigSingleView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponent(value: Component): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponentFunction0(
+      value: () => typings.vue.anon.Component[
+          DefaultData[scala.Nothing], 
+          DefaultMethods[scala.Nothing], 
+          DefaultComputed, 
+          DefaultProps
+        ]
+    ): Self = StObject.set(x, "component", js.Any.fromFunction0(value))
     
     @scala.inline
     def setComponentFunction2(
@@ -59,31 +61,18 @@ object RouteConfigSingleView {
             DefaultProps
           ]) | EsModuleComponent
         ]) | Unit
-    ): Self = this.set("component", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "component", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setComponentFunction0(
-      value: () => typings.vue.anon.Component[
-          DefaultData[scala.Nothing], 
-          DefaultMethods[scala.Nothing], 
-          DefaultComputed, 
-          DefaultProps
-        ]
-    ): Self = this.set("component", js.Any.fromFunction0(value))
+    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     @scala.inline
-    def setComponent(value: Component): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setProps(value: Boolean | js.Object | RoutePropsFunction): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComponent: Self = this.set("component", js.undefined)
+    def setPropsFunction1(value: /* route */ Route => js.Object): Self = StObject.set(x, "props", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPropsFunction1(value: /* route */ Route => js.Object): Self = this.set("props", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setProps(value: Boolean | js.Object | RoutePropsFunction): Self = this.set("props", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProps: Self = this.set("props", js.undefined)
+    def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
   }
 }

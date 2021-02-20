@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSourceCredentials extends js.Object {
+trait DataSourceCredentials extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of a data source that has the credential pair that you want to use. When CopySourceArn is not null, the credential pair from the data source in the ARN is used as the credentials for the DataSourceCredentials structure.
@@ -26,30 +27,18 @@ object DataSourceCredentials {
   }
   
   @scala.inline
-  implicit class DataSourceCredentialsOps[Self <: DataSourceCredentials] (val x: Self) extends AnyVal {
+  implicit class DataSourceCredentialsMutableBuilder[Self <: DataSourceCredentials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopySourceArn(value: CopySourceArn): Self = StObject.set(x, "CopySourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopySourceArnUndefined: Self = StObject.set(x, "CopySourceArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCredentialPair(value: CredentialPair): Self = StObject.set(x, "CredentialPair", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopySourceArn(value: CopySourceArn): Self = this.set("CopySourceArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCopySourceArn: Self = this.set("CopySourceArn", js.undefined)
-    
-    @scala.inline
-    def setCredentialPair(value: CredentialPair): Self = this.set("CredentialPair", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCredentialPair: Self = this.set("CredentialPair", js.undefined)
+    def setCredentialPairUndefined: Self = StObject.set(x, "CredentialPair", js.undefined)
   }
 }

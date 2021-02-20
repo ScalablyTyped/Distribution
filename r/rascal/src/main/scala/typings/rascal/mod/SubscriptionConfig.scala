@@ -2,12 +2,13 @@ package typings.rascal.mod
 
 import typings.amqplib.propertiesMod.Options.Consume
 import typings.rascal.anon.Counter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubscriptionConfig extends js.Object {
+trait SubscriptionConfig extends StObject {
   
   var autoCreated: js.UndefOr[Boolean] = js.native
   
@@ -44,99 +45,87 @@ object SubscriptionConfig {
   }
   
   @scala.inline
-  implicit class SubscriptionConfigOps[Self <: SubscriptionConfig] (val x: Self) extends AnyVal {
+  implicit class SubscriptionConfigMutableBuilder[Self <: SubscriptionConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoCreated(value: Boolean): Self = StObject.set(x, "autoCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoCreatedUndefined: Self = StObject.set(x, "autoCreated", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoCreated(value: Boolean): Self = this.set("autoCreated", value.asInstanceOf[js.Any])
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def deleteAutoCreated: Self = this.set("autoCreated", js.undefined)
+    def setDeferCloseChannel(value: Double): Self = StObject.set(x, "deferCloseChannel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setDeferCloseChannelUndefined: Self = StObject.set(x, "deferCloseChannel", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setEncryption(value: String): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeferCloseChannel(value: Double): Self = this.set("deferCloseChannel", value.asInstanceOf[js.Any])
+    def setEncryptionUndefined: Self = StObject.set(x, "encryption", js.undefined)
     
     @scala.inline
-    def deleteDeferCloseChannel: Self = this.set("deferCloseChannel", js.undefined)
+    def setHandler(value: String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryption(value: String): Self = this.set("encryption", value.asInstanceOf[js.Any])
+    def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
     @scala.inline
-    def deleteEncryption: Self = this.set("encryption", js.undefined)
+    def setHandlers(value: js.Array[String]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandler(value: String): Self = this.set("handler", value.asInstanceOf[js.Any])
+    def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
     
     @scala.inline
-    def deleteHandler: Self = this.set("handler", js.undefined)
+    def setHandlersVarargs(value: String*): Self = StObject.set(x, "handlers", js.Array(value :_*))
     
     @scala.inline
-    def setHandlersVarargs(value: String*): Self = this.set("handlers", js.Array(value :_*))
+    def setOptions(value: Consume): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandlers(value: js.Array[String]): Self = this.set("handlers", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteHandlers: Self = this.set("handlers", js.undefined)
+    def setPrefetch(value: Double): Self = StObject.set(x, "prefetch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: Consume): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setPrefetchUndefined: Self = StObject.set(x, "prefetch", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefetch(value: Double): Self = this.set("prefetch", value.asInstanceOf[js.Any])
+    def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
     
     @scala.inline
-    def deletePrefetch: Self = this.set("prefetch", js.undefined)
+    def setRecovery(value: js.Any): Self = StObject.set(x, "recovery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueue(value: String): Self = this.set("queue", value.asInstanceOf[js.Any])
+    def setRecoveryUndefined: Self = StObject.set(x, "recovery", js.undefined)
     
     @scala.inline
-    def deleteQueue: Self = this.set("queue", js.undefined)
+    def setRedeliveries(value: Counter): Self = StObject.set(x, "redeliveries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecovery(value: js.Any): Self = this.set("recovery", value.asInstanceOf[js.Any])
+    def setRedeliveriesUndefined: Self = StObject.set(x, "redeliveries", js.undefined)
     
     @scala.inline
-    def deleteRecovery: Self = this.set("recovery", js.undefined)
+    def setRetry(value: RetryConfig | Boolean): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedeliveries(value: Counter): Self = this.set("redeliveries", value.asInstanceOf[js.Any])
+    def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
     
     @scala.inline
-    def deleteRedeliveries: Self = this.set("redeliveries", js.undefined)
+    def setVhost(value: String): Self = StObject.set(x, "vhost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetry(value: RetryConfig | Boolean): Self = this.set("retry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetry: Self = this.set("retry", js.undefined)
-    
-    @scala.inline
-    def setVhost(value: String): Self = this.set("vhost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVhost: Self = this.set("vhost", js.undefined)
+    def setVhostUndefined: Self = StObject.set(x, "vhost", js.undefined)
   }
 }

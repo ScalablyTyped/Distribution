@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeClientVpnAuthorizationRulesResult extends js.Object {
+trait DescribeClientVpnAuthorizationRulesResult extends StObject {
   
   /**
     * Information about the authorization rules.
@@ -26,33 +27,21 @@ object DescribeClientVpnAuthorizationRulesResult {
   }
   
   @scala.inline
-  implicit class DescribeClientVpnAuthorizationRulesResultOps[Self <: DescribeClientVpnAuthorizationRulesResult] (val x: Self) extends AnyVal {
+  implicit class DescribeClientVpnAuthorizationRulesResultMutableBuilder[Self <: DescribeClientVpnAuthorizationRulesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizationRules(value: AuthorizationRuleSet): Self = StObject.set(x, "AuthorizationRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizationRulesUndefined: Self = StObject.set(x, "AuthorizationRules", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorizationRulesVarargs(value: AuthorizationRule*): Self = StObject.set(x, "AuthorizationRules", js.Array(value :_*))
     
     @scala.inline
-    def setAuthorizationRulesVarargs(value: AuthorizationRule*): Self = this.set("AuthorizationRules", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationRules(value: AuthorizationRuleSet): Self = this.set("AuthorizationRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthorizationRules: Self = this.set("AuthorizationRules", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

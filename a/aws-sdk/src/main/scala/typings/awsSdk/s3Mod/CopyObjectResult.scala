@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CopyObjectResult extends js.Object {
+trait CopyObjectResult extends StObject {
   
   /**
     * Returns the ETag of the new object. The ETag reflects only changes to the contents of an object, not its metadata. The source and destination ETag is identical for a successfully copied object.
@@ -26,30 +27,18 @@ object CopyObjectResult {
   }
   
   @scala.inline
-  implicit class CopyObjectResultOps[Self <: CopyObjectResult] (val x: Self) extends AnyVal {
+  implicit class CopyObjectResultMutableBuilder[Self <: CopyObjectResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setETag(value: ETag): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastModified(value: LastModified): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setETag(value: ETag): Self = this.set("ETag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteETag: Self = this.set("ETag", js.undefined)
-    
-    @scala.inline
-    def setLastModified(value: LastModified): Self = this.set("LastModified", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+    def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
   }
 }

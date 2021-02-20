@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,51 +90,39 @@ object ASPxClientHtmlEditorLinkDialog {
   }
   
   @scala.inline
-  implicit class ASPxClientHtmlEditorLinkDialogOps[Self <: ASPxClientHtmlEditorLinkDialog] (val x: Self) extends AnyVal {
+  implicit class ASPxClientHtmlEditorLinkDialogMutableBuilder[Self <: ASPxClientHtmlEditorLinkDialog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetEmailTextBox(value: () => ASPxClientTextBox): Self = StObject.set(x, "GetEmailTextBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFileManager(value: () => ASPxClientFileManager): Self = StObject.set(x, "GetFileManager", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetLinkTypeRadioButtonList(value: () => ASPxClientRadioButtonList): Self = StObject.set(x, "GetLinkTypeRadioButtonList", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEmailTextBox(value: () => ASPxClientTextBox): Self = this.set("GetEmailTextBox", js.Any.fromFunction0(value))
+    def setGetOpenInNewWindowCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetOpenInNewWindowCheckBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFileManager(value: () => ASPxClientFileManager): Self = this.set("GetFileManager", js.Any.fromFunction0(value))
+    def setGetSelectDocumentPopupCancelButton(value: () => ASPxClientButton): Self = StObject.set(x, "GetSelectDocumentPopupCancelButton", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLinkTypeRadioButtonList(value: () => ASPxClientRadioButtonList): Self = this.set("GetLinkTypeRadioButtonList", js.Any.fromFunction0(value))
+    def setGetSelectDocumentPopupControl(value: () => ASPxClientPopupControl): Self = StObject.set(x, "GetSelectDocumentPopupControl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOpenInNewWindowCheckBox(value: () => ASPxClientCheckBox): Self = this.set("GetOpenInNewWindowCheckBox", js.Any.fromFunction0(value))
+    def setGetSelectDocumentPopupSelectButton(value: () => ASPxClientButton): Self = StObject.set(x, "GetSelectDocumentPopupSelectButton", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSelectDocumentPopupCancelButton(value: () => ASPxClientButton): Self = this.set("GetSelectDocumentPopupCancelButton", js.Any.fromFunction0(value))
+    def setGetSubjectTextBox(value: () => ASPxClientTextBox): Self = StObject.set(x, "GetSubjectTextBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSelectDocumentPopupControl(value: () => ASPxClientPopupControl): Self = this.set("GetSelectDocumentPopupControl", js.Any.fromFunction0(value))
+    def setGetTextTextBox(value: () => ASPxClientTextBox): Self = StObject.set(x, "GetTextTextBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSelectDocumentPopupSelectButton(value: () => ASPxClientButton): Self = this.set("GetSelectDocumentPopupSelectButton", js.Any.fromFunction0(value))
+    def setGetTooltipTextBox(value: () => ASPxClientTextBox): Self = StObject.set(x, "GetTooltipTextBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSubjectTextBox(value: () => ASPxClientTextBox): Self = this.set("GetSubjectTextBox", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTextTextBox(value: () => ASPxClientTextBox): Self = this.set("GetTextTextBox", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTooltipTextBox(value: () => ASPxClientTextBox): Self = this.set("GetTooltipTextBox", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetUrlTextBox(value: () => ASPxClientTextBox): Self = this.set("GetUrlTextBox", js.Any.fromFunction0(value))
+    def setGetUrlTextBox(value: () => ASPxClientTextBox): Self = StObject.set(x, "GetUrlTextBox", js.Any.fromFunction0(value))
   }
 }

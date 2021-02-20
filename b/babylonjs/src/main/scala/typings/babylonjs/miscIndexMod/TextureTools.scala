@@ -1,6 +1,7 @@
 package typings.babylonjs.miscIndexMod
 
 import typings.babylonjs.textureMod.Texture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class TextureTools ()
   extends typings.babylonjs.textureToolsMod.TextureTools
 /* static members */
-@JSImport("babylonjs/Misc/index", "TextureTools")
-@js.native
-object TextureTools extends js.Object {
+object TextureTools {
   
   /**
     * Uses the GPU to create a copy texture rescaled at a given size
@@ -22,6 +21,10 @@ object TextureTools extends js.Object {
     * @param useBilinearMode defines if bilinear mode has to be used
     * @return the generated texture
     */
+  @JSImport("babylonjs/Misc/index", "TextureTools.CreateResizedCopy")
+  @js.native
   def CreateResizedCopy(texture: Texture, width: Double, height: Double): Texture = js.native
+  @JSImport("babylonjs/Misc/index", "TextureTools.CreateResizedCopy")
+  @js.native
   def CreateResizedCopy(texture: Texture, width: Double, height: Double, useBilinearMode: Boolean): Texture = js.native
 }

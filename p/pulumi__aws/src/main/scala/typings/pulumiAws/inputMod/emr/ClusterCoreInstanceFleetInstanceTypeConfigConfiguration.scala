@@ -2,12 +2,13 @@ package typings.pulumiAws.inputMod.emr
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterCoreInstanceFleetInstanceTypeConfigConfiguration extends js.Object {
+trait ClusterCoreInstanceFleetInstanceTypeConfigConfiguration extends StObject {
   
   /**
     * The classification within a configuration.
@@ -28,30 +29,18 @@ object ClusterCoreInstanceFleetInstanceTypeConfigConfiguration {
   }
   
   @scala.inline
-  implicit class ClusterCoreInstanceFleetInstanceTypeConfigConfigurationOps[Self <: ClusterCoreInstanceFleetInstanceTypeConfigConfiguration] (val x: Self) extends AnyVal {
+  implicit class ClusterCoreInstanceFleetInstanceTypeConfigConfigurationMutableBuilder[Self <: ClusterCoreInstanceFleetInstanceTypeConfigConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassification(value: Input[String]): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassificationUndefined: Self = StObject.set(x, "classification", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProperties(value: Input[StringDictionary[_]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassification(value: Input[String]): Self = this.set("classification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClassification: Self = this.set("classification", js.undefined)
-    
-    @scala.inline
-    def setProperties(value: Input[StringDictionary[_]]): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

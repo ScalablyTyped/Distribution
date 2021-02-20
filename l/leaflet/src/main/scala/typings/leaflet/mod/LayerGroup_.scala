@@ -5,6 +5,7 @@ import typings.geojson.mod.FeatureCollection
 import typings.geojson.mod.GeometryCollection
 import typings.geojson.mod.GeometryObject
 import typings.geojson.mod.MultiPoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

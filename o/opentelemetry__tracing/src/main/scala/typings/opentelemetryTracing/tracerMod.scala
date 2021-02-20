@@ -10,14 +10,14 @@ import typings.opentelemetryTracing.basicTracerProviderMod.BasicTracerProvider
 import typings.opentelemetryTracing.spanProcessorMod.SpanProcessor
 import typings.opentelemetryTracing.typesMod.TraceParams
 import typings.opentelemetryTracing.typesMod.TracerConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/tracing/build/src/Tracer", JSImport.Namespace)
-@js.native
-object tracerMod extends js.Object {
+object tracerMod {
   
+  @JSImport("@opentelemetry/tracing/build/src/Tracer", "Tracer")
   @js.native
   class Tracer protected ()
     extends typings.opentelemetryApi.tracerMod.Tracer {

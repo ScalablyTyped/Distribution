@@ -1,5 +1,6 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.2]
   */
 @js.native
-trait BindingSelectionChangedEventArgs extends js.Object {
+trait BindingSelectionChangedEventArgs extends StObject {
   
   /**
     *
@@ -64,33 +65,21 @@ object BindingSelectionChangedEventArgs {
   }
   
   @scala.inline
-  implicit class BindingSelectionChangedEventArgsOps[Self <: BindingSelectionChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class BindingSelectionChangedEventArgsMutableBuilder[Self <: BindingSelectionChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinding(value: Binding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinding(value: Binding): Self = this.set("binding", value.asInstanceOf[js.Any])
+    def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnCount(value: Double): Self = this.set("columnCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartColumn(value: Double): Self = this.set("startColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartRow(value: Double): Self = this.set("startRow", value.asInstanceOf[js.Any])
+    def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
   }
 }

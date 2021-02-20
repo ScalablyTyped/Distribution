@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchApplicationQueryStats extends js.Object {
+trait SearchApplicationQueryStats extends StObject {
   
   /** Date for which query stats were calculated. Stats calculated on the next day close to midnight are returned. */
   var date: js.UndefOr[Date] = js.native
@@ -21,33 +22,21 @@ object SearchApplicationQueryStats {
   }
   
   @scala.inline
-  implicit class SearchApplicationQueryStatsOps[Self <: SearchApplicationQueryStats] (val x: Self) extends AnyVal {
+  implicit class SearchApplicationQueryStatsMutableBuilder[Self <: SearchApplicationQueryStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueryCountByStatus(value: js.Array[QueryCountByStatus]): Self = StObject.set(x, "queryCountByStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setQueryCountByStatusUndefined: Self = StObject.set(x, "queryCountByStatus", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
-    
-    @scala.inline
-    def setQueryCountByStatusVarargs(value: QueryCountByStatus*): Self = this.set("queryCountByStatus", js.Array(value :_*))
-    
-    @scala.inline
-    def setQueryCountByStatus(value: js.Array[QueryCountByStatus]): Self = this.set("queryCountByStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryCountByStatus: Self = this.set("queryCountByStatus", js.undefined)
+    def setQueryCountByStatusVarargs(value: QueryCountByStatus*): Self = StObject.set(x, "queryCountByStatus", js.Array(value :_*))
   }
 }

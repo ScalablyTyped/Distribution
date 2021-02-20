@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html)
   */
 @js.native
-trait scheduling extends js.Object {
+trait scheduling extends StObject {
   
   /**
     * Registers a frame task.
@@ -35,24 +36,12 @@ object scheduling {
   }
   
   @scala.inline
-  implicit class schedulingOps[Self <: scheduling] (val x: Self) extends AnyVal {
+  implicit class schedulingMutableBuilder[Self <: scheduling] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddFrameTask(value: PhaseCallbacks => FrameTaskHandle): Self = StObject.set(x, "addFrameTask", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddFrameTask(value: PhaseCallbacks => FrameTaskHandle): Self = this.set("addFrameTask", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSchedule(value: js.Function => js.Any): Self = this.set("schedule", js.Any.fromFunction1(value))
+    def setSchedule(value: js.Function => js.Any): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
   }
 }

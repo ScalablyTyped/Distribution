@@ -1,5 +1,6 @@
 package typings.jupyterlabServices.messagesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jupyterlabServices.jupyterlabServicesStrings.update_display_data
   - typings.jupyterlabServices.jupyterlabServicesStrings.debug_event
 */
-trait IOPubMessageType extends js.Object
+trait IOPubMessageType extends StObject
 object IOPubMessageType {
   
   @scala.inline

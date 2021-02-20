@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParameterInformation extends js.Object {
+trait ParameterInformation extends StObject {
   
   /**
     * The human-readable doc-comment of this signature. Will be shown
@@ -25,9 +26,13 @@ trait ParameterInformation extends js.Object {
     */
   var label: String | (js.Tuple2[Double, Double]) = js.native
 }
-@JSImport("vscode-languageserver-types", "ParameterInformation")
-@js.native
-object ParameterInformation extends js.Object {
+object ParameterInformation {
+  
+  @scala.inline
+  def apply(label: String | (js.Tuple2[Double, Double])): ParameterInformation = {
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ParameterInformation]
+  }
   
   /**
     * Creates a new parameter information literal.
@@ -35,8 +40,29 @@ object ParameterInformation extends js.Object {
     * @param label A label string.
     * @param documentation A doc string.
     */
+  @JSImport("vscode-languageserver-types", "ParameterInformation.create")
+  @js.native
   def create(label: String): ParameterInformation = js.native
+  @JSImport("vscode-languageserver-types", "ParameterInformation.create")
+  @js.native
   def create(label: String, documentation: String): ParameterInformation = js.native
+  @JSImport("vscode-languageserver-types", "ParameterInformation.create")
+  @js.native
   def create(label: js.Tuple2[Double, Double]): ParameterInformation = js.native
+  @JSImport("vscode-languageserver-types", "ParameterInformation.create")
+  @js.native
   def create(label: js.Tuple2[Double, Double], documentation: String): ParameterInformation = js.native
+  
+  @scala.inline
+  implicit class ParameterInformationMutableBuilder[Self <: ParameterInformation] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setDocumentation(value: String | MarkupContent): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
+    
+    @scala.inline
+    def setLabel(value: String | (js.Tuple2[Double, Double])): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+  }
 }

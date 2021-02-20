@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectParametersProperties extends js.Object {
+trait ProjectParametersProperties extends StObject {
   
   /**
     * The input geometries to project.
@@ -51,51 +52,39 @@ object ProjectParametersProperties {
   }
   
   @scala.inline
-  implicit class ProjectParametersPropertiesOps[Self <: ProjectParametersProperties] (val x: Self) extends AnyVal {
+  implicit class ProjectParametersPropertiesMutableBuilder[Self <: ProjectParametersProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeometries(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeometriesVarargs(value: GeometryProperties*): Self = StObject.set(x, "geometries", js.Array(value :_*))
     
     @scala.inline
-    def setGeometriesVarargs(value: GeometryProperties*): Self = this.set("geometries", js.Array(value :_*))
+    def setOutSR(value: SpatialReferenceProperties): Self = StObject.set(x, "outSR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometries(value: js.Array[GeometryProperties]): Self = this.set("geometries", value.asInstanceOf[js.Any])
+    def setOutSRUndefined: Self = StObject.set(x, "outSR", js.undefined)
     
     @scala.inline
-    def deleteGeometries: Self = this.set("geometries", js.undefined)
+    def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutSR(value: SpatialReferenceProperties): Self = this.set("outSR", value.asInstanceOf[js.Any])
+    def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
     
     @scala.inline
-    def deleteOutSR: Self = this.set("outSR", js.undefined)
+    def setTransformForward(value: Boolean): Self = StObject.set(x, "transformForward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutSpatialReference(value: SpatialReferenceProperties): Self = this.set("outSpatialReference", value.asInstanceOf[js.Any])
+    def setTransformForwardUndefined: Self = StObject.set(x, "transformForward", js.undefined)
     
     @scala.inline
-    def deleteOutSpatialReference: Self = this.set("outSpatialReference", js.undefined)
+    def setTransformation(value: ProjectParametersTransformation): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformForward(value: Boolean): Self = this.set("transformForward", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransformForward: Self = this.set("transformForward", js.undefined)
-    
-    @scala.inline
-    def setTransformation(value: ProjectParametersTransformation): Self = this.set("transformation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransformation: Self = this.set("transformation", js.undefined)
+    def setTransformationUndefined: Self = StObject.set(x, "transformation", js.undefined)
   }
 }

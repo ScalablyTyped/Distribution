@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaneOptions extends js.Object {
+trait PaneOptions extends StObject {
   
   /**
     * (Highcharts) An array of background items for the pane.
@@ -55,60 +56,48 @@ object PaneOptions {
   }
   
   @scala.inline
-  implicit class PaneOptionsOps[Self <: PaneOptions] (val x: Self) extends AnyVal {
+  implicit class PaneOptionsMutableBuilder[Self <: PaneOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: js.Array[PaneBackgroundOptions]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundVarargs(value: PaneBackgroundOptions*): Self = StObject.set(x, "background", js.Array(value :_*))
     
     @scala.inline
-    def setBackgroundVarargs(value: PaneBackgroundOptions*): Self = this.set("background", js.Array(value :_*))
+    def setCenter(value: js.Array[String | Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: js.Array[PaneBackgroundOptions]): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setCenterVarargs(value: (String | Double)*): Self = StObject.set(x, "center", js.Array(value :_*))
     
     @scala.inline
-    def setCenterVarargs(value: (String | Double)*): Self = this.set("center", js.Array(value :_*))
+    def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: js.Array[String | Double]): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setInnerSize(value: Double | String): Self = StObject.set(x, "innerSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndAngle(value: Double): Self = this.set("endAngle", value.asInstanceOf[js.Any])
+    def setInnerSizeUndefined: Self = StObject.set(x, "innerSize", js.undefined)
     
     @scala.inline
-    def deleteEndAngle: Self = this.set("endAngle", js.undefined)
+    def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerSize(value: Double | String): Self = this.set("innerSize", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteInnerSize: Self = this.set("innerSize", js.undefined)
+    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double | String): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setStartAngle(value: Double): Self = this.set("startAngle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartAngle: Self = this.set("startAngle", js.undefined)
+    def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
   }
 }

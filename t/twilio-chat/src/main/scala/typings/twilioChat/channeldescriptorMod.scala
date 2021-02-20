@@ -6,13 +6,12 @@ import typings.twilioChat.channelMod.Channel.NotificationLevel
 import typings.twilioChat.channelMod.Channel.Status
 import typings.twilioChat.channelMod.Channel.Type
 import typings.twilioChat.mod.Client
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-chat/lib/channeldescriptor", JSImport.Namespace)
-@js.native
-object channeldescriptorMod extends js.Object {
+object channeldescriptorMod {
   
   /**
     * Contains channel information.
@@ -33,8 +32,9 @@ object channeldescriptorMod extends js.Object {
     * @property {Channel#Type} type - The Channel's type
     * @property {String} uniqueName - The Channel's unique name
     */
+  @JSImport("twilio-chat/lib/channeldescriptor", "ChannelDescriptor")
   @js.native
-  class ChannelDescriptor protected () extends js.Object {
+  class ChannelDescriptor protected () extends StObject {
     /**
       * @param {Client} client Chat client instance
       * @param {Object} descriptor Channel descriptor data object

@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientCompute.anon.PageTokenPrettyPrint
 import typings.maximMazurokGapiClientCompute.anon.RegionRouter
 import typings.maximMazurokGapiClientCompute.anon.ResourceRouter
 import typings.maximMazurokGapiClientCompute.anon.RouterUserIp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoutersResource extends js.Object {
+trait RoutersResource extends StObject {
   
   /** Retrieves an aggregated list of routers. */
   def aggregatedList(): Request[RouterAggregatedList] = js.native

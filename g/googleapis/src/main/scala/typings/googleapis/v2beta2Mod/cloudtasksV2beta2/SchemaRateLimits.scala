@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta2Mod.cloudtasksV2beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * even if the queue has reached its RateLimits.
   */
 @js.native
-trait SchemaRateLimits extends js.Object {
+trait SchemaRateLimits extends StObject {
   
   /**
     * Output only. The max burst size.  Max burst size limits how fast tasks in
@@ -71,36 +72,24 @@ object SchemaRateLimits {
   }
   
   @scala.inline
-  implicit class SchemaRateLimitsOps[Self <: SchemaRateLimits] (val x: Self) extends AnyVal {
+  implicit class SchemaRateLimitsMutableBuilder[Self <: SchemaRateLimits] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxBurstSize(value: Double): Self = StObject.set(x, "maxBurstSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxBurstSizeUndefined: Self = StObject.set(x, "maxBurstSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxConcurrentTasks(value: Double): Self = StObject.set(x, "maxConcurrentTasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBurstSize(value: Double): Self = this.set("maxBurstSize", value.asInstanceOf[js.Any])
+    def setMaxConcurrentTasksUndefined: Self = StObject.set(x, "maxConcurrentTasks", js.undefined)
     
     @scala.inline
-    def deleteMaxBurstSize: Self = this.set("maxBurstSize", js.undefined)
+    def setMaxTasksDispatchedPerSecond(value: Double): Self = StObject.set(x, "maxTasksDispatchedPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxConcurrentTasks(value: Double): Self = this.set("maxConcurrentTasks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxConcurrentTasks: Self = this.set("maxConcurrentTasks", js.undefined)
-    
-    @scala.inline
-    def setMaxTasksDispatchedPerSecond(value: Double): Self = this.set("maxTasksDispatchedPerSecond", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxTasksDispatchedPerSecond: Self = this.set("maxTasksDispatchedPerSecond", js.undefined)
+    def setMaxTasksDispatchedPerSecondUndefined: Self = StObject.set(x, "maxTasksDispatchedPerSecond", js.undefined)
   }
 }

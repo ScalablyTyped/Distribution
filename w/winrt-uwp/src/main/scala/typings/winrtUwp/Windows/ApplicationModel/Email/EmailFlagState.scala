@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmailFlagState extends js.Object
+sealed trait EmailFlagState extends StObject
 /** Defines the flag state of an email message. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailFlagState")
 @js.native
-object EmailFlagState extends js.Object {
+object EmailFlagState extends StObject {
   
   /** The email was flagged for follow up and the flag has been cleared. */
   @js.native

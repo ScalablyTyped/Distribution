@@ -1,5 +1,6 @@
 package typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Identifying information for a single ancestor of a project.
   */
 @js.native
-trait SchemaAncestor extends js.Object {
+trait SchemaAncestor extends StObject {
   
   /**
     * Resource id of the ancestor.
@@ -24,24 +25,12 @@ object SchemaAncestor {
   }
   
   @scala.inline
-  implicit class SchemaAncestorOps[Self <: SchemaAncestor] (val x: Self) extends AnyVal {
+  implicit class SchemaAncestorMutableBuilder[Self <: SchemaAncestor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceId(value: SchemaResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResourceId(value: SchemaResourceId): Self = this.set("resourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceId: Self = this.set("resourceId", js.undefined)
+    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
   }
 }

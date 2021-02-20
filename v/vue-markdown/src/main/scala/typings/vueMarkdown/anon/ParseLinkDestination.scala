@@ -1,11 +1,12 @@
 package typings.vueMarkdown.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParseLinkDestination extends js.Object {
+trait ParseLinkDestination extends StObject {
   
   var parseLinkDestination: js.Any = js.native
   
@@ -22,27 +23,15 @@ object ParseLinkDestination {
   }
   
   @scala.inline
-  implicit class ParseLinkDestinationOps[Self <: ParseLinkDestination] (val x: Self) extends AnyVal {
+  implicit class ParseLinkDestinationMutableBuilder[Self <: ParseLinkDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParseLinkDestination(value: js.Any): Self = StObject.set(x, "parseLinkDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParseLinkLabel(value: js.Any): Self = StObject.set(x, "parseLinkLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParseLinkDestination(value: js.Any): Self = this.set("parseLinkDestination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParseLinkLabel(value: js.Any): Self = this.set("parseLinkLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParseLinkTitle(value: js.Any): Self = this.set("parseLinkTitle", value.asInstanceOf[js.Any])
+    def setParseLinkTitle(value: js.Any): Self = StObject.set(x, "parseLinkTitle", value.asInstanceOf[js.Any])
   }
 }

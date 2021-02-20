@@ -93,6 +93,7 @@ import typings.typescriptServices.TypeScript.VariableStatementSyntax
 import typings.typescriptServices.TypeScript.VoidExpressionSyntax
 import typings.typescriptServices.TypeScript.WhileStatementSyntax
 import typings.typescriptServices.TypeScript.WithStatementSyntax
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -266,81 +267,69 @@ object IndentationTrackingWalker {
   }
   
   @scala.inline
-  implicit class IndentationTrackingWalkerOps[Self <: IndentationTrackingWalker] (val x: Self) extends AnyVal {
+  implicit class IndentationTrackingWalkerMutableBuilder[Self <: IndentationTrackingWalker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForceIndentNextToken(value: Double => Unit): Self = StObject.set(x, "forceIndentNextToken", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForceRecomputeIndentationOfParent(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "forceRecomputeIndentationOfParent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForceSkipIndentingNextToken(value: Double => Unit): Self = StObject.set(x, "forceSkipIndentingNextToken", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_indentationNodeContextPool(value: js.Any): Self = this.set("_indentationNodeContextPool", value.asInstanceOf[js.Any])
+    def setGetCommentIndentationAmount(value: js.Any => js.Any): Self = StObject.set(x, "getCommentIndentationAmount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_lastTriviaWasNewLine(value: js.Any): Self = this.set("_lastTriviaWasNewLine", value.asInstanceOf[js.Any])
+    def setGetNodeIndentation(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getNodeIndentation", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set_parent(value: js.Any): Self = this.set("_parent", value.asInstanceOf[js.Any])
+    def setGetTokenIndentationAmount(value: js.Any => js.Any): Self = StObject.set(x, "getTokenIndentationAmount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_position(value: js.Any): Self = this.set("_position", value.asInstanceOf[js.Any])
+    def setIndentToken(value: (ISyntaxToken, Double, Double) => Unit): Self = StObject.set(x, "indentToken", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set_snapshot(value: js.Any): Self = this.set("_snapshot", value.asInstanceOf[js.Any])
+    def setIndentationNodeContextPool(value: () => IndentationNodeContextPool): Self = StObject.set(x, "indentationNodeContextPool", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_textSpan(value: js.Any): Self = this.set("_textSpan", value.asInstanceOf[js.Any])
+    def setOptions(value: FormattingOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceIndentNextToken(value: Double => Unit): Self = this.set("forceIndentNextToken", js.Any.fromFunction1(value))
+    def setParent(value: () => IndentationNodeContext): Self = StObject.set(x, "parent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setForceRecomputeIndentationOfParent(value: (js.Any, js.Any) => js.Any): Self = this.set("forceRecomputeIndentationOfParent", js.Any.fromFunction2(value))
+    def setPosition(value: () => Double): Self = StObject.set(x, "position", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setForceSkipIndentingNextToken(value: Double => Unit): Self = this.set("forceSkipIndentingNextToken", js.Any.fromFunction1(value))
+    def setShouldIndentBlockInParent(value: js.Any => js.Any): Self = StObject.set(x, "shouldIndentBlockInParent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCommentIndentationAmount(value: js.Any => js.Any): Self = this.set("getCommentIndentationAmount", js.Any.fromFunction1(value))
+    def setSnapshot(value: () => ITextSnapshot): Self = StObject.set(x, "snapshot", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNodeIndentation(value: (js.Any, js.Any) => js.Any): Self = this.set("getNodeIndentation", js.Any.fromFunction2(value))
+    def setTextSpan(value: () => TextSpan): Self = StObject.set(x, "textSpan", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTokenIndentationAmount(value: js.Any => js.Any): Self = this.set("getTokenIndentationAmount", js.Any.fromFunction1(value))
+    def setVisitTokenInSpan(value: ISyntaxToken => Unit): Self = StObject.set(x, "visitTokenInSpan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIndentToken(value: (ISyntaxToken, Double, Double) => Unit): Self = this.set("indentToken", js.Any.fromFunction3(value))
+    def set_indentationNodeContextPool(value: js.Any): Self = StObject.set(x, "_indentationNodeContextPool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentationNodeContextPool(value: () => IndentationNodeContextPool): Self = this.set("indentationNodeContextPool", js.Any.fromFunction0(value))
+    def set_lastTriviaWasNewLine(value: js.Any): Self = StObject.set(x, "_lastTriviaWasNewLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: FormattingOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def set_parent(value: js.Any): Self = StObject.set(x, "_parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: () => IndentationNodeContext): Self = this.set("parent", js.Any.fromFunction0(value))
+    def set_position(value: js.Any): Self = StObject.set(x, "_position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: () => Double): Self = this.set("position", js.Any.fromFunction0(value))
+    def set_snapshot(value: js.Any): Self = StObject.set(x, "_snapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShouldIndentBlockInParent(value: js.Any => js.Any): Self = this.set("shouldIndentBlockInParent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSnapshot(value: () => ITextSnapshot): Self = this.set("snapshot", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTextSpan(value: () => TextSpan): Self = this.set("textSpan", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setVisitTokenInSpan(value: ISyntaxToken => Unit): Self = this.set("visitTokenInSpan", js.Any.fromFunction1(value))
+    def set_textSpan(value: js.Any): Self = StObject.set(x, "_textSpan", value.asInstanceOf[js.Any])
   }
 }

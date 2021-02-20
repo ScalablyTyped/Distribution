@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -137,48 +138,36 @@ object SyntaxDedenter {
   }
   
   @scala.inline
-  implicit class SyntaxDedenterOps[Self <: SyntaxDedenter] (val x: Self) extends AnyVal {
+  implicit class SyntaxDedenterMutableBuilder[Self <: SyntaxDedenter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbort(value: () => js.Any): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDedentMultiLineComment(value: js.Any => js.Any): Self = StObject.set(x, "dedentMultiLineComment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDedentSegment(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "dedentSegment", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAbort(value: () => js.Any): Self = this.set("abort", js.Any.fromFunction0(value))
+    def setDedentTriviaList(value: js.Any => js.Any): Self = StObject.set(x, "dedentTriviaList", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDedentMultiLineComment(value: js.Any => js.Any): Self = this.set("dedentMultiLineComment", js.Any.fromFunction1(value))
+    def setDedentWhitespace(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "dedentWhitespace", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDedentSegment(value: (js.Any, js.Any) => js.Any): Self = this.set("dedentSegment", js.Any.fromFunction2(value))
+    def setDedentationAmount(value: js.Any): Self = StObject.set(x, "dedentationAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDedentTriviaList(value: js.Any => js.Any): Self = this.set("dedentTriviaList", js.Any.fromFunction1(value))
+    def setIsAborted(value: () => js.Any): Self = StObject.set(x, "isAborted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDedentWhitespace(value: (js.Any, js.Any) => js.Any): Self = this.set("dedentWhitespace", js.Any.fromFunction2(value))
+    def setLastTriviaWasNewLine(value: js.Any): Self = StObject.set(x, "lastTriviaWasNewLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDedentationAmount(value: js.Any): Self = this.set("dedentationAmount", value.asInstanceOf[js.Any])
+    def setMinimumIndent(value: js.Any): Self = StObject.set(x, "minimumIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAborted(value: () => js.Any): Self = this.set("isAborted", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLastTriviaWasNewLine(value: js.Any): Self = this.set("lastTriviaWasNewLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinimumIndent(value: js.Any): Self = this.set("minimumIndent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptions(value: js.Any): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

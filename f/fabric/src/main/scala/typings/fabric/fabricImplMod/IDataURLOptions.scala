@@ -1,5 +1,6 @@
 package typings.fabric.fabricImplMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // They are just helpful for for defining function parameters
 //////////////////////////////////////////////////////////////////////////////
 @js.native
-trait IDataURLOptions extends js.Object {
+trait IDataURLOptions extends StObject {
   
   var enableRetinaScaling: js.UndefOr[Boolean] = js.native
   
@@ -61,78 +62,66 @@ object IDataURLOptions {
   }
   
   @scala.inline
-  implicit class IDataURLOptionsOps[Self <: IDataURLOptions] (val x: Self) extends AnyVal {
+  implicit class IDataURLOptionsMutableBuilder[Self <: IDataURLOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableRetinaScaling(value: Boolean): Self = StObject.set(x, "enableRetinaScaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableRetinaScalingUndefined: Self = StObject.set(x, "enableRetinaScaling", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableRetinaScaling(value: Boolean): Self = this.set("enableRetinaScaling", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteEnableRetinaScaling: Self = this.set("enableRetinaScaling", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setMultiplier(value: Double): Self = StObject.set(x, "multiplier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: Double): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setMultiplierUndefined: Self = StObject.set(x, "multiplier", js.undefined)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiplier(value: Double): Self = this.set("multiplier", value.asInstanceOf[js.Any])
+    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
     @scala.inline
-    def deleteMultiplier: Self = this.set("multiplier", js.undefined)
+    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuality(value: Double): Self = this.set("quality", value.asInstanceOf[js.Any])
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
     @scala.inline
-    def deleteQuality: Self = this.set("quality", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop(value: Double): Self = this.set("top", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setWithoutShadow(value: Boolean): Self = StObject.set(x, "withoutShadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWithoutShadowUndefined: Self = StObject.set(x, "withoutShadow", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWithoutTransform(value: Boolean): Self = StObject.set(x, "withoutTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWithoutShadow(value: Boolean): Self = this.set("withoutShadow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithoutShadow: Self = this.set("withoutShadow", js.undefined)
-    
-    @scala.inline
-    def setWithoutTransform(value: Boolean): Self = this.set("withoutTransform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithoutTransform: Self = this.set("withoutTransform", js.undefined)
+    def setWithoutTransformUndefined: Self = StObject.set(x, "withoutTransform", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.xml.crypto
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,45 +64,33 @@ object XXMLSecurityContext {
   }
   
   @scala.inline
-  implicit class XXMLSecurityContextOps[Self <: XXMLSecurityContext] (val x: Self) extends AnyVal {
+  implicit class XXMLSecurityContextMutableBuilder[Self <: XXMLSecurityContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddSecurityEnvironment(value: XSecurityEnvironment => Double): Self = StObject.set(x, "addSecurityEnvironment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultSecurityEnvironmentIndex(value: Double): Self = StObject.set(x, "DefaultSecurityEnvironmentIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDefaultSecurityEnvironmentIndex(value: () => Double): Self = StObject.set(x, "getDefaultSecurityEnvironmentIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDefaultSecurityEnvironmentIndex(value: Double): Self = this.set("DefaultSecurityEnvironmentIndex", value.asInstanceOf[js.Any])
+    def setGetSecurityEnvironment(value: () => XSecurityEnvironment): Self = StObject.set(x, "getSecurityEnvironment", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSecurityEnvironment(value: XSecurityEnvironment): Self = this.set("SecurityEnvironment", value.asInstanceOf[js.Any])
+    def setGetSecurityEnvironmentByIndex(value: Double => XSecurityEnvironment): Self = StObject.set(x, "getSecurityEnvironmentByIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSecurityEnvironmentNumber(value: Double): Self = this.set("SecurityEnvironmentNumber", value.asInstanceOf[js.Any])
+    def setGetSecurityEnvironmentNumber(value: () => Double): Self = StObject.set(x, "getSecurityEnvironmentNumber", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddSecurityEnvironment(value: XSecurityEnvironment => Double): Self = this.set("addSecurityEnvironment", js.Any.fromFunction1(value))
+    def setSecurityEnvironment(value: XSecurityEnvironment): Self = StObject.set(x, "SecurityEnvironment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDefaultSecurityEnvironmentIndex(value: () => Double): Self = this.set("getDefaultSecurityEnvironmentIndex", js.Any.fromFunction0(value))
+    def setSecurityEnvironmentNumber(value: Double): Self = StObject.set(x, "SecurityEnvironmentNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSecurityEnvironment(value: () => XSecurityEnvironment): Self = this.set("getSecurityEnvironment", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSecurityEnvironmentByIndex(value: Double => XSecurityEnvironment): Self = this.set("getSecurityEnvironmentByIndex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetSecurityEnvironmentNumber(value: () => Double): Self = this.set("getSecurityEnvironmentNumber", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDefaultSecurityEnvironmentIndex(value: Double => Unit): Self = this.set("setDefaultSecurityEnvironmentIndex", js.Any.fromFunction1(value))
+    def setSetDefaultSecurityEnvironmentIndex(value: Double => Unit): Self = StObject.set(x, "setDefaultSecurityEnvironmentIndex", js.Any.fromFunction1(value))
   }
 }

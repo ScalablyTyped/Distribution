@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FunctionConfigurationEnvironment extends js.Object {
+trait FunctionConfigurationEnvironment extends StObject {
   
   /**
     * If true, the Lambda function is allowed to access the host's /sys folder. Use this when the Lambda function needs to read device information from /sys. This setting applies only when you run the Lambda function in a Greengrass container.
@@ -36,45 +37,33 @@ object FunctionConfigurationEnvironment {
   }
   
   @scala.inline
-  implicit class FunctionConfigurationEnvironmentOps[Self <: FunctionConfigurationEnvironment] (val x: Self) extends AnyVal {
+  implicit class FunctionConfigurationEnvironmentMutableBuilder[Self <: FunctionConfigurationEnvironment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessSysfs(value: boolean): Self = StObject.set(x, "AccessSysfs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessSysfsUndefined: Self = StObject.set(x, "AccessSysfs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecution(value: FunctionExecutionConfig): Self = StObject.set(x, "Execution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessSysfs(value: boolean): Self = this.set("AccessSysfs", value.asInstanceOf[js.Any])
+    def setExecutionUndefined: Self = StObject.set(x, "Execution", js.undefined)
     
     @scala.inline
-    def deleteAccessSysfs: Self = this.set("AccessSysfs", js.undefined)
+    def setResourceAccessPolicies(value: listOfResourceAccessPolicy): Self = StObject.set(x, "ResourceAccessPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecution(value: FunctionExecutionConfig): Self = this.set("Execution", value.asInstanceOf[js.Any])
+    def setResourceAccessPoliciesUndefined: Self = StObject.set(x, "ResourceAccessPolicies", js.undefined)
     
     @scala.inline
-    def deleteExecution: Self = this.set("Execution", js.undefined)
+    def setResourceAccessPoliciesVarargs(value: ResourceAccessPolicy*): Self = StObject.set(x, "ResourceAccessPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setResourceAccessPoliciesVarargs(value: ResourceAccessPolicy*): Self = this.set("ResourceAccessPolicies", js.Array(value :_*))
+    def setVariables(value: mapOfString): Self = StObject.set(x, "Variables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceAccessPolicies(value: listOfResourceAccessPolicy): Self = this.set("ResourceAccessPolicies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceAccessPolicies: Self = this.set("ResourceAccessPolicies", js.undefined)
-    
-    @scala.inline
-    def setVariables(value: mapOfString): Self = this.set("Variables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariables: Self = this.set("Variables", js.undefined)
+    def setVariablesUndefined: Self = StObject.set(x, "Variables", js.undefined)
   }
 }

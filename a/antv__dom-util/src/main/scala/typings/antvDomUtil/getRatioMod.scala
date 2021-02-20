@@ -1,12 +1,13 @@
 package typings.antvDomUtil
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/dom-util/lib/get-ratio", JSImport.Namespace)
-@js.native
-object getRatioMod extends js.Object {
+object getRatioMod {
   
+  @JSImport("@antv/dom-util/lib/get-ratio", JSImport.Default)
+  @js.native
   def default(): Double = js.native
 }

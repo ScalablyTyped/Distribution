@@ -1,7 +1,6 @@
 package typings.reactBootstrap.mod
 
-import typings.react.mod.Component
-import typings.reactBootstrap.modalBodyMod.ModalBodyProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("react-bootstrap", "ModalBody")
 @js.native
 class ModalBody ()
-  extends Component[ModalBodyProps, js.Object, js.Any]
+  extends typings.reactBootstrap.libMod.ModalBody

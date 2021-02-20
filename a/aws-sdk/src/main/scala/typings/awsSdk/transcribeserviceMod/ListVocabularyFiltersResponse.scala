@@ -1,11 +1,12 @@
 package typings.awsSdk.transcribeserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListVocabularyFiltersResponse extends js.Object {
+trait ListVocabularyFiltersResponse extends StObject {
   
   /**
     * The ListVocabularyFilters operation returns a page of collections at a time. The maximum size of the page is set by the MaxResults parameter. If there are more jobs in the list than the page size, Amazon Transcribe returns the NextPage token. Include the token in the next request to the ListVocabularyFilters operation to return in the next page of jobs.
@@ -26,33 +27,21 @@ object ListVocabularyFiltersResponse {
   }
   
   @scala.inline
-  implicit class ListVocabularyFiltersResponseOps[Self <: ListVocabularyFiltersResponse] (val x: Self) extends AnyVal {
+  implicit class ListVocabularyFiltersResponseMutableBuilder[Self <: ListVocabularyFiltersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVocabularyFilters(value: VocabularyFilters): Self = StObject.set(x, "VocabularyFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setVocabularyFiltersUndefined: Self = StObject.set(x, "VocabularyFilters", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setVocabularyFiltersVarargs(value: VocabularyFilterInfo*): Self = this.set("VocabularyFilters", js.Array(value :_*))
-    
-    @scala.inline
-    def setVocabularyFilters(value: VocabularyFilters): Self = this.set("VocabularyFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVocabularyFilters: Self = this.set("VocabularyFilters", js.undefined)
+    def setVocabularyFiltersVarargs(value: VocabularyFilterInfo*): Self = StObject.set(x, "VocabularyFilters", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileManagerMessagesToolbar extends js.Object {
+trait FileManagerMessagesToolbar extends StObject {
   
   var createFolder: js.UndefOr[String] = js.native
   
@@ -50,120 +51,108 @@ object FileManagerMessagesToolbar {
   }
   
   @scala.inline
-  implicit class FileManagerMessagesToolbarOps[Self <: FileManagerMessagesToolbar] (val x: Self) extends AnyVal {
+  implicit class FileManagerMessagesToolbarMutableBuilder[Self <: FileManagerMessagesToolbar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateFolder(value: String): Self = StObject.set(x, "createFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateFolderUndefined: Self = StObject.set(x, "createFolder", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateCreatedField(value: String): Self = StObject.set(x, "dateCreatedField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateFolder(value: String): Self = this.set("createFolder", value.asInstanceOf[js.Any])
+    def setDateCreatedFieldUndefined: Self = StObject.set(x, "dateCreatedField", js.undefined)
     
     @scala.inline
-    def deleteCreateFolder: Self = this.set("createFolder", js.undefined)
+    def setDateModifiedField(value: String): Self = StObject.set(x, "dateModifiedField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateCreatedField(value: String): Self = this.set("dateCreatedField", value.asInstanceOf[js.Any])
+    def setDateModifiedFieldUndefined: Self = StObject.set(x, "dateModifiedField", js.undefined)
     
     @scala.inline
-    def deleteDateCreatedField: Self = this.set("dateCreatedField", js.undefined)
+    def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateModifiedField(value: String): Self = this.set("dateModifiedField", value.asInstanceOf[js.Any])
+    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
     @scala.inline
-    def deleteDateModifiedField: Self = this.set("dateModifiedField", js.undefined)
+    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: String): Self = this.set("delete", value.asInstanceOf[js.Any])
+    def setDetailsChecked(value: String): Self = StObject.set(x, "detailsChecked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDelete: Self = this.set("delete", js.undefined)
+    def setDetailsCheckedUndefined: Self = StObject.set(x, "detailsChecked", js.undefined)
     
     @scala.inline
-    def setDetails(value: String): Self = this.set("details", value.asInstanceOf[js.Any])
+    def setDetailsUnchecked(value: String): Self = StObject.set(x, "detailsUnchecked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
+    def setDetailsUncheckedUndefined: Self = StObject.set(x, "detailsUnchecked", js.undefined)
     
     @scala.inline
-    def setDetailsChecked(value: String): Self = this.set("detailsChecked", value.asInstanceOf[js.Any])
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def deleteDetailsChecked: Self = this.set("detailsChecked", js.undefined)
+    def setNameField(value: String): Self = StObject.set(x, "nameField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailsUnchecked(value: String): Self = this.set("detailsUnchecked", value.asInstanceOf[js.Any])
+    def setNameFieldUndefined: Self = StObject.set(x, "nameField", js.undefined)
     
     @scala.inline
-    def deleteDetailsUnchecked: Self = this.set("detailsUnchecked", js.undefined)
+    def setRename(value: String): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameField(value: String): Self = this.set("nameField", value.asInstanceOf[js.Any])
+    def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
     
     @scala.inline
-    def deleteNameField: Self = this.set("nameField", js.undefined)
+    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRename(value: String): Self = this.set("rename", value.asInstanceOf[js.Any])
+    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
     @scala.inline
-    def deleteRename: Self = this.set("rename", js.undefined)
+    def setSizeField(value: String): Self = StObject.set(x, "sizeField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch(value: String): Self = this.set("search", value.asInstanceOf[js.Any])
+    def setSizeFieldUndefined: Self = StObject.set(x, "sizeField", js.undefined)
     
     @scala.inline
-    def deleteSearch: Self = this.set("search", js.undefined)
+    def setSortDirection(value: String): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeField(value: String): Self = this.set("sizeField", value.asInstanceOf[js.Any])
+    def setSortDirectionAsc(value: String): Self = StObject.set(x, "sortDirectionAsc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSizeField: Self = this.set("sizeField", js.undefined)
+    def setSortDirectionAscUndefined: Self = StObject.set(x, "sortDirectionAsc", js.undefined)
     
     @scala.inline
-    def setSortDirection(value: String): Self = this.set("sortDirection", value.asInstanceOf[js.Any])
+    def setSortDirectionDesc(value: String): Self = StObject.set(x, "sortDirectionDesc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSortDirection: Self = this.set("sortDirection", js.undefined)
+    def setSortDirectionDescUndefined: Self = StObject.set(x, "sortDirectionDesc", js.undefined)
     
     @scala.inline
-    def setSortDirectionAsc(value: String): Self = this.set("sortDirectionAsc", value.asInstanceOf[js.Any])
+    def setSortDirectionUndefined: Self = StObject.set(x, "sortDirection", js.undefined)
     
     @scala.inline
-    def deleteSortDirectionAsc: Self = this.set("sortDirectionAsc", js.undefined)
+    def setSortField(value: String): Self = StObject.set(x, "sortField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortDirectionDesc(value: String): Self = this.set("sortDirectionDesc", value.asInstanceOf[js.Any])
+    def setSortFieldUndefined: Self = StObject.set(x, "sortField", js.undefined)
     
     @scala.inline
-    def deleteSortDirectionDesc: Self = this.set("sortDirectionDesc", js.undefined)
+    def setTypeField(value: String): Self = StObject.set(x, "typeField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortField(value: String): Self = this.set("sortField", value.asInstanceOf[js.Any])
+    def setTypeFieldUndefined: Self = StObject.set(x, "typeField", js.undefined)
     
     @scala.inline
-    def deleteSortField: Self = this.set("sortField", js.undefined)
+    def setUploadDialog(value: String): Self = StObject.set(x, "uploadDialog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeField(value: String): Self = this.set("typeField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeField: Self = this.set("typeField", js.undefined)
-    
-    @scala.inline
-    def setUploadDialog(value: String): Self = this.set("uploadDialog", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadDialog: Self = this.set("uploadDialog", js.undefined)
+    def setUploadDialogUndefined: Self = StObject.set(x, "uploadDialog", js.undefined)
   }
 }

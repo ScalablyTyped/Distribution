@@ -1,15 +1,14 @@
 package typings.lockr
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("lockr")
-@js.native
-object lockr extends js.Object {
+object lockr {
   
   @js.native
-  trait LockrStatic extends js.Object {
+  trait LockrStatic extends StObject {
     
     /**
       * Empties localStorage.

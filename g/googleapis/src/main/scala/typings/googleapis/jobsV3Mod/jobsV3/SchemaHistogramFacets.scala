@@ -1,5 +1,6 @@
 package typings.googleapis.jobsV3Mod.jobsV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Input only.  Histogram facets to be specified in SearchJobsRequest.
   */
 @js.native
-trait SchemaHistogramFacets extends js.Object {
+trait SchemaHistogramFacets extends StObject {
   
   /**
     * Optional.  Specifies compensation field-based histogram requests.
@@ -37,45 +38,33 @@ object SchemaHistogramFacets {
   }
   
   @scala.inline
-  implicit class SchemaHistogramFacetsOps[Self <: SchemaHistogramFacets] (val x: Self) extends AnyVal {
+  implicit class SchemaHistogramFacetsMutableBuilder[Self <: SchemaHistogramFacets] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompensationHistogramFacets(value: js.Array[SchemaCompensationHistogramRequest]): Self = StObject.set(x, "compensationHistogramFacets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompensationHistogramFacetsUndefined: Self = StObject.set(x, "compensationHistogramFacets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompensationHistogramFacetsVarargs(value: SchemaCompensationHistogramRequest*): Self = StObject.set(x, "compensationHistogramFacets", js.Array(value :_*))
     
     @scala.inline
-    def setCompensationHistogramFacetsVarargs(value: SchemaCompensationHistogramRequest*): Self = this.set("compensationHistogramFacets", js.Array(value :_*))
+    def setCustomAttributeHistogramFacets(value: js.Array[SchemaCustomAttributeHistogramRequest]): Self = StObject.set(x, "customAttributeHistogramFacets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompensationHistogramFacets(value: js.Array[SchemaCompensationHistogramRequest]): Self = this.set("compensationHistogramFacets", value.asInstanceOf[js.Any])
+    def setCustomAttributeHistogramFacetsUndefined: Self = StObject.set(x, "customAttributeHistogramFacets", js.undefined)
     
     @scala.inline
-    def deleteCompensationHistogramFacets: Self = this.set("compensationHistogramFacets", js.undefined)
+    def setCustomAttributeHistogramFacetsVarargs(value: SchemaCustomAttributeHistogramRequest*): Self = StObject.set(x, "customAttributeHistogramFacets", js.Array(value :_*))
     
     @scala.inline
-    def setCustomAttributeHistogramFacetsVarargs(value: SchemaCustomAttributeHistogramRequest*): Self = this.set("customAttributeHistogramFacets", js.Array(value :_*))
+    def setSimpleHistogramFacets(value: js.Array[String]): Self = StObject.set(x, "simpleHistogramFacets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomAttributeHistogramFacets(value: js.Array[SchemaCustomAttributeHistogramRequest]): Self = this.set("customAttributeHistogramFacets", value.asInstanceOf[js.Any])
+    def setSimpleHistogramFacetsUndefined: Self = StObject.set(x, "simpleHistogramFacets", js.undefined)
     
     @scala.inline
-    def deleteCustomAttributeHistogramFacets: Self = this.set("customAttributeHistogramFacets", js.undefined)
-    
-    @scala.inline
-    def setSimpleHistogramFacetsVarargs(value: String*): Self = this.set("simpleHistogramFacets", js.Array(value :_*))
-    
-    @scala.inline
-    def setSimpleHistogramFacets(value: js.Array[String]): Self = this.set("simpleHistogramFacets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSimpleHistogramFacets: Self = this.set("simpleHistogramFacets", js.undefined)
+    def setSimpleHistogramFacetsVarargs(value: String*): Self = StObject.set(x, "simpleHistogramFacets", js.Array(value :_*))
   }
 }

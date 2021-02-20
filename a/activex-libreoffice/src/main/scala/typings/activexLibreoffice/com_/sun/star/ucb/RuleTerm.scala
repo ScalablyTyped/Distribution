@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.ucb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A term is used to select objects to which a rule should apply.
   */
 @js.native
-trait RuleTerm extends js.Object {
+trait RuleTerm extends StObject {
   
   /** this flag indicates whether a string "operand" shall be compared case sensitive. */
   var CaseSensitive: Boolean = js.native
@@ -46,33 +47,21 @@ object RuleTerm {
   }
   
   @scala.inline
-  implicit class RuleTermOps[Self <: RuleTerm] (val x: Self) extends AnyVal {
+  implicit class RuleTermMutableBuilder[Self <: RuleTerm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "CaseSensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperand(value: js.Any): Self = StObject.set(x, "Operand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperator(value: Double): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseSensitive(value: Boolean): Self = this.set("CaseSensitive", value.asInstanceOf[js.Any])
+    def setProperty(value: String): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperand(value: js.Any): Self = this.set("Operand", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperator(value: Double): Self = this.set("Operator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperty(value: String): Self = this.set("Property", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegularExpression(value: Boolean): Self = this.set("RegularExpression", value.asInstanceOf[js.Any])
+    def setRegularExpression(value: Boolean): Self = StObject.set(x, "RegularExpression", value.asInstanceOf[js.Any])
   }
 }

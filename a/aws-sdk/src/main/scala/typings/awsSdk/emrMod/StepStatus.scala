@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StepStatus extends js.Object {
+trait StepStatus extends StObject {
   
   /**
     * The details for the step failure including reason, message, and log file path where the root cause was identified.
@@ -36,42 +37,30 @@ object StepStatus {
   }
   
   @scala.inline
-  implicit class StepStatusOps[Self <: StepStatus] (val x: Self) extends AnyVal {
+  implicit class StepStatusMutableBuilder[Self <: StepStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailureDetails(value: FailureDetails): Self = StObject.set(x, "FailureDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailureDetailsUndefined: Self = StObject.set(x, "FailureDetails", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setState(value: StepState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureDetails(value: FailureDetails): Self = this.set("FailureDetails", value.asInstanceOf[js.Any])
+    def setStateChangeReason(value: StepStateChangeReason): Self = StObject.set(x, "StateChangeReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFailureDetails: Self = this.set("FailureDetails", js.undefined)
+    def setStateChangeReasonUndefined: Self = StObject.set(x, "StateChangeReason", js.undefined)
     
     @scala.inline
-    def setState(value: StepState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setTimeline(value: StepTimeline): Self = StObject.set(x, "Timeline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateChangeReason(value: StepStateChangeReason): Self = this.set("StateChangeReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateChangeReason: Self = this.set("StateChangeReason", js.undefined)
-    
-    @scala.inline
-    def setTimeline(value: StepTimeline): Self = this.set("Timeline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeline: Self = this.set("Timeline", js.undefined)
+    def setTimelineUndefined: Self = StObject.set(x, "Timeline", js.undefined)
   }
 }

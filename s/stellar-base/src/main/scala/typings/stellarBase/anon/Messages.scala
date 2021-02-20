@@ -1,12 +1,13 @@
 package typings.stellarBase.anon
 
 import typings.stellarBase.xdrMod.xdr.ScpEnvelope
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Messages extends js.Object {
+trait Messages extends StObject {
   
   var ledgerSeq: Double = js.native
   
@@ -21,27 +22,15 @@ object Messages {
   }
   
   @scala.inline
-  implicit class MessagesOps[Self <: Messages] (val x: Self) extends AnyVal {
+  implicit class MessagesMutableBuilder[Self <: Messages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLedgerSeq(value: Double): Self = StObject.set(x, "ledgerSeq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessages(value: js.Array[ScpEnvelope]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLedgerSeq(value: Double): Self = this.set("ledgerSeq", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessagesVarargs(value: ScpEnvelope*): Self = this.set("messages", js.Array(value :_*))
-    
-    @scala.inline
-    def setMessages(value: js.Array[ScpEnvelope]): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setMessagesVarargs(value: ScpEnvelope*): Self = StObject.set(x, "messages", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.iobroker.anon
 
 import typings.iobroker.mod.global.ioBroker.ChownFileResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Entries extends js.Object {
+trait Entries extends StObject {
   
   var entries: js.Array[ChownFileResult] = js.native
   
@@ -21,27 +22,15 @@ object Entries {
   }
   
   @scala.inline
-  implicit class EntriesOps[Self <: Entries] (val x: Self) extends AnyVal {
+  implicit class EntriesMutableBuilder[Self <: Entries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntries(value: js.Array[ChownFileResult]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntriesVarargs(value: ChownFileResult*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEntriesVarargs(value: ChownFileResult*): Self = this.set("entries", js.Array(value :_*))
-    
-    @scala.inline
-    def setEntries(value: js.Array[ChownFileResult]): Self = this.set("entries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

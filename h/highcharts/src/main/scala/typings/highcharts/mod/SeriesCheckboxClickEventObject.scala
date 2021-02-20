@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
 import typings.highcharts.highchartsStrings.checkboxClick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SeriesCheckboxClickEventObject extends js.Object {
+trait SeriesCheckboxClickEventObject extends StObject {
   
   /**
     * Whether the box has been checked.
@@ -38,30 +39,18 @@ object SeriesCheckboxClickEventObject {
   }
   
   @scala.inline
-  implicit class SeriesCheckboxClickEventObjectOps[Self <: SeriesCheckboxClickEventObject] (val x: Self) extends AnyVal {
+  implicit class SeriesCheckboxClickEventObjectMutableBuilder[Self <: SeriesCheckboxClickEventObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItem(value: Series): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTarget(value: Series): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecked(value: Boolean): Self = this.set("checked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItem(value: Series): Self = this.set("item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: Series): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: checkboxClick): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: checkboxClick): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

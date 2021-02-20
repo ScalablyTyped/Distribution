@@ -7,16 +7,16 @@ import typings.three.webGLInfoMod.WebGLInfo
 import typings.three.webGLPropertiesMod.WebGLProperties
 import typings.three.webGLStateMod.WebGLState
 import typings.three.webGLUtilsMod.WebGLUtils
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/renderers/webgl/WebGLTextures", JSImport.Namespace)
-@js.native
-object webGLTexturesMod extends js.Object {
+object webGLTexturesMod {
   
+  @JSImport("three/src/renderers/webgl/WebGLTextures", "WebGLTextures")
   @js.native
-  class WebGLTextures protected () extends js.Object {
+  class WebGLTextures protected () extends StObject {
     def this(
       gl: WebGLRenderingContext,
       extensions: WebGLExtensions,

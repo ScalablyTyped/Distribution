@@ -1,11 +1,12 @@
 package typings.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueueReorderItemsRequest extends js.Object {
+trait QueueReorderItemsRequest extends StObject {
   
   var customData: js.Object = js.native
   
@@ -22,30 +23,18 @@ object QueueReorderItemsRequest {
   }
   
   @scala.inline
-  implicit class QueueReorderItemsRequestOps[Self <: QueueReorderItemsRequest] (val x: Self) extends AnyVal {
+  implicit class QueueReorderItemsRequestMutableBuilder[Self <: QueueReorderItemsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsertBefore(value: Double): Self = StObject.set(x, "insertBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemIds(value: js.Array[Double]): Self = StObject.set(x, "itemIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomData(value: js.Object): Self = this.set("customData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInsertBefore(value: Double): Self = this.set("insertBefore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemIdsVarargs(value: Double*): Self = this.set("itemIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setItemIds(value: js.Array[Double]): Self = this.set("itemIds", value.asInstanceOf[js.Any])
+    def setItemIdsVarargs(value: Double*): Self = StObject.set(x, "itemIds", js.Array(value :_*))
   }
 }

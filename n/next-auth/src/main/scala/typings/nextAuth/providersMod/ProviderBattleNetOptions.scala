@@ -1,11 +1,12 @@
 package typings.nextAuth.providersMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProviderBattleNetOptions extends js.Object {
+trait ProviderBattleNetOptions extends StObject {
   
   var clientId: String = js.native
   
@@ -22,27 +23,15 @@ object ProviderBattleNetOptions {
   }
   
   @scala.inline
-  implicit class ProviderBattleNetOptionsOps[Self <: ProviderBattleNetOptions] (val x: Self) extends AnyVal {
+  implicit class ProviderBattleNetOptionsMutableBuilder[Self <: ProviderBattleNetOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientSecret(value: String): Self = this.set("clientSecret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
   }
 }

@@ -4,12 +4,13 @@ import typings.chromeApps.chrome.bluetooth.AdapterState
 import typings.chromeApps.chrome.bluetooth.BluetoothEvent
 import typings.chromeApps.chrome.bluetooth.Device
 import typings.chromeApps.chrome.bluetooth.DeviceFilter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofbluetooth extends js.Object {
+trait Typeofbluetooth extends StObject {
   
   /** Get information about the Bluetooth adapter. */
   def getAdapterState(callback: js.Function1[/* adapterInfo */ AdapterState, Unit]): Unit = js.native

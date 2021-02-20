@@ -1,12 +1,13 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.cluster
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureReductionClusterProperties extends js.Object {
+trait FeatureReductionClusterProperties extends StObject {
   
   /**
     * Defines the symbol size of the largest cluster in points (or pixels if specified).
@@ -73,69 +74,57 @@ object FeatureReductionClusterProperties {
   }
   
   @scala.inline
-  implicit class FeatureReductionClusterPropertiesOps[Self <: FeatureReductionClusterProperties] (val x: Self) extends AnyVal {
+  implicit class FeatureReductionClusterPropertiesMutableBuilder[Self <: FeatureReductionClusterProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterMaxSize(value: Double | String): Self = StObject.set(x, "clusterMaxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterMaxSizeUndefined: Self = StObject.set(x, "clusterMaxSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterMinSize(value: Double | String): Self = StObject.set(x, "clusterMinSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterMaxSize(value: Double | String): Self = this.set("clusterMaxSize", value.asInstanceOf[js.Any])
+    def setClusterMinSizeUndefined: Self = StObject.set(x, "clusterMinSize", js.undefined)
     
     @scala.inline
-    def deleteClusterMaxSize: Self = this.set("clusterMaxSize", js.undefined)
+    def setClusterRadius(value: Double | String): Self = StObject.set(x, "clusterRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterMinSize(value: Double | String): Self = this.set("clusterMinSize", value.asInstanceOf[js.Any])
+    def setClusterRadiusUndefined: Self = StObject.set(x, "clusterRadius", js.undefined)
     
     @scala.inline
-    def deleteClusterMinSize: Self = this.set("clusterMinSize", js.undefined)
+    def setLabelingInfo(value: js.Array[LabelClassProperties]): Self = StObject.set(x, "labelingInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterRadius(value: Double | String): Self = this.set("clusterRadius", value.asInstanceOf[js.Any])
+    def setLabelingInfoUndefined: Self = StObject.set(x, "labelingInfo", js.undefined)
     
     @scala.inline
-    def deleteClusterRadius: Self = this.set("clusterRadius", js.undefined)
+    def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value :_*))
     
     @scala.inline
-    def setLabelingInfoVarargs(value: LabelClassProperties*): Self = this.set("labelingInfo", js.Array(value :_*))
+    def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelingInfo(value: js.Array[LabelClassProperties]): Self = this.set("labelingInfo", value.asInstanceOf[js.Any])
+    def setLabelsVisibleUndefined: Self = StObject.set(x, "labelsVisible", js.undefined)
     
     @scala.inline
-    def deleteLabelingInfo: Self = this.set("labelingInfo", js.undefined)
+    def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelsVisible(value: Boolean): Self = this.set("labelsVisible", value.asInstanceOf[js.Any])
+    def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
     
     @scala.inline
-    def deleteLabelsVisible: Self = this.set("labelsVisible", js.undefined)
+    def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupEnabled(value: Boolean): Self = this.set("popupEnabled", value.asInstanceOf[js.Any])
+    def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
     
     @scala.inline
-    def deletePopupEnabled: Self = this.set("popupEnabled", js.undefined)
+    def setType(value: cluster): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupTemplate(value: PopupTemplateProperties): Self = this.set("popupTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePopupTemplate: Self = this.set("popupTemplate", js.undefined)
-    
-    @scala.inline
-    def setType(value: cluster): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

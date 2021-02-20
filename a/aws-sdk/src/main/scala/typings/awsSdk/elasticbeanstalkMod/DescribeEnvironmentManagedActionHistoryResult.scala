@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEnvironmentManagedActionHistoryResult extends js.Object {
+trait DescribeEnvironmentManagedActionHistoryResult extends StObject {
   
   /**
     * A list of completed and failed managed actions.
@@ -26,33 +27,21 @@ object DescribeEnvironmentManagedActionHistoryResult {
   }
   
   @scala.inline
-  implicit class DescribeEnvironmentManagedActionHistoryResultOps[Self <: DescribeEnvironmentManagedActionHistoryResult] (val x: Self) extends AnyVal {
+  implicit class DescribeEnvironmentManagedActionHistoryResultMutableBuilder[Self <: DescribeEnvironmentManagedActionHistoryResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setManagedActionHistoryItems(value: ManagedActionHistoryItems): Self = StObject.set(x, "ManagedActionHistoryItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManagedActionHistoryItemsUndefined: Self = StObject.set(x, "ManagedActionHistoryItems", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManagedActionHistoryItemsVarargs(value: ManagedActionHistoryItem*): Self = StObject.set(x, "ManagedActionHistoryItems", js.Array(value :_*))
     
     @scala.inline
-    def setManagedActionHistoryItemsVarargs(value: ManagedActionHistoryItem*): Self = this.set("ManagedActionHistoryItems", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagedActionHistoryItems(value: ManagedActionHistoryItems): Self = this.set("ManagedActionHistoryItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManagedActionHistoryItems: Self = this.set("ManagedActionHistoryItems", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codeguruprofilerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Channel extends js.Object {
+trait Channel extends StObject {
   
   /**
     * List of publishers for different type of events that may be detected in an application from the profile. Anomaly detection is the only event publisher in Profiler.
@@ -31,33 +32,21 @@ object Channel {
   }
   
   @scala.inline
-  implicit class ChannelOps[Self <: Channel] (val x: Self) extends AnyVal {
+  implicit class ChannelMutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventPublishers(value: EventPublishers): Self = StObject.set(x, "eventPublishers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventPublishersVarargs(value: EventPublisher*): Self = StObject.set(x, "eventPublishers", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: ChannelId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventPublishersVarargs(value: EventPublisher*): Self = this.set("eventPublishers", js.Array(value :_*))
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setEventPublishers(value: EventPublishers): Self = this.set("eventPublishers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUri(value: ChannelUri): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: ChannelId): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setUri(value: ChannelUri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

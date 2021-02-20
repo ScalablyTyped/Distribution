@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.tfvcInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TfvcChangesetSearchCriteria extends js.Object {
+trait TfvcChangesetSearchCriteria extends StObject {
   
   /**
     * Alias or display name of user who made the changes
@@ -65,42 +66,30 @@ object TfvcChangesetSearchCriteria {
   }
   
   @scala.inline
-  implicit class TfvcChangesetSearchCriteriaOps[Self <: TfvcChangesetSearchCriteria] (val x: Self) extends AnyVal {
+  implicit class TfvcChangesetSearchCriteriaMutableBuilder[Self <: TfvcChangesetSearchCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFollowRenames(value: Boolean): Self = StObject.set(x, "followRenames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFromDate(value: String): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: String): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setFromId(value: Double): Self = StObject.set(x, "fromId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowRenames(value: Boolean): Self = this.set("followRenames", value.asInstanceOf[js.Any])
+    def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromDate(value: String): Self = this.set("fromDate", value.asInstanceOf[js.Any])
+    def setItemPath(value: String): Self = StObject.set(x, "itemPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromId(value: Double): Self = this.set("fromId", value.asInstanceOf[js.Any])
+    def setToDate(value: String): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeLinks(value: Boolean): Self = this.set("includeLinks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemPath(value: String): Self = this.set("itemPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToDate(value: String): Self = this.set("toDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToId(value: Double): Self = this.set("toId", value.asInstanceOf[js.Any])
+    def setToId(value: Double): Self = StObject.set(x, "toId", value.asInstanceOf[js.Any])
   }
 }

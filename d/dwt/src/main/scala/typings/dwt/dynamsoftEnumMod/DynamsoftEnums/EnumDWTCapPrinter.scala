@@ -1,57 +1,49 @@
 package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EnumDWTCapPrinter extends js.Object
+sealed trait EnumDWTCapPrinter extends StObject
 /** CAP_PRINTER values. */
 @JSImport("dwt/Dynamsoft.Enum", "DynamsoftEnums.EnumDWT_CapPrinter")
 @js.native
-object EnumDWTCapPrinter extends js.Object {
+object EnumDWTCapPrinter extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWTCapPrinter with Double] = js.native
   
   @js.native
   sealed trait TWPR_ENDORSERBOTTOMAFTER extends EnumDWTCapPrinter
-  /* 7 */ @js.native
-  object TWPR_ENDORSERBOTTOMAFTER extends TopLevel[TWPR_ENDORSERBOTTOMAFTER with Double]
+  /* 7 */ val TWPR_ENDORSERBOTTOMAFTER: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapPrinter.TWPR_ENDORSERBOTTOMAFTER with Double = js.native
   
   @js.native
   sealed trait TWPR_ENDORSERBOTTOMBEFORE extends EnumDWTCapPrinter
-  /* 6 */ @js.native
-  object TWPR_ENDORSERBOTTOMBEFORE extends TopLevel[TWPR_ENDORSERBOTTOMBEFORE with Double]
+  /* 6 */ val TWPR_ENDORSERBOTTOMBEFORE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapPrinter.TWPR_ENDORSERBOTTOMBEFORE with Double = js.native
   
   @js.native
   sealed trait TWPR_ENDORSERTOPAFTER extends EnumDWTCapPrinter
-  /* 5 */ @js.native
-  object TWPR_ENDORSERTOPAFTER extends TopLevel[TWPR_ENDORSERTOPAFTER with Double]
+  /* 5 */ val TWPR_ENDORSERTOPAFTER: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapPrinter.TWPR_ENDORSERTOPAFTER with Double = js.native
   
   @js.native
   sealed trait TWPR_ENDORSERTOPBEFORE extends EnumDWTCapPrinter
-  /* 4 */ @js.native
-  object TWPR_ENDORSERTOPBEFORE extends TopLevel[TWPR_ENDORSERTOPBEFORE with Double]
+  /* 4 */ val TWPR_ENDORSERTOPBEFORE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapPrinter.TWPR_ENDORSERTOPBEFORE with Double = js.native
   
   @js.native
   sealed trait TWPR_IMPRINTERBOTTOMAFTER extends EnumDWTCapPrinter
-  /* 3 */ @js.native
-  object TWPR_IMPRINTERBOTTOMAFTER extends TopLevel[TWPR_IMPRINTERBOTTOMAFTER with Double]
+  /* 3 */ val TWPR_IMPRINTERBOTTOMAFTER: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapPrinter.TWPR_IMPRINTERBOTTOMAFTER with Double = js.native
   
   @js.native
   sealed trait TWPR_IMPRINTERBOTTOMBEFORE extends EnumDWTCapPrinter
-  /* 2 */ @js.native
-  object TWPR_IMPRINTERBOTTOMBEFORE extends TopLevel[TWPR_IMPRINTERBOTTOMBEFORE with Double]
+  /* 2 */ val TWPR_IMPRINTERBOTTOMBEFORE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapPrinter.TWPR_IMPRINTERBOTTOMBEFORE with Double = js.native
   
   @js.native
   sealed trait TWPR_IMPRINTERTOPAFTER extends EnumDWTCapPrinter
-  /* 1 */ @js.native
-  object TWPR_IMPRINTERTOPAFTER extends TopLevel[TWPR_IMPRINTERTOPAFTER with Double]
+  /* 1 */ val TWPR_IMPRINTERTOPAFTER: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapPrinter.TWPR_IMPRINTERTOPAFTER with Double = js.native
   
   @js.native
   sealed trait TWPR_IMPRINTERTOPBEFORE extends EnumDWTCapPrinter
-  /* 0 */ @js.native
-  object TWPR_IMPRINTERTOPBEFORE extends TopLevel[TWPR_IMPRINTERTOPBEFORE with Double]
+  /* 0 */ val TWPR_IMPRINTERTOPBEFORE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapPrinter.TWPR_IMPRINTERTOPBEFORE with Double = js.native
 }

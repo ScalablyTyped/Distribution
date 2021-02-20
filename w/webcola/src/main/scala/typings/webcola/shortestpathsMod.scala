@@ -1,15 +1,15 @@
 package typings.webcola
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webcola/dist/src/shortestpaths", JSImport.Namespace)
-@js.native
-object shortestpathsMod extends js.Object {
+object shortestpathsMod {
   
+  @JSImport("webcola/dist/src/shortestpaths", "Calculator")
   @js.native
-  class Calculator[Link] protected () extends js.Object {
+  class Calculator[Link] protected () extends StObject {
     def this(
       n: Double,
       es: js.Array[Link],

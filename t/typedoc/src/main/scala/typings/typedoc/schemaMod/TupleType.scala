@@ -1,5 +1,6 @@
 package typings.typedoc.schemaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,33 +25,21 @@ object TupleType {
   }
   
   @scala.inline
-  implicit class TupleTypeOps[Self <: TupleType] (val x: Self) extends AnyVal {
+  implicit class TupleTypeMutableBuilder[Self <: TupleType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElements(value: ModelToObject[js.Array[typings.typedoc.typesAbstractMod.Type]]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElementsVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
     @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = this.set("type", js.Array(value :_*))
+    def setType(value: (ModelToObject[/* "tuple" */ String]) | (/* "tuple" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: (ModelToObject[/* "tuple" */ String]) | (/* "tuple" */ String)): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setElementsVarargs(value: _ModelToObject[js.Any]*): Self = this.set("elements", js.Array(value :_*))
-    
-    @scala.inline
-    def setElements(value: ModelToObject[js.Array[typings.typedoc.typesAbstractMod.Type]]): Self = this.set("elements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteElements: Self = this.set("elements", js.undefined)
+    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

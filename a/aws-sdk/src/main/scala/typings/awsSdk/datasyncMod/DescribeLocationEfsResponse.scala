@@ -1,11 +1,12 @@
 package typings.awsSdk.datasyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeLocationEfsResponse extends js.Object {
+trait DescribeLocationEfsResponse extends StObject {
   
   /**
     * The time that the EFS location was created.
@@ -33,42 +34,30 @@ object DescribeLocationEfsResponse {
   }
   
   @scala.inline
-  implicit class DescribeLocationEfsResponseOps[Self <: DescribeLocationEfsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeLocationEfsResponseMutableBuilder[Self <: DescribeLocationEfsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEc2Config(value: Ec2Config): Self = StObject.set(x, "Ec2Config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Time): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setEc2ConfigUndefined: Self = StObject.set(x, "Ec2Config", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEc2Config(value: Ec2Config): Self = this.set("Ec2Config", value.asInstanceOf[js.Any])
+    def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
     
     @scala.inline
-    def deleteEc2Config: Self = this.set("Ec2Config", js.undefined)
+    def setLocationUri(value: LocationUri): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationArn(value: LocationArn): Self = this.set("LocationArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocationArn: Self = this.set("LocationArn", js.undefined)
-    
-    @scala.inline
-    def setLocationUri(value: LocationUri): Self = this.set("LocationUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocationUri: Self = this.set("LocationUri", js.undefined)
+    def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
   }
 }

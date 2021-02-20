@@ -2,12 +2,13 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Deployment extends js.Object {
+trait Deployment extends StObject {
   
   /**
     * Gets links to access the deployment.
@@ -145,90 +146,78 @@ object Deployment {
   }
   
   @scala.inline
-  implicit class DeploymentOps[Self <: Deployment] (val x: Self) extends AnyVal {
+  implicit class DeploymentMutableBuilder[Self <: Deployment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttempt(value: Double): Self = StObject.set(x, "attempt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletedOn(value: Date): Self = StObject.set(x, "completedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditions(value: js.Array[Condition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_links(value: js.Any): Self = this.set("_links", value.asInstanceOf[js.Any])
+    def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def setAttempt(value: Double): Self = this.set("attempt", value.asInstanceOf[js.Any])
+    def setDefinitionEnvironmentId(value: Double): Self = StObject.set(x, "definitionEnvironmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedOn(value: Date): Self = this.set("completedOn", value.asInstanceOf[js.Any])
+    def setDeploymentStatus(value: DeploymentStatus): Self = StObject.set(x, "deploymentStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionsVarargs(value: Condition*): Self = this.set("conditions", js.Array(value :_*))
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: js.Array[Condition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setLastModifiedBy(value: IdentityRef): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionEnvironmentId(value: Double): Self = this.set("definitionEnvironmentId", value.asInstanceOf[js.Any])
+    def setLastModifiedOn(value: Date): Self = StObject.set(x, "lastModifiedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentStatus(value: DeploymentStatus): Self = this.set("deploymentStatus", value.asInstanceOf[js.Any])
+    def setOperationStatus(value: DeploymentOperationStatus): Self = StObject.set(x, "operationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPostDeployApprovals(value: js.Array[ReleaseApproval]): Self = StObject.set(x, "postDeployApprovals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedBy(value: IdentityRef): Self = this.set("lastModifiedBy", value.asInstanceOf[js.Any])
+    def setPostDeployApprovalsVarargs(value: ReleaseApproval*): Self = StObject.set(x, "postDeployApprovals", js.Array(value :_*))
     
     @scala.inline
-    def setLastModifiedOn(value: Date): Self = this.set("lastModifiedOn", value.asInstanceOf[js.Any])
+    def setPreDeployApprovals(value: js.Array[ReleaseApproval]): Self = StObject.set(x, "preDeployApprovals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationStatus(value: DeploymentOperationStatus): Self = this.set("operationStatus", value.asInstanceOf[js.Any])
+    def setPreDeployApprovalsVarargs(value: ReleaseApproval*): Self = StObject.set(x, "preDeployApprovals", js.Array(value :_*))
     
     @scala.inline
-    def setPostDeployApprovalsVarargs(value: ReleaseApproval*): Self = this.set("postDeployApprovals", js.Array(value :_*))
+    def setQueuedOn(value: Date): Self = StObject.set(x, "queuedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostDeployApprovals(value: js.Array[ReleaseApproval]): Self = this.set("postDeployApprovals", value.asInstanceOf[js.Any])
+    def setReason(value: DeploymentReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreDeployApprovalsVarargs(value: ReleaseApproval*): Self = this.set("preDeployApprovals", js.Array(value :_*))
+    def setRelease(value: ReleaseReference): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreDeployApprovals(value: js.Array[ReleaseApproval]): Self = this.set("preDeployApprovals", value.asInstanceOf[js.Any])
+    def setReleaseDefinition(value: ReleaseDefinitionShallowReference): Self = StObject.set(x, "releaseDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueuedOn(value: Date): Self = this.set("queuedOn", value.asInstanceOf[js.Any])
+    def setReleaseEnvironment(value: ReleaseEnvironmentShallowReference): Self = StObject.set(x, "releaseEnvironment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: DeploymentReason): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setRequestedBy(value: IdentityRef): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelease(value: ReleaseReference): Self = this.set("release", value.asInstanceOf[js.Any])
+    def setRequestedFor(value: IdentityRef): Self = StObject.set(x, "requestedFor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseDefinition(value: ReleaseDefinitionShallowReference): Self = this.set("releaseDefinition", value.asInstanceOf[js.Any])
+    def setScheduledDeploymentTime(value: Date): Self = StObject.set(x, "scheduledDeploymentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseEnvironment(value: ReleaseEnvironmentShallowReference): Self = this.set("releaseEnvironment", value.asInstanceOf[js.Any])
+    def setStartedOn(value: Date): Self = StObject.set(x, "startedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedBy(value: IdentityRef): Self = this.set("requestedBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestedFor(value: IdentityRef): Self = this.set("requestedFor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScheduledDeploymentTime(value: Date): Self = this.set("scheduledDeploymentTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartedOn(value: Date): Self = this.set("startedOn", value.asInstanceOf[js.Any])
+    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

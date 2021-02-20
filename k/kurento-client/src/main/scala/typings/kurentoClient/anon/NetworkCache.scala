@@ -1,11 +1,12 @@
 package typings.kurentoClient.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkCache extends js.Object {
+trait NetworkCache extends StObject {
   
   var networkCache: js.UndefOr[Double] = js.native
   
@@ -22,33 +23,21 @@ object NetworkCache {
   }
   
   @scala.inline
-  implicit class NetworkCacheOps[Self <: NetworkCache] (val x: Self) extends AnyVal {
+  implicit class NetworkCacheMutableBuilder[Self <: NetworkCache] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNetworkCache(value: Double): Self = StObject.set(x, "networkCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNetworkCacheUndefined: Self = StObject.set(x, "networkCache", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setUseEncodedMedia(value: Boolean): Self = StObject.set(x, "useEncodedMedia", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkCache(value: Double): Self = this.set("networkCache", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkCache: Self = this.set("networkCache", js.undefined)
-    
-    @scala.inline
-    def setUseEncodedMedia(value: Boolean): Self = this.set("useEncodedMedia", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseEncodedMedia: Self = this.set("useEncodedMedia", js.undefined)
+    def setUseEncodedMediaUndefined: Self = StObject.set(x, "useEncodedMedia", js.undefined)
   }
 }

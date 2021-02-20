@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociateProductWithPortfolioInput extends js.Object {
+trait AssociateProductWithPortfolioInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
@@ -36,36 +37,24 @@ object AssociateProductWithPortfolioInput {
   }
   
   @scala.inline
-  implicit class AssociateProductWithPortfolioInputOps[Self <: AssociateProductWithPortfolioInput] (val x: Self) extends AnyVal {
+  implicit class AssociateProductWithPortfolioInputMutableBuilder[Self <: AssociateProductWithPortfolioInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPortfolioId(value: Id): Self = StObject.set(x, "PortfolioId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortfolioId(value: Id): Self = this.set("PortfolioId", value.asInstanceOf[js.Any])
+    def setProductId(value: Id): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: Id): Self = this.set("ProductId", value.asInstanceOf[js.Any])
+    def setSourcePortfolioId(value: Id): Self = StObject.set(x, "SourcePortfolioId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = this.set("AcceptLanguage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAcceptLanguage: Self = this.set("AcceptLanguage", js.undefined)
-    
-    @scala.inline
-    def setSourcePortfolioId(value: Id): Self = this.set("SourcePortfolioId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourcePortfolioId: Self = this.set("SourcePortfolioId", js.undefined)
+    def setSourcePortfolioIdUndefined: Self = StObject.set(x, "SourcePortfolioId", js.undefined)
   }
 }

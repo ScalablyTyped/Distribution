@@ -5,16 +5,16 @@ import typings.std.JSON
 import typings.webdriverManager.optionsMod.MinimistArgs
 import typings.webdriverManager.optionsMod.Option
 import typings.webdriverManager.optionsMod.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webdriver-manager/built/lib/cli/programs", JSImport.Namespace)
-@js.native
-object programsMod extends js.Object {
+object programsMod {
   
+  @JSImport("webdriver-manager/built/lib/cli/programs", "Program")
   @js.native
-  class Program () extends js.Object {
+  class Program () extends StObject {
     
     /**
       * Registers a method that will be used to run the program.
@@ -122,10 +122,17 @@ object programsMod extends js.Object {
     var version: String = js.native
   }
   /* static members */
-  @js.native
-  object Program extends js.Object {
+  object Program {
     
-    var MIN_SPACING: Double = js.native
+    @JSImport("webdriver-manager/built/lib/cli/programs", "Program")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("webdriver-manager/built/lib/cli/programs", "Program.MIN_SPACING")
+    @js.native
+    def MIN_SPACING: Double = js.native
+    @scala.inline
+    def MIN_SPACING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_SPACING")(x.asInstanceOf[js.Any])
   }
   
   type Programs = StringDictionary[Program]

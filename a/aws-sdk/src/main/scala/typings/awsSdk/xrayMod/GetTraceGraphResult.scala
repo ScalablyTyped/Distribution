@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTraceGraphResult extends js.Object {
+trait GetTraceGraphResult extends StObject {
   
   /**
     * Pagination token.
@@ -26,33 +27,21 @@ object GetTraceGraphResult {
   }
   
   @scala.inline
-  implicit class GetTraceGraphResultOps[Self <: GetTraceGraphResult] (val x: Self) extends AnyVal {
+  implicit class GetTraceGraphResultMutableBuilder[Self <: GetTraceGraphResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServices(value: ServiceList): Self = StObject.set(x, "Services", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setServicesVarargs(value: Service*): Self = this.set("Services", js.Array(value :_*))
-    
-    @scala.inline
-    def setServices(value: ServiceList): Self = this.set("Services", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServices: Self = this.set("Services", js.undefined)
+    def setServicesVarargs(value: Service*): Self = StObject.set(x, "Services", js.Array(value :_*))
   }
 }

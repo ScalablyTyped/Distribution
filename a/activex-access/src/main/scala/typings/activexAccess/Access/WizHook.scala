@@ -4,12 +4,13 @@ import typings.activexDao.DAO.Database
 import typings.activexDao.DAO.Workspace
 import typings.activexVbide.VBIDE.VBProject
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WizHook extends js.Object {
+trait WizHook extends StObject {
   
   @JSName("Access.WizHook_typekey")
   var AccessDotWizHook_typekey: WizHook = js.native
@@ -283,237 +284,225 @@ object WizHook {
   }
   
   @scala.inline
-  implicit class WizHookOps[Self <: WizHook] (val x: Self) extends AnyVal {
+  implicit class WizHookMutableBuilder[Self <: WizHook] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessDotWizHook_typekey(value: WizHook): Self = StObject.set(x, "Access.WizHook_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessUserDataDir(value: () => String): Self = StObject.set(x, "AccessUserDataDir", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessWizFilePath(value: String => String): Self = StObject.set(x, "AccessWizFilePath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAccessDotWizHook_typekey(value: WizHook): Self = this.set("Access.WizHook_typekey", value.asInstanceOf[js.Any])
+    def setAdpUIDPwd(value: (String, String) => Boolean): Self = StObject.set(x, "AdpUIDPwd", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAccessUserDataDir(value: () => String): Self = this.set("AccessUserDataDir", js.Any.fromFunction0(value))
+    def setAnalyzeQuery(value: (Workspace, Database, String, String) => Double): Self = StObject.set(x, "AnalyzeQuery", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setAccessWizFilePath(value: String => String): Self = this.set("AccessWizFilePath", js.Any.fromFunction1(value))
+    def setAnalyzeTable(value: (Workspace, Database, String, Boolean, String) => Double): Self = StObject.set(x, "AnalyzeTable", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setAdpUIDPwd(value: (String, String) => Boolean): Self = this.set("AdpUIDPwd", js.Any.fromFunction2(value))
+    def setArgsOfActid(value: Double => Double): Self = StObject.set(x, "ArgsOfActid", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnalyzeQuery(value: (Workspace, Database, String, String) => Double): Self = this.set("AnalyzeQuery", js.Any.fromFunction4(value))
+    def setBracketString(value: (String, Double) => Boolean): Self = StObject.set(x, "BracketString", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAnalyzeTable(value: (Workspace, Database, String, Boolean, String) => Double): Self = this.set("AnalyzeTable", js.Any.fromFunction5(value))
+    def setCacheStatus(value: String => Unit): Self = StObject.set(x, "CacheStatus", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setArgsOfActid(value: Double => Double): Self = this.set("ArgsOfActid", js.Any.fromFunction1(value))
+    def setCloseCurrentDatabase(value: () => Boolean): Self = StObject.set(x, "CloseCurrentDatabase", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBracketString(value: (String, Double) => Boolean): Self = this.set("BracketString", js.Any.fromFunction2(value))
+    def setCreateDataPageControl(value: (String, String, Double, String, Double, String, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "CreateDataPageControl", js.Any.fromFunction10(value))
     
     @scala.inline
-    def setCacheStatus(value: String => Unit): Self = this.set("CacheStatus", js.Any.fromFunction1(value))
+    def setCurrentLangID(value: () => Double): Self = StObject.set(x, "CurrentLangID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCloseCurrentDatabase(value: () => Boolean): Self = this.set("CloseCurrentDatabase", js.Any.fromFunction0(value))
+    def setDbcVbProject(value: VBProject): Self = StObject.set(x, "DbcVbProject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDataPageControl(value: (String, String, Double, String, Double, String, Double, Double, Double, Double) => Unit): Self = this.set("CreateDataPageControl", js.Any.fromFunction10(value))
+    def setEmbedFileOnDataPage(value: (String, String) => String): Self = StObject.set(x, "EmbedFileOnDataPage", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCurrentLangID(value: () => Double): Self = this.set("CurrentLangID", js.Any.fromFunction0(value))
+    def setEnglishPictToLocal(value: (String, String) => Boolean): Self = StObject.set(x, "EnglishPictToLocal", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDbcVbProject(value: VBProject): Self = this.set("DbcVbProject", value.asInstanceOf[js.Any])
+    def setExecuteTempImexSpec(value: String => Unit): Self = StObject.set(x, "ExecuteTempImexSpec", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEmbedFileOnDataPage(value: (String, String) => String): Self = this.set("EmbedFileOnDataPage", js.Any.fromFunction2(value))
+    def setFCacheStatus(value: () => Boolean): Self = StObject.set(x, "FCacheStatus", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnglishPictToLocal(value: (String, String) => Boolean): Self = this.set("EnglishPictToLocal", js.Any.fromFunction2(value))
+    def setFCreateNameMap(value: (Double, String) => Boolean): Self = StObject.set(x, "FCreateNameMap", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setExecuteTempImexSpec(value: String => Unit): Self = this.set("ExecuteTempImexSpec", js.Any.fromFunction1(value))
+    def setFGetMSDE(value: Boolean => Boolean): Self = StObject.set(x, "FGetMSDE", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFCacheStatus(value: () => Boolean): Self = this.set("FCacheStatus", js.Any.fromFunction0(value))
+    def setFIsFEWch(value: Double => Boolean): Self = StObject.set(x, "FIsFEWch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFCreateNameMap(value: (Double, String) => Boolean): Self = this.set("FCreateNameMap", js.Any.fromFunction2(value))
+    def setFIsPublishedXasTable(value: String => Boolean): Self = StObject.set(x, "FIsPublishedXasTable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFGetMSDE(value: Boolean => Boolean): Self = this.set("FGetMSDE", js.Any.fromFunction1(value))
+    def setFIsValidXasObjectName(value: (String, AcObjectType) => Boolean): Self = StObject.set(x, "FIsValidXasObjectName", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFIsFEWch(value: Double => Boolean): Self = this.set("FIsFEWch", js.Any.fromFunction1(value))
+    def setFIsXasDb(value: () => Boolean): Self = StObject.set(x, "FIsXasDb", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFIsPublishedXasTable(value: String => Boolean): Self = this.set("FIsPublishedXasTable", js.Any.fromFunction1(value))
+    def setFileExists(value: String => Boolean): Self = StObject.set(x, "FileExists", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFIsValidXasObjectName(value: (String, AcObjectType) => Boolean): Self = this.set("FIsValidXasObjectName", js.Any.fromFunction2(value))
+    def setFirstDbcDataObject(value: (String, AcObjectType, Double) => Boolean): Self = StObject.set(x, "FirstDbcDataObject", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setFIsXasDb(value: () => Boolean): Self = this.set("FIsXasDb", js.Any.fromFunction0(value))
+    def setFullPath(value: (String, String) => Double): Self = StObject.set(x, "FullPath", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFileExists(value: String => Boolean): Self = this.set("FileExists", js.Any.fromFunction1(value))
+    def setGetAccWizRCPath(value: () => String): Self = StObject.set(x, "GetAccWizRCPath", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFirstDbcDataObject(value: (String, AcObjectType, Double) => Boolean): Self = this.set("FirstDbcDataObject", js.Any.fromFunction3(value))
+    def setGetAdeRegistryPath(value: () => String): Self = StObject.set(x, "GetAdeRegistryPath", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFullPath(value: (String, String) => Double): Self = this.set("FullPath", js.Any.fromFunction2(value))
+    def setGetColumns(value: String => String): Self = StObject.set(x, "GetColumns", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAccWizRCPath(value: () => String): Self = this.set("GetAccWizRCPath", js.Any.fromFunction0(value))
+    def setGetCurrentView(value: String => Double): Self = StObject.set(x, "GetCurrentView", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAdeRegistryPath(value: () => String): Self = this.set("GetAdeRegistryPath", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetColumns(value: String => String): Self = this.set("GetColumns", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetCurrentView(value: String => Double): Self = this.set("GetCurrentView", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetDisabledExtensions(value: () => String): Self = this.set("GetDisabledExtensions", js.Any.fromFunction0(value))
+    def setGetDisabledExtensions(value: () => String): Self = StObject.set(x, "GetDisabledExtensions", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetFileName(
       value: (Double, String, String, String, String, String, String, Double, Double, Double, Boolean) => Double
-    ): Self = this.set("GetFileName", js.Any.fromFunction11(value))
+    ): Self = StObject.set(x, "GetFileName", js.Any.fromFunction11(value))
     
     @scala.inline
     def setGetFileName2(
       value: (Double, String, String, String, String, String, String, Double, Double, Double, Boolean, js.Any) => Double
-    ): Self = this.set("GetFileName2", js.Any.fromFunction12(value))
+    ): Self = StObject.set(x, "GetFileName2", js.Any.fromFunction12(value))
     
     @scala.inline
-    def setGetFileOdso(value: (String, String) => Double): Self = this.set("GetFileOdso", js.Any.fromFunction2(value))
+    def setGetFileOdso(value: (String, String) => Double): Self = StObject.set(x, "GetFileOdso", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetImexTblName(value: () => String): Self = this.set("GetImexTblName", js.Any.fromFunction0(value))
+    def setGetImexTblName(value: () => String): Self = StObject.set(x, "GetImexTblName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInfoForColumns(value: String => String): Self = this.set("GetInfoForColumns", js.Any.fromFunction1(value))
+    def setGetInfoForColumns(value: String => String): Self = StObject.set(x, "GetInfoForColumns", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLinkedListProperty(value: (String, String, Boolean) => String): Self = this.set("GetLinkedListProperty", js.Any.fromFunction3(value))
+    def setGetLinkedListProperty(value: (String, String, Boolean) => String): Self = StObject.set(x, "GetLinkedListProperty", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetObjPubOption(value: (String, AcObjectType, Boolean) => Double): Self = this.set("GetObjPubOption", js.Any.fromFunction3(value))
+    def setGetObjPubOption(value: (String, AcObjectType, Boolean) => Double): Self = StObject.set(x, "GetObjPubOption", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetScriptString(value: (Double, Double, String) => Boolean): Self = this.set("GetScriptString", js.Any.fromFunction3(value))
+    def setGetScriptString(value: (Double, Double, String) => Boolean): Self = StObject.set(x, "GetScriptString", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetWizGlob(value: Double => js.Any): Self = this.set("GetWizGlob", js.Any.fromFunction1(value))
+    def setGetWizGlob(value: Double => js.Any): Self = StObject.set(x, "GetWizGlob", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGlobalProcExists(value: String => Boolean): Self = this.set("GlobalProcExists", js.Any.fromFunction1(value))
+    def setGlobalProcExists(value: String => Boolean): Self = StObject.set(x, "GlobalProcExists", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideDates(value: () => Boolean): Self = this.set("HideDates", js.Any.fromFunction0(value))
+    def setHideDates(value: () => Boolean): Self = StObject.set(x, "HideDates", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsMatchToDbcConnectString(value: String => Boolean): Self = this.set("IsMatchToDbcConnectString", js.Any.fromFunction1(value))
+    def setIsMatchToDbcConnectString(value: String => Boolean): Self = StObject.set(x, "IsMatchToDbcConnectString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = this.set("IsMemberSafe", js.Any.fromFunction1(value))
+    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsValidIdent(value: String => Boolean): Self = this.set("IsValidIdent", js.Any.fromFunction1(value))
+    def setIsValidIdent(value: String => Boolean): Self = StObject.set(x, "IsValidIdent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKey(value: Double): Self = this.set("Key", value.asInstanceOf[js.Any])
+    def setKey(value: Double): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboardLangID(value: () => Double): Self = this.set("KeyboardLangID", js.Any.fromFunction0(value))
+    def setKeyboardLangID(value: () => Double): Self = StObject.set(x, "KeyboardLangID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setKnownWizLeaks(value: Boolean => Unit): Self = this.set("KnownWizLeaks", js.Any.fromFunction1(value))
+    def setKnownWizLeaks(value: Boolean => Unit): Self = StObject.set(x, "KnownWizLeaks", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLoadImexSpecSolution(value: String => Unit): Self = this.set("LoadImexSpecSolution", js.Any.fromFunction1(value))
+    def setLoadImexSpecSolution(value: String => Unit): Self = StObject.set(x, "LoadImexSpecSolution", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLocalFont(value: () => String): Self = this.set("LocalFont", js.Any.fromFunction0(value))
+    def setLocalFont(value: () => String): Self = StObject.set(x, "LocalFont", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNameFromActid(value: Double => String): Self = this.set("NameFromActid", js.Any.fromFunction1(value))
+    def setNameFromActid(value: Double => String): Self = StObject.set(x, "NameFromActid", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setObjTypOfRecordSource(value: String => Double): Self = this.set("ObjTypOfRecordSource", js.Any.fromFunction1(value))
+    def setObjTypOfRecordSource(value: String => Double): Self = StObject.set(x, "ObjTypOfRecordSource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOfficeAddInDir(value: () => String): Self = this.set("OfficeAddInDir", js.Any.fromFunction0(value))
+    def setOfficeAddInDir(value: () => String): Self = StObject.set(x, "OfficeAddInDir", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOpenEmScript(value: (AccessProperty, Double, Double, Double) => Double): Self = this.set("OpenEmScript", js.Any.fromFunction4(value))
+    def setOpenEmScript(value: (AccessProperty, Double, Double, Double) => Double): Self = StObject.set(x, "OpenEmScript", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setOpenPictureFile(value: (String, Boolean) => Boolean): Self = this.set("OpenPictureFile", js.Any.fromFunction2(value))
+    def setOpenPictureFile(value: (String, Boolean) => Boolean): Self = StObject.set(x, "OpenPictureFile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOpenScript(value: (String, String, Double, Double, Double) => Double): Self = this.set("OpenScript", js.Any.fromFunction5(value))
+    def setOpenScript(value: (String, String, Double, Double, Double) => Double): Self = StObject.set(x, "OpenScript", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setReportLeaksToFile(value: (Boolean, String) => Unit): Self = this.set("ReportLeaksToFile", js.Any.fromFunction2(value))
+    def setReportLeaksToFile(value: (Boolean, String) => Unit): Self = StObject.set(x, "ReportLeaksToFile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSaveObject(value: (String, Double) => Unit): Self = this.set("SaveObject", js.Any.fromFunction2(value))
+    def setSaveObject(value: (String, Double) => Unit): Self = StObject.set(x, "SaveObject", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSaveScriptString(value: (Double, Double, String) => Boolean): Self = this.set("SaveScriptString", js.Any.fromFunction3(value))
+    def setSaveScriptString(value: (Double, Double, String) => Boolean): Self = StObject.set(x, "SaveScriptString", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSetDefaultSpecName(value: String => Unit): Self = this.set("SetDefaultSpecName", js.Any.fromFunction1(value))
+    def setSetDefaultSpecName(value: String => Unit): Self = StObject.set(x, "SetDefaultSpecName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDpBlockKeyInput(value: Boolean => Unit): Self = this.set("SetDpBlockKeyInput", js.Any.fromFunction1(value))
+    def setSetDpBlockKeyInput(value: Boolean => Unit): Self = StObject.set(x, "SetDpBlockKeyInput", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetVbaPassword(value: (String, String, String) => Boolean): Self = this.set("SetVbaPassword", js.Any.fromFunction3(value))
+    def setSetVbaPassword(value: (String, String, String) => Boolean): Self = StObject.set(x, "SetVbaPassword", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSetWizGlob(value: (Double, js.Any) => Unit): Self = this.set("SetWizGlob", js.Any.fromFunction2(value))
+    def setSetWizGlob(value: (Double, js.Any) => Unit): Self = StObject.set(x, "SetWizGlob", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSortStringArray(value: SafeArray[String] => Unit): Self = this.set("SortStringArray", js.Any.fromFunction1(value))
+    def setSortStringArray(value: SafeArray[String] => Unit): Self = StObject.set(x, "SortStringArray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSplitPath(value: (String, String, String, String, String) => Unit): Self = this.set("SplitPath", js.Any.fromFunction5(value))
+    def setSplitPath(value: (String, String, String, String, String) => Unit): Self = StObject.set(x, "SplitPath", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setTableFieldHasUniqueIndex(value: (String, String) => Boolean): Self = this.set("TableFieldHasUniqueIndex", js.Any.fromFunction2(value))
+    def setTableFieldHasUniqueIndex(value: (String, String) => Boolean): Self = StObject.set(x, "TableFieldHasUniqueIndex", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTranslateExpression(value: (String, String, Double, Double) => Boolean): Self = this.set("TranslateExpression", js.Any.fromFunction4(value))
+    def setTranslateExpression(value: (String, String, Double, Double) => Boolean): Self = StObject.set(x, "TranslateExpression", js.Any.fromFunction4(value))
     
     @scala.inline
     def setTwipsFromFont(
       value: (String, Double, Double, Boolean, Boolean, Double, String, Double, Double, Double) => Boolean
-    ): Self = this.set("TwipsFromFont", js.Any.fromFunction10(value))
+    ): Self = StObject.set(x, "TwipsFromFont", js.Any.fromFunction10(value))
     
     @scala.inline
-    def setWizCopyCmdbars(value: String => Unit): Self = this.set("WizCopyCmdbars", js.Any.fromFunction1(value))
+    def setWizCopyCmdbars(value: String => Unit): Self = StObject.set(x, "WizCopyCmdbars", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWizHelp(value: (String, Double, Double) => Boolean): Self = this.set("WizHelp", js.Any.fromFunction3(value))
+    def setWizHelp(value: (String, Double, Double) => Boolean): Self = StObject.set(x, "WizHelp", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setWizMsgBox(value: (String, String, Double, Double, String) => Double): Self = this.set("WizMsgBox", js.Any.fromFunction5(value))
+    def setWizMsgBox(value: (String, String, Double, Double, String) => Double): Self = StObject.set(x, "WizMsgBox", js.Any.fromFunction5(value))
   }
 }

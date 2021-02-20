@@ -1,11 +1,12 @@
 package typings.ckeditorCkeditor5Engine.mod.model
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeWalkerValue extends js.Object {
+trait TreeWalkerValue extends StObject {
   
   var item: Item = js.native
   
@@ -33,33 +34,21 @@ object TreeWalkerValue {
   }
   
   @scala.inline
-  implicit class TreeWalkerValueOps[Self <: TreeWalkerValue] (val x: Self) extends AnyVal {
+  implicit class TreeWalkerValueMutableBuilder[Self <: TreeWalkerValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItem(value: Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextPosition(value: Position): Self = StObject.set(x, "nextPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: Item): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setPreviousPosition(value: Position): Self = StObject.set(x, "previousPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextPosition(value: Position): Self = this.set("nextPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousPosition(value: Position): Self = this.set("previousPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: TreeWalkerValueType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: TreeWalkerValueType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PoolInfo extends js.Object {
+trait PoolInfo extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the custom tape pool. Use the ListTapePools operation to return a list of custom tape pools for your account and AWS Region.
@@ -46,54 +47,42 @@ object PoolInfo {
   }
   
   @scala.inline
-  implicit class PoolInfoOps[Self <: PoolInfo] (val x: Self) extends AnyVal {
+  implicit class PoolInfoMutableBuilder[Self <: PoolInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPoolARN(value: PoolARN): Self = StObject.set(x, "PoolARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPoolARNUndefined: Self = StObject.set(x, "PoolARN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPoolName(value: PoolName): Self = StObject.set(x, "PoolName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoolARN(value: PoolARN): Self = this.set("PoolARN", value.asInstanceOf[js.Any])
+    def setPoolNameUndefined: Self = StObject.set(x, "PoolName", js.undefined)
     
     @scala.inline
-    def deletePoolARN: Self = this.set("PoolARN", js.undefined)
+    def setPoolStatus(value: PoolStatus): Self = StObject.set(x, "PoolStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoolName(value: PoolName): Self = this.set("PoolName", value.asInstanceOf[js.Any])
+    def setPoolStatusUndefined: Self = StObject.set(x, "PoolStatus", js.undefined)
     
     @scala.inline
-    def deletePoolName: Self = this.set("PoolName", js.undefined)
+    def setRetentionLockTimeInDays(value: RetentionLockTimeInDays): Self = StObject.set(x, "RetentionLockTimeInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoolStatus(value: PoolStatus): Self = this.set("PoolStatus", value.asInstanceOf[js.Any])
+    def setRetentionLockTimeInDaysUndefined: Self = StObject.set(x, "RetentionLockTimeInDays", js.undefined)
     
     @scala.inline
-    def deletePoolStatus: Self = this.set("PoolStatus", js.undefined)
+    def setRetentionLockType(value: RetentionLockType): Self = StObject.set(x, "RetentionLockType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetentionLockTimeInDays(value: RetentionLockTimeInDays): Self = this.set("RetentionLockTimeInDays", value.asInstanceOf[js.Any])
+    def setRetentionLockTypeUndefined: Self = StObject.set(x, "RetentionLockType", js.undefined)
     
     @scala.inline
-    def deleteRetentionLockTimeInDays: Self = this.set("RetentionLockTimeInDays", js.undefined)
+    def setStorageClass(value: TapeStorageClass): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetentionLockType(value: RetentionLockType): Self = this.set("RetentionLockType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetentionLockType: Self = this.set("RetentionLockType", js.undefined)
-    
-    @scala.inline
-    def setStorageClass(value: TapeStorageClass): Self = this.set("StorageClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageClass: Self = this.set("StorageClass", js.undefined)
+    def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
   }
 }

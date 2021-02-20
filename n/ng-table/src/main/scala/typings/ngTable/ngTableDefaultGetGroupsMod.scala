@@ -4,13 +4,14 @@ import typings.angular.mod.IQService
 import typings.ngTable.getGroupMod.IGetGroupFunc
 import typings.ngTable.ngTableDefaultGetDataMod.IDefaultGetData
 import typings.ngTable.resultsMod.IDataRowGroup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ng-table/src/core/grouping/ngTableDefaultGetGroups", JSImport.Namespace)
-@js.native
-object ngTableDefaultGetGroupsMod extends js.Object {
+object ngTableDefaultGetGroupsMod {
   
+  @JSImport("ng-table/src/core/grouping/ngTableDefaultGetGroups", "ngTableDefaultGetGroups")
+  @js.native
   def ngTableDefaultGetGroups[T]($q: IQService, ngTableDefaultGetData: IDefaultGetData[IDataRowGroup[T]]): IGetGroupFunc[T] = js.native
 }

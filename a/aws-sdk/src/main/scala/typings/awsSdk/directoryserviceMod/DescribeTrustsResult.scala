@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTrustsResult extends js.Object {
+trait DescribeTrustsResult extends StObject {
   
   /**
     * If not null, more results are available. Pass this value for the NextToken parameter in a subsequent call to DescribeTrusts to retrieve the next set of items.
@@ -26,33 +27,21 @@ object DescribeTrustsResult {
   }
   
   @scala.inline
-  implicit class DescribeTrustsResultOps[Self <: DescribeTrustsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeTrustsResultMutableBuilder[Self <: DescribeTrustsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrusts(value: Trusts): Self = StObject.set(x, "Trusts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setTrustsUndefined: Self = StObject.set(x, "Trusts", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setTrustsVarargs(value: Trust*): Self = this.set("Trusts", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrusts(value: Trusts): Self = this.set("Trusts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrusts: Self = this.set("Trusts", js.undefined)
+    def setTrustsVarargs(value: Trust*): Self = StObject.set(x, "Trusts", js.Array(value :_*))
   }
 }

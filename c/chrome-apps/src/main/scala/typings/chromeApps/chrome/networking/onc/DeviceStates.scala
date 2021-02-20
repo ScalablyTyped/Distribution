@@ -1,12 +1,13 @@
 package typings.chromeApps.chrome.networking.onc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A list of devices and their state. */
 @js.native
-trait DeviceStates extends js.Object {
+trait DeviceStates extends StObject {
   
   /** The SIM lock status if Type = Cellular and SIMPresent = True. */
   var SIMLockStatus: js.UndefOr[typings.chromeApps.chrome.networking.onc.SIMLockStatus] = js.native
@@ -45,42 +46,30 @@ object DeviceStates {
   }
   
   @scala.inline
-  implicit class DeviceStatesOps[Self <: DeviceStates] (val x: Self) extends AnyVal {
+  implicit class DeviceStatesMutableBuilder[Self <: DeviceStates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSIMLockStatus(value: SIMLockStatus): Self = StObject.set(x, "SIMLockStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSIMLockStatusUndefined: Self = StObject.set(x, "SIMLockStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSIMPresent(value: Boolean): Self = StObject.set(x, "SIMPresent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: DeviceState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setSIMPresentUndefined: Self = StObject.set(x, "SIMPresent", js.undefined)
     
     @scala.inline
-    def setType(value: NetworkType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setScanning(value: Boolean): Self = StObject.set(x, "Scanning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSIMLockStatus(value: SIMLockStatus): Self = this.set("SIMLockStatus", value.asInstanceOf[js.Any])
+    def setScanningUndefined: Self = StObject.set(x, "Scanning", js.undefined)
     
     @scala.inline
-    def deleteSIMLockStatus: Self = this.set("SIMLockStatus", js.undefined)
+    def setState(value: DeviceState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSIMPresent(value: Boolean): Self = this.set("SIMPresent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSIMPresent: Self = this.set("SIMPresent", js.undefined)
-    
-    @scala.inline
-    def setScanning(value: Boolean): Self = this.set("Scanning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScanning: Self = this.set("Scanning", js.undefined)
+    def setType(value: NetworkType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

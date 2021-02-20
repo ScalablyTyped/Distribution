@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionRequired extends js.Object {
+trait ActionRequired extends StObject {
   
   var actionRequired: scala.Double = js.native
   
@@ -38,39 +39,27 @@ object ActionRequired {
   }
   
   @scala.inline
-  implicit class ActionRequiredOps[Self <: ActionRequired] (val x: Self) extends AnyVal {
+  implicit class ActionRequiredMutableBuilder[Self <: ActionRequired] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionRequired(value: scala.Double): Self = StObject.set(x, "actionRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionResolved(value: scala.Double): Self = StObject.set(x, "actionResolved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabled(value: scala.Double): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionRequired(value: scala.Double): Self = this.set("actionRequired", value.asInstanceOf[js.Any])
+    def setEnabled(value: scala.Double): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionResolved(value: scala.Double): Self = this.set("actionResolved", value.asInstanceOf[js.Any])
+    def setInstalled(value: scala.Double): Self = StObject.set(x, "installed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: scala.Double): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setUninstalled(value: scala.Double): Self = StObject.set(x, "uninstalled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: scala.Double): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInstalled(value: scala.Double): Self = this.set("installed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUninstalled(value: scala.Double): Self = this.set("uninstalled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionUpdated(value: scala.Double): Self = this.set("versionUpdated", value.asInstanceOf[js.Any])
+    def setVersionUpdated(value: scala.Double): Self = StObject.set(x, "versionUpdated", value.asInstanceOf[js.Any])
   }
 }

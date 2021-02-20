@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.kiiCloudSdk.anon.`32`
 import typings.kiiCloudSdk.anon.`33`
 import typings.kiiCloudSdk.anon.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

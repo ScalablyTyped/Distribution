@@ -1,12 +1,13 @@
 package typings.relayRuntime.relayStoreTypesMod
 
 import typings.relayRuntime.relayNetworkTypesMod.PayloadError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RelayResponsePayload extends js.Object {
+trait RelayResponsePayload extends StObject {
   
   val errors: js.UndefOr[js.Array[PayloadError] | Null] = js.native
   
@@ -29,72 +30,60 @@ object RelayResponsePayload {
   }
   
   @scala.inline
-  implicit class RelayResponsePayloadOps[Self <: RelayResponsePayload] (val x: Self) extends AnyVal {
+  implicit class RelayResponsePayloadMutableBuilder[Self <: RelayResponsePayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrors(value: js.Array[PayloadError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorsNull: Self = StObject.set(x, "errors", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
-    def setIsFinal(value: Boolean): Self = this.set("isFinal", value.asInstanceOf[js.Any])
+    def setErrorsVarargs(value: PayloadError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
     @scala.inline
-    def setSource(value: MutableRecordSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setFieldPayloads(value: js.Array[HandleFieldPayload]): Self = StObject.set(x, "fieldPayloads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorsVarargs(value: PayloadError*): Self = this.set("errors", js.Array(value :_*))
+    def setFieldPayloadsNull: Self = StObject.set(x, "fieldPayloads", null)
     
     @scala.inline
-    def setErrors(value: js.Array[PayloadError]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setFieldPayloadsUndefined: Self = StObject.set(x, "fieldPayloads", js.undefined)
     
     @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
+    def setFieldPayloadsVarargs(value: HandleFieldPayload*): Self = StObject.set(x, "fieldPayloads", js.Array(value :_*))
     
     @scala.inline
-    def setErrorsNull: Self = this.set("errors", null)
+    def setIncrementalPlaceholders(value: js.Array[IncrementalDataPlaceholder]): Self = StObject.set(x, "incrementalPlaceholders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldPayloadsVarargs(value: HandleFieldPayload*): Self = this.set("fieldPayloads", js.Array(value :_*))
+    def setIncrementalPlaceholdersNull: Self = StObject.set(x, "incrementalPlaceholders", null)
     
     @scala.inline
-    def setFieldPayloads(value: js.Array[HandleFieldPayload]): Self = this.set("fieldPayloads", value.asInstanceOf[js.Any])
+    def setIncrementalPlaceholdersUndefined: Self = StObject.set(x, "incrementalPlaceholders", js.undefined)
     
     @scala.inline
-    def deleteFieldPayloads: Self = this.set("fieldPayloads", js.undefined)
+    def setIncrementalPlaceholdersVarargs(value: IncrementalDataPlaceholder*): Self = StObject.set(x, "incrementalPlaceholders", js.Array(value :_*))
     
     @scala.inline
-    def setFieldPayloadsNull: Self = this.set("fieldPayloads", null)
+    def setIsFinal(value: Boolean): Self = StObject.set(x, "isFinal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncrementalPlaceholdersVarargs(value: IncrementalDataPlaceholder*): Self = this.set("incrementalPlaceholders", js.Array(value :_*))
+    def setModuleImportPayloads(value: js.Array[ModuleImportPayload]): Self = StObject.set(x, "moduleImportPayloads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncrementalPlaceholders(value: js.Array[IncrementalDataPlaceholder]): Self = this.set("incrementalPlaceholders", value.asInstanceOf[js.Any])
+    def setModuleImportPayloadsNull: Self = StObject.set(x, "moduleImportPayloads", null)
     
     @scala.inline
-    def deleteIncrementalPlaceholders: Self = this.set("incrementalPlaceholders", js.undefined)
+    def setModuleImportPayloadsUndefined: Self = StObject.set(x, "moduleImportPayloads", js.undefined)
     
     @scala.inline
-    def setIncrementalPlaceholdersNull: Self = this.set("incrementalPlaceholders", null)
+    def setModuleImportPayloadsVarargs(value: ModuleImportPayload*): Self = StObject.set(x, "moduleImportPayloads", js.Array(value :_*))
     
     @scala.inline
-    def setModuleImportPayloadsVarargs(value: ModuleImportPayload*): Self = this.set("moduleImportPayloads", js.Array(value :_*))
-    
-    @scala.inline
-    def setModuleImportPayloads(value: js.Array[ModuleImportPayload]): Self = this.set("moduleImportPayloads", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModuleImportPayloads: Self = this.set("moduleImportPayloads", js.undefined)
-    
-    @scala.inline
-    def setModuleImportPayloadsNull: Self = this.set("moduleImportPayloads", null)
+    def setSource(value: MutableRecordSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

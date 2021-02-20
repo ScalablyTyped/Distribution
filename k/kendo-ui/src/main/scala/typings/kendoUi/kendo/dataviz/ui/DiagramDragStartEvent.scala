@@ -1,5 +1,6 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +23,24 @@ object DiagramDragStartEvent {
   }
   
   @scala.inline
-  implicit class DiagramDragStartEventOps[Self <: DiagramDragStartEvent] (val x: Self) extends AnyVal {
+  implicit class DiagramDragStartEventMutableBuilder[Self <: DiagramDragStartEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionHandle(value: String): Self = StObject.set(x, "connectionHandle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionHandleUndefined: Self = StObject.set(x, "connectionHandle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnections(value: js.Any): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionHandle(value: String): Self = this.set("connectionHandle", value.asInstanceOf[js.Any])
+    def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
     
     @scala.inline
-    def deleteConnectionHandle: Self = this.set("connectionHandle", js.undefined)
+    def setShapes(value: js.Any): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnections(value: js.Any): Self = this.set("connections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnections: Self = this.set("connections", js.undefined)
-    
-    @scala.inline
-    def setShapes(value: js.Any): Self = this.set("shapes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShapes: Self = this.set("shapes", js.undefined)
+    def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
   }
 }

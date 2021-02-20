@@ -1,12 +1,13 @@
 package typings.braintree.mod
 
 import typings.node.streamMod.Readable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubscriptionGateway extends js.Object {
+trait SubscriptionGateway extends StObject {
   
   def cancel(subscriptionId: String): js.Promise[Unit] = js.native
   

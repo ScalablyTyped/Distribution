@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProgressCounters extends js.Object {
+trait ProgressCounters extends StObject {
   
   /**
     * The total number of steps that the system cancelled in all specified AWS Regions and accounts for the current Automation execution.
@@ -41,48 +42,36 @@ object ProgressCounters {
   }
   
   @scala.inline
-  implicit class ProgressCountersOps[Self <: ProgressCounters] (val x: Self) extends AnyVal {
+  implicit class ProgressCountersMutableBuilder[Self <: ProgressCounters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelledSteps(value: Integer): Self = StObject.set(x, "CancelledSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelledStepsUndefined: Self = StObject.set(x, "CancelledSteps", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailedSteps(value: Integer): Self = StObject.set(x, "FailedSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelledSteps(value: Integer): Self = this.set("CancelledSteps", value.asInstanceOf[js.Any])
+    def setFailedStepsUndefined: Self = StObject.set(x, "FailedSteps", js.undefined)
     
     @scala.inline
-    def deleteCancelledSteps: Self = this.set("CancelledSteps", js.undefined)
+    def setSuccessSteps(value: Integer): Self = StObject.set(x, "SuccessSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedSteps(value: Integer): Self = this.set("FailedSteps", value.asInstanceOf[js.Any])
+    def setSuccessStepsUndefined: Self = StObject.set(x, "SuccessSteps", js.undefined)
     
     @scala.inline
-    def deleteFailedSteps: Self = this.set("FailedSteps", js.undefined)
+    def setTimedOutSteps(value: Integer): Self = StObject.set(x, "TimedOutSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessSteps(value: Integer): Self = this.set("SuccessSteps", value.asInstanceOf[js.Any])
+    def setTimedOutStepsUndefined: Self = StObject.set(x, "TimedOutSteps", js.undefined)
     
     @scala.inline
-    def deleteSuccessSteps: Self = this.set("SuccessSteps", js.undefined)
+    def setTotalSteps(value: Integer): Self = StObject.set(x, "TotalSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimedOutSteps(value: Integer): Self = this.set("TimedOutSteps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimedOutSteps: Self = this.set("TimedOutSteps", js.undefined)
-    
-    @scala.inline
-    def setTotalSteps(value: Integer): Self = this.set("TotalSteps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalSteps: Self = this.set("TotalSteps", js.undefined)
+    def setTotalStepsUndefined: Self = StObject.set(x, "TotalSteps", js.undefined)
   }
 }

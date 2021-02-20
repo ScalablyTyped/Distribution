@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkflowExecutionInfos extends js.Object {
+trait WorkflowExecutionInfos extends StObject {
   
   /**
     * The list of workflow information structures.
@@ -26,30 +27,18 @@ object WorkflowExecutionInfos {
   }
   
   @scala.inline
-  implicit class WorkflowExecutionInfosOps[Self <: WorkflowExecutionInfos] (val x: Self) extends AnyVal {
+  implicit class WorkflowExecutionInfosMutableBuilder[Self <: WorkflowExecutionInfos] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutionInfos(value: WorkflowExecutionInfoList): Self = StObject.set(x, "executionInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutionInfosVarargs(value: WorkflowExecutionInfo*): Self = StObject.set(x, "executionInfos", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionInfosVarargs(value: WorkflowExecutionInfo*): Self = this.set("executionInfos", js.Array(value :_*))
-    
-    @scala.inline
-    def setExecutionInfos(value: WorkflowExecutionInfoList): Self = this.set("executionInfos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

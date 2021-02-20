@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBucketLoggingOutput extends js.Object {
+trait GetBucketLoggingOutput extends StObject {
   
   var LoggingEnabled: js.UndefOr[typings.awsSdk.s3Mod.LoggingEnabled] = js.native
 }
@@ -18,24 +19,12 @@ object GetBucketLoggingOutput {
   }
   
   @scala.inline
-  implicit class GetBucketLoggingOutputOps[Self <: GetBucketLoggingOutput] (val x: Self) extends AnyVal {
+  implicit class GetBucketLoggingOutputMutableBuilder[Self <: GetBucketLoggingOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoggingEnabled(value: LoggingEnabled): Self = StObject.set(x, "LoggingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLoggingEnabled(value: LoggingEnabled): Self = this.set("LoggingEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoggingEnabled: Self = this.set("LoggingEnabled", js.undefined)
+    def setLoggingEnabledUndefined: Self = StObject.set(x, "LoggingEnabled", js.undefined)
   }
 }

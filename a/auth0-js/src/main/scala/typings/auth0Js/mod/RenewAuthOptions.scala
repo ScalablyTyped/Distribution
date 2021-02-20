@@ -1,11 +1,12 @@
 package typings.auth0Js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RenewAuthOptions extends js.Object {
+trait RenewAuthOptions extends StObject {
   
   /**
     * identifier of the resource server who will consume the access token issued after Auth
@@ -95,96 +96,84 @@ object RenewAuthOptions {
   }
   
   @scala.inline
-  implicit class RenewAuthOptionsOps[Self <: RenewAuthOptions] (val x: Self) extends AnyVal {
+  implicit class RenewAuthOptionsMutableBuilder[Self <: RenewAuthOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudience(value: String): Self = this.set("audience", value.asInstanceOf[js.Any])
+    def setClientIDUndefined: Self = StObject.set(x, "clientID", js.undefined)
     
     @scala.inline
-    def deleteAudience: Self = this.set("audience", js.undefined)
+    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientID(value: String): Self = this.set("clientID", value.asInstanceOf[js.Any])
+    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     @scala.inline
-    def deleteClientID: Self = this.set("clientID", js.undefined)
+    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
+    def setPostMessageDataType(value: String): Self = StObject.set(x, "postMessageDataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonce(value: String): Self = this.set("nonce", value.asInstanceOf[js.Any])
+    def setPostMessageDataTypeUndefined: Self = StObject.set(x, "postMessageDataType", js.undefined)
     
     @scala.inline
-    def deleteNonce: Self = this.set("nonce", js.undefined)
+    def setPostMessageOrigin(value: String): Self = StObject.set(x, "postMessageOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostMessageDataType(value: String): Self = this.set("postMessageDataType", value.asInstanceOf[js.Any])
+    def setPostMessageOriginUndefined: Self = StObject.set(x, "postMessageOrigin", js.undefined)
     
     @scala.inline
-    def deletePostMessageDataType: Self = this.set("postMessageDataType", js.undefined)
+    def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostMessageOrigin(value: String): Self = this.set("postMessageOrigin", value.asInstanceOf[js.Any])
+    def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
     
     @scala.inline
-    def deletePostMessageOrigin: Self = this.set("postMessageOrigin", js.undefined)
+    def setResponseMode(value: String): Self = StObject.set(x, "responseMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectUri(value: String): Self = this.set("redirectUri", value.asInstanceOf[js.Any])
+    def setResponseModeUndefined: Self = StObject.set(x, "responseMode", js.undefined)
     
     @scala.inline
-    def deleteRedirectUri: Self = this.set("redirectUri", js.undefined)
+    def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseMode(value: String): Self = this.set("responseMode", value.asInstanceOf[js.Any])
+    def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
     @scala.inline
-    def deleteResponseMode: Self = this.set("responseMode", js.undefined)
+    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseType(value: String): Self = this.set("responseType", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteResponseType: Self = this.set("responseType", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setUsePostMessage(value: Boolean): Self = StObject.set(x, "usePostMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setUsePostMessage(value: Boolean): Self = this.set("usePostMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsePostMessage: Self = this.set("usePostMessage", js.undefined)
+    def setUsePostMessageUndefined: Self = StObject.set(x, "usePostMessage", js.undefined)
   }
 }

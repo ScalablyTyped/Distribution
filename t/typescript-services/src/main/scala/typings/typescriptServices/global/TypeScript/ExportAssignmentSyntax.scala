@@ -1,6 +1,7 @@
 package typings.typescriptServices.global.TypeScript
 
 import typings.typescriptServices.TypeScript.ISyntaxToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,10 +18,10 @@ class ExportAssignmentSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-/* static members */
-@JSGlobal("TypeScript.ExportAssignmentSyntax")
-@js.native
-object ExportAssignmentSyntax extends js.Object {
+object ExportAssignmentSyntax {
   
+  /* static member */
+  @JSGlobal("TypeScript.ExportAssignmentSyntax.create1")
+  @js.native
   def create1(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.ExportAssignmentSyntax = js.native
 }

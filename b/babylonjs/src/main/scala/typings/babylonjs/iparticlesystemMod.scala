@@ -23,16 +23,15 @@ import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Particles/IParticleSystem", JSImport.Namespace)
-@js.native
-object iparticlesystemMod extends js.Object {
+object iparticlesystemMod {
   
   @js.native
-  trait IParticleSystem extends js.Object {
+  trait IParticleSystem extends StObject {
     
     /**
       * Adds a new alpha remap gradient

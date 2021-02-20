@@ -11,6 +11,7 @@ import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.fsMod.Stats
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,12 +44,10 @@ trait Box extends EventEmitter {
   def watch(): js.Promise[Unit] = js.native
   def watch(fn: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
 }
-@JSImport("hexo", "Box")
-@js.native
-object Box extends js.Object {
+object Box {
   
   @js.native
-  trait File extends js.Object {
+  trait File extends StObject {
     
     /**
       * The information from path matching.

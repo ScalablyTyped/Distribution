@@ -1,12 +1,13 @@
 package typings.mapsjs.anon
 
 import typings.mapsjs.mod.point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DownAction extends js.Object {
+trait DownAction extends StObject {
   
   var downAction: js.UndefOr[js.Function1[/* downPoint */ point, _]] = js.native
   
@@ -29,48 +30,36 @@ object DownAction {
   }
   
   @scala.inline
-  implicit class DownActionOps[Self <: DownAction] (val x: Self) extends AnyVal {
+  implicit class DownActionMutableBuilder[Self <: DownAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDownAction(value: /* downPoint */ point => _): Self = StObject.set(x, "downAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDownActionUndefined: Self = StObject.set(x, "downAction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDragEnabled(value: Boolean): Self = StObject.set(x, "dragEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragEnabled(value: Boolean): Self = this.set("dragEnabled", value.asInstanceOf[js.Any])
+    def setMoveAction(value: /* movePoint */ point => Unit): Self = StObject.set(x, "moveAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUseElementInsteadOfNewGestureOverlay(value: Boolean): Self = this.set("useElementInsteadOfNewGestureOverlay", value.asInstanceOf[js.Any])
+    def setMoveActionUndefined: Self = StObject.set(x, "moveAction", js.undefined)
     
     @scala.inline
-    def setDownAction(value: /* downPoint */ point => _): Self = this.set("downAction", js.Any.fromFunction1(value))
+    def setUpAction(value: /* upPoint */ point => Unit): Self = StObject.set(x, "upAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDownAction: Self = this.set("downAction", js.undefined)
+    def setUpActionUndefined: Self = StObject.set(x, "upAction", js.undefined)
     
     @scala.inline
-    def setMoveAction(value: /* movePoint */ point => Unit): Self = this.set("moveAction", js.Any.fromFunction1(value))
+    def setUseElementInsteadOfNewGestureOverlay(value: Boolean): Self = StObject.set(x, "useElementInsteadOfNewGestureOverlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMoveAction: Self = this.set("moveAction", js.undefined)
+    def setWheelAction(value: /* delta */ Double => Unit): Self = StObject.set(x, "wheelAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUpAction(value: /* upPoint */ point => Unit): Self = this.set("upAction", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteUpAction: Self = this.set("upAction", js.undefined)
-    
-    @scala.inline
-    def setWheelAction(value: /* delta */ Double => Unit): Self = this.set("wheelAction", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteWheelAction: Self = this.set("wheelAction", js.undefined)
+    def setWheelActionUndefined: Self = StObject.set(x, "wheelAction", js.undefined)
   }
 }

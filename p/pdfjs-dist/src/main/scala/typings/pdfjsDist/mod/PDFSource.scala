@@ -6,12 +6,13 @@ import typings.pdfjsDist.pdfjsDistStrings.display
 import typings.pdfjsDist.pdfjsDistStrings.none
 import typings.std.BufferSource
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PDFSource extends js.Object {
+trait PDFSource extends StObject {
   
   /**
     * The factory that will be
@@ -187,168 +188,156 @@ object PDFSource {
   }
   
   @scala.inline
-  implicit class PDFSourceOps[Self <: PDFSource] (val x: Self) extends AnyVal {
+  implicit class PDFSourceMutableBuilder[Self <: PDFSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCMapPacked(value: Boolean): Self = StObject.set(x, "cMapPacked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCMapPackedUndefined: Self = StObject.set(x, "cMapPacked", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCMapReaderFactory(value: js.Any): Self = StObject.set(x, "CMapReaderFactory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCMapReaderFactory(value: js.Any): Self = this.set("CMapReaderFactory", value.asInstanceOf[js.Any])
+    def setCMapReaderFactoryUndefined: Self = StObject.set(x, "CMapReaderFactory", js.undefined)
     
     @scala.inline
-    def deleteCMapReaderFactory: Self = this.set("CMapReaderFactory", js.undefined)
+    def setCMapUrl(value: String): Self = StObject.set(x, "cMapUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCMapPacked(value: Boolean): Self = this.set("cMapPacked", value.asInstanceOf[js.Any])
+    def setCMapUrlUndefined: Self = StObject.set(x, "cMapUrl", js.undefined)
     
     @scala.inline
-    def deleteCMapPacked: Self = this.set("cMapPacked", js.undefined)
+    def setData(value: Uint8Array | BufferSource | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCMapUrl(value: String): Self = this.set("cMapUrl", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteCMapUrl: Self = this.set("cMapUrl", js.undefined)
+    def setDisableAutoFetch(value: Boolean): Self = StObject.set(x, "disableAutoFetch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: Uint8Array | BufferSource | String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDisableAutoFetchUndefined: Self = StObject.set(x, "disableAutoFetch", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDisableCreateObjectURL(value: Boolean): Self = StObject.set(x, "disableCreateObjectURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableAutoFetch(value: Boolean): Self = this.set("disableAutoFetch", value.asInstanceOf[js.Any])
+    def setDisableCreateObjectURLUndefined: Self = StObject.set(x, "disableCreateObjectURL", js.undefined)
     
     @scala.inline
-    def deleteDisableAutoFetch: Self = this.set("disableAutoFetch", js.undefined)
+    def setDisableFontFace(value: Boolean): Self = StObject.set(x, "disableFontFace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableCreateObjectURL(value: Boolean): Self = this.set("disableCreateObjectURL", value.asInstanceOf[js.Any])
+    def setDisableFontFaceUndefined: Self = StObject.set(x, "disableFontFace", js.undefined)
     
     @scala.inline
-    def deleteDisableCreateObjectURL: Self = this.set("disableCreateObjectURL", js.undefined)
+    def setDisableRange(value: Boolean): Self = StObject.set(x, "disableRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableFontFace(value: Boolean): Self = this.set("disableFontFace", value.asInstanceOf[js.Any])
+    def setDisableRangeUndefined: Self = StObject.set(x, "disableRange", js.undefined)
     
     @scala.inline
-    def deleteDisableFontFace: Self = this.set("disableFontFace", js.undefined)
+    def setDisableStream(value: Boolean): Self = StObject.set(x, "disableStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableRange(value: Boolean): Self = this.set("disableRange", value.asInstanceOf[js.Any])
+    def setDisableStreamUndefined: Self = StObject.set(x, "disableStream", js.undefined)
     
     @scala.inline
-    def deleteDisableRange: Self = this.set("disableRange", js.undefined)
+    def setDocBaseUrl(value: String): Self = StObject.set(x, "docBaseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableStream(value: Boolean): Self = this.set("disableStream", value.asInstanceOf[js.Any])
+    def setDocBaseUrlUndefined: Self = StObject.set(x, "docBaseUrl", js.undefined)
     
     @scala.inline
-    def deleteDisableStream: Self = this.set("disableStream", js.undefined)
+    def setHttpHeaders(value: StringDictionary[String]): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocBaseUrl(value: String): Self = this.set("docBaseUrl", value.asInstanceOf[js.Any])
+    def setHttpHeadersUndefined: Self = StObject.set(x, "httpHeaders", js.undefined)
     
     @scala.inline
-    def deleteDocBaseUrl: Self = this.set("docBaseUrl", js.undefined)
+    def setInitialData(value: Uint8Array | BufferSource): Self = StObject.set(x, "initialData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpHeaders(value: StringDictionary[String]): Self = this.set("httpHeaders", value.asInstanceOf[js.Any])
+    def setInitialDataUndefined: Self = StObject.set(x, "initialData", js.undefined)
     
     @scala.inline
-    def deleteHttpHeaders: Self = this.set("httpHeaders", js.undefined)
+    def setIsEvalSupported(value: Boolean): Self = StObject.set(x, "isEvalSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialData(value: Uint8Array | BufferSource): Self = this.set("initialData", value.asInstanceOf[js.Any])
+    def setIsEvalSupportedUndefined: Self = StObject.set(x, "isEvalSupported", js.undefined)
     
     @scala.inline
-    def deleteInitialData: Self = this.set("initialData", js.undefined)
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEvalSupported(value: Boolean): Self = this.set("isEvalSupported", value.asInstanceOf[js.Any])
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def deleteIsEvalSupported: Self = this.set("isEvalSupported", js.undefined)
+    def setMaxImageSize(value: Double): Self = StObject.set(x, "maxImageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setMaxImageSizeUndefined: Self = StObject.set(x, "maxImageSize", js.undefined)
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setNativeImageDecoderSupport(value: decode | display | none): Self = StObject.set(x, "nativeImageDecoderSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxImageSize(value: Double): Self = this.set("maxImageSize", value.asInstanceOf[js.Any])
+    def setNativeImageDecoderSupportUndefined: Self = StObject.set(x, "nativeImageDecoderSupport", js.undefined)
     
     @scala.inline
-    def deleteMaxImageSize: Self = this.set("maxImageSize", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNativeImageDecoderSupport(value: decode | display | none): Self = this.set("nativeImageDecoderSupport", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteNativeImageDecoderSupport: Self = this.set("nativeImageDecoderSupport", js.undefined)
+    def setPdfBug(value: Boolean): Self = StObject.set(x, "pdfBug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setPdfBugUndefined: Self = StObject.set(x, "pdfBug", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setRange(value: PDFDataRangeTransport): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPdfBug(value: Boolean): Self = this.set("pdfBug", value.asInstanceOf[js.Any])
+    def setRangeChunkSize(value: Double): Self = StObject.set(x, "rangeChunkSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePdfBug: Self = this.set("pdfBug", js.undefined)
+    def setRangeChunkSizeUndefined: Self = StObject.set(x, "rangeChunkSize", js.undefined)
     
     @scala.inline
-    def setRange(value: PDFDataRangeTransport): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setStopAtErrors(value: Boolean): Self = StObject.set(x, "stopAtErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeChunkSize(value: Double): Self = this.set("rangeChunkSize", value.asInstanceOf[js.Any])
+    def setStopAtErrorsUndefined: Self = StObject.set(x, "stopAtErrors", js.undefined)
     
     @scala.inline
-    def deleteRangeChunkSize: Self = this.set("rangeChunkSize", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopAtErrors(value: Boolean): Self = this.set("stopAtErrors", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteStopAtErrors: Self = this.set("stopAtErrors", js.undefined)
+    def setVerbosity(value: Double): Self = StObject.set(x, "verbosity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setVerbosityUndefined: Self = StObject.set(x, "verbosity", js.undefined)
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerbosity(value: Double): Self = this.set("verbosity", value.asInstanceOf[js.Any])
+    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
     
     @scala.inline
-    def deleteVerbosity: Self = this.set("verbosity", js.undefined)
+    def setWorker(value: PDFWorker): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
-    
-    @scala.inline
-    def setWorker(value: PDFWorker): Self = this.set("worker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorker: Self = this.set("worker", js.undefined)
+    def setWorkerUndefined: Self = StObject.set(x, "worker", js.undefined)
   }
 }

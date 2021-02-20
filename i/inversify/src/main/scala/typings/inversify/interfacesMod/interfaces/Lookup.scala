@@ -1,6 +1,7 @@
 package typings.inversify.interfacesMod.interfaces
 
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,39 +40,27 @@ object Lookup {
   }
   
   @scala.inline
-  implicit class LookupOps[Self <: Lookup[_], T] (val x: Self with Lookup[T]) extends AnyVal {
+  implicit class LookupMutableBuilder[Self <: Lookup[_], T] (val x: Self with Lookup[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (ServiceIdentifier[_], T) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet(value: ServiceIdentifier[_] => js.Array[T]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMap(value: () => Map[ServiceIdentifier[_], js.Array[T]]): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdd(value: (ServiceIdentifier[_], T) => Unit): Self = this.set("add", js.Any.fromFunction2(value))
+    def setHasKey(value: ServiceIdentifier[_] => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet(value: ServiceIdentifier[_] => js.Array[T]): Self = this.set("get", js.Any.fromFunction1(value))
+    def setRemove(value: ServiceIdentifier[_] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMap(value: () => Map[ServiceIdentifier[_], js.Array[T]]): Self = this.set("getMap", js.Any.fromFunction0(value))
+    def setRemoveByCondition(value: js.Function1[/* item */ T, Boolean] => Unit): Self = StObject.set(x, "removeByCondition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHasKey(value: ServiceIdentifier[_] => Boolean): Self = this.set("hasKey", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemove(value: ServiceIdentifier[_] => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveByCondition(value: js.Function1[/* item */ T, Boolean] => Unit): Self = this.set("removeByCondition", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTraverse(value: js.Function2[/* key */ ServiceIdentifier[_], /* value */ js.Array[T], Unit] => Unit): Self = this.set("traverse", js.Any.fromFunction1(value))
+    def setTraverse(value: js.Function2[/* key */ ServiceIdentifier[_], /* value */ js.Array[T], Unit] => Unit): Self = StObject.set(x, "traverse", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3Object extends js.Object {
+trait S3Object extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the bucket that contains the object.
@@ -76,93 +77,81 @@ object S3Object {
   }
   
   @scala.inline
-  implicit class S3ObjectOps[Self <: S3Object] (val x: Self) extends AnyVal {
+  implicit class S3ObjectMutableBuilder[Self <: S3Object] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketArn(value: string): Self = StObject.set(x, "bucketArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketArnUndefined: Self = StObject.set(x, "bucketArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setETag(value: string): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketArn(value: string): Self = this.set("bucketArn", value.asInstanceOf[js.Any])
+    def setETagUndefined: Self = StObject.set(x, "eTag", js.undefined)
     
     @scala.inline
-    def deleteBucketArn: Self = this.set("bucketArn", js.undefined)
+    def setExtension(value: string): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setETag(value: string): Self = this.set("eTag", value.asInstanceOf[js.Any])
+    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
     @scala.inline
-    def deleteETag: Self = this.set("eTag", js.undefined)
+    def setKey(value: string): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtension(value: string): Self = this.set("extension", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteExtension: Self = this.set("extension", js.undefined)
+    def setLastModified(value: timestampIso8601): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: string): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setPath(value: string): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModified(value: timestampIso8601): Self = this.set("lastModified", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteLastModified: Self = this.set("lastModified", js.undefined)
+    def setPublicAccess(value: boolean): Self = StObject.set(x, "publicAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: string): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPublicAccessUndefined: Self = StObject.set(x, "publicAccess", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setServerSideEncryption(value: ServerSideEncryption): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicAccess(value: boolean): Self = this.set("publicAccess", value.asInstanceOf[js.Any])
+    def setServerSideEncryptionUndefined: Self = StObject.set(x, "serverSideEncryption", js.undefined)
     
     @scala.inline
-    def deletePublicAccess: Self = this.set("publicAccess", js.undefined)
+    def setSize(value: long): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerSideEncryption(value: ServerSideEncryption): Self = this.set("serverSideEncryption", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteServerSideEncryption: Self = this.set("serverSideEncryption", js.undefined)
+    def setStorageClass(value: StorageClass): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: long): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setTags(value: KeyValuePairList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageClass(value: StorageClass): Self = this.set("storageClass", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteStorageClass: Self = this.set("storageClass", js.undefined)
+    def setTagsVarargs(value: KeyValuePair*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: KeyValuePair*): Self = this.set("tags", js.Array(value :_*))
+    def setVersionId(value: string): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: KeyValuePairList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setVersionId(value: string): Self = this.set("versionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionId: Self = this.set("versionId", js.undefined)
+    def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
   }
 }

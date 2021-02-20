@@ -1,11 +1,12 @@
 package typings.typeorm.mongodbTypingsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulkWriteOpResultObject extends js.Object {
+trait BulkWriteOpResultObject extends StObject {
   
   /**
     * Number of documents deleted.
@@ -56,66 +57,54 @@ object BulkWriteOpResultObject {
   }
   
   @scala.inline
-  implicit class BulkWriteOpResultObjectOps[Self <: BulkWriteOpResultObject] (val x: Self) extends AnyVal {
+  implicit class BulkWriteOpResultObjectMutableBuilder[Self <: BulkWriteOpResultObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeletedCount(value: scala.Double): Self = StObject.set(x, "deletedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletedCountUndefined: Self = StObject.set(x, "deletedCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertedCount(value: scala.Double): Self = StObject.set(x, "insertedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletedCount(value: scala.Double): Self = this.set("deletedCount", value.asInstanceOf[js.Any])
+    def setInsertedCountUndefined: Self = StObject.set(x, "insertedCount", js.undefined)
     
     @scala.inline
-    def deleteDeletedCount: Self = this.set("deletedCount", js.undefined)
+    def setInsertedIds(value: js.Any): Self = StObject.set(x, "insertedIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertedCount(value: scala.Double): Self = this.set("insertedCount", value.asInstanceOf[js.Any])
+    def setInsertedIdsUndefined: Self = StObject.set(x, "insertedIds", js.undefined)
     
     @scala.inline
-    def deleteInsertedCount: Self = this.set("insertedCount", js.undefined)
+    def setMatchedCount(value: scala.Double): Self = StObject.set(x, "matchedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertedIds(value: js.Any): Self = this.set("insertedIds", value.asInstanceOf[js.Any])
+    def setMatchedCountUndefined: Self = StObject.set(x, "matchedCount", js.undefined)
     
     @scala.inline
-    def deleteInsertedIds: Self = this.set("insertedIds", js.undefined)
+    def setModifiedCount(value: scala.Double): Self = StObject.set(x, "modifiedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchedCount(value: scala.Double): Self = this.set("matchedCount", value.asInstanceOf[js.Any])
+    def setModifiedCountUndefined: Self = StObject.set(x, "modifiedCount", js.undefined)
     
     @scala.inline
-    def deleteMatchedCount: Self = this.set("matchedCount", js.undefined)
+    def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedCount(value: scala.Double): Self = this.set("modifiedCount", value.asInstanceOf[js.Any])
+    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
     @scala.inline
-    def deleteModifiedCount: Self = this.set("modifiedCount", js.undefined)
+    def setUpsertedCount(value: scala.Double): Self = StObject.set(x, "upsertedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: js.Any): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setUpsertedCountUndefined: Self = StObject.set(x, "upsertedCount", js.undefined)
     
     @scala.inline
-    def deleteResult: Self = this.set("result", js.undefined)
+    def setUpsertedIds(value: js.Any): Self = StObject.set(x, "upsertedIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpsertedCount(value: scala.Double): Self = this.set("upsertedCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpsertedCount: Self = this.set("upsertedCount", js.undefined)
-    
-    @scala.inline
-    def setUpsertedIds(value: js.Any): Self = this.set("upsertedIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpsertedIds: Self = this.set("upsertedIds", js.undefined)
+    def setUpsertedIdsUndefined: Self = StObject.set(x, "upsertedIds", js.undefined)
   }
 }

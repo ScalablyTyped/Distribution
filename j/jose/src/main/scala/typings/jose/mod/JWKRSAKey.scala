@@ -1,6 +1,7 @@
 package typings.jose.mod
 
 import typings.jose.joseStrings.RSA
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,63 +39,51 @@ object JWKRSAKey {
   }
   
   @scala.inline
-  implicit class JWKRSAKeyOps[Self <: JWKRSAKey] (val x: Self) extends AnyVal {
+  implicit class JWKRSAKeyMutableBuilder[Self <: JWKRSAKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDUndefined: Self = StObject.set(x, "d", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDp(value: String): Self = StObject.set(x, "dp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setE(value: String): Self = this.set("e", value.asInstanceOf[js.Any])
+    def setDpUndefined: Self = StObject.set(x, "dp", js.undefined)
     
     @scala.inline
-    def setKty(value: RSA): Self = this.set("kty", value.asInstanceOf[js.Any])
+    def setDq(value: String): Self = StObject.set(x, "dq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setN(value: String): Self = this.set("n", value.asInstanceOf[js.Any])
+    def setDqUndefined: Self = StObject.set(x, "dq", js.undefined)
     
     @scala.inline
-    def setD(value: String): Self = this.set("d", value.asInstanceOf[js.Any])
+    def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteD: Self = this.set("d", js.undefined)
+    def setKty(value: RSA): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDp(value: String): Self = this.set("dp", value.asInstanceOf[js.Any])
+    def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDp: Self = this.set("dp", js.undefined)
+    def setP(value: String): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDq(value: String): Self = this.set("dq", value.asInstanceOf[js.Any])
+    def setPUndefined: Self = StObject.set(x, "p", js.undefined)
     
     @scala.inline
-    def deleteDq: Self = this.set("dq", js.undefined)
+    def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP(value: String): Self = this.set("p", value.asInstanceOf[js.Any])
+    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
     @scala.inline
-    def deleteP: Self = this.set("p", js.undefined)
+    def setQi(value: String): Self = StObject.set(x, "qi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ(value: String): Self = this.set("q", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQ: Self = this.set("q", js.undefined)
-    
-    @scala.inline
-    def setQi(value: String): Self = this.set("qi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQi: Self = this.set("qi", js.undefined)
+    def setQiUndefined: Self = StObject.set(x, "qi", js.undefined)
   }
 }

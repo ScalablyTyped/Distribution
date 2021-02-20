@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Page
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LayoutViewport extends js.Object {
+trait LayoutViewport extends StObject {
   
   /**
     * Height (CSS pixels), excludes scrollbar if present.
@@ -37,30 +38,18 @@ object LayoutViewport {
   }
   
   @scala.inline
-  implicit class LayoutViewportOps[Self <: LayoutViewport] (val x: Self) extends AnyVal {
+  implicit class LayoutViewportMutableBuilder[Self <: LayoutViewport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientHeight(value: integer): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientWidth(value: integer): Self = StObject.set(x, "clientWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageX(value: integer): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientHeight(value: integer): Self = this.set("clientHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientWidth(value: integer): Self = this.set("clientWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPageX(value: integer): Self = this.set("pageX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPageY(value: integer): Self = this.set("pageY", value.asInstanceOf[js.Any])
+    def setPageY(value: integer): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
   }
 }

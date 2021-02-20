@@ -1,5 +1,6 @@
 package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * resource.
   */
 @js.native
-trait SchemaBooleanPolicy extends js.Object {
+trait SchemaBooleanPolicy extends StObject {
   
   /**
     * If `true`, then the `Policy` is enforced. If `false`, then any
@@ -50,24 +51,12 @@ object SchemaBooleanPolicy {
   }
   
   @scala.inline
-  implicit class SchemaBooleanPolicyOps[Self <: SchemaBooleanPolicy] (val x: Self) extends AnyVal {
+  implicit class SchemaBooleanPolicyMutableBuilder[Self <: SchemaBooleanPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnforced(value: Boolean): Self = StObject.set(x, "enforced", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnforced(value: Boolean): Self = this.set("enforced", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnforced: Self = this.set("enforced", js.undefined)
+    def setEnforcedUndefined: Self = StObject.set(x, "enforced", js.undefined)
   }
 }

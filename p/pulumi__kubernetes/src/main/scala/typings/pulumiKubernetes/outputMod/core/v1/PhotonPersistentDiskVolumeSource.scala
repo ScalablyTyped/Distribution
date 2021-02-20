@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a Photon Controller persistent disk resource.
   */
 @js.native
-trait PhotonPersistentDiskVolumeSource extends js.Object {
+trait PhotonPersistentDiskVolumeSource extends StObject {
   
   /**
     * Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
@@ -29,24 +30,12 @@ object PhotonPersistentDiskVolumeSource {
   }
   
   @scala.inline
-  implicit class PhotonPersistentDiskVolumeSourceOps[Self <: PhotonPersistentDiskVolumeSource] (val x: Self) extends AnyVal {
+  implicit class PhotonPersistentDiskVolumeSourceMutableBuilder[Self <: PhotonPersistentDiskVolumeSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFsType(value: String): Self = this.set("fsType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPdID(value: String): Self = this.set("pdID", value.asInstanceOf[js.Any])
+    def setPdID(value: String): Self = StObject.set(x, "pdID", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsightRule extends js.Object {
+trait InsightRule extends StObject {
   
   /**
     * The definition of the rule, as a JSON object. The definition contains the keywords used to define contributors, the value to aggregate on if this rule returns a sum instead of a count, and the filters. For details on the valid syntax, see Contributor Insights Rule Syntax.
@@ -41,30 +42,18 @@ object InsightRule {
   }
   
   @scala.inline
-  implicit class InsightRuleOps[Self <: InsightRule] (val x: Self) extends AnyVal {
+  implicit class InsightRuleMutableBuilder[Self <: InsightRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefinition(value: InsightRuleDefinition): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: InsightRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSchema(value: InsightRuleSchema): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinition(value: InsightRuleDefinition): Self = this.set("Definition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: InsightRuleName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchema(value: InsightRuleSchema): Self = this.set("Schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: InsightRuleState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setState(value: InsightRuleState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }
 }

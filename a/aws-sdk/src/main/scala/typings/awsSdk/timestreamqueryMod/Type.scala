@@ -1,11 +1,12 @@
 package typings.awsSdk.timestreamqueryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Type extends js.Object {
+trait Type extends StObject {
   
   /**
     * Indicates if the column is an array.
@@ -36,45 +37,33 @@ object Type {
   }
   
   @scala.inline
-  implicit class TypeOps[Self <: Type] (val x: Self) extends AnyVal {
+  implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayColumnInfo(value: ColumnInfo): Self = StObject.set(x, "ArrayColumnInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayColumnInfoUndefined: Self = StObject.set(x, "ArrayColumnInfo", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRowColumnInfo(value: ColumnInfoList): Self = StObject.set(x, "RowColumnInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayColumnInfo(value: ColumnInfo): Self = this.set("ArrayColumnInfo", value.asInstanceOf[js.Any])
+    def setRowColumnInfoUndefined: Self = StObject.set(x, "RowColumnInfo", js.undefined)
     
     @scala.inline
-    def deleteArrayColumnInfo: Self = this.set("ArrayColumnInfo", js.undefined)
+    def setRowColumnInfoVarargs(value: ColumnInfo*): Self = StObject.set(x, "RowColumnInfo", js.Array(value :_*))
     
     @scala.inline
-    def setRowColumnInfoVarargs(value: ColumnInfo*): Self = this.set("RowColumnInfo", js.Array(value :_*))
+    def setScalarType(value: ScalarType): Self = StObject.set(x, "ScalarType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowColumnInfo(value: ColumnInfoList): Self = this.set("RowColumnInfo", value.asInstanceOf[js.Any])
+    def setScalarTypeUndefined: Self = StObject.set(x, "ScalarType", js.undefined)
     
     @scala.inline
-    def deleteRowColumnInfo: Self = this.set("RowColumnInfo", js.undefined)
+    def setTimeSeriesMeasureValueColumnInfo(value: ColumnInfo): Self = StObject.set(x, "TimeSeriesMeasureValueColumnInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalarType(value: ScalarType): Self = this.set("ScalarType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScalarType: Self = this.set("ScalarType", js.undefined)
-    
-    @scala.inline
-    def setTimeSeriesMeasureValueColumnInfo(value: ColumnInfo): Self = this.set("TimeSeriesMeasureValueColumnInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeSeriesMeasureValueColumnInfo: Self = this.set("TimeSeriesMeasureValueColumnInfo", js.undefined)
+    def setTimeSeriesMeasureValueColumnInfoUndefined: Self = StObject.set(x, "TimeSeriesMeasureValueColumnInfo", js.undefined)
   }
 }

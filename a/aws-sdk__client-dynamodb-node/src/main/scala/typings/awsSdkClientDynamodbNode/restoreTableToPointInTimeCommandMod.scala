@@ -7,14 +7,14 @@ import typings.awsSdkClientDynamodbNode.typesRestoreTableToPointInTimeInputMod.R
 import typings.awsSdkClientDynamodbNode.typesRestoreTableToPointInTimeOutputMod.RestoreTableToPointInTimeOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-node/commands/RestoreTableToPointInTimeCommand", JSImport.Namespace)
-@js.native
-object restoreTableToPointInTimeCommandMod extends js.Object {
+object restoreTableToPointInTimeCommandMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-node/commands/RestoreTableToPointInTimeCommand", "RestoreTableToPointInTimeCommand")
   @js.native
   class RestoreTableToPointInTimeCommand protected () extends Command[
           InputTypesUnion, 

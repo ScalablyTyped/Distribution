@@ -1,20 +1,34 @@
 package typings.antdMobileRn
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd-mobile-rn/lib/input-item/locale/zh_CN", JSImport.Namespace)
-@js.native
-object inputItemLocaleZhCNMod extends js.Object {
+object inputItemLocaleZhCNMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
-    var backspaceLabel: String = js.native
+    @JSImport("antd-mobile-rn/lib/input-item/locale/zh_CN", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    var cancelKeyboardLabel: String = js.native
+    @JSImport("antd-mobile-rn/lib/input-item/locale/zh_CN", "default.backspaceLabel")
+    @js.native
+    def backspaceLabel: String = js.native
+    @scala.inline
+    def backspaceLabel_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backspaceLabel")(x.asInstanceOf[js.Any])
     
-    var confirmLabel: String = js.native
+    @JSImport("antd-mobile-rn/lib/input-item/locale/zh_CN", "default.cancelKeyboardLabel")
+    @js.native
+    def cancelKeyboardLabel: String = js.native
+    @scala.inline
+    def cancelKeyboardLabel_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelKeyboardLabel")(x.asInstanceOf[js.Any])
+    
+    @JSImport("antd-mobile-rn/lib/input-item/locale/zh_CN", "default.confirmLabel")
+    @js.native
+    def confirmLabel: String = js.native
+    @scala.inline
+    def confirmLabel_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("confirmLabel")(x.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.oakdexPokedex.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Nature extends js.Object {
+trait Nature extends StObject {
   
   var decreased_stat: String | Null = js.native
   
@@ -26,45 +27,33 @@ object Nature {
   }
   
   @scala.inline
-  implicit class NatureOps[Self <: Nature] (val x: Self) extends AnyVal {
+  implicit class NatureMutableBuilder[Self <: Nature] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecreased_stat(value: String): Self = StObject.set(x, "decreased_stat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecreased_statNull: Self = StObject.set(x, "decreased_stat", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisliked_flavor(value: String): Self = StObject.set(x, "disliked_flavor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNames(value: Translations): Self = this.set("names", value.asInstanceOf[js.Any])
+    def setDisliked_flavorNull: Self = StObject.set(x, "disliked_flavor", null)
     
     @scala.inline
-    def setDecreased_stat(value: String): Self = this.set("decreased_stat", value.asInstanceOf[js.Any])
+    def setFavorite_flavor(value: String): Self = StObject.set(x, "favorite_flavor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecreased_statNull: Self = this.set("decreased_stat", null)
+    def setFavorite_flavorNull: Self = StObject.set(x, "favorite_flavor", null)
     
     @scala.inline
-    def setDisliked_flavor(value: String): Self = this.set("disliked_flavor", value.asInstanceOf[js.Any])
+    def setIncreased_stat(value: String): Self = StObject.set(x, "increased_stat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisliked_flavorNull: Self = this.set("disliked_flavor", null)
+    def setIncreased_statNull: Self = StObject.set(x, "increased_stat", null)
     
     @scala.inline
-    def setFavorite_flavor(value: String): Self = this.set("favorite_flavor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFavorite_flavorNull: Self = this.set("favorite_flavor", null)
-    
-    @scala.inline
-    def setIncreased_stat(value: String): Self = this.set("increased_stat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncreased_statNull: Self = this.set("increased_stat", null)
+    def setNames(value: Translations): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
   }
 }

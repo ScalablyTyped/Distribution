@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoMLJobCompletionCriteria extends js.Object {
+trait AutoMLJobCompletionCriteria extends StObject {
   
   /**
     * The maximum time, in seconds, an AutoML job is allowed to wait for a trial to complete. It must be equal to or greater than MaxRuntimePerTrainingJobInSeconds.
@@ -31,36 +32,24 @@ object AutoMLJobCompletionCriteria {
   }
   
   @scala.inline
-  implicit class AutoMLJobCompletionCriteriaOps[Self <: AutoMLJobCompletionCriteria] (val x: Self) extends AnyVal {
+  implicit class AutoMLJobCompletionCriteriaMutableBuilder[Self <: AutoMLJobCompletionCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxAutoMLJobRuntimeInSeconds(value: MaxAutoMLJobRuntimeInSeconds): Self = StObject.set(x, "MaxAutoMLJobRuntimeInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxAutoMLJobRuntimeInSecondsUndefined: Self = StObject.set(x, "MaxAutoMLJobRuntimeInSeconds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxCandidates(value: MaxCandidates): Self = StObject.set(x, "MaxCandidates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAutoMLJobRuntimeInSeconds(value: MaxAutoMLJobRuntimeInSeconds): Self = this.set("MaxAutoMLJobRuntimeInSeconds", value.asInstanceOf[js.Any])
+    def setMaxCandidatesUndefined: Self = StObject.set(x, "MaxCandidates", js.undefined)
     
     @scala.inline
-    def deleteMaxAutoMLJobRuntimeInSeconds: Self = this.set("MaxAutoMLJobRuntimeInSeconds", js.undefined)
+    def setMaxRuntimePerTrainingJobInSeconds(value: MaxRuntimePerTrainingJobInSeconds): Self = StObject.set(x, "MaxRuntimePerTrainingJobInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCandidates(value: MaxCandidates): Self = this.set("MaxCandidates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxCandidates: Self = this.set("MaxCandidates", js.undefined)
-    
-    @scala.inline
-    def setMaxRuntimePerTrainingJobInSeconds(value: MaxRuntimePerTrainingJobInSeconds): Self = this.set("MaxRuntimePerTrainingJobInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxRuntimePerTrainingJobInSeconds: Self = this.set("MaxRuntimePerTrainingJobInSeconds", js.undefined)
+    def setMaxRuntimePerTrainingJobInSecondsUndefined: Self = StObject.set(x, "MaxRuntimePerTrainingJobInSeconds", js.undefined)
   }
 }

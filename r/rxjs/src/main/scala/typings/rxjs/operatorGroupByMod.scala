@@ -1,14 +1,17 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/operator/groupBy", JSImport.Namespace)
-@js.native
-object operatorGroupByMod extends js.Object {
+object operatorGroupByMod {
   
+  @JSImport("rxjs/operator/groupBy", "groupBy")
+  @js.native
   def groupBy[T, K](keySelector: js.Function1[/* value */ T, K]): js.Any = js.native
+  @JSImport("rxjs/operator/groupBy", "groupBy")
+  @js.native
   def groupBy[T, K](
     keySelector: js.Function1[/* value */ T, K],
     elementSelector: Unit,
@@ -17,6 +20,8 @@ object operatorGroupByMod extends js.Object {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ _
     ]
   ): js.Any = js.native
+  @JSImport("rxjs/operator/groupBy", "groupBy")
+  @js.native
   def groupBy[T, K, R](
     keySelector: js.Function1[/* value */ T, K],
     elementSelector: js.UndefOr[scala.Nothing],
@@ -25,6 +30,8 @@ object operatorGroupByMod extends js.Object {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<R> */ _
     ]
   ): js.Any = js.native
+  @JSImport("rxjs/operator/groupBy", "groupBy")
+  @js.native
   def groupBy[T, K, R](
     keySelector: js.Function1[/* value */ T, K],
     elementSelector: js.UndefOr[scala.Nothing],
@@ -33,6 +40,8 @@ object operatorGroupByMod extends js.Object {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ _
     ]
   ): js.Any = js.native
+  @JSImport("rxjs/operator/groupBy", "groupBy")
+  @js.native
   def groupBy[T, K, R](
     keySelector: js.Function1[/* value */ T, K],
     elementSelector: js.UndefOr[scala.Nothing],
@@ -44,7 +53,11 @@ object operatorGroupByMod extends js.Object {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<R> */ _
     ]
   ): js.Any = js.native
+  @JSImport("rxjs/operator/groupBy", "groupBy")
+  @js.native
   def groupBy[T, K, R](keySelector: js.Function1[/* value */ T, K], elementSelector: js.Function1[/* value */ T, R]): js.Any = js.native
+  @JSImport("rxjs/operator/groupBy", "groupBy")
+  @js.native
   def groupBy[T, K, R](
     keySelector: js.Function1[/* value */ T, K],
     elementSelector: js.Function1[/* value */ T, R],
@@ -53,6 +66,8 @@ object operatorGroupByMod extends js.Object {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<R> */ _
     ]
   ): js.Any = js.native
+  @JSImport("rxjs/operator/groupBy", "groupBy")
+  @js.native
   def groupBy[T, K, R](
     keySelector: js.Function1[/* value */ T, K],
     elementSelector: js.Function1[/* value */ T, R],
@@ -61,6 +76,8 @@ object operatorGroupByMod extends js.Object {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ _
     ]
   ): js.Any = js.native
+  @JSImport("rxjs/operator/groupBy", "groupBy")
+  @js.native
   def groupBy[T, K, R](
     keySelector: js.Function1[/* value */ T, K],
     elementSelector: js.Function1[/* value */ T, R],
@@ -72,6 +89,7 @@ object operatorGroupByMod extends js.Object {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<R> */ _
     ]
   ): js.Any = js.native
-  @JSName("groupBy")
+  @JSImport("rxjs/operator/groupBy", "groupBy")
+  @js.native
   def groupBy_TKR[T, K, R](keySelector: js.Function1[/* value */ T, K]): js.Any = js.native
 }

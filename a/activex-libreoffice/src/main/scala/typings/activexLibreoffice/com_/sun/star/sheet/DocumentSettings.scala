@@ -8,6 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.document.Settings
 import typings.activexLibreoffice.com_.sun.star.i18n.XForbiddenCharacters
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -131,63 +132,51 @@ object DocumentSettings {
   }
   
   @scala.inline
-  implicit class DocumentSettingsOps[Self <: DocumentSettings] (val x: Self) extends AnyVal {
+  implicit class DocumentSettingsMutableBuilder[Self <: DocumentSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGridColor(value: Color): Self = StObject.set(x, "GridColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasColumnRowHeaders(value: Boolean): Self = StObject.set(x, "HasColumnRowHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasSheetTabs(value: Boolean): Self = StObject.set(x, "HasSheetTabs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridColor(value: Color): Self = this.set("GridColor", value.asInstanceOf[js.Any])
+    def setIsOutlineSymbolsSet(value: Boolean): Self = StObject.set(x, "IsOutlineSymbolsSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasColumnRowHeaders(value: Boolean): Self = this.set("HasColumnRowHeaders", value.asInstanceOf[js.Any])
+    def setIsRasterAxisSynchronized(value: Boolean): Self = StObject.set(x, "IsRasterAxisSynchronized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasSheetTabs(value: Boolean): Self = this.set("HasSheetTabs", value.asInstanceOf[js.Any])
+    def setIsSnapToRaster(value: Boolean): Self = StObject.set(x, "IsSnapToRaster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOutlineSymbolsSet(value: Boolean): Self = this.set("IsOutlineSymbolsSet", value.asInstanceOf[js.Any])
+    def setRasterIsVisible(value: Boolean): Self = StObject.set(x, "RasterIsVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRasterAxisSynchronized(value: Boolean): Self = this.set("IsRasterAxisSynchronized", value.asInstanceOf[js.Any])
+    def setRasterResolutionX(value: Double): Self = StObject.set(x, "RasterResolutionX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSnapToRaster(value: Boolean): Self = this.set("IsSnapToRaster", value.asInstanceOf[js.Any])
+    def setRasterResolutionY(value: Double): Self = StObject.set(x, "RasterResolutionY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRasterIsVisible(value: Boolean): Self = this.set("RasterIsVisible", value.asInstanceOf[js.Any])
+    def setRasterSubdivisionX(value: Double): Self = StObject.set(x, "RasterSubdivisionX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRasterResolutionX(value: Double): Self = this.set("RasterResolutionX", value.asInstanceOf[js.Any])
+    def setRasterSubdivisionY(value: Double): Self = StObject.set(x, "RasterSubdivisionY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRasterResolutionY(value: Double): Self = this.set("RasterResolutionY", value.asInstanceOf[js.Any])
+    def setShowGrid(value: Boolean): Self = StObject.set(x, "ShowGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRasterSubdivisionX(value: Double): Self = this.set("RasterSubdivisionX", value.asInstanceOf[js.Any])
+    def setShowNotes(value: Boolean): Self = StObject.set(x, "ShowNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRasterSubdivisionY(value: Double): Self = this.set("RasterSubdivisionY", value.asInstanceOf[js.Any])
+    def setShowPageBreaks(value: Boolean): Self = StObject.set(x, "ShowPageBreaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowGrid(value: Boolean): Self = this.set("ShowGrid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowNotes(value: Boolean): Self = this.set("ShowNotes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowPageBreaks(value: Boolean): Self = this.set("ShowPageBreaks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowZeroValues(value: Boolean): Self = this.set("ShowZeroValues", value.asInstanceOf[js.Any])
+    def setShowZeroValues(value: Boolean): Self = StObject.set(x, "ShowZeroValues", value.asInstanceOf[js.Any])
   }
 }

@@ -1,17 +1,18 @@
 package typings.officeJs.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RangeLocation extends js.Object
+sealed trait RangeLocation extends StObject
 /**
   * [Api set: WordApi]
   */
 @JSGlobal("Word.RangeLocation")
 @js.native
-object RangeLocation extends js.Object {
+object RangeLocation extends StObject {
   
   /**
     * The point after the object. If the object is a paragraph content control or table content control, it is the point after the EOP or Table characters.

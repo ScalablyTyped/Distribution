@@ -1,13 +1,12 @@
 package typings.samchon
 
 import typings.samchon.distributedSystemMod.DistributedSystem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/templates/distributed/interfaces/IDistributedServer", JSImport.Namespace)
-@js.native
-object idistributedserverMod extends js.Object {
+object idistributedserverMod {
   
   @js.native
   trait IDistributedServer extends DistributedSystem {

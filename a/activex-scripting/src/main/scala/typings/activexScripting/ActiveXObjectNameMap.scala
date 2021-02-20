@@ -3,12 +3,13 @@ package typings.activexScripting
 import typings.activexScripting.Scripting.Dictionary
 import typings.activexScripting.Scripting.Encoder
 import typings.activexScripting.Scripting.FileSystemObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveXObjectNameMap extends js.Object {
+trait ActiveXObjectNameMap extends StObject {
   
   /** Set or get the item for a given key */
   @JSName("Scripting.Dictionary")

@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,33 +35,21 @@ object KMLLayerProperties {
   }
   
   @scala.inline
-  implicit class KMLLayerPropertiesOps[Self <: KMLLayerProperties] (val x: Self) extends AnyVal {
+  implicit class KMLLayerPropertiesMutableBuilder[Self <: KMLLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSublayers(value: CollectionProperties[KMLSublayerProperties]): Self = StObject.set(x, "sublayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSublayersUndefined: Self = StObject.set(x, "sublayers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSublayersVarargs(value: KMLSublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value :_*))
     
     @scala.inline
-    def setSublayersVarargs(value: KMLSublayerProperties*): Self = this.set("sublayers", js.Array(value :_*))
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSublayers(value: CollectionProperties[KMLSublayerProperties]): Self = this.set("sublayers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSublayers: Self = this.set("sublayers", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.monacoEditor.mod.languages
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndentationRule extends js.Object {
+trait IndentationRule extends StObject {
   
   /**
     * If a line matches this pattern, then all the lines after it should be unindented once (until another rule matches).
@@ -37,42 +38,30 @@ object IndentationRule {
   }
   
   @scala.inline
-  implicit class IndentationRuleOps[Self <: IndentationRule] (val x: Self) extends AnyVal {
+  implicit class IndentationRuleMutableBuilder[Self <: IndentationRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecreaseIndentPattern(value: RegExp): Self = StObject.set(x, "decreaseIndentPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncreaseIndentPattern(value: RegExp): Self = StObject.set(x, "increaseIndentPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndentNextLinePattern(value: RegExp): Self = StObject.set(x, "indentNextLinePattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecreaseIndentPattern(value: RegExp): Self = this.set("decreaseIndentPattern", value.asInstanceOf[js.Any])
+    def setIndentNextLinePatternNull: Self = StObject.set(x, "indentNextLinePattern", null)
     
     @scala.inline
-    def setIncreaseIndentPattern(value: RegExp): Self = this.set("increaseIndentPattern", value.asInstanceOf[js.Any])
+    def setIndentNextLinePatternUndefined: Self = StObject.set(x, "indentNextLinePattern", js.undefined)
     
     @scala.inline
-    def setIndentNextLinePattern(value: RegExp): Self = this.set("indentNextLinePattern", value.asInstanceOf[js.Any])
+    def setUnIndentedLinePattern(value: RegExp): Self = StObject.set(x, "unIndentedLinePattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndentNextLinePattern: Self = this.set("indentNextLinePattern", js.undefined)
+    def setUnIndentedLinePatternNull: Self = StObject.set(x, "unIndentedLinePattern", null)
     
     @scala.inline
-    def setIndentNextLinePatternNull: Self = this.set("indentNextLinePattern", null)
-    
-    @scala.inline
-    def setUnIndentedLinePattern(value: RegExp): Self = this.set("unIndentedLinePattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnIndentedLinePattern: Self = this.set("unIndentedLinePattern", js.undefined)
-    
-    @scala.inline
-    def setUnIndentedLinePatternNull: Self = this.set("unIndentedLinePattern", null)
+    def setUnIndentedLinePatternUndefined: Self = StObject.set(x, "unIndentedLinePattern", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectorEntityField extends js.Object {
+trait ConnectorEntityField extends StObject {
   
   /**
     *  A description of the connector entity field. 
@@ -46,51 +47,39 @@ object ConnectorEntityField {
   }
   
   @scala.inline
-  implicit class ConnectorEntityFieldOps[Self <: ConnectorEntityField] (val x: Self) extends AnyVal {
+  implicit class ConnectorEntityFieldMutableBuilder[Self <: ConnectorEntityField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationProperties(value: DestinationFieldProperties): Self = StObject.set(x, "destinationProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setDestinationPropertiesUndefined: Self = StObject.set(x, "destinationProperties", js.undefined)
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setLabel(value: Label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationProperties(value: DestinationFieldProperties): Self = this.set("destinationProperties", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteDestinationProperties: Self = this.set("destinationProperties", js.undefined)
+    def setSourceProperties(value: SourceFieldProperties): Self = StObject.set(x, "sourceProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: Label): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setSourcePropertiesUndefined: Self = StObject.set(x, "sourceProperties", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setSupportedFieldTypeDetails(value: SupportedFieldTypeDetails): Self = StObject.set(x, "supportedFieldTypeDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceProperties(value: SourceFieldProperties): Self = this.set("sourceProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceProperties: Self = this.set("sourceProperties", js.undefined)
-    
-    @scala.inline
-    def setSupportedFieldTypeDetails(value: SupportedFieldTypeDetails): Self = this.set("supportedFieldTypeDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedFieldTypeDetails: Self = this.set("supportedFieldTypeDetails", js.undefined)
+    def setSupportedFieldTypeDetailsUndefined: Self = StObject.set(x, "supportedFieldTypeDetails", js.undefined)
   }
 }

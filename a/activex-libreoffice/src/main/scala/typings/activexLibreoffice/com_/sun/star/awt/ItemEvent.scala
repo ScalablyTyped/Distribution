@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,27 +29,15 @@ object ItemEvent {
   }
   
   @scala.inline
-  implicit class ItemEventOps[Self <: ItemEvent] (val x: Self) extends AnyVal {
+  implicit class ItemEventMutableBuilder[Self <: ItemEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighlighted(value: Double): Self = StObject.set(x, "Highlighted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemId(value: Double): Self = StObject.set(x, "ItemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHighlighted(value: Double): Self = this.set("Highlighted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemId(value: Double): Self = this.set("ItemId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelected(value: Double): Self = this.set("Selected", value.asInstanceOf[js.Any])
+    def setSelected(value: Double): Self = StObject.set(x, "Selected", value.asInstanceOf[js.Any])
   }
 }

@@ -1,13 +1,14 @@
 package typings.imageSize
 
 import typings.imageSize.interfaceMod.IImage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("image-size/dist/types/psd", JSImport.Namespace)
-@js.native
-object psdMod extends js.Object {
+object psdMod {
   
+  @JSImport("image-size/dist/types/psd", "PSD")
+  @js.native
   val PSD: IImage = js.native
 }

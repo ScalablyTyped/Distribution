@@ -6,6 +6,7 @@ import typings.reactNative.anon.AverageItemLength
 import typings.reactNative.anon.Changed
 import typings.reactNative.anon.DistanceFromEnd
 import typings.reactNative.anon.Index
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -169,225 +170,213 @@ object VirtualizedListWithoutRenderItemProps {
   }
   
   @scala.inline
-  implicit class VirtualizedListWithoutRenderItemPropsOps[Self <: VirtualizedListWithoutRenderItemProps[_], ItemT] (val x: Self with VirtualizedListWithoutRenderItemProps[ItemT]) extends AnyVal {
+  implicit class VirtualizedListWithoutRenderItemPropsMutableBuilder[Self <: VirtualizedListWithoutRenderItemProps[_], ItemT] (val x: Self with VirtualizedListWithoutRenderItemProps[ItemT]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellRendererComponent(value: ComponentType[_]): Self = StObject.set(x, "CellRendererComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellRendererComponentUndefined: Self = StObject.set(x, "CellRendererComponent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellRendererComponent(value: ComponentType[_]): Self = this.set("CellRendererComponent", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteCellRendererComponent: Self = this.set("CellRendererComponent", js.undefined)
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListEmptyComponent(value: ComponentType[_] | ReactElement): Self = this.set("ListEmptyComponent", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteListEmptyComponent: Self = this.set("ListEmptyComponent", js.undefined)
+    def setDisableVirtualization(value: Boolean): Self = StObject.set(x, "disableVirtualization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListEmptyComponentNull: Self = this.set("ListEmptyComponent", null)
+    def setDisableVirtualizationUndefined: Self = StObject.set(x, "disableVirtualization", js.undefined)
     
     @scala.inline
-    def setListFooterComponent(value: ComponentType[_] | ReactElement): Self = this.set("ListFooterComponent", value.asInstanceOf[js.Any])
+    def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListFooterComponent: Self = this.set("ListFooterComponent", js.undefined)
+    def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
     
     @scala.inline
-    def setListFooterComponentNull: Self = this.set("ListFooterComponent", null)
+    def setGetItem(value: (/* data */ js.Any, /* index */ Double) => ItemT): Self = StObject.set(x, "getItem", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setListHeaderComponent(value: ComponentType[_] | ReactElement): Self = this.set("ListHeaderComponent", value.asInstanceOf[js.Any])
+    def setGetItemCount(value: /* data */ js.Any => Double): Self = StObject.set(x, "getItemCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteListHeaderComponent: Self = this.set("ListHeaderComponent", js.undefined)
+    def setGetItemCountUndefined: Self = StObject.set(x, "getItemCount", js.undefined)
     
     @scala.inline
-    def setListHeaderComponentNull: Self = this.set("ListHeaderComponent", null)
+    def setGetItemLayout(value: (/* data */ js.Any, /* index */ Double) => Index): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setGetItemLayoutUndefined: Self = StObject.set(x, "getItemLayout", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setGetItemUndefined: Self = StObject.set(x, "getItem", js.undefined)
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setInitialNumToRender(value: Double): Self = StObject.set(x, "initialNumToRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setInitialNumToRenderUndefined: Self = StObject.set(x, "initialNumToRender", js.undefined)
     
     @scala.inline
-    def setDisableVirtualization(value: Boolean): Self = this.set("disableVirtualization", value.asInstanceOf[js.Any])
+    def setInitialScrollIndex(value: Double): Self = StObject.set(x, "initialScrollIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableVirtualization: Self = this.set("disableVirtualization", js.undefined)
+    def setInitialScrollIndexNull: Self = StObject.set(x, "initialScrollIndex", null)
     
     @scala.inline
-    def setExtraData(value: js.Any): Self = this.set("extraData", value.asInstanceOf[js.Any])
+    def setInitialScrollIndexUndefined: Self = StObject.set(x, "initialScrollIndex", js.undefined)
     
     @scala.inline
-    def deleteExtraData: Self = this.set("extraData", js.undefined)
+    def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetItem(value: (/* data */ js.Any, /* index */ Double) => ItemT): Self = this.set("getItem", js.Any.fromFunction2(value))
+    def setInvertedNull: Self = StObject.set(x, "inverted", null)
     
     @scala.inline
-    def deleteGetItem: Self = this.set("getItem", js.undefined)
+    def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
     
     @scala.inline
-    def setGetItemCount(value: /* data */ js.Any => Double): Self = this.set("getItemCount", js.Any.fromFunction1(value))
+    def setKeyExtractor(value: (/* item */ ItemT, /* index */ Double) => String): Self = StObject.set(x, "keyExtractor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteGetItemCount: Self = this.set("getItemCount", js.undefined)
+    def setKeyExtractorUndefined: Self = StObject.set(x, "keyExtractor", js.undefined)
     
     @scala.inline
-    def setGetItemLayout(value: (/* data */ js.Any, /* index */ Double) => Index): Self = this.set("getItemLayout", js.Any.fromFunction2(value))
+    def setListEmptyComponent(value: ComponentType[_] | ReactElement): Self = StObject.set(x, "ListEmptyComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetItemLayout: Self = this.set("getItemLayout", js.undefined)
+    def setListEmptyComponentNull: Self = StObject.set(x, "ListEmptyComponent", null)
     
     @scala.inline
-    def setInitialNumToRender(value: Double): Self = this.set("initialNumToRender", value.asInstanceOf[js.Any])
+    def setListEmptyComponentUndefined: Self = StObject.set(x, "ListEmptyComponent", js.undefined)
     
     @scala.inline
-    def deleteInitialNumToRender: Self = this.set("initialNumToRender", js.undefined)
+    def setListFooterComponent(value: ComponentType[_] | ReactElement): Self = StObject.set(x, "ListFooterComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialScrollIndex(value: Double): Self = this.set("initialScrollIndex", value.asInstanceOf[js.Any])
+    def setListFooterComponentNull: Self = StObject.set(x, "ListFooterComponent", null)
     
     @scala.inline
-    def deleteInitialScrollIndex: Self = this.set("initialScrollIndex", js.undefined)
+    def setListFooterComponentUndefined: Self = StObject.set(x, "ListFooterComponent", js.undefined)
     
     @scala.inline
-    def setInitialScrollIndexNull: Self = this.set("initialScrollIndex", null)
+    def setListHeaderComponent(value: ComponentType[_] | ReactElement): Self = StObject.set(x, "ListHeaderComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInverted(value: Boolean): Self = this.set("inverted", value.asInstanceOf[js.Any])
+    def setListHeaderComponentNull: Self = StObject.set(x, "ListHeaderComponent", null)
     
     @scala.inline
-    def deleteInverted: Self = this.set("inverted", js.undefined)
+    def setListHeaderComponentUndefined: Self = StObject.set(x, "ListHeaderComponent", js.undefined)
     
     @scala.inline
-    def setInvertedNull: Self = this.set("inverted", null)
+    def setListKey(value: String): Self = StObject.set(x, "listKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyExtractor(value: (/* item */ ItemT, /* index */ Double) => String): Self = this.set("keyExtractor", js.Any.fromFunction2(value))
+    def setListKeyUndefined: Self = StObject.set(x, "listKey", js.undefined)
     
     @scala.inline
-    def deleteKeyExtractor: Self = this.set("keyExtractor", js.undefined)
+    def setMaxToRenderPerBatch(value: Double): Self = StObject.set(x, "maxToRenderPerBatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListKey(value: String): Self = this.set("listKey", value.asInstanceOf[js.Any])
+    def setMaxToRenderPerBatchUndefined: Self = StObject.set(x, "maxToRenderPerBatch", js.undefined)
     
     @scala.inline
-    def deleteListKey: Self = this.set("listKey", js.undefined)
+    def setOnEndReached(value: /* info */ DistanceFromEnd => Unit): Self = StObject.set(x, "onEndReached", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaxToRenderPerBatch(value: Double): Self = this.set("maxToRenderPerBatch", value.asInstanceOf[js.Any])
+    def setOnEndReachedNull: Self = StObject.set(x, "onEndReached", null)
     
     @scala.inline
-    def deleteMaxToRenderPerBatch: Self = this.set("maxToRenderPerBatch", js.undefined)
+    def setOnEndReachedThreshold(value: Double): Self = StObject.set(x, "onEndReachedThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnEndReached(value: /* info */ DistanceFromEnd => Unit): Self = this.set("onEndReached", js.Any.fromFunction1(value))
+    def setOnEndReachedThresholdNull: Self = StObject.set(x, "onEndReachedThreshold", null)
     
     @scala.inline
-    def deleteOnEndReached: Self = this.set("onEndReached", js.undefined)
+    def setOnEndReachedThresholdUndefined: Self = StObject.set(x, "onEndReachedThreshold", js.undefined)
     
     @scala.inline
-    def setOnEndReachedNull: Self = this.set("onEndReached", null)
+    def setOnEndReachedUndefined: Self = StObject.set(x, "onEndReached", js.undefined)
     
     @scala.inline
-    def setOnEndReachedThreshold(value: Double): Self = this.set("onEndReachedThreshold", value.asInstanceOf[js.Any])
+    def setOnRefresh(value: () => Unit): Self = StObject.set(x, "onRefresh", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnEndReachedThreshold: Self = this.set("onEndReachedThreshold", js.undefined)
+    def setOnRefreshNull: Self = StObject.set(x, "onRefresh", null)
     
     @scala.inline
-    def setOnEndReachedThresholdNull: Self = this.set("onEndReachedThreshold", null)
+    def setOnRefreshUndefined: Self = StObject.set(x, "onRefresh", js.undefined)
     
     @scala.inline
-    def setOnRefresh(value: () => Unit): Self = this.set("onRefresh", js.Any.fromFunction0(value))
+    def setOnScrollToIndexFailed(value: /* info */ AverageItemLength => Unit): Self = StObject.set(x, "onScrollToIndexFailed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnRefresh: Self = this.set("onRefresh", js.undefined)
+    def setOnScrollToIndexFailedUndefined: Self = StObject.set(x, "onScrollToIndexFailed", js.undefined)
     
     @scala.inline
-    def setOnRefreshNull: Self = this.set("onRefresh", null)
+    def setOnViewableItemsChanged(value: /* info */ Changed => Unit): Self = StObject.set(x, "onViewableItemsChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnScrollToIndexFailed(value: /* info */ AverageItemLength => Unit): Self = this.set("onScrollToIndexFailed", js.Any.fromFunction1(value))
+    def setOnViewableItemsChangedNull: Self = StObject.set(x, "onViewableItemsChanged", null)
     
     @scala.inline
-    def deleteOnScrollToIndexFailed: Self = this.set("onScrollToIndexFailed", js.undefined)
+    def setOnViewableItemsChangedUndefined: Self = StObject.set(x, "onViewableItemsChanged", js.undefined)
     
     @scala.inline
-    def setOnViewableItemsChanged(value: /* info */ Changed => Unit): Self = this.set("onViewableItemsChanged", js.Any.fromFunction1(value))
+    def setProgressViewOffset(value: Double): Self = StObject.set(x, "progressViewOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnViewableItemsChanged: Self = this.set("onViewableItemsChanged", js.undefined)
+    def setProgressViewOffsetUndefined: Self = StObject.set(x, "progressViewOffset", js.undefined)
     
     @scala.inline
-    def setOnViewableItemsChangedNull: Self = this.set("onViewableItemsChanged", null)
+    def setRefreshing(value: Boolean): Self = StObject.set(x, "refreshing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressViewOffset(value: Double): Self = this.set("progressViewOffset", value.asInstanceOf[js.Any])
+    def setRefreshingNull: Self = StObject.set(x, "refreshing", null)
     
     @scala.inline
-    def deleteProgressViewOffset: Self = this.set("progressViewOffset", js.undefined)
+    def setRefreshingUndefined: Self = StObject.set(x, "refreshing", js.undefined)
     
     @scala.inline
-    def setRefreshing(value: Boolean): Self = this.set("refreshing", value.asInstanceOf[js.Any])
+    def setRenderScrollComponent(value: /* props */ ScrollViewProps => ReactElement): Self = StObject.set(x, "renderScrollComponent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRefreshing: Self = this.set("refreshing", js.undefined)
+    def setRenderScrollComponentUndefined: Self = StObject.set(x, "renderScrollComponent", js.undefined)
     
     @scala.inline
-    def setRefreshingNull: Self = this.set("refreshing", null)
+    def setUpdateCellsBatchingPeriod(value: Double): Self = StObject.set(x, "updateCellsBatchingPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderScrollComponent(value: /* props */ ScrollViewProps => ReactElement): Self = this.set("renderScrollComponent", js.Any.fromFunction1(value))
+    def setUpdateCellsBatchingPeriodUndefined: Self = StObject.set(x, "updateCellsBatchingPeriod", js.undefined)
     
     @scala.inline
-    def deleteRenderScrollComponent: Self = this.set("renderScrollComponent", js.undefined)
+    def setViewabilityConfig(value: ViewabilityConfig): Self = StObject.set(x, "viewabilityConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateCellsBatchingPeriod(value: Double): Self = this.set("updateCellsBatchingPeriod", value.asInstanceOf[js.Any])
+    def setViewabilityConfigCallbackPairs(value: ViewabilityConfigCallbackPairs): Self = StObject.set(x, "viewabilityConfigCallbackPairs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUpdateCellsBatchingPeriod: Self = this.set("updateCellsBatchingPeriod", js.undefined)
+    def setViewabilityConfigCallbackPairsUndefined: Self = StObject.set(x, "viewabilityConfigCallbackPairs", js.undefined)
     
     @scala.inline
-    def setViewabilityConfig(value: ViewabilityConfig): Self = this.set("viewabilityConfig", value.asInstanceOf[js.Any])
+    def setViewabilityConfigCallbackPairsVarargs(value: ViewabilityConfigCallbackPair*): Self = StObject.set(x, "viewabilityConfigCallbackPairs", js.Array(value :_*))
     
     @scala.inline
-    def deleteViewabilityConfig: Self = this.set("viewabilityConfig", js.undefined)
+    def setViewabilityConfigUndefined: Self = StObject.set(x, "viewabilityConfig", js.undefined)
     
     @scala.inline
-    def setViewabilityConfigCallbackPairsVarargs(value: ViewabilityConfigCallbackPair*): Self = this.set("viewabilityConfigCallbackPairs", js.Array(value :_*))
+    def setWindowSize(value: Double): Self = StObject.set(x, "windowSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewabilityConfigCallbackPairs(value: ViewabilityConfigCallbackPairs): Self = this.set("viewabilityConfigCallbackPairs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewabilityConfigCallbackPairs: Self = this.set("viewabilityConfigCallbackPairs", js.undefined)
-    
-    @scala.inline
-    def setWindowSize(value: Double): Self = this.set("windowSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowSize: Self = this.set("windowSize", js.undefined)
+    def setWindowSizeUndefined: Self = StObject.set(x, "windowSize", js.undefined)
   }
 }

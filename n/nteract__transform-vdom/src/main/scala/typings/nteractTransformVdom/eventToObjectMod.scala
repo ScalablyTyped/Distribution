@@ -16,14 +16,15 @@ import typings.react.mod.UIEvent
 import typings.react.mod.WheelEvent
 import typings.std.Event
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@nteract/transform-vdom/lib/event-to-object", JSImport.Namespace)
-@js.native
-object eventToObjectMod extends js.Object {
+object eventToObjectMod {
   
+  @JSImport("@nteract/transform-vdom/lib/event-to-object", "serializeEvent")
+  @js.native
   def serializeEvent[T](event: SyntheticEvent[T, Event]): SerializedEvent[T] = js.native
   
   type SerializedEvent[T] = (Partial[

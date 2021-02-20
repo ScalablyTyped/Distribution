@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociationStatus extends js.Object {
+trait AssociationStatus extends StObject {
   
   /**
     * A user-defined string.
@@ -36,33 +37,21 @@ object AssociationStatus {
   }
   
   @scala.inline
-  implicit class AssociationStatusOps[Self <: AssociationStatus] (val x: Self) extends AnyVal {
+  implicit class AssociationStatusMutableBuilder[Self <: AssociationStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalInfo(value: StatusAdditionalInfo): Self = StObject.set(x, "AdditionalInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalInfoUndefined: Self = StObject.set(x, "AdditionalInfo", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDate(value: DateTime): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: DateTime): Self = this.set("Date", value.asInstanceOf[js.Any])
+    def setMessage(value: StatusMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: StatusMessage): Self = this.set("Message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: AssociationStatusName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAdditionalInfo(value: StatusAdditionalInfo): Self = this.set("AdditionalInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAdditionalInfo: Self = this.set("AdditionalInfo", js.undefined)
+    def setName(value: AssociationStatusName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

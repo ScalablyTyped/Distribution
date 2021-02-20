@@ -4,30 +4,16 @@ import typings.std.Set
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-converter/dist/executor/tensor_list", JSImport.Namespace)
-@js.native
-object tensorListMod extends js.Object {
+object tensorListMod {
   
-  def fromTensor(tensor: Tensor[Rank], elementShape: js.Array[Double], elementDtype: DataType): TensorList = js.native
-  
-  def reserve(elementShape: js.Array[Double], elementDtype: DataType, numElements: Double): TensorList = js.native
-  
-  def scatter(tensor: Tensor[Rank], indices: js.Array[Double], elementShape: js.Array[Double]): TensorList = js.native
-  def scatter(
-    tensor: Tensor[Rank],
-    indices: js.Array[Double],
-    elementShape: js.Array[Double],
-    numElements: Double
-  ): TensorList = js.native
-  
-  def split(tensor: Tensor[Rank], length: js.Array[Double], elementShape: js.Array[Double]): TensorList = js.native
-  
+  @JSImport("@tensorflow/tfjs-converter/dist/executor/tensor_list", "TensorList")
   @js.native
-  class TensorList protected () extends js.Object {
+  class TensorList protected () extends StObject {
     /**
       *
       * @param tensors list of tensors
@@ -132,4 +118,28 @@ object tensorListMod extends js.Object {
     
     val tensors: js.Array[Tensor[Rank]] = js.native
   }
+  
+  @JSImport("@tensorflow/tfjs-converter/dist/executor/tensor_list", "fromTensor")
+  @js.native
+  def fromTensor(tensor: Tensor[Rank], elementShape: js.Array[Double], elementDtype: DataType): TensorList = js.native
+  
+  @JSImport("@tensorflow/tfjs-converter/dist/executor/tensor_list", "reserve")
+  @js.native
+  def reserve(elementShape: js.Array[Double], elementDtype: DataType, numElements: Double): TensorList = js.native
+  
+  @JSImport("@tensorflow/tfjs-converter/dist/executor/tensor_list", "scatter")
+  @js.native
+  def scatter(tensor: Tensor[Rank], indices: js.Array[Double], elementShape: js.Array[Double]): TensorList = js.native
+  @JSImport("@tensorflow/tfjs-converter/dist/executor/tensor_list", "scatter")
+  @js.native
+  def scatter(
+    tensor: Tensor[Rank],
+    indices: js.Array[Double],
+    elementShape: js.Array[Double],
+    numElements: Double
+  ): TensorList = js.native
+  
+  @JSImport("@tensorflow/tfjs-converter/dist/executor/tensor_list", "split")
+  @js.native
+  def split(tensor: Tensor[Rank], length: js.Array[Double], elementShape: js.Array[Double]): TensorList = js.native
 }

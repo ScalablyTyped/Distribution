@@ -7,12 +7,13 @@ import typings.activexOffice.Office.Script
 import typings.activexOffice.Office.Scripts
 import typings.activexOffice.Office.ThemeColor
 import typings.activexOffice.Office.ThemeColorScheme
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SlideRange extends js.Object {
+trait SlideRange extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   

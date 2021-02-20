@@ -1,6 +1,7 @@
 package typings.reactNativeFbsdk.mod
 
 import typings.reactNativeFbsdk.reactNativeFbsdkStrings.link
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,54 +62,42 @@ object ShareLinkContent {
   }
   
   @scala.inline
-  implicit class ShareLinkContentOps[Self <: ShareLinkContent] (val x: Self) extends AnyVal {
+  implicit class ShareLinkContentMutableBuilder[Self <: ShareLinkContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommonParameters(value: ShareContentCommonParameters): Self = StObject.set(x, "commonParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommonParametersUndefined: Self = StObject.set(x, "commonParameters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentDescription(value: String): Self = StObject.set(x, "contentDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: link): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setContentDescriptionUndefined: Self = StObject.set(x, "contentDescription", js.undefined)
     
     @scala.inline
-    def setContentUrl(value: String): Self = this.set("contentUrl", value.asInstanceOf[js.Any])
+    def setContentTitle(value: String): Self = StObject.set(x, "contentTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommonParameters(value: ShareContentCommonParameters): Self = this.set("commonParameters", value.asInstanceOf[js.Any])
+    def setContentTitleUndefined: Self = StObject.set(x, "contentTitle", js.undefined)
     
     @scala.inline
-    def deleteCommonParameters: Self = this.set("commonParameters", js.undefined)
+    def setContentType(value: link): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentDescription(value: String): Self = this.set("contentDescription", value.asInstanceOf[js.Any])
+    def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentDescription: Self = this.set("contentDescription", js.undefined)
+    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentTitle(value: String): Self = this.set("contentTitle", value.asInstanceOf[js.Any])
+    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
     @scala.inline
-    def deleteContentTitle: Self = this.set("contentTitle", js.undefined)
+    def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageUrl: Self = this.set("imageUrl", js.undefined)
-    
-    @scala.inline
-    def setQuote(value: String): Self = this.set("quote", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuote: Self = this.set("quote", js.undefined)
+    def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
   }
 }

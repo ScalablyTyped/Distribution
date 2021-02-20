@@ -1,38 +1,34 @@
 package typings.parse5SaxParser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parse5SaxParserStrings {
   
+  @js.native
+  sealed trait comment extends StObject
   @scala.inline
   def comment: comment = "comment".asInstanceOf[comment]
   
+  @js.native
+  sealed trait doctype extends StObject
   @scala.inline
   def doctype: doctype = "doctype".asInstanceOf[doctype]
   
+  @js.native
+  sealed trait endTag extends StObject
   @scala.inline
   def endTag: endTag = "endTag".asInstanceOf[endTag]
   
+  @js.native
+  sealed trait startTag extends StObject
   @scala.inline
   def startTag: startTag = "startTag".asInstanceOf[startTag]
   
+  @js.native
+  sealed trait text extends StObject
   @scala.inline
   def text: text = "text".asInstanceOf[text]
-  
-  @js.native
-  sealed trait comment extends js.Object
-  
-  @js.native
-  sealed trait doctype extends js.Object
-  
-  @js.native
-  sealed trait endTag extends js.Object
-  
-  @js.native
-  sealed trait startTag extends js.Object
-  
-  @js.native
-  sealed trait text extends js.Object
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PerformanceThreshold extends js.Object {
+trait PerformanceThreshold extends StObject {
   
   /** BasicSli to evaluate to judge window quality. */
   var basicSliPerformance: js.UndefOr[BasicSli] = js.native
@@ -25,36 +26,24 @@ object PerformanceThreshold {
   }
   
   @scala.inline
-  implicit class PerformanceThresholdOps[Self <: PerformanceThreshold] (val x: Self) extends AnyVal {
+  implicit class PerformanceThresholdMutableBuilder[Self <: PerformanceThreshold] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasicSliPerformance(value: BasicSli): Self = StObject.set(x, "basicSliPerformance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasicSliPerformanceUndefined: Self = StObject.set(x, "basicSliPerformance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPerformance(value: RequestBasedSli): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasicSliPerformance(value: BasicSli): Self = this.set("basicSliPerformance", value.asInstanceOf[js.Any])
+    def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
     
     @scala.inline
-    def deleteBasicSliPerformance: Self = this.set("basicSliPerformance", js.undefined)
+    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformance(value: RequestBasedSli): Self = this.set("performance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerformance: Self = this.set("performance", js.undefined)
-    
-    @scala.inline
-    def setThreshold(value: Double): Self = this.set("threshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreshold: Self = this.set("threshold", js.undefined)
+    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
   }
 }

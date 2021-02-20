@@ -18,12 +18,13 @@ import typings.maximMazurokGapiClientCompute.anon.QuotaUserRegionResource
 import typings.maximMazurokGapiClientCompute.anon.RegionRequestIdUserIp
 import typings.maximMazurokGapiClientCompute.anon.RegionResourceUserIp
 import typings.maximMazurokGapiClientCompute.anon.RequestIdSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionInstanceGroupManagersResource extends js.Object {
+trait RegionInstanceGroupManagersResource extends StObject {
   
   /**
     * Flags the specified instances to be immediately removed from the managed instance group. Abandoning an instance does not delete the instance, but it does remove the instance from

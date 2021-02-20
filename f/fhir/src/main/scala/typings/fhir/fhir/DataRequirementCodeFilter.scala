@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,81 +65,69 @@ object DataRequirementCodeFilter {
   }
   
   @scala.inline
-  implicit class DataRequirementCodeFilterOps[Self <: DataRequirementCodeFilter] (val x: Self) extends AnyVal {
+  implicit class DataRequirementCodeFilterMutableBuilder[Self <: DataRequirementCodeFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValueCode(value: js.Array[code]): Self = StObject.set(x, "valueCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValueCodeUndefined: Self = StObject.set(x, "valueCode", js.undefined)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setValueCodeVarargs(value: code*): Self = StObject.set(x, "valueCode", js.Array(value :_*))
     
     @scala.inline
-    def set_path(value: Element): Self = this.set("_path", value.asInstanceOf[js.Any])
+    def setValueCodeableConcept(value: js.Array[CodeableConcept]): Self = StObject.set(x, "valueCodeableConcept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_path: Self = this.set("_path", js.undefined)
+    def setValueCodeableConceptUndefined: Self = StObject.set(x, "valueCodeableConcept", js.undefined)
     
     @scala.inline
-    def set_valueCodeVarargs(value: Element*): Self = this.set("_valueCode", js.Array(value :_*))
+    def setValueCodeableConceptVarargs(value: CodeableConcept*): Self = StObject.set(x, "valueCodeableConcept", js.Array(value :_*))
     
     @scala.inline
-    def set_valueCode(value: js.Array[Element]): Self = this.set("_valueCode", value.asInstanceOf[js.Any])
+    def setValueCoding(value: js.Array[Coding]): Self = StObject.set(x, "valueCoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_valueCode: Self = this.set("_valueCode", js.undefined)
+    def setValueCodingUndefined: Self = StObject.set(x, "valueCoding", js.undefined)
     
     @scala.inline
-    def set_valueSetString(value: Element): Self = this.set("_valueSetString", value.asInstanceOf[js.Any])
+    def setValueCodingVarargs(value: Coding*): Self = StObject.set(x, "valueCoding", js.Array(value :_*))
     
     @scala.inline
-    def delete_valueSetString: Self = this.set("_valueSetString", js.undefined)
+    def setValueSetReference(value: Reference): Self = StObject.set(x, "valueSetReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueCodeVarargs(value: code*): Self = this.set("valueCode", js.Array(value :_*))
+    def setValueSetReferenceUndefined: Self = StObject.set(x, "valueSetReference", js.undefined)
     
     @scala.inline
-    def setValueCode(value: js.Array[code]): Self = this.set("valueCode", value.asInstanceOf[js.Any])
+    def setValueSetString(value: String): Self = StObject.set(x, "valueSetString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValueCode: Self = this.set("valueCode", js.undefined)
+    def setValueSetStringUndefined: Self = StObject.set(x, "valueSetString", js.undefined)
     
     @scala.inline
-    def setValueCodeableConceptVarargs(value: CodeableConcept*): Self = this.set("valueCodeableConcept", js.Array(value :_*))
+    def set_path(value: Element): Self = StObject.set(x, "_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueCodeableConcept(value: js.Array[CodeableConcept]): Self = this.set("valueCodeableConcept", value.asInstanceOf[js.Any])
+    def set_pathUndefined: Self = StObject.set(x, "_path", js.undefined)
     
     @scala.inline
-    def deleteValueCodeableConcept: Self = this.set("valueCodeableConcept", js.undefined)
+    def set_valueCode(value: js.Array[Element]): Self = StObject.set(x, "_valueCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueCodingVarargs(value: Coding*): Self = this.set("valueCoding", js.Array(value :_*))
+    def set_valueCodeUndefined: Self = StObject.set(x, "_valueCode", js.undefined)
     
     @scala.inline
-    def setValueCoding(value: js.Array[Coding]): Self = this.set("valueCoding", value.asInstanceOf[js.Any])
+    def set_valueCodeVarargs(value: Element*): Self = StObject.set(x, "_valueCode", js.Array(value :_*))
     
     @scala.inline
-    def deleteValueCoding: Self = this.set("valueCoding", js.undefined)
+    def set_valueSetString(value: Element): Self = StObject.set(x, "_valueSetString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueSetReference(value: Reference): Self = this.set("valueSetReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueSetReference: Self = this.set("valueSetReference", js.undefined)
-    
-    @scala.inline
-    def setValueSetString(value: String): Self = this.set("valueSetString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueSetString: Self = this.set("valueSetString", js.undefined)
+    def set_valueSetStringUndefined: Self = StObject.set(x, "_valueSetString", js.undefined)
   }
 }

@@ -3,16 +3,16 @@ package typings.three
 import typings.three.colorMod.Color
 import typings.three.shapeMod.Shape
 import typings.three.vector2Mod.Vector2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/extras/core/ShapePath", JSImport.Namespace)
-@js.native
-object shapePathMod extends js.Object {
+object shapePathMod {
   
+  @JSImport("three/src/extras/core/ShapePath", "ShapePath")
   @js.native
-  class ShapePath () extends js.Object {
+  class ShapePath () extends StObject {
     
     def bezierCurveTo(aCP1x: Double, aCP1y: Double, aCP2x: Double, aCP2y: Double, aX: Double, aY: Double): this.type = js.native
     

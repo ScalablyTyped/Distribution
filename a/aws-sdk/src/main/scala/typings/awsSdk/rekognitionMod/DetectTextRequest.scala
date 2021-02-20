@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DetectTextRequest extends js.Object {
+trait DetectTextRequest extends StObject {
   
   /**
     * Optional parameters that let you set the criteria that the text must meet to be included in your response.
@@ -26,27 +27,15 @@ object DetectTextRequest {
   }
   
   @scala.inline
-  implicit class DetectTextRequestOps[Self <: DetectTextRequest] (val x: Self) extends AnyVal {
+  implicit class DetectTextRequestMutableBuilder[Self <: DetectTextRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilters(value: DetectTextFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setImage(value: Image): Self = this.set("Image", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFilters(value: DetectTextFilters): Self = this.set("Filters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilters: Self = this.set("Filters", js.undefined)
+    def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
   }
 }

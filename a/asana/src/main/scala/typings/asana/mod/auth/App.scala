@@ -1,12 +1,12 @@
 package typings.asana.mod.auth
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait App extends js.Object {
+trait App extends StObject {
   
   /**
     * @param {String} code An authorization code obtained via `asanaAuthorizeUrl`.
@@ -62,6 +62,3 @@ trait App extends js.Object {
   
   var scope: String = js.native
 }
-@JSImport("asana", "auth.App")
-@js.native
-object App extends TopLevel[AppStatic]

@@ -1,11 +1,12 @@
 package typings.awsSdk.batchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComputeResourceUpdate extends js.Object {
+trait ComputeResourceUpdate extends StObject {
   
   /**
     * The desired number of Amazon EC2 vCPUS in the compute environment.
@@ -31,36 +32,24 @@ object ComputeResourceUpdate {
   }
   
   @scala.inline
-  implicit class ComputeResourceUpdateOps[Self <: ComputeResourceUpdate] (val x: Self) extends AnyVal {
+  implicit class ComputeResourceUpdateMutableBuilder[Self <: ComputeResourceUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesiredvCpus(value: Integer): Self = StObject.set(x, "desiredvCpus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesiredvCpusUndefined: Self = StObject.set(x, "desiredvCpus", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxvCpus(value: Integer): Self = StObject.set(x, "maxvCpus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredvCpus(value: Integer): Self = this.set("desiredvCpus", value.asInstanceOf[js.Any])
+    def setMaxvCpusUndefined: Self = StObject.set(x, "maxvCpus", js.undefined)
     
     @scala.inline
-    def deleteDesiredvCpus: Self = this.set("desiredvCpus", js.undefined)
+    def setMinvCpus(value: Integer): Self = StObject.set(x, "minvCpus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxvCpus(value: Integer): Self = this.set("maxvCpus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxvCpus: Self = this.set("maxvCpus", js.undefined)
-    
-    @scala.inline
-    def setMinvCpus(value: Integer): Self = this.set("minvCpus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinvCpus: Self = this.set("minvCpus", js.undefined)
+    def setMinvCpusUndefined: Self = StObject.set(x, "minvCpus", js.undefined)
   }
 }

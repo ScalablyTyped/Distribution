@@ -1,12 +1,13 @@
 package typings.tableau.global.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("tableau.SelectionUpdateType")
 @js.native
-object SelectionUpdateType extends js.Object {
+object SelectionUpdateType extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.tableau.tableau.SelectionUpdateType with String] = js.native

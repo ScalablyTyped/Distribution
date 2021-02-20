@@ -4,13 +4,31 @@ import typings.sharepoint.SP.ClientObject
 import typings.sharepoint.SP.JsonObjectResult
 import typings.sharepoint.anon.High
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Microsoft.SharePoint.Client.Search.Administration")
-@js.native
-object Administration extends js.Object {
+object Administration {
+  
+  @js.native
+  sealed trait SearchObjectLevel extends StObject
+  @JSGlobal("Microsoft.SharePoint.Client.Search.Administration.SearchObjectLevel")
+  @js.native
+  object SearchObjectLevel extends StObject {
+    
+    @js.native
+    sealed trait spSite extends SearchObjectLevel
+    
+    @js.native
+    sealed trait spSiteSubscription extends SearchObjectLevel
+    
+    @js.native
+    sealed trait spWeb extends SearchObjectLevel
+    
+    @js.native
+    sealed trait ssa extends SearchObjectLevel
+  }
   
   @js.native
   trait DocumentCrawlLog extends ClientObject {
@@ -26,24 +44,6 @@ object Administration extends js.Object {
       startDateTime: Date,
       endDateTime: Date
     ): JsonObjectResult = js.native
-  }
-  
-  @js.native
-  sealed trait SearchObjectLevel extends js.Object
-  @js.native
-  object SearchObjectLevel extends js.Object {
-    
-    @js.native
-    sealed trait spSite extends SearchObjectLevel
-    
-    @js.native
-    sealed trait spSiteSubscription extends SearchObjectLevel
-    
-    @js.native
-    sealed trait spWeb extends SearchObjectLevel
-    
-    @js.native
-    sealed trait ssa extends SearchObjectLevel
   }
   
   type SearchObjectOwner = ClientObject

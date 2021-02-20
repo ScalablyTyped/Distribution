@@ -1,12 +1,13 @@
 package typings.mangopay2NodejsSdk.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.Headers> */
 @js.native
-trait PartialHeaders extends js.Object {
+trait PartialHeaders extends StObject {
   
   var Authorization: js.UndefOr[String] = js.native
   
@@ -25,42 +26,30 @@ object PartialHeaders {
   }
   
   @scala.inline
-  implicit class PartialHeadersOps[Self <: PartialHeaders] (val x: Self) extends AnyVal {
+  implicit class PartialHeadersMutableBuilder[Self <: PartialHeaders] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizationUndefined: Self = StObject.set(x, "Authorization", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setContent-Type`(value: String): Self = StObject.set(x, "Content-Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorization(value: String): Self = this.set("Authorization", value.asInstanceOf[js.Any])
+    def `setContent-TypeUndefined`: Self = StObject.set(x, "Content-Type", js.undefined)
     
     @scala.inline
-    def deleteAuthorization: Self = this.set("Authorization", js.undefined)
+    def `setIdempotency-Key`(value: String): Self = StObject.set(x, "Idempotency-Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setContent-Type`(value: String): Self = this.set("Content-Type", value.asInstanceOf[js.Any])
+    def `setIdempotency-KeyUndefined`: Self = StObject.set(x, "Idempotency-Key", js.undefined)
     
     @scala.inline
-    def `deleteContent-Type`: Self = this.set("Content-Type", js.undefined)
+    def `setUser-Agent`(value: String): Self = StObject.set(x, "User-Agent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIdempotency-Key`(value: String): Self = this.set("Idempotency-Key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteIdempotency-Key`: Self = this.set("Idempotency-Key", js.undefined)
-    
-    @scala.inline
-    def `setUser-Agent`(value: String): Self = this.set("User-Agent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteUser-Agent`: Self = this.set("User-Agent", js.undefined)
+    def `setUser-AgentUndefined`: Self = StObject.set(x, "User-Agent", js.undefined)
   }
 }

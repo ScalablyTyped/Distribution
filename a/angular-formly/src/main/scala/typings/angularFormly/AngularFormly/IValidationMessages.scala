@@ -1,6 +1,7 @@
 package typings.angularFormly.AngularFormly
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * see http://docs.angular-formly.com/docs/formlyvalidationmessages#addtemplateoptionvaluemessage
   */
 @js.native
-trait IValidationMessages extends js.Object {
+trait IValidationMessages extends StObject {
   
   def addStringMessage(name: String, string: String): Unit = js.native
   
@@ -34,31 +35,19 @@ object IValidationMessages {
   }
   
   @scala.inline
-  implicit class IValidationMessagesOps[Self <: IValidationMessages] (val x: Self) extends AnyVal {
+  implicit class IValidationMessagesMutableBuilder[Self <: IValidationMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddStringMessage(value: (String, String) => Unit): Self = StObject.set(x, "addStringMessage", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddStringMessage(value: (String, String) => Unit): Self = this.set("addStringMessage", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setAddTemplateOptionValueMessage(value: (String, String, String, String, String) => Unit): Self = this.set("addTemplateOptionValueMessage", js.Any.fromFunction5(value))
+    def setAddTemplateOptionValueMessage(value: (String, String, String, String, String) => Unit): Self = StObject.set(x, "addTemplateOptionValueMessage", js.Any.fromFunction5(value))
     
     @scala.inline
     def setMessages(
       value: StringDictionary[
           js.Function3[/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope, String]
         ]
-    ): Self = this.set("messages", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
   }
 }

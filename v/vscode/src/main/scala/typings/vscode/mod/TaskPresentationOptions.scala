@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskPresentationOptions extends js.Object {
+trait TaskPresentationOptions extends StObject {
   
   /**
     * Controls whether the terminal is cleared before executing the task.
@@ -50,54 +51,42 @@ object TaskPresentationOptions {
   }
   
   @scala.inline
-  implicit class TaskPresentationOptionsOps[Self <: TaskPresentationOptions] (val x: Self) extends AnyVal {
+  implicit class TaskPresentationOptionsMutableBuilder[Self <: TaskPresentationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEcho(value: Boolean): Self = StObject.set(x, "echo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: Boolean): Self = this.set("clear", value.asInstanceOf[js.Any])
+    def setEchoUndefined: Self = StObject.set(x, "echo", js.undefined)
     
     @scala.inline
-    def deleteClear: Self = this.set("clear", js.undefined)
+    def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEcho(value: Boolean): Self = this.set("echo", value.asInstanceOf[js.Any])
+    def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
     @scala.inline
-    def deleteEcho: Self = this.set("echo", js.undefined)
+    def setPanel(value: TaskPanelKind): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus(value: Boolean): Self = this.set("focus", value.asInstanceOf[js.Any])
+    def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
     
     @scala.inline
-    def deleteFocus: Self = this.set("focus", js.undefined)
+    def setReveal(value: TaskRevealKind): Self = StObject.set(x, "reveal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanel(value: TaskPanelKind): Self = this.set("panel", value.asInstanceOf[js.Any])
+    def setRevealUndefined: Self = StObject.set(x, "reveal", js.undefined)
     
     @scala.inline
-    def deletePanel: Self = this.set("panel", js.undefined)
+    def setShowReuseMessage(value: Boolean): Self = StObject.set(x, "showReuseMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReveal(value: TaskRevealKind): Self = this.set("reveal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReveal: Self = this.set("reveal", js.undefined)
-    
-    @scala.inline
-    def setShowReuseMessage(value: Boolean): Self = this.set("showReuseMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowReuseMessage: Self = this.set("showReuseMessage", js.undefined)
+    def setShowReuseMessageUndefined: Self = StObject.set(x, "showReuseMessage", js.undefined)
   }
 }

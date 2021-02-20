@@ -1,11 +1,12 @@
 package typings.awsSdk.machinelearningMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateEvaluationInput extends js.Object {
+trait UpdateEvaluationInput extends StObject {
   
   /**
     * The ID assigned to the Evaluation during creation.
@@ -26,24 +27,12 @@ object UpdateEvaluationInput {
   }
   
   @scala.inline
-  implicit class UpdateEvaluationInputOps[Self <: UpdateEvaluationInput] (val x: Self) extends AnyVal {
+  implicit class UpdateEvaluationInputMutableBuilder[Self <: UpdateEvaluationInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvaluationId(value: EntityId): Self = StObject.set(x, "EvaluationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEvaluationId(value: EntityId): Self = this.set("EvaluationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEvaluationName(value: EntityName): Self = this.set("EvaluationName", value.asInstanceOf[js.Any])
+    def setEvaluationName(value: EntityName): Self = StObject.set(x, "EvaluationName", value.asInstanceOf[js.Any])
   }
 }

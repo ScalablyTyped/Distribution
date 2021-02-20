@@ -1,6 +1,7 @@
 package typings.vexflow.Vex.Flow
 
 import typings.vexflow.Vex.Flow.TextNote.Justification
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,14 +15,13 @@ trait TextNote extends Note {
   
   def setLine(line: Double): TextNote = js.native
 }
-@JSGlobal("Vex.Flow.TextNote")
-@js.native
-object TextNote extends js.Object {
+object TextNote {
   
   @js.native
-  sealed trait Justification extends js.Object
+  sealed trait Justification extends StObject
+  @JSGlobal("Vex.Flow.TextNote.Justification")
   @js.native
-  object Justification extends js.Object {
+  object Justification extends StObject {
     
     @js.native
     sealed trait CENTER extends Justification

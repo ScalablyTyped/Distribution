@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -145,165 +146,153 @@ object SequenceQuality {
   }
   
   @scala.inline
-  implicit class SequenceQualityOps[Self <: SequenceQuality] (val x: Self) extends AnyVal {
+  implicit class SequenceQualityMutableBuilder[Self <: SequenceQuality] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: integer): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFScore(value: decimal): Self = StObject.set(x, "fScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setFScoreUndefined: Self = StObject.set(x, "fScore", js.undefined)
     
     @scala.inline
-    def set_end(value: Element): Self = this.set("_end", value.asInstanceOf[js.Any])
+    def setGtFP(value: decimal): Self = StObject.set(x, "gtFP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_end: Self = this.set("_end", js.undefined)
+    def setGtFPUndefined: Self = StObject.set(x, "gtFP", js.undefined)
     
     @scala.inline
-    def set_fScore(value: Element): Self = this.set("_fScore", value.asInstanceOf[js.Any])
+    def setMethod(value: CodeableConcept): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_fScore: Self = this.set("_fScore", js.undefined)
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def set_gtFP(value: Element): Self = this.set("_gtFP", value.asInstanceOf[js.Any])
+    def setPrecision(value: decimal): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_gtFP: Self = this.set("_gtFP", js.undefined)
+    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
     @scala.inline
-    def set_precision(value: Element): Self = this.set("_precision", value.asInstanceOf[js.Any])
+    def setQueryFP(value: decimal): Self = StObject.set(x, "queryFP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_precision: Self = this.set("_precision", js.undefined)
+    def setQueryFPUndefined: Self = StObject.set(x, "queryFP", js.undefined)
     
     @scala.inline
-    def set_queryFP(value: Element): Self = this.set("_queryFP", value.asInstanceOf[js.Any])
+    def setQueryTP(value: decimal): Self = StObject.set(x, "queryTP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_queryFP: Self = this.set("_queryFP", js.undefined)
+    def setQueryTPUndefined: Self = StObject.set(x, "queryTP", js.undefined)
     
     @scala.inline
-    def set_queryTP(value: Element): Self = this.set("_queryTP", value.asInstanceOf[js.Any])
+    def setRecall(value: decimal): Self = StObject.set(x, "recall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_queryTP: Self = this.set("_queryTP", js.undefined)
+    def setRecallUndefined: Self = StObject.set(x, "recall", js.undefined)
     
     @scala.inline
-    def set_recall(value: Element): Self = this.set("_recall", value.asInstanceOf[js.Any])
+    def setScore(value: Quantity): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_recall: Self = this.set("_recall", js.undefined)
+    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
     @scala.inline
-    def set_start(value: Element): Self = this.set("_start", value.asInstanceOf[js.Any])
+    def setStandardSequence(value: CodeableConcept): Self = StObject.set(x, "standardSequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_start: Self = this.set("_start", js.undefined)
+    def setStandardSequenceUndefined: Self = StObject.set(x, "standardSequence", js.undefined)
     
     @scala.inline
-    def set_truthFN(value: Element): Self = this.set("_truthFN", value.asInstanceOf[js.Any])
+    def setStart(value: integer): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_truthFN: Self = this.set("_truthFN", js.undefined)
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def set_truthTP(value: Element): Self = this.set("_truthTP", value.asInstanceOf[js.Any])
+    def setTruthFN(value: decimal): Self = StObject.set(x, "truthFN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_truthTP: Self = this.set("_truthTP", js.undefined)
+    def setTruthFNUndefined: Self = StObject.set(x, "truthFN", js.undefined)
     
     @scala.inline
-    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def setTruthTP(value: decimal): Self = StObject.set(x, "truthTP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_type: Self = this.set("_type", js.undefined)
+    def setTruthTPUndefined: Self = StObject.set(x, "truthTP", js.undefined)
     
     @scala.inline
-    def setEnd(value: integer): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def set_end(value: Element): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFScore(value: decimal): Self = this.set("fScore", value.asInstanceOf[js.Any])
+    def set_endUndefined: Self = StObject.set(x, "_end", js.undefined)
     
     @scala.inline
-    def deleteFScore: Self = this.set("fScore", js.undefined)
+    def set_fScore(value: Element): Self = StObject.set(x, "_fScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGtFP(value: decimal): Self = this.set("gtFP", value.asInstanceOf[js.Any])
+    def set_fScoreUndefined: Self = StObject.set(x, "_fScore", js.undefined)
     
     @scala.inline
-    def deleteGtFP: Self = this.set("gtFP", js.undefined)
+    def set_gtFP(value: Element): Self = StObject.set(x, "_gtFP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: CodeableConcept): Self = this.set("method", value.asInstanceOf[js.Any])
+    def set_gtFPUndefined: Self = StObject.set(x, "_gtFP", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def set_precision(value: Element): Self = StObject.set(x, "_precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecision(value: decimal): Self = this.set("precision", value.asInstanceOf[js.Any])
+    def set_precisionUndefined: Self = StObject.set(x, "_precision", js.undefined)
     
     @scala.inline
-    def deletePrecision: Self = this.set("precision", js.undefined)
+    def set_queryFP(value: Element): Self = StObject.set(x, "_queryFP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryFP(value: decimal): Self = this.set("queryFP", value.asInstanceOf[js.Any])
+    def set_queryFPUndefined: Self = StObject.set(x, "_queryFP", js.undefined)
     
     @scala.inline
-    def deleteQueryFP: Self = this.set("queryFP", js.undefined)
+    def set_queryTP(value: Element): Self = StObject.set(x, "_queryTP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryTP(value: decimal): Self = this.set("queryTP", value.asInstanceOf[js.Any])
+    def set_queryTPUndefined: Self = StObject.set(x, "_queryTP", js.undefined)
     
     @scala.inline
-    def deleteQueryTP: Self = this.set("queryTP", js.undefined)
+    def set_recall(value: Element): Self = StObject.set(x, "_recall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecall(value: decimal): Self = this.set("recall", value.asInstanceOf[js.Any])
+    def set_recallUndefined: Self = StObject.set(x, "_recall", js.undefined)
     
     @scala.inline
-    def deleteRecall: Self = this.set("recall", js.undefined)
+    def set_start(value: Element): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScore(value: Quantity): Self = this.set("score", value.asInstanceOf[js.Any])
+    def set_startUndefined: Self = StObject.set(x, "_start", js.undefined)
     
     @scala.inline
-    def deleteScore: Self = this.set("score", js.undefined)
+    def set_truthFN(value: Element): Self = StObject.set(x, "_truthFN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandardSequence(value: CodeableConcept): Self = this.set("standardSequence", value.asInstanceOf[js.Any])
+    def set_truthFNUndefined: Self = StObject.set(x, "_truthFN", js.undefined)
     
     @scala.inline
-    def deleteStandardSequence: Self = this.set("standardSequence", js.undefined)
+    def set_truthTP(value: Element): Self = StObject.set(x, "_truthTP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: integer): Self = this.set("start", value.asInstanceOf[js.Any])
+    def set_truthTPUndefined: Self = StObject.set(x, "_truthTP", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTruthFN(value: decimal): Self = this.set("truthFN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTruthFN: Self = this.set("truthFN", js.undefined)
-    
-    @scala.inline
-    def setTruthTP(value: decimal): Self = this.set("truthTP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTruthTP: Self = this.set("truthTP", js.undefined)
+    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

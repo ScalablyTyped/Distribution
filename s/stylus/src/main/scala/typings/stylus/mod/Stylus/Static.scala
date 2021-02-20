@@ -1,12 +1,13 @@
 package typings.stylus.mod.Stylus
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Static extends js.Object {
+trait Static extends StObject {
   
   /**
     * Return a new `Renderer` for the given `str` and `options`.

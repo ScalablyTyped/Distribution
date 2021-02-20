@@ -1,6 +1,7 @@
 package typings.reactBootstrapTable.mod
 
 import typings.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,54 +57,42 @@ object SelectFilter {
   }
   
   @scala.inline
-  implicit class SelectFilterOps[Self <: SelectFilter] (val x: Self) extends AnyVal {
+  implicit class SelectFilterMutableBuilder[Self <: SelectFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: FilterCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultValue(value: String | Double | Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: SelectFilterOptionsType): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def setType(value: typings.reactBootstrapTable.reactBootstrapTableStrings.SelectFilter): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setOptions(value: SelectFilterOptionsType): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: FilterCondition): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setSelectText(value: String): Self = StObject.set(x, "selectText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setSelectTextUndefined: Self = StObject.set(x, "selectText", js.undefined)
     
     @scala.inline
-    def setDefaultValue(value: String | Double | Boolean): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setSelectText(value: String): Self = this.set("selectText", value.asInstanceOf[js.Any])
+    def setType(value: typings.reactBootstrapTable.reactBootstrapTableStrings.SelectFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectText: Self = this.set("selectText", js.undefined)
+    def setWithoutEmptyOption(value: Boolean): Self = StObject.set(x, "withoutEmptyOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setWithoutEmptyOption(value: Boolean): Self = this.set("withoutEmptyOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithoutEmptyOption: Self = this.set("withoutEmptyOption", js.undefined)
+    def setWithoutEmptyOptionUndefined: Self = StObject.set(x, "withoutEmptyOption", js.undefined)
   }
 }

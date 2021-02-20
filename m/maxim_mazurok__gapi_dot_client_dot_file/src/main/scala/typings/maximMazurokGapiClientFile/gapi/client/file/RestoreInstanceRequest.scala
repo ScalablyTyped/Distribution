@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFile.gapi.client.file
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RestoreInstanceRequest extends js.Object {
+trait RestoreInstanceRequest extends StObject {
   
   /** Required. Name of the file share in the Cloud Filestore instance that the backup is being restored to. */
   var fileShare: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object RestoreInstanceRequest {
   }
   
   @scala.inline
-  implicit class RestoreInstanceRequestOps[Self <: RestoreInstanceRequest] (val x: Self) extends AnyVal {
+  implicit class RestoreInstanceRequestMutableBuilder[Self <: RestoreInstanceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileShare(value: String): Self = StObject.set(x, "fileShare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileShareUndefined: Self = StObject.set(x, "fileShare", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceBackup(value: String): Self = StObject.set(x, "sourceBackup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileShare(value: String): Self = this.set("fileShare", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileShare: Self = this.set("fileShare", js.undefined)
-    
-    @scala.inline
-    def setSourceBackup(value: String): Self = this.set("sourceBackup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceBackup: Self = this.set("sourceBackup", js.undefined)
+    def setSourceBackupUndefined: Self = StObject.set(x, "sourceBackup", js.undefined)
   }
 }

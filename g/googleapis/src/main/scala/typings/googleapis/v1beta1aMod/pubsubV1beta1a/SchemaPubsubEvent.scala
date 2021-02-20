@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta1aMod.pubsubV1beta1a
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An event indicating a received message or truncation event.
   */
 @js.native
-trait SchemaPubsubEvent extends js.Object {
+trait SchemaPubsubEvent extends StObject {
   
   /**
     * Indicates that this subscription has been deleted. (Note that pull
@@ -41,42 +42,30 @@ object SchemaPubsubEvent {
   }
   
   @scala.inline
-  implicit class SchemaPubsubEventOps[Self <: SchemaPubsubEvent] (val x: Self) extends AnyVal {
+  implicit class SchemaPubsubEventMutableBuilder[Self <: SchemaPubsubEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: SchemaPubsubMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: SchemaPubsubMessage): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setTruncated(value: Boolean): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscription(value: String): Self = this.set("subscription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscription: Self = this.set("subscription", js.undefined)
-    
-    @scala.inline
-    def setTruncated(value: Boolean): Self = this.set("truncated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTruncated: Self = this.set("truncated", js.undefined)
+    def setTruncatedUndefined: Self = StObject.set(x, "truncated", js.undefined)
   }
 }

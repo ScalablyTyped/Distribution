@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetadataInfo extends js.Object {
+trait MetadataInfo extends StObject {
   
   /**
     * The time at which the entry was created.
@@ -26,30 +27,18 @@ object MetadataInfo {
   }
   
   @scala.inline
-  implicit class MetadataInfoOps[Self <: MetadataInfo] (val x: Self) extends AnyVal {
+  implicit class MetadataInfoMutableBuilder[Self <: MetadataInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedTime(value: CreatedTimestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetadataValue(value: MetadataValueString): Self = StObject.set(x, "MetadataValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTime(value: CreatedTimestamp): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
-    
-    @scala.inline
-    def setMetadataValue(value: MetadataValueString): Self = this.set("MetadataValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadataValue: Self = this.set("MetadataValue", js.undefined)
+    def setMetadataValueUndefined: Self = StObject.set(x, "MetadataValue", js.undefined)
   }
 }

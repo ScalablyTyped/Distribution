@@ -5,12 +5,13 @@ import typings.jwplayer.jwplayerStrings.mid
 import typings.jwplayer.jwplayerStrings.post
 import typings.jwplayer.jwplayerStrings.pre
 import typings.jwplayer.jwplayerStrings.vast
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdImpressionParam extends js.Object {
+trait AdImpressionParam extends StObject {
   
   var adposition: pre | mid | post = js.native
   
@@ -55,54 +56,42 @@ object AdImpressionParam {
   }
   
   @scala.inline
-  implicit class AdImpressionParamOps[Self <: AdImpressionParam] (val x: Self) extends AnyVal {
+  implicit class AdImpressionParamMutableBuilder[Self <: AdImpressionParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdposition(value: pre | mid | post): Self = StObject.set(x, "adposition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdsystem(value: String): Self = StObject.set(x, "adsystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdtitle(value: String): Self = StObject.set(x, "adtitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdposition(value: pre | mid | post): Self = this.set("adposition", value.asInstanceOf[js.Any])
+    def setClickThroughUrl(value: String): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdsystem(value: String): Self = this.set("adsystem", value.asInstanceOf[js.Any])
+    def setClient(value: vast | googima): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdtitle(value: String): Self = this.set("adtitle", value.asInstanceOf[js.Any])
+    def setCreativetype(value: String): Self = StObject.set(x, "creativetype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickThroughUrl(value: String): Self = this.set("clickThroughUrl", value.asInstanceOf[js.Any])
+    def setLinear(value: String): Self = StObject.set(x, "linear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient(value: vast | googima): Self = this.set("client", value.asInstanceOf[js.Any])
+    def setMediafile(value: js.Any): Self = StObject.set(x, "mediafile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreativetype(value: String): Self = this.set("creativetype", value.asInstanceOf[js.Any])
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinear(value: String): Self = this.set("linear", value.asInstanceOf[js.Any])
+    def setVastversion(value: Double): Self = StObject.set(x, "vastversion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediafile(value: js.Any): Self = this.set("mediafile", value.asInstanceOf[js.Any])
+    def setWrapper(value: js.Array[_]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVastversion(value: Double): Self = this.set("vastversion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrapperVarargs(value: js.Any*): Self = this.set("wrapper", js.Array(value :_*))
-    
-    @scala.inline
-    def setWrapper(value: js.Array[_]): Self = this.set("wrapper", value.asInstanceOf[js.Any])
+    def setWrapperVarargs(value: js.Any*): Self = StObject.set(x, "wrapper", js.Array(value :_*))
   }
 }

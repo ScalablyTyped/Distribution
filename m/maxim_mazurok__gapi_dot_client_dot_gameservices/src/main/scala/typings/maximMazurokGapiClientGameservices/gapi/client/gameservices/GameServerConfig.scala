@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GameServerConfig extends js.Object {
+trait GameServerConfig extends StObject {
   
   /** Output only. The creation time. */
   var createTime: js.UndefOr[String] = js.native
@@ -45,70 +46,58 @@ object GameServerConfig {
   }
   
   @scala.inline
-  implicit class GameServerConfigOps[Self <: GameServerConfig] (val x: Self) extends AnyVal {
+  implicit class GameServerConfigMutableBuilder[Self <: GameServerConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setFleetConfigs(value: js.Array[FleetConfig]): Self = StObject.set(x, "fleetConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFleetConfigsUndefined: Self = StObject.set(x, "fleetConfigs", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
-    
-    @scala.inline
-    def setFleetConfigsVarargs(value: FleetConfig*): Self = this.set("fleetConfigs", js.Array(value :_*))
-    
-    @scala.inline
-    def setFleetConfigs(value: js.Array[FleetConfig]): Self = this.set("fleetConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFleetConfigs: Self = this.set("fleetConfigs", js.undefined)
+    def setFleetConfigsVarargs(value: FleetConfig*): Self = StObject.set(x, "fleetConfigs", js.Array(value :_*))
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientGameservices.maximMazurokGapiClientGameservicesStrings.GameServerConfig with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setScalingConfigsVarargs(value: ScalingConfig*): Self = this.set("scalingConfigs", js.Array(value :_*))
+    def setScalingConfigs(value: js.Array[ScalingConfig]): Self = StObject.set(x, "scalingConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalingConfigs(value: js.Array[ScalingConfig]): Self = this.set("scalingConfigs", value.asInstanceOf[js.Any])
+    def setScalingConfigsUndefined: Self = StObject.set(x, "scalingConfigs", js.undefined)
     
     @scala.inline
-    def deleteScalingConfigs: Self = this.set("scalingConfigs", js.undefined)
+    def setScalingConfigsVarargs(value: ScalingConfig*): Self = StObject.set(x, "scalingConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

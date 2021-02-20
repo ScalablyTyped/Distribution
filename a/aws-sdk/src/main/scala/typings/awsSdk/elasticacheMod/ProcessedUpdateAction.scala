@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProcessedUpdateAction extends js.Object {
+trait ProcessedUpdateAction extends StObject {
   
   /**
     * The ID of the cache cluster
@@ -36,42 +37,30 @@ object ProcessedUpdateAction {
   }
   
   @scala.inline
-  implicit class ProcessedUpdateActionOps[Self <: ProcessedUpdateAction] (val x: Self) extends AnyVal {
+  implicit class ProcessedUpdateActionMutableBuilder[Self <: ProcessedUpdateAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheClusterIdUndefined: Self = StObject.set(x, "CacheClusterId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheClusterId(value: String): Self = this.set("CacheClusterId", value.asInstanceOf[js.Any])
+    def setReplicationGroupIdUndefined: Self = StObject.set(x, "ReplicationGroupId", js.undefined)
     
     @scala.inline
-    def deleteCacheClusterId: Self = this.set("CacheClusterId", js.undefined)
+    def setServiceUpdateName(value: String): Self = StObject.set(x, "ServiceUpdateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationGroupId(value: String): Self = this.set("ReplicationGroupId", value.asInstanceOf[js.Any])
+    def setServiceUpdateNameUndefined: Self = StObject.set(x, "ServiceUpdateName", js.undefined)
     
     @scala.inline
-    def deleteReplicationGroupId: Self = this.set("ReplicationGroupId", js.undefined)
+    def setUpdateActionStatus(value: UpdateActionStatus): Self = StObject.set(x, "UpdateActionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceUpdateName(value: String): Self = this.set("ServiceUpdateName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceUpdateName: Self = this.set("ServiceUpdateName", js.undefined)
-    
-    @scala.inline
-    def setUpdateActionStatus(value: UpdateActionStatus): Self = this.set("UpdateActionStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateActionStatus: Self = this.set("UpdateActionStatus", js.undefined)
+    def setUpdateActionStatusUndefined: Self = StObject.set(x, "UpdateActionStatus", js.undefined)
   }
 }

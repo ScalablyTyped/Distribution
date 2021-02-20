@@ -1,7 +1,7 @@
 package typings.xadesjs.mod
 
 import typings.std.Crypto
-import typings.xmldsigjs.applicationMod.CryptoEx
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,15 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Application ()
   extends typings.xmldsigjs.mod.Application
 /* static members */
-@JSImport("xadesjs", "Application")
-@js.native
-object Application extends js.Object {
+object Application {
   
-  /**
-    * Gets the crypto module from the Application
-    */
-  def crypto: CryptoEx = js.native
-  
+  @JSImport("xadesjs", "Application.isNodePlugin")
+  @js.native
   def isNodePlugin(): Boolean = js.native
   
   /**
@@ -28,5 +23,7 @@ object Application extends js.Object {
     * @param  {Crypto} crypto
     * @returns void
     */
+  @JSImport("xadesjs", "Application.setEngine")
+  @js.native
   def setEngine(name: String, crypto: Crypto): Unit = js.native
 }

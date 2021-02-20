@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetEventSourceMappingRequest extends js.Object {
+trait GetEventSourceMappingRequest extends StObject {
   
   /**
     * The identifier of the event source mapping.
@@ -21,21 +22,9 @@ object GetEventSourceMappingRequest {
   }
   
   @scala.inline
-  implicit class GetEventSourceMappingRequestOps[Self <: GetEventSourceMappingRequest] (val x: Self) extends AnyVal {
+  implicit class GetEventSourceMappingRequestMutableBuilder[Self <: GetEventSourceMappingRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUUID(value: String): Self = this.set("UUID", value.asInstanceOf[js.Any])
+    def setUUID(value: String): Self = StObject.set(x, "UUID", value.asInstanceOf[js.Any])
   }
 }

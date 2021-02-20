@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a Quobyte mount that lasts the lifetime of a pod. Quobyte volumes do not support ownership management or SELinux relabeling.
   */
 @js.native
-trait QuobyteVolumeSource extends js.Object {
+trait QuobyteVolumeSource extends StObject {
   
   /**
     * Group to map volume access to Default is no group
@@ -50,48 +51,36 @@ object QuobyteVolumeSource {
   }
   
   @scala.inline
-  implicit class QuobyteVolumeSourceOps[Self <: QuobyteVolumeSource] (val x: Self) extends AnyVal {
+  implicit class QuobyteVolumeSourceMutableBuilder[Self <: QuobyteVolumeSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistry(value: Input[String]): Self = this.set("registry", value.asInstanceOf[js.Any])
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def setVolume(value: Input[String]): Self = this.set("volume", value.asInstanceOf[js.Any])
+    def setRegistry(value: Input[String]): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: Input[String]): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setTenant(value: Input[String]): Self = StObject.set(x, "tenant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setTenantUndefined: Self = StObject.set(x, "tenant", js.undefined)
     
     @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
     @scala.inline
-    def setTenant(value: Input[String]): Self = this.set("tenant", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTenant: Self = this.set("tenant", js.undefined)
-    
-    @scala.inline
-    def setUser(value: Input[String]): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setVolume(value: Input[String]): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

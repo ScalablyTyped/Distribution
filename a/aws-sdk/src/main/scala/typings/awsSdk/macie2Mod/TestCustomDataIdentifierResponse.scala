@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestCustomDataIdentifierResponse extends js.Object {
+trait TestCustomDataIdentifierResponse extends StObject {
   
   /**
     * The number of instances of sample text that matched the detection criteria specified in the custom data identifier.
@@ -21,24 +22,12 @@ object TestCustomDataIdentifierResponse {
   }
   
   @scala.inline
-  implicit class TestCustomDataIdentifierResponseOps[Self <: TestCustomDataIdentifierResponse] (val x: Self) extends AnyVal {
+  implicit class TestCustomDataIdentifierResponseMutableBuilder[Self <: TestCustomDataIdentifierResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMatchCount(value: integer): Self = StObject.set(x, "matchCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMatchCount(value: integer): Self = this.set("matchCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchCount: Self = this.set("matchCount", js.undefined)
+    def setMatchCountUndefined: Self = StObject.set(x, "matchCount", js.undefined)
   }
 }

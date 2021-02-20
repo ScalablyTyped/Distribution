@@ -1,11 +1,12 @@
 package typings.awsSdk.fsxMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateFileSystemLustreConfiguration extends js.Object {
+trait CreateFileSystemLustreConfiguration extends StObject {
   
   /**
     *  (Optional) When you create your file system, your existing S3 objects appear as file and directory listings. Use this property to choose how Amazon FSx keeps your file and directory listings up to date as you add or modify objects in your linked S3 bucket. AutoImportPolicy can have the following values:    NONE - (Default) AutoImport is off. Amazon FSx only updates file and directory listings from the linked S3 bucket when the file system is created. FSx does not update file and directory listings for any new or changed objects after choosing this option.    NEW - AutoImport is on. Amazon FSx automatically imports directory listings of any new objects added to the linked S3 bucket that do not currently exist in the FSx file system.     NEW_CHANGED - AutoImport is on. Amazon FSx automatically imports file and directory listings of any new objects added to the S3 bucket and any existing objects that are changed in the S3 bucket after you choose this option.    For more information, see Automatically import updates from your S3 bucket.
@@ -65,84 +66,72 @@ object CreateFileSystemLustreConfiguration {
   }
   
   @scala.inline
-  implicit class CreateFileSystemLustreConfigurationOps[Self <: CreateFileSystemLustreConfiguration] (val x: Self) extends AnyVal {
+  implicit class CreateFileSystemLustreConfigurationMutableBuilder[Self <: CreateFileSystemLustreConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoImportPolicy(value: AutoImportPolicyType): Self = StObject.set(x, "AutoImportPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoImportPolicyUndefined: Self = StObject.set(x, "AutoImportPolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutomaticBackupRetentionDays(value: AutomaticBackupRetentionDays): Self = StObject.set(x, "AutomaticBackupRetentionDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoImportPolicy(value: AutoImportPolicyType): Self = this.set("AutoImportPolicy", value.asInstanceOf[js.Any])
+    def setAutomaticBackupRetentionDaysUndefined: Self = StObject.set(x, "AutomaticBackupRetentionDays", js.undefined)
     
     @scala.inline
-    def deleteAutoImportPolicy: Self = this.set("AutoImportPolicy", js.undefined)
+    def setCopyTagsToBackups(value: Flag): Self = StObject.set(x, "CopyTagsToBackups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticBackupRetentionDays(value: AutomaticBackupRetentionDays): Self = this.set("AutomaticBackupRetentionDays", value.asInstanceOf[js.Any])
+    def setCopyTagsToBackupsUndefined: Self = StObject.set(x, "CopyTagsToBackups", js.undefined)
     
     @scala.inline
-    def deleteAutomaticBackupRetentionDays: Self = this.set("AutomaticBackupRetentionDays", js.undefined)
+    def setDailyAutomaticBackupStartTime(value: DailyTime): Self = StObject.set(x, "DailyAutomaticBackupStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyTagsToBackups(value: Flag): Self = this.set("CopyTagsToBackups", value.asInstanceOf[js.Any])
+    def setDailyAutomaticBackupStartTimeUndefined: Self = StObject.set(x, "DailyAutomaticBackupStartTime", js.undefined)
     
     @scala.inline
-    def deleteCopyTagsToBackups: Self = this.set("CopyTagsToBackups", js.undefined)
+    def setDeploymentType(value: LustreDeploymentType): Self = StObject.set(x, "DeploymentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDailyAutomaticBackupStartTime(value: DailyTime): Self = this.set("DailyAutomaticBackupStartTime", value.asInstanceOf[js.Any])
+    def setDeploymentTypeUndefined: Self = StObject.set(x, "DeploymentType", js.undefined)
     
     @scala.inline
-    def deleteDailyAutomaticBackupStartTime: Self = this.set("DailyAutomaticBackupStartTime", js.undefined)
+    def setDriveCacheType(value: DriveCacheType): Self = StObject.set(x, "DriveCacheType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentType(value: LustreDeploymentType): Self = this.set("DeploymentType", value.asInstanceOf[js.Any])
+    def setDriveCacheTypeUndefined: Self = StObject.set(x, "DriveCacheType", js.undefined)
     
     @scala.inline
-    def deleteDeploymentType: Self = this.set("DeploymentType", js.undefined)
+    def setExportPath(value: ArchivePath): Self = StObject.set(x, "ExportPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriveCacheType(value: DriveCacheType): Self = this.set("DriveCacheType", value.asInstanceOf[js.Any])
+    def setExportPathUndefined: Self = StObject.set(x, "ExportPath", js.undefined)
     
     @scala.inline
-    def deleteDriveCacheType: Self = this.set("DriveCacheType", js.undefined)
+    def setImportPath(value: ArchivePath): Self = StObject.set(x, "ImportPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportPath(value: ArchivePath): Self = this.set("ExportPath", value.asInstanceOf[js.Any])
+    def setImportPathUndefined: Self = StObject.set(x, "ImportPath", js.undefined)
     
     @scala.inline
-    def deleteExportPath: Self = this.set("ExportPath", js.undefined)
+    def setImportedFileChunkSize(value: Megabytes): Self = StObject.set(x, "ImportedFileChunkSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportPath(value: ArchivePath): Self = this.set("ImportPath", value.asInstanceOf[js.Any])
+    def setImportedFileChunkSizeUndefined: Self = StObject.set(x, "ImportedFileChunkSize", js.undefined)
     
     @scala.inline
-    def deleteImportPath: Self = this.set("ImportPath", js.undefined)
+    def setPerUnitStorageThroughput(value: PerUnitStorageThroughput): Self = StObject.set(x, "PerUnitStorageThroughput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportedFileChunkSize(value: Megabytes): Self = this.set("ImportedFileChunkSize", value.asInstanceOf[js.Any])
+    def setPerUnitStorageThroughputUndefined: Self = StObject.set(x, "PerUnitStorageThroughput", js.undefined)
     
     @scala.inline
-    def deleteImportedFileChunkSize: Self = this.set("ImportedFileChunkSize", js.undefined)
+    def setWeeklyMaintenanceStartTime(value: WeeklyTime): Self = StObject.set(x, "WeeklyMaintenanceStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerUnitStorageThroughput(value: PerUnitStorageThroughput): Self = this.set("PerUnitStorageThroughput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerUnitStorageThroughput: Self = this.set("PerUnitStorageThroughput", js.undefined)
-    
-    @scala.inline
-    def setWeeklyMaintenanceStartTime(value: WeeklyTime): Self = this.set("WeeklyMaintenanceStartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeeklyMaintenanceStartTime: Self = this.set("WeeklyMaintenanceStartTime", js.undefined)
+    def setWeeklyMaintenanceStartTimeUndefined: Self = StObject.set(x, "WeeklyMaintenanceStartTime", js.undefined)
   }
 }

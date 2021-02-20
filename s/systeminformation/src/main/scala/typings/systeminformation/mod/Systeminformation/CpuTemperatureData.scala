@@ -1,11 +1,12 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CpuTemperatureData extends js.Object {
+trait CpuTemperatureData extends StObject {
   
   var cores: js.Array[Double] = js.native
   
@@ -22,30 +23,18 @@ object CpuTemperatureData {
   }
   
   @scala.inline
-  implicit class CpuTemperatureDataOps[Self <: CpuTemperatureData] (val x: Self) extends AnyVal {
+  implicit class CpuTemperatureDataMutableBuilder[Self <: CpuTemperatureData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCores(value: js.Array[Double]): Self = StObject.set(x, "cores", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoresVarargs(value: Double*): Self = StObject.set(x, "cores", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMain(value: Double): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoresVarargs(value: Double*): Self = this.set("cores", js.Array(value :_*))
-    
-    @scala.inline
-    def setCores(value: js.Array[Double]): Self = this.set("cores", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMain(value: Double): Self = this.set("main", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
   }
 }

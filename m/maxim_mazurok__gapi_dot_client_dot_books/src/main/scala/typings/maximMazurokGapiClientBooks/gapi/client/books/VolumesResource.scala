@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientBooks.anon.Accesstoken
 import typings.maximMazurokGapiClientBooks.anon.Alt
 import typings.maximMazurokGapiClientBooks.anon.Callback
 import typings.maximMazurokGapiClientBooks.anon.Download
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VolumesResource extends js.Object {
+trait VolumesResource extends StObject {
   
   var associated: AssociatedResource = js.native
   

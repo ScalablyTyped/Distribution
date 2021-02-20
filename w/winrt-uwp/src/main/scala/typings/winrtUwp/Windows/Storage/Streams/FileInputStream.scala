@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Storage.Streams
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Reads data from a file. */
 @js.native
-trait FileInputStream extends js.Object {
+trait FileInputStream extends StObject {
   
   /** Closes the current stream and releases system resources. */
   def close(): Unit = js.native
@@ -33,26 +34,14 @@ object FileInputStream {
   }
   
   @scala.inline
-  implicit class FileInputStreamOps[Self <: FileInputStream] (val x: Self) extends AnyVal {
+  implicit class FileInputStreamMutableBuilder[Self <: FileInputStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
     def setReadAsync(
       value: (IBuffer, Double, InputStreamOptions) => IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
-    ): Self = this.set("readAsync", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "readAsync", js.Any.fromFunction3(value))
   }
 }

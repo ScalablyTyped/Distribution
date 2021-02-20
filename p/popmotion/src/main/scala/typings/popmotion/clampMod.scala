@@ -1,12 +1,13 @@
 package typings.popmotion
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("popmotion/lib/utils/clamp", JSImport.Namespace)
-@js.native
-object clampMod extends js.Object {
+object clampMod {
   
+  @JSImport("popmotion/lib/utils/clamp", "clamp")
+  @js.native
   def clamp(min: Double, max: Double, v: Double): Double = js.native
 }

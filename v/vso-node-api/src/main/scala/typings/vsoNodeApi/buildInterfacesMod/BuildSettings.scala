@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildSettings extends js.Object {
+trait BuildSettings extends StObject {
   
   /**
     * The number of days to keep records of deleted builds.
@@ -35,27 +36,15 @@ object BuildSettings {
   }
   
   @scala.inline
-  implicit class BuildSettingsOps[Self <: BuildSettings] (val x: Self) extends AnyVal {
+  implicit class BuildSettingsMutableBuilder[Self <: BuildSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDaysToKeepDeletedBuildsBeforeDestroy(value: Double): Self = StObject.set(x, "daysToKeepDeletedBuildsBeforeDestroy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultRetentionPolicy(value: RetentionPolicy): Self = StObject.set(x, "defaultRetentionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDaysToKeepDeletedBuildsBeforeDestroy(value: Double): Self = this.set("daysToKeepDeletedBuildsBeforeDestroy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultRetentionPolicy(value: RetentionPolicy): Self = this.set("defaultRetentionPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaximumRetentionPolicy(value: RetentionPolicy): Self = this.set("maximumRetentionPolicy", value.asInstanceOf[js.Any])
+    def setMaximumRetentionPolicy(value: RetentionPolicy): Self = StObject.set(x, "maximumRetentionPolicy", value.asInstanceOf[js.Any])
   }
 }

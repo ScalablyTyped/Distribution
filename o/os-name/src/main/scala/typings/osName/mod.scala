@@ -1,13 +1,12 @@
 package typings.osName
 
 import typings.node.processMod.global.NodeJS.Platform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("os-name", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   Get the name of the current operating system.
@@ -31,6 +30,10 @@ object mod extends js.Object {
   //=> 'Windows 8.1'
   ```
   */
+  @JSImport("os-name", JSImport.Namespace)
+  @js.native
   def apply(): String = js.native
+  @JSImport("os-name", JSImport.Namespace)
+  @js.native
   def apply(platform: Platform, release: String): String = js.native
 }

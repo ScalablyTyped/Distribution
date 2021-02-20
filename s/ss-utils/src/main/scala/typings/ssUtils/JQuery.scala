@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ssUtils.ssutils.ApplyErrorsOptions
 import typings.ssUtils.ssutils.HandleServerEventsOptions
 import typings.ssUtils.ssutils.ResponseStatus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //Needs to be declared locally
 //declare var EventSource: ssutils.IEventSourceStatic;
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def applyErrors(status: ResponseStatus): JQuery = js.native
   def applyErrors(status: ResponseStatus, opt: ApplyErrorsOptions): JQuery = js.native

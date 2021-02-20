@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionExecutionOutput extends js.Object {
+trait ActionExecutionOutput extends StObject {
   
   /**
     * Execution result information listed in the output details for an action execution.
@@ -31,39 +32,27 @@ object ActionExecutionOutput {
   }
   
   @scala.inline
-  implicit class ActionExecutionOutputOps[Self <: ActionExecutionOutput] (val x: Self) extends AnyVal {
+  implicit class ActionExecutionOutputMutableBuilder[Self <: ActionExecutionOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutionResult(value: ActionExecutionResult): Self = StObject.set(x, "executionResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutionResultUndefined: Self = StObject.set(x, "executionResult", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutputArtifacts(value: ArtifactDetailList): Self = StObject.set(x, "outputArtifacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionResult(value: ActionExecutionResult): Self = this.set("executionResult", value.asInstanceOf[js.Any])
+    def setOutputArtifactsUndefined: Self = StObject.set(x, "outputArtifacts", js.undefined)
     
     @scala.inline
-    def deleteExecutionResult: Self = this.set("executionResult", js.undefined)
+    def setOutputArtifactsVarargs(value: ArtifactDetail*): Self = StObject.set(x, "outputArtifacts", js.Array(value :_*))
     
     @scala.inline
-    def setOutputArtifactsVarargs(value: ArtifactDetail*): Self = this.set("outputArtifacts", js.Array(value :_*))
+    def setOutputVariables(value: OutputVariablesMap): Self = StObject.set(x, "outputVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputArtifacts(value: ArtifactDetailList): Self = this.set("outputArtifacts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputArtifacts: Self = this.set("outputArtifacts", js.undefined)
-    
-    @scala.inline
-    def setOutputVariables(value: OutputVariablesMap): Self = this.set("outputVariables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputVariables: Self = this.set("outputVariables", js.undefined)
+    def setOutputVariablesUndefined: Self = StObject.set(x, "outputVariables", js.undefined)
   }
 }

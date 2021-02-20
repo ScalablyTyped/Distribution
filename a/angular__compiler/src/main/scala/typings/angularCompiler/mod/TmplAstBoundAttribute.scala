@@ -4,6 +4,7 @@ import typings.angularCompiler.astMod.BindingType
 import typings.angularCompiler.coreMod.SecurityContext
 import typings.angularCompiler.i18nAstMod.I18nMeta
 import typings.angularCompiler.r3AstMod.BoundAttribute
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,10 +97,12 @@ class TmplAstBoundAttribute protected ()
   ) = this()
 }
 /* static members */
-@JSImport("@angular/compiler", "TmplAstBoundAttribute")
-@js.native
-object TmplAstBoundAttribute extends js.Object {
+object TmplAstBoundAttribute {
   
+  @JSImport("@angular/compiler", "TmplAstBoundAttribute.fromBoundElementProperty")
+  @js.native
   def fromBoundElementProperty(prop: typings.angularCompiler.astMod.BoundElementProperty): BoundAttribute = js.native
+  @JSImport("@angular/compiler", "TmplAstBoundAttribute.fromBoundElementProperty")
+  @js.native
   def fromBoundElementProperty(prop: typings.angularCompiler.astMod.BoundElementProperty, i18n: I18nMeta): BoundAttribute = js.native
 }

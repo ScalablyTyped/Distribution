@@ -1,11 +1,12 @@
 package typings.activexLibreoffice.com_.sun.star.chart2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataPointLabel extends js.Object {
+trait DataPointLabel extends StObject {
   
   /** The caption contains the category name of the category to which a data point belongs. */
   var ShowCategoryName: Boolean = js.native
@@ -40,30 +41,18 @@ object DataPointLabel {
   }
   
   @scala.inline
-  implicit class DataPointLabelOps[Self <: DataPointLabel] (val x: Self) extends AnyVal {
+  implicit class DataPointLabelMutableBuilder[Self <: DataPointLabel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShowCategoryName(value: Boolean): Self = StObject.set(x, "ShowCategoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShowLegendSymbol(value: Boolean): Self = StObject.set(x, "ShowLegendSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowNumber(value: Boolean): Self = StObject.set(x, "ShowNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCategoryName(value: Boolean): Self = this.set("ShowCategoryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowLegendSymbol(value: Boolean): Self = this.set("ShowLegendSymbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowNumber(value: Boolean): Self = this.set("ShowNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowNumberInPercent(value: Boolean): Self = this.set("ShowNumberInPercent", value.asInstanceOf[js.Any])
+    def setShowNumberInPercent(value: Boolean): Self = StObject.set(x, "ShowNumberInPercent", value.asInstanceOf[js.Any])
   }
 }

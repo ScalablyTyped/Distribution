@@ -1,11 +1,12 @@
 package typings.unityWebapi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnityMessagingIndicator extends js.Object {
+trait UnityMessagingIndicator extends StObject {
   
   def addAction(name: String, onActionInvoked: js.Function): js.Any = js.native
   
@@ -43,42 +44,30 @@ object UnityMessagingIndicator {
   }
   
   @scala.inline
-  implicit class UnityMessagingIndicatorOps[Self <: UnityMessagingIndicator] (val x: Self) extends AnyVal {
+  implicit class UnityMessagingIndicatorMutableBuilder[Self <: UnityMessagingIndicator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddAction(value: (String, js.Function) => js.Any): Self = StObject.set(x, "addAction", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearIndicator(value: String => js.Any): Self = StObject.set(x, "clearIndicator", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClearIndicators(value: () => js.Any): Self = StObject.set(x, "clearIndicators", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddAction(value: (String, js.Function) => js.Any): Self = this.set("addAction", js.Any.fromFunction2(value))
+    def setOnPresenceChanged(value: js.Function => js.Any): Self = StObject.set(x, "onPresenceChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClearIndicator(value: String => js.Any): Self = this.set("clearIndicator", js.Any.fromFunction1(value))
+    def setPresence(value: String): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearIndicators(value: () => js.Any): Self = this.set("clearIndicators", js.Any.fromFunction0(value))
+    def setRemoveAction(value: String => js.Any): Self = StObject.set(x, "removeAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnPresenceChanged(value: js.Function => js.Any): Self = this.set("onPresenceChanged", js.Any.fromFunction1(value))
+    def setRemoveActions(value: () => js.Any): Self = StObject.set(x, "removeActions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPresence(value: String): Self = this.set("presence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveAction(value: String => js.Any): Self = this.set("removeAction", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveActions(value: () => js.Any): Self = this.set("removeActions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShowIndicator(value: (String, UnityIndicatorProperties) => js.Any): Self = this.set("showIndicator", js.Any.fromFunction2(value))
+    def setShowIndicator(value: (String, UnityIndicatorProperties) => js.Any): Self = StObject.set(x, "showIndicator", js.Any.fromFunction2(value))
   }
 }

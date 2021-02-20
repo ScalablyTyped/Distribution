@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultSharedLinkOperationsAsync extends js.Object {
+trait IVaultSharedLinkOperationsAsync extends StObject {
   
   def CreateSharedLink(SharedLinkCreationInfo: ISharedLinkInfo): Unit = js.native
   def CreateSharedLink(

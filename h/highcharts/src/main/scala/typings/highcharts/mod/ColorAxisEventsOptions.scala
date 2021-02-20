@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColorAxisEventsOptions extends js.Object {
+trait ColorAxisEventsOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps) As opposed to the `setExtremes` event,
@@ -54,36 +55,24 @@ object ColorAxisEventsOptions {
   }
   
   @scala.inline
-  implicit class ColorAxisEventsOptionsOps[Self <: ColorAxisEventsOptions] (val x: Self) extends AnyVal {
+  implicit class ColorAxisEventsOptionsMutableBuilder[Self <: ColorAxisEventsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = StObject.set(x, "afterSetExtremes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterSetExtremesUndefined: Self = StObject.set(x, "afterSetExtremes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLegendItemClick(value: js.Function): Self = StObject.set(x, "legendItemClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = this.set("afterSetExtremes", value.asInstanceOf[js.Any])
+    def setLegendItemClickUndefined: Self = StObject.set(x, "legendItemClick", js.undefined)
     
     @scala.inline
-    def deleteAfterSetExtremes: Self = this.set("afterSetExtremes", js.undefined)
+    def setSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = StObject.set(x, "setExtremes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendItemClick(value: js.Function): Self = this.set("legendItemClick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLegendItemClick: Self = this.set("legendItemClick", js.undefined)
-    
-    @scala.inline
-    def setSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = this.set("setExtremes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSetExtremes: Self = this.set("setExtremes", js.undefined)
+    def setSetExtremesUndefined: Self = StObject.set(x, "setExtremes", js.undefined)
   }
 }

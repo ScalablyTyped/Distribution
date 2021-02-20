@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JoinTokens extends js.Object {
+trait JoinTokens extends StObject {
   
   var Manager: String = js.native
   
@@ -20,24 +21,12 @@ object JoinTokens {
   }
   
   @scala.inline
-  implicit class JoinTokensOps[Self <: JoinTokens] (val x: Self) extends AnyVal {
+  implicit class JoinTokensMutableBuilder[Self <: JoinTokens] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setManager(value: String): Self = StObject.set(x, "Manager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setManager(value: String): Self = this.set("Manager", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorker(value: String): Self = this.set("Worker", value.asInstanceOf[js.Any])
+    def setWorker(value: String): Self = StObject.set(x, "Worker", value.asInstanceOf[js.Any])
   }
 }

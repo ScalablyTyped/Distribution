@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeDomainConfigurationResponse extends js.Object {
+trait DescribeDomainConfigurationResponse extends StObject {
   
   /**
     * An object that specifies the authorization service for a domain.
@@ -61,75 +62,63 @@ object DescribeDomainConfigurationResponse {
   }
   
   @scala.inline
-  implicit class DescribeDomainConfigurationResponseOps[Self <: DescribeDomainConfigurationResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeDomainConfigurationResponseMutableBuilder[Self <: DescribeDomainConfigurationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizerConfig(value: AuthorizerConfig): Self = StObject.set(x, "authorizerConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizerConfigUndefined: Self = StObject.set(x, "authorizerConfig", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainConfigurationArn(value: DomainConfigurationArn): Self = StObject.set(x, "domainConfigurationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizerConfig(value: AuthorizerConfig): Self = this.set("authorizerConfig", value.asInstanceOf[js.Any])
+    def setDomainConfigurationArnUndefined: Self = StObject.set(x, "domainConfigurationArn", js.undefined)
     
     @scala.inline
-    def deleteAuthorizerConfig: Self = this.set("authorizerConfig", js.undefined)
+    def setDomainConfigurationName(value: ReservedDomainConfigurationName): Self = StObject.set(x, "domainConfigurationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainConfigurationArn(value: DomainConfigurationArn): Self = this.set("domainConfigurationArn", value.asInstanceOf[js.Any])
+    def setDomainConfigurationNameUndefined: Self = StObject.set(x, "domainConfigurationName", js.undefined)
     
     @scala.inline
-    def deleteDomainConfigurationArn: Self = this.set("domainConfigurationArn", js.undefined)
+    def setDomainConfigurationStatus(value: DomainConfigurationStatus): Self = StObject.set(x, "domainConfigurationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainConfigurationName(value: ReservedDomainConfigurationName): Self = this.set("domainConfigurationName", value.asInstanceOf[js.Any])
+    def setDomainConfigurationStatusUndefined: Self = StObject.set(x, "domainConfigurationStatus", js.undefined)
     
     @scala.inline
-    def deleteDomainConfigurationName: Self = this.set("domainConfigurationName", js.undefined)
+    def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainConfigurationStatus(value: DomainConfigurationStatus): Self = this.set("domainConfigurationStatus", value.asInstanceOf[js.Any])
+    def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
     
     @scala.inline
-    def deleteDomainConfigurationStatus: Self = this.set("domainConfigurationStatus", js.undefined)
+    def setDomainType(value: DomainType): Self = StObject.set(x, "domainType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: DomainName): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    def setDomainTypeUndefined: Self = StObject.set(x, "domainType", js.undefined)
     
     @scala.inline
-    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    def setLastStatusChangeDate(value: DateType): Self = StObject.set(x, "lastStatusChangeDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainType(value: DomainType): Self = this.set("domainType", value.asInstanceOf[js.Any])
+    def setLastStatusChangeDateUndefined: Self = StObject.set(x, "lastStatusChangeDate", js.undefined)
     
     @scala.inline
-    def deleteDomainType: Self = this.set("domainType", js.undefined)
+    def setServerCertificates(value: ServerCertificates): Self = StObject.set(x, "serverCertificates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastStatusChangeDate(value: DateType): Self = this.set("lastStatusChangeDate", value.asInstanceOf[js.Any])
+    def setServerCertificatesUndefined: Self = StObject.set(x, "serverCertificates", js.undefined)
     
     @scala.inline
-    def deleteLastStatusChangeDate: Self = this.set("lastStatusChangeDate", js.undefined)
+    def setServerCertificatesVarargs(value: ServerCertificateSummary*): Self = StObject.set(x, "serverCertificates", js.Array(value :_*))
     
     @scala.inline
-    def setServerCertificatesVarargs(value: ServerCertificateSummary*): Self = this.set("serverCertificates", js.Array(value :_*))
+    def setServiceType(value: ServiceType): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerCertificates(value: ServerCertificates): Self = this.set("serverCertificates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerCertificates: Self = this.set("serverCertificates", js.undefined)
-    
-    @scala.inline
-    def setServiceType(value: ServiceType): Self = this.set("serviceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceType: Self = this.set("serviceType", js.undefined)
+    def setServiceTypeUndefined: Self = StObject.set(x, "serviceType", js.undefined)
   }
 }

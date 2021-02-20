@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RightsizingRecommendationSummary extends js.Object {
+trait RightsizingRecommendationSummary extends StObject {
   
   /**
     *  Estimated total savings resulting from modifications, on a monthly basis.
@@ -36,42 +37,30 @@ object RightsizingRecommendationSummary {
   }
   
   @scala.inline
-  implicit class RightsizingRecommendationSummaryOps[Self <: RightsizingRecommendationSummary] (val x: Self) extends AnyVal {
+  implicit class RightsizingRecommendationSummaryMutableBuilder[Self <: RightsizingRecommendationSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEstimatedTotalMonthlySavingsAmount(value: GenericString): Self = StObject.set(x, "EstimatedTotalMonthlySavingsAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEstimatedTotalMonthlySavingsAmountUndefined: Self = StObject.set(x, "EstimatedTotalMonthlySavingsAmount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSavingsCurrencyCode(value: GenericString): Self = StObject.set(x, "SavingsCurrencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedTotalMonthlySavingsAmount(value: GenericString): Self = this.set("EstimatedTotalMonthlySavingsAmount", value.asInstanceOf[js.Any])
+    def setSavingsCurrencyCodeUndefined: Self = StObject.set(x, "SavingsCurrencyCode", js.undefined)
     
     @scala.inline
-    def deleteEstimatedTotalMonthlySavingsAmount: Self = this.set("EstimatedTotalMonthlySavingsAmount", js.undefined)
+    def setSavingsPercentage(value: GenericString): Self = StObject.set(x, "SavingsPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSavingsCurrencyCode(value: GenericString): Self = this.set("SavingsCurrencyCode", value.asInstanceOf[js.Any])
+    def setSavingsPercentageUndefined: Self = StObject.set(x, "SavingsPercentage", js.undefined)
     
     @scala.inline
-    def deleteSavingsCurrencyCode: Self = this.set("SavingsCurrencyCode", js.undefined)
+    def setTotalRecommendationCount(value: GenericString): Self = StObject.set(x, "TotalRecommendationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSavingsPercentage(value: GenericString): Self = this.set("SavingsPercentage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSavingsPercentage: Self = this.set("SavingsPercentage", js.undefined)
-    
-    @scala.inline
-    def setTotalRecommendationCount(value: GenericString): Self = this.set("TotalRecommendationCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalRecommendationCount: Self = this.set("TotalRecommendationCount", js.undefined)
+    def setTotalRecommendationCountUndefined: Self = StObject.set(x, "TotalRecommendationCount", js.undefined)
   }
 }

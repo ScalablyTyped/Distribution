@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.msk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterOpenMonitoringPrometheus extends js.Object {
+trait ClusterOpenMonitoringPrometheus extends StObject {
   
   /**
     * Configuration block for JMX Exporter. See below.
@@ -26,30 +27,18 @@ object ClusterOpenMonitoringPrometheus {
   }
   
   @scala.inline
-  implicit class ClusterOpenMonitoringPrometheusOps[Self <: ClusterOpenMonitoringPrometheus] (val x: Self) extends AnyVal {
+  implicit class ClusterOpenMonitoringPrometheusMutableBuilder[Self <: ClusterOpenMonitoringPrometheus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJmxExporter(value: ClusterOpenMonitoringPrometheusJmxExporter): Self = StObject.set(x, "jmxExporter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJmxExporterUndefined: Self = StObject.set(x, "jmxExporter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodeExporter(value: ClusterOpenMonitoringPrometheusNodeExporter): Self = StObject.set(x, "nodeExporter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJmxExporter(value: ClusterOpenMonitoringPrometheusJmxExporter): Self = this.set("jmxExporter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJmxExporter: Self = this.set("jmxExporter", js.undefined)
-    
-    @scala.inline
-    def setNodeExporter(value: ClusterOpenMonitoringPrometheusNodeExporter): Self = this.set("nodeExporter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeExporter: Self = this.set("nodeExporter", js.undefined)
+    def setNodeExporterUndefined: Self = StObject.set(x, "nodeExporter", js.undefined)
   }
 }

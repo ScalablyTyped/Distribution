@@ -2,16 +2,16 @@ package typings.awsSdk
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.endpointMod.Endpoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("aws-sdk/lib/http_request", JSImport.Namespace)
-@js.native
-object httpRequestMod extends js.Object {
+object httpRequestMod {
   
+  @JSImport("aws-sdk/lib/http_request", "HttpRequest")
   @js.native
-  class HttpRequest protected () extends js.Object {
+  class HttpRequest protected () extends StObject {
     /**
       * Constructs HttpRequest object with provided endpoint and region
       */

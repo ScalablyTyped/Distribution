@@ -7,12 +7,13 @@ import typings.chromeApps.chrome.syncFileSystem.FileStatusInfo
 import typings.filesystem.FileEntry
 import typings.filesystem.FileSystem
 import typings.std.Exclude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofsyncFileSystem extends js.Object {
+trait TypeofsyncFileSystem extends StObject {
   
   val ConflictResolutionPolicy: LASTWRITEWIN = js.native
   

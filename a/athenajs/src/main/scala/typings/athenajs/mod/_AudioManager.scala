@@ -1,12 +1,13 @@
 package typings.athenajs.mod
 
 import typings.std.HTMLAudioElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait _AudioManager extends js.Object {
+trait _AudioManager extends StObject {
   
   /**
     * Adds a new sound element to the audio cache.

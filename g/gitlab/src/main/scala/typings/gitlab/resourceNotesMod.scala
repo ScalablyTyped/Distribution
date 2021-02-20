@@ -6,14 +6,14 @@ import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import typings.gitlab.requestHelperMod.Sudo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gitlab/dist/types/core/templates/ResourceNotes", JSImport.Namespace)
-@js.native
-object resourceNotesMod extends js.Object {
+object resourceNotesMod {
   
+  @JSImport("gitlab/dist/types/core/templates/ResourceNotes", "ResourceNotes")
   @js.native
   class ResourceNotes protected () extends BaseService {
     def this(resourceType: String, resource2Type: String, options: BaseServiceOptions) = this()

@@ -1,12 +1,13 @@
 package typings.weappApi.mod.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 动画实例可以调用以下方法来描述动画，调用结束后会返回自身，支持链式调用的写法。 */
 @js.native
-trait Animation extends js.Object {
+trait Animation extends StObject {
   
   /** 颜色值 */
   def backgroundColor(color: String): Animation = js.native

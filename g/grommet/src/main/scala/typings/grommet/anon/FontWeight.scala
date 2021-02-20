@@ -6,12 +6,13 @@ import typings.grommet.baseMod.ExtendValue
 import typings.grommet.utilsMod.ColorType
 import typings.grommet.utilsMod.PropsOf
 import typings.react.mod.FC
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FontWeight extends js.Object {
+trait FontWeight extends StObject {
   
   var color: js.UndefOr[ColorType] = js.native
   
@@ -32,53 +33,41 @@ object FontWeight {
   }
   
   @scala.inline
-  implicit class FontWeightOps[Self <: FontWeight] (val x: Self) extends AnyVal {
+  implicit class FontWeightMutableBuilder[Self <: FontWeight] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColor(value: ColorType): Self = this.set("color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setExtend(value: ExtendType[PropsOf[FC[AnchorPropsOmitDetailedHT]]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExtendFunction1(
       value: /* props */ ExtendProps[PropsOf[FC[AnchorPropsOmitDetailedHT]]] => ExtendValue[PropsOf[FC[AnchorPropsOmitDetailedHT]]]
-    ): Self = this.set("extend", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExtend(value: ExtendType[PropsOf[FC[AnchorPropsOmitDetailedHT]]]): Self = this.set("extend", value.asInstanceOf[js.Any])
+    def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
     @scala.inline
-    def deleteExtend: Self = this.set("extend", js.undefined)
+    def setFontWeight(value: Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWeight(value: Double): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    def setHover(value: TextDecoration): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHover(value: TextDecoration): Self = this.set("hover", value.asInstanceOf[js.Any])
+    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
     @scala.inline
-    def deleteHover: Self = this.set("hover", js.undefined)
+    def setTextDecoration(value: String): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDecoration(value: String): Self = this.set("textDecoration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextDecoration: Self = this.set("textDecoration", js.undefined)
+    def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
   }
 }

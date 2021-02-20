@@ -1,6 +1,7 @@
 package typings.vegaTypings.anon
 
 import typings.vegaTypings.encodeMod.ScaledValueRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,24 +23,12 @@ object FieldScale {
   }
   
   @scala.inline
-  implicit class FieldScaleOps[Self <: FieldScale] (val x: Self) extends AnyVal {
+  implicit class FieldScaleMutableBuilder[Self <: FieldScale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setField(value: typings.vegaTypings.encodeMod.Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setField(value: typings.vegaTypings.encodeMod.Field): Self = this.set("field", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScale(value: typings.vegaTypings.encodeMod.Field): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setScale(value: typings.vegaTypings.encodeMod.Field): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
   }
 }

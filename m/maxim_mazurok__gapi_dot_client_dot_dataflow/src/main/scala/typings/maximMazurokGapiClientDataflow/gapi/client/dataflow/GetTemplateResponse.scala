@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTemplateResponse extends js.Object {
+trait GetTemplateResponse extends StObject {
   
   /** The template metadata describing the template name, available parameters, etc. */
   var metadata: js.UndefOr[TemplateMetadata] = js.native
@@ -28,42 +29,30 @@ object GetTemplateResponse {
   }
   
   @scala.inline
-  implicit class GetTemplateResponseOps[Self <: GetTemplateResponse] (val x: Self) extends AnyVal {
+  implicit class GetTemplateResponseMutableBuilder[Self <: GetTemplateResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetadata(value: TemplateMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRuntimeMetadata(value: RuntimeMetadata): Self = StObject.set(x, "runtimeMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: TemplateMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setRuntimeMetadataUndefined: Self = StObject.set(x, "runtimeMetadata", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuntimeMetadata(value: RuntimeMetadata): Self = this.set("runtimeMetadata", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteRuntimeMetadata: Self = this.set("runtimeMetadata", js.undefined)
+    def setTemplateType(value: String): Self = StObject.set(x, "templateType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setTemplateType(value: String): Self = this.set("templateType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateType: Self = this.set("templateType", js.undefined)
+    def setTemplateTypeUndefined: Self = StObject.set(x, "templateType", js.undefined)
   }
 }

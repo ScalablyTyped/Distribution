@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFile.gapi.client.file
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudSaasacceleratorManagementProvidersV1SloMetadata extends js.Object {
+trait GoogleCloudSaasacceleratorManagementProvidersV1SloMetadata extends StObject {
   
   /** Optional. User-defined instance eligibility. */
   var eligibility: js.UndefOr[GoogleCloudSaasacceleratorManagementProvidersV1SloEligibility] = js.native
@@ -37,48 +38,36 @@ object GoogleCloudSaasacceleratorManagementProvidersV1SloMetadata {
   }
   
   @scala.inline
-  implicit class GoogleCloudSaasacceleratorManagementProvidersV1SloMetadataOps[Self <: GoogleCloudSaasacceleratorManagementProvidersV1SloMetadata] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudSaasacceleratorManagementProvidersV1SloMetadataMutableBuilder[Self <: GoogleCloudSaasacceleratorManagementProvidersV1SloMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEligibility(value: GoogleCloudSaasacceleratorManagementProvidersV1SloEligibility): Self = StObject.set(x, "eligibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEligibilityUndefined: Self = StObject.set(x, "eligibility", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExclusions(value: js.Array[GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEligibility(value: GoogleCloudSaasacceleratorManagementProvidersV1SloEligibility): Self = this.set("eligibility", value.asInstanceOf[js.Any])
+    def setExclusionsUndefined: Self = StObject.set(x, "exclusions", js.undefined)
     
     @scala.inline
-    def deleteEligibility: Self = this.set("eligibility", js.undefined)
+    def setExclusionsVarargs(value: GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion*): Self = StObject.set(x, "exclusions", js.Array(value :_*))
     
     @scala.inline
-    def setExclusionsVarargs(value: GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion*): Self = this.set("exclusions", js.Array(value :_*))
+    def setNodes(value: js.Array[GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusions(value: js.Array[GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion]): Self = this.set("exclusions", value.asInstanceOf[js.Any])
+    def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
     @scala.inline
-    def deleteExclusions: Self = this.set("exclusions", js.undefined)
+    def setNodesVarargs(value: GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
     @scala.inline
-    def setNodesVarargs(value: GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata*): Self = this.set("nodes", js.Array(value :_*))
+    def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodes(value: js.Array[GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata]): Self = this.set("nodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodes: Self = this.set("nodes", js.undefined)
-    
-    @scala.inline
-    def setTier(value: String): Self = this.set("tier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTier: Self = this.set("tier", js.undefined)
+    def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
   }
 }

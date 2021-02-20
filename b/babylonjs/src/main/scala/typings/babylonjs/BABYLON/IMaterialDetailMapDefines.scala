@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMaterialDetailMapDefines extends js.Object {
+trait IMaterialDetailMapDefines extends StObject {
   
   var DETAIL: Boolean = js.native
   
@@ -30,30 +31,18 @@ object IMaterialDetailMapDefines {
   }
   
   @scala.inline
-  implicit class IMaterialDetailMapDefinesOps[Self <: IMaterialDetailMapDefines] (val x: Self) extends AnyVal {
+  implicit class IMaterialDetailMapDefinesMutableBuilder[Self <: IMaterialDetailMapDefines] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDETAIL(value: Boolean): Self = StObject.set(x, "DETAIL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDETAILDIRECTUV(value: Double): Self = StObject.set(x, "DETAILDIRECTUV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDETAIL_NORMALBLENDMETHOD(value: Double): Self = StObject.set(x, "DETAIL_NORMALBLENDMETHOD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDETAIL(value: Boolean): Self = this.set("DETAIL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDETAILDIRECTUV(value: Double): Self = this.set("DETAILDIRECTUV", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDETAIL_NORMALBLENDMETHOD(value: Double): Self = this.set("DETAIL_NORMALBLENDMETHOD", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_areTexturesDirty(value: Boolean): Self = this.set("_areTexturesDirty", value.asInstanceOf[js.Any])
+    def set_areTexturesDirty(value: Boolean): Self = StObject.set(x, "_areTexturesDirty", value.asInstanceOf[js.Any])
   }
 }

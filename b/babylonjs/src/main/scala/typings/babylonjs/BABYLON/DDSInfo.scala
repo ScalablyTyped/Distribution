@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DDSInfo extends js.Object {
+trait DDSInfo extends StObject {
   
   /**
     * The dxgiFormat of the texture
@@ -86,54 +87,42 @@ object DDSInfo {
   }
   
   @scala.inline
-  implicit class DDSInfoOps[Self <: DDSInfo] (val x: Self) extends AnyVal {
+  implicit class DDSInfoMutableBuilder[Self <: DDSInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDxgiFormat(value: Double): Self = StObject.set(x, "dxgiFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsCompressed(value: Boolean): Self = StObject.set(x, "isCompressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDxgiFormat(value: Double): Self = this.set("dxgiFormat", value.asInstanceOf[js.Any])
+    def setIsCube(value: Boolean): Self = StObject.set(x, "isCube", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIsFourCC(value: Boolean): Self = StObject.set(x, "isFourCC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCompressed(value: Boolean): Self = this.set("isCompressed", value.asInstanceOf[js.Any])
+    def setIsLuminance(value: Boolean): Self = StObject.set(x, "isLuminance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCube(value: Boolean): Self = this.set("isCube", value.asInstanceOf[js.Any])
+    def setIsRGB(value: Boolean): Self = StObject.set(x, "isRGB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFourCC(value: Boolean): Self = this.set("isFourCC", value.asInstanceOf[js.Any])
+    def setMipmapCount(value: Double): Self = StObject.set(x, "mipmapCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLuminance(value: Boolean): Self = this.set("isLuminance", value.asInstanceOf[js.Any])
+    def setSphericalPolynomial(value: SphericalPolynomial): Self = StObject.set(x, "sphericalPolynomial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRGB(value: Boolean): Self = this.set("isRGB", value.asInstanceOf[js.Any])
+    def setSphericalPolynomialUndefined: Self = StObject.set(x, "sphericalPolynomial", js.undefined)
     
     @scala.inline
-    def setMipmapCount(value: Double): Self = this.set("mipmapCount", value.asInstanceOf[js.Any])
+    def setTextureType(value: Double): Self = StObject.set(x, "textureType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextureType(value: Double): Self = this.set("textureType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSphericalPolynomial(value: SphericalPolynomial): Self = this.set("sphericalPolynomial", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSphericalPolynomial: Self = this.set("sphericalPolynomial", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

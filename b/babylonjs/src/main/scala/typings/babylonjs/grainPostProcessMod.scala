@@ -6,14 +6,14 @@ import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/grainPostProcess", JSImport.Namespace)
-@js.native
-object grainPostProcessMod extends js.Object {
+object grainPostProcessMod {
   
+  @JSImport("babylonjs/PostProcesses/grainPostProcess", "GrainPostProcess")
   @js.native
   class GrainPostProcess protected () extends PostProcess {
     /**
@@ -49,10 +49,11 @@ object grainPostProcessMod extends js.Object {
     var intensity: Double = js.native
   }
   /* static members */
-  @js.native
-  object GrainPostProcess extends js.Object {
+  object GrainPostProcess {
     
     /** @hidden */
+    @JSImport("babylonjs/PostProcesses/grainPostProcess", "GrainPostProcess._Parse")
+    @js.native
     def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): GrainPostProcess = js.native
   }
 }

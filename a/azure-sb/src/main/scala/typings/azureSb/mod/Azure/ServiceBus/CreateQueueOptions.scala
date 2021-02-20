@@ -1,12 +1,13 @@
 package typings.azureSb.mod.Azure.ServiceBus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<azure-sb.azure-sb.Azure.ServiceBus.IQueueOptions> */
 @js.native
-trait CreateQueueOptions extends js.Object {
+trait CreateQueueOptions extends StObject {
   
   var AutoDeleteOnIdle: js.UndefOr[String] = js.native
   
@@ -35,72 +36,60 @@ object CreateQueueOptions {
   }
   
   @scala.inline
-  implicit class CreateQueueOptionsOps[Self <: CreateQueueOptions] (val x: Self) extends AnyVal {
+  implicit class CreateQueueOptionsMutableBuilder[Self <: CreateQueueOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoDeleteOnIdle(value: String): Self = StObject.set(x, "AutoDeleteOnIdle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoDeleteOnIdleUndefined: Self = StObject.set(x, "AutoDeleteOnIdle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeadLetteringOnMessageExpiration(value: Boolean): Self = StObject.set(x, "DeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDeleteOnIdle(value: String): Self = this.set("AutoDeleteOnIdle", value.asInstanceOf[js.Any])
+    def setDeadLetteringOnMessageExpirationUndefined: Self = StObject.set(x, "DeadLetteringOnMessageExpiration", js.undefined)
     
     @scala.inline
-    def deleteAutoDeleteOnIdle: Self = this.set("AutoDeleteOnIdle", js.undefined)
+    def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeadLetteringOnMessageExpiration(value: Boolean): Self = this.set("DeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
+    def setDefaultMessageTimeToLiveUndefined: Self = StObject.set(x, "DefaultMessageTimeToLive", js.undefined)
     
     @scala.inline
-    def deleteDeadLetteringOnMessageExpiration: Self = this.set("DeadLetteringOnMessageExpiration", js.undefined)
+    def setDuplicateDetectionHistoryTimeWindow(value: String): Self = StObject.set(x, "DuplicateDetectionHistoryTimeWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultMessageTimeToLive(value: String): Self = this.set("DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
+    def setDuplicateDetectionHistoryTimeWindowUndefined: Self = StObject.set(x, "DuplicateDetectionHistoryTimeWindow", js.undefined)
     
     @scala.inline
-    def deleteDefaultMessageTimeToLive: Self = this.set("DefaultMessageTimeToLive", js.undefined)
+    def setEnablePartitioning(value: Boolean): Self = StObject.set(x, "EnablePartitioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuplicateDetectionHistoryTimeWindow(value: String): Self = this.set("DuplicateDetectionHistoryTimeWindow", value.asInstanceOf[js.Any])
+    def setEnablePartitioningUndefined: Self = StObject.set(x, "EnablePartitioning", js.undefined)
     
     @scala.inline
-    def deleteDuplicateDetectionHistoryTimeWindow: Self = this.set("DuplicateDetectionHistoryTimeWindow", js.undefined)
+    def setLockDuration(value: String): Self = StObject.set(x, "LockDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablePartitioning(value: Boolean): Self = this.set("EnablePartitioning", value.asInstanceOf[js.Any])
+    def setLockDurationUndefined: Self = StObject.set(x, "LockDuration", js.undefined)
     
     @scala.inline
-    def deleteEnablePartitioning: Self = this.set("EnablePartitioning", js.undefined)
+    def setMaxSizeInMegabytes(value: Double): Self = StObject.set(x, "MaxSizeInMegabytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockDuration(value: String): Self = this.set("LockDuration", value.asInstanceOf[js.Any])
+    def setMaxSizeInMegabytesUndefined: Self = StObject.set(x, "MaxSizeInMegabytes", js.undefined)
     
     @scala.inline
-    def deleteLockDuration: Self = this.set("LockDuration", js.undefined)
+    def setRequiresDuplicateDetection(value: Boolean): Self = StObject.set(x, "RequiresDuplicateDetection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSizeInMegabytes(value: Double): Self = this.set("MaxSizeInMegabytes", value.asInstanceOf[js.Any])
+    def setRequiresDuplicateDetectionUndefined: Self = StObject.set(x, "RequiresDuplicateDetection", js.undefined)
     
     @scala.inline
-    def deleteMaxSizeInMegabytes: Self = this.set("MaxSizeInMegabytes", js.undefined)
+    def setRequiresSession(value: Boolean): Self = StObject.set(x, "RequiresSession", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiresDuplicateDetection(value: Boolean): Self = this.set("RequiresDuplicateDetection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequiresDuplicateDetection: Self = this.set("RequiresDuplicateDetection", js.undefined)
-    
-    @scala.inline
-    def setRequiresSession(value: Boolean): Self = this.set("RequiresSession", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequiresSession: Self = this.set("RequiresSession", js.undefined)
+    def setRequiresSessionUndefined: Self = StObject.set(x, "RequiresSession", js.undefined)
   }
 }

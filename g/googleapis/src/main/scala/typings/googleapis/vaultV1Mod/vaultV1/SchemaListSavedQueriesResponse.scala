@@ -1,5 +1,6 @@
 package typings.googleapis.vaultV1Mod.vaultV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Definition of the response for method ListSaveQuery.
   */
 @js.native
-trait SchemaListSavedQueriesResponse extends js.Object {
+trait SchemaListSavedQueriesResponse extends StObject {
   
   /**
     * Page token to retrieve the next page of results in the list. If this is
@@ -30,33 +31,21 @@ object SchemaListSavedQueriesResponse {
   }
   
   @scala.inline
-  implicit class SchemaListSavedQueriesResponseOps[Self <: SchemaListSavedQueriesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListSavedQueriesResponseMutableBuilder[Self <: SchemaListSavedQueriesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSavedQueries(value: js.Array[SchemaSavedQuery]): Self = StObject.set(x, "savedQueries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setSavedQueriesUndefined: Self = StObject.set(x, "savedQueries", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setSavedQueriesVarargs(value: SchemaSavedQuery*): Self = this.set("savedQueries", js.Array(value :_*))
-    
-    @scala.inline
-    def setSavedQueries(value: js.Array[SchemaSavedQuery]): Self = this.set("savedQueries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSavedQueries: Self = this.set("savedQueries", js.undefined)
+    def setSavedQueriesVarargs(value: SchemaSavedQuery*): Self = StObject.set(x, "savedQueries", js.Array(value :_*))
   }
 }

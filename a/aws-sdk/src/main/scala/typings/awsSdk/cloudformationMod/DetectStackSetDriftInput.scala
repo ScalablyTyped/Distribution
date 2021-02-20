@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DetectStackSetDriftInput extends js.Object {
+trait DetectStackSetDriftInput extends StObject {
   
   /**
     *  The ID of the stack set operation. 
@@ -28,33 +29,21 @@ object DetectStackSetDriftInput {
   }
   
   @scala.inline
-  implicit class DetectStackSetDriftInputOps[Self <: DetectStackSetDriftInput] (val x: Self) extends AnyVal {
+  implicit class DetectStackSetDriftInputMutableBuilder[Self <: DetectStackSetDriftInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOperationId(value: ClientRequestToken): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperationPreferences(value: StackSetOperationPreferences): Self = StObject.set(x, "OperationPreferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackSetName(value: StackSetNameOrId): Self = this.set("StackSetName", value.asInstanceOf[js.Any])
+    def setOperationPreferencesUndefined: Self = StObject.set(x, "OperationPreferences", js.undefined)
     
     @scala.inline
-    def setOperationId(value: ClientRequestToken): Self = this.set("OperationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperationId: Self = this.set("OperationId", js.undefined)
-    
-    @scala.inline
-    def setOperationPreferences(value: StackSetOperationPreferences): Self = this.set("OperationPreferences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperationPreferences: Self = this.set("OperationPreferences", js.undefined)
+    def setStackSetName(value: StackSetNameOrId): Self = StObject.set(x, "StackSetName", value.asInstanceOf[js.Any])
   }
 }

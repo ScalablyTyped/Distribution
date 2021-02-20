@@ -1,11 +1,12 @@
 package typings.serverless.awsProviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Event extends js.Object {
+trait Event extends StObject {
   
   var alb: js.UndefOr[AlbEvent] = js.native
   
@@ -50,120 +51,108 @@ object Event {
   }
   
   @scala.inline
-  implicit class EventOps[Self <: Event] (val x: Self) extends AnyVal {
+  implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlb(value: AlbEvent): Self = StObject.set(x, "alb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlbUndefined: Self = StObject.set(x, "alb", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlexaSkill(value: AlexaSkill): Self = StObject.set(x, "alexaSkill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlb(value: AlbEvent): Self = this.set("alb", value.asInstanceOf[js.Any])
+    def setAlexaSkillUndefined: Self = StObject.set(x, "alexaSkill", js.undefined)
     
     @scala.inline
-    def deleteAlb: Self = this.set("alb", js.undefined)
+    def setAlexaSmartHome(value: AlexaSmartHome): Self = StObject.set(x, "alexaSmartHome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlexaSkill(value: AlexaSkill): Self = this.set("alexaSkill", value.asInstanceOf[js.Any])
+    def setAlexaSmartHomeUndefined: Self = StObject.set(x, "alexaSmartHome", js.undefined)
     
     @scala.inline
-    def deleteAlexaSkill: Self = this.set("alexaSkill", js.undefined)
+    def setCloudFront(value: CloudFront): Self = StObject.set(x, "cloudFront", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlexaSmartHome(value: AlexaSmartHome): Self = this.set("alexaSmartHome", value.asInstanceOf[js.Any])
+    def setCloudFrontUndefined: Self = StObject.set(x, "cloudFront", js.undefined)
     
     @scala.inline
-    def deleteAlexaSmartHome: Self = this.set("alexaSmartHome", js.undefined)
+    def setCloudwatchEvent(value: CloudwatchEvent): Self = StObject.set(x, "cloudwatchEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudFront(value: CloudFront): Self = this.set("cloudFront", value.asInstanceOf[js.Any])
+    def setCloudwatchEventUndefined: Self = StObject.set(x, "cloudwatchEvent", js.undefined)
     
     @scala.inline
-    def deleteCloudFront: Self = this.set("cloudFront", js.undefined)
+    def setCloudwatchLog(value: CloudwatchLog): Self = StObject.set(x, "cloudwatchLog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudwatchEvent(value: CloudwatchEvent): Self = this.set("cloudwatchEvent", value.asInstanceOf[js.Any])
+    def setCloudwatchLogUndefined: Self = StObject.set(x, "cloudwatchLog", js.undefined)
     
     @scala.inline
-    def deleteCloudwatchEvent: Self = this.set("cloudwatchEvent", js.undefined)
+    def setCognitoUserPool(value: CognitoUserPool): Self = StObject.set(x, "cognitoUserPool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudwatchLog(value: CloudwatchLog): Self = this.set("cloudwatchLog", value.asInstanceOf[js.Any])
+    def setCognitoUserPoolUndefined: Self = StObject.set(x, "cognitoUserPool", js.undefined)
     
     @scala.inline
-    def deleteCloudwatchLog: Self = this.set("cloudwatchLog", js.undefined)
+    def setEventBridge(value: EventBridge): Self = StObject.set(x, "eventBridge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCognitoUserPool(value: CognitoUserPool): Self = this.set("cognitoUserPool", value.asInstanceOf[js.Any])
+    def setEventBridgeUndefined: Self = StObject.set(x, "eventBridge", js.undefined)
     
     @scala.inline
-    def deleteCognitoUserPool: Self = this.set("cognitoUserPool", js.undefined)
+    def setHttp(value: Http): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventBridge(value: EventBridge): Self = this.set("eventBridge", value.asInstanceOf[js.Any])
+    def setHttpApi(value: HttpApiEvent): Self = StObject.set(x, "httpApi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEventBridge: Self = this.set("eventBridge", js.undefined)
+    def setHttpApiUndefined: Self = StObject.set(x, "httpApi", js.undefined)
     
     @scala.inline
-    def setHttp(value: Http): Self = this.set("http", value.asInstanceOf[js.Any])
+    def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
     
     @scala.inline
-    def deleteHttp: Self = this.set("http", js.undefined)
+    def setIot(value: Iot): Self = StObject.set(x, "iot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpApi(value: HttpApiEvent): Self = this.set("httpApi", value.asInstanceOf[js.Any])
+    def setIotUndefined: Self = StObject.set(x, "iot", js.undefined)
     
     @scala.inline
-    def deleteHttpApi: Self = this.set("httpApi", js.undefined)
+    def setS3(value: S3): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIot(value: Iot): Self = this.set("iot", value.asInstanceOf[js.Any])
+    def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
     
     @scala.inline
-    def deleteIot: Self = this.set("iot", js.undefined)
+    def setSchedule(value: String | Schedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3(value: S3): Self = this.set("s3", value.asInstanceOf[js.Any])
+    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
     @scala.inline
-    def deleteS3: Self = this.set("s3", js.undefined)
+    def setSns(value: Sns): Self = StObject.set(x, "sns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedule(value: String | Schedule): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    def setSnsUndefined: Self = StObject.set(x, "sns", js.undefined)
     
     @scala.inline
-    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    def setSqs(value: Sqs): Self = StObject.set(x, "sqs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSns(value: Sns): Self = this.set("sns", value.asInstanceOf[js.Any])
+    def setSqsUndefined: Self = StObject.set(x, "sqs", js.undefined)
     
     @scala.inline
-    def deleteSns: Self = this.set("sns", js.undefined)
+    def setStream(value: Stream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSqs(value: Sqs): Self = this.set("sqs", value.asInstanceOf[js.Any])
+    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     
     @scala.inline
-    def deleteSqs: Self = this.set("sqs", js.undefined)
+    def setWebsocket(value: Websocket): Self = StObject.set(x, "websocket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStream(value: Stream): Self = this.set("stream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStream: Self = this.set("stream", js.undefined)
-    
-    @scala.inline
-    def setWebsocket(value: Websocket): Self = this.set("websocket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsocket: Self = this.set("websocket", js.undefined)
+    def setWebsocketUndefined: Self = StObject.set(x, "websocket", js.undefined)
   }
 }

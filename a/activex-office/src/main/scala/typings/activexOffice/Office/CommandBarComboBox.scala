@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommandBarComboBox extends js.Object {
+trait CommandBarComboBox extends StObject {
   
   def AddItem(Text: String): Unit = js.native
   def AddItem(Text: String, Index: js.Any): Unit = js.native

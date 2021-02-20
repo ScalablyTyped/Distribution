@@ -4,12 +4,13 @@ import typings.pouchdbCore.PouchDB.Core.AllDocsMeta
 import typings.pouchdbCore.PouchDB.Core.DocumentId
 import typings.pouchdbCore.PouchDB.Core.DocumentKey
 import typings.pouchdbCore.PouchDB.Core.ExistingDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Doc[Content /* <: js.Object */] extends js.Object {
+trait Doc[Content /* <: js.Object */] extends StObject {
   
   /** Only present if `include_docs` was `true`. */
   var doc: js.UndefOr[ExistingDocument[Content with AllDocsMeta]] = js.native
@@ -29,33 +30,21 @@ object Doc {
   }
   
   @scala.inline
-  implicit class DocOps[Self <: Doc[_], Content /* <: js.Object */] (val x: Self with Doc[Content]) extends AnyVal {
+  implicit class DocMutableBuilder[Self <: Doc[_], Content /* <: js.Object */] (val x: Self with Doc[Content]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDoc(value: ExistingDocument[Content with AllDocsMeta]): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: DocumentId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: DocumentId): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKey(value: DocumentKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: DocumentKey): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Deleted): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDoc(value: ExistingDocument[Content with AllDocsMeta]): Self = this.set("doc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDoc: Self = this.set("doc", js.undefined)
+    def setValue(value: Deleted): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

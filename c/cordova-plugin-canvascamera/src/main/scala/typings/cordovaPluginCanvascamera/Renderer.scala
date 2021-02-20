@@ -8,12 +8,13 @@ import typings.cordovaPluginCanvascamera.cordovaPluginCanvascameraStrings.portra
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Renderer extends js.Object {
+trait Renderer extends StObject {
   
   var available: Boolean = js.native
   

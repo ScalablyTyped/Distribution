@@ -1,5 +1,6 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,45 +46,33 @@ object ColorTypeEnumValues {
   }
   
   @scala.inline
-  implicit class ColorTypeEnumValuesOps[Self <: ColorTypeEnumValues] (val x: Self) extends AnyVal {
+  implicit class ColorTypeEnumValuesMutableBuilder[Self <: ColorTypeEnumValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha_8(value: ColorType): Self = StObject.set(x, "Alpha_8", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBGRA_8888(value: ColorType): Self = StObject.set(x, "BGRA_8888", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGray_8(value: ColorType): Self = StObject.set(x, "Gray_8", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha_8(value: ColorType): Self = this.set("Alpha_8", value.asInstanceOf[js.Any])
+    def setRGBA_1010102(value: ColorType): Self = StObject.set(x, "RGBA_1010102", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBGRA_8888(value: ColorType): Self = this.set("BGRA_8888", value.asInstanceOf[js.Any])
+    def setRGBA_8888(value: ColorType): Self = StObject.set(x, "RGBA_8888", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGray_8(value: ColorType): Self = this.set("Gray_8", value.asInstanceOf[js.Any])
+    def setRGBA_F16(value: ColorType): Self = StObject.set(x, "RGBA_F16", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRGBA_1010102(value: ColorType): Self = this.set("RGBA_1010102", value.asInstanceOf[js.Any])
+    def setRGBA_F32(value: ColorType): Self = StObject.set(x, "RGBA_F32", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRGBA_8888(value: ColorType): Self = this.set("RGBA_8888", value.asInstanceOf[js.Any])
+    def setRGB_101010x(value: ColorType): Self = StObject.set(x, "RGB_101010x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRGBA_F16(value: ColorType): Self = this.set("RGBA_F16", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRGBA_F32(value: ColorType): Self = this.set("RGBA_F32", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRGB_101010x(value: ColorType): Self = this.set("RGB_101010x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRGB_565(value: ColorType): Self = this.set("RGB_565", value.asInstanceOf[js.Any])
+    def setRGB_565(value: ColorType): Self = StObject.set(x, "RGB_565", value.asInstanceOf[js.Any])
   }
 }

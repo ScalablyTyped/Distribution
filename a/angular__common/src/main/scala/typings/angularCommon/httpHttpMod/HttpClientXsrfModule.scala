@@ -2,21 +2,22 @@ package typings.angularCommon.httpHttpMod
 
 import typings.angularCommon.anon.CookieName
 import typings.angularCore.mod.ModuleWithProviders
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/http/http", "HttpClientXsrfModule")
 @js.native
-class HttpClientXsrfModule () extends js.Object
+class HttpClientXsrfModule () extends StObject
 /* static members */
-@JSImport("@angular/common/http/http", "HttpClientXsrfModule")
-@js.native
-object HttpClientXsrfModule extends js.Object {
+object HttpClientXsrfModule {
   
   /**
     * Disable the default XSRF protection.
     */
+  @JSImport("@angular/common/http/http", "HttpClientXsrfModule.disable")
+  @js.native
   def disable(): ModuleWithProviders[HttpClientXsrfModule] = js.native
   
   /**
@@ -27,6 +28,10 @@ object HttpClientXsrfModule extends js.Object {
     * - Header name default is `X-XSRF-TOKEN`.
     *
     */
+  @JSImport("@angular/common/http/http", "HttpClientXsrfModule.withOptions")
+  @js.native
   def withOptions(): ModuleWithProviders[HttpClientXsrfModule] = js.native
+  @JSImport("@angular/common/http/http", "HttpClientXsrfModule.withOptions")
+  @js.native
   def withOptions(options: CookieName): ModuleWithProviders[HttpClientXsrfModule] = js.native
 }

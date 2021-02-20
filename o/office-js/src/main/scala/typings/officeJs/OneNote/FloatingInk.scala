@@ -4,6 +4,7 @@ import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OneNote.Interfaces.FloatingInkData
 import typings.officeJs.OneNote.Interfaces.FloatingInkLoadOptions
 import typings.officeJs.anon.Expand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

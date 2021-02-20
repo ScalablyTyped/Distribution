@@ -20,6 +20,7 @@ import typings.mendixmodelsdk.pagesMod.pages.RangeSearchField
 import typings.mendixmodelsdk.pagesMod.pages.SingleSearchField
 import typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,16 +46,20 @@ class AttributeRef protected () extends MemberRef {
   
   def attribute_=(newValue: IAttribute): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef")
-@js.native
-object AttributeRef extends js.Object {
+object AttributeRef {
+  
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.create")
+  @js.native
   def create(model: IModel): AttributeRef = js.native
   
   /**
@@ -65,6 +70,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInAttributeWidgetUnderAttributeRef")
+  @js.native
   def createInAttributeWidgetUnderAttributeRef(container: AttributeWidget): AttributeRef = js.native
   
   /**
@@ -75,6 +83,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInClientTemplateParameterUnderAttributeRef")
+  @js.native
   def createInClientTemplateParameterUnderAttributeRef(container: ClientTemplateParameter): AttributeRef = js.native
   
   /**
@@ -85,6 +96,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInDataGridColumnUnderAttributeRef")
+  @js.native
   def createInDataGridColumnUnderAttributeRef(container: DataGridColumn): AttributeRef = js.native
   
   /**
@@ -95,6 +109,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInDocumentTemplatesGridSortItemUnderAttributeRef")
+  @js.native
   def createInDocumentTemplatesGridSortItemUnderAttributeRef(container: GridSortItem): AttributeRef = js.native
   
   /**
@@ -105,6 +122,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInGridColumnUnderAttributeRef")
+  @js.native
   def createInGridColumnUnderAttributeRef(container: GridColumn): AttributeRef = js.native
   
   /**
@@ -115,6 +135,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInListViewSearchUnderSearchRefs")
+  @js.native
   def createInListViewSearchUnderSearchRefs(container: ListViewSearch): AttributeRef = js.native
   
   /**
@@ -125,6 +148,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInMemberWidgetUnderAttributeRef")
+  @js.native
   def createInMemberWidgetUnderAttributeRef(container: MemberWidget): AttributeRef = js.native
   
   /**
@@ -135,6 +161,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInPagesGridSortItemUnderAttributeRef")
+  @js.native
   def createInPagesGridSortItemUnderAttributeRef(container: typings.mendixmodelsdk.pagesMod.pages.GridSortItem): AttributeRef = js.native
   
   /**
@@ -145,6 +174,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInRangeSearchFieldUnderLowerBoundRef")
+  @js.native
   def createInRangeSearchFieldUnderLowerBoundRef(container: RangeSearchField): AttributeRef = js.native
   
   /**
@@ -155,6 +187,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInRangeSearchFieldUnderUpperBoundRef")
+  @js.native
   def createInRangeSearchFieldUnderUpperBoundRef(container: RangeSearchField): AttributeRef = js.native
   
   /**
@@ -165,6 +200,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInSingleSearchFieldUnderAttributeRef")
+  @js.native
   def createInSingleSearchFieldUnderAttributeRef(container: SingleSearchField): AttributeRef = js.native
   
   /**
@@ -175,6 +213,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInSortItemUnderAttributeRef")
+  @js.native
   def createInSortItemUnderAttributeRef(container: SortItem): AttributeRef = js.native
   
   /**
@@ -185,6 +226,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInStaticOrDynamicStringUnderAttributeRef")
+  @js.native
   def createInStaticOrDynamicStringUnderAttributeRef(container: StaticOrDynamicString): AttributeRef = js.native
   
   /**
@@ -195,6 +239,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInVariableRefExpressionUnderMember")
+  @js.native
   def createInVariableRefExpressionUnderMember(container: VariableRefExpression): AttributeRef = js.native
   
   /**
@@ -205,9 +252,22 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInWidgetValueUnderAttributeRef")
+  @js.native
   def createInWidgetValueUnderAttributeRef(container: WidgetValue): AttributeRef = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

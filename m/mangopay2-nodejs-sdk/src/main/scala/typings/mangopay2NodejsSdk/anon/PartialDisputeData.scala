@@ -6,13 +6,14 @@ import typings.mangopay2NodejsSdk.mod.dispute.DisputeReason
 import typings.mangopay2NodejsSdk.mod.dispute.DisputeStatus
 import typings.mangopay2NodejsSdk.mod.dispute.DisputeType
 import typings.mangopay2NodejsSdk.mod.transaction.TransactionType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.dispute.DisputeData> */
 @js.native
-trait PartialDisputeData extends js.Object {
+trait PartialDisputeData extends StObject {
   
   var ContestDeadlineDate: js.UndefOr[Timestamp] = js.native
   
@@ -53,108 +54,96 @@ object PartialDisputeData {
   }
   
   @scala.inline
-  implicit class PartialDisputeDataOps[Self <: PartialDisputeData] (val x: Self) extends AnyVal {
+  implicit class PartialDisputeDataMutableBuilder[Self <: PartialDisputeData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContestDeadlineDate(value: Timestamp): Self = StObject.set(x, "ContestDeadlineDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContestDeadlineDateUndefined: Self = StObject.set(x, "ContestDeadlineDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContestedFunds(value: MoneyData): Self = StObject.set(x, "ContestedFunds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContestDeadlineDate(value: Timestamp): Self = this.set("ContestDeadlineDate", value.asInstanceOf[js.Any])
+    def setContestedFundsUndefined: Self = StObject.set(x, "ContestedFunds", js.undefined)
     
     @scala.inline
-    def deleteContestDeadlineDate: Self = this.set("ContestDeadlineDate", js.undefined)
+    def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContestedFunds(value: MoneyData): Self = this.set("ContestedFunds", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def deleteContestedFunds: Self = this.set("ContestedFunds", js.undefined)
+    def setDisputeReason(value: DisputeReason): Self = StObject.set(x, "DisputeReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: Double): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setDisputeReasonUndefined: Self = StObject.set(x, "DisputeReason", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setDisputeType(value: DisputeType): Self = StObject.set(x, "DisputeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisputeReason(value: DisputeReason): Self = this.set("DisputeReason", value.asInstanceOf[js.Any])
+    def setDisputeTypeUndefined: Self = StObject.set(x, "DisputeType", js.undefined)
     
     @scala.inline
-    def deleteDisputeReason: Self = this.set("DisputeReason", js.undefined)
+    def setDisputedFunds(value: MoneyData): Self = StObject.set(x, "DisputedFunds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisputeType(value: DisputeType): Self = this.set("DisputeType", value.asInstanceOf[js.Any])
+    def setDisputedFundsUndefined: Self = StObject.set(x, "DisputedFunds", js.undefined)
     
     @scala.inline
-    def deleteDisputeType: Self = this.set("DisputeType", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisputedFunds(value: MoneyData): Self = this.set("DisputedFunds", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteDisputedFunds: Self = this.set("DisputedFunds", js.undefined)
+    def setInitialTransactionId(value: String): Self = StObject.set(x, "InitialTransactionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setInitialTransactionIdUndefined: Self = StObject.set(x, "InitialTransactionId", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setInitialTransactionType(value: TransactionType): Self = StObject.set(x, "InitialTransactionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialTransactionId(value: String): Self = this.set("InitialTransactionId", value.asInstanceOf[js.Any])
+    def setInitialTransactionTypeUndefined: Self = StObject.set(x, "InitialTransactionType", js.undefined)
     
     @scala.inline
-    def deleteInitialTransactionId: Self = this.set("InitialTransactionId", js.undefined)
+    def setRepudiationId(value: String): Self = StObject.set(x, "RepudiationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialTransactionType(value: TransactionType): Self = this.set("InitialTransactionType", value.asInstanceOf[js.Any])
+    def setRepudiationIdUndefined: Self = StObject.set(x, "RepudiationId", js.undefined)
     
     @scala.inline
-    def deleteInitialTransactionType: Self = this.set("InitialTransactionType", js.undefined)
+    def setResultCode(value: String): Self = StObject.set(x, "ResultCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepudiationId(value: String): Self = this.set("RepudiationId", value.asInstanceOf[js.Any])
+    def setResultCodeUndefined: Self = StObject.set(x, "ResultCode", js.undefined)
     
     @scala.inline
-    def deleteRepudiationId: Self = this.set("RepudiationId", js.undefined)
+    def setResultMessage(value: String): Self = StObject.set(x, "ResultMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultCode(value: String): Self = this.set("ResultCode", value.asInstanceOf[js.Any])
+    def setResultMessageUndefined: Self = StObject.set(x, "ResultMessage", js.undefined)
     
     @scala.inline
-    def deleteResultCode: Self = this.set("ResultCode", js.undefined)
+    def setStatus(value: DisputeStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultMessage(value: String): Self = this.set("ResultMessage", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: String): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResultMessage: Self = this.set("ResultMessage", js.undefined)
+    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
     @scala.inline
-    def setStatus(value: DisputeStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: String): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("Tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("Tag", js.undefined)
+    def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
   }
 }

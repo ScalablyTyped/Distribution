@@ -1,11 +1,12 @@
 package typings.awsSdk.machinelearningMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3DataSpec extends js.Object {
+trait S3DataSpec extends StObject {
   
   /**
     * The location of the data file(s) used by a DataSource. The URI specifies a data file or an Amazon Simple Storage Service (Amazon S3) directory or bucket containing data files.
@@ -36,39 +37,27 @@ object S3DataSpec {
   }
   
   @scala.inline
-  implicit class S3DataSpecOps[Self <: S3DataSpec] (val x: Self) extends AnyVal {
+  implicit class S3DataSpecMutableBuilder[Self <: S3DataSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataLocationS3(value: S3Url): Self = StObject.set(x, "DataLocationS3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataRearrangement(value: DataRearrangement): Self = StObject.set(x, "DataRearrangement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataRearrangementUndefined: Self = StObject.set(x, "DataRearrangement", js.undefined)
     
     @scala.inline
-    def setDataLocationS3(value: S3Url): Self = this.set("DataLocationS3", value.asInstanceOf[js.Any])
+    def setDataSchema(value: DataSchema): Self = StObject.set(x, "DataSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataRearrangement(value: DataRearrangement): Self = this.set("DataRearrangement", value.asInstanceOf[js.Any])
+    def setDataSchemaLocationS3(value: S3Url): Self = StObject.set(x, "DataSchemaLocationS3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataRearrangement: Self = this.set("DataRearrangement", js.undefined)
+    def setDataSchemaLocationS3Undefined: Self = StObject.set(x, "DataSchemaLocationS3", js.undefined)
     
     @scala.inline
-    def setDataSchema(value: DataSchema): Self = this.set("DataSchema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataSchema: Self = this.set("DataSchema", js.undefined)
-    
-    @scala.inline
-    def setDataSchemaLocationS3(value: S3Url): Self = this.set("DataSchemaLocationS3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataSchemaLocationS3: Self = this.set("DataSchemaLocationS3", js.undefined)
+    def setDataSchemaUndefined: Self = StObject.set(x, "DataSchema", js.undefined)
   }
 }

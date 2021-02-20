@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.frame
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,30 +72,18 @@ object XTask {
   }
   
   @scala.inline
-  implicit class XTaskOps[Self <: XTask] (val x: Self) extends AnyVal {
+  implicit class XTaskMutableBuilder[Self <: XTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrangeWindowsHorizontal(value: () => Unit): Self = StObject.set(x, "arrangeWindowsHorizontal", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrangeWindowsVertical(value: () => Unit): Self = StObject.set(x, "arrangeWindowsVertical", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClose(value: () => Boolean): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setArrangeWindowsHorizontal(value: () => Unit): Self = this.set("arrangeWindowsHorizontal", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setArrangeWindowsVertical(value: () => Unit): Self = this.set("arrangeWindowsVertical", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setClose(value: () => Boolean): Self = this.set("close", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTileWindows(value: () => Unit): Self = this.set("tileWindows", js.Any.fromFunction0(value))
+    def setTileWindows(value: () => Unit): Self = StObject.set(x, "tileWindows", js.Any.fromFunction0(value))
   }
 }

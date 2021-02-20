@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.util
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a range of date+time values. */
 @js.native
-trait DateTimeRange extends js.Object {
+trait DateTimeRange extends StObject {
   
   /** contains the end day of month (1-31 or 0 for a void date) for the range. */
   var EndDay: Double = js.native
@@ -81,63 +82,51 @@ object DateTimeRange {
   }
   
   @scala.inline
-  implicit class DateTimeRangeOps[Self <: DateTimeRange] (val x: Self) extends AnyVal {
+  implicit class DateTimeRangeMutableBuilder[Self <: DateTimeRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndDay(value: Double): Self = StObject.set(x, "EndDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndHours(value: Double): Self = StObject.set(x, "EndHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndMinutes(value: Double): Self = StObject.set(x, "EndMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndDay(value: Double): Self = this.set("EndDay", value.asInstanceOf[js.Any])
+    def setEndMonth(value: Double): Self = StObject.set(x, "EndMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndHours(value: Double): Self = this.set("EndHours", value.asInstanceOf[js.Any])
+    def setEndNanoSeconds(value: Double): Self = StObject.set(x, "EndNanoSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndMinutes(value: Double): Self = this.set("EndMinutes", value.asInstanceOf[js.Any])
+    def setEndSeconds(value: Double): Self = StObject.set(x, "EndSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndMonth(value: Double): Self = this.set("EndMonth", value.asInstanceOf[js.Any])
+    def setEndYear(value: Double): Self = StObject.set(x, "EndYear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndNanoSeconds(value: Double): Self = this.set("EndNanoSeconds", value.asInstanceOf[js.Any])
+    def setIsUTC(value: Boolean): Self = StObject.set(x, "IsUTC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndSeconds(value: Double): Self = this.set("EndSeconds", value.asInstanceOf[js.Any])
+    def setStartDay(value: Double): Self = StObject.set(x, "StartDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndYear(value: Double): Self = this.set("EndYear", value.asInstanceOf[js.Any])
+    def setStartHours(value: Double): Self = StObject.set(x, "StartHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsUTC(value: Boolean): Self = this.set("IsUTC", value.asInstanceOf[js.Any])
+    def setStartMinutes(value: Double): Self = StObject.set(x, "StartMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartDay(value: Double): Self = this.set("StartDay", value.asInstanceOf[js.Any])
+    def setStartMonth(value: Double): Self = StObject.set(x, "StartMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartHours(value: Double): Self = this.set("StartHours", value.asInstanceOf[js.Any])
+    def setStartNanoSeconds(value: Double): Self = StObject.set(x, "StartNanoSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartMinutes(value: Double): Self = this.set("StartMinutes", value.asInstanceOf[js.Any])
+    def setStartSeconds(value: Double): Self = StObject.set(x, "StartSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartMonth(value: Double): Self = this.set("StartMonth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartNanoSeconds(value: Double): Self = this.set("StartNanoSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartSeconds(value: Double): Self = this.set("StartSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartYear(value: Double): Self = this.set("StartYear", value.asInstanceOf[js.Any])
+    def setStartYear(value: Double): Self = StObject.set(x, "StartYear", value.asInstanceOf[js.Any])
   }
 }

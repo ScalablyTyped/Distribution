@@ -1,5 +1,6 @@
 package typings.googleapis.monitoringV3Mod.monitoringV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The protocol for the ListAlertPolicies response.
   */
 @js.native
-trait SchemaListAlertPoliciesResponse extends js.Object {
+trait SchemaListAlertPoliciesResponse extends StObject {
   
   /**
     * The returned alert policies.
@@ -31,33 +32,21 @@ object SchemaListAlertPoliciesResponse {
   }
   
   @scala.inline
-  implicit class SchemaListAlertPoliciesResponseOps[Self <: SchemaListAlertPoliciesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListAlertPoliciesResponseMutableBuilder[Self <: SchemaListAlertPoliciesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlertPolicies(value: js.Array[SchemaAlertPolicy]): Self = StObject.set(x, "alertPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlertPoliciesUndefined: Self = StObject.set(x, "alertPolicies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlertPoliciesVarargs(value: SchemaAlertPolicy*): Self = StObject.set(x, "alertPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setAlertPoliciesVarargs(value: SchemaAlertPolicy*): Self = this.set("alertPolicies", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlertPolicies(value: js.Array[SchemaAlertPolicy]): Self = this.set("alertPolicies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlertPolicies: Self = this.set("alertPolicies", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

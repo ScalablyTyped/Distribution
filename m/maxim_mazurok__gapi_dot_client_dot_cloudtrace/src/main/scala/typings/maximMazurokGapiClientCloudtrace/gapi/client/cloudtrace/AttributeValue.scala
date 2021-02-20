@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudtrace.gapi.client.cloudtrace
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttributeValue extends js.Object {
+trait AttributeValue extends StObject {
   
   /** A Boolean value represented by `true` or `false`. */
   var boolValue: js.UndefOr[Boolean] = js.native
@@ -25,36 +26,24 @@ object AttributeValue {
   }
   
   @scala.inline
-  implicit class AttributeValueOps[Self <: AttributeValue] (val x: Self) extends AnyVal {
+  implicit class AttributeValueMutableBuilder[Self <: AttributeValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntValue(value: String): Self = StObject.set(x, "intValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoolValue(value: Boolean): Self = this.set("boolValue", value.asInstanceOf[js.Any])
+    def setIntValueUndefined: Self = StObject.set(x, "intValue", js.undefined)
     
     @scala.inline
-    def deleteBoolValue: Self = this.set("boolValue", js.undefined)
+    def setStringValue(value: TruncatableString): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntValue(value: String): Self = this.set("intValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIntValue: Self = this.set("intValue", js.undefined)
-    
-    @scala.inline
-    def setStringValue(value: TruncatableString): Self = this.set("stringValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringValue: Self = this.set("stringValue", js.undefined)
+    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
   }
 }

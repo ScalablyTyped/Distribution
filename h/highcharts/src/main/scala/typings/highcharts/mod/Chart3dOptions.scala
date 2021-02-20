@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
 import typings.highcharts.highchartsStrings.auto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Chart3dOptions extends js.Object {
+trait Chart3dOptions extends StObject {
   
   /**
     * (Highcharts) One of the two rotation angles for the chart.
@@ -62,69 +63,57 @@ object Chart3dOptions {
   }
   
   @scala.inline
-  implicit class Chart3dOptionsOps[Self <: Chart3dOptions] (val x: Self) extends AnyVal {
+  implicit class Chart3dOptionsMutableBuilder[Self <: Chart3dOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxisLabelPosition(value: auto): Self = StObject.set(x, "axisLabelPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    def setAxisLabelPositionNull: Self = StObject.set(x, "axisLabelPosition", null)
     
     @scala.inline
-    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    def setAxisLabelPositionUndefined: Self = StObject.set(x, "axisLabelPosition", js.undefined)
     
     @scala.inline
-    def setAxisLabelPosition(value: auto): Self = this.set("axisLabelPosition", value.asInstanceOf[js.Any])
+    def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAxisLabelPosition: Self = this.set("axisLabelPosition", js.undefined)
+    def setBetaUndefined: Self = StObject.set(x, "beta", js.undefined)
     
     @scala.inline
-    def setAxisLabelPositionNull: Self = this.set("axisLabelPosition", null)
+    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeta(value: Double): Self = this.set("beta", value.asInstanceOf[js.Any])
+    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
     @scala.inline
-    def deleteBeta: Self = this.set("beta", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDepth: Self = this.set("depth", js.undefined)
+    def setFitToPlot(value: Boolean): Self = StObject.set(x, "fitToPlot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setFitToPlotUndefined: Self = StObject.set(x, "fitToPlot", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setFrame(value: Chart3dFrameOptions): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFitToPlot(value: Boolean): Self = this.set("fitToPlot", value.asInstanceOf[js.Any])
+    def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
     
     @scala.inline
-    def deleteFitToPlot: Self = this.set("fitToPlot", js.undefined)
+    def setViewDistance(value: Double): Self = StObject.set(x, "viewDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrame(value: Chart3dFrameOptions): Self = this.set("frame", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFrame: Self = this.set("frame", js.undefined)
-    
-    @scala.inline
-    def setViewDistance(value: Double): Self = this.set("viewDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewDistance: Self = this.set("viewDistance", js.undefined)
+    def setViewDistanceUndefined: Self = StObject.set(x, "viewDistance", js.undefined)
   }
 }

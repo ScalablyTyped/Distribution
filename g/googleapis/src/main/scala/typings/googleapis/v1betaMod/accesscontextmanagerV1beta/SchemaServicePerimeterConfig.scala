@@ -1,5 +1,6 @@
 package typings.googleapis.v1betaMod.accesscontextmanagerV1beta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * specific Service Perimeter configuration.
   */
 @js.native
-trait SchemaServicePerimeterConfig extends js.Object {
+trait SchemaServicePerimeterConfig extends StObject {
   
   /**
     * A list of `AccessLevel` resource names that allow resources within the
@@ -54,54 +55,42 @@ object SchemaServicePerimeterConfig {
   }
   
   @scala.inline
-  implicit class SchemaServicePerimeterConfigOps[Self <: SchemaServicePerimeterConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaServicePerimeterConfigMutableBuilder[Self <: SchemaServicePerimeterConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessLevels(value: js.Array[String]): Self = StObject.set(x, "accessLevels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessLevelsVarargs(value: String*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
     
     @scala.inline
-    def setAccessLevelsVarargs(value: String*): Self = this.set("accessLevels", js.Array(value :_*))
+    def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessLevels(value: js.Array[String]): Self = this.set("accessLevels", value.asInstanceOf[js.Any])
+    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
     @scala.inline
-    def deleteAccessLevels: Self = this.set("accessLevels", js.undefined)
+    def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
     @scala.inline
-    def setResourcesVarargs(value: String*): Self = this.set("resources", js.Array(value :_*))
+    def setRestrictedServices(value: js.Array[String]): Self = StObject.set(x, "restrictedServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResources(value: js.Array[String]): Self = this.set("resources", value.asInstanceOf[js.Any])
+    def setRestrictedServicesUndefined: Self = StObject.set(x, "restrictedServices", js.undefined)
     
     @scala.inline
-    def deleteResources: Self = this.set("resources", js.undefined)
+    def setRestrictedServicesVarargs(value: String*): Self = StObject.set(x, "restrictedServices", js.Array(value :_*))
     
     @scala.inline
-    def setRestrictedServicesVarargs(value: String*): Self = this.set("restrictedServices", js.Array(value :_*))
+    def setUnrestrictedServices(value: js.Array[String]): Self = StObject.set(x, "unrestrictedServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestrictedServices(value: js.Array[String]): Self = this.set("restrictedServices", value.asInstanceOf[js.Any])
+    def setUnrestrictedServicesUndefined: Self = StObject.set(x, "unrestrictedServices", js.undefined)
     
     @scala.inline
-    def deleteRestrictedServices: Self = this.set("restrictedServices", js.undefined)
-    
-    @scala.inline
-    def setUnrestrictedServicesVarargs(value: String*): Self = this.set("unrestrictedServices", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnrestrictedServices(value: js.Array[String]): Self = this.set("unrestrictedServices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnrestrictedServices: Self = this.set("unrestrictedServices", js.undefined)
+    def setUnrestrictedServicesVarargs(value: String*): Self = StObject.set(x, "unrestrictedServices", js.Array(value :_*))
   }
 }

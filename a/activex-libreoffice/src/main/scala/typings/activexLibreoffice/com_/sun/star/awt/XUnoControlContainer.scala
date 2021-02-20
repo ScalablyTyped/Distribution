@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,33 +46,21 @@ object XUnoControlContainer {
   }
   
   @scala.inline
-  implicit class XUnoControlContainerOps[Self <: XUnoControlContainer] (val x: Self) extends AnyVal {
+  implicit class XUnoControlContainerMutableBuilder[Self <: XUnoControlContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddTabController(value: XTabController => Unit): Self = StObject.set(x, "addTabController", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetTabControllers(value: () => SafeArray[XTabController]): Self = StObject.set(x, "getTabControllers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveTabController(value: XTabController => Unit): Self = StObject.set(x, "removeTabController", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTabControllers(value: SafeArray[XTabController]): Self = this.set("TabControllers", value.asInstanceOf[js.Any])
+    def setSetTabControllers(value: SeqEquiv[XTabController] => Unit): Self = StObject.set(x, "setTabControllers", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddTabController(value: XTabController => Unit): Self = this.set("addTabController", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetTabControllers(value: () => SafeArray[XTabController]): Self = this.set("getTabControllers", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveTabController(value: XTabController => Unit): Self = this.set("removeTabController", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTabControllers(value: SeqEquiv[XTabController] => Unit): Self = this.set("setTabControllers", js.Any.fromFunction1(value))
+    def setTabControllers(value: SafeArray[XTabController]): Self = StObject.set(x, "TabControllers", value.asInstanceOf[js.Any])
   }
 }

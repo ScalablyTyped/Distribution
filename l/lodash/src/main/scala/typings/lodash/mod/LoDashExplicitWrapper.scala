@@ -5,12 +5,13 @@ import typings.lodash.lodashBooleans.`false`
 import typings.lodash.lodashBooleans.`true`
 import typings.std.Error
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoDashExplicitWrapper[TValue] extends js.Object {
+trait LoDashExplicitWrapper[TValue] extends StObject {
   
   /**
     * @see _.add

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UniversalAdId extends js.Object {
+trait UniversalAdId extends StObject {
   
   /** Registry used for the Ad ID value. */
   var registry: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object UniversalAdId {
   }
   
   @scala.inline
-  implicit class UniversalAdIdOps[Self <: UniversalAdId] (val x: Self) extends AnyVal {
+  implicit class UniversalAdIdMutableBuilder[Self <: UniversalAdId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegistry(value: String): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegistryUndefined: Self = StObject.set(x, "registry", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistry(value: String): Self = this.set("registry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegistry: Self = this.set("registry", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

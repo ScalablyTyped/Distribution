@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * *p0*.
   */
 @js.native
-trait SchemaEnumPropertyOptions extends js.Object {
+trait SchemaEnumPropertyOptions extends StObject {
   
   /**
     * If set, describes how the enum should be used as a search operator.
@@ -54,39 +55,27 @@ object SchemaEnumPropertyOptions {
   }
   
   @scala.inline
-  implicit class SchemaEnumPropertyOptionsOps[Self <: SchemaEnumPropertyOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaEnumPropertyOptionsMutableBuilder[Self <: SchemaEnumPropertyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOperatorOptions(value: SchemaEnumOperatorOptions): Self = StObject.set(x, "operatorOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperatorOptionsUndefined: Self = StObject.set(x, "operatorOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrderedRanking(value: String): Self = StObject.set(x, "orderedRanking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperatorOptions(value: SchemaEnumOperatorOptions): Self = this.set("operatorOptions", value.asInstanceOf[js.Any])
+    def setOrderedRankingUndefined: Self = StObject.set(x, "orderedRanking", js.undefined)
     
     @scala.inline
-    def deleteOperatorOptions: Self = this.set("operatorOptions", js.undefined)
+    def setPossibleValues(value: js.Array[SchemaEnumValuePair]): Self = StObject.set(x, "possibleValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderedRanking(value: String): Self = this.set("orderedRanking", value.asInstanceOf[js.Any])
+    def setPossibleValuesUndefined: Self = StObject.set(x, "possibleValues", js.undefined)
     
     @scala.inline
-    def deleteOrderedRanking: Self = this.set("orderedRanking", js.undefined)
-    
-    @scala.inline
-    def setPossibleValuesVarargs(value: SchemaEnumValuePair*): Self = this.set("possibleValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setPossibleValues(value: js.Array[SchemaEnumValuePair]): Self = this.set("possibleValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePossibleValues: Self = this.set("possibleValues", js.undefined)
+    def setPossibleValuesVarargs(value: SchemaEnumValuePair*): Self = StObject.set(x, "possibleValues", js.Array(value :_*))
   }
 }

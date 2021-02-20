@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientChat.gapi.client.chat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Card extends js.Object {
+trait Card extends StObject {
   
   /** The actions of this card. */
   var cardActions: js.UndefOr[js.Array[CardAction]] = js.native
@@ -28,48 +29,36 @@ object Card {
   }
   
   @scala.inline
-  implicit class CardOps[Self <: Card] (val x: Self) extends AnyVal {
+  implicit class CardMutableBuilder[Self <: Card] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCardActions(value: js.Array[CardAction]): Self = StObject.set(x, "cardActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCardActionsUndefined: Self = StObject.set(x, "cardActions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCardActionsVarargs(value: CardAction*): Self = StObject.set(x, "cardActions", js.Array(value :_*))
     
     @scala.inline
-    def setCardActionsVarargs(value: CardAction*): Self = this.set("cardActions", js.Array(value :_*))
+    def setHeader(value: CardHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardActions(value: js.Array[CardAction]): Self = this.set("cardActions", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def deleteCardActions: Self = this.set("cardActions", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: CardHeader): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setSections(value: js.Array[Section]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSectionsUndefined: Self = StObject.set(x, "sections", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setSectionsVarargs(value: Section*): Self = this.set("sections", js.Array(value :_*))
-    
-    @scala.inline
-    def setSections(value: js.Array[Section]): Self = this.set("sections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSections: Self = this.set("sections", js.undefined)
+    def setSectionsVarargs(value: Section*): Self = StObject.set(x, "sections", js.Array(value :_*))
   }
 }

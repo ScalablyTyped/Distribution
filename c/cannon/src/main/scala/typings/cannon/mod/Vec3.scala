@@ -1,5 +1,6 @@
 package typings.cannon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +18,15 @@ class Vec3 ()
   def this(x: Double, y: Double, z: Double) = this()
 }
 /* static members */
-@JSImport("cannon", "Vec3")
-@js.native
-object Vec3 extends js.Object {
+object Vec3 {
   
-  var ZERO: typings.cannon.CANNON.Vec3 = js.native
+  @JSImport("cannon", "Vec3")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("cannon", "Vec3.ZERO")
+  @js.native
+  def ZERO: typings.cannon.CANNON.Vec3 = js.native
+  @scala.inline
+  def ZERO_=(x: typings.cannon.CANNON.Vec3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
 }

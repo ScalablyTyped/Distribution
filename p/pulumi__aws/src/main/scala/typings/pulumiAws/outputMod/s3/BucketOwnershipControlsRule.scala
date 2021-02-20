@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.s3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketOwnershipControlsRule extends js.Object {
+trait BucketOwnershipControlsRule extends StObject {
   
   /**
     * Object ownership. Valid values: `BucketOwnerPreferred` or `ObjectWriter`
@@ -21,21 +22,9 @@ object BucketOwnershipControlsRule {
   }
   
   @scala.inline
-  implicit class BucketOwnershipControlsRuleOps[Self <: BucketOwnershipControlsRule] (val x: Self) extends AnyVal {
+  implicit class BucketOwnershipControlsRuleMutableBuilder[Self <: BucketOwnershipControlsRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setObjectOwnership(value: String): Self = this.set("objectOwnership", value.asInstanceOf[js.Any])
+    def setObjectOwnership(value: String): Self = StObject.set(x, "objectOwnership", value.asInstanceOf[js.Any])
   }
 }

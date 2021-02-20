@@ -5,16 +5,15 @@ import typings.datatablesNetSelect.datatablesNetSelectStrings.api
 import typings.datatablesNetSelect.datatablesNetSelectStrings.multi
 import typings.datatablesNetSelect.datatablesNetSelectStrings.os
 import typings.datatablesNetSelect.datatablesNetSelectStrings.single
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Style extends js.Object {
+  trait Style extends StObject {
     
     /*
       * Get the current selection style applied to the table

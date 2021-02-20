@@ -2,12 +2,13 @@ package typings.tensorflowTfjsLayers.initializersMod
 
 import typings.tensorflowTfjsLayers.initializerConfigMod.Distribution
 import typings.tensorflowTfjsLayers.initializerConfigMod.FanMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VarianceScalingArgs extends js.Object {
+trait VarianceScalingArgs extends StObject {
   
   /** Probabilistic distribution of the values. */
   var distribution: js.UndefOr[Distribution] = js.native
@@ -30,42 +31,30 @@ object VarianceScalingArgs {
   }
   
   @scala.inline
-  implicit class VarianceScalingArgsOps[Self <: VarianceScalingArgs] (val x: Self) extends AnyVal {
+  implicit class VarianceScalingArgsMutableBuilder[Self <: VarianceScalingArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistribution(value: Distribution): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: FanMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistribution(value: Distribution): Self = this.set("distribution", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteDistribution: Self = this.set("distribution", js.undefined)
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: FanMode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
-    
-    @scala.inline
-    def setSeed(value: Double): Self = this.set("seed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeed: Self = this.set("seed", js.undefined)
+    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
   }
 }

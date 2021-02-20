@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDeviceInstancesResult extends js.Object {
+trait ListDeviceInstancesResult extends StObject {
   
   /**
     * An object that contains information about your device instances.
@@ -26,33 +27,21 @@ object ListDeviceInstancesResult {
   }
   
   @scala.inline
-  implicit class ListDeviceInstancesResultOps[Self <: ListDeviceInstancesResult] (val x: Self) extends AnyVal {
+  implicit class ListDeviceInstancesResultMutableBuilder[Self <: ListDeviceInstancesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceInstances(value: DeviceInstances): Self = StObject.set(x, "deviceInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceInstancesUndefined: Self = StObject.set(x, "deviceInstances", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceInstancesVarargs(value: DeviceInstance*): Self = StObject.set(x, "deviceInstances", js.Array(value :_*))
     
     @scala.inline
-    def setDeviceInstancesVarargs(value: DeviceInstance*): Self = this.set("deviceInstances", js.Array(value :_*))
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceInstances(value: DeviceInstances): Self = this.set("deviceInstances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceInstances: Self = this.set("deviceInstances", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

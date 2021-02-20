@@ -1,12 +1,12 @@
 package typings.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait csv extends js.Object {
+trait csv extends StObject {
   
   var delimiter: js.Any = js.native
   
@@ -18,7 +18,3 @@ trait csv extends js.Object {
   def stringify(data: js.Array[_]): String = js.native
   def stringify(data: js.Array[_], delimiter: js.Any): String = js.native
 }
-@JSImport("webix", "csv")
-@js.native
-object csv
-  extends TopLevel[typings.webix.webix.csv]

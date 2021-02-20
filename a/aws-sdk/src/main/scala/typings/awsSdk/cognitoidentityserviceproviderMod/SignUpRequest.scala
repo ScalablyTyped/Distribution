@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignUpRequest extends js.Object {
+trait SignUpRequest extends StObject {
   
   /**
     * The Amazon Pinpoint analytics metadata for collecting metrics for SignUp calls.
@@ -61,69 +62,57 @@ object SignUpRequest {
   }
   
   @scala.inline
-  implicit class SignUpRequestOps[Self <: SignUpRequest] (val x: Self) extends AnyVal {
+  implicit class SignUpRequestMutableBuilder[Self <: SignUpRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = StObject.set(x, "AnalyticsMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalyticsMetadataUndefined: Self = StObject.set(x, "AnalyticsMetadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: ClientIdType): Self = this.set("ClientId", value.asInstanceOf[js.Any])
+    def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: PasswordType): Self = this.set("Password", value.asInstanceOf[js.Any])
+    def setClientMetadataUndefined: Self = StObject.set(x, "ClientMetadata", js.undefined)
     
     @scala.inline
-    def setUsername(value: UsernameType): Self = this.set("Username", value.asInstanceOf[js.Any])
+    def setPassword(value: PasswordType): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = this.set("AnalyticsMetadata", value.asInstanceOf[js.Any])
+    def setSecretHash(value: SecretHashType): Self = StObject.set(x, "SecretHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnalyticsMetadata: Self = this.set("AnalyticsMetadata", js.undefined)
+    def setSecretHashUndefined: Self = StObject.set(x, "SecretHash", js.undefined)
     
     @scala.inline
-    def setClientMetadata(value: ClientMetadataType): Self = this.set("ClientMetadata", value.asInstanceOf[js.Any])
+    def setUserAttributes(value: AttributeListType): Self = StObject.set(x, "UserAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientMetadata: Self = this.set("ClientMetadata", js.undefined)
+    def setUserAttributesUndefined: Self = StObject.set(x, "UserAttributes", js.undefined)
     
     @scala.inline
-    def setSecretHash(value: SecretHashType): Self = this.set("SecretHash", value.asInstanceOf[js.Any])
+    def setUserAttributesVarargs(value: AttributeType*): Self = StObject.set(x, "UserAttributes", js.Array(value :_*))
     
     @scala.inline
-    def deleteSecretHash: Self = this.set("SecretHash", js.undefined)
+    def setUserContextData(value: UserContextDataType): Self = StObject.set(x, "UserContextData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserAttributesVarargs(value: AttributeType*): Self = this.set("UserAttributes", js.Array(value :_*))
+    def setUserContextDataUndefined: Self = StObject.set(x, "UserContextData", js.undefined)
     
     @scala.inline
-    def setUserAttributes(value: AttributeListType): Self = this.set("UserAttributes", value.asInstanceOf[js.Any])
+    def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserAttributes: Self = this.set("UserAttributes", js.undefined)
+    def setValidationData(value: AttributeListType): Self = StObject.set(x, "ValidationData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserContextData(value: UserContextDataType): Self = this.set("UserContextData", value.asInstanceOf[js.Any])
+    def setValidationDataUndefined: Self = StObject.set(x, "ValidationData", js.undefined)
     
     @scala.inline
-    def deleteUserContextData: Self = this.set("UserContextData", js.undefined)
-    
-    @scala.inline
-    def setValidationDataVarargs(value: AttributeType*): Self = this.set("ValidationData", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidationData(value: AttributeListType): Self = this.set("ValidationData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationData: Self = this.set("ValidationData", js.undefined)
+    def setValidationDataVarargs(value: AttributeType*): Self = StObject.set(x, "ValidationData", js.Array(value :_*))
   }
 }

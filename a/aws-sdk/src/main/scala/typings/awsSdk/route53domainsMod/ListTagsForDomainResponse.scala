@@ -1,11 +1,12 @@
 package typings.awsSdk.route53domainsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTagsForDomainResponse extends js.Object {
+trait ListTagsForDomainResponse extends StObject {
   
   /**
     * A list of the tags that are associated with the specified domain.
@@ -21,24 +22,12 @@ object ListTagsForDomainResponse {
   }
   
   @scala.inline
-  implicit class ListTagsForDomainResponseOps[Self <: ListTagsForDomainResponse] (val x: Self) extends AnyVal {
+  implicit class ListTagsForDomainResponseMutableBuilder[Self <: ListTagsForDomainResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTagList(value: TagList): Self = StObject.set(x, "TagList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTagListVarargs(value: Tag*): Self = this.set("TagList", js.Array(value :_*))
-    
-    @scala.inline
-    def setTagList(value: TagList): Self = this.set("TagList", value.asInstanceOf[js.Any])
+    def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
   }
 }

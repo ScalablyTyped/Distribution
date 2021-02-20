@@ -1,5 +1,6 @@
 package typings.semanticUiReact.genericMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +38,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.semanticUiReact.semanticUiReactStrings.bounce
   - typings.semanticUiReact.semanticUiReactStrings.glow
 */
-trait SemanticTRANSITIONS extends js.Object
+trait SemanticTRANSITIONS extends StObject
 object SemanticTRANSITIONS {
   
   @scala.inline

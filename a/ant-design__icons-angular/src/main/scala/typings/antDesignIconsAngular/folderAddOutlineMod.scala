@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/outline/FolderAddOutline", JSImport.Namespace)
-@js.native
-object folderAddOutlineMod extends js.Object {
+object folderAddOutlineMod {
   
+  @JSImport("@ant-design/icons-angular/icons/outline/FolderAddOutline", "FolderAddOutline")
+  @js.native
   val FolderAddOutline: IconDefinition = js.native
 }

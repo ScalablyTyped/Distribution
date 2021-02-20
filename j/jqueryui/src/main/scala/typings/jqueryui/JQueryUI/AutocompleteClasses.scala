@@ -1,11 +1,12 @@
 package typings.jqueryui.JQueryUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutocompleteClasses extends js.Object {
+trait AutocompleteClasses extends StObject {
   
   var `ui-autocomplete`: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object AutocompleteClasses {
   }
   
   @scala.inline
-  implicit class AutocompleteClassesOps[Self <: AutocompleteClasses] (val x: Self) extends AnyVal {
+  implicit class AutocompleteClassesMutableBuilder[Self <: AutocompleteClasses] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setUi-autocomplete`(value: String): Self = StObject.set(x, "ui-autocomplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setUi-autocomplete-input`(value: String): Self = StObject.set(x, "ui-autocomplete-input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setUi-autocomplete-inputUndefined`: Self = StObject.set(x, "ui-autocomplete-input", js.undefined)
     
     @scala.inline
-    def `setUi-autocomplete`(value: String): Self = this.set("ui-autocomplete", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteUi-autocomplete`: Self = this.set("ui-autocomplete", js.undefined)
-    
-    @scala.inline
-    def `setUi-autocomplete-input`(value: String): Self = this.set("ui-autocomplete-input", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteUi-autocomplete-input`: Self = this.set("ui-autocomplete-input", js.undefined)
+    def `setUi-autocompleteUndefined`: Self = StObject.set(x, "ui-autocomplete", js.undefined)
   }
 }

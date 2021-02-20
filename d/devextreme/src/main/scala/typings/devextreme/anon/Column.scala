@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Column extends js.Object {
+trait Column extends StObject {
   
   var column: js.UndefOr[js.Any] = js.native
   
@@ -28,54 +29,42 @@ object Column {
   }
   
   @scala.inline
-  implicit class ColumnOps[Self <: Column] (val x: Self) extends AnyVal {
+  implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: js.Any): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteColumn: Self = this.set("column", js.undefined)
+    def setFormItem(value: js.Any): Self = StObject.set(x, "formItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setFormItemUndefined: Self = StObject.set(x, "formItem", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setRule(value: js.Any): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormItem(value: js.Any): Self = this.set("formItem", value.asInstanceOf[js.Any])
+    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     
     @scala.inline
-    def deleteFormItem: Self = this.set("formItem", js.undefined)
+    def setValidator(value: js.Any): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRule(value: js.Any): Self = this.set("rule", value.asInstanceOf[js.Any])
+    def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
     
     @scala.inline
-    def deleteRule: Self = this.set("rule", js.undefined)
+    def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidator(value: js.Any): Self = this.set("validator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidator: Self = this.set("validator", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String | Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

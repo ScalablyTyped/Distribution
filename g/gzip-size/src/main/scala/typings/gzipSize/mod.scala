@@ -2,43 +2,62 @@ package typings.gzipSize
 
 import typings.gzipSize.gzipSizeStrings.`gzip-size`
 import typings.node.Buffer
-import typings.node.streamMod.Transform
+import typings.node.streamMod.PassThrough
 import typings.node.zlibMod.ZlibOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gzip-size", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Get the gzipped size of a string or buffer.
   	@returns The gzipped size of `input`.
   	*/
+  @JSImport("gzip-size", JSImport.Namespace)
+  @js.native
   def apply(input: String): js.Promise[Double] = js.native
+  @JSImport("gzip-size", JSImport.Namespace)
+  @js.native
   def apply(input: String, options: Options): js.Promise[Double] = js.native
+  @JSImport("gzip-size", JSImport.Namespace)
+  @js.native
   def apply(input: Buffer): js.Promise[Double] = js.native
+  @JSImport("gzip-size", JSImport.Namespace)
+  @js.native
   def apply(input: Buffer, options: Options): js.Promise[Double] = js.native
   
   /**
   	Get the gzipped size of a file.
   	@returns The size of the file.
   	*/
+  @JSImport("gzip-size", "file")
+  @js.native
   def file(path: String): js.Promise[Double] = js.native
+  @JSImport("gzip-size", "file")
+  @js.native
   def file(path: String, options: Options): js.Promise[Double] = js.native
   
   /**
   	Synchronously get the gzipped size of a file.
   	@returns The size of the file.
   	*/
+  @JSImport("gzip-size", "fileSync")
+  @js.native
   def fileSync(path: String): Double = js.native
+  @JSImport("gzip-size", "fileSync")
+  @js.native
   def fileSync(path: String, options: Options): Double = js.native
   
   /**
   	@returns A stream that emits a `gzip-size` event and has a `gzipSize` property.
   	*/
+  @JSImport("gzip-size", "stream")
+  @js.native
   def stream(): GzipSizeStream = js.native
+  @JSImport("gzip-size", "stream")
+  @js.native
   def stream(options: Options): GzipSizeStream = js.native
   
   /**
@@ -54,13 +73,21 @@ object mod extends js.Object {
   	//=> 78
   	```
   	*/
+  @JSImport("gzip-size", "sync")
+  @js.native
   def sync(input: String): Double = js.native
+  @JSImport("gzip-size", "sync")
+  @js.native
   def sync(input: String, options: Options): Double = js.native
+  @JSImport("gzip-size", "sync")
+  @js.native
   def sync(input: Buffer): Double = js.native
+  @JSImport("gzip-size", "sync")
+  @js.native
   def sync(input: Buffer, options: Options): Double = js.native
   
   @js.native
-  trait GzipSizeStream extends Transform {
+  trait GzipSizeStream extends PassThrough {
     
     @JSName("addListener")
     def addListener_gzipsize(event: `gzip-size`, listener: js.Function1[/* size */ Double, Unit]): this.type = js.native

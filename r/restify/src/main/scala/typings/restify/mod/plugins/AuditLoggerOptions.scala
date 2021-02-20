@@ -1,17 +1,17 @@
 package typings.restify.mod.plugins
 
-import typings.bunyan.mod.^
 import typings.restify.mod.Request
 import typings.restify.mod.Response
 import typings.restify.mod.Server
 import typings.restify.restifyStrings.after
 import typings.restify.restifyStrings.routed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuditLoggerOptions extends js.Object {
+trait AuditLoggerOptions extends StObject {
   
   var body: js.UndefOr[Boolean] = js.native
   
@@ -33,7 +33,7 @@ trait AuditLoggerOptions extends js.Object {
   /**
     * Bunyan logger
     */
-  var log: ^ = js.native
+  var log: typings.bunyan.mod.^ = js.native
   
   /**
     * Ringbuffer which is written to if passed in
@@ -53,60 +53,48 @@ trait AuditLoggerOptions extends js.Object {
 object AuditLoggerOptions {
   
   @scala.inline
-  def apply(event: typings.restify.restifyStrings.pre | routed | after, log: ^): AuditLoggerOptions = {
+  def apply(event: typings.restify.restifyStrings.pre | routed | after, log: typings.bunyan.mod.^): AuditLoggerOptions = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuditLoggerOptions]
   }
   
   @scala.inline
-  implicit class AuditLoggerOptionsOps[Self <: AuditLoggerOptions] (val x: Self) extends AnyVal {
+  implicit class AuditLoggerOptionsMutableBuilder[Self <: AuditLoggerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: Boolean): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContext(value: (/* req */ Request, /* res */ Response, /* route */ js.Any, /* error */ js.Any) => js.Any): Self = StObject.set(x, "context", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setEvent(value: typings.restify.restifyStrings.pre | routed | after): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def setLog(value: ^): Self = this.set("log", value.asInstanceOf[js.Any])
+    def setEvent(value: typings.restify.restifyStrings.pre | routed | after): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: Boolean): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setLog(value: typings.bunyan.mod.^): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setLogBuffer(value: js.Any): Self = StObject.set(x, "logBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: (/* req */ Request, /* res */ Response, /* route */ js.Any, /* error */ js.Any) => js.Any): Self = this.set("context", js.Any.fromFunction4(value))
+    def setLogBufferUndefined: Self = StObject.set(x, "logBuffer", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setPrintLog(value: Boolean): Self = StObject.set(x, "printLog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogBuffer(value: js.Any): Self = this.set("logBuffer", value.asInstanceOf[js.Any])
+    def setPrintLogUndefined: Self = StObject.set(x, "printLog", js.undefined)
     
     @scala.inline
-    def deleteLogBuffer: Self = this.set("logBuffer", js.undefined)
+    def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintLog(value: Boolean): Self = this.set("printLog", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrintLog: Self = this.set("printLog", js.undefined)
-    
-    @scala.inline
-    def setServer(value: Server): Self = this.set("server", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServer: Self = this.set("server", js.undefined)
+    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

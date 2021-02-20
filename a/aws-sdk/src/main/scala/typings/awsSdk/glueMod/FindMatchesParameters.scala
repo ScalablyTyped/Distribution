@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FindMatchesParameters extends js.Object {
+trait FindMatchesParameters extends StObject {
   
   /**
     * The value that is selected when tuning your transform for a balance between accuracy and cost. A value of 0.5 means that the system balances accuracy and cost concerns. A value of 1.0 means a bias purely for accuracy, which typically results in a higher cost, sometimes substantially higher. A value of 0.0 means a bias purely for cost, which results in a less accurate FindMatches transform, sometimes with unacceptable accuracy. Accuracy measures how well the transform finds true positives and true negatives. Increasing accuracy requires more machine resources and cost. But it also results in increased recall.  Cost measures how many compute resources, and thus money, are consumed to run the transform.
@@ -36,42 +37,30 @@ object FindMatchesParameters {
   }
   
   @scala.inline
-  implicit class FindMatchesParametersOps[Self <: FindMatchesParameters] (val x: Self) extends AnyVal {
+  implicit class FindMatchesParametersMutableBuilder[Self <: FindMatchesParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccuracyCostTradeoff(value: GenericBoundedDouble): Self = StObject.set(x, "AccuracyCostTradeoff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccuracyCostTradeoffUndefined: Self = StObject.set(x, "AccuracyCostTradeoff", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnforceProvidedLabels(value: NullableBoolean): Self = StObject.set(x, "EnforceProvidedLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccuracyCostTradeoff(value: GenericBoundedDouble): Self = this.set("AccuracyCostTradeoff", value.asInstanceOf[js.Any])
+    def setEnforceProvidedLabelsUndefined: Self = StObject.set(x, "EnforceProvidedLabels", js.undefined)
     
     @scala.inline
-    def deleteAccuracyCostTradeoff: Self = this.set("AccuracyCostTradeoff", js.undefined)
+    def setPrecisionRecallTradeoff(value: GenericBoundedDouble): Self = StObject.set(x, "PrecisionRecallTradeoff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnforceProvidedLabels(value: NullableBoolean): Self = this.set("EnforceProvidedLabels", value.asInstanceOf[js.Any])
+    def setPrecisionRecallTradeoffUndefined: Self = StObject.set(x, "PrecisionRecallTradeoff", js.undefined)
     
     @scala.inline
-    def deleteEnforceProvidedLabels: Self = this.set("EnforceProvidedLabels", js.undefined)
+    def setPrimaryKeyColumnName(value: ColumnNameString): Self = StObject.set(x, "PrimaryKeyColumnName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecisionRecallTradeoff(value: GenericBoundedDouble): Self = this.set("PrecisionRecallTradeoff", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrecisionRecallTradeoff: Self = this.set("PrecisionRecallTradeoff", js.undefined)
-    
-    @scala.inline
-    def setPrimaryKeyColumnName(value: ColumnNameString): Self = this.set("PrimaryKeyColumnName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimaryKeyColumnName: Self = this.set("PrimaryKeyColumnName", js.undefined)
+    def setPrimaryKeyColumnNameUndefined: Self = StObject.set(x, "PrimaryKeyColumnName", js.undefined)
   }
 }

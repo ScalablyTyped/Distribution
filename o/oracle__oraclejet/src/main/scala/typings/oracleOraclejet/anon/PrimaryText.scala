@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrimaryText extends js.Object {
+trait PrimaryText extends StObject {
   
   var primaryText: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object PrimaryText {
   }
   
   @scala.inline
-  implicit class PrimaryTextOps[Self <: PrimaryText] (val x: Self) extends AnyVal {
+  implicit class PrimaryTextMutableBuilder[Self <: PrimaryText] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrimaryText(value: String): Self = StObject.set(x, "primaryText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrimaryTextUndefined: Self = StObject.set(x, "primaryText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecondaryText(value: String): Self = StObject.set(x, "secondaryText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryText(value: String): Self = this.set("primaryText", value.asInstanceOf[js.Any])
+    def setSecondaryTextUndefined: Self = StObject.set(x, "secondaryText", js.undefined)
     
     @scala.inline
-    def deletePrimaryText: Self = this.set("primaryText", js.undefined)
+    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondaryText(value: String): Self = this.set("secondaryText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondaryText: Self = this.set("secondaryText", js.undefined)
-    
-    @scala.inline
-    def setThreshold(value: Double): Self = this.set("threshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreshold: Self = this.set("threshold", js.undefined)
+    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
   }
 }

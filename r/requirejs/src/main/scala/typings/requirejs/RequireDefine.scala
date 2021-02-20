@@ -1,12 +1,13 @@
 package typings.requirejs
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequireDefine extends js.Object {
+trait RequireDefine extends StObject {
   
   /**
     * Define Simple Name/Value Pairs

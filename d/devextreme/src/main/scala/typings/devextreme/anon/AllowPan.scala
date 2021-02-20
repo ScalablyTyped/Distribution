@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowPan extends js.Object {
+trait AllowPan extends StObject {
   
   var allowPan: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object AllowPan {
   }
   
   @scala.inline
-  implicit class AllowPanOps[Self <: AllowPan] (val x: Self) extends AnyVal {
+  implicit class AllowPanMutableBuilder[Self <: AllowPan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowPan(value: Boolean): Self = StObject.set(x, "allowPan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowPanUndefined: Self = StObject.set(x, "allowPan", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowSelection(value: Boolean): Self = StObject.set(x, "allowSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowPan(value: Boolean): Self = this.set("allowPan", value.asInstanceOf[js.Any])
+    def setAllowSelectionUndefined: Self = StObject.set(x, "allowSelection", js.undefined)
     
     @scala.inline
-    def deleteAllowPan: Self = this.set("allowPan", js.undefined)
+    def setAllowZoom(value: Boolean): Self = StObject.set(x, "allowZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowSelection(value: Boolean): Self = this.set("allowSelection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowSelection: Self = this.set("allowSelection", js.undefined)
-    
-    @scala.inline
-    def setAllowZoom(value: Boolean): Self = this.set("allowZoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowZoom: Self = this.set("allowZoom", js.undefined)
+    def setAllowZoomUndefined: Self = StObject.set(x, "allowZoom", js.undefined)
   }
 }

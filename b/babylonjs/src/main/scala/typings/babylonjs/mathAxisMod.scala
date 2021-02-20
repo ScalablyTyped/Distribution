@@ -1,35 +1,50 @@
 package typings.babylonjs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.babylonjs.mathVectorMod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Maths/math.axis", JSImport.Namespace)
-@js.native
-object mathAxisMod extends js.Object {
+object mathAxisMod {
   
+  @JSImport("babylonjs/Maths/math.axis", "Axis")
   @js.native
-  class Axis () extends js.Object
+  class Axis () extends StObject
   /* static members */
-  @js.native
-  object Axis extends js.Object {
+  object Axis {
+    
+    @JSImport("babylonjs/Maths/math.axis", "Axis")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** X axis */
-    var X: Vector3 = js.native
+    @JSImport("babylonjs/Maths/math.axis", "Axis.X")
+    @js.native
+    def X: Vector3 = js.native
+    @scala.inline
+    def X_=(x: Vector3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("X")(x.asInstanceOf[js.Any])
     
     /** Y axis */
-    var Y: Vector3 = js.native
+    @JSImport("babylonjs/Maths/math.axis", "Axis.Y")
+    @js.native
+    def Y: Vector3 = js.native
+    @scala.inline
+    def Y_=(x: Vector3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Y")(x.asInstanceOf[js.Any])
     
     /** Z axis */
-    var Z: Vector3 = js.native
+    @JSImport("babylonjs/Maths/math.axis", "Axis.Z")
+    @js.native
+    def Z: Vector3 = js.native
+    @scala.inline
+    def Z_=(x: Vector3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Z")(x.asInstanceOf[js.Any])
   }
   
   @js.native
-  sealed trait Coordinate extends js.Object
+  sealed trait Coordinate extends StObject
+  @JSImport("babylonjs/Maths/math.axis", "Coordinate")
   @js.native
-  object Coordinate extends js.Object {
+  object Coordinate extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Coordinate with Double] = js.native
@@ -37,26 +52,24 @@ object mathAxisMod extends js.Object {
     /** X axis */
     @js.native
     sealed trait X extends Coordinate
-    /* 0 */ @js.native
-    object X extends TopLevel[X with Double]
+    /* 0 */ val X: typings.babylonjs.mathAxisMod.Coordinate.X with Double = js.native
     
     /** Y axis */
     @js.native
     sealed trait Y extends Coordinate
-    /* 1 */ @js.native
-    object Y extends TopLevel[Y with Double]
+    /* 1 */ val Y: typings.babylonjs.mathAxisMod.Coordinate.Y with Double = js.native
     
     /** Z axis */
     @js.native
     sealed trait Z extends Coordinate
-    /* 2 */ @js.native
-    object Z extends TopLevel[Z with Double]
+    /* 2 */ val Z: typings.babylonjs.mathAxisMod.Coordinate.Z with Double = js.native
   }
   
   @js.native
-  sealed trait Space extends js.Object
+  sealed trait Space extends StObject
+  @JSImport("babylonjs/Maths/math.axis", "Space")
   @js.native
-  object Space extends js.Object {
+  object Space extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Space with Double] = js.native
@@ -64,19 +77,16 @@ object mathAxisMod extends js.Object {
     /** Bone space */
     @js.native
     sealed trait BONE extends Space
-    /* 2 */ @js.native
-    object BONE extends TopLevel[BONE with Double]
+    /* 2 */ val BONE: typings.babylonjs.mathAxisMod.Space.BONE with Double = js.native
     
     /** Local (object) space */
     @js.native
     sealed trait LOCAL extends Space
-    /* 0 */ @js.native
-    object LOCAL extends TopLevel[LOCAL with Double]
+    /* 0 */ val LOCAL: typings.babylonjs.mathAxisMod.Space.LOCAL with Double = js.native
     
     /** World space */
     @js.native
     sealed trait WORLD extends Space
-    /* 1 */ @js.native
-    object WORLD extends TopLevel[WORLD with Double]
+    /* 1 */ val WORLD: typings.babylonjs.mathAxisMod.Space.WORLD with Double = js.native
   }
 }

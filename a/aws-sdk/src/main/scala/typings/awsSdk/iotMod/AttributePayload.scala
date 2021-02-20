@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttributePayload extends js.Object {
+trait AttributePayload extends StObject {
   
   /**
     * A JSON string containing up to three key-value pair in JSON format. For example:  {\"attributes\":{\"string1\":\"string2\"}} 
@@ -26,30 +27,18 @@ object AttributePayload {
   }
   
   @scala.inline
-  implicit class AttributePayloadOps[Self <: AttributePayload] (val x: Self) extends AnyVal {
+  implicit class AttributePayloadMutableBuilder[Self <: AttributePayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMerge(value: Flag): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: Attributes): Self = this.set("attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
-    
-    @scala.inline
-    def setMerge(value: Flag): Self = this.set("merge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMerge: Self = this.set("merge", js.undefined)
+    def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
   }
 }

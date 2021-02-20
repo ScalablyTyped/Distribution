@@ -5,13 +5,14 @@ import typings.babelParser.mod.ParserPlugin
 import typings.std.Record
 import typings.std.Set
 import typings.vueCompilerCore.anon.VFor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Required<@vue/compiler-core.@vue/compiler-core.TransformOptions> */
 @js.native
-trait TransformContext extends js.Object {
+trait TransformContext extends StObject {
   
   def addIdentifiers(exp: String): Unit = js.native
   def addIdentifiers(exp: ExpressionNode): Unit = js.native

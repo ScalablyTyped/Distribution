@@ -1,12 +1,13 @@
 package typings.jssip.mod
 
 import typings.jssip.anon.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserAgentSipEvent extends js.Object {
+trait UserAgentSipEvent extends StObject {
   
   var event: Event = js.native
   
@@ -21,24 +22,12 @@ object UserAgentSipEvent {
   }
   
   @scala.inline
-  implicit class UserAgentSipEventOps[Self <: UserAgentSipEvent] (val x: Self) extends AnyVal {
+  implicit class UserAgentSipEventMutableBuilder[Self <: UserAgentSipEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEvent(value: Event): Self = this.set("event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: IncomingRequest): Self = this.set("request", value.asInstanceOf[js.Any])
+    def setRequest(value: IncomingRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

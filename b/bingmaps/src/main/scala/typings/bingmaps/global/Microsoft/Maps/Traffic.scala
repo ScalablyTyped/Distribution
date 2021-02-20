@@ -1,5 +1,6 @@
 package typings.bingmaps.global.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Adds a traffic incident and flow data to the map.
   * @requires The Microsoft.Maps.Traffic module.
   */
-@JSGlobal("Microsoft.Maps.Traffic")
-@js.native
-object Traffic extends js.Object {
+object Traffic {
   
+  @JSGlobal("Microsoft.Maps.Traffic.TrafficManager")
   @js.native
   class TrafficManager protected ()
     extends typings.bingmaps.Microsoft.Maps.Traffic.TrafficManager {

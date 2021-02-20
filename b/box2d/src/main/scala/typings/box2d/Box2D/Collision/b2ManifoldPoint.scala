@@ -1,12 +1,13 @@
 package typings.box2d.Box2D.Collision
 
 import typings.box2d.Box2D.Common.Math.b2Vec2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2ManifoldPoint extends js.Object {
+trait b2ManifoldPoint extends StObject {
   
   /**
     * Resets this manifold point.
@@ -55,36 +56,24 @@ object b2ManifoldPoint {
   }
   
   @scala.inline
-  implicit class b2ManifoldPointOps[Self <: b2ManifoldPoint] (val x: Self) extends AnyVal {
+  implicit class b2ManifoldPointMutableBuilder[Self <: b2ManifoldPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setM_id(value: b2ContactID): Self = StObject.set(x, "m_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setM_localpoint(value: b2Vec2): Self = StObject.set(x, "m_localpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setM_normalImpulse(value: Double): Self = StObject.set(x, "m_normalImpulse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReset(value: () => Unit): Self = this.set("Reset", js.Any.fromFunction0(value))
+    def setM_tangentImpulse(value: Double): Self = StObject.set(x, "m_tangentImpulse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSet(value: b2ManifoldPoint => Unit): Self = this.set("Set", js.Any.fromFunction1(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setM_id(value: b2ContactID): Self = this.set("m_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setM_localpoint(value: b2Vec2): Self = this.set("m_localpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setM_normalImpulse(value: Double): Self = this.set("m_normalImpulse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setM_tangentImpulse(value: Double): Self = this.set("m_tangentImpulse", value.asInstanceOf[js.Any])
+    def setSet(value: b2ManifoldPoint => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction1(value))
   }
 }

@@ -4,6 +4,7 @@ import typings.jupyterlabServices.anon.Event
 import typings.jupyterlabServices.jupyterlabServicesStrings.debug_event
 import typings.jupyterlabServices.jupyterlabServicesStrings.iopub
 import typings.luminoCoreutils.jsonMod.JSONObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,21 +32,9 @@ object IDebugEventMsg {
   }
   
   @scala.inline
-  implicit class IDebugEventMsgOps[Self <: IDebugEventMsg] (val x: Self) extends AnyVal {
+  implicit class IDebugEventMsgMutableBuilder[Self <: IDebugEventMsg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContent(value: Event): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setContent(value: Event): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

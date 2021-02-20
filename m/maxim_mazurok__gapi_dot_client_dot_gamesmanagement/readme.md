@@ -3,6 +3,24 @@
 
 Typings are for version 1.0.20201112
 
+## Library description:
+TypeScript typings for Google Play Game Management v1management
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @maxim_mazurok/gapi.client.gamesmanagement |
+| Keywords           | - |
+| # releases         | 10 |
+| # dependents       | 1 |
+| # downloads        | 1033 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)
+- [Bugs](https://github.com/Maxim-Mazurok/google-api-typings-generator/issues)
+- [Repository](https://github.com/Maxim-Mazurok/google-api-typings-generator)
+- [Npm](https://www.npmjs.com/package/%40maxim_mazurok%2Fgapi.client.gamesmanagement)
+    
 
 
 ## Note

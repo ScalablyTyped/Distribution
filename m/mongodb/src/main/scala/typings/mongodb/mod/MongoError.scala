@@ -1,6 +1,7 @@
 package typings.mongodb.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,14 +40,18 @@ class MongoError protected () extends Error {
   def hasErrorLabel(label: String): Boolean = js.native
 }
 /* static members */
-@JSImport("mongodb", "MongoError")
-@js.native
-object MongoError extends js.Object {
+object MongoError {
   
   /**
     * @deprecated
     */
+  @JSImport("mongodb", "MongoError.create")
+  @js.native
   def create(options: String): MongoError = js.native
+  @JSImport("mongodb", "MongoError.create")
+  @js.native
   def create(options: js.Object): MongoError = js.native
+  @JSImport("mongodb", "MongoError.create")
+  @js.native
   def create(options: Error): MongoError = js.native
 }

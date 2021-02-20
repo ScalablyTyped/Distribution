@@ -3,12 +3,13 @@ package typings.jqueryContextmenu
 import typings.jqueryContextmenu.anon.Duration
 import typings.jqueryContextmenu.anon.Hide
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryContextMenuOptions extends js.Object {
+trait JQueryContextMenuOptions extends StObject {
   
   var animation: js.UndefOr[Duration] = js.native
   
@@ -53,117 +54,105 @@ object JQueryContextMenuOptions {
   }
   
   @scala.inline
-  implicit class JQueryContextMenuOptionsOps[Self <: JQueryContextMenuOptions] (val x: Self) extends AnyVal {
+  implicit class JQueryContextMenuOptionsMutableBuilder[Self <: JQueryContextMenuOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: Duration): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppendTo(value: String): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
     
     @scala.inline
-    def setAnimation(value: Duration): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setAutoHideUndefined: Self = StObject.set(x, "autoHide", js.undefined)
     
     @scala.inline
-    def setAppendTo(value: String): Self = this.set("appendTo", value.asInstanceOf[js.Any])
+    def setBuild(value: (/* triggerElement */ JQuery, /* e */ Event) => _): Self = StObject.set(x, "build", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteAppendTo: Self = this.set("appendTo", js.undefined)
+    def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     
     @scala.inline
-    def setAutoHide(value: Boolean): Self = this.set("autoHide", value.asInstanceOf[js.Any])
+    def setCallback(value: (/* key */ js.Any, /* options */ js.Any) => _): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteAutoHide: Self = this.set("autoHide", js.undefined)
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def setBuild(value: (/* triggerElement */ JQuery, /* e */ Event) => _): Self = this.set("build", js.Any.fromFunction2(value))
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBuild: Self = this.set("build", js.undefined)
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setCallback(value: (/* key */ js.Any, /* options */ js.Any) => _): Self = this.set("callback", js.Any.fromFunction2(value))
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setDeterminePosition(value: /* menu */ JQuery => Unit): Self = StObject.set(x, "determinePosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setDeterminePositionUndefined: Self = StObject.set(x, "determinePosition", js.undefined)
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setEvents(value: Hide): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def setDeterminePosition(value: /* menu */ JQuery => Unit): Self = this.set("determinePosition", js.Any.fromFunction1(value))
+    def setItemClickEvent(value: String): Self = StObject.set(x, "itemClickEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeterminePosition: Self = this.set("determinePosition", js.undefined)
+    def setItemClickEventUndefined: Self = StObject.set(x, "itemClickEvent", js.undefined)
     
     @scala.inline
-    def setEvents(value: Hide): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def setItemClickEvent(value: String): Self = this.set("itemClickEvent", value.asInstanceOf[js.Any])
+    def setPosition(value: (/* opt */ JQuery, /* x */ Double, /* y */ Double) => Unit): Self = StObject.set(x, "position", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteItemClickEvent: Self = this.set("itemClickEvent", js.undefined)
+    def setPositionSubmenu(value: /* menu */ JQuery => Unit): Self = StObject.set(x, "positionSubmenu", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setItems(value: js.Any): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setPositionSubmenuUndefined: Self = StObject.set(x, "positionSubmenu", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setPosition(value: (/* opt */ JQuery, /* x */ Double, /* y */ Double) => Unit): Self = this.set("position", js.Any.fromFunction3(value))
+    def setReposition(value: Boolean): Self = StObject.set(x, "reposition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setRepositionUndefined: Self = StObject.set(x, "reposition", js.undefined)
     
     @scala.inline
-    def setPositionSubmenu(value: /* menu */ JQuery => Unit): Self = this.set("positionSubmenu", js.Any.fromFunction1(value))
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePositionSubmenu: Self = this.set("positionSubmenu", js.undefined)
+    def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReposition(value: Boolean): Self = this.set("reposition", value.asInstanceOf[js.Any])
+    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
     
     @scala.inline
-    def deleteReposition: Self = this.set("reposition", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrigger(value: String): Self = this.set("trigger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrigger: Self = this.set("trigger", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

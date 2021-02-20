@@ -1,12 +1,13 @@
 package typings.activexMsxml2.MSXML2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** MX Namespace Manager 6.0 */
 @js.native
-trait MXNamespaceManager60 extends js.Object {
+trait MXNamespaceManager60 extends StObject {
   
   @JSName("MSXML2.MXNamespaceManager60_typekey")
   var MSXML2DotMXNamespaceManager60_typekey: MXNamespaceManager60 = js.native

@@ -2,12 +2,13 @@ package typings.evernote.anon
 
 import typings.std.Map
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FullMap extends js.Object {
+trait FullMap extends StObject {
   
   var fullMap: js.UndefOr[Map[String, String]] = js.native
   
@@ -22,30 +23,18 @@ object FullMap {
   }
   
   @scala.inline
-  implicit class FullMapOps[Self <: FullMap] (val x: Self) extends AnyVal {
+  implicit class FullMapMutableBuilder[Self <: FullMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFullMap(value: Map[String, String]): Self = StObject.set(x, "fullMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullMapUndefined: Self = StObject.set(x, "fullMap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeysOnly(value: Set[String]): Self = StObject.set(x, "keysOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullMap(value: Map[String, String]): Self = this.set("fullMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFullMap: Self = this.set("fullMap", js.undefined)
-    
-    @scala.inline
-    def setKeysOnly(value: Set[String]): Self = this.set("keysOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeysOnly: Self = this.set("keysOnly", js.undefined)
+    def setKeysOnlyUndefined: Self = StObject.set(x, "keysOnly", js.undefined)
   }
 }

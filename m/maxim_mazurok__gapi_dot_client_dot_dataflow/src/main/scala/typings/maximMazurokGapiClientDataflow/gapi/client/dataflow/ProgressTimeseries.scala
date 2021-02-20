@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProgressTimeseries extends js.Object {
+trait ProgressTimeseries extends StObject {
   
   /** The current progress of the component, in the range [0,1]. */
   var currentProgress: js.UndefOr[Double] = js.native
@@ -22,33 +23,21 @@ object ProgressTimeseries {
   }
   
   @scala.inline
-  implicit class ProgressTimeseriesOps[Self <: ProgressTimeseries] (val x: Self) extends AnyVal {
+  implicit class ProgressTimeseriesMutableBuilder[Self <: ProgressTimeseries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentProgress(value: Double): Self = StObject.set(x, "currentProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentProgressUndefined: Self = StObject.set(x, "currentProgress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataPoints(value: js.Array[Point]): Self = StObject.set(x, "dataPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentProgress(value: Double): Self = this.set("currentProgress", value.asInstanceOf[js.Any])
+    def setDataPointsUndefined: Self = StObject.set(x, "dataPoints", js.undefined)
     
     @scala.inline
-    def deleteCurrentProgress: Self = this.set("currentProgress", js.undefined)
-    
-    @scala.inline
-    def setDataPointsVarargs(value: Point*): Self = this.set("dataPoints", js.Array(value :_*))
-    
-    @scala.inline
-    def setDataPoints(value: js.Array[Point]): Self = this.set("dataPoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataPoints: Self = this.set("dataPoints", js.undefined)
+    def setDataPointsVarargs(value: Point*): Self = StObject.set(x, "dataPoints", js.Array(value :_*))
   }
 }

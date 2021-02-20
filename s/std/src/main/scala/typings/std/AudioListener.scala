@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The position and orientation of the unique person listening to the audio scene, and is used in audio spatialization. All PannerNodes spatialize in relation to the AudioListener stored in the BaseAudioContext.listener attribute. */
 @js.native
-trait AudioListener extends js.Object {
+trait AudioListener extends StObject {
   
   val forwardX: AudioParam = js.native
   
@@ -53,51 +54,39 @@ object AudioListener {
   }
   
   @scala.inline
-  implicit class AudioListenerOps[Self <: AudioListener] (val x: Self) extends AnyVal {
+  implicit class AudioListenerMutableBuilder[Self <: AudioListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForwardX(value: AudioParam): Self = StObject.set(x, "forwardX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForwardY(value: AudioParam): Self = StObject.set(x, "forwardY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForwardZ(value: AudioParam): Self = StObject.set(x, "forwardZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForwardX(value: AudioParam): Self = this.set("forwardX", value.asInstanceOf[js.Any])
+    def setPositionX(value: AudioParam): Self = StObject.set(x, "positionX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForwardY(value: AudioParam): Self = this.set("forwardY", value.asInstanceOf[js.Any])
+    def setPositionY(value: AudioParam): Self = StObject.set(x, "positionY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForwardZ(value: AudioParam): Self = this.set("forwardZ", value.asInstanceOf[js.Any])
+    def setPositionZ(value: AudioParam): Self = StObject.set(x, "positionZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionX(value: AudioParam): Self = this.set("positionX", value.asInstanceOf[js.Any])
+    def setSetOrientation(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setOrientation", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setPositionY(value: AudioParam): Self = this.set("positionY", value.asInstanceOf[js.Any])
+    def setSetPosition(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setPositionZ(value: AudioParam): Self = this.set("positionZ", value.asInstanceOf[js.Any])
+    def setUpX(value: AudioParam): Self = StObject.set(x, "upX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetOrientation(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = this.set("setOrientation", js.Any.fromFunction6(value))
+    def setUpY(value: AudioParam): Self = StObject.set(x, "upY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetPosition(value: (Double, Double, Double) => Unit): Self = this.set("setPosition", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setUpX(value: AudioParam): Self = this.set("upX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpY(value: AudioParam): Self = this.set("upY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpZ(value: AudioParam): Self = this.set("upZ", value.asInstanceOf[js.Any])
+    def setUpZ(value: AudioParam): Self = StObject.set(x, "upZ", value.asInstanceOf[js.Any])
   }
 }

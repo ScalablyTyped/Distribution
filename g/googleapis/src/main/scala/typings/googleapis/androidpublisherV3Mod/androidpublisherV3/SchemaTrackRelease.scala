@@ -1,11 +1,12 @@
 package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaTrackRelease extends js.Object {
+trait SchemaTrackRelease extends StObject {
   
   var countryTargeting: js.UndefOr[SchemaCountryTargeting] = js.native
   
@@ -50,60 +51,48 @@ object SchemaTrackRelease {
   }
   
   @scala.inline
-  implicit class SchemaTrackReleaseOps[Self <: SchemaTrackRelease] (val x: Self) extends AnyVal {
+  implicit class SchemaTrackReleaseMutableBuilder[Self <: SchemaTrackRelease] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountryTargeting(value: SchemaCountryTargeting): Self = StObject.set(x, "countryTargeting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryTargetingUndefined: Self = StObject.set(x, "countryTargeting", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryTargeting(value: SchemaCountryTargeting): Self = this.set("countryTargeting", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteCountryTargeting: Self = this.set("countryTargeting", js.undefined)
+    def setReleaseNotes(value: js.Array[SchemaLocalizedText]): Self = StObject.set(x, "releaseNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setReleaseNotesUndefined: Self = StObject.set(x, "releaseNotes", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setReleaseNotesVarargs(value: SchemaLocalizedText*): Self = StObject.set(x, "releaseNotes", js.Array(value :_*))
     
     @scala.inline
-    def setReleaseNotesVarargs(value: SchemaLocalizedText*): Self = this.set("releaseNotes", js.Array(value :_*))
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseNotes(value: js.Array[SchemaLocalizedText]): Self = this.set("releaseNotes", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteReleaseNotes: Self = this.set("releaseNotes", js.undefined)
+    def setUserFraction(value: Double): Self = StObject.set(x, "userFraction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setUserFractionUndefined: Self = StObject.set(x, "userFraction", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setVersionCodes(value: js.Array[String]): Self = StObject.set(x, "versionCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserFraction(value: Double): Self = this.set("userFraction", value.asInstanceOf[js.Any])
+    def setVersionCodesUndefined: Self = StObject.set(x, "versionCodes", js.undefined)
     
     @scala.inline
-    def deleteUserFraction: Self = this.set("userFraction", js.undefined)
-    
-    @scala.inline
-    def setVersionCodesVarargs(value: String*): Self = this.set("versionCodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersionCodes(value: js.Array[String]): Self = this.set("versionCodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionCodes: Self = this.set("versionCodes", js.undefined)
+    def setVersionCodesVarargs(value: String*): Self = StObject.set(x, "versionCodes", js.Array(value :_*))
   }
 }

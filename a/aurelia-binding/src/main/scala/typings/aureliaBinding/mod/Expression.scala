@@ -1,12 +1,13 @@
 package typings.aureliaBinding.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-binding", "Expression")
 @js.native
-class Expression () extends js.Object {
+class Expression () extends StObject {
   
   /**
     * Accepts an expression visitor.

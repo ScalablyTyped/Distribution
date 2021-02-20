@@ -1,6 +1,6 @@
 package typings.videoJs.mod.default
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An Object that contains lifecycle hooks as keys which point to an array
   * of functions that are run when a lifecycle is triggered
   */
-@JSImport("video.js", "hooks_")
-@js.native
 object hooks_
-  extends /* type */ StringDictionary[js.Function0[_]]

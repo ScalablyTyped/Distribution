@@ -1,5 +1,6 @@
 package typings.iobroker.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,6 +33,7 @@ package object ioBroker {
   
   type Enum = js.Any
   
+  // TODO: define this https://github.com/ioBroker/ioBroker.js-controller/blob/master/lib/states/statesInMemServer.js#L873
   type EnumList = java.lang.String | js.Array[java.lang.String]
   
   /** Special variant of ErrorCallback for methods where Node.js returns an ErrnoException */
@@ -206,6 +208,7 @@ package object ioBroker {
     scala.Unit | js.Promise[scala.Unit]
   ]
   
+  // TODO: implement this
   type Plugin = typings.std.Record[java.lang.String, js.Any]
   
   type ReadDirCallback = js.Function2[

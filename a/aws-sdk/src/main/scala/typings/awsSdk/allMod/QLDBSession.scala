@@ -2,6 +2,7 @@ package typings.awsSdk.allMod
 
 import typings.awsSdk.qldbsessionMod.ClientConfiguration
 import typings.awsSdk.qldbsessionMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

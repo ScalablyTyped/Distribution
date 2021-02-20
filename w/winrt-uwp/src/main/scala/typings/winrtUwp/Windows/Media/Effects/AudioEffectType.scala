@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Effects
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AudioEffectType extends js.Object
+sealed trait AudioEffectType extends StObject
 /** Defines values for audio effect types. */
 @JSGlobal("Windows.Media.Effects.AudioEffectType")
 @js.native
-object AudioEffectType extends js.Object {
+object AudioEffectType extends StObject {
   
   /** An acoustic echo cancellation effect. */
   @js.native

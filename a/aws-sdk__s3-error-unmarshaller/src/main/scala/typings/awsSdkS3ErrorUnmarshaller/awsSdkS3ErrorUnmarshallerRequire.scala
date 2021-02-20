@@ -1,5 +1,6 @@
 package typings.awsSdkS3ErrorUnmarshaller
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("@aws-sdk/s3-error-unmarshaller", JSImport.Namespace)
 @js.native
-object awsSdkS3ErrorUnmarshallerRequire extends js.Object
+object awsSdkS3ErrorUnmarshallerRequire extends StObject

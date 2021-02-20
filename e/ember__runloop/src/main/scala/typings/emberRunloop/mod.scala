@@ -3,24 +3,379 @@ package typings.emberRunloop
 import typings.emberRunloop.privateTypesMod.EmberRunQueues
 import typings.emberRunloop.privateTypesMod.RunMethod
 import typings.emberRunloop.typesMod.EmberRunTimer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/runloop", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@ember/runloop", "begin")
+  @js.native
   val begin: js.Function0[Unit] = js.native
   
+  @JSImport("@ember/runloop", "bind")
+  @js.native
+  def bind[Target, Ret](target: Target, method: RunMethod[Target, Ret], args: js.Any*): js.Function1[/* repeated */ js.Any, Ret] = js.native
+  
+  @JSImport("@ember/runloop", "cancel")
+  @js.native
   val cancel: js.Function1[/* timer */ EmberRunTimer, Boolean] = js.native
   
+  @JSImport("@ember/runloop", "debounce")
+  @js.native
+  def debounce(method: js.Function1[/* repeated */ js.Any, _], wait: Double): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "debounce")
+  @js.native
+  def debounce(method: js.Function1[/* repeated */ js.Any, _], wait: Double, immediate: Boolean): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "debounce")
+  @js.native
+  def debounce[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    arg2: js.Any,
+    arg3: js.Any,
+    arg4: js.Any,
+    arg5: js.Any,
+    wait: Double
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "debounce")
+  @js.native
+  def debounce[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    arg2: js.Any,
+    arg3: js.Any,
+    arg4: js.Any,
+    arg5: js.Any,
+    wait: Double,
+    immediate: Boolean
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "debounce")
+  @js.native
+  def debounce[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    arg2: js.Any,
+    arg3: js.Any,
+    arg4: js.Any,
+    wait: Double
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "debounce")
+  @js.native
+  def debounce[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    arg2: js.Any,
+    arg3: js.Any,
+    arg4: js.Any,
+    wait: Double,
+    immediate: Boolean
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "debounce")
+  @js.native
+  def debounce[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    arg2: js.Any,
+    arg3: js.Any,
+    wait: Double
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "debounce")
+  @js.native
+  def debounce[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    arg2: js.Any,
+    arg3: js.Any,
+    wait: Double,
+    immediate: Boolean
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "debounce")
+  @js.native
+  def debounce[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    arg2: js.Any,
+    wait: Double
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "debounce")
+  @js.native
+  def debounce[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    arg2: js.Any,
+    wait: Double,
+    immediate: Boolean
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "debounce")
+  @js.native
+  def debounce[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, arg1: js.Any, wait: Double): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "debounce")
+  @js.native
+  def debounce[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    wait: Double,
+    immediate: Boolean
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "debounce")
+  @js.native
+  def debounce[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, wait: Double): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "debounce")
+  @js.native
+  def debounce[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, wait: Double, immediate: Boolean): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "debounce")
+  @js.native
+  def debounce[Target](target: Target, method: RunMethod[Target, _], wait: Double): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "debounce")
+  @js.native
+  def debounce[Target](target: Target, method: RunMethod[Target, _], wait: Double, immediate: Boolean): EmberRunTimer = js.native
+  
+  @JSImport("@ember/runloop", "end")
+  @js.native
   val end: js.Function0[Unit] = js.native
   
+  @JSImport("@ember/runloop", "join")
+  @js.native
+  def join[Ret](method: js.Function1[/* repeated */ js.Any, Ret], args: js.Any*): js.UndefOr[Ret] = js.native
+  @JSImport("@ember/runloop", "join")
+  @js.native
+  def join[Target, Ret](target: Target, method: RunMethod[Target, Ret], args: js.Any*): js.UndefOr[Ret] = js.native
+  
+  @JSImport("@ember/runloop", "later")
+  @js.native
+  def later(method: js.Function1[/* repeated */ js.Any, _], wait: Double): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "later")
+  @js.native
+  def later[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    arg2: js.Any,
+    arg3: js.Any,
+    arg4: js.Any,
+    arg5: js.Any,
+    wait: Double
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "later")
+  @js.native
+  def later[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    arg2: js.Any,
+    arg3: js.Any,
+    arg4: js.Any,
+    wait: Double
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "later")
+  @js.native
+  def later[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    arg2: js.Any,
+    arg3: js.Any,
+    wait: Double
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "later")
+  @js.native
+  def later[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    arg2: js.Any,
+    wait: Double
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "later")
+  @js.native
+  def later[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, arg1: js.Any, wait: Double): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "later")
+  @js.native
+  def later[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, wait: Double): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "later")
+  @js.native
+  def later[Target](target: Target, method: RunMethod[Target, _], wait: Double): EmberRunTimer = js.native
+  
+  @JSImport("@ember/runloop", "next")
+  @js.native
+  def next(method: js.Function0[Unit], args: js.Any*): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "next")
+  @js.native
+  def next[Target](target: Target, method: RunMethod[Target, _], args: js.Any*): EmberRunTimer = js.native
+  
+  @JSImport("@ember/runloop", "once")
+  @js.native
+  def once[Target](target: Target, method: RunMethod[Target, _], args: js.Any*): EmberRunTimer = js.native
+  
+  @JSImport("@ember/runloop", "run")
+  @js.native
   val run: RunNamespace = js.native
   
+  @JSImport("@ember/runloop", "schedule")
   @js.native
-  trait RunNamespace extends js.Object {
+  def schedule(queue: EmberRunQueues, method: js.Function1[/* args */ js.Array[_], _], args: js.Any*): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "schedule")
+  @js.native
+  def schedule[Target](queue: EmberRunQueues, target: Target, method: RunMethod[Target, _], args: js.Any*): EmberRunTimer = js.native
+  
+  @JSImport("@ember/runloop", "scheduleOnce")
+  @js.native
+  def scheduleOnce[Target](queue: EmberRunQueues, target: Target, method: RunMethod[Target, _], args: js.Any*): EmberRunTimer = js.native
+  
+  @JSImport("@ember/runloop", "throttle")
+  @js.native
+  def throttle(method: js.Function1[/* repeated */ js.Any, _], spacing: Double): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "throttle")
+  @js.native
+  def throttle(method: js.Function1[/* repeated */ js.Any, _], spacing: Double, immediate: Boolean): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "throttle")
+  @js.native
+  def throttle[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    arg2: js.Any,
+    arg3: js.Any,
+    arg4: js.Any,
+    arg5: js.Any,
+    spacing: Double
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "throttle")
+  @js.native
+  def throttle[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    arg2: js.Any,
+    arg3: js.Any,
+    arg4: js.Any,
+    arg5: js.Any,
+    spacing: Double,
+    immediate: Boolean
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "throttle")
+  @js.native
+  def throttle[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    arg2: js.Any,
+    arg3: js.Any,
+    arg4: js.Any,
+    spacing: Double
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "throttle")
+  @js.native
+  def throttle[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    arg2: js.Any,
+    arg3: js.Any,
+    arg4: js.Any,
+    spacing: Double,
+    immediate: Boolean
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "throttle")
+  @js.native
+  def throttle[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    arg2: js.Any,
+    arg3: js.Any,
+    spacing: Double
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "throttle")
+  @js.native
+  def throttle[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    arg2: js.Any,
+    arg3: js.Any,
+    spacing: Double,
+    immediate: Boolean
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "throttle")
+  @js.native
+  def throttle[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    arg2: js.Any,
+    spacing: Double
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "throttle")
+  @js.native
+  def throttle[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    arg2: js.Any,
+    spacing: Double,
+    immediate: Boolean
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "throttle")
+  @js.native
+  def throttle[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, arg1: js.Any, spacing: Double): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "throttle")
+  @js.native
+  def throttle[Target](
+    target: Target,
+    method: RunMethod[Target, _],
+    arg0: js.Any,
+    arg1: js.Any,
+    spacing: Double,
+    immediate: Boolean
+  ): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "throttle")
+  @js.native
+  def throttle[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, spacing: Double): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "throttle")
+  @js.native
+  def throttle[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, spacing: Double, immediate: Boolean): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "throttle")
+  @js.native
+  def throttle[Target](target: Target, method: RunMethod[Target, _], spacing: Double): EmberRunTimer = js.native
+  @JSImport("@ember/runloop", "throttle")
+  @js.native
+  def throttle[Target](target: Target, method: RunMethod[Target, _], spacing: Double, immediate: Boolean): EmberRunTimer = js.native
+  
+  @js.native
+  trait RunNamespace extends StObject {
     
     /**
       * Runs the passed target and method inside of a RunLoop, ensuring any
@@ -348,291 +703,5 @@ object mod extends js.Object {
     def throttle[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, spacing: Double, immediate: Boolean): EmberRunTimer = js.native
     def throttle[Target](target: Target, method: RunMethod[Target, _], spacing: Double): EmberRunTimer = js.native
     def throttle[Target](target: Target, method: RunMethod[Target, _], spacing: Double, immediate: Boolean): EmberRunTimer = js.native
-  }
-  
-  @js.native
-  object bind extends js.Object {
-    
-    def apply[Target, Ret](target: Target, method: RunMethod[Target, Ret], args: js.Any*): js.Function1[/* repeated */ js.Any, Ret] = js.native
-  }
-  
-  @js.native
-  object debounce extends js.Object {
-    
-    def apply(method: js.Function1[/* repeated */ js.Any, _], wait: Double): EmberRunTimer = js.native
-    def apply(method: js.Function1[/* repeated */ js.Any, _], wait: Double, immediate: Boolean): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      arg2: js.Any,
-      arg3: js.Any,
-      arg4: js.Any,
-      arg5: js.Any,
-      wait: Double
-    ): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      arg2: js.Any,
-      arg3: js.Any,
-      arg4: js.Any,
-      arg5: js.Any,
-      wait: Double,
-      immediate: Boolean
-    ): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      arg2: js.Any,
-      arg3: js.Any,
-      arg4: js.Any,
-      wait: Double
-    ): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      arg2: js.Any,
-      arg3: js.Any,
-      arg4: js.Any,
-      wait: Double,
-      immediate: Boolean
-    ): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      arg2: js.Any,
-      arg3: js.Any,
-      wait: Double
-    ): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      arg2: js.Any,
-      arg3: js.Any,
-      wait: Double,
-      immediate: Boolean
-    ): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      arg2: js.Any,
-      wait: Double
-    ): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      arg2: js.Any,
-      wait: Double,
-      immediate: Boolean
-    ): EmberRunTimer = js.native
-    def apply[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, arg1: js.Any, wait: Double): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      wait: Double,
-      immediate: Boolean
-    ): EmberRunTimer = js.native
-    def apply[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, wait: Double): EmberRunTimer = js.native
-    def apply[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, wait: Double, immediate: Boolean): EmberRunTimer = js.native
-    def apply[Target](target: Target, method: RunMethod[Target, _], wait: Double): EmberRunTimer = js.native
-    def apply[Target](target: Target, method: RunMethod[Target, _], wait: Double, immediate: Boolean): EmberRunTimer = js.native
-  }
-  
-  @js.native
-  object join extends js.Object {
-    
-    def apply[Ret](method: js.Function1[/* repeated */ js.Any, Ret], args: js.Any*): js.UndefOr[Ret] = js.native
-    def apply[Target, Ret](target: Target, method: RunMethod[Target, Ret], args: js.Any*): js.UndefOr[Ret] = js.native
-  }
-  
-  @js.native
-  object later extends js.Object {
-    
-    def apply(method: js.Function1[/* repeated */ js.Any, _], wait: Double): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      arg2: js.Any,
-      arg3: js.Any,
-      arg4: js.Any,
-      arg5: js.Any,
-      wait: Double
-    ): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      arg2: js.Any,
-      arg3: js.Any,
-      arg4: js.Any,
-      wait: Double
-    ): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      arg2: js.Any,
-      arg3: js.Any,
-      wait: Double
-    ): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      arg2: js.Any,
-      wait: Double
-    ): EmberRunTimer = js.native
-    def apply[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, arg1: js.Any, wait: Double): EmberRunTimer = js.native
-    def apply[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, wait: Double): EmberRunTimer = js.native
-    def apply[Target](target: Target, method: RunMethod[Target, _], wait: Double): EmberRunTimer = js.native
-  }
-  
-  @js.native
-  object next extends js.Object {
-    
-    def apply(method: js.Function0[Unit], args: js.Any*): EmberRunTimer = js.native
-    def apply[Target](target: Target, method: RunMethod[Target, _], args: js.Any*): EmberRunTimer = js.native
-  }
-  
-  @js.native
-  object once extends js.Object {
-    
-    def apply[Target](target: Target, method: RunMethod[Target, _], args: js.Any*): EmberRunTimer = js.native
-  }
-  
-  @js.native
-  object schedule extends js.Object {
-    
-    def apply(queue: EmberRunQueues, method: js.Function1[/* args */ js.Array[_], _], args: js.Any*): EmberRunTimer = js.native
-    def apply[Target](queue: EmberRunQueues, target: Target, method: RunMethod[Target, _], args: js.Any*): EmberRunTimer = js.native
-  }
-  
-  @js.native
-  object scheduleOnce extends js.Object {
-    
-    def apply[Target](queue: EmberRunQueues, target: Target, method: RunMethod[Target, _], args: js.Any*): EmberRunTimer = js.native
-  }
-  
-  @js.native
-  object throttle extends js.Object {
-    
-    def apply(method: js.Function1[/* repeated */ js.Any, _], spacing: Double): EmberRunTimer = js.native
-    def apply(method: js.Function1[/* repeated */ js.Any, _], spacing: Double, immediate: Boolean): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      arg2: js.Any,
-      arg3: js.Any,
-      arg4: js.Any,
-      arg5: js.Any,
-      spacing: Double
-    ): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      arg2: js.Any,
-      arg3: js.Any,
-      arg4: js.Any,
-      arg5: js.Any,
-      spacing: Double,
-      immediate: Boolean
-    ): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      arg2: js.Any,
-      arg3: js.Any,
-      arg4: js.Any,
-      spacing: Double
-    ): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      arg2: js.Any,
-      arg3: js.Any,
-      arg4: js.Any,
-      spacing: Double,
-      immediate: Boolean
-    ): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      arg2: js.Any,
-      arg3: js.Any,
-      spacing: Double
-    ): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      arg2: js.Any,
-      arg3: js.Any,
-      spacing: Double,
-      immediate: Boolean
-    ): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      arg2: js.Any,
-      spacing: Double
-    ): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      arg2: js.Any,
-      spacing: Double,
-      immediate: Boolean
-    ): EmberRunTimer = js.native
-    def apply[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, arg1: js.Any, spacing: Double): EmberRunTimer = js.native
-    def apply[Target](
-      target: Target,
-      method: RunMethod[Target, _],
-      arg0: js.Any,
-      arg1: js.Any,
-      spacing: Double,
-      immediate: Boolean
-    ): EmberRunTimer = js.native
-    def apply[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, spacing: Double): EmberRunTimer = js.native
-    def apply[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, spacing: Double, immediate: Boolean): EmberRunTimer = js.native
-    def apply[Target](target: Target, method: RunMethod[Target, _], spacing: Double): EmberRunTimer = js.native
-    def apply[Target](target: Target, method: RunMethod[Target, _], spacing: Double, immediate: Boolean): EmberRunTimer = js.native
   }
 }

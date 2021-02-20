@@ -1,14 +1,16 @@
 package typings.nodal.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodal", "Controller")
 @js.native
-class Controller ()
+class Controller protected ()
   extends typings.fxn.mod.Controller {
+  def this(path: String, method: String, requestHeaders: js.Object, params: js.Object, responder: js.Function) = this()
   
   /**
     * Using API formatting, send an http.ServerResponse indicating there was a Bad Request (400)

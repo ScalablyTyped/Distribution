@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LastCrawlInfo extends js.Object {
+trait LastCrawlInfo extends StObject {
   
   /**
     * If an error occurred, the error information about the last crawl.
@@ -46,54 +47,42 @@ object LastCrawlInfo {
   }
   
   @scala.inline
-  implicit class LastCrawlInfoOps[Self <: LastCrawlInfo] (val x: Self) extends AnyVal {
+  implicit class LastCrawlInfoMutableBuilder[Self <: LastCrawlInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorMessage(value: DescriptionString): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogGroup(value: LogGroup): Self = StObject.set(x, "LogGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: DescriptionString): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    def setLogGroupUndefined: Self = StObject.set(x, "LogGroup", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    def setLogStream(value: LogStream): Self = StObject.set(x, "LogStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogGroup(value: LogGroup): Self = this.set("LogGroup", value.asInstanceOf[js.Any])
+    def setLogStreamUndefined: Self = StObject.set(x, "LogStream", js.undefined)
     
     @scala.inline
-    def deleteLogGroup: Self = this.set("LogGroup", js.undefined)
+    def setMessagePrefix(value: MessagePrefix): Self = StObject.set(x, "MessagePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogStream(value: LogStream): Self = this.set("LogStream", value.asInstanceOf[js.Any])
+    def setMessagePrefixUndefined: Self = StObject.set(x, "MessagePrefix", js.undefined)
     
     @scala.inline
-    def deleteLogStream: Self = this.set("LogStream", js.undefined)
+    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessagePrefix(value: MessagePrefix): Self = this.set("MessagePrefix", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
     @scala.inline
-    def deleteMessagePrefix: Self = this.set("MessagePrefix", js.undefined)
+    def setStatus(value: LastCrawlStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Timestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: LastCrawlStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

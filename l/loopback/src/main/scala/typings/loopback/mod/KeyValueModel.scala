@@ -2,6 +2,7 @@ package typings.loopback.mod
 
 import typings.loopback.anon.Match
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "KeyValueModel")
 @js.native
-class KeyValueModel () extends js.Object
-/* static members */
-@JSImport("loopback", "KeyValueModel")
-@js.native
-object KeyValueModel extends js.Object {
+class KeyValueModel () extends StObject
+object KeyValueModel {
   
   /**
     * Set the TTL (time to live) in ms (milliseconds) for a given key.
@@ -33,6 +31,9 @@ object KeyValueModel extends js.Object {
     * @param {any} options
     * @param {() => void} callback
     */
+  /* static member */
+  @JSImport("loopback", "KeyValueModel.expire")
+  @js.native
   def expire(key: String, ttl: Double, options: js.Any, callback: js.Function0[Unit]): js.Thenable[_] = js.native
   
   /**
@@ -49,13 +50,22 @@ object KeyValueModel extends js.Object {
     * @param {any} options
     * @param {() => void} callback
     */
+  /* static member */
+  @JSImport("loopback", "KeyValueModel.get")
+  @js.native
   def get(key: String): js.Thenable[_] = js.native
+  @JSImport("loopback", "KeyValueModel.get")
+  @js.native
   def get(
     key: String,
     option: js.UndefOr[scala.Nothing],
     callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]
   ): js.Thenable[_] = js.native
+  @JSImport("loopback", "KeyValueModel.get")
+  @js.native
   def get(key: String, option: js.Any): js.Thenable[_] = js.native
+  @JSImport("loopback", "KeyValueModel.get")
+  @js.native
   def get(key: String, option: js.Any, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): js.Thenable[_] = js.native
   
   /**
@@ -97,6 +107,9 @@ object KeyValueModel extends js.Object {
     * @param {any} filter.options
     * @return {any} result AsyncIterator An Object implementing next(cb) -> Promise function that can be used to iterate all keys.
     */
+  /* static member */
+  @JSImport("loopback", "KeyValueModel.iterateKeys")
+  @js.native
   def iterateKeys(filter: Match): js.Any = js.native
   
   /**
@@ -117,6 +130,9 @@ object KeyValueModel extends js.Object {
     * @param {() => void} callback
     * @return {PromiseLike<any>}
     */
+  /* static member */
+  @JSImport("loopback", "KeyValueModel.keys")
+  @js.native
   def keys(filter: Match, callback: js.Function0[Unit]): js.Thenable[_] = js.native
   
   /**
@@ -134,16 +150,29 @@ object KeyValueModel extends js.Object {
     * @param {number|any} Optional settings for the key-value pair. If a Number is provided, it is set as the TTL (time to live) in ms (milliseconds) for the key-value pair.
     * @param {() => void} callback
     */
+  /* static member */
+  @JSImport("loopback", "KeyValueModel.set")
+  @js.native
   def set(key: String, value: js.Any): js.Thenable[_] = js.native
+  @JSImport("loopback", "KeyValueModel.set")
+  @js.native
   def set(
     key: String,
     value: js.Any,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* err */ Error, Unit]
   ): js.Thenable[_] = js.native
+  @JSImport("loopback", "KeyValueModel.set")
+  @js.native
   def set(key: String, value: js.Any, options: js.Any): js.Thenable[_] = js.native
+  @JSImport("loopback", "KeyValueModel.set")
+  @js.native
   def set(key: String, value: js.Any, options: js.Any, callback: js.Function1[/* err */ Error, Unit]): js.Thenable[_] = js.native
+  @JSImport("loopback", "KeyValueModel.set")
+  @js.native
   def set(key: String, value: js.Any, options: Double): js.Thenable[_] = js.native
+  @JSImport("loopback", "KeyValueModel.set")
+  @js.native
   def set(key: String, value: js.Any, options: Double, callback: js.Function1[/* err */ Error, Unit]): js.Thenable[_] = js.native
   
   /**
@@ -158,8 +187,17 @@ object KeyValueModel extends js.Object {
     * @param {any} options
     * @param {() => void} callback
     */
+  /* static member */
+  @JSImport("loopback", "KeyValueModel.ttl")
+  @js.native
   def ttl(key: String): js.Thenable[_] = js.native
+  @JSImport("loopback", "KeyValueModel.ttl")
+  @js.native
   def ttl(key: String, options: js.UndefOr[scala.Nothing], cb: js.Function1[/* error */ Error, Unit]): js.Thenable[_] = js.native
+  @JSImport("loopback", "KeyValueModel.ttl")
+  @js.native
   def ttl(key: String, options: js.Any): js.Thenable[_] = js.native
+  @JSImport("loopback", "KeyValueModel.ttl")
+  @js.native
   def ttl(key: String, options: js.Any, cb: js.Function1[/* error */ Error, Unit]): js.Thenable[_] = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeCostCategoryDefinitionRequest extends js.Object {
+trait DescribeCostCategoryDefinitionRequest extends StObject {
   
   /**
     *  The unique identifier for your Cost Category. 
@@ -26,27 +27,15 @@ object DescribeCostCategoryDefinitionRequest {
   }
   
   @scala.inline
-  implicit class DescribeCostCategoryDefinitionRequestOps[Self <: DescribeCostCategoryDefinitionRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeCostCategoryDefinitionRequestMutableBuilder[Self <: DescribeCostCategoryDefinitionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCostCategoryArn(value: Arn): Self = StObject.set(x, "CostCategoryArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEffectiveOn(value: ZonedDateTime): Self = StObject.set(x, "EffectiveOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCostCategoryArn(value: Arn): Self = this.set("CostCategoryArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEffectiveOn(value: ZonedDateTime): Self = this.set("EffectiveOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEffectiveOn: Self = this.set("EffectiveOn", js.undefined)
+    def setEffectiveOnUndefined: Self = StObject.set(x, "EffectiveOn", js.undefined)
   }
 }

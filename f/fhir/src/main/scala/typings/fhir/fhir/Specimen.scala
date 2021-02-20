@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -90,117 +91,105 @@ object Specimen {
   }
   
   @scala.inline
-  implicit class SpecimenOps[Self <: Specimen] (val x: Self) extends AnyVal {
+  implicit class SpecimenMutableBuilder[Self <: Specimen] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessionIdentifier(value: Identifier): Self = StObject.set(x, "accessionIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessionIdentifierUndefined: Self = StObject.set(x, "accessionIdentifier", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollection(value: SpecimenCollection): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: Reference): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
     
     @scala.inline
-    def set_receivedTime(value: Element): Self = this.set("_receivedTime", value.asInstanceOf[js.Any])
+    def setContainer(value: js.Array[SpecimenContainer]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_receivedTime: Self = this.set("_receivedTime", js.undefined)
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setContainerVarargs(value: SpecimenContainer*): Self = StObject.set(x, "container", js.Array(value :_*))
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessionIdentifier(value: Identifier): Self = this.set("accessionIdentifier", value.asInstanceOf[js.Any])
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def deleteAccessionIdentifier: Self = this.set("accessionIdentifier", js.undefined)
+    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
     @scala.inline
-    def setCollection(value: SpecimenCollection): Self = this.set("collection", value.asInstanceOf[js.Any])
+    def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCollection: Self = this.set("collection", js.undefined)
+    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
     @scala.inline
-    def setContainerVarargs(value: SpecimenContainer*): Self = this.set("container", js.Array(value :_*))
+    def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value :_*))
     
     @scala.inline
-    def setContainer(value: js.Array[SpecimenContainer]): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setParent(value: js.Array[Reference]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    def setParentVarargs(value: Reference*): Self = StObject.set(x, "parent", js.Array(value :_*))
     
     @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setProcessing(value: js.Array[SpecimenProcessing]): Self = StObject.set(x, "processing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setProcessingUndefined: Self = StObject.set(x, "processing", js.undefined)
     
     @scala.inline
-    def setNoteVarargs(value: Annotation*): Self = this.set("note", js.Array(value :_*))
+    def setProcessingVarargs(value: SpecimenProcessing*): Self = StObject.set(x, "processing", js.Array(value :_*))
     
     @scala.inline
-    def setNote(value: js.Array[Annotation]): Self = this.set("note", value.asInstanceOf[js.Any])
+    def setReceivedTime(value: dateTime): Self = StObject.set(x, "receivedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNote: Self = this.set("note", js.undefined)
+    def setReceivedTimeUndefined: Self = StObject.set(x, "receivedTime", js.undefined)
     
     @scala.inline
-    def setParentVarargs(value: Reference*): Self = this.set("parent", js.Array(value :_*))
+    def setRequest(value: js.Array[Reference]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Array[Reference]): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setRequestVarargs(value: Reference*): Self = StObject.set(x, "request", js.Array(value :_*))
     
     @scala.inline
-    def setProcessingVarargs(value: SpecimenProcessing*): Self = this.set("processing", js.Array(value :_*))
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessing(value: js.Array[SpecimenProcessing]): Self = this.set("processing", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteProcessing: Self = this.set("processing", js.undefined)
+    def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceivedTime(value: dateTime): Self = this.set("receivedTime", value.asInstanceOf[js.Any])
+    def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReceivedTime: Self = this.set("receivedTime", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setRequestVarargs(value: Reference*): Self = this.set("request", js.Array(value :_*))
+    def set_receivedTime(value: Element): Self = StObject.set(x, "_receivedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest(value: js.Array[Reference]): Self = this.set("request", value.asInstanceOf[js.Any])
+    def set_receivedTimeUndefined: Self = StObject.set(x, "_receivedTime", js.undefined)
     
     @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setType(value: CodeableConcept): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

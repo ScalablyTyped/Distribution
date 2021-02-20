@@ -11,12 +11,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.polygon
 import typings.arcgisJsApi.arcgisJsApiStrings.polyline
 import typings.arcgisJsApi.arcgisJsApiStrings.rectangle
 import typings.arcgisJsApi.arcgisJsApiStrings.start
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchViewModelCreateEvent extends js.Object {
+trait SketchViewModelCreateEvent extends StObject {
   
   var graphic: Graphic = js.native
   
@@ -44,33 +45,21 @@ object SketchViewModelCreateEvent {
   }
   
   @scala.inline
-  implicit class SketchViewModelCreateEventOps[Self <: SketchViewModelCreateEvent] (val x: Self) extends AnyVal {
+  implicit class SketchViewModelCreateEventMutableBuilder[Self <: SketchViewModelCreateEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGraphic(value: Graphic): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setState(value: start | active | complete | cancel): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTool(value: point | multipoint | polyline | polygon | rectangle | circle): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphic(value: Graphic): Self = this.set("graphic", value.asInstanceOf[js.Any])
+    def setToolEventInfo(value: CreateToolEventInfo): Self = StObject.set(x, "toolEventInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: start | active | complete | cancel): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTool(value: point | multipoint | polyline | polygon | rectangle | circle): Self = this.set("tool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToolEventInfo(value: CreateToolEventInfo): Self = this.set("toolEventInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: create): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: create): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudbilling.gapi.client.cloudbilling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Category extends js.Object {
+trait Category extends StObject {
   
   /** The type of product the SKU refers to. Example: "Compute", "Storage", "Network", "ApplicationServices" etc. */
   var resourceFamily: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object Category {
   }
   
   @scala.inline
-  implicit class CategoryOps[Self <: Category] (val x: Self) extends AnyVal {
+  implicit class CategoryMutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceFamily(value: String): Self = StObject.set(x, "resourceFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceFamilyUndefined: Self = StObject.set(x, "resourceFamily", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceGroup(value: String): Self = StObject.set(x, "resourceGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceFamily(value: String): Self = this.set("resourceFamily", value.asInstanceOf[js.Any])
+    def setResourceGroupUndefined: Self = StObject.set(x, "resourceGroup", js.undefined)
     
     @scala.inline
-    def deleteResourceFamily: Self = this.set("resourceFamily", js.undefined)
+    def setServiceDisplayName(value: String): Self = StObject.set(x, "serviceDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceGroup(value: String): Self = this.set("resourceGroup", value.asInstanceOf[js.Any])
+    def setServiceDisplayNameUndefined: Self = StObject.set(x, "serviceDisplayName", js.undefined)
     
     @scala.inline
-    def deleteResourceGroup: Self = this.set("resourceGroup", js.undefined)
+    def setUsageType(value: String): Self = StObject.set(x, "usageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceDisplayName(value: String): Self = this.set("serviceDisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceDisplayName: Self = this.set("serviceDisplayName", js.undefined)
-    
-    @scala.inline
-    def setUsageType(value: String): Self = this.set("usageType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsageType: Self = this.set("usageType", js.undefined)
+    def setUsageTypeUndefined: Self = StObject.set(x, "usageType", js.undefined)
   }
 }

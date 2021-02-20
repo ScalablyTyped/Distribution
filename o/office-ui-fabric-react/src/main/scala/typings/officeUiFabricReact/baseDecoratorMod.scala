@@ -1,14 +1,14 @@
 package typings.officeUiFabricReact
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/utilities/decorators/BaseDecorator", JSImport.Namespace)
-@js.native
-object baseDecoratorMod extends js.Object {
+object baseDecoratorMod {
   
+  @JSImport("office-ui-fabric-react/lib/utilities/decorators/BaseDecorator", "BaseDecorator")
   @js.native
   class BaseDecorator[TProps, TState] protected ()
     extends Component[TProps, TState, js.Any] {

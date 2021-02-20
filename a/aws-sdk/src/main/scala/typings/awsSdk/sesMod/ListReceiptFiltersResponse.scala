@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListReceiptFiltersResponse extends js.Object {
+trait ListReceiptFiltersResponse extends StObject {
   
   /**
     * A list of IP address filter data structures, which each consist of a name, an IP address range, and whether to allow or block mail from it.
@@ -21,27 +22,15 @@ object ListReceiptFiltersResponse {
   }
   
   @scala.inline
-  implicit class ListReceiptFiltersResponseOps[Self <: ListReceiptFiltersResponse] (val x: Self) extends AnyVal {
+  implicit class ListReceiptFiltersResponseMutableBuilder[Self <: ListReceiptFiltersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilters(value: ReceiptFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFiltersVarargs(value: ReceiptFilter*): Self = this.set("Filters", js.Array(value :_*))
-    
-    @scala.inline
-    def setFilters(value: ReceiptFilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilters: Self = this.set("Filters", js.undefined)
+    def setFiltersVarargs(value: ReceiptFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
   }
 }

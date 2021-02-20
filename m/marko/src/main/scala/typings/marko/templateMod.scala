@@ -6,14 +6,14 @@ import typings.marko.asyncVDOMBuilderMod.AsyncVDOMBuilder
 import typings.marko.renderResultMod.RenderResult
 import typings.node.NodeJS.WritableStream
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("marko/src/runtime/html/Template", JSImport.Namespace)
-@js.native
-object templateMod extends js.Object {
+object templateMod {
   
+  @JSImport("marko/src/runtime/html/Template", "Readable")
   @js.native
   class Readable protected ()
     extends typings.node.streamMod.Readable {
@@ -31,7 +31,7 @@ object templateMod extends js.Object {
   }
   
   @js.native
-  trait Renderable extends js.Object {
+  trait Renderable extends StObject {
     
     var createOut: js.Any = js.native
     

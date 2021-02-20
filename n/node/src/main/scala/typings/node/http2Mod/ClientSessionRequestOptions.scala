@@ -1,11 +1,12 @@
 package typings.node.http2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientSessionRequestOptions extends js.Object {
+trait ClientSessionRequestOptions extends StObject {
   
   var endStream: js.UndefOr[Boolean] = js.native
   
@@ -26,48 +27,36 @@ object ClientSessionRequestOptions {
   }
   
   @scala.inline
-  implicit class ClientSessionRequestOptionsOps[Self <: ClientSessionRequestOptions] (val x: Self) extends AnyVal {
+  implicit class ClientSessionRequestOptionsMutableBuilder[Self <: ClientSessionRequestOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndStream(value: Boolean): Self = StObject.set(x, "endStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndStreamUndefined: Self = StObject.set(x, "endStream", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndStream(value: Boolean): Self = this.set("endStream", value.asInstanceOf[js.Any])
+    def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
     
     @scala.inline
-    def deleteEndStream: Self = this.set("endStream", js.undefined)
+    def setParent(value: Double): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusive(value: Boolean): Self = this.set("exclusive", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteExclusive: Self = this.set("exclusive", js.undefined)
+    def setWaitForTrailers(value: Boolean): Self = StObject.set(x, "waitForTrailers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: Double): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setWaitForTrailersUndefined: Self = StObject.set(x, "waitForTrailers", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWaitForTrailers(value: Boolean): Self = this.set("waitForTrailers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitForTrailers: Self = this.set("waitForTrailers", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

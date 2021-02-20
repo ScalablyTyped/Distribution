@@ -1,12 +1,13 @@
 package typings.lodash.fpMod
 
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashTap extends js.Object {
+trait LodashTap extends StObject {
   
   def apply[T](interceptor: js.Function1[/* value */ T, Unit]): LodashTap1x1[T] = js.native
   def apply[T](interceptor: js.Function1[/* value */ T, Unit], value: T): T = js.native

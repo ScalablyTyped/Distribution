@@ -1,5 +1,6 @@
 package typings.typescriptServices.global.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,23 +12,28 @@ class PullSignatureSymbol protected ()
   def this(kind: typings.typescriptServices.TypeScript.PullElementKind) = this()
   def this(kind: typings.typescriptServices.TypeScript.PullElementKind, _isDefinition: Boolean) = this()
 }
-/* static members */
-@JSGlobal("TypeScript.PullSignatureSymbol")
-@js.native
-object PullSignatureSymbol extends js.Object {
+object PullSignatureSymbol {
   
+  /* static member */
+  @JSGlobal("TypeScript.PullSignatureSymbol.getSignatureTypeMemberName")
+  @js.native
   def getSignatureTypeMemberName(
     candidateSignature: typings.typescriptServices.TypeScript.PullSignatureSymbol,
     signatures: js.Array[typings.typescriptServices.TypeScript.PullSignatureSymbol],
     scopeSymbol: typings.typescriptServices.TypeScript.PullSymbol
   ): typings.typescriptServices.TypeScript.MemberNameArray = js.native
   
+  /* static member */
+  @JSGlobal("TypeScript.PullSignatureSymbol.getSignaturesTypeNameEx")
+  @js.native
   def getSignaturesTypeNameEx(
     signatures: js.Array[typings.typescriptServices.TypeScript.PullSignatureSymbol],
     prefix: String,
     shortform: Boolean,
     brackets: Boolean
   ): js.Array[typings.typescriptServices.TypeScript.MemberName] = js.native
+  @JSGlobal("TypeScript.PullSignatureSymbol.getSignaturesTypeNameEx")
+  @js.native
   def getSignaturesTypeNameEx(
     signatures: js.Array[typings.typescriptServices.TypeScript.PullSignatureSymbol],
     prefix: String,
@@ -37,6 +43,8 @@ object PullSignatureSymbol extends js.Object {
     getPrettyTypeName: js.UndefOr[scala.Nothing],
     candidateSignature: typings.typescriptServices.TypeScript.PullSignatureSymbol
   ): js.Array[typings.typescriptServices.TypeScript.MemberName] = js.native
+  @JSGlobal("TypeScript.PullSignatureSymbol.getSignaturesTypeNameEx")
+  @js.native
   def getSignaturesTypeNameEx(
     signatures: js.Array[typings.typescriptServices.TypeScript.PullSignatureSymbol],
     prefix: String,
@@ -45,6 +53,8 @@ object PullSignatureSymbol extends js.Object {
     scopeSymbol: js.UndefOr[scala.Nothing],
     getPrettyTypeName: Boolean
   ): js.Array[typings.typescriptServices.TypeScript.MemberName] = js.native
+  @JSGlobal("TypeScript.PullSignatureSymbol.getSignaturesTypeNameEx")
+  @js.native
   def getSignaturesTypeNameEx(
     signatures: js.Array[typings.typescriptServices.TypeScript.PullSignatureSymbol],
     prefix: String,
@@ -54,6 +64,8 @@ object PullSignatureSymbol extends js.Object {
     getPrettyTypeName: Boolean,
     candidateSignature: typings.typescriptServices.TypeScript.PullSignatureSymbol
   ): js.Array[typings.typescriptServices.TypeScript.MemberName] = js.native
+  @JSGlobal("TypeScript.PullSignatureSymbol.getSignaturesTypeNameEx")
+  @js.native
   def getSignaturesTypeNameEx(
     signatures: js.Array[typings.typescriptServices.TypeScript.PullSignatureSymbol],
     prefix: String,
@@ -61,6 +73,8 @@ object PullSignatureSymbol extends js.Object {
     brackets: Boolean,
     scopeSymbol: typings.typescriptServices.TypeScript.PullSymbol
   ): js.Array[typings.typescriptServices.TypeScript.MemberName] = js.native
+  @JSGlobal("TypeScript.PullSignatureSymbol.getSignaturesTypeNameEx")
+  @js.native
   def getSignaturesTypeNameEx(
     signatures: js.Array[typings.typescriptServices.TypeScript.PullSignatureSymbol],
     prefix: String,
@@ -70,6 +84,8 @@ object PullSignatureSymbol extends js.Object {
     getPrettyTypeName: js.UndefOr[scala.Nothing],
     candidateSignature: typings.typescriptServices.TypeScript.PullSignatureSymbol
   ): js.Array[typings.typescriptServices.TypeScript.MemberName] = js.native
+  @JSGlobal("TypeScript.PullSignatureSymbol.getSignaturesTypeNameEx")
+  @js.native
   def getSignaturesTypeNameEx(
     signatures: js.Array[typings.typescriptServices.TypeScript.PullSignatureSymbol],
     prefix: String,
@@ -78,6 +94,8 @@ object PullSignatureSymbol extends js.Object {
     scopeSymbol: typings.typescriptServices.TypeScript.PullSymbol,
     getPrettyTypeName: Boolean
   ): js.Array[typings.typescriptServices.TypeScript.MemberName] = js.native
+  @JSGlobal("TypeScript.PullSignatureSymbol.getSignaturesTypeNameEx")
+  @js.native
   def getSignaturesTypeNameEx(
     signatures: js.Array[typings.typescriptServices.TypeScript.PullSignatureSymbol],
     prefix: String,

@@ -3,6 +3,7 @@ package typings.pgPromise.mod
 import typings.pgPromise.pgSubsetMod.IClient
 import typings.pgPromise.pgSubsetMod.IConnectionParameters
 import typings.pgPromise.pgSubsetMod.IPool
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

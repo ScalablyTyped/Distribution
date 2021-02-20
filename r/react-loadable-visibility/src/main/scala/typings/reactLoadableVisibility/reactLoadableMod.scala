@@ -1,15 +1,23 @@
 package typings.reactLoadableVisibility
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.reactLoadable.LoadableExport.Loadable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-loadable-visibility/react-loadable", JSImport.Namespace)
-@js.native
-object reactLoadableMod extends js.Object {
+object reactLoadableMod {
   
-  @js.native
-  object default extends TopLevel[Loadable]
+  object default extends Shortcut {
+    
+    @JSImport("react-loadable-visibility/react-loadable", JSImport.Default)
+    @js.native
+    val ^ : Loadable = js.native
+    
+    type _To = Loadable
+    
+    /* This means you don't have to write `^`, but can instead just say `default.foo` */
+    override def _to: Loadable = ^
+  }
 }

@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,24 +39,12 @@ object SizeSchemeForPolygonBackground {
   }
   
   @scala.inline
-  implicit class SizeSchemeForPolygonBackgroundOps[Self <: SizeSchemeForPolygonBackground] (val x: Self) extends AnyVal {
+  implicit class SizeSchemeForPolygonBackgroundMutableBuilder[Self <: SizeSchemeForPolygonBackground] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColor(value: Color_): Self = this.set("color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutline(value: SizeSchemeForPolygonBackgroundOutline): Self = this.set("outline", value.asInstanceOf[js.Any])
+    def setOutline(value: SizeSchemeForPolygonBackgroundOutline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
   }
 }

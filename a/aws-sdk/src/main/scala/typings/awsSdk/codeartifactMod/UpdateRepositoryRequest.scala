@@ -1,11 +1,12 @@
 package typings.awsSdk.codeartifactMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateRepositoryRequest extends js.Object {
+trait UpdateRepositoryRequest extends StObject {
   
   /**
     *  An updated repository description. 
@@ -41,45 +42,33 @@ object UpdateRepositoryRequest {
   }
   
   @scala.inline
-  implicit class UpdateRepositoryRequestOps[Self <: UpdateRepositoryRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateRepositoryRequestMutableBuilder[Self <: UpdateRepositoryRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: DomainName): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepository(value: RepositoryName): Self = this.set("repository", value.asInstanceOf[js.Any])
+    def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setRepository(value: RepositoryName): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setUpstreams(value: UpstreamRepositoryList): Self = StObject.set(x, "upstreams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainOwner(value: AccountId): Self = this.set("domainOwner", value.asInstanceOf[js.Any])
+    def setUpstreamsUndefined: Self = StObject.set(x, "upstreams", js.undefined)
     
     @scala.inline
-    def deleteDomainOwner: Self = this.set("domainOwner", js.undefined)
-    
-    @scala.inline
-    def setUpstreamsVarargs(value: UpstreamRepository*): Self = this.set("upstreams", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpstreams(value: UpstreamRepositoryList): Self = this.set("upstreams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpstreams: Self = this.set("upstreams", js.undefined)
+    def setUpstreamsVarargs(value: UpstreamRepository*): Self = StObject.set(x, "upstreams", js.Array(value :_*))
   }
 }

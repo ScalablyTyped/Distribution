@@ -5,12 +5,13 @@ import typings.polished.polishedNumbers.`2`
 import typings.polished.polishedNumbers.`5`
 import typings.polished.polishedStrings.^
 import typings.polished.polishedStrings.infix
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait F extends js.Object {
+trait F extends StObject {
   
   var argCount: `2` = js.native
   
@@ -40,38 +41,26 @@ object F {
   }
   
   @scala.inline
-  implicit class FOps[Self <: F] (val x: Self) extends AnyVal {
+  implicit class FMutableBuilder[Self <: F] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArgCount(value: `2`): Self = this.set("argCount", value.asInstanceOf[js.Any])
+    def setArgCount(value: `2`): Self = StObject.set(x, "argCount", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setF(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify power */ js.Any
-    ): Self = this.set("f", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotation(value: infix): Self = this.set("notation", value.asInstanceOf[js.Any])
+    def setNotation(value: infix): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecedence(value: `5`): Self = this.set("precedence", value.asInstanceOf[js.Any])
+    def setPrecedence(value: `5`): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightToLeft(value: `1`): Self = this.set("rightToLeft", value.asInstanceOf[js.Any])
+    def setRightToLeft(value: `1`): Self = StObject.set(x, "rightToLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbol(value: ^): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    def setSymbol(value: ^): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

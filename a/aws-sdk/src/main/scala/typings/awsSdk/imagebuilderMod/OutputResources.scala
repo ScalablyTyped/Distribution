@@ -1,11 +1,12 @@
 package typings.awsSdk.imagebuilderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutputResources extends js.Object {
+trait OutputResources extends StObject {
   
   /**
     * The EC2 AMIs created by this image. 
@@ -21,27 +22,15 @@ object OutputResources {
   }
   
   @scala.inline
-  implicit class OutputResourcesOps[Self <: OutputResources] (val x: Self) extends AnyVal {
+  implicit class OutputResourcesMutableBuilder[Self <: OutputResources] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmis(value: AmiList): Self = StObject.set(x, "amis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmisUndefined: Self = StObject.set(x, "amis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAmisVarargs(value: Ami*): Self = this.set("amis", js.Array(value :_*))
-    
-    @scala.inline
-    def setAmis(value: AmiList): Self = this.set("amis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAmis: Self = this.set("amis", js.undefined)
+    def setAmisVarargs(value: Ami*): Self = StObject.set(x, "amis", js.Array(value :_*))
   }
 }

@@ -2,6 +2,7 @@ package typings.winrt.Windows.Networking.Sockets
 
 import typings.winrt.Windows.ApplicationModel.Background.IBackgroundTask
 import typings.winrt.Windows.ApplicationModel.Background.IBackgroundTaskInstance
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

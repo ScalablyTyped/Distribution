@@ -1,6 +1,7 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * WorkerMessage provides information to the backend about a worker.
   */
 @js.native
-trait SchemaWorkerMessage extends js.Object {
+trait SchemaWorkerMessage extends StObject {
   
   /**
     * Labels are used to group WorkerMessages. For example, a worker_message
@@ -62,60 +63,48 @@ object SchemaWorkerMessage {
   }
   
   @scala.inline
-  implicit class SchemaWorkerMessageOps[Self <: SchemaWorkerMessage] (val x: Self) extends AnyVal {
+  implicit class SchemaWorkerMessageMutableBuilder[Self <: SchemaWorkerMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setWorkerHealthReport(value: SchemaWorkerHealthReport): Self = StObject.set(x, "workerHealthReport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime(value: String): Self = this.set("time", value.asInstanceOf[js.Any])
+    def setWorkerHealthReportUndefined: Self = StObject.set(x, "workerHealthReport", js.undefined)
     
     @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
+    def setWorkerLifecycleEvent(value: SchemaWorkerLifecycleEvent): Self = StObject.set(x, "workerLifecycleEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkerHealthReport(value: SchemaWorkerHealthReport): Self = this.set("workerHealthReport", value.asInstanceOf[js.Any])
+    def setWorkerLifecycleEventUndefined: Self = StObject.set(x, "workerLifecycleEvent", js.undefined)
     
     @scala.inline
-    def deleteWorkerHealthReport: Self = this.set("workerHealthReport", js.undefined)
+    def setWorkerMessageCode(value: SchemaWorkerMessageCode): Self = StObject.set(x, "workerMessageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkerLifecycleEvent(value: SchemaWorkerLifecycleEvent): Self = this.set("workerLifecycleEvent", value.asInstanceOf[js.Any])
+    def setWorkerMessageCodeUndefined: Self = StObject.set(x, "workerMessageCode", js.undefined)
     
     @scala.inline
-    def deleteWorkerLifecycleEvent: Self = this.set("workerLifecycleEvent", js.undefined)
+    def setWorkerMetrics(value: SchemaResourceUtilizationReport): Self = StObject.set(x, "workerMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkerMessageCode(value: SchemaWorkerMessageCode): Self = this.set("workerMessageCode", value.asInstanceOf[js.Any])
+    def setWorkerMetricsUndefined: Self = StObject.set(x, "workerMetrics", js.undefined)
     
     @scala.inline
-    def deleteWorkerMessageCode: Self = this.set("workerMessageCode", js.undefined)
+    def setWorkerShutdownNotice(value: SchemaWorkerShutdownNotice): Self = StObject.set(x, "workerShutdownNotice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkerMetrics(value: SchemaResourceUtilizationReport): Self = this.set("workerMetrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerMetrics: Self = this.set("workerMetrics", js.undefined)
-    
-    @scala.inline
-    def setWorkerShutdownNotice(value: SchemaWorkerShutdownNotice): Self = this.set("workerShutdownNotice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerShutdownNotice: Self = this.set("workerShutdownNotice", js.undefined)
+    def setWorkerShutdownNoticeUndefined: Self = StObject.set(x, "workerShutdownNotice", js.undefined)
   }
 }

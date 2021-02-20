@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaskPosition extends js.Object {
+trait MaskPosition extends StObject {
   
   var point: String = js.native
   
@@ -24,30 +25,18 @@ object MaskPosition {
   }
   
   @scala.inline
-  implicit class MaskPositionOps[Self <: MaskPosition] (val x: Self) extends AnyVal {
+  implicit class MaskPositionMutableBuilder[Self <: MaskPosition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPoint(value: String): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setX_shift(value: Double): Self = StObject.set(x, "x_shift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoint(value: String): Self = this.set("point", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX_shift(value: Double): Self = this.set("x_shift", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY_shift(value: Double): Self = this.set("y_shift", value.asInstanceOf[js.Any])
+    def setY_shift(value: Double): Self = StObject.set(x, "y_shift", value.asInstanceOf[js.Any])
   }
 }

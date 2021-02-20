@@ -4,12 +4,13 @@ import typings.typeorm.mysqlConnectionCredentialsOptionsMod.MysqlConnectionCrede
 import typings.typeorm.typeormStrings.ORDER
 import typings.typeorm.typeormStrings.RANDOM
 import typings.typeorm.typeormStrings.RR
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanRetry extends js.Object {
+trait CanRetry extends StObject {
   
   /**
     * If true, PoolCluster will attempt to reconnect when connection fails. (Default: true)
@@ -55,51 +56,39 @@ object CanRetry {
   }
   
   @scala.inline
-  implicit class CanRetryOps[Self <: CanRetry] (val x: Self) extends AnyVal {
+  implicit class CanRetryMutableBuilder[Self <: CanRetry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanRetry(value: Boolean): Self = StObject.set(x, "canRetry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanRetryUndefined: Self = StObject.set(x, "canRetry", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaster(value: MysqlConnectionCredentialsOptions): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaster(value: MysqlConnectionCredentialsOptions): Self = this.set("master", value.asInstanceOf[js.Any])
+    def setRemoveNodeErrorCount(value: Double): Self = StObject.set(x, "removeNodeErrorCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlavesVarargs(value: MysqlConnectionCredentialsOptions*): Self = this.set("slaves", js.Array(value :_*))
+    def setRemoveNodeErrorCountUndefined: Self = StObject.set(x, "removeNodeErrorCount", js.undefined)
     
     @scala.inline
-    def setSlaves(value: js.Array[MysqlConnectionCredentialsOptions]): Self = this.set("slaves", value.asInstanceOf[js.Any])
+    def setRestoreNodeTimeout(value: Double): Self = StObject.set(x, "restoreNodeTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanRetry(value: Boolean): Self = this.set("canRetry", value.asInstanceOf[js.Any])
+    def setRestoreNodeTimeoutUndefined: Self = StObject.set(x, "restoreNodeTimeout", js.undefined)
     
     @scala.inline
-    def deleteCanRetry: Self = this.set("canRetry", js.undefined)
+    def setSelector(value: RR | RANDOM | ORDER): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveNodeErrorCount(value: Double): Self = this.set("removeNodeErrorCount", value.asInstanceOf[js.Any])
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
     @scala.inline
-    def deleteRemoveNodeErrorCount: Self = this.set("removeNodeErrorCount", js.undefined)
+    def setSlaves(value: js.Array[MysqlConnectionCredentialsOptions]): Self = StObject.set(x, "slaves", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestoreNodeTimeout(value: Double): Self = this.set("restoreNodeTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestoreNodeTimeout: Self = this.set("restoreNodeTimeout", js.undefined)
-    
-    @scala.inline
-    def setSelector(value: RR | RANDOM | ORDER): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setSlavesVarargs(value: MysqlConnectionCredentialsOptions*): Self = StObject.set(x, "slaves", js.Array(value :_*))
   }
 }

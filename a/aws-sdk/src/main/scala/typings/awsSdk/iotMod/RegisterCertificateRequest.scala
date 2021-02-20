@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterCertificateRequest extends js.Object {
+trait RegisterCertificateRequest extends StObject {
   
   /**
     * The CA certificate used to sign the device certificate being registered.
@@ -36,39 +37,27 @@ object RegisterCertificateRequest {
   }
   
   @scala.inline
-  implicit class RegisterCertificateRequestOps[Self <: RegisterCertificateRequest] (val x: Self) extends AnyVal {
+  implicit class RegisterCertificateRequestMutableBuilder[Self <: RegisterCertificateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaCertificatePem(value: CertificatePem): Self = StObject.set(x, "caCertificatePem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaCertificatePemUndefined: Self = StObject.set(x, "caCertificatePem", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificatePem(value: CertificatePem): Self = StObject.set(x, "certificatePem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificatePem(value: CertificatePem): Self = this.set("certificatePem", value.asInstanceOf[js.Any])
+    def setSetAsActive(value: SetAsActiveFlag): Self = StObject.set(x, "setAsActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaCertificatePem(value: CertificatePem): Self = this.set("caCertificatePem", value.asInstanceOf[js.Any])
+    def setSetAsActiveUndefined: Self = StObject.set(x, "setAsActive", js.undefined)
     
     @scala.inline
-    def deleteCaCertificatePem: Self = this.set("caCertificatePem", js.undefined)
+    def setStatus(value: CertificateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetAsActive(value: SetAsActiveFlag): Self = this.set("setAsActive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSetAsActive: Self = this.set("setAsActive", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: CertificateStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

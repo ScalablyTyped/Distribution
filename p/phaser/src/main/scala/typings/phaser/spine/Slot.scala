@@ -1,11 +1,12 @@
 package typings.phaser.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Slot extends js.Object {
+trait Slot extends StObject {
   
   var attachment: js.Any = js.native
   
@@ -53,57 +54,45 @@ object Slot {
   }
   
   @scala.inline
-  implicit class SlotOps[Self <: Slot] (val x: Self) extends AnyVal {
+  implicit class SlotMutableBuilder[Self <: Slot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachment(value: js.Any): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentTime(value: js.Any): Self = StObject.set(x, "attachmentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBone(value: Bone): Self = StObject.set(x, "bone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachment(value: js.Any): Self = this.set("attachment", value.asInstanceOf[js.Any])
+    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentTime(value: js.Any): Self = this.set("attachmentTime", value.asInstanceOf[js.Any])
+    def setDarkColor(value: Color): Self = StObject.set(x, "darkColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBone(value: Bone): Self = this.set("bone", value.asInstanceOf[js.Any])
+    def setData(value: SlotData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDeform(value: js.Array[Double]): Self = StObject.set(x, "deform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDarkColor(value: Color): Self = this.set("darkColor", value.asInstanceOf[js.Any])
+    def setDeformVarargs(value: Double*): Self = StObject.set(x, "deform", js.Array(value :_*))
     
     @scala.inline
-    def setData(value: SlotData): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setGetAttachment(value: () => Attachment): Self = StObject.set(x, "getAttachment", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeformVarargs(value: Double*): Self = this.set("deform", js.Array(value :_*))
+    def setGetAttachmentTime(value: () => Double): Self = StObject.set(x, "getAttachmentTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeform(value: js.Array[Double]): Self = this.set("deform", value.asInstanceOf[js.Any])
+    def setSetAttachment(value: Attachment => Unit): Self = StObject.set(x, "setAttachment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAttachment(value: () => Attachment): Self = this.set("getAttachment", js.Any.fromFunction0(value))
+    def setSetAttachmentTime(value: Double => Unit): Self = StObject.set(x, "setAttachmentTime", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAttachmentTime(value: () => Double): Self = this.set("getAttachmentTime", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetAttachment(value: Attachment => Unit): Self = this.set("setAttachment", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetAttachmentTime(value: Double => Unit): Self = this.set("setAttachmentTime", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetToSetupPose(value: () => Unit): Self = this.set("setToSetupPose", js.Any.fromFunction0(value))
+    def setSetToSetupPose(value: () => Unit): Self = StObject.set(x, "setToSetupPose", js.Any.fromFunction0(value))
   }
 }

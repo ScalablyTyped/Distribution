@@ -1,11 +1,12 @@
 package typings.awsSdk.docdbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DBClusterParameterGroup extends js.Object {
+trait DBClusterParameterGroup extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the cluster parameter group.
@@ -36,42 +37,30 @@ object DBClusterParameterGroup {
   }
   
   @scala.inline
-  implicit class DBClusterParameterGroupOps[Self <: DBClusterParameterGroup] (val x: Self) extends AnyVal {
+  implicit class DBClusterParameterGroupMutableBuilder[Self <: DBClusterParameterGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDBClusterParameterGroupArn(value: String): Self = StObject.set(x, "DBClusterParameterGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDBClusterParameterGroupArnUndefined: Self = StObject.set(x, "DBClusterParameterGroupArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDBClusterParameterGroupName(value: String): Self = StObject.set(x, "DBClusterParameterGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBClusterParameterGroupArn(value: String): Self = this.set("DBClusterParameterGroupArn", value.asInstanceOf[js.Any])
+    def setDBClusterParameterGroupNameUndefined: Self = StObject.set(x, "DBClusterParameterGroupName", js.undefined)
     
     @scala.inline
-    def deleteDBClusterParameterGroupArn: Self = this.set("DBClusterParameterGroupArn", js.undefined)
+    def setDBParameterGroupFamily(value: String): Self = StObject.set(x, "DBParameterGroupFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBClusterParameterGroupName(value: String): Self = this.set("DBClusterParameterGroupName", value.asInstanceOf[js.Any])
+    def setDBParameterGroupFamilyUndefined: Self = StObject.set(x, "DBParameterGroupFamily", js.undefined)
     
     @scala.inline
-    def deleteDBClusterParameterGroupName: Self = this.set("DBClusterParameterGroupName", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBParameterGroupFamily(value: String): Self = this.set("DBParameterGroupFamily", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDBParameterGroupFamily: Self = this.set("DBParameterGroupFamily", js.undefined)
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.weixinApp.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.weixinApp.weixinAppNumbers.`44100`
   - typings.weixinApp.weixinAppNumbers.`48000`
 */
-trait EncodeBitRate extends js.Object
+trait EncodeBitRate extends StObject
 object EncodeBitRate {
   
   @scala.inline

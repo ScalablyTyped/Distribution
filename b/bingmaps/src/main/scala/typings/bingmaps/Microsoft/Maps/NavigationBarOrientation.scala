@@ -1,14 +1,15 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NavigationBarOrientation extends js.Object
+sealed trait NavigationBarOrientation extends StObject
 @JSGlobal("Microsoft.Maps.NavigationBarOrientation")
 @js.native
-object NavigationBarOrientation extends js.Object {
+object NavigationBarOrientation extends StObject {
   
   /** Repositions the buttons in the navigation bar such that they are aligned horizontally. */
   @js.native

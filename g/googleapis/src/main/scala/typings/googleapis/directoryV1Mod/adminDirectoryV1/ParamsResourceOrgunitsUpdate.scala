@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,45 +41,33 @@ object ParamsResourceOrgunitsUpdate {
   }
   
   @scala.inline
-  implicit class ParamsResourceOrgunitsUpdateOps[Self <: ParamsResourceOrgunitsUpdate] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceOrgunitsUpdateMutableBuilder[Self <: ParamsResourceOrgunitsUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setOrgUnitPath(value: js.Array[String]): Self = StObject.set(x, "orgUnitPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerId(value: String): Self = this.set("customerId", value.asInstanceOf[js.Any])
+    def setOrgUnitPathUndefined: Self = StObject.set(x, "orgUnitPath", js.undefined)
     
     @scala.inline
-    def deleteCustomerId: Self = this.set("customerId", js.undefined)
+    def setOrgUnitPathVarargs(value: String*): Self = StObject.set(x, "orgUnitPath", js.Array(value :_*))
     
     @scala.inline
-    def setOrgUnitPathVarargs(value: String*): Self = this.set("orgUnitPath", js.Array(value :_*))
+    def setRequestBody(value: SchemaOrgUnit): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrgUnitPath(value: js.Array[String]): Self = this.set("orgUnitPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrgUnitPath: Self = this.set("orgUnitPath", js.undefined)
-    
-    @scala.inline
-    def setRequestBody(value: SchemaOrgUnit): Self = this.set("requestBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
+    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

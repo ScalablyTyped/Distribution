@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CellTower extends js.Object {
+trait CellTower extends StObject {
   
   /** The number of milliseconds since this cell was primary. If age is 0, the `cellId` represents a current measurement. */
   var age: js.UndefOr[Double] = js.native
@@ -43,48 +44,36 @@ object CellTower {
   }
   
   @scala.inline
-  implicit class CellTowerOps[Self <: CellTower] (val x: Self) extends AnyVal {
+  implicit class CellTowerMutableBuilder[Self <: CellTower] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgeUndefined: Self = StObject.set(x, "age", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellId(value: Double): Self = StObject.set(x, "cellId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellId(value: Double): Self = this.set("cellId", value.asInstanceOf[js.Any])
+    def setLocationAreaCode(value: Double): Self = StObject.set(x, "locationAreaCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationAreaCode(value: Double): Self = this.set("locationAreaCode", value.asInstanceOf[js.Any])
+    def setMobileCountryCode(value: Double): Self = StObject.set(x, "mobileCountryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobileCountryCode(value: Double): Self = this.set("mobileCountryCode", value.asInstanceOf[js.Any])
+    def setMobileNetworkCode(value: Double): Self = StObject.set(x, "mobileNetworkCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobileNetworkCode(value: Double): Self = this.set("mobileNetworkCode", value.asInstanceOf[js.Any])
+    def setSignalStrength(value: Double): Self = StObject.set(x, "signalStrength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAge(value: Double): Self = this.set("age", value.asInstanceOf[js.Any])
+    def setSignalStrengthUndefined: Self = StObject.set(x, "signalStrength", js.undefined)
     
     @scala.inline
-    def deleteAge: Self = this.set("age", js.undefined)
+    def setTimingAdvance(value: Double): Self = StObject.set(x, "timingAdvance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignalStrength(value: Double): Self = this.set("signalStrength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignalStrength: Self = this.set("signalStrength", js.undefined)
-    
-    @scala.inline
-    def setTimingAdvance(value: Double): Self = this.set("timingAdvance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimingAdvance: Self = this.set("timingAdvance", js.undefined)
+    def setTimingAdvanceUndefined: Self = StObject.set(x, "timingAdvance", js.undefined)
   }
 }

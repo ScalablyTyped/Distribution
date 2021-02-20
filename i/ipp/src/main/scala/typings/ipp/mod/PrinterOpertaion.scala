@@ -1,5 +1,6 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -104,7 +105,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ipp.ippStrings.`Validate-Job`
   - typings.ipp.ippStrings.Value
 */
-trait PrinterOpertaion extends js.Object
+trait PrinterOpertaion extends StObject
 object PrinterOpertaion {
   
   @scala.inline

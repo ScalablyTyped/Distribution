@@ -1,10 +1,9 @@
 package typings.photonui.photonui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Base
-@JSGlobal("photonui.Helpers")
-@js.native
-object Helpers extends js.Object
+object Helpers

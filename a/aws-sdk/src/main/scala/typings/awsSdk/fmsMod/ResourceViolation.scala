@@ -1,11 +1,12 @@
 package typings.awsSdk.fmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceViolation extends js.Object {
+trait ResourceViolation extends StObject {
   
   /**
     * Violation details for an EC2 instance.
@@ -51,60 +52,48 @@ object ResourceViolation {
   }
   
   @scala.inline
-  implicit class ResourceViolationOps[Self <: ResourceViolation] (val x: Self) extends AnyVal {
+  implicit class ResourceViolationMutableBuilder[Self <: ResourceViolation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsEc2InstanceViolation(value: AwsEc2InstanceViolation): Self = StObject.set(x, "AwsEc2InstanceViolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsEc2InstanceViolationUndefined: Self = StObject.set(x, "AwsEc2InstanceViolation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAwsEc2NetworkInterfaceViolation(value: AwsEc2NetworkInterfaceViolation): Self = StObject.set(x, "AwsEc2NetworkInterfaceViolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsEc2InstanceViolation(value: AwsEc2InstanceViolation): Self = this.set("AwsEc2InstanceViolation", value.asInstanceOf[js.Any])
+    def setAwsEc2NetworkInterfaceViolationUndefined: Self = StObject.set(x, "AwsEc2NetworkInterfaceViolation", js.undefined)
     
     @scala.inline
-    def deleteAwsEc2InstanceViolation: Self = this.set("AwsEc2InstanceViolation", js.undefined)
+    def setAwsVPCSecurityGroupViolation(value: AwsVPCSecurityGroupViolation): Self = StObject.set(x, "AwsVPCSecurityGroupViolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsEc2NetworkInterfaceViolation(value: AwsEc2NetworkInterfaceViolation): Self = this.set("AwsEc2NetworkInterfaceViolation", value.asInstanceOf[js.Any])
+    def setAwsVPCSecurityGroupViolationUndefined: Self = StObject.set(x, "AwsVPCSecurityGroupViolation", js.undefined)
     
     @scala.inline
-    def deleteAwsEc2NetworkInterfaceViolation: Self = this.set("AwsEc2NetworkInterfaceViolation", js.undefined)
+    def setNetworkFirewallMissingExpectedRTViolation(value: NetworkFirewallMissingExpectedRTViolation): Self = StObject.set(x, "NetworkFirewallMissingExpectedRTViolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsVPCSecurityGroupViolation(value: AwsVPCSecurityGroupViolation): Self = this.set("AwsVPCSecurityGroupViolation", value.asInstanceOf[js.Any])
+    def setNetworkFirewallMissingExpectedRTViolationUndefined: Self = StObject.set(x, "NetworkFirewallMissingExpectedRTViolation", js.undefined)
     
     @scala.inline
-    def deleteAwsVPCSecurityGroupViolation: Self = this.set("AwsVPCSecurityGroupViolation", js.undefined)
+    def setNetworkFirewallMissingFirewallViolation(value: NetworkFirewallMissingFirewallViolation): Self = StObject.set(x, "NetworkFirewallMissingFirewallViolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkFirewallMissingExpectedRTViolation(value: NetworkFirewallMissingExpectedRTViolation): Self = this.set("NetworkFirewallMissingExpectedRTViolation", value.asInstanceOf[js.Any])
+    def setNetworkFirewallMissingFirewallViolationUndefined: Self = StObject.set(x, "NetworkFirewallMissingFirewallViolation", js.undefined)
     
     @scala.inline
-    def deleteNetworkFirewallMissingExpectedRTViolation: Self = this.set("NetworkFirewallMissingExpectedRTViolation", js.undefined)
+    def setNetworkFirewallMissingSubnetViolation(value: NetworkFirewallMissingSubnetViolation): Self = StObject.set(x, "NetworkFirewallMissingSubnetViolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkFirewallMissingFirewallViolation(value: NetworkFirewallMissingFirewallViolation): Self = this.set("NetworkFirewallMissingFirewallViolation", value.asInstanceOf[js.Any])
+    def setNetworkFirewallMissingSubnetViolationUndefined: Self = StObject.set(x, "NetworkFirewallMissingSubnetViolation", js.undefined)
     
     @scala.inline
-    def deleteNetworkFirewallMissingFirewallViolation: Self = this.set("NetworkFirewallMissingFirewallViolation", js.undefined)
+    def setNetworkFirewallPolicyModifiedViolation(value: NetworkFirewallPolicyModifiedViolation): Self = StObject.set(x, "NetworkFirewallPolicyModifiedViolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkFirewallMissingSubnetViolation(value: NetworkFirewallMissingSubnetViolation): Self = this.set("NetworkFirewallMissingSubnetViolation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkFirewallMissingSubnetViolation: Self = this.set("NetworkFirewallMissingSubnetViolation", js.undefined)
-    
-    @scala.inline
-    def setNetworkFirewallPolicyModifiedViolation(value: NetworkFirewallPolicyModifiedViolation): Self = this.set("NetworkFirewallPolicyModifiedViolation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkFirewallPolicyModifiedViolation: Self = this.set("NetworkFirewallPolicyModifiedViolation", js.undefined)
+    def setNetworkFirewallPolicyModifiedViolationUndefined: Self = StObject.set(x, "NetworkFirewallPolicyModifiedViolation", js.undefined)
   }
 }

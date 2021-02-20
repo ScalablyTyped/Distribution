@@ -9,6 +9,7 @@ import typings.reactNative.reactNativeStrings.interactive
 import typings.reactNative.reactNativeStrings.never
 import typings.reactNative.reactNativeStrings.none
 import typings.reactNative.reactNativeStrings.normal_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -206,174 +207,162 @@ object ScrollViewProps {
   }
   
   @scala.inline
-  implicit class ScrollViewPropsOps[Self <: ScrollViewProps] (val x: Self) extends AnyVal {
+  implicit class ScrollViewPropsMutableBuilder[Self <: ScrollViewProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentContainerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentContainerStyleNull: Self = StObject.set(x, "contentContainerStyle", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentContainerStyleUndefined: Self = StObject.set(x, "contentContainerStyle", js.undefined)
     
     @scala.inline
-    def setContentContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("contentContainerStyle", value.asInstanceOf[js.Any])
+    def setDecelerationRate(value: fast | normal_ | Double): Self = StObject.set(x, "decelerationRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentContainerStyle: Self = this.set("contentContainerStyle", js.undefined)
+    def setDecelerationRateUndefined: Self = StObject.set(x, "decelerationRate", js.undefined)
     
     @scala.inline
-    def setContentContainerStyleNull: Self = this.set("contentContainerStyle", null)
+    def setDisableIntervalMomentum(value: Boolean): Self = StObject.set(x, "disableIntervalMomentum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecelerationRate(value: fast | normal_ | Double): Self = this.set("decelerationRate", value.asInstanceOf[js.Any])
+    def setDisableIntervalMomentumUndefined: Self = StObject.set(x, "disableIntervalMomentum", js.undefined)
     
     @scala.inline
-    def deleteDecelerationRate: Self = this.set("decelerationRate", js.undefined)
+    def setDisableScrollViewPanResponder(value: Boolean): Self = StObject.set(x, "disableScrollViewPanResponder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableIntervalMomentum(value: Boolean): Self = this.set("disableIntervalMomentum", value.asInstanceOf[js.Any])
+    def setDisableScrollViewPanResponderUndefined: Self = StObject.set(x, "disableScrollViewPanResponder", js.undefined)
     
     @scala.inline
-    def deleteDisableIntervalMomentum: Self = this.set("disableIntervalMomentum", js.undefined)
+    def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableScrollViewPanResponder(value: Boolean): Self = this.set("disableScrollViewPanResponder", value.asInstanceOf[js.Any])
+    def setHorizontalNull: Self = StObject.set(x, "horizontal", null)
     
     @scala.inline
-    def deleteDisableScrollViewPanResponder: Self = this.set("disableScrollViewPanResponder", js.undefined)
+    def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
     @scala.inline
-    def setHorizontal(value: Boolean): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    def setInvertStickyHeaders(value: Boolean): Self = StObject.set(x, "invertStickyHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    def setInvertStickyHeadersUndefined: Self = StObject.set(x, "invertStickyHeaders", js.undefined)
     
     @scala.inline
-    def setHorizontalNull: Self = this.set("horizontal", null)
+    def setKeyboardDismissMode(value: none | interactive | `on-drag`): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvertStickyHeaders(value: Boolean): Self = this.set("invertStickyHeaders", value.asInstanceOf[js.Any])
+    def setKeyboardDismissModeUndefined: Self = StObject.set(x, "keyboardDismissMode", js.undefined)
     
     @scala.inline
-    def deleteInvertStickyHeaders: Self = this.set("invertStickyHeaders", js.undefined)
+    def setKeyboardShouldPersistTaps(value: Boolean | always | never | handled): Self = StObject.set(x, "keyboardShouldPersistTaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboardDismissMode(value: none | interactive | `on-drag`): Self = this.set("keyboardDismissMode", value.asInstanceOf[js.Any])
+    def setKeyboardShouldPersistTapsUndefined: Self = StObject.set(x, "keyboardShouldPersistTaps", js.undefined)
     
     @scala.inline
-    def deleteKeyboardDismissMode: Self = this.set("keyboardDismissMode", js.undefined)
+    def setOnContentSizeChange(value: (/* w */ Double, /* h */ Double) => Unit): Self = StObject.set(x, "onContentSizeChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setKeyboardShouldPersistTaps(value: Boolean | always | never | handled): Self = this.set("keyboardShouldPersistTaps", value.asInstanceOf[js.Any])
+    def setOnContentSizeChangeUndefined: Self = StObject.set(x, "onContentSizeChange", js.undefined)
     
     @scala.inline
-    def deleteKeyboardShouldPersistTaps: Self = this.set("keyboardShouldPersistTaps", js.undefined)
+    def setOnMomentumScrollBegin(value: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit): Self = StObject.set(x, "onMomentumScrollBegin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnContentSizeChange(value: (/* w */ Double, /* h */ Double) => Unit): Self = this.set("onContentSizeChange", js.Any.fromFunction2(value))
+    def setOnMomentumScrollBeginUndefined: Self = StObject.set(x, "onMomentumScrollBegin", js.undefined)
     
     @scala.inline
-    def deleteOnContentSizeChange: Self = this.set("onContentSizeChange", js.undefined)
+    def setOnMomentumScrollEnd(value: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit): Self = StObject.set(x, "onMomentumScrollEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMomentumScrollBegin(value: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit): Self = this.set("onMomentumScrollBegin", js.Any.fromFunction1(value))
+    def setOnMomentumScrollEndUndefined: Self = StObject.set(x, "onMomentumScrollEnd", js.undefined)
     
     @scala.inline
-    def deleteOnMomentumScrollBegin: Self = this.set("onMomentumScrollBegin", js.undefined)
+    def setOnScroll(value: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMomentumScrollEnd(value: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit): Self = this.set("onMomentumScrollEnd", js.Any.fromFunction1(value))
+    def setOnScrollBeginDrag(value: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit): Self = StObject.set(x, "onScrollBeginDrag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnMomentumScrollEnd: Self = this.set("onMomentumScrollEnd", js.undefined)
+    def setOnScrollBeginDragUndefined: Self = StObject.set(x, "onScrollBeginDrag", js.undefined)
     
     @scala.inline
-    def setOnScroll(value: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit): Self = this.set("onScroll", js.Any.fromFunction1(value))
+    def setOnScrollEndDrag(value: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit): Self = StObject.set(x, "onScrollEndDrag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    def setOnScrollEndDragUndefined: Self = StObject.set(x, "onScrollEndDrag", js.undefined)
     
     @scala.inline
-    def setOnScrollBeginDrag(value: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit): Self = this.set("onScrollBeginDrag", js.Any.fromFunction1(value))
+    def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
     @scala.inline
-    def deleteOnScrollBeginDrag: Self = this.set("onScrollBeginDrag", js.undefined)
+    def setPagingEnabled(value: Boolean): Self = StObject.set(x, "pagingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnScrollEndDrag(value: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit): Self = this.set("onScrollEndDrag", js.Any.fromFunction1(value))
+    def setPagingEnabledUndefined: Self = StObject.set(x, "pagingEnabled", js.undefined)
     
     @scala.inline
-    def deleteOnScrollEndDrag: Self = this.set("onScrollEndDrag", js.undefined)
+    def setRefreshControl(value: ReactElement): Self = StObject.set(x, "refreshControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagingEnabled(value: Boolean): Self = this.set("pagingEnabled", value.asInstanceOf[js.Any])
+    def setRefreshControlUndefined: Self = StObject.set(x, "refreshControl", js.undefined)
     
     @scala.inline
-    def deletePagingEnabled: Self = this.set("pagingEnabled", js.undefined)
+    def setScrollEnabled(value: Boolean): Self = StObject.set(x, "scrollEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshControl(value: ReactElement): Self = this.set("refreshControl", value.asInstanceOf[js.Any])
+    def setScrollEnabledUndefined: Self = StObject.set(x, "scrollEnabled", js.undefined)
     
     @scala.inline
-    def deleteRefreshControl: Self = this.set("refreshControl", js.undefined)
+    def setShowsHorizontalScrollIndicator(value: Boolean): Self = StObject.set(x, "showsHorizontalScrollIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollEnabled(value: Boolean): Self = this.set("scrollEnabled", value.asInstanceOf[js.Any])
+    def setShowsHorizontalScrollIndicatorUndefined: Self = StObject.set(x, "showsHorizontalScrollIndicator", js.undefined)
     
     @scala.inline
-    def deleteScrollEnabled: Self = this.set("scrollEnabled", js.undefined)
+    def setShowsVerticalScrollIndicator(value: Boolean): Self = StObject.set(x, "showsVerticalScrollIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowsHorizontalScrollIndicator(value: Boolean): Self = this.set("showsHorizontalScrollIndicator", value.asInstanceOf[js.Any])
+    def setShowsVerticalScrollIndicatorUndefined: Self = StObject.set(x, "showsVerticalScrollIndicator", js.undefined)
     
     @scala.inline
-    def deleteShowsHorizontalScrollIndicator: Self = this.set("showsHorizontalScrollIndicator", js.undefined)
+    def setSnapToEnd(value: Boolean): Self = StObject.set(x, "snapToEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowsVerticalScrollIndicator(value: Boolean): Self = this.set("showsVerticalScrollIndicator", value.asInstanceOf[js.Any])
+    def setSnapToEndUndefined: Self = StObject.set(x, "snapToEnd", js.undefined)
     
     @scala.inline
-    def deleteShowsVerticalScrollIndicator: Self = this.set("showsVerticalScrollIndicator", js.undefined)
+    def setSnapToInterval(value: Double): Self = StObject.set(x, "snapToInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapToEnd(value: Boolean): Self = this.set("snapToEnd", value.asInstanceOf[js.Any])
+    def setSnapToIntervalUndefined: Self = StObject.set(x, "snapToInterval", js.undefined)
     
     @scala.inline
-    def deleteSnapToEnd: Self = this.set("snapToEnd", js.undefined)
+    def setSnapToOffsets(value: js.Array[Double]): Self = StObject.set(x, "snapToOffsets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapToInterval(value: Double): Self = this.set("snapToInterval", value.asInstanceOf[js.Any])
+    def setSnapToOffsetsUndefined: Self = StObject.set(x, "snapToOffsets", js.undefined)
     
     @scala.inline
-    def deleteSnapToInterval: Self = this.set("snapToInterval", js.undefined)
+    def setSnapToOffsetsVarargs(value: Double*): Self = StObject.set(x, "snapToOffsets", js.Array(value :_*))
     
     @scala.inline
-    def setSnapToOffsetsVarargs(value: Double*): Self = this.set("snapToOffsets", js.Array(value :_*))
+    def setSnapToStart(value: Boolean): Self = StObject.set(x, "snapToStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapToOffsets(value: js.Array[Double]): Self = this.set("snapToOffsets", value.asInstanceOf[js.Any])
+    def setSnapToStartUndefined: Self = StObject.set(x, "snapToStart", js.undefined)
     
     @scala.inline
-    def deleteSnapToOffsets: Self = this.set("snapToOffsets", js.undefined)
+    def setStickyHeaderIndices(value: js.Array[Double]): Self = StObject.set(x, "stickyHeaderIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapToStart(value: Boolean): Self = this.set("snapToStart", value.asInstanceOf[js.Any])
+    def setStickyHeaderIndicesUndefined: Self = StObject.set(x, "stickyHeaderIndices", js.undefined)
     
     @scala.inline
-    def deleteSnapToStart: Self = this.set("snapToStart", js.undefined)
-    
-    @scala.inline
-    def setStickyHeaderIndicesVarargs(value: Double*): Self = this.set("stickyHeaderIndices", js.Array(value :_*))
-    
-    @scala.inline
-    def setStickyHeaderIndices(value: js.Array[Double]): Self = this.set("stickyHeaderIndices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStickyHeaderIndices: Self = this.set("stickyHeaderIndices", js.undefined)
+    def setStickyHeaderIndicesVarargs(value: Double*): Self = StObject.set(x, "stickyHeaderIndices", js.Array(value :_*))
   }
 }

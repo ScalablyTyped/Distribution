@@ -1,11 +1,12 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDocumentResponse extends js.Object {
+trait CreateDocumentResponse extends StObject {
   
   var _id: String = js.native
   
@@ -38,39 +39,27 @@ object CreateDocumentResponse {
   }
   
   @scala.inline
-  implicit class CreateDocumentResponseOps[Self <: CreateDocumentResponse] (val x: Self) extends AnyVal {
+  implicit class CreateDocumentResponseMutableBuilder[Self <: CreateDocumentResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated(value: Boolean): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_id(value: String): Self = this.set("_id", value.asInstanceOf[js.Any])
+    def set_index(value: String): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_index(value: String): Self = this.set("_index", value.asInstanceOf[js.Any])
+    def set_shards(value: ShardsResponse): Self = StObject.set(x, "_shards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_shards(value: ShardsResponse): Self = this.set("_shards", value.asInstanceOf[js.Any])
+    def set_type(value: String): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_type(value: String): Self = this.set("_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_version(value: Double): Self = this.set("_version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCreated(value: Boolean): Self = this.set("created", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResult(value: String): Self = this.set("result", value.asInstanceOf[js.Any])
+    def set_version(value: Double): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
   }
 }

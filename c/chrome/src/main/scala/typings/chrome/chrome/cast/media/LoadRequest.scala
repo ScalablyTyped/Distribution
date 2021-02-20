@@ -1,11 +1,12 @@
 package typings.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadRequest extends js.Object {
+trait LoadRequest extends StObject {
   
   var activeTrackIds: js.Array[Double] = js.native
   
@@ -32,36 +33,24 @@ object LoadRequest {
   }
   
   @scala.inline
-  implicit class LoadRequestOps[Self <: LoadRequest] (val x: Self) extends AnyVal {
+  implicit class LoadRequestMutableBuilder[Self <: LoadRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveTrackIds(value: js.Array[Double]): Self = StObject.set(x, "activeTrackIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveTrackIdsVarargs(value: Double*): Self = StObject.set(x, "activeTrackIds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveTrackIdsVarargs(value: Double*): Self = this.set("activeTrackIds", js.Array(value :_*))
+    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveTrackIds(value: js.Array[Double]): Self = this.set("activeTrackIds", value.asInstanceOf[js.Any])
+    def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoplay(value: Boolean): Self = this.set("autoplay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentTime(value: Double): Self = this.set("currentTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCustomData(value: js.Object): Self = this.set("customData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMedia(value: MediaInfo): Self = this.set("media", value.asInstanceOf[js.Any])
+    def setMedia(value: MediaInfo): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
   }
 }

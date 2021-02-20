@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteEgressOnlyInternetGatewayResult extends js.Object {
+trait DeleteEgressOnlyInternetGatewayResult extends StObject {
   
   /**
     * Returns true if the request succeeds; otherwise, it returns an error.
@@ -21,24 +22,12 @@ object DeleteEgressOnlyInternetGatewayResult {
   }
   
   @scala.inline
-  implicit class DeleteEgressOnlyInternetGatewayResultOps[Self <: DeleteEgressOnlyInternetGatewayResult] (val x: Self) extends AnyVal {
+  implicit class DeleteEgressOnlyInternetGatewayResultMutableBuilder[Self <: DeleteEgressOnlyInternetGatewayResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReturnCode(value: Boolean): Self = StObject.set(x, "ReturnCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReturnCode(value: Boolean): Self = this.set("ReturnCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnCode: Self = this.set("ReturnCode", js.undefined)
+    def setReturnCodeUndefined: Self = StObject.set(x, "ReturnCode", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.googleCloudStorage.bucketMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateNotificationOptions extends js.Object {
+trait CreateNotificationOptions extends StObject {
   
   var customAttributes: js.UndefOr[StringDictionary[String]] = js.native
   
@@ -27,51 +28,39 @@ object CreateNotificationOptions {
   }
   
   @scala.inline
-  implicit class CreateNotificationOptionsOps[Self <: CreateNotificationOptions] (val x: Self) extends AnyVal {
+  implicit class CreateNotificationOptionsMutableBuilder[Self <: CreateNotificationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomAttributes(value: StringDictionary[String]): Self = StObject.set(x, "customAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomAttributesUndefined: Self = StObject.set(x, "customAttributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventTypes(value: js.Array[String]): Self = StObject.set(x, "eventTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomAttributes(value: StringDictionary[String]): Self = this.set("customAttributes", value.asInstanceOf[js.Any])
+    def setEventTypesUndefined: Self = StObject.set(x, "eventTypes", js.undefined)
     
     @scala.inline
-    def deleteCustomAttributes: Self = this.set("customAttributes", js.undefined)
+    def setEventTypesVarargs(value: String*): Self = StObject.set(x, "eventTypes", js.Array(value :_*))
     
     @scala.inline
-    def setEventTypesVarargs(value: String*): Self = this.set("eventTypes", js.Array(value :_*))
+    def setObjectNamePrefix(value: String): Self = StObject.set(x, "objectNamePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTypes(value: js.Array[String]): Self = this.set("eventTypes", value.asInstanceOf[js.Any])
+    def setObjectNamePrefixUndefined: Self = StObject.set(x, "objectNamePrefix", js.undefined)
     
     @scala.inline
-    def deleteEventTypes: Self = this.set("eventTypes", js.undefined)
+    def setPayloadFormat(value: String): Self = StObject.set(x, "payloadFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectNamePrefix(value: String): Self = this.set("objectNamePrefix", value.asInstanceOf[js.Any])
+    def setPayloadFormatUndefined: Self = StObject.set(x, "payloadFormat", js.undefined)
     
     @scala.inline
-    def deleteObjectNamePrefix: Self = this.set("objectNamePrefix", js.undefined)
+    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayloadFormat(value: String): Self = this.set("payloadFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayloadFormat: Self = this.set("payloadFormat", js.undefined)
-    
-    @scala.inline
-    def setUserProject(value: String): Self = this.set("userProject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserProject: Self = this.set("userProject", js.undefined)
+    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

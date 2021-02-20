@@ -5,12 +5,13 @@ import typings.contentfulManagement.commonTypesMod.Collection
 import typings.contentfulManagement.commonTypesMod.CollectionProp
 import typings.contentfulManagement.uiExtensionMod.UIExtension
 import typings.contentfulManagement.uiExtensionMod.UIExtensionProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofuiExtension extends js.Object {
+trait TypeofuiExtension extends StObject {
   
   def wrapUiExtension(http: AxiosInstance, data: UIExtensionProps): UIExtension = js.native
   
@@ -28,26 +29,14 @@ object TypeofuiExtension {
   }
   
   @scala.inline
-  implicit class TypeofuiExtensionOps[Self <: TypeofuiExtension] (val x: Self) extends AnyVal {
+  implicit class TypeofuiExtensionMutableBuilder[Self <: TypeofuiExtension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWrapUiExtension(value: (AxiosInstance, UIExtensionProps) => UIExtension): Self = this.set("wrapUiExtension", js.Any.fromFunction2(value))
+    def setWrapUiExtension(value: (AxiosInstance, UIExtensionProps) => UIExtension): Self = StObject.set(x, "wrapUiExtension", js.Any.fromFunction2(value))
     
     @scala.inline
     def setWrapUiExtensionCollection(
       value: (AxiosInstance, CollectionProp[UIExtensionProps]) => Collection[UIExtension, UIExtensionProps]
-    ): Self = this.set("wrapUiExtensionCollection", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "wrapUiExtensionCollection", js.Any.fromFunction2(value))
   }
 }

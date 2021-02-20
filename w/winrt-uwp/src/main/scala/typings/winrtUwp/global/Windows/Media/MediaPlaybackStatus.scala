@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines values for the status of the media playback. */
 @JSGlobal("Windows.Media.MediaPlaybackStatus")
 @js.native
-object MediaPlaybackStatus extends js.Object {
+object MediaPlaybackStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.MediaPlaybackStatus with Double] = js.native

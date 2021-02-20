@@ -1,11 +1,12 @@
 package typings.activexInfopath.InfoPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait INotifyHostEventHandler extends js.Object {
+trait INotifyHostEventHandler extends StObject {
   
   @JSName("InfoPath.INotifyHostEventHandler_typekey")
   var InfoPathDotINotifyHostEventHandler_typekey: INotifyHostEventHandler = js.native
@@ -25,24 +26,12 @@ object INotifyHostEventHandler {
   }
   
   @scala.inline
-  implicit class INotifyHostEventHandlerOps[Self <: INotifyHostEventHandler] (val x: Self) extends AnyVal {
+  implicit class INotifyHostEventHandlerMutableBuilder[Self <: INotifyHostEventHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInfoPathDotINotifyHostEventHandler_typekey(value: INotifyHostEventHandler): Self = StObject.set(x, "InfoPath.INotifyHostEventHandler_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInfoPathDotINotifyHostEventHandler_typekey(value: INotifyHostEventHandler): Self = this.set("InfoPath.INotifyHostEventHandler_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotifyHostEventHandler(value: (js.Any, String) => Unit): Self = this.set("NotifyHostEventHandler", js.Any.fromFunction2(value))
+    def setNotifyHostEventHandler(value: (js.Any, String) => Unit): Self = StObject.set(x, "NotifyHostEventHandler", js.Any.fromFunction2(value))
   }
 }

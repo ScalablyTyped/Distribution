@@ -1,11 +1,12 @@
 package typings.awsSdk.efsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreationInfo extends js.Object {
+trait CreationInfo extends StObject {
   
   /**
     * Specifies the POSIX group ID to apply to the RootDirectory. Accepts values from 0 to 2^32 (4294967295).
@@ -31,27 +32,15 @@ object CreationInfo {
   }
   
   @scala.inline
-  implicit class CreationInfoOps[Self <: CreationInfo] (val x: Self) extends AnyVal {
+  implicit class CreationInfoMutableBuilder[Self <: CreationInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOwnerGid(value: OwnerGid): Self = StObject.set(x, "OwnerGid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOwnerUid(value: OwnerUid): Self = StObject.set(x, "OwnerUid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOwnerGid(value: OwnerGid): Self = this.set("OwnerGid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOwnerUid(value: OwnerUid): Self = this.set("OwnerUid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPermissions(value: Permissions): Self = this.set("Permissions", value.asInstanceOf[js.Any])
+    def setPermissions(value: Permissions): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
   }
 }

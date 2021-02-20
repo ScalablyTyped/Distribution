@@ -2,6 +2,7 @@ package typings.babylonjs.mod
 
 import typings.babylonjs.collisionCoordinatorMod.ICollisionCoordinator
 import typings.babylonjs.sceneMod.SceneOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,14 +20,18 @@ class Scene protected ()
   def this(engine: typings.babylonjs.engineMod.Engine, options: SceneOptions) = this()
 }
 /* static members */
-@JSImport("babylonjs", "Scene")
-@js.native
-object Scene extends js.Object {
+object Scene {
+  
+  @JSImport("babylonjs", "Scene")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Factory used to create the a collision coordinator.
     * @returns The collision coordinator
     */
+  @JSImport("babylonjs", "Scene.CollisionCoordinatorFactory")
+  @js.native
   def CollisionCoordinatorFactory(): ICollisionCoordinator = js.native
   
   /**
@@ -35,51 +40,47 @@ object Scene extends js.Object {
     * @param scene The scene to create the material for
     * @returns The default material
     */
+  @JSImport("babylonjs", "Scene.DefaultMaterialFactory")
+  @js.native
   def DefaultMaterialFactory(scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.materialMod.Material = js.native
   
-  /**
-    * Time in milliseconds to wait to raise long press events if button is still pressed. Default is 300 ms
-    */
-  def DoubleClickDelay: Double = js.native
-  def DoubleClickDelay_=(value: Double): Unit = js.native
-  
-  /**
-    * Gets or sets the distance in pixel that you have to move to prevent some events. Default is 10 pixels
-    */
-  def DragMovementThreshold: Double = js.native
-  def DragMovementThreshold_=(value: Double): Unit = js.native
-  
-  /** If you need to check double click without raising a single click at first click, enable this flag */
-  def ExclusiveDoubleClickMode: Boolean = js.native
-  def ExclusiveDoubleClickMode_=(value: Boolean): Unit = js.native
-  
   /** The fog density is following an exponential function */
+  @JSImport("babylonjs", "Scene.FOGMODE_EXP")
+  @js.native
   val FOGMODE_EXP: Double = js.native
   
   /** The fog density is following an exponential function faster than FOGMODE_EXP */
+  @JSImport("babylonjs", "Scene.FOGMODE_EXP2")
+  @js.native
   val FOGMODE_EXP2: Double = js.native
   
   /** The fog density is following a linear function. */
+  @JSImport("babylonjs", "Scene.FOGMODE_LINEAR")
+  @js.native
   val FOGMODE_LINEAR: Double = js.native
   
   /** The fog is deactivated */
+  @JSImport("babylonjs", "Scene.FOGMODE_NONE")
+  @js.native
   val FOGMODE_NONE: Double = js.native
-  
-  /**
-    * Time in milliseconds to wait to raise long press events if button is still pressed. Default is 500 ms
-    */
-  def LongPressDelay: Double = js.native
-  def LongPressDelay_=(value: Double): Unit = js.native
   
   /**
     * Gets or sets the maximum deltatime when deterministic lock step is enabled
     * @see https://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
     */
-  var MaxDeltaTime: Double = js.native
+  @JSImport("babylonjs", "Scene.MaxDeltaTime")
+  @js.native
+  def MaxDeltaTime: Double = js.native
+  @scala.inline
+  def MaxDeltaTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MaxDeltaTime")(x.asInstanceOf[js.Any])
   
   /**
     * Gets or sets the minimum deltatime when deterministic lock step is enabled
     * @see https://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
     */
-  var MinDeltaTime: Double = js.native
+  @JSImport("babylonjs", "Scene.MinDeltaTime")
+  @js.native
+  def MinDeltaTime: Double = js.native
+  @scala.inline
+  def MinDeltaTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MinDeltaTime")(x.asInstanceOf[js.Any])
 }

@@ -2,6 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.IPhysicsEnginePlugin
 import typings.babylonjs.BABYLON.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,18 +20,26 @@ class PhysicsEngine protected ()
   def this(gravity: Nullable[typings.babylonjs.BABYLON.Vector3], _physicsPlugin: IPhysicsEnginePlugin) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.PhysicsEngine")
-@js.native
-object PhysicsEngine extends js.Object {
+object PhysicsEngine {
+  
+  @JSGlobal("BABYLON.PhysicsEngine")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Factory used to create the default physics plugin.
     * @returns The default physics plugin
     */
+  @JSGlobal("BABYLON.PhysicsEngine.DefaultPluginFactory")
+  @js.native
   def DefaultPluginFactory(): IPhysicsEnginePlugin = js.native
   
   /**
     * Global value used to control the smallest number supported by the simulation
     */
-  var Epsilon: Double = js.native
+  @JSGlobal("BABYLON.PhysicsEngine.Epsilon")
+  @js.native
+  def Epsilon: Double = js.native
+  @scala.inline
+  def Epsilon_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Epsilon")(x.asInstanceOf[js.Any])
 }

@@ -37,12 +37,13 @@ import typings.maximMazurokGapiClientContainer.anon.Uploadprotocol
 import typings.maximMazurokGapiClientContainer.anon.UploadprotocolXgafv
 import typings.maximMazurokGapiClientContainer.anon.UploadprotocolXgafvZone
 import typings.maximMazurokGapiClientContainer.anon.XgafvZone
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClustersResource extends js.Object {
+trait ClustersResource extends StObject {
   
   /** Sets the addons for a specific cluster. */
   def addons(request: PrettyPrintProjectId): Request[Operation] = js.native

@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InvitedUserMessageInfo extends js.Object {
+trait InvitedUserMessageInfo extends StObject {
   
   // Additional recipients the invitation message should be sent to. Currently only 1 additional recipient is supported.
   var ccRecipients: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.native
@@ -29,48 +30,36 @@ object InvitedUserMessageInfo {
   }
   
   @scala.inline
-  implicit class InvitedUserMessageInfoOps[Self <: InvitedUserMessageInfo] (val x: Self) extends AnyVal {
+  implicit class InvitedUserMessageInfoMutableBuilder[Self <: InvitedUserMessageInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCcRecipients(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "ccRecipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCcRecipientsNull: Self = StObject.set(x, "ccRecipients", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCcRecipientsUndefined: Self = StObject.set(x, "ccRecipients", js.undefined)
     
     @scala.inline
-    def setCcRecipientsVarargs(value: Recipient*): Self = this.set("ccRecipients", js.Array(value :_*))
+    def setCcRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "ccRecipients", js.Array(value :_*))
     
     @scala.inline
-    def setCcRecipients(value: NullableOption[js.Array[Recipient]]): Self = this.set("ccRecipients", value.asInstanceOf[js.Any])
+    def setCustomizedMessageBody(value: NullableOption[String]): Self = StObject.set(x, "customizedMessageBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCcRecipients: Self = this.set("ccRecipients", js.undefined)
+    def setCustomizedMessageBodyNull: Self = StObject.set(x, "customizedMessageBody", null)
     
     @scala.inline
-    def setCcRecipientsNull: Self = this.set("ccRecipients", null)
+    def setCustomizedMessageBodyUndefined: Self = StObject.set(x, "customizedMessageBody", js.undefined)
     
     @scala.inline
-    def setCustomizedMessageBody(value: NullableOption[String]): Self = this.set("customizedMessageBody", value.asInstanceOf[js.Any])
+    def setMessageLanguage(value: NullableOption[String]): Self = StObject.set(x, "messageLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomizedMessageBody: Self = this.set("customizedMessageBody", js.undefined)
+    def setMessageLanguageNull: Self = StObject.set(x, "messageLanguage", null)
     
     @scala.inline
-    def setCustomizedMessageBodyNull: Self = this.set("customizedMessageBody", null)
-    
-    @scala.inline
-    def setMessageLanguage(value: NullableOption[String]): Self = this.set("messageLanguage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageLanguage: Self = this.set("messageLanguage", js.undefined)
-    
-    @scala.inline
-    def setMessageLanguageNull: Self = this.set("messageLanguage", null)
+    def setMessageLanguageUndefined: Self = StObject.set(x, "messageLanguage", js.undefined)
   }
 }

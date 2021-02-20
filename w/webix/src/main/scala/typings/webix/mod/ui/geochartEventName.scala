@@ -1,5 +1,6 @@
 package typings.webix.mod.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +39,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webix.webixStrings.onViewResize
   - typings.webix.webixStrings.onViewShow
 */
-trait geochartEventName extends js.Object
+trait geochartEventName extends StObject
 object geochartEventName {
   
   @scala.inline

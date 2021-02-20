@@ -3,6 +3,7 @@ package typings.spotifyWebApiNode.mod
 import typings.spotifyWebApiNode.spotifyWebApiNodeStrings.long_term
 import typings.spotifyWebApiNode.spotifyWebApiNodeStrings.medium_term
 import typings.spotifyWebApiNode.spotifyWebApiNodeStrings.short_term
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,24 +22,12 @@ object GetTopOptions {
   }
   
   @scala.inline
-  implicit class GetTopOptionsOps[Self <: GetTopOptions] (val x: Self) extends AnyVal {
+  implicit class GetTopOptionsMutableBuilder[Self <: GetTopOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTime_range(value: long_term | medium_term | short_term): Self = StObject.set(x, "time_range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTime_range(value: long_term | medium_term | short_term): Self = this.set("time_range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime_range: Self = this.set("time_range", js.undefined)
+    def setTime_rangeUndefined: Self = StObject.set(x, "time_range", js.undefined)
   }
 }

@@ -4,12 +4,13 @@ import typings.reactVirtualized.reactVirtualizedStrings.auto
 import typings.reactVirtualized.reactVirtualizedStrings.center
 import typings.reactVirtualized.reactVirtualizedStrings.end
 import typings.reactVirtualized.reactVirtualizedStrings.start
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Align extends js.Object {
+trait Align extends StObject {
   
   var align: auto | start | end | center = js.native
   
@@ -39,36 +40,24 @@ object Align {
   }
   
   @scala.inline
-  implicit class AlignOps[Self <: Align] (val x: Self) extends AnyVal {
+  implicit class AlignMutableBuilder[Self <: Align] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: auto | start | end | center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellIndex(value: Double): Self = StObject.set(x, "cellIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: auto | start | end | center): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellIndex(value: Double): Self = this.set("cellIndex", value.asInstanceOf[js.Any])
+    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrollLeft(value: Double): Self = this.set("scrollLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrollTop(value: Double): Self = this.set("scrollTop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

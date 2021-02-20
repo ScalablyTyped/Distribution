@@ -1,18 +1,19 @@
 package typings.ngCommand
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object ngCommand extends js.Object {
+  object ngCommand {
     
-    var ModuleName: String = js.native
+    @JSGlobal("ngCommand")
+    @js.native
+    val ^ : js.Any = js.native
     
+    @JSGlobal("ngCommand.Command")
     @js.native
     class Command protected ()
       extends typings.ngCommand.ngCommand.Command {
@@ -30,11 +31,24 @@ object global extends js.Object {
         canExecute: js.Function0[Boolean]
       ) = this()
     }
-    /* static members */
-    @js.native
-    object Command extends js.Object {
+    object Command {
       
-      var id: String = js.native
+      @JSGlobal("ngCommand.Command")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /* static member */
+      @JSGlobal("ngCommand.Command.id")
+      @js.native
+      def id: String = js.native
+      @scala.inline
+      def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
     }
+    
+    @JSGlobal("ngCommand.ModuleName")
+    @js.native
+    def ModuleName: String = js.native
+    @scala.inline
+    def ModuleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ModuleName")(x.asInstanceOf[js.Any])
   }
 }

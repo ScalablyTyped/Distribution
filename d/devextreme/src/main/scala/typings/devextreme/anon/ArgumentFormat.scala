@@ -9,12 +9,13 @@ import typings.devextreme.devextremeStrings.none
 import typings.devextreme.devextremeStrings.normal
 import typings.devextreme.devextremeStrings.outside
 import typings.devextreme.mod.DevExpress.ui.format
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArgumentFormat extends js.Object {
+trait ArgumentFormat extends StObject {
   
   var argumentFormat: js.UndefOr[format] = js.native
   
@@ -51,102 +52,90 @@ object ArgumentFormat {
   }
   
   @scala.inline
-  implicit class ArgumentFormatOps[Self <: ArgumentFormat] (val x: Self) extends AnyVal {
+  implicit class ArgumentFormatMutableBuilder[Self <: ArgumentFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgumentFormat(value: format): Self = StObject.set(x, "argumentFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgumentFormatFunction1(value: /* value */ Double | typings.std.Date => String): Self = StObject.set(x, "argumentFormat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgumentFormatUndefined: Self = StObject.set(x, "argumentFormat", js.undefined)
     
     @scala.inline
-    def setArgumentFormatFunction1(value: /* value */ Double | typings.std.Date => String): Self = this.set("argumentFormat", js.Any.fromFunction1(value))
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgumentFormat(value: format): Self = this.set("argumentFormat", value.asInstanceOf[js.Any])
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def deleteArgumentFormat: Self = this.set("argumentFormat", js.undefined)
+    def setBorder(value: ColorDashStyle): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setConnector(value: ColorVisible): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: ColorDashStyle): Self = this.set("border", value.asInstanceOf[js.Any])
+    def setConnectorUndefined: Self = StObject.set(x, "connector", js.undefined)
     
     @scala.inline
-    def deleteBorder: Self = this.set("border", js.undefined)
+    def setCustomizeText(value: /* pointInfo */ js.Any => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConnector(value: ColorVisible): Self = this.set("connector", value.asInstanceOf[js.Any])
+    def setCustomizeTextUndefined: Self = StObject.set(x, "customizeText", js.undefined)
     
     @scala.inline
-    def deleteConnector: Self = this.set("connector", js.undefined)
+    def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomizeText(value: /* pointInfo */ js.Any => String): Self = this.set("customizeText", js.Any.fromFunction1(value))
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteCustomizeText: Self = this.set("customizeText", js.undefined)
+    def setFormat(value: format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setFormatFunction1(value: /* value */ Double | typings.std.Date => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setFormatFunction1(value: /* value */ Double | typings.std.Date => String): Self = this.set("format", js.Any.fromFunction1(value))
+    def setPosition(value: columns | inside | outside): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: format): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setRadialOffset(value: Double): Self = StObject.set(x, "radialOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: columns | inside | outside): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setRadialOffsetUndefined: Self = StObject.set(x, "radialOffset", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadialOffset(value: Double): Self = this.set("radialOffset", value.asInstanceOf[js.Any])
+    def setRotationAngleUndefined: Self = StObject.set(x, "rotationAngle", js.undefined)
     
     @scala.inline
-    def deleteRadialOffset: Self = this.set("radialOffset", js.undefined)
+    def setTextOverflow(value: ellipsis | hide | none): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotationAngle(value: Double): Self = this.set("rotationAngle", value.asInstanceOf[js.Any])
+    def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
     
     @scala.inline
-    def deleteRotationAngle: Self = this.set("rotationAngle", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextOverflow(value: ellipsis | hide | none): Self = this.set("textOverflow", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteTextOverflow: Self = this.set("textOverflow", js.undefined)
+    def setWordWrap(value: normal | breakWord | none): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
-    
-    @scala.inline
-    def setWordWrap(value: normal | breakWord | none): Self = this.set("wordWrap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWordWrap: Self = this.set("wordWrap", js.undefined)
+    def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.jweixin.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jweixin.jweixinStrings.`4g`
   - typings.jweixin.jweixinStrings.wifi
 */
-trait networkType extends js.Object
+trait networkType extends StObject
 object networkType {
   
   @scala.inline

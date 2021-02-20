@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,39 +38,27 @@ object CIMGeometricEffectTaperedPolygon {
   }
   
   @scala.inline
-  implicit class CIMGeometricEffectTaperedPolygonOps[Self <: CIMGeometricEffectTaperedPolygon] (val x: Self) extends AnyVal {
+  implicit class CIMGeometricEffectTaperedPolygonMutableBuilder[Self <: CIMGeometricEffectTaperedPolygon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromWidth(value: Double): Self = StObject.set(x, "fromWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromWidthUndefined: Self = StObject.set(x, "fromWidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectTaperedPolygon): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def setFromWidth(value: Double): Self = this.set("fromWidth", value.asInstanceOf[js.Any])
+    def setToWidth(value: Double): Self = StObject.set(x, "toWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFromWidth: Self = this.set("fromWidth", js.undefined)
+    def setToWidthUndefined: Self = StObject.set(x, "toWidth", js.undefined)
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
-    
-    @scala.inline
-    def setToWidth(value: Double): Self = this.set("toWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToWidth: Self = this.set("toWidth", js.undefined)
+    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectTaperedPolygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

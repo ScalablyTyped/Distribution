@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransformInput extends js.Object {
+trait TransformInput extends StObject {
   
   /**
     * If your transform data is compressed, specify the compression type. Amazon SageMaker automatically decompresses the data for the transform job accordingly. The default value is None.
@@ -36,39 +37,27 @@ object TransformInput {
   }
   
   @scala.inline
-  implicit class TransformInputOps[Self <: TransformInput] (val x: Self) extends AnyVal {
+  implicit class TransformInputMutableBuilder[Self <: TransformInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompressionType(value: CompressionType): Self = StObject.set(x, "CompressionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompressionTypeUndefined: Self = StObject.set(x, "CompressionType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: TransformDataSource): Self = this.set("DataSource", value.asInstanceOf[js.Any])
+    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
     @scala.inline
-    def setCompressionType(value: CompressionType): Self = this.set("CompressionType", value.asInstanceOf[js.Any])
+    def setDataSource(value: TransformDataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompressionType: Self = this.set("CompressionType", js.undefined)
+    def setSplitType(value: SplitType): Self = StObject.set(x, "SplitType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: ContentType): Self = this.set("ContentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentType: Self = this.set("ContentType", js.undefined)
-    
-    @scala.inline
-    def setSplitType(value: SplitType): Self = this.set("SplitType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSplitType: Self = this.set("SplitType", js.undefined)
+    def setSplitTypeUndefined: Self = StObject.set(x, "SplitType", js.undefined)
   }
 }

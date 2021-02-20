@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SortOrderType extends js.Object
+sealed trait SortOrderType extends StObject
 @JSImport("vso-node-api/interfaces/GalleryInterfaces", "SortOrderType")
 @js.native
-object SortOrderType extends js.Object {
+object SortOrderType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SortOrderType with Double] = js.native
@@ -19,22 +19,19 @@ object SortOrderType extends js.Object {
     */
   @js.native
   sealed trait Ascending extends SortOrderType
-  /* 1 */ @js.native
-  object Ascending extends TopLevel[Ascending with Double]
+  /* 1 */ val Ascending: typings.vsoNodeApi.galleryInterfacesMod.SortOrderType.Ascending with Double = js.native
   
   /**
     * Results will be sorted in the default order as per the sorting type defined. The default varies for each type, e.g. for Relevance, default is Descnding, for Title default is Ascending etc.
     */
   @js.native
   sealed trait Default extends SortOrderType
-  /* 0 */ @js.native
-  object Default extends TopLevel[Default with Double]
+  /* 0 */ val Default: typings.vsoNodeApi.galleryInterfacesMod.SortOrderType.Default with Double = js.native
   
   /**
     * The results will be sorted in Descending order
     */
   @js.native
   sealed trait Descending extends SortOrderType
-  /* 2 */ @js.native
-  object Descending extends TopLevel[Descending with Double]
+  /* 2 */ val Descending: typings.vsoNodeApi.galleryInterfacesMod.SortOrderType.Descending with Double = js.native
 }

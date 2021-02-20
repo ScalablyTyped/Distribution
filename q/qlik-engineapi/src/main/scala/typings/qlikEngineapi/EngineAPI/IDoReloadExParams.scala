@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * DoReloadExParams...
   */
 @js.native
-trait IDoReloadExParams extends js.Object {
+trait IDoReloadExParams extends StObject {
   
   /**
     * Set to true if debug breakpoints are to be honored.
@@ -44,36 +45,24 @@ object IDoReloadExParams {
   }
   
   @scala.inline
-  implicit class IDoReloadExParamsOps[Self <: IDoReloadExParams] (val x: Self) extends AnyVal {
+  implicit class IDoReloadExParamsMutableBuilder[Self <: IDoReloadExParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQDebug(value: Boolean): Self = StObject.set(x, "qDebug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQDebugUndefined: Self = StObject.set(x, "qDebug", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQMode(value: Double): Self = StObject.set(x, "qMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDebug(value: Boolean): Self = this.set("qDebug", value.asInstanceOf[js.Any])
+    def setQModeUndefined: Self = StObject.set(x, "qMode", js.undefined)
     
     @scala.inline
-    def deleteQDebug: Self = this.set("qDebug", js.undefined)
+    def setQPartial(value: Boolean): Self = StObject.set(x, "qPartial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQMode(value: Double): Self = this.set("qMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQMode: Self = this.set("qMode", js.undefined)
-    
-    @scala.inline
-    def setQPartial(value: Boolean): Self = this.set("qPartial", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQPartial: Self = this.set("qPartial", js.undefined)
+    def setQPartialUndefined: Self = StObject.set(x, "qPartial", js.undefined)
   }
 }

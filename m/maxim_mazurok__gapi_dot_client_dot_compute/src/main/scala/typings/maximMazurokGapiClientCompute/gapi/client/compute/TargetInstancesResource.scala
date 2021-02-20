@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientCompute.anon.Fields
 import typings.maximMazurokGapiClientCompute.anon.PrettyPrintProjectQuotaUserRequestIdResourceUserIpZone
 import typings.maximMazurokGapiClientCompute.anon.QuotaUserTargetInstance
 import typings.maximMazurokGapiClientCompute.anon.UserIp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetInstancesResource extends js.Object {
+trait TargetInstancesResource extends StObject {
   
   /** Retrieves an aggregated list of target instances. */
   def aggregatedList(): Request[TargetInstanceAggregatedList] = js.native

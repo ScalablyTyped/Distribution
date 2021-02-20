@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Page
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WindowOpenEvent extends js.Object {
+trait WindowOpenEvent extends StObject {
   
   /**
     * The URL for the new window.
@@ -36,33 +37,21 @@ object WindowOpenEvent {
   }
   
   @scala.inline
-  implicit class WindowOpenEventOps[Self <: WindowOpenEvent] (val x: Self) extends AnyVal {
+  implicit class WindowOpenEventMutableBuilder[Self <: WindowOpenEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUserGesture(value: Boolean): Self = StObject.set(x, "userGesture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWindowFeatures(value: js.Array[String]): Self = StObject.set(x, "windowFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setWindowFeaturesVarargs(value: String*): Self = StObject.set(x, "windowFeatures", js.Array(value :_*))
     
     @scala.inline
-    def setUserGesture(value: Boolean): Self = this.set("userGesture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowFeaturesVarargs(value: String*): Self = this.set("windowFeatures", js.Array(value :_*))
-    
-    @scala.inline
-    def setWindowFeatures(value: js.Array[String]): Self = this.set("windowFeatures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowName(value: String): Self = this.set("windowName", value.asInstanceOf[js.Any])
+    def setWindowName(value: String): Self = StObject.set(x, "windowName", value.asInstanceOf[js.Any])
   }
 }

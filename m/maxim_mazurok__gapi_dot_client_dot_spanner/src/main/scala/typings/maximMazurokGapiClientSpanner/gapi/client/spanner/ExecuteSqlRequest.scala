@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecuteSqlRequest extends js.Object {
+trait ExecuteSqlRequest extends StObject {
   
   /**
     * It is not always possible for Cloud Spanner to infer the right SQL type from a JSON value. For example, values of type `BYTES` and values of type `STRING` both appear in params as
@@ -75,80 +76,68 @@ object ExecuteSqlRequest {
   }
   
   @scala.inline
-  implicit class ExecuteSqlRequestOps[Self <: ExecuteSqlRequest] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ExecuteSqlRequestMutableBuilder[Self <: ExecuteSqlRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setParamTypes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.Type}
       */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ExecuteSqlRequest with TopLevel[js.Any]
-    ): Self = this.set("paramTypes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "paramTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParamTypes: Self = this.set("paramTypes", js.undefined)
+    def setParamTypesUndefined: Self = StObject.set(x, "paramTypes", js.undefined)
     
     @scala.inline
     def setParams(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ExecuteSqlRequest with TopLevel[js.Any]
-    ): Self = this.set("params", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def setPartitionToken(value: String): Self = this.set("partitionToken", value.asInstanceOf[js.Any])
+    def setPartitionToken(value: String): Self = StObject.set(x, "partitionToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePartitionToken: Self = this.set("partitionToken", js.undefined)
+    def setPartitionTokenUndefined: Self = StObject.set(x, "partitionToken", js.undefined)
     
     @scala.inline
-    def setQueryMode(value: String): Self = this.set("queryMode", value.asInstanceOf[js.Any])
+    def setQueryMode(value: String): Self = StObject.set(x, "queryMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQueryMode: Self = this.set("queryMode", js.undefined)
+    def setQueryModeUndefined: Self = StObject.set(x, "queryMode", js.undefined)
     
     @scala.inline
-    def setQueryOptions(value: QueryOptions): Self = this.set("queryOptions", value.asInstanceOf[js.Any])
+    def setQueryOptions(value: QueryOptions): Self = StObject.set(x, "queryOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQueryOptions: Self = this.set("queryOptions", js.undefined)
+    def setQueryOptionsUndefined: Self = StObject.set(x, "queryOptions", js.undefined)
     
     @scala.inline
-    def setResumeToken(value: String): Self = this.set("resumeToken", value.asInstanceOf[js.Any])
+    def setResumeToken(value: String): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResumeToken: Self = this.set("resumeToken", js.undefined)
+    def setResumeTokenUndefined: Self = StObject.set(x, "resumeToken", js.undefined)
     
     @scala.inline
-    def setSeqno(value: String): Self = this.set("seqno", value.asInstanceOf[js.Any])
+    def setSeqno(value: String): Self = StObject.set(x, "seqno", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSeqno: Self = this.set("seqno", js.undefined)
+    def setSeqnoUndefined: Self = StObject.set(x, "seqno", js.undefined)
     
     @scala.inline
-    def setSql(value: String): Self = this.set("sql", value.asInstanceOf[js.Any])
+    def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSql: Self = this.set("sql", js.undefined)
+    def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
     
     @scala.inline
-    def setTransaction(value: TransactionSelector): Self = this.set("transaction", value.asInstanceOf[js.Any])
+    def setTransaction(value: TransactionSelector): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransaction: Self = this.set("transaction", js.undefined)
+    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

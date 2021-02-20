@@ -1,5 +1,6 @@
 package typings.wicgMediasession
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wicgMediasession.wicgMediasessionStrings.paused
   - typings.wicgMediasession.wicgMediasessionStrings.playing
 */
-trait MediaSessionPlaybackState extends js.Object
+trait MediaSessionPlaybackState extends StObject
 object MediaSessionPlaybackState {
   
   @scala.inline

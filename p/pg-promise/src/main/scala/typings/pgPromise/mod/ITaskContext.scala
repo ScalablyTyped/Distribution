@@ -1,6 +1,7 @@
 package typings.pgPromise.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Event context extension for tasks + transactions;
 // See: http://vitaly-t.github.io/pg-promise/global.html#TaskContext
 @js.native
-trait ITaskContext extends js.Object {
+trait ITaskContext extends StObject {
   
   val connected: Boolean = js.native
   
@@ -67,84 +68,72 @@ object ITaskContext {
   }
   
   @scala.inline
-  implicit class ITaskContextOps[Self <: ITaskContext] (val x: Self) extends AnyVal {
+  implicit class ITaskContextMutableBuilder[Self <: ITaskContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDc(value: js.Any): Self = StObject.set(x, "dc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnected(value: Boolean): Self = this.set("connected", value.asInstanceOf[js.Any])
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: js.Any): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def setDc(value: js.Any): Self = this.set("dc", value.asInstanceOf[js.Any])
+    def setFinish(value: Date): Self = StObject.set(x, "finish", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInTransaction(value: Boolean): Self = this.set("inTransaction", value.asInstanceOf[js.Any])
+    def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
     
     @scala.inline
-    def setIsTX(value: Boolean): Self = this.set("isTX", value.asInstanceOf[js.Any])
+    def setInTransaction(value: Boolean): Self = StObject.set(x, "inTransaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setIsTX(value: Boolean): Self = StObject.set(x, "isTX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerVersion(value: String): Self = this.set("serverVersion", value.asInstanceOf[js.Any])
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: Date): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setParent(value: ITaskContext): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: js.Any): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setParentNull: Self = StObject.set(x, "parent", null)
     
     @scala.inline
-    def setUseCount(value: Double): Self = this.set("useCount", value.asInstanceOf[js.Any])
+    def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setServerVersion(value: String): Self = StObject.set(x, "serverVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinish(value: Date): Self = this.set("finish", value.asInstanceOf[js.Any])
+    def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFinish: Self = this.set("finish", js.undefined)
+    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: ITaskContext): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def setParentNull: Self = this.set("parent", null)
+    def setTag(value: js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: js.Any): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setTxLevel(value: Double): Self = StObject.set(x, "txLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResult: Self = this.set("result", js.undefined)
+    def setTxLevelUndefined: Self = StObject.set(x, "txLevel", js.undefined)
     
     @scala.inline
-    def setSuccess(value: Boolean): Self = this.set("success", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
-    
-    @scala.inline
-    def setTxLevel(value: Double): Self = this.set("txLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTxLevel: Self = this.set("txLevel", js.undefined)
+    def setUseCount(value: Double): Self = StObject.set(x, "useCount", value.asInstanceOf[js.Any])
   }
 }

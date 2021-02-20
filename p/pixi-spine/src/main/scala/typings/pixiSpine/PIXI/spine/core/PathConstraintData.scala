@@ -1,5 +1,6 @@
 package typings.pixiSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,51 +51,39 @@ object PathConstraintData {
   }
   
   @scala.inline
-  implicit class PathConstraintDataOps[Self <: PathConstraintData] (val x: Self) extends AnyVal {
+  implicit class PathConstraintDataMutableBuilder[Self <: PathConstraintData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBones(value: js.Array[BoneData]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBonesVarargs(value: BoneData*): Self = StObject.set(x, "bones", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffsetRotation(value: Double): Self = StObject.set(x, "offsetRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBonesVarargs(value: BoneData*): Self = this.set("bones", js.Array(value :_*))
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBones(value: js.Array[BoneData]): Self = this.set("bones", value.asInstanceOf[js.Any])
+    def setPositionMode(value: PositionMode): Self = StObject.set(x, "positionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetRotation(value: Double): Self = this.set("offsetRotation", value.asInstanceOf[js.Any])
+    def setRotateMix(value: Double): Self = StObject.set(x, "rotateMix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setRotateMode(value: RotateMode): Self = StObject.set(x, "rotateMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionMode(value: PositionMode): Self = this.set("positionMode", value.asInstanceOf[js.Any])
+    def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotateMix(value: Double): Self = this.set("rotateMix", value.asInstanceOf[js.Any])
+    def setSpacingMode(value: SpacingMode): Self = StObject.set(x, "spacingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotateMode(value: RotateMode): Self = this.set("rotateMode", value.asInstanceOf[js.Any])
+    def setTarget(value: SlotData): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpacing(value: Double): Self = this.set("spacing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpacingMode(value: SpacingMode): Self = this.set("spacingMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: SlotData): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTranslateMix(value: Double): Self = this.set("translateMix", value.asInstanceOf[js.Any])
+    def setTranslateMix(value: Double): Self = StObject.set(x, "translateMix", value.asInstanceOf[js.Any])
   }
 }

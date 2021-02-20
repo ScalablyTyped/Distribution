@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetRepositoriesOutput extends js.Object {
+trait BatchGetRepositoriesOutput extends StObject {
   
   /**
     * A list of repositories returned by the batch get repositories operation.
@@ -26,36 +27,24 @@ object BatchGetRepositoriesOutput {
   }
   
   @scala.inline
-  implicit class BatchGetRepositoriesOutputOps[Self <: BatchGetRepositoriesOutput] (val x: Self) extends AnyVal {
+  implicit class BatchGetRepositoriesOutputMutableBuilder[Self <: BatchGetRepositoriesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRepositories(value: RepositoryMetadataList): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRepositoriesNotFound(value: RepositoryNotFoundList): Self = StObject.set(x, "repositoriesNotFound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepositoriesNotFoundUndefined: Self = StObject.set(x, "repositoriesNotFound", js.undefined)
     
     @scala.inline
-    def setRepositoriesVarargs(value: RepositoryMetadata*): Self = this.set("repositories", js.Array(value :_*))
+    def setRepositoriesNotFoundVarargs(value: RepositoryName*): Self = StObject.set(x, "repositoriesNotFound", js.Array(value :_*))
     
     @scala.inline
-    def setRepositories(value: RepositoryMetadataList): Self = this.set("repositories", value.asInstanceOf[js.Any])
+    def setRepositoriesUndefined: Self = StObject.set(x, "repositories", js.undefined)
     
     @scala.inline
-    def deleteRepositories: Self = this.set("repositories", js.undefined)
-    
-    @scala.inline
-    def setRepositoriesNotFoundVarargs(value: RepositoryName*): Self = this.set("repositoriesNotFound", js.Array(value :_*))
-    
-    @scala.inline
-    def setRepositoriesNotFound(value: RepositoryNotFoundList): Self = this.set("repositoriesNotFound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepositoriesNotFound: Self = this.set("repositoriesNotFound", js.undefined)
+    def setRepositoriesVarargs(value: RepositoryMetadata*): Self = StObject.set(x, "repositories", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LiveStreamStatus extends js.Object {
+trait LiveStreamStatus extends StObject {
   
   /** The health status of the stream. */
   var healthStatus: js.UndefOr[LiveStreamHealthStatus] = js.native
@@ -21,30 +22,18 @@ object LiveStreamStatus {
   }
   
   @scala.inline
-  implicit class LiveStreamStatusOps[Self <: LiveStreamStatus] (val x: Self) extends AnyVal {
+  implicit class LiveStreamStatusMutableBuilder[Self <: LiveStreamStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHealthStatus(value: LiveStreamHealthStatus): Self = StObject.set(x, "healthStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHealthStatusUndefined: Self = StObject.set(x, "healthStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStreamStatus(value: String): Self = StObject.set(x, "streamStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthStatus(value: LiveStreamHealthStatus): Self = this.set("healthStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHealthStatus: Self = this.set("healthStatus", js.undefined)
-    
-    @scala.inline
-    def setStreamStatus(value: String): Self = this.set("streamStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamStatus: Self = this.set("streamStatus", js.undefined)
+    def setStreamStatusUndefined: Self = StObject.set(x, "streamStatus", js.undefined)
   }
 }

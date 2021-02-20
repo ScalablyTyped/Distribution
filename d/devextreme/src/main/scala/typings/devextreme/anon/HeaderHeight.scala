@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeaderHeight extends js.Object {
+trait HeaderHeight extends StObject {
   
   var border: js.UndefOr[ColorWidth] = js.native
   
@@ -30,60 +31,48 @@ object HeaderHeight {
   }
   
   @scala.inline
-  implicit class HeaderHeightOps[Self <: HeaderHeight] (val x: Self) extends AnyVal {
+  implicit class HeaderHeightMutableBuilder[Self <: HeaderHeight] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorder(value: ColorWidth): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: ColorWidth): Self = this.set("border", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteBorder: Self = this.set("border", js.undefined)
+    def setHeaderHeight(value: Double): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setHeaderHeightUndefined: Self = StObject.set(x, "headerHeight", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setHoverEnabled(value: Boolean): Self = StObject.set(x, "hoverEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderHeight(value: Double): Self = this.set("headerHeight", value.asInstanceOf[js.Any])
+    def setHoverEnabledUndefined: Self = StObject.set(x, "hoverEnabled", js.undefined)
     
     @scala.inline
-    def deleteHeaderHeight: Self = this.set("headerHeight", js.undefined)
+    def setHoverStyle(value: `30`): Self = StObject.set(x, "hoverStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverEnabled(value: Boolean): Self = this.set("hoverEnabled", value.asInstanceOf[js.Any])
+    def setHoverStyleUndefined: Self = StObject.set(x, "hoverStyle", js.undefined)
     
     @scala.inline
-    def deleteHoverEnabled: Self = this.set("hoverEnabled", js.undefined)
+    def setLabel(value: TextOverflow): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverStyle(value: `30`): Self = this.set("hoverStyle", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteHoverStyle: Self = this.set("hoverStyle", js.undefined)
+    def setSelectionStyle(value: `30`): Self = StObject.set(x, "selectionStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: TextOverflow): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
-    
-    @scala.inline
-    def setSelectionStyle(value: `30`): Self = this.set("selectionStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectionStyle: Self = this.set("selectionStyle", js.undefined)
+    def setSelectionStyleUndefined: Self = StObject.set(x, "selectionStyle", js.undefined)
   }
 }

@@ -1,20 +1,29 @@
 package typings.bitcoinjsLib
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bitcoinjs-lib/types/templates/witnesspubkeyhash/output", JSImport.Namespace)
-@js.native
-object witnesspubkeyhashOutputMod extends js.Object {
+object witnesspubkeyhashOutputMod {
   
-  @js.native
-  object check extends js.Object {
+  object check {
     
+    @JSImport("bitcoinjs-lib/types/templates/witnesspubkeyhash/output", "check")
+    @js.native
     def apply(script: js.Array[Double | Buffer]): Boolean = js.native
+    @JSImport("bitcoinjs-lib/types/templates/witnesspubkeyhash/output", "check")
+    @js.native
     def apply(script: Buffer): Boolean = js.native
+    @JSImport("bitcoinjs-lib/types/templates/witnesspubkeyhash/output", "check")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var toJSON: js.Function0[String] = js.native
+    @JSImport("bitcoinjs-lib/types/templates/witnesspubkeyhash/output", "check.toJSON")
+    @js.native
+    def toJSON: js.Function0[String] = js.native
+    @scala.inline
+    def toJSON_=(x: js.Function0[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toJSON")(x.asInstanceOf[js.Any])
   }
 }

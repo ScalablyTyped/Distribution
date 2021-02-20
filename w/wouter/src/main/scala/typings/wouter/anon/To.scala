@@ -1,12 +1,13 @@
 package typings.wouter.anon
 
 import typings.wouter.wouterUseLocationMod.Path
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait To extends js.Object {
+trait To extends StObject {
   
   var href: Path = js.native
   
@@ -21,21 +22,9 @@ object To {
   }
   
   @scala.inline
-  implicit class ToOps[Self <: To] (val x: Self) extends AnyVal {
+  implicit class ToMutableBuilder[Self <: To] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHref(value: Path): Self = this.set("href", value.asInstanceOf[js.Any])
+    def setHref(value: Path): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
   }
 }

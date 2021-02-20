@@ -11,12 +11,13 @@ import typings.devextreme.mod.DevExpress.ui.RangeRule
 import typings.devextreme.mod.DevExpress.ui.RequiredRule
 import typings.devextreme.mod.DevExpress.ui.StringLengthRule
 import typings.devextreme.mod.global.JQueryPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrokenRules[T] extends js.Object {
+trait BrokenRules[T] extends StObject {
   
   var brokenRules: js.UndefOr[
     js.Array[
@@ -51,87 +52,75 @@ object BrokenRules {
   }
   
   @scala.inline
-  implicit class BrokenRulesOps[Self <: BrokenRules[_], T] (val x: Self with BrokenRules[T]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBrokenRulesVarargs(
-      value: (RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule)*
-    ): Self = this.set("brokenRules", js.Array(value :_*))
+  implicit class BrokenRulesMutableBuilder[Self <: BrokenRules[_], T] (val x: Self with BrokenRules[T]) extends AnyVal {
     
     @scala.inline
     def setBrokenRules(
       value: js.Array[
           RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
         ]
-    ): Self = this.set("brokenRules", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "brokenRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBrokenRules: Self = this.set("brokenRules", js.undefined)
+    def setBrokenRulesUndefined: Self = StObject.set(x, "brokenRules", js.undefined)
     
     @scala.inline
-    def setComponent(value: T): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setBrokenRulesVarargs(
+      value: (RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule)*
+    ): Self = StObject.set(x, "brokenRules", js.Array(value :_*))
     
     @scala.inline
-    def deleteComponent: Self = this.set("component", js.undefined)
+    def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: dxElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
+    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorText(value: String): Self = this.set("errorText", value.asInstanceOf[js.Any])
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def deleteErrorText: Self = this.set("errorText", js.undefined)
+    def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsValid(value: Boolean): Self = this.set("isValid", value.asInstanceOf[js.Any])
+    def setErrorTextUndefined: Self = StObject.set(x, "errorText", js.undefined)
     
     @scala.inline
-    def deleteIsValid: Self = this.set("isValid", js.undefined)
+    def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: js.Any): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewData(value: js.Any): Self = this.set("newData", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteNewData: Self = this.set("newData", js.undefined)
+    def setNewData(value: js.Any): Self = StObject.set(x, "newData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldData(value: js.Any): Self = this.set("oldData", value.asInstanceOf[js.Any])
+    def setNewDataUndefined: Self = StObject.set(x, "newData", js.undefined)
     
     @scala.inline
-    def deleteOldData: Self = this.set("oldData", js.undefined)
+    def setOldData(value: js.Any): Self = StObject.set(x, "oldData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromise(value: typings.devextreme.mod.global.Promise[Unit] | JQueryPromise[Unit]): Self = this.set("promise", value.asInstanceOf[js.Any])
+    def setOldDataUndefined: Self = StObject.set(x, "oldData", js.undefined)
     
     @scala.inline
-    def deletePromise: Self = this.set("promise", js.undefined)
+    def setPromise(value: typings.devextreme.mod.global.Promise[Unit] | JQueryPromise[Unit]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
   }
 }

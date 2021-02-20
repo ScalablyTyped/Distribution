@@ -1,15 +1,14 @@
 package typings.reactMdl.mod
 
-import typings.react.mod.AllHTMLAttributes
-import typings.react.mod.ClassAttributes
+import typings.react.mod.HTMLProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CellProps
-  extends AllHTMLAttributes[js.Any]
-     with ClassAttributes[js.Any]
+  extends HTMLProps[js.Any]
      with CustomRenderedComponent
      with ShadowedComponent {
   
@@ -44,81 +43,69 @@ object CellProps {
   }
   
   @scala.inline
-  implicit class CellPropsOps[Self <: CellProps] (val x: Self) extends AnyVal {
+  implicit class CellPropsMutableBuilder[Self <: CellProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCol(value: Double): Self = this.set("col", value.asInstanceOf[js.Any])
+    def setHideDesktop(value: Boolean): Self = StObject.set(x, "hideDesktop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setHideDesktopUndefined: Self = StObject.set(x, "hideDesktop", js.undefined)
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setHidePhone(value: Boolean): Self = StObject.set(x, "hidePhone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideDesktop(value: Boolean): Self = this.set("hideDesktop", value.asInstanceOf[js.Any])
+    def setHidePhoneUndefined: Self = StObject.set(x, "hidePhone", js.undefined)
     
     @scala.inline
-    def deleteHideDesktop: Self = this.set("hideDesktop", js.undefined)
+    def setHideTablet(value: Boolean): Self = StObject.set(x, "hideTablet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidePhone(value: Boolean): Self = this.set("hidePhone", value.asInstanceOf[js.Any])
+    def setHideTabletUndefined: Self = StObject.set(x, "hideTablet", js.undefined)
     
     @scala.inline
-    def deleteHidePhone: Self = this.set("hidePhone", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideTablet(value: Boolean): Self = this.set("hideTablet", value.asInstanceOf[js.Any])
+    def setOffsetDesktop(value: Double): Self = StObject.set(x, "offsetDesktop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHideTablet: Self = this.set("hideTablet", js.undefined)
+    def setOffsetDesktopUndefined: Self = StObject.set(x, "offsetDesktop", js.undefined)
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOffsetPhone(value: Double): Self = StObject.set(x, "offsetPhone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setOffsetPhoneUndefined: Self = StObject.set(x, "offsetPhone", js.undefined)
     
     @scala.inline
-    def setOffsetDesktop(value: Double): Self = this.set("offsetDesktop", value.asInstanceOf[js.Any])
+    def setOffsetTablet(value: Double): Self = StObject.set(x, "offsetTablet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffsetDesktop: Self = this.set("offsetDesktop", js.undefined)
+    def setOffsetTabletUndefined: Self = StObject.set(x, "offsetTablet", js.undefined)
     
     @scala.inline
-    def setOffsetPhone(value: Double): Self = this.set("offsetPhone", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteOffsetPhone: Self = this.set("offsetPhone", js.undefined)
+    def setPhone(value: Double): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetTablet(value: Double): Self = this.set("offsetTablet", value.asInstanceOf[js.Any])
+    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
     
     @scala.inline
-    def deleteOffsetTablet: Self = this.set("offsetTablet", js.undefined)
+    def setTablet(value: Double): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhone(value: Double): Self = this.set("phone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhone: Self = this.set("phone", js.undefined)
-    
-    @scala.inline
-    def setTablet(value: Double): Self = this.set("tablet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTablet: Self = this.set("tablet", js.undefined)
+    def setTabletUndefined: Self = StObject.set(x, "tablet", js.undefined)
   }
 }

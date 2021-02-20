@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReservationPlan extends js.Object {
+trait ReservationPlan extends StObject {
   
   /**
     * The length of the term of your reserved queue pricing plan commitment.
@@ -46,54 +47,42 @@ object ReservationPlan {
   }
   
   @scala.inline
-  implicit class ReservationPlanOps[Self <: ReservationPlan] (val x: Self) extends AnyVal {
+  implicit class ReservationPlanMutableBuilder[Self <: ReservationPlan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitment(value: Commitment): Self = StObject.set(x, "Commitment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommitmentUndefined: Self = StObject.set(x, "Commitment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpiresAt(value: timestampUnix): Self = StObject.set(x, "ExpiresAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitment(value: Commitment): Self = this.set("Commitment", value.asInstanceOf[js.Any])
+    def setExpiresAtUndefined: Self = StObject.set(x, "ExpiresAt", js.undefined)
     
     @scala.inline
-    def deleteCommitment: Self = this.set("Commitment", js.undefined)
+    def setPurchasedAt(value: timestampUnix): Self = StObject.set(x, "PurchasedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiresAt(value: timestampUnix): Self = this.set("ExpiresAt", value.asInstanceOf[js.Any])
+    def setPurchasedAtUndefined: Self = StObject.set(x, "PurchasedAt", js.undefined)
     
     @scala.inline
-    def deleteExpiresAt: Self = this.set("ExpiresAt", js.undefined)
+    def setRenewalType(value: RenewalType): Self = StObject.set(x, "RenewalType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurchasedAt(value: timestampUnix): Self = this.set("PurchasedAt", value.asInstanceOf[js.Any])
+    def setRenewalTypeUndefined: Self = StObject.set(x, "RenewalType", js.undefined)
     
     @scala.inline
-    def deletePurchasedAt: Self = this.set("PurchasedAt", js.undefined)
+    def setReservedSlots(value: integer): Self = StObject.set(x, "ReservedSlots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenewalType(value: RenewalType): Self = this.set("RenewalType", value.asInstanceOf[js.Any])
+    def setReservedSlotsUndefined: Self = StObject.set(x, "ReservedSlots", js.undefined)
     
     @scala.inline
-    def deleteRenewalType: Self = this.set("RenewalType", js.undefined)
+    def setStatus(value: ReservationPlanStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservedSlots(value: integer): Self = this.set("ReservedSlots", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservedSlots: Self = this.set("ReservedSlots", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: ReservationPlanStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

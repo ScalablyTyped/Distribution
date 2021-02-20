@@ -4,12 +4,13 @@ import typings.cesium.mod.Cartesian3
 import typings.std.Uint16Array
 import typings.std.Uint32Array
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BoundingSphere extends js.Object {
+trait BoundingSphere extends StObject {
   
   var boundingSphere: typings.cesium.mod.BoundingSphere = js.native
   
@@ -71,96 +72,84 @@ object BoundingSphere {
   }
   
   @scala.inline
-  implicit class BoundingSphereOps[Self <: BoundingSphere] (val x: Self) extends AnyVal {
+  implicit class BoundingSphereMutableBuilder[Self <: BoundingSphere] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingSphere(value: typings.cesium.mod.BoundingSphere): Self = StObject.set(x, "boundingSphere", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildTileMask(value: Double): Self = StObject.set(x, "childTileMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildTileMaskUndefined: Self = StObject.set(x, "childTileMask", js.undefined)
     
     @scala.inline
-    def setBoundingSphere(value: typings.cesium.mod.BoundingSphere): Self = this.set("boundingSphere", value.asInstanceOf[js.Any])
+    def setCreatedByUpsampling(value: Boolean): Self = StObject.set(x, "createdByUpsampling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEastIndicesVarargs(value: Double*): Self = this.set("eastIndices", js.Array(value :_*))
+    def setCreatedByUpsamplingUndefined: Self = StObject.set(x, "createdByUpsampling", js.undefined)
     
     @scala.inline
-    def setEastIndices(value: js.Array[Double]): Self = this.set("eastIndices", value.asInstanceOf[js.Any])
+    def setEastIndices(value: js.Array[Double]): Self = StObject.set(x, "eastIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEastSkirtHeight(value: Double): Self = this.set("eastSkirtHeight", value.asInstanceOf[js.Any])
+    def setEastIndicesVarargs(value: Double*): Self = StObject.set(x, "eastIndices", js.Array(value :_*))
     
     @scala.inline
-    def setHorizonOcclusionPoint(value: Cartesian3): Self = this.set("horizonOcclusionPoint", value.asInstanceOf[js.Any])
+    def setEastSkirtHeight(value: Double): Self = StObject.set(x, "eastSkirtHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndices(value: Uint16Array | Uint32Array): Self = this.set("indices", value.asInstanceOf[js.Any])
+    def setEncodedNormals(value: Uint8Array): Self = StObject.set(x, "encodedNormals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumHeight(value: Double): Self = this.set("maximumHeight", value.asInstanceOf[js.Any])
+    def setEncodedNormalsUndefined: Self = StObject.set(x, "encodedNormals", js.undefined)
     
     @scala.inline
-    def setMinimumHeight(value: Double): Self = this.set("minimumHeight", value.asInstanceOf[js.Any])
+    def setHorizonOcclusionPoint(value: Cartesian3): Self = StObject.set(x, "horizonOcclusionPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNorthIndicesVarargs(value: Double*): Self = this.set("northIndices", js.Array(value :_*))
+    def setIndices(value: Uint16Array | Uint32Array): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNorthIndices(value: js.Array[Double]): Self = this.set("northIndices", value.asInstanceOf[js.Any])
+    def setMaximumHeight(value: Double): Self = StObject.set(x, "maximumHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNorthSkirtHeight(value: Double): Self = this.set("northSkirtHeight", value.asInstanceOf[js.Any])
+    def setMinimumHeight(value: Double): Self = StObject.set(x, "minimumHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantizedVertices(value: Uint16Array): Self = this.set("quantizedVertices", value.asInstanceOf[js.Any])
+    def setNorthIndices(value: js.Array[Double]): Self = StObject.set(x, "northIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSouthIndicesVarargs(value: Double*): Self = this.set("southIndices", js.Array(value :_*))
+    def setNorthIndicesVarargs(value: Double*): Self = StObject.set(x, "northIndices", js.Array(value :_*))
     
     @scala.inline
-    def setSouthIndices(value: js.Array[Double]): Self = this.set("southIndices", value.asInstanceOf[js.Any])
+    def setNorthSkirtHeight(value: Double): Self = StObject.set(x, "northSkirtHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSouthSkirtHeight(value: Double): Self = this.set("southSkirtHeight", value.asInstanceOf[js.Any])
+    def setQuantizedVertices(value: Uint16Array): Self = StObject.set(x, "quantizedVertices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWestIndicesVarargs(value: Double*): Self = this.set("westIndices", js.Array(value :_*))
+    def setSouthIndices(value: js.Array[Double]): Self = StObject.set(x, "southIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWestIndices(value: js.Array[Double]): Self = this.set("westIndices", value.asInstanceOf[js.Any])
+    def setSouthIndicesVarargs(value: Double*): Self = StObject.set(x, "southIndices", js.Array(value :_*))
     
     @scala.inline
-    def setWestSkirtHeight(value: Double): Self = this.set("westSkirtHeight", value.asInstanceOf[js.Any])
+    def setSouthSkirtHeight(value: Double): Self = StObject.set(x, "southSkirtHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildTileMask(value: Double): Self = this.set("childTileMask", value.asInstanceOf[js.Any])
+    def setWaterMask(value: Uint8Array): Self = StObject.set(x, "waterMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildTileMask: Self = this.set("childTileMask", js.undefined)
+    def setWaterMaskUndefined: Self = StObject.set(x, "waterMask", js.undefined)
     
     @scala.inline
-    def setCreatedByUpsampling(value: Boolean): Self = this.set("createdByUpsampling", value.asInstanceOf[js.Any])
+    def setWestIndices(value: js.Array[Double]): Self = StObject.set(x, "westIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedByUpsampling: Self = this.set("createdByUpsampling", js.undefined)
+    def setWestIndicesVarargs(value: Double*): Self = StObject.set(x, "westIndices", js.Array(value :_*))
     
     @scala.inline
-    def setEncodedNormals(value: Uint8Array): Self = this.set("encodedNormals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncodedNormals: Self = this.set("encodedNormals", js.undefined)
-    
-    @scala.inline
-    def setWaterMask(value: Uint8Array): Self = this.set("waterMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaterMask: Self = this.set("waterMask", js.undefined)
+    def setWestSkirtHeight(value: Double): Self = StObject.set(x, "westSkirtHeight", value.asInstanceOf[js.Any])
   }
 }

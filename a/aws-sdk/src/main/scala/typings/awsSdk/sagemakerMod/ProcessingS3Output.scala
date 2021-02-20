@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProcessingS3Output extends js.Object {
+trait ProcessingS3Output extends StObject {
   
   /**
     * The local path to the Amazon S3 bucket where you want Amazon SageMaker to save the results of an processing job. LocalPath is an absolute path to the input data.
@@ -31,27 +32,15 @@ object ProcessingS3Output {
   }
   
   @scala.inline
-  implicit class ProcessingS3OutputOps[Self <: ProcessingS3Output] (val x: Self) extends AnyVal {
+  implicit class ProcessingS3OutputMutableBuilder[Self <: ProcessingS3Output] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalPath(value: ProcessingLocalPath): Self = StObject.set(x, "LocalPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setS3UploadMode(value: ProcessingS3UploadMode): Self = StObject.set(x, "S3UploadMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLocalPath(value: ProcessingLocalPath): Self = this.set("LocalPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setS3UploadMode(value: ProcessingS3UploadMode): Self = this.set("S3UploadMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setS3Uri(value: S3Uri): Self = this.set("S3Uri", value.asInstanceOf[js.Any])
+    def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
   }
 }

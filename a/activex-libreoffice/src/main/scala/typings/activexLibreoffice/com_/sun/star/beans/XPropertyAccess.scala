@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,27 +49,15 @@ object XPropertyAccess {
   }
   
   @scala.inline
-  implicit class XPropertyAccessOps[Self <: XPropertyAccess] (val x: Self) extends AnyVal {
+  implicit class XPropertyAccessMutableBuilder[Self <: XPropertyAccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetPropertyValues(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getPropertyValues", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPropertyValues(value: SafeArray[PropertyValue]): Self = StObject.set(x, "PropertyValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPropertyValues(value: SafeArray[PropertyValue]): Self = this.set("PropertyValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetPropertyValues(value: () => SafeArray[PropertyValue]): Self = this.set("getPropertyValues", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetPropertyValues(value: SeqEquiv[PropertyValue] => Unit): Self = this.set("setPropertyValues", js.Any.fromFunction1(value))
+    def setSetPropertyValues(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "setPropertyValues", js.Any.fromFunction1(value))
   }
 }

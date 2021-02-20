@@ -1,5 +1,6 @@
 package typings.tuyaPanelKit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.tuyaPanelKit.tuyaPanelKitStrings.BLE
   - typings.tuyaPanelKit.tuyaPanelKitStrings.NONE
 */
-trait NetworkType extends js.Object
+trait NetworkType extends StObject
 object NetworkType {
   
   @scala.inline

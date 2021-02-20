@@ -3,16 +3,22 @@ package typings.xstream
 import typings.xstream.mod.InternalListener
 import typings.xstream.mod.Operator
 import typings.xstream.mod.Stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xstream/extra/sampleCombine", JSImport.Namespace)
-@js.native
-object sampleCombineMod extends js.Object {
+object sampleCombineMod {
   
-  var default: SampleCombineSignature = js.native
+  @JSImport("xstream/extra/sampleCombine", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
+  @JSImport("xstream/extra/sampleCombine", JSImport.Default)
+  @js.native
+  def default: SampleCombineSignature = js.native
+  
+  @JSImport("xstream/extra/sampleCombine", "SampleCombineListener")
   @js.native
   class SampleCombineListener[T] protected () extends InternalListener[T] {
     def this(i: Double, p: SampleCombineOperator[_]) = this()
@@ -22,6 +28,7 @@ object sampleCombineMod extends js.Object {
     var p: js.Any = js.native
   }
   
+  @JSImport("xstream/extra/sampleCombine", "SampleCombineOperator")
   @js.native
   class SampleCombineOperator[T] protected ()
     extends Operator[T, js.Array[js.Any]] {
@@ -43,8 +50,11 @@ object sampleCombineMod extends js.Object {
     var vals: js.Array[_] = js.native
   }
   
+  @scala.inline
+  def default_=(x: SampleCombineSignature): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  
   @js.native
-  trait SampleCombineSignature extends js.Object {
+  trait SampleCombineSignature extends StObject {
     
     def apply(): js.Function1[/* s */ Stream[_], Stream[js.Array[_]]] = js.native
     def apply(streams: Stream[_]*): js.Function1[/* s */ Stream[_], Stream[js.Array[_]]] = js.native

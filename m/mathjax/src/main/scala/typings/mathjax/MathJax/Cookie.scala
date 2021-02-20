@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cookie extends js.Object {
+trait Cookie extends StObject {
   
   /*Looks up the data for the cookie named name and merges the data into the given obj object, or returns a new
     * object containing the data.

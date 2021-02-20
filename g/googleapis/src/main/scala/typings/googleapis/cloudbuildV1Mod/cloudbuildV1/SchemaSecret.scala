@@ -1,6 +1,7 @@
 package typings.googleapis.cloudbuildV1Mod.cloudbuildV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * with the Cloud KMS key to use to decrypt the value.
   */
 @js.native
-trait SchemaSecret extends js.Object {
+trait SchemaSecret extends StObject {
   
   /**
     * Cloud KMS key name to use to decrypt these envs.
@@ -35,30 +36,18 @@ object SchemaSecret {
   }
   
   @scala.inline
-  implicit class SchemaSecretOps[Self <: SchemaSecret] (val x: Self) extends AnyVal {
+  implicit class SchemaSecretMutableBuilder[Self <: SchemaSecret] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecretEnv(value: StringDictionary[String]): Self = StObject.set(x, "secretEnv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsKeyName(value: String): Self = this.set("kmsKeyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKmsKeyName: Self = this.set("kmsKeyName", js.undefined)
-    
-    @scala.inline
-    def setSecretEnv(value: StringDictionary[String]): Self = this.set("secretEnv", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecretEnv: Self = this.set("secretEnv", js.undefined)
+    def setSecretEnvUndefined: Self = StObject.set(x, "secretEnv", js.undefined)
   }
 }

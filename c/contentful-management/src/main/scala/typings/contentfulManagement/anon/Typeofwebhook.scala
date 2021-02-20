@@ -5,12 +5,13 @@ import typings.contentfulManagement.commonTypesMod.Collection
 import typings.contentfulManagement.commonTypesMod.CollectionProp
 import typings.contentfulManagement.webhookMod.WebHooks
 import typings.contentfulManagement.webhookMod.WebhookProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofwebhook extends js.Object {
+trait Typeofwebhook extends StObject {
   
   def wrapWebhook(http: AxiosInstance, data: WebhookProps): WebHooks = js.native
   
@@ -28,24 +29,12 @@ object Typeofwebhook {
   }
   
   @scala.inline
-  implicit class TypeofwebhookOps[Self <: Typeofwebhook] (val x: Self) extends AnyVal {
+  implicit class TypeofwebhookMutableBuilder[Self <: Typeofwebhook] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWrapWebhook(value: (AxiosInstance, WebhookProps) => WebHooks): Self = StObject.set(x, "wrapWebhook", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWrapWebhook(value: (AxiosInstance, WebhookProps) => WebHooks): Self = this.set("wrapWebhook", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setWrapWebhookCollection(value: (AxiosInstance, CollectionProp[WebhookProps]) => Collection[WebHooks, WebhookProps]): Self = this.set("wrapWebhookCollection", js.Any.fromFunction2(value))
+    def setWrapWebhookCollection(value: (AxiosInstance, CollectionProp[WebhookProps]) => Collection[WebHooks, WebhookProps]): Self = StObject.set(x, "wrapWebhookCollection", js.Any.fromFunction2(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.tfvcInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Change[T] extends js.Object {
+trait Change[T] extends StObject {
   
   /**
     * The type of change that was made to the item.
@@ -47,33 +48,21 @@ object Change {
   }
   
   @scala.inline
-  implicit class ChangeOps[Self <: Change[_], T] (val x: Self with Change[T]) extends AnyVal {
+  implicit class ChangeMutableBuilder[Self <: Change[_], T] (val x: Self with Change[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeType(value: VersionControlChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewContent(value: ItemContent): Self = StObject.set(x, "newContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeType(value: VersionControlChangeType): Self = this.set("changeType", value.asInstanceOf[js.Any])
+    def setSourceServerItem(value: String): Self = StObject.set(x, "sourceServerItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: T): Self = this.set("item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewContent(value: ItemContent): Self = this.set("newContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceServerItem(value: String): Self = this.set("sourceServerItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

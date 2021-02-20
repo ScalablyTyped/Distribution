@@ -1,6 +1,7 @@
 package typings.phaser.global.MatterJS
 
 import typings.phaser.MatterJS.BodyType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,10 +15,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Sleeping ()
   extends typings.phaser.MatterJS.Sleeping
-/* static members */
-@JSGlobal("MatterJS.Sleeping")
-@js.native
-object Sleeping extends js.Object {
+object Sleeping {
   
+  /* static member */
+  @JSGlobal("MatterJS.Sleeping.set")
+  @js.native
   def set(body: BodyType, isSleeping: Boolean): Unit = js.native
 }

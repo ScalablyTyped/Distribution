@@ -5,12 +5,13 @@ import typings.playcanvas.pc.GamePads
 import typings.playcanvas.pc.Keyboard
 import typings.playcanvas.pc.Mouse
 import typings.playcanvas.pc.TouchDevice
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssetPrefix extends js.Object {
+trait AssetPrefix extends StObject {
   
   var assetPrefix: js.UndefOr[String] = js.native
   
@@ -39,75 +40,63 @@ object AssetPrefix {
   }
   
   @scala.inline
-  implicit class AssetPrefixOps[Self <: AssetPrefix] (val x: Self) extends AnyVal {
+  implicit class AssetPrefixMutableBuilder[Self <: AssetPrefix] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetPrefix(value: String): Self = StObject.set(x, "assetPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetPrefixUndefined: Self = StObject.set(x, "assetPrefix", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElementInput(value: ElementInput): Self = StObject.set(x, "elementInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetPrefix(value: String): Self = this.set("assetPrefix", value.asInstanceOf[js.Any])
+    def setElementInputUndefined: Self = StObject.set(x, "elementInput", js.undefined)
     
     @scala.inline
-    def deleteAssetPrefix: Self = this.set("assetPrefix", js.undefined)
+    def setGamepads(value: GamePads): Self = StObject.set(x, "gamepads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementInput(value: ElementInput): Self = this.set("elementInput", value.asInstanceOf[js.Any])
+    def setGamepadsUndefined: Self = StObject.set(x, "gamepads", js.undefined)
     
     @scala.inline
-    def deleteElementInput: Self = this.set("elementInput", js.undefined)
+    def setGraphicsDeviceOptions(value: js.Any): Self = StObject.set(x, "graphicsDeviceOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGamepads(value: GamePads): Self = this.set("gamepads", value.asInstanceOf[js.Any])
+    def setGraphicsDeviceOptionsUndefined: Self = StObject.set(x, "graphicsDeviceOptions", js.undefined)
     
     @scala.inline
-    def deleteGamepads: Self = this.set("gamepads", js.undefined)
+    def setKeyboard(value: Keyboard): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphicsDeviceOptions(value: js.Any): Self = this.set("graphicsDeviceOptions", value.asInstanceOf[js.Any])
+    def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
     
     @scala.inline
-    def deleteGraphicsDeviceOptions: Self = this.set("graphicsDeviceOptions", js.undefined)
+    def setMouse(value: Mouse): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboard(value: Keyboard): Self = this.set("keyboard", value.asInstanceOf[js.Any])
+    def setMouseUndefined: Self = StObject.set(x, "mouse", js.undefined)
     
     @scala.inline
-    def deleteKeyboard: Self = this.set("keyboard", js.undefined)
+    def setScriptPrefix(value: String): Self = StObject.set(x, "scriptPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouse(value: Mouse): Self = this.set("mouse", value.asInstanceOf[js.Any])
+    def setScriptPrefixUndefined: Self = StObject.set(x, "scriptPrefix", js.undefined)
     
     @scala.inline
-    def deleteMouse: Self = this.set("mouse", js.undefined)
+    def setScriptsOrder(value: js.Array[String]): Self = StObject.set(x, "scriptsOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptPrefix(value: String): Self = this.set("scriptPrefix", value.asInstanceOf[js.Any])
+    def setScriptsOrderUndefined: Self = StObject.set(x, "scriptsOrder", js.undefined)
     
     @scala.inline
-    def deleteScriptPrefix: Self = this.set("scriptPrefix", js.undefined)
+    def setScriptsOrderVarargs(value: String*): Self = StObject.set(x, "scriptsOrder", js.Array(value :_*))
     
     @scala.inline
-    def setScriptsOrderVarargs(value: String*): Self = this.set("scriptsOrder", js.Array(value :_*))
+    def setTouch(value: TouchDevice): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptsOrder(value: js.Array[String]): Self = this.set("scriptsOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScriptsOrder: Self = this.set("scriptsOrder", js.undefined)
-    
-    @scala.inline
-    def setTouch(value: TouchDevice): Self = this.set("touch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTouch: Self = this.set("touch", js.undefined)
+    def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
   }
 }

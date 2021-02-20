@@ -1,12 +1,13 @@
 package typings.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://get.foundation/sites/docs/magellan.html#javascript-reference
 @js.native
-trait Magellan extends js.Object {
+trait Magellan extends StObject {
   
   def calcPoints(): Unit = js.native
   
@@ -25,30 +26,18 @@ object Magellan {
   }
   
   @scala.inline
-  implicit class MagellanOps[Self <: Magellan] (val x: Self) extends AnyVal {
+  implicit class MagellanMutableBuilder[Self <: Magellan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalcPoints(value: () => Unit): Self = StObject.set(x, "calcPoints", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReflow(value: () => Unit): Self = StObject.set(x, "reflow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCalcPoints(value: () => Unit): Self = this.set("calcPoints", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReflow(value: () => Unit): Self = this.set("reflow", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setScrollToLoc(value: String => Unit): Self = this.set("scrollToLoc", js.Any.fromFunction1(value))
+    def setScrollToLoc(value: String => Unit): Self = StObject.set(x, "scrollToLoc", js.Any.fromFunction1(value))
   }
 }

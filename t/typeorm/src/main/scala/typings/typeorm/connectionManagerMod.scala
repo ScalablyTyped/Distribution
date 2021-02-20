@@ -2,16 +2,16 @@ package typings.typeorm
 
 import typings.typeorm.connectionMod.Connection
 import typings.typeorm.connectionOptionsMod.ConnectionOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/connection/ConnectionManager", JSImport.Namespace)
-@js.native
-object connectionManagerMod extends js.Object {
+object connectionManagerMod {
   
+  @JSImport("typeorm/browser/connection/ConnectionManager", "ConnectionManager")
   @js.native
-  class ConnectionManager () extends js.Object {
+  class ConnectionManager () extends StObject {
     
     /**
       * List of connections registered in this connection manager.

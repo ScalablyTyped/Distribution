@@ -1,6 +1,7 @@
 package typings.winjs.global.WinJS.UI
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,33 +24,59 @@ class FlipView[T] ()
   def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
-/* static members */
-@JSGlobal("WinJS.UI.FlipView")
-@js.native
-object FlipView extends js.Object {
+object FlipView {
+  
+  @JSGlobal("WinJS.UI.FlipView")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Event Name
     **/
-  var datasourceCountChangedEvent: String = js.native
+  /* static member */
+  @JSGlobal("WinJS.UI.FlipView.datasourceCountChangedEvent")
+  @js.native
+  def datasourceCountChangedEvent: String = js.native
+  @scala.inline
+  def datasourceCountChangedEvent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("datasourceCountChangedEvent")(x.asInstanceOf[js.Any])
   
   /**
     * Event Name
     **/
-  var pageCompletedEvent: String = js.native
+  /* static member */
+  @JSGlobal("WinJS.UI.FlipView.pageCompletedEvent")
+  @js.native
+  def pageCompletedEvent: String = js.native
+  @scala.inline
+  def pageCompletedEvent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pageCompletedEvent")(x.asInstanceOf[js.Any])
   
   /**
     * Event Name
     **/
-  var pageSelectedEvent: String = js.native
+  /* static member */
+  @JSGlobal("WinJS.UI.FlipView.pageSelectedEvent")
+  @js.native
+  def pageSelectedEvent: String = js.native
+  @scala.inline
+  def pageSelectedEvent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pageSelectedEvent")(x.asInstanceOf[js.Any])
   
   /**
     * Event Name
     **/
-  var pageVisibilityChangedEvent: String = js.native
+  /* static member */
+  @JSGlobal("WinJS.UI.FlipView.pageVisibilityChangedEvent")
+  @js.native
+  def pageVisibilityChangedEvent: String = js.native
+  @scala.inline
+  def pageVisibilityChangedEvent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pageVisibilityChangedEvent")(x.asInstanceOf[js.Any])
   
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
-  var supportedForProcessing: Boolean = js.native
+  /* static member */
+  @JSGlobal("WinJS.UI.FlipView.supportedForProcessing")
+  @js.native
+  def supportedForProcessing: Boolean = js.native
+  @scala.inline
+  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }

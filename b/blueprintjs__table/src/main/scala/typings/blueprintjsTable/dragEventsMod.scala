@@ -3,16 +3,16 @@ package typings.blueprintjsTable
 import typings.blueprintjsTable.dragTypesMod.IDragHandler
 import typings.std.HTMLElement
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/table/lib/esm/interactions/dragEvents", JSImport.Namespace)
-@js.native
-object dragEventsMod extends js.Object {
+object dragEventsMod {
   
+  @JSImport("@blueprintjs/table/lib/esm/interactions/dragEvents", "DragEvents")
   @js.native
-  class DragEvents () extends js.Object {
+  class DragEvents () extends StObject {
     
     var activationCoordinates: js.Any = js.native
     
@@ -51,10 +51,17 @@ object dragEventsMod extends js.Object {
     var updateCoordinateData: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object DragEvents extends js.Object {
+  object DragEvents {
     
-    var DOUBLE_CLICK_TIMEOUT_MSEC: Double = js.native
+    @JSImport("@blueprintjs/table/lib/esm/interactions/dragEvents", "DragEvents")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@blueprintjs/table/lib/esm/interactions/dragEvents", "DragEvents.DOUBLE_CLICK_TIMEOUT_MSEC")
+    @js.native
+    def DOUBLE_CLICK_TIMEOUT_MSEC: Double = js.native
+    @scala.inline
+    def DOUBLE_CLICK_TIMEOUT_MSEC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOUBLE_CLICK_TIMEOUT_MSEC")(x.asInstanceOf[js.Any])
     
     /**
       * Returns true if the event includes a modifier key that often adds the result of the drag
@@ -63,6 +70,8 @@ object dragEventsMod extends js.Object {
       * existing selection first.
       * @param event the mouse event for the drag interaction
       */
+    @JSImport("@blueprintjs/table/lib/esm/interactions/dragEvents", "DragEvents.isAdditive")
+    @js.native
     def isAdditive(event: MouseEvent): Boolean = js.native
   }
 }

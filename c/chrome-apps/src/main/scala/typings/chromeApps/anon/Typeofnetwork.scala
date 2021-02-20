@@ -1,12 +1,13 @@
 package typings.chromeApps.anon
 
 import typings.chromeApps.chrome.system.network.NetworkInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofnetwork extends js.Object {
+trait Typeofnetwork extends StObject {
   
   /** Retrieves information about local adapters on this system. */
   def getNetworkInterfaces(callback: js.Function1[/* networkInterfaces */ js.Array[NetworkInterface], Unit]): Unit = js.native
@@ -22,21 +23,9 @@ object Typeofnetwork {
   }
   
   @scala.inline
-  implicit class TypeofnetworkOps[Self <: Typeofnetwork] (val x: Self) extends AnyVal {
+  implicit class TypeofnetworkMutableBuilder[Self <: Typeofnetwork] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetNetworkInterfaces(value: js.Function1[/* networkInterfaces */ js.Array[NetworkInterface], Unit] => Unit): Self = this.set("getNetworkInterfaces", js.Any.fromFunction1(value))
+    def setGetNetworkInterfaces(value: js.Function1[/* networkInterfaces */ js.Array[NetworkInterface], Unit] => Unit): Self = StObject.set(x, "getNetworkInterfaces", js.Any.fromFunction1(value))
   }
 }

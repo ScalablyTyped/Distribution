@@ -1,13 +1,12 @@
 package typings.webicon
 
 import typings.webicon.iconMod.Icon
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webicon/Icon/ImageIcon", JSImport.Namespace)
-@js.native
-object imageIconMod extends js.Object {
+object imageIconMod {
   
   type ImageIcon = Icon
 }

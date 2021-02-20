@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RepricingRuleEffectiveTime extends js.Object {
+trait RepricingRuleEffectiveTime extends StObject {
   
   /** A list of fixed time periods combined with OR. The maximum number of entries is limited to 5. */
   var fixedTimePeriods: js.UndefOr[js.Array[RepricingRuleEffectiveTimeFixedTimePeriod]] = js.native
@@ -19,27 +20,15 @@ object RepricingRuleEffectiveTime {
   }
   
   @scala.inline
-  implicit class RepricingRuleEffectiveTimeOps[Self <: RepricingRuleEffectiveTime] (val x: Self) extends AnyVal {
+  implicit class RepricingRuleEffectiveTimeMutableBuilder[Self <: RepricingRuleEffectiveTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFixedTimePeriods(value: js.Array[RepricingRuleEffectiveTimeFixedTimePeriod]): Self = StObject.set(x, "fixedTimePeriods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFixedTimePeriodsUndefined: Self = StObject.set(x, "fixedTimePeriods", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFixedTimePeriodsVarargs(value: RepricingRuleEffectiveTimeFixedTimePeriod*): Self = this.set("fixedTimePeriods", js.Array(value :_*))
-    
-    @scala.inline
-    def setFixedTimePeriods(value: js.Array[RepricingRuleEffectiveTimeFixedTimePeriod]): Self = this.set("fixedTimePeriods", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFixedTimePeriods: Self = this.set("fixedTimePeriods", js.undefined)
+    def setFixedTimePeriodsVarargs(value: RepricingRuleEffectiveTimeFixedTimePeriod*): Self = StObject.set(x, "fixedTimePeriods", js.Array(value :_*))
   }
 }

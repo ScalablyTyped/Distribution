@@ -3,6 +3,7 @@ package typings.winrt.Windows.UI.WebUI
 import typings.winrt.Windows.ApplicationModel.Background.BackgroundTaskDeferral
 import typings.winrt.Windows.ApplicationModel.Background.BackgroundTaskRegistration
 import typings.winrt.Windows.ApplicationModel.Background.IBackgroundTaskInstance
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,13 +1,14 @@
 package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Information returned from inspecting a network
 @js.native
-trait NetworkInspectInfo extends js.Object {
+trait NetworkInspectInfo extends StObject {
   
   var Attachable: Boolean = js.native
   
@@ -59,78 +60,66 @@ object NetworkInspectInfo {
   }
   
   @scala.inline
-  implicit class NetworkInspectInfoOps[Self <: NetworkInspectInfo] (val x: Self) extends AnyVal {
+  implicit class NetworkInspectInfoMutableBuilder[Self <: NetworkInspectInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachable(value: Boolean): Self = StObject.set(x, "Attachable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigFrom(value: typings.dockerode.anon.Network): Self = StObject.set(x, "ConfigFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigFromUndefined: Self = StObject.set(x, "ConfigFrom", js.undefined)
     
     @scala.inline
-    def setAttachable(value: Boolean): Self = this.set("Attachable", value.asInstanceOf[js.Any])
+    def setConfigOnly(value: Boolean): Self = StObject.set(x, "ConfigOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigOnly(value: Boolean): Self = this.set("ConfigOnly", value.asInstanceOf[js.Any])
+    def setContainers(value: StringDictionary[NetworkContainer]): Self = StObject.set(x, "Containers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: String): Self = this.set("Created", value.asInstanceOf[js.Any])
+    def setContainersUndefined: Self = StObject.set(x, "Containers", js.undefined)
     
     @scala.inline
-    def setDriver(value: String): Self = this.set("Driver", value.asInstanceOf[js.Any])
+    def setCreated(value: String): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableIPv6(value: Boolean): Self = this.set("EnableIPv6", value.asInstanceOf[js.Any])
+    def setDriver(value: String): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setEnableIPv6(value: Boolean): Self = StObject.set(x, "EnableIPv6", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIngress(value: Boolean): Self = this.set("Ingress", value.asInstanceOf[js.Any])
+    def setIPAM(value: IPAM): Self = StObject.set(x, "IPAM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternal(value: Boolean): Self = this.set("Internal", value.asInstanceOf[js.Any])
+    def setIPAMUndefined: Self = StObject.set(x, "IPAM", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: String): Self = this.set("Scope", value.asInstanceOf[js.Any])
+    def setIngress(value: Boolean): Self = StObject.set(x, "Ingress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigFrom(value: typings.dockerode.anon.Network): Self = this.set("ConfigFrom", value.asInstanceOf[js.Any])
+    def setInternal(value: Boolean): Self = StObject.set(x, "Internal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfigFrom: Self = this.set("ConfigFrom", js.undefined)
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainers(value: StringDictionary[NetworkContainer]): Self = this.set("Containers", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
     
     @scala.inline
-    def deleteContainers: Self = this.set("Containers", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIPAM(value: IPAM): Self = this.set("IPAM", value.asInstanceOf[js.Any])
+    def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIPAM: Self = this.set("IPAM", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("Labels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabels: Self = this.set("Labels", js.undefined)
-    
-    @scala.inline
-    def setOptions(value: StringDictionary[String]): Self = this.set("Options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("Options", js.undefined)
+    def setScope(value: String): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
   }
 }

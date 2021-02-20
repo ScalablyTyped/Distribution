@@ -2,12 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.octokitTypes.anon.Blog
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TeamsUpdateLegacyResponseData extends js.Object {
+trait TeamsUpdateLegacyResponseData extends StObject {
   
   var created_at: String = js.native
   
@@ -70,69 +71,57 @@ object TeamsUpdateLegacyResponseData {
   }
   
   @scala.inline
-  implicit class TeamsUpdateLegacyResponseDataOps[Self <: TeamsUpdateLegacyResponseData] (val x: Self) extends AnyVal {
+  implicit class TeamsUpdateLegacyResponseDataMutableBuilder[Self <: TeamsUpdateLegacyResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setMembers_count(value: Double): Self = StObject.set(x, "members_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml_url(value: String): Self = this.set("html_url", value.asInstanceOf[js.Any])
+    def setMembers_url(value: String): Self = StObject.set(x, "members_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMembers_count(value: Double): Self = this.set("members_count", value.asInstanceOf[js.Any])
+    def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMembers_url(value: String): Self = this.set("members_url", value.asInstanceOf[js.Any])
+    def setOrganization(value: Blog): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParent(value: StringDictionary[js.Any]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode_id(value: String): Self = this.set("node_id", value.asInstanceOf[js.Any])
+    def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganization(value: Blog): Self = this.set("organization", value.asInstanceOf[js.Any])
+    def setPrivacy(value: String): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: StringDictionary[js.Any]): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setRepos_count(value: Double): Self = StObject.set(x, "repos_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermission(value: String): Self = this.set("permission", value.asInstanceOf[js.Any])
+    def setRepositories_url(value: String): Self = StObject.set(x, "repositories_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivacy(value: String): Self = this.set("privacy", value.asInstanceOf[js.Any])
+    def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepos_count(value: Double): Self = this.set("repos_count", value.asInstanceOf[js.Any])
+    def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositories_url(value: String): Self = this.set("repositories_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlug(value: String): Self = this.set("slug", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdated_at(value: String): Self = this.set("updated_at", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

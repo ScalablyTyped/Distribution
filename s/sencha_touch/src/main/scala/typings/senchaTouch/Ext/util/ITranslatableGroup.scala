@@ -2,6 +2,7 @@ package typings.senchaTouch.Ext.util
 
 import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.util.translatable.IAbstract
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,54 +49,42 @@ object ITranslatableGroup {
   }
   
   @scala.inline
-  implicit class ITranslatableGroupOps[Self <: ITranslatableGroup] (val x: Self) extends AnyVal {
+  implicit class ITranslatableGroupMutableBuilder[Self <: ITranslatableGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetActiveIndex(value: () => Double): Self = StObject.set(x, "getActiveIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetActiveIndexUndefined: Self = StObject.set(x, "getActiveIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetItemLength(value: () => _): Self = StObject.set(x, "getItemLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActiveIndex(value: () => Double): Self = this.set("getActiveIndex", js.Any.fromFunction0(value))
+    def setGetItemLengthUndefined: Self = StObject.set(x, "getItemLength", js.undefined)
     
     @scala.inline
-    def deleteGetActiveIndex: Self = this.set("getActiveIndex", js.undefined)
+    def setGetItems(value: () => Array): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemLength(value: () => _): Self = this.set("getItemLength", js.Any.fromFunction0(value))
+    def setGetItemsUndefined: Self = StObject.set(x, "getItems", js.undefined)
     
     @scala.inline
-    def deleteGetItemLength: Self = this.set("getItemLength", js.undefined)
+    def setSetActiveIndex(value: /* activeIndex */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setActiveIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetItems(value: () => Array): Self = this.set("getItems", js.Any.fromFunction0(value))
+    def setSetActiveIndexUndefined: Self = StObject.set(x, "setActiveIndex", js.undefined)
     
     @scala.inline
-    def deleteGetItems: Self = this.set("getItems", js.undefined)
+    def setSetItemLength(value: /* itemLength */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setItemLength", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetActiveIndex(value: /* activeIndex */ js.UndefOr[Double] => Unit): Self = this.set("setActiveIndex", js.Any.fromFunction1(value))
+    def setSetItemLengthUndefined: Self = StObject.set(x, "setItemLength", js.undefined)
     
     @scala.inline
-    def deleteSetActiveIndex: Self = this.set("setActiveIndex", js.undefined)
+    def setSetItems(value: /* items */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetItemLength(value: /* itemLength */ js.UndefOr[js.Any] => Unit): Self = this.set("setItemLength", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetItemLength: Self = this.set("setItemLength", js.undefined)
-    
-    @scala.inline
-    def setSetItems(value: /* items */ js.UndefOr[Array] => Unit): Self = this.set("setItems", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetItems: Self = this.set("setItems", js.undefined)
+    def setSetItemsUndefined: Self = StObject.set(x, "setItems", js.undefined)
   }
 }

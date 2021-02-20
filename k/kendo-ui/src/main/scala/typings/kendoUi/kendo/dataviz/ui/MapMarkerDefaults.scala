@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapMarkerDefaults extends js.Object {
+trait MapMarkerDefaults extends StObject {
   
   var shape: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object MapMarkerDefaults {
   }
   
   @scala.inline
-  implicit class MapMarkerDefaultsOps[Self <: MapMarkerDefaults] (val x: Self) extends AnyVal {
+  implicit class MapMarkerDefaultsMutableBuilder[Self <: MapMarkerDefaults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTooltip(value: MapMarkerDefaultsTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShape(value: String): Self = this.set("shape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShape: Self = this.set("shape", js.undefined)
-    
-    @scala.inline
-    def setTooltip(value: MapMarkerDefaultsTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

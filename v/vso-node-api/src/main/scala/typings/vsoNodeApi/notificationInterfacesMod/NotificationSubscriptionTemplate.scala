@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationSubscriptionTemplate extends js.Object {
+trait NotificationSubscriptionTemplate extends StObject {
   
   var description: String = js.native
   
@@ -33,33 +34,21 @@ object NotificationSubscriptionTemplate {
   }
   
   @scala.inline
-  implicit class NotificationSubscriptionTemplateOps[Self <: NotificationSubscriptionTemplate] (val x: Self) extends AnyVal {
+  implicit class NotificationSubscriptionTemplateMutableBuilder[Self <: NotificationSubscriptionTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilter(value: ISubscriptionFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setNotificationEventInformation(value: NotificationEventType): Self = StObject.set(x, "notificationEventInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: ISubscriptionFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotificationEventInformation(value: NotificationEventType): Self = this.set("notificationEventInformation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: SubscriptionTemplateType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: SubscriptionTemplateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,19 +1,21 @@
 package typings.gitlab
 
+import typings.gitlab.baseServiceMod.BaseServiceOptions
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.projectsMod.ProjectSchema
 import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.PaginatedRequestOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gitlab/dist/types/core/services/GroupProjects", JSImport.Namespace)
-@js.native
-object groupProjectsMod extends js.Object {
+object groupProjectsMod {
   
+  @JSImport("gitlab/dist/types/core/services/GroupProjects", "GroupProjects")
   @js.native
   class GroupProjects () extends BaseService {
+    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def add(groupId: String, projectId: String): js.Promise[js.Object] = js.native
     def add(groupId: String, projectId: String, options: BaseRequestOptions): js.Promise[js.Object] = js.native

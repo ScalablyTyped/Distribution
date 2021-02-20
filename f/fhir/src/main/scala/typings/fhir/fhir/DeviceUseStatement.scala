@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -100,114 +101,102 @@ object DeviceUseStatement {
   }
   
   @scala.inline
-  implicit class DeviceUseStatementOps[Self <: DeviceUseStatement] (val x: Self) extends AnyVal {
+  implicit class DeviceUseStatementMutableBuilder[Self <: DeviceUseStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBodySite(value: CodeableConcept): Self = StObject.set(x, "bodySite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodySiteUndefined: Self = StObject.set(x, "bodySite", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDevice(value: Reference): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: Reference): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def setSubject(value: Reference): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
     @scala.inline
-    def set_recordedOn(value: Element): Self = this.set("_recordedOn", value.asInstanceOf[js.Any])
+    def setIndication(value: js.Array[CodeableConcept]): Self = StObject.set(x, "indication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_recordedOn: Self = this.set("_recordedOn", js.undefined)
+    def setIndicationUndefined: Self = StObject.set(x, "indication", js.undefined)
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setIndicationVarargs(value: CodeableConcept*): Self = StObject.set(x, "indication", js.Array(value :_*))
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_timingDateTime(value: Element): Self = this.set("_timingDateTime", value.asInstanceOf[js.Any])
+    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
     @scala.inline
-    def delete_timingDateTime: Self = this.set("_timingDateTime", js.undefined)
+    def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value :_*))
     
     @scala.inline
-    def setBodySite(value: CodeableConcept): Self = this.set("bodySite", value.asInstanceOf[js.Any])
+    def setRecordedOn(value: dateTime): Self = StObject.set(x, "recordedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBodySite: Self = this.set("bodySite", js.undefined)
+    def setRecordedOnUndefined: Self = StObject.set(x, "recordedOn", js.undefined)
     
     @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    def setSource(value: Reference): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicationVarargs(value: CodeableConcept*): Self = this.set("indication", js.Array(value :_*))
+    def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndication(value: js.Array[CodeableConcept]): Self = this.set("indication", value.asInstanceOf[js.Any])
+    def setTimingDateTime(value: dateTime): Self = StObject.set(x, "timingDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndication: Self = this.set("indication", js.undefined)
+    def setTimingDateTimeUndefined: Self = StObject.set(x, "timingDateTime", js.undefined)
     
     @scala.inline
-    def setNoteVarargs(value: Annotation*): Self = this.set("note", js.Array(value :_*))
+    def setTimingPeriod(value: Period): Self = StObject.set(x, "timingPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNote(value: js.Array[Annotation]): Self = this.set("note", value.asInstanceOf[js.Any])
+    def setTimingPeriodUndefined: Self = StObject.set(x, "timingPeriod", js.undefined)
     
     @scala.inline
-    def deleteNote: Self = this.set("note", js.undefined)
+    def setTimingTiming(value: Timing): Self = StObject.set(x, "timingTiming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordedOn(value: dateTime): Self = this.set("recordedOn", value.asInstanceOf[js.Any])
+    def setTimingTimingUndefined: Self = StObject.set(x, "timingTiming", js.undefined)
     
     @scala.inline
-    def deleteRecordedOn: Self = this.set("recordedOn", js.undefined)
+    def setWhenUsed(value: Period): Self = StObject.set(x, "whenUsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: Reference): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setWhenUsedUndefined: Self = StObject.set(x, "whenUsed", js.undefined)
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def set_recordedOn(value: Element): Self = StObject.set(x, "_recordedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimingDateTime(value: dateTime): Self = this.set("timingDateTime", value.asInstanceOf[js.Any])
+    def set_recordedOnUndefined: Self = StObject.set(x, "_recordedOn", js.undefined)
     
     @scala.inline
-    def deleteTimingDateTime: Self = this.set("timingDateTime", js.undefined)
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimingPeriod(value: Period): Self = this.set("timingPeriod", value.asInstanceOf[js.Any])
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
     
     @scala.inline
-    def deleteTimingPeriod: Self = this.set("timingPeriod", js.undefined)
+    def set_timingDateTime(value: Element): Self = StObject.set(x, "_timingDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimingTiming(value: Timing): Self = this.set("timingTiming", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimingTiming: Self = this.set("timingTiming", js.undefined)
-    
-    @scala.inline
-    def setWhenUsed(value: Period): Self = this.set("whenUsed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhenUsed: Self = this.set("whenUsed", js.undefined)
+    def set_timingDateTimeUndefined: Self = StObject.set(x, "_timingDateTime", js.undefined)
   }
 }

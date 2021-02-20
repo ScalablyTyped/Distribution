@@ -4,13 +4,14 @@ import typings.materialBase.typesMod.EventType
 import typings.materialBase.typesMod.SpecificEventListener
 import typings.materialTextfield.typesMod.MDCTextFieldNativeInputElement
 import typings.std.MutationObserver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material/textfield.@material/textfield/adapter.MDCTextFieldAdapter> */
 @js.native
-trait PartialMDCTextFieldAdapte extends js.Object {
+trait PartialMDCTextFieldAdapte extends StObject {
   
   var activateLineRipple: js.UndefOr[js.Function0[Unit]] = js.native
   
@@ -82,162 +83,150 @@ object PartialMDCTextFieldAdapte {
   }
   
   @scala.inline
-  implicit class PartialMDCTextFieldAdapteOps[Self <: PartialMDCTextFieldAdapte] (val x: Self) extends AnyVal {
+  implicit class PartialMDCTextFieldAdapteMutableBuilder[Self <: PartialMDCTextFieldAdapte] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivateLineRipple(value: () => Unit): Self = StObject.set(x, "activateLineRipple", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivateLineRippleUndefined: Self = StObject.set(x, "activateLineRipple", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setActivateLineRipple(value: () => Unit): Self = this.set("activateLineRipple", js.Any.fromFunction0(value))
+    def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
     
     @scala.inline
-    def deleteActivateLineRipple: Self = this.set("activateLineRipple", js.undefined)
+    def setCloseOutline(value: () => Unit): Self = StObject.set(x, "closeOutline", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddClass(value: /* className */ String => Unit): Self = this.set("addClass", js.Any.fromFunction1(value))
+    def setCloseOutlineUndefined: Self = StObject.set(x, "closeOutline", js.undefined)
     
     @scala.inline
-    def deleteAddClass: Self = this.set("addClass", js.undefined)
+    def setDeactivateLineRipple(value: () => Unit): Self = StObject.set(x, "deactivateLineRipple", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCloseOutline(value: () => Unit): Self = this.set("closeOutline", js.Any.fromFunction0(value))
+    def setDeactivateLineRippleUndefined: Self = StObject.set(x, "deactivateLineRipple", js.undefined)
     
     @scala.inline
-    def deleteCloseOutline: Self = this.set("closeOutline", js.undefined)
+    def setDeregisterInputInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "deregisterInputInteractionHandler", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDeactivateLineRipple(value: () => Unit): Self = this.set("deactivateLineRipple", js.Any.fromFunction0(value))
+    def setDeregisterInputInteractionHandlerUndefined: Self = StObject.set(x, "deregisterInputInteractionHandler", js.undefined)
     
     @scala.inline
-    def deleteDeactivateLineRipple: Self = this.set("deactivateLineRipple", js.undefined)
+    def setDeregisterTextFieldInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "deregisterTextFieldInteractionHandler", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDeregisterInputInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = this.set("deregisterInputInteractionHandler", js.Any.fromFunction2(value))
+    def setDeregisterTextFieldInteractionHandlerUndefined: Self = StObject.set(x, "deregisterTextFieldInteractionHandler", js.undefined)
     
     @scala.inline
-    def deleteDeregisterInputInteractionHandler: Self = this.set("deregisterInputInteractionHandler", js.undefined)
+    def setDeregisterValidationAttributeChangeHandler(value: /* observer */ MutationObserver => Unit): Self = StObject.set(x, "deregisterValidationAttributeChangeHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeregisterTextFieldInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = this.set("deregisterTextFieldInteractionHandler", js.Any.fromFunction2(value))
+    def setDeregisterValidationAttributeChangeHandlerUndefined: Self = StObject.set(x, "deregisterValidationAttributeChangeHandler", js.undefined)
     
     @scala.inline
-    def deleteDeregisterTextFieldInteractionHandler: Self = this.set("deregisterTextFieldInteractionHandler", js.undefined)
+    def setFloatLabel(value: /* shouldFloat */ Boolean => Unit): Self = StObject.set(x, "floatLabel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeregisterValidationAttributeChangeHandler(value: /* observer */ MutationObserver => Unit): Self = this.set("deregisterValidationAttributeChangeHandler", js.Any.fromFunction1(value))
+    def setFloatLabelUndefined: Self = StObject.set(x, "floatLabel", js.undefined)
     
     @scala.inline
-    def deleteDeregisterValidationAttributeChangeHandler: Self = this.set("deregisterValidationAttributeChangeHandler", js.undefined)
+    def setGetLabelWidth(value: () => Double): Self = StObject.set(x, "getLabelWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFloatLabel(value: /* shouldFloat */ Boolean => Unit): Self = this.set("floatLabel", js.Any.fromFunction1(value))
+    def setGetLabelWidthUndefined: Self = StObject.set(x, "getLabelWidth", js.undefined)
     
     @scala.inline
-    def deleteFloatLabel: Self = this.set("floatLabel", js.undefined)
+    def setGetNativeInput(value: () => MDCTextFieldNativeInputElement | Null): Self = StObject.set(x, "getNativeInput", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLabelWidth(value: () => Double): Self = this.set("getLabelWidth", js.Any.fromFunction0(value))
+    def setGetNativeInputUndefined: Self = StObject.set(x, "getNativeInput", js.undefined)
     
     @scala.inline
-    def deleteGetLabelWidth: Self = this.set("getLabelWidth", js.undefined)
+    def setHasClass(value: /* className */ String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNativeInput(value: () => MDCTextFieldNativeInputElement | Null): Self = this.set("getNativeInput", js.Any.fromFunction0(value))
+    def setHasClassUndefined: Self = StObject.set(x, "hasClass", js.undefined)
     
     @scala.inline
-    def deleteGetNativeInput: Self = this.set("getNativeInput", js.undefined)
+    def setHasLabel(value: () => Boolean): Self = StObject.set(x, "hasLabel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasClass(value: /* className */ String => Boolean): Self = this.set("hasClass", js.Any.fromFunction1(value))
+    def setHasLabelUndefined: Self = StObject.set(x, "hasLabel", js.undefined)
     
     @scala.inline
-    def deleteHasClass: Self = this.set("hasClass", js.undefined)
+    def setHasOutline(value: () => Boolean): Self = StObject.set(x, "hasOutline", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasLabel(value: () => Boolean): Self = this.set("hasLabel", js.Any.fromFunction0(value))
+    def setHasOutlineUndefined: Self = StObject.set(x, "hasOutline", js.undefined)
     
     @scala.inline
-    def deleteHasLabel: Self = this.set("hasLabel", js.undefined)
+    def setIsFocused(value: () => Boolean): Self = StObject.set(x, "isFocused", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasOutline(value: () => Boolean): Self = this.set("hasOutline", js.Any.fromFunction0(value))
+    def setIsFocusedUndefined: Self = StObject.set(x, "isFocused", js.undefined)
     
     @scala.inline
-    def deleteHasOutline: Self = this.set("hasOutline", js.undefined)
+    def setNotchOutline(value: /* labelWidth */ Double => Unit): Self = StObject.set(x, "notchOutline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsFocused(value: () => Boolean): Self = this.set("isFocused", js.Any.fromFunction0(value))
+    def setNotchOutlineUndefined: Self = StObject.set(x, "notchOutline", js.undefined)
     
     @scala.inline
-    def deleteIsFocused: Self = this.set("isFocused", js.undefined)
+    def setRegisterInputInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "registerInputInteractionHandler", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNotchOutline(value: /* labelWidth */ Double => Unit): Self = this.set("notchOutline", js.Any.fromFunction1(value))
+    def setRegisterInputInteractionHandlerUndefined: Self = StObject.set(x, "registerInputInteractionHandler", js.undefined)
     
     @scala.inline
-    def deleteNotchOutline: Self = this.set("notchOutline", js.undefined)
+    def setRegisterTextFieldInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "registerTextFieldInteractionHandler", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRegisterInputInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = this.set("registerInputInteractionHandler", js.Any.fromFunction2(value))
+    def setRegisterTextFieldInteractionHandlerUndefined: Self = StObject.set(x, "registerTextFieldInteractionHandler", js.undefined)
     
     @scala.inline
-    def deleteRegisterInputInteractionHandler: Self = this.set("registerInputInteractionHandler", js.undefined)
+    def setRegisterValidationAttributeChangeHandler(value: /* handler */ js.Function1[/* attributeNames */ js.Array[String], Unit] => MutationObserver): Self = StObject.set(x, "registerValidationAttributeChangeHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegisterTextFieldInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = this.set("registerTextFieldInteractionHandler", js.Any.fromFunction2(value))
+    def setRegisterValidationAttributeChangeHandlerUndefined: Self = StObject.set(x, "registerValidationAttributeChangeHandler", js.undefined)
     
     @scala.inline
-    def deleteRegisterTextFieldInteractionHandler: Self = this.set("registerTextFieldInteractionHandler", js.undefined)
+    def setRemoveClass(value: /* className */ String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegisterValidationAttributeChangeHandler(value: /* handler */ js.Function1[/* attributeNames */ js.Array[String], Unit] => MutationObserver): Self = this.set("registerValidationAttributeChangeHandler", js.Any.fromFunction1(value))
+    def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
     
     @scala.inline
-    def deleteRegisterValidationAttributeChangeHandler: Self = this.set("registerValidationAttributeChangeHandler", js.undefined)
+    def setRemoveInputAttr(value: /* attr */ String => Unit): Self = StObject.set(x, "removeInputAttr", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveClass(value: /* className */ String => Unit): Self = this.set("removeClass", js.Any.fromFunction1(value))
+    def setRemoveInputAttrUndefined: Self = StObject.set(x, "removeInputAttr", js.undefined)
     
     @scala.inline
-    def deleteRemoveClass: Self = this.set("removeClass", js.undefined)
+    def setSetInputAttr(value: (/* attr */ String, /* value */ String) => Unit): Self = StObject.set(x, "setInputAttr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRemoveInputAttr(value: /* attr */ String => Unit): Self = this.set("removeInputAttr", js.Any.fromFunction1(value))
+    def setSetInputAttrUndefined: Self = StObject.set(x, "setInputAttr", js.undefined)
     
     @scala.inline
-    def deleteRemoveInputAttr: Self = this.set("removeInputAttr", js.undefined)
+    def setSetLabelRequired(value: /* isRequired */ Boolean => Unit): Self = StObject.set(x, "setLabelRequired", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetInputAttr(value: (/* attr */ String, /* value */ String) => Unit): Self = this.set("setInputAttr", js.Any.fromFunction2(value))
+    def setSetLabelRequiredUndefined: Self = StObject.set(x, "setLabelRequired", js.undefined)
     
     @scala.inline
-    def deleteSetInputAttr: Self = this.set("setInputAttr", js.undefined)
+    def setSetLineRippleTransformOrigin(value: /* normalizedX */ Double => Unit): Self = StObject.set(x, "setLineRippleTransformOrigin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLabelRequired(value: /* isRequired */ Boolean => Unit): Self = this.set("setLabelRequired", js.Any.fromFunction1(value))
+    def setSetLineRippleTransformOriginUndefined: Self = StObject.set(x, "setLineRippleTransformOrigin", js.undefined)
     
     @scala.inline
-    def deleteSetLabelRequired: Self = this.set("setLabelRequired", js.undefined)
+    def setShakeLabel(value: /* shouldShake */ Boolean => Unit): Self = StObject.set(x, "shakeLabel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLineRippleTransformOrigin(value: /* normalizedX */ Double => Unit): Self = this.set("setLineRippleTransformOrigin", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetLineRippleTransformOrigin: Self = this.set("setLineRippleTransformOrigin", js.undefined)
-    
-    @scala.inline
-    def setShakeLabel(value: /* shouldShake */ Boolean => Unit): Self = this.set("shakeLabel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteShakeLabel: Self = this.set("shakeLabel", js.undefined)
+    def setShakeLabelUndefined: Self = StObject.set(x, "shakeLabel", js.undefined)
   }
 }

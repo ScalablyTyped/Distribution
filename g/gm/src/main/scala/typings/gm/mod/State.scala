@@ -12,12 +12,13 @@ import typings.gm.gmStrings.topleft
 import typings.node.Buffer
 import typings.node.streamMod.PassThrough
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait State extends js.Object {
+trait State extends StObject {
   
   // Image Operations
   def adjoin(): State = js.native

@@ -1,14 +1,14 @@
 package typings.agGrid
 
 import typings.agGrid.componentMod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rowModels/pagination/paginationComp", JSImport.Namespace)
-@js.native
-object paginationCompMod extends js.Object {
+object paginationCompMod {
   
+  @JSImport("ag-grid/dist/lib/rowModels/pagination/paginationComp", "PaginationComp")
   @js.native
   class PaginationComp () extends Component {
     

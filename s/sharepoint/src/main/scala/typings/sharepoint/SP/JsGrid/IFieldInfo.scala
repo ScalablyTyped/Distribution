@@ -1,11 +1,12 @@
 package typings.sharepoint.SP.JsGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFieldInfo extends js.Object {
+trait IFieldInfo extends StObject {
   
   var dateOnly: js.UndefOr[Boolean] = js.native
   
@@ -34,66 +35,54 @@ object IFieldInfo {
   }
   
   @scala.inline
-  implicit class IFieldInfoOps[Self <: IFieldInfo] (val x: Self) extends AnyVal {
+  implicit class IFieldInfoMutableBuilder[Self <: IFieldInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateOnly(value: Boolean): Self = StObject.set(x, "dateOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateOnlyUndefined: Self = StObject.set(x, "dateOnly", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultCellStyleId(value: js.Any): Self = StObject.set(x, "defaultCellStyleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldKey(value: String): Self = this.set("fieldKey", value.asInstanceOf[js.Any])
+    def setDefaultCellStyleIdUndefined: Self = StObject.set(x, "defaultCellStyleId", js.undefined)
     
     @scala.inline
-    def setPropertyTypeId(value: String): Self = this.set("propertyTypeId", value.asInstanceOf[js.Any])
+    def setEditMode(value: EditMode): Self = StObject.set(x, "editMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateOnly(value: Boolean): Self = this.set("dateOnly", value.asInstanceOf[js.Any])
+    def setEditModeUndefined: Self = StObject.set(x, "editMode", js.undefined)
     
     @scala.inline
-    def deleteDateOnly: Self = this.set("dateOnly", js.undefined)
+    def setFieldKey(value: String): Self = StObject.set(x, "fieldKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCellStyleId(value: js.Any): Self = this.set("defaultCellStyleId", value.asInstanceOf[js.Any])
+    def setHasDataValue(value: Boolean): Self = StObject.set(x, "hasDataValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultCellStyleId: Self = this.set("defaultCellStyleId", js.undefined)
+    def setHasDataValueUndefined: Self = StObject.set(x, "hasDataValue", js.undefined)
     
     @scala.inline
-    def setEditMode(value: EditMode): Self = this.set("editMode", value.asInstanceOf[js.Any])
+    def setHasLocalizedValue(value: Boolean): Self = StObject.set(x, "hasLocalizedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEditMode: Self = this.set("editMode", js.undefined)
+    def setHasLocalizedValueUndefined: Self = StObject.set(x, "hasLocalizedValue", js.undefined)
     
     @scala.inline
-    def setHasDataValue(value: Boolean): Self = this.set("hasDataValue", value.asInstanceOf[js.Any])
+    def setMultiValue(value: Boolean): Self = StObject.set(x, "multiValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasDataValue: Self = this.set("hasDataValue", js.undefined)
+    def setMultiValueUndefined: Self = StObject.set(x, "multiValue", js.undefined)
     
     @scala.inline
-    def setHasLocalizedValue(value: Boolean): Self = this.set("hasLocalizedValue", value.asInstanceOf[js.Any])
+    def setPropertyTypeId(value: String): Self = StObject.set(x, "propertyTypeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasLocalizedValue: Self = this.set("hasLocalizedValue", js.undefined)
+    def setTextDirection(value: TextDirection): Self = StObject.set(x, "textDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiValue(value: Boolean): Self = this.set("multiValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultiValue: Self = this.set("multiValue", js.undefined)
-    
-    @scala.inline
-    def setTextDirection(value: TextDirection): Self = this.set("textDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextDirection: Self = this.set("textDirection", js.undefined)
+    def setTextDirectionUndefined: Self = StObject.set(x, "textDirection", js.undefined)
   }
 }

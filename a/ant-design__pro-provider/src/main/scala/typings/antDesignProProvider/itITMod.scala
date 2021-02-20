@@ -4,25 +4,47 @@ import typings.antDesignProProvider.anon.Collapsed
 import typings.antDesignProProvider.anon.ColumnSetting
 import typings.antDesignProProvider.anon.Item
 import typings.antDesignProProvider.anon.Total
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/pro-provider/lib/locale/it_IT", JSImport.Namespace)
-@js.native
-object itITMod extends js.Object {
+object itITMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
-    var alert: Item = js.native
+    @JSImport("@ant-design/pro-provider/lib/locale/it_IT", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    var moneySymbol: String = js.native
+    @JSImport("@ant-design/pro-provider/lib/locale/it_IT", "default.alert")
+    @js.native
+    def alert: Item = js.native
+    @scala.inline
+    def alert_=(x: Item): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alert")(x.asInstanceOf[js.Any])
     
-    var pagination: Total = js.native
+    @JSImport("@ant-design/pro-provider/lib/locale/it_IT", "default.moneySymbol")
+    @js.native
+    def moneySymbol: String = js.native
+    @scala.inline
+    def moneySymbol_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moneySymbol")(x.asInstanceOf[js.Any])
     
-    var tableForm: Collapsed = js.native
+    @JSImport("@ant-design/pro-provider/lib/locale/it_IT", "default.pagination")
+    @js.native
+    def pagination: Total = js.native
+    @scala.inline
+    def pagination_=(x: Total): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pagination")(x.asInstanceOf[js.Any])
     
-    var tableToolBar: ColumnSetting = js.native
+    @JSImport("@ant-design/pro-provider/lib/locale/it_IT", "default.tableForm")
+    @js.native
+    def tableForm: Collapsed = js.native
+    @scala.inline
+    def tableForm_=(x: Collapsed): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tableForm")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/pro-provider/lib/locale/it_IT", "default.tableToolBar")
+    @js.native
+    def tableToolBar: ColumnSetting = js.native
+    @scala.inline
+    def tableToolBar_=(x: ColumnSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tableToolBar")(x.asInstanceOf[js.Any])
   }
 }

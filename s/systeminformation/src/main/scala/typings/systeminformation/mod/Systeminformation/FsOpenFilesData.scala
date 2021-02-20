@@ -1,11 +1,12 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FsOpenFilesData extends js.Object {
+trait FsOpenFilesData extends StObject {
   
   var allocated: Double = js.native
   
@@ -22,27 +23,15 @@ object FsOpenFilesData {
   }
   
   @scala.inline
-  implicit class FsOpenFilesDataOps[Self <: FsOpenFilesData] (val x: Self) extends AnyVal {
+  implicit class FsOpenFilesDataMutableBuilder[Self <: FsOpenFilesData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocated(value: Double): Self = StObject.set(x, "allocated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailable(value: Double): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAllocated(value: Double): Self = this.set("allocated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAvailable(value: Double): Self = this.set("available", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
   }
 }

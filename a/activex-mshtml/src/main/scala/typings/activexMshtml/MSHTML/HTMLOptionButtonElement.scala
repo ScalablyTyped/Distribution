@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLOptionButtonElement extends js.Object {
+trait HTMLOptionButtonElement extends StObject {
   
   @JSName("MSHTML.HTMLOptionButtonElement_typekey")
   var MSHTMLDotHTMLOptionButtonElement_typekey: HTMLOptionButtonElement = js.native

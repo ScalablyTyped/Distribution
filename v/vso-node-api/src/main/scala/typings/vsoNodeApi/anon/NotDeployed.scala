@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotDeployed extends js.Object {
+trait NotDeployed extends StObject {
   
   var all: scala.Double = js.native
   
@@ -38,39 +39,27 @@ object NotDeployed {
   }
   
   @scala.inline
-  implicit class NotDeployedOps[Self <: NotDeployed] (val x: Self) extends AnyVal {
+  implicit class NotDeployedMutableBuilder[Self <: NotDeployed] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailed(value: scala.Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: scala.Double): Self = this.set("all", value.asInstanceOf[js.Any])
+    def setNotDeployed(value: scala.Double): Self = StObject.set(x, "notDeployed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailed(value: scala.Double): Self = this.set("failed", value.asInstanceOf[js.Any])
+    def setPartiallySucceeded(value: scala.Double): Self = StObject.set(x, "partiallySucceeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInProgress(value: scala.Double): Self = this.set("inProgress", value.asInstanceOf[js.Any])
+    def setSucceeded(value: scala.Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotDeployed(value: scala.Double): Self = this.set("notDeployed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPartiallySucceeded(value: scala.Double): Self = this.set("partiallySucceeded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSucceeded(value: scala.Double): Self = this.set("succeeded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUndefined(value: scala.Double): Self = this.set("undefined", value.asInstanceOf[js.Any])
+    def setUndefined(value: scala.Double): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
   }
 }

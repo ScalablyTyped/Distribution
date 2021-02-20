@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.ucb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link Content} .
   */
 @js.native
-trait TransferInfo extends js.Object {
+trait TransferInfo extends StObject {
   
   /** contains the flags describing whether the data shall be moved instead of copied. */
   var MoveData: Boolean = js.native
@@ -47,30 +48,18 @@ object TransferInfo {
   }
   
   @scala.inline
-  implicit class TransferInfoOps[Self <: TransferInfo] (val x: Self) extends AnyVal {
+  implicit class TransferInfoMutableBuilder[Self <: TransferInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMoveData(value: Boolean): Self = StObject.set(x, "MoveData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameClash(value: Double): Self = StObject.set(x, "NameClash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewTitle(value: String): Self = StObject.set(x, "NewTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveData(value: Boolean): Self = this.set("MoveData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNameClash(value: Double): Self = this.set("NameClash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewTitle(value: String): Self = this.set("NewTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceURL(value: String): Self = this.set("SourceURL", value.asInstanceOf[js.Any])
+    def setSourceURL(value: String): Self = StObject.set(x, "SourceURL", value.asInstanceOf[js.Any])
   }
 }

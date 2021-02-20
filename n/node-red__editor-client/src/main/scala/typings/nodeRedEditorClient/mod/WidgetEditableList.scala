@@ -15,6 +15,7 @@ import typings.nodeRedEditorClient.nodeRedEditorClientStrings.show
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.sort
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.width
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ trait WidgetEditableList extends JQuery[HTMLElement] {
     * @param value - An array of objects that will be associated with the item in the list.
     */
   def apply(action: addItems, value: js.Array[js.Object]): Unit = js.native
-   // tslint:disable-line:no-unnecessary-generics
+  // tslint:disable-line:no-unnecessary-generics
   /**
     * Adds an item to the end of the list.         *
     * @param value - An object that will be associated with the item in the list.
@@ -44,7 +45,7 @@ trait WidgetEditableList extends JQuery[HTMLElement] {
     */
   def apply(action: filter): Double = js.native
   def apply(action: filter, value: js.Function1[/* data */ js.Object, Boolean]): Double = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   /**
     * Get item at index. Returns item dat or undefined.
     * @param value - Item index: 0..length-1
@@ -60,7 +61,7 @@ trait WidgetEditableList extends JQuery[HTMLElement] {
     * @param value - Item data
     */
   def apply(action: indexOf, value: js.Object): Double = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   /**
     * Gets an Array of all list items. Each item is the jQuery DOM element for the item.
     * Each element stores the original data for the item under property called data.
@@ -90,7 +91,7 @@ trait WidgetEditableList extends JQuery[HTMLElement] {
     * If the function returns a value greater than 0, itemDataA comes after itemDataB.
     */
   def apply(action: sort, value: js.Function2[/* itemDataA */ js.Object, /* itemDataB */ js.Object, Double]): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   /**
     * Sets the width of the editableList. This must be used in place of the standard jQuery.width() function as it ensures the component resizes properly.
     */

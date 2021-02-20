@@ -4,18 +4,18 @@ import typings.winrtUwp.Windows.Storage.IStorageFile
 import typings.winrtUwp.Windows.Storage.Provider.CachedFileOptions
 import typings.winrtUwp.Windows.Storage.Provider.ReadActivationMode
 import typings.winrtUwp.Windows.Storage.Provider.WriteActivationMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Allows apps to provide real-time updates to files through the Cached File Updater contract. */
-@JSGlobal("Windows.Storage.Provider")
-@js.native
-object Provider extends js.Object {
+object Provider {
   
   /** Describes when Windows will request an update to a file. */
+  @JSGlobal("Windows.Storage.Provider.CachedFileOptions")
   @js.native
-  object CachedFileOptions extends js.Object {
+  object CachedFileOptions extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.Provider.CachedFileOptions with Double] = js.native
@@ -30,8 +30,9 @@ object Provider extends js.Object {
   }
   
   /** Indicates whether updates should be applied to the locally cached copy or the remote version of the file. */
+  @JSGlobal("Windows.Storage.Provider.CachedFileTarget")
   @js.native
-  object CachedFileTarget extends js.Object {
+  object CachedFileTarget extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.Provider.CachedFileTarget with Double] = js.native
@@ -42,12 +43,11 @@ object Provider extends js.Object {
   }
   
   /** Manages files so that they can be updated in real-time by an app that participates in the Cached File Updater contract. */
+  @JSGlobal("Windows.Storage.Provider.CachedFileUpdater")
   @js.native
   abstract class CachedFileUpdater ()
     extends typings.winrtUwp.Windows.Storage.Provider.CachedFileUpdater
-  /* static members */
-  @js.native
-  object CachedFileUpdater extends js.Object {
+  object CachedFileUpdater {
     
     /**
       * Configures update policies for a local file.
@@ -57,6 +57,9 @@ object Provider extends js.Object {
       * @param writeMode A value that specifies whether other apps can write to the local file and, if so, whether Windows will request updates after the local file is written.
       * @param options A value that specifies additional circumstances and behaviors for when Windows requests updates.
       */
+    /* static member */
+    @JSGlobal("Windows.Storage.Provider.CachedFileUpdater.setUpdateInformation")
+    @js.native
     def setUpdateInformation(
       file: IStorageFile,
       contentId: String,
@@ -67,28 +70,33 @@ object Provider extends js.Object {
   }
   
   /** Used to interact with the file picker if your app provides file updates through the Cached File Updater contract. */
+  @JSGlobal("Windows.Storage.Provider.CachedFileUpdaterUI")
   @js.native
   abstract class CachedFileUpdaterUI ()
     extends typings.winrtUwp.Windows.Storage.Provider.CachedFileUpdaterUI
   
   /** Provides information about a requested file update so that the app can complete the request. */
+  @JSGlobal("Windows.Storage.Provider.FileUpdateRequest")
   @js.native
   abstract class FileUpdateRequest ()
     extends typings.winrtUwp.Windows.Storage.Provider.FileUpdateRequest
   
   /** Use to complete an update asynchronously. */
+  @JSGlobal("Windows.Storage.Provider.FileUpdateRequestDeferral")
   @js.native
   abstract class FileUpdateRequestDeferral ()
     extends typings.winrtUwp.Windows.Storage.Provider.FileUpdateRequestDeferral
   
   /** Provides information about a FileUpdateRequested event. */
+  @JSGlobal("Windows.Storage.Provider.FileUpdateRequestedEventArgs")
   @js.native
   abstract class FileUpdateRequestedEventArgs ()
     extends typings.winrtUwp.Windows.Storage.Provider.FileUpdateRequestedEventArgs
   
   /** Describes the status of a file update request. */
+  @JSGlobal("Windows.Storage.Provider.FileUpdateStatus")
   @js.native
-  object FileUpdateStatus extends js.Object {
+  object FileUpdateStatus extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.Provider.FileUpdateStatus with Double] = js.native
@@ -107,8 +115,9 @@ object Provider extends js.Object {
   }
   
   /** Indicates when Windows will request a file update if another app reads the locally cached version of the file. */
+  @JSGlobal("Windows.Storage.Provider.ReadActivationMode")
   @js.native
-  object ReadActivationMode extends js.Object {
+  object ReadActivationMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.Provider.ReadActivationMode with Double] = js.native
@@ -119,8 +128,9 @@ object Provider extends js.Object {
   }
   
   /** Indicates the status of the file picker UI. */
+  @JSGlobal("Windows.Storage.Provider.UIStatus")
   @js.native
-  object UIStatus extends js.Object {
+  object UIStatus extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.Provider.UIStatus with Double] = js.native
@@ -135,8 +145,9 @@ object Provider extends js.Object {
   }
   
   /** Indicates whether other apps can write to the locally cached version of the file and when Windows will request an update if another app writes to that local file. */
+  @JSGlobal("Windows.Storage.Provider.WriteActivationMode")
   @js.native
-  object WriteActivationMode extends js.Object {
+  object WriteActivationMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.Provider.WriteActivationMode with Double] = js.native

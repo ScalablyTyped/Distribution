@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the action to be taken when traffic matches this condition (allow or deny).
   */
 @js.native
-trait SchemaSecurityPolicyRule extends js.Object {
+trait SchemaSecurityPolicyRule extends StObject {
   
   /**
     * The Action to preform when the client connection triggers the rule. Can
@@ -93,87 +94,75 @@ object SchemaSecurityPolicyRule {
   }
   
   @scala.inline
-  implicit class SchemaSecurityPolicyRuleOps[Self <: SchemaSecurityPolicyRule] (val x: Self) extends AnyVal {
+  implicit class SchemaSecurityPolicyRuleMutableBuilder[Self <: SchemaSecurityPolicyRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEnableLogging(value: Boolean): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setEnableLoggingUndefined: Self = StObject.set(x, "enableLogging", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableLogging(value: Boolean): Self = this.set("enableLogging", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteEnableLogging: Self = this.set("enableLogging", js.undefined)
+    def setMatch(value: SchemaSecurityPolicyRuleMatcher): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatch(value: SchemaSecurityPolicyRuleMatcher): Self = this.set("match", value.asInstanceOf[js.Any])
+    def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
     @scala.inline
-    def deleteMatch: Self = this.set("match", js.undefined)
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreview(value: Boolean): Self = this.set("preview", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deletePreview: Self = this.set("preview", js.undefined)
+    def setRateLimitOptions(value: SchemaSecurityPolicyRuleRateLimitOptions): Self = StObject.set(x, "rateLimitOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setRateLimitOptionsUndefined: Self = StObject.set(x, "rateLimitOptions", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setRuleTupleCount(value: Double): Self = StObject.set(x, "ruleTupleCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRateLimitOptions(value: SchemaSecurityPolicyRuleRateLimitOptions): Self = this.set("rateLimitOptions", value.asInstanceOf[js.Any])
+    def setRuleTupleCountUndefined: Self = StObject.set(x, "ruleTupleCount", js.undefined)
     
     @scala.inline
-    def deleteRateLimitOptions: Self = this.set("rateLimitOptions", js.undefined)
+    def setTargetResources(value: js.Array[String]): Self = StObject.set(x, "targetResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleTupleCount(value: Double): Self = this.set("ruleTupleCount", value.asInstanceOf[js.Any])
+    def setTargetResourcesUndefined: Self = StObject.set(x, "targetResources", js.undefined)
     
     @scala.inline
-    def deleteRuleTupleCount: Self = this.set("ruleTupleCount", js.undefined)
-    
-    @scala.inline
-    def setTargetResourcesVarargs(value: String*): Self = this.set("targetResources", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetResources(value: js.Array[String]): Self = this.set("targetResources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetResources: Self = this.set("targetResources", js.undefined)
+    def setTargetResourcesVarargs(value: String*): Self = StObject.set(x, "targetResources", js.Array(value :_*))
   }
 }

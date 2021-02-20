@@ -5,6 +5,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`high-four-bit`
 import typings.arcgisJsApi.arcgisJsApiStrings.`low-four-bit`
 import typings.arcgisJsApi.arcgisJsApiStrings.`modulo-ten`
 import typings.arcgisJsApi.arcgisJsApiStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,45 +50,33 @@ object PointCloudStretchRendererProperties {
   }
   
   @scala.inline
-  implicit class PointCloudStretchRendererPropertiesOps[Self <: PointCloudStretchRendererProperties] (val x: Self) extends AnyVal {
+  implicit class PointCloudStretchRendererPropertiesMutableBuilder[Self <: PointCloudStretchRendererProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldTransformType(value: none | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten`): Self = StObject.set(x, "fieldTransformType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldTransformTypeUndefined: Self = StObject.set(x, "fieldTransformType", js.undefined)
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setLegendOptions(value: PointCloudStretchRendererLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldTransformType(value: none | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten`): Self = this.set("fieldTransformType", value.asInstanceOf[js.Any])
+    def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
     
     @scala.inline
-    def deleteFieldTransformType: Self = this.set("fieldTransformType", js.undefined)
+    def setStops(value: js.Array[PointCloudStretchRendererStops]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendOptions(value: PointCloudStretchRendererLegendOptions): Self = this.set("legendOptions", value.asInstanceOf[js.Any])
+    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
     @scala.inline
-    def deleteLegendOptions: Self = this.set("legendOptions", js.undefined)
-    
-    @scala.inline
-    def setStopsVarargs(value: PointCloudStretchRendererStops*): Self = this.set("stops", js.Array(value :_*))
-    
-    @scala.inline
-    def setStops(value: js.Array[PointCloudStretchRendererStops]): Self = this.set("stops", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStops: Self = this.set("stops", js.undefined)
+    def setStopsVarargs(value: PointCloudStretchRendererStops*): Self = StObject.set(x, "stops", js.Array(value :_*))
   }
 }

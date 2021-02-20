@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAggregateComplianceByConfigRulesResponse extends js.Object {
+trait DescribeAggregateComplianceByConfigRulesResponse extends StObject {
   
   /**
     * Returns a list of AggregateComplianceByConfigRule object.
@@ -26,33 +27,21 @@ object DescribeAggregateComplianceByConfigRulesResponse {
   }
   
   @scala.inline
-  implicit class DescribeAggregateComplianceByConfigRulesResponseOps[Self <: DescribeAggregateComplianceByConfigRulesResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeAggregateComplianceByConfigRulesResponseMutableBuilder[Self <: DescribeAggregateComplianceByConfigRulesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregateComplianceByConfigRules(value: AggregateComplianceByConfigRuleList): Self = StObject.set(x, "AggregateComplianceByConfigRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregateComplianceByConfigRulesUndefined: Self = StObject.set(x, "AggregateComplianceByConfigRules", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAggregateComplianceByConfigRulesVarargs(value: AggregateComplianceByConfigRule*): Self = StObject.set(x, "AggregateComplianceByConfigRules", js.Array(value :_*))
     
     @scala.inline
-    def setAggregateComplianceByConfigRulesVarargs(value: AggregateComplianceByConfigRule*): Self = this.set("AggregateComplianceByConfigRules", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregateComplianceByConfigRules(value: AggregateComplianceByConfigRuleList): Self = this.set("AggregateComplianceByConfigRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAggregateComplianceByConfigRules: Self = this.set("AggregateComplianceByConfigRules", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

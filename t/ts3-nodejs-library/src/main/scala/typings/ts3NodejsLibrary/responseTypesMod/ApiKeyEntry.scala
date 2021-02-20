@@ -2,6 +2,7 @@ package typings.ts3NodejsLibrary.responseTypesMod
 
 import typings.ts3NodejsLibrary.enumMod.ApiKeyScope
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,42 +44,30 @@ object ApiKeyEntry {
   }
   
   @scala.inline
-  implicit class ApiKeyEntryOps[Self <: ApiKeyEntry] (val x: Self) extends AnyVal {
+  implicit class ApiKeyEntryMutableBuilder[Self <: ApiKeyEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCldbid(value: Double): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCldbid(value: Double): Self = this.set("cldbid", value.asInstanceOf[js.Any])
+    def setExpiresAt(value: Double): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: Double): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setScope(value: ApiKeyScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiresAt(value: Double): Self = this.set("expiresAt", value.asInstanceOf[js.Any])
+    def setSid(value: Double): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScope(value: ApiKeyScope): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSid(value: Double): Self = this.set("sid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeLeft(value: Double): Self = this.set("timeLeft", value.asInstanceOf[js.Any])
+    def setTimeLeft(value: Double): Self = StObject.set(x, "timeLeft", value.asInstanceOf[js.Any])
   }
 }

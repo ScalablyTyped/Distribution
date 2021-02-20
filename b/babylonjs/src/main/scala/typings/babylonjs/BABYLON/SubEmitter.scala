@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubEmitter extends js.Object {
+trait SubEmitter extends StObject {
   
   /** Release associated resources */
   def dispose(): Unit = js.native
@@ -54,36 +55,24 @@ object SubEmitter {
   }
   
   @scala.inline
-  implicit class SubEmitterOps[Self <: SubEmitter] (val x: Self) extends AnyVal {
+  implicit class SubEmitterMutableBuilder[Self <: SubEmitter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInheritDirection(value: Boolean): Self = StObject.set(x, "inheritDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInheritedVelocityAmount(value: Double): Self = StObject.set(x, "inheritedVelocityAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setParticleSystem(value: ParticleSystem): Self = StObject.set(x, "particleSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInheritDirection(value: Boolean): Self = this.set("inheritDirection", value.asInstanceOf[js.Any])
+    def setSerialize(value: () => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInheritedVelocityAmount(value: Double): Self = this.set("inheritedVelocityAmount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParticleSystem(value: ParticleSystem): Self = this.set("particleSystem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSerialize(value: () => js.Any): Self = this.set("serialize", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setType(value: SubEmitterType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: SubEmitterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -7,14 +7,14 @@ import typings.awsSdkClientKmsNode.typesDisableKeyRotationInputMod.DisableKeyRot
 import typings.awsSdkClientKmsNode.typesDisableKeyRotationOutputMod.DisableKeyRotationOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/commands/DisableKeyRotationCommand", JSImport.Namespace)
-@js.native
-object disableKeyRotationCommandMod extends js.Object {
+object disableKeyRotationCommandMod {
   
+  @JSImport("@aws-sdk/client-kms-node/commands/DisableKeyRotationCommand", "DisableKeyRotationCommand")
   @js.native
   class DisableKeyRotationCommand protected () extends Command[
           InputTypesUnion, 

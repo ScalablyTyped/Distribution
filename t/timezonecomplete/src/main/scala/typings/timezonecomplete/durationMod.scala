@@ -1,36 +1,20 @@
 package typings.timezonecomplete
 
 import typings.timezonecomplete.basicsMod.TimeUnit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("timezonecomplete/dist/lib/duration", JSImport.Namespace)
-@js.native
-object durationMod extends js.Object {
+object durationMod {
   
-  def days(n: Double): Duration = js.native
-  
-  def hours(n: Double): Duration = js.native
-  
-  def isDuration(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/duration.Duration */ Boolean = js.native
-  
-  def milliseconds(n: Double): Duration = js.native
-  
-  def minutes(n: Double): Duration = js.native
-  
-  def months(n: Double): Duration = js.native
-  
-  def seconds(n: Double): Duration = js.native
-  
-  def years(n: Double): Duration = js.native
-  
+  @JSImport("timezonecomplete/dist/lib/duration", "Duration")
   @js.native
   /**
     * Construct a time duration of 0 milliseconds
     * @throws nothing
     */
-  class Duration () extends js.Object {
+  class Duration () extends StObject {
     /**
       * Construct a duration from an amount and a time unit.
       * @param amount	Number of units
@@ -347,8 +331,7 @@ object durationMod extends js.Object {
     def years(): Double = js.native
   }
   /* static members */
-  @js.native
-  object Duration extends js.Object {
+  object Duration {
     
     /**
       * Construct a time duration
@@ -356,6 +339,8 @@ object durationMod extends js.Object {
       * @return A duration of n days
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
+    @JSImport("timezonecomplete/dist/lib/duration", "Duration.days")
+    @js.native
     def days(amount: Double): Duration = js.native
     
     /**
@@ -364,6 +349,8 @@ object durationMod extends js.Object {
       * @return A duration of n hours
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
+    @JSImport("timezonecomplete/dist/lib/duration", "Duration.hours")
+    @js.native
     def hours(amount: Double): Duration = js.native
     
     /**
@@ -372,6 +359,8 @@ object durationMod extends js.Object {
       * @return A duration of n milliseconds
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
+    @JSImport("timezonecomplete/dist/lib/duration", "Duration.milliseconds")
+    @js.native
     def milliseconds(amount: Double): Duration = js.native
     
     /**
@@ -380,6 +369,8 @@ object durationMod extends js.Object {
       * @return A duration of n minutes
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
+    @JSImport("timezonecomplete/dist/lib/duration", "Duration.minutes")
+    @js.native
     def minutes(amount: Double): Duration = js.native
     
     /**
@@ -388,6 +379,8 @@ object durationMod extends js.Object {
       * @return A duration of n months
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
+    @JSImport("timezonecomplete/dist/lib/duration", "Duration.months")
+    @js.native
     def months(amount: Double): Duration = js.native
     
     /**
@@ -396,6 +389,8 @@ object durationMod extends js.Object {
       * @return A duration of n seconds
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
+    @JSImport("timezonecomplete/dist/lib/duration", "Duration.seconds")
+    @js.native
     def seconds(amount: Double): Duration = js.native
     
     /**
@@ -404,6 +399,40 @@ object durationMod extends js.Object {
       * @return A duration of n years
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
+    @JSImport("timezonecomplete/dist/lib/duration", "Duration.years")
+    @js.native
     def years(amount: Double): Duration = js.native
   }
+  
+  @JSImport("timezonecomplete/dist/lib/duration", "days")
+  @js.native
+  def days(n: Double): Duration = js.native
+  
+  @JSImport("timezonecomplete/dist/lib/duration", "hours")
+  @js.native
+  def hours(n: Double): Duration = js.native
+  
+  @JSImport("timezonecomplete/dist/lib/duration", "isDuration")
+  @js.native
+  def isDuration(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/duration.Duration */ Boolean = js.native
+  
+  @JSImport("timezonecomplete/dist/lib/duration", "milliseconds")
+  @js.native
+  def milliseconds(n: Double): Duration = js.native
+  
+  @JSImport("timezonecomplete/dist/lib/duration", "minutes")
+  @js.native
+  def minutes(n: Double): Duration = js.native
+  
+  @JSImport("timezonecomplete/dist/lib/duration", "months")
+  @js.native
+  def months(n: Double): Duration = js.native
+  
+  @JSImport("timezonecomplete/dist/lib/duration", "seconds")
+  @js.native
+  def seconds(n: Double): Duration = js.native
+  
+  @JSImport("timezonecomplete/dist/lib/duration", "years")
+  @js.native
+  def years(n: Double): Duration = js.native
 }

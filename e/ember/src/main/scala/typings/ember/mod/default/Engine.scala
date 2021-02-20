@@ -1,10 +1,11 @@
 package typings.ember.mod.default
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ember", "Engine")
+@JSImport("ember", "default.Engine")
 @js.native
 class Engine ()
-  extends typings.emberEngine.mod.default
+  extends typings.ember.mod.Ember.Engine

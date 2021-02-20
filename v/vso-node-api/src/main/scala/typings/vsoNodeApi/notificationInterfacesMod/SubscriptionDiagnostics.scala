@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubscriptionDiagnostics extends js.Object {
+trait SubscriptionDiagnostics extends StObject {
   
   /**
     * Optional. Contol the tracing
@@ -21,21 +22,9 @@ object SubscriptionDiagnostics {
   }
   
   @scala.inline
-  implicit class SubscriptionDiagnosticsOps[Self <: SubscriptionDiagnostics] (val x: Self) extends AnyVal {
+  implicit class SubscriptionDiagnosticsMutableBuilder[Self <: SubscriptionDiagnostics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNotificationTracing(value: NotificationTracing): Self = this.set("notificationTracing", value.asInstanceOf[js.Any])
+    def setNotificationTracing(value: NotificationTracing): Self = StObject.set(x, "notificationTracing", value.asInstanceOf[js.Any])
   }
 }

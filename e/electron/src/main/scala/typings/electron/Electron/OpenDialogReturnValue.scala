@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpenDialogReturnValue extends js.Object {
+trait OpenDialogReturnValue extends StObject {
   
   /**
     * An array matching the `filePaths` array of base64 encoded strings which contains
@@ -36,36 +37,24 @@ object OpenDialogReturnValue {
   }
   
   @scala.inline
-  implicit class OpenDialogReturnValueOps[Self <: OpenDialogReturnValue] (val x: Self) extends AnyVal {
+  implicit class OpenDialogReturnValueMutableBuilder[Self <: OpenDialogReturnValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBookmarks(value: js.Array[String]): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBookmarksUndefined: Self = StObject.set(x, "bookmarks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBookmarksVarargs(value: String*): Self = StObject.set(x, "bookmarks", js.Array(value :_*))
     
     @scala.inline
-    def setCanceled(value: Boolean): Self = this.set("canceled", value.asInstanceOf[js.Any])
+    def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilePathsVarargs(value: String*): Self = this.set("filePaths", js.Array(value :_*))
+    def setFilePaths(value: js.Array[String]): Self = StObject.set(x, "filePaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilePaths(value: js.Array[String]): Self = this.set("filePaths", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBookmarksVarargs(value: String*): Self = this.set("bookmarks", js.Array(value :_*))
-    
-    @scala.inline
-    def setBookmarks(value: js.Array[String]): Self = this.set("bookmarks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBookmarks: Self = this.set("bookmarks", js.undefined)
+    def setFilePathsVarargs(value: String*): Self = StObject.set(x, "filePaths", js.Array(value :_*))
   }
 }

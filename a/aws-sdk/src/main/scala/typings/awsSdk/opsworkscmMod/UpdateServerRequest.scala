@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworkscmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateServerRequest extends js.Object {
+trait UpdateServerRequest extends StObject {
   
   /**
     * Sets the number of automated backups that you want to keep. 
@@ -35,45 +36,33 @@ object UpdateServerRequest {
   }
   
   @scala.inline
-  implicit class UpdateServerRequestOps[Self <: UpdateServerRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateServerRequestMutableBuilder[Self <: UpdateServerRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupRetentionCount(value: Integer): Self = StObject.set(x, "BackupRetentionCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupRetentionCountUndefined: Self = StObject.set(x, "BackupRetentionCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableAutomatedBackup(value: Boolean): Self = StObject.set(x, "DisableAutomatedBackup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerName(value: ServerName): Self = this.set("ServerName", value.asInstanceOf[js.Any])
+    def setDisableAutomatedBackupUndefined: Self = StObject.set(x, "DisableAutomatedBackup", js.undefined)
     
     @scala.inline
-    def setBackupRetentionCount(value: Integer): Self = this.set("BackupRetentionCount", value.asInstanceOf[js.Any])
+    def setPreferredBackupWindow(value: TimeWindowDefinition): Self = StObject.set(x, "PreferredBackupWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackupRetentionCount: Self = this.set("BackupRetentionCount", js.undefined)
+    def setPreferredBackupWindowUndefined: Self = StObject.set(x, "PreferredBackupWindow", js.undefined)
     
     @scala.inline
-    def setDisableAutomatedBackup(value: Boolean): Self = this.set("DisableAutomatedBackup", value.asInstanceOf[js.Any])
+    def setPreferredMaintenanceWindow(value: TimeWindowDefinition): Self = StObject.set(x, "PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableAutomatedBackup: Self = this.set("DisableAutomatedBackup", js.undefined)
+    def setPreferredMaintenanceWindowUndefined: Self = StObject.set(x, "PreferredMaintenanceWindow", js.undefined)
     
     @scala.inline
-    def setPreferredBackupWindow(value: TimeWindowDefinition): Self = this.set("PreferredBackupWindow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreferredBackupWindow: Self = this.set("PreferredBackupWindow", js.undefined)
-    
-    @scala.inline
-    def setPreferredMaintenanceWindow(value: TimeWindowDefinition): Self = this.set("PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreferredMaintenanceWindow: Self = this.set("PreferredMaintenanceWindow", js.undefined)
+    def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
   }
 }

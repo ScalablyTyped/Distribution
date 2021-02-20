@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContextDataType extends js.Object {
+trait ContextDataType extends StObject {
   
   /**
     * Encoded data containing device fingerprinting details, collected using the Amazon Cognito context data collection library.
@@ -41,39 +42,27 @@ object ContextDataType {
   }
   
   @scala.inline
-  implicit class ContextDataTypeOps[Self <: ContextDataType] (val x: Self) extends AnyVal {
+  implicit class ContextDataTypeMutableBuilder[Self <: ContextDataType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncodedData(value: StringType): Self = StObject.set(x, "EncodedData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncodedDataUndefined: Self = StObject.set(x, "EncodedData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpHeaders(value: HttpHeaderList): Self = StObject.set(x, "HttpHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpHeadersVarargs(value: HttpHeader*): Self = this.set("HttpHeaders", js.Array(value :_*))
+    def setHttpHeadersVarargs(value: HttpHeader*): Self = StObject.set(x, "HttpHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setHttpHeaders(value: HttpHeaderList): Self = this.set("HttpHeaders", value.asInstanceOf[js.Any])
+    def setIpAddress(value: StringType): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddress(value: StringType): Self = this.set("IpAddress", value.asInstanceOf[js.Any])
+    def setServerName(value: StringType): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerName(value: StringType): Self = this.set("ServerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerPath(value: StringType): Self = this.set("ServerPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEncodedData(value: StringType): Self = this.set("EncodedData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncodedData: Self = this.set("EncodedData", js.undefined)
+    def setServerPath(value: StringType): Self = StObject.set(x, "ServerPath", value.asInstanceOf[js.Any])
   }
 }

@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Graphics.Printing3D
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a 3D Manufacturing Format (3MF) component. Acts as a container of other components. */
 @js.native
-trait Printing3DComponent extends js.Object {
+trait Printing3DComponent extends StObject {
   
   /** Gets the other components contained within the component. */
   var components: IVector[Printing3DComponentWithMatrix] = js.native
@@ -44,36 +45,24 @@ object Printing3DComponent {
   }
   
   @scala.inline
-  implicit class Printing3DComponentOps[Self <: Printing3DComponent] (val x: Self) extends AnyVal {
+  implicit class Printing3DComponentMutableBuilder[Self <: Printing3DComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponents(value: IVector[Printing3DComponentWithMatrix]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMesh(value: Printing3DMesh): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponents(value: IVector[Printing3DComponentWithMatrix]): Self = this.set("components", value.asInstanceOf[js.Any])
+    def setPartNumber(value: String): Self = StObject.set(x, "partNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMesh(value: Printing3DMesh): Self = this.set("mesh", value.asInstanceOf[js.Any])
+    def setThumbnail(value: Printing3DTextureResource): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPartNumber(value: String): Self = this.set("partNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThumbnail(value: Printing3DTextureResource): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Printing3DObjectType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: Printing3DObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

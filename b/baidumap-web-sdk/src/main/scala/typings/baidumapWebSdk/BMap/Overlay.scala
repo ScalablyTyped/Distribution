@@ -1,12 +1,13 @@
 package typings.baidumapWebSdk.BMap
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Overlay extends js.Object {
+trait Overlay extends StObject {
   
   var draw: js.UndefOr[js.Function0[Unit]] = js.native
   
@@ -27,48 +28,36 @@ object Overlay {
   }
   
   @scala.inline
-  implicit class OverlayOps[Self <: Overlay] (val x: Self) extends AnyVal {
+  implicit class OverlayMutableBuilder[Self <: Overlay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDraw(value: () => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrawUndefined: Self = StObject.set(x, "draw", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDraw(value: () => Unit): Self = this.set("draw", js.Any.fromFunction0(value))
+    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
     @scala.inline
-    def deleteDraw: Self = this.set("draw", js.undefined)
+    def setInitialize(value: /* map */ Map => HTMLElement): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHide(value: () => Unit): Self = this.set("hide", js.Any.fromFunction0(value))
+    def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
     
     @scala.inline
-    def deleteHide: Self = this.set("hide", js.undefined)
+    def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInitialize(value: /* map */ Map => HTMLElement): Self = this.set("initialize", js.Any.fromFunction1(value))
+    def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
     
     @scala.inline
-    def deleteInitialize: Self = this.set("initialize", js.undefined)
+    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsVisible(value: () => Boolean): Self = this.set("isVisible", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteIsVisible: Self = this.set("isVisible", js.undefined)
-    
-    @scala.inline
-    def setShow(value: () => Unit): Self = this.set("show", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

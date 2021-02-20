@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SettlementTransactionAmount extends js.Object {
+trait SettlementTransactionAmount extends StObject {
   
   var commission: js.UndefOr[SettlementTransactionAmountCommission] = js.native
   
@@ -38,42 +39,30 @@ object SettlementTransactionAmount {
   }
   
   @scala.inline
-  implicit class SettlementTransactionAmountOps[Self <: SettlementTransactionAmount] (val x: Self) extends AnyVal {
+  implicit class SettlementTransactionAmountMutableBuilder[Self <: SettlementTransactionAmount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommission(value: SettlementTransactionAmountCommission): Self = StObject.set(x, "commission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommissionUndefined: Self = StObject.set(x, "commission", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommission(value: SettlementTransactionAmountCommission): Self = this.set("commission", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCommission: Self = this.set("commission", js.undefined)
+    def setTransactionAmount(value: Price): Self = StObject.set(x, "transactionAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setTransactionAmountUndefined: Self = StObject.set(x, "transactionAmount", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactionAmount(value: Price): Self = this.set("transactionAmount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransactionAmount: Self = this.set("transactionAmount", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

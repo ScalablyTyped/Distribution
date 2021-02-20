@@ -2,6 +2,7 @@ package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.anon.DrawerWidth
 import typings.antDesignReactNative.drawerMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Drawer () extends default
 /* static members */
-@JSImport("@ant-design/react-native", "Drawer")
-@js.native
-object Drawer extends js.Object {
+object Drawer {
   
-  var defaultProps: DrawerWidth = js.native
+  @JSImport("@ant-design/react-native", "Drawer")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@ant-design/react-native", "Drawer.defaultProps")
+  @js.native
+  def defaultProps: DrawerWidth = js.native
+  @scala.inline
+  def defaultProps_=(x: DrawerWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

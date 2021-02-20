@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartZoomable extends js.Object {
+trait ChartZoomable extends StObject {
   
   var mousewheel: js.UndefOr[Boolean | ChartZoomableMousewheel] = js.native
   
@@ -20,30 +21,18 @@ object ChartZoomable {
   }
   
   @scala.inline
-  implicit class ChartZoomableOps[Self <: ChartZoomable] (val x: Self) extends AnyVal {
+  implicit class ChartZoomableMutableBuilder[Self <: ChartZoomable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMousewheel(value: Boolean | ChartZoomableMousewheel): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMousewheelUndefined: Self = StObject.set(x, "mousewheel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelection(value: Boolean | ChartZoomableSelection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMousewheel(value: Boolean | ChartZoomableMousewheel): Self = this.set("mousewheel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMousewheel: Self = this.set("mousewheel", js.undefined)
-    
-    @scala.inline
-    def setSelection(value: Boolean | ChartZoomableSelection): Self = this.set("selection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelection: Self = this.set("selection", js.undefined)
+    def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
   }
 }

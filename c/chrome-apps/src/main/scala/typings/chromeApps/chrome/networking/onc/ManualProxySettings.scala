@@ -1,11 +1,12 @@
 package typings.chromeApps.chrome.networking.onc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManualProxySettings[M, P] extends js.Object {
+trait ManualProxySettings[M, P] extends StObject {
   
   /** Settings for FTP proxy. */
   var FTPProxy: js.UndefOr[P] = js.native
@@ -28,42 +29,30 @@ object ManualProxySettings {
   }
   
   @scala.inline
-  implicit class ManualProxySettingsOps[Self <: ManualProxySettings[_, _], M, P] (val x: Self with (ManualProxySettings[M, P])) extends AnyVal {
+  implicit class ManualProxySettingsMutableBuilder[Self <: ManualProxySettings[_, _], M, P] (val x: Self with (ManualProxySettings[M, P])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFTPProxy(value: P): Self = StObject.set(x, "FTPProxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFTPProxyUndefined: Self = StObject.set(x, "FTPProxy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHTTPProxy(value: P): Self = StObject.set(x, "HTTPProxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFTPProxy(value: P): Self = this.set("FTPProxy", value.asInstanceOf[js.Any])
+    def setHTTPProxyUndefined: Self = StObject.set(x, "HTTPProxy", js.undefined)
     
     @scala.inline
-    def deleteFTPProxy: Self = this.set("FTPProxy", js.undefined)
+    def setSOCKS(value: P): Self = StObject.set(x, "SOCKS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHTTPProxy(value: P): Self = this.set("HTTPProxy", value.asInstanceOf[js.Any])
+    def setSOCKSUndefined: Self = StObject.set(x, "SOCKS", js.undefined)
     
     @scala.inline
-    def deleteHTTPProxy: Self = this.set("HTTPProxy", js.undefined)
+    def setSecureHTTPProxy(value: P): Self = StObject.set(x, "SecureHTTPProxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSOCKS(value: P): Self = this.set("SOCKS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSOCKS: Self = this.set("SOCKS", js.undefined)
-    
-    @scala.inline
-    def setSecureHTTPProxy(value: P): Self = this.set("SecureHTTPProxy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecureHTTPProxy: Self = this.set("SecureHTTPProxy", js.undefined)
+    def setSecureHTTPProxyUndefined: Self = StObject.set(x, "SecureHTTPProxy", js.undefined)
   }
 }

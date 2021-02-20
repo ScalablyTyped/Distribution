@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Security.Cryptography.Core
 
 import typings.winrt.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IKeyDerivationParametersStatics extends js.Object {
+trait IKeyDerivationParametersStatics extends StObject {
   
   def buildForPbkdf2(pbkdf2Salt: IBuffer, iterationCount: Double): KeyDerivationParameters = js.native
   
@@ -33,27 +34,15 @@ object IKeyDerivationParametersStatics {
   }
   
   @scala.inline
-  implicit class IKeyDerivationParametersStaticsOps[Self <: IKeyDerivationParametersStatics] (val x: Self) extends AnyVal {
+  implicit class IKeyDerivationParametersStaticsMutableBuilder[Self <: IKeyDerivationParametersStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuildForPbkdf2(value: (IBuffer, Double) => KeyDerivationParameters): Self = StObject.set(x, "buildForPbkdf2", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuildForSP800108(value: (IBuffer, IBuffer) => KeyDerivationParameters): Self = StObject.set(x, "buildForSP800108", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBuildForPbkdf2(value: (IBuffer, Double) => KeyDerivationParameters): Self = this.set("buildForPbkdf2", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setBuildForSP800108(value: (IBuffer, IBuffer) => KeyDerivationParameters): Self = this.set("buildForSP800108", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setBuildForSP80056a(value: (IBuffer, IBuffer, IBuffer, IBuffer, IBuffer) => KeyDerivationParameters): Self = this.set("buildForSP80056a", js.Any.fromFunction5(value))
+    def setBuildForSP80056a(value: (IBuffer, IBuffer, IBuffer, IBuffer, IBuffer) => KeyDerivationParameters): Self = StObject.set(x, "buildForSP80056a", js.Any.fromFunction5(value))
   }
 }

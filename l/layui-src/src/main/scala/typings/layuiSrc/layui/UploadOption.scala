@@ -5,12 +5,13 @@ import typings.layuiSrc.layuiSrcStrings.file
 import typings.layuiSrc.layuiSrcStrings.images
 import typings.layuiSrc.layuiSrcStrings.video
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadOption extends js.Object {
+trait UploadOption extends StObject {
   
   var accept: js.UndefOr[images | file | video | audio] = js.native
   
@@ -61,132 +62,120 @@ object UploadOption {
   }
   
   @scala.inline
-  implicit class UploadOptionOps[Self <: UploadOption] (val x: Self) extends AnyVal {
+  implicit class UploadOptionMutableBuilder[Self <: UploadOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccept(value: images | file | video | audio): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptMime(value: String): Self = StObject.set(x, "acceptMime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcceptMimeUndefined: Self = StObject.set(x, "acceptMime", js.undefined)
     
     @scala.inline
-    def setAccept(value: images | file | video | audio): Self = this.set("accept", value.asInstanceOf[js.Any])
+    def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
     
     @scala.inline
-    def deleteAccept: Self = this.set("accept", js.undefined)
+    def setAllDone(value: /* obj */ js.Object => Unit): Self = StObject.set(x, "allDone", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAcceptMime(value: String): Self = this.set("acceptMime", value.asInstanceOf[js.Any])
+    def setAllDoneUndefined: Self = StObject.set(x, "allDone", js.undefined)
     
     @scala.inline
-    def deleteAcceptMime: Self = this.set("acceptMime", js.undefined)
+    def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllDone(value: /* obj */ js.Object => Unit): Self = this.set("allDone", js.Any.fromFunction1(value))
+    def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
     
     @scala.inline
-    def deleteAllDone: Self = this.set("allDone", js.undefined)
+    def setBefore(value: /* obj */ js.Object => Unit): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAuto(value: Boolean): Self = this.set("auto", value.asInstanceOf[js.Any])
+    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
     @scala.inline
-    def deleteAuto: Self = this.set("auto", js.undefined)
+    def setBindAction(value: String | HTMLElement): Self = StObject.set(x, "bindAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBefore(value: /* obj */ js.Object => Unit): Self = this.set("before", js.Any.fromFunction1(value))
+    def setBindActionUndefined: Self = StObject.set(x, "bindAction", js.undefined)
     
     @scala.inline
-    def deleteBefore: Self = this.set("before", js.undefined)
+    def setChoose(value: /* obj */ js.Object => Unit): Self = StObject.set(x, "choose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindAction(value: String | HTMLElement): Self = this.set("bindAction", value.asInstanceOf[js.Any])
+    def setChooseUndefined: Self = StObject.set(x, "choose", js.undefined)
     
     @scala.inline
-    def deleteBindAction: Self = this.set("bindAction", js.undefined)
+    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChoose(value: /* obj */ js.Object => Unit): Self = this.set("choose", js.Any.fromFunction1(value))
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteChoose: Self = this.set("choose", js.undefined)
+    def setDone(value: (/* res */ js.Object, /* index */ Double, /* upload */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "done", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setData(value: js.Object): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDrag(value: Boolean): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDone(value: (/* res */ js.Object, /* index */ Double, /* upload */ js.Function0[Unit]) => Unit): Self = this.set("done", js.Any.fromFunction3(value))
+    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
     @scala.inline
-    def deleteDone: Self = this.set("done", js.undefined)
+    def setElem(value: String | HTMLElement): Self = StObject.set(x, "elem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrag(value: Boolean): Self = this.set("drag", value.asInstanceOf[js.Any])
+    def setElemUndefined: Self = StObject.set(x, "elem", js.undefined)
     
     @scala.inline
-    def deleteDrag: Self = this.set("drag", js.undefined)
+    def setError(value: (/* index */ Double, /* upload */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setElem(value: String | HTMLElement): Self = this.set("elem", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteElem: Self = this.set("elem", js.undefined)
+    def setExts(value: String): Self = StObject.set(x, "exts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: (/* index */ Double, /* upload */ js.Function0[Unit]) => Unit): Self = this.set("error", js.Any.fromFunction2(value))
+    def setExtsUndefined: Self = StObject.set(x, "exts", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExts(value: String): Self = this.set("exts", value.asInstanceOf[js.Any])
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def deleteExts: Self = this.set("exts", js.undefined)
+    def setHeader(value: js.Object): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: js.Object): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
     @scala.inline
-    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: Double): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChoosePrivateKeyRule extends js.Object {
+trait ChoosePrivateKeyRule extends StObject {
   
   /**
     * The package names for which outgoing requests are subject to this rule. If no package names are specified, then the rule applies to all packages. For each package name listed, the
@@ -29,39 +30,27 @@ object ChoosePrivateKeyRule {
   }
   
   @scala.inline
-  implicit class ChoosePrivateKeyRuleOps[Self <: ChoosePrivateKeyRule] (val x: Self) extends AnyVal {
+  implicit class ChoosePrivateKeyRuleMutableBuilder[Self <: ChoosePrivateKeyRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPackageNames(value: js.Array[String]): Self = StObject.set(x, "packageNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPackageNamesUndefined: Self = StObject.set(x, "packageNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPackageNamesVarargs(value: String*): Self = StObject.set(x, "packageNames", js.Array(value :_*))
     
     @scala.inline
-    def setPackageNamesVarargs(value: String*): Self = this.set("packageNames", js.Array(value :_*))
+    def setPrivateKeyAlias(value: String): Self = StObject.set(x, "privateKeyAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageNames(value: js.Array[String]): Self = this.set("packageNames", value.asInstanceOf[js.Any])
+    def setPrivateKeyAliasUndefined: Self = StObject.set(x, "privateKeyAlias", js.undefined)
     
     @scala.inline
-    def deletePackageNames: Self = this.set("packageNames", js.undefined)
+    def setUrlPattern(value: String): Self = StObject.set(x, "urlPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateKeyAlias(value: String): Self = this.set("privateKeyAlias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateKeyAlias: Self = this.set("privateKeyAlias", js.undefined)
-    
-    @scala.inline
-    def setUrlPattern(value: String): Self = this.set("urlPattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlPattern: Self = this.set("urlPattern", js.undefined)
+    def setUrlPatternUndefined: Self = StObject.set(x, "urlPattern", js.undefined)
   }
 }

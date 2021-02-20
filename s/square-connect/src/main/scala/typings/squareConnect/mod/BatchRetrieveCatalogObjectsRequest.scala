@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "BatchRetrieveCatalogObjectsRequest")
 @js.native
-class BatchRetrieveCatalogObjectsRequest () extends js.Object {
+class BatchRetrieveCatalogObjectsRequest () extends StObject {
   
   /**
     * If `true`, the response will include additional objects that are related to the requested objects, as follows:

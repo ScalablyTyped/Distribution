@@ -2,13 +2,18 @@ package typings.ol
 
 import typings.ol.olFeatureMod.FeatureLike
 import typings.ol.pluggableMapMod.FrameState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/renderer/canvas/VectorTileLayer", JSImport.Namespace)
-@js.native
-object vectorTileLayerMod extends js.Object {
+object vectorTileLayerMod {
+  
+  @JSImport("ol/renderer/canvas/VectorTileLayer", JSImport.Default)
+  @js.native
+  class default protected () extends CanvasVectorTileLayerRenderer {
+    def this(layer: typings.ol.vectorTileMod.default) = this()
+  }
   
   @js.native
   trait CanvasVectorTileLayerRenderer
@@ -37,10 +42,5 @@ object vectorTileLayerMod extends js.Object {
     ): Boolean = js.native
     
     def renderQueuedTileImages_(hifi: Boolean, frameState: FrameState): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends CanvasVectorTileLayerRenderer {
-    def this(layer: typings.ol.vectorTileMod.default) = this()
   }
 }

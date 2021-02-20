@@ -1,6 +1,7 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A source that records can be read and decoded from.
   */
 @js.native
-trait SchemaSource extends js.Object {
+trait SchemaSource extends StObject {
   
   /**
     * While splitting, sources may specify the produced bundles as differences
@@ -66,51 +67,39 @@ object SchemaSource {
   }
   
   @scala.inline
-  implicit class SchemaSourceOps[Self <: SchemaSource] (val x: Self) extends AnyVal {
+  implicit class SchemaSourceMutableBuilder[Self <: SchemaSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseSpecs(value: js.Array[StringDictionary[_]]): Self = StObject.set(x, "baseSpecs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseSpecsUndefined: Self = StObject.set(x, "baseSpecs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseSpecsVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "baseSpecs", js.Array(value :_*))
     
     @scala.inline
-    def setBaseSpecsVarargs(value: StringDictionary[js.Any]*): Self = this.set("baseSpecs", js.Array(value :_*))
+    def setCodec(value: StringDictionary[js.Any]): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseSpecs(value: js.Array[StringDictionary[_]]): Self = this.set("baseSpecs", value.asInstanceOf[js.Any])
+    def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
     
     @scala.inline
-    def deleteBaseSpecs: Self = this.set("baseSpecs", js.undefined)
+    def setDoesNotNeedSplitting(value: Boolean): Self = StObject.set(x, "doesNotNeedSplitting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodec(value: StringDictionary[js.Any]): Self = this.set("codec", value.asInstanceOf[js.Any])
+    def setDoesNotNeedSplittingUndefined: Self = StObject.set(x, "doesNotNeedSplitting", js.undefined)
     
     @scala.inline
-    def deleteCodec: Self = this.set("codec", js.undefined)
+    def setMetadata(value: SchemaSourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoesNotNeedSplitting(value: Boolean): Self = this.set("doesNotNeedSplitting", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteDoesNotNeedSplitting: Self = this.set("doesNotNeedSplitting", js.undefined)
+    def setSpec(value: StringDictionary[js.Any]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: SchemaSourceMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
-    
-    @scala.inline
-    def setSpec(value: StringDictionary[js.Any]): Self = this.set("spec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpec: Self = this.set("spec", js.undefined)
+    def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
   }
 }

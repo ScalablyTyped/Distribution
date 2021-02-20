@@ -4,12 +4,13 @@ import typings.yaml.anon.Handle
 import typings.yaml.anon.Verbatim
 import typings.yaml.utilMod.Type
 import typings.yaml.utilMod.YAMLSyntaxError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Node extends js.Object {
+trait Node extends StObject {
   
   val anchor: String | Null = js.native
   
@@ -63,93 +64,81 @@ object Node {
   }
   
   @scala.inline
-  implicit class NodeOps[Self <: Node] (val x: Self) extends AnyVal {
+  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorNull: Self = StObject.set(x, "anchor", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasComment(value: Boolean): Self = this.set("hasComment", value.asInstanceOf[js.Any])
+    def setCommentNull: Self = StObject.set(x, "comment", null)
     
     @scala.inline
-    def setHasProps(value: Boolean): Self = this.set("hasProps", value.asInstanceOf[js.Any])
+    def setContext(value: ParseContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsonLike(value: Boolean): Self = this.set("jsonLike", value.asInstanceOf[js.Any])
+    def setContextNull: Self = StObject.set(x, "context", null)
     
     @scala.inline
-    def setPropsVarargs(value: Range*): Self = this.set("props", js.Array(value :_*))
+    def setError(value: YAMLSyntaxError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProps(value: js.Array[Range]): Self = this.set("props", value.asInstanceOf[js.Any])
+    def setErrorNull: Self = StObject.set(x, "error", null)
     
     @scala.inline
-    def setType(value: Type): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setHasComment(value: Boolean): Self = StObject.set(x, "hasComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueRangeContainsNewline(value: Boolean): Self = this.set("valueRangeContainsNewline", value.asInstanceOf[js.Any])
+    def setHasProps(value: Boolean): Self = StObject.set(x, "hasProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: String): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setJsonLike(value: Boolean): Self = StObject.set(x, "jsonLike", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorNull: Self = this.set("anchor", null)
+    def setProps(value: js.Array[Range]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setPropsVarargs(value: Range*): Self = StObject.set(x, "props", js.Array(value :_*))
     
     @scala.inline
-    def setCommentNull: Self = this.set("comment", null)
+    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: ParseContext): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setRangeNull: Self = StObject.set(x, "range", null)
     
     @scala.inline
-    def setContextNull: Self = this.set("context", null)
+    def setRawValue(value: String): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: YAMLSyntaxError): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setRawValueNull: Self = StObject.set(x, "rawValue", null)
     
     @scala.inline
-    def setErrorNull: Self = this.set("error", null)
+    def setTag(value: Verbatim | Handle): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: Range): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setTagNull: Self = StObject.set(x, "tag", null)
     
     @scala.inline
-    def setRangeNull: Self = this.set("range", null)
+    def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawValue(value: String): Self = this.set("rawValue", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawValueNull: Self = this.set("rawValue", null)
+    def setValueNull: Self = StObject.set(x, "value", null)
     
     @scala.inline
-    def setTag(value: Verbatim | Handle): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setValueRange(value: Range): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagNull: Self = this.set("tag", null)
+    def setValueRangeContainsNewline(value: Boolean): Self = StObject.set(x, "valueRangeContainsNewline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueNull: Self = this.set("value", null)
-    
-    @scala.inline
-    def setValueRange(value: Range): Self = this.set("valueRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueRangeNull: Self = this.set("valueRange", null)
+    def setValueRangeNull: Self = StObject.set(x, "valueRange", null)
   }
 }

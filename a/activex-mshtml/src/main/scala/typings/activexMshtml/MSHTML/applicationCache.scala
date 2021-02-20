@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait applicationCache extends js.Object {
+trait applicationCache extends StObject {
   
   @JSName("MSHTML.applicationCache_typekey")
   var MSHTMLDotapplicationCache_typekey: applicationCache = js.native
@@ -58,57 +59,45 @@ object applicationCache {
   }
   
   @scala.inline
-  implicit class applicationCacheOps[Self <: applicationCache] (val x: Self) extends AnyVal {
+  implicit class applicationCacheMutableBuilder[Self <: applicationCache] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMSHTMLDotapplicationCache_typekey(value: applicationCache): Self = StObject.set(x, "MSHTML.applicationCache_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOncached(value: js.Any): Self = StObject.set(x, "oncached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotapplicationCache_typekey(value: applicationCache): Self = this.set("MSHTML.applicationCache_typekey", value.asInstanceOf[js.Any])
+    def setOnchecking(value: js.Any): Self = StObject.set(x, "onchecking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbort(value: () => Unit): Self = this.set("abort", js.Any.fromFunction0(value))
+    def setOndownloading(value: js.Any): Self = StObject.set(x, "ondownloading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOncached(value: js.Any): Self = this.set("oncached", value.asInstanceOf[js.Any])
+    def setOnerror(value: js.Any): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnchecking(value: js.Any): Self = this.set("onchecking", value.asInstanceOf[js.Any])
+    def setOnnoupdate(value: js.Any): Self = StObject.set(x, "onnoupdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOndownloading(value: js.Any): Self = this.set("ondownloading", value.asInstanceOf[js.Any])
+    def setOnobsolete(value: js.Any): Self = StObject.set(x, "onobsolete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnerror(value: js.Any): Self = this.set("onerror", value.asInstanceOf[js.Any])
+    def setOnprogress(value: js.Any): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnnoupdate(value: js.Any): Self = this.set("onnoupdate", value.asInstanceOf[js.Any])
+    def setOnupdateready(value: js.Any): Self = StObject.set(x, "onupdateready", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnobsolete(value: js.Any): Self = this.set("onobsolete", value.asInstanceOf[js.Any])
+    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnprogress(value: js.Any): Self = this.set("onprogress", value.asInstanceOf[js.Any])
+    def setSwapCache(value: () => Unit): Self = StObject.set(x, "swapCache", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnupdateready(value: js.Any): Self = this.set("onupdateready", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSwapCache(value: () => Unit): Self = this.set("swapCache", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
+    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

@@ -4,13 +4,14 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.Error
 import typings.std.Partial
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // should be R extends void|Promise<void> but getting dtslint error
 @js.native
-trait Matchers[R, T] extends js.Object {
+trait Matchers[R, T] extends StObject {
   
   /**
     * Ensures the last call to a mock function was provided specific args.

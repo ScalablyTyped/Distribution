@@ -3,13 +3,14 @@ package typings.mangopay2NodejsSdk.anon
 import typings.mangopay2NodejsSdk.mod.event.EventType
 import typings.mangopay2NodejsSdk.mod.hook.HookStatus
 import typings.mangopay2NodejsSdk.mod.hook.HookValidity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.hook.HookData> */
 @js.native
-trait PartialHookData extends js.Object {
+trait PartialHookData extends StObject {
   
   var CreationDate: js.UndefOr[Double] = js.native
   
@@ -34,60 +35,48 @@ object PartialHookData {
   }
   
   @scala.inline
-  implicit class PartialHookDataOps[Self <: PartialHookData] (val x: Self) extends AnyVal {
+  implicit class PartialHookDataMutableBuilder[Self <: PartialHookData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventType(value: EventType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: Double): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventType(value: EventType): Self = this.set("EventType", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteEventType: Self = this.set("EventType", js.undefined)
+    def setStatus(value: HookStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: HookStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: String): Self = this.set("Tag", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
     
     @scala.inline
-    def deleteTag: Self = this.set("Tag", js.undefined)
+    def setValidity(value: HookValidity): Self = StObject.set(x, "Validity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("Url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("Url", js.undefined)
-    
-    @scala.inline
-    def setValidity(value: HookValidity): Self = this.set("Validity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidity: Self = this.set("Validity", js.undefined)
+    def setValidityUndefined: Self = StObject.set(x, "Validity", js.undefined)
   }
 }

@@ -41,12 +41,13 @@ import typings.smartFoxServer.SFS2X.Requests.System.SetUserVariablesRequest
 import typings.smartFoxServer.SFS2X.Requests.System.SpectatorToPlayerRequest
 import typings.smartFoxServer.SFS2X.Requests.System.SubscribeRoomGroupRequest
 import typings.smartFoxServer.SFS2X.Requests.System.UnsubscribeRoomGroupRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartFox extends js.Object {
+trait SmartFox extends StObject {
   
   /**
     * Registers an event listener function that will receive notification of an event.

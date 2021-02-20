@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSessionEmbedUrlRequest extends js.Object {
+trait GetSessionEmbedUrlRequest extends StObject {
   
   /**
     * The ID for the AWS account associated with your QuickSight subscription.
@@ -36,39 +37,27 @@ object GetSessionEmbedUrlRequest {
   }
   
   @scala.inline
-  implicit class GetSessionEmbedUrlRequestOps[Self <: GetSessionEmbedUrlRequest] (val x: Self) extends AnyVal {
+  implicit class GetSessionEmbedUrlRequestMutableBuilder[Self <: GetSessionEmbedUrlRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntryPoint(value: EntryPoint): Self = StObject.set(x, "EntryPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntryPointUndefined: Self = StObject.set(x, "EntryPoint", js.undefined)
     
     @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    def setSessionLifetimeInMinutes(value: SessionLifetimeInMinutes): Self = StObject.set(x, "SessionLifetimeInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryPoint(value: EntryPoint): Self = this.set("EntryPoint", value.asInstanceOf[js.Any])
+    def setSessionLifetimeInMinutesUndefined: Self = StObject.set(x, "SessionLifetimeInMinutes", js.undefined)
     
     @scala.inline
-    def deleteEntryPoint: Self = this.set("EntryPoint", js.undefined)
+    def setUserArn(value: Arn): Self = StObject.set(x, "UserArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionLifetimeInMinutes(value: SessionLifetimeInMinutes): Self = this.set("SessionLifetimeInMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionLifetimeInMinutes: Self = this.set("SessionLifetimeInMinutes", js.undefined)
-    
-    @scala.inline
-    def setUserArn(value: Arn): Self = this.set("UserArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserArn: Self = this.set("UserArn", js.undefined)
+    def setUserArnUndefined: Self = StObject.set(x, "UserArn", js.undefined)
   }
 }

@@ -1,14 +1,14 @@
 package typings.uirouterCore
 
 import typings.uirouterCore.coreservicesMod.LocationConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/vanilla/browserLocationConfig", JSImport.Namespace)
-@js.native
-object browserLocationConfigMod extends js.Object {
+object browserLocationConfigMod {
   
+  @JSImport("@uirouter/core/lib/vanilla/browserLocationConfig", "BrowserLocationConfig")
   @js.native
   class BrowserLocationConfig () extends LocationConfig {
     def this(router: js.Any) = this()

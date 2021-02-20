@@ -4,14 +4,14 @@ import typings.mendixmodelsdk.commonMod.common.ICallback
 import typings.mendixmodelsdk.commonMod.common.IErrorCallback
 import typings.mendixmodelsdk.configurationMod.configuration.ISdkConfig
 import typings.mendixmodelsdk.imodelserverclientMod.IModelServerClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/sdk/internal/ModelServerClientImpl", JSImport.Namespace)
-@js.native
-object modelServerClientImplMod extends js.Object {
+object modelServerClientImplMod {
   
+  @JSImport("mendixmodelsdk/dist/sdk/internal/ModelServerClientImpl", "ModelServerClientImpl")
   @js.native
   class ModelServerClientImpl protected () extends IModelServerClient {
     def this(config: ISdkConfig) = this()

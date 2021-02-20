@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AcceptReservedNodeExchangeOutputMessage extends js.Object {
+trait AcceptReservedNodeExchangeOutputMessage extends StObject {
   
   /**
     * 
@@ -21,24 +22,12 @@ object AcceptReservedNodeExchangeOutputMessage {
   }
   
   @scala.inline
-  implicit class AcceptReservedNodeExchangeOutputMessageOps[Self <: AcceptReservedNodeExchangeOutputMessage] (val x: Self) extends AnyVal {
+  implicit class AcceptReservedNodeExchangeOutputMessageMutableBuilder[Self <: AcceptReservedNodeExchangeOutputMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExchangedReservedNode(value: ReservedNode): Self = StObject.set(x, "ExchangedReservedNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExchangedReservedNode(value: ReservedNode): Self = this.set("ExchangedReservedNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExchangedReservedNode: Self = this.set("ExchangedReservedNode", js.undefined)
+    def setExchangedReservedNodeUndefined: Self = StObject.set(x, "ExchangedReservedNode", js.undefined)
   }
 }

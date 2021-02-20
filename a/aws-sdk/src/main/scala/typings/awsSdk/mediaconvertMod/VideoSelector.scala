@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoSelector extends js.Object {
+trait VideoSelector extends StObject {
   
   /**
     * Ignore this setting unless this input is a QuickTime animation with an alpha channel. Use this setting to create separate Key and Fill outputs. In each output, specify which part of the input MediaConvert uses. Leave this setting at the default value DISCARD to delete the alpha channel and preserve the video. Set it to REMAP_TO_LUMA to delete the video and map the alpha channel to the luma channel of your outputs.
@@ -51,60 +52,48 @@ object VideoSelector {
   }
   
   @scala.inline
-  implicit class VideoSelectorOps[Self <: VideoSelector] (val x: Self) extends AnyVal {
+  implicit class VideoSelectorMutableBuilder[Self <: VideoSelector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlphaBehavior(value: AlphaBehavior): Self = StObject.set(x, "AlphaBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlphaBehaviorUndefined: Self = StObject.set(x, "AlphaBehavior", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorSpace(value: ColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlphaBehavior(value: AlphaBehavior): Self = this.set("AlphaBehavior", value.asInstanceOf[js.Any])
+    def setColorSpaceUndefined: Self = StObject.set(x, "ColorSpace", js.undefined)
     
     @scala.inline
-    def deleteAlphaBehavior: Self = this.set("AlphaBehavior", js.undefined)
+    def setColorSpaceUsage(value: ColorSpaceUsage): Self = StObject.set(x, "ColorSpaceUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorSpace(value: ColorSpace): Self = this.set("ColorSpace", value.asInstanceOf[js.Any])
+    def setColorSpaceUsageUndefined: Self = StObject.set(x, "ColorSpaceUsage", js.undefined)
     
     @scala.inline
-    def deleteColorSpace: Self = this.set("ColorSpace", js.undefined)
+    def setHdr10Metadata(value: Hdr10Metadata): Self = StObject.set(x, "Hdr10Metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorSpaceUsage(value: ColorSpaceUsage): Self = this.set("ColorSpaceUsage", value.asInstanceOf[js.Any])
+    def setHdr10MetadataUndefined: Self = StObject.set(x, "Hdr10Metadata", js.undefined)
     
     @scala.inline
-    def deleteColorSpaceUsage: Self = this.set("ColorSpaceUsage", js.undefined)
+    def setPid(value: integerMin1Max2147483647): Self = StObject.set(x, "Pid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHdr10Metadata(value: Hdr10Metadata): Self = this.set("Hdr10Metadata", value.asInstanceOf[js.Any])
+    def setPidUndefined: Self = StObject.set(x, "Pid", js.undefined)
     
     @scala.inline
-    def deleteHdr10Metadata: Self = this.set("Hdr10Metadata", js.undefined)
+    def setProgramNumber(value: integerMinNegative2147483648Max2147483647): Self = StObject.set(x, "ProgramNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPid(value: integerMin1Max2147483647): Self = this.set("Pid", value.asInstanceOf[js.Any])
+    def setProgramNumberUndefined: Self = StObject.set(x, "ProgramNumber", js.undefined)
     
     @scala.inline
-    def deletePid: Self = this.set("Pid", js.undefined)
+    def setRotate(value: InputRotate): Self = StObject.set(x, "Rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgramNumber(value: integerMinNegative2147483648Max2147483647): Self = this.set("ProgramNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgramNumber: Self = this.set("ProgramNumber", js.undefined)
-    
-    @scala.inline
-    def setRotate(value: InputRotate): Self = this.set("Rotate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotate: Self = this.set("Rotate", js.undefined)
+    def setRotateUndefined: Self = StObject.set(x, "Rotate", js.undefined)
   }
 }

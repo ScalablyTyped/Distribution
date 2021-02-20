@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiagramSelectOptions extends js.Object {
+trait DiagramSelectOptions extends StObject {
   
   var addToSelection: js.UndefOr[Boolean] = js.native
 }
@@ -18,24 +19,12 @@ object DiagramSelectOptions {
   }
   
   @scala.inline
-  implicit class DiagramSelectOptionsOps[Self <: DiagramSelectOptions] (val x: Self) extends AnyVal {
+  implicit class DiagramSelectOptionsMutableBuilder[Self <: DiagramSelectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddToSelection(value: Boolean): Self = StObject.set(x, "addToSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddToSelection(value: Boolean): Self = this.set("addToSelection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAddToSelection: Self = this.set("addToSelection", js.undefined)
+    def setAddToSelectionUndefined: Self = StObject.set(x, "addToSelection", js.undefined)
   }
 }

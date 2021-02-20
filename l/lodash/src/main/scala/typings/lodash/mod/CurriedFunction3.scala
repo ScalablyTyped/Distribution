@@ -1,11 +1,12 @@
 package typings.lodash.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CurriedFunction3[T1, T2, T3, R] extends js.Object {
+trait CurriedFunction3[T1, T2, T3, R] extends StObject {
   
   def apply(): CurriedFunction3[T1, T2, T3, R] = js.native
   def apply(t1: T1): CurriedFunction2[T2, T3, R] = js.native

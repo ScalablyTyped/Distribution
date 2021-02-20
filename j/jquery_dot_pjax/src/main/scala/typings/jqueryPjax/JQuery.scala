@@ -1,12 +1,13 @@
 package typings.jqueryPjax
 
 import typings.jqueryPjax.jqueryPjaxStrings.pjaxColonpopstate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   @JSName("on")
   def on_pjaxpopstate(event: pjaxColonpopstate, handler: js.Function1[/* e */ PjaxPopStateEventObject, Unit]): this.type = js.native

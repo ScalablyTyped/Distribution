@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "MeasurementUnit")
 @js.native
-class MeasurementUnit () extends js.Object {
+class MeasurementUnit () extends StObject {
   
   /**
     * Represents a standard area unit. See [MeasurementUnitArea](#type-measurementunitarea) for possible values.

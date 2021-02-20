@@ -1,5 +1,6 @@
 package typings.googleapis.betaMod.computeBeta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Status of a NAT contained in this router. Next tag: 9
   */
 @js.native
-trait SchemaRouterStatusNatStatus extends js.Object {
+trait SchemaRouterStatusNatStatus extends StObject {
   
   /**
     * A list of IPs auto-allocated for NAT. Example: [&quot;1.1.1.1&quot;,
@@ -54,63 +55,51 @@ object SchemaRouterStatusNatStatus {
   }
   
   @scala.inline
-  implicit class SchemaRouterStatusNatStatusOps[Self <: SchemaRouterStatusNatStatus] (val x: Self) extends AnyVal {
+  implicit class SchemaRouterStatusNatStatusMutableBuilder[Self <: SchemaRouterStatusNatStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoAllocatedNatIps(value: js.Array[String]): Self = StObject.set(x, "autoAllocatedNatIps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoAllocatedNatIpsUndefined: Self = StObject.set(x, "autoAllocatedNatIps", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoAllocatedNatIpsVarargs(value: String*): Self = StObject.set(x, "autoAllocatedNatIps", js.Array(value :_*))
     
     @scala.inline
-    def setAutoAllocatedNatIpsVarargs(value: String*): Self = this.set("autoAllocatedNatIps", js.Array(value :_*))
+    def setMinExtraNatIpsNeeded(value: Double): Self = StObject.set(x, "minExtraNatIpsNeeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoAllocatedNatIps(value: js.Array[String]): Self = this.set("autoAllocatedNatIps", value.asInstanceOf[js.Any])
+    def setMinExtraNatIpsNeededUndefined: Self = StObject.set(x, "minExtraNatIpsNeeded", js.undefined)
     
     @scala.inline
-    def deleteAutoAllocatedNatIps: Self = this.set("autoAllocatedNatIps", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinExtraNatIpsNeeded(value: Double): Self = this.set("minExtraNatIpsNeeded", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMinExtraNatIpsNeeded: Self = this.set("minExtraNatIpsNeeded", js.undefined)
+    def setNumVmEndpointsWithNatMappings(value: Double): Self = StObject.set(x, "numVmEndpointsWithNatMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNumVmEndpointsWithNatMappingsUndefined: Self = StObject.set(x, "numVmEndpointsWithNatMappings", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setUserAllocatedNatIpResources(value: js.Array[String]): Self = StObject.set(x, "userAllocatedNatIpResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumVmEndpointsWithNatMappings(value: Double): Self = this.set("numVmEndpointsWithNatMappings", value.asInstanceOf[js.Any])
+    def setUserAllocatedNatIpResourcesUndefined: Self = StObject.set(x, "userAllocatedNatIpResources", js.undefined)
     
     @scala.inline
-    def deleteNumVmEndpointsWithNatMappings: Self = this.set("numVmEndpointsWithNatMappings", js.undefined)
+    def setUserAllocatedNatIpResourcesVarargs(value: String*): Self = StObject.set(x, "userAllocatedNatIpResources", js.Array(value :_*))
     
     @scala.inline
-    def setUserAllocatedNatIpResourcesVarargs(value: String*): Self = this.set("userAllocatedNatIpResources", js.Array(value :_*))
+    def setUserAllocatedNatIps(value: js.Array[String]): Self = StObject.set(x, "userAllocatedNatIps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserAllocatedNatIpResources(value: js.Array[String]): Self = this.set("userAllocatedNatIpResources", value.asInstanceOf[js.Any])
+    def setUserAllocatedNatIpsUndefined: Self = StObject.set(x, "userAllocatedNatIps", js.undefined)
     
     @scala.inline
-    def deleteUserAllocatedNatIpResources: Self = this.set("userAllocatedNatIpResources", js.undefined)
-    
-    @scala.inline
-    def setUserAllocatedNatIpsVarargs(value: String*): Self = this.set("userAllocatedNatIps", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserAllocatedNatIps(value: js.Array[String]): Self = this.set("userAllocatedNatIps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserAllocatedNatIps: Self = this.set("userAllocatedNatIps", js.undefined)
+    def setUserAllocatedNatIpsVarargs(value: String*): Self = StObject.set(x, "userAllocatedNatIps", js.Array(value :_*))
   }
 }

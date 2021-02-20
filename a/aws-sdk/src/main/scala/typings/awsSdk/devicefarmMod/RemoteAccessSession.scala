@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoteAccessSession extends js.Object {
+trait RemoteAccessSession extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the remote access session.
@@ -121,144 +122,132 @@ object RemoteAccessSession {
   }
   
   @scala.inline
-  implicit class RemoteAccessSessionOps[Self <: RemoteAccessSession] (val x: Self) extends AnyVal {
+  implicit class RemoteAccessSessionMutableBuilder[Self <: RemoteAccessSession] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBillingMethod(value: BillingMethod): Self = StObject.set(x, "billingMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: AmazonResourceName): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setBillingMethodUndefined: Self = StObject.set(x, "billingMethod", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setClientId(value: ClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingMethod(value: BillingMethod): Self = this.set("billingMethod", value.asInstanceOf[js.Any])
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def deleteBillingMethod: Self = this.set("billingMethod", js.undefined)
+    def setCreated(value: DateTime): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: ClientId): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
+    def setDevice(value: Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: DateTime): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setDeviceMinutes(value: DeviceMinutes): Self = StObject.set(x, "deviceMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setDeviceMinutesUndefined: Self = StObject.set(x, "deviceMinutes", js.undefined)
     
     @scala.inline
-    def setDevice(value: Device): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setDeviceUdid(value: String): Self = StObject.set(x, "deviceUdid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDevice: Self = this.set("device", js.undefined)
+    def setDeviceUdidUndefined: Self = StObject.set(x, "deviceUdid", js.undefined)
     
     @scala.inline
-    def setDeviceMinutes(value: DeviceMinutes): Self = this.set("deviceMinutes", value.asInstanceOf[js.Any])
+    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
     @scala.inline
-    def deleteDeviceMinutes: Self = this.set("deviceMinutes", js.undefined)
+    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceUdid(value: String): Self = this.set("deviceUdid", value.asInstanceOf[js.Any])
+    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
     @scala.inline
-    def deleteDeviceUdid: Self = this.set("deviceUdid", js.undefined)
+    def setHostAddress(value: HostAddress): Self = StObject.set(x, "hostAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoint(value: String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    def setHostAddressUndefined: Self = StObject.set(x, "hostAddress", js.undefined)
     
     @scala.inline
-    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    def setInstanceArn(value: AmazonResourceName): Self = StObject.set(x, "instanceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostAddress(value: HostAddress): Self = this.set("hostAddress", value.asInstanceOf[js.Any])
+    def setInstanceArnUndefined: Self = StObject.set(x, "instanceArn", js.undefined)
     
     @scala.inline
-    def deleteHostAddress: Self = this.set("hostAddress", js.undefined)
+    def setInteractionMode(value: InteractionMode): Self = StObject.set(x, "interactionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceArn(value: AmazonResourceName): Self = this.set("instanceArn", value.asInstanceOf[js.Any])
+    def setInteractionModeUndefined: Self = StObject.set(x, "interactionMode", js.undefined)
     
     @scala.inline
-    def deleteInstanceArn: Self = this.set("instanceArn", js.undefined)
+    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractionMode(value: InteractionMode): Self = this.set("interactionMode", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteInteractionMode: Self = this.set("interactionMode", js.undefined)
+    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: Message): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setRemoteDebugEnabled(value: Boolean): Self = StObject.set(x, "remoteDebugEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRemoteDebugEnabledUndefined: Self = StObject.set(x, "remoteDebugEnabled", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRemoteRecordAppArn(value: AmazonResourceName): Self = StObject.set(x, "remoteRecordAppArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteDebugEnabled(value: Boolean): Self = this.set("remoteDebugEnabled", value.asInstanceOf[js.Any])
+    def setRemoteRecordAppArnUndefined: Self = StObject.set(x, "remoteRecordAppArn", js.undefined)
     
     @scala.inline
-    def deleteRemoteDebugEnabled: Self = this.set("remoteDebugEnabled", js.undefined)
+    def setRemoteRecordEnabled(value: Boolean): Self = StObject.set(x, "remoteRecordEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteRecordAppArn(value: AmazonResourceName): Self = this.set("remoteRecordAppArn", value.asInstanceOf[js.Any])
+    def setRemoteRecordEnabledUndefined: Self = StObject.set(x, "remoteRecordEnabled", js.undefined)
     
     @scala.inline
-    def deleteRemoteRecordAppArn: Self = this.set("remoteRecordAppArn", js.undefined)
+    def setResult(value: ExecutionResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteRecordEnabled(value: Boolean): Self = this.set("remoteRecordEnabled", value.asInstanceOf[js.Any])
+    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
     @scala.inline
-    def deleteRemoteRecordEnabled: Self = this.set("remoteRecordEnabled", js.undefined)
+    def setSkipAppResign(value: SkipAppResign): Self = StObject.set(x, "skipAppResign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: ExecutionResult): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setSkipAppResignUndefined: Self = StObject.set(x, "skipAppResign", js.undefined)
     
     @scala.inline
-    def deleteResult: Self = this.set("result", js.undefined)
+    def setStarted(value: DateTime): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipAppResign(value: SkipAppResign): Self = this.set("skipAppResign", value.asInstanceOf[js.Any])
+    def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
     
     @scala.inline
-    def deleteSkipAppResign: Self = this.set("skipAppResign", js.undefined)
+    def setStatus(value: ExecutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStarted(value: DateTime): Self = this.set("started", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteStarted: Self = this.set("started", js.undefined)
+    def setStopped(value: DateTime): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: ExecutionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setStopped(value: DateTime): Self = this.set("stopped", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStopped: Self = this.set("stopped", js.undefined)
+    def setStoppedUndefined: Self = StObject.set(x, "stopped", js.undefined)
   }
 }

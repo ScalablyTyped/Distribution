@@ -1,13 +1,14 @@
 package typings.polished
 
 import typings.polished.styleMod.Styles
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("polished/lib/mixins/hideText", JSImport.Namespace)
-@js.native
-object hideTextMod extends js.Object {
+object hideTextMod {
   
+  @JSImport("polished/lib/mixins/hideText", JSImport.Default)
+  @js.native
   def default(): Styles = js.native
 }

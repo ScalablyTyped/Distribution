@@ -7,16 +7,16 @@ import typings.agGrid.componentResolverMod.ComponentSource
 import typings.agGrid.componentResolverMod.ComponentType
 import typings.agGrid.componentResolverMod.ResolvedComponent
 import typings.agGrid.iComponentMod.IComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/components/framework/agComponentUtils", JSImport.Namespace)
-@js.native
-object agComponentUtilsMod extends js.Object {
+object agComponentUtilsMod {
   
+  @JSImport("ag-grid/dist/lib/components/framework/agComponentUtils", "AgComponentUtils")
   @js.native
-  class AgComponentUtils () extends js.Object {
+  class AgComponentUtils () extends StObject {
     
     def adaptCellRendererFunction(callback: AgGridComponentFunctionInput): InstantiableIComponent = js.native
     

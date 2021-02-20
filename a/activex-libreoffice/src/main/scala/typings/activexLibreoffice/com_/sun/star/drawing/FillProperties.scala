@@ -4,13 +4,14 @@ import typings.activexLibreoffice.com_.sun.star.awt.Gradient
 import typings.activexLibreoffice.com_.sun.star.awt.XBitmap
 import typings.activexLibreoffice.com_.sun.star.text.GraphicCrop
 import typings.activexLibreoffice.com_.sun.star.util.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This is a set of properties to describe the style for rendering an area. */
 @js.native
-trait FillProperties extends js.Object {
+trait FillProperties extends StObject {
   
   /** if this is `TRUE` , the transparent background of a hatch filled area is drawn in the current background color. */
   var FillBackground: Boolean = js.native
@@ -188,93 +189,81 @@ object FillProperties {
   }
   
   @scala.inline
-  implicit class FillPropertiesOps[Self <: FillProperties] (val x: Self) extends AnyVal {
+  implicit class FillPropertiesMutableBuilder[Self <: FillProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFillBackground(value: Boolean): Self = StObject.set(x, "FillBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFillBitmap(value: XBitmap): Self = StObject.set(x, "FillBitmap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFillBitmapLogicalSize(value: Boolean): Self = StObject.set(x, "FillBitmapLogicalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillBackground(value: Boolean): Self = this.set("FillBackground", value.asInstanceOf[js.Any])
+    def setFillBitmapMode(value: BitmapMode): Self = StObject.set(x, "FillBitmapMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillBitmap(value: XBitmap): Self = this.set("FillBitmap", value.asInstanceOf[js.Any])
+    def setFillBitmapName(value: String): Self = StObject.set(x, "FillBitmapName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillBitmapLogicalSize(value: Boolean): Self = this.set("FillBitmapLogicalSize", value.asInstanceOf[js.Any])
+    def setFillBitmapOffsetX(value: Double): Self = StObject.set(x, "FillBitmapOffsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillBitmapMode(value: BitmapMode): Self = this.set("FillBitmapMode", value.asInstanceOf[js.Any])
+    def setFillBitmapOffsetY(value: Double): Self = StObject.set(x, "FillBitmapOffsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillBitmapName(value: String): Self = this.set("FillBitmapName", value.asInstanceOf[js.Any])
+    def setFillBitmapPositionOffsetX(value: Double): Self = StObject.set(x, "FillBitmapPositionOffsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillBitmapOffsetX(value: Double): Self = this.set("FillBitmapOffsetX", value.asInstanceOf[js.Any])
+    def setFillBitmapPositionOffsetY(value: Double): Self = StObject.set(x, "FillBitmapPositionOffsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillBitmapOffsetY(value: Double): Self = this.set("FillBitmapOffsetY", value.asInstanceOf[js.Any])
+    def setFillBitmapRectanglePoint(value: RectanglePoint): Self = StObject.set(x, "FillBitmapRectanglePoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillBitmapPositionOffsetX(value: Double): Self = this.set("FillBitmapPositionOffsetX", value.asInstanceOf[js.Any])
+    def setFillBitmapSizeX(value: Double): Self = StObject.set(x, "FillBitmapSizeX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillBitmapPositionOffsetY(value: Double): Self = this.set("FillBitmapPositionOffsetY", value.asInstanceOf[js.Any])
+    def setFillBitmapSizeY(value: Double): Self = StObject.set(x, "FillBitmapSizeY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillBitmapRectanglePoint(value: RectanglePoint): Self = this.set("FillBitmapRectanglePoint", value.asInstanceOf[js.Any])
+    def setFillBitmapStretch(value: Boolean): Self = StObject.set(x, "FillBitmapStretch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillBitmapSizeX(value: Double): Self = this.set("FillBitmapSizeX", value.asInstanceOf[js.Any])
+    def setFillBitmapTile(value: Boolean): Self = StObject.set(x, "FillBitmapTile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillBitmapSizeY(value: Double): Self = this.set("FillBitmapSizeY", value.asInstanceOf[js.Any])
+    def setFillBitmapURL(value: String): Self = StObject.set(x, "FillBitmapURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillBitmapStretch(value: Boolean): Self = this.set("FillBitmapStretch", value.asInstanceOf[js.Any])
+    def setFillColor(value: Color): Self = StObject.set(x, "FillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillBitmapTile(value: Boolean): Self = this.set("FillBitmapTile", value.asInstanceOf[js.Any])
+    def setFillGradient(value: Gradient): Self = StObject.set(x, "FillGradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillBitmapURL(value: String): Self = this.set("FillBitmapURL", value.asInstanceOf[js.Any])
+    def setFillGradientName(value: String): Self = StObject.set(x, "FillGradientName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillColor(value: Color): Self = this.set("FillColor", value.asInstanceOf[js.Any])
+    def setFillHatch(value: Hatch): Self = StObject.set(x, "FillHatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillGradient(value: Gradient): Self = this.set("FillGradient", value.asInstanceOf[js.Any])
+    def setFillHatchName(value: String): Self = StObject.set(x, "FillHatchName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillGradientName(value: String): Self = this.set("FillGradientName", value.asInstanceOf[js.Any])
+    def setFillStyle(value: FillStyle): Self = StObject.set(x, "FillStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillHatch(value: Hatch): Self = this.set("FillHatch", value.asInstanceOf[js.Any])
+    def setFillTransparence(value: Double): Self = StObject.set(x, "FillTransparence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillHatchName(value: String): Self = this.set("FillHatchName", value.asInstanceOf[js.Any])
+    def setFillTransparenceGradient(value: Gradient): Self = StObject.set(x, "FillTransparenceGradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillStyle(value: FillStyle): Self = this.set("FillStyle", value.asInstanceOf[js.Any])
+    def setFillTransparenceGradientName(value: String): Self = StObject.set(x, "FillTransparenceGradientName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillTransparence(value: Double): Self = this.set("FillTransparence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFillTransparenceGradient(value: Gradient): Self = this.set("FillTransparenceGradient", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFillTransparenceGradientName(value: String): Self = this.set("FillTransparenceGradientName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGraphicCrop(value: GraphicCrop): Self = this.set("GraphicCrop", value.asInstanceOf[js.Any])
+    def setGraphicCrop(value: GraphicCrop): Self = StObject.set(x, "GraphicCrop", value.asInstanceOf[js.Any])
   }
 }

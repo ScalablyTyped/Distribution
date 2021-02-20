@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The schema definition for a data source.
   */
 @js.native
-trait SchemaSchema extends js.Object {
+trait SchemaSchema extends StObject {
   
   /**
     * The list of top-level objects for the data source. The maximum number of
@@ -32,36 +33,24 @@ object SchemaSchema {
   }
   
   @scala.inline
-  implicit class SchemaSchemaOps[Self <: SchemaSchema] (val x: Self) extends AnyVal {
+  implicit class SchemaSchemaMutableBuilder[Self <: SchemaSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjectDefinitions(value: js.Array[SchemaObjectDefinition]): Self = StObject.set(x, "objectDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectDefinitionsUndefined: Self = StObject.set(x, "objectDefinitions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectDefinitionsVarargs(value: SchemaObjectDefinition*): Self = StObject.set(x, "objectDefinitions", js.Array(value :_*))
     
     @scala.inline
-    def setObjectDefinitionsVarargs(value: SchemaObjectDefinition*): Self = this.set("objectDefinitions", js.Array(value :_*))
+    def setOperationIds(value: js.Array[String]): Self = StObject.set(x, "operationIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectDefinitions(value: js.Array[SchemaObjectDefinition]): Self = this.set("objectDefinitions", value.asInstanceOf[js.Any])
+    def setOperationIdsUndefined: Self = StObject.set(x, "operationIds", js.undefined)
     
     @scala.inline
-    def deleteObjectDefinitions: Self = this.set("objectDefinitions", js.undefined)
-    
-    @scala.inline
-    def setOperationIdsVarargs(value: String*): Self = this.set("operationIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setOperationIds(value: js.Array[String]): Self = this.set("operationIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperationIds: Self = this.set("operationIds", js.undefined)
+    def setOperationIdsVarargs(value: String*): Self = StObject.set(x, "operationIds", js.Array(value :_*))
   }
 }

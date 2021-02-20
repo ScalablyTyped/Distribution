@@ -1,11 +1,12 @@
 package typings.awsSdk.shieldMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Protection extends js.Object {
+trait Protection extends StObject {
   
   /**
     * The unique identifier (ID) for the Route 53 health check that's associated with the protection. 
@@ -36,45 +37,33 @@ object Protection {
   }
   
   @scala.inline
-  implicit class ProtectionOps[Self <: Protection] (val x: Self) extends AnyVal {
+  implicit class ProtectionMutableBuilder[Self <: Protection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHealthCheckIds(value: HealthCheckIds): Self = StObject.set(x, "HealthCheckIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHealthCheckIdsUndefined: Self = StObject.set(x, "HealthCheckIds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHealthCheckIdsVarargs(value: HealthCheckId*): Self = StObject.set(x, "HealthCheckIds", js.Array(value :_*))
     
     @scala.inline
-    def setHealthCheckIdsVarargs(value: HealthCheckId*): Self = this.set("HealthCheckIds", js.Array(value :_*))
+    def setId(value: ProtectionId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthCheckIds(value: HealthCheckIds): Self = this.set("HealthCheckIds", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteHealthCheckIds: Self = this.set("HealthCheckIds", js.undefined)
+    def setName(value: ProtectionName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: ProtectionId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ProtectionName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setResourceArn(value: ResourceArn): Self = this.set("ResourceArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceArn: Self = this.set("ResourceArn", js.undefined)
+    def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
   }
 }

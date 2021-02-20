@@ -9,6 +9,7 @@ import typings.styledComponents.styledComponentsMod.StyledComponentInnerComponen
 import typings.styledComponents.styledComponentsMod.StyledComponentInnerOtherProps
 import typings.styledComponents.styledComponentsMod.StyledComponentInterpolation
 import typings.styledComponents.styledComponentsMod.StyledComponentProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,22 +55,28 @@ object PickStyledComponentBasean {
   }
   
   @scala.inline
-  implicit class PickStyledComponentBaseanOps[Self <: PickStyledComponentBasean] (val x: Self) extends AnyVal {
+  implicit class PickStyledComponentBaseanMutableBuilder[Self <: PickStyledComponentBasean] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultProps(value: Partial[StyledComponentProps[_, _, _, _]]): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDollarDollartypeof(value: js.Symbol): Self = this.set("$$typeof", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    @scala.inline
+    def setDollarDollartypeof(value: js.Symbol): Self = StObject.set(x, "$$typeof", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPropTypes(value: WeakValidationMap[StyledComponentProps[_, _, _, _]]): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPropTypesUndefined: Self = StObject.set(x, "propTypes", js.undefined)
     
     @scala.inline
     def setWithComponent(
@@ -79,24 +86,6 @@ object PickStyledComponentBasean {
           js.Any with StyledComponentInnerOtherProps[AnyStyledComponent], 
           _ | StyledComponentInnerAttrs[AnyStyledComponent]
         ]
-    ): Self = this.set("withComponent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDefaultProps(value: Partial[StyledComponentProps[_, _, _, _]]): Self = this.set("defaultProps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultProps: Self = this.set("defaultProps", js.undefined)
-    
-    @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
-    
-    @scala.inline
-    def setPropTypes(value: WeakValidationMap[StyledComponentProps[_, _, _, _]]): Self = this.set("propTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePropTypes: Self = this.set("propTypes", js.undefined)
+    ): Self = StObject.set(x, "withComponent", js.Any.fromFunction1(value))
   }
 }

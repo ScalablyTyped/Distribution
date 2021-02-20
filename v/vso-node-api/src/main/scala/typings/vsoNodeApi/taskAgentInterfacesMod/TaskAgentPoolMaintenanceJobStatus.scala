@@ -1,36 +1,32 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TaskAgentPoolMaintenanceJobStatus extends js.Object
+sealed trait TaskAgentPoolMaintenanceJobStatus extends StObject
 @JSImport("vso-node-api/interfaces/TaskAgentInterfaces", "TaskAgentPoolMaintenanceJobStatus")
 @js.native
-object TaskAgentPoolMaintenanceJobStatus extends js.Object {
+object TaskAgentPoolMaintenanceJobStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TaskAgentPoolMaintenanceJobStatus with Double] = js.native
   
   @js.native
   sealed trait Cancelling extends TaskAgentPoolMaintenanceJobStatus
-  /* 4 */ @js.native
-  object Cancelling extends TopLevel[Cancelling with Double]
+  /* 4 */ val Cancelling: typings.vsoNodeApi.taskAgentInterfacesMod.TaskAgentPoolMaintenanceJobStatus.Cancelling with Double = js.native
   
   @js.native
   sealed trait Completed extends TaskAgentPoolMaintenanceJobStatus
-  /* 2 */ @js.native
-  object Completed extends TopLevel[Completed with Double]
+  /* 2 */ val Completed: typings.vsoNodeApi.taskAgentInterfacesMod.TaskAgentPoolMaintenanceJobStatus.Completed with Double = js.native
   
   @js.native
   sealed trait InProgress extends TaskAgentPoolMaintenanceJobStatus
-  /* 1 */ @js.native
-  object InProgress extends TopLevel[InProgress with Double]
+  /* 1 */ val InProgress: typings.vsoNodeApi.taskAgentInterfacesMod.TaskAgentPoolMaintenanceJobStatus.InProgress with Double = js.native
   
   @js.native
   sealed trait Queued extends TaskAgentPoolMaintenanceJobStatus
-  /* 8 */ @js.native
-  object Queued extends TopLevel[Queued with Double]
+  /* 8 */ val Queued: typings.vsoNodeApi.taskAgentInterfacesMod.TaskAgentPoolMaintenanceJobStatus.Queued with Double = js.native
 }

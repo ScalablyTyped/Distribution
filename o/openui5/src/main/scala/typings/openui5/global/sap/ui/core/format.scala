@@ -1,13 +1,13 @@
 package typings.openui5.global.sap.ui.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.core.format")
-@js.native
-object format extends js.Object {
+object format {
   
+  @JSGlobal("sap.ui.core.format.DateFormat")
   @js.native
   /**
     * Constructor for DateFormat - must not be used: To get a DateFormat instance, please use getInstance,
@@ -16,6 +16,7 @@ object format extends js.Object {
   class DateFormat ()
     extends typings.openui5.sap.ui.core.format.DateFormat
   
+  @JSGlobal("sap.ui.core.format.FileSizeFormat")
   @js.native
   /**
     * Constructor for FileSizeFormat - must not be used: To get a FileSizeFormat instance, please use
@@ -24,6 +25,7 @@ object format extends js.Object {
   class FileSizeFormat ()
     extends typings.openui5.sap.ui.core.format.FileSizeFormat
   
+  @JSGlobal("sap.ui.core.format.NumberFormat")
   @js.native
   class NumberFormat protected ()
     extends typings.openui5.sap.ui.core.format.NumberFormat {
@@ -35,16 +37,16 @@ object format extends js.Object {
       */
     def this(oFormatOptions: js.Any) = this()
   }
-  @js.native
-  object NumberFormat extends js.Object {
+  object NumberFormat {
     
     /**
       * Specifies a rounding behavior for numerical operations capable of discarding precision. Each
       * rounding mode in this object indicates how the leastsignificant returned digits of rounded result is
       * to be calculated.
       */
+    @JSGlobal("sap.ui.core.format.NumberFormat.RoundingMode")
     @js.native
-    object RoundingMode extends js.Object {
+    object RoundingMode extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.openui5.sap.ui.core.format.NumberFormat.RoundingMode with Double] = js.native

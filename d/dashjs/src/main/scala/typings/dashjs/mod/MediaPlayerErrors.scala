@@ -40,12 +40,13 @@ import typings.dashjs.dashjsNumbers.`32`
 import typings.dashjs.dashjsNumbers.`33`
 import typings.dashjs.dashjsNumbers.`34`
 import typings.dashjs.dashjsNumbers.`35`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaPlayerErrors extends js.Object {
+trait MediaPlayerErrors extends StObject {
   
   var APPEND_ERROR_CODE: `20` = js.native
   
@@ -177,138 +178,126 @@ object MediaPlayerErrors {
   }
   
   @scala.inline
-  implicit class MediaPlayerErrorsOps[Self <: MediaPlayerErrors] (val x: Self) extends AnyVal {
+  implicit class MediaPlayerErrorsMutableBuilder[Self <: MediaPlayerErrors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAPPEND_ERROR_CODE(value: `20`): Self = StObject.set(x, "APPEND_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCAPABILITY_MEDIAKEYS_ERROR_CODE(value: `24`): Self = StObject.set(x, "CAPABILITY_MEDIAKEYS_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCAPABILITY_MEDIASOURCE_ERROR_CODE(value: `23`): Self = StObject.set(x, "CAPABILITY_MEDIASOURCE_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAPPEND_ERROR_CODE(value: `20`): Self = this.set("APPEND_ERROR_CODE", value.asInstanceOf[js.Any])
+    def setDATA_UPDATE_FAILED_ERROR_CODE(value: `22`): Self = StObject.set(x, "DATA_UPDATE_FAILED_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPABILITY_MEDIAKEYS_ERROR_CODE(value: `24`): Self = this.set("CAPABILITY_MEDIAKEYS_ERROR_CODE", value.asInstanceOf[js.Any])
+    def setDOWNLOAD_ERROR_ID_CONTENT_CODE(value: `27`): Self = StObject.set(x, "DOWNLOAD_ERROR_ID_CONTENT_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPABILITY_MEDIASOURCE_ERROR_CODE(value: `23`): Self = this.set("CAPABILITY_MEDIASOURCE_ERROR_CODE", value.asInstanceOf[js.Any])
+    def setDOWNLOAD_ERROR_ID_INITIALIZATION_CODE(value: `28`): Self = StObject.set(x, "DOWNLOAD_ERROR_ID_INITIALIZATION_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDATA_UPDATE_FAILED_ERROR_CODE(value: `22`): Self = this.set("DATA_UPDATE_FAILED_ERROR_CODE", value.asInstanceOf[js.Any])
+    def setDOWNLOAD_ERROR_ID_MANIFEST_CODE(value: `25`): Self = StObject.set(x, "DOWNLOAD_ERROR_ID_MANIFEST_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDOWNLOAD_ERROR_ID_CONTENT_CODE(value: `27`): Self = this.set("DOWNLOAD_ERROR_ID_CONTENT_CODE", value.asInstanceOf[js.Any])
+    def setDOWNLOAD_ERROR_ID_XLINK_CODE(value: `29`): Self = StObject.set(x, "DOWNLOAD_ERROR_ID_XLINK_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDOWNLOAD_ERROR_ID_INITIALIZATION_CODE(value: `28`): Self = this.set("DOWNLOAD_ERROR_ID_INITIALIZATION_CODE", value.asInstanceOf[js.Any])
+    def setFRAGMENT_LOADER_LOADING_FAILURE_ERROR_CODE(value: `17`): Self = StObject.set(x, "FRAGMENT_LOADER_LOADING_FAILURE_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDOWNLOAD_ERROR_ID_MANIFEST_CODE(value: `25`): Self = this.set("DOWNLOAD_ERROR_ID_MANIFEST_CODE", value.asInstanceOf[js.Any])
+    def setFRAGMENT_LOADER_NULL_REQUEST_ERROR_CODE(value: `18`): Self = StObject.set(x, "FRAGMENT_LOADER_NULL_REQUEST_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDOWNLOAD_ERROR_ID_XLINK_CODE(value: `29`): Self = this.set("DOWNLOAD_ERROR_ID_XLINK_CODE", value.asInstanceOf[js.Any])
+    def setKEY_SESSION_CREATED_ERROR_CODE(value: `113`): Self = StObject.set(x, "KEY_SESSION_CREATED_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFRAGMENT_LOADER_LOADING_FAILURE_ERROR_CODE(value: `17`): Self = this.set("FRAGMENT_LOADER_LOADING_FAILURE_ERROR_CODE", value.asInstanceOf[js.Any])
+    def setKEY_STATUS_CHANGED_EXPIRED_ERROR_CODE(value: `110`): Self = StObject.set(x, "KEY_STATUS_CHANGED_EXPIRED_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFRAGMENT_LOADER_NULL_REQUEST_ERROR_CODE(value: `18`): Self = this.set("FRAGMENT_LOADER_NULL_REQUEST_ERROR_CODE", value.asInstanceOf[js.Any])
+    def setKEY_SYSTEM_ACCESS_DENIED_ERROR_CODE(value: `112`): Self = StObject.set(x, "KEY_SYSTEM_ACCESS_DENIED_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKEY_SESSION_CREATED_ERROR_CODE(value: `113`): Self = this.set("KEY_SESSION_CREATED_ERROR_CODE", value.asInstanceOf[js.Any])
+    def setMANIFEST_ERROR_ID_MULTIPLEXED_CODE(value: `34`): Self = StObject.set(x, "MANIFEST_ERROR_ID_MULTIPLEXED_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKEY_STATUS_CHANGED_EXPIRED_ERROR_CODE(value: `110`): Self = this.set("KEY_STATUS_CHANGED_EXPIRED_ERROR_CODE", value.asInstanceOf[js.Any])
+    def setMANIFEST_ERROR_ID_NOSTREAMS_CODE(value: `32`): Self = StObject.set(x, "MANIFEST_ERROR_ID_NOSTREAMS_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKEY_SYSTEM_ACCESS_DENIED_ERROR_CODE(value: `112`): Self = this.set("KEY_SYSTEM_ACCESS_DENIED_ERROR_CODE", value.asInstanceOf[js.Any])
+    def setMANIFEST_ERROR_ID_PARSE_CODE(value: `31`): Self = StObject.set(x, "MANIFEST_ERROR_ID_PARSE_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMANIFEST_ERROR_ID_MULTIPLEXED_CODE(value: `34`): Self = this.set("MANIFEST_ERROR_ID_MULTIPLEXED_CODE", value.asInstanceOf[js.Any])
+    def setMANIFEST_LOADER_LOADING_FAILURE_ERROR_CODE(value: `11`): Self = StObject.set(x, "MANIFEST_LOADER_LOADING_FAILURE_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMANIFEST_ERROR_ID_NOSTREAMS_CODE(value: `32`): Self = this.set("MANIFEST_ERROR_ID_NOSTREAMS_CODE", value.asInstanceOf[js.Any])
+    def setMANIFEST_LOADER_PARSING_FAILURE_ERROR_CODE(value: `10`): Self = StObject.set(x, "MANIFEST_LOADER_PARSING_FAILURE_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMANIFEST_ERROR_ID_PARSE_CODE(value: `31`): Self = this.set("MANIFEST_ERROR_ID_PARSE_CODE", value.asInstanceOf[js.Any])
+    def setMEDIASOURCE_TYPE_UNSUPPORTED_CODE(value: `35`): Self = StObject.set(x, "MEDIASOURCE_TYPE_UNSUPPORTED_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMANIFEST_LOADER_LOADING_FAILURE_ERROR_CODE(value: `11`): Self = this.set("MANIFEST_LOADER_LOADING_FAILURE_ERROR_CODE", value.asInstanceOf[js.Any])
+    def setMEDIA_KEYERR_CLIENT_CODE(value: `102`): Self = StObject.set(x, "MEDIA_KEYERR_CLIENT_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMANIFEST_LOADER_PARSING_FAILURE_ERROR_CODE(value: `10`): Self = this.set("MANIFEST_LOADER_PARSING_FAILURE_ERROR_CODE", value.asInstanceOf[js.Any])
+    def setMEDIA_KEYERR_CODE(value: `100`): Self = StObject.set(x, "MEDIA_KEYERR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMEDIASOURCE_TYPE_UNSUPPORTED_CODE(value: `35`): Self = this.set("MEDIASOURCE_TYPE_UNSUPPORTED_CODE", value.asInstanceOf[js.Any])
+    def setMEDIA_KEYERR_DOMAIN_CODE(value: `106`): Self = StObject.set(x, "MEDIA_KEYERR_DOMAIN_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMEDIA_KEYERR_CLIENT_CODE(value: `102`): Self = this.set("MEDIA_KEYERR_CLIENT_CODE", value.asInstanceOf[js.Any])
+    def setMEDIA_KEYERR_HARDWARECHANGE_CODE(value: `105`): Self = StObject.set(x, "MEDIA_KEYERR_HARDWARECHANGE_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMEDIA_KEYERR_CODE(value: `100`): Self = this.set("MEDIA_KEYERR_CODE", value.asInstanceOf[js.Any])
+    def setMEDIA_KEYERR_OUTPUT_CODE(value: `104`): Self = StObject.set(x, "MEDIA_KEYERR_OUTPUT_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMEDIA_KEYERR_DOMAIN_CODE(value: `106`): Self = this.set("MEDIA_KEYERR_DOMAIN_CODE", value.asInstanceOf[js.Any])
+    def setMEDIA_KEYERR_SERVICE_CODE(value: `103`): Self = StObject.set(x, "MEDIA_KEYERR_SERVICE_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMEDIA_KEYERR_HARDWARECHANGE_CODE(value: `105`): Self = this.set("MEDIA_KEYERR_HARDWARECHANGE_CODE", value.asInstanceOf[js.Any])
+    def setMEDIA_KEYERR_UNKNOWN_CODE(value: `101`): Self = StObject.set(x, "MEDIA_KEYERR_UNKNOWN_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMEDIA_KEYERR_OUTPUT_CODE(value: `104`): Self = this.set("MEDIA_KEYERR_OUTPUT_CODE", value.asInstanceOf[js.Any])
+    def setMEDIA_KEY_MESSAGE_ERROR_CODE(value: `107`): Self = StObject.set(x, "MEDIA_KEY_MESSAGE_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMEDIA_KEYERR_SERVICE_CODE(value: `103`): Self = this.set("MEDIA_KEYERR_SERVICE_CODE", value.asInstanceOf[js.Any])
+    def setMEDIA_KEY_MESSAGE_LICENSER_ERROR_CODE(value: `114`): Self = StObject.set(x, "MEDIA_KEY_MESSAGE_LICENSER_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMEDIA_KEYERR_UNKNOWN_CODE(value: `101`): Self = this.set("MEDIA_KEYERR_UNKNOWN_CODE", value.asInstanceOf[js.Any])
+    def setMEDIA_KEY_MESSAGE_NO_CHALLENGE_ERROR_CODE(value: `108`): Self = StObject.set(x, "MEDIA_KEY_MESSAGE_NO_CHALLENGE_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMEDIA_KEY_MESSAGE_ERROR_CODE(value: `107`): Self = this.set("MEDIA_KEY_MESSAGE_ERROR_CODE", value.asInstanceOf[js.Any])
+    def setMEDIA_KEY_MESSAGE_NO_LICENSE_SERVER_URL_ERROR_CODE(value: `111`): Self = StObject.set(x, "MEDIA_KEY_MESSAGE_NO_LICENSE_SERVER_URL_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMEDIA_KEY_MESSAGE_LICENSER_ERROR_CODE(value: `114`): Self = this.set("MEDIA_KEY_MESSAGE_LICENSER_ERROR_CODE", value.asInstanceOf[js.Any])
+    def setMSS_NO_TFRF_CODE(value: `200`): Self = StObject.set(x, "MSS_NO_TFRF_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMEDIA_KEY_MESSAGE_NO_CHALLENGE_ERROR_CODE(value: `108`): Self = this.set("MEDIA_KEY_MESSAGE_NO_CHALLENGE_ERROR_CODE", value.asInstanceOf[js.Any])
+    def setREMOVE_ERROR_CODE(value: `21`): Self = StObject.set(x, "REMOVE_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMEDIA_KEY_MESSAGE_NO_LICENSE_SERVER_URL_ERROR_CODE(value: `111`): Self = this.set("MEDIA_KEY_MESSAGE_NO_LICENSE_SERVER_URL_ERROR_CODE", value.asInstanceOf[js.Any])
+    def setSEGMENTS_UNAVAILABLE_ERROR_CODE(value: `14`): Self = StObject.set(x, "SEGMENTS_UNAVAILABLE_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSS_NO_TFRF_CODE(value: `200`): Self = this.set("MSS_NO_TFRF_CODE", value.asInstanceOf[js.Any])
+    def setSEGMENTS_UPDATE_FAILED_ERROR_CODE(value: `13`): Self = StObject.set(x, "SEGMENTS_UPDATE_FAILED_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setREMOVE_ERROR_CODE(value: `21`): Self = this.set("REMOVE_ERROR_CODE", value.asInstanceOf[js.Any])
+    def setSEGMENT_BASE_LOADER_ERROR_CODE(value: `15`): Self = StObject.set(x, "SEGMENT_BASE_LOADER_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSEGMENTS_UNAVAILABLE_ERROR_CODE(value: `14`): Self = this.set("SEGMENTS_UNAVAILABLE_ERROR_CODE", value.asInstanceOf[js.Any])
+    def setSERVER_CERTIFICATE_UPDATED_ERROR_CODE(value: `109`): Self = StObject.set(x, "SERVER_CERTIFICATE_UPDATED_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSEGMENTS_UPDATE_FAILED_ERROR_CODE(value: `13`): Self = this.set("SEGMENTS_UPDATE_FAILED_ERROR_CODE", value.asInstanceOf[js.Any])
+    def setTIMED_TEXT_ERROR_ID_PARSE_CODE(value: `33`): Self = StObject.set(x, "TIMED_TEXT_ERROR_ID_PARSE_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSEGMENT_BASE_LOADER_ERROR_CODE(value: `15`): Self = this.set("SEGMENT_BASE_LOADER_ERROR_CODE", value.asInstanceOf[js.Any])
+    def setTIME_SYNC_FAILED_ERROR_CODE(value: `16`): Self = StObject.set(x, "TIME_SYNC_FAILED_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSERVER_CERTIFICATE_UPDATED_ERROR_CODE(value: `109`): Self = this.set("SERVER_CERTIFICATE_UPDATED_ERROR_CODE", value.asInstanceOf[js.Any])
+    def setURL_RESOLUTION_FAILED_GENERIC_ERROR_CODE(value: `19`): Self = StObject.set(x, "URL_RESOLUTION_FAILED_GENERIC_ERROR_CODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTIMED_TEXT_ERROR_ID_PARSE_CODE(value: `33`): Self = this.set("TIMED_TEXT_ERROR_ID_PARSE_CODE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTIME_SYNC_FAILED_ERROR_CODE(value: `16`): Self = this.set("TIME_SYNC_FAILED_ERROR_CODE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setURL_RESOLUTION_FAILED_GENERIC_ERROR_CODE(value: `19`): Self = this.set("URL_RESOLUTION_FAILED_GENERIC_ERROR_CODE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXLINK_LOADER_LOADING_FAILURE_ERROR_CODE(value: `12`): Self = this.set("XLINK_LOADER_LOADING_FAILURE_ERROR_CODE", value.asInstanceOf[js.Any])
+    def setXLINK_LOADER_LOADING_FAILURE_ERROR_CODE(value: `12`): Self = StObject.set(x, "XLINK_LOADER_LOADING_FAILURE_ERROR_CODE", value.asInstanceOf[js.Any])
   }
 }

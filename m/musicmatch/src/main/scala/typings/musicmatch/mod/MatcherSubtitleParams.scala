@@ -1,5 +1,6 @@
 package typings.musicmatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,30 +21,18 @@ object MatcherSubtitleParams {
   }
   
   @scala.inline
-  implicit class MatcherSubtitleParamsOps[Self <: MatcherSubtitleParams] (val x: Self) extends AnyVal {
+  implicit class MatcherSubtitleParamsMutableBuilder[Self <: MatcherSubtitleParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setF_subtitle_length(value: Double): Self = StObject.set(x, "f_subtitle_length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setF_subtitle_lengthUndefined: Self = StObject.set(x, "f_subtitle_length", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setF_subtitle_length_max_deviation(value: Double): Self = StObject.set(x, "f_subtitle_length_max_deviation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF_subtitle_length(value: Double): Self = this.set("f_subtitle_length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteF_subtitle_length: Self = this.set("f_subtitle_length", js.undefined)
-    
-    @scala.inline
-    def setF_subtitle_length_max_deviation(value: Double): Self = this.set("f_subtitle_length_max_deviation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteF_subtitle_length_max_deviation: Self = this.set("f_subtitle_length_max_deviation", js.undefined)
+    def setF_subtitle_length_max_deviationUndefined: Self = StObject.set(x, "f_subtitle_length_max_deviation", js.undefined)
   }
 }

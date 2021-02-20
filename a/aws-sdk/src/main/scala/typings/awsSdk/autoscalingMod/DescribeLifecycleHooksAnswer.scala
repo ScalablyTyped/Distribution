@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeLifecycleHooksAnswer extends js.Object {
+trait DescribeLifecycleHooksAnswer extends StObject {
   
   /**
     * The lifecycle hooks for the specified group.
@@ -21,27 +22,15 @@ object DescribeLifecycleHooksAnswer {
   }
   
   @scala.inline
-  implicit class DescribeLifecycleHooksAnswerOps[Self <: DescribeLifecycleHooksAnswer] (val x: Self) extends AnyVal {
+  implicit class DescribeLifecycleHooksAnswerMutableBuilder[Self <: DescribeLifecycleHooksAnswer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLifecycleHooks(value: LifecycleHooks): Self = StObject.set(x, "LifecycleHooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLifecycleHooksUndefined: Self = StObject.set(x, "LifecycleHooks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLifecycleHooksVarargs(value: LifecycleHook*): Self = this.set("LifecycleHooks", js.Array(value :_*))
-    
-    @scala.inline
-    def setLifecycleHooks(value: LifecycleHooks): Self = this.set("LifecycleHooks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLifecycleHooks: Self = this.set("LifecycleHooks", js.undefined)
+    def setLifecycleHooksVarargs(value: LifecycleHook*): Self = StObject.set(x, "LifecycleHooks", js.Array(value :_*))
   }
 }

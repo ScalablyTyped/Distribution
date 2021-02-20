@@ -3,14 +3,14 @@ package typings.jupyterlabCelltags
 import typings.jupyterlabCelltags.toolMod.TagTool
 import typings.luminoWidgets.mod.Widget
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/celltags/lib/widget", JSImport.Namespace)
-@js.native
-object widgetMod extends js.Object {
+object widgetMod {
   
+  @JSImport("@jupyterlab/celltags/lib/widget", "TagWidget")
   @js.native
   class TagWidget protected () extends Widget {
     /**

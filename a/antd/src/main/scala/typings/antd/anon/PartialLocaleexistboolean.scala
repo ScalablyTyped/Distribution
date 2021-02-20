@@ -7,13 +7,14 @@ import typings.antd.paginationPaginationMod.PaginationLocale
 import typings.antd.popconfirmMod.PopconfirmLocale
 import typings.antd.tableInterfaceMod.TableLocale
 import typings.antd.uploadInterfaceMod.UploadLocale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<antd.antd/lib/locale-provider.Locale> & {  exist :boolean | undefined} */
 @js.native
-trait PartialLocaleexistboolean extends js.Object {
+trait PartialLocaleexistboolean extends StObject {
   
   var Calendar: js.UndefOr[js.Object] = js.native
   
@@ -60,126 +61,114 @@ object PartialLocaleexistboolean {
   }
   
   @scala.inline
-  implicit class PartialLocaleexistbooleanOps[Self <: PartialLocaleexistboolean] (val x: Self) extends AnyVal {
+  implicit class PartialLocaleexistbooleanMutableBuilder[Self <: PartialLocaleexistboolean] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendar(value: js.Object): Self = StObject.set(x, "Calendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalendarUndefined: Self = StObject.set(x, "Calendar", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatePicker(value: PickerLocale): Self = StObject.set(x, "DatePicker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendar(value: js.Object): Self = this.set("Calendar", value.asInstanceOf[js.Any])
+    def setDatePickerUndefined: Self = StObject.set(x, "DatePicker", js.undefined)
     
     @scala.inline
-    def deleteCalendar: Self = this.set("Calendar", js.undefined)
+    def setEmpty(value: TransferLocale): Self = StObject.set(x, "Empty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatePicker(value: PickerLocale): Self = this.set("DatePicker", value.asInstanceOf[js.Any])
+    def setEmptyUndefined: Self = StObject.set(x, "Empty", js.undefined)
     
     @scala.inline
-    def deleteDatePicker: Self = this.set("DatePicker", js.undefined)
+    def setExist(value: Boolean): Self = StObject.set(x, "exist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmpty(value: TransferLocale): Self = this.set("Empty", value.asInstanceOf[js.Any])
+    def setExistUndefined: Self = StObject.set(x, "exist", js.undefined)
     
     @scala.inline
-    def deleteEmpty: Self = this.set("Empty", js.undefined)
+    def setForm(value: DefaultValidateMessages): Self = StObject.set(x, "Form", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForm(value: DefaultValidateMessages): Self = this.set("Form", value.asInstanceOf[js.Any])
+    def setFormUndefined: Self = StObject.set(x, "Form", js.undefined)
     
     @scala.inline
-    def deleteForm: Self = this.set("Form", js.undefined)
+    def setGlobal(value: js.Object): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: js.Object): Self = this.set("Icon", value.asInstanceOf[js.Any])
+    def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("Icon", js.undefined)
+    def setIcon(value: js.Object): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModal(value: ModalLocale): Self = this.set("Modal", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "Icon", js.undefined)
     
     @scala.inline
-    def deleteModal: Self = this.set("Modal", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageHeader(value: js.Object): Self = this.set("PageHeader", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deletePageHeader: Self = this.set("PageHeader", js.undefined)
+    def setModal(value: ModalLocale): Self = StObject.set(x, "Modal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagination(value: PaginationLocale): Self = this.set("Pagination", value.asInstanceOf[js.Any])
+    def setModalUndefined: Self = StObject.set(x, "Modal", js.undefined)
     
     @scala.inline
-    def deletePagination: Self = this.set("Pagination", js.undefined)
+    def setPageHeader(value: js.Object): Self = StObject.set(x, "PageHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopconfirm(value: PopconfirmLocale): Self = this.set("Popconfirm", value.asInstanceOf[js.Any])
+    def setPageHeaderUndefined: Self = StObject.set(x, "PageHeader", js.undefined)
     
     @scala.inline
-    def deletePopconfirm: Self = this.set("Popconfirm", js.undefined)
+    def setPagination(value: PaginationLocale): Self = StObject.set(x, "Pagination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: js.Object): Self = this.set("Select", value.asInstanceOf[js.Any])
+    def setPaginationUndefined: Self = StObject.set(x, "Pagination", js.undefined)
     
     @scala.inline
-    def deleteSelect: Self = this.set("Select", js.undefined)
+    def setPopconfirm(value: PopconfirmLocale): Self = StObject.set(x, "Popconfirm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTable(value: TableLocale): Self = this.set("Table", value.asInstanceOf[js.Any])
+    def setPopconfirmUndefined: Self = StObject.set(x, "Popconfirm", js.undefined)
     
     @scala.inline
-    def deleteTable: Self = this.set("Table", js.undefined)
+    def setSelect(value: js.Object): Self = StObject.set(x, "Select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: js.Object): Self = this.set("Text", value.asInstanceOf[js.Any])
+    def setSelectUndefined: Self = StObject.set(x, "Select", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("Text", js.undefined)
+    def setTable(value: TableLocale): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimePicker(value: js.Object): Self = this.set("TimePicker", value.asInstanceOf[js.Any])
+    def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
     
     @scala.inline
-    def deleteTimePicker: Self = this.set("TimePicker", js.undefined)
+    def setText(value: js.Object): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransfer(value: PartialTransferLocale): Self = this.set("Transfer", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
     
     @scala.inline
-    def deleteTransfer: Self = this.set("Transfer", js.undefined)
+    def setTimePicker(value: js.Object): Self = StObject.set(x, "TimePicker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpload(value: UploadLocale): Self = this.set("Upload", value.asInstanceOf[js.Any])
+    def setTimePickerUndefined: Self = StObject.set(x, "TimePicker", js.undefined)
     
     @scala.inline
-    def deleteUpload: Self = this.set("Upload", js.undefined)
+    def setTransfer(value: PartialTransferLocale): Self = StObject.set(x, "Transfer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExist(value: Boolean): Self = this.set("exist", value.asInstanceOf[js.Any])
+    def setTransferUndefined: Self = StObject.set(x, "Transfer", js.undefined)
     
     @scala.inline
-    def deleteExist: Self = this.set("exist", js.undefined)
+    def setUpload(value: UploadLocale): Self = StObject.set(x, "Upload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobal(value: js.Object): Self = this.set("global", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGlobal: Self = this.set("global", js.undefined)
-    
-    @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setUploadUndefined: Self = StObject.set(x, "Upload", js.undefined)
   }
 }

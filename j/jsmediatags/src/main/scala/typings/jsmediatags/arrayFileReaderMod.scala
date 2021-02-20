@@ -1,29 +1,30 @@
 package typings.jsmediatags
 
 import typings.jsmediatags.typesMod.ByteArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jsmediatags/build2/ArrayFileReader", JSImport.Namespace)
-@js.native
-object arrayFileReaderMod extends js.Object {
+object arrayFileReaderMod {
+  
+  @JSImport("jsmediatags/build2/ArrayFileReader", JSImport.Default)
+  @js.native
+  class default protected () extends ArrayFileReader {
+    def this(array: ByteArray) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("jsmediatags/build2/ArrayFileReader", "default.canReadFile")
+    @js.native
+    def canReadFile(file: js.Any): Boolean = js.native
+  }
   
   @js.native
   trait ArrayFileReader
     extends typings.jsmediatags.mediaFileReaderMod.default {
     
     var _array: ByteArray = js.native
-  }
-  
-  @js.native
-  class default protected () extends ArrayFileReader {
-    def this(array: ByteArray) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def canReadFile(file: js.Any): Boolean = js.native
   }
 }

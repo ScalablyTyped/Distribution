@@ -1,12 +1,13 @@
 package typings.microsoftSdkSoap.mod.global.Sdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sdk.OrganizationRequest")
 @js.native
-class OrganizationRequest () extends js.Object {
+class OrganizationRequest () extends StObject {
   
   /**
     * Gets the request XML.

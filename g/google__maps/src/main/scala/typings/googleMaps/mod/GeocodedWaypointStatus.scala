@@ -1,5 +1,6 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleMaps.googleMapsStrings.OK
   - typings.googleMaps.googleMapsStrings.ZERO_RESULTS
 */
-trait GeocodedWaypointStatus extends js.Object
+trait GeocodedWaypointStatus extends StObject
 object GeocodedWaypointStatus {
   
   @scala.inline

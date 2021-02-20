@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSpeech.gapi.client.speech
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpeechRecognitionAlternative extends js.Object {
+trait SpeechRecognitionAlternative extends StObject {
   
   /**
     * The confidence estimate between 0.0 and 1.0. A higher number indicates an estimated greater likelihood that the recognized words are correct. This field is set only for the top
@@ -29,39 +30,27 @@ object SpeechRecognitionAlternative {
   }
   
   @scala.inline
-  implicit class SpeechRecognitionAlternativeOps[Self <: SpeechRecognitionAlternative] (val x: Self) extends AnyVal {
+  implicit class SpeechRecognitionAlternativeMutableBuilder[Self <: SpeechRecognitionAlternative] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTranscript(value: String): Self = StObject.set(x, "transcript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    def setTranscriptUndefined: Self = StObject.set(x, "transcript", js.undefined)
     
     @scala.inline
-    def deleteConfidence: Self = this.set("confidence", js.undefined)
+    def setWords(value: js.Array[WordInfo]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranscript(value: String): Self = this.set("transcript", value.asInstanceOf[js.Any])
+    def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
     
     @scala.inline
-    def deleteTranscript: Self = this.set("transcript", js.undefined)
-    
-    @scala.inline
-    def setWordsVarargs(value: WordInfo*): Self = this.set("words", js.Array(value :_*))
-    
-    @scala.inline
-    def setWords(value: js.Array[WordInfo]): Self = this.set("words", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWords: Self = this.set("words", js.undefined)
+    def setWordsVarargs(value: WordInfo*): Self = StObject.set(x, "words", js.Array(value :_*))
   }
 }

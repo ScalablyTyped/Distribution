@@ -1,12 +1,13 @@
 package typings.rcTable.anon
 
 import typings.rcTable.interfaceMod.CustomizeComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cell extends js.Object {
+trait Cell extends StObject {
   
   var cell: js.UndefOr[CustomizeComponent] = js.native
   
@@ -23,36 +24,24 @@ object Cell {
   }
   
   @scala.inline
-  implicit class CellOps[Self <: Cell] (val x: Self) extends AnyVal {
+  implicit class CellMutableBuilder[Self <: Cell] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCell(value: CustomizeComponent): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRow(value: CustomizeComponent): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCell(value: CustomizeComponent): Self = this.set("cell", value.asInstanceOf[js.Any])
+    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
     @scala.inline
-    def deleteCell: Self = this.set("cell", js.undefined)
+    def setWrapper(value: CustomizeComponent): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRow(value: CustomizeComponent): Self = this.set("row", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRow: Self = this.set("row", js.undefined)
-    
-    @scala.inline
-    def setWrapper(value: CustomizeComponent): Self = this.set("wrapper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapper: Self = this.set("wrapper", js.undefined)
+    def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
   }
 }

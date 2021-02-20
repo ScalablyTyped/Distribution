@@ -4,12 +4,13 @@ import typings.googleapis.googleapisStrings.v1alpha
 import typings.googleapis.googleapisStrings.v1beta
 import typings.googleapis.websecurityscannerV1alphaMod.websecurityscannerV1alpha.Options
 import typings.googleapis.websecurityscannerV1alphaMod.websecurityscannerV1alpha.Websecurityscanner
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fn147 extends js.Object {
+trait Fn147 extends StObject {
   
   def apply(options: Options): Websecurityscanner = js.native
   def apply(options: typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta.Options): typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta.Websecurityscanner = js.native

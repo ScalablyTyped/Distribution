@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Image extends js.Object {
+trait Image extends StObject {
   
   /**
     * Blob of image bytes up to 5 MBs.
@@ -26,30 +27,18 @@ object Image {
   }
   
   @scala.inline
-  implicit class ImageOps[Self <: Image] (val x: Self) extends AnyVal {
+  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytes(value: ImageBlob): Self = StObject.set(x, "Bytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBytesUndefined: Self = StObject.set(x, "Bytes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS3Object(value: S3Object): Self = StObject.set(x, "S3Object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytes(value: ImageBlob): Self = this.set("Bytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBytes: Self = this.set("Bytes", js.undefined)
-    
-    @scala.inline
-    def setS3Object(value: S3Object): Self = this.set("S3Object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Object: Self = this.set("S3Object", js.undefined)
+    def setS3ObjectUndefined: Self = StObject.set(x, "S3Object", js.undefined)
   }
 }

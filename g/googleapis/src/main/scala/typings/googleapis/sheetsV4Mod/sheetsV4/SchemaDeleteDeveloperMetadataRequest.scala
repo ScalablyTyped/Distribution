@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A request to delete developer metadata.
   */
 @js.native
-trait SchemaDeleteDeveloperMetadataRequest extends js.Object {
+trait SchemaDeleteDeveloperMetadataRequest extends StObject {
   
   /**
     * The data filter describing the criteria used to select which developer
@@ -25,24 +26,12 @@ object SchemaDeleteDeveloperMetadataRequest {
   }
   
   @scala.inline
-  implicit class SchemaDeleteDeveloperMetadataRequestOps[Self <: SchemaDeleteDeveloperMetadataRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaDeleteDeveloperMetadataRequestMutableBuilder[Self <: SchemaDeleteDeveloperMetadataRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataFilter(value: SchemaDataFilter): Self = StObject.set(x, "dataFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataFilter(value: SchemaDataFilter): Self = this.set("dataFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataFilter: Self = this.set("dataFilter", js.undefined)
+    def setDataFilterUndefined: Self = StObject.set(x, "dataFilter", js.undefined)
   }
 }

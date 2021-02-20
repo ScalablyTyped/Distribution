@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReviewResultDetail extends js.Object {
+trait ReviewResultDetail extends StObject {
   
   /**
     *  A unique identifier of the Review action result. 
@@ -46,54 +47,42 @@ object ReviewResultDetail {
   }
   
   @scala.inline
-  implicit class ReviewResultDetailOps[Self <: ReviewResultDetail] (val x: Self) extends AnyVal {
+  implicit class ReviewResultDetailMutableBuilder[Self <: ReviewResultDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionId(value: EntityId): Self = StObject.set(x, "ActionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionIdUndefined: Self = StObject.set(x, "ActionId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionId(value: EntityId): Self = this.set("ActionId", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
     @scala.inline
-    def deleteActionId: Self = this.set("ActionId", js.undefined)
+    def setQuestionId(value: EntityId): Self = StObject.set(x, "QuestionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("Key", value.asInstanceOf[js.Any])
+    def setQuestionIdUndefined: Self = StObject.set(x, "QuestionId", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("Key", js.undefined)
+    def setSubjectId(value: EntityId): Self = StObject.set(x, "SubjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuestionId(value: EntityId): Self = this.set("QuestionId", value.asInstanceOf[js.Any])
+    def setSubjectIdUndefined: Self = StObject.set(x, "SubjectId", js.undefined)
     
     @scala.inline
-    def deleteQuestionId: Self = this.set("QuestionId", js.undefined)
+    def setSubjectType(value: String): Self = StObject.set(x, "SubjectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectId(value: EntityId): Self = this.set("SubjectId", value.asInstanceOf[js.Any])
+    def setSubjectTypeUndefined: Self = StObject.set(x, "SubjectType", js.undefined)
     
     @scala.inline
-    def deleteSubjectId: Self = this.set("SubjectId", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectType(value: String): Self = this.set("SubjectType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubjectType: Self = this.set("SubjectType", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("Value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

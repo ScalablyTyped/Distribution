@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EncryptionEntity extends js.Object {
+trait EncryptionEntity extends StObject {
   
   /**
     * Field patterns in a field-level encryption content type profile specify the fields that you want to be encrypted. You can provide the full field name, or any beginning characters followed by a wildcard (*). You can't overlap field patterns. For example, you can't have both ABC* and AB*. Note that field patterns are case-sensitive. 
@@ -31,27 +32,15 @@ object EncryptionEntity {
   }
   
   @scala.inline
-  implicit class EncryptionEntityOps[Self <: EncryptionEntity] (val x: Self) extends AnyVal {
+  implicit class EncryptionEntityMutableBuilder[Self <: EncryptionEntity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldPatterns(value: FieldPatterns): Self = StObject.set(x, "FieldPatterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProviderId(value: String): Self = StObject.set(x, "ProviderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFieldPatterns(value: FieldPatterns): Self = this.set("FieldPatterns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProviderId(value: String): Self = this.set("ProviderId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublicKeyId(value: String): Self = this.set("PublicKeyId", value.asInstanceOf[js.Any])
+    def setPublicKeyId(value: String): Self = StObject.set(x, "PublicKeyId", value.asInstanceOf[js.Any])
   }
 }

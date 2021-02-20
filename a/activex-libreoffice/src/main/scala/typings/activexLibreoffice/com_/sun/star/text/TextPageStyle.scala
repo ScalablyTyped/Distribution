@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.text
 
 import typings.activexLibreoffice.com_.sun.star.util.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This service extends the service {@link com.sun.star.style.PageStyle} with specific properties for text documents.
   */
 @js.native
-trait TextPageStyle extends js.Object {
+trait TextPageStyle extends StObject {
   
   /**
     * contains the interface to the text of the footer.
@@ -128,72 +129,60 @@ object TextPageStyle {
   }
   
   @scala.inline
-  implicit class TextPageStyleOps[Self <: TextPageStyle] (val x: Self) extends AnyVal {
+  implicit class TextPageStyleMutableBuilder[Self <: TextPageStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFooterText(value: XText): Self = StObject.set(x, "FooterText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFooterTextFirst(value: XText): Self = StObject.set(x, "FooterTextFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFooterTextLeft(value: XText): Self = StObject.set(x, "FooterTextLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterText(value: XText): Self = this.set("FooterText", value.asInstanceOf[js.Any])
+    def setFooterTextRight(value: XText): Self = StObject.set(x, "FooterTextRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterTextFirst(value: XText): Self = this.set("FooterTextFirst", value.asInstanceOf[js.Any])
+    def setFootnoteHeight(value: Double): Self = StObject.set(x, "FootnoteHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterTextLeft(value: XText): Self = this.set("FooterTextLeft", value.asInstanceOf[js.Any])
+    def setFootnoteLineAdjust(value: Double): Self = StObject.set(x, "FootnoteLineAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterTextRight(value: XText): Self = this.set("FooterTextRight", value.asInstanceOf[js.Any])
+    def setFootnoteLineColor(value: Color): Self = StObject.set(x, "FootnoteLineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFootnoteHeight(value: Double): Self = this.set("FootnoteHeight", value.asInstanceOf[js.Any])
+    def setFootnoteLineDistance(value: Double): Self = StObject.set(x, "FootnoteLineDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFootnoteLineAdjust(value: Double): Self = this.set("FootnoteLineAdjust", value.asInstanceOf[js.Any])
+    def setFootnoteLineRelativeWidth(value: Double): Self = StObject.set(x, "FootnoteLineRelativeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFootnoteLineColor(value: Color): Self = this.set("FootnoteLineColor", value.asInstanceOf[js.Any])
+    def setFootnoteLineTextDistance(value: Double): Self = StObject.set(x, "FootnoteLineTextDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFootnoteLineDistance(value: Double): Self = this.set("FootnoteLineDistance", value.asInstanceOf[js.Any])
+    def setFootnoteLineWeight(value: Double): Self = StObject.set(x, "FootnoteLineWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFootnoteLineRelativeWidth(value: Double): Self = this.set("FootnoteLineRelativeWidth", value.asInstanceOf[js.Any])
+    def setHeaderText(value: XText): Self = StObject.set(x, "HeaderText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFootnoteLineTextDistance(value: Double): Self = this.set("FootnoteLineTextDistance", value.asInstanceOf[js.Any])
+    def setHeaderTextFirst(value: XText): Self = StObject.set(x, "HeaderTextFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFootnoteLineWeight(value: Double): Self = this.set("FootnoteLineWeight", value.asInstanceOf[js.Any])
+    def setHeaderTextLeft(value: XText): Self = StObject.set(x, "HeaderTextLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderText(value: XText): Self = this.set("HeaderText", value.asInstanceOf[js.Any])
+    def setHeaderTextRight(value: XText): Self = StObject.set(x, "HeaderTextRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderTextFirst(value: XText): Self = this.set("HeaderTextFirst", value.asInstanceOf[js.Any])
+    def setRegisterModeActive(value: Boolean): Self = StObject.set(x, "RegisterModeActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderTextLeft(value: XText): Self = this.set("HeaderTextLeft", value.asInstanceOf[js.Any])
+    def setRegisterParagraphStyle(value: String): Self = StObject.set(x, "RegisterParagraphStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderTextRight(value: XText): Self = this.set("HeaderTextRight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegisterModeActive(value: Boolean): Self = this.set("RegisterModeActive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegisterParagraphStyle(value: String): Self = this.set("RegisterParagraphStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextColumns(value: XTextColumns): Self = this.set("TextColumns", value.asInstanceOf[js.Any])
+    def setTextColumns(value: XTextColumns): Self = StObject.set(x, "TextColumns", value.asInstanceOf[js.Any])
   }
 }

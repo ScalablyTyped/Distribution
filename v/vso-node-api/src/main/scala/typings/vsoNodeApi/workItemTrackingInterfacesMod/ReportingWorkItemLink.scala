@@ -2,12 +2,13 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportingWorkItemLink extends js.Object {
+trait ReportingWorkItemLink extends StObject {
   
   var changedBy: IdentityRef = js.native
   
@@ -46,45 +47,33 @@ object ReportingWorkItemLink {
   }
   
   @scala.inline
-  implicit class ReportingWorkItemLinkOps[Self <: ReportingWorkItemLink] (val x: Self) extends AnyVal {
+  implicit class ReportingWorkItemLinkMutableBuilder[Self <: ReportingWorkItemLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangedBy(value: IdentityRef): Self = StObject.set(x, "changedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangedDate(value: Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangedOperation(value: LinkChangeType): Self = StObject.set(x, "changedOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedBy(value: IdentityRef): Self = this.set("changedBy", value.asInstanceOf[js.Any])
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedDate(value: Date): Self = this.set("changedDate", value.asInstanceOf[js.Any])
+    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedOperation(value: LinkChangeType): Self = this.set("changedOperation", value.asInstanceOf[js.Any])
+    def setLinkType(value: String): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsActive(value: Boolean): Self = this.set("isActive", value.asInstanceOf[js.Any])
+    def setSourceId(value: Double): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkType(value: String): Self = this.set("linkType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRel(value: String): Self = this.set("rel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceId(value: Double): Self = this.set("sourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetId(value: Double): Self = this.set("targetId", value.asInstanceOf[js.Any])
+    def setTargetId(value: Double): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
   }
 }

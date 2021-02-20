@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebhookInfo extends js.Object {
+trait WebhookInfo extends StObject {
   
   var allowed_updates: js.UndefOr[js.Array[String]] = js.native
   
@@ -30,54 +31,42 @@ object WebhookInfo {
   }
   
   @scala.inline
-  implicit class WebhookInfoOps[Self <: WebhookInfo] (val x: Self) extends AnyVal {
+  implicit class WebhookInfoMutableBuilder[Self <: WebhookInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowed_updates(value: js.Array[String]): Self = StObject.set(x, "allowed_updates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowed_updatesUndefined: Self = StObject.set(x, "allowed_updates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowed_updatesVarargs(value: String*): Self = StObject.set(x, "allowed_updates", js.Array(value :_*))
     
     @scala.inline
-    def setHas_custom_certificate(value: Boolean): Self = this.set("has_custom_certificate", value.asInstanceOf[js.Any])
+    def setHas_custom_certificate(value: Boolean): Self = StObject.set(x, "has_custom_certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPending_update_count(value: Double): Self = this.set("pending_update_count", value.asInstanceOf[js.Any])
+    def setLast_error_date(value: Double): Self = StObject.set(x, "last_error_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setLast_error_dateUndefined: Self = StObject.set(x, "last_error_date", js.undefined)
     
     @scala.inline
-    def setAllowed_updatesVarargs(value: String*): Self = this.set("allowed_updates", js.Array(value :_*))
+    def setLast_error_message(value: String): Self = StObject.set(x, "last_error_message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowed_updates(value: js.Array[String]): Self = this.set("allowed_updates", value.asInstanceOf[js.Any])
+    def setLast_error_messageUndefined: Self = StObject.set(x, "last_error_message", js.undefined)
     
     @scala.inline
-    def deleteAllowed_updates: Self = this.set("allowed_updates", js.undefined)
+    def setMax_connections(value: Double): Self = StObject.set(x, "max_connections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast_error_date(value: Double): Self = this.set("last_error_date", value.asInstanceOf[js.Any])
+    def setMax_connectionsUndefined: Self = StObject.set(x, "max_connections", js.undefined)
     
     @scala.inline
-    def deleteLast_error_date: Self = this.set("last_error_date", js.undefined)
+    def setPending_update_count(value: Double): Self = StObject.set(x, "pending_update_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast_error_message(value: String): Self = this.set("last_error_message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLast_error_message: Self = this.set("last_error_message", js.undefined)
-    
-    @scala.inline
-    def setMax_connections(value: Double): Self = this.set("max_connections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMax_connections: Self = this.set("max_connections", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

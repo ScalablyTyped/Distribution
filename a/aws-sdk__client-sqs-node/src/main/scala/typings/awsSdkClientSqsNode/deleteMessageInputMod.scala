@@ -1,12 +1,13 @@
 package typings.awsSdkClientSqsNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-sqs-node/model/DeleteMessageInput", JSImport.Namespace)
-@js.native
-object deleteMessageInputMod extends js.Object {
+object deleteMessageInputMod {
   
+  @JSImport("@aws-sdk/client-sqs-node/model/DeleteMessageInput", "DeleteMessageInput")
+  @js.native
   val DeleteMessageInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

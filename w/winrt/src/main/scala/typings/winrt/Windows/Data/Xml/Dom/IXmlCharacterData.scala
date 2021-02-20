@@ -1,5 +1,6 @@
 package typings.winrt.Windows.Data.Xml.Dom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,39 +66,27 @@ object IXmlCharacterData {
   }
   
   @scala.inline
-  implicit class IXmlCharacterDataOps[Self <: IXmlCharacterData] (val x: Self) extends AnyVal {
+  implicit class IXmlCharacterDataMutableBuilder[Self <: IXmlCharacterData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendData(value: String => Unit): Self = StObject.set(x, "appendData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteData(value: (Double, Double) => Unit): Self = StObject.set(x, "deleteData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAppendData(value: String => Unit): Self = this.set("appendData", js.Any.fromFunction1(value))
+    def setInsertData(value: (Double, String) => Unit): Self = StObject.set(x, "insertData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteData(value: (Double, Double) => Unit): Self = this.set("deleteData", js.Any.fromFunction2(value))
+    def setReplaceData(value: (Double, Double, String) => Unit): Self = StObject.set(x, "replaceData", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setInsertData(value: (Double, String) => Unit): Self = this.set("insertData", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReplaceData(value: (Double, Double, String) => Unit): Self = this.set("replaceData", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSubstringData(value: (Double, Double) => String): Self = this.set("substringData", js.Any.fromFunction2(value))
+    def setSubstringData(value: (Double, Double) => String): Self = StObject.set(x, "substringData", js.Any.fromFunction2(value))
   }
 }

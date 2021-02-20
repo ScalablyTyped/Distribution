@@ -1,11 +1,12 @@
 package typings.sequelize.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Logging extends js.Object {
+trait Logging extends StObject {
   
   var logging: js.UndefOr[Boolean | js.Function] = js.native
   
@@ -22,36 +23,24 @@ object Logging {
   }
   
   @scala.inline
-  implicit class LoggingOps[Self <: Logging] (val x: Self) extends AnyVal {
+  implicit class LoggingMutableBuilder[Self <: Logging] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogging(value: Boolean | js.Function): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogging(value: Boolean | js.Function): Self = this.set("logging", value.asInstanceOf[js.Any])
+    def setSchemaDelimeter(value: String): Self = StObject.set(x, "schemaDelimeter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogging: Self = this.set("logging", js.undefined)
+    def setSchemaDelimeterUndefined: Self = StObject.set(x, "schemaDelimeter", js.undefined)
     
     @scala.inline
-    def setSchema(value: String): Self = this.set("schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
-    
-    @scala.inline
-    def setSchemaDelimeter(value: String): Self = this.set("schemaDelimeter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemaDelimeter: Self = this.set("schemaDelimeter", js.undefined)
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
   }
 }

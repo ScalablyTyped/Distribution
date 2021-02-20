@@ -11,6 +11,7 @@ import typings.babelTypes.babelTypesStrings.JSXNamespacedName
 import typings.babelTypes.babelTypesStrings.JSXOpeningElement
 import typings.babelTypes.babelTypesStrings.JSXSpreadAttribute
 import typings.babelTypes.babelTypesStrings.JSXText
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.ts36Mod.JSXSpreadAttribute_
   - typings.babelTypes.ts36Mod.JSXText_
 */
-trait JSX extends js.Object
+trait JSX extends StObject
 object JSX {
   
   @scala.inline
@@ -38,10 +39,23 @@ object JSX {
     name: JSXIdentifier_ | JSXNamespacedName_,
     start: Double,
     `type`: JSXAttribute
-  ): JSX = {
+  ): typings.babelTypes.ts36Mod.JSXAttribute_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[JSX]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.JSXAttribute_]
+  }
+  
+  @scala.inline
+  def JSXClosingElement_(
+    end: Double,
+    loc: SourceLocation,
+    name: JSXIdentifier_ | JSXMemberExpression_,
+    start: Double,
+    `type`: JSXClosingElement
+  ): typings.babelTypes.ts36Mod.JSXClosingElement_ = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.JSXClosingElement_]
   }
   
   @scala.inline
@@ -53,17 +67,37 @@ object JSX {
     openingElement: JSXOpeningElement_,
     start: Double,
     `type`: JSXElement
-  ): JSX = {
+  ): typings.babelTypes.ts36Mod.JSXElement_ = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], closingElement = closingElement.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], openingElement = openingElement.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[JSX]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.JSXElement_]
   }
   
   @scala.inline
-  def JSXSpreadAttribute_(argument: Expression, end: Double, loc: SourceLocation, start: Double, `type`: JSXSpreadAttribute): JSX = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+  def JSXEmptyExpression_(end: Double, loc: SourceLocation, start: Double, `type`: JSXEmptyExpression): typings.babelTypes.ts36Mod.JSXEmptyExpression_ = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[JSX]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.JSXEmptyExpression_]
+  }
+  
+  @scala.inline
+  def JSXExpressionContainer_(
+    end: Double,
+    expression: Expression,
+    loc: SourceLocation,
+    start: Double,
+    `type`: JSXExpressionContainer
+  ): typings.babelTypes.ts36Mod.JSXExpressionContainer_ = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.JSXExpressionContainer_]
+  }
+  
+  @scala.inline
+  def JSXIdentifier_(end: Double, loc: SourceLocation, name: String, start: Double, `type`: JSXIdentifier): typings.babelTypes.ts36Mod.JSXIdentifier_ = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.JSXIdentifier_]
   }
   
   @scala.inline
@@ -74,51 +108,11 @@ object JSX {
     property: JSXIdentifier_,
     start: Double,
     `type`: JSXMemberExpression
-  ): JSX = {
+  ): typings.babelTypes.ts36Mod.JSXMemberExpression_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[JSX]
-  }
-  
-  @scala.inline
-  def JSXEmptyExpression_(end: Double, loc: SourceLocation, start: Double, `type`: JSXEmptyExpression): JSX = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[JSX]
-  }
-  
-  @scala.inline
-  def JSXText_(end: Double, loc: SourceLocation, start: Double, `type`: JSXText, value: String): JSX = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[JSX]
-  }
-  
-  @scala.inline
-  def JSXExpressionContainer_(
-    end: Double,
-    expression: Expression,
-    loc: SourceLocation,
-    start: Double,
-    `type`: JSXExpressionContainer
-  ): JSX = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[JSX]
-  }
-  
-  @scala.inline
-  def JSXClosingElement_(
-    end: Double,
-    loc: SourceLocation,
-    name: JSXIdentifier_ | JSXMemberExpression_,
-    start: Double,
-    `type`: JSXClosingElement
-  ): JSX = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[JSX]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.JSXMemberExpression_]
   }
   
   @scala.inline
@@ -129,17 +123,10 @@ object JSX {
     namespace: JSXIdentifier_,
     start: Double,
     `type`: JSXNamespacedName
-  ): JSX = {
+  ): typings.babelTypes.ts36Mod.JSXNamespacedName_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[JSX]
-  }
-  
-  @scala.inline
-  def JSXIdentifier_(end: Double, loc: SourceLocation, name: String, start: Double, `type`: JSXIdentifier): JSX = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[JSX]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.JSXNamespacedName_]
   }
   
   @scala.inline
@@ -151,9 +138,23 @@ object JSX {
     selfClosing: Boolean,
     start: Double,
     `type`: JSXOpeningElement
-  ): JSX = {
+  ): typings.babelTypes.ts36Mod.JSXOpeningElement_ = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selfClosing = selfClosing.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[JSX]
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.JSXOpeningElement_]
+  }
+  
+  @scala.inline
+  def JSXSpreadAttribute_(argument: Expression, end: Double, loc: SourceLocation, start: Double, `type`: JSXSpreadAttribute): typings.babelTypes.ts36Mod.JSXSpreadAttribute_ = {
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.JSXSpreadAttribute_]
+  }
+  
+  @scala.inline
+  def JSXText_(end: Double, loc: SourceLocation, start: Double, `type`: JSXText, value: String): typings.babelTypes.ts36Mod.JSXText_ = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.babelTypes.ts36Mod.JSXText_]
   }
 }

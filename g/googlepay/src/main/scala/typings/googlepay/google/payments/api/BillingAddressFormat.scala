@@ -1,5 +1,6 @@
 package typings.googlepay.google.payments.api
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,7 +44,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googlepay.googlepayStrings.MIN
   - typings.googlepay.googlepayStrings.FULL
 */
-trait BillingAddressFormat extends js.Object
+trait BillingAddressFormat extends StObject
 object BillingAddressFormat {
   
   @scala.inline

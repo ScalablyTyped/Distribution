@@ -4,13 +4,14 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import typings.vis.anon.Edges
 import typings.vis.anon.FromId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vis", "Network")
 @js.native
-class Network protected () extends js.Object {
+class Network protected () extends StObject {
   /**
     * Creates an instance of Network.
     *

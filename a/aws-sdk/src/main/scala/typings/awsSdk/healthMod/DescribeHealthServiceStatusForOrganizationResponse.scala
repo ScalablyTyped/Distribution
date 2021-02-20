@@ -1,11 +1,12 @@
 package typings.awsSdk.healthMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeHealthServiceStatusForOrganizationResponse extends js.Object {
+trait DescribeHealthServiceStatusForOrganizationResponse extends StObject {
   
   /**
     * Information about the status of enabling or disabling AWS Health Organizational View in your organization. Valid values are ENABLED | DISABLED | PENDING. 
@@ -21,24 +22,12 @@ object DescribeHealthServiceStatusForOrganizationResponse {
   }
   
   @scala.inline
-  implicit class DescribeHealthServiceStatusForOrganizationResponseOps[Self <: DescribeHealthServiceStatusForOrganizationResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeHealthServiceStatusForOrganizationResponseMutableBuilder[Self <: DescribeHealthServiceStatusForOrganizationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHealthServiceAccessStatusForOrganization(value: healthServiceAccessStatusForOrganization): Self = StObject.set(x, "healthServiceAccessStatusForOrganization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHealthServiceAccessStatusForOrganization(value: healthServiceAccessStatusForOrganization): Self = this.set("healthServiceAccessStatusForOrganization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHealthServiceAccessStatusForOrganization: Self = this.set("healthServiceAccessStatusForOrganization", js.undefined)
+    def setHealthServiceAccessStatusForOrganizationUndefined: Self = StObject.set(x, "healthServiceAccessStatusForOrganization", js.undefined)
   }
 }

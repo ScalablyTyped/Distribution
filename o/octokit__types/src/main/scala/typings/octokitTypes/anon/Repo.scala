@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Repo extends js.Object {
+trait Repo extends StObject {
   
   var repo: Allowmergecommit = js.native
   
@@ -20,24 +21,12 @@ object Repo {
   }
   
   @scala.inline
-  implicit class RepoOps[Self <: Repo] (val x: Self) extends AnyVal {
+  implicit class RepoMutableBuilder[Self <: Repo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRepo(value: Allowmergecommit): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRepo(value: Allowmergecommit): Self = this.set("repo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStarred_at(value: String): Self = this.set("starred_at", value.asInstanceOf[js.Any])
+    def setStarred_at(value: String): Self = StObject.set(x, "starred_at", value.asInstanceOf[js.Any])
   }
 }

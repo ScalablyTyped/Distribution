@@ -1,11 +1,12 @@
 package typings.hapiJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RenameOptions extends js.Object {
+trait RenameOptions extends StObject {
   
   /**
     * if true, does not delete the old key name, keeping both the new and old keys in place.
@@ -44,42 +45,30 @@ object RenameOptions {
   }
   
   @scala.inline
-  implicit class RenameOptionsOps[Self <: RenameOptions] (val x: Self) extends AnyVal {
+  implicit class RenameOptionsMutableBuilder[Self <: RenameOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlias(value: Boolean): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnoreUndefined(value: Boolean): Self = StObject.set(x, "ignoreUndefined", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlias(value: Boolean): Self = this.set("alias", value.asInstanceOf[js.Any])
+    def setIgnoreUndefinedUndefined: Self = StObject.set(x, "ignoreUndefined", js.undefined)
     
     @scala.inline
-    def deleteAlias: Self = this.set("alias", js.undefined)
+    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreUndefined(value: Boolean): Self = this.set("ignoreUndefined", value.asInstanceOf[js.Any])
+    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
     @scala.inline
-    def deleteIgnoreUndefined: Self = this.set("ignoreUndefined", js.undefined)
+    def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultiple: Self = this.set("multiple", js.undefined)
-    
-    @scala.inline
-    def setOverride(value: Boolean): Self = this.set("override", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverride: Self = this.set("override", js.undefined)
+    def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
   }
 }

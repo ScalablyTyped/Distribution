@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateSpotDatafeedSubscriptionResult extends js.Object {
+trait CreateSpotDatafeedSubscriptionResult extends StObject {
   
   /**
     * The Spot Instance data feed subscription.
@@ -21,24 +22,12 @@ object CreateSpotDatafeedSubscriptionResult {
   }
   
   @scala.inline
-  implicit class CreateSpotDatafeedSubscriptionResultOps[Self <: CreateSpotDatafeedSubscriptionResult] (val x: Self) extends AnyVal {
+  implicit class CreateSpotDatafeedSubscriptionResultMutableBuilder[Self <: CreateSpotDatafeedSubscriptionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSpotDatafeedSubscription(value: SpotDatafeedSubscription): Self = StObject.set(x, "SpotDatafeedSubscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSpotDatafeedSubscription(value: SpotDatafeedSubscription): Self = this.set("SpotDatafeedSubscription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpotDatafeedSubscription: Self = this.set("SpotDatafeedSubscription", js.undefined)
+    def setSpotDatafeedSubscriptionUndefined: Self = StObject.set(x, "SpotDatafeedSubscription", js.undefined)
   }
 }

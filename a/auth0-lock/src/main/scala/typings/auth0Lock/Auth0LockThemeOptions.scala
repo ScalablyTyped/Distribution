@@ -1,11 +1,12 @@
 package typings.auth0Lock
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Auth0LockThemeOptions extends js.Object {
+trait Auth0LockThemeOptions extends StObject {
   
   var authButtons: js.UndefOr[Auth0LockThemeButtonOptions] = js.native
   
@@ -26,48 +27,36 @@ object Auth0LockThemeOptions {
   }
   
   @scala.inline
-  implicit class Auth0LockThemeOptionsOps[Self <: Auth0LockThemeOptions] (val x: Self) extends AnyVal {
+  implicit class Auth0LockThemeOptionsMutableBuilder[Self <: Auth0LockThemeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthButtons(value: Auth0LockThemeButtonOptions): Self = StObject.set(x, "authButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthButtonsUndefined: Self = StObject.set(x, "authButtons", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHideMainScreenTitle(value: Boolean): Self = StObject.set(x, "hideMainScreenTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthButtons(value: Auth0LockThemeButtonOptions): Self = this.set("authButtons", value.asInstanceOf[js.Any])
+    def setHideMainScreenTitleUndefined: Self = StObject.set(x, "hideMainScreenTitle", js.undefined)
     
     @scala.inline
-    def deleteAuthButtons: Self = this.set("authButtons", js.undefined)
+    def setLabeledSubmitButton(value: Boolean): Self = StObject.set(x, "labeledSubmitButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideMainScreenTitle(value: Boolean): Self = this.set("hideMainScreenTitle", value.asInstanceOf[js.Any])
+    def setLabeledSubmitButtonUndefined: Self = StObject.set(x, "labeledSubmitButton", js.undefined)
     
     @scala.inline
-    def deleteHideMainScreenTitle: Self = this.set("hideMainScreenTitle", js.undefined)
+    def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabeledSubmitButton(value: Boolean): Self = this.set("labeledSubmitButton", value.asInstanceOf[js.Any])
+    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
     @scala.inline
-    def deleteLabeledSubmitButton: Self = this.set("labeledSubmitButton", js.undefined)
+    def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogo(value: String): Self = this.set("logo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogo: Self = this.set("logo", js.undefined)
-    
-    @scala.inline
-    def setPrimaryColor(value: String): Self = this.set("primaryColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimaryColor: Self = this.set("primaryColor", js.undefined)
+    def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
   }
 }

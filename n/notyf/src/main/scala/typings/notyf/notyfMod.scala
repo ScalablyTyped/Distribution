@@ -6,16 +6,21 @@ import typings.notyf.anon.PartialINotyfOptions
 import typings.notyf.notyfModelsMod.NotyfArray
 import typings.notyf.notyfModelsMod.NotyfNotification
 import typings.notyf.notyfOptionsMod.INotyfOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("notyf/notyf", JSImport.Namespace)
-@js.native
-object notyfMod extends js.Object {
+object notyfMod {
+  
+  @JSImport("notyf/notyf", JSImport.Default)
+  @js.native
+  class default () extends Notyf {
+    def this(opts: PartialINotyfOptions) = this()
+  }
   
   @js.native
-  trait Notyf extends js.Object {
+  trait Notyf extends StObject {
     
     var _pushNotification: js.Any = js.native
     
@@ -55,10 +60,5 @@ object notyfMod extends js.Object {
     def success(payload: PartialINotyfNotification): NotyfNotification = js.native
     
     var view: js.Any = js.native
-  }
-  
-  @js.native
-  class default () extends Notyf {
-    def this(opts: PartialINotyfOptions) = this()
   }
 }

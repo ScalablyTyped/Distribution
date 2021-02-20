@@ -1,11 +1,12 @@
 package typings.rmcNukaCarousel.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnMouseDown extends js.Object {
+trait OnMouseDown extends StObject {
   
   def onMouseDown(e: js.Any): Unit = js.native
   
@@ -35,36 +36,24 @@ object OnMouseDown {
   }
   
   @scala.inline
-  implicit class OnMouseDownOps[Self <: OnMouseDown] (val x: Self) extends AnyVal {
+  implicit class OnMouseDownMutableBuilder[Self <: OnMouseDown] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnMouseDown(value: js.Any => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnMouseLeave(value: js.Any => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnMouseMove(value: js.Any => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMouseDown(value: js.Any => Unit): Self = this.set("onMouseDown", js.Any.fromFunction1(value))
+    def setOnMouseOut(value: () => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnMouseLeave(value: js.Any => Unit): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
+    def setOnMouseOver(value: () => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnMouseMove(value: js.Any => Unit): Self = this.set("onMouseMove", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnMouseOut(value: () => Unit): Self = this.set("onMouseOut", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnMouseOver(value: () => Unit): Self = this.set("onMouseOver", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnMouseUp(value: js.Any => Unit): Self = this.set("onMouseUp", js.Any.fromFunction1(value))
+    def setOnMouseUp(value: js.Any => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
   }
 }

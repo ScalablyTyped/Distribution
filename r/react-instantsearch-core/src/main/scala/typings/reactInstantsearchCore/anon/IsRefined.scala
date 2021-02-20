@@ -1,11 +1,12 @@
 package typings.reactInstantsearchCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsRefined extends js.Object {
+trait IsRefined extends StObject {
   
   var isRefined: Boolean = js.native
   
@@ -24,30 +25,18 @@ object IsRefined {
   }
   
   @scala.inline
-  implicit class IsRefinedOps[Self <: IsRefined] (val x: Self) extends AnyVal {
+  implicit class IsRefinedMutableBuilder[Self <: IsRefined] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsRefined(value: Boolean): Self = StObject.set(x, "isRefined", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoRefinement(value: Boolean): Self = StObject.set(x, "noRefinement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRefined(value: Boolean): Self = this.set("isRefined", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNoRefinement(value: Boolean): Self = this.set("noRefinement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

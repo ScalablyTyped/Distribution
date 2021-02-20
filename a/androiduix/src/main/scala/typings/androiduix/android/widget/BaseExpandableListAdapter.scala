@@ -3,6 +3,7 @@ package typings.androiduix.android.widget
 import typings.androiduix.android.database.DataSetObserver
 import typings.androiduix.android.view.View
 import typings.androiduix.android.view.ViewGroup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,27 +54,15 @@ object BaseExpandableListAdapter {
   }
   
   @scala.inline
-  implicit class BaseExpandableListAdapterOps[Self <: BaseExpandableListAdapter] (val x: Self) extends AnyVal {
+  implicit class BaseExpandableListAdapterMutableBuilder[Self <: BaseExpandableListAdapter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMDataSetObservable(value: js.Any): Self = StObject.set(x, "mDataSetObservable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotifyDataSetChanged(value: () => Unit): Self = StObject.set(x, "notifyDataSetChanged", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMDataSetObservable(value: js.Any): Self = this.set("mDataSetObservable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotifyDataSetChanged(value: () => Unit): Self = this.set("notifyDataSetChanged", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setNotifyDataSetInvalidated(value: () => Unit): Self = this.set("notifyDataSetInvalidated", js.Any.fromFunction0(value))
+    def setNotifyDataSetInvalidated(value: () => Unit): Self = StObject.set(x, "notifyDataSetInvalidated", js.Any.fromFunction0(value))
   }
 }

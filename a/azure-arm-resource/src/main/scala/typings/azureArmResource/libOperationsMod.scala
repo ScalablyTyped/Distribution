@@ -8,16 +8,15 @@ import typings.azureArmResource.libModelsMod.ApplianceDefinitionListResult
 import typings.azureArmResource.libModelsMod.ApplianceListResult
 import typings.msRest.mod.HttpOperationResponse
 import typings.msRest.mod.ServiceCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("azure-arm-resource/lib/operations", JSImport.Namespace)
-@js.native
-object libOperationsMod extends js.Object {
+object libOperationsMod {
   
   @js.native
-  trait ApplianceDefinitions extends js.Object {
+  trait ApplianceDefinitions extends StObject {
     
     /**
       * Creates a new appliance definition.
@@ -1208,7 +1207,7 @@ object libOperationsMod extends js.Object {
   }
   
   @js.native
-  trait Appliances extends js.Object {
+  trait Appliances extends StObject {
     
     /**
       * Creates a new appliance.

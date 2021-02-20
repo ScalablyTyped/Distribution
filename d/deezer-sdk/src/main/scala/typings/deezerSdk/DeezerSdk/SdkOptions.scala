@@ -1,6 +1,7 @@
 package typings.deezerSdk.DeezerSdk
 
 import typings.deezerSdk.anon.Accesstoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See: {@link https://developers.deezer.com/sdk/javascript/ready | DZ.ready}
   */
 @js.native
-trait SdkOptions extends js.Object {
+trait SdkOptions extends StObject {
   
   /**
     * In addition to the PlayerState properties,
@@ -29,24 +30,12 @@ object SdkOptions {
   }
   
   @scala.inline
-  implicit class SdkOptionsOps[Self <: SdkOptions] (val x: Self) extends AnyVal {
+  implicit class SdkOptionsMutableBuilder[Self <: SdkOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlayer(value: PlayerState): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPlayer(value: PlayerState): Self = this.set("player", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToken(value: Accesstoken): Self = this.set("token", value.asInstanceOf[js.Any])
+    def setToken(value: Accesstoken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

@@ -3,6 +3,7 @@ package typings.pixiJs.mod
 import typings.pixiJs.anon.HeightWidth
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLVideoElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,12 +24,13 @@ class TilingSprite protected ()
   def this(texture: typings.pixiJs.PIXI.Texture, width: js.UndefOr[scala.Nothing], height: Double) = this()
   def this(texture: typings.pixiJs.PIXI.Texture, width: Double, height: Double) = this()
 }
-/* static members */
-@JSImport("pixi.js", "TilingSprite")
-@js.native
-object TilingSprite extends js.Object {
+object TilingSprite {
   
+  @JSImport("pixi.js", "TilingSprite.from")
+  @js.native
   def from(source: String): typings.pixiJs.PIXI.Sprite = js.native
+  @JSImport("pixi.js", "TilingSprite.from")
+  @js.native
   def from(source: String, options: js.Any): typings.pixiJs.PIXI.Sprite = js.native
   /**
     * Helper function that creates a new tiling sprite based on the source you provide.
@@ -41,20 +43,52 @@ object TilingSprite extends js.Object {
     * @param {number} options.height - required height of the tiling sprite
     * @return {PIXI.TilingSprite} The newly created texture
     */
+  /* static member */
+  @JSImport("pixi.js", "TilingSprite.from")
+  @js.native
   def from(source: String, options: HeightWidth): typings.pixiJs.PIXI.TilingSprite = js.native
+  /* static member */
+  @JSImport("pixi.js", "TilingSprite.from")
+  @js.native
   def from(source: Double): typings.pixiJs.PIXI.Sprite = js.native
+  @JSImport("pixi.js", "TilingSprite.from")
+  @js.native
   def from(source: Double, options: js.Any): typings.pixiJs.PIXI.Sprite = js.native
+  @JSImport("pixi.js", "TilingSprite.from")
+  @js.native
   def from(source: typings.pixiJs.PIXI.Texture): typings.pixiJs.PIXI.Sprite = js.native
+  @JSImport("pixi.js", "TilingSprite.from")
+  @js.native
   def from(source: typings.pixiJs.PIXI.Texture, options: js.Any): typings.pixiJs.PIXI.Sprite = js.native
+  @JSImport("pixi.js", "TilingSprite.from")
+  @js.native
   def from(source: typings.pixiJs.PIXI.Texture, options: HeightWidth): typings.pixiJs.PIXI.TilingSprite = js.native
+  @JSImport("pixi.js", "TilingSprite.from")
+  @js.native
   def from(source: HTMLCanvasElement): typings.pixiJs.PIXI.Sprite = js.native
+  @JSImport("pixi.js", "TilingSprite.from")
+  @js.native
   def from(source: HTMLCanvasElement, options: js.Any): typings.pixiJs.PIXI.Sprite = js.native
+  @JSImport("pixi.js", "TilingSprite.from")
+  @js.native
   def from(source: HTMLCanvasElement, options: HeightWidth): typings.pixiJs.PIXI.TilingSprite = js.native
+  @JSImport("pixi.js", "TilingSprite.from")
+  @js.native
   def from(source: HTMLVideoElement): typings.pixiJs.PIXI.Sprite = js.native
+  @JSImport("pixi.js", "TilingSprite.from")
+  @js.native
   def from(source: HTMLVideoElement, options: js.Any): typings.pixiJs.PIXI.Sprite = js.native
+  @JSImport("pixi.js", "TilingSprite.from")
+  @js.native
   def from(source: HTMLVideoElement, options: HeightWidth): typings.pixiJs.PIXI.TilingSprite = js.native
   
+  /* static member */
+  @JSImport("pixi.js", "TilingSprite.fromFrame")
+  @js.native
   def fromFrame(): typings.pixiJs.PIXI.Sprite = js.native
   
+  /* static member */
+  @JSImport("pixi.js", "TilingSprite.fromImage")
+  @js.native
   def fromImage(): typings.pixiJs.PIXI.Sprite = js.native
 }

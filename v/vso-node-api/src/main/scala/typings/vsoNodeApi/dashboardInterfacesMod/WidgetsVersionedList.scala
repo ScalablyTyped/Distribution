@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.dashboardInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WidgetsVersionedList extends js.Object {
+trait WidgetsVersionedList extends StObject {
   
   var eTag: js.Array[String] = js.native
   
@@ -20,30 +21,18 @@ object WidgetsVersionedList {
   }
   
   @scala.inline
-  implicit class WidgetsVersionedListOps[Self <: WidgetsVersionedList] (val x: Self) extends AnyVal {
+  implicit class WidgetsVersionedListMutableBuilder[Self <: WidgetsVersionedList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setETag(value: js.Array[String]): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setETagVarargs(value: String*): Self = StObject.set(x, "eTag", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWidgets(value: js.Array[Widget]): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setETagVarargs(value: String*): Self = this.set("eTag", js.Array(value :_*))
-    
-    @scala.inline
-    def setETag(value: js.Array[String]): Self = this.set("eTag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidgetsVarargs(value: Widget*): Self = this.set("widgets", js.Array(value :_*))
-    
-    @scala.inline
-    def setWidgets(value: js.Array[Widget]): Self = this.set("widgets", value.asInstanceOf[js.Any])
+    def setWidgetsVarargs(value: Widget*): Self = StObject.set(x, "widgets", js.Array(value :_*))
   }
 }

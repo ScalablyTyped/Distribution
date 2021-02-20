@@ -1,12 +1,13 @@
 package typings.fundamentalReact.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<fundamental-react.fundamental-react/lib/List/List.ListTextProps> */
 @js.native
-trait PartialListTextProps extends js.Object {
+trait PartialListTextProps extends StObject {
   
   var className: js.UndefOr[String] = js.native
   
@@ -23,36 +24,24 @@ object PartialListTextProps {
   }
   
   @scala.inline
-  implicit class PartialListTextPropsOps[Self <: PartialListTextProps] (val x: Self) extends AnyVal {
+  implicit class PartialListTextPropsMutableBuilder[Self <: PartialListTextProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoWrap(value: Boolean): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setNoWrapUndefined: Self = StObject.set(x, "noWrap", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setSecondary(value: Boolean): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoWrap(value: Boolean): Self = this.set("noWrap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoWrap: Self = this.set("noWrap", js.undefined)
-    
-    @scala.inline
-    def setSecondary(value: Boolean): Self = this.set("secondary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondary: Self = this.set("secondary", js.undefined)
+    def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
   }
 }

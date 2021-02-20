@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.WiFiDirect
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used by an app to specify the connection parameters for a Wi-Fi Direct connect/pairing operation. */
 @js.native
-trait WiFiDirectConnectionParameters extends js.Object {
+trait WiFiDirectConnectionParameters extends StObject {
   
   /** The group owner intent value used for group owner negotiation in a Wi-Fi Direct connect/pairing operation. */
   var groupOwnerIntent: Double = js.native
@@ -31,27 +32,15 @@ object WiFiDirectConnectionParameters {
   }
   
   @scala.inline
-  implicit class WiFiDirectConnectionParametersOps[Self <: WiFiDirectConnectionParameters] (val x: Self) extends AnyVal {
+  implicit class WiFiDirectConnectionParametersMutableBuilder[Self <: WiFiDirectConnectionParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupOwnerIntent(value: Double): Self = StObject.set(x, "groupOwnerIntent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreferenceOrderedConfigurationMethods(value: IVector[WiFiDirectConfigurationMethod]): Self = StObject.set(x, "preferenceOrderedConfigurationMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGroupOwnerIntent(value: Double): Self = this.set("groupOwnerIntent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreferenceOrderedConfigurationMethods(value: IVector[WiFiDirectConfigurationMethod]): Self = this.set("preferenceOrderedConfigurationMethods", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreferredPairingProcedure(value: WiFiDirectPairingProcedure): Self = this.set("preferredPairingProcedure", value.asInstanceOf[js.Any])
+    def setPreferredPairingProcedure(value: WiFiDirectPairingProcedure): Self = StObject.set(x, "preferredPairingProcedure", value.asInstanceOf[js.Any])
   }
 }

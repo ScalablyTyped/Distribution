@@ -4,6 +4,7 @@ import typings.mqttPacket.mqttPacketStrings.error
 import typings.mqttPacket.mqttPacketStrings.packet
 import typings.node.Buffer
 import typings.node.eventsMod.global.NodeJS.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

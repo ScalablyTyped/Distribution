@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientRecommendationengine.anon.QuotaUser
 import typings.maximMazurokGapiClientRecommendationengine.anon.Resource
 import typings.maximMazurokGapiClientRecommendationengine.anon.UploadType
 import typings.maximMazurokGapiClientRecommendationengine.anon.Uploadprotocol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserEventsResource extends js.Object {
+trait UserEventsResource extends StObject {
   
   /**
     * Writes a single user event from the browser. This uses a GET request to due to browser restriction of POST-ing to a 3rd party domain. This method is used only by the Recommendations

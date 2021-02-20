@@ -1,11 +1,12 @@
 package typings.rcSlider.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClickFocused extends js.Object {
+trait ClickFocused extends StObject {
   
   var clickFocused: Boolean = js.native
 }
@@ -18,21 +19,9 @@ object ClickFocused {
   }
   
   @scala.inline
-  implicit class ClickFocusedOps[Self <: ClickFocused] (val x: Self) extends AnyVal {
+  implicit class ClickFocusedMutableBuilder[Self <: ClickFocused] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClickFocused(value: Boolean): Self = this.set("clickFocused", value.asInstanceOf[js.Any])
+    def setClickFocused(value: Boolean): Self = StObject.set(x, "clickFocused", value.asInstanceOf[js.Any])
   }
 }

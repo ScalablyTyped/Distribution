@@ -2,12 +2,13 @@ package typings.ejWebAll.ej
 
 import typings.ejWebAll.JQuery
 import typings.jquery.JQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WidgetBase extends js.Object {
+trait WidgetBase extends StObject {
   
   def _off(element: JQuery): js.Any = js.native
   def _off(element: JQuery, eventName: String): js.Any = js.native

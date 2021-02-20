@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CurrentInstance extends js.Object {
+trait CurrentInstance extends StObject {
   
   /**
     *  The currency code that AWS used to calculate the costs for this instance.
@@ -71,87 +72,75 @@ object CurrentInstance {
   }
   
   @scala.inline
-  implicit class CurrentInstanceOps[Self <: CurrentInstance] (val x: Self) extends AnyVal {
+  implicit class CurrentInstanceMutableBuilder[Self <: CurrentInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrencyCode(value: GenericString): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceName(value: GenericString): Self = StObject.set(x, "InstanceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: GenericString): Self = this.set("CurrencyCode", value.asInstanceOf[js.Any])
+    def setInstanceNameUndefined: Self = StObject.set(x, "InstanceName", js.undefined)
     
     @scala.inline
-    def deleteCurrencyCode: Self = this.set("CurrencyCode", js.undefined)
+    def setMonthlyCost(value: GenericString): Self = StObject.set(x, "MonthlyCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceName(value: GenericString): Self = this.set("InstanceName", value.asInstanceOf[js.Any])
+    def setMonthlyCostUndefined: Self = StObject.set(x, "MonthlyCost", js.undefined)
     
     @scala.inline
-    def deleteInstanceName: Self = this.set("InstanceName", js.undefined)
+    def setOnDemandHoursInLookbackPeriod(value: GenericString): Self = StObject.set(x, "OnDemandHoursInLookbackPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthlyCost(value: GenericString): Self = this.set("MonthlyCost", value.asInstanceOf[js.Any])
+    def setOnDemandHoursInLookbackPeriodUndefined: Self = StObject.set(x, "OnDemandHoursInLookbackPeriod", js.undefined)
     
     @scala.inline
-    def deleteMonthlyCost: Self = this.set("MonthlyCost", js.undefined)
+    def setReservationCoveredHoursInLookbackPeriod(value: GenericString): Self = StObject.set(x, "ReservationCoveredHoursInLookbackPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDemandHoursInLookbackPeriod(value: GenericString): Self = this.set("OnDemandHoursInLookbackPeriod", value.asInstanceOf[js.Any])
+    def setReservationCoveredHoursInLookbackPeriodUndefined: Self = StObject.set(x, "ReservationCoveredHoursInLookbackPeriod", js.undefined)
     
     @scala.inline
-    def deleteOnDemandHoursInLookbackPeriod: Self = this.set("OnDemandHoursInLookbackPeriod", js.undefined)
+    def setResourceDetails(value: ResourceDetails): Self = StObject.set(x, "ResourceDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservationCoveredHoursInLookbackPeriod(value: GenericString): Self = this.set("ReservationCoveredHoursInLookbackPeriod", value.asInstanceOf[js.Any])
+    def setResourceDetailsUndefined: Self = StObject.set(x, "ResourceDetails", js.undefined)
     
     @scala.inline
-    def deleteReservationCoveredHoursInLookbackPeriod: Self = this.set("ReservationCoveredHoursInLookbackPeriod", js.undefined)
+    def setResourceId(value: GenericString): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceDetails(value: ResourceDetails): Self = this.set("ResourceDetails", value.asInstanceOf[js.Any])
+    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
     @scala.inline
-    def deleteResourceDetails: Self = this.set("ResourceDetails", js.undefined)
+    def setResourceUtilization(value: ResourceUtilization): Self = StObject.set(x, "ResourceUtilization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: GenericString): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    def setResourceUtilizationUndefined: Self = StObject.set(x, "ResourceUtilization", js.undefined)
     
     @scala.inline
-    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
+    def setSavingsPlansCoveredHoursInLookbackPeriod(value: GenericString): Self = StObject.set(x, "SavingsPlansCoveredHoursInLookbackPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceUtilization(value: ResourceUtilization): Self = this.set("ResourceUtilization", value.asInstanceOf[js.Any])
+    def setSavingsPlansCoveredHoursInLookbackPeriodUndefined: Self = StObject.set(x, "SavingsPlansCoveredHoursInLookbackPeriod", js.undefined)
     
     @scala.inline
-    def deleteResourceUtilization: Self = this.set("ResourceUtilization", js.undefined)
+    def setTags(value: TagValuesList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSavingsPlansCoveredHoursInLookbackPeriod(value: GenericString): Self = this.set("SavingsPlansCoveredHoursInLookbackPeriod", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSavingsPlansCoveredHoursInLookbackPeriod: Self = this.set("SavingsPlansCoveredHoursInLookbackPeriod", js.undefined)
+    def setTagsVarargs(value: TagValues*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: TagValues*): Self = this.set("Tags", js.Array(value :_*))
+    def setTotalRunningHoursInLookbackPeriod(value: GenericString): Self = StObject.set(x, "TotalRunningHoursInLookbackPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagValuesList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setTotalRunningHoursInLookbackPeriod(value: GenericString): Self = this.set("TotalRunningHoursInLookbackPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalRunningHoursInLookbackPeriod: Self = this.set("TotalRunningHoursInLookbackPeriod", js.undefined)
+    def setTotalRunningHoursInLookbackPeriodUndefined: Self = StObject.set(x, "TotalRunningHoursInLookbackPeriod", js.undefined)
   }
 }

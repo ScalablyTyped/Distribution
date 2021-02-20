@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QuerySchemaVersionMetadataResponse extends js.Object {
+trait QuerySchemaVersionMetadataResponse extends StObject {
   
   /**
     * A map of a metadata key and associated values.
@@ -31,36 +32,24 @@ object QuerySchemaVersionMetadataResponse {
   }
   
   @scala.inline
-  implicit class QuerySchemaVersionMetadataResponseOps[Self <: QuerySchemaVersionMetadataResponse] (val x: Self) extends AnyVal {
+  implicit class QuerySchemaVersionMetadataResponseMutableBuilder[Self <: QuerySchemaVersionMetadataResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetadataInfoMap(value: MetadataInfoMap): Self = StObject.set(x, "MetadataInfoMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetadataInfoMapUndefined: Self = StObject.set(x, "MetadataInfoMap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: SchemaRegistryTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataInfoMap(value: MetadataInfoMap): Self = this.set("MetadataInfoMap", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMetadataInfoMap: Self = this.set("MetadataInfoMap", js.undefined)
+    def setSchemaVersionId(value: SchemaVersionIdString): Self = StObject.set(x, "SchemaVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: SchemaRegistryTokenString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSchemaVersionId(value: SchemaVersionIdString): Self = this.set("SchemaVersionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemaVersionId: Self = this.set("SchemaVersionId", js.undefined)
+    def setSchemaVersionIdUndefined: Self = StObject.set(x, "SchemaVersionId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Discovered extends js.Object {
+trait Discovered extends StObject {
   
   /** The status of discovery for the resource. */
   var analysisStatus: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object Discovered {
   }
   
   @scala.inline
-  implicit class DiscoveredOps[Self <: Discovered] (val x: Self) extends AnyVal {
+  implicit class DiscoveredMutableBuilder[Self <: Discovered] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalysisStatus(value: String): Self = StObject.set(x, "analysisStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalysisStatusError(value: Status): Self = StObject.set(x, "analysisStatusError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnalysisStatusErrorUndefined: Self = StObject.set(x, "analysisStatusError", js.undefined)
     
     @scala.inline
-    def setAnalysisStatus(value: String): Self = this.set("analysisStatus", value.asInstanceOf[js.Any])
+    def setAnalysisStatusUndefined: Self = StObject.set(x, "analysisStatus", js.undefined)
     
     @scala.inline
-    def deleteAnalysisStatus: Self = this.set("analysisStatus", js.undefined)
+    def setContinuousAnalysis(value: String): Self = StObject.set(x, "continuousAnalysis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalysisStatusError(value: Status): Self = this.set("analysisStatusError", value.asInstanceOf[js.Any])
+    def setContinuousAnalysisUndefined: Self = StObject.set(x, "continuousAnalysis", js.undefined)
     
     @scala.inline
-    def deleteAnalysisStatusError: Self = this.set("analysisStatusError", js.undefined)
+    def setLastAnalysisTime(value: String): Self = StObject.set(x, "lastAnalysisTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuousAnalysis(value: String): Self = this.set("continuousAnalysis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContinuousAnalysis: Self = this.set("continuousAnalysis", js.undefined)
-    
-    @scala.inline
-    def setLastAnalysisTime(value: String): Self = this.set("lastAnalysisTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastAnalysisTime: Self = this.set("lastAnalysisTime", js.undefined)
+    def setLastAnalysisTimeUndefined: Self = StObject.set(x, "lastAnalysisTime", js.undefined)
   }
 }

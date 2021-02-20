@@ -1,11 +1,12 @@
 package typings.awsSdk.licensemanagerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManagedResourceSummary extends js.Object {
+trait ManagedResourceSummary extends StObject {
   
   /**
     * Number of resources associated with licenses.
@@ -26,30 +27,18 @@ object ManagedResourceSummary {
   }
   
   @scala.inline
-  implicit class ManagedResourceSummaryOps[Self <: ManagedResourceSummary] (val x: Self) extends AnyVal {
+  implicit class ManagedResourceSummaryMutableBuilder[Self <: ManagedResourceSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociationCount(value: BoxLong): Self = StObject.set(x, "AssociationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociationCountUndefined: Self = StObject.set(x, "AssociationCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationCount(value: BoxLong): Self = this.set("AssociationCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssociationCount: Self = this.set("AssociationCount", js.undefined)
-    
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.flexmonster.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContextMenuItem extends js.Object {
+trait ContextMenuItem extends StObject {
   
   var `class`: js.UndefOr[String] = js.native
   
@@ -26,54 +27,42 @@ object ContextMenuItem {
   }
   
   @scala.inline
-  implicit class ContextMenuItemOps[Self <: ContextMenuItem] (val x: Self) extends AnyVal {
+  implicit class ContextMenuItemMutableBuilder[Self <: ContextMenuItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHandler(value: js.Function0[Unit] | String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: String): Self = this.set("class", value.asInstanceOf[js.Any])
+    def setHandlerFunction0(value: () => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteClass: Self = this.set("class", js.undefined)
+    def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
     @scala.inline
-    def setHandlerFunction0(value: () => Unit): Self = this.set("handler", js.Any.fromFunction0(value))
+    def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandler(value: js.Function0[Unit] | String): Self = this.set("handler", value.asInstanceOf[js.Any])
+    def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
     
     @scala.inline
-    def deleteHandler: Self = this.set("handler", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSelected(value: Boolean): Self = this.set("isSelected", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteIsSelected: Self = this.set("isSelected", js.undefined)
+    def setSubmenu(value: js.Array[ContextMenuItem]): Self = StObject.set(x, "submenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setSubmenuUndefined: Self = StObject.set(x, "submenu", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
-    
-    @scala.inline
-    def setSubmenuVarargs(value: ContextMenuItem*): Self = this.set("submenu", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubmenu(value: js.Array[ContextMenuItem]): Self = this.set("submenu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubmenu: Self = this.set("submenu", js.undefined)
+    def setSubmenuVarargs(value: ContextMenuItem*): Self = StObject.set(x, "submenu", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransitGatewayMulticastDomainAssociations extends js.Object {
+trait TransitGatewayMulticastDomainAssociations extends StObject {
   
   /**
     * The ID of the resource.
@@ -41,51 +42,39 @@ object TransitGatewayMulticastDomainAssociations {
   }
   
   @scala.inline
-  implicit class TransitGatewayMulticastDomainAssociationsOps[Self <: TransitGatewayMulticastDomainAssociations] (val x: Self) extends AnyVal {
+  implicit class TransitGatewayMulticastDomainAssociationsMutableBuilder[Self <: TransitGatewayMulticastDomainAssociations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceId(value: String): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceType(value: TransitGatewayAttachmentResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: String): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
     @scala.inline
-    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
+    def setSubnets(value: SubnetAssociationList): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: TransitGatewayAttachmentResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
     
     @scala.inline
-    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    def setSubnetsVarargs(value: SubnetAssociation*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
     
     @scala.inline
-    def setSubnetsVarargs(value: SubnetAssociation*): Self = this.set("Subnets", js.Array(value :_*))
+    def setTransitGatewayAttachmentId(value: String): Self = StObject.set(x, "TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnets(value: SubnetAssociationList): Self = this.set("Subnets", value.asInstanceOf[js.Any])
+    def setTransitGatewayAttachmentIdUndefined: Self = StObject.set(x, "TransitGatewayAttachmentId", js.undefined)
     
     @scala.inline
-    def deleteSubnets: Self = this.set("Subnets", js.undefined)
+    def setTransitGatewayMulticastDomainId(value: String): Self = StObject.set(x, "TransitGatewayMulticastDomainId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitGatewayAttachmentId(value: String): Self = this.set("TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitGatewayAttachmentId: Self = this.set("TransitGatewayAttachmentId", js.undefined)
-    
-    @scala.inline
-    def setTransitGatewayMulticastDomainId(value: String): Self = this.set("TransitGatewayMulticastDomainId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitGatewayMulticastDomainId: Self = this.set("TransitGatewayMulticastDomainId", js.undefined)
+    def setTransitGatewayMulticastDomainIdUndefined: Self = StObject.set(x, "TransitGatewayMulticastDomainId", js.undefined)
   }
 }

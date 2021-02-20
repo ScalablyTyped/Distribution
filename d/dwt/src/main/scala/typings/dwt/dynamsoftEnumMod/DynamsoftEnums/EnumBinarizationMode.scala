@@ -1,31 +1,28 @@
 package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EnumBinarizationMode extends js.Object
+sealed trait EnumBinarizationMode extends StObject
 @JSImport("dwt/Dynamsoft.Enum", "DynamsoftEnums.EnumBinarizationMode")
 @js.native
-object EnumBinarizationMode extends js.Object {
+object EnumBinarizationMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumBinarizationMode with Double] = js.native
   
   @js.native
   sealed trait BM_AUTO extends EnumBinarizationMode
-  /* 1 */ @js.native
-  object BM_AUTO extends TopLevel[BM_AUTO with Double]
+  /* 1 */ val BM_AUTO: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumBinarizationMode.BM_AUTO with Double = js.native
   
   @js.native
   sealed trait BM_LOCAL_BLOCK extends EnumBinarizationMode
-  /* 2 */ @js.native
-  object BM_LOCAL_BLOCK extends TopLevel[BM_LOCAL_BLOCK with Double]
+  /* 2 */ val BM_LOCAL_BLOCK: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumBinarizationMode.BM_LOCAL_BLOCK with Double = js.native
   
   @js.native
   sealed trait BM_SKIP extends EnumBinarizationMode
-  /* 0 */ @js.native
-  object BM_SKIP extends TopLevel[BM_SKIP with Double]
+  /* 0 */ val BM_SKIP: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumBinarizationMode.BM_SKIP with Double = js.native
 }

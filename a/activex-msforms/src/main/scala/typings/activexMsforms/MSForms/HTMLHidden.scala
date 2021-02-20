@@ -1,11 +1,12 @@
 package typings.activexMsforms.MSForms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLHidden extends js.Object {
+trait HTMLHidden extends StObject {
   
   var HTMLName: String = js.native
   
@@ -26,30 +27,18 @@ object HTMLHidden {
   }
   
   @scala.inline
-  implicit class HTMLHiddenOps[Self <: HTMLHidden] (val x: Self) extends AnyVal {
+  implicit class HTMLHiddenMutableBuilder[Self <: HTMLHidden] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHTMLType(value: String): Self = StObject.set(x, "HTMLType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMSFormsDotHTMLHidden_typekey(value: HTMLHidden): Self = StObject.set(x, "MSForms.HTMLHidden_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHTMLName(value: String): Self = this.set("HTMLName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHTMLType(value: String): Self = this.set("HTMLType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMSFormsDotHTMLHidden_typekey(value: HTMLHidden): Self = this.set("MSForms.HTMLHidden_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

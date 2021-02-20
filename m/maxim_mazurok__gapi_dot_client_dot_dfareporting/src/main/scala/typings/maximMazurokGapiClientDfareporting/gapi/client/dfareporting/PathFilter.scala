@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PathFilter extends js.Object {
+trait PathFilter extends StObject {
   
   /** Event filters in path report. */
   var eventFilters: js.UndefOr[js.Array[EventFilter]] = js.native
@@ -28,39 +29,27 @@ object PathFilter {
   }
   
   @scala.inline
-  implicit class PathFilterOps[Self <: PathFilter] (val x: Self) extends AnyVal {
+  implicit class PathFilterMutableBuilder[Self <: PathFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventFilters(value: js.Array[EventFilter]): Self = StObject.set(x, "eventFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventFiltersUndefined: Self = StObject.set(x, "eventFilters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventFiltersVarargs(value: EventFilter*): Self = StObject.set(x, "eventFilters", js.Array(value :_*))
     
     @scala.inline
-    def setEventFiltersVarargs(value: EventFilter*): Self = this.set("eventFilters", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventFilters(value: js.Array[EventFilter]): Self = this.set("eventFilters", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteEventFilters: Self = this.set("eventFilters", js.undefined)
+    def setPathMatchPosition(value: String): Self = StObject.set(x, "pathMatchPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setPathMatchPosition(value: String): Self = this.set("pathMatchPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePathMatchPosition: Self = this.set("pathMatchPosition", js.undefined)
+    def setPathMatchPositionUndefined: Self = StObject.set(x, "pathMatchPosition", js.undefined)
   }
 }

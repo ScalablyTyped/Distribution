@@ -1,11 +1,12 @@
 package typings.w3cImageCapture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PhotoCapabilities extends js.Object {
+trait PhotoCapabilities extends StObject {
   
   val fillLightMode: js.Array[FillLightMode] = js.native
   
@@ -29,33 +30,21 @@ object PhotoCapabilities {
   }
   
   @scala.inline
-  implicit class PhotoCapabilitiesOps[Self <: PhotoCapabilities] (val x: Self) extends AnyVal {
+  implicit class PhotoCapabilitiesMutableBuilder[Self <: PhotoCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFillLightMode(value: js.Array[FillLightMode]): Self = StObject.set(x, "fillLightMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFillLightModeVarargs(value: FillLightMode*): Self = StObject.set(x, "fillLightMode", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageHeight(value: MediaSettingsRange): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillLightModeVarargs(value: FillLightMode*): Self = this.set("fillLightMode", js.Array(value :_*))
+    def setImageWidth(value: MediaSettingsRange): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillLightMode(value: js.Array[FillLightMode]): Self = this.set("fillLightMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImageHeight(value: MediaSettingsRange): Self = this.set("imageHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImageWidth(value: MediaSettingsRange): Self = this.set("imageWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRedEyeReduction(value: RedEyeReduction): Self = this.set("redEyeReduction", value.asInstanceOf[js.Any])
+    def setRedEyeReduction(value: RedEyeReduction): Self = StObject.set(x, "redEyeReduction", value.asInstanceOf[js.Any])
   }
 }

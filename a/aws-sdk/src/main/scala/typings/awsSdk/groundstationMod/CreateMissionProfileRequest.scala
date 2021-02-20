@@ -1,11 +1,12 @@
 package typings.awsSdk.groundstationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateMissionProfileRequest extends js.Object {
+trait CreateMissionProfileRequest extends StObject {
   
   /**
     * Amount of time after a contact ends that you’d like to receive a CloudWatch event indicating the pass has finished.
@@ -56,51 +57,39 @@ object CreateMissionProfileRequest {
   }
   
   @scala.inline
-  implicit class CreateMissionProfileRequestOps[Self <: CreateMissionProfileRequest] (val x: Self) extends AnyVal {
+  implicit class CreateMissionProfileRequestMutableBuilder[Self <: CreateMissionProfileRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContactPostPassDurationSeconds(value: DurationInSeconds): Self = StObject.set(x, "contactPostPassDurationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactPostPassDurationSecondsUndefined: Self = StObject.set(x, "contactPostPassDurationSeconds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContactPrePassDurationSeconds(value: DurationInSeconds): Self = StObject.set(x, "contactPrePassDurationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataflowEdgesVarargs(value: DataflowEdge*): Self = this.set("dataflowEdges", js.Array(value :_*))
+    def setContactPrePassDurationSecondsUndefined: Self = StObject.set(x, "contactPrePassDurationSeconds", js.undefined)
     
     @scala.inline
-    def setDataflowEdges(value: DataflowEdgeList): Self = this.set("dataflowEdges", value.asInstanceOf[js.Any])
+    def setDataflowEdges(value: DataflowEdgeList): Self = StObject.set(x, "dataflowEdges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumViableContactDurationSeconds(value: DurationInSeconds): Self = this.set("minimumViableContactDurationSeconds", value.asInstanceOf[js.Any])
+    def setDataflowEdgesVarargs(value: DataflowEdge*): Self = StObject.set(x, "dataflowEdges", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: SafeName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setMinimumViableContactDurationSeconds(value: DurationInSeconds): Self = StObject.set(x, "minimumViableContactDurationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackingConfigArn(value: ConfigArn): Self = this.set("trackingConfigArn", value.asInstanceOf[js.Any])
+    def setName(value: SafeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactPostPassDurationSeconds(value: DurationInSeconds): Self = this.set("contactPostPassDurationSeconds", value.asInstanceOf[js.Any])
+    def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContactPostPassDurationSeconds: Self = this.set("contactPostPassDurationSeconds", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def setContactPrePassDurationSeconds(value: DurationInSeconds): Self = this.set("contactPrePassDurationSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContactPrePassDurationSeconds: Self = this.set("contactPrePassDurationSeconds", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagsMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTrackingConfigArn(value: ConfigArn): Self = StObject.set(x, "trackingConfigArn", value.asInstanceOf[js.Any])
   }
 }

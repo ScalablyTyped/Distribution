@@ -1,11 +1,12 @@
 package typings.awsSdk.stepfunctionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoggingConfiguration extends js.Object {
+trait LoggingConfiguration extends StObject {
   
   /**
     * An array of objects that describes where your execution history events will be logged. Limited to size 1. Required, if your log level is not set to OFF.
@@ -31,39 +32,27 @@ object LoggingConfiguration {
   }
   
   @scala.inline
-  implicit class LoggingConfigurationOps[Self <: LoggingConfiguration] (val x: Self) extends AnyVal {
+  implicit class LoggingConfigurationMutableBuilder[Self <: LoggingConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinations(value: LogDestinationList): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationsVarargs(value: LogDestination*): Self = StObject.set(x, "destinations", js.Array(value :_*))
     
     @scala.inline
-    def setDestinationsVarargs(value: LogDestination*): Self = this.set("destinations", js.Array(value :_*))
+    def setIncludeExecutionData(value: IncludeExecutionData): Self = StObject.set(x, "includeExecutionData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinations(value: LogDestinationList): Self = this.set("destinations", value.asInstanceOf[js.Any])
+    def setIncludeExecutionDataUndefined: Self = StObject.set(x, "includeExecutionData", js.undefined)
     
     @scala.inline
-    def deleteDestinations: Self = this.set("destinations", js.undefined)
+    def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeExecutionData(value: IncludeExecutionData): Self = this.set("includeExecutionData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeExecutionData: Self = this.set("includeExecutionData", js.undefined)
-    
-    @scala.inline
-    def setLevel(value: LogLevel): Self = this.set("level", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
   }
 }

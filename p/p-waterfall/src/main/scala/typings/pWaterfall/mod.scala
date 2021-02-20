@@ -1,15 +1,18 @@
 package typings.pWaterfall
 
 import typings.std.Iterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("p-waterfall", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("p-waterfall", JSImport.Namespace)
+  @js.native
   def apply(tasks: Iterable[Task[_, _]]): js.Promise[_] = js.native
+  @JSImport("p-waterfall", JSImport.Namespace)
+  @js.native
   def apply(tasks: Iterable[Task[_, _]], initialValue: js.Any): js.Promise[_] = js.native
   /**
   	Run promise-returning & async functions in series, each passing its result to the next.
@@ -29,16 +32,28 @@ object mod extends js.Object {
   	})();
   	```
   	*/
+  @JSImport("p-waterfall", JSImport.Namespace)
+  @js.native
   def apply[ReturnType](tasks: js.Array[InitialTask[ReturnType]]): js.Promise[ReturnType] = js.native
+  @JSImport("p-waterfall", JSImport.Namespace)
+  @js.native
   def apply[ValueType1, ReturnType](tasks: js.Array[Task[ValueType1, ReturnType]], initialValue: ValueType1): js.Promise[ReturnType] = js.native
+  @JSImport("p-waterfall", JSImport.Namespace)
+  @js.native
   def apply[ValueType1, ReturnType](tasks: js.Tuple2[InitialTask[ValueType1], Task[ValueType1, ReturnType]]): js.Promise[ReturnType] = js.native
+  @JSImport("p-waterfall", JSImport.Namespace)
+  @js.native
   def apply[ValueType1, ValueType2, ReturnType](
     tasks: js.Tuple2[Task[ValueType1, ValueType2], Task[ValueType2, ReturnType]],
     initialValue: ValueType1
   ): js.Promise[ReturnType] = js.native
+  @JSImport("p-waterfall", JSImport.Namespace)
+  @js.native
   def apply[ValueType1, ValueType2, ReturnType](
     tasks: js.Tuple3[InitialTask[ValueType1], Task[ValueType1, ValueType2], Task[ValueType2, ReturnType]]
   ): js.Promise[ReturnType] = js.native
+  @JSImport("p-waterfall", JSImport.Namespace)
+  @js.native
   def apply[ValueType1, ValueType2, ValueType3, ReturnType](
     tasks: js.Tuple3[
       Task[ValueType1, ValueType2], 
@@ -47,6 +62,8 @@ object mod extends js.Object {
     ],
     initialValue: ValueType1
   ): js.Promise[ReturnType] = js.native
+  @JSImport("p-waterfall", JSImport.Namespace)
+  @js.native
   def apply[ValueType1, ValueType2, ValueType3, ReturnType](
     tasks: js.Tuple4[
       InitialTask[ValueType1], 
@@ -55,6 +72,8 @@ object mod extends js.Object {
       Task[ValueType3, ReturnType]
     ]
   ): js.Promise[ReturnType] = js.native
+  @JSImport("p-waterfall", JSImport.Namespace)
+  @js.native
   def apply[ValueType1, ValueType2, ValueType3, ValueType4, ReturnType](
     tasks: js.Tuple4[
       Task[ValueType1, ValueType2], 
@@ -64,6 +83,8 @@ object mod extends js.Object {
     ],
     initialValue: ValueType1
   ): js.Promise[ReturnType] = js.native
+  @JSImport("p-waterfall", JSImport.Namespace)
+  @js.native
   def apply[ValueType1, ValueType2, ValueType3, ValueType4, ReturnType](
     tasks: js.Tuple5[
       InitialTask[ValueType1], 
@@ -73,6 +94,8 @@ object mod extends js.Object {
       Task[ValueType4, ReturnType]
     ]
   ): js.Promise[ReturnType] = js.native
+  @JSImport("p-waterfall", JSImport.Namespace)
+  @js.native
   def apply[ValueType1, ValueType2, ValueType3, ValueType4, ValueType5, ReturnType](
     tasks: js.Tuple5[
       Task[ValueType1, ValueType2], 
@@ -83,6 +106,8 @@ object mod extends js.Object {
     ],
     initialValue: ValueType1
   ): js.Promise[ReturnType] = js.native
+  @JSImport("p-waterfall", JSImport.Namespace)
+  @js.native
   def apply[ValueType1, ValueType2, ValueType3, ValueType4, ValueType5, ReturnType](
     tasks: js.Tuple6[
       InitialTask[ValueType1], 
@@ -93,6 +118,8 @@ object mod extends js.Object {
       Task[ValueType5, ReturnType]
     ]
   ): js.Promise[ReturnType] = js.native
+  @JSImport("p-waterfall", JSImport.Namespace)
+  @js.native
   def apply[ValueType1, ValueType2, ValueType3, ValueType4, ValueType5, ValueType6, ReturnType](
     tasks: js.Tuple6[
       Task[ValueType1, ValueType2], 
@@ -104,6 +131,8 @@ object mod extends js.Object {
     ],
     initialValue: ValueType1
   ): js.Promise[ReturnType] = js.native
+  @JSImport("p-waterfall", JSImport.Namespace)
+  @js.native
   def apply[ValueType1, ValueType2, ValueType3, ValueType4, ValueType5, ValueType6, ReturnType](
     tasks: js.Tuple7[
       InitialTask[ValueType1], 
@@ -115,6 +144,8 @@ object mod extends js.Object {
       Task[ValueType6, ReturnType]
     ]
   ): js.Promise[ReturnType] = js.native
+  @JSImport("p-waterfall", JSImport.Namespace)
+  @js.native
   def apply[ValueType1, ValueType2, ValueType3, ValueType4, ValueType5, ValueType6, ValueType7, ReturnType](
     tasks: js.Tuple7[
       Task[ValueType1, ValueType2], 
@@ -127,6 +158,8 @@ object mod extends js.Object {
     ],
     initialValue: ValueType1
   ): js.Promise[ReturnType] = js.native
+  @JSImport("p-waterfall", JSImport.Namespace)
+  @js.native
   def apply[ValueType1, ValueType2, ValueType3, ValueType4, ValueType5, ValueType6, ValueType7, ReturnType](
     tasks: js.Tuple8[
       InitialTask[ValueType1], 
@@ -139,6 +172,8 @@ object mod extends js.Object {
       Task[ValueType7, ReturnType]
     ]
   ): js.Promise[ReturnType] = js.native
+  @JSImport("p-waterfall", JSImport.Namespace)
+  @js.native
   def apply[ValueType1, ValueType2, ValueType3, ValueType4, ValueType5, ValueType6, ValueType7, ValueType8, ReturnType](
     tasks: js.Tuple8[
       Task[ValueType1, ValueType2], 
@@ -153,8 +188,16 @@ object mod extends js.Object {
     initialValue: ValueType1
   ): js.Promise[ReturnType] = js.native
   
+  @JSImport("p-waterfall", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   // TODO: Remove this for the next major release
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pWaterfall */ js.Any = js.native
+  @JSImport("p-waterfall", "default")
+  @js.native
+  def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pWaterfall */ js.Any = js.native
+  @scala.inline
+  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pWaterfall */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   type InitialTask[ReturnType] = js.Function0[ReturnType | js.Thenable[ReturnType]]
   

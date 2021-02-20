@@ -1,11 +1,12 @@
 package typings.awsSdk.groundstationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UplinkSpectrumConfig extends js.Object {
+trait UplinkSpectrumConfig extends StObject {
   
   /**
     * Center frequency of an uplink spectral Config. Valid values are between 2025 to 2120 MHz.
@@ -26,27 +27,15 @@ object UplinkSpectrumConfig {
   }
   
   @scala.inline
-  implicit class UplinkSpectrumConfigOps[Self <: UplinkSpectrumConfig] (val x: Self) extends AnyVal {
+  implicit class UplinkSpectrumConfigMutableBuilder[Self <: UplinkSpectrumConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenterFrequency(value: Frequency): Self = StObject.set(x, "centerFrequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPolarization(value: Polarization): Self = StObject.set(x, "polarization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCenterFrequency(value: Frequency): Self = this.set("centerFrequency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPolarization(value: Polarization): Self = this.set("polarization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolarization: Self = this.set("polarization", js.undefined)
+    def setPolarizationUndefined: Self = StObject.set(x, "polarization", js.undefined)
   }
 }

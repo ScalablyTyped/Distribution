@@ -1,5 +1,6 @@
 package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://blog.jasonantman.com/2014/07/how-yum-and-rpm-compare-versions/
   */
 @js.native
-trait SchemaVersion extends js.Object {
+trait SchemaVersion extends StObject {
   
   /**
     * Used to correct mistakes in the version numbering scheme.
@@ -44,42 +45,30 @@ object SchemaVersion {
   }
   
   @scala.inline
-  implicit class SchemaVersionOps[Self <: SchemaVersion] (val x: Self) extends AnyVal {
+  implicit class SchemaVersionMutableBuilder[Self <: SchemaVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEpoch(value: Double): Self = StObject.set(x, "epoch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEpochUndefined: Self = StObject.set(x, "epoch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEpoch(value: Double): Self = this.set("epoch", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteEpoch: Self = this.set("epoch", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setRevision(value: String): Self = this.set("revision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevision: Self = this.set("revision", js.undefined)
+    def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
   }
 }

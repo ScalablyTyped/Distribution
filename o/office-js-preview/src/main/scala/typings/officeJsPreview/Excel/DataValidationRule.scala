@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.8]
   */
 @js.native
-trait DataValidationRule extends js.Object {
+trait DataValidationRule extends StObject {
   
   /**
     *
@@ -78,60 +79,48 @@ object DataValidationRule {
   }
   
   @scala.inline
-  implicit class DataValidationRuleOps[Self <: DataValidationRule] (val x: Self) extends AnyVal {
+  implicit class DataValidationRuleMutableBuilder[Self <: DataValidationRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustom(value: CustomDataValidation): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDate(value: DateTimeDataValidation): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom(value: CustomDataValidation): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def deleteCustom: Self = this.set("custom", js.undefined)
+    def setDecimal(value: BasicDataValidation): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: DateTimeDataValidation): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setList(value: ListDataValidation): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimal(value: BasicDataValidation): Self = this.set("decimal", value.asInstanceOf[js.Any])
+    def setListUndefined: Self = StObject.set(x, "list", js.undefined)
     
     @scala.inline
-    def deleteDecimal: Self = this.set("decimal", js.undefined)
+    def setTextLength(value: BasicDataValidation): Self = StObject.set(x, "textLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setList(value: ListDataValidation): Self = this.set("list", value.asInstanceOf[js.Any])
+    def setTextLengthUndefined: Self = StObject.set(x, "textLength", js.undefined)
     
     @scala.inline
-    def deleteList: Self = this.set("list", js.undefined)
+    def setTime(value: DateTimeDataValidation): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextLength(value: BasicDataValidation): Self = this.set("textLength", value.asInstanceOf[js.Any])
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
     @scala.inline
-    def deleteTextLength: Self = this.set("textLength", js.undefined)
+    def setWholeNumber(value: BasicDataValidation): Self = StObject.set(x, "wholeNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime(value: DateTimeDataValidation): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
-    
-    @scala.inline
-    def setWholeNumber(value: BasicDataValidation): Self = this.set("wholeNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWholeNumber: Self = this.set("wholeNumber", js.undefined)
+    def setWholeNumberUndefined: Self = StObject.set(x, "wholeNumber", js.undefined)
   }
 }

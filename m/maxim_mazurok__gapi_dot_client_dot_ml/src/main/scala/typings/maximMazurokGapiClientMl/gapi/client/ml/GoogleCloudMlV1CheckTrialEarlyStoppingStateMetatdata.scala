@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata extends js.Object {
+trait GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata extends StObject {
   
   /** The time at which the operation was submitted. */
   var createTime: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata {
   }
   
   @scala.inline
-  implicit class GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdataOps[Self <: GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdataMutableBuilder[Self <: GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStudy(value: String): Self = StObject.set(x, "study", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setStudyUndefined: Self = StObject.set(x, "study", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setTrial(value: String): Self = StObject.set(x, "trial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStudy(value: String): Self = this.set("study", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStudy: Self = this.set("study", js.undefined)
-    
-    @scala.inline
-    def setTrial(value: String): Self = this.set("trial", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrial: Self = this.set("trial", js.undefined)
+    def setTrialUndefined: Self = StObject.set(x, "trial", js.undefined)
   }
 }

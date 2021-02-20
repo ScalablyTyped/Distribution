@@ -2,13 +2,14 @@ package typings.rbx.anon
 
 import typings.react.mod.ReactNode
 import typings.std.Document
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<rbx.rbx/components/modal/modal-container.ModalContainerProps, 'active' | 'document' | 'children' | 'clipped' | 'closeOnBlur' | 'closeOnEsc' | 'onClose' | 'containerClassName'> */
 @js.native
-trait PickModalContainerPropsac extends js.Object {
+trait PickModalContainerPropsac extends StObject {
   
   var active: js.UndefOr[Boolean] = js.native
   
@@ -35,66 +36,54 @@ object PickModalContainerPropsac {
   }
   
   @scala.inline
-  implicit class PickModalContainerPropsacOps[Self <: PickModalContainerPropsac] (val x: Self) extends AnyVal {
+  implicit class PickModalContainerPropsacMutableBuilder[Self <: PickModalContainerPropsac] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setClipped(value: Boolean): Self = StObject.set(x, "clipped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setClippedUndefined: Self = StObject.set(x, "clipped", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setCloseOnBlur(value: Boolean): Self = StObject.set(x, "closeOnBlur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClipped(value: Boolean): Self = this.set("clipped", value.asInstanceOf[js.Any])
+    def setCloseOnBlurUndefined: Self = StObject.set(x, "closeOnBlur", js.undefined)
     
     @scala.inline
-    def deleteClipped: Self = this.set("clipped", js.undefined)
+    def setCloseOnEsc(value: Boolean): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseOnBlur(value: Boolean): Self = this.set("closeOnBlur", value.asInstanceOf[js.Any])
+    def setCloseOnEscUndefined: Self = StObject.set(x, "closeOnEsc", js.undefined)
     
     @scala.inline
-    def deleteCloseOnBlur: Self = this.set("closeOnBlur", js.undefined)
+    def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseOnEsc(value: Boolean): Self = this.set("closeOnEsc", value.asInstanceOf[js.Any])
+    def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
     
     @scala.inline
-    def deleteCloseOnEsc: Self = this.set("closeOnEsc", js.undefined)
+    def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerClassName(value: String): Self = this.set("containerClassName", value.asInstanceOf[js.Any])
+    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
     @scala.inline
-    def deleteContainerClassName: Self = this.set("containerClassName", js.undefined)
+    def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDocument(value: Document): Self = this.set("document", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocument: Self = this.set("document", js.undefined)
-    
-    @scala.inline
-    def setOnClose(value: () => Unit): Self = this.set("onClose", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
   }
 }

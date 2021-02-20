@@ -20,815 +20,813 @@ import typings.std.WebGLActiveInfo
 import typings.std.WebGLBuffer
 import typings.std.WebGLProgram
 import typings.std.WebGLQuery
-import typings.std.WebGLRenderingContextBase
-import typings.std.WebGLRenderingContextOverloads
+import typings.std.WebGLRenderingContext
 import typings.std.WebGLSampler
 import typings.std.WebGLSync
 import typings.std.WebGLTexture
 import typings.std.WebGLTransformFeedback
 import typings.std.WebGLUniformLocation
 import typings.std.WebGLVertexArrayObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebGL2RenderingContext
-  extends WebGLRenderingContextBase
-     with WebGLRenderingContextOverloads {
+trait WebGL2RenderingContext extends WebGLRenderingContext {
   
-                 // 0x8A34
+  // 0x8A34
   val ACTIVE_UNIFORM_BLOCKS: Double = js.native
   
-                                        // 0x9119
+  // 0x9119
   val ALREADY_SIGNALED: Double = js.native
   
-                     // 0x88FE
+  // 0x88FE
   val ANY_SAMPLES_PASSED: Double = js.native
   
-                              // 0x8C2F
+  // 0x8C2F
   val ANY_SAMPLES_PASSED_CONSERVATIVE: Double = js.native
   
-                                // 0x0D04
+  // 0x0D04
   val COLOR: Double = js.native
   
-                           // 0x8CDF
+  // 0x8CDF
   val COLOR_ATTACHMENT1: Double = js.native
   
-                               // 0x8CE9
+  // 0x8CE9
   val COLOR_ATTACHMENT10: Double = js.native
   
-                              // 0x8CEA
+  // 0x8CEA
   val COLOR_ATTACHMENT11: Double = js.native
   
-                              // 0x8CEB
+  // 0x8CEB
   val COLOR_ATTACHMENT12: Double = js.native
   
-                              // 0x8CEC
+  // 0x8CEC
   val COLOR_ATTACHMENT13: Double = js.native
   
-                              // 0x8CED
+  // 0x8CED
   val COLOR_ATTACHMENT14: Double = js.native
   
-                              // 0x8CEE
+  // 0x8CEE
   val COLOR_ATTACHMENT15: Double = js.native
   
-                               // 0x8CE1
+  // 0x8CE1
   val COLOR_ATTACHMENT2: Double = js.native
   
-                               // 0x8CE2
+  // 0x8CE2
   val COLOR_ATTACHMENT3: Double = js.native
   
-                               // 0x8CE3
+  // 0x8CE3
   val COLOR_ATTACHMENT4: Double = js.native
   
-                               // 0x8CE4
+  // 0x8CE4
   val COLOR_ATTACHMENT5: Double = js.native
   
-                               // 0x8CE5
+  // 0x8CE5
   val COLOR_ATTACHMENT6: Double = js.native
   
-                               // 0x8CE6
+  // 0x8CE6
   val COLOR_ATTACHMENT7: Double = js.native
   
-                               // 0x8CE7
+  // 0x8CE7
   val COLOR_ATTACHMENT8: Double = js.native
   
-                               // 0x8CE8
+  // 0x8CE8
   val COLOR_ATTACHMENT9: Double = js.native
   
-                                    // 0x8C43
+  // 0x8C43
   val COMPARE_REF_TO_TEXTURE: Double = js.native
   
-                                 // 0x911B
+  // 0x911B
   val CONDITION_SATISFIED: Double = js.native
   
-                               // 0x8F9C
+  // 0x8F9C
   val COPY_READ_BUFFER: Double = js.native
   
-                               // 0x8F37
+  // 0x8F37
   val COPY_READ_BUFFER_BINDING: Double = js.native
   
-                                // 0x8F36
+  // 0x8F36
   val COPY_WRITE_BUFFER: Double = js.native
   
-                        // 0x8F36 /* Same as COPY_READ_BUFFER */
+  // 0x8F36 /* Same as COPY_READ_BUFFER */
   val COPY_WRITE_BUFFER_BINDING: Double = js.native
   
-                            // 0x884D
+  // 0x884D
   val CURRENT_QUERY: Double = js.native
   
-                                           // 0x1800
+  // 0x1800
   val DEPTH: Double = js.native
   
-                               // 0x84FA
+  // 0x84FA
   val DEPTH24_STENCIL8: Double = js.native
   
-                              // 0x8CAC
+  // 0x8CAC
   val DEPTH32F_STENCIL8: Double = js.native
   
-                                             // 0x8008
+  // 0x8008
   val DEPTH_COMPONENT24: Double = js.native
   
-                   // 0x8DD7
+  // 0x8DD7
   val DEPTH_COMPONENT32F: Double = js.native
   
-                                // 0x8824
+  // 0x8824
   val DRAW_BUFFER0: Double = js.native
   
-                                    // 0x8825
+  // 0x8825
   val DRAW_BUFFER1: Double = js.native
   
-                                    // 0x882E
+  // 0x882E
   val DRAW_BUFFER10: Double = js.native
   
-                                   // 0x882F
+  // 0x882F
   val DRAW_BUFFER11: Double = js.native
   
-                                   // 0x8830
+  // 0x8830
   val DRAW_BUFFER12: Double = js.native
   
-                                   // 0x8831
+  // 0x8831
   val DRAW_BUFFER13: Double = js.native
   
-                                   // 0x8832
+  // 0x8832
   val DRAW_BUFFER14: Double = js.native
   
-                                   // 0x8833
+  // 0x8833
   val DRAW_BUFFER15: Double = js.native
   
-                                    // 0x8826
+  // 0x8826
   val DRAW_BUFFER2: Double = js.native
   
-                                    // 0x8827
+  // 0x8827
   val DRAW_BUFFER3: Double = js.native
   
-                                    // 0x8828
+  // 0x8828
   val DRAW_BUFFER4: Double = js.native
   
-                                    // 0x8829
+  // 0x8829
   val DRAW_BUFFER5: Double = js.native
   
-                                    // 0x882A
+  // 0x882A
   val DRAW_BUFFER6: Double = js.native
   
-                                    // 0x882B
+  // 0x882B
   val DRAW_BUFFER7: Double = js.native
   
-                                    // 0x882C
+  // 0x882C
   val DRAW_BUFFER8: Double = js.native
   
-                                    // 0x882D
+  // 0x882D
   val DRAW_BUFFER9: Double = js.native
   
-                                // 0x8CA8
+  // 0x8CA8
   val DRAW_FRAMEBUFFER: Double = js.native
   
-                             // 0x8C17
+  // 0x8C17
   val DRAW_FRAMEBUFFER_BINDING: Double = js.native
   
-                                    // 0x88E9
+  // 0x88E9
   val DYNAMIC_COPY: Double = js.native
   
-                                     // 0x88E6
+  // 0x88E6
   val DYNAMIC_READ: Double = js.native
   
-                               // 0x8CAD
+  // 0x8CAD
   val FLOAT_32_UNSIGNED_INT_24_8_REV: Double = js.native
   
-                     // 0x88EF
+  // 0x88EF
   val FLOAT_MAT2x3: Double = js.native
   
-                                    // 0x8B65
+  // 0x8B65
   val FLOAT_MAT2x4: Double = js.native
   
-                                    // 0x8B66
+  // 0x8B66
   val FLOAT_MAT3x2: Double = js.native
   
-                                    // 0x8B67
+  // 0x8B67
   val FLOAT_MAT3x4: Double = js.native
   
-                                    // 0x8B68
+  // 0x8B68
   val FLOAT_MAT4x2: Double = js.native
   
-                                    // 0x8B69
+  // 0x8B69
   val FLOAT_MAT4x3: Double = js.native
   
-                               // 0x8B62
+  // 0x8B62
   val FRAGMENT_SHADER_DERIVATIVE_HINT: Double = js.native
   
-                // 0x8214
+  // 0x8214
   val FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE: Double = js.native
   
-               // 0x8213
+  // 0x8213
   val FRAMEBUFFER_ATTACHMENT_BLUE_SIZE: Double = js.native
   
-                  // 0x8DAD
+  // 0x8DAD
   val FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING: Double = js.native
   
-           // 0x8210
+  // 0x8210
   val FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE: Double = js.native
   
-               // 0x8215
+  // 0x8215
   val FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE: Double = js.native
   
-                 // 0x8212
+  // 0x8212
   val FRAMEBUFFER_ATTACHMENT_GREEN_SIZE: Double = js.native
   
-           // 0x8211
+  // 0x8211
   val FRAMEBUFFER_ATTACHMENT_RED_SIZE: Double = js.native
   
-               // 0x8216
+  // 0x8216
   val FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE: Double = js.native
   
-                            // 0x8CAB
+  // 0x8CAB
   val FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER: Double = js.native
   
-             // 0x8217
+  // 0x8217
   val FRAMEBUFFER_DEFAULT: Double = js.native
   
-                              // 0x8CEF
+  // 0x8CEF
   val FRAMEBUFFER_INCOMPLETE_MULTISAMPLE: Double = js.native
   
-                                     // 0x8D57
+  // 0x8D57
   val HALF_FLOAT: Double = js.native
   
-         // 0x8C8B
+  // 0x8C8B
   val INTERLEAVED_ATTRIBS: Double = js.native
   
-                                      // 0x906F
+  // 0x906F
   val INT_2_10_10_10_REV: Double = js.native
   
-                               // 0x8DC8
+  // 0x8DC8
   val INT_SAMPLER_2D: Double = js.native
   
-                                // 0x8DCC
+  // 0x8DCC
   val INT_SAMPLER_2D_ARRAY: Double = js.native
   
-                                  // 0x8DCA
+  // 0x8DCA
   val INT_SAMPLER_3D: Double = js.native
   
-                                  // 0x8DCB
+  // 0x8DCB
   val INT_SAMPLER_CUBE: Double = js.native
   
-     // 0x8A46
+  // 0x8A46
   val INVALID_INDEX: Double = js.native
   
-                                             // 0x8007
+  // 0x8007
   val MAX: Double = js.native
   
-                                  // 0x8072
+  // 0x8072
   val MAX_3D_TEXTURE_SIZE: Double = js.native
   
-                     // 0x88FD
+  // 0x88FD
   val MAX_ARRAY_TEXTURE_LAYERS: Double = js.native
   
-                                 // -1
+  // -1
   /* WebGL-specific enums */
   val MAX_CLIENT_WAIT_TIMEOUT_WEBGL: Double = js.native
   
-            // 0x8CD4
+  // 0x8CD4
   val MAX_COLOR_ATTACHMENTS: Double = js.native
   
-          // 0x8A31
+  // 0x8A31
   val MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS: Double = js.native
   
-                     // 0x8A2D
+  // 0x8A2D
   val MAX_COMBINED_UNIFORM_BLOCKS: Double = js.native
   
-                          // 0x8A30
+  // 0x8A30
   val MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS: Double = js.native
   
-                                    // 0x88EA
+  // 0x88EA
   val MAX_DRAW_BUFFERS: Double = js.native
   
-                           // 0x80E8
+  // 0x80E8
   val MAX_ELEMENTS_INDICES: Double = js.native
   
-                     // 0x8368
+  // 0x8368
   val MAX_ELEMENTS_VERTICES: Double = js.native
   
-                        // 0x912F
+  // 0x912F
   val MAX_ELEMENT_INDEX: Double = js.native
   
-                    // 0x9122
+  // 0x9122
   val MAX_FRAGMENT_INPUT_COMPONENTS: Double = js.native
   
-                       // 0x8A2B
+  // 0x8A2B
   val MAX_FRAGMENT_UNIFORM_BLOCKS: Double = js.native
   
-                                   // 0x8834
+  // 0x8834
   val MAX_FRAGMENT_UNIFORM_COMPONENTS: Double = js.native
   
-                        // 0x8904
+  // 0x8904
   val MAX_PROGRAM_TEXEL_OFFSET: Double = js.native
   
-              // 0x8D56
+  // 0x8D56
   val MAX_SAMPLES: Double = js.native
   
-                   // 0x9125
+  // 0x9125
   val MAX_SERVER_WAIT_TIMEOUT: Double = js.native
   
-                               // 0x81A6
+  // 0x81A6
   val MAX_TEXTURE_LOD_BIAS: Double = js.native
   
-                              // 0x8C89
+  // 0x8C89
   val MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS: Double = js.native
   
-   // 0x8C8A
+  // 0x8C8A
   val MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS: Double = js.native
   
-                  // 0x8C7F
+  // 0x8C7F
   val MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS: Double = js.native
   
-                     // 0x8A2F
+  // 0x8A2F
   val MAX_UNIFORM_BLOCK_SIZE: Double = js.native
   
-                     // 0x8A2E
+  // 0x8A2E
   val MAX_UNIFORM_BUFFER_BINDINGS: Double = js.native
   
-                        // 0x8905
+  // 0x8905
   val MAX_VARYING_COMPONENTS: Double = js.native
   
-                                   // 0xFFFFFFFF
+  // 0xFFFFFFFF
   val MAX_VERTEX_OUTPUT_COMPONENTS: Double = js.native
   
-                             // 0x8A2A
+  // 0x8A2A
   val MAX_VERTEX_UNIFORM_BLOCKS: Double = js.native
   
-                 // 0x8B49
+  // 0x8B49
   val MAX_VERTEX_UNIFORM_COMPONENTS: Double = js.native
   
-                               // 0x813D
+  // 0x813D
   val MIN: Double = js.native
   
-                        // 0x88FF
+  // 0x88FF
   val MIN_PROGRAM_TEXEL_OFFSET: Double = js.native
   
-                         // 0x9111
+  // 0x9111
   val OBJECT_TYPE: Double = js.native
   
-                              // 0x0CF4
+  // 0x0CF4
   val PACK_ROW_LENGTH: Double = js.native
   
-                                  // 0x0D03
+  // 0x0D03
   val PACK_SKIP_PIXELS: Double = js.native
   
-                                 // 0x0D02
+  // 0x0D02
   val PACK_SKIP_ROWS: Double = js.native
   
-                 // 0x8B8B
+  // 0x8B8B
   val PIXEL_PACK_BUFFER: Double = js.native
   
-                             // 0x88EC
+  // 0x88EC
   val PIXEL_PACK_BUFFER_BINDING: Double = js.native
   
-                               // 0x88EB
+  // 0x88EB
   val PIXEL_UNPACK_BUFFER: Double = js.native
   
-                       // 0x88ED
+  // 0x88ED
   val PIXEL_UNPACK_BUFFER_BINDING: Double = js.native
   
-                                   // 0x8865
+  // 0x8865
   val QUERY_RESULT: Double = js.native
   
-                                    // 0x8866
+  // 0x8866
   val QUERY_RESULT_AVAILABLE: Double = js.native
   
-                        // 0x8C1D
+  // 0x8C1D
   val R11F_G11F_B10F: Double = js.native
   
-                                             // 0x822B
+  // 0x822B
   val R16F: Double = js.native
   
-                                            // 0x8232
+  // 0x8232
   val R16I: Double = js.native
   
-                                            // 0x8233
+  // 0x8233
   val R16UI: Double = js.native
   
-                                            // 0x822D
+  // 0x822D
   val R32F: Double = js.native
   
-                                           // 0x8234
+  // 0x8234
   val R32I: Double = js.native
   
-                                            // 0x8235
+  // 0x8235
   val R32UI: Double = js.native
   
-                                      // 0x8228
+  // 0x8228
   val R8: Double = js.native
   
-                                           // 0x8230
+  // 0x8230
   val R8I: Double = js.native
   
-                                             // 0x8231
+  // 0x8231
   val R8UI: Double = js.native
   
-                            // 0x85B5
+  // 0x85B5
   val R8_SNORM: Double = js.native
   
-           // 0x8C88
+  // 0x8C88
   val RASTERIZER_DISCARD: Double = js.native
   
   val READ_BUFFER: Double = js.native
   
-                        // 0x8CA6 /* Same as FRAMEBUFFER_BINDING */
+  // 0x8CA6 /* Same as FRAMEBUFFER_BINDING */
   val READ_FRAMEBUFFER: Double = js.native
   
-                                // 0x8CA9
+  // 0x8CA9
   val READ_FRAMEBUFFER_BINDING: Double = js.native
   
-                                         // 0x1802
+  // 0x1802
   val RED: Double = js.native
   
-                                           // 0x8D8F
+  // 0x8D8F
   val RED_INTEGER: Double = js.native
   
-                        // 0x8CAA
+  // 0x8CAA
   val RENDERBUFFER_SAMPLES: Double = js.native
   
-                                      // 0x140B
+  // 0x140B
   val RG: Double = js.native
   
-                                            // 0x822E
+  // 0x822E
   val RG16F: Double = js.native
   
-                                           // 0x8238
+  // 0x8238
   val RG16I: Double = js.native
   
-                                           // 0x8239
+  // 0x8239
   val RG16UI: Double = js.native
   
-                                           // 0x822F
+  // 0x822F
   val RG32F: Double = js.native
   
-                                          // 0x823A
+  // 0x823A
   val RG32I: Double = js.native
   
-                                           // 0x823B
+  // 0x823B
   val RG32UI: Double = js.native
   
-                                              // 0x8229
+  // 0x8229
   val RG8: Double = js.native
   
-                                           // 0x8236
+  // 0x8236
   val RG8I: Double = js.native
   
-                                            // 0x8237
+  // 0x8237
   val RG8UI: Double = js.native
   
-                                        // 0x8F94
+  // 0x8F94
   val RG8_SNORM: Double = js.native
   
-                                           // 0x8058
+  // 0x8058
   val RGB10_A2: Double = js.native
   
-                                 // 0x8919
+  // 0x8919
   val RGB10_A2UI: Double = js.native
   
-                                         // 0x881A
+  // 0x881A
   val RGB16F: Double = js.native
   
-                                         // 0x8D88
+  // 0x8D88
   val RGB16I: Double = js.native
   
-                                        // 0x8D76
+  // 0x8D76
   val RGB16UI: Double = js.native
   
-                                         // 0x8814
+  // 0x8814
   val RGB32F: Double = js.native
   
-                                         // 0x8D82
+  // 0x8D82
   val RGB32I: Double = js.native
   
-                                        // 0x8D70
+  // 0x8D70
   val RGB32UI: Double = js.native
   
-                                             // 0x1903
+  // 0x1903
   val RGB8: Double = js.native
   
-                                          // 0x8D8E
+  // 0x8D8E
   val RGB8I: Double = js.native
   
-                                         // 0x8D7C
+  // 0x8D7C
   val RGB8UI: Double = js.native
   
-                                       // 0x8F95
+  // 0x8F95
   val RGB8_SNORM: Double = js.native
   
-                    // 0x8C3B
+  // 0x8C3B
   val RGB9_E5: Double = js.native
   
-                                          // 0x8815
+  // 0x8815
   val RGBA16F: Double = js.native
   
-                                          // 0x8D83
+  // 0x8D83
   val RGBA16I: Double = js.native
   
-                                         // 0x8D71
+  // 0x8D71
   val RGBA16UI: Double = js.native
   
-                          // 0x884E
+  // 0x884E
   val RGBA32F: Double = js.native
   
-                                          // 0x8D7D
+  // 0x8D7D
   val RGBA32I: Double = js.native
   
-               // 0x8C8F
+  // 0x8C8F
   val RGBA32UI: Double = js.native
   
-                                            // 0x8051
+  // 0x8051
   val RGBA8: Double = js.native
   
-                                          // 0x8D89
+  // 0x8D89
   val RGBA8I: Double = js.native
   
-                                         // 0x8D77
+  // 0x8D77
   val RGBA8UI: Double = js.native
   
-                                      // 0x8F96
+  // 0x8F96
   val RGBA8_SNORM: Double = js.native
   
-                                     // 0x8D98
+  // 0x8D98
   val RGBA_INTEGER: Double = js.native
   
-                                     // 0x8D94
+  // 0x8D94
   val RGB_INTEGER: Double = js.native
   
-                                              // 0x8227
+  // 0x8227
   val RG_INTEGER: Double = js.native
   
-                                    // 0x8D99
+  // 0x8D99
   val SAMPLER_2D_ARRAY: Double = js.native
   
-                                // 0x8DC1
+  // 0x8DC1
   val SAMPLER_2D_ARRAY_SHADOW: Double = js.native
   
-                                      // 0x8B5F
+  // 0x8B5F
   val SAMPLER_2D_SHADOW: Double = js.native
   
-                   // 0x8B4A
+  // 0x8B4A
   val SAMPLER_3D: Double = js.native
   
-                 // 0x8D6A
+  // 0x8D6A
   val SAMPLER_BINDING: Double = js.native
   
-                         // 0x8DC4
+  // 0x8DC4
   val SAMPLER_CUBE_SHADOW: Double = js.native
   
-                             // 0x8C8C
+  // 0x8C8C
   val SEPARATE_ATTRIBS: Double = js.native
   
-                                      // 0x9118
+  // 0x9118
   val SIGNALED: Double = js.native
   
-                                     // 0x8F97
+  // 0x8F97
   val SIGNED_NORMALIZED: Double = js.native
   
-                                    // 0x8B6A
+  // 0x8B6A
   val SRGB: Double = js.native
   
-                                            // 0x8C40
+  // 0x8C40
   val SRGB8: Double = js.native
   
-                                           // 0x8C41
+  // 0x8C41
   val SRGB8_ALPHA8: Double = js.native
   
-                                     // 0x88E5
+  // 0x88E5
   val STATIC_COPY: Double = js.native
   
-                                     // 0x88E2
+  // 0x88E2
   val STATIC_READ: Double = js.native
   
-                                           // 0x1801
+  // 0x1801
   val STENCIL: Double = js.native
   
-                                     // 0x88E1
+  // 0x88E1
   val STREAM_COPY: Double = js.native
   
-                          // 0x8867
+  // 0x8867
   val STREAM_READ: Double = js.native
   
-                                     // 0x9112
+  // 0x9112
   val SYNC_CONDITION: Double = js.native
   
-                                      // 0x9115
+  // 0x9115
   val SYNC_FENCE: Double = js.native
   
-                                     // 0x9114
+  // 0x9114
   val SYNC_FLAGS: Double = js.native
   
-                                     // 0x911D
+  // 0x911D
   val SYNC_FLUSH_COMMANDS_BIT: Double = js.native
   
-                                      // 0x9116
+  // 0x9116
   val SYNC_GPU_COMMANDS_COMPLETE: Double = js.native
   
-                                  // 0x9113
+  // 0x9113
   val SYNC_STATUS: Double = js.native
   
-                          // 0x8B4B
+  // 0x8B4B
   val TEXTURE_2D_ARRAY: Double = js.native
   
-                             // 0x806E
+  // 0x806E
   val TEXTURE_3D: Double = js.native
   
-                                 // 0x813B
+  // 0x813B
   val TEXTURE_BASE_LEVEL: Double = js.native
   
-                                // 0x8C1A
+  // 0x8C1A
   val TEXTURE_BINDING_2D_ARRAY: Double = js.native
   
-                                        // 0x8059
+  // 0x8059
   val TEXTURE_BINDING_3D: Double = js.native
   
-                            // 0x884C
+  // 0x884C
   val TEXTURE_COMPARE_FUNC: Double = js.native
   
-                            // 0x84FD
+  // 0x84FD
   val TEXTURE_COMPARE_MODE: Double = js.native
   
-                      // 0x8E25
+  // 0x8E25
   val TEXTURE_IMMUTABLE_FORMAT: Double = js.native
   
-                               // 0x8D6B
+  // 0x8D6B
   val TEXTURE_IMMUTABLE_LEVELS: Double = js.native
   
-                              // 0x813C
+  // 0x813C
   val TEXTURE_MAX_LEVEL: Double = js.native
   
-                                 // 0x813A
+  // 0x813A
   val TEXTURE_MAX_LOD: Double = js.native
   
-                            // 0x80E9
+  // 0x80E9
   val TEXTURE_MIN_LOD: Double = js.native
   
-                                      // 0x806F
+  // 0x806F
   val TEXTURE_WRAP_R: Double = js.native
   
-                                // 0x911A
+  // 0x911A
   val TIMEOUT_EXPIRED: Double = js.native
   
-                        // 0x82DF
+  // 0x82DF
   val TIMEOUT_IGNORED: Double = js.native
   
-                              // 0x8D9F
+  // 0x8D9F
   val TRANSFORM_FEEDBACK: Double = js.native
   
-                       // 0x8E23
+  // 0x8E23
   val TRANSFORM_FEEDBACK_ACTIVE: Double = js.native
   
-                       // 0x8E24
+  // 0x8E24
   val TRANSFORM_FEEDBACK_BINDING: Double = js.native
   
-                                // 0x8C8D
+  // 0x8C8D
   val TRANSFORM_FEEDBACK_BUFFER: Double = js.native
   
-                       // 0x8C8E
+  // 0x8C8E
   val TRANSFORM_FEEDBACK_BUFFER_BINDING: Double = js.native
   
-                        // 0x8C3E
+  // 0x8C3E
   val TRANSFORM_FEEDBACK_BUFFER_MODE: Double = js.native
   
-                 // 0x8C84
+  // 0x8C84
   val TRANSFORM_FEEDBACK_BUFFER_SIZE: Double = js.native
   
-                     // 0x8C83
+  // 0x8C83
   val TRANSFORM_FEEDBACK_BUFFER_START: Double = js.native
   
-                              // 0x8E22
+  // 0x8E22
   val TRANSFORM_FEEDBACK_PAUSED: Double = js.native
   
-                  // 0x8C85
+  // 0x8C85
   val TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN: Double = js.native
   
-      // 0x8C80
+  // 0x8C80
   val TRANSFORM_FEEDBACK_VARYINGS: Double = js.native
   
-                                  // 0x8A3B
+  // 0x8A3B
   val UNIFORM_ARRAY_STRIDE: Double = js.native
   
-                         // 0x8A40
+  // 0x8A40
   val UNIFORM_BLOCK_ACTIVE_UNIFORMS: Double = js.native
   
-                   // 0x8A42
+  // 0x8A42
   val UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES: Double = js.native
   
-                            // 0x8A3E
+  // 0x8A3E
   val UNIFORM_BLOCK_BINDING: Double = js.native
   
-                           // 0x8A3F
+  // 0x8A3F
   val UNIFORM_BLOCK_DATA_SIZE: Double = js.native
   
-                                    // 0x8A38
+  // 0x8A38
   val UNIFORM_BLOCK_INDEX: Double = js.native
   
-       // 0x8A44
+  // 0x8A44
   val UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER: Double = js.native
   
-            // 0x8A43
+  // 0x8A43
   val UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER: Double = js.native
   
-                       // 0x8F37 /* Same as COPY_WRITE_BUFFER */
+  // 0x8F37 /* Same as COPY_WRITE_BUFFER */
   val UNIFORM_BUFFER: Double = js.native
   
-                                  // 0x8A11
+  // 0x8A11
   val UNIFORM_BUFFER_BINDING: Double = js.native
   
-        // 0x8A33
+  // 0x8A33
   val UNIFORM_BUFFER_OFFSET_ALIGNMENT: Double = js.native
   
-                            // 0x8A29
+  // 0x8A29
   val UNIFORM_BUFFER_SIZE: Double = js.native
   
-                          // 0x8A28
+  // 0x8A28
   val UNIFORM_BUFFER_START: Double = js.native
   
-                           // 0x8A3D
+  // 0x8A3D
   val UNIFORM_IS_ROW_MAJOR: Double = js.native
   
-                            // 0x8A3C
+  // 0x8A3C
   val UNIFORM_MATRIX_STRIDE: Double = js.native
   
-                             // 0x8A3A
+  // 0x8A3A
   val UNIFORM_OFFSET: Double = js.native
   
-                                    // 0x8A37
+  // 0x8A37
   val UNIFORM_SIZE: Double = js.native
   
-                           // 0x8A36
+  // 0x8A36
   val UNIFORM_TYPE: Double = js.native
   
-                              // 0x806D
+  // 0x806D
   val UNPACK_IMAGE_HEIGHT: Double = js.native
   
-                                     // 0x0C02
+  // 0x0C02
   val UNPACK_ROW_LENGTH: Double = js.native
   
-                              // 0x806A
+  // 0x806A
   val UNPACK_SKIP_IMAGES: Double = js.native
   
-                                // 0x0CF3
+  // 0x0CF3
   val UNPACK_SKIP_PIXELS: Double = js.native
   
-                               // 0x0CF2
+  // 0x0CF2
   val UNPACK_SKIP_ROWS: Double = js.native
   
-                      // 0x9117
+  // 0x9117
   val UNSIGNALED: Double = js.native
   
-                                  // 0x8C3A
+  // 0x8C3A
   val UNSIGNED_INT_10F_11F_11F_REV: Double = js.native
   
-                             // 0x8218
+  // 0x8218
   //readonly DEPTH_STENCIL_ATTACHMENT: number;                      // 0x821A /* Already defined in WebGL1 constants */
   //readonly DEPTH_STENCIL: number;                                 // 0x84F9 /* Already defined in WebGL1 constants */
   val UNSIGNED_INT_24_8: Double = js.native
   
-                             // 0x8073
+  // 0x8073
   val UNSIGNED_INT_2_10_10_10_REV: Double = js.native
   
-                                         // 0x8C3D
+  // 0x8C3D
   val UNSIGNED_INT_5_9_9_9_REV: Double = js.native
   
-                            // 0x8DCF
+  // 0x8DCF
   val UNSIGNED_INT_SAMPLER_2D: Double = js.native
   
-                       // 0x8DD4
+  // 0x8DD4
   val UNSIGNED_INT_SAMPLER_2D_ARRAY: Double = js.native
   
-                         // 0x8DD2
+  // 0x8DD2
   val UNSIGNED_INT_SAMPLER_3D: Double = js.native
   
-                         // 0x8DD3
+  // 0x8DD3
   val UNSIGNED_INT_SAMPLER_CUBE: Double = js.native
   
-                             // 0x8DC5
+  // 0x8DC5
   val UNSIGNED_INT_VEC2: Double = js.native
   
-                               // 0x8DC6
+  // 0x8DC6
   val UNSIGNED_INT_VEC3: Double = js.native
   
-                               // 0x8DC7
+  // 0x8DC7
   val UNSIGNED_INT_VEC4: Double = js.native
   
-                                // 0x88F0
+  // 0x88F0
   val UNSIGNED_NORMALIZED: Double = js.native
   
-                                          // 0x823C
+  // 0x823C
   val VERTEX_ARRAY_BINDING: Double = js.native
   
-                         // 0x00000001
+  // 0x00000001
   val VERTEX_ATTRIB_ARRAY_DIVISOR: Double = js.native
   
-                                          // 0x881B
+  // 0x881B
   val VERTEX_ATTRIB_ARRAY_INTEGER: Double = js.native
   
-                             // 0x911C
+  // 0x911C
   val WAIT_FAILED: Double = js.native
   
-   //[WebGLHandlesContextLoss]
+  //[WebGLHandlesContextLoss]
   def beginQuery(target: Double, query: WebGLQuery): Unit = js.native
   
   def beginTransformFeedback(primitiveMode: Double): Unit = js.native
@@ -840,15 +838,15 @@ trait WebGL2RenderingContext
   def bindBufferRange(target: Double, index: Double, buffer: Null, offset: Double, size: Double): Unit = js.native
   def bindBufferRange(target: Double, index: Double, buffer: WebGLBuffer, offset: Double, size: Double): Unit = js.native
   
-   //[WebGLHandlesContextLoss]
+  //[WebGLHandlesContextLoss]
   def bindSampler(unit: Double): Unit = js.native
   def bindSampler(unit: Double, sampler: WebGLSampler): Unit = js.native
   
-   //[WebGLHandlesContextLoss]
+  //[WebGLHandlesContextLoss]
   def bindTransformFeedback(target: Double): Unit = js.native
   def bindTransformFeedback(target: Double, tf: WebGLTransformFeedback): Unit = js.native
   
-   //[WebGLHandlesContextLoss]
+  //[WebGLHandlesContextLoss]
   def bindVertexArray(): Unit = js.native
   def bindVertexArray(array: WebGLVertexArrayObject): Unit = js.native
   
@@ -2130,7 +2128,7 @@ trait WebGL2RenderingContext
   def deleteSampler(): Unit = js.native
   def deleteSampler(sampler: WebGLSampler): Unit = js.native
   
-   //[WebGLHandlesContextLoss]
+  //[WebGLHandlesContextLoss]
   def deleteSync(): Unit = js.native
   def deleteSync(sync: WebGLSync): Unit = js.native
   
@@ -2381,7 +2379,7 @@ trait WebGL2RenderingContext
     `type`: Double,
     source: HTMLCanvasElement
   ): Unit = js.native
-   // May throw DOMException
+  // May throw DOMException
   def texImage2D(
     target: Double,
     level: Double,
@@ -2390,7 +2388,7 @@ trait WebGL2RenderingContext
     `type`: Double,
     source: ImageBitmap
   ): Unit = js.native
-   // May throw DOMException
+  // May throw DOMException
   // WebGL2 entrypoints:
   def texImage2D(
     target: Double,
@@ -2458,7 +2456,7 @@ trait WebGL2RenderingContext
     `type`: Double,
     source: ImageBitmap
   ): Unit = js.native
-   // May throw DOMException
+  // May throw DOMException
   def texImage2D(
     target: Double,
     level: Double,
@@ -2472,7 +2470,7 @@ trait WebGL2RenderingContext
     srcOffset: Double
   ): Unit = js.native
   
-   // May throw DOMException
+  // May throw DOMException
   def texImage3D(
     target: Double,
     level: Double,
@@ -2630,7 +2628,7 @@ trait WebGL2RenderingContext
     `type`: Double,
     source: HTMLCanvasElement
   ): Unit = js.native
-   // May throw DOMException
+  // May throw DOMException
   def texSubImage2D(
     target: Double,
     level: Double,
@@ -2706,7 +2704,7 @@ trait WebGL2RenderingContext
     `type`: Double,
     source: ImageBitmap
   ): Unit = js.native
-   // May throw DOMException
+  // May throw DOMException
   def texSubImage2D(
     target: Double,
     level: Double,
@@ -2720,7 +2718,7 @@ trait WebGL2RenderingContext
     srcOffset: Double
   ): Unit = js.native
   
-   // May throw DOMException
+  // May throw DOMException
   def texSubImage3D(
     target: Double,
     level: Double,

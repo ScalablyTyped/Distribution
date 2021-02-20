@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainEndpointOptions extends js.Object {
+trait DomainEndpointOptions extends StObject {
   
   /**
     * Specify the fully qualified domain for your custom endpoint.
@@ -41,48 +42,36 @@ object DomainEndpointOptions {
   }
   
   @scala.inline
-  implicit class DomainEndpointOptionsOps[Self <: DomainEndpointOptions] (val x: Self) extends AnyVal {
+  implicit class DomainEndpointOptionsMutableBuilder[Self <: DomainEndpointOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomEndpoint(value: DomainNameFqdn): Self = StObject.set(x, "CustomEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomEndpointCertificateArn(value: ARN): Self = StObject.set(x, "CustomEndpointCertificateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomEndpointCertificateArnUndefined: Self = StObject.set(x, "CustomEndpointCertificateArn", js.undefined)
     
     @scala.inline
-    def setCustomEndpoint(value: DomainNameFqdn): Self = this.set("CustomEndpoint", value.asInstanceOf[js.Any])
+    def setCustomEndpointEnabled(value: Boolean): Self = StObject.set(x, "CustomEndpointEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomEndpoint: Self = this.set("CustomEndpoint", js.undefined)
+    def setCustomEndpointEnabledUndefined: Self = StObject.set(x, "CustomEndpointEnabled", js.undefined)
     
     @scala.inline
-    def setCustomEndpointCertificateArn(value: ARN): Self = this.set("CustomEndpointCertificateArn", value.asInstanceOf[js.Any])
+    def setCustomEndpointUndefined: Self = StObject.set(x, "CustomEndpoint", js.undefined)
     
     @scala.inline
-    def deleteCustomEndpointCertificateArn: Self = this.set("CustomEndpointCertificateArn", js.undefined)
+    def setEnforceHTTPS(value: Boolean): Self = StObject.set(x, "EnforceHTTPS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomEndpointEnabled(value: Boolean): Self = this.set("CustomEndpointEnabled", value.asInstanceOf[js.Any])
+    def setEnforceHTTPSUndefined: Self = StObject.set(x, "EnforceHTTPS", js.undefined)
     
     @scala.inline
-    def deleteCustomEndpointEnabled: Self = this.set("CustomEndpointEnabled", js.undefined)
+    def setTLSSecurityPolicy(value: TLSSecurityPolicy): Self = StObject.set(x, "TLSSecurityPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnforceHTTPS(value: Boolean): Self = this.set("EnforceHTTPS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnforceHTTPS: Self = this.set("EnforceHTTPS", js.undefined)
-    
-    @scala.inline
-    def setTLSSecurityPolicy(value: TLSSecurityPolicy): Self = this.set("TLSSecurityPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTLSSecurityPolicy: Self = this.set("TLSSecurityPolicy", js.undefined)
+    def setTLSSecurityPolicyUndefined: Self = StObject.set(x, "TLSSecurityPolicy", js.undefined)
   }
 }

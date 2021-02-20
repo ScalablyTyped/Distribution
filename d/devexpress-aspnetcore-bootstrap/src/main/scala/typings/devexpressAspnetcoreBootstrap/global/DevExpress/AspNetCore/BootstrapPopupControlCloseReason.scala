@@ -1,12 +1,13 @@
 package typings.devexpressAspnetcoreBootstrap.global.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("DevExpress.AspNetCore.BootstrapPopupControlCloseReason")
 @js.native
-object BootstrapPopupControlCloseReason extends js.Object {
+object BootstrapPopupControlCloseReason extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[

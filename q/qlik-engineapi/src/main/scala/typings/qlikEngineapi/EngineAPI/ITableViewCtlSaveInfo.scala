@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * TableViewCtlSaveInfo...
   */
 @js.native
-trait ITableViewCtlSaveInfo extends js.Object {
+trait ITableViewCtlSaveInfo extends StObject {
   
   /**
     * Internal view mode.
@@ -29,24 +30,12 @@ object ITableViewCtlSaveInfo {
   }
   
   @scala.inline
-  implicit class ITableViewCtlSaveInfoOps[Self <: ITableViewCtlSaveInfo] (val x: Self) extends AnyVal {
+  implicit class ITableViewCtlSaveInfoMutableBuilder[Self <: ITableViewCtlSaveInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQInternalView(value: ITableViewSaveInfo): Self = StObject.set(x, "qInternalView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQInternalView(value: ITableViewSaveInfo): Self = this.set("qInternalView", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQSourceView(value: ITableViewSaveInfo): Self = this.set("qSourceView", value.asInstanceOf[js.Any])
+    def setQSourceView(value: ITableViewSaveInfo): Self = StObject.set(x, "qSourceView", value.asInstanceOf[js.Any])
   }
 }

@@ -11,6 +11,7 @@ import typings.phaser.Phaser.Physics.Matter.Components.SetBody
 import typings.phaser.Phaser.Physics.Matter.Components.Sleep
 import typings.phaser.Phaser.Physics.Matter.Components.Static
 import typings.phaser.Phaser.Physics.Matter.Components.Velocity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

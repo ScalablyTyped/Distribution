@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.chart2
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,45 +67,33 @@ object XCoordinateSystem {
   }
   
   @scala.inline
-  implicit class XCoordinateSystemOps[Self <: XCoordinateSystem] (val x: Self) extends AnyVal {
+  implicit class XCoordinateSystemMutableBuilder[Self <: XCoordinateSystem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoordinateSystemType(value: String): Self = StObject.set(x, "CoordinateSystemType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimension(value: Double): Self = StObject.set(x, "Dimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAxisByDimension(value: (Double, Double) => XAxis): Self = StObject.set(x, "getAxisByDimension", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCoordinateSystemType(value: String): Self = this.set("CoordinateSystemType", value.asInstanceOf[js.Any])
+    def setGetCoordinateSystemType(value: () => String): Self = StObject.set(x, "getCoordinateSystemType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDimension(value: Double): Self = this.set("Dimension", value.asInstanceOf[js.Any])
+    def setGetDimension(value: () => Double): Self = StObject.set(x, "getDimension", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setViewServiceName(value: String): Self = this.set("ViewServiceName", value.asInstanceOf[js.Any])
+    def setGetMaximumAxisIndexByDimension(value: Double => Double): Self = StObject.set(x, "getMaximumAxisIndexByDimension", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAxisByDimension(value: (Double, Double) => XAxis): Self = this.set("getAxisByDimension", js.Any.fromFunction2(value))
+    def setGetViewServiceName(value: () => String): Self = StObject.set(x, "getViewServiceName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCoordinateSystemType(value: () => String): Self = this.set("getCoordinateSystemType", js.Any.fromFunction0(value))
+    def setSetAxisByDimension(value: (Double, XAxis, Double) => Unit): Self = StObject.set(x, "setAxisByDimension", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetDimension(value: () => Double): Self = this.set("getDimension", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetMaximumAxisIndexByDimension(value: Double => Double): Self = this.set("getMaximumAxisIndexByDimension", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetViewServiceName(value: () => String): Self = this.set("getViewServiceName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetAxisByDimension(value: (Double, XAxis, Double) => Unit): Self = this.set("setAxisByDimension", js.Any.fromFunction3(value))
+    def setViewServiceName(value: String): Self = StObject.set(x, "ViewServiceName", value.asInstanceOf[js.Any])
   }
 }

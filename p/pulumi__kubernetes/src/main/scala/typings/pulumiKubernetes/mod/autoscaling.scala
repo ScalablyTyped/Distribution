@@ -5,17 +5,16 @@ import typings.pulumiKubernetes.horizontalPodAutoscalerMod.HorizontalPodAutoscal
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes", "autoscaling")
-@js.native
-object autoscaling extends js.Object {
+object autoscaling {
   
-  @js.native
-  object v1 extends js.Object {
+  object v1 {
     
+    @JSImport("@pulumi/kubernetes", "autoscaling.v1.HorizontalPodAutoscaler")
     @js.native
     class HorizontalPodAutoscaler protected ()
       extends typings.pulumiKubernetes.autoscalingMod.v1.HorizontalPodAutoscaler {
@@ -32,8 +31,7 @@ object autoscaling extends js.Object {
       def this(name: String, args: HorizontalPodAutoscalerArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
-    @js.native
-    object HorizontalPodAutoscaler extends js.Object {
+    object HorizontalPodAutoscaler {
       
       /**
         * Get an existing HorizontalPodAutoscaler resource's state with the given name, ID, and optional extra
@@ -43,16 +41,23 @@ object autoscaling extends js.Object {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
+      @JSImport("@pulumi/kubernetes", "autoscaling.v1.HorizontalPodAutoscaler.get")
+      @js.native
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.horizontalPodAutoscalerMod.HorizontalPodAutoscaler = js.native
+      @JSImport("@pulumi/kubernetes", "autoscaling.v1.HorizontalPodAutoscaler.get")
+      @js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.horizontalPodAutoscalerMod.HorizontalPodAutoscaler = js.native
       
       /**
         * Returns true if the given object is an instance of HorizontalPodAutoscaler.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
+      @JSImport("@pulumi/kubernetes", "autoscaling.v1.HorizontalPodAutoscaler.isInstance")
+      @js.native
       def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/autoscaling/v1/horizontalPodAutoscaler.HorizontalPodAutoscaler */ Boolean = js.native
     }
     
+    @JSImport("@pulumi/kubernetes", "autoscaling.v1.HorizontalPodAutoscalerList")
     @js.native
     class HorizontalPodAutoscalerList protected ()
       extends typings.pulumiKubernetes.autoscalingMod.v1.HorizontalPodAutoscalerList {
@@ -69,8 +74,7 @@ object autoscaling extends js.Object {
       def this(name: String, args: HorizontalPodAutoscalerListArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
-    @js.native
-    object HorizontalPodAutoscalerList extends js.Object {
+    object HorizontalPodAutoscalerList {
       
       /**
         * Get an existing HorizontalPodAutoscalerList resource's state with the given name, ID, and optional extra
@@ -80,20 +84,26 @@ object autoscaling extends js.Object {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
+      @JSImport("@pulumi/kubernetes", "autoscaling.v1.HorizontalPodAutoscalerList.get")
+      @js.native
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.horizontalPodAutoscalerListMod.HorizontalPodAutoscalerList = js.native
+      @JSImport("@pulumi/kubernetes", "autoscaling.v1.HorizontalPodAutoscalerList.get")
+      @js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.horizontalPodAutoscalerListMod.HorizontalPodAutoscalerList = js.native
       
       /**
         * Returns true if the given object is an instance of HorizontalPodAutoscalerList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
+      @JSImport("@pulumi/kubernetes", "autoscaling.v1.HorizontalPodAutoscalerList.isInstance")
+      @js.native
       def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/autoscaling/v1/horizontalPodAutoscalerList.HorizontalPodAutoscalerList */ Boolean = js.native
     }
   }
   
-  @js.native
-  object v2beta1 extends js.Object {
+  object v2beta1 {
     
+    @JSImport("@pulumi/kubernetes", "autoscaling.v2beta1.HorizontalPodAutoscaler")
     @js.native
     class HorizontalPodAutoscaler protected ()
       extends typings.pulumiKubernetes.autoscalingMod.v2beta1.HorizontalPodAutoscaler {
@@ -117,8 +127,7 @@ object autoscaling extends js.Object {
       ) = this()
     }
     /* static members */
-    @js.native
-    object HorizontalPodAutoscaler extends js.Object {
+    object HorizontalPodAutoscaler {
       
       /**
         * Get an existing HorizontalPodAutoscaler resource's state with the given name, ID, and optional extra
@@ -128,16 +137,23 @@ object autoscaling extends js.Object {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
+      @JSImport("@pulumi/kubernetes", "autoscaling.v2beta1.HorizontalPodAutoscaler.get")
+      @js.native
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v2beta1HorizontalPodAutoscalerMod.HorizontalPodAutoscaler = js.native
+      @JSImport("@pulumi/kubernetes", "autoscaling.v2beta1.HorizontalPodAutoscaler.get")
+      @js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v2beta1HorizontalPodAutoscalerMod.HorizontalPodAutoscaler = js.native
       
       /**
         * Returns true if the given object is an instance of HorizontalPodAutoscaler.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
+      @JSImport("@pulumi/kubernetes", "autoscaling.v2beta1.HorizontalPodAutoscaler.isInstance")
+      @js.native
       def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/autoscaling/v2beta1/horizontalPodAutoscaler.HorizontalPodAutoscaler */ Boolean = js.native
     }
     
+    @JSImport("@pulumi/kubernetes", "autoscaling.v2beta1.HorizontalPodAutoscalerList")
     @js.native
     class HorizontalPodAutoscalerList protected ()
       extends typings.pulumiKubernetes.autoscalingMod.v2beta1.HorizontalPodAutoscalerList {
@@ -161,8 +177,7 @@ object autoscaling extends js.Object {
       ) = this()
     }
     /* static members */
-    @js.native
-    object HorizontalPodAutoscalerList extends js.Object {
+    object HorizontalPodAutoscalerList {
       
       /**
         * Get an existing HorizontalPodAutoscalerList resource's state with the given name, ID, and optional extra
@@ -172,20 +187,26 @@ object autoscaling extends js.Object {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
+      @JSImport("@pulumi/kubernetes", "autoscaling.v2beta1.HorizontalPodAutoscalerList.get")
+      @js.native
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v2beta1HorizontalPodAutoscalerListMod.HorizontalPodAutoscalerList = js.native
+      @JSImport("@pulumi/kubernetes", "autoscaling.v2beta1.HorizontalPodAutoscalerList.get")
+      @js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v2beta1HorizontalPodAutoscalerListMod.HorizontalPodAutoscalerList = js.native
       
       /**
         * Returns true if the given object is an instance of HorizontalPodAutoscalerList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
+      @JSImport("@pulumi/kubernetes", "autoscaling.v2beta1.HorizontalPodAutoscalerList.isInstance")
+      @js.native
       def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/autoscaling/v2beta1/horizontalPodAutoscalerList.HorizontalPodAutoscalerList */ Boolean = js.native
     }
   }
   
-  @js.native
-  object v2beta2 extends js.Object {
+  object v2beta2 {
     
+    @JSImport("@pulumi/kubernetes", "autoscaling.v2beta2.HorizontalPodAutoscaler")
     @js.native
     class HorizontalPodAutoscaler protected ()
       extends typings.pulumiKubernetes.autoscalingMod.v2beta2.HorizontalPodAutoscaler {
@@ -209,8 +230,7 @@ object autoscaling extends js.Object {
       ) = this()
     }
     /* static members */
-    @js.native
-    object HorizontalPodAutoscaler extends js.Object {
+    object HorizontalPodAutoscaler {
       
       /**
         * Get an existing HorizontalPodAutoscaler resource's state with the given name, ID, and optional extra
@@ -220,16 +240,23 @@ object autoscaling extends js.Object {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
+      @JSImport("@pulumi/kubernetes", "autoscaling.v2beta2.HorizontalPodAutoscaler.get")
+      @js.native
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v2beta2HorizontalPodAutoscalerMod.HorizontalPodAutoscaler = js.native
+      @JSImport("@pulumi/kubernetes", "autoscaling.v2beta2.HorizontalPodAutoscaler.get")
+      @js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v2beta2HorizontalPodAutoscalerMod.HorizontalPodAutoscaler = js.native
       
       /**
         * Returns true if the given object is an instance of HorizontalPodAutoscaler.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
+      @JSImport("@pulumi/kubernetes", "autoscaling.v2beta2.HorizontalPodAutoscaler.isInstance")
+      @js.native
       def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/autoscaling/v2beta2/horizontalPodAutoscaler.HorizontalPodAutoscaler */ Boolean = js.native
     }
     
+    @JSImport("@pulumi/kubernetes", "autoscaling.v2beta2.HorizontalPodAutoscalerList")
     @js.native
     class HorizontalPodAutoscalerList protected ()
       extends typings.pulumiKubernetes.autoscalingMod.v2beta2.HorizontalPodAutoscalerList {
@@ -253,8 +280,7 @@ object autoscaling extends js.Object {
       ) = this()
     }
     /* static members */
-    @js.native
-    object HorizontalPodAutoscalerList extends js.Object {
+    object HorizontalPodAutoscalerList {
       
       /**
         * Get an existing HorizontalPodAutoscalerList resource's state with the given name, ID, and optional extra
@@ -264,13 +290,19 @@ object autoscaling extends js.Object {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
+      @JSImport("@pulumi/kubernetes", "autoscaling.v2beta2.HorizontalPodAutoscalerList.get")
+      @js.native
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v2beta2HorizontalPodAutoscalerListMod.HorizontalPodAutoscalerList = js.native
+      @JSImport("@pulumi/kubernetes", "autoscaling.v2beta2.HorizontalPodAutoscalerList.get")
+      @js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v2beta2HorizontalPodAutoscalerListMod.HorizontalPodAutoscalerList = js.native
       
       /**
         * Returns true if the given object is an instance of HorizontalPodAutoscalerList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
+      @JSImport("@pulumi/kubernetes", "autoscaling.v2beta2.HorizontalPodAutoscalerList.isInstance")
+      @js.native
       def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/autoscaling/v2beta2/horizontalPodAutoscalerList.HorizontalPodAutoscalerList */ Boolean = js.native
     }
   }

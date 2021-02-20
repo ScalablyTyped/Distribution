@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMapOptions extends js.Object {
+trait IMapOptions extends StObject {
   
   /**
     * A boolean that, when set to true, allows the road labels to be hidden. Default: false
@@ -179,219 +180,207 @@ object IMapOptions {
   }
   
   @scala.inline
-  implicit class IMapOptionsOps[Self <: IMapOptions] (val x: Self) extends AnyVal {
+  implicit class IMapOptionsMutableBuilder[Self <: IMapOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowHidingLabelsOfRoad(value: Boolean): Self = StObject.set(x, "allowHidingLabelsOfRoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowHidingLabelsOfRoadUndefined: Self = StObject.set(x, "allowHidingLabelsOfRoad", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowInfoboxOverflow(value: Boolean): Self = StObject.set(x, "allowInfoboxOverflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowHidingLabelsOfRoad(value: Boolean): Self = this.set("allowHidingLabelsOfRoad", value.asInstanceOf[js.Any])
+    def setAllowInfoboxOverflowUndefined: Self = StObject.set(x, "allowInfoboxOverflow", js.undefined)
     
     @scala.inline
-    def deleteAllowHidingLabelsOfRoad: Self = this.set("allowHidingLabelsOfRoad", js.undefined)
+    def setBackgroundColor(value: String | Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowInfoboxOverflow(value: Boolean): Self = this.set("allowInfoboxOverflow", value.asInstanceOf[js.Any])
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def deleteAllowInfoboxOverflow: Self = this.set("allowInfoboxOverflow", js.undefined)
+    def setCustomMapStyle(value: ICustomMapStyle): Self = StObject.set(x, "customMapStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String | Color): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setCustomMapStyleUndefined: Self = StObject.set(x, "customMapStyle", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setDisableBirdseye(value: Boolean): Self = StObject.set(x, "disableBirdseye", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomMapStyle(value: ICustomMapStyle): Self = this.set("customMapStyle", value.asInstanceOf[js.Any])
+    def setDisableBirdseyeUndefined: Self = StObject.set(x, "disableBirdseye", js.undefined)
     
     @scala.inline
-    def deleteCustomMapStyle: Self = this.set("customMapStyle", js.undefined)
+    def setDisableKeyboardInput(value: Boolean): Self = StObject.set(x, "disableKeyboardInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableBirdseye(value: Boolean): Self = this.set("disableBirdseye", value.asInstanceOf[js.Any])
+    def setDisableKeyboardInputUndefined: Self = StObject.set(x, "disableKeyboardInput", js.undefined)
     
     @scala.inline
-    def deleteDisableBirdseye: Self = this.set("disableBirdseye", js.undefined)
+    def setDisableMapTypeSelectorMouseOver(value: Boolean): Self = StObject.set(x, "disableMapTypeSelectorMouseOver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableKeyboardInput(value: Boolean): Self = this.set("disableKeyboardInput", value.asInstanceOf[js.Any])
+    def setDisableMapTypeSelectorMouseOverUndefined: Self = StObject.set(x, "disableMapTypeSelectorMouseOver", js.undefined)
     
     @scala.inline
-    def deleteDisableKeyboardInput: Self = this.set("disableKeyboardInput", js.undefined)
+    def setDisablePanning(value: Boolean): Self = StObject.set(x, "disablePanning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableMapTypeSelectorMouseOver(value: Boolean): Self = this.set("disableMapTypeSelectorMouseOver", value.asInstanceOf[js.Any])
+    def setDisablePanningUndefined: Self = StObject.set(x, "disablePanning", js.undefined)
     
     @scala.inline
-    def deleteDisableMapTypeSelectorMouseOver: Self = this.set("disableMapTypeSelectorMouseOver", js.undefined)
+    def setDisableScrollWheelZoom(value: Boolean): Self = StObject.set(x, "disableScrollWheelZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisablePanning(value: Boolean): Self = this.set("disablePanning", value.asInstanceOf[js.Any])
+    def setDisableScrollWheelZoomUndefined: Self = StObject.set(x, "disableScrollWheelZoom", js.undefined)
     
     @scala.inline
-    def deleteDisablePanning: Self = this.set("disablePanning", js.undefined)
+    def setDisableStreetside(value: Boolean): Self = StObject.set(x, "disableStreetside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableScrollWheelZoom(value: Boolean): Self = this.set("disableScrollWheelZoom", value.asInstanceOf[js.Any])
+    def setDisableStreetsideAutoCoverage(value: Boolean): Self = StObject.set(x, "disableStreetsideAutoCoverage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableScrollWheelZoom: Self = this.set("disableScrollWheelZoom", js.undefined)
+    def setDisableStreetsideAutoCoverageUndefined: Self = StObject.set(x, "disableStreetsideAutoCoverage", js.undefined)
     
     @scala.inline
-    def setDisableStreetside(value: Boolean): Self = this.set("disableStreetside", value.asInstanceOf[js.Any])
+    def setDisableStreetsideUndefined: Self = StObject.set(x, "disableStreetside", js.undefined)
     
     @scala.inline
-    def deleteDisableStreetside: Self = this.set("disableStreetside", js.undefined)
+    def setDisableZooming(value: Boolean): Self = StObject.set(x, "disableZooming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableStreetsideAutoCoverage(value: Boolean): Self = this.set("disableStreetsideAutoCoverage", value.asInstanceOf[js.Any])
+    def setDisableZoomingUndefined: Self = StObject.set(x, "disableZooming", js.undefined)
     
     @scala.inline
-    def deleteDisableStreetsideAutoCoverage: Self = this.set("disableStreetsideAutoCoverage", js.undefined)
+    def setEnableCORS(value: Boolean): Self = StObject.set(x, "enableCORS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableZooming(value: Boolean): Self = this.set("disableZooming", value.asInstanceOf[js.Any])
+    def setEnableCORSUndefined: Self = StObject.set(x, "enableCORS", js.undefined)
     
     @scala.inline
-    def deleteDisableZooming: Self = this.set("disableZooming", js.undefined)
+    def setEnableClickableLogo(value: Boolean): Self = StObject.set(x, "enableClickableLogo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCORS(value: Boolean): Self = this.set("enableCORS", value.asInstanceOf[js.Any])
+    def setEnableClickableLogoUndefined: Self = StObject.set(x, "enableClickableLogo", js.undefined)
     
     @scala.inline
-    def deleteEnableCORS: Self = this.set("enableCORS", js.undefined)
+    def setEnableHighDpi(value: Boolean): Self = StObject.set(x, "enableHighDpi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableClickableLogo(value: Boolean): Self = this.set("enableClickableLogo", value.asInstanceOf[js.Any])
+    def setEnableHighDpiUndefined: Self = StObject.set(x, "enableHighDpi", js.undefined)
     
     @scala.inline
-    def deleteEnableClickableLogo: Self = this.set("enableClickableLogo", js.undefined)
+    def setEnableInertia(value: Boolean): Self = StObject.set(x, "enableInertia", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableHighDpi(value: Boolean): Self = this.set("enableHighDpi", value.asInstanceOf[js.Any])
+    def setEnableInertiaUndefined: Self = StObject.set(x, "enableInertia", js.undefined)
     
     @scala.inline
-    def deleteEnableHighDpi: Self = this.set("enableHighDpi", js.undefined)
+    def setLiteMode(value: Boolean): Self = StObject.set(x, "liteMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableInertia(value: Boolean): Self = this.set("enableInertia", value.asInstanceOf[js.Any])
+    def setLiteModeUndefined: Self = StObject.set(x, "liteMode", js.undefined)
     
     @scala.inline
-    def deleteEnableInertia: Self = this.set("enableInertia", js.undefined)
+    def setMaxBounds(value: LocationRect): Self = StObject.set(x, "maxBounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiteMode(value: Boolean): Self = this.set("liteMode", value.asInstanceOf[js.Any])
+    def setMaxBoundsUndefined: Self = StObject.set(x, "maxBounds", js.undefined)
     
     @scala.inline
-    def deleteLiteMode: Self = this.set("liteMode", js.undefined)
+    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBounds(value: LocationRect): Self = this.set("maxBounds", value.asInstanceOf[js.Any])
+    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
     @scala.inline
-    def deleteMaxBounds: Self = this.set("maxBounds", js.undefined)
+    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
     
     @scala.inline
-    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    def setNavigationBarMode(value: NavigationBarMode): Self = StObject.set(x, "navigationBarMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinZoom(value: Double): Self = this.set("minZoom", value.asInstanceOf[js.Any])
+    def setNavigationBarModeUndefined: Self = StObject.set(x, "navigationBarMode", js.undefined)
     
     @scala.inline
-    def deleteMinZoom: Self = this.set("minZoom", js.undefined)
+    def setNavigationBarOrientation(value: NavigationBarOrientation): Self = StObject.set(x, "navigationBarOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigationBarMode(value: NavigationBarMode): Self = this.set("navigationBarMode", value.asInstanceOf[js.Any])
+    def setNavigationBarOrientationUndefined: Self = StObject.set(x, "navigationBarOrientation", js.undefined)
     
     @scala.inline
-    def deleteNavigationBarMode: Self = this.set("navigationBarMode", js.undefined)
+    def setShowBreadcrumb(value: Boolean): Self = StObject.set(x, "showBreadcrumb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigationBarOrientation(value: NavigationBarOrientation): Self = this.set("navigationBarOrientation", value.asInstanceOf[js.Any])
+    def setShowBreadcrumbUndefined: Self = StObject.set(x, "showBreadcrumb", js.undefined)
     
     @scala.inline
-    def deleteNavigationBarOrientation: Self = this.set("navigationBarOrientation", js.undefined)
+    def setShowDashboard(value: Boolean): Self = StObject.set(x, "showDashboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowBreadcrumb(value: Boolean): Self = this.set("showBreadcrumb", value.asInstanceOf[js.Any])
+    def setShowDashboardUndefined: Self = StObject.set(x, "showDashboard", js.undefined)
     
     @scala.inline
-    def deleteShowBreadcrumb: Self = this.set("showBreadcrumb", js.undefined)
+    def setShowLocateMeButton(value: Boolean): Self = StObject.set(x, "showLocateMeButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowDashboard(value: Boolean): Self = this.set("showDashboard", value.asInstanceOf[js.Any])
+    def setShowLocateMeButtonUndefined: Self = StObject.set(x, "showLocateMeButton", js.undefined)
     
     @scala.inline
-    def deleteShowDashboard: Self = this.set("showDashboard", js.undefined)
+    def setShowLogo(value: Boolean): Self = StObject.set(x, "showLogo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowLocateMeButton(value: Boolean): Self = this.set("showLocateMeButton", value.asInstanceOf[js.Any])
+    def setShowLogoUndefined: Self = StObject.set(x, "showLogo", js.undefined)
     
     @scala.inline
-    def deleteShowLocateMeButton: Self = this.set("showLocateMeButton", js.undefined)
+    def setShowMapTypeSelector(value: Boolean): Self = StObject.set(x, "showMapTypeSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowLogo(value: Boolean): Self = this.set("showLogo", value.asInstanceOf[js.Any])
+    def setShowMapTypeSelectorUndefined: Self = StObject.set(x, "showMapTypeSelector", js.undefined)
     
     @scala.inline
-    def deleteShowLogo: Self = this.set("showLogo", js.undefined)
+    def setShowScalebar(value: Boolean): Self = StObject.set(x, "showScalebar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMapTypeSelector(value: Boolean): Self = this.set("showMapTypeSelector", value.asInstanceOf[js.Any])
+    def setShowScalebarUndefined: Self = StObject.set(x, "showScalebar", js.undefined)
     
     @scala.inline
-    def deleteShowMapTypeSelector: Self = this.set("showMapTypeSelector", js.undefined)
+    def setShowTermsLink(value: Boolean): Self = StObject.set(x, "showTermsLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowScalebar(value: Boolean): Self = this.set("showScalebar", value.asInstanceOf[js.Any])
+    def setShowTermsLinkUndefined: Self = StObject.set(x, "showTermsLink", js.undefined)
     
     @scala.inline
-    def deleteShowScalebar: Self = this.set("showScalebar", js.undefined)
+    def setShowTrafficButton(value: Boolean): Self = StObject.set(x, "showTrafficButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTermsLink(value: Boolean): Self = this.set("showTermsLink", value.asInstanceOf[js.Any])
+    def setShowTrafficButtonUndefined: Self = StObject.set(x, "showTrafficButton", js.undefined)
     
     @scala.inline
-    def deleteShowTermsLink: Self = this.set("showTermsLink", js.undefined)
+    def setShowZoomButtons(value: Boolean): Self = StObject.set(x, "showZoomButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTrafficButton(value: Boolean): Self = this.set("showTrafficButton", value.asInstanceOf[js.Any])
+    def setShowZoomButtonsUndefined: Self = StObject.set(x, "showZoomButtons", js.undefined)
     
     @scala.inline
-    def deleteShowTrafficButton: Self = this.set("showTrafficButton", js.undefined)
+    def setStreetsideOptions(value: IStreetsideOptions): Self = StObject.set(x, "streetsideOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowZoomButtons(value: Boolean): Self = this.set("showZoomButtons", value.asInstanceOf[js.Any])
+    def setStreetsideOptionsUndefined: Self = StObject.set(x, "streetsideOptions", js.undefined)
     
     @scala.inline
-    def deleteShowZoomButtons: Self = this.set("showZoomButtons", js.undefined)
+    def setSupportedMapTypes(value: js.Array[MapTypeId]): Self = StObject.set(x, "supportedMapTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreetsideOptions(value: IStreetsideOptions): Self = this.set("streetsideOptions", value.asInstanceOf[js.Any])
+    def setSupportedMapTypesUndefined: Self = StObject.set(x, "supportedMapTypes", js.undefined)
     
     @scala.inline
-    def deleteStreetsideOptions: Self = this.set("streetsideOptions", js.undefined)
-    
-    @scala.inline
-    def setSupportedMapTypesVarargs(value: MapTypeId*): Self = this.set("supportedMapTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportedMapTypes(value: js.Array[MapTypeId]): Self = this.set("supportedMapTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedMapTypes: Self = this.set("supportedMapTypes", js.undefined)
+    def setSupportedMapTypesVarargs(value: MapTypeId*): Self = StObject.set(x, "supportedMapTypes", js.Array(value :_*))
   }
 }

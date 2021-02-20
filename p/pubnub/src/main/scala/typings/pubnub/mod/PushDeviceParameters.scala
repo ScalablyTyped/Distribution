@@ -1,11 +1,12 @@
 package typings.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PushDeviceParameters extends js.Object {
+trait PushDeviceParameters extends StObject {
   
   var device: String = js.native
   
@@ -20,24 +21,12 @@ object PushDeviceParameters {
   }
   
   @scala.inline
-  implicit class PushDeviceParametersOps[Self <: PushDeviceParameters] (val x: Self) extends AnyVal {
+  implicit class PushDeviceParametersMutableBuilder[Self <: PushDeviceParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDevice(value: String): Self = this.set("device", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPushGateway(value: String): Self = this.set("pushGateway", value.asInstanceOf[js.Any])
+    def setPushGateway(value: String): Self = StObject.set(x, "pushGateway", value.asInstanceOf[js.Any])
   }
 }

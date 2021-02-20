@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecordMarkerDecisionAttributes extends js.Object {
+trait RecordMarkerDecisionAttributes extends StObject {
   
   /**
     *  The details of the marker.
@@ -26,27 +27,15 @@ object RecordMarkerDecisionAttributes {
   }
   
   @scala.inline
-  implicit class RecordMarkerDecisionAttributesOps[Self <: RecordMarkerDecisionAttributes] (val x: Self) extends AnyVal {
+  implicit class RecordMarkerDecisionAttributesMutableBuilder[Self <: RecordMarkerDecisionAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMarkerName(value: MarkerName): Self = this.set("markerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDetails(value: Data): Self = this.set("details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
+    def setMarkerName(value: MarkerName): Self = StObject.set(x, "markerName", value.asInstanceOf[js.Any])
   }
 }

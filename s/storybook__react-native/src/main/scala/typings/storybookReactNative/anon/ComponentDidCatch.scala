@@ -6,12 +6,13 @@ import typings.react.mod.ReactInstance
 import typings.react.mod.global.JSX.Element
 import typings.std.Error
 import typings.std.Pick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComponentDidCatch extends js.Object {
+trait ComponentDidCatch extends StObject {
   
   var UNSAFE_componentWillMount: js.UndefOr[js.Function0[Unit]] = js.native
   

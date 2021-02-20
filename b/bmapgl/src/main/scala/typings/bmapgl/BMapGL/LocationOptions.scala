@@ -1,11 +1,12 @@
 package typings.bmapgl.BMapGL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationOptions extends js.Object {
+trait LocationOptions extends StObject {
   
   var numPois: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object LocationOptions {
   }
   
   @scala.inline
-  implicit class LocationOptionsOps[Self <: LocationOptions] (val x: Self) extends AnyVal {
+  implicit class LocationOptionsMutableBuilder[Self <: LocationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNumPois(value: Double): Self = StObject.set(x, "numPois", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNumPoisUndefined: Self = StObject.set(x, "numPois", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPoiRadius(value: Double): Self = StObject.set(x, "poiRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumPois(value: Double): Self = this.set("numPois", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumPois: Self = this.set("numPois", js.undefined)
-    
-    @scala.inline
-    def setPoiRadius(value: Double): Self = this.set("poiRadius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePoiRadius: Self = this.set("poiRadius", js.undefined)
+    def setPoiRadiusUndefined: Self = StObject.set(x, "poiRadius", js.undefined)
   }
 }

@@ -4,20 +4,20 @@ import typings.angularCompiler.compileMetadataMod.CompileDirectiveMetadata
 import typings.angularCompiler.compileMetadataMod.CompileStylesheetMetadata
 import typings.angularCompiler.srcUtilMod.OutputContext
 import typings.angularCompiler.urlResolverMod.UrlResolver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/style_compiler", JSImport.Namespace)
-@js.native
-object styleCompilerMod extends js.Object {
+object styleCompilerMod {
   
+  @JSImport("@angular/compiler/src/style_compiler", "CONTENT_ATTR")
+  @js.native
   val CONTENT_ATTR: String = js.native
   
-  val HOST_ATTR: String = js.native
-  
+  @JSImport("@angular/compiler/src/style_compiler", "CompiledStylesheet")
   @js.native
-  class CompiledStylesheet protected () extends js.Object {
+  class CompiledStylesheet protected () extends StObject {
     def this(
       outputCtx: OutputContext,
       stylesVar: String,
@@ -37,8 +37,13 @@ object styleCompilerMod extends js.Object {
     var stylesVar: String = js.native
   }
   
+  @JSImport("@angular/compiler/src/style_compiler", "HOST_ATTR")
   @js.native
-  class StyleCompiler protected () extends js.Object {
+  val HOST_ATTR: String = js.native
+  
+  @JSImport("@angular/compiler/src/style_compiler", "StyleCompiler")
+  @js.native
+  class StyleCompiler protected () extends StObject {
     def this(_urlResolver: UrlResolver) = this()
     
     var _compileStyles: js.Any = js.native
@@ -62,8 +67,9 @@ object styleCompilerMod extends js.Object {
     def needsStyleShim(comp: CompileDirectiveMetadata): Boolean = js.native
   }
   
+  @JSImport("@angular/compiler/src/style_compiler", "StylesCompileDependency")
   @js.native
-  class StylesCompileDependency protected () extends js.Object {
+  class StylesCompileDependency protected () extends StObject {
     def this(name: String, moduleUrl: String, setValue: js.Function1[/* value */ js.Any, Unit]) = this()
     
     var moduleUrl: String = js.native

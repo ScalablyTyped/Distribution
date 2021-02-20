@@ -68,12 +68,13 @@ import typings.elasticElasticsearch.transportMod.TransportRequestCallback
 import typings.elasticElasticsearch.transportMod.TransportRequestOptions
 import typings.elasticElasticsearch.transportMod.TransportRequestPromise
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Closejob extends js.Object {
+trait Closejob extends StObject {
   
   def closeJob[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def closeJob[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native

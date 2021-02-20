@@ -6,12 +6,13 @@ import typings.reactNativeFirebase.mod.RNFirebase.firestore.Query.ObserverOnNext
 import typings.reactNativeFirebase.mod.RNFirebase.firestore.Types.GetOptions
 import typings.reactNativeFirebase.mod.RNFirebase.firestore.Types.QueryDirection
 import typings.reactNativeFirebase.mod.RNFirebase.firestore.Types.QueryOperator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollectionReference extends js.Object {
+trait CollectionReference extends StObject {
   
   def add(data: js.Object): js.Promise[DocumentReference] = js.native
   

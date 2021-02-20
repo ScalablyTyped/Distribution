@@ -1,11 +1,12 @@
 package typings.tuyaPanelKit.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloseIcon extends js.Object {
+trait CloseIcon extends StObject {
   
   var background: js.UndefOr[String] = js.native
   
@@ -32,66 +33,54 @@ object CloseIcon {
   }
   
   @scala.inline
-  implicit class CloseIconOps[Self <: CloseIcon] (val x: Self) extends AnyVal {
+  implicit class CloseIconMutableBuilder[Self <: CloseIcon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloseIcon(value: String): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setErrorIcon(value: String): Self = StObject.set(x, "errorIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseIcon(value: String): Self = this.set("closeIcon", value.asInstanceOf[js.Any])
+    def setErrorIconUndefined: Self = StObject.set(x, "errorIcon", js.undefined)
     
     @scala.inline
-    def deleteCloseIcon: Self = this.set("closeIcon", js.undefined)
+    def setIconColor(value: String): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorIcon(value: String): Self = this.set("errorIcon", value.asInstanceOf[js.Any])
+    def setIconColorUndefined: Self = StObject.set(x, "iconColor", js.undefined)
     
     @scala.inline
-    def deleteErrorIcon: Self = this.set("errorIcon", js.undefined)
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconColor(value: String): Self = this.set("iconColor", value.asInstanceOf[js.Any])
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def deleteIconColor: Self = this.set("iconColor", js.undefined)
+    def setSuccessIcon(value: String): Self = StObject.set(x, "successIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setSuccessIconUndefined: Self = StObject.set(x, "successIcon", js.undefined)
     
     @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessIcon(value: String): Self = this.set("successIcon", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteSuccessIcon: Self = this.set("successIcon", js.undefined)
+    def setWarningIcon(value: String): Self = StObject.set(x, "warningIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setWarningIcon(value: String): Self = this.set("warningIcon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarningIcon: Self = this.set("warningIcon", js.undefined)
+    def setWarningIconUndefined: Self = StObject.set(x, "warningIcon", js.undefined)
   }
 }

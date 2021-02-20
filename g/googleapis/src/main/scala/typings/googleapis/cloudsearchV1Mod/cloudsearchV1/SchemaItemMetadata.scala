@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Available metadata fields for the item.
   */
 @js.native
-trait SchemaItemMetadata extends js.Object {
+trait SchemaItemMetadata extends StObject {
   
   /**
     * The name of the container for this item. Deletion of the container item
@@ -99,96 +100,84 @@ object SchemaItemMetadata {
   }
   
   @scala.inline
-  implicit class SchemaItemMetadataOps[Self <: SchemaItemMetadata] (val x: Self) extends AnyVal {
+  implicit class SchemaItemMetadataMutableBuilder[Self <: SchemaItemMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerName(value: String): Self = this.set("containerName", value.asInstanceOf[js.Any])
+    def setContentLanguageUndefined: Self = StObject.set(x, "contentLanguage", js.undefined)
     
     @scala.inline
-    def deleteContainerName: Self = this.set("containerName", js.undefined)
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentLanguage(value: String): Self = this.set("contentLanguage", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteContentLanguage: Self = this.set("contentLanguage", js.undefined)
+    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setInteractions(value: js.Array[SchemaInteraction]): Self = StObject.set(x, "interactions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setInteractionsUndefined: Self = StObject.set(x, "interactions", js.undefined)
     
     @scala.inline
-    def deleteHash: Self = this.set("hash", js.undefined)
+    def setInteractionsVarargs(value: SchemaInteraction*): Self = StObject.set(x, "interactions", js.Array(value :_*))
     
     @scala.inline
-    def setInteractionsVarargs(value: SchemaInteraction*): Self = this.set("interactions", js.Array(value :_*))
+    def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractions(value: js.Array[SchemaInteraction]): Self = this.set("interactions", value.asInstanceOf[js.Any])
+    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
     @scala.inline
-    def deleteInteractions: Self = this.set("interactions", js.undefined)
+    def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
     
     @scala.inline
-    def setKeywordsVarargs(value: String*): Self = this.set("keywords", js.Array(value :_*))
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: js.Array[String]): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
     @scala.inline
-    def deleteKeywords: Self = this.set("keywords", js.undefined)
+    def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
     
     @scala.inline
-    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    def setSearchQualityMetadata(value: SchemaSearchQualityMetadata): Self = StObject.set(x, "searchQualityMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectType(value: String): Self = this.set("objectType", value.asInstanceOf[js.Any])
+    def setSearchQualityMetadataUndefined: Self = StObject.set(x, "searchQualityMetadata", js.undefined)
     
     @scala.inline
-    def deleteObjectType: Self = this.set("objectType", js.undefined)
+    def setSourceRepositoryUrl(value: String): Self = StObject.set(x, "sourceRepositoryUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchQualityMetadata(value: SchemaSearchQualityMetadata): Self = this.set("searchQualityMetadata", value.asInstanceOf[js.Any])
+    def setSourceRepositoryUrlUndefined: Self = StObject.set(x, "sourceRepositoryUrl", js.undefined)
     
     @scala.inline
-    def deleteSearchQualityMetadata: Self = this.set("searchQualityMetadata", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceRepositoryUrl(value: String): Self = this.set("sourceRepositoryUrl", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteSourceRepositoryUrl: Self = this.set("sourceRepositoryUrl", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

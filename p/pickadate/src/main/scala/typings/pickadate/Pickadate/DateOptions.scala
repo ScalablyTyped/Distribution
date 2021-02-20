@@ -1,5 +1,6 @@
 package typings.pickadate.Pickadate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DateOptions extends Options {
   
-   // default 'Today'
+  // default 'Today'
   var close: js.UndefOr[String] = js.native
   
   /**
@@ -30,17 +31,17 @@ trait DateOptions extends Options {
   // Classes
   var klass: js.UndefOr[DateKlassOptions] = js.native
   
-   // default 'Close'
+  // default 'Close'
   // Accessibility labels
   var labelMonthNext: js.UndefOr[String] = js.native
   
-   // default 'Next month'
+  // default 'Next month'
   var labelMonthPrev: js.UndefOr[String] = js.native
   
-   // default 'Previous month'
+  // default 'Previous month'
   var labelMonthSelect: js.UndefOr[String] = js.native
   
-   // default 'Select a month'
+  // default 'Select a month'
   var labelYearSelect: js.UndefOr[String] = js.native
   
   /**
@@ -60,7 +61,7 @@ trait DateOptions extends Options {
   // Strings and translations
   var monthsFull: js.UndefOr[js.Array[String]] = js.native
   
-   // default 'January' through 'December'
+  // default 'January' through 'December'
   var monthsShort: js.UndefOr[js.Array[String]] = js.native
   
   /**
@@ -68,7 +69,7 @@ trait DateOptions extends Options {
     */
   var selectMonths: js.UndefOr[Boolean] = js.native
   
-   //default 'Select a year'
+  //default 'Select a year'
   /**
     * True enables the dropdown selector and false replaces it with text.
     * You can also specify the number of years to show in the dropdown
@@ -77,7 +78,7 @@ trait DateOptions extends Options {
     */
   var selectYears: js.UndefOr[Boolean | Double] = js.native
   
-   // default 'Sun' through 'Sat'
+  // default 'Sun' through 'Sat'
   var showMonthsShort: js.UndefOr[Boolean] = js.native
   
   var showWeekdaysFull: js.UndefOr[Boolean] = js.native
@@ -85,10 +86,10 @@ trait DateOptions extends Options {
   // Buttons
   var today: js.UndefOr[String] = js.native
   
-   // default 'Jan' through 'Dec'
+  // default 'Jan' through 'Dec'
   var weekdaysFull: js.UndefOr[js.Array[String]] = js.native
   
-   // default 'Sunday' through 'Saturday'
+  // default 'Sunday' through 'Saturday'
   var weekdaysShort: js.UndefOr[js.Array[String]] = js.native
 }
 object DateOptions {
@@ -100,147 +101,135 @@ object DateOptions {
   }
   
   @scala.inline
-  implicit class DateOptionsOps[Self <: DateOptions] (val x: Self) extends AnyVal {
+  implicit class DateOptionsMutableBuilder[Self <: DateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisable(value: js.Array[_]): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: String): Self = this.set("close", value.asInstanceOf[js.Any])
+    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
     @scala.inline
-    def deleteClose: Self = this.set("close", js.undefined)
+    def setDisableVarargs(value: js.Any*): Self = StObject.set(x, "disable", js.Array(value :_*))
     
     @scala.inline
-    def setDisableVarargs(value: js.Any*): Self = this.set("disable", js.Array(value :_*))
+    def setFirstDay(value: Boolean | Double): Self = StObject.set(x, "firstDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable(value: js.Array[_]): Self = this.set("disable", value.asInstanceOf[js.Any])
+    def setFirstDayUndefined: Self = StObject.set(x, "firstDay", js.undefined)
     
     @scala.inline
-    def deleteDisable: Self = this.set("disable", js.undefined)
+    def setKlass(value: DateKlassOptions): Self = StObject.set(x, "klass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstDay(value: Boolean | Double): Self = this.set("firstDay", value.asInstanceOf[js.Any])
+    def setKlassUndefined: Self = StObject.set(x, "klass", js.undefined)
     
     @scala.inline
-    def deleteFirstDay: Self = this.set("firstDay", js.undefined)
+    def setLabelMonthNext(value: String): Self = StObject.set(x, "labelMonthNext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKlass(value: DateKlassOptions): Self = this.set("klass", value.asInstanceOf[js.Any])
+    def setLabelMonthNextUndefined: Self = StObject.set(x, "labelMonthNext", js.undefined)
     
     @scala.inline
-    def deleteKlass: Self = this.set("klass", js.undefined)
+    def setLabelMonthPrev(value: String): Self = StObject.set(x, "labelMonthPrev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelMonthNext(value: String): Self = this.set("labelMonthNext", value.asInstanceOf[js.Any])
+    def setLabelMonthPrevUndefined: Self = StObject.set(x, "labelMonthPrev", js.undefined)
     
     @scala.inline
-    def deleteLabelMonthNext: Self = this.set("labelMonthNext", js.undefined)
+    def setLabelMonthSelect(value: String): Self = StObject.set(x, "labelMonthSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelMonthPrev(value: String): Self = this.set("labelMonthPrev", value.asInstanceOf[js.Any])
+    def setLabelMonthSelectUndefined: Self = StObject.set(x, "labelMonthSelect", js.undefined)
     
     @scala.inline
-    def deleteLabelMonthPrev: Self = this.set("labelMonthPrev", js.undefined)
+    def setLabelYearSelect(value: String): Self = StObject.set(x, "labelYearSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelMonthSelect(value: String): Self = this.set("labelMonthSelect", value.asInstanceOf[js.Any])
+    def setLabelYearSelectUndefined: Self = StObject.set(x, "labelYearSelect", js.undefined)
     
     @scala.inline
-    def deleteLabelMonthSelect: Self = this.set("labelMonthSelect", js.undefined)
+    def setMax(value: MinOrMaxDateOption): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelYearSelect(value: String): Self = this.set("labelYearSelect", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteLabelYearSelect: Self = this.set("labelYearSelect", js.undefined)
+    def setMin(value: MinOrMaxDateOption): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: MinOrMaxDateOption): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMonthsFull(value: js.Array[String]): Self = StObject.set(x, "monthsFull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: MinOrMaxDateOption): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setMonthsFullUndefined: Self = StObject.set(x, "monthsFull", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setMonthsFullVarargs(value: String*): Self = StObject.set(x, "monthsFull", js.Array(value :_*))
     
     @scala.inline
-    def setMonthsFullVarargs(value: String*): Self = this.set("monthsFull", js.Array(value :_*))
+    def setMonthsShort(value: js.Array[String]): Self = StObject.set(x, "monthsShort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthsFull(value: js.Array[String]): Self = this.set("monthsFull", value.asInstanceOf[js.Any])
+    def setMonthsShortUndefined: Self = StObject.set(x, "monthsShort", js.undefined)
     
     @scala.inline
-    def deleteMonthsFull: Self = this.set("monthsFull", js.undefined)
+    def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value :_*))
     
     @scala.inline
-    def setMonthsShortVarargs(value: String*): Self = this.set("monthsShort", js.Array(value :_*))
+    def setSelectMonths(value: Boolean): Self = StObject.set(x, "selectMonths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthsShort(value: js.Array[String]): Self = this.set("monthsShort", value.asInstanceOf[js.Any])
+    def setSelectMonthsUndefined: Self = StObject.set(x, "selectMonths", js.undefined)
     
     @scala.inline
-    def deleteMonthsShort: Self = this.set("monthsShort", js.undefined)
+    def setSelectYears(value: Boolean | Double): Self = StObject.set(x, "selectYears", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectMonths(value: Boolean): Self = this.set("selectMonths", value.asInstanceOf[js.Any])
+    def setSelectYearsUndefined: Self = StObject.set(x, "selectYears", js.undefined)
     
     @scala.inline
-    def deleteSelectMonths: Self = this.set("selectMonths", js.undefined)
+    def setShowMonthsShort(value: Boolean): Self = StObject.set(x, "showMonthsShort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectYears(value: Boolean | Double): Self = this.set("selectYears", value.asInstanceOf[js.Any])
+    def setShowMonthsShortUndefined: Self = StObject.set(x, "showMonthsShort", js.undefined)
     
     @scala.inline
-    def deleteSelectYears: Self = this.set("selectYears", js.undefined)
+    def setShowWeekdaysFull(value: Boolean): Self = StObject.set(x, "showWeekdaysFull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMonthsShort(value: Boolean): Self = this.set("showMonthsShort", value.asInstanceOf[js.Any])
+    def setShowWeekdaysFullUndefined: Self = StObject.set(x, "showWeekdaysFull", js.undefined)
     
     @scala.inline
-    def deleteShowMonthsShort: Self = this.set("showMonthsShort", js.undefined)
+    def setToday(value: String): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowWeekdaysFull(value: Boolean): Self = this.set("showWeekdaysFull", value.asInstanceOf[js.Any])
+    def setTodayUndefined: Self = StObject.set(x, "today", js.undefined)
     
     @scala.inline
-    def deleteShowWeekdaysFull: Self = this.set("showWeekdaysFull", js.undefined)
+    def setWeekdaysFull(value: js.Array[String]): Self = StObject.set(x, "weekdaysFull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToday(value: String): Self = this.set("today", value.asInstanceOf[js.Any])
+    def setWeekdaysFullUndefined: Self = StObject.set(x, "weekdaysFull", js.undefined)
     
     @scala.inline
-    def deleteToday: Self = this.set("today", js.undefined)
+    def setWeekdaysFullVarargs(value: String*): Self = StObject.set(x, "weekdaysFull", js.Array(value :_*))
     
     @scala.inline
-    def setWeekdaysFullVarargs(value: String*): Self = this.set("weekdaysFull", js.Array(value :_*))
+    def setWeekdaysShort(value: js.Array[String]): Self = StObject.set(x, "weekdaysShort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeekdaysFull(value: js.Array[String]): Self = this.set("weekdaysFull", value.asInstanceOf[js.Any])
+    def setWeekdaysShortUndefined: Self = StObject.set(x, "weekdaysShort", js.undefined)
     
     @scala.inline
-    def deleteWeekdaysFull: Self = this.set("weekdaysFull", js.undefined)
-    
-    @scala.inline
-    def setWeekdaysShortVarargs(value: String*): Self = this.set("weekdaysShort", js.Array(value :_*))
-    
-    @scala.inline
-    def setWeekdaysShort(value: js.Array[String]): Self = this.set("weekdaysShort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeekdaysShort: Self = this.set("weekdaysShort", js.undefined)
+    def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value :_*))
   }
 }

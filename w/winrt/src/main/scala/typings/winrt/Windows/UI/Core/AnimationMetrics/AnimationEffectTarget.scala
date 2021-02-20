@@ -1,14 +1,15 @@
 package typings.winrt.Windows.UI.Core.AnimationMetrics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AnimationEffectTarget extends js.Object
+sealed trait AnimationEffectTarget extends StObject
 @JSGlobal("Windows.UI.Core.AnimationMetrics.AnimationEffectTarget")
 @js.native
-object AnimationEffectTarget extends js.Object {
+object AnimationEffectTarget extends StObject {
   
   @js.native
   sealed trait added extends AnimationEffectTarget

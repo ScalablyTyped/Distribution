@@ -2,22 +2,25 @@ package typings.devexpressUtils
 
 import typings.devexpressUtils.offsetsMod.Offsets
 import typings.devexpressUtils.typesMod.ICloneable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/geometry/paddings", JSImport.Namespace)
-@js.native
-object paddingsMod extends js.Object {
+object paddingsMod {
   
+  @JSImport("@devexpress/utils/lib/geometry/paddings", "Paddings")
   @js.native
-  class Paddings ()
+  class Paddings protected ()
     extends Offsets
-       with ICloneable[Paddings]
+       with ICloneable[Paddings] {
+    def this(left: Double, right: Double, top: Double, bottom: Double) = this()
+  }
   /* static members */
-  @js.native
-  object Paddings extends js.Object {
+  object Paddings {
     
+    @JSImport("@devexpress/utils/lib/geometry/paddings", "Paddings.empty")
+    @js.native
     def empty(): Paddings = js.native
   }
 }

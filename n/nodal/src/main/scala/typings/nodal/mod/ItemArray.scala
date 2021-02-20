@@ -1,6 +1,7 @@
 package typings.nodal.mod
 
 import typings.std.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +17,9 @@ class ItemArray[T] () extends Array[T] {
   def toObject(arrInterface: js.Array[String]): js.Object = js.native
 }
 /* static members */
-@JSImport("nodal", "ItemArray")
-@js.native
-object ItemArray extends js.Object {
+object ItemArray {
   
+  @JSImport("nodal", "ItemArray.from")
+  @js.native
   def from(arr: js.Array[js.Object]): ItemArray[js.Object] = js.native
 }

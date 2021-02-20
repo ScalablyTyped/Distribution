@@ -1,11 +1,12 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomerCreateRequest extends js.Object {
+trait CustomerCreateRequest extends StObject {
   
   var company: js.UndefOr[String] = js.native
   
@@ -42,96 +43,84 @@ object CustomerCreateRequest {
   }
   
   @scala.inline
-  implicit class CustomerCreateRequestOps[Self <: CustomerCreateRequest] (val x: Self) extends AnyVal {
+  implicit class CustomerCreateRequestMutableBuilder[Self <: CustomerCreateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreditCard(value: CreditCardCreateRequest): Self = StObject.set(x, "creditCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompany(value: String): Self = this.set("company", value.asInstanceOf[js.Any])
+    def setCreditCardUndefined: Self = StObject.set(x, "creditCard", js.undefined)
     
     @scala.inline
-    def deleteCompany: Self = this.set("company", js.undefined)
+    def setCustomFields(value: js.Any): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreditCard(value: CreditCardCreateRequest): Self = this.set("creditCard", value.asInstanceOf[js.Any])
+    def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
     
     @scala.inline
-    def deleteCreditCard: Self = this.set("creditCard", js.undefined)
+    def setDeviceData(value: String): Self = StObject.set(x, "deviceData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomFields(value: js.Any): Self = this.set("customFields", value.asInstanceOf[js.Any])
+    def setDeviceDataUndefined: Self = StObject.set(x, "deviceData", js.undefined)
     
     @scala.inline
-    def deleteCustomFields: Self = this.set("customFields", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceData(value: String): Self = this.set("deviceData", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteDeviceData: Self = this.set("deviceData", js.undefined)
+    def setFax(value: String): Self = StObject.set(x, "fax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setFaxUndefined: Self = StObject.set(x, "fax", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFax(value: String): Self = this.set("fax", value.asInstanceOf[js.Any])
+    def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
     
     @scala.inline
-    def deleteFax: Self = this.set("fax", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstName(value: String): Self = this.set("firstName", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFirstName: Self = this.set("firstName", js.undefined)
+    def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLastNameUndefined: Self = StObject.set(x, "lastName", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPaymentMethodNonce(value: String): Self = StObject.set(x, "paymentMethodNonce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastName(value: String): Self = this.set("lastName", value.asInstanceOf[js.Any])
+    def setPaymentMethodNonceUndefined: Self = StObject.set(x, "paymentMethodNonce", js.undefined)
     
     @scala.inline
-    def deleteLastName: Self = this.set("lastName", js.undefined)
+    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentMethodNonce(value: String): Self = this.set("paymentMethodNonce", value.asInstanceOf[js.Any])
+    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
     
     @scala.inline
-    def deletePaymentMethodNonce: Self = this.set("paymentMethodNonce", js.undefined)
+    def setRiskData(value: CustomerRiskData): Self = StObject.set(x, "riskData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhone(value: String): Self = this.set("phone", value.asInstanceOf[js.Any])
+    def setRiskDataUndefined: Self = StObject.set(x, "riskData", js.undefined)
     
     @scala.inline
-    def deletePhone: Self = this.set("phone", js.undefined)
+    def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRiskData(value: CustomerRiskData): Self = this.set("riskData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRiskData: Self = this.set("riskData", js.undefined)
-    
-    @scala.inline
-    def setWebsite(value: String): Self = this.set("website", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsite: Self = this.set("website", js.undefined)
+    def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
   }
 }

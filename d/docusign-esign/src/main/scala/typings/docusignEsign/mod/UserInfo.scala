@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserInfo extends js.Object {
+trait UserInfo extends StObject {
   
   /**
     * The external account number (int) or account ID GUID.
@@ -89,98 +90,86 @@ object UserInfo {
   }
   
   @scala.inline
-  implicit class UserInfoOps[Self <: UserInfo] (val x: Self) extends AnyVal {
+  implicit class UserInfoMutableBuilder[Self <: UserInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setActivationAccessCode(value: String): Self = StObject.set(x, "activationAccessCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountName(value: String): Self = this.set("accountName", value.asInstanceOf[js.Any])
+    def setActivationAccessCodeUndefined: Self = StObject.set(x, "activationAccessCode", js.undefined)
     
     @scala.inline
-    def deleteAccountName: Self = this.set("accountName", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivationAccessCode(value: String): Self = this.set("activationAccessCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActivationAccessCode: Self = this.set("activationAccessCode", js.undefined)
-    
-    @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
     def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-    ): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def setLoginStatus(value: String): Self = this.set("loginStatus", value.asInstanceOf[js.Any])
+    def setLoginStatus(value: String): Self = StObject.set(x, "loginStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoginStatus: Self = this.set("loginStatus", js.undefined)
+    def setLoginStatusUndefined: Self = StObject.set(x, "loginStatus", js.undefined)
     
     @scala.inline
-    def setMembershipId(value: String): Self = this.set("membershipId", value.asInstanceOf[js.Any])
+    def setMembershipId(value: String): Self = StObject.set(x, "membershipId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMembershipId: Self = this.set("membershipId", js.undefined)
+    def setMembershipIdUndefined: Self = StObject.set(x, "membershipId", js.undefined)
     
     @scala.inline
-    def setSendActivationEmail(value: String): Self = this.set("sendActivationEmail", value.asInstanceOf[js.Any])
+    def setSendActivationEmail(value: String): Self = StObject.set(x, "sendActivationEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSendActivationEmail: Self = this.set("sendActivationEmail", js.undefined)
+    def setSendActivationEmailUndefined: Self = StObject.set(x, "sendActivationEmail", js.undefined)
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     
     @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     
     @scala.inline
-    def setUserName(value: String): Self = this.set("userName", value.asInstanceOf[js.Any])
+    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserName: Self = this.set("userName", js.undefined)
+    def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
     
     @scala.inline
-    def setUserStatus(value: String): Self = this.set("userStatus", value.asInstanceOf[js.Any])
+    def setUserStatus(value: String): Self = StObject.set(x, "userStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserStatus: Self = this.set("userStatus", js.undefined)
+    def setUserStatusUndefined: Self = StObject.set(x, "userStatus", js.undefined)
     
     @scala.inline
-    def setUserType(value: String): Self = this.set("userType", value.asInstanceOf[js.Any])
+    def setUserType(value: String): Self = StObject.set(x, "userType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserType: Self = this.set("userType", js.undefined)
+    def setUserTypeUndefined: Self = StObject.set(x, "userType", js.undefined)
   }
 }

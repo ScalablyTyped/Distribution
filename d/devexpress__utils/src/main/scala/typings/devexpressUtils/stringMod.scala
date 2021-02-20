@@ -2,16 +2,16 @@ package typings.devexpressUtils
 
 import typings.devexpressUtils.dateMod.DateFormatter
 import typings.devexpressUtils.numberMod.NumberFormatter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/formatters/string", JSImport.Namespace)
-@js.native
-object stringMod extends js.Object {
+object stringMod {
   
+  @JSImport("@devexpress/utils/lib/formatters/string", "StringFormatter")
   @js.native
-  class StringFormatter protected () extends js.Object {
+  class StringFormatter protected () extends StObject {
     def this(dateFormatter: DateFormatter, numberFormatter: NumberFormatter) = this()
     
     var activeDateFormat: js.Any = js.native

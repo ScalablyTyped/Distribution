@@ -7,6 +7,7 @@ import typings.antvG2.antvG2Strings.log
 import typings.antvG2.antvG2Strings.pow
 import typings.antvG2.antvG2Strings.time
 import typings.antvG2.antvG2Strings.timeCat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("@antv/g2", "Scale")
 @js.native
-class Scale[T] () extends js.Object {
+class Scale[T] () extends StObject {
   
   var alias: js.UndefOr[String | Double] = js.native
   

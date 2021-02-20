@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiagramEditableRotate extends js.Object {
+trait DiagramEditableRotate extends StObject {
   
   var fill: js.UndefOr[DiagramEditableRotateFill] = js.native
   
@@ -20,30 +21,18 @@ object DiagramEditableRotate {
   }
   
   @scala.inline
-  implicit class DiagramEditableRotateOps[Self <: DiagramEditableRotate] (val x: Self) extends AnyVal {
+  implicit class DiagramEditableRotateMutableBuilder[Self <: DiagramEditableRotate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFill(value: DiagramEditableRotateFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStroke(value: DiagramEditableRotateStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: DiagramEditableRotateFill): Self = this.set("fill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
-    
-    @scala.inline
-    def setStroke(value: DiagramEditableRotateStroke): Self = this.set("stroke", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStroke: Self = this.set("stroke", js.undefined)
+    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
   }
 }

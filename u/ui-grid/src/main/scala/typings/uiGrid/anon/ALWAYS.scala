@@ -1,11 +1,12 @@
 package typings.uiGrid.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ALWAYS extends js.Object {
+trait ALWAYS extends StObject {
   
   var ALWAYS: Double = js.native
   
@@ -22,27 +23,15 @@ object ALWAYS {
   }
   
   @scala.inline
-  implicit class ALWAYSOps[Self <: ALWAYS] (val x: Self) extends AnyVal {
+  implicit class ALWAYSMutableBuilder[Self <: ALWAYS] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setALWAYS(value: Double): Self = StObject.set(x, "ALWAYS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNEVER(value: Double): Self = StObject.set(x, "NEVER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setALWAYS(value: Double): Self = this.set("ALWAYS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNEVER(value: Double): Self = this.set("NEVER", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWHEN_NEEDED(value: Double): Self = this.set("WHEN_NEEDED", value.asInstanceOf[js.Any])
+    def setWHEN_NEEDED(value: Double): Self = StObject.set(x, "WHEN_NEEDED", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A PageElement kind representing a linked chart embedded from Google Sheets.
   */
 @js.native
-trait SchemaSheetsChart extends js.Object {
+trait SchemaSheetsChart extends StObject {
   
   /**
     * The ID of the specific chart in the Google Sheets spreadsheet that is
@@ -44,42 +45,30 @@ object SchemaSheetsChart {
   }
   
   @scala.inline
-  implicit class SchemaSheetsChartOps[Self <: SchemaSheetsChart] (val x: Self) extends AnyVal {
+  implicit class SchemaSheetsChartMutableBuilder[Self <: SchemaSheetsChart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartId(value: Double): Self = this.set("chartId", value.asInstanceOf[js.Any])
+    def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
     
     @scala.inline
-    def deleteChartId: Self = this.set("chartId", js.undefined)
+    def setSheetsChartProperties(value: SchemaSheetsChartProperties): Self = StObject.set(x, "sheetsChartProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentUrl(value: String): Self = this.set("contentUrl", value.asInstanceOf[js.Any])
+    def setSheetsChartPropertiesUndefined: Self = StObject.set(x, "sheetsChartProperties", js.undefined)
     
     @scala.inline
-    def deleteContentUrl: Self = this.set("contentUrl", js.undefined)
+    def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSheetsChartProperties(value: SchemaSheetsChartProperties): Self = this.set("sheetsChartProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSheetsChartProperties: Self = this.set("sheetsChartProperties", js.undefined)
-    
-    @scala.inline
-    def setSpreadsheetId(value: String): Self = this.set("spreadsheetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpreadsheetId: Self = this.set("spreadsheetId", js.undefined)
+    def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
   }
 }

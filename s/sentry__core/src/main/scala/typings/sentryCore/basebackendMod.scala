@@ -7,16 +7,33 @@ import typings.sentryTypes.optionsMod.Options
 import typings.sentryTypes.sessionMod.Session
 import typings.sentryTypes.severityMod.Severity
 import typings.sentryTypes.transportMod.Transport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sentry/core/dist/basebackend", JSImport.Namespace)
-@js.native
-object basebackendMod extends js.Object {
+object basebackendMod {
+  
+  @JSImport("@sentry/core/dist/basebackend", "BaseBackend")
+  @js.native
+  abstract class BaseBackend[O /* <: Options */] protected () extends Backend {
+    /** Creates a new backend instance. */
+    def this(options: O) = this()
+    
+    /** Options passed to the SDK. */
+    val _options: O = js.native
+    
+    /**
+      * Sets up the transport so it can be used later to send requests.
+      */
+    /* protected */ def _setupTransport(): Transport = js.native
+    
+    /** Cached transport used internally. */
+    var _transport: Transport = js.native
+  }
   
   @js.native
-  trait Backend extends js.Object {
+  trait Backend extends StObject {
     
     /** Creates a {@link Event} from an exception. */
     def eventFromException(exception: js.Any): js.Thenable[Event] = js.native
@@ -41,23 +58,6 @@ object basebackendMod extends js.Object {
     
     /** Submits the session to Sentry */
     def sendSession(session: Session): Unit = js.native
-  }
-  
-  @js.native
-  abstract class BaseBackend[O /* <: Options */] protected () extends Backend {
-    /** Creates a new backend instance. */
-    def this(options: O) = this()
-    
-    /** Options passed to the SDK. */
-    val _options: O = js.native
-    
-    /**
-      * Sets up the transport so it can be used later to send requests.
-      */
-    /* protected */ def _setupTransport(): Transport = js.native
-    
-    /** Cached transport used internally. */
-    var _transport: Transport = js.native
   }
   
   type BackendClass[B /* <: Backend */, O /* <: Options */] = Instantiable1[/* options */ O, B]

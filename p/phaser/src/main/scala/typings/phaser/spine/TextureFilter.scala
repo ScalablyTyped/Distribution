@@ -1,14 +1,15 @@
 package typings.phaser.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextureFilter extends js.Object
+sealed trait TextureFilter extends StObject
 @JSGlobal("spine.TextureFilter")
 @js.native
-object TextureFilter extends js.Object {
+object TextureFilter extends StObject {
   
   @js.native
   sealed trait Linear extends TextureFilter

@@ -5,6 +5,7 @@ import typings.kiiCloudSdk.anon.`11`
 import typings.kiiCloudSdk.anon.`4`
 import typings.kiiCloudSdk.anon.`8`
 import typings.kiiCloudSdk.anon.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

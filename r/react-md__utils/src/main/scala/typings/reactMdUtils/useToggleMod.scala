@@ -2,15 +2,18 @@ package typings.reactMdUtils
 
 import typings.react.mod.Dispatch
 import typings.react.mod.SetStateAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/utils/types/useToggle", JSImport.Namespace)
-@js.native
-object useToggleMod extends js.Object {
+object useToggleMod {
   
+  @JSImport("@react-md/utils/types/useToggle", "useToggle")
+  @js.native
   def useToggle(defaultToggled: js.Function0[Boolean]): ReturnValue = js.native
+  @JSImport("@react-md/utils/types/useToggle", "useToggle")
+  @js.native
   def useToggle(defaultToggled: Boolean): ReturnValue = js.native
   
   type Disable = js.Function0[Unit]

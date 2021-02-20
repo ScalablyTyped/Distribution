@@ -1,5 +1,6 @@
 package typings.idyllDocument
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("idyll-document", JSImport.Namespace)
 @js.native
-object idyllDocumentRequire extends js.Object
+object idyllDocumentRequire extends StObject

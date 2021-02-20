@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.screeps.screepsStrings.`5`
   - typings.screeps.screepsStrings.`7`
 */
-trait ExitKey extends js.Object
+trait ExitKey extends StObject
 object ExitKey {
   
   @scala.inline

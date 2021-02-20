@@ -1,11 +1,12 @@
 package typings.node.cryptoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BasePrivateKeyEncodingOptions[T /* <: KeyFormat */] extends js.Object {
+trait BasePrivateKeyEncodingOptions[T /* <: KeyFormat */] extends StObject {
   
   var cipher: js.UndefOr[String] = js.native
   
@@ -22,33 +23,21 @@ object BasePrivateKeyEncodingOptions {
   }
   
   @scala.inline
-  implicit class BasePrivateKeyEncodingOptionsOps[Self <: BasePrivateKeyEncodingOptions[_], T /* <: KeyFormat */] (val x: Self with BasePrivateKeyEncodingOptions[T]) extends AnyVal {
+  implicit class BasePrivateKeyEncodingOptionsMutableBuilder[Self <: BasePrivateKeyEncodingOptions[_], T /* <: KeyFormat */] (val x: Self with BasePrivateKeyEncodingOptions[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCipherUndefined: Self = StObject.set(x, "cipher", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: T): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: T): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCipher(value: String): Self = this.set("cipher", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCipher: Self = this.set("cipher", js.undefined)
-    
-    @scala.inline
-    def setPassphrase(value: String): Self = this.set("passphrase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassphrase: Self = this.set("passphrase", js.undefined)
+    def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
   }
 }

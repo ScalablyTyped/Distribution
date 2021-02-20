@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsdataserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecuteSqlRequest extends js.Object {
+trait ExecuteSqlRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the secret that enables access to the DB cluster.
@@ -41,39 +42,27 @@ object ExecuteSqlRequest {
   }
   
   @scala.inline
-  implicit class ExecuteSqlRequestOps[Self <: ExecuteSqlRequest] (val x: Self) extends AnyVal {
+  implicit class ExecuteSqlRequestMutableBuilder[Self <: ExecuteSqlRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsSecretStoreArn(value: Arn): Self = StObject.set(x, "awsSecretStoreArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatabase(value: DbName): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
     @scala.inline
-    def setAwsSecretStoreArn(value: Arn): Self = this.set("awsSecretStoreArn", value.asInstanceOf[js.Any])
+    def setDbClusterOrInstanceArn(value: Arn): Self = StObject.set(x, "dbClusterOrInstanceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbClusterOrInstanceArn(value: Arn): Self = this.set("dbClusterOrInstanceArn", value.asInstanceOf[js.Any])
+    def setSchema(value: DbName): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSqlStatements(value: SqlStatement): Self = this.set("sqlStatements", value.asInstanceOf[js.Any])
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     @scala.inline
-    def setDatabase(value: DbName): Self = this.set("database", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDatabase: Self = this.set("database", js.undefined)
-    
-    @scala.inline
-    def setSchema(value: DbName): Self = this.set("schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
+    def setSqlStatements(value: SqlStatement): Self = StObject.set(x, "sqlStatements", value.asInstanceOf[js.Any])
   }
 }

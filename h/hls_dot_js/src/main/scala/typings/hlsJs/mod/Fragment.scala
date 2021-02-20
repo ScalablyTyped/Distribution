@@ -1,5 +1,6 @@
 package typings.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the Fragment object contains fragment related info
   */
 @js.native
-trait Fragment extends js.Object {
+trait Fragment extends StObject {
   
   /**
     * continuity count
@@ -74,48 +75,36 @@ object Fragment {
   }
   
   @scala.inline
-  implicit class FragmentOps[Self <: Fragment] (val x: Self) extends AnyVal {
+  implicit class FragmentMutableBuilder[Self <: Fragment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCc(value: Double): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCc(value: Double): Self = this.set("cc", value.asInstanceOf[js.Any])
+    def setProgramDateTime(value: Double): Self = StObject.set(x, "programDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setSn(value: Double): Self = StObject.set(x, "sn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgramDateTime(value: Double): Self = this.set("programDateTime", value.asInstanceOf[js.Any])
+    def setTagList(value: js.Array[js.Array[String]]): Self = StObject.set(x, "tagList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSn(value: Double): Self = this.set("sn", value.asInstanceOf[js.Any])
+    def setTagListVarargs(value: js.Array[String]*): Self = StObject.set(x, "tagList", js.Array(value :_*))
     
     @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagListVarargs(value: js.Array[String]*): Self = this.set("tagList", js.Array(value :_*))
-    
-    @scala.inline
-    def setTagList(value: js.Array[js.Array[String]]): Self = this.set("tagList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

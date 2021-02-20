@@ -1,12 +1,13 @@
 package typings.autobahn.mod
 
 import typings.when.When.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IRegistration extends js.Object {
+trait IRegistration extends StObject {
   
   var active: Boolean = js.native
   

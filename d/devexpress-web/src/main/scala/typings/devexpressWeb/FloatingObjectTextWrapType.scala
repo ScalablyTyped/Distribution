@@ -1,17 +1,18 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FloatingObjectTextWrapType extends js.Object
+sealed trait FloatingObjectTextWrapType extends StObject
 /**
   * Lists values specifying how text is wrapped around a floating object.
   */
 @JSGlobal("FloatingObjectTextWrapType")
 @js.native
-object FloatingObjectTextWrapType extends js.Object {
+object FloatingObjectTextWrapType extends StObject {
   
   /**
     * The text does not wrap around the shape.

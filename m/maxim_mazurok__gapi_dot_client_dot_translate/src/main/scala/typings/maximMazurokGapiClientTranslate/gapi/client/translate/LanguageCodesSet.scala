@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranslate.gapi.client.translate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LanguageCodesSet extends js.Object {
+trait LanguageCodesSet extends StObject {
   
   /**
     * The BCP-47 language code(s) for terms defined in the glossary. All entries are unique. The list contains at least two entries. Expected to be an exact match for
@@ -22,27 +23,15 @@ object LanguageCodesSet {
   }
   
   @scala.inline
-  implicit class LanguageCodesSetOps[Self <: LanguageCodesSet] (val x: Self) extends AnyVal {
+  implicit class LanguageCodesSetMutableBuilder[Self <: LanguageCodesSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguageCodes(value: js.Array[String]): Self = StObject.set(x, "languageCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguageCodesUndefined: Self = StObject.set(x, "languageCodes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLanguageCodesVarargs(value: String*): Self = this.set("languageCodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setLanguageCodes(value: js.Array[String]): Self = this.set("languageCodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguageCodes: Self = this.set("languageCodes", js.undefined)
+    def setLanguageCodesVarargs(value: String*): Self = StObject.set(x, "languageCodes", js.Array(value :_*))
   }
 }

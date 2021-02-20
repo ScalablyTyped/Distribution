@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MigrateWorkspaceResult extends js.Object {
+trait MigrateWorkspaceResult extends StObject {
   
   /**
     * The original identifier of the WorkSpace that is being migrated.
@@ -26,30 +27,18 @@ object MigrateWorkspaceResult {
   }
   
   @scala.inline
-  implicit class MigrateWorkspaceResultOps[Self <: MigrateWorkspaceResult] (val x: Self) extends AnyVal {
+  implicit class MigrateWorkspaceResultMutableBuilder[Self <: MigrateWorkspaceResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSourceWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "SourceWorkspaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSourceWorkspaceIdUndefined: Self = StObject.set(x, "SourceWorkspaceId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "TargetWorkspaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceWorkspaceId(value: WorkspaceId): Self = this.set("SourceWorkspaceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceWorkspaceId: Self = this.set("SourceWorkspaceId", js.undefined)
-    
-    @scala.inline
-    def setTargetWorkspaceId(value: WorkspaceId): Self = this.set("TargetWorkspaceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetWorkspaceId: Self = this.set("TargetWorkspaceId", js.undefined)
+    def setTargetWorkspaceIdUndefined: Self = StObject.set(x, "TargetWorkspaceId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.teechart.Tee
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITool extends js.Object {
+trait ITool extends StObject {
   
   var active: Boolean = js.native
   
@@ -35,36 +36,24 @@ object ITool {
   }
   
   @scala.inline
-  implicit class IToolOps[Self <: ITool] (val x: Self) extends AnyVal {
+  implicit class IToolMutableBuilder[Self <: ITool] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClicked(value: IPoint => Boolean): Self = StObject.set(x, "clicked", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setDraw(value: () => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChart(value: IChart): Self = this.set("chart", value.asInstanceOf[js.Any])
+    def setMousedown(value: js.Any => Boolean): Self = StObject.set(x, "mousedown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClicked(value: IPoint => Boolean): Self = this.set("clicked", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDraw(value: () => Unit): Self = this.set("draw", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMousedown(value: js.Any => Boolean): Self = this.set("mousedown", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMousemove(value: js.Any => Boolean): Self = this.set("mousemove", js.Any.fromFunction1(value))
+    def setMousemove(value: js.Any => Boolean): Self = StObject.set(x, "mousemove", js.Any.fromFunction1(value))
   }
 }

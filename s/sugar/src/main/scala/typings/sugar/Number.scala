@@ -2,12 +2,13 @@ package typings.sugar
 
 import typings.sugar.sugarjs.Date.DateCreateOptions
 import typings.sugar.sugarjs.Range
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Number extends js.Object {
+trait Number extends StObject {
   
   def abbr(): java.lang.String = js.native
   def abbr(precision: Double): java.lang.String = js.native

@@ -1,14 +1,14 @@
 package typings.plottable
 
 import typings.plottable.animatorMod.IAnimator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/animators/nullAnimator", JSImport.Namespace)
-@js.native
-object nullAnimatorMod extends js.Object {
+object nullAnimatorMod {
   
+  @JSImport("plottable/build/src/animators/nullAnimator", "Null")
   @js.native
   class Null () extends IAnimator {
     

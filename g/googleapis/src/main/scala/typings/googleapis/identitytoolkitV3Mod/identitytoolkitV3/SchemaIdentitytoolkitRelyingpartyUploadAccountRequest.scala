@@ -1,5 +1,6 @@
 package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request to upload user account in batch.
   */
 @js.native
-trait SchemaIdentitytoolkitRelyingpartyUploadAccountRequest extends js.Object {
+trait SchemaIdentitytoolkitRelyingpartyUploadAccountRequest extends StObject {
   
   /**
     * Whether allow overwrite existing account when user local_id exists.
@@ -83,105 +84,93 @@ object SchemaIdentitytoolkitRelyingpartyUploadAccountRequest {
   }
   
   @scala.inline
-  implicit class SchemaIdentitytoolkitRelyingpartyUploadAccountRequestOps[Self <: SchemaIdentitytoolkitRelyingpartyUploadAccountRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaIdentitytoolkitRelyingpartyUploadAccountRequestMutableBuilder[Self <: SchemaIdentitytoolkitRelyingpartyUploadAccountRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowOverwrite(value: Boolean): Self = StObject.set(x, "allowOverwrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowOverwriteUndefined: Self = StObject.set(x, "allowOverwrite", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowOverwrite(value: Boolean): Self = this.set("allowOverwrite", value.asInstanceOf[js.Any])
+    def setBlockSizeUndefined: Self = StObject.set(x, "blockSize", js.undefined)
     
     @scala.inline
-    def deleteAllowOverwrite: Self = this.set("allowOverwrite", js.undefined)
+    def setCpuMemCost(value: Double): Self = StObject.set(x, "cpuMemCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockSize(value: Double): Self = this.set("blockSize", value.asInstanceOf[js.Any])
+    def setCpuMemCostUndefined: Self = StObject.set(x, "cpuMemCost", js.undefined)
     
     @scala.inline
-    def deleteBlockSize: Self = this.set("blockSize", js.undefined)
+    def setDelegatedProjectNumber(value: String): Self = StObject.set(x, "delegatedProjectNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuMemCost(value: Double): Self = this.set("cpuMemCost", value.asInstanceOf[js.Any])
+    def setDelegatedProjectNumberUndefined: Self = StObject.set(x, "delegatedProjectNumber", js.undefined)
     
     @scala.inline
-    def deleteCpuMemCost: Self = this.set("cpuMemCost", js.undefined)
+    def setDkLen(value: Double): Self = StObject.set(x, "dkLen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelegatedProjectNumber(value: String): Self = this.set("delegatedProjectNumber", value.asInstanceOf[js.Any])
+    def setDkLenUndefined: Self = StObject.set(x, "dkLen", js.undefined)
     
     @scala.inline
-    def deleteDelegatedProjectNumber: Self = this.set("delegatedProjectNumber", js.undefined)
+    def setHashAlgorithm(value: String): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDkLen(value: Double): Self = this.set("dkLen", value.asInstanceOf[js.Any])
+    def setHashAlgorithmUndefined: Self = StObject.set(x, "hashAlgorithm", js.undefined)
     
     @scala.inline
-    def deleteDkLen: Self = this.set("dkLen", js.undefined)
+    def setMemoryCost(value: Double): Self = StObject.set(x, "memoryCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHashAlgorithm(value: String): Self = this.set("hashAlgorithm", value.asInstanceOf[js.Any])
+    def setMemoryCostUndefined: Self = StObject.set(x, "memoryCost", js.undefined)
     
     @scala.inline
-    def deleteHashAlgorithm: Self = this.set("hashAlgorithm", js.undefined)
+    def setParallelization(value: Double): Self = StObject.set(x, "parallelization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemoryCost(value: Double): Self = this.set("memoryCost", value.asInstanceOf[js.Any])
+    def setParallelizationUndefined: Self = StObject.set(x, "parallelization", js.undefined)
     
     @scala.inline
-    def deleteMemoryCost: Self = this.set("memoryCost", js.undefined)
+    def setRounds(value: Double): Self = StObject.set(x, "rounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParallelization(value: Double): Self = this.set("parallelization", value.asInstanceOf[js.Any])
+    def setRoundsUndefined: Self = StObject.set(x, "rounds", js.undefined)
     
     @scala.inline
-    def deleteParallelization: Self = this.set("parallelization", js.undefined)
+    def setSaltSeparator(value: String): Self = StObject.set(x, "saltSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRounds(value: Double): Self = this.set("rounds", value.asInstanceOf[js.Any])
+    def setSaltSeparatorUndefined: Self = StObject.set(x, "saltSeparator", js.undefined)
     
     @scala.inline
-    def deleteRounds: Self = this.set("rounds", js.undefined)
+    def setSanityCheck(value: Boolean): Self = StObject.set(x, "sanityCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaltSeparator(value: String): Self = this.set("saltSeparator", value.asInstanceOf[js.Any])
+    def setSanityCheckUndefined: Self = StObject.set(x, "sanityCheck", js.undefined)
     
     @scala.inline
-    def deleteSaltSeparator: Self = this.set("saltSeparator", js.undefined)
+    def setSignerKey(value: String): Self = StObject.set(x, "signerKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSanityCheck(value: Boolean): Self = this.set("sanityCheck", value.asInstanceOf[js.Any])
+    def setSignerKeyUndefined: Self = StObject.set(x, "signerKey", js.undefined)
     
     @scala.inline
-    def deleteSanityCheck: Self = this.set("sanityCheck", js.undefined)
+    def setTargetProjectId(value: String): Self = StObject.set(x, "targetProjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignerKey(value: String): Self = this.set("signerKey", value.asInstanceOf[js.Any])
+    def setTargetProjectIdUndefined: Self = StObject.set(x, "targetProjectId", js.undefined)
     
     @scala.inline
-    def deleteSignerKey: Self = this.set("signerKey", js.undefined)
+    def setUsers(value: js.Array[SchemaUserInfo]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetProjectId(value: String): Self = this.set("targetProjectId", value.asInstanceOf[js.Any])
+    def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     
     @scala.inline
-    def deleteTargetProjectId: Self = this.set("targetProjectId", js.undefined)
-    
-    @scala.inline
-    def setUsersVarargs(value: SchemaUserInfo*): Self = this.set("users", js.Array(value :_*))
-    
-    @scala.inline
-    def setUsers(value: js.Array[SchemaUserInfo]): Self = this.set("users", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsers: Self = this.set("users", js.undefined)
+    def setUsersVarargs(value: SchemaUserInfo*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

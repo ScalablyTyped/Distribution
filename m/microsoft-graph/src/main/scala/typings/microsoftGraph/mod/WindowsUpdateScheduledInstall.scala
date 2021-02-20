@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,30 +26,18 @@ object WindowsUpdateScheduledInstall {
   }
   
   @scala.inline
-  implicit class WindowsUpdateScheduledInstallOps[Self <: WindowsUpdateScheduledInstall] (val x: Self) extends AnyVal {
+  implicit class WindowsUpdateScheduledInstallMutableBuilder[Self <: WindowsUpdateScheduledInstall] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScheduledInstallDay(value: WeeklySchedule): Self = StObject.set(x, "scheduledInstallDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScheduledInstallDayUndefined: Self = StObject.set(x, "scheduledInstallDay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScheduledInstallTime(value: String): Self = StObject.set(x, "scheduledInstallTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduledInstallDay(value: WeeklySchedule): Self = this.set("scheduledInstallDay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduledInstallDay: Self = this.set("scheduledInstallDay", js.undefined)
-    
-    @scala.inline
-    def setScheduledInstallTime(value: String): Self = this.set("scheduledInstallTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduledInstallTime: Self = this.set("scheduledInstallTime", js.undefined)
+    def setScheduledInstallTimeUndefined: Self = StObject.set(x, "scheduledInstallTime", js.undefined)
   }
 }

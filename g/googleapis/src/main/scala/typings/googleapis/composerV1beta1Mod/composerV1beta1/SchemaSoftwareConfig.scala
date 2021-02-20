@@ -1,6 +1,7 @@
 package typings.googleapis.composerV1beta1Mod.composerV1beta1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * environment.
   */
 @js.native
-trait SchemaSoftwareConfig extends js.Object {
+trait SchemaSoftwareConfig extends StObject {
   
   /**
     * Optional. Apache Airflow configuration properties to override.  Property
@@ -90,48 +91,36 @@ object SchemaSoftwareConfig {
   }
   
   @scala.inline
-  implicit class SchemaSoftwareConfigOps[Self <: SchemaSoftwareConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaSoftwareConfigMutableBuilder[Self <: SchemaSoftwareConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAirflowConfigOverrides(value: StringDictionary[String]): Self = StObject.set(x, "airflowConfigOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAirflowConfigOverridesUndefined: Self = StObject.set(x, "airflowConfigOverrides", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnvVariables(value: StringDictionary[String]): Self = StObject.set(x, "envVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAirflowConfigOverrides(value: StringDictionary[String]): Self = this.set("airflowConfigOverrides", value.asInstanceOf[js.Any])
+    def setEnvVariablesUndefined: Self = StObject.set(x, "envVariables", js.undefined)
     
     @scala.inline
-    def deleteAirflowConfigOverrides: Self = this.set("airflowConfigOverrides", js.undefined)
+    def setImageVersion(value: String): Self = StObject.set(x, "imageVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvVariables(value: StringDictionary[String]): Self = this.set("envVariables", value.asInstanceOf[js.Any])
+    def setImageVersionUndefined: Self = StObject.set(x, "imageVersion", js.undefined)
     
     @scala.inline
-    def deleteEnvVariables: Self = this.set("envVariables", js.undefined)
+    def setPypiPackages(value: StringDictionary[String]): Self = StObject.set(x, "pypiPackages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageVersion(value: String): Self = this.set("imageVersion", value.asInstanceOf[js.Any])
+    def setPypiPackagesUndefined: Self = StObject.set(x, "pypiPackages", js.undefined)
     
     @scala.inline
-    def deleteImageVersion: Self = this.set("imageVersion", js.undefined)
+    def setPythonVersion(value: String): Self = StObject.set(x, "pythonVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPypiPackages(value: StringDictionary[String]): Self = this.set("pypiPackages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePypiPackages: Self = this.set("pypiPackages", js.undefined)
-    
-    @scala.inline
-    def setPythonVersion(value: String): Self = this.set("pythonVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePythonVersion: Self = this.set("pythonVersion", js.undefined)
+    def setPythonVersionUndefined: Self = StObject.set(x, "pythonVersion", js.undefined)
   }
 }

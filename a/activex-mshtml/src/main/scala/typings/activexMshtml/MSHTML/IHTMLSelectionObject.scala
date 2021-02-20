@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHTMLSelectionObject extends js.Object {
+trait IHTMLSelectionObject extends StObject {
   
   @JSName("MSHTML.IHTMLSelectionObject_typekey")
   var MSHTMLDotIHTMLSelectionObject_typekey: IHTMLSelectionObject = js.native
@@ -35,33 +36,21 @@ object IHTMLSelectionObject {
   }
   
   @scala.inline
-  implicit class IHTMLSelectionObjectOps[Self <: IHTMLSelectionObject] (val x: Self) extends AnyVal {
+  implicit class IHTMLSelectionObjectMutableBuilder[Self <: IHTMLSelectionObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateRange(value: () => js.Any): Self = StObject.set(x, "createRange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmpty(value: () => Unit): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMSHTMLDotIHTMLSelectionObject_typekey(value: IHTMLSelectionObject): Self = this.set("MSHTML.IHTMLSelectionObject_typekey", value.asInstanceOf[js.Any])
+    def setMSHTMLDotIHTMLSelectionObject_typekey(value: IHTMLSelectionObject): Self = StObject.set(x, "MSHTML.IHTMLSelectionObject_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCreateRange(value: () => js.Any): Self = this.set("createRange", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setEmpty(value: () => Unit): Self = this.set("empty", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

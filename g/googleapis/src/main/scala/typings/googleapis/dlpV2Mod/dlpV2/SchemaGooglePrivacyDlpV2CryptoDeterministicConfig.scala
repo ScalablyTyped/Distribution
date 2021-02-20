@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * output. Uses AES-SIV based on the RFC https://tools.ietf.org/html/rfc5297.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2CryptoDeterministicConfig extends js.Object {
+trait SchemaGooglePrivacyDlpV2CryptoDeterministicConfig extends StObject {
   
   /**
     * Optional. A context may be used for higher security and maintaining
@@ -68,36 +69,24 @@ object SchemaGooglePrivacyDlpV2CryptoDeterministicConfig {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2CryptoDeterministicConfigOps[Self <: SchemaGooglePrivacyDlpV2CryptoDeterministicConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2CryptoDeterministicConfigMutableBuilder[Self <: SchemaGooglePrivacyDlpV2CryptoDeterministicConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: SchemaGooglePrivacyDlpV2FieldId): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCryptoKey(value: SchemaGooglePrivacyDlpV2CryptoKey): Self = StObject.set(x, "cryptoKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: SchemaGooglePrivacyDlpV2FieldId): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setCryptoKeyUndefined: Self = StObject.set(x, "cryptoKey", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setSurrogateInfoType(value: SchemaGooglePrivacyDlpV2InfoType): Self = StObject.set(x, "surrogateInfoType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCryptoKey(value: SchemaGooglePrivacyDlpV2CryptoKey): Self = this.set("cryptoKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCryptoKey: Self = this.set("cryptoKey", js.undefined)
-    
-    @scala.inline
-    def setSurrogateInfoType(value: SchemaGooglePrivacyDlpV2InfoType): Self = this.set("surrogateInfoType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSurrogateInfoType: Self = this.set("surrogateInfoType", js.undefined)
+    def setSurrogateInfoTypeUndefined: Self = StObject.set(x, "surrogateInfoType", js.undefined)
   }
 }

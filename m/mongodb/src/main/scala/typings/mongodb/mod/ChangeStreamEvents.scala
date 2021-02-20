@@ -1,12 +1,13 @@
 package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangeStreamEvents[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
+trait ChangeStreamEvents[TSchema /* <: StringDictionary[js.Any] */] extends StObject {
   
   def change(doc: ChangeEvent[TSchema]): Unit = js.native
   
@@ -33,33 +34,21 @@ object ChangeStreamEvents {
   }
   
   @scala.inline
-  implicit class ChangeStreamEventsOps[Self <: ChangeStreamEvents[_], TSchema /* <: StringDictionary[js.Any] */] (val x: Self with ChangeStreamEvents[TSchema]) extends AnyVal {
+  implicit class ChangeStreamEventsMutableBuilder[Self <: ChangeStreamEvents[_], TSchema /* <: StringDictionary[js.Any] */] (val x: Self with ChangeStreamEvents[TSchema]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChange(value: ChangeEvent[TSchema] => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChange(value: ChangeEvent[TSchema] => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    def setError(value: MongoError => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setEnd(value: () => Unit): Self = this.set("end", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setError(value: MongoError => Unit): Self = this.set("error", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setResumeTokenChanged(value: ResumeToken => Unit): Self = this.set("resumeTokenChanged", js.Any.fromFunction1(value))
+    def setResumeTokenChanged(value: ResumeToken => Unit): Self = StObject.set(x, "resumeTokenChanged", js.Any.fromFunction1(value))
   }
 }

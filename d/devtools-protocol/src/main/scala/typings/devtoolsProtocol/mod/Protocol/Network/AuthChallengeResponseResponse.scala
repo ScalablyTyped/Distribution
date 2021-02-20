@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.CancelAuth
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ProvideCredentials
 */
-trait AuthChallengeResponseResponse extends js.Object
+trait AuthChallengeResponseResponse extends StObject
 object AuthChallengeResponseResponse {
   
   @scala.inline

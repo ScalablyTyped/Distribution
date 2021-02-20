@@ -2,12 +2,13 @@ package typings.activexFaxcomexlib
 
 import typings.activexFaxcomexlib.FAXCOMEXLib.FaxDocument
 import typings.activexFaxcomexlib.FAXCOMEXLib.FaxServer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveXObjectNameMap extends js.Object {
+trait ActiveXObjectNameMap extends StObject {
   
   @JSName("FaxComEx.FaxDocument")
   var FaxComExDotFaxDocument: FaxDocument = js.native
@@ -26,24 +27,12 @@ object ActiveXObjectNameMap {
   }
   
   @scala.inline
-  implicit class ActiveXObjectNameMapOps[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFaxComExDotFaxDocument(value: FaxDocument): Self = StObject.set(x, "FaxComEx.FaxDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFaxComExDotFaxDocument(value: FaxDocument): Self = this.set("FaxComEx.FaxDocument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFaxComExDotFaxServer(value: FaxServer): Self = this.set("FaxComEx.FaxServer", value.asInstanceOf[js.Any])
+    def setFaxComExDotFaxServer(value: FaxServer): Self = StObject.set(x, "FaxComEx.FaxServer", value.asInstanceOf[js.Any])
   }
 }

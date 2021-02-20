@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientDlp.anon.Key
 import typings.maximMazurokGapiClientDlp.anon.LocationId
 import typings.maximMazurokGapiClientDlp.anon.Parent
 import typings.maximMazurokGapiClientDlp.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StoredInfoTypesResource extends js.Object {
+trait StoredInfoTypesResource extends StObject {
   
   def create(request: Fields, body: GooglePrivacyDlpV2CreateStoredInfoTypeRequest): Request[GooglePrivacyDlpV2StoredInfoType] = js.native
   /** Creates a pre-built stored infoType to be used for inspection. See https://cloud.google.com/dlp/docs/creating-stored-infotypes to learn more. */

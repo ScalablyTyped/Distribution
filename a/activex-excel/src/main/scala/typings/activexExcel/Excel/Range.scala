@@ -27,12 +27,13 @@ import typings.activexExcel.activexExcelStrings._empty
 import typings.activexOffice.Office.MsoLanguageID
 import typings.std.Exclude
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Range extends js.Object {
+trait Range extends StObject {
   
   def apply(Address: String): Range = js.native
   def apply(RowIndex: Double): Range = js.native
@@ -1905,7 +1906,7 @@ trait Range extends js.Object {
   @JSName("Precedents")
   val Precedents_Original: Range = js.native
   
-  val PrefixCharacter: Apostrophe | Quotationmark | ^  | Backslash | _empty = js.native
+  val PrefixCharacter: Apostrophe | Quotationmark | ^ | Backslash | _empty = js.native
   
   def Previous(Address: String): Range = js.native
   def Previous(RowIndex: Double): Range = js.native

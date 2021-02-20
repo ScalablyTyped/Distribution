@@ -1,12 +1,13 @@
 package typings.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gdal", "SpatialReference")
 @js.native
-class SpatialReference () extends js.Object {
+class SpatialReference () extends StObject {
   def this(wkt: String) = this()
   
   def EPSGTreatsAsLatLong(): Boolean = js.native
@@ -64,31 +65,53 @@ class SpatialReference () extends js.Object {
   def validate(): String = js.native
 }
 /* static members */
-@JSImport("gdal", "SpatialReference")
-@js.native
-object SpatialReference extends js.Object {
+object SpatialReference {
   
+  @JSImport("gdal", "SpatialReference.fromCRSURL")
+  @js.native
   def fromCRSURL(input: String): SpatialReference = js.native
   
+  @JSImport("gdal", "SpatialReference.fromEPSG")
+  @js.native
   def fromEPSG(input: String): SpatialReference = js.native
   
+  @JSImport("gdal", "SpatialReference.fromEPSGA")
+  @js.native
   def fromEPSGA(input: Double): SpatialReference = js.native
   
+  @JSImport("gdal", "SpatialReference.fromESRI")
+  @js.native
   def fromESRI(input: js.Array[String]): SpatialReference = js.native
   
+  @JSImport("gdal", "SpatialReference.fromMICoordSys")
+  @js.native
   def fromMICoordSys(input: String): SpatialReference = js.native
   
+  @JSImport("gdal", "SpatialReference.fromProj4")
+  @js.native
   def fromProj4(input: String): SpatialReference = js.native
   
+  @JSImport("gdal", "SpatialReference.fromURL")
+  @js.native
   def fromURL(url: String): SpatialReference = js.native
   
+  @JSImport("gdal", "SpatialReference.fromURN")
+  @js.native
   def fromURN(input: String): SpatialReference = js.native
   
+  @JSImport("gdal", "SpatialReference.fromUserInput")
+  @js.native
   def fromUserInput(input: String): SpatialReference = js.native
   
+  @JSImport("gdal", "SpatialReference.fromWKT")
+  @js.native
   def fromWKT(wkt: String): SpatialReference = js.native
   
+  @JSImport("gdal", "SpatialReference.fromWMSAUTO")
+  @js.native
   def fromWMSAUTO(input: String): SpatialReference = js.native
   
+  @JSImport("gdal", "SpatialReference.fromXML")
+  @js.native
   def fromXML(input: String): SpatialReference = js.native
 }

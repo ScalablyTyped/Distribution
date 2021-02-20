@@ -2,6 +2,7 @@ package typings.angularCore.mod
 
 import typings.angularCore.angularCoreNumbers.`0`
 import typings.angularCore.angularCoreNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.angularCore.angularCoreNumbers.`0`
   - typings.angularCore.angularCoreNumbers.`1`
 */
-trait IcuType extends js.Object
+trait IcuType extends StObject
 object IcuType {
   
   @scala.inline

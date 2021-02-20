@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import typings.winrtUwp.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Creates fields that contain information about a contact. You can then add these fields to a Contact object to create the contact. This class is available only to apps that support the Contact contract. */
 @js.native
-trait ContactFieldFactory extends js.Object {
+trait ContactFieldFactory extends StObject {
   
   /**
     * Creates a field to contain information about a contact.

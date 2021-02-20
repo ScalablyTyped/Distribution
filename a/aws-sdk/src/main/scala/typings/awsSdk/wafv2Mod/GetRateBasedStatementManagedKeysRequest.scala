@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRateBasedStatementManagedKeysRequest extends js.Object {
+trait GetRateBasedStatementManagedKeysRequest extends StObject {
   
   /**
     * The name of the rate-based rule to get the keys for.
@@ -36,30 +37,18 @@ object GetRateBasedStatementManagedKeysRequest {
   }
   
   @scala.inline
-  implicit class GetRateBasedStatementManagedKeysRequestOps[Self <: GetRateBasedStatementManagedKeysRequest] (val x: Self) extends AnyVal {
+  implicit class GetRateBasedStatementManagedKeysRequestMutableBuilder[Self <: GetRateBasedStatementManagedKeysRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRuleName(value: EntityName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWebACLId(value: EntityId): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleName(value: EntityName): Self = this.set("RuleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScope(value: Scope): Self = this.set("Scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebACLId(value: EntityId): Self = this.set("WebACLId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebACLName(value: EntityName): Self = this.set("WebACLName", value.asInstanceOf[js.Any])
+    def setWebACLName(value: EntityName): Self = StObject.set(x, "WebACLName", value.asInstanceOf[js.Any])
   }
 }

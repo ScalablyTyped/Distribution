@@ -1,5 +1,6 @@
 package typings.powerappsComponentFramework.ComponentFramework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The interface for the context.client
   */
 @js.native
-trait Client extends js.Object {
+trait Client extends StObject {
   
   /**
     * Whether this control should disable its scrolling capabilities.
@@ -51,30 +52,18 @@ object Client {
   }
   
   @scala.inline
-  implicit class ClientOps[Self <: Client] (val x: Self) extends AnyVal {
+  implicit class ClientMutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableScroll(value: Boolean): Self = StObject.set(x, "disableScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetClient(value: () => String): Self = StObject.set(x, "getClient", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFormFactor(value: () => Double): Self = StObject.set(x, "getFormFactor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisableScroll(value: Boolean): Self = this.set("disableScroll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetClient(value: () => String): Self = this.set("getClient", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetFormFactor(value: () => Double): Self = this.set("getFormFactor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsOffline(value: () => Boolean): Self = this.set("isOffline", js.Any.fromFunction0(value))
+    def setIsOffline(value: () => Boolean): Self = StObject.set(x, "isOffline", js.Any.fromFunction0(value))
   }
 }

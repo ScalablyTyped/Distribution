@@ -1,11 +1,12 @@
 package typings.jwplayer.jwplayer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CaptionOptions extends js.Object {
+trait CaptionOptions extends StObject {
   
   var backgroundColor: String = js.native
   
@@ -44,45 +45,33 @@ object CaptionOptions {
   }
   
   @scala.inline
-  implicit class CaptionOptionsOps[Self <: CaptionOptions] (val x: Self) extends AnyVal {
+  implicit class CaptionOptionsMutableBuilder[Self <: CaptionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundOpacity(value: Double): Self = StObject.set(x, "backgroundOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setEdgeStyle(value: String): Self = StObject.set(x, "edgeStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundOpacity(value: Double): Self = this.set("backgroundOpacity", value.asInstanceOf[js.Any])
+    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setFontOpacity(value: Double): Self = StObject.set(x, "fontOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgeStyle(value: String): Self = this.set("edgeStyle", value.asInstanceOf[js.Any])
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setWindowColor(value: String): Self = StObject.set(x, "windowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontOpacity(value: Double): Self = this.set("fontOpacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowColor(value: String): Self = this.set("windowColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowOpacity(value: Double): Self = this.set("windowOpacity", value.asInstanceOf[js.Any])
+    def setWindowOpacity(value: Double): Self = StObject.set(x, "windowOpacity", value.asInstanceOf[js.Any])
   }
 }

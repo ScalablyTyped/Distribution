@@ -1,5 +1,6 @@
 package typings.zdog.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.zdog.zdogNumbers.`3`
   - typings.zdog.zdogNumbers.`4`
 */
-trait QuartersValue extends js.Object
+trait QuartersValue extends StObject
 object QuartersValue {
   
   @scala.inline

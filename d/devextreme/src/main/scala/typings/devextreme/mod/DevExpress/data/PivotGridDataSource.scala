@@ -4,12 +4,13 @@ import typings.devextreme.anon.ColumnPath
 import typings.devextreme.mod.global.JQueryPromise
 import typings.devextreme.mod.global.Promise
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotGridDataSource extends js.Object {
+trait PivotGridDataSource extends StObject {
   
   def collapseAll(id: String): Unit = js.native
   /**

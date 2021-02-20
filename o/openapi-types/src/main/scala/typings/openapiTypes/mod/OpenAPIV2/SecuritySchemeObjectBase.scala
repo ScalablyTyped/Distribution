@@ -3,12 +3,13 @@ package typings.openapiTypes.mod.OpenAPIV2
 import typings.openapiTypes.openapiTypesStrings.apiKey
 import typings.openapiTypes.openapiTypesStrings.basic
 import typings.openapiTypes.openapiTypesStrings.oauth2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecuritySchemeObjectBase extends js.Object {
+trait SecuritySchemeObjectBase extends StObject {
   
   var description: js.UndefOr[String] = js.native
   
@@ -24,27 +25,15 @@ object SecuritySchemeObjectBase {
   }
   
   @scala.inline
-  implicit class SecuritySchemeObjectBaseOps[Self <: SecuritySchemeObjectBase] (val x: Self) extends AnyVal {
+  implicit class SecuritySchemeObjectBaseMutableBuilder[Self <: SecuritySchemeObjectBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: basic | apiKey | oauth2): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setType(value: basic | apiKey | oauth2): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

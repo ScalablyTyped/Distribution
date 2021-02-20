@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RedshiftDestinationProperties extends js.Object {
+trait RedshiftDestinationProperties extends StObject {
   
   /**
     *  The object key for the bucket in which Amazon AppFlow places the destination files. 
@@ -37,36 +38,24 @@ object RedshiftDestinationProperties {
   }
   
   @scala.inline
-  implicit class RedshiftDestinationPropertiesOps[Self <: RedshiftDestinationProperties] (val x: Self) extends AnyVal {
+  implicit class RedshiftDestinationPropertiesMutableBuilder[Self <: RedshiftDestinationProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketPrefix(value: BucketPrefix): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorHandlingConfig(value: ErrorHandlingConfig): Self = StObject.set(x, "errorHandlingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntermediateBucketName(value: BucketName): Self = this.set("intermediateBucketName", value.asInstanceOf[js.Any])
+    def setErrorHandlingConfigUndefined: Self = StObject.set(x, "errorHandlingConfig", js.undefined)
     
     @scala.inline
-    def setObject(value: Object): Self = this.set("object", value.asInstanceOf[js.Any])
+    def setIntermediateBucketName(value: BucketName): Self = StObject.set(x, "intermediateBucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketPrefix(value: BucketPrefix): Self = this.set("bucketPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBucketPrefix: Self = this.set("bucketPrefix", js.undefined)
-    
-    @scala.inline
-    def setErrorHandlingConfig(value: ErrorHandlingConfig): Self = this.set("errorHandlingConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorHandlingConfig: Self = this.set("errorHandlingConfig", js.undefined)
+    def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

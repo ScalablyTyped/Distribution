@@ -1,5 +1,6 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains properties of a Campaign Manager ad.
   */
 @js.native
-trait SchemaAd extends js.Object {
+trait SchemaAd extends StObject {
   
   /**
     * Account ID of this ad. This is a read-only field that can be left blank.
@@ -264,261 +265,249 @@ object SchemaAd {
   }
   
   @scala.inline
-  implicit class SchemaAdOps[Self <: SchemaAd] (val x: Self) extends AnyVal {
+  implicit class SchemaAdMutableBuilder[Self <: SchemaAd] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setAdvertiserIdDimensionValue(value: SchemaDimensionValue): Self = StObject.set(x, "advertiserIdDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setAdvertiserIdDimensionValueUndefined: Self = StObject.set(x, "advertiserIdDimensionValue", js.undefined)
     
     @scala.inline
-    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiserIdDimensionValue(value: SchemaDimensionValue): Self = this.set("advertiserIdDimensionValue", value.asInstanceOf[js.Any])
+    def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserIdDimensionValue: Self = this.set("advertiserIdDimensionValue", js.undefined)
+    def setAudienceSegmentId(value: String): Self = StObject.set(x, "audienceSegmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchived(value: Boolean): Self = this.set("archived", value.asInstanceOf[js.Any])
+    def setAudienceSegmentIdUndefined: Self = StObject.set(x, "audienceSegmentId", js.undefined)
     
     @scala.inline
-    def deleteArchived: Self = this.set("archived", js.undefined)
+    def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudienceSegmentId(value: String): Self = this.set("audienceSegmentId", value.asInstanceOf[js.Any])
+    def setCampaignIdDimensionValue(value: SchemaDimensionValue): Self = StObject.set(x, "campaignIdDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAudienceSegmentId: Self = this.set("audienceSegmentId", js.undefined)
+    def setCampaignIdDimensionValueUndefined: Self = StObject.set(x, "campaignIdDimensionValue", js.undefined)
     
     @scala.inline
-    def setCampaignId(value: String): Self = this.set("campaignId", value.asInstanceOf[js.Any])
+    def setCampaignIdUndefined: Self = StObject.set(x, "campaignId", js.undefined)
     
     @scala.inline
-    def deleteCampaignId: Self = this.set("campaignId", js.undefined)
+    def setClickThroughUrl(value: SchemaClickThroughUrl): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaignIdDimensionValue(value: SchemaDimensionValue): Self = this.set("campaignIdDimensionValue", value.asInstanceOf[js.Any])
+    def setClickThroughUrlSuffixProperties(value: SchemaClickThroughUrlSuffixProperties): Self = StObject.set(x, "clickThroughUrlSuffixProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCampaignIdDimensionValue: Self = this.set("campaignIdDimensionValue", js.undefined)
+    def setClickThroughUrlSuffixPropertiesUndefined: Self = StObject.set(x, "clickThroughUrlSuffixProperties", js.undefined)
     
     @scala.inline
-    def setClickThroughUrl(value: SchemaClickThroughUrl): Self = this.set("clickThroughUrl", value.asInstanceOf[js.Any])
+    def setClickThroughUrlUndefined: Self = StObject.set(x, "clickThroughUrl", js.undefined)
     
     @scala.inline
-    def deleteClickThroughUrl: Self = this.set("clickThroughUrl", js.undefined)
+    def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickThroughUrlSuffixProperties(value: SchemaClickThroughUrlSuffixProperties): Self = this.set("clickThroughUrlSuffixProperties", value.asInstanceOf[js.Any])
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def deleteClickThroughUrlSuffixProperties: Self = this.set("clickThroughUrlSuffixProperties", js.undefined)
+    def setCompatibility(value: String): Self = StObject.set(x, "compatibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: String): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setCompatibilityUndefined: Self = StObject.set(x, "compatibility", js.undefined)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setCreateInfo(value: SchemaLastModifiedInfo): Self = StObject.set(x, "createInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompatibility(value: String): Self = this.set("compatibility", value.asInstanceOf[js.Any])
+    def setCreateInfoUndefined: Self = StObject.set(x, "createInfo", js.undefined)
     
     @scala.inline
-    def deleteCompatibility: Self = this.set("compatibility", js.undefined)
+    def setCreativeGroupAssignments(value: js.Array[SchemaCreativeGroupAssignment]): Self = StObject.set(x, "creativeGroupAssignments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateInfo(value: SchemaLastModifiedInfo): Self = this.set("createInfo", value.asInstanceOf[js.Any])
+    def setCreativeGroupAssignmentsUndefined: Self = StObject.set(x, "creativeGroupAssignments", js.undefined)
     
     @scala.inline
-    def deleteCreateInfo: Self = this.set("createInfo", js.undefined)
+    def setCreativeGroupAssignmentsVarargs(value: SchemaCreativeGroupAssignment*): Self = StObject.set(x, "creativeGroupAssignments", js.Array(value :_*))
     
     @scala.inline
-    def setCreativeGroupAssignmentsVarargs(value: SchemaCreativeGroupAssignment*): Self = this.set("creativeGroupAssignments", js.Array(value :_*))
+    def setCreativeRotation(value: SchemaCreativeRotation): Self = StObject.set(x, "creativeRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreativeGroupAssignments(value: js.Array[SchemaCreativeGroupAssignment]): Self = this.set("creativeGroupAssignments", value.asInstanceOf[js.Any])
+    def setCreativeRotationUndefined: Self = StObject.set(x, "creativeRotation", js.undefined)
     
     @scala.inline
-    def deleteCreativeGroupAssignments: Self = this.set("creativeGroupAssignments", js.undefined)
+    def setDayPartTargeting(value: SchemaDayPartTargeting): Self = StObject.set(x, "dayPartTargeting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreativeRotation(value: SchemaCreativeRotation): Self = this.set("creativeRotation", value.asInstanceOf[js.Any])
+    def setDayPartTargetingUndefined: Self = StObject.set(x, "dayPartTargeting", js.undefined)
     
     @scala.inline
-    def deleteCreativeRotation: Self = this.set("creativeRotation", js.undefined)
+    def setDefaultClickThroughEventTagProperties(value: SchemaDefaultClickThroughEventTagProperties): Self = StObject.set(x, "defaultClickThroughEventTagProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayPartTargeting(value: SchemaDayPartTargeting): Self = this.set("dayPartTargeting", value.asInstanceOf[js.Any])
+    def setDefaultClickThroughEventTagPropertiesUndefined: Self = StObject.set(x, "defaultClickThroughEventTagProperties", js.undefined)
     
     @scala.inline
-    def deleteDayPartTargeting: Self = this.set("dayPartTargeting", js.undefined)
+    def setDeliverySchedule(value: SchemaDeliverySchedule): Self = StObject.set(x, "deliverySchedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultClickThroughEventTagProperties(value: SchemaDefaultClickThroughEventTagProperties): Self = this.set("defaultClickThroughEventTagProperties", value.asInstanceOf[js.Any])
+    def setDeliveryScheduleUndefined: Self = StObject.set(x, "deliverySchedule", js.undefined)
     
     @scala.inline
-    def deleteDefaultClickThroughEventTagProperties: Self = this.set("defaultClickThroughEventTagProperties", js.undefined)
+    def setDynamicClickTracker(value: Boolean): Self = StObject.set(x, "dynamicClickTracker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliverySchedule(value: SchemaDeliverySchedule): Self = this.set("deliverySchedule", value.asInstanceOf[js.Any])
+    def setDynamicClickTrackerUndefined: Self = StObject.set(x, "dynamicClickTracker", js.undefined)
     
     @scala.inline
-    def deleteDeliverySchedule: Self = this.set("deliverySchedule", js.undefined)
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicClickTracker(value: Boolean): Self = this.set("dynamicClickTracker", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteDynamicClickTracker: Self = this.set("dynamicClickTracker", js.undefined)
+    def setEventTagOverrides(value: js.Array[SchemaEventTagOverride]): Self = StObject.set(x, "eventTagOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setEventTagOverridesUndefined: Self = StObject.set(x, "eventTagOverrides", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setEventTagOverridesVarargs(value: SchemaEventTagOverride*): Self = StObject.set(x, "eventTagOverrides", js.Array(value :_*))
     
     @scala.inline
-    def setEventTagOverridesVarargs(value: SchemaEventTagOverride*): Self = this.set("eventTagOverrides", js.Array(value :_*))
+    def setGeoTargeting(value: SchemaGeoTargeting): Self = StObject.set(x, "geoTargeting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTagOverrides(value: js.Array[SchemaEventTagOverride]): Self = this.set("eventTagOverrides", value.asInstanceOf[js.Any])
+    def setGeoTargetingUndefined: Self = StObject.set(x, "geoTargeting", js.undefined)
     
     @scala.inline
-    def deleteEventTagOverrides: Self = this.set("eventTagOverrides", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeoTargeting(value: SchemaGeoTargeting): Self = this.set("geoTargeting", value.asInstanceOf[js.Any])
+    def setIdDimensionValue(value: SchemaDimensionValue): Self = StObject.set(x, "idDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGeoTargeting: Self = this.set("geoTargeting", js.undefined)
+    def setIdDimensionValueUndefined: Self = StObject.set(x, "idDimensionValue", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKeyValueTargetingExpression(value: SchemaKeyValueTargetingExpression): Self = StObject.set(x, "keyValueTargetingExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdDimensionValue(value: SchemaDimensionValue): Self = this.set("idDimensionValue", value.asInstanceOf[js.Any])
+    def setKeyValueTargetingExpressionUndefined: Self = StObject.set(x, "keyValueTargetingExpression", js.undefined)
     
     @scala.inline
-    def deleteIdDimensionValue: Self = this.set("idDimensionValue", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyValueTargetingExpression(value: SchemaKeyValueTargetingExpression): Self = this.set("keyValueTargetingExpression", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteKeyValueTargetingExpression: Self = this.set("keyValueTargetingExpression", js.undefined)
+    def setLanguageTargeting(value: SchemaLanguageTargeting): Self = StObject.set(x, "languageTargeting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLanguageTargetingUndefined: Self = StObject.set(x, "languageTargeting", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setLastModifiedInfo(value: SchemaLastModifiedInfo): Self = StObject.set(x, "lastModifiedInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageTargeting(value: SchemaLanguageTargeting): Self = this.set("languageTargeting", value.asInstanceOf[js.Any])
+    def setLastModifiedInfoUndefined: Self = StObject.set(x, "lastModifiedInfo", js.undefined)
     
     @scala.inline
-    def deleteLanguageTargeting: Self = this.set("languageTargeting", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedInfo(value: SchemaLastModifiedInfo): Self = this.set("lastModifiedInfo", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedInfo: Self = this.set("lastModifiedInfo", js.undefined)
+    def setPlacementAssignments(value: js.Array[SchemaPlacementAssignment]): Self = StObject.set(x, "placementAssignments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPlacementAssignmentsUndefined: Self = StObject.set(x, "placementAssignments", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPlacementAssignmentsVarargs(value: SchemaPlacementAssignment*): Self = StObject.set(x, "placementAssignments", js.Array(value :_*))
     
     @scala.inline
-    def setPlacementAssignmentsVarargs(value: SchemaPlacementAssignment*): Self = this.set("placementAssignments", js.Array(value :_*))
+    def setRemarketingListExpression(value: SchemaListTargetingExpression): Self = StObject.set(x, "remarketingListExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacementAssignments(value: js.Array[SchemaPlacementAssignment]): Self = this.set("placementAssignments", value.asInstanceOf[js.Any])
+    def setRemarketingListExpressionUndefined: Self = StObject.set(x, "remarketingListExpression", js.undefined)
     
     @scala.inline
-    def deletePlacementAssignments: Self = this.set("placementAssignments", js.undefined)
+    def setSize(value: SchemaSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemarketingListExpression(value: SchemaListTargetingExpression): Self = this.set("remarketingListExpression", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteRemarketingListExpression: Self = this.set("remarketingListExpression", js.undefined)
+    def setSslCompliant(value: Boolean): Self = StObject.set(x, "sslCompliant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: SchemaSize): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSslCompliantUndefined: Self = StObject.set(x, "sslCompliant", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSslRequired(value: Boolean): Self = StObject.set(x, "sslRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSslCompliant(value: Boolean): Self = this.set("sslCompliant", value.asInstanceOf[js.Any])
+    def setSslRequiredUndefined: Self = StObject.set(x, "sslRequired", js.undefined)
     
     @scala.inline
-    def deleteSslCompliant: Self = this.set("sslCompliant", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSslRequired(value: Boolean): Self = this.set("sslRequired", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteSslRequired: Self = this.set("sslRequired", js.undefined)
+    def setSubaccountId(value: String): Self = StObject.set(x, "subaccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setSubaccountIdUndefined: Self = StObject.set(x, "subaccountId", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setTargetingTemplateId(value: String): Self = StObject.set(x, "targetingTemplateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
+    def setTargetingTemplateIdUndefined: Self = StObject.set(x, "targetingTemplateId", js.undefined)
     
     @scala.inline
-    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
+    def setTechnologyTargeting(value: SchemaTechnologyTargeting): Self = StObject.set(x, "technologyTargeting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetingTemplateId(value: String): Self = this.set("targetingTemplateId", value.asInstanceOf[js.Any])
+    def setTechnologyTargetingUndefined: Self = StObject.set(x, "technologyTargeting", js.undefined)
     
     @scala.inline
-    def deleteTargetingTemplateId: Self = this.set("targetingTemplateId", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTechnologyTargeting(value: SchemaTechnologyTargeting): Self = this.set("technologyTargeting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTechnologyTargeting: Self = this.set("technologyTargeting", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

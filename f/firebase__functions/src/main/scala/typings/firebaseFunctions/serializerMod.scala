@@ -1,15 +1,15 @@
 package typings.firebaseFunctions
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/functions/dist/src/serializer", JSImport.Namespace)
-@js.native
-object serializerMod extends js.Object {
+object serializerMod {
   
+  @JSImport("@firebase/functions/dist/src/serializer", "Serializer")
   @js.native
-  class Serializer () extends js.Object {
+  class Serializer () extends StObject {
     
     def decode(json: js.Any): js.Any = js.native
     

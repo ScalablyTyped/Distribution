@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.datatransfer
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,30 +62,18 @@ object XTransferable {
   }
   
   @scala.inline
-  implicit class XTransferableOps[Self <: XTransferable] (val x: Self) extends AnyVal {
+  implicit class XTransferableMutableBuilder[Self <: XTransferable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetTransferData(value: DataFlavor => js.Any): Self = StObject.set(x, "getTransferData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetTransferDataFlavors(value: () => SafeArray[DataFlavor]): Self = StObject.set(x, "getTransferDataFlavors", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsDataFlavorSupported(value: DataFlavor => Boolean): Self = StObject.set(x, "isDataFlavorSupported", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTransferDataFlavors(value: SafeArray[DataFlavor]): Self = this.set("TransferDataFlavors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetTransferData(value: DataFlavor => js.Any): Self = this.set("getTransferData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetTransferDataFlavors(value: () => SafeArray[DataFlavor]): Self = this.set("getTransferDataFlavors", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsDataFlavorSupported(value: DataFlavor => Boolean): Self = this.set("isDataFlavorSupported", js.Any.fromFunction1(value))
+    def setTransferDataFlavors(value: SafeArray[DataFlavor]): Self = StObject.set(x, "TransferDataFlavors", value.asInstanceOf[js.Any])
   }
 }

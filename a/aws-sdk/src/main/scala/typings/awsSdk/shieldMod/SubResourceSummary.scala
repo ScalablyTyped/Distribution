@@ -1,11 +1,12 @@
 package typings.awsSdk.shieldMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubResourceSummary extends js.Object {
+trait SubResourceSummary extends StObject {
   
   /**
     * The list of attack types and associated counters.
@@ -36,48 +37,36 @@ object SubResourceSummary {
   }
   
   @scala.inline
-  implicit class SubResourceSummaryOps[Self <: SubResourceSummary] (val x: Self) extends AnyVal {
+  implicit class SubResourceSummaryMutableBuilder[Self <: SubResourceSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttackVectors(value: SummarizedAttackVectorList): Self = StObject.set(x, "AttackVectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttackVectorsUndefined: Self = StObject.set(x, "AttackVectors", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttackVectorsVarargs(value: SummarizedAttackVector*): Self = StObject.set(x, "AttackVectors", js.Array(value :_*))
     
     @scala.inline
-    def setAttackVectorsVarargs(value: SummarizedAttackVector*): Self = this.set("AttackVectors", js.Array(value :_*))
+    def setCounters(value: SummarizedCounterList): Self = StObject.set(x, "Counters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttackVectors(value: SummarizedAttackVectorList): Self = this.set("AttackVectors", value.asInstanceOf[js.Any])
+    def setCountersUndefined: Self = StObject.set(x, "Counters", js.undefined)
     
     @scala.inline
-    def deleteAttackVectors: Self = this.set("AttackVectors", js.undefined)
+    def setCountersVarargs(value: SummarizedCounter*): Self = StObject.set(x, "Counters", js.Array(value :_*))
     
     @scala.inline
-    def setCountersVarargs(value: SummarizedCounter*): Self = this.set("Counters", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCounters(value: SummarizedCounterList): Self = this.set("Counters", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteCounters: Self = this.set("Counters", js.undefined)
+    def setType(value: SubResourceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
-    
-    @scala.inline
-    def setType(value: SubResourceType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

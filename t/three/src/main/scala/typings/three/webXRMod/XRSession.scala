@@ -1,12 +1,13 @@
 package typings.three.webXRMod
 
 import typings.three.anon.PlaneDetectionState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XRSession extends js.Object {
+trait XRSession extends StObject {
   
   var addEventListener: js.Function = js.native
   
@@ -66,66 +67,54 @@ object XRSession {
   }
   
   @scala.inline
-  implicit class XRSessionOps[Self <: XRSession] (val x: Self) extends AnyVal {
+  implicit class XRSessionMutableBuilder[Self <: XRSession] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddEventListener(value: js.Function): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelAnimationFrame(value: Double => Unit): Self = StObject.set(x, "cancelAnimationFrame", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd(value: () => js.Promise[Unit]): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddEventListener(value: js.Function): Self = this.set("addEventListener", value.asInstanceOf[js.Any])
+    def setEnvironmentBlendMode(value: XREnvironmentBlendMode): Self = StObject.set(x, "environmentBlendMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelAnimationFrame(value: Double => Unit): Self = this.set("cancelAnimationFrame", js.Any.fromFunction1(value))
+    def setInputSources(value: js.Array[XRInputSource]): Self = StObject.set(x, "inputSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: () => js.Promise[Unit]): Self = this.set("end", js.Any.fromFunction0(value))
+    def setInputSourcesVarargs(value: XRInputSource*): Self = StObject.set(x, "inputSources", js.Array(value :_*))
     
     @scala.inline
-    def setEnvironmentBlendMode(value: XREnvironmentBlendMode): Self = this.set("environmentBlendMode", value.asInstanceOf[js.Any])
+    def setRemoveEventListener(value: js.Function): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputSourcesVarargs(value: XRInputSource*): Self = this.set("inputSources", js.Array(value :_*))
+    def setRenderState(value: XRRenderState): Self = StObject.set(x, "renderState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputSources(value: js.Array[XRInputSource]): Self = this.set("inputSources", value.asInstanceOf[js.Any])
+    def setRequestAnimationFrame(value: XRFrameRequestCallback => Double): Self = StObject.set(x, "requestAnimationFrame", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveEventListener(value: js.Function): Self = this.set("removeEventListener", value.asInstanceOf[js.Any])
+    def setRequestHitTest(value: (XRRay, XRReferenceSpace) => js.Promise[js.Array[XRHitResult]]): Self = StObject.set(x, "requestHitTest", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRenderState(value: XRRenderState): Self = this.set("renderState", value.asInstanceOf[js.Any])
+    def setRequestHitTestSource(value: XRHitTestOptionsInit => js.Promise[XRHitTestSource]): Self = StObject.set(x, "requestHitTestSource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequestAnimationFrame(value: XRFrameRequestCallback => Double): Self = this.set("requestAnimationFrame", js.Any.fromFunction1(value))
+    def setRequestHitTestSourceForTransientInput(value: XRTransientInputHitTestOptionsInit => js.Promise[XRTransientInputHitTestSource]): Self = StObject.set(x, "requestHitTestSourceForTransientInput", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequestHitTest(value: (XRRay, XRReferenceSpace) => js.Promise[js.Array[XRHitResult]]): Self = this.set("requestHitTest", js.Any.fromFunction2(value))
+    def setRequestReferenceSpace(value: XRReferenceSpaceType => js.Promise[XRReferenceSpace]): Self = StObject.set(x, "requestReferenceSpace", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequestHitTestSource(value: XRHitTestOptionsInit => js.Promise[XRHitTestSource]): Self = this.set("requestHitTestSource", js.Any.fromFunction1(value))
+    def setUpdateRenderState(value: XRRenderStateInit => js.Promise[Unit]): Self = StObject.set(x, "updateRenderState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequestHitTestSourceForTransientInput(value: XRTransientInputHitTestOptionsInit => js.Promise[XRTransientInputHitTestSource]): Self = this.set("requestHitTestSourceForTransientInput", js.Any.fromFunction1(value))
+    def setUpdateWorldTrackingState(value: PlaneDetectionState => Unit): Self = StObject.set(x, "updateWorldTrackingState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequestReferenceSpace(value: XRReferenceSpaceType => js.Promise[XRReferenceSpace]): Self = this.set("requestReferenceSpace", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateRenderState(value: XRRenderStateInit => js.Promise[Unit]): Self = this.set("updateRenderState", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateWorldTrackingState(value: PlaneDetectionState => Unit): Self = this.set("updateWorldTrackingState", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setVisibilityState(value: XRVisibilityState): Self = this.set("visibilityState", value.asInstanceOf[js.Any])
+    def setVisibilityState(value: XRVisibilityState): Self = StObject.set(x, "visibilityState", value.asInstanceOf[js.Any])
   }
 }

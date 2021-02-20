@@ -1,6 +1,7 @@
 package typings.angular.mod
 
 import typings.angular.mod.global.Function
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // see http://docs.angularjs.org/api/ng/service/$interval
 ///////////////////////////////////////////////////////////////////////////
 @js.native
-trait IIntervalService extends js.Object {
+trait IIntervalService extends StObject {
   
   def apply(
     func: Function,

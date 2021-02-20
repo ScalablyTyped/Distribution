@@ -2,33 +2,47 @@ package typings.babylonjs
 
 import typings.babylonjs.deviceEnumsMod.DeviceType
 import typings.babylonjs.engineMod.Engine
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/DeviceInput/index", JSImport.Namespace)
-@js.native
-object deviceInputIndexMod extends js.Object {
+object deviceInputIndexMod {
   
+  @JSImport("babylonjs/DeviceInput/index", "DeviceInputSystem")
   @js.native
   class DeviceInputSystem protected ()
     extends typings.babylonjs.deviceInputSystemMod.DeviceInputSystem
   /* static members */
-  @js.native
-  object DeviceInputSystem extends js.Object {
+  object DeviceInputSystem {
+    
+    @JSImport("babylonjs/DeviceInput/index", "DeviceInputSystem")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates a new DeviceInputSystem instance
       * @param engine Engine to pull input element from
       * @returns The new instance
       */
+    @JSImport("babylonjs/DeviceInput/index", "DeviceInputSystem.Create")
+    @js.native
     def Create(engine: Engine): typings.babylonjs.deviceInputSystemMod.DeviceInputSystem = js.native
     
-    var _MAX_KEYCODES: js.Any = js.native
+    @JSImport("babylonjs/DeviceInput/index", "DeviceInputSystem._MAX_KEYCODES")
+    @js.native
+    def _MAX_KEYCODES: js.Any = js.native
+    @scala.inline
+    def _MAX_KEYCODES_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAX_KEYCODES")(x.asInstanceOf[js.Any])
     
-    var _MAX_POINTER_INPUTS: js.Any = js.native
+    @JSImport("babylonjs/DeviceInput/index", "DeviceInputSystem._MAX_POINTER_INPUTS")
+    @js.native
+    def _MAX_POINTER_INPUTS: js.Any = js.native
+    @scala.inline
+    def _MAX_POINTER_INPUTS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAX_POINTER_INPUTS")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("babylonjs/DeviceInput/index", "DeviceSource")
   @js.native
   class DeviceSource[T /* <: DeviceType */] protected ()
     extends typings.babylonjs.deviceSourceManagerMod.DeviceSource[T] {
@@ -52,6 +66,7 @@ object deviceInputIndexMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("babylonjs/DeviceInput/index", "DeviceSourceManager")
   @js.native
   class DeviceSourceManager protected ()
     extends typings.babylonjs.deviceSourceManagerMod.DeviceSourceManager {
@@ -62,8 +77,9 @@ object deviceInputIndexMod extends js.Object {
     def this(engine: Engine) = this()
   }
   
+  @JSImport("babylonjs/DeviceInput/index", "DeviceType")
   @js.native
-  object DeviceType extends js.Object {
+  object DeviceType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.babylonjs.deviceEnumsMod.DeviceType with Double] = js.native
@@ -83,8 +99,9 @@ object deviceInputIndexMod extends js.Object {
     /* 5 */ val Xbox: typings.babylonjs.deviceEnumsMod.DeviceType.Xbox with Double = js.native
   }
   
+  @JSImport("babylonjs/DeviceInput/index", "DualShockInput")
   @js.native
-  object DualShockInput extends js.Object {
+  object DualShockInput extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.babylonjs.deviceEnumsMod.DualShockInput with Double] = js.native
@@ -134,8 +151,9 @@ object deviceInputIndexMod extends js.Object {
     /* 3 */ val Triangle: typings.babylonjs.deviceEnumsMod.DualShockInput.Triangle with Double = js.native
   }
   
+  @JSImport("babylonjs/DeviceInput/index", "PointerInput")
   @js.native
-  object PointerInput extends js.Object {
+  object PointerInput extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.babylonjs.deviceEnumsMod.PointerInput with Double] = js.native
@@ -155,8 +173,9 @@ object deviceInputIndexMod extends js.Object {
     /* 1 */ val Vertical: typings.babylonjs.deviceEnumsMod.PointerInput.Vertical with Double = js.native
   }
   
+  @JSImport("babylonjs/DeviceInput/index", "SwitchInput")
   @js.native
-  object SwitchInput extends js.Object {
+  object SwitchInput extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.babylonjs.deviceEnumsMod.SwitchInput with Double] = js.native
@@ -206,8 +225,9 @@ object deviceInputIndexMod extends js.Object {
     /* 7 */ val ZR: typings.babylonjs.deviceEnumsMod.SwitchInput.ZR with Double = js.native
   }
   
+  @JSImport("babylonjs/DeviceInput/index", "XboxInput")
   @js.native
-  object XboxInput extends js.Object {
+  object XboxInput extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.babylonjs.deviceEnumsMod.XboxInput with Double] = js.native

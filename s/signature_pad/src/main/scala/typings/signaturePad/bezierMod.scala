@@ -3,16 +3,16 @@ package typings.signaturePad
 import typings.signaturePad.anon.End
 import typings.signaturePad.pointMod.BasicPoint
 import typings.signaturePad.pointMod.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("signature_pad/dist/types/bezier", JSImport.Namespace)
-@js.native
-object bezierMod extends js.Object {
+object bezierMod {
   
+  @JSImport("signature_pad/dist/types/bezier", "Bezier")
   @js.native
-  class Bezier protected () extends js.Object {
+  class Bezier protected () extends StObject {
     def this(
       startPoint: Point,
       control2: BasicPoint,
@@ -39,11 +39,20 @@ object bezierMod extends js.Object {
     var startWidth: Double = js.native
   }
   /* static members */
-  @js.native
-  object Bezier extends js.Object {
+  object Bezier {
     
-    var calculateControlPoints: js.Any = js.native
+    @JSImport("signature_pad/dist/types/bezier", "Bezier")
+    @js.native
+    val ^ : js.Any = js.native
     
+    @JSImport("signature_pad/dist/types/bezier", "Bezier.calculateControlPoints")
+    @js.native
+    def calculateControlPoints: js.Any = js.native
+    @scala.inline
+    def calculateControlPoints_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("calculateControlPoints")(x.asInstanceOf[js.Any])
+    
+    @JSImport("signature_pad/dist/types/bezier", "Bezier.fromPoints")
+    @js.native
     def fromPoints(points: js.Array[Point], widths: End): Bezier = js.native
   }
 }

@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaskedTextBoxOptions extends js.Object {
+trait MaskedTextBoxOptions extends StObject {
   
   var change: js.UndefOr[js.Function1[/* e */ MaskedTextBoxChangeEvent, Unit]] = js.native
   
@@ -36,78 +37,66 @@ object MaskedTextBoxOptions {
   }
   
   @scala.inline
-  implicit class MaskedTextBoxOptionsOps[Self <: MaskedTextBoxOptions] (val x: Self) extends AnyVal {
+  implicit class MaskedTextBoxOptionsMutableBuilder[Self <: MaskedTextBoxOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChange(value: /* e */ MaskedTextBoxChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClearPromptChar(value: Boolean): Self = StObject.set(x, "clearPromptChar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: /* e */ MaskedTextBoxChangeEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    def setClearPromptCharUndefined: Self = StObject.set(x, "clearPromptChar", js.undefined)
     
     @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
+    def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearPromptChar(value: Boolean): Self = this.set("clearPromptChar", value.asInstanceOf[js.Any])
+    def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
     
     @scala.inline
-    def deleteClearPromptChar: Self = this.set("clearPromptChar", js.undefined)
+    def setLabel(value: String | js.Function | MaskedTextBoxLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCulture(value: String): Self = this.set("culture", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteCulture: Self = this.set("culture", js.undefined)
+    def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String | js.Function | MaskedTextBoxLabel): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMask(value: String): Self = this.set("mask", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMask: Self = this.set("mask", js.undefined)
+    def setPromptChar(value: String): Self = StObject.set(x, "promptChar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPromptCharUndefined: Self = StObject.set(x, "promptChar", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRules(value: js.Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromptChar(value: String): Self = this.set("promptChar", value.asInstanceOf[js.Any])
+    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
     @scala.inline
-    def deletePromptChar: Self = this.set("promptChar", js.undefined)
+    def setUnmaskOnPost(value: Boolean): Self = StObject.set(x, "unmaskOnPost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRules(value: js.Any): Self = this.set("rules", value.asInstanceOf[js.Any])
+    def setUnmaskOnPostUndefined: Self = StObject.set(x, "unmaskOnPost", js.undefined)
     
     @scala.inline
-    def deleteRules: Self = this.set("rules", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnmaskOnPost(value: Boolean): Self = this.set("unmaskOnPost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnmaskOnPost: Self = this.set("unmaskOnPost", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

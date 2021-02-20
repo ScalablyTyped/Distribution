@@ -1,12 +1,13 @@
 package typings.consul.mod
 
 import typings.node.eventsMod.global.NodeJS.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommonOptions extends js.Object {
+trait CommonOptions extends StObject {
   
   var consistent: js.UndefOr[Boolean] = js.native
   
@@ -34,66 +35,54 @@ object CommonOptions {
   }
   
   @scala.inline
-  implicit class CommonOptionsOps[Self <: CommonOptions] (val x: Self) extends AnyVal {
+  implicit class CommonOptionsMutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsistent(value: Boolean): Self = StObject.set(x, "consistent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsistentUndefined: Self = StObject.set(x, "consistent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCtx(value: EventEmitter): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsistent(value: Boolean): Self = this.set("consistent", value.asInstanceOf[js.Any])
+    def setCtxUndefined: Self = StObject.set(x, "ctx", js.undefined)
     
     @scala.inline
-    def deleteConsistent: Self = this.set("consistent", js.undefined)
+    def setDc(value: String): Self = StObject.set(x, "dc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCtx(value: EventEmitter): Self = this.set("ctx", value.asInstanceOf[js.Any])
+    def setDcUndefined: Self = StObject.set(x, "dc", js.undefined)
     
     @scala.inline
-    def deleteCtx: Self = this.set("ctx", js.undefined)
+    def setStale(value: Boolean): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDc(value: String): Self = this.set("dc", value.asInstanceOf[js.Any])
+    def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
     
     @scala.inline
-    def deleteDc: Self = this.set("dc", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStale(value: Boolean): Self = this.set("stale", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteStale: Self = this.set("stale", js.undefined)
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setWait_(value: String): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
+    def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
     
     @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
+    def setWan(value: Boolean): Self = StObject.set(x, "wan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWait(value: String): Self = this.set("wait", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWait: Self = this.set("wait", js.undefined)
-    
-    @scala.inline
-    def setWan(value: Boolean): Self = this.set("wan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWan: Self = this.set("wan", js.undefined)
+    def setWanUndefined: Self = StObject.set(x, "wan", js.undefined)
   }
 }

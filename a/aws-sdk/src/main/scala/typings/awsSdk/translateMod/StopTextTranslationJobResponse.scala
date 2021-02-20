@@ -1,11 +1,12 @@
 package typings.awsSdk.translateMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StopTextTranslationJobResponse extends js.Object {
+trait StopTextTranslationJobResponse extends StObject {
   
   /**
     * The job ID of the stopped batch translation job.
@@ -26,30 +27,18 @@ object StopTextTranslationJobResponse {
   }
   
   @scala.inline
-  implicit class StopTextTranslationJobResponseOps[Self <: StopTextTranslationJobResponse] (val x: Self) extends AnyVal {
+  implicit class StopTextTranslationJobResponseMutableBuilder[Self <: StopTextTranslationJobResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobStatus(value: JobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: JobId): Self = this.set("JobId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobId: Self = this.set("JobId", js.undefined)
-    
-    @scala.inline
-    def setJobStatus(value: JobStatus): Self = this.set("JobStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobStatus: Self = this.set("JobStatus", js.undefined)
+    def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
   }
 }

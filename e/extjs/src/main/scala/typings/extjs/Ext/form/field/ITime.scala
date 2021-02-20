@@ -1,5 +1,6 @@
 package typings.extjs.Ext.form.field
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,96 +63,84 @@ object ITime {
   }
   
   @scala.inline
-  implicit class ITimeOps[Self <: ITime] (val x: Self) extends AnyVal {
+  implicit class ITimeMutableBuilder[Self <: ITime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltFormats(value: String): Self = StObject.set(x, "altFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltFormatsUndefined: Self = StObject.set(x, "altFormats", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltFormats(value: String): Self = this.set("altFormats", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteAltFormats: Self = this.set("altFormats", js.undefined)
+    def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setIncrementUndefined: Self = StObject.set(x, "increment", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setMaxText(value: String): Self = StObject.set(x, "maxText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncrement(value: Double): Self = this.set("increment", value.asInstanceOf[js.Any])
+    def setMaxTextUndefined: Self = StObject.set(x, "maxText", js.undefined)
     
     @scala.inline
-    def deleteIncrement: Self = this.set("increment", js.undefined)
+    def setMaxValue(value: js.Any): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxText(value: String): Self = this.set("maxText", value.asInstanceOf[js.Any])
+    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
     @scala.inline
-    def deleteMaxText: Self = this.set("maxText", js.undefined)
+    def setMinText(value: String): Self = StObject.set(x, "minText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValue(value: js.Any): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    def setMinTextUndefined: Self = StObject.set(x, "minText", js.undefined)
     
     @scala.inline
-    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    def setMinValue(value: js.Any): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinText(value: String): Self = this.set("minText", value.asInstanceOf[js.Any])
+    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
     @scala.inline
-    def deleteMinText: Self = this.set("minText", js.undefined)
+    def setPickerMaxHeight(value: Double): Self = StObject.set(x, "pickerMaxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinValue(value: js.Any): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    def setPickerMaxHeightUndefined: Self = StObject.set(x, "pickerMaxHeight", js.undefined)
     
     @scala.inline
-    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    def setSetMaxValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPickerMaxHeight(value: Double): Self = this.set("pickerMaxHeight", value.asInstanceOf[js.Any])
+    def setSetMaxValueUndefined: Self = StObject.set(x, "setMaxValue", js.undefined)
     
     @scala.inline
-    def deletePickerMaxHeight: Self = this.set("pickerMaxHeight", js.undefined)
+    def setSetMinValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMinValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMaxValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = this.set("setMaxValue", js.Any.fromFunction1(value))
+    def setSetMinValueUndefined: Self = StObject.set(x, "setMinValue", js.undefined)
     
     @scala.inline
-    def deleteSetMaxValue: Self = this.set("setMaxValue", js.undefined)
+    def setSetValue(value: () => _): Self = StObject.set(x, "setValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetMinValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = this.set("setMinValue", js.Any.fromFunction1(value))
+    def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
     @scala.inline
-    def deleteSetMinValue: Self = this.set("setMinValue", js.undefined)
+    def setSnapToIncrement(value: Boolean): Self = StObject.set(x, "snapToIncrement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetValue(value: () => _): Self = this.set("setValue", js.Any.fromFunction0(value))
+    def setSnapToIncrementUndefined: Self = StObject.set(x, "snapToIncrement", js.undefined)
     
     @scala.inline
-    def deleteSetValue: Self = this.set("setValue", js.undefined)
+    def setSubmitFormat(value: String): Self = StObject.set(x, "submitFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapToIncrement(value: Boolean): Self = this.set("snapToIncrement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapToIncrement: Self = this.set("snapToIncrement", js.undefined)
-    
-    @scala.inline
-    def setSubmitFormat(value: String): Self = this.set("submitFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubmitFormat: Self = this.set("submitFormat", js.undefined)
+    def setSubmitFormatUndefined: Self = StObject.set(x, "submitFormat", js.undefined)
   }
 }

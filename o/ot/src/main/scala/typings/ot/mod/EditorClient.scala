@@ -2,6 +2,7 @@ package typings.ot.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ot.mod.EditorClient.OtherClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,13 +50,13 @@ class EditorClient protected () extends Client {
   
   def updateSelection(): Unit = js.native
 }
-@JSImport("ot", "EditorClient")
-@js.native
-object EditorClient extends js.Object {
+object EditorClient {
   
+  @JSImport("ot", "EditorClient.OtherClient")
   @js.native
-  class OtherClient () extends js.Object
+  class OtherClient () extends StObject
   
+  @JSImport("ot", "EditorClient.SelfMeta")
   @js.native
-  class SelfMeta () extends js.Object
+  class SelfMeta () extends StObject
 }

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,24 +32,12 @@ object XTextLayoutConstrains {
   }
   
   @scala.inline
-  implicit class XTextLayoutConstrainsOps[Self <: XTextLayoutConstrains] (val x: Self) extends AnyVal {
+  implicit class XTextLayoutConstrainsMutableBuilder[Self <: XTextLayoutConstrains] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetColumnsAndLines(value: (js.Array[Double], js.Array[Double]) => Unit): Self = StObject.set(x, "getColumnsAndLines", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetColumnsAndLines(value: (js.Array[Double], js.Array[Double]) => Unit): Self = this.set("getColumnsAndLines", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetMinimumSize(value: (Double, Double) => Size): Self = this.set("getMinimumSize", js.Any.fromFunction2(value))
+    def setGetMinimumSize(value: (Double, Double) => Size): Self = StObject.set(x, "getMinimumSize", js.Any.fromFunction2(value))
   }
 }

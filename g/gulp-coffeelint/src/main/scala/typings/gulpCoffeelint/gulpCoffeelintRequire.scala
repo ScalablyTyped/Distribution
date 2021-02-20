@@ -1,5 +1,6 @@
 package typings.gulpCoffeelint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("gulp-coffeelint", JSImport.Namespace)
 @js.native
-object gulpCoffeelintRequire extends js.Object
+object gulpCoffeelintRequire extends StObject

@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Bluetooth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Groups parameters used to configure received signal strength indicator (RSSI)-based filtering. */
 @js.native
-trait BluetoothSignalStrengthFilter extends js.Object {
+trait BluetoothSignalStrengthFilter extends StObject {
   
   /** The minimum received signal strength indicator (RSSI) value in dBm on which RSSI events will be propagated or considered in range if the previous events were considered out of range. */
   var inRangeThresholdInDBm: Double = js.native
@@ -34,30 +35,18 @@ object BluetoothSignalStrengthFilter {
   }
   
   @scala.inline
-  implicit class BluetoothSignalStrengthFilterOps[Self <: BluetoothSignalStrengthFilter] (val x: Self) extends AnyVal {
+  implicit class BluetoothSignalStrengthFilterMutableBuilder[Self <: BluetoothSignalStrengthFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInRangeThresholdInDBm(value: Double): Self = StObject.set(x, "inRangeThresholdInDBm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOutOfRangeThresholdInDBm(value: Double): Self = StObject.set(x, "outOfRangeThresholdInDBm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutOfRangeTimeout(value: Double): Self = StObject.set(x, "outOfRangeTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInRangeThresholdInDBm(value: Double): Self = this.set("inRangeThresholdInDBm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutOfRangeThresholdInDBm(value: Double): Self = this.set("outOfRangeThresholdInDBm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutOfRangeTimeout(value: Double): Self = this.set("outOfRangeTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSamplingInterval(value: Double): Self = this.set("samplingInterval", value.asInstanceOf[js.Any])
+    def setSamplingInterval(value: Double): Self = StObject.set(x, "samplingInterval", value.asInstanceOf[js.Any])
   }
 }

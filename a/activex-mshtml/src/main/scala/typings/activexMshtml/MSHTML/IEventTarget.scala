@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEventTarget extends js.Object {
+trait IEventTarget extends StObject {
   
   @JSName("MSHTML.IEventTarget_typekey")
   var MSHTMLDotIEventTarget_typekey: IEventTarget = js.native
@@ -31,30 +32,18 @@ object IEventTarget {
   }
   
   @scala.inline
-  implicit class IEventTargetOps[Self <: IEventTarget] (val x: Self) extends AnyVal {
+  implicit class IEventTargetMutableBuilder[Self <: IEventTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddEventListener(value: (String, js.Any, Boolean) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDispatchEvent(value: IDOMEvent => Boolean): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMSHTMLDotIEventTarget_typekey(value: IEventTarget): Self = StObject.set(x, "MSHTML.IEventTarget_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotIEventTarget_typekey(value: IEventTarget): Self = this.set("MSHTML.IEventTarget_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAddEventListener(value: (String, js.Any, Boolean) => Unit): Self = this.set("addEventListener", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setDispatchEvent(value: IDOMEvent => Boolean): Self = this.set("dispatchEvent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveEventListener(value: (String, js.Any, Boolean) => Unit): Self = this.set("removeEventListener", js.Any.fromFunction3(value))
+    def setRemoveEventListener(value: (String, js.Any, Boolean) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction3(value))
   }
 }

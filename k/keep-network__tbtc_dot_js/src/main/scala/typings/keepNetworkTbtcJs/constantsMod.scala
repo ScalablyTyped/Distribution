@@ -2,16 +2,16 @@ package typings.keepNetworkTbtcJs
 
 import typings.keepNetworkTbtcJs.commonTypesMod.Contract
 import typings.keepNetworkTbtcJs.commonTypesMod.TBTCConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@keep-network/tbtc.js/src/Constants", JSImport.Namespace)
-@js.native
-object constantsMod extends js.Object {
+object constantsMod {
   
+  @JSImport("@keep-network/tbtc.js/src/Constants", "Constants")
   @js.native
-  class Constants protected () extends js.Object {
+  class Constants protected () extends StObject {
     def this(constants: js.Any, contract: Contract) = this()
     
     var AUCTION_DURATION: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
@@ -42,10 +42,11 @@ object constantsMod extends js.Object {
     
     var contract: Contract = js.native
   }
-  /* static members */
-  @js.native
-  object Constants extends js.Object {
+  object Constants {
     
+    /* static member */
+    @JSImport("@keep-network/tbtc.js/src/Constants", "Constants.withConfig")
+    @js.native
     def withConfig(config: TBTCConfig): js.Promise[Constants] = js.native
   }
 }

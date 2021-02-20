@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -90,90 +91,78 @@ object ParamsResourceTasksList {
   }
   
   @scala.inline
-  implicit class ParamsResourceTasksListOps[Self <: ParamsResourceTasksList] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceTasksListMutableBuilder[Self <: ParamsResourceTasksList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompletedMax(value: String): Self = StObject.set(x, "completedMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setCompletedMaxUndefined: Self = StObject.set(x, "completedMax", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setCompletedMin(value: String): Self = StObject.set(x, "completedMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedMax(value: String): Self = this.set("completedMax", value.asInstanceOf[js.Any])
+    def setCompletedMinUndefined: Self = StObject.set(x, "completedMin", js.undefined)
     
     @scala.inline
-    def deleteCompletedMax: Self = this.set("completedMax", js.undefined)
+    def setDueMax(value: String): Self = StObject.set(x, "dueMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedMin(value: String): Self = this.set("completedMin", value.asInstanceOf[js.Any])
+    def setDueMaxUndefined: Self = StObject.set(x, "dueMax", js.undefined)
     
     @scala.inline
-    def deleteCompletedMin: Self = this.set("completedMin", js.undefined)
+    def setDueMin(value: String): Self = StObject.set(x, "dueMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDueMax(value: String): Self = this.set("dueMax", value.asInstanceOf[js.Any])
+    def setDueMinUndefined: Self = StObject.set(x, "dueMin", js.undefined)
     
     @scala.inline
-    def deleteDueMax: Self = this.set("dueMax", js.undefined)
+    def setMaxResults(value: String): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDueMin(value: String): Self = this.set("dueMin", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteDueMin: Self = this.set("dueMin", js.undefined)
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: String): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setShowCompleted(value: Boolean): Self = StObject.set(x, "showCompleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    def setShowCompletedUndefined: Self = StObject.set(x, "showCompleted", js.undefined)
     
     @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setShowDeleted(value: Boolean): Self = StObject.set(x, "showDeleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCompleted(value: Boolean): Self = this.set("showCompleted", value.asInstanceOf[js.Any])
+    def setShowDeletedUndefined: Self = StObject.set(x, "showDeleted", js.undefined)
     
     @scala.inline
-    def deleteShowCompleted: Self = this.set("showCompleted", js.undefined)
+    def setShowHidden(value: Boolean): Self = StObject.set(x, "showHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowDeleted(value: Boolean): Self = this.set("showDeleted", value.asInstanceOf[js.Any])
+    def setShowHiddenUndefined: Self = StObject.set(x, "showHidden", js.undefined)
     
     @scala.inline
-    def deleteShowDeleted: Self = this.set("showDeleted", js.undefined)
+    def setTasklist(value: String): Self = StObject.set(x, "tasklist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowHidden(value: Boolean): Self = this.set("showHidden", value.asInstanceOf[js.Any])
+    def setTasklistUndefined: Self = StObject.set(x, "tasklist", js.undefined)
     
     @scala.inline
-    def deleteShowHidden: Self = this.set("showHidden", js.undefined)
+    def setUpdatedMin(value: String): Self = StObject.set(x, "updatedMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTasklist(value: String): Self = this.set("tasklist", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTasklist: Self = this.set("tasklist", js.undefined)
-    
-    @scala.inline
-    def setUpdatedMin(value: String): Self = this.set("updatedMin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedMin: Self = this.set("updatedMin", js.undefined)
+    def setUpdatedMinUndefined: Self = StObject.set(x, "updatedMin", js.undefined)
   }
 }

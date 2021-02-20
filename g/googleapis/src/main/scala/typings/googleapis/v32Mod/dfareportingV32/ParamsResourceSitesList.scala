@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -112,129 +113,117 @@ object ParamsResourceSitesList {
   }
   
   @scala.inline
-  implicit class ParamsResourceSitesListOps[Self <: ParamsResourceSitesList] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceSitesListMutableBuilder[Self <: ParamsResourceSitesList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptsInStreamVideoPlacements(value: Boolean): Self = StObject.set(x, "acceptsInStreamVideoPlacements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptsInStreamVideoPlacementsUndefined: Self = StObject.set(x, "acceptsInStreamVideoPlacements", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcceptsInterstitialPlacements(value: Boolean): Self = StObject.set(x, "acceptsInterstitialPlacements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptsInStreamVideoPlacements(value: Boolean): Self = this.set("acceptsInStreamVideoPlacements", value.asInstanceOf[js.Any])
+    def setAcceptsInterstitialPlacementsUndefined: Self = StObject.set(x, "acceptsInterstitialPlacements", js.undefined)
     
     @scala.inline
-    def deleteAcceptsInStreamVideoPlacements: Self = this.set("acceptsInStreamVideoPlacements", js.undefined)
+    def setAcceptsPublisherPaidPlacements(value: Boolean): Self = StObject.set(x, "acceptsPublisherPaidPlacements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptsInterstitialPlacements(value: Boolean): Self = this.set("acceptsInterstitialPlacements", value.asInstanceOf[js.Any])
+    def setAcceptsPublisherPaidPlacementsUndefined: Self = StObject.set(x, "acceptsPublisherPaidPlacements", js.undefined)
     
     @scala.inline
-    def deleteAcceptsInterstitialPlacements: Self = this.set("acceptsInterstitialPlacements", js.undefined)
+    def setAdWordsSite(value: Boolean): Self = StObject.set(x, "adWordsSite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptsPublisherPaidPlacements(value: Boolean): Self = this.set("acceptsPublisherPaidPlacements", value.asInstanceOf[js.Any])
+    def setAdWordsSiteUndefined: Self = StObject.set(x, "adWordsSite", js.undefined)
     
     @scala.inline
-    def deleteAcceptsPublisherPaidPlacements: Self = this.set("acceptsPublisherPaidPlacements", js.undefined)
+    def setApproved(value: Boolean): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdWordsSite(value: Boolean): Self = this.set("adWordsSite", value.asInstanceOf[js.Any])
+    def setApprovedUndefined: Self = StObject.set(x, "approved", js.undefined)
     
     @scala.inline
-    def deleteAdWordsSite: Self = this.set("adWordsSite", js.undefined)
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApproved(value: Boolean): Self = this.set("approved", value.asInstanceOf[js.Any])
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def deleteApproved: Self = this.set("approved", js.undefined)
+    def setCampaignIds(value: js.Array[String]): Self = StObject.set(x, "campaignIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setCampaignIdsUndefined: Self = StObject.set(x, "campaignIds", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setCampaignIdsVarargs(value: String*): Self = StObject.set(x, "campaignIds", js.Array(value :_*))
     
     @scala.inline
-    def setCampaignIdsVarargs(value: String*): Self = this.set("campaignIds", js.Array(value :_*))
+    def setDirectorySiteIds(value: js.Array[String]): Self = StObject.set(x, "directorySiteIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaignIds(value: js.Array[String]): Self = this.set("campaignIds", value.asInstanceOf[js.Any])
+    def setDirectorySiteIdsUndefined: Self = StObject.set(x, "directorySiteIds", js.undefined)
     
     @scala.inline
-    def deleteCampaignIds: Self = this.set("campaignIds", js.undefined)
+    def setDirectorySiteIdsVarargs(value: String*): Self = StObject.set(x, "directorySiteIds", js.Array(value :_*))
     
     @scala.inline
-    def setDirectorySiteIdsVarargs(value: String*): Self = this.set("directorySiteIds", js.Array(value :_*))
+    def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectorySiteIds(value: js.Array[String]): Self = this.set("directorySiteIds", value.asInstanceOf[js.Any])
+    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
     @scala.inline
-    def deleteDirectorySiteIds: Self = this.set("directorySiteIds", js.undefined)
+    def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
     @scala.inline
-    def setIdsVarargs(value: String*): Self = this.set("ids", js.Array(value :_*))
+    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIds(value: js.Array[String]): Self = this.set("ids", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteIds: Self = this.set("ids", js.undefined)
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
     
     @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setSearchString(value: String): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileId(value: String): Self = this.set("profileId", value.asInstanceOf[js.Any])
+    def setSearchStringUndefined: Self = StObject.set(x, "searchString", js.undefined)
     
     @scala.inline
-    def deleteProfileId: Self = this.set("profileId", js.undefined)
+    def setSortField(value: String): Self = StObject.set(x, "sortField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchString(value: String): Self = this.set("searchString", value.asInstanceOf[js.Any])
+    def setSortFieldUndefined: Self = StObject.set(x, "sortField", js.undefined)
     
     @scala.inline
-    def deleteSearchString: Self = this.set("searchString", js.undefined)
+    def setSortOrder(value: String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortField(value: String): Self = this.set("sortField", value.asInstanceOf[js.Any])
+    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
     
     @scala.inline
-    def deleteSortField: Self = this.set("sortField", js.undefined)
+    def setSubaccountId(value: String): Self = StObject.set(x, "subaccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortOrder(value: String): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
+    def setSubaccountIdUndefined: Self = StObject.set(x, "subaccountId", js.undefined)
     
     @scala.inline
-    def deleteSortOrder: Self = this.set("sortOrder", js.undefined)
+    def setUnmappedSite(value: Boolean): Self = StObject.set(x, "unmappedSite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
-    
-    @scala.inline
-    def setUnmappedSite(value: Boolean): Self = this.set("unmappedSite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnmappedSite: Self = this.set("unmappedSite", js.undefined)
+    def setUnmappedSiteUndefined: Self = StObject.set(x, "unmappedSite", js.undefined)
   }
 }

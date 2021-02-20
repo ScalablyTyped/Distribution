@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.ApplicationModel.VoiceCommands
 
 import typings.winrtUwp.Windows.Storage.IStorageFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An asset, containing image, text, and link data, provided by the background app service for display on the Cortana canvas. */
 @js.native
-trait VoiceCommandContentTile extends js.Object {
+trait VoiceCommandContentTile extends StObject {
   
   /** Gets or sets supplementary information the background app service can associate with the content tile. This information is not used by Cortana. */
   var appContext: js.Any = js.native
@@ -51,42 +52,30 @@ object VoiceCommandContentTile {
   }
   
   @scala.inline
-  implicit class VoiceCommandContentTileOps[Self <: VoiceCommandContentTile] (val x: Self) extends AnyVal {
+  implicit class VoiceCommandContentTileMutableBuilder[Self <: VoiceCommandContentTile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppContext(value: js.Any): Self = StObject.set(x, "appContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppLaunchArgument(value: String): Self = StObject.set(x, "appLaunchArgument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentTileType(value: VoiceCommandContentTileType): Self = StObject.set(x, "contentTileType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppContext(value: js.Any): Self = this.set("appContext", value.asInstanceOf[js.Any])
+    def setImage(value: IStorageFile): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppLaunchArgument(value: String): Self = this.set("appLaunchArgument", value.asInstanceOf[js.Any])
+    def setTextLine1(value: String): Self = StObject.set(x, "textLine1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentTileType(value: VoiceCommandContentTileType): Self = this.set("contentTileType", value.asInstanceOf[js.Any])
+    def setTextLine2(value: String): Self = StObject.set(x, "textLine2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: IStorageFile): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setTextLine3(value: String): Self = StObject.set(x, "textLine3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextLine1(value: String): Self = this.set("textLine1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextLine2(value: String): Self = this.set("textLine2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextLine3(value: String): Self = this.set("textLine3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

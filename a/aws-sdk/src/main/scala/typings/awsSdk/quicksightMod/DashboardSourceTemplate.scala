@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DashboardSourceTemplate extends js.Object {
+trait DashboardSourceTemplate extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
@@ -26,27 +27,15 @@ object DashboardSourceTemplate {
   }
   
   @scala.inline
-  implicit class DashboardSourceTemplateOps[Self <: DashboardSourceTemplate] (val x: Self) extends AnyVal {
+  implicit class DashboardSourceTemplateMutableBuilder[Self <: DashboardSourceTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSetReferences(value: DataSetReferenceList): Self = StObject.set(x, "DataSetReferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataSetReferencesVarargs(value: DataSetReference*): Self = this.set("DataSetReferences", js.Array(value :_*))
-    
-    @scala.inline
-    def setDataSetReferences(value: DataSetReferenceList): Self = this.set("DataSetReferences", value.asInstanceOf[js.Any])
+    def setDataSetReferencesVarargs(value: DataSetReference*): Self = StObject.set(x, "DataSetReferences", js.Array(value :_*))
   }
 }

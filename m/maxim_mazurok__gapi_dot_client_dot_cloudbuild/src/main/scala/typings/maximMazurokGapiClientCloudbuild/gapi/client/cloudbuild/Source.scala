@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Source extends js.Object {
+trait Source extends StObject {
   
   /** If provided, get the source from this location in a Cloud Source Repository. */
   var repoSource: js.UndefOr[RepoSource] = js.native
@@ -22,30 +23,18 @@ object Source {
   }
   
   @scala.inline
-  implicit class SourceOps[Self <: Source] (val x: Self) extends AnyVal {
+  implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRepoSource(value: RepoSource): Self = StObject.set(x, "repoSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRepoSourceUndefined: Self = StObject.set(x, "repoSource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStorageSource(value: StorageSource): Self = StObject.set(x, "storageSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepoSource(value: RepoSource): Self = this.set("repoSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepoSource: Self = this.set("repoSource", js.undefined)
-    
-    @scala.inline
-    def setStorageSource(value: StorageSource): Self = this.set("storageSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageSource: Self = this.set("storageSource", js.undefined)
+    def setStorageSourceUndefined: Self = StObject.set(x, "storageSource", js.undefined)
   }
 }

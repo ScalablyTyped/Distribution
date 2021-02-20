@@ -1,6 +1,7 @@
 package typings.reactNative.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,12 +24,18 @@ class TextInput ()
   def isFocused(): Boolean = js.native
 }
 /* static members */
-@JSImport("react-native", "TextInput")
-@js.native
-object TextInput extends js.Object {
+object TextInput {
+  
+  @JSImport("react-native", "TextInput")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Access the current focus state.
     */
-  var State: TextInputState = js.native
+  @JSImport("react-native", "TextInput.State")
+  @js.native
+  def State: TextInputState = js.native
+  @scala.inline
+  def State_=(x: TextInputState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("State")(x.asInstanceOf[js.Any])
 }

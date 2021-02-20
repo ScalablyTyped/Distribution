@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchProperties extends js.Object {
+trait SearchProperties extends StObject {
   
   /**
     * Indicates whether the place finder is enabled in the web scene or the web map.
@@ -44,45 +45,33 @@ object SearchProperties {
   }
   
   @scala.inline
-  implicit class SearchPropertiesOps[Self <: SearchProperties] (val x: Self) extends AnyVal {
+  implicit class SearchPropertiesMutableBuilder[Self <: SearchProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressSearchEnabled(value: Boolean): Self = StObject.set(x, "addressSearchEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressSearchEnabledUndefined: Self = StObject.set(x, "addressSearchEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressSearchEnabled(value: Boolean): Self = this.set("addressSearchEnabled", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteAddressSearchEnabled: Self = this.set("addressSearchEnabled", js.undefined)
+    def setHintText(value: String): Self = StObject.set(x, "hintText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setHintTextUndefined: Self = StObject.set(x, "hintText", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setLayers(value: CollectionProperties[SearchLayerProperties]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHintText(value: String): Self = this.set("hintText", value.asInstanceOf[js.Any])
+    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
     @scala.inline
-    def deleteHintText: Self = this.set("hintText", js.undefined)
-    
-    @scala.inline
-    def setLayersVarargs(value: SearchLayerProperties*): Self = this.set("layers", js.Array(value :_*))
-    
-    @scala.inline
-    def setLayers(value: CollectionProperties[SearchLayerProperties]): Self = this.set("layers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayers: Self = this.set("layers", js.undefined)
+    def setLayersVarargs(value: SearchLayerProperties*): Self = StObject.set(x, "layers", js.Array(value :_*))
   }
 }

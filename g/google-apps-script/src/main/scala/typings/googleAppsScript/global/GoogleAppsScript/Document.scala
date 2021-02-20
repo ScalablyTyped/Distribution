@@ -1,12 +1,11 @@
 package typings.googleAppsScript.global.GoogleAppsScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GoogleAppsScript.Document")
-@js.native
-object Document extends js.Object {
+object Document {
   
   /**
     * An enumeration of the element attributes.
@@ -23,8 +22,9 @@ object Document extends js.Object {
     *       .insertText(0, 'Hello\n')
     *       .setAttributes(0, 4, highlightStyle);
     */
+  @JSGlobal("GoogleAppsScript.Document.Attribute")
   @js.native
-  object Attribute extends js.Object {
+  object Attribute extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.Attribute with Double] = js.native
@@ -117,8 +117,9 @@ object Document extends js.Object {
     *       firstChild.asParagraph().setHeading(DocumentApp.ParagraphHeading.HEADING1);
     *     }
     */
+  @JSGlobal("GoogleAppsScript.Document.ElementType")
   @js.native
-  object ElementType extends js.Object {
+  object ElementType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.ElementType with Double] = js.native
@@ -197,8 +198,9 @@ object Document extends js.Object {
     *     var b = a + text.length - 1;
     *     body.editAsText().setFontFamily(a, b, DocumentApp.FontFamily.COMIC_SANS_MS);
     */
+  @JSGlobal("GoogleAppsScript.Document.FontFamily")
   @js.native
-  object FontFamily extends js.Object {
+  object FontFamily extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.FontFamily with Double] = js.native
@@ -283,8 +285,9 @@ object Document extends js.Object {
     *      body.appendListItem("Item 2").setNestingLevel(1).setIndentStart(72)
     *          .setGlyphType(DocumentApp.GlyphType.SQUARE_BULLET);
     */
+  @JSGlobal("GoogleAppsScript.Document.GlyphType")
   @js.native
-  object GlyphType extends js.Object {
+  object GlyphType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.GlyphType with Double] = js.native
@@ -328,8 +331,9 @@ object Document extends js.Object {
     *     // Right align the second cell.
     *     par3.setAlignment(DocumentApp.HorizontalAlignment.RIGHT);
     */
+  @JSGlobal("GoogleAppsScript.Document.HorizontalAlignment")
   @js.native
-  object HorizontalAlignment extends js.Object {
+  object HorizontalAlignment extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -364,8 +368,9 @@ object Document extends js.Object {
     *     var par3 = body.appendParagraph("Text");
     *     par3.setHeading(DocumentApp.ParagraphHeading.NORMAL);
     */
+  @JSGlobal("GoogleAppsScript.Document.ParagraphHeading")
   @js.native
-  object ParagraphHeading extends js.Object {
+  object ParagraphHeading extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.ParagraphHeading with Double] = js.native
@@ -393,8 +398,9 @@ object Document extends js.Object {
     * An enumeration that specifies how to lay out a PositionedImage in relation to surrounding
     * text.
     */
+  @JSGlobal("GoogleAppsScript.Document.PositionedLayout")
   @js.native
-  object PositionedLayout extends js.Object {
+  object PositionedLayout extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.PositionedLayout with Double] = js.native
@@ -417,8 +423,9 @@ object Document extends js.Object {
     *     var text = DocumentApp.getActiveDocument().getBody().getParagraphs()[0].editAsText();
     *     text.setTextAlignment(0, 0, DocumentApp.TextAlignment.SUPERSCRIPT);
     */
+  @JSGlobal("GoogleAppsScript.Document.TextAlignment")
   @js.native
-  object TextAlignment extends js.Object {
+  object TextAlignment extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.TextAlignment with Double] = js.native
@@ -449,8 +456,9 @@ object Document extends js.Object {
     *     // Align the third cell's contents to the bottom.
     *     table.getCell(0, 2).setVerticalAlignment(DocumentApp.VerticalAlignment.BOTTOM);
     */
+  @JSGlobal("GoogleAppsScript.Document.VerticalAlignment")
   @js.native
-  object VerticalAlignment extends js.Object {
+  object VerticalAlignment extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Document.VerticalAlignment with Double] = js.native

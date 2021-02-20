@@ -2,12 +2,13 @@ package typings.reactNative.mod
 
 import typings.reactNative.reactNativeStrings.fade
 import typings.reactNative.reactNativeStrings.slide
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StatusBarPropsIOS extends js.Object {
+trait StatusBarPropsIOS extends StObject {
   
   /**
     * Sets the color of the status bar text.
@@ -34,36 +35,24 @@ object StatusBarPropsIOS {
   }
   
   @scala.inline
-  implicit class StatusBarPropsIOSOps[Self <: StatusBarPropsIOS] (val x: Self) extends AnyVal {
+  implicit class StatusBarPropsIOSMutableBuilder[Self <: StatusBarPropsIOS] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBarStyle(value: StatusBarStyle): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNetworkActivityIndicatorVisible(value: Boolean): Self = StObject.set(x, "networkActivityIndicatorVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarStyle(value: StatusBarStyle): Self = this.set("barStyle", value.asInstanceOf[js.Any])
+    def setNetworkActivityIndicatorVisibleUndefined: Self = StObject.set(x, "networkActivityIndicatorVisible", js.undefined)
     
     @scala.inline
-    def deleteBarStyle: Self = this.set("barStyle", js.undefined)
+    def setShowHideTransition(value: fade | slide): Self = StObject.set(x, "showHideTransition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkActivityIndicatorVisible(value: Boolean): Self = this.set("networkActivityIndicatorVisible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkActivityIndicatorVisible: Self = this.set("networkActivityIndicatorVisible", js.undefined)
-    
-    @scala.inline
-    def setShowHideTransition(value: fade | slide): Self = this.set("showHideTransition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowHideTransition: Self = this.set("showHideTransition", js.undefined)
+    def setShowHideTransitionUndefined: Self = StObject.set(x, "showHideTransition", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InventorySource extends js.Object {
+trait InventorySource extends StObject {
   
   /** Whether the inventory source has a guaranteed or non-guaranteed delivery. */
   var commitment: js.UndefOr[String] = js.native
@@ -61,105 +62,93 @@ object InventorySource {
   }
   
   @scala.inline
-  implicit class InventorySourceOps[Self <: InventorySource] (val x: Self) extends AnyVal {
+  implicit class InventorySourceMutableBuilder[Self <: InventorySource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitment(value: String): Self = StObject.set(x, "commitment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommitmentUndefined: Self = StObject.set(x, "commitment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreativeConfigs(value: js.Array[CreativeConfig]): Self = StObject.set(x, "creativeConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitment(value: String): Self = this.set("commitment", value.asInstanceOf[js.Any])
+    def setCreativeConfigsUndefined: Self = StObject.set(x, "creativeConfigs", js.undefined)
     
     @scala.inline
-    def deleteCommitment: Self = this.set("commitment", js.undefined)
+    def setCreativeConfigsVarargs(value: CreativeConfig*): Self = StObject.set(x, "creativeConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setCreativeConfigsVarargs(value: CreativeConfig*): Self = this.set("creativeConfigs", js.Array(value :_*))
+    def setDealId(value: String): Self = StObject.set(x, "dealId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreativeConfigs(value: js.Array[CreativeConfig]): Self = this.set("creativeConfigs", value.asInstanceOf[js.Any])
+    def setDealIdUndefined: Self = StObject.set(x, "dealId", js.undefined)
     
     @scala.inline
-    def deleteCreativeConfigs: Self = this.set("creativeConfigs", js.undefined)
+    def setDeliveryMethod(value: String): Self = StObject.set(x, "deliveryMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDealId(value: String): Self = this.set("dealId", value.asInstanceOf[js.Any])
+    def setDeliveryMethodUndefined: Self = StObject.set(x, "deliveryMethod", js.undefined)
     
     @scala.inline
-    def deleteDealId: Self = this.set("dealId", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryMethod(value: String): Self = this.set("deliveryMethod", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDeliveryMethod: Self = this.set("deliveryMethod", js.undefined)
+    def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setExchangeUndefined: Self = StObject.set(x, "exchange", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setInventorySourceId(value: String): Self = StObject.set(x, "inventorySourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExchange(value: String): Self = this.set("exchange", value.asInstanceOf[js.Any])
+    def setInventorySourceIdUndefined: Self = StObject.set(x, "inventorySourceId", js.undefined)
     
     @scala.inline
-    def deleteExchange: Self = this.set("exchange", js.undefined)
+    def setInventorySourceType(value: String): Self = StObject.set(x, "inventorySourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInventorySourceId(value: String): Self = this.set("inventorySourceId", value.asInstanceOf[js.Any])
+    def setInventorySourceTypeUndefined: Self = StObject.set(x, "inventorySourceType", js.undefined)
     
     @scala.inline
-    def deleteInventorySourceId: Self = this.set("inventorySourceId", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInventorySourceType(value: String): Self = this.set("inventorySourceType", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteInventorySourceType: Self = this.set("inventorySourceType", js.undefined)
+    def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPublisherNameUndefined: Self = StObject.set(x, "publisherName", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRateDetails(value: RateDetails): Self = StObject.set(x, "rateDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublisherName(value: String): Self = this.set("publisherName", value.asInstanceOf[js.Any])
+    def setRateDetailsUndefined: Self = StObject.set(x, "rateDetails", js.undefined)
     
     @scala.inline
-    def deletePublisherName: Self = this.set("publisherName", js.undefined)
+    def setStatus(value: InventorySourceStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRateDetails(value: RateDetails): Self = this.set("rateDetails", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteRateDetails: Self = this.set("rateDetails", js.undefined)
+    def setTimeRange(value: TimeRange): Self = StObject.set(x, "timeRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: InventorySourceStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTimeRangeUndefined: Self = StObject.set(x, "timeRange", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeRange(value: TimeRange): Self = this.set("timeRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeRange: Self = this.set("timeRange", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.extendedListbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBoxSettings extends js.Object {
+trait ListBoxSettings extends StObject {
   
   /** function which returns a array of items */
   var getItems: js.UndefOr[js.Function0[js.Array[String | ListBoxItem]]] = js.native
@@ -43,72 +44,60 @@ object ListBoxSettings {
   }
   
   @scala.inline
-  implicit class ListBoxSettingsOps[Self <: ListBoxSettings] (val x: Self) extends AnyVal {
+  implicit class ListBoxSettingsMutableBuilder[Self <: ListBoxSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetItems(value: () => js.Array[String | ListBoxItem]): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetItemsUndefined: Self = StObject.set(x, "getItems", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnFilterChanged(value: /* event */ ListBoxEvent => Unit): Self = StObject.set(x, "onFilterChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetItems(value: () => js.Array[String | ListBoxItem]): Self = this.set("getItems", js.Any.fromFunction0(value))
+    def setOnFilterChangedUndefined: Self = StObject.set(x, "onFilterChanged", js.undefined)
     
     @scala.inline
-    def deleteGetItems: Self = this.set("getItems", js.undefined)
+    def setOnItemDoubleClicked(value: /* event */ ListBoxEvent => Unit): Self = StObject.set(x, "onItemDoubleClicked", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnFilterChanged(value: /* event */ ListBoxEvent => Unit): Self = this.set("onFilterChanged", js.Any.fromFunction1(value))
+    def setOnItemDoubleClickedUndefined: Self = StObject.set(x, "onItemDoubleClicked", js.undefined)
     
     @scala.inline
-    def deleteOnFilterChanged: Self = this.set("onFilterChanged", js.undefined)
+    def setOnItemEnterPressed(value: /* event */ ListBoxEvent => Unit): Self = StObject.set(x, "onItemEnterPressed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnItemDoubleClicked(value: /* event */ ListBoxEvent => Unit): Self = this.set("onItemDoubleClicked", js.Any.fromFunction1(value))
+    def setOnItemEnterPressedUndefined: Self = StObject.set(x, "onItemEnterPressed", js.undefined)
     
     @scala.inline
-    def deleteOnItemDoubleClicked: Self = this.set("onItemDoubleClicked", js.undefined)
+    def setOnItemsChanged(value: /* event */ ListBoxEvent => Unit): Self = StObject.set(x, "onItemsChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnItemEnterPressed(value: /* event */ ListBoxEvent => Unit): Self = this.set("onItemEnterPressed", js.Any.fromFunction1(value))
+    def setOnItemsChangedUndefined: Self = StObject.set(x, "onItemsChanged", js.undefined)
     
     @scala.inline
-    def deleteOnItemEnterPressed: Self = this.set("onItemEnterPressed", js.undefined)
+    def setOnValueChanged(value: /* event */ ListBoxEvent => Unit): Self = StObject.set(x, "onValueChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnItemsChanged(value: /* event */ ListBoxEvent => Unit): Self = this.set("onItemsChanged", js.Any.fromFunction1(value))
+    def setOnValueChangedUndefined: Self = StObject.set(x, "onValueChanged", js.undefined)
     
     @scala.inline
-    def deleteOnItemsChanged: Self = this.set("onItemsChanged", js.undefined)
+    def setSearchBar(value: Boolean): Self = StObject.set(x, "searchBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnValueChanged(value: /* event */ ListBoxEvent => Unit): Self = this.set("onValueChanged", js.Any.fromFunction1(value))
+    def setSearchBarButton(value: ListBoxSearchBarButtonOptions): Self = StObject.set(x, "searchBarButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnValueChanged: Self = this.set("onValueChanged", js.undefined)
+    def setSearchBarButtonUndefined: Self = StObject.set(x, "searchBarButton", js.undefined)
     
     @scala.inline
-    def setSearchBar(value: Boolean): Self = this.set("searchBar", value.asInstanceOf[js.Any])
+    def setSearchBarUndefined: Self = StObject.set(x, "searchBar", js.undefined)
     
     @scala.inline
-    def deleteSearchBar: Self = this.set("searchBar", js.undefined)
+    def setSearchBarWatermark(value: String): Self = StObject.set(x, "searchBarWatermark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchBarButton(value: ListBoxSearchBarButtonOptions): Self = this.set("searchBarButton", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchBarButton: Self = this.set("searchBarButton", js.undefined)
-    
-    @scala.inline
-    def setSearchBarWatermark(value: String): Self = this.set("searchBarWatermark", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchBarWatermark: Self = this.set("searchBarWatermark", js.undefined)
+    def setSearchBarWatermarkUndefined: Self = StObject.set(x, "searchBarWatermark", js.undefined)
   }
 }

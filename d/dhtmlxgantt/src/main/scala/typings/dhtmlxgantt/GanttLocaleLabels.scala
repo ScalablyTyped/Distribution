@@ -1,11 +1,12 @@
 package typings.dhtmlxgantt
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GanttLocaleLabels extends js.Object {
+trait GanttLocaleLabels extends StObject {
   
   var confirm_closing: String = js.native
   
@@ -80,81 +81,69 @@ object GanttLocaleLabels {
   }
   
   @scala.inline
-  implicit class GanttLocaleLabelsOps[Self <: GanttLocaleLabels] (val x: Self) extends AnyVal {
+  implicit class GanttLocaleLabelsMutableBuilder[Self <: GanttLocaleLabels] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfirm_closing(value: String): Self = StObject.set(x, "confirm_closing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfirm_deleting(value: String): Self = StObject.set(x, "confirm_deleting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfirm_link_deleting(value: String): Self = StObject.set(x, "confirm_link_deleting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirm_closing(value: String): Self = this.set("confirm_closing", value.asInstanceOf[js.Any])
+    def setDays(value: String): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirm_deleting(value: String): Self = this.set("confirm_deleting", value.asInstanceOf[js.Any])
+    def setHours(value: String): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirm_link_deleting(value: String): Self = this.set("confirm_link_deleting", value.asInstanceOf[js.Any])
+    def setIcon_cancel(value: String): Self = StObject.set(x, "icon_cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDays(value: String): Self = this.set("days", value.asInstanceOf[js.Any])
+    def setIcon_delete(value: String): Self = StObject.set(x, "icon_delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHours(value: String): Self = this.set("hours", value.asInstanceOf[js.Any])
+    def setIcon_details(value: String): Self = StObject.set(x, "icon_details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon_cancel(value: String): Self = this.set("icon_cancel", value.asInstanceOf[js.Any])
+    def setIcon_edit(value: String): Self = StObject.set(x, "icon_edit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon_delete(value: String): Self = this.set("icon_delete", value.asInstanceOf[js.Any])
+    def setIcon_save(value: String): Self = StObject.set(x, "icon_save", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon_details(value: String): Self = this.set("icon_details", value.asInstanceOf[js.Any])
+    def setLink_end(value: String): Self = StObject.set(x, "link_end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon_edit(value: String): Self = this.set("icon_edit", value.asInstanceOf[js.Any])
+    def setLink_from(value: String): Self = StObject.set(x, "link_from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon_save(value: String): Self = this.set("icon_save", value.asInstanceOf[js.Any])
+    def setLink_start(value: String): Self = StObject.set(x, "link_start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink_end(value: String): Self = this.set("link_end", value.asInstanceOf[js.Any])
+    def setLink_to(value: String): Self = StObject.set(x, "link_to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink_from(value: String): Self = this.set("link_from", value.asInstanceOf[js.Any])
+    def setMinutes(value: String): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink_start(value: String): Self = this.set("link_start", value.asInstanceOf[js.Any])
+    def setMonths(value: String): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink_to(value: String): Self = this.set("link_to", value.asInstanceOf[js.Any])
+    def setNew_task(value: String): Self = StObject.set(x, "new_task", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinutes(value: String): Self = this.set("minutes", value.asInstanceOf[js.Any])
+    def setSection_description(value: String): Self = StObject.set(x, "section_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonths(value: String): Self = this.set("months", value.asInstanceOf[js.Any])
+    def setSection_time(value: String): Self = StObject.set(x, "section_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNew_task(value: String): Self = this.set("new_task", value.asInstanceOf[js.Any])
+    def setWeeks(value: String): Self = StObject.set(x, "weeks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSection_description(value: String): Self = this.set("section_description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSection_time(value: String): Self = this.set("section_time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeeks(value: String): Self = this.set("weeks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYears(value: String): Self = this.set("years", value.asInstanceOf[js.Any])
+    def setYears(value: String): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
   }
 }

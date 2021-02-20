@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceRevision extends js.Object {
+trait SourceRevision extends StObject {
   
   /**
     * The name of the action that processed the revision to the source artifact.
@@ -36,39 +37,27 @@ object SourceRevision {
   }
   
   @scala.inline
-  implicit class SourceRevisionOps[Self <: SourceRevision] (val x: Self) extends AnyVal {
+  implicit class SourceRevisionMutableBuilder[Self <: SourceRevision] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionName(value: ActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRevisionId(value: Revision): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
     
     @scala.inline
-    def setActionName(value: ActionName): Self = this.set("actionName", value.asInstanceOf[js.Any])
+    def setRevisionSummary(value: RevisionSummary): Self = StObject.set(x, "revisionSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisionId(value: Revision): Self = this.set("revisionId", value.asInstanceOf[js.Any])
+    def setRevisionSummaryUndefined: Self = StObject.set(x, "revisionSummary", js.undefined)
     
     @scala.inline
-    def deleteRevisionId: Self = this.set("revisionId", js.undefined)
+    def setRevisionUrl(value: Url): Self = StObject.set(x, "revisionUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisionSummary(value: RevisionSummary): Self = this.set("revisionSummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisionSummary: Self = this.set("revisionSummary", js.undefined)
-    
-    @scala.inline
-    def setRevisionUrl(value: Url): Self = this.set("revisionUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisionUrl: Self = this.set("revisionUrl", js.undefined)
+    def setRevisionUrlUndefined: Self = StObject.set(x, "revisionUrl", js.undefined)
   }
 }

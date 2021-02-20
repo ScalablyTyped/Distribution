@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Container extends js.Object {
+trait Container extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the container.
@@ -96,123 +97,111 @@ object Container {
   }
   
   @scala.inline
-  implicit class ContainerOps[Self <: Container] (val x: Self) extends AnyVal {
+  implicit class ContainerMutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerArn(value: String): Self = StObject.set(x, "containerArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerArnUndefined: Self = StObject.set(x, "containerArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCpu(value: String): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerArn(value: String): Self = this.set("containerArn", value.asInstanceOf[js.Any])
+    def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
     
     @scala.inline
-    def deleteContainerArn: Self = this.set("containerArn", js.undefined)
+    def setExitCode(value: BoxedInteger): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpu(value: String): Self = this.set("cpu", value.asInstanceOf[js.Any])
+    def setExitCodeUndefined: Self = StObject.set(x, "exitCode", js.undefined)
     
     @scala.inline
-    def deleteCpu: Self = this.set("cpu", js.undefined)
+    def setGpuIds(value: GpuIds): Self = StObject.set(x, "gpuIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExitCode(value: BoxedInteger): Self = this.set("exitCode", value.asInstanceOf[js.Any])
+    def setGpuIdsUndefined: Self = StObject.set(x, "gpuIds", js.undefined)
     
     @scala.inline
-    def deleteExitCode: Self = this.set("exitCode", js.undefined)
+    def setGpuIdsVarargs(value: String*): Self = StObject.set(x, "gpuIds", js.Array(value :_*))
     
     @scala.inline
-    def setGpuIdsVarargs(value: String*): Self = this.set("gpuIds", js.Array(value :_*))
+    def setHealthStatus(value: HealthStatus): Self = StObject.set(x, "healthStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGpuIds(value: GpuIds): Self = this.set("gpuIds", value.asInstanceOf[js.Any])
+    def setHealthStatusUndefined: Self = StObject.set(x, "healthStatus", js.undefined)
     
     @scala.inline
-    def deleteGpuIds: Self = this.set("gpuIds", js.undefined)
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthStatus(value: HealthStatus): Self = this.set("healthStatus", value.asInstanceOf[js.Any])
+    def setImageDigest(value: String): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHealthStatus: Self = this.set("healthStatus", js.undefined)
+    def setImageDigestUndefined: Self = StObject.set(x, "imageDigest", js.undefined)
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setLastStatus(value: String): Self = StObject.set(x, "lastStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageDigest(value: String): Self = this.set("imageDigest", value.asInstanceOf[js.Any])
+    def setLastStatusUndefined: Self = StObject.set(x, "lastStatus", js.undefined)
     
     @scala.inline
-    def deleteImageDigest: Self = this.set("imageDigest", js.undefined)
+    def setMemory(value: String): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastStatus(value: String): Self = this.set("lastStatus", value.asInstanceOf[js.Any])
+    def setMemoryReservation(value: String): Self = StObject.set(x, "memoryReservation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastStatus: Self = this.set("lastStatus", js.undefined)
+    def setMemoryReservationUndefined: Self = StObject.set(x, "memoryReservation", js.undefined)
     
     @scala.inline
-    def setMemory(value: String): Self = this.set("memory", value.asInstanceOf[js.Any])
+    def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
     
     @scala.inline
-    def deleteMemory: Self = this.set("memory", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemoryReservation(value: String): Self = this.set("memoryReservation", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMemoryReservation: Self = this.set("memoryReservation", js.undefined)
+    def setNetworkBindings(value: NetworkBindings): Self = StObject.set(x, "networkBindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNetworkBindingsUndefined: Self = StObject.set(x, "networkBindings", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNetworkBindingsVarargs(value: NetworkBinding*): Self = StObject.set(x, "networkBindings", js.Array(value :_*))
     
     @scala.inline
-    def setNetworkBindingsVarargs(value: NetworkBinding*): Self = this.set("networkBindings", js.Array(value :_*))
+    def setNetworkInterfaces(value: NetworkInterfaces): Self = StObject.set(x, "networkInterfaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkBindings(value: NetworkBindings): Self = this.set("networkBindings", value.asInstanceOf[js.Any])
+    def setNetworkInterfacesUndefined: Self = StObject.set(x, "networkInterfaces", js.undefined)
     
     @scala.inline
-    def deleteNetworkBindings: Self = this.set("networkBindings", js.undefined)
+    def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "networkInterfaces", js.Array(value :_*))
     
     @scala.inline
-    def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = this.set("networkInterfaces", js.Array(value :_*))
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkInterfaces(value: NetworkInterfaces): Self = this.set("networkInterfaces", value.asInstanceOf[js.Any])
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     @scala.inline
-    def deleteNetworkInterfaces: Self = this.set("networkInterfaces", js.undefined)
+    def setRuntimeId(value: String): Self = StObject.set(x, "runtimeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setRuntimeIdUndefined: Self = StObject.set(x, "runtimeId", js.undefined)
     
     @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setTaskArn(value: String): Self = StObject.set(x, "taskArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuntimeId(value: String): Self = this.set("runtimeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuntimeId: Self = this.set("runtimeId", js.undefined)
-    
-    @scala.inline
-    def setTaskArn(value: String): Self = this.set("taskArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskArn: Self = this.set("taskArn", js.undefined)
+    def setTaskArnUndefined: Self = StObject.set(x, "taskArn", js.undefined)
   }
 }

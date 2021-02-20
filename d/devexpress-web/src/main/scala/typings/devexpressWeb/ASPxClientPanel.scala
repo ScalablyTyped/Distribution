@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,39 +82,27 @@ object ASPxClientPanel {
   }
   
   @scala.inline
-  implicit class ASPxClientPanelOps[Self <: ASPxClientPanel] (val x: Self) extends AnyVal {
+  implicit class ASPxClientPanelMutableBuilder[Self <: ASPxClientPanel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollapse(value: () => Unit): Self = StObject.set(x, "Collapse", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollapsed(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPanel]]): Self = StObject.set(x, "Collapsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpand(value: () => Unit): Self = StObject.set(x, "Expand", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCollapse(value: () => Unit): Self = this.set("Collapse", js.Any.fromFunction0(value))
+    def setExpanded(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPanel]]): Self = StObject.set(x, "Expanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapsed(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPanel]]): Self = this.set("Collapsed", value.asInstanceOf[js.Any])
+    def setIsExpandable(value: () => Boolean): Self = StObject.set(x, "IsExpandable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExpand(value: () => Unit): Self = this.set("Expand", js.Any.fromFunction0(value))
+    def setIsExpanded(value: () => Boolean): Self = StObject.set(x, "IsExpanded", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExpanded(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPanel]]): Self = this.set("Expanded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsExpandable(value: () => Boolean): Self = this.set("IsExpandable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsExpanded(value: () => Boolean): Self = this.set("IsExpanded", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToggle(value: () => Unit): Self = this.set("Toggle", js.Any.fromFunction0(value))
+    def setToggle(value: () => Unit): Self = StObject.set(x, "Toggle", js.Any.fromFunction0(value))
   }
 }

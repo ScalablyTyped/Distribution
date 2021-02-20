@@ -1,23 +1,49 @@
 package typings.akuminaCore.mod.Digispace
 
-import typings.akuminaCore.anon.Email
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("akumina-core", "Digispace.PageContext")
 @js.native
-class PageContext () extends js.Object
-/* static members */
-@JSImport("akumina-core", "Digispace.PageContext")
-@js.native
-object PageContext extends js.Object {
+class PageContext () extends StObject
+object PageContext {
   
-  var EditMode: Boolean = js.native
+  @JSImport("akumina-core", "Digispace.PageContext")
+  @js.native
+  val ^ : js.Any = js.native
   
+  /* static member */
+  @JSImport("akumina-core", "Digispace.PageContext.EditMode")
+  @js.native
+  def EditMode: Boolean = js.native
+  @scala.inline
+  def EditMode_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EditMode")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("akumina-core", "Digispace.PageContext.MapPageUrl")
+  @js.native
   def MapPageUrl(pageUrl: String): String = js.native
   
-  var PageId: String = js.native
+  /* static member */
+  @JSImport("akumina-core", "Digispace.PageContext.PageId")
+  @js.native
+  def PageId: String = js.native
+  @scala.inline
+  def PageId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PageId")(x.asInstanceOf[js.Any])
   
-  var PageRouteInfo: Email = js.native
+  /* static member */
+  object PageRouteInfo {
+    
+    @JSImport("akumina-core", "Digispace.PageContext.PageRouteInfo")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("akumina-core", "Digispace.PageContext.PageRouteInfo.email")
+    @js.native
+    def email: String = js.native
+    @scala.inline
+    def email_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("email")(x.asInstanceOf[js.Any])
+  }
 }

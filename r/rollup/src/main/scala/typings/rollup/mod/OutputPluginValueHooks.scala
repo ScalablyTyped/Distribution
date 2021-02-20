@@ -1,11 +1,12 @@
 package typings.rollup.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutputPluginValueHooks extends js.Object {
+trait OutputPluginValueHooks extends StObject {
   
   var banner: AddonHook = js.native
   
@@ -26,33 +27,21 @@ object OutputPluginValueHooks {
   }
   
   @scala.inline
-  implicit class OutputPluginValueHooksOps[Self <: OutputPluginValueHooks] (val x: Self) extends AnyVal {
+  implicit class OutputPluginValueHooksMutableBuilder[Self <: OutputPluginValueHooks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBanner(value: AddonHook): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFooter(value: AddonHook): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBanner(value: AddonHook): Self = this.set("banner", value.asInstanceOf[js.Any])
+    def setIntro(value: AddonHook): Self = StObject.set(x, "intro", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheKey(value: String): Self = this.set("cacheKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFooter(value: AddonHook): Self = this.set("footer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIntro(value: AddonHook): Self = this.set("intro", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutro(value: AddonHook): Self = this.set("outro", value.asInstanceOf[js.Any])
+    def setOutro(value: AddonHook): Self = StObject.set(x, "outro", value.asInstanceOf[js.Any])
   }
 }

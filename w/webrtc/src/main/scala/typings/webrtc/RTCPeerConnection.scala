@@ -13,6 +13,7 @@ import typings.std.RTCSessionDescriptionInit
 import typings.std.RTCSignalingState
 import typings.std.RTCStatsCallback
 import typings.std.RTCStatsReport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

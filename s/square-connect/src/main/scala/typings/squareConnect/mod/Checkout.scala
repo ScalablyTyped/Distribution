@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "Checkout")
 @js.native
-class Checkout () extends js.Object {
+class Checkout () extends StObject {
   
   /**
     * Additional recipients (other than the merchant) receiving a portion of this checkout. For example, fees assessed

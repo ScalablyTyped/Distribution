@@ -1,12 +1,13 @@
 package typings.awsSdkSmithyClient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/smithy-client/dist/cjs/split-every", JSImport.Namespace)
-@js.native
-object splitEveryMod extends js.Object {
+object splitEveryMod {
   
+  @JSImport("@aws-sdk/smithy-client/dist/cjs/split-every", "splitEvery")
+  @js.native
   def splitEvery(value: String, delimiter: String, numDelimiters: Double): js.Array[String] = js.native
 }

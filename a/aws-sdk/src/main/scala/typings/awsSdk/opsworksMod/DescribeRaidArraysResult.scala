@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeRaidArraysResult extends js.Object {
+trait DescribeRaidArraysResult extends StObject {
   
   /**
     * A RaidArrays object that describes the specified RAID arrays.
@@ -21,27 +22,15 @@ object DescribeRaidArraysResult {
   }
   
   @scala.inline
-  implicit class DescribeRaidArraysResultOps[Self <: DescribeRaidArraysResult] (val x: Self) extends AnyVal {
+  implicit class DescribeRaidArraysResultMutableBuilder[Self <: DescribeRaidArraysResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRaidArrays(value: RaidArrays): Self = StObject.set(x, "RaidArrays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRaidArraysUndefined: Self = StObject.set(x, "RaidArrays", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRaidArraysVarargs(value: RaidArray*): Self = this.set("RaidArrays", js.Array(value :_*))
-    
-    @scala.inline
-    def setRaidArrays(value: RaidArrays): Self = this.set("RaidArrays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRaidArrays: Self = this.set("RaidArrays", js.undefined)
+    def setRaidArraysVarargs(value: RaidArray*): Self = StObject.set(x, "RaidArrays", js.Array(value :_*))
   }
 }

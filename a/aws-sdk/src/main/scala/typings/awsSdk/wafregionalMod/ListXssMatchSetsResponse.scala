@@ -1,11 +1,12 @@
 package typings.awsSdk.wafregionalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListXssMatchSetsResponse extends js.Object {
+trait ListXssMatchSetsResponse extends StObject {
   
   /**
     * If you have more XssMatchSet objects than the number that you specified for Limit in the request, the response includes a NextMarker value. To list more XssMatchSet objects, submit another ListXssMatchSets request, and specify the NextMarker value from the response in the NextMarker value in the next request.
@@ -26,33 +27,21 @@ object ListXssMatchSetsResponse {
   }
   
   @scala.inline
-  implicit class ListXssMatchSetsResponseOps[Self <: ListXssMatchSetsResponse] (val x: Self) extends AnyVal {
+  implicit class ListXssMatchSetsResponseMutableBuilder[Self <: ListXssMatchSetsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setXssMatchSets(value: XssMatchSetSummaries): Self = StObject.set(x, "XssMatchSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextMarker(value: NextMarker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
+    def setXssMatchSetsUndefined: Self = StObject.set(x, "XssMatchSets", js.undefined)
     
     @scala.inline
-    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
-    
-    @scala.inline
-    def setXssMatchSetsVarargs(value: XssMatchSetSummary*): Self = this.set("XssMatchSets", js.Array(value :_*))
-    
-    @scala.inline
-    def setXssMatchSets(value: XssMatchSetSummaries): Self = this.set("XssMatchSets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXssMatchSets: Self = this.set("XssMatchSets", js.undefined)
+    def setXssMatchSetsVarargs(value: XssMatchSetSummary*): Self = StObject.set(x, "XssMatchSets", js.Array(value :_*))
   }
 }

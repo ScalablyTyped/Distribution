@@ -8,6 +8,7 @@ import typings.angularCore.mod.OnDestroy
 import typings.angularCore.mod.QueryList
 import typings.angularCore.mod.Renderer2
 import typings.angularRouter.anon.Exact
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

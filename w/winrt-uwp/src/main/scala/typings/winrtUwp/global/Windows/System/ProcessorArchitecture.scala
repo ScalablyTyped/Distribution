@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.System
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the processor architecture supported by an app. */
 @JSGlobal("Windows.System.ProcessorArchitecture")
 @js.native
-object ProcessorArchitecture extends js.Object {
+object ProcessorArchitecture extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.System.ProcessorArchitecture with Double] = js.native

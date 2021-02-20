@@ -1,5 +1,6 @@
 package typings.extjs.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -110,114 +111,102 @@ object IXTemplateParser {
   }
   
   @scala.inline
-  implicit class IXTemplateParserOps[Self <: IXTemplateParser] (val x: Self) extends AnyVal {
+  implicit class IXTemplateParserMutableBuilder[Self <: IXTemplateParser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDoCase(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "doCase", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDoCaseUndefined: Self = StObject.set(x, "doCase", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDoDefault(value: () => Unit): Self = StObject.set(x, "doDefault", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDoCase(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = this.set("doCase", js.Any.fromFunction2(value))
+    def setDoDefaultUndefined: Self = StObject.set(x, "doDefault", js.undefined)
     
     @scala.inline
-    def deleteDoCase: Self = this.set("doCase", js.undefined)
+    def setDoElse(value: () => Unit): Self = StObject.set(x, "doElse", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDoDefault(value: () => Unit): Self = this.set("doDefault", js.Any.fromFunction0(value))
+    def setDoElseIf(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "doElseIf", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteDoDefault: Self = this.set("doDefault", js.undefined)
+    def setDoElseIfUndefined: Self = StObject.set(x, "doElseIf", js.undefined)
     
     @scala.inline
-    def setDoElse(value: () => Unit): Self = this.set("doElse", js.Any.fromFunction0(value))
+    def setDoElseUndefined: Self = StObject.set(x, "doElse", js.undefined)
     
     @scala.inline
-    def deleteDoElse: Self = this.set("doElse", js.undefined)
+    def setDoEnd(value: (/* type */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "doEnd", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDoElseIf(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = this.set("doElseIf", js.Any.fromFunction2(value))
+    def setDoEndUndefined: Self = StObject.set(x, "doEnd", js.undefined)
     
     @scala.inline
-    def deleteDoElseIf: Self = this.set("doElseIf", js.undefined)
+    def setDoEval(value: /* text */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "doEval", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDoEnd(value: (/* type */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = this.set("doEnd", js.Any.fromFunction2(value))
+    def setDoEvalUndefined: Self = StObject.set(x, "doEval", js.undefined)
     
     @scala.inline
-    def deleteDoEnd: Self = this.set("doEnd", js.undefined)
+    def setDoExec(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "doExec", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDoEval(value: /* text */ js.UndefOr[java.lang.String] => Unit): Self = this.set("doEval", js.Any.fromFunction1(value))
+    def setDoExecUndefined: Self = StObject.set(x, "doExec", js.undefined)
     
     @scala.inline
-    def deleteDoEval: Self = this.set("doEval", js.undefined)
+    def setDoExpr(value: /* expr */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "doExpr", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDoExec(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = this.set("doExec", js.Any.fromFunction2(value))
+    def setDoExprUndefined: Self = StObject.set(x, "doExpr", js.undefined)
     
     @scala.inline
-    def deleteDoExec: Self = this.set("doExec", js.undefined)
+    def setDoFor(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "doFor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDoExpr(value: /* expr */ js.UndefOr[java.lang.String] => Unit): Self = this.set("doExpr", js.Any.fromFunction1(value))
+    def setDoForEach(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "doForEach", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteDoExpr: Self = this.set("doExpr", js.undefined)
+    def setDoForEachUndefined: Self = StObject.set(x, "doForEach", js.undefined)
     
     @scala.inline
-    def setDoFor(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = this.set("doFor", js.Any.fromFunction2(value))
+    def setDoForUndefined: Self = StObject.set(x, "doFor", js.undefined)
     
     @scala.inline
-    def deleteDoFor: Self = this.set("doFor", js.undefined)
+    def setDoIf(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "doIf", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDoForEach(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = this.set("doForEach", js.Any.fromFunction2(value))
+    def setDoIfUndefined: Self = StObject.set(x, "doIf", js.undefined)
     
     @scala.inline
-    def deleteDoForEach: Self = this.set("doForEach", js.undefined)
+    def setDoSwitch(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "doSwitch", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDoIf(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = this.set("doIf", js.Any.fromFunction2(value))
+    def setDoSwitchUndefined: Self = StObject.set(x, "doSwitch", js.undefined)
     
     @scala.inline
-    def deleteDoIf: Self = this.set("doIf", js.undefined)
+    def setDoTag(value: () => Unit): Self = StObject.set(x, "doTag", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDoSwitch(value: (/* action */ js.UndefOr[java.lang.String], /* actions */ js.UndefOr[js.Any]) => Unit): Self = this.set("doSwitch", js.Any.fromFunction2(value))
+    def setDoTagUndefined: Self = StObject.set(x, "doTag", js.undefined)
     
     @scala.inline
-    def deleteDoSwitch: Self = this.set("doSwitch", js.undefined)
+    def setDoText(value: /* text */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "doText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDoTag(value: () => Unit): Self = this.set("doTag", js.Any.fromFunction0(value))
+    def setDoTextUndefined: Self = StObject.set(x, "doText", js.undefined)
     
     @scala.inline
-    def deleteDoTag: Self = this.set("doTag", js.undefined)
+    def setDoTpl(value: () => Unit): Self = StObject.set(x, "doTpl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDoText(value: /* text */ js.UndefOr[java.lang.String] => Unit): Self = this.set("doText", js.Any.fromFunction1(value))
+    def setDoTplUndefined: Self = StObject.set(x, "doTpl", js.undefined)
     
     @scala.inline
-    def deleteDoText: Self = this.set("doText", js.undefined)
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoTpl(value: () => Unit): Self = this.set("doTpl", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteDoTpl: Self = this.set("doTpl", js.undefined)
-    
-    @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
   }
 }

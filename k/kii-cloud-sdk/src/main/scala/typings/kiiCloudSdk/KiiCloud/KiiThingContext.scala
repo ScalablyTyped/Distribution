@@ -1,6 +1,7 @@
 package typings.kiiCloudSdk.KiiCloud
 
 import typings.kiiCloudSdk.anon.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * represents a KiiThingContext object
   */
 @js.native
-trait KiiThingContext extends js.Object {
+trait KiiThingContext extends StObject {
   
   /**
     * Creates a reference to a bucket in App scope operated by thing.

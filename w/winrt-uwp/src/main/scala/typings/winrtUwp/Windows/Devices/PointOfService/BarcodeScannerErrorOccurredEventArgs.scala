@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the ErrorOccurred event. */
 @js.native
-trait BarcodeScannerErrorOccurredEventArgs extends js.Object {
+trait BarcodeScannerErrorOccurredEventArgs extends StObject {
   
   /** Gets the data associated with the ErrorOccurred event. */
   var errorData: UnifiedPosErrorData = js.native
@@ -26,27 +27,15 @@ object BarcodeScannerErrorOccurredEventArgs {
   }
   
   @scala.inline
-  implicit class BarcodeScannerErrorOccurredEventArgsOps[Self <: BarcodeScannerErrorOccurredEventArgs] (val x: Self) extends AnyVal {
+  implicit class BarcodeScannerErrorOccurredEventArgsMutableBuilder[Self <: BarcodeScannerErrorOccurredEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorData(value: UnifiedPosErrorData): Self = StObject.set(x, "errorData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsRetriable(value: Boolean): Self = StObject.set(x, "isRetriable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setErrorData(value: UnifiedPosErrorData): Self = this.set("errorData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsRetriable(value: Boolean): Self = this.set("isRetriable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPartialInputData(value: BarcodeScannerReport): Self = this.set("partialInputData", value.asInstanceOf[js.Any])
+    def setPartialInputData(value: BarcodeScannerReport): Self = StObject.set(x, "partialInputData", value.asInstanceOf[js.Any])
   }
 }

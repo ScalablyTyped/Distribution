@@ -1,11 +1,12 @@
 package typings.vueMarkdown.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Parse extends js.Object {
+trait Parse extends StObject {
   
   var State: js.Any = js.native
   
@@ -24,30 +25,18 @@ object Parse {
   }
   
   @scala.inline
-  implicit class ParseOps[Self <: Parse] (val x: Self) extends AnyVal {
+  implicit class ParseMutableBuilder[Self <: Parse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParse(value: js.Any): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRuler(value: After): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setState(value: js.Any): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: js.Any): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParse(value: js.Any): Self = this.set("parse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRuler(value: After): Self = this.set("ruler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTokenize(value: js.Any): Self = this.set("tokenize", value.asInstanceOf[js.Any])
+    def setTokenize(value: js.Any): Self = StObject.set(x, "tokenize", value.asInstanceOf[js.Any])
   }
 }

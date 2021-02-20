@@ -9,33 +9,63 @@ import typings.useMediaAntdQuery.useMediaAntdQueryStrings.sm
 import typings.useMediaAntdQuery.useMediaAntdQueryStrings.xl
 import typings.useMediaAntdQuery.useMediaAntdQueryStrings.xs
 import typings.useMediaAntdQuery.useMediaAntdQueryStrings.xxl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("use-media-antd-query", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("use-media-antd-query", JSImport.Default)
+  @js.native
   def default(): xs | sm | md | lg | xl | xxl = js.native
   
-  def getScreenClassName(): xs | sm | md | lg | xl | xxl = js.native
-  
-  @js.native
-  object MediaQueryEnum extends js.Object {
+  object MediaQueryEnum {
     
-    var lg: MaxWidth = js.native
+    @JSImport("use-media-antd-query", "MediaQueryEnum")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var md: MaxWidth = js.native
+    @JSImport("use-media-antd-query", "MediaQueryEnum.lg")
+    @js.native
+    def lg: MaxWidth = js.native
+    @scala.inline
+    def lg_=(x: MaxWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lg")(x.asInstanceOf[js.Any])
     
-    var sm: MaxWidth = js.native
+    @JSImport("use-media-antd-query", "MediaQueryEnum.md")
+    @js.native
+    def md: MaxWidth = js.native
+    @scala.inline
+    def md_=(x: MaxWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("md")(x.asInstanceOf[js.Any])
     
-    var xl: MaxWidth = js.native
+    @JSImport("use-media-antd-query", "MediaQueryEnum.sm")
+    @js.native
+    def sm: MaxWidth = js.native
+    @scala.inline
+    def sm_=(x: MaxWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sm")(x.asInstanceOf[js.Any])
     
-    var xs: MatchMedia = js.native
+    @JSImport("use-media-antd-query", "MediaQueryEnum.xl")
+    @js.native
+    def xl: MaxWidth = js.native
+    @scala.inline
+    def xl_=(x: MaxWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xl")(x.asInstanceOf[js.Any])
     
-    var xxl: MinWidth = js.native
+    @JSImport("use-media-antd-query", "MediaQueryEnum.xs")
+    @js.native
+    def xs: MatchMedia = js.native
+    @scala.inline
+    def xs_=(x: MatchMedia): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xs")(x.asInstanceOf[js.Any])
+    
+    @JSImport("use-media-antd-query", "MediaQueryEnum.xxl")
+    @js.native
+    def xxl: MinWidth = js.native
+    @scala.inline
+    def xxl_=(x: MinWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xxl")(x.asInstanceOf[js.Any])
   }
+  
+  @JSImport("use-media-antd-query", "getScreenClassName")
+  @js.native
+  def getScreenClassName(): xs | sm | md | lg | xl | xxl = js.native
   
   /* keyof use-media-antd-query.anon.Lg */ /* Rewritten from type alias, can be one of: 
     - typings.useMediaAntdQuery.useMediaAntdQueryStrings.xs
@@ -45,5 +75,5 @@ object mod extends js.Object {
     - typings.useMediaAntdQuery.useMediaAntdQueryStrings.xl
     - typings.useMediaAntdQuery.useMediaAntdQueryStrings.xxl
   */
-  trait MediaQueryKey extends js.Object
+  trait MediaQueryKey extends StObject
 }

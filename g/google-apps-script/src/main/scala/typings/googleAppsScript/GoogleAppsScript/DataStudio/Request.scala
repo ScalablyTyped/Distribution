@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import typings.googleAppsScript.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See https://developers.google.com/datastudio/connector/reference#getdata
   */
 @js.native
-trait Request[T] extends js.Object {
+trait Request[T] extends StObject {
   
   /** An object containing the user provided values for the config parameters defined by the connector. */
   var configParams: T = js.native
@@ -50,39 +51,27 @@ object Request {
   }
   
   @scala.inline
-  implicit class RequestOps[Self <: Request[_], T] (val x: Self with Request[T]) extends AnyVal {
+  implicit class RequestMutableBuilder[Self <: Request[_], T] (val x: Self with Request[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigParams(value: T): Self = StObject.set(x, "configParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimensionsFilters(value: js.Array[js.Array[DimensionsFilters]]): Self = StObject.set(x, "dimensionsFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigParams(value: T): Self = this.set("configParams", value.asInstanceOf[js.Any])
+    def setDimensionsFiltersVarargs(value: js.Array[DimensionsFilters]*): Self = StObject.set(x, "dimensionsFilters", js.Array(value :_*))
     
     @scala.inline
-    def setDateRange(value: DateRange): Self = this.set("dateRange", value.asInstanceOf[js.Any])
+    def setFields(value: js.Array[Name]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionsFiltersVarargs(value: js.Array[DimensionsFilters]*): Self = this.set("dimensionsFilters", js.Array(value :_*))
+    def setFieldsVarargs(value: Name*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setDimensionsFilters(value: js.Array[js.Array[DimensionsFilters]]): Self = this.set("dimensionsFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFieldsVarargs(value: Name*): Self = this.set("fields", js.Array(value :_*))
-    
-    @scala.inline
-    def setFields(value: js.Array[Name]): Self = this.set("fields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScriptParams(value: ScriptParams): Self = this.set("scriptParams", value.asInstanceOf[js.Any])
+    def setScriptParams(value: ScriptParams): Self = StObject.set(x, "scriptParams", value.asInstanceOf[js.Any])
   }
 }

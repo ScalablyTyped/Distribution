@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdminSdkConfig extends js.Object {
+trait AdminSdkConfig extends StObject {
   
   /** The default Firebase Realtime Database URL. */
   var databaseURL: js.UndefOr[String] = js.native
@@ -35,42 +36,30 @@ object AdminSdkConfig {
   }
   
   @scala.inline
-  implicit class AdminSdkConfigOps[Self <: AdminSdkConfig] (val x: Self) extends AnyVal {
+  implicit class AdminSdkConfigMutableBuilder[Self <: AdminSdkConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatabaseURL(value: String): Self = StObject.set(x, "databaseURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatabaseURLUndefined: Self = StObject.set(x, "databaseURL", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseURL(value: String): Self = this.set("databaseURL", value.asInstanceOf[js.Any])
+    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
     @scala.inline
-    def deleteDatabaseURL: Self = this.set("databaseURL", js.undefined)
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationId(value: String): Self = this.set("locationId", value.asInstanceOf[js.Any])
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def deleteLocationId: Self = this.set("locationId", js.undefined)
+    def setStorageBucket(value: String): Self = StObject.set(x, "storageBucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
-    
-    @scala.inline
-    def setStorageBucket(value: String): Self = this.set("storageBucket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageBucket: Self = this.set("storageBucket", js.undefined)
+    def setStorageBucketUndefined: Self = StObject.set(x, "storageBucket", js.undefined)
   }
 }

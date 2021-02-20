@@ -10,6 +10,7 @@ import typings.node.nodeStrings.PTR
 import typings.node.nodeStrings.SOA
 import typings.node.nodeStrings.SRV
 import typings.node.nodeStrings.TXT
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,14 +27,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.node.dnsMod.AnySrvRecord
   - typings.node.dnsMod.AnyTxtRecord
 */
-trait AnyRecord extends js.Object
+trait AnyRecord extends StObject
 object AnyRecord {
   
   @scala.inline
-  def AnyMxRecord(exchange: String, priority: Double, `type`: MX): AnyRecord = {
+  def AnyARecord(address: String, ttl: Double, `type`: A): typings.node.dnsMod.AnyARecord = {
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.node.dnsMod.AnyARecord]
+  }
+  
+  @scala.inline
+  def AnyAaaaRecord(address: String, ttl: Double, `type`: AAAA): typings.node.dnsMod.AnyAaaaRecord = {
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.node.dnsMod.AnyAaaaRecord]
+  }
+  
+  @scala.inline
+  def AnyCnameRecord(`type`: CNAME, value: String): typings.node.dnsMod.AnyCnameRecord = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.node.dnsMod.AnyCnameRecord]
+  }
+  
+  @scala.inline
+  def AnyMxRecord(exchange: String, priority: Double, `type`: MX): typings.node.dnsMod.AnyMxRecord = {
     val __obj = js.Dynamic.literal(exchange = exchange.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyRecord]
+    __obj.asInstanceOf[typings.node.dnsMod.AnyMxRecord]
   }
   
   @scala.inline
@@ -45,45 +67,24 @@ object AnyRecord {
     replacement: String,
     service: String,
     `type`: NAPTR
-  ): AnyRecord = {
+  ): typings.node.dnsMod.AnyNaptrRecord = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], preference = preference.asInstanceOf[js.Any], regexp = regexp.asInstanceOf[js.Any], replacement = replacement.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyRecord]
+    __obj.asInstanceOf[typings.node.dnsMod.AnyNaptrRecord]
   }
   
   @scala.inline
-  def AnyARecord(address: String, ttl: Double, `type`: A): AnyRecord = {
-    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyRecord]
-  }
-  
-  @scala.inline
-  def AnyPtrRecord(`type`: PTR, value: String): AnyRecord = {
+  def AnyNsRecord(`type`: NS, value: String): typings.node.dnsMod.AnyNsRecord = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyRecord]
+    __obj.asInstanceOf[typings.node.dnsMod.AnyNsRecord]
   }
   
   @scala.inline
-  def AnyTxtRecord(entries: js.Array[String], `type`: TXT): AnyRecord = {
-    val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyRecord]
-  }
-  
-  @scala.inline
-  def AnyCnameRecord(`type`: CNAME, value: String): AnyRecord = {
+  def AnyPtrRecord(`type`: PTR, value: String): typings.node.dnsMod.AnyPtrRecord = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyRecord]
-  }
-  
-  @scala.inline
-  def AnySrvRecord(name: String, port: Double, priority: Double, `type`: SRV, weight: Double): AnyRecord = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyRecord]
+    __obj.asInstanceOf[typings.node.dnsMod.AnyPtrRecord]
   }
   
   @scala.inline
@@ -96,23 +97,23 @@ object AnyRecord {
     retry: Double,
     serial: Double,
     `type`: SOA
-  ): AnyRecord = {
+  ): typings.node.dnsMod.AnySoaRecord = {
     val __obj = js.Dynamic.literal(expire = expire.asInstanceOf[js.Any], hostmaster = hostmaster.asInstanceOf[js.Any], minttl = minttl.asInstanceOf[js.Any], nsname = nsname.asInstanceOf[js.Any], refresh = refresh.asInstanceOf[js.Any], retry = retry.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyRecord]
+    __obj.asInstanceOf[typings.node.dnsMod.AnySoaRecord]
   }
   
   @scala.inline
-  def AnyNsRecord(`type`: NS, value: String): AnyRecord = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  def AnySrvRecord(name: String, port: Double, priority: Double, `type`: SRV, weight: Double): typings.node.dnsMod.AnySrvRecord = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyRecord]
+    __obj.asInstanceOf[typings.node.dnsMod.AnySrvRecord]
   }
   
   @scala.inline
-  def AnyAaaaRecord(address: String, ttl: Double, `type`: AAAA): AnyRecord = {
-    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
+  def AnyTxtRecord(entries: js.Array[String], `type`: TXT): typings.node.dnsMod.AnyTxtRecord = {
+    val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyRecord]
+    __obj.asInstanceOf[typings.node.dnsMod.AnyTxtRecord]
   }
 }

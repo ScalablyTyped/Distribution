@@ -1,12 +1,13 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxOutboundRoutingRule Class */
 @js.native
-trait FaxOutboundRoutingRule extends js.Object {
+trait FaxOutboundRoutingRule extends StObject {
   
   /** Area code */
   val AreaCode: Double = js.native
@@ -55,45 +56,33 @@ object FaxOutboundRoutingRule {
   }
   
   @scala.inline
-  implicit class FaxOutboundRoutingRuleOps[Self <: FaxOutboundRoutingRule] (val x: Self) extends AnyVal {
+  implicit class FaxOutboundRoutingRuleMutableBuilder[Self <: FaxOutboundRoutingRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAreaCode(value: Double): Self = StObject.set(x, "AreaCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryCode(value: Double): Self = StObject.set(x, "CountryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceId(value: Double): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAreaCode(value: Double): Self = this.set("AreaCode", value.asInstanceOf[js.Any])
+    def setFAXCOMEXLibDotFaxOutboundRoutingRule_typekey(value: FaxOutboundRoutingRule): Self = StObject.set(x, "FAXCOMEXLib.FaxOutboundRoutingRule_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryCode(value: Double): Self = this.set("CountryCode", value.asInstanceOf[js.Any])
+    def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: Double): Self = this.set("DeviceId", value.asInstanceOf[js.Any])
+    def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFAXCOMEXLibDotFaxOutboundRoutingRule_typekey(value: FaxOutboundRoutingRule): Self = this.set("FAXCOMEXLib.FaxOutboundRoutingRule_typekey", value.asInstanceOf[js.Any])
+    def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGroupName(value: String): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    def setStatus(value: FAX_RULE_STATUS_ENUM): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefresh(value: () => Unit): Self = this.set("Refresh", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSave(value: () => Unit): Self = this.set("Save", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStatus(value: FAX_RULE_STATUS_ENUM): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseDevice(value: Boolean): Self = this.set("UseDevice", value.asInstanceOf[js.Any])
+    def setUseDevice(value: Boolean): Self = StObject.set(x, "UseDevice", value.asInstanceOf[js.Any])
   }
 }

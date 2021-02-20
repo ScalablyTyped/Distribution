@@ -1,14 +1,15 @@
 package typings.w3cCssTypedObjectModelLevel1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CSSMathOperator extends js.Object
+sealed trait CSSMathOperator extends StObject
 @JSGlobal("CSSMathOperator")
 @js.native
-object CSSMathOperator extends js.Object {
+object CSSMathOperator extends StObject {
   
   @js.native
   sealed trait clamp extends CSSMathOperator

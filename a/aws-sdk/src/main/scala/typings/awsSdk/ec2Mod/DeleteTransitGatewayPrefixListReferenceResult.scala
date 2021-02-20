@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteTransitGatewayPrefixListReferenceResult extends js.Object {
+trait DeleteTransitGatewayPrefixListReferenceResult extends StObject {
   
   /**
     * Information about the deleted prefix list reference.
@@ -21,24 +22,12 @@ object DeleteTransitGatewayPrefixListReferenceResult {
   }
   
   @scala.inline
-  implicit class DeleteTransitGatewayPrefixListReferenceResultOps[Self <: DeleteTransitGatewayPrefixListReferenceResult] (val x: Self) extends AnyVal {
+  implicit class DeleteTransitGatewayPrefixListReferenceResultMutableBuilder[Self <: DeleteTransitGatewayPrefixListReferenceResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTransitGatewayPrefixListReference(value: TransitGatewayPrefixListReference): Self = StObject.set(x, "TransitGatewayPrefixListReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTransitGatewayPrefixListReference(value: TransitGatewayPrefixListReference): Self = this.set("TransitGatewayPrefixListReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitGatewayPrefixListReference: Self = this.set("TransitGatewayPrefixListReference", js.undefined)
+    def setTransitGatewayPrefixListReferenceUndefined: Self = StObject.set(x, "TransitGatewayPrefixListReference", js.undefined)
   }
 }

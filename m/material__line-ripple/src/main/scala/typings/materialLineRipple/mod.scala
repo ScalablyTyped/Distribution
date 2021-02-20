@@ -1,42 +1,38 @@
 package typings.materialLineRipple
 
-import typings.materialLineRipple.adapterMod.MDCLineRippleAdapter
-import typings.materialLineRipple.anon.LINERIPPLEACTIVE
 import typings.materialLineRipple.anon.PartialMDCLineRippleAdapt
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/line-ripple", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@material/line-ripple", "MDCLineRipple")
   @js.native
-  class MDCLineRipple ()
-    extends typings.materialLineRipple.componentMod.MDCLineRipple
+  class MDCLineRipple protected ()
+    extends typings.materialLineRipple.componentMod.MDCLineRipple {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(
+      root: Element,
+      foundation: typings.materialLineRipple.foundationMod.MDCLineRippleFoundation,
+      args: js.Any*
+    ) = this()
+  }
   /* static members */
-  @js.native
-  object MDCLineRipple extends js.Object {
+  object MDCLineRipple {
     
+    @JSImport("@material/line-ripple", "MDCLineRipple.attachTo")
+    @js.native
     def attachTo(root: Element): typings.materialLineRipple.componentMod.MDCLineRipple = js.native
   }
   
+  @JSImport("@material/line-ripple", "MDCLineRippleFoundation")
   @js.native
   class MDCLineRippleFoundation ()
     extends typings.materialLineRipple.foundationMod.MDCLineRippleFoundation {
     def this(adapter: PartialMDCLineRippleAdapt) = this()
-  }
-  /* static members */
-  @js.native
-  object MDCLineRippleFoundation extends js.Object {
-    
-    def cssClasses: LINERIPPLEACTIVE = js.native
-    
-    /**
-      * See {@link MDCLineRippleAdapter} for typing information on parameters and return types.
-      */
-    def defaultAdapter: MDCLineRippleAdapter = js.native
   }
   
   /**
@@ -61,11 +57,22 @@ object mod extends js.Object {
     * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     * THE SOFTWARE.
     */
-  @js.native
-  object cssClasses extends js.Object {
+  object cssClasses {
     
-    var LINE_RIPPLE_ACTIVE: String = js.native
+    @JSImport("@material/line-ripple", "cssClasses")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var LINE_RIPPLE_DEACTIVATING: String = js.native
+    @JSImport("@material/line-ripple", "cssClasses.LINE_RIPPLE_ACTIVE")
+    @js.native
+    def LINE_RIPPLE_ACTIVE: String = js.native
+    @scala.inline
+    def LINE_RIPPLE_ACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINE_RIPPLE_ACTIVE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/line-ripple", "cssClasses.LINE_RIPPLE_DEACTIVATING")
+    @js.native
+    def LINE_RIPPLE_DEACTIVATING: String = js.native
+    @scala.inline
+    def LINE_RIPPLE_DEACTIVATING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINE_RIPPLE_DEACTIVATING")(x.asInstanceOf[js.Any])
   }
 }

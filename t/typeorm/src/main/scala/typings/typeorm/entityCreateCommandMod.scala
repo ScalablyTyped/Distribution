@@ -1,16 +1,16 @@
 package typings.typeorm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/commands/EntityCreateCommand", JSImport.Namespace)
-@js.native
-object entityCreateCommandMod extends js.Object {
+object entityCreateCommandMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify yargs.CommandModule * / any */ @js.native
-  class EntityCreateCommand () extends js.Object {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify yargs.CommandModule * / any */ @JSImport("typeorm/commands/EntityCreateCommand", "EntityCreateCommand")
+  @js.native
+  class EntityCreateCommand () extends StObject {
     
     def builder(
       args: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify yargs.Argv */ js.Any
@@ -25,12 +25,13 @@ object entityCreateCommandMod extends js.Object {
     ): js.Promise[Unit] = js.native
   }
   /* static members */
-  @js.native
-  object EntityCreateCommand extends js.Object {
+  object EntityCreateCommand {
     
     /**
       * Gets contents of the entity file.
       */
-    /* protected */ def getTemplate(name: String): String = js.native
+    @JSImport("typeorm/commands/EntityCreateCommand", "EntityCreateCommand.getTemplate")
+    @js.native
+    def getTemplate(name: String): String = js.native
   }
 }

@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -91,84 +92,72 @@ object ParamsResourceProjectsLocationsRegistriesDevicesList {
   }
   
   @scala.inline
-  implicit class ParamsResourceProjectsLocationsRegistriesDevicesListOps[Self <: ParamsResourceProjectsLocationsRegistriesDevicesList] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceProjectsLocationsRegistriesDevicesListMutableBuilder[Self <: ParamsResourceProjectsLocationsRegistriesDevicesList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceIds(value: js.Array[String]): Self = StObject.set(x, "deviceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setDeviceIdsUndefined: Self = StObject.set(x, "deviceIds", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setDeviceIdsVarargs(value: String*): Self = StObject.set(x, "deviceIds", js.Array(value :_*))
     
     @scala.inline
-    def setDeviceIdsVarargs(value: String*): Self = this.set("deviceIds", js.Array(value :_*))
+    def setDeviceNumIds(value: js.Array[String]): Self = StObject.set(x, "deviceNumIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceIds(value: js.Array[String]): Self = this.set("deviceIds", value.asInstanceOf[js.Any])
+    def setDeviceNumIdsUndefined: Self = StObject.set(x, "deviceNumIds", js.undefined)
     
     @scala.inline
-    def deleteDeviceIds: Self = this.set("deviceIds", js.undefined)
+    def setDeviceNumIdsVarargs(value: String*): Self = StObject.set(x, "deviceNumIds", js.Array(value :_*))
     
     @scala.inline
-    def setDeviceNumIdsVarargs(value: String*): Self = this.set("deviceNumIds", js.Array(value :_*))
+    def setFieldMask(value: String): Self = StObject.set(x, "fieldMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceNumIds(value: js.Array[String]): Self = this.set("deviceNumIds", value.asInstanceOf[js.Any])
+    def setFieldMaskUndefined: Self = StObject.set(x, "fieldMask", js.undefined)
     
     @scala.inline
-    def deleteDeviceNumIds: Self = this.set("deviceNumIds", js.undefined)
+    def setGatewayListOptionsDotassociationsDeviceId(value: String): Self = StObject.set(x, "gatewayListOptions.associationsDeviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldMask(value: String): Self = this.set("fieldMask", value.asInstanceOf[js.Any])
+    def setGatewayListOptionsDotassociationsDeviceIdUndefined: Self = StObject.set(x, "gatewayListOptions.associationsDeviceId", js.undefined)
     
     @scala.inline
-    def deleteFieldMask: Self = this.set("fieldMask", js.undefined)
+    def setGatewayListOptionsDotassociationsGatewayId(value: String): Self = StObject.set(x, "gatewayListOptions.associationsGatewayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayListOptionsDotassociationsDeviceId(value: String): Self = this.set("gatewayListOptions.associationsDeviceId", value.asInstanceOf[js.Any])
+    def setGatewayListOptionsDotassociationsGatewayIdUndefined: Self = StObject.set(x, "gatewayListOptions.associationsGatewayId", js.undefined)
     
     @scala.inline
-    def deleteGatewayListOptionsDotassociationsDeviceId: Self = this.set("gatewayListOptions.associationsDeviceId", js.undefined)
+    def setGatewayListOptionsDotgatewayType(value: String): Self = StObject.set(x, "gatewayListOptions.gatewayType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayListOptionsDotassociationsGatewayId(value: String): Self = this.set("gatewayListOptions.associationsGatewayId", value.asInstanceOf[js.Any])
+    def setGatewayListOptionsDotgatewayTypeUndefined: Self = StObject.set(x, "gatewayListOptions.gatewayType", js.undefined)
     
     @scala.inline
-    def deleteGatewayListOptionsDotassociationsGatewayId: Self = this.set("gatewayListOptions.associationsGatewayId", js.undefined)
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayListOptionsDotgatewayType(value: String): Self = this.set("gatewayListOptions.gatewayType", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def deleteGatewayListOptionsDotgatewayType: Self = this.set("gatewayListOptions.gatewayType", js.undefined)
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
-    
-    @scala.inline
-    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

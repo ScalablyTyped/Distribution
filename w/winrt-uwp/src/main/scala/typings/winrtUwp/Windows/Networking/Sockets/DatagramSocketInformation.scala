@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Networking.Sockets
 
 import typings.winrtUwp.Windows.Networking.HostName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides socket information on a DatagramSocket object. */
 @js.native
-trait DatagramSocketInformation extends js.Object {
+trait DatagramSocketInformation extends StObject {
   
   /** The local IP address associated with a DatagramSocket object. */
   var localAddress: HostName = js.native
@@ -30,30 +31,18 @@ object DatagramSocketInformation {
   }
   
   @scala.inline
-  implicit class DatagramSocketInformationOps[Self <: DatagramSocketInformation] (val x: Self) extends AnyVal {
+  implicit class DatagramSocketInformationMutableBuilder[Self <: DatagramSocketInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalAddress(value: HostName): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalPort(value: String): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoteAddress(value: HostName): Self = StObject.set(x, "remoteAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAddress(value: HostName): Self = this.set("localAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocalPort(value: String): Self = this.set("localPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoteAddress(value: HostName): Self = this.set("remoteAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemotePort(value: String): Self = this.set("remotePort", value.asInstanceOf[js.Any])
+    def setRemotePort(value: String): Self = StObject.set(x, "remotePort", value.asInstanceOf[js.Any])
   }
 }

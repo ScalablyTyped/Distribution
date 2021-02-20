@@ -1,12 +1,13 @@
 package typings.officeJsPreview.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "inkStroke.toJSON()". */
 @js.native
-trait InkStrokeData extends js.Object {
+trait InkStrokeData extends StObject {
   
   /**
     *
@@ -33,30 +34,18 @@ object InkStrokeData {
   }
   
   @scala.inline
-  implicit class InkStrokeDataOps[Self <: InkStrokeData] (val x: Self) extends AnyVal {
+  implicit class InkStrokeDataMutableBuilder[Self <: InkStrokeData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFloatingInk(value: FloatingInkData): Self = StObject.set(x, "floatingInk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFloatingInkUndefined: Self = StObject.set(x, "floatingInk", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatingInk(value: FloatingInkData): Self = this.set("floatingInk", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFloatingInk: Self = this.set("floatingInk", js.undefined)
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.couchbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateBucketOptions extends js.Object {
+trait CreateBucketOptions extends StObject {
   
   var authType: js.UndefOr[String] = js.native
   
@@ -29,48 +30,36 @@ object CreateBucketOptions {
   }
   
   @scala.inline
-  implicit class CreateBucketOptionsOps[Self <: CreateBucketOptions] (val x: Self) extends AnyVal {
+  implicit class CreateBucketOptionsMutableBuilder[Self <: CreateBucketOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthTypeUndefined: Self = StObject.set(x, "authType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketType(value: String): Self = StObject.set(x, "bucketType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthType(value: String): Self = this.set("authType", value.asInstanceOf[js.Any])
+    def setBucketTypeUndefined: Self = StObject.set(x, "bucketType", js.undefined)
     
     @scala.inline
-    def deleteAuthType: Self = this.set("authType", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketType(value: String): Self = this.set("bucketType", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteBucketType: Self = this.set("bucketType", js.undefined)
+    def setRamQuotaMB(value: Double): Self = StObject.set(x, "ramQuotaMB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRamQuotaMBUndefined: Self = StObject.set(x, "ramQuotaMB", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setReplicaNumber(value: Double): Self = StObject.set(x, "replicaNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRamQuotaMB(value: Double): Self = this.set("ramQuotaMB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRamQuotaMB: Self = this.set("ramQuotaMB", js.undefined)
-    
-    @scala.inline
-    def setReplicaNumber(value: Double): Self = this.set("replicaNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicaNumber: Self = this.set("replicaNumber", js.undefined)
+    def setReplicaNumberUndefined: Self = StObject.set(x, "replicaNumber", js.undefined)
   }
 }

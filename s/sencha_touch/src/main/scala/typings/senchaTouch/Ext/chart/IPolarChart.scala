@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.chart
 
 import typings.senchaTouch.Ext.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,54 +44,42 @@ object IPolarChart {
   }
   
   @scala.inline
-  implicit class IPolarChartOps[Self <: IPolarChart] (val x: Self) extends AnyVal {
+  implicit class IPolarChartMutableBuilder[Self <: IPolarChart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: Array): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCenter(value: () => Array): Self = StObject.set(x, "getCenter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCenter(value: Array): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setGetCenterUndefined: Self = StObject.set(x, "getCenter", js.undefined)
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setGetRadius(value: () => Double): Self = StObject.set(x, "getRadius", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCenter(value: () => Array): Self = this.set("getCenter", js.Any.fromFunction0(value))
+    def setGetRadiusUndefined: Self = StObject.set(x, "getRadius", js.undefined)
     
     @scala.inline
-    def deleteGetCenter: Self = this.set("getCenter", js.undefined)
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRadius(value: () => Double): Self = this.set("getRadius", js.Any.fromFunction0(value))
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def deleteGetRadius: Self = this.set("getRadius", js.undefined)
+    def setSetCenter(value: /* center */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setCenter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setSetCenterUndefined: Self = StObject.set(x, "setCenter", js.undefined)
     
     @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setSetRadius(value: /* radius */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setRadius", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetCenter(value: /* center */ js.UndefOr[Array] => Unit): Self = this.set("setCenter", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetCenter: Self = this.set("setCenter", js.undefined)
-    
-    @scala.inline
-    def setSetRadius(value: /* radius */ js.UndefOr[Double] => Unit): Self = this.set("setRadius", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetRadius: Self = this.set("setRadius", js.undefined)
+    def setSetRadiusUndefined: Self = StObject.set(x, "setRadius", js.undefined)
   }
 }

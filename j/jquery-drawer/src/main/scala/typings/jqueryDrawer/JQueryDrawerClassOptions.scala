@@ -1,11 +1,12 @@
 package typings.jqueryDrawer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryDrawerClassOptions extends js.Object {
+trait JQueryDrawerClassOptions extends StObject {
   
   var close: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object JQueryDrawerClassOptions {
   }
   
   @scala.inline
-  implicit class JQueryDrawerClassOptionsOps[Self <: JQueryDrawerClassOptions] (val x: Self) extends AnyVal {
+  implicit class JQueryDrawerClassOptionsMutableBuilder[Self <: JQueryDrawerClassOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDropdown(value: String): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: String): Self = this.set("close", value.asInstanceOf[js.Any])
+    def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
     
     @scala.inline
-    def deleteClose: Self = this.set("close", js.undefined)
+    def setNav(value: String): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropdown(value: String): Self = this.set("dropdown", value.asInstanceOf[js.Any])
+    def setNavUndefined: Self = StObject.set(x, "nav", js.undefined)
     
     @scala.inline
-    def deleteDropdown: Self = this.set("dropdown", js.undefined)
+    def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNav(value: String): Self = this.set("nav", value.asInstanceOf[js.Any])
+    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def deleteNav: Self = this.set("nav", js.undefined)
+    def setOverlay(value: String): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: String): Self = this.set("open", value.asInstanceOf[js.Any])
+    def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     
     @scala.inline
-    def deleteOpen: Self = this.set("open", js.undefined)
+    def setToggle(value: String): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlay(value: String): Self = this.set("overlay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverlay: Self = this.set("overlay", js.undefined)
-    
-    @scala.inline
-    def setToggle(value: String): Self = this.set("toggle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToggle: Self = this.set("toggle", js.undefined)
+    def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.lang.XLocalizable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -127,39 +128,27 @@ object XAddIn {
   }
   
   @scala.inline
-  implicit class XAddInOps[Self <: XAddIn] (val x: Self) extends AnyVal {
+  implicit class XAddInMutableBuilder[Self <: XAddIn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetArgumentDescription(value: (String, Double) => String): Self = StObject.set(x, "getArgumentDescription", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDisplayArgumentName(value: (String, Double) => String): Self = StObject.set(x, "getDisplayArgumentName", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDisplayCategoryName(value: String => String): Self = StObject.set(x, "getDisplayCategoryName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetArgumentDescription(value: (String, Double) => String): Self = this.set("getArgumentDescription", js.Any.fromFunction2(value))
+    def setGetDisplayFunctionName(value: String => String): Self = StObject.set(x, "getDisplayFunctionName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDisplayArgumentName(value: (String, Double) => String): Self = this.set("getDisplayArgumentName", js.Any.fromFunction2(value))
+    def setGetFunctionDescription(value: String => String): Self = StObject.set(x, "getFunctionDescription", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDisplayCategoryName(value: String => String): Self = this.set("getDisplayCategoryName", js.Any.fromFunction1(value))
+    def setGetProgrammaticCategoryName(value: String => String): Self = StObject.set(x, "getProgrammaticCategoryName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDisplayFunctionName(value: String => String): Self = this.set("getDisplayFunctionName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetFunctionDescription(value: String => String): Self = this.set("getFunctionDescription", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetProgrammaticCategoryName(value: String => String): Self = this.set("getProgrammaticCategoryName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetProgrammaticFuntionName(value: String => String): Self = this.set("getProgrammaticFuntionName", js.Any.fromFunction1(value))
+    def setGetProgrammaticFuntionName(value: String => String): Self = StObject.set(x, "getProgrammaticFuntionName", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlgorithmSummary extends js.Object {
+trait AlgorithmSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the algorithm.
@@ -46,36 +47,24 @@ object AlgorithmSummary {
   }
   
   @scala.inline
-  implicit class AlgorithmSummaryOps[Self <: AlgorithmSummary] (val x: Self) extends AnyVal {
+  implicit class AlgorithmSummaryMutableBuilder[Self <: AlgorithmSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithmArn(value: AlgorithmArn): Self = StObject.set(x, "AlgorithmArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmDescription(value: EntityDescription): Self = StObject.set(x, "AlgorithmDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlgorithmDescriptionUndefined: Self = StObject.set(x, "AlgorithmDescription", js.undefined)
     
     @scala.inline
-    def setAlgorithmArn(value: AlgorithmArn): Self = this.set("AlgorithmArn", value.asInstanceOf[js.Any])
+    def setAlgorithmName(value: EntityName): Self = StObject.set(x, "AlgorithmName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithmName(value: EntityName): Self = this.set("AlgorithmName", value.asInstanceOf[js.Any])
+    def setAlgorithmStatus(value: AlgorithmStatus): Self = StObject.set(x, "AlgorithmStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithmStatus(value: AlgorithmStatus): Self = this.set("AlgorithmStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCreationTime(value: CreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAlgorithmDescription(value: EntityDescription): Self = this.set("AlgorithmDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlgorithmDescription: Self = this.set("AlgorithmDescription", js.undefined)
+    def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
   }
 }

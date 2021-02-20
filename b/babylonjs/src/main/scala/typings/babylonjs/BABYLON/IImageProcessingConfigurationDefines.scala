@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IImageProcessingConfigurationDefines extends js.Object {
+trait IImageProcessingConfigurationDefines extends StObject {
   
   var COLORCURVES: Boolean = js.native
   
@@ -59,60 +60,48 @@ object IImageProcessingConfigurationDefines {
   }
   
   @scala.inline
-  implicit class IImageProcessingConfigurationDefinesOps[Self <: IImageProcessingConfigurationDefines] (val x: Self) extends AnyVal {
+  implicit class IImageProcessingConfigurationDefinesMutableBuilder[Self <: IImageProcessingConfigurationDefines] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCOLORCURVES(value: Boolean): Self = StObject.set(x, "COLORCURVES", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCOLORGRADING(value: Boolean): Self = StObject.set(x, "COLORGRADING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCOLORGRADING3D(value: Boolean): Self = StObject.set(x, "COLORGRADING3D", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCOLORCURVES(value: Boolean): Self = this.set("COLORCURVES", value.asInstanceOf[js.Any])
+    def setCONTRAST(value: Boolean): Self = StObject.set(x, "CONTRAST", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCOLORGRADING(value: Boolean): Self = this.set("COLORGRADING", value.asInstanceOf[js.Any])
+    def setEXPOSURE(value: Boolean): Self = StObject.set(x, "EXPOSURE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCOLORGRADING3D(value: Boolean): Self = this.set("COLORGRADING3D", value.asInstanceOf[js.Any])
+    def setIMAGEPROCESSING(value: Boolean): Self = StObject.set(x, "IMAGEPROCESSING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCONTRAST(value: Boolean): Self = this.set("CONTRAST", value.asInstanceOf[js.Any])
+    def setIMAGEPROCESSINGPOSTPROCESS(value: Boolean): Self = StObject.set(x, "IMAGEPROCESSINGPOSTPROCESS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEXPOSURE(value: Boolean): Self = this.set("EXPOSURE", value.asInstanceOf[js.Any])
+    def setSAMPLER3DBGRMAP(value: Boolean): Self = StObject.set(x, "SAMPLER3DBGRMAP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIMAGEPROCESSING(value: Boolean): Self = this.set("IMAGEPROCESSING", value.asInstanceOf[js.Any])
+    def setSAMPLER3DGREENDEPTH(value: Boolean): Self = StObject.set(x, "SAMPLER3DGREENDEPTH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIMAGEPROCESSINGPOSTPROCESS(value: Boolean): Self = this.set("IMAGEPROCESSINGPOSTPROCESS", value.asInstanceOf[js.Any])
+    def setTONEMAPPING(value: Boolean): Self = StObject.set(x, "TONEMAPPING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSAMPLER3DBGRMAP(value: Boolean): Self = this.set("SAMPLER3DBGRMAP", value.asInstanceOf[js.Any])
+    def setTONEMAPPING_ACES(value: Boolean): Self = StObject.set(x, "TONEMAPPING_ACES", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSAMPLER3DGREENDEPTH(value: Boolean): Self = this.set("SAMPLER3DGREENDEPTH", value.asInstanceOf[js.Any])
+    def setVIGNETTE(value: Boolean): Self = StObject.set(x, "VIGNETTE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTONEMAPPING(value: Boolean): Self = this.set("TONEMAPPING", value.asInstanceOf[js.Any])
+    def setVIGNETTEBLENDMODEMULTIPLY(value: Boolean): Self = StObject.set(x, "VIGNETTEBLENDMODEMULTIPLY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTONEMAPPING_ACES(value: Boolean): Self = this.set("TONEMAPPING_ACES", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVIGNETTE(value: Boolean): Self = this.set("VIGNETTE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVIGNETTEBLENDMODEMULTIPLY(value: Boolean): Self = this.set("VIGNETTEBLENDMODEMULTIPLY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVIGNETTEBLENDMODEOPAQUE(value: Boolean): Self = this.set("VIGNETTEBLENDMODEOPAQUE", value.asInstanceOf[js.Any])
+    def setVIGNETTEBLENDMODEOPAQUE(value: Boolean): Self = StObject.set(x, "VIGNETTEBLENDMODEOPAQUE", value.asInstanceOf[js.Any])
   }
 }

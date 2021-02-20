@@ -1,11 +1,12 @@
 package typings.activexLibreoffice
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait sequence[T] extends js.Object {
+trait sequence[T] extends StObject {
   
   var typekey: sequence[T] = js.native
 }
@@ -18,21 +19,9 @@ object sequence {
   }
   
   @scala.inline
-  implicit class sequenceOps[Self <: sequence[_], T] (val x: Self with sequence[T]) extends AnyVal {
+  implicit class sequenceMutableBuilder[Self <: sequence[_], T] (val x: Self with sequence[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTypekey(value: sequence[T]): Self = this.set("typekey", value.asInstanceOf[js.Any])
+    def setTypekey(value: sequence[T]): Self = StObject.set(x, "typekey", value.asInstanceOf[js.Any])
   }
 }

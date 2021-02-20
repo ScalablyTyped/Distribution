@@ -5,16 +5,15 @@ import typings.expressValidator.contextMod.Optional
 import typings.expressValidator.expressValidatorBooleans.`true`
 import typings.expressValidator.validationChainMod.ValidationChain
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("express-validator/src/chain/context-handler", JSImport.Namespace)
-@js.native
-object contextHandlerMod extends js.Object {
+object contextHandlerMod {
   
   @js.native
-  trait ContextHandler[Chain] extends js.Object {
+  trait ContextHandler[Chain] extends StObject {
     
     def bail(): Chain = js.native
     

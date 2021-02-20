@@ -1,14 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Html5AdBuilder[Html5Ad]
-  extends AdWordsBuilder[Html5AdBuilder[Html5Ad]]
-     with hasFinalUrlBuilder[Html5AdBuilder[Html5Ad]]
-     with hasTrackingTemplateBuilder[Html5AdBuilder[Html5Ad]] {
+trait Html5AdBuilder[Html5Ad] extends AdBuilder[Html5AdBuilder[Html5Ad]] {
   
   def withDimensions(dimensions: String): Html5AdBuilder[Html5Ad] = js.native
   
@@ -40,33 +38,21 @@ object Html5AdBuilder {
   }
   
   @scala.inline
-  implicit class Html5AdBuilderOps[Self <: Html5AdBuilder[_], Html5Ad] (val x: Self with Html5AdBuilder[Html5Ad]) extends AnyVal {
+  implicit class Html5AdBuilderMutableBuilder[Self <: Html5AdBuilder[_], Html5Ad] (val x: Self with Html5AdBuilder[Html5Ad]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWithDimensions(value: String => Html5AdBuilder[Html5Ad]): Self = StObject.set(x, "withDimensions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWithDisplayUrl(value: String => Html5AdBuilder[Html5Ad]): Self = StObject.set(x, "withDisplayUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWithEntryPoint(value: String => Html5AdBuilder[Html5Ad]): Self = StObject.set(x, "withEntryPoint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithDimensions(value: String => Html5AdBuilder[Html5Ad]): Self = this.set("withDimensions", js.Any.fromFunction1(value))
+    def setWithMediaBundle(value: Media => Html5AdBuilder[Html5Ad]): Self = StObject.set(x, "withMediaBundle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithDisplayUrl(value: String => Html5AdBuilder[Html5Ad]): Self = this.set("withDisplayUrl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithEntryPoint(value: String => Html5AdBuilder[Html5Ad]): Self = this.set("withEntryPoint", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithMediaBundle(value: Media => Html5AdBuilder[Html5Ad]): Self = this.set("withMediaBundle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithName(value: String => Html5AdBuilder[Html5Ad]): Self = this.set("withName", js.Any.fromFunction1(value))
+    def setWithName(value: String => Html5AdBuilder[Html5Ad]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
   }
 }

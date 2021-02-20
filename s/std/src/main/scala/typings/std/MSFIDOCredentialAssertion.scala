@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,33 +33,21 @@ object MSFIDOCredentialAssertion {
   }
   
   @scala.inline
-  implicit class MSFIDOCredentialAssertionOps[Self <: MSFIDOCredentialAssertion] (val x: Self) extends AnyVal {
+  implicit class MSFIDOCredentialAssertionMutableBuilder[Self <: MSFIDOCredentialAssertion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: java.lang.String | Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttestation(value: js.Any): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublicKey(value: java.lang.String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithm(value: java.lang.String | Algorithm): Self = this.set("algorithm", value.asInstanceOf[js.Any])
+    def setTransportHints(value: js.Array[MSTransportType]): Self = StObject.set(x, "transportHints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttestation(value: js.Any): Self = this.set("attestation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublicKey(value: java.lang.String): Self = this.set("publicKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransportHintsVarargs(value: MSTransportType*): Self = this.set("transportHints", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransportHints(value: js.Array[MSTransportType]): Self = this.set("transportHints", value.asInstanceOf[js.Any])
+    def setTransportHintsVarargs(value: MSTransportType*): Self = StObject.set(x, "transportHints", js.Array(value :_*))
   }
 }

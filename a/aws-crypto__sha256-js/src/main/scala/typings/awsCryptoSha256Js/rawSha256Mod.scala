@@ -1,16 +1,16 @@
 package typings.awsCryptoSha256Js
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-crypto/sha256-js/build/RawSha256", JSImport.Namespace)
-@js.native
-object rawSha256Mod extends js.Object {
+object rawSha256Mod {
   
+  @JSImport("@aws-crypto/sha256-js/build/RawSha256", "RawSha256")
   @js.native
-  class RawSha256 () extends js.Object {
+  class RawSha256 () extends StObject {
     
     var buffer: js.Any = js.native
     

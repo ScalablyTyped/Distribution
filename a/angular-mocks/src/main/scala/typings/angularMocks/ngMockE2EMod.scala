@@ -1,10 +1,19 @@
 package typings.angularMocks
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("angular-mocks/ngMockE2E", JSImport.Namespace)
-@js.native
-object ngMockE2EMod extends TopLevel[String]
+object ngMockE2EMod extends Shortcut {
+  
+  @JSImport("angular-mocks/ngMockE2E", JSImport.Namespace)
+  @js.native
+  val ^ : String = js.native
+  
+  type _To = String
+  
+  /* This means you don't have to write `^`, but can instead just say `ngMockE2EMod.foo` */
+  override def _to: String = ^
+}

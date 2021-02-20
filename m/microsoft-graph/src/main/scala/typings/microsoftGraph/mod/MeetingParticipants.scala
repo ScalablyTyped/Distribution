@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MeetingParticipants extends js.Object {
+trait MeetingParticipants extends StObject {
   
   var attendees: js.UndefOr[NullableOption[js.Array[MeetingParticipantInfo]]] = js.native
   
@@ -20,39 +21,27 @@ object MeetingParticipants {
   }
   
   @scala.inline
-  implicit class MeetingParticipantsOps[Self <: MeetingParticipants] (val x: Self) extends AnyVal {
+  implicit class MeetingParticipantsMutableBuilder[Self <: MeetingParticipants] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttendees(value: NullableOption[js.Array[MeetingParticipantInfo]]): Self = StObject.set(x, "attendees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttendeesNull: Self = StObject.set(x, "attendees", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttendeesUndefined: Self = StObject.set(x, "attendees", js.undefined)
     
     @scala.inline
-    def setAttendeesVarargs(value: MeetingParticipantInfo*): Self = this.set("attendees", js.Array(value :_*))
+    def setAttendeesVarargs(value: MeetingParticipantInfo*): Self = StObject.set(x, "attendees", js.Array(value :_*))
     
     @scala.inline
-    def setAttendees(value: NullableOption[js.Array[MeetingParticipantInfo]]): Self = this.set("attendees", value.asInstanceOf[js.Any])
+    def setOrganizer(value: NullableOption[MeetingParticipantInfo]): Self = StObject.set(x, "organizer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttendees: Self = this.set("attendees", js.undefined)
+    def setOrganizerNull: Self = StObject.set(x, "organizer", null)
     
     @scala.inline
-    def setAttendeesNull: Self = this.set("attendees", null)
-    
-    @scala.inline
-    def setOrganizer(value: NullableOption[MeetingParticipantInfo]): Self = this.set("organizer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrganizer: Self = this.set("organizer", js.undefined)
-    
-    @scala.inline
-    def setOrganizerNull: Self = this.set("organizer", null)
+    def setOrganizerUndefined: Self = StObject.set(x, "organizer", js.undefined)
   }
 }

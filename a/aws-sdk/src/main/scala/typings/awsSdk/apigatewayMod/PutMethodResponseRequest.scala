@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutMethodResponseRequest extends js.Object {
+trait PutMethodResponseRequest extends StObject {
   
   /**
     * [Required] The HTTP verb of the Method resource.
@@ -46,42 +47,30 @@ object PutMethodResponseRequest {
   }
   
   @scala.inline
-  implicit class PutMethodResponseRequestOps[Self <: PutMethodResponseRequest] (val x: Self) extends AnyVal {
+  implicit class PutMethodResponseRequestMutableBuilder[Self <: PutMethodResponseRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResponseModels(value: MapOfStringToString): Self = StObject.set(x, "responseModels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpMethod(value: String): Self = this.set("httpMethod", value.asInstanceOf[js.Any])
+    def setResponseModelsUndefined: Self = StObject.set(x, "responseModels", js.undefined)
     
     @scala.inline
-    def setResourceId(value: String): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    def setResponseParameters(value: MapOfStringToBoolean): Self = StObject.set(x, "responseParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestApiId(value: String): Self = this.set("restApiId", value.asInstanceOf[js.Any])
+    def setResponseParametersUndefined: Self = StObject.set(x, "responseParameters", js.undefined)
     
     @scala.inline
-    def setStatusCode(value: StatusCode): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseModels(value: MapOfStringToString): Self = this.set("responseModels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseModels: Self = this.set("responseModels", js.undefined)
-    
-    @scala.inline
-    def setResponseParameters(value: MapOfStringToBoolean): Self = this.set("responseParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseParameters: Self = this.set("responseParameters", js.undefined)
+    def setStatusCode(value: StatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

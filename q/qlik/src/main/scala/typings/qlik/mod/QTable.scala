@@ -1,11 +1,12 @@
 package typings.qlik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QTable extends js.Object {
+trait QTable extends StObject {
   
   var colCount: Double = js.native
   
@@ -41,51 +42,39 @@ object QTable {
   }
   
   @scala.inline
-  implicit class QTableOps[Self <: QTable] (val x: Self) extends AnyVal {
+  implicit class QTableMutableBuilder[Self <: QTable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColCount(value: Double): Self = StObject.set(x, "colCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportData(value: (ExportDataOptions, js.Function1[/* url */ String, Unit]) => Unit): Self = StObject.set(x, "exportData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetColByName(value: String => js.UndefOr[Double]): Self = StObject.set(x, "getColByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColCount(value: Double): Self = this.set("colCount", value.asInstanceOf[js.Any])
+    def setGetMoreData(value: () => Unit): Self = StObject.set(x, "getMoreData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExportData(value: (ExportDataOptions, js.Function1[/* url */ String, Unit]) => Unit): Self = this.set("exportData", js.Any.fromFunction2(value))
+    def setHeaders(value: js.Array[QHeader]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetColByName(value: String => js.UndefOr[Double]): Self = this.set("getColByName", js.Any.fromFunction1(value))
+    def setHeadersVarargs(value: QHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
     @scala.inline
-    def setGetMoreData(value: () => Unit): Self = this.set("getMoreData", js.Any.fromFunction0(value))
+    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadersVarargs(value: QHeader*): Self = this.set("headers", js.Array(value :_*))
+    def setRows(value: js.Array[QRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Array[QHeader]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setRowsVarargs(value: QRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
     @scala.inline
-    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
+    def setTotals(value: js.Array[QMeasureCell]): Self = StObject.set(x, "totals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowsVarargs(value: QRow*): Self = this.set("rows", js.Array(value :_*))
-    
-    @scala.inline
-    def setRows(value: js.Array[QRow]): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalsVarargs(value: QMeasureCell*): Self = this.set("totals", js.Array(value :_*))
-    
-    @scala.inline
-    def setTotals(value: js.Array[QMeasureCell]): Self = this.set("totals", value.asInstanceOf[js.Any])
+    def setTotalsVarargs(value: QMeasureCell*): Self = StObject.set(x, "totals", js.Array(value :_*))
   }
 }

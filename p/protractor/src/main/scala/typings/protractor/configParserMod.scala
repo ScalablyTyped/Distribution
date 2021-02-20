@@ -1,16 +1,16 @@
 package typings.protractor
 
 import typings.protractor.configMod.Config
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("protractor/built/configParser", JSImport.Namespace)
-@js.native
-object configParserMod extends js.Object {
+object configParserMod {
   
+  @JSImport("protractor/built/configParser", "ConfigParser")
   @js.native
-  class ConfigParser () extends js.Object {
+  class ConfigParser () extends StObject {
     
     /**
       * Public function specialized towards merging in config from argv
@@ -48,19 +48,28 @@ object configParserMod extends js.Object {
     def getConfig(): Config = js.native
   }
   /* static members */
-  @js.native
-  object ConfigParser extends js.Object {
+  object ConfigParser {
     
     /**
       * Returns only the specs that should run currently based on `config.suite`
       *
       * @return {Array} An array of globs locating the spec files
       */
+    @JSImport("protractor/built/configParser", "ConfigParser.getSpecs")
+    @js.native
     def getSpecs(config: Config): js.Array[String] = js.native
     
+    @JSImport("protractor/built/configParser", "ConfigParser.resolveFilePatterns")
+    @js.native
     def resolveFilePatterns(patterns: String): js.Array[String] = js.native
+    @JSImport("protractor/built/configParser", "ConfigParser.resolveFilePatterns")
+    @js.native
     def resolveFilePatterns(patterns: String, opt_omitWarnings: js.UndefOr[scala.Nothing], opt_relativeTo: String): js.Array[String] = js.native
+    @JSImport("protractor/built/configParser", "ConfigParser.resolveFilePatterns")
+    @js.native
     def resolveFilePatterns(patterns: String, opt_omitWarnings: Boolean): js.Array[String] = js.native
+    @JSImport("protractor/built/configParser", "ConfigParser.resolveFilePatterns")
+    @js.native
     def resolveFilePatterns(patterns: String, opt_omitWarnings: Boolean, opt_relativeTo: String): js.Array[String] = js.native
     /**
       * Resolve a list of file patterns into a list of individual file paths.
@@ -71,9 +80,17 @@ object configParserMod extends js.Object {
       *
       * @return {Array} The resolved file paths.
       */
+    @JSImport("protractor/built/configParser", "ConfigParser.resolveFilePatterns")
+    @js.native
     def resolveFilePatterns(patterns: js.Array[String]): js.Array[String] = js.native
+    @JSImport("protractor/built/configParser", "ConfigParser.resolveFilePatterns")
+    @js.native
     def resolveFilePatterns(patterns: js.Array[String], opt_omitWarnings: js.UndefOr[scala.Nothing], opt_relativeTo: String): js.Array[String] = js.native
+    @JSImport("protractor/built/configParser", "ConfigParser.resolveFilePatterns")
+    @js.native
     def resolveFilePatterns(patterns: js.Array[String], opt_omitWarnings: Boolean): js.Array[String] = js.native
+    @JSImport("protractor/built/configParser", "ConfigParser.resolveFilePatterns")
+    @js.native
     def resolveFilePatterns(patterns: js.Array[String], opt_omitWarnings: Boolean, opt_relativeTo: String): js.Array[String] = js.native
   }
 }

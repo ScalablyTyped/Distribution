@@ -7,14 +7,14 @@ import typings.awsSdkClientPinpointBrowser.typesGetSegmentVersionsInputMod.GetSe
 import typings.awsSdkClientPinpointBrowser.typesGetSegmentVersionsOutputMod.GetSegmentVersionsOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/commands/GetSegmentVersionsCommand", JSImport.Namespace)
-@js.native
-object getSegmentVersionsCommandMod extends js.Object {
+object getSegmentVersionsCommandMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/commands/GetSegmentVersionsCommand", "GetSegmentVersionsCommand")
   @js.native
   class GetSegmentVersionsCommand protected () extends Command[
           InputTypesUnion, 

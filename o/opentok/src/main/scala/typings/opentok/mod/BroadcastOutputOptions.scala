@@ -1,11 +1,12 @@
 package typings.opentok.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BroadcastOutputOptions extends js.Object {
+trait BroadcastOutputOptions extends StObject {
   
   var hls: js.UndefOr[js.Object] = js.native
   
@@ -20,33 +21,21 @@ object BroadcastOutputOptions {
   }
   
   @scala.inline
-  implicit class BroadcastOutputOptionsOps[Self <: BroadcastOutputOptions] (val x: Self) extends AnyVal {
+  implicit class BroadcastOutputOptionsMutableBuilder[Self <: BroadcastOutputOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHls(value: js.Object): Self = StObject.set(x, "hls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHlsUndefined: Self = StObject.set(x, "hls", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRtmp(value: js.Array[BroadcastOutputOptionsRtmp]): Self = StObject.set(x, "rtmp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHls(value: js.Object): Self = this.set("hls", value.asInstanceOf[js.Any])
+    def setRtmpUndefined: Self = StObject.set(x, "rtmp", js.undefined)
     
     @scala.inline
-    def deleteHls: Self = this.set("hls", js.undefined)
-    
-    @scala.inline
-    def setRtmpVarargs(value: BroadcastOutputOptionsRtmp*): Self = this.set("rtmp", js.Array(value :_*))
-    
-    @scala.inline
-    def setRtmp(value: js.Array[BroadcastOutputOptionsRtmp]): Self = this.set("rtmp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRtmp: Self = this.set("rtmp", js.undefined)
+    def setRtmpVarargs(value: BroadcastOutputOptionsRtmp*): Self = StObject.set(x, "rtmp", js.Array(value :_*))
   }
 }

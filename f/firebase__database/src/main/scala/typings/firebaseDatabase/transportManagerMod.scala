@@ -1,19 +1,17 @@
 package typings.firebaseDatabase
 
-import typings.firebaseDatabase.anon.TypeofBrowserPollConnecti
-import typings.firebaseDatabase.anon.TypeofWebSocketConnection
 import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import typings.firebaseDatabase.transportMod.TransportConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/realtime/TransportManager", JSImport.Namespace)
-@js.native
-object transportManagerMod extends js.Object {
+object transportManagerMod {
   
+  @JSImport("@firebase/database/dist/src/realtime/TransportManager", "TransportManager")
   @js.native
-  class TransportManager protected () extends js.Object {
+  class TransportManager protected () extends StObject {
     /**
       * @param {!RepoInfo} repoInfo Metadata around the namespace we're connecting to
       */
@@ -38,15 +36,5 @@ object transportManagerMod extends js.Object {
       * transport, or null
       */
     def upgradeTransport(): TransportConstructor | Null = js.native
-  }
-  /* static members */
-  @js.native
-  object TransportManager extends js.Object {
-    
-    /**
-      * @const
-      * @type {!Array.<function(new:Transport, string, RepoInfo, string=)>}
-      */
-    def ALL_TRANSPORTS: js.Array[TypeofBrowserPollConnecti | TypeofWebSocketConnection] = js.native
   }
 }

@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.activexLibreoffice.com_.sun.star.table.TableOrientation
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,39 +77,27 @@ object XSheetOutline {
   }
   
   @scala.inline
-  implicit class XSheetOutlineOps[Self <: XSheetOutline] (val x: Self) extends AnyVal {
+  implicit class XSheetOutlineMutableBuilder[Self <: XSheetOutline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoOutline(value: CellRangeAddress => Unit): Self = StObject.set(x, "autoOutline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearOutline(value: () => Unit): Self = StObject.set(x, "clearOutline", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroup(value: (CellRangeAddress, TableOrientation) => Unit): Self = StObject.set(x, "group", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAutoOutline(value: CellRangeAddress => Unit): Self = this.set("autoOutline", js.Any.fromFunction1(value))
+    def setHideDetail(value: CellRangeAddress => Unit): Self = StObject.set(x, "hideDetail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClearOutline(value: () => Unit): Self = this.set("clearOutline", js.Any.fromFunction0(value))
+    def setShowDetail(value: CellRangeAddress => Unit): Self = StObject.set(x, "showDetail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGroup(value: (CellRangeAddress, TableOrientation) => Unit): Self = this.set("group", js.Any.fromFunction2(value))
+    def setShowLevel(value: (Double, TableOrientation) => Unit): Self = StObject.set(x, "showLevel", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHideDetail(value: CellRangeAddress => Unit): Self = this.set("hideDetail", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowDetail(value: CellRangeAddress => Unit): Self = this.set("showDetail", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowLevel(value: (Double, TableOrientation) => Unit): Self = this.set("showLevel", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUngroup(value: (CellRangeAddress, TableOrientation) => Unit): Self = this.set("ungroup", js.Any.fromFunction2(value))
+    def setUngroup(value: (CellRangeAddress, TableOrientation) => Unit): Self = StObject.set(x, "ungroup", js.Any.fromFunction2(value))
   }
 }

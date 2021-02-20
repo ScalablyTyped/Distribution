@@ -1,12 +1,13 @@
 package typings.dateFormatJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Some common format strings
 @js.native
-trait DateFormatMasks extends js.Object {
+trait DateFormatMasks extends StObject {
   
   var default: String = js.native
   
@@ -54,54 +55,42 @@ object DateFormatMasks {
   }
   
   @scala.inline
-  implicit class DateFormatMasksOps[Self <: DateFormatMasks] (val x: Self) extends AnyVal {
+  implicit class DateFormatMasksMutableBuilder[Self <: DateFormatMasks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullDate(value: String): Self = StObject.set(x, "fullDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsoDate(value: String): Self = StObject.set(x, "isoDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: String): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setIsoDateTime(value: String): Self = StObject.set(x, "isoDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullDate(value: String): Self = this.set("fullDate", value.asInstanceOf[js.Any])
+    def setIsoTime(value: String): Self = StObject.set(x, "isoTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsoDate(value: String): Self = this.set("isoDate", value.asInstanceOf[js.Any])
+    def setIsoUtcDateTime(value: String): Self = StObject.set(x, "isoUtcDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsoDateTime(value: String): Self = this.set("isoDateTime", value.asInstanceOf[js.Any])
+    def setLongDate(value: String): Self = StObject.set(x, "longDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsoTime(value: String): Self = this.set("isoTime", value.asInstanceOf[js.Any])
+    def setLongTime(value: String): Self = StObject.set(x, "longTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsoUtcDateTime(value: String): Self = this.set("isoUtcDateTime", value.asInstanceOf[js.Any])
+    def setMediumDate(value: String): Self = StObject.set(x, "mediumDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongDate(value: String): Self = this.set("longDate", value.asInstanceOf[js.Any])
+    def setMediumTime(value: String): Self = StObject.set(x, "mediumTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongTime(value: String): Self = this.set("longTime", value.asInstanceOf[js.Any])
+    def setShortDate(value: String): Self = StObject.set(x, "shortDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediumDate(value: String): Self = this.set("mediumDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediumTime(value: String): Self = this.set("mediumTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShortDate(value: String): Self = this.set("shortDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShortTime(value: String): Self = this.set("shortTime", value.asInstanceOf[js.Any])
+    def setShortTime(value: String): Self = StObject.set(x, "shortTime", value.asInstanceOf[js.Any])
   }
 }

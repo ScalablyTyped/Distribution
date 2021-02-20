@@ -10,6 +10,7 @@ import typings.aliApp.aliAppStrings.NOTIFICATION
 import typings.aliApp.aliAppStrings.PHOTO
 import typings.aliApp.aliAppStrings.SELFSTARTING
 import typings.aliApp.aliAppStrings.SHORTCUT
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,23 +50,11 @@ object showAuthGuideOptions {
   }
   
   @scala.inline
-  implicit class showAuthGuideOptionsOps[Self <: showAuthGuideOptions] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class showAuthGuideOptionsMutableBuilder[Self <: showAuthGuideOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAuthType(
       value: BACKGROUNDER | SHORTCUT | MICROPHONE | ADDRESSBOOK | CAMERA | PHOTO | NOTIFICATION | SELFSTARTING | LBSSERVICE | LBS
-    ): Self = this.set("authType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
   }
 }

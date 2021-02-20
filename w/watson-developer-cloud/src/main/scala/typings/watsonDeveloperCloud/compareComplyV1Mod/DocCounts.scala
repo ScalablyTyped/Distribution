@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Document counts. */
 @js.native
-trait DocCounts extends js.Object {
+trait DocCounts extends StObject {
   
   /** Number of documents not successfully processed. */
   var failed: js.UndefOr[Double] = js.native
@@ -29,42 +30,30 @@ object DocCounts {
   }
   
   @scala.inline
-  implicit class DocCountsOps[Self <: DocCounts] (val x: Self) extends AnyVal {
+  implicit class DocCountsMutableBuilder[Self <: DocCounts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailed(value: Double): Self = this.set("failed", value.asInstanceOf[js.Any])
+    def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
     
     @scala.inline
-    def deleteFailed: Self = this.set("failed", js.undefined)
+    def setSuccessful(value: Double): Self = StObject.set(x, "successful", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPending(value: Double): Self = this.set("pending", value.asInstanceOf[js.Any])
+    def setSuccessfulUndefined: Self = StObject.set(x, "successful", js.undefined)
     
     @scala.inline
-    def deletePending: Self = this.set("pending", js.undefined)
+    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessful(value: Double): Self = this.set("successful", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessful: Self = this.set("successful", js.undefined)
-    
-    @scala.inline
-    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal: Self = this.set("total", js.undefined)
+    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

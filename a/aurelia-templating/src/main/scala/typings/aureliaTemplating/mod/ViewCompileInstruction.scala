@@ -1,5 +1,6 @@
 package typings.aureliaTemplating.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param targetShadowDOM Should the compilation target the Shadow DOM.
   * @param compileSurrogate Should the compilation also include surrogate bindings and behaviors.
   */
-class ViewCompileInstruction () extends js.Object {
+class ViewCompileInstruction () extends StObject {
   def this(targetShadowDOM: Boolean) = this()
   def this(targetShadowDOM: js.UndefOr[scala.Nothing], compileSurrogate: Boolean) = this()
   def this(targetShadowDOM: Boolean, compileSurrogate: Boolean) = this()
@@ -23,12 +24,18 @@ class ViewCompileInstruction () extends js.Object {
   var targetShadowDOM: Boolean = js.native
 }
 /* static members */
-@JSImport("aurelia-templating", "ViewCompileInstruction")
-@js.native
-object ViewCompileInstruction extends js.Object {
+object ViewCompileInstruction {
+  
+  @JSImport("aurelia-templating", "ViewCompileInstruction")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The normal configuration for view compilation.
     */
-  var normal: ViewCompileInstruction = js.native
+  @JSImport("aurelia-templating", "ViewCompileInstruction.normal")
+  @js.native
+  def normal: ViewCompileInstruction = js.native
+  @scala.inline
+  def normal_=(x: ViewCompileInstruction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normal")(x.asInstanceOf[js.Any])
 }

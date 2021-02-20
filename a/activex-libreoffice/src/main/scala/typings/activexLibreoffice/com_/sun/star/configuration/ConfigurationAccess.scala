@@ -6,24 +6,16 @@ import typings.activexLibreoffice.com_.sun.star.beans.Property
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyState
 import typings.activexLibreoffice.com_.sun.star.beans.XHierarchicalPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertiesChangeListener
-import typings.activexLibreoffice.com_.sun.star.beans.XProperty
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
-import typings.activexLibreoffice.com_.sun.star.beans.XPropertyWithState
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
-import typings.activexLibreoffice.com_.sun.star.container.XChild
 import typings.activexLibreoffice.com_.sun.star.container.XContainerListener
-import typings.activexLibreoffice.com_.sun.star.container.XHierarchicalName
-import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
-import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
-import typings.activexLibreoffice.com_.sun.star.lang.XLocalizable
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.XChangesListener
-import typings.activexLibreoffice.com_.sun.star.util.XChangesNotifier
-import typings.activexLibreoffice.com_.sun.star.util.XStringEscape
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -132,19 +124,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see ConfigurationProvider Root instances of this service can be requested from a ConfigurationProvider.
   * @see ConfigurationUpdateAccess an extended service that includes facilities for modifying configuration data.
   */
-@js.native
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
+- typings.activexLibreoffice.com_.sun.star.container.XChild because Already inherited
+- typings.activexLibreoffice.com_.sun.star.beans.XPropertyWithState because Already inherited
+- typings.activexLibreoffice.com_.sun.star.beans.XProperty because Already inherited
+- typings.activexLibreoffice.com_.sun.star.container.XNamed because Already inherited
+- typings.activexLibreoffice.com_.sun.star.container.XHierarchicalName because Already inherited
+- typings.activexLibreoffice.com_.sun.star.lang.XComponent because Already inherited
+- typings.activexLibreoffice.com_.sun.star.configuration.HierarchyElement because Already inherited
+- typings.activexLibreoffice.com_.sun.star.configuration.GroupElement because var conflicts: Name, Parent. Inlined 
+- typings.activexLibreoffice.com_.sun.star.configuration.SetElement because var conflicts: Name, Parent. Inlined  */ @js.native
 trait ConfigurationAccess
   extends GroupAccess
-     with XHierarchicalName
-     with XNamed
-     with XProperty
-     with XPropertyWithState
-     with XChild
-     with XTemplateContainer
-     with XStringEscape
-     with XComponent
-     with XChangesNotifier
-     with XLocalizable
+     with SetAccess
+     with AccessRootElement
      with XTemplateInstance {
   
   /**
@@ -255,27 +249,15 @@ object ConfigurationAccess {
   }
   
   @scala.inline
-  implicit class ConfigurationAccessOps[Self <: ConfigurationAccess] (val x: Self) extends AnyVal {
+  implicit class ConfigurationAccessMutableBuilder[Self <: ConfigurationAccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetHierarchicalPropertySetInfo(value: () => XHierarchicalPropertySetInfo): Self = StObject.set(x, "getHierarchicalPropertySetInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetHierarchicalPropertySetInfo(value: () => XHierarchicalPropertySetInfo): Self = this.set("getHierarchicalPropertySetInfo", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = this.set("getPropertySetInfo", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = this.set("getPropertyStates", js.Any.fromFunction1(value))
+    def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
   }
 }

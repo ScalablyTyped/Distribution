@@ -1,12 +1,13 @@
 package typings.reactNativeZssRichTextEditor.mod
 
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RichTextToolbarOptionalProps extends js.Object {
+trait RichTextToolbarOptionalProps extends StObject {
   
   // An array of actions to be provided by this toolbar.
   var actions: js.Array[ACTIONS] = js.native
@@ -45,60 +46,48 @@ object RichTextToolbarOptionalProps {
   }
   
   @scala.inline
-  implicit class RichTextToolbarOptionalPropsOps[Self <: RichTextToolbarOptionalProps] (val x: Self) extends AnyVal {
+  implicit class RichTextToolbarOptionalPropsMutableBuilder[Self <: RichTextToolbarOptionalProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[ACTIONS]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsVarargs(value: ACTIONS*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIconMap(value: IconsMap): Self = StObject.set(x, "iconMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsVarargs(value: ACTIONS*): Self = this.set("actions", js.Array(value :_*))
+    def setIconTint(value: String): Self = StObject.set(x, "iconTint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: js.Array[ACTIONS]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setOnPressAddImage(value: () => Unit): Self = StObject.set(x, "onPressAddImage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIconMap(value: IconsMap): Self = this.set("iconMap", value.asInstanceOf[js.Any])
+    def setOnPressAddLink(value: () => Unit): Self = StObject.set(x, "onPressAddLink", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIconTint(value: String): Self = this.set("iconTint", value.asInstanceOf[js.Any])
+    def setRenderAction(value: () => ReactNode): Self = StObject.set(x, "renderAction", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnPressAddImage(value: () => Unit): Self = this.set("onPressAddImage", js.Any.fromFunction0(value))
+    def setSelectedButtonStyle(value: ElementStyles): Self = StObject.set(x, "selectedButtonStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPressAddLink(value: () => Unit): Self = this.set("onPressAddLink", js.Any.fromFunction0(value))
+    def setSelectedButtonStyleNull: Self = StObject.set(x, "selectedButtonStyle", null)
     
     @scala.inline
-    def setRenderAction(value: () => ReactNode): Self = this.set("renderAction", js.Any.fromFunction0(value))
+    def setSelectedButtonStyleUndefined: Self = StObject.set(x, "selectedButtonStyle", js.undefined)
     
     @scala.inline
-    def setSelectedIconTint(value: String): Self = this.set("selectedIconTint", value.asInstanceOf[js.Any])
+    def setSelectedIconTint(value: String): Self = StObject.set(x, "selectedIconTint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedButtonStyle(value: ElementStyles): Self = this.set("selectedButtonStyle", value.asInstanceOf[js.Any])
+    def setUnselectedButtonStyle(value: ElementStyles): Self = StObject.set(x, "unselectedButtonStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectedButtonStyle: Self = this.set("selectedButtonStyle", js.undefined)
+    def setUnselectedButtonStyleNull: Self = StObject.set(x, "unselectedButtonStyle", null)
     
     @scala.inline
-    def setSelectedButtonStyleNull: Self = this.set("selectedButtonStyle", null)
-    
-    @scala.inline
-    def setUnselectedButtonStyle(value: ElementStyles): Self = this.set("unselectedButtonStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnselectedButtonStyle: Self = this.set("unselectedButtonStyle", js.undefined)
-    
-    @scala.inline
-    def setUnselectedButtonStyleNull: Self = this.set("unselectedButtonStyle", null)
+    def setUnselectedButtonStyleUndefined: Self = StObject.set(x, "unselectedButtonStyle", js.undefined)
   }
 }

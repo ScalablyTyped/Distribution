@@ -1,12 +1,13 @@
 package typings.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hls.js", "Loader")
 @js.native
-class Loader protected () extends js.Object {
+class Loader protected () extends StObject {
   def this(config: LoaderConfig) = this()
   
   /**

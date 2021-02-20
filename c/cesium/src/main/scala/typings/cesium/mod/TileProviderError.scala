@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "TileProviderError")
 @js.native
-class TileProviderError protected () extends js.Object {
+class TileProviderError protected () extends StObject {
   def this(
     provider: ImageryProvider | TerrainProvider,
     message: String,
@@ -34,11 +35,11 @@ class TileProviderError protected () extends js.Object {
   
   var y: Double = js.native
 }
-/* static members */
-@JSImport("cesium", "TileProviderError")
-@js.native
-object TileProviderError extends js.Object {
+object TileProviderError {
   
+  /* static member */
+  @JSImport("cesium", "TileProviderError.handleError")
+  @js.native
   def handleError(
     previousError: TileProviderError,
     provider: ImageryProvider,
@@ -49,6 +50,8 @@ object TileProviderError extends js.Object {
     level: Double,
     retryFunction: RetryFunction
   ): TileProviderError = js.native
+  @JSImport("cesium", "TileProviderError.handleError")
+  @js.native
   def handleError(
     previousError: TileProviderError,
     provider: ImageryProvider,
@@ -60,6 +63,8 @@ object TileProviderError extends js.Object {
     retryFunction: RetryFunction,
     errorDetails: Error
   ): TileProviderError = js.native
+  @JSImport("cesium", "TileProviderError.handleError")
+  @js.native
   def handleError(
     previousError: TileProviderError,
     provider: TerrainProvider,
@@ -70,6 +75,8 @@ object TileProviderError extends js.Object {
     level: Double,
     retryFunction: RetryFunction
   ): TileProviderError = js.native
+  @JSImport("cesium", "TileProviderError.handleError")
+  @js.native
   def handleError(
     previousError: TileProviderError,
     provider: TerrainProvider,
@@ -82,6 +89,9 @@ object TileProviderError extends js.Object {
     errorDetails: Error
   ): TileProviderError = js.native
   
+  /* static member */
+  @JSImport("cesium", "TileProviderError.handleSuccess")
+  @js.native
   def handleSuccess(previousError: TileProviderError): Unit = js.native
   
   type RetryFunction = js.Function0[Unit]

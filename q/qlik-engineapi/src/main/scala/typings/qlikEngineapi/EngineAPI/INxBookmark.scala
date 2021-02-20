@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NxBookmark...
   */
 @js.native
-trait INxBookmark extends js.Object {
+trait INxBookmark extends StObject {
   
   /**
     * List of selections for each state.
@@ -38,33 +39,21 @@ object INxBookmark {
   }
   
   @scala.inline
-  implicit class INxBookmarkOps[Self <: INxBookmark] (val x: Self) extends AnyVal {
+  implicit class INxBookmarkMutableBuilder[Self <: INxBookmark] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQStateData(value: js.Array[IAlternateStateData]): Self = StObject.set(x, "qStateData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQStateDataVarargs(value: IAlternateStateData*): Self = StObject.set(x, "qStateData", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQUtcModifyTime(value: Double): Self = StObject.set(x, "qUtcModifyTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQStateDataVarargs(value: IAlternateStateData*): Self = this.set("qStateData", js.Array(value :_*))
+    def setQVariableItems(value: js.Array[IBookmarkVariableItem]): Self = StObject.set(x, "qVariableItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQStateData(value: js.Array[IAlternateStateData]): Self = this.set("qStateData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQUtcModifyTime(value: Double): Self = this.set("qUtcModifyTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQVariableItemsVarargs(value: IBookmarkVariableItem*): Self = this.set("qVariableItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setQVariableItems(value: js.Array[IBookmarkVariableItem]): Self = this.set("qVariableItems", value.asInstanceOf[js.Any])
+    def setQVariableItemsVarargs(value: IBookmarkVariableItem*): Self = StObject.set(x, "qVariableItems", js.Array(value :_*))
   }
 }

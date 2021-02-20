@@ -1,12 +1,13 @@
 package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Meta extends js.Object {
+trait Meta extends StObject {
   
   @JSName("$filler")
   var $filler: js.UndefOr[StringDictionary[js.Any]] = js.native
@@ -37,66 +38,54 @@ object Meta {
   }
   
   @scala.inline
-  implicit class MetaOps[Self <: Meta] (val x: Self) extends AnyVal {
+  implicit class MetaMutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$filler(value: StringDictionary[js.Any]): Self = StObject.set(x, "$filler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$fillerUndefined: Self = StObject.set(x, "$filler", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setController(value: StringDictionary[js.Any]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setController(value: StringDictionary[js.Any]): Self = this.set("controller", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[MetaData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: MetaData*): Self = this.set("data", js.Array(value :_*))
+    def setDataVarargs(value: MetaData*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setData(value: js.Array[MetaData]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDataset(value: ChartDataSets): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ChartType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
     @scala.inline
-    def set$filler(value: StringDictionary[js.Any]): Self = this.set("$filler", value.asInstanceOf[js.Any])
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$filler: Self = this.set("$filler", js.undefined)
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def setDataset(value: ChartDataSets): Self = this.set("dataset", value.asInstanceOf[js.Any])
+    def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataset: Self = this.set("dataset", js.undefined)
+    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setType(value: ChartType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setXAxisID(value: String): Self = StObject.set(x, "xAxisID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal(value: String): Self = this.set("total", value.asInstanceOf[js.Any])
+    def setXAxisIDUndefined: Self = StObject.set(x, "xAxisID", js.undefined)
     
     @scala.inline
-    def deleteTotal: Self = this.set("total", js.undefined)
+    def setYAxisID(value: String): Self = StObject.set(x, "yAxisID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXAxisID(value: String): Self = this.set("xAxisID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXAxisID: Self = this.set("xAxisID", js.undefined)
-    
-    @scala.inline
-    def setYAxisID(value: String): Self = this.set("yAxisID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYAxisID: Self = this.set("yAxisID", js.undefined)
+    def setYAxisIDUndefined: Self = StObject.set(x, "yAxisID", js.undefined)
   }
 }

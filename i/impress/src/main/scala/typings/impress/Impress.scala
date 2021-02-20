@@ -1,11 +1,12 @@
 package typings.impress
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Impress extends js.Object {
+trait Impress extends StObject {
   
   def getStep(step: js.Any): js.Any = js.native
   

@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppBarOptions extends js.Object {
+trait AppBarOptions extends StObject {
   
   var items: js.UndefOr[js.Array[AppBarItem]] = js.native
   
@@ -28,57 +29,45 @@ object AppBarOptions {
   }
   
   @scala.inline
-  implicit class AppBarOptionsOps[Self <: AppBarOptions] (val x: Self) extends AnyVal {
+  implicit class AppBarOptionsMutableBuilder[Self <: AppBarOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: js.Array[AppBarItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsVarargs(value: AppBarItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: AppBarItem*): Self = this.set("items", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[AppBarItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPositionMode(value: String): Self = StObject.set(x, "positionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPositionModeUndefined: Self = StObject.set(x, "positionMode", js.undefined)
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setResize(value: /* e */ AppBarResizeEvent => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPositionMode(value: String): Self = this.set("positionMode", value.asInstanceOf[js.Any])
+    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
     @scala.inline
-    def deletePositionMode: Self = this.set("positionMode", js.undefined)
+    def setThemeColor(value: String): Self = StObject.set(x, "themeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResize(value: /* e */ AppBarResizeEvent => Unit): Self = this.set("resize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteResize: Self = this.set("resize", js.undefined)
-    
-    @scala.inline
-    def setThemeColor(value: String): Self = this.set("themeColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThemeColor: Self = this.set("themeColor", js.undefined)
+    def setThemeColorUndefined: Self = StObject.set(x, "themeColor", js.undefined)
   }
 }

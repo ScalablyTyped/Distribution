@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.identitiesInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentityBatchInfo extends js.Object {
+trait IdentityBatchInfo extends StObject {
   
   var descriptors: js.Array[IdentityDescriptor] = js.native
   
@@ -32,42 +33,30 @@ object IdentityBatchInfo {
   }
   
   @scala.inline
-  implicit class IdentityBatchInfoOps[Self <: IdentityBatchInfo] (val x: Self) extends AnyVal {
+  implicit class IdentityBatchInfoMutableBuilder[Self <: IdentityBatchInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescriptors(value: js.Array[IdentityDescriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptorsVarargs(value: IdentityDescriptor*): Self = StObject.set(x, "descriptors", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentityIds(value: js.Array[String]): Self = StObject.set(x, "identityIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptorsVarargs(value: IdentityDescriptor*): Self = this.set("descriptors", js.Array(value :_*))
+    def setIdentityIdsVarargs(value: String*): Self = StObject.set(x, "identityIds", js.Array(value :_*))
     
     @scala.inline
-    def setDescriptors(value: js.Array[IdentityDescriptor]): Self = this.set("descriptors", value.asInstanceOf[js.Any])
+    def setIncludeRestrictedVisibility(value: Boolean): Self = StObject.set(x, "includeRestrictedVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityIdsVarargs(value: String*): Self = this.set("identityIds", js.Array(value :_*))
+    def setPropertyNames(value: js.Array[String]): Self = StObject.set(x, "propertyNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityIds(value: js.Array[String]): Self = this.set("identityIds", value.asInstanceOf[js.Any])
+    def setPropertyNamesVarargs(value: String*): Self = StObject.set(x, "propertyNames", js.Array(value :_*))
     
     @scala.inline
-    def setIncludeRestrictedVisibility(value: Boolean): Self = this.set("includeRestrictedVisibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropertyNamesVarargs(value: String*): Self = this.set("propertyNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setPropertyNames(value: js.Array[String]): Self = this.set("propertyNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryMembership(value: QueryMembership): Self = this.set("queryMembership", value.asInstanceOf[js.Any])
+    def setQueryMembership(value: QueryMembership): Self = StObject.set(x, "queryMembership", value.asInstanceOf[js.Any])
   }
 }

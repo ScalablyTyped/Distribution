@@ -1,11 +1,12 @@
 package typings.awsSdk.datasyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateLocationObjectStorageRequest extends js.Object {
+trait CreateLocationObjectStorageRequest extends StObject {
   
   /**
     * Optional. The access key is used if credentials are required to access the self-managed object storage server. If your object storage requires a user name and password to authenticate, use AccessKey and SecretKey to provide the user name and password, respectively.
@@ -61,69 +62,57 @@ object CreateLocationObjectStorageRequest {
   }
   
   @scala.inline
-  implicit class CreateLocationObjectStorageRequestOps[Self <: CreateLocationObjectStorageRequest] (val x: Self) extends AnyVal {
+  implicit class CreateLocationObjectStorageRequestMutableBuilder[Self <: CreateLocationObjectStorageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessKey(value: ObjectStorageAccessKey): Self = StObject.set(x, "AccessKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessKeyUndefined: Self = StObject.set(x, "AccessKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgentArns(value: AgentArnList): Self = StObject.set(x, "AgentArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentArnsVarargs(value: AgentArn*): Self = this.set("AgentArns", js.Array(value :_*))
+    def setAgentArnsVarargs(value: AgentArn*): Self = StObject.set(x, "AgentArns", js.Array(value :_*))
     
     @scala.inline
-    def setAgentArns(value: AgentArnList): Self = this.set("AgentArns", value.asInstanceOf[js.Any])
+    def setBucketName(value: ObjectStorageBucketName): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketName(value: ObjectStorageBucketName): Self = this.set("BucketName", value.asInstanceOf[js.Any])
+    def setSecretKey(value: ObjectStorageSecretKey): Self = StObject.set(x, "SecretKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerHostname(value: ServerHostname): Self = this.set("ServerHostname", value.asInstanceOf[js.Any])
+    def setSecretKeyUndefined: Self = StObject.set(x, "SecretKey", js.undefined)
     
     @scala.inline
-    def setAccessKey(value: ObjectStorageAccessKey): Self = this.set("AccessKey", value.asInstanceOf[js.Any])
+    def setServerHostname(value: ServerHostname): Self = StObject.set(x, "ServerHostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessKey: Self = this.set("AccessKey", js.undefined)
+    def setServerPort(value: ObjectStorageServerPort): Self = StObject.set(x, "ServerPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretKey(value: ObjectStorageSecretKey): Self = this.set("SecretKey", value.asInstanceOf[js.Any])
+    def setServerPortUndefined: Self = StObject.set(x, "ServerPort", js.undefined)
     
     @scala.inline
-    def deleteSecretKey: Self = this.set("SecretKey", js.undefined)
+    def setServerProtocol(value: ObjectStorageServerProtocol): Self = StObject.set(x, "ServerProtocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerPort(value: ObjectStorageServerPort): Self = this.set("ServerPort", value.asInstanceOf[js.Any])
+    def setServerProtocolUndefined: Self = StObject.set(x, "ServerProtocol", js.undefined)
     
     @scala.inline
-    def deleteServerPort: Self = this.set("ServerPort", js.undefined)
+    def setSubdirectory(value: S3Subdirectory): Self = StObject.set(x, "Subdirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerProtocol(value: ObjectStorageServerProtocol): Self = this.set("ServerProtocol", value.asInstanceOf[js.Any])
+    def setSubdirectoryUndefined: Self = StObject.set(x, "Subdirectory", js.undefined)
     
     @scala.inline
-    def deleteServerProtocol: Self = this.set("ServerProtocol", js.undefined)
+    def setTags(value: InputTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubdirectory(value: S3Subdirectory): Self = this.set("Subdirectory", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSubdirectory: Self = this.set("Subdirectory", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: TagListEntry*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: InputTagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: TagListEntry*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

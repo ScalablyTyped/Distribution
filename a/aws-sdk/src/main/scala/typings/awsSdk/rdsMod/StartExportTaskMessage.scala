@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartExportTaskMessage extends js.Object {
+trait StartExportTaskMessage extends StObject {
   
   /**
     * The data to be exported from the snapshot. If this parameter is not provided, all the snapshot data is exported. Valid values are the following:    database - Export all the data from a specified database.    database.table table-name - Export a table of the snapshot. This format is valid only for RDS for MySQL, RDS for MariaDB, and Aurora MySQL.    database.schema schema-name - Export a database schema of the snapshot. This format is valid only for RDS for PostgreSQL and Aurora PostgreSQL.    database.schema.table table-name - Export a table of the database schema. This format is valid only for RDS for PostgreSQL and Aurora PostgreSQL.  
@@ -57,48 +58,36 @@ object StartExportTaskMessage {
   }
   
   @scala.inline
-  implicit class StartExportTaskMessageOps[Self <: StartExportTaskMessage] (val x: Self) extends AnyVal {
+  implicit class StartExportTaskMessageMutableBuilder[Self <: StartExportTaskMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportOnly(value: StringList): Self = StObject.set(x, "ExportOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportOnlyUndefined: Self = StObject.set(x, "ExportOnly", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportOnlyVarargs(value: String*): Self = StObject.set(x, "ExportOnly", js.Array(value :_*))
     
     @scala.inline
-    def setExportTaskIdentifier(value: String): Self = this.set("ExportTaskIdentifier", value.asInstanceOf[js.Any])
+    def setExportTaskIdentifier(value: String): Self = StObject.set(x, "ExportTaskIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamRoleArn(value: String): Self = this.set("IamRoleArn", value.asInstanceOf[js.Any])
+    def setIamRoleArn(value: String): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3BucketName(value: String): Self = this.set("S3BucketName", value.asInstanceOf[js.Any])
+    def setS3BucketName(value: String): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceArn(value: String): Self = this.set("SourceArn", value.asInstanceOf[js.Any])
+    def setS3Prefix(value: String): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportOnlyVarargs(value: String*): Self = this.set("ExportOnly", js.Array(value :_*))
+    def setS3PrefixUndefined: Self = StObject.set(x, "S3Prefix", js.undefined)
     
     @scala.inline
-    def setExportOnly(value: StringList): Self = this.set("ExportOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExportOnly: Self = this.set("ExportOnly", js.undefined)
-    
-    @scala.inline
-    def setS3Prefix(value: String): Self = this.set("S3Prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Prefix: Self = this.set("S3Prefix", js.undefined)
+    def setSourceArn(value: String): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
   }
 }

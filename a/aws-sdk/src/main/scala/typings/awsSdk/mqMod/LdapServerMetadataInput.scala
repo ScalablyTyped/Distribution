@@ -1,11 +1,12 @@
 package typings.awsSdk.mqMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LdapServerMetadataInput extends js.Object {
+trait LdapServerMetadataInput extends StObject {
   
   /**
     * Fully qualified domain name of the LDAP server. Optional failover server.
@@ -71,87 +72,75 @@ object LdapServerMetadataInput {
   }
   
   @scala.inline
-  implicit class LdapServerMetadataInputOps[Self <: LdapServerMetadataInput] (val x: Self) extends AnyVal {
+  implicit class LdapServerMetadataInputMutableBuilder[Self <: LdapServerMetadataInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHosts(value: listOfString): Self = StObject.set(x, "Hosts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostsUndefined: Self = StObject.set(x, "Hosts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostsVarargs(value: string*): Self = StObject.set(x, "Hosts", js.Array(value :_*))
     
     @scala.inline
-    def setHostsVarargs(value: string*): Self = this.set("Hosts", js.Array(value :_*))
+    def setRoleBase(value: string): Self = StObject.set(x, "RoleBase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHosts(value: listOfString): Self = this.set("Hosts", value.asInstanceOf[js.Any])
+    def setRoleBaseUndefined: Self = StObject.set(x, "RoleBase", js.undefined)
     
     @scala.inline
-    def deleteHosts: Self = this.set("Hosts", js.undefined)
+    def setRoleName(value: string): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleBase(value: string): Self = this.set("RoleBase", value.asInstanceOf[js.Any])
+    def setRoleNameUndefined: Self = StObject.set(x, "RoleName", js.undefined)
     
     @scala.inline
-    def deleteRoleBase: Self = this.set("RoleBase", js.undefined)
+    def setRoleSearchMatching(value: string): Self = StObject.set(x, "RoleSearchMatching", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleName(value: string): Self = this.set("RoleName", value.asInstanceOf[js.Any])
+    def setRoleSearchMatchingUndefined: Self = StObject.set(x, "RoleSearchMatching", js.undefined)
     
     @scala.inline
-    def deleteRoleName: Self = this.set("RoleName", js.undefined)
+    def setRoleSearchSubtree(value: boolean): Self = StObject.set(x, "RoleSearchSubtree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleSearchMatching(value: string): Self = this.set("RoleSearchMatching", value.asInstanceOf[js.Any])
+    def setRoleSearchSubtreeUndefined: Self = StObject.set(x, "RoleSearchSubtree", js.undefined)
     
     @scala.inline
-    def deleteRoleSearchMatching: Self = this.set("RoleSearchMatching", js.undefined)
+    def setServiceAccountPassword(value: string): Self = StObject.set(x, "ServiceAccountPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleSearchSubtree(value: boolean): Self = this.set("RoleSearchSubtree", value.asInstanceOf[js.Any])
+    def setServiceAccountPasswordUndefined: Self = StObject.set(x, "ServiceAccountPassword", js.undefined)
     
     @scala.inline
-    def deleteRoleSearchSubtree: Self = this.set("RoleSearchSubtree", js.undefined)
+    def setServiceAccountUsername(value: string): Self = StObject.set(x, "ServiceAccountUsername", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAccountPassword(value: string): Self = this.set("ServiceAccountPassword", value.asInstanceOf[js.Any])
+    def setServiceAccountUsernameUndefined: Self = StObject.set(x, "ServiceAccountUsername", js.undefined)
     
     @scala.inline
-    def deleteServiceAccountPassword: Self = this.set("ServiceAccountPassword", js.undefined)
+    def setUserBase(value: string): Self = StObject.set(x, "UserBase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAccountUsername(value: string): Self = this.set("ServiceAccountUsername", value.asInstanceOf[js.Any])
+    def setUserBaseUndefined: Self = StObject.set(x, "UserBase", js.undefined)
     
     @scala.inline
-    def deleteServiceAccountUsername: Self = this.set("ServiceAccountUsername", js.undefined)
+    def setUserRoleName(value: string): Self = StObject.set(x, "UserRoleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserBase(value: string): Self = this.set("UserBase", value.asInstanceOf[js.Any])
+    def setUserRoleNameUndefined: Self = StObject.set(x, "UserRoleName", js.undefined)
     
     @scala.inline
-    def deleteUserBase: Self = this.set("UserBase", js.undefined)
+    def setUserSearchMatching(value: string): Self = StObject.set(x, "UserSearchMatching", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserRoleName(value: string): Self = this.set("UserRoleName", value.asInstanceOf[js.Any])
+    def setUserSearchMatchingUndefined: Self = StObject.set(x, "UserSearchMatching", js.undefined)
     
     @scala.inline
-    def deleteUserRoleName: Self = this.set("UserRoleName", js.undefined)
+    def setUserSearchSubtree(value: boolean): Self = StObject.set(x, "UserSearchSubtree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserSearchMatching(value: string): Self = this.set("UserSearchMatching", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserSearchMatching: Self = this.set("UserSearchMatching", js.undefined)
-    
-    @scala.inline
-    def setUserSearchSubtree(value: boolean): Self = this.set("UserSearchSubtree", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserSearchSubtree: Self = this.set("UserSearchSubtree", js.undefined)
+    def setUserSearchSubtreeUndefined: Self = StObject.set(x, "UserSearchSubtree", js.undefined)
   }
 }

@@ -1,16 +1,21 @@
 package typings.quillDelta
 
 import typings.quillDelta.opMod.Op
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("quill-delta/dist/Iterator", JSImport.Namespace)
-@js.native
-object iteratorMod extends js.Object {
+object iteratorMod {
+  
+  @JSImport("quill-delta/dist/Iterator", JSImport.Default)
+  @js.native
+  class default protected () extends Iterator {
+    def this(ops: js.Array[Op]) = this()
+  }
   
   @js.native
-  trait Iterator extends js.Object {
+  trait Iterator extends StObject {
     
     def hasNext(): Boolean = js.native
     
@@ -30,10 +35,5 @@ object iteratorMod extends js.Object {
     def peekType(): String = js.native
     
     def rest(): js.Array[Op] = js.native
-  }
-  
-  @js.native
-  class default protected () extends Iterator {
-    def this(ops: js.Array[Op]) = this()
   }
 }

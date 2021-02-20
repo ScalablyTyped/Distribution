@@ -1,11 +1,12 @@
 package typings.flexmonster.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DateFormat extends js.Object {
+trait DateFormat extends StObject {
   
   var dateFormat: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object DateFormat {
   }
   
   @scala.inline
-  implicit class DateFormatOps[Self <: DateFormat] (val x: Self) extends AnyVal {
+  implicit class DateFormatMutableBuilder[Self <: DateFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLiveSearch(value: Boolean): Self = StObject.set(x, "liveSearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateFormat(value: String): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    def setLiveSearchUndefined: Self = StObject.set(x, "liveSearch", js.undefined)
     
     @scala.inline
-    def deleteDateFormat: Self = this.set("dateFormat", js.undefined)
+    def setTimezoneOffset(value: Double): Self = StObject.set(x, "timezoneOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiveSearch(value: Boolean): Self = this.set("liveSearch", value.asInstanceOf[js.Any])
+    def setTimezoneOffsetUndefined: Self = StObject.set(x, "timezoneOffset", js.undefined)
     
     @scala.inline
-    def deleteLiveSearch: Self = this.set("liveSearch", js.undefined)
+    def setWeekOffset(value: Double): Self = StObject.set(x, "weekOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezoneOffset(value: Double): Self = this.set("timezoneOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimezoneOffset: Self = this.set("timezoneOffset", js.undefined)
-    
-    @scala.inline
-    def setWeekOffset(value: Double): Self = this.set("weekOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeekOffset: Self = this.set("weekOffset", js.undefined)
+    def setWeekOffsetUndefined: Self = StObject.set(x, "weekOffset", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.languageV1beta2Mod.languageV1beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents part of speech information for a token.
   */
 @js.native
-trait SchemaPartOfSpeech extends js.Object {
+trait SchemaPartOfSpeech extends StObject {
   
   /**
     * The grammatical aspect.
@@ -79,90 +80,78 @@ object SchemaPartOfSpeech {
   }
   
   @scala.inline
-  implicit class SchemaPartOfSpeechOps[Self <: SchemaPartOfSpeech] (val x: Self) extends AnyVal {
+  implicit class SchemaPartOfSpeechMutableBuilder[Self <: SchemaPartOfSpeech] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAspect(value: String): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAspectUndefined: Self = StObject.set(x, "aspect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCase(value: String): Self = StObject.set(x, "case", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAspect(value: String): Self = this.set("aspect", value.asInstanceOf[js.Any])
+    def setCaseUndefined: Self = StObject.set(x, "case", js.undefined)
     
     @scala.inline
-    def deleteAspect: Self = this.set("aspect", js.undefined)
+    def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCase(value: String): Self = this.set("case", value.asInstanceOf[js.Any])
+    def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
     @scala.inline
-    def deleteCase: Self = this.set("case", js.undefined)
+    def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForm(value: String): Self = this.set("form", value.asInstanceOf[js.Any])
+    def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
     
     @scala.inline
-    def deleteForm: Self = this.set("form", js.undefined)
+    def setMood(value: String): Self = StObject.set(x, "mood", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGender(value: String): Self = this.set("gender", value.asInstanceOf[js.Any])
+    def setMoodUndefined: Self = StObject.set(x, "mood", js.undefined)
     
     @scala.inline
-    def deleteGender: Self = this.set("gender", js.undefined)
+    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMood(value: String): Self = this.set("mood", value.asInstanceOf[js.Any])
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
     @scala.inline
-    def deleteMood: Self = this.set("mood", js.undefined)
+    def setPerson(value: String): Self = StObject.set(x, "person", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: String): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setPersonUndefined: Self = StObject.set(x, "person", js.undefined)
     
     @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
+    def setProper(value: String): Self = StObject.set(x, "proper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerson(value: String): Self = this.set("person", value.asInstanceOf[js.Any])
+    def setProperUndefined: Self = StObject.set(x, "proper", js.undefined)
     
     @scala.inline
-    def deletePerson: Self = this.set("person", js.undefined)
+    def setReciprocity(value: String): Self = StObject.set(x, "reciprocity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProper(value: String): Self = this.set("proper", value.asInstanceOf[js.Any])
+    def setReciprocityUndefined: Self = StObject.set(x, "reciprocity", js.undefined)
     
     @scala.inline
-    def deleteProper: Self = this.set("proper", js.undefined)
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReciprocity(value: String): Self = this.set("reciprocity", value.asInstanceOf[js.Any])
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
     @scala.inline
-    def deleteReciprocity: Self = this.set("reciprocity", js.undefined)
+    def setTense(value: String): Self = StObject.set(x, "tense", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setTenseUndefined: Self = StObject.set(x, "tense", js.undefined)
     
     @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
+    def setVoice(value: String): Self = StObject.set(x, "voice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTense(value: String): Self = this.set("tense", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTense: Self = this.set("tense", js.undefined)
-    
-    @scala.inline
-    def setVoice(value: String): Self = this.set("voice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoice: Self = this.set("voice", js.undefined)
+    def setVoiceUndefined: Self = StObject.set(x, "voice", js.undefined)
   }
 }

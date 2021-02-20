@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppsCreateInstallationAccessTokenEndpoint extends js.Object {
+trait AppsCreateInstallationAccessTokenEndpoint extends StObject {
   
   var installation_id: Double = js.native
   
@@ -28,36 +29,24 @@ object AppsCreateInstallationAccessTokenEndpoint {
   }
   
   @scala.inline
-  implicit class AppsCreateInstallationAccessTokenEndpointOps[Self <: AppsCreateInstallationAccessTokenEndpoint] (val x: Self) extends AnyVal {
+  implicit class AppsCreateInstallationAccessTokenEndpointMutableBuilder[Self <: AppsCreateInstallationAccessTokenEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstallation_id(value: Double): Self = StObject.set(x, "installation_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPermissions(value: AppsCreateInstallationAccessTokenParamsPermissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
     @scala.inline
-    def setInstallation_id(value: Double): Self = this.set("installation_id", value.asInstanceOf[js.Any])
+    def setRepository_ids(value: js.Array[Double]): Self = StObject.set(x, "repository_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissions(value: AppsCreateInstallationAccessTokenParamsPermissions): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    def setRepository_idsUndefined: Self = StObject.set(x, "repository_ids", js.undefined)
     
     @scala.inline
-    def deletePermissions: Self = this.set("permissions", js.undefined)
-    
-    @scala.inline
-    def setRepository_idsVarargs(value: Double*): Self = this.set("repository_ids", js.Array(value :_*))
-    
-    @scala.inline
-    def setRepository_ids(value: js.Array[Double]): Self = this.set("repository_ids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepository_ids: Self = this.set("repository_ids", js.undefined)
+    def setRepository_idsVarargs(value: Double*): Self = StObject.set(x, "repository_ids", js.Array(value :_*))
   }
 }

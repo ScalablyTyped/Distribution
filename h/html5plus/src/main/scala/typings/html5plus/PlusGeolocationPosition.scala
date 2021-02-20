@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
   */
 @js.native
-trait PlusGeolocationPosition extends js.Object {
+trait PlusGeolocationPosition extends StObject {
   
   /**
     * 获取到地理位置对应的地址信息
@@ -65,48 +66,36 @@ object PlusGeolocationPosition {
   }
   
   @scala.inline
-  implicit class PlusGeolocationPositionOps[Self <: PlusGeolocationPosition] (val x: Self) extends AnyVal {
+  implicit class PlusGeolocationPositionMutableBuilder[Self <: PlusGeolocationPosition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: PlusGeolocationAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddresses(value: String): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: PlusGeolocationAddress): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setCoords(value: PlusGeolocationCoordinates): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddresses(value: String): Self = this.set("addresses", value.asInstanceOf[js.Any])
+    def setCoordsType(value: String): Self = StObject.set(x, "coordsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddresses: Self = this.set("addresses", js.undefined)
+    def setCoordsTypeUndefined: Self = StObject.set(x, "coordsType", js.undefined)
     
     @scala.inline
-    def setCoords(value: PlusGeolocationCoordinates): Self = this.set("coords", value.asInstanceOf[js.Any])
+    def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
     
     @scala.inline
-    def deleteCoords: Self = this.set("coords", js.undefined)
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoordsType(value: String): Self = this.set("coordsType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCoordsType: Self = this.set("coordsType", js.undefined)
-    
-    @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

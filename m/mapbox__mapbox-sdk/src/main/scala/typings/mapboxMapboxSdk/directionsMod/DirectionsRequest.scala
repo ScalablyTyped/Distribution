@@ -1,11 +1,12 @@
 package typings.mapboxMapboxSdk.directionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectionsRequest extends js.Object {
+trait DirectionsRequest extends StObject {
   
   /**
     * Whether to try to return alternative routes. An alternative is classified as a route that is significantly
@@ -94,105 +95,93 @@ object DirectionsRequest {
   }
   
   @scala.inline
-  implicit class DirectionsRequestOps[Self <: DirectionsRequest] (val x: Self) extends AnyVal {
+  implicit class DirectionsRequestMutableBuilder[Self <: DirectionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternatives(value: Boolean): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternativesUndefined: Self = StObject.set(x, "alternatives", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnnotations(value: js.Array[DirectionsAnnotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile(value: DirectionsProfile): Self = this.set("profile", value.asInstanceOf[js.Any])
+    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
     @scala.inline
-    def setWaypointsVarargs(value: DirectionsRequestWaypoint*): Self = this.set("waypoints", js.Array(value :_*))
+    def setAnnotationsVarargs(value: DirectionsAnnotation*): Self = StObject.set(x, "annotations", js.Array(value :_*))
     
     @scala.inline
-    def setWaypoints(value: js.Array[DirectionsRequestWaypoint]): Self = this.set("waypoints", value.asInstanceOf[js.Any])
+    def setBannerInstructions(value: Boolean): Self = StObject.set(x, "bannerInstructions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternatives(value: Boolean): Self = this.set("alternatives", value.asInstanceOf[js.Any])
+    def setBannerInstructionsUndefined: Self = StObject.set(x, "bannerInstructions", js.undefined)
     
     @scala.inline
-    def deleteAlternatives: Self = this.set("alternatives", js.undefined)
+    def setContinueStraight(value: Boolean): Self = StObject.set(x, "continueStraight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationsVarargs(value: DirectionsAnnotation*): Self = this.set("annotations", js.Array(value :_*))
+    def setContinueStraightUndefined: Self = StObject.set(x, "continueStraight", js.undefined)
     
     @scala.inline
-    def setAnnotations(value: js.Array[DirectionsAnnotation]): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    def setExclude(value: js.Array[DirectionsProfile]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
     @scala.inline
-    def setBannerInstructions(value: Boolean): Self = this.set("bannerInstructions", value.asInstanceOf[js.Any])
+    def setExcludeVarargs(value: DirectionsProfile*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
     @scala.inline
-    def deleteBannerInstructions: Self = this.set("bannerInstructions", js.undefined)
+    def setGeometries(value: DirectionsGeometry): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinueStraight(value: Boolean): Self = this.set("continueStraight", value.asInstanceOf[js.Any])
+    def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
     
     @scala.inline
-    def deleteContinueStraight: Self = this.set("continueStraight", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeVarargs(value: DirectionsProfile*): Self = this.set("exclude", js.Array(value :_*))
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def setExclude(value: js.Array[DirectionsProfile]): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    def setOverview(value: DirectionsOverview): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExclude: Self = this.set("exclude", js.undefined)
+    def setOverviewUndefined: Self = StObject.set(x, "overview", js.undefined)
     
     @scala.inline
-    def setGeometries(value: DirectionsGeometry): Self = this.set("geometries", value.asInstanceOf[js.Any])
+    def setProfile(value: DirectionsProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGeometries: Self = this.set("geometries", js.undefined)
+    def setRoundaboutExits(value: Boolean): Self = StObject.set(x, "roundaboutExits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setRoundaboutExitsUndefined: Self = StObject.set(x, "roundaboutExits", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setSteps(value: Boolean): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverview(value: DirectionsOverview): Self = this.set("overview", value.asInstanceOf[js.Any])
+    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
     @scala.inline
-    def deleteOverview: Self = this.set("overview", js.undefined)
+    def setVoiceInstructions(value: Boolean): Self = StObject.set(x, "voiceInstructions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoundaboutExits(value: Boolean): Self = this.set("roundaboutExits", value.asInstanceOf[js.Any])
+    def setVoiceInstructionsUndefined: Self = StObject.set(x, "voiceInstructions", js.undefined)
     
     @scala.inline
-    def deleteRoundaboutExits: Self = this.set("roundaboutExits", js.undefined)
+    def setVoiceUnits(value: DirectionsUnits): Self = StObject.set(x, "voiceUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSteps(value: Boolean): Self = this.set("steps", value.asInstanceOf[js.Any])
+    def setVoiceUnitsUndefined: Self = StObject.set(x, "voiceUnits", js.undefined)
     
     @scala.inline
-    def deleteSteps: Self = this.set("steps", js.undefined)
+    def setWaypoints(value: js.Array[DirectionsRequestWaypoint]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVoiceInstructions(value: Boolean): Self = this.set("voiceInstructions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoiceInstructions: Self = this.set("voiceInstructions", js.undefined)
-    
-    @scala.inline
-    def setVoiceUnits(value: DirectionsUnits): Self = this.set("voiceUnits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoiceUnits: Self = this.set("voiceUnits", js.undefined)
+    def setWaypointsVarargs(value: DirectionsRequestWaypoint*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
   }
 }

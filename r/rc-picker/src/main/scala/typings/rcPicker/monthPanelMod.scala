@@ -3,14 +3,15 @@ package typings.rcPicker
 import typings.rcPicker.interfaceMod.PanelSharedProps
 import typings.rcPicker.monthBodyMod.MonthCellRender
 import typings.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-picker/es/panels/MonthPanel", JSImport.Namespace)
-@js.native
-object monthPanelMod extends js.Object {
+object monthPanelMod {
   
+  @JSImport("rc-picker/es/panels/MonthPanel", JSImport.Default)
+  @js.native
   def default[DateType](props: MonthPanelProps[DateType]): Element = js.native
   
   @js.native

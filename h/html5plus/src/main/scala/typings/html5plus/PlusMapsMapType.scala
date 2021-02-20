@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
   */
 @js.native
-trait PlusMapsMapType extends js.Object {
+trait PlusMapsMapType extends StObject {
   
   /**
     * 普通街道视图类型
@@ -37,30 +38,18 @@ object PlusMapsMapType {
   }
   
   @scala.inline
-  implicit class PlusMapsMapTypeOps[Self <: PlusMapsMapType] (val x: Self) extends AnyVal {
+  implicit class PlusMapsMapTypeMutableBuilder[Self <: PlusMapsMapType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMAPTYPE_NORMAL(value: Double): Self = StObject.set(x, "MAPTYPE_NORMAL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMAPTYPE_NORMALUndefined: Self = StObject.set(x, "MAPTYPE_NORMAL", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMAPTYPE_SATELLITE(value: Double): Self = StObject.set(x, "MAPTYPE_SATELLITE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMAPTYPE_NORMAL(value: Double): Self = this.set("MAPTYPE_NORMAL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMAPTYPE_NORMAL: Self = this.set("MAPTYPE_NORMAL", js.undefined)
-    
-    @scala.inline
-    def setMAPTYPE_SATELLITE(value: Double): Self = this.set("MAPTYPE_SATELLITE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMAPTYPE_SATELLITE: Self = this.set("MAPTYPE_SATELLITE", js.undefined)
+    def setMAPTYPE_SATELLITEUndefined: Self = StObject.set(x, "MAPTYPE_SATELLITE", js.undefined)
   }
 }

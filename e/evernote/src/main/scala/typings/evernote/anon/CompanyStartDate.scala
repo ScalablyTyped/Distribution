@@ -1,12 +1,13 @@
 package typings.evernote.anon
 
 import typings.evernote.mod.Types.Timestamp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompanyStartDate extends js.Object {
+trait CompanyStartDate extends StObject {
   
   var companyStartDate: js.UndefOr[Timestamp] = js.native
   
@@ -31,60 +32,48 @@ object CompanyStartDate {
   }
   
   @scala.inline
-  implicit class CompanyStartDateOps[Self <: CompanyStartDate] (val x: Self) extends AnyVal {
+  implicit class CompanyStartDateMutableBuilder[Self <: CompanyStartDate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompanyStartDate(value: Timestamp): Self = StObject.set(x, "companyStartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompanyStartDateUndefined: Self = StObject.set(x, "companyStartDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDepartment(value: String): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanyStartDate(value: Timestamp): Self = this.set("companyStartDate", value.asInstanceOf[js.Any])
+    def setDepartmentUndefined: Self = StObject.set(x, "department", js.undefined)
     
     @scala.inline
-    def deleteCompanyStartDate: Self = this.set("companyStartDate", js.undefined)
+    def setLinkedInProfileUrl(value: String): Self = StObject.set(x, "linkedInProfileUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepartment(value: String): Self = this.set("department", value.asInstanceOf[js.Any])
+    def setLinkedInProfileUrlUndefined: Self = StObject.set(x, "linkedInProfileUrl", js.undefined)
     
     @scala.inline
-    def deleteDepartment: Self = this.set("department", js.undefined)
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedInProfileUrl(value: String): Self = this.set("linkedInProfileUrl", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteLinkedInProfileUrl: Self = this.set("linkedInProfileUrl", js.undefined)
+    def setMobilePhone(value: String): Self = StObject.set(x, "mobilePhone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setMobilePhoneUndefined: Self = StObject.set(x, "mobilePhone", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobilePhone(value: String): Self = this.set("mobilePhone", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteMobilePhone: Self = this.set("mobilePhone", js.undefined)
+    def setWorkPhone(value: String): Self = StObject.set(x, "workPhone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setWorkPhone(value: String): Self = this.set("workPhone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkPhone: Self = this.set("workPhone", js.undefined)
+    def setWorkPhoneUndefined: Self = StObject.set(x, "workPhone", js.undefined)
   }
 }

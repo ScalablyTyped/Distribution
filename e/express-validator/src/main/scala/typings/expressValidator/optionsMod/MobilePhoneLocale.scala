@@ -1,5 +1,6 @@
 package typings.expressValidator.optionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -101,7 +102,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.`zh-HK`
   - typings.expressValidator.expressValidatorStrings.`zh-TW`
 */
-trait MobilePhoneLocale extends js.Object
+trait MobilePhoneLocale extends StObject
 object MobilePhoneLocale {
   
   @scala.inline

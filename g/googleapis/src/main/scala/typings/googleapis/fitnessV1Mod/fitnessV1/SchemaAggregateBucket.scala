@@ -1,11 +1,12 @@
 package typings.googleapis.fitnessV1Mod.fitnessV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaAggregateBucket extends js.Object {
+trait SchemaAggregateBucket extends StObject {
   
   /**
     * Available for Bucket.Type.ACTIVITY_TYPE, Bucket.Type.ACTIVITY_SEGMENT
@@ -49,57 +50,45 @@ object SchemaAggregateBucket {
   }
   
   @scala.inline
-  implicit class SchemaAggregateBucketOps[Self <: SchemaAggregateBucket] (val x: Self) extends AnyVal {
+  implicit class SchemaAggregateBucketMutableBuilder[Self <: SchemaAggregateBucket] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivity(value: Double): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivityUndefined: Self = StObject.set(x, "activity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataset(value: js.Array[SchemaDataset]): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivity(value: Double): Self = this.set("activity", value.asInstanceOf[js.Any])
+    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
     @scala.inline
-    def deleteActivity: Self = this.set("activity", js.undefined)
+    def setDatasetVarargs(value: SchemaDataset*): Self = StObject.set(x, "dataset", js.Array(value :_*))
     
     @scala.inline
-    def setDatasetVarargs(value: SchemaDataset*): Self = this.set("dataset", js.Array(value :_*))
+    def setEndTimeMillis(value: String): Self = StObject.set(x, "endTimeMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataset(value: js.Array[SchemaDataset]): Self = this.set("dataset", value.asInstanceOf[js.Any])
+    def setEndTimeMillisUndefined: Self = StObject.set(x, "endTimeMillis", js.undefined)
     
     @scala.inline
-    def deleteDataset: Self = this.set("dataset", js.undefined)
+    def setSession(value: SchemaSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTimeMillis(value: String): Self = this.set("endTimeMillis", value.asInstanceOf[js.Any])
+    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     
     @scala.inline
-    def deleteEndTimeMillis: Self = this.set("endTimeMillis", js.undefined)
+    def setStartTimeMillis(value: String): Self = StObject.set(x, "startTimeMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSession(value: SchemaSession): Self = this.set("session", value.asInstanceOf[js.Any])
+    def setStartTimeMillisUndefined: Self = StObject.set(x, "startTimeMillis", js.undefined)
     
     @scala.inline
-    def deleteSession: Self = this.set("session", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTimeMillis(value: String): Self = this.set("startTimeMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTimeMillis: Self = this.set("startTimeMillis", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

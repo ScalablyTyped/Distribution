@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SnapshotDetails extends js.Object {
+trait SnapshotDetails extends StObject {
   
   /**
     * The current application version ID when the snapshot was created.
@@ -40,33 +41,21 @@ object SnapshotDetails {
   }
   
   @scala.inline
-  implicit class SnapshotDetailsOps[Self <: SnapshotDetails] (val x: Self) extends AnyVal {
+  implicit class SnapshotDetailsMutableBuilder[Self <: SnapshotDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "ApplicationVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSnapshotCreationTimestamp(value: Timestamp): Self = StObject.set(x, "SnapshotCreationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSnapshotCreationTimestampUndefined: Self = StObject.set(x, "SnapshotCreationTimestamp", js.undefined)
     
     @scala.inline
-    def setApplicationVersionId(value: ApplicationVersionId): Self = this.set("ApplicationVersionId", value.asInstanceOf[js.Any])
+    def setSnapshotName(value: SnapshotName): Self = StObject.set(x, "SnapshotName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotName(value: SnapshotName): Self = this.set("SnapshotName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSnapshotStatus(value: SnapshotStatus): Self = this.set("SnapshotStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSnapshotCreationTimestamp(value: Timestamp): Self = this.set("SnapshotCreationTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotCreationTimestamp: Self = this.set("SnapshotCreationTimestamp", js.undefined)
+    def setSnapshotStatus(value: SnapshotStatus): Self = StObject.set(x, "SnapshotStatus", value.asInstanceOf[js.Any])
   }
 }

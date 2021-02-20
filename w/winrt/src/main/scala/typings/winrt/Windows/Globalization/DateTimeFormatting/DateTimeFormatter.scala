@@ -2,6 +2,7 @@ package typings.winrt.Windows.Globalization.DateTimeFormatting
 
 import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetUserDefinedFunctionsResponse extends js.Object {
+trait GetUserDefinedFunctionsResponse extends StObject {
   
   /**
     * A continuation token, if the list of functions returned does not include the last requested function.
@@ -26,33 +27,21 @@ object GetUserDefinedFunctionsResponse {
   }
   
   @scala.inline
-  implicit class GetUserDefinedFunctionsResponseOps[Self <: GetUserDefinedFunctionsResponse] (val x: Self) extends AnyVal {
+  implicit class GetUserDefinedFunctionsResponseMutableBuilder[Self <: GetUserDefinedFunctionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserDefinedFunctions(value: UserDefinedFunctionList): Self = StObject.set(x, "UserDefinedFunctions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setUserDefinedFunctionsUndefined: Self = StObject.set(x, "UserDefinedFunctions", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setUserDefinedFunctionsVarargs(value: UserDefinedFunction*): Self = this.set("UserDefinedFunctions", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserDefinedFunctions(value: UserDefinedFunctionList): Self = this.set("UserDefinedFunctions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserDefinedFunctions: Self = this.set("UserDefinedFunctions", js.undefined)
+    def setUserDefinedFunctionsVarargs(value: UserDefinedFunction*): Self = StObject.set(x, "UserDefinedFunctions", js.Array(value :_*))
   }
 }

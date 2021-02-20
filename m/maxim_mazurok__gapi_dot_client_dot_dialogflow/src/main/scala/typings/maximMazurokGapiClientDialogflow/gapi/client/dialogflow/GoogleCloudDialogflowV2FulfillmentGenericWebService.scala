@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowV2FulfillmentGenericWebService extends js.Object {
+trait GoogleCloudDialogflowV2FulfillmentGenericWebService extends StObject {
   
   /** Optional. Indicates if generic web service is created through Cloud Functions integration. Defaults to false. */
   var isCloudFunction: js.UndefOr[Boolean] = js.native
@@ -36,52 +37,40 @@ object GoogleCloudDialogflowV2FulfillmentGenericWebService {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowV2FulfillmentGenericWebServiceOps[Self <: GoogleCloudDialogflowV2FulfillmentGenericWebService] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowV2FulfillmentGenericWebServiceMutableBuilder[Self <: GoogleCloudDialogflowV2FulfillmentGenericWebService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsCloudFunction(value: Boolean): Self = StObject.set(x, "isCloudFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsCloudFunctionUndefined: Self = StObject.set(x, "isCloudFunction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCloudFunction(value: Boolean): Self = this.set("isCloudFunction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsCloudFunction: Self = this.set("isCloudFunction", js.undefined)
-    
-    @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
     def setRequestHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2FulfillmentGenericWebService with TopLevel[js.Any]
-    ): Self = this.set("requestHeaders", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequestHeaders: Self = this.set("requestHeaders", js.undefined)
+    def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     
     @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

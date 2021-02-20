@@ -2,6 +2,7 @@ package typings.handsontable.mod.Handsontable.plugins
 
 import typings.handsontable.mod._Handsontable.Core
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -112,105 +113,93 @@ object ManualRowResize {
   }
   
   @scala.inline
-  implicit class ManualRowResizeOps[Self <: ManualRowResize] (val x: Self) extends AnyVal {
+  implicit class ManualRowResizeMutableBuilder[Self <: ManualRowResize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoresizeTimeout(value: js.Function0[Unit] | Unit): Self = StObject.set(x, "autoresizeTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoresizeTimeoutFunction0(value: () => Unit): Self = StObject.set(x, "autoresizeTimeout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckIfRowHeader(value: HTMLElement => Boolean): Self = StObject.set(x, "checkIfRowHeader", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutoresizeTimeoutFunction0(value: () => Unit): Self = this.set("autoresizeTimeout", js.Any.fromFunction0(value))
+    def setClearManualSize(value: Double => Unit): Self = StObject.set(x, "clearManualSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutoresizeTimeout(value: js.Function0[Unit] | Unit): Self = this.set("autoresizeTimeout", value.asInstanceOf[js.Any])
+    def setCurrentRow(value: Double | Unit): Self = StObject.set(x, "currentRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckIfRowHeader(value: HTMLElement => Boolean): Self = this.set("checkIfRowHeader", js.Any.fromFunction1(value))
+    def setCurrentTH(value: HTMLElement | Unit): Self = StObject.set(x, "currentTH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearManualSize(value: Double => Unit): Self = this.set("clearManualSize", js.Any.fromFunction1(value))
+    def setCurrentWidth(value: Double | Unit): Self = StObject.set(x, "currentWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentRow(value: Double | Unit): Self = this.set("currentRow", value.asInstanceOf[js.Any])
+    def setDblclick(value: Double): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTH(value: HTMLElement | Unit): Self = this.set("currentTH", value.asInstanceOf[js.Any])
+    def setEventManager(value: EventManager): Self = StObject.set(x, "eventManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentWidth(value: Double | Unit): Self = this.set("currentWidth", value.asInstanceOf[js.Any])
+    def setGetClosestTHParent(value: HTMLElement => HTMLElement): Self = StObject.set(x, "getClosestTHParent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDblclick(value: Double): Self = this.set("dblclick", value.asInstanceOf[js.Any])
+    def setGuide(value: HTMLElement): Self = StObject.set(x, "guide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventManager(value: EventManager): Self = this.set("eventManager", value.asInstanceOf[js.Any])
+    def setHandle(value: HTMLElement): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetClosestTHParent(value: HTMLElement => HTMLElement): Self = this.set("getClosestTHParent", js.Any.fromFunction1(value))
+    def setHideHandleAndGuide(value: () => Unit): Self = StObject.set(x, "hideHandleAndGuide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGuide(value: HTMLElement): Self = this.set("guide", value.asInstanceOf[js.Any])
+    def setLoadManualRowHeights(value: () => js.Array[Double | Null]): Self = StObject.set(x, "loadManualRowHeights", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHandle(value: HTMLElement): Self = this.set("handle", value.asInstanceOf[js.Any])
+    def setManualRowHeights(value: js.Array[_]): Self = StObject.set(x, "manualRowHeights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideHandleAndGuide(value: () => Unit): Self = this.set("hideHandleAndGuide", js.Any.fromFunction0(value))
+    def setManualRowHeightsVarargs(value: js.Any*): Self = StObject.set(x, "manualRowHeights", js.Array(value :_*))
     
     @scala.inline
-    def setLoadManualRowHeights(value: () => js.Array[Double | Null]): Self = this.set("loadManualRowHeights", js.Any.fromFunction0(value))
+    def setNewSize(value: Double | Unit): Self = StObject.set(x, "newSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualRowHeightsVarargs(value: js.Any*): Self = this.set("manualRowHeights", js.Array(value :_*))
+    def setPressed(value: Core | Unit): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualRowHeights(value: js.Array[_]): Self = this.set("manualRowHeights", value.asInstanceOf[js.Any])
+    def setRefreshGuidePosition(value: () => Unit): Self = StObject.set(x, "refreshGuidePosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNewSize(value: Double | Unit): Self = this.set("newSize", value.asInstanceOf[js.Any])
+    def setRefreshHandlePosition(value: () => Unit): Self = StObject.set(x, "refreshHandlePosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPressed(value: Core | Unit): Self = this.set("pressed", value.asInstanceOf[js.Any])
+    def setSaveManualRowHeights(value: () => Unit): Self = StObject.set(x, "saveManualRowHeights", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRefreshGuidePosition(value: () => Unit): Self = this.set("refreshGuidePosition", js.Any.fromFunction0(value))
+    def setSelectedRows(value: js.Array[_]): Self = StObject.set(x, "selectedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshHandlePosition(value: () => Unit): Self = this.set("refreshHandlePosition", js.Any.fromFunction0(value))
+    def setSelectedRowsVarargs(value: js.Any*): Self = StObject.set(x, "selectedRows", js.Array(value :_*))
     
     @scala.inline
-    def setSaveManualRowHeights(value: () => Unit): Self = this.set("saveManualRowHeights", js.Any.fromFunction0(value))
+    def setSetManualSize(value: (Double, Double) => Double): Self = StObject.set(x, "setManualSize", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSelectedRowsVarargs(value: js.Any*): Self = this.set("selectedRows", js.Array(value :_*))
+    def setSetupGuidePosition(value: () => Unit): Self = StObject.set(x, "setupGuidePosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSelectedRows(value: js.Array[_]): Self = this.set("selectedRows", value.asInstanceOf[js.Any])
+    def setSetupHandlePosition(value: HTMLElement => Boolean | Unit): Self = StObject.set(x, "setupHandlePosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetManualSize(value: (Double, Double) => Double): Self = this.set("setManualSize", js.Any.fromFunction2(value))
+    def setStartOffset(value: Double | Unit): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetupGuidePosition(value: () => Unit): Self = this.set("setupGuidePosition", js.Any.fromFunction0(value))
+    def setStartWidth(value: Double | Unit): Self = StObject.set(x, "startWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetupHandlePosition(value: HTMLElement => Boolean | Unit): Self = this.set("setupHandlePosition", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStartOffset(value: Double | Unit): Self = this.set("startOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartWidth(value: Double | Unit): Self = this.set("startWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartY(value: Double | Unit): Self = this.set("startY", value.asInstanceOf[js.Any])
+    def setStartY(value: Double | Unit): Self = StObject.set(x, "startY", value.asInstanceOf[js.Any])
   }
 }

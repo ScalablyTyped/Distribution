@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateSolutionResponse extends js.Object {
+trait CreateSolutionResponse extends StObject {
   
   /**
     * The ARN of the solution.
@@ -21,24 +22,12 @@ object CreateSolutionResponse {
   }
   
   @scala.inline
-  implicit class CreateSolutionResponseOps[Self <: CreateSolutionResponse] (val x: Self) extends AnyVal {
+  implicit class CreateSolutionResponseMutableBuilder[Self <: CreateSolutionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSolutionArn(value: Arn): Self = StObject.set(x, "solutionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSolutionArn(value: Arn): Self = this.set("solutionArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSolutionArn: Self = this.set("solutionArn", js.undefined)
+    def setSolutionArnUndefined: Self = StObject.set(x, "solutionArn", js.undefined)
   }
 }

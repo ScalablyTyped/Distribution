@@ -2,12 +2,13 @@ package typings.pubnub.anon
 
 import typings.pubnub.pubnubStrings.delete
 import typings.pubnub.pubnubStrings.uuid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataId extends js.Object {
+trait DataId extends StObject {
   
   var data: Id = js.native
   
@@ -25,27 +26,15 @@ object DataId {
   }
   
   @scala.inline
-  implicit class DataIdOps[Self <: DataId] (val x: Self) extends AnyVal {
+  implicit class DataIdMutableBuilder[Self <: DataId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: Id): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvent(value: delete): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setData(value: Id): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEvent(value: delete): Self = this.set("event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: uuid): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: uuid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

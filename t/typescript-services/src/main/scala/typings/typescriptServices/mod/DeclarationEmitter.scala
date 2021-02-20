@@ -1,5 +1,6 @@
 package typings.typescriptServices.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,10 +17,10 @@ class DeclarationEmitter protected ()
     semanticInfoChain: typings.typescriptServices.TypeScript.SemanticInfoChain
   ) = this()
 }
-/* static members */
-@JSImport("typescript-services", "DeclarationEmitter")
-@js.native
-object DeclarationEmitter extends js.Object {
+object DeclarationEmitter {
   
+  /* static member */
+  @JSImport("typescript-services", "DeclarationEmitter.getEnclosingContainer")
+  @js.native
   def getEnclosingContainer(ast: typings.typescriptServices.TypeScript.AST): typings.typescriptServices.TypeScript.AST = js.native
 }

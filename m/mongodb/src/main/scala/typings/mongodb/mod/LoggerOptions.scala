@@ -1,11 +1,12 @@
 package typings.mongodb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoggerOptions extends js.Object {
+trait LoggerOptions extends StObject {
   
   /**
     * Override default global log level.
@@ -26,30 +27,18 @@ object LoggerOptions {
   }
   
   @scala.inline
-  implicit class LoggerOptionsOps[Self <: LoggerOptions] (val x: Self) extends AnyVal {
+  implicit class LoggerOptionsMutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogger(value: (/* message */ js.UndefOr[String], /* state */ js.UndefOr[LoggerState]) => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoggerLevel(value: String): Self = StObject.set(x, "loggerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoggerLevelUndefined: Self = StObject.set(x, "loggerLevel", js.undefined)
     
     @scala.inline
-    def setLogger(value: (/* message */ js.UndefOr[String], /* state */ js.UndefOr[LoggerState]) => Unit): Self = this.set("logger", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteLogger: Self = this.set("logger", js.undefined)
-    
-    @scala.inline
-    def setLoggerLevel(value: String): Self = this.set("loggerLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoggerLevel: Self = this.set("loggerLevel", js.undefined)
+    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
   }
 }

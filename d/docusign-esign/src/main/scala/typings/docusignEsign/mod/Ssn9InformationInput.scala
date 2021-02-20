@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ssn9InformationInput extends js.Object {
+trait Ssn9InformationInput extends StObject {
   
   /**
     * Specifies the display level for the recipient. Valid values are:
@@ -29,30 +30,18 @@ object Ssn9InformationInput {
   }
   
   @scala.inline
-  implicit class Ssn9InformationInputOps[Self <: Ssn9InformationInput] (val x: Self) extends AnyVal {
+  implicit class Ssn9InformationInputMutableBuilder[Self <: Ssn9InformationInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayLevelCode(value: String): Self = StObject.set(x, "displayLevelCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayLevelCodeUndefined: Self = StObject.set(x, "displayLevelCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSsn9(value: String): Self = StObject.set(x, "ssn9", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayLevelCode(value: String): Self = this.set("displayLevelCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayLevelCode: Self = this.set("displayLevelCode", js.undefined)
-    
-    @scala.inline
-    def setSsn9(value: String): Self = this.set("ssn9", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsn9: Self = this.set("ssn9", js.undefined)
+    def setSsn9Undefined: Self = StObject.set(x, "ssn9", js.undefined)
   }
 }

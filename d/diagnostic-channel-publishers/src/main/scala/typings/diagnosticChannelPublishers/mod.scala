@@ -1,111 +1,155 @@
 package typings.diagnosticChannelPublishers
 
 import typings.diagnosticChannel.patchRequireMod.IModulePatcher
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("diagnostic-channel-publishers", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def enable(): Unit = js.native
-  
-  @js.native
-  object azuresdk extends js.Object {
+  object azuresdk {
     
+    @JSImport("diagnostic-channel-publishers", "azuresdk.AzureMonitorSymbol")
+    @js.native
     val AzureMonitorSymbol: /* "Azure_Monitor_Tracer" */ String = js.native
     
+    @JSImport("diagnostic-channel-publishers", "azuresdk.azureCoreTracing")
+    @js.native
     val azureCoreTracing: IModulePatcher = js.native
     
+    @JSImport("diagnostic-channel-publishers", "azuresdk.enable")
+    @js.native
     def enable(): Unit = js.native
   }
   
-  @js.native
-  object bunyan extends js.Object {
+  object bunyan {
     
+    @JSImport("diagnostic-channel-publishers", "bunyan.bunyan")
+    @js.native
     val bunyan: IModulePatcher = js.native
     
+    @JSImport("diagnostic-channel-publishers", "bunyan.enable")
+    @js.native
     def enable(): Unit = js.native
   }
   
-  @js.native
-  object console extends js.Object {
+  object console {
     
+    @JSImport("diagnostic-channel-publishers", "console.console")
+    @js.native
     val console: IModulePatcher = js.native
     
+    @JSImport("diagnostic-channel-publishers", "console.enable")
+    @js.native
     def enable(): Unit = js.native
   }
   
+  @JSImport("diagnostic-channel-publishers", "enable")
   @js.native
-  object mongodb extends js.Object {
+  def enable(): Unit = js.native
+  
+  object mongodb {
     
+    @JSImport("diagnostic-channel-publishers", "mongodb.enable")
+    @js.native
     def enable(): Unit = js.native
     
+    @JSImport("diagnostic-channel-publishers", "mongodb.mongo2")
+    @js.native
     val mongo2: IModulePatcher = js.native
     
+    @JSImport("diagnostic-channel-publishers", "mongodb.mongo3")
+    @js.native
     val mongo3: IModulePatcher = js.native
     
+    @JSImport("diagnostic-channel-publishers", "mongodb.mongo330")
+    @js.native
     val mongo330: IModulePatcher = js.native
   }
   
-  @js.native
-  object mongodbCore extends js.Object {
+  object mongodbCore {
     
+    @JSImport("diagnostic-channel-publishers", "mongodbCore.enable")
+    @js.native
     def enable(): Unit = js.native
     
+    @JSImport("diagnostic-channel-publishers", "mongodbCore.mongoCore")
+    @js.native
     val mongoCore: IModulePatcher = js.native
   }
   
-  @js.native
-  object mysql extends js.Object {
+  object mysql {
     
+    @JSImport("diagnostic-channel-publishers", "mysql.enable")
+    @js.native
     def enable(): Unit = js.native
     
+    @JSImport("diagnostic-channel-publishers", "mysql.mysql")
+    @js.native
     val mysql: IModulePatcher = js.native
   }
   
-  @js.native
-  object pg extends js.Object {
+  object pg {
     
+    @JSImport("diagnostic-channel-publishers", "pg.enable")
+    @js.native
     def enable(): Unit = js.native
     
+    @JSImport("diagnostic-channel-publishers", "pg.postgres6")
+    @js.native
     val postgres6: IModulePatcher = js.native
     
+    @JSImport("diagnostic-channel-publishers", "pg.postgres7")
+    @js.native
     val postgres7: IModulePatcher = js.native
   }
   
-  @js.native
-  object pgPool extends js.Object {
+  object pgPool {
     
+    @JSImport("diagnostic-channel-publishers", "pgPool.enable")
+    @js.native
     def enable(): Unit = js.native
     
+    @JSImport("diagnostic-channel-publishers", "pgPool.postgresPool1")
+    @js.native
     val postgresPool1: IModulePatcher = js.native
   }
   
-  @js.native
-  object redis extends js.Object {
+  object redis {
     
+    @JSImport("diagnostic-channel-publishers", "redis.enable")
+    @js.native
     def enable(): Unit = js.native
     
+    @JSImport("diagnostic-channel-publishers", "redis.redis")
+    @js.native
     val redis: IModulePatcher = js.native
   }
   
-  @js.native
-  object tedious extends js.Object {
+  object tedious {
     
+    @JSImport("diagnostic-channel-publishers", "tedious.enable")
+    @js.native
     def enable(): Unit = js.native
     
+    @JSImport("diagnostic-channel-publishers", "tedious.tedious")
+    @js.native
     val tedious: IModulePatcher = js.native
   }
   
-  @js.native
-  object winston extends js.Object {
+  object winston {
     
+    @JSImport("diagnostic-channel-publishers", "winston.enable")
+    @js.native
     def enable(): Unit = js.native
     
+    @JSImport("diagnostic-channel-publishers", "winston.winston2")
+    @js.native
     val winston2: IModulePatcher = js.native
     
+    @JSImport("diagnostic-channel-publishers", "winston.winston3")
+    @js.native
     val winston3: IModulePatcher = js.native
   }
 }

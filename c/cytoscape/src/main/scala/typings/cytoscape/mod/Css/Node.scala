@@ -24,6 +24,7 @@ import typings.cytoscape.cytoscapeStrings.wrap
 import typings.cytoscape.cytoscapeStrings.yes
 import typings.cytoscape.mod.EdgeSingular
 import typings.cytoscape.mod.NodeSingular
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,7 +42,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.Events<cytoscape.cytoscape.NodeSingular>> */
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.TransitionAnimation> */
 @js.native
-trait Node extends js.Object {
+trait Node extends StObject {
   
   /**
     * Blackens the node’s body for values from 0 to 1;
@@ -318,807 +319,795 @@ object Node {
   }
   
   @scala.inline
-  implicit class NodeOps[Self <: Node] (val x: Self) extends AnyVal {
+  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setBackground-blacken`(value: PropertyValueNode[Double]): Self = StObject.set(x, "background-blacken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setBackground-blackenFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "background-blacken", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setBackground-blackenUndefined`: Self = StObject.set(x, "background-blacken", js.undefined)
     
     @scala.inline
-    def `setBackground-blackenFunction1`(value: NodeSingular => Double): Self = this.set("background-blacken", js.Any.fromFunction1(value))
+    def `setBackground-clip`(value: PropertyValueNode[clipped | none]): Self = StObject.set(x, "background-clip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBackground-blacken`(value: PropertyValueNode[Double]): Self = this.set("background-blacken", value.asInstanceOf[js.Any])
+    def `setBackground-clipFunction1`(value: NodeSingular => clipped | none): Self = StObject.set(x, "background-clip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteBackground-blacken`: Self = this.set("background-blacken", js.undefined)
+    def `setBackground-clipUndefined`: Self = StObject.set(x, "background-clip", js.undefined)
     
     @scala.inline
-    def `setBackground-clipFunction1`(value: NodeSingular => clipped | none): Self = this.set("background-clip", js.Any.fromFunction1(value))
+    def `setBackground-color`(value: PropertyValueNode[Colour]): Self = StObject.set(x, "background-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBackground-clip`(value: PropertyValueNode[clipped | none]): Self = this.set("background-clip", value.asInstanceOf[js.Any])
+    def `setBackground-colorFunction1`(value: NodeSingular => Colour): Self = StObject.set(x, "background-color", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteBackground-clip`: Self = this.set("background-clip", js.undefined)
+    def `setBackground-colorUndefined`: Self = StObject.set(x, "background-color", js.undefined)
     
     @scala.inline
-    def `setBackground-colorFunction1`(value: NodeSingular => Colour): Self = this.set("background-color", js.Any.fromFunction1(value))
+    def `setBackground-fit`(value: PropertyValueNode[none | contain | cover]): Self = StObject.set(x, "background-fit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBackground-color`(value: PropertyValueNode[Colour]): Self = this.set("background-color", value.asInstanceOf[js.Any])
+    def `setBackground-fitFunction1`(value: NodeSingular => none | contain | cover): Self = StObject.set(x, "background-fit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteBackground-color`: Self = this.set("background-color", js.undefined)
+    def `setBackground-fitUndefined`: Self = StObject.set(x, "background-fit", js.undefined)
     
     @scala.inline
-    def `setBackground-fitFunction1`(value: NodeSingular => none | contain | cover): Self = this.set("background-fit", js.Any.fromFunction1(value))
+    def `setBackground-height`(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "background-height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBackground-fit`(value: PropertyValueNode[none | contain | cover]): Self = this.set("background-fit", value.asInstanceOf[js.Any])
+    def `setBackground-heightFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "background-height", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteBackground-fit`: Self = this.set("background-fit", js.undefined)
+    def `setBackground-heightUndefined`: Self = StObject.set(x, "background-height", js.undefined)
     
     @scala.inline
-    def `setBackground-heightFunction1`(value: NodeSingular => Double | String): Self = this.set("background-height", js.Any.fromFunction1(value))
+    def `setBackground-image`(value: PropertyValueNode[String]): Self = StObject.set(x, "background-image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBackground-height`(value: PropertyValueNode[Double | String]): Self = this.set("background-height", value.asInstanceOf[js.Any])
+    def `setBackground-image-opacity`(value: PropertyValueNode[Double]): Self = StObject.set(x, "background-image-opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteBackground-height`: Self = this.set("background-height", js.undefined)
+    def `setBackground-image-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "background-image-opacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `setBackground-imageFunction1`(value: NodeSingular => String): Self = this.set("background-image", js.Any.fromFunction1(value))
+    def `setBackground-image-opacityUndefined`: Self = StObject.set(x, "background-image-opacity", js.undefined)
     
     @scala.inline
-    def `setBackground-image`(value: PropertyValueNode[String]): Self = this.set("background-image", value.asInstanceOf[js.Any])
+    def `setBackground-imageFunction1`(value: NodeSingular => String): Self = StObject.set(x, "background-image", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteBackground-image`: Self = this.set("background-image", js.undefined)
+    def `setBackground-imageUndefined`: Self = StObject.set(x, "background-image", js.undefined)
     
     @scala.inline
-    def `setBackground-image-opacityFunction1`(value: NodeSingular => Double): Self = this.set("background-image-opacity", js.Any.fromFunction1(value))
+    def `setBackground-opacity`(value: PropertyValueNode[Double]): Self = StObject.set(x, "background-opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBackground-image-opacity`(value: PropertyValueNode[Double]): Self = this.set("background-image-opacity", value.asInstanceOf[js.Any])
+    def `setBackground-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "background-opacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteBackground-image-opacity`: Self = this.set("background-image-opacity", js.undefined)
+    def `setBackground-opacityUndefined`: Self = StObject.set(x, "background-opacity", js.undefined)
     
     @scala.inline
-    def `setBackground-opacityFunction1`(value: NodeSingular => Double): Self = this.set("background-opacity", js.Any.fromFunction1(value))
+    def `setBackground-position-x`(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "background-position-x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBackground-opacity`(value: PropertyValueNode[Double]): Self = this.set("background-opacity", value.asInstanceOf[js.Any])
+    def `setBackground-position-xFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "background-position-x", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteBackground-opacity`: Self = this.set("background-opacity", js.undefined)
+    def `setBackground-position-xUndefined`: Self = StObject.set(x, "background-position-x", js.undefined)
     
     @scala.inline
-    def `setBackground-position-xFunction1`(value: NodeSingular => Double | String): Self = this.set("background-position-x", js.Any.fromFunction1(value))
+    def `setBackground-position-y`(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "background-position-y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBackground-position-x`(value: PropertyValueNode[Double | String]): Self = this.set("background-position-x", value.asInstanceOf[js.Any])
+    def `setBackground-position-yFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "background-position-y", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteBackground-position-x`: Self = this.set("background-position-x", js.undefined)
+    def `setBackground-position-yUndefined`: Self = StObject.set(x, "background-position-y", js.undefined)
     
     @scala.inline
-    def `setBackground-position-yFunction1`(value: NodeSingular => Double | String): Self = this.set("background-position-y", js.Any.fromFunction1(value))
+    def `setBackground-repeat`(value: PropertyValueNode[`no-repeat` | `repeat-x` | `repeat-y` | repeat]): Self = StObject.set(x, "background-repeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBackground-position-y`(value: PropertyValueNode[Double | String]): Self = this.set("background-position-y", value.asInstanceOf[js.Any])
+    def `setBackground-repeatFunction1`(value: NodeSingular => `no-repeat` | `repeat-x` | `repeat-y` | repeat): Self = StObject.set(x, "background-repeat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteBackground-position-y`: Self = this.set("background-position-y", js.undefined)
+    def `setBackground-repeatUndefined`: Self = StObject.set(x, "background-repeat", js.undefined)
     
     @scala.inline
-    def `setBackground-repeatFunction1`(value: NodeSingular => `no-repeat` | `repeat-x` | `repeat-y` | repeat): Self = this.set("background-repeat", js.Any.fromFunction1(value))
+    def `setBackground-width`(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "background-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBackground-repeat`(value: PropertyValueNode[`no-repeat` | `repeat-x` | `repeat-y` | repeat]): Self = this.set("background-repeat", value.asInstanceOf[js.Any])
+    def `setBackground-widthFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "background-width", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteBackground-repeat`: Self = this.set("background-repeat", js.undefined)
+    def `setBackground-widthUndefined`: Self = StObject.set(x, "background-width", js.undefined)
     
     @scala.inline
-    def `setBackground-widthFunction1`(value: NodeSingular => Double | String): Self = this.set("background-width", js.Any.fromFunction1(value))
+    def setBackgroundColor(value: PropertyValueNode[Colour]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBackground-width`(value: PropertyValueNode[Double | String]): Self = this.set("background-width", value.asInstanceOf[js.Any])
+    def setBackgroundColorFunction1(value: NodeSingular => Colour): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteBackground-width`: Self = this.set("background-width", js.undefined)
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def setBackgroundColorFunction1(value: NodeSingular => Colour): Self = this.set("backgroundColor", js.Any.fromFunction1(value))
+    def `setBorder-color`(value: PropertyValueNode[Colour]): Self = StObject.set(x, "border-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: PropertyValueNode[Colour]): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def `setBorder-colorFunction1`(value: NodeSingular => Colour): Self = StObject.set(x, "border-color", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def `setBorder-colorUndefined`: Self = StObject.set(x, "border-color", js.undefined)
     
     @scala.inline
-    def `setBorder-colorFunction1`(value: NodeSingular => Colour): Self = this.set("border-color", js.Any.fromFunction1(value))
+    def `setBorder-opacity`(value: PropertyValueNode[Double]): Self = StObject.set(x, "border-opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBorder-color`(value: PropertyValueNode[Colour]): Self = this.set("border-color", value.asInstanceOf[js.Any])
+    def `setBorder-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "border-opacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteBorder-color`: Self = this.set("border-color", js.undefined)
+    def `setBorder-opacityUndefined`: Self = StObject.set(x, "border-opacity", js.undefined)
     
     @scala.inline
-    def `setBorder-opacityFunction1`(value: NodeSingular => Double): Self = this.set("border-opacity", js.Any.fromFunction1(value))
+    def `setBorder-style`(value: PropertyValueNode[LineStyle]): Self = StObject.set(x, "border-style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBorder-opacity`(value: PropertyValueNode[Double]): Self = this.set("border-opacity", value.asInstanceOf[js.Any])
+    def `setBorder-styleFunction1`(value: NodeSingular => LineStyle): Self = StObject.set(x, "border-style", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteBorder-opacity`: Self = this.set("border-opacity", js.undefined)
+    def `setBorder-styleUndefined`: Self = StObject.set(x, "border-style", js.undefined)
     
     @scala.inline
-    def `setBorder-styleFunction1`(value: NodeSingular => LineStyle): Self = this.set("border-style", js.Any.fromFunction1(value))
+    def `setBorder-width`(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "border-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBorder-style`(value: PropertyValueNode[LineStyle]): Self = this.set("border-style", value.asInstanceOf[js.Any])
+    def `setBorder-widthFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "border-width", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteBorder-style`: Self = this.set("border-style", js.undefined)
+    def `setBorder-widthUndefined`: Self = StObject.set(x, "border-width", js.undefined)
     
     @scala.inline
-    def `setBorder-widthFunction1`(value: NodeSingular => Double | String): Self = this.set("border-width", js.Any.fromFunction1(value))
+    def setColor(value: PropertyValue[NodeSingular, Colour]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBorder-width`(value: PropertyValueNode[Double | String]): Self = this.set("border-width", value.asInstanceOf[js.Any])
+    def setColorFunction1(value: NodeSingular => Colour): Self = StObject.set(x, "color", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteBorder-width`: Self = this.set("border-width", js.undefined)
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setColorFunction1(value: NodeSingular => Colour): Self = this.set("color", js.Any.fromFunction1(value))
+    def setContent(value: PropertyValueNode[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: PropertyValue[NodeSingular, Colour]): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setContentFunction1(value: NodeSingular => String): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def setContentFunction1(value: NodeSingular => String): Self = this.set("content", js.Any.fromFunction1(value))
+    def setDisplay(value: PropertyValue[NodeSingular, none | displayed]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: PropertyValueNode[String]): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setDisplayFunction1(value: NodeSingular => none | displayed): Self = StObject.set(x, "display", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def setDisplayFunction1(value: NodeSingular => none | displayed): Self = this.set("display", js.Any.fromFunction1(value))
+    def setEvents(value: PropertyValue[NodeSingular, yes | no]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay(value: PropertyValue[NodeSingular, none | displayed]): Self = this.set("display", value.asInstanceOf[js.Any])
+    def setEventsFunction1(value: NodeSingular => yes | no): Self = StObject.set(x, "events", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def setEventsFunction1(value: NodeSingular => yes | no): Self = this.set("events", js.Any.fromFunction1(value))
+    def `setFont-family`(value: PropertyValue[NodeSingular, String]): Self = StObject.set(x, "font-family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: PropertyValue[NodeSingular, yes | no]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def `setFont-familyFunction1`(value: NodeSingular => String): Self = StObject.set(x, "font-family", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def `setFont-familyUndefined`: Self = StObject.set(x, "font-family", js.undefined)
     
     @scala.inline
-    def `setFont-familyFunction1`(value: NodeSingular => String): Self = this.set("font-family", js.Any.fromFunction1(value))
+    def `setFont-size`(value: PropertyValue[NodeSingular, Double | String]): Self = StObject.set(x, "font-size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-family`(value: PropertyValue[NodeSingular, String]): Self = this.set("font-family", value.asInstanceOf[js.Any])
+    def `setFont-sizeFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "font-size", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteFont-family`: Self = this.set("font-family", js.undefined)
+    def `setFont-sizeUndefined`: Self = StObject.set(x, "font-size", js.undefined)
     
     @scala.inline
-    def `setFont-sizeFunction1`(value: NodeSingular => Double | String): Self = this.set("font-size", js.Any.fromFunction1(value))
+    def `setFont-style`(value: PropertyValue[NodeSingular, FontStyle]): Self = StObject.set(x, "font-style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-size`(value: PropertyValue[NodeSingular, Double | String]): Self = this.set("font-size", value.asInstanceOf[js.Any])
+    def `setFont-styleFunction1`(value: NodeSingular => FontStyle): Self = StObject.set(x, "font-style", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteFont-size`: Self = this.set("font-size", js.undefined)
+    def `setFont-styleUndefined`: Self = StObject.set(x, "font-style", js.undefined)
     
     @scala.inline
-    def `setFont-styleFunction1`(value: NodeSingular => FontStyle): Self = this.set("font-style", js.Any.fromFunction1(value))
+    def `setFont-weight`(value: PropertyValue[NodeSingular, FontWeight]): Self = StObject.set(x, "font-weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-style`(value: PropertyValue[NodeSingular, FontStyle]): Self = this.set("font-style", value.asInstanceOf[js.Any])
+    def `setFont-weightFunction1`(value: NodeSingular => FontWeight): Self = StObject.set(x, "font-weight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteFont-style`: Self = this.set("font-style", js.undefined)
+    def `setFont-weightUndefined`: Self = StObject.set(x, "font-weight", js.undefined)
     
     @scala.inline
-    def `setFont-weightFunction1`(value: NodeSingular => FontWeight): Self = this.set("font-weight", js.Any.fromFunction1(value))
+    def setGhost(value: PropertyValueNode[yes | no]): Self = StObject.set(x, "ghost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFont-weight`(value: PropertyValue[NodeSingular, FontWeight]): Self = this.set("font-weight", value.asInstanceOf[js.Any])
+    def `setGhost-offset-x`(value: PropertyValueNode[Double]): Self = StObject.set(x, "ghost-offset-x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteFont-weight`: Self = this.set("font-weight", js.undefined)
+    def `setGhost-offset-xFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "ghost-offset-x", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGhostFunction1(value: NodeSingular => yes | no): Self = this.set("ghost", js.Any.fromFunction1(value))
+    def `setGhost-offset-xUndefined`: Self = StObject.set(x, "ghost-offset-x", js.undefined)
     
     @scala.inline
-    def setGhost(value: PropertyValueNode[yes | no]): Self = this.set("ghost", value.asInstanceOf[js.Any])
+    def `setGhost-offset-y`(value: PropertyValueNode[Double]): Self = StObject.set(x, "ghost-offset-y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGhost: Self = this.set("ghost", js.undefined)
+    def `setGhost-offset-yFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "ghost-offset-y", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `setGhost-offset-xFunction1`(value: NodeSingular => Double): Self = this.set("ghost-offset-x", js.Any.fromFunction1(value))
+    def `setGhost-offset-yUndefined`: Self = StObject.set(x, "ghost-offset-y", js.undefined)
     
     @scala.inline
-    def `setGhost-offset-x`(value: PropertyValueNode[Double]): Self = this.set("ghost-offset-x", value.asInstanceOf[js.Any])
+    def `setGhost-opacity`(value: PropertyValueNode[Double]): Self = StObject.set(x, "ghost-opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteGhost-offset-x`: Self = this.set("ghost-offset-x", js.undefined)
+    def `setGhost-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "ghost-opacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `setGhost-offset-yFunction1`(value: NodeSingular => Double): Self = this.set("ghost-offset-y", js.Any.fromFunction1(value))
+    def `setGhost-opacityUndefined`: Self = StObject.set(x, "ghost-opacity", js.undefined)
     
     @scala.inline
-    def `setGhost-offset-y`(value: PropertyValueNode[Double]): Self = this.set("ghost-offset-y", value.asInstanceOf[js.Any])
+    def setGhostFunction1(value: NodeSingular => yes | no): Self = StObject.set(x, "ghost", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteGhost-offset-y`: Self = this.set("ghost-offset-y", js.undefined)
+    def setGhostUndefined: Self = StObject.set(x, "ghost", js.undefined)
     
     @scala.inline
-    def `setGhost-opacityFunction1`(value: NodeSingular => Double): Self = this.set("ghost-opacity", js.Any.fromFunction1(value))
+    def setHeight(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setGhost-opacity`(value: PropertyValueNode[Double]): Self = this.set("ghost-opacity", value.asInstanceOf[js.Any])
+    def setHeightFunction1(value: NodeSingular => Double | String): Self = StObject.set(x, "height", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteGhost-opacity`: Self = this.set("ghost-opacity", js.undefined)
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setHeightFunction1(value: NodeSingular => Double | String): Self = this.set("height", js.Any.fromFunction1(value))
+    def setLabel(value: PropertyValue[NodeSingular, String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: PropertyValueNode[Double | String]): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLabelFunction1(value: NodeSingular => String): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setLabelFunction1(value: NodeSingular => String): Self = this.set("label", js.Any.fromFunction1(value))
+    def `setMin-zoomed-font-size`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "min-zoomed-font-size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: PropertyValue[NodeSingular, String]): Self = this.set("label", value.asInstanceOf[js.Any])
+    def `setMin-zoomed-font-sizeFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "min-zoomed-font-size", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def `setMin-zoomed-font-sizeUndefined`: Self = StObject.set(x, "min-zoomed-font-size", js.undefined)
     
     @scala.inline
-    def `setMin-zoomed-font-sizeFunction1`(value: NodeSingular => Double): Self = this.set("min-zoomed-font-size", js.Any.fromFunction1(value))
+    def setOpacity(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMin-zoomed-font-size`(value: PropertyValue[NodeSingular, Double]): Self = this.set("min-zoomed-font-size", value.asInstanceOf[js.Any])
+    def setOpacityFunction1(value: NodeSingular => Double): Self = StObject.set(x, "opacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteMin-zoomed-font-size`: Self = this.set("min-zoomed-font-size", js.undefined)
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def setOpacityFunction1(value: NodeSingular => Double): Self = this.set("opacity", js.Any.fromFunction1(value))
+    def `setOverlay-color`(value: PropertyValueEdge[Colour]): Self = StObject.set(x, "overlay-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: PropertyValue[NodeSingular, Double]): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def `setOverlay-colorFunction1`(value: EdgeSingular => Colour): Self = StObject.set(x, "overlay-color", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def `setOverlay-colorUndefined`: Self = StObject.set(x, "overlay-color", js.undefined)
     
     @scala.inline
-    def `setOverlay-colorFunction1`(value: EdgeSingular => Colour): Self = this.set("overlay-color", js.Any.fromFunction1(value))
+    def `setOverlay-opacity`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "overlay-opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setOverlay-color`(value: PropertyValueEdge[Colour]): Self = this.set("overlay-color", value.asInstanceOf[js.Any])
+    def `setOverlay-opacityFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "overlay-opacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteOverlay-color`: Self = this.set("overlay-color", js.undefined)
+    def `setOverlay-opacityUndefined`: Self = StObject.set(x, "overlay-opacity", js.undefined)
     
     @scala.inline
-    def `setOverlay-opacityFunction1`(value: EdgeSingular => Double): Self = this.set("overlay-opacity", js.Any.fromFunction1(value))
+    def `setOverlay-padding`(value: PropertyValueEdge[Double | String]): Self = StObject.set(x, "overlay-padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setOverlay-opacity`(value: PropertyValueEdge[Double]): Self = this.set("overlay-opacity", value.asInstanceOf[js.Any])
+    def `setOverlay-paddingFunction1`(value: EdgeSingular => Double | String): Self = StObject.set(x, "overlay-padding", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteOverlay-opacity`: Self = this.set("overlay-opacity", js.undefined)
+    def `setOverlay-paddingUndefined`: Self = StObject.set(x, "overlay-padding", js.undefined)
     
     @scala.inline
-    def `setOverlay-paddingFunction1`(value: EdgeSingular => Double | String): Self = this.set("overlay-padding", js.Any.fromFunction1(value))
+    def `setPadding-bottom`(value: PropertyValueNode[String]): Self = StObject.set(x, "padding-bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setOverlay-padding`(value: PropertyValueEdge[Double | String]): Self = this.set("overlay-padding", value.asInstanceOf[js.Any])
+    def `setPadding-bottomFunction1`(value: NodeSingular => String): Self = StObject.set(x, "padding-bottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteOverlay-padding`: Self = this.set("overlay-padding", js.undefined)
+    def `setPadding-bottomUndefined`: Self = StObject.set(x, "padding-bottom", js.undefined)
     
     @scala.inline
-    def `setPadding-bottomFunction1`(value: NodeSingular => String): Self = this.set("padding-bottom", js.Any.fromFunction1(value))
+    def `setPadding-left`(value: PropertyValueNode[String]): Self = StObject.set(x, "padding-left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPadding-bottom`(value: PropertyValueNode[String]): Self = this.set("padding-bottom", value.asInstanceOf[js.Any])
+    def `setPadding-leftFunction1`(value: NodeSingular => String): Self = StObject.set(x, "padding-left", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deletePadding-bottom`: Self = this.set("padding-bottom", js.undefined)
+    def `setPadding-leftUndefined`: Self = StObject.set(x, "padding-left", js.undefined)
     
     @scala.inline
-    def `setPadding-leftFunction1`(value: NodeSingular => String): Self = this.set("padding-left", js.Any.fromFunction1(value))
+    def `setPadding-right`(value: PropertyValueNode[String]): Self = StObject.set(x, "padding-right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPadding-left`(value: PropertyValueNode[String]): Self = this.set("padding-left", value.asInstanceOf[js.Any])
+    def `setPadding-rightFunction1`(value: NodeSingular => String): Self = StObject.set(x, "padding-right", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deletePadding-left`: Self = this.set("padding-left", js.undefined)
+    def `setPadding-rightUndefined`: Self = StObject.set(x, "padding-right", js.undefined)
     
     @scala.inline
-    def `setPadding-rightFunction1`(value: NodeSingular => String): Self = this.set("padding-right", js.Any.fromFunction1(value))
+    def `setPadding-top`(value: PropertyValueNode[String]): Self = StObject.set(x, "padding-top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPadding-right`(value: PropertyValueNode[String]): Self = this.set("padding-right", value.asInstanceOf[js.Any])
+    def `setPadding-topFunction1`(value: NodeSingular => String): Self = StObject.set(x, "padding-top", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deletePadding-right`: Self = this.set("padding-right", js.undefined)
+    def `setPadding-topUndefined`: Self = StObject.set(x, "padding-top", js.undefined)
     
     @scala.inline
-    def `setPadding-topFunction1`(value: NodeSingular => String): Self = this.set("padding-top", js.Any.fromFunction1(value))
+    def `setPie-i-background-color`(value: PropertyValueNode[Colour]): Self = StObject.set(x, "pie-i-background-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPadding-top`(value: PropertyValueNode[String]): Self = this.set("padding-top", value.asInstanceOf[js.Any])
+    def `setPie-i-background-colorFunction1`(value: NodeSingular => Colour): Self = StObject.set(x, "pie-i-background-color", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deletePadding-top`: Self = this.set("padding-top", js.undefined)
+    def `setPie-i-background-colorUndefined`: Self = StObject.set(x, "pie-i-background-color", js.undefined)
     
     @scala.inline
-    def `setPie-i-background-colorFunction1`(value: NodeSingular => Colour): Self = this.set("pie-i-background-color", js.Any.fromFunction1(value))
+    def `setPie-i-background-opacity`(value: PropertyValueNode[Double]): Self = StObject.set(x, "pie-i-background-opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPie-i-background-color`(value: PropertyValueNode[Colour]): Self = this.set("pie-i-background-color", value.asInstanceOf[js.Any])
+    def `setPie-i-background-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "pie-i-background-opacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deletePie-i-background-color`: Self = this.set("pie-i-background-color", js.undefined)
+    def `setPie-i-background-opacityUndefined`: Self = StObject.set(x, "pie-i-background-opacity", js.undefined)
     
     @scala.inline
-    def `setPie-i-background-opacityFunction1`(value: NodeSingular => Double): Self = this.set("pie-i-background-opacity", js.Any.fromFunction1(value))
+    def `setPie-i-background-size`(value: PropertyValueNode[Double]): Self = StObject.set(x, "pie-i-background-size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPie-i-background-opacity`(value: PropertyValueNode[Double]): Self = this.set("pie-i-background-opacity", value.asInstanceOf[js.Any])
+    def `setPie-i-background-sizeFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "pie-i-background-size", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deletePie-i-background-opacity`: Self = this.set("pie-i-background-opacity", js.undefined)
+    def `setPie-i-background-sizeUndefined`: Self = StObject.set(x, "pie-i-background-size", js.undefined)
     
     @scala.inline
-    def `setPie-i-background-sizeFunction1`(value: NodeSingular => Double): Self = this.set("pie-i-background-size", js.Any.fromFunction1(value))
+    def `setPie-size`(value: PropertyValueNode[String]): Self = StObject.set(x, "pie-size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPie-i-background-size`(value: PropertyValueNode[Double]): Self = this.set("pie-i-background-size", value.asInstanceOf[js.Any])
+    def `setPie-sizeFunction1`(value: NodeSingular => String): Self = StObject.set(x, "pie-size", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deletePie-i-background-size`: Self = this.set("pie-i-background-size", js.undefined)
+    def `setPie-sizeUndefined`: Self = StObject.set(x, "pie-size", js.undefined)
     
     @scala.inline
-    def `setPie-sizeFunction1`(value: NodeSingular => String): Self = this.set("pie-size", js.Any.fromFunction1(value))
+    def setShape(value: PropertyValueNode[NodeShape]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPie-size`(value: PropertyValueNode[String]): Self = this.set("pie-size", value.asInstanceOf[js.Any])
+    def `setShape-polygon-points`(value: PropertyValueNode[ShapePolygonPoints]): Self = StObject.set(x, "shape-polygon-points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deletePie-size`: Self = this.set("pie-size", js.undefined)
+    def `setShape-polygon-pointsFunction1`(value: NodeSingular => ShapePolygonPoints): Self = StObject.set(x, "shape-polygon-points", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShapeFunction1(value: NodeSingular => NodeShape): Self = this.set("shape", js.Any.fromFunction1(value))
+    def `setShape-polygon-pointsUndefined`: Self = StObject.set(x, "shape-polygon-points", js.undefined)
     
     @scala.inline
-    def setShape(value: PropertyValueNode[NodeShape]): Self = this.set("shape", value.asInstanceOf[js.Any])
+    def setShapeFunction1(value: NodeSingular => NodeShape): Self = StObject.set(x, "shape", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteShape: Self = this.set("shape", js.undefined)
+    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
     @scala.inline
-    def `setShape-polygon-pointsFunction1`(value: NodeSingular => ShapePolygonPoints): Self = this.set("shape-polygon-points", js.Any.fromFunction1(value))
+    def `setSource-label`(value: PropertyValue[NodeSingular, String]): Self = StObject.set(x, "source-label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setShape-polygon-points`(value: PropertyValueNode[ShapePolygonPoints]): Self = this.set("shape-polygon-points", value.asInstanceOf[js.Any])
+    def `setSource-labelFunction1`(value: NodeSingular => String): Self = StObject.set(x, "source-label", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteShape-polygon-points`: Self = this.set("shape-polygon-points", js.undefined)
+    def `setSource-labelUndefined`: Self = StObject.set(x, "source-label", js.undefined)
     
     @scala.inline
-    def `setSource-labelFunction1`(value: NodeSingular => String): Self = this.set("source-label", js.Any.fromFunction1(value))
+    def `setSource-text-margin-x`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "source-text-margin-x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSource-label`(value: PropertyValue[NodeSingular, String]): Self = this.set("source-label", value.asInstanceOf[js.Any])
+    def `setSource-text-margin-xFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "source-text-margin-x", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteSource-label`: Self = this.set("source-label", js.undefined)
+    def `setSource-text-margin-xUndefined`: Self = StObject.set(x, "source-text-margin-x", js.undefined)
     
     @scala.inline
-    def `setSource-text-margin-xFunction1`(value: NodeSingular => Double): Self = this.set("source-text-margin-x", js.Any.fromFunction1(value))
+    def `setSource-text-margin-y`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "source-text-margin-y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSource-text-margin-x`(value: PropertyValue[NodeSingular, Double]): Self = this.set("source-text-margin-x", value.asInstanceOf[js.Any])
+    def `setSource-text-margin-yFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "source-text-margin-y", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteSource-text-margin-x`: Self = this.set("source-text-margin-x", js.undefined)
+    def `setSource-text-margin-yUndefined`: Self = StObject.set(x, "source-text-margin-y", js.undefined)
     
     @scala.inline
-    def `setSource-text-margin-yFunction1`(value: NodeSingular => Double): Self = this.set("source-text-margin-y", js.Any.fromFunction1(value))
+    def `setSource-text-offset`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "source-text-offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSource-text-margin-y`(value: PropertyValue[NodeSingular, Double]): Self = this.set("source-text-margin-y", value.asInstanceOf[js.Any])
+    def `setSource-text-offsetFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "source-text-offset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteSource-text-margin-y`: Self = this.set("source-text-margin-y", js.undefined)
+    def `setSource-text-offsetUndefined`: Self = StObject.set(x, "source-text-offset", js.undefined)
     
     @scala.inline
-    def `setSource-text-offsetFunction1`(value: NodeSingular => Double): Self = this.set("source-text-offset", js.Any.fromFunction1(value))
+    def `setSource-text-rotation`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "source-text-rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSource-text-offset`(value: PropertyValue[NodeSingular, Double]): Self = this.set("source-text-offset", value.asInstanceOf[js.Any])
+    def `setSource-text-rotationFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "source-text-rotation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteSource-text-offset`: Self = this.set("source-text-offset", js.undefined)
+    def `setSource-text-rotationUndefined`: Self = StObject.set(x, "source-text-rotation", js.undefined)
     
     @scala.inline
-    def `setSource-text-rotationFunction1`(value: NodeSingular => Double): Self = this.set("source-text-rotation", js.Any.fromFunction1(value))
+    def `setTarget-label`(value: PropertyValue[NodeSingular, String]): Self = StObject.set(x, "target-label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setSource-text-rotation`(value: PropertyValue[NodeSingular, Double]): Self = this.set("source-text-rotation", value.asInstanceOf[js.Any])
+    def `setTarget-labelFunction1`(value: NodeSingular => String): Self = StObject.set(x, "target-label", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteSource-text-rotation`: Self = this.set("source-text-rotation", js.undefined)
+    def `setTarget-labelUndefined`: Self = StObject.set(x, "target-label", js.undefined)
     
     @scala.inline
-    def `setTarget-labelFunction1`(value: NodeSingular => String): Self = this.set("target-label", js.Any.fromFunction1(value))
+    def `setTarget-text-margin-x`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "target-text-margin-x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setTarget-label`(value: PropertyValue[NodeSingular, String]): Self = this.set("target-label", value.asInstanceOf[js.Any])
+    def `setTarget-text-margin-xFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "target-text-margin-x", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteTarget-label`: Self = this.set("target-label", js.undefined)
+    def `setTarget-text-margin-xUndefined`: Self = StObject.set(x, "target-text-margin-x", js.undefined)
     
     @scala.inline
-    def `setTarget-text-margin-xFunction1`(value: NodeSingular => Double): Self = this.set("target-text-margin-x", js.Any.fromFunction1(value))
+    def `setTarget-text-margin-y`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "target-text-margin-y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setTarget-text-margin-x`(value: PropertyValue[NodeSingular, Double]): Self = this.set("target-text-margin-x", value.asInstanceOf[js.Any])
+    def `setTarget-text-margin-yFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "target-text-margin-y", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteTarget-text-margin-x`: Self = this.set("target-text-margin-x", js.undefined)
+    def `setTarget-text-margin-yUndefined`: Self = StObject.set(x, "target-text-margin-y", js.undefined)
     
     @scala.inline
-    def `setTarget-text-margin-yFunction1`(value: NodeSingular => Double): Self = this.set("target-text-margin-y", js.Any.fromFunction1(value))
+    def `setTarget-text-offset`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "target-text-offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setTarget-text-margin-y`(value: PropertyValue[NodeSingular, Double]): Self = this.set("target-text-margin-y", value.asInstanceOf[js.Any])
+    def `setTarget-text-offsetFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "target-text-offset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteTarget-text-margin-y`: Self = this.set("target-text-margin-y", js.undefined)
+    def `setTarget-text-offsetUndefined`: Self = StObject.set(x, "target-text-offset", js.undefined)
     
     @scala.inline
-    def `setTarget-text-offsetFunction1`(value: NodeSingular => Double): Self = this.set("target-text-offset", js.Any.fromFunction1(value))
+    def `setTarget-text-rotation`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "target-text-rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setTarget-text-offset`(value: PropertyValue[NodeSingular, Double]): Self = this.set("target-text-offset", value.asInstanceOf[js.Any])
+    def `setTarget-text-rotationFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "target-text-rotation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteTarget-text-offset`: Self = this.set("target-text-offset", js.undefined)
+    def `setTarget-text-rotationUndefined`: Self = StObject.set(x, "target-text-rotation", js.undefined)
     
     @scala.inline
-    def `setTarget-text-rotationFunction1`(value: NodeSingular => Double): Self = this.set("target-text-rotation", js.Any.fromFunction1(value))
+    def `setText-background-color`(value: PropertyValue[NodeSingular, Colour]): Self = StObject.set(x, "text-background-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setTarget-text-rotation`(value: PropertyValue[NodeSingular, Double]): Self = this.set("target-text-rotation", value.asInstanceOf[js.Any])
+    def `setText-background-colorFunction1`(value: NodeSingular => Colour): Self = StObject.set(x, "text-background-color", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteTarget-text-rotation`: Self = this.set("target-text-rotation", js.undefined)
+    def `setText-background-colorUndefined`: Self = StObject.set(x, "text-background-color", js.undefined)
     
     @scala.inline
-    def `setText-background-colorFunction1`(value: NodeSingular => Colour): Self = this.set("text-background-color", js.Any.fromFunction1(value))
+    def `setText-background-opacity`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-background-opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-background-color`(value: PropertyValue[NodeSingular, Colour]): Self = this.set("text-background-color", value.asInstanceOf[js.Any])
+    def `setText-background-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-background-opacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-background-color`: Self = this.set("text-background-color", js.undefined)
+    def `setText-background-opacityUndefined`: Self = StObject.set(x, "text-background-opacity", js.undefined)
     
     @scala.inline
-    def `setText-background-opacityFunction1`(value: NodeSingular => Double): Self = this.set("text-background-opacity", js.Any.fromFunction1(value))
+    def `setText-background-padding`(value: PropertyValue[NodeSingular, String]): Self = StObject.set(x, "text-background-padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-background-opacity`(value: PropertyValue[NodeSingular, Double]): Self = this.set("text-background-opacity", value.asInstanceOf[js.Any])
+    def `setText-background-paddingFunction1`(value: NodeSingular => String): Self = StObject.set(x, "text-background-padding", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-background-opacity`: Self = this.set("text-background-opacity", js.undefined)
+    def `setText-background-paddingUndefined`: Self = StObject.set(x, "text-background-padding", js.undefined)
     
     @scala.inline
-    def `setText-background-paddingFunction1`(value: NodeSingular => String): Self = this.set("text-background-padding", js.Any.fromFunction1(value))
+    def `setText-background-shape`(value: PropertyValue[NodeSingular, rectangle | roundrectangle]): Self = StObject.set(x, "text-background-shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-background-padding`(value: PropertyValue[NodeSingular, String]): Self = this.set("text-background-padding", value.asInstanceOf[js.Any])
+    def `setText-background-shapeFunction1`(value: NodeSingular => rectangle | roundrectangle): Self = StObject.set(x, "text-background-shape", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-background-padding`: Self = this.set("text-background-padding", js.undefined)
+    def `setText-background-shapeUndefined`: Self = StObject.set(x, "text-background-shape", js.undefined)
     
     @scala.inline
-    def `setText-background-shapeFunction1`(value: NodeSingular => rectangle | roundrectangle): Self = this.set("text-background-shape", js.Any.fromFunction1(value))
+    def `setText-border-color`(value: PropertyValue[NodeSingular, Colour]): Self = StObject.set(x, "text-border-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-background-shape`(value: PropertyValue[NodeSingular, rectangle | roundrectangle]): Self = this.set("text-background-shape", value.asInstanceOf[js.Any])
+    def `setText-border-colorFunction1`(value: NodeSingular => Colour): Self = StObject.set(x, "text-border-color", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-background-shape`: Self = this.set("text-background-shape", js.undefined)
+    def `setText-border-colorUndefined`: Self = StObject.set(x, "text-border-color", js.undefined)
     
     @scala.inline
-    def `setText-border-colorFunction1`(value: NodeSingular => Colour): Self = this.set("text-border-color", js.Any.fromFunction1(value))
+    def `setText-border-opacity`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-border-opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-border-color`(value: PropertyValue[NodeSingular, Colour]): Self = this.set("text-border-color", value.asInstanceOf[js.Any])
+    def `setText-border-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-border-opacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-border-color`: Self = this.set("text-border-color", js.undefined)
+    def `setText-border-opacityUndefined`: Self = StObject.set(x, "text-border-opacity", js.undefined)
     
     @scala.inline
-    def `setText-border-opacityFunction1`(value: NodeSingular => Double): Self = this.set("text-border-opacity", js.Any.fromFunction1(value))
+    def `setText-border-style`(value: PropertyValue[NodeSingular, LineStyle]): Self = StObject.set(x, "text-border-style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-border-opacity`(value: PropertyValue[NodeSingular, Double]): Self = this.set("text-border-opacity", value.asInstanceOf[js.Any])
+    def `setText-border-styleFunction1`(value: NodeSingular => LineStyle): Self = StObject.set(x, "text-border-style", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-border-opacity`: Self = this.set("text-border-opacity", js.undefined)
+    def `setText-border-styleUndefined`: Self = StObject.set(x, "text-border-style", js.undefined)
     
     @scala.inline
-    def `setText-border-styleFunction1`(value: NodeSingular => LineStyle): Self = this.set("text-border-style", js.Any.fromFunction1(value))
+    def `setText-border-width`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-border-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-border-style`(value: PropertyValue[NodeSingular, LineStyle]): Self = this.set("text-border-style", value.asInstanceOf[js.Any])
+    def `setText-border-widthFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-border-width", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-border-style`: Self = this.set("text-border-style", js.undefined)
+    def `setText-border-widthUndefined`: Self = StObject.set(x, "text-border-width", js.undefined)
     
     @scala.inline
-    def `setText-border-widthFunction1`(value: NodeSingular => Double): Self = this.set("text-border-width", js.Any.fromFunction1(value))
+    def `setText-events`(value: PropertyValue[NodeSingular, yes | no]): Self = StObject.set(x, "text-events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-border-width`(value: PropertyValue[NodeSingular, Double]): Self = this.set("text-border-width", value.asInstanceOf[js.Any])
+    def `setText-eventsFunction1`(value: NodeSingular => yes | no): Self = StObject.set(x, "text-events", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-border-width`: Self = this.set("text-border-width", js.undefined)
+    def `setText-eventsUndefined`: Self = StObject.set(x, "text-events", js.undefined)
     
     @scala.inline
-    def `setText-eventsFunction1`(value: NodeSingular => yes | no): Self = this.set("text-events", js.Any.fromFunction1(value))
+    def `setText-halign`(value: PropertyValue[NodeSingular, left | center | right]): Self = StObject.set(x, "text-halign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-events`(value: PropertyValue[NodeSingular, yes | no]): Self = this.set("text-events", value.asInstanceOf[js.Any])
+    def `setText-halignFunction1`(value: NodeSingular => left | center | right): Self = StObject.set(x, "text-halign", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-events`: Self = this.set("text-events", js.undefined)
+    def `setText-halignUndefined`: Self = StObject.set(x, "text-halign", js.undefined)
     
     @scala.inline
-    def `setText-halignFunction1`(value: NodeSingular => left | center | right): Self = this.set("text-halign", js.Any.fromFunction1(value))
+    def `setText-margin-x`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-margin-x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-halign`(value: PropertyValue[NodeSingular, left | center | right]): Self = this.set("text-halign", value.asInstanceOf[js.Any])
+    def `setText-margin-xFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-margin-x", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-halign`: Self = this.set("text-halign", js.undefined)
+    def `setText-margin-xUndefined`: Self = StObject.set(x, "text-margin-x", js.undefined)
     
     @scala.inline
-    def `setText-margin-xFunction1`(value: NodeSingular => Double): Self = this.set("text-margin-x", js.Any.fromFunction1(value))
+    def `setText-margin-y`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-margin-y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-margin-x`(value: PropertyValue[NodeSingular, Double]): Self = this.set("text-margin-x", value.asInstanceOf[js.Any])
+    def `setText-margin-yFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-margin-y", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-margin-x`: Self = this.set("text-margin-x", js.undefined)
+    def `setText-margin-yUndefined`: Self = StObject.set(x, "text-margin-y", js.undefined)
     
     @scala.inline
-    def `setText-margin-yFunction1`(value: NodeSingular => Double): Self = this.set("text-margin-y", js.Any.fromFunction1(value))
+    def `setText-max-width`(value: PropertyValue[NodeSingular, String]): Self = StObject.set(x, "text-max-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-margin-y`(value: PropertyValue[NodeSingular, Double]): Self = this.set("text-margin-y", value.asInstanceOf[js.Any])
+    def `setText-max-widthFunction1`(value: NodeSingular => String): Self = StObject.set(x, "text-max-width", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-margin-y`: Self = this.set("text-margin-y", js.undefined)
+    def `setText-max-widthUndefined`: Self = StObject.set(x, "text-max-width", js.undefined)
     
     @scala.inline
-    def `setText-max-widthFunction1`(value: NodeSingular => String): Self = this.set("text-max-width", js.Any.fromFunction1(value))
+    def `setText-opacity`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-max-width`(value: PropertyValue[NodeSingular, String]): Self = this.set("text-max-width", value.asInstanceOf[js.Any])
+    def `setText-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-opacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-max-width`: Self = this.set("text-max-width", js.undefined)
+    def `setText-opacityUndefined`: Self = StObject.set(x, "text-opacity", js.undefined)
     
     @scala.inline
-    def `setText-opacityFunction1`(value: NodeSingular => Double): Self = this.set("text-opacity", js.Any.fromFunction1(value))
+    def `setText-outline-color`(value: PropertyValue[NodeSingular, Colour]): Self = StObject.set(x, "text-outline-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-opacity`(value: PropertyValue[NodeSingular, Double]): Self = this.set("text-opacity", value.asInstanceOf[js.Any])
+    def `setText-outline-colorFunction1`(value: NodeSingular => Colour): Self = StObject.set(x, "text-outline-color", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-opacity`: Self = this.set("text-opacity", js.undefined)
+    def `setText-outline-colorUndefined`: Self = StObject.set(x, "text-outline-color", js.undefined)
     
     @scala.inline
-    def `setText-outline-colorFunction1`(value: NodeSingular => Colour): Self = this.set("text-outline-color", js.Any.fromFunction1(value))
+    def `setText-outline-opacity`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-outline-opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-outline-color`(value: PropertyValue[NodeSingular, Colour]): Self = this.set("text-outline-color", value.asInstanceOf[js.Any])
+    def `setText-outline-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-outline-opacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-outline-color`: Self = this.set("text-outline-color", js.undefined)
+    def `setText-outline-opacityUndefined`: Self = StObject.set(x, "text-outline-opacity", js.undefined)
     
     @scala.inline
-    def `setText-outline-opacityFunction1`(value: NodeSingular => Double): Self = this.set("text-outline-opacity", js.Any.fromFunction1(value))
+    def `setText-outline-width`(value: PropertyValue[NodeSingular, Double | String]): Self = StObject.set(x, "text-outline-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-outline-opacity`(value: PropertyValue[NodeSingular, Double]): Self = this.set("text-outline-opacity", value.asInstanceOf[js.Any])
+    def `setText-outline-widthFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "text-outline-width", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-outline-opacity`: Self = this.set("text-outline-opacity", js.undefined)
+    def `setText-outline-widthUndefined`: Self = StObject.set(x, "text-outline-width", js.undefined)
     
     @scala.inline
-    def `setText-outline-widthFunction1`(value: NodeSingular => Double | String): Self = this.set("text-outline-width", js.Any.fromFunction1(value))
+    def `setText-rotation`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-outline-width`(value: PropertyValue[NodeSingular, Double | String]): Self = this.set("text-outline-width", value.asInstanceOf[js.Any])
+    def `setText-rotationFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-rotation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-outline-width`: Self = this.set("text-outline-width", js.undefined)
+    def `setText-rotationUndefined`: Self = StObject.set(x, "text-rotation", js.undefined)
     
     @scala.inline
-    def `setText-rotationFunction1`(value: NodeSingular => Double): Self = this.set("text-rotation", js.Any.fromFunction1(value))
+    def `setText-shadow-blur`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-shadow-blur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-rotation`(value: PropertyValue[NodeSingular, Double]): Self = this.set("text-rotation", value.asInstanceOf[js.Any])
+    def `setText-shadow-blurFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-shadow-blur", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-rotation`: Self = this.set("text-rotation", js.undefined)
+    def `setText-shadow-blurUndefined`: Self = StObject.set(x, "text-shadow-blur", js.undefined)
     
     @scala.inline
-    def `setText-shadow-blurFunction1`(value: NodeSingular => Double): Self = this.set("text-shadow-blur", js.Any.fromFunction1(value))
+    def `setText-shadow-color`(value: PropertyValue[NodeSingular, Colour]): Self = StObject.set(x, "text-shadow-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-shadow-blur`(value: PropertyValue[NodeSingular, Double]): Self = this.set("text-shadow-blur", value.asInstanceOf[js.Any])
+    def `setText-shadow-colorFunction1`(value: NodeSingular => Colour): Self = StObject.set(x, "text-shadow-color", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-shadow-blur`: Self = this.set("text-shadow-blur", js.undefined)
+    def `setText-shadow-colorUndefined`: Self = StObject.set(x, "text-shadow-color", js.undefined)
     
     @scala.inline
-    def `setText-shadow-colorFunction1`(value: NodeSingular => Colour): Self = this.set("text-shadow-color", js.Any.fromFunction1(value))
+    def `setText-shadow-offset-x`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-shadow-offset-x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-shadow-color`(value: PropertyValue[NodeSingular, Colour]): Self = this.set("text-shadow-color", value.asInstanceOf[js.Any])
+    def `setText-shadow-offset-xFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-shadow-offset-x", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-shadow-color`: Self = this.set("text-shadow-color", js.undefined)
+    def `setText-shadow-offset-xUndefined`: Self = StObject.set(x, "text-shadow-offset-x", js.undefined)
     
     @scala.inline
-    def `setText-shadow-offset-xFunction1`(value: NodeSingular => Double): Self = this.set("text-shadow-offset-x", js.Any.fromFunction1(value))
+    def `setText-shadow-offset-y`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-shadow-offset-y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-shadow-offset-x`(value: PropertyValue[NodeSingular, Double]): Self = this.set("text-shadow-offset-x", value.asInstanceOf[js.Any])
+    def `setText-shadow-offset-yFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-shadow-offset-y", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-shadow-offset-x`: Self = this.set("text-shadow-offset-x", js.undefined)
+    def `setText-shadow-offset-yUndefined`: Self = StObject.set(x, "text-shadow-offset-y", js.undefined)
     
     @scala.inline
-    def `setText-shadow-offset-yFunction1`(value: NodeSingular => Double): Self = this.set("text-shadow-offset-y", js.Any.fromFunction1(value))
+    def `setText-shadow-opacity`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-shadow-opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-shadow-offset-y`(value: PropertyValue[NodeSingular, Double]): Self = this.set("text-shadow-offset-y", value.asInstanceOf[js.Any])
+    def `setText-shadow-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-shadow-opacity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-shadow-offset-y`: Self = this.set("text-shadow-offset-y", js.undefined)
+    def `setText-shadow-opacityUndefined`: Self = StObject.set(x, "text-shadow-opacity", js.undefined)
     
     @scala.inline
-    def `setText-shadow-opacityFunction1`(value: NodeSingular => Double): Self = this.set("text-shadow-opacity", js.Any.fromFunction1(value))
+    def `setText-transform`(value: PropertyValue[NodeSingular, TextTranformation]): Self = StObject.set(x, "text-transform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-shadow-opacity`(value: PropertyValue[NodeSingular, Double]): Self = this.set("text-shadow-opacity", value.asInstanceOf[js.Any])
+    def `setText-transformFunction1`(value: NodeSingular => TextTranformation): Self = StObject.set(x, "text-transform", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-shadow-opacity`: Self = this.set("text-shadow-opacity", js.undefined)
+    def `setText-transformUndefined`: Self = StObject.set(x, "text-transform", js.undefined)
     
     @scala.inline
-    def `setText-transformFunction1`(value: NodeSingular => TextTranformation): Self = this.set("text-transform", js.Any.fromFunction1(value))
+    def `setText-valign`(value: PropertyValue[NodeSingular, top | center | bottom]): Self = StObject.set(x, "text-valign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-transform`(value: PropertyValue[NodeSingular, TextTranformation]): Self = this.set("text-transform", value.asInstanceOf[js.Any])
+    def `setText-valignFunction1`(value: NodeSingular => top | center | bottom): Self = StObject.set(x, "text-valign", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-transform`: Self = this.set("text-transform", js.undefined)
+    def `setText-valignUndefined`: Self = StObject.set(x, "text-valign", js.undefined)
     
     @scala.inline
-    def `setText-valignFunction1`(value: NodeSingular => top | center | bottom): Self = this.set("text-valign", js.Any.fromFunction1(value))
+    def `setText-wrap`(value: PropertyValue[NodeSingular, none | wrap | ellipsis]): Self = StObject.set(x, "text-wrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-valign`(value: PropertyValue[NodeSingular, top | center | bottom]): Self = this.set("text-valign", value.asInstanceOf[js.Any])
+    def `setText-wrapFunction1`(value: NodeSingular => none | wrap | ellipsis): Self = StObject.set(x, "text-wrap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteText-valign`: Self = this.set("text-valign", js.undefined)
+    def `setText-wrapUndefined`: Self = StObject.set(x, "text-wrap", js.undefined)
     
     @scala.inline
-    def `setText-wrapFunction1`(value: NodeSingular => none | wrap | ellipsis): Self = this.set("text-wrap", js.Any.fromFunction1(value))
+    def `setTransition-delay`(value: Double): Self = StObject.set(x, "transition-delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-wrap`(value: PropertyValue[NodeSingular, none | wrap | ellipsis]): Self = this.set("text-wrap", value.asInstanceOf[js.Any])
+    def `setTransition-delayUndefined`: Self = StObject.set(x, "transition-delay", js.undefined)
     
     @scala.inline
-    def `deleteText-wrap`: Self = this.set("text-wrap", js.undefined)
+    def `setTransition-duration`(value: Double): Self = StObject.set(x, "transition-duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setTransition-delay`(value: Double): Self = this.set("transition-delay", value.asInstanceOf[js.Any])
+    def `setTransition-durationUndefined`: Self = StObject.set(x, "transition-duration", js.undefined)
     
     @scala.inline
-    def `deleteTransition-delay`: Self = this.set("transition-delay", js.undefined)
+    def `setTransition-property`(value: String): Self = StObject.set(x, "transition-property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setTransition-duration`(value: Double): Self = this.set("transition-duration", value.asInstanceOf[js.Any])
+    def `setTransition-propertyUndefined`: Self = StObject.set(x, "transition-property", js.undefined)
     
     @scala.inline
-    def `deleteTransition-duration`: Self = this.set("transition-duration", js.undefined)
+    def `setTransition-timing-function`(value: TransitionTimingFunction): Self = StObject.set(x, "transition-timing-function", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setTransition-property`(value: String): Self = this.set("transition-property", value.asInstanceOf[js.Any])
+    def `setTransition-timing-functionUndefined`: Self = StObject.set(x, "transition-timing-function", js.undefined)
     
     @scala.inline
-    def `deleteTransition-property`: Self = this.set("transition-property", js.undefined)
+    def setVisibility(value: PropertyValue[NodeSingular, hidden | visible]): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setTransition-timing-function`(value: TransitionTimingFunction): Self = this.set("transition-timing-function", value.asInstanceOf[js.Any])
+    def setVisibilityFunction1(value: NodeSingular => hidden | visible): Self = StObject.set(x, "visibility", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deleteTransition-timing-function`: Self = this.set("transition-timing-function", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
     
     @scala.inline
-    def setVisibilityFunction1(value: NodeSingular => hidden | visible): Self = this.set("visibility", js.Any.fromFunction1(value))
+    def setWidth(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisibility(value: PropertyValue[NodeSingular, hidden | visible]): Self = this.set("visibility", value.asInstanceOf[js.Any])
+    def setWidthFunction1(value: NodeSingular => Double | String): Self = StObject.set(x, "width", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def setWidthFunction1(value: NodeSingular => Double | String): Self = this.set("width", js.Any.fromFunction1(value))
+    def `setZ-index`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "z-index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: PropertyValueNode[Double | String]): Self = this.set("width", value.asInstanceOf[js.Any])
+    def `setZ-indexFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "z-index", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def `setZ-indexFunction1`(value: NodeSingular => Double): Self = this.set("z-index", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def `setZ-index`(value: PropertyValue[NodeSingular, Double]): Self = this.set("z-index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteZ-index`: Self = this.set("z-index", js.undefined)
+    def `setZ-indexUndefined`: Self = StObject.set(x, "z-index", js.undefined)
   }
 }

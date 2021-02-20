@@ -1,11 +1,12 @@
 package typings.awsSdk.codeartifactMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribePackageVersionResult extends js.Object {
+trait DescribePackageVersionResult extends StObject {
   
   /**
     *  A  PackageVersionDescription  object that contains information about the requested package version. 
@@ -21,21 +22,9 @@ object DescribePackageVersionResult {
   }
   
   @scala.inline
-  implicit class DescribePackageVersionResultOps[Self <: DescribePackageVersionResult] (val x: Self) extends AnyVal {
+  implicit class DescribePackageVersionResultMutableBuilder[Self <: DescribePackageVersionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPackageVersion(value: PackageVersionDescription): Self = this.set("packageVersion", value.asInstanceOf[js.Any])
+    def setPackageVersion(value: PackageVersionDescription): Self = StObject.set(x, "packageVersion", value.asInstanceOf[js.Any])
   }
 }

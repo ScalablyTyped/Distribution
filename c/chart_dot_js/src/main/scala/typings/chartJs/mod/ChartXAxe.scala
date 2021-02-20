@@ -2,6 +2,7 @@ package typings.chartJs.mod
 
 import typings.chartJs.chartJsStrings.linear
 import typings.chartJs.chartJsStrings.series
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,24 +21,12 @@ object ChartXAxe {
   }
   
   @scala.inline
-  implicit class ChartXAxeOps[Self <: ChartXAxe] (val x: Self) extends AnyVal {
+  implicit class ChartXAxeMutableBuilder[Self <: ChartXAxe] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistribution(value: linear | series): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDistribution(value: linear | series): Self = this.set("distribution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDistribution: Self = this.set("distribution", js.undefined)
+    def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
   }
 }

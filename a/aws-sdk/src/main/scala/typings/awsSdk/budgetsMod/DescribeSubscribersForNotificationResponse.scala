@@ -1,11 +1,12 @@
 package typings.awsSdk.budgetsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeSubscribersForNotificationResponse extends js.Object {
+trait DescribeSubscribersForNotificationResponse extends StObject {
   
   /**
     * The pagination token in the service response that indicates the next set of results that you can retrieve.
@@ -26,33 +27,21 @@ object DescribeSubscribersForNotificationResponse {
   }
   
   @scala.inline
-  implicit class DescribeSubscribersForNotificationResponseOps[Self <: DescribeSubscribersForNotificationResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeSubscribersForNotificationResponseMutableBuilder[Self <: DescribeSubscribersForNotificationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubscribers(value: Subscribers): Self = StObject.set(x, "Subscribers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: GenericString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSubscribersUndefined: Self = StObject.set(x, "Subscribers", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSubscribersVarargs(value: Subscriber*): Self = this.set("Subscribers", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubscribers(value: Subscribers): Self = this.set("Subscribers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscribers: Self = this.set("Subscribers", js.undefined)
+    def setSubscribersVarargs(value: Subscriber*): Self = StObject.set(x, "Subscribers", js.Array(value :_*))
   }
 }

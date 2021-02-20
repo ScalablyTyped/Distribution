@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountDetails extends js.Object {
+trait AccountDetails extends StObject {
   
   /**
     * Additional email addresses where updates are sent about your account review process.
@@ -46,57 +47,45 @@ object AccountDetails {
   }
   
   @scala.inline
-  implicit class AccountDetailsOps[Self <: AccountDetails] (val x: Self) extends AnyVal {
+  implicit class AccountDetailsMutableBuilder[Self <: AccountDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalContactEmailAddresses(value: AdditionalContactEmailAddresses): Self = StObject.set(x, "AdditionalContactEmailAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalContactEmailAddressesUndefined: Self = StObject.set(x, "AdditionalContactEmailAddresses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalContactEmailAddressesVarargs(value: AdditionalContactEmailAddress*): Self = StObject.set(x, "AdditionalContactEmailAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalContactEmailAddressesVarargs(value: AdditionalContactEmailAddress*): Self = this.set("AdditionalContactEmailAddresses", js.Array(value :_*))
+    def setContactLanguage(value: ContactLanguage): Self = StObject.set(x, "ContactLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalContactEmailAddresses(value: AdditionalContactEmailAddresses): Self = this.set("AdditionalContactEmailAddresses", value.asInstanceOf[js.Any])
+    def setContactLanguageUndefined: Self = StObject.set(x, "ContactLanguage", js.undefined)
     
     @scala.inline
-    def deleteAdditionalContactEmailAddresses: Self = this.set("AdditionalContactEmailAddresses", js.undefined)
+    def setMailType(value: MailType): Self = StObject.set(x, "MailType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactLanguage(value: ContactLanguage): Self = this.set("ContactLanguage", value.asInstanceOf[js.Any])
+    def setMailTypeUndefined: Self = StObject.set(x, "MailType", js.undefined)
     
     @scala.inline
-    def deleteContactLanguage: Self = this.set("ContactLanguage", js.undefined)
+    def setReviewDetails(value: ReviewDetails): Self = StObject.set(x, "ReviewDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMailType(value: MailType): Self = this.set("MailType", value.asInstanceOf[js.Any])
+    def setReviewDetailsUndefined: Self = StObject.set(x, "ReviewDetails", js.undefined)
     
     @scala.inline
-    def deleteMailType: Self = this.set("MailType", js.undefined)
+    def setUseCaseDescription(value: UseCaseDescription): Self = StObject.set(x, "UseCaseDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReviewDetails(value: ReviewDetails): Self = this.set("ReviewDetails", value.asInstanceOf[js.Any])
+    def setUseCaseDescriptionUndefined: Self = StObject.set(x, "UseCaseDescription", js.undefined)
     
     @scala.inline
-    def deleteReviewDetails: Self = this.set("ReviewDetails", js.undefined)
+    def setWebsiteURL(value: WebsiteURL): Self = StObject.set(x, "WebsiteURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseCaseDescription(value: UseCaseDescription): Self = this.set("UseCaseDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseCaseDescription: Self = this.set("UseCaseDescription", js.undefined)
-    
-    @scala.inline
-    def setWebsiteURL(value: WebsiteURL): Self = this.set("WebsiteURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsiteURL: Self = this.set("WebsiteURL", js.undefined)
+    def setWebsiteURLUndefined: Self = StObject.set(x, "WebsiteURL", js.undefined)
   }
 }

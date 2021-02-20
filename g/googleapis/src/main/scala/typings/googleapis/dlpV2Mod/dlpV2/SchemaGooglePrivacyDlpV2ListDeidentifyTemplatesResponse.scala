@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response message for ListDeidentifyTemplates.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2ListDeidentifyTemplatesResponse extends js.Object {
+trait SchemaGooglePrivacyDlpV2ListDeidentifyTemplatesResponse extends StObject {
   
   /**
     * List of deidentify templates, up to page_size in
@@ -31,33 +32,21 @@ object SchemaGooglePrivacyDlpV2ListDeidentifyTemplatesResponse {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2ListDeidentifyTemplatesResponseOps[Self <: SchemaGooglePrivacyDlpV2ListDeidentifyTemplatesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2ListDeidentifyTemplatesResponseMutableBuilder[Self <: SchemaGooglePrivacyDlpV2ListDeidentifyTemplatesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeidentifyTemplates(value: js.Array[SchemaGooglePrivacyDlpV2DeidentifyTemplate]): Self = StObject.set(x, "deidentifyTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeidentifyTemplatesUndefined: Self = StObject.set(x, "deidentifyTemplates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeidentifyTemplatesVarargs(value: SchemaGooglePrivacyDlpV2DeidentifyTemplate*): Self = StObject.set(x, "deidentifyTemplates", js.Array(value :_*))
     
     @scala.inline
-    def setDeidentifyTemplatesVarargs(value: SchemaGooglePrivacyDlpV2DeidentifyTemplate*): Self = this.set("deidentifyTemplates", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeidentifyTemplates(value: js.Array[SchemaGooglePrivacyDlpV2DeidentifyTemplate]): Self = this.set("deidentifyTemplates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeidentifyTemplates: Self = this.set("deidentifyTemplates", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

@@ -25,18 +25,36 @@ import typings.amqplib.propertiesMod.ServerProperties
 import typings.bluebird.mod.^
 import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("amqplib", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("amqplib", "connect")
+  @js.native
   def connect(url: String): ^[Connection] = js.native
+  @JSImport("amqplib", "connect")
+  @js.native
   def connect(url: String, socketOptions: js.Any): ^[Connection] = js.native
+  @JSImport("amqplib", "connect")
+  @js.native
   def connect(url: Connect): ^[Connection] = js.native
+  @JSImport("amqplib", "connect")
+  @js.native
   def connect(url: Connect, socketOptions: js.Any): ^[Connection] = js.native
+  
+  object credentials {
+    
+    @JSImport("amqplib", "credentials.external")
+    @js.native
+    def external(): Mechanism = js.native
+    
+    @JSImport("amqplib", "credentials.plain")
+    @js.native
+    def plain(username: String, password: String): Password = js.native
+  }
   
   @js.native
   trait Channel extends EventEmitter {
@@ -177,13 +195,5 @@ object mod extends js.Object {
     def createConfirmChannel(): ^[ConfirmChannel] = js.native
     
     var serverProperties: ServerProperties = js.native
-  }
-  
-  @js.native
-  object credentials extends js.Object {
-    
-    def external(): Mechanism = js.native
-    
-    def plain(username: String, password: String): Password = js.native
   }
 }

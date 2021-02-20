@@ -1,6 +1,7 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,36 +38,24 @@ object DeploymentInput {
   }
   
   @scala.inline
-  implicit class DeploymentInputOps[Self <: DeploymentInput] (val x: Self) extends AnyVal {
+  implicit class DeploymentInputMutableBuilder[Self <: DeploymentInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifactsDownloadInput(value: ArtifactsDownloadInput): Self = StObject.set(x, "artifactsDownloadInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDemands(value: js.Array[_]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))
     
     @scala.inline
-    def setArtifactsDownloadInput(value: ArtifactsDownloadInput): Self = this.set("artifactsDownloadInput", value.asInstanceOf[js.Any])
+    def setEnableAccessToken(value: Boolean): Self = StObject.set(x, "enableAccessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDemandsVarargs(value: js.Any*): Self = this.set("demands", js.Array(value :_*))
+    def setQueueId(value: Double): Self = StObject.set(x, "queueId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDemands(value: js.Array[_]): Self = this.set("demands", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnableAccessToken(value: Boolean): Self = this.set("enableAccessToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueueId(value: Double): Self = this.set("queueId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkipArtifactsDownload(value: Boolean): Self = this.set("skipArtifactsDownload", value.asInstanceOf[js.Any])
+    def setSkipArtifactsDownload(value: Boolean): Self = StObject.set(x, "skipArtifactsDownload", value.asInstanceOf[js.Any])
   }
 }

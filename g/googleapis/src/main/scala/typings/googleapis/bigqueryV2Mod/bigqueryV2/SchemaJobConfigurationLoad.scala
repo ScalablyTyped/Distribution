@@ -1,11 +1,12 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaJobConfigurationLoad extends js.Object {
+trait SchemaJobConfigurationLoad extends StObject {
   
   /**
     * [Optional] Accept rows that are missing trailing optional columns. The
@@ -246,189 +247,177 @@ object SchemaJobConfigurationLoad {
   }
   
   @scala.inline
-  implicit class SchemaJobConfigurationLoadOps[Self <: SchemaJobConfigurationLoad] (val x: Self) extends AnyVal {
+  implicit class SchemaJobConfigurationLoadMutableBuilder[Self <: SchemaJobConfigurationLoad] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowJaggedRows(value: Boolean): Self = StObject.set(x, "allowJaggedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowJaggedRowsUndefined: Self = StObject.set(x, "allowJaggedRows", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowQuotedNewlines(value: Boolean): Self = StObject.set(x, "allowQuotedNewlines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowJaggedRows(value: Boolean): Self = this.set("allowJaggedRows", value.asInstanceOf[js.Any])
+    def setAllowQuotedNewlinesUndefined: Self = StObject.set(x, "allowQuotedNewlines", js.undefined)
     
     @scala.inline
-    def deleteAllowJaggedRows: Self = this.set("allowJaggedRows", js.undefined)
+    def setAutodetect(value: Boolean): Self = StObject.set(x, "autodetect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowQuotedNewlines(value: Boolean): Self = this.set("allowQuotedNewlines", value.asInstanceOf[js.Any])
+    def setAutodetectUndefined: Self = StObject.set(x, "autodetect", js.undefined)
     
     @scala.inline
-    def deleteAllowQuotedNewlines: Self = this.set("allowQuotedNewlines", js.undefined)
+    def setClustering(value: SchemaClustering): Self = StObject.set(x, "clustering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutodetect(value: Boolean): Self = this.set("autodetect", value.asInstanceOf[js.Any])
+    def setClusteringUndefined: Self = StObject.set(x, "clustering", js.undefined)
     
     @scala.inline
-    def deleteAutodetect: Self = this.set("autodetect", js.undefined)
+    def setCreateDisposition(value: String): Self = StObject.set(x, "createDisposition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClustering(value: SchemaClustering): Self = this.set("clustering", value.asInstanceOf[js.Any])
+    def setCreateDispositionUndefined: Self = StObject.set(x, "createDisposition", js.undefined)
     
     @scala.inline
-    def deleteClustering: Self = this.set("clustering", js.undefined)
+    def setDestinationEncryptionConfiguration(value: SchemaEncryptionConfiguration): Self = StObject.set(x, "destinationEncryptionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDisposition(value: String): Self = this.set("createDisposition", value.asInstanceOf[js.Any])
+    def setDestinationEncryptionConfigurationUndefined: Self = StObject.set(x, "destinationEncryptionConfiguration", js.undefined)
     
     @scala.inline
-    def deleteCreateDisposition: Self = this.set("createDisposition", js.undefined)
+    def setDestinationTable(value: SchemaTableReference): Self = StObject.set(x, "destinationTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationEncryptionConfiguration(value: SchemaEncryptionConfiguration): Self = this.set("destinationEncryptionConfiguration", value.asInstanceOf[js.Any])
+    def setDestinationTableProperties(value: SchemaDestinationTableProperties): Self = StObject.set(x, "destinationTableProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDestinationEncryptionConfiguration: Self = this.set("destinationEncryptionConfiguration", js.undefined)
+    def setDestinationTablePropertiesUndefined: Self = StObject.set(x, "destinationTableProperties", js.undefined)
     
     @scala.inline
-    def setDestinationTable(value: SchemaTableReference): Self = this.set("destinationTable", value.asInstanceOf[js.Any])
+    def setDestinationTableUndefined: Self = StObject.set(x, "destinationTable", js.undefined)
     
     @scala.inline
-    def deleteDestinationTable: Self = this.set("destinationTable", js.undefined)
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationTableProperties(value: SchemaDestinationTableProperties): Self = this.set("destinationTableProperties", value.asInstanceOf[js.Any])
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def deleteDestinationTableProperties: Self = this.set("destinationTableProperties", js.undefined)
+    def setFieldDelimiter(value: String): Self = StObject.set(x, "fieldDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setFieldDelimiterUndefined: Self = StObject.set(x, "fieldDelimiter", js.undefined)
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setHivePartitioningMode(value: String): Self = StObject.set(x, "hivePartitioningMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldDelimiter(value: String): Self = this.set("fieldDelimiter", value.asInstanceOf[js.Any])
+    def setHivePartitioningModeUndefined: Self = StObject.set(x, "hivePartitioningMode", js.undefined)
     
     @scala.inline
-    def deleteFieldDelimiter: Self = this.set("fieldDelimiter", js.undefined)
+    def setIgnoreUnknownValues(value: Boolean): Self = StObject.set(x, "ignoreUnknownValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHivePartitioningMode(value: String): Self = this.set("hivePartitioningMode", value.asInstanceOf[js.Any])
+    def setIgnoreUnknownValuesUndefined: Self = StObject.set(x, "ignoreUnknownValues", js.undefined)
     
     @scala.inline
-    def deleteHivePartitioningMode: Self = this.set("hivePartitioningMode", js.undefined)
+    def setMaxBadRecords(value: Double): Self = StObject.set(x, "maxBadRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreUnknownValues(value: Boolean): Self = this.set("ignoreUnknownValues", value.asInstanceOf[js.Any])
+    def setMaxBadRecordsUndefined: Self = StObject.set(x, "maxBadRecords", js.undefined)
     
     @scala.inline
-    def deleteIgnoreUnknownValues: Self = this.set("ignoreUnknownValues", js.undefined)
+    def setNullMarker(value: String): Self = StObject.set(x, "nullMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBadRecords(value: Double): Self = this.set("maxBadRecords", value.asInstanceOf[js.Any])
+    def setNullMarkerUndefined: Self = StObject.set(x, "nullMarker", js.undefined)
     
     @scala.inline
-    def deleteMaxBadRecords: Self = this.set("maxBadRecords", js.undefined)
+    def setProjectionFields(value: js.Array[String]): Self = StObject.set(x, "projectionFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNullMarker(value: String): Self = this.set("nullMarker", value.asInstanceOf[js.Any])
+    def setProjectionFieldsUndefined: Self = StObject.set(x, "projectionFields", js.undefined)
     
     @scala.inline
-    def deleteNullMarker: Self = this.set("nullMarker", js.undefined)
+    def setProjectionFieldsVarargs(value: String*): Self = StObject.set(x, "projectionFields", js.Array(value :_*))
     
     @scala.inline
-    def setProjectionFieldsVarargs(value: String*): Self = this.set("projectionFields", js.Array(value :_*))
+    def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectionFields(value: js.Array[String]): Self = this.set("projectionFields", value.asInstanceOf[js.Any])
+    def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
     
     @scala.inline
-    def deleteProjectionFields: Self = this.set("projectionFields", js.undefined)
+    def setRangePartitioning(value: SchemaRangePartitioning): Self = StObject.set(x, "rangePartitioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuote(value: String): Self = this.set("quote", value.asInstanceOf[js.Any])
+    def setRangePartitioningUndefined: Self = StObject.set(x, "rangePartitioning", js.undefined)
     
     @scala.inline
-    def deleteQuote: Self = this.set("quote", js.undefined)
+    def setSchema(value: SchemaTableSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangePartitioning(value: SchemaRangePartitioning): Self = this.set("rangePartitioning", value.asInstanceOf[js.Any])
+    def setSchemaInline(value: String): Self = StObject.set(x, "schemaInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRangePartitioning: Self = this.set("rangePartitioning", js.undefined)
+    def setSchemaInlineFormat(value: String): Self = StObject.set(x, "schemaInlineFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: SchemaTableSchema): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setSchemaInlineFormatUndefined: Self = StObject.set(x, "schemaInlineFormat", js.undefined)
     
     @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
+    def setSchemaInlineUndefined: Self = StObject.set(x, "schemaInline", js.undefined)
     
     @scala.inline
-    def setSchemaInline(value: String): Self = this.set("schemaInline", value.asInstanceOf[js.Any])
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     @scala.inline
-    def deleteSchemaInline: Self = this.set("schemaInline", js.undefined)
+    def setSchemaUpdateOptions(value: js.Array[String]): Self = StObject.set(x, "schemaUpdateOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaInlineFormat(value: String): Self = this.set("schemaInlineFormat", value.asInstanceOf[js.Any])
+    def setSchemaUpdateOptionsUndefined: Self = StObject.set(x, "schemaUpdateOptions", js.undefined)
     
     @scala.inline
-    def deleteSchemaInlineFormat: Self = this.set("schemaInlineFormat", js.undefined)
+    def setSchemaUpdateOptionsVarargs(value: String*): Self = StObject.set(x, "schemaUpdateOptions", js.Array(value :_*))
     
     @scala.inline
-    def setSchemaUpdateOptionsVarargs(value: String*): Self = this.set("schemaUpdateOptions", js.Array(value :_*))
+    def setSkipLeadingRows(value: Double): Self = StObject.set(x, "skipLeadingRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaUpdateOptions(value: js.Array[String]): Self = this.set("schemaUpdateOptions", value.asInstanceOf[js.Any])
+    def setSkipLeadingRowsUndefined: Self = StObject.set(x, "skipLeadingRows", js.undefined)
     
     @scala.inline
-    def deleteSchemaUpdateOptions: Self = this.set("schemaUpdateOptions", js.undefined)
+    def setSourceFormat(value: String): Self = StObject.set(x, "sourceFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipLeadingRows(value: Double): Self = this.set("skipLeadingRows", value.asInstanceOf[js.Any])
+    def setSourceFormatUndefined: Self = StObject.set(x, "sourceFormat", js.undefined)
     
     @scala.inline
-    def deleteSkipLeadingRows: Self = this.set("skipLeadingRows", js.undefined)
+    def setSourceUris(value: js.Array[String]): Self = StObject.set(x, "sourceUris", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceFormat(value: String): Self = this.set("sourceFormat", value.asInstanceOf[js.Any])
+    def setSourceUrisUndefined: Self = StObject.set(x, "sourceUris", js.undefined)
     
     @scala.inline
-    def deleteSourceFormat: Self = this.set("sourceFormat", js.undefined)
+    def setSourceUrisVarargs(value: String*): Self = StObject.set(x, "sourceUris", js.Array(value :_*))
     
     @scala.inline
-    def setSourceUrisVarargs(value: String*): Self = this.set("sourceUris", js.Array(value :_*))
+    def setTimePartitioning(value: SchemaTimePartitioning): Self = StObject.set(x, "timePartitioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceUris(value: js.Array[String]): Self = this.set("sourceUris", value.asInstanceOf[js.Any])
+    def setTimePartitioningUndefined: Self = StObject.set(x, "timePartitioning", js.undefined)
     
     @scala.inline
-    def deleteSourceUris: Self = this.set("sourceUris", js.undefined)
+    def setUseAvroLogicalTypes(value: Boolean): Self = StObject.set(x, "useAvroLogicalTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimePartitioning(value: SchemaTimePartitioning): Self = this.set("timePartitioning", value.asInstanceOf[js.Any])
+    def setUseAvroLogicalTypesUndefined: Self = StObject.set(x, "useAvroLogicalTypes", js.undefined)
     
     @scala.inline
-    def deleteTimePartitioning: Self = this.set("timePartitioning", js.undefined)
+    def setWriteDisposition(value: String): Self = StObject.set(x, "writeDisposition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseAvroLogicalTypes(value: Boolean): Self = this.set("useAvroLogicalTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseAvroLogicalTypes: Self = this.set("useAvroLogicalTypes", js.undefined)
-    
-    @scala.inline
-    def setWriteDisposition(value: String): Self = this.set("writeDisposition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteDisposition: Self = this.set("writeDisposition", js.undefined)
+    def setWriteDispositionUndefined: Self = StObject.set(x, "writeDisposition", js.undefined)
   }
 }

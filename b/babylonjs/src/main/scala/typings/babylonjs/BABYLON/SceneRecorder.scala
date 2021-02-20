@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SceneRecorder extends js.Object {
+trait SceneRecorder extends StObject {
   
   var _compareArray: js.Any = js.native
   
@@ -46,39 +47,27 @@ object SceneRecorder {
   }
   
   @scala.inline
-  implicit class SceneRecorderOps[Self <: SceneRecorder] (val x: Self) extends AnyVal {
+  implicit class SceneRecorderMutableBuilder[Self <: SceneRecorder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDelta(value: () => js.Any): Self = StObject.set(x, "getDelta", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTrack(value: Scene => Unit): Self = StObject.set(x, "track", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_compareArray(value: js.Any): Self = StObject.set(x, "_compareArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_compareArray(value: js.Any): Self = this.set("_compareArray", value.asInstanceOf[js.Any])
+    def set_compareCollections(value: js.Any): Self = StObject.set(x, "_compareCollections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_compareCollections(value: js.Any): Self = this.set("_compareCollections", value.asInstanceOf[js.Any])
+    def set_compareObjects(value: js.Any): Self = StObject.set(x, "_compareObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_compareObjects(value: js.Any): Self = this.set("_compareObjects", value.asInstanceOf[js.Any])
+    def set_savedJSON(value: js.Any): Self = StObject.set(x, "_savedJSON", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_savedJSON(value: js.Any): Self = this.set("_savedJSON", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_trackedScene(value: js.Any): Self = this.set("_trackedScene", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetDelta(value: () => js.Any): Self = this.set("getDelta", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTrack(value: Scene => Unit): Self = this.set("track", js.Any.fromFunction1(value))
+    def set_trackedScene(value: js.Any): Self = StObject.set(x, "_trackedScene", value.asInstanceOf[js.Any])
   }
 }

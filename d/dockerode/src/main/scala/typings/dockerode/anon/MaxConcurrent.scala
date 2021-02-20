@@ -1,11 +1,12 @@
 package typings.dockerode.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaxConcurrent extends js.Object {
+trait MaxConcurrent extends StObject {
   
   var MaxConcurrent: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object MaxConcurrent {
   }
   
   @scala.inline
-  implicit class MaxConcurrentOps[Self <: MaxConcurrent] (val x: Self) extends AnyVal {
+  implicit class MaxConcurrentMutableBuilder[Self <: MaxConcurrent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxConcurrent(value: Double): Self = StObject.set(x, "MaxConcurrent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxConcurrentUndefined: Self = StObject.set(x, "MaxConcurrent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotalCompletions(value: Double): Self = StObject.set(x, "TotalCompletions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxConcurrent(value: Double): Self = this.set("MaxConcurrent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxConcurrent: Self = this.set("MaxConcurrent", js.undefined)
-    
-    @scala.inline
-    def setTotalCompletions(value: Double): Self = this.set("TotalCompletions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalCompletions: Self = this.set("TotalCompletions", js.undefined)
+    def setTotalCompletionsUndefined: Self = StObject.set(x, "TotalCompletions", js.undefined)
   }
 }

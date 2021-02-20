@@ -1,15 +1,13 @@
 package typings.seleniumWebdriver
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("selenium-webdriver/lib/promise", JSImport.Namespace)
-@js.native
-object promiseMod extends js.Object {
+object promiseMod {
   
-  @js.native
-  object promise extends js.Object {
+  object promise {
     
     /**
       * Wraps a function that expects a node-style callback as its final
@@ -18,11 +16,15 @@ object promiseMod extends js.Object {
       * argument. The callback will the resolve or reject the returned promise,
       * based on its arguments.
       */
+    @JSImport("selenium-webdriver/lib/promise", "promise.checkedNodeCall")
+    @js.native
     def checkedNodeCall[T](fn: js.Function, varArgs: js.Any*): js.Promise[T] = js.native
     
     /**
       * Creates a promise that will be resolved at a set time in the future.
       */
+    @JSImport("selenium-webdriver/lib/promise", "promise.delayed")
+    @js.native
     def delayed(ms: Double): js.Promise[Unit] = js.native
     
     /**
@@ -38,20 +40,28 @@ object promiseMod extends js.Object {
       * first failure will be reported; all subsequent errors will be silently
       * ignored.
       */
+    @JSImport("selenium-webdriver/lib/promise", "promise.filter")
+    @js.native
     def filter[T, V](
       arr: js.Array[T],
       fn: js.Function3[/* element */ T, /* index */ Double, /* array */ js.Array[T], V]
     ): js.Promise[js.Array[V]] = js.native
+    @JSImport("selenium-webdriver/lib/promise", "promise.filter")
+    @js.native
     def filter[T, V](
       arr: js.Array[T],
       fn: js.Function3[/* element */ T, /* index */ Double, /* array */ js.Array[T], V],
       // value
     optSelf: js.Any
     ): js.Promise[js.Array[V]] = js.native
+    @JSImport("selenium-webdriver/lib/promise", "promise.filter")
+    @js.native
     def filter[T, V](
       arr: js.Promise[js.Array[T]],
       fn: js.Function3[/* element */ T, /* index */ Double, /* array */ js.Array[T], V]
     ): js.Promise[js.Array[V]] = js.native
+    @JSImport("selenium-webdriver/lib/promise", "promise.filter")
+    @js.native
     def filter[T, V](
       arr: js.Promise[js.Array[T]],
       fn: js.Function3[/* element */ T, /* index */ Double, /* array */ js.Array[T], V],
@@ -74,6 +84,8 @@ object promiseMod extends js.Object {
       *     value['self'] = value;
       *     promise.fullyResolved(value);  // Stack overflow.
       */
+    @JSImport("selenium-webdriver/lib/promise", "promise.fullyResolved")
+    @js.native
     def fullyResolved(value: js.Any): js.Promise[_] = js.native
     
     // region Functions
@@ -82,6 +94,8 @@ object promiseMod extends js.Object {
       * Any object whose 'then' property is a function will be considered a
       * promise.
       */
+    @JSImport("selenium-webdriver/lib/promise", "promise.isPromise")
+    @js.native
     def isPromise(value: js.Any): Boolean = js.native
     
     /**
@@ -97,19 +111,27 @@ object promiseMod extends js.Object {
       * Only the first failure will be reported; all subsequent errors will be
       * silently ignored.
       */
+    @JSImport("selenium-webdriver/lib/promise", "promise.map")
+    @js.native
     def map[T, V](
       arr: js.Array[T],
       fn: js.Function4[/* self */ js.Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V]
     ): js.Promise[js.Array[V]] = js.native
+    @JSImport("selenium-webdriver/lib/promise", "promise.map")
+    @js.native
     def map[T, V](
       arr: js.Array[T],
       fn: js.Function4[/* self */ js.Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V],
       optSelf: js.Any
     ): js.Promise[js.Array[V]] = js.native
+    @JSImport("selenium-webdriver/lib/promise", "promise.map")
+    @js.native
     def map[T, V](
       arr: js.Promise[js.Array[T]],
       fn: js.Function4[/* self */ js.Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V]
     ): js.Promise[js.Array[V]] = js.native
+    @JSImport("selenium-webdriver/lib/promise", "promise.map")
+    @js.native
     def map[T, V](
       arr: js.Promise[js.Array[T]],
       fn: js.Function4[/* self */ js.Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V],
@@ -146,6 +168,8 @@ object promiseMod extends js.Object {
       *       throw Error('two');  // Hides Error: one
       *     });
       */
+    @JSImport("selenium-webdriver/lib/promise", "promise.thenFinally")
+    @js.native
     def thenFinally[R](promise: js.Any, callback: js.Function0[R | js.Promise[R]]): js.Promise[R] = js.native
   }
 }

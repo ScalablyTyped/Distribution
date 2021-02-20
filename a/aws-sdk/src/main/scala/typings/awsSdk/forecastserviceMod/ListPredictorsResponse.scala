@@ -1,11 +1,12 @@
 package typings.awsSdk.forecastserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPredictorsResponse extends js.Object {
+trait ListPredictorsResponse extends StObject {
   
   /**
     * If the response is truncated, Amazon Forecast returns this token. To retrieve the next set of results, use the token in the next request.
@@ -26,33 +27,21 @@ object ListPredictorsResponse {
   }
   
   @scala.inline
-  implicit class ListPredictorsResponseOps[Self <: ListPredictorsResponse] (val x: Self) extends AnyVal {
+  implicit class ListPredictorsResponseMutableBuilder[Self <: ListPredictorsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPredictors(value: Predictors): Self = StObject.set(x, "Predictors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setPredictorsUndefined: Self = StObject.set(x, "Predictors", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setPredictorsVarargs(value: PredictorSummary*): Self = this.set("Predictors", js.Array(value :_*))
-    
-    @scala.inline
-    def setPredictors(value: Predictors): Self = this.set("Predictors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePredictors: Self = this.set("Predictors", js.undefined)
+    def setPredictorsVarargs(value: PredictorSummary*): Self = StObject.set(x, "Predictors", js.Array(value :_*))
   }
 }

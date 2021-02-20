@@ -13,12 +13,13 @@ import typings.maximMazurokGapiClientSpanner.anon.Resource
 import typings.maximMazurokGapiClientSpanner.anon.UploadType
 import typings.maximMazurokGapiClientSpanner.anon.Uploadprotocol
 import typings.maximMazurokGapiClientSpanner.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SessionsResource extends js.Object {
+trait SessionsResource extends StObject {
   
   /** Creates multiple new sessions. This API can be used to initialize a session cache on the clients. See https://goo.gl/TgSFN2 for best practices on session cache management. */
   def batchCreate(request: typings.maximMazurokGapiClientSpanner.anon.Database): Request[BatchCreateSessionsResponse] = js.native

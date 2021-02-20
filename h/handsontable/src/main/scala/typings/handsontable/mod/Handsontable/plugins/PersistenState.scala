@@ -1,6 +1,7 @@
 package typings.handsontable.mod.Handsontable.plugins
 
 import typings.handsontable.mod._Handsontable.Core
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,30 +46,18 @@ object PersistenState {
   }
   
   @scala.inline
-  implicit class PersistenStateOps[Self <: PersistenState] (val x: Self) extends AnyVal {
+  implicit class PersistenStateMutableBuilder[Self <: PersistenState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoadValue(value: (String, js.Object) => Unit): Self = StObject.set(x, "loadValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResetValue(value: String => Unit): Self = StObject.set(x, "resetValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSaveValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "saveValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLoadValue(value: (String, js.Object) => Unit): Self = this.set("loadValue", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setResetValue(value: String => Unit): Self = this.set("resetValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSaveValue(value: (String, js.Any) => Unit): Self = this.set("saveValue", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setStorage(value: Storage): Self = this.set("storage", value.asInstanceOf[js.Any])
+    def setStorage(value: Storage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
   }
 }

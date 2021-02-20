@@ -1,5 +1,6 @@
 package typings.googleapis.monitoringV3Mod.monitoringV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The ListNotificationChannels response.
   */
 @js.native
-trait SchemaListNotificationChannelsResponse extends js.Object {
+trait SchemaListNotificationChannelsResponse extends StObject {
   
   /**
     * If not empty, indicates that there may be more results that match the
@@ -31,33 +32,21 @@ object SchemaListNotificationChannelsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListNotificationChannelsResponseOps[Self <: SchemaListNotificationChannelsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListNotificationChannelsResponseMutableBuilder[Self <: SchemaListNotificationChannelsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotificationChannels(value: js.Array[SchemaNotificationChannel]): Self = StObject.set(x, "notificationChannels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setNotificationChannelsUndefined: Self = StObject.set(x, "notificationChannels", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setNotificationChannelsVarargs(value: SchemaNotificationChannel*): Self = this.set("notificationChannels", js.Array(value :_*))
-    
-    @scala.inline
-    def setNotificationChannels(value: js.Array[SchemaNotificationChannel]): Self = this.set("notificationChannels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationChannels: Self = this.set("notificationChannels", js.undefined)
+    def setNotificationChannelsVarargs(value: SchemaNotificationChannel*): Self = StObject.set(x, "notificationChannels", js.Array(value :_*))
   }
 }

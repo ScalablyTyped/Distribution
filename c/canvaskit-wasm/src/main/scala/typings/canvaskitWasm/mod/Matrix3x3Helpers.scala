@@ -1,11 +1,12 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Matrix3x3Helpers extends js.Object {
+trait Matrix3x3Helpers extends StObject {
   
   /**
     * Returns a new identity 3x3 matrix.

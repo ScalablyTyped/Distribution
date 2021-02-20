@@ -1,6 +1,7 @@
 package typings.actionsOnGoogle.v2Mod
 
 import typings.actionsOnGoogle.richMod._RichResponseItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,66 +58,54 @@ object GoogleActionsV2RichResponseItem {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2RichResponseItemOps[Self <: GoogleActionsV2RichResponseItem] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2RichResponseItemMutableBuilder[Self <: GoogleActionsV2RichResponseItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasicCard(value: GoogleActionsV2UiElementsBasicCard): Self = StObject.set(x, "basicCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasicCardUndefined: Self = StObject.set(x, "basicCard", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCarouselBrowse(value: GoogleActionsV2UiElementsCarouselBrowse): Self = StObject.set(x, "carouselBrowse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasicCard(value: GoogleActionsV2UiElementsBasicCard): Self = this.set("basicCard", value.asInstanceOf[js.Any])
+    def setCarouselBrowseUndefined: Self = StObject.set(x, "carouselBrowse", js.undefined)
     
     @scala.inline
-    def deleteBasicCard: Self = this.set("basicCard", js.undefined)
+    def setHtmlResponse(value: GoogleActionsV2UiElementsHtmlResponse): Self = StObject.set(x, "htmlResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarouselBrowse(value: GoogleActionsV2UiElementsCarouselBrowse): Self = this.set("carouselBrowse", value.asInstanceOf[js.Any])
+    def setHtmlResponseUndefined: Self = StObject.set(x, "htmlResponse", js.undefined)
     
     @scala.inline
-    def deleteCarouselBrowse: Self = this.set("carouselBrowse", js.undefined)
+    def setMediaResponse(value: GoogleActionsV2MediaResponse): Self = StObject.set(x, "mediaResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtmlResponse(value: GoogleActionsV2UiElementsHtmlResponse): Self = this.set("htmlResponse", value.asInstanceOf[js.Any])
+    def setMediaResponseUndefined: Self = StObject.set(x, "mediaResponse", js.undefined)
     
     @scala.inline
-    def deleteHtmlResponse: Self = this.set("htmlResponse", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaResponse(value: GoogleActionsV2MediaResponse): Self = this.set("mediaResponse", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMediaResponse: Self = this.set("mediaResponse", js.undefined)
+    def setSimpleResponse(value: GoogleActionsV2SimpleResponse): Self = StObject.set(x, "simpleResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSimpleResponseUndefined: Self = StObject.set(x, "simpleResponse", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setStructuredResponse(value: GoogleActionsV2StructuredResponse): Self = StObject.set(x, "structuredResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSimpleResponse(value: GoogleActionsV2SimpleResponse): Self = this.set("simpleResponse", value.asInstanceOf[js.Any])
+    def setStructuredResponseUndefined: Self = StObject.set(x, "structuredResponse", js.undefined)
     
     @scala.inline
-    def deleteSimpleResponse: Self = this.set("simpleResponse", js.undefined)
+    def setTableCard(value: GoogleActionsV2UiElementsTableCard): Self = StObject.set(x, "tableCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStructuredResponse(value: GoogleActionsV2StructuredResponse): Self = this.set("structuredResponse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStructuredResponse: Self = this.set("structuredResponse", js.undefined)
-    
-    @scala.inline
-    def setTableCard(value: GoogleActionsV2UiElementsTableCard): Self = this.set("tableCard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableCard: Self = this.set("tableCard", js.undefined)
+    def setTableCardUndefined: Self = StObject.set(x, "tableCard", js.undefined)
   }
 }

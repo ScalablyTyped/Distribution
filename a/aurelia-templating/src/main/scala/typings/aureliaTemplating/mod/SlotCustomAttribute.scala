@@ -1,12 +1,13 @@
 package typings.aureliaTemplating.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "SlotCustomAttribute")
 @js.native
-class SlotCustomAttribute () extends js.Object {
+class SlotCustomAttribute () extends StObject {
   def this(element: js.Any) = this()
   
   def valueChanged(): js.Any = js.native
@@ -15,9 +16,9 @@ class SlotCustomAttribute () extends js.Object {
   def valueChanged(newValue: js.Any, oldValue: js.Any): js.Any = js.native
 }
 /* static members */
-@JSImport("aurelia-templating", "SlotCustomAttribute")
-@js.native
-object SlotCustomAttribute extends js.Object {
+object SlotCustomAttribute {
   
+  @JSImport("aurelia-templating", "SlotCustomAttribute.inject")
+  @js.native
   def inject(): js.Any = js.native
 }

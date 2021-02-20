@@ -2,12 +2,13 @@ package typings.googleapis.v1Dot4Mod.adsenseV14
 
 import typings.googleapis.anon.Background
 import typings.googleapis.anon.Size
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaAdStyle extends js.Object {
+trait SchemaAdStyle extends StObject {
   
   /**
     * The colors which are included in the style. These are represented as six
@@ -41,42 +42,30 @@ object SchemaAdStyle {
   }
   
   @scala.inline
-  implicit class SchemaAdStyleOps[Self <: SchemaAdStyle] (val x: Self) extends AnyVal {
+  implicit class SchemaAdStyleMutableBuilder[Self <: SchemaAdStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColors(value: Background): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCorners(value: String): Self = StObject.set(x, "corners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: Background): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setCornersUndefined: Self = StObject.set(x, "corners", js.undefined)
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setFont(value: Size): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorners(value: String): Self = this.set("corners", value.asInstanceOf[js.Any])
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteCorners: Self = this.set("corners", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: Size): Self = this.set("font", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

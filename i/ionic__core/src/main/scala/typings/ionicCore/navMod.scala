@@ -11,14 +11,14 @@ import typings.ionicCore.navInterfaceMod.NavOptions
 import typings.ionicCore.navInterfaceMod.TransitionDoneFn
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/nav/nav", JSImport.Namespace)
-@js.native
-object navMod extends js.Object {
+object navMod {
   
+  @JSImport("@ionic/core/dist/types/components/nav/nav", "Nav")
   @js.native
   class Nav () extends NavOutlet {
     

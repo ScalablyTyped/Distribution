@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.interactive
   - typings.std.stdStrings.playback
 */
-trait AudioContextLatencyCategory extends js.Object
+trait AudioContextLatencyCategory extends StObject
 object AudioContextLatencyCategory {
   
   @scala.inline

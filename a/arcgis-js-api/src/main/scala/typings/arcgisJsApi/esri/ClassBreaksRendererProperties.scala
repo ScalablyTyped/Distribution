@@ -3,6 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`percent-of-total`
 import typings.arcgisJsApi.arcgisJsApiStrings.field
 import typings.arcgisJsApi.arcgisJsApiStrings.log
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -98,87 +99,75 @@ object ClassBreaksRendererProperties {
   }
   
   @scala.inline
-  implicit class ClassBreaksRendererPropertiesOps[Self <: ClassBreaksRendererProperties] (val x: Self) extends AnyVal {
+  implicit class ClassBreaksRendererPropertiesMutableBuilder[Self <: ClassBreaksRendererProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundFillSymbol(value: FillSymbolProperties | PolygonSymbol3DProperties): Self = StObject.set(x, "backgroundFillSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundFillSymbolUndefined: Self = StObject.set(x, "backgroundFillSymbol", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassBreakInfos(value: js.Array[ClassBreakInfoProperties]): Self = StObject.set(x, "classBreakInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundFillSymbol(value: FillSymbolProperties | PolygonSymbol3DProperties): Self = this.set("backgroundFillSymbol", value.asInstanceOf[js.Any])
+    def setClassBreakInfosUndefined: Self = StObject.set(x, "classBreakInfos", js.undefined)
     
     @scala.inline
-    def deleteBackgroundFillSymbol: Self = this.set("backgroundFillSymbol", js.undefined)
+    def setClassBreakInfosVarargs(value: ClassBreakInfoProperties*): Self = StObject.set(x, "classBreakInfos", js.Array(value :_*))
     
     @scala.inline
-    def setClassBreakInfosVarargs(value: ClassBreakInfoProperties*): Self = this.set("classBreakInfos", js.Array(value :_*))
+    def setDefaultLabel(value: String): Self = StObject.set(x, "defaultLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassBreakInfos(value: js.Array[ClassBreakInfoProperties]): Self = this.set("classBreakInfos", value.asInstanceOf[js.Any])
+    def setDefaultLabelUndefined: Self = StObject.set(x, "defaultLabel", js.undefined)
     
     @scala.inline
-    def deleteClassBreakInfos: Self = this.set("classBreakInfos", js.undefined)
+    def setDefaultSymbol(value: SymbolProperties): Self = StObject.set(x, "defaultSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultLabel(value: String): Self = this.set("defaultLabel", value.asInstanceOf[js.Any])
+    def setDefaultSymbolUndefined: Self = StObject.set(x, "defaultSymbol", js.undefined)
     
     @scala.inline
-    def deleteDefaultLabel: Self = this.set("defaultLabel", js.undefined)
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSymbol(value: SymbolProperties): Self = this.set("defaultSymbol", value.asInstanceOf[js.Any])
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def deleteDefaultSymbol: Self = this.set("defaultSymbol", js.undefined)
+    def setLegendOptions(value: ClassBreaksRendererLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendOptions(value: ClassBreaksRendererLegendOptions): Self = this.set("legendOptions", value.asInstanceOf[js.Any])
+    def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
     
     @scala.inline
-    def deleteLegendOptions: Self = this.set("legendOptions", js.undefined)
+    def setNormalizationTotal(value: Double): Self = StObject.set(x, "normalizationTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalizationField(value: String): Self = this.set("normalizationField", value.asInstanceOf[js.Any])
+    def setNormalizationTotalUndefined: Self = StObject.set(x, "normalizationTotal", js.undefined)
     
     @scala.inline
-    def deleteNormalizationField: Self = this.set("normalizationField", js.undefined)
+    def setNormalizationType(value: field | log | `percent-of-total`): Self = StObject.set(x, "normalizationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalizationTotal(value: Double): Self = this.set("normalizationTotal", value.asInstanceOf[js.Any])
+    def setNormalizationTypeUndefined: Self = StObject.set(x, "normalizationType", js.undefined)
     
     @scala.inline
-    def deleteNormalizationTotal: Self = this.set("normalizationTotal", js.undefined)
+    def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalizationType(value: field | log | `percent-of-total`): Self = this.set("normalizationType", value.asInstanceOf[js.Any])
+    def setValueExpressionTitle(value: String): Self = StObject.set(x, "valueExpressionTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNormalizationType: Self = this.set("normalizationType", js.undefined)
+    def setValueExpressionTitleUndefined: Self = StObject.set(x, "valueExpressionTitle", js.undefined)
     
     @scala.inline
-    def setValueExpression(value: String): Self = this.set("valueExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueExpression: Self = this.set("valueExpression", js.undefined)
-    
-    @scala.inline
-    def setValueExpressionTitle(value: String): Self = this.set("valueExpressionTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueExpressionTitle: Self = this.set("valueExpressionTitle", js.undefined)
+    def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
   }
 }

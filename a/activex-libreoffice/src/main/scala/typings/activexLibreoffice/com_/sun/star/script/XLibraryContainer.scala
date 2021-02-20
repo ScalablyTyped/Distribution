@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,33 +58,21 @@ object XLibraryContainer {
   }
   
   @scala.inline
-  implicit class XLibraryContainerOps[Self <: XLibraryContainer] (val x: Self) extends AnyVal {
+  implicit class XLibraryContainerMutableBuilder[Self <: XLibraryContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateLibrary(value: String => XNameContainer): Self = StObject.set(x, "createLibrary", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateLibraryLink(value: (String, String, Boolean) => XNameAccess): Self = StObject.set(x, "createLibraryLink", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsLibraryLoaded(value: String => Boolean): Self = StObject.set(x, "isLibraryLoaded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateLibrary(value: String => XNameContainer): Self = this.set("createLibrary", js.Any.fromFunction1(value))
+    def setLoadLibrary(value: String => Unit): Self = StObject.set(x, "loadLibrary", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateLibraryLink(value: (String, String, Boolean) => XNameAccess): Self = this.set("createLibraryLink", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setIsLibraryLoaded(value: String => Boolean): Self = this.set("isLibraryLoaded", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLoadLibrary(value: String => Unit): Self = this.set("loadLibrary", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveLibrary(value: String => Unit): Self = this.set("removeLibrary", js.Any.fromFunction1(value))
+    def setRemoveLibrary(value: String => Unit): Self = StObject.set(x, "removeLibrary", js.Any.fromFunction1(value))
   }
 }

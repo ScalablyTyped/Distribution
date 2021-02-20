@@ -1,18 +1,28 @@
 package typings.webgme.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GmeUtil")
-@js.native
-object GmeUtil extends js.Object {
+object GmeUtil {
   
+  @JSGlobal("GmeUtil")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("GmeUtil.ASSERT")
+  @js.native
   def ASSERT(condition: Boolean): scala.Nothing = js.native
   
-  @JSName("CANON")
-  var CANON_ : typings.webgme.GmeUtil.Canon = js.native
+  @JSGlobal("GmeUtil.CANON")
+  @js.native
+  def CANON_ : typings.webgme.GmeUtil.Canon = js.native
   
+  @scala.inline
+  def CANON__=(x: typings.webgme.GmeUtil.Canon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANON")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("GmeUtil.Canon")
   @js.native
   class Canon ()
     extends typings.webgme.GmeUtil.Canon

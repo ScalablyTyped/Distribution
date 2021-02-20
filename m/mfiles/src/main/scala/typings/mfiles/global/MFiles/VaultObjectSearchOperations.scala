@@ -1,14 +1,12 @@
 package typings.mfiles.global.MFiles
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.mfiles.IVaultObjectSearchOperations
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("MFiles.VaultObjectSearchOperations")
 @js.native
 class VaultObjectSearchOperations () extends IVaultObjectSearchOperations
-@JSGlobal("MFiles.VaultObjectSearchOperations")
-@js.native
-object VaultObjectSearchOperations extends Instantiable0[IVaultObjectSearchOperations]

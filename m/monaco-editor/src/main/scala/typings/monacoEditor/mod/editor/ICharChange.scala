@@ -1,5 +1,6 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,30 +34,18 @@ object ICharChange {
   }
   
   @scala.inline
-  implicit class ICharChangeOps[Self <: ICharChange] (val x: Self) extends AnyVal {
+  implicit class ICharChangeMutableBuilder[Self <: ICharChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModifiedEndColumn(value: Double): Self = StObject.set(x, "modifiedEndColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModifiedStartColumn(value: Double): Self = StObject.set(x, "modifiedStartColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginalEndColumn(value: Double): Self = StObject.set(x, "originalEndColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedEndColumn(value: Double): Self = this.set("modifiedEndColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModifiedStartColumn(value: Double): Self = this.set("modifiedStartColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOriginalEndColumn(value: Double): Self = this.set("originalEndColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOriginalStartColumn(value: Double): Self = this.set("originalStartColumn", value.asInstanceOf[js.Any])
+    def setOriginalStartColumn(value: Double): Self = StObject.set(x, "originalStartColumn", value.asInstanceOf[js.Any])
   }
 }

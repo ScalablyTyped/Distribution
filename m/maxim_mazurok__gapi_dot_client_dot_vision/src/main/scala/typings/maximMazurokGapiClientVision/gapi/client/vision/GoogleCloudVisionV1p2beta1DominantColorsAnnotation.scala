@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVision.gapi.client.vision
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudVisionV1p2beta1DominantColorsAnnotation extends js.Object {
+trait GoogleCloudVisionV1p2beta1DominantColorsAnnotation extends StObject {
   
   /** RGB color values with their score and pixel fraction. */
   var colors: js.UndefOr[js.Array[GoogleCloudVisionV1p2beta1ColorInfo]] = js.native
@@ -19,27 +20,15 @@ object GoogleCloudVisionV1p2beta1DominantColorsAnnotation {
   }
   
   @scala.inline
-  implicit class GoogleCloudVisionV1p2beta1DominantColorsAnnotationOps[Self <: GoogleCloudVisionV1p2beta1DominantColorsAnnotation] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudVisionV1p2beta1DominantColorsAnnotationMutableBuilder[Self <: GoogleCloudVisionV1p2beta1DominantColorsAnnotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColors(value: js.Array[GoogleCloudVisionV1p2beta1ColorInfo]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColorsVarargs(value: GoogleCloudVisionV1p2beta1ColorInfo*): Self = this.set("colors", js.Array(value :_*))
-    
-    @scala.inline
-    def setColors(value: js.Array[GoogleCloudVisionV1p2beta1ColorInfo]): Self = this.set("colors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setColorsVarargs(value: GoogleCloudVisionV1p2beta1ColorInfo*): Self = StObject.set(x, "colors", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.sharp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.sharp.sharpStrings.difference
   - typings.sharp.sharpStrings.exclusion
 */
-trait Blend extends js.Object
+trait Blend extends StObject
 object Blend {
   
   @scala.inline

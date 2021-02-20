@@ -1,5 +1,6 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NOTE: 'params' can be omitted.
   */
 @js.native
-trait DERAbstractString extends js.Object {
+trait DERAbstractString extends StObject {
   
   def getFreshValueHex(): String = js.native
   
@@ -57,33 +58,21 @@ object DERAbstractString {
   }
   
   @scala.inline
-  implicit class DERAbstractStringOps[Self <: DERAbstractString] (val x: Self) extends AnyVal {
+  implicit class DERAbstractStringMutableBuilder[Self <: DERAbstractString] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetFreshValueHex(value: () => String): Self = StObject.set(x, "getFreshValueHex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetString(value: () => String): Self = StObject.set(x, "getString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetFreshValueHex(value: () => String): Self = this.set("getFreshValueHex", js.Any.fromFunction0(value))
+    def setSetString(value: String => Unit): Self = StObject.set(x, "setString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetString(value: () => String): Self = this.set("getString", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setS(value: String): Self = this.set("s", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetString(value: String => Unit): Self = this.set("setString", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetStringHex(value: String => Unit): Self = this.set("setStringHex", js.Any.fromFunction1(value))
+    def setSetStringHex(value: String => Unit): Self = StObject.set(x, "setStringHex", js.Any.fromFunction1(value))
   }
 }

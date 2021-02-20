@@ -2,12 +2,13 @@ package typings.materialUi.MaterialUI
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BadgeProps extends js.Object {
+trait BadgeProps extends StObject {
   
   var badgeContent: ReactNode = js.native
   
@@ -30,54 +31,42 @@ object BadgeProps {
   }
   
   @scala.inline
-  implicit class BadgePropsOps[Self <: BadgeProps] (val x: Self) extends AnyVal {
+  implicit class BadgePropsMutableBuilder[Self <: BadgeProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBadgeContent(value: ReactNode): Self = StObject.set(x, "badgeContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBadgeContentUndefined: Self = StObject.set(x, "badgeContent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBadgeStyle(value: CSSProperties): Self = StObject.set(x, "badgeStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadgeContent(value: ReactNode): Self = this.set("badgeContent", value.asInstanceOf[js.Any])
+    def setBadgeStyleUndefined: Self = StObject.set(x, "badgeStyle", js.undefined)
     
     @scala.inline
-    def deleteBadgeContent: Self = this.set("badgeContent", js.undefined)
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadgeStyle(value: CSSProperties): Self = this.set("badgeStyle", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteBadgeStyle: Self = this.set("badgeStyle", js.undefined)
+    def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setSecondary(value: Boolean): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary(value: Boolean): Self = this.set("primary", value.asInstanceOf[js.Any])
+    def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
     
     @scala.inline
-    def deletePrimary: Self = this.set("primary", js.undefined)
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondary(value: Boolean): Self = this.set("secondary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondary: Self = this.set("secondary", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

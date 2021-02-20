@@ -2,6 +2,7 @@ package typings.nodeCalendar
 
 import typings.std.Date
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,80 +14,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * convention). Use setfirstweekday() to set the first day of the week to Sunday
   * (6) or to any other weekday. Parameters that specify dates are given as integers.
   */
-@JSImport("node-calendar", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  var APRIL: Double = js.native
+  @JSImport("node-calendar", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  var AUGUST: Double = js.native
+  @JSImport("node-calendar", "APRIL")
+  @js.native
+  def APRIL: Double = js.native
+  @scala.inline
+  def APRIL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("APRIL")(x.asInstanceOf[js.Any])
   
-  var DECEMBER: Double = js.native
+  @JSImport("node-calendar", "AUGUST")
+  @js.native
+  def AUGUST: Double = js.native
+  @scala.inline
+  def AUGUST_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUGUST")(x.asInstanceOf[js.Any])
   
-  var FEBRUARY: Double = js.native
-  
-  var FRIDAY: Double = js.native
-  
-  var JANUARY: Double = js.native
-  
-  var JULY: Double = js.native
-  
-  var JUNE: Double = js.native
-  
-  var MARCH: Double = js.native
-  
-  var MAY: Double = js.native
-  
-  var MONDAY: Double = js.native
-  
-  var NOVEMBER: Double = js.native
-  
-  var OCTOBER: Double = js.native
-  
-  var SATURDAY: Double = js.native
-  
-  var SEPTEMBER: Double = js.native
-  
-  var SUNDAY: Double = js.native
-  
-  var THURSDAY: Double = js.native
-  
-  var TUESDAY: Double = js.native
-  
-  var WEDNESDAY: Double = js.native
-  
-  @JSName("day_abbr")
-  var dayAbbr: js.Array[String] = js.native
-  
-  @JSName("day_name")
-  var dayName: js.Array[String] = js.native
-  
-  def isleap(year: Double): Boolean = js.native
-  
-  def leapdays(y1: Double, y2: Double): Double = js.native
-  
-  @JSName("month_abbr")
-  var monthAbbr: js.Array[String] = js.native
-  
-  @JSName("month_name")
-  var monthName: js.Array[String] = js.native
-  
-  def monthrange(year: Double, month: Double): js.Tuple2[Double, Double] = js.native
-  
-  def setlocale(): Unit = js.native
-  def setlocale(locale: String): Unit = js.native
-  
-  def timegm(timegmt: js.Tuple6[Double, Double, Double, Double, Double, Double]): Double = js.native
-  
-  def weekday(year: Double, month: Double, day: Double): Double = js.native
-  
+  @JSImport("node-calendar", "Calendar")
   @js.native
   /**
     * @param {number} firstweekday
     *  Numerical day of the week the calendar weeks should start.
     *  (0=MON, 1=TUE, ...) Default: 0
     */
-  class Calendar () extends js.Object {
+  class Calendar () extends StObject {
     def this(firstweekday: Double) = this()
     
     /**
@@ -230,6 +183,25 @@ object mod extends js.Object {
     def yeardayscalendar(year: Double, width: Double): IYearGrid[Double] = js.native
   }
   
+  @JSImport("node-calendar", "DECEMBER")
+  @js.native
+  def DECEMBER: Double = js.native
+  @scala.inline
+  def DECEMBER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DECEMBER")(x.asInstanceOf[js.Any])
+  
+  @JSImport("node-calendar", "FEBRUARY")
+  @js.native
+  def FEBRUARY: Double = js.native
+  @scala.inline
+  def FEBRUARY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FEBRUARY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("node-calendar", "FRIDAY")
+  @js.native
+  def FRIDAY: Double = js.native
+  @scala.inline
+  def FRIDAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRIDAY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("node-calendar", "IllegalDayError")
   @js.native
   /**
     * @param {string} message
@@ -239,6 +211,7 @@ object mod extends js.Object {
     def this(message: String) = this()
   }
   
+  @JSImport("node-calendar", "IllegalLocaleError")
   @js.native
   /**
     * @param {string} message
@@ -248,6 +221,7 @@ object mod extends js.Object {
     def this(message: String) = this()
   }
   
+  @JSImport("node-calendar", "IllegalMonthError")
   @js.native
   /**
     * @param {string} message
@@ -257,6 +231,7 @@ object mod extends js.Object {
     def this(message: String) = this()
   }
   
+  @JSImport("node-calendar", "IllegalTimeError")
   @js.native
   /**
     * @param {string} message
@@ -266,6 +241,7 @@ object mod extends js.Object {
     def this(message: String) = this()
   }
   
+  @JSImport("node-calendar", "IllegalWeekdayError")
   @js.native
   /**
     * @param {string} message
@@ -274,4 +250,143 @@ object mod extends js.Object {
   class IllegalWeekdayError () extends Error {
     def this(message: String) = this()
   }
+  
+  @JSImport("node-calendar", "JANUARY")
+  @js.native
+  def JANUARY: Double = js.native
+  @scala.inline
+  def JANUARY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JANUARY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("node-calendar", "JULY")
+  @js.native
+  def JULY: Double = js.native
+  @scala.inline
+  def JULY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JULY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("node-calendar", "JUNE")
+  @js.native
+  def JUNE: Double = js.native
+  @scala.inline
+  def JUNE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JUNE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("node-calendar", "MARCH")
+  @js.native
+  def MARCH: Double = js.native
+  @scala.inline
+  def MARCH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MARCH")(x.asInstanceOf[js.Any])
+  
+  @JSImport("node-calendar", "MAY")
+  @js.native
+  def MAY: Double = js.native
+  @scala.inline
+  def MAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("node-calendar", "MONDAY")
+  @js.native
+  def MONDAY: Double = js.native
+  @scala.inline
+  def MONDAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MONDAY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("node-calendar", "NOVEMBER")
+  @js.native
+  def NOVEMBER: Double = js.native
+  @scala.inline
+  def NOVEMBER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOVEMBER")(x.asInstanceOf[js.Any])
+  
+  @JSImport("node-calendar", "OCTOBER")
+  @js.native
+  def OCTOBER: Double = js.native
+  @scala.inline
+  def OCTOBER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCTOBER")(x.asInstanceOf[js.Any])
+  
+  @JSImport("node-calendar", "SATURDAY")
+  @js.native
+  def SATURDAY: Double = js.native
+  @scala.inline
+  def SATURDAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SATURDAY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("node-calendar", "SEPTEMBER")
+  @js.native
+  def SEPTEMBER: Double = js.native
+  @scala.inline
+  def SEPTEMBER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPTEMBER")(x.asInstanceOf[js.Any])
+  
+  @JSImport("node-calendar", "SUNDAY")
+  @js.native
+  def SUNDAY: Double = js.native
+  @scala.inline
+  def SUNDAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUNDAY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("node-calendar", "THURSDAY")
+  @js.native
+  def THURSDAY: Double = js.native
+  @scala.inline
+  def THURSDAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THURSDAY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("node-calendar", "TUESDAY")
+  @js.native
+  def TUESDAY: Double = js.native
+  @scala.inline
+  def TUESDAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TUESDAY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("node-calendar", "WEDNESDAY")
+  @js.native
+  def WEDNESDAY: Double = js.native
+  @scala.inline
+  def WEDNESDAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WEDNESDAY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("node-calendar", "day_abbr")
+  @js.native
+  def dayAbbr: js.Array[String] = js.native
+  
+  @scala.inline
+  def dayAbbr_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("day_abbr")(x.asInstanceOf[js.Any])
+  
+  @JSImport("node-calendar", "day_name")
+  @js.native
+  def dayName: js.Array[String] = js.native
+  
+  @scala.inline
+  def dayName_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("day_name")(x.asInstanceOf[js.Any])
+  
+  @JSImport("node-calendar", "isleap")
+  @js.native
+  def isleap(year: Double): Boolean = js.native
+  
+  @JSImport("node-calendar", "leapdays")
+  @js.native
+  def leapdays(y1: Double, y2: Double): Double = js.native
+  
+  @JSImport("node-calendar", "month_abbr")
+  @js.native
+  def monthAbbr: js.Array[String] = js.native
+  
+  @scala.inline
+  def monthAbbr_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("month_abbr")(x.asInstanceOf[js.Any])
+  
+  @JSImport("node-calendar", "month_name")
+  @js.native
+  def monthName: js.Array[String] = js.native
+  
+  @scala.inline
+  def monthName_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("month_name")(x.asInstanceOf[js.Any])
+  
+  @JSImport("node-calendar", "monthrange")
+  @js.native
+  def monthrange(year: Double, month: Double): js.Tuple2[Double, Double] = js.native
+  
+  @JSImport("node-calendar", "setlocale")
+  @js.native
+  def setlocale(): Unit = js.native
+  @JSImport("node-calendar", "setlocale")
+  @js.native
+  def setlocale(locale: String): Unit = js.native
+  
+  @JSImport("node-calendar", "timegm")
+  @js.native
+  def timegm(timegmt: js.Tuple6[Double, Double, Double, Double, Double, Double]): Double = js.native
+  
+  @JSImport("node-calendar", "weekday")
+  @js.native
+  def weekday(year: Double, month: Double, day: Double): Double = js.native
 }

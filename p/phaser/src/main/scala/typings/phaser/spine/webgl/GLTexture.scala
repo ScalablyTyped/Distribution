@@ -3,6 +3,7 @@ package typings.phaser.spine.webgl
 import typings.phaser.spine.Disposable
 import typings.phaser.spine.Restorable
 import typings.phaser.spine.Texture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,14 +1,15 @@
 package typings.firebase.mod.firebase.analytics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EventName extends js.Object
+sealed trait EventName extends StObject
 @JSImport("firebase", "firebase.analytics.EventName")
 @js.native
-object EventName extends js.Object {
+object EventName extends StObject {
   
   @js.native
   sealed trait ADD_PAYMENT_INFO extends EventName

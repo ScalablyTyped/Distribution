@@ -10,6 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XMultiPropertyStates
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertiesChangeListener
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,27 +53,15 @@ object XAutoStyle {
   }
   
   @scala.inline
-  implicit class XAutoStyleOps[Self <: XAutoStyle] (val x: Self) extends AnyVal {
+  implicit class XAutoStyleMutableBuilder[Self <: XAutoStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetProperties(value: () => PropertyValues): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProperties(value: PropertyValues): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPropertiesVarargs(value: PropertyValue*): Self = this.set("Properties", js.Array(value :_*))
-    
-    @scala.inline
-    def setProperties(value: PropertyValues): Self = this.set("Properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetProperties(value: () => PropertyValues): Self = this.set("getProperties", js.Any.fromFunction0(value))
+    def setPropertiesVarargs(value: PropertyValue*): Self = StObject.set(x, "Properties", js.Array(value :_*))
   }
 }

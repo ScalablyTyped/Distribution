@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BiddersResource extends js.Object {
+trait BiddersResource extends StObject {
   
   var accounts: AccountsResource = js.native
   
@@ -20,24 +21,12 @@ object BiddersResource {
   }
   
   @scala.inline
-  implicit class BiddersResourceOps[Self <: BiddersResource] (val x: Self) extends AnyVal {
+  implicit class BiddersResourceMutableBuilder[Self <: BiddersResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccounts(value: AccountsResource): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccounts(value: AccountsResource): Self = this.set("accounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFilterSets(value: FilterSetsResource): Self = this.set("filterSets", value.asInstanceOf[js.Any])
+    def setFilterSets(value: FilterSetsResource): Self = StObject.set(x, "filterSets", value.asInstanceOf[js.Any])
   }
 }

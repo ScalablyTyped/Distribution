@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEffectRendererOptions extends js.Object {
+trait IEffectRendererOptions extends StObject {
   
   /**
     * Defines the indices.
@@ -26,36 +27,24 @@ object IEffectRendererOptions {
   }
   
   @scala.inline
-  implicit class IEffectRendererOptionsOps[Self <: IEffectRendererOptions] (val x: Self) extends AnyVal {
+  implicit class IEffectRendererOptionsMutableBuilder[Self <: IEffectRendererOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
     
     @scala.inline
-    def setIndicesVarargs(value: Double*): Self = this.set("indices", js.Array(value :_*))
+    def setPositions(value: js.Array[Double]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndices(value: js.Array[Double]): Self = this.set("indices", value.asInstanceOf[js.Any])
+    def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
     
     @scala.inline
-    def deleteIndices: Self = this.set("indices", js.undefined)
-    
-    @scala.inline
-    def setPositionsVarargs(value: Double*): Self = this.set("positions", js.Array(value :_*))
-    
-    @scala.inline
-    def setPositions(value: js.Array[Double]): Self = this.set("positions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePositions: Self = this.set("positions", js.undefined)
+    def setPositionsVarargs(value: Double*): Self = StObject.set(x, "positions", js.Array(value :_*))
   }
 }

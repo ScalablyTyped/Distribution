@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutputChannelMapping extends js.Object {
+trait OutputChannelMapping extends StObject {
   
   /**
     * List of input channels
@@ -21,27 +22,15 @@ object OutputChannelMapping {
   }
   
   @scala.inline
-  implicit class OutputChannelMappingOps[Self <: OutputChannelMapping] (val x: Self) extends AnyVal {
+  implicit class OutputChannelMappingMutableBuilder[Self <: OutputChannelMapping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputChannels(value: listOfIntegerMinNegative60Max6): Self = StObject.set(x, "InputChannels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputChannelsUndefined: Self = StObject.set(x, "InputChannels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInputChannelsVarargs(value: integerMinNegative60Max6*): Self = this.set("InputChannels", js.Array(value :_*))
-    
-    @scala.inline
-    def setInputChannels(value: listOfIntegerMinNegative60Max6): Self = this.set("InputChannels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputChannels: Self = this.set("InputChannels", js.undefined)
+    def setInputChannelsVarargs(value: integerMinNegative60Max6*): Self = StObject.set(x, "InputChannels", js.Array(value :_*))
   }
 }

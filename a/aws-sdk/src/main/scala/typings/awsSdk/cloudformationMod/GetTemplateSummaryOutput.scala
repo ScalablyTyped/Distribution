@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTemplateSummaryOutput extends js.Object {
+trait GetTemplateSummaryOutput extends StObject {
   
   /**
     * The capabilities found within the template. If your template contains IAM resources, you must specify the CAPABILITY_IAM or CAPABILITY_NAMED_IAM value for this parameter when you use the CreateStack or UpdateStack actions with your template; otherwise, those actions return an InsufficientCapabilities error. For more information, see Acknowledging IAM Resources in AWS CloudFormation Templates.
@@ -61,87 +62,75 @@ object GetTemplateSummaryOutput {
   }
   
   @scala.inline
-  implicit class GetTemplateSummaryOutputOps[Self <: GetTemplateSummaryOutput] (val x: Self) extends AnyVal {
+  implicit class GetTemplateSummaryOutputMutableBuilder[Self <: GetTemplateSummaryOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapabilities(value: Capabilities): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapabilitiesReason(value: CapabilitiesReason): Self = StObject.set(x, "CapabilitiesReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapabilitiesReasonUndefined: Self = StObject.set(x, "CapabilitiesReason", js.undefined)
     
     @scala.inline
-    def setCapabilitiesVarargs(value: Capability*): Self = this.set("Capabilities", js.Array(value :_*))
+    def setCapabilitiesUndefined: Self = StObject.set(x, "Capabilities", js.undefined)
     
     @scala.inline
-    def setCapabilities(value: Capabilities): Self = this.set("Capabilities", value.asInstanceOf[js.Any])
+    def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "Capabilities", js.Array(value :_*))
     
     @scala.inline
-    def deleteCapabilities: Self = this.set("Capabilities", js.undefined)
+    def setDeclaredTransforms(value: TransformsList): Self = StObject.set(x, "DeclaredTransforms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilitiesReason(value: CapabilitiesReason): Self = this.set("CapabilitiesReason", value.asInstanceOf[js.Any])
+    def setDeclaredTransformsUndefined: Self = StObject.set(x, "DeclaredTransforms", js.undefined)
     
     @scala.inline
-    def deleteCapabilitiesReason: Self = this.set("CapabilitiesReason", js.undefined)
+    def setDeclaredTransformsVarargs(value: TransformName*): Self = StObject.set(x, "DeclaredTransforms", js.Array(value :_*))
     
     @scala.inline
-    def setDeclaredTransformsVarargs(value: TransformName*): Self = this.set("DeclaredTransforms", js.Array(value :_*))
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeclaredTransforms(value: TransformsList): Self = this.set("DeclaredTransforms", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteDeclaredTransforms: Self = this.set("DeclaredTransforms", js.undefined)
+    def setMetadata(value: Metadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setParameters(value: ParameterDeclarations): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: Metadata): Self = this.set("Metadata", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("Metadata", js.undefined)
+    def setParametersVarargs(value: ParameterDeclaration*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
     
     @scala.inline
-    def setParametersVarargs(value: ParameterDeclaration*): Self = this.set("Parameters", js.Array(value :_*))
+    def setResourceIdentifierSummaries(value: ResourceIdentifierSummaries): Self = StObject.set(x, "ResourceIdentifierSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: ParameterDeclarations): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    def setResourceIdentifierSummariesUndefined: Self = StObject.set(x, "ResourceIdentifierSummaries", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    def setResourceIdentifierSummariesVarargs(value: ResourceIdentifierSummary*): Self = StObject.set(x, "ResourceIdentifierSummaries", js.Array(value :_*))
     
     @scala.inline
-    def setResourceIdentifierSummariesVarargs(value: ResourceIdentifierSummary*): Self = this.set("ResourceIdentifierSummaries", js.Array(value :_*))
+    def setResourceTypes(value: ResourceTypes): Self = StObject.set(x, "ResourceTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceIdentifierSummaries(value: ResourceIdentifierSummaries): Self = this.set("ResourceIdentifierSummaries", value.asInstanceOf[js.Any])
+    def setResourceTypesUndefined: Self = StObject.set(x, "ResourceTypes", js.undefined)
     
     @scala.inline
-    def deleteResourceIdentifierSummaries: Self = this.set("ResourceIdentifierSummaries", js.undefined)
+    def setResourceTypesVarargs(value: ResourceType*): Self = StObject.set(x, "ResourceTypes", js.Array(value :_*))
     
     @scala.inline
-    def setResourceTypesVarargs(value: ResourceType*): Self = this.set("ResourceTypes", js.Array(value :_*))
+    def setVersion(value: Version): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceTypes(value: ResourceTypes): Self = this.set("ResourceTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceTypes: Self = this.set("ResourceTypes", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: Version): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

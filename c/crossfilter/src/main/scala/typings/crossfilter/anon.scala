@@ -5,16 +5,15 @@ import typings.crossfilter.CrossFilter.Heap
 import typings.crossfilter.CrossFilter.HeapSelect
 import typings.crossfilter.CrossFilter.Selector
 import typings.crossfilter.CrossFilter.Sort
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait By extends js.Object {
+  trait By extends StObject {
     
     def apply[T](array: js.Array[T], lo: Double, hi: Double): js.Array[T] = js.native
     
@@ -22,7 +21,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait Call extends js.Object {
+  trait Call extends StObject {
     
     def apply[T](array: js.Array[T], value: T, lo: Double, hi: Double): Double = js.native
     
@@ -30,7 +29,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait CallArrayLoHi extends js.Object {
+  trait CallArrayLoHi extends StObject {
     
     def apply[T](array: js.Array[T], lo: Double, hi: Double): js.Array[T] = js.native
     
@@ -38,7 +37,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait CallBy extends js.Object {
+  trait CallBy extends StObject {
     
     def apply[T](array: js.Array[T], lo: Double, hi: Double, k: Double): js.Array[T] = js.native
     

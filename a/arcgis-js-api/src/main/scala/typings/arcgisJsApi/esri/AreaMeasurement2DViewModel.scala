@@ -16,12 +16,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.measured
 import typings.arcgisJsApi.arcgisJsApiStrings.measuring
 import typings.arcgisJsApi.arcgisJsApiStrings.metric
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AreaMeasurement2DViewModel extends js.Object {
+trait AreaMeasurement2DViewModel extends StObject {
   
   /**
     * Clears the current measurement.
@@ -125,62 +126,50 @@ object AreaMeasurement2DViewModel {
   }
   
   @scala.inline
-  implicit class AreaMeasurement2DViewModelOps[Self <: AreaMeasurement2DViewModel] (val x: Self) extends AnyVal {
+  implicit class AreaMeasurement2DViewModelMutableBuilder[Self <: AreaMeasurement2DViewModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearMeasurement(value: () => Unit): Self = StObject.set(x, "clearMeasurement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeodesicDistanceThreshold(value: Double): Self = StObject.set(x, "geodesicDistanceThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setMeasurement(value: AreaMeasurement2DViewModelMeasurement): Self = StObject.set(x, "measurement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearMeasurement(value: () => Unit): Self = this.set("clearMeasurement", js.Any.fromFunction0(value))
+    def setMeasurementLabel(value: AreaMeasurement2DViewModelMeasurementLabel): Self = StObject.set(x, "measurementLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeodesicDistanceThreshold(value: Double): Self = this.set("geodesicDistanceThreshold", value.asInstanceOf[js.Any])
+    def setNewMeasurement(value: () => Unit): Self = StObject.set(x, "newMeasurement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMeasurement(value: AreaMeasurement2DViewModelMeasurement): Self = this.set("measurement", value.asInstanceOf[js.Any])
+    def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMeasurementLabel(value: AreaMeasurement2DViewModelMeasurementLabel): Self = this.set("measurementLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewMeasurement(value: () => Unit): Self = this.set("newMeasurement", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStart(value: () => Unit): Self = this.set("start", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setState(value: disabled | ready | measuring | measured): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: disabled | ready | measuring | measured): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUnit(
       value: metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
-    ): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnitOptionsVarargs(
-      value: (metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares)*
-    ): Self = this.set("unitOptions", js.Array(value :_*))
+    ): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUnitOptions(
       value: js.Array[
           metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
         ]
-    ): Self = this.set("unitOptions", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "unitOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setView(value: MapView): Self = this.set("view", value.asInstanceOf[js.Any])
+    def setUnitOptionsVarargs(
+      value: (metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares)*
+    ): Self = StObject.set(x, "unitOptions", js.Array(value :_*))
+    
+    @scala.inline
+    def setView(value: MapView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

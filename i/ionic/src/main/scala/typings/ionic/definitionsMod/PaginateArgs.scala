@@ -2,13 +2,14 @@ package typings.ionic.definitionsMod
 
 import typings.ionic.anon.PartialPaginatorState
 import typings.ionic.anon.Req
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<ionic.ionic/definitions.PaginatorDeps<T, ionic.ionic/definitions.PaginatorState>, 'reqgen' | 'guard' | 'state' | 'max'> */
 @js.native
-trait PaginateArgs[T /* <: Response[js.Array[js.Object]] */] extends js.Object {
+trait PaginateArgs[T /* <: Response[js.Array[js.Object]] */] extends StObject {
   
   def guard(res: APIResponseSuccess): /* is T */ Boolean = js.native
   @JSName("guard")

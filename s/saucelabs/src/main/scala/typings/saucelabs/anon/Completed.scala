@@ -1,6 +1,7 @@
 package typings.saucelabs.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,66 +35,54 @@ object Completed {
   }
   
   @scala.inline
-  implicit class CompletedOps[Self <: Completed] (val x: Self) extends AnyVal {
+  implicit class CompletedMutableBuilder[Self <: Completed] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompleted(value: Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrored(value: Double): Self = StObject.set(x, "errored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleted(value: Double): Self = this.set("completed", value.asInstanceOf[js.Any])
+    def setErroredUndefined: Self = StObject.set(x, "errored", js.undefined)
     
     @scala.inline
-    def deleteCompleted: Self = this.set("completed", js.undefined)
+    def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrored(value: Double): Self = this.set("errored", value.asInstanceOf[js.Any])
+    def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
     
     @scala.inline
-    def deleteErrored: Self = this.set("errored", js.undefined)
+    def setFinished(value: Double): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailed(value: Double): Self = this.set("failed", value.asInstanceOf[js.Any])
+    def setFinishedUndefined: Self = StObject.set(x, "finished", js.undefined)
     
     @scala.inline
-    def deleteFailed: Self = this.set("failed", js.undefined)
+    def setPassed(value: Double): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinished(value: Double): Self = this.set("finished", value.asInstanceOf[js.Any])
+    def setPassedUndefined: Self = StObject.set(x, "passed", js.undefined)
     
     @scala.inline
-    def deleteFinished: Self = this.set("finished", js.undefined)
+    def setPublic(value: Double): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassed(value: Double): Self = this.set("passed", value.asInstanceOf[js.Any])
+    def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
     
     @scala.inline
-    def deletePassed: Self = this.set("passed", js.undefined)
+    def setQueued(value: Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublic(value: Double): Self = this.set("public", value.asInstanceOf[js.Any])
+    def setQueuedUndefined: Self = StObject.set(x, "queued", js.undefined)
     
     @scala.inline
-    def deletePublic: Self = this.set("public", js.undefined)
+    def setRunning(value: Double): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueued(value: Double): Self = this.set("queued", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueued: Self = this.set("queued", js.undefined)
-    
-    @scala.inline
-    def setRunning(value: Double): Self = this.set("running", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRunning: Self = this.set("running", js.undefined)
+    def setRunningUndefined: Self = StObject.set(x, "running", js.undefined)
   }
 }

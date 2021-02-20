@@ -1,11 +1,12 @@
 package typings.pixiJs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Chars extends js.Object {
+trait Chars extends StObject {
   
   var chars: js.UndefOr[String | (js.Array[js.Array[String] | String])] = js.native
   
@@ -26,51 +27,39 @@ object Chars {
   }
   
   @scala.inline
-  implicit class CharsOps[Self <: Chars] (val x: Self) extends AnyVal {
+  implicit class CharsMutableBuilder[Self <: Chars] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChars(value: String | (js.Array[js.Array[String] | String])): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharsUndefined: Self = StObject.set(x, "chars", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCharsVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "chars", js.Array(value :_*))
     
     @scala.inline
-    def setCharsVarargs(value: (js.Array[String] | String)*): Self = this.set("chars", js.Array(value :_*))
+    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChars(value: String | (js.Array[js.Array[String] | String])): Self = this.set("chars", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteChars: Self = this.set("chars", js.undefined)
+    def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setTextureHeight(value: Double): Self = StObject.set(x, "textureHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolution(value: Double): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    def setTextureHeightUndefined: Self = StObject.set(x, "textureHeight", js.undefined)
     
     @scala.inline
-    def deleteResolution: Self = this.set("resolution", js.undefined)
+    def setTextureWidth(value: Double): Self = StObject.set(x, "textureWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextureHeight(value: Double): Self = this.set("textureHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextureHeight: Self = this.set("textureHeight", js.undefined)
-    
-    @scala.inline
-    def setTextureWidth(value: Double): Self = this.set("textureWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextureWidth: Self = this.set("textureWidth", js.undefined)
+    def setTextureWidthUndefined: Self = StObject.set(x, "textureWidth", js.undefined)
   }
 }

@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.embed.XStorage
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,39 +55,27 @@ object XStorageBasedDocument {
   }
   
   @scala.inline
-  implicit class XStorageBasedDocumentOps[Self <: XStorageBasedDocument] (val x: Self) extends AnyVal {
+  implicit class XStorageBasedDocumentMutableBuilder[Self <: XStorageBasedDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddStorageChangeListener(value: XStorageChangeListener => Unit): Self = StObject.set(x, "addStorageChangeListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentStorage(value: XStorage): Self = StObject.set(x, "DocumentStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDocumentStorage(value: () => XStorage): Self = StObject.set(x, "getDocumentStorage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDocumentStorage(value: XStorage): Self = this.set("DocumentStorage", value.asInstanceOf[js.Any])
+    def setLoadFromStorage(value: (XStorage, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "loadFromStorage", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddStorageChangeListener(value: XStorageChangeListener => Unit): Self = this.set("addStorageChangeListener", js.Any.fromFunction1(value))
+    def setRemoveStorageChangeListener(value: XStorageChangeListener => Unit): Self = StObject.set(x, "removeStorageChangeListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDocumentStorage(value: () => XStorage): Self = this.set("getDocumentStorage", js.Any.fromFunction0(value))
+    def setStoreToStorage(value: (XStorage, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "storeToStorage", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLoadFromStorage(value: (XStorage, SeqEquiv[PropertyValue]) => Unit): Self = this.set("loadFromStorage", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemoveStorageChangeListener(value: XStorageChangeListener => Unit): Self = this.set("removeStorageChangeListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStoreToStorage(value: (XStorage, SeqEquiv[PropertyValue]) => Unit): Self = this.set("storeToStorage", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSwitchToStorage(value: XStorage => Unit): Self = this.set("switchToStorage", js.Any.fromFunction1(value))
+    def setSwitchToStorage(value: XStorage => Unit): Self = StObject.set(x, "switchToStorage", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.meteor.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsertedId extends js.Object {
+trait InsertedId extends StObject {
   
   var insertedId: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object InsertedId {
   }
   
   @scala.inline
-  implicit class InsertedIdOps[Self <: InsertedId] (val x: Self) extends AnyVal {
+  implicit class InsertedIdMutableBuilder[Self <: InsertedId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInsertedId(value: String): Self = StObject.set(x, "insertedId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsertedIdUndefined: Self = StObject.set(x, "insertedId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumberAffected(value: Double): Self = StObject.set(x, "numberAffected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertedId(value: String): Self = this.set("insertedId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsertedId: Self = this.set("insertedId", js.undefined)
-    
-    @scala.inline
-    def setNumberAffected(value: Double): Self = this.set("numberAffected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberAffected: Self = this.set("numberAffected", js.undefined)
+    def setNumberAffectedUndefined: Self = StObject.set(x, "numberAffected", js.undefined)
   }
 }

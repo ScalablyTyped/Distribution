@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MFAOptionType extends js.Object {
+trait MFAOptionType extends StObject {
   
   /**
     * The attribute name of the MFA option type. The only valid value is phone_number.
@@ -26,30 +27,18 @@ object MFAOptionType {
   }
   
   @scala.inline
-  implicit class MFAOptionTypeOps[Self <: MFAOptionType] (val x: Self) extends AnyVal {
+  implicit class MFAOptionTypeMutableBuilder[Self <: MFAOptionType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeName(value: AttributeNameType): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeliveryMedium(value: DeliveryMediumType): Self = StObject.set(x, "DeliveryMedium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeName(value: AttributeNameType): Self = this.set("AttributeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributeName: Self = this.set("AttributeName", js.undefined)
-    
-    @scala.inline
-    def setDeliveryMedium(value: DeliveryMediumType): Self = this.set("DeliveryMedium", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeliveryMedium: Self = this.set("DeliveryMedium", js.undefined)
+    def setDeliveryMediumUndefined: Self = StObject.set(x, "DeliveryMedium", js.undefined)
   }
 }

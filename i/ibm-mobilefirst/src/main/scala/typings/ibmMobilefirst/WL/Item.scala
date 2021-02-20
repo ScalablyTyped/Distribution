@@ -1,11 +1,12 @@
 package typings.ibmMobilefirst.WL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Item extends js.Object {
+trait Item extends StObject {
   
   def setEnabled(isEnable: String): Unit = js.native
   
@@ -22,27 +23,15 @@ object Item {
   }
   
   @scala.inline
-  implicit class ItemOps[Self <: Item] (val x: Self) extends AnyVal {
+  implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetEnabled(value: String => Unit): Self = StObject.set(x, "setEnabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetImagePath(value: String => Unit): Self = StObject.set(x, "setImagePath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetEnabled(value: String => Unit): Self = this.set("setEnabled", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetImagePath(value: String => Unit): Self = this.set("setImagePath", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTitle(value: String => Unit): Self = this.set("setTitle", js.Any.fromFunction1(value))
+    def setSetTitle(value: String => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
   }
 }

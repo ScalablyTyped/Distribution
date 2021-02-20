@@ -6,6 +6,7 @@ import typings.mendixmodelsdk.projectsMod.projects.Document
 import typings.mendixmodelsdk.projectsMod.projects.FolderBase
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.webservicesMod.StructureVersionInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,12 +36,23 @@ abstract class PublishedServiceBase protected () extends Document {
   
   def versionedServices: IList[VersionedService] = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedServiceBase")
-@js.native
-object PublishedServiceBase extends js.Object {
+object PublishedServiceBase {
   
-  var structureTypeName: String = js.native
+  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedServiceBase")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedServiceBase.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedServiceBase.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

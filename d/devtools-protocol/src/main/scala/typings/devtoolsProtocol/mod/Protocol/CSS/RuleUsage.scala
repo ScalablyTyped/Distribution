@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.CSS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleUsage extends js.Object {
+trait RuleUsage extends StObject {
   
   /**
     * Offset of the end of the rule body from the beginning of the stylesheet.
@@ -37,30 +38,18 @@ object RuleUsage {
   }
   
   @scala.inline
-  implicit class RuleUsageOps[Self <: RuleUsage] (val x: Self) extends AnyVal {
+  implicit class RuleUsageMutableBuilder[Self <: RuleUsage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStartOffset(value: Double): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndOffset(value: Double): Self = this.set("endOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartOffset(value: Double): Self = this.set("startOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyleSheetId(value: StyleSheetId): Self = this.set("styleSheetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsed(value: Boolean): Self = this.set("used", value.asInstanceOf[js.Any])
+    def setUsed(value: Boolean): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
   }
 }

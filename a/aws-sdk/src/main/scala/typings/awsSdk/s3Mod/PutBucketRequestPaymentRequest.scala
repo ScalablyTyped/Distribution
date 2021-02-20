@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutBucketRequestPaymentRequest extends js.Object {
+trait PutBucketRequestPaymentRequest extends StObject {
   
   /**
     * The bucket name.
@@ -36,36 +37,24 @@ object PutBucketRequestPaymentRequest {
   }
   
   @scala.inline
-  implicit class PutBucketRequestPaymentRequestOps[Self <: PutBucketRequestPaymentRequest] (val x: Self) extends AnyVal {
+  implicit class PutBucketRequestPaymentRequestMutableBuilder[Self <: PutBucketRequestPaymentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentMD5(value: ContentMD5): Self = StObject.set(x, "ContentMD5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentMD5Undefined: Self = StObject.set(x, "ContentMD5", js.undefined)
     
     @scala.inline
-    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestPaymentConfiguration(value: RequestPaymentConfiguration): Self = this.set("RequestPaymentConfiguration", value.asInstanceOf[js.Any])
+    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
     
     @scala.inline
-    def setContentMD5(value: ContentMD5): Self = this.set("ContentMD5", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentMD5: Self = this.set("ContentMD5", js.undefined)
-    
-    @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = this.set("ExpectedBucketOwner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpectedBucketOwner: Self = this.set("ExpectedBucketOwner", js.undefined)
+    def setRequestPaymentConfiguration(value: RequestPaymentConfiguration): Self = StObject.set(x, "RequestPaymentConfiguration", value.asInstanceOf[js.Any])
   }
 }

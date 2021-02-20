@@ -1,12 +1,13 @@
 package typings.cesium.anon
 
 import typings.cesium.mod.Property
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutlineWidth extends js.Object {
+trait OutlineWidth extends StObject {
   
   var color: js.UndefOr[Property] = js.native
   
@@ -23,36 +24,24 @@ object OutlineWidth {
   }
   
   @scala.inline
-  implicit class OutlineWidthOps[Self <: OutlineWidth] (val x: Self) extends AnyVal {
+  implicit class OutlineWidthMutableBuilder[Self <: OutlineWidth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: Property): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutlineColor(value: Property): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Property): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setOutlineWidth(value: Property): Self = StObject.set(x, "outlineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineColor(value: Property): Self = this.set("outlineColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutlineColor: Self = this.set("outlineColor", js.undefined)
-    
-    @scala.inline
-    def setOutlineWidth(value: Property): Self = this.set("outlineWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutlineWidth: Self = this.set("outlineWidth", js.undefined)
+    def setOutlineWidthUndefined: Self = StObject.set(x, "outlineWidth", js.undefined)
   }
 }

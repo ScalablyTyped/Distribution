@@ -6,12 +6,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.kilometers_
 import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeneralizeParametersProperties extends js.Object {
+trait GeneralizeParametersProperties extends StObject {
   
   /**
     * The maximum deviation unit.
@@ -43,39 +44,27 @@ object GeneralizeParametersProperties {
   }
   
   @scala.inline
-  implicit class GeneralizeParametersPropertiesOps[Self <: GeneralizeParametersProperties] (val x: Self) extends AnyVal {
+  implicit class GeneralizeParametersPropertiesMutableBuilder[Self <: GeneralizeParametersProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviationUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "deviationUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviationUnitUndefined: Self = StObject.set(x, "deviationUnit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeometries(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviationUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = this.set("deviationUnit", value.asInstanceOf[js.Any])
+    def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
     
     @scala.inline
-    def deleteDeviationUnit: Self = this.set("deviationUnit", js.undefined)
+    def setGeometriesVarargs(value: GeometryProperties*): Self = StObject.set(x, "geometries", js.Array(value :_*))
     
     @scala.inline
-    def setGeometriesVarargs(value: GeometryProperties*): Self = this.set("geometries", js.Array(value :_*))
+    def setMaxDeviation(value: Double): Self = StObject.set(x, "maxDeviation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometries(value: js.Array[GeometryProperties]): Self = this.set("geometries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGeometries: Self = this.set("geometries", js.undefined)
-    
-    @scala.inline
-    def setMaxDeviation(value: Double): Self = this.set("maxDeviation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxDeviation: Self = this.set("maxDeviation", js.undefined)
+    def setMaxDeviationUndefined: Self = StObject.set(x, "maxDeviation", js.undefined)
   }
 }

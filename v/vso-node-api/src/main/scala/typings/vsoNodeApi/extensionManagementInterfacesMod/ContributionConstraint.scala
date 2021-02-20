@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContributionConstraint extends js.Object {
+trait ContributionConstraint extends StObject {
   
   /**
     * An optional property that can be specified to group constraints together. All constraints within a group are AND'd together (all must be evaluate to True in order for the contribution to be included). Different groups of constraints are OR'd (only one group needs to evaluate to True for the contribution to be included).
@@ -53,39 +54,27 @@ object ContributionConstraint {
   }
   
   @scala.inline
-  implicit class ContributionConstraintOps[Self <: ContributionConstraint] (val x: Self) extends AnyVal {
+  implicit class ContributionConstraintMutableBuilder[Self <: ContributionConstraint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroup(value: Double): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: Double): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInverse(value: Boolean): Self = this.set("inverse", value.asInstanceOf[js.Any])
+    def setRelationships(value: js.Array[String]): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperties(value: js.Any): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelationshipsVarargs(value: String*): Self = this.set("relationships", js.Array(value :_*))
-    
-    @scala.inline
-    def setRelationships(value: js.Array[String]): Self = this.set("relationships", value.asInstanceOf[js.Any])
+    def setRelationshipsVarargs(value: String*): Self = StObject.set(x, "relationships", js.Array(value :_*))
   }
 }

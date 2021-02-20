@@ -1,11 +1,12 @@
 package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobConfiguration extends js.Object {
+trait JobConfiguration extends StObject {
   
   var copy: js.UndefOr[JobConfigurationTableCopy] = js.native
   
@@ -32,66 +33,54 @@ object JobConfiguration {
   }
   
   @scala.inline
-  implicit class JobConfigurationOps[Self <: JobConfiguration] (val x: Self) extends AnyVal {
+  implicit class JobConfigurationMutableBuilder[Self <: JobConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopy(value: JobConfigurationTableCopy): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopy(value: JobConfigurationTableCopy): Self = this.set("copy", value.asInstanceOf[js.Any])
+    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
     @scala.inline
-    def deleteCopy: Self = this.set("copy", js.undefined)
+    def setExtract(value: JobConfigurationExtract): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("dryRun", value.asInstanceOf[js.Any])
+    def setExtractUndefined: Self = StObject.set(x, "extract", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("dryRun", js.undefined)
+    def setJobTimeoutMs(value: String): Self = StObject.set(x, "jobTimeoutMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtract(value: JobConfigurationExtract): Self = this.set("extract", value.asInstanceOf[js.Any])
+    def setJobTimeoutMsUndefined: Self = StObject.set(x, "jobTimeoutMs", js.undefined)
     
     @scala.inline
-    def deleteExtract: Self = this.set("extract", js.undefined)
+    def setJobType(value: String): Self = StObject.set(x, "jobType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobTimeoutMs(value: String): Self = this.set("jobTimeoutMs", value.asInstanceOf[js.Any])
+    def setJobTypeUndefined: Self = StObject.set(x, "jobType", js.undefined)
     
     @scala.inline
-    def deleteJobTimeoutMs: Self = this.set("jobTimeoutMs", js.undefined)
+    def setLabels(value: js.Object): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobType(value: String): Self = this.set("jobType", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteJobType: Self = this.set("jobType", js.undefined)
+    def setLoad(value: JobConfigurationLoad): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: js.Object): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setQuery(value: JobConfigurationQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoad(value: JobConfigurationLoad): Self = this.set("load", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoad: Self = this.set("load", js.undefined)
-    
-    @scala.inline
-    def setQuery(value: JobConfigurationQuery): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

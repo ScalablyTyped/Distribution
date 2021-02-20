@@ -3,16 +3,15 @@ package typings.rpiGpio
 import typings.rpiGpio.mod.EDGE
 import typings.rpiGpio.mod.MODE
 import typings.rpiGpio.mod.PinDirection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait DIRHIGH extends js.Object {
+  trait DIRHIGH extends StObject {
     
     var DIR_HIGH: PinDirection = js.native
     

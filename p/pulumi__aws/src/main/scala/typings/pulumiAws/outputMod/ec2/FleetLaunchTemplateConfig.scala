@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.ec2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FleetLaunchTemplateConfig extends js.Object {
+trait FleetLaunchTemplateConfig extends StObject {
   
   /**
     * Nested argument containing EC2 Launch Template to use. Defined below.
@@ -26,30 +27,18 @@ object FleetLaunchTemplateConfig {
   }
   
   @scala.inline
-  implicit class FleetLaunchTemplateConfigOps[Self <: FleetLaunchTemplateConfig] (val x: Self) extends AnyVal {
+  implicit class FleetLaunchTemplateConfigMutableBuilder[Self <: FleetLaunchTemplateConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLaunchTemplateSpecification(value: FleetLaunchTemplateConfigLaunchTemplateSpecification): Self = StObject.set(x, "launchTemplateSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOverrides(value: js.Array[FleetLaunchTemplateConfigOverride]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
     @scala.inline
-    def setLaunchTemplateSpecification(value: FleetLaunchTemplateConfigLaunchTemplateSpecification): Self = this.set("launchTemplateSpecification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverridesVarargs(value: FleetLaunchTemplateConfigOverride*): Self = this.set("overrides", js.Array(value :_*))
-    
-    @scala.inline
-    def setOverrides(value: js.Array[FleetLaunchTemplateConfigOverride]): Self = this.set("overrides", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    def setOverridesVarargs(value: FleetLaunchTemplateConfigOverride*): Self = StObject.set(x, "overrides", js.Array(value :_*))
   }
 }

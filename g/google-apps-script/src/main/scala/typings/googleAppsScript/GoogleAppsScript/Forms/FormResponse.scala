@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Forms
 
 import typings.googleAppsScript.GoogleAppsScript.Base.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     }
   */
 @js.native
-trait FormResponse extends js.Object {
+trait FormResponse extends StObject {
   
   def getEditResponseUrl(): String = js.native
   
@@ -75,54 +76,42 @@ object FormResponse {
   }
   
   @scala.inline
-  implicit class FormResponseOps[Self <: FormResponse] (val x: Self) extends AnyVal {
+  implicit class FormResponseMutableBuilder[Self <: FormResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetEditResponseUrl(value: () => String): Self = StObject.set(x, "getEditResponseUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetGradableItemResponses(value: () => js.Array[ItemResponse]): Self = StObject.set(x, "getGradableItemResponses", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetGradableResponseForItem(value: Item => ItemResponse): Self = StObject.set(x, "getGradableResponseForItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetEditResponseUrl(value: () => String): Self = this.set("getEditResponseUrl", js.Any.fromFunction0(value))
+    def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetGradableItemResponses(value: () => js.Array[ItemResponse]): Self = this.set("getGradableItemResponses", js.Any.fromFunction0(value))
+    def setGetItemResponses(value: () => js.Array[ItemResponse]): Self = StObject.set(x, "getItemResponses", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetGradableResponseForItem(value: Item => ItemResponse): Self = this.set("getGradableResponseForItem", js.Any.fromFunction1(value))
+    def setGetRespondentEmail(value: () => String): Self = StObject.set(x, "getRespondentEmail", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => String): Self = this.set("getId", js.Any.fromFunction0(value))
+    def setGetResponseForItem(value: Item => ItemResponse): Self = StObject.set(x, "getResponseForItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetItemResponses(value: () => js.Array[ItemResponse]): Self = this.set("getItemResponses", js.Any.fromFunction0(value))
+    def setGetTimestamp(value: () => Date): Self = StObject.set(x, "getTimestamp", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRespondentEmail(value: () => String): Self = this.set("getRespondentEmail", js.Any.fromFunction0(value))
+    def setSubmit(value: () => FormResponse): Self = StObject.set(x, "submit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetResponseForItem(value: Item => ItemResponse): Self = this.set("getResponseForItem", js.Any.fromFunction1(value))
+    def setToPrefilledUrl(value: () => String): Self = StObject.set(x, "toPrefilledUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTimestamp(value: () => Date): Self = this.set("getTimestamp", js.Any.fromFunction0(value))
+    def setWithItemGrade(value: ItemResponse => FormResponse): Self = StObject.set(x, "withItemGrade", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSubmit(value: () => FormResponse): Self = this.set("submit", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToPrefilledUrl(value: () => String): Self = this.set("toPrefilledUrl", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWithItemGrade(value: ItemResponse => FormResponse): Self = this.set("withItemGrade", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithItemResponse(value: ItemResponse => FormResponse): Self = this.set("withItemResponse", js.Any.fromFunction1(value))
+    def setWithItemResponse(value: ItemResponse => FormResponse): Self = StObject.set(x, "withItemResponse", js.Any.fromFunction1(value))
   }
 }

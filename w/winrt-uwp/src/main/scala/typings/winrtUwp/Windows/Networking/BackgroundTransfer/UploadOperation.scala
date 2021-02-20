@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgre
 import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Storage.IStorageFile
 import typings.winrtUwp.Windows.Storage.Streams.IInputStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Performs an asynchronous upload operation. For an overview of Background Transfer capabilities, see Transferring data in the background. Download the Background Transfer sample for examples in JavaScript, C#, and C++. */
 @js.native
-trait UploadOperation extends js.Object {
+trait UploadOperation extends StObject {
   
   /**
     * Returns an asynchronous operation that can be used to monitor progress and completion of the attached upload. Calling this method allows an app to attach upload operations that were started in a previous app instance.
@@ -87,57 +88,45 @@ object UploadOperation {
   }
   
   @scala.inline
-  implicit class UploadOperationOps[Self <: UploadOperation] (val x: Self) extends AnyVal {
+  implicit class UploadOperationMutableBuilder[Self <: UploadOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachAsync(value: () => IPromiseWithIAsyncOperationWithProgress[UploadOperation, UploadOperation]): Self = StObject.set(x, "attachAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCostPolicy(value: BackgroundTransferCostPolicy): Self = StObject.set(x, "costPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetResponseInformation(value: () => ResponseInformation): Self = StObject.set(x, "getResponseInformation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAttachAsync(value: () => IPromiseWithIAsyncOperationWithProgress[UploadOperation, UploadOperation]): Self = this.set("attachAsync", js.Any.fromFunction0(value))
+    def setGetResultStreamAt(value: Double => IInputStream): Self = StObject.set(x, "getResultStreamAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCostPolicy(value: BackgroundTransferCostPolicy): Self = this.set("costPolicy", value.asInstanceOf[js.Any])
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetResponseInformation(value: () => ResponseInformation): Self = this.set("getResponseInformation", js.Any.fromFunction0(value))
+    def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetResultStreamAt(value: Double => IInputStream): Self = this.set("getResultStreamAt", js.Any.fromFunction1(value))
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setPriority(value: BackgroundTransferPriority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuid(value: String): Self = this.set("guid", value.asInstanceOf[js.Any])
+    def setProgress(value: BackgroundUploadProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setRequestedUri(value: Uri): Self = StObject.set(x, "requestedUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: BackgroundTransferPriority): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setSourceFile(value: IStorageFile): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: BackgroundUploadProgress): Self = this.set("progress", value.asInstanceOf[js.Any])
+    def setStartAsync(value: () => IPromiseWithIAsyncOperationWithProgress[UploadOperation, UploadOperation]): Self = StObject.set(x, "startAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRequestedUri(value: Uri): Self = this.set("requestedUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceFile(value: IStorageFile): Self = this.set("sourceFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartAsync(value: () => IPromiseWithIAsyncOperationWithProgress[UploadOperation, UploadOperation]): Self = this.set("startAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTransferGroup(value: BackgroundTransferGroup): Self = this.set("transferGroup", value.asInstanceOf[js.Any])
+    def setTransferGroup(value: BackgroundTransferGroup): Self = StObject.set(x, "transferGroup", value.asInstanceOf[js.Any])
   }
 }

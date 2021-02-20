@@ -7,14 +7,14 @@ import typings.fastCsvParse.typesMod.RowValidate
 import typings.node.Buffer
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@fast-csv/parse/build/src/CsvParserStream", JSImport.Namespace)
-@js.native
-object csvParserStreamMod extends js.Object {
+object csvParserStreamMod {
   
+  @JSImport("@fast-csv/parse/build/src/CsvParserStream", "CsvParserStream")
   @js.native
   class CsvParserStream[I /* <: Row[_] */, O /* <: Row[_] */] protected () extends Transform {
     def this(parserOptions: ParserOptions) = this()
@@ -66,9 +66,16 @@ object csvParserStreamMod extends js.Object {
     def validate(validateFunction: RowValidate[O]): CsvParserStream[I, O] = js.native
   }
   /* static members */
-  @js.native
-  object CsvParserStream extends js.Object {
+  object CsvParserStream {
     
-    var wrapDoneCallback: js.Any = js.native
+    @JSImport("@fast-csv/parse/build/src/CsvParserStream", "CsvParserStream")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@fast-csv/parse/build/src/CsvParserStream", "CsvParserStream.wrapDoneCallback")
+    @js.native
+    def wrapDoneCallback: js.Any = js.native
+    @scala.inline
+    def wrapDoneCallback_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrapDoneCallback")(x.asInstanceOf[js.Any])
   }
 }

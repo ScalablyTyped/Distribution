@@ -5,16 +5,18 @@ import typings.materialSlider.anon.SkipInitialUIUpdate
 import typings.materialSlider.foundationMod.MDCSliderFoundation
 import typings.std.Element
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/slider/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
+  @JSImport("@material/slider/component", "MDCSlider")
   @js.native
-  class MDCSlider () extends MDCComponent[MDCSliderFoundation] {
+  class MDCSlider protected () extends MDCComponent[MDCSliderFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCSliderFoundation, args: js.Any*) = this()
     
     /** @return Slider disabled state. */
     def getDisabled(): Boolean = js.native
@@ -53,10 +55,13 @@ object componentMod extends js.Object {
     def setValueToAriaValueTextFn(mapFn: js.Function1[/* value */ Double, String]): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MDCSlider extends js.Object {
+  object MDCSlider {
     
+    @JSImport("@material/slider/component", "MDCSlider.attachTo")
+    @js.native
     def attachTo(root: Element): MDCSlider = js.native
+    @JSImport("@material/slider/component", "MDCSlider.attachTo")
+    @js.native
     def attachTo(root: Element, options: SkipInitialUIUpdate): MDCSlider = js.native
   }
 }

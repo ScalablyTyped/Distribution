@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -115,135 +116,123 @@ object SupplyRequest {
   }
   
   @scala.inline
-  implicit class SupplyRequestOps[Self <: SupplyRequest] (val x: Self) extends AnyVal {
+  implicit class SupplyRequestMutableBuilder[Self <: SupplyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthoredOn(value: dateTime): Self = StObject.set(x, "authoredOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthoredOnUndefined: Self = StObject.set(x, "authoredOn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_authoredOn(value: Element): Self = this.set("_authoredOn", value.asInstanceOf[js.Any])
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def delete_authoredOn: Self = this.set("_authoredOn", js.undefined)
+    def setDeliverFrom(value: Reference): Self = StObject.set(x, "deliverFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_occurrenceDateTime(value: Element): Self = this.set("_occurrenceDateTime", value.asInstanceOf[js.Any])
+    def setDeliverFromUndefined: Self = StObject.set(x, "deliverFrom", js.undefined)
     
     @scala.inline
-    def delete_occurrenceDateTime: Self = this.set("_occurrenceDateTime", js.undefined)
+    def setDeliverTo(value: Reference): Self = StObject.set(x, "deliverTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_priority(value: Element): Self = this.set("_priority", value.asInstanceOf[js.Any])
+    def setDeliverToUndefined: Self = StObject.set(x, "deliverTo", js.undefined)
     
     @scala.inline
-    def delete_priority: Self = this.set("_priority", js.undefined)
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setOccurrenceDateTime(value: dateTime): Self = StObject.set(x, "occurrenceDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthoredOn(value: dateTime): Self = this.set("authoredOn", value.asInstanceOf[js.Any])
+    def setOccurrenceDateTimeUndefined: Self = StObject.set(x, "occurrenceDateTime", js.undefined)
     
     @scala.inline
-    def deleteAuthoredOn: Self = this.set("authoredOn", js.undefined)
+    def setOccurrencePeriod(value: Period): Self = StObject.set(x, "occurrencePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: CodeableConcept): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setOccurrencePeriodUndefined: Self = StObject.set(x, "occurrencePeriod", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setOccurrenceTiming(value: Timing): Self = StObject.set(x, "occurrenceTiming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliverFrom(value: Reference): Self = this.set("deliverFrom", value.asInstanceOf[js.Any])
+    def setOccurrenceTimingUndefined: Self = StObject.set(x, "occurrenceTiming", js.undefined)
     
     @scala.inline
-    def deleteDeliverFrom: Self = this.set("deliverFrom", js.undefined)
+    def setOrderedItem(value: SupplyRequestOrderedItem): Self = StObject.set(x, "orderedItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliverTo(value: Reference): Self = this.set("deliverTo", value.asInstanceOf[js.Any])
+    def setOrderedItemUndefined: Self = StObject.set(x, "orderedItem", js.undefined)
     
     @scala.inline
-    def deleteDeliverTo: Self = this.set("deliverTo", js.undefined)
+    def setPriority(value: code): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setReasonCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "reasonCodeableConcept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOccurrenceDateTime(value: dateTime): Self = this.set("occurrenceDateTime", value.asInstanceOf[js.Any])
+    def setReasonCodeableConceptUndefined: Self = StObject.set(x, "reasonCodeableConcept", js.undefined)
     
     @scala.inline
-    def deleteOccurrenceDateTime: Self = this.set("occurrenceDateTime", js.undefined)
+    def setReasonReference(value: Reference): Self = StObject.set(x, "reasonReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOccurrencePeriod(value: Period): Self = this.set("occurrencePeriod", value.asInstanceOf[js.Any])
+    def setReasonReferenceUndefined: Self = StObject.set(x, "reasonReference", js.undefined)
     
     @scala.inline
-    def deleteOccurrencePeriod: Self = this.set("occurrencePeriod", js.undefined)
+    def setRequester(value: SupplyRequestRequester): Self = StObject.set(x, "requester", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOccurrenceTiming(value: Timing): Self = this.set("occurrenceTiming", value.asInstanceOf[js.Any])
+    def setRequesterUndefined: Self = StObject.set(x, "requester", js.undefined)
     
     @scala.inline
-    def deleteOccurrenceTiming: Self = this.set("occurrenceTiming", js.undefined)
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderedItem(value: SupplyRequestOrderedItem): Self = this.set("orderedItem", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteOrderedItem: Self = this.set("orderedItem", js.undefined)
+    def setSupplier(value: js.Array[Reference]): Self = StObject.set(x, "supplier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: code): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setSupplierUndefined: Self = StObject.set(x, "supplier", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setSupplierVarargs(value: Reference*): Self = StObject.set(x, "supplier", js.Array(value :_*))
     
     @scala.inline
-    def setReasonCodeableConcept(value: CodeableConcept): Self = this.set("reasonCodeableConcept", value.asInstanceOf[js.Any])
+    def set_authoredOn(value: Element): Self = StObject.set(x, "_authoredOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReasonCodeableConcept: Self = this.set("reasonCodeableConcept", js.undefined)
+    def set_authoredOnUndefined: Self = StObject.set(x, "_authoredOn", js.undefined)
     
     @scala.inline
-    def setReasonReference(value: Reference): Self = this.set("reasonReference", value.asInstanceOf[js.Any])
+    def set_occurrenceDateTime(value: Element): Self = StObject.set(x, "_occurrenceDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReasonReference: Self = this.set("reasonReference", js.undefined)
+    def set_occurrenceDateTimeUndefined: Self = StObject.set(x, "_occurrenceDateTime", js.undefined)
     
     @scala.inline
-    def setRequester(value: SupplyRequestRequester): Self = this.set("requester", value.asInstanceOf[js.Any])
+    def set_priority(value: Element): Self = StObject.set(x, "_priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequester: Self = this.set("requester", js.undefined)
+    def set_priorityUndefined: Self = StObject.set(x, "_priority", js.undefined)
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setSupplierVarargs(value: Reference*): Self = this.set("supplier", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupplier(value: js.Array[Reference]): Self = this.set("supplier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupplier: Self = this.set("supplier", js.undefined)
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

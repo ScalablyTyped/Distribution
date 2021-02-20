@@ -1,12 +1,13 @@
 package typings.antvUtil
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/util/lib/lower-case", JSImport.Namespace)
-@js.native
-object lowerCaseMod extends js.Object {
+object lowerCaseMod {
   
+  @JSImport("@antv/util/lib/lower-case", JSImport.Default)
+  @js.native
   def default(str: String): String = js.native
 }

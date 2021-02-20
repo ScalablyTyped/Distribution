@@ -1,13 +1,13 @@
 package typings.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.webix.webix.ui.baseview
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeCollection extends js.Object {
+trait TreeCollection extends StObject {
   
   def add(obj: js.Any): String = js.native
   def add(obj: js.Any, index: js.UndefOr[scala.Nothing], parentId: String): String = js.native
@@ -46,7 +46,7 @@ trait TreeCollection extends js.Object {
   
   def count(): Double = js.native
   
-  var data: DataStore = js.native
+  var data: typings.webix.mod.DataStore = js.native
   
   def define(property: String, value: js.Any): Unit = js.native
   
@@ -194,6 +194,3 @@ trait TreeCollection extends js.Object {
   
   def waitSave(handler: WebixCallback): js.Promise[_] = js.native
 }
-@JSImport("webix", "TreeCollection")
-@js.native
-object TreeCollection extends TopLevel[TreeCollectionFactory]

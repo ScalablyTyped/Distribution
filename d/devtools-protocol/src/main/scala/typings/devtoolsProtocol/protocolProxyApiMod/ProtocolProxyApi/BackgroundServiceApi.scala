@@ -8,12 +8,13 @@ import typings.devtoolsProtocol.mod.Protocol.BackgroundService.RecordingStateCha
 import typings.devtoolsProtocol.mod.Protocol.BackgroundService.SetRecordingRequest
 import typings.devtoolsProtocol.mod.Protocol.BackgroundService.StartObservingRequest
 import typings.devtoolsProtocol.mod.Protocol.BackgroundService.StopObservingRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackgroundServiceApi extends js.Object {
+trait BackgroundServiceApi extends StObject {
   
   /**
     * Clears all stored data for the service.

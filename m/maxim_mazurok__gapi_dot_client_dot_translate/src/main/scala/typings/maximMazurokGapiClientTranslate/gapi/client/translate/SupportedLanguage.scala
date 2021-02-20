@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranslate.gapi.client.translate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SupportedLanguage extends js.Object {
+trait SupportedLanguage extends StObject {
   
   /** Human readable name of the language localized in the display language specified in the request. */
   var displayName: js.UndefOr[String] = js.native
@@ -31,42 +32,30 @@ object SupportedLanguage {
   }
   
   @scala.inline
-  implicit class SupportedLanguageOps[Self <: SupportedLanguage] (val x: Self) extends AnyVal {
+  implicit class SupportedLanguageMutableBuilder[Self <: SupportedLanguage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setSupportSource(value: Boolean): Self = StObject.set(x, "supportSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    def setSupportSourceUndefined: Self = StObject.set(x, "supportSource", js.undefined)
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    def setSupportTarget(value: Boolean): Self = StObject.set(x, "supportTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportSource(value: Boolean): Self = this.set("supportSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportSource: Self = this.set("supportSource", js.undefined)
-    
-    @scala.inline
-    def setSupportTarget(value: Boolean): Self = this.set("supportTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportTarget: Self = this.set("supportTarget", js.undefined)
+    def setSupportTargetUndefined: Self = StObject.set(x, "supportTarget", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.leafletRoutingMachine.mod.Routing_
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoCompleteOptions extends js.Object {
+trait AutoCompleteOptions extends StObject {
   
   var blurTimeout: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object AutoCompleteOptions {
   }
   
   @scala.inline
-  implicit class AutoCompleteOptionsOps[Self <: AutoCompleteOptions] (val x: Self) extends AnyVal {
+  implicit class AutoCompleteOptionsMutableBuilder[Self <: AutoCompleteOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlurTimeout(value: Double): Self = StObject.set(x, "blurTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlurTimeoutUndefined: Self = StObject.set(x, "blurTimeout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoResultsMessage(value: String): Self = StObject.set(x, "noResultsMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlurTimeout(value: Double): Self = this.set("blurTimeout", value.asInstanceOf[js.Any])
+    def setNoResultsMessageUndefined: Self = StObject.set(x, "noResultsMessage", js.undefined)
     
     @scala.inline
-    def deleteBlurTimeout: Self = this.set("blurTimeout", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoResultsMessage(value: String): Self = this.set("noResultsMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoResultsMessage: Self = this.set("noResultsMessage", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

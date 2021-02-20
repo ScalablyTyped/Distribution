@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttachDiskRequest extends js.Object {
+trait AttachDiskRequest extends StObject {
   
   /**
     * The unique Lightsail disk name (e.g., my-disk).
@@ -31,27 +32,15 @@ object AttachDiskRequest {
   }
   
   @scala.inline
-  implicit class AttachDiskRequestOps[Self <: AttachDiskRequest] (val x: Self) extends AnyVal {
+  implicit class AttachDiskRequestMutableBuilder[Self <: AttachDiskRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiskName(value: ResourceName): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiskPath(value: NonEmptyString): Self = StObject.set(x, "diskPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDiskName(value: ResourceName): Self = this.set("diskName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDiskPath(value: NonEmptyString): Self = this.set("diskPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInstanceName(value: ResourceName): Self = this.set("instanceName", value.asInstanceOf[js.Any])
+    def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
   }
 }

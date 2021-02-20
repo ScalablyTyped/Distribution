@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFBuiltInObjectType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IObjectClassAdmin extends js.Object {
+trait IObjectClassAdmin extends StObject {
   
   val AdditionalClassInfo: IAdditionalClassInfo = js.native
   
@@ -54,54 +55,42 @@ object IObjectClassAdmin {
   }
   
   @scala.inline
-  implicit class IObjectClassAdminOps[Self <: IObjectClassAdmin] (val x: Self) extends AnyVal {
+  implicit class IObjectClassAdminMutableBuilder[Self <: IObjectClassAdmin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalClassInfo(value: IAdditionalClassInfo): Self = StObject.set(x, "AdditionalClassInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociatedPropertyDefs(value: IAssociatedPropertyDefs): Self = StObject.set(x, "AssociatedPropertyDefs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutomaticPermissionsForObjects(value: IAutomaticPermissions): Self = StObject.set(x, "AutomaticPermissionsForObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalClassInfo(value: IAdditionalClassInfo): Self = this.set("AdditionalClassInfo", value.asInstanceOf[js.Any])
+    def setClone(value: () => IObjectClassAdmin): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAssociatedPropertyDefs(value: IAssociatedPropertyDefs): Self = this.set("AssociatedPropertyDefs", value.asInstanceOf[js.Any])
+    def setForceWorkflow(value: Boolean): Self = StObject.set(x, "ForceWorkflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticPermissionsForObjects(value: IAutomaticPermissions): Self = this.set("AutomaticPermissionsForObjects", value.asInstanceOf[js.Any])
+    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IObjectClassAdmin): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceWorkflow(value: Boolean): Self = this.set("ForceWorkflow", value.asInstanceOf[js.Any])
+    def setNamePropertyDef(value: Double): Self = StObject.set(x, "NamePropertyDef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setID(value: Double): Self = this.set("ID", value.asInstanceOf[js.Any])
+    def setObjectType(value: MFBuiltInObjectType | Double): Self = StObject.set(x, "ObjectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPredefined(value: Boolean): Self = StObject.set(x, "Predefined", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamePropertyDef(value: Double): Self = this.set("NamePropertyDef", value.asInstanceOf[js.Any])
+    def setSemanticAliases(value: ISemanticAliases): Self = StObject.set(x, "SemanticAliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectType(value: MFBuiltInObjectType | Double): Self = this.set("ObjectType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPredefined(value: Boolean): Self = this.set("Predefined", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSemanticAliases(value: ISemanticAliases): Self = this.set("SemanticAliases", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkflow(value: Double): Self = this.set("Workflow", value.asInstanceOf[js.Any])
+    def setWorkflow(value: Double): Self = StObject.set(x, "Workflow", value.asInstanceOf[js.Any])
   }
 }

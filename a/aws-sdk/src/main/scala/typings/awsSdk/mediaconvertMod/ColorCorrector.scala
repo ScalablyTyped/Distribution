@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColorCorrector extends js.Object {
+trait ColorCorrector extends StObject {
   
   /**
     * Brightness level.
@@ -46,54 +47,42 @@ object ColorCorrector {
   }
   
   @scala.inline
-  implicit class ColorCorrectorOps[Self <: ColorCorrector] (val x: Self) extends AnyVal {
+  implicit class ColorCorrectorMutableBuilder[Self <: ColorCorrector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrightness(value: integerMin1Max100): Self = StObject.set(x, "Brightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrightnessUndefined: Self = StObject.set(x, "Brightness", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorSpaceConversion(value: ColorSpaceConversion): Self = StObject.set(x, "ColorSpaceConversion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightness(value: integerMin1Max100): Self = this.set("Brightness", value.asInstanceOf[js.Any])
+    def setColorSpaceConversionUndefined: Self = StObject.set(x, "ColorSpaceConversion", js.undefined)
     
     @scala.inline
-    def deleteBrightness: Self = this.set("Brightness", js.undefined)
+    def setContrast(value: integerMin1Max100): Self = StObject.set(x, "Contrast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorSpaceConversion(value: ColorSpaceConversion): Self = this.set("ColorSpaceConversion", value.asInstanceOf[js.Any])
+    def setContrastUndefined: Self = StObject.set(x, "Contrast", js.undefined)
     
     @scala.inline
-    def deleteColorSpaceConversion: Self = this.set("ColorSpaceConversion", js.undefined)
+    def setHdr10Metadata(value: Hdr10Metadata): Self = StObject.set(x, "Hdr10Metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContrast(value: integerMin1Max100): Self = this.set("Contrast", value.asInstanceOf[js.Any])
+    def setHdr10MetadataUndefined: Self = StObject.set(x, "Hdr10Metadata", js.undefined)
     
     @scala.inline
-    def deleteContrast: Self = this.set("Contrast", js.undefined)
+    def setHue(value: integerMinNegative180Max180): Self = StObject.set(x, "Hue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHdr10Metadata(value: Hdr10Metadata): Self = this.set("Hdr10Metadata", value.asInstanceOf[js.Any])
+    def setHueUndefined: Self = StObject.set(x, "Hue", js.undefined)
     
     @scala.inline
-    def deleteHdr10Metadata: Self = this.set("Hdr10Metadata", js.undefined)
+    def setSaturation(value: integerMin1Max100): Self = StObject.set(x, "Saturation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHue(value: integerMinNegative180Max180): Self = this.set("Hue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHue: Self = this.set("Hue", js.undefined)
-    
-    @scala.inline
-    def setSaturation(value: integerMin1Max100): Self = this.set("Saturation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSaturation: Self = this.set("Saturation", js.undefined)
+    def setSaturationUndefined: Self = StObject.set(x, "Saturation", js.undefined)
   }
 }

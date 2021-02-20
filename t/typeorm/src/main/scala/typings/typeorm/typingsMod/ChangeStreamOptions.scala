@@ -1,11 +1,12 @@
 package typings.typeorm.typingsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangeStreamOptions extends js.Object {
+trait ChangeStreamOptions extends StObject {
   
   /**
     * The number of documents to return per batch.
@@ -49,54 +50,42 @@ object ChangeStreamOptions {
   }
   
   @scala.inline
-  implicit class ChangeStreamOptionsOps[Self <: ChangeStreamOptions] (val x: Self) extends AnyVal {
+  implicit class ChangeStreamOptionsMutableBuilder[Self <: ChangeStreamOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchSize(value: scala.Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollation(value: CollationDocument): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchSize(value: scala.Double): Self = this.set("batchSize", value.asInstanceOf[js.Any])
+    def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
     
     @scala.inline
-    def deleteBatchSize: Self = this.set("batchSize", js.undefined)
+    def setFullDocument(value: String): Self = StObject.set(x, "fullDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollation(value: CollationDocument): Self = this.set("collation", value.asInstanceOf[js.Any])
+    def setFullDocumentUndefined: Self = StObject.set(x, "fullDocument", js.undefined)
     
     @scala.inline
-    def deleteCollation: Self = this.set("collation", js.undefined)
+    def setMaxAwaitTimeMS(value: scala.Double): Self = StObject.set(x, "maxAwaitTimeMS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullDocument(value: String): Self = this.set("fullDocument", value.asInstanceOf[js.Any])
+    def setMaxAwaitTimeMSUndefined: Self = StObject.set(x, "maxAwaitTimeMS", js.undefined)
     
     @scala.inline
-    def deleteFullDocument: Self = this.set("fullDocument", js.undefined)
+    def setReadPreference(value: ReadPreference): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAwaitTimeMS(value: scala.Double): Self = this.set("maxAwaitTimeMS", value.asInstanceOf[js.Any])
+    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
     
     @scala.inline
-    def deleteMaxAwaitTimeMS: Self = this.set("maxAwaitTimeMS", js.undefined)
+    def setResumeAfter(value: js.Object): Self = StObject.set(x, "resumeAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadPreference(value: ReadPreference): Self = this.set("readPreference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadPreference: Self = this.set("readPreference", js.undefined)
-    
-    @scala.inline
-    def setResumeAfter(value: js.Object): Self = this.set("resumeAfter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResumeAfter: Self = this.set("resumeAfter", js.undefined)
+    def setResumeAfterUndefined: Self = StObject.set(x, "resumeAfter", js.undefined)
   }
 }

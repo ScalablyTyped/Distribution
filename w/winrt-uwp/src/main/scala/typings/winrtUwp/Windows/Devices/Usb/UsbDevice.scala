@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Devices.Usb
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a USB device. The object provides methods and properties that an app can use to find the device (in the system) with which the app wants to communicate, and sends IN and OUT control transfers to the device. */
 @js.native
-trait UsbDevice extends js.Object {
+trait UsbDevice extends StObject {
   
   /** Releases the reference to the UsbDevice object that was previously obtained by calling FromIdAsync . */
   def close(): Unit = js.native

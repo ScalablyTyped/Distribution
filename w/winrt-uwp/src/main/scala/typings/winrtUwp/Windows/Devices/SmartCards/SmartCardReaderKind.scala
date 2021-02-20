@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.SmartCards
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SmartCardReaderKind extends js.Object
+sealed trait SmartCardReaderKind extends StObject
 /** Represents the smart card reader's type. */
 @JSGlobal("Windows.Devices.SmartCards.SmartCardReaderKind")
 @js.native
-object SmartCardReaderKind extends js.Object {
+object SmartCardReaderKind extends StObject {
   
   /** This value is never returned. */
   @js.native

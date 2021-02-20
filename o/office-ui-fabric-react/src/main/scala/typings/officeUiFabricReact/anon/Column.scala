@@ -1,12 +1,13 @@
 package typings.officeUiFabricReact.anon
 
 import typings.officeUiFabricReact.detailsListTypesMod.IColumn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Column extends js.Object {
+trait Column extends StObject {
   
   var column: IColumn = js.native
   
@@ -23,27 +24,15 @@ object Column {
   }
   
   @scala.inline
-  implicit class ColumnOps[Self <: Column] (val x: Self) extends AnyVal {
+  implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: IColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColumn(value: IColumn): Self = this.set("column", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnMeasureDone(value: Double => scala.Unit): Self = this.set("onMeasureDone", js.Any.fromFunction1(value))
+    def setOnMeasureDone(value: Double => scala.Unit): Self = StObject.set(x, "onMeasureDone", js.Any.fromFunction1(value))
   }
 }

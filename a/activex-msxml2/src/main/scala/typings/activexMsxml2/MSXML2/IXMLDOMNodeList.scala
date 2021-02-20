@@ -1,12 +1,13 @@
 package typings.activexMsxml2.MSXML2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line:interface-name
 @js.native
-trait IXMLDOMNodeList extends js.Object {
+trait IXMLDOMNodeList extends StObject {
   
   /** collection of nodes */
   def apply(index: Double): IXMLDOMNode = js.native

@@ -1,5 +1,6 @@
 package typings.sipJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "EmitterImpl")
 @js.native
 class EmitterImpl[T] ()
-  extends typings.sipJs.emitterMod.EmitterImpl[T]
+  extends typings.sipJs.apiMod.EmitterImpl[T]

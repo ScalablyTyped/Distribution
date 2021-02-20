@@ -1,11 +1,12 @@
 package typings.uiGrid.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISortInfo extends js.Object {
+trait ISortInfo extends StObject {
   
   var direction: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object ISortInfo {
   }
   
   @scala.inline
-  implicit class ISortInfoOps[Self <: ISortInfo] (val x: Self) extends AnyVal {
+  implicit class ISortInfoMutableBuilder[Self <: ISortInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnoreSort(value: Boolean): Self = StObject.set(x, "ignoreSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setIgnoreSortUndefined: Self = StObject.set(x, "ignoreSort", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreSort(value: Boolean): Self = this.set("ignoreSort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnoreSort: Self = this.set("ignoreSort", js.undefined)
-    
-    @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,30 +63,18 @@ object XUnitConversion {
   }
   
   @scala.inline
-  implicit class XUnitConversionOps[Self <: XUnitConversion] (val x: Self) extends AnyVal {
+  implicit class XUnitConversionMutableBuilder[Self <: XUnitConversion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConvertPointToLogic(value: (Point, Double) => Point): Self = StObject.set(x, "convertPointToLogic", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConvertPointToPixel(value: (Point, Double) => Point): Self = StObject.set(x, "convertPointToPixel", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConvertSizeToLogic(value: (Size, Double) => Size): Self = StObject.set(x, "convertSizeToLogic", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setConvertPointToLogic(value: (Point, Double) => Point): Self = this.set("convertPointToLogic", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setConvertPointToPixel(value: (Point, Double) => Point): Self = this.set("convertPointToPixel", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setConvertSizeToLogic(value: (Size, Double) => Size): Self = this.set("convertSizeToLogic", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setConvertSizeToPixel(value: (Size, Double) => Size): Self = this.set("convertSizeToPixel", js.Any.fromFunction2(value))
+    def setConvertSizeToPixel(value: (Size, Double) => Size): Self = StObject.set(x, "convertSizeToPixel", js.Any.fromFunction2(value))
   }
 }

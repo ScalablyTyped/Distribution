@@ -1,6 +1,6 @@
 package typings.aceBuilds.mod.Ace
 
-import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -109,6 +109,3 @@ trait Selection extends EventEmitter {
   
   def toJSON(): SavedSelection | js.Array[SavedSelection] = js.native
 }
-@JSImport("ace-builds", "Ace.Selection")
-@js.native
-object Selection extends Instantiable1[/* session */ EditSession, Selection]

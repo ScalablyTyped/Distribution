@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StageExecutionDetails extends js.Object {
+trait StageExecutionDetails extends StObject {
   
   /** If present, this response does not contain all requested tasks. To obtain the next page of results, repeat the request with page_token set to this value. */
   var nextPageToken: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object StageExecutionDetails {
   }
   
   @scala.inline
-  implicit class StageExecutionDetailsOps[Self <: StageExecutionDetails] (val x: Self) extends AnyVal {
+  implicit class StageExecutionDetailsMutableBuilder[Self <: StageExecutionDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWorkers(value: js.Array[WorkerDetails]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setWorkersUndefined: Self = StObject.set(x, "workers", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setWorkersVarargs(value: WorkerDetails*): Self = this.set("workers", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkers(value: js.Array[WorkerDetails]): Self = this.set("workers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkers: Self = this.set("workers", js.undefined)
+    def setWorkersVarargs(value: WorkerDetails*): Self = StObject.set(x, "workers", js.Array(value :_*))
   }
 }

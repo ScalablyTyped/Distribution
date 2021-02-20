@@ -1,12 +1,13 @@
 package typings.formatjsEcma402Abstract.anon
 
 import typings.formatjsEcma402Abstract.dateTimeMod.Formats
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Full extends js.Object {
+trait Full extends StObject {
   
   var full: Formats = js.native
   
@@ -25,30 +26,18 @@ object Full {
   }
   
   @scala.inline
-  implicit class FullOps[Self <: Full] (val x: Self) extends AnyVal {
+  implicit class FullMutableBuilder[Self <: Full] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFull(value: Formats): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLong(value: Formats): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMedium(value: Formats): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFull(value: Formats): Self = this.set("full", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLong(value: Formats): Self = this.set("long", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMedium(value: Formats): Self = this.set("medium", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShort(value: Formats): Self = this.set("short", value.asInstanceOf[js.Any])
+    def setShort(value: Formats): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
   }
 }

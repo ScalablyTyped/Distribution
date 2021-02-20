@@ -1,5 +1,6 @@
 package typings.googleapis.classroomV1Mod.classroomV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The history of each grade on this submission.
   */
 @js.native
-trait SchemaGradeHistory extends js.Object {
+trait SchemaGradeHistory extends StObject {
   
   /**
     * The teacher who made the grade change.
@@ -45,48 +46,36 @@ object SchemaGradeHistory {
   }
   
   @scala.inline
-  implicit class SchemaGradeHistoryOps[Self <: SchemaGradeHistory] (val x: Self) extends AnyVal {
+  implicit class SchemaGradeHistoryMutableBuilder[Self <: SchemaGradeHistory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActorUserId(value: String): Self = StObject.set(x, "actorUserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActorUserIdUndefined: Self = StObject.set(x, "actorUserId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGradeChangeType(value: String): Self = StObject.set(x, "gradeChangeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActorUserId(value: String): Self = this.set("actorUserId", value.asInstanceOf[js.Any])
+    def setGradeChangeTypeUndefined: Self = StObject.set(x, "gradeChangeType", js.undefined)
     
     @scala.inline
-    def deleteActorUserId: Self = this.set("actorUserId", js.undefined)
+    def setGradeTimestamp(value: String): Self = StObject.set(x, "gradeTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradeChangeType(value: String): Self = this.set("gradeChangeType", value.asInstanceOf[js.Any])
+    def setGradeTimestampUndefined: Self = StObject.set(x, "gradeTimestamp", js.undefined)
     
     @scala.inline
-    def deleteGradeChangeType: Self = this.set("gradeChangeType", js.undefined)
+    def setMaxPoints(value: Double): Self = StObject.set(x, "maxPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradeTimestamp(value: String): Self = this.set("gradeTimestamp", value.asInstanceOf[js.Any])
+    def setMaxPointsUndefined: Self = StObject.set(x, "maxPoints", js.undefined)
     
     @scala.inline
-    def deleteGradeTimestamp: Self = this.set("gradeTimestamp", js.undefined)
+    def setPointsEarned(value: Double): Self = StObject.set(x, "pointsEarned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPoints(value: Double): Self = this.set("maxPoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxPoints: Self = this.set("maxPoints", js.undefined)
-    
-    @scala.inline
-    def setPointsEarned(value: Double): Self = this.set("pointsEarned", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePointsEarned: Self = this.set("pointsEarned", js.undefined)
+    def setPointsEarnedUndefined: Self = StObject.set(x, "pointsEarned", js.undefined)
   }
 }

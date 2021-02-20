@@ -7,13 +7,14 @@ import typings.officeJs.officeJsStrings.MainDoc
 import typings.officeJs.officeJsStrings.Section
 import typings.officeJs.officeJsStrings.TableCell
 import typings.officeJs.officeJsStrings.Unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `body.toJSON()`. */
 @js.native
-trait BodyData extends js.Object {
+trait BodyData extends StObject {
   
   /**
     *
@@ -106,93 +107,81 @@ object BodyData {
   }
   
   @scala.inline
-  implicit class BodyDataOps[Self <: BodyData] (val x: Self) extends AnyVal {
+  implicit class BodyDataMutableBuilder[Self <: BodyData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentControls(value: js.Array[ContentControlData]): Self = StObject.set(x, "contentControls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentControlsUndefined: Self = StObject.set(x, "contentControls", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentControlsVarargs(value: ContentControlData*): Self = StObject.set(x, "contentControls", js.Array(value :_*))
     
     @scala.inline
-    def setContentControlsVarargs(value: ContentControlData*): Self = this.set("contentControls", js.Array(value :_*))
+    def setFont(value: FontData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentControls(value: js.Array[ContentControlData]): Self = this.set("contentControls", value.asInstanceOf[js.Any])
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteContentControls: Self = this.set("contentControls", js.undefined)
+    def setInlinePictures(value: js.Array[InlinePictureData]): Self = StObject.set(x, "inlinePictures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: FontData): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setInlinePicturesUndefined: Self = StObject.set(x, "inlinePictures", js.undefined)
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setInlinePicturesVarargs(value: InlinePictureData*): Self = StObject.set(x, "inlinePictures", js.Array(value :_*))
     
     @scala.inline
-    def setInlinePicturesVarargs(value: InlinePictureData*): Self = this.set("inlinePictures", js.Array(value :_*))
+    def setLists(value: js.Array[ListData]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInlinePictures(value: js.Array[InlinePictureData]): Self = this.set("inlinePictures", value.asInstanceOf[js.Any])
+    def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
     
     @scala.inline
-    def deleteInlinePictures: Self = this.set("inlinePictures", js.undefined)
+    def setListsVarargs(value: ListData*): Self = StObject.set(x, "lists", js.Array(value :_*))
     
     @scala.inline
-    def setListsVarargs(value: ListData*): Self = this.set("lists", js.Array(value :_*))
+    def setParagraphs(value: js.Array[ParagraphData]): Self = StObject.set(x, "paragraphs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLists(value: js.Array[ListData]): Self = this.set("lists", value.asInstanceOf[js.Any])
+    def setParagraphsUndefined: Self = StObject.set(x, "paragraphs", js.undefined)
     
     @scala.inline
-    def deleteLists: Self = this.set("lists", js.undefined)
+    def setParagraphsVarargs(value: ParagraphData*): Self = StObject.set(x, "paragraphs", js.Array(value :_*))
     
     @scala.inline
-    def setParagraphsVarargs(value: ParagraphData*): Self = this.set("paragraphs", js.Array(value :_*))
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParagraphs(value: js.Array[ParagraphData]): Self = this.set("paragraphs", value.asInstanceOf[js.Any])
+    def setStyleBuiltIn(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any): Self = StObject.set(x, "styleBuiltIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParagraphs: Self = this.set("paragraphs", js.undefined)
+    def setStyleBuiltInUndefined: Self = StObject.set(x, "styleBuiltIn", js.undefined)
     
     @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTables(value: js.Array[TableData]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleBuiltIn(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any): Self = this.set("styleBuiltIn", value.asInstanceOf[js.Any])
+    def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
     
     @scala.inline
-    def deleteStyleBuiltIn: Self = this.set("styleBuiltIn", js.undefined)
+    def setTablesVarargs(value: TableData*): Self = StObject.set(x, "tables", js.Array(value :_*))
     
     @scala.inline
-    def setTablesVarargs(value: TableData*): Self = this.set("tables", js.Array(value :_*))
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTables(value: js.Array[TableData]): Self = this.set("tables", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteTables: Self = this.set("tables", js.undefined)
+    def setType(value: BodyType | Unknown_ | MainDoc | Section | Header | Footer | TableCell): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setType(value: BodyType | Unknown_ | MainDoc | Section | Header | Footer | TableCell): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

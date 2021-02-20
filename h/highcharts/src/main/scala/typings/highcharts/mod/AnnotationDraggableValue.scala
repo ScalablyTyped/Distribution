@@ -1,5 +1,6 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.highcharts.highchartsStrings.xy
   - typings.highcharts.highchartsStrings.y
 */
-trait AnnotationDraggableValue extends js.Object
+trait AnnotationDraggableValue extends StObject
 object AnnotationDraggableValue {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaExpansionFile extends js.Object {
+trait SchemaExpansionFile extends StObject {
   
   /**
     * If set this field indicates that this APK has an Expansion File uploaded
@@ -29,30 +30,18 @@ object SchemaExpansionFile {
   }
   
   @scala.inline
-  implicit class SchemaExpansionFileOps[Self <: SchemaExpansionFile] (val x: Self) extends AnyVal {
+  implicit class SchemaExpansionFileMutableBuilder[Self <: SchemaExpansionFile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileSize(value: String): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReferencesVersion(value: Double): Self = StObject.set(x, "referencesVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSize(value: String): Self = this.set("fileSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileSize: Self = this.set("fileSize", js.undefined)
-    
-    @scala.inline
-    def setReferencesVersion(value: Double): Self = this.set("referencesVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReferencesVersion: Self = this.set("referencesVersion", js.undefined)
+    def setReferencesVersionUndefined: Self = StObject.set(x, "referencesVersion", js.undefined)
   }
 }

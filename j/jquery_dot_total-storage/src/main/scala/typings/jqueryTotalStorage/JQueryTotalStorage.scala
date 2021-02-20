@@ -1,5 +1,6 @@
 package typings.jqueryTotalStorage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 *
 */
 @js.native
-trait JQueryTotalStorage extends js.Object {
+trait JQueryTotalStorage extends StObject {
   
   /**
     * @desc Set or get a key's value

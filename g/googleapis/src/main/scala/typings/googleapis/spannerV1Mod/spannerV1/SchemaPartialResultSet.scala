@@ -1,5 +1,6 @@
 package typings.googleapis.spannerV1Mod.spannerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * but are a little trickier to consume.
   */
 @js.native
-trait SchemaPartialResultSet extends js.Object {
+trait SchemaPartialResultSet extends StObject {
   
   /**
     * If true, then the final value in values is chunked, and must be combined
@@ -102,51 +103,39 @@ object SchemaPartialResultSet {
   }
   
   @scala.inline
-  implicit class SchemaPartialResultSetOps[Self <: SchemaPartialResultSet] (val x: Self) extends AnyVal {
+  implicit class SchemaPartialResultSetMutableBuilder[Self <: SchemaPartialResultSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChunkedValue(value: Boolean): Self = StObject.set(x, "chunkedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChunkedValueUndefined: Self = StObject.set(x, "chunkedValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetadata(value: SchemaResultSetMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunkedValue(value: Boolean): Self = this.set("chunkedValue", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteChunkedValue: Self = this.set("chunkedValue", js.undefined)
+    def setResumeToken(value: String): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: SchemaResultSetMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setResumeTokenUndefined: Self = StObject.set(x, "resumeToken", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setStats(value: SchemaResultSetStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResumeToken(value: String): Self = this.set("resumeToken", value.asInstanceOf[js.Any])
+    def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     
     @scala.inline
-    def deleteResumeToken: Self = this.set("resumeToken", js.undefined)
+    def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStats(value: SchemaResultSetStats): Self = this.set("stats", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deleteStats: Self = this.set("stats", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: js.Any*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[_]): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

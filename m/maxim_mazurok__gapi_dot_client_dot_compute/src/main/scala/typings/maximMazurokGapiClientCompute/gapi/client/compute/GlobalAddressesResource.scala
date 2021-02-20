@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientCompute.anon.AddressAltFields
 import typings.maximMazurokGapiClientCompute.anon.FieldsKey
 import typings.maximMazurokGapiClientCompute.anon.MaxResults
 import typings.maximMazurokGapiClientCompute.anon.PrettyPrintProjectQuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlobalAddressesResource extends js.Object {
+trait GlobalAddressesResource extends StObject {
   
   /** Deletes the specified address resource. */
   def delete(): Request[Operation] = js.native

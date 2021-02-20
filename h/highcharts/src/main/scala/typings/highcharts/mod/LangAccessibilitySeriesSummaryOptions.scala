@@ -1,11 +1,14 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LangAccessibilitySeriesSummaryOptions extends js.Object {
+trait LangAccessibilitySeriesSummaryOptions extends StObject {
+  
+  var default: js.UndefOr[String] = js.native
   
   var bar: js.UndefOr[String] = js.native
   
@@ -22,8 +25,6 @@ trait LangAccessibilitySeriesSummaryOptions extends js.Object {
   var column: js.UndefOr[String] = js.native
   
   var columnCombination: js.UndefOr[String] = js.native
-  
-  var default: js.UndefOr[String] = js.native
   
   var defaultCombination: js.UndefOr[String] = js.native
   
@@ -64,162 +65,150 @@ object LangAccessibilitySeriesSummaryOptions {
   }
   
   @scala.inline
-  implicit class LangAccessibilitySeriesSummaryOptionsOps[Self <: LangAccessibilitySeriesSummaryOptions] (val x: Self) extends AnyVal {
+  implicit class LangAccessibilitySeriesSummaryOptionsMutableBuilder[Self <: LangAccessibilitySeriesSummaryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBar(value: String): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBarCombination(value: String): Self = StObject.set(x, "barCombination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBarCombinationUndefined: Self = StObject.set(x, "barCombination", js.undefined)
     
     @scala.inline
-    def setBar(value: String): Self = this.set("bar", value.asInstanceOf[js.Any])
+    def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
     
     @scala.inline
-    def deleteBar: Self = this.set("bar", js.undefined)
+    def setBoxplot(value: String): Self = StObject.set(x, "boxplot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarCombination(value: String): Self = this.set("barCombination", value.asInstanceOf[js.Any])
+    def setBoxplotCombination(value: String): Self = StObject.set(x, "boxplotCombination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBarCombination: Self = this.set("barCombination", js.undefined)
+    def setBoxplotCombinationUndefined: Self = StObject.set(x, "boxplotCombination", js.undefined)
     
     @scala.inline
-    def setBoxplot(value: String): Self = this.set("boxplot", value.asInstanceOf[js.Any])
+    def setBoxplotUndefined: Self = StObject.set(x, "boxplot", js.undefined)
     
     @scala.inline
-    def deleteBoxplot: Self = this.set("boxplot", js.undefined)
+    def setBubble(value: String): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxplotCombination(value: String): Self = this.set("boxplotCombination", value.asInstanceOf[js.Any])
+    def setBubbleCombination(value: String): Self = StObject.set(x, "bubbleCombination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoxplotCombination: Self = this.set("boxplotCombination", js.undefined)
+    def setBubbleCombinationUndefined: Self = StObject.set(x, "bubbleCombination", js.undefined)
     
     @scala.inline
-    def setBubble(value: String): Self = this.set("bubble", value.asInstanceOf[js.Any])
+    def setBubbleUndefined: Self = StObject.set(x, "bubble", js.undefined)
     
     @scala.inline
-    def deleteBubble: Self = this.set("bubble", js.undefined)
+    def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbleCombination(value: String): Self = this.set("bubbleCombination", value.asInstanceOf[js.Any])
+    def setColumnCombination(value: String): Self = StObject.set(x, "columnCombination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBubbleCombination: Self = this.set("bubbleCombination", js.undefined)
+    def setColumnCombinationUndefined: Self = StObject.set(x, "columnCombination", js.undefined)
     
     @scala.inline
-    def setColumn(value: String): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
     @scala.inline
-    def deleteColumn: Self = this.set("column", js.undefined)
+    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnCombination(value: String): Self = this.set("columnCombination", value.asInstanceOf[js.Any])
+    def setDefaultCombination(value: String): Self = StObject.set(x, "defaultCombination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumnCombination: Self = this.set("columnCombination", js.undefined)
+    def setDefaultCombinationUndefined: Self = StObject.set(x, "defaultCombination", js.undefined)
     
     @scala.inline
-    def setDefault(value: String): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
+    def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCombination(value: String): Self = this.set("defaultCombination", value.asInstanceOf[js.Any])
+    def setLineCombination(value: String): Self = StObject.set(x, "lineCombination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultCombination: Self = this.set("defaultCombination", js.undefined)
+    def setLineCombinationUndefined: Self = StObject.set(x, "lineCombination", js.undefined)
     
     @scala.inline
-    def setLine(value: String): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineCombination(value: String): Self = this.set("lineCombination", value.asInstanceOf[js.Any])
+    def setMapCombination(value: String): Self = StObject.set(x, "mapCombination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineCombination: Self = this.set("lineCombination", js.undefined)
+    def setMapCombinationUndefined: Self = StObject.set(x, "mapCombination", js.undefined)
     
     @scala.inline
-    def setMap(value: String): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setMapbubble(value: String): Self = StObject.set(x, "mapbubble", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapCombination(value: String): Self = this.set("mapCombination", value.asInstanceOf[js.Any])
+    def setMapbubbleCombination(value: String): Self = StObject.set(x, "mapbubbleCombination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMapCombination: Self = this.set("mapCombination", js.undefined)
+    def setMapbubbleCombinationUndefined: Self = StObject.set(x, "mapbubbleCombination", js.undefined)
     
     @scala.inline
-    def setMapbubble(value: String): Self = this.set("mapbubble", value.asInstanceOf[js.Any])
+    def setMapbubbleUndefined: Self = StObject.set(x, "mapbubble", js.undefined)
     
     @scala.inline
-    def deleteMapbubble: Self = this.set("mapbubble", js.undefined)
+    def setMapline(value: String): Self = StObject.set(x, "mapline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapbubbleCombination(value: String): Self = this.set("mapbubbleCombination", value.asInstanceOf[js.Any])
+    def setMaplineCombination(value: String): Self = StObject.set(x, "maplineCombination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMapbubbleCombination: Self = this.set("mapbubbleCombination", js.undefined)
+    def setMaplineCombinationUndefined: Self = StObject.set(x, "maplineCombination", js.undefined)
     
     @scala.inline
-    def setMapline(value: String): Self = this.set("mapline", value.asInstanceOf[js.Any])
+    def setMaplineUndefined: Self = StObject.set(x, "mapline", js.undefined)
     
     @scala.inline
-    def deleteMapline: Self = this.set("mapline", js.undefined)
+    def setPie(value: String): Self = StObject.set(x, "pie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaplineCombination(value: String): Self = this.set("maplineCombination", value.asInstanceOf[js.Any])
+    def setPieCombination(value: String): Self = StObject.set(x, "pieCombination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaplineCombination: Self = this.set("maplineCombination", js.undefined)
+    def setPieCombinationUndefined: Self = StObject.set(x, "pieCombination", js.undefined)
     
     @scala.inline
-    def setPie(value: String): Self = this.set("pie", value.asInstanceOf[js.Any])
+    def setPieUndefined: Self = StObject.set(x, "pie", js.undefined)
     
     @scala.inline
-    def deletePie: Self = this.set("pie", js.undefined)
+    def setScatter(value: String): Self = StObject.set(x, "scatter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPieCombination(value: String): Self = this.set("pieCombination", value.asInstanceOf[js.Any])
+    def setScatterCombination(value: String): Self = StObject.set(x, "scatterCombination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePieCombination: Self = this.set("pieCombination", js.undefined)
+    def setScatterCombinationUndefined: Self = StObject.set(x, "scatterCombination", js.undefined)
     
     @scala.inline
-    def setScatter(value: String): Self = this.set("scatter", value.asInstanceOf[js.Any])
+    def setScatterUndefined: Self = StObject.set(x, "scatter", js.undefined)
     
     @scala.inline
-    def deleteScatter: Self = this.set("scatter", js.undefined)
+    def setSpline(value: String): Self = StObject.set(x, "spline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScatterCombination(value: String): Self = this.set("scatterCombination", value.asInstanceOf[js.Any])
+    def setSplineCombination(value: String): Self = StObject.set(x, "splineCombination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScatterCombination: Self = this.set("scatterCombination", js.undefined)
+    def setSplineCombinationUndefined: Self = StObject.set(x, "splineCombination", js.undefined)
     
     @scala.inline
-    def setSpline(value: String): Self = this.set("spline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpline: Self = this.set("spline", js.undefined)
-    
-    @scala.inline
-    def setSplineCombination(value: String): Self = this.set("splineCombination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSplineCombination: Self = this.set("splineCombination", js.undefined)
+    def setSplineUndefined: Self = StObject.set(x, "spline", js.undefined)
   }
 }

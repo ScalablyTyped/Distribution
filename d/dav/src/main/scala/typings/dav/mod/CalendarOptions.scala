@@ -1,12 +1,13 @@
 package typings.dav.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined dav.dav.Partial<dav.dav.Calendar> */
 @js.native
-trait CalendarOptions extends js.Object {
+trait CalendarOptions extends StObject {
   
   var account: js.UndefOr[Account] = js.native
   
@@ -43,105 +44,93 @@ object CalendarOptions {
   }
   
   @scala.inline
-  implicit class CalendarOptionsOps[Self <: CalendarOptions] (val x: Self) extends AnyVal {
+  implicit class CalendarOptionsMutableBuilder[Self <: CalendarOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount(value: Account): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponents(value: js.Array[String]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccount(value: Account): Self = this.set("account", value.asInstanceOf[js.Any])
+    def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
     @scala.inline
-    def deleteAccount: Self = this.set("account", js.undefined)
+    def setComponentsVarargs(value: String*): Self = StObject.set(x, "components", js.Array(value :_*))
     
     @scala.inline
-    def setComponentsVarargs(value: String*): Self = this.set("components", js.Array(value :_*))
+    def setConstructor(value: /* options */ js.UndefOr[CalendarOptions] => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComponents(value: js.Array[String]): Self = this.set("components", value.asInstanceOf[js.Any])
+    def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
     
     @scala.inline
-    def deleteComponents: Self = this.set("components", js.undefined)
+    def setCtag(value: String): Self = StObject.set(x, "ctag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstructor(value: /* options */ js.UndefOr[CalendarOptions] => js.Any): Self = this.set("constructor", js.Any.fromFunction1(value))
+    def setCtagUndefined: Self = StObject.set(x, "ctag", js.undefined)
     
     @scala.inline
-    def deleteConstructor: Self = this.set("constructor", js.undefined)
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCtag(value: String): Self = this.set("ctag", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteCtag: Self = this.set("ctag", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setObjects(value: js.Array[CalendarObject]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setObjectsVarargs(value: CalendarObject*): Self = StObject.set(x, "objects", js.Array(value :_*))
     
     @scala.inline
-    def setObjectsVarargs(value: CalendarObject*): Self = this.set("objects", js.Array(value :_*))
+    def setReports(value: js.Array[String]): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjects(value: js.Array[CalendarObject]): Self = this.set("objects", value.asInstanceOf[js.Any])
+    def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
     
     @scala.inline
-    def deleteObjects: Self = this.set("objects", js.undefined)
+    def setReportsVarargs(value: String*): Self = StObject.set(x, "reports", js.Array(value :_*))
     
     @scala.inline
-    def setReportsVarargs(value: String*): Self = this.set("reports", js.Array(value :_*))
+    def setResourcetype(value: String): Self = StObject.set(x, "resourcetype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReports(value: js.Array[String]): Self = this.set("reports", value.asInstanceOf[js.Any])
+    def setResourcetypeUndefined: Self = StObject.set(x, "resourcetype", js.undefined)
     
     @scala.inline
-    def deleteReports: Self = this.set("reports", js.undefined)
+    def setSyncToken(value: String): Self = StObject.set(x, "syncToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourcetype(value: String): Self = this.set("resourcetype", value.asInstanceOf[js.Any])
+    def setSyncTokenUndefined: Self = StObject.set(x, "syncToken", js.undefined)
     
     @scala.inline
-    def deleteResourcetype: Self = this.set("resourcetype", js.undefined)
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyncToken(value: String): Self = this.set("syncToken", value.asInstanceOf[js.Any])
+    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
     @scala.inline
-    def deleteSyncToken: Self = this.set("syncToken", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimezone: Self = this.set("timezone", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

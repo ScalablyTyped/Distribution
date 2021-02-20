@@ -2,12 +2,13 @@ package typings.nodemailer.smtpConnectionMod
 
 import typings.nodemailer.nodemailerStrings.Full
 import typings.nodemailer.nodemailerStrings.HDRS
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DSNOptions extends js.Object {
+trait DSNOptions extends StObject {
   
   /** sender’s ‘envelope identifier’ for tracking */
   var envid: js.UndefOr[String] = js.native
@@ -31,45 +32,33 @@ object DSNOptions {
   }
   
   @scala.inline
-  implicit class DSNOptionsOps[Self <: DSNOptions] (val x: Self) extends AnyVal {
+  implicit class DSNOptionsMutableBuilder[Self <: DSNOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvid(value: String): Self = StObject.set(x, "envid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvidUndefined: Self = StObject.set(x, "envid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotify_(value: DSNOption | js.Array[DSNOption]): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvid(value: String): Self = this.set("envid", value.asInstanceOf[js.Any])
+    def setNotify_Undefined: Self = StObject.set(x, "notify", js.undefined)
     
     @scala.inline
-    def deleteEnvid: Self = this.set("envid", js.undefined)
+    def setNotify_Varargs(value: DSNOption*): Self = StObject.set(x, "notify", js.Array(value :_*))
     
     @scala.inline
-    def setNotifyVarargs(value: DSNOption*): Self = this.set("notify", js.Array(value :_*))
+    def setOrcpt(value: String): Self = StObject.set(x, "orcpt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotify(value: DSNOption | js.Array[DSNOption]): Self = this.set("notify", value.asInstanceOf[js.Any])
+    def setOrcptUndefined: Self = StObject.set(x, "orcpt", js.undefined)
     
     @scala.inline
-    def deleteNotify: Self = this.set("notify", js.undefined)
+    def setRet(value: Full | HDRS): Self = StObject.set(x, "ret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrcpt(value: String): Self = this.set("orcpt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrcpt: Self = this.set("orcpt", js.undefined)
-    
-    @scala.inline
-    def setRet(value: Full | HDRS): Self = this.set("ret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRet: Self = this.set("ret", js.undefined)
+    def setRetUndefined: Self = StObject.set(x, "ret", js.undefined)
   }
 }

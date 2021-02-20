@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.appmesh
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GatewayRouteSpec extends js.Object {
+trait GatewayRouteSpec extends StObject {
   
   /**
     * The specification of a gRPC gateway route.
@@ -32,36 +33,24 @@ object GatewayRouteSpec {
   }
   
   @scala.inline
-  implicit class GatewayRouteSpecOps[Self <: GatewayRouteSpec] (val x: Self) extends AnyVal {
+  implicit class GatewayRouteSpecMutableBuilder[Self <: GatewayRouteSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGrpcRoute(value: Input[GatewayRouteSpecGrpcRoute]): Self = StObject.set(x, "grpcRoute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGrpcRouteUndefined: Self = StObject.set(x, "grpcRoute", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttp2Route(value: Input[GatewayRouteSpecHttp2Route]): Self = StObject.set(x, "http2Route", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrpcRoute(value: Input[GatewayRouteSpecGrpcRoute]): Self = this.set("grpcRoute", value.asInstanceOf[js.Any])
+    def setHttp2RouteUndefined: Self = StObject.set(x, "http2Route", js.undefined)
     
     @scala.inline
-    def deleteGrpcRoute: Self = this.set("grpcRoute", js.undefined)
+    def setHttpRoute(value: Input[GatewayRouteSpecHttpRoute]): Self = StObject.set(x, "httpRoute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttp2Route(value: Input[GatewayRouteSpecHttp2Route]): Self = this.set("http2Route", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHttp2Route: Self = this.set("http2Route", js.undefined)
-    
-    @scala.inline
-    def setHttpRoute(value: Input[GatewayRouteSpecHttpRoute]): Self = this.set("httpRoute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHttpRoute: Self = this.set("httpRoute", js.undefined)
+    def setHttpRouteUndefined: Self = StObject.set(x, "httpRoute", js.undefined)
   }
 }

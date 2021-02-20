@@ -5,12 +5,13 @@ import typings.chromeApps.chrome.events.Event
 import typings.chromeApps.chrome.system.storage.StorageCapacityInfo
 import typings.chromeApps.chrome.system.storage.StorageUnitInfo
 import typings.std.Exclude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofstorageEjectDevice extends js.Object {
+trait TypeofstorageEjectDevice extends StObject {
   
   val EjectDeviceResultCode: FAILURE = js.native
   
@@ -87,25 +88,7 @@ object TypeofstorageEjectDevice {
   }
   
   @scala.inline
-  implicit class TypeofstorageEjectDeviceOps[Self <: TypeofstorageEjectDevice] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEjectDeviceResultCode(value: FAILURE): Self = this.set("EjectDeviceResultCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStorageUnitType(value: FIXED): Self = this.set("StorageUnitType", value.asInstanceOf[js.Any])
+  implicit class TypeofstorageEjectDeviceMutableBuilder[Self <: TypeofstorageEjectDevice] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setEjectDevice(
@@ -120,18 +103,24 @@ object TypeofstorageEjectDevice {
           ], 
           Unit
         ]) => Unit
-    ): Self = this.set("ejectDevice", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "ejectDevice", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetAvailableCapacity(value: (String, js.Function1[/* info */ StorageCapacityInfo, Unit]) => Unit): Self = this.set("getAvailableCapacity", js.Any.fromFunction2(value))
+    def setEjectDeviceResultCode(value: FAILURE): Self = StObject.set(x, "EjectDeviceResultCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetInfo(value: js.Function1[/* info */ js.Array[StorageUnitInfo], Unit] => Unit): Self = this.set("getInfo", js.Any.fromFunction1(value))
+    def setGetAvailableCapacity(value: (String, js.Function1[/* info */ StorageCapacityInfo, Unit]) => Unit): Self = StObject.set(x, "getAvailableCapacity", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnAttached(value: Event[js.Function1[/* info */ StorageUnitInfo, Unit]]): Self = this.set("onAttached", value.asInstanceOf[js.Any])
+    def setGetInfo(value: js.Function1[/* info */ js.Array[StorageUnitInfo], Unit] => Unit): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDetached(value: Event[js.Function1[/* id */ String, Unit]]): Self = this.set("onDetached", value.asInstanceOf[js.Any])
+    def setOnAttached(value: Event[js.Function1[/* info */ StorageUnitInfo, Unit]]): Self = StObject.set(x, "onAttached", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOnDetached(value: Event[js.Function1[/* id */ String, Unit]]): Self = StObject.set(x, "onDetached", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStorageUnitType(value: FIXED): Self = StObject.set(x, "StorageUnitType", value.asInstanceOf[js.Any])
   }
 }

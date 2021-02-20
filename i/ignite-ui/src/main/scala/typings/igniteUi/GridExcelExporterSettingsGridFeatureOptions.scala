@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -83,54 +84,42 @@ object GridExcelExporterSettingsGridFeatureOptions {
   }
   
   @scala.inline
-  implicit class GridExcelExporterSettingsGridFeatureOptionsOps[Self <: GridExcelExporterSettingsGridFeatureOptions] (val x: Self) extends AnyVal {
+  implicit class GridExcelExporterSettingsGridFeatureOptionsMutableBuilder[Self <: GridExcelExporterSettingsGridFeatureOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnfixing(value: String): Self = StObject.set(x, "columnfixing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnfixingUndefined: Self = StObject.set(x, "columnfixing", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiltering(value: String): Self = StObject.set(x, "filtering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnfixing(value: String): Self = this.set("columnfixing", value.asInstanceOf[js.Any])
+    def setFilteringUndefined: Self = StObject.set(x, "filtering", js.undefined)
     
     @scala.inline
-    def deleteColumnfixing: Self = this.set("columnfixing", js.undefined)
+    def setHiding(value: String): Self = StObject.set(x, "hiding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiltering(value: String): Self = this.set("filtering", value.asInstanceOf[js.Any])
+    def setHidingUndefined: Self = StObject.set(x, "hiding", js.undefined)
     
     @scala.inline
-    def deleteFiltering: Self = this.set("filtering", js.undefined)
+    def setPaging(value: String): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHiding(value: String): Self = this.set("hiding", value.asInstanceOf[js.Any])
+    def setPagingUndefined: Self = StObject.set(x, "paging", js.undefined)
     
     @scala.inline
-    def deleteHiding: Self = this.set("hiding", js.undefined)
+    def setSorting(value: String): Self = StObject.set(x, "sorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaging(value: String): Self = this.set("paging", value.asInstanceOf[js.Any])
+    def setSortingUndefined: Self = StObject.set(x, "sorting", js.undefined)
     
     @scala.inline
-    def deletePaging: Self = this.set("paging", js.undefined)
+    def setSummaries(value: String): Self = StObject.set(x, "summaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSorting(value: String): Self = this.set("sorting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSorting: Self = this.set("sorting", js.undefined)
-    
-    @scala.inline
-    def setSummaries(value: String): Self = this.set("summaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummaries: Self = this.set("summaries", js.undefined)
+    def setSummariesUndefined: Self = StObject.set(x, "summaries", js.undefined)
   }
 }

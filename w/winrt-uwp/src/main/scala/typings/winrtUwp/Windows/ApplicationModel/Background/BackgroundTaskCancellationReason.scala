@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BackgroundTaskCancellationReason extends js.Object
+sealed trait BackgroundTaskCancellationReason extends StObject
 /** Specifies the reasons for cancelling a background task. */
 @JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskCancellationReason")
 @js.native
-object BackgroundTaskCancellationReason extends js.Object {
+object BackgroundTaskCancellationReason extends StObject {
   
   /** The background task was canceled by the application. This can happen for one of the following four reasons: */
   @js.native

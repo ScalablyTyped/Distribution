@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldsToEvaluate extends js.Object {
+trait FieldsToEvaluate extends StObject {
   
   /**
     * Updated field values to evaluate.
@@ -42,36 +43,24 @@ object FieldsToEvaluate {
   }
   
   @scala.inline
-  implicit class FieldsToEvaluateOps[Self <: FieldsToEvaluate] (val x: Self) extends AnyVal {
+  implicit class FieldsToEvaluateMutableBuilder[Self <: FieldsToEvaluate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldUpdates(value: StringDictionary[js.Any]): Self = StObject.set(x, "fieldUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "fieldValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldUpdates(value: StringDictionary[js.Any]): Self = this.set("fieldUpdates", value.asInstanceOf[js.Any])
+    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFieldValues(value: StringDictionary[js.Any]): Self = this.set("fieldValues", value.asInstanceOf[js.Any])
+    def setRulesFrom(value: js.Array[String]): Self = StObject.set(x, "rulesFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
-    
-    @scala.inline
-    def setFields(value: js.Array[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRulesFromVarargs(value: String*): Self = this.set("rulesFrom", js.Array(value :_*))
-    
-    @scala.inline
-    def setRulesFrom(value: js.Array[String]): Self = this.set("rulesFrom", value.asInstanceOf[js.Any])
+    def setRulesFromVarargs(value: String*): Self = StObject.set(x, "rulesFrom", js.Array(value :_*))
   }
 }

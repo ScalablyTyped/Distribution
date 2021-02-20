@@ -1,5 +1,6 @@
 package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * result field on success.
   */
 @js.native
-trait SchemaRunPipelineResponse extends js.Object
+trait SchemaRunPipelineResponse extends StObject

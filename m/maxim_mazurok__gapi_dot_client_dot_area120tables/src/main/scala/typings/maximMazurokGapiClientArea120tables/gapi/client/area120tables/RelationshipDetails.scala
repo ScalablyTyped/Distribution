@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientArea120tables.gapi.client.area120tables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RelationshipDetails extends js.Object {
+trait RelationshipDetails extends StObject {
   
   /** The name of the table this relationship is linked to. */
   var linkedTable: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object RelationshipDetails {
   }
   
   @scala.inline
-  implicit class RelationshipDetailsOps[Self <: RelationshipDetails] (val x: Self) extends AnyVal {
+  implicit class RelationshipDetailsMutableBuilder[Self <: RelationshipDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLinkedTable(value: String): Self = StObject.set(x, "linkedTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLinkedTable(value: String): Self = this.set("linkedTable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinkedTable: Self = this.set("linkedTable", js.undefined)
+    def setLinkedTableUndefined: Self = StObject.set(x, "linkedTable", js.undefined)
   }
 }

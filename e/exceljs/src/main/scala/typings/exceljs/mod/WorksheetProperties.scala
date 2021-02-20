@@ -1,12 +1,13 @@
 package typings.exceljs.mod
 
 import typings.exceljs.anon.PartialColor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorksheetProperties extends js.Object {
+trait WorksheetProperties extends StObject {
   
   /**
   	 * Default column width (optional)
@@ -56,42 +57,30 @@ object WorksheetProperties {
   }
   
   @scala.inline
-  implicit class WorksheetPropertiesOps[Self <: WorksheetProperties] (val x: Self) extends AnyVal {
+  implicit class WorksheetPropertiesMutableBuilder[Self <: WorksheetProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultColWidth(value: Double): Self = StObject.set(x, "defaultColWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultColWidthUndefined: Self = StObject.set(x, "defaultColWidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultRowHeight(value: Double): Self = StObject.set(x, "defaultRowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultRowHeight(value: Double): Self = this.set("defaultRowHeight", value.asInstanceOf[js.Any])
+    def setDyDescent(value: Double): Self = StObject.set(x, "dyDescent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDyDescent(value: Double): Self = this.set("dyDescent", value.asInstanceOf[js.Any])
+    def setOutlineLevelCol(value: Double): Self = StObject.set(x, "outlineLevelCol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineLevelCol(value: Double): Self = this.set("outlineLevelCol", value.asInstanceOf[js.Any])
+    def setOutlineLevelRow(value: Double): Self = StObject.set(x, "outlineLevelRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineLevelRow(value: Double): Self = this.set("outlineLevelRow", value.asInstanceOf[js.Any])
+    def setShowGridLines(value: Boolean): Self = StObject.set(x, "showGridLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowGridLines(value: Boolean): Self = this.set("showGridLines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTabColor(value: PartialColor): Self = this.set("tabColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultColWidth(value: Double): Self = this.set("defaultColWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultColWidth: Self = this.set("defaultColWidth", js.undefined)
+    def setTabColor(value: PartialColor): Self = StObject.set(x, "tabColor", value.asInstanceOf[js.Any])
   }
 }

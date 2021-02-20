@@ -1,11 +1,12 @@
 package typings.awsSdk.mediatailorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DashConfigurationForPut extends js.Object {
+trait DashConfigurationForPut extends StObject {
   
   /**
     * The setting that controls whether MediaTailor includes the Location tag in DASH manifests. MediaTailor populates the Location tag with the URL for manifest update requests, to be used by players that don't support sticky redirects. Disable this if you have CDN routing rules set up for accessing MediaTailor manifests, and you are either using client-side reporting or your players support sticky HTTP redirects. Valid values are DISABLED and EMT_DEFAULT. The EMT_DEFAULT setting enables the inclusion of the tag and is the default value. 
@@ -26,30 +27,18 @@ object DashConfigurationForPut {
   }
   
   @scala.inline
-  implicit class DashConfigurationForPutOps[Self <: DashConfigurationForPut] (val x: Self) extends AnyVal {
+  implicit class DashConfigurationForPutMutableBuilder[Self <: DashConfigurationForPut] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMpdLocation(value: string): Self = StObject.set(x, "MpdLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMpdLocationUndefined: Self = StObject.set(x, "MpdLocation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginManifestType(value: OriginManifestType): Self = StObject.set(x, "OriginManifestType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMpdLocation(value: string): Self = this.set("MpdLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMpdLocation: Self = this.set("MpdLocation", js.undefined)
-    
-    @scala.inline
-    def setOriginManifestType(value: OriginManifestType): Self = this.set("OriginManifestType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginManifestType: Self = this.set("OriginManifestType", js.undefined)
+    def setOriginManifestTypeUndefined: Self = StObject.set(x, "OriginManifestType", js.undefined)
   }
 }

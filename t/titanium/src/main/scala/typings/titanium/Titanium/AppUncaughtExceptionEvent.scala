@@ -1,5 +1,6 @@
 package typings.titanium.Titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -109,60 +110,48 @@ object AppUncaughtExceptionEvent {
   }
   
   @scala.inline
-  implicit class AppUncaughtExceptionEventOps[Self <: AppUncaughtExceptionEvent] (val x: Self) extends AnyVal {
+  implicit class AppUncaughtExceptionEventMutableBuilder[Self <: AppUncaughtExceptionEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJavaStack(value: String): Self = StObject.set(x, "javaStack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJsStack(value: String): Self = StObject.set(x, "jsStack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: Double): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJavaStack(value: String): Self = this.set("javaStack", value.asInstanceOf[js.Any])
+    def setLineOffset(value: Double): Self = StObject.set(x, "lineOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsStack(value: String): Self = this.set("jsStack", value.asInstanceOf[js.Any])
+    def setLineSource(value: String): Self = StObject.set(x, "lineSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: Double): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineOffset(value: Double): Self = this.set("lineOffset", value.asInstanceOf[js.Any])
+    def setNativeStack(value: String): Self = StObject.set(x, "nativeStack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineSource(value: String): Self = this.set("lineSource", value.asInstanceOf[js.Any])
+    def setSourceId(value: Double): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNativeStack(value: String): Self = this.set("nativeStack", value.asInstanceOf[js.Any])
+    def setSourceURL(value: String): Self = StObject.set(x, "sourceURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceId(value: Double): Self = this.set("sourceId", value.asInstanceOf[js.Any])
+    def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceName(value: String): Self = this.set("sourceName", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceURL(value: String): Self = this.set("sourceURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStack(value: String): Self = this.set("stack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

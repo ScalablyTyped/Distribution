@@ -1,12 +1,13 @@
 package typings.bingmaps.Microsoft.Maps
 
 import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDrawingModeChangedData extends js.Object {
+trait IDrawingModeChangedData extends StObject {
   
   /** The new drawing mode. **/
   var mode: DrawingMode = js.native
@@ -23,24 +24,12 @@ object IDrawingModeChangedData {
   }
   
   @scala.inline
-  implicit class IDrawingModeChangedDataOps[Self <: IDrawingModeChangedData] (val x: Self) extends AnyVal {
+  implicit class IDrawingModeChangedDataMutableBuilder[Self <: IDrawingModeChangedData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMode(value: DrawingMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMode(value: DrawingMode): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShape(value: IPrimitive): Self = this.set("shape", value.asInstanceOf[js.Any])
+    def setShape(value: IPrimitive): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
   }
 }

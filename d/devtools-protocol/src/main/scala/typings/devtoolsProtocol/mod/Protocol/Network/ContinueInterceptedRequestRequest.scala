@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContinueInterceptedRequestRequest extends js.Object {
+trait ContinueInterceptedRequestRequest extends StObject {
   
   /**
     * Response to a requestIntercepted with an authChallenge. Must not be set otherwise.
@@ -59,63 +60,51 @@ object ContinueInterceptedRequestRequest {
   }
   
   @scala.inline
-  implicit class ContinueInterceptedRequestRequestOps[Self <: ContinueInterceptedRequestRequest] (val x: Self) extends AnyVal {
+  implicit class ContinueInterceptedRequestRequestMutableBuilder[Self <: ContinueInterceptedRequestRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthChallengeResponse(value: AuthChallengeResponse): Self = StObject.set(x, "authChallengeResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthChallengeResponseUndefined: Self = StObject.set(x, "authChallengeResponse", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorReason(value: ErrorReason): Self = StObject.set(x, "errorReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterceptionId(value: InterceptionId): Self = this.set("interceptionId", value.asInstanceOf[js.Any])
+    def setErrorReasonUndefined: Self = StObject.set(x, "errorReason", js.undefined)
     
     @scala.inline
-    def setAuthChallengeResponse(value: AuthChallengeResponse): Self = this.set("authChallengeResponse", value.asInstanceOf[js.Any])
+    def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthChallengeResponse: Self = this.set("authChallengeResponse", js.undefined)
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setErrorReason(value: ErrorReason): Self = this.set("errorReason", value.asInstanceOf[js.Any])
+    def setInterceptionId(value: InterceptionId): Self = StObject.set(x, "interceptionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorReason: Self = this.set("errorReason", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: Headers): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setPostData(value: String): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setPostDataUndefined: Self = StObject.set(x, "postData", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setRawResponse(value: String): Self = StObject.set(x, "rawResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostData(value: String): Self = this.set("postData", value.asInstanceOf[js.Any])
+    def setRawResponseUndefined: Self = StObject.set(x, "rawResponse", js.undefined)
     
     @scala.inline
-    def deletePostData: Self = this.set("postData", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawResponse(value: String): Self = this.set("rawResponse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRawResponse: Self = this.set("rawResponse", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

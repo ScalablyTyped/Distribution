@@ -1,6 +1,7 @@
 package typings.vueCompilerCore.mod
 
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`11`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,57 +45,45 @@ object ForNode {
   }
   
   @scala.inline
-  implicit class ForNodeOps[Self <: ForNode] (val x: Self) extends AnyVal {
+  implicit class ForNodeMutableBuilder[Self <: ForNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Array[TemplateChildNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenVarargs(value: TemplateChildNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodegenNode(value: ForCodegenNode): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: TemplateChildNode*): Self = this.set("children", js.Array(value :_*))
+    def setCodegenNodeUndefined: Self = StObject.set(x, "codegenNode", js.undefined)
     
     @scala.inline
-    def setChildren(value: js.Array[TemplateChildNode]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setKeyAlias(value: ExpressionNode): Self = StObject.set(x, "keyAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParseResult(value: ForParseResult): Self = this.set("parseResult", value.asInstanceOf[js.Any])
+    def setKeyAliasUndefined: Self = StObject.set(x, "keyAlias", js.undefined)
     
     @scala.inline
-    def setSource(value: ExpressionNode): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setObjectIndexAlias(value: ExpressionNode): Self = StObject.set(x, "objectIndexAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: `11`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setObjectIndexAliasUndefined: Self = StObject.set(x, "objectIndexAlias", js.undefined)
     
     @scala.inline
-    def setCodegenNode(value: ForCodegenNode): Self = this.set("codegenNode", value.asInstanceOf[js.Any])
+    def setParseResult(value: ForParseResult): Self = StObject.set(x, "parseResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCodegenNode: Self = this.set("codegenNode", js.undefined)
+    def setSource(value: ExpressionNode): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyAlias(value: ExpressionNode): Self = this.set("keyAlias", value.asInstanceOf[js.Any])
+    def setType(value: `11`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeyAlias: Self = this.set("keyAlias", js.undefined)
+    def setValueAlias(value: ExpressionNode): Self = StObject.set(x, "valueAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectIndexAlias(value: ExpressionNode): Self = this.set("objectIndexAlias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectIndexAlias: Self = this.set("objectIndexAlias", js.undefined)
-    
-    @scala.inline
-    def setValueAlias(value: ExpressionNode): Self = this.set("valueAlias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueAlias: Self = this.set("valueAlias", js.undefined)
+    def setValueAliasUndefined: Self = StObject.set(x, "valueAlias", js.undefined)
   }
 }

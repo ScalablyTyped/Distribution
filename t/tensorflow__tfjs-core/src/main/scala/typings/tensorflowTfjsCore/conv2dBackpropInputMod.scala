@@ -12,25 +12,22 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.floor
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.round
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/ops/conv2d_backprop_input", JSImport.Namespace)
-@js.native
-object conv2dBackpropInputMod extends js.Object {
+object conv2dBackpropInputMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/conv2d_backprop_input", "conv2DBackpropInput")
   @js.native
-  object conv2DBackpropInput extends js.Object {
-    
-    def apply(
-      xShape: (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double]),
-      dy: Tensor[R3 | R4],
-      filter: Tensor4D,
-      strides: Double | (js.Tuple2[Double, Double]),
-      pad: Double | ExplicitPadding | same_ | valid_,
-      dataFormat: js.UndefOr[NCHW | NHWC],
-      dimRoundingMode: js.UndefOr[ceil | floor | round]
-    ): Tensor[R3] = js.native
-  }
+  def conv2DBackpropInput(
+    xShape: (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double]),
+    dy: Tensor[R3 | R4],
+    filter: Tensor4D,
+    strides: Double | (js.Tuple2[Double, Double]),
+    pad: Double | ExplicitPadding | same_ | valid_,
+    dataFormat: js.UndefOr[NCHW | NHWC],
+    dimRoundingMode: js.UndefOr[ceil | floor | round]
+  ): Tensor[R3] = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateVoiceConnectorGroupRequest extends js.Object {
+trait CreateVoiceConnectorGroupRequest extends StObject {
   
   /**
     * The name of the Amazon Chime Voice Connector group.
@@ -26,30 +27,18 @@ object CreateVoiceConnectorGroupRequest {
   }
   
   @scala.inline
-  implicit class CreateVoiceConnectorGroupRequestOps[Self <: CreateVoiceConnectorGroupRequest] (val x: Self) extends AnyVal {
+  implicit class CreateVoiceConnectorGroupRequestMutableBuilder[Self <: CreateVoiceConnectorGroupRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: VoiceConnectorGroupName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVoiceConnectorItems(value: VoiceConnectorItemList): Self = StObject.set(x, "VoiceConnectorItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVoiceConnectorItemsUndefined: Self = StObject.set(x, "VoiceConnectorItems", js.undefined)
     
     @scala.inline
-    def setName(value: VoiceConnectorGroupName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVoiceConnectorItemsVarargs(value: VoiceConnectorItem*): Self = this.set("VoiceConnectorItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setVoiceConnectorItems(value: VoiceConnectorItemList): Self = this.set("VoiceConnectorItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoiceConnectorItems: Self = this.set("VoiceConnectorItems", js.undefined)
+    def setVoiceConnectorItemsVarargs(value: VoiceConnectorItem*): Self = StObject.set(x, "VoiceConnectorItems", js.Array(value :_*))
   }
 }

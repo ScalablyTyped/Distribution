@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientContent.anon.AccountId
 import typings.maximMazurokGapiClientContent.anon.Alt
 import typings.maximMazurokGapiClientContent.anon.Callback
 import typings.maximMazurokGapiClientContent.anon.Fields
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LabelsResource extends js.Object {
+trait LabelsResource extends StObject {
   
   /** Creates a new label, not assigned to any account. */
   def create(request: Accesstoken): Request[AccountLabel] = js.native

@@ -6,13 +6,14 @@ import typings.googleGax.apitypesMod.SimpleCallbackFunction
 import typings.googleGax.callMod.OngoingCall
 import typings.googleGax.gaxMod.CallOptions
 import typings.googleGax.pageDescriptorMod.PageDescriptor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("google-gax/build/src/paginationCalls/pagedApiCaller", JSImport.Namespace)
-@js.native
-object pagedApiCallerMod extends js.Object {
+object pagedApiCallerMod {
+  
+  @JSImport("google-gax/build/src/paginationCalls/pagedApiCaller", "PagedApiCaller")
   @js.native
   class PagedApiCaller protected () extends APICaller {
     /**
@@ -24,21 +25,7 @@ object pagedApiCallerMod extends js.Object {
       *   of page streaming to be performed.
       */
     def this(pageDescriptor: PageDescriptor) = this()
-    /**
-      * This function translates between regular gRPC calls (that accepts a request and returns a response,
-      * and does not know anything about pages and page tokens) and the users' callback (that expects
-      * to see resources from one page, a request to get the next page, and the raw response from the server).
-      *
-      * It generates a function that can be passed as a callback function to a gRPC call, will understand
-      * pagination-specific fields in the response, and call the users' callback after having those fields
-      * parsed.
-      *
-      * @param request Request object. It needs to be passed to all subsequent next page requests
-      * (the main content of the request object stays unchanged, only the next page token changes)
-      * @param callback The user's callback that expects the page content, next page request, and raw response.
-      */
-    var generateParseResponseCallback: js.Any = js.native
-    var pageDescriptor: PageDescriptor = js.native
+    
     /**
       * Implements auto-pagination logic.
       *
@@ -57,7 +44,22 @@ object pagedApiCallerMod extends js.Object {
       settings: CallOptions,
       ongoingCall: OngoingCall
     ): Unit = js.native
+    
+    /**
+      * This function translates between regular gRPC calls (that accepts a request and returns a response,
+      * and does not know anything about pages and page tokens) and the users' callback (that expects
+      * to see resources from one page, a request to get the next page, and the raw response from the server).
+      *
+      * It generates a function that can be passed as a callback function to a gRPC call, will understand
+      * pagination-specific fields in the response, and call the users' callback after having those fields
+      * parsed.
+      *
+      * @param request Request object. It needs to be passed to all subsequent next page requests
+      * (the main content of the request object stays unchanged, only the next page token changes)
+      * @param callback The user's callback that expects the page content, next page request, and raw response.
+      */
+    var generateParseResponseCallback: js.Any = js.native
+    
+    var pageDescriptor: PageDescriptor = js.native
   }
-  
 }
-

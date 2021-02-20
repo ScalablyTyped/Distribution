@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderPromotion extends js.Object {
+trait OrderPromotion extends StObject {
   
   /**
     * Items that this promotion may be applied to. If empty, there are no restrictions on applicable items and quantity. This field will also be empty for shipping promotions because
@@ -62,96 +63,84 @@ object OrderPromotion {
   }
   
   @scala.inline
-  implicit class OrderPromotionOps[Self <: OrderPromotion] (val x: Self) extends AnyVal {
+  implicit class OrderPromotionMutableBuilder[Self <: OrderPromotion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicableItems(value: js.Array[OrderPromotionItem]): Self = StObject.set(x, "applicableItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicableItemsUndefined: Self = StObject.set(x, "applicableItems", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicableItemsVarargs(value: OrderPromotionItem*): Self = StObject.set(x, "applicableItems", js.Array(value :_*))
     
     @scala.inline
-    def setApplicableItemsVarargs(value: OrderPromotionItem*): Self = this.set("applicableItems", js.Array(value :_*))
+    def setAppliedItems(value: js.Array[OrderPromotionItem]): Self = StObject.set(x, "appliedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicableItems(value: js.Array[OrderPromotionItem]): Self = this.set("applicableItems", value.asInstanceOf[js.Any])
+    def setAppliedItemsUndefined: Self = StObject.set(x, "appliedItems", js.undefined)
     
     @scala.inline
-    def deleteApplicableItems: Self = this.set("applicableItems", js.undefined)
+    def setAppliedItemsVarargs(value: OrderPromotionItem*): Self = StObject.set(x, "appliedItems", js.Array(value :_*))
     
     @scala.inline
-    def setAppliedItemsVarargs(value: OrderPromotionItem*): Self = this.set("appliedItems", js.Array(value :_*))
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppliedItems(value: js.Array[OrderPromotionItem]): Self = this.set("appliedItems", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteAppliedItems: Self = this.set("appliedItems", js.undefined)
+    def setFunder(value: String): Self = StObject.set(x, "funder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setFunderUndefined: Self = StObject.set(x, "funder", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setMerchantPromotionId(value: String): Self = StObject.set(x, "merchantPromotionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunder(value: String): Self = this.set("funder", value.asInstanceOf[js.Any])
+    def setMerchantPromotionIdUndefined: Self = StObject.set(x, "merchantPromotionId", js.undefined)
     
     @scala.inline
-    def deleteFunder: Self = this.set("funder", js.undefined)
+    def setPriceValue(value: Price): Self = StObject.set(x, "priceValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerchantPromotionId(value: String): Self = this.set("merchantPromotionId", value.asInstanceOf[js.Any])
+    def setPriceValueUndefined: Self = StObject.set(x, "priceValue", js.undefined)
     
     @scala.inline
-    def deleteMerchantPromotionId: Self = this.set("merchantPromotionId", js.undefined)
+    def setShortTitle(value: String): Self = StObject.set(x, "shortTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriceValue(value: Price): Self = this.set("priceValue", value.asInstanceOf[js.Any])
+    def setShortTitleUndefined: Self = StObject.set(x, "shortTitle", js.undefined)
     
     @scala.inline
-    def deletePriceValue: Self = this.set("priceValue", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortTitle(value: String): Self = this.set("shortTitle", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteShortTitle: Self = this.set("shortTitle", js.undefined)
+    def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setTaxValue(value: Price): Self = StObject.set(x, "taxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtype(value: String): Self = this.set("subtype", value.asInstanceOf[js.Any])
+    def setTaxValueUndefined: Self = StObject.set(x, "taxValue", js.undefined)
     
     @scala.inline
-    def deleteSubtype: Self = this.set("subtype", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaxValue(value: Price): Self = this.set("taxValue", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTaxValue: Self = this.set("taxValue", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

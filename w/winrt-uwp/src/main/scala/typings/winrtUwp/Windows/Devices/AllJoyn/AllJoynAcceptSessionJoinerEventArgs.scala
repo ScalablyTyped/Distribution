@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.AllJoyn
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a join session request that is used to determine if the request will be accepted and initiate the session connection. */
 @js.native
-trait AllJoynAcceptSessionJoinerEventArgs extends js.Object {
+trait AllJoynAcceptSessionJoinerEventArgs extends StObject {
   
   /** Called to accept the session connection. */
   def accept(): Unit = js.native
@@ -42,36 +43,24 @@ object AllJoynAcceptSessionJoinerEventArgs {
   }
   
   @scala.inline
-  implicit class AllJoynAcceptSessionJoinerEventArgsOps[Self <: AllJoynAcceptSessionJoinerEventArgs] (val x: Self) extends AnyVal {
+  implicit class AllJoynAcceptSessionJoinerEventArgsMutableBuilder[Self <: AllJoynAcceptSessionJoinerEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccept(value: () => Unit): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSameNetwork(value: Boolean): Self = StObject.set(x, "sameNetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSamePhysicalNode(value: Boolean): Self = StObject.set(x, "samePhysicalNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccept(value: () => Unit): Self = this.set("accept", js.Any.fromFunction0(value))
+    def setSessionPort(value: Double): Self = StObject.set(x, "sessionPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSameNetwork(value: Boolean): Self = this.set("sameNetwork", value.asInstanceOf[js.Any])
+    def setTrafficType(value: AllJoynTrafficType): Self = StObject.set(x, "trafficType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamePhysicalNode(value: Boolean): Self = this.set("samePhysicalNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSessionPort(value: Double): Self = this.set("sessionPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrafficType(value: AllJoynTrafficType): Self = this.set("trafficType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUniqueName(value: String): Self = this.set("uniqueName", value.asInstanceOf[js.Any])
+    def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
   }
 }

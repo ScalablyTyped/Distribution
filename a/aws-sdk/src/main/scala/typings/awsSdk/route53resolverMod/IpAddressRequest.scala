@@ -1,11 +1,12 @@
 package typings.awsSdk.route53resolverMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IpAddressRequest extends js.Object {
+trait IpAddressRequest extends StObject {
   
   /**
     * The IP address that you want to use for DNS queries.
@@ -26,27 +27,15 @@ object IpAddressRequest {
   }
   
   @scala.inline
-  implicit class IpAddressRequestOps[Self <: IpAddressRequest] (val x: Self) extends AnyVal {
+  implicit class IpAddressRequestMutableBuilder[Self <: IpAddressRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIp(value: Ip): Self = StObject.set(x, "Ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIpUndefined: Self = StObject.set(x, "Ip", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSubnetId(value: SubnetId): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIp(value: Ip): Self = this.set("Ip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIp: Self = this.set("Ip", js.undefined)
+    def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
   }
 }

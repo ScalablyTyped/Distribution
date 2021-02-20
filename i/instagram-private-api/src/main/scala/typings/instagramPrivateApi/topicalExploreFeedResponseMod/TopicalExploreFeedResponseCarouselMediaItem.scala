@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.topicalExploreFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicalExploreFeedResponseCarouselMediaItem extends js.Object {
+trait TopicalExploreFeedResponseCarouselMediaItem extends StObject {
   
   var can_see_insights_as_brand: Boolean = js.native
   
@@ -48,57 +49,45 @@ object TopicalExploreFeedResponseCarouselMediaItem {
   }
   
   @scala.inline
-  implicit class TopicalExploreFeedResponseCarouselMediaItemOps[Self <: TopicalExploreFeedResponseCarouselMediaItem] (val x: Self) extends AnyVal {
+  implicit class TopicalExploreFeedResponseCarouselMediaItemMutableBuilder[Self <: TopicalExploreFeedResponseCarouselMediaItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCan_see_insights_as_brand(value: Boolean): Self = StObject.set(x, "can_see_insights_as_brand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCarousel_parent_id(value: String): Self = StObject.set(x, "carousel_parent_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCan_see_insights_as_brand(value: Boolean): Self = this.set("can_see_insights_as_brand", value.asInstanceOf[js.Any])
+    def setImage_versions2(value: TopicalExploreFeedResponseImageVersions2): Self = StObject.set(x, "image_versions2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarousel_parent_id(value: String): Self = this.set("carousel_parent_id", value.asInstanceOf[js.Any])
+    def setMedia_type(value: Double): Self = StObject.set(x, "media_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOriginal_height(value: Double): Self = StObject.set(x, "original_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage_versions2(value: TopicalExploreFeedResponseImageVersions2): Self = this.set("image_versions2", value.asInstanceOf[js.Any])
+    def setOriginal_width(value: Double): Self = StObject.set(x, "original_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia_type(value: Double): Self = this.set("media_type", value.asInstanceOf[js.Any])
+    def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginal_height(value: Double): Self = this.set("original_height", value.asInstanceOf[js.Any])
+    def setProduct_tags(value: TopicalExploreFeedResponseProductTags): Self = StObject.set(x, "product_tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginal_width(value: Double): Self = this.set("original_width", value.asInstanceOf[js.Any])
+    def setProduct_tagsUndefined: Self = StObject.set(x, "product_tags", js.undefined)
     
     @scala.inline
-    def setPk(value: String): Self = this.set("pk", value.asInstanceOf[js.Any])
+    def setSharing_friction_info(value: TopicalExploreFeedResponseSharingFrictionInfo): Self = StObject.set(x, "sharing_friction_info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharing_friction_info(value: TopicalExploreFeedResponseSharingFrictionInfo): Self = this.set("sharing_friction_info", value.asInstanceOf[js.Any])
+    def setUsertags(value: TopicalExploreFeedResponseUsertags): Self = StObject.set(x, "usertags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProduct_tags(value: TopicalExploreFeedResponseProductTags): Self = this.set("product_tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProduct_tags: Self = this.set("product_tags", js.undefined)
-    
-    @scala.inline
-    def setUsertags(value: TopicalExploreFeedResponseUsertags): Self = this.set("usertags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsertags: Self = this.set("usertags", js.undefined)
+    def setUsertagsUndefined: Self = StObject.set(x, "usertags", js.undefined)
   }
 }

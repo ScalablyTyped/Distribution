@@ -1,5 +1,6 @@
 package typings.applepayjs.ApplePayJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.applepayjs.applepayjsStrings.postalAddress
   - typings.applepayjs.applepayjsStrings.phoneticName
 */
-trait ApplePayContactField extends js.Object
+trait ApplePayContactField extends StObject
 object ApplePayContactField {
   
   @scala.inline

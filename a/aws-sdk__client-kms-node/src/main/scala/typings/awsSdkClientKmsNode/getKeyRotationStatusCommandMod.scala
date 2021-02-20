@@ -7,14 +7,14 @@ import typings.awsSdkClientKmsNode.typesGetKeyRotationStatusInputMod.GetKeyRotat
 import typings.awsSdkClientKmsNode.typesGetKeyRotationStatusOutputMod.GetKeyRotationStatusOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/commands/GetKeyRotationStatusCommand", JSImport.Namespace)
-@js.native
-object getKeyRotationStatusCommandMod extends js.Object {
+object getKeyRotationStatusCommandMod {
   
+  @JSImport("@aws-sdk/client-kms-node/commands/GetKeyRotationStatusCommand", "GetKeyRotationStatusCommand")
   @js.native
   class GetKeyRotationStatusCommand protected () extends Command[
           InputTypesUnion, 

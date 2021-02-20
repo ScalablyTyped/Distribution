@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetChannelMessageResponse extends js.Object {
+trait GetChannelMessageResponse extends StObject {
   
   /**
     * The details of and content in the message.
@@ -21,24 +22,12 @@ object GetChannelMessageResponse {
   }
   
   @scala.inline
-  implicit class GetChannelMessageResponseOps[Self <: GetChannelMessageResponse] (val x: Self) extends AnyVal {
+  implicit class GetChannelMessageResponseMutableBuilder[Self <: GetChannelMessageResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelMessage(value: ChannelMessage): Self = StObject.set(x, "ChannelMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChannelMessage(value: ChannelMessage): Self = this.set("ChannelMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChannelMessage: Self = this.set("ChannelMessage", js.undefined)
+    def setChannelMessageUndefined: Self = StObject.set(x, "ChannelMessage", js.undefined)
   }
 }

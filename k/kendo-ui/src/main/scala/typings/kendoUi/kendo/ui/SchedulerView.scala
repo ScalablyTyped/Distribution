@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.ui
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchedulerView extends js.Object {
+trait SchedulerView extends StObject {
   
   var adaptiveSlotHeight: js.UndefOr[Boolean] = js.native
   
@@ -77,198 +78,186 @@ object SchedulerView {
   }
   
   @scala.inline
-  implicit class SchedulerViewOps[Self <: SchedulerView] (val x: Self) extends AnyVal {
+  implicit class SchedulerViewMutableBuilder[Self <: SchedulerView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdaptiveSlotHeight(value: Boolean): Self = StObject.set(x, "adaptiveSlotHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdaptiveSlotHeightUndefined: Self = StObject.set(x, "adaptiveSlotHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllDayEventTemplate(value: String | js.Function): Self = StObject.set(x, "allDayEventTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdaptiveSlotHeight(value: Boolean): Self = this.set("adaptiveSlotHeight", value.asInstanceOf[js.Any])
+    def setAllDayEventTemplateUndefined: Self = StObject.set(x, "allDayEventTemplate", js.undefined)
     
     @scala.inline
-    def deleteAdaptiveSlotHeight: Self = this.set("adaptiveSlotHeight", js.undefined)
+    def setAllDaySlot(value: Boolean): Self = StObject.set(x, "allDaySlot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllDayEventTemplate(value: String | js.Function): Self = this.set("allDayEventTemplate", value.asInstanceOf[js.Any])
+    def setAllDaySlotTemplate(value: String | js.Function): Self = StObject.set(x, "allDaySlotTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllDayEventTemplate: Self = this.set("allDayEventTemplate", js.undefined)
+    def setAllDaySlotTemplateUndefined: Self = StObject.set(x, "allDaySlotTemplate", js.undefined)
     
     @scala.inline
-    def setAllDaySlot(value: Boolean): Self = this.set("allDaySlot", value.asInstanceOf[js.Any])
+    def setAllDaySlotUndefined: Self = StObject.set(x, "allDaySlot", js.undefined)
     
     @scala.inline
-    def deleteAllDaySlot: Self = this.set("allDaySlot", js.undefined)
+    def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllDaySlotTemplate(value: String | js.Function): Self = this.set("allDaySlotTemplate", value.asInstanceOf[js.Any])
+    def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
     @scala.inline
-    def deleteAllDaySlotTemplate: Self = this.set("allDaySlotTemplate", js.undefined)
+    def setDateHeaderTemplate(value: String | js.Function): Self = StObject.set(x, "dateHeaderTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnWidth(value: Double): Self = this.set("columnWidth", value.asInstanceOf[js.Any])
+    def setDateHeaderTemplateUndefined: Self = StObject.set(x, "dateHeaderTemplate", js.undefined)
     
     @scala.inline
-    def deleteColumnWidth: Self = this.set("columnWidth", js.undefined)
+    def setDayTemplate(value: String | js.Function): Self = StObject.set(x, "dayTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateHeaderTemplate(value: String | js.Function): Self = this.set("dateHeaderTemplate", value.asInstanceOf[js.Any])
+    def setDayTemplateUndefined: Self = StObject.set(x, "dayTemplate", js.undefined)
     
     @scala.inline
-    def deleteDateHeaderTemplate: Self = this.set("dateHeaderTemplate", js.undefined)
+    def setEditable(value: Boolean | SchedulerViewEditable): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayTemplate(value: String | js.Function): Self = this.set("dayTemplate", value.asInstanceOf[js.Any])
+    def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
     @scala.inline
-    def deleteDayTemplate: Self = this.set("dayTemplate", js.undefined)
+    def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditable(value: Boolean | SchedulerViewEditable): Self = this.set("editable", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteEditable: Self = this.set("editable", js.undefined)
+    def setEventHeight(value: Double | String): Self = StObject.set(x, "eventHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: Date): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setEventHeightUndefined: Self = StObject.set(x, "eventHeight", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setEventSpacing(value: Double): Self = StObject.set(x, "eventSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventHeight(value: Double | String): Self = this.set("eventHeight", value.asInstanceOf[js.Any])
+    def setEventSpacingUndefined: Self = StObject.set(x, "eventSpacing", js.undefined)
     
     @scala.inline
-    def deleteEventHeight: Self = this.set("eventHeight", js.undefined)
+    def setEventTemplate(value: String | js.Function): Self = StObject.set(x, "eventTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventSpacing(value: Double): Self = this.set("eventSpacing", value.asInstanceOf[js.Any])
+    def setEventTemplateUndefined: Self = StObject.set(x, "eventTemplate", js.undefined)
     
     @scala.inline
-    def deleteEventSpacing: Self = this.set("eventSpacing", js.undefined)
+    def setEventTimeTemplate(value: String | js.Function): Self = StObject.set(x, "eventTimeTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTemplate(value: String | js.Function): Self = this.set("eventTemplate", value.asInstanceOf[js.Any])
+    def setEventTimeTemplateUndefined: Self = StObject.set(x, "eventTimeTemplate", js.undefined)
     
     @scala.inline
-    def deleteEventTemplate: Self = this.set("eventTemplate", js.undefined)
+    def setEventsPerDay(value: Double): Self = StObject.set(x, "eventsPerDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTimeTemplate(value: String | js.Function): Self = this.set("eventTimeTemplate", value.asInstanceOf[js.Any])
+    def setEventsPerDayUndefined: Self = StObject.set(x, "eventsPerDay", js.undefined)
     
     @scala.inline
-    def deleteEventTimeTemplate: Self = this.set("eventTimeTemplate", js.undefined)
+    def setGroup(value: SchedulerViewGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventsPerDay(value: Double): Self = this.set("eventsPerDay", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteEventsPerDay: Self = this.set("eventsPerDay", js.undefined)
+    def setMajorTick(value: Double): Self = StObject.set(x, "majorTick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: SchedulerViewGroup): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setMajorTickUndefined: Self = StObject.set(x, "majorTick", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setMajorTimeHeaderTemplate(value: String | js.Function): Self = StObject.set(x, "majorTimeHeaderTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorTick(value: Double): Self = this.set("majorTick", value.asInstanceOf[js.Any])
+    def setMajorTimeHeaderTemplateUndefined: Self = StObject.set(x, "majorTimeHeaderTemplate", js.undefined)
     
     @scala.inline
-    def deleteMajorTick: Self = this.set("majorTick", js.undefined)
+    def setMinorTickCount(value: Double): Self = StObject.set(x, "minorTickCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorTimeHeaderTemplate(value: String | js.Function): Self = this.set("majorTimeHeaderTemplate", value.asInstanceOf[js.Any])
+    def setMinorTickCountUndefined: Self = StObject.set(x, "minorTickCount", js.undefined)
     
     @scala.inline
-    def deleteMajorTimeHeaderTemplate: Self = this.set("majorTimeHeaderTemplate", js.undefined)
+    def setMinorTimeHeaderTemplate(value: String | js.Function): Self = StObject.set(x, "minorTimeHeaderTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorTickCount(value: Double): Self = this.set("minorTickCount", value.asInstanceOf[js.Any])
+    def setMinorTimeHeaderTemplateUndefined: Self = StObject.set(x, "minorTimeHeaderTemplate", js.undefined)
     
     @scala.inline
-    def deleteMinorTickCount: Self = this.set("minorTickCount", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorTimeHeaderTemplate(value: String | js.Function): Self = this.set("minorTimeHeaderTemplate", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMinorTimeHeaderTemplate: Self = this.set("minorTimeHeaderTemplate", js.undefined)
+    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSelectedDateFormat(value: String): Self = StObject.set(x, "selectedDateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSelectedDateFormatUndefined: Self = StObject.set(x, "selectedDateFormat", js.undefined)
     
     @scala.inline
-    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setSelectedShortDateFormat(value: String): Self = StObject.set(x, "selectedShortDateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
+    def setSelectedShortDateFormatUndefined: Self = StObject.set(x, "selectedShortDateFormat", js.undefined)
     
     @scala.inline
-    def setSelectedDateFormat(value: String): Self = this.set("selectedDateFormat", value.asInstanceOf[js.Any])
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def deleteSelectedDateFormat: Self = this.set("selectedDateFormat", js.undefined)
+    def setShowWorkHours(value: Boolean): Self = StObject.set(x, "showWorkHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedShortDateFormat(value: String): Self = this.set("selectedShortDateFormat", value.asInstanceOf[js.Any])
+    def setShowWorkHoursUndefined: Self = StObject.set(x, "showWorkHours", js.undefined)
     
     @scala.inline
-    def deleteSelectedShortDateFormat: Self = this.set("selectedShortDateFormat", js.undefined)
+    def setSlotTemplate(value: String | js.Function): Self = StObject.set(x, "slotTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowWorkHours(value: Boolean): Self = this.set("showWorkHours", value.asInstanceOf[js.Any])
+    def setSlotTemplateUndefined: Self = StObject.set(x, "slotTemplate", js.undefined)
     
     @scala.inline
-    def deleteShowWorkHours: Self = this.set("showWorkHours", js.undefined)
+    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlotTemplate(value: String | js.Function): Self = this.set("slotTemplate", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteSlotTemplate: Self = this.set("slotTemplate", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Date): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setWorkWeekEnd(value: Double): Self = StObject.set(x, "workWeekEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setWorkWeekEndUndefined: Self = StObject.set(x, "workWeekEnd", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setWorkWeekStart(value: Double): Self = StObject.set(x, "workWeekStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkWeekEnd(value: Double): Self = this.set("workWeekEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkWeekEnd: Self = this.set("workWeekEnd", js.undefined)
-    
-    @scala.inline
-    def setWorkWeekStart(value: Double): Self = this.set("workWeekStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkWeekStart: Self = this.set("workWeekStart", js.undefined)
+    def setWorkWeekStartUndefined: Self = StObject.set(x, "workWeekStart", js.undefined)
   }
 }

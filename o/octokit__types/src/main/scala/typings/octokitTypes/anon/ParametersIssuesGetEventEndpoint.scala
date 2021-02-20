@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.IssuesGetEventEndpoint
 import typings.octokitTypes.endpointsMod.IssuesGetEventRequestOptions
 import typings.octokitTypes.endpointsMod.IssuesGetEventResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersIssuesGetEventEndpoint extends js.Object {
+trait ParametersIssuesGetEventEndpoint extends StObject {
   
   var parameters: IssuesGetEventEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersIssuesGetEventEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersIssuesGetEventEndpointOps[Self <: ParametersIssuesGetEventEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersIssuesGetEventEndpointMutableBuilder[Self <: ParametersIssuesGetEventEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: IssuesGetEventEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: IssuesGetEventRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: IssuesGetEventEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: IssuesGetEventRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[IssuesGetEventResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[IssuesGetEventResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

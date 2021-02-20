@@ -1,11 +1,12 @@
 package typings.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaQuery extends js.Object {
+trait MediaQuery extends StObject {
   
   def atLeast(size: String): Boolean = js.native
   
@@ -24,33 +25,21 @@ object MediaQuery {
   }
   
   @scala.inline
-  implicit class MediaQueryOps[Self <: MediaQuery] (val x: Self) extends AnyVal {
+  implicit class MediaQueryMutableBuilder[Self <: MediaQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAtLeast(value: String => Boolean): Self = StObject.set(x, "atLeast", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet(value: String => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAtLeast(value: String => Boolean): Self = this.set("atLeast", js.Any.fromFunction1(value))
+    def setQueries(value: js.Array[String]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrent(value: String): Self = this.set("current", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGet(value: String => String): Self = this.set("get", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setQueriesVarargs(value: String*): Self = this.set("queries", js.Array(value :_*))
-    
-    @scala.inline
-    def setQueries(value: js.Array[String]): Self = this.set("queries", value.asInstanceOf[js.Any])
+    def setQueriesVarargs(value: String*): Self = StObject.set(x, "queries", js.Array(value :_*))
   }
 }

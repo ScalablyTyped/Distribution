@@ -5,13 +5,14 @@ import typings.geojson.mod.BBox
 import typings.geojson.mod.GeoJsonProperties
 import typings.geojson.mod.Geometry
 import typings.mapboxGl.mapboxGlStrings.Feature
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined geojson.geojson.Feature<geojson.geojson.Geometry, geojson.geojson.GeoJsonProperties> & {  layer :mapbox-gl.mapbox-gl.Layer,   source :string,   sourceLayer :string,   state :{[key: string] : any}} */
 @js.native
-trait MapboxGeoJSONFeature extends js.Object {
+trait MapboxGeoJSONFeature extends StObject {
   
   /**
     * Bounding box of the coordinate range of the object's Geometries, Features, or Feature Collections.
@@ -66,54 +67,42 @@ object MapboxGeoJSONFeature {
   }
   
   @scala.inline
-  implicit class MapboxGeoJSONFeatureOps[Self <: MapboxGeoJSONFeature] (val x: Self) extends AnyVal {
+  implicit class MapboxGeoJSONFeatureMutableBuilder[Self <: MapboxGeoJSONFeature] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBbox(value: BBox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeometry(value: Geometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometry(value: Geometry): Self = this.set("geometry", value.asInstanceOf[js.Any])
+    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: Layer): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceLayer(value: String): Self = this.set("sourceLayer", value.asInstanceOf[js.Any])
+    def setProperties(value: GeoJsonProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: StringDictionary[js.Any]): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setPropertiesNull: Self = StObject.set(x, "properties", null)
     
     @scala.inline
-    def setType(value: Feature): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBbox(value: BBox): Self = this.set("bbox", value.asInstanceOf[js.Any])
+    def setSourceLayer(value: String): Self = StObject.set(x, "sourceLayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBbox: Self = this.set("bbox", js.undefined)
+    def setState(value: StringDictionary[js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String | Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setProperties(value: GeoJsonProperties): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropertiesNull: Self = this.set("properties", null)
+    def setType(value: Feature): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -4,14 +4,14 @@ import typings.std.WebGLProgram
 import typings.std.WebGLUniformLocation
 import typings.tensorflowTfjsBackendWebgl.gpgpuContextMod.GPGPUContext
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-backend-webgl/dist/slice_packed_gpu", JSImport.Namespace)
-@js.native
-object slicePackedGpuMod extends js.Object {
+object slicePackedGpuMod {
   
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/slice_packed_gpu", "SlicePackedProgram")
   @js.native
   class SlicePackedProgram protected () extends GPGPUProgram {
     def this(destSize: js.Array[Double]) = this()

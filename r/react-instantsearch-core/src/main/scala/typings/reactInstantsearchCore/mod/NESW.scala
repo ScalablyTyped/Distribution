@@ -1,12 +1,13 @@
 package typings.reactInstantsearchCore.mod
 
 import typings.reactInstantsearchCore.anon.Lat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NESW extends js.Object {
+trait NESW extends StObject {
   
   var northEast: Lat = js.native
   
@@ -21,24 +22,12 @@ object NESW {
   }
   
   @scala.inline
-  implicit class NESWOps[Self <: NESW] (val x: Self) extends AnyVal {
+  implicit class NESWMutableBuilder[Self <: NESW] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNorthEast(value: Lat): Self = StObject.set(x, "northEast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNorthEast(value: Lat): Self = this.set("northEast", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSouthWest(value: Lat): Self = this.set("southWest", value.asInstanceOf[js.Any])
+    def setSouthWest(value: Lat): Self = StObject.set(x, "southWest", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResultStorage extends js.Object {
+trait ResultStorage extends StObject {
   
   /** Required. */
   var googleCloudStorage: js.UndefOr[GoogleCloudStorage] = js.native
@@ -28,42 +29,30 @@ object ResultStorage {
   }
   
   @scala.inline
-  implicit class ResultStorageOps[Self <: ResultStorage] (val x: Self) extends AnyVal {
+  implicit class ResultStorageMutableBuilder[Self <: ResultStorage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGoogleCloudStorage(value: GoogleCloudStorage): Self = StObject.set(x, "googleCloudStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGoogleCloudStorageUndefined: Self = StObject.set(x, "googleCloudStorage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResultsUrl(value: String): Self = StObject.set(x, "resultsUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleCloudStorage(value: GoogleCloudStorage): Self = this.set("googleCloudStorage", value.asInstanceOf[js.Any])
+    def setResultsUrlUndefined: Self = StObject.set(x, "resultsUrl", js.undefined)
     
     @scala.inline
-    def deleteGoogleCloudStorage: Self = this.set("googleCloudStorage", js.undefined)
+    def setToolResultsExecution(value: ToolResultsExecution): Self = StObject.set(x, "toolResultsExecution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultsUrl(value: String): Self = this.set("resultsUrl", value.asInstanceOf[js.Any])
+    def setToolResultsExecutionUndefined: Self = StObject.set(x, "toolResultsExecution", js.undefined)
     
     @scala.inline
-    def deleteResultsUrl: Self = this.set("resultsUrl", js.undefined)
+    def setToolResultsHistory(value: ToolResultsHistory): Self = StObject.set(x, "toolResultsHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToolResultsExecution(value: ToolResultsExecution): Self = this.set("toolResultsExecution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolResultsExecution: Self = this.set("toolResultsExecution", js.undefined)
-    
-    @scala.inline
-    def setToolResultsHistory(value: ToolResultsHistory): Self = this.set("toolResultsHistory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolResultsHistory: Self = this.set("toolResultsHistory", js.undefined)
+    def setToolResultsHistoryUndefined: Self = StObject.set(x, "toolResultsHistory", js.undefined)
   }
 }

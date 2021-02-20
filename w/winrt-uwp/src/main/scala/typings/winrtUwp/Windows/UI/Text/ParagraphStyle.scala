@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ParagraphStyle extends js.Object
+sealed trait ParagraphStyle extends StObject
 /** Specifies the paragraph style. */
 @JSGlobal("Windows.UI.Text.ParagraphStyle")
 @js.native
-object ParagraphStyle extends js.Object {
+object ParagraphStyle extends StObject {
   
   /** The top level heading. */
   @js.native

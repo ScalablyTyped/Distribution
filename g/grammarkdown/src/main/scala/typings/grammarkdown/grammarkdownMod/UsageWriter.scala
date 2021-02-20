@@ -1,12 +1,13 @@
 package typings.grammarkdown.grammarkdownMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/grammarkdown", "UsageWriter")
 @js.native
-class UsageWriter protected () extends js.Object {
+class UsageWriter protected () extends StObject {
   def this(margin: Double, padding: Double) = this()
   
   var fit: js.Any = js.native

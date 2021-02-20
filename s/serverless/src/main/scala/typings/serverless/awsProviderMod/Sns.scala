@@ -1,12 +1,13 @@
 package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sns extends js.Object {
+trait Sns extends StObject {
   
   var arn: js.UndefOr[String] = js.native
   
@@ -27,51 +28,39 @@ object Sns {
   }
   
   @scala.inline
-  implicit class SnsOps[Self <: Sns] (val x: Self) extends AnyVal {
+  implicit class SnsMutableBuilder[Self <: Sns] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setFilterPolicy(value: js.Array[String] | StringDictionary[String]): Self = StObject.set(x, "filterPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setFilterPolicyUndefined: Self = StObject.set(x, "filterPolicy", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setFilterPolicyVarargs(value: String*): Self = StObject.set(x, "filterPolicy", js.Array(value :_*))
     
     @scala.inline
-    def setFilterPolicyVarargs(value: String*): Self = this.set("filterPolicy", js.Array(value :_*))
+    def setRedrivePolicy(value: RedrivePolicy): Self = StObject.set(x, "redrivePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterPolicy(value: js.Array[String] | StringDictionary[String]): Self = this.set("filterPolicy", value.asInstanceOf[js.Any])
+    def setRedrivePolicyUndefined: Self = StObject.set(x, "redrivePolicy", js.undefined)
     
     @scala.inline
-    def deleteFilterPolicy: Self = this.set("filterPolicy", js.undefined)
+    def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedrivePolicy(value: RedrivePolicy): Self = this.set("redrivePolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedrivePolicy: Self = this.set("redrivePolicy", js.undefined)
-    
-    @scala.inline
-    def setTopicName(value: String): Self = this.set("topicName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicName: Self = this.set("topicName", js.undefined)
+    def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
   }
 }

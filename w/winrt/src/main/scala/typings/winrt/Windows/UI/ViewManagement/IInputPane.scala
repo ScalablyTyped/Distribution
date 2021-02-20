@@ -1,12 +1,13 @@
 package typings.winrt.Windows.UI.ViewManagement
 
 import typings.winrt.Windows.Foundation.Rect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IInputPane extends js.Object {
+trait IInputPane extends StObject {
   
   var occludedRect: Rect = js.native
   
@@ -23,27 +24,15 @@ object IInputPane {
   }
   
   @scala.inline
-  implicit class IInputPaneOps[Self <: IInputPane] (val x: Self) extends AnyVal {
+  implicit class IInputPaneMutableBuilder[Self <: IInputPane] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOccludedRect(value: Rect): Self = StObject.set(x, "occludedRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnhiding(value: js.Any): Self = StObject.set(x, "onhiding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOccludedRect(value: Rect): Self = this.set("occludedRect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnhiding(value: js.Any): Self = this.set("onhiding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnshowing(value: js.Any): Self = this.set("onshowing", value.asInstanceOf[js.Any])
+    def setOnshowing(value: js.Any): Self = StObject.set(x, "onshowing", value.asInstanceOf[js.Any])
   }
 }

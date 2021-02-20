@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to reflect the zoomAndPan attribute, and is mixed in to other interfaces for elements that support this attribute. */
 @js.native
-trait SVGZoomAndPan extends js.Object {
+trait SVGZoomAndPan extends StObject {
   
   val zoomAndPan: Double = js.native
 }
@@ -19,21 +20,9 @@ object SVGZoomAndPan {
   }
   
   @scala.inline
-  implicit class SVGZoomAndPanOps[Self <: SVGZoomAndPan] (val x: Self) extends AnyVal {
+  implicit class SVGZoomAndPanMutableBuilder[Self <: SVGZoomAndPan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setZoomAndPan(value: Double): Self = this.set("zoomAndPan", value.asInstanceOf[js.Any])
+    def setZoomAndPan(value: Double): Self = StObject.set(x, "zoomAndPan", value.asInstanceOf[js.Any])
   }
 }

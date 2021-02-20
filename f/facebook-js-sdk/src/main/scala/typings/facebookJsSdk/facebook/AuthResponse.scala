@@ -1,5 +1,6 @@
 package typings.facebookJsSdk.facebook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //
 ////////////////////////
 @js.native
-trait AuthResponse extends js.Object {
+trait AuthResponse extends StObject {
   
   var accessToken: String = js.native
   
@@ -33,42 +34,30 @@ object AuthResponse {
   }
   
   @scala.inline
-  implicit class AuthResponseOps[Self <: AuthResponse] (val x: Self) extends AnyVal {
+  implicit class AuthResponseMutableBuilder[Self <: AuthResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGrantedScopes(value: String): Self = StObject.set(x, "grantedScopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessToken(value: String): Self = this.set("accessToken", value.asInstanceOf[js.Any])
+    def setGrantedScopesUndefined: Self = StObject.set(x, "grantedScopes", js.undefined)
     
     @scala.inline
-    def setExpiresIn(value: Double): Self = this.set("expiresIn", value.asInstanceOf[js.Any])
+    def setReauthorize_required_in(value: Double): Self = StObject.set(x, "reauthorize_required_in", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignedRequest(value: String): Self = this.set("signedRequest", value.asInstanceOf[js.Any])
+    def setReauthorize_required_inUndefined: Self = StObject.set(x, "reauthorize_required_in", js.undefined)
     
     @scala.inline
-    def setUserID(value: String): Self = this.set("userID", value.asInstanceOf[js.Any])
+    def setSignedRequest(value: String): Self = StObject.set(x, "signedRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrantedScopes(value: String): Self = this.set("grantedScopes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGrantedScopes: Self = this.set("grantedScopes", js.undefined)
-    
-    @scala.inline
-    def setReauthorize_required_in(value: Double): Self = this.set("reauthorize_required_in", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReauthorize_required_in: Self = this.set("reauthorize_required_in", js.undefined)
+    def setUserID(value: String): Self = StObject.set(x, "userID", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.rockset.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait User extends js.Object {
+trait User extends StObject {
   
   // ISO-8601 date
   var created_at: js.UndefOr[String] = js.native
@@ -34,54 +35,42 @@ object User {
   }
   
   @scala.inline
-  implicit class UserOps[Self <: User] (val x: Self) extends AnyVal {
+  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setFirst_nameUndefined: Self = StObject.set(x, "first_name", js.undefined)
     
     @scala.inline
-    def deleteCreated_at: Self = this.set("created_at", js.undefined)
+    def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst_name(value: String): Self = this.set("first_name", value.asInstanceOf[js.Any])
+    def setLast_nameUndefined: Self = StObject.set(x, "last_name", js.undefined)
     
     @scala.inline
-    def deleteFirst_name: Self = this.set("first_name", js.undefined)
+    def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast_name(value: String): Self = this.set("last_name", value.asInstanceOf[js.Any])
+    def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
     @scala.inline
-    def deleteLast_name: Self = this.set("last_name", js.undefined)
+    def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
     
     @scala.inline
-    def setRolesVarargs(value: String*): Self = this.set("roles", js.Array(value :_*))
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoles(value: js.Array[String]): Self = this.set("roles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoles: Self = this.set("roles", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

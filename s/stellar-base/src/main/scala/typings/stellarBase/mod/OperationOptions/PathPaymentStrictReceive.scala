@@ -1,12 +1,16 @@
 package typings.stellarBase.mod.OperationOptions
 
 import typings.stellarBase.mod.Asset
+import typings.stellarBase.mod._OperationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PathPaymentStrictReceive extends BaseOptions {
+trait PathPaymentStrictReceive
+  extends BaseOptions
+     with _OperationOptions {
   
   var destAmount: String = js.native
   
@@ -29,42 +33,30 @@ object PathPaymentStrictReceive {
   }
   
   @scala.inline
-  implicit class PathPaymentStrictReceiveOps[Self <: PathPaymentStrictReceive] (val x: Self) extends AnyVal {
+  implicit class PathPaymentStrictReceiveMutableBuilder[Self <: PathPaymentStrictReceive] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestAmount(value: String): Self = StObject.set(x, "destAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestAsset(value: Asset): Self = StObject.set(x, "destAsset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestAmount(value: String): Self = this.set("destAmount", value.asInstanceOf[js.Any])
+    def setPath(value: js.Array[Asset]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestAsset(value: Asset): Self = this.set("destAsset", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def setDestination(value: String): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setPathVarargs(value: Asset*): Self = StObject.set(x, "path", js.Array(value :_*))
     
     @scala.inline
-    def setSendAsset(value: Asset): Self = this.set("sendAsset", value.asInstanceOf[js.Any])
+    def setSendAsset(value: Asset): Self = StObject.set(x, "sendAsset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendMax(value: String): Self = this.set("sendMax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPathVarargs(value: Asset*): Self = this.set("path", js.Array(value :_*))
-    
-    @scala.inline
-    def setPath(value: js.Array[Asset]): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setSendMax(value: String): Self = StObject.set(x, "sendMax", value.asInstanceOf[js.Any])
   }
 }

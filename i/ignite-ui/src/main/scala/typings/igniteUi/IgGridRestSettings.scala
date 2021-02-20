@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,54 +55,42 @@ object IgGridRestSettings {
   }
   
   @scala.inline
-  implicit class IgGridRestSettingsOps[Self <: IgGridRestSettings] (val x: Self) extends AnyVal {
+  implicit class IgGridRestSettingsMutableBuilder[Self <: IgGridRestSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentSerializer(value: js.Function): Self = StObject.set(x, "contentSerializer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentSerializerUndefined: Self = StObject.set(x, "contentSerializer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentSerializer(value: js.Function): Self = this.set("contentSerializer", value.asInstanceOf[js.Any])
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def deleteContentSerializer: Self = this.set("contentSerializer", js.undefined)
+    def setCreate(value: IgGridRestSettingsCreate): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setEncodeRemoveInRequestUri(value: Boolean): Self = StObject.set(x, "encodeRemoveInRequestUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreate(value: IgGridRestSettingsCreate): Self = this.set("create", value.asInstanceOf[js.Any])
+    def setEncodeRemoveInRequestUriUndefined: Self = StObject.set(x, "encodeRemoveInRequestUri", js.undefined)
     
     @scala.inline
-    def deleteCreate: Self = this.set("create", js.undefined)
+    def setRemove(value: IgGridRestSettingsRemove): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncodeRemoveInRequestUri(value: Boolean): Self = this.set("encodeRemoveInRequestUri", value.asInstanceOf[js.Any])
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def deleteEncodeRemoveInRequestUri: Self = this.set("encodeRemoveInRequestUri", js.undefined)
+    def setUpdate(value: IgGridRestSettingsUpdate): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemove(value: IgGridRestSettingsRemove): Self = this.set("remove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
-    
-    @scala.inline
-    def setUpdate(value: IgGridRestSettingsUpdate): Self = this.set("update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

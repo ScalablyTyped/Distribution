@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConditionalAccessConditionSet extends js.Object {
+trait ConditionalAccessConditionSet extends StObject {
   
   // Applications and user actions included in and excluded from the policy. Required.
   var applications: js.UndefOr[NullableOption[ConditionalAccessApplications]] = js.native
@@ -37,69 +38,57 @@ object ConditionalAccessConditionSet {
   }
   
   @scala.inline
-  implicit class ConditionalAccessConditionSetOps[Self <: ConditionalAccessConditionSet] (val x: Self) extends AnyVal {
+  implicit class ConditionalAccessConditionSetMutableBuilder[Self <: ConditionalAccessConditionSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplications(value: NullableOption[ConditionalAccessApplications]): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationsNull: Self = StObject.set(x, "applications", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationsUndefined: Self = StObject.set(x, "applications", js.undefined)
     
     @scala.inline
-    def setApplications(value: NullableOption[ConditionalAccessApplications]): Self = this.set("applications", value.asInstanceOf[js.Any])
+    def setClientAppTypes(value: js.Array[ConditionalAccessClientApp]): Self = StObject.set(x, "clientAppTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApplications: Self = this.set("applications", js.undefined)
+    def setClientAppTypesUndefined: Self = StObject.set(x, "clientAppTypes", js.undefined)
     
     @scala.inline
-    def setApplicationsNull: Self = this.set("applications", null)
+    def setClientAppTypesVarargs(value: ConditionalAccessClientApp*): Self = StObject.set(x, "clientAppTypes", js.Array(value :_*))
     
     @scala.inline
-    def setClientAppTypesVarargs(value: ConditionalAccessClientApp*): Self = this.set("clientAppTypes", js.Array(value :_*))
+    def setLocations(value: NullableOption[ConditionalAccessLocations]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientAppTypes(value: js.Array[ConditionalAccessClientApp]): Self = this.set("clientAppTypes", value.asInstanceOf[js.Any])
+    def setLocationsNull: Self = StObject.set(x, "locations", null)
     
     @scala.inline
-    def deleteClientAppTypes: Self = this.set("clientAppTypes", js.undefined)
+    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
     @scala.inline
-    def setLocations(value: NullableOption[ConditionalAccessLocations]): Self = this.set("locations", value.asInstanceOf[js.Any])
+    def setPlatforms(value: NullableOption[ConditionalAccessPlatforms]): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocations: Self = this.set("locations", js.undefined)
+    def setPlatformsNull: Self = StObject.set(x, "platforms", null)
     
     @scala.inline
-    def setLocationsNull: Self = this.set("locations", null)
+    def setPlatformsUndefined: Self = StObject.set(x, "platforms", js.undefined)
     
     @scala.inline
-    def setPlatforms(value: NullableOption[ConditionalAccessPlatforms]): Self = this.set("platforms", value.asInstanceOf[js.Any])
+    def setSignInRiskLevels(value: js.Array[RiskLevel]): Self = StObject.set(x, "signInRiskLevels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlatforms: Self = this.set("platforms", js.undefined)
+    def setSignInRiskLevelsUndefined: Self = StObject.set(x, "signInRiskLevels", js.undefined)
     
     @scala.inline
-    def setPlatformsNull: Self = this.set("platforms", null)
+    def setSignInRiskLevelsVarargs(value: RiskLevel*): Self = StObject.set(x, "signInRiskLevels", js.Array(value :_*))
     
     @scala.inline
-    def setSignInRiskLevelsVarargs(value: RiskLevel*): Self = this.set("signInRiskLevels", js.Array(value :_*))
+    def setUsers(value: ConditionalAccessUsers): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignInRiskLevels(value: js.Array[RiskLevel]): Self = this.set("signInRiskLevels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignInRiskLevels: Self = this.set("signInRiskLevels", js.undefined)
-    
-    @scala.inline
-    def setUsers(value: ConditionalAccessUsers): Self = this.set("users", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsers: Self = this.set("users", js.undefined)
+    def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
   }
 }

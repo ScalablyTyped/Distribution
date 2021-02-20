@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HyperParameterAlgorithmSpecification extends js.Object {
+trait HyperParameterAlgorithmSpecification extends StObject {
   
   /**
     * The name of the resource algorithm to use for the hyperparameter tuning job. If you specify a value for this parameter, do not specify a value for TrainingImage.
@@ -36,42 +37,30 @@ object HyperParameterAlgorithmSpecification {
   }
   
   @scala.inline
-  implicit class HyperParameterAlgorithmSpecificationOps[Self <: HyperParameterAlgorithmSpecification] (val x: Self) extends AnyVal {
+  implicit class HyperParameterAlgorithmSpecificationMutableBuilder[Self <: HyperParameterAlgorithmSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithmName(value: ArnOrName): Self = StObject.set(x, "AlgorithmName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmNameUndefined: Self = StObject.set(x, "AlgorithmName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricDefinitions(value: MetricDefinitionList): Self = StObject.set(x, "MetricDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrainingInputMode(value: TrainingInputMode): Self = this.set("TrainingInputMode", value.asInstanceOf[js.Any])
+    def setMetricDefinitionsUndefined: Self = StObject.set(x, "MetricDefinitions", js.undefined)
     
     @scala.inline
-    def setAlgorithmName(value: ArnOrName): Self = this.set("AlgorithmName", value.asInstanceOf[js.Any])
+    def setMetricDefinitionsVarargs(value: MetricDefinition*): Self = StObject.set(x, "MetricDefinitions", js.Array(value :_*))
     
     @scala.inline
-    def deleteAlgorithmName: Self = this.set("AlgorithmName", js.undefined)
+    def setTrainingImage(value: AlgorithmImage): Self = StObject.set(x, "TrainingImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricDefinitionsVarargs(value: MetricDefinition*): Self = this.set("MetricDefinitions", js.Array(value :_*))
+    def setTrainingImageUndefined: Self = StObject.set(x, "TrainingImage", js.undefined)
     
     @scala.inline
-    def setMetricDefinitions(value: MetricDefinitionList): Self = this.set("MetricDefinitions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricDefinitions: Self = this.set("MetricDefinitions", js.undefined)
-    
-    @scala.inline
-    def setTrainingImage(value: AlgorithmImage): Self = this.set("TrainingImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrainingImage: Self = this.set("TrainingImage", js.undefined)
+    def setTrainingInputMode(value: TrainingInputMode): Self = StObject.set(x, "TrainingInputMode", value.asInstanceOf[js.Any])
   }
 }

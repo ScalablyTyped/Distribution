@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Document
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     doc.setSelection(rangeBuilder.build());
   */
 @js.native
-trait RangeBuilder extends js.Object {
+trait RangeBuilder extends StObject {
   
   def addElement(element: Element): RangeBuilder = js.native
   def addElement(textElement: Text, startOffset: Integer, endOffsetInclusive: Integer): RangeBuilder = js.native

@@ -3,29 +3,31 @@ package typings.maximMazurokGapiClientCloudprofiler
 import typings.maximMazurokGapiClientCloudprofiler.gapi.client.cloudprofiler.ProjectsResource
 import typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.cloudprofiler
 import typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.v2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
-      /** Load Stackdriver Profiler API v2 */
-      def load(name: cloudprofiler, version: v2): js.Thenable[Unit] = js.native
-      def load(name: cloudprofiler, version: v2, callback: js.Function0[_]): Unit = js.native
-      
-      @js.native
-      object cloudprofiler extends js.Object {
+      object cloudprofiler {
         
+        @JSGlobal("gapi.client.cloudprofiler.projects")
+        @js.native
         val projects: ProjectsResource = js.native
       }
+      
+      /** Load Stackdriver Profiler API v2 */
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: cloudprofiler, version: v2): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: cloudprofiler, version: v2, callback: js.Function0[_]): Unit = js.native
     }
   }
 }

@@ -1,32 +1,29 @@
 package typings.watsonDeveloperCloud.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `listEntities` operation. */
-@JSImport("watson-developer-cloud/assistant/v1", "ListEntitiesConstants")
-@js.native
-object ListEntitiesConstants extends js.Object {
+object ListEntitiesConstants {
   
   @js.native
-  sealed trait Sort extends js.Object
+  sealed trait Sort extends StObject
   /** The attribute by which returned entities will be sorted. To reverse the sort order, prefix the value with a minus sign (`-`). */
+  @JSImport("watson-developer-cloud/assistant/v1", "ListEntitiesConstants.Sort")
   @js.native
-  object Sort extends js.Object {
+  object Sort extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Sort with String] = js.native
     
     @js.native
     sealed trait ENTITY extends Sort
-    /* "entity" */ @js.native
-    object ENTITY extends TopLevel[ENTITY with String]
+    /* "entity" */ val ENTITY: typings.watsonDeveloperCloud.mod.ListEntitiesConstants.Sort.ENTITY with String = js.native
     
     @js.native
     sealed trait UPDATED extends Sort
-    /* "updated" */ @js.native
-    object UPDATED extends TopLevel[UPDATED with String]
+    /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListEntitiesConstants.Sort.UPDATED with String = js.native
   }
 }

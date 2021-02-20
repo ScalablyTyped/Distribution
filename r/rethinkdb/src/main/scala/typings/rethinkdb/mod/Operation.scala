@@ -1,12 +1,13 @@
 package typings.rethinkdb.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Operation[T] extends js.Object {
+trait Operation[T] extends StObject {
   
   def run(conn: Connection): js.Promise[T] = js.native
   def run(conn: Connection, cb: js.Function2[/* err */ Error, /* result */ T, Unit]): Unit = js.native

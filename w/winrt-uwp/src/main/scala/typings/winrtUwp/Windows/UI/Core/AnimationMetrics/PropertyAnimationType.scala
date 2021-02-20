@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.Core.AnimationMetrics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PropertyAnimationType extends js.Object
+sealed trait PropertyAnimationType extends StObject
 /** Specifies the animation type represented by a PropertyAnimation object. */
 @JSGlobal("Windows.UI.Core.AnimationMetrics.PropertyAnimationType")
 @js.native
-object PropertyAnimationType extends js.Object {
+object PropertyAnimationType extends StObject {
   
   /** Animate the object's transparency. The corresponding object is the OpacityAnimation . */
   @js.native

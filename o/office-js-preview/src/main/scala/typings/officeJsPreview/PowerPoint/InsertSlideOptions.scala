@@ -2,6 +2,7 @@ package typings.officeJsPreview.PowerPoint
 
 import typings.officeJsPreview.officeJsPreviewStrings.KeepSourceFormatting
 import typings.officeJsPreview.officeJsPreviewStrings.UseDestinationTheme
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @beta
   */
 @js.native
-trait InsertSlideOptions extends js.Object {
+trait InsertSlideOptions extends StObject {
   
   /**
     *
@@ -58,39 +59,27 @@ object InsertSlideOptions {
   }
   
   @scala.inline
-  implicit class InsertSlideOptionsOps[Self <: InsertSlideOptions] (val x: Self) extends AnyVal {
+  implicit class InsertSlideOptionsMutableBuilder[Self <: InsertSlideOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormatting(value: InsertSlideFormatting | KeepSourceFormatting | UseDestinationTheme): Self = StObject.set(x, "formatting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormattingUndefined: Self = StObject.set(x, "formatting", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceSlideIds(value: js.Array[String]): Self = StObject.set(x, "sourceSlideIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatting(value: InsertSlideFormatting | KeepSourceFormatting | UseDestinationTheme): Self = this.set("formatting", value.asInstanceOf[js.Any])
+    def setSourceSlideIdsUndefined: Self = StObject.set(x, "sourceSlideIds", js.undefined)
     
     @scala.inline
-    def deleteFormatting: Self = this.set("formatting", js.undefined)
+    def setSourceSlideIdsVarargs(value: String*): Self = StObject.set(x, "sourceSlideIds", js.Array(value :_*))
     
     @scala.inline
-    def setSourceSlideIdsVarargs(value: String*): Self = this.set("sourceSlideIds", js.Array(value :_*))
+    def setTargetSlideId(value: String): Self = StObject.set(x, "targetSlideId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceSlideIds(value: js.Array[String]): Self = this.set("sourceSlideIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceSlideIds: Self = this.set("sourceSlideIds", js.undefined)
-    
-    @scala.inline
-    def setTargetSlideId(value: String): Self = this.set("targetSlideId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetSlideId: Self = this.set("targetSlideId", js.undefined)
+    def setTargetSlideIdUndefined: Self = StObject.set(x, "targetSlideId", js.undefined)
   }
 }

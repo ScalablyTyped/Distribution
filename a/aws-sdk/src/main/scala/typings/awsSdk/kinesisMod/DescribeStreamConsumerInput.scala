@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeStreamConsumerInput extends js.Object {
+trait DescribeStreamConsumerInput extends StObject {
   
   /**
     * The ARN returned by Kinesis Data Streams when you registered the consumer.
@@ -31,36 +32,24 @@ object DescribeStreamConsumerInput {
   }
   
   @scala.inline
-  implicit class DescribeStreamConsumerInputOps[Self <: DescribeStreamConsumerInput] (val x: Self) extends AnyVal {
+  implicit class DescribeStreamConsumerInputMutableBuilder[Self <: DescribeStreamConsumerInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumerARN(value: ConsumerARN): Self = StObject.set(x, "ConsumerARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumerARNUndefined: Self = StObject.set(x, "ConsumerARN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsumerName(value: ConsumerName): Self = StObject.set(x, "ConsumerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumerARN(value: ConsumerARN): Self = this.set("ConsumerARN", value.asInstanceOf[js.Any])
+    def setConsumerNameUndefined: Self = StObject.set(x, "ConsumerName", js.undefined)
     
     @scala.inline
-    def deleteConsumerARN: Self = this.set("ConsumerARN", js.undefined)
+    def setStreamARN(value: StreamARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumerName(value: ConsumerName): Self = this.set("ConsumerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConsumerName: Self = this.set("ConsumerName", js.undefined)
-    
-    @scala.inline
-    def setStreamARN(value: StreamARN): Self = this.set("StreamARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamARN: Self = this.set("StreamARN", js.undefined)
+    def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
   }
 }

@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -165,7 +166,7 @@ object XTransliteration {
     acquire: () => Unit,
     compareString: (String, String) => Double,
     compareSubstring: (String, Double, Double, String, Double, Double) => Double,
-    equals: (String, Double, Double, js.Array[Double], String, Double, Double, js.Array[Double]) => Boolean,
+    equals_ : (String, Double, Double, js.Array[Double], String, Double, Double, js.Array[Double]) => Boolean,
     folding: (String, Double, Double, js.Array[SeqEquiv[Double]]) => String,
     getAvailableModules: (Locale, Double) => SafeArray[String],
     getName: () => String,
@@ -179,70 +180,59 @@ object XTransliteration {
     transliterate: (String, Double, Double, js.Array[SeqEquiv[Double]]) => String,
     transliterateRange: (String, String) => SafeArray[String]
   ): XTransliteration = {
-    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), compareString = js.Any.fromFunction2(compareString), compareSubstring = js.Any.fromFunction6(compareSubstring), equals = js.Any.fromFunction8(equals), folding = js.Any.fromFunction4(folding), getAvailableModules = js.Any.fromFunction2(getAvailableModules), getName = js.Any.fromFunction0(getName), getType = js.Any.fromFunction0(getType), loadModule = js.Any.fromFunction2(loadModule), loadModuleByImplName = js.Any.fromFunction2(loadModuleByImplName), loadModuleNew = js.Any.fromFunction2(loadModuleNew), loadModulesByImplNames = js.Any.fromFunction2(loadModulesByImplNames), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), transliterate = js.Any.fromFunction4(transliterate), transliterateRange = js.Any.fromFunction2(transliterateRange))
+    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), compareString = js.Any.fromFunction2(compareString), compareSubstring = js.Any.fromFunction6(compareSubstring), folding = js.Any.fromFunction4(folding), getAvailableModules = js.Any.fromFunction2(getAvailableModules), getName = js.Any.fromFunction0(getName), getType = js.Any.fromFunction0(getType), loadModule = js.Any.fromFunction2(loadModule), loadModuleByImplName = js.Any.fromFunction2(loadModuleByImplName), loadModuleNew = js.Any.fromFunction2(loadModuleNew), loadModulesByImplNames = js.Any.fromFunction2(loadModulesByImplNames), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), transliterate = js.Any.fromFunction4(transliterate), transliterateRange = js.Any.fromFunction2(transliterateRange))
+    __obj.updateDynamic("equals")(js.Any.fromFunction8(equals_))
     __obj.asInstanceOf[XTransliteration]
   }
   
   @scala.inline
-  implicit class XTransliterationOps[Self <: XTransliteration] (val x: Self) extends AnyVal {
+  implicit class XTransliterationMutableBuilder[Self <: XTransliteration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompareString(value: (String, String) => Double): Self = StObject.set(x, "compareString", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompareSubstring(value: (String, Double, Double, String, Double, Double) => Double): Self = StObject.set(x, "compareSubstring", js.Any.fromFunction6(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Double): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCompareString(value: (String, String) => Double): Self = this.set("compareString", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setCompareSubstring(value: (String, Double, Double, String, Double, Double) => Double): Self = this.set("compareSubstring", js.Any.fromFunction6(value))
-    
-    @scala.inline
-    def setEquals(
+    def setEquals_(
       value: (String, Double, Double, js.Array[Double], String, Double, Double, js.Array[Double]) => Boolean
-    ): Self = this.set("equals", js.Any.fromFunction8(value))
+    ): Self = StObject.set(x, "equals", js.Any.fromFunction8(value))
     
     @scala.inline
-    def setFolding(value: (String, Double, Double, js.Array[SeqEquiv[Double]]) => String): Self = this.set("folding", js.Any.fromFunction4(value))
+    def setFolding(value: (String, Double, Double, js.Array[SeqEquiv[Double]]) => String): Self = StObject.set(x, "folding", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetAvailableModules(value: (Locale, Double) => SafeArray[String]): Self = this.set("getAvailableModules", js.Any.fromFunction2(value))
+    def setGetAvailableModules(value: (Locale, Double) => SafeArray[String]): Self = StObject.set(x, "getAvailableModules", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetType(value: () => Double): Self = this.set("getType", js.Any.fromFunction0(value))
+    def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLoadModule(value: (TransliterationModules, Locale) => Unit): Self = this.set("loadModule", js.Any.fromFunction2(value))
+    def setLoadModule(value: (TransliterationModules, Locale) => Unit): Self = StObject.set(x, "loadModule", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLoadModuleByImplName(value: (String, Locale) => Unit): Self = this.set("loadModuleByImplName", js.Any.fromFunction2(value))
+    def setLoadModuleByImplName(value: (String, Locale) => Unit): Self = StObject.set(x, "loadModuleByImplName", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLoadModuleNew(value: (SeqEquiv[TransliterationModulesNew], Locale) => Unit): Self = this.set("loadModuleNew", js.Any.fromFunction2(value))
+    def setLoadModuleNew(value: (SeqEquiv[TransliterationModulesNew], Locale) => Unit): Self = StObject.set(x, "loadModuleNew", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLoadModulesByImplNames(value: (SeqEquiv[String], Locale) => Unit): Self = this.set("loadModulesByImplNames", js.Any.fromFunction2(value))
+    def setLoadModulesByImplNames(value: (SeqEquiv[String], Locale) => Unit): Self = StObject.set(x, "loadModulesByImplNames", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTransliterate(value: (String, Double, Double, js.Array[SeqEquiv[Double]]) => String): Self = this.set("transliterate", js.Any.fromFunction4(value))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransliterateRange(value: (String, String) => SafeArray[String]): Self = this.set("transliterateRange", js.Any.fromFunction2(value))
+    def setTransliterate(value: (String, Double, Double, js.Array[SeqEquiv[Double]]) => String): Self = StObject.set(x, "transliterate", js.Any.fromFunction4(value))
+    
+    @scala.inline
+    def setTransliterateRange(value: (String, String) => SafeArray[String]): Self = StObject.set(x, "transliterateRange", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

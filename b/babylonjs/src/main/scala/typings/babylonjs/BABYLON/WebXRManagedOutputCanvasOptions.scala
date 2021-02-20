@@ -2,12 +2,13 @@ package typings.babylonjs.BABYLON
 
 import typings.babylonjs.HTMLCanvasElement
 import typings.babylonjs.XRWebGLLayerInit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebXRManagedOutputCanvasOptions extends js.Object {
+trait WebXRManagedOutputCanvasOptions extends StObject {
   
   /**
     * An optional canvas in case you wish to create it yourself and provide it here.
@@ -34,36 +35,24 @@ object WebXRManagedOutputCanvasOptions {
   }
   
   @scala.inline
-  implicit class WebXRManagedOutputCanvasOptionsOps[Self <: WebXRManagedOutputCanvasOptions] (val x: Self) extends AnyVal {
+  implicit class WebXRManagedOutputCanvasOptionsMutableBuilder[Self <: WebXRManagedOutputCanvasOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanvasElement(value: HTMLCanvasElement): Self = StObject.set(x, "canvasElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanvasElementUndefined: Self = StObject.set(x, "canvasElement", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanvasOptions(value: XRWebGLLayerInit): Self = StObject.set(x, "canvasOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanvasElement(value: HTMLCanvasElement): Self = this.set("canvasElement", value.asInstanceOf[js.Any])
+    def setCanvasOptionsUndefined: Self = StObject.set(x, "canvasOptions", js.undefined)
     
     @scala.inline
-    def deleteCanvasElement: Self = this.set("canvasElement", js.undefined)
+    def setNewCanvasCssStyle(value: String): Self = StObject.set(x, "newCanvasCssStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanvasOptions(value: XRWebGLLayerInit): Self = this.set("canvasOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCanvasOptions: Self = this.set("canvasOptions", js.undefined)
-    
-    @scala.inline
-    def setNewCanvasCssStyle(value: String): Self = this.set("newCanvasCssStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewCanvasCssStyle: Self = this.set("newCanvasCssStyle", js.undefined)
+    def setNewCanvasCssStyleUndefined: Self = StObject.set(x, "newCanvasCssStyle", js.undefined)
   }
 }

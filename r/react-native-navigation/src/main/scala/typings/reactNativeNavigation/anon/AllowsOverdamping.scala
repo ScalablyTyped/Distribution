@@ -2,6 +2,7 @@ package typings.reactNativeNavigation.anon
 
 import typings.reactNativeNavigation.optionsMod.Interpolation
 import typings.reactNativeNavigation.reactNativeNavigationStrings.spring
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,51 +32,39 @@ object AllowsOverdamping {
   }
   
   @scala.inline
-  implicit class AllowsOverdampingOps[Self <: AllowsOverdamping] (val x: Self) extends AnyVal {
+  implicit class AllowsOverdampingMutableBuilder[Self <: AllowsOverdamping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowsOverdamping(value: Boolean): Self = StObject.set(x, "allowsOverdamping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowsOverdampingUndefined: Self = StObject.set(x, "allowsOverdamping", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: spring): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
     
     @scala.inline
-    def setAllowsOverdamping(value: Boolean): Self = this.set("allowsOverdamping", value.asInstanceOf[js.Any])
+    def setInitialVelocity(value: Double): Self = StObject.set(x, "initialVelocity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowsOverdamping: Self = this.set("allowsOverdamping", js.undefined)
+    def setInitialVelocityUndefined: Self = StObject.set(x, "initialVelocity", js.undefined)
     
     @scala.inline
-    def setDamping(value: Double): Self = this.set("damping", value.asInstanceOf[js.Any])
+    def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDamping: Self = this.set("damping", js.undefined)
+    def setMassUndefined: Self = StObject.set(x, "mass", js.undefined)
     
     @scala.inline
-    def setInitialVelocity(value: Double): Self = this.set("initialVelocity", value.asInstanceOf[js.Any])
+    def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitialVelocity: Self = this.set("initialVelocity", js.undefined)
+    def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
     
     @scala.inline
-    def setMass(value: Double): Self = this.set("mass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMass: Self = this.set("mass", js.undefined)
-    
-    @scala.inline
-    def setStiffness(value: Double): Self = this.set("stiffness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStiffness: Self = this.set("stiffness", js.undefined)
+    def setType(value: spring): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

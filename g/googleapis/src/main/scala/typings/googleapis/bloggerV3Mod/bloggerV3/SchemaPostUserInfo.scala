@@ -1,11 +1,12 @@
 package typings.googleapis.bloggerV3Mod.bloggerV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaPostUserInfo extends js.Object {
+trait SchemaPostUserInfo extends StObject {
   
   /**
     * The kind of this entity. Always blogger#postUserInfo
@@ -31,36 +32,24 @@ object SchemaPostUserInfo {
   }
   
   @scala.inline
-  implicit class SchemaPostUserInfoOps[Self <: SchemaPostUserInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaPostUserInfoMutableBuilder[Self <: SchemaPostUserInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPost(value: SchemaPost): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPost_user_info(value: SchemaPostPerUserInfo): Self = StObject.set(x, "post_user_info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPost(value: SchemaPost): Self = this.set("post", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePost: Self = this.set("post", js.undefined)
-    
-    @scala.inline
-    def setPost_user_info(value: SchemaPostPerUserInfo): Self = this.set("post_user_info", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePost_user_info: Self = this.set("post_user_info", js.undefined)
+    def setPost_user_infoUndefined: Self = StObject.set(x, "post_user_info", js.undefined)
   }
 }

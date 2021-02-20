@@ -17,6 +17,7 @@ import typings.officeJs.officeJsStrings.Interplotted
 import typings.officeJs.officeJsStrings.NotPlotted
 import typings.officeJs.officeJsStrings.Rows
 import typings.officeJs.officeJsStrings.Zero
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

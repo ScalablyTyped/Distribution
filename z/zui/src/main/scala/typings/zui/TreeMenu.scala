@@ -1,11 +1,12 @@
 package typings.zui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeMenu extends js.Object {
+trait TreeMenu extends StObject {
   
   def add(element: JQuery, items: js.Array[TreeNode]): Unit = js.native
   def add(

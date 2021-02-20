@@ -1,12 +1,13 @@
 package typings.matterJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Composites")
 @js.native
-class Composites () extends js.Object {
+class Composites () extends StObject {
   
   /**
     * Creates a composite with a Newton's Cradle setup of bodies and constraints.
@@ -21,9 +22,7 @@ class Composites () extends js.Object {
   def newtonsCradle(xx: Double, yy: Double, _number: Double, size: Double, length: Double): Composite = js.native
 }
 /* static members */
-@JSImport("matter-js", "Composites")
-@js.native
-object Composites extends js.Object {
+object Composites {
   
   /**
     * Creates a composite with simple car setup of bodies and constraints.
@@ -35,6 +34,8 @@ object Composites extends js.Object {
     * @param {number} wheelSize
     * @return {composite} A new composite car body
     */
+  @JSImport("matter-js", "Composites.car")
+  @js.native
   def car(xx: Double, yy: Double, width: Double, height: Double, wheelSize: Double): Composite = js.native
   
   /**
@@ -48,6 +49,8 @@ object Composites extends js.Object {
     * @param {object} options
     * @return {composite} A new composite containing objects chained together with constraints
     */
+  @JSImport("matter-js", "Composites.chain")
+  @js.native
   def chain(
     composite: Composite,
     xOffsetA: Double,
@@ -67,6 +70,8 @@ object Composites extends js.Object {
     * @param {object} options
     * @return {composite} The composite containing objects meshed together with constraints
     */
+  @JSImport("matter-js", "Composites.mesh")
+  @js.native
   def mesh(composite: Composite, columns: Double, rows: Double, crossBrace: Boolean, options: js.Any): Composite = js.native
   
   /**
@@ -82,6 +87,8 @@ object Composites extends js.Object {
     * @param {function} callback
     * @return {composite} A new composite containing objects created in the callback
     */
+  @JSImport("matter-js", "Composites.pyramid")
+  @js.native
   def pyramid(
     xx: Double,
     yy: Double,
@@ -107,6 +114,8 @@ object Composites extends js.Object {
     * @param {} constraintOptions
     * @return {composite} A new composite softBody
     */
+  @JSImport("matter-js", "Composites.softBody")
+  @js.native
   def softBody(
     xx: Double,
     yy: Double,
@@ -133,6 +142,8 @@ object Composites extends js.Object {
     * @param {function} callback
     * @return {composite} A new composite containing objects created in the callback
     */
+  @JSImport("matter-js", "Composites.stack")
+  @js.native
   def stack(
     xx: Double,
     yy: Double,

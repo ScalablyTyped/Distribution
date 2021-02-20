@@ -4,12 +4,13 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.tuyaPanelKitStrings.icon
 import typings.tuyaPanelKit.tuyaPanelKitStrings.text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnitTextProps extends js.Object {
+trait UnitTextProps extends StObject {
   
   var letterWidth: js.UndefOr[Double] = js.native
   
@@ -54,126 +55,114 @@ object UnitTextProps {
   }
   
   @scala.inline
-  implicit class UnitTextPropsOps[Self <: UnitTextProps] (val x: Self) extends AnyVal {
+  implicit class UnitTextPropsMutableBuilder[Self <: UnitTextProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLetterWidth(value: Double): Self = StObject.set(x, "letterWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLetterWidthUndefined: Self = StObject.set(x, "letterWidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: String | Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def setLetterWidth(value: Double): Self = this.set("letterWidth", value.asInstanceOf[js.Any])
+    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLetterWidth: Self = this.set("letterWidth", js.undefined)
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSvgMap(value: js.Object): Self = StObject.set(x, "svgMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setSvgMapUndefined: Self = StObject.set(x, "svgMap", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setSymbolWidth(value: Double): Self = StObject.set(x, "symbolWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleNull: Self = this.set("style", null)
+    def setSymbolWidthUndefined: Self = StObject.set(x, "symbolWidth", js.undefined)
     
     @scala.inline
-    def setSvgMap(value: js.Object): Self = this.set("svgMap", value.asInstanceOf[js.Any])
+    def setSymbols(value: js.Array[String]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSvgMap: Self = this.set("svgMap", js.undefined)
+    def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
     
     @scala.inline
-    def setSymbolWidth(value: Double): Self = this.set("symbolWidth", value.asInstanceOf[js.Any])
+    def setSymbolsVarargs(value: String*): Self = StObject.set(x, "symbols", js.Array(value :_*))
     
     @scala.inline
-    def deleteSymbolWidth: Self = this.set("symbolWidth", js.undefined)
+    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbolsVarargs(value: String*): Self = this.set("symbols", js.Array(value :_*))
+    def setUnitColor(value: String): Self = StObject.set(x, "unitColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbols(value: js.Array[String]): Self = this.set("symbols", value.asInstanceOf[js.Any])
+    def setUnitColorUndefined: Self = StObject.set(x, "unitColor", js.undefined)
     
     @scala.inline
-    def deleteSymbols: Self = this.set("symbols", js.undefined)
+    def setUnitPaddingLeft(value: Double): Self = StObject.set(x, "unitPaddingLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
+    def setUnitPaddingLeftUndefined: Self = StObject.set(x, "unitPaddingLeft", js.undefined)
     
     @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
+    def setUnitPaddingTop(value: Double): Self = StObject.set(x, "unitPaddingTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnitColor(value: String): Self = this.set("unitColor", value.asInstanceOf[js.Any])
+    def setUnitPaddingTopUndefined: Self = StObject.set(x, "unitPaddingTop", js.undefined)
     
     @scala.inline
-    def deleteUnitColor: Self = this.set("unitColor", js.undefined)
+    def setUnitSize(value: Double): Self = StObject.set(x, "unitSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnitPaddingLeft(value: Double): Self = this.set("unitPaddingLeft", value.asInstanceOf[js.Any])
+    def setUnitSizeUndefined: Self = StObject.set(x, "unitSize", js.undefined)
     
     @scala.inline
-    def deleteUnitPaddingLeft: Self = this.set("unitPaddingLeft", js.undefined)
+    def setUnitType(value: icon | text): Self = StObject.set(x, "unitType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnitPaddingTop(value: Double): Self = this.set("unitPaddingTop", value.asInstanceOf[js.Any])
+    def setUnitTypeUndefined: Self = StObject.set(x, "unitType", js.undefined)
     
     @scala.inline
-    def deleteUnitPaddingTop: Self = this.set("unitPaddingTop", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
     @scala.inline
-    def setUnitSize(value: Double): Self = this.set("unitSize", value.asInstanceOf[js.Any])
+    def setUseART(value: Boolean): Self = StObject.set(x, "useART", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnitSize: Self = this.set("unitSize", js.undefined)
+    def setUseARTUndefined: Self = StObject.set(x, "useART", js.undefined)
     
     @scala.inline
-    def setUnitType(value: icon | text): Self = this.set("unitType", value.asInstanceOf[js.Any])
+    def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnitType: Self = this.set("unitType", js.undefined)
+    def setValueColor(value: String): Self = StObject.set(x, "valueColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseART(value: Boolean): Self = this.set("useART", value.asInstanceOf[js.Any])
+    def setValueColorUndefined: Self = StObject.set(x, "valueColor", js.undefined)
     
     @scala.inline
-    def deleteUseART: Self = this.set("useART", js.undefined)
+    def setValueColors(value: js.Array[String]): Self = StObject.set(x, "valueColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueColor(value: String): Self = this.set("valueColor", value.asInstanceOf[js.Any])
+    def setValueColorsUndefined: Self = StObject.set(x, "valueColors", js.undefined)
     
     @scala.inline
-    def deleteValueColor: Self = this.set("valueColor", js.undefined)
+    def setValueColorsVarargs(value: String*): Self = StObject.set(x, "valueColors", js.Array(value :_*))
     
     @scala.inline
-    def setValueColorsVarargs(value: String*): Self = this.set("valueColors", js.Array(value :_*))
+    def setValueSize(value: Double): Self = StObject.set(x, "valueSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueColors(value: js.Array[String]): Self = this.set("valueColors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueColors: Self = this.set("valueColors", js.undefined)
-    
-    @scala.inline
-    def setValueSize(value: Double): Self = this.set("valueSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueSize: Self = this.set("valueSize", js.undefined)
+    def setValueSizeUndefined: Self = StObject.set(x, "valueSize", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.vscodeLanguageserverProtocol.anon
 
 import typings.vscodeLanguageserverTypes.mod.CompletionItemKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `0` extends js.Object {
+trait `0` extends StObject {
   
   /**
     * The completion item kind values the client supports. When this
@@ -29,27 +30,15 @@ object `0` {
   }
   
   @scala.inline
-  implicit class `0Ops`[Self <: `0`] (val x: Self) extends AnyVal {
+  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setValueSet(value: js.Array[CompletionItemKind]): Self = StObject.set(x, "valueSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValueSetUndefined: Self = StObject.set(x, "valueSet", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setValueSetVarargs(value: CompletionItemKind*): Self = this.set("valueSet", js.Array(value :_*))
-    
-    @scala.inline
-    def setValueSet(value: js.Array[CompletionItemKind]): Self = this.set("valueSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueSet: Self = this.set("valueSet", js.undefined)
+    def setValueSetVarargs(value: CompletionItemKind*): Self = StObject.set(x, "valueSet", js.Array(value :_*))
   }
 }

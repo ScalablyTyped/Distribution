@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointemailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DedicatedIp extends js.Object {
+trait DedicatedIp extends StObject {
   
   /**
     * An IP address that is reserved for use by your Amazon Pinpoint account.
@@ -36,33 +37,21 @@ object DedicatedIp {
   }
   
   @scala.inline
-  implicit class DedicatedIpOps[Self <: DedicatedIp] (val x: Self) extends AnyVal {
+  implicit class DedicatedIpMutableBuilder[Self <: DedicatedIp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIp(value: Ip): Self = StObject.set(x, "Ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPoolName(value: PoolName): Self = StObject.set(x, "PoolName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPoolNameUndefined: Self = StObject.set(x, "PoolName", js.undefined)
     
     @scala.inline
-    def setIp(value: Ip): Self = this.set("Ip", value.asInstanceOf[js.Any])
+    def setWarmupPercentage(value: Percentage100Wrapper): Self = StObject.set(x, "WarmupPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWarmupPercentage(value: Percentage100Wrapper): Self = this.set("WarmupPercentage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWarmupStatus(value: WarmupStatus): Self = this.set("WarmupStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPoolName(value: PoolName): Self = this.set("PoolName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePoolName: Self = this.set("PoolName", js.undefined)
+    def setWarmupStatus(value: WarmupStatus): Self = StObject.set(x, "WarmupStatus", value.asInstanceOf[js.Any])
   }
 }

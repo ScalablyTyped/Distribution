@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,66 +70,54 @@ object IgGridUpdatingLocale {
   }
   
   @scala.inline
-  implicit class IgGridUpdatingLocaleOps[Self <: IgGridUpdatingLocale] (val x: Self) extends AnyVal {
+  implicit class IgGridUpdatingLocaleMutableBuilder[Self <: IgGridUpdatingLocale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddRowLabel(value: String): Self = StObject.set(x, "addRowLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddRowLabelUndefined: Self = StObject.set(x, "addRowLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddRowTooltip(value: String): Self = StObject.set(x, "addRowTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddRowLabel(value: String): Self = this.set("addRowLabel", value.asInstanceOf[js.Any])
+    def setAddRowTooltipUndefined: Self = StObject.set(x, "addRowTooltip", js.undefined)
     
     @scala.inline
-    def deleteAddRowLabel: Self = this.set("addRowLabel", js.undefined)
+    def setCancelLabel(value: String): Self = StObject.set(x, "cancelLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddRowTooltip(value: String): Self = this.set("addRowTooltip", value.asInstanceOf[js.Any])
+    def setCancelLabelUndefined: Self = StObject.set(x, "cancelLabel", js.undefined)
     
     @scala.inline
-    def deleteAddRowTooltip: Self = this.set("addRowTooltip", js.undefined)
+    def setCancelTooltip(value: String): Self = StObject.set(x, "cancelTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelLabel(value: String): Self = this.set("cancelLabel", value.asInstanceOf[js.Any])
+    def setCancelTooltipUndefined: Self = StObject.set(x, "cancelTooltip", js.undefined)
     
     @scala.inline
-    def deleteCancelLabel: Self = this.set("cancelLabel", js.undefined)
+    def setDeleteRowLabel(value: String): Self = StObject.set(x, "deleteRowLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelTooltip(value: String): Self = this.set("cancelTooltip", value.asInstanceOf[js.Any])
+    def setDeleteRowLabelUndefined: Self = StObject.set(x, "deleteRowLabel", js.undefined)
     
     @scala.inline
-    def deleteCancelTooltip: Self = this.set("cancelTooltip", js.undefined)
+    def setDeleteRowTooltip(value: String): Self = StObject.set(x, "deleteRowTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteRowLabel(value: String): Self = this.set("deleteRowLabel", value.asInstanceOf[js.Any])
+    def setDeleteRowTooltipUndefined: Self = StObject.set(x, "deleteRowTooltip", js.undefined)
     
     @scala.inline
-    def deleteDeleteRowLabel: Self = this.set("deleteRowLabel", js.undefined)
+    def setDoneLabel(value: String): Self = StObject.set(x, "doneLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteRowTooltip(value: String): Self = this.set("deleteRowTooltip", value.asInstanceOf[js.Any])
+    def setDoneLabelUndefined: Self = StObject.set(x, "doneLabel", js.undefined)
     
     @scala.inline
-    def deleteDeleteRowTooltip: Self = this.set("deleteRowTooltip", js.undefined)
+    def setDoneTooltip(value: String): Self = StObject.set(x, "doneTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoneLabel(value: String): Self = this.set("doneLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDoneLabel: Self = this.set("doneLabel", js.undefined)
-    
-    @scala.inline
-    def setDoneTooltip(value: String): Self = this.set("doneTooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDoneTooltip: Self = this.set("doneTooltip", js.undefined)
+    def setDoneTooltipUndefined: Self = StObject.set(x, "doneTooltip", js.undefined)
   }
 }

@@ -4,18 +4,21 @@ import typings.stripe.mod.HeaderOptions
 import typings.stripe.mod.IList
 import typings.stripe.mod.IListPromise
 import typings.stripe.mod.IResponseFn
+import typings.stripe.mod.Stripe
 import typings.stripe.mod.StripeResource
 import typings.stripe.mod.topups.ITopup
 import typings.stripe.mod.topups.ITopupCreationOptions
 import typings.stripe.mod.topups.ITopupUpdateOptions
 import typings.stripe.mod.topups.ITopupsListOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Topups")
 @js.native
-class Topups () extends StripeResource {
+class Topups protected () extends StripeResource {
+  def this(stripe: Stripe, urlData: js.Any) = this()
   
   def cancel(id: String): js.Promise[ITopup] = js.native
   /**

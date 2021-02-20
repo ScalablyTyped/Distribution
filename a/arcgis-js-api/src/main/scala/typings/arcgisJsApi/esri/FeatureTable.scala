@@ -4,6 +4,7 @@ import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`selection-change`
 import typings.arcgisJsApi.arcgisJsApiStrings.asc_
 import typings.arcgisJsApi.arcgisJsApiStrings.desc_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

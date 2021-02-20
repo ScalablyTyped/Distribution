@@ -1,11 +1,12 @@
 package typings.awsSdk.wafMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListActivatedRulesInRuleGroupResponse extends js.Object {
+trait ListActivatedRulesInRuleGroupResponse extends StObject {
   
   /**
     * An array of ActivatedRules objects.
@@ -26,33 +27,21 @@ object ListActivatedRulesInRuleGroupResponse {
   }
   
   @scala.inline
-  implicit class ListActivatedRulesInRuleGroupResponseOps[Self <: ListActivatedRulesInRuleGroupResponse] (val x: Self) extends AnyVal {
+  implicit class ListActivatedRulesInRuleGroupResponseMutableBuilder[Self <: ListActivatedRulesInRuleGroupResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivatedRules(value: ActivatedRules): Self = StObject.set(x, "ActivatedRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivatedRulesUndefined: Self = StObject.set(x, "ActivatedRules", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivatedRulesVarargs(value: ActivatedRule*): Self = StObject.set(x, "ActivatedRules", js.Array(value :_*))
     
     @scala.inline
-    def setActivatedRulesVarargs(value: ActivatedRule*): Self = this.set("ActivatedRules", js.Array(value :_*))
+    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivatedRules(value: ActivatedRules): Self = this.set("ActivatedRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActivatedRules: Self = this.set("ActivatedRules", js.undefined)
-    
-    @scala.inline
-    def setNextMarker(value: NextMarker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

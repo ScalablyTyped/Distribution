@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFFolderListingAlgorithm
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IExpressionEx extends js.Object {
+trait IExpressionEx extends StObject {
   
   def Clone(): IExpressionEx = js.native
   
@@ -48,48 +49,36 @@ object IExpressionEx {
   }
   
   @scala.inline
-  implicit class IExpressionExOps[Self <: IExpressionEx] (val x: Self) extends AnyVal {
+  implicit class IExpressionExMutableBuilder[Self <: IExpressionEx] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IExpressionEx): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditions(value: ISearchConditions): Self = StObject.set(x, "Conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpression(value: IExpression): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IExpressionEx): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setFolderListingAlgorithm(value: MFFolderListingAlgorithm): Self = StObject.set(x, "FolderListingAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: ISearchConditions): Self = this.set("Conditions", value.asInstanceOf[js.Any])
+    def setNULLFolderName(value: String): Self = StObject.set(x, "NULLFolderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpression(value: IExpression): Self = this.set("Expression", value.asInstanceOf[js.Any])
+    def setShowContentsAsJITFolders(value: Boolean): Self = StObject.set(x, "ShowContentsAsJITFolders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolderListingAlgorithm(value: MFFolderListingAlgorithm): Self = this.set("FolderListingAlgorithm", value.asInstanceOf[js.Any])
+    def setShowEmptyFolders(value: Boolean): Self = StObject.set(x, "ShowEmptyFolders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNULLFolderName(value: String): Self = this.set("NULLFolderName", value.asInstanceOf[js.Any])
+    def setShowMatchingObjectsOnThisLevel(value: Boolean): Self = StObject.set(x, "ShowMatchingObjectsOnThisLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowContentsAsJITFolders(value: Boolean): Self = this.set("ShowContentsAsJITFolders", value.asInstanceOf[js.Any])
+    def setShowNULLFolder(value: Boolean): Self = StObject.set(x, "ShowNULLFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowEmptyFolders(value: Boolean): Self = this.set("ShowEmptyFolders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowMatchingObjectsOnThisLevel(value: Boolean): Self = this.set("ShowMatchingObjectsOnThisLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowNULLFolder(value: Boolean): Self = this.set("ShowNULLFolder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowNULLFolderContentsOnThisLevel(value: Boolean): Self = this.set("ShowNULLFolderContentsOnThisLevel", value.asInstanceOf[js.Any])
+    def setShowNULLFolderContentsOnThisLevel(value: Boolean): Self = StObject.set(x, "ShowNULLFolderContentsOnThisLevel", value.asInstanceOf[js.Any])
   }
 }

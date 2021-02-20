@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.UI
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -99,99 +100,87 @@ object WebViewEventMap {
   }
   
   @scala.inline
-  implicit class WebViewEventMapOps[Self <: WebViewEventMap] (val x: Self) extends AnyVal {
+  implicit class WebViewEventMapMutableBuilder[Self <: WebViewEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeforeload(value: WebViewBeforeloadEvent): Self = StObject.set(x, "beforeload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlacklisturl(value: WebViewBlacklisturlEvent): Self = StObject.set(x, "blacklisturl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockedurl(value: WebViewBlockedurlEvent): Self = StObject.set(x, "blockedurl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeload(value: WebViewBeforeloadEvent): Self = this.set("beforeload", value.asInstanceOf[js.Any])
+    def setClick(value: WebViewClickEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlacklisturl(value: WebViewBlacklisturlEvent): Self = this.set("blacklisturl", value.asInstanceOf[js.Any])
+    def setDblclick(value: WebViewDblclickEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockedurl(value: WebViewBlockedurlEvent): Self = this.set("blockedurl", value.asInstanceOf[js.Any])
+    def setDoubletap(value: WebViewDoubletapEvent): Self = StObject.set(x, "doubletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: WebViewClickEvent): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setError(value: WebViewErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDblclick(value: WebViewDblclickEvent): Self = this.set("dblclick", value.asInstanceOf[js.Any])
+    def setFocus(value: WebViewFocusEvent): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubletap(value: WebViewDoubletapEvent): Self = this.set("doubletap", value.asInstanceOf[js.Any])
+    def setHandleurl(value: WebViewHandleurlEvent): Self = StObject.set(x, "handleurl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: WebViewErrorEvent): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setKeypressed(value: WebViewKeypressedEvent): Self = StObject.set(x, "keypressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus(value: WebViewFocusEvent): Self = this.set("focus", value.asInstanceOf[js.Any])
+    def setLoad(value: WebViewLoadEvent): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleurl(value: WebViewHandleurlEvent): Self = this.set("handleurl", value.asInstanceOf[js.Any])
+    def setLongclick(value: WebViewLongclickEvent): Self = StObject.set(x, "longclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeypressed(value: WebViewKeypressedEvent): Self = this.set("keypressed", value.asInstanceOf[js.Any])
+    def setLongpress(value: WebViewLongpressEvent): Self = StObject.set(x, "longpress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoad(value: WebViewLoadEvent): Self = this.set("load", value.asInstanceOf[js.Any])
+    def setMessage(value: WebViewMessageEvent): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongclick(value: WebViewLongclickEvent): Self = this.set("longclick", value.asInstanceOf[js.Any])
+    def setOnLoadResource(value: WebViewOnLoadResourceEvent): Self = StObject.set(x, "onLoadResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongpress(value: WebViewLongpressEvent): Self = this.set("longpress", value.asInstanceOf[js.Any])
+    def setPinch(value: WebViewPinchEvent): Self = StObject.set(x, "pinch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: WebViewMessageEvent): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setPostlayout(value: WebViewPostlayoutEvent): Self = StObject.set(x, "postlayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnLoadResource(value: WebViewOnLoadResourceEvent): Self = this.set("onLoadResource", value.asInstanceOf[js.Any])
+    def setProgress(value: WebViewProgressEvent): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinch(value: WebViewPinchEvent): Self = this.set("pinch", value.asInstanceOf[js.Any])
+    def setRedirect(value: WebViewRedirectEvent): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostlayout(value: WebViewPostlayoutEvent): Self = this.set("postlayout", value.asInstanceOf[js.Any])
+    def setSingletap(value: WebViewSingletapEvent): Self = StObject.set(x, "singletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: WebViewProgressEvent): Self = this.set("progress", value.asInstanceOf[js.Any])
+    def setSslerror(value: WebViewSslerrorEvent): Self = StObject.set(x, "sslerror", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirect(value: WebViewRedirectEvent): Self = this.set("redirect", value.asInstanceOf[js.Any])
+    def setSwipe(value: WebViewSwipeEvent): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingletap(value: WebViewSingletapEvent): Self = this.set("singletap", value.asInstanceOf[js.Any])
+    def setTouchcancel(value: WebViewTouchcancelEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSslerror(value: WebViewSslerrorEvent): Self = this.set("sslerror", value.asInstanceOf[js.Any])
+    def setTouchend(value: WebViewTouchendEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipe(value: WebViewSwipeEvent): Self = this.set("swipe", value.asInstanceOf[js.Any])
+    def setTouchmove(value: WebViewTouchmoveEvent): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchcancel(value: WebViewTouchcancelEvent): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
+    def setTouchstart(value: WebViewTouchstartEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchend(value: WebViewTouchendEvent): Self = this.set("touchend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchmove(value: WebViewTouchmoveEvent): Self = this.set("touchmove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchstart(value: WebViewTouchstartEvent): Self = this.set("touchstart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwofingertap(value: WebViewTwofingertapEvent): Self = this.set("twofingertap", value.asInstanceOf[js.Any])
+    def setTwofingertap(value: WebViewTwofingertapEvent): Self = StObject.set(x, "twofingertap", value.asInstanceOf[js.Any])
   }
 }

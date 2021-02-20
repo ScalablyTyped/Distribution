@@ -2,6 +2,7 @@ package typings.googleCloudCommon.utilMod
 
 import typings.std.Error
 import typings.teenyRequest.mod.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

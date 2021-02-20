@@ -1,5 +1,6 @@
 package typings.googleapis.clouddebuggerV2Mod.clouddebuggerV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response for listing active breakpoints.
   */
 @js.native
-trait SchemaListActiveBreakpointsResponse extends js.Object {
+trait SchemaListActiveBreakpointsResponse extends StObject {
   
   /**
     * List of all active breakpoints. The fields `id` and `location` are
@@ -38,39 +39,27 @@ object SchemaListActiveBreakpointsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListActiveBreakpointsResponseOps[Self <: SchemaListActiveBreakpointsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListActiveBreakpointsResponseMutableBuilder[Self <: SchemaListActiveBreakpointsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBreakpoints(value: js.Array[SchemaBreakpoint]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBreakpointsVarargs(value: SchemaBreakpoint*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
     
     @scala.inline
-    def setBreakpointsVarargs(value: SchemaBreakpoint*): Self = this.set("breakpoints", js.Array(value :_*))
+    def setNextWaitToken(value: String): Self = StObject.set(x, "nextWaitToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreakpoints(value: js.Array[SchemaBreakpoint]): Self = this.set("breakpoints", value.asInstanceOf[js.Any])
+    def setNextWaitTokenUndefined: Self = StObject.set(x, "nextWaitToken", js.undefined)
     
     @scala.inline
-    def deleteBreakpoints: Self = this.set("breakpoints", js.undefined)
+    def setWaitExpired(value: Boolean): Self = StObject.set(x, "waitExpired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextWaitToken(value: String): Self = this.set("nextWaitToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextWaitToken: Self = this.set("nextWaitToken", js.undefined)
-    
-    @scala.inline
-    def setWaitExpired(value: Boolean): Self = this.set("waitExpired", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitExpired: Self = this.set("waitExpired", js.undefined)
+    def setWaitExpiredUndefined: Self = StObject.set(x, "waitExpired", js.undefined)
   }
 }

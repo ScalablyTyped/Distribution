@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResetUserPasswordRequest extends js.Object {
+trait ResetUserPasswordRequest extends StObject {
   
   /**
     * Identifier of the AWS Managed Microsoft AD or Simple AD directory in which the user resides.
@@ -31,27 +32,15 @@ object ResetUserPasswordRequest {
   }
   
   @scala.inline
-  implicit class ResetUserPasswordRequestOps[Self <: ResetUserPasswordRequest] (val x: Self) extends AnyVal {
+  implicit class ResetUserPasswordRequestMutableBuilder[Self <: ResetUserPasswordRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewPassword(value: UserPassword): Self = StObject.set(x, "NewPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewPassword(value: UserPassword): Self = this.set("NewPassword", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserName(value: CustomerUserName): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    def setUserName(value: CustomerUserName): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

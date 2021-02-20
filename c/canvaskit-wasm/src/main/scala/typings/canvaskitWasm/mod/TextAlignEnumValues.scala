@@ -1,5 +1,6 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,36 +37,24 @@ object TextAlignEnumValues {
   }
   
   @scala.inline
-  implicit class TextAlignEnumValuesOps[Self <: TextAlignEnumValues] (val x: Self) extends AnyVal {
+  implicit class TextAlignEnumValuesMutableBuilder[Self <: TextAlignEnumValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: TextAlign): Self = StObject.set(x, "Center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnd(value: TextAlign): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJustify(value: TextAlign): Self = StObject.set(x, "Justify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: TextAlign): Self = this.set("Center", value.asInstanceOf[js.Any])
+    def setLeft(value: TextAlign): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: TextAlign): Self = this.set("End", value.asInstanceOf[js.Any])
+    def setRight(value: TextAlign): Self = StObject.set(x, "Right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJustify(value: TextAlign): Self = this.set("Justify", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLeft(value: TextAlign): Self = this.set("Left", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRight(value: TextAlign): Self = this.set("Right", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: TextAlign): Self = this.set("Start", value.asInstanceOf[js.Any])
+    def setStart(value: TextAlign): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
   }
 }

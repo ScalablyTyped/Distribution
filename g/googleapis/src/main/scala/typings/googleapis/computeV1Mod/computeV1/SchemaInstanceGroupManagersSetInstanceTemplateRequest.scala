@@ -1,11 +1,12 @@
 package typings.googleapis.computeV1Mod.computeV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaInstanceGroupManagersSetInstanceTemplateRequest extends js.Object {
+trait SchemaInstanceGroupManagersSetInstanceTemplateRequest extends StObject {
   
   /**
     * The URL of the instance template that is specified for this managed
@@ -23,24 +24,12 @@ object SchemaInstanceGroupManagersSetInstanceTemplateRequest {
   }
   
   @scala.inline
-  implicit class SchemaInstanceGroupManagersSetInstanceTemplateRequestOps[Self <: SchemaInstanceGroupManagersSetInstanceTemplateRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaInstanceGroupManagersSetInstanceTemplateRequestMutableBuilder[Self <: SchemaInstanceGroupManagersSetInstanceTemplateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceTemplate(value: String): Self = StObject.set(x, "instanceTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstanceTemplate(value: String): Self = this.set("instanceTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceTemplate: Self = this.set("instanceTemplate", js.undefined)
+    def setInstanceTemplateUndefined: Self = StObject.set(x, "instanceTemplate", js.undefined)
   }
 }

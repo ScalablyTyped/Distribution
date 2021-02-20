@@ -1,5 +1,6 @@
 package typings.knuddelsUserappsApi.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 	 */
 @JSGlobal("AppInfo")
 @js.native
-class AppInfo () extends js.Object {
+class AppInfo () extends StObject {
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/AppInfo.html#method_getAppDeveloper

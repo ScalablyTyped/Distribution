@@ -2,6 +2,7 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import typings.std.Document
 import typings.std.StyleMedia
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // https://github.com/nikeee/2048-typescript/blob/master/2048/js/touch.d.ts
 // ----------------------------------------------------------------------
 @js.native
-trait AbstractView extends js.Object {
+trait AbstractView extends StObject {
   
   var document: Document = js.native
   
@@ -26,24 +27,12 @@ object AbstractView {
   }
   
   @scala.inline
-  implicit class AbstractViewOps[Self <: AbstractView] (val x: Self) extends AnyVal {
+  implicit class AbstractViewMutableBuilder[Self <: AbstractView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDocument(value: Document): Self = this.set("document", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyleMedia(value: StyleMedia): Self = this.set("styleMedia", value.asInstanceOf[js.Any])
+    def setStyleMedia(value: StyleMedia): Self = StObject.set(x, "styleMedia", value.asInstanceOf[js.Any])
   }
 }

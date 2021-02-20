@@ -1,11 +1,12 @@
 package typings.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Transaction extends js.Object {
+trait Transaction extends StObject {
   
   def action(params: js.Object): Unit | String = js.native
   
@@ -33,63 +34,51 @@ object Transaction {
   }
   
   @scala.inline
-  implicit class TransactionOps[Self <: Transaction] (val x: Self) extends AnyVal {
+  implicit class TransactionMutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: js.Object => Unit | String): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollections(value: TransactionCollections | js.Array[String]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollectionsVarargs(value: String*): Self = StObject.set(x, "collections", js.Array(value :_*))
     
     @scala.inline
-    def setAction(value: js.Object => Unit | String): Self = this.set("action", js.Any.fromFunction1(value))
+    def setIntermediateCommitCount(value: Double): Self = StObject.set(x, "intermediateCommitCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollectionsVarargs(value: String*): Self = this.set("collections", js.Array(value :_*))
+    def setIntermediateCommitCountUndefined: Self = StObject.set(x, "intermediateCommitCount", js.undefined)
     
     @scala.inline
-    def setCollections(value: TransactionCollections | js.Array[String]): Self = this.set("collections", value.asInstanceOf[js.Any])
+    def setIntermediateCommitSize(value: Double): Self = StObject.set(x, "intermediateCommitSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntermediateCommitCount(value: Double): Self = this.set("intermediateCommitCount", value.asInstanceOf[js.Any])
+    def setIntermediateCommitSizeUndefined: Self = StObject.set(x, "intermediateCommitSize", js.undefined)
     
     @scala.inline
-    def deleteIntermediateCommitCount: Self = this.set("intermediateCommitCount", js.undefined)
+    def setLockTimeout(value: Double): Self = StObject.set(x, "lockTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntermediateCommitSize(value: Double): Self = this.set("intermediateCommitSize", value.asInstanceOf[js.Any])
+    def setLockTimeoutUndefined: Self = StObject.set(x, "lockTimeout", js.undefined)
     
     @scala.inline
-    def deleteIntermediateCommitSize: Self = this.set("intermediateCommitSize", js.undefined)
+    def setMaxTransactionsSize(value: Double): Self = StObject.set(x, "maxTransactionsSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockTimeout(value: Double): Self = this.set("lockTimeout", value.asInstanceOf[js.Any])
+    def setMaxTransactionsSizeUndefined: Self = StObject.set(x, "maxTransactionsSize", js.undefined)
     
     @scala.inline
-    def deleteLockTimeout: Self = this.set("lockTimeout", js.undefined)
+    def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTransactionsSize(value: Double): Self = this.set("maxTransactionsSize", value.asInstanceOf[js.Any])
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def deleteMaxTransactionsSize: Self = this.set("maxTransactionsSize", js.undefined)
+    def setWaitForSync(value: Boolean): Self = StObject.set(x, "waitForSync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: js.Object): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
-    
-    @scala.inline
-    def setWaitForSync(value: Boolean): Self = this.set("waitForSync", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitForSync: Self = this.set("waitForSync", js.undefined)
+    def setWaitForSyncUndefined: Self = StObject.set(x, "waitForSync", js.undefined)
   }
 }

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.VoiceCommands
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VoiceCommandCompletionReason extends js.Object
+sealed trait VoiceCommandCompletionReason extends StObject
 /** Specifies the possible reasons the voice command completed. */
 @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason")
 @js.native
-object VoiceCommandCompletionReason extends js.Object {
+object VoiceCommandCompletionReason extends StObject {
   
   /** The background app service requested that the app launch in the foreground with a call to RequestAppLaunchAsync . */
   @js.native

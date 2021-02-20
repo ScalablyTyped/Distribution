@@ -2,12 +2,13 @@ package typings.swipeview
 
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SwipeView extends js.Object {
+trait SwipeView extends StObject {
   
   var currentMasterPage: Double = js.native
   

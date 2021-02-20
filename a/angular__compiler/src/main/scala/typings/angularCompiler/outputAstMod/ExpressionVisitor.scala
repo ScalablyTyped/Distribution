@@ -1,11 +1,12 @@
 package typings.angularCompiler.outputAstMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExpressionVisitor extends js.Object {
+trait ExpressionVisitor extends StObject {
   
   def visitAssertNotNullExpr(ast: AssertNotNull_, context: js.Any): js.Any = js.native
   
@@ -89,90 +90,78 @@ object ExpressionVisitor {
   }
   
   @scala.inline
-  implicit class ExpressionVisitorOps[Self <: ExpressionVisitor] (val x: Self) extends AnyVal {
+  implicit class ExpressionVisitorMutableBuilder[Self <: ExpressionVisitor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVisitAssertNotNullExpr(value: (AssertNotNull_, js.Any) => js.Any): Self = StObject.set(x, "visitAssertNotNullExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVisitBinaryOperatorExpr(value: (BinaryOperatorExpr, js.Any) => js.Any): Self = StObject.set(x, "visitBinaryOperatorExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVisitCastExpr(value: (CastExpr, js.Any) => js.Any): Self = StObject.set(x, "visitCastExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitAssertNotNullExpr(value: (AssertNotNull_, js.Any) => js.Any): Self = this.set("visitAssertNotNullExpr", js.Any.fromFunction2(value))
+    def setVisitCommaExpr(value: (CommaExpr, js.Any) => js.Any): Self = StObject.set(x, "visitCommaExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitBinaryOperatorExpr(value: (BinaryOperatorExpr, js.Any) => js.Any): Self = this.set("visitBinaryOperatorExpr", js.Any.fromFunction2(value))
+    def setVisitConditionalExpr(value: (ConditionalExpr, js.Any) => js.Any): Self = StObject.set(x, "visitConditionalExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitCastExpr(value: (CastExpr, js.Any) => js.Any): Self = this.set("visitCastExpr", js.Any.fromFunction2(value))
+    def setVisitExternalExpr(value: (ExternalExpr, js.Any) => js.Any): Self = StObject.set(x, "visitExternalExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitCommaExpr(value: (CommaExpr, js.Any) => js.Any): Self = this.set("visitCommaExpr", js.Any.fromFunction2(value))
+    def setVisitFunctionExpr(value: (FunctionExpr, js.Any) => js.Any): Self = StObject.set(x, "visitFunctionExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitConditionalExpr(value: (ConditionalExpr, js.Any) => js.Any): Self = this.set("visitConditionalExpr", js.Any.fromFunction2(value))
+    def setVisitInstantiateExpr(value: (InstantiateExpr, js.Any) => js.Any): Self = StObject.set(x, "visitInstantiateExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitExternalExpr(value: (ExternalExpr, js.Any) => js.Any): Self = this.set("visitExternalExpr", js.Any.fromFunction2(value))
+    def setVisitInvokeFunctionExpr(value: (InvokeFunctionExpr, js.Any) => js.Any): Self = StObject.set(x, "visitInvokeFunctionExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitFunctionExpr(value: (FunctionExpr, js.Any) => js.Any): Self = this.set("visitFunctionExpr", js.Any.fromFunction2(value))
+    def setVisitInvokeMethodExpr(value: (InvokeMethodExpr, js.Any) => js.Any): Self = StObject.set(x, "visitInvokeMethodExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitInstantiateExpr(value: (InstantiateExpr, js.Any) => js.Any): Self = this.set("visitInstantiateExpr", js.Any.fromFunction2(value))
+    def setVisitLiteralArrayExpr(value: (LiteralArrayExpr, js.Any) => js.Any): Self = StObject.set(x, "visitLiteralArrayExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitInvokeFunctionExpr(value: (InvokeFunctionExpr, js.Any) => js.Any): Self = this.set("visitInvokeFunctionExpr", js.Any.fromFunction2(value))
+    def setVisitLiteralExpr(value: (LiteralExpr, js.Any) => js.Any): Self = StObject.set(x, "visitLiteralExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitInvokeMethodExpr(value: (InvokeMethodExpr, js.Any) => js.Any): Self = this.set("visitInvokeMethodExpr", js.Any.fromFunction2(value))
+    def setVisitLiteralMapExpr(value: (LiteralMapExpr, js.Any) => js.Any): Self = StObject.set(x, "visitLiteralMapExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitLiteralArrayExpr(value: (LiteralArrayExpr, js.Any) => js.Any): Self = this.set("visitLiteralArrayExpr", js.Any.fromFunction2(value))
+    def setVisitLocalizedString(value: (LocalizedString_, js.Any) => js.Any): Self = StObject.set(x, "visitLocalizedString", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitLiteralExpr(value: (LiteralExpr, js.Any) => js.Any): Self = this.set("visitLiteralExpr", js.Any.fromFunction2(value))
+    def setVisitNotExpr(value: (NotExpr, js.Any) => js.Any): Self = StObject.set(x, "visitNotExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitLiteralMapExpr(value: (LiteralMapExpr, js.Any) => js.Any): Self = this.set("visitLiteralMapExpr", js.Any.fromFunction2(value))
+    def setVisitReadKeyExpr(value: (ReadKeyExpr, js.Any) => js.Any): Self = StObject.set(x, "visitReadKeyExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitLocalizedString(value: (LocalizedString_, js.Any) => js.Any): Self = this.set("visitLocalizedString", js.Any.fromFunction2(value))
+    def setVisitReadPropExpr(value: (ReadPropExpr, js.Any) => js.Any): Self = StObject.set(x, "visitReadPropExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitNotExpr(value: (NotExpr, js.Any) => js.Any): Self = this.set("visitNotExpr", js.Any.fromFunction2(value))
+    def setVisitReadVarExpr(value: (ReadVarExpr, js.Any) => js.Any): Self = StObject.set(x, "visitReadVarExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitReadKeyExpr(value: (ReadKeyExpr, js.Any) => js.Any): Self = this.set("visitReadKeyExpr", js.Any.fromFunction2(value))
+    def setVisitTypeofExpr(value: (TypeofExpr_, js.Any) => js.Any): Self = StObject.set(x, "visitTypeofExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitReadPropExpr(value: (ReadPropExpr, js.Any) => js.Any): Self = this.set("visitReadPropExpr", js.Any.fromFunction2(value))
+    def setVisitUnaryOperatorExpr(value: (UnaryOperatorExpr, js.Any) => js.Any): Self = StObject.set(x, "visitUnaryOperatorExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitReadVarExpr(value: (ReadVarExpr, js.Any) => js.Any): Self = this.set("visitReadVarExpr", js.Any.fromFunction2(value))
+    def setVisitWrappedNodeExpr(value: (WrappedNodeExpr[_], js.Any) => js.Any): Self = StObject.set(x, "visitWrappedNodeExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitTypeofExpr(value: (TypeofExpr_, js.Any) => js.Any): Self = this.set("visitTypeofExpr", js.Any.fromFunction2(value))
+    def setVisitWriteKeyExpr(value: (WriteKeyExpr, js.Any) => js.Any): Self = StObject.set(x, "visitWriteKeyExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitUnaryOperatorExpr(value: (UnaryOperatorExpr, js.Any) => js.Any): Self = this.set("visitUnaryOperatorExpr", js.Any.fromFunction2(value))
+    def setVisitWritePropExpr(value: (WritePropExpr, js.Any) => js.Any): Self = StObject.set(x, "visitWritePropExpr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVisitWrappedNodeExpr(value: (WrappedNodeExpr[_], js.Any) => js.Any): Self = this.set("visitWrappedNodeExpr", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setVisitWriteKeyExpr(value: (WriteKeyExpr, js.Any) => js.Any): Self = this.set("visitWriteKeyExpr", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setVisitWritePropExpr(value: (WritePropExpr, js.Any) => js.Any): Self = this.set("visitWritePropExpr", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setVisitWriteVarExpr(value: (WriteVarExpr, js.Any) => js.Any): Self = this.set("visitWriteVarExpr", js.Any.fromFunction2(value))
+    def setVisitWriteVarExpr(value: (WriteVarExpr, js.Any) => js.Any): Self = StObject.set(x, "visitWriteVarExpr", js.Any.fromFunction2(value))
   }
 }

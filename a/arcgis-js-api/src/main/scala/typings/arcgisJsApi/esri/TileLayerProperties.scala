@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,63 +73,51 @@ object TileLayerProperties {
   }
   
   @scala.inline
-  implicit class TileLayerPropertiesOps[Self <: TileLayerProperties] (val x: Self) extends AnyVal {
+  implicit class TileLayerPropertiesMutableBuilder[Self <: TileLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyright(value: String): Self = this.set("copyright", value.asInstanceOf[js.Any])
+    def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
     
     @scala.inline
-    def deleteCopyright: Self = this.set("copyright", js.undefined)
+    def setResampling(value: Boolean): Self = StObject.set(x, "resampling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendEnabled(value: Boolean): Self = this.set("legendEnabled", value.asInstanceOf[js.Any])
+    def setResamplingUndefined: Self = StObject.set(x, "resampling", js.undefined)
     
     @scala.inline
-    def deleteLegendEnabled: Self = this.set("legendEnabled", js.undefined)
+    def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResampling(value: Boolean): Self = this.set("resampling", value.asInstanceOf[js.Any])
+    def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     
     @scala.inline
-    def deleteResampling: Self = this.set("resampling", js.undefined)
+    def setTileInfo(value: TileInfoProperties): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceJSON(value: js.Any): Self = this.set("sourceJSON", value.asInstanceOf[js.Any])
+    def setTileInfoUndefined: Self = StObject.set(x, "tileInfo", js.undefined)
     
     @scala.inline
-    def deleteSourceJSON: Self = this.set("sourceJSON", js.undefined)
+    def setTileServers(value: js.Array[String]): Self = StObject.set(x, "tileServers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileInfo(value: TileInfoProperties): Self = this.set("tileInfo", value.asInstanceOf[js.Any])
+    def setTileServersUndefined: Self = StObject.set(x, "tileServers", js.undefined)
     
     @scala.inline
-    def deleteTileInfo: Self = this.set("tileInfo", js.undefined)
+    def setTileServersVarargs(value: String*): Self = StObject.set(x, "tileServers", js.Array(value :_*))
     
     @scala.inline
-    def setTileServersVarargs(value: String*): Self = this.set("tileServers", js.Array(value :_*))
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileServers(value: js.Array[String]): Self = this.set("tileServers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTileServers: Self = this.set("tileServers", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

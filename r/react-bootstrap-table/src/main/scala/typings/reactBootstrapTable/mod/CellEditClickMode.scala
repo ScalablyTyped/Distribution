@@ -1,5 +1,6 @@
 package typings.reactBootstrapTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactBootstrapTable.reactBootstrapTableStrings.click
   - typings.reactBootstrapTable.reactBootstrapTableStrings.dbclick
 */
-trait CellEditClickMode extends js.Object
+trait CellEditClickMode extends StObject
 object CellEditClickMode {
   
   @scala.inline

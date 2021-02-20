@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecurityResource extends js.Object {
+trait SecurityResource extends StObject {
   
   // Name of the resource that is related to current alert. Required.
   var resource: js.UndefOr[NullableOption[String]] = js.native
@@ -22,36 +23,24 @@ object SecurityResource {
   }
   
   @scala.inline
-  implicit class SecurityResourceOps[Self <: SecurityResource] (val x: Self) extends AnyVal {
+  implicit class SecurityResourceMutableBuilder[Self <: SecurityResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResource(value: NullableOption[String]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceNull: Self = StObject.set(x, "resource", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceType(value: NullableOption[SecurityResourceType]): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: NullableOption[String]): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setResourceTypeNull: Self = StObject.set(x, "resourceType", null)
     
     @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
     @scala.inline
-    def setResourceNull: Self = this.set("resource", null)
-    
-    @scala.inline
-    def setResourceType(value: NullableOption[SecurityResourceType]): Self = this.set("resourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
-    
-    @scala.inline
-    def setResourceTypeNull: Self = this.set("resourceType", null)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

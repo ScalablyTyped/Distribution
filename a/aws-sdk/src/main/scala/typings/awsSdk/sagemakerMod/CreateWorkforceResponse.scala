@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateWorkforceResponse extends js.Object {
+trait CreateWorkforceResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the workforce.
@@ -21,21 +22,9 @@ object CreateWorkforceResponse {
   }
   
   @scala.inline
-  implicit class CreateWorkforceResponseOps[Self <: CreateWorkforceResponse] (val x: Self) extends AnyVal {
+  implicit class CreateWorkforceResponseMutableBuilder[Self <: CreateWorkforceResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWorkforceArn(value: WorkforceArn): Self = this.set("WorkforceArn", value.asInstanceOf[js.Any])
+    def setWorkforceArn(value: WorkforceArn): Self = StObject.set(x, "WorkforceArn", value.asInstanceOf[js.Any])
   }
 }

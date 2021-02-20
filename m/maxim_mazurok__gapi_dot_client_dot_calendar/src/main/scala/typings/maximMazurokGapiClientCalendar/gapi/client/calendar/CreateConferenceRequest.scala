@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateConferenceRequest extends js.Object {
+trait CreateConferenceRequest extends StObject {
   
   /** The conference solution, such as Hangouts or Google Meet. */
   var conferenceSolutionKey: js.UndefOr[ConferenceSolutionKey] = js.native
@@ -28,36 +29,24 @@ object CreateConferenceRequest {
   }
   
   @scala.inline
-  implicit class CreateConferenceRequestOps[Self <: CreateConferenceRequest] (val x: Self) extends AnyVal {
+  implicit class CreateConferenceRequestMutableBuilder[Self <: CreateConferenceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConferenceSolutionKey(value: ConferenceSolutionKey): Self = StObject.set(x, "conferenceSolutionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConferenceSolutionKeyUndefined: Self = StObject.set(x, "conferenceSolutionKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConferenceSolutionKey(value: ConferenceSolutionKey): Self = this.set("conferenceSolutionKey", value.asInstanceOf[js.Any])
+    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
     @scala.inline
-    def deleteConferenceSolutionKey: Self = this.set("conferenceSolutionKey", js.undefined)
+    def setStatus(value: ConferenceRequestStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestId(value: String): Self = this.set("requestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestId: Self = this.set("requestId", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: ConferenceRequestStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

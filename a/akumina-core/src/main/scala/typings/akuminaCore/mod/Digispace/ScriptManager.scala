@@ -1,13 +1,14 @@
 package typings.akuminaCore.mod.Digispace
 
 import typings.jquery.JQueryDeferred
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("akumina-core", "Digispace.ScriptManager")
 @js.native
-class ScriptManager () extends js.Object {
+class ScriptManager () extends StObject {
   
   def GetBabelScript(callback: js.Function0[Unit]): JQueryDeferred[_] = js.native
   

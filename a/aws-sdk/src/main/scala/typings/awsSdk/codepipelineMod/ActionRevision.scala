@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionRevision extends js.Object {
+trait ActionRevision extends StObject {
   
   /**
     * The date and time when the most recent version of the action was created, in timestamp format.
@@ -31,27 +32,15 @@ object ActionRevision {
   }
   
   @scala.inline
-  implicit class ActionRevisionOps[Self <: ActionRevision] (val x: Self) extends AnyVal {
+  implicit class ActionRevisionMutableBuilder[Self <: ActionRevision] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated(value: Timestamp): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRevisionChangeId(value: RevisionChangeIdentifier): Self = StObject.set(x, "revisionChangeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreated(value: Timestamp): Self = this.set("created", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRevisionChangeId(value: RevisionChangeIdentifier): Self = this.set("revisionChangeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRevisionId(value: Revision): Self = this.set("revisionId", value.asInstanceOf[js.Any])
+    def setRevisionId(value: Revision): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
   }
 }

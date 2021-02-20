@@ -1,5 +1,6 @@
 package typings.dashjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.dashjs.dashjsStrings.highestBitrate
   - typings.dashjs.dashjsStrings.widestRange
 */
-trait TrackSelectionMode extends js.Object
+trait TrackSelectionMode extends StObject
 object TrackSelectionMode {
   
   @scala.inline

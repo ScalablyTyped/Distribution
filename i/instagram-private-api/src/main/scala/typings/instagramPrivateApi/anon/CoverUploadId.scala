@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CoverUploadId extends js.Object {
+trait CoverUploadId extends StObject {
   
   var broadcastId: String = js.native
   
@@ -26,36 +27,24 @@ object CoverUploadId {
   }
   
   @scala.inline
-  implicit class CoverUploadIdOps[Self <: CoverUploadId] (val x: Self) extends AnyVal {
+  implicit class CoverUploadIdMutableBuilder[Self <: CoverUploadId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBroadcastId(value: String): Self = StObject.set(x, "broadcastId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoverUploadId(value: String): Self = StObject.set(x, "coverUploadId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBroadcastId(value: String): Self = this.set("broadcastId", value.asInstanceOf[js.Any])
+    def setIgtvSharePreviewToFeed(value: Boolean): Self = StObject.set(x, "igtvSharePreviewToFeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoverUploadId(value: String): Self = this.set("coverUploadId", value.asInstanceOf[js.Any])
+    def setIgtvSharePreviewToFeedUndefined: Self = StObject.set(x, "igtvSharePreviewToFeed", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIgtvSharePreviewToFeed(value: Boolean): Self = this.set("igtvSharePreviewToFeed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgtvSharePreviewToFeed: Self = this.set("igtvSharePreviewToFeed", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

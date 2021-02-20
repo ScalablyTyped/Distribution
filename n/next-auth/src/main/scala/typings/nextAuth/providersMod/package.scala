@@ -1,10 +1,14 @@
 package typings.nextAuth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object providersMod {
+  
+  @scala.inline
+  def default: typings.nextAuth.providersMod.Providers = typings.nextAuth.providersMod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.nextAuth.providersMod.Providers]
   
   /**
     * Apple

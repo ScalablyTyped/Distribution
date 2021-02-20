@@ -7,6 +7,7 @@ import typings.promiseSftp.promiseSftpStrings.force
 import typings.promiseSftp.promiseSftpStrings.md5
 import typings.promiseSftp.promiseSftpStrings.sha1
 import typings.ssh2Streams.mod.Algorithms
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 /* Inlined ssh2.ssh2.ConnectConfig & {  changePassword :(message : string, language : string): bluebird.bluebird.^<string> | undefined,   autoReconnect :boolean | undefined,   privateKeyFile :string | undefined,   tryKeyboard :(name : string, instructions : string, instructionsLang : string, prompts : std.Array<{  prompt :string,   echo :boolean}>): std.Array<string | bluebird.bluebird.^<string>> | bluebird.bluebird.^<std.Array<string>> | undefined,   user :string | undefined,   connTimeout :number | undefined,   pasvTimeout :number | undefined,   keepalive :number | undefined} */
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   /** Path to ssh-agent's UNIX socket for ssh-agent-based user authentication (or 'pageant' when using Pagent on Windows). */
   var agent: js.UndefOr[String] = js.native
@@ -168,19 +169,177 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgent(value: String): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentForward(value: Boolean): Self = StObject.set(x, "agentForward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgentForwardUndefined: Self = StObject.set(x, "agentForward", js.undefined)
+    
+    @scala.inline
+    def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+    
+    @scala.inline
+    def setAlgorithms(value: Algorithms): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
+    
+    @scala.inline
+    def setAuthHandler(
+      value: (/* methodsLeft */ js.Array[String] | Null, /* partialSuccess */ Boolean | Null, /* callback */ js.Function) => _
+    ): Self = StObject.set(x, "authHandler", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setAuthHandlerUndefined: Self = StObject.set(x, "authHandler", js.undefined)
+    
+    @scala.inline
+    def setAutoReconnect(value: Boolean): Self = StObject.set(x, "autoReconnect", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAutoReconnectUndefined: Self = StObject.set(x, "autoReconnect", js.undefined)
+    
+    @scala.inline
+    def setChangePassword(value: (/* message */ String, /* language */ String) => typings.bluebird.mod.^[String]): Self = StObject.set(x, "changePassword", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setChangePasswordUndefined: Self = StObject.set(x, "changePassword", js.undefined)
+    
+    @scala.inline
+    def setCompress(value: Boolean | force): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+    
+    @scala.inline
+    def setConnTimeout(value: Double): Self = StObject.set(x, "connTimeout", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setConnTimeoutUndefined: Self = StObject.set(x, "connTimeout", js.undefined)
+    
+    @scala.inline
+    def setDebug(value: /* information */ String => _): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    
+    @scala.inline
+    def setForceIPv4(value: Boolean): Self = StObject.set(x, "forceIPv4", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setForceIPv4Undefined: Self = StObject.set(x, "forceIPv4", js.undefined)
+    
+    @scala.inline
+    def setForceIPv6(value: Boolean): Self = StObject.set(x, "forceIPv6", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setForceIPv6Undefined: Self = StObject.set(x, "forceIPv6", js.undefined)
+    
+    @scala.inline
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setHostHash(value: md5 | sha1): Self = StObject.set(x, "hostHash", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setHostHashUndefined: Self = StObject.set(x, "hostHash", js.undefined)
+    
+    @scala.inline
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    
+    @scala.inline
+    def setHostVerifier(value: /* keyHash */ String => Boolean): Self = StObject.set(x, "hostVerifier", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setHostVerifierUndefined: Self = StObject.set(x, "hostVerifier", js.undefined)
+    
+    @scala.inline
+    def setKeepalive(value: Double): Self = StObject.set(x, "keepalive", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setKeepaliveCountMax(value: Double): Self = StObject.set(x, "keepaliveCountMax", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setKeepaliveCountMaxUndefined: Self = StObject.set(x, "keepaliveCountMax", js.undefined)
+    
+    @scala.inline
+    def setKeepaliveInterval(value: Double): Self = StObject.set(x, "keepaliveInterval", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setKeepaliveIntervalUndefined: Self = StObject.set(x, "keepaliveInterval", js.undefined)
+    
+    @scala.inline
+    def setKeepaliveUndefined: Self = StObject.set(x, "keepalive", js.undefined)
+    
+    @scala.inline
+    def setLocalHostname(value: String): Self = StObject.set(x, "localHostname", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLocalHostnameUndefined: Self = StObject.set(x, "localHostname", js.undefined)
+    
+    @scala.inline
+    def setLocalUsername(value: String): Self = StObject.set(x, "localUsername", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLocalUsernameUndefined: Self = StObject.set(x, "localUsername", js.undefined)
+    
+    @scala.inline
+    def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
+    
+    @scala.inline
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    
+    @scala.inline
+    def setPasvTimeout(value: Double): Self = StObject.set(x, "pasvTimeout", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPasvTimeoutUndefined: Self = StObject.set(x, "pasvTimeout", js.undefined)
+    
+    @scala.inline
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    
+    @scala.inline
+    def setPrivateKey(value: Buffer | String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPrivateKeyFile(value: String): Self = StObject.set(x, "privateKeyFile", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPrivateKeyFileUndefined: Self = StObject.set(x, "privateKeyFile", js.undefined)
+    
+    @scala.inline
+    def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
+    
+    @scala.inline
+    def setReadyTimeout(value: Double): Self = StObject.set(x, "readyTimeout", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setReadyTimeoutUndefined: Self = StObject.set(x, "readyTimeout", js.undefined)
+    
+    @scala.inline
+    def setSock(value: ReadableStream): Self = StObject.set(x, "sock", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSockUndefined: Self = StObject.set(x, "sock", js.undefined)
+    
+    @scala.inline
+    def setStrictVendor(value: Boolean): Self = StObject.set(x, "strictVendor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStrictVendorUndefined: Self = StObject.set(x, "strictVendor", js.undefined)
     
     @scala.inline
     def setTryKeyboard(
@@ -193,188 +352,18 @@ object Options {
             (js.Array[String | typings.bluebird.mod.^[String]]) | typings.bluebird.mod.^[js.Array[String]]
           ]
         ])
-    ): Self = this.set("tryKeyboard", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "tryKeyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgent(value: String): Self = this.set("agent", value.asInstanceOf[js.Any])
+    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAgent: Self = this.set("agent", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
     @scala.inline
-    def setAgentForward(value: Boolean): Self = this.set("agentForward", value.asInstanceOf[js.Any])
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAgentForward: Self = this.set("agentForward", js.undefined)
-    
-    @scala.inline
-    def setAlgorithms(value: Algorithms): Self = this.set("algorithms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlgorithms: Self = this.set("algorithms", js.undefined)
-    
-    @scala.inline
-    def setAuthHandler(
-      value: (/* methodsLeft */ js.Array[String] | Null, /* partialSuccess */ Boolean | Null, /* callback */ js.Function) => _
-    ): Self = this.set("authHandler", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteAuthHandler: Self = this.set("authHandler", js.undefined)
-    
-    @scala.inline
-    def setAutoReconnect(value: Boolean): Self = this.set("autoReconnect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoReconnect: Self = this.set("autoReconnect", js.undefined)
-    
-    @scala.inline
-    def setChangePassword(value: (/* message */ String, /* language */ String) => typings.bluebird.mod.^[String]): Self = this.set("changePassword", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteChangePassword: Self = this.set("changePassword", js.undefined)
-    
-    @scala.inline
-    def setCompress(value: Boolean | force): Self = this.set("compress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCompress: Self = this.set("compress", js.undefined)
-    
-    @scala.inline
-    def setConnTimeout(value: Double): Self = this.set("connTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnTimeout: Self = this.set("connTimeout", js.undefined)
-    
-    @scala.inline
-    def setDebug(value: /* information */ String => _): Self = this.set("debug", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
-    
-    @scala.inline
-    def setForceIPv4(value: Boolean): Self = this.set("forceIPv4", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceIPv4: Self = this.set("forceIPv4", js.undefined)
-    
-    @scala.inline
-    def setForceIPv6(value: Boolean): Self = this.set("forceIPv6", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceIPv6: Self = this.set("forceIPv6", js.undefined)
-    
-    @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
-    
-    @scala.inline
-    def setHostHash(value: md5 | sha1): Self = this.set("hostHash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHostHash: Self = this.set("hostHash", js.undefined)
-    
-    @scala.inline
-    def setHostVerifier(value: /* keyHash */ String => Boolean): Self = this.set("hostVerifier", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteHostVerifier: Self = this.set("hostVerifier", js.undefined)
-    
-    @scala.inline
-    def setKeepalive(value: Double): Self = this.set("keepalive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeepalive: Self = this.set("keepalive", js.undefined)
-    
-    @scala.inline
-    def setKeepaliveCountMax(value: Double): Self = this.set("keepaliveCountMax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeepaliveCountMax: Self = this.set("keepaliveCountMax", js.undefined)
-    
-    @scala.inline
-    def setKeepaliveInterval(value: Double): Self = this.set("keepaliveInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeepaliveInterval: Self = this.set("keepaliveInterval", js.undefined)
-    
-    @scala.inline
-    def setLocalHostname(value: String): Self = this.set("localHostname", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocalHostname: Self = this.set("localHostname", js.undefined)
-    
-    @scala.inline
-    def setLocalUsername(value: String): Self = this.set("localUsername", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocalUsername: Self = this.set("localUsername", js.undefined)
-    
-    @scala.inline
-    def setPassphrase(value: String): Self = this.set("passphrase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassphrase: Self = this.set("passphrase", js.undefined)
-    
-    @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
-    
-    @scala.inline
-    def setPasvTimeout(value: Double): Self = this.set("pasvTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePasvTimeout: Self = this.set("pasvTimeout", js.undefined)
-    
-    @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
-    
-    @scala.inline
-    def setPrivateKey(value: Buffer | String): Self = this.set("privateKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateKey: Self = this.set("privateKey", js.undefined)
-    
-    @scala.inline
-    def setPrivateKeyFile(value: String): Self = this.set("privateKeyFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateKeyFile: Self = this.set("privateKeyFile", js.undefined)
-    
-    @scala.inline
-    def setReadyTimeout(value: Double): Self = this.set("readyTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadyTimeout: Self = this.set("readyTimeout", js.undefined)
-    
-    @scala.inline
-    def setSock(value: ReadableStream): Self = this.set("sock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSock: Self = this.set("sock", js.undefined)
-    
-    @scala.inline
-    def setStrictVendor(value: Boolean): Self = this.set("strictVendor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrictVendor: Self = this.set("strictVendor", js.undefined)
-    
-    @scala.inline
-    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

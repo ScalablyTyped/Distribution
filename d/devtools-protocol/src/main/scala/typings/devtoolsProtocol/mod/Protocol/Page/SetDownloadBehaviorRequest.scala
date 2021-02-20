@@ -3,12 +3,13 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 import typings.devtoolsProtocol.devtoolsProtocolStrings.allow
 import typings.devtoolsProtocol.devtoolsProtocolStrings.default_
 import typings.devtoolsProtocol.devtoolsProtocolStrings.deny
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetDownloadBehaviorRequest extends js.Object {
+trait SetDownloadBehaviorRequest extends StObject {
   
   /**
     * Whether to allow all or deny all download requests, or use default Chrome behavior if
@@ -30,27 +31,15 @@ object SetDownloadBehaviorRequest {
   }
   
   @scala.inline
-  implicit class SetDownloadBehaviorRequestOps[Self <: SetDownloadBehaviorRequest] (val x: Self) extends AnyVal {
+  implicit class SetDownloadBehaviorRequestMutableBuilder[Self <: SetDownloadBehaviorRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBehavior(value: deny | allow | default_): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDownloadPath(value: String): Self = StObject.set(x, "downloadPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBehavior(value: deny | allow | default_): Self = this.set("behavior", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDownloadPath(value: String): Self = this.set("downloadPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDownloadPath: Self = this.set("downloadPath", js.undefined)
+    def setDownloadPathUndefined: Self = StObject.set(x, "downloadPath", js.undefined)
   }
 }

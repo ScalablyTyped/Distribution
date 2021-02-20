@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Compliance extends js.Object {
+trait Compliance extends StObject {
   
   /**
     * The number of AWS resources or AWS Config rules that cause a result of NON_COMPLIANT, up to a maximum number.
@@ -26,30 +27,18 @@ object Compliance {
   }
   
   @scala.inline
-  implicit class ComplianceOps[Self <: Compliance] (val x: Self) extends AnyVal {
+  implicit class ComplianceMutableBuilder[Self <: Compliance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplianceContributorCount(value: ComplianceContributorCount): Self = StObject.set(x, "ComplianceContributorCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplianceContributorCountUndefined: Self = StObject.set(x, "ComplianceContributorCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplianceType(value: ComplianceType): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceContributorCount(value: ComplianceContributorCount): Self = this.set("ComplianceContributorCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComplianceContributorCount: Self = this.set("ComplianceContributorCount", js.undefined)
-    
-    @scala.inline
-    def setComplianceType(value: ComplianceType): Self = this.set("ComplianceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComplianceType: Self = this.set("ComplianceType", js.undefined)
+    def setComplianceTypeUndefined: Self = StObject.set(x, "ComplianceType", js.undefined)
   }
 }

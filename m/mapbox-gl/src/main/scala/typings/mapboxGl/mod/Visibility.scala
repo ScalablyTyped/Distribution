@@ -1,5 +1,6 @@
 package typings.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mapboxGl.mapboxGlStrings.visible
   - typings.mapboxGl.mapboxGlStrings.none
 */
-trait Visibility extends js.Object
+trait Visibility extends StObject
 object Visibility {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.oauth2orize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OAuth2 extends js.Object {
+trait OAuth2 extends StObject {
   
   var client: js.Any = js.native
   
@@ -35,36 +36,24 @@ object OAuth2 {
   }
   
   @scala.inline
-  implicit class OAuth2Ops[Self <: OAuth2] (val x: Self) extends AnyVal {
+  implicit class OAuth2MutableBuilder[Self <: OAuth2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfo(value: OAuth2Info): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRedirectURI(value: String): Self = StObject.set(x, "redirectURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient(value: js.Any): Self = this.set("client", value.asInstanceOf[js.Any])
+    def setReq(value: OAuth2Req): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfo(value: OAuth2Info): Self = this.set("info", value.asInstanceOf[js.Any])
+    def setTransactionID(value: String): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectURI(value: String): Self = this.set("redirectURI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReq(value: OAuth2Req): Self = this.set("req", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransactionID(value: String): Self = this.set("transactionID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: js.Any): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: js.Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

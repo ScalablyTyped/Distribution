@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutputJax extends js.Object {
+trait OutputJax extends StObject {
   
   /*This registers the MIME-type for the element jax associated with this output jax so that MathJax knows to call
     * this jax when it wants to display an element jax of that type. Several output jax may register for the same
@@ -109,57 +110,45 @@ object OutputJax {
   }
   
   @scala.inline
-  implicit class OutputJaxOps[Self <: OutputJax] (val x: Self) extends AnyVal {
+  implicit class OutputJaxMutableBuilder[Self <: OutputJax] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFontDir(value: String): Self = StObject.set(x, "fontDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetJaxFromMath(value: js.Any => ElementJax): Self = StObject.set(x, "getJaxFromMath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegister(value: String => Unit): Self = this.set("Register", js.Any.fromFunction1(value))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemove(value: js.Any => Unit): Self = this.set("Remove", js.Any.fromFunction1(value))
+    def setImageDir(value: String): Self = StObject.set(x, "imageDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslate(value: (js.Any, js.Any) => ElementJax): Self = this.set("Translate", js.Any.fromFunction2(value))
+    def setPostTranslate(value: js.Any => Unit): Self = StObject.set(x, "postTranslate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setZoom(value: (js.Any, js.Any, js.Any, Double, Double) => ZoomStruct): Self = this.set("Zoom", js.Any.fromFunction5(value))
+    def setPreProcess(value: js.Any => Unit): Self = StObject.set(x, "preProcess", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDirectory(value: String): Self = this.set("directory", value.asInstanceOf[js.Any])
+    def setPreTranslate(value: js.Any => Unit): Self = StObject.set(x, "preTranslate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontDir(value: String): Self = this.set("fontDir", value.asInstanceOf[js.Any])
+    def setRegister(value: String => Unit): Self = StObject.set(x, "Register", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetJaxFromMath(value: js.Any => ElementJax): Self = this.set("getJaxFromMath", js.Any.fromFunction1(value))
+    def setRemove(value: js.Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setTranslate(value: (js.Any, js.Any) => ElementJax): Self = StObject.set(x, "Translate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setImageDir(value: String): Self = this.set("imageDir", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostTranslate(value: js.Any => Unit): Self = this.set("postTranslate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPreProcess(value: js.Any => Unit): Self = this.set("preProcess", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPreTranslate(value: js.Any => Unit): Self = this.set("preTranslate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setZoom(value: (js.Any, js.Any, js.Any, Double, Double) => ZoomStruct): Self = StObject.set(x, "Zoom", js.Any.fromFunction5(value))
   }
 }

@@ -1,16 +1,17 @@
 package typings.xadesjs
 
-import typings.xmlCore.mod.XmlObject
+import typings.xadesjs.xmlBaseMod.XadesObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xadesjs/build/types/xml/qualifying_properties", JSImport.Namespace)
-@js.native
-object qualifyingPropertiesMod extends js.Object {
+object qualifyingPropertiesMod {
   
+  @JSImport("xadesjs/build/types/xml/qualifying_properties", "QualifyingProperties")
   @js.native
-  class QualifyingProperties () extends XmlObject {
+  class QualifyingProperties () extends XadesObject {
+    def this(properties: js.Object) = this()
     
     var Id: String = js.native
     

@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Crawler extends js.Object {
+trait Crawler extends StObject {
   
   /**
     * A list of UTF-8 strings that specify the custom classifiers that are associated with the crawler.
@@ -106,129 +107,117 @@ object Crawler {
   }
   
   @scala.inline
-  implicit class CrawlerOps[Self <: Crawler] (val x: Self) extends AnyVal {
+  implicit class CrawlerMutableBuilder[Self <: Crawler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassifiers(value: ClassifierNameList): Self = StObject.set(x, "Classifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassifiersUndefined: Self = StObject.set(x, "Classifiers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassifiersVarargs(value: NameString*): Self = StObject.set(x, "Classifiers", js.Array(value :_*))
     
     @scala.inline
-    def setClassifiersVarargs(value: NameString*): Self = this.set("Classifiers", js.Array(value :_*))
+    def setConfiguration(value: CrawlerConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassifiers(value: ClassifierNameList): Self = this.set("Classifiers", value.asInstanceOf[js.Any])
+    def setConfigurationUndefined: Self = StObject.set(x, "Configuration", js.undefined)
     
     @scala.inline
-    def deleteClassifiers: Self = this.set("Classifiers", js.undefined)
+    def setCrawlElapsedTime(value: MillisecondsCount): Self = StObject.set(x, "CrawlElapsedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration(value: CrawlerConfiguration): Self = this.set("Configuration", value.asInstanceOf[js.Any])
+    def setCrawlElapsedTimeUndefined: Self = StObject.set(x, "CrawlElapsedTime", js.undefined)
     
     @scala.inline
-    def deleteConfiguration: Self = this.set("Configuration", js.undefined)
+    def setCrawlerSecurityConfiguration(value: CrawlerSecurityConfiguration): Self = StObject.set(x, "CrawlerSecurityConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrawlElapsedTime(value: MillisecondsCount): Self = this.set("CrawlElapsedTime", value.asInstanceOf[js.Any])
+    def setCrawlerSecurityConfigurationUndefined: Self = StObject.set(x, "CrawlerSecurityConfiguration", js.undefined)
     
     @scala.inline
-    def deleteCrawlElapsedTime: Self = this.set("CrawlElapsedTime", js.undefined)
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrawlerSecurityConfiguration(value: CrawlerSecurityConfiguration): Self = this.set("CrawlerSecurityConfiguration", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteCrawlerSecurityConfiguration: Self = this.set("CrawlerSecurityConfiguration", js.undefined)
+    def setDatabaseName(value: DatabaseName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseName(value: DatabaseName): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteDatabaseName: Self = this.set("DatabaseName", js.undefined)
+    def setLastCrawl(value: LastCrawlInfo): Self = StObject.set(x, "LastCrawl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: DescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setLastCrawlUndefined: Self = StObject.set(x, "LastCrawl", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setLastUpdated(value: Timestamp): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastCrawl(value: LastCrawlInfo): Self = this.set("LastCrawl", value.asInstanceOf[js.Any])
+    def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
     
     @scala.inline
-    def deleteLastCrawl: Self = this.set("LastCrawl", js.undefined)
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdated(value: Timestamp): Self = this.set("LastUpdated", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteLastUpdated: Self = this.set("LastUpdated", js.undefined)
+    def setRecrawlPolicy(value: RecrawlPolicy): Self = StObject.set(x, "RecrawlPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setRecrawlPolicyUndefined: Self = StObject.set(x, "RecrawlPolicy", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setRole(value: Role): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecrawlPolicy(value: RecrawlPolicy): Self = this.set("RecrawlPolicy", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
     
     @scala.inline
-    def deleteRecrawlPolicy: Self = this.set("RecrawlPolicy", js.undefined)
+    def setSchedule(value: Schedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: Role): Self = this.set("Role", value.asInstanceOf[js.Any])
+    def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
     
     @scala.inline
-    def deleteRole: Self = this.set("Role", js.undefined)
+    def setSchemaChangePolicy(value: SchemaChangePolicy): Self = StObject.set(x, "SchemaChangePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedule(value: Schedule): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    def setSchemaChangePolicyUndefined: Self = StObject.set(x, "SchemaChangePolicy", js.undefined)
     
     @scala.inline
-    def deleteSchedule: Self = this.set("Schedule", js.undefined)
+    def setState(value: CrawlerState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaChangePolicy(value: SchemaChangePolicy): Self = this.set("SchemaChangePolicy", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteSchemaChangePolicy: Self = this.set("SchemaChangePolicy", js.undefined)
+    def setTablePrefix(value: TablePrefix): Self = StObject.set(x, "TablePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: CrawlerState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setTablePrefixUndefined: Self = StObject.set(x, "TablePrefix", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setTargets(value: CrawlerTargets): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTablePrefix(value: TablePrefix): Self = this.set("TablePrefix", value.asInstanceOf[js.Any])
+    def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
     @scala.inline
-    def deleteTablePrefix: Self = this.set("TablePrefix", js.undefined)
+    def setVersion(value: VersionId): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargets(value: CrawlerTargets): Self = this.set("Targets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargets: Self = this.set("Targets", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: VersionId): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

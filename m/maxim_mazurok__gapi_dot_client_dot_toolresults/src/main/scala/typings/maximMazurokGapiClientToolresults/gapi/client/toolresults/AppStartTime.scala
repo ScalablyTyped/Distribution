@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppStartTime extends js.Object {
+trait AppStartTime extends StObject {
   
   /**
     * Optional. The time from app start to reaching the developer-reported "fully drawn" time. This is only stored if the app includes a call to Activity.reportFullyDrawn(). See
@@ -25,30 +26,18 @@ object AppStartTime {
   }
   
   @scala.inline
-  implicit class AppStartTimeOps[Self <: AppStartTime] (val x: Self) extends AnyVal {
+  implicit class AppStartTimeMutableBuilder[Self <: AppStartTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFullyDrawnTime(value: Duration): Self = StObject.set(x, "fullyDrawnTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullyDrawnTimeUndefined: Self = StObject.set(x, "fullyDrawnTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitialDisplayTime(value: Duration): Self = StObject.set(x, "initialDisplayTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullyDrawnTime(value: Duration): Self = this.set("fullyDrawnTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFullyDrawnTime: Self = this.set("fullyDrawnTime", js.undefined)
-    
-    @scala.inline
-    def setInitialDisplayTime(value: Duration): Self = this.set("initialDisplayTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitialDisplayTime: Self = this.set("initialDisplayTime", js.undefined)
+    def setInitialDisplayTimeUndefined: Self = StObject.set(x, "initialDisplayTime", js.undefined)
   }
 }

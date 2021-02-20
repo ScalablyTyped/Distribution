@@ -1,5 +1,6 @@
 package typings.pulumiCloud.serviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.pulumiCloud.pulumiCloudStrings.SharedVolume
   - typings.pulumiCloud.pulumiCloudStrings.HostPathVolume
 */
-trait VolumeKind extends js.Object
+trait VolumeKind extends StObject
 object VolumeKind {
   
   @scala.inline

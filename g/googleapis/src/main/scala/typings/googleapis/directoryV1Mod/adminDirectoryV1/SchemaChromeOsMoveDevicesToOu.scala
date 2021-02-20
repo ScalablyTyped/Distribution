@@ -1,5 +1,6 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Devices API.
   */
 @js.native
-trait SchemaChromeOsMoveDevicesToOu extends js.Object {
+trait SchemaChromeOsMoveDevicesToOu extends StObject {
   
   /**
     * ChromeOs Devices to be moved to OU
@@ -25,27 +26,15 @@ object SchemaChromeOsMoveDevicesToOu {
   }
   
   @scala.inline
-  implicit class SchemaChromeOsMoveDevicesToOuOps[Self <: SchemaChromeOsMoveDevicesToOu] (val x: Self) extends AnyVal {
+  implicit class SchemaChromeOsMoveDevicesToOuMutableBuilder[Self <: SchemaChromeOsMoveDevicesToOu] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceIds(value: js.Array[String]): Self = StObject.set(x, "deviceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceIdsUndefined: Self = StObject.set(x, "deviceIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeviceIdsVarargs(value: String*): Self = this.set("deviceIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setDeviceIds(value: js.Array[String]): Self = this.set("deviceIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceIds: Self = this.set("deviceIds", js.undefined)
+    def setDeviceIdsVarargs(value: String*): Self = StObject.set(x, "deviceIds", js.Array(value :_*))
   }
 }

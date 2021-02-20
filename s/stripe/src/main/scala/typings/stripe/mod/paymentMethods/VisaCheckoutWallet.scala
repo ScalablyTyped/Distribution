@@ -1,6 +1,7 @@
 package typings.stripe.mod.paymentMethods
 
 import typings.stripe.stripeStrings.visa_checkout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,24 +23,12 @@ object VisaCheckoutWallet {
   }
   
   @scala.inline
-  implicit class VisaCheckoutWalletOps[Self <: VisaCheckoutWallet] (val x: Self) extends AnyVal {
+  implicit class VisaCheckoutWalletMutableBuilder[Self <: VisaCheckoutWallet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setType(value: visa_checkout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: visa_checkout): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisa_checkout(value: WalletData): Self = this.set("visa_checkout", value.asInstanceOf[js.Any])
+    def setVisa_checkout(value: WalletData): Self = StObject.set(x, "visa_checkout", value.asInstanceOf[js.Any])
   }
 }

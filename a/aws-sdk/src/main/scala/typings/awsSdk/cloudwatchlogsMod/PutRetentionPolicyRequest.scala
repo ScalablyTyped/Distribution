@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchlogsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutRetentionPolicyRequest extends js.Object {
+trait PutRetentionPolicyRequest extends StObject {
   
   /**
     * The name of the log group.
@@ -23,24 +24,12 @@ object PutRetentionPolicyRequest {
   }
   
   @scala.inline
-  implicit class PutRetentionPolicyRequestOps[Self <: PutRetentionPolicyRequest] (val x: Self) extends AnyVal {
+  implicit class PutRetentionPolicyRequestMutableBuilder[Self <: PutRetentionPolicyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = this.set("logGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRetentionInDays(value: Days): Self = this.set("retentionInDays", value.asInstanceOf[js.Any])
+    def setRetentionInDays(value: Days): Self = StObject.set(x, "retentionInDays", value.asInstanceOf[js.Any])
   }
 }

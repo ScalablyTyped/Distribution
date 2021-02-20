@@ -6,13 +6,14 @@ import typings.screeps.FilterFunction
 import typings.screeps.FilterObject
 import typings.screeps.FindClosestByPathAlgorithm
 import typings.screeps.RoomPosition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined screeps.FindPathOpts & std.Partial<screeps.FilterOptions<screeps.FIND_STRUCTURES>> & {  algorithm :screeps.FindClosestByPathAlgorithm | undefined} */
 @js.native
-trait FindPathOptsPartialFilter extends js.Object {
+trait FindPathOptsPartialFilter extends StObject {
   
   var algorithm: js.UndefOr[FindClosestByPathAlgorithm] = js.native
   
@@ -108,119 +109,107 @@ object FindPathOptsPartialFilter {
   }
   
   @scala.inline
-  implicit class FindPathOptsPartialFilterOps[Self <: FindPathOptsPartialFilter] (val x: Self) extends AnyVal {
+  implicit class FindPathOptsPartialFilterMutableBuilder[Self <: FindPathOptsPartialFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: FindClosestByPathAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvoid(value: js.Array[_ | RoomPosition]): Self = StObject.set(x, "avoid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithm(value: FindClosestByPathAlgorithm): Self = this.set("algorithm", value.asInstanceOf[js.Any])
+    def setAvoidUndefined: Self = StObject.set(x, "avoid", js.undefined)
     
     @scala.inline
-    def deleteAlgorithm: Self = this.set("algorithm", js.undefined)
+    def setAvoidVarargs(value: (js.Any | RoomPosition)*): Self = StObject.set(x, "avoid", js.Array(value :_*))
     
     @scala.inline
-    def setAvoidVarargs(value: (js.Any | RoomPosition)*): Self = this.set("avoid", js.Array(value :_*))
+    def setCostCallback(value: (/* roomName */ String, /* costMatrix */ CostMatrix) => Unit | CostMatrix): Self = StObject.set(x, "costCallback", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAvoid(value: js.Array[_ | RoomPosition]): Self = this.set("avoid", value.asInstanceOf[js.Any])
+    def setCostCallbackUndefined: Self = StObject.set(x, "costCallback", js.undefined)
     
     @scala.inline
-    def deleteAvoid: Self = this.set("avoid", js.undefined)
-    
-    @scala.inline
-    def setCostCallback(value: (/* roomName */ String, /* costMatrix */ CostMatrix) => Unit | CostMatrix): Self = this.set("costCallback", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteCostCallback: Self = this.set("costCallback", js.undefined)
+    def setFilter(value: FilterFunction[FIND_STRUCTURES] | FilterObject | String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFilterFunction1(
       value: /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[T] */ /* object */ js.Any => Boolean
-    ): Self = this.set("filter", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFilter(value: FilterFunction[FIND_STRUCTURES] | FilterObject | String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setHeuristicWeight(value: Double): Self = StObject.set(x, "heuristicWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeuristicWeight(value: Double): Self = this.set("heuristicWeight", value.asInstanceOf[js.Any])
+    def setHeuristicWeightUndefined: Self = StObject.set(x, "heuristicWeight", js.undefined)
     
     @scala.inline
-    def deleteHeuristicWeight: Self = this.set("heuristicWeight", js.undefined)
+    def setIgnore(value: js.Array[_ | RoomPosition]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreVarargs(value: (js.Any | RoomPosition)*): Self = this.set("ignore", js.Array(value :_*))
+    def setIgnoreCreeps(value: Boolean): Self = StObject.set(x, "ignoreCreeps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnore(value: js.Array[_ | RoomPosition]): Self = this.set("ignore", value.asInstanceOf[js.Any])
+    def setIgnoreCreepsUndefined: Self = StObject.set(x, "ignoreCreeps", js.undefined)
     
     @scala.inline
-    def deleteIgnore: Self = this.set("ignore", js.undefined)
+    def setIgnoreDestructibleStructures(value: Boolean): Self = StObject.set(x, "ignoreDestructibleStructures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreCreeps(value: Boolean): Self = this.set("ignoreCreeps", value.asInstanceOf[js.Any])
+    def setIgnoreDestructibleStructuresUndefined: Self = StObject.set(x, "ignoreDestructibleStructures", js.undefined)
     
     @scala.inline
-    def deleteIgnoreCreeps: Self = this.set("ignoreCreeps", js.undefined)
+    def setIgnoreRoads(value: Boolean): Self = StObject.set(x, "ignoreRoads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreDestructibleStructures(value: Boolean): Self = this.set("ignoreDestructibleStructures", value.asInstanceOf[js.Any])
+    def setIgnoreRoadsUndefined: Self = StObject.set(x, "ignoreRoads", js.undefined)
     
     @scala.inline
-    def deleteIgnoreDestructibleStructures: Self = this.set("ignoreDestructibleStructures", js.undefined)
+    def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
     
     @scala.inline
-    def setIgnoreRoads(value: Boolean): Self = this.set("ignoreRoads", value.asInstanceOf[js.Any])
+    def setIgnoreVarargs(value: (js.Any | RoomPosition)*): Self = StObject.set(x, "ignore", js.Array(value :_*))
     
     @scala.inline
-    def deleteIgnoreRoads: Self = this.set("ignoreRoads", js.undefined)
+    def setMaxOps(value: Double): Self = StObject.set(x, "maxOps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxOps(value: Double): Self = this.set("maxOps", value.asInstanceOf[js.Any])
+    def setMaxOpsUndefined: Self = StObject.set(x, "maxOps", js.undefined)
     
     @scala.inline
-    def deleteMaxOps: Self = this.set("maxOps", js.undefined)
+    def setMaxRooms(value: Double): Self = StObject.set(x, "maxRooms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRooms(value: Double): Self = this.set("maxRooms", value.asInstanceOf[js.Any])
+    def setMaxRoomsUndefined: Self = StObject.set(x, "maxRooms", js.undefined)
     
     @scala.inline
-    def deleteMaxRooms: Self = this.set("maxRooms", js.undefined)
+    def setPlainCost(value: Double): Self = StObject.set(x, "plainCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlainCost(value: Double): Self = this.set("plainCost", value.asInstanceOf[js.Any])
+    def setPlainCostUndefined: Self = StObject.set(x, "plainCost", js.undefined)
     
     @scala.inline
-    def deletePlainCost: Self = this.set("plainCost", js.undefined)
+    def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: Double): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setSerialize(value: Boolean): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialize(value: Boolean): Self = this.set("serialize", value.asInstanceOf[js.Any])
+    def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
     
     @scala.inline
-    def deleteSerialize: Self = this.set("serialize", js.undefined)
+    def setSwampCost(value: Double): Self = StObject.set(x, "swampCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwampCost(value: Double): Self = this.set("swampCost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSwampCost: Self = this.set("swampCost", js.undefined)
+    def setSwampCostUndefined: Self = StObject.set(x, "swampCost", js.undefined)
   }
 }

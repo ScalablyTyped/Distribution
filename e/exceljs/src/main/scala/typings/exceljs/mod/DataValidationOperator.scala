@@ -1,5 +1,6 @@
 package typings.exceljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.exceljs.exceljsStrings.greaterThanOrEqual
   - typings.exceljs.exceljsStrings.lessThanOrEqual
 */
-trait DataValidationOperator extends js.Object
+trait DataValidationOperator extends StObject
 object DataValidationOperator {
   
   @scala.inline

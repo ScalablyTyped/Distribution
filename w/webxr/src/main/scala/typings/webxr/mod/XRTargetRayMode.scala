@@ -1,5 +1,6 @@
 package typings.webxr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webxr.webxrStrings.`tracked-pointer`
   - typings.webxr.webxrStrings.screen
 */
-trait XRTargetRayMode extends js.Object
+trait XRTargetRayMode extends StObject
 object XRTargetRayMode {
   
   @scala.inline

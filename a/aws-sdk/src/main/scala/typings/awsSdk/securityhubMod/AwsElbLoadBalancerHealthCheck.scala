@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsElbLoadBalancerHealthCheck extends js.Object {
+trait AwsElbLoadBalancerHealthCheck extends StObject {
   
   /**
     * The number of consecutive health check successes required before the instance is moved to the Healthy state.
@@ -41,48 +42,36 @@ object AwsElbLoadBalancerHealthCheck {
   }
   
   @scala.inline
-  implicit class AwsElbLoadBalancerHealthCheckOps[Self <: AwsElbLoadBalancerHealthCheck] (val x: Self) extends AnyVal {
+  implicit class AwsElbLoadBalancerHealthCheckMutableBuilder[Self <: AwsElbLoadBalancerHealthCheck] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHealthyThreshold(value: Integer): Self = StObject.set(x, "HealthyThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHealthyThresholdUndefined: Self = StObject.set(x, "HealthyThreshold", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInterval(value: Integer): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthyThreshold(value: Integer): Self = this.set("HealthyThreshold", value.asInstanceOf[js.Any])
+    def setIntervalUndefined: Self = StObject.set(x, "Interval", js.undefined)
     
     @scala.inline
-    def deleteHealthyThreshold: Self = this.set("HealthyThreshold", js.undefined)
+    def setTarget(value: NonEmptyString): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterval(value: Integer): Self = this.set("Interval", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "Target", js.undefined)
     
     @scala.inline
-    def deleteInterval: Self = this.set("Interval", js.undefined)
+    def setTimeout(value: Integer): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: NonEmptyString): Self = this.set("Target", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
     
     @scala.inline
-    def deleteTarget: Self = this.set("Target", js.undefined)
+    def setUnhealthyThreshold(value: Integer): Self = StObject.set(x, "UnhealthyThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Integer): Self = this.set("Timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("Timeout", js.undefined)
-    
-    @scala.inline
-    def setUnhealthyThreshold(value: Integer): Self = this.set("UnhealthyThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnhealthyThreshold: Self = this.set("UnhealthyThreshold", js.undefined)
+    def setUnhealthyThresholdUndefined: Self = StObject.set(x, "UnhealthyThreshold", js.undefined)
   }
 }

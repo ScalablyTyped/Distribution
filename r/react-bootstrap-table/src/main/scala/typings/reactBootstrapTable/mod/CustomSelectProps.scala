@@ -1,11 +1,12 @@
 package typings.reactBootstrapTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomSelectProps extends js.Object {
+trait CustomSelectProps extends StObject {
   
   /**
     * True if the current row being drawn is selected.

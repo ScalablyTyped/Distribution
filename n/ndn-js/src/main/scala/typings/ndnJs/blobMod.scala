@@ -1,16 +1,16 @@
 package typings.ndnJs
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ndn-js/blob", JSImport.Namespace)
-@js.native
-object blobMod extends js.Object {
+object blobMod {
   
+  @JSImport("ndn-js/blob", "Blob")
   @js.native
-  class Blob () extends js.Object {
+  class Blob () extends StObject {
     def this(value: String) = this()
     def this(value: js.Array[Double]) = this()
     def this(value: Blob) = this()
@@ -26,6 +26,7 @@ object blobMod extends js.Object {
     def size(): Double = js.native
   }
   
+  @JSImport("ndn-js/blob", "SignedBlob")
   @js.native
   class SignedBlob () extends Blob {
     def this(value: js.Array[Double], signedPortionBeginOffset: Double, signedPortionEndOffset: Double) = this()

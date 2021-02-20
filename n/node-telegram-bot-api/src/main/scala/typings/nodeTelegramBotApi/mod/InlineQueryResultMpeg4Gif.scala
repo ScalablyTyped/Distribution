@@ -1,6 +1,7 @@
 package typings.nodeTelegramBotApi.mod
 
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.mpeg4_gif
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,66 +39,54 @@ object InlineQueryResultMpeg4Gif {
   }
   
   @scala.inline
-  implicit class InlineQueryResultMpeg4GifOps[Self <: InlineQueryResultMpeg4Gif] (val x: Self) extends AnyVal {
+  implicit class InlineQueryResultMpeg4GifMutableBuilder[Self <: InlineQueryResultMpeg4Gif] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInput_message_content(value: InputMessageContent): Self = StObject.set(x, "input_message_content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMpeg4_url(value: String): Self = this.set("mpeg4_url", value.asInstanceOf[js.Any])
+    def setInput_message_contentUndefined: Self = StObject.set(x, "input_message_content", js.undefined)
     
     @scala.inline
-    def setType(value: mpeg4_gif): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setMpeg4_duration(value: Double): Self = StObject.set(x, "mpeg4_duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setMpeg4_durationUndefined: Self = StObject.set(x, "mpeg4_duration", js.undefined)
     
     @scala.inline
-    def deleteCaption: Self = this.set("caption", js.undefined)
+    def setMpeg4_height(value: Double): Self = StObject.set(x, "mpeg4_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput_message_content(value: InputMessageContent): Self = this.set("input_message_content", value.asInstanceOf[js.Any])
+    def setMpeg4_heightUndefined: Self = StObject.set(x, "mpeg4_height", js.undefined)
     
     @scala.inline
-    def deleteInput_message_content: Self = this.set("input_message_content", js.undefined)
+    def setMpeg4_url(value: String): Self = StObject.set(x, "mpeg4_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMpeg4_duration(value: Double): Self = this.set("mpeg4_duration", value.asInstanceOf[js.Any])
+    def setMpeg4_width(value: Double): Self = StObject.set(x, "mpeg4_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMpeg4_duration: Self = this.set("mpeg4_duration", js.undefined)
+    def setMpeg4_widthUndefined: Self = StObject.set(x, "mpeg4_width", js.undefined)
     
     @scala.inline
-    def setMpeg4_height(value: Double): Self = this.set("mpeg4_height", value.asInstanceOf[js.Any])
+    def setThumb_url(value: String): Self = StObject.set(x, "thumb_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMpeg4_height: Self = this.set("mpeg4_height", js.undefined)
+    def setThumb_urlUndefined: Self = StObject.set(x, "thumb_url", js.undefined)
     
     @scala.inline
-    def setMpeg4_width(value: Double): Self = this.set("mpeg4_width", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMpeg4_width: Self = this.set("mpeg4_width", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setThumb_url(value: String): Self = this.set("thumb_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumb_url: Self = this.set("thumb_url", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setType(value: mpeg4_gif): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

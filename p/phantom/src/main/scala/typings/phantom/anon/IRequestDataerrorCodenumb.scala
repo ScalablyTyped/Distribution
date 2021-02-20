@@ -1,13 +1,14 @@
 package typings.phantom.anon
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined phantom.phantom.IRequestData & {  errorCode :number,   errorString :string} */
 @js.native
-trait IRequestDataerrorCodenumb extends js.Object {
+trait IRequestDataerrorCodenumb extends StObject {
   
   var errorCode: Double = js.native
   
@@ -40,42 +41,30 @@ object IRequestDataerrorCodenumb {
   }
   
   @scala.inline
-  implicit class IRequestDataerrorCodenumbOps[Self <: IRequestDataerrorCodenumb] (val x: Self) extends AnyVal {
+  implicit class IRequestDataerrorCodenumbMutableBuilder[Self <: IRequestDataerrorCodenumb] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorString(value: String): Self = StObject.set(x, "errorString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaders(value: js.Array[Name]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: Double): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    def setHeadersVarargs(value: Name*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
     @scala.inline
-    def setErrorString(value: String): Self = this.set("errorString", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadersVarargs(value: Name*): Self = this.set("headers", js.Array(value :_*))
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Array[Name]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTime(value: Date): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

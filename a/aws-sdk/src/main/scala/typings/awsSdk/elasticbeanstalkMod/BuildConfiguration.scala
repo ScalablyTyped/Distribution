@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildConfiguration extends js.Object {
+trait BuildConfiguration extends StObject {
   
   /**
     * The name of the artifact of the CodeBuild build. If provided, Elastic Beanstalk stores the build artifact in the S3 location S3-bucket/resources/application-name/codebuild/codebuild-version-label-artifact-name.zip. If not provided, Elastic Beanstalk stores the build artifact in the S3 location S3-bucket/resources/application-name/codebuild/codebuild-version-label.zip. 
@@ -41,42 +42,30 @@ object BuildConfiguration {
   }
   
   @scala.inline
-  implicit class BuildConfigurationOps[Self <: BuildConfiguration] (val x: Self) extends AnyVal {
+  implicit class BuildConfigurationMutableBuilder[Self <: BuildConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifactName(value: String): Self = StObject.set(x, "ArtifactName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifactNameUndefined: Self = StObject.set(x, "ArtifactName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodeBuildServiceRole(value: NonEmptyString): Self = StObject.set(x, "CodeBuildServiceRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeBuildServiceRole(value: NonEmptyString): Self = this.set("CodeBuildServiceRole", value.asInstanceOf[js.Any])
+    def setComputeType(value: ComputeType): Self = StObject.set(x, "ComputeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: NonEmptyString): Self = this.set("Image", value.asInstanceOf[js.Any])
+    def setComputeTypeUndefined: Self = StObject.set(x, "ComputeType", js.undefined)
     
     @scala.inline
-    def setArtifactName(value: String): Self = this.set("ArtifactName", value.asInstanceOf[js.Any])
+    def setImage(value: NonEmptyString): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArtifactName: Self = this.set("ArtifactName", js.undefined)
+    def setTimeoutInMinutes(value: BoxedInt): Self = StObject.set(x, "TimeoutInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputeType(value: ComputeType): Self = this.set("ComputeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComputeType: Self = this.set("ComputeType", js.undefined)
-    
-    @scala.inline
-    def setTimeoutInMinutes(value: BoxedInt): Self = this.set("TimeoutInMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutInMinutes: Self = this.set("TimeoutInMinutes", js.undefined)
+    def setTimeoutInMinutesUndefined: Self = StObject.set(x, "TimeoutInMinutes", js.undefined)
   }
 }

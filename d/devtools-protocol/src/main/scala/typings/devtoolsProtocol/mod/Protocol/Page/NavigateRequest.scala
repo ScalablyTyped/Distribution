@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Page
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigateRequest extends js.Object {
+trait NavigateRequest extends StObject {
   
   /**
     * Frame id to navigate, if not specified navigates the top frame.
@@ -41,45 +42,33 @@ object NavigateRequest {
   }
   
   @scala.inline
-  implicit class NavigateRequestOps[Self <: NavigateRequest] (val x: Self) extends AnyVal {
+  implicit class NavigateRequestMutableBuilder[Self <: NavigateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setReferrerPolicy(value: ReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameId(value: FrameId): Self = this.set("frameId", value.asInstanceOf[js.Any])
+    def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
     
     @scala.inline
-    def deleteFrameId: Self = this.set("frameId", js.undefined)
+    def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
     
     @scala.inline
-    def setReferrer(value: String): Self = this.set("referrer", value.asInstanceOf[js.Any])
+    def setTransitionType(value: TransitionType): Self = StObject.set(x, "transitionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReferrer: Self = this.set("referrer", js.undefined)
+    def setTransitionTypeUndefined: Self = StObject.set(x, "transitionType", js.undefined)
     
     @scala.inline
-    def setReferrerPolicy(value: ReferrerPolicy): Self = this.set("referrerPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReferrerPolicy: Self = this.set("referrerPolicy", js.undefined)
-    
-    @scala.inline
-    def setTransitionType(value: TransitionType): Self = this.set("transitionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitionType: Self = this.set("transitionType", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

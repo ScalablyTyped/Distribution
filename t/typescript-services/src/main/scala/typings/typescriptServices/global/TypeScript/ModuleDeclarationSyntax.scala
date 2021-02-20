@@ -3,6 +3,7 @@ package typings.typescriptServices.global.TypeScript
 import typings.typescriptServices.TypeScript.INameSyntax
 import typings.typescriptServices.TypeScript.ISyntaxList
 import typings.typescriptServices.TypeScript.ISyntaxToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,12 +23,15 @@ class ModuleDeclarationSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-/* static members */
-@JSGlobal("TypeScript.ModuleDeclarationSyntax")
-@js.native
-object ModuleDeclarationSyntax extends js.Object {
+object ModuleDeclarationSyntax {
   
+  /* static member */
+  @JSGlobal("TypeScript.ModuleDeclarationSyntax.create")
+  @js.native
   def create(moduleKeyword: ISyntaxToken, openBraceToken: ISyntaxToken, closeBraceToken: ISyntaxToken): typings.typescriptServices.TypeScript.ModuleDeclarationSyntax = js.native
   
+  /* static member */
+  @JSGlobal("TypeScript.ModuleDeclarationSyntax.create1")
+  @js.native
   def create1(): typings.typescriptServices.TypeScript.ModuleDeclarationSyntax = js.native
 }

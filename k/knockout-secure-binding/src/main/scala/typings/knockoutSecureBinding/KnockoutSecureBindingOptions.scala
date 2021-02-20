@@ -1,11 +1,12 @@
 package typings.knockoutSecureBinding
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutSecureBindingOptions extends js.Object {
+trait KnockoutSecureBindingOptions extends StObject {
   
   var attribute: js.UndefOr[String] = js.native
   
@@ -26,44 +27,32 @@ object KnockoutSecureBindingOptions {
   }
   
   @scala.inline
-  implicit class KnockoutSecureBindingOptionsOps[Self <: KnockoutSecureBindingOptions] (val x: Self) extends AnyVal {
+  implicit class KnockoutSecureBindingOptionsMutableBuilder[Self <: KnockoutSecureBindingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttribute(value: String): Self = this.set("attribute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttribute: Self = this.set("attribute", js.undefined)
+    def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
     
     @scala.inline
     def setBindings(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandlers */ js.Any
-    ): Self = this.set("bindings", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBindings: Self = this.set("bindings", js.undefined)
+    def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
     @scala.inline
-    def setGlobals(value: js.Any): Self = this.set("globals", value.asInstanceOf[js.Any])
+    def setGlobals(value: js.Any): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGlobals: Self = this.set("globals", js.undefined)
+    def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
     
     @scala.inline
-    def setNoVirtualElements(value: Boolean): Self = this.set("noVirtualElements", value.asInstanceOf[js.Any])
+    def setNoVirtualElements(value: Boolean): Self = StObject.set(x, "noVirtualElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNoVirtualElements: Self = this.set("noVirtualElements", js.undefined)
+    def setNoVirtualElementsUndefined: Self = StObject.set(x, "noVirtualElements", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.msRestAzure.mod
 
 import typings.msRestAzure.msRestAzureStrings.batch
 import typings.msRestAzure.msRestAzureStrings.graph
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AzureTokenCredentialsOptions extends js.Object {
+trait AzureTokenCredentialsOptions extends StObject {
   
   /**
     * The authorization scheme. Default value is 'Bearer'.
@@ -40,42 +41,30 @@ object AzureTokenCredentialsOptions {
   }
   
   @scala.inline
-  implicit class AzureTokenCredentialsOptionsOps[Self <: AzureTokenCredentialsOptions] (val x: Self) extends AnyVal {
+  implicit class AzureTokenCredentialsOptionsMutableBuilder[Self <: AzureTokenCredentialsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizationScheme(value: String): Self = StObject.set(x, "authorizationScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizationSchemeUndefined: Self = StObject.set(x, "authorizationScheme", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnvironment(value: AzureEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationScheme(value: String): Self = this.set("authorizationScheme", value.asInstanceOf[js.Any])
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def deleteAuthorizationScheme: Self = this.set("authorizationScheme", js.undefined)
+    def setTokenAudience(value: graph | batch | String): Self = StObject.set(x, "tokenAudience", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: AzureEnvironment): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setTokenAudienceUndefined: Self = StObject.set(x, "tokenAudience", js.undefined)
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    def setTokenCache(value: js.Any): Self = StObject.set(x, "tokenCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokenAudience(value: graph | batch | String): Self = this.set("tokenAudience", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenAudience: Self = this.set("tokenAudience", js.undefined)
-    
-    @scala.inline
-    def setTokenCache(value: js.Any): Self = this.set("tokenCache", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenCache: Self = this.set("tokenCache", js.undefined)
+    def setTokenCacheUndefined: Self = StObject.set(x, "tokenCache", js.undefined)
   }
 }

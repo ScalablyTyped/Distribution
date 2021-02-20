@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,42 +33,30 @@ object InputOutputSpecification {
   }
   
   @scala.inline
-  implicit class InputOutputSpecificationOps[Self <: InputOutputSpecification] (val x: Self) extends AnyVal {
+  implicit class InputOutputSpecificationMutableBuilder[Self <: InputOutputSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataInputs(value: js.Array[DataInput]): Self = StObject.set(x, "dataInputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataInputsVarargs(value: DataInput*): Self = StObject.set(x, "dataInputs", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataOutputs(value: js.Array[DataOutput]): Self = StObject.set(x, "dataOutputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataInputsVarargs(value: DataInput*): Self = this.set("dataInputs", js.Array(value :_*))
+    def setDataOutputsVarargs(value: DataOutput*): Self = StObject.set(x, "dataOutputs", js.Array(value :_*))
     
     @scala.inline
-    def setDataInputs(value: js.Array[DataInput]): Self = this.set("dataInputs", value.asInstanceOf[js.Any])
+    def setInputSets(value: js.Array[InputSet]): Self = StObject.set(x, "inputSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataOutputsVarargs(value: DataOutput*): Self = this.set("dataOutputs", js.Array(value :_*))
+    def setInputSetsVarargs(value: InputSet*): Self = StObject.set(x, "inputSets", js.Array(value :_*))
     
     @scala.inline
-    def setDataOutputs(value: js.Array[DataOutput]): Self = this.set("dataOutputs", value.asInstanceOf[js.Any])
+    def setOutputSets(value: js.Array[OutputSet]): Self = StObject.set(x, "outputSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputSetsVarargs(value: InputSet*): Self = this.set("inputSets", js.Array(value :_*))
-    
-    @scala.inline
-    def setInputSets(value: js.Array[InputSet]): Self = this.set("inputSets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutputSetsVarargs(value: OutputSet*): Self = this.set("outputSets", js.Array(value :_*))
-    
-    @scala.inline
-    def setOutputSets(value: js.Array[OutputSet]): Self = this.set("outputSets", value.asInstanceOf[js.Any])
+    def setOutputSetsVarargs(value: OutputSet*): Self = StObject.set(x, "outputSets", js.Array(value :_*))
   }
 }

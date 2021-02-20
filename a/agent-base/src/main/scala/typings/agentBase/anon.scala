@@ -2,17 +2,16 @@ package typings.agentBase
 
 import typings.agentBase.mod.ClientRequest
 import typings.agentBase.mod.RequestOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   /* Inlined std.Pick<agent-base.agent-base.Agent, 'addRequest'> */
   @js.native
-  trait PickAgentaddRequest extends js.Object {
+  trait PickAgentaddRequest extends StObject {
     
     def addRequest(req: ClientRequest, _opts: RequestOptions): Unit = js.native
     @JSName("addRequest")

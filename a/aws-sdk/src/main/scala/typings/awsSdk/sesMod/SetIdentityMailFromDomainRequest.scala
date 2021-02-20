@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetIdentityMailFromDomainRequest extends js.Object {
+trait SetIdentityMailFromDomainRequest extends StObject {
   
   /**
     * The action that you want Amazon SES to take if it cannot successfully read the required MX record when you send an email. If you choose UseDefaultValue, Amazon SES will use amazonses.com (or a subdomain of that) as the MAIL FROM domain. If you choose RejectMessage, Amazon SES will return a MailFromDomainNotVerified error and not send the email. The action specified in BehaviorOnMXFailure is taken when the custom MAIL FROM domain setup is in the Pending, Failed, and TemporaryFailure states.
@@ -31,33 +32,21 @@ object SetIdentityMailFromDomainRequest {
   }
   
   @scala.inline
-  implicit class SetIdentityMailFromDomainRequestOps[Self <: SetIdentityMailFromDomainRequest] (val x: Self) extends AnyVal {
+  implicit class SetIdentityMailFromDomainRequestMutableBuilder[Self <: SetIdentityMailFromDomainRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBehaviorOnMXFailure(value: BehaviorOnMXFailure): Self = StObject.set(x, "BehaviorOnMXFailure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBehaviorOnMXFailureUndefined: Self = StObject.set(x, "BehaviorOnMXFailure", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentity(value: Identity): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentity(value: Identity): Self = this.set("Identity", value.asInstanceOf[js.Any])
+    def setMailFromDomain(value: MailFromDomainName): Self = StObject.set(x, "MailFromDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBehaviorOnMXFailure(value: BehaviorOnMXFailure): Self = this.set("BehaviorOnMXFailure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBehaviorOnMXFailure: Self = this.set("BehaviorOnMXFailure", js.undefined)
-    
-    @scala.inline
-    def setMailFromDomain(value: MailFromDomainName): Self = this.set("MailFromDomain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMailFromDomain: Self = this.set("MailFromDomain", js.undefined)
+    def setMailFromDomainUndefined: Self = StObject.set(x, "MailFromDomain", js.undefined)
   }
 }

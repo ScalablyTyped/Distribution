@@ -1,16 +1,15 @@
 package typings.pacResolver
 
 import typings.pacResolver.mod.FindProxyForURLCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait FnCall extends js.Object {
+  trait FnCall extends StObject {
     
     def apply(url: String): js.Promise[String] = js.native
     def apply(url: String, callback: FindProxyForURLCallback): Unit = js.native

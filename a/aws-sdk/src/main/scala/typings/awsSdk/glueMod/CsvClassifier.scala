@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CsvClassifier extends js.Object {
+trait CsvClassifier extends StObject {
   
   /**
     * Enables the processing of files that contain only one column.
@@ -66,78 +67,66 @@ object CsvClassifier {
   }
   
   @scala.inline
-  implicit class CsvClassifierOps[Self <: CsvClassifier] (val x: Self) extends AnyVal {
+  implicit class CsvClassifierMutableBuilder[Self <: CsvClassifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowSingleColumn(value: NullableBoolean): Self = StObject.set(x, "AllowSingleColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowSingleColumnUndefined: Self = StObject.set(x, "AllowSingleColumn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainsHeader(value: CsvHeaderOption): Self = StObject.set(x, "ContainsHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setContainsHeaderUndefined: Self = StObject.set(x, "ContainsHeader", js.undefined)
     
     @scala.inline
-    def setAllowSingleColumn(value: NullableBoolean): Self = this.set("AllowSingleColumn", value.asInstanceOf[js.Any])
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowSingleColumn: Self = this.set("AllowSingleColumn", js.undefined)
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def setContainsHeader(value: CsvHeaderOption): Self = this.set("ContainsHeader", value.asInstanceOf[js.Any])
+    def setDelimiter(value: CsvColumnDelimiter): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainsHeader: Self = this.set("ContainsHeader", js.undefined)
+    def setDelimiterUndefined: Self = StObject.set(x, "Delimiter", js.undefined)
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setDisableValueTrimming(value: NullableBoolean): Self = StObject.set(x, "DisableValueTrimming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setDisableValueTrimmingUndefined: Self = StObject.set(x, "DisableValueTrimming", js.undefined)
     
     @scala.inline
-    def setDelimiter(value: CsvColumnDelimiter): Self = this.set("Delimiter", value.asInstanceOf[js.Any])
+    def setHeader(value: CsvHeader): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDelimiter: Self = this.set("Delimiter", js.undefined)
+    def setHeaderUndefined: Self = StObject.set(x, "Header", js.undefined)
     
     @scala.inline
-    def setDisableValueTrimming(value: NullableBoolean): Self = this.set("DisableValueTrimming", value.asInstanceOf[js.Any])
+    def setHeaderVarargs(value: NameString*): Self = StObject.set(x, "Header", js.Array(value :_*))
     
     @scala.inline
-    def deleteDisableValueTrimming: Self = this.set("DisableValueTrimming", js.undefined)
+    def setLastUpdated(value: Timestamp): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderVarargs(value: NameString*): Self = this.set("Header", js.Array(value :_*))
+    def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
     
     @scala.inline
-    def setHeader(value: CsvHeader): Self = this.set("Header", value.asInstanceOf[js.Any])
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeader: Self = this.set("Header", js.undefined)
+    def setQuoteSymbol(value: CsvQuoteSymbol): Self = StObject.set(x, "QuoteSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdated(value: Timestamp): Self = this.set("LastUpdated", value.asInstanceOf[js.Any])
+    def setQuoteSymbolUndefined: Self = StObject.set(x, "QuoteSymbol", js.undefined)
     
     @scala.inline
-    def deleteLastUpdated: Self = this.set("LastUpdated", js.undefined)
+    def setVersion(value: VersionId): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuoteSymbol(value: CsvQuoteSymbol): Self = this.set("QuoteSymbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuoteSymbol: Self = this.set("QuoteSymbol", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: VersionId): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

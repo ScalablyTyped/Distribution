@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext.draw.sprite
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,66 +45,54 @@ object ISector {
   }
   
   @scala.inline
-  implicit class ISectorOps[Self <: ISector] (val x: Self) extends AnyVal {
+  implicit class ISectorMutableBuilder[Self <: ISector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenterX(value: Double): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterXUndefined: Self = StObject.set(x, "centerX", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCenterY(value: Double): Self = StObject.set(x, "centerY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterX(value: Double): Self = this.set("centerX", value.asInstanceOf[js.Any])
+    def setCenterYUndefined: Self = StObject.set(x, "centerY", js.undefined)
     
     @scala.inline
-    def deleteCenterX: Self = this.set("centerX", js.undefined)
+    def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterY(value: Double): Self = this.set("centerY", value.asInstanceOf[js.Any])
+    def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
     
     @scala.inline
-    def deleteCenterY: Self = this.set("centerY", js.undefined)
+    def setEndRho(value: Double): Self = StObject.set(x, "endRho", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndAngle(value: Double): Self = this.set("endAngle", value.asInstanceOf[js.Any])
+    def setEndRhoUndefined: Self = StObject.set(x, "endRho", js.undefined)
     
     @scala.inline
-    def deleteEndAngle: Self = this.set("endAngle", js.undefined)
+    def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndRho(value: Double): Self = this.set("endRho", value.asInstanceOf[js.Any])
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def deleteEndRho: Self = this.set("endRho", js.undefined)
+    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: Double): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setStartRho(value: Double): Self = StObject.set(x, "startRho", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartAngle(value: Double): Self = this.set("startAngle", value.asInstanceOf[js.Any])
+    def setStartRhoUndefined: Self = StObject.set(x, "startRho", js.undefined)
     
     @scala.inline
-    def deleteStartAngle: Self = this.set("startAngle", js.undefined)
+    def setUpdatePath(value: (/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setStartRho(value: Double): Self = this.set("startRho", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartRho: Self = this.set("startRho", js.undefined)
-    
-    @scala.inline
-    def setUpdatePath(value: (/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any]) => Unit): Self = this.set("updatePath", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteUpdatePath: Self = this.set("updatePath", js.undefined)
+    def setUpdatePathUndefined: Self = StObject.set(x, "updatePath", js.undefined)
   }
 }

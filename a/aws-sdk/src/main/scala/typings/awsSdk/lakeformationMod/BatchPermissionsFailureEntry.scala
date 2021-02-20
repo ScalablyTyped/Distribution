@@ -1,11 +1,12 @@
 package typings.awsSdk.lakeformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchPermissionsFailureEntry extends js.Object {
+trait BatchPermissionsFailureEntry extends StObject {
   
   /**
     * An error message that applies to the failure of the entry.
@@ -26,30 +27,18 @@ object BatchPermissionsFailureEntry {
   }
   
   @scala.inline
-  implicit class BatchPermissionsFailureEntryOps[Self <: BatchPermissionsFailureEntry] (val x: Self) extends AnyVal {
+  implicit class BatchPermissionsFailureEntryMutableBuilder[Self <: BatchPermissionsFailureEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: ErrorDetail): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestEntry(value: BatchPermissionsRequestEntry): Self = StObject.set(x, "RequestEntry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: ErrorDetail): Self = this.set("Error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteError: Self = this.set("Error", js.undefined)
-    
-    @scala.inline
-    def setRequestEntry(value: BatchPermissionsRequestEntry): Self = this.set("RequestEntry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestEntry: Self = this.set("RequestEntry", js.undefined)
+    def setRequestEntryUndefined: Self = StObject.set(x, "RequestEntry", js.undefined)
   }
 }

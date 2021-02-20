@@ -1,11 +1,12 @@
 package typings.reactNativeChartsWrapper.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LineLength extends js.Object {
+trait LineLength extends StObject {
   
   var lineLength: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object LineLength {
   }
   
   @scala.inline
-  implicit class LineLengthOps[Self <: LineLength] (val x: Self) extends AnyVal {
+  implicit class LineLengthMutableBuilder[Self <: LineLength] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLineLength(value: Double): Self = StObject.set(x, "lineLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLineLengthUndefined: Self = StObject.set(x, "lineLength", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPhase(value: Double): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineLength(value: Double): Self = this.set("lineLength", value.asInstanceOf[js.Any])
+    def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
     
     @scala.inline
-    def deleteLineLength: Self = this.set("lineLength", js.undefined)
+    def setSpaceLength(value: Double): Self = StObject.set(x, "spaceLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhase(value: Double): Self = this.set("phase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhase: Self = this.set("phase", js.undefined)
-    
-    @scala.inline
-    def setSpaceLength(value: Double): Self = this.set("spaceLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpaceLength: Self = this.set("spaceLength", js.undefined)
+    def setSpaceLengthUndefined: Self = StObject.set(x, "spaceLength", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Document extends js.Object {
+trait Document extends StObject {
   
   var _amdDependencies: js.Any = js.native
   
@@ -145,144 +146,132 @@ object Document {
   }
   
   @scala.inline
-  implicit class DocumentOps[Self <: Document] (val x: Self) extends AnyVal {
+  implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmdDependencies(value: () => js.Array[String]): Self = StObject.set(x, "amdDependencies", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBloomFilter(value: () => BloomFilter): Self = StObject.set(x, "bloomFilter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setByteOrderMark(value: ByteOrderMark): Self = StObject.set(x, "byteOrderMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_amdDependencies(value: js.Any): Self = this.set("_amdDependencies", value.asInstanceOf[js.Any])
+    def setCacheSyntaxTreeInfo(value: js.Any => js.Any): Self = StObject.set(x, "cacheSyntaxTreeInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_astDeclMap(value: js.Any): Self = this.set("_astDeclMap", value.asInstanceOf[js.Any])
+    def setDiagnostics(value: () => js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_bloomFilter(value: js.Any): Self = this.set("_bloomFilter", value.asInstanceOf[js.Any])
+    def setEmitToOwnOutputFile(value: () => Boolean): Self = StObject.set(x, "emitToOwnOutputFile", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_compiler(value: js.Any): Self = this.set("_compiler", value.asInstanceOf[js.Any])
+    def setExternalModuleIndicatorSpan(value: () => TextSpan): Self = StObject.set(x, "externalModuleIndicatorSpan", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_declASTMap(value: js.Any): Self = this.set("_declASTMap", value.asInstanceOf[js.Any])
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_diagnostics(value: js.Any): Self = this.set("_diagnostics", value.asInstanceOf[js.Any])
+    def setGetAmdDependency(value: js.Any => js.Any): Self = StObject.set(x, "getAmdDependency", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_externalModuleIndicatorSpan(value: js.Any): Self = this.set("_externalModuleIndicatorSpan", value.asInstanceOf[js.Any])
+    def setGetEnclosingDecl(value: AST => PullDecl): Self = StObject.set(x, "getEnclosingDecl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_getASTForDecl(value: PullDecl => AST): Self = this.set("_getASTForDecl", js.Any.fromFunction1(value))
+    def setGetImplicitImportSpan(value: js.Any => js.Any): Self = StObject.set(x, "getImplicitImportSpan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_getDeclForAST(value: AST => PullDecl): Self = this.set("_getDeclForAST", js.Any.fromFunction1(value))
+    def setGetImplicitImportSpanWorker(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getImplicitImportSpanWorker", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set_lineMap(value: js.Any): Self = this.set("_lineMap", value.asInstanceOf[js.Any])
+    def setGetTopLevelImportOrExportSpan(value: js.Any => js.Any): Self = StObject.set(x, "getTopLevelImportOrExportSpan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_scriptSnapshot(value: js.Any): Self = this.set("_scriptSnapshot", value.asInstanceOf[js.Any])
+    def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_semanticInfoChain(value: js.Any): Self = this.set("_semanticInfoChain", value.asInstanceOf[js.Any])
+    def setIsDeclareFile(value: () => Boolean): Self = StObject.set(x, "isDeclareFile", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_setASTForDecl(value: (PullDecl, AST) => Unit): Self = this.set("_setASTForDecl", js.Any.fromFunction2(value))
+    def setIsExternalModule(value: () => Boolean): Self = StObject.set(x, "isExternalModule", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_setDeclForAST(value: (AST, PullDecl) => Unit): Self = this.set("_setDeclForAST", js.Any.fromFunction2(value))
+    def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_sourceUnit(value: js.Any): Self = this.set("_sourceUnit", value.asInstanceOf[js.Any])
+    def setLineMap(value: () => LineMap): Self = StObject.set(x, "lineMap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_syntaxTree(value: js.Any): Self = this.set("_syntaxTree", value.asInstanceOf[js.Any])
+    def setReferencedFiles(value: js.Array[String]): Self = StObject.set(x, "referencedFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_topLevelDecl(value: js.Any): Self = this.set("_topLevelDecl", value.asInstanceOf[js.Any])
+    def setReferencedFilesVarargs(value: String*): Self = StObject.set(x, "referencedFiles", js.Array(value :_*))
     
     @scala.inline
-    def setAmdDependencies(value: () => js.Array[String]): Self = this.set("amdDependencies", js.Any.fromFunction0(value))
+    def setSourceUnit(value: () => SourceUnit): Self = StObject.set(x, "sourceUnit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBloomFilter(value: () => BloomFilter): Self = this.set("bloomFilter", js.Any.fromFunction0(value))
+    def setSyntaxTree(value: () => SyntaxTree): Self = StObject.set(x, "syntaxTree", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setByteOrderMark(value: ByteOrderMark): Self = this.set("byteOrderMark", value.asInstanceOf[js.Any])
+    def setTopLevelDecl(value: () => PullDecl): Self = StObject.set(x, "topLevelDecl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCacheSyntaxTreeInfo(value: js.Any => js.Any): Self = this.set("cacheSyntaxTreeInfo", js.Any.fromFunction1(value))
+    def setUpdate(value: (IScriptSnapshot, Double, Boolean, TextChangeRange) => Document): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setDiagnostics(value: () => js.Array[Diagnostic]): Self = this.set("diagnostics", js.Any.fromFunction0(value))
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmitToOwnOutputFile(value: () => Boolean): Self = this.set("emitToOwnOutputFile", js.Any.fromFunction0(value))
+    def set_amdDependencies(value: js.Any): Self = StObject.set(x, "_amdDependencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalModuleIndicatorSpan(value: () => TextSpan): Self = this.set("externalModuleIndicatorSpan", js.Any.fromFunction0(value))
+    def set_astDeclMap(value: js.Any): Self = StObject.set(x, "_astDeclMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def set_bloomFilter(value: js.Any): Self = StObject.set(x, "_bloomFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAmdDependency(value: js.Any => js.Any): Self = this.set("getAmdDependency", js.Any.fromFunction1(value))
+    def set_compiler(value: js.Any): Self = StObject.set(x, "_compiler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetEnclosingDecl(value: AST => PullDecl): Self = this.set("getEnclosingDecl", js.Any.fromFunction1(value))
+    def set_declASTMap(value: js.Any): Self = StObject.set(x, "_declASTMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetImplicitImportSpan(value: js.Any => js.Any): Self = this.set("getImplicitImportSpan", js.Any.fromFunction1(value))
+    def set_diagnostics(value: js.Any): Self = StObject.set(x, "_diagnostics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetImplicitImportSpanWorker(value: (js.Any, js.Any) => js.Any): Self = this.set("getImplicitImportSpanWorker", js.Any.fromFunction2(value))
+    def set_externalModuleIndicatorSpan(value: js.Any): Self = StObject.set(x, "_externalModuleIndicatorSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTopLevelImportOrExportSpan(value: js.Any => js.Any): Self = this.set("getTopLevelImportOrExportSpan", js.Any.fromFunction1(value))
+    def set_getASTForDecl(value: PullDecl => AST): Self = StObject.set(x, "_getASTForDecl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInvalidate(value: () => Unit): Self = this.set("invalidate", js.Any.fromFunction0(value))
+    def set_getDeclForAST(value: AST => PullDecl): Self = StObject.set(x, "_getDeclForAST", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsDeclareFile(value: () => Boolean): Self = this.set("isDeclareFile", js.Any.fromFunction0(value))
+    def set_lineMap(value: js.Any): Self = StObject.set(x, "_lineMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsExternalModule(value: () => Boolean): Self = this.set("isExternalModule", js.Any.fromFunction0(value))
+    def set_scriptSnapshot(value: js.Any): Self = StObject.set(x, "_scriptSnapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOpen(value: Boolean): Self = this.set("isOpen", value.asInstanceOf[js.Any])
+    def set_semanticInfoChain(value: js.Any): Self = StObject.set(x, "_semanticInfoChain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineMap(value: () => LineMap): Self = this.set("lineMap", js.Any.fromFunction0(value))
+    def set_setASTForDecl(value: (PullDecl, AST) => Unit): Self = StObject.set(x, "_setASTForDecl", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setReferencedFilesVarargs(value: String*): Self = this.set("referencedFiles", js.Array(value :_*))
+    def set_setDeclForAST(value: (AST, PullDecl) => Unit): Self = StObject.set(x, "_setDeclForAST", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setReferencedFiles(value: js.Array[String]): Self = this.set("referencedFiles", value.asInstanceOf[js.Any])
+    def set_sourceUnit(value: js.Any): Self = StObject.set(x, "_sourceUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceUnit(value: () => SourceUnit): Self = this.set("sourceUnit", js.Any.fromFunction0(value))
+    def set_syntaxTree(value: js.Any): Self = StObject.set(x, "_syntaxTree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyntaxTree(value: () => SyntaxTree): Self = this.set("syntaxTree", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTopLevelDecl(value: () => PullDecl): Self = this.set("topLevelDecl", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdate(value: (IScriptSnapshot, Double, Boolean, TextChangeRange) => Document): Self = this.set("update", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    def set_topLevelDecl(value: js.Any): Self = StObject.set(x, "_topLevelDecl", value.asInstanceOf[js.Any])
   }
 }

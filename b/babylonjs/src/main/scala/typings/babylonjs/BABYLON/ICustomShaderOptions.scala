@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICustomShaderOptions extends js.Object {
+trait ICustomShaderOptions extends StObject {
   
   /**
     * The list of attribute names used in the shader
@@ -41,57 +42,45 @@ object ICustomShaderOptions {
   }
   
   @scala.inline
-  implicit class ICustomShaderOptionsOps[Self <: ICustomShaderOptions] (val x: Self) extends AnyVal {
+  implicit class ICustomShaderOptionsMutableBuilder[Self <: ICustomShaderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
     @scala.inline
-    def setShaderName(value: String): Self = this.set("shaderName", value.asInstanceOf[js.Any])
+    def setDefines(value: js.Array[String]): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributesVarargs(value: String*): Self = this.set("attributes", js.Array(value :_*))
+    def setDefinesUndefined: Self = StObject.set(x, "defines", js.undefined)
     
     @scala.inline
-    def setAttributes(value: js.Array[String]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setDefinesVarargs(value: String*): Self = StObject.set(x, "defines", js.Array(value :_*))
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setSamplers(value: js.Array[String]): Self = StObject.set(x, "samplers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinesVarargs(value: String*): Self = this.set("defines", js.Array(value :_*))
+    def setSamplersUndefined: Self = StObject.set(x, "samplers", js.undefined)
     
     @scala.inline
-    def setDefines(value: js.Array[String]): Self = this.set("defines", value.asInstanceOf[js.Any])
+    def setSamplersVarargs(value: String*): Self = StObject.set(x, "samplers", js.Array(value :_*))
     
     @scala.inline
-    def deleteDefines: Self = this.set("defines", js.undefined)
+    def setShaderName(value: String): Self = StObject.set(x, "shaderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamplersVarargs(value: String*): Self = this.set("samplers", js.Array(value :_*))
+    def setUniforms(value: js.Array[String]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamplers(value: js.Array[String]): Self = this.set("samplers", value.asInstanceOf[js.Any])
+    def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
     
     @scala.inline
-    def deleteSamplers: Self = this.set("samplers", js.undefined)
-    
-    @scala.inline
-    def setUniformsVarargs(value: String*): Self = this.set("uniforms", js.Array(value :_*))
-    
-    @scala.inline
-    def setUniforms(value: js.Array[String]): Self = this.set("uniforms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniforms: Self = this.set("uniforms", js.undefined)
+    def setUniformsVarargs(value: String*): Self = StObject.set(x, "uniforms", js.Array(value :_*))
   }
 }

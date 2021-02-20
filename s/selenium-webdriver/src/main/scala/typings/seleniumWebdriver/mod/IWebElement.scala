@@ -1,11 +1,12 @@
 package typings.seleniumWebdriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IWebElement extends js.Object {
+trait IWebElement extends StObject {
   
   /**
     * Schedules a command to clear the {@code value} of this element. This
@@ -227,63 +228,51 @@ object IWebElement {
   }
   
   @scala.inline
-  implicit class IWebElementOps[Self <: IWebElement] (val x: Self) extends AnyVal {
+  implicit class IWebElementMutableBuilder[Self <: IWebElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: () => js.Promise[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAttribute(value: String => js.Promise[String]): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClear(value: () => js.Promise[Unit]): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setGetCssValue(value: String => js.Promise[String]): Self = StObject.set(x, "getCssValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClick(value: () => js.Promise[Unit]): Self = this.set("click", js.Any.fromFunction0(value))
+    def setGetId(value: () => js.Promise[IWebElementId]): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAttribute(value: String => js.Promise[String]): Self = this.set("getAttribute", js.Any.fromFunction1(value))
+    def setGetLocation(value: () => js.Promise[ILocation]): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCssValue(value: String => js.Promise[String]): Self = this.set("getCssValue", js.Any.fromFunction1(value))
+    def setGetRect(value: () => js.Promise[IRectangle]): Self = StObject.set(x, "getRect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => js.Promise[IWebElementId]): Self = this.set("getId", js.Any.fromFunction0(value))
+    def setGetSize(value: () => js.Promise[ISize]): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLocation(value: () => js.Promise[ILocation]): Self = this.set("getLocation", js.Any.fromFunction0(value))
+    def setGetTagName(value: () => js.Promise[String]): Self = StObject.set(x, "getTagName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRect(value: () => js.Promise[IRectangle]): Self = this.set("getRect", js.Any.fromFunction0(value))
+    def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSize(value: () => js.Promise[ISize]): Self = this.set("getSize", js.Any.fromFunction0(value))
+    def setIsDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisplayed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTagName(value: () => js.Promise[String]): Self = this.set("getTagName", js.Any.fromFunction0(value))
+    def setIsEnabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetText(value: () => js.Promise[String]): Self = this.set("getText", js.Any.fromFunction0(value))
+    def setIsSelected(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSelected", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsDisplayed(value: () => js.Promise[Boolean]): Self = this.set("isDisplayed", js.Any.fromFunction0(value))
+    def setSendKeys(value: /* repeated */ Double | String | (js.Promise[String | Double]) => js.Promise[Unit]): Self = StObject.set(x, "sendKeys", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsEnabled(value: () => js.Promise[Boolean]): Self = this.set("isEnabled", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsSelected(value: () => js.Promise[Boolean]): Self = this.set("isSelected", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSendKeys(value: /* repeated */ Double | String | (js.Promise[String | Double]) => js.Promise[Unit]): Self = this.set("sendKeys", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSubmit(value: () => js.Promise[Unit]): Self = this.set("submit", js.Any.fromFunction0(value))
+    def setSubmit(value: () => js.Promise[Unit]): Self = StObject.set(x, "submit", js.Any.fromFunction0(value))
   }
 }

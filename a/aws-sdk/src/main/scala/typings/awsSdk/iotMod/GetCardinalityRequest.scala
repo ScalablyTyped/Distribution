@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetCardinalityRequest extends js.Object {
+trait GetCardinalityRequest extends StObject {
   
   /**
     * The field to aggregate.
@@ -36,39 +37,27 @@ object GetCardinalityRequest {
   }
   
   @scala.inline
-  implicit class GetCardinalityRequestOps[Self <: GetCardinalityRequest] (val x: Self) extends AnyVal {
+  implicit class GetCardinalityRequestMutableBuilder[Self <: GetCardinalityRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregationField(value: AggregationField): Self = StObject.set(x, "aggregationField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregationFieldUndefined: Self = StObject.set(x, "aggregationField", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexName(value: IndexName): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryString(value: QueryString): Self = this.set("queryString", value.asInstanceOf[js.Any])
+    def setIndexNameUndefined: Self = StObject.set(x, "indexName", js.undefined)
     
     @scala.inline
-    def setAggregationField(value: AggregationField): Self = this.set("aggregationField", value.asInstanceOf[js.Any])
+    def setQueryString(value: QueryString): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAggregationField: Self = this.set("aggregationField", js.undefined)
+    def setQueryVersion(value: QueryVersion): Self = StObject.set(x, "queryVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexName(value: IndexName): Self = this.set("indexName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndexName: Self = this.set("indexName", js.undefined)
-    
-    @scala.inline
-    def setQueryVersion(value: QueryVersion): Self = this.set("queryVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryVersion: Self = this.set("queryVersion", js.undefined)
+    def setQueryVersionUndefined: Self = StObject.set(x, "queryVersion", js.undefined)
   }
 }

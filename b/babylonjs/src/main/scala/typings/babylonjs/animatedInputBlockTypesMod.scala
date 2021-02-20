@@ -1,18 +1,17 @@
 package typings.babylonjs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/Input/animatedInputBlockTypes", JSImport.Namespace)
-@js.native
-object animatedInputBlockTypesMod extends js.Object {
+object animatedInputBlockTypesMod {
   
   @js.native
-  sealed trait AnimatedInputBlockTypes extends js.Object
+  sealed trait AnimatedInputBlockTypes extends StObject
+  @JSImport("babylonjs/Materials/Node/Blocks/Input/animatedInputBlockTypes", "AnimatedInputBlockTypes")
   @js.native
-  object AnimatedInputBlockTypes extends js.Object {
+  object AnimatedInputBlockTypes extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[AnimatedInputBlockTypes with Double] = js.native
@@ -20,13 +19,11 @@ object animatedInputBlockTypesMod extends js.Object {
     /** No animation */
     @js.native
     sealed trait None extends AnimatedInputBlockTypes
-    /* 0 */ @js.native
-    object None extends TopLevel[None with Double]
+    /* 0 */ val None: typings.babylonjs.animatedInputBlockTypesMod.AnimatedInputBlockTypes.None with Double = js.native
     
     /** Time based animation. Will only work for floats */
     @js.native
     sealed trait Time extends AnimatedInputBlockTypes
-    /* 1 */ @js.native
-    object Time extends TopLevel[Time with Double]
+    /* 1 */ val Time: typings.babylonjs.animatedInputBlockTypesMod.AnimatedInputBlockTypes.Time with Double = js.native
   }
 }

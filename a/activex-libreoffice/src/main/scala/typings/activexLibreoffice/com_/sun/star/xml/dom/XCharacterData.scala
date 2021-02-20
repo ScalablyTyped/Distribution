@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.xml.dom
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -129,48 +130,36 @@ object XCharacterData {
   }
   
   @scala.inline
-  implicit class XCharacterDataOps[Self <: XCharacterData] (val x: Self) extends AnyVal {
+  implicit class XCharacterDataMutableBuilder[Self <: XCharacterData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendData(value: String => Unit): Self = StObject.set(x, "appendData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setData(value: String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteData(value: (Double, Double) => Unit): Self = StObject.set(x, "deleteData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setData(value: String): Self = this.set("Data", value.asInstanceOf[js.Any])
+    def setGetData(value: () => String): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("Length", value.asInstanceOf[js.Any])
+    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAppendData(value: String => Unit): Self = this.set("appendData", js.Any.fromFunction1(value))
+    def setInsertData(value: (Double, String) => Unit): Self = StObject.set(x, "insertData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDeleteData(value: (Double, Double) => Unit): Self = this.set("deleteData", js.Any.fromFunction2(value))
+    def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetData(value: () => String): Self = this.set("getData", js.Any.fromFunction0(value))
+    def setReplaceData(value: (Double, Double, String) => Unit): Self = StObject.set(x, "replaceData", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetLength(value: () => Double): Self = this.set("getLength", js.Any.fromFunction0(value))
+    def setSetData(value: String => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsertData(value: (Double, String) => Unit): Self = this.set("insertData", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setReplaceData(value: (Double, Double, String) => Unit): Self = this.set("replaceData", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetData(value: String => Unit): Self = this.set("setData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSubStringData(value: (Double, Double) => String): Self = this.set("subStringData", js.Any.fromFunction2(value))
+    def setSubStringData(value: (Double, Double) => String): Self = StObject.set(x, "subStringData", js.Any.fromFunction2(value))
   }
 }

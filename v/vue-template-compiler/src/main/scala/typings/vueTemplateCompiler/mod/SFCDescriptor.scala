@@ -1,11 +1,12 @@
 package typings.vueTemplateCompiler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SFCDescriptor extends js.Object {
+trait SFCDescriptor extends StObject {
   
   var customBlocks: js.Array[SFCBlock] = js.native
   
@@ -24,42 +25,30 @@ object SFCDescriptor {
   }
   
   @scala.inline
-  implicit class SFCDescriptorOps[Self <: SFCDescriptor] (val x: Self) extends AnyVal {
+  implicit class SFCDescriptorMutableBuilder[Self <: SFCDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomBlocks(value: js.Array[SFCBlock]): Self = StObject.set(x, "customBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomBlocksVarargs(value: SFCBlock*): Self = StObject.set(x, "customBlocks", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScript(value: SFCBlock): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomBlocksVarargs(value: SFCBlock*): Self = this.set("customBlocks", js.Array(value :_*))
+    def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
     
     @scala.inline
-    def setCustomBlocks(value: js.Array[SFCBlock]): Self = this.set("customBlocks", value.asInstanceOf[js.Any])
+    def setStyles(value: js.Array[SFCBlock]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylesVarargs(value: SFCBlock*): Self = this.set("styles", js.Array(value :_*))
+    def setStylesVarargs(value: SFCBlock*): Self = StObject.set(x, "styles", js.Array(value :_*))
     
     @scala.inline
-    def setStyles(value: js.Array[SFCBlock]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setTemplate(value: SFCBlock): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScript(value: SFCBlock): Self = this.set("script", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScript: Self = this.set("script", js.undefined)
-    
-    @scala.inline
-    def setTemplate(value: SFCBlock): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

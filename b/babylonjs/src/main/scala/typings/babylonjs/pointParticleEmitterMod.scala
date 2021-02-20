@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.iparticleemittertypeMod.IParticleEmitterType
 import typings.babylonjs.mathVectorMod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Particles/EmitterTypes/pointParticleEmitter", JSImport.Namespace)
-@js.native
-object pointParticleEmitterMod extends js.Object {
+object pointParticleEmitterMod {
   
+  @JSImport("babylonjs/Particles/EmitterTypes/pointParticleEmitter", "PointParticleEmitter")
   @js.native
   /**
     * Creates a new instance PointParticleEmitter

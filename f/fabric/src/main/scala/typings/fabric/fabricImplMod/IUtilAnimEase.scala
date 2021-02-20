@@ -1,11 +1,12 @@
 package typings.fabric.fabricImplMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IUtilAnimEase extends js.Object {
+trait IUtilAnimEase extends StObject {
   
   def easeInBack(t: Double, b: Double, c: Double, d: Double): Double = js.native
   @JSName("easeInBack")

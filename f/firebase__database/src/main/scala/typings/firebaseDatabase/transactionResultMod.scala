@@ -1,16 +1,16 @@
 package typings.firebaseDatabase
 
 import typings.firebaseDatabase.dataSnapshotMod.DataSnapshot
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/api/TransactionResult", JSImport.Namespace)
-@js.native
-object transactionResultMod extends js.Object {
+object transactionResultMod {
   
+  @JSImport("@firebase/database/dist/src/api/TransactionResult", "TransactionResult")
   @js.native
-  class TransactionResult protected () extends js.Object {
+  class TransactionResult protected () extends StObject {
     /**
       * A type for the resolve value of Firebase.transaction.
       * @constructor

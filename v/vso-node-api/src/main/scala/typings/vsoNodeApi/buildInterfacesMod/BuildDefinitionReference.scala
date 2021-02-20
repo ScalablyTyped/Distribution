@@ -3,6 +3,7 @@ package typings.vsoNodeApi.buildInterfacesMod
 import typings.std.Date
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,51 +74,39 @@ object BuildDefinitionReference {
   }
   
   @scala.inline
-  implicit class BuildDefinitionReferenceOps[Self <: BuildDefinitionReference] (val x: Self) extends AnyVal {
+  implicit class BuildDefinitionReferenceMutableBuilder[Self <: BuildDefinitionReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthoredBy(value: IdentityRef): Self = StObject.set(x, "authoredBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDraftOf(value: DefinitionReference): Self = StObject.set(x, "draftOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrafts(value: js.Array[DefinitionReference]): Self = StObject.set(x, "drafts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_links(value: js.Any): Self = this.set("_links", value.asInstanceOf[js.Any])
+    def setDraftsVarargs(value: DefinitionReference*): Self = StObject.set(x, "drafts", js.Array(value :_*))
     
     @scala.inline
-    def setAuthoredBy(value: IdentityRef): Self = this.set("authoredBy", value.asInstanceOf[js.Any])
+    def setLatestBuild(value: Build): Self = StObject.set(x, "latestBuild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraftOf(value: DefinitionReference): Self = this.set("draftOf", value.asInstanceOf[js.Any])
+    def setLatestCompletedBuild(value: Build): Self = StObject.set(x, "latestCompletedBuild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraftsVarargs(value: DefinitionReference*): Self = this.set("drafts", js.Array(value :_*))
+    def setMetrics(value: js.Array[BuildMetric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrafts(value: js.Array[DefinitionReference]): Self = this.set("drafts", value.asInstanceOf[js.Any])
+    def setMetricsVarargs(value: BuildMetric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
     @scala.inline
-    def setLatestBuild(value: Build): Self = this.set("latestBuild", value.asInstanceOf[js.Any])
+    def setQuality(value: DefinitionQuality): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestCompletedBuild(value: Build): Self = this.set("latestCompletedBuild", value.asInstanceOf[js.Any])
+    def setQueue(value: AgentPoolQueue): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricsVarargs(value: BuildMetric*): Self = this.set("metrics", js.Array(value :_*))
-    
-    @scala.inline
-    def setMetrics(value: js.Array[BuildMetric]): Self = this.set("metrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuality(value: DefinitionQuality): Self = this.set("quality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueue(value: AgentPoolQueue): Self = this.set("queue", value.asInstanceOf[js.Any])
+    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

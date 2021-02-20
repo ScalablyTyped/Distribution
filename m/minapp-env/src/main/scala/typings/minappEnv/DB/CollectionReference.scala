@@ -3,6 +3,7 @@ package typings.minappEnv.DB
 import typings.minappEnv.OQ
 import typings.minappEnv.Promise
 import typings.minappEnv.anon.RQIAddDocumentOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

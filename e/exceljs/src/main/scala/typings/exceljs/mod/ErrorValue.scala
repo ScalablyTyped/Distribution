@@ -1,51 +1,44 @@
 package typings.exceljs.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ErrorValue extends js.Object
+sealed trait ErrorValue extends StObject
 @JSImport("exceljs", "ErrorValue")
 @js.native
-object ErrorValue extends js.Object {
+object ErrorValue extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ErrorValue with String] = js.native
   
   @js.native
   sealed trait DivZero extends ErrorValue
-  /* "#DIV/0!" */ @js.native
-  object DivZero extends TopLevel[DivZero with String]
+  /* "#DIV/0!" */ val DivZero: typings.exceljs.mod.ErrorValue.DivZero with String = js.native
   
   @js.native
   sealed trait Name extends ErrorValue
-  /* "#NAME?" */ @js.native
-  object Name extends TopLevel[Name with String]
+  /* "#NAME?" */ val Name: typings.exceljs.mod.ErrorValue.Name with String = js.native
   
   @js.native
   sealed trait NotApplicable extends ErrorValue
-  /* "#N/A" */ @js.native
-  object NotApplicable extends TopLevel[NotApplicable with String]
+  /* "#N/A" */ val NotApplicable: typings.exceljs.mod.ErrorValue.NotApplicable with String = js.native
   
   @js.native
   sealed trait Null extends ErrorValue
-  /* "#NULL!" */ @js.native
-  object Null extends TopLevel[Null with String]
+  /* "#NULL!" */ val Null: typings.exceljs.mod.ErrorValue.Null with String = js.native
   
   @js.native
   sealed trait Num extends ErrorValue
-  /* "#NUM!" */ @js.native
-  object Num extends TopLevel[Num with String]
+  /* "#NUM!" */ val Num: typings.exceljs.mod.ErrorValue.Num with String = js.native
   
   @js.native
   sealed trait Ref extends ErrorValue
-  /* "#REF!" */ @js.native
-  object Ref extends TopLevel[Ref with String]
+  /* "#REF!" */ val Ref: typings.exceljs.mod.ErrorValue.Ref with String = js.native
   
   @js.native
   sealed trait Value extends ErrorValue
-  /* "#VALUE!" */ @js.native
-  object Value extends TopLevel[Value with String]
+  /* "#VALUE!" */ val Value: typings.exceljs.mod.ErrorValue.Value with String = js.native
 }

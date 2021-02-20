@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingplansMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScalingPlanResource extends js.Object {
+trait ScalingPlanResource extends StObject {
   
   /**
     * The ID of the resource. This string consists of the resource type and unique identifier.   Auto Scaling group - The resource type is autoScalingGroup and the unique identifier is the name of the Auto Scaling group. Example: autoScalingGroup/my-asg.   ECS service - The resource type is service and the unique identifier is the cluster name and service name. Example: service/default/sample-webapp.   Spot Fleet request - The resource type is spot-fleet-request and the unique identifier is the Spot Fleet request ID. Example: spot-fleet-request/sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE.   DynamoDB table - The resource type is table and the unique identifier is the resource ID. Example: table/my-table.   DynamoDB global secondary index - The resource type is index and the unique identifier is the resource ID. Example: table/my-table/index/my-table-index.   Aurora DB cluster - The resource type is cluster and the unique identifier is the cluster name. Example: cluster:my-db-cluster.  
@@ -63,51 +64,39 @@ object ScalingPlanResource {
   }
   
   @scala.inline
-  implicit class ScalingPlanResourceOps[Self <: ScalingPlanResource] (val x: Self) extends AnyVal {
+  implicit class ScalingPlanResourceMutableBuilder[Self <: ScalingPlanResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScalingPlanName(value: ScalingPlanName): Self = StObject.set(x, "ScalingPlanName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: ResourceIdMaxLen1600): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    def setScalingPlanVersion(value: ScalingPlanVersion): Self = StObject.set(x, "ScalingPlanVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalableDimension(value: ScalableDimension): Self = this.set("ScalableDimension", value.asInstanceOf[js.Any])
+    def setScalingPolicies(value: ScalingPolicies): Self = StObject.set(x, "ScalingPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalingPlanName(value: ScalingPlanName): Self = this.set("ScalingPlanName", value.asInstanceOf[js.Any])
+    def setScalingPoliciesUndefined: Self = StObject.set(x, "ScalingPolicies", js.undefined)
     
     @scala.inline
-    def setScalingPlanVersion(value: ScalingPlanVersion): Self = this.set("ScalingPlanVersion", value.asInstanceOf[js.Any])
+    def setScalingPoliciesVarargs(value: ScalingPolicy*): Self = StObject.set(x, "ScalingPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setScalingStatusCode(value: ScalingStatusCode): Self = this.set("ScalingStatusCode", value.asInstanceOf[js.Any])
+    def setScalingStatusCode(value: ScalingStatusCode): Self = StObject.set(x, "ScalingStatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceNamespace(value: ServiceNamespace): Self = this.set("ServiceNamespace", value.asInstanceOf[js.Any])
+    def setScalingStatusMessage(value: XmlString): Self = StObject.set(x, "ScalingStatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalingPoliciesVarargs(value: ScalingPolicy*): Self = this.set("ScalingPolicies", js.Array(value :_*))
+    def setScalingStatusMessageUndefined: Self = StObject.set(x, "ScalingStatusMessage", js.undefined)
     
     @scala.inline
-    def setScalingPolicies(value: ScalingPolicies): Self = this.set("ScalingPolicies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScalingPolicies: Self = this.set("ScalingPolicies", js.undefined)
-    
-    @scala.inline
-    def setScalingStatusMessage(value: XmlString): Self = this.set("ScalingStatusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScalingStatusMessage: Self = this.set("ScalingStatusMessage", js.undefined)
+    def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
   }
 }

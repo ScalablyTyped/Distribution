@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeVolumesModificationsResult extends js.Object {
+trait DescribeVolumesModificationsResult extends StObject {
   
   /**
     * Token for pagination, null if there are no more results 
@@ -26,33 +27,21 @@ object DescribeVolumesModificationsResult {
   }
   
   @scala.inline
-  implicit class DescribeVolumesModificationsResultOps[Self <: DescribeVolumesModificationsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeVolumesModificationsResultMutableBuilder[Self <: DescribeVolumesModificationsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVolumesModifications(value: VolumeModificationList): Self = StObject.set(x, "VolumesModifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setVolumesModificationsUndefined: Self = StObject.set(x, "VolumesModifications", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setVolumesModificationsVarargs(value: VolumeModification*): Self = this.set("VolumesModifications", js.Array(value :_*))
-    
-    @scala.inline
-    def setVolumesModifications(value: VolumeModificationList): Self = this.set("VolumesModifications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumesModifications: Self = this.set("VolumesModifications", js.undefined)
+    def setVolumesModificationsVarargs(value: VolumeModification*): Self = StObject.set(x, "VolumesModifications", js.Array(value :_*))
   }
 }

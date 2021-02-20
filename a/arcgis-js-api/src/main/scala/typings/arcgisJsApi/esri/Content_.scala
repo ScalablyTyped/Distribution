@@ -5,6 +5,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.custom
 import typings.arcgisJsApi.arcgisJsApiStrings.fields
 import typings.arcgisJsApi.arcgisJsApiStrings.media
 import typings.arcgisJsApi.arcgisJsApiStrings.text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

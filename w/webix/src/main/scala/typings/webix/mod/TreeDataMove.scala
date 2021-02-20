@@ -1,13 +1,13 @@
 package typings.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.webix.webix.ui.baseview
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeDataMove extends js.Object {
+trait TreeDataMove extends StObject {
   
   @JSName("$dropAllow")
   def $dropAllow(args: js.Any*): js.Any = js.native
@@ -32,6 +32,3 @@ trait TreeDataMove extends js.Object {
   def move(sid: Double, tindex: Double, tobj: baseview): String | Double = js.native
   def move(sid: Double, tindex: Double, tobj: baseview, details: js.Any): String | Double = js.native
 }
-@JSImport("webix", "TreeDataMove")
-@js.native
-object TreeDataMove extends TopLevel[TreeDataMove]

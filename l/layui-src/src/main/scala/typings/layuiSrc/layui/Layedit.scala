@@ -1,11 +1,12 @@
 package typings.layuiSrc.layui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Layedit extends js.Object {
+trait Layedit extends StObject {
   
   def build(id: String): js.Any = js.native
   def build(id: String, options: EditOption): js.Any = js.native

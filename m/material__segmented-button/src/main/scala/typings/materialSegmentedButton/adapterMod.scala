@@ -1,16 +1,15 @@
 package typings.materialSegmentedButton
 
 import typings.materialSegmentedButton.typesMod.SegmentDetail
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/segmented-button/segmented-button/adapter", JSImport.Namespace)
-@js.native
-object adapterMod extends js.Object {
+object adapterMod {
   
   @js.native
-  trait MDCSegmentedButtonAdapter extends js.Object {
+  trait MDCSegmentedButtonAdapter extends StObject {
     
     /**
       * @return Returns child segments represented as readonly list of

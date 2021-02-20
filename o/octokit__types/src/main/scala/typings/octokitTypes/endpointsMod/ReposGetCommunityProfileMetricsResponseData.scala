@@ -1,12 +1,13 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Codeofconduct
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReposGetCommunityProfileMetricsResponseData extends js.Object {
+trait ReposGetCommunityProfileMetricsResponseData extends StObject {
   
   var description: String = js.native
   
@@ -33,33 +34,21 @@ object ReposGetCommunityProfileMetricsResponseData {
   }
   
   @scala.inline
-  implicit class ReposGetCommunityProfileMetricsResponseDataOps[Self <: ReposGetCommunityProfileMetricsResponseData] (val x: Self) extends AnyVal {
+  implicit class ReposGetCommunityProfileMetricsResponseDataMutableBuilder[Self <: ReposGetCommunityProfileMetricsResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentation(value: Boolean): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiles(value: Codeofconduct): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setHealth_percentage(value: Double): Self = StObject.set(x, "health_percentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentation(value: Boolean): Self = this.set("documentation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFiles(value: Codeofconduct): Self = this.set("files", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHealth_percentage(value: Double): Self = this.set("health_percentage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdated_at(value: String): Self = this.set("updated_at", value.asInstanceOf[js.Any])
+    def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
   }
 }

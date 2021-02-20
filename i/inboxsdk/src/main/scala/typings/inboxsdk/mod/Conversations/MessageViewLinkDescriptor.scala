@@ -1,12 +1,13 @@
 package typings.inboxsdk.mod.Conversations
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageViewLinkDescriptor extends js.Object {
+trait MessageViewLinkDescriptor extends StObject {
   
   var element: HTMLElement = js.native
   
@@ -27,33 +28,21 @@ object MessageViewLinkDescriptor {
   }
   
   @scala.inline
-  implicit class MessageViewLinkDescriptorOps[Self <: MessageViewLinkDescriptor] (val x: Self) extends AnyVal {
+  implicit class MessageViewLinkDescriptorMutableBuilder[Self <: MessageViewLinkDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: HTMLElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setIsInQuotedArea(value: Boolean): Self = StObject.set(x, "isInQuotedArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHtml(value: String): Self = this.set("html", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsInQuotedArea(value: Boolean): Self = this.set("isInQuotedArea", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

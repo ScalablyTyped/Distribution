@@ -4,13 +4,14 @@ import typings.officeJs.Excel.CalculationMode
 import typings.officeJs.officeJsStrings.Automatic
 import typings.officeJs.officeJsStrings.AutomaticExceptTables
 import typings.officeJs.officeJsStrings.Manual
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Application object, for use in `application.set({ ... })`. */
 @js.native
-trait ApplicationUpdateData extends js.Object {
+trait ApplicationUpdateData extends StObject {
   
   /**
     *
@@ -39,30 +40,18 @@ object ApplicationUpdateData {
   }
   
   @scala.inline
-  implicit class ApplicationUpdateDataOps[Self <: ApplicationUpdateData] (val x: Self) extends AnyVal {
+  implicit class ApplicationUpdateDataMutableBuilder[Self <: ApplicationUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalculationMode(value: CalculationMode | Automatic | AutomaticExceptTables | Manual): Self = StObject.set(x, "calculationMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalculationModeUndefined: Self = StObject.set(x, "calculationMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIterativeCalculation(value: IterativeCalculationUpdateData): Self = StObject.set(x, "iterativeCalculation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalculationMode(value: CalculationMode | Automatic | AutomaticExceptTables | Manual): Self = this.set("calculationMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCalculationMode: Self = this.set("calculationMode", js.undefined)
-    
-    @scala.inline
-    def setIterativeCalculation(value: IterativeCalculationUpdateData): Self = this.set("iterativeCalculation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIterativeCalculation: Self = this.set("iterativeCalculation", js.undefined)
+    def setIterativeCalculationUndefined: Self = StObject.set(x, "iterativeCalculation", js.undefined)
   }
 }

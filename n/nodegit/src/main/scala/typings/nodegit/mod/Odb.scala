@@ -1,5 +1,6 @@
 package typings.nodegit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Odb ()
   extends typings.nodegit.odbMod.Odb
 /* static members */
-@JSImport("nodegit", "Odb")
-@js.native
-object Odb extends js.Object {
+object Odb {
   
+  @JSImport("nodegit", "Odb.open")
+  @js.native
   def open(objectsDir: String): js.Promise[typings.nodegit.odbMod.Odb] = js.native
 }

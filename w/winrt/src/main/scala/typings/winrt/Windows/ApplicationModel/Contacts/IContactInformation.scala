@@ -3,12 +3,13 @@ package typings.winrt.Windows.ApplicationModel.Contacts
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamWithContentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IContactInformation extends js.Object {
+trait IContactInformation extends StObject {
   
   var customFields: IVectorView[ContactField] = js.native
   
@@ -44,42 +45,30 @@ object IContactInformation {
   }
   
   @scala.inline
-  implicit class IContactInformationOps[Self <: IContactInformation] (val x: Self) extends AnyVal {
+  implicit class IContactInformationMutableBuilder[Self <: IContactInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomFields(value: IVectorView[ContactField]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmails(value: IVectorView[ContactField]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetThumbnailAsync(value: () => IAsyncOperation[IRandomAccessStreamWithContentType]): Self = StObject.set(x, "getThumbnailAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCustomFields(value: IVectorView[ContactField]): Self = this.set("customFields", value.asInstanceOf[js.Any])
+    def setInstantMessages(value: IVectorView[ContactInstantMessageField]): Self = StObject.set(x, "instantMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmails(value: IVectorView[ContactField]): Self = this.set("emails", value.asInstanceOf[js.Any])
+    def setLocations(value: IVectorView[ContactLocationField]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetThumbnailAsync(value: () => IAsyncOperation[IRandomAccessStreamWithContentType]): Self = this.set("getThumbnailAsync", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstantMessages(value: IVectorView[ContactInstantMessageField]): Self = this.set("instantMessages", value.asInstanceOf[js.Any])
+    def setPhoneNumbers(value: IVectorView[ContactField]): Self = StObject.set(x, "phoneNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocations(value: IVectorView[ContactLocationField]): Self = this.set("locations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPhoneNumbers(value: IVectorView[ContactField]): Self = this.set("phoneNumbers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryCustomFields(value: String => IVectorView[ContactField]): Self = this.set("queryCustomFields", js.Any.fromFunction1(value))
+    def setQueryCustomFields(value: String => IVectorView[ContactField]): Self = StObject.set(x, "queryCustomFields", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.WebAuthn
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetCredentialsResponse extends js.Object {
+trait GetCredentialsResponse extends StObject {
   
   var credentials: js.Array[Credential] = js.native
 }
@@ -18,24 +19,12 @@ object GetCredentialsResponse {
   }
   
   @scala.inline
-  implicit class GetCredentialsResponseOps[Self <: GetCredentialsResponse] (val x: Self) extends AnyVal {
+  implicit class GetCredentialsResponseMutableBuilder[Self <: GetCredentialsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCredentials(value: js.Array[Credential]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCredentialsVarargs(value: Credential*): Self = this.set("credentials", js.Array(value :_*))
-    
-    @scala.inline
-    def setCredentials(value: js.Array[Credential]): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    def setCredentialsVarargs(value: Credential*): Self = StObject.set(x, "credentials", js.Array(value :_*))
   }
 }

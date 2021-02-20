@@ -1,11 +1,12 @@
 package typings.victory.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Active extends js.Object {
+trait Active extends StObject {
   
   var active: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object Active {
   }
   
   @scala.inline
-  implicit class ActiveOps[Self <: Active] (val x: Self) extends AnyVal {
+  implicit class ActiveMutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatum(value: js.Object): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
-    
-    @scala.inline
-    def setDatum(value: js.Object): Self = this.set("datum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDatum: Self = this.set("datum", js.undefined)
+    def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
   }
 }

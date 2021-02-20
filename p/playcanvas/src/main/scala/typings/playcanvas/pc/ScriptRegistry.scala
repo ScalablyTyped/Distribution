@@ -1,6 +1,9 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.Instantiable1
+import typings.playcanvas.anon.App
 import typings.playcanvas.anon.TypeofScriptType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +28,7 @@ trait ScriptRegistry extends EventHandler {
     * @param script - Script Type that is created using {@link pc.createScript}.
     * @returns True if added for the first time or false if script already exists.
     */
-  def add(script: TypeofScriptType): Boolean = js.native
+  def add(script: TypeofScriptType with (Instantiable1[/* args */ App, ScriptType])): Boolean = js.native
   
   /**
     * Get {@link pc.ScriptType} by name.
@@ -34,8 +37,9 @@ trait ScriptRegistry extends EventHandler {
     * @param name - Name of a {@link pc.ScriptType}.
     * @returns The Script Type if it exists in the registry or null otherwise.
     */
-  def get(name: String): TypeofScriptType = js.native
+  def get(name: String): TypeofScriptType with (Instantiable1[/* args */ App, ScriptType]) = js.native
   
+  def has(nameOrType: TypeofScriptType with (Instantiable1[/* args */ App, ScriptType])): Boolean = js.native
   /**
     * Check if a {@link pc.ScriptType} with the specified name is in the registry.
     * @example
@@ -46,7 +50,6 @@ trait ScriptRegistry extends EventHandler {
     * @returns True if {@link pc.ScriptType} is in registry.
     */
   def has(nameOrType: String): Boolean = js.native
-  def has(nameOrType: TypeofScriptType): Boolean = js.native
   
   /**
     * Get list of all {@link pc.ScriptType}s from registry.
@@ -57,8 +60,9 @@ trait ScriptRegistry extends EventHandler {
     * }));
     * @returns list of all {@link pc.ScriptType}s in registry.
     */
-  def list(): js.Array[TypeofScriptType] = js.native
+  def list(): js.Array[TypeofScriptType with (Instantiable1[/* args */ App, ScriptType])] = js.native
   
+  def remove(nameOrType: TypeofScriptType with (Instantiable1[/* args */ App, ScriptType])): Boolean = js.native
   /**
     * Remove {@link pc.ScriptType}.
     * @example
@@ -67,5 +71,4 @@ trait ScriptRegistry extends EventHandler {
     * @returns True if removed or False if already not in registry.
     */
   def remove(nameOrType: String): Boolean = js.native
-  def remove(nameOrType: TypeofScriptType): Boolean = js.native
 }

@@ -1,11 +1,12 @@
 package typings.wicgFileSystemAccess.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileSystemHandlePermissionDescriptor extends js.Object {
+trait FileSystemHandlePermissionDescriptor extends StObject {
   
   var mode: js.UndefOr[FileSystemPermissionMode] = js.native
   
@@ -23,30 +24,18 @@ object FileSystemHandlePermissionDescriptor {
   }
   
   @scala.inline
-  implicit class FileSystemHandlePermissionDescriptorOps[Self <: FileSystemHandlePermissionDescriptor] (val x: Self) extends AnyVal {
+  implicit class FileSystemHandlePermissionDescriptorMutableBuilder[Self <: FileSystemHandlePermissionDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMode(value: FileSystemPermissionMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: FileSystemPermissionMode): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
-    
-    @scala.inline
-    def setWritable(value: Boolean): Self = this.set("writable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWritable: Self = this.set("writable", js.undefined)
+    def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
   }
 }

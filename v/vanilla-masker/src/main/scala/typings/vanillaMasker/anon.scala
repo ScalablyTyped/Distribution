@@ -1,16 +1,15 @@
 package typings.vanillaMasker
 
 import typings.vanillaMasker.mod.MoneyOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait MaskAlphaNum extends js.Object {
+  trait MaskAlphaNum extends StObject {
     
     def maskAlphaNum(): Unit = js.native
     

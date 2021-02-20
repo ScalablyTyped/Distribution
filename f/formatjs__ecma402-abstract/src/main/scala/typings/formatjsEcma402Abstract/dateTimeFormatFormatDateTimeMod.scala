@@ -1,15 +1,15 @@
 package typings.formatjsEcma402Abstract
 
 import typings.std.Intl.DateTimeFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@formatjs/ecma402-abstract/DateTimeFormat/FormatDateTime", JSImport.Namespace)
-@js.native
-object dateTimeFormatFormatDateTimeMod extends js.Object {
+object dateTimeFormatFormatDateTimeMod {
   
-  @JSName("FormatDateTime")
+  @JSImport("@formatjs/ecma402-abstract/DateTimeFormat/FormatDateTime", "FormatDateTime")
+  @js.native
   def FormatDateTime_2(
     dtf: DateTimeFormat,
     x: Double,

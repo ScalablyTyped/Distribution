@@ -1,41 +1,36 @@
 package typings.materialMenu
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/menu/constants", JSImport.Namespace)
-@js.native
-object constantsMod extends js.Object {
+object constantsMod {
   
   @js.native
-  sealed trait DefaultFocusState extends js.Object
+  sealed trait DefaultFocusState extends StObject
+  @JSImport("@material/menu/constants", "DefaultFocusState")
   @js.native
-  object DefaultFocusState extends js.Object {
+  object DefaultFocusState extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[DefaultFocusState with Double] = js.native
     
     @js.native
     sealed trait FIRST_ITEM extends DefaultFocusState
-    /* 2 */ @js.native
-    object FIRST_ITEM extends TopLevel[FIRST_ITEM with Double]
+    /* 2 */ val FIRST_ITEM: typings.materialMenu.constantsMod.DefaultFocusState.FIRST_ITEM with Double = js.native
     
     @js.native
     sealed trait LAST_ITEM extends DefaultFocusState
-    /* 3 */ @js.native
-    object LAST_ITEM extends TopLevel[LAST_ITEM with Double]
+    /* 3 */ val LAST_ITEM: typings.materialMenu.constantsMod.DefaultFocusState.LAST_ITEM with Double = js.native
     
     @js.native
     sealed trait LIST_ROOT extends DefaultFocusState
-    /* 1 */ @js.native
-    object LIST_ROOT extends TopLevel[LIST_ROOT with Double]
+    /* 1 */ val LIST_ROOT: typings.materialMenu.constantsMod.DefaultFocusState.LIST_ROOT with Double = js.native
     
     @js.native
     sealed trait NONE extends DefaultFocusState
-    /* 0 */ @js.native
-    object NONE extends TopLevel[NONE with Double]
+    /* 0 */ val NONE: typings.materialMenu.constantsMod.DefaultFocusState.NONE with Double = js.native
   }
   
   /**
@@ -60,33 +55,78 @@ object constantsMod extends js.Object {
     * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     * THE SOFTWARE.
     */
-  @js.native
-  object cssClasses extends js.Object {
+  object cssClasses {
     
-    var MENU_SELECTED_LIST_ITEM: String = js.native
+    @JSImport("@material/menu/constants", "cssClasses")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var MENU_SELECTION_GROUP: String = js.native
+    @JSImport("@material/menu/constants", "cssClasses.MENU_SELECTED_LIST_ITEM")
+    @js.native
+    def MENU_SELECTED_LIST_ITEM: String = js.native
+    @scala.inline
+    def MENU_SELECTED_LIST_ITEM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MENU_SELECTED_LIST_ITEM")(x.asInstanceOf[js.Any])
     
-    var ROOT: String = js.native
+    @JSImport("@material/menu/constants", "cssClasses.MENU_SELECTION_GROUP")
+    @js.native
+    def MENU_SELECTION_GROUP: String = js.native
+    @scala.inline
+    def MENU_SELECTION_GROUP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MENU_SELECTION_GROUP")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/menu/constants", "cssClasses.ROOT")
+    @js.native
+    def ROOT: String = js.native
+    @scala.inline
+    def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object numbers extends js.Object {
+  object numbers {
     
-    var FOCUS_ROOT_INDEX: Double = js.native
+    @JSImport("@material/menu/constants", "numbers")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/menu/constants", "numbers.FOCUS_ROOT_INDEX")
+    @js.native
+    def FOCUS_ROOT_INDEX: Double = js.native
+    @scala.inline
+    def FOCUS_ROOT_INDEX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOCUS_ROOT_INDEX")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object strings extends js.Object {
+  object strings {
     
-    var ARIA_CHECKED_ATTR: String = js.native
+    @JSImport("@material/menu/constants", "strings")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var ARIA_DISABLED_ATTR: String = js.native
+    @JSImport("@material/menu/constants", "strings.ARIA_CHECKED_ATTR")
+    @js.native
+    def ARIA_CHECKED_ATTR: String = js.native
+    @scala.inline
+    def ARIA_CHECKED_ATTR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_CHECKED_ATTR")(x.asInstanceOf[js.Any])
     
-    var CHECKBOX_SELECTOR: String = js.native
+    @JSImport("@material/menu/constants", "strings.ARIA_DISABLED_ATTR")
+    @js.native
+    def ARIA_DISABLED_ATTR: String = js.native
+    @scala.inline
+    def ARIA_DISABLED_ATTR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_DISABLED_ATTR")(x.asInstanceOf[js.Any])
     
-    var LIST_SELECTOR: String = js.native
+    @JSImport("@material/menu/constants", "strings.CHECKBOX_SELECTOR")
+    @js.native
+    def CHECKBOX_SELECTOR: String = js.native
+    @scala.inline
+    def CHECKBOX_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHECKBOX_SELECTOR")(x.asInstanceOf[js.Any])
     
-    var SELECTED_EVENT: String = js.native
+    @JSImport("@material/menu/constants", "strings.LIST_SELECTOR")
+    @js.native
+    def LIST_SELECTOR: String = js.native
+    @scala.inline
+    def LIST_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIST_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/menu/constants", "strings.SELECTED_EVENT")
+    @js.native
+    def SELECTED_EVENT: String = js.native
+    @scala.inline
+    def SELECTED_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SELECTED_EVENT")(x.asInstanceOf[js.Any])
   }
 }

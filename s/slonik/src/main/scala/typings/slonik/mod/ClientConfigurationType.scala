@@ -1,12 +1,13 @@
 package typings.slonik.mod
 
 import typings.slonik.slonikStrings.DISABLE_TIMEOUT
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientConfigurationType extends js.Object {
+trait ClientConfigurationType extends StObject {
   
   /** Dictates whether to capture stack trace before executing query. Middlewares access stack trace through query execution context. (Default: true) */
   var captureStackTrace: js.UndefOr[Boolean] = js.native
@@ -51,84 +52,72 @@ object ClientConfigurationType {
   }
   
   @scala.inline
-  implicit class ClientConfigurationTypeOps[Self <: ClientConfigurationType] (val x: Self) extends AnyVal {
+  implicit class ClientConfigurationTypeMutableBuilder[Self <: ClientConfigurationType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaptureStackTrace(value: Boolean): Self = StObject.set(x, "captureStackTrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptureStackTraceUndefined: Self = StObject.set(x, "captureStackTrace", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionRetryLimit(value: Double): Self = StObject.set(x, "connectionRetryLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureStackTrace(value: Boolean): Self = this.set("captureStackTrace", value.asInstanceOf[js.Any])
+    def setConnectionRetryLimitUndefined: Self = StObject.set(x, "connectionRetryLimit", js.undefined)
     
     @scala.inline
-    def deleteCaptureStackTrace: Self = this.set("captureStackTrace", js.undefined)
+    def setConnectionTimeout(value: Double | DISABLE_TIMEOUT): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionRetryLimit(value: Double): Self = this.set("connectionRetryLimit", value.asInstanceOf[js.Any])
+    def setConnectionTimeoutUndefined: Self = StObject.set(x, "connectionTimeout", js.undefined)
     
     @scala.inline
-    def deleteConnectionRetryLimit: Self = this.set("connectionRetryLimit", js.undefined)
+    def setIdleInTransactionSessionTimeout(value: Double | DISABLE_TIMEOUT): Self = StObject.set(x, "idleInTransactionSessionTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionTimeout(value: Double | DISABLE_TIMEOUT): Self = this.set("connectionTimeout", value.asInstanceOf[js.Any])
+    def setIdleInTransactionSessionTimeoutUndefined: Self = StObject.set(x, "idleInTransactionSessionTimeout", js.undefined)
     
     @scala.inline
-    def deleteConnectionTimeout: Self = this.set("connectionTimeout", js.undefined)
+    def setIdleTimeout(value: Double): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdleInTransactionSessionTimeout(value: Double | DISABLE_TIMEOUT): Self = this.set("idleInTransactionSessionTimeout", value.asInstanceOf[js.Any])
+    def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
     
     @scala.inline
-    def deleteIdleInTransactionSessionTimeout: Self = this.set("idleInTransactionSessionTimeout", js.undefined)
+    def setInterceptors(value: js.Array[InterceptorType]): Self = StObject.set(x, "interceptors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdleTimeout(value: Double): Self = this.set("idleTimeout", value.asInstanceOf[js.Any])
+    def setInterceptorsUndefined: Self = StObject.set(x, "interceptors", js.undefined)
     
     @scala.inline
-    def deleteIdleTimeout: Self = this.set("idleTimeout", js.undefined)
+    def setInterceptorsVarargs(value: InterceptorType*): Self = StObject.set(x, "interceptors", js.Array(value :_*))
     
     @scala.inline
-    def setInterceptorsVarargs(value: InterceptorType*): Self = this.set("interceptors", js.Array(value :_*))
+    def setMaximumPoolSize(value: Double): Self = StObject.set(x, "maximumPoolSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterceptors(value: js.Array[InterceptorType]): Self = this.set("interceptors", value.asInstanceOf[js.Any])
+    def setMaximumPoolSizeUndefined: Self = StObject.set(x, "maximumPoolSize", js.undefined)
     
     @scala.inline
-    def deleteInterceptors: Self = this.set("interceptors", js.undefined)
+    def setPreferNativeBindings(value: Boolean): Self = StObject.set(x, "preferNativeBindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumPoolSize(value: Double): Self = this.set("maximumPoolSize", value.asInstanceOf[js.Any])
+    def setPreferNativeBindingsUndefined: Self = StObject.set(x, "preferNativeBindings", js.undefined)
     
     @scala.inline
-    def deleteMaximumPoolSize: Self = this.set("maximumPoolSize", js.undefined)
+    def setStatementTimeout(value: Double | DISABLE_TIMEOUT): Self = StObject.set(x, "statementTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferNativeBindings(value: Boolean): Self = this.set("preferNativeBindings", value.asInstanceOf[js.Any])
+    def setStatementTimeoutUndefined: Self = StObject.set(x, "statementTimeout", js.undefined)
     
     @scala.inline
-    def deletePreferNativeBindings: Self = this.set("preferNativeBindings", js.undefined)
+    def setTypeParsers(value: js.Array[TypeParserType[_]]): Self = StObject.set(x, "typeParsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatementTimeout(value: Double | DISABLE_TIMEOUT): Self = this.set("statementTimeout", value.asInstanceOf[js.Any])
+    def setTypeParsersUndefined: Self = StObject.set(x, "typeParsers", js.undefined)
     
     @scala.inline
-    def deleteStatementTimeout: Self = this.set("statementTimeout", js.undefined)
-    
-    @scala.inline
-    def setTypeParsersVarargs(value: TypeParserType[js.Any]*): Self = this.set("typeParsers", js.Array(value :_*))
-    
-    @scala.inline
-    def setTypeParsers(value: js.Array[TypeParserType[_]]): Self = this.set("typeParsers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeParsers: Self = this.set("typeParsers", js.undefined)
+    def setTypeParsersVarargs(value: TypeParserType[js.Any]*): Self = StObject.set(x, "typeParsers", js.Array(value :_*))
   }
 }

@@ -2,6 +2,7 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.jquery.JQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,42 +28,30 @@ object DialogButtonOptions {
   }
   
   @scala.inline
-  implicit class DialogButtonOptionsOps[Self <: DialogButtonOptions] (val x: Self) extends AnyVal {
+  implicit class DialogButtonOptionsMutableBuilder[Self <: DialogButtonOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: /* eventObject */ JQueryEventObject => _): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIcons(value: js.Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: /* eventObject */ JQueryEventObject => _): Self = this.set("click", js.Any.fromFunction1(value))
+    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def deleteClick: Self = this.set("click", js.undefined)
+    def setShowText(value: String | Boolean): Self = StObject.set(x, "showText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcons(value: js.Any): Self = this.set("icons", value.asInstanceOf[js.Any])
+    def setShowTextUndefined: Self = StObject.set(x, "showText", js.undefined)
     
     @scala.inline
-    def deleteIcons: Self = this.set("icons", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowText(value: String | Boolean): Self = this.set("showText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowText: Self = this.set("showText", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

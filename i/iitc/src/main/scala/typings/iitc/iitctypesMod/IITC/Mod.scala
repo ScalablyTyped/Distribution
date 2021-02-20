@@ -1,12 +1,13 @@
 package typings.iitc.iitctypesMod.IITC
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mod extends js.Object {
+trait Mod extends StObject {
   
   var name: String = js.native
   
@@ -25,30 +26,18 @@ object Mod {
   }
   
   @scala.inline
-  implicit class ModOps[Self <: Mod] (val x: Self) extends AnyVal {
+  implicit class ModMutableBuilder[Self <: Mod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRarity(value: ModRarity): Self = StObject.set(x, "rarity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRarity(value: ModRarity): Self = this.set("rarity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStats(value: StringDictionary[String]): Self = this.set("stats", value.asInstanceOf[js.Any])
+    def setStats(value: StringDictionary[String]): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }
 }

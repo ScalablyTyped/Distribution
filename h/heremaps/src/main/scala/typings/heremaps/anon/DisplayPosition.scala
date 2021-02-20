@@ -1,11 +1,12 @@
 package typings.heremaps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisplayPosition extends js.Object {
+trait DisplayPosition extends StObject {
   
   var Address: AdditionalData = js.native
   
@@ -35,39 +36,27 @@ object DisplayPosition {
   }
   
   @scala.inline
-  implicit class DisplayPositionOps[Self <: DisplayPosition] (val x: Self) extends AnyVal {
+  implicit class DisplayPositionMutableBuilder[Self <: DisplayPosition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: AdditionalData): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayPosition(value: Longitude): Self = StObject.set(x, "DisplayPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocationId(value: String): Self = StObject.set(x, "LocationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: AdditionalData): Self = this.set("Address", value.asInstanceOf[js.Any])
+    def setLocationType(value: String): Self = StObject.set(x, "LocationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayPosition(value: Longitude): Self = this.set("DisplayPosition", value.asInstanceOf[js.Any])
+    def setMapView(value: BottomRight): Self = StObject.set(x, "MapView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationId(value: String): Self = this.set("LocationId", value.asInstanceOf[js.Any])
+    def setNavigationPosition(value: js.Array[Longitude]): Self = StObject.set(x, "NavigationPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationType(value: String): Self = this.set("LocationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMapView(value: BottomRight): Self = this.set("MapView", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNavigationPositionVarargs(value: Longitude*): Self = this.set("NavigationPosition", js.Array(value :_*))
-    
-    @scala.inline
-    def setNavigationPosition(value: js.Array[Longitude]): Self = this.set("NavigationPosition", value.asInstanceOf[js.Any])
+    def setNavigationPositionVarargs(value: Longitude*): Self = StObject.set(x, "NavigationPosition", js.Array(value :_*))
   }
 }

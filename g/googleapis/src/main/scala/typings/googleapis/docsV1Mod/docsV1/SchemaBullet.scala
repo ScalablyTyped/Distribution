@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Describes the bullet of a paragraph.
   */
 @js.native
-trait SchemaBullet extends js.Object {
+trait SchemaBullet extends StObject {
   
   /**
     * The ID of the list this paragraph belongs to.
@@ -34,36 +35,24 @@ object SchemaBullet {
   }
   
   @scala.inline
-  implicit class SchemaBulletOps[Self <: SchemaBullet] (val x: Self) extends AnyVal {
+  implicit class SchemaBulletMutableBuilder[Self <: SchemaBullet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNestingLevel(value: Double): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListId(value: String): Self = this.set("listId", value.asInstanceOf[js.Any])
+    def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)
     
     @scala.inline
-    def deleteListId: Self = this.set("listId", js.undefined)
+    def setTextStyle(value: SchemaTextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNestingLevel(value: Double): Self = this.set("nestingLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNestingLevel: Self = this.set("nestingLevel", js.undefined)
-    
-    @scala.inline
-    def setTextStyle(value: SchemaTextStyle): Self = this.set("textStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
   }
 }

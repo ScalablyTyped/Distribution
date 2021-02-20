@@ -1,12 +1,13 @@
 package typings.pixiSpine.PIXI.spine.core
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkeletonBinary extends js.Object {
+trait SkeletonBinary extends StObject {
   
   var attachmentLoader: AttachmentLoader = js.native
   
@@ -54,54 +55,42 @@ object SkeletonBinary {
   }
   
   @scala.inline
-  implicit class SkeletonBinaryOps[Self <: SkeletonBinary] (val x: Self) extends AnyVal {
+  implicit class SkeletonBinaryMutableBuilder[Self <: SkeletonBinary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachmentLoader(value: AttachmentLoader): Self = StObject.set(x, "attachmentLoader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLinkedMeshes(value: js.Any): Self = StObject.set(x, "linkedMeshes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadAnimation(value: js.Any): Self = StObject.set(x, "readAnimation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentLoader(value: AttachmentLoader): Self = this.set("attachmentLoader", value.asInstanceOf[js.Any])
+    def setReadAttachment(value: js.Any): Self = StObject.set(x, "readAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedMeshes(value: js.Any): Self = this.set("linkedMeshes", value.asInstanceOf[js.Any])
+    def setReadCurve(value: js.Any): Self = StObject.set(x, "readCurve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadAnimation(value: js.Any): Self = this.set("readAnimation", value.asInstanceOf[js.Any])
+    def setReadFloatArray(value: js.Any): Self = StObject.set(x, "readFloatArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadAttachment(value: js.Any): Self = this.set("readAttachment", value.asInstanceOf[js.Any])
+    def setReadShortArray(value: js.Any): Self = StObject.set(x, "readShortArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadCurve(value: js.Any): Self = this.set("readCurve", value.asInstanceOf[js.Any])
+    def setReadSkeletonData(value: Uint8Array => SkeletonData): Self = StObject.set(x, "readSkeletonData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReadFloatArray(value: js.Any): Self = this.set("readFloatArray", value.asInstanceOf[js.Any])
+    def setReadSkin(value: js.Any): Self = StObject.set(x, "readSkin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadShortArray(value: js.Any): Self = this.set("readShortArray", value.asInstanceOf[js.Any])
+    def setReadVertices(value: js.Any): Self = StObject.set(x, "readVertices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadSkeletonData(value: Uint8Array => SkeletonData): Self = this.set("readSkeletonData", js.Any.fromFunction1(value))
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadSkin(value: js.Any): Self = this.set("readSkin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadVertices(value: js.Any): Self = this.set("readVertices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetCurve(value: (CurveTimeline, Double, Double, Double, Double, Double) => Unit): Self = this.set("setCurve", js.Any.fromFunction6(value))
+    def setSetCurve(value: (CurveTimeline, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setCurve", js.Any.fromFunction6(value))
   }
 }

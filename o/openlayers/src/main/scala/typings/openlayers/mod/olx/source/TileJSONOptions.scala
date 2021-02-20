@@ -4,12 +4,13 @@ import typings.openlayers.mod.Attribution
 import typings.openlayers.mod.AttributionLike
 import typings.openlayers.mod.Tile
 import typings.openlayers.mod.TileLoadFunctionType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TileJSONOptions extends js.Object {
+trait TileJSONOptions extends StObject {
   
   var attributions: js.UndefOr[AttributionLike] = js.native
   
@@ -38,72 +39,60 @@ object TileJSONOptions {
   }
   
   @scala.inline
-  implicit class TileJSONOptionsOps[Self <: TileJSONOptions] (val x: Self) extends AnyVal {
+  implicit class TileJSONOptionsMutableBuilder[Self <: TileJSONOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value :_*))
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributionsVarargs(value: (Attribution | String)*): Self = this.set("attributions", js.Array(value :_*))
+    def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
     
     @scala.inline
-    def setAttributions(value: AttributionLike): Self = this.set("attributions", value.asInstanceOf[js.Any])
+    def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributions: Self = this.set("attributions", js.undefined)
+    def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
     @scala.inline
-    def setCacheSize(value: Double): Self = this.set("cacheSize", value.asInstanceOf[js.Any])
+    def setJsonp(value: Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCacheSize: Self = this.set("cacheSize", js.undefined)
+    def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
     
     @scala.inline
-    def setCrossOrigin(value: String): Self = this.set("crossOrigin", value.asInstanceOf[js.Any])
+    def setReprojectionErrorThreshold(value: Double): Self = StObject.set(x, "reprojectionErrorThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCrossOrigin: Self = this.set("crossOrigin", js.undefined)
+    def setReprojectionErrorThresholdUndefined: Self = StObject.set(x, "reprojectionErrorThreshold", js.undefined)
     
     @scala.inline
-    def setJsonp(value: Boolean): Self = this.set("jsonp", value.asInstanceOf[js.Any])
+    def setTileLoadFunction(value: (/* tile */ Tile, /* url */ String) => Unit): Self = StObject.set(x, "tileLoadFunction", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteJsonp: Self = this.set("jsonp", js.undefined)
+    def setTileLoadFunctionUndefined: Self = StObject.set(x, "tileLoadFunction", js.undefined)
     
     @scala.inline
-    def setReprojectionErrorThreshold(value: Double): Self = this.set("reprojectionErrorThreshold", value.asInstanceOf[js.Any])
+    def setTransition(value: Double): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReprojectionErrorThreshold: Self = this.set("reprojectionErrorThreshold", js.undefined)
+    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
     @scala.inline
-    def setTileLoadFunction(value: (/* tile */ Tile, /* url */ String) => Unit): Self = this.set("tileLoadFunction", js.Any.fromFunction2(value))
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTileLoadFunction: Self = this.set("tileLoadFunction", js.undefined)
+    def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransition(value: Double): Self = this.set("transition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransition: Self = this.set("transition", js.undefined)
-    
-    @scala.inline
-    def setWrapX(value: Boolean): Self = this.set("wrapX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapX: Self = this.set("wrapX", js.undefined)
+    def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
   }
 }

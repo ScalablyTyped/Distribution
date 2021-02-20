@@ -3,6 +3,7 @@ package typings.officeUiFabricReact.mod
 import typings.officeUiFabricReact.anon.Compact
 import typings.officeUiFabricReact.groupedListBaseMod.IGroupedListState
 import typings.officeUiFabricReact.groupedListTypesMod.IGroupedListProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,11 +15,19 @@ class GroupedListBase protected ()
   def this(props: IGroupedListProps) = this()
 }
 /* static members */
-@JSImport("office-ui-fabric-react", "GroupedListBase")
-@js.native
-object GroupedListBase extends js.Object {
+object GroupedListBase {
   
-  var defaultProps: Compact = js.native
+  @JSImport("office-ui-fabric-react", "GroupedListBase")
+  @js.native
+  val ^ : js.Any = js.native
   
+  @JSImport("office-ui-fabric-react", "GroupedListBase.defaultProps")
+  @js.native
+  def defaultProps: Compact = js.native
+  @scala.inline
+  def defaultProps_=(x: Compact): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("office-ui-fabric-react", "GroupedListBase.getDerivedStateFromProps")
+  @js.native
   def getDerivedStateFromProps(nextProps: IGroupedListProps, previousState: IGroupedListState): IGroupedListState = js.native
 }

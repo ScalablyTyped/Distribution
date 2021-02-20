@@ -2,6 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,16 +36,11 @@ class ScreenSpaceCurvaturePostProcess protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.ScreenSpaceCurvaturePostProcess")
-@js.native
-object ScreenSpaceCurvaturePostProcess extends js.Object {
-  
-  /**
-    * Support test.
-    */
-  def IsSupported: Boolean = js.native
+object ScreenSpaceCurvaturePostProcess {
   
   /** @hidden */
+  @JSGlobal("BABYLON.ScreenSpaceCurvaturePostProcess._Parse")
+  @js.native
   def _Parse(
     parsedPostProcess: js.Any,
     targetCamera: typings.babylonjs.BABYLON.Camera,

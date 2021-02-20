@@ -2,6 +2,7 @@ package typings.iobroker.objectsMod.global.ioBroker
 
 import typings.iobroker.iobrokerStrings.JavascriptSlashNodeDotjs
 import typings.iobroker.iobrokerStrings.`js-controller`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ trait HostCommon extends ObjectCommon {
   /** An array of IP addresses this host exposes */
   var address: js.Array[String] = js.native
   
-   // e.g. 1.2.3 (following semver)
+  // e.g. 1.2.3 (following semver)
   /** The command line of the executable */
   var cmd: String = js.native
   
@@ -31,7 +32,7 @@ trait HostCommon extends ObjectCommon {
   
   var title: String = js.native
   
-   // IPv4 or IPv6
+  // IPv4 or IPv6
   var `type`: `js-controller` = js.native
 }
 object HostCommon {
@@ -53,45 +54,33 @@ object HostCommon {
   }
   
   @scala.inline
-  implicit class HostCommonOps[Self <: HostCommon] (val x: Self) extends AnyVal {
+  implicit class HostCommonMutableBuilder[Self <: HostCommon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: js.Array[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressVarargs(value: String*): Self = StObject.set(x, "address", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressVarargs(value: String*): Self = this.set("address", js.Array(value :_*))
+    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: js.Array[String]): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setInstalledVersion(value: String): Self = StObject.set(x, "installedVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmd(value: String): Self = this.set("cmd", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostname(value: String): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    def setPlatform(value: JavascriptSlashNodeDotjs): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstalledVersion(value: String): Self = this.set("installedVersion", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlatform(value: JavascriptSlashNodeDotjs): Self = this.set("platform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: `js-controller`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: `js-controller`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBluetoothDevicesSuccessCallbackResult extends js.Object {
+trait GetBluetoothDevicesSuccessCallbackResult extends StObject {
   
   /** uuid 对应的的已连接设备列表 */
   var devices: GetBluetoothDevicesSuccessCallbackResultBlueToothDevice = js.native
@@ -19,21 +20,9 @@ object GetBluetoothDevicesSuccessCallbackResult {
   }
   
   @scala.inline
-  implicit class GetBluetoothDevicesSuccessCallbackResultOps[Self <: GetBluetoothDevicesSuccessCallbackResult] (val x: Self) extends AnyVal {
+  implicit class GetBluetoothDevicesSuccessCallbackResultMutableBuilder[Self <: GetBluetoothDevicesSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDevices(value: GetBluetoothDevicesSuccessCallbackResultBlueToothDevice): Self = this.set("devices", value.asInstanceOf[js.Any])
+    def setDevices(value: GetBluetoothDevicesSuccessCallbackResultBlueToothDevice): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
   }
 }

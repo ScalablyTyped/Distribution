@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetWorkflowsRequest extends js.Object {
+trait BatchGetWorkflowsRequest extends StObject {
   
   /**
     * Specifies whether to include a graph when returning the workflow resource metadata.
@@ -26,30 +27,18 @@ object BatchGetWorkflowsRequest {
   }
   
   @scala.inline
-  implicit class BatchGetWorkflowsRequestOps[Self <: BatchGetWorkflowsRequest] (val x: Self) extends AnyVal {
+  implicit class BatchGetWorkflowsRequestMutableBuilder[Self <: BatchGetWorkflowsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeGraph(value: NullableBoolean): Self = StObject.set(x, "IncludeGraph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeGraphUndefined: Self = StObject.set(x, "IncludeGraph", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNames(value: WorkflowNames): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamesVarargs(value: NameString*): Self = this.set("Names", js.Array(value :_*))
-    
-    @scala.inline
-    def setNames(value: WorkflowNames): Self = this.set("Names", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeGraph(value: NullableBoolean): Self = this.set("IncludeGraph", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeGraph: Self = this.set("IncludeGraph", js.undefined)
+    def setNamesVarargs(value: NameString*): Self = StObject.set(x, "Names", js.Array(value :_*))
   }
 }

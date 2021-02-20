@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReadonlySet[T] extends js.Object {
+trait ReadonlySet[T] extends StObject {
   
   /**
     * Returns an iterable of [v,v] pairs for every value `v` in the set.

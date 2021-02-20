@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessible
 import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessibleContext
-import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessibleExtendedComponent
 import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessibleImage
 import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessibleRelationSet
 import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessibleStateSet
@@ -13,6 +12,7 @@ import typings.activexLibreoffice.com_.sun.star.awt.Size
 import typings.activexLibreoffice.com_.sun.star.awt.XFont
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,9 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait AccessibleGraphicShape
-  extends XAccessibleExtendedComponent
-     with XAccessible
-     with XAccessibleContext
+  extends AccessibleShape
      with XAccessibleImage
 object AccessibleGraphicShape {
   

@@ -2,12 +2,13 @@ package typings.d3pie.anon
 
 import typings.d3pie.d3pie.ID3PieLabelsOptions
 import typings.d3pie.d3pie.ID3PieStyleOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Formatter extends js.Object {
+trait Formatter extends StObject {
   
   var formatter: js.UndefOr[js.Function1[/* context */ Section, String]] = js.native
   
@@ -34,66 +35,54 @@ object Formatter {
   }
   
   @scala.inline
-  implicit class FormatterOps[Self <: Formatter] (val x: Self) extends AnyVal {
+  implicit class FormatterMutableBuilder[Self <: Formatter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormatter(value: /* context */ Section => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInner(value: ID3PieLabelsOptions): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatter(value: /* context */ Section => String): Self = this.set("formatter", js.Any.fromFunction1(value))
+    def setInnerUndefined: Self = StObject.set(x, "inner", js.undefined)
     
     @scala.inline
-    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    def setLines(value: Enabled): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInner(value: ID3PieLabelsOptions): Self = this.set("inner", value.asInstanceOf[js.Any])
+    def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
     @scala.inline
-    def deleteInner: Self = this.set("inner", js.undefined)
+    def setMainLabel(value: ID3PieStyleOptions): Self = StObject.set(x, "mainLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLines(value: Enabled): Self = this.set("lines", value.asInstanceOf[js.Any])
+    def setMainLabelUndefined: Self = StObject.set(x, "mainLabel", js.undefined)
     
     @scala.inline
-    def deleteLines: Self = this.set("lines", js.undefined)
+    def setOuter(value: pieDistancenumberundefine): Self = StObject.set(x, "outer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMainLabel(value: ID3PieStyleOptions): Self = this.set("mainLabel", value.asInstanceOf[js.Any])
+    def setOuterUndefined: Self = StObject.set(x, "outer", js.undefined)
     
     @scala.inline
-    def deleteMainLabel: Self = this.set("mainLabel", js.undefined)
+    def setPercentage(value: decimalPlacesnumberundefi): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOuter(value: pieDistancenumberundefine): Self = this.set("outer", value.asInstanceOf[js.Any])
+    def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
     
     @scala.inline
-    def deleteOuter: Self = this.set("outer", js.undefined)
+    def setTruncation(value: TruncateLength): Self = StObject.set(x, "truncation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentage(value: decimalPlacesnumberundefi): Self = this.set("percentage", value.asInstanceOf[js.Any])
+    def setTruncationUndefined: Self = StObject.set(x, "truncation", js.undefined)
     
     @scala.inline
-    def deletePercentage: Self = this.set("percentage", js.undefined)
+    def setValue(value: ID3PieStyleOptions): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTruncation(value: TruncateLength): Self = this.set("truncation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTruncation: Self = this.set("truncation", js.undefined)
-    
-    @scala.inline
-    def setValue(value: ID3PieStyleOptions): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

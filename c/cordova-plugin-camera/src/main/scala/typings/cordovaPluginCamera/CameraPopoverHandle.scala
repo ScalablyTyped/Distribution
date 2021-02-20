@@ -1,5 +1,6 @@
 package typings.cordovaPluginCamera
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A handle to the popover dialog created by navigator.camera.getPicture. Used on iOS only.
   */
 @js.native
-trait CameraPopoverHandle extends js.Object {
+trait CameraPopoverHandle extends StObject {
   
   /**
     * Set the position of the popover.
@@ -25,21 +26,9 @@ object CameraPopoverHandle {
   }
   
   @scala.inline
-  implicit class CameraPopoverHandleOps[Self <: CameraPopoverHandle] (val x: Self) extends AnyVal {
+  implicit class CameraPopoverHandleMutableBuilder[Self <: CameraPopoverHandle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetPosition(value: CameraPopoverOptions => Unit): Self = this.set("setPosition", js.Any.fromFunction1(value))
+    def setSetPosition(value: CameraPopoverOptions => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
   }
 }

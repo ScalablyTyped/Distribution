@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,45 +25,33 @@ object AadUserConversationMember {
   }
   
   @scala.inline
-  implicit class AadUserConversationMemberOps[Self <: AadUserConversationMember] (val x: Self) extends AnyVal {
+  implicit class AadUserConversationMemberMutableBuilder[Self <: AadUserConversationMember] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmail(value: NullableOption[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailNull: Self = StObject.set(x, "email", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def setEmail(value: NullableOption[String]): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setUser(value: NullableOption[User]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setUserId(value: NullableOption[String]): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailNull: Self = this.set("email", null)
+    def setUserIdNull: Self = StObject.set(x, "userId", null)
     
     @scala.inline
-    def setUser(value: NullableOption[User]): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     
     @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserNull: Self = StObject.set(x, "user", null)
     
     @scala.inline
-    def setUserNull: Self = this.set("user", null)
-    
-    @scala.inline
-    def setUserId(value: NullableOption[String]): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
-    
-    @scala.inline
-    def setUserIdNull: Self = this.set("userId", null)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

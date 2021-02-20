@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param data - The loaded GLB data.
   */
 @js.native
-trait ContainerResource extends js.Object {
+trait ContainerResource extends StObject {
   
   /**
     * Array of assets of animations in the GLB container.
@@ -38,36 +39,24 @@ object ContainerResource {
   }
   
   @scala.inline
-  implicit class ContainerResourceOps[Self <: ContainerResource] (val x: Self) extends AnyVal {
+  implicit class ContainerResourceMutableBuilder[Self <: ContainerResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimations(value: js.Array[Asset]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationsVarargs(value: Asset*): Self = StObject.set(x, "animations", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaterials(value: js.Array[Asset]): Self = StObject.set(x, "materials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationsVarargs(value: Asset*): Self = this.set("animations", js.Array(value :_*))
+    def setMaterialsVarargs(value: Asset*): Self = StObject.set(x, "materials", js.Array(value :_*))
     
     @scala.inline
-    def setAnimations(value: js.Array[Asset]): Self = this.set("animations", value.asInstanceOf[js.Any])
+    def setTextures(value: js.Array[Asset]): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaterialsVarargs(value: Asset*): Self = this.set("materials", js.Array(value :_*))
-    
-    @scala.inline
-    def setMaterials(value: js.Array[Asset]): Self = this.set("materials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTexturesVarargs(value: Asset*): Self = this.set("textures", js.Array(value :_*))
-    
-    @scala.inline
-    def setTextures(value: js.Array[Asset]): Self = this.set("textures", value.asInstanceOf[js.Any])
+    def setTexturesVarargs(value: Asset*): Self = StObject.set(x, "textures", js.Array(value :_*))
   }
 }

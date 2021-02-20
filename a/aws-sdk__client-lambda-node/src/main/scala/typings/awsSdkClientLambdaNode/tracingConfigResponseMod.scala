@@ -1,13 +1,13 @@
 package typings.awsSdkClientLambdaNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/model/_TracingConfigResponse", JSImport.Namespace)
-@js.native
-object tracingConfigResponseMod extends js.Object {
+object tracingConfigResponseMod {
   
-  @JSName("_TracingConfigResponse")
+  @JSImport("@aws-sdk/client-lambda-node/model/_TracingConfigResponse", "_TracingConfigResponse")
+  @js.native
   val TracingConfigResponse: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

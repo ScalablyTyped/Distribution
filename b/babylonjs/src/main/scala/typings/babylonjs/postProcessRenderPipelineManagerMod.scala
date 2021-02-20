@@ -2,20 +2,20 @@ package typings.babylonjs
 
 import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.postProcessRenderPipelineMod.PostProcessRenderPipeline
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/RenderPipeline/postProcessRenderPipelineManager", JSImport.Namespace)
-@js.native
-object postProcessRenderPipelineManagerMod extends js.Object {
+object postProcessRenderPipelineManagerMod {
   
+  @JSImport("babylonjs/PostProcesses/RenderPipeline/postProcessRenderPipelineManager", "PostProcessRenderPipelineManager")
   @js.native
   /**
     * Initializes a PostProcessRenderPipelineManager
     * @see https://doc.babylonjs.com/how_to/how_to_use_postprocessrenderpipeline
     */
-  class PostProcessRenderPipelineManager () extends js.Object {
+  class PostProcessRenderPipelineManager () extends StObject {
     
     /** @hidden */
     def _rebuild(): Unit = js.native

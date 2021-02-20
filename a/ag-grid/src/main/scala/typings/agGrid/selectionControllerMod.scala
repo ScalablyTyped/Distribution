@@ -1,16 +1,16 @@
 package typings.agGrid
 
 import typings.agGrid.rowNodeMod.RowNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/selectionController", JSImport.Namespace)
-@js.native
-object selectionControllerMod extends js.Object {
+object selectionControllerMod {
   
+  @JSImport("ag-grid/dist/lib/selectionController", "SelectionController")
   @js.native
-  class SelectionController () extends js.Object {
+  class SelectionController () extends StObject {
     
     def clearOtherNodes(rowNodeToKeepSelected: RowNode): Double = js.native
     

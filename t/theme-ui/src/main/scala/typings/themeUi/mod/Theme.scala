@@ -7,13 +7,14 @@ import typings.styledSystemCss.mod.SystemStyleObject
 import typings.themeUi.anon.ColorModemodeskstringColo
 import typings.themeUi.anon.PinStyledTagsSystemStyleO
 import typings.themeUi.themeUiNumbers.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent theme-ui.theme-ui.Omit<styled-system.styled-system.Theme<styled-system.styled-system.TLengthStyledSystem>, 'colors' | 'buttons'> */
 @js.native
-trait Theme extends js.Object {
+trait Theme extends StObject {
   
   /**
     * Alert variants can be defined in `theme.alerts`. The `Alert` component uses
@@ -328,34 +329,19 @@ object Theme {
   }
   
   @scala.inline
-  implicit class ThemeOps[Self <: Theme] (val x: Self) extends AnyVal {
+  implicit class ThemeMutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlerts(value: Record[String, SystemStyleObject]): Self = StObject.set(x, "alerts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlertsUndefined: Self = StObject.set(x, "alerts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBadges(value: Record[String, SystemStyleObject]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlerts(value: Record[String, SystemStyleObject]): Self = this.set("alerts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlerts: Self = this.set("alerts", js.undefined)
-    
-    @scala.inline
-    def setBadges(value: Record[String, SystemStyleObject]): Self = this.set("badges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBadges: Self = this.set("badges", js.undefined)
-    
-    @scala.inline
-    def setBorderStylesVarargs(value: js.Any*): Self = this.set("borderStyles", js.Array(value :_*))
+    def setBadgesUndefined: Self = StObject.set(x, "badges", js.undefined)
     
     @scala.inline
     def setBorderStyles(
@@ -363,13 +349,13 @@ object Theme {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ _, 
           /* keyof any */ String
         ]
-    ): Self = this.set("borderStyles", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderStyles: Self = this.set("borderStyles", js.undefined)
+    def setBorderStylesUndefined: Self = StObject.set(x, "borderStyles", js.undefined)
     
     @scala.inline
-    def setBorderWidthsVarargs(value: js.Any*): Self = this.set("borderWidths", js.Array(value :_*))
+    def setBorderStylesVarargs(value: js.Any*): Self = StObject.set(x, "borderStyles", js.Array(value :_*))
     
     @scala.inline
     def setBorderWidths(
@@ -377,13 +363,13 @@ object Theme {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLength> */ _, 
           /* keyof any */ String
         ]
-    ): Self = this.set("borderWidths", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderWidths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderWidths: Self = this.set("borderWidths", js.undefined)
+    def setBorderWidthsUndefined: Self = StObject.set(x, "borderWidths", js.undefined)
     
     @scala.inline
-    def setBordersVarargs(value: js.Any*): Self = this.set("borders", js.Array(value :_*))
+    def setBorderWidthsVarargs(value: js.Any*): Self = StObject.set(x, "borderWidths", js.Array(value :_*))
     
     @scala.inline
     def setBorders(
@@ -391,51 +377,51 @@ object Theme {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ _, 
           /* keyof any */ String
         ]
-    ): Self = this.set("borders", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorders: Self = this.set("borders", js.undefined)
+    def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
     
     @scala.inline
-    def setBreakpointsVarargs(value: (Double | String | js.Symbol)*): Self = this.set("breakpoints", js.Array(value :_*))
+    def setBordersVarargs(value: js.Any*): Self = StObject.set(x, "borders", js.Array(value :_*))
     
     @scala.inline
-    def setBreakpoints(value: typings.styledSystem.mod.ObjectOrArray[Double | String | js.Symbol, /* keyof any */ String]): Self = this.set("breakpoints", value.asInstanceOf[js.Any])
+    def setBreakpoints(value: typings.styledSystem.mod.ObjectOrArray[Double | String | js.Symbol, /* keyof any */ String]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBreakpoints: Self = this.set("breakpoints", js.undefined)
+    def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
     
     @scala.inline
-    def setButtons(value: Record[String, SystemStyleObject]): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    def setBreakpointsVarargs(value: (Double | String | js.Symbol)*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
     
     @scala.inline
-    def deleteButtons: Self = this.set("buttons", js.undefined)
+    def setButtons(value: Record[String, SystemStyleObject]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCards(value: Record[String, SystemStyleObject]): Self = this.set("cards", value.asInstanceOf[js.Any])
+    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
     @scala.inline
-    def deleteCards: Self = this.set("cards", js.undefined)
+    def setCards(value: Record[String, SystemStyleObject]): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorStylesVarargs(value: (StandardProperties[String | `0`])*): Self = this.set("colorStyles", js.Array(value :_*))
+    def setCardsUndefined: Self = StObject.set(x, "cards", js.undefined)
     
     @scala.inline
     def setColorStyles(
       value: typings.styledSystem.mod.ObjectOrArray[StandardProperties[String | `0`], /* keyof any */ String]
-    ): Self = this.set("colorStyles", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "colorStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColorStyles: Self = this.set("colorStyles", js.undefined)
+    def setColorStylesUndefined: Self = StObject.set(x, "colorStyles", js.undefined)
     
     @scala.inline
-    def setColors(value: ColorModemodeskstringColo): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setColorStylesVarargs(value: (StandardProperties[String | `0`])*): Self = StObject.set(x, "colorStyles", js.Array(value :_*))
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setColors(value: ColorModemodeskstringColo): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSizesVarargs(value: js.Any*): Self = this.set("fontSizes", js.Array(value :_*))
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
     def setFontSizes(
@@ -443,13 +429,13 @@ object Theme {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<number> */ _, 
           /* keyof any */ String
         ]
-    ): Self = this.set("fontSizes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontSizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontSizes: Self = this.set("fontSizes", js.undefined)
+    def setFontSizesUndefined: Self = StObject.set(x, "fontSizes", js.undefined)
     
     @scala.inline
-    def setFontWeightsVarargs(value: js.Any*): Self = this.set("fontWeights", js.Array(value :_*))
+    def setFontSizesVarargs(value: js.Any*): Self = StObject.set(x, "fontSizes", js.Array(value :_*))
     
     @scala.inline
     def setFontWeights(
@@ -457,13 +443,13 @@ object Theme {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ _, 
           /* keyof any */ String
         ]
-    ): Self = this.set("fontWeights", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fontWeights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontWeights: Self = this.set("fontWeights", js.undefined)
+    def setFontWeightsUndefined: Self = StObject.set(x, "fontWeights", js.undefined)
     
     @scala.inline
-    def setFontsVarargs(value: js.Any*): Self = this.set("fonts", js.Array(value :_*))
+    def setFontWeightsVarargs(value: js.Any*): Self = StObject.set(x, "fontWeights", js.Array(value :_*))
     
     @scala.inline
     def setFonts(
@@ -471,43 +457,43 @@ object Theme {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ _, 
           /* keyof any */ String
         ]
-    ): Self = this.set("fonts", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFonts: Self = this.set("fonts", js.undefined)
+    def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
     
     @scala.inline
-    def setForms(value: Record[String, SystemStyleObject]): Self = this.set("forms", value.asInstanceOf[js.Any])
+    def setFontsVarargs(value: js.Any*): Self = StObject.set(x, "fonts", js.Array(value :_*))
     
     @scala.inline
-    def deleteForms: Self = this.set("forms", js.undefined)
+    def setForms(value: Record[String, SystemStyleObject]): Self = StObject.set(x, "forms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrids(value: Record[String, SystemStyleObject]): Self = this.set("grids", value.asInstanceOf[js.Any])
+    def setFormsUndefined: Self = StObject.set(x, "forms", js.undefined)
     
     @scala.inline
-    def deleteGrids: Self = this.set("grids", js.undefined)
+    def setGrids(value: Record[String, SystemStyleObject]): Self = StObject.set(x, "grids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages(value: Record[String, SystemStyleObject]): Self = this.set("images", value.asInstanceOf[js.Any])
+    def setGridsUndefined: Self = StObject.set(x, "grids", js.undefined)
     
     @scala.inline
-    def deleteImages: Self = this.set("images", js.undefined)
+    def setImages(value: Record[String, SystemStyleObject]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialColorModeName(value: String): Self = this.set("initialColorModeName", value.asInstanceOf[js.Any])
+    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
     @scala.inline
-    def deleteInitialColorModeName: Self = this.set("initialColorModeName", js.undefined)
+    def setInitialColorModeName(value: String): Self = StObject.set(x, "initialColorModeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: Record[String, SystemStyleObject]): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setInitialColorModeNameUndefined: Self = StObject.set(x, "initialColorModeName", js.undefined)
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setLayout(value: Record[String, SystemStyleObject]): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLetterSpacingsVarargs(value: js.Any*): Self = this.set("letterSpacings", js.Array(value :_*))
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
     def setLetterSpacings(
@@ -515,13 +501,13 @@ object Theme {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ _, 
           /* keyof any */ String
         ]
-    ): Self = this.set("letterSpacings", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "letterSpacings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLetterSpacings: Self = this.set("letterSpacings", js.undefined)
+    def setLetterSpacingsUndefined: Self = StObject.set(x, "letterSpacings", js.undefined)
     
     @scala.inline
-    def setLineHeightsVarargs(value: js.Any*): Self = this.set("lineHeights", js.Array(value :_*))
+    def setLetterSpacingsVarargs(value: js.Any*): Self = StObject.set(x, "letterSpacings", js.Array(value :_*))
     
     @scala.inline
     def setLineHeights(
@@ -529,31 +515,31 @@ object Theme {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLength> */ _, 
           /* keyof any */ String
         ]
-    ): Self = this.set("lineHeights", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "lineHeights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineHeights: Self = this.set("lineHeights", js.undefined)
+    def setLineHeightsUndefined: Self = StObject.set(x, "lineHeights", js.undefined)
     
     @scala.inline
-    def setLinks(value: Record[String, SystemStyleObject]): Self = this.set("links", value.asInstanceOf[js.Any])
+    def setLineHeightsVarargs(value: js.Any*): Self = StObject.set(x, "lineHeights", js.Array(value :_*))
     
     @scala.inline
-    def deleteLinks: Self = this.set("links", js.undefined)
+    def setLinks(value: Record[String, SystemStyleObject]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaQueries(value: StringDictionary[String]): Self = this.set("mediaQueries", value.asInstanceOf[js.Any])
+    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
     @scala.inline
-    def deleteMediaQueries: Self = this.set("mediaQueries", js.undefined)
+    def setMediaQueries(value: StringDictionary[String]): Self = StObject.set(x, "mediaQueries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: Record[String, SystemStyleObject]): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setMediaQueriesUndefined: Self = StObject.set(x, "mediaQueries", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setMessages(value: Record[String, SystemStyleObject]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiiVarargs(value: js.Any*): Self = this.set("radii", js.Array(value :_*))
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
     def setRadii(
@@ -561,13 +547,13 @@ object Theme {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ _, 
           /* keyof any */ String
         ]
-    ): Self = this.set("radii", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "radii", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRadii: Self = this.set("radii", js.undefined)
+    def setRadiiUndefined: Self = StObject.set(x, "radii", js.undefined)
     
     @scala.inline
-    def setShadowsVarargs(value: js.Any*): Self = this.set("shadows", js.Array(value :_*))
+    def setRadiiVarargs(value: js.Any*): Self = StObject.set(x, "radii", js.Array(value :_*))
     
     @scala.inline
     def setShadows(
@@ -575,13 +561,13 @@ object Theme {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ _, 
           /* keyof any */ String
         ]
-    ): Self = this.set("shadows", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShadows: Self = this.set("shadows", js.undefined)
+    def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
     
     @scala.inline
-    def setSizesVarargs(value: js.Any*): Self = this.set("sizes", js.Array(value :_*))
+    def setShadowsVarargs(value: js.Any*): Self = StObject.set(x, "shadows", js.Array(value :_*))
     
     @scala.inline
     def setSizes(
@@ -589,13 +575,13 @@ object Theme {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<{}> */ _, 
           /* keyof any */ String
         ]
-    ): Self = this.set("sizes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSizes: Self = this.set("sizes", js.undefined)
+    def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
     
     @scala.inline
-    def setSpaceVarargs(value: js.Any*): Self = this.set("space", js.Array(value :_*))
+    def setSizesVarargs(value: js.Any*): Self = StObject.set(x, "sizes", js.Array(value :_*))
     
     @scala.inline
     def setSpace(
@@ -603,66 +589,66 @@ object Theme {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Margin<number | string> */ _, 
           /* keyof any */ String
         ]
-    ): Self = this.set("space", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpace: Self = this.set("space", js.undefined)
+    def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     
     @scala.inline
-    def setStyles(value: PinStyledTagsSystemStyleO): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setSpaceVarargs(value: js.Any*): Self = StObject.set(x, "space", js.Array(value :_*))
     
     @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setStyles(value: PinStyledTagsSystemStyleO): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: Record[String, SystemStyleObject]): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setTextStylesVarargs(value: (StandardProperties[String | `0`])*): Self = this.set("textStyles", js.Array(value :_*))
+    def setText(value: Record[String, SystemStyleObject]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTextStyles(
       value: typings.styledSystem.mod.ObjectOrArray[StandardProperties[String | `0`], /* keyof any */ String]
-    ): Self = this.set("textStyles", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextStyles: Self = this.set("textStyles", js.undefined)
+    def setTextStylesUndefined: Self = StObject.set(x, "textStyles", js.undefined)
     
     @scala.inline
-    def setUseBodyStyles(value: Boolean): Self = this.set("useBodyStyles", value.asInstanceOf[js.Any])
+    def setTextStylesVarargs(value: (StandardProperties[String | `0`])*): Self = StObject.set(x, "textStyles", js.Array(value :_*))
     
     @scala.inline
-    def deleteUseBodyStyles: Self = this.set("useBodyStyles", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def setUseBorderBox(value: Boolean): Self = this.set("useBorderBox", value.asInstanceOf[js.Any])
+    def setUseBodyStyles(value: Boolean): Self = StObject.set(x, "useBodyStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseBorderBox: Self = this.set("useBorderBox", js.undefined)
+    def setUseBodyStylesUndefined: Self = StObject.set(x, "useBodyStyles", js.undefined)
     
     @scala.inline
-    def setUseColorSchemeMediaQuery(value: Boolean): Self = this.set("useColorSchemeMediaQuery", value.asInstanceOf[js.Any])
+    def setUseBorderBox(value: Boolean): Self = StObject.set(x, "useBorderBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseColorSchemeMediaQuery: Self = this.set("useColorSchemeMediaQuery", js.undefined)
+    def setUseBorderBoxUndefined: Self = StObject.set(x, "useBorderBox", js.undefined)
     
     @scala.inline
-    def setUseCustomProperties(value: Boolean): Self = this.set("useCustomProperties", value.asInstanceOf[js.Any])
+    def setUseColorSchemeMediaQuery(value: Boolean): Self = StObject.set(x, "useColorSchemeMediaQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseCustomProperties: Self = this.set("useCustomProperties", js.undefined)
+    def setUseColorSchemeMediaQueryUndefined: Self = StObject.set(x, "useColorSchemeMediaQuery", js.undefined)
     
     @scala.inline
-    def setUseLocalStorage(value: Boolean): Self = this.set("useLocalStorage", value.asInstanceOf[js.Any])
+    def setUseCustomProperties(value: Boolean): Self = StObject.set(x, "useCustomProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseLocalStorage: Self = this.set("useLocalStorage", js.undefined)
+    def setUseCustomPropertiesUndefined: Self = StObject.set(x, "useCustomProperties", js.undefined)
     
     @scala.inline
-    def setZIndicesVarargs(value: js.Any*): Self = this.set("zIndices", js.Array(value :_*))
+    def setUseLocalStorage(value: Boolean): Self = StObject.set(x, "useLocalStorage", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUseLocalStorageUndefined: Self = StObject.set(x, "useLocalStorage", js.undefined)
     
     @scala.inline
     def setZIndices(
@@ -670,9 +656,12 @@ object Theme {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ _, 
           /* keyof any */ String
         ]
-    ): Self = this.set("zIndices", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "zIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteZIndices: Self = this.set("zIndices", js.undefined)
+    def setZIndicesUndefined: Self = StObject.set(x, "zIndices", js.undefined)
+    
+    @scala.inline
+    def setZIndicesVarargs(value: js.Any*): Self = StObject.set(x, "zIndices", js.Array(value :_*))
   }
 }

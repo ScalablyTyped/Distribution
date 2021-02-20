@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Graphics.Imaging
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains transformations that can be applied to pixel data. */
 @js.native
-trait BitmapTransform extends js.Object {
+trait BitmapTransform extends StObject {
   
   /** Specifies the bounding rectangle that is used to crop the bitmap. This rectangle is defined in the coordinate space after scale, rotation, and flip are applied. */
   var bounds: BitmapBounds = js.native
@@ -42,36 +43,24 @@ object BitmapTransform {
   }
   
   @scala.inline
-  implicit class BitmapTransformOps[Self <: BitmapTransform] (val x: Self) extends AnyVal {
+  implicit class BitmapTransformMutableBuilder[Self <: BitmapTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: BitmapBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlip(value: BitmapFlip): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInterpolationMode(value: BitmapInterpolationMode): Self = StObject.set(x, "interpolationMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounds(value: BitmapBounds): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setRotation(value: BitmapRotation): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlip(value: BitmapFlip): Self = this.set("flip", value.asInstanceOf[js.Any])
+    def setScaledHeight(value: Double): Self = StObject.set(x, "scaledHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterpolationMode(value: BitmapInterpolationMode): Self = this.set("interpolationMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRotation(value: BitmapRotation): Self = this.set("rotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScaledHeight(value: Double): Self = this.set("scaledHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScaledWidth(value: Double): Self = this.set("scaledWidth", value.asInstanceOf[js.Any])
+    def setScaledWidth(value: Double): Self = StObject.set(x, "scaledWidth", value.asInstanceOf[js.Any])
   }
 }

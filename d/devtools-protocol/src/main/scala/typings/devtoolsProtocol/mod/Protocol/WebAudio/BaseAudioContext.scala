@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.WebAudio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseAudioContext extends js.Object {
+trait BaseAudioContext extends StObject {
   
   /**
     * Platform-dependent callback buffer size.
@@ -46,42 +47,30 @@ object BaseAudioContext {
   }
   
   @scala.inline
-  implicit class BaseAudioContextOps[Self <: BaseAudioContext] (val x: Self) extends AnyVal {
+  implicit class BaseAudioContextMutableBuilder[Self <: BaseAudioContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallbackBufferSize(value: Double): Self = StObject.set(x, "callbackBufferSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextId(value: GraphObjectId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextState(value: ContextState): Self = StObject.set(x, "contextState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackBufferSize(value: Double): Self = this.set("callbackBufferSize", value.asInstanceOf[js.Any])
+    def setContextType(value: ContextType): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextId(value: GraphObjectId): Self = this.set("contextId", value.asInstanceOf[js.Any])
+    def setMaxOutputChannelCount(value: Double): Self = StObject.set(x, "maxOutputChannelCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextState(value: ContextState): Self = this.set("contextState", value.asInstanceOf[js.Any])
+    def setRealtimeData(value: ContextRealtimeData): Self = StObject.set(x, "realtimeData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextType(value: ContextType): Self = this.set("contextType", value.asInstanceOf[js.Any])
+    def setRealtimeDataUndefined: Self = StObject.set(x, "realtimeData", js.undefined)
     
     @scala.inline
-    def setMaxOutputChannelCount(value: Double): Self = this.set("maxOutputChannelCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSampleRate(value: Double): Self = this.set("sampleRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRealtimeData(value: ContextRealtimeData): Self = this.set("realtimeData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRealtimeData: Self = this.set("realtimeData", js.undefined)
+    def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
   }
 }

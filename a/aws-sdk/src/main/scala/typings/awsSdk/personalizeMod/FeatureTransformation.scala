@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureTransformation extends js.Object {
+trait FeatureTransformation extends StObject {
   
   /**
     * The creation date and time (in Unix time) of the feature transformation.
@@ -46,54 +47,42 @@ object FeatureTransformation {
   }
   
   @scala.inline
-  implicit class FeatureTransformationOps[Self <: FeatureTransformation] (val x: Self) extends AnyVal {
+  implicit class FeatureTransformationMutableBuilder[Self <: FeatureTransformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDateTime(value: Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationDateTimeUndefined: Self = StObject.set(x, "creationDateTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultParameters(value: FeaturizationParameters): Self = StObject.set(x, "defaultParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDateTime(value: Date): Self = this.set("creationDateTime", value.asInstanceOf[js.Any])
+    def setDefaultParametersUndefined: Self = StObject.set(x, "defaultParameters", js.undefined)
     
     @scala.inline
-    def deleteCreationDateTime: Self = this.set("creationDateTime", js.undefined)
+    def setFeatureTransformationArn(value: Arn): Self = StObject.set(x, "featureTransformationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultParameters(value: FeaturizationParameters): Self = this.set("defaultParameters", value.asInstanceOf[js.Any])
+    def setFeatureTransformationArnUndefined: Self = StObject.set(x, "featureTransformationArn", js.undefined)
     
     @scala.inline
-    def deleteDefaultParameters: Self = this.set("defaultParameters", js.undefined)
+    def setLastUpdatedDateTime(value: Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureTransformationArn(value: Arn): Self = this.set("featureTransformationArn", value.asInstanceOf[js.Any])
+    def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "lastUpdatedDateTime", js.undefined)
     
     @scala.inline
-    def deleteFeatureTransformationArn: Self = this.set("featureTransformationArn", js.undefined)
+    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedDateTime(value: Date): Self = this.set("lastUpdatedDateTime", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedDateTime: Self = this.set("lastUpdatedDateTime", js.undefined)
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.ethereumProtocol.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ethereumProtocol.ethereumProtocolStrings.nonpayable
   - typings.ethereumProtocol.ethereumProtocolStrings.payable
 */
-trait ConstructorStateMutability extends js.Object
+trait ConstructorStateMutability extends StObject
 object ConstructorStateMutability {
   
   @scala.inline

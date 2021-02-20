@@ -5,16 +5,21 @@ import typings.enhancedResolve.concordMod.Dictionary
 import typings.enhancedResolve.enhancedResolveBooleans.`true`
 import typings.node.NodeJS.ErrnoException
 import typings.node.NodeJS.Timer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("enhanced-resolve/lib/Storage", JSImport.Namespace)
-@js.native
-object storageMod extends js.Object {
+object storageMod {
+  
+  @JSImport("enhanced-resolve/lib/Storage", JSImport.Default)
+  @js.native
+  class default protected () extends Storage {
+    def this(duration: Double) = this()
+  }
   
   @js.native
-  trait Storage extends js.Object {
+  trait Storage extends StObject {
     
     def checkTicks(): Unit = js.native
     
@@ -55,10 +60,5 @@ object storageMod extends js.Object {
     var running: Dictionary[js.Array[js.Function]] = js.native
     
     def tick(): js.UndefOr[`true`] = js.native
-  }
-  
-  @js.native
-  class default protected () extends Storage {
-    def this(duration: Double) = this()
   }
 }

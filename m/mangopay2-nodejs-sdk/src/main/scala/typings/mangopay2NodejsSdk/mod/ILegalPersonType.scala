@@ -4,12 +4,13 @@ import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BUSINESS
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NotSpecified
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ORGANIZATION
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SOLETRADER
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILegalPersonType extends js.Object {
+trait ILegalPersonType extends StObject {
   
   var Business: BUSINESS = js.native
   
@@ -28,30 +29,18 @@ object ILegalPersonType {
   }
   
   @scala.inline
-  implicit class ILegalPersonTypeOps[Self <: ILegalPersonType] (val x: Self) extends AnyVal {
+  implicit class ILegalPersonTypeMutableBuilder[Self <: ILegalPersonType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBusiness(value: BUSINESS): Self = StObject.set(x, "Business", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotSpecified(value: NotSpecified): Self = StObject.set(x, "NotSpecified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrganization(value: ORGANIZATION): Self = StObject.set(x, "Organization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusiness(value: BUSINESS): Self = this.set("Business", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotSpecified(value: NotSpecified): Self = this.set("NotSpecified", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrganization(value: ORGANIZATION): Self = this.set("Organization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSoletrader(value: SOLETRADER): Self = this.set("Soletrader", value.asInstanceOf[js.Any])
+    def setSoletrader(value: SOLETRADER): Self = StObject.set(x, "Soletrader", value.asInstanceOf[js.Any])
   }
 }

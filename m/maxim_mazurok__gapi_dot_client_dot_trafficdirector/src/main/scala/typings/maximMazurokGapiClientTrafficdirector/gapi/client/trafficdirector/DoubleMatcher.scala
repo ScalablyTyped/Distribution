@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirector
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DoubleMatcher extends js.Object {
+trait DoubleMatcher extends StObject {
   
   /** If specified, the input double value must be equal to the value specified here. */
   var exact: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object DoubleMatcher {
   }
   
   @scala.inline
-  implicit class DoubleMatcherOps[Self <: DoubleMatcher] (val x: Self) extends AnyVal {
+  implicit class DoubleMatcherMutableBuilder[Self <: DoubleMatcher] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExact(value: Double): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRange(value: DoubleRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExact(value: Double): Self = this.set("exact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExact: Self = this.set("exact", js.undefined)
-    
-    @scala.inline
-    def setRange(value: DoubleRange): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

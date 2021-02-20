@@ -3,16 +3,18 @@ package typings.ionic
 import typings.ionic.anon.RequiredProjectIntegratio
 import typings.ionic.commandMod.Command
 import typings.ionic.definitionsMod.CommandInstanceInfo
+import typings.ionic.definitionsMod.INamespace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/commands/capacitor/base", JSImport.Namespace)
-@js.native
-object baseMod extends js.Object {
+object baseMod {
   
+  @JSImport("ionic/commands/capacitor/base", "CapacitorCommand")
   @js.native
-  abstract class CapacitorCommand () extends Command {
+  abstract class CapacitorCommand protected () extends Command {
+    def this(namespace: INamespace) = this()
     
     var _integration: js.Any = js.native
     

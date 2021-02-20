@@ -1,11 +1,12 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListMultipartUploadsOutput extends js.Object {
+trait ListMultipartUploadsOutput extends StObject {
   
   /**
     * An opaque string that represents where to continue pagination of the results. You use the marker in a new List Multipart Uploads request to obtain more uploads in the list. If there are no more uploads, this value is null.
@@ -26,33 +27,21 @@ object ListMultipartUploadsOutput {
   }
   
   @scala.inline
-  implicit class ListMultipartUploadsOutputOps[Self <: ListMultipartUploadsOutput] (val x: Self) extends AnyVal {
+  implicit class ListMultipartUploadsOutputMutableBuilder[Self <: ListMultipartUploadsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUploadsList(value: UploadsList): Self = StObject.set(x, "UploadsList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setUploadsListUndefined: Self = StObject.set(x, "UploadsList", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setUploadsListVarargs(value: UploadListElement*): Self = this.set("UploadsList", js.Array(value :_*))
-    
-    @scala.inline
-    def setUploadsList(value: UploadsList): Self = this.set("UploadsList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadsList: Self = this.set("UploadsList", js.undefined)
+    def setUploadsListVarargs(value: UploadListElement*): Self = StObject.set(x, "UploadsList", js.Array(value :_*))
   }
 }

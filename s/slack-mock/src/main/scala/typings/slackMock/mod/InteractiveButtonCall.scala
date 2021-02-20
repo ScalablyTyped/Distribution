@@ -1,12 +1,13 @@
 package typings.slackMock.mod
 
 import typings.nock.mod.ReplyHeaderValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InteractiveButtonCall[T] extends js.Object {
+trait InteractiveButtonCall[T] extends StObject {
   
   var headers: InteractiveButtonHttpHeaders = js.native
   
@@ -34,36 +35,24 @@ object InteractiveButtonCall {
   }
   
   @scala.inline
-  implicit class InteractiveButtonCallOps[Self <: InteractiveButtonCall[_], T] (val x: Self with InteractiveButtonCall[T]) extends AnyVal {
+  implicit class InteractiveButtonCallMutableBuilder[Self <: InteractiveButtonCall[_], T] (val x: Self with InteractiveButtonCall[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: InteractiveButtonHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadersVarargs(value: ReplyHeaderValue*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadersVarargs(value: ReplyHeaderValue*): Self = this.set("headers", js.Array(value :_*))
+    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: InteractiveButtonHttpHeaders): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setType(value: InteractiveButtonCallType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: T): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusCode(value: Double): Self = this.set("statusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: InteractiveButtonCallType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: InteractiveButtonUrl): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: InteractiveButtonUrl): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

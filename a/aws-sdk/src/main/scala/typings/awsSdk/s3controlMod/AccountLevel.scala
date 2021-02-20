@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountLevel extends js.Object {
+trait AccountLevel extends StObject {
   
   /**
     * A container for the S3 Storage Lens activity metrics.
@@ -26,27 +27,15 @@ object AccountLevel {
   }
   
   @scala.inline
-  implicit class AccountLevelOps[Self <: AccountLevel] (val x: Self) extends AnyVal {
+  implicit class AccountLevelMutableBuilder[Self <: AccountLevel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivityMetrics(value: ActivityMetrics): Self = StObject.set(x, "ActivityMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivityMetricsUndefined: Self = StObject.set(x, "ActivityMetrics", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBucketLevel(value: BucketLevel): Self = this.set("BucketLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setActivityMetrics(value: ActivityMetrics): Self = this.set("ActivityMetrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActivityMetrics: Self = this.set("ActivityMetrics", js.undefined)
+    def setBucketLevel(value: BucketLevel): Self = StObject.set(x, "BucketLevel", value.asInstanceOf[js.Any])
   }
 }

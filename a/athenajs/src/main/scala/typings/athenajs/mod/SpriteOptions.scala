@@ -1,5 +1,6 @@
 package typings.athenajs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,42 +25,30 @@ object SpriteOptions {
   }
   
   @scala.inline
-  implicit class SpriteOptionsOps[Self <: SpriteOptions] (val x: Self) extends AnyVal {
+  implicit class SpriteOptionsMutableBuilder[Self <: SpriteOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimations(value: Animations): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationsUndefined: Self = StObject.set(x, "animations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: JSObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimations(value: Animations): Self = this.set("animations", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteAnimations: Self = this.set("animations", js.undefined)
+    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: JSObject): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setImageId(value: String): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasing(value: String): Self = this.set("easing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEasing: Self = this.set("easing", js.undefined)
-    
-    @scala.inline
-    def setImageId(value: String): Self = this.set("imageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageId: Self = this.set("imageId", js.undefined)
+    def setImageIdUndefined: Self = StObject.set(x, "imageId", js.undefined)
   }
 }

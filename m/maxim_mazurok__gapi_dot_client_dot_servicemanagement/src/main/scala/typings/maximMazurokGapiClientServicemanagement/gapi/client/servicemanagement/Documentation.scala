@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Documentation extends js.Object {
+trait Documentation extends StObject {
   
   /** The URL to the root of documentation. */
   var documentationRootUrl: js.UndefOr[String] = js.native
@@ -40,60 +41,48 @@ object Documentation {
   }
   
   @scala.inline
-  implicit class DocumentationOps[Self <: Documentation] (val x: Self) extends AnyVal {
+  implicit class DocumentationMutableBuilder[Self <: Documentation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentationRootUrl(value: String): Self = StObject.set(x, "documentationRootUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentationRootUrlUndefined: Self = StObject.set(x, "documentationRootUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverview(value: String): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentationRootUrl(value: String): Self = this.set("documentationRootUrl", value.asInstanceOf[js.Any])
+    def setOverviewUndefined: Self = StObject.set(x, "overview", js.undefined)
     
     @scala.inline
-    def deleteDocumentationRootUrl: Self = this.set("documentationRootUrl", js.undefined)
+    def setPages(value: js.Array[Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverview(value: String): Self = this.set("overview", value.asInstanceOf[js.Any])
+    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
     @scala.inline
-    def deleteOverview: Self = this.set("overview", js.undefined)
+    def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value :_*))
     
     @scala.inline
-    def setPagesVarargs(value: Page*): Self = this.set("pages", js.Array(value :_*))
+    def setRules(value: js.Array[DocumentationRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPages(value: js.Array[Page]): Self = this.set("pages", value.asInstanceOf[js.Any])
+    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
     @scala.inline
-    def deletePages: Self = this.set("pages", js.undefined)
+    def setRulesVarargs(value: DocumentationRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
     
     @scala.inline
-    def setRulesVarargs(value: DocumentationRule*): Self = this.set("rules", js.Array(value :_*))
+    def setServiceRootUrl(value: String): Self = StObject.set(x, "serviceRootUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRules(value: js.Array[DocumentationRule]): Self = this.set("rules", value.asInstanceOf[js.Any])
+    def setServiceRootUrlUndefined: Self = StObject.set(x, "serviceRootUrl", js.undefined)
     
     @scala.inline
-    def deleteRules: Self = this.set("rules", js.undefined)
+    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceRootUrl(value: String): Self = this.set("serviceRootUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceRootUrl: Self = this.set("serviceRootUrl", js.undefined)
-    
-    @scala.inline
-    def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummary: Self = this.set("summary", js.undefined)
+    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

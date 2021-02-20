@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2CloudStorageRegexFileSet extends js.Object {
+trait GooglePrivacyDlpV2CloudStorageRegexFileSet extends StObject {
   
   /** The name of a Cloud Storage bucket. Required. */
   var bucketName: js.UndefOr[String] = js.native
@@ -32,42 +33,30 @@ object GooglePrivacyDlpV2CloudStorageRegexFileSet {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2CloudStorageRegexFileSetOps[Self <: GooglePrivacyDlpV2CloudStorageRegexFileSet] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2CloudStorageRegexFileSetMutableBuilder[Self <: GooglePrivacyDlpV2CloudStorageRegexFileSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludeRegex(value: js.Array[String]): Self = StObject.set(x, "excludeRegex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketName(value: String): Self = this.set("bucketName", value.asInstanceOf[js.Any])
+    def setExcludeRegexUndefined: Self = StObject.set(x, "excludeRegex", js.undefined)
     
     @scala.inline
-    def deleteBucketName: Self = this.set("bucketName", js.undefined)
+    def setExcludeRegexVarargs(value: String*): Self = StObject.set(x, "excludeRegex", js.Array(value :_*))
     
     @scala.inline
-    def setExcludeRegexVarargs(value: String*): Self = this.set("excludeRegex", js.Array(value :_*))
+    def setIncludeRegex(value: js.Array[String]): Self = StObject.set(x, "includeRegex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeRegex(value: js.Array[String]): Self = this.set("excludeRegex", value.asInstanceOf[js.Any])
+    def setIncludeRegexUndefined: Self = StObject.set(x, "includeRegex", js.undefined)
     
     @scala.inline
-    def deleteExcludeRegex: Self = this.set("excludeRegex", js.undefined)
-    
-    @scala.inline
-    def setIncludeRegexVarargs(value: String*): Self = this.set("includeRegex", js.Array(value :_*))
-    
-    @scala.inline
-    def setIncludeRegex(value: js.Array[String]): Self = this.set("includeRegex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeRegex: Self = this.set("includeRegex", js.undefined)
+    def setIncludeRegexVarargs(value: String*): Self = StObject.set(x, "includeRegex", js.Array(value :_*))
   }
 }

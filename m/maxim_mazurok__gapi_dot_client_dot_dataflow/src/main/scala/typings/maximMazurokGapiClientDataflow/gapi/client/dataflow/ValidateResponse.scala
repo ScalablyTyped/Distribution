@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidateResponse extends js.Object {
+trait ValidateResponse extends StObject {
   
   /** Will be empty if validation succeeds. */
   var errorMessage: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object ValidateResponse {
   }
   
   @scala.inline
-  implicit class ValidateResponseOps[Self <: ValidateResponse] (val x: Self) extends AnyVal {
+  implicit class ValidateResponseMutableBuilder[Self <: ValidateResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueryInfo(value: QueryInfo): Self = StObject.set(x, "queryInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
-    
-    @scala.inline
-    def setQueryInfo(value: QueryInfo): Self = this.set("queryInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryInfo: Self = this.set("queryInfo", js.undefined)
+    def setQueryInfoUndefined: Self = StObject.set(x, "queryInfo", js.undefined)
   }
 }

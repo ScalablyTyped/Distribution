@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientManagedidentities.gapi.client.managedidentities
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Trust extends js.Object {
+trait Trust extends StObject {
   
   /** Output only. The time the instance was created. */
   var createTime: js.UndefOr[String] = js.native
@@ -49,87 +50,75 @@ object Trust {
   }
   
   @scala.inline
-  implicit class TrustOps[Self <: Trust] (val x: Self) extends AnyVal {
+  implicit class TrustMutableBuilder[Self <: Trust] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastTrustHeartbeatTime(value: String): Self = StObject.set(x, "lastTrustHeartbeatTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setLastTrustHeartbeatTimeUndefined: Self = StObject.set(x, "lastTrustHeartbeatTime", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setSelectiveAuthentication(value: Boolean): Self = StObject.set(x, "selectiveAuthentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastTrustHeartbeatTime(value: String): Self = this.set("lastTrustHeartbeatTime", value.asInstanceOf[js.Any])
+    def setSelectiveAuthenticationUndefined: Self = StObject.set(x, "selectiveAuthentication", js.undefined)
     
     @scala.inline
-    def deleteLastTrustHeartbeatTime: Self = this.set("lastTrustHeartbeatTime", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectiveAuthentication(value: Boolean): Self = this.set("selectiveAuthentication", value.asInstanceOf[js.Any])
+    def setStateDescription(value: String): Self = StObject.set(x, "stateDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectiveAuthentication: Self = this.set("selectiveAuthentication", js.undefined)
+    def setStateDescriptionUndefined: Self = StObject.set(x, "stateDescription", js.undefined)
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setTargetDnsIpAddresses(value: js.Array[String]): Self = StObject.set(x, "targetDnsIpAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateDescription(value: String): Self = this.set("stateDescription", value.asInstanceOf[js.Any])
+    def setTargetDnsIpAddressesUndefined: Self = StObject.set(x, "targetDnsIpAddresses", js.undefined)
     
     @scala.inline
-    def deleteStateDescription: Self = this.set("stateDescription", js.undefined)
+    def setTargetDnsIpAddressesVarargs(value: String*): Self = StObject.set(x, "targetDnsIpAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setTargetDnsIpAddressesVarargs(value: String*): Self = this.set("targetDnsIpAddresses", js.Array(value :_*))
+    def setTargetDomainName(value: String): Self = StObject.set(x, "targetDomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetDnsIpAddresses(value: js.Array[String]): Self = this.set("targetDnsIpAddresses", value.asInstanceOf[js.Any])
+    def setTargetDomainNameUndefined: Self = StObject.set(x, "targetDomainName", js.undefined)
     
     @scala.inline
-    def deleteTargetDnsIpAddresses: Self = this.set("targetDnsIpAddresses", js.undefined)
+    def setTrustDirection(value: String): Self = StObject.set(x, "trustDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetDomainName(value: String): Self = this.set("targetDomainName", value.asInstanceOf[js.Any])
+    def setTrustDirectionUndefined: Self = StObject.set(x, "trustDirection", js.undefined)
     
     @scala.inline
-    def deleteTargetDomainName: Self = this.set("targetDomainName", js.undefined)
+    def setTrustHandshakeSecret(value: String): Self = StObject.set(x, "trustHandshakeSecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrustDirection(value: String): Self = this.set("trustDirection", value.asInstanceOf[js.Any])
+    def setTrustHandshakeSecretUndefined: Self = StObject.set(x, "trustHandshakeSecret", js.undefined)
     
     @scala.inline
-    def deleteTrustDirection: Self = this.set("trustDirection", js.undefined)
+    def setTrustType(value: String): Self = StObject.set(x, "trustType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrustHandshakeSecret(value: String): Self = this.set("trustHandshakeSecret", value.asInstanceOf[js.Any])
+    def setTrustTypeUndefined: Self = StObject.set(x, "trustType", js.undefined)
     
     @scala.inline
-    def deleteTrustHandshakeSecret: Self = this.set("trustHandshakeSecret", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrustType(value: String): Self = this.set("trustType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrustType: Self = this.set("trustType", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

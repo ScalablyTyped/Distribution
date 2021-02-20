@@ -1,11 +1,12 @@
 package typings.igniteUi.Infragistics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hierarchy extends js.Object {
+trait Hierarchy extends StObject {
   
   /**
     * Returns the unique name of the 'All' member for the hierarchy.
@@ -99,45 +100,33 @@ object Hierarchy {
   }
   
   @scala.inline
-  implicit class HierarchyOps[Self <: Hierarchy] (val x: Self) extends AnyVal {
+  implicit class HierarchyMutableBuilder[Self <: Hierarchy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllMember(value: js.Object => String): Self = StObject.set(x, "allMember", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultMember(value: js.Object => String): Self = StObject.set(x, "defaultMember", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAllMember(value: js.Object => String): Self = this.set("allMember", js.Any.fromFunction1(value))
+    def setDescription(value: js.Object => String): Self = StObject.set(x, "description", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCaption(value: js.Object => String): Self = this.set("caption", js.Any.fromFunction1(value))
+    def setDimensionUniqueName(value: js.Object => String): Self = StObject.set(x, "dimensionUniqueName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDefaultMember(value: js.Object => String): Self = this.set("defaultMember", js.Any.fromFunction1(value))
+    def setHierarchyDisplayFolder(value: js.Object => String): Self = StObject.set(x, "hierarchyDisplayFolder", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDescription(value: js.Object => String): Self = this.set("description", js.Any.fromFunction1(value))
+    def setHierarchyOrigin(value: js.Object => Double): Self = StObject.set(x, "hierarchyOrigin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDimensionUniqueName(value: js.Object => String): Self = this.set("dimensionUniqueName", js.Any.fromFunction1(value))
+    def setName(value: js.Object => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHierarchyDisplayFolder(value: js.Object => String): Self = this.set("hierarchyDisplayFolder", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHierarchyOrigin(value: js.Object => Double): Self = this.set("hierarchyOrigin", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setName(value: js.Object => String): Self = this.set("name", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUniqueName(value: js.Object => String): Self = this.set("uniqueName", js.Any.fromFunction1(value))
+    def setUniqueName(value: js.Object => String): Self = StObject.set(x, "uniqueName", js.Any.fromFunction1(value))
   }
 }

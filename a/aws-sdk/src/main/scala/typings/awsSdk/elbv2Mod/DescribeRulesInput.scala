@@ -1,11 +1,12 @@
 package typings.awsSdk.elbv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeRulesInput extends js.Object {
+trait DescribeRulesInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the listener.
@@ -36,45 +37,33 @@ object DescribeRulesInput {
   }
   
   @scala.inline
-  implicit class DescribeRulesInputOps[Self <: DescribeRulesInput] (val x: Self) extends AnyVal {
+  implicit class DescribeRulesInputMutableBuilder[Self <: DescribeRulesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setListenerArn(value: ListenerArn): Self = StObject.set(x, "ListenerArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setListenerArnUndefined: Self = StObject.set(x, "ListenerArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListenerArn(value: ListenerArn): Self = this.set("ListenerArn", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def deleteListenerArn: Self = this.set("ListenerArn", js.undefined)
+    def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setRuleArns(value: RuleArns): Self = StObject.set(x, "RuleArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: PageSize): Self = this.set("PageSize", value.asInstanceOf[js.Any])
+    def setRuleArnsUndefined: Self = StObject.set(x, "RuleArns", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("PageSize", js.undefined)
-    
-    @scala.inline
-    def setRuleArnsVarargs(value: RuleArn*): Self = this.set("RuleArns", js.Array(value :_*))
-    
-    @scala.inline
-    def setRuleArns(value: RuleArns): Self = this.set("RuleArns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleArns: Self = this.set("RuleArns", js.undefined)
+    def setRuleArnsVarargs(value: RuleArn*): Self = StObject.set(x, "RuleArns", js.Array(value :_*))
   }
 }

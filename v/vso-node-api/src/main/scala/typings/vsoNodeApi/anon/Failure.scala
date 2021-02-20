@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Failure extends js.Object {
+trait Failure extends StObject {
   
   var canceled: scala.Double = js.native
   
@@ -47,48 +48,36 @@ object Failure {
   }
   
   @scala.inline
-  implicit class FailureOps[Self <: Failure] (val x: Self) extends AnyVal {
+  implicit class FailureMutableBuilder[Self <: Failure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanceled(value: scala.Double): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailed(value: scala.Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailure(value: scala.Double): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanceled(value: scala.Double): Self = this.set("canceled", value.asInstanceOf[js.Any])
+    def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailed(value: scala.Double): Self = this.set("failed", value.asInstanceOf[js.Any])
+    def setPartiallySucceeded(value: scala.Double): Self = StObject.set(x, "partiallySucceeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailure(value: scala.Double): Self = this.set("failure", value.asInstanceOf[js.Any])
+    def setPending(value: scala.Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInProgress(value: scala.Double): Self = this.set("inProgress", value.asInstanceOf[js.Any])
+    def setSkipped(value: scala.Double): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartiallySucceeded(value: scala.Double): Self = this.set("partiallySucceeded", value.asInstanceOf[js.Any])
+    def setSucceeded(value: scala.Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPending(value: scala.Double): Self = this.set("pending", value.asInstanceOf[js.Any])
+    def setSuccess(value: scala.Double): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipped(value: scala.Double): Self = this.set("skipped", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSucceeded(value: scala.Double): Self = this.set("succeeded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccess(value: scala.Double): Self = this.set("success", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnknown(value: scala.Double): Self = this.set("unknown", value.asInstanceOf[js.Any])
+    def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
   }
 }

@@ -7,14 +7,14 @@ import typings.awsSdkClientPinpointBrowser.typesDeleteEventStreamInputMod.Delete
 import typings.awsSdkClientPinpointBrowser.typesDeleteEventStreamOutputMod.DeleteEventStreamOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/commands/DeleteEventStreamCommand", JSImport.Namespace)
-@js.native
-object deleteEventStreamCommandMod extends js.Object {
+object deleteEventStreamCommandMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/commands/DeleteEventStreamCommand", "DeleteEventStreamCommand")
   @js.native
   class DeleteEventStreamCommand protected () extends Command[
           InputTypesUnion, 

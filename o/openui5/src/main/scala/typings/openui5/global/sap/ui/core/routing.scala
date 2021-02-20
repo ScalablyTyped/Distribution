@@ -1,17 +1,18 @@
 package typings.openui5.global.sap.ui.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.core.routing")
-@js.native
-object routing extends js.Object {
+object routing {
   
+  @JSGlobal("sap.ui.core.routing.HashChanger")
   @js.native
   class HashChanger ()
     extends typings.openui5.sap.ui.core.routing.HashChanger
   
+  @JSGlobal("sap.ui.core.routing.History")
   @js.native
   class History protected ()
     extends typings.openui5.sap.ui.core.routing.History {
@@ -27,6 +28,7 @@ object routing extends js.Object {
     def this(oHashChanger: typings.openui5.sap.ui.core.routing.HashChanger) = this()
   }
   
+  @JSGlobal("sap.ui.core.routing.Route")
   @js.native
   class Route protected ()
     extends typings.openui5.sap.ui.core.routing.Route {
@@ -46,6 +48,7 @@ object routing extends js.Object {
     ) = this()
   }
   
+  @JSGlobal("sap.ui.core.routing.Router")
   @js.native
   class Router protected ()
     extends typings.openui5.sap.ui.core.routing.Router {
@@ -145,6 +148,7 @@ object routing extends js.Object {
     ) = this()
   }
   
+  @JSGlobal("sap.ui.core.routing.Target")
   @js.native
   class Target protected ()
     extends typings.openui5.sap.ui.core.routing.Target {
@@ -169,6 +173,7 @@ object routing extends js.Object {
     ) = this()
   }
   
+  @JSGlobal("sap.ui.core.routing.Targets")
   @js.native
   class Targets protected ()
     extends typings.openui5.sap.ui.core.routing.Targets {
@@ -182,6 +187,7 @@ object routing extends js.Object {
     def this(oOptions: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.core.routing.Views")
   @js.native
   class Views protected ()
     extends typings.openui5.sap.ui.core.routing.Views {
@@ -200,11 +206,11 @@ object routing extends js.Object {
   /**
     * Enumaration for different HistoryDirections
     */
-  @js.native
-  object routing extends js.Object {
+  object routing {
     
+    @JSGlobal("sap.ui.core.routing.routing.HistoryDirection")
     @js.native
-    object HistoryDirection extends js.Object {
+    object HistoryDirection extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.openui5.sap.ui.core.routing.routing.HistoryDirection with Double] = js.native

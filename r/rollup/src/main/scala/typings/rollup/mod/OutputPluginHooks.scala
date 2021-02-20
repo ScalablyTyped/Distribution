@@ -7,12 +7,13 @@ import typings.rollup.anon.Code
 import typings.rollup.anon.CustomResolution
 import typings.rollup.anon.Left
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutputPluginHooks extends js.Object {
+trait OutputPluginHooks extends StObject {
   
   def augmentChunkHash(chunk: PreRenderedChunk): String | Unit = js.native
   

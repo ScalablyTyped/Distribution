@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UsageCriteria extends js.Object {
+trait UsageCriteria extends StObject {
   
   /**
     * The account IDs to aggregate usage statistics from.
@@ -31,42 +32,30 @@ object UsageCriteria {
   }
   
   @scala.inline
-  implicit class UsageCriteriaOps[Self <: UsageCriteria] (val x: Self) extends AnyVal {
+  implicit class UsageCriteriaMutableBuilder[Self <: UsageCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountIds(value: AccountIds): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdsUndefined: Self = StObject.set(x, "AccountIds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
     
     @scala.inline
-    def setDataSourcesVarargs(value: DataSource*): Self = this.set("DataSources", js.Array(value :_*))
+    def setDataSources(value: DataSourceList): Self = StObject.set(x, "DataSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSources(value: DataSourceList): Self = this.set("DataSources", value.asInstanceOf[js.Any])
+    def setDataSourcesVarargs(value: DataSource*): Self = StObject.set(x, "DataSources", js.Array(value :_*))
     
     @scala.inline
-    def setAccountIdsVarargs(value: AccountId*): Self = this.set("AccountIds", js.Array(value :_*))
+    def setResources(value: ResourceList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountIds(value: AccountIds): Self = this.set("AccountIds", value.asInstanceOf[js.Any])
+    def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
     @scala.inline
-    def deleteAccountIds: Self = this.set("AccountIds", js.undefined)
-    
-    @scala.inline
-    def setResourcesVarargs(value: String*): Self = this.set("Resources", js.Array(value :_*))
-    
-    @scala.inline
-    def setResources(value: ResourceList): Self = this.set("Resources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResources: Self = this.set("Resources", js.undefined)
+    def setResourcesVarargs(value: String*): Self = StObject.set(x, "Resources", js.Array(value :_*))
   }
 }

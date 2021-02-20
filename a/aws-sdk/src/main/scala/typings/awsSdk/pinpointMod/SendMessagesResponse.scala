@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendMessagesResponse extends js.Object {
+trait SendMessagesResponse extends StObject {
   
   var MessageResponse: typings.awsSdk.pinpointMod.MessageResponse = js.native
 }
@@ -18,21 +19,9 @@ object SendMessagesResponse {
   }
   
   @scala.inline
-  implicit class SendMessagesResponseOps[Self <: SendMessagesResponse] (val x: Self) extends AnyVal {
+  implicit class SendMessagesResponseMutableBuilder[Self <: SendMessagesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMessageResponse(value: MessageResponse): Self = this.set("MessageResponse", value.asInstanceOf[js.Any])
+    def setMessageResponse(value: MessageResponse): Self = StObject.set(x, "MessageResponse", value.asInstanceOf[js.Any])
   }
 }

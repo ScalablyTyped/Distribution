@@ -1,5 +1,6 @@
 package typings.angularCore.r3SymbolsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NOTE: This is a private type and should not be exported
   */
 @js.native
-trait InjectorTypeWithProviders[T] extends js.Object {
+trait InjectorTypeWithProviders[T] extends StObject {
   
   var ngModule: InjectorType[T] = js.native
   
@@ -32,36 +33,24 @@ object InjectorTypeWithProviders {
   }
   
   @scala.inline
-  implicit class InjectorTypeWithProvidersOps[Self <: InjectorTypeWithProviders[_], T] (val x: Self with InjectorTypeWithProviders[T]) extends AnyVal {
+  implicit class InjectorTypeWithProvidersMutableBuilder[Self <: InjectorTypeWithProviders[_], T] (val x: Self with InjectorTypeWithProviders[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNgModule(value: InjectorType[T]): Self = this.set("ngModule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProvidersVarargs(
-      value: (Type[js.Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[js.Any])*
-    ): Self = this.set("providers", js.Array(value :_*))
+    def setNgModule(value: InjectorType[T]): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setProviders(
       value: js.Array[
           Type[_] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[_]
         ]
-    ): Self = this.set("providers", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProviders: Self = this.set("providers", js.undefined)
+    def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
+    
+    @scala.inline
+    def setProvidersVarargs(
+      value: (Type[js.Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[js.Any])*
+    ): Self = StObject.set(x, "providers", js.Array(value :_*))
   }
 }

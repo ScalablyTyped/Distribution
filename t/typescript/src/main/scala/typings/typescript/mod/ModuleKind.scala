@@ -1,57 +1,48 @@
 package typings.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ModuleKind extends js.Object
+sealed trait ModuleKind extends StObject
 @JSImport("typescript", "ModuleKind")
 @js.native
-object ModuleKind extends js.Object {
+object ModuleKind extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ModuleKind with Double] = js.native
   
   @js.native
   sealed trait AMD extends ModuleKind
-  /* 2 */ @js.native
-  object AMD extends TopLevel[AMD with Double]
+  /* 2 */ val AMD: typings.typescript.mod.ModuleKind.AMD with Double = js.native
   
   @js.native
   sealed trait CommonJS extends ModuleKind
-  /* 1 */ @js.native
-  object CommonJS extends TopLevel[CommonJS with Double]
+  /* 1 */ val CommonJS: typings.typescript.mod.ModuleKind.CommonJS with Double = js.native
   
   @js.native
   sealed trait ES2015 extends ModuleKind
-  /* 5 */ @js.native
-  object ES2015 extends TopLevel[ES2015 with Double]
+  /* 5 */ val ES2015: typings.typescript.mod.ModuleKind.ES2015 with Double = js.native
   
   @js.native
   sealed trait ES2020 extends ModuleKind
-  /* 6 */ @js.native
-  object ES2020 extends TopLevel[ES2020 with Double]
+  /* 6 */ val ES2020: typings.typescript.mod.ModuleKind.ES2020 with Double = js.native
   
   @js.native
   sealed trait ESNext extends ModuleKind
-  /* 99 */ @js.native
-  object ESNext extends TopLevel[ESNext with Double]
+  /* 99 */ val ESNext: typings.typescript.mod.ModuleKind.ESNext with Double = js.native
   
   @js.native
   sealed trait None extends ModuleKind
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  /* 0 */ val None: typings.typescript.mod.ModuleKind.None with Double = js.native
   
   @js.native
   sealed trait System extends ModuleKind
-  /* 4 */ @js.native
-  object System
-    extends TopLevel[typings.typescript.mod.ModuleKind.System with Double]
+  /* 4 */ val System: typings.typescript.mod.ModuleKind.System with Double = js.native
   
   @js.native
   sealed trait UMD extends ModuleKind
-  /* 3 */ @js.native
-  object UMD extends TopLevel[UMD with Double]
+  /* 3 */ val UMD: typings.typescript.mod.ModuleKind.UMD with Double = js.native
 }

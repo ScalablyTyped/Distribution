@@ -1,12 +1,13 @@
 package typings.puppeteer.mod
 
 import typings.puppeteer.puppeteerStrings.mixed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AXNode extends js.Object {
+trait AXNode extends StObject {
   
   /**
     * What kind of autocomplete is supported by a control.
@@ -174,99 +175,87 @@ object AXNode {
   }
   
   @scala.inline
-  implicit class AXNodeOps[Self <: AXNode] (val x: Self) extends AnyVal {
+  implicit class AXNodeMutableBuilder[Self <: AXNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutocomplete(value: String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChecked(value: Boolean | mixed): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildren(value: js.Array[AXNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutocomplete(value: String): Self = this.set("autocomplete", value.asInstanceOf[js.Any])
+    def setChildrenVarargs(value: AXNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setChecked(value: Boolean | mixed): Self = this.set("checked", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: AXNode*): Self = this.set("children", js.Array(value :_*))
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Array[AXNode]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setHaspopup(value: String): Self = StObject.set(x, "haspopup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpanded(value: Boolean): Self = this.set("expanded", value.asInstanceOf[js.Any])
+    def setInvalid(value: String): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocused(value: Boolean): Self = this.set("focused", value.asInstanceOf[js.Any])
+    def setKeyshortcuts(value: String): Self = StObject.set(x, "keyshortcuts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHaspopup(value: String): Self = this.set("haspopup", value.asInstanceOf[js.Any])
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalid(value: String): Self = this.set("invalid", value.asInstanceOf[js.Any])
+    def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyshortcuts(value: String): Self = this.set("keyshortcuts", value.asInstanceOf[js.Any])
+    def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setMultiselectable(value: Boolean): Self = StObject.set(x, "multiselectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModal(value: Boolean): Self = this.set("modal", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiline(value: Boolean): Self = this.set("multiline", value.asInstanceOf[js.Any])
+    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiselectable(value: Boolean): Self = this.set("multiselectable", value.asInstanceOf[js.Any])
+    def setPressed(value: Boolean | mixed): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPressed(value: Boolean | mixed): Self = this.set("pressed", value.asInstanceOf[js.Any])
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadonly(value: Boolean): Self = this.set("readonly", value.asInstanceOf[js.Any])
+    def setRoledescription(value: String): Self = StObject.set(x, "roledescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoledescription(value: String): Self = this.set("roledescription", value.asInstanceOf[js.Any])
+    def setValuemax(value: Double): Self = StObject.set(x, "valuemax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setValuemin(value: Double): Self = StObject.set(x, "valuemin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: String | Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuemax(value: Double): Self = this.set("valuemax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuemin(value: Double): Self = this.set("valuemin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuetext(value: String): Self = this.set("valuetext", value.asInstanceOf[js.Any])
+    def setValuetext(value: String): Self = StObject.set(x, "valuetext", value.asInstanceOf[js.Any])
   }
 }

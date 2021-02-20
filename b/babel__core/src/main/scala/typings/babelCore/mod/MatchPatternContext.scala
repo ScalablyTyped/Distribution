@@ -1,11 +1,12 @@
 package typings.babelCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MatchPatternContext extends js.Object {
+trait MatchPatternContext extends StObject {
   
   var caller: js.UndefOr[TransformCaller] = js.native
   
@@ -22,30 +23,18 @@ object MatchPatternContext {
   }
   
   @scala.inline
-  implicit class MatchPatternContextOps[Self <: MatchPatternContext] (val x: Self) extends AnyVal {
+  implicit class MatchPatternContextMutableBuilder[Self <: MatchPatternContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaller(value: TransformCaller): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallerUndefined: Self = StObject.set(x, "caller", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirname(value: String): Self = this.set("dirname", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnvName(value: String): Self = this.set("envName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCaller(value: TransformCaller): Self = this.set("caller", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCaller: Self = this.set("caller", js.undefined)
+    def setEnvName(value: String): Self = StObject.set(x, "envName", value.asInstanceOf[js.Any])
   }
 }

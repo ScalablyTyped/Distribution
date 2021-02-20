@@ -1,18 +1,17 @@
 package typings.sipJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/api/session-state", JSImport.Namespace)
-@js.native
-object sessionStateMod extends js.Object {
+object sessionStateMod {
   
   @js.native
-  sealed trait SessionState extends js.Object
+  sealed trait SessionState extends StObject
+  @JSImport("sip.js/lib/api/session-state", "SessionState")
   @js.native
-  object SessionState extends js.Object {
+  object SessionState extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[SessionState with String] = js.native
@@ -23,8 +22,7 @@ object sessionStateMod extends js.Object {
       */
     @js.native
     sealed trait Established extends SessionState
-    /* "Established" */ @js.native
-    object Established extends TopLevel[Established with String]
+    /* "Established" */ val Established: typings.sipJs.sessionStateMod.SessionState.Established with String = js.native
     
     /**
       * If `Inviter`, sent INVITE and waiting for a final response.
@@ -32,8 +30,7 @@ object sessionStateMod extends js.Object {
       */
     @js.native
     sealed trait Establishing extends SessionState
-    /* "Establishing" */ @js.native
-    object Establishing extends TopLevel[Establishing with String]
+    /* "Establishing" */ val Establishing: typings.sipJs.sessionStateMod.SessionState.Establishing with String = js.native
     
     /**
       * If `Inviter`, INVITE not sent yet.
@@ -41,8 +38,7 @@ object sessionStateMod extends js.Object {
       */
     @js.native
     sealed trait Initial extends SessionState
-    /* "Initial" */ @js.native
-    object Initial extends TopLevel[Initial with String]
+    /* "Initial" */ val Initial: typings.sipJs.sessionStateMod.SessionState.Initial with String = js.native
     
     /**
       * If `Inviter`, sent INVITE and received non-200 final response (or sent/received BYE after receiving 200).
@@ -50,8 +46,7 @@ object sessionStateMod extends js.Object {
       */
     @js.native
     sealed trait Terminated extends SessionState
-    /* "Terminated" */ @js.native
-    object Terminated extends TopLevel[Terminated with String]
+    /* "Terminated" */ val Terminated: typings.sipJs.sessionStateMod.SessionState.Terminated with String = js.native
     
     /**
       * If `Inviter`, sent INVITE, sent CANCEL and now waiting for 487 final response to ACK (or 200 to ACK & BYE).
@@ -60,7 +55,6 @@ object sessionStateMod extends js.Object {
       */
     @js.native
     sealed trait Terminating extends SessionState
-    /* "Terminating" */ @js.native
-    object Terminating extends TopLevel[Terminating with String]
+    /* "Terminating" */ val Terminating: typings.sipJs.sessionStateMod.SessionState.Terminating with String = js.native
   }
 }

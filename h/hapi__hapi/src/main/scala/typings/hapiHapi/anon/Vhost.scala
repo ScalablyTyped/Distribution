@@ -1,11 +1,12 @@
 package typings.hapiHapi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Vhost extends js.Object {
+trait Vhost extends StObject {
   
   /**
     * string added as prefix to any route path (must begin with '/'). If a plugin registers a child plugin the prefix is passed on to the child or is added in front of the child-specific prefix.
@@ -26,30 +27,18 @@ object Vhost {
   }
   
   @scala.inline
-  implicit class VhostOps[Self <: Vhost] (val x: Self) extends AnyVal {
+  implicit class VhostMutableBuilder[Self <: Vhost] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVhost(value: String | js.Array[String]): Self = StObject.set(x, "vhost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVhostUndefined: Self = StObject.set(x, "vhost", js.undefined)
     
     @scala.inline
-    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVhostVarargs(value: String*): Self = this.set("vhost", js.Array(value :_*))
-    
-    @scala.inline
-    def setVhost(value: String | js.Array[String]): Self = this.set("vhost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVhost: Self = this.set("vhost", js.undefined)
+    def setVhostVarargs(value: String*): Self = StObject.set(x, "vhost", js.Array(value :_*))
   }
 }

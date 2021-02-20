@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the barcode scanner data. */
 @js.native
-trait BarcodeScannerReport extends js.Object {
+trait BarcodeScannerReport extends StObject {
   
   /** Gets the full raw data from the DataReceived event. */
   var scanData: IBuffer = js.native
@@ -27,27 +28,15 @@ object BarcodeScannerReport {
   }
   
   @scala.inline
-  implicit class BarcodeScannerReportOps[Self <: BarcodeScannerReport] (val x: Self) extends AnyVal {
+  implicit class BarcodeScannerReportMutableBuilder[Self <: BarcodeScannerReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScanData(value: IBuffer): Self = StObject.set(x, "scanData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScanDataLabel(value: IBuffer): Self = StObject.set(x, "scanDataLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScanData(value: IBuffer): Self = this.set("scanData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScanDataLabel(value: IBuffer): Self = this.set("scanDataLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScanDataType(value: Double): Self = this.set("scanDataType", value.asInstanceOf[js.Any])
+    def setScanDataType(value: Double): Self = StObject.set(x, "scanDataType", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.atom.mod
 
 import typings.atom.anon.ReadonlyRange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("atom", "Range")
 @js.native
 /** Construct a Range object. */
-class Range () extends js.Object {
+class Range () extends StObject {
   def this(pointA: PointCompatible) = this()
   def this(pointA: js.UndefOr[PointCompatible], pointB: PointCompatible) = this()
   
@@ -117,15 +118,19 @@ class Range () extends js.Object {
   def union(other: RangeLike): Range = js.native
 }
 /* static members */
-@JSImport("atom", "Range")
-@js.native
-object Range extends js.Object {
+object Range {
   
   /** Call this with the result of Range::serialize to construct a new Range. */
+  @JSImport("atom", "Range.deserialize")
+  @js.native
   def deserialize(array: js.Object): Range = js.native
   
   // Construction
   /** Convert any range-compatible object to a Range. */
+  @JSImport("atom", "Range.fromObject")
+  @js.native
   def fromObject(`object`: RangeCompatible): Range = js.native
+  @JSImport("atom", "Range.fromObject")
+  @js.native
   def fromObject(`object`: RangeCompatible, copy: Boolean): Range = js.native
 }

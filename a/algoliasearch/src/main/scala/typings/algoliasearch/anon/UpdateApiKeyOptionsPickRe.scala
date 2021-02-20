@@ -1,13 +1,14 @@
 package typings.algoliasearch.anon
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @algolia/client-search.@algolia/client-search.UpdateApiKeyOptions & std.Pick<@algolia/transporter.@algolia/transporter.RequestOptions, std.Exclude<keyof @algolia/transporter.@algolia/transporter.RequestOptions, 'queryParameters'>> */
 @js.native
-trait UpdateApiKeyOptionsPickRe extends js.Object {
+trait UpdateApiKeyOptionsPickRe extends StObject {
   
   var cacheable: js.UndefOr[Boolean] = js.native
   
@@ -62,90 +63,78 @@ object UpdateApiKeyOptionsPickRe {
   }
   
   @scala.inline
-  implicit class UpdateApiKeyOptionsPickReOps[Self <: UpdateApiKeyOptionsPickRe] (val x: Self) extends AnyVal {
+  implicit class UpdateApiKeyOptionsPickReMutableBuilder[Self <: UpdateApiKeyOptionsPickRe] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheable(value: Boolean): Self = StObject.set(x, "cacheable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheableUndefined: Self = StObject.set(x, "cacheable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: Record[String, _]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheable(value: Boolean): Self = this.set("cacheable", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteCacheable: Self = this.set("cacheable", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: Record[String, _]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setIndexes(value: js.Array[String]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: Record[String, String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setIndexesVarargs(value: String*): Self = StObject.set(x, "indexes", js.Array(value :_*))
     
     @scala.inline
-    def setIndexesVarargs(value: String*): Self = this.set("indexes", js.Array(value :_*))
+    def setMaxHitsPerQuery(value: Double): Self = StObject.set(x, "maxHitsPerQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexes(value: js.Array[String]): Self = this.set("indexes", value.asInstanceOf[js.Any])
+    def setMaxHitsPerQueryUndefined: Self = StObject.set(x, "maxHitsPerQuery", js.undefined)
     
     @scala.inline
-    def deleteIndexes: Self = this.set("indexes", js.undefined)
+    def setMaxQueriesPerIPPerHour(value: Double): Self = StObject.set(x, "maxQueriesPerIPPerHour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHitsPerQuery(value: Double): Self = this.set("maxHitsPerQuery", value.asInstanceOf[js.Any])
+    def setMaxQueriesPerIPPerHourUndefined: Self = StObject.set(x, "maxQueriesPerIPPerHour", js.undefined)
     
     @scala.inline
-    def deleteMaxHitsPerQuery: Self = this.set("maxHitsPerQuery", js.undefined)
+    def setQueryParameters(value: String): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxQueriesPerIPPerHour(value: Double): Self = this.set("maxQueriesPerIPPerHour", value.asInstanceOf[js.Any])
+    def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
     
     @scala.inline
-    def deleteMaxQueriesPerIPPerHour: Self = this.set("maxQueriesPerIPPerHour", js.undefined)
+    def setReferers(value: js.Array[String]): Self = StObject.set(x, "referers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryParameters(value: String): Self = this.set("queryParameters", value.asInstanceOf[js.Any])
+    def setReferersUndefined: Self = StObject.set(x, "referers", js.undefined)
     
     @scala.inline
-    def deleteQueryParameters: Self = this.set("queryParameters", js.undefined)
+    def setReferersVarargs(value: String*): Self = StObject.set(x, "referers", js.Array(value :_*))
     
     @scala.inline
-    def setReferersVarargs(value: String*): Self = this.set("referers", js.Array(value :_*))
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferers(value: js.Array[String]): Self = this.set("referers", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteReferers: Self = this.set("referers", js.undefined)
+    def setValidity(value: Double): Self = StObject.set(x, "validity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setValidity(value: Double): Self = this.set("validity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidity: Self = this.set("validity", js.undefined)
+    def setValidityUndefined: Self = StObject.set(x, "validity", js.undefined)
   }
 }

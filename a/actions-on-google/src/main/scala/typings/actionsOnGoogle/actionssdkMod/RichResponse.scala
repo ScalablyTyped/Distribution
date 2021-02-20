@@ -2,6 +2,7 @@ package typings.actionsOnGoogle.actionssdkMod
 
 import typings.actionsOnGoogle.richMod.RichResponseItem
 import typings.actionsOnGoogle.richMod.RichResponseOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

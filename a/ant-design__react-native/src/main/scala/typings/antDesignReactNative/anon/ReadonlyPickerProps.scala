@@ -2,13 +2,14 @@ package typings.antDesignReactNative.anon
 
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<@ant-design/react-native.@ant-design/react-native/lib/picker/PickerTypes.PickerProps> */
 @js.native
-trait ReadonlyPickerProps extends js.Object {
+trait ReadonlyPickerProps extends StObject {
   
   val defaultSelectedValue: js.UndefOr[js.Any] = js.native
   
@@ -39,87 +40,75 @@ object ReadonlyPickerProps {
   }
   
   @scala.inline
-  implicit class ReadonlyPickerPropsOps[Self <: ReadonlyPickerProps] (val x: Self) extends AnyVal {
+  implicit class ReadonlyPickerPropsMutableBuilder[Self <: ReadonlyPickerProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultSelectedValue(value: js.Any): Self = StObject.set(x, "defaultSelectedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultSelectedValueUndefined: Self = StObject.set(x, "defaultSelectedValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSelectedValue(value: js.Any): Self = this.set("defaultSelectedValue", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDefaultSelectedValue: Self = this.set("defaultSelectedValue", js.undefined)
+    def setIndicatorClassName(value: String): Self = StObject.set(x, "indicatorClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setIndicatorClassNameUndefined: Self = StObject.set(x, "indicatorClassName", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setIndicatorStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "indicatorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicatorClassName(value: String): Self = this.set("indicatorClassName", value.asInstanceOf[js.Any])
+    def setIndicatorStyleNull: Self = StObject.set(x, "indicatorStyle", null)
     
     @scala.inline
-    def deleteIndicatorClassName: Self = this.set("indicatorClassName", js.undefined)
+    def setIndicatorStyleUndefined: Self = StObject.set(x, "indicatorStyle", js.undefined)
     
     @scala.inline
-    def setIndicatorStyle(value: StyleProp[ViewStyle]): Self = this.set("indicatorStyle", value.asInstanceOf[js.Any])
+    def setItemStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndicatorStyle: Self = this.set("indicatorStyle", js.undefined)
+    def setItemStyleNull: Self = StObject.set(x, "itemStyle", null)
     
     @scala.inline
-    def setIndicatorStyleNull: Self = this.set("indicatorStyle", null)
+    def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
     @scala.inline
-    def setItemStyle(value: StyleProp[ViewStyle]): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    def setNoAnimate(value: Boolean): Self = StObject.set(x, "noAnimate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    def setNoAnimateUndefined: Self = StObject.set(x, "noAnimate", js.undefined)
     
     @scala.inline
-    def setItemStyleNull: Self = this.set("itemStyle", null)
+    def setOnScrollChange(value: /* value */ js.Any => Unit): Self = StObject.set(x, "onScrollChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNoAnimate(value: Boolean): Self = this.set("noAnimate", value.asInstanceOf[js.Any])
+    def setOnScrollChangeUndefined: Self = StObject.set(x, "onScrollChange", js.undefined)
     
     @scala.inline
-    def deleteNoAnimate: Self = this.set("noAnimate", js.undefined)
+    def setOnValueChange(value: /* value */ js.Any => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnScrollChange(value: /* value */ js.Any => Unit): Self = this.set("onScrollChange", js.Any.fromFunction1(value))
+    def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
     
     @scala.inline
-    def deleteOnScrollChange: Self = this.set("onScrollChange", js.undefined)
+    def setSelectedValue(value: js.Any): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnValueChange(value: /* value */ js.Any => Unit): Self = this.set("onValueChange", js.Any.fromFunction1(value))
+    def setSelectedValueUndefined: Self = StObject.set(x, "selectedValue", js.undefined)
     
     @scala.inline
-    def deleteOnValueChange: Self = this.set("onValueChange", js.undefined)
+    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedValue(value: js.Any): Self = this.set("selectedValue", value.asInstanceOf[js.Any])
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def deleteSelectedValue: Self = this.set("selectedValue", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setStyleNull: Self = this.set("style", null)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

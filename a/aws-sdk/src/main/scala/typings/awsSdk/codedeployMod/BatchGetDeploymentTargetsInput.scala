@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetDeploymentTargetsInput extends js.Object {
+trait BatchGetDeploymentTargetsInput extends StObject {
   
   /**
     *  The unique ID of a deployment. 
@@ -26,33 +27,21 @@ object BatchGetDeploymentTargetsInput {
   }
   
   @scala.inline
-  implicit class BatchGetDeploymentTargetsInputOps[Self <: BatchGetDeploymentTargetsInput] (val x: Self) extends AnyVal {
+  implicit class BatchGetDeploymentTargetsInputMutableBuilder[Self <: BatchGetDeploymentTargetsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetIds(value: TargetIdList): Self = StObject.set(x, "targetIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentId(value: DeploymentId): Self = this.set("deploymentId", value.asInstanceOf[js.Any])
+    def setTargetIdsUndefined: Self = StObject.set(x, "targetIds", js.undefined)
     
     @scala.inline
-    def deleteDeploymentId: Self = this.set("deploymentId", js.undefined)
-    
-    @scala.inline
-    def setTargetIdsVarargs(value: TargetId*): Self = this.set("targetIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetIds(value: TargetIdList): Self = this.set("targetIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetIds: Self = this.set("targetIds", js.undefined)
+    def setTargetIdsVarargs(value: TargetId*): Self = StObject.set(x, "targetIds", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvelopeMetadata extends js.Object {
+trait EnvelopeMetadata extends StObject {
   
   /**
     * Specifies if the Advanced Correct feature is enabled for the envelope. This feature enables you to correct the details of in process envelopes that
@@ -33,36 +34,24 @@ object EnvelopeMetadata {
   }
   
   @scala.inline
-  implicit class EnvelopeMetadataOps[Self <: EnvelopeMetadata] (val x: Self) extends AnyVal {
+  implicit class EnvelopeMetadataMutableBuilder[Self <: EnvelopeMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowAdvancedCorrect(value: String): Self = StObject.set(x, "allowAdvancedCorrect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowAdvancedCorrectUndefined: Self = StObject.set(x, "allowAdvancedCorrect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowCorrect(value: String): Self = StObject.set(x, "allowCorrect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowAdvancedCorrect(value: String): Self = this.set("allowAdvancedCorrect", value.asInstanceOf[js.Any])
+    def setAllowCorrectUndefined: Self = StObject.set(x, "allowCorrect", js.undefined)
     
     @scala.inline
-    def deleteAllowAdvancedCorrect: Self = this.set("allowAdvancedCorrect", js.undefined)
+    def setEnableSignWithNotary(value: String): Self = StObject.set(x, "enableSignWithNotary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowCorrect(value: String): Self = this.set("allowCorrect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowCorrect: Self = this.set("allowCorrect", js.undefined)
-    
-    @scala.inline
-    def setEnableSignWithNotary(value: String): Self = this.set("enableSignWithNotary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableSignWithNotary: Self = this.set("enableSignWithNotary", js.undefined)
+    def setEnableSignWithNotaryUndefined: Self = StObject.set(x, "enableSignWithNotary", js.undefined)
   }
 }

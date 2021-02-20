@@ -1,11 +1,12 @@
 package typings.knuddelsUserappsApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NewKnuddelPayout extends js.Object {
+trait NewKnuddelPayout extends StObject {
   
   var newKnuddelPayout: js.UndefOr[Double] = js.native
   
@@ -26,39 +27,27 @@ object NewKnuddelPayout {
   }
   
   @scala.inline
-  implicit class NewKnuddelPayoutOps[Self <: NewKnuddelPayout] (val x: Self) extends AnyVal {
+  implicit class NewKnuddelPayoutMutableBuilder[Self <: NewKnuddelPayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewKnuddelPayout(value: Double): Self = StObject.set(x, "newKnuddelPayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewKnuddelPayoutUndefined: Self = StObject.set(x, "newKnuddelPayout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewPriceCents(value: Double): Self = StObject.set(x, "newPriceCents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigKnuddelPayout(value: Double): Self = this.set("origKnuddelPayout", value.asInstanceOf[js.Any])
+    def setNewPriceCentsUndefined: Self = StObject.set(x, "newPriceCents", js.undefined)
     
     @scala.inline
-    def setOrigPriceCents(value: Double): Self = this.set("origPriceCents", value.asInstanceOf[js.Any])
+    def setOrigKnuddelPayout(value: Double): Self = StObject.set(x, "origKnuddelPayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
+    def setOrigPriceCents(value: Double): Self = StObject.set(x, "origPriceCents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewKnuddelPayout(value: Double): Self = this.set("newKnuddelPayout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewKnuddelPayout: Self = this.set("newKnuddelPayout", js.undefined)
-    
-    @scala.inline
-    def setNewPriceCents(value: Double): Self = this.set("newPriceCents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewPriceCents: Self = this.set("newPriceCents", js.undefined)
+    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
   }
 }

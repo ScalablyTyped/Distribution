@@ -1,5 +1,6 @@
 package typings.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,60 +60,48 @@ object Icon {
   }
   
   @scala.inline
-  implicit class IconOps[Self <: Icon] (val x: Self) extends AnyVal {
+  implicit class IconMutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: Size): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageOffset(value: Size): Self = StObject.set(x, "imageOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageSize(value: Size): Self = StObject.set(x, "imageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: Size): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setImageUrl(value: Size): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageOffset(value: Size): Self = this.set("imageOffset", value.asInstanceOf[js.Any])
+    def setInfoWindowAnchor(value: Size): Self = StObject.set(x, "infoWindowAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageSize(value: Size): Self = this.set("imageSize", value.asInstanceOf[js.Any])
+    def setPrintImageUrl(value: String): Self = StObject.set(x, "printImageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrl(value: Size): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    def setSetAnchor(value: Size => Unit): Self = StObject.set(x, "setAnchor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInfoWindowAnchor(value: Size): Self = this.set("infoWindowAnchor", value.asInstanceOf[js.Any])
+    def setSetImageOffset(value: Size => Unit): Self = StObject.set(x, "setImageOffset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPrintImageUrl(value: String): Self = this.set("printImageUrl", value.asInstanceOf[js.Any])
+    def setSetImageSize(value: Size => Unit): Self = StObject.set(x, "setImageSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAnchor(value: Size => Unit): Self = this.set("setAnchor", js.Any.fromFunction1(value))
+    def setSetImageUrl(value: String => Unit): Self = StObject.set(x, "setImageUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetImageOffset(value: Size => Unit): Self = this.set("setImageOffset", js.Any.fromFunction1(value))
+    def setSetInfoWindowAnchor(value: Size => Unit): Self = StObject.set(x, "setInfoWindowAnchor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetImageSize(value: Size => Unit): Self = this.set("setImageSize", js.Any.fromFunction1(value))
+    def setSetPrintImageUrl(value: String => Unit): Self = StObject.set(x, "setPrintImageUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetImageUrl(value: String => Unit): Self = this.set("setImageUrl", js.Any.fromFunction1(value))
+    def setSetSize(value: Size => Unit): Self = StObject.set(x, "setSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetInfoWindowAnchor(value: Size => Unit): Self = this.set("setInfoWindowAnchor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPrintImageUrl(value: String => Unit): Self = this.set("setPrintImageUrl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSize(value: Size => Unit): Self = this.set("setSize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSize(value: Size): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

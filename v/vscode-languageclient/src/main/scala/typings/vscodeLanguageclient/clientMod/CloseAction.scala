@@ -1,15 +1,15 @@
 package typings.vscodeLanguageclient.clientMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CloseAction extends js.Object
+sealed trait CloseAction extends StObject
 @JSImport("vscode-languageclient/lib/client", "CloseAction")
 @js.native
-object CloseAction extends js.Object {
+object CloseAction extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CloseAction with Double] = js.native
@@ -19,14 +19,12 @@ object CloseAction extends js.Object {
     */
   @js.native
   sealed trait DoNotRestart extends CloseAction
-  /* 1 */ @js.native
-  object DoNotRestart extends TopLevel[DoNotRestart with Double]
+  /* 1 */ val DoNotRestart: typings.vscodeLanguageclient.clientMod.CloseAction.DoNotRestart with Double = js.native
   
   /**
     * Restart the server.
     */
   @js.native
   sealed trait Restart extends CloseAction
-  /* 2 */ @js.native
-  object Restart extends TopLevel[Restart with Double]
+  /* 2 */ val Restart: typings.vscodeLanguageclient.clientMod.CloseAction.Restart with Double = js.native
 }

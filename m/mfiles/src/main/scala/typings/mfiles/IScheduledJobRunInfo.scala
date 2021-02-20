@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IScheduledJobRunInfo extends js.Object {
+trait IScheduledJobRunInfo extends StObject {
   
   val Cancelled: Boolean = js.native
   
@@ -44,45 +45,33 @@ object IScheduledJobRunInfo {
   }
   
   @scala.inline
-  implicit class IScheduledJobRunInfoOps[Self <: IScheduledJobRunInfo] (val x: Self) extends AnyVal {
+  implicit class IScheduledJobRunInfoMutableBuilder[Self <: IScheduledJobRunInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelled(value: Boolean): Self = StObject.set(x, "Cancelled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentStep(value: Double): Self = StObject.set(x, "CurrentStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastRun(value: ITimestamp): Self = StObject.set(x, "LastRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelled(value: Boolean): Self = this.set("Cancelled", value.asInstanceOf[js.Any])
+    def setLastRunErrors(value: String): Self = StObject.set(x, "LastRunErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentStep(value: Double): Self = this.set("CurrentStep", value.asInstanceOf[js.Any])
+    def setLastRunSucceeded(value: Boolean): Self = StObject.set(x, "LastRunSucceeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastRun(value: ITimestamp): Self = this.set("LastRun", value.asInstanceOf[js.Any])
+    def setNextRun(value: ITimestamp): Self = StObject.set(x, "NextRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastRunErrors(value: String): Self = this.set("LastRunErrors", value.asInstanceOf[js.Any])
+    def setRunning(value: Boolean): Self = StObject.set(x, "Running", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastRunSucceeded(value: Boolean): Self = this.set("LastRunSucceeded", value.asInstanceOf[js.Any])
+    def setScheduledJobOutputInfo(value: IScheduledJobOutputInfo): Self = StObject.set(x, "ScheduledJobOutputInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextRun(value: ITimestamp): Self = this.set("NextRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRunning(value: Boolean): Self = this.set("Running", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScheduledJobOutputInfo(value: IScheduledJobOutputInfo): Self = this.set("ScheduledJobOutputInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStepCompletionPercent(value: Double): Self = this.set("StepCompletionPercent", value.asInstanceOf[js.Any])
+    def setStepCompletionPercent(value: Double): Self = StObject.set(x, "StepCompletionPercent", value.asInstanceOf[js.Any])
   }
 }

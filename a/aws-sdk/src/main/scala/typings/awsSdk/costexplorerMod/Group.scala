@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Group extends js.Object {
+trait Group extends StObject {
   
   /**
     * The keys that are included in this group.
@@ -26,33 +27,21 @@ object Group {
   }
   
   @scala.inline
-  implicit class GroupOps[Self <: Group] (val x: Self) extends AnyVal {
+  implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeys(value: Keys): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeysUndefined: Self = StObject.set(x, "Keys", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeysVarargs(value: Key*): Self = StObject.set(x, "Keys", js.Array(value :_*))
     
     @scala.inline
-    def setKeysVarargs(value: Key*): Self = this.set("Keys", js.Array(value :_*))
+    def setMetrics(value: Metrics): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeys(value: Keys): Self = this.set("Keys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeys: Self = this.set("Keys", js.undefined)
-    
-    @scala.inline
-    def setMetrics(value: Metrics): Self = this.set("Metrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetrics: Self = this.set("Metrics", js.undefined)
+    def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
   }
 }

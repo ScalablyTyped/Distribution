@@ -1,11 +1,12 @@
 package typings.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InitialiseOptions extends js.Object {
+trait InitialiseOptions extends StObject {
   
   /**
     * This specifies the directory in which the Optional Oracle Net Configuration and Optional Oracle Client Configuration files reside. It is equivalent to setting the Oracle environment variable TNS_ADMIN to this value. Any value in that environment variable prior to the call to oracledb.initOracleClient() is ignored. If this attribute is not set, Oracle’s default configuration file search heuristics are used.
@@ -42,42 +43,30 @@ object InitialiseOptions {
   }
   
   @scala.inline
-  implicit class InitialiseOptionsOps[Self <: InitialiseOptions] (val x: Self) extends AnyVal {
+  implicit class InitialiseOptionsMutableBuilder[Self <: InitialiseOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigDir(value: String): Self = StObject.set(x, "configDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigDirUndefined: Self = StObject.set(x, "configDir", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDriverName(value: String): Self = StObject.set(x, "driverName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigDir(value: String): Self = this.set("configDir", value.asInstanceOf[js.Any])
+    def setDriverNameUndefined: Self = StObject.set(x, "driverName", js.undefined)
     
     @scala.inline
-    def deleteConfigDir: Self = this.set("configDir", js.undefined)
+    def setErrorUrl(value: String): Self = StObject.set(x, "errorUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriverName(value: String): Self = this.set("driverName", value.asInstanceOf[js.Any])
+    def setErrorUrlUndefined: Self = StObject.set(x, "errorUrl", js.undefined)
     
     @scala.inline
-    def deleteDriverName: Self = this.set("driverName", js.undefined)
+    def setLibDir(value: String): Self = StObject.set(x, "libDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorUrl(value: String): Self = this.set("errorUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorUrl: Self = this.set("errorUrl", js.undefined)
-    
-    @scala.inline
-    def setLibDir(value: String): Self = this.set("libDir", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLibDir: Self = this.set("libDir", js.undefined)
+    def setLibDirUndefined: Self = StObject.set(x, "libDir", js.undefined)
   }
 }

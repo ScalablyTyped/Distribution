@@ -1,12 +1,13 @@
 package typings.arcgisJsApi.global.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.CIM.MaterialMode")
 @js.native
-object MaterialMode extends js.Object {
+object MaterialMode extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.arcgisJsApi.esri.CIM.MaterialMode with String] = js.native

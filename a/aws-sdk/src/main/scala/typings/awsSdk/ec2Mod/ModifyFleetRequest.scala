@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyFleetRequest extends js.Object {
+trait ModifyFleetRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -41,48 +42,36 @@ object ModifyFleetRequest {
   }
   
   @scala.inline
-  implicit class ModifyFleetRequestOps[Self <: ModifyFleetRequest] (val x: Self) extends AnyVal {
+  implicit class ModifyFleetRequestMutableBuilder[Self <: ModifyFleetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcessCapacityTerminationPolicy(value: FleetExcessCapacityTerminationPolicy): Self = StObject.set(x, "ExcessCapacityTerminationPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetId(value: FleetId): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    def setExcessCapacityTerminationPolicyUndefined: Self = StObject.set(x, "ExcessCapacityTerminationPolicy", js.undefined)
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setLaunchTemplateConfigs(value: FleetLaunchTemplateConfigListRequest): Self = StObject.set(x, "LaunchTemplateConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcessCapacityTerminationPolicy(value: FleetExcessCapacityTerminationPolicy): Self = this.set("ExcessCapacityTerminationPolicy", value.asInstanceOf[js.Any])
+    def setLaunchTemplateConfigsUndefined: Self = StObject.set(x, "LaunchTemplateConfigs", js.undefined)
     
     @scala.inline
-    def deleteExcessCapacityTerminationPolicy: Self = this.set("ExcessCapacityTerminationPolicy", js.undefined)
+    def setLaunchTemplateConfigsVarargs(value: FleetLaunchTemplateConfigRequest*): Self = StObject.set(x, "LaunchTemplateConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setLaunchTemplateConfigsVarargs(value: FleetLaunchTemplateConfigRequest*): Self = this.set("LaunchTemplateConfigs", js.Array(value :_*))
+    def setTargetCapacitySpecification(value: TargetCapacitySpecificationRequest): Self = StObject.set(x, "TargetCapacitySpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchTemplateConfigs(value: FleetLaunchTemplateConfigListRequest): Self = this.set("LaunchTemplateConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLaunchTemplateConfigs: Self = this.set("LaunchTemplateConfigs", js.undefined)
-    
-    @scala.inline
-    def setTargetCapacitySpecification(value: TargetCapacitySpecificationRequest): Self = this.set("TargetCapacitySpecification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetCapacitySpecification: Self = this.set("TargetCapacitySpecification", js.undefined)
+    def setTargetCapacitySpecificationUndefined: Self = StObject.set(x, "TargetCapacitySpecification", js.undefined)
   }
 }

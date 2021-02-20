@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConditionalForwarder extends js.Object {
+trait ConditionalForwarder extends StObject {
   
   /**
     * The IP addresses of the remote DNS server associated with RemoteDomainName. This is the IP address of the DNS server that your conditional forwarder points to.
@@ -31,39 +32,27 @@ object ConditionalForwarder {
   }
   
   @scala.inline
-  implicit class ConditionalForwarderOps[Self <: ConditionalForwarder] (val x: Self) extends AnyVal {
+  implicit class ConditionalForwarderMutableBuilder[Self <: ConditionalForwarder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDnsIpAddrs(value: DnsIpAddrs): Self = StObject.set(x, "DnsIpAddrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDnsIpAddrsUndefined: Self = StObject.set(x, "DnsIpAddrs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDnsIpAddrsVarargs(value: IpAddr*): Self = StObject.set(x, "DnsIpAddrs", js.Array(value :_*))
     
     @scala.inline
-    def setDnsIpAddrsVarargs(value: IpAddr*): Self = this.set("DnsIpAddrs", js.Array(value :_*))
+    def setRemoteDomainName(value: RemoteDomainName): Self = StObject.set(x, "RemoteDomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsIpAddrs(value: DnsIpAddrs): Self = this.set("DnsIpAddrs", value.asInstanceOf[js.Any])
+    def setRemoteDomainNameUndefined: Self = StObject.set(x, "RemoteDomainName", js.undefined)
     
     @scala.inline
-    def deleteDnsIpAddrs: Self = this.set("DnsIpAddrs", js.undefined)
+    def setReplicationScope(value: ReplicationScope): Self = StObject.set(x, "ReplicationScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteDomainName(value: RemoteDomainName): Self = this.set("RemoteDomainName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoteDomainName: Self = this.set("RemoteDomainName", js.undefined)
-    
-    @scala.inline
-    def setReplicationScope(value: ReplicationScope): Self = this.set("ReplicationScope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicationScope: Self = this.set("ReplicationScope", js.undefined)
+    def setReplicationScopeUndefined: Self = StObject.set(x, "ReplicationScope", js.undefined)
   }
 }

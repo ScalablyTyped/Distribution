@@ -12,6 +12,7 @@ import typings.jquery.jqueryStrings.pending
 import typings.jquery.jqueryStrings.rejected
 import typings.jquery.jqueryStrings.resolved
 import typings.std.Document
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // tslint:disable-next-line:no-empty-interface
 /* Inlined parent jquery.JQuery.jqXHR<any> */
 @js.native
-trait JQueryXHR extends js.Object {
+trait JQueryXHR extends StObject {
   
   def abort(): Unit = js.native
   def abort(statusText: String): Unit = js.native

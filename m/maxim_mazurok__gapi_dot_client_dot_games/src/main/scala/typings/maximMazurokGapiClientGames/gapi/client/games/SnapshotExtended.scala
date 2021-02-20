@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGames.gapi.client.games
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SnapshotExtended extends js.Object {
+trait SnapshotExtended extends StObject {
   
   /**
     * A list of conflicting revisions. Only set if explicitly requested (e.g. using a field mask or a request flag), or if the RPC guarantees that this field is set. The conflicting
@@ -32,45 +33,33 @@ object SnapshotExtended {
   }
   
   @scala.inline
-  implicit class SnapshotExtendedOps[Self <: SnapshotExtended] (val x: Self) extends AnyVal {
+  implicit class SnapshotExtendedMutableBuilder[Self <: SnapshotExtended] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConflictingRevisions(value: js.Array[SnapshotRevision]): Self = StObject.set(x, "conflictingRevisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConflictingRevisionsUndefined: Self = StObject.set(x, "conflictingRevisions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConflictingRevisionsVarargs(value: SnapshotRevision*): Self = StObject.set(x, "conflictingRevisions", js.Array(value :_*))
     
     @scala.inline
-    def setConflictingRevisionsVarargs(value: SnapshotRevision*): Self = this.set("conflictingRevisions", js.Array(value :_*))
+    def setHasConflictingRevisions(value: Boolean): Self = StObject.set(x, "hasConflictingRevisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConflictingRevisions(value: js.Array[SnapshotRevision]): Self = this.set("conflictingRevisions", value.asInstanceOf[js.Any])
+    def setHasConflictingRevisionsUndefined: Self = StObject.set(x, "hasConflictingRevisions", js.undefined)
     
     @scala.inline
-    def deleteConflictingRevisions: Self = this.set("conflictingRevisions", js.undefined)
+    def setHeadRevision(value: SnapshotRevision): Self = StObject.set(x, "headRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasConflictingRevisions(value: Boolean): Self = this.set("hasConflictingRevisions", value.asInstanceOf[js.Any])
+    def setHeadRevisionUndefined: Self = StObject.set(x, "headRevision", js.undefined)
     
     @scala.inline
-    def deleteHasConflictingRevisions: Self = this.set("hasConflictingRevisions", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadRevision(value: SnapshotRevision): Self = this.set("headRevision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeadRevision: Self = this.set("headRevision", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

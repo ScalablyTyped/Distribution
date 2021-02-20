@@ -11,6 +11,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`job-submitted`
 import typings.arcgisJsApi.arcgisJsApiStrings.`job-succeeded`
 import typings.arcgisJsApi.arcgisJsApiStrings.`job-timed-out`
 import typings.arcgisJsApi.arcgisJsApiStrings.`job-waiting`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

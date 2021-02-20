@@ -8,6 +8,7 @@ import typings.activexMshtml.activexMshtmlNumbers.`3`
 import typings.activexMshtml.activexMshtmlNumbers.`4`
 import typings.activexMshtml.activexMshtmlNumbers.`5`
 import typings.activexMshtml.activexMshtmlNumbers.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexMshtml.activexMshtmlNumbers.`0`
   - typings.activexMshtml.activexMshtmlNumbers.`2147483647`
 */
-trait svgTransformType extends js.Object
+trait svgTransformType extends StObject
 object svgTransformType {
   
   @scala.inline

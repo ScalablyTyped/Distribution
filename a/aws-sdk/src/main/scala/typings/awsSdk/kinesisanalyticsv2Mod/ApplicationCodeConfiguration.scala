@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationCodeConfiguration extends js.Object {
+trait ApplicationCodeConfiguration extends StObject {
   
   /**
     * The location and type of the application code.
@@ -26,27 +27,15 @@ object ApplicationCodeConfiguration {
   }
   
   @scala.inline
-  implicit class ApplicationCodeConfigurationOps[Self <: ApplicationCodeConfiguration] (val x: Self) extends AnyVal {
+  implicit class ApplicationCodeConfigurationMutableBuilder[Self <: ApplicationCodeConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodeContent(value: CodeContent): Self = StObject.set(x, "CodeContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeContentType(value: CodeContentType): Self = StObject.set(x, "CodeContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCodeContentType(value: CodeContentType): Self = this.set("CodeContentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCodeContent(value: CodeContent): Self = this.set("CodeContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCodeContent: Self = this.set("CodeContent", js.undefined)
+    def setCodeContentUndefined: Self = StObject.set(x, "CodeContent", js.undefined)
   }
 }

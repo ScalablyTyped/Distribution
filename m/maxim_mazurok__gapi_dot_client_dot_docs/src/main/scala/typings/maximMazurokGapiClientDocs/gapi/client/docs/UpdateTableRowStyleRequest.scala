@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateTableRowStyleRequest extends js.Object {
+trait UpdateTableRowStyleRequest extends StObject {
   
   /**
     * The fields that should be updated. At least one field must be specified. The root `tableRowStyle` is implied and should not be specified. A single `"*"` can be used as short-hand
@@ -31,45 +32,33 @@ object UpdateTableRowStyleRequest {
   }
   
   @scala.inline
-  implicit class UpdateTableRowStyleRequestOps[Self <: UpdateTableRowStyleRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateTableRowStyleRequestMutableBuilder[Self <: UpdateTableRowStyleRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRowIndices(value: js.Array[Double]): Self = StObject.set(x, "rowIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setRowIndicesUndefined: Self = StObject.set(x, "rowIndices", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setRowIndicesVarargs(value: Double*): Self = StObject.set(x, "rowIndices", js.Array(value :_*))
     
     @scala.inline
-    def setRowIndicesVarargs(value: Double*): Self = this.set("rowIndices", js.Array(value :_*))
+    def setTableRowStyle(value: TableRowStyle): Self = StObject.set(x, "tableRowStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowIndices(value: js.Array[Double]): Self = this.set("rowIndices", value.asInstanceOf[js.Any])
+    def setTableRowStyleUndefined: Self = StObject.set(x, "tableRowStyle", js.undefined)
     
     @scala.inline
-    def deleteRowIndices: Self = this.set("rowIndices", js.undefined)
+    def setTableStartLocation(value: Location): Self = StObject.set(x, "tableStartLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableRowStyle(value: TableRowStyle): Self = this.set("tableRowStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableRowStyle: Self = this.set("tableRowStyle", js.undefined)
-    
-    @scala.inline
-    def setTableStartLocation(value: Location): Self = this.set("tableStartLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableStartLocation: Self = this.set("tableStartLocation", js.undefined)
+    def setTableStartLocationUndefined: Self = StObject.set(x, "tableStartLocation", js.undefined)
   }
 }

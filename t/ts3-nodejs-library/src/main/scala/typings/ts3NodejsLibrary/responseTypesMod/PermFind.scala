@@ -1,6 +1,7 @@
 package typings.ts3NodejsLibrary.responseTypesMod
 
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,30 +26,18 @@ object PermFind {
   }
   
   @scala.inline
-  implicit class PermFindOps[Self <: PermFind] (val x: Self) extends AnyVal {
+  implicit class PermFindMutableBuilder[Self <: PermFind] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId1(value: Double): Self = StObject.set(x, "id1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId2(value: Double): Self = StObject.set(x, "id2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setP(value: Double): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId1(value: Double): Self = this.set("id1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId2(value: Double): Self = this.set("id2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setP(value: Double): Self = this.set("p", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setT(value: Double): Self = this.set("t", value.asInstanceOf[js.Any])
+    def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RefreshCacheOutput extends js.Object {
+trait RefreshCacheOutput extends StObject {
   
   var FileShareARN: js.UndefOr[typings.awsSdk.storagegatewayMod.FileShareARN] = js.native
   
@@ -20,30 +21,18 @@ object RefreshCacheOutput {
   }
   
   @scala.inline
-  implicit class RefreshCacheOutputOps[Self <: RefreshCacheOutput] (val x: Self) extends AnyVal {
+  implicit class RefreshCacheOutputMutableBuilder[Self <: RefreshCacheOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileShareARNUndefined: Self = StObject.set(x, "FileShareARN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotificationId(value: NotificationId): Self = StObject.set(x, "NotificationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileShareARN(value: FileShareARN): Self = this.set("FileShareARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileShareARN: Self = this.set("FileShareARN", js.undefined)
-    
-    @scala.inline
-    def setNotificationId(value: NotificationId): Self = this.set("NotificationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationId: Self = this.set("NotificationId", js.undefined)
+    def setNotificationIdUndefined: Self = StObject.set(x, "NotificationId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentityVerificationAttributes extends js.Object {
+trait IdentityVerificationAttributes extends StObject {
   
   /**
     * The verification status of the identity: "Pending", "Success", "Failed", or "TemporaryFailure".
@@ -26,27 +27,15 @@ object IdentityVerificationAttributes {
   }
   
   @scala.inline
-  implicit class IdentityVerificationAttributesOps[Self <: IdentityVerificationAttributes] (val x: Self) extends AnyVal {
+  implicit class IdentityVerificationAttributesMutableBuilder[Self <: IdentityVerificationAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVerificationStatus(value: VerificationStatus): Self = StObject.set(x, "VerificationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVerificationToken(value: VerificationToken): Self = StObject.set(x, "VerificationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVerificationStatus(value: VerificationStatus): Self = this.set("VerificationStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerificationToken(value: VerificationToken): Self = this.set("VerificationToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerificationToken: Self = this.set("VerificationToken", js.undefined)
+    def setVerificationTokenUndefined: Self = StObject.set(x, "VerificationToken", js.undefined)
   }
 }

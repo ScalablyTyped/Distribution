@@ -1,5 +1,6 @@
 package typings.slickgrid.Slick
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,39 +27,27 @@ object OnSortEventArgs {
   }
   
   @scala.inline
-  implicit class OnSortEventArgsOps[Self <: OnSortEventArgs[_], T /* <: SlickData */] (val x: Self with OnSortEventArgs[T]) extends AnyVal {
+  implicit class OnSortEventArgsMutableBuilder[Self <: OnSortEventArgs[_], T /* <: SlickData */] (val x: Self with OnSortEventArgs[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMultiColumnSort(value: Boolean): Self = StObject.set(x, "multiColumnSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSortAsc(value: Boolean): Self = StObject.set(x, "sortAsc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSortCol(value: Column[T]): Self = StObject.set(x, "sortCol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiColumnSort(value: Boolean): Self = this.set("multiColumnSort", value.asInstanceOf[js.Any])
+    def setSortColUndefined: Self = StObject.set(x, "sortCol", js.undefined)
     
     @scala.inline
-    def setSortAsc(value: Boolean): Self = this.set("sortAsc", value.asInstanceOf[js.Any])
+    def setSortCols(value: js.Array[SortColumn[T]]): Self = StObject.set(x, "sortCols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortCol(value: Column[T]): Self = this.set("sortCol", value.asInstanceOf[js.Any])
+    def setSortColsUndefined: Self = StObject.set(x, "sortCols", js.undefined)
     
     @scala.inline
-    def deleteSortCol: Self = this.set("sortCol", js.undefined)
-    
-    @scala.inline
-    def setSortColsVarargs(value: SortColumn[T]*): Self = this.set("sortCols", js.Array(value :_*))
-    
-    @scala.inline
-    def setSortCols(value: js.Array[SortColumn[T]]): Self = this.set("sortCols", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortCols: Self = this.set("sortCols", js.undefined)
+    def setSortColsVarargs(value: SortColumn[T]*): Self = StObject.set(x, "sortCols", js.Array(value :_*))
   }
 }

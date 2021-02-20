@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Radio extends js.Object {
+trait Radio extends StObject {
   
   var anchorAllowWhiteSpaceInCharacters: js.UndefOr[String] = js.native
   
@@ -413,338 +414,326 @@ object Radio {
   }
   
   @scala.inline
-  implicit class RadioOps[Self <: Radio] (val x: Self) extends AnyVal {
+  implicit class RadioMutableBuilder[Self <: Radio] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchorAllowWhiteSpaceInCharacters(value: String): Self = StObject.set(x, "anchorAllowWhiteSpaceInCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorAllowWhiteSpaceInCharactersMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "anchorAllowWhiteSpaceInCharactersMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnchorAllowWhiteSpaceInCharactersMetadataUndefined: Self = StObject.set(x, "anchorAllowWhiteSpaceInCharactersMetadata", js.undefined)
     
     @scala.inline
-    def setAnchorAllowWhiteSpaceInCharacters(value: String): Self = this.set("anchorAllowWhiteSpaceInCharacters", value.asInstanceOf[js.Any])
+    def setAnchorAllowWhiteSpaceInCharactersUndefined: Self = StObject.set(x, "anchorAllowWhiteSpaceInCharacters", js.undefined)
     
     @scala.inline
-    def deleteAnchorAllowWhiteSpaceInCharacters: Self = this.set("anchorAllowWhiteSpaceInCharacters", js.undefined)
+    def setAnchorCaseSensitive(value: String): Self = StObject.set(x, "anchorCaseSensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorAllowWhiteSpaceInCharactersMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("anchorAllowWhiteSpaceInCharactersMetadata", value.asInstanceOf[js.Any])
+    def setAnchorCaseSensitiveMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "anchorCaseSensitiveMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnchorAllowWhiteSpaceInCharactersMetadata: Self = this.set("anchorAllowWhiteSpaceInCharactersMetadata", js.undefined)
+    def setAnchorCaseSensitiveMetadataUndefined: Self = StObject.set(x, "anchorCaseSensitiveMetadata", js.undefined)
     
     @scala.inline
-    def setAnchorCaseSensitive(value: String): Self = this.set("anchorCaseSensitive", value.asInstanceOf[js.Any])
+    def setAnchorCaseSensitiveUndefined: Self = StObject.set(x, "anchorCaseSensitive", js.undefined)
     
     @scala.inline
-    def deleteAnchorCaseSensitive: Self = this.set("anchorCaseSensitive", js.undefined)
+    def setAnchorHorizontalAlignment(value: String): Self = StObject.set(x, "anchorHorizontalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorCaseSensitiveMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("anchorCaseSensitiveMetadata", value.asInstanceOf[js.Any])
+    def setAnchorHorizontalAlignmentMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "anchorHorizontalAlignmentMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnchorCaseSensitiveMetadata: Self = this.set("anchorCaseSensitiveMetadata", js.undefined)
+    def setAnchorHorizontalAlignmentMetadataUndefined: Self = StObject.set(x, "anchorHorizontalAlignmentMetadata", js.undefined)
     
     @scala.inline
-    def setAnchorHorizontalAlignment(value: String): Self = this.set("anchorHorizontalAlignment", value.asInstanceOf[js.Any])
+    def setAnchorHorizontalAlignmentUndefined: Self = StObject.set(x, "anchorHorizontalAlignment", js.undefined)
     
     @scala.inline
-    def deleteAnchorHorizontalAlignment: Self = this.set("anchorHorizontalAlignment", js.undefined)
+    def setAnchorIgnoreIfNotPresent(value: String): Self = StObject.set(x, "anchorIgnoreIfNotPresent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorHorizontalAlignmentMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("anchorHorizontalAlignmentMetadata", value.asInstanceOf[js.Any])
+    def setAnchorIgnoreIfNotPresentMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "anchorIgnoreIfNotPresentMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnchorHorizontalAlignmentMetadata: Self = this.set("anchorHorizontalAlignmentMetadata", js.undefined)
+    def setAnchorIgnoreIfNotPresentMetadataUndefined: Self = StObject.set(x, "anchorIgnoreIfNotPresentMetadata", js.undefined)
     
     @scala.inline
-    def setAnchorIgnoreIfNotPresent(value: String): Self = this.set("anchorIgnoreIfNotPresent", value.asInstanceOf[js.Any])
+    def setAnchorIgnoreIfNotPresentUndefined: Self = StObject.set(x, "anchorIgnoreIfNotPresent", js.undefined)
     
     @scala.inline
-    def deleteAnchorIgnoreIfNotPresent: Self = this.set("anchorIgnoreIfNotPresent", js.undefined)
+    def setAnchorMatchWholeWord(value: String): Self = StObject.set(x, "anchorMatchWholeWord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorIgnoreIfNotPresentMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("anchorIgnoreIfNotPresentMetadata", value.asInstanceOf[js.Any])
+    def setAnchorMatchWholeWordMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "anchorMatchWholeWordMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnchorIgnoreIfNotPresentMetadata: Self = this.set("anchorIgnoreIfNotPresentMetadata", js.undefined)
+    def setAnchorMatchWholeWordMetadataUndefined: Self = StObject.set(x, "anchorMatchWholeWordMetadata", js.undefined)
     
     @scala.inline
-    def setAnchorMatchWholeWord(value: String): Self = this.set("anchorMatchWholeWord", value.asInstanceOf[js.Any])
+    def setAnchorMatchWholeWordUndefined: Self = StObject.set(x, "anchorMatchWholeWord", js.undefined)
     
     @scala.inline
-    def deleteAnchorMatchWholeWord: Self = this.set("anchorMatchWholeWord", js.undefined)
+    def setAnchorString(value: String): Self = StObject.set(x, "anchorString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorMatchWholeWordMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("anchorMatchWholeWordMetadata", value.asInstanceOf[js.Any])
+    def setAnchorStringMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "anchorStringMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnchorMatchWholeWordMetadata: Self = this.set("anchorMatchWholeWordMetadata", js.undefined)
+    def setAnchorStringMetadataUndefined: Self = StObject.set(x, "anchorStringMetadata", js.undefined)
     
     @scala.inline
-    def setAnchorString(value: String): Self = this.set("anchorString", value.asInstanceOf[js.Any])
+    def setAnchorStringUndefined: Self = StObject.set(x, "anchorString", js.undefined)
     
     @scala.inline
-    def deleteAnchorString: Self = this.set("anchorString", js.undefined)
+    def setAnchorTabProcessorVersion(value: String): Self = StObject.set(x, "anchorTabProcessorVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorStringMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("anchorStringMetadata", value.asInstanceOf[js.Any])
+    def setAnchorTabProcessorVersionMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "anchorTabProcessorVersionMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnchorStringMetadata: Self = this.set("anchorStringMetadata", js.undefined)
+    def setAnchorTabProcessorVersionMetadataUndefined: Self = StObject.set(x, "anchorTabProcessorVersionMetadata", js.undefined)
     
     @scala.inline
-    def setAnchorTabProcessorVersion(value: String): Self = this.set("anchorTabProcessorVersion", value.asInstanceOf[js.Any])
+    def setAnchorTabProcessorVersionUndefined: Self = StObject.set(x, "anchorTabProcessorVersion", js.undefined)
     
     @scala.inline
-    def deleteAnchorTabProcessorVersion: Self = this.set("anchorTabProcessorVersion", js.undefined)
+    def setAnchorUnits(value: String): Self = StObject.set(x, "anchorUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorTabProcessorVersionMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("anchorTabProcessorVersionMetadata", value.asInstanceOf[js.Any])
+    def setAnchorUnitsMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "anchorUnitsMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnchorTabProcessorVersionMetadata: Self = this.set("anchorTabProcessorVersionMetadata", js.undefined)
+    def setAnchorUnitsMetadataUndefined: Self = StObject.set(x, "anchorUnitsMetadata", js.undefined)
     
     @scala.inline
-    def setAnchorUnits(value: String): Self = this.set("anchorUnits", value.asInstanceOf[js.Any])
+    def setAnchorUnitsUndefined: Self = StObject.set(x, "anchorUnits", js.undefined)
     
     @scala.inline
-    def deleteAnchorUnits: Self = this.set("anchorUnits", js.undefined)
+    def setAnchorXOffset(value: String): Self = StObject.set(x, "anchorXOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorUnitsMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("anchorUnitsMetadata", value.asInstanceOf[js.Any])
+    def setAnchorXOffsetMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "anchorXOffsetMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnchorUnitsMetadata: Self = this.set("anchorUnitsMetadata", js.undefined)
+    def setAnchorXOffsetMetadataUndefined: Self = StObject.set(x, "anchorXOffsetMetadata", js.undefined)
     
     @scala.inline
-    def setAnchorXOffset(value: String): Self = this.set("anchorXOffset", value.asInstanceOf[js.Any])
+    def setAnchorXOffsetUndefined: Self = StObject.set(x, "anchorXOffset", js.undefined)
     
     @scala.inline
-    def deleteAnchorXOffset: Self = this.set("anchorXOffset", js.undefined)
+    def setAnchorYOffset(value: String): Self = StObject.set(x, "anchorYOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorXOffsetMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("anchorXOffsetMetadata", value.asInstanceOf[js.Any])
+    def setAnchorYOffsetMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "anchorYOffsetMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnchorXOffsetMetadata: Self = this.set("anchorXOffsetMetadata", js.undefined)
+    def setAnchorYOffsetMetadataUndefined: Self = StObject.set(x, "anchorYOffsetMetadata", js.undefined)
     
     @scala.inline
-    def setAnchorYOffset(value: String): Self = this.set("anchorYOffset", value.asInstanceOf[js.Any])
+    def setAnchorYOffsetUndefined: Self = StObject.set(x, "anchorYOffset", js.undefined)
     
     @scala.inline
-    def deleteAnchorYOffset: Self = this.set("anchorYOffset", js.undefined)
+    def setBold(value: String): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorYOffsetMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("anchorYOffsetMetadata", value.asInstanceOf[js.Any])
+    def setBoldMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "boldMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnchorYOffsetMetadata: Self = this.set("anchorYOffsetMetadata", js.undefined)
+    def setBoldMetadataUndefined: Self = StObject.set(x, "boldMetadata", js.undefined)
     
     @scala.inline
-    def setBold(value: String): Self = this.set("bold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBold: Self = this.set("bold", js.undefined)
-    
-    @scala.inline
-    def setBoldMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("boldMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBoldMetadata: Self = this.set("boldMetadata", js.undefined)
+    def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
     
     @scala.inline
     def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-    ): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def setFont(value: String): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontColor(value: String): Self = this.set("fontColor", value.asInstanceOf[js.Any])
+    def setFontColorMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "fontColorMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontColor: Self = this.set("fontColor", js.undefined)
+    def setFontColorMetadataUndefined: Self = StObject.set(x, "fontColorMetadata", js.undefined)
     
     @scala.inline
-    def setFontColorMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("fontColorMetadata", value.asInstanceOf[js.Any])
+    def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
     
     @scala.inline
-    def deleteFontColorMetadata: Self = this.set("fontColorMetadata", js.undefined)
+    def setFontMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "fontMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("fontMetadata", value.asInstanceOf[js.Any])
+    def setFontMetadataUndefined: Self = StObject.set(x, "fontMetadata", js.undefined)
     
     @scala.inline
-    def deleteFontMetadata: Self = this.set("fontMetadata", js.undefined)
+    def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: String): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setFontSizeMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "fontSizeMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setFontSizeMetadataUndefined: Self = StObject.set(x, "fontSizeMetadata", js.undefined)
     
     @scala.inline
-    def setFontSizeMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("fontSizeMetadata", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteFontSizeMetadata: Self = this.set("fontSizeMetadata", js.undefined)
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def setItalic(value: String): Self = this.set("italic", value.asInstanceOf[js.Any])
+    def setItalic(value: String): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItalic: Self = this.set("italic", js.undefined)
+    def setItalicMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "italicMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItalicMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("italicMetadata", value.asInstanceOf[js.Any])
+    def setItalicMetadataUndefined: Self = StObject.set(x, "italicMetadata", js.undefined)
     
     @scala.inline
-    def deleteItalicMetadata: Self = this.set("italicMetadata", js.undefined)
+    def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
     
     @scala.inline
-    def setLocked(value: String): Self = this.set("locked", value.asInstanceOf[js.Any])
+    def setLocked(value: String): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocked: Self = this.set("locked", js.undefined)
+    def setLockedMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "lockedMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockedMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("lockedMetadata", value.asInstanceOf[js.Any])
+    def setLockedMetadataUndefined: Self = StObject.set(x, "lockedMetadata", js.undefined)
     
     @scala.inline
-    def deleteLockedMetadata: Self = this.set("lockedMetadata", js.undefined)
+    def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
     
     @scala.inline
-    def setPageNumber(value: String): Self = this.set("pageNumber", value.asInstanceOf[js.Any])
+    def setPageNumber(value: String): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageNumber: Self = this.set("pageNumber", js.undefined)
+    def setPageNumberMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "pageNumberMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageNumberMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("pageNumberMetadata", value.asInstanceOf[js.Any])
+    def setPageNumberMetadataUndefined: Self = StObject.set(x, "pageNumberMetadata", js.undefined)
     
     @scala.inline
-    def deletePageNumberMetadata: Self = this.set("pageNumberMetadata", js.undefined)
+    def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
     
     @scala.inline
-    def setRequired(value: String): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setRequired(value: String): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setRequiredMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "requiredMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("requiredMetadata", value.asInstanceOf[js.Any])
+    def setRequiredMetadataUndefined: Self = StObject.set(x, "requiredMetadata", js.undefined)
     
     @scala.inline
-    def deleteRequiredMetadata: Self = this.set("requiredMetadata", js.undefined)
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def setSelected(value: String): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
+    def setSelectedMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "selectedMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("selectedMetadata", value.asInstanceOf[js.Any])
+    def setSelectedMetadataUndefined: Self = StObject.set(x, "selectedMetadata", js.undefined)
     
     @scala.inline
-    def deleteSelectedMetadata: Self = this.set("selectedMetadata", js.undefined)
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "statusMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("statusMetadata", value.asInstanceOf[js.Any])
+    def setStatusMetadataUndefined: Self = StObject.set(x, "statusMetadata", js.undefined)
     
     @scala.inline
-    def deleteStatusMetadata: Self = this.set("statusMetadata", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setTabId(value: String): Self = this.set("tabId", value.asInstanceOf[js.Any])
+    def setTabId(value: String): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabId: Self = this.set("tabId", js.undefined)
+    def setTabIdMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "tabIdMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabIdMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("tabIdMetadata", value.asInstanceOf[js.Any])
+    def setTabIdMetadataUndefined: Self = StObject.set(x, "tabIdMetadata", js.undefined)
     
     @scala.inline
-    def deleteTabIdMetadata: Self = this.set("tabIdMetadata", js.undefined)
+    def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
     
     @scala.inline
-    def setTabOrder(value: String): Self = this.set("tabOrder", value.asInstanceOf[js.Any])
+    def setTabOrder(value: String): Self = StObject.set(x, "tabOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabOrder: Self = this.set("tabOrder", js.undefined)
+    def setTabOrderMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "tabOrderMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabOrderMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("tabOrderMetadata", value.asInstanceOf[js.Any])
+    def setTabOrderMetadataUndefined: Self = StObject.set(x, "tabOrderMetadata", js.undefined)
     
     @scala.inline
-    def deleteTabOrderMetadata: Self = this.set("tabOrderMetadata", js.undefined)
+    def setTabOrderUndefined: Self = StObject.set(x, "tabOrder", js.undefined)
     
     @scala.inline
-    def setUnderline(value: String): Self = this.set("underline", value.asInstanceOf[js.Any])
+    def setUnderline(value: String): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnderline: Self = this.set("underline", js.undefined)
+    def setUnderlineMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "underlineMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnderlineMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("underlineMetadata", value.asInstanceOf[js.Any])
+    def setUnderlineMetadataUndefined: Self = StObject.set(x, "underlineMetadata", js.undefined)
     
     @scala.inline
-    def deleteUnderlineMetadata: Self = this.set("underlineMetadata", js.undefined)
+    def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "valueMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("valueMetadata", value.asInstanceOf[js.Any])
+    def setValueMetadataUndefined: Self = StObject.set(x, "valueMetadata", js.undefined)
     
     @scala.inline
-    def deleteValueMetadata: Self = this.set("valueMetadata", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def setXPosition(value: String): Self = this.set("xPosition", value.asInstanceOf[js.Any])
+    def setXPosition(value: String): Self = StObject.set(x, "xPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteXPosition: Self = this.set("xPosition", js.undefined)
+    def setXPositionMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "xPositionMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXPositionMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("xPositionMetadata", value.asInstanceOf[js.Any])
+    def setXPositionMetadataUndefined: Self = StObject.set(x, "xPositionMetadata", js.undefined)
     
     @scala.inline
-    def deleteXPositionMetadata: Self = this.set("xPositionMetadata", js.undefined)
+    def setXPositionUndefined: Self = StObject.set(x, "xPosition", js.undefined)
     
     @scala.inline
-    def setYPosition(value: String): Self = this.set("yPosition", value.asInstanceOf[js.Any])
+    def setYPosition(value: String): Self = StObject.set(x, "yPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteYPosition: Self = this.set("yPosition", js.undefined)
+    def setYPositionMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "yPositionMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYPositionMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("yPositionMetadata", value.asInstanceOf[js.Any])
+    def setYPositionMetadataUndefined: Self = StObject.set(x, "yPositionMetadata", js.undefined)
     
     @scala.inline
-    def deleteYPositionMetadata: Self = this.set("yPositionMetadata", js.undefined)
+    def setYPositionUndefined: Self = StObject.set(x, "yPosition", js.undefined)
   }
 }

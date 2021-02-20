@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,42 +70,30 @@ object relationshipUpdateRendererParams {
   }
   
   @scala.inline
-  implicit class relationshipUpdateRendererParamsOps[Self <: relationshipUpdateRendererParams] (val x: Self) extends AnyVal {
+  implicit class relationshipUpdateRendererParamsMutableBuilder[Self <: relationshipUpdateRendererParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColors(value: js.Array[Color_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorsVarargs(value: Color_ *): Self = StObject.set(x, "colors", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setField1(value: relationshipUpdateRendererParamsField1): Self = StObject.set(x, "field1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorsVarargs(value: Color_ *): Self = this.set("colors", js.Array(value :_*))
+    def setField2(value: relationshipUpdateRendererParamsField2): Self = StObject.set(x, "field2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: js.Array[Color_]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField1(value: relationshipUpdateRendererParamsField1): Self = this.set("field1", value.asInstanceOf[js.Any])
+    def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
     @scala.inline
-    def setField2(value: relationshipUpdateRendererParamsField2): Self = this.set("field2", value.asInstanceOf[js.Any])
+    def setNumClasses(value: Double): Self = StObject.set(x, "numClasses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumClasses(value: Double): Self = this.set("numClasses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenderer(value: UniqueValueRenderer): Self = this.set("renderer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFocus(value: String): Self = this.set("focus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFocus: Self = this.set("focus", js.undefined)
+    def setRenderer(value: UniqueValueRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
   }
 }

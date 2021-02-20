@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CellFormat extends js.Object {
+trait CellFormat extends StObject {
   
   /** The background color of the cell. */
   var backgroundColor: js.UndefOr[Color] = js.native
@@ -52,90 +53,78 @@ object CellFormat {
   }
   
   @scala.inline
-  implicit class CellFormatOps[Self <: CellFormat] (val x: Self) extends AnyVal {
+  implicit class CellFormatMutableBuilder[Self <: CellFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorStyle(value: ColorStyle): Self = StObject.set(x, "backgroundColorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundColorStyleUndefined: Self = StObject.set(x, "backgroundColorStyle", js.undefined)
     
     @scala.inline
-    def setBackgroundColor(value: Color): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setBorders(value: Borders): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColorStyle(value: ColorStyle): Self = this.set("backgroundColorStyle", value.asInstanceOf[js.Any])
+    def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColorStyle: Self = this.set("backgroundColorStyle", js.undefined)
+    def setHorizontalAlignment(value: String): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorders(value: Borders): Self = this.set("borders", value.asInstanceOf[js.Any])
+    def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
     @scala.inline
-    def deleteBorders: Self = this.set("borders", js.undefined)
+    def setHyperlinkDisplayType(value: String): Self = StObject.set(x, "hyperlinkDisplayType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalAlignment(value: String): Self = this.set("horizontalAlignment", value.asInstanceOf[js.Any])
+    def setHyperlinkDisplayTypeUndefined: Self = StObject.set(x, "hyperlinkDisplayType", js.undefined)
     
     @scala.inline
-    def deleteHorizontalAlignment: Self = this.set("horizontalAlignment", js.undefined)
+    def setNumberFormat(value: NumberFormat): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperlinkDisplayType(value: String): Self = this.set("hyperlinkDisplayType", value.asInstanceOf[js.Any])
+    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
     
     @scala.inline
-    def deleteHyperlinkDisplayType: Self = this.set("hyperlinkDisplayType", js.undefined)
+    def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberFormat(value: NumberFormat): Self = this.set("numberFormat", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteNumberFormat: Self = this.set("numberFormat", js.undefined)
+    def setTextDirection(value: String): Self = StObject.set(x, "textDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: Padding): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setTextDirectionUndefined: Self = StObject.set(x, "textDirection", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setTextFormat(value: TextFormat): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDirection(value: String): Self = this.set("textDirection", value.asInstanceOf[js.Any])
+    def setTextFormatUndefined: Self = StObject.set(x, "textFormat", js.undefined)
     
     @scala.inline
-    def deleteTextDirection: Self = this.set("textDirection", js.undefined)
+    def setTextRotation(value: TextRotation): Self = StObject.set(x, "textRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextFormat(value: TextFormat): Self = this.set("textFormat", value.asInstanceOf[js.Any])
+    def setTextRotationUndefined: Self = StObject.set(x, "textRotation", js.undefined)
     
     @scala.inline
-    def deleteTextFormat: Self = this.set("textFormat", js.undefined)
+    def setVerticalAlignment(value: String): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextRotation(value: TextRotation): Self = this.set("textRotation", value.asInstanceOf[js.Any])
+    def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
     
     @scala.inline
-    def deleteTextRotation: Self = this.set("textRotation", js.undefined)
+    def setWrapStrategy(value: String): Self = StObject.set(x, "wrapStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalAlignment(value: String): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalAlignment: Self = this.set("verticalAlignment", js.undefined)
-    
-    @scala.inline
-    def setWrapStrategy(value: String): Self = this.set("wrapStrategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapStrategy: Self = this.set("wrapStrategy", js.undefined)
+    def setWrapStrategyUndefined: Self = StObject.set(x, "wrapStrategy", js.undefined)
   }
 }

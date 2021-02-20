@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hooks extends js.Object {
+trait Hooks extends StObject {
   
   def Add(hook: js.Any, priority: Double): CallbackObject = js.native
   
@@ -26,27 +27,15 @@ object Hooks {
   }
   
   @scala.inline
-  implicit class HooksOps[Self <: Hooks] (val x: Self) extends AnyVal {
+  implicit class HooksMutableBuilder[Self <: Hooks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (js.Any, Double) => CallbackObject): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecute(value: () => CallbackObject): Self = StObject.set(x, "Execute", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAdd(value: (js.Any, Double) => CallbackObject): Self = this.set("Add", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setExecute(value: () => CallbackObject): Self = this.set("Execute", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemove(value: CallbackObject => Unit): Self = this.set("Remove", js.Any.fromFunction1(value))
+    def setRemove(value: CallbackObject => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
   }
 }

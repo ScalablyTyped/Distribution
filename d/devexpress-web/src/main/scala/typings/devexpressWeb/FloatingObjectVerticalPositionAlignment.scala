@@ -1,17 +1,18 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FloatingObjectVerticalPositionAlignment extends js.Object
+sealed trait FloatingObjectVerticalPositionAlignment extends StObject
 /**
   * Lists values specifying how a floating object is vertically aligned relative to the specified element.
   */
 @JSGlobal("FloatingObjectVerticalPositionAlignment")
 @js.native
-object FloatingObjectVerticalPositionAlignment extends js.Object {
+object FloatingObjectVerticalPositionAlignment extends StObject {
   
   /**
     * The shape is aligned to the bottom relative to its FloatingObjectAlignmentPositionSettings.verticalPositionType.

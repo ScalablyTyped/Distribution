@@ -10,6 +10,7 @@ import typings.node.nodeStrings.readable
 import typings.node.nodeStrings.resume
 import typings.readableStream.anon.End
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.node.childProcessMod.StdioNull because Already inherited
 - typings.node.streamMod.internal because Already inherited
 - typings.node.streamMod.Stream because Already inherited
-- typings.node.streamMod.Readable because Inheritance from two classes. Inlined _destroy, _destroy, _read, addListener_close, addListener_data, addListener_end, addListener_error, addListener_pause, addListener_readable, addListener_resume, emit_close, emit_data, emit_end, emit_error, emit_pause, emit_readable, emit_resume, on_close, on_data, on_end, on_error, on_pause, on_readable, on_resume, once_close, once_data, once_end, once_error, once_pause, once_readable, once_resume, pipe, pipe, prependListener_close, prependListener_data, prependListener_end, prependListener_error, prependListener_pause, prependListener_readable, prependListener_resume, prependOnceListener_close, prependOnceListener_data, prependOnceListener_end, prependOnceListener_error, prependOnceListener_pause, prependOnceListener_readable, prependOnceListener_resume, push, push, readableEncoding, readableEnded, readableFlowing, readableHighWaterMark, readableLength, readableObjectMode, removeListener_close, removeListener_data, removeListener_end, removeListener_error, removeListener_pause, removeListener_readable, removeListener_resume, unshift, unshift
+- typings.node.streamMod.Readable because Inheritance from two classes. Inlined readableLength, readableEncoding, readableEnded, readableObjectMode, readableHighWaterMark, readableFlowing, _destroy, _destroy, _read, addListener_close, addListener_data, addListener_end, addListener_error, addListener_pause, addListener_readable, addListener_resume, emit_close, emit_data, emit_end, emit_error, emit_pause, emit_readable, emit_resume, on_close, on_data, on_end, on_error, on_pause, on_readable, on_resume, once_close, once_data, once_end, once_error, once_pause, once_readable, once_resume, prependListener_close, prependListener_data, prependListener_end, prependListener_error, prependListener_pause, prependListener_readable, prependListener_resume, prependOnceListener_close, prependOnceListener_data, prependOnceListener_end, prependOnceListener_error, prependOnceListener_pause, prependOnceListener_readable, prependOnceListener_resume, push, push, removeListener_close, removeListener_data, removeListener_end, removeListener_error, removeListener_pause, removeListener_readable, removeListener_resume, unshift, unshift, pipe, pipe
 - typings.node.streamMod.Duplex because Inheritance from two classes. Inlined _final, _write, addListener_drain, addListener_finish, addListener_pipe, addListener_unpipe, cork, emit_drain, emit_finish, emit_pipe, emit_unpipe, end, end, end, end, end, end, end, on_drain, on_finish, on_pipe, on_unpipe, once_drain, once_finish, once_pipe, once_unpipe, prependListener_drain, prependListener_finish, prependListener_pipe, prependListener_unpipe, prependOnceListener_drain, prependOnceListener_finish, prependOnceListener_pipe, prependOnceListener_unpipe, removeListener_drain, removeListener_finish, removeListener_pipe, removeListener_unpipe, setDefaultEncoding, uncork, write, write, write, write, write
 - typings.readableStream.mod._Readable because Inheritance from two classes. Inlined _readableState, destroy, destroy, destroy, destroy, _undestroy */ @JSImport("readable-stream", "Duplex")
 @js.native
@@ -151,14 +152,14 @@ class Duplex ()
     cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
   ): Boolean = js.native
 }
-/* static members */
-@JSImport("readable-stream", "Duplex")
-@js.native
-object Duplex extends js.Object {
+object Duplex {
   
   /**
     * This is a dummy function required to retain type compatibility to node.
     * @deprecated DO NOT USE
     */
+  /* static member */
+  @JSImport("readable-stream", "Duplex.from")
+  @js.native
   def from(source: js.Any): js.Any = js.native
 }

@@ -1,13 +1,16 @@
 package typings.materialDesignLite
 
 import typings.materialDesignLite.MaterialDesignLite.ComponentHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var componentHandler: ComponentHandler = js.native
+  @JSGlobal("componentHandler")
+  @js.native
+  def componentHandler: ComponentHandler = js.native
+  @scala.inline
+  def componentHandler_=(x: ComponentHandler): Unit = js.Dynamic.global.updateDynamic("componentHandler")(x.asInstanceOf[js.Any])
 }

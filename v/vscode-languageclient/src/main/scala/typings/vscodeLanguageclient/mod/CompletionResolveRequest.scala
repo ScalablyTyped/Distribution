@@ -2,16 +2,19 @@ package typings.vscodeLanguageclient.mod
 
 import typings.vscodeLanguageclient.vscodeLanguageclientStrings.completionItemSlashresolve
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "CompletionResolveRequest")
-@js.native
-object CompletionResolveRequest extends js.Object {
+object CompletionResolveRequest {
   
+  @JSImport("vscode-languageclient", "CompletionResolveRequest.method")
+  @js.native
   val method: completionItemSlashresolve = js.native
   
+  @JSImport("vscode-languageclient", "CompletionResolveRequest.type")
+  @js.native
   val `type`: ProtocolRequestType[
     typings.vscodeLanguageserverTypes.mod.CompletionItem, 
     typings.vscodeLanguageserverTypes.mod.CompletionItem, 

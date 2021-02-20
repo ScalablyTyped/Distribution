@@ -1,11 +1,12 @@
 package typings.braftEditor.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Embed extends js.Object {
+trait Embed extends StObject {
   
   var audio: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object Embed {
   }
   
   @scala.inline
-  implicit class EmbedOps[Self <: Embed] (val x: Self) extends AnyVal {
+  implicit class EmbedMutableBuilder[Self <: Embed] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmbed(value: Boolean): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudio(value: Boolean): Self = this.set("audio", value.asInstanceOf[js.Any])
+    def setEmbedUndefined: Self = StObject.set(x, "embed", js.undefined)
     
     @scala.inline
-    def deleteAudio: Self = this.set("audio", js.undefined)
+    def setImage(value: Boolean): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbed(value: Boolean): Self = this.set("embed", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteEmbed: Self = this.set("embed", js.undefined)
+    def setVideo(value: Boolean): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: Boolean): Self = this.set("image", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
-    
-    @scala.inline
-    def setVideo(value: Boolean): Self = this.set("video", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideo: Self = this.set("video", js.undefined)
+    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
   }
 }

@@ -3,48 +3,111 @@ package typings.dialogflow.mod.google.protobuf
 import typings.dialogflow.mod.google.protobuf.UninterpretedOption.INamePart
 import typings.long.mod.Long
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an UninterpretedOption. */
-trait IUninterpretedOption extends js.Object {
+@js.native
+trait IUninterpretedOption extends StObject {
+  
   /** UninterpretedOption aggregateValue */
-  var aggregateValue: js.UndefOr[String | Null] = js.undefined
+  var aggregateValue: js.UndefOr[String | Null] = js.native
+  
   /** UninterpretedOption doubleValue */
-  var doubleValue: js.UndefOr[Double | Null] = js.undefined
+  var doubleValue: js.UndefOr[Double | Null] = js.native
+  
   /** UninterpretedOption identifierValue */
-  var identifierValue: js.UndefOr[String | Null] = js.undefined
+  var identifierValue: js.UndefOr[String | Null] = js.native
+  
   /** UninterpretedOption name */
-  var name: js.UndefOr[js.Array[INamePart] | Null] = js.undefined
+  var name: js.UndefOr[js.Array[INamePart] | Null] = js.native
+  
   /** UninterpretedOption negativeIntValue */
-  var negativeIntValue: js.UndefOr[Double | Long | String | Null] = js.undefined
+  var negativeIntValue: js.UndefOr[Double | Long | String | Null] = js.native
+  
   /** UninterpretedOption positiveIntValue */
-  var positiveIntValue: js.UndefOr[Double | Long | String | Null] = js.undefined
+  var positiveIntValue: js.UndefOr[Double | Long | String | Null] = js.native
+  
   /** UninterpretedOption stringValue */
-  var stringValue: js.UndefOr[Uint8Array | String | Null] = js.undefined
+  var stringValue: js.UndefOr[Uint8Array | String | Null] = js.native
 }
-
 object IUninterpretedOption {
+  
   @scala.inline
-  def apply(
-    aggregateValue: js.UndefOr[Null | String] = js.undefined,
-    doubleValue: js.UndefOr[Null | Double] = js.undefined,
-    identifierValue: js.UndefOr[Null | String] = js.undefined,
-    name: js.UndefOr[Null | js.Array[INamePart]] = js.undefined,
-    negativeIntValue: js.UndefOr[Null | Double | Long | String] = js.undefined,
-    positiveIntValue: js.UndefOr[Null | Double | Long | String] = js.undefined,
-    stringValue: js.UndefOr[Null | Uint8Array | String] = js.undefined
-  ): IUninterpretedOption = {
+  def apply(): IUninterpretedOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(aggregateValue)) __obj.updateDynamic("aggregateValue")(aggregateValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleValue)) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(identifierValue)) __obj.updateDynamic("identifierValue")(identifierValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(negativeIntValue)) __obj.updateDynamic("negativeIntValue")(negativeIntValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(positiveIntValue)) __obj.updateDynamic("positiveIntValue")(positiveIntValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(stringValue)) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUninterpretedOption]
   }
+  
+  @scala.inline
+  implicit class IUninterpretedOptionMutableBuilder[Self <: IUninterpretedOption] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAggregateValue(value: String): Self = StObject.set(x, "aggregateValue", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAggregateValueNull: Self = StObject.set(x, "aggregateValue", null)
+    
+    @scala.inline
+    def setAggregateValueUndefined: Self = StObject.set(x, "aggregateValue", js.undefined)
+    
+    @scala.inline
+    def setDoubleValue(value: Double): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDoubleValueNull: Self = StObject.set(x, "doubleValue", null)
+    
+    @scala.inline
+    def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
+    
+    @scala.inline
+    def setIdentifierValue(value: String): Self = StObject.set(x, "identifierValue", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIdentifierValueNull: Self = StObject.set(x, "identifierValue", null)
+    
+    @scala.inline
+    def setIdentifierValueUndefined: Self = StObject.set(x, "identifierValue", js.undefined)
+    
+    @scala.inline
+    def setName(value: js.Array[INamePart]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNameNull: Self = StObject.set(x, "name", null)
+    
+    @scala.inline
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    @scala.inline
+    def setNameVarargs(value: INamePart*): Self = StObject.set(x, "name", js.Array(value :_*))
+    
+    @scala.inline
+    def setNegativeIntValue(value: Double | Long | String): Self = StObject.set(x, "negativeIntValue", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNegativeIntValueNull: Self = StObject.set(x, "negativeIntValue", null)
+    
+    @scala.inline
+    def setNegativeIntValueUndefined: Self = StObject.set(x, "negativeIntValue", js.undefined)
+    
+    @scala.inline
+    def setPositiveIntValue(value: Double | Long | String): Self = StObject.set(x, "positiveIntValue", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPositiveIntValueNull: Self = StObject.set(x, "positiveIntValue", null)
+    
+    @scala.inline
+    def setPositiveIntValueUndefined: Self = StObject.set(x, "positiveIntValue", js.undefined)
+    
+    @scala.inline
+    def setStringValue(value: Uint8Array | String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStringValueNull: Self = StObject.set(x, "stringValue", null)
+    
+    @scala.inline
+    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
+  }
 }
-

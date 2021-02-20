@@ -1,5 +1,6 @@
 package typings.xregexp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The options object for adding a token to XRegExp.
   */
 @js.native
-trait TokenOptions extends js.Object {
+trait TokenOptions extends StObject {
   
   /**
     * Single-character flag that triggers the token. This also registers the
@@ -54,48 +55,36 @@ object TokenOptions {
   }
   
   @scala.inline
-  implicit class TokenOptionsOps[Self <: TokenOptions] (val x: Self) extends AnyVal {
+  implicit class TokenOptionsMutableBuilder[Self <: TokenOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlag(value: TokenFlag): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeadChar(value: String): Self = StObject.set(x, "leadChar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlag(value: TokenFlag): Self = this.set("flag", value.asInstanceOf[js.Any])
+    def setLeadCharUndefined: Self = StObject.set(x, "leadChar", js.undefined)
     
     @scala.inline
-    def deleteFlag: Self = this.set("flag", js.undefined)
+    def setOptionalFlags(value: String): Self = StObject.set(x, "optionalFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeadChar(value: String): Self = this.set("leadChar", value.asInstanceOf[js.Any])
+    def setOptionalFlagsUndefined: Self = StObject.set(x, "optionalFlags", js.undefined)
     
     @scala.inline
-    def deleteLeadChar: Self = this.set("leadChar", js.undefined)
+    def setReparse(value: Boolean): Self = StObject.set(x, "reparse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionalFlags(value: String): Self = this.set("optionalFlags", value.asInstanceOf[js.Any])
+    def setReparseUndefined: Self = StObject.set(x, "reparse", js.undefined)
     
     @scala.inline
-    def deleteOptionalFlags: Self = this.set("optionalFlags", js.undefined)
+    def setScope(value: TokenScopeOption): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReparse(value: Boolean): Self = this.set("reparse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReparse: Self = this.set("reparse", js.undefined)
-    
-    @scala.inline
-    def setScope(value: TokenScopeOption): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAccountAuthorizationDetailsRequest extends js.Object {
+trait GetAccountAuthorizationDetailsRequest extends StObject {
   
   /**
     * A list of entity types used to filter the results. Only the entities that match the types you specify are included in the output. Use the value LocalManagedPolicy to include customer managed policies. The format for this parameter is a comma-separated (if more than one) list of strings. Each string value in the list must be one of the valid values listed below.
@@ -31,39 +32,27 @@ object GetAccountAuthorizationDetailsRequest {
   }
   
   @scala.inline
-  implicit class GetAccountAuthorizationDetailsRequestOps[Self <: GetAccountAuthorizationDetailsRequest] (val x: Self) extends AnyVal {
+  implicit class GetAccountAuthorizationDetailsRequestMutableBuilder[Self <: GetAccountAuthorizationDetailsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: entityListType): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterVarargs(value: EntityType*): Self = StObject.set(x, "Filter", js.Array(value :_*))
     
     @scala.inline
-    def setFilterVarargs(value: EntityType*): Self = this.set("Filter", js.Array(value :_*))
+    def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: entityListType): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("Filter", js.undefined)
+    def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: markerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setMaxItems(value: maxItemsType): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
+    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.semanticUiForm.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-form.SemanticUI.Form.PromptSettings._Impl, keyof semantic-ui-form.SemanticUI.Form.PromptSettings._Impl>> */
 @js.native
-trait PartialPickImplkeyofImplChecked extends js.Object {
+trait PartialPickImplkeyofImplChecked extends StObject {
   
   var checked: js.UndefOr[String] = js.native
   
@@ -69,174 +70,162 @@ object PartialPickImplkeyofImplChecked {
   }
   
   @scala.inline
-  implicit class PartialPickImplkeyofImplCheckedOps[Self <: PartialPickImplkeyofImplChecked] (val x: Self) extends AnyVal {
+  implicit class PartialPickImplkeyofImplCheckedMutableBuilder[Self <: PartialPickImplkeyofImplChecked] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContain(value: String): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecked(value: String): Self = this.set("checked", value.asInstanceOf[js.Any])
+    def setContainExactly(value: String): Self = StObject.set(x, "containExactly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChecked: Self = this.set("checked", js.undefined)
+    def setContainExactlyUndefined: Self = StObject.set(x, "containExactly", js.undefined)
     
     @scala.inline
-    def setContain(value: String): Self = this.set("contain", value.asInstanceOf[js.Any])
+    def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
     
     @scala.inline
-    def deleteContain: Self = this.set("contain", js.undefined)
+    def setCreditCard(value: String): Self = StObject.set(x, "creditCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainExactly(value: String): Self = this.set("containExactly", value.asInstanceOf[js.Any])
+    def setCreditCardUndefined: Self = StObject.set(x, "creditCard", js.undefined)
     
     @scala.inline
-    def deleteContainExactly: Self = this.set("containExactly", js.undefined)
+    def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreditCard(value: String): Self = this.set("creditCard", value.asInstanceOf[js.Any])
+    def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
     
     @scala.inline
-    def deleteCreditCard: Self = this.set("creditCard", js.undefined)
+    def setDifferent(value: String): Self = StObject.set(x, "different", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimal(value: String): Self = this.set("decimal", value.asInstanceOf[js.Any])
+    def setDifferentUndefined: Self = StObject.set(x, "different", js.undefined)
     
     @scala.inline
-    def deleteDecimal: Self = this.set("decimal", js.undefined)
+    def setDoesntContain(value: String): Self = StObject.set(x, "doesntContain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDifferent(value: String): Self = this.set("different", value.asInstanceOf[js.Any])
+    def setDoesntContainExactly(value: String): Self = StObject.set(x, "doesntContainExactly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDifferent: Self = this.set("different", js.undefined)
+    def setDoesntContainExactlyUndefined: Self = StObject.set(x, "doesntContainExactly", js.undefined)
     
     @scala.inline
-    def setDoesntContain(value: String): Self = this.set("doesntContain", value.asInstanceOf[js.Any])
+    def setDoesntContainUndefined: Self = StObject.set(x, "doesntContain", js.undefined)
     
     @scala.inline
-    def deleteDoesntContain: Self = this.set("doesntContain", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoesntContainExactly(value: String): Self = this.set("doesntContainExactly", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteDoesntContainExactly: Self = this.set("doesntContainExactly", js.undefined)
+    def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setExactCount(value: String): Self = StObject.set(x, "exactCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmpty(value: String): Self = this.set("empty", value.asInstanceOf[js.Any])
+    def setExactCountUndefined: Self = StObject.set(x, "exactCount", js.undefined)
     
     @scala.inline
-    def deleteEmpty: Self = this.set("empty", js.undefined)
+    def setExactLength(value: String): Self = StObject.set(x, "exactLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExactCount(value: String): Self = this.set("exactCount", value.asInstanceOf[js.Any])
+    def setExactLengthUndefined: Self = StObject.set(x, "exactLength", js.undefined)
     
     @scala.inline
-    def deleteExactCount: Self = this.set("exactCount", js.undefined)
+    def setInteger(value: String): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExactLength(value: String): Self = this.set("exactLength", value.asInstanceOf[js.Any])
+    def setIntegerUndefined: Self = StObject.set(x, "integer", js.undefined)
     
     @scala.inline
-    def deleteExactLength: Self = this.set("exactLength", js.undefined)
+    def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteger(value: String): Self = this.set("integer", value.asInstanceOf[js.Any])
+    def setIsExactly(value: String): Self = StObject.set(x, "isExactly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInteger: Self = this.set("integer", js.undefined)
+    def setIsExactlyUndefined: Self = StObject.set(x, "isExactly", js.undefined)
     
     @scala.inline
-    def setIs(value: String): Self = this.set("is", value.asInstanceOf[js.Any])
+    def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
     
     @scala.inline
-    def deleteIs: Self = this.set("is", js.undefined)
+    def setLength(value: String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsExactly(value: String): Self = this.set("isExactly", value.asInstanceOf[js.Any])
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def deleteIsExactly: Self = this.set("isExactly", js.undefined)
+    def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: String): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setMaxCount(value: String): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatch(value: String): Self = this.set("match", value.asInstanceOf[js.Any])
+    def setMaxCountUndefined: Self = StObject.set(x, "maxCount", js.undefined)
     
     @scala.inline
-    def deleteMatch: Self = this.set("match", js.undefined)
+    def setMaxLength(value: String): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCount(value: String): Self = this.set("maxCount", value.asInstanceOf[js.Any])
+    def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
     @scala.inline
-    def deleteMaxCount: Self = this.set("maxCount", js.undefined)
+    def setMinCount(value: String): Self = StObject.set(x, "minCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLength(value: String): Self = this.set("maxLength", value.asInstanceOf[js.Any])
+    def setMinCountUndefined: Self = StObject.set(x, "minCount", js.undefined)
     
     @scala.inline
-    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
+    def setMinLength(value: String): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinCount(value: String): Self = this.set("minCount", value.asInstanceOf[js.Any])
+    def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
     
     @scala.inline
-    def deleteMinCount: Self = this.set("minCount", js.undefined)
+    def setNot(value: String): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinLength(value: String): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    def setNotExactly(value: String): Self = StObject.set(x, "notExactly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinLength: Self = this.set("minLength", js.undefined)
+    def setNotExactlyUndefined: Self = StObject.set(x, "notExactly", js.undefined)
     
     @scala.inline
-    def setNot(value: String): Self = this.set("not", value.asInstanceOf[js.Any])
+    def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
     
     @scala.inline
-    def deleteNot: Self = this.set("not", js.undefined)
+    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotExactly(value: String): Self = this.set("notExactly", value.asInstanceOf[js.Any])
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
     @scala.inline
-    def deleteNotExactly: Self = this.set("notExactly", js.undefined)
+    def setRegExp(value: String): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: String): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setRegExpUndefined: Self = StObject.set(x, "regExp", js.undefined)
     
     @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegExp(value: String): Self = this.set("regExp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegExp: Self = this.set("regExp", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

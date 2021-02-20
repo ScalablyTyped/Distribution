@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientServicedirectory.anon.NamespaceId
 import typings.maximMazurokGapiClientServicedirectory.anon.PrettyPrint
 import typings.maximMazurokGapiClientServicedirectory.anon.UpdateMask
 import typings.maximMazurokGapiClientServicedirectory.anon.UploadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NamespacesResource extends js.Object {
+trait NamespacesResource extends StObject {
   
   /** Creates a namespace, and returns the new Namespace. */
   def create(request: NamespaceId): Request[Namespace] = js.native

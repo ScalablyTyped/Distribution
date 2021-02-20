@@ -1,5 +1,6 @@
 package typings.winrt.Windows.Data.Xml.Dom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,27 +54,15 @@ object IXmlDocumentType {
   }
   
   @scala.inline
-  implicit class IXmlDocumentTypeOps[Self <: IXmlDocumentType] (val x: Self) extends AnyVal {
+  implicit class IXmlDocumentTypeMutableBuilder[Self <: IXmlDocumentType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntities(value: XmlNamedNodeMap): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEntities(value: XmlNamedNodeMap): Self = this.set("entities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotations(value: XmlNamedNodeMap): Self = this.set("notations", value.asInstanceOf[js.Any])
+    def setNotations(value: XmlNamedNodeMap): Self = StObject.set(x, "notations", value.asInstanceOf[js.Any])
   }
 }

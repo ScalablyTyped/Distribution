@@ -5,44 +5,12 @@ import typings.phaser.Phaser.Types.Tilemaps.LayerDataConfig
 import typings.phaser.Phaser.Types.Tilemaps.MapDataConfig
 import typings.phaser.Phaser.Types.Tilemaps.ObjectLayerConfig
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("phaser", "Tilemaps")
-@js.native
-object Tilemaps extends js.Object {
-  
-  /**
-    * Create a Tilemap from the given key or data. If neither is given, make a blank Tilemap. When
-    * loading from CSV or a 2D array, you should specify the tileWidth & tileHeight. When parsing from
-    * a map from Tiled, the tileWidth, tileHeight, width & height will be pulled from the map data. For
-    * an empty map, you should specify tileWidth, tileHeight, width & height.
-    * @param scene The Scene to which this Tilemap belongs.
-    * @param key The key in the Phaser cache that corresponds to the loaded tilemap data.
-    * @param tileWidth The width of a tile in pixels. Default 32.
-    * @param tileHeight The height of a tile in pixels. Default 32.
-    * @param width The width of the map in tiles. Default 10.
-    * @param height The height of the map in tiles. Default 10.
-    * @param data Instead of loading from the cache, you can also load directly from
-    * a 2D array of tile indexes.
-    * @param insertNull Controls how empty tiles, tiles with an index of -1, in the
-    * map data are handled. If `true`, empty locations will get a value of `null`. If `false`, empty
-    * location will get a Tile object with an index of -1. If you've a large sparsely populated map and
-    * the tile data doesn't need to change then setting this value to `true` will help with memory
-    * consumption. However if your map is small or you need to update the tiles dynamically, then leave
-    * the default value set. Default false.
-    */
-  def ParseToTilemap(
-    scene: typings.phaser.Phaser.Scene,
-    key: js.UndefOr[String],
-    tileWidth: js.UndefOr[integer],
-    tileHeight: js.UndefOr[integer],
-    width: js.UndefOr[integer],
-    height: js.UndefOr[integer],
-    data: js.UndefOr[js.Array[js.Array[integer]]],
-    insertNull: js.UndefOr[Boolean]
-  ): typings.phaser.Phaser.Tilemaps.Tilemap = js.native
+object Tilemaps {
   
   /**
     * A Dynamic Tilemap Layer is a Game Object that renders LayerData from a Tilemap when used in combination
@@ -54,6 +22,7 @@ object Tilemaps extends js.Object {
     * 
     * Use this over a Static Tilemap Layer when you need those features.
     */
+  @JSImport("phaser", "Tilemaps.DynamicTilemapLayer")
   @js.native
   class DynamicTilemapLayer protected ()
     extends typings.phaser.Phaser.Tilemaps.DynamicTilemapLayer {
@@ -155,28 +124,47 @@ object Tilemaps extends js.Object {
     ) = this()
   }
   
-  @js.native
-  object Formats extends js.Object {
+  object Formats {
+    
+    @JSImport("phaser", "Tilemaps.Formats")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * 2D Array Map Type
       */
-    var ARRAY_2D: Double = js.native
+    @JSImport("phaser", "Tilemaps.Formats.ARRAY_2D")
+    @js.native
+    def ARRAY_2D: Double = js.native
+    @scala.inline
+    def ARRAY_2D_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARRAY_2D")(x.asInstanceOf[js.Any])
     
     /**
       * CSV Map Type
       */
-    var CSV: Double = js.native
+    @JSImport("phaser", "Tilemaps.Formats.CSV")
+    @js.native
+    def CSV: Double = js.native
+    @scala.inline
+    def CSV_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CSV")(x.asInstanceOf[js.Any])
     
     /**
       * Tiled JSON Map Type
       */
-    var TILED_JSON: Double = js.native
+    @JSImport("phaser", "Tilemaps.Formats.TILED_JSON")
+    @js.native
+    def TILED_JSON: Double = js.native
+    @scala.inline
+    def TILED_JSON_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TILED_JSON")(x.asInstanceOf[js.Any])
     
     /**
       * Weltmeister (Impact.js) Map Type
       */
-    var WELTMEISTER: Double = js.native
+    @JSImport("phaser", "Tilemaps.Formats.WELTMEISTER")
+    @js.native
+    def WELTMEISTER: Double = js.native
+    @scala.inline
+    def WELTMEISTER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WELTMEISTER")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -184,6 +172,7 @@ object Tilemaps extends js.Object {
     * 
     * Image Collections are normally created automatically when Tiled data is loaded.
     */
+  @JSImport("phaser", "Tilemaps.ImageCollection")
   @js.native
   class ImageCollection protected ()
     extends typings.phaser.Phaser.Tilemaps.ImageCollection {
@@ -438,6 +427,7 @@ object Tilemaps extends js.Object {
     * etc. into this format. Tilemap, StaticTilemapLayer and DynamicTilemapLayer have a reference
     * to this data and use it to look up and perform operations on tiles.
     */
+  @JSImport("phaser", "Tilemaps.LayerData")
   @js.native
   /**
     * 
@@ -453,6 +443,7 @@ object Tilemaps extends js.Object {
     * format. A Tilemap object get a copy of this data and then unpacks the needed properties into
     * itself.
     */
+  @JSImport("phaser", "Tilemaps.MapData")
   @js.native
   /**
     * 
@@ -471,6 +462,7 @@ object Tilemaps extends js.Object {
     *    are ignored as well.
     *  - "draworder" is ignored.
     */
+  @JSImport("phaser", "Tilemaps.ObjectLayer")
   @js.native
   /**
     * 
@@ -481,9 +473,79 @@ object Tilemaps extends js.Object {
     def this(config: ObjectLayerConfig) = this()
   }
   
+  /**
+    * Create a Tilemap from the given key or data. If neither is given, make a blank Tilemap. When
+    * loading from CSV or a 2D array, you should specify the tileWidth & tileHeight. When parsing from
+    * a map from Tiled, the tileWidth, tileHeight, width & height will be pulled from the map data. For
+    * an empty map, you should specify tileWidth, tileHeight, width & height.
+    * @param scene The Scene to which this Tilemap belongs.
+    * @param key The key in the Phaser cache that corresponds to the loaded tilemap data.
+    * @param tileWidth The width of a tile in pixels. Default 32.
+    * @param tileHeight The height of a tile in pixels. Default 32.
+    * @param width The width of the map in tiles. Default 10.
+    * @param height The height of the map in tiles. Default 10.
+    * @param data Instead of loading from the cache, you can also load directly from
+    * a 2D array of tile indexes.
+    * @param insertNull Controls how empty tiles, tiles with an index of -1, in the
+    * map data are handled. If `true`, empty locations will get a value of `null`. If `false`, empty
+    * location will get a Tile object with an index of -1. If you've a large sparsely populated map and
+    * the tile data doesn't need to change then setting this value to `true` will help with memory
+    * consumption. However if your map is small or you need to update the tiles dynamically, then leave
+    * the default value set. Default false.
+    */
+  @JSImport("phaser", "Tilemaps.ParseToTilemap")
   @js.native
-  object Parsers extends js.Object {
+  def ParseToTilemap(
+    scene: typings.phaser.Phaser.Scene,
+    key: js.UndefOr[String],
+    tileWidth: js.UndefOr[integer],
+    tileHeight: js.UndefOr[integer],
+    width: js.UndefOr[integer],
+    height: js.UndefOr[integer],
+    data: js.UndefOr[js.Array[js.Array[integer]]],
+    insertNull: js.UndefOr[Boolean]
+  ): typings.phaser.Phaser.Tilemaps.Tilemap = js.native
+  
+  object Parsers {
     
+    object Impact {
+      
+      /**
+        * Parses all tilemap layers in an Impact JSON object into new LayerData objects.
+        * @param json The Impact JSON object.
+        * @param insertNull Controls how empty tiles, tiles with an index of -1, in the map
+        * data are handled (see {@link Phaser.Tilemaps.Parsers.Tiled.ParseJSONTiled}).
+        */
+      @JSImport("phaser", "Tilemaps.Parsers.Impact.ParseTileLayers")
+      @js.native
+      def ParseTileLayers(json: js.Object, insertNull: Boolean): js.Array[typings.phaser.Phaser.Tilemaps.LayerData] = js.native
+      
+      /**
+        * Tilesets and Image Collections
+        * @param json The Impact JSON data.
+        */
+      @JSImport("phaser", "Tilemaps.Parsers.Impact.ParseTilesets")
+      @js.native
+      def ParseTilesets(json: js.Object): js.Array[_] = js.native
+      
+      /**
+        * Parses a Weltmeister JSON object into a new MapData object.
+        * @param name The name of the tilemap, used to set the name on the MapData.
+        * @param json The Weltmeister JSON object.
+        * @param insertNull Controls how empty tiles, tiles with an index of -1, in the map
+        * data are handled. If `true`, empty locations will get a value of `null`. If `false`, empty
+        * location will get a Tile object with an index of -1. If you've a large sparsely populated map and
+        * the tile data doesn't need to change then setting this value to `true` will help with memory
+        * consumption. However if your map is small or you need to update the tiles dynamically, then leave
+        * the default value set.
+        */
+      @JSImport("phaser", "Tilemaps.Parsers.Impact.ParseWeltmeister")
+      @js.native
+      def ParseWeltmeister(name: String, json: js.Object, insertNull: Boolean): typings.phaser.Phaser.Tilemaps.MapData = js.native
+    }
+    
+    @JSImport("phaser", "Tilemaps.Parsers.Parse")
+    @js.native
     def Parse(
       name: String,
       mapFormat: integer,
@@ -511,6 +573,8 @@ object Tilemaps extends js.Object {
       * consumption. However if your map is small or you need to update the tiles dynamically, then leave
       * the default value set.
       */
+    @JSImport("phaser", "Tilemaps.Parsers.Parse")
+    @js.native
     def Parse(
       name: String,
       mapFormat: integer,
@@ -519,6 +583,8 @@ object Tilemaps extends js.Object {
       tileHeight: integer,
       insertNull: Boolean
     ): typings.phaser.Phaser.Tilemaps.MapData = js.native
+    @JSImport("phaser", "Tilemaps.Parsers.Parse")
+    @js.native
     def Parse(
       name: String,
       mapFormat: integer,
@@ -541,6 +607,8 @@ object Tilemaps extends js.Object {
       * consumption. However if your map is small or you need to update the tiles dynamically, then leave
       * the default value set.
       */
+    @JSImport("phaser", "Tilemaps.Parsers.Parse2DArray")
+    @js.native
     def Parse2DArray(
       name: String,
       data: js.Array[js.Array[integer]],
@@ -562,58 +630,34 @@ object Tilemaps extends js.Object {
       * consumption. However if your map is small or you need to update the tiles dynamically, then leave
       * the default value set.
       */
+    @JSImport("phaser", "Tilemaps.Parsers.ParseCSV")
+    @js.native
     def ParseCSV(name: String, data: String, tileWidth: integer, tileHeight: integer, insertNull: Boolean): typings.phaser.Phaser.Tilemaps.MapData = js.native
     
-    @js.native
-    object Impact extends js.Object {
-      
-      /**
-        * Parses all tilemap layers in an Impact JSON object into new LayerData objects.
-        * @param json The Impact JSON object.
-        * @param insertNull Controls how empty tiles, tiles with an index of -1, in the map
-        * data are handled (see {@link Phaser.Tilemaps.Parsers.Tiled.ParseJSONTiled}).
-        */
-      def ParseTileLayers(json: js.Object, insertNull: Boolean): js.Array[typings.phaser.Phaser.Tilemaps.LayerData] = js.native
-      
-      /**
-        * Tilesets and Image Collections
-        * @param json The Impact JSON data.
-        */
-      def ParseTilesets(json: js.Object): js.Array[_] = js.native
-      
-      /**
-        * Parses a Weltmeister JSON object into a new MapData object.
-        * @param name The name of the tilemap, used to set the name on the MapData.
-        * @param json The Weltmeister JSON object.
-        * @param insertNull Controls how empty tiles, tiles with an index of -1, in the map
-        * data are handled. If `true`, empty locations will get a value of `null`. If `false`, empty
-        * location will get a Tile object with an index of -1. If you've a large sparsely populated map and
-        * the tile data doesn't need to change then setting this value to `true` will help with memory
-        * consumption. However if your map is small or you need to update the tiles dynamically, then leave
-        * the default value set.
-        */
-      def ParseWeltmeister(name: String, json: js.Object, insertNull: Boolean): typings.phaser.Phaser.Tilemaps.MapData = js.native
-    }
-    
-    @js.native
-    object Tiled extends js.Object {
+    object Tiled {
       
       /**
         * Copy properties from tileset to tiles.
         * @param mapData The Map Data object.
         */
+      @JSImport("phaser", "Tilemaps.Parsers.Tiled.AssignTileProperties")
+      @js.native
       def AssignTileProperties(mapData: typings.phaser.Phaser.Tilemaps.MapData): Unit = js.native
       
       /**
         * Decode base-64 encoded data, for example as exported by Tiled.
         * @param data Base-64 encoded data to decode.
         */
+      @JSImport("phaser", "Tilemaps.Parsers.Tiled.Base64Decode")
+      @js.native
       def Base64Decode(data: js.Object): js.Array[_] = js.native
       
       /**
         * Master list of tiles -> x, y, index in tileset.
         * @param mapData The Map Data object.
         */
+      @JSImport("phaser", "Tilemaps.Parsers.Tiled.BuildTilesetIndex")
+      @js.native
       def BuildTilesetIndex(mapData: typings.phaser.Phaser.Tilemaps.MapData): js.Array[_] = js.native
       
       /**
@@ -622,9 +666,17 @@ object Tilemaps extends js.Object {
         * @param currentl The current group layer from the Tiled JSON file.
         * @param parentstate The state of the parent group (if any).
         */
+      @JSImport("phaser", "Tilemaps.Parsers.Tiled.CreateGroupLayer")
+      @js.native
       def CreateGroupLayer(json: js.Object): js.Object = js.native
+      @JSImport("phaser", "Tilemaps.Parsers.Tiled.CreateGroupLayer")
+      @js.native
       def CreateGroupLayer(json: js.Object, currentl: js.UndefOr[scala.Nothing], parentstate: js.Object): js.Object = js.native
+      @JSImport("phaser", "Tilemaps.Parsers.Tiled.CreateGroupLayer")
+      @js.native
       def CreateGroupLayer(json: js.Object, currentl: js.Object): js.Object = js.native
+      @JSImport("phaser", "Tilemaps.Parsers.Tiled.CreateGroupLayer")
+      @js.native
       def CreateGroupLayer(json: js.Object, currentl: js.Object, parentstate: js.Object): js.Object = js.native
       
       /**
@@ -632,12 +684,16 @@ object Tilemaps extends js.Object {
         * http://docs.mapeditor.org/en/latest/reference/tmx-map-format/
         * @param gid A Tiled GID.
         */
+      @JSImport("phaser", "Tilemaps.Parsers.Tiled.ParseGID")
+      @js.native
       def ParseGID(gid: Double): GIDData = js.native
       
       /**
         * Parses a Tiled JSON object into an array of objects with details about the image layers.
         * @param json The Tiled JSON object.
         */
+      @JSImport("phaser", "Tilemaps.Parsers.Tiled.ParseImageLayers")
+      @js.native
       def ParseImageLayers(json: js.Object): js.Array[_] = js.native
       
       /**
@@ -651,6 +707,8 @@ object Tilemaps extends js.Object {
         * consumption. However if your map is small or you need to update the tiles dynamically, then leave
         * the default value set.
         */
+      @JSImport("phaser", "Tilemaps.Parsers.Tiled.ParseJSONTiled")
+      @js.native
       def ParseJSONTiled(name: String, json: js.Object, insertNull: Boolean): typings.phaser.Phaser.Tilemaps.MapData = js.native
       
       /**
@@ -659,15 +717,25 @@ object Tilemaps extends js.Object {
         * @param offsetX Optional additional offset to apply to the object's x property. Defaults to 0. Default 0.
         * @param offsetY Optional additional offset to apply to the object's y property. Defaults to 0. Default 0.
         */
+      @JSImport("phaser", "Tilemaps.Parsers.Tiled.ParseObject")
+      @js.native
       def ParseObject(tiledObject: js.Object): js.Object = js.native
+      @JSImport("phaser", "Tilemaps.Parsers.Tiled.ParseObject")
+      @js.native
       def ParseObject(tiledObject: js.Object, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): js.Object = js.native
+      @JSImport("phaser", "Tilemaps.Parsers.Tiled.ParseObject")
+      @js.native
       def ParseObject(tiledObject: js.Object, offsetX: Double): js.Object = js.native
+      @JSImport("phaser", "Tilemaps.Parsers.Tiled.ParseObject")
+      @js.native
       def ParseObject(tiledObject: js.Object, offsetX: Double, offsetY: Double): js.Object = js.native
       
       /**
         * Parses a Tiled JSON object into an array of ObjectLayer objects.
         * @param json The Tiled JSON object.
         */
+      @JSImport("phaser", "Tilemaps.Parsers.Tiled.ParseObjectLayers")
+      @js.native
       def ParseObjectLayers(json: js.Object): js.Array[_] = js.native
       
       /**
@@ -676,12 +744,16 @@ object Tilemaps extends js.Object {
         * @param insertNull Controls how empty tiles, tiles with an index of -1, in the map
         * data are handled (see {@link Phaser.Tilemaps.Parsers.Tiled.ParseJSONTiled}).
         */
+      @JSImport("phaser", "Tilemaps.Parsers.Tiled.ParseTileLayers")
+      @js.native
       def ParseTileLayers(json: js.Object, insertNull: Boolean): js.Array[typings.phaser.Phaser.Tilemaps.LayerData] = js.native
       
       /**
         * Tilesets and Image Collections
         * @param json The Tiled JSON data.
         */
+      @JSImport("phaser", "Tilemaps.Parsers.Tiled.ParseTilesets")
+      @js.native
       def ParseTilesets(json: js.Object): js.Object = js.native
     }
   }
@@ -695,6 +767,7 @@ object Tilemaps extends js.Object {
     * 
     * Use a Static Tilemap Layer instead of a Dynamic Tilemap Layer when you don't need tile manipulation features.
     */
+  @JSImport("phaser", "Tilemaps.StaticTilemapLayer")
   @js.native
   class StaticTilemapLayer protected ()
     extends typings.phaser.Phaser.Tilemaps.StaticTilemapLayer {
@@ -801,6 +874,7 @@ object Tilemaps extends js.Object {
     * representation, so its position information is stored without factoring in scroll, layer
     * scale or layer position.
     */
+  @JSImport("phaser", "Tilemaps.Tile")
   @js.native
   class Tile protected ()
     extends typings.phaser.Phaser.Tilemaps.Tile {
@@ -861,6 +935,7 @@ object Tilemaps extends js.Object {
     * child called 'Layer 1'. In the Tilemap object, 'Layer 1' will have the name
     * 'ParentGroup/Layer 1'.
     */
+  @JSImport("phaser", "Tilemaps.Tilemap")
   @js.native
   class Tilemap protected ()
     extends typings.phaser.Phaser.Tilemaps.Tilemap {
@@ -876,6 +951,7 @@ object Tilemaps extends js.Object {
     * A Tileset is a combination of an image containing the tiles and a container for data about
     * each tile.
     */
+  @JSImport("phaser", "Tilemaps.Tileset")
   @js.native
   class Tileset protected ()
     extends typings.phaser.Phaser.Tilemaps.Tileset {

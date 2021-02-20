@@ -1,15 +1,20 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/operators/first", JSImport.Namespace)
-@js.native
-object operatorsFirstMod extends js.Object {
+object operatorsFirstMod {
   
+  @JSImport("rxjs/operators/first", "first")
+  @js.native
   def first[T, D](): js.Any = js.native
+  @JSImport("rxjs/operators/first", "first")
+  @js.native
   def first[T, D](predicate: js.UndefOr[scala.Nothing], defaultValue: D): js.Any = js.native
+  @JSImport("rxjs/operators/first", "first")
+  @js.native
   def first[T, S /* <: T */](
     predicate: js.Function3[
       /* value */ T, 
@@ -18,6 +23,8 @@ object operatorsFirstMod extends js.Object {
       /* is S */ Boolean
     ]
   ): js.Any = js.native
+  @JSImport("rxjs/operators/first", "first")
+  @js.native
   def first[T, S /* <: T */](
     predicate: js.Function3[
       /* value */ T, 
@@ -27,8 +34,11 @@ object operatorsFirstMod extends js.Object {
     ],
     defaultValue: S
   ): js.Any = js.native
+  @JSImport("rxjs/operators/first", "first")
+  @js.native
   def first[T, D](predicate: Null, defaultValue: D): js.Any = js.native
-  @JSName("first")
+  @JSImport("rxjs/operators/first", "first")
+  @js.native
   def first_TD[T, D](
     predicate: js.Function3[
       /* value */ T, 
@@ -37,7 +47,8 @@ object operatorsFirstMod extends js.Object {
       Boolean
     ]
   ): js.Any = js.native
-  @JSName("first")
+  @JSImport("rxjs/operators/first", "first")
+  @js.native
   def first_TD[T, D](
     predicate: js.Function3[
       /* value */ T, 

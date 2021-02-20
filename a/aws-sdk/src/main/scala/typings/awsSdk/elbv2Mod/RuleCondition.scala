@@ -1,11 +1,12 @@
 package typings.awsSdk.elbv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleCondition extends js.Object {
+trait RuleCondition extends StObject {
   
   /**
     * The field in the HTTP request. The following are the possible values:    http-header     http-request-method     host-header     path-pattern     query-string     source-ip   
@@ -56,69 +57,57 @@ object RuleCondition {
   }
   
   @scala.inline
-  implicit class RuleConditionOps[Self <: RuleCondition] (val x: Self) extends AnyVal {
+  implicit class RuleConditionMutableBuilder[Self <: RuleCondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setField(value: ConditionFieldName): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldUndefined: Self = StObject.set(x, "Field", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostHeaderConfig(value: HostHeaderConditionConfig): Self = StObject.set(x, "HostHeaderConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: ConditionFieldName): Self = this.set("Field", value.asInstanceOf[js.Any])
+    def setHostHeaderConfigUndefined: Self = StObject.set(x, "HostHeaderConfig", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("Field", js.undefined)
+    def setHttpHeaderConfig(value: HttpHeaderConditionConfig): Self = StObject.set(x, "HttpHeaderConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostHeaderConfig(value: HostHeaderConditionConfig): Self = this.set("HostHeaderConfig", value.asInstanceOf[js.Any])
+    def setHttpHeaderConfigUndefined: Self = StObject.set(x, "HttpHeaderConfig", js.undefined)
     
     @scala.inline
-    def deleteHostHeaderConfig: Self = this.set("HostHeaderConfig", js.undefined)
+    def setHttpRequestMethodConfig(value: HttpRequestMethodConditionConfig): Self = StObject.set(x, "HttpRequestMethodConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpHeaderConfig(value: HttpHeaderConditionConfig): Self = this.set("HttpHeaderConfig", value.asInstanceOf[js.Any])
+    def setHttpRequestMethodConfigUndefined: Self = StObject.set(x, "HttpRequestMethodConfig", js.undefined)
     
     @scala.inline
-    def deleteHttpHeaderConfig: Self = this.set("HttpHeaderConfig", js.undefined)
+    def setPathPatternConfig(value: PathPatternConditionConfig): Self = StObject.set(x, "PathPatternConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpRequestMethodConfig(value: HttpRequestMethodConditionConfig): Self = this.set("HttpRequestMethodConfig", value.asInstanceOf[js.Any])
+    def setPathPatternConfigUndefined: Self = StObject.set(x, "PathPatternConfig", js.undefined)
     
     @scala.inline
-    def deleteHttpRequestMethodConfig: Self = this.set("HttpRequestMethodConfig", js.undefined)
+    def setQueryStringConfig(value: QueryStringConditionConfig): Self = StObject.set(x, "QueryStringConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathPatternConfig(value: PathPatternConditionConfig): Self = this.set("PathPatternConfig", value.asInstanceOf[js.Any])
+    def setQueryStringConfigUndefined: Self = StObject.set(x, "QueryStringConfig", js.undefined)
     
     @scala.inline
-    def deletePathPatternConfig: Self = this.set("PathPatternConfig", js.undefined)
+    def setSourceIpConfig(value: SourceIpConditionConfig): Self = StObject.set(x, "SourceIpConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryStringConfig(value: QueryStringConditionConfig): Self = this.set("QueryStringConfig", value.asInstanceOf[js.Any])
+    def setSourceIpConfigUndefined: Self = StObject.set(x, "SourceIpConfig", js.undefined)
     
     @scala.inline
-    def deleteQueryStringConfig: Self = this.set("QueryStringConfig", js.undefined)
+    def setValues(value: ListOfString): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceIpConfig(value: SourceIpConditionConfig): Self = this.set("SourceIpConfig", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
     @scala.inline
-    def deleteSourceIpConfig: Self = this.set("SourceIpConfig", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: StringValue*): Self = this.set("Values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: ListOfString): Self = this.set("Values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("Values", js.undefined)
+    def setValuesVarargs(value: StringValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

@@ -2,19 +2,19 @@ package typings.materialUi
 
 import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/maps/directions", JSImport.Namespace)
-@js.native
-object directionsMod extends js.Object {
+object directionsMod {
   
+  @JSImport("material-ui/svg-icons/maps/directions", JSImport.Default)
+  @js.native
+  class default () extends MapsDirections
+  
+  @JSImport("material-ui/svg-icons/maps/directions", "MapsDirections")
   @js.native
   class MapsDirections ()
-    extends Component[SvgIconProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
 }

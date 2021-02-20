@@ -1,13 +1,13 @@
 package typings.passportAnonymous
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("passport-anonymous", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("passport-anonymous", "Strategy")
   @js.native
   class Strategy ()
     extends typings.passport.mod.Strategy {

@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListFunctionsRequest extends js.Object {
+trait ListFunctionsRequest extends StObject {
   
   /**
     * Set to ALL to include entries for all published versions of each function.
@@ -36,42 +37,30 @@ object ListFunctionsRequest {
   }
   
   @scala.inline
-  implicit class ListFunctionsRequestOps[Self <: ListFunctionsRequest] (val x: Self) extends AnyVal {
+  implicit class ListFunctionsRequestMutableBuilder[Self <: ListFunctionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFunctionVersion(value: FunctionVersion): Self = StObject.set(x, "FunctionVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFunctionVersionUndefined: Self = StObject.set(x, "FunctionVersion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionVersion(value: FunctionVersion): Self = this.set("FunctionVersion", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def deleteFunctionVersion: Self = this.set("FunctionVersion", js.undefined)
+    def setMasterRegion(value: MasterRegion): Self = StObject.set(x, "MasterRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setMasterRegionUndefined: Self = StObject.set(x, "MasterRegion", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMaxItems(value: MaxListItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterRegion(value: MasterRegion): Self = this.set("MasterRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMasterRegion: Self = this.set("MasterRegion", js.undefined)
-    
-    @scala.inline
-    def setMaxItems(value: MaxListItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
+    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
   }
 }

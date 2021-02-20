@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.DOM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.resizer
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`input-list-button`
 */
-trait PseudoType extends js.Object
+trait PseudoType extends StObject
 object PseudoType {
   
   @scala.inline

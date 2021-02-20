@@ -4,12 +4,13 @@ import typings.chromeApps.chrome.events.Event
 import typings.chromeApps.chrome.fileBrowserHandler.FileBrowserHandleExecuteId
 import typings.chromeApps.chrome.fileBrowserHandler.SelectFileParameters
 import typings.chromeApps.chrome.fileBrowserHandler.SelectionResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeoffileBrowserHandler extends js.Object {
+trait TypeoffileBrowserHandler extends StObject {
   
   /**
     * Fired when file system action is executed from ChromeOS file browser.
@@ -40,24 +41,12 @@ object TypeoffileBrowserHandler {
   }
   
   @scala.inline
-  implicit class TypeoffileBrowserHandlerOps[Self <: TypeoffileBrowserHandler] (val x: Self) extends AnyVal {
+  implicit class TypeoffileBrowserHandlerMutableBuilder[Self <: TypeoffileBrowserHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnExecute(value: Event[js.Function2[/* id */ FileBrowserHandleExecuteId, /* details */ Entries, Unit]]): Self = StObject.set(x, "onExecute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnExecute(value: Event[js.Function2[/* id */ FileBrowserHandleExecuteId, /* details */ Entries, Unit]]): Self = this.set("onExecute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectFile(value: (SelectFileParameters, js.Function1[/* result */ SelectionResult, Unit]) => Unit): Self = this.set("selectFile", js.Any.fromFunction2(value))
+    def setSelectFile(value: (SelectFileParameters, js.Function1[/* result */ SelectionResult, Unit]) => Unit): Self = StObject.set(x, "selectFile", js.Any.fromFunction2(value))
   }
 }

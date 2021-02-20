@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangeResourceRecordSetsRequest extends js.Object {
+trait ChangeResourceRecordSetsRequest extends StObject {
   
   /**
     * A complex type that contains an optional comment and the Changes element.
@@ -26,24 +27,12 @@ object ChangeResourceRecordSetsRequest {
   }
   
   @scala.inline
-  implicit class ChangeResourceRecordSetsRequestOps[Self <: ChangeResourceRecordSetsRequest] (val x: Self) extends AnyVal {
+  implicit class ChangeResourceRecordSetsRequestMutableBuilder[Self <: ChangeResourceRecordSetsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeBatch(value: ChangeBatch): Self = StObject.set(x, "ChangeBatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChangeBatch(value: ChangeBatch): Self = this.set("ChangeBatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = this.set("HostedZoneId", value.asInstanceOf[js.Any])
+    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
   }
 }

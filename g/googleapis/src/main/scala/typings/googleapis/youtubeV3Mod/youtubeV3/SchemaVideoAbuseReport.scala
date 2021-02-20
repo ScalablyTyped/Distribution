@@ -1,11 +1,12 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaVideoAbuseReport extends js.Object {
+trait SchemaVideoAbuseReport extends StObject {
   
   /**
     * Additional comments regarding the abuse report.
@@ -44,48 +45,36 @@ object SchemaVideoAbuseReport {
   }
   
   @scala.inline
-  implicit class SchemaVideoAbuseReportOps[Self <: SchemaVideoAbuseReport] (val x: Self) extends AnyVal {
+  implicit class SchemaVideoAbuseReportMutableBuilder[Self <: SchemaVideoAbuseReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: String): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setReasonId(value: String): Self = StObject.set(x, "reasonId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setReasonIdUndefined: Self = StObject.set(x, "reasonId", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setSecondaryReasonId(value: String): Self = StObject.set(x, "secondaryReasonId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReasonId(value: String): Self = this.set("reasonId", value.asInstanceOf[js.Any])
+    def setSecondaryReasonIdUndefined: Self = StObject.set(x, "secondaryReasonId", js.undefined)
     
     @scala.inline
-    def deleteReasonId: Self = this.set("reasonId", js.undefined)
+    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondaryReasonId(value: String): Self = this.set("secondaryReasonId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondaryReasonId: Self = this.set("secondaryReasonId", js.undefined)
-    
-    @scala.inline
-    def setVideoId(value: String): Self = this.set("videoId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoId: Self = this.set("videoId", js.undefined)
+    def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
   }
 }

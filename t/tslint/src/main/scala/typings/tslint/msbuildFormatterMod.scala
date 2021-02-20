@@ -2,20 +2,27 @@ package typings.tslint
 
 import typings.tslint.abstractFormatterMod.AbstractFormatter
 import typings.tslint.formatterMod.IFormatterMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tslint/lib/formatters/msbuildFormatter", JSImport.Namespace)
-@js.native
-object msbuildFormatterMod extends js.Object {
+object msbuildFormatterMod {
   
+  @JSImport("tslint/lib/formatters/msbuildFormatter", "Formatter")
   @js.native
   class Formatter () extends AbstractFormatter
   /* static members */
-  @js.native
-  object Formatter extends js.Object {
+  object Formatter {
     
-    var metadata: IFormatterMetadata = js.native
+    @JSImport("tslint/lib/formatters/msbuildFormatter", "Formatter")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("tslint/lib/formatters/msbuildFormatter", "Formatter.metadata")
+    @js.native
+    def metadata: IFormatterMetadata = js.native
+    @scala.inline
+    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

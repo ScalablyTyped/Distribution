@@ -4,6 +4,7 @@ import typings.react.mod.ReactElement
 import typings.victory.anon.`0`
 import typings.victory.anon.`2`
 import typings.victory.anon.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Common properties
   */
 @js.native
-trait VictoryCommonProps extends js.Object {
+trait VictoryCommonProps extends StObject {
   
   /**
     * The animate prop specifies props for VictoryAnimation to use.
@@ -158,102 +159,90 @@ object VictoryCommonProps {
   }
   
   @scala.inline
-  implicit class VictoryCommonPropsOps[Self <: VictoryCommonProps] (val x: Self) extends AnyVal {
+  implicit class VictoryCommonPropsMutableBuilder[Self <: VictoryCommonProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: Boolean | AnimatePropTypeInterface): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerComponent(value: ReactElement): Self = StObject.set(x, "containerComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimate(value: Boolean | AnimatePropTypeInterface): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setContainerComponentUndefined: Self = StObject.set(x, "containerComponent", js.undefined)
     
     @scala.inline
-    def deleteAnimate: Self = this.set("animate", js.undefined)
+    def setGroupComponent(value: ReactElement): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerComponent(value: ReactElement): Self = this.set("containerComponent", value.asInstanceOf[js.Any])
+    def setGroupComponentUndefined: Self = StObject.set(x, "groupComponent", js.undefined)
     
     @scala.inline
-    def deleteContainerComponent: Self = this.set("containerComponent", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupComponent(value: ReactElement): Self = this.set("groupComponent", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteGroupComponent: Self = this.set("groupComponent", js.undefined)
+    def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setMaxDomain(value: Double | `0`): Self = StObject.set(x, "maxDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontal(value: Boolean): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    def setMaxDomainUndefined: Self = StObject.set(x, "maxDomain", js.undefined)
     
     @scala.inline
-    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    def setMinDomain(value: Double | `0`): Self = StObject.set(x, "minDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDomain(value: Double | `0`): Self = this.set("maxDomain", value.asInstanceOf[js.Any])
+    def setMinDomainUndefined: Self = StObject.set(x, "minDomain", js.undefined)
     
     @scala.inline
-    def deleteMaxDomain: Self = this.set("maxDomain", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinDomain(value: Double | `0`): Self = this.set("minDomain", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMinDomain: Self = this.set("minDomain", js.undefined)
+    def setPadding(value: PaddingProps): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setScale(value: ScalePropType | D3Scale | `2`): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: PaddingProps): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setSingleQuadrantDomainPadding(value: Boolean | `3`): Self = StObject.set(x, "singleQuadrantDomainPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: ScalePropType | D3Scale | `2`): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setSingleQuadrantDomainPaddingUndefined: Self = StObject.set(x, "singleQuadrantDomainPadding", js.undefined)
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingleQuadrantDomainPadding(value: Boolean | `3`): Self = this.set("singleQuadrantDomainPadding", value.asInstanceOf[js.Any])
+    def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
     
     @scala.inline
-    def deleteSingleQuadrantDomainPadding: Self = this.set("singleQuadrantDomainPadding", js.undefined)
+    def setTheme(value: VictoryThemeDefinition): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandalone(value: Boolean): Self = this.set("standalone", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteStandalone: Self = this.set("standalone", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: VictoryThemeDefinition): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

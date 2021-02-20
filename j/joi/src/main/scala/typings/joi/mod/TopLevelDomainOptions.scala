@@ -1,12 +1,13 @@
 package typings.joi.mod
 
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopLevelDomainOptions extends js.Object {
+trait TopLevelDomainOptions extends StObject {
   
   /**
     * - `true` to use the IANA list of registered TLDs. This is the default value.
@@ -29,36 +30,24 @@ object TopLevelDomainOptions {
   }
   
   @scala.inline
-  implicit class TopLevelDomainOptionsOps[Self <: TopLevelDomainOptions] (val x: Self) extends AnyVal {
+  implicit class TopLevelDomainOptionsMutableBuilder[Self <: TopLevelDomainOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow(value: Set[String] | js.Array[String] | Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowVarargs(value: String*): Self = StObject.set(x, "allow", js.Array(value :_*))
     
     @scala.inline
-    def setAllowVarargs(value: String*): Self = this.set("allow", js.Array(value :_*))
+    def setDeny(value: Set[String] | js.Array[String]): Self = StObject.set(x, "deny", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow(value: Set[String] | js.Array[String] | Boolean): Self = this.set("allow", value.asInstanceOf[js.Any])
+    def setDenyUndefined: Self = StObject.set(x, "deny", js.undefined)
     
     @scala.inline
-    def deleteAllow: Self = this.set("allow", js.undefined)
-    
-    @scala.inline
-    def setDenyVarargs(value: String*): Self = this.set("deny", js.Array(value :_*))
-    
-    @scala.inline
-    def setDeny(value: Set[String] | js.Array[String]): Self = this.set("deny", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeny: Self = this.set("deny", js.undefined)
+    def setDenyVarargs(value: String*): Self = StObject.set(x, "deny", js.Array(value :_*))
   }
 }

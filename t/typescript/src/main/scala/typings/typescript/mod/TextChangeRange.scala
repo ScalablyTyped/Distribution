@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextChangeRange extends js.Object {
+trait TextChangeRange extends StObject {
   
   var newLength: Double = js.native
   
@@ -20,24 +21,12 @@ object TextChangeRange {
   }
   
   @scala.inline
-  implicit class TextChangeRangeOps[Self <: TextChangeRange] (val x: Self) extends AnyVal {
+  implicit class TextChangeRangeMutableBuilder[Self <: TextChangeRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewLength(value: Double): Self = StObject.set(x, "newLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNewLength(value: Double): Self = this.set("newLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpan(value: TextSpan): Self = this.set("span", value.asInstanceOf[js.Any])
+    def setSpan(value: TextSpan): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
   }
 }

@@ -6,6 +6,7 @@ import typings.xlsx.xlsxStrings.binary
 import typings.xlsx.xlsxStrings.buffer
 import typings.xlsx.xlsxStrings.file
 import typings.xlsx.xlsxStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,111 +94,99 @@ object ParsingOptions {
   }
   
   @scala.inline
-  implicit class ParsingOptionsOps[Self <: ParsingOptions] (val x: Self) extends AnyVal {
+  implicit class ParsingOptionsMutableBuilder[Self <: ParsingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBookDeps(value: Boolean): Self = StObject.set(x, "bookDeps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBookDepsUndefined: Self = StObject.set(x, "bookDeps", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBookFiles(value: Boolean): Self = StObject.set(x, "bookFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBookDeps(value: Boolean): Self = this.set("bookDeps", value.asInstanceOf[js.Any])
+    def setBookFilesUndefined: Self = StObject.set(x, "bookFiles", js.undefined)
     
     @scala.inline
-    def deleteBookDeps: Self = this.set("bookDeps", js.undefined)
+    def setBookProps(value: Boolean): Self = StObject.set(x, "bookProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBookFiles(value: Boolean): Self = this.set("bookFiles", value.asInstanceOf[js.Any])
+    def setBookPropsUndefined: Self = StObject.set(x, "bookProps", js.undefined)
     
     @scala.inline
-    def deleteBookFiles: Self = this.set("bookFiles", js.undefined)
+    def setBookSheets(value: Boolean): Self = StObject.set(x, "bookSheets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBookProps(value: Boolean): Self = this.set("bookProps", value.asInstanceOf[js.Any])
+    def setBookSheetsUndefined: Self = StObject.set(x, "bookSheets", js.undefined)
     
     @scala.inline
-    def deleteBookProps: Self = this.set("bookProps", js.undefined)
+    def setCellFormula(value: Boolean): Self = StObject.set(x, "cellFormula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBookSheets(value: Boolean): Self = this.set("bookSheets", value.asInstanceOf[js.Any])
+    def setCellFormulaUndefined: Self = StObject.set(x, "cellFormula", js.undefined)
     
     @scala.inline
-    def deleteBookSheets: Self = this.set("bookSheets", js.undefined)
+    def setCellHTML(value: Boolean): Self = StObject.set(x, "cellHTML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellFormula(value: Boolean): Self = this.set("cellFormula", value.asInstanceOf[js.Any])
+    def setCellHTMLUndefined: Self = StObject.set(x, "cellHTML", js.undefined)
     
     @scala.inline
-    def deleteCellFormula: Self = this.set("cellFormula", js.undefined)
+    def setCellNF(value: Boolean): Self = StObject.set(x, "cellNF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellHTML(value: Boolean): Self = this.set("cellHTML", value.asInstanceOf[js.Any])
+    def setCellNFUndefined: Self = StObject.set(x, "cellNF", js.undefined)
     
     @scala.inline
-    def deleteCellHTML: Self = this.set("cellHTML", js.undefined)
+    def setCellText(value: Boolean): Self = StObject.set(x, "cellText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellNF(value: Boolean): Self = this.set("cellNF", value.asInstanceOf[js.Any])
+    def setCellTextUndefined: Self = StObject.set(x, "cellText", js.undefined)
     
     @scala.inline
-    def deleteCellNF: Self = this.set("cellNF", js.undefined)
+    def setCodepage(value: Double): Self = StObject.set(x, "codepage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellText(value: Boolean): Self = this.set("cellText", value.asInstanceOf[js.Any])
+    def setCodepageUndefined: Self = StObject.set(x, "codepage", js.undefined)
     
     @scala.inline
-    def deleteCellText: Self = this.set("cellText", js.undefined)
+    def setDateNF(value: String): Self = StObject.set(x, "dateNF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodepage(value: Double): Self = this.set("codepage", value.asInstanceOf[js.Any])
+    def setDateNFUndefined: Self = StObject.set(x, "dateNF", js.undefined)
     
     @scala.inline
-    def deleteCodepage: Self = this.set("codepage", js.undefined)
+    def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateNF(value: String): Self = this.set("dateNF", value.asInstanceOf[js.Any])
+    def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
     
     @scala.inline
-    def deleteDateNF: Self = this.set("dateNF", js.undefined)
+    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDense(value: Boolean): Self = this.set("dense", value.asInstanceOf[js.Any])
+    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
     @scala.inline
-    def deleteDense: Self = this.set("dense", js.undefined)
+    def setSheetRows(value: Double): Self = StObject.set(x, "sheetRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaw(value: Boolean): Self = this.set("raw", value.asInstanceOf[js.Any])
+    def setSheetRowsUndefined: Self = StObject.set(x, "sheetRows", js.undefined)
     
     @scala.inline
-    def deleteRaw: Self = this.set("raw", js.undefined)
+    def setSheets(value: Double | String | (js.Array[Double | String])): Self = StObject.set(x, "sheets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSheetRows(value: Double): Self = this.set("sheetRows", value.asInstanceOf[js.Any])
+    def setSheetsUndefined: Self = StObject.set(x, "sheets", js.undefined)
     
     @scala.inline
-    def deleteSheetRows: Self = this.set("sheetRows", js.undefined)
+    def setSheetsVarargs(value: (Double | String)*): Self = StObject.set(x, "sheets", js.Array(value :_*))
     
     @scala.inline
-    def setSheetsVarargs(value: (Double | String)*): Self = this.set("sheets", js.Array(value :_*))
+    def setType(value: base64 | binary | buffer | file | array | string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSheets(value: Double | String | (js.Array[Double | String])): Self = this.set("sheets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSheets: Self = this.set("sheets", js.undefined)
-    
-    @scala.inline
-    def setType(value: base64 | binary | buffer | file | array | string): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

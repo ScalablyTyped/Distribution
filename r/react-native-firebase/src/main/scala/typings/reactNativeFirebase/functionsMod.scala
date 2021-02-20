@@ -1,12 +1,11 @@
 package typings.reactNativeFirebase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-firebase/functions", JSImport.Namespace)
-@js.native
-object functionsMod extends js.Object {
+object functionsMod {
   
   type Functions = typings.reactNativeFirebase.mod.RNFirebase.functions.Functions
   

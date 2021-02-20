@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Globalization.DateTimeFormatting
 
 import typings.winrt.Windows.Foundation.Collections.IIterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDateTimeFormatterFactory extends js.Object {
+trait IDateTimeFormatterFactory extends StObject {
   
   def createDateTimeFormatter(formatTemplate: String): DateTimeFormatter = js.native
   
@@ -71,43 +72,31 @@ object IDateTimeFormatterFactory {
   }
   
   @scala.inline
-  implicit class IDateTimeFormatterFactoryOps[Self <: IDateTimeFormatterFactory] (val x: Self) extends AnyVal {
+  implicit class IDateTimeFormatterFactoryMutableBuilder[Self <: IDateTimeFormatterFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateDateTimeFormatter(value: String => DateTimeFormatter): Self = StObject.set(x, "createDateTimeFormatter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateDateTimeFormatterContext(value: (String, IIterable[String], String, String, String) => DateTimeFormatter): Self = StObject.set(x, "createDateTimeFormatterContext", js.Any.fromFunction5(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateDateTimeFormatter(value: String => DateTimeFormatter): Self = this.set("createDateTimeFormatter", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateDateTimeFormatterContext(value: (String, IIterable[String], String, String, String) => DateTimeFormatter): Self = this.set("createDateTimeFormatterContext", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setCreateDateTimeFormatterDate(value: (YearFormat, MonthFormat, DayFormat, DayOfWeekFormat) => DateTimeFormatter): Self = this.set("createDateTimeFormatterDate", js.Any.fromFunction4(value))
+    def setCreateDateTimeFormatterDate(value: (YearFormat, MonthFormat, DayFormat, DayOfWeekFormat) => DateTimeFormatter): Self = StObject.set(x, "createDateTimeFormatterDate", js.Any.fromFunction4(value))
     
     @scala.inline
     def setCreateDateTimeFormatterDateTimeContext(
       value: (YearFormat, MonthFormat, DayFormat, DayOfWeekFormat, HourFormat, MinuteFormat, SecondFormat, IIterable[String], String, String, String) => DateTimeFormatter
-    ): Self = this.set("createDateTimeFormatterDateTimeContext", js.Any.fromFunction11(value))
+    ): Self = StObject.set(x, "createDateTimeFormatterDateTimeContext", js.Any.fromFunction11(value))
     
     @scala.inline
     def setCreateDateTimeFormatterDateTimeLanguages(
       value: (YearFormat, MonthFormat, DayFormat, DayOfWeekFormat, HourFormat, MinuteFormat, SecondFormat, IIterable[String]) => DateTimeFormatter
-    ): Self = this.set("createDateTimeFormatterDateTimeLanguages", js.Any.fromFunction8(value))
+    ): Self = StObject.set(x, "createDateTimeFormatterDateTimeLanguages", js.Any.fromFunction8(value))
     
     @scala.inline
-    def setCreateDateTimeFormatterLanguages(value: (String, IIterable[String]) => DateTimeFormatter): Self = this.set("createDateTimeFormatterLanguages", js.Any.fromFunction2(value))
+    def setCreateDateTimeFormatterLanguages(value: (String, IIterable[String]) => DateTimeFormatter): Self = StObject.set(x, "createDateTimeFormatterLanguages", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateDateTimeFormatterTime(value: (HourFormat, MinuteFormat, SecondFormat) => DateTimeFormatter): Self = this.set("createDateTimeFormatterTime", js.Any.fromFunction3(value))
+    def setCreateDateTimeFormatterTime(value: (HourFormat, MinuteFormat, SecondFormat) => DateTimeFormatter): Self = StObject.set(x, "createDateTimeFormatterTime", js.Any.fromFunction3(value))
   }
 }

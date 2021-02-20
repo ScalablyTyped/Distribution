@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeClassificationJobResponse extends js.Object {
+trait DescribeClassificationJobResponse extends StObject {
   
   /**
     * The token that was provided to ensure the idempotency of the request to create the job.
@@ -106,129 +107,117 @@ object DescribeClassificationJobResponse {
   }
   
   @scala.inline
-  implicit class DescribeClassificationJobResponseOps[Self <: DescribeClassificationJobResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeClassificationJobResponseMutableBuilder[Self <: DescribeClassificationJobResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientToken(value: string): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedAt(value: timestampIso8601): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: string): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    def setCustomDataIdentifierIds(value: listOfString): Self = StObject.set(x, "customDataIdentifierIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: timestampIso8601): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setCustomDataIdentifierIdsUndefined: Self = StObject.set(x, "customDataIdentifierIds", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setCustomDataIdentifierIdsVarargs(value: string*): Self = StObject.set(x, "customDataIdentifierIds", js.Array(value :_*))
     
     @scala.inline
-    def setCustomDataIdentifierIdsVarargs(value: string*): Self = this.set("customDataIdentifierIds", js.Array(value :_*))
+    def setDescription(value: string): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomDataIdentifierIds(value: listOfString): Self = this.set("customDataIdentifierIds", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCustomDataIdentifierIds: Self = this.set("customDataIdentifierIds", js.undefined)
+    def setInitialRun(value: boolean): Self = StObject.set(x, "initialRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: string): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setInitialRunUndefined: Self = StObject.set(x, "initialRun", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setJobArn(value: string): Self = StObject.set(x, "jobArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialRun(value: boolean): Self = this.set("initialRun", value.asInstanceOf[js.Any])
+    def setJobArnUndefined: Self = StObject.set(x, "jobArn", js.undefined)
     
     @scala.inline
-    def deleteInitialRun: Self = this.set("initialRun", js.undefined)
+    def setJobId(value: string): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobArn(value: string): Self = this.set("jobArn", value.asInstanceOf[js.Any])
+    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
     @scala.inline
-    def deleteJobArn: Self = this.set("jobArn", js.undefined)
+    def setJobStatus(value: JobStatus): Self = StObject.set(x, "jobStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: string): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    def setJobStatusUndefined: Self = StObject.set(x, "jobStatus", js.undefined)
     
     @scala.inline
-    def deleteJobId: Self = this.set("jobId", js.undefined)
+    def setJobType(value: JobType): Self = StObject.set(x, "jobType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobStatus(value: JobStatus): Self = this.set("jobStatus", value.asInstanceOf[js.Any])
+    def setJobTypeUndefined: Self = StObject.set(x, "jobType", js.undefined)
     
     @scala.inline
-    def deleteJobStatus: Self = this.set("jobStatus", js.undefined)
+    def setLastRunErrorStatus(value: LastRunErrorStatus): Self = StObject.set(x, "lastRunErrorStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobType(value: JobType): Self = this.set("jobType", value.asInstanceOf[js.Any])
+    def setLastRunErrorStatusUndefined: Self = StObject.set(x, "lastRunErrorStatus", js.undefined)
     
     @scala.inline
-    def deleteJobType: Self = this.set("jobType", js.undefined)
+    def setLastRunTime(value: timestampIso8601): Self = StObject.set(x, "lastRunTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastRunErrorStatus(value: LastRunErrorStatus): Self = this.set("lastRunErrorStatus", value.asInstanceOf[js.Any])
+    def setLastRunTimeUndefined: Self = StObject.set(x, "lastRunTime", js.undefined)
     
     @scala.inline
-    def deleteLastRunErrorStatus: Self = this.set("lastRunErrorStatus", js.undefined)
+    def setName(value: string): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastRunTime(value: timestampIso8601): Self = this.set("lastRunTime", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLastRunTime: Self = this.set("lastRunTime", js.undefined)
+    def setS3JobDefinition(value: S3JobDefinition): Self = StObject.set(x, "s3JobDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: string): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setS3JobDefinitionUndefined: Self = StObject.set(x, "s3JobDefinition", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSamplingPercentage(value: integer): Self = StObject.set(x, "samplingPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3JobDefinition(value: S3JobDefinition): Self = this.set("s3JobDefinition", value.asInstanceOf[js.Any])
+    def setSamplingPercentageUndefined: Self = StObject.set(x, "samplingPercentage", js.undefined)
     
     @scala.inline
-    def deleteS3JobDefinition: Self = this.set("s3JobDefinition", js.undefined)
+    def setScheduleFrequency(value: JobScheduleFrequency): Self = StObject.set(x, "scheduleFrequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamplingPercentage(value: integer): Self = this.set("samplingPercentage", value.asInstanceOf[js.Any])
+    def setScheduleFrequencyUndefined: Self = StObject.set(x, "scheduleFrequency", js.undefined)
     
     @scala.inline
-    def deleteSamplingPercentage: Self = this.set("samplingPercentage", js.undefined)
+    def setStatistics(value: Statistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleFrequency(value: JobScheduleFrequency): Self = this.set("scheduleFrequency", value.asInstanceOf[js.Any])
+    def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
     
     @scala.inline
-    def deleteScheduleFrequency: Self = this.set("scheduleFrequency", js.undefined)
+    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatistics(value: Statistics): Self = this.set("statistics", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteStatistics: Self = this.set("statistics", js.undefined)
+    def setUserPausedDetails(value: UserPausedDetails): Self = StObject.set(x, "userPausedDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setUserPausedDetails(value: UserPausedDetails): Self = this.set("userPausedDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserPausedDetails: Self = this.set("userPausedDetails", js.undefined)
+    def setUserPausedDetailsUndefined: Self = StObject.set(x, "userPausedDetails", js.undefined)
   }
 }

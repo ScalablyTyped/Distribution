@@ -1,11 +1,12 @@
 package typings.recurlyRecurlyJs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SessionId extends js.Object {
+trait SessionId extends StObject {
   
   var sessionId: js.UndefOr[String] = js.native
 }
@@ -18,24 +19,12 @@ object SessionId {
   }
   
   @scala.inline
-  implicit class SessionIdOps[Self <: SessionId] (val x: Self) extends AnyVal {
+  implicit class SessionIdMutableBuilder[Self <: SessionId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSessionId(value: String): Self = this.set("sessionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionId: Self = this.set("sessionId", js.undefined)
+    def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
   }
 }

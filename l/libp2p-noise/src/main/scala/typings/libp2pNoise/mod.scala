@@ -5,20 +5,23 @@ import typings.buffer.mod.Buffer
 import typings.libp2pNoise.anon.PartialDecoderOptions
 import typings.libp2pNoise.anon.PartiallengthEncoderLengt
 import typings.std.AsyncGenerator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("it-length-prefixed", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("it-length-prefixed", "decode")
+  @js.native
   val decode: Decoder = js.native
   
+  @JSImport("it-length-prefixed", "encode")
+  @js.native
   val encode: Encoder = js.native
   
   @js.native
-  trait Decoder extends js.Object {
+  trait Decoder extends StObject {
     
     def apply(): AsyncGenerator[^, ^, _] = js.native
     def apply(options: PartialDecoderOptions): AsyncGenerator[^, ^, _] = js.native
@@ -32,7 +35,7 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait DecoderOptions extends js.Object {
+  trait DecoderOptions extends StObject {
     
     def lengthDecoder(data: ^): Double = js.native
     def lengthDecoder(data: Buffer): Double = js.native
@@ -45,7 +48,7 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait Encoder extends js.Object {
+  trait Encoder extends StObject {
     
     def apply(): AsyncGenerator[^, Buffer, _] = js.native
     def apply(options: PartiallengthEncoderLengt): AsyncGenerator[^, Buffer, _] = js.native
@@ -59,7 +62,7 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait LengthDecoderFunction extends js.Object {
+  trait LengthDecoderFunction extends StObject {
     
     def apply(data: ^): Double = js.native
     def apply(data: Buffer): Double = js.native
@@ -68,7 +71,7 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait LengthEncoderFunction extends js.Object {
+  trait LengthEncoderFunction extends StObject {
     
     def apply(value: Double, target: Buffer, offset: Double): Double | Buffer = js.native
     

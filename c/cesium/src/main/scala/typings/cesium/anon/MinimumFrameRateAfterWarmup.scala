@@ -1,11 +1,12 @@
 package typings.cesium.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MinimumFrameRateAfterWarmup extends js.Object {
+trait MinimumFrameRateAfterWarmup extends StObject {
   
   var minimumFrameRateAfterWarmup: js.UndefOr[Double] = js.native
   
@@ -28,51 +29,39 @@ object MinimumFrameRateAfterWarmup {
   }
   
   @scala.inline
-  implicit class MinimumFrameRateAfterWarmupOps[Self <: MinimumFrameRateAfterWarmup] (val x: Self) extends AnyVal {
+  implicit class MinimumFrameRateAfterWarmupMutableBuilder[Self <: MinimumFrameRateAfterWarmup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinimumFrameRateAfterWarmup(value: Double): Self = StObject.set(x, "minimumFrameRateAfterWarmup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinimumFrameRateAfterWarmupUndefined: Self = StObject.set(x, "minimumFrameRateAfterWarmup", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinimumFrameRateDuringWarmup(value: Double): Self = StObject.set(x, "minimumFrameRateDuringWarmup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScene(value: typings.cesium.mod.Scene): Self = this.set("scene", value.asInstanceOf[js.Any])
+    def setMinimumFrameRateDuringWarmupUndefined: Self = StObject.set(x, "minimumFrameRateDuringWarmup", js.undefined)
     
     @scala.inline
-    def setMinimumFrameRateAfterWarmup(value: Double): Self = this.set("minimumFrameRateAfterWarmup", value.asInstanceOf[js.Any])
+    def setQuietPeriod(value: Double): Self = StObject.set(x, "quietPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumFrameRateAfterWarmup: Self = this.set("minimumFrameRateAfterWarmup", js.undefined)
+    def setQuietPeriodUndefined: Self = StObject.set(x, "quietPeriod", js.undefined)
     
     @scala.inline
-    def setMinimumFrameRateDuringWarmup(value: Double): Self = this.set("minimumFrameRateDuringWarmup", value.asInstanceOf[js.Any])
+    def setSamplingWindow(value: Double): Self = StObject.set(x, "samplingWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumFrameRateDuringWarmup: Self = this.set("minimumFrameRateDuringWarmup", js.undefined)
+    def setSamplingWindowUndefined: Self = StObject.set(x, "samplingWindow", js.undefined)
     
     @scala.inline
-    def setQuietPeriod(value: Double): Self = this.set("quietPeriod", value.asInstanceOf[js.Any])
+    def setScene(value: typings.cesium.mod.Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuietPeriod: Self = this.set("quietPeriod", js.undefined)
+    def setWarmupPeriod(value: Double): Self = StObject.set(x, "warmupPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamplingWindow(value: Double): Self = this.set("samplingWindow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSamplingWindow: Self = this.set("samplingWindow", js.undefined)
-    
-    @scala.inline
-    def setWarmupPeriod(value: Double): Self = this.set("warmupPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarmupPeriod: Self = this.set("warmupPeriod", js.undefined)
+    def setWarmupPeriodUndefined: Self = StObject.set(x, "warmupPeriod", js.undefined)
   }
 }

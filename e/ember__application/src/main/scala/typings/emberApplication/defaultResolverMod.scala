@@ -1,16 +1,19 @@
 package typings.emberApplication
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/application/-private/default-resolver", JSImport.Namespace)
-@js.native
-object defaultResolverMod extends js.Object {
+object defaultResolverMod {
+  
+  @JSImport("@ember/application/-private/default-resolver", JSImport.Default)
+  @js.native
+  class default () extends DefaultResolver
   
   @js.native
   trait DefaultResolver
-    extends typings.emberObject.mod.default {
+    extends typings.emberEngine.resolverMod.default {
     
     /**
       * This will be set to the Application instance when it is
@@ -25,7 +28,4 @@ object defaultResolverMod extends js.Object {
       */
     def resolve(fullName: String): js.Object = js.native
   }
-  
-  @js.native
-  class default () extends DefaultResolver
 }

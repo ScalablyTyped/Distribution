@@ -1,5 +1,6 @@
 package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The desired state of the Domain Mapping.
   */
 @js.native
-trait SchemaDomainMappingSpec extends js.Object {
+trait SchemaDomainMappingSpec extends StObject {
   
   /**
     * The mode of the certificate.
@@ -38,36 +39,24 @@ object SchemaDomainMappingSpec {
   }
   
   @scala.inline
-  implicit class SchemaDomainMappingSpecOps[Self <: SchemaDomainMappingSpec] (val x: Self) extends AnyVal {
+  implicit class SchemaDomainMappingSpecMutableBuilder[Self <: SchemaDomainMappingSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateMode(value: String): Self = StObject.set(x, "certificateMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateModeUndefined: Self = StObject.set(x, "certificateMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForceOverride(value: Boolean): Self = StObject.set(x, "forceOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateMode(value: String): Self = this.set("certificateMode", value.asInstanceOf[js.Any])
+    def setForceOverrideUndefined: Self = StObject.set(x, "forceOverride", js.undefined)
     
     @scala.inline
-    def deleteCertificateMode: Self = this.set("certificateMode", js.undefined)
+    def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceOverride(value: Boolean): Self = this.set("forceOverride", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceOverride: Self = this.set("forceOverride", js.undefined)
-    
-    @scala.inline
-    def setRouteName(value: String): Self = this.set("routeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRouteName: Self = this.set("routeName", js.undefined)
+    def setRouteNameUndefined: Self = StObject.set(x, "routeName", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BloomFilter extends js.Object {
+trait BloomFilter extends StObject {
   
   def add(value: String): Unit = js.native
   
@@ -38,39 +39,27 @@ object BloomFilter {
   }
   
   @scala.inline
-  implicit class BloomFilterOps[Self <: BloomFilter] (val x: Self) extends AnyVal {
+  implicit class BloomFilterMutableBuilder[Self <: BloomFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: String => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddKeys(value: IIndexable[_] => Unit): Self = StObject.set(x, "addKeys", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBitArray(value: js.Any): Self = StObject.set(x, "bitArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: String => Unit): Self = this.set("add", js.Any.fromFunction1(value))
+    def setComputeHash(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "computeHash", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddKeys(value: IIndexable[_] => Unit): Self = this.set("addKeys", js.Any.fromFunction1(value))
+    def setHashFunctionCount(value: js.Any): Self = StObject.set(x, "hashFunctionCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitArray(value: js.Any): Self = this.set("bitArray", value.asInstanceOf[js.Any])
+    def setIsEquivalent(value: BloomFilter => Boolean): Self = StObject.set(x, "isEquivalent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComputeHash(value: (js.Any, js.Any) => js.Any): Self = this.set("computeHash", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setHashFunctionCount(value: js.Any): Self = this.set("hashFunctionCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsEquivalent(value: BloomFilter => Boolean): Self = this.set("isEquivalent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setProbablyContains(value: String => Boolean): Self = this.set("probablyContains", js.Any.fromFunction1(value))
+    def setProbablyContains(value: String => Boolean): Self = StObject.set(x, "probablyContains", js.Any.fromFunction1(value))
   }
 }

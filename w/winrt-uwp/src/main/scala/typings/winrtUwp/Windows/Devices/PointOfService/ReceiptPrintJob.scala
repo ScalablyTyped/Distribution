@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.Rect
 import typings.winrtUwp.Windows.Graphics.Imaging.BitmapFrame
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a set of printing instructions that you want to run on the receipt printer. */
 @js.native
-trait ReceiptPrintJob extends js.Object {
+trait ReceiptPrintJob extends StObject {
   
   /** Adds an instruction to the printer job to cut the receipt paper completely. */
   def cutPaper(): Unit = js.native

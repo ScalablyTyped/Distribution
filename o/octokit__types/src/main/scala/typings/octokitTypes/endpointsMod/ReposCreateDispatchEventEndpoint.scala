@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReposCreateDispatchEventEndpoint extends js.Object {
+trait ReposCreateDispatchEventEndpoint extends StObject {
   
   /**
     * JSON payload with extra information about the webhook event that your action or worklow may use.
@@ -30,33 +31,21 @@ object ReposCreateDispatchEventEndpoint {
   }
   
   @scala.inline
-  implicit class ReposCreateDispatchEventEndpointOps[Self <: ReposCreateDispatchEventEndpoint] (val x: Self) extends AnyVal {
+  implicit class ReposCreateDispatchEventEndpointMutableBuilder[Self <: ReposCreateDispatchEventEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient_payload(value: ReposCreateDispatchEventParamsClientPayload): Self = StObject.set(x, "client_payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClient_payloadUndefined: Self = StObject.set(x, "client_payload", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent_type(value: String): Self = StObject.set(x, "event_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent_type(value: String): Self = this.set("event_type", value.asInstanceOf[js.Any])
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClient_payload(value: ReposCreateDispatchEventParamsClientPayload): Self = this.set("client_payload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClient_payload: Self = this.set("client_payload", js.undefined)
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

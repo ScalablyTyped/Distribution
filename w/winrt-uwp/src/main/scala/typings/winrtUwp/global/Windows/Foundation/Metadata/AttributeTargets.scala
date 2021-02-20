@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Foundation.Metadata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the programming construct to which an attribute applies. */
 @JSGlobal("Windows.Foundation.Metadata.AttributeTargets")
 @js.native
-object AttributeTargets extends js.Object {
+object AttributeTargets extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Foundation.Metadata.AttributeTargets with Double] = js.native

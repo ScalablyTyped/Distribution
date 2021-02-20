@@ -1,11 +1,12 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Condition extends js.Object {
+trait Condition extends StObject {
   
   /**
     * The key in a key-value pair. For example, in "ec2:ResourceTag/Department": "accounting", "ec2:ResourceTag/Department" is the key.
@@ -31,27 +32,15 @@ object Condition {
   }
   
   @scala.inline
-  implicit class ConditionOps[Self <: Condition] (val x: Self) extends AnyVal {
+  implicit class ConditionMutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditionKey(value: ConditionKey): Self = StObject.set(x, "ConditionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionType(value: ConditionType): Self = StObject.set(x, "ConditionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConditionKey(value: ConditionKey): Self = this.set("ConditionKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConditionType(value: ConditionType): Self = this.set("ConditionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConditionValue(value: ConditionValue): Self = this.set("ConditionValue", value.asInstanceOf[js.Any])
+    def setConditionValue(value: ConditionValue): Self = StObject.set(x, "ConditionValue", value.asInstanceOf[js.Any])
   }
 }

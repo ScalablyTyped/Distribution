@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SlotStartTimeRangeRequest extends js.Object {
+trait SlotStartTimeRangeRequest extends StObject {
   
   /**
     * The earliest date and time, in UTC, for the Scheduled Instance to start.
@@ -26,30 +27,18 @@ object SlotStartTimeRangeRequest {
   }
   
   @scala.inline
-  implicit class SlotStartTimeRangeRequestOps[Self <: SlotStartTimeRangeRequest] (val x: Self) extends AnyVal {
+  implicit class SlotStartTimeRangeRequestMutableBuilder[Self <: SlotStartTimeRangeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEarliestTime(value: DateTime): Self = StObject.set(x, "EarliestTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEarliestTimeUndefined: Self = StObject.set(x, "EarliestTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLatestTime(value: DateTime): Self = StObject.set(x, "LatestTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEarliestTime(value: DateTime): Self = this.set("EarliestTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEarliestTime: Self = this.set("EarliestTime", js.undefined)
-    
-    @scala.inline
-    def setLatestTime(value: DateTime): Self = this.set("LatestTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLatestTime: Self = this.set("LatestTime", js.undefined)
+    def setLatestTimeUndefined: Self = StObject.set(x, "LatestTime", js.undefined)
   }
 }

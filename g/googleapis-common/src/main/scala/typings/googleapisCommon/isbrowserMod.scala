@@ -1,12 +1,13 @@
 package typings.googleapisCommon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("googleapis-common/build/src/isbrowser", JSImport.Namespace)
-@js.native
-object isbrowserMod extends js.Object {
+object isbrowserMod {
   
+  @JSImport("googleapis-common/build/src/isbrowser", "isBrowser")
+  @js.native
   def isBrowser(): Boolean = js.native
 }

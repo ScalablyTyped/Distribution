@@ -20,6 +20,7 @@ import typings.officeJs.officeJsStrings.None
 import typings.officeJs.officeJsStrings.OutsideEnd
 import typings.officeJs.officeJsStrings.Right
 import typings.officeJs.officeJsStrings.Top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

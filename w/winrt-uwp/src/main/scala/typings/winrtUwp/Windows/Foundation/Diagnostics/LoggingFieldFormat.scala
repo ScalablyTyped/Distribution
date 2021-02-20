@@ -1,23 +1,24 @@
 package typings.winrtUwp.Windows.Foundation.Diagnostics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LoggingFieldFormat extends js.Object
+sealed trait LoggingFieldFormat extends StObject
 /** Specifies the format of an event field. */
 @JSGlobal("Windows.Foundation.Diagnostics.LoggingFieldFormat")
 @js.native
-object LoggingFieldFormat extends js.Object {
-  
-  /** A boolean field. */
-  @js.native
-  sealed trait boolean extends LoggingFieldFormat
+object LoggingFieldFormat extends StObject {
   
   /** No format is specified. */
   @js.native
   sealed trait default extends LoggingFieldFormat
+  
+  /** A boolean field. */
+  @js.native
+  sealed trait boolean extends LoggingFieldFormat
   
   /** A 64-bit FILETIME value. */
   @js.native

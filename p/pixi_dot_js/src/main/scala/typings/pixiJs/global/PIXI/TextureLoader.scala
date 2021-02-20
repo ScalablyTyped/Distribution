@@ -1,6 +1,7 @@
 package typings.pixiJs.global.PIXI
 
 import typings.pixiJs.PIXI.ILoaderPlugin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,10 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("PIXI.TextureLoader")
 @js.native
 class TextureLoader () extends ILoaderPlugin
-/* static members */
-@JSGlobal("PIXI.TextureLoader")
-@js.native
-object TextureLoader extends js.Object {
+object TextureLoader {
   
   /**
     * Called after a resource is loaded.
@@ -25,5 +23,8 @@ object TextureLoader extends js.Object {
     * @param {PIXI.LoaderResource} resource
     * @param {function} next
     */
+  /* static member */
+  @JSGlobal("PIXI.TextureLoader.use")
+  @js.native
   def use(resource: typings.pixiJs.PIXI.LoaderResource, next: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
 }

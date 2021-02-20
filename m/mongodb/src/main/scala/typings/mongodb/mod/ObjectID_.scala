@@ -1,6 +1,7 @@
 package typings.mongodb.mod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,18 +19,26 @@ class ObjectID_ ()
   def this(id: typings.bson.mod.ObjectId) = this()
 }
 /* static members */
-@JSImport("mongodb", "ObjectID")
-@js.native
-object ObjectID_ extends js.Object {
+object ObjectID_ {
+  
+  @JSImport("mongodb", "ObjectID")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** If true cache the hex string representation of ObjectId */
-  var cacheHexString: js.UndefOr[Boolean] = js.native
+  @JSImport("mongodb", "ObjectID.cacheHexString")
+  @js.native
+  def cacheHexString: js.UndefOr[Boolean] = js.native
+  @scala.inline
+  def cacheHexString_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cacheHexString")(x.asInstanceOf[js.Any])
   
   /**
     * Creates an ObjectId from a hex string representation of an ObjectId.
     * @param {string} hexString create a ObjectId from a passed in 24 byte hexstring.
     * @return {ObjectId} return the created ObjectId
     */
+  @JSImport("mongodb", "ObjectID.createFromHexString")
+  @js.native
   def createFromHexString(hexString: String): typings.bson.mod.ObjectId = js.native
   
   /**
@@ -37,6 +46,8 @@ object ObjectID_ extends js.Object {
     * @param {number} time an integer number representing a number of seconds.
     * @return {ObjectId} return the created ObjectId
     */
+  @JSImport("mongodb", "ObjectID.createFromTime")
+  @js.native
   def createFromTime(time: scala.Double): typings.bson.mod.ObjectId = js.native
   
   /**
@@ -44,7 +55,11 @@ object ObjectID_ extends js.Object {
     * @param {number} time optional parameter allowing to pass in a second based timestamp.
     * @return {string} return the 12 byte id binary string.
     */
+  @JSImport("mongodb", "ObjectID.generate")
+  @js.native
   def generate(): Buffer = js.native
+  @JSImport("mongodb", "ObjectID.generate")
+  @js.native
   def generate(time: scala.Double): Buffer = js.native
   
   /**
@@ -52,7 +67,13 @@ object ObjectID_ extends js.Object {
     *
     * @return {boolean} return true if the value is a valid bson ObjectId, return false otherwise.
     */
+  @JSImport("mongodb", "ObjectID.isValid")
+  @js.native
   def isValid(id: String): Boolean = js.native
+  @JSImport("mongodb", "ObjectID.isValid")
+  @js.native
   def isValid(id: scala.Double): Boolean = js.native
+  @JSImport("mongodb", "ObjectID.isValid")
+  @js.native
   def isValid(id: typings.bson.mod.ObjectId): Boolean = js.native
 }

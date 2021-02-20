@@ -1,5 +1,6 @@
 package typings.chayns.chayns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,15 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Utility Functions
   * chayns.utils
   */
-@JSGlobal("chayns.utils")
-@js.native
-object utils extends js.Object {
+object utils {
   
   /**
     * Utility Functions
     * Local Storage
     * chayns.utils.ls
     */
-  @js.native
-  object ls extends js.Object
+  object ls
 }

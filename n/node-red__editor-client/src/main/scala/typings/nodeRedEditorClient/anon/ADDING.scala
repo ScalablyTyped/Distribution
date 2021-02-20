@@ -1,11 +1,12 @@
 package typings.nodeRedEditorClient.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ADDING extends js.Object {
+trait ADDING extends StObject {
   
   val ADDING: Double = js.native
   
@@ -59,60 +60,48 @@ object ADDING {
   }
   
   @scala.inline
-  implicit class ADDINGOps[Self <: ADDING] (val x: Self) extends AnyVal {
+  implicit class ADDINGMutableBuilder[Self <: ADDING] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setADDING(value: Double): Self = StObject.set(x, "ADDING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDEFAULT(value: Double): Self = StObject.set(x, "DEFAULT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEDITING(value: Double): Self = StObject.set(x, "EDITING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setADDING(value: Double): Self = this.set("ADDING", value.asInstanceOf[js.Any])
+    def setEXPORT(value: Double): Self = StObject.set(x, "EXPORT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDEFAULT(value: Double): Self = this.set("DEFAULT", value.asInstanceOf[js.Any])
+    def setGROUP_DRAGGING(value: Double): Self = StObject.set(x, "GROUP_DRAGGING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEDITING(value: Double): Self = this.set("EDITING", value.asInstanceOf[js.Any])
+    def setGROUP_RESIZE(value: Double): Self = StObject.set(x, "GROUP_RESIZE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEXPORT(value: Double): Self = this.set("EXPORT", value.asInstanceOf[js.Any])
+    def setIMPORT(value: Double): Self = StObject.set(x, "IMPORT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGROUP_DRAGGING(value: Double): Self = this.set("GROUP_DRAGGING", value.asInstanceOf[js.Any])
+    def setIMPORT_DRAGGING(value: Double): Self = StObject.set(x, "IMPORT_DRAGGING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGROUP_RESIZE(value: Double): Self = this.set("GROUP_RESIZE", value.asInstanceOf[js.Any])
+    def setJOINING(value: Double): Self = StObject.set(x, "JOINING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIMPORT(value: Double): Self = this.set("IMPORT", value.asInstanceOf[js.Any])
+    def setMOVING(value: Double): Self = StObject.set(x, "MOVING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIMPORT_DRAGGING(value: Double): Self = this.set("IMPORT_DRAGGING", value.asInstanceOf[js.Any])
+    def setMOVING_ACTIVE(value: Double): Self = StObject.set(x, "MOVING_ACTIVE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJOINING(value: Double): Self = this.set("JOINING", value.asInstanceOf[js.Any])
+    def setPANNING(value: Double): Self = StObject.set(x, "PANNING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMOVING(value: Double): Self = this.set("MOVING", value.asInstanceOf[js.Any])
+    def setQUICK_JOINING(value: Double): Self = StObject.set(x, "QUICK_JOINING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMOVING_ACTIVE(value: Double): Self = this.set("MOVING_ACTIVE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPANNING(value: Double): Self = this.set("PANNING", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQUICK_JOINING(value: Double): Self = this.set("QUICK_JOINING", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSELECTING_NODE(value: Double): Self = this.set("SELECTING_NODE", value.asInstanceOf[js.Any])
+    def setSELECTING_NODE(value: Double): Self = StObject.set(x, "SELECTING_NODE", value.asInstanceOf[js.Any])
   }
 }

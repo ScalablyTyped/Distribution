@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CreateRefundRequest")
 @js.native
-class CreateRefundRequest () extends js.Object {
+class CreateRefundRequest () extends StObject {
   
   /**
     * The amount of money to refund. Note that you specify the amount in the __smallest denomination of the applicable currency__.

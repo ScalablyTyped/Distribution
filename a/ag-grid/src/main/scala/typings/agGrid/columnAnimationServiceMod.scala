@@ -1,16 +1,16 @@
 package typings.agGrid
 
 import typings.agGrid.gridPanelMod.GridPanel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rendering/columnAnimationService", JSImport.Namespace)
-@js.native
-object columnAnimationServiceMod extends js.Object {
+object columnAnimationServiceMod {
   
+  @JSImport("ag-grid/dist/lib/rendering/columnAnimationService", "ColumnAnimationService")
   @js.native
-  class ColumnAnimationService () extends js.Object {
+  class ColumnAnimationService () extends StObject {
     
     var active: js.Any = js.native
     

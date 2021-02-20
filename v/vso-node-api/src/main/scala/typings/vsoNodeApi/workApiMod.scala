@@ -32,13 +32,19 @@ import typings.vsoNodeApi.workInterfacesMod.TeamSettingsDaysOffPatch
 import typings.vsoNodeApi.workInterfacesMod.TeamSettingsIteration
 import typings.vsoNodeApi.workInterfacesMod.TeamSettingsPatch
 import typings.vsoNodeApi.workInterfacesMod.UpdatePlan
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vso-node-api/WorkApi", JSImport.Namespace)
-@js.native
-object workApiMod extends js.Object {
+object workApiMod {
+  
+  @JSImport("vso-node-api/WorkApi", "WorkApi")
+  @js.native
+  class WorkApi protected () extends IWorkApi {
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
+  }
   
   @js.native
   trait IWorkApi extends ClientApiBase {
@@ -144,11 +150,5 @@ object workApiMod extends js.Object {
     def updateTeamFieldValues(patch: TeamFieldValuesPatch, teamContext: TeamContext): js.Promise[TeamFieldValues] = js.native
     
     def updateTeamSettings(teamSettingsPatch: TeamSettingsPatch, teamContext: TeamContext): js.Promise[TeamSetting] = js.native
-  }
-  
-  @js.native
-  class WorkApi protected () extends IWorkApi {
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
 }

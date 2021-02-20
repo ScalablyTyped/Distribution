@@ -1,12 +1,13 @@
 package typings.fortawesomeFontawesomeSvgCore.mod
 
 import typings.fortawesomeFontawesomeSvgCore.anon.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DOM_ extends js.Object {
+trait DOM_ extends StObject {
   
   def css(): String = js.native
   

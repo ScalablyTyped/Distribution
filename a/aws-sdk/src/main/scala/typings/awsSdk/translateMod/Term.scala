@@ -1,11 +1,12 @@
 package typings.awsSdk.translateMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Term extends js.Object {
+trait Term extends StObject {
   
   /**
     * The source text of the term being translated by the custom terminology.
@@ -26,30 +27,18 @@ object Term {
   }
   
   @scala.inline
-  implicit class TermOps[Self <: Term] (val x: Self) extends AnyVal {
+  implicit class TermMutableBuilder[Self <: Term] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSourceText(value: String): Self = StObject.set(x, "SourceText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSourceTextUndefined: Self = StObject.set(x, "SourceText", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetText(value: String): Self = StObject.set(x, "TargetText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceText(value: String): Self = this.set("SourceText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceText: Self = this.set("SourceText", js.undefined)
-    
-    @scala.inline
-    def setTargetText(value: String): Self = this.set("TargetText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetText: Self = this.set("TargetText", js.undefined)
+    def setTargetTextUndefined: Self = StObject.set(x, "TargetText", js.undefined)
   }
 }

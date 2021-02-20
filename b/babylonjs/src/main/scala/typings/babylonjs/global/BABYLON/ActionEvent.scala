@@ -2,6 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,9 +72,7 @@ class ActionEvent protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.ActionEvent")
-@js.native
-object ActionEvent extends js.Object {
+object ActionEvent {
   
   /**
     * Helper function to auto-create an ActionEvent from a source mesh.
@@ -82,13 +81,21 @@ object ActionEvent extends js.Object {
     * @param additionalData additional data for the event
     * @returns the new ActionEvent
     */
+  @JSGlobal("BABYLON.ActionEvent.CreateNew")
+  @js.native
   def CreateNew(source: typings.babylonjs.BABYLON.AbstractMesh): typings.babylonjs.BABYLON.ActionEvent = js.native
+  @JSGlobal("BABYLON.ActionEvent.CreateNew")
+  @js.native
   def CreateNew(
     source: typings.babylonjs.BABYLON.AbstractMesh,
     evt: js.UndefOr[scala.Nothing],
     additionalData: js.Any
   ): typings.babylonjs.BABYLON.ActionEvent = js.native
+  @JSGlobal("BABYLON.ActionEvent.CreateNew")
+  @js.native
   def CreateNew(source: typings.babylonjs.BABYLON.AbstractMesh, evt: Event): typings.babylonjs.BABYLON.ActionEvent = js.native
+  @JSGlobal("BABYLON.ActionEvent.CreateNew")
+  @js.native
   def CreateNew(source: typings.babylonjs.BABYLON.AbstractMesh, evt: Event, additionalData: js.Any): typings.babylonjs.BABYLON.ActionEvent = js.native
   
   /**
@@ -99,14 +106,22 @@ object ActionEvent extends js.Object {
     * @param additionalData additional data for the event
     * @returns the new ActionEvent
     */
+  @JSGlobal("BABYLON.ActionEvent.CreateNewFromPrimitive")
+  @js.native
   def CreateNewFromPrimitive(prim: js.Any, pointerPos: typings.babylonjs.BABYLON.Vector2): typings.babylonjs.BABYLON.ActionEvent = js.native
+  @JSGlobal("BABYLON.ActionEvent.CreateNewFromPrimitive")
+  @js.native
   def CreateNewFromPrimitive(
     prim: js.Any,
     pointerPos: typings.babylonjs.BABYLON.Vector2,
     evt: js.UndefOr[scala.Nothing],
     additionalData: js.Any
   ): typings.babylonjs.BABYLON.ActionEvent = js.native
+  @JSGlobal("BABYLON.ActionEvent.CreateNewFromPrimitive")
+  @js.native
   def CreateNewFromPrimitive(prim: js.Any, pointerPos: typings.babylonjs.BABYLON.Vector2, evt: Event): typings.babylonjs.BABYLON.ActionEvent = js.native
+  @JSGlobal("BABYLON.ActionEvent.CreateNewFromPrimitive")
+  @js.native
   def CreateNewFromPrimitive(prim: js.Any, pointerPos: typings.babylonjs.BABYLON.Vector2, evt: Event, additionalData: js.Any): typings.babylonjs.BABYLON.ActionEvent = js.native
   
   /**
@@ -115,6 +130,8 @@ object ActionEvent extends js.Object {
     * @param evt The original (browser) event
     * @returns the new ActionEvent
     */
+  @JSGlobal("BABYLON.ActionEvent.CreateNewFromScene")
+  @js.native
   def CreateNewFromScene(scene: typings.babylonjs.BABYLON.Scene, evt: Event): typings.babylonjs.BABYLON.ActionEvent = js.native
   
   /**
@@ -125,14 +142,22 @@ object ActionEvent extends js.Object {
     * @param additionalData additional data for the event
     * @returns the new ActionEvent
     */
+  @JSGlobal("BABYLON.ActionEvent.CreateNewFromSprite")
+  @js.native
   def CreateNewFromSprite(source: typings.babylonjs.BABYLON.Sprite, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.ActionEvent = js.native
+  @JSGlobal("BABYLON.ActionEvent.CreateNewFromSprite")
+  @js.native
   def CreateNewFromSprite(
     source: typings.babylonjs.BABYLON.Sprite,
     scene: typings.babylonjs.BABYLON.Scene,
     evt: js.UndefOr[scala.Nothing],
     additionalData: js.Any
   ): typings.babylonjs.BABYLON.ActionEvent = js.native
+  @JSGlobal("BABYLON.ActionEvent.CreateNewFromSprite")
+  @js.native
   def CreateNewFromSprite(source: typings.babylonjs.BABYLON.Sprite, scene: typings.babylonjs.BABYLON.Scene, evt: Event): typings.babylonjs.BABYLON.ActionEvent = js.native
+  @JSGlobal("BABYLON.ActionEvent.CreateNewFromSprite")
+  @js.native
   def CreateNewFromSprite(
     source: typings.babylonjs.BABYLON.Sprite,
     scene: typings.babylonjs.BABYLON.Scene,

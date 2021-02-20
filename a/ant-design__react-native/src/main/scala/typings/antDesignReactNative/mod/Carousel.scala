@@ -2,6 +2,7 @@ package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.carouselMod.CarouselProps
 import typings.antDesignReactNative.carouselMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +12,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Carousel protected () extends default {
   def this(props: CarouselProps) = this()
 }
-/* static members */
-@JSImport("@ant-design/react-native", "Carousel")
-@js.native
-object Carousel extends js.Object {
+object Carousel {
   
-  var defaultProps: CarouselProps = js.native
+  @JSImport("@ant-design/react-native", "Carousel")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("@ant-design/react-native", "Carousel.defaultProps")
+  @js.native
+  def defaultProps: CarouselProps = js.native
+  @scala.inline
+  def defaultProps_=(x: CarouselProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

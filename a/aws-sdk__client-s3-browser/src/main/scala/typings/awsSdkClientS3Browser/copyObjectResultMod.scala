@@ -1,13 +1,13 @@
 package typings.awsSdkClientS3Browser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-browser/model/_CopyObjectResult", JSImport.Namespace)
-@js.native
-object copyObjectResultMod extends js.Object {
+object copyObjectResultMod {
   
-  @JSName("_CopyObjectResult")
+  @JSImport("@aws-sdk/client-s3-browser/model/_CopyObjectResult", "_CopyObjectResult")
+  @js.native
   val CopyObjectResult: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

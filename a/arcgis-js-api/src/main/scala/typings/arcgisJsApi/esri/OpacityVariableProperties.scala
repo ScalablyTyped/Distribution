@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,33 +31,21 @@ object OpacityVariableProperties {
   }
   
   @scala.inline
-  implicit class OpacityVariablePropertiesOps[Self <: OpacityVariableProperties] (val x: Self) extends AnyVal {
+  implicit class OpacityVariablePropertiesMutableBuilder[Self <: OpacityVariableProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStops(value: js.Array[OpacityStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalizationField(value: String): Self = this.set("normalizationField", value.asInstanceOf[js.Any])
+    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
     @scala.inline
-    def deleteNormalizationField: Self = this.set("normalizationField", js.undefined)
-    
-    @scala.inline
-    def setStopsVarargs(value: OpacityStopProperties*): Self = this.set("stops", js.Array(value :_*))
-    
-    @scala.inline
-    def setStops(value: js.Array[OpacityStopProperties]): Self = this.set("stops", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStops: Self = this.set("stops", js.undefined)
+    def setStopsVarargs(value: OpacityStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
   }
 }

@@ -3,14 +3,14 @@ package typings.agGrid
 import typings.agGrid.agCheckboxMod.AgCheckbox
 import typings.agGrid.beanStubMod.BeanStub
 import typings.agGrid.columnMod.Column
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/headerRendering/header/selectAllFeature", JSImport.Namespace)
-@js.native
-object selectAllFeatureMod extends js.Object {
+object selectAllFeatureMod {
   
+  @JSImport("ag-grid/dist/lib/headerRendering/header/selectAllFeature", "SelectAllFeature")
   @js.native
   class SelectAllFeature protected () extends BeanStub {
     def this(cbSelectAll: AgCheckbox, column: Column) = this()

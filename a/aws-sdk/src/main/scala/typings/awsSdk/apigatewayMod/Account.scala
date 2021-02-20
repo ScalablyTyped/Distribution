@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Account extends js.Object {
+trait Account extends StObject {
   
   /**
     * The version of the API keys used for the account.
@@ -36,45 +37,33 @@ object Account {
   }
   
   @scala.inline
-  implicit class AccountOps[Self <: Account] (val x: Self) extends AnyVal {
+  implicit class AccountMutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiKeyVersion(value: String): Self = StObject.set(x, "apiKeyVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiKeyVersionUndefined: Self = StObject.set(x, "apiKeyVersion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloudwatchRoleArn(value: String): Self = StObject.set(x, "cloudwatchRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiKeyVersion(value: String): Self = this.set("apiKeyVersion", value.asInstanceOf[js.Any])
+    def setCloudwatchRoleArnUndefined: Self = StObject.set(x, "cloudwatchRoleArn", js.undefined)
     
     @scala.inline
-    def deleteApiKeyVersion: Self = this.set("apiKeyVersion", js.undefined)
+    def setFeatures(value: ListOfString): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudwatchRoleArn(value: String): Self = this.set("cloudwatchRoleArn", value.asInstanceOf[js.Any])
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
     @scala.inline
-    def deleteCloudwatchRoleArn: Self = this.set("cloudwatchRoleArn", js.undefined)
+    def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
     
     @scala.inline
-    def setFeaturesVarargs(value: String*): Self = this.set("features", js.Array(value :_*))
+    def setThrottleSettings(value: ThrottleSettings): Self = StObject.set(x, "throttleSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: ListOfString): Self = this.set("features", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeatures: Self = this.set("features", js.undefined)
-    
-    @scala.inline
-    def setThrottleSettings(value: ThrottleSettings): Self = this.set("throttleSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThrottleSettings: Self = this.set("throttleSettings", js.undefined)
+    def setThrottleSettingsUndefined: Self = StObject.set(x, "throttleSettings", js.undefined)
   }
 }

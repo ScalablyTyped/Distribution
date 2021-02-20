@@ -4,12 +4,13 @@ import typings.node.Buffer
 import typings.stellarBase.stellarBaseStrings.base64
 import typings.stellarBase.stellarBaseStrings.hex
 import typings.stellarBase.stellarBaseStrings.raw
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountEntryExtensionV1 extends js.Object {
+trait AccountEntryExtensionV1 extends StObject {
   
   def ext(): AccountEntryExtensionV1Ext = js.native
   def ext(value: AccountEntryExtensionV1Ext): AccountEntryExtensionV1Ext = js.native

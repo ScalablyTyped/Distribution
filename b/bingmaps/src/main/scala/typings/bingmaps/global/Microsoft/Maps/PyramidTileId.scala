@@ -1,5 +1,6 @@
 package typings.bingmaps.global.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,9 +23,7 @@ class PyramidTileId protected ()
   def this(x: Double, y: Double, zoom: Double, width: Double, height: Double) = this()
 }
 /* static members */
-@JSGlobal("Microsoft.Maps.PyramidTileId")
-@js.native
-object PyramidTileId extends js.Object {
+object PyramidTileId {
   
   /**
     * Compares two PyramidTileId objects and returns a boolean indicating if the two PyramidTileId are equal.
@@ -32,6 +31,8 @@ object PyramidTileId extends js.Object {
     * @param tileId2 The second PyramidTileId to compare to the first.
     * @returns A boolean indicating if the two PyramidTileId are equal.
     */
+  @JSGlobal("Microsoft.Maps.PyramidTileId.areEqual")
+  @js.native
   def areEqual(
     tileId1: typings.bingmaps.Microsoft.Maps.PyramidTileId,
     tileId2: typings.bingmaps.Microsoft.Maps.PyramidTileId
@@ -43,8 +44,16 @@ object PyramidTileId extends js.Object {
     * @param width The tile's width in pixels. Default value: 256
     * @param height The tile's height in pixels. Default value: 256
     */
+  @JSGlobal("Microsoft.Maps.PyramidTileId.fromQuadKey")
+  @js.native
   def fromQuadKey(quadkey: String): typings.bingmaps.Microsoft.Maps.PyramidTileId = js.native
+  @JSGlobal("Microsoft.Maps.PyramidTileId.fromQuadKey")
+  @js.native
   def fromQuadKey(quadkey: String, width: js.UndefOr[scala.Nothing], height: Double): typings.bingmaps.Microsoft.Maps.PyramidTileId = js.native
+  @JSGlobal("Microsoft.Maps.PyramidTileId.fromQuadKey")
+  @js.native
   def fromQuadKey(quadkey: String, width: Double): typings.bingmaps.Microsoft.Maps.PyramidTileId = js.native
+  @JSGlobal("Microsoft.Maps.PyramidTileId.fromQuadKey")
+  @js.native
   def fromQuadKey(quadkey: String, width: Double, height: Double): typings.bingmaps.Microsoft.Maps.PyramidTileId = js.native
 }

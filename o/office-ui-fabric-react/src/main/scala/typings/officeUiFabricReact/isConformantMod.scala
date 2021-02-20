@@ -3,15 +3,15 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.anon.ComponentPath
 import typings.officeUiFabricReact.officeUiFabricReactStrings.componentPath
 import typings.std.Omit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/common/isConformant", JSImport.Namespace)
-@js.native
-object isConformantMod extends js.Object {
+object isConformantMod {
   
-  @JSName("isConformant")
+  @JSImport("office-ui-fabric-react/lib/common/isConformant", "isConformant")
+  @js.native
   def isConformant_componentPath(
     testInfo: (Omit[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IsConformantOptions */ _, 

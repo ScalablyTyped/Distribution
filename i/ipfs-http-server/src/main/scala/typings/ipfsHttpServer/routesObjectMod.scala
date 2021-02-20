@@ -1,65 +1,99 @@
 package typings.ipfsHttpServer
 
-import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.TopLevel
-import typings.ipfsHttpServer.anon.CopyWithin
 import typings.ipfsHttpServer.anon.Path
 import typings.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ipfs-http-server/dist/src/api/routes/object", JSImport.Namespace)
-@js.native
-object routesObjectMod extends TopLevel[/* n */ NumberDictionary[Path]] {
+object routesObjectMod {
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "concat")
+  @js.native
   def concat(items: (js.Array[Path] | Path)*): js.Array[Path] = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "copyWithin")
+  @js.native
   def copyWithin(target: Double, start: Double): js.Array[Path] = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "copyWithin")
+  @js.native
   def copyWithin(target: Double, start: Double, end: Double): js.Array[Path] = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "entries")
+  @js.native
   def entries(): IterableIterator[js.Tuple2[Double, Path]] = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "every")
+  @js.native
   def every(predicate: js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], _]): Boolean = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "every")
+  @js.native
   def every(
     predicate: js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], _],
     thisArg: js.Any
   ): Boolean = js.native
-  @JSName("every")
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "every")
+  @js.native
   def every_S_Path[S /* <: Path */](
     predicate: js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], /* is S */ Boolean]
   ): /* is std.Array<S> */ Boolean = js.native
-  @JSName("every")
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "every")
+  @js.native
   def every_S_Path[S /* <: Path */](
     predicate: js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], /* is S */ Boolean],
     thisArg: js.Any
   ): /* is std.Array<S> */ Boolean = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "fill")
+  @js.native
   def fill(value: Path): js.Array[Path] = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "fill")
+  @js.native
   def fill(value: Path, start: js.UndefOr[scala.Nothing], end: Double): js.Array[Path] = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "fill")
+  @js.native
   def fill(value: Path, start: Double): js.Array[Path] = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "fill")
+  @js.native
   def fill(value: Path, start: Double, end: Double): js.Array[Path] = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "filter")
+  @js.native
   def filter(predicate: js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], _]): js.Array[Path] = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "filter")
+  @js.native
   def filter(
     predicate: js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], _],
     thisArg: js.Any
   ): js.Array[Path] = js.native
-  @JSName("filter")
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "filter")
+  @js.native
   def filter_S_1_Path[S_1 /* <: Path */](
     predicate: js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], /* is S_1 */ Boolean]
   ): js.Array[S_1] = js.native
-  @JSName("filter")
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "filter")
+  @js.native
   def filter_S_1_Path[S_1 /* <: Path */](
     predicate: js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], /* is S_1 */ Boolean],
     thisArg: js.Any
   ): js.Array[S_1] = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "find")
+  @js.native
   def find(predicate: js.Function3[/* value */ Path, /* index */ Double, /* obj */ js.Array[Path], _]): js.UndefOr[Path] = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "find")
+  @js.native
   def find(
     predicate: js.Function3[/* value */ Path, /* index */ Double, /* obj */ js.Array[Path], _],
     thisArg: js.Any
   ): js.UndefOr[Path] = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "find")
+  @js.native
   def find[S_2 /* <: Path */](
     predicate: js.ThisFunction3[
       /* this */ Unit, 
@@ -69,6 +103,8 @@ object routesObjectMod extends TopLevel[/* n */ NumberDictionary[Path]] {
       /* is S_2 */ Boolean
     ]
   ): js.UndefOr[S_2] = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "find")
+  @js.native
   def find[S_2 /* <: Path */](
     predicate: js.ThisFunction3[
       /* this */ Unit, 
@@ -80,47 +116,84 @@ object routesObjectMod extends TopLevel[/* n */ NumberDictionary[Path]] {
     thisArg: js.Any
   ): js.UndefOr[S_2] = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "findIndex")
+  @js.native
   def findIndex(predicate: js.Function3[/* value */ Path, /* index */ Double, /* obj */ js.Array[Path], _]): Double = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "findIndex")
+  @js.native
   def findIndex(
     predicate: js.Function3[/* value */ Path, /* index */ Double, /* obj */ js.Array[Path], _],
     thisArg: js.Any
   ): Double = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "forEach")
+  @js.native
   def forEach(callbackfn: js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], Unit]): Unit = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "forEach")
+  @js.native
   def forEach(
     callbackfn: js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], Unit],
     thisArg: js.Any
   ): Unit = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "includes")
+  @js.native
   def includes(searchElement: Path): Boolean = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "includes")
+  @js.native
   def includes(searchElement: Path, fromIndex: Double): Boolean = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "indexOf")
+  @js.native
   def indexOf(searchElement: Path): Double = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "indexOf")
+  @js.native
   def indexOf(searchElement: Path, fromIndex: Double): Double = js.native
   
-  @JSName(js.Symbol.iterator)
-  var iterator: js.Function0[IterableIterator[Path]] = js.native
-  
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "join")
+  @js.native
   def join(): String = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "join")
+  @js.native
   def join(separator: String): String = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "keys")
+  @js.native
   def keys(): IterableIterator[Double] = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "lastIndexOf")
+  @js.native
   def lastIndexOf(searchElement: Path): Double = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "lastIndexOf")
+  @js.native
   def lastIndexOf(searchElement: Path, fromIndex: Double): Double = js.native
   
-  var length: Double = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "length")
+  @js.native
+  def length: Double = js.native
+  @scala.inline
+  def length_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("length")(x.asInstanceOf[js.Any])
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "map")
+  @js.native
   def map[U](callbackfn: js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], U]): js.Array[U] = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "map")
+  @js.native
   def map[U](
     callbackfn: js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], U],
     thisArg: js.Any
   ): js.Array[U] = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "pop")
+  @js.native
   def pop(): js.UndefOr[Path] = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "push")
+  @js.native
   def push(items: Path*): Double = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "reduce")
+  @js.native
   def reduce(
     callbackfn: js.Function4[
       /* previousValue */ Path, 
@@ -130,6 +203,8 @@ object routesObjectMod extends TopLevel[/* n */ NumberDictionary[Path]] {
       Path
     ]
   ): Path = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "reduce")
+  @js.native
   def reduce(
     callbackfn: js.Function4[
       /* previousValue */ Path, 
@@ -140,6 +215,8 @@ object routesObjectMod extends TopLevel[/* n */ NumberDictionary[Path]] {
     ],
     initialValue: Path
   ): Path = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "reduce")
+  @js.native
   def reduce[U_1](
     callbackfn: js.Function4[
       /* previousValue */ U_1, 
@@ -151,6 +228,8 @@ object routesObjectMod extends TopLevel[/* n */ NumberDictionary[Path]] {
     initialValue: U_1
   ): U_1 = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "reduceRight")
+  @js.native
   def reduceRight(
     callbackfn: js.Function4[
       /* previousValue */ Path, 
@@ -160,6 +239,8 @@ object routesObjectMod extends TopLevel[/* n */ NumberDictionary[Path]] {
       Path
     ]
   ): Path = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "reduceRight")
+  @js.native
   def reduceRight(
     callbackfn: js.Function4[
       /* previousValue */ Path, 
@@ -170,6 +251,8 @@ object routesObjectMod extends TopLevel[/* n */ NumberDictionary[Path]] {
     ],
     initialValue: Path
   ): Path = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "reduceRight")
+  @js.native
   def reduceRight[U_2](
     callbackfn: js.Function4[
       /* previousValue */ U_2, 
@@ -181,32 +264,67 @@ object routesObjectMod extends TopLevel[/* n */ NumberDictionary[Path]] {
     initialValue: U_2
   ): U_2 = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "reverse")
+  @js.native
   def reverse(): js.Array[Path] = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "shift")
+  @js.native
   def shift(): js.UndefOr[Path] = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "slice")
+  @js.native
   def slice(): js.Array[Path] = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "slice")
+  @js.native
   def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[Path] = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "slice")
+  @js.native
   def slice(start: Double): js.Array[Path] = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "slice")
+  @js.native
   def slice(start: Double, end: Double): js.Array[Path] = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "some")
+  @js.native
   def some(predicate: js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], _]): Boolean = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "some")
+  @js.native
   def some(
     predicate: js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], _],
     thisArg: js.Any
   ): Boolean = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "sort")
+  @js.native
   def sort(): js.Array[Path] = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "sort")
+  @js.native
   def sort(compareFn: js.Function2[/* a */ Path, /* b */ Path, Double]): js.Array[Path] = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "splice")
+  @js.native
   def splice(start: Double): js.Array[Path] = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "splice")
+  @js.native
   def splice(start: Double, deleteCount: Double): js.Array[Path] = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "splice")
+  @js.native
   def splice(start: Double, deleteCount: Double, items: Path*): js.Array[Path] = js.native
   
-  @JSName(js.Symbol.unscopables)
-  var unscopables: js.Function0[CopyWithin] = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "toLocaleString")
+  @js.native
+  def toLocaleString_(): String = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "toString")
+  @js.native
+  def toString_(): String = js.native
+  
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "unshift")
+  @js.native
   def unshift(items: Path*): Double = js.native
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/object", "values")
+  @js.native
   def values(): IterableIterator[Path] = js.native
 }

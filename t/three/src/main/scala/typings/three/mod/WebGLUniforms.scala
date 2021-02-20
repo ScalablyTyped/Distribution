@@ -1,6 +1,7 @@
 package typings.three.mod
 
 import typings.std.WebGLRenderingContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +13,14 @@ class WebGLUniforms protected ()
   def this(gl: WebGLRenderingContext, program: typings.three.webGLProgramMod.WebGLProgram) = this()
 }
 /* static members */
-@JSImport("three", "WebGLUniforms")
-@js.native
-object WebGLUniforms extends js.Object {
+object WebGLUniforms {
   
+  @JSImport("three", "WebGLUniforms.seqWithValue")
+  @js.native
   def seqWithValue(seq: js.Any, values: js.Array[_]): js.Array[_] = js.native
   
+  @JSImport("three", "WebGLUniforms.upload")
+  @js.native
   def upload(
     gl: WebGLRenderingContext,
     seq: js.Any,

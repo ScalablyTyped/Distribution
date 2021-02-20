@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SaveResultsRequestParams extends js.Object {
+trait SaveResultsRequestParams extends StObject {
   
   var batchIndex: Double = js.native
   
@@ -59,81 +60,69 @@ object SaveResultsRequestParams {
   }
   
   @scala.inline
-  implicit class SaveResultsRequestParamsOps[Self <: SaveResultsRequestParams] (val x: Self) extends AnyVal {
+  implicit class SaveResultsRequestParamsMutableBuilder[Self <: SaveResultsRequestParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchIndex(value: Double): Self = StObject.set(x, "batchIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnEndIndex(value: Double): Self = StObject.set(x, "columnEndIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnStartIndex(value: Double): Self = StObject.set(x, "columnStartIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchIndex(value: Double): Self = this.set("batchIndex", value.asInstanceOf[js.Any])
+    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnEndIndex(value: Double): Self = this.set("columnEndIndex", value.asInstanceOf[js.Any])
+    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
     @scala.inline
-    def setColumnStartIndex(value: Double): Self = this.set("columnStartIndex", value.asInstanceOf[js.Any])
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilePath(value: String): Self = this.set("filePath", value.asInstanceOf[js.Any])
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def setOwnerUri(value: String): Self = this.set("ownerUri", value.asInstanceOf[js.Any])
+    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultFormat(value: String): Self = this.set("resultFormat", value.asInstanceOf[js.Any])
+    def setFormatted(value: Boolean): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultSetIndex(value: Double): Self = this.set("resultSetIndex", value.asInstanceOf[js.Any])
+    def setFormattedUndefined: Self = StObject.set(x, "formatted", js.undefined)
     
     @scala.inline
-    def setRowEndIndex(value: Double): Self = this.set("rowEndIndex", value.asInstanceOf[js.Any])
+    def setIncludeHeaders(value: Boolean): Self = StObject.set(x, "includeHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowStartIndex(value: Double): Self = this.set("rowStartIndex", value.asInstanceOf[js.Any])
+    def setIncludeHeadersUndefined: Self = StObject.set(x, "includeHeaders", js.undefined)
     
     @scala.inline
-    def setDelimiter(value: String): Self = this.set("delimiter", value.asInstanceOf[js.Any])
+    def setLineSeperator(value: String): Self = StObject.set(x, "lineSeperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDelimiter: Self = this.set("delimiter", js.undefined)
+    def setLineSeperatorUndefined: Self = StObject.set(x, "lineSeperator", js.undefined)
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setResultFormat(value: String): Self = StObject.set(x, "resultFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatted(value: Boolean): Self = this.set("formatted", value.asInstanceOf[js.Any])
+    def setResultSetIndex(value: Double): Self = StObject.set(x, "resultSetIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormatted: Self = this.set("formatted", js.undefined)
+    def setRowEndIndex(value: Double): Self = StObject.set(x, "rowEndIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeHeaders(value: Boolean): Self = this.set("includeHeaders", value.asInstanceOf[js.Any])
+    def setRowStartIndex(value: Double): Self = StObject.set(x, "rowStartIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncludeHeaders: Self = this.set("includeHeaders", js.undefined)
+    def setTextIdentifier(value: String): Self = StObject.set(x, "textIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineSeperator(value: String): Self = this.set("lineSeperator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineSeperator: Self = this.set("lineSeperator", js.undefined)
-    
-    @scala.inline
-    def setTextIdentifier(value: String): Self = this.set("textIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextIdentifier: Self = this.set("textIdentifier", js.undefined)
+    def setTextIdentifierUndefined: Self = StObject.set(x, "textIdentifier", js.undefined)
   }
 }

@@ -5,12 +5,13 @@ import typings.contentfulManagement.commonTypesMod.Collection
 import typings.contentfulManagement.commonTypesMod.CollectionProp
 import typings.contentfulManagement.teamMembershipMod.TeamMembership
 import typings.contentfulManagement.teamMembershipMod.TeamMembershipProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofteamMembership extends js.Object {
+trait TypeofteamMembership extends StObject {
   
   def wrapTeamMembership(http: AxiosInstance, data: TeamMembershipProps): TeamMembership = js.native
   
@@ -28,26 +29,14 @@ object TypeofteamMembership {
   }
   
   @scala.inline
-  implicit class TypeofteamMembershipOps[Self <: TypeofteamMembership] (val x: Self) extends AnyVal {
+  implicit class TypeofteamMembershipMutableBuilder[Self <: TypeofteamMembership] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWrapTeamMembership(value: (AxiosInstance, TeamMembershipProps) => TeamMembership): Self = this.set("wrapTeamMembership", js.Any.fromFunction2(value))
+    def setWrapTeamMembership(value: (AxiosInstance, TeamMembershipProps) => TeamMembership): Self = StObject.set(x, "wrapTeamMembership", js.Any.fromFunction2(value))
     
     @scala.inline
     def setWrapTeamMembershipCollection(
       value: (AxiosInstance, CollectionProp[TeamMembershipProps]) => Collection[TeamMembership, TeamMembershipProps]
-    ): Self = this.set("wrapTeamMembershipCollection", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "wrapTeamMembershipCollection", js.Any.fromFunction2(value))
   }
 }

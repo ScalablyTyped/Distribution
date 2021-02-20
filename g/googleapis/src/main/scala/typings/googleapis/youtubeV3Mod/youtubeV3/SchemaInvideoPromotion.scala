@@ -1,5 +1,6 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * items. A campaign belongs to a single channel_id.
   */
 @js.native
-trait SchemaInvideoPromotion extends js.Object {
+trait SchemaInvideoPromotion extends StObject {
   
   /**
     * The default temporal position within the video where the promoted item
@@ -46,45 +47,33 @@ object SchemaInvideoPromotion {
   }
   
   @scala.inline
-  implicit class SchemaInvideoPromotionOps[Self <: SchemaInvideoPromotion] (val x: Self) extends AnyVal {
+  implicit class SchemaInvideoPromotionMutableBuilder[Self <: SchemaInvideoPromotion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultTiming(value: SchemaInvideoTiming): Self = StObject.set(x, "defaultTiming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultTimingUndefined: Self = StObject.set(x, "defaultTiming", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItems(value: js.Array[SchemaPromotedItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTiming(value: SchemaInvideoTiming): Self = this.set("defaultTiming", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteDefaultTiming: Self = this.set("defaultTiming", js.undefined)
+    def setItemsVarargs(value: SchemaPromotedItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: SchemaPromotedItem*): Self = this.set("items", js.Array(value :_*))
+    def setPosition(value: SchemaInvideoPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[SchemaPromotedItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setUseSmartTiming(value: Boolean): Self = StObject.set(x, "useSmartTiming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: SchemaInvideoPosition): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setUseSmartTiming(value: Boolean): Self = this.set("useSmartTiming", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseSmartTiming: Self = this.set("useSmartTiming", js.undefined)
+    def setUseSmartTimingUndefined: Self = StObject.set(x, "useSmartTiming", js.undefined)
   }
 }

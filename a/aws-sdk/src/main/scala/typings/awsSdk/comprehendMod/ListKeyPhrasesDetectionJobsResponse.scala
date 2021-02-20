@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListKeyPhrasesDetectionJobsResponse extends js.Object {
+trait ListKeyPhrasesDetectionJobsResponse extends StObject {
   
   /**
     * A list containing the properties of each job that is returned.
@@ -26,33 +27,21 @@ object ListKeyPhrasesDetectionJobsResponse {
   }
   
   @scala.inline
-  implicit class ListKeyPhrasesDetectionJobsResponseOps[Self <: ListKeyPhrasesDetectionJobsResponse] (val x: Self) extends AnyVal {
+  implicit class ListKeyPhrasesDetectionJobsResponseMutableBuilder[Self <: ListKeyPhrasesDetectionJobsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyPhrasesDetectionJobPropertiesList(value: KeyPhrasesDetectionJobPropertiesList): Self = StObject.set(x, "KeyPhrasesDetectionJobPropertiesList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyPhrasesDetectionJobPropertiesListUndefined: Self = StObject.set(x, "KeyPhrasesDetectionJobPropertiesList", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyPhrasesDetectionJobPropertiesListVarargs(value: KeyPhrasesDetectionJobProperties*): Self = StObject.set(x, "KeyPhrasesDetectionJobPropertiesList", js.Array(value :_*))
     
     @scala.inline
-    def setKeyPhrasesDetectionJobPropertiesListVarargs(value: KeyPhrasesDetectionJobProperties*): Self = this.set("KeyPhrasesDetectionJobPropertiesList", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyPhrasesDetectionJobPropertiesList(value: KeyPhrasesDetectionJobPropertiesList): Self = this.set("KeyPhrasesDetectionJobPropertiesList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyPhrasesDetectionJobPropertiesList: Self = this.set("KeyPhrasesDetectionJobPropertiesList", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

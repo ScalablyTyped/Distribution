@@ -1,16 +1,16 @@
 package typings.imageQ
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("image-q/dist/utils/hueStatistics", JSImport.Namespace)
-@js.native
-object hueStatisticsMod extends js.Object {
+object hueStatisticsMod {
   
+  @JSImport("image-q/dist/utils/hueStatistics", "HueStatistics")
   @js.native
-  class HueStatistics protected () extends js.Object {
+  class HueStatistics protected () extends StObject {
     def this(numGroups: Double, minCols: Double) = this()
     
     var _groupsFull: js.Any = js.native

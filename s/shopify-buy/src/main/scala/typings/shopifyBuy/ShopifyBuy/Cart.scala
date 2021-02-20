@@ -1,5 +1,6 @@
 package typings.shopifyBuy.ShopifyBuy
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,42 +55,30 @@ object Cart {
   }
   
   @scala.inline
-  implicit class CartOps[Self <: Cart] (val x: Self) extends AnyVal {
+  implicit class CartMutableBuilder[Self <: Cart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckoutUrl(value: String): Self = StObject.set(x, "checkoutUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletedAt(value: String): Self = StObject.set(x, "completedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompletedAtNull: Self = StObject.set(x, "completedAt", null)
     
     @scala.inline
-    def setCheckoutUrl(value: String): Self = this.set("checkoutUrl", value.asInstanceOf[js.Any])
+    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String | Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLineItemCount(value: Double): Self = StObject.set(x, "lineItemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineItemCount(value: Double): Self = this.set("lineItemCount", value.asInstanceOf[js.Any])
+    def setLineItems(value: js.Array[LineItem]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineItemsVarargs(value: LineItem*): Self = this.set("lineItems", js.Array(value :_*))
+    def setLineItemsVarargs(value: LineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
     
     @scala.inline
-    def setLineItems(value: js.Array[LineItem]): Self = this.set("lineItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubtotalPrice(value: String): Self = this.set("subtotalPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCompletedAt(value: String): Self = this.set("completedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCompletedAtNull: Self = this.set("completedAt", null)
+    def setSubtotalPrice(value: String): Self = StObject.set(x, "subtotalPrice", value.asInstanceOf[js.Any])
   }
 }

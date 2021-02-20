@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceStatusInfo extends js.Object {
+trait DeviceStatusInfo extends StObject {
   
   /**
     * The latest available information about the connection status of a device. 
@@ -31,39 +32,27 @@ object DeviceStatusInfo {
   }
   
   @scala.inline
-  implicit class DeviceStatusInfoOps[Self <: DeviceStatusInfo] (val x: Self) extends AnyVal {
+  implicit class DeviceStatusInfoMutableBuilder[Self <: DeviceStatusInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionStatus(value: ConnectionStatus): Self = StObject.set(x, "ConnectionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionStatusUndefined: Self = StObject.set(x, "ConnectionStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionStatusUpdatedTime(value: ConnectionStatusUpdatedTime): Self = StObject.set(x, "ConnectionStatusUpdatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionStatus(value: ConnectionStatus): Self = this.set("ConnectionStatus", value.asInstanceOf[js.Any])
+    def setConnectionStatusUpdatedTimeUndefined: Self = StObject.set(x, "ConnectionStatusUpdatedTime", js.undefined)
     
     @scala.inline
-    def deleteConnectionStatus: Self = this.set("ConnectionStatus", js.undefined)
+    def setDeviceStatusDetails(value: DeviceStatusDetails): Self = StObject.set(x, "DeviceStatusDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionStatusUpdatedTime(value: ConnectionStatusUpdatedTime): Self = this.set("ConnectionStatusUpdatedTime", value.asInstanceOf[js.Any])
+    def setDeviceStatusDetailsUndefined: Self = StObject.set(x, "DeviceStatusDetails", js.undefined)
     
     @scala.inline
-    def deleteConnectionStatusUpdatedTime: Self = this.set("ConnectionStatusUpdatedTime", js.undefined)
-    
-    @scala.inline
-    def setDeviceStatusDetailsVarargs(value: DeviceStatusDetail*): Self = this.set("DeviceStatusDetails", js.Array(value :_*))
-    
-    @scala.inline
-    def setDeviceStatusDetails(value: DeviceStatusDetails): Self = this.set("DeviceStatusDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceStatusDetails: Self = this.set("DeviceStatusDetails", js.undefined)
+    def setDeviceStatusDetailsVarargs(value: DeviceStatusDetail*): Self = StObject.set(x, "DeviceStatusDetails", js.Array(value :_*))
   }
 }

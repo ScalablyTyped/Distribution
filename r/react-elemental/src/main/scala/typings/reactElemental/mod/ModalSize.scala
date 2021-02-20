@@ -1,5 +1,6 @@
 package typings.reactElemental.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactElemental.reactElementalStrings.beta
   - typings.reactElemental.reactElementalStrings.gamma
 */
-trait ModalSize extends js.Object
+trait ModalSize extends StObject
 object ModalSize {
   
   @scala.inline

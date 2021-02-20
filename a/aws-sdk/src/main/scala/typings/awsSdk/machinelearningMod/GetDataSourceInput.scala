@@ -1,11 +1,12 @@
 package typings.awsSdk.machinelearningMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDataSourceInput extends js.Object {
+trait GetDataSourceInput extends StObject {
   
   /**
     * The ID assigned to the DataSource at creation.
@@ -26,27 +27,15 @@ object GetDataSourceInput {
   }
   
   @scala.inline
-  implicit class GetDataSourceInputOps[Self <: GetDataSourceInput] (val x: Self) extends AnyVal {
+  implicit class GetDataSourceInputMutableBuilder[Self <: GetDataSourceInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSourceId(value: EntityId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVerbose(value: Verbose): Self = StObject.set(x, "Verbose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataSourceId(value: EntityId): Self = this.set("DataSourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerbose(value: Verbose): Self = this.set("Verbose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerbose: Self = this.set("Verbose", js.undefined)
+    def setVerboseUndefined: Self = StObject.set(x, "Verbose", js.undefined)
   }
 }

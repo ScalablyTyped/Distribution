@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#eles.aStar
   */
 @js.native
-trait SearchAStarResult extends js.Object {
+trait SearchAStarResult extends StObject {
   
   var distance: Double = js.native
   
@@ -25,27 +26,15 @@ object SearchAStarResult {
   }
   
   @scala.inline
-  implicit class SearchAStarResultOps[Self <: SearchAStarResult] (val x: Self) extends AnyVal {
+  implicit class SearchAStarResultMutableBuilder[Self <: SearchAStarResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFound(value: Boolean): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFound(value: Boolean): Self = this.set("found", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: CollectionReturnValue): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPath(value: CollectionReturnValue): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

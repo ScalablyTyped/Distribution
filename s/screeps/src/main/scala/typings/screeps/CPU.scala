@@ -1,11 +1,12 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CPU extends js.Object {
+trait CPU extends StObject {
   
   /**
     * An amount of unused CPU accumulated in your bucket.
@@ -104,63 +105,51 @@ object CPU {
   }
   
   @scala.inline
-  implicit class CPUOps[Self <: CPU] (val x: Self) extends AnyVal {
+  implicit class CPUMutableBuilder[Self <: CPU] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: Double): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeneratePixel(value: () => OK | ERR_NOT_ENOUGH_RESOURCES): Self = StObject.set(x, "generatePixel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetHeapStatistics(value: () => HeapStatistics): Self = StObject.set(x, "getHeapStatistics", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBucket(value: Double): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    def setGetHeapStatisticsUndefined: Self = StObject.set(x, "getHeapStatistics", js.undefined)
     
     @scala.inline
-    def setGeneratePixel(value: () => OK | ERR_NOT_ENOUGH_RESOURCES): Self = this.set("generatePixel", js.Any.fromFunction0(value))
+    def setGetUsed(value: () => Double): Self = StObject.set(x, "getUsed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetUsed(value: () => Double): Self = this.set("getUsed", js.Any.fromFunction0(value))
+    def setHalt(value: () => scala.Nothing): Self = StObject.set(x, "halt", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setHaltUndefined: Self = StObject.set(x, "halt", js.undefined)
     
     @scala.inline
-    def setSetShardLimits(value: CPUShardLimits => OK | ERR_BUSY | ERR_INVALID_ARGS): Self = this.set("setShardLimits", js.Any.fromFunction1(value))
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShardLimits(value: CPUShardLimits): Self = this.set("shardLimits", value.asInstanceOf[js.Any])
+    def setSetShardLimits(value: CPUShardLimits => OK | ERR_BUSY | ERR_INVALID_ARGS): Self = StObject.set(x, "setShardLimits", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTickLimit(value: Double): Self = this.set("tickLimit", value.asInstanceOf[js.Any])
+    def setShardLimits(value: CPUShardLimits): Self = StObject.set(x, "shardLimits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnlock(value: () => OK | ERR_NOT_ENOUGH_RESOURCES | ERR_FULL): Self = this.set("unlock", js.Any.fromFunction0(value))
+    def setTickLimit(value: Double): Self = StObject.set(x, "tickLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnlocked(value: Boolean): Self = this.set("unlocked", value.asInstanceOf[js.Any])
+    def setUnlock(value: () => OK | ERR_NOT_ENOUGH_RESOURCES | ERR_FULL): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHeapStatistics(value: () => HeapStatistics): Self = this.set("getHeapStatistics", js.Any.fromFunction0(value))
+    def setUnlocked(value: Boolean): Self = StObject.set(x, "unlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetHeapStatistics: Self = this.set("getHeapStatistics", js.undefined)
+    def setUnlockedTime(value: Double): Self = StObject.set(x, "unlockedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHalt(value: () => scala.Nothing): Self = this.set("halt", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteHalt: Self = this.set("halt", js.undefined)
-    
-    @scala.inline
-    def setUnlockedTime(value: Double): Self = this.set("unlockedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnlockedTime: Self = this.set("unlockedTime", js.undefined)
+    def setUnlockedTimeUndefined: Self = StObject.set(x, "unlockedTime", js.undefined)
   }
 }

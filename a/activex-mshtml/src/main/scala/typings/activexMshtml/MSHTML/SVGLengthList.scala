@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGLengthList extends js.Object {
+trait SVGLengthList extends StObject {
   
   @JSName("MSHTML.SVGLengthList_typekey")
   var MSHTMLDotSVGLengthList_typekey: SVGLengthList = js.native
@@ -46,45 +47,33 @@ object SVGLengthList {
   }
   
   @scala.inline
-  implicit class SVGLengthListOps[Self <: SVGLengthList] (val x: Self) extends AnyVal {
+  implicit class SVGLengthListMutableBuilder[Self <: SVGLengthList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendItem(value: SVGLength => SVGLength): Self = StObject.set(x, "appendItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetItem(value: Double => SVGLength): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMSHTMLDotSVGLengthList_typekey(value: SVGLengthList): Self = this.set("MSHTML.SVGLengthList_typekey", value.asInstanceOf[js.Any])
+    def setInitialize(value: SVGLength => SVGLength): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAppendItem(value: SVGLength => SVGLength): Self = this.set("appendItem", js.Any.fromFunction1(value))
+    def setInsertItemBefore(value: (SVGLength, Double) => SVGLength): Self = StObject.set(x, "insertItemBefore", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setMSHTMLDotSVGLengthList_typekey(value: SVGLengthList): Self = StObject.set(x, "MSHTML.SVGLengthList_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetItem(value: Double => SVGLength): Self = this.set("getItem", js.Any.fromFunction1(value))
+    def setNumberOfItems(value: Double): Self = StObject.set(x, "numberOfItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialize(value: SVGLength => SVGLength): Self = this.set("initialize", js.Any.fromFunction1(value))
+    def setRemoveItem(value: Double => SVGLength): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsertItemBefore(value: (SVGLength, Double) => SVGLength): Self = this.set("insertItemBefore", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setNumberOfItems(value: Double): Self = this.set("numberOfItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveItem(value: Double => SVGLength): Self = this.set("removeItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReplaceItem(value: (SVGLength, Double) => SVGLength): Self = this.set("replaceItem", js.Any.fromFunction2(value))
+    def setReplaceItem(value: (SVGLength, Double) => SVGLength): Self = StObject.set(x, "replaceItem", js.Any.fromFunction2(value))
   }
 }

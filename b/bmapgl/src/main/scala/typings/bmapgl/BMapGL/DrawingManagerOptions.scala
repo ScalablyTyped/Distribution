@@ -1,11 +1,12 @@
 package typings.bmapgl.BMapGL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DrawingManagerOptions extends js.Object {
+trait DrawingManagerOptions extends StObject {
   
   var circleOptions: js.UndefOr[CircleOptions] = js.native
   
@@ -46,108 +47,96 @@ object DrawingManagerOptions {
   }
   
   @scala.inline
-  implicit class DrawingManagerOptionsOps[Self <: DrawingManagerOptions] (val x: Self) extends AnyVal {
+  implicit class DrawingManagerOptionsMutableBuilder[Self <: DrawingManagerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCircleOptions(value: CircleOptions): Self = StObject.set(x, "circleOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCircleOptionsUndefined: Self = StObject.set(x, "circleOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrawingMode(value: DrawingType): Self = StObject.set(x, "drawingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircleOptions(value: CircleOptions): Self = this.set("circleOptions", value.asInstanceOf[js.Any])
+    def setDrawingModeUndefined: Self = StObject.set(x, "drawingMode", js.undefined)
     
     @scala.inline
-    def deleteCircleOptions: Self = this.set("circleOptions", js.undefined)
+    def setDrawingToolOptions(value: DrawingToolOptions): Self = StObject.set(x, "drawingToolOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawingMode(value: DrawingType): Self = this.set("drawingMode", value.asInstanceOf[js.Any])
+    def setDrawingToolOptionsUndefined: Self = StObject.set(x, "drawingToolOptions", js.undefined)
     
     @scala.inline
-    def deleteDrawingMode: Self = this.set("drawingMode", js.undefined)
+    def setEnableCalculate(value: Boolean): Self = StObject.set(x, "enableCalculate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawingToolOptions(value: DrawingToolOptions): Self = this.set("drawingToolOptions", value.asInstanceOf[js.Any])
+    def setEnableCalculateUndefined: Self = StObject.set(x, "enableCalculate", js.undefined)
     
     @scala.inline
-    def deleteDrawingToolOptions: Self = this.set("drawingToolOptions", js.undefined)
+    def setEnableDrawingTool(value: Boolean): Self = StObject.set(x, "enableDrawingTool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCalculate(value: Boolean): Self = this.set("enableCalculate", value.asInstanceOf[js.Any])
+    def setEnableDrawingToolUndefined: Self = StObject.set(x, "enableDrawingTool", js.undefined)
     
     @scala.inline
-    def deleteEnableCalculate: Self = this.set("enableCalculate", js.undefined)
+    def setEnableGpc(value: Boolean): Self = StObject.set(x, "enableGpc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableDrawingTool(value: Boolean): Self = this.set("enableDrawingTool", value.asInstanceOf[js.Any])
+    def setEnableGpcUndefined: Self = StObject.set(x, "enableGpc", js.undefined)
     
     @scala.inline
-    def deleteEnableDrawingTool: Self = this.set("enableDrawingTool", js.undefined)
+    def setEnableLimit(value: Boolean): Self = StObject.set(x, "enableLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableGpc(value: Boolean): Self = this.set("enableGpc", value.asInstanceOf[js.Any])
+    def setEnableLimitUndefined: Self = StObject.set(x, "enableLimit", js.undefined)
     
     @scala.inline
-    def deleteEnableGpc: Self = this.set("enableGpc", js.undefined)
+    def setEnableSorption(value: Boolean): Self = StObject.set(x, "enableSorption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableLimit(value: Boolean): Self = this.set("enableLimit", value.asInstanceOf[js.Any])
+    def setEnableSorptionUndefined: Self = StObject.set(x, "enableSorption", js.undefined)
     
     @scala.inline
-    def deleteEnableLimit: Self = this.set("enableLimit", js.undefined)
+    def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableSorption(value: Boolean): Self = this.set("enableSorption", value.asInstanceOf[js.Any])
+    def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
     
     @scala.inline
-    def deleteEnableSorption: Self = this.set("enableSorption", js.undefined)
+    def setLimitOptions(value: DrawingLimitOptions): Self = StObject.set(x, "limitOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOpen(value: Boolean): Self = this.set("isOpen", value.asInstanceOf[js.Any])
+    def setLimitOptionsUndefined: Self = StObject.set(x, "limitOptions", js.undefined)
     
     @scala.inline
-    def deleteIsOpen: Self = this.set("isOpen", js.undefined)
+    def setMarkerOptions(value: MarkerOptions): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimitOptions(value: DrawingLimitOptions): Self = this.set("limitOptions", value.asInstanceOf[js.Any])
+    def setMarkerOptionsUndefined: Self = StObject.set(x, "markerOptions", js.undefined)
     
     @scala.inline
-    def deleteLimitOptions: Self = this.set("limitOptions", js.undefined)
+    def setPolygonOptions(value: PolygonOptions): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerOptions(value: MarkerOptions): Self = this.set("markerOptions", value.asInstanceOf[js.Any])
+    def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
     
     @scala.inline
-    def deleteMarkerOptions: Self = this.set("markerOptions", js.undefined)
+    def setPolylineOptions(value: PolylineOptions): Self = StObject.set(x, "polylineOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolygonOptions(value: PolygonOptions): Self = this.set("polygonOptions", value.asInstanceOf[js.Any])
+    def setPolylineOptionsUndefined: Self = StObject.set(x, "polylineOptions", js.undefined)
     
     @scala.inline
-    def deletePolygonOptions: Self = this.set("polygonOptions", js.undefined)
+    def setRectangleOptions(value: PolygonOptions): Self = StObject.set(x, "rectangleOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolylineOptions(value: PolylineOptions): Self = this.set("polylineOptions", value.asInstanceOf[js.Any])
+    def setRectangleOptionsUndefined: Self = StObject.set(x, "rectangleOptions", js.undefined)
     
     @scala.inline
-    def deletePolylineOptions: Self = this.set("polylineOptions", js.undefined)
+    def setSorptionDistance(value: Double): Self = StObject.set(x, "sorptionDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRectangleOptions(value: PolygonOptions): Self = this.set("rectangleOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRectangleOptions: Self = this.set("rectangleOptions", js.undefined)
-    
-    @scala.inline
-    def setSorptionDistance(value: Double): Self = this.set("sorptionDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSorptionDistance: Self = this.set("sorptionDistance", js.undefined)
+    def setSorptionDistanceUndefined: Self = StObject.set(x, "sorptionDistance", js.undefined)
   }
 }

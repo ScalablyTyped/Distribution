@@ -7,13 +7,14 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeElements.mod.RecursivePartial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.CardProps>> */
 @js.native
-trait RecursivePartialPartialCa extends js.Object {
+trait RecursivePartialPartialCa extends StObject {
   
   var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
   
@@ -50,96 +51,84 @@ object RecursivePartialPartialCa {
   }
   
   @scala.inline
-  implicit class RecursivePartialPartialCaOps[Self <: RecursivePartialPartialCa] (val x: Self) extends AnyVal {
+  implicit class RecursivePartialPartialCaMutableBuilder[Self <: RecursivePartialPartialCa] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDividerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "dividerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    def setDividerStyleUndefined: Self = StObject.set(x, "dividerStyle", js.undefined)
     
     @scala.inline
-    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    def setFeaturedSubtitle(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "featuredSubtitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDividerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = this.set("dividerStyle", value.asInstanceOf[js.Any])
+    def setFeaturedSubtitleStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "featuredSubtitleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDividerStyle: Self = this.set("dividerStyle", js.undefined)
+    def setFeaturedSubtitleStyleUndefined: Self = StObject.set(x, "featuredSubtitleStyle", js.undefined)
     
     @scala.inline
-    def setFeaturedSubtitle(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("featuredSubtitle", value.asInstanceOf[js.Any])
+    def setFeaturedSubtitleUndefined: Self = StObject.set(x, "featuredSubtitle", js.undefined)
     
     @scala.inline
-    def deleteFeaturedSubtitle: Self = this.set("featuredSubtitle", js.undefined)
+    def setFeaturedTitle(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "featuredTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeaturedSubtitleStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = this.set("featuredSubtitleStyle", value.asInstanceOf[js.Any])
+    def setFeaturedTitleStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "featuredTitleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFeaturedSubtitleStyle: Self = this.set("featuredSubtitleStyle", js.undefined)
+    def setFeaturedTitleStyleUndefined: Self = StObject.set(x, "featuredTitleStyle", js.undefined)
     
     @scala.inline
-    def setFeaturedTitle(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("featuredTitle", value.asInstanceOf[js.Any])
+    def setFeaturedTitleUndefined: Self = StObject.set(x, "featuredTitle", js.undefined)
     
     @scala.inline
-    def deleteFeaturedTitle: Self = this.set("featuredTitle", js.undefined)
+    def setImage(value: RecursivePartial[js.UndefOr[ImageSourcePropType]]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeaturedTitleStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = this.set("featuredTitleStyle", value.asInstanceOf[js.Any])
+    def setImageProps(value: RecursivePartial[js.UndefOr[PartialImageProps]]): Self = StObject.set(x, "imageProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFeaturedTitleStyle: Self = this.set("featuredTitleStyle", js.undefined)
+    def setImagePropsUndefined: Self = StObject.set(x, "imageProps", js.undefined)
     
     @scala.inline
-    def setImage(value: RecursivePartial[js.UndefOr[ImageSourcePropType]]): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setImageStyle(value: RecursivePartial[js.UndefOr[ImageStyle]]): Self = StObject.set(x, "imageStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setImageStyleUndefined: Self = StObject.set(x, "imageStyle", js.undefined)
     
     @scala.inline
-    def setImageProps(value: RecursivePartial[js.UndefOr[PartialImageProps]]): Self = this.set("imageProps", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteImageProps: Self = this.set("imageProps", js.undefined)
+    def setImageWrapperStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "imageWrapperStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageStyle(value: RecursivePartial[js.UndefOr[ImageStyle]]): Self = this.set("imageStyle", value.asInstanceOf[js.Any])
+    def setImageWrapperStyleUndefined: Self = StObject.set(x, "imageWrapperStyle", js.undefined)
     
     @scala.inline
-    def deleteImageStyle: Self = this.set("imageStyle", js.undefined)
+    def setTitle(value: RecursivePartial[js.UndefOr[String | ReactElement]]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageWrapperStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = this.set("imageWrapperStyle", value.asInstanceOf[js.Any])
+    def setTitleStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageWrapperStyle: Self = this.set("imageWrapperStyle", js.undefined)
+    def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
     
     @scala.inline
-    def setTitle(value: RecursivePartial[js.UndefOr[String | ReactElement]]): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setWrapperStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = this.set("titleStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleStyle: Self = this.set("titleStyle", js.undefined)
-    
-    @scala.inline
-    def setWrapperStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = this.set("wrapperStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapperStyle: Self = this.set("wrapperStyle", js.undefined)
+    def setWrapperStyleUndefined: Self = StObject.set(x, "wrapperStyle", js.undefined)
   }
 }

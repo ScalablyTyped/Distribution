@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.activexLibreoffice.com_.sun.star.task.ClassifiedInteractionRequest
 import typings.activexLibreoffice.com_.sun.star.task.InteractionClassification
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,48 +81,36 @@ object AuthenticationRequest {
   }
   
   @scala.inline
-  implicit class AuthenticationRequestOps[Self <: AuthenticationRequest] (val x: Self) extends AnyVal {
+  implicit class AuthenticationRequestMutableBuilder[Self <: AuthenticationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount(value: String): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiagnostic(value: String): Self = StObject.set(x, "Diagnostic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasAccount(value: Boolean): Self = StObject.set(x, "HasAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccount(value: String): Self = this.set("Account", value.asInstanceOf[js.Any])
+    def setHasPassword(value: Boolean): Self = StObject.set(x, "HasPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagnostic(value: String): Self = this.set("Diagnostic", value.asInstanceOf[js.Any])
+    def setHasRealm(value: Boolean): Self = StObject.set(x, "HasRealm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasAccount(value: Boolean): Self = this.set("HasAccount", value.asInstanceOf[js.Any])
+    def setHasUserName(value: Boolean): Self = StObject.set(x, "HasUserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasPassword(value: Boolean): Self = this.set("HasPassword", value.asInstanceOf[js.Any])
+    def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasRealm(value: Boolean): Self = this.set("HasRealm", value.asInstanceOf[js.Any])
+    def setRealm(value: String): Self = StObject.set(x, "Realm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasUserName(value: Boolean): Self = this.set("HasUserName", value.asInstanceOf[js.Any])
+    def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("Password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRealm(value: String): Self = this.set("Realm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerName(value: String): Self = this.set("ServerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserName(value: String): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

@@ -3,6 +3,7 @@ package typings.photonui.photonui
 import org.scalablytyped.runtime.StringDictionary
 import typings.photonui.anon.X
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,36 +76,24 @@ object Window {
   }
   
   @scala.inline
-  implicit class WindowOps[Self <: Window] (val x: Self) extends AnyVal {
+  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseButtonVisible(value: Boolean): Self = StObject.set(x, "closeButtonVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMovable(value: Boolean): Self = StObject.set(x, "movable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseButtonVisible(value: Boolean): Self = this.set("closeButtonVisible", value.asInstanceOf[js.Any])
+    def setMoveToBack(value: () => Unit): Self = StObject.set(x, "moveToBack", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setModal(value: Boolean): Self = this.set("modal", value.asInstanceOf[js.Any])
+    def setMoveToFront(value: () => Unit): Self = StObject.set(x, "moveToFront", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMovable(value: Boolean): Self = this.set("movable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMoveToBack(value: () => Unit): Self = this.set("moveToBack", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMoveToFront(value: () => Unit): Self = this.set("moveToFront", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

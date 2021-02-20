@@ -1,11 +1,12 @@
 package typings.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormRegion extends js.Object {
+trait FormRegion extends StObject {
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -79,78 +80,66 @@ object FormRegion {
   }
   
   @scala.inline
-  implicit class FormRegionOps[Self <: FormRegion] (val x: Self) extends AnyVal {
+  implicit class FormRegionMutableBuilder[Self <: FormRegion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetail(value: String): Self = StObject.set(x, "Detail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setEnableAutoLayout(value: Boolean): Self = StObject.set(x, "EnableAutoLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetail(value: String): Self = this.set("Detail", value.asInstanceOf[js.Any])
+    def setForm(value: js.Any): Self = StObject.set(x, "Form", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setFormRegionMode(value: OlFormRegionMode): Self = StObject.set(x, "FormRegionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableAutoLayout(value: Boolean): Self = this.set("EnableAutoLayout", value.asInstanceOf[js.Any])
+    def setInspector(value: Inspector): Self = StObject.set(x, "Inspector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForm(value: js.Any): Self = this.set("Form", value.asInstanceOf[js.Any])
+    def setInternalName(value: String): Self = StObject.set(x, "InternalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormRegionMode(value: OlFormRegionMode): Self = this.set("FormRegionMode", value.asInstanceOf[js.Any])
+    def setIsExpanded(value: Boolean): Self = StObject.set(x, "IsExpanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInspector(value: Inspector): Self = this.set("Inspector", value.asInstanceOf[js.Any])
+    def setItem(value: js.Any): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternalName(value: String): Self = this.set("InternalName", value.asInstanceOf[js.Any])
+    def setLanguage(value: Double): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsExpanded(value: Boolean): Self = this.set("IsExpanded", value.asInstanceOf[js.Any])
+    def setOutlookDotFormRegion_typekey(value: FormRegion): Self = StObject.set(x, "Outlook.FormRegion_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: js.Any): Self = this.set("Item", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: Double): Self = this.set("Language", value.asInstanceOf[js.Any])
+    def setReflow(value: () => Unit): Self = StObject.set(x, "Reflow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOutlookDotFormRegion_typekey(value: FormRegion): Self = this.set("Outlook.FormRegion_typekey", value.asInstanceOf[js.Any])
+    def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReflow(value: () => Unit): Self = this.set("Reflow", js.Any.fromFunction0(value))
+    def setSetControlItemProperty(value: (js.Any, String) => Unit): Self = StObject.set(x, "SetControlItemProperty", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSelect(value: () => Unit): Self = this.set("Select", js.Any.fromFunction0(value))
+    def setSuppressControlReplacement(value: Boolean): Self = StObject.set(x, "SuppressControlReplacement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetControlItemProperty(value: (js.Any, String) => Unit): Self = this.set("SetControlItemProperty", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSuppressControlReplacement(value: Boolean): Self = this.set("SuppressControlReplacement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("Visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

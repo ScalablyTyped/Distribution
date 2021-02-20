@@ -1,11 +1,12 @@
 package typings.postmanCollection.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WithRoot extends js.Object {
+trait WithRoot extends StObject {
   
   var withRoot: Boolean = js.native
 }
@@ -18,21 +19,9 @@ object WithRoot {
   }
   
   @scala.inline
-  implicit class WithRootOps[Self <: WithRoot] (val x: Self) extends AnyVal {
+  implicit class WithRootMutableBuilder[Self <: WithRoot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWithRoot(value: Boolean): Self = this.set("withRoot", value.asInstanceOf[js.Any])
+    def setWithRoot(value: Boolean): Self = StObject.set(x, "withRoot", value.asInstanceOf[js.Any])
   }
 }

@@ -2,12 +2,13 @@ package typings.astTypes.buildersMod
 
 import typings.astTypes.anon.CommentsLoc
 import typings.astTypes.namedTypesMod.namedTypes.NumberTypeAnnotation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NumberTypeAnnotationBuilder extends js.Object {
+trait NumberTypeAnnotationBuilder extends StObject {
   
   def apply(): NumberTypeAnnotation = js.native
   

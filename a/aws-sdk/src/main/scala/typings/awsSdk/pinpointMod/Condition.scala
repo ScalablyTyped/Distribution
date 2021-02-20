@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Condition extends js.Object {
+trait Condition extends StObject {
   
   /**
     * The conditions to evaluate for the activity.
@@ -26,33 +27,21 @@ object Condition {
   }
   
   @scala.inline
-  implicit class ConditionOps[Self <: Condition] (val x: Self) extends AnyVal {
+  implicit class ConditionMutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditions(value: ListOfSimpleCondition): Self = StObject.set(x, "Conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionsUndefined: Self = StObject.set(x, "Conditions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditionsVarargs(value: SimpleCondition*): Self = StObject.set(x, "Conditions", js.Array(value :_*))
     
     @scala.inline
-    def setConditionsVarargs(value: SimpleCondition*): Self = this.set("Conditions", js.Array(value :_*))
+    def setOperator(value: Operator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: ListOfSimpleCondition): Self = this.set("Conditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConditions: Self = this.set("Conditions", js.undefined)
-    
-    @scala.inline
-    def setOperator(value: Operator): Self = this.set("Operator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperator: Self = this.set("Operator", js.undefined)
+    def setOperatorUndefined: Self = StObject.set(x, "Operator", js.undefined)
   }
 }

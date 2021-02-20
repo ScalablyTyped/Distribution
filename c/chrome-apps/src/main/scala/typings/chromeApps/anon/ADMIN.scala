@@ -5,12 +5,13 @@ import typings.chromeApps.chromeAppsStrings.development_
 import typings.chromeApps.chromeAppsStrings.normal_
 import typings.chromeApps.chromeAppsStrings.other_
 import typings.chromeApps.chromeAppsStrings.sideload_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ADMIN extends js.Object {
+trait ADMIN extends StObject {
   
   var ADMIN: admin_ = js.native
   
@@ -31,33 +32,21 @@ object ADMIN {
   }
   
   @scala.inline
-  implicit class ADMINOps[Self <: ADMIN] (val x: Self) extends AnyVal {
+  implicit class ADMINMutableBuilder[Self <: ADMIN] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setADMIN(value: admin_): Self = StObject.set(x, "ADMIN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDEVELOPMENT(value: development_): Self = StObject.set(x, "DEVELOPMENT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNORMAL(value: normal_): Self = StObject.set(x, "NORMAL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setADMIN(value: admin_): Self = this.set("ADMIN", value.asInstanceOf[js.Any])
+    def setOTHER(value: other_): Self = StObject.set(x, "OTHER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDEVELOPMENT(value: development_): Self = this.set("DEVELOPMENT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNORMAL(value: normal_): Self = this.set("NORMAL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOTHER(value: other_): Self = this.set("OTHER", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSIDELOAD(value: sideload_): Self = this.set("SIDELOAD", value.asInstanceOf[js.Any])
+    def setSIDELOAD(value: sideload_): Self = StObject.set(x, "SIDELOAD", value.asInstanceOf[js.Any])
   }
 }

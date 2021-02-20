@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListChannelModeratorsResponse extends js.Object {
+trait ListChannelModeratorsResponse extends StObject {
   
   /**
     * The ARN of the channel.
@@ -31,39 +32,27 @@ object ListChannelModeratorsResponse {
   }
   
   @scala.inline
-  implicit class ListChannelModeratorsResponseOps[Self <: ListChannelModeratorsResponse] (val x: Self) extends AnyVal {
+  implicit class ListChannelModeratorsResponseMutableBuilder[Self <: ListChannelModeratorsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelArnUndefined: Self = StObject.set(x, "ChannelArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelModerators(value: ChannelModeratorSummaryList): Self = StObject.set(x, "ChannelModerators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelArn(value: ChimeArn): Self = this.set("ChannelArn", value.asInstanceOf[js.Any])
+    def setChannelModeratorsUndefined: Self = StObject.set(x, "ChannelModerators", js.undefined)
     
     @scala.inline
-    def deleteChannelArn: Self = this.set("ChannelArn", js.undefined)
+    def setChannelModeratorsVarargs(value: ChannelModeratorSummary*): Self = StObject.set(x, "ChannelModerators", js.Array(value :_*))
     
     @scala.inline
-    def setChannelModeratorsVarargs(value: ChannelModeratorSummary*): Self = this.set("ChannelModerators", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelModerators(value: ChannelModeratorSummaryList): Self = this.set("ChannelModerators", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChannelModerators: Self = this.set("ChannelModerators", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

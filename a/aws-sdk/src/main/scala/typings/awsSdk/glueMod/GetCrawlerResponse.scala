@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetCrawlerResponse extends js.Object {
+trait GetCrawlerResponse extends StObject {
   
   /**
     * The metadata for the specified crawler.
@@ -21,24 +22,12 @@ object GetCrawlerResponse {
   }
   
   @scala.inline
-  implicit class GetCrawlerResponseOps[Self <: GetCrawlerResponse] (val x: Self) extends AnyVal {
+  implicit class GetCrawlerResponseMutableBuilder[Self <: GetCrawlerResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCrawler(value: Crawler): Self = StObject.set(x, "Crawler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCrawler(value: Crawler): Self = this.set("Crawler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCrawler: Self = this.set("Crawler", js.undefined)
+    def setCrawlerUndefined: Self = StObject.set(x, "Crawler", js.undefined)
   }
 }

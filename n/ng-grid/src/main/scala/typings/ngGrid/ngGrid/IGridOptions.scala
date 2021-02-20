@@ -1,11 +1,12 @@
 package typings.ngGrid.ngGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGridOptions extends js.Object {
+trait IGridOptions extends StObject {
   
   /** Callback for when you want to validate something after selection. */
   var afterSelectionChange: js.UndefOr[
@@ -181,318 +182,306 @@ object IGridOptions {
   }
   
   @scala.inline
-  implicit class IGridOptionsOps[Self <: IGridOptions] (val x: Self) extends AnyVal {
+  implicit class IGridOptionsMutableBuilder[Self <: IGridOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterSelectionChange(value: (/* rowItem */ js.UndefOr[IRow], /* event */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterSelectionChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterSelectionChangeUndefined: Self = StObject.set(x, "afterSelectionChange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAggregateTemplate(value: String): Self = StObject.set(x, "aggregateTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterSelectionChange(value: (/* rowItem */ js.UndefOr[IRow], /* event */ js.UndefOr[js.Any]) => Unit): Self = this.set("afterSelectionChange", js.Any.fromFunction2(value))
+    def setAggregateTemplateUndefined: Self = StObject.set(x, "aggregateTemplate", js.undefined)
     
     @scala.inline
-    def deleteAfterSelectionChange: Self = this.set("afterSelectionChange", js.undefined)
+    def setBeforeSelectionChange(value: (/* rowItem */ js.UndefOr[IRow], /* event */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "beforeSelectionChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAggregateTemplate(value: String): Self = this.set("aggregateTemplate", value.asInstanceOf[js.Any])
+    def setBeforeSelectionChangeUndefined: Self = StObject.set(x, "beforeSelectionChange", js.undefined)
     
     @scala.inline
-    def deleteAggregateTemplate: Self = this.set("aggregateTemplate", js.undefined)
+    def setCheckboxCellTemplate(value: String): Self = StObject.set(x, "checkboxCellTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeSelectionChange(value: (/* rowItem */ js.UndefOr[IRow], /* event */ js.UndefOr[js.Any]) => Boolean): Self = this.set("beforeSelectionChange", js.Any.fromFunction2(value))
+    def setCheckboxCellTemplateUndefined: Self = StObject.set(x, "checkboxCellTemplate", js.undefined)
     
     @scala.inline
-    def deleteBeforeSelectionChange: Self = this.set("beforeSelectionChange", js.undefined)
+    def setCheckboxHeaderTemplate(value: String): Self = StObject.set(x, "checkboxHeaderTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckboxCellTemplate(value: String): Self = this.set("checkboxCellTemplate", value.asInstanceOf[js.Any])
+    def setCheckboxHeaderTemplateUndefined: Self = StObject.set(x, "checkboxHeaderTemplate", js.undefined)
     
     @scala.inline
-    def deleteCheckboxCellTemplate: Self = this.set("checkboxCellTemplate", js.undefined)
+    def setColumnDefs(value: js.Array[IColumnDef]): Self = StObject.set(x, "columnDefs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckboxHeaderTemplate(value: String): Self = this.set("checkboxHeaderTemplate", value.asInstanceOf[js.Any])
+    def setColumnDefsUndefined: Self = StObject.set(x, "columnDefs", js.undefined)
     
     @scala.inline
-    def deleteCheckboxHeaderTemplate: Self = this.set("checkboxHeaderTemplate", js.undefined)
+    def setColumnDefsVarargs(value: IColumnDef*): Self = StObject.set(x, "columnDefs", js.Array(value :_*))
     
     @scala.inline
-    def setColumnDefsVarargs(value: IColumnDef*): Self = this.set("columnDefs", js.Array(value :_*))
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnDefs(value: js.Array[IColumnDef]): Self = this.set("columnDefs", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteColumnDefs: Self = this.set("columnDefs", js.undefined)
+    def setDataUpdated(value: js.Function): Self = StObject.set(x, "dataUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDataUpdatedUndefined: Self = StObject.set(x, "dataUpdated", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setEnableCellEdit(value: Boolean): Self = StObject.set(x, "enableCellEdit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataUpdated(value: js.Function): Self = this.set("dataUpdated", value.asInstanceOf[js.Any])
+    def setEnableCellEditUndefined: Self = StObject.set(x, "enableCellEdit", js.undefined)
     
     @scala.inline
-    def deleteDataUpdated: Self = this.set("dataUpdated", js.undefined)
+    def setEnableCellSelection(value: Boolean): Self = StObject.set(x, "enableCellSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCellEdit(value: Boolean): Self = this.set("enableCellEdit", value.asInstanceOf[js.Any])
+    def setEnableCellSelectionUndefined: Self = StObject.set(x, "enableCellSelection", js.undefined)
     
     @scala.inline
-    def deleteEnableCellEdit: Self = this.set("enableCellEdit", js.undefined)
+    def setEnableColumnHeavyVirt(value: Boolean): Self = StObject.set(x, "enableColumnHeavyVirt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCellSelection(value: Boolean): Self = this.set("enableCellSelection", value.asInstanceOf[js.Any])
+    def setEnableColumnHeavyVirtUndefined: Self = StObject.set(x, "enableColumnHeavyVirt", js.undefined)
     
     @scala.inline
-    def deleteEnableCellSelection: Self = this.set("enableCellSelection", js.undefined)
+    def setEnableColumnReordering(value: Boolean): Self = StObject.set(x, "enableColumnReordering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableColumnHeavyVirt(value: Boolean): Self = this.set("enableColumnHeavyVirt", value.asInstanceOf[js.Any])
+    def setEnableColumnReorderingUndefined: Self = StObject.set(x, "enableColumnReordering", js.undefined)
     
     @scala.inline
-    def deleteEnableColumnHeavyVirt: Self = this.set("enableColumnHeavyVirt", js.undefined)
+    def setEnableColumnResize(value: Boolean): Self = StObject.set(x, "enableColumnResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableColumnReordering(value: Boolean): Self = this.set("enableColumnReordering", value.asInstanceOf[js.Any])
+    def setEnableColumnResizeUndefined: Self = StObject.set(x, "enableColumnResize", js.undefined)
     
     @scala.inline
-    def deleteEnableColumnReordering: Self = this.set("enableColumnReordering", js.undefined)
+    def setEnableHighlighting(value: Boolean): Self = StObject.set(x, "enableHighlighting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableColumnResize(value: Boolean): Self = this.set("enableColumnResize", value.asInstanceOf[js.Any])
+    def setEnableHighlightingUndefined: Self = StObject.set(x, "enableHighlighting", js.undefined)
     
     @scala.inline
-    def deleteEnableColumnResize: Self = this.set("enableColumnResize", js.undefined)
+    def setEnablePaging(value: Boolean): Self = StObject.set(x, "enablePaging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableHighlighting(value: Boolean): Self = this.set("enableHighlighting", value.asInstanceOf[js.Any])
+    def setEnablePagingUndefined: Self = StObject.set(x, "enablePaging", js.undefined)
     
     @scala.inline
-    def deleteEnableHighlighting: Self = this.set("enableHighlighting", js.undefined)
+    def setEnablePinning(value: Boolean): Self = StObject.set(x, "enablePinning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablePaging(value: Boolean): Self = this.set("enablePaging", value.asInstanceOf[js.Any])
+    def setEnablePinningUndefined: Self = StObject.set(x, "enablePinning", js.undefined)
     
     @scala.inline
-    def deleteEnablePaging: Self = this.set("enablePaging", js.undefined)
+    def setEnableRowReordering(value: Boolean): Self = StObject.set(x, "enableRowReordering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablePinning(value: Boolean): Self = this.set("enablePinning", value.asInstanceOf[js.Any])
+    def setEnableRowReorderingUndefined: Self = StObject.set(x, "enableRowReordering", js.undefined)
     
     @scala.inline
-    def deleteEnablePinning: Self = this.set("enablePinning", js.undefined)
+    def setEnableRowSelection(value: Boolean): Self = StObject.set(x, "enableRowSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableRowReordering(value: Boolean): Self = this.set("enableRowReordering", value.asInstanceOf[js.Any])
+    def setEnableRowSelectionUndefined: Self = StObject.set(x, "enableRowSelection", js.undefined)
     
     @scala.inline
-    def deleteEnableRowReordering: Self = this.set("enableRowReordering", js.undefined)
+    def setEnableSorting(value: Boolean): Self = StObject.set(x, "enableSorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableRowSelection(value: Boolean): Self = this.set("enableRowSelection", value.asInstanceOf[js.Any])
+    def setEnableSortingUndefined: Self = StObject.set(x, "enableSorting", js.undefined)
     
     @scala.inline
-    def deleteEnableRowSelection: Self = this.set("enableRowSelection", js.undefined)
+    def setExcludeProperties(value: js.Any): Self = StObject.set(x, "excludeProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableSorting(value: Boolean): Self = this.set("enableSorting", value.asInstanceOf[js.Any])
+    def setExcludePropertiesUndefined: Self = StObject.set(x, "excludeProperties", js.undefined)
     
     @scala.inline
-    def deleteEnableSorting: Self = this.set("enableSorting", js.undefined)
+    def setFilterOptions(value: IFilterOptions): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeProperties(value: js.Any): Self = this.set("excludeProperties", value.asInstanceOf[js.Any])
+    def setFilterOptionsUndefined: Self = StObject.set(x, "filterOptions", js.undefined)
     
     @scala.inline
-    def deleteExcludeProperties: Self = this.set("excludeProperties", js.undefined)
+    def setFooterRowHeight(value: Double): Self = StObject.set(x, "footerRowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterOptions(value: IFilterOptions): Self = this.set("filterOptions", value.asInstanceOf[js.Any])
+    def setFooterRowHeightUndefined: Self = StObject.set(x, "footerRowHeight", js.undefined)
     
     @scala.inline
-    def deleteFilterOptions: Self = this.set("filterOptions", js.undefined)
+    def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterRowHeight(value: Double): Self = this.set("footerRowHeight", value.asInstanceOf[js.Any])
+    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
     @scala.inline
-    def deleteFooterRowHeight: Self = this.set("footerRowHeight", js.undefined)
+    def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
     @scala.inline
-    def setGroupsVarargs(value: String*): Self = this.set("groups", js.Array(value :_*))
+    def setHeaderRowHeight(value: Double): Self = StObject.set(x, "headerRowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: js.Array[String]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    def setHeaderRowHeightUndefined: Self = StObject.set(x, "headerRowHeight", js.undefined)
     
     @scala.inline
-    def deleteGroups: Self = this.set("groups", js.undefined)
+    def setHeaderRowTemplate(value: String): Self = StObject.set(x, "headerRowTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderRowHeight(value: Double): Self = this.set("headerRowHeight", value.asInstanceOf[js.Any])
+    def setHeaderRowTemplateUndefined: Self = StObject.set(x, "headerRowTemplate", js.undefined)
     
     @scala.inline
-    def deleteHeaderRowHeight: Self = this.set("headerRowHeight", js.undefined)
+    def setI18n(value: String): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderRowTemplate(value: String): Self = this.set("headerRowTemplate", value.asInstanceOf[js.Any])
+    def setI18nUndefined: Self = StObject.set(x, "i18n", js.undefined)
     
     @scala.inline
-    def deleteHeaderRowTemplate: Self = this.set("headerRowTemplate", js.undefined)
+    def setJqueryUIDraggable(value: Boolean): Self = StObject.set(x, "jqueryUIDraggable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setI18n(value: String): Self = this.set("i18n", value.asInstanceOf[js.Any])
+    def setJqueryUIDraggableUndefined: Self = StObject.set(x, "jqueryUIDraggable", js.undefined)
     
     @scala.inline
-    def deleteI18n: Self = this.set("i18n", js.undefined)
+    def setJqueryUITheme(value: Boolean): Self = StObject.set(x, "jqueryUITheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJqueryUIDraggable(value: Boolean): Self = this.set("jqueryUIDraggable", value.asInstanceOf[js.Any])
+    def setJqueryUIThemeUndefined: Self = StObject.set(x, "jqueryUITheme", js.undefined)
     
     @scala.inline
-    def deleteJqueryUIDraggable: Self = this.set("jqueryUIDraggable", js.undefined)
+    def setKeepLastSelected(value: Boolean): Self = StObject.set(x, "keepLastSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJqueryUITheme(value: Boolean): Self = this.set("jqueryUITheme", value.asInstanceOf[js.Any])
+    def setKeepLastSelectedUndefined: Self = StObject.set(x, "keepLastSelected", js.undefined)
     
     @scala.inline
-    def deleteJqueryUITheme: Self = this.set("jqueryUITheme", js.undefined)
+    def setMaintainColumnRatios(value: Boolean): Self = StObject.set(x, "maintainColumnRatios", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepLastSelected(value: Boolean): Self = this.set("keepLastSelected", value.asInstanceOf[js.Any])
+    def setMaintainColumnRatiosUndefined: Self = StObject.set(x, "maintainColumnRatios", js.undefined)
     
     @scala.inline
-    def deleteKeepLastSelected: Self = this.set("keepLastSelected", js.undefined)
+    def setMultiSelect(value: Boolean): Self = StObject.set(x, "multiSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaintainColumnRatios(value: Boolean): Self = this.set("maintainColumnRatios", value.asInstanceOf[js.Any])
+    def setMultiSelectUndefined: Self = StObject.set(x, "multiSelect", js.undefined)
     
     @scala.inline
-    def deleteMaintainColumnRatios: Self = this.set("maintainColumnRatios", js.undefined)
+    def setPagingOptions(value: IPagingOptions): Self = StObject.set(x, "pagingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiSelect(value: Boolean): Self = this.set("multiSelect", value.asInstanceOf[js.Any])
+    def setPagingOptionsUndefined: Self = StObject.set(x, "pagingOptions", js.undefined)
     
     @scala.inline
-    def deleteMultiSelect: Self = this.set("multiSelect", js.undefined)
+    def setPinSelectionCheckbox(value: Boolean): Self = StObject.set(x, "pinSelectionCheckbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagingOptions(value: IPagingOptions): Self = this.set("pagingOptions", value.asInstanceOf[js.Any])
+    def setPinSelectionCheckboxUndefined: Self = StObject.set(x, "pinSelectionCheckbox", js.undefined)
     
     @scala.inline
-    def deletePagingOptions: Self = this.set("pagingOptions", js.undefined)
+    def setPlugins(value: js.Array[_]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinSelectionCheckbox(value: Boolean): Self = this.set("pinSelectionCheckbox", value.asInstanceOf[js.Any])
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
     @scala.inline
-    def deletePinSelectionCheckbox: Self = this.set("pinSelectionCheckbox", js.undefined)
+    def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     
     @scala.inline
-    def setPluginsVarargs(value: js.Any*): Self = this.set("plugins", js.Array(value :_*))
+    def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlugins(value: js.Array[_]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     
     @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
+    def setRowTemplate(value: String): Self = StObject.set(x, "rowTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowHeight(value: Double): Self = this.set("rowHeight", value.asInstanceOf[js.Any])
+    def setRowTemplateUndefined: Self = StObject.set(x, "rowTemplate", js.undefined)
     
     @scala.inline
-    def deleteRowHeight: Self = this.set("rowHeight", js.undefined)
+    def setSelectItem(value: (/* idx */ Double, /* state */ Boolean) => _): Self = StObject.set(x, "selectItem", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRowTemplate(value: String): Self = this.set("rowTemplate", value.asInstanceOf[js.Any])
+    def setSelectItemUndefined: Self = StObject.set(x, "selectItem", js.undefined)
     
     @scala.inline
-    def deleteRowTemplate: Self = this.set("rowTemplate", js.undefined)
+    def setSelectWithCheckboxOnly(value: Boolean): Self = StObject.set(x, "selectWithCheckboxOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectItem(value: (/* idx */ Double, /* state */ Boolean) => _): Self = this.set("selectItem", js.Any.fromFunction2(value))
+    def setSelectWithCheckboxOnlyUndefined: Self = StObject.set(x, "selectWithCheckboxOnly", js.undefined)
     
     @scala.inline
-    def deleteSelectItem: Self = this.set("selectItem", js.undefined)
+    def setSelectedItems(value: js.Array[_]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectWithCheckboxOnly(value: Boolean): Self = this.set("selectWithCheckboxOnly", value.asInstanceOf[js.Any])
+    def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
     
     @scala.inline
-    def deleteSelectWithCheckboxOnly: Self = this.set("selectWithCheckboxOnly", js.undefined)
+    def setSelectedItemsVarargs(value: js.Any*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
     
     @scala.inline
-    def setSelectedItemsVarargs(value: js.Any*): Self = this.set("selectedItems", js.Array(value :_*))
+    def setShowColumnMenu(value: Boolean): Self = StObject.set(x, "showColumnMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedItems(value: js.Array[_]): Self = this.set("selectedItems", value.asInstanceOf[js.Any])
+    def setShowColumnMenuUndefined: Self = StObject.set(x, "showColumnMenu", js.undefined)
     
     @scala.inline
-    def deleteSelectedItems: Self = this.set("selectedItems", js.undefined)
+    def setShowFilter(value: Boolean): Self = StObject.set(x, "showFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowColumnMenu(value: Boolean): Self = this.set("showColumnMenu", value.asInstanceOf[js.Any])
+    def setShowFilterUndefined: Self = StObject.set(x, "showFilter", js.undefined)
     
     @scala.inline
-    def deleteShowColumnMenu: Self = this.set("showColumnMenu", js.undefined)
+    def setShowFooter(value: Boolean): Self = StObject.set(x, "showFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFilter(value: Boolean): Self = this.set("showFilter", value.asInstanceOf[js.Any])
+    def setShowFooterUndefined: Self = StObject.set(x, "showFooter", js.undefined)
     
     @scala.inline
-    def deleteShowFilter: Self = this.set("showFilter", js.undefined)
+    def setShowGroupPanel(value: Boolean): Self = StObject.set(x, "showGroupPanel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFooter(value: Boolean): Self = this.set("showFooter", value.asInstanceOf[js.Any])
+    def setShowGroupPanelUndefined: Self = StObject.set(x, "showGroupPanel", js.undefined)
     
     @scala.inline
-    def deleteShowFooter: Self = this.set("showFooter", js.undefined)
+    def setShowSelectionCheckbox(value: Boolean): Self = StObject.set(x, "showSelectionCheckbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowGroupPanel(value: Boolean): Self = this.set("showGroupPanel", value.asInstanceOf[js.Any])
+    def setShowSelectionCheckboxUndefined: Self = StObject.set(x, "showSelectionCheckbox", js.undefined)
     
     @scala.inline
-    def deleteShowGroupPanel: Self = this.set("showGroupPanel", js.undefined)
+    def setSortInfo(value: js.Any): Self = StObject.set(x, "sortInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowSelectionCheckbox(value: Boolean): Self = this.set("showSelectionCheckbox", value.asInstanceOf[js.Any])
+    def setSortInfoUndefined: Self = StObject.set(x, "sortInfo", js.undefined)
     
     @scala.inline
-    def deleteShowSelectionCheckbox: Self = this.set("showSelectionCheckbox", js.undefined)
+    def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortInfo(value: js.Any): Self = this.set("sortInfo", value.asInstanceOf[js.Any])
+    def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     
     @scala.inline
-    def deleteSortInfo: Self = this.set("sortInfo", js.undefined)
+    def setUseExternalSorting(value: Boolean): Self = StObject.set(x, "useExternalSorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    def setUseExternalSortingUndefined: Self = StObject.set(x, "useExternalSorting", js.undefined)
     
     @scala.inline
-    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    def setVirtualizationThreshold(value: Double): Self = StObject.set(x, "virtualizationThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseExternalSorting(value: Boolean): Self = this.set("useExternalSorting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseExternalSorting: Self = this.set("useExternalSorting", js.undefined)
-    
-    @scala.inline
-    def setVirtualizationThreshold(value: Double): Self = this.set("virtualizationThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualizationThreshold: Self = this.set("virtualizationThreshold", js.undefined)
+    def setVirtualizationThresholdUndefined: Self = StObject.set(x, "virtualizationThreshold", js.undefined)
   }
 }

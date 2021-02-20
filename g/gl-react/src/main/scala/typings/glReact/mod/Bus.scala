@@ -5,14 +5,21 @@ import typings.glReact.anon.GlParentAny
 import typings.glReact.anon.GlParentBus
 import typings.glReact.anon.GlSurface
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gl-react", "Bus")
 @js.native
-class Bus ()
+class Bus protected ()
   extends Component[BusProps, js.Object, js.Any] {
+  def this(props: BusProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: BusProps, context: js.Any) = this()
   
   def capture(): js.Array[_] = js.native
   def capture(
@@ -62,13 +69,27 @@ class Bus ()
   def redraw(): Unit = js.native
 }
 /* static members */
-@JSImport("gl-react", "Bus")
-@js.native
-object Bus extends js.Object {
+object Bus {
   
-  var childContextTypes: GlParentAny = js.native
+  @JSImport("gl-react", "Bus")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var contextTypes: GlSurface = js.native
+  @JSImport("gl-react", "Bus.childContextTypes")
+  @js.native
+  def childContextTypes: GlParentAny = js.native
+  @scala.inline
+  def childContextTypes_=(x: GlParentAny): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
   
-  var defaultProps: BusProps = js.native
+  @JSImport("gl-react", "Bus.contextTypes")
+  @js.native
+  def contextTypes: GlSurface = js.native
+  @scala.inline
+  def contextTypes_=(x: GlSurface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+  
+  @JSImport("gl-react", "Bus.defaultProps")
+  @js.native
+  def defaultProps: BusProps = js.native
+  @scala.inline
+  def defaultProps_=(x: BusProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

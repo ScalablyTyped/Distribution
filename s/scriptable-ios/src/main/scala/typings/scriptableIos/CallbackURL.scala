@@ -1,5 +1,6 @@
 package typings.scriptableIos
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/callbackurl/#-new-callbackurl
   */
 @js.native
-trait CallbackURL extends js.Object {
+trait CallbackURL extends StObject {
   
   /**
     * _Construct CallbackURL._
@@ -51,27 +52,15 @@ object CallbackURL {
   }
   
   @scala.inline
-  implicit class CallbackURLOps[Self <: CallbackURL] (val x: Self) extends AnyVal {
+  implicit class CallbackURLMutableBuilder[Self <: CallbackURL] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddParameter(value: (String, String) => Unit): Self = StObject.set(x, "addParameter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddParameter(value: (String, String) => Unit): Self = this.set("addParameter", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetURL(value: () => String): Self = this.set("getURL", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOpen(value: () => js.Promise[_]): Self = this.set("open", js.Any.fromFunction0(value))
+    def setOpen(value: () => js.Promise[_]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
   }
 }

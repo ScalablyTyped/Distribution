@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFitness.gapi.client.fitness
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Value extends js.Object {
+trait Value extends StObject {
   
   /** Floating point value. When this is set, other values must not be set. */
   var fpVal: js.UndefOr[Double] = js.native
@@ -34,45 +35,33 @@ object Value {
   }
   
   @scala.inline
-  implicit class ValueOps[Self <: Value] (val x: Self) extends AnyVal {
+  implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFpVal(value: Double): Self = StObject.set(x, "fpVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFpValUndefined: Self = StObject.set(x, "fpVal", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntVal(value: Double): Self = StObject.set(x, "intVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFpVal(value: Double): Self = this.set("fpVal", value.asInstanceOf[js.Any])
+    def setIntValUndefined: Self = StObject.set(x, "intVal", js.undefined)
     
     @scala.inline
-    def deleteFpVal: Self = this.set("fpVal", js.undefined)
+    def setMapVal(value: js.Array[ValueMapValEntry]): Self = StObject.set(x, "mapVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntVal(value: Double): Self = this.set("intVal", value.asInstanceOf[js.Any])
+    def setMapValUndefined: Self = StObject.set(x, "mapVal", js.undefined)
     
     @scala.inline
-    def deleteIntVal: Self = this.set("intVal", js.undefined)
+    def setMapValVarargs(value: ValueMapValEntry*): Self = StObject.set(x, "mapVal", js.Array(value :_*))
     
     @scala.inline
-    def setMapValVarargs(value: ValueMapValEntry*): Self = this.set("mapVal", js.Array(value :_*))
+    def setStringVal(value: String): Self = StObject.set(x, "stringVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapVal(value: js.Array[ValueMapValEntry]): Self = this.set("mapVal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMapVal: Self = this.set("mapVal", js.undefined)
-    
-    @scala.inline
-    def setStringVal(value: String): Self = this.set("stringVal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringVal: Self = this.set("stringVal", js.undefined)
+    def setStringValUndefined: Self = StObject.set(x, "stringVal", js.undefined)
   }
 }

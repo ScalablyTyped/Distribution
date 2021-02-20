@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.i18n
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XTextConversion
   */
 @js.native
-trait Boundary extends js.Object {
+trait Boundary extends StObject {
   
   var endPos: Double = js.native
   
@@ -27,24 +28,12 @@ object Boundary {
   }
   
   @scala.inline
-  implicit class BoundaryOps[Self <: Boundary] (val x: Self) extends AnyVal {
+  implicit class BoundaryMutableBuilder[Self <: Boundary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndPos(value: Double): Self = StObject.set(x, "endPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEndPos(value: Double): Self = this.set("endPos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartPos(value: Double): Self = this.set("startPos", value.asInstanceOf[js.Any])
+    def setStartPos(value: Double): Self = StObject.set(x, "startPos", value.asInstanceOf[js.Any])
   }
 }

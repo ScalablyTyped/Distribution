@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Configuration parameters of autoscaling based on queuing system.
   */
 @js.native
-trait SchemaAutoscalingPolicyQueueBasedScaling extends js.Object {
+trait SchemaAutoscalingPolicyQueueBasedScaling extends StObject {
   
   /**
     * Scaling based on the average number of tasks in the queue per each active
@@ -41,36 +42,24 @@ object SchemaAutoscalingPolicyQueueBasedScaling {
   }
   
   @scala.inline
-  implicit class SchemaAutoscalingPolicyQueueBasedScalingOps[Self <: SchemaAutoscalingPolicyQueueBasedScaling] (val x: Self) extends AnyVal {
+  implicit class SchemaAutoscalingPolicyQueueBasedScalingMutableBuilder[Self <: SchemaAutoscalingPolicyQueueBasedScaling] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptableBacklogPerInstance(value: Double): Self = StObject.set(x, "acceptableBacklogPerInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptableBacklogPerInstanceUndefined: Self = StObject.set(x, "acceptableBacklogPerInstance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloudPubSub(value: SchemaAutoscalingPolicyQueueBasedScalingCloudPubSub): Self = StObject.set(x, "cloudPubSub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptableBacklogPerInstance(value: Double): Self = this.set("acceptableBacklogPerInstance", value.asInstanceOf[js.Any])
+    def setCloudPubSubUndefined: Self = StObject.set(x, "cloudPubSub", js.undefined)
     
     @scala.inline
-    def deleteAcceptableBacklogPerInstance: Self = this.set("acceptableBacklogPerInstance", js.undefined)
+    def setSingleWorkerThroughputPerSec(value: Double): Self = StObject.set(x, "singleWorkerThroughputPerSec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudPubSub(value: SchemaAutoscalingPolicyQueueBasedScalingCloudPubSub): Self = this.set("cloudPubSub", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCloudPubSub: Self = this.set("cloudPubSub", js.undefined)
-    
-    @scala.inline
-    def setSingleWorkerThroughputPerSec(value: Double): Self = this.set("singleWorkerThroughputPerSec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSingleWorkerThroughputPerSec: Self = this.set("singleWorkerThroughputPerSec", js.undefined)
+    def setSingleWorkerThroughputPerSecUndefined: Self = StObject.set(x, "singleWorkerThroughputPerSec", js.undefined)
   }
 }

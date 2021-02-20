@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3DataSource extends js.Object {
+trait S3DataSource extends StObject {
   
   /**
     * A list of one or more attribute names to use that are found in a specified augmented manifest file.
@@ -36,39 +37,27 @@ object S3DataSource {
   }
   
   @scala.inline
-  implicit class S3DataSourceOps[Self <: S3DataSource] (val x: Self) extends AnyVal {
+  implicit class S3DataSourceMutableBuilder[Self <: S3DataSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeNames(value: AttributeNames): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeNamesUndefined: Self = StObject.set(x, "AttributeNames", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributeNamesVarargs(value: AttributeName*): Self = StObject.set(x, "AttributeNames", js.Array(value :_*))
     
     @scala.inline
-    def setS3DataType(value: S3DataType): Self = this.set("S3DataType", value.asInstanceOf[js.Any])
+    def setS3DataDistributionType(value: S3DataDistribution): Self = StObject.set(x, "S3DataDistributionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Uri(value: S3Uri): Self = this.set("S3Uri", value.asInstanceOf[js.Any])
+    def setS3DataDistributionTypeUndefined: Self = StObject.set(x, "S3DataDistributionType", js.undefined)
     
     @scala.inline
-    def setAttributeNamesVarargs(value: AttributeName*): Self = this.set("AttributeNames", js.Array(value :_*))
+    def setS3DataType(value: S3DataType): Self = StObject.set(x, "S3DataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeNames(value: AttributeNames): Self = this.set("AttributeNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributeNames: Self = this.set("AttributeNames", js.undefined)
-    
-    @scala.inline
-    def setS3DataDistributionType(value: S3DataDistribution): Self = this.set("S3DataDistributionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3DataDistributionType: Self = this.set("S3DataDistributionType", js.undefined)
+    def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
   }
 }

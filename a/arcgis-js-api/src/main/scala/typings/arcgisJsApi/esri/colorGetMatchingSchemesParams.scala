@@ -6,6 +6,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`high-to-low`
 import typings.arcgisJsApi.arcgisJsApiStrings.extremes
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,42 +65,30 @@ object colorGetMatchingSchemesParams {
   }
   
   @scala.inline
-  implicit class colorGetMatchingSchemesParamsOps[Self <: colorGetMatchingSchemesParams] (val x: Self) extends AnyVal {
+  implicit class colorGetMatchingSchemesParamsMutableBuilder[Self <: colorGetMatchingSchemesParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColors(value: js.Array[Color_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorsVarargs(value: Color_ *): Self = StObject.set(x, "colors", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeometryType(value: String): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorsVarargs(value: Color_ *): Self = this.set("colors", js.Array(value :_*))
+    def setTheme(value: `high-to-low` | `above-and-below` | `centered-on` | extremes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: js.Array[Color_]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setView(value: SceneView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometryType(value: String): Self = this.set("geometryType", value.asInstanceOf[js.Any])
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
     @scala.inline
-    def setTheme(value: `high-to-low` | `above-and-below` | `centered-on` | extremes): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setWorldScale(value: Boolean): Self = StObject.set(x, "worldScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setView(value: SceneView): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
-    
-    @scala.inline
-    def setWorldScale(value: Boolean): Self = this.set("worldScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorldScale: Self = this.set("worldScale", js.undefined)
+    def setWorldScaleUndefined: Self = StObject.set(x, "worldScale", js.undefined)
   }
 }

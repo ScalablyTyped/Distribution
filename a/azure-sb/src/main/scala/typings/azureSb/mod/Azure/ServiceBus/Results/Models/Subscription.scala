@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.azureSb.anon.Author
 import typings.azureSb.mod.Azure.ServiceBus.DateString
 import typings.azureSb.mod.Azure.ServiceBus.Duration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,45 +66,33 @@ object Subscription {
   }
   
   @scala.inline
-  implicit class SubscriptionOps[Self <: Subscription] (val x: Self) extends AnyVal {
+  implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountDetails(value: StringDictionary[String]): Self = StObject.set(x, "CountDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeadLetteringOnFilterEvaluationExceptions(value: String): Self = StObject.set(x, "DeadLetteringOnFilterEvaluationExceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeadLetteringOnMessageExpiration(value: String): Self = StObject.set(x, "DeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountDetails(value: StringDictionary[String]): Self = this.set("CountDetails", value.asInstanceOf[js.Any])
+    def setLockDuration(value: String): Self = StObject.set(x, "LockDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeadLetteringOnFilterEvaluationExceptions(value: String): Self = this.set("DeadLetteringOnFilterEvaluationExceptions", value.asInstanceOf[js.Any])
+    def setMaxDeliveryCount(value: String): Self = StObject.set(x, "MaxDeliveryCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeadLetteringOnMessageExpiration(value: String): Self = this.set("DeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
+    def setMessageCount(value: String): Self = StObject.set(x, "MessageCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockDuration(value: String): Self = this.set("LockDuration", value.asInstanceOf[js.Any])
+    def setRequiresSession(value: String): Self = StObject.set(x, "RequiresSession", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDeliveryCount(value: String): Self = this.set("MaxDeliveryCount", value.asInstanceOf[js.Any])
+    def setSubscriptionName(value: String): Self = StObject.set(x, "SubscriptionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageCount(value: String): Self = this.set("MessageCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequiresSession(value: String): Self = this.set("RequiresSession", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscriptionName(value: String): Self = this.set("SubscriptionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopicName(value: String): Self = this.set("TopicName", value.asInstanceOf[js.Any])
+    def setTopicName(value: String): Self = StObject.set(x, "TopicName", value.asInstanceOf[js.Any])
   }
 }

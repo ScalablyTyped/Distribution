@@ -1,5 +1,6 @@
 package typings.kiiCloudSdk.global.KiiCloud
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class KiiClause ()
   extends typings.kiiCloudSdk.KiiCloud.KiiClause
-/* static members */
-@JSGlobal("KiiCloud.KiiClause")
-@js.native
-object KiiClause extends js.Object {
+object KiiClause {
   
   /**
     * Create a KiiClause with the AND operator concatenating multiple KiiClause objects
@@ -24,6 +22,9 @@ object KiiClause extends js.Object {
     * @example
     *     KiiClause clause = KiiClause.and(clause1, clause2, clause3, . . .)
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiClause.and")
+  @js.native
   def and(A: typings.kiiCloudSdk.KiiCloud.KiiClause*): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
   
   /**
@@ -32,7 +33,10 @@ object KiiClause extends js.Object {
     * @param key The key to compare
     * @param value the value to compare
     */
-  def equals(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
+  /* static member */
+  @JSGlobal("KiiCloud.KiiClause.equals")
+  @js.native
+  def equals_(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
   
   /**
     * Create a clause of geo box. This clause inquires objects in the specified rectangle.
@@ -47,6 +51,9 @@ object KiiClause extends js.Object {
     * @throws <li> Specified key is not a string or is an empty string.</li>
     *             <li>northEast or southWest is not a reference of KiiGeoPoint.</li>
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiClause.geoBox")
+  @js.native
   def geoBox(
     key: String,
     northEast: typings.kiiCloudSdk.KiiCloud.KiiGeoPoint,
@@ -94,6 +101,9 @@ object KiiClause extends js.Object {
     *             };
     *             bucket.executeQuery(query, queryCallback);
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiClause.geoDistance")
+  @js.native
   def geoDistance(
     key: String,
     center: typings.kiiCloudSdk.KiiCloud.KiiGeoPoint,
@@ -107,6 +117,9 @@ object KiiClause extends js.Object {
     * @param key The key to compare
     * @param value the value to compare
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiClause.greaterThan")
+  @js.native
   def greaterThan(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
   
   /**
@@ -115,6 +128,9 @@ object KiiClause extends js.Object {
     * @param key The key to compare
     * @param value the value to compare
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiClause.greaterThanOrEqual")
+  @js.native
   def greaterThanOrEqual(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
   
   /**
@@ -123,6 +139,9 @@ object KiiClause extends js.Object {
     * @param key name of the specified field.
     * @param fieldType The type of the content of the field. The type of the content of the field must be provided, possible values are "STRING", "INTEGER", "DECIMAL" and "BOOLEAN".
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiClause.hasField")
+  @js.native
   def hasField(key: String, fieldType: String): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
   
   /**
@@ -131,6 +150,9 @@ object KiiClause extends js.Object {
     * @param key The key to compare
     * @param values to compare
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiClause.inClause")
+  @js.native
   def inClause(key: String, values: js.Array[_]): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
   
   /**
@@ -139,6 +161,9 @@ object KiiClause extends js.Object {
     * @param key The key to compare
     * @param value the value to compare
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiClause.lessThan")
+  @js.native
   def lessThan(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
   
   /**
@@ -147,6 +172,9 @@ object KiiClause extends js.Object {
     * @param key The key to compare
     * @param value the value to compare
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiClause.lessThanOrEqual")
+  @js.native
   def lessThanOrEqual(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
   
   /**
@@ -157,6 +185,9 @@ object KiiClause extends js.Object {
     *
     * @param clause KiiClause object to negate
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiClause.not")
+  @js.native
   def not(clause: typings.kiiCloudSdk.KiiCloud.KiiClause): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
   
   /**
@@ -165,6 +196,9 @@ object KiiClause extends js.Object {
     * @param key The key to compare
     * @param value the value to compare
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiClause.notEquals")
+  @js.native
   def notEquals(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
   
   /**
@@ -178,6 +212,9 @@ object KiiClause extends js.Object {
     * @example
     *     KiiClause clause = KiiClause.or(clause1, clause2, clause3, . . .)
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiClause.or")
+  @js.native
   def or(A: typings.kiiCloudSdk.KiiCloud.KiiClause*): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
   
   /**
@@ -186,5 +223,8 @@ object KiiClause extends js.Object {
     * @param key The key to compare
     * @param value the value to compare
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiClause.startsWith")
+  @js.native
   def startsWith(key: String, value: js.Any): typings.kiiCloudSdk.KiiCloud.KiiClause = js.native
 }

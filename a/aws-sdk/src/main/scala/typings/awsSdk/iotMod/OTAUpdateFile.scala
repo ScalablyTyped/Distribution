@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OTAUpdateFile extends js.Object {
+trait OTAUpdateFile extends StObject {
   
   /**
     * A list of name/attribute pairs.
@@ -41,48 +42,36 @@ object OTAUpdateFile {
   }
   
   @scala.inline
-  implicit class OTAUpdateFileOps[Self <: OTAUpdateFile] (val x: Self) extends AnyVal {
+  implicit class OTAUpdateFileMutableBuilder[Self <: OTAUpdateFile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: AttributesMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodeSigning(value: CodeSigning): Self = StObject.set(x, "codeSigning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: AttributesMap): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setCodeSigningUndefined: Self = StObject.set(x, "codeSigning", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setFileLocation(value: FileLocation): Self = StObject.set(x, "fileLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeSigning(value: CodeSigning): Self = this.set("codeSigning", value.asInstanceOf[js.Any])
+    def setFileLocationUndefined: Self = StObject.set(x, "fileLocation", js.undefined)
     
     @scala.inline
-    def deleteCodeSigning: Self = this.set("codeSigning", js.undefined)
+    def setFileName(value: FileName): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileLocation(value: FileLocation): Self = this.set("fileLocation", value.asInstanceOf[js.Any])
+    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
     @scala.inline
-    def deleteFileLocation: Self = this.set("fileLocation", js.undefined)
+    def setFileVersion(value: OTAUpdateFileVersion): Self = StObject.set(x, "fileVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: FileName): Self = this.set("fileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileName: Self = this.set("fileName", js.undefined)
-    
-    @scala.inline
-    def setFileVersion(value: OTAUpdateFileVersion): Self = this.set("fileVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileVersion: Self = this.set("fileVersion", js.undefined)
+    def setFileVersionUndefined: Self = StObject.set(x, "fileVersion", js.undefined)
   }
 }

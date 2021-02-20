@@ -1,12 +1,13 @@
 package typings.reactNativeMaterialKit.mod
 
 import typings.reactNativeMaterialKit.mod.MKPropTypes.font
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FloatingLabelProperties extends js.Object {
+trait FloatingLabelProperties extends StObject {
   
   var allowFontScaling: js.UndefOr[Boolean] = js.native
   
@@ -27,48 +28,36 @@ object FloatingLabelProperties {
   }
   
   @scala.inline
-  implicit class FloatingLabelPropertiesOps[Self <: FloatingLabelProperties] (val x: Self) extends AnyVal {
+  implicit class FloatingLabelPropertiesMutableBuilder[Self <: FloatingLabelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFloatingLabelAniDuration(value: Double): Self = StObject.set(x, "floatingLabelAniDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowFontScaling(value: Boolean): Self = this.set("allowFontScaling", value.asInstanceOf[js.Any])
+    def setFloatingLabelAniDurationUndefined: Self = StObject.set(x, "floatingLabelAniDuration", js.undefined)
     
     @scala.inline
-    def deleteAllowFontScaling: Self = this.set("allowFontScaling", js.undefined)
+    def setFloatingLabelBottomMargin(value: Double): Self = StObject.set(x, "floatingLabelBottomMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatingLabelAniDuration(value: Double): Self = this.set("floatingLabelAniDuration", value.asInstanceOf[js.Any])
+    def setFloatingLabelBottomMarginUndefined: Self = StObject.set(x, "floatingLabelBottomMargin", js.undefined)
     
     @scala.inline
-    def deleteFloatingLabelAniDuration: Self = this.set("floatingLabelAniDuration", js.undefined)
+    def setFloatingLabelEnabled(value: Boolean): Self = StObject.set(x, "floatingLabelEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatingLabelBottomMargin(value: Double): Self = this.set("floatingLabelBottomMargin", value.asInstanceOf[js.Any])
+    def setFloatingLabelEnabledUndefined: Self = StObject.set(x, "floatingLabelEnabled", js.undefined)
     
     @scala.inline
-    def deleteFloatingLabelBottomMargin: Self = this.set("floatingLabelBottomMargin", js.undefined)
+    def setFloatingLabelFont(value: font): Self = StObject.set(x, "floatingLabelFont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatingLabelEnabled(value: Boolean): Self = this.set("floatingLabelEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFloatingLabelEnabled: Self = this.set("floatingLabelEnabled", js.undefined)
-    
-    @scala.inline
-    def setFloatingLabelFont(value: font): Self = this.set("floatingLabelFont", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFloatingLabelFont: Self = this.set("floatingLabelFont", js.undefined)
+    def setFloatingLabelFontUndefined: Self = StObject.set(x, "floatingLabelFont", js.undefined)
   }
 }

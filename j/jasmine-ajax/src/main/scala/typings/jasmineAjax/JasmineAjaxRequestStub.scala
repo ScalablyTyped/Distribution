@@ -1,12 +1,13 @@
 package typings.jasmineAjax
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JasmineAjaxRequestStub extends js.Object {
+trait JasmineAjaxRequestStub extends StObject {
   
   def andCallFunction(functionToCall: js.Function1[/* request */ JasmineAjaxRequest, Unit]): Unit = js.native
   
@@ -45,45 +46,33 @@ object JasmineAjaxRequestStub {
   }
   
   @scala.inline
-  implicit class JasmineAjaxRequestStubOps[Self <: JasmineAjaxRequestStub] (val x: Self) extends AnyVal {
+  implicit class JasmineAjaxRequestStubMutableBuilder[Self <: JasmineAjaxRequestStub] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndCallFunction(value: js.Function1[/* request */ JasmineAjaxRequest, Unit] => Unit): Self = StObject.set(x, "andCallFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndError(value: JasmineAjaxRequestStubErrorOptions => Unit): Self = StObject.set(x, "andError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAndReturn(value: JasmineAjaxResponse => Unit): Self = StObject.set(x, "andReturn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAndCallFunction(value: js.Function1[/* request */ JasmineAjaxRequest, Unit] => Unit): Self = this.set("andCallFunction", js.Any.fromFunction1(value))
+    def setAndTimeout(value: () => Unit): Self = StObject.set(x, "andTimeout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAndError(value: JasmineAjaxRequestStubErrorOptions => Unit): Self = this.set("andError", js.Any.fromFunction1(value))
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndReturn(value: JasmineAjaxResponse => Unit): Self = this.set("andReturn", js.Any.fromFunction1(value))
+    def setMatches(value: (String, String, String) => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAndTimeout(value: () => Unit): Self = this.set("andTimeout", js.Any.fromFunction0(value))
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatches(value: (String, String, String) => Boolean): Self = this.set("matches", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: RegExp | String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: RegExp | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

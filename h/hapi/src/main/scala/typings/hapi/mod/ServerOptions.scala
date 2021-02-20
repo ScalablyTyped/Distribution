@@ -8,12 +8,13 @@ import typings.hapi.anon.Log
 import typings.hapi.anon.Parser
 import typings.hapi.hapiBooleans.`false`
 import typings.mimos.mod.MimosOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerOptions extends js.Object {
+trait ServerOptions extends StObject {
   
   /**
     * Default value: '0.0.0.0' (all available network interfaces).
@@ -184,129 +185,117 @@ object ServerOptions {
   }
   
   @scala.inline
-  implicit class ServerOptionsOps[Self <: ServerOptions] (val x: Self) extends AnyVal {
+  implicit class ServerOptionsMutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApp(value: ServerOptionsApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setAutoListen(value: Boolean): Self = StObject.set(x, "autoListen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApp(value: ServerOptionsApp): Self = this.set("app", value.asInstanceOf[js.Any])
+    def setAutoListenUndefined: Self = StObject.set(x, "autoListen", js.undefined)
     
     @scala.inline
-    def deleteApp: Self = this.set("app", js.undefined)
+    def setCache(value: CacheProvider[ClientOptions] | ServerOptionsCache | js.Array[ServerOptionsCache]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoListen(value: Boolean): Self = this.set("autoListen", value.asInstanceOf[js.Any])
+    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
     @scala.inline
-    def deleteAutoListen: Self = this.set("autoListen", js.undefined)
+    def setCacheVarargs(value: ServerOptionsCache*): Self = StObject.set(x, "cache", js.Array(value :_*))
     
     @scala.inline
-    def setCacheVarargs(value: ServerOptionsCache*): Self = this.set("cache", js.Array(value :_*))
+    def setCompression(value: Boolean | ServerOptionsCompression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCache(value: CacheProvider[ClientOptions] | ServerOptionsCache | js.Array[ServerOptionsCache]): Self = this.set("cache", value.asInstanceOf[js.Any])
+    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
     @scala.inline
-    def deleteCache: Self = this.set("cache", js.undefined)
+    def setDebug(value: `false` | Log): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompression(value: Boolean | ServerOptionsCompression): Self = this.set("compression", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteCompression: Self = this.set("compression", js.undefined)
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: `false` | Log): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setListener(value: typings.node.httpMod.Server): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setListenerUndefined: Self = StObject.set(x, "listener", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setLoad(value: Concurrent): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListener(value: typings.node.httpMod.Server): Self = this.set("listener", value.asInstanceOf[js.Any])
+    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
     @scala.inline
-    def deleteListener: Self = this.set("listener", js.undefined)
+    def setMime(value: MimosOptions): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoad(value: Concurrent): Self = this.set("load", value.asInstanceOf[js.Any])
+    def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
     
     @scala.inline
-    def deleteLoad: Self = this.set("load", js.undefined)
+    def setPlugins(value: PluginSpecificConfiguration): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMime(value: MimosOptions): Self = this.set("mime", value.asInstanceOf[js.Any])
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
     @scala.inline
-    def deleteMime: Self = this.set("mime", js.undefined)
+    def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlugins(value: PluginSpecificConfiguration): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
+    def setQuery(value: Parser): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double | String): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setRouter(value: IsCaseSensitive): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: Parser): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setRouterUndefined: Self = StObject.set(x, "router", js.undefined)
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setRoutes(value: RouteOptions): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouter(value: IsCaseSensitive): Self = this.set("router", value.asInstanceOf[js.Any])
+    def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
     
     @scala.inline
-    def deleteRouter: Self = this.set("router", js.undefined)
+    def setState(value: Encoding): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoutes(value: RouteOptions): Self = this.set("routes", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteRoutes: Self = this.set("routes", js.undefined)
+    def setTls(value: Boolean | typings.node.httpsMod.ServerOptions): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: Encoding): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTls(value: Boolean | typings.node.httpsMod.ServerOptions): Self = this.set("tls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTls: Self = this.set("tls", js.undefined)
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

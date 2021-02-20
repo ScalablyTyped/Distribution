@@ -1,6 +1,7 @@
 package typings.typescript.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,42 +27,30 @@ object WatchOptions {
   }
   
   @scala.inline
-  implicit class WatchOptionsOps[Self <: WatchOptions] (val x: Self) extends AnyVal {
+  implicit class WatchOptionsMutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFallbackPolling(value: PollingWatchKind): Self = StObject.set(x, "fallbackPolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFallbackPollingUndefined: Self = StObject.set(x, "fallbackPolling", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSynchronousWatchDirectory(value: Boolean): Self = StObject.set(x, "synchronousWatchDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFallbackPolling(value: PollingWatchKind): Self = this.set("fallbackPolling", value.asInstanceOf[js.Any])
+    def setSynchronousWatchDirectoryUndefined: Self = StObject.set(x, "synchronousWatchDirectory", js.undefined)
     
     @scala.inline
-    def deleteFallbackPolling: Self = this.set("fallbackPolling", js.undefined)
+    def setWatchDirectory(value: WatchDirectoryKind): Self = StObject.set(x, "watchDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSynchronousWatchDirectory(value: Boolean): Self = this.set("synchronousWatchDirectory", value.asInstanceOf[js.Any])
+    def setWatchDirectoryUndefined: Self = StObject.set(x, "watchDirectory", js.undefined)
     
     @scala.inline
-    def deleteSynchronousWatchDirectory: Self = this.set("synchronousWatchDirectory", js.undefined)
+    def setWatchFile(value: WatchFileKind): Self = StObject.set(x, "watchFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWatchDirectory(value: WatchDirectoryKind): Self = this.set("watchDirectory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWatchDirectory: Self = this.set("watchDirectory", js.undefined)
-    
-    @scala.inline
-    def setWatchFile(value: WatchFileKind): Self = this.set("watchFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWatchFile: Self = this.set("watchFile", js.undefined)
+    def setWatchFileUndefined: Self = StObject.set(x, "watchFile", js.undefined)
   }
 }

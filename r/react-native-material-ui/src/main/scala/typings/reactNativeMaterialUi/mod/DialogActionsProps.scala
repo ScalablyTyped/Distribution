@@ -2,12 +2,13 @@ package typings.reactNativeMaterialUi.mod
 
 import typings.react.mod.global.JSX.Element
 import typings.reactNativeMaterialUi.anon.ActionsContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DialogActionsProps extends js.Object {
+trait DialogActionsProps extends StObject {
   
   var children: Element = js.native
   
@@ -22,27 +23,15 @@ object DialogActionsProps {
   }
   
   @scala.inline
-  implicit class DialogActionsPropsOps[Self <: DialogActionsProps] (val x: Self) extends AnyVal {
+  implicit class DialogActionsPropsMutableBuilder[Self <: DialogActionsProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStyle(value: ActionsContainer): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChildren(value: Element): Self = this.set("children", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: ActionsContainer): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

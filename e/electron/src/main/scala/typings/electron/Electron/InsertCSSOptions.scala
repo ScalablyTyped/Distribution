@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsertCSSOptions extends js.Object {
+trait InsertCSSOptions extends StObject {
   
   /**
     * Can be either 'user' or 'author'; Specifying 'user' enables you to prevent
@@ -22,24 +23,12 @@ object InsertCSSOptions {
   }
   
   @scala.inline
-  implicit class InsertCSSOptionsOps[Self <: InsertCSSOptions] (val x: Self) extends AnyVal {
+  implicit class InsertCSSOptionsMutableBuilder[Self <: InsertCSSOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCssOrigin(value: String): Self = StObject.set(x, "cssOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCssOrigin(value: String): Self = this.set("cssOrigin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCssOrigin: Self = this.set("cssOrigin", js.undefined)
+    def setCssOriginUndefined: Self = StObject.set(x, "cssOrigin", js.undefined)
   }
 }

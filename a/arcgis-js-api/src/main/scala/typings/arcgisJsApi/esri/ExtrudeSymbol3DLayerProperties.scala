@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,42 +45,30 @@ object ExtrudeSymbol3DLayerProperties {
   }
   
   @scala.inline
-  implicit class ExtrudeSymbol3DLayerPropertiesOps[Self <: ExtrudeSymbol3DLayerProperties] (val x: Self) extends AnyVal {
+  implicit class ExtrudeSymbol3DLayerPropertiesMutableBuilder[Self <: ExtrudeSymbol3DLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCastShadows(value: Boolean): Self = StObject.set(x, "castShadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCastShadowsUndefined: Self = StObject.set(x, "castShadows", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEdges(value: Edges3DProperties): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCastShadows(value: Boolean): Self = this.set("castShadows", value.asInstanceOf[js.Any])
+    def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
     
     @scala.inline
-    def deleteCastShadows: Self = this.set("castShadows", js.undefined)
+    def setMaterial(value: ExtrudeSymbol3DLayerMaterialProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdges(value: Edges3DProperties): Self = this.set("edges", value.asInstanceOf[js.Any])
+    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
     @scala.inline
-    def deleteEdges: Self = this.set("edges", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaterial(value: ExtrudeSymbol3DLayerMaterialProperties): Self = this.set("material", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaterial: Self = this.set("material", js.undefined)
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

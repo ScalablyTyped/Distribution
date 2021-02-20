@@ -1,12 +1,13 @@
 package typings.keymaster
 
 import typings.std.KeyboardEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeymasterEvent extends js.Object {
+trait KeymasterEvent extends StObject {
   
   var key: String = js.native
   

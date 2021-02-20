@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteBuildBatchOutput extends js.Object {
+trait DeleteBuildBatchOutput extends StObject {
   
   /**
     * An array of strings that contain the identifiers of the builds that were deleted.
@@ -31,42 +32,30 @@ object DeleteBuildBatchOutput {
   }
   
   @scala.inline
-  implicit class DeleteBuildBatchOutputOps[Self <: DeleteBuildBatchOutput] (val x: Self) extends AnyVal {
+  implicit class DeleteBuildBatchOutputMutableBuilder[Self <: DeleteBuildBatchOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuildsDeleted(value: BuildIds): Self = StObject.set(x, "buildsDeleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuildsDeletedUndefined: Self = StObject.set(x, "buildsDeleted", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuildsDeletedVarargs(value: NonEmptyString*): Self = StObject.set(x, "buildsDeleted", js.Array(value :_*))
     
     @scala.inline
-    def setBuildsDeletedVarargs(value: NonEmptyString*): Self = this.set("buildsDeleted", js.Array(value :_*))
+    def setBuildsNotDeleted(value: BuildsNotDeleted): Self = StObject.set(x, "buildsNotDeleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildsDeleted(value: BuildIds): Self = this.set("buildsDeleted", value.asInstanceOf[js.Any])
+    def setBuildsNotDeletedUndefined: Self = StObject.set(x, "buildsNotDeleted", js.undefined)
     
     @scala.inline
-    def deleteBuildsDeleted: Self = this.set("buildsDeleted", js.undefined)
+    def setBuildsNotDeletedVarargs(value: BuildNotDeleted*): Self = StObject.set(x, "buildsNotDeleted", js.Array(value :_*))
     
     @scala.inline
-    def setBuildsNotDeletedVarargs(value: BuildNotDeleted*): Self = this.set("buildsNotDeleted", js.Array(value :_*))
+    def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildsNotDeleted(value: BuildsNotDeleted): Self = this.set("buildsNotDeleted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBuildsNotDeleted: Self = this.set("buildsNotDeleted", js.undefined)
-    
-    @scala.inline
-    def setStatusCode(value: String): Self = this.set("statusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusCode: Self = this.set("statusCode", js.undefined)
+    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
   }
 }

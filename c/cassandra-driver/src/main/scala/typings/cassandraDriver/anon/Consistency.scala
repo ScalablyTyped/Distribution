@@ -3,12 +3,13 @@ package typings.cassandraDriver.anon
 import typings.cassandraDriver.policiesMod.policies.loadBalancing.LoadBalancingPolicy
 import typings.cassandraDriver.policiesMod.policies.retry.RetryPolicy
 import typings.cassandraDriver.typesMod.types.consistencies
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Consistency extends js.Object {
+trait Consistency extends StObject {
   
   var consistency: js.UndefOr[consistencies] = js.native
   
@@ -31,54 +32,42 @@ object Consistency {
   }
   
   @scala.inline
-  implicit class ConsistencyOps[Self <: Consistency] (val x: Self) extends AnyVal {
+  implicit class ConsistencyMutableBuilder[Self <: Consistency] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsistency(value: consistencies): Self = StObject.set(x, "consistency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsistencyUndefined: Self = StObject.set(x, "consistency", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGraphOptions(value: Language): Self = StObject.set(x, "graphOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsistency(value: consistencies): Self = this.set("consistency", value.asInstanceOf[js.Any])
+    def setGraphOptionsUndefined: Self = StObject.set(x, "graphOptions", js.undefined)
     
     @scala.inline
-    def deleteConsistency: Self = this.set("consistency", js.undefined)
+    def setLoadBalancing(value: LoadBalancingPolicy): Self = StObject.set(x, "loadBalancing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphOptions(value: Language): Self = this.set("graphOptions", value.asInstanceOf[js.Any])
+    def setLoadBalancingUndefined: Self = StObject.set(x, "loadBalancing", js.undefined)
     
     @scala.inline
-    def deleteGraphOptions: Self = this.set("graphOptions", js.undefined)
+    def setReadTimeout(value: Double): Self = StObject.set(x, "readTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadBalancing(value: LoadBalancingPolicy): Self = this.set("loadBalancing", value.asInstanceOf[js.Any])
+    def setReadTimeoutUndefined: Self = StObject.set(x, "readTimeout", js.undefined)
     
     @scala.inline
-    def deleteLoadBalancing: Self = this.set("loadBalancing", js.undefined)
+    def setRetry(value: RetryPolicy): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadTimeout(value: Double): Self = this.set("readTimeout", value.asInstanceOf[js.Any])
+    def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
     
     @scala.inline
-    def deleteReadTimeout: Self = this.set("readTimeout", js.undefined)
+    def setSerialConsistency(value: consistencies): Self = StObject.set(x, "serialConsistency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetry(value: RetryPolicy): Self = this.set("retry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetry: Self = this.set("retry", js.undefined)
-    
-    @scala.inline
-    def setSerialConsistency(value: consistencies): Self = this.set("serialConsistency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSerialConsistency: Self = this.set("serialConsistency", js.undefined)
+    def setSerialConsistencyUndefined: Self = StObject.set(x, "serialConsistency", js.undefined)
   }
 }

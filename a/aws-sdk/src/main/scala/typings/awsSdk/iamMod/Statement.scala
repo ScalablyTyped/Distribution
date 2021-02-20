@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Statement extends js.Object {
+trait Statement extends StObject {
   
   /**
     * The row and column of the end of a Statement in an IAM policy.
@@ -36,42 +37,30 @@ object Statement {
   }
   
   @scala.inline
-  implicit class StatementOps[Self <: Statement] (val x: Self) extends AnyVal {
+  implicit class StatementMutableBuilder[Self <: Statement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndPosition(value: Position): Self = StObject.set(x, "EndPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndPositionUndefined: Self = StObject.set(x, "EndPosition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourcePolicyId(value: PolicyIdentifierType): Self = StObject.set(x, "SourcePolicyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndPosition(value: Position): Self = this.set("EndPosition", value.asInstanceOf[js.Any])
+    def setSourcePolicyIdUndefined: Self = StObject.set(x, "SourcePolicyId", js.undefined)
     
     @scala.inline
-    def deleteEndPosition: Self = this.set("EndPosition", js.undefined)
+    def setSourcePolicyType(value: PolicySourceType): Self = StObject.set(x, "SourcePolicyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourcePolicyId(value: PolicyIdentifierType): Self = this.set("SourcePolicyId", value.asInstanceOf[js.Any])
+    def setSourcePolicyTypeUndefined: Self = StObject.set(x, "SourcePolicyType", js.undefined)
     
     @scala.inline
-    def deleteSourcePolicyId: Self = this.set("SourcePolicyId", js.undefined)
+    def setStartPosition(value: Position): Self = StObject.set(x, "StartPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourcePolicyType(value: PolicySourceType): Self = this.set("SourcePolicyType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourcePolicyType: Self = this.set("SourcePolicyType", js.undefined)
-    
-    @scala.inline
-    def setStartPosition(value: Position): Self = this.set("StartPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartPosition: Self = this.set("StartPosition", js.undefined)
+    def setStartPositionUndefined: Self = StObject.set(x, "StartPosition", js.undefined)
   }
 }

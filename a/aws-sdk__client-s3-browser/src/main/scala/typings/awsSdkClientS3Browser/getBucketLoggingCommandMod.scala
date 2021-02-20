@@ -7,14 +7,14 @@ import typings.awsSdkClientS3Browser.typesGetBucketLoggingInputMod.GetBucketLogg
 import typings.awsSdkClientS3Browser.typesGetBucketLoggingOutputMod.GetBucketLoggingOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-browser/commands/GetBucketLoggingCommand", JSImport.Namespace)
-@js.native
-object getBucketLoggingCommandMod extends js.Object {
+object getBucketLoggingCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-browser/commands/GetBucketLoggingCommand", "GetBucketLoggingCommand")
   @js.native
   class GetBucketLoggingCommand protected () extends Command[
           InputTypesUnion, 

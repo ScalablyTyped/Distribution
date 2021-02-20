@@ -22,12 +22,13 @@ import typings.sharedb.sharedbStrings.readSnapshots
 import typings.sharedb.sharedbStrings.receive
 import typings.sharedb.sharedbStrings.reply
 import typings.sharedb.sharedbStrings.submit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait sharedb extends js.Object {
+trait sharedb extends StObject {
   
   /**
     * Registers a projection that can be used from clients just like a normal collection.

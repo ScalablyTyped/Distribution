@@ -1,6 +1,7 @@
 package typings.tern.ternMod
 
 import typings.tern.ternStrings.completions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,102 +70,90 @@ object CompletionsQuery {
   }
   
   @scala.inline
-  implicit class CompletionsQueryOps[Self <: CompletionsQuery] (val x: Self) extends AnyVal {
+  implicit class CompletionsQueryMutableBuilder[Self <: CompletionsQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaseInsensitiveUndefined: Self = StObject.set(x, "caseInsensitive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDepths(value: Boolean): Self = StObject.set(x, "depths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: Double | Position): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setDepthsUndefined: Self = StObject.set(x, "depths", js.undefined)
     
     @scala.inline
-    def setType(value: completions): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setDocs(value: Boolean): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseInsensitive(value: Boolean): Self = this.set("caseInsensitive", value.asInstanceOf[js.Any])
+    def setDocsUndefined: Self = StObject.set(x, "docs", js.undefined)
     
     @scala.inline
-    def deleteCaseInsensitive: Self = this.set("caseInsensitive", js.undefined)
+    def setEnd(value: Double | Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepths(value: Boolean): Self = this.set("depths", value.asInstanceOf[js.Any])
+    def setExpandWordForward(value: Boolean): Self = StObject.set(x, "expandWordForward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDepths: Self = this.set("depths", js.undefined)
+    def setExpandWordForwardUndefined: Self = StObject.set(x, "expandWordForward", js.undefined)
     
     @scala.inline
-    def setDocs(value: Boolean): Self = this.set("docs", value.asInstanceOf[js.Any])
+    def setFilter(value: Boolean): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocs: Self = this.set("docs", js.undefined)
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def setExpandWordForward(value: Boolean): Self = this.set("expandWordForward", value.asInstanceOf[js.Any])
+    def setGuess(value: Boolean): Self = StObject.set(x, "guess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpandWordForward: Self = this.set("expandWordForward", js.undefined)
+    def setGuessUndefined: Self = StObject.set(x, "guess", js.undefined)
     
     @scala.inline
-    def setFilter(value: Boolean): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setInLiteral(value: Boolean): Self = StObject.set(x, "inLiteral", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setInLiteralUndefined: Self = StObject.set(x, "inLiteral", js.undefined)
     
     @scala.inline
-    def setGuess(value: Boolean): Self = this.set("guess", value.asInstanceOf[js.Any])
+    def setIncludeKeywords(value: Boolean): Self = StObject.set(x, "includeKeywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGuess: Self = this.set("guess", js.undefined)
+    def setIncludeKeywordsUndefined: Self = StObject.set(x, "includeKeywords", js.undefined)
     
     @scala.inline
-    def setInLiteral(value: Boolean): Self = this.set("inLiteral", value.asInstanceOf[js.Any])
+    def setOmitObjectPrototype(value: Boolean): Self = StObject.set(x, "omitObjectPrototype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInLiteral: Self = this.set("inLiteral", js.undefined)
+    def setOmitObjectPrototypeUndefined: Self = StObject.set(x, "omitObjectPrototype", js.undefined)
     
     @scala.inline
-    def setIncludeKeywords(value: Boolean): Self = this.set("includeKeywords", value.asInstanceOf[js.Any])
+    def setOrigins(value: Boolean): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncludeKeywords: Self = this.set("includeKeywords", js.undefined)
+    def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
     
     @scala.inline
-    def setOmitObjectPrototype(value: Boolean): Self = this.set("omitObjectPrototype", value.asInstanceOf[js.Any])
+    def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOmitObjectPrototype: Self = this.set("omitObjectPrototype", js.undefined)
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def setOrigins(value: Boolean): Self = this.set("origins", value.asInstanceOf[js.Any])
+    def setType(value: completions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrigins: Self = this.set("origins", js.undefined)
+    def setTypes(value: Boolean): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSort(value: Boolean): Self = this.set("sort", value.asInstanceOf[js.Any])
+    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
     @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setUrls(value: Boolean): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypes(value: Boolean): Self = this.set("types", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypes: Self = this.set("types", js.undefined)
-    
-    @scala.inline
-    def setUrls(value: Boolean): Self = this.set("urls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrls: Self = this.set("urls", js.undefined)
+    def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
   }
 }

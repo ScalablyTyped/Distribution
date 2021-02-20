@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Children extends js.Object {
+trait Children extends StObject {
   
   def apply[T](Index: String): T = js.native
   // tslint:disable-next-line:no-unnecessary-generics

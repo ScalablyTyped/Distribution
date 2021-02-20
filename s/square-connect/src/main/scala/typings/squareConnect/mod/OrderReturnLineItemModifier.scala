@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "OrderReturnLineItemModifier")
 @js.native
-class OrderReturnLineItemModifier () extends js.Object {
+class OrderReturnLineItemModifier () extends StObject {
   
   /**
     * The base price for the modifier. `base_price_money` is required for ad hoc modifiers.

@@ -2,12 +2,13 @@ package typings.winrt.Windows.ApplicationModel.Search
 
 import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Storage.StorageFolder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILocalContentSuggestionSettings extends js.Object {
+trait ILocalContentSuggestionSettings extends StObject {
   
   var aqsFilter: String = js.native
   
@@ -31,30 +32,18 @@ object ILocalContentSuggestionSettings {
   }
   
   @scala.inline
-  implicit class ILocalContentSuggestionSettingsOps[Self <: ILocalContentSuggestionSettings] (val x: Self) extends AnyVal {
+  implicit class ILocalContentSuggestionSettingsMutableBuilder[Self <: ILocalContentSuggestionSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAqsFilter(value: String): Self = StObject.set(x, "aqsFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocations(value: IVector[StorageFolder]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAqsFilter(value: String): Self = this.set("aqsFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocations(value: IVector[StorageFolder]): Self = this.set("locations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropertiesToMatch(value: IVector[String]): Self = this.set("propertiesToMatch", value.asInstanceOf[js.Any])
+    def setPropertiesToMatch(value: IVector[String]): Self = StObject.set(x, "propertiesToMatch", value.asInstanceOf[js.Any])
   }
 }

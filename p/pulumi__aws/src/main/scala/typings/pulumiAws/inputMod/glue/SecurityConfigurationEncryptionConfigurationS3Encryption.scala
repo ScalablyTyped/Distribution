@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.glue
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecurityConfigurationEncryptionConfigurationS3Encryption extends js.Object {
+trait SecurityConfigurationEncryptionConfigurationS3Encryption extends StObject {
   
   /**
     * Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.
@@ -27,30 +28,18 @@ object SecurityConfigurationEncryptionConfigurationS3Encryption {
   }
   
   @scala.inline
-  implicit class SecurityConfigurationEncryptionConfigurationS3EncryptionOps[Self <: SecurityConfigurationEncryptionConfigurationS3Encryption] (val x: Self) extends AnyVal {
+  implicit class SecurityConfigurationEncryptionConfigurationS3EncryptionMutableBuilder[Self <: SecurityConfigurationEncryptionConfigurationS3Encryption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS3EncryptionMode(value: Input[String]): Self = StObject.set(x, "s3EncryptionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsKeyArn(value: Input[String]): Self = this.set("kmsKeyArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKmsKeyArn: Self = this.set("kmsKeyArn", js.undefined)
-    
-    @scala.inline
-    def setS3EncryptionMode(value: Input[String]): Self = this.set("s3EncryptionMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3EncryptionMode: Self = this.set("s3EncryptionMode", js.undefined)
+    def setS3EncryptionModeUndefined: Self = StObject.set(x, "s3EncryptionMode", js.undefined)
   }
 }

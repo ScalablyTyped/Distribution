@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RestoreTableMetadata extends js.Object {
+trait RestoreTableMetadata extends StObject {
   
   var backupInfo: js.UndefOr[BackupInfo] = js.native
   
@@ -34,48 +35,36 @@ object RestoreTableMetadata {
   }
   
   @scala.inline
-  implicit class RestoreTableMetadataOps[Self <: RestoreTableMetadata] (val x: Self) extends AnyVal {
+  implicit class RestoreTableMetadataMutableBuilder[Self <: RestoreTableMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupInfo(value: BackupInfo): Self = StObject.set(x, "backupInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupInfoUndefined: Self = StObject.set(x, "backupInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupInfo(value: BackupInfo): Self = this.set("backupInfo", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteBackupInfo: Self = this.set("backupInfo", js.undefined)
+    def setOptimizeTableOperationName(value: String): Self = StObject.set(x, "optimizeTableOperationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOptimizeTableOperationNameUndefined: Self = StObject.set(x, "optimizeTableOperationName", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setProgress(value: OperationProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptimizeTableOperationName(value: String): Self = this.set("optimizeTableOperationName", value.asInstanceOf[js.Any])
+    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
     @scala.inline
-    def deleteOptimizeTableOperationName: Self = this.set("optimizeTableOperationName", js.undefined)
+    def setSourceType(value: String): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: OperationProgress): Self = this.set("progress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgress: Self = this.set("progress", js.undefined)
-    
-    @scala.inline
-    def setSourceType(value: String): Self = this.set("sourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceType: Self = this.set("sourceType", js.undefined)
+    def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
   }
 }

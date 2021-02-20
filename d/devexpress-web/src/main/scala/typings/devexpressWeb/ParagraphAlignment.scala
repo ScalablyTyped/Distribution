@@ -1,17 +1,18 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ParagraphAlignment extends js.Object
+sealed trait ParagraphAlignment extends StObject
 /**
   * Lists values specifying the paragraph alignment.
   */
 @JSGlobal("ParagraphAlignment")
 @js.native
-object ParagraphAlignment extends js.Object {
+object ParagraphAlignment extends StObject {
   
   /**
     * Text is aligned to the center of the paragraph.

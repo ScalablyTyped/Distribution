@@ -1,5 +1,6 @@
 package typings.firefoxWebextBrowser.browser.manifest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-x`
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-y`
 */
-trait ThemeTypeAdditionalBackgroundsTiling extends js.Object
+trait ThemeTypeAdditionalBackgroundsTiling extends StObject
 object ThemeTypeAdditionalBackgroundsTiling {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirector
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SemanticVersion extends js.Object {
+trait SemanticVersion extends StObject {
   
   var majorNumber: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object SemanticVersion {
   }
   
   @scala.inline
-  implicit class SemanticVersionOps[Self <: SemanticVersion] (val x: Self) extends AnyVal {
+  implicit class SemanticVersionMutableBuilder[Self <: SemanticVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMajorNumber(value: Double): Self = StObject.set(x, "majorNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMajorNumberUndefined: Self = StObject.set(x, "majorNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinorNumber(value: Double): Self = StObject.set(x, "minorNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorNumber(value: Double): Self = this.set("majorNumber", value.asInstanceOf[js.Any])
+    def setMinorNumberUndefined: Self = StObject.set(x, "minorNumber", js.undefined)
     
     @scala.inline
-    def deleteMajorNumber: Self = this.set("majorNumber", js.undefined)
+    def setPatch(value: Double): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorNumber(value: Double): Self = this.set("minorNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinorNumber: Self = this.set("minorNumber", js.undefined)
-    
-    @scala.inline
-    def setPatch(value: Double): Self = this.set("patch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePatch: Self = this.set("patch", js.undefined)
+    def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
   }
 }

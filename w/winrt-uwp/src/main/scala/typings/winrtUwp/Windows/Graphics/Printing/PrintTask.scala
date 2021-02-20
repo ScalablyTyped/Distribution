@@ -8,13 +8,14 @@ import typings.winrtUwp.winrtUwpStrings.completed
 import typings.winrtUwp.winrtUwpStrings.previewing
 import typings.winrtUwp.winrtUwpStrings.progressing
 import typings.winrtUwp.winrtUwpStrings.submitting
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a printing operation including the content to be printed, as well as providing access to information describing how the content is to be printed. */
 @js.native
-trait PrintTask extends js.Object {
+trait PrintTask extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

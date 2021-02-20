@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientAnalyticsadmin.anon.Name
 import typings.maximMazurokGapiClientAnalyticsadmin.anon.NameOauthtoken
 import typings.maximMazurokGapiClientAnalyticsadmin.anon.PageSize
 import typings.maximMazurokGapiClientAnalyticsadmin.anon.UpdateMask
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IosAppDataStreamsResource extends js.Object {
+trait IosAppDataStreamsResource extends StObject {
   
   def create(request: Alt, body: GoogleAnalyticsAdminV1alphaIosAppDataStream): Request[GoogleAnalyticsAdminV1alphaIosAppDataStream] = js.native
   /** Creates an iOS app data stream with the specified location and attributes. */

@@ -5,12 +5,13 @@ import typings.electron.electronStrings.default
 import typings.electron.electronStrings.low
 import typings.electron.electronStrings.never
 import typings.electron.electronStrings.normal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationConstructorOptions extends js.Object {
+trait NotificationConstructorOptions extends StObject {
   
   /**
     * Actions to add to the notification. Please read the available actions and
@@ -101,87 +102,75 @@ object NotificationConstructorOptions {
   }
   
   @scala.inline
-  implicit class NotificationConstructorOptionsOps[Self <: NotificationConstructorOptions] (val x: Self) extends AnyVal {
+  implicit class NotificationConstructorOptionsMutableBuilder[Self <: NotificationConstructorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[NotificationAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: NotificationAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setCloseButtonText(value: String): Self = StObject.set(x, "closeButtonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsVarargs(value: NotificationAction*): Self = this.set("actions", js.Array(value :_*))
+    def setCloseButtonTextUndefined: Self = StObject.set(x, "closeButtonText", js.undefined)
     
     @scala.inline
-    def setActions(value: js.Array[NotificationAction]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setHasReply(value: Boolean): Self = StObject.set(x, "hasReply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setHasReplyUndefined: Self = StObject.set(x, "hasReply", js.undefined)
     
     @scala.inline
-    def setCloseButtonText(value: String): Self = this.set("closeButtonText", value.asInstanceOf[js.Any])
+    def setIcon(value: String | NativeImage_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloseButtonText: Self = this.set("closeButtonText", js.undefined)
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def setHasReply(value: Boolean): Self = this.set("hasReply", value.asInstanceOf[js.Any])
+    def setReplyPlaceholder(value: String): Self = StObject.set(x, "replyPlaceholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasReply: Self = this.set("hasReply", js.undefined)
+    def setReplyPlaceholderUndefined: Self = StObject.set(x, "replyPlaceholder", js.undefined)
     
     @scala.inline
-    def setIcon(value: String | NativeImage_): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
     @scala.inline
-    def setReplyPlaceholder(value: String): Self = this.set("replyPlaceholder", value.asInstanceOf[js.Any])
+    def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReplyPlaceholder: Self = this.set("replyPlaceholder", js.undefined)
+    def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
     
     @scala.inline
-    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSilent: Self = this.set("silent", js.undefined)
+    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
     @scala.inline
-    def setSound(value: String): Self = this.set("sound", value.asInstanceOf[js.Any])
+    def setTimeoutType(value: default | never): Self = StObject.set(x, "timeoutType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSound: Self = this.set("sound", js.undefined)
+    def setTimeoutTypeUndefined: Self = StObject.set(x, "timeoutType", js.undefined)
     
     @scala.inline
-    def setSubtitle(value: String): Self = this.set("subtitle", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubtitle: Self = this.set("subtitle", js.undefined)
+    def setUrgency(value: normal | critical | low): Self = StObject.set(x, "urgency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeoutType(value: default | never): Self = this.set("timeoutType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutType: Self = this.set("timeoutType", js.undefined)
-    
-    @scala.inline
-    def setUrgency(value: normal | critical | low): Self = this.set("urgency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrgency: Self = this.set("urgency", js.undefined)
+    def setUrgencyUndefined: Self = StObject.set(x, "urgency", js.undefined)
   }
 }

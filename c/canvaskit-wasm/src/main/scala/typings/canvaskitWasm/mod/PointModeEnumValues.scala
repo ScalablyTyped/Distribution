@@ -1,5 +1,6 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,27 +23,15 @@ object PointModeEnumValues {
   }
   
   @scala.inline
-  implicit class PointModeEnumValuesOps[Self <: PointModeEnumValues] (val x: Self) extends AnyVal {
+  implicit class PointModeEnumValuesMutableBuilder[Self <: PointModeEnumValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLines(value: PointMode): Self = StObject.set(x, "Lines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPoints(value: PointMode): Self = StObject.set(x, "Points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLines(value: PointMode): Self = this.set("Lines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPoints(value: PointMode): Self = this.set("Points", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPolygon(value: PointMode): Self = this.set("Polygon", value.asInstanceOf[js.Any])
+    def setPolygon(value: PointMode): Self = StObject.set(x, "Polygon", value.asInstanceOf[js.Any])
   }
 }

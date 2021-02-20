@@ -2,12 +2,13 @@ package typings.reactNativeFirebase.mod.RNFirebase
 
 import typings.reactNativeFirebase.anon.BundleId
 import typings.reactNativeFirebase.anon.InstallApp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionCodeSettings extends js.Object {
+trait ActionCodeSettings extends StObject {
   
   var android: InstallApp = js.native
   
@@ -26,33 +27,21 @@ object ActionCodeSettings {
   }
   
   @scala.inline
-  implicit class ActionCodeSettingsOps[Self <: ActionCodeSettings] (val x: Self) extends AnyVal {
+  implicit class ActionCodeSettingsMutableBuilder[Self <: ActionCodeSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroid(value: InstallApp): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHandleCodeInApp(value: Boolean): Self = StObject.set(x, "handleCodeInApp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHandleCodeInAppUndefined: Self = StObject.set(x, "handleCodeInApp", js.undefined)
     
     @scala.inline
-    def setAndroid(value: InstallApp): Self = this.set("android", value.asInstanceOf[js.Any])
+    def setIOS(value: BundleId): Self = StObject.set(x, "iOS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIOS(value: BundleId): Self = this.set("iOS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHandleCodeInApp(value: Boolean): Self = this.set("handleCodeInApp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHandleCodeInApp: Self = this.set("handleCodeInApp", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

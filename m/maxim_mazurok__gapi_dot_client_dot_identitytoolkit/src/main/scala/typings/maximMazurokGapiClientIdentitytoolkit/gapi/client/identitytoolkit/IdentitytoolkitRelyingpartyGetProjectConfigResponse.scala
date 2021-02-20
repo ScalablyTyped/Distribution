@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentitytoolkitRelyingpartyGetProjectConfigResponse extends js.Object {
+trait IdentitytoolkitRelyingpartyGetProjectConfigResponse extends StObject {
   
   /** Whether to allow password user sign in or sign up. */
   var allowPasswordUser: js.UndefOr[Boolean] = js.native
@@ -51,96 +52,84 @@ object IdentitytoolkitRelyingpartyGetProjectConfigResponse {
   }
   
   @scala.inline
-  implicit class IdentitytoolkitRelyingpartyGetProjectConfigResponseOps[Self <: IdentitytoolkitRelyingpartyGetProjectConfigResponse] (val x: Self) extends AnyVal {
+  implicit class IdentitytoolkitRelyingpartyGetProjectConfigResponseMutableBuilder[Self <: IdentitytoolkitRelyingpartyGetProjectConfigResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowPasswordUser(value: Boolean): Self = StObject.set(x, "allowPasswordUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowPasswordUserUndefined: Self = StObject.set(x, "allowPasswordUser", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowPasswordUser(value: Boolean): Self = this.set("allowPasswordUser", value.asInstanceOf[js.Any])
+    def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
     
     @scala.inline
-    def deleteAllowPasswordUser: Self = this.set("allowPasswordUser", js.undefined)
+    def setAuthorizedDomains(value: js.Array[String]): Self = StObject.set(x, "authorizedDomains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiKey(value: String): Self = this.set("apiKey", value.asInstanceOf[js.Any])
+    def setAuthorizedDomainsUndefined: Self = StObject.set(x, "authorizedDomains", js.undefined)
     
     @scala.inline
-    def deleteApiKey: Self = this.set("apiKey", js.undefined)
+    def setAuthorizedDomainsVarargs(value: String*): Self = StObject.set(x, "authorizedDomains", js.Array(value :_*))
     
     @scala.inline
-    def setAuthorizedDomainsVarargs(value: String*): Self = this.set("authorizedDomains", js.Array(value :_*))
+    def setChangeEmailTemplate(value: EmailTemplate): Self = StObject.set(x, "changeEmailTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizedDomains(value: js.Array[String]): Self = this.set("authorizedDomains", value.asInstanceOf[js.Any])
+    def setChangeEmailTemplateUndefined: Self = StObject.set(x, "changeEmailTemplate", js.undefined)
     
     @scala.inline
-    def deleteAuthorizedDomains: Self = this.set("authorizedDomains", js.undefined)
+    def setDynamicLinksDomain(value: String): Self = StObject.set(x, "dynamicLinksDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeEmailTemplate(value: EmailTemplate): Self = this.set("changeEmailTemplate", value.asInstanceOf[js.Any])
+    def setDynamicLinksDomainUndefined: Self = StObject.set(x, "dynamicLinksDomain", js.undefined)
     
     @scala.inline
-    def deleteChangeEmailTemplate: Self = this.set("changeEmailTemplate", js.undefined)
+    def setEnableAnonymousUser(value: Boolean): Self = StObject.set(x, "enableAnonymousUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicLinksDomain(value: String): Self = this.set("dynamicLinksDomain", value.asInstanceOf[js.Any])
+    def setEnableAnonymousUserUndefined: Self = StObject.set(x, "enableAnonymousUser", js.undefined)
     
     @scala.inline
-    def deleteDynamicLinksDomain: Self = this.set("dynamicLinksDomain", js.undefined)
+    def setIdpConfig(value: js.Array[IdpConfig]): Self = StObject.set(x, "idpConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableAnonymousUser(value: Boolean): Self = this.set("enableAnonymousUser", value.asInstanceOf[js.Any])
+    def setIdpConfigUndefined: Self = StObject.set(x, "idpConfig", js.undefined)
     
     @scala.inline
-    def deleteEnableAnonymousUser: Self = this.set("enableAnonymousUser", js.undefined)
+    def setIdpConfigVarargs(value: IdpConfig*): Self = StObject.set(x, "idpConfig", js.Array(value :_*))
     
     @scala.inline
-    def setIdpConfigVarargs(value: IdpConfig*): Self = this.set("idpConfig", js.Array(value :_*))
+    def setLegacyResetPasswordTemplate(value: EmailTemplate): Self = StObject.set(x, "legacyResetPasswordTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdpConfig(value: js.Array[IdpConfig]): Self = this.set("idpConfig", value.asInstanceOf[js.Any])
+    def setLegacyResetPasswordTemplateUndefined: Self = StObject.set(x, "legacyResetPasswordTemplate", js.undefined)
     
     @scala.inline
-    def deleteIdpConfig: Self = this.set("idpConfig", js.undefined)
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegacyResetPasswordTemplate(value: EmailTemplate): Self = this.set("legacyResetPasswordTemplate", value.asInstanceOf[js.Any])
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def deleteLegacyResetPasswordTemplate: Self = this.set("legacyResetPasswordTemplate", js.undefined)
+    def setResetPasswordTemplate(value: EmailTemplate): Self = StObject.set(x, "resetPasswordTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    def setResetPasswordTemplateUndefined: Self = StObject.set(x, "resetPasswordTemplate", js.undefined)
     
     @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    def setUseEmailSending(value: Boolean): Self = StObject.set(x, "useEmailSending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetPasswordTemplate(value: EmailTemplate): Self = this.set("resetPasswordTemplate", value.asInstanceOf[js.Any])
+    def setUseEmailSendingUndefined: Self = StObject.set(x, "useEmailSending", js.undefined)
     
     @scala.inline
-    def deleteResetPasswordTemplate: Self = this.set("resetPasswordTemplate", js.undefined)
+    def setVerifyEmailTemplate(value: EmailTemplate): Self = StObject.set(x, "verifyEmailTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseEmailSending(value: Boolean): Self = this.set("useEmailSending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseEmailSending: Self = this.set("useEmailSending", js.undefined)
-    
-    @scala.inline
-    def setVerifyEmailTemplate(value: EmailTemplate): Self = this.set("verifyEmailTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerifyEmailTemplate: Self = this.set("verifyEmailTemplate", js.undefined)
+    def setVerifyEmailTemplateUndefined: Self = StObject.set(x, "verifyEmailTemplate", js.undefined)
   }
 }

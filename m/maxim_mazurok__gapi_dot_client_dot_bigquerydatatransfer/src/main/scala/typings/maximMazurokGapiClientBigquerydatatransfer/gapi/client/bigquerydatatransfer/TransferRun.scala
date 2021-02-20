@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientBigquerydatatransfer.gapi.client.bigquerydatatransfer
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransferRun extends js.Object {
+trait TransferRun extends StObject {
   
   /** Output only. Data source id. */
   var dataSourceId: js.UndefOr[String] = js.native
@@ -72,112 +73,100 @@ object TransferRun {
   }
   
   @scala.inline
-  implicit class TransferRunOps[Self <: TransferRun] (val x: Self) extends AnyVal {
+  implicit class TransferRunMutableBuilder[Self <: TransferRun] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationDatasetId(value: String): Self = StObject.set(x, "destinationDatasetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceId(value: String): Self = this.set("dataSourceId", value.asInstanceOf[js.Any])
+    def setDestinationDatasetIdUndefined: Self = StObject.set(x, "destinationDatasetId", js.undefined)
     
     @scala.inline
-    def deleteDataSourceId: Self = this.set("dataSourceId", js.undefined)
+    def setEmailPreferences(value: EmailPreferences): Self = StObject.set(x, "emailPreferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationDatasetId(value: String): Self = this.set("destinationDatasetId", value.asInstanceOf[js.Any])
+    def setEmailPreferencesUndefined: Self = StObject.set(x, "emailPreferences", js.undefined)
     
     @scala.inline
-    def deleteDestinationDatasetId: Self = this.set("destinationDatasetId", js.undefined)
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailPreferences(value: EmailPreferences): Self = this.set("emailPreferences", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteEmailPreferences: Self = this.set("emailPreferences", js.undefined)
+    def setErrorStatus(value: Status): Self = StObject.set(x, "errorStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setErrorStatusUndefined: Self = StObject.set(x, "errorStatus", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorStatus(value: Status): Self = this.set("errorStatus", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteErrorStatus: Self = this.set("errorStatus", js.undefined)
+    def setNotificationPubsubTopic(value: String): Self = StObject.set(x, "notificationPubsubTopic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setNotificationPubsubTopic(value: String): Self = this.set("notificationPubsubTopic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationPubsubTopic: Self = this.set("notificationPubsubTopic", js.undefined)
+    def setNotificationPubsubTopicUndefined: Self = StObject.set(x, "notificationPubsubTopic", js.undefined)
     
     @scala.inline
     def setParams(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientBigquerydatatransfer.maximMazurokGapiClientBigquerydatatransferStrings.TransferRun with TopLevel[js.Any]
-    ): Self = this.set("params", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def setRunTime(value: String): Self = this.set("runTime", value.asInstanceOf[js.Any])
+    def setRunTime(value: String): Self = StObject.set(x, "runTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRunTime: Self = this.set("runTime", js.undefined)
+    def setRunTimeUndefined: Self = StObject.set(x, "runTime", js.undefined)
     
     @scala.inline
-    def setSchedule(value: String): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    def setSchedule(value: String): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    def setScheduleTime(value: String): Self = StObject.set(x, "scheduleTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleTime(value: String): Self = this.set("scheduleTime", value.asInstanceOf[js.Any])
+    def setScheduleTimeUndefined: Self = StObject.set(x, "scheduleTime", js.undefined)
     
     @scala.inline
-    def deleteScheduleTime: Self = this.set("scheduleTime", js.undefined)
+    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
     @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

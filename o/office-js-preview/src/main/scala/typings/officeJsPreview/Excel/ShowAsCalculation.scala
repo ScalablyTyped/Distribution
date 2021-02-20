@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShowAsCalculation extends js.Object
+sealed trait ShowAsCalculation extends StObject
 /**
   *
   * The ShowAs Calculation function for the Data Pivot Field.
@@ -14,7 +15,7 @@ sealed trait ShowAsCalculation extends js.Object
   */
 @JSGlobal("Excel.ShowAsCalculation")
 @js.native
-object ShowAsCalculation extends js.Object {
+object ShowAsCalculation extends StObject {
   
   /**
     * Difference from the specified Base Field and Base Item.

@@ -1,13 +1,14 @@
 package typings.textBuffer.mod.global.TextBuffer
 
 import typings.textBuffer.anon.ReadonlyPoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a point in a buffer in row/column coordinates. */
 @js.native
-trait Point extends js.Object {
+trait Point extends StObject {
   
   /** A zero-indexed number representing the column of the Point. */
   var column: Double = js.native
@@ -103,63 +104,51 @@ object Point {
   }
   
   @scala.inline
-  implicit class PointOps[Self <: Point] (val x: Self) extends AnyVal {
+  implicit class PointMutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompare(value: PointCompatible => Double): Self = StObject.set(x, "compare", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopy(value: () => Point): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColumn(value: Double): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setFreeze(value: () => ReadonlyPoint): Self = StObject.set(x, "freeze", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCompare(value: PointCompatible => Double): Self = this.set("compare", js.Any.fromFunction1(value))
+    def setIsEqual(value: PointCompatible => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCopy(value: () => Point): Self = this.set("copy", js.Any.fromFunction0(value))
+    def setIsGreaterThan(value: PointCompatible => Boolean): Self = StObject.set(x, "isGreaterThan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFreeze(value: () => ReadonlyPoint): Self = this.set("freeze", js.Any.fromFunction0(value))
+    def setIsGreaterThanOrEqual(value: PointCompatible => Boolean): Self = StObject.set(x, "isGreaterThanOrEqual", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsEqual(value: PointCompatible => Boolean): Self = this.set("isEqual", js.Any.fromFunction1(value))
+    def setIsLessThan(value: PointCompatible => Boolean): Self = StObject.set(x, "isLessThan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsGreaterThan(value: PointCompatible => Boolean): Self = this.set("isGreaterThan", js.Any.fromFunction1(value))
+    def setIsLessThanOrEqual(value: PointCompatible => Boolean): Self = StObject.set(x, "isLessThanOrEqual", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsGreaterThanOrEqual(value: PointCompatible => Boolean): Self = this.set("isGreaterThanOrEqual", js.Any.fromFunction1(value))
+    def setNegate(value: () => Point): Self = StObject.set(x, "negate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsLessThan(value: PointCompatible => Boolean): Self = this.set("isLessThan", js.Any.fromFunction1(value))
+    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLessThanOrEqual(value: PointCompatible => Boolean): Self = this.set("isLessThanOrEqual", js.Any.fromFunction1(value))
+    def setSerialize(value: () => js.Tuple2[Double, Double]): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNegate(value: () => Point): Self = this.set("negate", js.Any.fromFunction0(value))
+    def setToArray(value: () => js.Tuple2[Double, Double]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRow(value: Double): Self = this.set("row", value.asInstanceOf[js.Any])
+    def setTranslate(value: PointCompatible => Point): Self = StObject.set(x, "translate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSerialize(value: () => js.Tuple2[Double, Double]): Self = this.set("serialize", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToArray(value: () => js.Tuple2[Double, Double]): Self = this.set("toArray", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTranslate(value: PointCompatible => Point): Self = this.set("translate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTraverse(value: PointCompatible => Point): Self = this.set("traverse", js.Any.fromFunction1(value))
+    def setTraverse(value: PointCompatible => Point): Self = StObject.set(x, "traverse", js.Any.fromFunction1(value))
   }
 }

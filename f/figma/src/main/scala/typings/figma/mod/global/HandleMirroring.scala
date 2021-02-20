@@ -1,5 +1,6 @@
 package typings.figma.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.figma.figmaStrings.ANGLE
   - typings.figma.figmaStrings.ANGLE_AND_LENGTH
 */
-trait HandleMirroring extends js.Object
+trait HandleMirroring extends StObject
 object HandleMirroring {
   
   @scala.inline

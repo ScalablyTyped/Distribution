@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeInstanceTypesResult extends js.Object {
+trait DescribeInstanceTypesResult extends StObject {
   
   /**
     * The instance type. For more information, see Instance Types in the Amazon Elastic Compute Cloud User Guide.
@@ -26,33 +27,21 @@ object DescribeInstanceTypesResult {
   }
   
   @scala.inline
-  implicit class DescribeInstanceTypesResultOps[Self <: DescribeInstanceTypesResult] (val x: Self) extends AnyVal {
+  implicit class DescribeInstanceTypesResultMutableBuilder[Self <: DescribeInstanceTypesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceTypes(value: InstanceTypeInfoList): Self = StObject.set(x, "InstanceTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceTypesUndefined: Self = StObject.set(x, "InstanceTypes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceTypesVarargs(value: InstanceTypeInfo*): Self = StObject.set(x, "InstanceTypes", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceTypesVarargs(value: InstanceTypeInfo*): Self = this.set("InstanceTypes", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceTypes(value: InstanceTypeInfoList): Self = this.set("InstanceTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceTypes: Self = this.set("InstanceTypes", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

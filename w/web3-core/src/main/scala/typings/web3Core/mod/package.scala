@@ -1,5 +1,6 @@
 package typings.web3Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ package object mod {
     - typings.web3Core.web3CoreStrings.earliest
     - typings.web3Core.web3CoreStrings.genesis
   */
-  type BlockNumber = typings.web3Core.mod._BlockNumber | java.lang.String | scala.Double | typings.bnJs.mod.^  | typings.bignumberJs.mod.default
+  type BlockNumber = typings.web3Core.mod._BlockNumber | java.lang.String | scala.Double | typings.bnJs.mod.^ | typings.bignumberJs.mod.default
   
   /* Rewritten from type alias, can be one of: 
     - typings.web3Core.mod.HttpProvider

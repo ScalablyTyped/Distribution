@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProgramHost[T /* <: BuilderProgram */] extends js.Object {
+trait ProgramHost[T /* <: BuilderProgram */] extends StObject {
   
   var createHash: js.UndefOr[js.Function1[/* data */ java.lang.String, java.lang.String]] = js.native
   

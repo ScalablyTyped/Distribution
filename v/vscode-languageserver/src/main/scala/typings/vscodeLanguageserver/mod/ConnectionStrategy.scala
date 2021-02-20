@@ -1,12 +1,13 @@
 package typings.vscodeLanguageserver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver", "ConnectionStrategy")
-@js.native
-object ConnectionStrategy extends js.Object {
+object ConnectionStrategy {
   
+  @JSImport("vscode-languageserver", "ConnectionStrategy.is")
+  @js.native
   def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc.ConnectionStrategy */ Boolean = js.native
 }

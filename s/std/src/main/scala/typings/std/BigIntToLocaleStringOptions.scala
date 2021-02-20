@@ -22,12 +22,13 @@ import typings.std.stdNumbers.`6`
 import typings.std.stdNumbers.`7`
 import typings.std.stdNumbers.`8`
 import typings.std.stdNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BigIntToLocaleStringOptions extends js.Object {
+trait BigIntToLocaleStringOptions extends StObject {
   
   /**
     * used only when notation is "compact"
@@ -134,118 +135,106 @@ object BigIntToLocaleStringOptions {
   }
   
   @scala.inline
-  implicit class BigIntToLocaleStringOptionsOps[Self <: BigIntToLocaleStringOptions] (val x: Self) extends AnyVal {
+  implicit class BigIntToLocaleStringOptionsMutableBuilder[Self <: BigIntToLocaleStringOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompactDisplay(value: java.lang.String): Self = StObject.set(x, "compactDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompactDisplayUndefined: Self = StObject.set(x, "compactDisplay", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrency(value: java.lang.String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompactDisplay(value: java.lang.String): Self = this.set("compactDisplay", value.asInstanceOf[js.Any])
+    def setCurrencyDisplay(value: java.lang.String): Self = StObject.set(x, "currencyDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompactDisplay: Self = this.set("compactDisplay", js.undefined)
+    def setCurrencyDisplayUndefined: Self = StObject.set(x, "currencyDisplay", js.undefined)
     
     @scala.inline
-    def setCurrency(value: java.lang.String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
     @scala.inline
-    def deleteCurrency: Self = this.set("currency", js.undefined)
+    def setLocaleMatcher(value: java.lang.String): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyDisplay(value: java.lang.String): Self = this.set("currencyDisplay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCurrencyDisplay: Self = this.set("currencyDisplay", js.undefined)
-    
-    @scala.inline
-    def setLocaleMatcher(value: java.lang.String): Self = this.set("localeMatcher", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocaleMatcher: Self = this.set("localeMatcher", js.undefined)
+    def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
     
     @scala.inline
     def setMaximumFractionDigits(
       value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15` | `16` | `17` | `18` | `19` | `20`
-    ): Self = this.set("maximumFractionDigits", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maximumFractionDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaximumFractionDigits: Self = this.set("maximumFractionDigits", js.undefined)
+    def setMaximumFractionDigitsUndefined: Self = StObject.set(x, "maximumFractionDigits", js.undefined)
     
     @scala.inline
     def setMaximumSignificantDigits(
       value: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15` | `16` | `17` | `18` | `19` | `20` | `21`
-    ): Self = this.set("maximumSignificantDigits", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "maximumSignificantDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaximumSignificantDigits: Self = this.set("maximumSignificantDigits", js.undefined)
+    def setMaximumSignificantDigitsUndefined: Self = StObject.set(x, "maximumSignificantDigits", js.undefined)
     
     @scala.inline
     def setMinimumFractionDigits(
       value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15` | `16` | `17` | `18` | `19` | `20`
-    ): Self = this.set("minimumFractionDigits", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "minimumFractionDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumFractionDigits: Self = this.set("minimumFractionDigits", js.undefined)
+    def setMinimumFractionDigitsUndefined: Self = StObject.set(x, "minimumFractionDigits", js.undefined)
     
     @scala.inline
     def setMinimumIntegerDigits(
       value: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15` | `16` | `17` | `18` | `19` | `20` | `21`
-    ): Self = this.set("minimumIntegerDigits", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "minimumIntegerDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumIntegerDigits: Self = this.set("minimumIntegerDigits", js.undefined)
+    def setMinimumIntegerDigitsUndefined: Self = StObject.set(x, "minimumIntegerDigits", js.undefined)
     
     @scala.inline
     def setMinimumSignificantDigits(
       value: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15` | `16` | `17` | `18` | `19` | `20` | `21`
-    ): Self = this.set("minimumSignificantDigits", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "minimumSignificantDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimumSignificantDigits: Self = this.set("minimumSignificantDigits", js.undefined)
+    def setMinimumSignificantDigitsUndefined: Self = StObject.set(x, "minimumSignificantDigits", js.undefined)
     
     @scala.inline
-    def setNotation(value: java.lang.String): Self = this.set("notation", value.asInstanceOf[js.Any])
+    def setNotation(value: java.lang.String): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotation: Self = this.set("notation", js.undefined)
+    def setNotationUndefined: Self = StObject.set(x, "notation", js.undefined)
     
     @scala.inline
-    def setNumberingSystem(value: java.lang.String): Self = this.set("numberingSystem", value.asInstanceOf[js.Any])
+    def setNumberingSystem(value: java.lang.String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumberingSystem: Self = this.set("numberingSystem", js.undefined)
+    def setNumberingSystemUndefined: Self = StObject.set(x, "numberingSystem", js.undefined)
     
     @scala.inline
-    def setStyle(value: java.lang.String): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: java.lang.String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setUnit(value: java.lang.String): Self = this.set("unit", value.asInstanceOf[js.Any])
+    def setUnit(value: java.lang.String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
+    def setUnitDisplay(value: java.lang.String): Self = StObject.set(x, "unitDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnitDisplay(value: java.lang.String): Self = this.set("unitDisplay", value.asInstanceOf[js.Any])
+    def setUnitDisplayUndefined: Self = StObject.set(x, "unitDisplay", js.undefined)
     
     @scala.inline
-    def deleteUnitDisplay: Self = this.set("unitDisplay", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
     @scala.inline
-    def setUseGrouping(value: scala.Boolean): Self = this.set("useGrouping", value.asInstanceOf[js.Any])
+    def setUseGrouping(value: scala.Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseGrouping: Self = this.set("useGrouping", js.undefined)
+    def setUseGroupingUndefined: Self = StObject.set(x, "useGrouping", js.undefined)
   }
 }

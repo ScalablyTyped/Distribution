@@ -1,23 +1,24 @@
 package typings.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppendObjectOptions extends js.Object {
+trait AppendObjectOptions extends StObject {
   
   var headers: js.UndefOr[js.Object] = js.native
   
-   // custom mime, will send with Content-Type entity header
+  // custom mime, will send with Content-Type entity header
   var meta: js.UndefOr[UserMeta] = js.native
   
-   // the operation timeout
+  // the operation timeout
   var mime: js.UndefOr[String] = js.native
   
   var position: js.UndefOr[String] = js.native
   
-   // specify the position which is the content length of the latest object
+  // specify the position which is the content length of the latest object
   var timeout: js.UndefOr[Double] = js.native
 }
 object AppendObjectOptions {
@@ -29,48 +30,36 @@ object AppendObjectOptions {
   }
   
   @scala.inline
-  implicit class AppendObjectOptionsOps[Self <: AppendObjectOptions] (val x: Self) extends AnyVal {
+  implicit class AppendObjectOptionsMutableBuilder[Self <: AppendObjectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeta(value: UserMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: UserMeta): Self = this.set("meta", value.asInstanceOf[js.Any])
+    def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
     
     @scala.inline
-    def deleteMeta: Self = this.set("meta", js.undefined)
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMime(value: String): Self = this.set("mime", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteMime: Self = this.set("mime", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

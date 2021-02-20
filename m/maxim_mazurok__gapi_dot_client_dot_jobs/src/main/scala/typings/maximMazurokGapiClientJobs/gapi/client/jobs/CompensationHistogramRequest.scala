@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompensationHistogramRequest extends js.Object {
+trait CompensationHistogramRequest extends StObject {
   
   /** Required. Numeric histogram options, like buckets, whether include min or max value. */
   var bucketingOption: js.UndefOr[NumericBucketingOption] = js.native
@@ -25,30 +26,18 @@ object CompensationHistogramRequest {
   }
   
   @scala.inline
-  implicit class CompensationHistogramRequestOps[Self <: CompensationHistogramRequest] (val x: Self) extends AnyVal {
+  implicit class CompensationHistogramRequestMutableBuilder[Self <: CompensationHistogramRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketingOption(value: NumericBucketingOption): Self = StObject.set(x, "bucketingOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketingOptionUndefined: Self = StObject.set(x, "bucketingOption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketingOption(value: NumericBucketingOption): Self = this.set("bucketingOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBucketingOption: Self = this.set("bucketingOption", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

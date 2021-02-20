@@ -1,11 +1,12 @@
 package typings.googleAppsScript.GoogleAppsScript.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Format extends js.Object
+sealed trait Format extends StObject
 /**
   * An enum representing the format of the map image.
   * See also
@@ -14,7 +15,7 @@ sealed trait Format extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Maps.Format")
 @js.native
-object Format extends js.Object {
+object Format extends StObject {
   
   @js.native
   sealed trait GIF extends Format

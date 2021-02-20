@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/cjs/languages/hljs/openscad", JSImport.Namespace)
-@js.native
-object openscadMod extends js.Object {
+object openscadMod {
   
+  @JSImport("react-syntax-highlighter/dist/cjs/languages/hljs/openscad", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

@@ -1,5 +1,6 @@
 package typings.knuddelsUserappsApi.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 	 */
 @JSGlobal("ChannelInformation")
 @js.native
-class ChannelInformation () extends js.Object {
+class ChannelInformation () extends StObject {
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/ChannelInformation.html#method_getTopic

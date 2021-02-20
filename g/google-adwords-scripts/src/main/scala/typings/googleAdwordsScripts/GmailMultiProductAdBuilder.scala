@@ -1,14 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GmailMultiProductAdBuilder[GmailMultiProductAd]
-  extends AdWordsBuilder[GmailMultiProductAdBuilder[GmailImageAd]]
-     with hasFinalUrlBuilder[GmailMultiProductAdBuilder[GmailImageAd]]
-     with hasTrackingTemplateBuilder[GmailMultiProductAdBuilder[GmailImageAd]] {
+trait GmailMultiProductAdBuilder[GmailMultiProductAd] extends AdBuilder[GmailMultiProductAdBuilder[GmailImageAd]] {
   
   def withAdvertiser(advertiser: String): GmailMultiProductAdBuilder[GmailMultiProductAd] = js.native
   
@@ -70,63 +68,51 @@ object GmailMultiProductAdBuilder {
   }
   
   @scala.inline
-  implicit class GmailMultiProductAdBuilderOps[Self <: GmailMultiProductAdBuilder[_], GmailMultiProductAd] (val x: Self with GmailMultiProductAdBuilder[GmailMultiProductAd]) extends AnyVal {
+  implicit class GmailMultiProductAdBuilderMutableBuilder[Self <: GmailMultiProductAdBuilder[_], GmailMultiProductAd] (val x: Self with GmailMultiProductAdBuilder[GmailMultiProductAd]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWithAdvertiser(value: String => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = StObject.set(x, "withAdvertiser", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWithContent(value: String => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = StObject.set(x, "withContent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWithDescription(value: String => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = StObject.set(x, "withDescription", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithAdvertiser(value: String => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = this.set("withAdvertiser", js.Any.fromFunction1(value))
+    def setWithHeader(value: Media => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = StObject.set(x, "withHeader", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithContent(value: String => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = this.set("withContent", js.Any.fromFunction1(value))
+    def setWithHeadline(value: String => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = StObject.set(x, "withHeadline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithDescription(value: String => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = this.set("withDescription", js.Any.fromFunction1(value))
+    def setWithHeadlineColor(value: String => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = StObject.set(x, "withHeadlineColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithHeader(value: Media => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = this.set("withHeader", js.Any.fromFunction1(value))
+    def setWithItemButtonCallsToAction(value: js.Array[String] => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = StObject.set(x, "withItemButtonCallsToAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithHeadline(value: String => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = this.set("withHeadline", js.Any.fromFunction1(value))
+    def setWithItemButtonFinalMobileUrls(value: js.Array[String] => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = StObject.set(x, "withItemButtonFinalMobileUrls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithHeadlineColor(value: String => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = this.set("withHeadlineColor", js.Any.fromFunction1(value))
+    def setWithItemButtonFinalUrls(value: js.Array[String] => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = StObject.set(x, "withItemButtonFinalUrls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithItemButtonCallsToAction(value: js.Array[String] => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = this.set("withItemButtonCallsToAction", js.Any.fromFunction1(value))
+    def setWithItemButtonTrackingTemplates(value: js.Array[String] => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = StObject.set(x, "withItemButtonTrackingTemplates", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithItemButtonFinalMobileUrls(value: js.Array[String] => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = this.set("withItemButtonFinalMobileUrls", js.Any.fromFunction1(value))
+    def setWithItemImages(value: js.Array[Media] => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = StObject.set(x, "withItemImages", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithItemButtonFinalUrls(value: js.Array[String] => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = this.set("withItemButtonFinalUrls", js.Any.fromFunction1(value))
+    def setWithItemTitle(value: js.Array[String] => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = StObject.set(x, "withItemTitle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithItemButtonTrackingTemplates(value: js.Array[String] => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = this.set("withItemButtonTrackingTemplates", js.Any.fromFunction1(value))
+    def setWithLogo(value: Media => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = StObject.set(x, "withLogo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithItemImages(value: js.Array[Media] => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = this.set("withItemImages", js.Any.fromFunction1(value))
+    def setWithName(value: String => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithItemTitle(value: js.Array[String] => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = this.set("withItemTitle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithLogo(value: Media => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = this.set("withLogo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithName(value: String => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = this.set("withName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithSubject(value: String => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = this.set("withSubject", js.Any.fromFunction1(value))
+    def setWithSubject(value: String => GmailMultiProductAdBuilder[GmailMultiProductAd]): Self = StObject.set(x, "withSubject", js.Any.fromFunction1(value))
   }
 }

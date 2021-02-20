@@ -11,6 +11,7 @@ import typings.postmanCollection.postmanCollectionStrings.noauth
 import typings.postmanCollection.postmanCollectionStrings.ntlm
 import typings.postmanCollection.postmanCollectionStrings.oauth1
 import typings.postmanCollection.postmanCollectionStrings.oauth2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,116 +52,104 @@ object RequestAuthDefinition {
   }
   
   @scala.inline
-  implicit class RequestAuthDefinitionOps[Self <: RequestAuthDefinition] (val x: Self) extends AnyVal {
+  implicit class RequestAuthDefinitionMutableBuilder[Self <: RequestAuthDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApikey(value: js.Array[VariableDefinition]): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApikeyUndefined: Self = StObject.set(x, "apikey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApikeyVarargs(value: VariableDefinition*): Self = StObject.set(x, "apikey", js.Array(value :_*))
     
     @scala.inline
-    def setApikeyVarargs(value: VariableDefinition*): Self = this.set("apikey", js.Array(value :_*))
+    def setAwsv4(value: js.Array[VariableDefinition]): Self = StObject.set(x, "awsv4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApikey(value: js.Array[VariableDefinition]): Self = this.set("apikey", value.asInstanceOf[js.Any])
+    def setAwsv4Undefined: Self = StObject.set(x, "awsv4", js.undefined)
     
     @scala.inline
-    def deleteApikey: Self = this.set("apikey", js.undefined)
+    def setAwsv4Varargs(value: VariableDefinition*): Self = StObject.set(x, "awsv4", js.Array(value :_*))
     
     @scala.inline
-    def setAwsv4Varargs(value: VariableDefinition*): Self = this.set("awsv4", js.Array(value :_*))
+    def setBasic(value: js.Array[VariableDefinition]): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsv4(value: js.Array[VariableDefinition]): Self = this.set("awsv4", value.asInstanceOf[js.Any])
+    def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
     
     @scala.inline
-    def deleteAwsv4: Self = this.set("awsv4", js.undefined)
+    def setBasicVarargs(value: VariableDefinition*): Self = StObject.set(x, "basic", js.Array(value :_*))
     
     @scala.inline
-    def setBasicVarargs(value: VariableDefinition*): Self = this.set("basic", js.Array(value :_*))
+    def setBearer(value: js.Array[VariableDefinition]): Self = StObject.set(x, "bearer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasic(value: js.Array[VariableDefinition]): Self = this.set("basic", value.asInstanceOf[js.Any])
+    def setBearerUndefined: Self = StObject.set(x, "bearer", js.undefined)
     
     @scala.inline
-    def deleteBasic: Self = this.set("basic", js.undefined)
+    def setBearerVarargs(value: VariableDefinition*): Self = StObject.set(x, "bearer", js.Array(value :_*))
     
     @scala.inline
-    def setBearerVarargs(value: VariableDefinition*): Self = this.set("bearer", js.Array(value :_*))
+    def setDigest(value: js.Array[VariableDefinition]): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBearer(value: js.Array[VariableDefinition]): Self = this.set("bearer", value.asInstanceOf[js.Any])
+    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
     @scala.inline
-    def deleteBearer: Self = this.set("bearer", js.undefined)
+    def setDigestVarargs(value: VariableDefinition*): Self = StObject.set(x, "digest", js.Array(value :_*))
     
     @scala.inline
-    def setDigestVarargs(value: VariableDefinition*): Self = this.set("digest", js.Array(value :_*))
+    def setEdgegrid(value: js.Array[VariableDefinition]): Self = StObject.set(x, "edgegrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDigest(value: js.Array[VariableDefinition]): Self = this.set("digest", value.asInstanceOf[js.Any])
+    def setEdgegridUndefined: Self = StObject.set(x, "edgegrid", js.undefined)
     
     @scala.inline
-    def deleteDigest: Self = this.set("digest", js.undefined)
+    def setEdgegridVarargs(value: VariableDefinition*): Self = StObject.set(x, "edgegrid", js.Array(value :_*))
     
     @scala.inline
-    def setEdgegridVarargs(value: VariableDefinition*): Self = this.set("edgegrid", js.Array(value :_*))
+    def setHawk(value: js.Array[VariableDefinition]): Self = StObject.set(x, "hawk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgegrid(value: js.Array[VariableDefinition]): Self = this.set("edgegrid", value.asInstanceOf[js.Any])
+    def setHawkUndefined: Self = StObject.set(x, "hawk", js.undefined)
     
     @scala.inline
-    def deleteEdgegrid: Self = this.set("edgegrid", js.undefined)
+    def setHawkVarargs(value: VariableDefinition*): Self = StObject.set(x, "hawk", js.Array(value :_*))
     
     @scala.inline
-    def setHawkVarargs(value: VariableDefinition*): Self = this.set("hawk", js.Array(value :_*))
+    def setNtlm(value: js.Array[VariableDefinition]): Self = StObject.set(x, "ntlm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHawk(value: js.Array[VariableDefinition]): Self = this.set("hawk", value.asInstanceOf[js.Any])
+    def setNtlmUndefined: Self = StObject.set(x, "ntlm", js.undefined)
     
     @scala.inline
-    def deleteHawk: Self = this.set("hawk", js.undefined)
+    def setNtlmVarargs(value: VariableDefinition*): Self = StObject.set(x, "ntlm", js.Array(value :_*))
     
     @scala.inline
-    def setNtlmVarargs(value: VariableDefinition*): Self = this.set("ntlm", js.Array(value :_*))
+    def setOauth1(value: js.Array[VariableDefinition]): Self = StObject.set(x, "oauth1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNtlm(value: js.Array[VariableDefinition]): Self = this.set("ntlm", value.asInstanceOf[js.Any])
+    def setOauth1Undefined: Self = StObject.set(x, "oauth1", js.undefined)
     
     @scala.inline
-    def deleteNtlm: Self = this.set("ntlm", js.undefined)
+    def setOauth1Varargs(value: VariableDefinition*): Self = StObject.set(x, "oauth1", js.Array(value :_*))
     
     @scala.inline
-    def setOauth1Varargs(value: VariableDefinition*): Self = this.set("oauth1", js.Array(value :_*))
+    def setOauth2(value: js.Array[VariableDefinition]): Self = StObject.set(x, "oauth2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOauth1(value: js.Array[VariableDefinition]): Self = this.set("oauth1", value.asInstanceOf[js.Any])
+    def setOauth2Undefined: Self = StObject.set(x, "oauth2", js.undefined)
     
     @scala.inline
-    def deleteOauth1: Self = this.set("oauth1", js.undefined)
-    
-    @scala.inline
-    def setOauth2Varargs(value: VariableDefinition*): Self = this.set("oauth2", js.Array(value :_*))
-    
-    @scala.inline
-    def setOauth2(value: js.Array[VariableDefinition]): Self = this.set("oauth2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOauth2: Self = this.set("oauth2", js.undefined)
+    def setOauth2Varargs(value: VariableDefinition*): Self = StObject.set(x, "oauth2", js.Array(value :_*))
     
     @scala.inline
     def setType(
       value: oauth2 | hawk | noauth | basic | oauth1 | apikey | digest | bearer | awsv4 | edgegrid | ntlm
-    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.braintree.mod
 
 import typings.node.streamMod.Readable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreditCardVerificationGateway extends js.Object {
+trait CreditCardVerificationGateway extends StObject {
   
   def search(searchFn: js.Any): Readable = js.native
 }
@@ -19,21 +20,9 @@ object CreditCardVerificationGateway {
   }
   
   @scala.inline
-  implicit class CreditCardVerificationGatewayOps[Self <: CreditCardVerificationGateway] (val x: Self) extends AnyVal {
+  implicit class CreditCardVerificationGatewayMutableBuilder[Self <: CreditCardVerificationGateway] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSearch(value: js.Any => Readable): Self = this.set("search", js.Any.fromFunction1(value))
+    def setSearch(value: js.Any => Readable): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
   }
 }

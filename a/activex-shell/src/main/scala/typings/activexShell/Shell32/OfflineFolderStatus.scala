@@ -5,6 +5,7 @@ import typings.activexShell.activexShellNumbers.`0`
 import typings.activexShell.activexShellNumbers.`1`
 import typings.activexShell.activexShellNumbers.`2`
 import typings.activexShell.activexShellNumbers.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexShell.activexShellNumbers.`0`
   - typings.activexShell.activexShellNumbers.`2`
 */
-trait OfflineFolderStatus extends js.Object
+trait OfflineFolderStatus extends StObject
 object OfflineFolderStatus {
   
   @scala.inline

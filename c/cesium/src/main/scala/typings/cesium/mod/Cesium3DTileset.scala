@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.BaseScreenSpaceError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Cesium3DTileset")
 @js.native
-class Cesium3DTileset protected () extends js.Object {
+class Cesium3DTileset protected () extends StObject {
   def this(Cesium3DTilesetItem: BaseScreenSpaceError) = this()
   
   var allTilesLoaded: Event[js.Array[_]] = js.native
@@ -153,11 +154,13 @@ class Cesium3DTileset protected () extends js.Object {
   
   val url: String = js.native
 }
-/* static members */
-@JSImport("cesium", "Cesium3DTileset")
-@js.native
-object Cesium3DTileset extends js.Object {
+object Cesium3DTileset {
   
+  @JSImport("cesium", "Cesium3DTileset.loadJson")
+  @js.native
   def loadJson(tilesetUrl: String): js.Promise[_] = js.native
+  /* static member */
+  @JSImport("cesium", "Cesium3DTileset.loadJson")
+  @js.native
   def loadJson(tilesetUrl: Resource): js.Promise[_] = js.native
 }

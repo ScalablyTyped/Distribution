@@ -1,11 +1,12 @@
 package typings.fmWebsync.fm.websync
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait baseRequestConfig extends js.Object {
+trait baseRequestConfig extends StObject {
   
   /**
     * Extra meta data to associate with the request/response.
@@ -39,42 +40,30 @@ object baseRequestConfig {
   }
   
   @scala.inline
-  implicit class baseRequestConfigOps[Self <: baseRequestConfig] (val x: Self) extends AnyVal {
+  implicit class baseRequestConfigMutableBuilder[Self <: baseRequestConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestUrl(value: String): Self = StObject.set(x, "requestUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: js.Any): Self = this.set("meta", value.asInstanceOf[js.Any])
+    def setRequestUrlUndefined: Self = StObject.set(x, "requestUrl", js.undefined)
     
     @scala.inline
-    def deleteMeta: Self = this.set("meta", js.undefined)
+    def setSuppressErrors(value: Boolean): Self = StObject.set(x, "suppressErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestUrl(value: String): Self = this.set("requestUrl", value.asInstanceOf[js.Any])
+    def setSuppressErrorsUndefined: Self = StObject.set(x, "suppressErrors", js.undefined)
     
     @scala.inline
-    def deleteRequestUrl: Self = this.set("requestUrl", js.undefined)
+    def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuppressErrors(value: Boolean): Self = this.set("suppressErrors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuppressErrors: Self = this.set("suppressErrors", js.undefined)
-    
-    @scala.inline
-    def setSync(value: Boolean): Self = this.set("sync", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSync: Self = this.set("sync", js.undefined)
+    def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
   }
 }

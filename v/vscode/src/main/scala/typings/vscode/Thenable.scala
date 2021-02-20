@@ -1,5 +1,6 @@
 package typings.vscode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * we recommend the use of native promises which are available in this editor.
   */
 @js.native
-trait Thenable[T] extends js.Object {
+trait Thenable[T] extends StObject {
   
   /**
     * Attaches callbacks for the resolution and/or rejection of the Promise.

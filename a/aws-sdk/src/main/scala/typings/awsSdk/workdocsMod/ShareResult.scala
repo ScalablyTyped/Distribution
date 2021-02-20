@@ -1,11 +1,12 @@
 package typings.awsSdk.workdocsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShareResult extends js.Object {
+trait ShareResult extends StObject {
   
   /**
     * The ID of the invited user.
@@ -46,54 +47,42 @@ object ShareResult {
   }
   
   @scala.inline
-  implicit class ShareResultOps[Self <: ShareResult] (val x: Self) extends AnyVal {
+  implicit class ShareResultMutableBuilder[Self <: ShareResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInviteePrincipalId(value: IdType): Self = StObject.set(x, "InviteePrincipalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInviteePrincipalIdUndefined: Self = StObject.set(x, "InviteePrincipalId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrincipalId(value: IdType): Self = StObject.set(x, "PrincipalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInviteePrincipalId(value: IdType): Self = this.set("InviteePrincipalId", value.asInstanceOf[js.Any])
+    def setPrincipalIdUndefined: Self = StObject.set(x, "PrincipalId", js.undefined)
     
     @scala.inline
-    def deleteInviteePrincipalId: Self = this.set("InviteePrincipalId", js.undefined)
+    def setRole(value: RoleType): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipalId(value: IdType): Self = this.set("PrincipalId", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
     
     @scala.inline
-    def deletePrincipalId: Self = this.set("PrincipalId", js.undefined)
+    def setShareId(value: ResourceIdType): Self = StObject.set(x, "ShareId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: RoleType): Self = this.set("Role", value.asInstanceOf[js.Any])
+    def setShareIdUndefined: Self = StObject.set(x, "ShareId", js.undefined)
     
     @scala.inline
-    def deleteRole: Self = this.set("Role", js.undefined)
+    def setStatus(value: ShareStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShareId(value: ResourceIdType): Self = this.set("ShareId", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: MessageType): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShareId: Self = this.set("ShareId", js.undefined)
+    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
     @scala.inline
-    def setStatus(value: ShareStatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setStatusMessage(value: MessageType): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

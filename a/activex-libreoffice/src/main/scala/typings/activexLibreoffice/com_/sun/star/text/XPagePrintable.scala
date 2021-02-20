@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,30 +49,18 @@ object XPagePrintable {
   }
   
   @scala.inline
-  implicit class XPagePrintableOps[Self <: XPagePrintable] (val x: Self) extends AnyVal {
+  implicit class XPagePrintableMutableBuilder[Self <: XPagePrintable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetPagePrintSettings(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getPagePrintSettings", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPagePrintSettings(value: SafeArray[PropertyValue]): Self = StObject.set(x, "PagePrintSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrintPages(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "printPages", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPagePrintSettings(value: SafeArray[PropertyValue]): Self = this.set("PagePrintSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetPagePrintSettings(value: () => SafeArray[PropertyValue]): Self = this.set("getPagePrintSettings", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPrintPages(value: SeqEquiv[PropertyValue] => Unit): Self = this.set("printPages", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPagePrintSettings(value: SeqEquiv[PropertyValue] => Unit): Self = this.set("setPagePrintSettings", js.Any.fromFunction1(value))
+    def setSetPagePrintSettings(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "setPagePrintSettings", js.Any.fromFunction1(value))
   }
 }

@@ -1,12 +1,10 @@
 package typings.anydbSql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("anydb-sql", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  
-  def apply(config: js.Object): AnydbSql = js.native
-}
+object ^ extends StObject

@@ -1,12 +1,13 @@
 package typings.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/server/authn.html#cookie-authentication
 @js.native
-trait DatabaseAuthResponse extends js.Object {
+trait DatabaseAuthResponse extends StObject {
   
   // Username
   var name: String = js.native
@@ -26,30 +27,18 @@ object DatabaseAuthResponse {
   }
   
   @scala.inline
-  implicit class DatabaseAuthResponseOps[Self <: DatabaseAuthResponse] (val x: Self) extends AnyVal {
+  implicit class DatabaseAuthResponseMutableBuilder[Self <: DatabaseAuthResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOk(value: Boolean): Self = this.set("ok", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRolesVarargs(value: String*): Self = this.set("roles", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoles(value: js.Array[String]): Self = this.set("roles", value.asInstanceOf[js.Any])
+    def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
   }
 }

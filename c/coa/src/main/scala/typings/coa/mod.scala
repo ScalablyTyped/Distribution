@@ -1,26 +1,33 @@
 package typings.coa
 
 import typings.q.mod.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("coa", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("coa", "Arg")
+  @js.native
   val Arg: js.UndefOr[scala.Nothing] = js.native
   
+  @JSImport("coa", "Cmd")
+  @js.native
   def Cmd(): typings.coa.mod.classes.Cmd = js.native
+  @JSImport("coa", "Cmd")
+  @js.native
   def Cmd(cmd: typings.coa.mod.classes.Cmd): typings.coa.mod.classes.Cmd = js.native
   
+  @JSImport("coa", "Opt")
+  @js.native
   val Opt: js.UndefOr[scala.Nothing] = js.native
   
-  @js.native
-  object classes extends js.Object {
+  object classes {
     
+    @JSImport("coa", "classes.Arg")
     @js.native
-    class Arg protected () extends js.Object {
+    class Arg protected () extends StObject {
       def this(cmd: Cmd) = this()
       
       @JSName("apply")
@@ -49,8 +56,9 @@ object mod extends js.Object {
       def `val`(validation: js.ThisFunction1[/* this */ this.type, /* value */ js.Any, Boolean]): typings.coa.mod.classes.Arg = js.native
     }
     
+    @JSImport("coa", "classes.Cmd")
     @js.native
-    class Cmd () extends js.Object {
+    class Cmd () extends StObject {
       def this(cmd: Cmd) = this()
       
       def act(act: js.Function3[/* opts */ js.Any, /* args */ js.Array[_], /* res */ js.Any, _]): Cmd = js.native
@@ -106,16 +114,20 @@ object mod extends js.Object {
       
       def usage(): String = js.native
     }
-    /* static members */
-    @js.native
-    object Cmd extends js.Object {
+    object Cmd {
       
+      /* static member */
+      @JSImport("coa", "classes.Cmd.create")
+      @js.native
       def create(): Cmd = js.native
+      @JSImport("coa", "classes.Cmd.create")
+      @js.native
       def create(cmd: Cmd): Cmd = js.native
     }
     
+    @JSImport("coa", "classes.Opt")
     @js.native
-    class Opt () extends js.Object {
+    class Opt () extends StObject {
       def this(cmd: Cmd) = this()
       
       def act(act: js.Function3[/* opts */ js.Any, /* args */ js.Array[_], /* res */ js.Any, _]): typings.coa.mod.classes.Opt = js.native
@@ -155,11 +167,14 @@ object mod extends js.Object {
     }
   }
   
-  @js.native
-  object shell extends js.Object {
+  object shell {
     
+    @JSImport("coa", "shell.escape")
+    @js.native
     def escape(w: String): String = js.native
     
+    @JSImport("coa", "shell.unescape")
+    @js.native
     def unescape(w: String): String = js.native
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemporaryCredential extends js.Object {
+trait TemporaryCredential extends StObject {
   
   /**
     * The instance's AWS OpsWorks Stacks ID.
@@ -36,42 +37,30 @@ object TemporaryCredential {
   }
   
   @scala.inline
-  implicit class TemporaryCredentialOps[Self <: TemporaryCredential] (val x: Self) extends AnyVal {
+  implicit class TemporaryCredentialMutableBuilder[Self <: TemporaryCredential] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
     @scala.inline
-    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("Password", value.asInstanceOf[js.Any])
+    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("Password", js.undefined)
+    def setValidForInMinutes(value: Integer): Self = StObject.set(x, "ValidForInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsername(value: String): Self = this.set("Username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("Username", js.undefined)
-    
-    @scala.inline
-    def setValidForInMinutes(value: Integer): Self = this.set("ValidForInMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidForInMinutes: Self = this.set("ValidForInMinutes", js.undefined)
+    def setValidForInMinutesUndefined: Self = StObject.set(x, "ValidForInMinutes", js.undefined)
   }
 }

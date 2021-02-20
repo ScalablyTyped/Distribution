@@ -1,11 +1,12 @@
 package typings.awsSdk.machinelearningMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeDataSourcesOutput extends js.Object {
+trait DescribeDataSourcesOutput extends StObject {
   
   /**
     * An ID of the next page in the paginated results that indicates at least one more page follows.
@@ -26,33 +27,21 @@ object DescribeDataSourcesOutput {
   }
   
   @scala.inline
-  implicit class DescribeDataSourcesOutputOps[Self <: DescribeDataSourcesOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeDataSourcesOutputMutableBuilder[Self <: DescribeDataSourcesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: StringType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResults(value: DataSources): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: StringType): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "Results", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setResultsVarargs(value: DataSource*): Self = this.set("Results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: DataSources): Self = this.set("Results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResults: Self = this.set("Results", js.undefined)
+    def setResultsVarargs(value: DataSource*): Self = StObject.set(x, "Results", js.Array(value :_*))
   }
 }

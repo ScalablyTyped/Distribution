@@ -1,41 +1,36 @@
 package typings.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ENewsUpdateType extends js.Object
+sealed trait ENewsUpdateType extends StObject
 @JSImport("steam-client", "ENewsUpdateType")
 @js.native
-object ENewsUpdateType extends js.Object {
+object ENewsUpdateType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ENewsUpdateType with Double] = js.native
   
   @js.native
   sealed trait AppNews extends ENewsUpdateType
-  /* 0 */ @js.native
-  object AppNews extends TopLevel[AppNews with Double]
+  /* 0 */ val AppNews: typings.steamClient.mod.ENewsUpdateType.AppNews with Double = js.native
   
   @js.native
   sealed trait CDDBUpdate extends ENewsUpdateType
-  /* 3 */ @js.native
-  object CDDBUpdate extends TopLevel[CDDBUpdate with Double]
+  /* 3 */ val CDDBUpdate: typings.steamClient.mod.ENewsUpdateType.CDDBUpdate with Double = js.native
   
   @js.native
   sealed trait ClientUpdate extends ENewsUpdateType
-  /* 4 */ @js.native
-  object ClientUpdate extends TopLevel[ClientUpdate with Double]
+  /* 4 */ val ClientUpdate: typings.steamClient.mod.ENewsUpdateType.ClientUpdate with Double = js.native
   
   @js.native
   sealed trait SteamAds extends ENewsUpdateType
-  /* 1 */ @js.native
-  object SteamAds extends TopLevel[SteamAds with Double]
+  /* 1 */ val SteamAds: typings.steamClient.mod.ENewsUpdateType.SteamAds with Double = js.native
   
   @js.native
   sealed trait SteamNews extends ENewsUpdateType
-  /* 2 */ @js.native
-  object SteamNews extends TopLevel[SteamNews with Double]
+  /* 2 */ val SteamNews: typings.steamClient.mod.ENewsUpdateType.SteamNews with Double = js.native
 }

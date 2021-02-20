@@ -8,17 +8,47 @@ import typings.reactSelect.typesMod.InputActionMeta
 import typings.reactSelect.typesMod.OptionTypeBase
 import typings.reactSelect.typesMod.OptionsType
 import typings.reactSelect.typesMod.ValueType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-select/src/AsyncCreatable", JSImport.Namespace)
-@js.native
-object srcAsyncCreatableMod extends js.Object {
+object srcAsyncCreatableMod {
   
+  @JSImport("react-select/src/AsyncCreatable", JSImport.Default)
   @js.native
-  class AsyncCreatable[OptionType /* <: OptionTypeBase */] ()
+  class default[OptionType /* <: OptionTypeBase */] protected () extends AsyncCreatable[OptionType] {
+    def this(props: Props[OptionType]) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Props[OptionType], context: js.Any) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("react-select/src/AsyncCreatable", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-select/src/AsyncCreatable", "default.defaultProps")
+    @js.native
+    def defaultProps: Props[js.Any] = js.native
+    @scala.inline
+    def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("react-select/src/AsyncCreatable", "AsyncCreatable")
+  @js.native
+  class AsyncCreatable[OptionType /* <: OptionTypeBase */] protected ()
     extends Component[Props[OptionType], State[OptionType], js.Any] {
+    def this(props: Props[OptionType]) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Props[OptionType], context: js.Any) = this()
     
     def blur(): Unit = js.native
     
@@ -37,19 +67,17 @@ object srcAsyncCreatableMod extends js.Object {
     var select: Ref[_] = js.native
   }
   /* static members */
-  @js.native
-  object AsyncCreatable extends js.Object {
+  object AsyncCreatable {
     
-    var defaultProps: Props[_] = js.native
-  }
-  
-  @js.native
-  class default[OptionType /* <: OptionTypeBase */] () extends AsyncCreatable[OptionType]
-  /* static members */
-  @js.native
-  object default extends js.Object {
+    @JSImport("react-select/src/AsyncCreatable", "AsyncCreatable")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var defaultProps: Props[_] = js.native
+    @JSImport("react-select/src/AsyncCreatable", "AsyncCreatable.defaultProps")
+    @js.native
+    def defaultProps: Props[js.Any] = js.native
+    @scala.inline
+    def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   type Props[OptionType /* <: OptionTypeBase */] = typings.reactSelect.srcAsyncMod.Props[OptionType] with typings.reactSelect.srcCreatableMod.Props[OptionType]

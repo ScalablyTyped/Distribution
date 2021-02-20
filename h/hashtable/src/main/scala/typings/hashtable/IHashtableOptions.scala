@@ -1,11 +1,12 @@
 package typings.hashtable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHashtableOptions[TKey] extends js.Object {
+trait IHashtableOptions[TKey] extends StObject {
   
   @JSName("equals")
   var equals_FIHashtableOptions: js.UndefOr[js.Function2[/* key1 */ TKey, /* key2 */ TKey, Boolean]] = js.native
@@ -24,36 +25,24 @@ object IHashtableOptions {
   }
   
   @scala.inline
-  implicit class IHashtableOptionsOps[Self <: IHashtableOptions[_], TKey] (val x: Self with IHashtableOptions[TKey]) extends AnyVal {
+  implicit class IHashtableOptionsMutableBuilder[Self <: IHashtableOptions[_], TKey] (val x: Self with IHashtableOptions[TKey]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEquals_(value: (/* key1 */ TKey, /* key2 */ TKey) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHashCode_(value: /* key */ TKey => _): Self = StObject.set(x, "hashCode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEquals(value: (/* key1 */ TKey, /* key2 */ TKey) => Boolean): Self = this.set("equals", js.Any.fromFunction2(value))
+    def setHashCode_Undefined: Self = StObject.set(x, "hashCode", js.undefined)
     
     @scala.inline
-    def deleteEquals: Self = this.set("equals", js.undefined)
+    def setReplaceDuplicateKey(value: Boolean): Self = StObject.set(x, "replaceDuplicateKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHashCode(value: /* key */ TKey => _): Self = this.set("hashCode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteHashCode: Self = this.set("hashCode", js.undefined)
-    
-    @scala.inline
-    def setReplaceDuplicateKey(value: Boolean): Self = this.set("replaceDuplicateKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplaceDuplicateKey: Self = this.set("replaceDuplicateKey", js.undefined)
+    def setReplaceDuplicateKeyUndefined: Self = StObject.set(x, "replaceDuplicateKey", js.undefined)
   }
 }

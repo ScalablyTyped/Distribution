@@ -1,5 +1,6 @@
 package typings.winjs.mod.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   **/
 @JSImport("winjs", "UI.PageNavigationAnimation")
 @js.native
-object PageNavigationAnimation extends js.Object {
+object PageNavigationAnimation extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winjs.WinJS.UI.PageNavigationAnimation with Double] = js.native

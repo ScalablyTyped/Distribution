@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteDBInstanceMessage extends js.Object {
+trait DeleteDBInstanceMessage extends StObject {
   
   /**
     * The DB instance identifier for the DB instance to be deleted. This parameter isn't case-sensitive. Constraints:   Must match the name of an existing DB instance.  
@@ -36,39 +37,27 @@ object DeleteDBInstanceMessage {
   }
   
   @scala.inline
-  implicit class DeleteDBInstanceMessageOps[Self <: DeleteDBInstanceMessage] (val x: Self) extends AnyVal {
+  implicit class DeleteDBInstanceMessageMutableBuilder[Self <: DeleteDBInstanceMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteAutomatedBackups(value: BooleanOptional): Self = StObject.set(x, "DeleteAutomatedBackups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteAutomatedBackupsUndefined: Self = StObject.set(x, "DeleteAutomatedBackups", js.undefined)
     
     @scala.inline
-    def setDBInstanceIdentifier(value: String): Self = this.set("DBInstanceIdentifier", value.asInstanceOf[js.Any])
+    def setFinalDBSnapshotIdentifier(value: String): Self = StObject.set(x, "FinalDBSnapshotIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteAutomatedBackups(value: BooleanOptional): Self = this.set("DeleteAutomatedBackups", value.asInstanceOf[js.Any])
+    def setFinalDBSnapshotIdentifierUndefined: Self = StObject.set(x, "FinalDBSnapshotIdentifier", js.undefined)
     
     @scala.inline
-    def deleteDeleteAutomatedBackups: Self = this.set("DeleteAutomatedBackups", js.undefined)
+    def setSkipFinalSnapshot(value: Boolean): Self = StObject.set(x, "SkipFinalSnapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalDBSnapshotIdentifier(value: String): Self = this.set("FinalDBSnapshotIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFinalDBSnapshotIdentifier: Self = this.set("FinalDBSnapshotIdentifier", js.undefined)
-    
-    @scala.inline
-    def setSkipFinalSnapshot(value: Boolean): Self = this.set("SkipFinalSnapshot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipFinalSnapshot: Self = this.set("SkipFinalSnapshot", js.undefined)
+    def setSkipFinalSnapshotUndefined: Self = StObject.set(x, "SkipFinalSnapshot", js.undefined)
   }
 }

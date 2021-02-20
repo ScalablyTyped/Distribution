@@ -1,12 +1,13 @@
 package typings.vegaTypings.encodeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Record<vega-typings.vega-typings/types/spec/encode.EncodeEntryName, T>> */
 @js.native
-trait Encode[T] extends js.Object {
+trait Encode[T] extends StObject {
   
   var enter: js.UndefOr[T] = js.native
   
@@ -31,60 +32,48 @@ object Encode {
   }
   
   @scala.inline
-  implicit class EncodeOps[Self <: Encode[_], T] (val x: Self with Encode[T]) extends AnyVal {
+  implicit class EncodeMutableBuilder[Self <: Encode[_], T] (val x: Self with Encode[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnter(value: T): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExit(value: T): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnter(value: T): Self = this.set("enter", value.asInstanceOf[js.Any])
+    def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
     
     @scala.inline
-    def deleteEnter: Self = this.set("enter", js.undefined)
+    def setHover(value: T): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExit(value: T): Self = this.set("exit", value.asInstanceOf[js.Any])
+    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
     @scala.inline
-    def deleteExit: Self = this.set("exit", js.undefined)
+    def setLeave(value: T): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHover(value: T): Self = this.set("hover", value.asInstanceOf[js.Any])
+    def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
     
     @scala.inline
-    def deleteHover: Self = this.set("hover", js.undefined)
+    def setRelease(value: T): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeave(value: T): Self = this.set("leave", value.asInstanceOf[js.Any])
+    def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
     
     @scala.inline
-    def deleteLeave: Self = this.set("leave", js.undefined)
+    def setSelect(value: T): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelease(value: T): Self = this.set("release", value.asInstanceOf[js.Any])
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
     @scala.inline
-    def deleteRelease: Self = this.set("release", js.undefined)
+    def setUpdate(value: T): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: T): Self = this.set("select", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
-    
-    @scala.inline
-    def setUpdate(value: T): Self = this.set("update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

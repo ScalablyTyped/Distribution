@@ -1,12 +1,13 @@
 package typings.devextreme.anon
 
 import typings.devextreme.devextremeStrings.auto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowedPageSizes extends js.Object {
+trait AllowedPageSizes extends StObject {
   
   var allowedPageSizes: js.UndefOr[js.Array[Double] | auto] = js.native
   
@@ -29,57 +30,45 @@ object AllowedPageSizes {
   }
   
   @scala.inline
-  implicit class AllowedPageSizesOps[Self <: AllowedPageSizes] (val x: Self) extends AnyVal {
+  implicit class AllowedPageSizesMutableBuilder[Self <: AllowedPageSizes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedPageSizes(value: js.Array[Double] | auto): Self = StObject.set(x, "allowedPageSizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedPageSizesUndefined: Self = StObject.set(x, "allowedPageSizes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedPageSizesVarargs(value: Double*): Self = StObject.set(x, "allowedPageSizes", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedPageSizesVarargs(value: Double*): Self = this.set("allowedPageSizes", js.Array(value :_*))
+    def setInfoText(value: String): Self = StObject.set(x, "infoText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedPageSizes(value: js.Array[Double] | auto): Self = this.set("allowedPageSizes", value.asInstanceOf[js.Any])
+    def setInfoTextUndefined: Self = StObject.set(x, "infoText", js.undefined)
     
     @scala.inline
-    def deleteAllowedPageSizes: Self = this.set("allowedPageSizes", js.undefined)
+    def setShowInfo(value: Boolean): Self = StObject.set(x, "showInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoText(value: String): Self = this.set("infoText", value.asInstanceOf[js.Any])
+    def setShowInfoUndefined: Self = StObject.set(x, "showInfo", js.undefined)
     
     @scala.inline
-    def deleteInfoText: Self = this.set("infoText", js.undefined)
+    def setShowNavigationButtons(value: Boolean): Self = StObject.set(x, "showNavigationButtons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowInfo(value: Boolean): Self = this.set("showInfo", value.asInstanceOf[js.Any])
+    def setShowNavigationButtonsUndefined: Self = StObject.set(x, "showNavigationButtons", js.undefined)
     
     @scala.inline
-    def deleteShowInfo: Self = this.set("showInfo", js.undefined)
+    def setShowPageSizeSelector(value: Boolean): Self = StObject.set(x, "showPageSizeSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowNavigationButtons(value: Boolean): Self = this.set("showNavigationButtons", value.asInstanceOf[js.Any])
+    def setShowPageSizeSelectorUndefined: Self = StObject.set(x, "showPageSizeSelector", js.undefined)
     
     @scala.inline
-    def deleteShowNavigationButtons: Self = this.set("showNavigationButtons", js.undefined)
+    def setVisible(value: Boolean | auto): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowPageSizeSelector(value: Boolean): Self = this.set("showPageSizeSelector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowPageSizeSelector: Self = this.set("showPageSizeSelector", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean | auto): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

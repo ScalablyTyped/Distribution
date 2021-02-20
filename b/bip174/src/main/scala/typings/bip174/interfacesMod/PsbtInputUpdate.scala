@@ -1,11 +1,12 @@
 package typings.bip174.interfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PsbtInputUpdate extends js.Object {
+trait PsbtInputUpdate extends StObject {
   
   var bip32Derivation: js.UndefOr[js.Array[Bip32Derivation]] = js.native
   
@@ -36,84 +37,72 @@ object PsbtInputUpdate {
   }
   
   @scala.inline
-  implicit class PsbtInputUpdateOps[Self <: PsbtInputUpdate] (val x: Self) extends AnyVal {
+  implicit class PsbtInputUpdateMutableBuilder[Self <: PsbtInputUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBip32Derivation(value: js.Array[Bip32Derivation]): Self = StObject.set(x, "bip32Derivation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBip32DerivationUndefined: Self = StObject.set(x, "bip32Derivation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBip32DerivationVarargs(value: Bip32Derivation*): Self = StObject.set(x, "bip32Derivation", js.Array(value :_*))
     
     @scala.inline
-    def setBip32DerivationVarargs(value: Bip32Derivation*): Self = this.set("bip32Derivation", js.Array(value :_*))
+    def setFinalScriptSig(value: FinalScriptSig): Self = StObject.set(x, "finalScriptSig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBip32Derivation(value: js.Array[Bip32Derivation]): Self = this.set("bip32Derivation", value.asInstanceOf[js.Any])
+    def setFinalScriptSigUndefined: Self = StObject.set(x, "finalScriptSig", js.undefined)
     
     @scala.inline
-    def deleteBip32Derivation: Self = this.set("bip32Derivation", js.undefined)
+    def setFinalScriptWitness(value: FinalScriptWitness): Self = StObject.set(x, "finalScriptWitness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalScriptSig(value: FinalScriptSig): Self = this.set("finalScriptSig", value.asInstanceOf[js.Any])
+    def setFinalScriptWitnessUndefined: Self = StObject.set(x, "finalScriptWitness", js.undefined)
     
     @scala.inline
-    def deleteFinalScriptSig: Self = this.set("finalScriptSig", js.undefined)
+    def setNonWitnessUtxo(value: NonWitnessUtxo): Self = StObject.set(x, "nonWitnessUtxo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalScriptWitness(value: FinalScriptWitness): Self = this.set("finalScriptWitness", value.asInstanceOf[js.Any])
+    def setNonWitnessUtxoUndefined: Self = StObject.set(x, "nonWitnessUtxo", js.undefined)
     
     @scala.inline
-    def deleteFinalScriptWitness: Self = this.set("finalScriptWitness", js.undefined)
+    def setPartialSig(value: js.Array[PartialSig]): Self = StObject.set(x, "partialSig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonWitnessUtxo(value: NonWitnessUtxo): Self = this.set("nonWitnessUtxo", value.asInstanceOf[js.Any])
+    def setPartialSigUndefined: Self = StObject.set(x, "partialSig", js.undefined)
     
     @scala.inline
-    def deleteNonWitnessUtxo: Self = this.set("nonWitnessUtxo", js.undefined)
+    def setPartialSigVarargs(value: PartialSig*): Self = StObject.set(x, "partialSig", js.Array(value :_*))
     
     @scala.inline
-    def setPartialSigVarargs(value: PartialSig*): Self = this.set("partialSig", js.Array(value :_*))
+    def setPorCommitment(value: PorCommitment): Self = StObject.set(x, "porCommitment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartialSig(value: js.Array[PartialSig]): Self = this.set("partialSig", value.asInstanceOf[js.Any])
+    def setPorCommitmentUndefined: Self = StObject.set(x, "porCommitment", js.undefined)
     
     @scala.inline
-    def deletePartialSig: Self = this.set("partialSig", js.undefined)
+    def setRedeemScript(value: RedeemScript): Self = StObject.set(x, "redeemScript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPorCommitment(value: PorCommitment): Self = this.set("porCommitment", value.asInstanceOf[js.Any])
+    def setRedeemScriptUndefined: Self = StObject.set(x, "redeemScript", js.undefined)
     
     @scala.inline
-    def deletePorCommitment: Self = this.set("porCommitment", js.undefined)
+    def setSighashType(value: SighashType): Self = StObject.set(x, "sighashType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedeemScript(value: RedeemScript): Self = this.set("redeemScript", value.asInstanceOf[js.Any])
+    def setSighashTypeUndefined: Self = StObject.set(x, "sighashType", js.undefined)
     
     @scala.inline
-    def deleteRedeemScript: Self = this.set("redeemScript", js.undefined)
+    def setWitnessScript(value: WitnessScript): Self = StObject.set(x, "witnessScript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSighashType(value: SighashType): Self = this.set("sighashType", value.asInstanceOf[js.Any])
+    def setWitnessScriptUndefined: Self = StObject.set(x, "witnessScript", js.undefined)
     
     @scala.inline
-    def deleteSighashType: Self = this.set("sighashType", js.undefined)
+    def setWitnessUtxo(value: WitnessUtxo): Self = StObject.set(x, "witnessUtxo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWitnessScript(value: WitnessScript): Self = this.set("witnessScript", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWitnessScript: Self = this.set("witnessScript", js.undefined)
-    
-    @scala.inline
-    def setWitnessUtxo(value: WitnessUtxo): Self = this.set("witnessUtxo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWitnessUtxo: Self = this.set("witnessUtxo", js.undefined)
+    def setWitnessUtxoUndefined: Self = StObject.set(x, "witnessUtxo", js.undefined)
   }
 }

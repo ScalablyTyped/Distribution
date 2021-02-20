@@ -1,11 +1,12 @@
 package typings.iotaLibJs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Provider extends js.Object {
+trait Provider extends StObject {
   
   var provider: String = js.native
   
@@ -22,33 +23,21 @@ object Provider {
   }
   
   @scala.inline
-  implicit class ProviderOps[Self <: Provider] (val x: Self) extends AnyVal {
+  implicit class ProviderMutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSandbox(value: Boolean): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
     
     @scala.inline
-    def setProvider(value: String): Self = this.set("provider", value.asInstanceOf[js.Any])
+    def setToken(value: Boolean): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSandbox(value: Boolean): Self = this.set("sandbox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSandbox: Self = this.set("sandbox", js.undefined)
-    
-    @scala.inline
-    def setToken(value: Boolean): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

@@ -9,6 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
 import typings.activexLibreoffice.com_.sun.star.style.XStyleFamiliesSupplier
 import typings.activexLibreoffice.com_.sun.star.util.XNumberFormatsSupplier
 import typings.activexLibreoffice.com_.sun.star.util.XProtectable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

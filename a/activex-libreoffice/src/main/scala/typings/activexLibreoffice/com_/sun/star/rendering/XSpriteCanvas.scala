@@ -9,6 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.geometry.RealPoint2D
 import typings.activexLibreoffice.com_.sun.star.geometry.RealSize2D
 import typings.activexLibreoffice.com_.sun.star.geometry.XMapping2D
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -100,33 +101,21 @@ object XSpriteCanvas {
   }
   
   @scala.inline
-  implicit class XSpriteCanvasOps[Self <: XSpriteCanvas] (val x: Self) extends AnyVal {
+  implicit class XSpriteCanvasMutableBuilder[Self <: XSpriteCanvas] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateClonedSprite(value: XSprite => XSprite): Self = StObject.set(x, "createClonedSprite", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateCustomSprite(value: RealSize2D => XCustomSprite): Self = StObject.set(x, "createCustomSprite", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateSpriteFromAnimation(value: XAnimation => XAnimatedSprite): Self = StObject.set(x, "createSpriteFromAnimation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateClonedSprite(value: XSprite => XSprite): Self = this.set("createClonedSprite", js.Any.fromFunction1(value))
+    def setCreateSpriteFromBitmaps(value: (SeqEquiv[XBitmap], Double) => XAnimatedSprite): Self = StObject.set(x, "createSpriteFromBitmaps", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateCustomSprite(value: RealSize2D => XCustomSprite): Self = this.set("createCustomSprite", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateSpriteFromAnimation(value: XAnimation => XAnimatedSprite): Self = this.set("createSpriteFromAnimation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateSpriteFromBitmaps(value: (SeqEquiv[XBitmap], Double) => XAnimatedSprite): Self = this.set("createSpriteFromBitmaps", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUpdateScreen(value: Boolean => Boolean): Self = this.set("updateScreen", js.Any.fromFunction1(value))
+    def setUpdateScreen(value: Boolean => Boolean): Self = StObject.set(x, "updateScreen", js.Any.fromFunction1(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,27 +36,15 @@ object RelativeDateFilter {
   }
   
   @scala.inline
-  implicit class RelativeDateFilterOps[Self <: RelativeDateFilter] (val x: Self) extends AnyVal {
+  implicit class RelativeDateFilterMutableBuilder[Self <: RelativeDateFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetPeriod(value: () => PeriodType): Self = StObject.set(x, "getPeriod", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRange(value: () => DateRangeType): Self = StObject.set(x, "getRange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetPeriod(value: () => PeriodType): Self = this.set("getPeriod", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRange(value: () => DateRangeType): Self = this.set("getRange", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRangeN(value: () => Double): Self = this.set("getRangeN", js.Any.fromFunction0(value))
+    def setGetRangeN(value: () => Double): Self = StObject.set(x, "getRangeN", js.Any.fromFunction0(value))
   }
 }

@@ -1,6 +1,7 @@
 package typings.babylonjs.BABYLON
 
 import typings.std.Worker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,30 +37,18 @@ object WorkerPool {
   }
   
   @scala.inline
-  implicit class WorkerPoolOps[Self <: WorkerPool] (val x: Self) extends AnyVal {
+  implicit class WorkerPoolMutableBuilder[Self <: WorkerPool] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPush(value: js.Function2[/* worker */ Worker, /* onComplete */ js.Function0[Unit], Unit] => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_execute(value: js.Any): Self = StObject.set(x, "_execute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_pendingActions(value: js.Any): Self = StObject.set(x, "_pendingActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_execute(value: js.Any): Self = this.set("_execute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_pendingActions(value: js.Any): Self = this.set("_pendingActions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_workerInfos(value: js.Any): Self = this.set("_workerInfos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPush(value: js.Function2[/* worker */ Worker, /* onComplete */ js.Function0[Unit], Unit] => Unit): Self = this.set("push", js.Any.fromFunction1(value))
+    def set_workerInfos(value: js.Any): Self = StObject.set(x, "_workerInfos", value.asInstanceOf[js.Any])
   }
 }

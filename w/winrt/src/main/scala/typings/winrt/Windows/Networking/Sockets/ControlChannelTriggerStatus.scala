@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ControlChannelTriggerStatus extends js.Object
+sealed trait ControlChannelTriggerStatus extends StObject
 @JSGlobal("Windows.Networking.Sockets.ControlChannelTriggerStatus")
 @js.native
-object ControlChannelTriggerStatus extends js.Object {
+object ControlChannelTriggerStatus extends StObject {
   
   @js.native
   sealed trait hardwareSlotAllocated extends ControlChannelTriggerStatus

@@ -1,5 +1,6 @@
 package typings.vimeoPlayer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vimeoPlayer.vimeoPlayerStrings.`360p`
   - typings.vimeoPlayer.vimeoPlayerStrings.`240p`
 */
-trait VimeoVideoQuality extends js.Object
+trait VimeoVideoQuality extends StObject
 object VimeoVideoQuality {
   
   @scala.inline

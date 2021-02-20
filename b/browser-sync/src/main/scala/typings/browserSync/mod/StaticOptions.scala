@@ -1,11 +1,12 @@
 package typings.browserSync.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StaticOptions extends js.Object {
+trait StaticOptions extends StObject {
   
   var dir: String | js.Array[String] = js.native
   
@@ -20,30 +21,18 @@ object StaticOptions {
   }
   
   @scala.inline
-  implicit class StaticOptionsOps[Self <: StaticOptions] (val x: Self) extends AnyVal {
+  implicit class StaticOptionsMutableBuilder[Self <: StaticOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDir(value: String | js.Array[String]): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirVarargs(value: String*): Self = StObject.set(x, "dir", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoute(value: String | js.Array[String]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirVarargs(value: String*): Self = this.set("dir", js.Array(value :_*))
-    
-    @scala.inline
-    def setDir(value: String | js.Array[String]): Self = this.set("dir", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRouteVarargs(value: String*): Self = this.set("route", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoute(value: String | js.Array[String]): Self = this.set("route", value.asInstanceOf[js.Any])
+    def setRouteVarargs(value: String*): Self = StObject.set(x, "route", js.Array(value :_*))
   }
 }

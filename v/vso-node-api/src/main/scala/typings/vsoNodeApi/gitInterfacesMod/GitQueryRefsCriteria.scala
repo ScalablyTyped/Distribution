@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitQueryRefsCriteria extends js.Object {
+trait GitQueryRefsCriteria extends StObject {
   
   /**
     * List of commit Ids to be searched
@@ -31,33 +32,21 @@ object GitQueryRefsCriteria {
   }
   
   @scala.inline
-  implicit class GitQueryRefsCriteriaOps[Self <: GitQueryRefsCriteria] (val x: Self) extends AnyVal {
+  implicit class GitQueryRefsCriteriaMutableBuilder[Self <: GitQueryRefsCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitIds(value: js.Array[String]): Self = StObject.set(x, "commitIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommitIdsVarargs(value: String*): Self = StObject.set(x, "commitIds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRefNames(value: js.Array[String]): Self = StObject.set(x, "refNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitIdsVarargs(value: String*): Self = this.set("commitIds", js.Array(value :_*))
+    def setRefNamesVarargs(value: String*): Self = StObject.set(x, "refNames", js.Array(value :_*))
     
     @scala.inline
-    def setCommitIds(value: js.Array[String]): Self = this.set("commitIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefNamesVarargs(value: String*): Self = this.set("refNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setRefNames(value: js.Array[String]): Self = this.set("refNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchType(value: GitRefSearchType): Self = this.set("searchType", value.asInstanceOf[js.Any])
+    def setSearchType(value: GitRefSearchType): Self = StObject.set(x, "searchType", value.asInstanceOf[js.Any])
   }
 }

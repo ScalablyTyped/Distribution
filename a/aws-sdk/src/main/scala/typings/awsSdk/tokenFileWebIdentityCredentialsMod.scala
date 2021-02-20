@@ -2,14 +2,14 @@ package typings.awsSdk
 
 import typings.awsSdk.configBaseMod.ConfigurationOptions
 import typings.awsSdk.credentialsMod.Credentials
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("aws-sdk/lib/credentials/token_file_web_identity_credentials", JSImport.Namespace)
-@js.native
-object tokenFileWebIdentityCredentialsMod extends js.Object {
+object tokenFileWebIdentityCredentialsMod {
   
+  @JSImport("aws-sdk/lib/credentials/token_file_web_identity_credentials", "TokenFileWebIdentityCredentials")
   @js.native
   /**
     * Creates a new credentials object with optional configuraion.

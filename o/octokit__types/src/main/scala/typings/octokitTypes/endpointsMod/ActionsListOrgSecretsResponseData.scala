@@ -1,12 +1,13 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Createdat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionsListOrgSecretsResponseData extends js.Object {
+trait ActionsListOrgSecretsResponseData extends StObject {
   
   var secrets: js.Array[Createdat] = js.native
   
@@ -21,27 +22,15 @@ object ActionsListOrgSecretsResponseData {
   }
   
   @scala.inline
-  implicit class ActionsListOrgSecretsResponseDataOps[Self <: ActionsListOrgSecretsResponseData] (val x: Self) extends AnyVal {
+  implicit class ActionsListOrgSecretsResponseDataMutableBuilder[Self <: ActionsListOrgSecretsResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSecrets(value: js.Array[Createdat]): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSecretsVarargs(value: Createdat*): Self = StObject.set(x, "secrets", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSecretsVarargs(value: Createdat*): Self = this.set("secrets", js.Array(value :_*))
-    
-    @scala.inline
-    def setSecrets(value: js.Array[Createdat]): Self = this.set("secrets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_count(value: Double): Self = this.set("total_count", value.asInstanceOf[js.Any])
+    def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
   }
 }

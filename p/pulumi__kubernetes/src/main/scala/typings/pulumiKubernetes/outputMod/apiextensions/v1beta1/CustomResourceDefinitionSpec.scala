@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.apiextensions.v1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * CustomResourceDefinitionSpec describes how a user wants their resource to appear
   */
 @js.native
-trait CustomResourceDefinitionSpec extends js.Object {
+trait CustomResourceDefinitionSpec extends StObject {
   
   /**
     * additionalPrinterColumns specifies additional columns returned in Table output. See https://kubernetes.io/docs/reference/using-api/api-concepts/#receiving-resources-as-tables for details. If present, this field configures columns for all versions. Top-level and per-version columns are mutually exclusive. If no top-level or per-version columns are specified, a single column displaying the age of the custom resource is used.
@@ -80,54 +81,42 @@ object CustomResourceDefinitionSpec {
   }
   
   @scala.inline
-  implicit class CustomResourceDefinitionSpecOps[Self <: CustomResourceDefinitionSpec] (val x: Self) extends AnyVal {
+  implicit class CustomResourceDefinitionSpecMutableBuilder[Self <: CustomResourceDefinitionSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalPrinterColumns(value: js.Array[CustomResourceColumnDefinition]): Self = StObject.set(x, "additionalPrinterColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalPrinterColumnsVarargs(value: CustomResourceColumnDefinition*): Self = StObject.set(x, "additionalPrinterColumns", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConversion(value: CustomResourceConversion): Self = StObject.set(x, "conversion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalPrinterColumnsVarargs(value: CustomResourceColumnDefinition*): Self = this.set("additionalPrinterColumns", js.Array(value :_*))
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalPrinterColumns(value: js.Array[CustomResourceColumnDefinition]): Self = this.set("additionalPrinterColumns", value.asInstanceOf[js.Any])
+    def setNames(value: CustomResourceDefinitionNames): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversion(value: CustomResourceConversion): Self = this.set("conversion", value.asInstanceOf[js.Any])
+    def setPreserveUnknownFields(value: Boolean): Self = StObject.set(x, "preserveUnknownFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNames(value: CustomResourceDefinitionNames): Self = this.set("names", value.asInstanceOf[js.Any])
+    def setSubresources(value: CustomResourceSubresources): Self = StObject.set(x, "subresources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveUnknownFields(value: Boolean): Self = this.set("preserveUnknownFields", value.asInstanceOf[js.Any])
+    def setValidation(value: CustomResourceValidation): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubresources(value: CustomResourceSubresources): Self = this.set("subresources", value.asInstanceOf[js.Any])
+    def setVersions(value: js.Array[CustomResourceDefinitionVersion]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidation(value: CustomResourceValidation): Self = this.set("validation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionsVarargs(value: CustomResourceDefinitionVersion*): Self = this.set("versions", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersions(value: js.Array[CustomResourceDefinitionVersion]): Self = this.set("versions", value.asInstanceOf[js.Any])
+    def setVersionsVarargs(value: CustomResourceDefinitionVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
   }
 }

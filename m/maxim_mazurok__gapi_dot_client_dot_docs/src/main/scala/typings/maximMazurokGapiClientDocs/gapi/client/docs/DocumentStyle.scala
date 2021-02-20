@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentStyle extends js.Object {
+trait DocumentStyle extends StObject {
   
   /** The background of the document. Documents cannot have a transparent background color. */
   var background: js.UndefOr[Background] = js.native
@@ -85,126 +86,114 @@ object DocumentStyle {
   }
   
   @scala.inline
-  implicit class DocumentStyleOps[Self <: DocumentStyle] (val x: Self) extends AnyVal {
+  implicit class DocumentStyleMutableBuilder[Self <: DocumentStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: Background): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultFooterId(value: String): Self = StObject.set(x, "defaultFooterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: Background): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setDefaultFooterIdUndefined: Self = StObject.set(x, "defaultFooterId", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setDefaultHeaderId(value: String): Self = StObject.set(x, "defaultHeaderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultFooterId(value: String): Self = this.set("defaultFooterId", value.asInstanceOf[js.Any])
+    def setDefaultHeaderIdUndefined: Self = StObject.set(x, "defaultHeaderId", js.undefined)
     
     @scala.inline
-    def deleteDefaultFooterId: Self = this.set("defaultFooterId", js.undefined)
+    def setEvenPageFooterId(value: String): Self = StObject.set(x, "evenPageFooterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultHeaderId(value: String): Self = this.set("defaultHeaderId", value.asInstanceOf[js.Any])
+    def setEvenPageFooterIdUndefined: Self = StObject.set(x, "evenPageFooterId", js.undefined)
     
     @scala.inline
-    def deleteDefaultHeaderId: Self = this.set("defaultHeaderId", js.undefined)
+    def setEvenPageHeaderId(value: String): Self = StObject.set(x, "evenPageHeaderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvenPageFooterId(value: String): Self = this.set("evenPageFooterId", value.asInstanceOf[js.Any])
+    def setEvenPageHeaderIdUndefined: Self = StObject.set(x, "evenPageHeaderId", js.undefined)
     
     @scala.inline
-    def deleteEvenPageFooterId: Self = this.set("evenPageFooterId", js.undefined)
+    def setFirstPageFooterId(value: String): Self = StObject.set(x, "firstPageFooterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvenPageHeaderId(value: String): Self = this.set("evenPageHeaderId", value.asInstanceOf[js.Any])
+    def setFirstPageFooterIdUndefined: Self = StObject.set(x, "firstPageFooterId", js.undefined)
     
     @scala.inline
-    def deleteEvenPageHeaderId: Self = this.set("evenPageHeaderId", js.undefined)
+    def setFirstPageHeaderId(value: String): Self = StObject.set(x, "firstPageHeaderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstPageFooterId(value: String): Self = this.set("firstPageFooterId", value.asInstanceOf[js.Any])
+    def setFirstPageHeaderIdUndefined: Self = StObject.set(x, "firstPageHeaderId", js.undefined)
     
     @scala.inline
-    def deleteFirstPageFooterId: Self = this.set("firstPageFooterId", js.undefined)
+    def setMarginBottom(value: Dimension): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstPageHeaderId(value: String): Self = this.set("firstPageHeaderId", value.asInstanceOf[js.Any])
+    def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
     
     @scala.inline
-    def deleteFirstPageHeaderId: Self = this.set("firstPageHeaderId", js.undefined)
+    def setMarginFooter(value: Dimension): Self = StObject.set(x, "marginFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginBottom(value: Dimension): Self = this.set("marginBottom", value.asInstanceOf[js.Any])
+    def setMarginFooterUndefined: Self = StObject.set(x, "marginFooter", js.undefined)
     
     @scala.inline
-    def deleteMarginBottom: Self = this.set("marginBottom", js.undefined)
+    def setMarginHeader(value: Dimension): Self = StObject.set(x, "marginHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginFooter(value: Dimension): Self = this.set("marginFooter", value.asInstanceOf[js.Any])
+    def setMarginHeaderUndefined: Self = StObject.set(x, "marginHeader", js.undefined)
     
     @scala.inline
-    def deleteMarginFooter: Self = this.set("marginFooter", js.undefined)
+    def setMarginLeft(value: Dimension): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginHeader(value: Dimension): Self = this.set("marginHeader", value.asInstanceOf[js.Any])
+    def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
     @scala.inline
-    def deleteMarginHeader: Self = this.set("marginHeader", js.undefined)
+    def setMarginRight(value: Dimension): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginLeft(value: Dimension): Self = this.set("marginLeft", value.asInstanceOf[js.Any])
+    def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
     
     @scala.inline
-    def deleteMarginLeft: Self = this.set("marginLeft", js.undefined)
+    def setMarginTop(value: Dimension): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginRight(value: Dimension): Self = this.set("marginRight", value.asInstanceOf[js.Any])
+    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
     @scala.inline
-    def deleteMarginRight: Self = this.set("marginRight", js.undefined)
+    def setPageNumberStart(value: Double): Self = StObject.set(x, "pageNumberStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginTop(value: Dimension): Self = this.set("marginTop", value.asInstanceOf[js.Any])
+    def setPageNumberStartUndefined: Self = StObject.set(x, "pageNumberStart", js.undefined)
     
     @scala.inline
-    def deleteMarginTop: Self = this.set("marginTop", js.undefined)
+    def setPageSize(value: Size): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageNumberStart(value: Double): Self = this.set("pageNumberStart", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def deletePageNumberStart: Self = this.set("pageNumberStart", js.undefined)
+    def setUseCustomHeaderFooterMargins(value: Boolean): Self = StObject.set(x, "useCustomHeaderFooterMargins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Size): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setUseCustomHeaderFooterMarginsUndefined: Self = StObject.set(x, "useCustomHeaderFooterMargins", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setUseEvenPageHeaderFooter(value: Boolean): Self = StObject.set(x, "useEvenPageHeaderFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseCustomHeaderFooterMargins(value: Boolean): Self = this.set("useCustomHeaderFooterMargins", value.asInstanceOf[js.Any])
+    def setUseEvenPageHeaderFooterUndefined: Self = StObject.set(x, "useEvenPageHeaderFooter", js.undefined)
     
     @scala.inline
-    def deleteUseCustomHeaderFooterMargins: Self = this.set("useCustomHeaderFooterMargins", js.undefined)
+    def setUseFirstPageHeaderFooter(value: Boolean): Self = StObject.set(x, "useFirstPageHeaderFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseEvenPageHeaderFooter(value: Boolean): Self = this.set("useEvenPageHeaderFooter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseEvenPageHeaderFooter: Self = this.set("useEvenPageHeaderFooter", js.undefined)
-    
-    @scala.inline
-    def setUseFirstPageHeaderFooter(value: Boolean): Self = this.set("useFirstPageHeaderFooter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseFirstPageHeaderFooter: Self = this.set("useFirstPageHeaderFooter", js.undefined)
+    def setUseFirstPageHeaderFooterUndefined: Self = StObject.set(x, "useFirstPageHeaderFooter", js.undefined)
   }
 }

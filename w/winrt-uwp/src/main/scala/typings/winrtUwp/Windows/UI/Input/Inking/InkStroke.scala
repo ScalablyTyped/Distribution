@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.UI.Input.Inking
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.Numerics.Matrix3x2
 import typings.winrtUwp.Windows.Foundation.Rect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A single ink stroke, including the Bézier curve parameters used for final rendering of the stroke. */
 @js.native
-trait InkStroke extends js.Object {
+trait InkStroke extends StObject {
   
   /** Gets the bounding box for the InkStroke . */
   var boundingRect: Rect = js.native
@@ -55,39 +56,27 @@ object InkStroke {
   }
   
   @scala.inline
-  implicit class InkStrokeOps[Self <: InkStroke] (val x: Self) extends AnyVal {
+  implicit class InkStrokeMutableBuilder[Self <: InkStroke] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingRect(value: Rect): Self = StObject.set(x, "boundingRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrawingAttributes(value: InkDrawingAttributes): Self = StObject.set(x, "drawingAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetInkPoints(value: () => IVectorView[InkPoint]): Self = StObject.set(x, "getInkPoints", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBoundingRect(value: Rect): Self = this.set("boundingRect", value.asInstanceOf[js.Any])
+    def setGetRenderingSegments(value: () => IVectorView[InkStrokeRenderingSegment]): Self = StObject.set(x, "getRenderingSegments", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDrawingAttributes(value: InkDrawingAttributes): Self = this.set("drawingAttributes", value.asInstanceOf[js.Any])
+    def setPointTransform(value: Matrix3x2): Self = StObject.set(x, "pointTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetInkPoints(value: () => IVectorView[InkPoint]): Self = this.set("getInkPoints", js.Any.fromFunction0(value))
+    def setRecognized(value: Boolean): Self = StObject.set(x, "recognized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRenderingSegments(value: () => IVectorView[InkStrokeRenderingSegment]): Self = this.set("getRenderingSegments", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPointTransform(value: Matrix3x2): Self = this.set("pointTransform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecognized(value: Boolean): Self = this.set("recognized", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
   }
 }

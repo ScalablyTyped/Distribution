@@ -1,15 +1,15 @@
 package typings.twilioMcsClient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-mcs-client/lib/configuration", JSImport.Namespace)
-@js.native
-object configurationMod extends js.Object {
+object configurationMod {
   
+  @JSImport("twilio-mcs-client/lib/configuration", "Configuration")
   @js.native
-  class Configuration protected () extends js.Object {
+  class Configuration protected () extends StObject {
     def this(token: String, baseUrl: String, options: js.Any) = this()
     
     val backoffConfigOverride: js.Any = js.native
@@ -23,13 +23,5 @@ object configurationMod extends js.Object {
     var token: String = js.native
     
     def updateToken(token: String): Unit = js.native
-  }
-  /* static members */
-  @js.native
-  object Configuration extends js.Object {
-    
-    def backoffConfigDefault: js.Any = js.native
-    
-    def retryWhenThrottledDefault: Boolean = js.native
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NielsenNonLinearWatermarkSettings extends js.Object {
+trait NielsenNonLinearWatermarkSettings extends StObject {
   
   /**
     * Choose the type of Nielsen watermarks that you want in your outputs. When you choose NAES 2 and NW (NAES2_AND_NW), you must provide a value for the setting SID (sourceId). When you choose CBET (CBET), you must provide a value for the setting CSID (cbetSourceId). When you choose NAES 2, NW, and CBET (NAES2_AND_NW_AND_CBET), you must provide values for both of these settings.
@@ -71,84 +72,72 @@ object NielsenNonLinearWatermarkSettings {
   }
   
   @scala.inline
-  implicit class NielsenNonLinearWatermarkSettingsOps[Self <: NielsenNonLinearWatermarkSettings] (val x: Self) extends AnyVal {
+  implicit class NielsenNonLinearWatermarkSettingsMutableBuilder[Self <: NielsenNonLinearWatermarkSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveWatermarkProcess(value: NielsenActiveWatermarkProcessType): Self = StObject.set(x, "ActiveWatermarkProcess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveWatermarkProcessUndefined: Self = StObject.set(x, "ActiveWatermarkProcess", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdiFilename(value: stringPatternS3): Self = StObject.set(x, "AdiFilename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveWatermarkProcess(value: NielsenActiveWatermarkProcessType): Self = this.set("ActiveWatermarkProcess", value.asInstanceOf[js.Any])
+    def setAdiFilenameUndefined: Self = StObject.set(x, "AdiFilename", js.undefined)
     
     @scala.inline
-    def deleteActiveWatermarkProcess: Self = this.set("ActiveWatermarkProcess", js.undefined)
+    def setAssetId(value: stringMin1Max20): Self = StObject.set(x, "AssetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdiFilename(value: stringPatternS3): Self = this.set("AdiFilename", value.asInstanceOf[js.Any])
+    def setAssetIdUndefined: Self = StObject.set(x, "AssetId", js.undefined)
     
     @scala.inline
-    def deleteAdiFilename: Self = this.set("AdiFilename", js.undefined)
+    def setAssetName(value: stringMin1Max50): Self = StObject.set(x, "AssetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetId(value: stringMin1Max20): Self = this.set("AssetId", value.asInstanceOf[js.Any])
+    def setAssetNameUndefined: Self = StObject.set(x, "AssetName", js.undefined)
     
     @scala.inline
-    def deleteAssetId: Self = this.set("AssetId", js.undefined)
+    def setCbetSourceId(value: stringPattern0xAFaF0908190908): Self = StObject.set(x, "CbetSourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetName(value: stringMin1Max50): Self = this.set("AssetName", value.asInstanceOf[js.Any])
+    def setCbetSourceIdUndefined: Self = StObject.set(x, "CbetSourceId", js.undefined)
     
     @scala.inline
-    def deleteAssetName: Self = this.set("AssetName", js.undefined)
+    def setEpisodeId(value: stringMin1Max20): Self = StObject.set(x, "EpisodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCbetSourceId(value: stringPattern0xAFaF0908190908): Self = this.set("CbetSourceId", value.asInstanceOf[js.Any])
+    def setEpisodeIdUndefined: Self = StObject.set(x, "EpisodeId", js.undefined)
     
     @scala.inline
-    def deleteCbetSourceId: Self = this.set("CbetSourceId", js.undefined)
+    def setMetadataDestination(value: stringPatternS3): Self = StObject.set(x, "MetadataDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEpisodeId(value: stringMin1Max20): Self = this.set("EpisodeId", value.asInstanceOf[js.Any])
+    def setMetadataDestinationUndefined: Self = StObject.set(x, "MetadataDestination", js.undefined)
     
     @scala.inline
-    def deleteEpisodeId: Self = this.set("EpisodeId", js.undefined)
+    def setSourceId(value: integerMin0Max65534): Self = StObject.set(x, "SourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataDestination(value: stringPatternS3): Self = this.set("MetadataDestination", value.asInstanceOf[js.Any])
+    def setSourceIdUndefined: Self = StObject.set(x, "SourceId", js.undefined)
     
     @scala.inline
-    def deleteMetadataDestination: Self = this.set("MetadataDestination", js.undefined)
+    def setSourceWatermarkStatus(value: NielsenSourceWatermarkStatusType): Self = StObject.set(x, "SourceWatermarkStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceId(value: integerMin0Max65534): Self = this.set("SourceId", value.asInstanceOf[js.Any])
+    def setSourceWatermarkStatusUndefined: Self = StObject.set(x, "SourceWatermarkStatus", js.undefined)
     
     @scala.inline
-    def deleteSourceId: Self = this.set("SourceId", js.undefined)
+    def setTicServerUrl(value: stringPatternHttps): Self = StObject.set(x, "TicServerUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceWatermarkStatus(value: NielsenSourceWatermarkStatusType): Self = this.set("SourceWatermarkStatus", value.asInstanceOf[js.Any])
+    def setTicServerUrlUndefined: Self = StObject.set(x, "TicServerUrl", js.undefined)
     
     @scala.inline
-    def deleteSourceWatermarkStatus: Self = this.set("SourceWatermarkStatus", js.undefined)
+    def setUniqueTicPerAudioTrack(value: NielsenUniqueTicPerAudioTrackType): Self = StObject.set(x, "UniqueTicPerAudioTrack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicServerUrl(value: stringPatternHttps): Self = this.set("TicServerUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTicServerUrl: Self = this.set("TicServerUrl", js.undefined)
-    
-    @scala.inline
-    def setUniqueTicPerAudioTrack(value: NielsenUniqueTicPerAudioTrackType): Self = this.set("UniqueTicPerAudioTrack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniqueTicPerAudioTrack: Self = this.set("UniqueTicPerAudioTrack", js.undefined)
+    def setUniqueTicPerAudioTrackUndefined: Self = StObject.set(x, "UniqueTicPerAudioTrack", js.undefined)
   }
 }

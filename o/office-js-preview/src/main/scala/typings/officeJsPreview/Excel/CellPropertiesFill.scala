@@ -21,6 +21,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.SemiGray75
 import typings.officeJsPreview.officeJsPreviewStrings.Solid
 import typings.officeJsPreview.officeJsPreviewStrings.Up
 import typings.officeJsPreview.officeJsPreviewStrings.Vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait CellPropertiesFill extends js.Object {
+trait CellPropertiesFill extends StObject {
   
   /**
     *
@@ -85,50 +86,38 @@ object CellPropertiesFill {
   }
   
   @scala.inline
-  implicit class CellPropertiesFillOps[Self <: CellPropertiesFill] (val x: Self) extends AnyVal {
+  implicit class CellPropertiesFillMutableBuilder[Self <: CellPropertiesFill] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
     def setPattern(
       value: FillPattern | None | Solid | Gray50 | Gray75 | Gray25 | Horizontal | Vertical | Down | Up | Checker | SemiGray75 | LightHorizontal | LightVertical | LightDown | LightUp | Grid | CrissCross | Gray16 | Gray8 | LinearGradient | RectangularGradient
-    ): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
+    def setPatternColor(value: String): Self = StObject.set(x, "patternColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatternColor(value: String): Self = this.set("patternColor", value.asInstanceOf[js.Any])
+    def setPatternColorUndefined: Self = StObject.set(x, "patternColor", js.undefined)
     
     @scala.inline
-    def deletePatternColor: Self = this.set("patternColor", js.undefined)
+    def setPatternTintAndShade(value: Double): Self = StObject.set(x, "patternTintAndShade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatternTintAndShade(value: Double): Self = this.set("patternTintAndShade", value.asInstanceOf[js.Any])
+    def setPatternTintAndShadeUndefined: Self = StObject.set(x, "patternTintAndShade", js.undefined)
     
     @scala.inline
-    def deletePatternTintAndShade: Self = this.set("patternTintAndShade", js.undefined)
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
     @scala.inline
-    def setTintAndShade(value: Double): Self = this.set("tintAndShade", value.asInstanceOf[js.Any])
+    def setTintAndShade(value: Double): Self = StObject.set(x, "tintAndShade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTintAndShade: Self = this.set("tintAndShade", js.undefined)
+    def setTintAndShadeUndefined: Self = StObject.set(x, "tintAndShade", js.undefined)
   }
 }

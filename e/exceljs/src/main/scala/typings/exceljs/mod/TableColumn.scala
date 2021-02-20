@@ -10,13 +10,14 @@ import typings.exceljs.exceljsStrings.min
 import typings.exceljs.exceljsStrings.none_
 import typings.exceljs.exceljsStrings.stdDev
 import typings.exceljs.exceljsStrings.sum
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Required<exceljs.exceljs.TableColumnProperties> */
 @js.native
-trait TableColumn extends js.Object {
+trait TableColumn extends StObject {
   
   var filterButton: Boolean = js.native
   
@@ -43,33 +44,21 @@ object TableColumn {
   }
   
   @scala.inline
-  implicit class TableColumnOps[Self <: TableColumn] (val x: Self) extends AnyVal {
+  implicit class TableColumnMutableBuilder[Self <: TableColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterButton(value: Boolean): Self = StObject.set(x, "filterButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotalsRowFormula(value: String): Self = StObject.set(x, "totalsRowFormula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterButton(value: Boolean): Self = this.set("filterButton", value.asInstanceOf[js.Any])
+    def setTotalsRowFunction(value: none_ | average | countNums | count | max | min | stdDev | `var` | sum | custom): Self = StObject.set(x, "totalsRowFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalsRowFormula(value: String): Self = this.set("totalsRowFormula", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalsRowFunction(value: none_ | average | countNums | count | max | min | stdDev | `var` | sum | custom): Self = this.set("totalsRowFunction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalsRowLabel(value: String): Self = this.set("totalsRowLabel", value.asInstanceOf[js.Any])
+    def setTotalsRowLabel(value: String): Self = StObject.set(x, "totalsRowLabel", value.asInstanceOf[js.Any])
   }
 }

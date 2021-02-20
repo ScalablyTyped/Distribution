@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteChannelModeratorRequest extends js.Object {
+trait DeleteChannelModeratorRequest extends StObject {
   
   /**
     * The ARN of the channel.
@@ -26,24 +27,12 @@ object DeleteChannelModeratorRequest {
   }
   
   @scala.inline
-  implicit class DeleteChannelModeratorRequestOps[Self <: DeleteChannelModeratorRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteChannelModeratorRequestMutableBuilder[Self <: DeleteChannelModeratorRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChannelArn(value: ChimeArn): Self = this.set("ChannelArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChannelModeratorArn(value: ChimeArn): Self = this.set("ChannelModeratorArn", value.asInstanceOf[js.Any])
+    def setChannelModeratorArn(value: ChimeArn): Self = StObject.set(x, "ChannelModeratorArn", value.asInstanceOf[js.Any])
   }
 }

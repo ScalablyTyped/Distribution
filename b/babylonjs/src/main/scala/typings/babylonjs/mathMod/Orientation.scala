@@ -1,12 +1,13 @@
 package typings.babylonjs.mathMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Maths/math", "Orientation")
 @js.native
-object Orientation extends js.Object {
+object Orientation extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.babylonjs.mathPathMod.Orientation with Double] = js.native

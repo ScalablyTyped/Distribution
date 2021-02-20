@@ -1,11 +1,12 @@
 package typings.jsoneditoronline
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSONEditorActionParams extends js.Object {
+trait JSONEditorActionParams extends StObject {
   
   @JSName("clone")
   var clone_FJSONEditorActionParams: js.UndefOr[JSONEditorNode] = js.native
@@ -41,90 +42,78 @@ object JSONEditorActionParams {
   }
   
   @scala.inline
-  implicit class JSONEditorActionParamsOps[Self <: JSONEditorActionParams] (val x: Self) extends AnyVal {
+  implicit class JSONEditorActionParamsMutableBuilder[Self <: JSONEditorActionParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone_(value: JSONEditorNode): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: JSONEditorNode): Self = this.set("clone", value.asInstanceOf[js.Any])
+    def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
     
     @scala.inline
-    def deleteClone: Self = this.set("clone", js.undefined)
+    def setEndParent(value: JSONEditorNode): Self = StObject.set(x, "endParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndIndex(value: Double): Self = this.set("endIndex", value.asInstanceOf[js.Any])
+    def setEndParentUndefined: Self = StObject.set(x, "endParent", js.undefined)
     
     @scala.inline
-    def deleteEndIndex: Self = this.set("endIndex", js.undefined)
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndParent(value: JSONEditorNode): Self = this.set("endParent", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteEndParent: Self = this.set("endParent", js.undefined)
+    def setNewType(value: JSONEditorNodeType): Self = StObject.set(x, "newType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setNewTypeUndefined: Self = StObject.set(x, "newType", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewType(value: JSONEditorNodeType): Self = this.set("newType", value.asInstanceOf[js.Any])
+    def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
     
     @scala.inline
-    def deleteNewType: Self = this.set("newType", js.undefined)
+    def setNode(value: JSONEditorNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewValue(value: String): Self = this.set("newValue", value.asInstanceOf[js.Any])
+    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
     @scala.inline
-    def deleteNewValue: Self = this.set("newValue", js.undefined)
+    def setOldType(value: JSONEditorNodeType): Self = StObject.set(x, "oldType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode(value: JSONEditorNode): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setOldTypeUndefined: Self = StObject.set(x, "oldType", js.undefined)
     
     @scala.inline
-    def deleteNode: Self = this.set("node", js.undefined)
+    def setOldValue(value: String): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldType(value: JSONEditorNodeType): Self = this.set("oldType", value.asInstanceOf[js.Any])
+    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
     
     @scala.inline
-    def deleteOldType: Self = this.set("oldType", js.undefined)
+    def setParent(value: JSONEditorNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldValue(value: String): Self = this.set("oldValue", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteOldValue: Self = this.set("oldValue", js.undefined)
+    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: JSONEditorNode): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setStartParent(value: JSONEditorNode): Self = StObject.set(x, "startParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
-    
-    @scala.inline
-    def setStartParent(value: JSONEditorNode): Self = this.set("startParent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartParent: Self = this.set("startParent", js.undefined)
+    def setStartParentUndefined: Self = StObject.set(x, "startParent", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.sigmajs.SigmaJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GraphData extends js.Object {
+trait GraphData extends StObject {
   
   var edges: js.Array[Edge] = js.native
   
@@ -20,30 +21,18 @@ object GraphData {
   }
   
   @scala.inline
-  implicit class GraphDataOps[Self <: GraphData] (val x: Self) extends AnyVal {
+  implicit class GraphDataMutableBuilder[Self <: GraphData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdges(value: js.Array[Edge]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEdgesVarargs(value: Edge*): Self = StObject.set(x, "edges", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgesVarargs(value: Edge*): Self = this.set("edges", js.Array(value :_*))
-    
-    @scala.inline
-    def setEdges(value: js.Array[Edge]): Self = this.set("edges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNodesVarargs(value: Node*): Self = this.set("nodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setNodes(value: js.Array[Node]): Self = this.set("nodes", value.asInstanceOf[js.Any])
+    def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
   }
 }

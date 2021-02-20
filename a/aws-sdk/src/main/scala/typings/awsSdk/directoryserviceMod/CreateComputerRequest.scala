@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateComputerRequest extends js.Object {
+trait CreateComputerRequest extends StObject {
   
   /**
     * An array of Attribute objects that contain any LDAP attributes to apply to the computer account.
@@ -41,42 +42,30 @@ object CreateComputerRequest {
   }
   
   @scala.inline
-  implicit class CreateComputerRequestOps[Self <: CreateComputerRequest] (val x: Self) extends AnyVal {
+  implicit class CreateComputerRequestMutableBuilder[Self <: CreateComputerRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputerAttributes(value: Attributes): Self = StObject.set(x, "ComputerAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputerAttributesUndefined: Self = StObject.set(x, "ComputerAttributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComputerAttributesVarargs(value: Attribute*): Self = StObject.set(x, "ComputerAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setComputerName(value: ComputerName): Self = this.set("ComputerName", value.asInstanceOf[js.Any])
+    def setComputerName(value: ComputerName): Self = StObject.set(x, "ComputerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: ComputerPassword): Self = this.set("Password", value.asInstanceOf[js.Any])
+    def setOrganizationalUnitDistinguishedName(value: OrganizationalUnitDN): Self = StObject.set(x, "OrganizationalUnitDistinguishedName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputerAttributesVarargs(value: Attribute*): Self = this.set("ComputerAttributes", js.Array(value :_*))
+    def setOrganizationalUnitDistinguishedNameUndefined: Self = StObject.set(x, "OrganizationalUnitDistinguishedName", js.undefined)
     
     @scala.inline
-    def setComputerAttributes(value: Attributes): Self = this.set("ComputerAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComputerAttributes: Self = this.set("ComputerAttributes", js.undefined)
-    
-    @scala.inline
-    def setOrganizationalUnitDistinguishedName(value: OrganizationalUnitDN): Self = this.set("OrganizationalUnitDistinguishedName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrganizationalUnitDistinguishedName: Self = this.set("OrganizationalUnitDistinguishedName", js.undefined)
+    def setPassword(value: ComputerPassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
   }
 }

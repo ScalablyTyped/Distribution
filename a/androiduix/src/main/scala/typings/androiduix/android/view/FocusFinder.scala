@@ -1,12 +1,13 @@
 package typings.androiduix.android.view
 
 import typings.androiduix.android.graphics.Rect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FocusFinder extends js.Object {
+trait FocusFinder extends StObject {
   
   /* private */ def __findNextFocus(root: js.Any, focused: js.Any, focusedRect: js.Any, direction: js.Any, focusables: js.Any): js.Any = js.native
   
@@ -84,84 +85,72 @@ object FocusFinder {
   }
   
   @scala.inline
-  implicit class FocusFinderOps[Self <: FocusFinder] (val x: Self) extends AnyVal {
+  implicit class FocusFinderMutableBuilder[Self <: FocusFinder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeamBeats(value: (Double, Rect, Rect, Rect) => Boolean): Self = StObject.set(x, "beamBeats", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeamsOverlap(value: (Double, Rect, Rect) => Boolean): Self = StObject.set(x, "beamsOverlap", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFindNearestTouchable(value: (ViewGroup, Double, Double, Double, js.Array[Double]) => View): Self = StObject.set(x, "findNearestTouchable", js.Any.fromFunction5(value))
     
     @scala.inline
-    def set__findNextFocus(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("__findNextFocus", js.Any.fromFunction5(value))
+    def setFindNextFocus(value: (ViewGroup, View, Double) => View): Self = StObject.set(x, "findNextFocus", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set_findNextFocus(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("_findNextFocus", js.Any.fromFunction4(value))
+    def setFindNextFocusFromRect(value: (ViewGroup, Rect, Double) => View): Self = StObject.set(x, "findNextFocusFromRect", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setBeamBeats(value: (Double, Rect, Rect, Rect) => Boolean): Self = this.set("beamBeats", js.Any.fromFunction4(value))
+    def setFindNextFocusInAbsoluteDirection(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findNextFocusInAbsoluteDirection", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setBeamsOverlap(value: (Double, Rect, Rect) => Boolean): Self = this.set("beamsOverlap", js.Any.fromFunction3(value))
+    def setFindNextFocusInRelativeDirection(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findNextFocusInRelativeDirection", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setFindNearestTouchable(value: (ViewGroup, Double, Double, Double, js.Array[Double]) => View): Self = this.set("findNearestTouchable", js.Any.fromFunction5(value))
+    def setFindNextUserSpecifiedFocus(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findNextUserSpecifiedFocus", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setFindNextFocus(value: (ViewGroup, View, Double) => View): Self = this.set("findNextFocus", js.Any.fromFunction3(value))
+    def setGetWeightedDistanceFor(value: (Double, Double) => Double): Self = StObject.set(x, "getWeightedDistanceFor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFindNextFocusFromRect(value: (ViewGroup, Rect, Double) => View): Self = this.set("findNextFocusFromRect", js.Any.fromFunction3(value))
+    def setIsBetterCandidate(value: (Double, Rect, Rect, Rect) => Boolean): Self = StObject.set(x, "isBetterCandidate", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setFindNextFocusInAbsoluteDirection(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("findNextFocusInAbsoluteDirection", js.Any.fromFunction5(value))
+    def setIsCandidate(value: (Rect, Rect, Double) => Boolean): Self = StObject.set(x, "isCandidate", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setFindNextFocusInRelativeDirection(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("findNextFocusInRelativeDirection", js.Any.fromFunction5(value))
+    def setIsToDirectionOf(value: (Double, Rect, Rect) => Boolean): Self = StObject.set(x, "isToDirectionOf", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setFindNextUserSpecifiedFocus(value: (js.Any, js.Any, js.Any) => js.Any): Self = this.set("findNextUserSpecifiedFocus", js.Any.fromFunction3(value))
+    def setIsTouchCandidate(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "isTouchCandidate", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetWeightedDistanceFor(value: (Double, Double) => Double): Self = this.set("getWeightedDistanceFor", js.Any.fromFunction2(value))
+    def setMBestCandidateRect(value: Rect): Self = StObject.set(x, "mBestCandidateRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBetterCandidate(value: (Double, Rect, Rect, Rect) => Boolean): Self = this.set("isBetterCandidate", js.Any.fromFunction4(value))
+    def setMFocusedRect(value: Rect): Self = StObject.set(x, "mFocusedRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCandidate(value: (Rect, Rect, Double) => Boolean): Self = this.set("isCandidate", js.Any.fromFunction3(value))
+    def setMOtherRect(value: Rect): Self = StObject.set(x, "mOtherRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsToDirectionOf(value: (Double, Rect, Rect) => Boolean): Self = this.set("isToDirectionOf", js.Any.fromFunction3(value))
+    def setMSequentialFocusComparator(value: js.Any): Self = StObject.set(x, "mSequentialFocusComparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTouchCandidate(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("isTouchCandidate", js.Any.fromFunction4(value))
+    def setMTempList(value: js.Any): Self = StObject.set(x, "mTempList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMBestCandidateRect(value: Rect): Self = this.set("mBestCandidateRect", value.asInstanceOf[js.Any])
+    def setSetFocusBottomRight(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "setFocusBottomRight", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMFocusedRect(value: Rect): Self = this.set("mFocusedRect", value.asInstanceOf[js.Any])
+    def setSetFocusTopLeft(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "setFocusTopLeft", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMOtherRect(value: Rect): Self = this.set("mOtherRect", value.asInstanceOf[js.Any])
+    def set__findNextFocus(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "__findNextFocus", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setMSequentialFocusComparator(value: js.Any): Self = this.set("mSequentialFocusComparator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMTempList(value: js.Any): Self = this.set("mTempList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetFocusBottomRight(value: (js.Any, js.Any) => js.Any): Self = this.set("setFocusBottomRight", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetFocusTopLeft(value: (js.Any, js.Any) => js.Any): Self = this.set("setFocusTopLeft", js.Any.fromFunction2(value))
+    def set_findNextFocus(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "_findNextFocus", js.Any.fromFunction4(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,147 +65,135 @@ object MobileApp {
   }
   
   @scala.inline
-  implicit class MobileAppOps[Self <: MobileApp] (val x: Self) extends AnyVal {
+  implicit class MobileAppMutableBuilder[Self <: MobileApp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignments(value: NullableOption[js.Array[MobileAppAssignment]]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignmentsNull: Self = StObject.set(x, "assignments", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
     
     @scala.inline
-    def setAssignmentsVarargs(value: MobileAppAssignment*): Self = this.set("assignments", js.Array(value :_*))
+    def setAssignmentsVarargs(value: MobileAppAssignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
     
     @scala.inline
-    def setAssignments(value: NullableOption[js.Array[MobileAppAssignment]]): Self = this.set("assignments", value.asInstanceOf[js.Any])
+    def setCategories(value: NullableOption[js.Array[MobileAppCategory]]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssignments: Self = this.set("assignments", js.undefined)
+    def setCategoriesNull: Self = StObject.set(x, "categories", null)
     
     @scala.inline
-    def setAssignmentsNull: Self = this.set("assignments", null)
+    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
     @scala.inline
-    def setCategoriesVarargs(value: MobileAppCategory*): Self = this.set("categories", js.Array(value :_*))
+    def setCategoriesVarargs(value: MobileAppCategory*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
     @scala.inline
-    def setCategories(value: NullableOption[js.Array[MobileAppCategory]]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCategories: Self = this.set("categories", js.undefined)
+    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
     @scala.inline
-    def setCategoriesNull: Self = this.set("categories", null)
+    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDateTime(value: String): Self = this.set("createdDateTime", value.asInstanceOf[js.Any])
+    def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     @scala.inline
-    def deleteCreatedDateTime: Self = this.set("createdDateTime", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setDescription(value: NullableOption[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDeveloper(value: NullableOption[String]): Self = StObject.set(x, "developer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDeveloperNull: Self = StObject.set(x, "developer", null)
     
     @scala.inline
-    def setDescriptionNull: Self = this.set("description", null)
+    def setDeveloperUndefined: Self = StObject.set(x, "developer", js.undefined)
     
     @scala.inline
-    def setDeveloper(value: NullableOption[String]): Self = this.set("developer", value.asInstanceOf[js.Any])
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeveloper: Self = this.set("developer", js.undefined)
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def setDeveloperNull: Self = this.set("developer", null)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setInformationUrl(value: NullableOption[String]): Self = StObject.set(x, "informationUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setInformationUrlNull: Self = StObject.set(x, "informationUrl", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setInformationUrlUndefined: Self = StObject.set(x, "informationUrl", js.undefined)
     
     @scala.inline
-    def setInformationUrl(value: NullableOption[String]): Self = this.set("informationUrl", value.asInstanceOf[js.Any])
+    def setIsFeatured(value: Boolean): Self = StObject.set(x, "isFeatured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInformationUrl: Self = this.set("informationUrl", js.undefined)
+    def setIsFeaturedUndefined: Self = StObject.set(x, "isFeatured", js.undefined)
     
     @scala.inline
-    def setInformationUrlNull: Self = this.set("informationUrl", null)
+    def setLargeIcon(value: NullableOption[MimeContent]): Self = StObject.set(x, "largeIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFeatured(value: Boolean): Self = this.set("isFeatured", value.asInstanceOf[js.Any])
+    def setLargeIconNull: Self = StObject.set(x, "largeIcon", null)
     
     @scala.inline
-    def deleteIsFeatured: Self = this.set("isFeatured", js.undefined)
+    def setLargeIconUndefined: Self = StObject.set(x, "largeIcon", js.undefined)
     
     @scala.inline
-    def setLargeIcon(value: NullableOption[MimeContent]): Self = this.set("largeIcon", value.asInstanceOf[js.Any])
+    def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLargeIcon: Self = this.set("largeIcon", js.undefined)
+    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
     @scala.inline
-    def setLargeIconNull: Self = this.set("largeIcon", null)
+    def setNotes(value: NullableOption[String]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDateTime(value: String): Self = this.set("lastModifiedDateTime", value.asInstanceOf[js.Any])
+    def setNotesNull: Self = StObject.set(x, "notes", null)
     
     @scala.inline
-    def deleteLastModifiedDateTime: Self = this.set("lastModifiedDateTime", js.undefined)
+    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
     @scala.inline
-    def setNotes(value: NullableOption[String]): Self = this.set("notes", value.asInstanceOf[js.Any])
+    def setOwner(value: NullableOption[String]): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotes: Self = this.set("notes", js.undefined)
+    def setOwnerNull: Self = StObject.set(x, "owner", null)
     
     @scala.inline
-    def setNotesNull: Self = this.set("notes", null)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def setOwner(value: NullableOption[String]): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setPrivacyInformationUrl(value: NullableOption[String]): Self = StObject.set(x, "privacyInformationUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setPrivacyInformationUrlNull: Self = StObject.set(x, "privacyInformationUrl", null)
     
     @scala.inline
-    def setOwnerNull: Self = this.set("owner", null)
+    def setPrivacyInformationUrlUndefined: Self = StObject.set(x, "privacyInformationUrl", js.undefined)
     
     @scala.inline
-    def setPrivacyInformationUrl(value: NullableOption[String]): Self = this.set("privacyInformationUrl", value.asInstanceOf[js.Any])
+    def setPublisher(value: NullableOption[String]): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrivacyInformationUrl: Self = this.set("privacyInformationUrl", js.undefined)
+    def setPublisherNull: Self = StObject.set(x, "publisher", null)
     
     @scala.inline
-    def setPrivacyInformationUrlNull: Self = this.set("privacyInformationUrl", null)
+    def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
     
     @scala.inline
-    def setPublisher(value: NullableOption[String]): Self = this.set("publisher", value.asInstanceOf[js.Any])
+    def setPublishingState(value: MobileAppPublishingState): Self = StObject.set(x, "publishingState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePublisher: Self = this.set("publisher", js.undefined)
-    
-    @scala.inline
-    def setPublisherNull: Self = this.set("publisher", null)
-    
-    @scala.inline
-    def setPublishingState(value: MobileAppPublishingState): Self = this.set("publishingState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublishingState: Self = this.set("publishingState", js.undefined)
+    def setPublishingStateUndefined: Self = StObject.set(x, "publishingState", js.undefined)
   }
 }

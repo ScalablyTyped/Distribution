@@ -1,11 +1,12 @@
 package typings.googleapis.v2Mod.androidpublisherV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaAppDetails extends js.Object {
+trait SchemaAppDetails extends StObject {
   
   /**
     * The user-visible support email for this app.
@@ -36,42 +37,30 @@ object SchemaAppDetails {
   }
   
   @scala.inline
-  implicit class SchemaAppDetailsOps[Self <: SchemaAppDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaAppDetailsMutableBuilder[Self <: SchemaAppDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContactEmail(value: String): Self = StObject.set(x, "contactEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactEmailUndefined: Self = StObject.set(x, "contactEmail", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContactPhone(value: String): Self = StObject.set(x, "contactPhone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactEmail(value: String): Self = this.set("contactEmail", value.asInstanceOf[js.Any])
+    def setContactPhoneUndefined: Self = StObject.set(x, "contactPhone", js.undefined)
     
     @scala.inline
-    def deleteContactEmail: Self = this.set("contactEmail", js.undefined)
+    def setContactWebsite(value: String): Self = StObject.set(x, "contactWebsite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactPhone(value: String): Self = this.set("contactPhone", value.asInstanceOf[js.Any])
+    def setContactWebsiteUndefined: Self = StObject.set(x, "contactWebsite", js.undefined)
     
     @scala.inline
-    def deleteContactPhone: Self = this.set("contactPhone", js.undefined)
+    def setDefaultLanguage(value: String): Self = StObject.set(x, "defaultLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactWebsite(value: String): Self = this.set("contactWebsite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContactWebsite: Self = this.set("contactWebsite", js.undefined)
-    
-    @scala.inline
-    def setDefaultLanguage(value: String): Self = this.set("defaultLanguage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultLanguage: Self = this.set("defaultLanguage", js.undefined)
+    def setDefaultLanguageUndefined: Self = StObject.set(x, "defaultLanguage", js.undefined)
   }
 }

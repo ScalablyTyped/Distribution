@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RunJobFlowOutput extends js.Object {
+trait RunJobFlowOutput extends StObject {
   
   /**
     * The Amazon Resource Name of the cluster.
@@ -26,30 +27,18 @@ object RunJobFlowOutput {
   }
   
   @scala.inline
-  implicit class RunJobFlowOutputOps[Self <: RunJobFlowOutput] (val x: Self) extends AnyVal {
+  implicit class RunJobFlowOutputMutableBuilder[Self <: RunJobFlowOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterArn(value: ArnType): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterArnUndefined: Self = StObject.set(x, "ClusterArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobFlowId(value: XmlStringMaxLen256): Self = StObject.set(x, "JobFlowId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterArn(value: ArnType): Self = this.set("ClusterArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClusterArn: Self = this.set("ClusterArn", js.undefined)
-    
-    @scala.inline
-    def setJobFlowId(value: XmlStringMaxLen256): Self = this.set("JobFlowId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobFlowId: Self = this.set("JobFlowId", js.undefined)
+    def setJobFlowIdUndefined: Self = StObject.set(x, "JobFlowId", js.undefined)
   }
 }

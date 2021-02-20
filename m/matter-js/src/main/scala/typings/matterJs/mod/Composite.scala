@@ -1,12 +1,13 @@
 package typings.matterJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Composite")
 @js.native
-class Composite () extends js.Object {
+class Composite () extends StObject {
   
   /**
     * An array of `Body` that are _direct_ children of this composite.
@@ -88,9 +89,7 @@ class Composite () extends js.Object {
   var `type`: String = js.native
 }
 /* static members */
-@JSImport("matter-js", "Composite")
-@js.native
-object Composite extends js.Object {
+object Composite {
   
   /**
     * Generic add function. Adds one or many body(s), constraint(s) or a composite(s) to the given composite.
@@ -100,8 +99,14 @@ object Composite extends js.Object {
     * @param {} object
     * @return {composite} The original composite with the objects added
     */
+  @JSImport("matter-js", "Composite.add")
+  @js.native
   def add(composite: Composite, `object`: Body): Composite = js.native
+  @JSImport("matter-js", "Composite.add")
+  @js.native
   def add(composite: Composite, `object`: Composite): Composite = js.native
+  @JSImport("matter-js", "Composite.add")
+  @js.native
   def add(composite: Composite, `object`: Constraint): Composite = js.native
   
   /**
@@ -110,6 +115,8 @@ object Composite extends js.Object {
     * @param {composite} composite
     * @return {body[]} All the bodies
     */
+  @JSImport("matter-js", "Composite.allBodies")
+  @js.native
   def allBodies(composite: Composite): js.Array[Body] = js.native
   
   /**
@@ -118,6 +125,8 @@ object Composite extends js.Object {
     * @param {composite} composite
     * @return {composite[]} All the composites
     */
+  @JSImport("matter-js", "Composite.allComposites")
+  @js.native
   def allComposites(composite: Composite): js.Array[Composite] = js.native
   
   /**
@@ -126,6 +135,8 @@ object Composite extends js.Object {
     * @param {composite} composite
     * @return {constraint[]} All the constraints
     */
+  @JSImport("matter-js", "Composite.allConstraints")
+  @js.native
   def allConstraints(composite: Composite): js.Array[Composite] = js.native
   
   /**
@@ -136,7 +147,11 @@ object Composite extends js.Object {
     * @param {boolean} keepStatic
     * @param {boolean} [deep=false]
     */
+  @JSImport("matter-js", "Composite.clear")
+  @js.native
   def clear(composite: Composite, keepStatic: Boolean): Unit = js.native
+  @JSImport("matter-js", "Composite.clear")
+  @js.native
   def clear(composite: Composite, keepStatic: Boolean, deep: Boolean): Unit = js.native
   
   /**
@@ -146,7 +161,11 @@ object Composite extends js.Object {
     * @param {} [options]
     * @return {composite} A new composite
     */
+  @JSImport("matter-js", "Composite.create")
+  @js.native
   def create(): Composite = js.native
+  @JSImport("matter-js", "Composite.create")
+  @js.native
   def create(options: ICompositeDefinition): Composite = js.native
   
   /**
@@ -157,6 +176,8 @@ object Composite extends js.Object {
     * @param {string} type
     * @return {object} The requested object, if found
     */
+  @JSImport("matter-js", "Composite.get")
+  @js.native
   def get(composite: Composite, id: Double, `type`: String): Body | Composite | Constraint = js.native
   
   /**
@@ -167,6 +188,8 @@ object Composite extends js.Object {
     * @param {compositeB} compositeB
     * @return {composite} Returns compositeA
     */
+  @JSImport("matter-js", "Composite.move")
+  @js.native
   def move(compositeA: Composite, objects: js.Array[Body | Composite | Constraint], compositeB: Composite): Composite = js.native
   
   /**
@@ -175,6 +198,8 @@ object Composite extends js.Object {
     * @param {composite} composite
     * @return {composite} Returns composite
     */
+  @JSImport("matter-js", "Composite.rebase")
+  @js.native
   def rebase(composite: Composite): Composite = js.native
   
   /**
@@ -187,11 +212,23 @@ object Composite extends js.Object {
     * @param {boolean} [deep=false]
     * @return {composite} The original composite with the objects removed
     */
+  @JSImport("matter-js", "Composite.remove")
+  @js.native
   def remove(composite: Composite, `object`: Body): Composite = js.native
+  @JSImport("matter-js", "Composite.remove")
+  @js.native
   def remove(composite: Composite, `object`: Body, deep: Boolean): Composite = js.native
+  @JSImport("matter-js", "Composite.remove")
+  @js.native
   def remove(composite: Composite, `object`: Composite): Composite = js.native
+  @JSImport("matter-js", "Composite.remove")
+  @js.native
   def remove(composite: Composite, `object`: Composite, deep: Boolean): Composite = js.native
+  @JSImport("matter-js", "Composite.remove")
+  @js.native
   def remove(composite: Composite, `object`: Constraint): Composite = js.native
+  @JSImport("matter-js", "Composite.remove")
+  @js.native
   def remove(composite: Composite, `object`: Constraint, deep: Boolean): Composite = js.native
   
   /**
@@ -202,7 +239,11 @@ object Composite extends js.Object {
     * @param {vector} point
     * @param {bool} [recursive=true]
     */
+  @JSImport("matter-js", "Composite.rotate")
+  @js.native
   def rotate(composite: Composite, rotation: Double, point: Vector): Unit = js.native
+  @JSImport("matter-js", "Composite.rotate")
+  @js.native
   def rotate(composite: Composite, rotation: Double, point: Vector, recursive: Boolean): Unit = js.native
   
   /**
@@ -214,7 +255,11 @@ object Composite extends js.Object {
     * @param {vector} point
     * @param {bool} [recursive=true]
     */
+  @JSImport("matter-js", "Composite.scale")
+  @js.native
   def scale(composite: Composite, scaleX: Double, scaleY: Double, point: Vector): Unit = js.native
+  @JSImport("matter-js", "Composite.scale")
+  @js.native
   def scale(composite: Composite, scaleX: Double, scaleY: Double, point: Vector, recursive: Boolean): Unit = js.native
   
   /**
@@ -227,14 +272,22 @@ object Composite extends js.Object {
     * @param {boolean} [updateParents=false]
     * @param {boolean} [updateChildren=false]
     */
+  @JSImport("matter-js", "Composite.setModified")
+  @js.native
   def setModified(composite: Composite, isModified: Boolean): Unit = js.native
+  @JSImport("matter-js", "Composite.setModified")
+  @js.native
   def setModified(
     composite: Composite,
     isModified: Boolean,
     updateParents: js.UndefOr[scala.Nothing],
     updateChildren: Boolean
   ): Unit = js.native
+  @JSImport("matter-js", "Composite.setModified")
+  @js.native
   def setModified(composite: Composite, isModified: Boolean, updateParents: Boolean): Unit = js.native
+  @JSImport("matter-js", "Composite.setModified")
+  @js.native
   def setModified(composite: Composite, isModified: Boolean, updateParents: Boolean, updateChildren: Boolean): Unit = js.native
   
   /**
@@ -245,6 +298,10 @@ object Composite extends js.Object {
     * @param {vector} translation
     * @param {bool} [recursive=true]
     */
+  @JSImport("matter-js", "Composite.translate")
+  @js.native
   def translate(composite: Composite, translation: Vector): Unit = js.native
+  @JSImport("matter-js", "Composite.translate")
+  @js.native
   def translate(composite: Composite, translation: Vector, recursive: Boolean): Unit = js.native
 }

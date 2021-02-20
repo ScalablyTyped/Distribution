@@ -2,13 +2,14 @@ package typings.babylonjs.BABYLON
 
 import typings.babylonjs.anon.Ind
 import typings.babylonjs.anon.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @hidden */
 @js.native
-trait FacetDataStorage extends js.Object {
+trait FacetDataStorage extends StObject {
   
   var bbSize: Vector3 = js.native
   
@@ -74,87 +75,75 @@ object FacetDataStorage {
   }
   
   @scala.inline
-  implicit class FacetDataStorageOps[Self <: FacetDataStorage] (val x: Self) extends AnyVal {
+  implicit class FacetDataStorageMutableBuilder[Self <: FacetDataStorage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBbSize(value: Vector3): Self = StObject.set(x, "bbSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepthSortedFacets(value: js.Array[Ind]): Self = StObject.set(x, "depthSortedFacets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDepthSortedFacetsVarargs(value: Ind*): Self = StObject.set(x, "depthSortedFacets", js.Array(value :_*))
     
     @scala.inline
-    def setBbSize(value: Vector3): Self = this.set("bbSize", value.asInstanceOf[js.Any])
+    def setDepthSortedIndices(value: IndicesArray): Self = StObject.set(x, "depthSortedIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepthSortedFacetsVarargs(value: Ind*): Self = this.set("depthSortedFacets", js.Array(value :_*))
+    def setDepthSortedIndicesVarargs(value: Double*): Self = StObject.set(x, "depthSortedIndices", js.Array(value :_*))
     
     @scala.inline
-    def setDepthSortedFacets(value: js.Array[Ind]): Self = this.set("depthSortedFacets", value.asInstanceOf[js.Any])
+    def setFacetDataEnabled(value: Boolean): Self = StObject.set(x, "facetDataEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepthSortedIndicesVarargs(value: Double*): Self = this.set("depthSortedIndices", js.Array(value :_*))
+    def setFacetDepthSort(value: Boolean): Self = StObject.set(x, "facetDepthSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepthSortedIndices(value: IndicesArray): Self = this.set("depthSortedIndices", value.asInstanceOf[js.Any])
+    def setFacetDepthSortEnabled(value: Boolean): Self = StObject.set(x, "facetDepthSortEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetDataEnabled(value: Boolean): Self = this.set("facetDataEnabled", value.asInstanceOf[js.Any])
+    def setFacetDepthSortFrom(value: Vector3): Self = StObject.set(x, "facetDepthSortFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetDepthSort(value: Boolean): Self = this.set("facetDepthSort", value.asInstanceOf[js.Any])
+    def setFacetDepthSortFunction(value: (Ind, Ind) => Double): Self = StObject.set(x, "facetDepthSortFunction", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFacetDepthSortEnabled(value: Boolean): Self = this.set("facetDepthSortEnabled", value.asInstanceOf[js.Any])
+    def setFacetDepthSortOrigin(value: Vector3): Self = StObject.set(x, "facetDepthSortOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetDepthSortFrom(value: Vector3): Self = this.set("facetDepthSortFrom", value.asInstanceOf[js.Any])
+    def setFacetNb(value: Double): Self = StObject.set(x, "facetNb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetDepthSortFunction(value: (Ind, Ind) => Double): Self = this.set("facetDepthSortFunction", js.Any.fromFunction2(value))
+    def setFacetNormals(value: js.Array[Vector3]): Self = StObject.set(x, "facetNormals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetDepthSortOrigin(value: Vector3): Self = this.set("facetDepthSortOrigin", value.asInstanceOf[js.Any])
+    def setFacetNormalsVarargs(value: Vector3*): Self = StObject.set(x, "facetNormals", js.Array(value :_*))
     
     @scala.inline
-    def setFacetNb(value: Double): Self = this.set("facetNb", value.asInstanceOf[js.Any])
+    def setFacetParameters(value: js.Any): Self = StObject.set(x, "facetParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetNormalsVarargs(value: Vector3*): Self = this.set("facetNormals", js.Array(value :_*))
+    def setFacetPartitioning(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "facetPartitioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetNormals(value: js.Array[Vector3]): Self = this.set("facetNormals", value.asInstanceOf[js.Any])
+    def setFacetPartitioningVarargs(value: js.Array[Double]*): Self = StObject.set(x, "facetPartitioning", js.Array(value :_*))
     
     @scala.inline
-    def setFacetParameters(value: js.Any): Self = this.set("facetParameters", value.asInstanceOf[js.Any])
+    def setFacetPositions(value: js.Array[Vector3]): Self = StObject.set(x, "facetPositions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetPartitioningVarargs(value: js.Array[Double]*): Self = this.set("facetPartitioning", js.Array(value :_*))
+    def setFacetPositionsVarargs(value: Vector3*): Self = StObject.set(x, "facetPositions", js.Array(value :_*))
     
     @scala.inline
-    def setFacetPartitioning(value: js.Array[js.Array[Double]]): Self = this.set("facetPartitioning", value.asInstanceOf[js.Any])
+    def setInvertedMatrix(value: Matrix): Self = StObject.set(x, "invertedMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetPositionsVarargs(value: Vector3*): Self = this.set("facetPositions", js.Array(value :_*))
+    def setPartitioningBBoxRatio(value: Double): Self = StObject.set(x, "partitioningBBoxRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetPositions(value: js.Array[Vector3]): Self = this.set("facetPositions", value.asInstanceOf[js.Any])
+    def setPartitioningSubdivisions(value: Double): Self = StObject.set(x, "partitioningSubdivisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvertedMatrix(value: Matrix): Self = this.set("invertedMatrix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPartitioningBBoxRatio(value: Double): Self = this.set("partitioningBBoxRatio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPartitioningSubdivisions(value: Double): Self = this.set("partitioningSubdivisions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubDiv(value: X): Self = this.set("subDiv", value.asInstanceOf[js.Any])
+    def setSubDiv(value: X): Self = StObject.set(x, "subDiv", value.asInstanceOf[js.Any])
   }
 }

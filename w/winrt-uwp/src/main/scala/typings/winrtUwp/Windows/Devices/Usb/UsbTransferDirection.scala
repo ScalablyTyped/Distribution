@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Usb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UsbTransferDirection extends js.Object
+sealed trait UsbTransferDirection extends StObject
 /** Defines constants that indicate the direction of USB transfer: IN or OUT transfers. */
 @JSGlobal("Windows.Devices.Usb.UsbTransferDirection")
 @js.native
-object UsbTransferDirection extends js.Object {
+object UsbTransferDirection extends StObject {
   
   /** Indicates an IN transfer from the device to the host. */
   @js.native

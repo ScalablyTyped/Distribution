@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceCrowdingConfig extends js.Object {
+trait SourceCrowdingConfig extends StObject {
   
   /** Maximum number of results allowed from a source. No limits will be set on results if this value is less than or equal to 0. */
   var numResults: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object SourceCrowdingConfig {
   }
   
   @scala.inline
-  implicit class SourceCrowdingConfigOps[Self <: SourceCrowdingConfig] (val x: Self) extends AnyVal {
+  implicit class SourceCrowdingConfigMutableBuilder[Self <: SourceCrowdingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNumResults(value: Double): Self = StObject.set(x, "numResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNumResultsUndefined: Self = StObject.set(x, "numResults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumSuggestions(value: Double): Self = StObject.set(x, "numSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumResults(value: Double): Self = this.set("numResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumResults: Self = this.set("numResults", js.undefined)
-    
-    @scala.inline
-    def setNumSuggestions(value: Double): Self = this.set("numSuggestions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumSuggestions: Self = this.set("numSuggestions", js.undefined)
+    def setNumSuggestionsUndefined: Self = StObject.set(x, "numSuggestions", js.undefined)
   }
 }

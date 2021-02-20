@@ -17,15 +17,18 @@ import typings.geolib.geolibStrings.W
 import typings.geolib.geolibStrings.WNW
 import typings.geolib.geolibStrings.WSW
 import typings.geolib.typesMod.GeolibInputCoordinates
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("geolib/es/getCompassDirection", JSImport.Namespace)
-@js.native
-object getCompassDirectionMod extends js.Object {
+object getCompassDirectionMod {
   
+  @JSImport("geolib/es/getCompassDirection", JSImport.Default)
+  @js.native
   def default(origin: GeolibInputCoordinates, dest: GeolibInputCoordinates): S | W | NNE | NE | ENE | E | ESE | SE | SSE | SSW | SW | WSW | WNW | NW | NNW | N = js.native
+  @JSImport("geolib/es/getCompassDirection", JSImport.Default)
+  @js.native
   def default(origin: GeolibInputCoordinates, dest: GeolibInputCoordinates, bearingFn: BearingFunction): S | W | NNE | NE | ENE | E | ESE | SE | SSE | SSW | SW | WSW | WNW | NW | NNW | N = js.native
   
   type BearingFunction = js.Function2[/* origin */ GeolibInputCoordinates, /* dest */ GeolibInputCoordinates, Double]

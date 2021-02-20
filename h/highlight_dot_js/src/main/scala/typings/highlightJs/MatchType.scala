@@ -1,5 +1,6 @@
 package typings.highlightJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.highlightJs.highlightJsStrings.end
   - typings.highlightJs.highlightJsStrings.illegal
 */
-trait MatchType extends js.Object
+trait MatchType extends StObject
 object MatchType {
   
   @scala.inline

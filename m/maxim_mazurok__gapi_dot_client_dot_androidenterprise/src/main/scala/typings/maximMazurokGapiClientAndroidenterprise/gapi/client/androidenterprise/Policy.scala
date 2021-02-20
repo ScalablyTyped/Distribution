@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenterprise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Policy extends js.Object {
+trait Policy extends StObject {
   
   /**
     * The auto-update policy for apps installed on the device. "choiceToTheUser" allows the device's user to configure the app update policy. "always" enables auto updates. "never"
@@ -38,51 +39,39 @@ object Policy {
   }
   
   @scala.inline
-  implicit class PolicyOps[Self <: Policy] (val x: Self) extends AnyVal {
+  implicit class PolicyMutableBuilder[Self <: Policy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoUpdatePolicy(value: String): Self = StObject.set(x, "autoUpdatePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoUpdatePolicyUndefined: Self = StObject.set(x, "autoUpdatePolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceReportPolicy(value: String): Self = StObject.set(x, "deviceReportPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoUpdatePolicy(value: String): Self = this.set("autoUpdatePolicy", value.asInstanceOf[js.Any])
+    def setDeviceReportPolicyUndefined: Self = StObject.set(x, "deviceReportPolicy", js.undefined)
     
     @scala.inline
-    def deleteAutoUpdatePolicy: Self = this.set("autoUpdatePolicy", js.undefined)
+    def setMaintenanceWindow(value: MaintenanceWindow): Self = StObject.set(x, "maintenanceWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceReportPolicy(value: String): Self = this.set("deviceReportPolicy", value.asInstanceOf[js.Any])
+    def setMaintenanceWindowUndefined: Self = StObject.set(x, "maintenanceWindow", js.undefined)
     
     @scala.inline
-    def deleteDeviceReportPolicy: Self = this.set("deviceReportPolicy", js.undefined)
+    def setProductAvailabilityPolicy(value: String): Self = StObject.set(x, "productAvailabilityPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaintenanceWindow(value: MaintenanceWindow): Self = this.set("maintenanceWindow", value.asInstanceOf[js.Any])
+    def setProductAvailabilityPolicyUndefined: Self = StObject.set(x, "productAvailabilityPolicy", js.undefined)
     
     @scala.inline
-    def deleteMaintenanceWindow: Self = this.set("maintenanceWindow", js.undefined)
+    def setProductPolicy(value: js.Array[ProductPolicy]): Self = StObject.set(x, "productPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductAvailabilityPolicy(value: String): Self = this.set("productAvailabilityPolicy", value.asInstanceOf[js.Any])
+    def setProductPolicyUndefined: Self = StObject.set(x, "productPolicy", js.undefined)
     
     @scala.inline
-    def deleteProductAvailabilityPolicy: Self = this.set("productAvailabilityPolicy", js.undefined)
-    
-    @scala.inline
-    def setProductPolicyVarargs(value: ProductPolicy*): Self = this.set("productPolicy", js.Array(value :_*))
-    
-    @scala.inline
-    def setProductPolicy(value: js.Array[ProductPolicy]): Self = this.set("productPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductPolicy: Self = this.set("productPolicy", js.undefined)
+    def setProductPolicyVarargs(value: ProductPolicy*): Self = StObject.set(x, "productPolicy", js.Array(value :_*))
   }
 }

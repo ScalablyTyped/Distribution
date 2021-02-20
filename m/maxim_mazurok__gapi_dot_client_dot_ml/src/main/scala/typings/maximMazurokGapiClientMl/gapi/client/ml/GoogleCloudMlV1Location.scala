@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudMlV1Location extends js.Object {
+trait GoogleCloudMlV1Location extends StObject {
   
   /** Capabilities available in the location. */
   var capabilities: js.UndefOr[js.Array[GoogleCloudMlV1Capability]] = js.native
@@ -21,33 +22,21 @@ object GoogleCloudMlV1Location {
   }
   
   @scala.inline
-  implicit class GoogleCloudMlV1LocationOps[Self <: GoogleCloudMlV1Location] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudMlV1LocationMutableBuilder[Self <: GoogleCloudMlV1Location] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapabilities(value: js.Array[GoogleCloudMlV1Capability]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapabilitiesVarargs(value: GoogleCloudMlV1Capability*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
     
     @scala.inline
-    def setCapabilitiesVarargs(value: GoogleCloudMlV1Capability*): Self = this.set("capabilities", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilities(value: js.Array[GoogleCloudMlV1Capability]): Self = this.set("capabilities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCapabilities: Self = this.set("capabilities", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

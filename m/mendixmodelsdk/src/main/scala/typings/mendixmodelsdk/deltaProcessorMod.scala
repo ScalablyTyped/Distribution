@@ -2,16 +2,16 @@ package typings.mendixmodelsdk
 
 import typings.mendixmodelsdk.abstractModelMod.AbstractModel
 import typings.mendixmodelsdk.deltasDeltasMod.Delta
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/sdk/internal/deltas/DeltaProcessor", JSImport.Namespace)
-@js.native
-object deltaProcessorMod extends js.Object {
+object deltaProcessorMod {
   
+  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/DeltaProcessor", "DeltaProcessor")
   @js.native
-  class DeltaProcessor protected () extends js.Object {
+  class DeltaProcessor protected () extends StObject {
     def this(model: AbstractModel) = this()
     
     var getUnit: js.Any = js.native

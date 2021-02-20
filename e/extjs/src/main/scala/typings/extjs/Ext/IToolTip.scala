@@ -1,6 +1,7 @@
 package typings.extjs.Ext
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,96 +60,84 @@ object IToolTip {
   }
   
   @scala.inline
-  implicit class IToolTipOps[Self <: IToolTip] (val x: Self) extends AnyVal {
+  implicit class IToolTipMutableBuilder[Self <: IToolTip] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: java.lang.String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorOffset(value: Double): Self = StObject.set(x, "anchorOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnchorOffsetUndefined: Self = StObject.set(x, "anchorOffset", js.undefined)
     
     @scala.inline
-    def setAnchor(value: java.lang.String): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setAnchorToTarget(value: Boolean): Self = StObject.set(x, "anchorToTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    def setAnchorToTargetUndefined: Self = StObject.set(x, "anchorToTarget", js.undefined)
     
     @scala.inline
-    def setAnchorOffset(value: Double): Self = this.set("anchorOffset", value.asInstanceOf[js.Any])
+    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
     @scala.inline
-    def deleteAnchorOffset: Self = this.set("anchorOffset", js.undefined)
+    def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorToTarget(value: Boolean): Self = this.set("anchorToTarget", value.asInstanceOf[js.Any])
+    def setAutoHideUndefined: Self = StObject.set(x, "autoHide", js.undefined)
     
     @scala.inline
-    def deleteAnchorToTarget: Self = this.set("anchorToTarget", js.undefined)
+    def setDelegate(value: java.lang.String): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoHide(value: Boolean): Self = this.set("autoHide", value.asInstanceOf[js.Any])
+    def setDelegateUndefined: Self = StObject.set(x, "delegate", js.undefined)
     
     @scala.inline
-    def deleteAutoHide: Self = this.set("autoHide", js.undefined)
+    def setDismissDelay(value: Double): Self = StObject.set(x, "dismissDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelegate(value: java.lang.String): Self = this.set("delegate", value.asInstanceOf[js.Any])
+    def setDismissDelayUndefined: Self = StObject.set(x, "dismissDelay", js.undefined)
     
     @scala.inline
-    def deleteDelegate: Self = this.set("delegate", js.undefined)
+    def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDismissDelay(value: Double): Self = this.set("dismissDelay", value.asInstanceOf[js.Any])
+    def setHideDelayUndefined: Self = StObject.set(x, "hideDelay", js.undefined)
     
     @scala.inline
-    def deleteDismissDelay: Self = this.set("dismissDelay", js.undefined)
+    def setMouseOffset(value: Array): Self = StObject.set(x, "mouseOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideDelay(value: Double): Self = this.set("hideDelay", value.asInstanceOf[js.Any])
+    def setMouseOffsetUndefined: Self = StObject.set(x, "mouseOffset", js.undefined)
     
     @scala.inline
-    def deleteHideDelay: Self = this.set("hideDelay", js.undefined)
+    def setSetTarget(value: /* t */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTarget", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMouseOffset(value: Array): Self = this.set("mouseOffset", value.asInstanceOf[js.Any])
+    def setSetTargetUndefined: Self = StObject.set(x, "setTarget", js.undefined)
     
     @scala.inline
-    def deleteMouseOffset: Self = this.set("mouseOffset", js.undefined)
+    def setShowDelay(value: Double): Self = StObject.set(x, "showDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetTarget(value: /* t */ js.UndefOr[js.Any] => Unit): Self = this.set("setTarget", js.Any.fromFunction1(value))
+    def setShowDelayUndefined: Self = StObject.set(x, "showDelay", js.undefined)
     
     @scala.inline
-    def deleteSetTarget: Self = this.set("setTarget", js.undefined)
+    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowDelay(value: Double): Self = this.set("showDelay", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deleteShowDelay: Self = this.set("showDelay", js.undefined)
+    def setTrackMouse(value: Boolean): Self = StObject.set(x, "trackMouse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: js.Any): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTrackMouseUndefined: Self = StObject.set(x, "trackMouse", js.undefined)
     
     @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTriggerElement(value: HTMLElement): Self = StObject.set(x, "triggerElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackMouse(value: Boolean): Self = this.set("trackMouse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackMouse: Self = this.set("trackMouse", js.undefined)
-    
-    @scala.inline
-    def setTriggerElement(value: HTMLElement): Self = this.set("triggerElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerElement: Self = this.set("triggerElement", js.undefined)
+    def setTriggerElementUndefined: Self = StObject.set(x, "triggerElement", js.undefined)
   }
 }

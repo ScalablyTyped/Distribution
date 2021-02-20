@@ -3,6 +3,7 @@ package typings.seen.mod
 import typings.seen.seenStrings.ambient
 import typings.seen.seenStrings.directional
 import typings.seen.seenStrings.point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.aliOss.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceBucketName extends js.Object {
+trait SourceBucketName extends StObject {
   
   var sourceBucketName: String = js.native
   
@@ -20,24 +21,12 @@ object SourceBucketName {
   }
   
   @scala.inline
-  implicit class SourceBucketNameOps[Self <: SourceBucketName] (val x: Self) extends AnyVal {
+  implicit class SourceBucketNameMutableBuilder[Self <: SourceBucketName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSourceBucketName(value: String): Self = StObject.set(x, "sourceBucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSourceBucketName(value: String): Self = this.set("sourceBucketName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceKey(value: String): Self = this.set("sourceKey", value.asInstanceOf[js.Any])
+    def setSourceKey(value: String): Self = StObject.set(x, "sourceKey", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Animation extends js.Object
+sealed trait Animation extends StObject
 /**
   * Animations that can be played on a marker. Use the
   * {@link Marker#setAnimation setAnimation} method on Marker or the
@@ -14,7 +15,7 @@ sealed trait Animation extends js.Object
   */
 @JSGlobal("google.maps.Animation")
 @js.native
-object Animation extends js.Object {
+object Animation extends StObject {
   
   /**
     * Marker bounces until animation is stopped.

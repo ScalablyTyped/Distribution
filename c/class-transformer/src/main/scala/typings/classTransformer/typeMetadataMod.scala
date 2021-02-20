@@ -2,16 +2,16 @@ package typings.classTransformer
 
 import typings.classTransformer.exposeExcludeOptionsMod.TypeHelpOptions
 import typings.classTransformer.exposeExcludeOptionsMod.TypeOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("class-transformer/metadata/TypeMetadata", JSImport.Namespace)
-@js.native
-object typeMetadataMod extends js.Object {
+object typeMetadataMod {
   
+  @JSImport("class-transformer/metadata/TypeMetadata", "TypeMetadata")
   @js.native
-  class TypeMetadata protected () extends js.Object {
+  class TypeMetadata protected () extends StObject {
     def this(
       target: js.Function,
       propertyName: String,

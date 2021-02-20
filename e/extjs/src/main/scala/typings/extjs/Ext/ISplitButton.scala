@@ -1,5 +1,6 @@
 package typings.extjs.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,36 +32,24 @@ object ISplitButton {
   }
   
   @scala.inline
-  implicit class ISplitButtonOps[Self <: ISplitButton] (val x: Self) extends AnyVal {
+  implicit class ISplitButtonMutableBuilder[Self <: ISplitButton] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrowHandler(value: js.Any): Self = StObject.set(x, "arrowHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrowHandlerUndefined: Self = StObject.set(x, "arrowHandler", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArrowTooltip(value: java.lang.String): Self = StObject.set(x, "arrowTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowHandler(value: js.Any): Self = this.set("arrowHandler", value.asInstanceOf[js.Any])
+    def setArrowTooltipUndefined: Self = StObject.set(x, "arrowTooltip", js.undefined)
     
     @scala.inline
-    def deleteArrowHandler: Self = this.set("arrowHandler", js.undefined)
+    def setSetArrowHandler(value: (/* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setArrowHandler", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setArrowTooltip(value: java.lang.String): Self = this.set("arrowTooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArrowTooltip: Self = this.set("arrowTooltip", js.undefined)
-    
-    @scala.inline
-    def setSetArrowHandler(value: (/* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = this.set("setArrowHandler", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteSetArrowHandler: Self = this.set("setArrowHandler", js.undefined)
+    def setSetArrowHandlerUndefined: Self = StObject.set(x, "setArrowHandler", js.undefined)
   }
 }

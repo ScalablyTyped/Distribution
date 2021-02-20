@@ -1,11 +1,12 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HtmlBuilder extends js.Object {
+trait HtmlBuilder extends StObject {
   
   def addAttribute(name: String, value: String): Unit = js.native
   
@@ -38,39 +39,27 @@ object HtmlBuilder {
   }
   
   @scala.inline
-  implicit class HtmlBuilderOps[Self <: HtmlBuilder] (val x: Self) extends AnyVal {
+  implicit class HtmlBuilderMutableBuilder[Self <: HtmlBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddAttribute(value: (String, String) => Unit): Self = StObject.set(x, "addAttribute", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddCommunitiesCssClass(value: String => Unit): Self = StObject.set(x, "addCommunitiesCssClass", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddCssClass(value: String => Unit): Self = StObject.set(x, "addCssClass", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddAttribute(value: (String, String) => Unit): Self = this.set("addAttribute", js.Any.fromFunction2(value))
+    def setRenderBeginTag(value: String => Unit): Self = StObject.set(x, "renderBeginTag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddCommunitiesCssClass(value: String => Unit): Self = this.set("addCommunitiesCssClass", js.Any.fromFunction1(value))
+    def setRenderEndTag(value: () => Unit): Self = StObject.set(x, "renderEndTag", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddCssClass(value: String => Unit): Self = this.set("addCssClass", js.Any.fromFunction1(value))
+    def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRenderBeginTag(value: String => Unit): Self = this.set("renderBeginTag", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRenderEndTag(value: () => Unit): Self = this.set("renderEndTag", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWrite(value: String => Unit): Self = this.set("write", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWriteEncoded(value: String => Unit): Self = this.set("writeEncoded", js.Any.fromFunction1(value))
+    def setWriteEncoded(value: String => Unit): Self = StObject.set(x, "writeEncoded", js.Any.fromFunction1(value))
   }
 }

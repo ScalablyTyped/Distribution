@@ -1,6 +1,7 @@
 package typings.emberData.mod.DS
 
 import typings.rsvp.mod.default.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("ember-data", "DS.BelongsToReference")
 @js.native
-class BelongsToReference () extends js.Object {
+class BelongsToReference () extends StObject {
   
   /**
     * The `id` of the record that this reference refers to. Together, the

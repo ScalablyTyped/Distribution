@@ -1,11 +1,12 @@
 package typings.miniprogram.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthState extends js.Object {
+trait AuthState extends StObject {
   
   var authCode: String = js.native
   
@@ -20,24 +21,12 @@ object AuthState {
   }
   
   @scala.inline
-  implicit class AuthStateOps[Self <: AuthState] (val x: Self) extends AnyVal {
+  implicit class AuthStateMutableBuilder[Self <: AuthState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthCode(value: String): Self = StObject.set(x, "authCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAuthCode(value: String): Self = this.set("authCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAuthState(value: String): Self = this.set("authState", value.asInstanceOf[js.Any])
+    def setAuthState(value: String): Self = StObject.set(x, "authState", value.asInstanceOf[js.Any])
   }
 }

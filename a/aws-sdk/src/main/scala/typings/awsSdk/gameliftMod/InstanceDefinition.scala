@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceDefinition extends js.Object {
+trait InstanceDefinition extends StObject {
   
   /**
     * An EC2 instance type designation.
@@ -26,27 +27,15 @@ object InstanceDefinition {
   }
   
   @scala.inline
-  implicit class InstanceDefinitionOps[Self <: InstanceDefinition] (val x: Self) extends AnyVal {
+  implicit class InstanceDefinitionMutableBuilder[Self <: InstanceDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceType(value: GameServerGroupInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWeightedCapacity(value: WeightedCapacity): Self = StObject.set(x, "WeightedCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstanceType(value: GameServerGroupInstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeightedCapacity(value: WeightedCapacity): Self = this.set("WeightedCapacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeightedCapacity: Self = this.set("WeightedCapacity", js.undefined)
+    def setWeightedCapacityUndefined: Self = StObject.set(x, "WeightedCapacity", js.undefined)
   }
 }

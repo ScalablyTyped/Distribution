@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playablelocations
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleMapsPlayablelocationsV3PlayerReport extends js.Object {
+trait GoogleMapsPlayablelocationsV3PlayerReport extends StObject {
   
   /**
     * Language code (in BCP-47 format) indicating the language of the freeform description provided in `reason_details`. Examples are "en", "en-US" or "ja-Latn". For more information, see
@@ -31,45 +32,33 @@ object GoogleMapsPlayablelocationsV3PlayerReport {
   }
   
   @scala.inline
-  implicit class GoogleMapsPlayablelocationsV3PlayerReportOps[Self <: GoogleMapsPlayablelocationsV3PlayerReport] (val x: Self) extends AnyVal {
+  implicit class GoogleMapsPlayablelocationsV3PlayerReportMutableBuilder[Self <: GoogleMapsPlayablelocationsV3PlayerReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocationName(value: String): Self = StObject.set(x, "locationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    def setLocationNameUndefined: Self = StObject.set(x, "locationName", js.undefined)
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    def setReasonDetails(value: String): Self = StObject.set(x, "reasonDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationName(value: String): Self = this.set("locationName", value.asInstanceOf[js.Any])
+    def setReasonDetailsUndefined: Self = StObject.set(x, "reasonDetails", js.undefined)
     
     @scala.inline
-    def deleteLocationName: Self = this.set("locationName", js.undefined)
+    def setReasons(value: js.Array[String]): Self = StObject.set(x, "reasons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReasonDetails(value: String): Self = this.set("reasonDetails", value.asInstanceOf[js.Any])
+    def setReasonsUndefined: Self = StObject.set(x, "reasons", js.undefined)
     
     @scala.inline
-    def deleteReasonDetails: Self = this.set("reasonDetails", js.undefined)
-    
-    @scala.inline
-    def setReasonsVarargs(value: String*): Self = this.set("reasons", js.Array(value :_*))
-    
-    @scala.inline
-    def setReasons(value: js.Array[String]): Self = this.set("reasons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReasons: Self = this.set("reasons", js.undefined)
+    def setReasonsVarargs(value: String*): Self = StObject.set(x, "reasons", js.Array(value :_*))
   }
 }

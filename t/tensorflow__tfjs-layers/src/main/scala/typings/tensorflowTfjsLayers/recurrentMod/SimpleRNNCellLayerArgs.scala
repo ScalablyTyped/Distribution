@@ -8,6 +8,7 @@ import typings.tensorflowTfjsLayers.initializersMod.InitializerIdentifier
 import typings.tensorflowTfjsLayers.regularizersMod.Regularizer
 import typings.tensorflowTfjsLayers.regularizersMod.RegularizerIdentifier
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -100,99 +101,87 @@ object SimpleRNNCellLayerArgs {
   }
   
   @scala.inline
-  implicit class SimpleRNNCellLayerArgsOps[Self <: SimpleRNNCellLayerArgs] (val x: Self) extends AnyVal {
+  implicit class SimpleRNNCellLayerArgsMutableBuilder[Self <: SimpleRNNCellLayerArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivation(value: ActivationIdentifier): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBiasConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "biasConstraint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnits(value: Double): Self = this.set("units", value.asInstanceOf[js.Any])
+    def setBiasConstraintUndefined: Self = StObject.set(x, "biasConstraint", js.undefined)
     
     @scala.inline
-    def setActivation(value: ActivationIdentifier): Self = this.set("activation", value.asInstanceOf[js.Any])
+    def setBiasInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "biasInitializer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActivation: Self = this.set("activation", js.undefined)
+    def setBiasInitializerUndefined: Self = StObject.set(x, "biasInitializer", js.undefined)
     
     @scala.inline
-    def setBiasConstraint(value: ConstraintIdentifier | Constraint): Self = this.set("biasConstraint", value.asInstanceOf[js.Any])
+    def setBiasRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "biasRegularizer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBiasConstraint: Self = this.set("biasConstraint", js.undefined)
+    def setBiasRegularizerUndefined: Self = StObject.set(x, "biasRegularizer", js.undefined)
     
     @scala.inline
-    def setBiasInitializer(value: InitializerIdentifier | Initializer): Self = this.set("biasInitializer", value.asInstanceOf[js.Any])
+    def setDropout(value: Double): Self = StObject.set(x, "dropout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBiasInitializer: Self = this.set("biasInitializer", js.undefined)
+    def setDropoutUndefined: Self = StObject.set(x, "dropout", js.undefined)
     
     @scala.inline
-    def setBiasRegularizer(value: RegularizerIdentifier | Regularizer): Self = this.set("biasRegularizer", value.asInstanceOf[js.Any])
+    def setKernelConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "kernelConstraint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBiasRegularizer: Self = this.set("biasRegularizer", js.undefined)
+    def setKernelConstraintUndefined: Self = StObject.set(x, "kernelConstraint", js.undefined)
     
     @scala.inline
-    def setDropout(value: Double): Self = this.set("dropout", value.asInstanceOf[js.Any])
+    def setKernelInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "kernelInitializer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDropout: Self = this.set("dropout", js.undefined)
+    def setKernelInitializerUndefined: Self = StObject.set(x, "kernelInitializer", js.undefined)
     
     @scala.inline
-    def setKernelConstraint(value: ConstraintIdentifier | Constraint): Self = this.set("kernelConstraint", value.asInstanceOf[js.Any])
+    def setKernelRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "kernelRegularizer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKernelConstraint: Self = this.set("kernelConstraint", js.undefined)
+    def setKernelRegularizerUndefined: Self = StObject.set(x, "kernelRegularizer", js.undefined)
     
     @scala.inline
-    def setKernelInitializer(value: InitializerIdentifier | Initializer): Self = this.set("kernelInitializer", value.asInstanceOf[js.Any])
+    def setRecurrentConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "recurrentConstraint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKernelInitializer: Self = this.set("kernelInitializer", js.undefined)
+    def setRecurrentConstraintUndefined: Self = StObject.set(x, "recurrentConstraint", js.undefined)
     
     @scala.inline
-    def setKernelRegularizer(value: RegularizerIdentifier | Regularizer): Self = this.set("kernelRegularizer", value.asInstanceOf[js.Any])
+    def setRecurrentDropout(value: Double): Self = StObject.set(x, "recurrentDropout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKernelRegularizer: Self = this.set("kernelRegularizer", js.undefined)
+    def setRecurrentDropoutUndefined: Self = StObject.set(x, "recurrentDropout", js.undefined)
     
     @scala.inline
-    def setRecurrentConstraint(value: ConstraintIdentifier | Constraint): Self = this.set("recurrentConstraint", value.asInstanceOf[js.Any])
+    def setRecurrentInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "recurrentInitializer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecurrentConstraint: Self = this.set("recurrentConstraint", js.undefined)
+    def setRecurrentInitializerUndefined: Self = StObject.set(x, "recurrentInitializer", js.undefined)
     
     @scala.inline
-    def setRecurrentDropout(value: Double): Self = this.set("recurrentDropout", value.asInstanceOf[js.Any])
+    def setRecurrentRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "recurrentRegularizer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecurrentDropout: Self = this.set("recurrentDropout", js.undefined)
+    def setRecurrentRegularizerUndefined: Self = StObject.set(x, "recurrentRegularizer", js.undefined)
     
     @scala.inline
-    def setRecurrentInitializer(value: InitializerIdentifier | Initializer): Self = this.set("recurrentInitializer", value.asInstanceOf[js.Any])
+    def setUnits(value: Double): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecurrentInitializer: Self = this.set("recurrentInitializer", js.undefined)
+    def setUseBias(value: Boolean): Self = StObject.set(x, "useBias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecurrentRegularizer(value: RegularizerIdentifier | Regularizer): Self = this.set("recurrentRegularizer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecurrentRegularizer: Self = this.set("recurrentRegularizer", js.undefined)
-    
-    @scala.inline
-    def setUseBias(value: Boolean): Self = this.set("useBias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseBias: Self = this.set("useBias", js.undefined)
+    def setUseBiasUndefined: Self = StObject.set(x, "useBias", js.undefined)
   }
 }

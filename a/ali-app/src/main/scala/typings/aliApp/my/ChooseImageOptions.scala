@@ -1,6 +1,7 @@
 package typings.aliApp.my
 
 import typings.aliApp.anon.ApFilePaths
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,30 +29,18 @@ object ChooseImageOptions {
   }
   
   @scala.inline
-  implicit class ChooseImageOptionsOps[Self <: ChooseImageOptions] (val x: Self) extends AnyVal {
+  implicit class ChooseImageOptionsMutableBuilder[Self <: ChooseImageOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSourceType(value: js.Array[ImageSourceType]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceTypeVarargs(value: ImageSourceType*): Self = StObject.set(x, "sourceType", js.Array(value :_*))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceTypeVarargs(value: ImageSourceType*): Self = this.set("sourceType", js.Array(value :_*))
-    
-    @scala.inline
-    def setSourceType(value: js.Array[ImageSourceType]): Self = this.set("sourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccess(value: ApFilePaths => Unit): Self = this.set("success", js.Any.fromFunction1(value))
+    def setSuccess(value: ApFilePaths => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

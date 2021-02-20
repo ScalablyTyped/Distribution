@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlanNode extends js.Object {
+trait PlanNode extends StObject {
   
   /** List of child node `index`es and their relationship to this parent. */
   var childLinks: js.UndefOr[js.Array[ChildLink]] = js.native
@@ -55,71 +56,59 @@ object PlanNode {
   }
   
   @scala.inline
-  implicit class PlanNodeOps[Self <: PlanNode] (val x: Self) extends AnyVal {
+  implicit class PlanNodeMutableBuilder[Self <: PlanNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildLinks(value: js.Array[ChildLink]): Self = StObject.set(x, "childLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildLinksUndefined: Self = StObject.set(x, "childLinks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildLinksVarargs(value: ChildLink*): Self = StObject.set(x, "childLinks", js.Array(value :_*))
     
     @scala.inline
-    def setChildLinksVarargs(value: ChildLink*): Self = this.set("childLinks", js.Array(value :_*))
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildLinks(value: js.Array[ChildLink]): Self = this.set("childLinks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChildLinks: Self = this.set("childLinks", js.undefined)
-    
-    @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
     def setExecutionStats(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PlanNode with TopLevel[js.Any]
-    ): Self = this.set("executionStats", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "executionStats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExecutionStats: Self = this.set("executionStats", js.undefined)
+    def setExecutionStatsUndefined: Self = StObject.set(x, "executionStats", js.undefined)
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
     def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PlanNode with TopLevel[js.Any]
-    ): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def setShortRepresentation(value: ShortRepresentation): Self = this.set("shortRepresentation", value.asInstanceOf[js.Any])
+    def setShortRepresentation(value: ShortRepresentation): Self = StObject.set(x, "shortRepresentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShortRepresentation: Self = this.set("shortRepresentation", js.undefined)
+    def setShortRepresentationUndefined: Self = StObject.set(x, "shortRepresentation", js.undefined)
   }
 }

@@ -4,13 +4,14 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdIcon.svgiconMod.SVGIconProps
 import typings.std.SVGSVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/material-icons/types/FlipToFrontSVGIcon", JSImport.Namespace)
-@js.native
-object flipToFrontSVGIconMod extends js.Object {
+object flipToFrontSVGIconMod {
   
+  @JSImport("@react-md/material-icons/types/FlipToFrontSVGIcon", "FlipToFrontSVGIcon")
+  @js.native
   val FlipToFrontSVGIcon: ForwardRefExoticComponent[SVGIconProps with RefAttributes[SVGSVGElement]] = js.native
 }

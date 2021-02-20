@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommendationengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudRecommendationengineV1beta1BigQuerySource extends js.Object {
+trait GoogleCloudRecommendationengineV1beta1BigQuerySource extends StObject {
   
   /**
     * Optional. The schema to use when parsing the data from the source. Supported values for catalog imports: 1: "catalog_recommendations_ai" using
@@ -37,48 +38,36 @@ object GoogleCloudRecommendationengineV1beta1BigQuerySource {
   }
   
   @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1BigQuerySourceOps[Self <: GoogleCloudRecommendationengineV1beta1BigQuerySource] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudRecommendationengineV1beta1BigQuerySourceMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1BigQuerySource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSchema(value: String): Self = StObject.set(x, "dataSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSchemaUndefined: Self = StObject.set(x, "dataSchema", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSchema(value: String): Self = this.set("dataSchema", value.asInstanceOf[js.Any])
+    def setDatasetIdUndefined: Self = StObject.set(x, "datasetId", js.undefined)
     
     @scala.inline
-    def deleteDataSchema: Self = this.set("dataSchema", js.undefined)
+    def setGcsStagingDir(value: String): Self = StObject.set(x, "gcsStagingDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasetId(value: String): Self = this.set("datasetId", value.asInstanceOf[js.Any])
+    def setGcsStagingDirUndefined: Self = StObject.set(x, "gcsStagingDir", js.undefined)
     
     @scala.inline
-    def deleteDatasetId: Self = this.set("datasetId", js.undefined)
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcsStagingDir(value: String): Self = this.set("gcsStagingDir", value.asInstanceOf[js.Any])
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def deleteGcsStagingDir: Self = this.set("gcsStagingDir", js.undefined)
+    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
-    
-    @scala.inline
-    def setTableId(value: String): Self = this.set("tableId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableId: Self = this.set("tableId", js.undefined)
+    def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
   }
 }

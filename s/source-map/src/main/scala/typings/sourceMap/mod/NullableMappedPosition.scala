@@ -1,11 +1,12 @@
 package typings.sourceMap.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NullableMappedPosition extends js.Object {
+trait NullableMappedPosition extends StObject {
   
   var column: Double | Null = js.native
   
@@ -24,42 +25,30 @@ object NullableMappedPosition {
   }
   
   @scala.inline
-  implicit class NullableMappedPositionOps[Self <: NullableMappedPosition] (val x: Self) extends AnyVal {
+  implicit class NullableMappedPositionMutableBuilder[Self <: NullableMappedPosition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnNull: Self = StObject.set(x, "column", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: Double): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setLineNull: Self = StObject.set(x, "line", null)
     
     @scala.inline
-    def setColumnNull: Self = this.set("column", null)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: Double): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setLineNull: Self = this.set("line", null)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNameNull: Self = this.set("name", null)
-    
-    @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceNull: Self = this.set("source", null)
+    def setSourceNull: Self = StObject.set(x, "source", null)
   }
 }

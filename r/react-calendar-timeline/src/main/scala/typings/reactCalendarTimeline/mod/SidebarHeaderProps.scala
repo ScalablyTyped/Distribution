@@ -3,12 +3,13 @@ package typings.reactCalendarTimeline.mod
 import typings.react.mod.ReactNode
 import typings.reactCalendarTimeline.reactCalendarTimelineStrings.left
 import typings.reactCalendarTimeline.reactCalendarTimelineStrings.right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SidebarHeaderProps[Data] extends js.Object {
+trait SidebarHeaderProps[Data] extends StObject {
   
   def children(props: SidebarHeaderChildrenFnProps[Data]): ReactNode = js.native
   
@@ -25,33 +26,21 @@ object SidebarHeaderProps {
   }
   
   @scala.inline
-  implicit class SidebarHeaderPropsOps[Self <: SidebarHeaderProps[_], Data] (val x: Self with SidebarHeaderProps[Data]) extends AnyVal {
+  implicit class SidebarHeaderPropsMutableBuilder[Self <: SidebarHeaderProps[_], Data] (val x: Self with SidebarHeaderProps[Data]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: SidebarHeaderChildrenFnProps[Data] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaderData(value: Data): Self = StObject.set(x, "headerData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaderDataUndefined: Self = StObject.set(x, "headerData", js.undefined)
     
     @scala.inline
-    def setChildren(value: SidebarHeaderChildrenFnProps[Data] => ReactNode): Self = this.set("children", js.Any.fromFunction1(value))
+    def setVariant(value: left | right): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderData(value: Data): Self = this.set("headerData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaderData: Self = this.set("headerData", js.undefined)
-    
-    @scala.inline
-    def setVariant(value: left | right): Self = this.set("variant", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariant: Self = this.set("variant", js.undefined)
+    def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }
 }

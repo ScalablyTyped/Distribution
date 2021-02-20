@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.ec2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FleetSpotOptions extends js.Object {
+trait FleetSpotOptions extends StObject {
   
   /**
     * How to allocate the target capacity across the Spot pools. Valid values: `diversified`, `lowestPrice`. Default: `lowestPrice`.
@@ -32,36 +33,24 @@ object FleetSpotOptions {
   }
   
   @scala.inline
-  implicit class FleetSpotOptionsOps[Self <: FleetSpotOptions] (val x: Self) extends AnyVal {
+  implicit class FleetSpotOptionsMutableBuilder[Self <: FleetSpotOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocationStrategy(value: Input[String]): Self = StObject.set(x, "allocationStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllocationStrategyUndefined: Self = StObject.set(x, "allocationStrategy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceInterruptionBehavior(value: Input[String]): Self = StObject.set(x, "instanceInterruptionBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocationStrategy(value: Input[String]): Self = this.set("allocationStrategy", value.asInstanceOf[js.Any])
+    def setInstanceInterruptionBehaviorUndefined: Self = StObject.set(x, "instanceInterruptionBehavior", js.undefined)
     
     @scala.inline
-    def deleteAllocationStrategy: Self = this.set("allocationStrategy", js.undefined)
+    def setInstancePoolsToUseCount(value: Input[Double]): Self = StObject.set(x, "instancePoolsToUseCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceInterruptionBehavior(value: Input[String]): Self = this.set("instanceInterruptionBehavior", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceInterruptionBehavior: Self = this.set("instanceInterruptionBehavior", js.undefined)
-    
-    @scala.inline
-    def setInstancePoolsToUseCount(value: Input[Double]): Self = this.set("instancePoolsToUseCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstancePoolsToUseCount: Self = this.set("instancePoolsToUseCount", js.undefined)
+    def setInstancePoolsToUseCountUndefined: Self = StObject.set(x, "instancePoolsToUseCount", js.undefined)
   }
 }

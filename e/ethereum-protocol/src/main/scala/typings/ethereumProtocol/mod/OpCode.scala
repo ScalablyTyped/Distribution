@@ -1,66 +1,56 @@
 package typings.ethereumProtocol.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait OpCode extends js.Object
+sealed trait OpCode extends StObject
 @JSImport("ethereum-protocol", "OpCode")
 @js.native
-object OpCode extends js.Object {
+object OpCode extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[OpCode with String] = js.native
   
   @js.native
   sealed trait Call extends OpCode
-  /* "CALL" */ @js.native
-  object Call extends TopLevel[Call with String]
+  /* "CALL" */ val Call: typings.ethereumProtocol.mod.OpCode.Call with String = js.native
   
   @js.native
   sealed trait CallCode extends OpCode
-  /* "CALLCODE" */ @js.native
-  object CallCode extends TopLevel[CallCode with String]
+  /* "CALLCODE" */ val CallCode: typings.ethereumProtocol.mod.OpCode.CallCode with String = js.native
   
   @js.native
   sealed trait Create extends OpCode
-  /* "CREATE" */ @js.native
-  object Create extends TopLevel[Create with String]
+  /* "CREATE" */ val Create: typings.ethereumProtocol.mod.OpCode.Create with String = js.native
   
   @js.native
   sealed trait DelegateCall extends OpCode
-  /* "DELEGATECALL" */ @js.native
-  object DelegateCall extends TopLevel[DelegateCall with String]
+  /* "DELEGATECALL" */ val DelegateCall: typings.ethereumProtocol.mod.OpCode.DelegateCall with String = js.native
   
   @js.native
   sealed trait Invalid extends OpCode
-  /* "INVALID" */ @js.native
-  object Invalid extends TopLevel[Invalid with String]
+  /* "INVALID" */ val Invalid: typings.ethereumProtocol.mod.OpCode.Invalid with String = js.native
   
   @js.native
   sealed trait Return extends OpCode
-  /* "RETURN" */ @js.native
-  object Return extends TopLevel[Return with String]
+  /* "RETURN" */ val Return: typings.ethereumProtocol.mod.OpCode.Return with String = js.native
   
   @js.native
   sealed trait Revert extends OpCode
-  /* "REVERT" */ @js.native
-  object Revert extends TopLevel[Revert with String]
+  /* "REVERT" */ val Revert: typings.ethereumProtocol.mod.OpCode.Revert with String = js.native
   
   @js.native
   sealed trait SelfDestruct extends OpCode
-  /* "SELFDESTRUCT" */ @js.native
-  object SelfDestruct extends TopLevel[SelfDestruct with String]
+  /* "SELFDESTRUCT" */ val SelfDestruct: typings.ethereumProtocol.mod.OpCode.SelfDestruct with String = js.native
   
   @js.native
   sealed trait StaticCall extends OpCode
-  /* "STATICCALL" */ @js.native
-  object StaticCall extends TopLevel[StaticCall with String]
+  /* "STATICCALL" */ val StaticCall: typings.ethereumProtocol.mod.OpCode.StaticCall with String = js.native
   
   @js.native
   sealed trait Stop extends OpCode
-  /* "STOP" */ @js.native
-  object Stop extends TopLevel[Stop with String]
+  /* "STOP" */ val Stop: typings.ethereumProtocol.mod.OpCode.Stop with String = js.native
 }

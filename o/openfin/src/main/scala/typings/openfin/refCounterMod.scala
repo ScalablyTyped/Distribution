@@ -1,16 +1,19 @@
 package typings.openfin
 
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openfin/_v2/util/ref-counter", JSImport.Namespace)
-@js.native
-object refCounterMod extends js.Object {
+object refCounterMod {
+  
+  @JSImport("openfin/_v2/util/ref-counter", JSImport.Default)
+  @js.native
+  class default () extends RefCoutner
   
   @js.native
-  trait RefCoutner extends js.Object {
+  trait RefCoutner extends StObject {
     
     def actOnFirst(key: String, firstAction: js.Function0[_]): js.Any = js.native
     def actOnFirst(key: String, firstAction: js.Function0[_], nonFirstAction: js.Function0[Unit]): js.Any = js.native
@@ -24,7 +27,4 @@ object refCounterMod extends js.Object {
     
     var topicRefMap: Map[_, _] = js.native
   }
-  
-  @js.native
-  class default () extends RefCoutner
 }

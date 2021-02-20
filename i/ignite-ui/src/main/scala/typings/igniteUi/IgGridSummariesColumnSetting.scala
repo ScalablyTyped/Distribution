@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,45 +46,33 @@ object IgGridSummariesColumnSetting {
   }
   
   @scala.inline
-  implicit class IgGridSummariesColumnSettingOps[Self <: IgGridSummariesColumnSetting] (val x: Self) extends AnyVal {
+  implicit class IgGridSummariesColumnSettingMutableBuilder[Self <: IgGridSummariesColumnSetting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowSummaries(value: Boolean): Self = StObject.set(x, "allowSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowSummariesUndefined: Self = StObject.set(x, "allowSummaries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowSummaries(value: Boolean): Self = this.set("allowSummaries", value.asInstanceOf[js.Any])
+    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
     @scala.inline
-    def deleteAllowSummaries: Self = this.set("allowSummaries", js.undefined)
+    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
     @scala.inline
-    def deleteColumnIndex: Self = this.set("columnIndex", js.undefined)
+    def setSummaryOperands(value: js.Array[IgGridSummariesColumnSettingSummaryOperand]): Self = StObject.set(x, "summaryOperands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnKey(value: String): Self = this.set("columnKey", value.asInstanceOf[js.Any])
+    def setSummaryOperandsUndefined: Self = StObject.set(x, "summaryOperands", js.undefined)
     
     @scala.inline
-    def deleteColumnKey: Self = this.set("columnKey", js.undefined)
-    
-    @scala.inline
-    def setSummaryOperandsVarargs(value: IgGridSummariesColumnSettingSummaryOperand*): Self = this.set("summaryOperands", js.Array(value :_*))
-    
-    @scala.inline
-    def setSummaryOperands(value: js.Array[IgGridSummariesColumnSettingSummaryOperand]): Self = this.set("summaryOperands", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummaryOperands: Self = this.set("summaryOperands", js.undefined)
+    def setSummaryOperandsVarargs(value: IgGridSummariesColumnSettingSummaryOperand*): Self = StObject.set(x, "summaryOperands", js.Array(value :_*))
   }
 }

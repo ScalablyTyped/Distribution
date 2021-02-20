@@ -1,15 +1,14 @@
 package typings.recurlyRecurlyJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@recurly/recurly-js/lib/validate", JSImport.Namespace)
-@js.native
-object validateMod extends js.Object {
+object validateMod {
   
   @js.native
-  trait Validate extends js.Object {
+  trait Validate extends StObject {
     
     def cardNumber(cardNumber: String): Boolean = js.native
     def cardNumber(cardNumber: Double): Boolean = js.native

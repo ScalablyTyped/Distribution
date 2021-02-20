@@ -15,16 +15,16 @@ import typings.typescript.mod.Type
 import typings.typescript.mod.TypeChecker
 import typings.typescript.mod.TypeNode
 import typings.typescript.mod.TypeParameterDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/converter/context", JSImport.Namespace)
-@js.native
-object contextMod extends js.Object {
+object contextMod {
   
+  @JSImport("typedoc/dist/lib/converter/context", "Context")
   @js.native
-  class Context protected () extends js.Object {
+  class Context protected () extends StObject {
     def this(converter: Converter, fileNames: js.Array[String], checker: TypeChecker, program: Program) = this()
     
     var checker: TypeChecker = js.native

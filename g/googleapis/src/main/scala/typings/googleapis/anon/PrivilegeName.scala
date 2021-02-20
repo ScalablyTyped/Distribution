@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrivilegeName extends js.Object {
+trait PrivilegeName extends StObject {
   
   var privilegeName: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object PrivilegeName {
   }
   
   @scala.inline
-  implicit class PrivilegeNameOps[Self <: PrivilegeName] (val x: Self) extends AnyVal {
+  implicit class PrivilegeNameMutableBuilder[Self <: PrivilegeName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrivilegeName(value: String): Self = StObject.set(x, "privilegeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrivilegeNameUndefined: Self = StObject.set(x, "privilegeName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivilegeName(value: String): Self = this.set("privilegeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivilegeName: Self = this.set("privilegeName", js.undefined)
-    
-    @scala.inline
-    def setServiceId(value: String): Self = this.set("serviceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceId: Self = this.set("serviceId", js.undefined)
+    def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
   }
 }

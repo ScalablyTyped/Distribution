@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ASPxClientCardViewCallbackCommand ()
   extends typings.devexpressWeb.ASPxClientCardViewCallbackCommand
-/* static members */
-@JSGlobal("ASPxClientCardViewCallbackCommand")
-@js.native
-object ASPxClientCardViewCallbackCommand extends js.Object {
+object ASPxClientCardViewCallbackCommand {
   
   /**
     * Default value: "GROUPBYSELECTORVALUE"
     */
+  /* static member */
+  @JSGlobal("ASPxClientCardViewCallbackCommand.GroupBySelectorValue")
+  @js.native
   val GroupBySelectorValue: String = js.native
 }

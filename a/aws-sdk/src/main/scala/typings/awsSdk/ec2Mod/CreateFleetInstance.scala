@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateFleetInstance extends js.Object {
+trait CreateFleetInstance extends StObject {
   
   /**
     * The IDs of the instances.
@@ -41,51 +42,39 @@ object CreateFleetInstance {
   }
   
   @scala.inline
-  implicit class CreateFleetInstanceOps[Self <: CreateFleetInstance] (val x: Self) extends AnyVal {
+  implicit class CreateFleetInstanceMutableBuilder[Self <: CreateFleetInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceIds(value: InstanceIdsSet): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceIdsUndefined: Self = StObject.set(x, "InstanceIds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceIdsVarargs(value: InstanceId*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceIdsVarargs(value: InstanceId*): Self = this.set("InstanceIds", js.Array(value :_*))
+    def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceIds(value: InstanceIdsSet): Self = this.set("InstanceIds", value.asInstanceOf[js.Any])
+    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
     @scala.inline
-    def deleteInstanceIds: Self = this.set("InstanceIds", js.undefined)
+    def setLaunchTemplateAndOverrides(value: LaunchTemplateAndOverridesResponse): Self = StObject.set(x, "LaunchTemplateAndOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: InstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    def setLaunchTemplateAndOverridesUndefined: Self = StObject.set(x, "LaunchTemplateAndOverrides", js.undefined)
     
     @scala.inline
-    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    def setLifecycle(value: InstanceLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchTemplateAndOverrides(value: LaunchTemplateAndOverridesResponse): Self = this.set("LaunchTemplateAndOverrides", value.asInstanceOf[js.Any])
+    def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
     
     @scala.inline
-    def deleteLaunchTemplateAndOverrides: Self = this.set("LaunchTemplateAndOverrides", js.undefined)
+    def setPlatform(value: PlatformValues): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifecycle(value: InstanceLifecycle): Self = this.set("Lifecycle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLifecycle: Self = this.set("Lifecycle", js.undefined)
-    
-    @scala.inline
-    def setPlatform(value: PlatformValues): Self = this.set("Platform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlatform: Self = this.set("Platform", js.undefined)
+    def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An Earcon configuration, specifying an Earcon and when to play it.
   */
 @js.native
-trait EarconConfiguration extends js.Object {
+trait EarconConfiguration extends StObject {
   
   /**
     * A function to determine whether or not to play this earcon on a
@@ -38,33 +39,21 @@ object EarconConfiguration {
   }
   
   @scala.inline
-  implicit class EarconConfigurationOps[Self <: EarconConfiguration] (val x: Self) extends AnyVal {
+  implicit class EarconConfigurationMutableBuilder[Self <: EarconConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: js.Function): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEarcon(value: typings.highcharts.sonificationMod.highchartsAugmentingMod.Earcon): Self = StObject.set(x, "earcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEarcon(value: typings.highcharts.sonificationMod.highchartsAugmentingMod.Earcon): Self = this.set("earcon", value.asInstanceOf[js.Any])
+    def setOnPoint(value: String): Self = StObject.set(x, "onPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: js.Function): Self = this.set("condition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
-    
-    @scala.inline
-    def setOnPoint(value: String): Self = this.set("onPoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnPoint: Self = this.set("onPoint", js.undefined)
+    def setOnPointUndefined: Self = StObject.set(x, "onPoint", js.undefined)
   }
 }

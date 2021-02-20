@@ -2,12 +2,13 @@ package typings.nodeRedEditorClient.anon
 
 import typings.nodeRedEditorClient.mod.global.JQuery
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerHide extends js.Object {
+trait ContainerHide extends StObject {
   
   var container: JQuery[HTMLElement] = js.native
   

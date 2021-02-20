@@ -1,123 +1,100 @@
 package typings.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ModifierFlags extends js.Object
+sealed trait ModifierFlags extends StObject
 @JSImport("typescript", "ModifierFlags")
 @js.native
-object ModifierFlags extends js.Object {
+object ModifierFlags extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ModifierFlags with Double] = js.native
   
   @js.native
   sealed trait Abstract extends ModifierFlags
-  /* 128 */ @js.native
-  object Abstract extends TopLevel[Abstract with Double]
+  /* 128 */ val Abstract: typings.typescript.mod.ModifierFlags.Abstract with Double = js.native
   
   @js.native
   sealed trait AccessibilityModifier extends ModifierFlags
-  /* 28 */ @js.native
-  object AccessibilityModifier
-    extends TopLevel[typings.typescript.mod.ModifierFlags.AccessibilityModifier with Double]
+  /* 28 */ val AccessibilityModifier: typings.typescript.mod.ModifierFlags.AccessibilityModifier with Double = js.native
   
   @js.native
   sealed trait All extends ModifierFlags
-  /* 11263 */ @js.native
-  object All extends TopLevel[All with Double]
+  /* 11263 */ val All: typings.typescript.mod.ModifierFlags.All with Double = js.native
   
   @js.native
   sealed trait Ambient extends ModifierFlags
-  /* 2 */ @js.native
-  object Ambient extends TopLevel[Ambient with Double]
+  /* 2 */ val Ambient: typings.typescript.mod.ModifierFlags.Ambient with Double = js.native
   
   @js.native
   sealed trait Async extends ModifierFlags
-  /* 256 */ @js.native
-  object Async extends TopLevel[Async with Double]
+  /* 256 */ val Async: typings.typescript.mod.ModifierFlags.Async with Double = js.native
   
   @js.native
   sealed trait Const extends ModifierFlags
-  /* 2048 */ @js.native
-  object Const extends TopLevel[Const with Double]
+  /* 2048 */ val Const: typings.typescript.mod.ModifierFlags.Const with Double = js.native
   
   @js.native
   sealed trait Default extends ModifierFlags
-  /* 512 */ @js.native
-  object Default extends TopLevel[Default with Double]
+  /* 512 */ val Default: typings.typescript.mod.ModifierFlags.Default with Double = js.native
   
   @js.native
   sealed trait Deprecated extends ModifierFlags
-  /* 8192 */ @js.native
-  object Deprecated extends TopLevel[Deprecated with Double]
+  /* 8192 */ val Deprecated: typings.typescript.mod.ModifierFlags.Deprecated with Double = js.native
   
   @js.native
   sealed trait Export extends ModifierFlags
-  /* 1 */ @js.native
-  object Export extends TopLevel[Export with Double]
+  /* 1 */ val Export: typings.typescript.mod.ModifierFlags.Export with Double = js.native
   
   @js.native
   sealed trait ExportDefault extends ModifierFlags
-  /* 513 */ @js.native
-  object ExportDefault extends TopLevel[ExportDefault with Double]
+  /* 513 */ val ExportDefault: typings.typescript.mod.ModifierFlags.ExportDefault with Double = js.native
   
   @js.native
   sealed trait HasComputedFlags extends ModifierFlags
-  /* 536870912 */ @js.native
-  object HasComputedFlags extends TopLevel[HasComputedFlags with Double]
+  /* 536870912 */ val HasComputedFlags: typings.typescript.mod.ModifierFlags.HasComputedFlags with Double = js.native
   
   @js.native
   sealed trait HasComputedJSDocModifiers extends ModifierFlags
-  /* 4096 */ @js.native
-  object HasComputedJSDocModifiers extends TopLevel[HasComputedJSDocModifiers with Double]
+  /* 4096 */ val HasComputedJSDocModifiers: typings.typescript.mod.ModifierFlags.HasComputedJSDocModifiers with Double = js.native
   
   @js.native
   sealed trait NonPublicAccessibilityModifier extends ModifierFlags
-  /* 24 */ @js.native
-  object NonPublicAccessibilityModifier extends TopLevel[NonPublicAccessibilityModifier with Double]
+  /* 24 */ val NonPublicAccessibilityModifier: typings.typescript.mod.ModifierFlags.NonPublicAccessibilityModifier with Double = js.native
   
   @js.native
   sealed trait None extends ModifierFlags
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  /* 0 */ val None: typings.typescript.mod.ModifierFlags.None with Double = js.native
   
   @js.native
   sealed trait ParameterPropertyModifier extends ModifierFlags
-  /* 92 */ @js.native
-  object ParameterPropertyModifier
-    extends TopLevel[typings.typescript.mod.ModifierFlags.ParameterPropertyModifier with Double]
+  /* 92 */ val ParameterPropertyModifier: typings.typescript.mod.ModifierFlags.ParameterPropertyModifier with Double = js.native
   
   @js.native
   sealed trait Private extends ModifierFlags
-  /* 8 */ @js.native
-  object Private extends TopLevel[Private with Double]
+  /* 8 */ val Private: typings.typescript.mod.ModifierFlags.Private with Double = js.native
   
   @js.native
   sealed trait Protected extends ModifierFlags
-  /* 16 */ @js.native
-  object Protected extends TopLevel[Protected with Double]
+  /* 16 */ val Protected: typings.typescript.mod.ModifierFlags.Protected with Double = js.native
   
   @js.native
   sealed trait Public extends ModifierFlags
-  /* 4 */ @js.native
-  object Public extends TopLevel[Public with Double]
+  /* 4 */ val Public: typings.typescript.mod.ModifierFlags.Public with Double = js.native
   
   @js.native
   sealed trait Readonly extends ModifierFlags
-  /* 64 */ @js.native
-  object Readonly extends TopLevel[Readonly with Double]
+  /* 64 */ val Readonly: typings.typescript.mod.ModifierFlags.Readonly with Double = js.native
   
   @js.native
   sealed trait Static extends ModifierFlags
-  /* 32 */ @js.native
-  object Static extends TopLevel[Static with Double]
+  /* 32 */ val Static: typings.typescript.mod.ModifierFlags.Static with Double = js.native
   
   @js.native
   sealed trait TypeScriptModifier extends ModifierFlags
-  /* 2270 */ @js.native
-  object TypeScriptModifier extends TopLevel[TypeScriptModifier with Double]
+  /* 2270 */ val TypeScriptModifier: typings.typescript.mod.ModifierFlags.TypeScriptModifier with Double = js.native
 }

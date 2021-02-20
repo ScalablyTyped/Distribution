@@ -4,12 +4,13 @@ import typings.cesium.mod.Command
 import typings.cesium.mod.ImageryProvider
 import typings.cesium.mod.ProviderViewModel.CreationFunction
 import typings.cesium.mod.TerrainProvider
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Category extends js.Object {
+trait Category extends StObject {
   
   var category: js.UndefOr[String] = js.native
   
@@ -30,39 +31,27 @@ object Category {
   }
   
   @scala.inline
-  implicit class CategoryOps[Self <: Category] (val x: Self) extends AnyVal {
+  implicit class CategoryMutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationFunction(value: CreationFunction | Command): Self = StObject.set(x, "creationFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationFunctionFunction0(value: () => ImageryProvider | TerrainProvider | (js.Array[ImageryProvider | TerrainProvider])): Self = this.set("creationFunction", js.Any.fromFunction0(value))
+    def setCreationFunctionFunction0(value: () => ImageryProvider | TerrainProvider | (js.Array[ImageryProvider | TerrainProvider])): Self = StObject.set(x, "creationFunction", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreationFunction(value: CreationFunction | Command): Self = this.set("creationFunction", value.asInstanceOf[js.Any])
+    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconUrl(value: String): Self = this.set("iconUrl", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTooltip(value: String): Self = this.set("tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
   }
 }

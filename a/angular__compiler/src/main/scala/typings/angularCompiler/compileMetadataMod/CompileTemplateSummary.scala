@@ -1,12 +1,13 @@
 package typings.angularCompiler.compileMetadataMod
 
 import typings.angularCompiler.coreMod.ViewEncapsulation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompileTemplateSummary extends js.Object {
+trait CompileTemplateSummary extends StObject {
   
   var animations: js.Array[_] | Null = js.native
   
@@ -25,45 +26,33 @@ object CompileTemplateSummary {
   }
   
   @scala.inline
-  implicit class CompileTemplateSummaryOps[Self <: CompileTemplateSummary] (val x: Self) extends AnyVal {
+  implicit class CompileTemplateSummaryMutableBuilder[Self <: CompileTemplateSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimations(value: js.Array[_]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationsNull: Self = StObject.set(x, "animations", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimationsVarargs(value: js.Any*): Self = StObject.set(x, "animations", js.Array(value :_*))
     
     @scala.inline
-    def setNgContentSelectorsVarargs(value: String*): Self = this.set("ngContentSelectors", js.Array(value :_*))
+    def setEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "encapsulation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNgContentSelectors(value: js.Array[String]): Self = this.set("ngContentSelectors", value.asInstanceOf[js.Any])
+    def setEncapsulationNull: Self = StObject.set(x, "encapsulation", null)
     
     @scala.inline
-    def setStylesVarargs(value: String*): Self = this.set("styles", js.Array(value :_*))
+    def setNgContentSelectors(value: js.Array[String]): Self = StObject.set(x, "ngContentSelectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: js.Array[String]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setNgContentSelectorsVarargs(value: String*): Self = StObject.set(x, "ngContentSelectors", js.Array(value :_*))
     
     @scala.inline
-    def setAnimationsVarargs(value: js.Any*): Self = this.set("animations", js.Array(value :_*))
+    def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimations(value: js.Array[_]): Self = this.set("animations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAnimationsNull: Self = this.set("animations", null)
-    
-    @scala.inline
-    def setEncapsulation(value: ViewEncapsulation): Self = this.set("encapsulation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEncapsulationNull: Self = this.set("encapsulation", null)
+    def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
   }
 }

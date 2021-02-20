@@ -3,12 +3,13 @@ package typings.activexWord.Word
 import typings.activexOffice.Office.Crop
 import typings.activexOffice.Office.MsoPictureColorType
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PictureFormat extends js.Object {
+trait PictureFormat extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -70,66 +71,54 @@ object PictureFormat {
   }
   
   @scala.inline
-  implicit class PictureFormatOps[Self <: PictureFormat] (val x: Self) extends AnyVal {
+  implicit class PictureFormatMutableBuilder[Self <: PictureFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrightness(value: Double): Self = StObject.set(x, "Brightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorType(value: MsoPictureColorType): Self = StObject.set(x, "ColorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setContrast(value: Double): Self = StObject.set(x, "Contrast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightness(value: Double): Self = this.set("Brightness", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorType(value: MsoPictureColorType): Self = this.set("ColorType", value.asInstanceOf[js.Any])
+    def setCrop(value: Crop): Self = StObject.set(x, "Crop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContrast(value: Double): Self = this.set("Contrast", value.asInstanceOf[js.Any])
+    def setCropBottom(value: Double): Self = StObject.set(x, "CropBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setCropLeft(value: Double): Self = StObject.set(x, "CropLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrop(value: Crop): Self = this.set("Crop", value.asInstanceOf[js.Any])
+    def setCropRight(value: Double): Self = StObject.set(x, "CropRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCropBottom(value: Double): Self = this.set("CropBottom", value.asInstanceOf[js.Any])
+    def setCropTop(value: Double): Self = StObject.set(x, "CropTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCropLeft(value: Double): Self = this.set("CropLeft", value.asInstanceOf[js.Any])
+    def setIncrementBrightness(value: Double => Unit): Self = StObject.set(x, "IncrementBrightness", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCropRight(value: Double): Self = this.set("CropRight", value.asInstanceOf[js.Any])
+    def setIncrementContrast(value: Double => Unit): Self = StObject.set(x, "IncrementContrast", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCropTop(value: Double): Self = this.set("CropTop", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncrementBrightness(value: Double => Unit): Self = this.set("IncrementBrightness", js.Any.fromFunction1(value))
+    def setTransparencyColor(value: Double): Self = StObject.set(x, "TransparencyColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncrementContrast(value: Double => Unit): Self = this.set("IncrementContrast", js.Any.fromFunction1(value))
+    def setTransparentBackground(value: MsoTriState): Self = StObject.set(x, "TransparentBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransparencyColor(value: Double): Self = this.set("TransparencyColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransparentBackground(value: MsoTriState): Self = this.set("TransparentBackground", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotPictureFormat_typekey(value: PictureFormat): Self = this.set("Word.PictureFormat_typekey", value.asInstanceOf[js.Any])
+    def setWordDotPictureFormat_typekey(value: PictureFormat): Self = StObject.set(x, "Word.PictureFormat_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Web.Http.Headers
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of the Content-Range HTTP header on HTTP content in a request or a response. */
 @js.native
-trait HttpContentRangeHeaderValue extends js.Object {
+trait HttpContentRangeHeaderValue extends StObject {
   
   /** Gets the position at which to start sending data in the Content-Range HTTP header. */
   var firstBytePosition: Double = js.native
@@ -29,30 +30,18 @@ object HttpContentRangeHeaderValue {
   }
   
   @scala.inline
-  implicit class HttpContentRangeHeaderValueOps[Self <: HttpContentRangeHeaderValue] (val x: Self) extends AnyVal {
+  implicit class HttpContentRangeHeaderValueMutableBuilder[Self <: HttpContentRangeHeaderValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstBytePosition(value: Double): Self = StObject.set(x, "firstBytePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastBytePosition(value: Double): Self = StObject.set(x, "lastBytePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstBytePosition(value: Double): Self = this.set("firstBytePosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastBytePosition(value: Double): Self = this.set("lastBytePosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
+    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
   }
 }

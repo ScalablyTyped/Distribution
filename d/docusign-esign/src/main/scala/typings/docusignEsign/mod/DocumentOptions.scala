@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentOptions extends js.Object {
+trait DocumentOptions extends StObject {
   
   var certificate: js.UndefOr[String] = js.native
   
@@ -32,66 +33,54 @@ object DocumentOptions {
   }
   
   @scala.inline
-  implicit class DocumentOptionsOps[Self <: DocumentOptions] (val x: Self) extends AnyVal {
+  implicit class DocumentOptionsMutableBuilder[Self <: DocumentOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentsByUserid(value: String): Self = StObject.set(x, "documentsByUserid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificate(value: String): Self = this.set("certificate", value.asInstanceOf[js.Any])
+    def setDocumentsByUseridUndefined: Self = StObject.set(x, "documentsByUserid", js.undefined)
     
     @scala.inline
-    def deleteCertificate: Self = this.set("certificate", js.undefined)
+    def setEncrypt(value: String): Self = StObject.set(x, "encrypt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentsByUserid(value: String): Self = this.set("documentsByUserid", value.asInstanceOf[js.Any])
+    def setEncryptUndefined: Self = StObject.set(x, "encrypt", js.undefined)
     
     @scala.inline
-    def deleteDocumentsByUserid: Self = this.set("documentsByUserid", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncrypt(value: String): Self = this.set("encrypt", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteEncrypt: Self = this.set("encrypt", js.undefined)
+    def setRecipientId(value: String): Self = StObject.set(x, "recipientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setRecipientIdUndefined: Self = StObject.set(x, "recipientId", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setSharedUserId(value: String): Self = StObject.set(x, "sharedUserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientId(value: String): Self = this.set("recipientId", value.asInstanceOf[js.Any])
+    def setSharedUserIdUndefined: Self = StObject.set(x, "sharedUserId", js.undefined)
     
     @scala.inline
-    def deleteRecipientId: Self = this.set("recipientId", js.undefined)
+    def setShowChanges(value: String): Self = StObject.set(x, "showChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharedUserId(value: String): Self = this.set("sharedUserId", value.asInstanceOf[js.Any])
+    def setShowChangesUndefined: Self = StObject.set(x, "showChanges", js.undefined)
     
     @scala.inline
-    def deleteSharedUserId: Self = this.set("sharedUserId", js.undefined)
+    def setWatermark(value: String): Self = StObject.set(x, "watermark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowChanges(value: String): Self = this.set("showChanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowChanges: Self = this.set("showChanges", js.undefined)
-    
-    @scala.inline
-    def setWatermark(value: String): Self = this.set("watermark", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWatermark: Self = this.set("watermark", js.undefined)
+    def setWatermarkUndefined: Self = StObject.set(x, "watermark", js.undefined)
   }
 }

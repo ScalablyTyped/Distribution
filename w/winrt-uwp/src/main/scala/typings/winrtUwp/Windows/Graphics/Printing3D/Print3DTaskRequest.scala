@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Graphics.Printing3D
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a 3D print job request. */
 @js.native
-trait Print3DTaskRequest extends js.Object {
+trait Print3DTaskRequest extends StObject {
   
   /**
     * Creates a 3D print job.
@@ -26,21 +27,9 @@ object Print3DTaskRequest {
   }
   
   @scala.inline
-  implicit class Print3DTaskRequestOps[Self <: Print3DTaskRequest] (val x: Self) extends AnyVal {
+  implicit class Print3DTaskRequestMutableBuilder[Self <: Print3DTaskRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateTask(value: (String, String, Print3DTaskSourceRequestedHandler) => Print3DTask): Self = this.set("createTask", js.Any.fromFunction3(value))
+    def setCreateTask(value: (String, String, Print3DTaskSourceRequestedHandler) => Print3DTask): Self = StObject.set(x, "createTask", js.Any.fromFunction3(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserPausedDetails extends js.Object {
+trait UserPausedDetails extends StObject {
   
   /**
     * The date and time, in UTC and extended ISO 8601 format, when the job will expire and be cancelled if you don't resume it first. If you don't resume a job within 30 days of pausing it, the job expires and Amazon Macie cancels it.
@@ -31,36 +32,24 @@ object UserPausedDetails {
   }
   
   @scala.inline
-  implicit class UserPausedDetailsOps[Self <: UserPausedDetails] (val x: Self) extends AnyVal {
+  implicit class UserPausedDetailsMutableBuilder[Self <: UserPausedDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobExpiresAt(value: timestampIso8601): Self = StObject.set(x, "jobExpiresAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobExpiresAtUndefined: Self = StObject.set(x, "jobExpiresAt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobImminentExpirationHealthEventArn(value: string): Self = StObject.set(x, "jobImminentExpirationHealthEventArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobExpiresAt(value: timestampIso8601): Self = this.set("jobExpiresAt", value.asInstanceOf[js.Any])
+    def setJobImminentExpirationHealthEventArnUndefined: Self = StObject.set(x, "jobImminentExpirationHealthEventArn", js.undefined)
     
     @scala.inline
-    def deleteJobExpiresAt: Self = this.set("jobExpiresAt", js.undefined)
+    def setJobPausedAt(value: timestampIso8601): Self = StObject.set(x, "jobPausedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobImminentExpirationHealthEventArn(value: string): Self = this.set("jobImminentExpirationHealthEventArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobImminentExpirationHealthEventArn: Self = this.set("jobImminentExpirationHealthEventArn", js.undefined)
-    
-    @scala.inline
-    def setJobPausedAt(value: timestampIso8601): Self = this.set("jobPausedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobPausedAt: Self = this.set("jobPausedAt", js.undefined)
+    def setJobPausedAtUndefined: Self = StObject.set(x, "jobPausedAt", js.undefined)
   }
 }

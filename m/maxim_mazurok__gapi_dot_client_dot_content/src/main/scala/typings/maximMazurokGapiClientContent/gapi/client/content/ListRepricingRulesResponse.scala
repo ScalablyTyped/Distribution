@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListRepricingRulesResponse extends js.Object {
+trait ListRepricingRulesResponse extends StObject {
   
   /** A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. */
   var nextPageToken: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object ListRepricingRulesResponse {
   }
   
   @scala.inline
-  implicit class ListRepricingRulesResponseOps[Self <: ListRepricingRulesResponse] (val x: Self) extends AnyVal {
+  implicit class ListRepricingRulesResponseMutableBuilder[Self <: ListRepricingRulesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepricingRules(value: js.Array[RepricingRule]): Self = StObject.set(x, "repricingRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setRepricingRulesUndefined: Self = StObject.set(x, "repricingRules", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setRepricingRulesVarargs(value: RepricingRule*): Self = this.set("repricingRules", js.Array(value :_*))
-    
-    @scala.inline
-    def setRepricingRules(value: js.Array[RepricingRule]): Self = this.set("repricingRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepricingRules: Self = this.set("repricingRules", js.undefined)
+    def setRepricingRulesVarargs(value: RepricingRule*): Self = StObject.set(x, "repricingRules", js.Array(value :_*))
   }
 }

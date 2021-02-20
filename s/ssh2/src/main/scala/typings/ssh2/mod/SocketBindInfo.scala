@@ -1,11 +1,12 @@
 package typings.ssh2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SocketBindInfo extends js.Object {
+trait SocketBindInfo extends StObject {
   
   /** The socket path to start/stop binding to. */
   var socketPath: String = js.native
@@ -19,21 +20,9 @@ object SocketBindInfo {
   }
   
   @scala.inline
-  implicit class SocketBindInfoOps[Self <: SocketBindInfo] (val x: Self) extends AnyVal {
+  implicit class SocketBindInfoMutableBuilder[Self <: SocketBindInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSocketPath(value: String): Self = this.set("socketPath", value.asInstanceOf[js.Any])
+    def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
   }
 }

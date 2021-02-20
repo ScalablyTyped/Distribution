@@ -1,12 +1,13 @@
 package typings.nodeRedEditorClient.mod
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Validators extends js.Object {
+trait Validators extends StObject {
   
   def number(): js.Function1[/* v */ js.Any, Boolean] = js.native
   def number(blankAllowed: Boolean): js.Function1[/* v */ js.Any, Boolean] = js.native

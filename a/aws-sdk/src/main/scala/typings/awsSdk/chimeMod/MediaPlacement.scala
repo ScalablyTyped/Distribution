@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaPlacement extends js.Object {
+trait MediaPlacement extends StObject {
   
   /**
     * The audio fallback URL.
@@ -51,60 +52,48 @@ object MediaPlacement {
   }
   
   @scala.inline
-  implicit class MediaPlacementOps[Self <: MediaPlacement] (val x: Self) extends AnyVal {
+  implicit class MediaPlacementMutableBuilder[Self <: MediaPlacement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioFallbackUrl(value: UriType): Self = StObject.set(x, "AudioFallbackUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioFallbackUrlUndefined: Self = StObject.set(x, "AudioFallbackUrl", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioHostUrl(value: UriType): Self = StObject.set(x, "AudioHostUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioFallbackUrl(value: UriType): Self = this.set("AudioFallbackUrl", value.asInstanceOf[js.Any])
+    def setAudioHostUrlUndefined: Self = StObject.set(x, "AudioHostUrl", js.undefined)
     
     @scala.inline
-    def deleteAudioFallbackUrl: Self = this.set("AudioFallbackUrl", js.undefined)
+    def setScreenDataUrl(value: UriType): Self = StObject.set(x, "ScreenDataUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioHostUrl(value: UriType): Self = this.set("AudioHostUrl", value.asInstanceOf[js.Any])
+    def setScreenDataUrlUndefined: Self = StObject.set(x, "ScreenDataUrl", js.undefined)
     
     @scala.inline
-    def deleteAudioHostUrl: Self = this.set("AudioHostUrl", js.undefined)
+    def setScreenSharingUrl(value: UriType): Self = StObject.set(x, "ScreenSharingUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenDataUrl(value: UriType): Self = this.set("ScreenDataUrl", value.asInstanceOf[js.Any])
+    def setScreenSharingUrlUndefined: Self = StObject.set(x, "ScreenSharingUrl", js.undefined)
     
     @scala.inline
-    def deleteScreenDataUrl: Self = this.set("ScreenDataUrl", js.undefined)
+    def setScreenViewingUrl(value: UriType): Self = StObject.set(x, "ScreenViewingUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenSharingUrl(value: UriType): Self = this.set("ScreenSharingUrl", value.asInstanceOf[js.Any])
+    def setScreenViewingUrlUndefined: Self = StObject.set(x, "ScreenViewingUrl", js.undefined)
     
     @scala.inline
-    def deleteScreenSharingUrl: Self = this.set("ScreenSharingUrl", js.undefined)
+    def setSignalingUrl(value: UriType): Self = StObject.set(x, "SignalingUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenViewingUrl(value: UriType): Self = this.set("ScreenViewingUrl", value.asInstanceOf[js.Any])
+    def setSignalingUrlUndefined: Self = StObject.set(x, "SignalingUrl", js.undefined)
     
     @scala.inline
-    def deleteScreenViewingUrl: Self = this.set("ScreenViewingUrl", js.undefined)
+    def setTurnControlUrl(value: UriType): Self = StObject.set(x, "TurnControlUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignalingUrl(value: UriType): Self = this.set("SignalingUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignalingUrl: Self = this.set("SignalingUrl", js.undefined)
-    
-    @scala.inline
-    def setTurnControlUrl(value: UriType): Self = this.set("TurnControlUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTurnControlUrl: Self = this.set("TurnControlUrl", js.undefined)
+    def setTurnControlUrlUndefined: Self = StObject.set(x, "TurnControlUrl", js.undefined)
   }
 }

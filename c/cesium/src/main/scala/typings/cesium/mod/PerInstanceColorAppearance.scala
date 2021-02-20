@@ -1,6 +1,7 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.Flat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,12 +17,23 @@ class PerInstanceColorAppearance () extends Appearance {
   
   val vertexFormat: VertexFormat = js.native
 }
-/* static members */
-@JSImport("cesium", "PerInstanceColorAppearance")
-@js.native
-object PerInstanceColorAppearance extends js.Object {
+object PerInstanceColorAppearance {
   
-  var FLAT_VERTEX_FORMAT: VertexFormat = js.native
+  @JSImport("cesium", "PerInstanceColorAppearance")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var VERTEX_FORMAT: VertexFormat = js.native
+  /* static member */
+  @JSImport("cesium", "PerInstanceColorAppearance.FLAT_VERTEX_FORMAT")
+  @js.native
+  def FLAT_VERTEX_FORMAT: VertexFormat = js.native
+  @scala.inline
+  def FLAT_VERTEX_FORMAT_=(x: VertexFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FLAT_VERTEX_FORMAT")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("cesium", "PerInstanceColorAppearance.VERTEX_FORMAT")
+  @js.native
+  def VERTEX_FORMAT: VertexFormat = js.native
+  @scala.inline
+  def VERTEX_FORMAT_=(x: VertexFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERTEX_FORMAT")(x.asInstanceOf[js.Any])
 }

@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowV2beta1WebhookResponse extends js.Object {
+trait GoogleCloudDialogflowV2beta1WebhookResponse extends StObject {
   
   /**
     * Optional. Indicates that this intent ends an interaction. Some integrations (e.g., Actions on Google or Dialogflow phone gateway) use this information to close interaction with an
@@ -68,79 +69,67 @@ object GoogleCloudDialogflowV2beta1WebhookResponse {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1WebhookResponseOps[Self <: GoogleCloudDialogflowV2beta1WebhookResponse] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowV2beta1WebhookResponseMutableBuilder[Self <: GoogleCloudDialogflowV2beta1WebhookResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndInteraction(value: Boolean): Self = StObject.set(x, "endInteraction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndInteractionUndefined: Self = StObject.set(x, "endInteraction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFollowupEventInput(value: GoogleCloudDialogflowV2beta1EventInput): Self = StObject.set(x, "followupEventInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndInteraction(value: Boolean): Self = this.set("endInteraction", value.asInstanceOf[js.Any])
+    def setFollowupEventInputUndefined: Self = StObject.set(x, "followupEventInput", js.undefined)
     
     @scala.inline
-    def deleteEndInteraction: Self = this.set("endInteraction", js.undefined)
+    def setFulfillmentMessages(value: js.Array[GoogleCloudDialogflowV2beta1IntentMessage]): Self = StObject.set(x, "fulfillmentMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowupEventInput(value: GoogleCloudDialogflowV2beta1EventInput): Self = this.set("followupEventInput", value.asInstanceOf[js.Any])
+    def setFulfillmentMessagesUndefined: Self = StObject.set(x, "fulfillmentMessages", js.undefined)
     
     @scala.inline
-    def deleteFollowupEventInput: Self = this.set("followupEventInput", js.undefined)
+    def setFulfillmentMessagesVarargs(value: GoogleCloudDialogflowV2beta1IntentMessage*): Self = StObject.set(x, "fulfillmentMessages", js.Array(value :_*))
     
     @scala.inline
-    def setFulfillmentMessagesVarargs(value: GoogleCloudDialogflowV2beta1IntentMessage*): Self = this.set("fulfillmentMessages", js.Array(value :_*))
+    def setFulfillmentText(value: String): Self = StObject.set(x, "fulfillmentText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFulfillmentMessages(value: js.Array[GoogleCloudDialogflowV2beta1IntentMessage]): Self = this.set("fulfillmentMessages", value.asInstanceOf[js.Any])
+    def setFulfillmentTextUndefined: Self = StObject.set(x, "fulfillmentText", js.undefined)
     
     @scala.inline
-    def deleteFulfillmentMessages: Self = this.set("fulfillmentMessages", js.undefined)
+    def setOutputContexts(value: js.Array[GoogleCloudDialogflowV2beta1Context]): Self = StObject.set(x, "outputContexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFulfillmentText(value: String): Self = this.set("fulfillmentText", value.asInstanceOf[js.Any])
+    def setOutputContextsUndefined: Self = StObject.set(x, "outputContexts", js.undefined)
     
     @scala.inline
-    def deleteFulfillmentText: Self = this.set("fulfillmentText", js.undefined)
-    
-    @scala.inline
-    def setOutputContextsVarargs(value: GoogleCloudDialogflowV2beta1Context*): Self = this.set("outputContexts", js.Array(value :_*))
-    
-    @scala.inline
-    def setOutputContexts(value: js.Array[GoogleCloudDialogflowV2beta1Context]): Self = this.set("outputContexts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputContexts: Self = this.set("outputContexts", js.undefined)
+    def setOutputContextsVarargs(value: GoogleCloudDialogflowV2beta1Context*): Self = StObject.set(x, "outputContexts", js.Array(value :_*))
     
     @scala.inline
     def setPayload(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2beta1WebhookResponse with TopLevel[js.Any]
-    ): Self = this.set("payload", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     @scala.inline
-    def setSessionEntityTypesVarargs(value: GoogleCloudDialogflowV2beta1SessionEntityType*): Self = this.set("sessionEntityTypes", js.Array(value :_*))
+    def setSessionEntityTypes(value: js.Array[GoogleCloudDialogflowV2beta1SessionEntityType]): Self = StObject.set(x, "sessionEntityTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionEntityTypes(value: js.Array[GoogleCloudDialogflowV2beta1SessionEntityType]): Self = this.set("sessionEntityTypes", value.asInstanceOf[js.Any])
+    def setSessionEntityTypesUndefined: Self = StObject.set(x, "sessionEntityTypes", js.undefined)
     
     @scala.inline
-    def deleteSessionEntityTypes: Self = this.set("sessionEntityTypes", js.undefined)
+    def setSessionEntityTypesVarargs(value: GoogleCloudDialogflowV2beta1SessionEntityType*): Self = StObject.set(x, "sessionEntityTypes", js.Array(value :_*))
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

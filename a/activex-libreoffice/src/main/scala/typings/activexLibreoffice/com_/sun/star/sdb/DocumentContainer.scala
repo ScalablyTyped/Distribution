@@ -1,24 +1,10 @@
 package typings.activexLibreoffice.com_.sun.star.sdb
 
-import typings.activexLibreoffice.com_.sun.star.beans.XPropertiesChangeNotifier
-import typings.activexLibreoffice.com_.sun.star.beans.XPropertyContainer
-import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfoChangeNotifier
-import typings.activexLibreoffice.com_.sun.star.container.XChild
-import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
-import typings.activexLibreoffice.com_.sun.star.container.XHierarchicalName
 import typings.activexLibreoffice.com_.sun.star.container.XHierarchicalNameContainer
-import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
-import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.frame.XComponentLoader
-import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
-import typings.activexLibreoffice.com_.sun.star.lang.XSingleServiceFactory
-import typings.activexLibreoffice.com_.sun.star.ucb.XCommandInfoChangeNotifier
-import typings.activexLibreoffice.com_.sun.star.ucb.XCommandProcessor2
-import typings.activexLibreoffice.com_.sun.star.ucb.XContent
-import typings.activexLibreoffice.com_.sun.star.ucb.XContentCreator
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
-import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,21 +23,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait DocumentContainer
-  extends XNameContainer
-     with XIndexAccess
-     with XEnumerationAccess
-     with XRefreshable
-     with XSingleServiceFactory
-     with XContent
-     with XComponent
-     with XCommandProcessor2
-     with XPropertiesChangeNotifier
-     with XPropertyContainer
-     with XPropertySetInfoChangeNotifier
-     with XCommandInfoChangeNotifier
-     with XContentCreator
-     with XChild
-     with XHierarchicalName
+  extends DefinitionContent
+     with DefinitionContainer
      with XComponentLoader
      with XMultiServiceFactory
      with XHierarchicalNameContainer {

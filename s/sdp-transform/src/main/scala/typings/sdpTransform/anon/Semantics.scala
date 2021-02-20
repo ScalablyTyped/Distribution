@@ -1,11 +1,12 @@
 package typings.sdpTransform.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Semantics extends js.Object {
+trait Semantics extends StObject {
   
   var semantics: String = js.native
   
@@ -20,24 +21,12 @@ object Semantics {
   }
   
   @scala.inline
-  implicit class SemanticsOps[Self <: Semantics] (val x: Self) extends AnyVal {
+  implicit class SemanticsMutableBuilder[Self <: Semantics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSemantics(value: String): Self = StObject.set(x, "semantics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSemantics(value: String): Self = this.set("semantics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSsrcs(value: String): Self = this.set("ssrcs", value.asInstanceOf[js.Any])
+    def setSsrcs(value: String): Self = StObject.set(x, "ssrcs", value.asInstanceOf[js.Any])
   }
 }

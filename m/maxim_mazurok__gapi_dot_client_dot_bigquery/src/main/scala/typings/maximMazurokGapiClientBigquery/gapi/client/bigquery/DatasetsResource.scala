@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientBigquery.anon.DatasetId
 import typings.maximMazurokGapiClientBigquery.anon.Fields
 import typings.maximMazurokGapiClientBigquery.anon.Key
 import typings.maximMazurokGapiClientBigquery.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatasetsResource extends js.Object {
+trait DatasetsResource extends StObject {
   
   /**
     * Deletes the dataset specified by the datasetId value. Before you can delete a dataset, you must delete all its tables, either manually or by specifying deleteContents. Immediately

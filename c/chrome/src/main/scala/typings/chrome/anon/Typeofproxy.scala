@@ -2,12 +2,13 @@ package typings.chrome.anon
 
 import typings.chrome.chrome.proxy.ProxyErrorEvent
 import typings.chrome.chrome.types.ChromeSetting
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofproxy extends js.Object {
+trait Typeofproxy extends StObject {
   
   var onProxyError: ProxyErrorEvent = js.native
   
@@ -22,24 +23,12 @@ object Typeofproxy {
   }
   
   @scala.inline
-  implicit class TypeofproxyOps[Self <: Typeofproxy] (val x: Self) extends AnyVal {
+  implicit class TypeofproxyMutableBuilder[Self <: Typeofproxy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnProxyError(value: ProxyErrorEvent): Self = StObject.set(x, "onProxyError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnProxyError(value: ProxyErrorEvent): Self = this.set("onProxyError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSettings(value: ChromeSetting): Self = this.set("settings", value.asInstanceOf[js.Any])
+    def setSettings(value: ChromeSetting): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskRunnerSettings extends js.Object {
+trait TaskRunnerSettings extends StObject {
   
   /** Whether to also send taskrunner log info to stderr. */
   var alsologtostderr: js.UndefOr[Boolean] = js.native
@@ -83,135 +84,123 @@ object TaskRunnerSettings {
   }
   
   @scala.inline
-  implicit class TaskRunnerSettingsOps[Self <: TaskRunnerSettings] (val x: Self) extends AnyVal {
+  implicit class TaskRunnerSettingsMutableBuilder[Self <: TaskRunnerSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlsologtostderr(value: Boolean): Self = StObject.set(x, "alsologtostderr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlsologtostderrUndefined: Self = StObject.set(x, "alsologtostderr", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseTaskDir(value: String): Self = StObject.set(x, "baseTaskDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlsologtostderr(value: Boolean): Self = this.set("alsologtostderr", value.asInstanceOf[js.Any])
+    def setBaseTaskDirUndefined: Self = StObject.set(x, "baseTaskDir", js.undefined)
     
     @scala.inline
-    def deleteAlsologtostderr: Self = this.set("alsologtostderr", js.undefined)
+    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseTaskDir(value: String): Self = this.set("baseTaskDir", value.asInstanceOf[js.Any])
+    def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
     
     @scala.inline
-    def deleteBaseTaskDir: Self = this.set("baseTaskDir", js.undefined)
+    def setCommandlinesFileName(value: String): Self = StObject.set(x, "commandlinesFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseUrl(value: String): Self = this.set("baseUrl", value.asInstanceOf[js.Any])
+    def setCommandlinesFileNameUndefined: Self = StObject.set(x, "commandlinesFileName", js.undefined)
     
     @scala.inline
-    def deleteBaseUrl: Self = this.set("baseUrl", js.undefined)
+    def setContinueOnException(value: Boolean): Self = StObject.set(x, "continueOnException", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommandlinesFileName(value: String): Self = this.set("commandlinesFileName", value.asInstanceOf[js.Any])
+    def setContinueOnExceptionUndefined: Self = StObject.set(x, "continueOnException", js.undefined)
     
     @scala.inline
-    def deleteCommandlinesFileName: Self = this.set("commandlinesFileName", js.undefined)
+    def setDataflowApiVersion(value: String): Self = StObject.set(x, "dataflowApiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinueOnException(value: Boolean): Self = this.set("continueOnException", value.asInstanceOf[js.Any])
+    def setDataflowApiVersionUndefined: Self = StObject.set(x, "dataflowApiVersion", js.undefined)
     
     @scala.inline
-    def deleteContinueOnException: Self = this.set("continueOnException", js.undefined)
+    def setHarnessCommand(value: String): Self = StObject.set(x, "harnessCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataflowApiVersion(value: String): Self = this.set("dataflowApiVersion", value.asInstanceOf[js.Any])
+    def setHarnessCommandUndefined: Self = StObject.set(x, "harnessCommand", js.undefined)
     
     @scala.inline
-    def deleteDataflowApiVersion: Self = this.set("dataflowApiVersion", js.undefined)
+    def setLanguageHint(value: String): Self = StObject.set(x, "languageHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHarnessCommand(value: String): Self = this.set("harnessCommand", value.asInstanceOf[js.Any])
+    def setLanguageHintUndefined: Self = StObject.set(x, "languageHint", js.undefined)
     
     @scala.inline
-    def deleteHarnessCommand: Self = this.set("harnessCommand", js.undefined)
+    def setLogDir(value: String): Self = StObject.set(x, "logDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageHint(value: String): Self = this.set("languageHint", value.asInstanceOf[js.Any])
+    def setLogDirUndefined: Self = StObject.set(x, "logDir", js.undefined)
     
     @scala.inline
-    def deleteLanguageHint: Self = this.set("languageHint", js.undefined)
+    def setLogToSerialconsole(value: Boolean): Self = StObject.set(x, "logToSerialconsole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogDir(value: String): Self = this.set("logDir", value.asInstanceOf[js.Any])
+    def setLogToSerialconsoleUndefined: Self = StObject.set(x, "logToSerialconsole", js.undefined)
     
     @scala.inline
-    def deleteLogDir: Self = this.set("logDir", js.undefined)
+    def setLogUploadLocation(value: String): Self = StObject.set(x, "logUploadLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogToSerialconsole(value: Boolean): Self = this.set("logToSerialconsole", value.asInstanceOf[js.Any])
+    def setLogUploadLocationUndefined: Self = StObject.set(x, "logUploadLocation", js.undefined)
     
     @scala.inline
-    def deleteLogToSerialconsole: Self = this.set("logToSerialconsole", js.undefined)
+    def setOauthScopes(value: js.Array[String]): Self = StObject.set(x, "oauthScopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogUploadLocation(value: String): Self = this.set("logUploadLocation", value.asInstanceOf[js.Any])
+    def setOauthScopesUndefined: Self = StObject.set(x, "oauthScopes", js.undefined)
     
     @scala.inline
-    def deleteLogUploadLocation: Self = this.set("logUploadLocation", js.undefined)
+    def setOauthScopesVarargs(value: String*): Self = StObject.set(x, "oauthScopes", js.Array(value :_*))
     
     @scala.inline
-    def setOauthScopesVarargs(value: String*): Self = this.set("oauthScopes", js.Array(value :_*))
+    def setParallelWorkerSettings(value: WorkerSettings): Self = StObject.set(x, "parallelWorkerSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOauthScopes(value: js.Array[String]): Self = this.set("oauthScopes", value.asInstanceOf[js.Any])
+    def setParallelWorkerSettingsUndefined: Self = StObject.set(x, "parallelWorkerSettings", js.undefined)
     
     @scala.inline
-    def deleteOauthScopes: Self = this.set("oauthScopes", js.undefined)
+    def setStreamingWorkerMainClass(value: String): Self = StObject.set(x, "streamingWorkerMainClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParallelWorkerSettings(value: WorkerSettings): Self = this.set("parallelWorkerSettings", value.asInstanceOf[js.Any])
+    def setStreamingWorkerMainClassUndefined: Self = StObject.set(x, "streamingWorkerMainClass", js.undefined)
     
     @scala.inline
-    def deleteParallelWorkerSettings: Self = this.set("parallelWorkerSettings", js.undefined)
+    def setTaskGroup(value: String): Self = StObject.set(x, "taskGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamingWorkerMainClass(value: String): Self = this.set("streamingWorkerMainClass", value.asInstanceOf[js.Any])
+    def setTaskGroupUndefined: Self = StObject.set(x, "taskGroup", js.undefined)
     
     @scala.inline
-    def deleteStreamingWorkerMainClass: Self = this.set("streamingWorkerMainClass", js.undefined)
+    def setTaskUser(value: String): Self = StObject.set(x, "taskUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskGroup(value: String): Self = this.set("taskGroup", value.asInstanceOf[js.Any])
+    def setTaskUserUndefined: Self = StObject.set(x, "taskUser", js.undefined)
     
     @scala.inline
-    def deleteTaskGroup: Self = this.set("taskGroup", js.undefined)
+    def setTempStoragePrefix(value: String): Self = StObject.set(x, "tempStoragePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskUser(value: String): Self = this.set("taskUser", value.asInstanceOf[js.Any])
+    def setTempStoragePrefixUndefined: Self = StObject.set(x, "tempStoragePrefix", js.undefined)
     
     @scala.inline
-    def deleteTaskUser: Self = this.set("taskUser", js.undefined)
+    def setVmId(value: String): Self = StObject.set(x, "vmId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTempStoragePrefix(value: String): Self = this.set("tempStoragePrefix", value.asInstanceOf[js.Any])
+    def setVmIdUndefined: Self = StObject.set(x, "vmId", js.undefined)
     
     @scala.inline
-    def deleteTempStoragePrefix: Self = this.set("tempStoragePrefix", js.undefined)
+    def setWorkflowFileName(value: String): Self = StObject.set(x, "workflowFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVmId(value: String): Self = this.set("vmId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVmId: Self = this.set("vmId", js.undefined)
-    
-    @scala.inline
-    def setWorkflowFileName(value: String): Self = this.set("workflowFileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkflowFileName: Self = this.set("workflowFileName", js.undefined)
+    def setWorkflowFileNameUndefined: Self = StObject.set(x, "workflowFileName", js.undefined)
   }
 }

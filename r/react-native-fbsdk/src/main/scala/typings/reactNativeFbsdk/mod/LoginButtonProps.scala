@@ -1,12 +1,13 @@
 package typings.reactNativeFbsdk.mod
 
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoginButtonProps extends js.Object {
+trait LoginButtonProps extends StObject {
   
   /**
     * The default audience to target when attempting a login.
@@ -61,69 +62,57 @@ object LoginButtonProps {
   }
   
   @scala.inline
-  implicit class LoginButtonPropsOps[Self <: LoginButtonProps] (val x: Self) extends AnyVal {
+  implicit class LoginButtonPropsMutableBuilder[Self <: LoginButtonProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultAudience(value: DefaultAudience): Self = StObject.set(x, "defaultAudience", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultAudienceUndefined: Self = StObject.set(x, "defaultAudience", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoginBehaviorAndroid(value: LoginBehaviorAndroid): Self = StObject.set(x, "loginBehaviorAndroid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultAudience(value: DefaultAudience): Self = this.set("defaultAudience", value.asInstanceOf[js.Any])
+    def setLoginBehaviorAndroidUndefined: Self = StObject.set(x, "loginBehaviorAndroid", js.undefined)
     
     @scala.inline
-    def deleteDefaultAudience: Self = this.set("defaultAudience", js.undefined)
+    def setLoginBehaviorIOS(value: LoginBehaviorIOS): Self = StObject.set(x, "loginBehaviorIOS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoginBehaviorAndroid(value: LoginBehaviorAndroid): Self = this.set("loginBehaviorAndroid", value.asInstanceOf[js.Any])
+    def setLoginBehaviorIOSUndefined: Self = StObject.set(x, "loginBehaviorIOS", js.undefined)
     
     @scala.inline
-    def deleteLoginBehaviorAndroid: Self = this.set("loginBehaviorAndroid", js.undefined)
+    def setOnLoginFinished(value: (/* error */ js.Object, /* result */ LoginResult) => Unit): Self = StObject.set(x, "onLoginFinished", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLoginBehaviorIOS(value: LoginBehaviorIOS): Self = this.set("loginBehaviorIOS", value.asInstanceOf[js.Any])
+    def setOnLoginFinishedUndefined: Self = StObject.set(x, "onLoginFinished", js.undefined)
     
     @scala.inline
-    def deleteLoginBehaviorIOS: Self = this.set("loginBehaviorIOS", js.undefined)
+    def setOnLogoutFinished(value: () => Unit): Self = StObject.set(x, "onLogoutFinished", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnLoginFinished(value: (/* error */ js.Object, /* result */ LoginResult) => Unit): Self = this.set("onLoginFinished", js.Any.fromFunction2(value))
+    def setOnLogoutFinishedUndefined: Self = StObject.set(x, "onLogoutFinished", js.undefined)
     
     @scala.inline
-    def deleteOnLoginFinished: Self = this.set("onLoginFinished", js.undefined)
+    def setPermissions(value: js.Array[Permissions]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnLogoutFinished(value: () => Unit): Self = this.set("onLogoutFinished", js.Any.fromFunction0(value))
+    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
     @scala.inline
-    def deleteOnLogoutFinished: Self = this.set("onLogoutFinished", js.undefined)
+    def setPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "permissions", js.Array(value :_*))
     
     @scala.inline
-    def setPermissionsVarargs(value: Permissions*): Self = this.set("permissions", js.Array(value :_*))
+    def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissions(value: js.Array[Permissions]): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deletePermissions: Self = this.set("permissions", js.undefined)
+    def setTooltipBehaviorIOS(value: TooltipBehaviorIOS): Self = StObject.set(x, "tooltipBehaviorIOS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: ViewStyle): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setTooltipBehaviorIOS(value: TooltipBehaviorIOS): Self = this.set("tooltipBehaviorIOS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltipBehaviorIOS: Self = this.set("tooltipBehaviorIOS", js.undefined)
+    def setTooltipBehaviorIOSUndefined: Self = StObject.set(x, "tooltipBehaviorIOS", js.undefined)
   }
 }

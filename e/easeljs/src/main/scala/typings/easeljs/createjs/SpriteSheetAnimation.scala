@@ -1,12 +1,13 @@
 package typings.easeljs.createjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // what is returned from SpriteSheet.getAnimation(string)
 @js.native
-trait SpriteSheetAnimation extends js.Object {
+trait SpriteSheetAnimation extends StObject {
   
   var frames: js.Array[Double] = js.native
   
@@ -25,33 +26,21 @@ object SpriteSheetAnimation {
   }
   
   @scala.inline
-  implicit class SpriteSheetAnimationOps[Self <: SpriteSheetAnimation] (val x: Self) extends AnyVal {
+  implicit class SpriteSheetAnimationMutableBuilder[Self <: SpriteSheetAnimation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrames(value: js.Array[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFramesVarargs(value: Double*): Self = StObject.set(x, "frames", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramesVarargs(value: Double*): Self = this.set("frames", js.Array(value :_*))
+    def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrames(value: js.Array[Double]): Self = this.set("frames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNext(value: String): Self = this.set("next", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpeed(value: Double): Self = this.set("speed", value.asInstanceOf[js.Any])
+    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
   }
 }

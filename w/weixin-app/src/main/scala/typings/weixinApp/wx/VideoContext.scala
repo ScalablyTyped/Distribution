@@ -7,15 +7,16 @@ import typings.weixinApp.weixinAppNumbers.`0.8`
 import typings.weixinApp.weixinAppNumbers.`1.0`
 import typings.weixinApp.weixinAppNumbers.`1.25`
 import typings.weixinApp.weixinAppNumbers.`1.5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 媒体-----视频组件控制
 @js.native
-trait VideoContext extends js.Object {
+trait VideoContext extends StObject {
   
-   // 进入全屏
+  // 进入全屏
   /**
     * 退出全屏
     */

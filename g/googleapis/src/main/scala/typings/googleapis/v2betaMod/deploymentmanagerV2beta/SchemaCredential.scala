@@ -1,5 +1,6 @@
 package typings.googleapis.v2betaMod.deploymentmanagerV2beta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * options is permitted.
   */
 @js.native
-trait SchemaCredential extends js.Object {
+trait SchemaCredential extends StObject {
   
   /**
     * Basic Auth Credential, only used by TypeProvider.
@@ -36,36 +37,24 @@ object SchemaCredential {
   }
   
   @scala.inline
-  implicit class SchemaCredentialOps[Self <: SchemaCredential] (val x: Self) extends AnyVal {
+  implicit class SchemaCredentialMutableBuilder[Self <: SchemaCredential] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasicAuth(value: SchemaBasicAuth): Self = StObject.set(x, "basicAuth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasicAuthUndefined: Self = StObject.set(x, "basicAuth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServiceAccount(value: SchemaServiceAccount): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasicAuth(value: SchemaBasicAuth): Self = this.set("basicAuth", value.asInstanceOf[js.Any])
+    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
     @scala.inline
-    def deleteBasicAuth: Self = this.set("basicAuth", js.undefined)
+    def setUseProjectDefault(value: Boolean): Self = StObject.set(x, "useProjectDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAccount(value: SchemaServiceAccount): Self = this.set("serviceAccount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceAccount: Self = this.set("serviceAccount", js.undefined)
-    
-    @scala.inline
-    def setUseProjectDefault(value: Boolean): Self = this.set("useProjectDefault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseProjectDefault: Self = this.set("useProjectDefault", js.undefined)
+    def setUseProjectDefaultUndefined: Self = StObject.set(x, "useProjectDefault", js.undefined)
   }
 }

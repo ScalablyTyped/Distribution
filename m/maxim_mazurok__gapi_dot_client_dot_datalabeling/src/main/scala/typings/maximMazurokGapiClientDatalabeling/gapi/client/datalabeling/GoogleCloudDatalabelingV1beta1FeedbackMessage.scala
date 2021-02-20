@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1FeedbackMessage extends js.Object {
+trait GoogleCloudDatalabelingV1beta1FeedbackMessage extends StObject {
   
   /** String content of the feedback. Maximum of 10000 characters. */
   var body: js.UndefOr[String] = js.native
@@ -35,54 +36,42 @@ object GoogleCloudDatalabelingV1beta1FeedbackMessage {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1FeedbackMessageOps[Self <: GoogleCloudDatalabelingV1beta1FeedbackMessage] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1FeedbackMessageMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1FeedbackMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setOperatorFeedbackMetadata(value: js.Any): Self = StObject.set(x, "operatorFeedbackMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOperatorFeedbackMetadataUndefined: Self = StObject.set(x, "operatorFeedbackMetadata", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRequesterFeedbackMetadata(value: js.Any): Self = StObject.set(x, "requesterFeedbackMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperatorFeedbackMetadata(value: js.Any): Self = this.set("operatorFeedbackMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperatorFeedbackMetadata: Self = this.set("operatorFeedbackMetadata", js.undefined)
-    
-    @scala.inline
-    def setRequesterFeedbackMetadata(value: js.Any): Self = this.set("requesterFeedbackMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequesterFeedbackMetadata: Self = this.set("requesterFeedbackMetadata", js.undefined)
+    def setRequesterFeedbackMetadataUndefined: Self = StObject.set(x, "requesterFeedbackMetadata", js.undefined)
   }
 }

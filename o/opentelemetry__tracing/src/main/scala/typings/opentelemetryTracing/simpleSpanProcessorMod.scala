@@ -2,14 +2,14 @@ package typings.opentelemetryTracing
 
 import typings.opentelemetryTracing.spanExporterMod.SpanExporter
 import typings.opentelemetryTracing.spanProcessorMod.SpanProcessor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/tracing/build/src/export/SimpleSpanProcessor", JSImport.Namespace)
-@js.native
-object simpleSpanProcessorMod extends js.Object {
+object simpleSpanProcessorMod {
   
+  @JSImport("@opentelemetry/tracing/build/src/export/SimpleSpanProcessor", "SimpleSpanProcessor")
   @js.native
   class SimpleSpanProcessor protected () extends SpanProcessor {
     def this(_exporter: SpanExporter) = this()

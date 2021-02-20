@@ -2,12 +2,13 @@ package typings.mfiles
 
 import typings.mfiles.MFiles.MFFolderListingItemGroupingMode
 import typings.mfiles.MFiles.MFFolderListingViewMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFolderListingUIState extends js.Object {
+trait IFolderListingUIState extends StObject {
   
   var ColumnSortings: IFolderListingColumnSortings = js.native
   
@@ -34,33 +35,21 @@ object IFolderListingUIState {
   }
   
   @scala.inline
-  implicit class IFolderListingUIStateOps[Self <: IFolderListingUIState] (val x: Self) extends AnyVal {
+  implicit class IFolderListingUIStateMutableBuilder[Self <: IFolderListingUIState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnSortings(value: IFolderListingColumnSortings): Self = StObject.set(x, "ColumnSortings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumns(value: IFolderListingColumns): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupingMode(value: MFFolderListingItemGroupingMode): Self = StObject.set(x, "GroupingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnSortings(value: IFolderListingColumnSortings): Self = this.set("ColumnSortings", value.asInstanceOf[js.Any])
+    def setIconSize(value: Double): Self = StObject.set(x, "IconSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: IFolderListingColumns): Self = this.set("Columns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGroupingMode(value: MFFolderListingItemGroupingMode): Self = this.set("GroupingMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIconSize(value: Double): Self = this.set("IconSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewMode(value: MFFolderListingViewMode): Self = this.set("ViewMode", value.asInstanceOf[js.Any])
+    def setViewMode(value: MFFolderListingViewMode): Self = StObject.set(x, "ViewMode", value.asInstanceOf[js.Any])
   }
 }

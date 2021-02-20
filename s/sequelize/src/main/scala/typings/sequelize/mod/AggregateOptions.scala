@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,48 +48,36 @@ object AggregateOptions {
   }
   
   @scala.inline
-  implicit class AggregateOptionsOps[Self <: AggregateOptions] (val x: Self) extends AnyVal {
+  implicit class AggregateOptionsMutableBuilder[Self <: AggregateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataType(value: DataTypeAbstract | String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistinct(value: Boolean): Self = StObject.set(x, "distinct", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: DataTypeAbstract | String): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    def setDistinctUndefined: Self = StObject.set(x, "distinct", js.undefined)
     
     @scala.inline
-    def deleteDataType: Self = this.set("dataType", js.undefined)
+    def setPlain(value: Boolean): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistinct(value: Boolean): Self = this.set("distinct", value.asInstanceOf[js.Any])
+    def setPlainUndefined: Self = StObject.set(x, "plain", js.undefined)
     
     @scala.inline
-    def deleteDistinct: Self = this.set("distinct", js.undefined)
+    def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlain(value: Boolean): Self = this.set("plain", value.asInstanceOf[js.Any])
+    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
     
     @scala.inline
-    def deletePlain: Self = this.set("plain", js.undefined)
+    def setWhere(value: AnyWhereOptions): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransaction(value: Transaction): Self = this.set("transaction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransaction: Self = this.set("transaction", js.undefined)
-    
-    @scala.inline
-    def setWhere(value: AnyWhereOptions): Self = this.set("where", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhere: Self = this.set("where", js.undefined)
+    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
   }
 }

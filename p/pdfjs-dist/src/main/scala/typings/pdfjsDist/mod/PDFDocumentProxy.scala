@@ -2,12 +2,13 @@ package typings.pdfjsDist.mod
 
 import typings.pdfjsDist.anon.Info
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PDFDocumentProxy extends js.Object {
+trait PDFDocumentProxy extends StObject {
   
   /**
     * TODO: return type of Promise<???>
@@ -94,54 +95,42 @@ object PDFDocumentProxy {
   }
   
   @scala.inline
-  implicit class PDFDocumentProxyOps[Self <: PDFDocumentProxy] (val x: Self) extends AnyVal {
+  implicit class PDFDocumentProxyMutableBuilder[Self <: PDFDocumentProxy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataLoaded(value: () => PDFPromise[js.Array[_]]): Self = StObject.set(x, "dataLoaded", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmbeddedFontsUsed(value: () => Boolean): Self = StObject.set(x, "embeddedFontsUsed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDataLoaded(value: () => PDFPromise[js.Array[_]]): Self = this.set("dataLoaded", js.Any.fromFunction0(value))
+    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setGetData(value: () => PDFPromise[Uint8Array]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEmbeddedFontsUsed(value: () => Boolean): Self = this.set("embeddedFontsUsed", js.Any.fromFunction0(value))
+    def setGetDestinations(value: () => PDFPromise[js.Array[_]]): Self = StObject.set(x, "getDestinations", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    def setGetJavaScript(value: () => PDFPromise[js.Array[String]]): Self = StObject.set(x, "getJavaScript", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetData(value: () => PDFPromise[Uint8Array]): Self = this.set("getData", js.Any.fromFunction0(value))
+    def setGetMetadata(value: () => PDFPromise[Info]): Self = StObject.set(x, "getMetadata", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDestinations(value: () => PDFPromise[js.Array[_]]): Self = this.set("getDestinations", js.Any.fromFunction0(value))
+    def setGetOutline(value: () => PDFPromise[js.Array[PDFTreeNode]]): Self = StObject.set(x, "getOutline", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetJavaScript(value: () => PDFPromise[js.Array[String]]): Self = this.set("getJavaScript", js.Any.fromFunction0(value))
+    def setGetPage(value: Double => PDFPromise[PDFPageProxy]): Self = StObject.set(x, "getPage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMetadata(value: () => PDFPromise[Info]): Self = this.set("getMetadata", js.Any.fromFunction0(value))
+    def setIsEncrypted(value: () => PDFPromise[Boolean]): Self = StObject.set(x, "isEncrypted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOutline(value: () => PDFPromise[js.Array[PDFTreeNode]]): Self = this.set("getOutline", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPage(value: Double => PDFPromise[PDFPageProxy]): Self = this.set("getPage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsEncrypted(value: () => PDFPromise[Boolean]): Self = this.set("isEncrypted", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setNumPages(value: Double): Self = this.set("numPages", value.asInstanceOf[js.Any])
+    def setNumPages(value: Double): Self = StObject.set(x, "numPages", value.asInstanceOf[js.Any])
   }
 }

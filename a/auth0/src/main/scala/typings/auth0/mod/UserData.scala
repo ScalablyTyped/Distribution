@@ -1,11 +1,12 @@
 package typings.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserData[A, U] extends js.Object {
+trait UserData[A, U] extends StObject {
   
   var app_metadata: js.UndefOr[A] = js.native
   
@@ -48,114 +49,102 @@ object UserData {
   }
   
   @scala.inline
-  implicit class UserDataOps[Self <: UserData[_, _], A, U] (val x: Self with (UserData[A, U])) extends AnyVal {
+  implicit class UserDataMutableBuilder[Self <: UserData[_, _], A, U] (val x: Self with (UserData[A, U])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApp_metadata(value: A): Self = StObject.set(x, "app_metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApp_metadataUndefined: Self = StObject.set(x, "app_metadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlocked(value: Boolean): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApp_metadata(value: A): Self = this.set("app_metadata", value.asInstanceOf[js.Any])
+    def setBlockedUndefined: Self = StObject.set(x, "blocked", js.undefined)
     
     @scala.inline
-    def deleteApp_metadata: Self = this.set("app_metadata", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlocked(value: Boolean): Self = this.set("blocked", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteBlocked: Self = this.set("blocked", js.undefined)
+    def setEmail_verified(value: Boolean): Self = StObject.set(x, "email_verified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setEmail_verifiedUndefined: Self = StObject.set(x, "email_verified", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setFamily_name(value: String): Self = StObject.set(x, "family_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail_verified(value: Boolean): Self = this.set("email_verified", value.asInstanceOf[js.Any])
+    def setFamily_nameUndefined: Self = StObject.set(x, "family_name", js.undefined)
     
     @scala.inline
-    def deleteEmail_verified: Self = this.set("email_verified", js.undefined)
+    def setGiven_name(value: String): Self = StObject.set(x, "given_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamily_name(value: String): Self = this.set("family_name", value.asInstanceOf[js.Any])
+    def setGiven_nameUndefined: Self = StObject.set(x, "given_name", js.undefined)
     
     @scala.inline
-    def deleteFamily_name: Self = this.set("family_name", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGiven_name(value: String): Self = this.set("given_name", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteGiven_name: Self = this.set("given_name", js.undefined)
+    def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNickname(value: String): Self = this.set("nickname", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteNickname: Self = this.set("nickname", js.undefined)
+    def setPhone_number(value: String): Self = StObject.set(x, "phone_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setPhone_numberUndefined: Self = StObject.set(x, "phone_number", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setPhone_verified(value: Boolean): Self = StObject.set(x, "phone_verified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhone_number(value: String): Self = this.set("phone_number", value.asInstanceOf[js.Any])
+    def setPhone_verifiedUndefined: Self = StObject.set(x, "phone_verified", js.undefined)
     
     @scala.inline
-    def deletePhone_number: Self = this.set("phone_number", js.undefined)
+    def setPicture(value: String): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhone_verified(value: Boolean): Self = this.set("phone_verified", value.asInstanceOf[js.Any])
+    def setPictureUndefined: Self = StObject.set(x, "picture", js.undefined)
     
     @scala.inline
-    def deletePhone_verified: Self = this.set("phone_verified", js.undefined)
+    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPicture(value: String): Self = this.set("picture", value.asInstanceOf[js.Any])
+    def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
     
     @scala.inline
-    def deletePicture: Self = this.set("picture", js.undefined)
+    def setUser_metadata(value: U): Self = StObject.set(x, "user_metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser_id(value: String): Self = this.set("user_id", value.asInstanceOf[js.Any])
+    def setUser_metadataUndefined: Self = StObject.set(x, "user_metadata", js.undefined)
     
     @scala.inline
-    def deleteUser_id: Self = this.set("user_id", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser_metadata(value: U): Self = this.set("user_metadata", value.asInstanceOf[js.Any])
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     
     @scala.inline
-    def deleteUser_metadata: Self = this.set("user_metadata", js.undefined)
+    def setVerify_email(value: Boolean): Self = StObject.set(x, "verify_email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
-    
-    @scala.inline
-    def setVerify_email(value: Boolean): Self = this.set("verify_email", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerify_email: Self = this.set("verify_email", js.undefined)
+    def setVerify_emailUndefined: Self = StObject.set(x, "verify_email", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.breeze.mod
 
 import typings.breeze.breeze.MetadataStoreOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +13,13 @@ class MetadataStore ()
   def this(config: MetadataStoreOptions) = this()
 }
 /* static members */
-@JSImport("breeze", "MetadataStore")
-@js.native
-object MetadataStore extends js.Object {
+object MetadataStore {
   
+  @JSImport("breeze", "MetadataStore.importMetadata")
+  @js.native
   def importMetadata(exportedString: String): typings.breeze.breeze.MetadataStore = js.native
   
+  @JSImport("breeze", "MetadataStore.normalizeTypeName")
+  @js.native
   def normalizeTypeName(typeName: String): String = js.native
 }

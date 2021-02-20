@@ -1,5 +1,6 @@
 package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information about security related device settings on device.
   */
 @js.native
-trait SchemaDeviceSettings extends js.Object {
+trait SchemaDeviceSettings extends StObject {
   
   /**
     * Whether ADB (https://developer.android.com/studio/command-line/adb.html)
@@ -57,60 +58,48 @@ object SchemaDeviceSettings {
   }
   
   @scala.inline
-  implicit class SchemaDeviceSettingsOps[Self <: SchemaDeviceSettings] (val x: Self) extends AnyVal {
+  implicit class SchemaDeviceSettingsMutableBuilder[Self <: SchemaDeviceSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdbEnabled(value: Boolean): Self = StObject.set(x, "adbEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdbEnabledUndefined: Self = StObject.set(x, "adbEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDevelopmentSettingsEnabled(value: Boolean): Self = StObject.set(x, "developmentSettingsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdbEnabled(value: Boolean): Self = this.set("adbEnabled", value.asInstanceOf[js.Any])
+    def setDevelopmentSettingsEnabledUndefined: Self = StObject.set(x, "developmentSettingsEnabled", js.undefined)
     
     @scala.inline
-    def deleteAdbEnabled: Self = this.set("adbEnabled", js.undefined)
+    def setEncryptionStatus(value: String): Self = StObject.set(x, "encryptionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevelopmentSettingsEnabled(value: Boolean): Self = this.set("developmentSettingsEnabled", value.asInstanceOf[js.Any])
+    def setEncryptionStatusUndefined: Self = StObject.set(x, "encryptionStatus", js.undefined)
     
     @scala.inline
-    def deleteDevelopmentSettingsEnabled: Self = this.set("developmentSettingsEnabled", js.undefined)
+    def setIsDeviceSecure(value: Boolean): Self = StObject.set(x, "isDeviceSecure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionStatus(value: String): Self = this.set("encryptionStatus", value.asInstanceOf[js.Any])
+    def setIsDeviceSecureUndefined: Self = StObject.set(x, "isDeviceSecure", js.undefined)
     
     @scala.inline
-    def deleteEncryptionStatus: Self = this.set("encryptionStatus", js.undefined)
+    def setIsEncrypted(value: Boolean): Self = StObject.set(x, "isEncrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDeviceSecure(value: Boolean): Self = this.set("isDeviceSecure", value.asInstanceOf[js.Any])
+    def setIsEncryptedUndefined: Self = StObject.set(x, "isEncrypted", js.undefined)
     
     @scala.inline
-    def deleteIsDeviceSecure: Self = this.set("isDeviceSecure", js.undefined)
+    def setUnknownSourcesEnabled(value: Boolean): Self = StObject.set(x, "unknownSourcesEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEncrypted(value: Boolean): Self = this.set("isEncrypted", value.asInstanceOf[js.Any])
+    def setUnknownSourcesEnabledUndefined: Self = StObject.set(x, "unknownSourcesEnabled", js.undefined)
     
     @scala.inline
-    def deleteIsEncrypted: Self = this.set("isEncrypted", js.undefined)
+    def setVerifyAppsEnabled(value: Boolean): Self = StObject.set(x, "verifyAppsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnknownSourcesEnabled(value: Boolean): Self = this.set("unknownSourcesEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnknownSourcesEnabled: Self = this.set("unknownSourcesEnabled", js.undefined)
-    
-    @scala.inline
-    def setVerifyAppsEnabled(value: Boolean): Self = this.set("verifyAppsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerifyAppsEnabled: Self = this.set("verifyAppsEnabled", js.undefined)
+    def setVerifyAppsEnabledUndefined: Self = StObject.set(x, "verifyAppsEnabled", js.undefined)
   }
 }

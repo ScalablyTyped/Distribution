@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvironmentTextureInfo extends js.Object {
+trait EnvironmentTextureInfo extends StObject {
   
   /**
     * Irradiance information stored in the file.
@@ -36,30 +37,18 @@ object EnvironmentTextureInfo {
   }
   
   @scala.inline
-  implicit class EnvironmentTextureInfoOps[Self <: EnvironmentTextureInfo] (val x: Self) extends AnyVal {
+  implicit class EnvironmentTextureInfoMutableBuilder[Self <: EnvironmentTextureInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIrradiance(value: js.Any): Self = StObject.set(x, "irradiance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSpecular(value: js.Any): Self = StObject.set(x, "specular", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIrradiance(value: js.Any): Self = this.set("irradiance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpecular(value: js.Any): Self = this.set("specular", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

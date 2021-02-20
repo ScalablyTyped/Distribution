@@ -2,12 +2,13 @@ package typings.breeze.anon
 
 import typings.breeze.breeze.EntityError
 import typings.breeze.breeze.HttpResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EntityErrors extends js.Object {
+trait EntityErrors extends StObject {
   
   var entityErrors: js.Array[EntityError] = js.native
   
@@ -28,42 +29,30 @@ object EntityErrors {
   }
   
   @scala.inline
-  implicit class EntityErrorsOps[Self <: EntityErrors] (val x: Self) extends AnyVal {
+  implicit class EntityErrorsMutableBuilder[Self <: EntityErrors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntityErrors(value: js.Array[EntityError]): Self = StObject.set(x, "entityErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityErrorsVarargs(value: EntityError*): Self = StObject.set(x, "entityErrors", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpResponse(value: HttpResponse): Self = StObject.set(x, "httpResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityErrorsVarargs(value: EntityError*): Self = this.set("entityErrors", js.Array(value :_*))
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityErrors(value: js.Array[EntityError]): Self = this.set("entityErrors", value.asInstanceOf[js.Any])
+    def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpResponse(value: HttpResponse): Self = this.set("httpResponse", value.asInstanceOf[js.Any])
+    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStack(value: String): Self = this.set("stack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStack: Self = this.set("stack", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

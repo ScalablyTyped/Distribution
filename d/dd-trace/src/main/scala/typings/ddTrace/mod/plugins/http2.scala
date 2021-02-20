@@ -1,5 +1,6 @@
 package typings.ddTrace.mod.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,6 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.ddTrace.mod.Analyzable because Already inherited
 - typings.ddTrace.mod.plugins.Integration because Already inherited
+- typings.ddTrace.mod.plugins.Instrumentation because Already inherited
 - typings.ddTrace.mod.plugins.Http_ because Already inherited
 - typings.ddTrace.mod.plugins.Http2Server because var conflicts: analytics, blacklist, enabled, headers, service, validateStatus, whitelist. Inlined  */ @js.native
 trait http2 extends Http2Client {
@@ -38,30 +40,18 @@ object http2 {
   }
   
   @scala.inline
-  implicit class http2Ops[Self <: http2] (val x: Self) extends AnyVal {
+  implicit class http2MutableBuilder[Self <: http2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient(value: Http2Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServer(value: Http2Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient(value: Http2Client): Self = this.set("client", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClient: Self = this.set("client", js.undefined)
-    
-    @scala.inline
-    def setServer(value: Http2Server): Self = this.set("server", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServer: Self = this.set("server", js.undefined)
+    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

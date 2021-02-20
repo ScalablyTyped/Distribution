@@ -1,13 +1,14 @@
 package typings.minappEnv.wx
 
 import typings.minappEnv.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 选项 */
 @js.native
-trait CreateIntersectionObserverOption extends js.Object {
+trait CreateIntersectionObserverOption extends StObject {
   
   /** 初始的相交比例，如果调用时检测到的相交比例与这个值不相等且达到阈值，则会触发一次监听器的回调函数。 */
   var initialRatio: js.UndefOr[Double] = js.native
@@ -29,36 +30,24 @@ object CreateIntersectionObserverOption {
   }
   
   @scala.inline
-  implicit class CreateIntersectionObserverOptionOps[Self <: CreateIntersectionObserverOption] (val x: Self) extends AnyVal {
+  implicit class CreateIntersectionObserverOptionMutableBuilder[Self <: CreateIntersectionObserverOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitialRatio(value: Double): Self = StObject.set(x, "initialRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitialRatioUndefined: Self = StObject.set(x, "initialRatio", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObserveAll(value: Boolean): Self = StObject.set(x, "observeAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialRatio(value: Double): Self = this.set("initialRatio", value.asInstanceOf[js.Any])
+    def setObserveAllUndefined: Self = StObject.set(x, "observeAll", js.undefined)
     
     @scala.inline
-    def deleteInitialRatio: Self = this.set("initialRatio", js.undefined)
+    def setThresholds(value: Array[Double]): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObserveAll(value: Boolean): Self = this.set("observeAll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObserveAll: Self = this.set("observeAll", js.undefined)
-    
-    @scala.inline
-    def setThresholds(value: Array[Double]): Self = this.set("thresholds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThresholds: Self = this.set("thresholds", js.undefined)
+    def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)
   }
 }

@@ -10,19 +10,19 @@ import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.typesMod.float
 import typings.std.ArrayLike
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Maths/math.vector", JSImport.Namespace)
-@js.native
-object mathVectorMod extends js.Object {
+object mathVectorMod {
   
+  @JSImport("babylonjs/Maths/math.vector", "Matrix")
   @js.native
   /**
     * Creates an empty matrix (filled with zeros)
     */
-  class Matrix () extends js.Object {
+  class Matrix () extends StObject {
     
     var _isIdentity: js.Any = js.native
     
@@ -353,8 +353,11 @@ object mathVectorMod extends js.Object {
     var updateFlag: Double = js.native
   }
   /* static members */
-  @js.native
-  object Matrix extends js.Object {
+  object Matrix {
+    
+    @JSImport("babylonjs/Maths/math.vector", "Matrix")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates a new matrix composed by merging scale (vector3), rotation (quaternion) and translation (vector3)
@@ -363,6 +366,8 @@ object mathVectorMod extends js.Object {
       * @param translation defines the translation vector3
       * @returns a new matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.Compose")
+    @js.native
     def Compose(
       scale: DeepImmutable[Vector3],
       rotation: DeepImmutable[Quaternion],
@@ -376,6 +381,8 @@ object mathVectorMod extends js.Object {
       * @param translation defines the translation vector3
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.ComposeToRef")
+    @js.native
     def ComposeToRef(
       scale: DeepImmutable[Vector3],
       rotation: DeepImmutable[Quaternion],
@@ -393,6 +400,8 @@ object mathVectorMod extends js.Object {
       * @param gradient defines the gradient between the two matrices
       * @returns the new matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.DecomposeLerp")
+    @js.native
     def DecomposeLerp(startValue: DeepImmutable[Matrix], endValue: DeepImmutable[Matrix], gradient: Double): Matrix = js.native
     
     /**
@@ -405,6 +414,8 @@ object mathVectorMod extends js.Object {
       * @param gradient defines the gradient between the two matrices
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.DecomposeLerpToRef")
+    @js.native
     def DecomposeLerpToRef(
       startValue: DeepImmutable[Matrix],
       endValue: DeepImmutable[Matrix],
@@ -418,7 +429,11 @@ object mathVectorMod extends js.Object {
       * @param offset defines an offset in the source array
       * @returns a new Matrix set from the starting index of the given array
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.FromArray")
+    @js.native
     def FromArray(array: DeepImmutable[ArrayLike[Double]]): Matrix = js.native
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.FromArray")
+    @js.native
     def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): Matrix = js.native
     
     /**
@@ -427,6 +442,8 @@ object mathVectorMod extends js.Object {
       * @param offset defines an offset in the source array
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.FromArrayToRef")
+    @js.native
     def FromArrayToRef(array: DeepImmutable[ArrayLike[Double]], offset: Double, result: Matrix): Unit = js.native
     
     /**
@@ -436,6 +453,8 @@ object mathVectorMod extends js.Object {
       * @param scale defines the scaling factor
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.FromFloat32ArrayToRefScaled")
+    @js.native
     def FromFloat32ArrayToRefScaled(
       array: DeepImmutable[Float32Array | js.Array[Double]],
       offset: Double,
@@ -448,6 +467,8 @@ object mathVectorMod extends js.Object {
       * @param quat defines the quaternion to use
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.FromQuaternionToRef")
+    @js.native
     def FromQuaternionToRef(quat: DeepImmutable[Quaternion], result: Matrix): Unit = js.native
     
     /**
@@ -470,6 +491,8 @@ object mathVectorMod extends js.Object {
       * @param initialM44 defines 4th value of 4th row
       * @returns the new matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.FromValues")
+    @js.native
     def FromValues(
       initialM11: Double,
       initialM12: Double,
@@ -509,6 +532,8 @@ object mathVectorMod extends js.Object {
       * @param initialM44 defines 4th value of 4th row
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.FromValuesToRef")
+    @js.native
     def FromValuesToRef(
       initialM11: Double,
       initialM12: Double,
@@ -536,6 +561,8 @@ object mathVectorMod extends js.Object {
       * @param zaxis defines the value of the 3rd axis
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.FromXYZAxesToRef")
+    @js.native
     def FromXYZAxesToRef(
       xaxis: DeepImmutable[Vector3],
       yaxis: DeepImmutable[Vector3],
@@ -548,6 +575,8 @@ object mathVectorMod extends js.Object {
       * @param matrix defines the matrix to use
       * @returns a new Float32Array array with 4 elements : the 2x2 matrix extracted from the given matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.GetAsMatrix2x2")
+    @js.native
     def GetAsMatrix2x2(matrix: DeepImmutable[Matrix]): Float32Array | js.Array[Double] = js.native
     
     /**
@@ -555,6 +584,8 @@ object mathVectorMod extends js.Object {
       * @param matrix defines the matrix to use
       * @returns a new Float32Array array with 9 elements : the 3x3 matrix extracted from the given matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.GetAsMatrix3x3")
+    @js.native
     def GetAsMatrix3x3(matrix: DeepImmutable[Matrix]): Float32Array | js.Array[Double] = js.native
     
     /**
@@ -567,6 +598,8 @@ object mathVectorMod extends js.Object {
       * @param zmax defines the far clip plane
       * @returns the transformation matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.GetFinalMatrix")
+    @js.native
     def GetFinalMatrix(
       viewport: DeepImmutable[Viewport],
       world: DeepImmutable[Matrix],
@@ -580,17 +613,16 @@ object mathVectorMod extends js.Object {
       * Creates a new identity matrix
       * @returns a new identity matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.Identity")
+    @js.native
     def Identity(): Matrix = js.native
-    
-    /**
-      * Gets an identity matrix that must not be updated
-      */
-    def IdentityReadOnly: DeepImmutable[Matrix] = js.native
     
     /**
       * Creates a new identity matrix and stores the result in a given matrix
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.IdentityToRef")
+    @js.native
     def IdentityToRef(result: Matrix): Unit = js.native
     
     /**
@@ -598,6 +630,8 @@ object mathVectorMod extends js.Object {
       * @param source defines the source matrix
       * @returns the new matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.Invert")
+    @js.native
     def Invert(source: DeepImmutable[Matrix]): Matrix = js.native
     
     /**
@@ -607,6 +641,8 @@ object mathVectorMod extends js.Object {
       * @param gradient defines the gradient factor
       * @returns the new matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.Lerp")
+    @js.native
     def Lerp(startValue: DeepImmutable[Matrix], endValue: DeepImmutable[Matrix], gradient: Double): Matrix = js.native
     
     /**
@@ -616,6 +652,8 @@ object mathVectorMod extends js.Object {
       * @param gradient defines the gradient factor
       * @param result defines the Matrix object where to store data
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.LerpToRef")
+    @js.native
     def LerpToRef(
       startValue: DeepImmutable[Matrix],
       endValue: DeepImmutable[Matrix],
@@ -631,6 +669,8 @@ object mathVectorMod extends js.Object {
       * @param up defines the up vector for the entity
       * @returns the new matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.LookAtLH")
+    @js.native
     def LookAtLH(eye: DeepImmutable[Vector3], target: DeepImmutable[Vector3], up: DeepImmutable[Vector3]): Matrix = js.native
     
     /**
@@ -641,6 +681,8 @@ object mathVectorMod extends js.Object {
       * @param up defines the up vector for the entity
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.LookAtLHToRef")
+    @js.native
     def LookAtLHToRef(
       eye: DeepImmutable[Vector3],
       target: DeepImmutable[Vector3],
@@ -656,6 +698,8 @@ object mathVectorMod extends js.Object {
       * @param up defines the up vector for the entity
       * @returns the new matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.LookAtRH")
+    @js.native
     def LookAtRH(eye: DeepImmutable[Vector3], target: DeepImmutable[Vector3], up: DeepImmutable[Vector3]): Matrix = js.native
     
     /**
@@ -666,6 +710,8 @@ object mathVectorMod extends js.Object {
       * @param up defines the up vector for the entity
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.LookAtRHToRef")
+    @js.native
     def LookAtRHToRef(
       eye: DeepImmutable[Vector3],
       target: DeepImmutable[Vector3],
@@ -681,6 +727,8 @@ object mathVectorMod extends js.Object {
       * @param zfar defines the far clip plane
       * @returns a new matrix as a left-handed orthographic projection matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.OrthoLH")
+    @js.native
     def OrthoLH(width: Double, height: Double, znear: Double, zfar: Double): Matrix = js.native
     
     /**
@@ -691,6 +739,8 @@ object mathVectorMod extends js.Object {
       * @param zfar defines the far clip plane
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.OrthoLHToRef")
+    @js.native
     def OrthoLHToRef(width: Double, height: Double, znear: Double, zfar: Double, result: Matrix): Unit = js.native
     
     /**
@@ -703,6 +753,8 @@ object mathVectorMod extends js.Object {
       * @param zfar defines the far clip plane
       * @returns a new matrix as a left-handed orthographic projection matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.OrthoOffCenterLH")
+    @js.native
     def OrthoOffCenterLH(left: Double, right: Double, bottom: Double, top: Double, znear: Double, zfar: Double): Matrix = js.native
     
     /**
@@ -715,6 +767,8 @@ object mathVectorMod extends js.Object {
       * @param zfar defines the far clip plane
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.OrthoOffCenterLHToRef")
+    @js.native
     def OrthoOffCenterLHToRef(
       left: Double,
       right: Double,
@@ -735,6 +789,8 @@ object mathVectorMod extends js.Object {
       * @param zfar defines the far clip plane
       * @returns a new matrix as a right-handed orthographic projection matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.OrthoOffCenterRH")
+    @js.native
     def OrthoOffCenterRH(left: Double, right: Double, bottom: Double, top: Double, znear: Double, zfar: Double): Matrix = js.native
     
     /**
@@ -747,6 +803,8 @@ object mathVectorMod extends js.Object {
       * @param zfar defines the far clip plane
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.OrthoOffCenterRHToRef")
+    @js.native
     def OrthoOffCenterRHToRef(
       left: Double,
       right: Double,
@@ -765,6 +823,8 @@ object mathVectorMod extends js.Object {
       * @param zfar defines the far clip plane
       * @returns a new matrix as a left-handed perspective projection matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.PerspectiveFovLH")
+    @js.native
     def PerspectiveFovLH(fov: Double, aspect: Double, znear: Double, zfar: Double): Matrix = js.native
     
     /**
@@ -776,7 +836,11 @@ object mathVectorMod extends js.Object {
       * @param result defines the target matrix
       * @param isVerticalFovFixed defines it the fov is vertically fixed (default) or horizontally
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.PerspectiveFovLHToRef")
+    @js.native
     def PerspectiveFovLHToRef(fov: Double, aspect: Double, znear: Double, zfar: Double, result: Matrix): Unit = js.native
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.PerspectiveFovLHToRef")
+    @js.native
     def PerspectiveFovLHToRef(
       fov: Double,
       aspect: Double,
@@ -794,6 +858,8 @@ object mathVectorMod extends js.Object {
       * @param zfar defines the far clip plane
       * @returns a new matrix as a right-handed perspective projection matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.PerspectiveFovRH")
+    @js.native
     def PerspectiveFovRH(fov: Double, aspect: Double, znear: Double, zfar: Double): Matrix = js.native
     
     /**
@@ -805,7 +871,11 @@ object mathVectorMod extends js.Object {
       * @param result defines the target matrix
       * @param isVerticalFovFixed defines it the fov is vertically fixed (default) or horizontally
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.PerspectiveFovRHToRef")
+    @js.native
     def PerspectiveFovRHToRef(fov: Double, aspect: Double, znear: Double, zfar: Double, result: Matrix): Unit = js.native
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.PerspectiveFovRHToRef")
+    @js.native
     def PerspectiveFovRHToRef(
       fov: Double,
       aspect: Double,
@@ -824,7 +894,11 @@ object mathVectorMod extends js.Object {
       * @param result defines the target matrix
       * @param isVerticalFovFixed defines it the fov is vertically fixed (default) or horizontally
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.PerspectiveFovReverseLHToRef")
+    @js.native
     def PerspectiveFovReverseLHToRef(fov: Double, aspect: Double, znear: Double, zfar: Double, result: Matrix): Unit = js.native
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.PerspectiveFovReverseLHToRef")
+    @js.native
     def PerspectiveFovReverseLHToRef(
       fov: Double,
       aspect: Double,
@@ -843,7 +917,11 @@ object mathVectorMod extends js.Object {
       * @param result defines the target matrix
       * @param isVerticalFovFixed defines it the fov is vertically fixed (default) or horizontally
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.PerspectiveFovReverseRHToRef")
+    @js.native
     def PerspectiveFovReverseRHToRef(fov: Double, aspect: Double, znear: Double, zfar: Double, result: Matrix): Unit = js.native
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.PerspectiveFovReverseRHToRef")
+    @js.native
     def PerspectiveFovReverseRHToRef(
       fov: Double,
       aspect: Double,
@@ -861,7 +939,11 @@ object mathVectorMod extends js.Object {
       * @param result defines the target matrix
       * @param rightHanded defines if the matrix must be in right-handed mode (false by default)
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.PerspectiveFovWebVRToRef")
+    @js.native
     def PerspectiveFovWebVRToRef(fov: DownDegrees, znear: Double, zfar: Double, result: Matrix): Unit = js.native
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.PerspectiveFovWebVRToRef")
+    @js.native
     def PerspectiveFovWebVRToRef(fov: DownDegrees, znear: Double, zfar: Double, result: Matrix, rightHanded: Boolean): Unit = js.native
     
     /**
@@ -872,6 +954,8 @@ object mathVectorMod extends js.Object {
       * @param zfar defines the far clip plane
       * @returns a new matrix as a left-handed perspective projection matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.PerspectiveLH")
+    @js.native
     def PerspectiveLH(width: Double, height: Double, znear: Double, zfar: Double): Matrix = js.native
     
     /**
@@ -879,6 +963,8 @@ object mathVectorMod extends js.Object {
       * @param plane defines the reflection plane
       * @returns a new matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.Reflection")
+    @js.native
     def Reflection(plane: DeepImmutable[IPlaneLike]): Matrix = js.native
     
     /**
@@ -886,6 +972,8 @@ object mathVectorMod extends js.Object {
       * @param plane defines the reflection plane
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.ReflectionToRef")
+    @js.native
     def ReflectionToRef(plane: DeepImmutable[IPlaneLike], result: Matrix): Unit = js.native
     
     /**
@@ -895,6 +983,8 @@ object mathVectorMod extends js.Object {
       * @param to defines the vector to align to
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.RotationAlignToRef")
+    @js.native
     def RotationAlignToRef(from: DeepImmutable[Vector3], to: DeepImmutable[Vector3], result: Matrix): Unit = js.native
     
     /**
@@ -903,6 +993,8 @@ object mathVectorMod extends js.Object {
       * @param angle defines the angle (in radians) to use
       * @return the new matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.RotationAxis")
+    @js.native
     def RotationAxis(axis: DeepImmutable[Vector3], angle: Double): Matrix = js.native
     
     /**
@@ -911,6 +1003,8 @@ object mathVectorMod extends js.Object {
       * @param angle defines the angle (in radians) to use
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.RotationAxisToRef")
+    @js.native
     def RotationAxisToRef(axis: DeepImmutable[Vector3], angle: Double, result: Matrix): Unit = js.native
     
     /**
@@ -918,6 +1012,8 @@ object mathVectorMod extends js.Object {
       * @param angle defines the angle (in radians) to use
       * @return the new matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.RotationX")
+    @js.native
     def RotationX(angle: Double): Matrix = js.native
     
     /**
@@ -925,6 +1021,8 @@ object mathVectorMod extends js.Object {
       * @param angle defines the angle (in radians) to use
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.RotationXToRef")
+    @js.native
     def RotationXToRef(angle: Double, result: Matrix): Unit = js.native
     
     /**
@@ -932,6 +1030,8 @@ object mathVectorMod extends js.Object {
       * @param angle defines the angle (in radians) to use
       * @return the new matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.RotationY")
+    @js.native
     def RotationY(angle: Double): Matrix = js.native
     
     /**
@@ -939,6 +1039,8 @@ object mathVectorMod extends js.Object {
       * @param angle defines the angle (in radians) to use
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.RotationYToRef")
+    @js.native
     def RotationYToRef(angle: Double, result: Matrix): Unit = js.native
     
     /**
@@ -948,6 +1050,8 @@ object mathVectorMod extends js.Object {
       * @param roll defines the roll angle in radians (Z axis)
       * @returns the new rotation matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.RotationYawPitchRoll")
+    @js.native
     def RotationYawPitchRoll(yaw: Double, pitch: Double, roll: Double): Matrix = js.native
     
     /**
@@ -957,6 +1061,8 @@ object mathVectorMod extends js.Object {
       * @param roll defines the roll angle in radians (Z axis)
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.RotationYawPitchRollToRef")
+    @js.native
     def RotationYawPitchRollToRef(yaw: Double, pitch: Double, roll: Double, result: Matrix): Unit = js.native
     
     /**
@@ -964,6 +1070,8 @@ object mathVectorMod extends js.Object {
       * @param angle defines the angle (in radians) to use
       * @return the new matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.RotationZ")
+    @js.native
     def RotationZ(angle: Double): Matrix = js.native
     
     /**
@@ -971,6 +1079,8 @@ object mathVectorMod extends js.Object {
       * @param angle defines the angle (in radians) to use
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.RotationZToRef")
+    @js.native
     def RotationZToRef(angle: Double, result: Matrix): Unit = js.native
     
     /**
@@ -980,6 +1090,8 @@ object mathVectorMod extends js.Object {
       * @param z defines the scale factor on Z axis
       * @returns the new matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.Scaling")
+    @js.native
     def Scaling(x: Double, y: Double, z: Double): Matrix = js.native
     
     /**
@@ -989,6 +1101,8 @@ object mathVectorMod extends js.Object {
       * @param z defines the scale factor on Z axis
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.ScalingToRef")
+    @js.native
     def ScalingToRef(x: Double, y: Double, z: Double, result: Matrix): Unit = js.native
     
     /**
@@ -998,6 +1112,8 @@ object mathVectorMod extends js.Object {
       * @param z defines the translationon Z axis
       * @returns the new matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.Translation")
+    @js.native
     def Translation(x: Double, y: Double, z: Double): Matrix = js.native
     
     /**
@@ -1007,6 +1123,8 @@ object mathVectorMod extends js.Object {
       * @param z defines the translationon Z axis
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.TranslationToRef")
+    @js.native
     def TranslationToRef(x: Double, y: Double, z: Double, result: Matrix): Unit = js.native
     
     /**
@@ -1014,6 +1132,8 @@ object mathVectorMod extends js.Object {
       * @param matrix defines the matrix to transpose
       * @returns the new matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.Transpose")
+    @js.native
     def Transpose(matrix: DeepImmutable[Matrix]): Matrix = js.native
     
     /**
@@ -1021,24 +1141,32 @@ object mathVectorMod extends js.Object {
       * @param matrix defines the matrix to transpose
       * @param result defines the target matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.TransposeToRef")
+    @js.native
     def TransposeToRef(matrix: DeepImmutable[Matrix], result: Matrix): Unit = js.native
-    
-    /**
-      * Gets the precision of matrix computations
-      */
-    def Use64Bits: Boolean = js.native
     
     /**
       * Creates a new zero matrix
       * @returns a new zero matrix
       */
+    @JSImport("babylonjs/Maths/math.vector", "Matrix.Zero")
+    @js.native
     def Zero(): Matrix = js.native
     
-    var _identityReadOnly: js.Any = js.native
+    @JSImport("babylonjs/Maths/math.vector", "Matrix._identityReadOnly")
+    @js.native
+    def _identityReadOnly: js.Any = js.native
+    @scala.inline
+    def _identityReadOnly_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_identityReadOnly")(x.asInstanceOf[js.Any])
     
-    var _updateFlagSeed: js.Any = js.native
+    @JSImport("babylonjs/Maths/math.vector", "Matrix._updateFlagSeed")
+    @js.native
+    def _updateFlagSeed: js.Any = js.native
+    @scala.inline
+    def _updateFlagSeed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_updateFlagSeed")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("babylonjs/Maths/math.vector", "Quaternion")
   @js.native
   /**
     * Creates a new Quaternion from the given floats
@@ -1047,7 +1175,7 @@ object mathVectorMod extends js.Object {
     * @param z defines the third component (0 by default)
     * @param w defines the fourth component (1.0 by default)
     */
-  class Quaternion () extends js.Object {
+  class Quaternion () extends StObject {
     def this(x: Double) = this()
     def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
@@ -1295,8 +1423,7 @@ object mathVectorMod extends js.Object {
     def z_=(value: Double): Unit = js.native
   }
   /* static members */
-  @js.native
-  object Quaternion extends js.Object {
+  object Quaternion {
     
     /**
       * Checks if the two quaternions are close to each other
@@ -1304,6 +1431,8 @@ object mathVectorMod extends js.Object {
       * @param quat1 defines the second quaternion to check
       * @returns true if the two quaternions are close to each other
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.AreClose")
+    @js.native
     def AreClose(quat0: DeepImmutable[Quaternion], quat1: DeepImmutable[Quaternion]): Boolean = js.native
     
     /**
@@ -1312,6 +1441,8 @@ object mathVectorMod extends js.Object {
       * @param right defines the right operand
       * @returns the dot product
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.Dot")
+    @js.native
     def Dot(left: DeepImmutable[Quaternion], right: DeepImmutable[Quaternion]): Double = js.native
     
     /**
@@ -1320,7 +1451,11 @@ object mathVectorMod extends js.Object {
       * @param offset defines the offset in the source array where the data starts
       * @returns a new quaternion
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.FromArray")
+    @js.native
     def FromArray(array: DeepImmutable[ArrayLike[Double]]): Quaternion = js.native
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.FromArray")
+    @js.native
     def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): Quaternion = js.native
     
     /**
@@ -1329,6 +1464,8 @@ object mathVectorMod extends js.Object {
       * @param offset the offset into the array to start at
       * @param result the quaternion to store the result in
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.FromArrayToRef")
+    @js.native
     def FromArrayToRef(array: DeepImmutable[ArrayLike[Double]], offset: Double, result: Quaternion): Unit = js.native
     
     /**
@@ -1338,6 +1475,8 @@ object mathVectorMod extends js.Object {
       * @param z Roll
       * @returns the new Quaternion
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.FromEulerAngles")
+    @js.native
     def FromEulerAngles(x: Double, y: Double, z: Double): Quaternion = js.native
     
     /**
@@ -1348,6 +1487,8 @@ object mathVectorMod extends js.Object {
       * @param result the quaternion to store the result
       * @returns the updated quaternion
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.FromEulerAnglesToRef")
+    @js.native
     def FromEulerAnglesToRef(x: Double, y: Double, z: Double, result: Quaternion): Quaternion = js.native
     
     /**
@@ -1355,6 +1496,8 @@ object mathVectorMod extends js.Object {
       * @param vec the Euler vector (x Pitch, y Yaw, z Roll)
       * @returns the new Quaternion
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.FromEulerVector")
+    @js.native
     def FromEulerVector(vec: DeepImmutable[Vector3]): Quaternion = js.native
     
     /**
@@ -1363,6 +1506,8 @@ object mathVectorMod extends js.Object {
       * @param result the quaternion to store the result
       * @returns the updated quaternion
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.FromEulerVectorToRef")
+    @js.native
     def FromEulerVectorToRef(vec: DeepImmutable[Vector3], result: Quaternion): Quaternion = js.native
     
     /**
@@ -1370,6 +1515,8 @@ object mathVectorMod extends js.Object {
       * @param matrix defines the source matrix
       * @returns a new quaternion created from the given rotation matrix values
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.FromRotationMatrix")
+    @js.native
     def FromRotationMatrix(matrix: DeepImmutable[Matrix]): Quaternion = js.native
     
     /**
@@ -1377,6 +1524,8 @@ object mathVectorMod extends js.Object {
       * @param matrix defines the source matrix
       * @param result defines the target quaternion
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.FromRotationMatrixToRef")
+    @js.native
     def FromRotationMatrixToRef(matrix: DeepImmutable[Matrix], result: Quaternion): Unit = js.native
     
     /**
@@ -1388,6 +1537,8 @@ object mathVectorMod extends js.Object {
       * @param amount defines the target quaternion
       * @returns the new interpolated quaternion
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.Hermite")
+    @js.native
     def Hermite(
       value1: DeepImmutable[Quaternion],
       tangent1: DeepImmutable[Quaternion],
@@ -1400,6 +1551,8 @@ object mathVectorMod extends js.Object {
       * Creates an identity quaternion
       * @returns the identity quaternion
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.Identity")
+    @js.native
     def Identity(): Quaternion = js.native
     
     /**
@@ -1407,6 +1560,8 @@ object mathVectorMod extends js.Object {
       * @param q defines the source quaternion
       * @returns a new quaternion as the inverted current quaternion
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.Inverse")
+    @js.native
     def Inverse(q: DeepImmutable[Quaternion]): Quaternion = js.native
     
     /**
@@ -1415,6 +1570,8 @@ object mathVectorMod extends js.Object {
       * @param result the quaternion the result will be stored in
       * @returns the result quaternion
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.InverseToRef")
+    @js.native
     def InverseToRef(q: Quaternion, result: Quaternion): Quaternion = js.native
     
     /**
@@ -1422,6 +1579,8 @@ object mathVectorMod extends js.Object {
       * @param quaternion defines the quaternion to check
       * @returns true if the quaternion is identity
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.IsIdentity")
+    @js.native
     def IsIdentity(quaternion: DeepImmutable[Quaternion]): Boolean = js.native
     
     /**
@@ -1431,6 +1590,8 @@ object mathVectorMod extends js.Object {
       * @param gamma defines the rotation around third axis
       * @returns the new quaternion
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.RotationAlphaBetaGamma")
+    @js.native
     def RotationAlphaBetaGamma(alpha: Double, beta: Double, gamma: Double): Quaternion = js.native
     
     /**
@@ -1440,6 +1601,8 @@ object mathVectorMod extends js.Object {
       * @param gamma defines the rotation around third axis
       * @param result defines the target quaternion
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.RotationAlphaBetaGammaToRef")
+    @js.native
     def RotationAlphaBetaGammaToRef(alpha: Double, beta: Double, gamma: Double, result: Quaternion): Unit = js.native
     
     /**
@@ -1448,6 +1611,8 @@ object mathVectorMod extends js.Object {
       * @param angle defines the angle to use
       * @returns a new quaternion created from the given axis (Vector3) and angle in radians (float)
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.RotationAxis")
+    @js.native
     def RotationAxis(axis: DeepImmutable[Vector3], angle: Double): Quaternion = js.native
     
     /**
@@ -1457,6 +1622,8 @@ object mathVectorMod extends js.Object {
       * @param result defines the target quaternion
       * @returns the target quaternion
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.RotationAxisToRef")
+    @js.native
     def RotationAxisToRef(axis: DeepImmutable[Vector3], angle: Double, result: Quaternion): Quaternion = js.native
     
     /**
@@ -1466,6 +1633,8 @@ object mathVectorMod extends js.Object {
       * @param axis3 defines the third axis
       * @returns the new quaternion
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.RotationQuaternionFromAxis")
+    @js.native
     def RotationQuaternionFromAxis(axis1: DeepImmutable[Vector3], axis2: DeepImmutable[Vector3], axis3: DeepImmutable[Vector3]): Quaternion = js.native
     
     /**
@@ -1475,6 +1644,8 @@ object mathVectorMod extends js.Object {
       * @param axis3 defines the third axis
       * @param ref defines the target quaternion
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.RotationQuaternionFromAxisToRef")
+    @js.native
     def RotationQuaternionFromAxisToRef(
       axis1: DeepImmutable[Vector3],
       axis2: DeepImmutable[Vector3],
@@ -1489,6 +1660,8 @@ object mathVectorMod extends js.Object {
       * @param roll defines the rotation around Z axis
       * @returns the new quaternion
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.RotationYawPitchRoll")
+    @js.native
     def RotationYawPitchRoll(yaw: Double, pitch: Double, roll: Double): Quaternion = js.native
     
     /**
@@ -1498,6 +1671,8 @@ object mathVectorMod extends js.Object {
       * @param roll defines the rotation around Z axis
       * @param result defines the target quaternion
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.RotationYawPitchRollToRef")
+    @js.native
     def RotationYawPitchRollToRef(yaw: Double, pitch: Double, roll: Double, result: Quaternion): Unit = js.native
     
     /**
@@ -1507,6 +1682,8 @@ object mathVectorMod extends js.Object {
       * @param amount defines the gradient to use
       * @returns the new interpolated quaternion
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.Slerp")
+    @js.native
     def Slerp(left: DeepImmutable[Quaternion], right: DeepImmutable[Quaternion], amount: Double): Quaternion = js.native
     
     /**
@@ -1516,6 +1693,8 @@ object mathVectorMod extends js.Object {
       * @param amount defines the gradient to use
       * @param result defines the target quaternion
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.SlerpToRef")
+    @js.native
     def SlerpToRef(
       left: DeepImmutable[Quaternion],
       right: DeepImmutable[Quaternion],
@@ -1527,33 +1706,60 @@ object mathVectorMod extends js.Object {
       * Creates an empty quaternion
       * @returns a new quaternion set to (0.0, 0.0, 0.0)
       */
+    @JSImport("babylonjs/Maths/math.vector", "Quaternion.Zero")
+    @js.native
     def Zero(): Quaternion = js.native
   }
   
+  @JSImport("babylonjs/Maths/math.vector", "TmpVectors")
   @js.native
-  class TmpVectors () extends js.Object
+  class TmpVectors () extends StObject
   /* static members */
-  @js.native
-  object TmpVectors extends js.Object {
+  object TmpVectors {
     
-    var Matrix: js.Array[typings.babylonjs.mathVectorMod.Matrix] = js.native
+    @JSImport("babylonjs/Maths/math.vector", "TmpVectors")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var Quaternion: js.Array[typings.babylonjs.mathVectorMod.Quaternion] = js.native
+    @JSImport("babylonjs/Maths/math.vector", "TmpVectors.Matrix")
+    @js.native
+    def Matrix: js.Array[typings.babylonjs.mathVectorMod.Matrix] = js.native
+    @scala.inline
+    def Matrix_=(x: js.Array[Matrix]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Matrix")(x.asInstanceOf[js.Any])
     
-    var Vector2: js.Array[typings.babylonjs.mathVectorMod.Vector2] = js.native
+    @JSImport("babylonjs/Maths/math.vector", "TmpVectors.Quaternion")
+    @js.native
+    def Quaternion: js.Array[typings.babylonjs.mathVectorMod.Quaternion] = js.native
+    @scala.inline
+    def Quaternion_=(x: js.Array[Quaternion]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Quaternion")(x.asInstanceOf[js.Any])
     
-    var Vector3: js.Array[typings.babylonjs.mathVectorMod.Vector3] = js.native
+    @JSImport("babylonjs/Maths/math.vector", "TmpVectors.Vector2")
+    @js.native
+    def Vector2: js.Array[typings.babylonjs.mathVectorMod.Vector2] = js.native
+    @scala.inline
+    def Vector2_=(x: js.Array[Vector2]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vector2")(x.asInstanceOf[js.Any])
     
-    var Vector4: js.Array[typings.babylonjs.mathVectorMod.Vector4] = js.native
+    @JSImport("babylonjs/Maths/math.vector", "TmpVectors.Vector3")
+    @js.native
+    def Vector3: js.Array[typings.babylonjs.mathVectorMod.Vector3] = js.native
+    @scala.inline
+    def Vector3_=(x: js.Array[Vector3]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vector3")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Maths/math.vector", "TmpVectors.Vector4")
+    @js.native
+    def Vector4: js.Array[typings.babylonjs.mathVectorMod.Vector4] = js.native
+    @scala.inline
+    def Vector4_=(x: js.Array[Vector4]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vector4")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("babylonjs/Maths/math.vector", "Vector2")
   @js.native
   /**
     * Creates a new Vector2 from the given x and y coordinates
     * @param x defines the first coordinate
     * @param y defines the second coordinate
     */
-  class Vector2 () extends js.Object {
+  class Vector2 () extends StObject {
     def this(/** defines the first coordinate */
     x: Double) = this()
     def this(
@@ -1830,8 +2036,7 @@ object mathVectorMod extends js.Object {
     var y: Double = js.native
   }
   /* static members */
-  @js.native
-  object Vector2 extends js.Object {
+  object Vector2 {
     
     /**
       * Gets a new Vector2 located for "amount" (float) on the CatmullRom spline defined by the given four Vector2
@@ -1842,6 +2047,8 @@ object mathVectorMod extends js.Object {
       * @param amount defines the interpolation factor
       * @returns a new Vector2
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector2.CatmullRom")
+    @js.native
     def CatmullRom(
       value1: DeepImmutable[Vector2],
       value2: DeepImmutable[Vector2],
@@ -1856,6 +2063,8 @@ object mathVectorMod extends js.Object {
       * @param value2 defines second vector
       * @returns a new Vector2
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector2.Center")
+    @js.native
     def Center(value1: DeepImmutable[Vector2], value2: DeepImmutable[Vector2]): Vector2 = js.native
     
     /**
@@ -1867,6 +2076,8 @@ object mathVectorMod extends js.Object {
       * @param max defines the upper limit
       * @returns a new Vector2
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector2.Clamp")
+    @js.native
     def Clamp(value: DeepImmutable[Vector2], min: DeepImmutable[Vector2], max: DeepImmutable[Vector2]): Vector2 = js.native
     
     /**
@@ -1875,6 +2086,8 @@ object mathVectorMod extends js.Object {
       * @param value2 defines second vector
       * @returns the distance between vectors
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector2.Distance")
+    @js.native
     def Distance(value1: DeepImmutable[Vector2], value2: DeepImmutable[Vector2]): Double = js.native
     
     /**
@@ -1884,6 +2097,8 @@ object mathVectorMod extends js.Object {
       * @param segB defines the other point of the segment
       * @returns the shortest distance
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector2.DistanceOfPointFromSegment")
+    @js.native
     def DistanceOfPointFromSegment(p: DeepImmutable[Vector2], segA: DeepImmutable[Vector2], segB: DeepImmutable[Vector2]): Double = js.native
     
     /**
@@ -1892,6 +2107,8 @@ object mathVectorMod extends js.Object {
       * @param value2 defines second vector
       * @returns the squared distance between vectors
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector2.DistanceSquared")
+    @js.native
     def DistanceSquared(value1: DeepImmutable[Vector2], value2: DeepImmutable[Vector2]): Double = js.native
     
     /**
@@ -1900,6 +2117,8 @@ object mathVectorMod extends js.Object {
       * @param right defines second vector
       * @returns the dot product (float)
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector2.Dot")
+    @js.native
     def Dot(left: DeepImmutable[Vector2], right: DeepImmutable[Vector2]): Double = js.native
     
     /**
@@ -1908,7 +2127,11 @@ object mathVectorMod extends js.Object {
       * @param offset defines the offset in the data source
       * @returns a new Vector2
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector2.FromArray")
+    @js.native
     def FromArray(array: DeepImmutable[ArrayLike[Double]]): Vector2 = js.native
+    @JSImport("babylonjs/Maths/math.vector", "Vector2.FromArray")
+    @js.native
     def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): Vector2 = js.native
     
     /**
@@ -1917,6 +2140,8 @@ object mathVectorMod extends js.Object {
       * @param offset defines the offset in the data source
       * @param result defines the target vector
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector2.FromArrayToRef")
+    @js.native
     def FromArrayToRef(array: DeepImmutable[ArrayLike[Double]], offset: Double, result: Vector2): Unit = js.native
     
     /**
@@ -1928,6 +2153,8 @@ object mathVectorMod extends js.Object {
       * @param amount defines the interpolation factor
       * @returns a new Vector2
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector2.Hermite")
+    @js.native
     def Hermite(
       value1: DeepImmutable[Vector2],
       tangent1: DeepImmutable[Vector2],
@@ -1943,6 +2170,8 @@ object mathVectorMod extends js.Object {
       * @param amount defines the interpolation factor
       * @returns a new Vector2
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector2.Lerp")
+    @js.native
     def Lerp(start: DeepImmutable[Vector2], end: DeepImmutable[Vector2], amount: Double): Vector2 = js.native
     
     /**
@@ -1951,6 +2180,8 @@ object mathVectorMod extends js.Object {
       * @param right defines 2nd vector
       * @returns a new Vector2
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector2.Maximize")
+    @js.native
     def Maximize(left: DeepImmutable[Vector2], right: DeepImmutable[Vector2]): Vector2 = js.native
     
     /**
@@ -1959,6 +2190,8 @@ object mathVectorMod extends js.Object {
       * @param right defines 2nd vector
       * @returns a new Vector2
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector2.Minimize")
+    @js.native
     def Minimize(left: DeepImmutable[Vector2], right: DeepImmutable[Vector2]): Vector2 = js.native
     
     /**
@@ -1966,12 +2199,16 @@ object mathVectorMod extends js.Object {
       * @param vector defines the vector to normalize
       * @returns a new Vector2
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector2.Normalize")
+    @js.native
     def Normalize(vector: DeepImmutable[Vector2]): Vector2 = js.native
     
     /**
       * Gets a new Vector2(1, 1)
       * @returns a new Vector2
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector2.One")
+    @js.native
     def One(): Vector2 = js.native
     
     /**
@@ -1982,6 +2219,8 @@ object mathVectorMod extends js.Object {
       * @param p2 defines 3rd triangle point
       * @returns true if the point "p" is in the triangle defined by the vertors "p0", "p1", "p2"
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector2.PointInTriangle")
+    @js.native
     def PointInTriangle(
       p: DeepImmutable[Vector2],
       p0: DeepImmutable[Vector2],
@@ -1995,6 +2234,8 @@ object mathVectorMod extends js.Object {
       * @param transformation defines the matrix to apply
       * @returns a new Vector2
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector2.Transform")
+    @js.native
     def Transform(vector: DeepImmutable[Vector2], transformation: DeepImmutable[Matrix]): Vector2 = js.native
     
     /**
@@ -2003,15 +2244,20 @@ object mathVectorMod extends js.Object {
       * @param transformation defines the matrix to apply
       * @param result defines the target vector
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector2.TransformToRef")
+    @js.native
     def TransformToRef(vector: DeepImmutable[Vector2], transformation: DeepImmutable[Matrix], result: Vector2): Unit = js.native
     
     /**
       * Gets a new Vector2(0, 0)
       * @returns a new Vector2
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector2.Zero")
+    @js.native
     def Zero(): Vector2 = js.native
   }
   
+  @JSImport("babylonjs/Maths/math.vector", "Vector3")
   @js.native
   /**
     * Creates a new Vector3 object from the given x, y, z (floats) coordinates.
@@ -2019,7 +2265,7 @@ object mathVectorMod extends js.Object {
     * @param y defines the second coordinates (on Y axis)
     * @param z defines the third coordinates (on Z axis)
     */
-  class Vector3 () extends js.Object {
+  class Vector3 () extends StObject {
     def this(x: Double) = this()
     def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
@@ -2471,15 +2717,22 @@ object mathVectorMod extends js.Object {
     def z_=(value: Double): Unit = js.native
   }
   /* static members */
-  @js.native
-  object Vector3 extends js.Object {
+  object Vector3 {
+    
+    @JSImport("babylonjs/Maths/math.vector", "Vector3")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Returns a new Vector3 set to (0.0, 0.0, -1.0)
       * @param rightHandedSystem is the scene right-handed (negative-z)
       * @returns a new forward Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.Backward")
+    @js.native
     def Backward(): Vector3 = js.native
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.Backward")
+    @js.native
     def Backward(rightHandedSystem: Boolean): Vector3 = js.native
     
     /**
@@ -2491,6 +2744,8 @@ object mathVectorMod extends js.Object {
       * @param amount defines the amount on the spline to use
       * @returns the new Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.CatmullRom")
+    @js.native
     def CatmullRom(
       value1: DeepImmutable[Vector3],
       value2: DeepImmutable[Vector3],
@@ -2505,6 +2760,8 @@ object mathVectorMod extends js.Object {
       * @param value2 defines the second operand
       * @returns the new Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.Center")
+    @js.native
     def Center(value1: DeepImmutable[Vector3], value2: DeepImmutable[Vector3]): Vector3 = js.native
     
     /**
@@ -2513,6 +2770,8 @@ object mathVectorMod extends js.Object {
       * @param min defines the minimum range
       * @param max defines the maximum range
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.CheckExtends")
+    @js.native
     def CheckExtends(v: Vector3, min: Vector3, max: Vector3): Unit = js.native
     
     /**
@@ -2524,6 +2783,8 @@ object mathVectorMod extends js.Object {
       * @param max defines the upper range value
       * @returns the new Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.Clamp")
+    @js.native
     def Clamp(value: DeepImmutable[Vector3], min: DeepImmutable[Vector3], max: DeepImmutable[Vector3]): Vector3 = js.native
     
     /**
@@ -2535,6 +2796,8 @@ object mathVectorMod extends js.Object {
       * @param max defines the upper range value
       * @param result defines the Vector3 where to store the result
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.ClampToRef")
+    @js.native
     def ClampToRef(
       value: DeepImmutable[Vector3],
       min: DeepImmutable[Vector3],
@@ -2549,6 +2812,8 @@ object mathVectorMod extends js.Object {
       * @param right defines the right operand
       * @returns the cross product
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.Cross")
+    @js.native
     def Cross(left: DeepImmutable[Vector3], right: DeepImmutable[Vector3]): Vector3 = js.native
     
     /**
@@ -2558,6 +2823,8 @@ object mathVectorMod extends js.Object {
       * @param right defines the right operand
       * @param result defines the Vector3 where to store the result
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.CrossToRef")
+    @js.native
     def CrossToRef(left: DeepImmutable[Vector3], right: DeepImmutable[Vector3], result: Vector3): Unit = js.native
     
     /**
@@ -2566,6 +2833,8 @@ object mathVectorMod extends js.Object {
       * @param value2 defines the second operand
       * @returns the distance
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.Distance")
+    @js.native
     def Distance(value1: DeepImmutable[Vector3], value2: DeepImmutable[Vector3]): Double = js.native
     
     /**
@@ -2574,6 +2843,8 @@ object mathVectorMod extends js.Object {
       * @param value2 defines the second operand
       * @returns the squared distance
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.DistanceSquared")
+    @js.native
     def DistanceSquared(value1: DeepImmutable[Vector3], value2: DeepImmutable[Vector3]): Double = js.native
     
     /**
@@ -2582,12 +2853,16 @@ object mathVectorMod extends js.Object {
       * @param right defines the right operand
       * @returns the dot product
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.Dot")
+    @js.native
     def Dot(left: DeepImmutable[Vector3], right: DeepImmutable[Vector3]): Double = js.native
     
     /**
       * Returns a new Vector3 set to (0.0, -1.0, 0.0)
       * @returns a new down Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.Down")
+    @js.native
     def Down(): Vector3 = js.native
     
     /**
@@ -2595,7 +2870,11 @@ object mathVectorMod extends js.Object {
       * @param rightHandedSystem is the scene right-handed (negative z)
       * @returns a new forward Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.Forward")
+    @js.native
     def Forward(): Vector3 = js.native
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.Forward")
+    @js.native
     def Forward(rightHandedSystem: Boolean): Vector3 = js.native
     
     /**
@@ -2604,7 +2883,11 @@ object mathVectorMod extends js.Object {
       * @param offset defines the offset in the source array
       * @returns the new Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.FromArray")
+    @js.native
     def FromArray(array: DeepImmutable[ArrayLike[Double]]): Vector3 = js.native
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.FromArray")
+    @js.native
     def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): Vector3 = js.native
     
     /**
@@ -2613,6 +2896,8 @@ object mathVectorMod extends js.Object {
       * @param offset defines the offset in the source array
       * @param result defines the Vector3 where to store the result
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.FromArrayToRef")
+    @js.native
     def FromArrayToRef(array: DeepImmutable[ArrayLike[Double]], offset: Double, result: Vector3): Unit = js.native
     
     /**
@@ -2622,7 +2907,11 @@ object mathVectorMod extends js.Object {
       * @returns the new Vector3
       * @deprecated Please use FromArray instead.
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.FromFloatArray")
+    @js.native
     def FromFloatArray(array: DeepImmutable[Float32Array]): Vector3 = js.native
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.FromFloatArray")
+    @js.native
     def FromFloatArray(array: DeepImmutable[Float32Array], offset: Double): Vector3 = js.native
     
     /**
@@ -2632,6 +2921,8 @@ object mathVectorMod extends js.Object {
       * @param result defines the Vector3 where to store the result
       * @deprecated Please use FromArrayToRef instead.
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.FromFloatArrayToRef")
+    @js.native
     def FromFloatArrayToRef(array: DeepImmutable[Float32Array], offset: Double, result: Vector3): Unit = js.native
     
     /**
@@ -2641,6 +2932,8 @@ object mathVectorMod extends js.Object {
       * @param z defines the z coordinate of the source
       * @param result defines the Vector3 where to store the result
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.FromFloatsToRef")
+    @js.native
     def FromFloatsToRef(x: Double, y: Double, z: Double, result: Vector3): Unit = js.native
     
     /**
@@ -2650,6 +2943,8 @@ object mathVectorMod extends js.Object {
       * @param normal direction of the normal
       * @return the angle between vector0 and vector1
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.GetAngleBetweenVectors")
+    @js.native
     def GetAngleBetweenVectors(vector0: DeepImmutable[Vector3], vector1: DeepImmutable[Vector3], normal: DeepImmutable[Vector3]): Double = js.native
     
     /**
@@ -2660,6 +2955,8 @@ object mathVectorMod extends js.Object {
       * @param size defines the size along the axis
       * @returns the clip factor
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.GetClipFactor")
+    @js.native
     def GetClipFactor(
       vector0: DeepImmutable[Vector3],
       vector1: DeepImmutable[Vector3],
@@ -2676,6 +2973,8 @@ object mathVectorMod extends js.Object {
       * @param amount defines the amount on the interpolation spline (between 0 and 1)
       * @returns the new Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.Hermite")
+    @js.native
     def Hermite(
       value1: DeepImmutable[Vector3],
       tangent1: DeepImmutable[Vector3],
@@ -2688,6 +2987,8 @@ object mathVectorMod extends js.Object {
       * Returns a new Vector3 set to (-1.0, 0.0, 0.0)
       * @returns a new left Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.Left")
+    @js.native
     def Left(): Vector3 = js.native
     
     /**
@@ -2697,6 +2998,8 @@ object mathVectorMod extends js.Object {
       * @param amount max defines amount between both (between 0 and 1)
       * @returns the new Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.Lerp")
+    @js.native
     def Lerp(start: DeepImmutable[Vector3], end: DeepImmutable[Vector3], amount: Double): Vector3 = js.native
     
     /**
@@ -2706,6 +3009,8 @@ object mathVectorMod extends js.Object {
       * @param amount max defines amount between both (between 0 and 1)
       * @param result defines the Vector3 where to store the result
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.LerpToRef")
+    @js.native
     def LerpToRef(start: DeepImmutable[Vector3], end: DeepImmutable[Vector3], amount: Double, result: Vector3): Unit = js.native
     
     /**
@@ -2714,6 +3019,8 @@ object mathVectorMod extends js.Object {
       * @param right defines the second operand
       * @returns the new Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.Maximize")
+    @js.native
     def Maximize(left: DeepImmutable[Vector3], right: DeepImmutable[Vector3]): Vector3 = js.native
     
     /**
@@ -2722,6 +3029,8 @@ object mathVectorMod extends js.Object {
       * @param right defines the second operand
       * @returns the new Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.Minimize")
+    @js.native
     def Minimize(left: DeepImmutable[Vector3], right: DeepImmutable[Vector3]): Vector3 = js.native
     
     /**
@@ -2729,6 +3038,8 @@ object mathVectorMod extends js.Object {
       * @param vector defines the Vector3 to normalize
       * @returns the new Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.Normalize")
+    @js.native
     def Normalize(vector: DeepImmutable[Vector3]): Vector3 = js.native
     
     /**
@@ -2736,12 +3047,16 @@ object mathVectorMod extends js.Object {
       * @param vector defines the Vector3 to normalize
       * @param result defines the Vector3 where to store the result
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.NormalizeToRef")
+    @js.native
     def NormalizeToRef(vector: DeepImmutable[Vector3], result: Vector3): Unit = js.native
     
     /**
       * Returns a new Vector3 set to (1.0, 1.0, 1.0)
       * @returns a new unit Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.One")
+    @js.native
     def One(): Vector3 = js.native
     
     /**
@@ -2752,6 +3067,8 @@ object mathVectorMod extends js.Object {
       * @param viewport defines the screen viewport to use
       * @returns the new Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.Project")
+    @js.native
     def Project(
       vector: DeepImmutable[Vector3],
       world: DeepImmutable[Matrix],
@@ -2768,6 +3085,8 @@ object mathVectorMod extends js.Object {
       * @param result the vector in which the screen space will be stored
       * @returns the new Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.ProjectToRef")
+    @js.native
     def ProjectToRef(
       vector: DeepImmutable[Vector3],
       world: DeepImmutable[Matrix],
@@ -2780,6 +3099,8 @@ object mathVectorMod extends js.Object {
       * Returns a new Vector3 set to (1.0, 0.0, 0.0)
       * @returns a new right Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.Right")
+    @js.native
     def Right(): Vector3 = js.native
     
     /**
@@ -2792,6 +3113,8 @@ object mathVectorMod extends js.Object {
       * @param axis3 defines the third axis
       * @returns a new Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.RotationFromAxis")
+    @js.native
     def RotationFromAxis(axis1: DeepImmutable[Vector3], axis2: DeepImmutable[Vector3], axis3: DeepImmutable[Vector3]): Vector3 = js.native
     
     /**
@@ -2801,6 +3124,8 @@ object mathVectorMod extends js.Object {
       * @param axis3 defines the third axis
       * @param ref defines the Vector3 where to store the result
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.RotationFromAxisToRef")
+    @js.native
     def RotationFromAxisToRef(
       axis1: DeepImmutable[Vector3],
       axis2: DeepImmutable[Vector3],
@@ -2815,6 +3140,8 @@ object mathVectorMod extends js.Object {
       * @param transformation defines the transformation matrix
       * @returns the transformed Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.TransformCoordinates")
+    @js.native
     def TransformCoordinates(vector: DeepImmutable[Vector3], transformation: DeepImmutable[Matrix]): Vector3 = js.native
     
     /**
@@ -2826,6 +3153,8 @@ object mathVectorMod extends js.Object {
       * @param transformation defines the transformation matrix
       * @param result defines the Vector3 where to store the result
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.TransformCoordinatesFromFloatsToRef")
+    @js.native
     def TransformCoordinatesFromFloatsToRef(x: Double, y: Double, z: Double, transformation: DeepImmutable[Matrix], result: Vector3): Unit = js.native
     
     /**
@@ -2835,6 +3164,8 @@ object mathVectorMod extends js.Object {
       * @param transformation defines the transformation matrix
       * @param result defines the Vector3 where to store the result
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.TransformCoordinatesToRef")
+    @js.native
     def TransformCoordinatesToRef(vector: DeepImmutable[Vector3], transformation: DeepImmutable[Matrix], result: Vector3): Unit = js.native
     
     /**
@@ -2844,6 +3175,8 @@ object mathVectorMod extends js.Object {
       * @param transformation defines the transformation matrix
       * @returns the new Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.TransformNormal")
+    @js.native
     def TransformNormal(vector: DeepImmutable[Vector3], transformation: DeepImmutable[Matrix]): Vector3 = js.native
     
     /**
@@ -2855,6 +3188,8 @@ object mathVectorMod extends js.Object {
       * @param transformation defines the transformation matrix
       * @param result defines the Vector3 where to store the result
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.TransformNormalFromFloatsToRef")
+    @js.native
     def TransformNormalFromFloatsToRef(x: Double, y: Double, z: Double, transformation: DeepImmutable[Matrix], result: Vector3): Unit = js.native
     
     /**
@@ -2864,6 +3199,8 @@ object mathVectorMod extends js.Object {
       * @param transformation defines the transformation matrix
       * @param result defines the Vector3 where to store the result
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.TransformNormalToRef")
+    @js.native
     def TransformNormalToRef(vector: DeepImmutable[Vector3], transformation: DeepImmutable[Matrix], result: Vector3): Unit = js.native
     
     /**
@@ -2876,6 +3213,8 @@ object mathVectorMod extends js.Object {
       * @param projection defines the projection matrix to use
       * @returns the new Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.Unproject")
+    @js.native
     def Unproject(
       source: DeepImmutable[Vector3],
       viewportWidth: Double,
@@ -2897,6 +3236,8 @@ object mathVectorMod extends js.Object {
       * @param projection defines the projection matrix to use
       * @param result defines the Vector3 where to store the result
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.UnprojectFloatsToRef")
+    @js.native
     def UnprojectFloatsToRef(
       sourceX: float,
       sourceY: float,
@@ -2918,6 +3259,8 @@ object mathVectorMod extends js.Object {
       * @param transform defines the transform (view x projection) matrix to use
       * @returns the new Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.UnprojectFromTransform")
+    @js.native
     def UnprojectFromTransform(
       source: Vector3,
       viewportWidth: Double,
@@ -2936,6 +3279,8 @@ object mathVectorMod extends js.Object {
       * @param projection defines the projection matrix to use
       * @param result defines the Vector3 where to store the result
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.UnprojectToRef")
+    @js.native
     def UnprojectToRef(
       source: DeepImmutable[Vector3],
       viewportWidth: Double,
@@ -2950,34 +3295,39 @@ object mathVectorMod extends js.Object {
       * Returns a new Vector3 set to (0.0, 1.0, 0.0)
       * @returns a new up Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.Up")
+    @js.native
     def Up(): Vector3 = js.native
-    
-    /**
-      * Gets a up Vector3 that must not be updated
-      */
-    def UpReadOnly: DeepImmutable[Vector3] = js.native
     
     /**
       * Returns a new Vector3 set to (0.0, 0.0, 0.0)
       * @returns a new empty Vector3
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3.Zero")
+    @js.native
     def Zero(): Vector3 = js.native
     
-    /**
-      * Gets a zero Vector3 that must not be updated
-      */
-    def ZeroReadOnly: DeepImmutable[Vector3] = js.native
-    
     /** @hidden */
+    @JSImport("babylonjs/Maths/math.vector", "Vector3._UnprojectFromInvertedMatrixToRef")
+    @js.native
     def _UnprojectFromInvertedMatrixToRef(source: DeepImmutable[Vector3], matrix: DeepImmutable[Matrix], result: Vector3): Unit = js.native
     
-    var _UpReadOnly: js.Any = js.native
+    @JSImport("babylonjs/Maths/math.vector", "Vector3._UpReadOnly")
+    @js.native
+    def _UpReadOnly: js.Any = js.native
+    @scala.inline
+    def _UpReadOnly_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UpReadOnly")(x.asInstanceOf[js.Any])
     
-    var _ZeroReadOnly: js.Any = js.native
+    @JSImport("babylonjs/Maths/math.vector", "Vector3._ZeroReadOnly")
+    @js.native
+    def _ZeroReadOnly: js.Any = js.native
+    @scala.inline
+    def _ZeroReadOnly_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ZeroReadOnly")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("babylonjs/Maths/math.vector", "Vector4")
   @js.native
-  class Vector4 protected () extends js.Object {
+  class Vector4 protected () extends StObject {
     /**
       * Creates a Vector4 object from the given floats.
       * @param x x value of the vector
@@ -3326,8 +3676,7 @@ object mathVectorMod extends js.Object {
     var z: Double = js.native
   }
   /* static members */
-  @js.native
-  object Vector4 extends js.Object {
+  object Vector4 {
     
     /**
       * Returns a new Vector4 located at the center between the vectors "value1" and "value2".
@@ -3335,6 +3684,8 @@ object mathVectorMod extends js.Object {
       * @param value2 value to calulate the center between
       * @return the center between the two vectors
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector4.Center")
+    @js.native
     def Center(value1: DeepImmutable[Vector4], value2: DeepImmutable[Vector4]): Vector4 = js.native
     
     /**
@@ -3343,6 +3694,8 @@ object mathVectorMod extends js.Object {
       * @param value2 value to calulate the distance between
       * @return the distance between the two vectors
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector4.Distance")
+    @js.native
     def Distance(value1: DeepImmutable[Vector4], value2: DeepImmutable[Vector4]): Double = js.native
     
     /**
@@ -3351,6 +3704,8 @@ object mathVectorMod extends js.Object {
       * @param value2 value to calulate the distance between
       * @return the distance between the two vectors squared
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector4.DistanceSquared")
+    @js.native
     def DistanceSquared(value1: DeepImmutable[Vector4], value2: DeepImmutable[Vector4]): Double = js.native
     
     /**
@@ -3359,7 +3714,11 @@ object mathVectorMod extends js.Object {
       * @param offset the offset into the array to start at
       * @returns the new vector
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector4.FromArray")
+    @js.native
     def FromArray(array: DeepImmutable[ArrayLike[Double]]): Vector4 = js.native
+    @JSImport("babylonjs/Maths/math.vector", "Vector4.FromArray")
+    @js.native
     def FromArray(array: DeepImmutable[ArrayLike[Double]], offset: Double): Vector4 = js.native
     
     /**
@@ -3368,6 +3727,8 @@ object mathVectorMod extends js.Object {
       * @param offset the offset into the array to start at
       * @param result the vector to store the result in
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector4.FromArrayToRef")
+    @js.native
     def FromArrayToRef(array: DeepImmutable[ArrayLike[Double]], offset: Double, result: Vector4): Unit = js.native
     
     /**
@@ -3376,6 +3737,8 @@ object mathVectorMod extends js.Object {
       * @param offset the offset into the array to start at
       * @param result the vector to store the result in
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector4.FromFloatArrayToRef")
+    @js.native
     def FromFloatArrayToRef(array: DeepImmutable[Float32Array], offset: Double, result: Vector4): Unit = js.native
     
     /**
@@ -3386,6 +3749,8 @@ object mathVectorMod extends js.Object {
       * @param w float to set from
       * @param result the vector to the floats in
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector4.FromFloatsToRef")
+    @js.native
     def FromFloatsToRef(x: Double, y: Double, z: Double, w: Double, result: Vector4): Unit = js.native
     
     /**
@@ -3394,7 +3759,11 @@ object mathVectorMod extends js.Object {
       * @param w defines the 4th component (default is 0)
       * @returns a new Vector4
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector4.FromVector3")
+    @js.native
     def FromVector3(source: Vector3): Vector4 = js.native
+    @JSImport("babylonjs/Maths/math.vector", "Vector4.FromVector3")
+    @js.native
     def FromVector3(source: Vector3, w: Double): Vector4 = js.native
     
     /**
@@ -3403,6 +3772,8 @@ object mathVectorMod extends js.Object {
       * @param right right vector to maximize
       * @returns a new vector with the maximum of the left and right vector values
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector4.Maximize")
+    @js.native
     def Maximize(left: DeepImmutable[Vector4], right: DeepImmutable[Vector4]): Vector4 = js.native
     
     /**
@@ -3411,6 +3782,8 @@ object mathVectorMod extends js.Object {
       * @param right right vector to minimize
       * @returns a new vector with the minimum of the left and right vector values
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector4.Minimize")
+    @js.native
     def Minimize(left: DeepImmutable[Vector4], right: DeepImmutable[Vector4]): Vector4 = js.native
     
     /**
@@ -3418,6 +3791,8 @@ object mathVectorMod extends js.Object {
       * @param vector the vector to normalize
       * @returns the vector
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector4.Normalize")
+    @js.native
     def Normalize(vector: DeepImmutable[Vector4]): Vector4 = js.native
     
     /**
@@ -3425,12 +3800,16 @@ object mathVectorMod extends js.Object {
       * @param vector the vector to normalize
       * @param result the vector to store the result in
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector4.NormalizeToRef")
+    @js.native
     def NormalizeToRef(vector: DeepImmutable[Vector4], result: Vector4): Unit = js.native
     
     /**
       * Returns a new Vector4 set to (1.0, 1.0, 1.0, 1.0)
       * @returns the new vector
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector4.One")
+    @js.native
     def One(): Vector4 = js.native
     
     /**
@@ -3440,6 +3819,8 @@ object mathVectorMod extends js.Object {
       * @param transformation the transformation matrix to apply
       * @returns the new vector
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector4.TransformNormal")
+    @js.native
     def TransformNormal(vector: DeepImmutable[Vector4], transformation: DeepImmutable[Matrix]): Vector4 = js.native
     
     /**
@@ -3452,6 +3833,8 @@ object mathVectorMod extends js.Object {
       * @param transformation the transformation matrix to apply
       * @param result the vector to store the results in
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector4.TransformNormalFromFloatsToRef")
+    @js.native
     def TransformNormalFromFloatsToRef(x: Double, y: Double, z: Double, w: Double, transformation: DeepImmutable[Matrix], result: Vector4): Unit = js.native
     
     /**
@@ -3461,12 +3844,16 @@ object mathVectorMod extends js.Object {
       * @param transformation the transformation matrix to apply
       * @param result the vector to store the result in
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector4.TransformNormalToRef")
+    @js.native
     def TransformNormalToRef(vector: DeepImmutable[Vector4], transformation: DeepImmutable[Matrix], result: Vector4): Unit = js.native
     
     /**
       * Returns a new Vector4 set to (0.0, 0.0, 0.0, 0.0)
       * @returns the new vector
       */
+    @JSImport("babylonjs/Maths/math.vector", "Vector4.Zero")
+    @js.native
     def Zero(): Vector4 = js.native
   }
 }

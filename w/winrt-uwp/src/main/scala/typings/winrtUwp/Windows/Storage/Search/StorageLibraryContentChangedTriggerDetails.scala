@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Storage.Search
 
 import typings.std.Date
 import typings.winrtUwp.Windows.Storage.StorageFolder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Details about a change to storage library content. */
 @js.native
-trait StorageLibraryContentChangedTriggerDetails extends js.Object {
+trait StorageLibraryContentChangedTriggerDetails extends StObject {
   
   /**
     * Query for the creation/modified changes since a previous such query.
@@ -29,24 +30,12 @@ object StorageLibraryContentChangedTriggerDetails {
   }
   
   @scala.inline
-  implicit class StorageLibraryContentChangedTriggerDetailsOps[Self <: StorageLibraryContentChangedTriggerDetails] (val x: Self) extends AnyVal {
+  implicit class StorageLibraryContentChangedTriggerDetailsMutableBuilder[Self <: StorageLibraryContentChangedTriggerDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateModifiedSinceQuery(value: Date => StorageItemQueryResult): Self = StObject.set(x, "createModifiedSinceQuery", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateModifiedSinceQuery(value: Date => StorageItemQueryResult): Self = this.set("createModifiedSinceQuery", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFolder(value: StorageFolder): Self = this.set("folder", value.asInstanceOf[js.Any])
+    def setFolder(value: StorageFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsRdsDbInstanceVpcSecurityGroup extends js.Object {
+trait AwsRdsDbInstanceVpcSecurityGroup extends StObject {
   
   /**
     * The status of the VPC security group.
@@ -26,30 +27,18 @@ object AwsRdsDbInstanceVpcSecurityGroup {
   }
   
   @scala.inline
-  implicit class AwsRdsDbInstanceVpcSecurityGroupOps[Self <: AwsRdsDbInstanceVpcSecurityGroup] (val x: Self) extends AnyVal {
+  implicit class AwsRdsDbInstanceVpcSecurityGroupMutableBuilder[Self <: AwsRdsDbInstanceVpcSecurityGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVpcSecurityGroupId(value: NonEmptyString): Self = StObject.set(x, "VpcSecurityGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: NonEmptyString): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setVpcSecurityGroupId(value: NonEmptyString): Self = this.set("VpcSecurityGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcSecurityGroupId: Self = this.set("VpcSecurityGroupId", js.undefined)
+    def setVpcSecurityGroupIdUndefined: Self = StObject.set(x, "VpcSecurityGroupId", js.undefined)
   }
 }

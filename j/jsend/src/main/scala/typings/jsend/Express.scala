@@ -1,16 +1,15 @@
 package typings.jsend
 
 import typings.jsend.jsend.jsendExpress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Express")
-@js.native
-object Express extends js.Object {
+object Express {
   
   @js.native
-  trait Response extends js.Object {
+  trait Response extends StObject {
     
     def jsend(err: String): Unit = js.native
     def jsend(err: String, json: js.Object): Unit = js.native

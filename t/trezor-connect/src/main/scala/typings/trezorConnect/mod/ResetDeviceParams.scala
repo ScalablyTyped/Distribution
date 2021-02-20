@@ -1,5 +1,6 @@
 package typings.trezorConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,60 +31,48 @@ object ResetDeviceParams {
   }
   
   @scala.inline
-  implicit class ResetDeviceParamsOps[Self <: ResetDeviceParams] (val x: Self) extends AnyVal {
+  implicit class ResetDeviceParamsMutableBuilder[Self <: ResetDeviceParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoBackup(value: Boolean): Self = StObject.set(x, "noBackup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setNoBackupUndefined: Self = StObject.set(x, "noBackup", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setPassphraseProtection(value: Boolean): Self = StObject.set(x, "passphraseProtection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoBackup(value: Boolean): Self = this.set("noBackup", value.asInstanceOf[js.Any])
+    def setPassphraseProtectionUndefined: Self = StObject.set(x, "passphraseProtection", js.undefined)
     
     @scala.inline
-    def deleteNoBackup: Self = this.set("noBackup", js.undefined)
+    def setPinProtection(value: Boolean): Self = StObject.set(x, "pinProtection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassphraseProtection(value: Boolean): Self = this.set("passphraseProtection", value.asInstanceOf[js.Any])
+    def setPinProtectionUndefined: Self = StObject.set(x, "pinProtection", js.undefined)
     
     @scala.inline
-    def deletePassphraseProtection: Self = this.set("passphraseProtection", js.undefined)
+    def setSkipBackup(value: Boolean): Self = StObject.set(x, "skipBackup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinProtection(value: Boolean): Self = this.set("pinProtection", value.asInstanceOf[js.Any])
+    def setSkipBackupUndefined: Self = StObject.set(x, "skipBackup", js.undefined)
     
     @scala.inline
-    def deletePinProtection: Self = this.set("pinProtection", js.undefined)
+    def setStrength(value: Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipBackup(value: Boolean): Self = this.set("skipBackup", value.asInstanceOf[js.Any])
+    def setStrengthUndefined: Self = StObject.set(x, "strength", js.undefined)
     
     @scala.inline
-    def deleteSkipBackup: Self = this.set("skipBackup", js.undefined)
+    def setU2fCounter(value: Double): Self = StObject.set(x, "u2fCounter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrength(value: Double): Self = this.set("strength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrength: Self = this.set("strength", js.undefined)
-    
-    @scala.inline
-    def setU2fCounter(value: Double): Self = this.set("u2fCounter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteU2fCounter: Self = this.set("u2fCounter", js.undefined)
+    def setU2fCounterUndefined: Self = StObject.set(x, "u2fCounter", js.undefined)
   }
 }

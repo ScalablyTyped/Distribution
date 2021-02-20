@@ -1,6 +1,7 @@
 package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.textFieldTypesMod.ITextFieldProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,15 @@ class TextFieldBase protected ()
   def this(props: ITextFieldProps) = this()
 }
 /* static members */
-@JSImport("office-ui-fabric-react", "TextFieldBase")
-@js.native
-object TextFieldBase extends js.Object {
+object TextFieldBase {
   
-  var defaultProps: ITextFieldProps = js.native
+  @JSImport("office-ui-fabric-react", "TextFieldBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react", "TextFieldBase.defaultProps")
+  @js.native
+  def defaultProps: ITextFieldProps = js.native
+  @scala.inline
+  def defaultProps_=(x: ITextFieldProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

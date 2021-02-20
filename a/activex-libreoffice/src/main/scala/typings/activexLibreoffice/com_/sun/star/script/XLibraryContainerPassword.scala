@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.script
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,30 +80,18 @@ object XLibraryContainerPassword {
   }
   
   @scala.inline
-  implicit class XLibraryContainerPasswordOps[Self <: XLibraryContainerPassword] (val x: Self) extends AnyVal {
+  implicit class XLibraryContainerPasswordMutableBuilder[Self <: XLibraryContainerPassword] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeLibraryPassword(value: (String, String, String) => Unit): Self = StObject.set(x, "changeLibraryPassword", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsLibraryPasswordProtected(value: String => Boolean): Self = StObject.set(x, "isLibraryPasswordProtected", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsLibraryPasswordVerified(value: String => Boolean): Self = StObject.set(x, "isLibraryPasswordVerified", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChangeLibraryPassword(value: (String, String, String) => Unit): Self = this.set("changeLibraryPassword", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setIsLibraryPasswordProtected(value: String => Boolean): Self = this.set("isLibraryPasswordProtected", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsLibraryPasswordVerified(value: String => Boolean): Self = this.set("isLibraryPasswordVerified", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setVerifyLibraryPassword(value: (String, String) => Boolean): Self = this.set("verifyLibraryPassword", js.Any.fromFunction2(value))
+    def setVerifyLibraryPassword(value: (String, String) => Boolean): Self = StObject.set(x, "verifyLibraryPassword", js.Any.fromFunction2(value))
   }
 }

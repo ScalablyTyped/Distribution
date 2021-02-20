@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoScalingSettingsDescription extends js.Object {
+trait AutoScalingSettingsDescription extends StObject {
   
   /**
     * Disabled auto scaling for this global table or global secondary index.
@@ -41,51 +42,39 @@ object AutoScalingSettingsDescription {
   }
   
   @scala.inline
-  implicit class AutoScalingSettingsDescriptionOps[Self <: AutoScalingSettingsDescription] (val x: Self) extends AnyVal {
+  implicit class AutoScalingSettingsDescriptionMutableBuilder[Self <: AutoScalingSettingsDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoScalingDisabled(value: BooleanObject): Self = StObject.set(x, "AutoScalingDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoScalingDisabledUndefined: Self = StObject.set(x, "AutoScalingDisabled", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoScalingRoleArn(value: String): Self = StObject.set(x, "AutoScalingRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScalingDisabled(value: BooleanObject): Self = this.set("AutoScalingDisabled", value.asInstanceOf[js.Any])
+    def setAutoScalingRoleArnUndefined: Self = StObject.set(x, "AutoScalingRoleArn", js.undefined)
     
     @scala.inline
-    def deleteAutoScalingDisabled: Self = this.set("AutoScalingDisabled", js.undefined)
+    def setMaximumUnits(value: PositiveLongObject): Self = StObject.set(x, "MaximumUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScalingRoleArn(value: String): Self = this.set("AutoScalingRoleArn", value.asInstanceOf[js.Any])
+    def setMaximumUnitsUndefined: Self = StObject.set(x, "MaximumUnits", js.undefined)
     
     @scala.inline
-    def deleteAutoScalingRoleArn: Self = this.set("AutoScalingRoleArn", js.undefined)
+    def setMinimumUnits(value: PositiveLongObject): Self = StObject.set(x, "MinimumUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumUnits(value: PositiveLongObject): Self = this.set("MaximumUnits", value.asInstanceOf[js.Any])
+    def setMinimumUnitsUndefined: Self = StObject.set(x, "MinimumUnits", js.undefined)
     
     @scala.inline
-    def deleteMaximumUnits: Self = this.set("MaximumUnits", js.undefined)
+    def setScalingPolicies(value: AutoScalingPolicyDescriptionList): Self = StObject.set(x, "ScalingPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumUnits(value: PositiveLongObject): Self = this.set("MinimumUnits", value.asInstanceOf[js.Any])
+    def setScalingPoliciesUndefined: Self = StObject.set(x, "ScalingPolicies", js.undefined)
     
     @scala.inline
-    def deleteMinimumUnits: Self = this.set("MinimumUnits", js.undefined)
-    
-    @scala.inline
-    def setScalingPoliciesVarargs(value: AutoScalingPolicyDescription*): Self = this.set("ScalingPolicies", js.Array(value :_*))
-    
-    @scala.inline
-    def setScalingPolicies(value: AutoScalingPolicyDescriptionList): Self = this.set("ScalingPolicies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScalingPolicies: Self = this.set("ScalingPolicies", js.undefined)
+    def setScalingPoliciesVarargs(value: AutoScalingPolicyDescription*): Self = StObject.set(x, "ScalingPolicies", js.Array(value :_*))
   }
 }

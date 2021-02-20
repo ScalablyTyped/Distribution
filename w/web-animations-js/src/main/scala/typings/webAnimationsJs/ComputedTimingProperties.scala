@@ -1,11 +1,12 @@
 package typings.webAnimationsJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComputedTimingProperties extends js.Object {
+trait ComputedTimingProperties extends StObject {
   
   var activeDuration: Double = js.native
   
@@ -26,42 +27,30 @@ object ComputedTimingProperties {
   }
   
   @scala.inline
-  implicit class ComputedTimingPropertiesOps[Self <: ComputedTimingProperties] (val x: Self) extends AnyVal {
+  implicit class ComputedTimingPropertiesMutableBuilder[Self <: ComputedTimingProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveDuration(value: Double): Self = StObject.set(x, "activeDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentIteration(value: Double): Self = StObject.set(x, "currentIteration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentIterationNull: Self = StObject.set(x, "currentIteration", null)
     
     @scala.inline
-    def setActiveDuration(value: Double): Self = this.set("activeDuration", value.asInstanceOf[js.Any])
+    def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: Double): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setLocalTime(value: Double): Self = StObject.set(x, "localTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentIteration(value: Double): Self = this.set("currentIteration", value.asInstanceOf[js.Any])
+    def setLocalTimeNull: Self = StObject.set(x, "localTime", null)
     
     @scala.inline
-    def setCurrentIterationNull: Self = this.set("currentIteration", null)
+    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalTime(value: Double): Self = this.set("localTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocalTimeNull: Self = this.set("localTime", null)
-    
-    @scala.inline
-    def setProgress(value: Double): Self = this.set("progress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProgressNull: Self = this.set("progress", null)
+    def setProgressNull: Self = StObject.set(x, "progress", null)
   }
 }

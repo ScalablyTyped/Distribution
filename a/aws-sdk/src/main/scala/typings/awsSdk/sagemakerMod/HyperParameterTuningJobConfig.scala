@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HyperParameterTuningJobConfig extends js.Object {
+trait HyperParameterTuningJobConfig extends StObject {
   
   /**
     * The HyperParameterTuningJobObjective object that specifies the objective metric for this tuning job.
@@ -46,48 +47,36 @@ object HyperParameterTuningJobConfig {
   }
   
   @scala.inline
-  implicit class HyperParameterTuningJobConfigOps[Self <: HyperParameterTuningJobConfig] (val x: Self) extends AnyVal {
+  implicit class HyperParameterTuningJobConfigMutableBuilder[Self <: HyperParameterTuningJobConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHyperParameterTuningJobObjective(value: HyperParameterTuningJobObjective): Self = StObject.set(x, "HyperParameterTuningJobObjective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHyperParameterTuningJobObjectiveUndefined: Self = StObject.set(x, "HyperParameterTuningJobObjective", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameterRanges(value: ParameterRanges): Self = StObject.set(x, "ParameterRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceLimits(value: ResourceLimits): Self = this.set("ResourceLimits", value.asInstanceOf[js.Any])
+    def setParameterRangesUndefined: Self = StObject.set(x, "ParameterRanges", js.undefined)
     
     @scala.inline
-    def setStrategy(value: HyperParameterTuningJobStrategyType): Self = this.set("Strategy", value.asInstanceOf[js.Any])
+    def setResourceLimits(value: ResourceLimits): Self = StObject.set(x, "ResourceLimits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperParameterTuningJobObjective(value: HyperParameterTuningJobObjective): Self = this.set("HyperParameterTuningJobObjective", value.asInstanceOf[js.Any])
+    def setStrategy(value: HyperParameterTuningJobStrategyType): Self = StObject.set(x, "Strategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHyperParameterTuningJobObjective: Self = this.set("HyperParameterTuningJobObjective", js.undefined)
+    def setTrainingJobEarlyStoppingType(value: TrainingJobEarlyStoppingType): Self = StObject.set(x, "TrainingJobEarlyStoppingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterRanges(value: ParameterRanges): Self = this.set("ParameterRanges", value.asInstanceOf[js.Any])
+    def setTrainingJobEarlyStoppingTypeUndefined: Self = StObject.set(x, "TrainingJobEarlyStoppingType", js.undefined)
     
     @scala.inline
-    def deleteParameterRanges: Self = this.set("ParameterRanges", js.undefined)
+    def setTuningJobCompletionCriteria(value: TuningJobCompletionCriteria): Self = StObject.set(x, "TuningJobCompletionCriteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrainingJobEarlyStoppingType(value: TrainingJobEarlyStoppingType): Self = this.set("TrainingJobEarlyStoppingType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrainingJobEarlyStoppingType: Self = this.set("TrainingJobEarlyStoppingType", js.undefined)
-    
-    @scala.inline
-    def setTuningJobCompletionCriteria(value: TuningJobCompletionCriteria): Self = this.set("TuningJobCompletionCriteria", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTuningJobCompletionCriteria: Self = this.set("TuningJobCompletionCriteria", js.undefined)
+    def setTuningJobCompletionCriteriaUndefined: Self = StObject.set(x, "TuningJobCompletionCriteria", js.undefined)
   }
 }

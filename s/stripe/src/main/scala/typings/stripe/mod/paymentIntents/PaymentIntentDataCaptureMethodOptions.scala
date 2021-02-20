@@ -1,5 +1,6 @@
 package typings.stripe.mod.paymentIntents
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.stripe.stripeStrings.automatic
   - typings.stripe.stripeStrings.manual
 */
-trait PaymentIntentDataCaptureMethodOptions extends js.Object
+trait PaymentIntentDataCaptureMethodOptions extends StObject
 object PaymentIntentDataCaptureMethodOptions {
   
   @scala.inline

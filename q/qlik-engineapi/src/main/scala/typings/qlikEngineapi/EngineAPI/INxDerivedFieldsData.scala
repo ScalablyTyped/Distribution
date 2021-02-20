@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NxDerivedFieldsData...
   */
 @js.native
-trait INxDerivedFieldsData extends js.Object {
+trait INxDerivedFieldsData extends StObject {
   
   /**
     * Name of the derived definition.
@@ -44,39 +45,27 @@ object INxDerivedFieldsData {
   }
   
   @scala.inline
-  implicit class INxDerivedFieldsDataOps[Self <: INxDerivedFieldsData] (val x: Self) extends AnyVal {
+  implicit class INxDerivedFieldsDataMutableBuilder[Self <: INxDerivedFieldsData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQDerivedDefinitionName(value: String): Self = StObject.set(x, "qDerivedDefinitionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQFieldDefs(value: js.Array[INxDerivedField]): Self = StObject.set(x, "qFieldDefs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQFieldDefsVarargs(value: INxDerivedField*): Self = StObject.set(x, "qFieldDefs", js.Array(value :_*))
     
     @scala.inline
-    def setQDerivedDefinitionName(value: String): Self = this.set("qDerivedDefinitionName", value.asInstanceOf[js.Any])
+    def setQGroupDefs(value: js.Array[INxDerivedGroup]): Self = StObject.set(x, "qGroupDefs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFieldDefsVarargs(value: INxDerivedField*): Self = this.set("qFieldDefs", js.Array(value :_*))
+    def setQGroupDefsVarargs(value: INxDerivedGroup*): Self = StObject.set(x, "qGroupDefs", js.Array(value :_*))
     
     @scala.inline
-    def setQFieldDefs(value: js.Array[INxDerivedField]): Self = this.set("qFieldDefs", value.asInstanceOf[js.Any])
+    def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQGroupDefsVarargs(value: INxDerivedGroup*): Self = this.set("qGroupDefs", js.Array(value :_*))
-    
-    @scala.inline
-    def setQGroupDefs(value: js.Array[INxDerivedGroup]): Self = this.set("qGroupDefs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQTagsVarargs(value: String*): Self = this.set("qTags", js.Array(value :_*))
-    
-    @scala.inline
-    def setQTags(value: js.Array[String]): Self = this.set("qTags", value.asInstanceOf[js.Any])
+    def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
   }
 }

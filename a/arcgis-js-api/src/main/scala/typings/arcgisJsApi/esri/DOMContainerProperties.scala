@@ -1,12 +1,13 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DOMContainerProperties extends js.Object {
+trait DOMContainerProperties extends StObject {
   
   /**
     * The `id` or node representing the DOM element containing the view.
@@ -38,36 +39,24 @@ object DOMContainerProperties {
   }
   
   @scala.inline
-  implicit class DOMContainerPropertiesOps[Self <: DOMContainerProperties] (val x: Self) extends AnyVal {
+  implicit class DOMContainerPropertiesMutableBuilder[Self <: DOMContainerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainer(value: HTMLDivElement | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPopup(value: PopupProperties): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: HTMLDivElement | String): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setUi(value: DefaultUIProperties): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopup(value: PopupProperties): Self = this.set("popup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePopup: Self = this.set("popup", js.undefined)
-    
-    @scala.inline
-    def setUi(value: DefaultUIProperties): Self = this.set("ui", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUi: Self = this.set("ui", js.undefined)
+    def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
   }
 }

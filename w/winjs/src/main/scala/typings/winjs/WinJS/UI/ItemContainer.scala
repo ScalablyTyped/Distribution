@@ -2,6 +2,7 @@ package typings.winjs.WinJS.UI
 
 import typings.std.CustomEvent
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Defines an item that can be pressed, swiped, and dragged.
   **/
 @js.native
-trait ItemContainer extends js.Object {
+trait ItemContainer extends StObject {
   
   //#endregion Events
   //#region Methods

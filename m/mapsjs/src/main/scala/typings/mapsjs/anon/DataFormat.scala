@@ -1,11 +1,12 @@
 package typings.mapsjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataFormat extends js.Object {
+trait DataFormat extends StObject {
   
   var dataFormat: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object DataFormat {
   }
   
   @scala.inline
-  implicit class DataFormatOps[Self <: DataFormat] (val x: Self) extends AnyVal {
+  implicit class DataFormatMutableBuilder[Self <: DataFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataFormat(value: String): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxAvailableZoomLevel(value: Double): Self = StObject.set(x, "maxAvailableZoomLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFormat(value: String): Self = this.set("dataFormat", value.asInstanceOf[js.Any])
+    def setMaxAvailableZoomLevelUndefined: Self = StObject.set(x, "maxAvailableZoomLevel", js.undefined)
     
     @scala.inline
-    def deleteDataFormat: Self = this.set("dataFormat", js.undefined)
+    def setTimeoutMs(value: Double): Self = StObject.set(x, "timeoutMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAvailableZoomLevel(value: Double): Self = this.set("maxAvailableZoomLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxAvailableZoomLevel: Self = this.set("maxAvailableZoomLevel", js.undefined)
-    
-    @scala.inline
-    def setTimeoutMs(value: Double): Self = this.set("timeoutMs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutMs: Self = this.set("timeoutMs", js.undefined)
+    def setTimeoutMsUndefined: Self = StObject.set(x, "timeoutMs", js.undefined)
   }
 }

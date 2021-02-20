@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetVoiceConnectorLoggingConfigurationResponse extends js.Object {
+trait GetVoiceConnectorLoggingConfigurationResponse extends StObject {
   
   /**
     * The logging configuration details.
@@ -21,24 +22,12 @@ object GetVoiceConnectorLoggingConfigurationResponse {
   }
   
   @scala.inline
-  implicit class GetVoiceConnectorLoggingConfigurationResponseOps[Self <: GetVoiceConnectorLoggingConfigurationResponse] (val x: Self) extends AnyVal {
+  implicit class GetVoiceConnectorLoggingConfigurationResponseMutableBuilder[Self <: GetVoiceConnectorLoggingConfigurationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoggingConfiguration(value: LoggingConfiguration): Self = StObject.set(x, "LoggingConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLoggingConfiguration(value: LoggingConfiguration): Self = this.set("LoggingConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoggingConfiguration: Self = this.set("LoggingConfiguration", js.undefined)
+    def setLoggingConfigurationUndefined: Self = StObject.set(x, "LoggingConfiguration", js.undefined)
   }
 }

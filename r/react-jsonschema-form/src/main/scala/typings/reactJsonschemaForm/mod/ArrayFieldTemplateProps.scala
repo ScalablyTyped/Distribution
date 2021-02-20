@@ -6,12 +6,13 @@ import typings.reactJsonschemaForm.anon.Children
 import typings.reactJsonschemaForm.anon.Definitions
 import typings.reactJsonschemaForm.anon.Description
 import typings.reactJsonschemaForm.anon.Id
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArrayFieldTemplateProps[T] extends js.Object {
+trait ArrayFieldTemplateProps[T] extends StObject {
   
   var DescriptionField: StatelessComponent[Description] = js.native
   
@@ -71,69 +72,57 @@ object ArrayFieldTemplateProps {
   }
   
   @scala.inline
-  implicit class ArrayFieldTemplatePropsOps[Self <: ArrayFieldTemplateProps[_], T] (val x: Self with ArrayFieldTemplateProps[T]) extends AnyVal {
+  implicit class ArrayFieldTemplatePropsMutableBuilder[Self <: ArrayFieldTemplateProps[_], T] (val x: Self with ArrayFieldTemplateProps[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanAdd(value: Boolean): Self = StObject.set(x, "canAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptionField(value: StatelessComponent[Description]): Self = StObject.set(x, "DescriptionField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptionField(value: StatelessComponent[Description]): Self = this.set("DescriptionField", value.asInstanceOf[js.Any])
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleField(value: StatelessComponent[Id]): Self = this.set("TitleField", value.asInstanceOf[js.Any])
+    def setFormContext(value: js.Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanAdd(value: Boolean): Self = this.set("canAdd", value.asInstanceOf[js.Any])
+    def setFormData(value: T): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setIdSchema(value: IdSchema[_]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[Children]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormContext(value: js.Any): Self = this.set("formContext", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: Children*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setFormData(value: T): Self = this.set("formData", value.asInstanceOf[js.Any])
+    def setOnAddClick(value: js.Any => js.Function1[/* event */ js.Any, Unit]): Self = StObject.set(x, "onAddClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIdSchema(value: IdSchema[_]): Self = this.set("idSchema", value.asInstanceOf[js.Any])
+    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: Children*): Self = this.set("items", js.Array(value :_*))
+    def setRegistry(value: Definitions): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[Children]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnAddClick(value: js.Any => js.Function1[/* event */ js.Any, Unit]): Self = this.set("onAddClick", js.Any.fromFunction1(value))
+    def setSchema(value: JSONSchema6): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadonly(value: Boolean): Self = this.set("readonly", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistry(value: Definitions): Self = this.set("registry", value.asInstanceOf[js.Any])
+    def setTitleField(value: StatelessComponent[Id]): Self = StObject.set(x, "TitleField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchema(value: JSONSchema6): Self = this.set("schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUiSchema(value: UiSchema): Self = this.set("uiSchema", value.asInstanceOf[js.Any])
+    def setUiSchema(value: UiSchema): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
   }
 }

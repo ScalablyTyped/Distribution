@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Charts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     var style = textStyleBuilder.build();
   */
 @js.native
-trait TextStyleBuilder extends js.Object {
+trait TextStyleBuilder extends StObject {
   
   def build(): TextStyle = js.native
   
@@ -41,30 +42,18 @@ object TextStyleBuilder {
   }
   
   @scala.inline
-  implicit class TextStyleBuilderOps[Self <: TextStyleBuilder] (val x: Self) extends AnyVal {
+  implicit class TextStyleBuilderMutableBuilder[Self <: TextStyleBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuild(value: () => TextStyle): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetColor(value: String => TextStyleBuilder): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetFontName(value: String => TextStyleBuilder): Self = StObject.set(x, "setFontName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBuild(value: () => TextStyle): Self = this.set("build", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetColor(value: String => TextStyleBuilder): Self = this.set("setColor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetFontName(value: String => TextStyleBuilder): Self = this.set("setFontName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetFontSize(value: Double => TextStyleBuilder): Self = this.set("setFontSize", js.Any.fromFunction1(value))
+    def setSetFontSize(value: Double => TextStyleBuilder): Self = StObject.set(x, "setFontSize", js.Any.fromFunction1(value))
   }
 }

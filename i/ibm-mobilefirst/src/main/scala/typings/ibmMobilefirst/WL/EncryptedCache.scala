@@ -1,12 +1,11 @@
 package typings.ibmMobilefirst.WL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("WL.EncryptedCache")
-@js.native
-object EncryptedCache extends js.Object {
+object EncryptedCache {
   
   /**
     * See above statuses for possible values

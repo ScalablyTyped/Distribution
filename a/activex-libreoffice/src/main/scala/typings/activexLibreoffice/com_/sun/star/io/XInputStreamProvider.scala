@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.io
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,21 +36,9 @@ object XInputStreamProvider {
   }
   
   @scala.inline
-  implicit class XInputStreamProviderOps[Self <: XInputStreamProvider] (val x: Self) extends AnyVal {
+  implicit class XInputStreamProviderMutableBuilder[Self <: XInputStreamProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateInputStream(value: () => XInputStream): Self = this.set("createInputStream", js.Any.fromFunction0(value))
+    def setCreateInputStream(value: () => XInputStream): Self = StObject.set(x, "createInputStream", js.Any.fromFunction0(value))
   }
 }

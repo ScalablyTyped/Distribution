@@ -1,5 +1,6 @@
 package typings.googleapis.iamV1Mod.iamV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A response containing a list of auditable services for a resource.
   */
 @js.native
-trait SchemaQueryAuditableServicesResponse extends js.Object {
+trait SchemaQueryAuditableServicesResponse extends StObject {
   
   /**
     * The auditable services for a resource.
@@ -24,27 +25,15 @@ object SchemaQueryAuditableServicesResponse {
   }
   
   @scala.inline
-  implicit class SchemaQueryAuditableServicesResponseOps[Self <: SchemaQueryAuditableServicesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaQueryAuditableServicesResponseMutableBuilder[Self <: SchemaQueryAuditableServicesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setServices(value: js.Array[SchemaAuditableService]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setServicesVarargs(value: SchemaAuditableService*): Self = this.set("services", js.Array(value :_*))
-    
-    @scala.inline
-    def setServices(value: js.Array[SchemaAuditableService]): Self = this.set("services", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServices: Self = this.set("services", js.undefined)
+    def setServicesVarargs(value: SchemaAuditableService*): Self = StObject.set(x, "services", js.Array(value :_*))
   }
 }

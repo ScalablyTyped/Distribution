@@ -1,5 +1,6 @@
 package typings.googleapis.jobsV3Mod.jobsV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Application related details of a job posting.
   */
 @js.native
-trait SchemaApplicationInfo extends js.Object {
+trait SchemaApplicationInfo extends StObject {
   
   /**
     * Optional but at least one of uris, emails or instruction must be
@@ -45,42 +46,30 @@ object SchemaApplicationInfo {
   }
   
   @scala.inline
-  implicit class SchemaApplicationInfoOps[Self <: SchemaApplicationInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaApplicationInfoMutableBuilder[Self <: SchemaApplicationInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmails(value: js.Array[String]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value :_*))
     
     @scala.inline
-    def setEmailsVarargs(value: String*): Self = this.set("emails", js.Array(value :_*))
+    def setInstruction(value: String): Self = StObject.set(x, "instruction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmails(value: js.Array[String]): Self = this.set("emails", value.asInstanceOf[js.Any])
+    def setInstructionUndefined: Self = StObject.set(x, "instruction", js.undefined)
     
     @scala.inline
-    def deleteEmails: Self = this.set("emails", js.undefined)
+    def setUris(value: js.Array[String]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstruction(value: String): Self = this.set("instruction", value.asInstanceOf[js.Any])
+    def setUrisUndefined: Self = StObject.set(x, "uris", js.undefined)
     
     @scala.inline
-    def deleteInstruction: Self = this.set("instruction", js.undefined)
-    
-    @scala.inline
-    def setUrisVarargs(value: String*): Self = this.set("uris", js.Array(value :_*))
-    
-    @scala.inline
-    def setUris(value: js.Array[String]): Self = this.set("uris", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUris: Self = this.set("uris", js.undefined)
+    def setUrisVarargs(value: String*): Self = StObject.set(x, "uris", js.Array(value :_*))
   }
 }

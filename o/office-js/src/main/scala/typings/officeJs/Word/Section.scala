@@ -9,6 +9,7 @@ import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.EvenPages
 import typings.officeJs.officeJsStrings.FirstPage
 import typings.officeJs.officeJsStrings.Primary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

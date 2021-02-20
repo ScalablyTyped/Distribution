@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserAccountManagementGranularInformation extends js.Object {
+trait UserAccountManagementGranularInformation extends StObject {
   
   /**
     * **True** if the user can manage account security settings.
@@ -91,116 +92,104 @@ object UserAccountManagementGranularInformation {
   }
   
   @scala.inline
-  implicit class UserAccountManagementGranularInformationOps[Self <: UserAccountManagementGranularInformation] (val x: Self) extends AnyVal {
+  implicit class UserAccountManagementGranularInformationMutableBuilder[Self <: UserAccountManagementGranularInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCanManageAccountSecuritySettings(value: String): Self = this.set("canManageAccountSecuritySettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCanManageAccountSecuritySettings: Self = this.set("canManageAccountSecuritySettings", js.undefined)
+    def setCanManageAccountSecuritySettings(value: String): Self = StObject.set(x, "canManageAccountSecuritySettings", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCanManageAccountSecuritySettingsMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("canManageAccountSecuritySettingsMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "canManageAccountSecuritySettingsMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCanManageAccountSecuritySettingsMetadata: Self = this.set("canManageAccountSecuritySettingsMetadata", js.undefined)
+    def setCanManageAccountSecuritySettingsMetadataUndefined: Self = StObject.set(x, "canManageAccountSecuritySettingsMetadata", js.undefined)
     
     @scala.inline
-    def setCanManageAccountSettings(value: String): Self = this.set("canManageAccountSettings", value.asInstanceOf[js.Any])
+    def setCanManageAccountSecuritySettingsUndefined: Self = StObject.set(x, "canManageAccountSecuritySettings", js.undefined)
     
     @scala.inline
-    def deleteCanManageAccountSettings: Self = this.set("canManageAccountSettings", js.undefined)
+    def setCanManageAccountSettings(value: String): Self = StObject.set(x, "canManageAccountSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCanManageAccountSettingsMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("canManageAccountSettingsMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "canManageAccountSettingsMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCanManageAccountSettingsMetadata: Self = this.set("canManageAccountSettingsMetadata", js.undefined)
+    def setCanManageAccountSettingsMetadataUndefined: Self = StObject.set(x, "canManageAccountSettingsMetadata", js.undefined)
     
     @scala.inline
-    def setCanManageAdmins(value: String): Self = this.set("canManageAdmins", value.asInstanceOf[js.Any])
+    def setCanManageAccountSettingsUndefined: Self = StObject.set(x, "canManageAccountSettings", js.undefined)
     
     @scala.inline
-    def deleteCanManageAdmins: Self = this.set("canManageAdmins", js.undefined)
+    def setCanManageAdmins(value: String): Self = StObject.set(x, "canManageAdmins", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCanManageAdminsMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("canManageAdminsMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "canManageAdminsMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCanManageAdminsMetadata: Self = this.set("canManageAdminsMetadata", js.undefined)
+    def setCanManageAdminsMetadataUndefined: Self = StObject.set(x, "canManageAdminsMetadata", js.undefined)
     
     @scala.inline
-    def setCanManageReporting(value: String): Self = this.set("canManageReporting", value.asInstanceOf[js.Any])
+    def setCanManageAdminsUndefined: Self = StObject.set(x, "canManageAdmins", js.undefined)
     
     @scala.inline
-    def deleteCanManageReporting: Self = this.set("canManageReporting", js.undefined)
+    def setCanManageReporting(value: String): Self = StObject.set(x, "canManageReporting", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCanManageReportingMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("canManageReportingMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "canManageReportingMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCanManageReportingMetadata: Self = this.set("canManageReportingMetadata", js.undefined)
+    def setCanManageReportingMetadataUndefined: Self = StObject.set(x, "canManageReportingMetadata", js.undefined)
     
     @scala.inline
-    def setCanManageSharing(value: String): Self = this.set("canManageSharing", value.asInstanceOf[js.Any])
+    def setCanManageReportingUndefined: Self = StObject.set(x, "canManageReporting", js.undefined)
     
     @scala.inline
-    def deleteCanManageSharing: Self = this.set("canManageSharing", js.undefined)
+    def setCanManageSharing(value: String): Self = StObject.set(x, "canManageSharing", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCanManageSharingMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("canManageSharingMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "canManageSharingMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCanManageSharingMetadata: Self = this.set("canManageSharingMetadata", js.undefined)
+    def setCanManageSharingMetadataUndefined: Self = StObject.set(x, "canManageSharingMetadata", js.undefined)
     
     @scala.inline
-    def setCanManageSigningGroups(value: String): Self = this.set("canManageSigningGroups", value.asInstanceOf[js.Any])
+    def setCanManageSharingUndefined: Self = StObject.set(x, "canManageSharing", js.undefined)
     
     @scala.inline
-    def deleteCanManageSigningGroups: Self = this.set("canManageSigningGroups", js.undefined)
+    def setCanManageSigningGroups(value: String): Self = StObject.set(x, "canManageSigningGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCanManageSigningGroupsMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("canManageSigningGroupsMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "canManageSigningGroupsMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCanManageSigningGroupsMetadata: Self = this.set("canManageSigningGroupsMetadata", js.undefined)
+    def setCanManageSigningGroupsMetadataUndefined: Self = StObject.set(x, "canManageSigningGroupsMetadata", js.undefined)
     
     @scala.inline
-    def setCanManageUsers(value: String): Self = this.set("canManageUsers", value.asInstanceOf[js.Any])
+    def setCanManageSigningGroupsUndefined: Self = StObject.set(x, "canManageSigningGroups", js.undefined)
     
     @scala.inline
-    def deleteCanManageUsers: Self = this.set("canManageUsers", js.undefined)
+    def setCanManageUsers(value: String): Self = StObject.set(x, "canManageUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCanManageUsersMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-    ): Self = this.set("canManageUsersMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "canManageUsersMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCanManageUsersMetadata: Self = this.set("canManageUsersMetadata", js.undefined)
+    def setCanManageUsersMetadataUndefined: Self = StObject.set(x, "canManageUsersMetadata", js.undefined)
+    
+    @scala.inline
+    def setCanManageUsersUndefined: Self = StObject.set(x, "canManageUsers", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMagellanOptions extends js.Object {
+trait IMagellanOptions extends StObject {
   
   var activeClass: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object IMagellanOptions {
   }
   
   @scala.inline
-  implicit class IMagellanOptionsOps[Self <: IMagellanOptions] (val x: Self) extends AnyVal {
+  implicit class IMagellanOptionsMutableBuilder[Self <: IMagellanOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveClass(value: String): Self = this.set("activeClass", value.asInstanceOf[js.Any])
+    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
     @scala.inline
-    def deleteActiveClass: Self = this.set("activeClass", js.undefined)
+    def setAnimationEasing(value: String): Self = StObject.set(x, "animationEasing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    def setAnimationEasingUndefined: Self = StObject.set(x, "animationEasing", js.undefined)
     
     @scala.inline
-    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    def setBarOffset(value: Double): Self = StObject.set(x, "barOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationEasing(value: String): Self = this.set("animationEasing", value.asInstanceOf[js.Any])
+    def setBarOffsetUndefined: Self = StObject.set(x, "barOffset", js.undefined)
     
     @scala.inline
-    def deleteAnimationEasing: Self = this.set("animationEasing", js.undefined)
+    def setDeepLinking(value: Boolean): Self = StObject.set(x, "deepLinking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarOffset(value: Double): Self = this.set("barOffset", value.asInstanceOf[js.Any])
+    def setDeepLinkingUndefined: Self = StObject.set(x, "deepLinking", js.undefined)
     
     @scala.inline
-    def deleteBarOffset: Self = this.set("barOffset", js.undefined)
+    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepLinking(value: Boolean): Self = this.set("deepLinking", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeepLinking: Self = this.set("deepLinking", js.undefined)
-    
-    @scala.inline
-    def setThreshold(value: Double): Self = this.set("threshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreshold: Self = this.set("threshold", js.undefined)
+    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
   }
 }

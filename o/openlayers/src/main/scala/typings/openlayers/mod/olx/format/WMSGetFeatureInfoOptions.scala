@@ -1,11 +1,12 @@
 package typings.openlayers.mod.olx.format
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WMSGetFeatureInfoOptions extends js.Object {
+trait WMSGetFeatureInfoOptions extends StObject {
   
   var layers: js.UndefOr[js.Array[String]] = js.native
 }
@@ -18,27 +19,15 @@ object WMSGetFeatureInfoOptions {
   }
   
   @scala.inline
-  implicit class WMSGetFeatureInfoOptionsOps[Self <: WMSGetFeatureInfoOptions] (val x: Self) extends AnyVal {
+  implicit class WMSGetFeatureInfoOptionsMutableBuilder[Self <: WMSGetFeatureInfoOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLayersVarargs(value: String*): Self = this.set("layers", js.Array(value :_*))
-    
-    @scala.inline
-    def setLayers(value: js.Array[String]): Self = this.set("layers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayers: Self = this.set("layers", js.undefined)
+    def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
   }
 }

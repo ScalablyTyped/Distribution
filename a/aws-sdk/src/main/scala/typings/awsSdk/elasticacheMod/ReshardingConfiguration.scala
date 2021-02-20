@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReshardingConfiguration extends js.Object {
+trait ReshardingConfiguration extends StObject {
   
   /**
     * Either the ElastiCache for Redis supplied 4-digit id or a user supplied id for the node group these configuration values apply to.
@@ -26,33 +27,21 @@ object ReshardingConfiguration {
   }
   
   @scala.inline
-  implicit class ReshardingConfigurationOps[Self <: ReshardingConfiguration] (val x: Self) extends AnyVal {
+  implicit class ReshardingConfigurationMutableBuilder[Self <: ReshardingConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNodeGroupId(value: AllowedNodeGroupId): Self = StObject.set(x, "NodeGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNodeGroupIdUndefined: Self = StObject.set(x, "NodeGroupId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreferredAvailabilityZones(value: AvailabilityZonesList): Self = StObject.set(x, "PreferredAvailabilityZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeGroupId(value: AllowedNodeGroupId): Self = this.set("NodeGroupId", value.asInstanceOf[js.Any])
+    def setPreferredAvailabilityZonesUndefined: Self = StObject.set(x, "PreferredAvailabilityZones", js.undefined)
     
     @scala.inline
-    def deleteNodeGroupId: Self = this.set("NodeGroupId", js.undefined)
-    
-    @scala.inline
-    def setPreferredAvailabilityZonesVarargs(value: String*): Self = this.set("PreferredAvailabilityZones", js.Array(value :_*))
-    
-    @scala.inline
-    def setPreferredAvailabilityZones(value: AvailabilityZonesList): Self = this.set("PreferredAvailabilityZones", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreferredAvailabilityZones: Self = this.set("PreferredAvailabilityZones", js.undefined)
+    def setPreferredAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "PreferredAvailabilityZones", js.Array(value :_*))
   }
 }

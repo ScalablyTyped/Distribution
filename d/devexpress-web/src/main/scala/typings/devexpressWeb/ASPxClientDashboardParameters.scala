@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A collection of ASPxClientDashboardParameter objects.
   */
 @js.native
-trait ASPxClientDashboardParameters extends js.Object {
+trait ASPxClientDashboardParameters extends StObject {
   
   /**
     * Returns a dashboard parameter by its index in the ASPxClientDashboardParameters collection. A ASPxClientDashboardParameter object that is the client-side dashboard parameter.
@@ -40,27 +41,15 @@ object ASPxClientDashboardParameters {
   }
   
   @scala.inline
-  implicit class ASPxClientDashboardParametersOps[Self <: ASPxClientDashboardParameters] (val x: Self) extends AnyVal {
+  implicit class ASPxClientDashboardParametersMutableBuilder[Self <: ASPxClientDashboardParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetParameterByIndex(value: Double => ASPxClientDashboardParameter): Self = StObject.set(x, "GetParameterByIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetParameterByName(value: String => ASPxClientDashboardParameter): Self = StObject.set(x, "GetParameterByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetParameterByIndex(value: Double => ASPxClientDashboardParameter): Self = this.set("GetParameterByIndex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetParameterByName(value: String => ASPxClientDashboardParameter): Self = this.set("GetParameterByName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetParameterList(value: () => js.Array[ASPxClientDashboardParameter]): Self = this.set("GetParameterList", js.Any.fromFunction0(value))
+    def setGetParameterList(value: () => js.Array[ASPxClientDashboardParameter]): Self = StObject.set(x, "GetParameterList", js.Any.fromFunction0(value))
   }
 }

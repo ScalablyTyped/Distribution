@@ -1,11 +1,12 @@
 package typings.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISliderOptions extends js.Object {
+trait ISliderOptions extends StObject {
   
   var binding: js.UndefOr[Boolean] = js.native
   
@@ -44,102 +45,90 @@ object ISliderOptions {
   }
   
   @scala.inline
-  implicit class ISliderOptionsOps[Self <: ISliderOptions] (val x: Self) extends AnyVal {
+  implicit class ISliderOptionsMutableBuilder[Self <: ISliderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinding(value: Boolean): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindingUndefined: Self = StObject.set(x, "binding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClickSelect(value: Boolean): Self = StObject.set(x, "clickSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinding(value: Boolean): Self = this.set("binding", value.asInstanceOf[js.Any])
+    def setClickSelectUndefined: Self = StObject.set(x, "clickSelect", js.undefined)
     
     @scala.inline
-    def deleteBinding: Self = this.set("binding", js.undefined)
+    def setDecimal(value: Double): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickSelect(value: Boolean): Self = this.set("clickSelect", value.asInstanceOf[js.Any])
+    def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
     
     @scala.inline
-    def deleteClickSelect: Self = this.set("clickSelect", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimal(value: Double): Self = this.set("decimal", value.asInstanceOf[js.Any])
+    def setDisabledClass(value: String): Self = StObject.set(x, "disabledClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDecimal: Self = this.set("decimal", js.undefined)
+    def setDisabledClassUndefined: Self = StObject.set(x, "disabledClass", js.undefined)
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setDoubleSided(value: Boolean): Self = StObject.set(x, "doubleSided", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledClass(value: String): Self = this.set("disabledClass", value.asInstanceOf[js.Any])
+    def setDoubleSidedUndefined: Self = StObject.set(x, "doubleSided", js.undefined)
     
     @scala.inline
-    def deleteDisabledClass: Self = this.set("disabledClass", js.undefined)
+    def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleSided(value: Boolean): Self = this.set("doubleSided", value.asInstanceOf[js.Any])
+    def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
     @scala.inline
-    def deleteDoubleSided: Self = this.set("doubleSided", js.undefined)
+    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    def setInitialEnd(value: Double): Self = StObject.set(x, "initialEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: Double): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setInitialEndUndefined: Self = StObject.set(x, "initialEnd", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setInitialStart(value: Double): Self = StObject.set(x, "initialStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialEnd(value: Double): Self = this.set("initialEnd", value.asInstanceOf[js.Any])
+    def setInitialStartUndefined: Self = StObject.set(x, "initialStart", js.undefined)
     
     @scala.inline
-    def deleteInitialEnd: Self = this.set("initialEnd", js.undefined)
+    def setMoveTime(value: Double): Self = StObject.set(x, "moveTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialStart(value: Double): Self = this.set("initialStart", value.asInstanceOf[js.Any])
+    def setMoveTimeUndefined: Self = StObject.set(x, "moveTime", js.undefined)
     
     @scala.inline
-    def deleteInitialStart: Self = this.set("initialStart", js.undefined)
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveTime(value: Double): Self = this.set("moveTime", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteMoveTime: Self = this.set("moveTime", js.undefined)
+    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
-    
-    @scala.inline
-    def setVertical(value: Boolean): Self = this.set("vertical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertical: Self = this.set("vertical", js.undefined)
+    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

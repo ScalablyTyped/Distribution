@@ -1,11 +1,12 @@
 package typings.reactImgix.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextParams extends js.Object {
+trait TextParams extends StObject {
   
   var txt: js.UndefOr[ImgixParamType] = js.native
   
@@ -42,96 +43,84 @@ object TextParams {
   }
   
   @scala.inline
-  implicit class TextParamsOps[Self <: TextParams] (val x: Self) extends AnyVal {
+  implicit class TextParamsMutableBuilder[Self <: TextParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTxt(value: ImgixParamType): Self = StObject.set(x, "txt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setTxt-align`(value: ImgixParamType): Self = StObject.set(x, "txt-align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setTxt-alignUndefined`: Self = StObject.set(x, "txt-align", js.undefined)
     
     @scala.inline
-    def setTxt(value: ImgixParamType): Self = this.set("txt", value.asInstanceOf[js.Any])
+    def `setTxt-clip`(value: ImgixParamType): Self = StObject.set(x, "txt-clip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTxt: Self = this.set("txt", js.undefined)
+    def `setTxt-clipUndefined`: Self = StObject.set(x, "txt-clip", js.undefined)
     
     @scala.inline
-    def `setTxt-align`(value: ImgixParamType): Self = this.set("txt-align", value.asInstanceOf[js.Any])
+    def `setTxt-color`(value: ImgixParamType): Self = StObject.set(x, "txt-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteTxt-align`: Self = this.set("txt-align", js.undefined)
+    def `setTxt-colorUndefined`: Self = StObject.set(x, "txt-color", js.undefined)
     
     @scala.inline
-    def `setTxt-clip`(value: ImgixParamType): Self = this.set("txt-clip", value.asInstanceOf[js.Any])
+    def `setTxt-fit`(value: ImgixParamType): Self = StObject.set(x, "txt-fit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteTxt-clip`: Self = this.set("txt-clip", js.undefined)
+    def `setTxt-fitUndefined`: Self = StObject.set(x, "txt-fit", js.undefined)
     
     @scala.inline
-    def `setTxt-color`(value: ImgixParamType): Self = this.set("txt-color", value.asInstanceOf[js.Any])
+    def `setTxt-font`(value: ImgixParamType): Self = StObject.set(x, "txt-font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteTxt-color`: Self = this.set("txt-color", js.undefined)
+    def `setTxt-fontUndefined`: Self = StObject.set(x, "txt-font", js.undefined)
     
     @scala.inline
-    def `setTxt-fit`(value: ImgixParamType): Self = this.set("txt-fit", value.asInstanceOf[js.Any])
+    def `setTxt-lig`(value: ImgixParamType): Self = StObject.set(x, "txt-lig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteTxt-fit`: Self = this.set("txt-fit", js.undefined)
+    def `setTxt-ligUndefined`: Self = StObject.set(x, "txt-lig", js.undefined)
     
     @scala.inline
-    def `setTxt-font`(value: ImgixParamType): Self = this.set("txt-font", value.asInstanceOf[js.Any])
+    def `setTxt-line`(value: ImgixParamType): Self = StObject.set(x, "txt-line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteTxt-font`: Self = this.set("txt-font", js.undefined)
+    def `setTxt-line-color`(value: ImgixParamType): Self = StObject.set(x, "txt-line-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setTxt-lig`(value: ImgixParamType): Self = this.set("txt-lig", value.asInstanceOf[js.Any])
+    def `setTxt-line-colorUndefined`: Self = StObject.set(x, "txt-line-color", js.undefined)
     
     @scala.inline
-    def `deleteTxt-lig`: Self = this.set("txt-lig", js.undefined)
+    def `setTxt-lineUndefined`: Self = StObject.set(x, "txt-line", js.undefined)
     
     @scala.inline
-    def `setTxt-line`(value: ImgixParamType): Self = this.set("txt-line", value.asInstanceOf[js.Any])
+    def `setTxt-pad`(value: ImgixParamType): Self = StObject.set(x, "txt-pad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteTxt-line`: Self = this.set("txt-line", js.undefined)
+    def `setTxt-padUndefined`: Self = StObject.set(x, "txt-pad", js.undefined)
     
     @scala.inline
-    def `setTxt-line-color`(value: ImgixParamType): Self = this.set("txt-line-color", value.asInstanceOf[js.Any])
+    def `setTxt-shad`(value: ImgixParamType): Self = StObject.set(x, "txt-shad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteTxt-line-color`: Self = this.set("txt-line-color", js.undefined)
+    def `setTxt-shadUndefined`: Self = StObject.set(x, "txt-shad", js.undefined)
     
     @scala.inline
-    def `setTxt-pad`(value: ImgixParamType): Self = this.set("txt-pad", value.asInstanceOf[js.Any])
+    def `setTxt-size`(value: ImgixParamType): Self = StObject.set(x, "txt-size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteTxt-pad`: Self = this.set("txt-pad", js.undefined)
+    def `setTxt-sizeUndefined`: Self = StObject.set(x, "txt-size", js.undefined)
     
     @scala.inline
-    def `setTxt-shad`(value: ImgixParamType): Self = this.set("txt-shad", value.asInstanceOf[js.Any])
+    def `setTxt-width`(value: ImgixParamType): Self = StObject.set(x, "txt-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteTxt-shad`: Self = this.set("txt-shad", js.undefined)
+    def `setTxt-widthUndefined`: Self = StObject.set(x, "txt-width", js.undefined)
     
     @scala.inline
-    def `setTxt-size`(value: ImgixParamType): Self = this.set("txt-size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteTxt-size`: Self = this.set("txt-size", js.undefined)
-    
-    @scala.inline
-    def `setTxt-width`(value: ImgixParamType): Self = this.set("txt-width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteTxt-width`: Self = this.set("txt-width", js.undefined)
+    def setTxtUndefined: Self = StObject.set(x, "txt", js.undefined)
   }
 }

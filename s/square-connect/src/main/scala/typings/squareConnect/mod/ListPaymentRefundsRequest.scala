@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ListPaymentRefundsRequest")
 @js.native
-class ListPaymentRefundsRequest () extends js.Object {
+class ListPaymentRefundsRequest () extends StObject {
   
   /**
     * Timestamp for the beginning of the requested reporting period, in RFC 3339 format.

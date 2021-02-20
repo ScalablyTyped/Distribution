@@ -4,6 +4,7 @@ import typings.node.childProcessMod.ChildProcess
 import typings.shelljs.anon.ExecOptionsasyncfalseunde
 import typings.shelljs.anon.ExecOptionsasynctrue
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ trait ShellReturnValue extends ExecOutputReturnValue {
     *         containing the pipelines if more than one input stream is given
     *         (a new line character is introduced between each input).
     */
-  def cat(files: String*): ShellString = js.native
+  def cat(files: String*): typings.shelljs.mod.ShellString = js.native
   /**
     * Returns a string containing the given file, or a concatenated string
     * containing the files if more than one file is given (a new line character
@@ -40,7 +41,7 @@ trait ShellReturnValue extends ExecOutputReturnValue {
     *         containing the pipelines if more than one input stream is given
     *         (a new line character is introduced between each input).
     */
-  def cat(files: js.Array[String]): ShellString = js.native
+  def cat(files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
   /**
     * Returns a string containing the given pipeline, or a concatenated string
     * containing the pipelines if more than one input stream is given
@@ -68,7 +69,7 @@ trait ShellReturnValue extends ExecOutputReturnValue {
     * @return Returns an object containing the return code and output as string,
     *         or if `{async: true}` or a `callback` was passed, a `ChildProcess`.
     */
-  def exec(command: String): ShellString = js.native
+  def exec(command: String): typings.shelljs.mod.ShellString = js.native
   /**
     * Executes the given command synchronously.
     *
@@ -102,7 +103,7 @@ trait ShellReturnValue extends ExecOutputReturnValue {
     * @return Returns an object containing the return code and output as string,
     *         or if `{async: true}` or a `callback` was passed, a `ChildProcess`.
     */
-  def exec(command: String, options: ExecOptionsasyncfalseunde): ShellString = js.native
+  def exec(command: String, options: ExecOptionsasyncfalseunde): typings.shelljs.mod.ShellString = js.native
   /**
     * Executes the given command asynchronously.
     *
@@ -138,7 +139,7 @@ trait ShellReturnValue extends ExecOutputReturnValue {
     * @return Returns an object containing the return code and output as string,
     *         or if `{async: true}` or a `callback` was passed, a `ChildProcess`.
     */
-  def exec(command: String, options: ExecOptions): ShellString | ChildProcess = js.native
+  def exec(command: String, options: ExecOptions): typings.shelljs.mod.ShellString | ChildProcess = js.native
   /**
     * Executes the given command synchronously.
     *
@@ -179,7 +180,7 @@ trait ShellReturnValue extends ExecOutputReturnValue {
     * @param regex_filter The regular expression to use.
     * @return Returns a string containing all lines of the file that match the given `regex_filter`.
     */
-  def grep(options: String, regex_filter: String, files: String*): ShellString = js.native
+  def grep(options: String, regex_filter: String, files: String*): typings.shelljs.mod.ShellString = js.native
   /**
     * Reads input string from given files and returns a string containing all lines
     * of the file that match the given `regex_filter`. Wildcard `*` accepted.
@@ -203,9 +204,9 @@ trait ShellReturnValue extends ExecOutputReturnValue {
     * @param regex_filter The regular expression to use.
     * @return Returns a string containing all lines of the file that match the given `regex_filter`.
     */
-  def grep(options: String, regex_filter: String, files: js.Array[String]): ShellString = js.native
-  def grep(options: String, regex_filter: RegExp, files: String*): ShellString = js.native
-  def grep(options: String, regex_filter: RegExp, files: js.Array[String]): ShellString = js.native
+  def grep(options: String, regex_filter: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
+  def grep(options: String, regex_filter: RegExp, files: String*): typings.shelljs.mod.ShellString = js.native
+  def grep(options: String, regex_filter: RegExp, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
   /**
     * Reads input string from given files and returns a string containing all lines
     * of the file that match the given `regex_filter`. Wildcard `*` accepted.
@@ -217,7 +218,7 @@ trait ShellReturnValue extends ExecOutputReturnValue {
     * @param regex_filter The regular expression to use.
     * @return Returns a string containing all lines of the file that match the given `regex_filter`.
     */
-  def grep(regex_filter: String, files: String*): ShellString = js.native
+  def grep(regex_filter: String, files: String*): typings.shelljs.mod.ShellString = js.native
   /**
     * Reads input string from given files and returns a string containing all lines
     * of the file that match the given `regex_filter`. Wildcard `*` accepted.
@@ -237,9 +238,9 @@ trait ShellReturnValue extends ExecOutputReturnValue {
     * @param regex_filter The regular expression to use.
     * @return Returns a string containing all lines of the file that match the given `regex_filter`.
     */
-  def grep(regex_filter: String, files: js.Array[String]): ShellString = js.native
-  def grep(regex_filter: RegExp, files: String*): ShellString = js.native
-  def grep(regex_filter: RegExp, files: js.Array[String]): ShellString = js.native
+  def grep(regex_filter: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
+  def grep(regex_filter: RegExp, files: String*): typings.shelljs.mod.ShellString = js.native
+  def grep(regex_filter: RegExp, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
   /**
     * Reads input string from given files and returns a string containing all lines
     * of the file that match the given `regex_filter`. Wildcard `*` accepted.
@@ -257,19 +258,19 @@ trait ShellReturnValue extends ExecOutputReturnValue {
   /**
     * Read the start of a pipeline input.
     */
-  def head(files: String*): ShellString = js.native
+  def head(files: String*): typings.shelljs.mod.ShellString = js.native
   /**
     * Read the start of a pipeline input.
     */
-  def head(files: js.Array[String]): ShellString = js.native
+  def head(files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
   /**
     * Read the start of a pipeline input.
     */
-  def head(options: HeadOptions, files: String*): ShellString = js.native
+  def head(options: HeadOptions, files: String*): typings.shelljs.mod.ShellString = js.native
   /**
     * Read the start of a pipeline input.
     */
-  def head(options: HeadOptions, files: js.Array[String]): ShellString = js.native
+  def head(options: HeadOptions, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
   /**
     * Read the start of a pipeline input.
     */
@@ -286,7 +287,7 @@ trait ShellReturnValue extends ExecOutputReturnValue {
     * @param replacement The replacement.
     * @return            The new string after replacement.
     */
-  def sed(options: String, searchRegex: String, replacement: String, files: String*): ShellString = js.native
+  def sed(options: String, searchRegex: String, replacement: String, files: String*): typings.shelljs.mod.ShellString = js.native
   /**
     * Reads an input string from file and performs a JavaScript `replace()`
     * on the input using the given search regex and replacement string or function.
@@ -308,9 +309,9 @@ trait ShellReturnValue extends ExecOutputReturnValue {
     * @param replacement The replacement.
     * @return            The new string after replacement.
     */
-  def sed(options: String, searchRegex: String, replacement: String, files: js.Array[String]): ShellString = js.native
-  def sed(options: String, searchRegex: RegExp, replacement: String, files: String*): ShellString = js.native
-  def sed(options: String, searchRegex: RegExp, replacement: String, files: js.Array[String]): ShellString = js.native
+  def sed(options: String, searchRegex: String, replacement: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
+  def sed(options: String, searchRegex: RegExp, replacement: String, files: String*): typings.shelljs.mod.ShellString = js.native
+  def sed(options: String, searchRegex: RegExp, replacement: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
   /**
     * Reads an input string from pipeline and performs a JavaScript `replace()`
     * on the input using the given search regex and replacement string or function.
@@ -321,7 +322,7 @@ trait ShellReturnValue extends ExecOutputReturnValue {
     * @param replacement The replacement.
     * @return            The new string after replacement.
     */
-  def sed(searchRegex: String, replacement: String, files: String*): ShellString = js.native
+  def sed(searchRegex: String, replacement: String, files: String*): typings.shelljs.mod.ShellString = js.native
   /**
     * Reads an input string from file and performs a JavaScript `replace()`
     * on the input using the given search regex and replacement string or function.
@@ -341,9 +342,9 @@ trait ShellReturnValue extends ExecOutputReturnValue {
     * @param replacement The replacement.
     * @return            The new string after replacement.
     */
-  def sed(searchRegex: String, replacement: String, files: js.Array[String]): ShellString = js.native
-  def sed(searchRegex: RegExp, replacement: String, files: String*): ShellString = js.native
-  def sed(searchRegex: RegExp, replacement: String, files: js.Array[String]): ShellString = js.native
+  def sed(searchRegex: String, replacement: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
+  def sed(searchRegex: RegExp, replacement: String, files: String*): typings.shelljs.mod.ShellString = js.native
+  def sed(searchRegex: RegExp, replacement: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
   /**
     * Reads an input string from pipeline and performs a JavaScript `replace()`
     * on the input using the given search regex and replacement string or function.
@@ -364,7 +365,7 @@ trait ShellReturnValue extends ExecOutputReturnValue {
     *        - `-r`: Reverse the results
     *        - `-n`: Compare according to numerical value
     */
-  def sort(files: String*): ShellString = js.native
+  def sort(files: String*): typings.shelljs.mod.ShellString = js.native
   /**
     * Return the contents of the files, sorted line-by-line.
     * Sorting multiple files mixes their content (just as unix sort does).
@@ -376,7 +377,7 @@ trait ShellReturnValue extends ExecOutputReturnValue {
     *        - `-r`: Reverse the results
     *        - `-n`: Compare according to numerical value
     */
-  def sort(files: js.Array[String]): ShellString = js.native
+  def sort(files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
   /**
     * Return the contents of the pipeline, sorted line-by-line.
     *
@@ -384,7 +385,7 @@ trait ShellReturnValue extends ExecOutputReturnValue {
     *        - `-r`: Reverse the results
     *        - `-n`: Compare according to numerical value
     */
-  def sort(options: String, files: String*): ShellString = js.native
+  def sort(options: String, files: String*): typings.shelljs.mod.ShellString = js.native
   /**
     * Return the contents of the files, sorted line-by-line.
     * Sorting multiple files mixes their content (just as unix sort does).
@@ -400,7 +401,7 @@ trait ShellReturnValue extends ExecOutputReturnValue {
     *        - `-r`: Reverse the results
     *        - `-n`: Compare according to numerical value
     */
-  def sort(options: String, files: js.Array[String]): ShellString = js.native
+  def sort(options: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
   /**
     * Return the contents of the pipeline, sorted line-by-line.
     *
@@ -414,19 +415,19 @@ trait ShellReturnValue extends ExecOutputReturnValue {
   /**
     * Read the end of a pipeline input.
     */
-  def tail(files: String*): ShellString = js.native
+  def tail(files: String*): typings.shelljs.mod.ShellString = js.native
   /**
     * Read the end of a pipeline input.
     */
-  def tail(files: js.Array[String]): ShellString = js.native
+  def tail(files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
   /**
     * Read the end of a pipeline input.
     */
-  def tail(options: TailOptions, files: String*): ShellString = js.native
+  def tail(options: TailOptions, files: String*): typings.shelljs.mod.ShellString = js.native
   /**
     * Read the end of a pipeline input.
     */
-  def tail(options: TailOptions, files: js.Array[String]): ShellString = js.native
+  def tail(options: TailOptions, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
   /**
     * Read the end of a pipeline input.
     */
@@ -462,7 +463,7 @@ trait ShellReturnValue extends ExecOutputReturnValue {
     *        - `-c`: Prefix lines by the number of occurrences
     *        - `-d`: Only print duplicate lines, one for each group of identical lines
     */
-  def uniq(input: String): ShellString = js.native
+  def uniq(input: String): typings.shelljs.mod.ShellString = js.native
   /**
     * Filter adjacent matching lines from input.
     *
@@ -471,8 +472,8 @@ trait ShellReturnValue extends ExecOutputReturnValue {
     *        - `-c`: Prefix lines by the number of occurrences
     *        - `-d`: Only print duplicate lines, one for each group of identical lines
     */
-  def uniq(options: String, input: String): ShellString = js.native
-  def uniq(options: String, input: String, output: String): ShellString = js.native
+  def uniq(options: String, input: String): typings.shelljs.mod.ShellString = js.native
+  def uniq(options: String, input: String, output: String): typings.shelljs.mod.ShellString = js.native
   /**
     * Filter adjacent matching lines from input.
     *

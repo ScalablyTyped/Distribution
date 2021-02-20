@@ -1,11 +1,12 @@
 package typings.awsSdk.cloud9Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEnvironmentsResult extends js.Object {
+trait DescribeEnvironmentsResult extends StObject {
   
   /**
     * Information about the environments that are returned.
@@ -21,27 +22,15 @@ object DescribeEnvironmentsResult {
   }
   
   @scala.inline
-  implicit class DescribeEnvironmentsResultOps[Self <: DescribeEnvironmentsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeEnvironmentsResultMutableBuilder[Self <: DescribeEnvironmentsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironments(value: EnvironmentList): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentsUndefined: Self = StObject.set(x, "environments", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnvironmentsVarargs(value: Environment*): Self = this.set("environments", js.Array(value :_*))
-    
-    @scala.inline
-    def setEnvironments(value: EnvironmentList): Self = this.set("environments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnvironments: Self = this.set("environments", js.undefined)
+    def setEnvironmentsVarargs(value: Environment*): Self = StObject.set(x, "environments", js.Array(value :_*))
   }
 }

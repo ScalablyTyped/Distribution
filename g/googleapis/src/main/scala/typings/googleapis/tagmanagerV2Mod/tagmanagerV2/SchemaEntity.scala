@@ -1,5 +1,6 @@
 package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * in addition to its status in the workspace.
   */
 @js.native
-trait SchemaEntity extends js.Object {
+trait SchemaEntity extends StObject {
   
   /**
     * Represents how the entity has been changed in the workspace.
@@ -45,48 +46,36 @@ object SchemaEntity {
   }
   
   @scala.inline
-  implicit class SchemaEntityOps[Self <: SchemaEntity] (val x: Self) extends AnyVal {
+  implicit class SchemaEntityMutableBuilder[Self <: SchemaEntity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeStatus(value: String): Self = StObject.set(x, "changeStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeStatusUndefined: Self = StObject.set(x, "changeStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFolder(value: SchemaFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeStatus(value: String): Self = this.set("changeStatus", value.asInstanceOf[js.Any])
+    def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     
     @scala.inline
-    def deleteChangeStatus: Self = this.set("changeStatus", js.undefined)
+    def setTag(value: SchemaTag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolder(value: SchemaFolder): Self = this.set("folder", value.asInstanceOf[js.Any])
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
     @scala.inline
-    def deleteFolder: Self = this.set("folder", js.undefined)
+    def setTrigger(value: SchemaTrigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: SchemaTag): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
     
     @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
+    def setVariable(value: SchemaVariable): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrigger(value: SchemaTrigger): Self = this.set("trigger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrigger: Self = this.set("trigger", js.undefined)
-    
-    @scala.inline
-    def setVariable(value: SchemaVariable): Self = this.set("variable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariable: Self = this.set("variable", js.undefined)
+    def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
   }
 }

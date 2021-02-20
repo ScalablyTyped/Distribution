@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.io
 
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,45 +68,33 @@ object XDataInputStream {
   }
   
   @scala.inline
-  implicit class XDataInputStreamOps[Self <: XDataInputStream] (val x: Self) extends AnyVal {
+  implicit class XDataInputStreamMutableBuilder[Self <: XDataInputStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReadBoolean(value: () => Double): Self = StObject.set(x, "readBoolean", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReadByte(value: () => Double): Self = StObject.set(x, "readByte", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadChar(value: () => String): Self = StObject.set(x, "readChar", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadBoolean(value: () => Double): Self = this.set("readBoolean", js.Any.fromFunction0(value))
+    def setReadDouble(value: () => Double): Self = StObject.set(x, "readDouble", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadByte(value: () => Double): Self = this.set("readByte", js.Any.fromFunction0(value))
+    def setReadFloat(value: () => Double): Self = StObject.set(x, "readFloat", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadChar(value: () => String): Self = this.set("readChar", js.Any.fromFunction0(value))
+    def setReadHyper(value: () => Double): Self = StObject.set(x, "readHyper", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadDouble(value: () => Double): Self = this.set("readDouble", js.Any.fromFunction0(value))
+    def setReadLong(value: () => Double): Self = StObject.set(x, "readLong", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadFloat(value: () => Double): Self = this.set("readFloat", js.Any.fromFunction0(value))
+    def setReadShort(value: () => Double): Self = StObject.set(x, "readShort", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadHyper(value: () => Double): Self = this.set("readHyper", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReadLong(value: () => Double): Self = this.set("readLong", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReadShort(value: () => Double): Self = this.set("readShort", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReadUTF(value: () => String): Self = this.set("readUTF", js.Any.fromFunction0(value))
+    def setReadUTF(value: () => String): Self = StObject.set(x, "readUTF", js.Any.fromFunction0(value))
   }
 }

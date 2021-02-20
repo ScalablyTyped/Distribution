@@ -10,13 +10,14 @@ import typings.winrtUwp.Windows.Networking.HostName
 import typings.winrtUwp.Windows.Storage.Streams.IOutputStream
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.messagereceived
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Supports network communication using a UDP datagram socket. */
 @js.native
-trait DatagramSocket extends js.Object {
+trait DatagramSocket extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

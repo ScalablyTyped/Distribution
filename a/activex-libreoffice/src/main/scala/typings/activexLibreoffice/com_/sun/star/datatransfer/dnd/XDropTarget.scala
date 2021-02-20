@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.datatransfer.dnd
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,39 +87,27 @@ object XDropTarget {
   }
   
   @scala.inline
-  implicit class XDropTargetOps[Self <: XDropTarget] (val x: Self) extends AnyVal {
+  implicit class XDropTargetMutableBuilder[Self <: XDropTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddDropTargetListener(value: XDropTargetListener => Unit): Self = StObject.set(x, "addDropTargetListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultActions(value: Double): Self = StObject.set(x, "DefaultActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDefaultActions(value: () => Double): Self = StObject.set(x, "getDefaultActions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDefaultActions(value: Double): Self = this.set("DefaultActions", value.asInstanceOf[js.Any])
+    def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddDropTargetListener(value: XDropTargetListener => Unit): Self = this.set("addDropTargetListener", js.Any.fromFunction1(value))
+    def setRemoveDropTargetListener(value: XDropTargetListener => Unit): Self = StObject.set(x, "removeDropTargetListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDefaultActions(value: () => Double): Self = this.set("getDefaultActions", js.Any.fromFunction0(value))
+    def setSetActive(value: Boolean => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsActive(value: () => Boolean): Self = this.set("isActive", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveDropTargetListener(value: XDropTargetListener => Unit): Self = this.set("removeDropTargetListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetActive(value: Boolean => Unit): Self = this.set("setActive", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDefaultActions(value: Double => Unit): Self = this.set("setDefaultActions", js.Any.fromFunction1(value))
+    def setSetDefaultActions(value: Double => Unit): Self = StObject.set(x, "setDefaultActions", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.mongodb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectionOperators extends js.Object {
+trait ProjectionOperators extends StObject {
   
   /** https://docs.mongodb.com/manual/reference/operator/projection/elemMatch/#proj._S_elemMatch */
   @JSName("$elemMatch")
@@ -27,36 +28,24 @@ object ProjectionOperators {
   }
   
   @scala.inline
-  implicit class ProjectionOperatorsOps[Self <: ProjectionOperators] (val x: Self) extends AnyVal {
+  implicit class ProjectionOperatorsMutableBuilder[Self <: ProjectionOperators] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$elemMatch(value: js.Object): Self = StObject.set(x, "$elemMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$elemMatchUndefined: Self = StObject.set(x, "$elemMatch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set$meta(value: MetaProjectionOperators): Self = StObject.set(x, "$meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$elemMatch(value: js.Object): Self = this.set("$elemMatch", value.asInstanceOf[js.Any])
+    def set$metaUndefined: Self = StObject.set(x, "$meta", js.undefined)
     
     @scala.inline
-    def delete$elemMatch: Self = this.set("$elemMatch", js.undefined)
+    def set$slice(value: scala.Double | (js.Tuple2[scala.Double, scala.Double])): Self = StObject.set(x, "$slice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$meta(value: MetaProjectionOperators): Self = this.set("$meta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$meta: Self = this.set("$meta", js.undefined)
-    
-    @scala.inline
-    def set$slice(value: scala.Double | (js.Tuple2[scala.Double, scala.Double])): Self = this.set("$slice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$slice: Self = this.set("$slice", js.undefined)
+    def set$sliceUndefined: Self = StObject.set(x, "$slice", js.undefined)
   }
 }

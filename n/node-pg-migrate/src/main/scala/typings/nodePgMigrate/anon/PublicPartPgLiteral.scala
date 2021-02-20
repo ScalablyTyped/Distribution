@@ -1,12 +1,13 @@
 package typings.nodePgMigrate.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.PublicPart<node-pg-migrate.node-pg-migrate.PgLiteral> */
 @js.native
-trait PublicPartPgLiteral extends js.Object {
+trait PublicPartPgLiteral extends StObject {
   
   @JSName("constructor")
   var constructor_Original: js.Function1[/* value */ String, js.Any] = js.native

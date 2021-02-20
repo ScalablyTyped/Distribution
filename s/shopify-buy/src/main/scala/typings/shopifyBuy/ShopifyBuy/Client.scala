@@ -1,11 +1,12 @@
 package typings.shopifyBuy.ShopifyBuy
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Client extends js.Object {
+trait Client extends StObject {
   
   var checkout: CheckoutResource = js.native
   
@@ -35,36 +36,24 @@ object Client {
   }
   
   @scala.inline
-  implicit class ClientOps[Self <: Client] (val x: Self) extends AnyVal {
+  implicit class ClientMutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckout(value: CheckoutResource): Self = StObject.set(x, "checkout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollection(value: CollectionResource): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFetchNextPage(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "fetchNextPage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCheckout(value: CheckoutResource): Self = this.set("checkout", value.asInstanceOf[js.Any])
+    def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollection(value: CollectionResource): Self = this.set("collection", value.asInstanceOf[js.Any])
+    def setProduct(value: ProductResource): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetchNextPage(value: js.Array[js.Any] => js.Array[js.Any]): Self = this.set("fetchNextPage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setImage(value: Image): Self = this.set("image", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProduct(value: ProductResource): Self = this.set("product", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShop(value: ShopResource): Self = this.set("shop", value.asInstanceOf[js.Any])
+    def setShop(value: ShopResource): Self = StObject.set(x, "shop", value.asInstanceOf[js.Any])
   }
 }

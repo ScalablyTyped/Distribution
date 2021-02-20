@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotaryJournal extends js.Object {
+trait NotaryJournal extends StObject {
   
   /**
     * The creation date of the account in UTC timedate format.
@@ -40,54 +41,42 @@ object NotaryJournal {
   }
   
   @scala.inline
-  implicit class NotaryJournalOps[Self <: NotaryJournal] (val x: Self) extends AnyVal {
+  implicit class NotaryJournalMutableBuilder[Self <: NotaryJournal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentName(value: String): Self = StObject.set(x, "documentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: String): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    def setDocumentNameUndefined: Self = StObject.set(x, "documentName", js.undefined)
     
     @scala.inline
-    def deleteCreatedDate: Self = this.set("createdDate", js.undefined)
+    def setJurisdiction(value: Jurisdiction): Self = StObject.set(x, "jurisdiction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentName(value: String): Self = this.set("documentName", value.asInstanceOf[js.Any])
+    def setJurisdictionUndefined: Self = StObject.set(x, "jurisdiction", js.undefined)
     
     @scala.inline
-    def deleteDocumentName: Self = this.set("documentName", js.undefined)
+    def setNotaryJournalId(value: String): Self = StObject.set(x, "notaryJournalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJurisdiction(value: Jurisdiction): Self = this.set("jurisdiction", value.asInstanceOf[js.Any])
+    def setNotaryJournalIdUndefined: Self = StObject.set(x, "notaryJournalId", js.undefined)
     
     @scala.inline
-    def deleteJurisdiction: Self = this.set("jurisdiction", js.undefined)
+    def setNotaryJournalMetaData(value: NotaryJournalMetaData): Self = StObject.set(x, "notaryJournalMetaData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotaryJournalId(value: String): Self = this.set("notaryJournalId", value.asInstanceOf[js.Any])
+    def setNotaryJournalMetaDataUndefined: Self = StObject.set(x, "notaryJournalMetaData", js.undefined)
     
     @scala.inline
-    def deleteNotaryJournalId: Self = this.set("notaryJournalId", js.undefined)
+    def setSignerName(value: String): Self = StObject.set(x, "signerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotaryJournalMetaData(value: NotaryJournalMetaData): Self = this.set("notaryJournalMetaData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotaryJournalMetaData: Self = this.set("notaryJournalMetaData", js.undefined)
-    
-    @scala.inline
-    def setSignerName(value: String): Self = this.set("signerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignerName: Self = this.set("signerName", js.undefined)
+    def setSignerNameUndefined: Self = StObject.set(x, "signerName", js.undefined)
   }
 }

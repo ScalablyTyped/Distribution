@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If the rows option is used, the value must be "thisRow".
   */
 @js.native
-trait SetBindingDataOptions extends js.Object {
+trait SetBindingDataOptions extends StObject {
   
   /**
     * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
@@ -77,72 +78,60 @@ object SetBindingDataOptions {
   }
   
   @scala.inline
-  implicit class SetBindingDataOptionsOps[Self <: SetBindingDataOptions] (val x: Self) extends AnyVal {
+  implicit class SetBindingDataOptionsMutableBuilder[Self <: SetBindingDataOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellFormat(value: js.Array[RangeFormatConfiguration]): Self = StObject.set(x, "cellFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsyncContext(value: js.Any): Self = this.set("asyncContext", value.asInstanceOf[js.Any])
+    def setCellFormatUndefined: Self = StObject.set(x, "cellFormat", js.undefined)
     
     @scala.inline
-    def deleteAsyncContext: Self = this.set("asyncContext", js.undefined)
+    def setCellFormatVarargs(value: RangeFormatConfiguration*): Self = StObject.set(x, "cellFormat", js.Array(value :_*))
     
     @scala.inline
-    def setCellFormatVarargs(value: RangeFormatConfiguration*): Self = this.set("cellFormat", js.Array(value :_*))
+    def setCoercionType(value: CoercionType | String): Self = StObject.set(x, "coercionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellFormat(value: js.Array[RangeFormatConfiguration]): Self = this.set("cellFormat", value.asInstanceOf[js.Any])
+    def setCoercionTypeUndefined: Self = StObject.set(x, "coercionType", js.undefined)
     
     @scala.inline
-    def deleteCellFormat: Self = this.set("cellFormat", js.undefined)
+    def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoercionType(value: CoercionType | String): Self = this.set("coercionType", value.asInstanceOf[js.Any])
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def deleteCoercionType: Self = this.set("coercionType", js.undefined)
+    def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsVarargs(value: String*): Self = this.set("columns", js.Array(value :_*))
+    def setRows(value: String): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[String]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: String): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setStartColumnUndefined: Self = StObject.set(x, "startColumn", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartColumn(value: Double): Self = this.set("startColumn", value.asInstanceOf[js.Any])
+    def setStartRowUndefined: Self = StObject.set(x, "startRow", js.undefined)
     
     @scala.inline
-    def deleteStartColumn: Self = this.set("startColumn", js.undefined)
+    def setTableOptions(value: js.Object): Self = StObject.set(x, "tableOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartRow(value: Double): Self = this.set("startRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartRow: Self = this.set("startRow", js.undefined)
-    
-    @scala.inline
-    def setTableOptions(value: js.Object): Self = this.set("tableOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableOptions: Self = this.set("tableOptions", js.undefined)
+    def setTableOptionsUndefined: Self = StObject.set(x, "tableOptions", js.undefined)
   }
 }

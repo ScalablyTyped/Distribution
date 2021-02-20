@@ -1,5 +1,6 @@
 package typings.puppeteer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.puppeteer.puppeteerStrings.`clipboard-write`
   - typings.puppeteer.puppeteerStrings.`payment-handler`
 */
-trait Permission extends js.Object
+trait Permission extends StObject
 object Permission {
   
   @scala.inline

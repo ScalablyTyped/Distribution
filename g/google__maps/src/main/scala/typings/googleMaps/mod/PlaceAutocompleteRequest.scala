@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlaceAutocompleteRequest extends js.Object {
+trait PlaceAutocompleteRequest extends StObject {
   
   /**
     * A grouping of places to which you would like to restrict your results.
@@ -79,72 +80,60 @@ object PlaceAutocompleteRequest {
   }
   
   @scala.inline
-  implicit class PlaceAutocompleteRequestOps[Self <: PlaceAutocompleteRequest] (val x: Self) extends AnyVal {
+  implicit class PlaceAutocompleteRequestMutableBuilder[Self <: PlaceAutocompleteRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponents(value: js.Array[String]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponentsVarargs(value: String*): Self = StObject.set(x, "components", js.Array(value :_*))
     
     @scala.inline
-    def setInput(value: String): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentsVarargs(value: String*): Self = this.set("components", js.Array(value :_*))
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponents(value: js.Array[String]): Self = this.set("components", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteComponents: Self = this.set("components", js.undefined)
+    def setLocation(value: LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: LatLng): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setSessiontoken(value: String): Self = StObject.set(x, "sessiontoken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setSessiontokenUndefined: Self = StObject.set(x, "sessiontoken", js.undefined)
     
     @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setStrictbounds(value: Boolean): Self = StObject.set(x, "strictbounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessiontoken(value: String): Self = this.set("sessiontoken", value.asInstanceOf[js.Any])
+    def setStrictboundsUndefined: Self = StObject.set(x, "strictbounds", js.undefined)
     
     @scala.inline
-    def deleteSessiontoken: Self = this.set("sessiontoken", js.undefined)
+    def setTypes(value: PlaceAutocompleteType): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrictbounds(value: Boolean): Self = this.set("strictbounds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrictbounds: Self = this.set("strictbounds", js.undefined)
-    
-    @scala.inline
-    def setTypes(value: PlaceAutocompleteType): Self = this.set("types", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypes: Self = this.set("types", js.undefined)
+    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
   }
 }

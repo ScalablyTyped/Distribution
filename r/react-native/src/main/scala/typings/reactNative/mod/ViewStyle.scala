@@ -5,6 +5,7 @@ import typings.reactNative.reactNativeStrings.dotted
 import typings.reactNative.reactNativeStrings.hidden
 import typings.reactNative.reactNativeStrings.solid
 import typings.reactNative.reactNativeStrings.visible
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,150 +77,138 @@ object ViewStyle {
   }
   
   @scala.inline
-  implicit class ViewStyleOps[Self <: ViewStyle] (val x: Self) extends AnyVal {
+  implicit class ViewStyleMutableBuilder[Self <: ViewStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackfaceVisibility(value: visible | hidden): Self = StObject.set(x, "backfaceVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackfaceVisibilityUndefined: Self = StObject.set(x, "backfaceVisibility", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundColor(value: ColorValue): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackfaceVisibility(value: visible | hidden): Self = this.set("backfaceVisibility", value.asInstanceOf[js.Any])
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def deleteBackfaceVisibility: Self = this.set("backfaceVisibility", js.undefined)
+    def setBorderBottomColor(value: ColorValue): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: ColorValue): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBorderBottomColorUndefined: Self = StObject.set(x, "borderBottomColor", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setBorderBottomEndRadius(value: Double): Self = StObject.set(x, "borderBottomEndRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBottomColor(value: ColorValue): Self = this.set("borderBottomColor", value.asInstanceOf[js.Any])
+    def setBorderBottomEndRadiusUndefined: Self = StObject.set(x, "borderBottomEndRadius", js.undefined)
     
     @scala.inline
-    def deleteBorderBottomColor: Self = this.set("borderBottomColor", js.undefined)
+    def setBorderBottomLeftRadius(value: Double): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBottomEndRadius(value: Double): Self = this.set("borderBottomEndRadius", value.asInstanceOf[js.Any])
+    def setBorderBottomLeftRadiusUndefined: Self = StObject.set(x, "borderBottomLeftRadius", js.undefined)
     
     @scala.inline
-    def deleteBorderBottomEndRadius: Self = this.set("borderBottomEndRadius", js.undefined)
+    def setBorderBottomRightRadius(value: Double): Self = StObject.set(x, "borderBottomRightRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBottomLeftRadius(value: Double): Self = this.set("borderBottomLeftRadius", value.asInstanceOf[js.Any])
+    def setBorderBottomRightRadiusUndefined: Self = StObject.set(x, "borderBottomRightRadius", js.undefined)
     
     @scala.inline
-    def deleteBorderBottomLeftRadius: Self = this.set("borderBottomLeftRadius", js.undefined)
+    def setBorderBottomStartRadius(value: Double): Self = StObject.set(x, "borderBottomStartRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBottomRightRadius(value: Double): Self = this.set("borderBottomRightRadius", value.asInstanceOf[js.Any])
+    def setBorderBottomStartRadiusUndefined: Self = StObject.set(x, "borderBottomStartRadius", js.undefined)
     
     @scala.inline
-    def deleteBorderBottomRightRadius: Self = this.set("borderBottomRightRadius", js.undefined)
+    def setBorderColor(value: ColorValue): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBottomStartRadius(value: Double): Self = this.set("borderBottomStartRadius", value.asInstanceOf[js.Any])
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def deleteBorderBottomStartRadius: Self = this.set("borderBottomStartRadius", js.undefined)
+    def setBorderEndColor(value: ColorValue): Self = StObject.set(x, "borderEndColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: ColorValue): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setBorderEndColorUndefined: Self = StObject.set(x, "borderEndColor", js.undefined)
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setBorderLeftColor(value: ColorValue): Self = StObject.set(x, "borderLeftColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderEndColor(value: ColorValue): Self = this.set("borderEndColor", value.asInstanceOf[js.Any])
+    def setBorderLeftColorUndefined: Self = StObject.set(x, "borderLeftColor", js.undefined)
     
     @scala.inline
-    def deleteBorderEndColor: Self = this.set("borderEndColor", js.undefined)
+    def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderLeftColor(value: ColorValue): Self = this.set("borderLeftColor", value.asInstanceOf[js.Any])
+    def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
     @scala.inline
-    def deleteBorderLeftColor: Self = this.set("borderLeftColor", js.undefined)
+    def setBorderRightColor(value: ColorValue): Self = StObject.set(x, "borderRightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderRadius(value: Double): Self = this.set("borderRadius", value.asInstanceOf[js.Any])
+    def setBorderRightColorUndefined: Self = StObject.set(x, "borderRightColor", js.undefined)
     
     @scala.inline
-    def deleteBorderRadius: Self = this.set("borderRadius", js.undefined)
+    def setBorderStartColor(value: ColorValue): Self = StObject.set(x, "borderStartColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderRightColor(value: ColorValue): Self = this.set("borderRightColor", value.asInstanceOf[js.Any])
+    def setBorderStartColorUndefined: Self = StObject.set(x, "borderStartColor", js.undefined)
     
     @scala.inline
-    def deleteBorderRightColor: Self = this.set("borderRightColor", js.undefined)
+    def setBorderStyle(value: solid | dotted | dashed): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderStartColor(value: ColorValue): Self = this.set("borderStartColor", value.asInstanceOf[js.Any])
+    def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
     
     @scala.inline
-    def deleteBorderStartColor: Self = this.set("borderStartColor", js.undefined)
+    def setBorderTopColor(value: ColorValue): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderStyle(value: solid | dotted | dashed): Self = this.set("borderStyle", value.asInstanceOf[js.Any])
+    def setBorderTopColorUndefined: Self = StObject.set(x, "borderTopColor", js.undefined)
     
     @scala.inline
-    def deleteBorderStyle: Self = this.set("borderStyle", js.undefined)
+    def setBorderTopEndRadius(value: Double): Self = StObject.set(x, "borderTopEndRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderTopColor(value: ColorValue): Self = this.set("borderTopColor", value.asInstanceOf[js.Any])
+    def setBorderTopEndRadiusUndefined: Self = StObject.set(x, "borderTopEndRadius", js.undefined)
     
     @scala.inline
-    def deleteBorderTopColor: Self = this.set("borderTopColor", js.undefined)
+    def setBorderTopLeftRadius(value: Double): Self = StObject.set(x, "borderTopLeftRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderTopEndRadius(value: Double): Self = this.set("borderTopEndRadius", value.asInstanceOf[js.Any])
+    def setBorderTopLeftRadiusUndefined: Self = StObject.set(x, "borderTopLeftRadius", js.undefined)
     
     @scala.inline
-    def deleteBorderTopEndRadius: Self = this.set("borderTopEndRadius", js.undefined)
+    def setBorderTopRightRadius(value: Double): Self = StObject.set(x, "borderTopRightRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderTopLeftRadius(value: Double): Self = this.set("borderTopLeftRadius", value.asInstanceOf[js.Any])
+    def setBorderTopRightRadiusUndefined: Self = StObject.set(x, "borderTopRightRadius", js.undefined)
     
     @scala.inline
-    def deleteBorderTopLeftRadius: Self = this.set("borderTopLeftRadius", js.undefined)
+    def setBorderTopStartRadius(value: Double): Self = StObject.set(x, "borderTopStartRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderTopRightRadius(value: Double): Self = this.set("borderTopRightRadius", value.asInstanceOf[js.Any])
+    def setBorderTopStartRadiusUndefined: Self = StObject.set(x, "borderTopStartRadius", js.undefined)
     
     @scala.inline
-    def deleteBorderTopRightRadius: Self = this.set("borderTopRightRadius", js.undefined)
+    def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderTopStartRadius(value: Double): Self = this.set("borderTopStartRadius", value.asInstanceOf[js.Any])
+    def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
     
     @scala.inline
-    def deleteBorderTopStartRadius: Self = this.set("borderTopStartRadius", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElevation(value: Double): Self = this.set("elevation", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteElevation: Self = this.set("elevation", js.undefined)
+    def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
-    
-    @scala.inline
-    def setTestID(value: String): Self = this.set("testID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestID: Self = this.set("testID", js.undefined)
+    def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
   }
 }

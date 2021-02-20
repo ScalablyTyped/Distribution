@@ -1,6 +1,7 @@
 package typings.officeJs.Excel
 
 import typings.officeJs.officeJsStrings.WorksheetSingleClicked
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.10]
   */
 @js.native
-trait WorksheetSingleClickedEventArgs extends js.Object {
+trait WorksheetSingleClickedEventArgs extends StObject {
   
   /**
     *
@@ -70,33 +71,21 @@ object WorksheetSingleClickedEventArgs {
   }
   
   @scala.inline
-  implicit class WorksheetSingleClickedEventArgsOps[Self <: WorksheetSingleClickedEventArgs] (val x: Self) extends AnyVal {
+  implicit class WorksheetSingleClickedEventArgsMutableBuilder[Self <: WorksheetSingleClickedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setType(value: WorksheetSingleClicked): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: WorksheetSingleClicked): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorksheetId(value: String): Self = this.set("worksheetId", value.asInstanceOf[js.Any])
+    def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
   }
 }

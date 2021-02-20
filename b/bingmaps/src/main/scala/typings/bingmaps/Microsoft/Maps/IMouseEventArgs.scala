@@ -1,5 +1,6 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,57 +77,45 @@ object IMouseEventArgs {
   }
   
   @scala.inline
-  implicit class IMouseEventArgsOps[Self <: IMouseEventArgs] (val x: Self) extends AnyVal {
+  implicit class IMouseEventArgsMutableBuilder[Self <: IMouseEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetY(value: () => Double): Self = StObject.set(x, "getY", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEventName(value: String): Self = this.set("eventName", value.asInstanceOf[js.Any])
+    def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetX(value: () => Double): Self = this.set("getX", js.Any.fromFunction0(value))
+    def setIsSecondary(value: Boolean): Self = StObject.set(x, "isSecondary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetY(value: () => Double): Self = this.set("getY", js.Any.fromFunction0(value))
+    def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPrimary(value: Boolean): Self = this.set("isPrimary", value.asInstanceOf[js.Any])
+    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSecondary(value: Boolean): Self = this.set("isSecondary", value.asInstanceOf[js.Any])
+    def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: Layer): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: Location): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageX(value: Double): Self = this.set("pageX", value.asInstanceOf[js.Any])
+    def setTarget(value: Map | IPrimitive): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageY(value: Double): Self = this.set("pageY", value.asInstanceOf[js.Any])
+    def setTargetType(value: String): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoint(value: Point): Self = this.set("point", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: Map | IPrimitive): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetType(value: String): Self = this.set("targetType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWheelDelta(value: Double): Self = this.set("wheelDelta", value.asInstanceOf[js.Any])
+    def setWheelDelta(value: Double): Self = StObject.set(x, "wheelDelta", value.asInstanceOf[js.Any])
   }
 }

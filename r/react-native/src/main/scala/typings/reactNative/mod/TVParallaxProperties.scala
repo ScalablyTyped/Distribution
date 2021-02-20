@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TVParallaxProperties extends js.Object {
+trait TVParallaxProperties extends StObject {
   
   /**
     * If true, parallax effects are enabled.  Defaults to true.
@@ -56,66 +57,54 @@ object TVParallaxProperties {
   }
   
   @scala.inline
-  implicit class TVParallaxPropertiesOps[Self <: TVParallaxProperties] (val x: Self) extends AnyVal {
+  implicit class TVParallaxPropertiesMutableBuilder[Self <: TVParallaxProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMagnification(value: Double): Self = StObject.set(x, "magnification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setMagnificationUndefined: Self = StObject.set(x, "magnification", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setPressDelay(value: Double): Self = StObject.set(x, "pressDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMagnification(value: Double): Self = this.set("magnification", value.asInstanceOf[js.Any])
+    def setPressDelayUndefined: Self = StObject.set(x, "pressDelay", js.undefined)
     
     @scala.inline
-    def deleteMagnification: Self = this.set("magnification", js.undefined)
+    def setPressDuration(value: Double): Self = StObject.set(x, "pressDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPressDelay(value: Double): Self = this.set("pressDelay", value.asInstanceOf[js.Any])
+    def setPressDurationUndefined: Self = StObject.set(x, "pressDuration", js.undefined)
     
     @scala.inline
-    def deletePressDelay: Self = this.set("pressDelay", js.undefined)
+    def setPressMagnification(value: Double): Self = StObject.set(x, "pressMagnification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPressDuration(value: Double): Self = this.set("pressDuration", value.asInstanceOf[js.Any])
+    def setPressMagnificationUndefined: Self = StObject.set(x, "pressMagnification", js.undefined)
     
     @scala.inline
-    def deletePressDuration: Self = this.set("pressDuration", js.undefined)
+    def setShiftDistanceX(value: Double): Self = StObject.set(x, "shiftDistanceX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPressMagnification(value: Double): Self = this.set("pressMagnification", value.asInstanceOf[js.Any])
+    def setShiftDistanceXUndefined: Self = StObject.set(x, "shiftDistanceX", js.undefined)
     
     @scala.inline
-    def deletePressMagnification: Self = this.set("pressMagnification", js.undefined)
+    def setShiftDistanceY(value: Double): Self = StObject.set(x, "shiftDistanceY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShiftDistanceX(value: Double): Self = this.set("shiftDistanceX", value.asInstanceOf[js.Any])
+    def setShiftDistanceYUndefined: Self = StObject.set(x, "shiftDistanceY", js.undefined)
     
     @scala.inline
-    def deleteShiftDistanceX: Self = this.set("shiftDistanceX", js.undefined)
+    def setTiltAngle(value: Double): Self = StObject.set(x, "tiltAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShiftDistanceY(value: Double): Self = this.set("shiftDistanceY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShiftDistanceY: Self = this.set("shiftDistanceY", js.undefined)
-    
-    @scala.inline
-    def setTiltAngle(value: Double): Self = this.set("tiltAngle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTiltAngle: Self = this.set("tiltAngle", js.undefined)
+    def setTiltAngleUndefined: Self = StObject.set(x, "tiltAngle", js.undefined)
   }
 }

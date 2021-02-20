@@ -4,16 +4,16 @@ import typings.three.box3Mod.Box3
 import typings.three.matrix4Mod.Matrix4
 import typings.three.planeMod.Plane
 import typings.three.vector3Mod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/math/Sphere", JSImport.Namespace)
-@js.native
-object sphereMod extends js.Object {
+object sphereMod {
   
+  @JSImport("three/src/math/Sphere", "Sphere")
   @js.native
-  class Sphere () extends js.Object {
+  class Sphere () extends StObject {
     def this(center: Vector3) = this()
     def this(center: js.UndefOr[scala.Nothing], radius: Double) = this()
     def this(center: Vector3, radius: Double) = this()

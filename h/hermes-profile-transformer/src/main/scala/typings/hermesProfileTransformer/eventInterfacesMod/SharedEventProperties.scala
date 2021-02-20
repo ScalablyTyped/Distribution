@@ -2,12 +2,13 @@ package typings.hermesProfileTransformer.eventInterfacesMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.hermesProfileTransformer.phasesMod.EventsPhase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SharedEventProperties extends js.Object {
+trait SharedEventProperties extends StObject {
   
   /**
     * event arguments
@@ -72,79 +73,67 @@ object SharedEventProperties {
   }
   
   @scala.inline
-  implicit class SharedEventPropertiesOps[Self <: SharedEventProperties] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPh(value: EventsPhase): Self = this.set("ph", value.asInstanceOf[js.Any])
+  implicit class SharedEventPropertiesMutableBuilder[Self <: SharedEventProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setArgs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in string ]: any}
       */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.SharedEventProperties with TopLevel[js.Any]
-    ): Self = this.set("args", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def setCat(value: String): Self = this.set("cat", value.asInstanceOf[js.Any])
+    def setCat(value: String): Self = StObject.set(x, "cat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCat: Self = this.set("cat", js.undefined)
+    def setCatUndefined: Self = StObject.set(x, "cat", js.undefined)
     
     @scala.inline
-    def setCname(value: String): Self = this.set("cname", value.asInstanceOf[js.Any])
+    def setCname(value: String): Self = StObject.set(x, "cname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCname: Self = this.set("cname", js.undefined)
+    def setCnameUndefined: Self = StObject.set(x, "cname", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setPid(value: Double): Self = this.set("pid", value.asInstanceOf[js.Any])
+    def setPh(value: EventsPhase): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePid: Self = this.set("pid", js.undefined)
+    def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSf(value: Double): Self = this.set("sf", value.asInstanceOf[js.Any])
+    def setPidUndefined: Self = StObject.set(x, "pid", js.undefined)
     
     @scala.inline
-    def deleteSf: Self = this.set("sf", js.undefined)
+    def setSf(value: Double): Self = StObject.set(x, "sf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTid(value: Double): Self = this.set("tid", value.asInstanceOf[js.Any])
+    def setSfUndefined: Self = StObject.set(x, "sf", js.undefined)
     
     @scala.inline
-    def deleteTid: Self = this.set("tid", js.undefined)
+    def setTid(value: Double): Self = StObject.set(x, "tid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTs(value: Double): Self = this.set("ts", value.asInstanceOf[js.Any])
+    def setTidUndefined: Self = StObject.set(x, "tid", js.undefined)
     
     @scala.inline
-    def deleteTs: Self = this.set("ts", js.undefined)
+    def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTts(value: Double): Self = this.set("tts", value.asInstanceOf[js.Any])
+    def setTsUndefined: Self = StObject.set(x, "ts", js.undefined)
     
     @scala.inline
-    def deleteTts: Self = this.set("tts", js.undefined)
+    def setTts(value: Double): Self = StObject.set(x, "tts", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTtsUndefined: Self = StObject.set(x, "tts", js.undefined)
   }
 }

@@ -3,14 +3,14 @@ package typings.rxjs
 import typings.rxjs.schedulerMod.Scheduler
 import typings.rxjs.subscriptionMod.Subscription
 import typings.rxjs.typesMod.SchedulerAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/scheduler/Action", JSImport.Namespace)
-@js.native
-object actionMod extends js.Object {
+object actionMod {
   
+  @JSImport("rxjs/internal/scheduler/Action", "Action")
   @js.native
   class Action[T] protected () extends Subscription {
     def this(

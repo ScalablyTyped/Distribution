@@ -1,11 +1,12 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartGradientStyle extends js.Object
+sealed trait ChartGradientStyle extends StObject
 /**
   *
   * Represents the gradient style of a chart series. This is only applicable for region map charts.
@@ -14,7 +15,7 @@ sealed trait ChartGradientStyle extends js.Object
   */
 @JSGlobal("Excel.ChartGradientStyle")
 @js.native
-object ChartGradientStyle extends js.Object {
+object ChartGradientStyle extends StObject {
   
   @js.native
   sealed trait threePhaseColor extends ChartGradientStyle

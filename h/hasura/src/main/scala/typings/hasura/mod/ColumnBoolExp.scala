@@ -1,11 +1,12 @@
 package typings.hasura.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnBoolExp[T] extends js.Object {
+trait ColumnBoolExp[T] extends StObject {
   
   var _eq: js.UndefOr[T] = js.native
   
@@ -34,78 +35,66 @@ object ColumnBoolExp {
   }
   
   @scala.inline
-  implicit class ColumnBoolExpOps[Self <: ColumnBoolExp[_], T] (val x: Self with ColumnBoolExp[T]) extends AnyVal {
+  implicit class ColumnBoolExpMutableBuilder[Self <: ColumnBoolExp[_], T] (val x: Self with ColumnBoolExp[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set_eq(value: T): Self = StObject.set(x, "_eq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_eqUndefined: Self = StObject.set(x, "_eq", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_gt(value: T): Self = StObject.set(x, "_gt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_eq(value: T): Self = this.set("_eq", value.asInstanceOf[js.Any])
+    def set_gtUndefined: Self = StObject.set(x, "_gt", js.undefined)
     
     @scala.inline
-    def delete_eq: Self = this.set("_eq", js.undefined)
+    def set_gte(value: T): Self = StObject.set(x, "_gte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_gt(value: T): Self = this.set("_gt", value.asInstanceOf[js.Any])
+    def set_gteUndefined: Self = StObject.set(x, "_gte", js.undefined)
     
     @scala.inline
-    def delete_gt: Self = this.set("_gt", js.undefined)
+    def set_in(value: js.Array[T]): Self = StObject.set(x, "_in", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_gte(value: T): Self = this.set("_gte", value.asInstanceOf[js.Any])
+    def set_inUndefined: Self = StObject.set(x, "_in", js.undefined)
     
     @scala.inline
-    def delete_gte: Self = this.set("_gte", js.undefined)
+    def set_inVarargs(value: T*): Self = StObject.set(x, "_in", js.Array(value :_*))
     
     @scala.inline
-    def set_inVarargs(value: T*): Self = this.set("_in", js.Array(value :_*))
+    def set_is_null(value: Boolean): Self = StObject.set(x, "_is_null", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_in(value: js.Array[T]): Self = this.set("_in", value.asInstanceOf[js.Any])
+    def set_is_nullUndefined: Self = StObject.set(x, "_is_null", js.undefined)
     
     @scala.inline
-    def delete_in: Self = this.set("_in", js.undefined)
+    def set_lt(value: T): Self = StObject.set(x, "_lt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_is_null(value: Boolean): Self = this.set("_is_null", value.asInstanceOf[js.Any])
+    def set_ltUndefined: Self = StObject.set(x, "_lt", js.undefined)
     
     @scala.inline
-    def delete_is_null: Self = this.set("_is_null", js.undefined)
+    def set_lte(value: T): Self = StObject.set(x, "_lte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_lt(value: T): Self = this.set("_lt", value.asInstanceOf[js.Any])
+    def set_lteUndefined: Self = StObject.set(x, "_lte", js.undefined)
     
     @scala.inline
-    def delete_lt: Self = this.set("_lt", js.undefined)
+    def set_neq(value: T): Self = StObject.set(x, "_neq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_lte(value: T): Self = this.set("_lte", value.asInstanceOf[js.Any])
+    def set_neqUndefined: Self = StObject.set(x, "_neq", js.undefined)
     
     @scala.inline
-    def delete_lte: Self = this.set("_lte", js.undefined)
+    def set_nin(value: js.Array[T]): Self = StObject.set(x, "_nin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_neq(value: T): Self = this.set("_neq", value.asInstanceOf[js.Any])
+    def set_ninUndefined: Self = StObject.set(x, "_nin", js.undefined)
     
     @scala.inline
-    def delete_neq: Self = this.set("_neq", js.undefined)
-    
-    @scala.inline
-    def set_ninVarargs(value: T*): Self = this.set("_nin", js.Array(value :_*))
-    
-    @scala.inline
-    def set_nin(value: js.Array[T]): Self = this.set("_nin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_nin: Self = this.set("_nin", js.undefined)
+    def set_ninVarargs(value: T*): Self = StObject.set(x, "_nin", js.Array(value :_*))
   }
 }

@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,33 +48,21 @@ object XDataSeriesContainer {
   }
   
   @scala.inline
-  implicit class XDataSeriesContainerOps[Self <: XDataSeriesContainer] (val x: Self) extends AnyVal {
+  implicit class XDataSeriesContainerMutableBuilder[Self <: XDataSeriesContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddDataSeries(value: XDataSeries => Unit): Self = StObject.set(x, "addDataSeries", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSeries(value: SafeArray[XDataSeries]): Self = StObject.set(x, "DataSeries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDataSeries(value: () => SafeArray[XDataSeries]): Self = StObject.set(x, "getDataSeries", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDataSeries(value: SafeArray[XDataSeries]): Self = this.set("DataSeries", value.asInstanceOf[js.Any])
+    def setRemoveDataSeries(value: XDataSeries => Unit): Self = StObject.set(x, "removeDataSeries", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddDataSeries(value: XDataSeries => Unit): Self = this.set("addDataSeries", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetDataSeries(value: () => SafeArray[XDataSeries]): Self = this.set("getDataSeries", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveDataSeries(value: XDataSeries => Unit): Self = this.set("removeDataSeries", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDataSeries(value: SeqEquiv[XDataSeries] => Unit): Self = this.set("setDataSeries", js.Any.fromFunction1(value))
+    def setSetDataSeries(value: SeqEquiv[XDataSeries] => Unit): Self = StObject.set(x, "setDataSeries", js.Any.fromFunction1(value))
   }
 }

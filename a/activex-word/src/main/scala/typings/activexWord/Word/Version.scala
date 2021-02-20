@@ -1,12 +1,13 @@
 package typings.activexWord.Word
 
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Version extends js.Object {
+trait Version extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -53,51 +54,39 @@ object Version {
   }
   
   @scala.inline
-  implicit class VersionOps[Self <: Version] (val x: Self) extends AnyVal {
+  implicit class VersionMutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setDate(value: VarDate): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("Comment", value.asInstanceOf[js.Any])
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: VarDate): Self = this.set("Date", value.asInstanceOf[js.Any])
+    def setOpen(value: () => Document): Self = StObject.set(x, "Open", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setOpenOld(value: () => Unit): Self = StObject.set(x, "OpenOld", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("Index", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: () => Document): Self = this.set("Open", js.Any.fromFunction0(value))
+    def setSavedBy(value: String): Self = StObject.set(x, "SavedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenOld(value: () => Unit): Self = this.set("OpenOld", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSavedBy(value: String): Self = this.set("SavedBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotVersion_typekey(value: Version): Self = this.set("Word.Version_typekey", value.asInstanceOf[js.Any])
+    def setWordDotVersion_typekey(value: Version): Self = StObject.set(x, "Word.Version_typekey", value.asInstanceOf[js.Any])
   }
 }

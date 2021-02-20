@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Aborted extends js.Object {
+trait Aborted extends StObject {
   
   var aborted: scala.Double = js.native
   
@@ -65,66 +66,54 @@ object Aborted {
   }
   
   @scala.inline
-  implicit class AbortedOps[Self <: Aborted] (val x: Self) extends AnyVal {
+  implicit class AbortedMutableBuilder[Self <: Aborted] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAborted(value: scala.Double): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlocked(value: scala.Double): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: scala.Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAborted(value: scala.Double): Self = this.set("aborted", value.asInstanceOf[js.Any])
+    def setFailed(value: scala.Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlocked(value: scala.Double): Self = this.set("blocked", value.asInstanceOf[js.Any])
+    def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: scala.Double): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setInconclusive(value: scala.Double): Self = StObject.set(x, "inconclusive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailed(value: scala.Double): Self = this.set("failed", value.asInstanceOf[js.Any])
+    def setMaxValue(value: scala.Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInProgress(value: scala.Double): Self = this.set("inProgress", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInconclusive(value: scala.Double): Self = this.set("inconclusive", value.asInstanceOf[js.Any])
+    def setNotApplicable(value: scala.Double): Self = StObject.set(x, "notApplicable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValue(value: scala.Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    def setNotExecuted(value: scala.Double): Self = StObject.set(x, "notExecuted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
+    def setNotImpacted(value: scala.Double): Self = StObject.set(x, "notImpacted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotApplicable(value: scala.Double): Self = this.set("notApplicable", value.asInstanceOf[js.Any])
+    def setPassed(value: scala.Double): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotExecuted(value: scala.Double): Self = this.set("notExecuted", value.asInstanceOf[js.Any])
+    def setPaused(value: scala.Double): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotImpacted(value: scala.Double): Self = this.set("notImpacted", value.asInstanceOf[js.Any])
+    def setTimeout(value: scala.Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassed(value: scala.Double): Self = this.set("passed", value.asInstanceOf[js.Any])
+    def setUnspecified(value: scala.Double): Self = StObject.set(x, "unspecified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaused(value: scala.Double): Self = this.set("paused", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeout(value: scala.Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnspecified(value: scala.Double): Self = this.set("unspecified", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWarning(value: scala.Double): Self = this.set("warning", value.asInstanceOf[js.Any])
+    def setWarning(value: scala.Double): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
   }
 }

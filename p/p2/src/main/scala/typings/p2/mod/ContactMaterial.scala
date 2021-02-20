@@ -1,12 +1,13 @@
 package typings.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p2", "ContactMaterial")
 @js.native
-class ContactMaterial protected () extends js.Object {
+class ContactMaterial protected () extends StObject {
   def this(materialA: Material, materialB: Material) = this()
   def this(materialA: Material, materialB: Material, options: ContactMaterialOptions) = this()
   
@@ -33,9 +34,15 @@ class ContactMaterial protected () extends js.Object {
   var surfaceVelocity: Double = js.native
 }
 /* static members */
-@JSImport("p2", "ContactMaterial")
-@js.native
-object ContactMaterial extends js.Object {
+object ContactMaterial {
   
-  var idCounter: Double = js.native
+  @JSImport("p2", "ContactMaterial")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("p2", "ContactMaterial.idCounter")
+  @js.native
+  def idCounter: Double = js.native
+  @scala.inline
+  def idCounter_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("idCounter")(x.asInstanceOf[js.Any])
 }

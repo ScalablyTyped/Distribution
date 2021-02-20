@@ -1,5 +1,6 @@
 package typings.reactFoundation.enumsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,18 +12,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactFoundation.reactFoundationStrings.xlarge
   - typings.reactFoundation.reactFoundationStrings.xxlarge
 */
-trait Breakpoints extends js.Object
-@JSImport("react-foundation/enums", "Breakpoints")
-@js.native
-object Breakpoints extends js.Object {
+trait Breakpoints extends StObject
+object Breakpoints {
   
-  var LARGE: Breakpoints = js.native
+  @JSImport("react-foundation/enums", "Breakpoints")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var MEDIUM: Breakpoints = js.native
+  @JSImport("react-foundation/enums", "Breakpoints.LARGE")
+  @js.native
+  def LARGE: Breakpoints = js.native
+  @scala.inline
+  def LARGE_=(x: Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LARGE")(x.asInstanceOf[js.Any])
   
-  var SMALL: Breakpoints = js.native
+  @JSImport("react-foundation/enums", "Breakpoints.MEDIUM")
+  @js.native
+  def MEDIUM: Breakpoints = js.native
+  @scala.inline
+  def MEDIUM_=(x: Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIUM")(x.asInstanceOf[js.Any])
   
-  var XLARGE: Breakpoints = js.native
+  @JSImport("react-foundation/enums", "Breakpoints.SMALL")
+  @js.native
+  def SMALL: Breakpoints = js.native
+  @scala.inline
+  def SMALL_=(x: Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SMALL")(x.asInstanceOf[js.Any])
   
-  var XXLARGE: Breakpoints = js.native
+  @JSImport("react-foundation/enums", "Breakpoints.XLARGE")
+  @js.native
+  def XLARGE: Breakpoints = js.native
+  @scala.inline
+  def XLARGE_=(x: Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XLARGE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-foundation/enums", "Breakpoints.XXLARGE")
+  @js.native
+  def XXLARGE: Breakpoints = js.native
+  @scala.inline
+  def XXLARGE_=(x: Breakpoints): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XXLARGE")(x.asInstanceOf[js.Any])
 }

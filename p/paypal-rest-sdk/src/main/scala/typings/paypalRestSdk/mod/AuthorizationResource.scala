@@ -1,5 +1,6 @@
 package typings.paypalRestSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,30 +24,18 @@ object AuthorizationResource {
   }
   
   @scala.inline
-  implicit class AuthorizationResourceOps[Self <: AuthorizationResource] (val x: Self) extends AnyVal {
+  implicit class AuthorizationResourceMutableBuilder[Self <: AuthorizationResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReference_id(value: String): Self = StObject.set(x, "reference_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReference_idUndefined: Self = StObject.set(x, "reference_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdate_time(value: String): Self = StObject.set(x, "update_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdate_time(value: String): Self = this.set("update_time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValid_until(value: String): Self = this.set("valid_until", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReference_id(value: String): Self = this.set("reference_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReference_id: Self = this.set("reference_id", js.undefined)
+    def setValid_until(value: String): Self = StObject.set(x, "valid_until", value.asInstanceOf[js.Any])
   }
 }

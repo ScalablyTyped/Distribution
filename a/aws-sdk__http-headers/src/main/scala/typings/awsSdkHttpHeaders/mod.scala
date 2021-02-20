@@ -3,14 +3,14 @@ package typings.awsSdkHttpHeaders
 import typings.awsSdkHttpHeaders.awsSdkHttpHeadersStrings.Map
 import typings.awsSdkTypes.httpMod.Headers
 import typings.std.Iterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/http-headers", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@aws-sdk/http-headers", "HttpHeaders")
   @js.native
   class HttpHeaders () extends Headers {
     def this(entries: Iterable[js.Tuple2[String, String]]) = this()

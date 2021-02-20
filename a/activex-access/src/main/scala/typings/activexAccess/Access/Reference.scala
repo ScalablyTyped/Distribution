@@ -1,12 +1,13 @@
 package typings.activexAccess.Access
 
 import typings.activexVbide.VBIDE.vbextRefKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Reference extends js.Object {
+trait Reference extends StObject {
   
   @JSName("Access.Reference_typekey")
   var AccessDotReference_typekey: Reference = js.native

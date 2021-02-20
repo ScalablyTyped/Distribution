@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,90 +80,78 @@ object ContractTermValuedItem {
   }
   
   @scala.inline
-  implicit class ContractTermValuedItemOps[Self <: ContractTermValuedItem] (val x: Self) extends AnyVal {
+  implicit class ContractTermValuedItemMutableBuilder[Self <: ContractTermValuedItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEffectiveTime(value: dateTime): Self = StObject.set(x, "effectiveTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEffectiveTimeUndefined: Self = StObject.set(x, "effectiveTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntityCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "entityCodeableConcept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_effectiveTime(value: Element): Self = this.set("_effectiveTime", value.asInstanceOf[js.Any])
+    def setEntityCodeableConceptUndefined: Self = StObject.set(x, "entityCodeableConcept", js.undefined)
     
     @scala.inline
-    def delete_effectiveTime: Self = this.set("_effectiveTime", js.undefined)
+    def setEntityReference(value: Reference): Self = StObject.set(x, "entityReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_factor(value: Element): Self = this.set("_factor", value.asInstanceOf[js.Any])
+    def setEntityReferenceUndefined: Self = StObject.set(x, "entityReference", js.undefined)
     
     @scala.inline
-    def delete_factor: Self = this.set("_factor", js.undefined)
+    def setFactor(value: decimal): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_points(value: Element): Self = this.set("_points", value.asInstanceOf[js.Any])
+    def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
     
     @scala.inline
-    def delete_points: Self = this.set("_points", js.undefined)
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectiveTime(value: dateTime): Self = this.set("effectiveTime", value.asInstanceOf[js.Any])
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def deleteEffectiveTime: Self = this.set("effectiveTime", js.undefined)
+    def setNet(value: Money): Self = StObject.set(x, "net", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityCodeableConcept(value: CodeableConcept): Self = this.set("entityCodeableConcept", value.asInstanceOf[js.Any])
+    def setNetUndefined: Self = StObject.set(x, "net", js.undefined)
     
     @scala.inline
-    def deleteEntityCodeableConcept: Self = this.set("entityCodeableConcept", js.undefined)
+    def setPoints(value: decimal): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityReference(value: Reference): Self = this.set("entityReference", value.asInstanceOf[js.Any])
+    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
     @scala.inline
-    def deleteEntityReference: Self = this.set("entityReference", js.undefined)
+    def setQuantity(value: Quantity): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFactor(value: decimal): Self = this.set("factor", value.asInstanceOf[js.Any])
+    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
     @scala.inline
-    def deleteFactor: Self = this.set("factor", js.undefined)
+    def setUnitPrice(value: Money): Self = StObject.set(x, "unitPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setUnitPriceUndefined: Self = StObject.set(x, "unitPrice", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def set_effectiveTime(value: Element): Self = StObject.set(x, "_effectiveTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNet(value: Money): Self = this.set("net", value.asInstanceOf[js.Any])
+    def set_effectiveTimeUndefined: Self = StObject.set(x, "_effectiveTime", js.undefined)
     
     @scala.inline
-    def deleteNet: Self = this.set("net", js.undefined)
+    def set_factor(value: Element): Self = StObject.set(x, "_factor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoints(value: decimal): Self = this.set("points", value.asInstanceOf[js.Any])
+    def set_factorUndefined: Self = StObject.set(x, "_factor", js.undefined)
     
     @scala.inline
-    def deletePoints: Self = this.set("points", js.undefined)
+    def set_points(value: Element): Self = StObject.set(x, "_points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantity(value: Quantity): Self = this.set("quantity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuantity: Self = this.set("quantity", js.undefined)
-    
-    @scala.inline
-    def setUnitPrice(value: Money): Self = this.set("unitPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnitPrice: Self = this.set("unitPrice", js.undefined)
+    def set_pointsUndefined: Self = StObject.set(x, "_points", js.undefined)
   }
 }

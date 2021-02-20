@@ -10,43 +10,16 @@ import typings.firebaseStorage.stringMod.StringFormat
 import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/storage/dist/src/reference", JSImport.Namespace)
-@js.native
-object srcReferenceMod extends js.Object {
+object srcReferenceMod {
   
-  def deleteObject(ref: Reference): js.Promise[Unit] = js.native
-  
-  def getChild(ref: Reference, childPath: String): Reference = js.native
-  
-  def getDownloadURL(ref: Reference): js.Promise[String] = js.native
-  
-  def getMetadata(ref: Reference): js.Promise[Metadata] = js.native
-  
-  def list(ref: Reference): js.Promise[ListResult] = js.native
-  def list(ref: Reference, options: ListOptions): js.Promise[ListResult] = js.native
-  
-  def listAll(ref: Reference): js.Promise[ListResult] = js.native
-  
-  def updateMetadata(ref: Reference, metadata: Metadata): js.Promise[Metadata] = js.native
-  
-  def uploadBytesResumable(ref: Reference, data: ArrayBuffer): UploadTask = js.native
-  def uploadBytesResumable(ref: Reference, data: ArrayBuffer, metadata: Metadata): UploadTask = js.native
-  def uploadBytesResumable(ref: Reference, data: Blob): UploadTask = js.native
-  def uploadBytesResumable(ref: Reference, data: Blob, metadata: Metadata): UploadTask = js.native
-  def uploadBytesResumable(ref: Reference, data: Uint8Array): UploadTask = js.native
-  def uploadBytesResumable(ref: Reference, data: Uint8Array, metadata: Metadata): UploadTask = js.native
-  
-  def uploadString(ref: Reference, value: String): UploadTask = js.native
-  def uploadString(ref: Reference, value: String, format: js.UndefOr[scala.Nothing], metadata: Metadata): UploadTask = js.native
-  def uploadString(ref: Reference, value: String, format: StringFormat): UploadTask = js.native
-  def uploadString(ref: Reference, value: String, format: StringFormat, metadata: Metadata): UploadTask = js.native
-  
+  @JSImport("@firebase/storage/dist/src/reference", "Reference")
   @js.native
-  class Reference protected () extends js.Object {
+  class Reference protected () extends StObject {
     def this(_service: StorageService, location: String) = this()
     def this(_service: StorageService, location: Location) = this()
     
@@ -77,4 +50,67 @@ object srcReferenceMod extends js.Object {
     
     def storage: StorageService = js.native
   }
+  
+  @JSImport("@firebase/storage/dist/src/reference", "deleteObject")
+  @js.native
+  def deleteObject(ref: Reference): js.Promise[Unit] = js.native
+  
+  @JSImport("@firebase/storage/dist/src/reference", "getChild")
+  @js.native
+  def getChild(ref: Reference, childPath: String): Reference = js.native
+  
+  @JSImport("@firebase/storage/dist/src/reference", "getDownloadURL")
+  @js.native
+  def getDownloadURL(ref: Reference): js.Promise[String] = js.native
+  
+  @JSImport("@firebase/storage/dist/src/reference", "getMetadata")
+  @js.native
+  def getMetadata(ref: Reference): js.Promise[Metadata] = js.native
+  
+  @JSImport("@firebase/storage/dist/src/reference", "list")
+  @js.native
+  def list(ref: Reference): js.Promise[ListResult] = js.native
+  @JSImport("@firebase/storage/dist/src/reference", "list")
+  @js.native
+  def list(ref: Reference, options: ListOptions): js.Promise[ListResult] = js.native
+  
+  @JSImport("@firebase/storage/dist/src/reference", "listAll")
+  @js.native
+  def listAll(ref: Reference): js.Promise[ListResult] = js.native
+  
+  @JSImport("@firebase/storage/dist/src/reference", "updateMetadata")
+  @js.native
+  def updateMetadata(ref: Reference, metadata: Metadata): js.Promise[Metadata] = js.native
+  
+  @JSImport("@firebase/storage/dist/src/reference", "uploadBytesResumable")
+  @js.native
+  def uploadBytesResumable(ref: Reference, data: ArrayBuffer): UploadTask = js.native
+  @JSImport("@firebase/storage/dist/src/reference", "uploadBytesResumable")
+  @js.native
+  def uploadBytesResumable(ref: Reference, data: ArrayBuffer, metadata: Metadata): UploadTask = js.native
+  @JSImport("@firebase/storage/dist/src/reference", "uploadBytesResumable")
+  @js.native
+  def uploadBytesResumable(ref: Reference, data: Blob): UploadTask = js.native
+  @JSImport("@firebase/storage/dist/src/reference", "uploadBytesResumable")
+  @js.native
+  def uploadBytesResumable(ref: Reference, data: Blob, metadata: Metadata): UploadTask = js.native
+  @JSImport("@firebase/storage/dist/src/reference", "uploadBytesResumable")
+  @js.native
+  def uploadBytesResumable(ref: Reference, data: Uint8Array): UploadTask = js.native
+  @JSImport("@firebase/storage/dist/src/reference", "uploadBytesResumable")
+  @js.native
+  def uploadBytesResumable(ref: Reference, data: Uint8Array, metadata: Metadata): UploadTask = js.native
+  
+  @JSImport("@firebase/storage/dist/src/reference", "uploadString")
+  @js.native
+  def uploadString(ref: Reference, value: String): UploadTask = js.native
+  @JSImport("@firebase/storage/dist/src/reference", "uploadString")
+  @js.native
+  def uploadString(ref: Reference, value: String, format: js.UndefOr[scala.Nothing], metadata: Metadata): UploadTask = js.native
+  @JSImport("@firebase/storage/dist/src/reference", "uploadString")
+  @js.native
+  def uploadString(ref: Reference, value: String, format: StringFormat): UploadTask = js.native
+  @JSImport("@firebase/storage/dist/src/reference", "uploadString")
+  @js.native
+  def uploadString(ref: Reference, value: String, format: StringFormat, metadata: Metadata): UploadTask = js.native
 }

@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountMinimumPasswordLength extends js.Object {
+trait AccountMinimumPasswordLength extends StObject {
   
   var maximumLength: js.UndefOr[String] = js.native
   
@@ -23,30 +24,18 @@ object AccountMinimumPasswordLength {
   }
   
   @scala.inline
-  implicit class AccountMinimumPasswordLengthOps[Self <: AccountMinimumPasswordLength] (val x: Self) extends AnyVal {
+  implicit class AccountMinimumPasswordLengthMutableBuilder[Self <: AccountMinimumPasswordLength] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximumLength(value: String): Self = StObject.set(x, "maximumLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaximumLengthUndefined: Self = StObject.set(x, "maximumLength", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinimumLength(value: String): Self = StObject.set(x, "minimumLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumLength(value: String): Self = this.set("maximumLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumLength: Self = this.set("maximumLength", js.undefined)
-    
-    @scala.inline
-    def setMinimumLength(value: String): Self = this.set("minimumLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumLength: Self = this.set("minimumLength", js.undefined)
+    def setMinimumLengthUndefined: Self = StObject.set(x, "minimumLength", js.undefined)
   }
 }

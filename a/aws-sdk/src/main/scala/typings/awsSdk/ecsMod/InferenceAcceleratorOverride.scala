@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InferenceAcceleratorOverride extends js.Object {
+trait InferenceAcceleratorOverride extends StObject {
   
   /**
     * The Elastic Inference accelerator device name to override for the task. This parameter must match a deviceName specified in the task definition.
@@ -26,30 +27,18 @@ object InferenceAcceleratorOverride {
   }
   
   @scala.inline
-  implicit class InferenceAcceleratorOverrideOps[Self <: InferenceAcceleratorOverride] (val x: Self) extends AnyVal {
+  implicit class InferenceAcceleratorOverrideMutableBuilder[Self <: InferenceAcceleratorOverride] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceName(value: String): Self = this.set("deviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceName: Self = this.set("deviceName", js.undefined)
-    
-    @scala.inline
-    def setDeviceType(value: String): Self = this.set("deviceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceType: Self = this.set("deviceType", js.undefined)
+    def setDeviceTypeUndefined: Self = StObject.set(x, "deviceType", js.undefined)
   }
 }

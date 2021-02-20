@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * that match the appearance of new lines created in the Slides editor.
   */
 @js.native
-trait SchemaLineProperties extends js.Object {
+trait SchemaLineProperties extends StObject {
   
   /**
     * The dash style of the line.
@@ -65,66 +66,54 @@ object SchemaLineProperties {
   }
   
   @scala.inline
-  implicit class SchemaLinePropertiesOps[Self <: SchemaLineProperties] (val x: Self) extends AnyVal {
+  implicit class SchemaLinePropertiesMutableBuilder[Self <: SchemaLineProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndArrow(value: String): Self = StObject.set(x, "endArrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashStyle(value: String): Self = this.set("dashStyle", value.asInstanceOf[js.Any])
+    def setEndArrowUndefined: Self = StObject.set(x, "endArrow", js.undefined)
     
     @scala.inline
-    def deleteDashStyle: Self = this.set("dashStyle", js.undefined)
+    def setEndConnection(value: SchemaLineConnection): Self = StObject.set(x, "endConnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndArrow(value: String): Self = this.set("endArrow", value.asInstanceOf[js.Any])
+    def setEndConnectionUndefined: Self = StObject.set(x, "endConnection", js.undefined)
     
     @scala.inline
-    def deleteEndArrow: Self = this.set("endArrow", js.undefined)
+    def setLineFill(value: SchemaLineFill): Self = StObject.set(x, "lineFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndConnection(value: SchemaLineConnection): Self = this.set("endConnection", value.asInstanceOf[js.Any])
+    def setLineFillUndefined: Self = StObject.set(x, "lineFill", js.undefined)
     
     @scala.inline
-    def deleteEndConnection: Self = this.set("endConnection", js.undefined)
+    def setLink(value: SchemaLink): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineFill(value: SchemaLineFill): Self = this.set("lineFill", value.asInstanceOf[js.Any])
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def deleteLineFill: Self = this.set("lineFill", js.undefined)
+    def setStartArrow(value: String): Self = StObject.set(x, "startArrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: SchemaLink): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setStartArrowUndefined: Self = StObject.set(x, "startArrow", js.undefined)
     
     @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setStartConnection(value: SchemaLineConnection): Self = StObject.set(x, "startConnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartArrow(value: String): Self = this.set("startArrow", value.asInstanceOf[js.Any])
+    def setStartConnectionUndefined: Self = StObject.set(x, "startConnection", js.undefined)
     
     @scala.inline
-    def deleteStartArrow: Self = this.set("startArrow", js.undefined)
+    def setWeight(value: SchemaDimension): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartConnection(value: SchemaLineConnection): Self = this.set("startConnection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartConnection: Self = this.set("startConnection", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: SchemaDimension): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

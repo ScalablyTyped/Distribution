@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.noEnd
   - typings.microsoftGraph.microsoftGraphStrings.numbered
 */
-trait RecurrenceRangeType extends js.Object
+trait RecurrenceRangeType extends StObject
 object RecurrenceRangeType {
   
   @scala.inline

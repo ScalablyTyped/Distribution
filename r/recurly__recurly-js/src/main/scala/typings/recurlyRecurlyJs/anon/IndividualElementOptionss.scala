@@ -1,13 +1,14 @@
 package typings.recurlyRecurlyJs.anon
 
 import typings.recurlyRecurlyJs.elementsMod.CommonElementStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @recurly/recurly-js.@recurly/recurly-js/lib/elements.IndividualElementOptions & {  selector :string | undefined} */
 @js.native
-trait IndividualElementOptionss extends js.Object {
+trait IndividualElementOptionss extends StObject {
   
   /**
     * Enables contextual input formatting, injecting spaces to match the card brand, and forcing numeric input on expiry
@@ -42,48 +43,36 @@ object IndividualElementOptionss {
   }
   
   @scala.inline
-  implicit class IndividualElementOptionssOps[Self <: IndividualElementOptionss] (val x: Self) extends AnyVal {
+  implicit class IndividualElementOptionssMutableBuilder[Self <: IndividualElementOptionss] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: Boolean): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputType(value: String): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: Boolean): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputType(value: String): Self = this.set("inputType", value.asInstanceOf[js.Any])
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
     @scala.inline
-    def deleteInputType: Self = this.set("inputType", js.undefined)
+    def setStyle(value: CommonElementStyle with Invalid): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setTabIndex(value: String): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: CommonElementStyle with Invalid): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setTabIndex(value: String): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.tildify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tildify", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("tildify", JSImport.Namespace)
+  @js.native
   def apply(absolutePath: String): String = js.native
 }

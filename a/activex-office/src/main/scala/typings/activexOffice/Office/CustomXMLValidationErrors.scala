@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomXMLValidationErrors extends js.Object {
+trait CustomXMLValidationErrors extends StObject {
   
   def apply(Index: Double): CustomXMLValidationError = js.native
   

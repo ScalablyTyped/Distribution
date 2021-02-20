@@ -1,12 +1,13 @@
 package typings.reactNativeFs.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReadDirItem extends js.Object {
+trait ReadDirItem extends StObject {
   
   var ctime: js.UndefOr[Date] = js.native
   
@@ -37,45 +38,33 @@ object ReadDirItem {
   }
   
   @scala.inline
-  implicit class ReadDirItemOps[Self <: ReadDirItem] (val x: Self) extends AnyVal {
+  implicit class ReadDirItemMutableBuilder[Self <: ReadDirItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCtimeUndefined: Self = StObject.set(x, "ctime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsDirectory(value: () => Boolean): Self = this.set("isDirectory", js.Any.fromFunction0(value))
+    def setIsFile(value: () => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsFile(value: () => Boolean): Self = this.set("isFile", js.Any.fromFunction0(value))
+    def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCtime(value: Date): Self = this.set("ctime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCtime: Self = this.set("ctime", js.undefined)
-    
-    @scala.inline
-    def setMtime(value: Date): Self = this.set("mtime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMtime: Self = this.set("mtime", js.undefined)
+    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

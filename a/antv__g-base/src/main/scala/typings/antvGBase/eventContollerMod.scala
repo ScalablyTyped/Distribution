@@ -3,16 +3,21 @@ package typings.antvGBase
 import typings.antvGBase.anon.ClientX
 import typings.antvGBase.interfacesMod.IShape
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/g-base/lib/event/event-contoller", JSImport.Namespace)
-@js.native
-object eventContollerMod extends js.Object {
+object eventContollerMod {
+  
+  @JSImport("@antv/g-base/lib/event/event-contoller", JSImport.Default)
+  @js.native
+  class default protected () extends EventController {
+    def this(cfg: js.Any) = this()
+  }
   
   @js.native
-  trait EventController extends js.Object {
+  trait EventController extends StObject {
     
     def _afterDrag(draggingShape: js.Any, pointInfo: js.Any, event: js.Any): Unit = js.native
     
@@ -82,10 +87,5 @@ object eventContollerMod extends js.Object {
     var mousedownShape: js.Any = js.native
     
     var mousedownTimeStamp: js.Any = js.native
-  }
-  
-  @js.native
-  class default protected () extends EventController {
-    def this(cfg: js.Any) = this()
   }
 }

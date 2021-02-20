@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationFrameProvider extends js.Object {
+trait AnimationFrameProvider extends StObject {
   
   def cancelAnimationFrame(handle: Double): Unit = js.native
   
@@ -20,24 +21,12 @@ object AnimationFrameProvider {
   }
   
   @scala.inline
-  implicit class AnimationFrameProviderOps[Self <: AnimationFrameProvider] (val x: Self) extends AnyVal {
+  implicit class AnimationFrameProviderMutableBuilder[Self <: AnimationFrameProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelAnimationFrame(value: Double => Unit): Self = StObject.set(x, "cancelAnimationFrame", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCancelAnimationFrame(value: Double => Unit): Self = this.set("cancelAnimationFrame", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRequestAnimationFrame(value: FrameRequestCallback => Double): Self = this.set("requestAnimationFrame", js.Any.fromFunction1(value))
+    def setRequestAnimationFrame(value: FrameRequestCallback => Double): Self = StObject.set(x, "requestAnimationFrame", js.Any.fromFunction1(value))
   }
 }

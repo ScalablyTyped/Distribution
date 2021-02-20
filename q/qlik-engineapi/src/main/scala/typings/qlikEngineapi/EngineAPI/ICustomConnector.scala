@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * CustomConnector...
   */
 @js.native
-trait ICustomConnector extends js.Object {
+trait ICustomConnector extends StObject {
   
   /**
     * Name of the custom connector as displayed in the Qlik interface.
@@ -39,30 +40,18 @@ object ICustomConnector {
   }
   
   @scala.inline
-  implicit class ICustomConnectorOps[Self <: ICustomConnector] (val x: Self) extends AnyVal {
+  implicit class ICustomConnectorMutableBuilder[Self <: ICustomConnector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQDisplayName(value: String): Self = StObject.set(x, "qDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQMachineMode(value: MachineModeType): Self = StObject.set(x, "qMachineMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQParent(value: String): Self = StObject.set(x, "qParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDisplayName(value: String): Self = this.set("qDisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQMachineMode(value: MachineModeType): Self = this.set("qMachineMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQParent(value: String): Self = this.set("qParent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQProvider(value: String): Self = this.set("qProvider", value.asInstanceOf[js.Any])
+    def setQProvider(value: String): Self = StObject.set(x, "qProvider", value.asInstanceOf[js.Any])
   }
 }

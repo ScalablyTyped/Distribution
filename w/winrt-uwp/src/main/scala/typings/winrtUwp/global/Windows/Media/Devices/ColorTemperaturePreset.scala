@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines the values for the possible color temperature presets. */
 @JSGlobal("Windows.Media.Devices.ColorTemperaturePreset")
 @js.native
-object ColorTemperaturePreset extends js.Object {
+object ColorTemperaturePreset extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Devices.ColorTemperaturePreset with Double] = js.native

@@ -1,12 +1,13 @@
 package typings.materialUiCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/CircularProgress/CircularProgress.CircularProgressClassKey>> */
 @js.native
-trait PartialClassNameMapCircul extends js.Object {
+trait PartialClassNameMapCircul extends StObject {
   
   var circle: js.UndefOr[String] = js.native
   
@@ -37,78 +38,66 @@ object PartialClassNameMapCircul {
   }
   
   @scala.inline
-  implicit class PartialClassNameMapCirculOps[Self <: PartialClassNameMapCircul] (val x: Self) extends AnyVal {
+  implicit class PartialClassNameMapCirculMutableBuilder[Self <: PartialClassNameMapCircul] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCircle(value: String): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCircleDisableShrink(value: String): Self = StObject.set(x, "circleDisableShrink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCircleDisableShrinkUndefined: Self = StObject.set(x, "circleDisableShrink", js.undefined)
     
     @scala.inline
-    def setCircle(value: String): Self = this.set("circle", value.asInstanceOf[js.Any])
+    def setCircleIndeterminate(value: String): Self = StObject.set(x, "circleIndeterminate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCircle: Self = this.set("circle", js.undefined)
+    def setCircleIndeterminateUndefined: Self = StObject.set(x, "circleIndeterminate", js.undefined)
     
     @scala.inline
-    def setCircleDisableShrink(value: String): Self = this.set("circleDisableShrink", value.asInstanceOf[js.Any])
+    def setCircleStatic(value: String): Self = StObject.set(x, "circleStatic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCircleDisableShrink: Self = this.set("circleDisableShrink", js.undefined)
+    def setCircleStaticUndefined: Self = StObject.set(x, "circleStatic", js.undefined)
     
     @scala.inline
-    def setCircleIndeterminate(value: String): Self = this.set("circleIndeterminate", value.asInstanceOf[js.Any])
+    def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
     
     @scala.inline
-    def deleteCircleIndeterminate: Self = this.set("circleIndeterminate", js.undefined)
+    def setColorPrimary(value: String): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircleStatic(value: String): Self = this.set("circleStatic", value.asInstanceOf[js.Any])
+    def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
     
     @scala.inline
-    def deleteCircleStatic: Self = this.set("circleStatic", js.undefined)
+    def setColorSecondary(value: String): Self = StObject.set(x, "colorSecondary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorPrimary(value: String): Self = this.set("colorPrimary", value.asInstanceOf[js.Any])
+    def setColorSecondaryUndefined: Self = StObject.set(x, "colorSecondary", js.undefined)
     
     @scala.inline
-    def deleteColorPrimary: Self = this.set("colorPrimary", js.undefined)
+    def setIndeterminate(value: String): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorSecondary(value: String): Self = this.set("colorSecondary", value.asInstanceOf[js.Any])
+    def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
     
     @scala.inline
-    def deleteColorSecondary: Self = this.set("colorSecondary", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndeterminate(value: String): Self = this.set("indeterminate", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteIndeterminate: Self = this.set("indeterminate", js.undefined)
+    def setStatic(value: String): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setSvg(value: String): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatic(value: String): Self = this.set("static", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatic: Self = this.set("static", js.undefined)
-    
-    @scala.inline
-    def setSvg(value: String): Self = this.set("svg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSvg: Self = this.set("svg", js.undefined)
+    def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
   }
 }

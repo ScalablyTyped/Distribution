@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -85,99 +86,87 @@ object PaymentNotice {
   }
   
   @scala.inline
-  implicit class PaymentNoticeOps[Self <: PaymentNotice] (val x: Self) extends AnyVal {
+  implicit class PaymentNoticeMutableBuilder[Self <: PaymentNotice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated(value: dateTime): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_created(value: Element): Self = this.set("_created", value.asInstanceOf[js.Any])
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def delete_created: Self = this.set("_created", js.undefined)
+    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setOrganization(value: Reference): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
     
     @scala.inline
-    def set_statusDate(value: Element): Self = this.set("_statusDate", value.asInstanceOf[js.Any])
+    def setPaymentStatus(value: CodeableConcept): Self = StObject.set(x, "paymentStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_statusDate: Self = this.set("_statusDate", js.undefined)
+    def setPaymentStatusUndefined: Self = StObject.set(x, "paymentStatus", js.undefined)
     
     @scala.inline
-    def setCreated(value: dateTime): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setProvider(value: Reference): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
     @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    def setRequest(value: Reference): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setResponse(value: Reference): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganization(value: Reference): Self = this.set("organization", value.asInstanceOf[js.Any])
+    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
     @scala.inline
-    def deleteOrganization: Self = this.set("organization", js.undefined)
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentStatus(value: CodeableConcept): Self = this.set("paymentStatus", value.asInstanceOf[js.Any])
+    def setStatusDate(value: date): Self = StObject.set(x, "statusDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaymentStatus: Self = this.set("paymentStatus", js.undefined)
+    def setStatusDateUndefined: Self = StObject.set(x, "statusDate", js.undefined)
     
     @scala.inline
-    def setProvider(value: Reference): Self = this.set("provider", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteProvider: Self = this.set("provider", js.undefined)
+    def setTarget(value: Reference): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest(value: Reference): Self = this.set("request", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
+    def set_created(value: Element): Self = StObject.set(x, "_created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: Reference): Self = this.set("response", value.asInstanceOf[js.Any])
+    def set_createdUndefined: Self = StObject.set(x, "_created", js.undefined)
     
     @scala.inline
-    def deleteResponse: Self = this.set("response", js.undefined)
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    def set_statusDate(value: Element): Self = StObject.set(x, "_statusDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def set_statusDateUndefined: Self = StObject.set(x, "_statusDate", js.undefined)
     
     @scala.inline
-    def setStatusDate(value: date): Self = this.set("statusDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusDate: Self = this.set("statusDate", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: Reference): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

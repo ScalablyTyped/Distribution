@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,57 +32,45 @@ object TermsAndConditionsAcceptanceStatus {
   }
   
   @scala.inline
-  implicit class TermsAndConditionsAcceptanceStatusOps[Self <: TermsAndConditionsAcceptanceStatus] (val x: Self) extends AnyVal {
+  implicit class TermsAndConditionsAcceptanceStatusMutableBuilder[Self <: TermsAndConditionsAcceptanceStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptedDateTime(value: String): Self = StObject.set(x, "acceptedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptedDateTimeUndefined: Self = StObject.set(x, "acceptedDateTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcceptedVersion(value: Double): Self = StObject.set(x, "acceptedVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptedDateTime(value: String): Self = this.set("acceptedDateTime", value.asInstanceOf[js.Any])
+    def setAcceptedVersionUndefined: Self = StObject.set(x, "acceptedVersion", js.undefined)
     
     @scala.inline
-    def deleteAcceptedDateTime: Self = this.set("acceptedDateTime", js.undefined)
+    def setTermsAndConditions(value: NullableOption[TermsAndConditions]): Self = StObject.set(x, "termsAndConditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptedVersion(value: Double): Self = this.set("acceptedVersion", value.asInstanceOf[js.Any])
+    def setTermsAndConditionsNull: Self = StObject.set(x, "termsAndConditions", null)
     
     @scala.inline
-    def deleteAcceptedVersion: Self = this.set("acceptedVersion", js.undefined)
+    def setTermsAndConditionsUndefined: Self = StObject.set(x, "termsAndConditions", js.undefined)
     
     @scala.inline
-    def setTermsAndConditions(value: NullableOption[TermsAndConditions]): Self = this.set("termsAndConditions", value.asInstanceOf[js.Any])
+    def setUserDisplayName(value: NullableOption[String]): Self = StObject.set(x, "userDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTermsAndConditions: Self = this.set("termsAndConditions", js.undefined)
+    def setUserDisplayNameNull: Self = StObject.set(x, "userDisplayName", null)
     
     @scala.inline
-    def setTermsAndConditionsNull: Self = this.set("termsAndConditions", null)
+    def setUserDisplayNameUndefined: Self = StObject.set(x, "userDisplayName", js.undefined)
     
     @scala.inline
-    def setUserDisplayName(value: NullableOption[String]): Self = this.set("userDisplayName", value.asInstanceOf[js.Any])
+    def setUserPrincipalName(value: NullableOption[String]): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserDisplayName: Self = this.set("userDisplayName", js.undefined)
+    def setUserPrincipalNameNull: Self = StObject.set(x, "userPrincipalName", null)
     
     @scala.inline
-    def setUserDisplayNameNull: Self = this.set("userDisplayName", null)
-    
-    @scala.inline
-    def setUserPrincipalName(value: NullableOption[String]): Self = this.set("userPrincipalName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserPrincipalName: Self = this.set("userPrincipalName", js.undefined)
-    
-    @scala.inline
-    def setUserPrincipalNameNull: Self = this.set("userPrincipalName", null)
+    def setUserPrincipalNameUndefined: Self = StObject.set(x, "userPrincipalName", js.undefined)
   }
 }

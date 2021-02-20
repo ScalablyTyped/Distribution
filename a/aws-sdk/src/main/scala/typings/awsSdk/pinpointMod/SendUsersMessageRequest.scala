@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendUsersMessageRequest extends js.Object {
+trait SendUsersMessageRequest extends StObject {
   
   /**
     * A map of custom attribute-value pairs. For a push notification, Amazon Pinpoint adds these attributes to the data.pinpoint object in the body of the notification payload. Amazon Pinpoint also provides these attributes in the events that it generates for users-messages deliveries.
@@ -41,42 +42,30 @@ object SendUsersMessageRequest {
   }
   
   @scala.inline
-  implicit class SendUsersMessageRequestOps[Self <: SendUsersMessageRequest] (val x: Self) extends AnyVal {
+  implicit class SendUsersMessageRequestMutableBuilder[Self <: SendUsersMessageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: MapOfString): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextUndefined: Self = StObject.set(x, "Context", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessageConfiguration(value: DirectMessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageConfiguration(value: DirectMessageConfiguration): Self = this.set("MessageConfiguration", value.asInstanceOf[js.Any])
+    def setTemplateConfiguration(value: TemplateConfiguration): Self = StObject.set(x, "TemplateConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsers(value: MapOfEndpointSendConfiguration): Self = this.set("Users", value.asInstanceOf[js.Any])
+    def setTemplateConfigurationUndefined: Self = StObject.set(x, "TemplateConfiguration", js.undefined)
     
     @scala.inline
-    def setContext(value: MapOfString): Self = this.set("Context", value.asInstanceOf[js.Any])
+    def setTraceId(value: string): Self = StObject.set(x, "TraceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContext: Self = this.set("Context", js.undefined)
+    def setTraceIdUndefined: Self = StObject.set(x, "TraceId", js.undefined)
     
     @scala.inline
-    def setTemplateConfiguration(value: TemplateConfiguration): Self = this.set("TemplateConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateConfiguration: Self = this.set("TemplateConfiguration", js.undefined)
-    
-    @scala.inline
-    def setTraceId(value: string): Self = this.set("TraceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraceId: Self = this.set("TraceId", js.undefined)
+    def setUsers(value: MapOfEndpointSendConfiguration): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
   }
 }

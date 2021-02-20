@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartWorkspacesResult extends js.Object {
+trait StartWorkspacesResult extends StObject {
   
   /**
     * Information about the WorkSpaces that could not be started.
@@ -21,27 +22,15 @@ object StartWorkspacesResult {
   }
   
   @scala.inline
-  implicit class StartWorkspacesResultOps[Self <: StartWorkspacesResult] (val x: Self) extends AnyVal {
+  implicit class StartWorkspacesResultMutableBuilder[Self <: StartWorkspacesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailedRequests(value: FailedStartWorkspaceRequests): Self = StObject.set(x, "FailedRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedRequestsUndefined: Self = StObject.set(x, "FailedRequests", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFailedRequestsVarargs(value: FailedWorkspaceChangeRequest*): Self = this.set("FailedRequests", js.Array(value :_*))
-    
-    @scala.inline
-    def setFailedRequests(value: FailedStartWorkspaceRequests): Self = this.set("FailedRequests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailedRequests: Self = this.set("FailedRequests", js.undefined)
+    def setFailedRequestsVarargs(value: FailedWorkspaceChangeRequest*): Self = StObject.set(x, "FailedRequests", js.Array(value :_*))
   }
 }

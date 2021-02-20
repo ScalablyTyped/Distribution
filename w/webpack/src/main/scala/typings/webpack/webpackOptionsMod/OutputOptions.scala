@@ -22,12 +22,13 @@ import typings.webpack.webpackStrings.textSlashjavascript
 import typings.webpack.webpackStrings.umd
 import typings.webpack.webpackStrings.umd2
 import typings.webpack.webpackStrings.window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutputOptions extends js.Object {
+trait OutputOptions extends StObject {
   
   /**
   	 * Add a comment in the UMD wrapper.
@@ -202,220 +203,208 @@ object OutputOptions {
   }
   
   @scala.inline
-  implicit class OutputOptionsOps[Self <: OutputOptions] (val x: Self) extends AnyVal {
+  implicit class OutputOptionsMutableBuilder[Self <: OutputOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuxiliaryComment(value: String | Amd): Self = StObject.set(x, "auxiliaryComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuxiliaryCommentUndefined: Self = StObject.set(x, "auxiliaryComment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChunkCallbackName(value: String): Self = StObject.set(x, "chunkCallbackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuxiliaryComment(value: String | Amd): Self = this.set("auxiliaryComment", value.asInstanceOf[js.Any])
+    def setChunkCallbackNameUndefined: Self = StObject.set(x, "chunkCallbackName", js.undefined)
     
     @scala.inline
-    def deleteAuxiliaryComment: Self = this.set("auxiliaryComment", js.undefined)
+    def setChunkFilename(value: String): Self = StObject.set(x, "chunkFilename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunkCallbackName(value: String): Self = this.set("chunkCallbackName", value.asInstanceOf[js.Any])
+    def setChunkFilenameUndefined: Self = StObject.set(x, "chunkFilename", js.undefined)
     
     @scala.inline
-    def deleteChunkCallbackName: Self = this.set("chunkCallbackName", js.undefined)
+    def setChunkLoadTimeout(value: Double): Self = StObject.set(x, "chunkLoadTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunkFilename(value: String): Self = this.set("chunkFilename", value.asInstanceOf[js.Any])
+    def setChunkLoadTimeoutUndefined: Self = StObject.set(x, "chunkLoadTimeout", js.undefined)
     
     @scala.inline
-    def deleteChunkFilename: Self = this.set("chunkFilename", js.undefined)
+    def setCrossOriginLoading(value: `false` | anonymous | `use-credentials`): Self = StObject.set(x, "crossOriginLoading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunkLoadTimeout(value: Double): Self = this.set("chunkLoadTimeout", value.asInstanceOf[js.Any])
+    def setCrossOriginLoadingUndefined: Self = StObject.set(x, "crossOriginLoading", js.undefined)
     
     @scala.inline
-    def deleteChunkLoadTimeout: Self = this.set("chunkLoadTimeout", js.undefined)
+    def setDevtoolFallbackModuleFilenameTemplate(value: String | js.Function): Self = StObject.set(x, "devtoolFallbackModuleFilenameTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossOriginLoading(value: `false` | anonymous | `use-credentials`): Self = this.set("crossOriginLoading", value.asInstanceOf[js.Any])
+    def setDevtoolFallbackModuleFilenameTemplateUndefined: Self = StObject.set(x, "devtoolFallbackModuleFilenameTemplate", js.undefined)
     
     @scala.inline
-    def deleteCrossOriginLoading: Self = this.set("crossOriginLoading", js.undefined)
+    def setDevtoolLineToLine(value: Boolean | StringDictionary[js.Any]): Self = StObject.set(x, "devtoolLineToLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevtoolFallbackModuleFilenameTemplate(value: String | js.Function): Self = this.set("devtoolFallbackModuleFilenameTemplate", value.asInstanceOf[js.Any])
+    def setDevtoolLineToLineUndefined: Self = StObject.set(x, "devtoolLineToLine", js.undefined)
     
     @scala.inline
-    def deleteDevtoolFallbackModuleFilenameTemplate: Self = this.set("devtoolFallbackModuleFilenameTemplate", js.undefined)
+    def setDevtoolModuleFilenameTemplate(value: String | js.Function): Self = StObject.set(x, "devtoolModuleFilenameTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevtoolLineToLine(value: Boolean | StringDictionary[js.Any]): Self = this.set("devtoolLineToLine", value.asInstanceOf[js.Any])
+    def setDevtoolModuleFilenameTemplateUndefined: Self = StObject.set(x, "devtoolModuleFilenameTemplate", js.undefined)
     
     @scala.inline
-    def deleteDevtoolLineToLine: Self = this.set("devtoolLineToLine", js.undefined)
+    def setDevtoolNamespace(value: String): Self = StObject.set(x, "devtoolNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevtoolModuleFilenameTemplate(value: String | js.Function): Self = this.set("devtoolModuleFilenameTemplate", value.asInstanceOf[js.Any])
+    def setDevtoolNamespaceUndefined: Self = StObject.set(x, "devtoolNamespace", js.undefined)
     
     @scala.inline
-    def deleteDevtoolModuleFilenameTemplate: Self = this.set("devtoolModuleFilenameTemplate", js.undefined)
+    def setFilename(value: String | js.Function): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevtoolNamespace(value: String): Self = this.set("devtoolNamespace", value.asInstanceOf[js.Any])
+    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
     @scala.inline
-    def deleteDevtoolNamespace: Self = this.set("devtoolNamespace", js.undefined)
+    def setFutureEmitAssets(value: Boolean): Self = StObject.set(x, "futureEmitAssets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String | js.Function): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setFutureEmitAssetsUndefined: Self = StObject.set(x, "futureEmitAssets", js.undefined)
     
     @scala.inline
-    def deleteFilename: Self = this.set("filename", js.undefined)
+    def setGlobalObject(value: String): Self = StObject.set(x, "globalObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFutureEmitAssets(value: Boolean): Self = this.set("futureEmitAssets", value.asInstanceOf[js.Any])
+    def setGlobalObjectUndefined: Self = StObject.set(x, "globalObject", js.undefined)
     
     @scala.inline
-    def deleteFutureEmitAssets: Self = this.set("futureEmitAssets", js.undefined)
+    def setHashDigest(value: String): Self = StObject.set(x, "hashDigest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalObject(value: String): Self = this.set("globalObject", value.asInstanceOf[js.Any])
+    def setHashDigestLength(value: Double): Self = StObject.set(x, "hashDigestLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGlobalObject: Self = this.set("globalObject", js.undefined)
+    def setHashDigestLengthUndefined: Self = StObject.set(x, "hashDigestLength", js.undefined)
     
     @scala.inline
-    def setHashDigest(value: String): Self = this.set("hashDigest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHashDigest: Self = this.set("hashDigest", js.undefined)
-    
-    @scala.inline
-    def setHashDigestLength(value: Double): Self = this.set("hashDigestLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHashDigestLength: Self = this.set("hashDigestLength", js.undefined)
+    def setHashDigestUndefined: Self = StObject.set(x, "hashDigest", js.undefined)
     
     @scala.inline
     def setHashFunction(
       value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_createHash.HashConstructor */ js.Any)
-    ): Self = this.set("hashFunction", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "hashFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHashFunction: Self = this.set("hashFunction", js.undefined)
+    def setHashFunctionUndefined: Self = StObject.set(x, "hashFunction", js.undefined)
     
     @scala.inline
-    def setHashSalt(value: String): Self = this.set("hashSalt", value.asInstanceOf[js.Any])
+    def setHashSalt(value: String): Self = StObject.set(x, "hashSalt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHashSalt: Self = this.set("hashSalt", js.undefined)
+    def setHashSaltUndefined: Self = StObject.set(x, "hashSalt", js.undefined)
     
     @scala.inline
-    def setHotUpdateChunkFilename(value: String): Self = this.set("hotUpdateChunkFilename", value.asInstanceOf[js.Any])
+    def setHotUpdateChunkFilename(value: String): Self = StObject.set(x, "hotUpdateChunkFilename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHotUpdateChunkFilename: Self = this.set("hotUpdateChunkFilename", js.undefined)
+    def setHotUpdateChunkFilenameUndefined: Self = StObject.set(x, "hotUpdateChunkFilename", js.undefined)
     
     @scala.inline
-    def setHotUpdateFunction(value: String): Self = this.set("hotUpdateFunction", value.asInstanceOf[js.Any])
+    def setHotUpdateFunction(value: String): Self = StObject.set(x, "hotUpdateFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHotUpdateFunction: Self = this.set("hotUpdateFunction", js.undefined)
+    def setHotUpdateFunctionUndefined: Self = StObject.set(x, "hotUpdateFunction", js.undefined)
     
     @scala.inline
-    def setHotUpdateMainFilename(value: String | js.Function): Self = this.set("hotUpdateMainFilename", value.asInstanceOf[js.Any])
+    def setHotUpdateMainFilename(value: String | js.Function): Self = StObject.set(x, "hotUpdateMainFilename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHotUpdateMainFilename: Self = this.set("hotUpdateMainFilename", js.undefined)
+    def setHotUpdateMainFilenameUndefined: Self = StObject.set(x, "hotUpdateMainFilename", js.undefined)
     
     @scala.inline
-    def setJsonpFunction(value: String): Self = this.set("jsonpFunction", value.asInstanceOf[js.Any])
+    def setJsonpFunction(value: String): Self = StObject.set(x, "jsonpFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJsonpFunction: Self = this.set("jsonpFunction", js.undefined)
+    def setJsonpFunctionUndefined: Self = StObject.set(x, "jsonpFunction", js.undefined)
     
     @scala.inline
-    def setJsonpScriptType(value: `false` | textSlashjavascript | module): Self = this.set("jsonpScriptType", value.asInstanceOf[js.Any])
+    def setJsonpScriptType(value: `false` | textSlashjavascript | module): Self = StObject.set(x, "jsonpScriptType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteJsonpScriptType: Self = this.set("jsonpScriptType", js.undefined)
+    def setJsonpScriptTypeUndefined: Self = StObject.set(x, "jsonpScriptType", js.undefined)
     
     @scala.inline
-    def setLibraryVarargs(value: String*): Self = this.set("library", js.Array(value :_*))
+    def setLibrary(value: String | js.Array[String] | LibraryCustomUmdObject): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLibrary(value: String | js.Array[String] | LibraryCustomUmdObject): Self = this.set("library", value.asInstanceOf[js.Any])
+    def setLibraryExport(value: String | ArrayOfStringValues): Self = StObject.set(x, "libraryExport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLibrary: Self = this.set("library", js.undefined)
+    def setLibraryExportUndefined: Self = StObject.set(x, "libraryExport", js.undefined)
     
     @scala.inline
-    def setLibraryExportVarargs(value: String*): Self = this.set("libraryExport", js.Array(value :_*))
-    
-    @scala.inline
-    def setLibraryExport(value: String | ArrayOfStringValues): Self = this.set("libraryExport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLibraryExport: Self = this.set("libraryExport", js.undefined)
+    def setLibraryExportVarargs(value: String*): Self = StObject.set(x, "libraryExport", js.Array(value :_*))
     
     @scala.inline
     def setLibraryTarget(
       value: `var` | assign | `this` | window | self | global | commonjs | commonjs2 | `commonjs-module` | amd | `amd-require` | umd | umd2 | jsonp | system
-    ): Self = this.set("libraryTarget", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "libraryTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLibraryTarget: Self = this.set("libraryTarget", js.undefined)
+    def setLibraryTargetUndefined: Self = StObject.set(x, "libraryTarget", js.undefined)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setLibraryUndefined: Self = StObject.set(x, "library", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setLibraryVarargs(value: String*): Self = StObject.set(x, "library", js.Array(value :_*))
     
     @scala.inline
-    def setPathinfo(value: Boolean): Self = this.set("pathinfo", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePathinfo: Self = this.set("pathinfo", js.undefined)
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def setPublicPath(value: String | js.Function): Self = this.set("publicPath", value.asInstanceOf[js.Any])
+    def setPathinfo(value: Boolean): Self = StObject.set(x, "pathinfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePublicPath: Self = this.set("publicPath", js.undefined)
+    def setPathinfoUndefined: Self = StObject.set(x, "pathinfo", js.undefined)
     
     @scala.inline
-    def setSourceMapFilename(value: String): Self = this.set("sourceMapFilename", value.asInstanceOf[js.Any])
+    def setPublicPath(value: String | js.Function): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceMapFilename: Self = this.set("sourceMapFilename", js.undefined)
+    def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
     
     @scala.inline
-    def setSourcePrefix(value: String): Self = this.set("sourcePrefix", value.asInstanceOf[js.Any])
+    def setSourceMapFilename(value: String): Self = StObject.set(x, "sourceMapFilename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourcePrefix: Self = this.set("sourcePrefix", js.undefined)
+    def setSourceMapFilenameUndefined: Self = StObject.set(x, "sourceMapFilename", js.undefined)
     
     @scala.inline
-    def setStrictModuleExceptionHandling(value: Boolean): Self = this.set("strictModuleExceptionHandling", value.asInstanceOf[js.Any])
+    def setSourcePrefix(value: String): Self = StObject.set(x, "sourcePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStrictModuleExceptionHandling: Self = this.set("strictModuleExceptionHandling", js.undefined)
+    def setSourcePrefixUndefined: Self = StObject.set(x, "sourcePrefix", js.undefined)
     
     @scala.inline
-    def setUmdNamedDefine(value: Boolean): Self = this.set("umdNamedDefine", value.asInstanceOf[js.Any])
+    def setStrictModuleExceptionHandling(value: Boolean): Self = StObject.set(x, "strictModuleExceptionHandling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUmdNamedDefine: Self = this.set("umdNamedDefine", js.undefined)
+    def setStrictModuleExceptionHandlingUndefined: Self = StObject.set(x, "strictModuleExceptionHandling", js.undefined)
     
     @scala.inline
-    def setWebassemblyModuleFilename(value: String): Self = this.set("webassemblyModuleFilename", value.asInstanceOf[js.Any])
+    def setUmdNamedDefine(value: Boolean): Self = StObject.set(x, "umdNamedDefine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebassemblyModuleFilename: Self = this.set("webassemblyModuleFilename", js.undefined)
+    def setUmdNamedDefineUndefined: Self = StObject.set(x, "umdNamedDefine", js.undefined)
+    
+    @scala.inline
+    def setWebassemblyModuleFilename(value: String): Self = StObject.set(x, "webassemblyModuleFilename", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWebassemblyModuleFilenameUndefined: Self = StObject.set(x, "webassemblyModuleFilename", js.undefined)
   }
 }

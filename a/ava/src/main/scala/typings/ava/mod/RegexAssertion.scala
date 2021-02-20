@@ -1,12 +1,13 @@
 package typings.ava.mod
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegexAssertion extends js.Object {
+trait RegexAssertion extends StObject {
   
   /** Assert that `string` matches the regular expression. */
   def apply(string: String, regex: RegExp): Unit = js.native

@@ -1,17 +1,18 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CopyPasteType extends js.Object
+sealed trait CopyPasteType extends StObject
 /**
   * An enumeration of possible special paste types.
   */
 @JSGlobal("GoogleAppsScript.Spreadsheet.CopyPasteType")
 @js.native
-object CopyPasteType extends js.Object {
+object CopyPasteType extends StObject {
   
   @js.native
   sealed trait PASTE_COLUMN_WIDTHS extends CopyPasteType

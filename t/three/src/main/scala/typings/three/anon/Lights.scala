@@ -2,12 +2,13 @@ package typings.three.anon
 
 import typings.three.lightMod.Light
 import typings.three.webGLLightsMod.WebGLLights
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Lights extends js.Object {
+trait Lights extends StObject {
   
   var lights: WebGLLights = js.native
   
@@ -24,33 +25,21 @@ object Lights {
   }
   
   @scala.inline
-  implicit class LightsOps[Self <: Lights] (val x: Self) extends AnyVal {
+  implicit class LightsMutableBuilder[Self <: Lights] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLights(value: WebGLLights): Self = StObject.set(x, "lights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLightsArray(value: js.Array[Light]): Self = StObject.set(x, "lightsArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLightsArrayVarargs(value: Light*): Self = StObject.set(x, "lightsArray", js.Array(value :_*))
     
     @scala.inline
-    def setLights(value: WebGLLights): Self = this.set("lights", value.asInstanceOf[js.Any])
+    def setShadowsArray(value: js.Array[Light]): Self = StObject.set(x, "shadowsArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightsArrayVarargs(value: Light*): Self = this.set("lightsArray", js.Array(value :_*))
-    
-    @scala.inline
-    def setLightsArray(value: js.Array[Light]): Self = this.set("lightsArray", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShadowsArrayVarargs(value: Light*): Self = this.set("shadowsArray", js.Array(value :_*))
-    
-    @scala.inline
-    def setShadowsArray(value: js.Array[Light]): Self = this.set("shadowsArray", value.asInstanceOf[js.Any])
+    def setShadowsArrayVarargs(value: Light*): Self = StObject.set(x, "shadowsArray", js.Array(value :_*))
   }
 }

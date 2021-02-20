@@ -1,11 +1,12 @@
 package typings.luxon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Features extends js.Object {
+trait Features extends StObject {
   
   var intl: Boolean = js.native
   
@@ -24,30 +25,18 @@ object Features {
   }
   
   @scala.inline
-  implicit class FeaturesOps[Self <: Features] (val x: Self) extends AnyVal {
+  implicit class FeaturesMutableBuilder[Self <: Features] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIntl(value: Boolean): Self = StObject.set(x, "intl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntlTokens(value: Boolean): Self = StObject.set(x, "intlTokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntl(value: Boolean): Self = this.set("intl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIntlTokens(value: Boolean): Self = this.set("intlTokens", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelative(value: Boolean): Self = this.set("relative", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZones(value: Boolean): Self = this.set("zones", value.asInstanceOf[js.Any])
+    def setZones(value: Boolean): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
   }
 }

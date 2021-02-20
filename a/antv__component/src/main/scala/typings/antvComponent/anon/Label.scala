@@ -1,11 +1,12 @@
 package typings.antvComponent.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Label extends js.Object {
+trait Label extends StObject {
   
   var label: AutoHide = js.native
   
@@ -35,36 +36,24 @@ object Label {
   }
   
   @scala.inline
-  implicit class LabelOps[Self <: Label] (val x: Self) extends AnyVal {
+  implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabel(value: AutoHide): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLine(value: StyleStroke): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubTickLine(value: Count): Self = StObject.set(x, "subTickLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: AutoHide): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setTickLine(value: AlignTick): Self = StObject.set(x, "tickLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: StyleStroke): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setTickStates(value: Active): Self = StObject.set(x, "tickStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubTickLine(value: Count): Self = this.set("subTickLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTickLine(value: AlignTick): Self = this.set("tickLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTickStates(value: Active): Self = this.set("tickStates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: Position): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: Position): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

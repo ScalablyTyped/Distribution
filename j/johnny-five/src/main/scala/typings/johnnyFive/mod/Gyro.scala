@@ -2,13 +2,14 @@ package typings.johnnyFive.mod
 
 import typings.johnnyFive.johnnyFiveStrings.change
 import typings.johnnyFive.johnnyFiveStrings.data
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("johnny-five", "Gyro")
 @js.native
-class Gyro protected () extends js.Object {
+class Gyro protected () extends StObject {
   def this(option: GyroAnalogOption) = this()
   def this(option: GyroGeneralOption) = this()
   def this(option: GyroMPU6050Option) = this()

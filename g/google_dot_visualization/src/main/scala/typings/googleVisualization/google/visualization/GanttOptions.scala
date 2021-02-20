@@ -1,12 +1,13 @@
 package typings.googleVisualization.google.visualization
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GanttOptions extends js.Object {
+trait GanttOptions extends StObject {
   
   var arrow: js.UndefOr[GanttArrow] = js.native
   
@@ -53,126 +54,114 @@ object GanttOptions {
   }
   
   @scala.inline
-  implicit class GanttOptionsOps[Self <: GanttOptions] (val x: Self) extends AnyVal {
+  implicit class GanttOptionsMutableBuilder[Self <: GanttOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrow(value: GanttArrow): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBarCornerRadius(value: Double): Self = StObject.set(x, "barCornerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrow(value: GanttArrow): Self = this.set("arrow", value.asInstanceOf[js.Any])
+    def setBarCornerRadiusUndefined: Self = StObject.set(x, "barCornerRadius", js.undefined)
     
     @scala.inline
-    def deleteArrow: Self = this.set("arrow", js.undefined)
+    def setBarHeight(value: Double): Self = StObject.set(x, "barHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarCornerRadius(value: Double): Self = this.set("barCornerRadius", value.asInstanceOf[js.Any])
+    def setBarHeightUndefined: Self = StObject.set(x, "barHeight", js.undefined)
     
     @scala.inline
-    def deleteBarCornerRadius: Self = this.set("barCornerRadius", js.undefined)
+    def setCriticalPathEnabled(value: Boolean): Self = StObject.set(x, "criticalPathEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarHeight(value: Double): Self = this.set("barHeight", value.asInstanceOf[js.Any])
+    def setCriticalPathEnabledUndefined: Self = StObject.set(x, "criticalPathEnabled", js.undefined)
     
     @scala.inline
-    def deleteBarHeight: Self = this.set("barHeight", js.undefined)
+    def setCriticalPathStyle(value: ChartStroke): Self = StObject.set(x, "criticalPathStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCriticalPathEnabled(value: Boolean): Self = this.set("criticalPathEnabled", value.asInstanceOf[js.Any])
+    def setCriticalPathStyleUndefined: Self = StObject.set(x, "criticalPathStyle", js.undefined)
     
     @scala.inline
-    def deleteCriticalPathEnabled: Self = this.set("criticalPathEnabled", js.undefined)
+    def setDefaultStartDate(value: Date | Double): Self = StObject.set(x, "defaultStartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCriticalPathStyle(value: ChartStroke): Self = this.set("criticalPathStyle", value.asInstanceOf[js.Any])
+    def setDefaultStartDateUndefined: Self = StObject.set(x, "defaultStartDate", js.undefined)
     
     @scala.inline
-    def deleteCriticalPathStyle: Self = this.set("criticalPathStyle", js.undefined)
+    def setInnerGridDarkTrack(value: ChartFill): Self = StObject.set(x, "innerGridDarkTrack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultStartDate(value: Date | Double): Self = this.set("defaultStartDate", value.asInstanceOf[js.Any])
+    def setInnerGridDarkTrackUndefined: Self = StObject.set(x, "innerGridDarkTrack", js.undefined)
     
     @scala.inline
-    def deleteDefaultStartDate: Self = this.set("defaultStartDate", js.undefined)
+    def setInnerGridHorizLine(value: ChartStroke): Self = StObject.set(x, "innerGridHorizLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerGridDarkTrack(value: ChartFill): Self = this.set("innerGridDarkTrack", value.asInstanceOf[js.Any])
+    def setInnerGridHorizLineUndefined: Self = StObject.set(x, "innerGridHorizLine", js.undefined)
     
     @scala.inline
-    def deleteInnerGridDarkTrack: Self = this.set("innerGridDarkTrack", js.undefined)
+    def setInnerGridTrack(value: ChartFill): Self = StObject.set(x, "innerGridTrack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerGridHorizLine(value: ChartStroke): Self = this.set("innerGridHorizLine", value.asInstanceOf[js.Any])
+    def setInnerGridTrackUndefined: Self = StObject.set(x, "innerGridTrack", js.undefined)
     
     @scala.inline
-    def deleteInnerGridHorizLine: Self = this.set("innerGridHorizLine", js.undefined)
+    def setLabelMaxWidth(value: Double): Self = StObject.set(x, "labelMaxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerGridTrack(value: ChartFill): Self = this.set("innerGridTrack", value.asInstanceOf[js.Any])
+    def setLabelMaxWidthUndefined: Self = StObject.set(x, "labelMaxWidth", js.undefined)
     
     @scala.inline
-    def deleteInnerGridTrack: Self = this.set("innerGridTrack", js.undefined)
+    def setLabelStyle(value: LabelStyle): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelMaxWidth(value: Double): Self = this.set("labelMaxWidth", value.asInstanceOf[js.Any])
+    def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
     @scala.inline
-    def deleteLabelMaxWidth: Self = this.set("labelMaxWidth", js.undefined)
+    def setPercentEnabled(value: Boolean): Self = StObject.set(x, "percentEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelStyle(value: LabelStyle): Self = this.set("labelStyle", value.asInstanceOf[js.Any])
+    def setPercentEnabledUndefined: Self = StObject.set(x, "percentEnabled", js.undefined)
     
     @scala.inline
-    def deleteLabelStyle: Self = this.set("labelStyle", js.undefined)
+    def setPercentStyle(value: ChartFill): Self = StObject.set(x, "percentStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentEnabled(value: Boolean): Self = this.set("percentEnabled", value.asInstanceOf[js.Any])
+    def setPercentStyleUndefined: Self = StObject.set(x, "percentStyle", js.undefined)
     
     @scala.inline
-    def deletePercentEnabled: Self = this.set("percentEnabled", js.undefined)
+    def setShadowEnabled(value: Boolean): Self = StObject.set(x, "shadowEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentStyle(value: ChartFill): Self = this.set("percentStyle", value.asInstanceOf[js.Any])
+    def setShadowEnabledUndefined: Self = StObject.set(x, "shadowEnabled", js.undefined)
     
     @scala.inline
-    def deletePercentStyle: Self = this.set("percentStyle", js.undefined)
+    def setShadowOffset(value: Double): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowEnabled(value: Boolean): Self = this.set("shadowEnabled", value.asInstanceOf[js.Any])
+    def setShadowOffsetUndefined: Self = StObject.set(x, "shadowOffset", js.undefined)
     
     @scala.inline
-    def deleteShadowEnabled: Self = this.set("shadowEnabled", js.undefined)
+    def setShadowStyle(value: ChartFill): Self = StObject.set(x, "shadowStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowOffset(value: Double): Self = this.set("shadowOffset", value.asInstanceOf[js.Any])
+    def setShadowStyleUndefined: Self = StObject.set(x, "shadowStyle", js.undefined)
     
     @scala.inline
-    def deleteShadowOffset: Self = this.set("shadowOffset", js.undefined)
+    def setSortTasks(value: Boolean): Self = StObject.set(x, "sortTasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowStyle(value: ChartFill): Self = this.set("shadowStyle", value.asInstanceOf[js.Any])
+    def setSortTasksUndefined: Self = StObject.set(x, "sortTasks", js.undefined)
     
     @scala.inline
-    def deleteShadowStyle: Self = this.set("shadowStyle", js.undefined)
+    def setTrackHeight(value: Double): Self = StObject.set(x, "trackHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortTasks(value: Boolean): Self = this.set("sortTasks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortTasks: Self = this.set("sortTasks", js.undefined)
-    
-    @scala.inline
-    def setTrackHeight(value: Double): Self = this.set("trackHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackHeight: Self = this.set("trackHeight", js.undefined)
+    def setTrackHeightUndefined: Self = StObject.set(x, "trackHeight", js.undefined)
   }
 }

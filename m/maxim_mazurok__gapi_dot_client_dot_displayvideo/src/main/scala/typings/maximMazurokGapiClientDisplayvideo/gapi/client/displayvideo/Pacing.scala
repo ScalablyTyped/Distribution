@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pacing extends js.Object {
+trait Pacing extends StObject {
   
   /** Maximum number of impressions to serve every day. Applicable when the budget is impression based. Must be greater than 0. */
   var dailyMaxImpressions: js.UndefOr[String] = js.native
@@ -37,42 +38,30 @@ object Pacing {
   }
   
   @scala.inline
-  implicit class PacingOps[Self <: Pacing] (val x: Self) extends AnyVal {
+  implicit class PacingMutableBuilder[Self <: Pacing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDailyMaxImpressions(value: String): Self = StObject.set(x, "dailyMaxImpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDailyMaxImpressionsUndefined: Self = StObject.set(x, "dailyMaxImpressions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDailyMaxMicros(value: String): Self = StObject.set(x, "dailyMaxMicros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDailyMaxImpressions(value: String): Self = this.set("dailyMaxImpressions", value.asInstanceOf[js.Any])
+    def setDailyMaxMicrosUndefined: Self = StObject.set(x, "dailyMaxMicros", js.undefined)
     
     @scala.inline
-    def deleteDailyMaxImpressions: Self = this.set("dailyMaxImpressions", js.undefined)
+    def setPacingPeriod(value: String): Self = StObject.set(x, "pacingPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDailyMaxMicros(value: String): Self = this.set("dailyMaxMicros", value.asInstanceOf[js.Any])
+    def setPacingPeriodUndefined: Self = StObject.set(x, "pacingPeriod", js.undefined)
     
     @scala.inline
-    def deleteDailyMaxMicros: Self = this.set("dailyMaxMicros", js.undefined)
+    def setPacingType(value: String): Self = StObject.set(x, "pacingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPacingPeriod(value: String): Self = this.set("pacingPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePacingPeriod: Self = this.set("pacingPeriod", js.undefined)
-    
-    @scala.inline
-    def setPacingType(value: String): Self = this.set("pacingType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePacingType: Self = this.set("pacingType", js.undefined)
+    def setPacingTypeUndefined: Self = StObject.set(x, "pacingType", js.undefined)
   }
 }

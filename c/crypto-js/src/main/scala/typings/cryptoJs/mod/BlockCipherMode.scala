@@ -1,5 +1,6 @@
 package typings.cryptoJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Abstract base block cipher mode template.
   */
 @js.native
-trait BlockCipherMode extends js.Object {
+trait BlockCipherMode extends StObject {
   
   var Decryptor: ModeStatic = js.native
   

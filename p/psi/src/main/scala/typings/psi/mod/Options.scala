@@ -2,12 +2,13 @@ package typings.psi.mod
 
 import typings.psi.psiStrings.desktop
 import typings.psi.psiStrings.mobile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   /**
     * When using this module for a production-level build process,
@@ -44,48 +45,36 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setNokey(value: String): Self = StObject.set(x, "nokey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setNokeyUndefined: Self = StObject.set(x, "nokey", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setStrategy(value: mobile | desktop): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNokey(value: String): Self = this.set("nokey", value.asInstanceOf[js.Any])
+    def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
     
     @scala.inline
-    def deleteNokey: Self = this.set("nokey", js.undefined)
+    def setTreshold(value: Double): Self = StObject.set(x, "treshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrategy(value: mobile | desktop): Self = this.set("strategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrategy: Self = this.set("strategy", js.undefined)
-    
-    @scala.inline
-    def setTreshold(value: Double): Self = this.set("treshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTreshold: Self = this.set("treshold", js.undefined)
+    def setTresholdUndefined: Self = StObject.set(x, "treshold", js.undefined)
   }
 }

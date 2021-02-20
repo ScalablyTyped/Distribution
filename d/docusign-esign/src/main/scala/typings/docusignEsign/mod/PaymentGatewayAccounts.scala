@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaymentGatewayAccounts extends js.Object {
+trait PaymentGatewayAccounts extends StObject {
   
   /**
     * When **true**, the sender can pass custom metadata about the payment to the payment gateway. You pass in this metadata on an EnvelopeRecipientTab, in the `customMetadata`
@@ -119,103 +120,85 @@ object PaymentGatewayAccounts {
   }
   
   @scala.inline
-  implicit class PaymentGatewayAccountsOps[Self <: PaymentGatewayAccounts] (val x: Self) extends AnyVal {
+  implicit class PaymentGatewayAccountsMutableBuilder[Self <: PaymentGatewayAccounts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowCustomMetadata(value: Boolean): Self = StObject.set(x, "allowCustomMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowCustomMetadataUndefined: Self = StObject.set(x, "allowCustomMetadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfig(value: PaymentGatewayAccountSetting): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowCustomMetadata(value: Boolean): Self = this.set("allowCustomMetadata", value.asInstanceOf[js.Any])
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def deleteAllowCustomMetadata: Self = this.set("allowCustomMetadata", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: PaymentGatewayAccountSetting): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setIsEnabled(value: String): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setIsLegacy(value: String): Self = StObject.set(x, "isLegacy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEnabled(value: String): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
+    def setIsLegacyUndefined: Self = StObject.set(x, "isLegacy", js.undefined)
     
     @scala.inline
-    def deleteIsEnabled: Self = this.set("isEnabled", js.undefined)
+    def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLegacy(value: String): Self = this.set("isLegacy", value.asInstanceOf[js.Any])
+    def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
     
     @scala.inline
-    def deleteIsLegacy: Self = this.set("isLegacy", js.undefined)
+    def setPayPalLegacySettings(value: PayPalLegacySettings): Self = StObject.set(x, "payPalLegacySettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModified(value: String): Self = this.set("lastModified", value.asInstanceOf[js.Any])
+    def setPayPalLegacySettingsUndefined: Self = StObject.set(x, "payPalLegacySettings", js.undefined)
     
     @scala.inline
-    def deleteLastModified: Self = this.set("lastModified", js.undefined)
+    def setPaymentGateway(value: String): Self = StObject.set(x, "paymentGateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayPalLegacySettings(value: PayPalLegacySettings): Self = this.set("payPalLegacySettings", value.asInstanceOf[js.Any])
+    def setPaymentGatewayAccountId(value: String): Self = StObject.set(x, "paymentGatewayAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePayPalLegacySettings: Self = this.set("payPalLegacySettings", js.undefined)
+    def setPaymentGatewayAccountIdUndefined: Self = StObject.set(x, "paymentGatewayAccountId", js.undefined)
     
     @scala.inline
-    def setPaymentGateway(value: String): Self = this.set("paymentGateway", value.asInstanceOf[js.Any])
+    def setPaymentGatewayDisplayName(value: String): Self = StObject.set(x, "paymentGatewayDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaymentGateway: Self = this.set("paymentGateway", js.undefined)
+    def setPaymentGatewayDisplayNameUndefined: Self = StObject.set(x, "paymentGatewayDisplayName", js.undefined)
     
     @scala.inline
-    def setPaymentGatewayAccountId(value: String): Self = this.set("paymentGatewayAccountId", value.asInstanceOf[js.Any])
+    def setPaymentGatewayUndefined: Self = StObject.set(x, "paymentGateway", js.undefined)
     
     @scala.inline
-    def deletePaymentGatewayAccountId: Self = this.set("paymentGatewayAccountId", js.undefined)
+    def setSupportedCurrencies(value: js.Array[String]): Self = StObject.set(x, "supportedCurrencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentGatewayDisplayName(value: String): Self = this.set("paymentGatewayDisplayName", value.asInstanceOf[js.Any])
+    def setSupportedCurrenciesUndefined: Self = StObject.set(x, "supportedCurrencies", js.undefined)
     
     @scala.inline
-    def deletePaymentGatewayDisplayName: Self = this.set("paymentGatewayDisplayName", js.undefined)
+    def setSupportedCurrenciesVarargs(value: String*): Self = StObject.set(x, "supportedCurrencies", js.Array(value :_*))
     
     @scala.inline
-    def setSupportedCurrenciesVarargs(value: String*): Self = this.set("supportedCurrencies", js.Array(value :_*))
+    def setSupportedPaymentMethods(value: js.Array[String]): Self = StObject.set(x, "supportedPaymentMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedCurrencies(value: js.Array[String]): Self = this.set("supportedCurrencies", value.asInstanceOf[js.Any])
+    def setSupportedPaymentMethodsUndefined: Self = StObject.set(x, "supportedPaymentMethods", js.undefined)
     
     @scala.inline
-    def deleteSupportedCurrencies: Self = this.set("supportedCurrencies", js.undefined)
-    
-    @scala.inline
-    def setSupportedPaymentMethodsVarargs(value: String*): Self = this.set("supportedPaymentMethods", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportedPaymentMethods(value: js.Array[String]): Self = this.set("supportedPaymentMethods", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedPaymentMethods: Self = this.set("supportedPaymentMethods", js.undefined)
-    
-    @scala.inline
-    def setSupportedPaymentMethodsWithOptionsVarargs(
-      value: (/* This object contains information about a payment method that the gateway accepts and the payment options that are compatible with it.
-      */ PaymentMethodWithOptions)*
-    ): Self = this.set("supportedPaymentMethodsWithOptions", js.Array(value :_*))
+    def setSupportedPaymentMethodsVarargs(value: String*): Self = StObject.set(x, "supportedPaymentMethods", js.Array(value :_*))
     
     @scala.inline
     def setSupportedPaymentMethodsWithOptions(
@@ -223,9 +206,15 @@ object PaymentGatewayAccounts {
           /* This object contains information about a payment method that the gateway accepts and the payment options that are compatible with it.
       */ PaymentMethodWithOptions
         ]
-    ): Self = this.set("supportedPaymentMethodsWithOptions", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "supportedPaymentMethodsWithOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSupportedPaymentMethodsWithOptions: Self = this.set("supportedPaymentMethodsWithOptions", js.undefined)
+    def setSupportedPaymentMethodsWithOptionsUndefined: Self = StObject.set(x, "supportedPaymentMethodsWithOptions", js.undefined)
+    
+    @scala.inline
+    def setSupportedPaymentMethodsWithOptionsVarargs(
+      value: (/* This object contains information about a payment method that the gateway accepts and the payment options that are compatible with it.
+      */ PaymentMethodWithOptions)*
+    ): Self = StObject.set(x, "supportedPaymentMethodsWithOptions", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * region, and a list of places that match the query.
   */
 @js.native
-trait SearchResponse extends js.Object {
+trait SearchResponse extends StObject {
   
   /**
     * The region that encloses the places included in the search results.
@@ -35,30 +36,18 @@ object SearchResponse {
   }
   
   @scala.inline
-  implicit class SearchResponseOps[Self <: SearchResponse] (val x: Self) extends AnyVal {
+  implicit class SearchResponseMutableBuilder[Self <: SearchResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundingRegion(value: CoordinateRegion): Self = StObject.set(x, "boundingRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlaces(value: js.Array[Place]): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlacesVarargs(value: Place*): Self = StObject.set(x, "places", js.Array(value :_*))
     
     @scala.inline
-    def setBoundingRegion(value: CoordinateRegion): Self = this.set("boundingRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlacesVarargs(value: Place*): Self = this.set("places", js.Array(value :_*))
-    
-    @scala.inline
-    def setPlaces(value: js.Array[Place]): Self = this.set("places", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

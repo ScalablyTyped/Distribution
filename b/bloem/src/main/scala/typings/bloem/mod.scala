@@ -2,20 +2,16 @@ package typings.bloem
 
 import typings.bloem.anon.Initialcapacity
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bloem", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def calculateSize(capacity: Double, error_rate: Double): Double = js.native
-  
-  def calculateSlices(size: Double, capacity: Double): Double = js.native
-  
+  @JSImport("bloem", "Bloem")
   @js.native
-  class Bloem protected () extends js.Object {
+  class Bloem protected () extends StObject {
     def this(size: Double, slices: Double, buffer: Buffer) = this()
     
     def add(key: Buffer): Unit = js.native
@@ -23,8 +19,9 @@ object mod extends js.Object {
     def has(key: Buffer): Boolean = js.native
   }
   
+  @JSImport("bloem", "SafeBloem")
   @js.native
-  class SafeBloem protected () extends js.Object {
+  class SafeBloem protected () extends StObject {
     def this(capacity: Double, error_rate: Double, buffer: Buffer) = this()
     
     def add(key: Buffer): Boolean = js.native
@@ -32,8 +29,9 @@ object mod extends js.Object {
     def has(key: Buffer): Boolean = js.native
   }
   
+  @JSImport("bloem", "ScalingBloem")
   @js.native
-  class ScalingBloem protected () extends js.Object {
+  class ScalingBloem protected () extends StObject {
     def this(error_rate: Double) = this()
     def this(error_rate: Double, options: Initialcapacity) = this()
     
@@ -41,4 +39,12 @@ object mod extends js.Object {
     
     def has(key: Buffer): Boolean = js.native
   }
+  
+  @JSImport("bloem", "calculateSize")
+  @js.native
+  def calculateSize(capacity: Double, error_rate: Double): Double = js.native
+  
+  @JSImport("bloem", "calculateSlices")
+  @js.native
+  def calculateSlices(size: Double, capacity: Double): Double = js.native
 }

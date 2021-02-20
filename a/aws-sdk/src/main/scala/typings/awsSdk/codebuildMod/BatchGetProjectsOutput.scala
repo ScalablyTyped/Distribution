@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetProjectsOutput extends js.Object {
+trait BatchGetProjectsOutput extends StObject {
   
   /**
     * Information about the requested build projects.
@@ -26,36 +27,24 @@ object BatchGetProjectsOutput {
   }
   
   @scala.inline
-  implicit class BatchGetProjectsOutputOps[Self <: BatchGetProjectsOutput] (val x: Self) extends AnyVal {
+  implicit class BatchGetProjectsOutputMutableBuilder[Self <: BatchGetProjectsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProjects(value: Projects): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProjectsNotFound(value: ProjectNames): Self = StObject.set(x, "projectsNotFound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProjectsNotFoundUndefined: Self = StObject.set(x, "projectsNotFound", js.undefined)
     
     @scala.inline
-    def setProjectsVarargs(value: Project*): Self = this.set("projects", js.Array(value :_*))
+    def setProjectsNotFoundVarargs(value: NonEmptyString*): Self = StObject.set(x, "projectsNotFound", js.Array(value :_*))
     
     @scala.inline
-    def setProjects(value: Projects): Self = this.set("projects", value.asInstanceOf[js.Any])
+    def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
     
     @scala.inline
-    def deleteProjects: Self = this.set("projects", js.undefined)
-    
-    @scala.inline
-    def setProjectsNotFoundVarargs(value: NonEmptyString*): Self = this.set("projectsNotFound", js.Array(value :_*))
-    
-    @scala.inline
-    def setProjectsNotFound(value: ProjectNames): Self = this.set("projectsNotFound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectsNotFound: Self = this.set("projectsNotFound", js.undefined)
+    def setProjectsVarargs(value: Project*): Self = StObject.set(x, "projects", js.Array(value :_*))
   }
 }

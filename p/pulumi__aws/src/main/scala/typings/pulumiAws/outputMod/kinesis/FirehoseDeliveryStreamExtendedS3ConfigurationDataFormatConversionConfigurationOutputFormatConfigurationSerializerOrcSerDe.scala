@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.kinesis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe extends js.Object {
+trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe extends StObject {
   
   /**
     * The Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Kinesis Data Firehose uses this value for padding calculations.
@@ -66,81 +67,69 @@ object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigur
   }
   
   @scala.inline
-  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDeOps[Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe] (val x: Self) extends AnyVal {
+  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDeMutableBuilder[Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockSizeBytes(value: Double): Self = StObject.set(x, "blockSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockSizeBytesUndefined: Self = StObject.set(x, "blockSizeBytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBloomFilterColumns(value: js.Array[String]): Self = StObject.set(x, "bloomFilterColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockSizeBytes(value: Double): Self = this.set("blockSizeBytes", value.asInstanceOf[js.Any])
+    def setBloomFilterColumnsUndefined: Self = StObject.set(x, "bloomFilterColumns", js.undefined)
     
     @scala.inline
-    def deleteBlockSizeBytes: Self = this.set("blockSizeBytes", js.undefined)
+    def setBloomFilterColumnsVarargs(value: String*): Self = StObject.set(x, "bloomFilterColumns", js.Array(value :_*))
     
     @scala.inline
-    def setBloomFilterColumnsVarargs(value: String*): Self = this.set("bloomFilterColumns", js.Array(value :_*))
+    def setBloomFilterFalsePositiveProbability(value: Double): Self = StObject.set(x, "bloomFilterFalsePositiveProbability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBloomFilterColumns(value: js.Array[String]): Self = this.set("bloomFilterColumns", value.asInstanceOf[js.Any])
+    def setBloomFilterFalsePositiveProbabilityUndefined: Self = StObject.set(x, "bloomFilterFalsePositiveProbability", js.undefined)
     
     @scala.inline
-    def deleteBloomFilterColumns: Self = this.set("bloomFilterColumns", js.undefined)
+    def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBloomFilterFalsePositiveProbability(value: Double): Self = this.set("bloomFilterFalsePositiveProbability", value.asInstanceOf[js.Any])
+    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
     @scala.inline
-    def deleteBloomFilterFalsePositiveProbability: Self = this.set("bloomFilterFalsePositiveProbability", js.undefined)
+    def setDictionaryKeyThreshold(value: Double): Self = StObject.set(x, "dictionaryKeyThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompression(value: String): Self = this.set("compression", value.asInstanceOf[js.Any])
+    def setDictionaryKeyThresholdUndefined: Self = StObject.set(x, "dictionaryKeyThreshold", js.undefined)
     
     @scala.inline
-    def deleteCompression: Self = this.set("compression", js.undefined)
+    def setEnablePadding(value: Boolean): Self = StObject.set(x, "enablePadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDictionaryKeyThreshold(value: Double): Self = this.set("dictionaryKeyThreshold", value.asInstanceOf[js.Any])
+    def setEnablePaddingUndefined: Self = StObject.set(x, "enablePadding", js.undefined)
     
     @scala.inline
-    def deleteDictionaryKeyThreshold: Self = this.set("dictionaryKeyThreshold", js.undefined)
+    def setFormatVersion(value: String): Self = StObject.set(x, "formatVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablePadding(value: Boolean): Self = this.set("enablePadding", value.asInstanceOf[js.Any])
+    def setFormatVersionUndefined: Self = StObject.set(x, "formatVersion", js.undefined)
     
     @scala.inline
-    def deleteEnablePadding: Self = this.set("enablePadding", js.undefined)
+    def setPaddingTolerance(value: Double): Self = StObject.set(x, "paddingTolerance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatVersion(value: String): Self = this.set("formatVersion", value.asInstanceOf[js.Any])
+    def setPaddingToleranceUndefined: Self = StObject.set(x, "paddingTolerance", js.undefined)
     
     @scala.inline
-    def deleteFormatVersion: Self = this.set("formatVersion", js.undefined)
+    def setRowIndexStride(value: Double): Self = StObject.set(x, "rowIndexStride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingTolerance(value: Double): Self = this.set("paddingTolerance", value.asInstanceOf[js.Any])
+    def setRowIndexStrideUndefined: Self = StObject.set(x, "rowIndexStride", js.undefined)
     
     @scala.inline
-    def deletePaddingTolerance: Self = this.set("paddingTolerance", js.undefined)
+    def setStripeSizeBytes(value: Double): Self = StObject.set(x, "stripeSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowIndexStride(value: Double): Self = this.set("rowIndexStride", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowIndexStride: Self = this.set("rowIndexStride", js.undefined)
-    
-    @scala.inline
-    def setStripeSizeBytes(value: Double): Self = this.set("stripeSizeBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStripeSizeBytes: Self = this.set("stripeSizeBytes", js.undefined)
+    def setStripeSizeBytesUndefined: Self = StObject.set(x, "stripeSizeBytes", js.undefined)
   }
 }

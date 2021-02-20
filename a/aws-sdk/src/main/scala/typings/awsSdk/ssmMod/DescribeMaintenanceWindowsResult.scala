@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeMaintenanceWindowsResult extends js.Object {
+trait DescribeMaintenanceWindowsResult extends StObject {
   
   /**
     * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
@@ -26,33 +27,21 @@ object DescribeMaintenanceWindowsResult {
   }
   
   @scala.inline
-  implicit class DescribeMaintenanceWindowsResultOps[Self <: DescribeMaintenanceWindowsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeMaintenanceWindowsResultMutableBuilder[Self <: DescribeMaintenanceWindowsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWindowIdentities(value: MaintenanceWindowIdentityList): Self = StObject.set(x, "WindowIdentities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setWindowIdentitiesUndefined: Self = StObject.set(x, "WindowIdentities", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setWindowIdentitiesVarargs(value: MaintenanceWindowIdentity*): Self = this.set("WindowIdentities", js.Array(value :_*))
-    
-    @scala.inline
-    def setWindowIdentities(value: MaintenanceWindowIdentityList): Self = this.set("WindowIdentities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowIdentities: Self = this.set("WindowIdentities", js.undefined)
+    def setWindowIdentitiesVarargs(value: MaintenanceWindowIdentity*): Self = StObject.set(x, "WindowIdentities", js.Array(value :_*))
   }
 }

@@ -2,12 +2,13 @@ package typings.reactNativeGestureHandler.mod
 
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainedTouchableProperties extends js.Object {
+trait ContainedTouchableProperties extends StObject {
   
   var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
 }
@@ -20,27 +21,15 @@ object ContainedTouchableProperties {
   }
   
   @scala.inline
-  implicit class ContainedTouchablePropertiesOps[Self <: ContainedTouchableProperties] (val x: Self) extends AnyVal {
+  implicit class ContainedTouchablePropertiesMutableBuilder[Self <: ContainedTouchableProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
-    
-    @scala.inline
-    def setContainerStyleNull: Self = this.set("containerStyle", null)
+    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
   }
 }

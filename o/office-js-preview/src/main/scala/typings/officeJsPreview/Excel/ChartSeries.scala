@@ -38,6 +38,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.Values
 import typings.officeJsPreview.officeJsPreviewStrings.X
 import typings.officeJsPreview.officeJsPreviewStrings.XValues
 import typings.officeJsPreview.officeJsPreviewStrings.YValues
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

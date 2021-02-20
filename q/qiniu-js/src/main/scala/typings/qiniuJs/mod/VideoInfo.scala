@@ -1,12 +1,13 @@
 package typings.qiniuJs.mod
 
 import typings.qiniuJs.anon.Dictkey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoInfo extends js.Object {
+trait VideoInfo extends StObject {
   
   var bit_rate: String = js.native
   
@@ -60,60 +61,48 @@ object VideoInfo {
   }
   
   @scala.inline
-  implicit class VideoInfoOps[Self <: VideoInfo] (val x: Self) extends AnyVal {
+  implicit class VideoInfoMutableBuilder[Self <: VideoInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBit_rate(value: String): Self = StObject.set(x, "bit_rate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodec_name(value: String): Self = StObject.set(x, "codec_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodec_type(value: String): Self = StObject.set(x, "codec_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBit_rate(value: String): Self = this.set("bit_rate", value.asInstanceOf[js.Any])
+    def setDisplay_aspect_ratio(value: String): Self = StObject.set(x, "display_aspect_ratio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodec_name(value: String): Self = this.set("codec_name", value.asInstanceOf[js.Any])
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodec_type(value: String): Self = this.set("codec_type", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay_aspect_ratio(value: String): Self = this.set("display_aspect_ratio", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setNb_frames(value: String): Self = StObject.set(x, "nb_frames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setPix_fmt(value: String): Self = StObject.set(x, "pix_fmt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setR_frame_rate(value: String): Self = StObject.set(x, "r_frame_rate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNb_frames(value: String): Self = this.set("nb_frames", value.asInstanceOf[js.Any])
+    def setSample_aspect_ratio(value: String): Self = StObject.set(x, "sample_aspect_ratio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPix_fmt(value: String): Self = this.set("pix_fmt", value.asInstanceOf[js.Any])
+    def setStart_time(value: String): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setR_frame_rate(value: String): Self = this.set("r_frame_rate", value.asInstanceOf[js.Any])
+    def setTags(value: Dictkey): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSample_aspect_ratio(value: String): Self = this.set("sample_aspect_ratio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart_time(value: String): Self = this.set("start_time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTags(value: Dictkey): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

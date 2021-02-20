@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,75 +71,63 @@ object RelatedArtifact {
   }
   
   @scala.inline
-  implicit class RelatedArtifactOps[Self <: RelatedArtifact] (val x: Self) extends AnyVal {
+  implicit class RelatedArtifactMutableBuilder[Self <: RelatedArtifact] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCitation(value: String): Self = StObject.set(x, "citation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCitationUndefined: Self = StObject.set(x, "citation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def set_citation(value: Element): Self = this.set("_citation", value.asInstanceOf[js.Any])
+    def setDocument(value: Attachment): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_citation: Self = this.set("_citation", js.undefined)
+    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
     @scala.inline
-    def set_display(value: Element): Self = this.set("_display", value.asInstanceOf[js.Any])
+    def setResource(value: Reference): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_display: Self = this.set("_display", js.undefined)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     @scala.inline
-    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_type: Self = this.set("_type", js.undefined)
+    def setUrl(value: uri): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_url(value: Element): Self = this.set("_url", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def delete_url: Self = this.set("_url", js.undefined)
+    def set_citation(value: Element): Self = StObject.set(x, "_citation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCitation(value: String): Self = this.set("citation", value.asInstanceOf[js.Any])
+    def set_citationUndefined: Self = StObject.set(x, "_citation", js.undefined)
     
     @scala.inline
-    def deleteCitation: Self = this.set("citation", js.undefined)
+    def set_display(value: Element): Self = StObject.set(x, "_display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay(value: String): Self = this.set("display", value.asInstanceOf[js.Any])
+    def set_displayUndefined: Self = StObject.set(x, "_display", js.undefined)
     
     @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument(value: Attachment): Self = this.set("document", value.asInstanceOf[js.Any])
+    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
     
     @scala.inline
-    def deleteDocument: Self = this.set("document", js.undefined)
+    def set_url(value: Element): Self = StObject.set(x, "_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: Reference): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: uri): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
   }
 }

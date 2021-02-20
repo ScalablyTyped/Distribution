@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListRoutingProfileQueuesResponse extends js.Object {
+trait ListRoutingProfileQueuesResponse extends StObject {
   
   /**
     * If there are additional results, this is the token for the next set of results.
@@ -26,33 +27,21 @@ object ListRoutingProfileQueuesResponse {
   }
   
   @scala.inline
-  implicit class ListRoutingProfileQueuesResponseOps[Self <: ListRoutingProfileQueuesResponse] (val x: Self) extends AnyVal {
+  implicit class ListRoutingProfileQueuesResponseMutableBuilder[Self <: ListRoutingProfileQueuesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoutingProfileQueueConfigSummaryList(value: RoutingProfileQueueConfigSummaryList): Self = StObject.set(x, "RoutingProfileQueueConfigSummaryList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setRoutingProfileQueueConfigSummaryListUndefined: Self = StObject.set(x, "RoutingProfileQueueConfigSummaryList", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setRoutingProfileQueueConfigSummaryListVarargs(value: RoutingProfileQueueConfigSummary*): Self = this.set("RoutingProfileQueueConfigSummaryList", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoutingProfileQueueConfigSummaryList(value: RoutingProfileQueueConfigSummaryList): Self = this.set("RoutingProfileQueueConfigSummaryList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoutingProfileQueueConfigSummaryList: Self = this.set("RoutingProfileQueueConfigSummaryList", js.undefined)
+    def setRoutingProfileQueueConfigSummaryListVarargs(value: RoutingProfileQueueConfigSummary*): Self = StObject.set(x, "RoutingProfileQueueConfigSummaryList", js.Array(value :_*))
   }
 }

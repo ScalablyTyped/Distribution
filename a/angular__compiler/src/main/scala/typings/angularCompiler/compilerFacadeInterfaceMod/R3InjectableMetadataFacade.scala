@@ -1,11 +1,12 @@
 package typings.angularCompiler.compilerFacadeInterfaceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait R3InjectableMetadataFacade extends js.Object {
+trait R3InjectableMetadataFacade extends StObject {
   
   var name: String = js.native
   
@@ -35,63 +36,51 @@ object R3InjectableMetadataFacade {
   }
   
   @scala.inline
-  implicit class R3InjectableMetadataFacadeOps[Self <: R3InjectableMetadataFacade] (val x: Self) extends AnyVal {
+  implicit class R3InjectableMetadataFacadeMutableBuilder[Self <: R3InjectableMetadataFacade] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProvidedIn(value: js.Any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTypeArgumentCount(value: Double): Self = StObject.set(x, "typeArgumentCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvidedIn(value: js.Any): Self = this.set("providedIn", value.asInstanceOf[js.Any])
+    def setUseClass(value: js.Any): Self = StObject.set(x, "useClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: js.Any): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUseClassUndefined: Self = StObject.set(x, "useClass", js.undefined)
     
     @scala.inline
-    def setTypeArgumentCount(value: Double): Self = this.set("typeArgumentCount", value.asInstanceOf[js.Any])
+    def setUseExisting(value: js.Any): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseClass(value: js.Any): Self = this.set("useClass", value.asInstanceOf[js.Any])
+    def setUseExistingUndefined: Self = StObject.set(x, "useExisting", js.undefined)
     
     @scala.inline
-    def deleteUseClass: Self = this.set("useClass", js.undefined)
+    def setUseFactory(value: js.Any): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseExisting(value: js.Any): Self = this.set("useExisting", value.asInstanceOf[js.Any])
+    def setUseFactoryUndefined: Self = StObject.set(x, "useFactory", js.undefined)
     
     @scala.inline
-    def deleteUseExisting: Self = this.set("useExisting", js.undefined)
+    def setUseValue(value: js.Any): Self = StObject.set(x, "useValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseFactory(value: js.Any): Self = this.set("useFactory", value.asInstanceOf[js.Any])
+    def setUseValueUndefined: Self = StObject.set(x, "useValue", js.undefined)
     
     @scala.inline
-    def deleteUseFactory: Self = this.set("useFactory", js.undefined)
+    def setUserDeps(value: js.Array[R3DependencyMetadataFacade]): Self = StObject.set(x, "userDeps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseValue(value: js.Any): Self = this.set("useValue", value.asInstanceOf[js.Any])
+    def setUserDepsUndefined: Self = StObject.set(x, "userDeps", js.undefined)
     
     @scala.inline
-    def deleteUseValue: Self = this.set("useValue", js.undefined)
-    
-    @scala.inline
-    def setUserDepsVarargs(value: R3DependencyMetadataFacade*): Self = this.set("userDeps", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserDeps(value: js.Array[R3DependencyMetadataFacade]): Self = this.set("userDeps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserDeps: Self = this.set("userDeps", js.undefined)
+    def setUserDepsVarargs(value: R3DependencyMetadataFacade*): Self = StObject.set(x, "userDeps", js.Array(value :_*))
   }
 }

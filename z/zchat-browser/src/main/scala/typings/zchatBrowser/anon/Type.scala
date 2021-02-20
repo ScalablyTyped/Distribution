@@ -4,6 +4,7 @@ import typings.zchatBrowser.mod.ChatEvent.Button
 import typings.zchatBrowser.mod.ChatEvent.ListItem
 import typings.zchatBrowser.mod.ChatEvent.StructuredMessage
 import typings.zchatBrowser.zchatBrowserStrings.LIST_TEMPLATE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,33 +28,21 @@ object Type {
   }
   
   @scala.inline
-  implicit class TypeOps[Self <: Type] (val x: Self) extends AnyVal {
+  implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtons(value: js.Array[Button]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonsVarargs(value: Button*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItems(value: js.Array[ListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonsVarargs(value: Button*): Self = this.set("buttons", js.Array(value :_*))
+    def setItemsVarargs(value: ListItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setButtons(value: js.Array[Button]): Self = this.set("buttons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemsVarargs(value: ListItem*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[ListItem]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: LIST_TEMPLATE): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: LIST_TEMPLATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

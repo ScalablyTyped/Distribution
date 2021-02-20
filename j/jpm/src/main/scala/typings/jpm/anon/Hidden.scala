@@ -2,12 +2,13 @@ package typings.jpm.anon
 
 import typings.jpm.toolbarMod.Toolbar
 import typings.jpm.toolbarMod.ToolbarItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hidden extends js.Object {
+trait Hidden extends StObject {
   
   var hidden: js.UndefOr[Boolean] = js.native
   
@@ -32,57 +33,45 @@ object Hidden {
   }
   
   @scala.inline
-  implicit class HiddenOps[Self <: Hidden] (val x: Self) extends AnyVal {
+  implicit class HiddenMutableBuilder[Self <: Hidden] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItems(value: js.Array[ToolbarItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: ToolbarItem*): Self = this.set("items", js.Array(value :_*))
+    def setItemsVarargs(value: ToolbarItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItems(value: js.Array[ToolbarItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setOnAttach(value: /* toolbar */ Toolbar => _): Self = StObject.set(x, "onAttach", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setOnAttachUndefined: Self = StObject.set(x, "onAttach", js.undefined)
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setOnDetach(value: /* toolbar */ Toolbar => _): Self = StObject.set(x, "onDetach", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setOnDetachUndefined: Self = StObject.set(x, "onDetach", js.undefined)
     
     @scala.inline
-    def setOnAttach(value: /* toolbar */ Toolbar => _): Self = this.set("onAttach", js.Any.fromFunction1(value))
+    def setOnHide(value: /* toolbar */ Toolbar => _): Self = StObject.set(x, "onHide", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnAttach: Self = this.set("onAttach", js.undefined)
+    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
     @scala.inline
-    def setOnDetach(value: /* toolbar */ Toolbar => _): Self = this.set("onDetach", js.Any.fromFunction1(value))
+    def setOnShow(value: /* toolbar */ Toolbar => _): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnDetach: Self = this.set("onDetach", js.undefined)
+    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
     @scala.inline
-    def setOnHide(value: /* toolbar */ Toolbar => _): Self = this.set("onHide", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnHide: Self = this.set("onHide", js.undefined)
-    
-    @scala.inline
-    def setOnShow(value: /* toolbar */ Toolbar => _): Self = this.set("onShow", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

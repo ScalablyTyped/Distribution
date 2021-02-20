@@ -1,5 +1,6 @@
 package typings.fancybox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.fancybox.fancyboxStrings.toggleControls
   - typings.fancybox.fancyboxStrings.zoom
 */
-trait FancyBoxInteractionTypes extends js.Object
+trait FancyBoxInteractionTypes extends StObject
 object FancyBoxInteractionTypes {
   
   @scala.inline

@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     sheet.updateChart(chart);
   */
 @js.native
-trait ContainerInfo extends js.Object {
+trait ContainerInfo extends StObject {
   
   def getAnchorColumn(): Integer = js.native
   
@@ -36,30 +37,18 @@ object ContainerInfo {
   }
   
   @scala.inline
-  implicit class ContainerInfoOps[Self <: ContainerInfo] (val x: Self) extends AnyVal {
+  implicit class ContainerInfoMutableBuilder[Self <: ContainerInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAnchorColumn(value: () => Integer): Self = StObject.set(x, "getAnchorColumn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAnchorRow(value: () => Integer): Self = StObject.set(x, "getAnchorRow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetOffsetX(value: () => Integer): Self = StObject.set(x, "getOffsetX", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAnchorColumn(value: () => Integer): Self = this.set("getAnchorColumn", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetAnchorRow(value: () => Integer): Self = this.set("getAnchorRow", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetOffsetX(value: () => Integer): Self = this.set("getOffsetX", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetOffsetY(value: () => Integer): Self = this.set("getOffsetY", js.Any.fromFunction0(value))
+    def setGetOffsetY(value: () => Integer): Self = StObject.set(x, "getOffsetY", js.Any.fromFunction0(value))
   }
 }

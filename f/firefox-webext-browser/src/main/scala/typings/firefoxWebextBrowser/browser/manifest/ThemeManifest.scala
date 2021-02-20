@@ -1,12 +1,13 @@
 package typings.firefoxWebextBrowser.browser.manifest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contents of manifest.json for a static theme */
 @js.native
-trait ThemeManifest extends js.Object {
+trait ThemeManifest extends StObject {
   
   var dark_theme: js.UndefOr[ThemeType] = js.native
   
@@ -27,45 +28,33 @@ object ThemeManifest {
   }
   
   @scala.inline
-  implicit class ThemeManifestOps[Self <: ThemeManifest] (val x: Self) extends AnyVal {
+  implicit class ThemeManifestMutableBuilder[Self <: ThemeManifest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDark_theme(value: ThemeType): Self = StObject.set(x, "dark_theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDark_themeUndefined: Self = StObject.set(x, "dark_theme", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefault_locale(value: String): Self = StObject.set(x, "default_locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: ThemeType): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setDefault_localeUndefined: Self = StObject.set(x, "default_locale", js.undefined)
     
     @scala.inline
-    def setDark_theme(value: ThemeType): Self = this.set("dark_theme", value.asInstanceOf[js.Any])
+    def setIcons(value: ThemeManifestIcons): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDark_theme: Self = this.set("dark_theme", js.undefined)
+    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def setDefault_locale(value: String): Self = this.set("default_locale", value.asInstanceOf[js.Any])
+    def setTheme(value: ThemeType): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefault_locale: Self = this.set("default_locale", js.undefined)
+    def setTheme_experiment(value: ThemeExperiment): Self = StObject.set(x, "theme_experiment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcons(value: ThemeManifestIcons): Self = this.set("icons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIcons: Self = this.set("icons", js.undefined)
-    
-    @scala.inline
-    def setTheme_experiment(value: ThemeExperiment): Self = this.set("theme_experiment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme_experiment: Self = this.set("theme_experiment", js.undefined)
+    def setTheme_experimentUndefined: Self = StObject.set(x, "theme_experiment", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.seleniumWebdriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Serializable[T] extends js.Object {
+trait Serializable[T] extends StObject {
   
   /**
     * Returns either this instance's serialized represention, if immediately
@@ -27,21 +28,9 @@ object Serializable {
   }
   
   @scala.inline
-  implicit class SerializableOps[Self <: Serializable[_], T] (val x: Self with Serializable[T]) extends AnyVal {
+  implicit class SerializableMutableBuilder[Self <: Serializable[_], T] (val x: Self with Serializable[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSerialize(value: () => T | js.Promise[T]): Self = this.set("serialize", js.Any.fromFunction0(value))
+    def setSerialize(value: () => T | js.Promise[T]): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
   }
 }

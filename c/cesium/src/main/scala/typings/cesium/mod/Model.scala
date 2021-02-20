@@ -2,13 +2,14 @@ package typings.cesium.mod
 
 import typings.cesium.anon.AllowPicking
 import typings.cesium.anon.Asynchronous
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Model")
 @js.native
-class Model () extends js.Object {
+class Model () extends StObject {
   def this(options: AllowPicking) = this()
   
   var activeAnimations: ModelAnimationCollection = js.native
@@ -95,12 +96,15 @@ class Model () extends js.Object {
   
   def update(): Unit = js.native
 }
-/* static members */
-@JSImport("cesium", "Model")
-@js.native
-object Model extends js.Object {
+object Model {
   
+  /* static member */
+  @JSImport("cesium", "Model.fromGltf")
+  @js.native
   def fromGltf(options: Asynchronous): Model = js.native
   
+  /* static member */
+  @JSImport("cesium", "Model.siluhouetteSupported")
+  @js.native
   def siluhouetteSupported(scene: Scene): Boolean = js.native
 }

@@ -7,6 +7,7 @@ import typings.hapi.hapiStrings.route
 import typings.hapi.hapiStrings.start
 import typings.hapi.hapiStrings.stop
 import typings.podium.mod.Podium
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

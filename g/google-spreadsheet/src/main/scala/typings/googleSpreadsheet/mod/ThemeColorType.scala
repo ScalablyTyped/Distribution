@@ -1,5 +1,6 @@
 package typings.googleSpreadsheet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleSpreadsheet.googleSpreadsheetStrings.ACCENT6
   - typings.googleSpreadsheet.googleSpreadsheetStrings.LINK
 */
-trait ThemeColorType extends js.Object
+trait ThemeColorType extends StObject
 object ThemeColorType {
   
   @scala.inline

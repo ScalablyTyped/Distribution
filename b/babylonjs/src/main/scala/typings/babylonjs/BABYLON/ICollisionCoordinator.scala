@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICollisionCoordinator extends js.Object {
+trait ICollisionCoordinator extends StObject {
   
   def createCollider(): Collider = js.native
   
@@ -44,22 +45,10 @@ object ICollisionCoordinator {
   }
   
   @scala.inline
-  implicit class ICollisionCoordinatorOps[Self <: ICollisionCoordinator] (val x: Self) extends AnyVal {
+  implicit class ICollisionCoordinatorMutableBuilder[Self <: ICollisionCoordinator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateCollider(value: () => Collider): Self = this.set("createCollider", js.Any.fromFunction0(value))
+    def setCreateCollider(value: () => Collider): Self = StObject.set(x, "createCollider", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetNewPosition(
@@ -69,9 +58,9 @@ object ICollisionCoordinator {
           /* collidedMesh */ Nullable[AbstractMesh], 
           Unit
         ], Double) => Unit
-    ): Self = this.set("getNewPosition", js.Any.fromFunction7(value))
+    ): Self = StObject.set(x, "getNewPosition", js.Any.fromFunction7(value))
     
     @scala.inline
-    def setInit(value: Scene => Unit): Self = this.set("init", js.Any.fromFunction1(value))
+    def setInit(value: Scene => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
   }
 }

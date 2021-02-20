@@ -2,6 +2,7 @@ package typings.muicss.reactMod
 
 import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,42 +27,30 @@ object RowProps {
   }
   
   @scala.inline
-  implicit class RowPropsOps[Self <: RowProps] (val x: Self) extends AnyVal {
+  implicit class RowPropsMutableBuilder[Self <: RowProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLg(value: Double): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMd(value: Double): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLg(value: Double): Self = this.set("lg", value.asInstanceOf[js.Any])
+    def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
     
     @scala.inline
-    def deleteLg: Self = this.set("lg", js.undefined)
+    def setSm(value: Double): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMd(value: Double): Self = this.set("md", value.asInstanceOf[js.Any])
+    def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
     
     @scala.inline
-    def deleteMd: Self = this.set("md", js.undefined)
+    def setXs(value: Double): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSm(value: Double): Self = this.set("sm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSm: Self = this.set("sm", js.undefined)
-    
-    @scala.inline
-    def setXs(value: Double): Self = this.set("xs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXs: Self = this.set("xs", js.undefined)
+    def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
   }
 }

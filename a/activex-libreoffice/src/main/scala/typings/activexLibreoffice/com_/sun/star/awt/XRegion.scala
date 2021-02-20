@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,60 +81,48 @@ object XRegion {
   }
   
   @scala.inline
-  implicit class XRegionOps[Self <: XRegion] (val x: Self) extends AnyVal {
+  implicit class XRegionMutableBuilder[Self <: XRegion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: Rectangle): Self = StObject.set(x, "Bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludeRectangle(value: Rectangle => Unit): Self = StObject.set(x, "excludeRectangle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBounds(value: Rectangle): Self = this.set("Bounds", value.asInstanceOf[js.Any])
+    def setExcludeRegion(value: XRegion => Unit): Self = StObject.set(x, "excludeRegion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRectangles(value: SafeArray[Rectangle]): Self = this.set("Rectangles", value.asInstanceOf[js.Any])
+    def setGetBounds(value: () => Rectangle): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setGetRectangles(value: () => SafeArray[Rectangle]): Self = StObject.set(x, "getRectangles", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExcludeRectangle(value: Rectangle => Unit): Self = this.set("excludeRectangle", js.Any.fromFunction1(value))
+    def setIntersectRectangle(value: Rectangle => Unit): Self = StObject.set(x, "intersectRectangle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExcludeRegion(value: XRegion => Unit): Self = this.set("excludeRegion", js.Any.fromFunction1(value))
+    def setIntersectRegion(value: XRegion => Unit): Self = StObject.set(x, "intersectRegion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetBounds(value: () => Rectangle): Self = this.set("getBounds", js.Any.fromFunction0(value))
+    def setMove(value: (Double, Double) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetRectangles(value: () => SafeArray[Rectangle]): Self = this.set("getRectangles", js.Any.fromFunction0(value))
+    def setRectangles(value: SafeArray[Rectangle]): Self = StObject.set(x, "Rectangles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntersectRectangle(value: Rectangle => Unit): Self = this.set("intersectRectangle", js.Any.fromFunction1(value))
+    def setUnionRectangle(value: Rectangle => Unit): Self = StObject.set(x, "unionRectangle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIntersectRegion(value: XRegion => Unit): Self = this.set("intersectRegion", js.Any.fromFunction1(value))
+    def setUnionRegion(value: XRegion => Unit): Self = StObject.set(x, "unionRegion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMove(value: (Double, Double) => Unit): Self = this.set("move", js.Any.fromFunction2(value))
+    def setXOrRectangle(value: Rectangle => Unit): Self = StObject.set(x, "xOrRectangle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUnionRectangle(value: Rectangle => Unit): Self = this.set("unionRectangle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnionRegion(value: XRegion => Unit): Self = this.set("unionRegion", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setXOrRectangle(value: Rectangle => Unit): Self = this.set("xOrRectangle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setXOrRegion(value: XRegion => Unit): Self = this.set("xOrRegion", js.Any.fromFunction1(value))
+    def setXOrRegion(value: XRegion => Unit): Self = StObject.set(x, "xOrRegion", js.Any.fromFunction1(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media.Protection.PlayReady
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Indicates the types of content that PlayReady can use in different scenarios. */
 @JSGlobal("Windows.Media.Protection.PlayReady.NDContentIDType")
 @js.native
-object NDContentIDType extends js.Object {
+object NDContentIDType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Protection.PlayReady.NDContentIDType with Double] = js.native

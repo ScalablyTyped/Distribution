@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteDomainRequest extends js.Object {
+trait DeleteDomainRequest extends StObject {
   
   /**
     * The domain ID.
@@ -26,27 +27,15 @@ object DeleteDomainRequest {
   }
   
   @scala.inline
-  implicit class DeleteDomainRequestOps[Self <: DeleteDomainRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteDomainRequestMutableBuilder[Self <: DeleteDomainRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRetentionPolicy(value: RetentionPolicy): Self = StObject.set(x, "RetentionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDomainId(value: DomainId): Self = this.set("DomainId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRetentionPolicy(value: RetentionPolicy): Self = this.set("RetentionPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetentionPolicy: Self = this.set("RetentionPolicy", js.undefined)
+    def setRetentionPolicyUndefined: Self = StObject.set(x, "RetentionPolicy", js.undefined)
   }
 }

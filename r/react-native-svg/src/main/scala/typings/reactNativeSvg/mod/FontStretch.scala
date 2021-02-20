@@ -1,5 +1,6 @@
 package typings.reactNativeSvg.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNativeSvg.reactNativeSvgStrings.`extra-expanded`
   - typings.reactNativeSvg.reactNativeSvgStrings.`ultra-expanded`
 */
-trait FontStretch extends js.Object
+trait FontStretch extends StObject
 object FontStretch {
   
   @scala.inline

@@ -7,12 +7,13 @@ import typings.cadesplugin.cadespluginNumbers.`3`
 import typings.cadesplugin.cadespluginNumbers.`4`
 import typings.cadesplugin.cadespluginNumbers.`5`
 import typings.cadesplugin.cadespluginNumbers.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CAPICOM_HASH_ALGORITHM extends js.Object {
+trait CAPICOM_HASH_ALGORITHM extends StObject {
   
   val CAPICOM_HASH_ALGORITHM_MD2: `1` = js.native
   
@@ -45,39 +46,27 @@ object CAPICOM_HASH_ALGORITHM {
   }
   
   @scala.inline
-  implicit class CAPICOM_HASH_ALGORITHMOps[Self <: CAPICOM_HASH_ALGORITHM] (val x: Self) extends AnyVal {
+  implicit class CAPICOM_HASH_ALGORITHMMutableBuilder[Self <: CAPICOM_HASH_ALGORITHM] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCAPICOM_HASH_ALGORITHM_MD2(value: `1`): Self = StObject.set(x, "CAPICOM_HASH_ALGORITHM_MD2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCAPICOM_HASH_ALGORITHM_MD4(value: `2`): Self = StObject.set(x, "CAPICOM_HASH_ALGORITHM_MD4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCAPICOM_HASH_ALGORITHM_MD5(value: `3`): Self = StObject.set(x, "CAPICOM_HASH_ALGORITHM_MD5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_HASH_ALGORITHM_MD2(value: `1`): Self = this.set("CAPICOM_HASH_ALGORITHM_MD2", value.asInstanceOf[js.Any])
+    def setCAPICOM_HASH_ALGORITHM_SHA1(value: `0`): Self = StObject.set(x, "CAPICOM_HASH_ALGORITHM_SHA1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_HASH_ALGORITHM_MD4(value: `2`): Self = this.set("CAPICOM_HASH_ALGORITHM_MD4", value.asInstanceOf[js.Any])
+    def setCAPICOM_HASH_ALGORITHM_SHA_256(value: `4`): Self = StObject.set(x, "CAPICOM_HASH_ALGORITHM_SHA_256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_HASH_ALGORITHM_MD5(value: `3`): Self = this.set("CAPICOM_HASH_ALGORITHM_MD5", value.asInstanceOf[js.Any])
+    def setCAPICOM_HASH_ALGORITHM_SHA_384(value: `5`): Self = StObject.set(x, "CAPICOM_HASH_ALGORITHM_SHA_384", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_HASH_ALGORITHM_SHA1(value: `0`): Self = this.set("CAPICOM_HASH_ALGORITHM_SHA1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_HASH_ALGORITHM_SHA_256(value: `4`): Self = this.set("CAPICOM_HASH_ALGORITHM_SHA_256", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_HASH_ALGORITHM_SHA_384(value: `5`): Self = this.set("CAPICOM_HASH_ALGORITHM_SHA_384", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_HASH_ALGORITHM_SHA_512(value: `6`): Self = this.set("CAPICOM_HASH_ALGORITHM_SHA_512", value.asInstanceOf[js.Any])
+    def setCAPICOM_HASH_ALGORITHM_SHA_512(value: `6`): Self = StObject.set(x, "CAPICOM_HASH_ALGORITHM_SHA_512", value.asInstanceOf[js.Any])
   }
 }

@@ -4,6 +4,7 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.click
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.gotFocus
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.lostFocus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

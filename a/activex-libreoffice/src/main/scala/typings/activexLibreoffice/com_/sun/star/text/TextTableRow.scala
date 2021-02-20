@@ -9,6 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.style.GraphicLocation
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -90,48 +91,36 @@ object TextTableRow {
   }
   
   @scala.inline
-  implicit class TextTableRowOps[Self <: TextTableRow] (val x: Self) extends AnyVal {
+  implicit class TextTableRowMutableBuilder[Self <: TextTableRow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackColor(value: Color): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackGraphicFilter(value: String): Self = StObject.set(x, "BackGraphicFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackGraphicLocation(value: GraphicLocation): Self = StObject.set(x, "BackGraphicLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackColor(value: Color): Self = this.set("BackColor", value.asInstanceOf[js.Any])
+    def setBackGraphicURL(value: String): Self = StObject.set(x, "BackGraphicURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackGraphicFilter(value: String): Self = this.set("BackGraphicFilter", value.asInstanceOf[js.Any])
+    def setBackTransparent(value: Boolean): Self = StObject.set(x, "BackTransparent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackGraphicLocation(value: GraphicLocation): Self = this.set("BackGraphicLocation", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackGraphicURL(value: String): Self = this.set("BackGraphicURL", value.asInstanceOf[js.Any])
+    def setIsAutoHeight(value: Boolean): Self = StObject.set(x, "IsAutoHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackTransparent(value: Boolean): Self = this.set("BackTransparent", value.asInstanceOf[js.Any])
+    def setIsSplitAllowed(value: Boolean): Self = StObject.set(x, "IsSplitAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setRowInteropGrabBag(value: SafeArray[PropertyValue]): Self = StObject.set(x, "RowInteropGrabBag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAutoHeight(value: Boolean): Self = this.set("IsAutoHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsSplitAllowed(value: Boolean): Self = this.set("IsSplitAllowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowInteropGrabBag(value: SafeArray[PropertyValue]): Self = this.set("RowInteropGrabBag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTableColumnSeparators(value: SafeArray[TableColumnSeparator]): Self = this.set("TableColumnSeparators", value.asInstanceOf[js.Any])
+    def setTableColumnSeparators(value: SafeArray[TableColumnSeparator]): Self = StObject.set(x, "TableColumnSeparators", value.asInstanceOf[js.Any])
   }
 }

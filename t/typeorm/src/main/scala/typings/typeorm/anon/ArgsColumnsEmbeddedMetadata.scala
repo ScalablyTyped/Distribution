@@ -2,12 +2,13 @@ package typings.typeorm.anon
 
 import typings.typeorm.metadataArgsIndexMetadataArgsMod.IndexMetadataArgs
 import typings.typeorm.metadataColumnMetadataMod.ColumnMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArgsColumnsEmbeddedMetadata extends js.Object {
+trait ArgsColumnsEmbeddedMetadata extends StObject {
   
   var args: js.UndefOr[IndexMetadataArgs] = js.native
   
@@ -26,42 +27,30 @@ object ArgsColumnsEmbeddedMetadata {
   }
   
   @scala.inline
-  implicit class ArgsColumnsEmbeddedMetadataOps[Self <: ArgsColumnsEmbeddedMetadata] (val x: Self) extends AnyVal {
+  implicit class ArgsColumnsEmbeddedMetadataMutableBuilder[Self <: ArgsColumnsEmbeddedMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: IndexMetadataArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumns(value: js.Array[ColumnMetadata]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityMetadata(value: typings.typeorm.metadataEntityMetadataMod.EntityMetadata): Self = this.set("entityMetadata", value.asInstanceOf[js.Any])
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def setArgs(value: IndexMetadataArgs): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setColumnsVarargs(value: ColumnMetadata*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
+    def setEmbeddedMetadata(value: typings.typeorm.metadataEmbeddedMetadataMod.EmbeddedMetadata): Self = StObject.set(x, "embeddedMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsVarargs(value: ColumnMetadata*): Self = this.set("columns", js.Array(value :_*))
+    def setEmbeddedMetadataUndefined: Self = StObject.set(x, "embeddedMetadata", js.undefined)
     
     @scala.inline
-    def setColumns(value: js.Array[ColumnMetadata]): Self = this.set("columns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
-    
-    @scala.inline
-    def setEmbeddedMetadata(value: typings.typeorm.metadataEmbeddedMetadataMod.EmbeddedMetadata): Self = this.set("embeddedMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmbeddedMetadata: Self = this.set("embeddedMetadata", js.undefined)
+    def setEntityMetadata(value: typings.typeorm.metadataEntityMetadataMod.EntityMetadata): Self = StObject.set(x, "entityMetadata", value.asInstanceOf[js.Any])
   }
 }

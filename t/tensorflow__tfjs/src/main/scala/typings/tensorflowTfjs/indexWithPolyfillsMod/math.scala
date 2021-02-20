@@ -3,14 +3,15 @@ package typings.tensorflowTfjs.indexWithPolyfillsMod
 import typings.tensorflowTfjsCore.distTensorMod.Tensor1D
 import typings.tensorflowTfjsCore.distTensorMod.Tensor2D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "math")
-@js.native
-object math extends js.Object {
+object math {
   
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "math.confusionMatrix")
+  @js.native
   val confusionMatrix: js.Function3[
     /* labels */ Tensor1D | TensorLike, 
     /* predictions */ Tensor1D | TensorLike, 

@@ -1,11 +1,12 @@
 package typings.dc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HtmlLegend extends js.Object {
+trait HtmlLegend extends StObject {
   
   def container(): String = js.native
   def container(t: String): HtmlLegend = js.native

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StreamMapping extends js.Object {
+trait StreamMapping extends StObject {
   
   /**
     * The resource name of the Firebase App associated with the Google Analytics data stream, in the format: projects/PROJECT_IDENTIFIER/androidApps/APP_ID or
@@ -35,36 +36,24 @@ object StreamMapping {
   }
   
   @scala.inline
-  implicit class StreamMappingOps[Self <: StreamMapping] (val x: Self) extends AnyVal {
+  implicit class StreamMappingMutableBuilder[Self <: StreamMapping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeasurementId(value: String): Self = StObject.set(x, "measurementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApp(value: String): Self = this.set("app", value.asInstanceOf[js.Any])
+    def setMeasurementIdUndefined: Self = StObject.set(x, "measurementId", js.undefined)
     
     @scala.inline
-    def deleteApp: Self = this.set("app", js.undefined)
+    def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasurementId(value: String): Self = this.set("measurementId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeasurementId: Self = this.set("measurementId", js.undefined)
-    
-    @scala.inline
-    def setStreamId(value: String): Self = this.set("streamId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamId: Self = this.set("streamId", js.undefined)
+    def setStreamIdUndefined: Self = StObject.set(x, "streamId", js.undefined)
   }
 }

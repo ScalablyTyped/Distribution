@@ -1,12 +1,13 @@
 package typings.sketchapp
 
 import typings.sketchapp.sketchappStrings.styleShadow
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchMSStyleShadow extends js.Object {
+trait SketchMSStyleShadow extends StObject {
   
   var _class: styleShadow = js.native
   
@@ -42,42 +43,30 @@ object SketchMSStyleShadow {
   }
   
   @scala.inline
-  implicit class SketchMSStyleShadowOps[Self <: SketchMSStyleShadow] (val x: Self) extends AnyVal {
+  implicit class SketchMSStyleShadowMutableBuilder[Self <: SketchMSStyleShadow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColor(value: SketchMSColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextSettings(value: SketchMSGraphicsContextSettings): Self = StObject.set(x, "contextSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_class(value: styleShadow): Self = this.set("_class", value.asInstanceOf[js.Any])
+    def setIsEnabled(value: Double): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlurRadius(value: Double): Self = this.set("blurRadius", value.asInstanceOf[js.Any])
+    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: SketchMSColor): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextSettings(value: SketchMSGraphicsContextSettings): Self = this.set("contextSettings", value.asInstanceOf[js.Any])
+    def setSpread(value: Double): Self = StObject.set(x, "spread", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEnabled(value: Double): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpread(value: Double): Self = this.set("spread", value.asInstanceOf[js.Any])
+    def set_class(value: styleShadow): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

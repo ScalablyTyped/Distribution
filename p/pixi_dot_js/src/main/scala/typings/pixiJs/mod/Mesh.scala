@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,10 +46,11 @@ class Mesh protected ()
     drawMode: Double
   ) = this()
 }
-/* static members */
-@JSImport("pixi.js", "Mesh")
-@js.native
-object Mesh extends js.Object {
+object Mesh {
+  
+  @JSImport("pixi.js", "Mesh")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The maximum number of vertices to consider batchable. Generally, the complexity
@@ -57,5 +59,10 @@ object Mesh extends js.Object {
     * @static
     * @member {number} BATCHABLE_SIZE
     */
-  var BATCHABLE_SIZE: Double = js.native
+  /* static member */
+  @JSImport("pixi.js", "Mesh.BATCHABLE_SIZE")
+  @js.native
+  def BATCHABLE_SIZE: Double = js.native
+  @scala.inline
+  def BATCHABLE_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BATCHABLE_SIZE")(x.asInstanceOf[js.Any])
 }

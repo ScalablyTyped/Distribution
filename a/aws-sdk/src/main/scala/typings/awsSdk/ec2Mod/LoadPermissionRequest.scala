@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadPermissionRequest extends js.Object {
+trait LoadPermissionRequest extends StObject {
   
   /**
     * The name of the group.
@@ -26,30 +27,18 @@ object LoadPermissionRequest {
   }
   
   @scala.inline
-  implicit class LoadPermissionRequestOps[Self <: LoadPermissionRequest] (val x: Self) extends AnyVal {
+  implicit class LoadPermissionRequestMutableBuilder[Self <: LoadPermissionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroup(value: PermissionGroup): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: PermissionGroup): Self = this.set("Group", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroup: Self = this.set("Group", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("UserId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("UserId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
   }
 }

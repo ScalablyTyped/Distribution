@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "DisputeEvidenceFile")
 @js.native
-class DisputeEvidenceFile () extends js.Object {
+class DisputeEvidenceFile () extends StObject {
   
   /**
     * The file name including the file extension. For example: \"receipt.tiff\".

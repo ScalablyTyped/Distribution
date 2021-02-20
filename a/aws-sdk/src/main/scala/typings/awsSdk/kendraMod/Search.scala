@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Search extends js.Object {
+trait Search extends StObject {
   
   /**
     * Determines whether the field is returned in the query response. The default is true.
@@ -36,42 +37,30 @@ object Search {
   }
   
   @scala.inline
-  implicit class SearchOps[Self <: Search] (val x: Self) extends AnyVal {
+  implicit class SearchMutableBuilder[Self <: Search] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayable(value: Boolean): Self = StObject.set(x, "Displayable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayableUndefined: Self = StObject.set(x, "Displayable", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFacetable(value: Boolean): Self = StObject.set(x, "Facetable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayable(value: Boolean): Self = this.set("Displayable", value.asInstanceOf[js.Any])
+    def setFacetableUndefined: Self = StObject.set(x, "Facetable", js.undefined)
     
     @scala.inline
-    def deleteDisplayable: Self = this.set("Displayable", js.undefined)
+    def setSearchable(value: Boolean): Self = StObject.set(x, "Searchable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetable(value: Boolean): Self = this.set("Facetable", value.asInstanceOf[js.Any])
+    def setSearchableUndefined: Self = StObject.set(x, "Searchable", js.undefined)
     
     @scala.inline
-    def deleteFacetable: Self = this.set("Facetable", js.undefined)
+    def setSortable(value: Boolean): Self = StObject.set(x, "Sortable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchable(value: Boolean): Self = this.set("Searchable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchable: Self = this.set("Searchable", js.undefined)
-    
-    @scala.inline
-    def setSortable(value: Boolean): Self = this.set("Sortable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortable: Self = this.set("Sortable", js.undefined)
+    def setSortableUndefined: Self = StObject.set(x, "Sortable", js.undefined)
   }
 }

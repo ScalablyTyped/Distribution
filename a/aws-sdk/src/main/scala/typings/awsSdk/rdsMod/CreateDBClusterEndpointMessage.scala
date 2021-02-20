@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDBClusterEndpointMessage extends js.Object {
+trait CreateDBClusterEndpointMessage extends StObject {
   
   /**
     * The identifier to use for the new endpoint. This parameter is stored as a lowercase string.
@@ -46,54 +47,42 @@ object CreateDBClusterEndpointMessage {
   }
   
   @scala.inline
-  implicit class CreateDBClusterEndpointMessageOps[Self <: CreateDBClusterEndpointMessage] (val x: Self) extends AnyVal {
+  implicit class CreateDBClusterEndpointMessageMutableBuilder[Self <: CreateDBClusterEndpointMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDBClusterEndpointIdentifier(value: String): Self = StObject.set(x, "DBClusterEndpointIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndpointType(value: String): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBClusterEndpointIdentifier(value: String): Self = this.set("DBClusterEndpointIdentifier", value.asInstanceOf[js.Any])
+    def setExcludedMembers(value: StringList): Self = StObject.set(x, "ExcludedMembers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBClusterIdentifier(value: String): Self = this.set("DBClusterIdentifier", value.asInstanceOf[js.Any])
+    def setExcludedMembersUndefined: Self = StObject.set(x, "ExcludedMembers", js.undefined)
     
     @scala.inline
-    def setEndpointType(value: String): Self = this.set("EndpointType", value.asInstanceOf[js.Any])
+    def setExcludedMembersVarargs(value: String*): Self = StObject.set(x, "ExcludedMembers", js.Array(value :_*))
     
     @scala.inline
-    def setExcludedMembersVarargs(value: String*): Self = this.set("ExcludedMembers", js.Array(value :_*))
+    def setStaticMembers(value: StringList): Self = StObject.set(x, "StaticMembers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedMembers(value: StringList): Self = this.set("ExcludedMembers", value.asInstanceOf[js.Any])
+    def setStaticMembersUndefined: Self = StObject.set(x, "StaticMembers", js.undefined)
     
     @scala.inline
-    def deleteExcludedMembers: Self = this.set("ExcludedMembers", js.undefined)
+    def setStaticMembersVarargs(value: String*): Self = StObject.set(x, "StaticMembers", js.Array(value :_*))
     
     @scala.inline
-    def setStaticMembersVarargs(value: String*): Self = this.set("StaticMembers", js.Array(value :_*))
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStaticMembers(value: StringList): Self = this.set("StaticMembers", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteStaticMembers: Self = this.set("StaticMembers", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

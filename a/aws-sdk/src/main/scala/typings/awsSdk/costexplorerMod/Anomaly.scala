@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Anomaly extends js.Object {
+trait Anomaly extends StObject {
   
   /**
     *  The last day the anomaly is detected. 
@@ -61,63 +62,51 @@ object Anomaly {
   }
   
   @scala.inline
-  implicit class AnomalyOps[Self <: Anomaly] (val x: Self) extends AnyVal {
+  implicit class AnomalyMutableBuilder[Self <: Anomaly] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnomalyEndDate(value: YearMonthDay): Self = StObject.set(x, "AnomalyEndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnomalyEndDateUndefined: Self = StObject.set(x, "AnomalyEndDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnomalyId(value: GenericString): Self = StObject.set(x, "AnomalyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnomalyId(value: GenericString): Self = this.set("AnomalyId", value.asInstanceOf[js.Any])
+    def setAnomalyScore(value: AnomalyScore): Self = StObject.set(x, "AnomalyScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnomalyScore(value: AnomalyScore): Self = this.set("AnomalyScore", value.asInstanceOf[js.Any])
+    def setAnomalyStartDate(value: YearMonthDay): Self = StObject.set(x, "AnomalyStartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpact(value: Impact): Self = this.set("Impact", value.asInstanceOf[js.Any])
+    def setAnomalyStartDateUndefined: Self = StObject.set(x, "AnomalyStartDate", js.undefined)
     
     @scala.inline
-    def setMonitorArn(value: GenericString): Self = this.set("MonitorArn", value.asInstanceOf[js.Any])
+    def setDimensionValue(value: GenericString): Self = StObject.set(x, "DimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnomalyEndDate(value: YearMonthDay): Self = this.set("AnomalyEndDate", value.asInstanceOf[js.Any])
+    def setDimensionValueUndefined: Self = StObject.set(x, "DimensionValue", js.undefined)
     
     @scala.inline
-    def deleteAnomalyEndDate: Self = this.set("AnomalyEndDate", js.undefined)
+    def setFeedback(value: AnomalyFeedbackType): Self = StObject.set(x, "Feedback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnomalyStartDate(value: YearMonthDay): Self = this.set("AnomalyStartDate", value.asInstanceOf[js.Any])
+    def setFeedbackUndefined: Self = StObject.set(x, "Feedback", js.undefined)
     
     @scala.inline
-    def deleteAnomalyStartDate: Self = this.set("AnomalyStartDate", js.undefined)
+    def setImpact(value: Impact): Self = StObject.set(x, "Impact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionValue(value: GenericString): Self = this.set("DimensionValue", value.asInstanceOf[js.Any])
+    def setMonitorArn(value: GenericString): Self = StObject.set(x, "MonitorArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDimensionValue: Self = this.set("DimensionValue", js.undefined)
+    def setRootCauses(value: RootCauses): Self = StObject.set(x, "RootCauses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeedback(value: AnomalyFeedbackType): Self = this.set("Feedback", value.asInstanceOf[js.Any])
+    def setRootCausesUndefined: Self = StObject.set(x, "RootCauses", js.undefined)
     
     @scala.inline
-    def deleteFeedback: Self = this.set("Feedback", js.undefined)
-    
-    @scala.inline
-    def setRootCausesVarargs(value: RootCause*): Self = this.set("RootCauses", js.Array(value :_*))
-    
-    @scala.inline
-    def setRootCauses(value: RootCauses): Self = this.set("RootCauses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRootCauses: Self = this.set("RootCauses", js.undefined)
+    def setRootCausesVarargs(value: RootCause*): Self = StObject.set(x, "RootCauses", js.Array(value :_*))
   }
 }

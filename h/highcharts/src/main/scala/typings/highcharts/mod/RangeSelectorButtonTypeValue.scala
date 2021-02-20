@@ -2,6 +2,7 @@ package typings.highcharts.mod
 
 import typings.highcharts.highchartsStrings.day_
 import typings.highcharts.highchartsStrings.month_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.highcharts.highchartsStrings.year
   - typings.highcharts.highchartsStrings.ytd
 */
-trait RangeSelectorButtonTypeValue extends js.Object
+trait RangeSelectorButtonTypeValue extends StObject
 object RangeSelectorButtonTypeValue {
   
   @scala.inline

@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitCommitDiffs extends js.Object {
+trait GitCommitDiffs extends StObject {
   
   var aheadCount: Double = js.native
   
@@ -42,45 +43,33 @@ object GitCommitDiffs {
   }
   
   @scala.inline
-  implicit class GitCommitDiffsOps[Self <: GitCommitDiffs] (val x: Self) extends AnyVal {
+  implicit class GitCommitDiffsMutableBuilder[Self <: GitCommitDiffs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAheadCount(value: Double): Self = StObject.set(x, "aheadCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllChangesIncluded(value: Boolean): Self = StObject.set(x, "allChangesIncluded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseCommit(value: String): Self = StObject.set(x, "baseCommit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAheadCount(value: Double): Self = this.set("aheadCount", value.asInstanceOf[js.Any])
+    def setBehindCount(value: Double): Self = StObject.set(x, "behindCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllChangesIncluded(value: Boolean): Self = this.set("allChangesIncluded", value.asInstanceOf[js.Any])
+    def setChangeCounts(value: NumberDictionary[Double]): Self = StObject.set(x, "changeCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseCommit(value: String): Self = this.set("baseCommit", value.asInstanceOf[js.Any])
+    def setChanges(value: js.Array[GitChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBehindCount(value: Double): Self = this.set("behindCount", value.asInstanceOf[js.Any])
+    def setChangesVarargs(value: GitChange*): Self = StObject.set(x, "changes", js.Array(value :_*))
     
     @scala.inline
-    def setChangeCounts(value: NumberDictionary[Double]): Self = this.set("changeCounts", value.asInstanceOf[js.Any])
+    def setCommonCommit(value: String): Self = StObject.set(x, "commonCommit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangesVarargs(value: GitChange*): Self = this.set("changes", js.Array(value :_*))
-    
-    @scala.inline
-    def setChanges(value: js.Array[GitChange]): Self = this.set("changes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCommonCommit(value: String): Self = this.set("commonCommit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetCommit(value: String): Self = this.set("targetCommit", value.asInstanceOf[js.Any])
+    def setTargetCommit(value: String): Self = StObject.set(x, "targetCommit", value.asInstanceOf[js.Any])
   }
 }

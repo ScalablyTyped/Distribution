@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.io
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,33 +59,21 @@ object XMarkableStream {
   }
   
   @scala.inline
-  implicit class XMarkableStreamOps[Self <: XMarkableStream] (val x: Self) extends AnyVal {
+  implicit class XMarkableStreamMutableBuilder[Self <: XMarkableStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateMark(value: () => Double): Self = StObject.set(x, "createMark", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteMark(value: Double => Unit): Self = StObject.set(x, "deleteMark", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJumpToFurthest(value: () => Unit): Self = StObject.set(x, "jumpToFurthest", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateMark(value: () => Double): Self = this.set("createMark", js.Any.fromFunction0(value))
+    def setJumpToMark(value: Double => Unit): Self = StObject.set(x, "jumpToMark", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteMark(value: Double => Unit): Self = this.set("deleteMark", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setJumpToFurthest(value: () => Unit): Self = this.set("jumpToFurthest", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setJumpToMark(value: Double => Unit): Self = this.set("jumpToMark", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOffsetToMark(value: Double => Double): Self = this.set("offsetToMark", js.Any.fromFunction1(value))
+    def setOffsetToMark(value: Double => Double): Self = StObject.set(x, "offsetToMark", js.Any.fromFunction1(value))
   }
 }

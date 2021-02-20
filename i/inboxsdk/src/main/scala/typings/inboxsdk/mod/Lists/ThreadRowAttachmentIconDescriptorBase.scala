@@ -1,11 +1,12 @@
 package typings.inboxsdk.mod.Lists
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThreadRowAttachmentIconDescriptorBase extends js.Object {
+trait ThreadRowAttachmentIconDescriptorBase extends StObject {
   
   var tooltip: js.UndefOr[String] = js.native
 }
@@ -18,24 +19,12 @@ object ThreadRowAttachmentIconDescriptorBase {
   }
   
   @scala.inline
-  implicit class ThreadRowAttachmentIconDescriptorBaseOps[Self <: ThreadRowAttachmentIconDescriptorBase] (val x: Self) extends AnyVal {
+  implicit class ThreadRowAttachmentIconDescriptorBaseMutableBuilder[Self <: ThreadRowAttachmentIconDescriptorBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTooltip(value: String): Self = this.set("tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

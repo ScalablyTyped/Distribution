@@ -1,5 +1,6 @@
 package typings.axeCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.axeCore.axeCoreStrings.`raw-env`
   - typings.axeCore.axeCoreStrings.`no-passes`
 */
-trait ReporterVersion extends js.Object
+trait ReporterVersion extends StObject
 object ReporterVersion {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RelationalDatabaseBundle extends js.Object {
+trait RelationalDatabaseBundle extends StObject {
   
   /**
     * The ID for the database bundle.
@@ -61,72 +62,60 @@ object RelationalDatabaseBundle {
   }
   
   @scala.inline
-  implicit class RelationalDatabaseBundleOps[Self <: RelationalDatabaseBundle] (val x: Self) extends AnyVal {
+  implicit class RelationalDatabaseBundleMutableBuilder[Self <: RelationalDatabaseBundle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCpuCount(value: integer): Self = StObject.set(x, "cpuCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundleId(value: String): Self = this.set("bundleId", value.asInstanceOf[js.Any])
+    def setCpuCountUndefined: Self = StObject.set(x, "cpuCount", js.undefined)
     
     @scala.inline
-    def deleteBundleId: Self = this.set("bundleId", js.undefined)
+    def setDiskSizeInGb(value: integer): Self = StObject.set(x, "diskSizeInGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuCount(value: integer): Self = this.set("cpuCount", value.asInstanceOf[js.Any])
+    def setDiskSizeInGbUndefined: Self = StObject.set(x, "diskSizeInGb", js.undefined)
     
     @scala.inline
-    def deleteCpuCount: Self = this.set("cpuCount", js.undefined)
+    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskSizeInGb(value: integer): Self = this.set("diskSizeInGb", value.asInstanceOf[js.Any])
+    def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
     
     @scala.inline
-    def deleteDiskSizeInGb: Self = this.set("diskSizeInGb", js.undefined)
+    def setIsEncrypted(value: Boolean): Self = StObject.set(x, "isEncrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsActive(value: Boolean): Self = this.set("isActive", value.asInstanceOf[js.Any])
+    def setIsEncryptedUndefined: Self = StObject.set(x, "isEncrypted", js.undefined)
     
     @scala.inline
-    def deleteIsActive: Self = this.set("isActive", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEncrypted(value: Boolean): Self = this.set("isEncrypted", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIsEncrypted: Self = this.set("isEncrypted", js.undefined)
+    def setPrice(value: float): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRamSizeInGb(value: float): Self = StObject.set(x, "ramSizeInGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrice(value: float): Self = this.set("price", value.asInstanceOf[js.Any])
+    def setRamSizeInGbUndefined: Self = StObject.set(x, "ramSizeInGb", js.undefined)
     
     @scala.inline
-    def deletePrice: Self = this.set("price", js.undefined)
+    def setTransferPerMonthInGb(value: integer): Self = StObject.set(x, "transferPerMonthInGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRamSizeInGb(value: float): Self = this.set("ramSizeInGb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRamSizeInGb: Self = this.set("ramSizeInGb", js.undefined)
-    
-    @scala.inline
-    def setTransferPerMonthInGb(value: integer): Self = this.set("transferPerMonthInGb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransferPerMonthInGb: Self = this.set("transferPerMonthInGb", js.undefined)
+    def setTransferPerMonthInGbUndefined: Self = StObject.set(x, "transferPerMonthInGb", js.undefined)
   }
 }

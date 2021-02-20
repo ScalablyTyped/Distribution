@@ -1,5 +1,6 @@
 package typings.sipJs.mod.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "Core.IncomingMessage")
 @js.native
 class IncomingMessage ()
-  extends typings.sipJs.incomingMessageMod.IncomingMessage
+  extends typings.sipJs.coreMod.IncomingMessage

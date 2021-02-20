@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec extends js.Object {
+trait GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec extends StObject {
   
   /**
     * This is used to create prompt to ask for date only.
@@ -34,36 +35,24 @@ object GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2DateTimeValueSpecDateTimeDialogSpecOps[Self <: GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2DateTimeValueSpecDateTimeDialogSpecMutableBuilder[Self <: GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequestDateText(value: String): Self = StObject.set(x, "requestDateText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequestDateTextUndefined: Self = StObject.set(x, "requestDateText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestDatetimeText(value: String): Self = StObject.set(x, "requestDatetimeText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestDateText(value: String): Self = this.set("requestDateText", value.asInstanceOf[js.Any])
+    def setRequestDatetimeTextUndefined: Self = StObject.set(x, "requestDatetimeText", js.undefined)
     
     @scala.inline
-    def deleteRequestDateText: Self = this.set("requestDateText", js.undefined)
+    def setRequestTimeText(value: String): Self = StObject.set(x, "requestTimeText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestDatetimeText(value: String): Self = this.set("requestDatetimeText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestDatetimeText: Self = this.set("requestDatetimeText", js.undefined)
-    
-    @scala.inline
-    def setRequestTimeText(value: String): Self = this.set("requestTimeText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestTimeText: Self = this.set("requestTimeText", js.undefined)
+    def setRequestTimeTextUndefined: Self = StObject.set(x, "requestTimeText", js.undefined)
   }
 }

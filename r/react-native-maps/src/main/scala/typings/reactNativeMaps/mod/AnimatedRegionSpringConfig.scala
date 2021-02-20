@@ -1,5 +1,6 @@
 package typings.reactNativeMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent react-native.react-native.Animated.AnimationConfig */
 /* Inlined parent std.Partial<react-native-maps.react-native-maps.Region> */
 @js.native
-trait AnimatedRegionSpringConfig extends js.Object {
+trait AnimatedRegionSpringConfig extends StObject {
   
   var bounciness: js.UndefOr[Double] = js.native
   
@@ -52,117 +53,105 @@ object AnimatedRegionSpringConfig {
   }
   
   @scala.inline
-  implicit class AnimatedRegionSpringConfigOps[Self <: AnimatedRegionSpringConfig] (val x: Self) extends AnyVal {
+  implicit class AnimatedRegionSpringConfigMutableBuilder[Self <: AnimatedRegionSpringConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounciness(value: Double): Self = StObject.set(x, "bounciness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBouncinessUndefined: Self = StObject.set(x, "bounciness", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseNativeDriver(value: Boolean): Self = this.set("useNativeDriver", value.asInstanceOf[js.Any])
+    def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
     
     @scala.inline
-    def setBounciness(value: Double): Self = this.set("bounciness", value.asInstanceOf[js.Any])
+    def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBounciness: Self = this.set("bounciness", js.undefined)
+    def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
     
     @scala.inline
-    def setDamping(value: Double): Self = this.set("damping", value.asInstanceOf[js.Any])
+    def setIsInteraction(value: Boolean): Self = StObject.set(x, "isInteraction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDamping: Self = this.set("damping", js.undefined)
+    def setIsInteractionUndefined: Self = StObject.set(x, "isInteraction", js.undefined)
     
     @scala.inline
-    def setFriction(value: Double): Self = this.set("friction", value.asInstanceOf[js.Any])
+    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFriction: Self = this.set("friction", js.undefined)
+    def setLatitudeDelta(value: Double): Self = StObject.set(x, "latitudeDelta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInteraction(value: Boolean): Self = this.set("isInteraction", value.asInstanceOf[js.Any])
+    def setLatitudeDeltaUndefined: Self = StObject.set(x, "latitudeDelta", js.undefined)
     
     @scala.inline
-    def deleteIsInteraction: Self = this.set("isInteraction", js.undefined)
+    def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
     
     @scala.inline
-    def setLatitude(value: Double): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLatitude: Self = this.set("latitude", js.undefined)
+    def setLongitudeDelta(value: Double): Self = StObject.set(x, "longitudeDelta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatitudeDelta(value: Double): Self = this.set("latitudeDelta", value.asInstanceOf[js.Any])
+    def setLongitudeDeltaUndefined: Self = StObject.set(x, "longitudeDelta", js.undefined)
     
     @scala.inline
-    def deleteLatitudeDelta: Self = this.set("latitudeDelta", js.undefined)
+    def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
     
     @scala.inline
-    def setLongitude(value: Double): Self = this.set("longitude", value.asInstanceOf[js.Any])
+    def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLongitude: Self = this.set("longitude", js.undefined)
+    def setMassUndefined: Self = StObject.set(x, "mass", js.undefined)
     
     @scala.inline
-    def setLongitudeDelta(value: Double): Self = this.set("longitudeDelta", value.asInstanceOf[js.Any])
+    def setOvershootClamping(value: Boolean): Self = StObject.set(x, "overshootClamping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLongitudeDelta: Self = this.set("longitudeDelta", js.undefined)
+    def setOvershootClampingUndefined: Self = StObject.set(x, "overshootClamping", js.undefined)
     
     @scala.inline
-    def setMass(value: Double): Self = this.set("mass", value.asInstanceOf[js.Any])
+    def setRestDisplacementThreshold(value: Double): Self = StObject.set(x, "restDisplacementThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMass: Self = this.set("mass", js.undefined)
+    def setRestDisplacementThresholdUndefined: Self = StObject.set(x, "restDisplacementThreshold", js.undefined)
     
     @scala.inline
-    def setOvershootClamping(value: Boolean): Self = this.set("overshootClamping", value.asInstanceOf[js.Any])
+    def setRestSpeedThreshold(value: Double): Self = StObject.set(x, "restSpeedThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOvershootClamping: Self = this.set("overshootClamping", js.undefined)
+    def setRestSpeedThresholdUndefined: Self = StObject.set(x, "restSpeedThreshold", js.undefined)
     
     @scala.inline
-    def setRestDisplacementThreshold(value: Double): Self = this.set("restDisplacementThreshold", value.asInstanceOf[js.Any])
+    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRestDisplacementThreshold: Self = this.set("restDisplacementThreshold", js.undefined)
+    def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
     
     @scala.inline
-    def setRestSpeedThreshold(value: Double): Self = this.set("restSpeedThreshold", value.asInstanceOf[js.Any])
+    def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRestSpeedThreshold: Self = this.set("restSpeedThreshold", js.undefined)
+    def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
     
     @scala.inline
-    def setSpeed(value: Double): Self = this.set("speed", value.asInstanceOf[js.Any])
+    def setTension(value: Double): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpeed: Self = this.set("speed", js.undefined)
+    def setTensionUndefined: Self = StObject.set(x, "tension", js.undefined)
     
     @scala.inline
-    def setStiffness(value: Double): Self = this.set("stiffness", value.asInstanceOf[js.Any])
+    def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStiffness: Self = this.set("stiffness", js.undefined)
+    def setVelocity(value: Double | Point): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTension(value: Double): Self = this.set("tension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTension: Self = this.set("tension", js.undefined)
-    
-    @scala.inline
-    def setVelocity(value: Double | Point): Self = this.set("velocity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVelocity: Self = this.set("velocity", js.undefined)
+    def setVelocityUndefined: Self = StObject.set(x, "velocity", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.kendo.data.HierarchicalDataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MenuOptions extends js.Object {
+trait MenuOptions extends StObject {
   
   var activate: js.UndefOr[js.Function1[/* e */ MenuActivateEvent, Unit]] = js.native
   
@@ -57,138 +58,126 @@ object MenuOptions {
   }
   
   @scala.inline
-  implicit class MenuOptionsOps[Self <: MenuOptions] (val x: Self) extends AnyVal {
+  implicit class MenuOptionsMutableBuilder[Self <: MenuOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivate(value: /* e */ MenuActivateEvent => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimation(value: Boolean | MenuAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivate(value: /* e */ MenuActivateEvent => Unit): Self = this.set("activate", js.Any.fromFunction1(value))
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def deleteActivate: Self = this.set("activate", js.undefined)
+    def setClose(value: /* e */ MenuCloseEvent => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnimation(value: Boolean | MenuAnimation): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
     
     @scala.inline
-    def setClose(value: /* e */ MenuCloseEvent => Unit): Self = this.set("close", js.Any.fromFunction1(value))
+    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
     @scala.inline
-    def deleteClose: Self = this.set("close", js.undefined)
+    def setDataContentField(value: String): Self = StObject.set(x, "dataContentField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseOnClick(value: Boolean): Self = this.set("closeOnClick", value.asInstanceOf[js.Any])
+    def setDataContentFieldUndefined: Self = StObject.set(x, "dataContentField", js.undefined)
     
     @scala.inline
-    def deleteCloseOnClick: Self = this.set("closeOnClick", js.undefined)
+    def setDataImageUrlField(value: String): Self = StObject.set(x, "dataImageUrlField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataContentField(value: String): Self = this.set("dataContentField", value.asInstanceOf[js.Any])
+    def setDataImageUrlFieldUndefined: Self = StObject.set(x, "dataImageUrlField", js.undefined)
     
     @scala.inline
-    def deleteDataContentField: Self = this.set("dataContentField", js.undefined)
+    def setDataSource(value: js.Any | HierarchicalDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataImageUrlField(value: String): Self = this.set("dataImageUrlField", value.asInstanceOf[js.Any])
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteDataImageUrlField: Self = this.set("dataImageUrlField", js.undefined)
+    def setDataSpriteCssClassField(value: String): Self = StObject.set(x, "dataSpriteCssClassField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: js.Any | HierarchicalDataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setDataSpriteCssClassFieldUndefined: Self = StObject.set(x, "dataSpriteCssClassField", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setDataTextField(value: String): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSpriteCssClassField(value: String): Self = this.set("dataSpriteCssClassField", value.asInstanceOf[js.Any])
+    def setDataTextFieldUndefined: Self = StObject.set(x, "dataTextField", js.undefined)
     
     @scala.inline
-    def deleteDataSpriteCssClassField: Self = this.set("dataSpriteCssClassField", js.undefined)
+    def setDataUrlField(value: String): Self = StObject.set(x, "dataUrlField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataTextField(value: String): Self = this.set("dataTextField", value.asInstanceOf[js.Any])
+    def setDataUrlFieldUndefined: Self = StObject.set(x, "dataUrlField", js.undefined)
     
     @scala.inline
-    def deleteDataTextField: Self = this.set("dataTextField", js.undefined)
+    def setDeactivate(value: /* e */ MenuDeactivateEvent => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDataUrlField(value: String): Self = this.set("dataUrlField", value.asInstanceOf[js.Any])
+    def setDeactivateUndefined: Self = StObject.set(x, "deactivate", js.undefined)
     
     @scala.inline
-    def deleteDataUrlField: Self = this.set("dataUrlField", js.undefined)
+    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeactivate(value: /* e */ MenuDeactivateEvent => Unit): Self = this.set("deactivate", js.Any.fromFunction1(value))
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteDeactivate: Self = this.set("deactivate", js.undefined)
+    def setHoverDelay(value: Double): Self = StObject.set(x, "hoverDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setHoverDelayUndefined: Self = StObject.set(x, "hoverDelay", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverDelay(value: Double): Self = this.set("hoverDelay", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteHoverDelay: Self = this.set("hoverDelay", js.undefined)
+    def setOpen(value: /* e */ MenuOpenEvent => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOpenOnClick(value: Boolean | MenuOpenOnClick): Self = StObject.set(x, "openOnClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOpenOnClickUndefined: Self = StObject.set(x, "openOnClick", js.undefined)
     
     @scala.inline
-    def setOpen(value: /* e */ MenuOpenEvent => Unit): Self = this.set("open", js.Any.fromFunction1(value))
+    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def deleteOpen: Self = this.set("open", js.undefined)
+    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenOnClick(value: Boolean | MenuOpenOnClick): Self = this.set("openOnClick", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteOpenOnClick: Self = this.set("openOnClick", js.undefined)
+    def setPopupCollision(value: String): Self = StObject.set(x, "popupCollision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setPopupCollisionUndefined: Self = StObject.set(x, "popupCollision", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setScrollable(value: Boolean | MenuScrollable): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupCollision(value: String): Self = this.set("popupCollision", value.asInstanceOf[js.Any])
+    def setScrollableUndefined: Self = StObject.set(x, "scrollable", js.undefined)
     
     @scala.inline
-    def deletePopupCollision: Self = this.set("popupCollision", js.undefined)
+    def setSelect(value: /* e */ MenuSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollable(value: Boolean | MenuScrollable): Self = this.set("scrollable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollable: Self = this.set("scrollable", js.undefined)
-    
-    @scala.inline
-    def setSelect(value: /* e */ MenuSelectEvent => Unit): Self = this.set("select", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
   }
 }

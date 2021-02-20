@@ -1,21 +1,28 @@
 package typings.antvScale
 
-import typings.antvScale.linearMod.Linear
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/scale/lib/continuous/time", JSImport.Namespace)
-@js.native
-object continuousTimeMod extends js.Object {
+object continuousTimeMod {
+  
+  /**
+    * 时间度量
+    * @class
+    */
+  @JSImport("@antv/scale/lib/continuous/time", JSImport.Default)
+  @js.native
+  class default () extends Time
   
   /**
     * 时间度量
     * @class
     */
   @js.native
-  trait Time extends Linear {
+  trait Time
+    extends typings.antvScale.linearMod.default {
     
     /**
       * @override
@@ -29,11 +36,4 @@ object continuousTimeMod extends js.Object {
     
     var mask: String = js.native
   }
-  
-  /**
-    * 时间度量
-    * @class
-    */
-  @js.native
-  class default () extends Time
 }

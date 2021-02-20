@@ -1,12 +1,13 @@
 package typings.activexMsxml2.MSXML2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** W3C-DOM XML Document 6.0 (Free threaded) */
 @js.native
-trait FreeThreadedDOMDocument60 extends js.Object {
+trait FreeThreadedDOMDocument60 extends StObject {
   
   @JSName("MSXML2.FreeThreadedDOMDocument60_typekey")
   var MSXML2DotFreeThreadedDOMDocument60_typekey: FreeThreadedDOMDocument60 = js.native

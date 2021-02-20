@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1BigQuerySource extends js.Object {
+trait GoogleCloudDatalabelingV1beta1BigQuerySource extends StObject {
   
   /**
     * Required. BigQuery URI to a table, up to 2,000 characters long. If you specify the URI of a table that does not exist, Data Labeling Service creates a table at the URI with the
@@ -24,24 +25,12 @@ object GoogleCloudDatalabelingV1beta1BigQuerySource {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1BigQuerySourceOps[Self <: GoogleCloudDatalabelingV1beta1BigQuerySource] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1BigQuerySourceMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1BigQuerySource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputUri(value: String): Self = StObject.set(x, "inputUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInputUri(value: String): Self = this.set("inputUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputUri: Self = this.set("inputUri", js.undefined)
+    def setInputUriUndefined: Self = StObject.set(x, "inputUri", js.undefined)
   }
 }

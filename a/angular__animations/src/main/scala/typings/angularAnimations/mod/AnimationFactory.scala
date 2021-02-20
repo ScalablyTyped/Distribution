@@ -1,12 +1,13 @@
 package typings.angularAnimations.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/animations", "AnimationFactory")
 @js.native
-abstract class AnimationFactory () extends js.Object {
+abstract class AnimationFactory () extends StObject {
   
   /**
     * Creates an `AnimationPlayer` instance for the reusable animation defined by

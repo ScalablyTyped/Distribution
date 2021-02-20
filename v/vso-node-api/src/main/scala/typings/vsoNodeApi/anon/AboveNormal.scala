@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AboveNormal extends js.Object {
+trait AboveNormal extends StObject {
   
   var aboveNormal: scala.Double = js.native
   
@@ -32,33 +33,21 @@ object AboveNormal {
   }
   
   @scala.inline
-  implicit class AboveNormalOps[Self <: AboveNormal] (val x: Self) extends AnyVal {
+  implicit class AboveNormalMutableBuilder[Self <: AboveNormal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAboveNormal(value: scala.Double): Self = StObject.set(x, "aboveNormal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBelowNormal(value: scala.Double): Self = StObject.set(x, "belowNormal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHigh(value: scala.Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAboveNormal(value: scala.Double): Self = this.set("aboveNormal", value.asInstanceOf[js.Any])
+    def setLow(value: scala.Double): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBelowNormal(value: scala.Double): Self = this.set("belowNormal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHigh(value: scala.Double): Self = this.set("high", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLow(value: scala.Double): Self = this.set("low", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNormal(value: scala.Double): Self = this.set("normal", value.asInstanceOf[js.Any])
+    def setNormal(value: scala.Double): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
   }
 }

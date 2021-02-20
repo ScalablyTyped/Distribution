@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetaProperties extends js.Object {
+trait MetaProperties extends StObject {
   
   def apply(Index: String): MetaProperty = js.native
   def apply(Index: Double): MetaProperty = js.native

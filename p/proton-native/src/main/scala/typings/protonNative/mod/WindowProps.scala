@@ -3,12 +3,13 @@ package typings.protonNative.mod
 import typings.protonNative.anon.W
 import typings.protonNative.anon.Y
 import typings.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WindowProps extends js.Object {
+trait WindowProps extends StObject {
   
   /**
     * Whether the window will have a border on the inside.
@@ -74,84 +75,72 @@ object WindowProps {
   }
   
   @scala.inline
-  implicit class WindowPropsOps[Self <: WindowProps] (val x: Self) extends AnyVal {
+  implicit class WindowPropsMutableBuilder[Self <: WindowProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderless(value: Boolean): Self = this.set("borderless", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteBorderless: Self = this.set("borderless", js.undefined)
+    def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: Element): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosed(value: Boolean): Self = this.set("closed", value.asInstanceOf[js.Any])
+    def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
     
     @scala.inline
-    def deleteClosed: Self = this.set("closed", js.undefined)
+    def setLastWindow(value: Boolean): Self = StObject.set(x, "lastWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullscreen(value: Boolean): Self = this.set("fullscreen", value.asInstanceOf[js.Any])
+    def setLastWindowUndefined: Self = StObject.set(x, "lastWindow", js.undefined)
     
     @scala.inline
-    def deleteFullscreen: Self = this.set("fullscreen", js.undefined)
+    def setMargined(value: Boolean): Self = StObject.set(x, "margined", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastWindow(value: Boolean): Self = this.set("lastWindow", value.asInstanceOf[js.Any])
+    def setMarginedUndefined: Self = StObject.set(x, "margined", js.undefined)
     
     @scala.inline
-    def deleteLastWindow: Self = this.set("lastWindow", js.undefined)
+    def setMenuBar(value: Boolean): Self = StObject.set(x, "menuBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargined(value: Boolean): Self = this.set("margined", value.asInstanceOf[js.Any])
+    def setMenuBarUndefined: Self = StObject.set(x, "menuBar", js.undefined)
     
     @scala.inline
-    def deleteMargined: Self = this.set("margined", js.undefined)
+    def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMenuBar(value: Boolean): Self = this.set("menuBar", value.asInstanceOf[js.Any])
+    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def deleteMenuBar: Self = this.set("menuBar", js.undefined)
+    def setOnContentSizeChange(value: /* size */ Y => Unit): Self = StObject.set(x, "onContentSizeChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnClose(value: () => Unit): Self = this.set("onClose", js.Any.fromFunction0(value))
+    def setOnContentSizeChangeUndefined: Self = StObject.set(x, "onContentSizeChange", js.undefined)
     
     @scala.inline
-    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    def setSize(value: W): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnContentSizeChange(value: /* size */ Y => Unit): Self = this.set("onContentSizeChange", js.Any.fromFunction1(value))
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteOnContentSizeChange: Self = this.set("onContentSizeChange", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: W): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

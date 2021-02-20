@@ -1,5 +1,6 @@
 package typings.reactNativeGestureHandler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,42 +25,30 @@ object LongPressGestureHandlerProperties {
   }
   
   @scala.inline
-  implicit class LongPressGestureHandlerPropertiesOps[Self <: LongPressGestureHandlerProperties] (val x: Self) extends AnyVal {
+  implicit class LongPressGestureHandlerPropertiesMutableBuilder[Self <: LongPressGestureHandlerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxDist(value: Double): Self = StObject.set(x, "maxDist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxDistUndefined: Self = StObject.set(x, "maxDist", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinDurationMs(value: Double): Self = StObject.set(x, "minDurationMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDist(value: Double): Self = this.set("maxDist", value.asInstanceOf[js.Any])
+    def setMinDurationMsUndefined: Self = StObject.set(x, "minDurationMs", js.undefined)
     
     @scala.inline
-    def deleteMaxDist: Self = this.set("maxDist", js.undefined)
+    def setOnGestureEvent(value: /* event */ LongPressGestureHandlerGestureEvent => Unit): Self = StObject.set(x, "onGestureEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinDurationMs(value: Double): Self = this.set("minDurationMs", value.asInstanceOf[js.Any])
+    def setOnGestureEventUndefined: Self = StObject.set(x, "onGestureEvent", js.undefined)
     
     @scala.inline
-    def deleteMinDurationMs: Self = this.set("minDurationMs", js.undefined)
+    def setOnHandlerStateChange(value: /* event */ LongPressGestureHandlerStateChangeEvent => Unit): Self = StObject.set(x, "onHandlerStateChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnGestureEvent(value: /* event */ LongPressGestureHandlerGestureEvent => Unit): Self = this.set("onGestureEvent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnGestureEvent: Self = this.set("onGestureEvent", js.undefined)
-    
-    @scala.inline
-    def setOnHandlerStateChange(value: /* event */ LongPressGestureHandlerStateChangeEvent => Unit): Self = this.set("onHandlerStateChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnHandlerStateChange: Self = this.set("onHandlerStateChange", js.undefined)
+    def setOnHandlerStateChangeUndefined: Self = StObject.set(x, "onHandlerStateChange", js.undefined)
   }
 }

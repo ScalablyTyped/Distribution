@@ -1,11 +1,12 @@
 package typings.chrome.chrome.input.ime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteSurroundingTextParameters extends js.Object {
+trait DeleteSurroundingTextParameters extends StObject {
   
   /** ID of the context where the surrounding text will be deleted. */
   var contextID: Double = js.native
@@ -28,30 +29,18 @@ object DeleteSurroundingTextParameters {
   }
   
   @scala.inline
-  implicit class DeleteSurroundingTextParametersOps[Self <: DeleteSurroundingTextParameters] (val x: Self) extends AnyVal {
+  implicit class DeleteSurroundingTextParametersMutableBuilder[Self <: DeleteSurroundingTextParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEngineID(value: String): Self = StObject.set(x, "engineID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextID(value: Double): Self = this.set("contextID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEngineID(value: String): Self = this.set("engineID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

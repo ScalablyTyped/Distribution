@@ -1,13 +1,14 @@
 package typings.geolib
 
 import typings.geolib.typesMod.GeolibInputCoordinates
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("geolib/es/getAreaOfPolygon", JSImport.Namespace)
-@js.native
-object getAreaOfPolygonMod extends js.Object {
+object getAreaOfPolygonMod {
   
+  @JSImport("geolib/es/getAreaOfPolygon", JSImport.Default)
+  @js.native
   def default(points: js.Array[GeolibInputCoordinates]): Double = js.native
 }

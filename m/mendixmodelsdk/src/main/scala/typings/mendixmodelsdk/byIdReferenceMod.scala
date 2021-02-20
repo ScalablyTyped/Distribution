@@ -6,16 +6,16 @@ import typings.mendixmodelsdk.elementsMod.AbstractElement
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mobx.observablevalueMod.IObservableValue
 import typings.mobx.observablevalueMod.IValueWillChange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/sdk/internal/ByIdReference", JSImport.Namespace)
-@js.native
-object byIdReferenceMod extends js.Object {
+object byIdReferenceMod {
   
+  @JSImport("mendixmodelsdk/dist/sdk/internal/ByIdReference", "ByIdReference")
   @js.native
-  class ByIdReference[T /* <: AbstractElement[IAbstractModel, Container] */] protected () extends js.Object {
+  class ByIdReference[T /* <: AbstractElement[IAbstractModel, Container] */] protected () extends StObject {
     /**
       * Constructs and returns a new reference instance, that is owned (by a property of) an abstract element.
       */

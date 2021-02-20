@@ -3,13 +3,14 @@ package typings.layuiSrc.layui
 import typings.jquery.JQuery
 import typings.layuiSrc.layuiSrcBooleans.`true`
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 以下TableOn 开头interface，在调用地方使用
 @js.native
-trait TableOnCheckbox extends js.Object {
+trait TableOnCheckbox extends StObject {
   
   var checked: `true` = js.native
   
@@ -40,36 +41,24 @@ object TableOnCheckbox {
   }
   
   @scala.inline
-  implicit class TableOnCheckboxOps[Self <: TableOnCheckbox] (val x: Self) extends AnyVal {
+  implicit class TableOnCheckboxMutableBuilder[Self <: TableOnCheckbox] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChecked(value: `true`): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDel(value: () => Unit): Self = StObject.set(x, "del", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChecked(value: `true`): Self = this.set("checked", value.asInstanceOf[js.Any])
+    def setTr(value: JQuery[HTMLElement]): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Object): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDel(value: () => Unit): Self = this.set("del", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTr(value: JQuery[HTMLElement]): Self = this.set("tr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdate(value: js.Object => Unit): Self = this.set("update", js.Any.fromFunction1(value))
+    def setUpdate(value: js.Object => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
 }

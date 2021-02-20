@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudhsmv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Certificates extends js.Object {
+trait Certificates extends StObject {
   
   /**
     * The HSM hardware certificate issued (signed) by AWS CloudHSM.
@@ -41,48 +42,36 @@ object Certificates {
   }
   
   @scala.inline
-  implicit class CertificatesOps[Self <: Certificates] (val x: Self) extends AnyVal {
+  implicit class CertificatesMutableBuilder[Self <: Certificates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsHardwareCertificate(value: Cert): Self = StObject.set(x, "AwsHardwareCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsHardwareCertificateUndefined: Self = StObject.set(x, "AwsHardwareCertificate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterCertificate(value: Cert): Self = StObject.set(x, "ClusterCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsHardwareCertificate(value: Cert): Self = this.set("AwsHardwareCertificate", value.asInstanceOf[js.Any])
+    def setClusterCertificateUndefined: Self = StObject.set(x, "ClusterCertificate", js.undefined)
     
     @scala.inline
-    def deleteAwsHardwareCertificate: Self = this.set("AwsHardwareCertificate", js.undefined)
+    def setClusterCsr(value: Cert): Self = StObject.set(x, "ClusterCsr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterCertificate(value: Cert): Self = this.set("ClusterCertificate", value.asInstanceOf[js.Any])
+    def setClusterCsrUndefined: Self = StObject.set(x, "ClusterCsr", js.undefined)
     
     @scala.inline
-    def deleteClusterCertificate: Self = this.set("ClusterCertificate", js.undefined)
+    def setHsmCertificate(value: Cert): Self = StObject.set(x, "HsmCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterCsr(value: Cert): Self = this.set("ClusterCsr", value.asInstanceOf[js.Any])
+    def setHsmCertificateUndefined: Self = StObject.set(x, "HsmCertificate", js.undefined)
     
     @scala.inline
-    def deleteClusterCsr: Self = this.set("ClusterCsr", js.undefined)
+    def setManufacturerHardwareCertificate(value: Cert): Self = StObject.set(x, "ManufacturerHardwareCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHsmCertificate(value: Cert): Self = this.set("HsmCertificate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHsmCertificate: Self = this.set("HsmCertificate", js.undefined)
-    
-    @scala.inline
-    def setManufacturerHardwareCertificate(value: Cert): Self = this.set("ManufacturerHardwareCertificate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManufacturerHardwareCertificate: Self = this.set("ManufacturerHardwareCertificate", js.undefined)
+    def setManufacturerHardwareCertificateUndefined: Self = StObject.set(x, "ManufacturerHardwareCertificate", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSipMediaApplicationLoggingConfigurationResponse extends js.Object {
+trait GetSipMediaApplicationLoggingConfigurationResponse extends StObject {
   
   /**
     * The actual logging configuration.
@@ -21,24 +22,12 @@ object GetSipMediaApplicationLoggingConfigurationResponse {
   }
   
   @scala.inline
-  implicit class GetSipMediaApplicationLoggingConfigurationResponseOps[Self <: GetSipMediaApplicationLoggingConfigurationResponse] (val x: Self) extends AnyVal {
+  implicit class GetSipMediaApplicationLoggingConfigurationResponseMutableBuilder[Self <: GetSipMediaApplicationLoggingConfigurationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSipMediaApplicationLoggingConfiguration(value: SipMediaApplicationLoggingConfiguration): Self = StObject.set(x, "SipMediaApplicationLoggingConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSipMediaApplicationLoggingConfiguration(value: SipMediaApplicationLoggingConfiguration): Self = this.set("SipMediaApplicationLoggingConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSipMediaApplicationLoggingConfiguration: Self = this.set("SipMediaApplicationLoggingConfiguration", js.undefined)
+    def setSipMediaApplicationLoggingConfigurationUndefined: Self = StObject.set(x, "SipMediaApplicationLoggingConfiguration", js.undefined)
   }
 }

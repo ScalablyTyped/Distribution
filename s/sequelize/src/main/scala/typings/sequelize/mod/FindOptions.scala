@@ -3,6 +3,7 @@ package typings.sequelize.mod
 import typings.sequelize.anon.As
 import typings.sequelize.anon.Exclude
 import typings.sequelize.anon.Level
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -120,127 +121,115 @@ object FindOptions {
   }
   
   @scala.inline
-  implicit class FindOptionsOps[Self <: FindOptions[_], T] (val x: Self with FindOptions[T]) extends AnyVal {
+  implicit class FindOptionsMutableBuilder[Self <: FindOptions[_], T] (val x: Self with FindOptions[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: FindOptionsAttributesArray | Exclude): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributesVarargs(value: (String | literal | (js.Tuple2[String | cast | fn | literal, String]) | fn | cast)*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
     @scala.inline
-    def setAttributesVarargs(value: (String | literal | (js.Tuple2[String | cast | fn | literal, String]) | fn | cast)*): Self = this.set("attributes", js.Array(value :_*))
+    def setDistinct(value: Boolean): Self = StObject.set(x, "distinct", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: FindOptionsAttributesArray | Exclude): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setDistinctUndefined: Self = StObject.set(x, "distinct", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setGroup(value: String | js.Array[String] | js.Object): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistinct(value: Boolean): Self = this.set("distinct", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteDistinct: Self = this.set("distinct", js.undefined)
+    def setGroupVarargs(value: String*): Self = StObject.set(x, "group", js.Array(value :_*))
     
     @scala.inline
-    def setGroupVarargs(value: String*): Self = this.set("group", js.Array(value :_*))
+    def setHaving(value: AnyWhereOptions): Self = StObject.set(x, "having", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: String | js.Array[String] | js.Object): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setHavingUndefined: Self = StObject.set(x, "having", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setInclude(value: js.Array[(Model[_, _, _]) | IncludeOptions]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHaving(value: AnyWhereOptions): Self = this.set("having", value.asInstanceOf[js.Any])
+    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
     @scala.inline
-    def deleteHaving: Self = this.set("having", js.undefined)
+    def setIncludeVarargs(value: ((Model[js.Any, js.Any, js.Any]) | IncludeOptions)*): Self = StObject.set(x, "include", js.Array(value :_*))
     
     @scala.inline
-    def setIncludeVarargs(value: ((Model[js.Any, js.Any, js.Any]) | IncludeOptions)*): Self = this.set("include", js.Array(value :_*))
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude(value: js.Array[(Model[_, _, _]) | IncludeOptions]): Self = this.set("include", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteInclude: Self = this.set("include", js.undefined)
+    def setLock(value: TransactionLockLevel | Level): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLock(value: TransactionLockLevel | Level): Self = this.set("lock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLock: Self = this.set("lock", js.undefined)
-    
-    @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
-    
-    @scala.inline
-    def setOrderVarargs(
-      value: (As | Double | FindOptionsOrderArray | (Model[js.Any, js.Any, js.Any]) | String | col | fn | literal)*
-    ): Self = this.set("order", js.Array(value :_*))
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
     def setOrder(
       value: String | col | literal | FindOptionsOrderArray | fn | (js.Array[String | col | literal | FindOptionsOrderArray | fn])
-    ): Self = this.set("order", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def setParanoid(value: Boolean): Self = this.set("paranoid", value.asInstanceOf[js.Any])
+    def setOrderVarargs(
+      value: (As | Double | FindOptionsOrderArray | (Model[js.Any, js.Any, js.Any]) | String | col | fn | literal)*
+    ): Self = StObject.set(x, "order", js.Array(value :_*))
     
     @scala.inline
-    def deleteParanoid: Self = this.set("paranoid", js.undefined)
+    def setParanoid(value: Boolean): Self = StObject.set(x, "paranoid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaw(value: Boolean): Self = this.set("raw", value.asInstanceOf[js.Any])
+    def setParanoidUndefined: Self = StObject.set(x, "paranoid", js.undefined)
     
     @scala.inline
-    def deleteRaw: Self = this.set("raw", js.undefined)
+    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRejectOnEmpty(value: Boolean): Self = this.set("rejectOnEmpty", value.asInstanceOf[js.Any])
+    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
     @scala.inline
-    def deleteRejectOnEmpty: Self = this.set("rejectOnEmpty", js.undefined)
+    def setRejectOnEmpty(value: Boolean): Self = StObject.set(x, "rejectOnEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubQuery(value: Boolean): Self = this.set("subQuery", value.asInstanceOf[js.Any])
+    def setRejectOnEmptyUndefined: Self = StObject.set(x, "rejectOnEmpty", js.undefined)
     
     @scala.inline
-    def deleteSubQuery: Self = this.set("subQuery", js.undefined)
+    def setSubQuery(value: Boolean): Self = StObject.set(x, "subQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseMaster(value: Boolean): Self = this.set("useMaster", value.asInstanceOf[js.Any])
+    def setSubQueryUndefined: Self = StObject.set(x, "subQuery", js.undefined)
     
     @scala.inline
-    def deleteUseMaster: Self = this.set("useMaster", js.undefined)
+    def setUseMaster(value: Boolean): Self = StObject.set(x, "useMaster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWhereVarargs(value: (col | and | or | String)*): Self = this.set("where", js.Array(value :_*))
+    def setUseMasterUndefined: Self = StObject.set(x, "useMaster", js.undefined)
     
     @scala.inline
-    def setWhere(value: WhereOptions[T] | where | fn | (js.Array[col | and | or | String])): Self = this.set("where", value.asInstanceOf[js.Any])
+    def setWhere(value: WhereOptions[T] | where | fn | (js.Array[col | and | or | String])): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWhere: Self = this.set("where", js.undefined)
+    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+    
+    @scala.inline
+    def setWhereVarargs(value: (col | and | or | String)*): Self = StObject.set(x, "where", js.Array(value :_*))
   }
 }

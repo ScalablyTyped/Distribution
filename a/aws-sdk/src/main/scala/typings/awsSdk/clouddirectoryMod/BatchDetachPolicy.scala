@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDetachPolicy extends js.Object {
+trait BatchDetachPolicy extends StObject {
   
   /**
     * Reference that identifies the object whose policy object will be detached.
@@ -26,24 +27,12 @@ object BatchDetachPolicy {
   }
   
   @scala.inline
-  implicit class BatchDetachPolicyOps[Self <: BatchDetachPolicy] (val x: Self) extends AnyVal {
+  implicit class BatchDetachPolicyMutableBuilder[Self <: BatchDetachPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setObjectReference(value: ObjectReference): Self = this.set("ObjectReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPolicyReference(value: ObjectReference): Self = this.set("PolicyReference", value.asInstanceOf[js.Any])
+    def setPolicyReference(value: ObjectReference): Self = StObject.set(x, "PolicyReference", value.asInstanceOf[js.Any])
   }
 }

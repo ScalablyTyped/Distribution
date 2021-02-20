@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentitySet extends js.Object {
+trait IdentitySet extends StObject {
   
   // Optional. The application associated with this action.
   var application: js.UndefOr[NullableOption[Identity]] = js.native
@@ -25,45 +26,33 @@ object IdentitySet {
   }
   
   @scala.inline
-  implicit class IdentitySetOps[Self <: IdentitySet] (val x: Self) extends AnyVal {
+  implicit class IdentitySetMutableBuilder[Self <: IdentitySet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: NullableOption[Identity]): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationNull: Self = StObject.set(x, "application", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
     
     @scala.inline
-    def setApplication(value: NullableOption[Identity]): Self = this.set("application", value.asInstanceOf[js.Any])
+    def setDevice(value: NullableOption[Identity]): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApplication: Self = this.set("application", js.undefined)
+    def setDeviceNull: Self = StObject.set(x, "device", null)
     
     @scala.inline
-    def setApplicationNull: Self = this.set("application", null)
+    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
     @scala.inline
-    def setDevice(value: NullableOption[Identity]): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setUser(value: NullableOption[Identity]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDevice: Self = this.set("device", js.undefined)
+    def setUserNull: Self = StObject.set(x, "user", null)
     
     @scala.inline
-    def setDeviceNull: Self = this.set("device", null)
-    
-    @scala.inline
-    def setUser(value: NullableOption[Identity]): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
-    
-    @scala.inline
-    def setUserNull: Self = this.set("user", null)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

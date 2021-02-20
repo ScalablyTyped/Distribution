@@ -1,5 +1,6 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,45 +46,33 @@ object BootstrapUploadControlEventMap {
   }
   
   @scala.inline
-  implicit class BootstrapUploadControlEventMapOps[Self <: BootstrapUploadControlEventMap] (val x: Self) extends AnyVal {
+  implicit class BootstrapUploadControlEventMapMutableBuilder[Self <: BootstrapUploadControlEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDropZoneEnter(value: UploadControlDropZoneEnterEventArgs): Self = StObject.set(x, "dropZoneEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDropZoneLeave(value: UploadControlDropZoneLeaveEventArgs): Self = StObject.set(x, "dropZoneLeave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileInputCountChanged(value: EventArgs): Self = StObject.set(x, "fileInputCountChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropZoneEnter(value: UploadControlDropZoneEnterEventArgs): Self = this.set("dropZoneEnter", value.asInstanceOf[js.Any])
+    def setFileUploadComplete(value: UploadControlFileUploadCompleteEventArgs): Self = StObject.set(x, "fileUploadComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropZoneLeave(value: UploadControlDropZoneLeaveEventArgs): Self = this.set("dropZoneLeave", value.asInstanceOf[js.Any])
+    def setFilesUploadComplete(value: UploadControlFilesUploadCompleteEventArgs): Self = StObject.set(x, "filesUploadComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileInputCountChanged(value: EventArgs): Self = this.set("fileInputCountChanged", value.asInstanceOf[js.Any])
+    def setFilesUploadStart(value: UploadControlFilesUploadStartEventArgs): Self = StObject.set(x, "filesUploadStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileUploadComplete(value: UploadControlFileUploadCompleteEventArgs): Self = this.set("fileUploadComplete", value.asInstanceOf[js.Any])
+    def setTextChanged(value: UploadControlTextChangedEventArgs): Self = StObject.set(x, "textChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilesUploadComplete(value: UploadControlFilesUploadCompleteEventArgs): Self = this.set("filesUploadComplete", value.asInstanceOf[js.Any])
+    def setUploadingProgressChanged(value: UploadControlUploadingProgressChangedEventArgs): Self = StObject.set(x, "uploadingProgressChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilesUploadStart(value: UploadControlFilesUploadStartEventArgs): Self = this.set("filesUploadStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextChanged(value: UploadControlTextChangedEventArgs): Self = this.set("textChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUploadingProgressChanged(value: UploadControlUploadingProgressChangedEventArgs): Self = this.set("uploadingProgressChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidationErrorOccurred(value: UploadControlValidationErrorOccurredEventArgs): Self = this.set("validationErrorOccurred", value.asInstanceOf[js.Any])
+    def setValidationErrorOccurred(value: UploadControlValidationErrorOccurredEventArgs): Self = StObject.set(x, "validationErrorOccurred", value.asInstanceOf[js.Any])
   }
 }

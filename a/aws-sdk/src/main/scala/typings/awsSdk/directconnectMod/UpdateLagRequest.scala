@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateLagRequest extends js.Object {
+trait UpdateLagRequest extends StObject {
   
   /**
     * The ID of the LAG.
@@ -31,33 +32,21 @@ object UpdateLagRequest {
   }
   
   @scala.inline
-  implicit class UpdateLagRequestOps[Self <: UpdateLagRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateLagRequestMutableBuilder[Self <: UpdateLagRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLagId(value: LagId): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLagName(value: LagName): Self = StObject.set(x, "lagName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLagNameUndefined: Self = StObject.set(x, "lagName", js.undefined)
     
     @scala.inline
-    def setLagId(value: LagId): Self = this.set("lagId", value.asInstanceOf[js.Any])
+    def setMinimumLinks(value: Count): Self = StObject.set(x, "minimumLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLagName(value: LagName): Self = this.set("lagName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLagName: Self = this.set("lagName", js.undefined)
-    
-    @scala.inline
-    def setMinimumLinks(value: Count): Self = this.set("minimumLinks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumLinks: Self = this.set("minimumLinks", js.undefined)
+    def setMinimumLinksUndefined: Self = StObject.set(x, "minimumLinks", js.undefined)
   }
 }

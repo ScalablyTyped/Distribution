@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountStatusItemLevelIssue extends js.Object {
+trait AccountStatusItemLevelIssue extends StObject {
   
   /** The attribute's name, if the issue is caused by a single attribute. */
   var attributeName: js.UndefOr[String] = js.native
@@ -40,66 +41,54 @@ object AccountStatusItemLevelIssue {
   }
   
   @scala.inline
-  implicit class AccountStatusItemLevelIssueOps[Self <: AccountStatusItemLevelIssue] (val x: Self) extends AnyVal {
+  implicit class AccountStatusItemLevelIssueMutableBuilder[Self <: AccountStatusItemLevelIssue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeName(value: String): Self = this.set("attributeName", value.asInstanceOf[js.Any])
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def deleteAttributeName: Self = this.set("attributeName", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetail(value: String): Self = this.set("detail", value.asInstanceOf[js.Any])
+    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
     @scala.inline
-    def deleteDetail: Self = this.set("detail", js.undefined)
+    def setNumItems(value: String): Self = StObject.set(x, "numItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentation(value: String): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    def setNumItemsUndefined: Self = StObject.set(x, "numItems", js.undefined)
     
     @scala.inline
-    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    def setResolution(value: String): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumItems(value: String): Self = this.set("numItems", value.asInstanceOf[js.Any])
+    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
     
     @scala.inline
-    def deleteNumItems: Self = this.set("numItems", js.undefined)
+    def setServability(value: String): Self = StObject.set(x, "servability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolution(value: String): Self = this.set("resolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolution: Self = this.set("resolution", js.undefined)
-    
-    @scala.inline
-    def setServability(value: String): Self = this.set("servability", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServability: Self = this.set("servability", js.undefined)
+    def setServabilityUndefined: Self = StObject.set(x, "servability", js.undefined)
   }
 }

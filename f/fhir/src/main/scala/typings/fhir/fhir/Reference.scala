@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,48 +45,36 @@ object Reference {
   }
   
   @scala.inline
-  implicit class ReferenceOps[Self <: Reference] (val x: Self) extends AnyVal {
+  implicit class ReferenceMutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_display(value: Element): Self = this.set("_display", value.asInstanceOf[js.Any])
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def delete_display: Self = this.set("_display", js.undefined)
+    def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_reference(value: Element): Self = this.set("_reference", value.asInstanceOf[js.Any])
+    def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
     
     @scala.inline
-    def delete_reference: Self = this.set("_reference", js.undefined)
+    def set_display(value: Element): Self = StObject.set(x, "_display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay(value: String): Self = this.set("display", value.asInstanceOf[js.Any])
+    def set_displayUndefined: Self = StObject.set(x, "_display", js.undefined)
     
     @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def set_reference(value: Element): Self = StObject.set(x, "_reference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
-    
-    @scala.inline
-    def setReference(value: String): Self = this.set("reference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReference: Self = this.set("reference", js.undefined)
+    def set_referenceUndefined: Self = StObject.set(x, "_reference", js.undefined)
   }
 }

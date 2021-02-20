@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,30 +26,18 @@ object IgTimePickerItemsDelta {
   }
   
   @scala.inline
-  implicit class IgTimePickerItemsDeltaOps[Self <: IgTimePickerItemsDelta] (val x: Self) extends AnyVal {
+  implicit class IgTimePickerItemsDeltaMutableBuilder[Self <: IgTimePickerItemsDelta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHours(value: Double): Self = this.set("hours", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHours: Self = this.set("hours", js.undefined)
-    
-    @scala.inline
-    def setMinutes(value: Double): Self = this.set("minutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinutes: Self = this.set("minutes", js.undefined)
+    def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
   }
 }

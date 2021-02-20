@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Highestline extends js.Object {
+trait Highestline extends StObject {
   
   var highest_line: Double = js.native
   
@@ -24,30 +25,18 @@ object Highestline {
   }
   
   @scala.inline
-  implicit class HighestlineOps[Self <: Highestline] (val x: Self) extends AnyVal {
+  implicit class HighestlineMutableBuilder[Self <: Highestline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighest_line(value: Double): Self = StObject.set(x, "highest_line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLowest_line(value: Double): Self = StObject.set(x, "lowest_line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setY_bottom(value: Double): Self = StObject.set(x, "y_bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighest_line(value: Double): Self = this.set("highest_line", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLowest_line(value: Double): Self = this.set("lowest_line", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY_bottom(value: Double): Self = this.set("y_bottom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY_top(value: Double): Self = this.set("y_top", value.asInstanceOf[js.Any])
+    def setY_top(value: Double): Self = StObject.set(x, "y_top", value.asInstanceOf[js.Any])
   }
 }

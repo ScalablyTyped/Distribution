@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SeriesCollection extends js.Object {
+trait SeriesCollection extends StObject {
   
   def apply(Index: String): Series = js.native
   def apply(Index: Double): Series = js.native

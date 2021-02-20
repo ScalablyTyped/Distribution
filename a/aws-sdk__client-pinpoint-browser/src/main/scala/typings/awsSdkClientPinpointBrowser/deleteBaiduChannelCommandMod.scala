@@ -7,14 +7,14 @@ import typings.awsSdkClientPinpointBrowser.typesDeleteBaiduChannelInputMod.Delet
 import typings.awsSdkClientPinpointBrowser.typesDeleteBaiduChannelOutputMod.DeleteBaiduChannelOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/commands/DeleteBaiduChannelCommand", JSImport.Namespace)
-@js.native
-object deleteBaiduChannelCommandMod extends js.Object {
+object deleteBaiduChannelCommandMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/commands/DeleteBaiduChannelCommand", "DeleteBaiduChannelCommand")
   @js.native
   class DeleteBaiduChannelCommand protected () extends Command[
           InputTypesUnion, 

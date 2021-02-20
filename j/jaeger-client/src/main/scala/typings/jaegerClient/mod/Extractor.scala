@@ -1,12 +1,13 @@
 package typings.jaegerClient.mod
 
 import typings.opentracing.mod.SpanContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Extractor extends js.Object {
+trait Extractor extends StObject {
   
   def extract(carrier: js.Any): SpanContext | Null = js.native
 }
@@ -19,21 +20,9 @@ object Extractor {
   }
   
   @scala.inline
-  implicit class ExtractorOps[Self <: Extractor] (val x: Self) extends AnyVal {
+  implicit class ExtractorMutableBuilder[Self <: Extractor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExtract(value: js.Any => SpanContext | Null): Self = this.set("extract", js.Any.fromFunction1(value))
+    def setExtract(value: js.Any => SpanContext | Null): Self = StObject.set(x, "extract", js.Any.fromFunction1(value))
   }
 }

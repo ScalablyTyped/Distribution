@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,33 +32,21 @@ object FeatureTableSelectionChangeEventAdded {
   }
   
   @scala.inline
-  implicit class FeatureTableSelectionChangeEventAddedOps[Self <: FeatureTableSelectionChangeEventAdded] (val x: Self) extends AnyVal {
+  implicit class FeatureTableSelectionChangeEventAddedMutableBuilder[Self <: FeatureTableSelectionChangeEventAdded] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachments(value: js.Array[AttachmentInfo]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentsVarargs(value: AttachmentInfo*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeature(value: Graphic): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentsVarargs(value: AttachmentInfo*): Self = this.set("attachments", js.Array(value :_*))
+    def setRelatedRecords(value: js.Array[Graphic]): Self = StObject.set(x, "relatedRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachments(value: js.Array[AttachmentInfo]): Self = this.set("attachments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFeature(value: Graphic): Self = this.set("feature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelatedRecordsVarargs(value: Graphic*): Self = this.set("relatedRecords", js.Array(value :_*))
-    
-    @scala.inline
-    def setRelatedRecords(value: js.Array[Graphic]): Self = this.set("relatedRecords", value.asInstanceOf[js.Any])
+    def setRelatedRecordsVarargs(value: Graphic*): Self = StObject.set(x, "relatedRecords", js.Array(value :_*))
   }
 }

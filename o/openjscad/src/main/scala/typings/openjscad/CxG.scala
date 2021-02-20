@@ -3,12 +3,13 @@ package typings.openjscad
 import typings.openjscad.CSG.Matrix4x4
 import typings.openjscad.CSG.Plane
 import typings.openjscad.CSG.Vector3D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CxG extends js.Object {
+trait CxG extends StObject {
   
   def getBounds(): js.Array[CxG] = js.native
   

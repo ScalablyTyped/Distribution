@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecipientSignatureProviderOptions extends js.Object {
+trait RecipientSignatureProviderOptions extends StObject {
   
   /**
     * Reserved for DocuSign.
@@ -60,66 +61,54 @@ object RecipientSignatureProviderOptions {
   }
   
   @scala.inline
-  implicit class RecipientSignatureProviderOptionsOps[Self <: RecipientSignatureProviderOptions] (val x: Self) extends AnyVal {
+  implicit class RecipientSignatureProviderOptionsMutableBuilder[Self <: RecipientSignatureProviderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCpfNumber(value: String): Self = StObject.set(x, "cpfNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCpfNumberMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "cpfNumberMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCpfNumberMetadataUndefined: Self = StObject.set(x, "cpfNumberMetadata", js.undefined)
     
     @scala.inline
-    def setCpfNumber(value: String): Self = this.set("cpfNumber", value.asInstanceOf[js.Any])
+    def setCpfNumberUndefined: Self = StObject.set(x, "cpfNumber", js.undefined)
     
     @scala.inline
-    def deleteCpfNumber: Self = this.set("cpfNumber", js.undefined)
+    def setOneTimePassword(value: String): Self = StObject.set(x, "oneTimePassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpfNumberMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("cpfNumberMetadata", value.asInstanceOf[js.Any])
+    def setOneTimePasswordMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "oneTimePasswordMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCpfNumberMetadata: Self = this.set("cpfNumberMetadata", js.undefined)
+    def setOneTimePasswordMetadataUndefined: Self = StObject.set(x, "oneTimePasswordMetadata", js.undefined)
     
     @scala.inline
-    def setOneTimePassword(value: String): Self = this.set("oneTimePassword", value.asInstanceOf[js.Any])
+    def setOneTimePasswordUndefined: Self = StObject.set(x, "oneTimePassword", js.undefined)
     
     @scala.inline
-    def deleteOneTimePassword: Self = this.set("oneTimePassword", js.undefined)
+    def setSignerRole(value: String): Self = StObject.set(x, "signerRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOneTimePasswordMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("oneTimePasswordMetadata", value.asInstanceOf[js.Any])
+    def setSignerRoleMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "signerRoleMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOneTimePasswordMetadata: Self = this.set("oneTimePasswordMetadata", js.undefined)
+    def setSignerRoleMetadataUndefined: Self = StObject.set(x, "signerRoleMetadata", js.undefined)
     
     @scala.inline
-    def setSignerRole(value: String): Self = this.set("signerRole", value.asInstanceOf[js.Any])
+    def setSignerRoleUndefined: Self = StObject.set(x, "signerRole", js.undefined)
     
     @scala.inline
-    def deleteSignerRole: Self = this.set("signerRole", js.undefined)
+    def setSms(value: String): Self = StObject.set(x, "sms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignerRoleMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("signerRoleMetadata", value.asInstanceOf[js.Any])
+    def setSmsMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "smsMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSignerRoleMetadata: Self = this.set("signerRoleMetadata", js.undefined)
+    def setSmsMetadataUndefined: Self = StObject.set(x, "smsMetadata", js.undefined)
     
     @scala.inline
-    def setSms(value: String): Self = this.set("sms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSms: Self = this.set("sms", js.undefined)
-    
-    @scala.inline
-    def setSmsMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("smsMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmsMetadata: Self = this.set("smsMetadata", js.undefined)
+    def setSmsUndefined: Self = StObject.set(x, "sms", js.undefined)
   }
 }

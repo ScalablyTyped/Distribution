@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadBalancerTlsCertificateRenewalSummary extends js.Object {
+trait LoadBalancerTlsCertificateRenewalSummary extends StObject {
   
   /**
     * Contains information about the validation of each domain name in the certificate, as it pertains to Lightsail's managed renewal. This is different from the initial validation that occurs as a result of the RequestCertificate request.
@@ -26,33 +27,21 @@ object LoadBalancerTlsCertificateRenewalSummary {
   }
   
   @scala.inline
-  implicit class LoadBalancerTlsCertificateRenewalSummaryOps[Self <: LoadBalancerTlsCertificateRenewalSummary] (val x: Self) extends AnyVal {
+  implicit class LoadBalancerTlsCertificateRenewalSummaryMutableBuilder[Self <: LoadBalancerTlsCertificateRenewalSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainValidationOptions(value: LoadBalancerTlsCertificateDomainValidationOptionList): Self = StObject.set(x, "domainValidationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainValidationOptionsUndefined: Self = StObject.set(x, "domainValidationOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainValidationOptionsVarargs(value: LoadBalancerTlsCertificateDomainValidationOption*): Self = StObject.set(x, "domainValidationOptions", js.Array(value :_*))
     
     @scala.inline
-    def setDomainValidationOptionsVarargs(value: LoadBalancerTlsCertificateDomainValidationOption*): Self = this.set("domainValidationOptions", js.Array(value :_*))
+    def setRenewalStatus(value: LoadBalancerTlsCertificateRenewalStatus): Self = StObject.set(x, "renewalStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainValidationOptions(value: LoadBalancerTlsCertificateDomainValidationOptionList): Self = this.set("domainValidationOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomainValidationOptions: Self = this.set("domainValidationOptions", js.undefined)
-    
-    @scala.inline
-    def setRenewalStatus(value: LoadBalancerTlsCertificateRenewalStatus): Self = this.set("renewalStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenewalStatus: Self = this.set("renewalStatus", js.undefined)
+    def setRenewalStatusUndefined: Self = StObject.set(x, "renewalStatus", js.undefined)
   }
 }

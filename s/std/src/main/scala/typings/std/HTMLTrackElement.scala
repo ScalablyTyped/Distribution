@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HTMLTrackElement extends HTMLElement {
   
+  var default: scala.Boolean = js.native
+  
   val ERROR: Double = js.native
   
   val LOADED: Double = js.native
@@ -15,8 +18,6 @@ trait HTMLTrackElement extends HTMLElement {
   val LOADING: Double = js.native
   
   val NONE: Double = js.native
-  
-  var default: scala.Boolean = js.native
   
   var kind: java.lang.String = js.native
   

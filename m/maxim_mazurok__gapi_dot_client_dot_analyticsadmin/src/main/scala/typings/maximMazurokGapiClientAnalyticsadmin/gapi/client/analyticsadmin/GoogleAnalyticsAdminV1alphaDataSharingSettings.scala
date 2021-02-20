@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleAnalyticsAdminV1alphaDataSharingSettings extends js.Object {
+trait GoogleAnalyticsAdminV1alphaDataSharingSettings extends StObject {
   
   /** Output only. Resource name. Format: accounts/{account}/dataSharingSettings Example: "accounts/1000/dataSharingSettings" */
   var name: js.UndefOr[String] = js.native
@@ -37,54 +38,42 @@ object GoogleAnalyticsAdminV1alphaDataSharingSettings {
   }
   
   @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaDataSharingSettingsOps[Self <: GoogleAnalyticsAdminV1alphaDataSharingSettings] (val x: Self) extends AnyVal {
+  implicit class GoogleAnalyticsAdminV1alphaDataSharingSettingsMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaDataSharingSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSharingWithGoogleAnySalesEnabled(value: Boolean): Self = StObject.set(x, "sharingWithGoogleAnySalesEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSharingWithGoogleAnySalesEnabledUndefined: Self = StObject.set(x, "sharingWithGoogleAnySalesEnabled", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSharingWithGoogleAssignedSalesEnabled(value: Boolean): Self = StObject.set(x, "sharingWithGoogleAssignedSalesEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharingWithGoogleAnySalesEnabled(value: Boolean): Self = this.set("sharingWithGoogleAnySalesEnabled", value.asInstanceOf[js.Any])
+    def setSharingWithGoogleAssignedSalesEnabledUndefined: Self = StObject.set(x, "sharingWithGoogleAssignedSalesEnabled", js.undefined)
     
     @scala.inline
-    def deleteSharingWithGoogleAnySalesEnabled: Self = this.set("sharingWithGoogleAnySalesEnabled", js.undefined)
+    def setSharingWithGoogleProductsEnabled(value: Boolean): Self = StObject.set(x, "sharingWithGoogleProductsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharingWithGoogleAssignedSalesEnabled(value: Boolean): Self = this.set("sharingWithGoogleAssignedSalesEnabled", value.asInstanceOf[js.Any])
+    def setSharingWithGoogleProductsEnabledUndefined: Self = StObject.set(x, "sharingWithGoogleProductsEnabled", js.undefined)
     
     @scala.inline
-    def deleteSharingWithGoogleAssignedSalesEnabled: Self = this.set("sharingWithGoogleAssignedSalesEnabled", js.undefined)
+    def setSharingWithGoogleSupportEnabled(value: Boolean): Self = StObject.set(x, "sharingWithGoogleSupportEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharingWithGoogleProductsEnabled(value: Boolean): Self = this.set("sharingWithGoogleProductsEnabled", value.asInstanceOf[js.Any])
+    def setSharingWithGoogleSupportEnabledUndefined: Self = StObject.set(x, "sharingWithGoogleSupportEnabled", js.undefined)
     
     @scala.inline
-    def deleteSharingWithGoogleProductsEnabled: Self = this.set("sharingWithGoogleProductsEnabled", js.undefined)
+    def setSharingWithOthersEnabled(value: Boolean): Self = StObject.set(x, "sharingWithOthersEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharingWithGoogleSupportEnabled(value: Boolean): Self = this.set("sharingWithGoogleSupportEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSharingWithGoogleSupportEnabled: Self = this.set("sharingWithGoogleSupportEnabled", js.undefined)
-    
-    @scala.inline
-    def setSharingWithOthersEnabled(value: Boolean): Self = this.set("sharingWithOthersEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSharingWithOthersEnabled: Self = this.set("sharingWithOthersEnabled", js.undefined)
+    def setSharingWithOthersEnabledUndefined: Self = StObject.set(x, "sharingWithOthersEnabled", js.undefined)
   }
 }

@@ -4,12 +4,13 @@ import typings.jwplayer.jwplayerNumbers.`0`
 import typings.jwplayer.jwplayerNumbers.`1`
 import typings.jwplayer.jwplayerStrings.buffering
 import typings.jwplayer.jwplayerStrings.playing
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlayParam extends js.Object {
+trait PlayParam extends StObject {
   
   var oldstate: buffering | playing = js.native
   
@@ -24,24 +25,12 @@ object PlayParam {
   }
   
   @scala.inline
-  implicit class PlayParamOps[Self <: PlayParam] (val x: Self) extends AnyVal {
+  implicit class PlayParamMutableBuilder[Self <: PlayParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOldstate(value: buffering | playing): Self = StObject.set(x, "oldstate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOldstate(value: buffering | playing): Self = this.set("oldstate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewable(value: `0` | `1`): Self = this.set("viewable", value.asInstanceOf[js.Any])
+    def setViewable(value: `0` | `1`): Self = StObject.set(x, "viewable", value.asInstanceOf[js.Any])
   }
 }

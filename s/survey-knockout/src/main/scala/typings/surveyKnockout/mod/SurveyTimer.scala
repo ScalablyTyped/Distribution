@@ -1,12 +1,13 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "SurveyTimer")
 @js.native
-class SurveyTimer () extends js.Object {
+class SurveyTimer () extends StObject {
   
   def doTimer(): Unit = js.native
   
@@ -19,9 +20,9 @@ class SurveyTimer () extends js.Object {
   def stop(func: js.Function0[_]): Unit = js.native
 }
 /* static members */
-@JSImport("survey-knockout", "SurveyTimer")
-@js.native
-object SurveyTimer extends js.Object {
+object SurveyTimer {
   
+  @JSImport("survey-knockout", "SurveyTimer.instance")
+  @js.native
   val instance: SurveyTimer = js.native
 }

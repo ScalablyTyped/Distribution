@@ -1,11 +1,12 @@
 package typings.servicenow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlideDateTime extends js.Object {
+trait GlideDateTime extends StObject {
   
   def add(gd: Double): Unit = js.native
   def add(gd: GlideTime): Unit = js.native

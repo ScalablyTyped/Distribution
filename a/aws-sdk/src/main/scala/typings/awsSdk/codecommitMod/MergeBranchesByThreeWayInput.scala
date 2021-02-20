@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MergeBranchesByThreeWayInput extends js.Object {
+trait MergeBranchesByThreeWayInput extends StObject {
   
   /**
     * The name of the author who created the commit. This information is used as both the author and committer for the commit.
@@ -75,75 +76,63 @@ object MergeBranchesByThreeWayInput {
   }
   
   @scala.inline
-  implicit class MergeBranchesByThreeWayInputOps[Self <: MergeBranchesByThreeWayInput] (val x: Self) extends AnyVal {
+  implicit class MergeBranchesByThreeWayInputMutableBuilder[Self <: MergeBranchesByThreeWayInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorName(value: Name): Self = StObject.set(x, "authorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorNameUndefined: Self = StObject.set(x, "authorName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommitMessage(value: Message): Self = StObject.set(x, "commitMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationCommitSpecifier(value: CommitName): Self = this.set("destinationCommitSpecifier", value.asInstanceOf[js.Any])
+    def setCommitMessageUndefined: Self = StObject.set(x, "commitMessage", js.undefined)
     
     @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    def setConflictDetailLevel(value: ConflictDetailLevelTypeEnum): Self = StObject.set(x, "conflictDetailLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceCommitSpecifier(value: CommitName): Self = this.set("sourceCommitSpecifier", value.asInstanceOf[js.Any])
+    def setConflictDetailLevelUndefined: Self = StObject.set(x, "conflictDetailLevel", js.undefined)
     
     @scala.inline
-    def setAuthorName(value: Name): Self = this.set("authorName", value.asInstanceOf[js.Any])
+    def setConflictResolution(value: ConflictResolution): Self = StObject.set(x, "conflictResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthorName: Self = this.set("authorName", js.undefined)
+    def setConflictResolutionStrategy(value: ConflictResolutionStrategyTypeEnum): Self = StObject.set(x, "conflictResolutionStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitMessage(value: Message): Self = this.set("commitMessage", value.asInstanceOf[js.Any])
+    def setConflictResolutionStrategyUndefined: Self = StObject.set(x, "conflictResolutionStrategy", js.undefined)
     
     @scala.inline
-    def deleteCommitMessage: Self = this.set("commitMessage", js.undefined)
+    def setConflictResolutionUndefined: Self = StObject.set(x, "conflictResolution", js.undefined)
     
     @scala.inline
-    def setConflictDetailLevel(value: ConflictDetailLevelTypeEnum): Self = this.set("conflictDetailLevel", value.asInstanceOf[js.Any])
+    def setDestinationCommitSpecifier(value: CommitName): Self = StObject.set(x, "destinationCommitSpecifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConflictDetailLevel: Self = this.set("conflictDetailLevel", js.undefined)
+    def setEmail(value: Email): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConflictResolution(value: ConflictResolution): Self = this.set("conflictResolution", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteConflictResolution: Self = this.set("conflictResolution", js.undefined)
+    def setKeepEmptyFolders(value: KeepEmptyFolders): Self = StObject.set(x, "keepEmptyFolders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConflictResolutionStrategy(value: ConflictResolutionStrategyTypeEnum): Self = this.set("conflictResolutionStrategy", value.asInstanceOf[js.Any])
+    def setKeepEmptyFoldersUndefined: Self = StObject.set(x, "keepEmptyFolders", js.undefined)
     
     @scala.inline
-    def deleteConflictResolutionStrategy: Self = this.set("conflictResolutionStrategy", js.undefined)
+    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: Email): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setSourceCommitSpecifier(value: CommitName): Self = StObject.set(x, "sourceCommitSpecifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setTargetBranch(value: BranchName): Self = StObject.set(x, "targetBranch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepEmptyFolders(value: KeepEmptyFolders): Self = this.set("keepEmptyFolders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeepEmptyFolders: Self = this.set("keepEmptyFolders", js.undefined)
-    
-    @scala.inline
-    def setTargetBranch(value: BranchName): Self = this.set("targetBranch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetBranch: Self = this.set("targetBranch", js.undefined)
+    def setTargetBranchUndefined: Self = StObject.set(x, "targetBranch", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableAutoScalingDescription extends js.Object {
+trait TableAutoScalingDescription extends StObject {
   
   /**
     * Represents replicas of the global table.
@@ -31,39 +32,27 @@ object TableAutoScalingDescription {
   }
   
   @scala.inline
-  implicit class TableAutoScalingDescriptionOps[Self <: TableAutoScalingDescription] (val x: Self) extends AnyVal {
+  implicit class TableAutoScalingDescriptionMutableBuilder[Self <: TableAutoScalingDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReplicas(value: ReplicaAutoScalingDescriptionList): Self = StObject.set(x, "Replicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReplicasUndefined: Self = StObject.set(x, "Replicas", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplicasVarargs(value: ReplicaAutoScalingDescription*): Self = StObject.set(x, "Replicas", js.Array(value :_*))
     
     @scala.inline
-    def setReplicasVarargs(value: ReplicaAutoScalingDescription*): Self = this.set("Replicas", js.Array(value :_*))
+    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicas(value: ReplicaAutoScalingDescriptionList): Self = this.set("Replicas", value.asInstanceOf[js.Any])
+    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
     
     @scala.inline
-    def deleteReplicas: Self = this.set("Replicas", js.undefined)
+    def setTableStatus(value: TableStatus): Self = StObject.set(x, "TableStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableName: Self = this.set("TableName", js.undefined)
-    
-    @scala.inline
-    def setTableStatus(value: TableStatus): Self = this.set("TableStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableStatus: Self = this.set("TableStatus", js.undefined)
+    def setTableStatusUndefined: Self = StObject.set(x, "TableStatus", js.undefined)
   }
 }

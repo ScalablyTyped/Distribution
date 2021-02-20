@@ -1,11 +1,12 @@
 package typings.oakdexPokedex.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItemPokemonChange extends js.Object {
+trait ItemPokemonChange extends StObject {
   
   var change: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object ItemPokemonChange {
   }
   
   @scala.inline
-  implicit class ItemPokemonChangeOps[Self <: ItemPokemonChange] (val x: Self) extends AnyVal {
+  implicit class ItemPokemonChangeMutableBuilder[Self <: ItemPokemonChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChange(value: String): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChange_by(value: Double): Self = StObject.set(x, "change_by", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setChange_byUndefined: Self = StObject.set(x, "change_by", js.undefined)
     
     @scala.inline
-    def setChange(value: String): Self = this.set("change", value.asInstanceOf[js.Any])
+    def setChange_by_percent(value: Double): Self = StObject.set(x, "change_by_percent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
+    def setChange_by_percentUndefined: Self = StObject.set(x, "change_by_percent", js.undefined)
     
     @scala.inline
-    def setChange_by(value: Double): Self = this.set("change_by", value.asInstanceOf[js.Any])
+    def setConditions(value: js.Array[String]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChange_by: Self = this.set("change_by", js.undefined)
+    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
     @scala.inline
-    def setChange_by_percent(value: Double): Self = this.set("change_by_percent", value.asInstanceOf[js.Any])
+    def setConditionsVarargs(value: String*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def deleteChange_by_percent: Self = this.set("change_by_percent", js.undefined)
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionsVarargs(value: String*): Self = this.set("conditions", js.Array(value :_*))
+    def setRevive(value: Boolean): Self = StObject.set(x, "revive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: js.Array[String]): Self = this.set("conditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConditions: Self = this.set("conditions", js.undefined)
-    
-    @scala.inline
-    def setRevive(value: Boolean): Self = this.set("revive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevive: Self = this.set("revive", js.undefined)
+    def setReviveUndefined: Self = StObject.set(x, "revive", js.undefined)
   }
 }

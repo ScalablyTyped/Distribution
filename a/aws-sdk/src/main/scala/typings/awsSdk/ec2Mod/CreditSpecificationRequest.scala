@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreditSpecificationRequest extends js.Object {
+trait CreditSpecificationRequest extends StObject {
   
   /**
     * The credit option for CPU usage of a T2, T3, or T3a instance. Valid values are standard and unlimited.
@@ -21,21 +22,9 @@ object CreditSpecificationRequest {
   }
   
   @scala.inline
-  implicit class CreditSpecificationRequestOps[Self <: CreditSpecificationRequest] (val x: Self) extends AnyVal {
+  implicit class CreditSpecificationRequestMutableBuilder[Self <: CreditSpecificationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCpuCredits(value: String): Self = this.set("CpuCredits", value.asInstanceOf[js.Any])
+    def setCpuCredits(value: String): Self = StObject.set(x, "CpuCredits", value.asInstanceOf[js.Any])
   }
 }

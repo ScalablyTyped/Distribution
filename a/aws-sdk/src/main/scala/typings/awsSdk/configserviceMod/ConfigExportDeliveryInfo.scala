@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigExportDeliveryInfo extends js.Object {
+trait ConfigExportDeliveryInfo extends StObject {
   
   /**
     * The time of the last attempted delivery.
@@ -46,54 +47,42 @@ object ConfigExportDeliveryInfo {
   }
   
   @scala.inline
-  implicit class ConfigExportDeliveryInfoOps[Self <: ConfigExportDeliveryInfo] (val x: Self) extends AnyVal {
+  implicit class ConfigExportDeliveryInfoMutableBuilder[Self <: ConfigExportDeliveryInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastAttemptTime(value: Date): Self = StObject.set(x, "lastAttemptTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastAttemptTimeUndefined: Self = StObject.set(x, "lastAttemptTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastErrorCode(value: String): Self = StObject.set(x, "lastErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastAttemptTime(value: Date): Self = this.set("lastAttemptTime", value.asInstanceOf[js.Any])
+    def setLastErrorCodeUndefined: Self = StObject.set(x, "lastErrorCode", js.undefined)
     
     @scala.inline
-    def deleteLastAttemptTime: Self = this.set("lastAttemptTime", js.undefined)
+    def setLastErrorMessage(value: String): Self = StObject.set(x, "lastErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastErrorCode(value: String): Self = this.set("lastErrorCode", value.asInstanceOf[js.Any])
+    def setLastErrorMessageUndefined: Self = StObject.set(x, "lastErrorMessage", js.undefined)
     
     @scala.inline
-    def deleteLastErrorCode: Self = this.set("lastErrorCode", js.undefined)
+    def setLastStatus(value: DeliveryStatus): Self = StObject.set(x, "lastStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastErrorMessage(value: String): Self = this.set("lastErrorMessage", value.asInstanceOf[js.Any])
+    def setLastStatusUndefined: Self = StObject.set(x, "lastStatus", js.undefined)
     
     @scala.inline
-    def deleteLastErrorMessage: Self = this.set("lastErrorMessage", js.undefined)
+    def setLastSuccessfulTime(value: Date): Self = StObject.set(x, "lastSuccessfulTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastStatus(value: DeliveryStatus): Self = this.set("lastStatus", value.asInstanceOf[js.Any])
+    def setLastSuccessfulTimeUndefined: Self = StObject.set(x, "lastSuccessfulTime", js.undefined)
     
     @scala.inline
-    def deleteLastStatus: Self = this.set("lastStatus", js.undefined)
+    def setNextDeliveryTime(value: Date): Self = StObject.set(x, "nextDeliveryTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSuccessfulTime(value: Date): Self = this.set("lastSuccessfulTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastSuccessfulTime: Self = this.set("lastSuccessfulTime", js.undefined)
-    
-    @scala.inline
-    def setNextDeliveryTime(value: Date): Self = this.set("nextDeliveryTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextDeliveryTime: Self = this.set("nextDeliveryTime", js.undefined)
+    def setNextDeliveryTimeUndefined: Self = StObject.set(x, "nextDeliveryTime", js.undefined)
   }
 }

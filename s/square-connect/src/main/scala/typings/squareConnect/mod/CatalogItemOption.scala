@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogItemOption")
 @js.native
-class CatalogItemOption () extends js.Object {
+class CatalogItemOption () extends StObject {
   
   /**
     * TThe item option's human-readable description. Displayed in the Square Point of Sale app for the seller and in the

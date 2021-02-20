@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateBusinessReportScheduleResponse extends js.Object {
+trait CreateBusinessReportScheduleResponse extends StObject {
   
   /**
     * The ARN of the business report schedule.
@@ -21,24 +22,12 @@ object CreateBusinessReportScheduleResponse {
   }
   
   @scala.inline
-  implicit class CreateBusinessReportScheduleResponseOps[Self <: CreateBusinessReportScheduleResponse] (val x: Self) extends AnyVal {
+  implicit class CreateBusinessReportScheduleResponseMutableBuilder[Self <: CreateBusinessReportScheduleResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScheduleArn(value: Arn): Self = StObject.set(x, "ScheduleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScheduleArn(value: Arn): Self = this.set("ScheduleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduleArn: Self = this.set("ScheduleArn", js.undefined)
+    def setScheduleArnUndefined: Self = StObject.set(x, "ScheduleArn", js.undefined)
   }
 }

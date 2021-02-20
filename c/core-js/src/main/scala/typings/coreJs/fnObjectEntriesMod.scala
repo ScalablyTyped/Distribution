@@ -1,11 +1,14 @@
 package typings.coreJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/library/fn/object/entries", JSImport.Namespace)
-@js.native
-object fnObjectEntriesMod
-  extends TopLevel[js.Function1[/* object */ js.Any, Array[js.Any]]]
+object fnObjectEntriesMod {
+  
+  /* was `typeof core.Object.entries` */
+  @JSImport("core-js/library/fn/object/entries", JSImport.Namespace)
+  @js.native
+  def apply(`object`: js.Any): Array[_] = js.native
+}

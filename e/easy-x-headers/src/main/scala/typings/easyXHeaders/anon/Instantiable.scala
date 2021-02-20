@@ -4,14 +4,31 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.node.Buffer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Instantiable
-  extends Instantiable1[
-      (/* array */ js.Array[js.Any]) | (/* size */ Double) | (/* str */ String) | (/* size */ Uint8Array), 
+  extends /**
+  * Allocates a new buffer containing the given {array} of octets.
+  *
+  * @param array The octets to store.
+  */
+/**
+  * Allocates a new buffer containing the given {str}.
+  *
+  * @param str String to store in buffer.
+  * @param encoding encoding to use, optional.  Default is 'utf8'
+  */
+/**
+  * Allocates a new buffer of {size} octets.
+  *
+  * @param size count of octets to allocate.
+  */
+Instantiable1[
+      (/* array */ js.Array[js.Any]) | (/* size */ Double) | (/* str */ String) | (/* array */ Uint8Array), 
       Buffer
     ]
      with Instantiable2[/* str */ String, /* encoding */ String, Buffer] {

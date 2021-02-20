@@ -1,6 +1,7 @@
 package typings.winjs.WinJS.UI
 
 import typings.winjs.WinJS.Utilities.Key
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a layout for the ListView in which items are arranged in a grid and items can span multiple grid cells.
   **/
 @js.native
-trait CellSpanningLayout extends js.Object {
+trait CellSpanningLayout extends StObject {
   
   //#endregion Constructors
   //#region Methods
@@ -134,66 +135,54 @@ object CellSpanningLayout {
   }
   
   @scala.inline
-  implicit class CellSpanningLayoutOps[Self <: CellSpanningLayout] (val x: Self) extends AnyVal {
+  implicit class CellSpanningLayoutMutableBuilder[Self <: CellSpanningLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDragLeave(value: () => Unit): Self = StObject.set(x, "dragLeave", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDragOver(value: () => Unit): Self = StObject.set(x, "dragOver", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecuteAnimations(value: () => Unit): Self = StObject.set(x, "executeAnimations", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDragLeave(value: () => Unit): Self = this.set("dragLeave", js.Any.fromFunction0(value))
+    def setGetAdjacent(value: (js.Any, Key) => js.Any): Self = StObject.set(x, "getAdjacent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDragOver(value: () => Unit): Self = this.set("dragOver", js.Any.fromFunction0(value))
+    def setGroupHeaderPosition(value: HeaderPosition): Self = StObject.set(x, "groupHeaderPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecuteAnimations(value: () => Unit): Self = this.set("executeAnimations", js.Any.fromFunction0(value))
+    def setGroupInfo(value: js.Function): Self = StObject.set(x, "groupInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAdjacent(value: (js.Any, Key) => js.Any): Self = this.set("getAdjacent", js.Any.fromFunction2(value))
+    def setHitTest(value: (Double, Double) => Unit): Self = StObject.set(x, "hitTest", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGroupHeaderPosition(value: HeaderPosition): Self = this.set("groupHeaderPosition", value.asInstanceOf[js.Any])
+    def setInitialize(value: (ILayoutSite2, Boolean) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGroupInfo(value: js.Function): Self = this.set("groupInfo", value.asInstanceOf[js.Any])
+    def setItemInfo(value: js.Function): Self = StObject.set(x, "itemInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHitTest(value: (Double, Double) => Unit): Self = this.set("hitTest", js.Any.fromFunction2(value))
+    def setItemsFromRange(value: (Double, Double) => Unit): Self = StObject.set(x, "itemsFromRange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInitialize(value: (ILayoutSite2, Boolean) => Unit): Self = this.set("initialize", js.Any.fromFunction2(value))
+    def setLayout(value: (ILayoutSite2, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "layout", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setItemInfo(value: js.Function): Self = this.set("itemInfo", value.asInstanceOf[js.Any])
+    def setMaximumRowsOrColumns(value: Double): Self = StObject.set(x, "maximumRowsOrColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsFromRange(value: (Double, Double) => Unit): Self = this.set("itemsFromRange", js.Any.fromFunction2(value))
+    def setNumberOfItemsPerItemsBlock(value: js.Any): Self = StObject.set(x, "numberOfItemsPerItemsBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: (ILayoutSite2, js.Any, js.Any, js.Any) => Unit): Self = this.set("layout", js.Any.fromFunction4(value))
+    def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumRowsOrColumns(value: Double): Self = this.set("maximumRowsOrColumns", value.asInstanceOf[js.Any])
+    def setSetupAnimations(value: () => Unit): Self = StObject.set(x, "setupAnimations", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNumberOfItemsPerItemsBlock(value: js.Any): Self = this.set("numberOfItemsPerItemsBlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrientation(value: Orientation): Self = this.set("orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetupAnimations(value: () => Unit): Self = this.set("setupAnimations", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUninitialize(value: () => Unit): Self = this.set("uninitialize", js.Any.fromFunction0(value))
+    def setUninitialize(value: () => Unit): Self = StObject.set(x, "uninitialize", js.Any.fromFunction0(value))
   }
 }

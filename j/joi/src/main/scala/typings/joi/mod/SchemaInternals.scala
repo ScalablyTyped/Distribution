@@ -1,12 +1,13 @@
 package typings.joi.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaInternals extends js.Object {
+trait SchemaInternals extends StObject {
   
   /**
     * Adds a rule to current validation schema.

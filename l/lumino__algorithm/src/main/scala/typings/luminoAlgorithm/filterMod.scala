@@ -2,16 +2,14 @@ package typings.luminoAlgorithm
 
 import typings.luminoAlgorithm.iterMod.IIterator
 import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@lumino/algorithm/types/filter", JSImport.Namespace)
-@js.native
-object filterMod extends js.Object {
+object filterMod {
   
-  def filter[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): IIterator[T] = js.native
-  
+  @JSImport("@lumino/algorithm/types/filter", "FilterIterator")
   @js.native
   class FilterIterator[T] protected () extends IIterator[T] {
     /**
@@ -29,4 +27,8 @@ object filterMod extends js.Object {
     
     var _source: js.Any = js.native
   }
+  
+  @JSImport("@lumino/algorithm/types/filter", "filter")
+  @js.native
+  def filter[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): IIterator[T] = js.native
 }

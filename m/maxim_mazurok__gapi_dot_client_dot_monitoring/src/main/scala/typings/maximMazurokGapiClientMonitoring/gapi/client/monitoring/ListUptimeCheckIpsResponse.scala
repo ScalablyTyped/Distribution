@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListUptimeCheckIpsResponse extends js.Object {
+trait ListUptimeCheckIpsResponse extends StObject {
   
   /**
     * This field represents the pagination token to retrieve the next page of results. If the value is empty, it means no further results for the request. To retrieve the next page of
@@ -25,33 +26,21 @@ object ListUptimeCheckIpsResponse {
   }
   
   @scala.inline
-  implicit class ListUptimeCheckIpsResponseOps[Self <: ListUptimeCheckIpsResponse] (val x: Self) extends AnyVal {
+  implicit class ListUptimeCheckIpsResponseMutableBuilder[Self <: ListUptimeCheckIpsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUptimeCheckIps(value: js.Array[UptimeCheckIp]): Self = StObject.set(x, "uptimeCheckIps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setUptimeCheckIpsUndefined: Self = StObject.set(x, "uptimeCheckIps", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setUptimeCheckIpsVarargs(value: UptimeCheckIp*): Self = this.set("uptimeCheckIps", js.Array(value :_*))
-    
-    @scala.inline
-    def setUptimeCheckIps(value: js.Array[UptimeCheckIp]): Self = this.set("uptimeCheckIps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUptimeCheckIps: Self = this.set("uptimeCheckIps", js.undefined)
+    def setUptimeCheckIpsVarargs(value: UptimeCheckIp*): Self = StObject.set(x, "uptimeCheckIps", js.Array(value :_*))
   }
 }

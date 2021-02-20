@@ -1,12 +1,13 @@
 package typings.sparkpost.mod
 
 import typings.sparkpost.anon.Emailrfc822
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Template extends js.Object {
+trait Template extends StObject {
   
   /** Content that will be used to construct a message  yes  For a full description, see the Content Attributes. Maximum length - 20 MBs */
   var content: TemplateContent | Emailrfc822 = js.native
@@ -55,45 +56,33 @@ object Template {
   }
   
   @scala.inline
-  implicit class TemplateOps[Self <: Template] (val x: Self) extends AnyVal {
+  implicit class TemplateMutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: TemplateContent | Emailrfc822): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: TemplateContent | Emailrfc822): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setLast_update_time(value: String): Self = StObject.set(x, "last_update_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setLast_use(value: String): Self = StObject.set(x, "last_use", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLast_useUndefined: Self = StObject.set(x, "last_use", js.undefined)
     
     @scala.inline
-    def setLast_update_time(value: String): Self = this.set("last_update_time", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOptions(value: TemplateOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: TemplateOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublished(value: Boolean): Self = this.set("published", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLast_use(value: String): Self = this.set("last_use", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLast_use: Self = this.set("last_use", js.undefined)
+    def setPublished(value: Boolean): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
   }
 }

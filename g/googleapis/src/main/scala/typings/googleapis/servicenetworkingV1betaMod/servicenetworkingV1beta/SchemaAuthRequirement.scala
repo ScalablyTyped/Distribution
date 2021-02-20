@@ -1,5 +1,6 @@
 package typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * (JWT)](https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32).
   */
 @js.native
-trait SchemaAuthRequirement extends js.Object {
+trait SchemaAuthRequirement extends StObject {
   
   /**
     * NOTE: This will be deprecated soon, once AuthProvider.audiences is
@@ -42,30 +43,18 @@ object SchemaAuthRequirement {
   }
   
   @scala.inline
-  implicit class SchemaAuthRequirementOps[Self <: SchemaAuthRequirement] (val x: Self) extends AnyVal {
+  implicit class SchemaAuthRequirementMutableBuilder[Self <: SchemaAuthRequirement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudiences(value: String): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudiencesUndefined: Self = StObject.set(x, "audiences", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudiences(value: String): Self = this.set("audiences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAudiences: Self = this.set("audiences", js.undefined)
-    
-    @scala.inline
-    def setProviderId(value: String): Self = this.set("providerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProviderId: Self = this.set("providerId", js.undefined)
+    def setProviderIdUndefined: Self = StObject.set(x, "providerId", js.undefined)
   }
 }

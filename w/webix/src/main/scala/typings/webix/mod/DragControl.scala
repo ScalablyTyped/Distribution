@@ -1,14 +1,14 @@
 package typings.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DragControl extends js.Object {
+trait DragControl extends StObject {
   
   @JSName("$drag")
   def $drag(source: HTMLElement, ev: Event): HTMLElement = js.native
@@ -54,6 +54,3 @@ trait DragControl extends js.Object {
   
   var top: Double = js.native
 }
-@JSImport("webix", "DragControl")
-@js.native
-object DragControl extends TopLevel[DragControl]

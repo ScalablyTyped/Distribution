@@ -1,5 +1,6 @@
 package typings.fabric.fabricImplMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,30 +32,18 @@ object IGroupOptions {
   }
   
   @scala.inline
-  implicit class IGroupOptionsOps[Self <: IGroupOptions] (val x: Self) extends AnyVal {
+  implicit class IGroupOptionsMutableBuilder[Self <: IGroupOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSubTargetCheck(value: Boolean): Self = StObject.set(x, "subTargetCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubTargetCheckUndefined: Self = StObject.set(x, "subTargetCheck", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUseSetOnGroup(value: Boolean): Self = StObject.set(x, "useSetOnGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubTargetCheck(value: Boolean): Self = this.set("subTargetCheck", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubTargetCheck: Self = this.set("subTargetCheck", js.undefined)
-    
-    @scala.inline
-    def setUseSetOnGroup(value: Boolean): Self = this.set("useSetOnGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseSetOnGroup: Self = this.set("useSetOnGroup", js.undefined)
+    def setUseSetOnGroupUndefined: Self = StObject.set(x, "useSetOnGroup", js.undefined)
   }
 }

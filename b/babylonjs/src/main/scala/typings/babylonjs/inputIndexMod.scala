@@ -2,16 +2,16 @@ package typings.babylonjs
 
 import typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes
 import typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/Input/index", JSImport.Namespace)
-@js.native
-object inputIndexMod extends js.Object {
+object inputIndexMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/Input/index", "AnimatedInputBlockTypes")
   @js.native
-  object AnimatedInputBlockTypes extends js.Object {
+  object AnimatedInputBlockTypes extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.babylonjs.animatedInputBlockTypesMod.AnimatedInputBlockTypes with Double] = js.native
@@ -21,6 +21,7 @@ object inputIndexMod extends js.Object {
     /* 1 */ val Time: typings.babylonjs.animatedInputBlockTypesMod.AnimatedInputBlockTypes.Time with Double = js.native
   }
   
+  @JSImport("babylonjs/Materials/Node/Blocks/Input/index", "InputBlock")
   @js.native
   class InputBlock protected ()
     extends typings.babylonjs.inputBlockMod.InputBlock {

@@ -1,11 +1,12 @@
 package typings.orientjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OQuery[T] extends js.Object {
+trait OQuery[T] extends StObject {
   
   def all[T](): js.Promise[js.Array[T]] = js.native
   def all[T](params: js.Any): js.Promise[js.Array[T]] = js.native

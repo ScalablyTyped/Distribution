@@ -1,5 +1,6 @@
 package typings.meteor.meteorMod.Meteor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Error **/
 /** Method **/
 @js.native
-trait MethodThisType extends js.Object {
+trait MethodThisType extends StObject {
   
   var connection: Connection | Null = js.native
   
@@ -28,39 +29,27 @@ object MethodThisType {
   }
   
   @scala.inline
-  implicit class MethodThisTypeOps[Self <: MethodThisType] (val x: Self) extends AnyVal {
+  implicit class MethodThisTypeMutableBuilder[Self <: MethodThisType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionNull: Self = StObject.set(x, "connection", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsSimulation(value: Boolean): Self = StObject.set(x, "isSimulation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSimulation(value: Boolean): Self = this.set("isSimulation", value.asInstanceOf[js.Any])
+    def setSetUserId(value: String => Unit): Self = StObject.set(x, "setUserId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetUserId(value: String => Unit): Self = this.set("setUserId", js.Any.fromFunction1(value))
+    def setUnblock(value: () => Unit): Self = StObject.set(x, "unblock", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setUnblock(value: () => Unit): Self = this.set("unblock", js.Any.fromFunction0(value))
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnection(value: Connection): Self = this.set("connection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConnectionNull: Self = this.set("connection", null)
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserIdNull: Self = this.set("userId", null)
+    def setUserIdNull: Self = StObject.set(x, "userId", null)
   }
 }

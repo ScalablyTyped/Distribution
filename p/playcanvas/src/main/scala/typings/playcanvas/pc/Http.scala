@@ -6,6 +6,7 @@ import typings.playcanvas.anon.Headers
 import typings.playcanvas.pc.callbacks.HttpResponse
 import typings.std.Document
 import typings.std.XMLHttpRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * object at `pc.http`.
   */
 @js.native
-trait Http extends js.Object {
+trait Http extends StObject {
   
   /**
     * Perform an HTTP DELETE request to the given url.

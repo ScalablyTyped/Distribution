@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScriptStatistics extends js.Object {
+trait ScriptStatistics extends StObject {
   
   /** [Output-only] Whether this child job was a statement or expression. */
   var evaluationKind: js.UndefOr[String] = js.native
@@ -25,33 +26,21 @@ object ScriptStatistics {
   }
   
   @scala.inline
-  implicit class ScriptStatisticsOps[Self <: ScriptStatistics] (val x: Self) extends AnyVal {
+  implicit class ScriptStatisticsMutableBuilder[Self <: ScriptStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvaluationKind(value: String): Self = StObject.set(x, "evaluationKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvaluationKindUndefined: Self = StObject.set(x, "evaluationKind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStackFrames(value: js.Array[ScriptStackFrame]): Self = StObject.set(x, "stackFrames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluationKind(value: String): Self = this.set("evaluationKind", value.asInstanceOf[js.Any])
+    def setStackFramesUndefined: Self = StObject.set(x, "stackFrames", js.undefined)
     
     @scala.inline
-    def deleteEvaluationKind: Self = this.set("evaluationKind", js.undefined)
-    
-    @scala.inline
-    def setStackFramesVarargs(value: ScriptStackFrame*): Self = this.set("stackFrames", js.Array(value :_*))
-    
-    @scala.inline
-    def setStackFrames(value: js.Array[ScriptStackFrame]): Self = this.set("stackFrames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackFrames: Self = this.set("stackFrames", js.undefined)
+    def setStackFramesVarargs(value: ScriptStackFrame*): Self = StObject.set(x, "stackFrames", js.Array(value :_*))
   }
 }

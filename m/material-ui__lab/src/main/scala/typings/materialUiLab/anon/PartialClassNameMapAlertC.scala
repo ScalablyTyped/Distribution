@@ -1,12 +1,13 @@
 package typings.materialUiLab.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/lab.@material-ui/lab/Alert/Alert.AlertClassKey>> */
 @js.native
-trait PartialClassNameMapAlertC extends js.Object {
+trait PartialClassNameMapAlertC extends StObject {
   
   var action: js.UndefOr[String] = js.native
   
@@ -49,114 +50,102 @@ object PartialClassNameMapAlertC {
   }
   
   @scala.inline
-  implicit class PartialClassNameMapAlertCOps[Self <: PartialClassNameMapAlertC] (val x: Self) extends AnyVal {
+  implicit class PartialClassNameMapAlertCMutableBuilder[Self <: PartialClassNameMapAlertC] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilledError(value: String): Self = StObject.set(x, "filledError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setFilledErrorUndefined: Self = StObject.set(x, "filledError", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setFilledInfo(value: String): Self = StObject.set(x, "filledInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilledError(value: String): Self = this.set("filledError", value.asInstanceOf[js.Any])
+    def setFilledInfoUndefined: Self = StObject.set(x, "filledInfo", js.undefined)
     
     @scala.inline
-    def deleteFilledError: Self = this.set("filledError", js.undefined)
+    def setFilledSuccess(value: String): Self = StObject.set(x, "filledSuccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilledInfo(value: String): Self = this.set("filledInfo", value.asInstanceOf[js.Any])
+    def setFilledSuccessUndefined: Self = StObject.set(x, "filledSuccess", js.undefined)
     
     @scala.inline
-    def deleteFilledInfo: Self = this.set("filledInfo", js.undefined)
+    def setFilledWarning(value: String): Self = StObject.set(x, "filledWarning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilledSuccess(value: String): Self = this.set("filledSuccess", value.asInstanceOf[js.Any])
+    def setFilledWarningUndefined: Self = StObject.set(x, "filledWarning", js.undefined)
     
     @scala.inline
-    def deleteFilledSuccess: Self = this.set("filledSuccess", js.undefined)
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilledWarning(value: String): Self = this.set("filledWarning", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteFilledWarning: Self = this.set("filledWarning", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setOutlinedError(value: String): Self = StObject.set(x, "outlinedError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setOutlinedErrorUndefined: Self = StObject.set(x, "outlinedError", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setOutlinedInfo(value: String): Self = StObject.set(x, "outlinedInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlinedError(value: String): Self = this.set("outlinedError", value.asInstanceOf[js.Any])
+    def setOutlinedInfoUndefined: Self = StObject.set(x, "outlinedInfo", js.undefined)
     
     @scala.inline
-    def deleteOutlinedError: Self = this.set("outlinedError", js.undefined)
+    def setOutlinedSuccess(value: String): Self = StObject.set(x, "outlinedSuccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlinedInfo(value: String): Self = this.set("outlinedInfo", value.asInstanceOf[js.Any])
+    def setOutlinedSuccessUndefined: Self = StObject.set(x, "outlinedSuccess", js.undefined)
     
     @scala.inline
-    def deleteOutlinedInfo: Self = this.set("outlinedInfo", js.undefined)
+    def setOutlinedWarning(value: String): Self = StObject.set(x, "outlinedWarning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlinedSuccess(value: String): Self = this.set("outlinedSuccess", value.asInstanceOf[js.Any])
+    def setOutlinedWarningUndefined: Self = StObject.set(x, "outlinedWarning", js.undefined)
     
     @scala.inline
-    def deleteOutlinedSuccess: Self = this.set("outlinedSuccess", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlinedWarning(value: String): Self = this.set("outlinedWarning", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteOutlinedWarning: Self = this.set("outlinedWarning", js.undefined)
+    def setStandardError(value: String): Self = StObject.set(x, "standardError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setStandardErrorUndefined: Self = StObject.set(x, "standardError", js.undefined)
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setStandardInfo(value: String): Self = StObject.set(x, "standardInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandardError(value: String): Self = this.set("standardError", value.asInstanceOf[js.Any])
+    def setStandardInfoUndefined: Self = StObject.set(x, "standardInfo", js.undefined)
     
     @scala.inline
-    def deleteStandardError: Self = this.set("standardError", js.undefined)
+    def setStandardSuccess(value: String): Self = StObject.set(x, "standardSuccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandardInfo(value: String): Self = this.set("standardInfo", value.asInstanceOf[js.Any])
+    def setStandardSuccessUndefined: Self = StObject.set(x, "standardSuccess", js.undefined)
     
     @scala.inline
-    def deleteStandardInfo: Self = this.set("standardInfo", js.undefined)
+    def setStandardWarning(value: String): Self = StObject.set(x, "standardWarning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandardSuccess(value: String): Self = this.set("standardSuccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStandardSuccess: Self = this.set("standardSuccess", js.undefined)
-    
-    @scala.inline
-    def setStandardWarning(value: String): Self = this.set("standardWarning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStandardWarning: Self = this.set("standardWarning", js.undefined)
+    def setStandardWarningUndefined: Self = StObject.set(x, "standardWarning", js.undefined)
   }
 }

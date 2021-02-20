@@ -1,22 +1,38 @@
 package typings.reactSpinners
 
 import typings.emotionSerialize.mod.Keyframes
-import typings.react.mod.Component
+import typings.react.mod.PureComponent
 import typings.reactSpinners.interfacesMod.CalcFunction
 import typings.reactSpinners.interfacesMod.LoaderSizeMarginProps
 import typings.reactSpinners.interfacesMod.StyleFunction
 import typings.reactSpinners.interfacesMod.StyleFunctionWithIndex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-spinners/PacmanLoader", JSImport.Namespace)
-@js.native
-object pacmanLoaderMod extends js.Object {
+object pacmanLoaderMod {
+  
+  @JSImport("react-spinners/PacmanLoader", JSImport.Default)
+  @js.native
+  class default () extends Loader
+  object default {
+    
+    @JSImport("react-spinners/PacmanLoader", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("react-spinners/PacmanLoader", "default.defaultProps")
+    @js.native
+    def defaultProps: LoaderSizeMarginProps = js.native
+    @scala.inline
+    def defaultProps_=(x: LoaderSizeMarginProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
   trait Loader
-    extends Component[LoaderSizeMarginProps, js.Object, js.Any] {
+    extends PureComponent[LoaderSizeMarginProps, js.Object, js.Any] {
     
     var ball: CalcFunction[Keyframes] = js.native
     
@@ -33,14 +49,5 @@ object pacmanLoaderMod extends js.Object {
     var s2: CalcFunction[String] = js.native
     
     var wrapper: StyleFunction = js.native
-  }
-  
-  @js.native
-  class default () extends Loader
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var defaultProps: LoaderSizeMarginProps = js.native
   }
 }

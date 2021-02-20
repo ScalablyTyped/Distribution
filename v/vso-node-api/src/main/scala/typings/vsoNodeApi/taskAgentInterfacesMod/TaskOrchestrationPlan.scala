@@ -1,6 +1,7 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,51 +60,39 @@ object TaskOrchestrationPlan {
   }
   
   @scala.inline
-  implicit class TaskOrchestrationPlanOps[Self <: TaskOrchestrationPlan] (val x: Self) extends AnyVal {
+  implicit class TaskOrchestrationPlanMutableBuilder[Self <: TaskOrchestrationPlan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironment(value: PlanEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImplementation(value: TaskOrchestrationContainer): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: PlanEnvironment): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setPlanGroup(value: String): Self = StObject.set(x, "planGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinishTime(value: Date): Self = this.set("finishTime", value.asInstanceOf[js.Any])
+    def setRequestedById(value: String): Self = StObject.set(x, "requestedById", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImplementation(value: TaskOrchestrationContainer): Self = this.set("implementation", value.asInstanceOf[js.Any])
+    def setRequestedForId(value: String): Self = StObject.set(x, "requestedForId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlanGroup(value: String): Self = this.set("planGroup", value.asInstanceOf[js.Any])
+    def setResult(value: TaskResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedById(value: String): Self = this.set("requestedById", value.asInstanceOf[js.Any])
+    def setResultCode(value: String): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedForId(value: String): Self = this.set("requestedForId", value.asInstanceOf[js.Any])
+    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: TaskResult): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setState(value: TaskOrchestrationPlanState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultCode(value: String): Self = this.set("resultCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTime(value: Date): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: TaskOrchestrationPlanState): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeline(value: TimelineReference): Self = this.set("timeline", value.asInstanceOf[js.Any])
+    def setTimeline(value: TimelineReference): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
   }
 }

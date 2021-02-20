@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,6 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** This holds ForceDirectedLayout-specific information about Nodes.*/
 @JSImport("go", "ForceDirectedVertex")
 @js.native
+/**
+  * This constructs a vertex that does not know about any Node.
+  */
 class ForceDirectedVertex () extends LayoutVertex {
   
   /**Gets or sets the electrical charge for this vertex.*/

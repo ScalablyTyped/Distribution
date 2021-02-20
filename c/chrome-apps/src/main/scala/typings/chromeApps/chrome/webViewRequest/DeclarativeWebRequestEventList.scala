@@ -1,5 +1,6 @@
 package typings.chromeApps.chrome.webViewRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.chromeApps.chromeAppsStrings.declarativeContentDotonRequest
   - typings.chromeApps.chromeAppsStrings.declarativeContentDotonMessage
 */
-trait DeclarativeWebRequestEventList extends js.Object
+trait DeclarativeWebRequestEventList extends StObject
 object DeclarativeWebRequestEventList {
   
   @scala.inline

@@ -4,13 +4,14 @@ import typings.antd.formItemLabelMod.LabelTooltipType
 import typings.antd.gridColMod.ColProps
 import typings.antd.interfaceMod.FormLabelAlign
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined antd.antd/lib/form/FormItemLabel.FormItemLabelProps & {  required :boolean | undefined,   prefixCls :string} */
 @js.native
-trait FormItemLabelPropsrequire extends js.Object {
+trait FormItemLabelPropsrequire extends StObject {
   
   var colon: js.UndefOr[Boolean] = js.native
   
@@ -39,69 +40,57 @@ object FormItemLabelPropsrequire {
   }
   
   @scala.inline
-  implicit class FormItemLabelPropsrequireOps[Self <: FormItemLabelPropsrequire] (val x: Self) extends AnyVal {
+  implicit class FormItemLabelPropsrequireMutableBuilder[Self <: FormItemLabelPropsrequire] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColon(value: Boolean): Self = StObject.set(x, "colon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColonUndefined: Self = StObject.set(x, "colon", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHtmlFor(value: String): Self = StObject.set(x, "htmlFor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    def setHtmlForUndefined: Self = StObject.set(x, "htmlFor", js.undefined)
     
     @scala.inline
-    def setColon(value: Boolean): Self = this.set("colon", value.asInstanceOf[js.Any])
+    def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColon: Self = this.set("colon", js.undefined)
+    def setLabelAlign(value: FormLabelAlign): Self = StObject.set(x, "labelAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtmlFor(value: String): Self = this.set("htmlFor", value.asInstanceOf[js.Any])
+    def setLabelAlignUndefined: Self = StObject.set(x, "labelAlign", js.undefined)
     
     @scala.inline
-    def deleteHtmlFor: Self = this.set("htmlFor", js.undefined)
+    def setLabelCol(value: ColProps): Self = StObject.set(x, "labelCol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: ReactNode): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabelColUndefined: Self = StObject.set(x, "labelCol", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setLabelAlign(value: FormLabelAlign): Self = this.set("labelAlign", value.asInstanceOf[js.Any])
+    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelAlign: Self = this.set("labelAlign", js.undefined)
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelCol(value: ColProps): Self = this.set("labelCol", value.asInstanceOf[js.Any])
+    def setRequiredMark(value: typings.antd.formFormMod.RequiredMark): Self = StObject.set(x, "requiredMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelCol: Self = this.set("labelCol", js.undefined)
+    def setRequiredMarkUndefined: Self = StObject.set(x, "requiredMark", js.undefined)
     
     @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setTooltip(value: LabelTooltipType): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredMark(value: typings.antd.formFormMod.RequiredMark): Self = this.set("requiredMark", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequiredMark: Self = this.set("requiredMark", js.undefined)
-    
-    @scala.inline
-    def setTooltip(value: LabelTooltipType): Self = this.set("tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

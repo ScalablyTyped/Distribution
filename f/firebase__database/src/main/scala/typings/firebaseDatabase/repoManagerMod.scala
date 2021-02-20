@@ -7,16 +7,16 @@ import typings.firebaseDatabase.authTokenProviderMod.AuthTokenProvider
 import typings.firebaseDatabase.databaseMod.Database
 import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import typings.firebaseDatabase.repoMod.Repo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/RepoManager", JSImport.Namespace)
-@js.native
-object repoManagerMod extends js.Object {
+object repoManagerMod {
   
+  @JSImport("@firebase/database/dist/src/core/RepoManager", "RepoManager")
   @js.native
-  class RepoManager () extends js.Object {
+  class RepoManager () extends StObject {
     
     /**
       * Update an existing repo in place to point to a new host/port.
@@ -83,9 +83,10 @@ object repoManagerMod extends js.Object {
     var useRestClient_ : js.Any = js.native
   }
   /* static members */
-  @js.native
-  object RepoManager extends js.Object {
+  object RepoManager {
     
+    @JSImport("@firebase/database/dist/src/core/RepoManager", "RepoManager.getInstance")
+    @js.native
     def getInstance(): RepoManager = js.native
   }
 }

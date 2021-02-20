@@ -1,11 +1,12 @@
 package typings.twilio.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkflowRuleOptions extends js.Object {
+trait WorkflowRuleOptions extends StObject {
   
   var expression: String = js.native
   
@@ -27,45 +28,33 @@ object WorkflowRuleOptions {
   }
   
   @scala.inline
-  implicit class WorkflowRuleOptionsOps[Self <: WorkflowRuleOptions] (val x: Self) extends AnyVal {
+  implicit class WorkflowRuleOptionsMutableBuilder[Self <: WorkflowRuleOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilter_friendly_name(value: String): Self = StObject.set(x, "filter_friendly_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilter_friendly_nameUndefined: Self = StObject.set(x, "filter_friendly_name", js.undefined)
     
     @scala.inline
-    def setExpression(value: String): Self = this.set("expression", value.asInstanceOf[js.Any])
+    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetsVarargs(value: WorkflowRuleTargetOptions*): Self = this.set("targets", js.Array(value :_*))
+    def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
     
     @scala.inline
-    def setTargets(value: js.Array[WorkflowRuleTargetOptions]): Self = this.set("targets", value.asInstanceOf[js.Any])
+    def setFriendly_name(value: String): Self = StObject.set(x, "friendly_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter_friendly_name(value: String): Self = this.set("filter_friendly_name", value.asInstanceOf[js.Any])
+    def setFriendly_nameUndefined: Self = StObject.set(x, "friendly_name", js.undefined)
     
     @scala.inline
-    def deleteFilter_friendly_name: Self = this.set("filter_friendly_name", js.undefined)
+    def setTargets(value: js.Array[WorkflowRuleTargetOptions]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFriendlyName: Self = this.set("friendlyName", js.undefined)
-    
-    @scala.inline
-    def setFriendly_name(value: String): Self = this.set("friendly_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFriendly_name: Self = this.set("friendly_name", js.undefined)
+    def setTargetsVarargs(value: WorkflowRuleTargetOptions*): Self = StObject.set(x, "targets", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrdersRefundOrderRequest extends js.Object {
+trait OrdersRefundOrderRequest extends StObject {
   
   /** The amount that is refunded. If this is not the first refund for the order, this should be the newly refunded amount. */
   var amount: js.UndefOr[MonetaryAmount] = js.native
@@ -31,48 +32,36 @@ object OrdersRefundOrderRequest {
   }
   
   @scala.inline
-  implicit class OrdersRefundOrderRequestOps[Self <: OrdersRefundOrderRequest] (val x: Self) extends AnyVal {
+  implicit class OrdersRefundOrderRequestMutableBuilder[Self <: OrdersRefundOrderRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: MonetaryAmount): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullRefund(value: Boolean): Self = StObject.set(x, "fullRefund", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: MonetaryAmount): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setFullRefundUndefined: Self = StObject.set(x, "fullRefund", js.undefined)
     
     @scala.inline
-    def deleteAmount: Self = this.set("amount", js.undefined)
+    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullRefund(value: Boolean): Self = this.set("fullRefund", value.asInstanceOf[js.Any])
+    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
     @scala.inline
-    def deleteFullRefund: Self = this.set("fullRefund", js.undefined)
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    def setReasonText(value: String): Self = StObject.set(x, "reasonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    def setReasonTextUndefined: Self = StObject.set(x, "reasonText", js.undefined)
     
     @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
-    
-    @scala.inline
-    def setReasonText(value: String): Self = this.set("reasonText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReasonText: Self = this.set("reasonText", js.undefined)
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

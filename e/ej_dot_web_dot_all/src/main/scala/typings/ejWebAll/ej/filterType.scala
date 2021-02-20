@@ -1,14 +1,15 @@
 package typings.ejWebAll.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait filterType extends js.Object
+sealed trait filterType extends StObject
 @JSGlobal("ej.filterType")
 @js.native
-object filterType extends js.Object {
+object filterType extends StObject {
   
   @js.native
   sealed trait Contains extends filterType

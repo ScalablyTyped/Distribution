@@ -3,6 +3,7 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.IMinimalMotionControllerObject
 import typings.babylonjs.BABYLON.IMotionControllerLayout
 import typings.babylonjs.BABYLON.MotionControllerHandedness
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

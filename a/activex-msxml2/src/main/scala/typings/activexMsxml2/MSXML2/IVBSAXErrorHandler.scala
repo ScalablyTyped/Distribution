@@ -1,12 +1,13 @@
 package typings.activexMsxml2.MSXML2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** IVBSAXErrorHandler interface */
 @js.native
-trait IVBSAXErrorHandler extends js.Object {
+trait IVBSAXErrorHandler extends StObject {
   
   @JSName("MSXML2.IVBSAXErrorHandler_typekey")
   var MSXML2DotIVBSAXErrorHandler_typekey: IVBSAXErrorHandler = js.native
@@ -35,30 +36,18 @@ object IVBSAXErrorHandler {
   }
   
   @scala.inline
-  implicit class IVBSAXErrorHandlerOps[Self <: IVBSAXErrorHandler] (val x: Self) extends AnyVal {
+  implicit class IVBSAXErrorHandlerMutableBuilder[Self <: IVBSAXErrorHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: (IVBSAXLocator, String, Double) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFatalError(value: (IVBSAXLocator, String, Double) => Unit): Self = StObject.set(x, "fatalError", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnorableWarning(value: (IVBSAXLocator, String, Double) => Unit): Self = StObject.set(x, "ignorableWarning", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setMSXML2DotIVBSAXErrorHandler_typekey(value: IVBSAXErrorHandler): Self = this.set("MSXML2.IVBSAXErrorHandler_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setError(value: (IVBSAXLocator, String, Double) => Unit): Self = this.set("error", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setFatalError(value: (IVBSAXLocator, String, Double) => Unit): Self = this.set("fatalError", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setIgnorableWarning(value: (IVBSAXLocator, String, Double) => Unit): Self = this.set("ignorableWarning", js.Any.fromFunction3(value))
+    def setMSXML2DotIVBSAXErrorHandler_typekey(value: IVBSAXErrorHandler): Self = StObject.set(x, "MSXML2.IVBSAXErrorHandler_typekey", value.asInstanceOf[js.Any])
   }
 }

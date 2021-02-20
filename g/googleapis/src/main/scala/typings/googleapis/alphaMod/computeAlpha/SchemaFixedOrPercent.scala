@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Encapsulates numeric value that can be either absolute or relative.
   */
 @js.native
-trait SchemaFixedOrPercent extends js.Object {
+trait SchemaFixedOrPercent extends StObject {
   
   /**
     * [Output Only] Absolute value of VM instances calculated based on the
@@ -42,36 +43,24 @@ object SchemaFixedOrPercent {
   }
   
   @scala.inline
-  implicit class SchemaFixedOrPercentOps[Self <: SchemaFixedOrPercent] (val x: Self) extends AnyVal {
+  implicit class SchemaFixedOrPercentMutableBuilder[Self <: SchemaFixedOrPercent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalculated(value: Double): Self = StObject.set(x, "calculated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalculatedUndefined: Self = StObject.set(x, "calculated", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFixed(value: Double): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalculated(value: Double): Self = this.set("calculated", value.asInstanceOf[js.Any])
+    def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
     
     @scala.inline
-    def deleteCalculated: Self = this.set("calculated", js.undefined)
+    def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixed(value: Double): Self = this.set("fixed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFixed: Self = this.set("fixed", js.undefined)
-    
-    @scala.inline
-    def setPercent(value: Double): Self = this.set("percent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePercent: Self = this.set("percent", js.undefined)
+    def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
   }
 }

@@ -1,26 +1,26 @@
 package typings.winrtUwp.global.Windows.Networking
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Networking.ServiceDiscovery")
-@js.native
-object ServiceDiscovery extends js.Object {
+object ServiceDiscovery {
   
   /** Supports the registration and discovery of services that advertise themselves using DNS Service Discovery (DNS-SD). */
-  @js.native
-  object Dnssd extends js.Object {
+  object Dnssd {
     
     /** Encapsulates detailed information about the result of an attempt to register a service instance using DNS-SD. */
+    @JSGlobal("Windows.Networking.ServiceDiscovery.Dnssd.DnssdRegistrationResult")
     @js.native
     /** Constructor. */
     class DnssdRegistrationResult ()
       extends typings.winrtUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdRegistrationResult
     
     /** Values representing the status of a DNS-SD registration attempt. */
+    @JSGlobal("Windows.Networking.ServiceDiscovery.Dnssd.DnssdRegistrationStatus")
     @js.native
-    object DnssdRegistrationStatus extends js.Object {
+    object DnssdRegistrationStatus extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[
@@ -37,6 +37,7 @@ object ServiceDiscovery extends js.Object {
     }
     
     /** Encapsulates an instance of a service that uses DNS Service Discovery (DNS-SD). */
+    @JSGlobal("Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceInstance")
     @js.native
     class DnssdServiceInstance protected ()
       extends typings.winrtUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceInstance {
@@ -54,18 +55,21 @@ object ServiceDiscovery extends js.Object {
     }
     
     /** A collection of DNS Service Discovery (DNS-SD) service instances. */
+    @JSGlobal("Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceInstanceCollection")
     @js.native
     abstract class DnssdServiceInstanceCollection ()
       extends typings.winrtUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceInstanceCollection
     
     /** Maintains a collection of available DNS Service Discovery (DNS-SD) service instances. */
+    @JSGlobal("Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcher")
     @js.native
     abstract class DnssdServiceWatcher ()
       extends typings.winrtUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcher
     
     /** Values representing the status of a DnssdServiceWatcher. */
+    @JSGlobal("Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcherStatus")
     @js.native
-    object DnssdServiceWatcherStatus extends js.Object {
+    object DnssdServiceWatcherStatus extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[

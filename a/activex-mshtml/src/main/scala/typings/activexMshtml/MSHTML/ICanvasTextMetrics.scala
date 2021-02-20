@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICanvasTextMetrics extends js.Object {
+trait ICanvasTextMetrics extends StObject {
   
   @JSName("MSHTML.ICanvasTextMetrics_typekey")
   var MSHTMLDotICanvasTextMetrics_typekey: ICanvasTextMetrics = js.native
@@ -22,24 +23,12 @@ object ICanvasTextMetrics {
   }
   
   @scala.inline
-  implicit class ICanvasTextMetricsOps[Self <: ICanvasTextMetrics] (val x: Self) extends AnyVal {
+  implicit class ICanvasTextMetricsMutableBuilder[Self <: ICanvasTextMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMSHTMLDotICanvasTextMetrics_typekey(value: ICanvasTextMetrics): Self = StObject.set(x, "MSHTML.ICanvasTextMetrics_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMSHTMLDotICanvasTextMetrics_typekey(value: ICanvasTextMetrics): Self = this.set("MSHTML.ICanvasTextMetrics_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

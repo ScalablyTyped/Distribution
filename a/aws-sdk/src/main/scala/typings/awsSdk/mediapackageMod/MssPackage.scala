@@ -1,11 +1,12 @@
 package typings.awsSdk.mediapackageMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MssPackage extends js.Object {
+trait MssPackage extends StObject {
   
   var Encryption: js.UndefOr[MssEncryption] = js.native
   
@@ -30,42 +31,30 @@ object MssPackage {
   }
   
   @scala.inline
-  implicit class MssPackageOps[Self <: MssPackage] (val x: Self) extends AnyVal {
+  implicit class MssPackageMutableBuilder[Self <: MssPackage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryption(value: MssEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManifestWindowSeconds(value: integer): Self = StObject.set(x, "ManifestWindowSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryption(value: MssEncryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    def setManifestWindowSecondsUndefined: Self = StObject.set(x, "ManifestWindowSeconds", js.undefined)
     
     @scala.inline
-    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    def setSegmentDurationSeconds(value: integer): Self = StObject.set(x, "SegmentDurationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManifestWindowSeconds(value: integer): Self = this.set("ManifestWindowSeconds", value.asInstanceOf[js.Any])
+    def setSegmentDurationSecondsUndefined: Self = StObject.set(x, "SegmentDurationSeconds", js.undefined)
     
     @scala.inline
-    def deleteManifestWindowSeconds: Self = this.set("ManifestWindowSeconds", js.undefined)
+    def setStreamSelection(value: StreamSelection): Self = StObject.set(x, "StreamSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentDurationSeconds(value: integer): Self = this.set("SegmentDurationSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegmentDurationSeconds: Self = this.set("SegmentDurationSeconds", js.undefined)
-    
-    @scala.inline
-    def setStreamSelection(value: StreamSelection): Self = this.set("StreamSelection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamSelection: Self = this.set("StreamSelection", js.undefined)
+    def setStreamSelectionUndefined: Self = StObject.set(x, "StreamSelection", js.undefined)
   }
 }

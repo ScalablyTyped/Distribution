@@ -1,12 +1,13 @@
 package typings.semanticUiProgress.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-progress.SemanticUI.Progress.ClassNameSettings._Impl, 'success'> */
 @js.native
-trait PickImplsuccessSuccess extends js.Object {
+trait PickImplsuccessSuccess extends StObject {
   
   var success: String = js.native
 }
@@ -19,21 +20,9 @@ object PickImplsuccessSuccess {
   }
   
   @scala.inline
-  implicit class PickImplsuccessSuccessOps[Self <: PickImplsuccessSuccess] (val x: Self) extends AnyVal {
+  implicit class PickImplsuccessSuccessMutableBuilder[Self <: PickImplsuccessSuccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSuccess(value: String): Self = this.set("success", value.asInstanceOf[js.Any])
+    def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

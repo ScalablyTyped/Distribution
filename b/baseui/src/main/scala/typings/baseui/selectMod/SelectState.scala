@@ -1,11 +1,12 @@
 package typings.baseui.selectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelectState extends js.Object {
+trait SelectState extends StObject {
   
   var activeDescendant: String | Null = js.native
   
@@ -26,36 +27,24 @@ object SelectState {
   }
   
   @scala.inline
-  implicit class SelectStateOps[Self <: SelectState] (val x: Self) extends AnyVal {
+  implicit class SelectStateMutableBuilder[Self <: SelectState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveDescendant(value: String): Self = StObject.set(x, "activeDescendant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveDescendantNull: Self = StObject.set(x, "activeDescendant", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputValue(value: String): Self = this.set("inputValue", value.asInstanceOf[js.Any])
+    def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFocused(value: Boolean): Self = this.set("isFocused", value.asInstanceOf[js.Any])
+    def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOpen(value: Boolean): Self = this.set("isOpen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsPseudoFocused(value: Boolean): Self = this.set("isPseudoFocused", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setActiveDescendant(value: String): Self = this.set("activeDescendant", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setActiveDescendantNull: Self = this.set("activeDescendant", null)
+    def setIsPseudoFocused(value: Boolean): Self = StObject.set(x, "isPseudoFocused", value.asInstanceOf[js.Any])
   }
 }

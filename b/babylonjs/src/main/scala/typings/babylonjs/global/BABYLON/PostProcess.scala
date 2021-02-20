@@ -2,6 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,9 +48,7 @@ class PostProcess protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.PostProcess")
-@js.native
-object PostProcess extends js.Object {
+object PostProcess {
   
   /**
     * Creates a material from parsed material data
@@ -58,5 +57,7 @@ object PostProcess extends js.Object {
     * @param rootUrl defines the root URL to use to load textures
     * @returns a new post process
     */
+  @JSGlobal("BABYLON.PostProcess.Parse")
+  @js.native
   def Parse(parsedPostProcess: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): Nullable[typings.babylonjs.BABYLON.PostProcess] = js.native
 }

@@ -1,5 +1,6 @@
 package typings.qlik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.qlik.qlikStrings.VariableList
   - typings.qlik.qlikStrings.story
 */
-trait ListTypes extends js.Object
+trait ListTypes extends StObject
 object ListTypes {
   
   @scala.inline

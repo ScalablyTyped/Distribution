@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScalingConfigurationInfo extends js.Object {
+trait ScalingConfigurationInfo extends StObject {
   
   /**
     * A value that indicates whether automatic pause is allowed for the Aurora DB cluster in serverless DB engine mode. When the value is set to false for an Aurora Serverless DB cluster, the DB cluster automatically resumes.
@@ -41,48 +42,36 @@ object ScalingConfigurationInfo {
   }
   
   @scala.inline
-  implicit class ScalingConfigurationInfoOps[Self <: ScalingConfigurationInfo] (val x: Self) extends AnyVal {
+  implicit class ScalingConfigurationInfoMutableBuilder[Self <: ScalingConfigurationInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoPause(value: BooleanOptional): Self = StObject.set(x, "AutoPause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoPauseUndefined: Self = StObject.set(x, "AutoPause", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxCapacity(value: IntegerOptional): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPause(value: BooleanOptional): Self = this.set("AutoPause", value.asInstanceOf[js.Any])
+    def setMaxCapacityUndefined: Self = StObject.set(x, "MaxCapacity", js.undefined)
     
     @scala.inline
-    def deleteAutoPause: Self = this.set("AutoPause", js.undefined)
+    def setMinCapacity(value: IntegerOptional): Self = StObject.set(x, "MinCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCapacity(value: IntegerOptional): Self = this.set("MaxCapacity", value.asInstanceOf[js.Any])
+    def setMinCapacityUndefined: Self = StObject.set(x, "MinCapacity", js.undefined)
     
     @scala.inline
-    def deleteMaxCapacity: Self = this.set("MaxCapacity", js.undefined)
+    def setSecondsUntilAutoPause(value: IntegerOptional): Self = StObject.set(x, "SecondsUntilAutoPause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinCapacity(value: IntegerOptional): Self = this.set("MinCapacity", value.asInstanceOf[js.Any])
+    def setSecondsUntilAutoPauseUndefined: Self = StObject.set(x, "SecondsUntilAutoPause", js.undefined)
     
     @scala.inline
-    def deleteMinCapacity: Self = this.set("MinCapacity", js.undefined)
+    def setTimeoutAction(value: String): Self = StObject.set(x, "TimeoutAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondsUntilAutoPause(value: IntegerOptional): Self = this.set("SecondsUntilAutoPause", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondsUntilAutoPause: Self = this.set("SecondsUntilAutoPause", js.undefined)
-    
-    @scala.inline
-    def setTimeoutAction(value: String): Self = this.set("TimeoutAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutAction: Self = this.set("TimeoutAction", js.undefined)
+    def setTimeoutActionUndefined: Self = StObject.set(x, "TimeoutAction", js.undefined)
   }
 }

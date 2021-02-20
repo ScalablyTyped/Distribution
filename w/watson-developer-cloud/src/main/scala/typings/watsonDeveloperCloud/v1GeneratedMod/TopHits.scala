@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** TopHits. */
 @js.native
-trait TopHits extends js.Object {
+trait TopHits extends StObject {
   
   var hits: js.UndefOr[TopHitsResults] = js.native
   
@@ -22,30 +23,18 @@ object TopHits {
   }
   
   @scala.inline
-  implicit class TopHitsOps[Self <: TopHits] (val x: Self) extends AnyVal {
+  implicit class TopHitsMutableBuilder[Self <: TopHits] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHits(value: TopHitsResults): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHitsUndefined: Self = StObject.set(x, "hits", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHits(value: TopHitsResults): Self = this.set("hits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHits: Self = this.set("hits", js.undefined)
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

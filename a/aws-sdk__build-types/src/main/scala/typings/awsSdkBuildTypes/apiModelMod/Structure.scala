@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.input
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.output
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.structure
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,63 +42,51 @@ object Structure {
   }
   
   @scala.inline
-  implicit class StructureOps[Self <: Structure] (val x: Self) extends AnyVal {
+  implicit class StructureMutableBuilder[Self <: Structure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setException(value: scala.Boolean): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMembers(value: StringDictionary[StructureMember]): Self = this.set("members", value.asInstanceOf[js.Any])
+    def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
     
     @scala.inline
-    def setType(value: structure): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setFault(value: scala.Boolean): Self = StObject.set(x, "fault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: Error): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setFaultUndefined: Self = StObject.set(x, "fault", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setMembers(value: StringDictionary[StructureMember]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setException(value: scala.Boolean): Self = this.set("exception", value.asInstanceOf[js.Any])
+    def setPayload(value: java.lang.String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteException: Self = this.set("exception", js.undefined)
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     @scala.inline
-    def setFault(value: scala.Boolean): Self = this.set("fault", value.asInstanceOf[js.Any])
+    def setRequired(value: js.Array[java.lang.String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFault: Self = this.set("fault", js.undefined)
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def setPayload(value: java.lang.String): Self = this.set("payload", value.asInstanceOf[js.Any])
+    def setRequiredVarargs(value: java.lang.String*): Self = StObject.set(x, "required", js.Array(value :_*))
     
     @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
+    def setTopLevel(value: input | output): Self = StObject.set(x, "topLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredVarargs(value: java.lang.String*): Self = this.set("required", js.Array(value :_*))
+    def setTopLevelUndefined: Self = StObject.set(x, "topLevel", js.undefined)
     
     @scala.inline
-    def setRequired(value: js.Array[java.lang.String]): Self = this.set("required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
-    
-    @scala.inline
-    def setTopLevel(value: input | output): Self = this.set("topLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopLevel: Self = this.set("topLevel", js.undefined)
+    def setType(value: structure): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MSGesture extends js.Object {
+trait MSGesture extends StObject {
   
   def addPointer(pointerId: Double): Unit = js.native
   
@@ -22,27 +23,15 @@ object MSGesture {
   }
   
   @scala.inline
-  implicit class MSGestureOps[Self <: MSGesture] (val x: Self) extends AnyVal {
+  implicit class MSGestureMutableBuilder[Self <: MSGesture] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddPointer(value: Double => Unit): Self = StObject.set(x, "addPointer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddPointer(value: Double => Unit): Self = this.set("addPointer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStop(value: () => Unit): Self = this.set("stop", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTarget(value: Element): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

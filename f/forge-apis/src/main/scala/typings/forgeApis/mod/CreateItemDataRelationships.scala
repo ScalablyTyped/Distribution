@@ -1,11 +1,12 @@
 package typings.forgeApis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateItemDataRelationships extends js.Object {
+trait CreateItemDataRelationships extends StObject {
   
   var parent: js.UndefOr[CreateStorageDataRelationshipsTarget] = js.native
   
@@ -20,30 +21,18 @@ object CreateItemDataRelationships {
   }
   
   @scala.inline
-  implicit class CreateItemDataRelationshipsOps[Self <: CreateItemDataRelationships] (val x: Self) extends AnyVal {
+  implicit class CreateItemDataRelationshipsMutableBuilder[Self <: CreateItemDataRelationships] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParent(value: CreateStorageDataRelationshipsTarget): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTip(value: CreateItemDataRelationshipsTip): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: CreateStorageDataRelationshipsTarget): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
-    
-    @scala.inline
-    def setTip(value: CreateItemDataRelationshipsTip): Self = this.set("tip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTip: Self = this.set("tip", js.undefined)
+    def setTipUndefined: Self = StObject.set(x, "tip", js.undefined)
   }
 }

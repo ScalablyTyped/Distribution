@@ -1,16 +1,16 @@
 package typings.pgProtocol
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pg-protocol/dist/BufferReader", JSImport.Namespace)
-@js.native
-object distBufferReaderMod extends js.Object {
+object distBufferReaderMod {
   
+  @JSImport("pg-protocol/dist/BufferReader", "BufferReader")
   @js.native
-  class BufferReader () extends js.Object {
+  class BufferReader () extends StObject {
     def this(offset: Double) = this()
     
     var buffer: js.Any = js.native

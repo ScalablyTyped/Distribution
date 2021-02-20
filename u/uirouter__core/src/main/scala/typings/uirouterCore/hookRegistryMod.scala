@@ -11,25 +11,16 @@ import typings.uirouterCore.transitionInterfaceMod.IMatchingNodes
 import typings.uirouterCore.transitionInterfaceMod.TreeChanges
 import typings.uirouterCore.transitionServiceMod.TransitionService
 import typings.uirouterCore.transitionTransitionMod.Transition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/transition/hookRegistry", JSImport.Namespace)
-@js.native
-object hookRegistryMod extends js.Object {
+object hookRegistryMod {
   
-  def makeEvent(registry: IHookRegistry, transitionService: TransitionService, eventType: TransitionEventType): js.Function3[
-    /* matchObject */ js.Any, 
-    /* callback */ js.Any, 
-    /* options */ js.UndefOr[js.Object], 
-    _
-  ] = js.native
-  
-  def matchState(state: StateObject, criterion: HookMatchCriterion, transition: Transition): Boolean = js.native
-  
+  @JSImport("@uirouter/core/lib/transition/hookRegistry", "RegisteredHook")
   @js.native
-  class RegisteredHook protected () extends js.Object {
+  class RegisteredHook protected () extends StObject {
     def this(
       tranSvc: TransitionService,
       eventType: TransitionEventType,
@@ -126,4 +117,17 @@ object hookRegistryMod extends js.Object {
     
     var tranSvc: TransitionService = js.native
   }
+  
+  @JSImport("@uirouter/core/lib/transition/hookRegistry", "makeEvent")
+  @js.native
+  def makeEvent(registry: IHookRegistry, transitionService: TransitionService, eventType: TransitionEventType): js.Function3[
+    /* matchObject */ js.Any, 
+    /* callback */ js.Any, 
+    /* options */ js.UndefOr[js.Object], 
+    _
+  ] = js.native
+  
+  @JSImport("@uirouter/core/lib/transition/hookRegistry", "matchState")
+  @js.native
+  def matchState(state: StateObject, criterion: HookMatchCriterion, transition: Transition): Boolean = js.native
 }

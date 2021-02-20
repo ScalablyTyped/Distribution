@@ -7,14 +7,14 @@ import typings.awsSdkClientCodecommitNode.typesGetFolderInputMod.GetFolderInput
 import typings.awsSdkClientCodecommitNode.typesGetFolderOutputMod.GetFolderOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/commands/GetFolderCommand", JSImport.Namespace)
-@js.native
-object getFolderCommandMod extends js.Object {
+object getFolderCommandMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/commands/GetFolderCommand", "GetFolderCommand")
   @js.native
   class GetFolderCommand protected () extends Command[
           InputTypesUnion, 

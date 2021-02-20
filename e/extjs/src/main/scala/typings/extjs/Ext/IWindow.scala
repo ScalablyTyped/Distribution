@@ -1,6 +1,7 @@
 package typings.extjs.Ext
 
 import typings.extjs.Ext.util.IComponentDragger
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -101,156 +102,144 @@ object IWindow {
   }
   
   @scala.inline
-  implicit class IWindowOps[Self <: IWindow] (val x: Self) extends AnyVal {
+  implicit class IWindowMutableBuilder[Self <: IWindow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterCollapse(value: () => Unit): Self = StObject.set(x, "afterCollapse", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterCollapseUndefined: Self = StObject.set(x, "afterCollapse", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterExpand(value: () => Unit): Self = StObject.set(x, "afterExpand", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAfterCollapse(value: () => Unit): Self = this.set("afterCollapse", js.Any.fromFunction0(value))
+    def setAfterExpandUndefined: Self = StObject.set(x, "afterExpand", js.undefined)
     
     @scala.inline
-    def deleteAfterCollapse: Self = this.set("afterCollapse", js.undefined)
+    def setAnimateTarget(value: js.Any): Self = StObject.set(x, "animateTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterExpand(value: () => Unit): Self = this.set("afterExpand", js.Any.fromFunction0(value))
+    def setAnimateTargetUndefined: Self = StObject.set(x, "animateTarget", js.undefined)
     
     @scala.inline
-    def deleteAfterExpand: Self = this.set("afterExpand", js.undefined)
+    def setAutoRender(value: Boolean): Self = StObject.set(x, "autoRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimateTarget(value: js.Any): Self = this.set("animateTarget", value.asInstanceOf[js.Any])
+    def setAutoRenderUndefined: Self = StObject.set(x, "autoRender", js.undefined)
     
     @scala.inline
-    def deleteAnimateTarget: Self = this.set("animateTarget", js.undefined)
+    def setDd(value: IComponentDragger): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRender(value: Boolean): Self = this.set("autoRender", value.asInstanceOf[js.Any])
+    def setDdUndefined: Self = StObject.set(x, "dd", js.undefined)
     
     @scala.inline
-    def deleteAutoRender: Self = this.set("autoRender", js.undefined)
+    def setDefaultFocus(value: js.Any): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDd(value: IComponentDragger): Self = this.set("dd", value.asInstanceOf[js.Any])
+    def setDefaultFocusUndefined: Self = StObject.set(x, "defaultFocus", js.undefined)
     
     @scala.inline
-    def deleteDd: Self = this.set("dd", js.undefined)
+    def setExpandOnShow(value: Boolean): Self = StObject.set(x, "expandOnShow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultFocus(value: js.Any): Self = this.set("defaultFocus", value.asInstanceOf[js.Any])
+    def setExpandOnShowUndefined: Self = StObject.set(x, "expandOnShow", js.undefined)
     
     @scala.inline
-    def deleteDefaultFocus: Self = this.set("defaultFocus", js.undefined)
+    def setGetDefaultFocus(value: () => Unit): Self = StObject.set(x, "getDefaultFocus", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExpandOnShow(value: Boolean): Self = this.set("expandOnShow", value.asInstanceOf[js.Any])
+    def setGetDefaultFocusUndefined: Self = StObject.set(x, "getDefaultFocus", js.undefined)
     
     @scala.inline
-    def deleteExpandOnShow: Self = this.set("expandOnShow", js.undefined)
+    def setGhost(value: js.Any): Self = StObject.set(x, "ghost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDefaultFocus(value: () => Unit): Self = this.set("getDefaultFocus", js.Any.fromFunction0(value))
+    def setGhostUndefined: Self = StObject.set(x, "ghost", js.undefined)
     
     @scala.inline
-    def deleteGetDefaultFocus: Self = this.set("getDefaultFocus", js.undefined)
+    def setHideShadowOnDeactivate(value: Boolean): Self = StObject.set(x, "hideShadowOnDeactivate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGhost(value: js.Any): Self = this.set("ghost", value.asInstanceOf[js.Any])
+    def setHideShadowOnDeactivateUndefined: Self = StObject.set(x, "hideShadowOnDeactivate", js.undefined)
     
     @scala.inline
-    def deleteGhost: Self = this.set("ghost", js.undefined)
+    def setIsWindow(value: Boolean): Self = StObject.set(x, "isWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideShadowOnDeactivate(value: Boolean): Self = this.set("hideShadowOnDeactivate", value.asInstanceOf[js.Any])
+    def setIsWindowUndefined: Self = StObject.set(x, "isWindow", js.undefined)
     
     @scala.inline
-    def deleteHideShadowOnDeactivate: Self = this.set("hideShadowOnDeactivate", js.undefined)
+    def setMaximizable(value: Boolean): Self = StObject.set(x, "maximizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsWindow(value: Boolean): Self = this.set("isWindow", value.asInstanceOf[js.Any])
+    def setMaximizableUndefined: Self = StObject.set(x, "maximizable", js.undefined)
     
     @scala.inline
-    def deleteIsWindow: Self = this.set("isWindow", js.undefined)
+    def setMaximize(value: /* animate */ js.UndefOr[Boolean] => IWindow): Self = StObject.set(x, "maximize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaximizable(value: Boolean): Self = this.set("maximizable", value.asInstanceOf[js.Any])
+    def setMaximizeUndefined: Self = StObject.set(x, "maximize", js.undefined)
     
     @scala.inline
-    def deleteMaximizable: Self = this.set("maximizable", js.undefined)
+    def setMaximized(value: Boolean): Self = StObject.set(x, "maximized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximize(value: /* animate */ js.UndefOr[Boolean] => IWindow): Self = this.set("maximize", js.Any.fromFunction1(value))
+    def setMaximizedUndefined: Self = StObject.set(x, "maximized", js.undefined)
     
     @scala.inline
-    def deleteMaximize: Self = this.set("maximize", js.undefined)
+    def setMinimizable(value: Boolean): Self = StObject.set(x, "minimizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximized(value: Boolean): Self = this.set("maximized", value.asInstanceOf[js.Any])
+    def setMinimizableUndefined: Self = StObject.set(x, "minimizable", js.undefined)
     
     @scala.inline
-    def deleteMaximized: Self = this.set("maximized", js.undefined)
+    def setMinimize(value: () => IWindow): Self = StObject.set(x, "minimize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMinimizable(value: Boolean): Self = this.set("minimizable", value.asInstanceOf[js.Any])
+    def setMinimizeUndefined: Self = StObject.set(x, "minimize", js.undefined)
     
     @scala.inline
-    def deleteMinimizable: Self = this.set("minimizable", js.undefined)
+    def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimize(value: () => IWindow): Self = this.set("minimize", js.Any.fromFunction0(value))
+    def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
     
     @scala.inline
-    def deleteMinimize: Self = this.set("minimize", js.undefined)
+    def setOnEsc(value: js.Any): Self = StObject.set(x, "onEsc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModal(value: Boolean): Self = this.set("modal", value.asInstanceOf[js.Any])
+    def setOnEscUndefined: Self = StObject.set(x, "onEsc", js.undefined)
     
     @scala.inline
-    def deleteModal: Self = this.set("modal", js.undefined)
+    def setPlain(value: Boolean): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnEsc(value: js.Any): Self = this.set("onEsc", value.asInstanceOf[js.Any])
+    def setPlainUndefined: Self = StObject.set(x, "plain", js.undefined)
     
     @scala.inline
-    def deleteOnEsc: Self = this.set("onEsc", js.undefined)
+    def setRestore(value: /* animate */ js.UndefOr[js.Any] => IWindow): Self = StObject.set(x, "restore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPlain(value: Boolean): Self = this.set("plain", value.asInstanceOf[js.Any])
+    def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
     
     @scala.inline
-    def deletePlain: Self = this.set("plain", js.undefined)
+    def setToggleMaximize(value: () => IWindow): Self = StObject.set(x, "toggleMaximize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRestore(value: /* animate */ js.UndefOr[js.Any] => IWindow): Self = this.set("restore", js.Any.fromFunction1(value))
+    def setToggleMaximizeUndefined: Self = StObject.set(x, "toggleMaximize", js.undefined)
     
     @scala.inline
-    def deleteRestore: Self = this.set("restore", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToggleMaximize(value: () => IWindow): Self = this.set("toggleMaximize", js.Any.fromFunction0(value))
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteToggleMaximize: Self = this.set("toggleMaximize", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

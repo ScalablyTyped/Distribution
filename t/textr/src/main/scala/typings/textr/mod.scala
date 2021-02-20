@@ -1,18 +1,23 @@
 package typings.textr
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("textr", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("textr", JSImport.Namespace)
+  @js.native
   def apply(): typings.textr.mod.textr = js.native
+  @JSImport("textr", JSImport.Namespace)
+  @js.native
   def apply(defaults: TextrArgs): typings.textr.mod.textr = js.native
   
+  type TextrArgs = String | js.Object
+  
   @js.native
-  trait textr extends js.Object {
+  trait textr extends StObject {
     
     /**
       * Process given text by the middlewares.
@@ -32,6 +37,4 @@ object mod extends js.Object {
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param fn because its type any is not an array type */ fn: js.Any
     ): typings.textr.mod.textr = js.native
   }
-  
-  type TextrArgs = String | js.Object
 }

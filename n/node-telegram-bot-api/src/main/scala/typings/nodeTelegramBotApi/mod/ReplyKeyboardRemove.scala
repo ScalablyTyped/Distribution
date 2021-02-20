@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplyKeyboardRemove extends js.Object {
+trait ReplyKeyboardRemove extends StObject {
   
   var remove_keyboard: Boolean = js.native
   
@@ -20,27 +21,15 @@ object ReplyKeyboardRemove {
   }
   
   @scala.inline
-  implicit class ReplyKeyboardRemoveOps[Self <: ReplyKeyboardRemove] (val x: Self) extends AnyVal {
+  implicit class ReplyKeyboardRemoveMutableBuilder[Self <: ReplyKeyboardRemove] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRemove_keyboard(value: Boolean): Self = StObject.set(x, "remove_keyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSelective(value: Boolean): Self = StObject.set(x, "selective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRemove_keyboard(value: Boolean): Self = this.set("remove_keyboard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelective(value: Boolean): Self = this.set("selective", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelective: Self = this.set("selective", js.undefined)
+    def setSelectiveUndefined: Self = StObject.set(x, "selective", js.undefined)
   }
 }

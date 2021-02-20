@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.text
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,33 +59,21 @@ object XNumberingTypeInfo {
   }
   
   @scala.inline
-  implicit class XNumberingTypeInfoOps[Self <: XNumberingTypeInfo] (val x: Self) extends AnyVal {
+  implicit class XNumberingTypeInfoMutableBuilder[Self <: XNumberingTypeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetNumberingIdentifier(value: Double => String): Self = StObject.set(x, "getNumberingIdentifier", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetNumberingType(value: String => Double): Self = StObject.set(x, "getNumberingType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSupportedNumberingTypes(value: () => SafeArray[Double]): Self = StObject.set(x, "getSupportedNumberingTypes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportedNumberingTypes(value: SafeArray[Double]): Self = this.set("SupportedNumberingTypes", value.asInstanceOf[js.Any])
+    def setHasNumberingType(value: String => Boolean): Self = StObject.set(x, "hasNumberingType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNumberingIdentifier(value: Double => String): Self = this.set("getNumberingIdentifier", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetNumberingType(value: String => Double): Self = this.set("getNumberingType", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetSupportedNumberingTypes(value: () => SafeArray[Double]): Self = this.set("getSupportedNumberingTypes", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHasNumberingType(value: String => Boolean): Self = this.set("hasNumberingType", js.Any.fromFunction1(value))
+    def setSupportedNumberingTypes(value: SafeArray[Double]): Self = StObject.set(x, "SupportedNumberingTypes", value.asInstanceOf[js.Any])
   }
 }

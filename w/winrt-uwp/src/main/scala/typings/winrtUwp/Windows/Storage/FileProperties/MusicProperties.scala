@@ -6,13 +6,14 @@ import typings.winrtUwp.Windows.Foundation.Collections.IMap
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the music-related properties of an item (like a file or folder). */
 @js.native
-trait MusicProperties extends js.Object {
+trait MusicProperties extends StObject {
   
   /** Gets or sets the name of the album that contains the song. */
   var album: String = js.native

@@ -1,23 +1,48 @@
 package typings.mendixmodelsdk.allModelClassesMod.pages
 
+import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LinkType")
 @js.native
-class LinkType ()
-  extends typings.mendixmodelsdk.pagesMod.pages.LinkType
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LinkType")
-@js.native
-object LinkType extends js.Object {
+class LinkType protected ()
+  extends typings.mendixmodelsdk.pagesMod.pages.LinkType {
+  def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+}
+object LinkType {
   
-  var Call: typings.mendixmodelsdk.pagesMod.pages.LinkType = js.native
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LinkType")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var Email: typings.mendixmodelsdk.pagesMod.pages.LinkType = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LinkType.Call")
+  @js.native
+  def Call: typings.mendixmodelsdk.pagesMod.pages.LinkType = js.native
+  @scala.inline
+  def Call_=(x: typings.mendixmodelsdk.pagesMod.pages.LinkType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Call")(x.asInstanceOf[js.Any])
   
-  var Text: typings.mendixmodelsdk.pagesMod.pages.LinkType = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LinkType.Email")
+  @js.native
+  def Email: typings.mendixmodelsdk.pagesMod.pages.LinkType = js.native
+  @scala.inline
+  def Email_=(x: typings.mendixmodelsdk.pagesMod.pages.LinkType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Email")(x.asInstanceOf[js.Any])
   
-  var Web: typings.mendixmodelsdk.pagesMod.pages.LinkType = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LinkType.Text")
+  @js.native
+  def Text: typings.mendixmodelsdk.pagesMod.pages.LinkType = js.native
+  @scala.inline
+  def Text_=(x: typings.mendixmodelsdk.pagesMod.pages.LinkType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LinkType.Web")
+  @js.native
+  def Web: typings.mendixmodelsdk.pagesMod.pages.LinkType = js.native
+  @scala.inline
+  def Web_=(x: typings.mendixmodelsdk.pagesMod.pages.LinkType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Web")(x.asInstanceOf[js.Any])
 }

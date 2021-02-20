@@ -1,11 +1,12 @@
 package typings.awsSdk.fsxMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataRepositoryTaskStatus extends js.Object {
+trait DataRepositoryTaskStatus extends StObject {
   
   /**
     * A running total of the number of files that the task failed to process.
@@ -36,42 +37,30 @@ object DataRepositoryTaskStatus {
   }
   
   @scala.inline
-  implicit class DataRepositoryTaskStatusOps[Self <: DataRepositoryTaskStatus] (val x: Self) extends AnyVal {
+  implicit class DataRepositoryTaskStatusMutableBuilder[Self <: DataRepositoryTaskStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailedCount(value: FailedCount): Self = StObject.set(x, "FailedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedCountUndefined: Self = StObject.set(x, "FailedCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastUpdatedTime(value: LastUpdatedTime): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedCount(value: FailedCount): Self = this.set("FailedCount", value.asInstanceOf[js.Any])
+    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
     @scala.inline
-    def deleteFailedCount: Self = this.set("FailedCount", js.undefined)
+    def setSucceededCount(value: SucceededCount): Self = StObject.set(x, "SucceededCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedTime(value: LastUpdatedTime): Self = this.set("LastUpdatedTime", value.asInstanceOf[js.Any])
+    def setSucceededCountUndefined: Self = StObject.set(x, "SucceededCount", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedTime: Self = this.set("LastUpdatedTime", js.undefined)
+    def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSucceededCount(value: SucceededCount): Self = this.set("SucceededCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSucceededCount: Self = this.set("SucceededCount", js.undefined)
-    
-    @scala.inline
-    def setTotalCount(value: TotalCount): Self = this.set("TotalCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalCount: Self = this.set("TotalCount", js.undefined)
+    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
   }
 }

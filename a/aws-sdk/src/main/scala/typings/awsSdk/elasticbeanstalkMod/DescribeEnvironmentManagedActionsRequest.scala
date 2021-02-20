@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEnvironmentManagedActionsRequest extends js.Object {
+trait DescribeEnvironmentManagedActionsRequest extends StObject {
   
   /**
     * The environment ID of the target environment.
@@ -31,36 +32,24 @@ object DescribeEnvironmentManagedActionsRequest {
   }
   
   @scala.inline
-  implicit class DescribeEnvironmentManagedActionsRequestOps[Self <: DescribeEnvironmentManagedActionsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeEnvironmentManagedActionsRequestMutableBuilder[Self <: DescribeEnvironmentManagedActionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironmentId(value: String): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentIdUndefined: Self = StObject.set(x, "EnvironmentId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnvironmentName(value: String): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentId(value: String): Self = this.set("EnvironmentId", value.asInstanceOf[js.Any])
+    def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentId: Self = this.set("EnvironmentId", js.undefined)
+    def setStatus(value: ActionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentName(value: String): Self = this.set("EnvironmentName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnvironmentName: Self = this.set("EnvironmentName", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: ActionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

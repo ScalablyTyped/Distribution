@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaStreamSourceErrorStatus extends js.Object
+sealed trait MediaStreamSourceErrorStatus extends StObject
 /** Specifies errors related to MediaStreamSource . */
 @JSGlobal("Windows.Media.Core.MediaStreamSourceErrorStatus")
 @js.native
-object MediaStreamSourceErrorStatus extends js.Object {
+object MediaStreamSourceErrorStatus extends StObject {
   
   /** The network connection to the server was lost. */
   @js.native

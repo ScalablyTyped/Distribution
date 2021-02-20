@@ -1,12 +1,13 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "FunctionFactory")
 @js.native
-class FunctionFactory () extends js.Object {
+class FunctionFactory () extends StObject {
   
   def clear(): Unit = js.native
   
@@ -25,9 +26,15 @@ class FunctionFactory () extends js.Object {
   def unregister(name: String): Unit = js.native
 }
 /* static members */
-@JSImport("survey-knockout", "FunctionFactory")
-@js.native
-object FunctionFactory extends js.Object {
+object FunctionFactory {
   
-  var Instance: FunctionFactory = js.native
+  @JSImport("survey-knockout", "FunctionFactory")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("survey-knockout", "FunctionFactory.Instance")
+  @js.native
+  def Instance: FunctionFactory = js.native
+  @scala.inline
+  def Instance_=(x: FunctionFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Instance")(x.asInstanceOf[js.Any])
 }

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SmsBroadcastType extends js.Object
+sealed trait SmsBroadcastType extends StObject
 /** Values that describe the type of a broadcast (emergency alert) message. */
 @JSGlobal("Windows.Devices.Sms.SmsBroadcastType")
 @js.native
-object SmsBroadcastType extends js.Object {
+object SmsBroadcastType extends StObject {
   
   /** A CMAS Amber alert message. */
   @js.native

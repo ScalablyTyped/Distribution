@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkflowExecutionInfo extends js.Object {
+trait WorkflowExecutionInfo extends StObject {
   
   /**
     * Set to true if a cancellation is requested for this workflow execution.
@@ -66,63 +67,51 @@ object WorkflowExecutionInfo {
   }
   
   @scala.inline
-  implicit class WorkflowExecutionInfoOps[Self <: WorkflowExecutionInfo] (val x: Self) extends AnyVal {
+  implicit class WorkflowExecutionInfoMutableBuilder[Self <: WorkflowExecutionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelRequested(value: Canceled): Self = StObject.set(x, "cancelRequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelRequestedUndefined: Self = StObject.set(x, "cancelRequested", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloseStatus(value: CloseStatus): Self = StObject.set(x, "closeStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecution(value: WorkflowExecution): Self = this.set("execution", value.asInstanceOf[js.Any])
+    def setCloseStatusUndefined: Self = StObject.set(x, "closeStatus", js.undefined)
     
     @scala.inline
-    def setExecutionStatus(value: ExecutionStatus): Self = this.set("executionStatus", value.asInstanceOf[js.Any])
+    def setCloseTimestamp(value: Timestamp): Self = StObject.set(x, "closeTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTimestamp(value: Timestamp): Self = this.set("startTimestamp", value.asInstanceOf[js.Any])
+    def setCloseTimestampUndefined: Self = StObject.set(x, "closeTimestamp", js.undefined)
     
     @scala.inline
-    def setWorkflowType(value: WorkflowType): Self = this.set("workflowType", value.asInstanceOf[js.Any])
+    def setExecution(value: WorkflowExecution): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelRequested(value: Canceled): Self = this.set("cancelRequested", value.asInstanceOf[js.Any])
+    def setExecutionStatus(value: ExecutionStatus): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCancelRequested: Self = this.set("cancelRequested", js.undefined)
+    def setParent(value: WorkflowExecution): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseStatus(value: CloseStatus): Self = this.set("closeStatus", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteCloseStatus: Self = this.set("closeStatus", js.undefined)
+    def setStartTimestamp(value: Timestamp): Self = StObject.set(x, "startTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseTimestamp(value: Timestamp): Self = this.set("closeTimestamp", value.asInstanceOf[js.Any])
+    def setTagList(value: TagList): Self = StObject.set(x, "tagList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloseTimestamp: Self = this.set("closeTimestamp", js.undefined)
+    def setTagListUndefined: Self = StObject.set(x, "tagList", js.undefined)
     
     @scala.inline
-    def setParent(value: WorkflowExecution): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setTagListVarargs(value: Tag*): Self = StObject.set(x, "tagList", js.Array(value :_*))
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
-    
-    @scala.inline
-    def setTagListVarargs(value: Tag*): Self = this.set("tagList", js.Array(value :_*))
-    
-    @scala.inline
-    def setTagList(value: TagList): Self = this.set("tagList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagList: Self = this.set("tagList", js.undefined)
+    def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
   }
 }

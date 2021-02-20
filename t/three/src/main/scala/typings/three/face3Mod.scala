@@ -2,16 +2,16 @@ package typings.three
 
 import typings.three.colorMod.Color
 import typings.three.vector3Mod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/core/Face3", JSImport.Namespace)
-@js.native
-object face3Mod extends js.Object {
+object face3Mod {
   
+  @JSImport("three/src/core/Face3", "Face3")
   @js.native
-  class Face3 protected () extends js.Object {
+  class Face3 protected () extends StObject {
     /**
     	 * @param a Vertex A index.
     	 * @param b Vertex B index.

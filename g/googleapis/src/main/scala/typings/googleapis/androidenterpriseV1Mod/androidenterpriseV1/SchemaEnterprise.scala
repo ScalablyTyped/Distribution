@@ -1,5 +1,6 @@
 package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * console. See Create an Enterprise for details.
   */
 @js.native
-trait SchemaEnterprise extends js.Object {
+trait SchemaEnterprise extends StObject {
   
   /**
     * Admins of the enterprise. This is only supported for enterprises created
@@ -57,51 +58,39 @@ object SchemaEnterprise {
   }
   
   @scala.inline
-  implicit class SchemaEnterpriseOps[Self <: SchemaEnterprise] (val x: Self) extends AnyVal {
+  implicit class SchemaEnterpriseMutableBuilder[Self <: SchemaEnterprise] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdministrator(value: js.Array[SchemaAdministrator]): Self = StObject.set(x, "administrator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdministratorUndefined: Self = StObject.set(x, "administrator", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdministratorVarargs(value: SchemaAdministrator*): Self = StObject.set(x, "administrator", js.Array(value :_*))
     
     @scala.inline
-    def setAdministratorVarargs(value: SchemaAdministrator*): Self = this.set("administrator", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdministrator(value: js.Array[SchemaAdministrator]): Self = this.set("administrator", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteAdministrator: Self = this.set("administrator", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPrimaryDomain(value: String): Self = StObject.set(x, "primaryDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setPrimaryDomain(value: String): Self = this.set("primaryDomain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimaryDomain: Self = this.set("primaryDomain", js.undefined)
+    def setPrimaryDomainUndefined: Self = StObject.set(x, "primaryDomain", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.babelPluginReactHtmlAttrs.mod
 
 import typings.std.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,42 +62,30 @@ object TouchEvent {
   }
   
   @scala.inline
-  implicit class TouchEventOps[Self <: TouchEvent[_], T] (val x: Self with TouchEvent[T]) extends AnyVal {
+  implicit class TouchEventMutableBuilder[Self <: TouchEvent[_], T] (val x: Self with TouchEvent[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangedTouches(value: TouchList): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltKey(value: Boolean): Self = this.set("altKey", value.asInstanceOf[js.Any])
+    def setGetModifierState(value: String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChangedTouches(value: TouchList): Self = this.set("changedTouches", value.asInstanceOf[js.Any])
+    def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCtrlKey(value: Boolean): Self = this.set("ctrlKey", value.asInstanceOf[js.Any])
+    def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetModifierState(value: String => Boolean): Self = this.set("getModifierState", js.Any.fromFunction1(value))
+    def setTargetTouches(value: TouchList): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetaKey(value: Boolean): Self = this.set("metaKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShiftKey(value: Boolean): Self = this.set("shiftKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetTouches(value: TouchList): Self = this.set("targetTouches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouches(value: TouchList): Self = this.set("touches", value.asInstanceOf[js.Any])
+    def setTouches(value: TouchList): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
   }
 }

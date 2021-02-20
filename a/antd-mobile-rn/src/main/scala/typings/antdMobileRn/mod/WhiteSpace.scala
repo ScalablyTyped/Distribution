@@ -1,7 +1,7 @@
 package typings.antdMobileRn.mod
 
-import typings.antdMobileRn.anon.SizeString
 import typings.antdMobileRn.whiteSpaceIndexNativeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("antd-mobile-rn", "WhiteSpace")
 @js.native
 class WhiteSpace () extends default
-/* static members */
-@JSImport("antd-mobile-rn", "WhiteSpace")
-@js.native
-object WhiteSpace extends js.Object {
+object WhiteSpace {
   
-  var defaultProps: SizeString = js.native
+  /* static member */
+  object defaultProps {
+    
+    @JSImport("antd-mobile-rn", "WhiteSpace.defaultProps")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("antd-mobile-rn", "WhiteSpace.defaultProps.size")
+    @js.native
+    def size: String = js.native
+    @scala.inline
+    def size_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
+  }
 }

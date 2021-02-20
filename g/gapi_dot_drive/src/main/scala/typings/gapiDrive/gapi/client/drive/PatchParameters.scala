@@ -1,11 +1,12 @@
 package typings.gapiDrive.gapi.client.drive
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PatchParameters extends js.Object {
+trait PatchParameters extends StObject {
   
   var convert: js.UndefOr[Boolean] = js.native
   
@@ -46,105 +47,93 @@ object PatchParameters {
   }
   
   @scala.inline
-  implicit class PatchParametersOps[Self <: PatchParameters] (val x: Self) extends AnyVal {
+  implicit class PatchParametersMutableBuilder[Self <: PatchParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileId(value: String): Self = this.set("fileId", value.asInstanceOf[js.Any])
+    def setModifiedDateBehavior(value: String): Self = StObject.set(x, "modifiedDateBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvert(value: Boolean): Self = this.set("convert", value.asInstanceOf[js.Any])
+    def setModifiedDateBehaviorUndefined: Self = StObject.set(x, "modifiedDateBehavior", js.undefined)
     
     @scala.inline
-    def deleteConvert: Self = this.set("convert", js.undefined)
+    def setNewRevision(value: Boolean): Self = StObject.set(x, "newRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedDateBehavior(value: String): Self = this.set("modifiedDateBehavior", value.asInstanceOf[js.Any])
+    def setNewRevisionUndefined: Self = StObject.set(x, "newRevision", js.undefined)
     
     @scala.inline
-    def deleteModifiedDateBehavior: Self = this.set("modifiedDateBehavior", js.undefined)
+    def setOcr(value: Boolean): Self = StObject.set(x, "ocr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewRevision(value: Boolean): Self = this.set("newRevision", value.asInstanceOf[js.Any])
+    def setOcrLanguage(value: String): Self = StObject.set(x, "ocrLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNewRevision: Self = this.set("newRevision", js.undefined)
+    def setOcrLanguageUndefined: Self = StObject.set(x, "ocrLanguage", js.undefined)
     
     @scala.inline
-    def setOcr(value: Boolean): Self = this.set("ocr", value.asInstanceOf[js.Any])
+    def setOcrUndefined: Self = StObject.set(x, "ocr", js.undefined)
     
     @scala.inline
-    def deleteOcr: Self = this.set("ocr", js.undefined)
+    def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOcrLanguage(value: String): Self = this.set("ocrLanguage", value.asInstanceOf[js.Any])
+    def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
     
     @scala.inline
-    def deleteOcrLanguage: Self = this.set("ocrLanguage", js.undefined)
+    def setRemoveParents(value: String): Self = StObject.set(x, "removeParents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinned(value: Boolean): Self = this.set("pinned", value.asInstanceOf[js.Any])
+    def setRemoveParentsUndefined: Self = StObject.set(x, "removeParents", js.undefined)
     
     @scala.inline
-    def deletePinned: Self = this.set("pinned", js.undefined)
+    def setResource(value: FileResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveParents(value: String): Self = this.set("removeParents", value.asInstanceOf[js.Any])
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     @scala.inline
-    def deleteRemoveParents: Self = this.set("removeParents", js.undefined)
+    def setSetModifiedDate(value: Boolean): Self = StObject.set(x, "setModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: FileResource): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setSetModifiedDateUndefined: Self = StObject.set(x, "setModifiedDate", js.undefined)
     
     @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetModifiedDate(value: Boolean): Self = this.set("setModifiedDate", value.asInstanceOf[js.Any])
+    def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
     
     @scala.inline
-    def deleteSetModifiedDate: Self = this.set("setModifiedDate", js.undefined)
+    def setTimedTextLanguage(value: String): Self = StObject.set(x, "timedTextLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsTeamDrives(value: Boolean): Self = this.set("supportsTeamDrives", value.asInstanceOf[js.Any])
+    def setTimedTextLanguageUndefined: Self = StObject.set(x, "timedTextLanguage", js.undefined)
     
     @scala.inline
-    def deleteSupportsTeamDrives: Self = this.set("supportsTeamDrives", js.undefined)
+    def setTimedTextTrackName(value: String): Self = StObject.set(x, "timedTextTrackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimedTextLanguage(value: String): Self = this.set("timedTextLanguage", value.asInstanceOf[js.Any])
+    def setTimedTextTrackNameUndefined: Self = StObject.set(x, "timedTextTrackName", js.undefined)
     
     @scala.inline
-    def deleteTimedTextLanguage: Self = this.set("timedTextLanguage", js.undefined)
+    def setUpdateViewedData(value: Boolean): Self = StObject.set(x, "updateViewedData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimedTextTrackName(value: String): Self = this.set("timedTextTrackName", value.asInstanceOf[js.Any])
+    def setUpdateViewedDataUndefined: Self = StObject.set(x, "updateViewedData", js.undefined)
     
     @scala.inline
-    def deleteTimedTextTrackName: Self = this.set("timedTextTrackName", js.undefined)
+    def setUseContentAsIndexableText(value: Boolean): Self = StObject.set(x, "useContentAsIndexableText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateViewedData(value: Boolean): Self = this.set("updateViewedData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateViewedData: Self = this.set("updateViewedData", js.undefined)
-    
-    @scala.inline
-    def setUseContentAsIndexableText(value: Boolean): Self = this.set("useContentAsIndexableText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseContentAsIndexableText: Self = this.set("useContentAsIndexableText", js.undefined)
+    def setUseContentAsIndexableTextUndefined: Self = StObject.set(x, "useContentAsIndexableText", js.undefined)
   }
 }

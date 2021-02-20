@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Localization extends js.Object {
+trait Localization extends StObject {
   
   /*This method runs the function fn with error trapping and if an asynchronous file load is performed (for loading
     * localizaton data), reruns the function again after the file loads. This lets you synchronize actions that

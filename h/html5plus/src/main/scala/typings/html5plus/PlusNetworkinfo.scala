@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
   */
 @js.native
-trait PlusNetworkinfo extends js.Object {
+trait PlusNetworkinfo extends StObject {
   
   /**
     * 蜂窝移动2G网络
@@ -85,63 +86,51 @@ object PlusNetworkinfo {
   }
   
   @scala.inline
-  implicit class PlusNetworkinfoOps[Self <: PlusNetworkinfo] (val x: Self) extends AnyVal {
+  implicit class PlusNetworkinfoMutableBuilder[Self <: PlusNetworkinfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCONNECTION_CELL2G(value: Double): Self = StObject.set(x, "CONNECTION_CELL2G", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCONNECTION_CELL2GUndefined: Self = StObject.set(x, "CONNECTION_CELL2G", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCONNECTION_CELL3G(value: Double): Self = StObject.set(x, "CONNECTION_CELL3G", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCurrentType(value: () => Double): Self = this.set("getCurrentType", js.Any.fromFunction0(value))
+    def setCONNECTION_CELL3GUndefined: Self = StObject.set(x, "CONNECTION_CELL3G", js.undefined)
     
     @scala.inline
-    def setCONNECTION_CELL2G(value: Double): Self = this.set("CONNECTION_CELL2G", value.asInstanceOf[js.Any])
+    def setCONNECTION_CELL4G(value: Double): Self = StObject.set(x, "CONNECTION_CELL4G", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCONNECTION_CELL2G: Self = this.set("CONNECTION_CELL2G", js.undefined)
+    def setCONNECTION_CELL4GUndefined: Self = StObject.set(x, "CONNECTION_CELL4G", js.undefined)
     
     @scala.inline
-    def setCONNECTION_CELL3G(value: Double): Self = this.set("CONNECTION_CELL3G", value.asInstanceOf[js.Any])
+    def setCONNECTION_ETHERNET(value: Double): Self = StObject.set(x, "CONNECTION_ETHERNET", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCONNECTION_CELL3G: Self = this.set("CONNECTION_CELL3G", js.undefined)
+    def setCONNECTION_ETHERNETUndefined: Self = StObject.set(x, "CONNECTION_ETHERNET", js.undefined)
     
     @scala.inline
-    def setCONNECTION_CELL4G(value: Double): Self = this.set("CONNECTION_CELL4G", value.asInstanceOf[js.Any])
+    def setCONNECTION_NONE(value: Double): Self = StObject.set(x, "CONNECTION_NONE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCONNECTION_CELL4G: Self = this.set("CONNECTION_CELL4G", js.undefined)
+    def setCONNECTION_NONEUndefined: Self = StObject.set(x, "CONNECTION_NONE", js.undefined)
     
     @scala.inline
-    def setCONNECTION_ETHERNET(value: Double): Self = this.set("CONNECTION_ETHERNET", value.asInstanceOf[js.Any])
+    def setCONNECTION_UNKNOW(value: Double): Self = StObject.set(x, "CONNECTION_UNKNOW", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCONNECTION_ETHERNET: Self = this.set("CONNECTION_ETHERNET", js.undefined)
+    def setCONNECTION_UNKNOWUndefined: Self = StObject.set(x, "CONNECTION_UNKNOW", js.undefined)
     
     @scala.inline
-    def setCONNECTION_NONE(value: Double): Self = this.set("CONNECTION_NONE", value.asInstanceOf[js.Any])
+    def setCONNECTION_WIFI(value: Double): Self = StObject.set(x, "CONNECTION_WIFI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCONNECTION_NONE: Self = this.set("CONNECTION_NONE", js.undefined)
+    def setCONNECTION_WIFIUndefined: Self = StObject.set(x, "CONNECTION_WIFI", js.undefined)
     
     @scala.inline
-    def setCONNECTION_UNKNOW(value: Double): Self = this.set("CONNECTION_UNKNOW", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCONNECTION_UNKNOW: Self = this.set("CONNECTION_UNKNOW", js.undefined)
-    
-    @scala.inline
-    def setCONNECTION_WIFI(value: Double): Self = this.set("CONNECTION_WIFI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCONNECTION_WIFI: Self = this.set("CONNECTION_WIFI", js.undefined)
+    def setGetCurrentType(value: () => Double): Self = StObject.set(x, "getCurrentType", js.Any.fromFunction0(value))
   }
 }

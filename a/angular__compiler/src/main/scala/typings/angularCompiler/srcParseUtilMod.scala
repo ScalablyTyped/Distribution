@@ -1,22 +1,17 @@
 package typings.angularCompiler
 
-import org.scalablytyped.runtime.TopLevel
 import typings.angularCompiler.anon.After
 import typings.angularCompiler.compileMetadataMod.CompileIdentifierMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/parse_util", JSImport.Namespace)
-@js.native
-object srcParseUtilMod extends js.Object {
+object srcParseUtilMod {
   
-  def r3JitTypeSourceSpan(kind: String, typeName: String, sourceUrl: String): ParseSourceSpan = js.native
-  
-  def typeSourceSpan(kind: String, `type`: CompileIdentifierMetadata): ParseSourceSpan = js.native
-  
+  @JSImport("@angular/compiler/src/parse_util", "ParseError")
   @js.native
-  class ParseError protected () extends js.Object {
+  class ParseError protected () extends StObject {
     def this(span: ParseSourceSpan, msg: String) = this()
     def this(span: ParseSourceSpan, msg: String, level: ParseErrorLevel) = this()
     
@@ -30,26 +25,26 @@ object srcParseUtilMod extends js.Object {
   }
   
   @js.native
-  sealed trait ParseErrorLevel extends js.Object
+  sealed trait ParseErrorLevel extends StObject
+  @JSImport("@angular/compiler/src/parse_util", "ParseErrorLevel")
   @js.native
-  object ParseErrorLevel extends js.Object {
+  object ParseErrorLevel extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ParseErrorLevel with Double] = js.native
     
     @js.native
     sealed trait ERROR extends ParseErrorLevel
-    /* 1 */ @js.native
-    object ERROR extends TopLevel[ERROR with Double]
+    /* 1 */ val ERROR: typings.angularCompiler.srcParseUtilMod.ParseErrorLevel.ERROR with Double = js.native
     
     @js.native
     sealed trait WARNING extends ParseErrorLevel
-    /* 0 */ @js.native
-    object WARNING extends TopLevel[WARNING with Double]
+    /* 0 */ val WARNING: typings.angularCompiler.srcParseUtilMod.ParseErrorLevel.WARNING with Double = js.native
   }
   
+  @JSImport("@angular/compiler/src/parse_util", "ParseLocation")
   @js.native
-  class ParseLocation protected () extends js.Object {
+  class ParseLocation protected () extends StObject {
     def this(file: ParseSourceFile, offset: Double, line: Double, col: Double) = this()
     
     var col: Double = js.native
@@ -65,8 +60,9 @@ object srcParseUtilMod extends js.Object {
     var offset: Double = js.native
   }
   
+  @JSImport("@angular/compiler/src/parse_util", "ParseSourceFile")
   @js.native
-  class ParseSourceFile protected () extends js.Object {
+  class ParseSourceFile protected () extends StObject {
     def this(content: String, url: String) = this()
     
     var content: String = js.native
@@ -74,8 +70,9 @@ object srcParseUtilMod extends js.Object {
     var url: String = js.native
   }
   
+  @JSImport("@angular/compiler/src/parse_util", "ParseSourceSpan")
   @js.native
-  class ParseSourceSpan protected () extends js.Object {
+  class ParseSourceSpan protected () extends StObject {
     /**
       * Create an object that holds information about spans of tokens/nodes captured during
       * lexing/parsing of text.
@@ -112,4 +109,12 @@ object srcParseUtilMod extends js.Object {
     
     var start: ParseLocation = js.native
   }
+  
+  @JSImport("@angular/compiler/src/parse_util", "r3JitTypeSourceSpan")
+  @js.native
+  def r3JitTypeSourceSpan(kind: String, typeName: String, sourceUrl: String): ParseSourceSpan = js.native
+  
+  @JSImport("@angular/compiler/src/parse_util", "typeSourceSpan")
+  @js.native
+  def typeSourceSpan(kind: String, `type`: CompileIdentifierMetadata): ParseSourceSpan = js.native
 }

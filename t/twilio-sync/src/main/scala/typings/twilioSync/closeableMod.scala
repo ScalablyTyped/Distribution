@@ -1,14 +1,18 @@
 package typings.twilioSync
 
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-sync/lib/closeable", JSImport.Namespace)
-@js.native
-object closeableMod extends js.Object {
+object closeableMod {
   
+  @JSImport("twilio-sync/lib/closeable", JSImport.Default)
+  @js.native
+  abstract class default () extends Closeable
+  
+  @JSImport("twilio-sync/lib/closeable", "Closeable")
   @js.native
   abstract class Closeable () extends EventEmitter {
     
@@ -22,7 +26,4 @@ object closeableMod extends js.Object {
     
     val uuid: js.Any = js.native
   }
-  
-  @js.native
-  abstract class default () extends Closeable
 }

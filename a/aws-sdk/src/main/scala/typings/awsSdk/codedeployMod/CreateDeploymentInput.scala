@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDeploymentInput extends js.Object {
+trait CreateDeploymentInput extends StObject {
   
   /**
     * The name of an AWS CodeDeploy application associated with the IAM user or AWS account.
@@ -66,75 +67,63 @@ object CreateDeploymentInput {
   }
   
   @scala.inline
-  implicit class CreateDeploymentInputOps[Self <: CreateDeploymentInput] (val x: Self) extends AnyVal {
+  implicit class CreateDeploymentInputMutableBuilder[Self <: CreateDeploymentInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoRollbackConfiguration(value: AutoRollbackConfiguration): Self = StObject.set(x, "autoRollbackConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoRollbackConfigurationUndefined: Self = StObject.set(x, "autoRollbackConfiguration", js.undefined)
     
     @scala.inline
-    def setApplicationName(value: ApplicationName): Self = this.set("applicationName", value.asInstanceOf[js.Any])
+    def setDeploymentConfigName(value: DeploymentConfigName): Self = StObject.set(x, "deploymentConfigName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRollbackConfiguration(value: AutoRollbackConfiguration): Self = this.set("autoRollbackConfiguration", value.asInstanceOf[js.Any])
+    def setDeploymentConfigNameUndefined: Self = StObject.set(x, "deploymentConfigName", js.undefined)
     
     @scala.inline
-    def deleteAutoRollbackConfiguration: Self = this.set("autoRollbackConfiguration", js.undefined)
+    def setDeploymentGroupName(value: DeploymentGroupName): Self = StObject.set(x, "deploymentGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentConfigName(value: DeploymentConfigName): Self = this.set("deploymentConfigName", value.asInstanceOf[js.Any])
+    def setDeploymentGroupNameUndefined: Self = StObject.set(x, "deploymentGroupName", js.undefined)
     
     @scala.inline
-    def deleteDeploymentConfigName: Self = this.set("deploymentConfigName", js.undefined)
+    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentGroupName(value: DeploymentGroupName): Self = this.set("deploymentGroupName", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDeploymentGroupName: Self = this.set("deploymentGroupName", js.undefined)
+    def setFileExistsBehavior(value: FileExistsBehavior): Self = StObject.set(x, "fileExistsBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFileExistsBehaviorUndefined: Self = StObject.set(x, "fileExistsBehavior", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setIgnoreApplicationStopFailures(value: Boolean): Self = StObject.set(x, "ignoreApplicationStopFailures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileExistsBehavior(value: FileExistsBehavior): Self = this.set("fileExistsBehavior", value.asInstanceOf[js.Any])
+    def setIgnoreApplicationStopFailuresUndefined: Self = StObject.set(x, "ignoreApplicationStopFailures", js.undefined)
     
     @scala.inline
-    def deleteFileExistsBehavior: Self = this.set("fileExistsBehavior", js.undefined)
+    def setRevision(value: RevisionLocation): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreApplicationStopFailures(value: Boolean): Self = this.set("ignoreApplicationStopFailures", value.asInstanceOf[js.Any])
+    def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
     
     @scala.inline
-    def deleteIgnoreApplicationStopFailures: Self = this.set("ignoreApplicationStopFailures", js.undefined)
+    def setTargetInstances(value: TargetInstances): Self = StObject.set(x, "targetInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevision(value: RevisionLocation): Self = this.set("revision", value.asInstanceOf[js.Any])
+    def setTargetInstancesUndefined: Self = StObject.set(x, "targetInstances", js.undefined)
     
     @scala.inline
-    def deleteRevision: Self = this.set("revision", js.undefined)
+    def setUpdateOutdatedInstancesOnly(value: Boolean): Self = StObject.set(x, "updateOutdatedInstancesOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetInstances(value: TargetInstances): Self = this.set("targetInstances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetInstances: Self = this.set("targetInstances", js.undefined)
-    
-    @scala.inline
-    def setUpdateOutdatedInstancesOnly(value: Boolean): Self = this.set("updateOutdatedInstancesOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateOutdatedInstancesOnly: Self = this.set("updateOutdatedInstancesOnly", js.undefined)
+    def setUpdateOutdatedInstancesOnlyUndefined: Self = StObject.set(x, "updateOutdatedInstancesOnly", js.undefined)
   }
 }

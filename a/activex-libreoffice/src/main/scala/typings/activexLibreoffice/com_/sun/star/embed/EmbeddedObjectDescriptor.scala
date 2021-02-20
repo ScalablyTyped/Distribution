@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.embed
 
 import typings.activexLibreoffice.com_.sun.star.frame.XDispatchProviderInterceptor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.beans.PropertyValue
   */
 @js.native
-trait EmbeddedObjectDescriptor extends js.Object {
+trait EmbeddedObjectDescriptor extends StObject {
   
   /** allows to provide a dispatch interceptor for outplace activation. */
   var OutplaceDispatchInterceptor: XDispatchProviderInterceptor = js.native
@@ -53,27 +54,15 @@ object EmbeddedObjectDescriptor {
   }
   
   @scala.inline
-  implicit class EmbeddedObjectDescriptorOps[Self <: EmbeddedObjectDescriptor] (val x: Self) extends AnyVal {
+  implicit class EmbeddedObjectDescriptorMutableBuilder[Self <: EmbeddedObjectDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOutplaceDispatchInterceptor(value: XDispatchProviderInterceptor): Self = StObject.set(x, "OutplaceDispatchInterceptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecoveryStorage(value: XStorage): Self = StObject.set(x, "RecoveryStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOutplaceDispatchInterceptor(value: XDispatchProviderInterceptor): Self = this.set("OutplaceDispatchInterceptor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecoveryStorage(value: XStorage): Self = this.set("RecoveryStorage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStoreVisualReplacement(value: Boolean): Self = this.set("StoreVisualReplacement", value.asInstanceOf[js.Any])
+    def setStoreVisualReplacement(value: Boolean): Self = StObject.set(x, "StoreVisualReplacement", value.asInstanceOf[js.Any])
   }
 }

@@ -24,6 +24,7 @@ import typings.aceBuilds.aceBuildsStrings.theme
 import typings.aceBuilds.aceBuildsStrings.vScrollBarAlwaysVisible
 import typings.aceBuilds.anon.PageX
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

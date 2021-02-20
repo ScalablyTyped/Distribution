@@ -1,11 +1,12 @@
 package typings.awsSdk.wafMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebACLUpdate extends js.Object {
+trait WebACLUpdate extends StObject {
   
   /**
     * Specifies whether to insert a Rule into or delete a Rule from a WebACL.
@@ -26,24 +27,12 @@ object WebACLUpdate {
   }
   
   @scala.inline
-  implicit class WebACLUpdateOps[Self <: WebACLUpdate] (val x: Self) extends AnyVal {
+  implicit class WebACLUpdateMutableBuilder[Self <: WebACLUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAction(value: ChangeAction): Self = this.set("Action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setActivatedRule(value: ActivatedRule): Self = this.set("ActivatedRule", value.asInstanceOf[js.Any])
+    def setActivatedRule(value: ActivatedRule): Self = StObject.set(x, "ActivatedRule", value.asInstanceOf[js.Any])
   }
 }

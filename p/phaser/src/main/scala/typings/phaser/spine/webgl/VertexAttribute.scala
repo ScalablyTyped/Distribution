@@ -1,11 +1,12 @@
 package typings.phaser.spine.webgl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VertexAttribute extends js.Object {
+trait VertexAttribute extends StObject {
   
   var name: String = js.native
   
@@ -23,27 +24,15 @@ object VertexAttribute {
   }
   
   @scala.inline
-  implicit class VertexAttributeOps[Self <: VertexAttribute] (val x: Self) extends AnyVal {
+  implicit class VertexAttributeMutableBuilder[Self <: VertexAttribute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNumElements(value: Double): Self = StObject.set(x, "numElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumElements(value: Double): Self = this.set("numElements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: VertexAttributeType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: VertexAttributeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

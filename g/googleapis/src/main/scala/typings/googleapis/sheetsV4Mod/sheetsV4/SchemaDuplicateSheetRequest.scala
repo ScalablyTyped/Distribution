@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Duplicates the contents of a sheet.
   */
 @js.native
-trait SchemaDuplicateSheetRequest extends js.Object {
+trait SchemaDuplicateSheetRequest extends StObject {
   
   /**
     * The zero-based index where the new sheet should be inserted. The index of
@@ -42,42 +43,30 @@ object SchemaDuplicateSheetRequest {
   }
   
   @scala.inline
-  implicit class SchemaDuplicateSheetRequestOps[Self <: SchemaDuplicateSheetRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaDuplicateSheetRequestMutableBuilder[Self <: SchemaDuplicateSheetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInsertSheetIndex(value: Double): Self = StObject.set(x, "insertSheetIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsertSheetIndexUndefined: Self = StObject.set(x, "insertSheetIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewSheetId(value: Double): Self = StObject.set(x, "newSheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSheetIndex(value: Double): Self = this.set("insertSheetIndex", value.asInstanceOf[js.Any])
+    def setNewSheetIdUndefined: Self = StObject.set(x, "newSheetId", js.undefined)
     
     @scala.inline
-    def deleteInsertSheetIndex: Self = this.set("insertSheetIndex", js.undefined)
+    def setNewSheetName(value: String): Self = StObject.set(x, "newSheetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewSheetId(value: Double): Self = this.set("newSheetId", value.asInstanceOf[js.Any])
+    def setNewSheetNameUndefined: Self = StObject.set(x, "newSheetName", js.undefined)
     
     @scala.inline
-    def deleteNewSheetId: Self = this.set("newSheetId", js.undefined)
+    def setSourceSheetId(value: Double): Self = StObject.set(x, "sourceSheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewSheetName(value: String): Self = this.set("newSheetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewSheetName: Self = this.set("newSheetName", js.undefined)
-    
-    @scala.inline
-    def setSourceSheetId(value: Double): Self = this.set("sourceSheetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceSheetId: Self = this.set("sourceSheetId", js.undefined)
+    def setSourceSheetIdUndefined: Self = StObject.set(x, "sourceSheetId", js.undefined)
   }
 }

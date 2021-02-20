@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/esm/styles/hljs/darcula", JSImport.Namespace)
-@js.native
-object hljsDarculaMod extends js.Object {
+object hljsDarculaMod {
   
+  @JSImport("react-syntax-highlighter/dist/esm/styles/hljs/darcula", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

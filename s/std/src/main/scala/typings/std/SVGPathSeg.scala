@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGPathSeg extends js.Object {
+trait SVGPathSeg extends StObject {
   
   val PATHSEG_ARC_ABS: Double = js.native
   
@@ -83,84 +84,72 @@ object SVGPathSeg {
   }
   
   @scala.inline
-  implicit class SVGPathSegOps[Self <: SVGPathSeg] (val x: Self) extends AnyVal {
+  implicit class SVGPathSegMutableBuilder[Self <: SVGPathSeg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPATHSEG_ARC_ABS(value: Double): Self = StObject.set(x, "PATHSEG_ARC_ABS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPATHSEG_ARC_REL(value: Double): Self = StObject.set(x, "PATHSEG_ARC_REL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPATHSEG_CLOSEPATH(value: Double): Self = StObject.set(x, "PATHSEG_CLOSEPATH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPATHSEG_ARC_ABS(value: Double): Self = this.set("PATHSEG_ARC_ABS", value.asInstanceOf[js.Any])
+    def setPATHSEG_CURVETO_CUBIC_ABS(value: Double): Self = StObject.set(x, "PATHSEG_CURVETO_CUBIC_ABS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPATHSEG_ARC_REL(value: Double): Self = this.set("PATHSEG_ARC_REL", value.asInstanceOf[js.Any])
+    def setPATHSEG_CURVETO_CUBIC_REL(value: Double): Self = StObject.set(x, "PATHSEG_CURVETO_CUBIC_REL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPATHSEG_CLOSEPATH(value: Double): Self = this.set("PATHSEG_CLOSEPATH", value.asInstanceOf[js.Any])
+    def setPATHSEG_CURVETO_CUBIC_SMOOTH_ABS(value: Double): Self = StObject.set(x, "PATHSEG_CURVETO_CUBIC_SMOOTH_ABS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPATHSEG_CURVETO_CUBIC_ABS(value: Double): Self = this.set("PATHSEG_CURVETO_CUBIC_ABS", value.asInstanceOf[js.Any])
+    def setPATHSEG_CURVETO_CUBIC_SMOOTH_REL(value: Double): Self = StObject.set(x, "PATHSEG_CURVETO_CUBIC_SMOOTH_REL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPATHSEG_CURVETO_CUBIC_REL(value: Double): Self = this.set("PATHSEG_CURVETO_CUBIC_REL", value.asInstanceOf[js.Any])
+    def setPATHSEG_CURVETO_QUADRATIC_ABS(value: Double): Self = StObject.set(x, "PATHSEG_CURVETO_QUADRATIC_ABS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPATHSEG_CURVETO_CUBIC_SMOOTH_ABS(value: Double): Self = this.set("PATHSEG_CURVETO_CUBIC_SMOOTH_ABS", value.asInstanceOf[js.Any])
+    def setPATHSEG_CURVETO_QUADRATIC_REL(value: Double): Self = StObject.set(x, "PATHSEG_CURVETO_QUADRATIC_REL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPATHSEG_CURVETO_CUBIC_SMOOTH_REL(value: Double): Self = this.set("PATHSEG_CURVETO_CUBIC_SMOOTH_REL", value.asInstanceOf[js.Any])
+    def setPATHSEG_CURVETO_QUADRATIC_SMOOTH_ABS(value: Double): Self = StObject.set(x, "PATHSEG_CURVETO_QUADRATIC_SMOOTH_ABS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPATHSEG_CURVETO_QUADRATIC_ABS(value: Double): Self = this.set("PATHSEG_CURVETO_QUADRATIC_ABS", value.asInstanceOf[js.Any])
+    def setPATHSEG_CURVETO_QUADRATIC_SMOOTH_REL(value: Double): Self = StObject.set(x, "PATHSEG_CURVETO_QUADRATIC_SMOOTH_REL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPATHSEG_CURVETO_QUADRATIC_REL(value: Double): Self = this.set("PATHSEG_CURVETO_QUADRATIC_REL", value.asInstanceOf[js.Any])
+    def setPATHSEG_LINETO_ABS(value: Double): Self = StObject.set(x, "PATHSEG_LINETO_ABS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPATHSEG_CURVETO_QUADRATIC_SMOOTH_ABS(value: Double): Self = this.set("PATHSEG_CURVETO_QUADRATIC_SMOOTH_ABS", value.asInstanceOf[js.Any])
+    def setPATHSEG_LINETO_HORIZONTAL_ABS(value: Double): Self = StObject.set(x, "PATHSEG_LINETO_HORIZONTAL_ABS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPATHSEG_CURVETO_QUADRATIC_SMOOTH_REL(value: Double): Self = this.set("PATHSEG_CURVETO_QUADRATIC_SMOOTH_REL", value.asInstanceOf[js.Any])
+    def setPATHSEG_LINETO_HORIZONTAL_REL(value: Double): Self = StObject.set(x, "PATHSEG_LINETO_HORIZONTAL_REL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPATHSEG_LINETO_ABS(value: Double): Self = this.set("PATHSEG_LINETO_ABS", value.asInstanceOf[js.Any])
+    def setPATHSEG_LINETO_REL(value: Double): Self = StObject.set(x, "PATHSEG_LINETO_REL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPATHSEG_LINETO_HORIZONTAL_ABS(value: Double): Self = this.set("PATHSEG_LINETO_HORIZONTAL_ABS", value.asInstanceOf[js.Any])
+    def setPATHSEG_LINETO_VERTICAL_ABS(value: Double): Self = StObject.set(x, "PATHSEG_LINETO_VERTICAL_ABS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPATHSEG_LINETO_HORIZONTAL_REL(value: Double): Self = this.set("PATHSEG_LINETO_HORIZONTAL_REL", value.asInstanceOf[js.Any])
+    def setPATHSEG_LINETO_VERTICAL_REL(value: Double): Self = StObject.set(x, "PATHSEG_LINETO_VERTICAL_REL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPATHSEG_LINETO_REL(value: Double): Self = this.set("PATHSEG_LINETO_REL", value.asInstanceOf[js.Any])
+    def setPATHSEG_MOVETO_ABS(value: Double): Self = StObject.set(x, "PATHSEG_MOVETO_ABS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPATHSEG_LINETO_VERTICAL_ABS(value: Double): Self = this.set("PATHSEG_LINETO_VERTICAL_ABS", value.asInstanceOf[js.Any])
+    def setPATHSEG_MOVETO_REL(value: Double): Self = StObject.set(x, "PATHSEG_MOVETO_REL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPATHSEG_LINETO_VERTICAL_REL(value: Double): Self = this.set("PATHSEG_LINETO_VERTICAL_REL", value.asInstanceOf[js.Any])
+    def setPATHSEG_UNKNOWN(value: Double): Self = StObject.set(x, "PATHSEG_UNKNOWN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPATHSEG_MOVETO_ABS(value: Double): Self = this.set("PATHSEG_MOVETO_ABS", value.asInstanceOf[js.Any])
+    def setPathSegType(value: Double): Self = StObject.set(x, "pathSegType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPATHSEG_MOVETO_REL(value: Double): Self = this.set("PATHSEG_MOVETO_REL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPATHSEG_UNKNOWN(value: Double): Self = this.set("PATHSEG_UNKNOWN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPathSegType(value: Double): Self = this.set("pathSegType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPathSegTypeAsLetter(value: java.lang.String): Self = this.set("pathSegTypeAsLetter", value.asInstanceOf[js.Any])
+    def setPathSegTypeAsLetter(value: java.lang.String): Self = StObject.set(x, "pathSegTypeAsLetter", value.asInstanceOf[js.Any])
   }
 }

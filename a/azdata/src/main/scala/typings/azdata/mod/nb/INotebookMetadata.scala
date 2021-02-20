@@ -1,11 +1,12 @@
 package typings.azdata.mod.nb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait INotebookMetadata extends js.Object {
+trait INotebookMetadata extends StObject {
   
   var kernelspec: IKernelInfo = js.native
   
@@ -22,36 +23,24 @@ object INotebookMetadata {
   }
   
   @scala.inline
-  implicit class INotebookMetadataOps[Self <: INotebookMetadata] (val x: Self) extends AnyVal {
+  implicit class INotebookMetadataMutableBuilder[Self <: INotebookMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKernelspec(value: IKernelInfo): Self = StObject.set(x, "kernelspec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguage_info(value: ILanguageInfo): Self = StObject.set(x, "language_info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguage_infoUndefined: Self = StObject.set(x, "language_info", js.undefined)
     
     @scala.inline
-    def setKernelspec(value: IKernelInfo): Self = this.set("kernelspec", value.asInstanceOf[js.Any])
+    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage_info(value: ILanguageInfo): Self = this.set("language_info", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteLanguage_info: Self = this.set("language_info", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

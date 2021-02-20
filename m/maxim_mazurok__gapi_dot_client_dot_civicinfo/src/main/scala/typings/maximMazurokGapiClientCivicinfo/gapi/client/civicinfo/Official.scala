@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCivicinfo.gapi.client.civicinfo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Official extends js.Object {
+trait Official extends StObject {
   
   /** Addresses at which to contact the official. */
   var address: js.UndefOr[js.Array[SimpleAddressType]] = js.native
@@ -40,81 +41,69 @@ object Official {
   }
   
   @scala.inline
-  implicit class OfficialOps[Self <: Official] (val x: Self) extends AnyVal {
+  implicit class OfficialMutableBuilder[Self <: Official] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: js.Array[SimpleAddressType]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddressVarargs(value: SimpleAddressType*): Self = StObject.set(x, "address", js.Array(value :_*))
     
     @scala.inline
-    def setAddressVarargs(value: SimpleAddressType*): Self = this.set("address", js.Array(value :_*))
+    def setChannels(value: js.Array[Channel]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: js.Array[SimpleAddressType]): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setChannelsVarargs(value: Channel*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
     @scala.inline
-    def setChannelsVarargs(value: Channel*): Self = this.set("channels", js.Array(value :_*))
+    def setEmails(value: js.Array[String]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannels(value: js.Array[Channel]): Self = this.set("channels", value.asInstanceOf[js.Any])
+    def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
     
     @scala.inline
-    def deleteChannels: Self = this.set("channels", js.undefined)
+    def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value :_*))
     
     @scala.inline
-    def setEmailsVarargs(value: String*): Self = this.set("emails", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmails(value: js.Array[String]): Self = this.set("emails", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteEmails: Self = this.set("emails", js.undefined)
+    def setParty(value: String): Self = StObject.set(x, "party", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPartyUndefined: Self = StObject.set(x, "party", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPhones(value: js.Array[String]): Self = StObject.set(x, "phones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParty(value: String): Self = this.set("party", value.asInstanceOf[js.Any])
+    def setPhonesUndefined: Self = StObject.set(x, "phones", js.undefined)
     
     @scala.inline
-    def deleteParty: Self = this.set("party", js.undefined)
+    def setPhonesVarargs(value: String*): Self = StObject.set(x, "phones", js.Array(value :_*))
     
     @scala.inline
-    def setPhonesVarargs(value: String*): Self = this.set("phones", js.Array(value :_*))
+    def setPhotoUrl(value: String): Self = StObject.set(x, "photoUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhones(value: js.Array[String]): Self = this.set("phones", value.asInstanceOf[js.Any])
+    def setPhotoUrlUndefined: Self = StObject.set(x, "photoUrl", js.undefined)
     
     @scala.inline
-    def deletePhones: Self = this.set("phones", js.undefined)
+    def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhotoUrl(value: String): Self = this.set("photoUrl", value.asInstanceOf[js.Any])
+    def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
     @scala.inline
-    def deletePhotoUrl: Self = this.set("photoUrl", js.undefined)
-    
-    @scala.inline
-    def setUrlsVarargs(value: String*): Self = this.set("urls", js.Array(value :_*))
-    
-    @scala.inline
-    def setUrls(value: js.Array[String]): Self = this.set("urls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrls: Self = this.set("urls", js.undefined)
+    def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
   }
 }

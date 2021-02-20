@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GradientStrokeType extends js.Object
+sealed trait GradientStrokeType extends StObject
 @JSGlobal("__esri.CIM.GradientStrokeType")
 @js.native
-object GradientStrokeType extends js.Object {
+object GradientStrokeType extends StObject {
   
   /**
     * Continuous gradients vary continuously along the color change with no distinct boundary between the colors.

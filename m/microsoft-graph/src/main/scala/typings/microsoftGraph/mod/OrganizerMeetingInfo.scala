@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,24 +20,12 @@ object OrganizerMeetingInfo {
   }
   
   @scala.inline
-  implicit class OrganizerMeetingInfoOps[Self <: OrganizerMeetingInfo] (val x: Self) extends AnyVal {
+  implicit class OrganizerMeetingInfoMutableBuilder[Self <: OrganizerMeetingInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrganizer(value: IdentitySet): Self = StObject.set(x, "organizer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOrganizer(value: IdentitySet): Self = this.set("organizer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrganizer: Self = this.set("organizer", js.undefined)
+    def setOrganizerUndefined: Self = StObject.set(x, "organizer", js.undefined)
   }
 }

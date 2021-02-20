@@ -1,11 +1,12 @@
 package typings.wxServerSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Geo extends js.Object {
+trait Geo extends StObject {
   
   def LineString(points: js.Array[Point]): typings.wxServerSdk.mod.LineString = js.native
   @JSName("LineString")

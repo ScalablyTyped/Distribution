@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NDProximityDetectionType extends js.Object
+sealed trait NDProximityDetectionType extends StObject
 /** Indicates the transport protocol that the proximity detection process uses. */
 @JSGlobal("Windows.Media.Protection.PlayReady.NDProximityDetectionType")
 @js.native
-object NDProximityDetectionType extends js.Object {
+object NDProximityDetectionType extends StObject {
   
   /** Proximity detection uses the TCP transport protocol. */
   @js.native

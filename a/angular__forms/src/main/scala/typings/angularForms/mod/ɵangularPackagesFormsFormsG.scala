@@ -1,12 +1,13 @@
 package typings.angularForms.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "\u0275angular_packages_forms_forms_g")
 @js.native
-class ɵangularPackagesFormsFormsG protected () extends js.Object {
+class ɵangularPackagesFormsFormsG protected () extends StObject {
   def this(cd: AbstractControlDirective) = this()
   
   var _cd: js.Any = js.native

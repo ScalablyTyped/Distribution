@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/outline/DislikeOutline", JSImport.Namespace)
-@js.native
-object dislikeOutlineMod extends js.Object {
+object dislikeOutlineMod {
   
+  @JSImport("@ant-design/icons-angular/icons/outline/DislikeOutline", "DislikeOutline")
+  @js.native
   val DislikeOutline: IconDefinition = js.native
 }

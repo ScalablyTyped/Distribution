@@ -11,12 +11,13 @@ import typings.electron.electronStrings.multiple
 import typings.electron.electronStrings.rounded
 import typings.electron.electronStrings.separated
 import typings.electron.electronStrings.single
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TouchBarSegmentedControlConstructorOptions extends js.Object {
+trait TouchBarSegmentedControlConstructorOptions extends StObject {
   
   /**
     * Called when the user selects a new segment.
@@ -55,50 +56,38 @@ object TouchBarSegmentedControlConstructorOptions {
   }
   
   @scala.inline
-  implicit class TouchBarSegmentedControlConstructorOptionsOps[Self <: TouchBarSegmentedControlConstructorOptions] (val x: Self) extends AnyVal {
+  implicit class TouchBarSegmentedControlConstructorOptionsMutableBuilder[Self <: TouchBarSegmentedControlConstructorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChange(value: (/* selectedIndex */ Double, /* isSelected */ Boolean) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: single | multiple | buttons): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentsVarargs(value: SegmentedControlSegment*): Self = this.set("segments", js.Array(value :_*))
-    
-    @scala.inline
-    def setSegments(value: js.Array[SegmentedControlSegment]): Self = this.set("segments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChange(value: (/* selectedIndex */ Double, /* isSelected */ Boolean) => Unit): Self = this.set("change", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
-    
-    @scala.inline
-    def setMode(value: single | multiple | buttons): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
     def setSegmentStyle(
       value: automatic | rounded | `textured-rounded` | `round-rect` | `textured-square` | capsule | `small-square` | separated
-    ): Self = this.set("segmentStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "segmentStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSegmentStyle: Self = this.set("segmentStyle", js.undefined)
+    def setSegmentStyleUndefined: Self = StObject.set(x, "segmentStyle", js.undefined)
     
     @scala.inline
-    def setSelectedIndex(value: Double): Self = this.set("selectedIndex", value.asInstanceOf[js.Any])
+    def setSegments(value: js.Array[SegmentedControlSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectedIndex: Self = this.set("selectedIndex", js.undefined)
+    def setSegmentsVarargs(value: SegmentedControlSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    
+    @scala.inline
+    def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
   }
 }

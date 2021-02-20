@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrowserView extends js.Object {
+trait BrowserView extends StObject {
   
   /**
     * The `bounds` of this BrowserView instance as `Object`.
@@ -42,33 +43,21 @@ object BrowserView {
   }
   
   @scala.inline
-  implicit class BrowserViewOps[Self <: BrowserView] (val x: Self) extends AnyVal {
+  implicit class BrowserViewMutableBuilder[Self <: BrowserView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetBounds(value: () => Rectangle): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetAutoResize(value: AutoResizeOptions => Unit): Self = StObject.set(x, "setAutoResize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetBackgroundColor(value: String => Unit): Self = StObject.set(x, "setBackgroundColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetBounds(value: () => Rectangle): Self = this.set("getBounds", js.Any.fromFunction0(value))
+    def setSetBounds(value: Rectangle => Unit): Self = StObject.set(x, "setBounds", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAutoResize(value: AutoResizeOptions => Unit): Self = this.set("setAutoResize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetBackgroundColor(value: String => Unit): Self = this.set("setBackgroundColor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetBounds(value: Rectangle => Unit): Self = this.set("setBounds", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWebContents(value: WebContents_): Self = this.set("webContents", value.asInstanceOf[js.Any])
+    def setWebContents(value: WebContents_): Self = StObject.set(x, "webContents", value.asInstanceOf[js.Any])
   }
 }

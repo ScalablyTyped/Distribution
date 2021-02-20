@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionDisksRemoveResourcePoliciesRequest extends js.Object {
+trait RegionDisksRemoveResourcePoliciesRequest extends StObject {
   
   /** Resource policies to be removed from this disk. */
   var resourcePolicies: js.UndefOr[js.Array[String]] = js.native
@@ -19,27 +20,15 @@ object RegionDisksRemoveResourcePoliciesRequest {
   }
   
   @scala.inline
-  implicit class RegionDisksRemoveResourcePoliciesRequestOps[Self <: RegionDisksRemoveResourcePoliciesRequest] (val x: Self) extends AnyVal {
+  implicit class RegionDisksRemoveResourcePoliciesRequestMutableBuilder[Self <: RegionDisksRemoveResourcePoliciesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourcePolicies(value: js.Array[String]): Self = StObject.set(x, "resourcePolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourcePoliciesUndefined: Self = StObject.set(x, "resourcePolicies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResourcePoliciesVarargs(value: String*): Self = this.set("resourcePolicies", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourcePolicies(value: js.Array[String]): Self = this.set("resourcePolicies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourcePolicies: Self = this.set("resourcePolicies", js.undefined)
+    def setResourcePoliciesVarargs(value: String*): Self = StObject.set(x, "resourcePolicies", js.Array(value :_*))
   }
 }

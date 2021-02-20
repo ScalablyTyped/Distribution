@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "BatchChangeInventoryRequest")
 @js.native
-class BatchChangeInventoryRequest () extends js.Object {
+class BatchChangeInventoryRequest () extends StObject {
   
   /**
     * The set of physical counts and inventory adjustments to be made.

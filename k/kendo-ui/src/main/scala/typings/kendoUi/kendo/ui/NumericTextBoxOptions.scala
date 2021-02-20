@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NumericTextBoxOptions extends js.Object {
+trait NumericTextBoxOptions extends StObject {
   
   var change: js.UndefOr[js.Function1[/* e */ NumericTextBoxChangeEvent, Unit]] = js.native
   
@@ -52,126 +53,114 @@ object NumericTextBoxOptions {
   }
   
   @scala.inline
-  implicit class NumericTextBoxOptionsOps[Self <: NumericTextBoxOptions] (val x: Self) extends AnyVal {
+  implicit class NumericTextBoxOptionsMutableBuilder[Self <: NumericTextBoxOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChange(value: /* e */ NumericTextBoxChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: /* e */ NumericTextBoxChangeEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
     
     @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
+    def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCulture(value: String): Self = this.set("culture", value.asInstanceOf[js.Any])
+    def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
     
     @scala.inline
-    def deleteCulture: Self = this.set("culture", js.undefined)
+    def setDownArrowText(value: String): Self = StObject.set(x, "downArrowText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimals(value: Double): Self = this.set("decimals", value.asInstanceOf[js.Any])
+    def setDownArrowTextUndefined: Self = StObject.set(x, "downArrowText", js.undefined)
     
     @scala.inline
-    def deleteDecimals: Self = this.set("decimals", js.undefined)
+    def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownArrowText(value: String): Self = this.set("downArrowText", value.asInstanceOf[js.Any])
+    def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
     
     @scala.inline
-    def deleteDownArrowText: Self = this.set("downArrowText", js.undefined)
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFactor(value: Double): Self = this.set("factor", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteFactor: Self = this.set("factor", js.undefined)
+    def setLabel(value: String | js.Function | NumericTextBoxLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String | js.Function | NumericTextBoxLabel): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRestrictDecimals(value: Boolean): Self = StObject.set(x, "restrictDecimals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    def setRestrictDecimalsUndefined: Self = StObject.set(x, "restrictDecimals", js.undefined)
     
     @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestrictDecimals(value: Boolean): Self = this.set("restrictDecimals", value.asInstanceOf[js.Any])
+    def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
     
     @scala.inline
-    def deleteRestrictDecimals: Self = this.set("restrictDecimals", js.undefined)
+    def setSpin(value: /* e */ NumericTextBoxSpinEvent => Unit): Self = StObject.set(x, "spin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRound(value: Boolean): Self = this.set("round", value.asInstanceOf[js.Any])
+    def setSpinUndefined: Self = StObject.set(x, "spin", js.undefined)
     
     @scala.inline
-    def deleteRound: Self = this.set("round", js.undefined)
+    def setSpinners(value: Boolean): Self = StObject.set(x, "spinners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpin(value: /* e */ NumericTextBoxSpinEvent => Unit): Self = this.set("spin", js.Any.fromFunction1(value))
+    def setSpinnersUndefined: Self = StObject.set(x, "spinners", js.undefined)
     
     @scala.inline
-    def deleteSpin: Self = this.set("spin", js.undefined)
+    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpinners(value: Boolean): Self = this.set("spinners", value.asInstanceOf[js.Any])
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     @scala.inline
-    def deleteSpinners: Self = this.set("spinners", js.undefined)
+    def setUpArrowText(value: String): Self = StObject.set(x, "upArrowText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    def setUpArrowTextUndefined: Self = StObject.set(x, "upArrowText", js.undefined)
     
     @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpArrowText(value: String): Self = this.set("upArrowText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpArrowText: Self = this.set("upArrowText", js.undefined)
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

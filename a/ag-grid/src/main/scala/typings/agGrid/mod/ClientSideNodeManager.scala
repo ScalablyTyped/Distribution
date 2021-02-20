@@ -1,5 +1,6 @@
 package typings.agGrid.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,11 +21,21 @@ class ClientSideNodeManager protected ()
   ) = this()
 }
 /* static members */
-@JSImport("ag-grid", "ClientSideNodeManager")
-@js.native
-object ClientSideNodeManager extends js.Object {
+object ClientSideNodeManager {
   
-  var ROOT_NODE_ID: js.Any = js.native
+  @JSImport("ag-grid", "ClientSideNodeManager")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var TOP_LEVEL: js.Any = js.native
+  @JSImport("ag-grid", "ClientSideNodeManager.ROOT_NODE_ID")
+  @js.native
+  def ROOT_NODE_ID: js.Any = js.native
+  @scala.inline
+  def ROOT_NODE_ID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT_NODE_ID")(x.asInstanceOf[js.Any])
+  
+  @JSImport("ag-grid", "ClientSideNodeManager.TOP_LEVEL")
+  @js.native
+  def TOP_LEVEL: js.Any = js.native
+  @scala.inline
+  def TOP_LEVEL_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOP_LEVEL")(x.asInstanceOf[js.Any])
 }

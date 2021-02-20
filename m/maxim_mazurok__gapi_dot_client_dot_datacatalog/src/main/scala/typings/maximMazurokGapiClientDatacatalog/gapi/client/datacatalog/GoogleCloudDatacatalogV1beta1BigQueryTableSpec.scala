@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatacatalogV1beta1BigQueryTableSpec extends js.Object {
+trait GoogleCloudDatacatalogV1beta1BigQueryTableSpec extends StObject {
   
   /** Output only. The table source type. */
   var tableSourceType: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object GoogleCloudDatacatalogV1beta1BigQueryTableSpec {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1BigQueryTableSpecOps[Self <: GoogleCloudDatacatalogV1beta1BigQueryTableSpec] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatacatalogV1beta1BigQueryTableSpecMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1BigQueryTableSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTableSourceType(value: String): Self = StObject.set(x, "tableSourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTableSourceTypeUndefined: Self = StObject.set(x, "tableSourceType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTableSpec(value: GoogleCloudDatacatalogV1beta1TableSpec): Self = StObject.set(x, "tableSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableSourceType(value: String): Self = this.set("tableSourceType", value.asInstanceOf[js.Any])
+    def setTableSpecUndefined: Self = StObject.set(x, "tableSpec", js.undefined)
     
     @scala.inline
-    def deleteTableSourceType: Self = this.set("tableSourceType", js.undefined)
+    def setViewSpec(value: GoogleCloudDatacatalogV1beta1ViewSpec): Self = StObject.set(x, "viewSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableSpec(value: GoogleCloudDatacatalogV1beta1TableSpec): Self = this.set("tableSpec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableSpec: Self = this.set("tableSpec", js.undefined)
-    
-    @scala.inline
-    def setViewSpec(value: GoogleCloudDatacatalogV1beta1ViewSpec): Self = this.set("viewSpec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewSpec: Self = this.set("viewSpec", js.undefined)
+    def setViewSpecUndefined: Self = StObject.set(x, "viewSpec", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerStateChange extends js.Object {
+trait ContainerStateChange extends StObject {
   
   /**
     * The name of the container.
@@ -51,63 +52,51 @@ object ContainerStateChange {
   }
   
   @scala.inline
-  implicit class ContainerStateChangeOps[Self <: ContainerStateChange] (val x: Self) extends AnyVal {
+  implicit class ContainerStateChangeMutableBuilder[Self <: ContainerStateChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExitCode(value: BoxedInteger): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerName(value: String): Self = this.set("containerName", value.asInstanceOf[js.Any])
+    def setExitCodeUndefined: Self = StObject.set(x, "exitCode", js.undefined)
     
     @scala.inline
-    def deleteContainerName: Self = this.set("containerName", js.undefined)
+    def setImageDigest(value: String): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExitCode(value: BoxedInteger): Self = this.set("exitCode", value.asInstanceOf[js.Any])
+    def setImageDigestUndefined: Self = StObject.set(x, "imageDigest", js.undefined)
     
     @scala.inline
-    def deleteExitCode: Self = this.set("exitCode", js.undefined)
+    def setNetworkBindings(value: NetworkBindings): Self = StObject.set(x, "networkBindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageDigest(value: String): Self = this.set("imageDigest", value.asInstanceOf[js.Any])
+    def setNetworkBindingsUndefined: Self = StObject.set(x, "networkBindings", js.undefined)
     
     @scala.inline
-    def deleteImageDigest: Self = this.set("imageDigest", js.undefined)
+    def setNetworkBindingsVarargs(value: NetworkBinding*): Self = StObject.set(x, "networkBindings", js.Array(value :_*))
     
     @scala.inline
-    def setNetworkBindingsVarargs(value: NetworkBinding*): Self = this.set("networkBindings", js.Array(value :_*))
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkBindings(value: NetworkBindings): Self = this.set("networkBindings", value.asInstanceOf[js.Any])
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     @scala.inline
-    def deleteNetworkBindings: Self = this.set("networkBindings", js.undefined)
+    def setRuntimeId(value: String): Self = StObject.set(x, "runtimeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setRuntimeIdUndefined: Self = StObject.set(x, "runtimeId", js.undefined)
     
     @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuntimeId(value: String): Self = this.set("runtimeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuntimeId: Self = this.set("runtimeId", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

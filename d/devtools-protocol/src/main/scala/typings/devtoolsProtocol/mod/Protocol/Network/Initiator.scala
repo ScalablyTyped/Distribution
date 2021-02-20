@@ -6,12 +6,13 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.parser
 import typings.devtoolsProtocol.devtoolsProtocolStrings.preload
 import typings.devtoolsProtocol.devtoolsProtocolStrings.script_
 import typings.devtoolsProtocol.mod.Protocol.Runtime.StackTrace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Initiator extends js.Object {
+trait Initiator extends StObject {
   
   /**
     * Initiator column number, set for Parser type or for Script type (when script is importing
@@ -50,45 +51,33 @@ object Initiator {
   }
   
   @scala.inline
-  implicit class InitiatorOps[Self <: Initiator] (val x: Self) extends AnyVal {
+  implicit class InitiatorMutableBuilder[Self <: Initiator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: parser | script_ | preload | SignedExchange | other_): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
     
     @scala.inline
-    def setColumnNumber(value: Double): Self = this.set("columnNumber", value.asInstanceOf[js.Any])
+    def setStack(value: StackTrace): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumnNumber: Self = this.set("columnNumber", js.undefined)
+    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
     @scala.inline
-    def setLineNumber(value: Double): Self = this.set("lineNumber", value.asInstanceOf[js.Any])
+    def setType(value: parser | script_ | preload | SignedExchange | other_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineNumber: Self = this.set("lineNumber", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStack(value: StackTrace): Self = this.set("stack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStack: Self = this.set("stack", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

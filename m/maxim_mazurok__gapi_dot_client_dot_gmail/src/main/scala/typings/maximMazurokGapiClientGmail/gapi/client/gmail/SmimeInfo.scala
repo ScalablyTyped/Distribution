@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmimeInfo extends js.Object {
+trait SmimeInfo extends StObject {
   
   /** Encrypted key password, when key is encrypted. */
   var encryptedKeyPassword: js.UndefOr[String] = js.native
@@ -43,60 +44,48 @@ object SmimeInfo {
   }
   
   @scala.inline
-  implicit class SmimeInfoOps[Self <: SmimeInfo] (val x: Self) extends AnyVal {
+  implicit class SmimeInfoMutableBuilder[Self <: SmimeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryptedKeyPassword(value: String): Self = StObject.set(x, "encryptedKeyPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptedKeyPasswordUndefined: Self = StObject.set(x, "encryptedKeyPassword", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpiration(value: String): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptedKeyPassword(value: String): Self = this.set("encryptedKeyPassword", value.asInstanceOf[js.Any])
+    def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
     
     @scala.inline
-    def deleteEncryptedKeyPassword: Self = this.set("encryptedKeyPassword", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiration(value: String): Self = this.set("expiration", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteExpiration: Self = this.set("expiration", js.undefined)
+    def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIssuerCn(value: String): Self = StObject.set(x, "issuerCn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDefault(value: Boolean): Self = this.set("isDefault", value.asInstanceOf[js.Any])
+    def setIssuerCnUndefined: Self = StObject.set(x, "issuerCn", js.undefined)
     
     @scala.inline
-    def deleteIsDefault: Self = this.set("isDefault", js.undefined)
+    def setPem(value: String): Self = StObject.set(x, "pem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuerCn(value: String): Self = this.set("issuerCn", value.asInstanceOf[js.Any])
+    def setPemUndefined: Self = StObject.set(x, "pem", js.undefined)
     
     @scala.inline
-    def deleteIssuerCn: Self = this.set("issuerCn", js.undefined)
+    def setPkcs12(value: String): Self = StObject.set(x, "pkcs12", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPem(value: String): Self = this.set("pem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePem: Self = this.set("pem", js.undefined)
-    
-    @scala.inline
-    def setPkcs12(value: String): Self = this.set("pkcs12", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePkcs12: Self = this.set("pkcs12", js.undefined)
+    def setPkcs12Undefined: Self = StObject.set(x, "pkcs12", js.undefined)
   }
 }

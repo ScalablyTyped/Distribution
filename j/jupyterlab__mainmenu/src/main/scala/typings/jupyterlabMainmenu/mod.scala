@@ -1,17 +1,17 @@
 package typings.jupyterlabMainmenu
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.luminoCommands.mod.CommandRegistry
 import typings.luminoCoreutils.mod.Token
 import typings.luminoWidgets.menuMod.Menu.IOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/mainmenu", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@jupyterlab/mainmenu", "EditMenu")
   @js.native
   class EditMenu protected ()
     extends typings.jupyterlabMainmenu.editMod.EditMenu {
@@ -21,12 +21,14 @@ object mod extends js.Object {
     def this(options: IOptions) = this()
   }
   
+  @JSImport("@jupyterlab/mainmenu", "FileMenu")
   @js.native
   class FileMenu protected ()
     extends typings.jupyterlabMainmenu.fileMod.FileMenu {
     def this(options: IOptions) = this()
   }
   
+  @JSImport("@jupyterlab/mainmenu", "HelpMenu")
   @js.native
   class HelpMenu protected ()
     extends typings.jupyterlabMainmenu.helpMod.HelpMenu {
@@ -36,10 +38,19 @@ object mod extends js.Object {
     def this(options: IOptions) = this()
   }
   
-  @js.native
-  object IMainMenu
-    extends TopLevel[Token[typings.jupyterlabMainmenu.tokensMod.IMainMenu]]
+  object IMainMenu extends Shortcut {
+    
+    @JSImport("@jupyterlab/mainmenu", "IMainMenu")
+    @js.native
+    val ^ : Token[typings.jupyterlabMainmenu.tokensMod.IMainMenu] = js.native
+    
+    type _To = Token[typings.jupyterlabMainmenu.tokensMod.IMainMenu]
+    
+    /* This means you don't have to write `^`, but can instead just say `IMainMenu.foo` */
+    override def _to: Token[typings.jupyterlabMainmenu.tokensMod.IMainMenu] = ^
+  }
   
+  @JSImport("@jupyterlab/mainmenu", "JupyterLabMenu")
   @js.native
   class JupyterLabMenu protected ()
     extends typings.jupyterlabMainmenu.labmenuMod.JupyterLabMenu {
@@ -55,6 +66,7 @@ object mod extends js.Object {
     def this(options: IOptions, includeSeparators: Boolean) = this()
   }
   
+  @JSImport("@jupyterlab/mainmenu", "KernelMenu")
   @js.native
   class KernelMenu protected ()
     extends typings.jupyterlabMainmenu.kernelMod.KernelMenu {
@@ -64,6 +76,7 @@ object mod extends js.Object {
     def this(options: IOptions) = this()
   }
   
+  @JSImport("@jupyterlab/mainmenu", "MainMenu")
   @js.native
   class MainMenu protected ()
     extends typings.jupyterlabMainmenu.mainmenuMod.MainMenu {
@@ -73,6 +86,7 @@ object mod extends js.Object {
     def this(commands: CommandRegistry) = this()
   }
   
+  @JSImport("@jupyterlab/mainmenu", "RunMenu")
   @js.native
   class RunMenu protected ()
     extends typings.jupyterlabMainmenu.runMod.RunMenu {
@@ -82,6 +96,7 @@ object mod extends js.Object {
     def this(options: IOptions) = this()
   }
   
+  @JSImport("@jupyterlab/mainmenu", "SettingsMenu")
   @js.native
   class SettingsMenu protected ()
     extends typings.jupyterlabMainmenu.settingsMod.SettingsMenu {
@@ -91,6 +106,7 @@ object mod extends js.Object {
     def this(options: IOptions) = this()
   }
   
+  @JSImport("@jupyterlab/mainmenu", "TabsMenu")
   @js.native
   class TabsMenu protected ()
     extends typings.jupyterlabMainmenu.tabsMod.TabsMenu {
@@ -100,6 +116,7 @@ object mod extends js.Object {
     def this(options: IOptions) = this()
   }
   
+  @JSImport("@jupyterlab/mainmenu", "ViewMenu")
   @js.native
   class ViewMenu protected ()
     extends typings.jupyterlabMainmenu.viewMod.ViewMenu {

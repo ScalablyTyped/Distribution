@@ -1,96 +1,80 @@
 package typings.browserfs.zipFSMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CompressionMethod extends js.Object
+sealed trait CompressionMethod extends StObject
 @JSImport("browserfs/dist/node/backend/ZipFS", "CompressionMethod")
 @js.native
-object CompressionMethod extends js.Object {
+object CompressionMethod extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CompressionMethod with Double] = js.native
   
   @js.native
   sealed trait BZIP2 extends CompressionMethod
-  /* 12 */ @js.native
-  object BZIP2 extends TopLevel[BZIP2 with Double]
+  /* 12 */ val BZIP2: typings.browserfs.zipFSMod.CompressionMethod.BZIP2 with Double = js.native
   
   @js.native
   sealed trait DEFLATE extends CompressionMethod
-  /* 8 */ @js.native
-  object DEFLATE extends TopLevel[DEFLATE with Double]
+  /* 8 */ val DEFLATE: typings.browserfs.zipFSMod.CompressionMethod.DEFLATE with Double = js.native
   
   @js.native
   sealed trait DEFLATE64 extends CompressionMethod
-  /* 9 */ @js.native
-  object DEFLATE64 extends TopLevel[DEFLATE64 with Double]
+  /* 9 */ val DEFLATE64: typings.browserfs.zipFSMod.CompressionMethod.DEFLATE64 with Double = js.native
   
   @js.native
   sealed trait IMPLODE extends CompressionMethod
-  /* 6 */ @js.native
-  object IMPLODE extends TopLevel[IMPLODE with Double]
+  /* 6 */ val IMPLODE: typings.browserfs.zipFSMod.CompressionMethod.IMPLODE with Double = js.native
   
   @js.native
   sealed trait LZ77 extends CompressionMethod
-  /* 19 */ @js.native
-  object LZ77 extends TopLevel[LZ77 with Double]
+  /* 19 */ val LZ77: typings.browserfs.zipFSMod.CompressionMethod.LZ77 with Double = js.native
   
   @js.native
   sealed trait LZMA extends CompressionMethod
-  /* 14 */ @js.native
-  object LZMA extends TopLevel[LZMA with Double]
+  /* 14 */ val LZMA: typings.browserfs.zipFSMod.CompressionMethod.LZMA with Double = js.native
   
   @js.native
   sealed trait PPMD extends CompressionMethod
-  /* 98 */ @js.native
-  object PPMD extends TopLevel[PPMD with Double]
+  /* 98 */ val PPMD: typings.browserfs.zipFSMod.CompressionMethod.PPMD with Double = js.native
   
   @js.native
   sealed trait REDUCED_1 extends CompressionMethod
-  /* 2 */ @js.native
-  object REDUCED_1 extends TopLevel[REDUCED_1 with Double]
+  /* 2 */ val REDUCED_1: typings.browserfs.zipFSMod.CompressionMethod.REDUCED_1 with Double = js.native
   
   @js.native
   sealed trait REDUCED_2 extends CompressionMethod
-  /* 3 */ @js.native
-  object REDUCED_2 extends TopLevel[REDUCED_2 with Double]
+  /* 3 */ val REDUCED_2: typings.browserfs.zipFSMod.CompressionMethod.REDUCED_2 with Double = js.native
   
   @js.native
   sealed trait REDUCED_3 extends CompressionMethod
-  /* 4 */ @js.native
-  object REDUCED_3 extends TopLevel[REDUCED_3 with Double]
+  /* 4 */ val REDUCED_3: typings.browserfs.zipFSMod.CompressionMethod.REDUCED_3 with Double = js.native
   
   @js.native
   sealed trait REDUCED_4 extends CompressionMethod
-  /* 5 */ @js.native
-  object REDUCED_4 extends TopLevel[REDUCED_4 with Double]
+  /* 5 */ val REDUCED_4: typings.browserfs.zipFSMod.CompressionMethod.REDUCED_4 with Double = js.native
   
   @js.native
   sealed trait SHRUNK extends CompressionMethod
-  /* 1 */ @js.native
-  object SHRUNK extends TopLevel[SHRUNK with Double]
+  /* 1 */ val SHRUNK: typings.browserfs.zipFSMod.CompressionMethod.SHRUNK with Double = js.native
   
   @js.native
   sealed trait STORED extends CompressionMethod
-  /* 0 */ @js.native
-  object STORED extends TopLevel[STORED with Double]
+  /* 0 */ val STORED: typings.browserfs.zipFSMod.CompressionMethod.STORED with Double = js.native
   
   @js.native
   sealed trait TERSE_NEW extends CompressionMethod
-  /* 18 */ @js.native
-  object TERSE_NEW extends TopLevel[TERSE_NEW with Double]
+  /* 18 */ val TERSE_NEW: typings.browserfs.zipFSMod.CompressionMethod.TERSE_NEW with Double = js.native
   
   @js.native
   sealed trait TERSE_OLD extends CompressionMethod
-  /* 10 */ @js.native
-  object TERSE_OLD extends TopLevel[TERSE_OLD with Double]
+  /* 10 */ val TERSE_OLD: typings.browserfs.zipFSMod.CompressionMethod.TERSE_OLD with Double = js.native
   
   @js.native
   sealed trait WAVPACK extends CompressionMethod
-  /* 97 */ @js.native
-  object WAVPACK extends TopLevel[WAVPACK with Double]
+  /* 97 */ val WAVPACK: typings.browserfs.zipFSMod.CompressionMethod.WAVPACK with Double = js.native
 }

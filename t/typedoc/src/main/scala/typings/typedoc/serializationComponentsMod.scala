@@ -5,19 +5,22 @@ import typings.typedoc.modelsMod.Reflection
 import typings.typedoc.modelsMod.Type
 import typings.typedoc.schemaMod.ModelToObject
 import typings.typedoc.serializerMod.Serializer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/serialization/components", JSImport.Namespace)
-@js.native
-object serializationComponentsMod extends js.Object {
+object serializationComponentsMod {
   
+  @JSImport("typedoc/dist/lib/serialization/components", "ReflectionSerializerComponent")
   @js.native
-  abstract class ReflectionSerializerComponent[T /* <: Reflection */] () extends SerializerComponent[T]
+  abstract class ReflectionSerializerComponent[T /* <: Reflection */] protected () extends SerializerComponent[T] {
+    def this(owner: Serializer) = this()
+  }
   
+  @JSImport("typedoc/dist/lib/serialization/components", "SerializerComponent")
   @js.native
-  abstract class SerializerComponent[T] protected () extends js.Object {
+  abstract class SerializerComponent[T] protected () extends StObject {
     def this(owner: Serializer) = this()
     
     var owner: Serializer = js.native
@@ -32,12 +35,22 @@ object serializationComponentsMod extends js.Object {
     def toObject(item: T, obj: js.Object): Partial[ModelToObject[T]] = js.native
   }
   /* static members */
-  @js.native
-  object SerializerComponent extends js.Object {
+  object SerializerComponent {
     
-    var PRIORITY: Double = js.native
+    @JSImport("typedoc/dist/lib/serialization/components", "SerializerComponent")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("typedoc/dist/lib/serialization/components", "SerializerComponent.PRIORITY")
+    @js.native
+    def PRIORITY: Double = js.native
+    @scala.inline
+    def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("typedoc/dist/lib/serialization/components", "TypeSerializerComponent")
   @js.native
-  abstract class TypeSerializerComponent[T /* <: Type */] () extends SerializerComponent[T]
+  abstract class TypeSerializerComponent[T /* <: Type */] protected () extends SerializerComponent[T] {
+    def this(owner: Serializer) = this()
+  }
 }

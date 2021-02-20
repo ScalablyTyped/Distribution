@@ -2,6 +2,7 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.vscodeLanguageserverProtocol.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,27 +35,15 @@ object InitializeResult {
   }
   
   @scala.inline
-  implicit class InitializeResultOps[Self <: InitializeResult[_], T] (val x: Self with InitializeResult[T]) extends AnyVal {
+  implicit class InitializeResultMutableBuilder[Self <: InitializeResult[_], T] (val x: Self with InitializeResult[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapabilities(value: ServerCapabilities[T]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServerInfo(value: Name): Self = StObject.set(x, "serverInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCapabilities(value: ServerCapabilities[T]): Self = this.set("capabilities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerInfo(value: Name): Self = this.set("serverInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerInfo: Self = this.set("serverInfo", js.undefined)
+    def setServerInfoUndefined: Self = StObject.set(x, "serverInfo", js.undefined)
   }
 }

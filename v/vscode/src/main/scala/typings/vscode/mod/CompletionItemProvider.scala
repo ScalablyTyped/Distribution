@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompletionItemProvider[T /* <: CompletionItem */] extends js.Object {
+trait CompletionItemProvider[T /* <: CompletionItem */] extends StObject {
   
   /**
     * Provide completion items for the given position and document.
@@ -52,29 +53,17 @@ object CompletionItemProvider {
   }
   
   @scala.inline
-  implicit class CompletionItemProviderOps[Self <: CompletionItemProvider[_], T /* <: CompletionItem */] (val x: Self with CompletionItemProvider[T]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class CompletionItemProviderMutableBuilder[Self <: CompletionItemProvider[_], T /* <: CompletionItem */] (val x: Self with CompletionItemProvider[T]) extends AnyVal {
     
     @scala.inline
     def setProvideCompletionItems(
       value: (TextDocument, Position, CancellationToken, CompletionContext) => ProviderResult[js.Array[T] | CompletionList[T]]
-    ): Self = this.set("provideCompletionItems", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "provideCompletionItems", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setResolveCompletionItem(value: (/* item */ T, /* token */ CancellationToken) => ProviderResult[T]): Self = this.set("resolveCompletionItem", js.Any.fromFunction2(value))
+    def setResolveCompletionItem(value: (/* item */ T, /* token */ CancellationToken) => ProviderResult[T]): Self = StObject.set(x, "resolveCompletionItem", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteResolveCompletionItem: Self = this.set("resolveCompletionItem", js.undefined)
+    def setResolveCompletionItemUndefined: Self = StObject.set(x, "resolveCompletionItem", js.undefined)
   }
 }

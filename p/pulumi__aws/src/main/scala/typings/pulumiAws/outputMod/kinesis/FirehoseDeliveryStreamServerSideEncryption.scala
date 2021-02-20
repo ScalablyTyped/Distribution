@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.kinesis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirehoseDeliveryStreamServerSideEncryption extends js.Object {
+trait FirehoseDeliveryStreamServerSideEncryption extends StObject {
   
   /**
     * Whether to enable encryption at rest. Default is `false`.
@@ -31,36 +32,24 @@ object FirehoseDeliveryStreamServerSideEncryption {
   }
   
   @scala.inline
-  implicit class FirehoseDeliveryStreamServerSideEncryptionOps[Self <: FirehoseDeliveryStreamServerSideEncryption] (val x: Self) extends AnyVal {
+  implicit class FirehoseDeliveryStreamServerSideEncryptionMutableBuilder[Self <: FirehoseDeliveryStreamServerSideEncryption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyArn(value: String): Self = StObject.set(x, "keyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setKeyArnUndefined: Self = StObject.set(x, "keyArn", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setKeyType(value: String): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyArn(value: String): Self = this.set("keyArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyArn: Self = this.set("keyArn", js.undefined)
-    
-    @scala.inline
-    def setKeyType(value: String): Self = this.set("keyType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyType: Self = this.set("keyType", js.undefined)
+    def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
   }
 }

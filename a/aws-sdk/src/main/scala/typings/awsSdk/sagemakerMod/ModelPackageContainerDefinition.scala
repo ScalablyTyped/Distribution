@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModelPackageContainerDefinition extends js.Object {
+trait ModelPackageContainerDefinition extends StObject {
   
   /**
     * The DNS host name for the Docker container.
@@ -41,45 +42,33 @@ object ModelPackageContainerDefinition {
   }
   
   @scala.inline
-  implicit class ModelPackageContainerDefinitionOps[Self <: ModelPackageContainerDefinition] (val x: Self) extends AnyVal {
+  implicit class ModelPackageContainerDefinitionMutableBuilder[Self <: ModelPackageContainerDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerHostname(value: ContainerHostname): Self = StObject.set(x, "ContainerHostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerHostnameUndefined: Self = StObject.set(x, "ContainerHostname", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImage(value: ContainerImage): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: ContainerImage): Self = this.set("Image", value.asInstanceOf[js.Any])
+    def setImageDigest(value: ImageDigest): Self = StObject.set(x, "ImageDigest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerHostname(value: ContainerHostname): Self = this.set("ContainerHostname", value.asInstanceOf[js.Any])
+    def setImageDigestUndefined: Self = StObject.set(x, "ImageDigest", js.undefined)
     
     @scala.inline
-    def deleteContainerHostname: Self = this.set("ContainerHostname", js.undefined)
+    def setModelDataUrl(value: Url): Self = StObject.set(x, "ModelDataUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageDigest(value: ImageDigest): Self = this.set("ImageDigest", value.asInstanceOf[js.Any])
+    def setModelDataUrlUndefined: Self = StObject.set(x, "ModelDataUrl", js.undefined)
     
     @scala.inline
-    def deleteImageDigest: Self = this.set("ImageDigest", js.undefined)
+    def setProductId(value: ProductId): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelDataUrl(value: Url): Self = this.set("ModelDataUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModelDataUrl: Self = this.set("ModelDataUrl", js.undefined)
-    
-    @scala.inline
-    def setProductId(value: ProductId): Self = this.set("ProductId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductId: Self = this.set("ProductId", js.undefined)
+    def setProductIdUndefined: Self = StObject.set(x, "ProductId", js.undefined)
   }
 }

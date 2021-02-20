@@ -1,12 +1,13 @@
 package typings.googleProtobuf.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf", "ExtensionFieldBinaryInfo")
 @js.native
-class ExtensionFieldBinaryInfo[T] protected () extends js.Object {
+class ExtensionFieldBinaryInfo[T] protected () extends StObject {
   def this(
     fieldInfo: ExtensionFieldInfo[T],
     binaryReaderFn: BinaryRead,

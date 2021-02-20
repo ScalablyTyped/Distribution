@@ -1,11 +1,12 @@
 package typings.muiDatatables.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MUIDataTableMeta extends js.Object {
+trait MUIDataTableMeta extends StObject {
   
   var columnData: MUIDataTableColumnState = js.native
   
@@ -38,48 +39,36 @@ object MUIDataTableMeta {
   }
   
   @scala.inline
-  implicit class MUIDataTableMetaOps[Self <: MUIDataTableMeta] (val x: Self) extends AnyVal {
+  implicit class MUIDataTableMetaMutableBuilder[Self <: MUIDataTableMeta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnData(value: MUIDataTableColumnState): Self = StObject.set(x, "columnData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentTableData(value: js.Array[MUIDataTableCurrentData]): Self = StObject.set(x, "currentTableData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnData(value: MUIDataTableColumnState): Self = this.set("columnData", value.asInstanceOf[js.Any])
+    def setCurrentTableDataVarargs(value: MUIDataTableCurrentData*): Self = StObject.set(x, "currentTableData", js.Array(value :_*))
     
     @scala.inline
-    def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    def setRowData(value: js.Array[_]): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTableDataVarargs(value: MUIDataTableCurrentData*): Self = this.set("currentTableData", js.Array(value :_*))
+    def setRowDataVarargs(value: js.Any*): Self = StObject.set(x, "rowData", js.Array(value :_*))
     
     @scala.inline
-    def setCurrentTableData(value: js.Array[MUIDataTableCurrentData]): Self = this.set("currentTableData", value.asInstanceOf[js.Any])
+    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowDataVarargs(value: js.Any*): Self = this.set("rowData", js.Array(value :_*))
+    def setTableData(value: js.Array[MUIDataTableData]): Self = StObject.set(x, "tableData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowData(value: js.Array[_]): Self = this.set("rowData", value.asInstanceOf[js.Any])
+    def setTableDataVarargs(value: MUIDataTableData*): Self = StObject.set(x, "tableData", js.Array(value :_*))
     
     @scala.inline
-    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTableDataVarargs(value: MUIDataTableData*): Self = this.set("tableData", js.Array(value :_*))
-    
-    @scala.inline
-    def setTableData(value: js.Array[MUIDataTableData]): Self = this.set("tableData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTableState(value: MUIDataTableState): Self = this.set("tableState", value.asInstanceOf[js.Any])
+    def setTableState(value: MUIDataTableState): Self = StObject.set(x, "tableState", value.asInstanceOf[js.Any])
   }
 }

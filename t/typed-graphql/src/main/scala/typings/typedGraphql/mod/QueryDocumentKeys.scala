@@ -1,12 +1,13 @@
 package typings.typedGraphql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // language/visitor.js
 @js.native
-trait QueryDocumentKeys extends js.Object {
+trait QueryDocumentKeys extends StObject {
   
   var Argument: js.Array[String] = js.native
   
@@ -117,216 +118,204 @@ object QueryDocumentKeys {
   }
   
   @scala.inline
-  implicit class QueryDocumentKeysOps[Self <: QueryDocumentKeys] (val x: Self) extends AnyVal {
+  implicit class QueryDocumentKeysMutableBuilder[Self <: QueryDocumentKeys] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgument(value: js.Array[String]): Self = StObject.set(x, "Argument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgumentVarargs(value: String*): Self = StObject.set(x, "Argument", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBooleanValue(value: js.Array[Boolean]): Self = StObject.set(x, "BooleanValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgumentVarargs(value: String*): Self = this.set("Argument", js.Array(value :_*))
+    def setBooleanValueVarargs(value: Boolean*): Self = StObject.set(x, "BooleanValue", js.Array(value :_*))
     
     @scala.inline
-    def setArgument(value: js.Array[String]): Self = this.set("Argument", value.asInstanceOf[js.Any])
+    def setDirective(value: js.Array[String]): Self = StObject.set(x, "Directive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBooleanValueVarargs(value: Boolean*): Self = this.set("BooleanValue", js.Array(value :_*))
+    def setDirectiveVarargs(value: String*): Self = StObject.set(x, "Directive", js.Array(value :_*))
     
     @scala.inline
-    def setBooleanValue(value: js.Array[Boolean]): Self = this.set("BooleanValue", value.asInstanceOf[js.Any])
+    def setDocument(value: js.Array[String]): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectiveVarargs(value: String*): Self = this.set("Directive", js.Array(value :_*))
+    def setDocumentVarargs(value: String*): Self = StObject.set(x, "Document", js.Array(value :_*))
     
     @scala.inline
-    def setDirective(value: js.Array[String]): Self = this.set("Directive", value.asInstanceOf[js.Any])
+    def setEnumTypeDefinition(value: js.Array[String]): Self = StObject.set(x, "EnumTypeDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentVarargs(value: String*): Self = this.set("Document", js.Array(value :_*))
+    def setEnumTypeDefinitionVarargs(value: String*): Self = StObject.set(x, "EnumTypeDefinition", js.Array(value :_*))
     
     @scala.inline
-    def setDocument(value: js.Array[String]): Self = this.set("Document", value.asInstanceOf[js.Any])
+    def setEnumValue(value: js.Array[_]): Self = StObject.set(x, "EnumValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnumTypeDefinitionVarargs(value: String*): Self = this.set("EnumTypeDefinition", js.Array(value :_*))
+    def setEnumValueDefinition(value: js.Array[String]): Self = StObject.set(x, "EnumValueDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnumTypeDefinition(value: js.Array[String]): Self = this.set("EnumTypeDefinition", value.asInstanceOf[js.Any])
+    def setEnumValueDefinitionVarargs(value: String*): Self = StObject.set(x, "EnumValueDefinition", js.Array(value :_*))
     
     @scala.inline
-    def setEnumValueVarargs(value: js.Any*): Self = this.set("EnumValue", js.Array(value :_*))
+    def setEnumValueVarargs(value: js.Any*): Self = StObject.set(x, "EnumValue", js.Array(value :_*))
     
     @scala.inline
-    def setEnumValue(value: js.Array[_]): Self = this.set("EnumValue", value.asInstanceOf[js.Any])
+    def setField(value: js.Array[String]): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnumValueDefinitionVarargs(value: String*): Self = this.set("EnumValueDefinition", js.Array(value :_*))
+    def setFieldDefinition(value: js.Array[String]): Self = StObject.set(x, "FieldDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnumValueDefinition(value: js.Array[String]): Self = this.set("EnumValueDefinition", value.asInstanceOf[js.Any])
+    def setFieldDefinitionVarargs(value: String*): Self = StObject.set(x, "FieldDefinition", js.Array(value :_*))
     
     @scala.inline
-    def setFieldVarargs(value: String*): Self = this.set("Field", js.Array(value :_*))
+    def setFieldVarargs(value: String*): Self = StObject.set(x, "Field", js.Array(value :_*))
     
     @scala.inline
-    def setField(value: js.Array[String]): Self = this.set("Field", value.asInstanceOf[js.Any])
+    def setFloatValue(value: js.Array[Double]): Self = StObject.set(x, "FloatValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldDefinitionVarargs(value: String*): Self = this.set("FieldDefinition", js.Array(value :_*))
+    def setFloatValueVarargs(value: Double*): Self = StObject.set(x, "FloatValue", js.Array(value :_*))
     
     @scala.inline
-    def setFieldDefinition(value: js.Array[String]): Self = this.set("FieldDefinition", value.asInstanceOf[js.Any])
+    def setFragmentDefinition(value: js.Array[String]): Self = StObject.set(x, "FragmentDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatValueVarargs(value: Double*): Self = this.set("FloatValue", js.Array(value :_*))
+    def setFragmentDefinitionVarargs(value: String*): Self = StObject.set(x, "FragmentDefinition", js.Array(value :_*))
     
     @scala.inline
-    def setFloatValue(value: js.Array[Double]): Self = this.set("FloatValue", value.asInstanceOf[js.Any])
+    def setFragmentSpread(value: js.Array[String]): Self = StObject.set(x, "FragmentSpread", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragmentDefinitionVarargs(value: String*): Self = this.set("FragmentDefinition", js.Array(value :_*))
+    def setFragmentSpreadVarargs(value: String*): Self = StObject.set(x, "FragmentSpread", js.Array(value :_*))
     
     @scala.inline
-    def setFragmentDefinition(value: js.Array[String]): Self = this.set("FragmentDefinition", value.asInstanceOf[js.Any])
+    def setInlineFragment(value: js.Array[String]): Self = StObject.set(x, "InlineFragment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragmentSpreadVarargs(value: String*): Self = this.set("FragmentSpread", js.Array(value :_*))
+    def setInlineFragmentVarargs(value: String*): Self = StObject.set(x, "InlineFragment", js.Array(value :_*))
     
     @scala.inline
-    def setFragmentSpread(value: js.Array[String]): Self = this.set("FragmentSpread", value.asInstanceOf[js.Any])
+    def setInputObjectTypeDefinition(value: js.Array[String]): Self = StObject.set(x, "InputObjectTypeDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInlineFragmentVarargs(value: String*): Self = this.set("InlineFragment", js.Array(value :_*))
+    def setInputObjectTypeDefinitionVarargs(value: String*): Self = StObject.set(x, "InputObjectTypeDefinition", js.Array(value :_*))
     
     @scala.inline
-    def setInlineFragment(value: js.Array[String]): Self = this.set("InlineFragment", value.asInstanceOf[js.Any])
+    def setInputValueDefinition(value: js.Array[String]): Self = StObject.set(x, "InputValueDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputObjectTypeDefinitionVarargs(value: String*): Self = this.set("InputObjectTypeDefinition", js.Array(value :_*))
+    def setInputValueDefinitionVarargs(value: String*): Self = StObject.set(x, "InputValueDefinition", js.Array(value :_*))
     
     @scala.inline
-    def setInputObjectTypeDefinition(value: js.Array[String]): Self = this.set("InputObjectTypeDefinition", value.asInstanceOf[js.Any])
+    def setIntValue(value: js.Array[Double]): Self = StObject.set(x, "IntValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputValueDefinitionVarargs(value: String*): Self = this.set("InputValueDefinition", js.Array(value :_*))
+    def setIntValueVarargs(value: Double*): Self = StObject.set(x, "IntValue", js.Array(value :_*))
     
     @scala.inline
-    def setInputValueDefinition(value: js.Array[String]): Self = this.set("InputValueDefinition", value.asInstanceOf[js.Any])
+    def setInterfaceTypeDefinition(value: js.Array[String]): Self = StObject.set(x, "InterfaceTypeDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntValueVarargs(value: Double*): Self = this.set("IntValue", js.Array(value :_*))
+    def setInterfaceTypeDefinitionVarargs(value: String*): Self = StObject.set(x, "InterfaceTypeDefinition", js.Array(value :_*))
     
     @scala.inline
-    def setIntValue(value: js.Array[Double]): Self = this.set("IntValue", value.asInstanceOf[js.Any])
+    def setListType(value: js.Array[String]): Self = StObject.set(x, "ListType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterfaceTypeDefinitionVarargs(value: String*): Self = this.set("InterfaceTypeDefinition", js.Array(value :_*))
+    def setListTypeVarargs(value: String*): Self = StObject.set(x, "ListType", js.Array(value :_*))
     
     @scala.inline
-    def setInterfaceTypeDefinition(value: js.Array[String]): Self = this.set("InterfaceTypeDefinition", value.asInstanceOf[js.Any])
+    def setListValue(value: js.Array[String]): Self = StObject.set(x, "ListValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListTypeVarargs(value: String*): Self = this.set("ListType", js.Array(value :_*))
+    def setListValueVarargs(value: String*): Self = StObject.set(x, "ListValue", js.Array(value :_*))
     
     @scala.inline
-    def setListType(value: js.Array[String]): Self = this.set("ListType", value.asInstanceOf[js.Any])
+    def setName(value: js.Array[_]): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListValueVarargs(value: String*): Self = this.set("ListValue", js.Array(value :_*))
+    def setNameVarargs(value: js.Any*): Self = StObject.set(x, "Name", js.Array(value :_*))
     
     @scala.inline
-    def setListValue(value: js.Array[String]): Self = this.set("ListValue", value.asInstanceOf[js.Any])
+    def setNamedType(value: js.Array[String]): Self = StObject.set(x, "NamedType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameVarargs(value: js.Any*): Self = this.set("Name", js.Array(value :_*))
+    def setNamedTypeVarargs(value: String*): Self = StObject.set(x, "NamedType", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: js.Array[_]): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setNonNullType(value: js.Array[String]): Self = StObject.set(x, "NonNullType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamedTypeVarargs(value: String*): Self = this.set("NamedType", js.Array(value :_*))
+    def setNonNullTypeVarargs(value: String*): Self = StObject.set(x, "NonNullType", js.Array(value :_*))
     
     @scala.inline
-    def setNamedType(value: js.Array[String]): Self = this.set("NamedType", value.asInstanceOf[js.Any])
+    def setObjectField(value: js.Array[String]): Self = StObject.set(x, "ObjectField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonNullTypeVarargs(value: String*): Self = this.set("NonNullType", js.Array(value :_*))
+    def setObjectFieldVarargs(value: String*): Self = StObject.set(x, "ObjectField", js.Array(value :_*))
     
     @scala.inline
-    def setNonNullType(value: js.Array[String]): Self = this.set("NonNullType", value.asInstanceOf[js.Any])
+    def setObjectTypeDefinition(value: js.Array[String]): Self = StObject.set(x, "ObjectTypeDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectFieldVarargs(value: String*): Self = this.set("ObjectField", js.Array(value :_*))
+    def setObjectTypeDefinitionVarargs(value: String*): Self = StObject.set(x, "ObjectTypeDefinition", js.Array(value :_*))
     
     @scala.inline
-    def setObjectField(value: js.Array[String]): Self = this.set("ObjectField", value.asInstanceOf[js.Any])
+    def setObjectValue(value: js.Array[String]): Self = StObject.set(x, "ObjectValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectTypeDefinitionVarargs(value: String*): Self = this.set("ObjectTypeDefinition", js.Array(value :_*))
+    def setObjectValueVarargs(value: String*): Self = StObject.set(x, "ObjectValue", js.Array(value :_*))
     
     @scala.inline
-    def setObjectTypeDefinition(value: js.Array[String]): Self = this.set("ObjectTypeDefinition", value.asInstanceOf[js.Any])
+    def setOperationDefinition(value: js.Array[String]): Self = StObject.set(x, "OperationDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectValueVarargs(value: String*): Self = this.set("ObjectValue", js.Array(value :_*))
+    def setOperationDefinitionVarargs(value: String*): Self = StObject.set(x, "OperationDefinition", js.Array(value :_*))
     
     @scala.inline
-    def setObjectValue(value: js.Array[String]): Self = this.set("ObjectValue", value.asInstanceOf[js.Any])
+    def setScalarTypeDefinition(value: js.Array[String]): Self = StObject.set(x, "ScalarTypeDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationDefinitionVarargs(value: String*): Self = this.set("OperationDefinition", js.Array(value :_*))
+    def setScalarTypeDefinitionVarargs(value: String*): Self = StObject.set(x, "ScalarTypeDefinition", js.Array(value :_*))
     
     @scala.inline
-    def setOperationDefinition(value: js.Array[String]): Self = this.set("OperationDefinition", value.asInstanceOf[js.Any])
+    def setSelectionSet(value: js.Array[String]): Self = StObject.set(x, "SelectionSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalarTypeDefinitionVarargs(value: String*): Self = this.set("ScalarTypeDefinition", js.Array(value :_*))
+    def setSelectionSetVarargs(value: String*): Self = StObject.set(x, "SelectionSet", js.Array(value :_*))
     
     @scala.inline
-    def setScalarTypeDefinition(value: js.Array[String]): Self = this.set("ScalarTypeDefinition", value.asInstanceOf[js.Any])
+    def setStringValue(value: js.Array[String]): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionSetVarargs(value: String*): Self = this.set("SelectionSet", js.Array(value :_*))
+    def setStringValueVarargs(value: String*): Self = StObject.set(x, "StringValue", js.Array(value :_*))
     
     @scala.inline
-    def setSelectionSet(value: js.Array[String]): Self = this.set("SelectionSet", value.asInstanceOf[js.Any])
+    def setTypeExtensionDefinition(value: js.Array[String]): Self = StObject.set(x, "TypeExtensionDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStringValueVarargs(value: String*): Self = this.set("StringValue", js.Array(value :_*))
+    def setTypeExtensionDefinitionVarargs(value: String*): Self = StObject.set(x, "TypeExtensionDefinition", js.Array(value :_*))
     
     @scala.inline
-    def setStringValue(value: js.Array[String]): Self = this.set("StringValue", value.asInstanceOf[js.Any])
+    def setUnionTypeDefinition(value: js.Array[String]): Self = StObject.set(x, "UnionTypeDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeExtensionDefinitionVarargs(value: String*): Self = this.set("TypeExtensionDefinition", js.Array(value :_*))
+    def setUnionTypeDefinitionVarargs(value: String*): Self = StObject.set(x, "UnionTypeDefinition", js.Array(value :_*))
     
     @scala.inline
-    def setTypeExtensionDefinition(value: js.Array[String]): Self = this.set("TypeExtensionDefinition", value.asInstanceOf[js.Any])
+    def setVariable(value: js.Array[String]): Self = StObject.set(x, "Variable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnionTypeDefinitionVarargs(value: String*): Self = this.set("UnionTypeDefinition", js.Array(value :_*))
+    def setVariableDefinition(value: js.Array[String]): Self = StObject.set(x, "VariableDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnionTypeDefinition(value: js.Array[String]): Self = this.set("UnionTypeDefinition", value.asInstanceOf[js.Any])
+    def setVariableDefinitionVarargs(value: String*): Self = StObject.set(x, "VariableDefinition", js.Array(value :_*))
     
     @scala.inline
-    def setVariableVarargs(value: String*): Self = this.set("Variable", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariable(value: js.Array[String]): Self = this.set("Variable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariableDefinitionVarargs(value: String*): Self = this.set("VariableDefinition", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariableDefinition(value: js.Array[String]): Self = this.set("VariableDefinition", value.asInstanceOf[js.Any])
+    def setVariableVarargs(value: String*): Self = StObject.set(x, "Variable", js.Array(value :_*))
   }
 }

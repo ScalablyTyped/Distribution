@@ -1,6 +1,7 @@
 package typings.sketchapp
 
 import typings.sketchapp.sketchappStrings.layoutGrid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,57 +58,45 @@ object SketchMSLayoutGrid {
   }
   
   @scala.inline
-  implicit class SketchMSLayoutGridOps[Self <: SketchMSLayoutGrid] (val x: Self) extends AnyVal {
+  implicit class SketchMSLayoutGridMutableBuilder[Self <: SketchMSLayoutGrid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrawHorizontal(value: Boolean): Self = StObject.set(x, "drawHorizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrawHorizontalLines(value: Boolean): Self = StObject.set(x, "drawHorizontalLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_class(value: layoutGrid): Self = this.set("_class", value.asInstanceOf[js.Any])
+    def setDrawVertical(value: Boolean): Self = StObject.set(x, "drawVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnWidth(value: Double): Self = this.set("columnWidth", value.asInstanceOf[js.Any])
+    def setGutterHeight(value: Double): Self = StObject.set(x, "gutterHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawHorizontal(value: Boolean): Self = this.set("drawHorizontal", value.asInstanceOf[js.Any])
+    def setGutterWidth(value: Double): Self = StObject.set(x, "gutterWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawHorizontalLines(value: Boolean): Self = this.set("drawHorizontalLines", value.asInstanceOf[js.Any])
+    def setGuttersOutside(value: Boolean): Self = StObject.set(x, "guttersOutside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawVertical(value: Boolean): Self = this.set("drawVertical", value.asInstanceOf[js.Any])
+    def setHorizontalOffset(value: Double): Self = StObject.set(x, "horizontalOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGutterHeight(value: Double): Self = this.set("gutterHeight", value.asInstanceOf[js.Any])
+    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGutterWidth(value: Double): Self = this.set("gutterWidth", value.asInstanceOf[js.Any])
+    def setNumberOfColumns(value: Double): Self = StObject.set(x, "numberOfColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuttersOutside(value: Boolean): Self = this.set("guttersOutside", value.asInstanceOf[js.Any])
+    def setRowHeightMultiplication(value: Double): Self = StObject.set(x, "rowHeightMultiplication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalOffset(value: Double): Self = this.set("horizontalOffset", value.asInstanceOf[js.Any])
+    def setTotalWidth(value: Double): Self = StObject.set(x, "totalWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEnabled(value: Boolean): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumberOfColumns(value: Double): Self = this.set("numberOfColumns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowHeightMultiplication(value: Double): Self = this.set("rowHeightMultiplication", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalWidth(value: Double): Self = this.set("totalWidth", value.asInstanceOf[js.Any])
+    def set_class(value: layoutGrid): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

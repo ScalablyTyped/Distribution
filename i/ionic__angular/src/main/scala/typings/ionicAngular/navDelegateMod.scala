@@ -6,16 +6,16 @@ import typings.angularCore.mod.Injector
 import typings.angularCore.mod.ViewContainerRef
 import typings.ionicAngular.angularDelegateMod.AngularDelegate
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/angular/directives/navigation/nav-delegate", JSImport.Namespace)
-@js.native
-object navDelegateMod extends js.Object {
+object navDelegateMod {
   
+  @JSImport("@ionic/angular/directives/navigation/nav-delegate", "NavDelegate")
   @js.native
-  class NavDelegate protected () extends js.Object {
+  class NavDelegate protected () extends StObject {
     def this(
       ref: ElementRef[_],
       resolver: ComponentFactoryResolver,

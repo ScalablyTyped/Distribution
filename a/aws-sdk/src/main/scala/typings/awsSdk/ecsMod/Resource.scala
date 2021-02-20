@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Resource extends js.Object {
+trait Resource extends StObject {
   
   /**
     * When the doubleValue type is set, the value of the resource must be a double precision floating-point type.
@@ -46,57 +47,45 @@ object Resource {
   }
   
   @scala.inline
-  implicit class ResourceOps[Self <: Resource] (val x: Self) extends AnyVal {
+  implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDoubleValue(value: Double): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntegerValue(value: Integer): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleValue(value: Double): Self = this.set("doubleValue", value.asInstanceOf[js.Any])
+    def setIntegerValueUndefined: Self = StObject.set(x, "integerValue", js.undefined)
     
     @scala.inline
-    def deleteDoubleValue: Self = this.set("doubleValue", js.undefined)
+    def setLongValue(value: Long): Self = StObject.set(x, "longValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegerValue(value: Integer): Self = this.set("integerValue", value.asInstanceOf[js.Any])
+    def setLongValueUndefined: Self = StObject.set(x, "longValue", js.undefined)
     
     @scala.inline
-    def deleteIntegerValue: Self = this.set("integerValue", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongValue(value: Long): Self = this.set("longValue", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLongValue: Self = this.set("longValue", js.undefined)
+    def setStringSetValue(value: StringList): Self = StObject.set(x, "stringSetValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStringSetValueUndefined: Self = StObject.set(x, "stringSetValue", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setStringSetValueVarargs(value: String*): Self = StObject.set(x, "stringSetValue", js.Array(value :_*))
     
     @scala.inline
-    def setStringSetValueVarargs(value: String*): Self = this.set("stringSetValue", js.Array(value :_*))
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStringSetValue(value: StringList): Self = this.set("stringSetValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringSetValue: Self = this.set("stringSetValue", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`100`
 import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`59`
 import typings.activexFaxcomexlib.activexFaxcomexlibStrings.`LessthansignAll DevicesGreaterthansign`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`100`
   - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`59`
 */
-trait FaxConstants extends js.Object
+trait FaxConstants extends StObject
 object FaxConstants {
   
   @scala.inline

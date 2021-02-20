@@ -2,12 +2,13 @@ package typings.nightwatch.mod
 
 import typings.nightwatch.anon.Height
 import typings.nightwatch.anon.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ElementCommands extends js.Object {
+trait ElementCommands extends StObject {
   
   /**
     * Clear a textarea or a text input element's value. Uses `elementIdValue` protocol action internally.

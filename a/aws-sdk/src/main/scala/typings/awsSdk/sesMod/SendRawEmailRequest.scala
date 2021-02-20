@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendRawEmailRequest extends js.Object {
+trait SendRawEmailRequest extends StObject {
   
   /**
     * The name of the configuration set to use when you send an email using SendRawEmail.
@@ -56,69 +57,57 @@ object SendRawEmailRequest {
   }
   
   @scala.inline
-  implicit class SendRawEmailRequestOps[Self <: SendRawEmailRequest] (val x: Self) extends AnyVal {
+  implicit class SendRawEmailRequestMutableBuilder[Self <: SendRawEmailRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationSetNameUndefined: Self = StObject.set(x, "ConfigurationSetName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinations(value: AddressList): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawMessage(value: RawMessage): Self = this.set("RawMessage", value.asInstanceOf[js.Any])
+    def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
     
     @scala.inline
-    def setConfigurationSetName(value: ConfigurationSetName): Self = this.set("ConfigurationSetName", value.asInstanceOf[js.Any])
+    def setDestinationsVarargs(value: Address*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
     
     @scala.inline
-    def deleteConfigurationSetName: Self = this.set("ConfigurationSetName", js.undefined)
+    def setFromArn(value: AmazonResourceName): Self = StObject.set(x, "FromArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationsVarargs(value: Address*): Self = this.set("Destinations", js.Array(value :_*))
+    def setFromArnUndefined: Self = StObject.set(x, "FromArn", js.undefined)
     
     @scala.inline
-    def setDestinations(value: AddressList): Self = this.set("Destinations", value.asInstanceOf[js.Any])
+    def setRawMessage(value: RawMessage): Self = StObject.set(x, "RawMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDestinations: Self = this.set("Destinations", js.undefined)
+    def setReturnPathArn(value: AmazonResourceName): Self = StObject.set(x, "ReturnPathArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromArn(value: AmazonResourceName): Self = this.set("FromArn", value.asInstanceOf[js.Any])
+    def setReturnPathArnUndefined: Self = StObject.set(x, "ReturnPathArn", js.undefined)
     
     @scala.inline
-    def deleteFromArn: Self = this.set("FromArn", js.undefined)
+    def setSource(value: Address): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnPathArn(value: AmazonResourceName): Self = this.set("ReturnPathArn", value.asInstanceOf[js.Any])
+    def setSourceArn(value: AmazonResourceName): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReturnPathArn: Self = this.set("ReturnPathArn", js.undefined)
+    def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
     
     @scala.inline
-    def setSource(value: Address): Self = this.set("Source", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
     
     @scala.inline
-    def deleteSource: Self = this.set("Source", js.undefined)
+    def setTags(value: MessageTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceArn(value: AmazonResourceName): Self = this.set("SourceArn", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSourceArn: Self = this.set("SourceArn", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: MessageTag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: MessageTagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: MessageTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

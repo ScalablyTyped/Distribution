@@ -1,5 +1,6 @@
 package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Describes the expected outputs of the command.
   */
 @js.native
-trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs extends js.Object {
+trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs extends StObject {
   
   /**
     * A list of expected directories, relative to the execution root. All paths
@@ -49,48 +50,36 @@ object SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs {
   }
   
   @scala.inline
-  implicit class SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOutputsOps[Self <: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOutputsMutableBuilder[Self <: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectories(value: js.Array[String]): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectoriesVarargs(value: String*): Self = StObject.set(x, "directories", js.Array(value :_*))
     
     @scala.inline
-    def setDirectoriesVarargs(value: String*): Self = this.set("directories", js.Array(value :_*))
+    def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectories(value: js.Array[String]): Self = this.set("directories", value.asInstanceOf[js.Any])
+    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
     @scala.inline
-    def deleteDirectories: Self = this.set("directories", js.undefined)
+    def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
     
     @scala.inline
-    def setFilesVarargs(value: String*): Self = this.set("files", js.Array(value :_*))
+    def setStderrDestination(value: String): Self = StObject.set(x, "stderrDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiles(value: js.Array[String]): Self = this.set("files", value.asInstanceOf[js.Any])
+    def setStderrDestinationUndefined: Self = StObject.set(x, "stderrDestination", js.undefined)
     
     @scala.inline
-    def deleteFiles: Self = this.set("files", js.undefined)
+    def setStdoutDestination(value: String): Self = StObject.set(x, "stdoutDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStderrDestination(value: String): Self = this.set("stderrDestination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStderrDestination: Self = this.set("stderrDestination", js.undefined)
-    
-    @scala.inline
-    def setStdoutDestination(value: String): Self = this.set("stdoutDestination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStdoutDestination: Self = this.set("stdoutDestination", js.undefined)
+    def setStdoutDestinationUndefined: Self = StObject.set(x, "stdoutDestination", js.undefined)
   }
 }

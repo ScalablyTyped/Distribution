@@ -1,5 +1,6 @@
 package typings.xmlbuilder.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * function.
   */
 @js.native
-trait BeginOptions extends js.Object {
+trait BeginOptions extends StObject {
   
   /** 
     * Whether decorator strings will be ignored when converting JS 
@@ -70,72 +71,60 @@ object BeginOptions {
   }
   
   @scala.inline
-  implicit class BeginOptionsOps[Self <: BeginOptions] (val x: Self) extends AnyVal {
+  implicit class BeginOptionsMutableBuilder[Self <: BeginOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnoreDecorators(value: Boolean): Self = StObject.set(x, "ignoreDecorators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnoreDecoratorsUndefined: Self = StObject.set(x, "ignoreDecorators", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvalidCharReplacement(value: String): Self = StObject.set(x, "invalidCharReplacement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreDecorators(value: Boolean): Self = this.set("ignoreDecorators", value.asInstanceOf[js.Any])
+    def setInvalidCharReplacementUndefined: Self = StObject.set(x, "invalidCharReplacement", js.undefined)
     
     @scala.inline
-    def deleteIgnoreDecorators: Self = this.set("ignoreDecorators", js.undefined)
+    def setKeepNullAttributes(value: Boolean): Self = StObject.set(x, "keepNullAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidCharReplacement(value: String): Self = this.set("invalidCharReplacement", value.asInstanceOf[js.Any])
+    def setKeepNullAttributesUndefined: Self = StObject.set(x, "keepNullAttributes", js.undefined)
     
     @scala.inline
-    def deleteInvalidCharReplacement: Self = this.set("invalidCharReplacement", js.undefined)
+    def setKeepNullNodes(value: Boolean): Self = StObject.set(x, "keepNullNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepNullAttributes(value: Boolean): Self = this.set("keepNullAttributes", value.asInstanceOf[js.Any])
+    def setKeepNullNodesUndefined: Self = StObject.set(x, "keepNullNodes", js.undefined)
     
     @scala.inline
-    def deleteKeepNullAttributes: Self = this.set("keepNullAttributes", js.undefined)
+    def setNoDoubleEncoding(value: Boolean): Self = StObject.set(x, "noDoubleEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepNullNodes(value: Boolean): Self = this.set("keepNullNodes", value.asInstanceOf[js.Any])
+    def setNoDoubleEncodingUndefined: Self = StObject.set(x, "noDoubleEncoding", js.undefined)
     
     @scala.inline
-    def deleteKeepNullNodes: Self = this.set("keepNullNodes", js.undefined)
+    def setNoValidation(value: Boolean): Self = StObject.set(x, "noValidation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoDoubleEncoding(value: Boolean): Self = this.set("noDoubleEncoding", value.asInstanceOf[js.Any])
+    def setNoValidationUndefined: Self = StObject.set(x, "noValidation", js.undefined)
     
     @scala.inline
-    def deleteNoDoubleEncoding: Self = this.set("noDoubleEncoding", js.undefined)
+    def setSeparateArrayItems(value: Boolean): Self = StObject.set(x, "separateArrayItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoValidation(value: Boolean): Self = this.set("noValidation", value.asInstanceOf[js.Any])
+    def setSeparateArrayItemsUndefined: Self = StObject.set(x, "separateArrayItems", js.undefined)
     
     @scala.inline
-    def deleteNoValidation: Self = this.set("noValidation", js.undefined)
+    def setStringify(value: XMLStringifier): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeparateArrayItems(value: Boolean): Self = this.set("separateArrayItems", value.asInstanceOf[js.Any])
+    def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
     
     @scala.inline
-    def deleteSeparateArrayItems: Self = this.set("separateArrayItems", js.undefined)
+    def setWriter(value: XMLWriter | WriterOptions): Self = StObject.set(x, "writer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStringify(value: XMLStringifier): Self = this.set("stringify", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringify: Self = this.set("stringify", js.undefined)
-    
-    @scala.inline
-    def setWriter(value: XMLWriter | WriterOptions): Self = this.set("writer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriter: Self = this.set("writer", js.undefined)
+    def setWriterUndefined: Self = StObject.set(x, "writer", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.ts3NodejsLibrary.responseTypesMod
 
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,69 +44,57 @@ object FTInitUpload {
   }
   
   @scala.inline
-  implicit class FTInitUploadOps[Self <: FTInitUpload] (val x: Self) extends AnyVal {
+  implicit class FTInitUploadMutableBuilder[Self <: FTInitUpload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientftfid(value: Double): Self = StObject.set(x, "clientftfid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFtkey(value: String): Self = StObject.set(x, "ftkey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFtkeyUndefined: Self = StObject.set(x, "ftkey", js.undefined)
     
     @scala.inline
-    def setClientftfid(value: Double): Self = this.set("clientftfid", value.asInstanceOf[js.Any])
+    def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFtkey(value: String): Self = this.set("ftkey", value.asInstanceOf[js.Any])
+    def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
     
     @scala.inline
-    def deleteFtkey: Self = this.set("ftkey", js.undefined)
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsg(value: String): Self = this.set("msg", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deleteMsg: Self = this.set("msg", js.undefined)
+    def setProto(value: Double): Self = StObject.set(x, "proto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setProtoUndefined: Self = StObject.set(x, "proto", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setSeekpos(value: Double): Self = StObject.set(x, "seekpos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProto(value: Double): Self = this.set("proto", value.asInstanceOf[js.Any])
+    def setSeekposUndefined: Self = StObject.set(x, "seekpos", js.undefined)
     
     @scala.inline
-    def deleteProto: Self = this.set("proto", js.undefined)
+    def setServerftfid(value: Double): Self = StObject.set(x, "serverftfid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeekpos(value: Double): Self = this.set("seekpos", value.asInstanceOf[js.Any])
+    def setServerftfidUndefined: Self = StObject.set(x, "serverftfid", js.undefined)
     
     @scala.inline
-    def deleteSeekpos: Self = this.set("seekpos", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerftfid(value: Double): Self = this.set("serverftfid", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteServerftfid: Self = this.set("serverftfid", js.undefined)
+    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebGL2RenderingContextBase extends js.Object {
+trait WebGL2RenderingContextBase extends StObject {
   
   val ACTIVE_UNIFORM_BLOCKS: GLenum = js.native
   

@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.kinesisanalyticsv2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationApplicationConfigurationVpcConfiguration extends js.Object {
+trait ApplicationApplicationConfigurationVpcConfiguration extends StObject {
   
   /**
     * The [Security Group](https://www.terraform.io/docs/providers/aws/r/security_group.html) IDs used by the VPC configuration.
@@ -31,42 +32,30 @@ object ApplicationApplicationConfigurationVpcConfiguration {
   }
   
   @scala.inline
-  implicit class ApplicationApplicationConfigurationVpcConfigurationOps[Self <: ApplicationApplicationConfigurationVpcConfiguration] (val x: Self) extends AnyVal {
+  implicit class ApplicationApplicationConfigurationVpcConfigurationMutableBuilder[Self <: ApplicationApplicationConfigurationVpcConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroupIdsVarargs(value: Input[String]*): Self = this.set("securityGroupIds", js.Array(value :_*))
+    def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
     
     @scala.inline
-    def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = this.set("securityGroupIds", value.asInstanceOf[js.Any])
+    def setVpcConfigurationId(value: Input[String]): Self = StObject.set(x, "vpcConfigurationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetIdsVarargs(value: Input[String]*): Self = this.set("subnetIds", js.Array(value :_*))
+    def setVpcConfigurationIdUndefined: Self = StObject.set(x, "vpcConfigurationId", js.undefined)
     
     @scala.inline
-    def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = this.set("subnetIds", value.asInstanceOf[js.Any])
+    def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpcConfigurationId(value: Input[String]): Self = this.set("vpcConfigurationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcConfigurationId: Self = this.set("vpcConfigurationId", js.undefined)
-    
-    @scala.inline
-    def setVpcId(value: Input[String]): Self = this.set("vpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("vpcId", js.undefined)
+    def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
   }
 }

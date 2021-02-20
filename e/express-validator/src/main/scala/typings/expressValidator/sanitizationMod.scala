@@ -3,14 +3,14 @@ package typings.expressValidator
 import typings.expressValidator.baseMod.CustomSanitizer
 import typings.expressValidator.baseMod.StandardSanitizer
 import typings.expressValidator.contextItemMod.ContextItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("express-validator/src/context-items/sanitization", JSImport.Namespace)
-@js.native
-object sanitizationMod extends js.Object {
+object sanitizationMod {
   
+  @JSImport("express-validator/src/context-items/sanitization", "Sanitization")
   @js.native
   class Sanitization protected () extends ContextItem {
     def this(sanitizer: CustomSanitizer | StandardSanitizer, custom: Boolean) = this()

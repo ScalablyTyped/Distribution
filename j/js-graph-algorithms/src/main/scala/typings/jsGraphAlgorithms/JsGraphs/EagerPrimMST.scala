@@ -1,11 +1,12 @@
 package typings.jsGraphAlgorithms.JsGraphs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EagerPrimMST extends js.Object {
+trait EagerPrimMST extends StObject {
   
   var marked: js.Any = js.native
   
@@ -24,33 +25,21 @@ object EagerPrimMST {
   }
   
   @scala.inline
-  implicit class EagerPrimMSTOps[Self <: EagerPrimMST] (val x: Self) extends AnyVal {
+  implicit class EagerPrimMSTMutableBuilder[Self <: EagerPrimMST] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarked(value: js.Any): Self = StObject.set(x, "marked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMst(value: js.Array[Edge]): Self = StObject.set(x, "mst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMstVarargs(value: Edge*): Self = StObject.set(x, "mst", js.Array(value :_*))
     
     @scala.inline
-    def setMarked(value: js.Any): Self = this.set("marked", value.asInstanceOf[js.Any])
+    def setPq(value: js.Any): Self = StObject.set(x, "pq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMstVarargs(value: Edge*): Self = this.set("mst", js.Array(value :_*))
-    
-    @scala.inline
-    def setMst(value: js.Array[Edge]): Self = this.set("mst", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPq(value: js.Any): Self = this.set("pq", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisit(value: (WeightedGraph, Double) => Unit): Self = this.set("visit", js.Any.fromFunction2(value))
+    def setVisit(value: (WeightedGraph, Double) => Unit): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
   }
 }

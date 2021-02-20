@@ -1,12 +1,13 @@
 package typings.babelTraverse.anon
 
 import typings.babelTraverse.babelTraverseStrings.JSXAttribute
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `100` extends js.Object {
+trait `100` extends StObject {
   
   var `type`: JSXAttribute = js.native
 }
@@ -20,21 +21,9 @@ object `100` {
   }
   
   @scala.inline
-  implicit class `100Ops`[Self <: `100`] (val x: Self) extends AnyVal {
+  implicit class `100MutableBuilder`[Self <: `100`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: JSXAttribute): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: JSXAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

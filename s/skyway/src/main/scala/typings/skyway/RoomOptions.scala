@@ -1,12 +1,13 @@
 package typings.skyway
 
 import typings.std.MediaStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoomOptions extends js.Object {
+trait RoomOptions extends StObject {
   
   var audioBandwidth: js.UndefOr[Double] = js.native
   
@@ -33,66 +34,54 @@ object RoomOptions {
   }
   
   @scala.inline
-  implicit class RoomOptionsOps[Self <: RoomOptions] (val x: Self) extends AnyVal {
+  implicit class RoomOptionsMutableBuilder[Self <: RoomOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioBandwidth(value: Double): Self = StObject.set(x, "audioBandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioBandwidthUndefined: Self = StObject.set(x, "audioBandwidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioCodec(value: String): Self = StObject.set(x, "audioCodec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioBandwidth(value: Double): Self = this.set("audioBandwidth", value.asInstanceOf[js.Any])
+    def setAudioCodecUndefined: Self = StObject.set(x, "audioCodec", js.undefined)
     
     @scala.inline
-    def deleteAudioBandwidth: Self = this.set("audioBandwidth", js.undefined)
+    def setAudioReceiveEnabled(value: Boolean): Self = StObject.set(x, "audioReceiveEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioCodec(value: String): Self = this.set("audioCodec", value.asInstanceOf[js.Any])
+    def setAudioReceiveEnabledUndefined: Self = StObject.set(x, "audioReceiveEnabled", js.undefined)
     
     @scala.inline
-    def deleteAudioCodec: Self = this.set("audioCodec", js.undefined)
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioReceiveEnabled(value: Boolean): Self = this.set("audioReceiveEnabled", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteAudioReceiveEnabled: Self = this.set("audioReceiveEnabled", js.undefined)
+    def setStream(value: MediaStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setVideoBandwidth(value: Double): Self = StObject.set(x, "videoBandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStream(value: MediaStream): Self = this.set("stream", value.asInstanceOf[js.Any])
+    def setVideoBandwidthUndefined: Self = StObject.set(x, "videoBandwidth", js.undefined)
     
     @scala.inline
-    def deleteStream: Self = this.set("stream", js.undefined)
+    def setVideoCodec(value: String): Self = StObject.set(x, "videoCodec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoBandwidth(value: Double): Self = this.set("videoBandwidth", value.asInstanceOf[js.Any])
+    def setVideoCodecUndefined: Self = StObject.set(x, "videoCodec", js.undefined)
     
     @scala.inline
-    def deleteVideoBandwidth: Self = this.set("videoBandwidth", js.undefined)
+    def setVideoReceiveEnabled(value: Boolean): Self = StObject.set(x, "videoReceiveEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoCodec(value: String): Self = this.set("videoCodec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoCodec: Self = this.set("videoCodec", js.undefined)
-    
-    @scala.inline
-    def setVideoReceiveEnabled(value: Boolean): Self = this.set("videoReceiveEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoReceiveEnabled: Self = this.set("videoReceiveEnabled", js.undefined)
+    def setVideoReceiveEnabledUndefined: Self = StObject.set(x, "videoReceiveEnabled", js.undefined)
   }
 }

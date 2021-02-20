@@ -7,14 +7,14 @@ import typings.libp2pNoise.libp2pMod.KeyPair
 import typings.libp2pNoise.noiseMod.WrappedConnection
 import typings.libp2pNoise.xxMod.XX
 import typings.peerId.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("libp2p-noise/dist/src/handshake-xx-fallback", JSImport.Namespace)
-@js.native
-object handshakeXxFallbackMod extends js.Object {
+object handshakeXxFallbackMod {
   
+  @JSImport("libp2p-noise/dist/src/handshake-xx-fallback", "XXFallbackHandshake")
   @js.native
   class XXFallbackHandshake protected () extends XXHandshake {
     def this(

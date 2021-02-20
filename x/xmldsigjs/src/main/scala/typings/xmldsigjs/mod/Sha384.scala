@@ -1,5 +1,6 @@
 package typings.xmldsigjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xmldsigjs", "Sha384")
 @js.native
 class Sha384 ()
-  extends typings.xmldsigjs.rsaHashMod.Sha384
+  extends typings.xmldsigjs.algorithmsMod.Sha384

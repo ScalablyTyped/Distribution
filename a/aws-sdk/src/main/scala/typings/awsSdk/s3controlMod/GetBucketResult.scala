@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBucketResult extends js.Object {
+trait GetBucketResult extends StObject {
   
   /**
     * The Outposts bucket requested.
@@ -31,36 +32,24 @@ object GetBucketResult {
   }
   
   @scala.inline
-  implicit class GetBucketResultOps[Self <: GetBucketResult] (val x: Self) extends AnyVal {
+  implicit class GetBucketResultMutableBuilder[Self <: GetBucketResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def deleteBucket: Self = this.set("Bucket", js.undefined)
+    def setPublicAccessBlockEnabled(value: PublicAccessBlockEnabled): Self = StObject.set(x, "PublicAccessBlockEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: CreationDate): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
-    
-    @scala.inline
-    def setPublicAccessBlockEnabled(value: PublicAccessBlockEnabled): Self = this.set("PublicAccessBlockEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicAccessBlockEnabled: Self = this.set("PublicAccessBlockEnabled", js.undefined)
+    def setPublicAccessBlockEnabledUndefined: Self = StObject.set(x, "PublicAccessBlockEnabled", js.undefined)
   }
 }

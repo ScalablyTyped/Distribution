@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AsciiMathInputProcessor extends js.Object {
+trait AsciiMathInputProcessor extends StObject {
   
   /*This is the character to be used for decimal points in numbers. if you change this to ",", then you need to be
     * careful about entering points or intervals. E.g., use (1, 2) rather than (1,2) in that case.
@@ -28,30 +29,18 @@ object AsciiMathInputProcessor {
   }
   
   @scala.inline
-  implicit class AsciiMathInputProcessorOps[Self <: AsciiMathInputProcessor] (val x: Self) extends AnyVal {
+  implicit class AsciiMathInputProcessorMutableBuilder[Self <: AsciiMathInputProcessor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplaystyle(value: Boolean): Self = StObject.set(x, "displaystyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimal(value: String): Self = this.set("decimal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDecimal: Self = this.set("decimal", js.undefined)
-    
-    @scala.inline
-    def setDisplaystyle(value: Boolean): Self = this.set("displaystyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplaystyle: Self = this.set("displaystyle", js.undefined)
+    def setDisplaystyleUndefined: Self = StObject.set(x, "displaystyle", js.undefined)
   }
 }

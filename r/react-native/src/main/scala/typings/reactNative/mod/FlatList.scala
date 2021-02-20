@@ -8,14 +8,21 @@ import typings.reactNative.anon.Item
 import typings.reactNative.anon.Offset
 import typings.reactNative.anon.ViewOffset
 import typings.reactNative.anon.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native", "FlatList")
 @js.native
-class FlatList[ItemT] ()
+class FlatList[ItemT] protected ()
   extends Component[FlatListProps[ItemT], js.Object, js.Any] {
+  def this(props: FlatListProps[ItemT]) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: FlatListProps[ItemT], context: js.Any) = this()
   
   /**
     * Displays the scroll indicators momentarily.

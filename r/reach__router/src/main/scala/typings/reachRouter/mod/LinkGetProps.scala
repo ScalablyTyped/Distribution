@@ -1,12 +1,13 @@
 package typings.reachRouter.mod
 
 import typings.history.mod.LocationState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LinkGetProps extends js.Object {
+trait LinkGetProps extends StObject {
   
   var href: String = js.native
   
@@ -30,30 +31,18 @@ object LinkGetProps {
   }
   
   @scala.inline
-  implicit class LinkGetPropsOps[Self <: LinkGetProps] (val x: Self) extends AnyVal {
+  implicit class LinkGetPropsMutableBuilder[Self <: LinkGetProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsCurrent(value: Boolean): Self = StObject.set(x, "isCurrent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsPartiallyCurrent(value: Boolean): Self = StObject.set(x, "isPartiallyCurrent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsCurrent(value: Boolean): Self = this.set("isCurrent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsPartiallyCurrent(value: Boolean): Self = this.set("isPartiallyCurrent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocation(value: WindowLocation[LocationState]): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
   }
 }

@@ -4,12 +4,13 @@ import typings.baseui.baseuiStrings.any
 import typings.baseui.baseuiStrings.label
 import typings.baseui.baseuiStrings.start
 import typings.baseui.baseuiStrings.value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterOption extends js.Object {
+trait FilterOption extends StObject {
   
   var filterOption: js.UndefOr[
     js.Function2[/* option */ typings.baseui.selectMod.Option, /* filterValue */ String, Boolean]
@@ -36,60 +37,48 @@ object FilterOption {
   }
   
   @scala.inline
-  implicit class FilterOptionOps[Self <: FilterOption] (val x: Self) extends AnyVal {
+  implicit class FilterOptionMutableBuilder[Self <: FilterOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterOption(value: (/* option */ typings.baseui.selectMod.Option, /* filterValue */ String) => Boolean): Self = StObject.set(x, "filterOption", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterOptionUndefined: Self = StObject.set(x, "filterOption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterOption(value: (/* option */ typings.baseui.selectMod.Option, /* filterValue */ String) => Boolean): Self = this.set("filterOption", js.Any.fromFunction2(value))
+    def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
     
     @scala.inline
-    def deleteFilterOption: Self = this.set("filterOption", js.undefined)
+    def setLabelKey(value: String): Self = StObject.set(x, "labelKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreCase(value: Boolean): Self = this.set("ignoreCase", value.asInstanceOf[js.Any])
+    def setLabelKeyUndefined: Self = StObject.set(x, "labelKey", js.undefined)
     
     @scala.inline
-    def deleteIgnoreCase: Self = this.set("ignoreCase", js.undefined)
+    def setMatchPos(value: any | start): Self = StObject.set(x, "matchPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelKey(value: String): Self = this.set("labelKey", value.asInstanceOf[js.Any])
+    def setMatchPosUndefined: Self = StObject.set(x, "matchPos", js.undefined)
     
     @scala.inline
-    def deleteLabelKey: Self = this.set("labelKey", js.undefined)
+    def setMatchProp(value: any | label | value): Self = StObject.set(x, "matchProp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchPos(value: any | start): Self = this.set("matchPos", value.asInstanceOf[js.Any])
+    def setMatchPropUndefined: Self = StObject.set(x, "matchProp", js.undefined)
     
     @scala.inline
-    def deleteMatchPos: Self = this.set("matchPos", js.undefined)
+    def setTrimFilter(value: Boolean): Self = StObject.set(x, "trimFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchProp(value: any | label | value): Self = this.set("matchProp", value.asInstanceOf[js.Any])
+    def setTrimFilterUndefined: Self = StObject.set(x, "trimFilter", js.undefined)
     
     @scala.inline
-    def deleteMatchProp: Self = this.set("matchProp", js.undefined)
+    def setValueKey(value: String): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrimFilter(value: Boolean): Self = this.set("trimFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrimFilter: Self = this.set("trimFilter", js.undefined)
-    
-    @scala.inline
-    def setValueKey(value: String): Self = this.set("valueKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueKey: Self = this.set("valueKey", js.undefined)
+    def setValueKeyUndefined: Self = StObject.set(x, "valueKey", js.undefined)
   }
 }

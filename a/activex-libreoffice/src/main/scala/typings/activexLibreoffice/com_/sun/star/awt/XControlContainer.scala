@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,36 +49,24 @@ object XControlContainer {
   }
   
   @scala.inline
-  implicit class XControlContainerOps[Self <: XControlContainer] (val x: Self) extends AnyVal {
+  implicit class XControlContainerMutableBuilder[Self <: XControlContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddControl(value: (String, XControl) => Unit): Self = StObject.set(x, "addControl", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControls(value: SafeArray[XControl]): Self = StObject.set(x, "Controls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetControl(value: String => XControl): Self = StObject.set(x, "getControl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setControls(value: SafeArray[XControl]): Self = this.set("Controls", value.asInstanceOf[js.Any])
+    def setGetControls(value: () => SafeArray[XControl]): Self = StObject.set(x, "getControls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddControl(value: (String, XControl) => Unit): Self = this.set("addControl", js.Any.fromFunction2(value))
+    def setRemoveControl(value: XControl => Unit): Self = StObject.set(x, "removeControl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetControl(value: String => XControl): Self = this.set("getControl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetControls(value: () => SafeArray[XControl]): Self = this.set("getControls", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveControl(value: XControl => Unit): Self = this.set("removeControl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetStatusText(value: String => Unit): Self = this.set("setStatusText", js.Any.fromFunction1(value))
+    def setSetStatusText(value: String => Unit): Self = StObject.set(x, "setStatusText", js.Any.fromFunction1(value))
   }
 }

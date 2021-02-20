@@ -1,11 +1,12 @@
 package typings.swiper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CubeEffectOptions extends js.Object {
+trait CubeEffectOptions extends StObject {
   
   var shadow: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object CubeEffectOptions {
   }
   
   @scala.inline
-  implicit class CubeEffectOptionsOps[Self <: CubeEffectOptions] (val x: Self) extends AnyVal {
+  implicit class CubeEffectOptionsMutableBuilder[Self <: CubeEffectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShadow(value: Boolean): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShadowOffset(value: Double): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShadowOffsetUndefined: Self = StObject.set(x, "shadowOffset", js.undefined)
     
     @scala.inline
-    def setShadow(value: Boolean): Self = this.set("shadow", value.asInstanceOf[js.Any])
+    def setShadowScale(value: Double): Self = StObject.set(x, "shadowScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShadow: Self = this.set("shadow", js.undefined)
+    def setShadowScaleUndefined: Self = StObject.set(x, "shadowScale", js.undefined)
     
     @scala.inline
-    def setShadowOffset(value: Double): Self = this.set("shadowOffset", value.asInstanceOf[js.Any])
+    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
     @scala.inline
-    def deleteShadowOffset: Self = this.set("shadowOffset", js.undefined)
+    def setSlideShadows(value: Boolean): Self = StObject.set(x, "slideShadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowScale(value: Double): Self = this.set("shadowScale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadowScale: Self = this.set("shadowScale", js.undefined)
-    
-    @scala.inline
-    def setSlideShadows(value: Boolean): Self = this.set("slideShadows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlideShadows: Self = this.set("slideShadows", js.undefined)
+    def setSlideShadowsUndefined: Self = StObject.set(x, "slideShadows", js.undefined)
   }
 }

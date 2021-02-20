@@ -1,5 +1,6 @@
 package typings.ledgerhqHwTransport
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("@ledgerhq/hw-transport", JSImport.Namespace)
 @js.native
-object ledgerhqHwTransportRequire extends js.Object
+object ledgerhqHwTransportRequire extends StObject

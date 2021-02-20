@@ -3,6 +3,7 @@ package typings.wordpressBlocks.mod
 import typings.std.Partial
 import typings.std.Record
 import typings.wordpressBlocks.wordpressBlocksStrings.block_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,48 +33,36 @@ object TransformBlock {
   }
   
   @scala.inline
-  implicit class TransformBlockOps[Self <: TransformBlock[_], T /* <: Record[String, _] */] (val x: Self with TransformBlock[T]) extends AnyVal {
+  implicit class TransformBlockMutableBuilder[Self <: TransformBlock[_], T /* <: Record[String, _] */] (val x: Self with TransformBlock[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlocks(value: js.Array[String]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlocksVarargs(value: String*): Self = StObject.set(x, "blocks", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsMatch(value: /* attributes */ T => Boolean): Self = StObject.set(x, "isMatch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBlocksVarargs(value: String*): Self = this.set("blocks", js.Array(value :_*))
+    def setIsMatchUndefined: Self = StObject.set(x, "isMatch", js.undefined)
     
     @scala.inline
-    def setBlocks(value: js.Array[String]): Self = this.set("blocks", value.asInstanceOf[js.Any])
+    def setIsMultiBlock(value: Boolean): Self = StObject.set(x, "isMultiBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransform(value: T => BlockInstance[Partial[T]]): Self = this.set("transform", js.Any.fromFunction1(value))
+    def setIsMultiBlockUndefined: Self = StObject.set(x, "isMultiBlock", js.undefined)
     
     @scala.inline
-    def setType(value: block_): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMatch(value: /* attributes */ T => Boolean): Self = this.set("isMatch", js.Any.fromFunction1(value))
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deleteIsMatch: Self = this.set("isMatch", js.undefined)
+    def setTransform(value: T => BlockInstance[Partial[T]]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsMultiBlock(value: Boolean): Self = this.set("isMultiBlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsMultiBlock: Self = this.set("isMultiBlock", js.undefined)
-    
-    @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setType(value: block_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

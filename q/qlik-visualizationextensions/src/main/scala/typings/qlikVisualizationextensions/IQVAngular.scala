@@ -7,12 +7,13 @@ import typings.angular.mod.IController
 import typings.angular.mod.IDirectiveFactory
 import typings.angular.mod.IScope
 import typings.angular.mod.Injectable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IQVAngular extends js.Object {
+trait IQVAngular extends StObject {
   
   @JSName("$injector")
   var $injector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IInjectorService */ js.Any = js.native

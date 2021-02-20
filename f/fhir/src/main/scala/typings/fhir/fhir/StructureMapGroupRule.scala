@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,72 +60,60 @@ object StructureMapGroupRule {
   }
   
   @scala.inline
-  implicit class StructureMapGroupRuleOps[Self <: StructureMapGroupRule] (val x: Self) extends AnyVal {
+  implicit class StructureMapGroupRuleMutableBuilder[Self <: StructureMapGroupRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDependent(value: js.Array[StructureMapGroupRuleDependent]): Self = StObject.set(x, "dependent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDependentUndefined: Self = StObject.set(x, "dependent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDependentVarargs(value: StructureMapGroupRuleDependent*): Self = StObject.set(x, "dependent", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: id): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceVarargs(value: StructureMapGroupRuleSource*): Self = this.set("source", js.Array(value :_*))
+    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
     @scala.inline
-    def setSource(value: js.Array[StructureMapGroupRuleSource]): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setName(value: id): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_documentation(value: Element): Self = this.set("_documentation", value.asInstanceOf[js.Any])
+    def setRule(value: js.Array[StructureMapGroupRule]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_documentation: Self = this.set("_documentation", js.undefined)
+    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     
     @scala.inline
-    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    def setRuleVarargs(value: StructureMapGroupRule*): Self = StObject.set(x, "rule", js.Array(value :_*))
     
     @scala.inline
-    def delete_name: Self = this.set("_name", js.undefined)
+    def setSource(value: js.Array[StructureMapGroupRuleSource]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependentVarargs(value: StructureMapGroupRuleDependent*): Self = this.set("dependent", js.Array(value :_*))
+    def setSourceVarargs(value: StructureMapGroupRuleSource*): Self = StObject.set(x, "source", js.Array(value :_*))
     
     @scala.inline
-    def setDependent(value: js.Array[StructureMapGroupRuleDependent]): Self = this.set("dependent", value.asInstanceOf[js.Any])
+    def setTarget(value: js.Array[StructureMapGroupRuleTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDependent: Self = this.set("dependent", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def setDocumentation(value: String): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    def setTargetVarargs(value: StructureMapGroupRuleTarget*): Self = StObject.set(x, "target", js.Array(value :_*))
     
     @scala.inline
-    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    def set_documentation(value: Element): Self = StObject.set(x, "_documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleVarargs(value: StructureMapGroupRule*): Self = this.set("rule", js.Array(value :_*))
+    def set_documentationUndefined: Self = StObject.set(x, "_documentation", js.undefined)
     
     @scala.inline
-    def setRule(value: js.Array[StructureMapGroupRule]): Self = this.set("rule", value.asInstanceOf[js.Any])
+    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRule: Self = this.set("rule", js.undefined)
-    
-    @scala.inline
-    def setTargetVarargs(value: StructureMapGroupRuleTarget*): Self = this.set("target", js.Array(value :_*))
-    
-    @scala.inline
-    def setTarget(value: js.Array[StructureMapGroupRuleTarget]): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
   }
 }

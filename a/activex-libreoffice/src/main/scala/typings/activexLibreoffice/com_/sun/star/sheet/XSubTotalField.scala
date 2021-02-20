@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,36 +54,24 @@ object XSubTotalField {
   }
   
   @scala.inline
-  implicit class XSubTotalFieldOps[Self <: XSubTotalField] (val x: Self) extends AnyVal {
+  implicit class XSubTotalFieldMutableBuilder[Self <: XSubTotalField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetGroupColumn(value: () => Double): Self = StObject.set(x, "getGroupColumn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSubTotalColumns(value: () => SafeArray[SubTotalColumn]): Self = StObject.set(x, "getSubTotalColumns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupColumn(value: Double): Self = StObject.set(x, "GroupColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupColumn(value: Double): Self = this.set("GroupColumn", value.asInstanceOf[js.Any])
+    def setSetGroupColumn(value: Double => Unit): Self = StObject.set(x, "setGroupColumn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSubTotalColumns(value: SafeArray[SubTotalColumn]): Self = this.set("SubTotalColumns", value.asInstanceOf[js.Any])
+    def setSetSubTotalColumns(value: SeqEquiv[SubTotalColumn] => Unit): Self = StObject.set(x, "setSubTotalColumns", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetGroupColumn(value: () => Double): Self = this.set("getGroupColumn", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSubTotalColumns(value: () => SafeArray[SubTotalColumn]): Self = this.set("getSubTotalColumns", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetGroupColumn(value: Double => Unit): Self = this.set("setGroupColumn", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSubTotalColumns(value: SeqEquiv[SubTotalColumn] => Unit): Self = this.set("setSubTotalColumns", js.Any.fromFunction1(value))
+    def setSubTotalColumns(value: SafeArray[SubTotalColumn]): Self = StObject.set(x, "SubTotalColumns", value.asInstanceOf[js.Any])
   }
 }

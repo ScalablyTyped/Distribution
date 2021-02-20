@@ -1,5 +1,6 @@
 package typings.expoFileSystem.fileSystemTypesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expoFileSystem.expoFileSystemStrings.PUT
   - typings.expoFileSystem.expoFileSystemStrings.PATCH
 */
-trait FileSystemAcceptedUploadHttpMethod extends js.Object
+trait FileSystemAcceptedUploadHttpMethod extends StObject
 object FileSystemAcceptedUploadHttpMethod {
   
   @scala.inline

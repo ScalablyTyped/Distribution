@@ -8,6 +8,7 @@ import typings.googleAuthLibrary.loginticketMod.LoginTicket
 import typings.googleAuthLibrary.transportersMod.BodyResponseCallback
 import typings.std.Error
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -280,60 +281,80 @@ class OAuth2Client () extends AuthClient {
   ): js.Promise[LoginTicket] = js.native
 }
 /* static members */
-@JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client")
-@js.native
-object OAuth2Client extends js.Object {
+object OAuth2Client {
   
   /**
     * Clock skew - five minutes in seconds
     */
+  @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.CLOCK_SKEW_SECS_")
+  @js.native
   val CLOCK_SKEW_SECS_ : js.Any = js.native
   
   /**
     * The base URL for auth endpoints.
     */
+  @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.GOOGLE_OAUTH2_AUTH_BASE_URL_")
+  @js.native
   val GOOGLE_OAUTH2_AUTH_BASE_URL_ : js.Any = js.native
   
   /**
     * Google Sign on certificates in JWK format.
     */
+  @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.GOOGLE_OAUTH2_FEDERATED_SIGNON_JWK_CERTS_URL_")
+  @js.native
   val GOOGLE_OAUTH2_FEDERATED_SIGNON_JWK_CERTS_URL_ : js.Any = js.native
   
   /**
     * Google Sign on certificates in PEM format.
     */
+  @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.GOOGLE_OAUTH2_FEDERATED_SIGNON_PEM_CERTS_URL_")
+  @js.native
   val GOOGLE_OAUTH2_FEDERATED_SIGNON_PEM_CERTS_URL_ : js.Any = js.native
   
   /**
     * Google Sign on certificates in JWK format.
     */
+  @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.GOOGLE_OAUTH2_IAP_PUBLIC_KEY_URL_")
+  @js.native
   val GOOGLE_OAUTH2_IAP_PUBLIC_KEY_URL_ : js.Any = js.native
   
   /**
     * The base endpoint to revoke tokens.
     */
+  @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.GOOGLE_OAUTH2_REVOKE_URL_")
+  @js.native
   val GOOGLE_OAUTH2_REVOKE_URL_ : js.Any = js.native
   
   /**
     * The base endpoint for token retrieval.
     */
+  @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.GOOGLE_OAUTH2_TOKEN_URL_")
+  @js.native
   val GOOGLE_OAUTH2_TOKEN_URL_ : js.Any = js.native
   
+  @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.GOOGLE_TOKEN_INFO_URL")
+  @js.native
   val GOOGLE_TOKEN_INFO_URL: /* "https://oauth2.googleapis.com/tokeninfo" */ String = js.native
   
   /**
     * The allowed oauth token issuers.
     */
+  @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.ISSUERS_")
+  @js.native
   val ISSUERS_ : js.Any = js.native
   
   /**
     * Max Token Lifetime is one day in seconds
     */
+  @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.MAX_TOKEN_LIFETIME_SECS_")
+  @js.native
   val MAX_TOKEN_LIFETIME_SECS_ : js.Any = js.native
   
   /**
     * Generates an URL to revoke the given token.
     * @param token The existing token to be revoked.
     */
+  @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client.getRevokeTokenUrl")
+  @js.native
   def getRevokeTokenUrl(token: String): String = js.native
 }

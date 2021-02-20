@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FontType extends js.Object
+sealed trait FontType extends StObject
 @JSGlobal("__esri.CIM.FontType")
 @js.native
-object FontType extends js.Object {
+object FontType extends StObject {
   
   /**
     * OpenType with CFF outlines.

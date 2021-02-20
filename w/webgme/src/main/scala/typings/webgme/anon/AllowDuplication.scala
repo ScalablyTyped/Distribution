@@ -1,11 +1,12 @@
 package typings.webgme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowDuplication extends js.Object {
+trait AllowDuplication extends StObject {
   
   /**
     * Enables duplication of entire project with 
@@ -42,33 +43,21 @@ object AllowDuplication {
   }
   
   @scala.inline
-  implicit class AllowDuplicationOps[Self <: AllowDuplication] (val x: Self) extends AnyVal {
+  implicit class AllowDuplicationMutableBuilder[Self <: AllowDuplication] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowDuplication(value: Boolean): Self = StObject.set(x, "allowDuplication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasePaths(value: js.Array[String]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBasePathsVarargs(value: String*): Self = StObject.set(x, "basePaths", js.Array(value :_*))
     
     @scala.inline
-    def setAllowDuplication(value: Boolean): Self = this.set("allowDuplication", value.asInstanceOf[js.Any])
+    def setDefaultProject(value: String): Self = StObject.set(x, "defaultProject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasePathsVarargs(value: String*): Self = this.set("basePaths", js.Array(value :_*))
-    
-    @scala.inline
-    def setBasePaths(value: js.Array[String]): Self = this.set("basePaths", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultProject(value: String): Self = this.set("defaultProject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnable(value: Boolean): Self = this.set("enable", value.asInstanceOf[js.Any])
+    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
   }
 }

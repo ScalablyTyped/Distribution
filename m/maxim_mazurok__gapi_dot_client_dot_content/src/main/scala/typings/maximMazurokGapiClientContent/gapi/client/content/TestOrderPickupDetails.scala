@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestOrderPickupDetails extends js.Object {
+trait TestOrderPickupDetails extends StObject {
   
   /** Required. Code of the location defined by provider or merchant. */
   var locationCode: js.UndefOr[String] = js.native
@@ -28,45 +29,33 @@ object TestOrderPickupDetails {
   }
   
   @scala.inline
-  implicit class TestOrderPickupDetailsOps[Self <: TestOrderPickupDetails] (val x: Self) extends AnyVal {
+  implicit class TestOrderPickupDetailsMutableBuilder[Self <: TestOrderPickupDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocationCode(value: String): Self = StObject.set(x, "locationCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocationCodeUndefined: Self = StObject.set(x, "locationCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPickupLocationAddress(value: TestOrderAddress): Self = StObject.set(x, "pickupLocationAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationCode(value: String): Self = this.set("locationCode", value.asInstanceOf[js.Any])
+    def setPickupLocationAddressUndefined: Self = StObject.set(x, "pickupLocationAddress", js.undefined)
     
     @scala.inline
-    def deleteLocationCode: Self = this.set("locationCode", js.undefined)
+    def setPickupLocationType(value: String): Self = StObject.set(x, "pickupLocationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPickupLocationAddress(value: TestOrderAddress): Self = this.set("pickupLocationAddress", value.asInstanceOf[js.Any])
+    def setPickupLocationTypeUndefined: Self = StObject.set(x, "pickupLocationType", js.undefined)
     
     @scala.inline
-    def deletePickupLocationAddress: Self = this.set("pickupLocationAddress", js.undefined)
+    def setPickupPersons(value: js.Array[TestOrderPickupDetailsPickupPerson]): Self = StObject.set(x, "pickupPersons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPickupLocationType(value: String): Self = this.set("pickupLocationType", value.asInstanceOf[js.Any])
+    def setPickupPersonsUndefined: Self = StObject.set(x, "pickupPersons", js.undefined)
     
     @scala.inline
-    def deletePickupLocationType: Self = this.set("pickupLocationType", js.undefined)
-    
-    @scala.inline
-    def setPickupPersonsVarargs(value: TestOrderPickupDetailsPickupPerson*): Self = this.set("pickupPersons", js.Array(value :_*))
-    
-    @scala.inline
-    def setPickupPersons(value: js.Array[TestOrderPickupDetailsPickupPerson]): Self = this.set("pickupPersons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePickupPersons: Self = this.set("pickupPersons", js.undefined)
+    def setPickupPersonsVarargs(value: TestOrderPickupDetailsPickupPerson*): Self = StObject.set(x, "pickupPersons", js.Array(value :_*))
   }
 }

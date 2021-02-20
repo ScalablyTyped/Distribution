@@ -1,6 +1,6 @@
 package typings.jsonSchemaTyped.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait JSONSchemaType extends _JSONSchemaTypeValue
 @JSImport("json-schema-typed", "JSONSchemaType")
 @js.native
-object JSONSchemaType extends js.Object {
+object JSONSchemaType extends StObject {
   
   @JSBracketAccess
   def apply(value: java.lang.String): js.UndefOr[JSONSchemaType with java.lang.String] = js.native
@@ -19,61 +19,47 @@ object JSONSchemaType extends js.Object {
     */
   @js.native
   sealed trait Array extends JSONSchemaType
-  /* "array" */ @js.native
-  object Array
-    extends TopLevel[Array with java.lang.String]
+  /* "array" */ val Array: typings.jsonSchemaTyped.mod.JSONSchemaType.Array with java.lang.String = js.native
   
   /**
     * Boolean
     */
   @js.native
   sealed trait Boolean extends JSONSchemaType
-  /* "boolean" */ @js.native
-  object Boolean
-    extends TopLevel[Boolean with java.lang.String]
+  /* "boolean" */ val Boolean: typings.jsonSchemaTyped.mod.JSONSchemaType.Boolean with java.lang.String = js.native
   
   /**
     * Integer
     */
   @js.native
   sealed trait Integer extends JSONSchemaType
-  /* "integer" */ @js.native
-  object Integer
-    extends TopLevel[Integer with java.lang.String]
+  /* "integer" */ val Integer: typings.jsonSchemaTyped.mod.JSONSchemaType.Integer with java.lang.String = js.native
   
   /**
     * Null
     */
   @js.native
   sealed trait Null extends JSONSchemaType
-  /* "null" */ @js.native
-  object Null
-    extends TopLevel[Null with java.lang.String]
+  /* "null" */ val Null: typings.jsonSchemaTyped.mod.JSONSchemaType.Null with java.lang.String = js.native
   
   /**
     * Number
     */
   @js.native
   sealed trait Number extends JSONSchemaType
-  /* "number" */ @js.native
-  object Number
-    extends TopLevel[Number with java.lang.String]
+  /* "number" */ val Number: typings.jsonSchemaTyped.mod.JSONSchemaType.Number with java.lang.String = js.native
   
   /**
     * Object
     */
   @js.native
   sealed trait Object extends JSONSchemaType
-  /* "object" */ @js.native
-  object Object
-    extends TopLevel[Object with java.lang.String]
+  /* "object" */ val Object: typings.jsonSchemaTyped.mod.JSONSchemaType.Object with java.lang.String = js.native
   
   /**
     * String
     */
   @js.native
   sealed trait String extends JSONSchemaType
-  /* "string" */ @js.native
-  object String
-    extends TopLevel[String with java.lang.String]
+  /* "string" */ val String: typings.jsonSchemaTyped.mod.JSONSchemaType.String with java.lang.String = js.native
 }

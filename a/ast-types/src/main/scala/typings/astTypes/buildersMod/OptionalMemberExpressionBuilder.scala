@@ -4,12 +4,13 @@ import typings.astTypes.anon.Optional
 import typings.astTypes.kindsMod.ExpressionKind
 import typings.astTypes.kindsMod.IdentifierKind
 import typings.astTypes.namedTypesMod.namedTypes.OptionalMemberExpression
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptionalMemberExpressionBuilder extends js.Object {
+trait OptionalMemberExpressionBuilder extends StObject {
   
   def apply(`object`: ExpressionKind, property: ExpressionKind): OptionalMemberExpression = js.native
   def apply(

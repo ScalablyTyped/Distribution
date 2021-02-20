@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Storage.Provider
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WriteActivationMode extends js.Object
+sealed trait WriteActivationMode extends StObject
 /** Indicates whether other apps can write to the locally cached version of the file and when Windows will request an update if another app writes to that local file. */
 @JSGlobal("Windows.Storage.Provider.WriteActivationMode")
 @js.native
-object WriteActivationMode extends js.Object {
+object WriteActivationMode extends StObject {
   
   /** Windows will trigger a file update request after another app writes to the local file. */
   @js.native

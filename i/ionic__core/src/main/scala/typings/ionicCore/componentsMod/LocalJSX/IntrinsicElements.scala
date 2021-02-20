@@ -1,11 +1,12 @@
 package typings.ionicCore.componentsMod.LocalJSX
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IntrinsicElements extends js.Object {
+trait IntrinsicElements extends StObject {
   
   var `ion-action-sheet`: IonActionSheet = js.native
   
@@ -365,279 +366,267 @@ object IntrinsicElements {
   }
   
   @scala.inline
-  implicit class IntrinsicElementsOps[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
+  implicit class IntrinsicElementsMutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setIon-action-sheet`(value: IonActionSheet): Self = StObject.set(x, "ion-action-sheet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setIon-alert`(value: IonAlert): Self = StObject.set(x, "ion-alert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setIon-app`(value: IonApp): Self = StObject.set(x, "ion-app", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-action-sheet`(value: IonActionSheet): Self = this.set("ion-action-sheet", value.asInstanceOf[js.Any])
+    def `setIon-avatar`(value: IonAvatar): Self = StObject.set(x, "ion-avatar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-alert`(value: IonAlert): Self = this.set("ion-alert", value.asInstanceOf[js.Any])
+    def `setIon-back-button`(value: IonBackButton): Self = StObject.set(x, "ion-back-button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-app`(value: IonApp): Self = this.set("ion-app", value.asInstanceOf[js.Any])
+    def `setIon-backdrop`(value: IonBackdrop): Self = StObject.set(x, "ion-backdrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-avatar`(value: IonAvatar): Self = this.set("ion-avatar", value.asInstanceOf[js.Any])
+    def `setIon-badge`(value: IonBadge): Self = StObject.set(x, "ion-badge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-back-button`(value: IonBackButton): Self = this.set("ion-back-button", value.asInstanceOf[js.Any])
+    def `setIon-button`(value: IonButton): Self = StObject.set(x, "ion-button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-backdrop`(value: IonBackdrop): Self = this.set("ion-backdrop", value.asInstanceOf[js.Any])
+    def `setIon-buttons`(value: IonButtons): Self = StObject.set(x, "ion-buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-badge`(value: IonBadge): Self = this.set("ion-badge", value.asInstanceOf[js.Any])
+    def `setIon-card`(value: IonCard): Self = StObject.set(x, "ion-card", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-button`(value: IonButton): Self = this.set("ion-button", value.asInstanceOf[js.Any])
+    def `setIon-card-content`(value: IonCardContent): Self = StObject.set(x, "ion-card-content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-buttons`(value: IonButtons): Self = this.set("ion-buttons", value.asInstanceOf[js.Any])
+    def `setIon-card-header`(value: IonCardHeader): Self = StObject.set(x, "ion-card-header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-card`(value: IonCard): Self = this.set("ion-card", value.asInstanceOf[js.Any])
+    def `setIon-card-subtitle`(value: IonCardSubtitle): Self = StObject.set(x, "ion-card-subtitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-card-content`(value: IonCardContent): Self = this.set("ion-card-content", value.asInstanceOf[js.Any])
+    def `setIon-card-title`(value: IonCardTitle): Self = StObject.set(x, "ion-card-title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-card-header`(value: IonCardHeader): Self = this.set("ion-card-header", value.asInstanceOf[js.Any])
+    def `setIon-checkbox`(value: IonCheckbox): Self = StObject.set(x, "ion-checkbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-card-subtitle`(value: IonCardSubtitle): Self = this.set("ion-card-subtitle", value.asInstanceOf[js.Any])
+    def `setIon-chip`(value: IonChip): Self = StObject.set(x, "ion-chip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-card-title`(value: IonCardTitle): Self = this.set("ion-card-title", value.asInstanceOf[js.Any])
+    def `setIon-col`(value: IonCol): Self = StObject.set(x, "ion-col", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-checkbox`(value: IonCheckbox): Self = this.set("ion-checkbox", value.asInstanceOf[js.Any])
+    def `setIon-content`(value: IonContent): Self = StObject.set(x, "ion-content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-chip`(value: IonChip): Self = this.set("ion-chip", value.asInstanceOf[js.Any])
+    def `setIon-datetime`(value: IonDatetime): Self = StObject.set(x, "ion-datetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-col`(value: IonCol): Self = this.set("ion-col", value.asInstanceOf[js.Any])
+    def `setIon-fab`(value: IonFab): Self = StObject.set(x, "ion-fab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-content`(value: IonContent): Self = this.set("ion-content", value.asInstanceOf[js.Any])
+    def `setIon-fab-button`(value: IonFabButton): Self = StObject.set(x, "ion-fab-button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-datetime`(value: IonDatetime): Self = this.set("ion-datetime", value.asInstanceOf[js.Any])
+    def `setIon-fab-list`(value: IonFabList): Self = StObject.set(x, "ion-fab-list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-fab`(value: IonFab): Self = this.set("ion-fab", value.asInstanceOf[js.Any])
+    def `setIon-footer`(value: IonFooter): Self = StObject.set(x, "ion-footer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-fab-button`(value: IonFabButton): Self = this.set("ion-fab-button", value.asInstanceOf[js.Any])
+    def `setIon-grid`(value: IonGrid): Self = StObject.set(x, "ion-grid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-fab-list`(value: IonFabList): Self = this.set("ion-fab-list", value.asInstanceOf[js.Any])
+    def `setIon-header`(value: IonHeader): Self = StObject.set(x, "ion-header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-footer`(value: IonFooter): Self = this.set("ion-footer", value.asInstanceOf[js.Any])
+    def `setIon-img`(value: IonImg): Self = StObject.set(x, "ion-img", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-grid`(value: IonGrid): Self = this.set("ion-grid", value.asInstanceOf[js.Any])
+    def `setIon-infinite-scroll`(value: IonInfiniteScroll): Self = StObject.set(x, "ion-infinite-scroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-header`(value: IonHeader): Self = this.set("ion-header", value.asInstanceOf[js.Any])
+    def `setIon-infinite-scroll-content`(value: IonInfiniteScrollContent): Self = StObject.set(x, "ion-infinite-scroll-content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-img`(value: IonImg): Self = this.set("ion-img", value.asInstanceOf[js.Any])
+    def `setIon-input`(value: IonInput): Self = StObject.set(x, "ion-input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-infinite-scroll`(value: IonInfiniteScroll): Self = this.set("ion-infinite-scroll", value.asInstanceOf[js.Any])
+    def `setIon-item`(value: IonItem): Self = StObject.set(x, "ion-item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-infinite-scroll-content`(value: IonInfiniteScrollContent): Self = this.set("ion-infinite-scroll-content", value.asInstanceOf[js.Any])
+    def `setIon-item-divider`(value: IonItemDivider): Self = StObject.set(x, "ion-item-divider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-input`(value: IonInput): Self = this.set("ion-input", value.asInstanceOf[js.Any])
+    def `setIon-item-group`(value: IonItemGroup): Self = StObject.set(x, "ion-item-group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-item`(value: IonItem): Self = this.set("ion-item", value.asInstanceOf[js.Any])
+    def `setIon-item-option`(value: IonItemOption): Self = StObject.set(x, "ion-item-option", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-item-divider`(value: IonItemDivider): Self = this.set("ion-item-divider", value.asInstanceOf[js.Any])
+    def `setIon-item-options`(value: IonItemOptions): Self = StObject.set(x, "ion-item-options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-item-group`(value: IonItemGroup): Self = this.set("ion-item-group", value.asInstanceOf[js.Any])
+    def `setIon-item-sliding`(value: IonItemSliding): Self = StObject.set(x, "ion-item-sliding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-item-option`(value: IonItemOption): Self = this.set("ion-item-option", value.asInstanceOf[js.Any])
+    def `setIon-label`(value: IonLabel): Self = StObject.set(x, "ion-label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-item-options`(value: IonItemOptions): Self = this.set("ion-item-options", value.asInstanceOf[js.Any])
+    def `setIon-list`(value: IonList): Self = StObject.set(x, "ion-list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-item-sliding`(value: IonItemSliding): Self = this.set("ion-item-sliding", value.asInstanceOf[js.Any])
+    def `setIon-list-header`(value: IonListHeader): Self = StObject.set(x, "ion-list-header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-label`(value: IonLabel): Self = this.set("ion-label", value.asInstanceOf[js.Any])
+    def `setIon-loading`(value: IonLoading): Self = StObject.set(x, "ion-loading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-list`(value: IonList): Self = this.set("ion-list", value.asInstanceOf[js.Any])
+    def `setIon-menu`(value: IonMenu): Self = StObject.set(x, "ion-menu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-list-header`(value: IonListHeader): Self = this.set("ion-list-header", value.asInstanceOf[js.Any])
+    def `setIon-menu-button`(value: IonMenuButton): Self = StObject.set(x, "ion-menu-button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-loading`(value: IonLoading): Self = this.set("ion-loading", value.asInstanceOf[js.Any])
+    def `setIon-menu-toggle`(value: IonMenuToggle): Self = StObject.set(x, "ion-menu-toggle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-menu`(value: IonMenu): Self = this.set("ion-menu", value.asInstanceOf[js.Any])
+    def `setIon-modal`(value: IonModal): Self = StObject.set(x, "ion-modal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-menu-button`(value: IonMenuButton): Self = this.set("ion-menu-button", value.asInstanceOf[js.Any])
+    def `setIon-nav`(value: IonNav): Self = StObject.set(x, "ion-nav", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-menu-toggle`(value: IonMenuToggle): Self = this.set("ion-menu-toggle", value.asInstanceOf[js.Any])
+    def `setIon-nav-link`(value: IonNavLink): Self = StObject.set(x, "ion-nav-link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-modal`(value: IonModal): Self = this.set("ion-modal", value.asInstanceOf[js.Any])
+    def `setIon-note`(value: IonNote): Self = StObject.set(x, "ion-note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-nav`(value: IonNav): Self = this.set("ion-nav", value.asInstanceOf[js.Any])
+    def `setIon-picker`(value: IonPicker): Self = StObject.set(x, "ion-picker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-nav-link`(value: IonNavLink): Self = this.set("ion-nav-link", value.asInstanceOf[js.Any])
+    def `setIon-picker-column`(value: IonPickerColumn): Self = StObject.set(x, "ion-picker-column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-note`(value: IonNote): Self = this.set("ion-note", value.asInstanceOf[js.Any])
+    def `setIon-popover`(value: IonPopover): Self = StObject.set(x, "ion-popover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-picker`(value: IonPicker): Self = this.set("ion-picker", value.asInstanceOf[js.Any])
+    def `setIon-progress-bar`(value: IonProgressBar): Self = StObject.set(x, "ion-progress-bar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-picker-column`(value: IonPickerColumn): Self = this.set("ion-picker-column", value.asInstanceOf[js.Any])
+    def `setIon-radio`(value: IonRadio): Self = StObject.set(x, "ion-radio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-popover`(value: IonPopover): Self = this.set("ion-popover", value.asInstanceOf[js.Any])
+    def `setIon-radio-group`(value: IonRadioGroup): Self = StObject.set(x, "ion-radio-group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-progress-bar`(value: IonProgressBar): Self = this.set("ion-progress-bar", value.asInstanceOf[js.Any])
+    def `setIon-range`(value: IonRange): Self = StObject.set(x, "ion-range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-radio`(value: IonRadio): Self = this.set("ion-radio", value.asInstanceOf[js.Any])
+    def `setIon-refresher`(value: IonRefresher): Self = StObject.set(x, "ion-refresher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-radio-group`(value: IonRadioGroup): Self = this.set("ion-radio-group", value.asInstanceOf[js.Any])
+    def `setIon-refresher-content`(value: IonRefresherContent): Self = StObject.set(x, "ion-refresher-content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-range`(value: IonRange): Self = this.set("ion-range", value.asInstanceOf[js.Any])
+    def `setIon-reorder`(value: IonReorder): Self = StObject.set(x, "ion-reorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-refresher`(value: IonRefresher): Self = this.set("ion-refresher", value.asInstanceOf[js.Any])
+    def `setIon-reorder-group`(value: IonReorderGroup): Self = StObject.set(x, "ion-reorder-group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-refresher-content`(value: IonRefresherContent): Self = this.set("ion-refresher-content", value.asInstanceOf[js.Any])
+    def `setIon-ripple-effect`(value: IonRippleEffect): Self = StObject.set(x, "ion-ripple-effect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-reorder`(value: IonReorder): Self = this.set("ion-reorder", value.asInstanceOf[js.Any])
+    def `setIon-route`(value: IonRoute): Self = StObject.set(x, "ion-route", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-reorder-group`(value: IonReorderGroup): Self = this.set("ion-reorder-group", value.asInstanceOf[js.Any])
+    def `setIon-route-redirect`(value: IonRouteRedirect): Self = StObject.set(x, "ion-route-redirect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-ripple-effect`(value: IonRippleEffect): Self = this.set("ion-ripple-effect", value.asInstanceOf[js.Any])
+    def `setIon-router`(value: IonRouter): Self = StObject.set(x, "ion-router", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-route`(value: IonRoute): Self = this.set("ion-route", value.asInstanceOf[js.Any])
+    def `setIon-router-link`(value: IonRouterLink): Self = StObject.set(x, "ion-router-link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-route-redirect`(value: IonRouteRedirect): Self = this.set("ion-route-redirect", value.asInstanceOf[js.Any])
+    def `setIon-router-outlet`(value: IonRouterOutlet): Self = StObject.set(x, "ion-router-outlet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-router`(value: IonRouter): Self = this.set("ion-router", value.asInstanceOf[js.Any])
+    def `setIon-row`(value: IonRow): Self = StObject.set(x, "ion-row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-router-link`(value: IonRouterLink): Self = this.set("ion-router-link", value.asInstanceOf[js.Any])
+    def `setIon-searchbar`(value: IonSearchbar): Self = StObject.set(x, "ion-searchbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-router-outlet`(value: IonRouterOutlet): Self = this.set("ion-router-outlet", value.asInstanceOf[js.Any])
+    def `setIon-segment`(value: IonSegment): Self = StObject.set(x, "ion-segment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-row`(value: IonRow): Self = this.set("ion-row", value.asInstanceOf[js.Any])
+    def `setIon-segment-button`(value: IonSegmentButton): Self = StObject.set(x, "ion-segment-button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-searchbar`(value: IonSearchbar): Self = this.set("ion-searchbar", value.asInstanceOf[js.Any])
+    def `setIon-select`(value: IonSelect): Self = StObject.set(x, "ion-select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-segment`(value: IonSegment): Self = this.set("ion-segment", value.asInstanceOf[js.Any])
+    def `setIon-select-option`(value: IonSelectOption): Self = StObject.set(x, "ion-select-option", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-segment-button`(value: IonSegmentButton): Self = this.set("ion-segment-button", value.asInstanceOf[js.Any])
+    def `setIon-select-popover`(value: IonSelectPopover): Self = StObject.set(x, "ion-select-popover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-select`(value: IonSelect): Self = this.set("ion-select", value.asInstanceOf[js.Any])
+    def `setIon-skeleton-text`(value: IonSkeletonText): Self = StObject.set(x, "ion-skeleton-text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-select-option`(value: IonSelectOption): Self = this.set("ion-select-option", value.asInstanceOf[js.Any])
+    def `setIon-slide`(value: IonSlide): Self = StObject.set(x, "ion-slide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-select-popover`(value: IonSelectPopover): Self = this.set("ion-select-popover", value.asInstanceOf[js.Any])
+    def `setIon-slides`(value: IonSlides): Self = StObject.set(x, "ion-slides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-skeleton-text`(value: IonSkeletonText): Self = this.set("ion-skeleton-text", value.asInstanceOf[js.Any])
+    def `setIon-spinner`(value: IonSpinner): Self = StObject.set(x, "ion-spinner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-slide`(value: IonSlide): Self = this.set("ion-slide", value.asInstanceOf[js.Any])
+    def `setIon-split-pane`(value: IonSplitPane): Self = StObject.set(x, "ion-split-pane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-slides`(value: IonSlides): Self = this.set("ion-slides", value.asInstanceOf[js.Any])
+    def `setIon-tab`(value: IonTab): Self = StObject.set(x, "ion-tab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-spinner`(value: IonSpinner): Self = this.set("ion-spinner", value.asInstanceOf[js.Any])
+    def `setIon-tab-bar`(value: IonTabBar): Self = StObject.set(x, "ion-tab-bar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-split-pane`(value: IonSplitPane): Self = this.set("ion-split-pane", value.asInstanceOf[js.Any])
+    def `setIon-tab-button`(value: IonTabButton): Self = StObject.set(x, "ion-tab-button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-tab`(value: IonTab): Self = this.set("ion-tab", value.asInstanceOf[js.Any])
+    def `setIon-tabs`(value: IonTabs): Self = StObject.set(x, "ion-tabs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-tab-bar`(value: IonTabBar): Self = this.set("ion-tab-bar", value.asInstanceOf[js.Any])
+    def `setIon-text`(value: IonText): Self = StObject.set(x, "ion-text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-tab-button`(value: IonTabButton): Self = this.set("ion-tab-button", value.asInstanceOf[js.Any])
+    def `setIon-textarea`(value: IonTextarea): Self = StObject.set(x, "ion-textarea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-tabs`(value: IonTabs): Self = this.set("ion-tabs", value.asInstanceOf[js.Any])
+    def `setIon-thumbnail`(value: IonThumbnail): Self = StObject.set(x, "ion-thumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-text`(value: IonText): Self = this.set("ion-text", value.asInstanceOf[js.Any])
+    def `setIon-title`(value: IonTitle): Self = StObject.set(x, "ion-title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-textarea`(value: IonTextarea): Self = this.set("ion-textarea", value.asInstanceOf[js.Any])
+    def `setIon-toast`(value: IonToast): Self = StObject.set(x, "ion-toast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-thumbnail`(value: IonThumbnail): Self = this.set("ion-thumbnail", value.asInstanceOf[js.Any])
+    def `setIon-toggle`(value: IonToggle): Self = StObject.set(x, "ion-toggle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-title`(value: IonTitle): Self = this.set("ion-title", value.asInstanceOf[js.Any])
+    def `setIon-toolbar`(value: IonToolbar): Self = StObject.set(x, "ion-toolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setIon-toast`(value: IonToast): Self = this.set("ion-toast", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setIon-toggle`(value: IonToggle): Self = this.set("ion-toggle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setIon-toolbar`(value: IonToolbar): Self = this.set("ion-toolbar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setIon-virtual-scroll`(value: IonVirtualScroll): Self = this.set("ion-virtual-scroll", value.asInstanceOf[js.Any])
+    def `setIon-virtual-scroll`(value: IonVirtualScroll): Self = StObject.set(x, "ion-virtual-scroll", value.asInstanceOf[js.Any])
   }
 }

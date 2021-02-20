@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,30 +64,18 @@ object XLayerManager {
   }
   
   @scala.inline
-  implicit class XLayerManagerOps[Self <: XLayerManager] (val x: Self) extends AnyVal {
+  implicit class XLayerManagerMutableBuilder[Self <: XLayerManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachShapeToLayer(value: (XShape, XLayer) => Unit): Self = StObject.set(x, "attachShapeToLayer", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLayerForShape(value: XShape => XLayer): Self = StObject.set(x, "getLayerForShape", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertNewByIndex(value: Double => XLayer): Self = StObject.set(x, "insertNewByIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAttachShapeToLayer(value: (XShape, XLayer) => Unit): Self = this.set("attachShapeToLayer", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetLayerForShape(value: XShape => XLayer): Self = this.set("getLayerForShape", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInsertNewByIndex(value: Double => XLayer): Self = this.set("insertNewByIndex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemove(value: XLayer => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
+    def setRemove(value: XLayer => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

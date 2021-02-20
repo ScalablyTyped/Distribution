@@ -1,12 +1,13 @@
 package typings.three.webXRMod
 
 import typings.three.anon.DetectedPlanes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XRFrame extends js.Object {
+trait XRFrame extends StObject {
   
   def createAnchor(pose: XRRigidTransform, space: XRSpace): js.Promise[XRAnchor] = js.native
   
@@ -48,48 +49,36 @@ object XRFrame {
   }
   
   @scala.inline
-  implicit class XRFrameOps[Self <: XRFrame] (val x: Self) extends AnyVal {
+  implicit class XRFrameMutableBuilder[Self <: XRFrame] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateAnchor(value: (XRRigidTransform, XRSpace) => js.Promise[XRAnchor]): Self = StObject.set(x, "createAnchor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetHitTestResults(value: XRHitTestSource => js.Array[XRHitTestResult]): Self = StObject.set(x, "getHitTestResults", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetHitTestResultsForTransientInput(value: XRTransientInputHitTestSource => js.Array[XRTransientInputHitTestResult]): Self = StObject.set(x, "getHitTestResultsForTransientInput", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateAnchor(value: (XRRigidTransform, XRSpace) => js.Promise[XRAnchor]): Self = this.set("createAnchor", js.Any.fromFunction2(value))
+    def setGetJointPose(value: (XRJointSpace, XRSpace) => XRJointPose): Self = StObject.set(x, "getJointPose", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetHitTestResults(value: XRHitTestSource => js.Array[XRHitTestResult]): Self = this.set("getHitTestResults", js.Any.fromFunction1(value))
+    def setGetPose(value: (XRSpace, XRSpace) => js.UndefOr[XRPose]): Self = StObject.set(x, "getPose", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetHitTestResultsForTransientInput(value: XRTransientInputHitTestSource => js.Array[XRTransientInputHitTestResult]): Self = this.set("getHitTestResultsForTransientInput", js.Any.fromFunction1(value))
+    def setGetViewerPose(value: XRReferenceSpace => js.UndefOr[XRViewerPose]): Self = StObject.set(x, "getViewerPose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetJointPose(value: (XRJointSpace, XRSpace) => XRJointPose): Self = this.set("getJointPose", js.Any.fromFunction2(value))
+    def setSession(value: XRSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPose(value: (XRSpace, XRSpace) => js.UndefOr[XRPose]): Self = this.set("getPose", js.Any.fromFunction2(value))
+    def setTrackedAnchors(value: XRAnchorSet): Self = StObject.set(x, "trackedAnchors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetViewerPose(value: XRReferenceSpace => js.UndefOr[XRViewerPose]): Self = this.set("getViewerPose", js.Any.fromFunction1(value))
+    def setTrackedAnchorsUndefined: Self = StObject.set(x, "trackedAnchors", js.undefined)
     
     @scala.inline
-    def setSession(value: XRSession): Self = this.set("session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorldInformation(value: DetectedPlanes): Self = this.set("worldInformation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrackedAnchors(value: XRAnchorSet): Self = this.set("trackedAnchors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackedAnchors: Self = this.set("trackedAnchors", js.undefined)
+    def setWorldInformation(value: DetectedPlanes): Self = StObject.set(x, "worldInformation", value.asInstanceOf[js.Any])
   }
 }

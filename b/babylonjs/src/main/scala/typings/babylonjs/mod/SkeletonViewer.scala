@@ -3,6 +3,7 @@ package typings.babylonjs.mod
 import typings.babylonjs.anon.PartialISkeletonViewerOpt
 import typings.babylonjs.iskeletonviewerMod.IBoneWeightShaderOptions
 import typings.babylonjs.iskeletonviewerMod.ISkeletonMapShaderOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -120,9 +121,11 @@ class SkeletonViewer protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs", "SkeletonViewer")
-@js.native
-object SkeletonViewer extends js.Object {
+object SkeletonViewer {
+  
+  @JSImport("babylonjs", "SkeletonViewer")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** public static method to create a BoneWeight Shader
     * @param options The constructor options
@@ -130,6 +133,8 @@ object SkeletonViewer extends js.Object {
     * @returns The created ShaderMaterial
     * @see http://www.babylonjs-playground.com/#1BZJVJ#395
     */
+  @JSImport("babylonjs", "SkeletonViewer.CreateBoneWeightShader")
+  @js.native
   def CreateBoneWeightShader(options: IBoneWeightShaderOptions, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.shaderMaterialMod.ShaderMaterial = js.native
   
   /** public static method to create a BoneWeight Shader
@@ -137,15 +142,23 @@ object SkeletonViewer extends js.Object {
     * @param scene The scene that the shader is scoped to
     * @returns The created ShaderMaterial
     */
+  @JSImport("babylonjs", "SkeletonViewer.CreateSkeletonMapShader")
+  @js.native
   def CreateSkeletonMapShader(options: ISkeletonMapShaderOptions, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.shaderMaterialMod.ShaderMaterial = js.native
   
   /** public Display constants BABYLON.SkeletonViewer.DISPLAY_LINES */
+  @JSImport("babylonjs", "SkeletonViewer.DISPLAY_LINES")
+  @js.native
   val DISPLAY_LINES: Double = js.native
   
   /** public Display constants BABYLON.SkeletonViewer.DISPLAY_SPHERES */
+  @JSImport("babylonjs", "SkeletonViewer.DISPLAY_SPHERES")
+  @js.native
   val DISPLAY_SPHERES: Double = js.native
   
   /** public Display constants BABYLON.SkeletonViewer.DISPLAY_SPHERE_AND_SPURS */
+  @JSImport("babylonjs", "SkeletonViewer.DISPLAY_SPHERE_AND_SPURS")
+  @js.native
   val DISPLAY_SPHERE_AND_SPURS: Double = js.native
   
   /** private static method to create a BoneWeight Shader
@@ -154,5 +167,9 @@ object SkeletonViewer extends js.Object {
     * @param scene The scene that the shader is scoped to
     * @returns an Array of floats from the color gradient values
     */
-  var _CreateBoneMapColorBuffer: js.Any = js.native
+  @JSImport("babylonjs", "SkeletonViewer._CreateBoneMapColorBuffer")
+  @js.native
+  def _CreateBoneMapColorBuffer: js.Any = js.native
+  @scala.inline
+  def _CreateBoneMapColorBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateBoneMapColorBuffer")(x.asInstanceOf[js.Any])
 }

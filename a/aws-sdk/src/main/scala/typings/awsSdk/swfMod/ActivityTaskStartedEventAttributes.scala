@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivityTaskStartedEventAttributes extends js.Object {
+trait ActivityTaskStartedEventAttributes extends StObject {
   
   /**
     * Identity of the worker that was assigned this task. This aids diagnostics when problems arise. The form of this identity is user defined.
@@ -26,27 +27,15 @@ object ActivityTaskStartedEventAttributes {
   }
   
   @scala.inline
-  implicit class ActivityTaskStartedEventAttributesOps[Self <: ActivityTaskStartedEventAttributes] (val x: Self) extends AnyVal {
+  implicit class ActivityTaskStartedEventAttributesMutableBuilder[Self <: ActivityTaskStartedEventAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentity(value: Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScheduledEventId(value: EventId): Self = this.set("scheduledEventId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdentity(value: Identity): Self = this.set("identity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentity: Self = this.set("identity", js.undefined)
+    def setScheduledEventId(value: EventId): Self = StObject.set(x, "scheduledEventId", value.asInstanceOf[js.Any])
   }
 }

@@ -8,12 +8,13 @@ import typings.webpack.webpackStrings.json
 import typings.webpack.webpackStrings.post
 import typings.webpack.webpackStrings.pre
 import typings.webpack.webpackStrings.webassemblySlashexperimental
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleSetRule extends js.Object {
+trait RuleSetRule extends StObject {
   
   /**
   	 * Match the child compiler name
@@ -126,179 +127,167 @@ object RuleSetRule {
   }
   
   @scala.inline
-  implicit class RuleSetRuleOps[Self <: RuleSetRule] (val x: Self) extends AnyVal {
+  implicit class RuleSetRuleMutableBuilder[Self <: RuleSetRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompiler(value: RuleSetConditionOrConditions): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompilerFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "compiler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompilerUndefined: Self = StObject.set(x, "compiler", js.undefined)
     
     @scala.inline
-    def setCompilerFunction1(value: /* value */ String => Boolean): Self = this.set("compiler", js.Any.fromFunction1(value))
+    def setEnforce(value: pre | post): Self = StObject.set(x, "enforce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompiler(value: RuleSetConditionOrConditions): Self = this.set("compiler", value.asInstanceOf[js.Any])
+    def setEnforceUndefined: Self = StObject.set(x, "enforce", js.undefined)
     
     @scala.inline
-    def deleteCompiler: Self = this.set("compiler", js.undefined)
+    def setExclude(value: RuleSetConditionOrConditionsAbsolute): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnforce(value: pre | post): Self = this.set("enforce", value.asInstanceOf[js.Any])
+    def setExcludeFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "exclude", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteEnforce: Self = this.set("enforce", js.undefined)
+    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
     @scala.inline
-    def setExcludeFunction1(value: /* value */ String => Boolean): Self = this.set("exclude", js.Any.fromFunction1(value))
+    def setInclude(value: RuleSetConditionOrConditionsAbsolute): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude(value: RuleSetConditionOrConditionsAbsolute): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    def setIncludeFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "include", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteExclude: Self = this.set("exclude", js.undefined)
+    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
     @scala.inline
-    def setIncludeFunction1(value: /* value */ String => Boolean): Self = this.set("include", js.Any.fromFunction1(value))
+    def setIssuer(value: RuleSetConditionOrConditionsAbsolute): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude(value: RuleSetConditionOrConditionsAbsolute): Self = this.set("include", value.asInstanceOf[js.Any])
+    def setIssuerFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "issuer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteInclude: Self = this.set("include", js.undefined)
+    def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     
     @scala.inline
-    def setIssuerFunction1(value: /* value */ String => Boolean): Self = this.set("issuer", js.Any.fromFunction1(value))
+    def setLoader(value: RuleSetLoader | RuleSetUse): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuer(value: RuleSetConditionOrConditionsAbsolute): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
     
     @scala.inline
-    def deleteIssuer: Self = this.set("issuer", js.undefined)
+    def setLoaderVarargs(value: RuleSetUseItem*): Self = StObject.set(x, "loader", js.Array(value :_*))
     
     @scala.inline
-    def setLoaderVarargs(value: RuleSetUseItem*): Self = this.set("loader", js.Array(value :_*))
+    def setLoaders(value: RuleSetUse): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoader(value: RuleSetLoader | RuleSetUse): Self = this.set("loader", value.asInstanceOf[js.Any])
+    def setLoadersUndefined: Self = StObject.set(x, "loaders", js.undefined)
     
     @scala.inline
-    def deleteLoader: Self = this.set("loader", js.undefined)
+    def setLoadersVarargs(value: RuleSetUseItem*): Self = StObject.set(x, "loaders", js.Array(value :_*))
     
     @scala.inline
-    def setLoadersVarargs(value: RuleSetUseItem*): Self = this.set("loaders", js.Array(value :_*))
+    def setOneOf(value: RuleSetRules): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoaders(value: RuleSetUse): Self = this.set("loaders", value.asInstanceOf[js.Any])
+    def setOneOfUndefined: Self = StObject.set(x, "oneOf", js.undefined)
     
     @scala.inline
-    def deleteLoaders: Self = this.set("loaders", js.undefined)
+    def setOneOfVarargs(value: RuleSetRule*): Self = StObject.set(x, "oneOf", js.Array(value :_*))
     
     @scala.inline
-    def setOneOfVarargs(value: RuleSetRule*): Self = this.set("oneOf", js.Array(value :_*))
+    def setOptions(value: RuleSetQuery): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOneOf(value: RuleSetRules): Self = this.set("oneOf", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteOneOf: Self = this.set("oneOf", js.undefined)
+    def setParser(value: StringDictionary[js.Any]): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: RuleSetQuery): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setQuery(value: RuleSetQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParser(value: StringDictionary[js.Any]): Self = this.set("parser", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deleteParser: Self = this.set("parser", js.undefined)
+    def setRealResource(value: RuleSetConditionOrConditionsAbsolute): Self = StObject.set(x, "realResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: RuleSetQuery): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setRealResourceFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "realResource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setRealResourceUndefined: Self = StObject.set(x, "realResource", js.undefined)
     
     @scala.inline
-    def setRealResourceFunction1(value: /* value */ String => Boolean): Self = this.set("realResource", js.Any.fromFunction1(value))
+    def setResolve(value: ResolveOptions): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRealResource(value: RuleSetConditionOrConditionsAbsolute): Self = this.set("realResource", value.asInstanceOf[js.Any])
+    def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
     
     @scala.inline
-    def deleteRealResource: Self = this.set("realResource", js.undefined)
+    def setResource(value: RuleSetConditionOrConditionsAbsolute): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolve(value: ResolveOptions): Self = this.set("resolve", value.asInstanceOf[js.Any])
+    def setResourceFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "resource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteResolve: Self = this.set("resolve", js.undefined)
+    def setResourceQuery(value: RuleSetConditionOrConditions): Self = StObject.set(x, "resourceQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceFunction1(value: /* value */ String => Boolean): Self = this.set("resource", js.Any.fromFunction1(value))
+    def setResourceQueryFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "resourceQuery", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResource(value: RuleSetConditionOrConditionsAbsolute): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setResourceQueryUndefined: Self = StObject.set(x, "resourceQuery", js.undefined)
     
     @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     @scala.inline
-    def setResourceQueryFunction1(value: /* value */ String => Boolean): Self = this.set("resourceQuery", js.Any.fromFunction1(value))
+    def setRules(value: RuleSetRules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceQuery(value: RuleSetConditionOrConditions): Self = this.set("resourceQuery", value.asInstanceOf[js.Any])
+    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
     @scala.inline
-    def deleteResourceQuery: Self = this.set("resourceQuery", js.undefined)
+    def setRulesVarargs(value: RuleSetRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
     
     @scala.inline
-    def setRulesVarargs(value: RuleSetRule*): Self = this.set("rules", js.Array(value :_*))
+    def setSideEffects(value: Boolean): Self = StObject.set(x, "sideEffects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRules(value: RuleSetRules): Self = this.set("rules", value.asInstanceOf[js.Any])
+    def setSideEffectsUndefined: Self = StObject.set(x, "sideEffects", js.undefined)
     
     @scala.inline
-    def deleteRules: Self = this.set("rules", js.undefined)
+    def setTest(value: RuleSetConditionOrConditionsAbsolute): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSideEffects(value: Boolean): Self = this.set("sideEffects", value.asInstanceOf[js.Any])
+    def setTestFunction1(value: /* value */ String => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSideEffects: Self = this.set("sideEffects", js.undefined)
-    
-    @scala.inline
-    def setTestFunction1(value: /* value */ String => Boolean): Self = this.set("test", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTest(value: RuleSetConditionOrConditionsAbsolute): Self = this.set("test", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTest: Self = this.set("test", js.undefined)
+    def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     
     @scala.inline
     def setType(
       value: javascriptSlashauto | javascriptSlashdynamic | javascriptSlashesm | json | webassemblySlashexperimental
-    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setUseVarargs(value: RuleSetUseItem*): Self = this.set("use", js.Array(value :_*))
+    def setUse(value: RuleSetUse): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUse(value: RuleSetUse): Self = this.set("use", value.asInstanceOf[js.Any])
+    def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
     
     @scala.inline
-    def deleteUse: Self = this.set("use", js.undefined)
+    def setUseVarargs(value: RuleSetUseItem*): Self = StObject.set(x, "use", js.Array(value :_*))
   }
 }

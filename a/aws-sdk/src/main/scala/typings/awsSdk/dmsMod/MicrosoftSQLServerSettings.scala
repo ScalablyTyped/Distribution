@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MicrosoftSQLServerSettings extends js.Object {
+trait MicrosoftSQLServerSettings extends StObject {
   
   /**
     * The maximum size of the packets (in bytes) used to transfer data using BCP.
@@ -66,78 +67,66 @@ object MicrosoftSQLServerSettings {
   }
   
   @scala.inline
-  implicit class MicrosoftSQLServerSettingsOps[Self <: MicrosoftSQLServerSettings] (val x: Self) extends AnyVal {
+  implicit class MicrosoftSQLServerSettingsMutableBuilder[Self <: MicrosoftSQLServerSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBcpPacketSize(value: IntegerOptional): Self = StObject.set(x, "BcpPacketSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBcpPacketSizeUndefined: Self = StObject.set(x, "BcpPacketSize", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setControlTablesFileGroup(value: String): Self = StObject.set(x, "ControlTablesFileGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBcpPacketSize(value: IntegerOptional): Self = this.set("BcpPacketSize", value.asInstanceOf[js.Any])
+    def setControlTablesFileGroupUndefined: Self = StObject.set(x, "ControlTablesFileGroup", js.undefined)
     
     @scala.inline
-    def deleteBcpPacketSize: Self = this.set("BcpPacketSize", js.undefined)
+    def setDatabaseName(value: String): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlTablesFileGroup(value: String): Self = this.set("ControlTablesFileGroup", value.asInstanceOf[js.Any])
+    def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
     
     @scala.inline
-    def deleteControlTablesFileGroup: Self = this.set("ControlTablesFileGroup", js.undefined)
+    def setPassword(value: SecretString): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseName(value: String): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
     @scala.inline
-    def deleteDatabaseName: Self = this.set("DatabaseName", js.undefined)
+    def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: SecretString): Self = this.set("Password", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("Password", js.undefined)
+    def setReadBackupOnly(value: BooleanOptional): Self = StObject.set(x, "ReadBackupOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: IntegerOptional): Self = this.set("Port", value.asInstanceOf[js.Any])
+    def setReadBackupOnlyUndefined: Self = StObject.set(x, "ReadBackupOnly", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("Port", js.undefined)
+    def setSafeguardPolicy(value: SafeguardPolicy): Self = StObject.set(x, "SafeguardPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadBackupOnly(value: BooleanOptional): Self = this.set("ReadBackupOnly", value.asInstanceOf[js.Any])
+    def setSafeguardPolicyUndefined: Self = StObject.set(x, "SafeguardPolicy", js.undefined)
     
     @scala.inline
-    def deleteReadBackupOnly: Self = this.set("ReadBackupOnly", js.undefined)
+    def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSafeguardPolicy(value: SafeguardPolicy): Self = this.set("SafeguardPolicy", value.asInstanceOf[js.Any])
+    def setServerNameUndefined: Self = StObject.set(x, "ServerName", js.undefined)
     
     @scala.inline
-    def deleteSafeguardPolicy: Self = this.set("SafeguardPolicy", js.undefined)
+    def setUseBcpFullLoad(value: BooleanOptional): Self = StObject.set(x, "UseBcpFullLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerName(value: String): Self = this.set("ServerName", value.asInstanceOf[js.Any])
+    def setUseBcpFullLoadUndefined: Self = StObject.set(x, "UseBcpFullLoad", js.undefined)
     
     @scala.inline
-    def deleteServerName: Self = this.set("ServerName", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseBcpFullLoad(value: BooleanOptional): Self = this.set("UseBcpFullLoad", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseBcpFullLoad: Self = this.set("UseBcpFullLoad", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("Username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("Username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

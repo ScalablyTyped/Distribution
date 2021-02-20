@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,36 +41,24 @@ object ImplementationGuideDependency {
   }
   
   @scala.inline
-  implicit class ImplementationGuideDependencyOps[Self <: ImplementationGuideDependency] (val x: Self) extends AnyVal {
+  implicit class ImplementationGuideDependencyMutableBuilder[Self <: ImplementationGuideDependency] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUri(value: uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
+    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
     
     @scala.inline
-    def setUri(value: uri): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def set_uri(value: Element): Self = StObject.set(x, "_uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_type: Self = this.set("_type", js.undefined)
-    
-    @scala.inline
-    def set_uri(value: Element): Self = this.set("_uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_uri: Self = this.set("_uri", js.undefined)
+    def set_uriUndefined: Self = StObject.set(x, "_uri", js.undefined)
   }
 }

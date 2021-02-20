@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.datatransfer.dnd
 
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,33 +59,21 @@ object DragGestureEvent {
   }
   
   @scala.inline
-  implicit class DragGestureEventOps[Self <: DragGestureEvent] (val x: Self) extends AnyVal {
+  implicit class DragGestureEventMutableBuilder[Self <: DragGestureEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDragAction(value: Double): Self = StObject.set(x, "DragAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDragOriginX(value: Double): Self = StObject.set(x, "DragOriginX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDragOriginY(value: Double): Self = StObject.set(x, "DragOriginY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragAction(value: Double): Self = this.set("DragAction", value.asInstanceOf[js.Any])
+    def setDragSource(value: XDragSource): Self = StObject.set(x, "DragSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragOriginX(value: Double): Self = this.set("DragOriginX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDragOriginY(value: Double): Self = this.set("DragOriginY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDragSource(value: XDragSource): Self = this.set("DragSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEvent(value: js.Any): Self = this.set("Event", value.asInstanceOf[js.Any])
+    def setEvent(value: js.Any): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
   }
 }

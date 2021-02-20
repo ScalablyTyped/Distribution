@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloudWatchLogs extends js.Object {
+trait CloudWatchLogs extends StObject {
   
   var Enabled: boolean = js.native
   
@@ -20,27 +21,15 @@ object CloudWatchLogs {
   }
   
   @scala.inline
-  implicit class CloudWatchLogsOps[Self <: CloudWatchLogs] (val x: Self) extends AnyVal {
+  implicit class CloudWatchLogsMutableBuilder[Self <: CloudWatchLogs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogGroup(value: string): Self = StObject.set(x, "LogGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnabled(value: boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogGroup(value: string): Self = this.set("LogGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogGroup: Self = this.set("LogGroup", js.undefined)
+    def setLogGroupUndefined: Self = StObject.set(x, "LogGroup", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.auth0Js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("auth0-js", "CrossOriginAuthentication")
 @js.native
-class CrossOriginAuthentication protected () extends js.Object {
+class CrossOriginAuthentication protected () extends StObject {
   def this(webAuth: js.Any, options: js.Any) = this()
   
   /**

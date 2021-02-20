@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecurrenceRange extends js.Object {
+trait RecurrenceRange extends StObject {
   
   /**
     * The date to stop applying the recurrence pattern. Depending on the recurrence pattern of the event, the last occurrence
@@ -38,60 +39,48 @@ object RecurrenceRange {
   }
   
   @scala.inline
-  implicit class RecurrenceRangeOps[Self <: RecurrenceRange] (val x: Self) extends AnyVal {
+  implicit class RecurrenceRangeMutableBuilder[Self <: RecurrenceRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndDate(value: NullableOption[String]): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndDateNull: Self = StObject.set(x, "endDate", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
     @scala.inline
-    def setEndDate(value: NullableOption[String]): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    def setNumberOfOccurrences(value: Double): Self = StObject.set(x, "numberOfOccurrences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    def setNumberOfOccurrencesUndefined: Self = StObject.set(x, "numberOfOccurrences", js.undefined)
     
     @scala.inline
-    def setEndDateNull: Self = this.set("endDate", null)
+    def setRecurrenceTimeZone(value: NullableOption[String]): Self = StObject.set(x, "recurrenceTimeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfOccurrences(value: Double): Self = this.set("numberOfOccurrences", value.asInstanceOf[js.Any])
+    def setRecurrenceTimeZoneNull: Self = StObject.set(x, "recurrenceTimeZone", null)
     
     @scala.inline
-    def deleteNumberOfOccurrences: Self = this.set("numberOfOccurrences", js.undefined)
+    def setRecurrenceTimeZoneUndefined: Self = StObject.set(x, "recurrenceTimeZone", js.undefined)
     
     @scala.inline
-    def setRecurrenceTimeZone(value: NullableOption[String]): Self = this.set("recurrenceTimeZone", value.asInstanceOf[js.Any])
+    def setStartDate(value: NullableOption[String]): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecurrenceTimeZone: Self = this.set("recurrenceTimeZone", js.undefined)
+    def setStartDateNull: Self = StObject.set(x, "startDate", null)
     
     @scala.inline
-    def setRecurrenceTimeZoneNull: Self = this.set("recurrenceTimeZone", null)
+    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
     @scala.inline
-    def setStartDate(value: NullableOption[String]): Self = this.set("startDate", value.asInstanceOf[js.Any])
+    def setType(value: NullableOption[RecurrenceRangeType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartDate: Self = this.set("startDate", js.undefined)
+    def setTypeNull: Self = StObject.set(x, "type", null)
     
     @scala.inline
-    def setStartDateNull: Self = this.set("startDate", null)
-    
-    @scala.inline
-    def setType(value: NullableOption[RecurrenceRangeType]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setTypeNull: Self = this.set("type", null)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

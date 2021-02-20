@@ -1,106 +1,88 @@
 package typings.xelib.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DefType extends js.Object
+sealed trait DefType extends StObject
 @JSImport("xelib", "DefType")
 @js.native
-object DefType extends js.Object {
+object DefType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DefType with Double] = js.native
   
   @js.native
   sealed trait dtArray extends DefType
-  /* 14 */ @js.native
-  object dtArray extends TopLevel[dtArray with Double]
+  /* 14 */ val dtArray: typings.xelib.mod.DefType.dtArray with Double = js.native
   
   @js.native
   sealed trait dtByteArray extends DefType
-  /* 8 */ @js.native
-  object dtByteArray extends TopLevel[dtByteArray with Double]
+  /* 8 */ val dtByteArray: typings.xelib.mod.DefType.dtByteArray with Double = js.native
   
   @js.native
   sealed trait dtEmpty extends DefType
-  /* 17 */ @js.native
-  object dtEmpty extends TopLevel[dtEmpty with Double]
+  /* 17 */ val dtEmpty: typings.xelib.mod.DefType.dtEmpty with Double = js.native
   
   @js.native
   sealed trait dtFlag extends DefType
-  /* 12 */ @js.native
-  object dtFlag extends TopLevel[dtFlag with Double]
+  /* 12 */ val dtFlag: typings.xelib.mod.DefType.dtFlag with Double = js.native
   
   @js.native
   sealed trait dtFloat extends DefType
-  /* 13 */ @js.native
-  object dtFloat extends TopLevel[dtFloat with Double]
+  /* 13 */ val dtFloat: typings.xelib.mod.DefType.dtFloat with Double = js.native
   
   @js.native
   sealed trait dtInteger extends DefType
-  /* 9 */ @js.native
-  object dtInteger extends TopLevel[dtInteger with Double]
+  /* 9 */ val dtInteger: typings.xelib.mod.DefType.dtInteger with Double = js.native
   
   @js.native
   sealed trait dtIntegerFormater extends DefType
-  /* 10 */ @js.native
-  object dtIntegerFormater extends TopLevel[dtIntegerFormater with Double]
+  /* 10 */ val dtIntegerFormater: typings.xelib.mod.DefType.dtIntegerFormater with Double = js.native
   
   @js.native
   sealed trait dtIntegerFormaterUnion extends DefType
-  /* 11 */ @js.native
-  object dtIntegerFormaterUnion extends TopLevel[dtIntegerFormaterUnion with Double]
+  /* 11 */ val dtIntegerFormaterUnion: typings.xelib.mod.DefType.dtIntegerFormaterUnion with Double = js.native
   
   @js.native
   sealed trait dtLString extends DefType
-  /* 6 */ @js.native
-  object dtLString extends TopLevel[dtLString with Double]
+  /* 6 */ val dtLString: typings.xelib.mod.DefType.dtLString with Double = js.native
   
   @js.native
   sealed trait dtLenString extends DefType
-  /* 7 */ @js.native
-  object dtLenString extends TopLevel[dtLenString with Double]
+  /* 7 */ val dtLenString: typings.xelib.mod.DefType.dtLenString with Double = js.native
   
   @js.native
   sealed trait dtString extends DefType
-  /* 5 */ @js.native
-  object dtString extends TopLevel[dtString with Double]
+  /* 5 */ val dtString: typings.xelib.mod.DefType.dtString with Double = js.native
   
   @js.native
   sealed trait dtStruct extends DefType
-  /* 15 */ @js.native
-  object dtStruct extends TopLevel[dtStruct with Double]
+  /* 15 */ val dtStruct: typings.xelib.mod.DefType.dtStruct with Double = js.native
   
   @js.native
   sealed trait dtStructChapter extends DefType
-  /* 18 */ @js.native
-  object dtStructChapter extends TopLevel[dtStructChapter with Double]
+  /* 18 */ val dtStructChapter: typings.xelib.mod.DefType.dtStructChapter with Double = js.native
   
   @js.native
   sealed trait dtSubRecord extends DefType
-  /* 1 */ @js.native
-  object dtSubRecord extends TopLevel[dtSubRecord with Double]
+  /* 1 */ val dtSubRecord: typings.xelib.mod.DefType.dtSubRecord with Double = js.native
   
   @js.native
   sealed trait dtSubRecordArray extends DefType
-  /* 2 */ @js.native
-  object dtSubRecordArray extends TopLevel[dtSubRecordArray with Double]
+  /* 2 */ val dtSubRecordArray: typings.xelib.mod.DefType.dtSubRecordArray with Double = js.native
   
   @js.native
   sealed trait dtSubRecordStruct extends DefType
-  /* 3 */ @js.native
-  object dtSubRecordStruct extends TopLevel[dtSubRecordStruct with Double]
+  /* 3 */ val dtSubRecordStruct: typings.xelib.mod.DefType.dtSubRecordStruct with Double = js.native
   
   @js.native
   sealed trait dtSubRecordUnion extends DefType
-  /* 4 */ @js.native
-  object dtSubRecordUnion extends TopLevel[dtSubRecordUnion with Double]
+  /* 4 */ val dtSubRecordUnion: typings.xelib.mod.DefType.dtSubRecordUnion with Double = js.native
   
   @js.native
   sealed trait dtUnion extends DefType
-  /* 16 */ @js.native
-  object dtUnion extends TopLevel[dtUnion with Double]
+  /* 16 */ val dtUnion: typings.xelib.mod.DefType.dtUnion with Double = js.native
 }

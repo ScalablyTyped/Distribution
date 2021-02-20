@@ -6,12 +6,13 @@ import typings.sparkpost.sparkpostStrings.Canceled
 import typings.sparkpost.sparkpostStrings.Generating
 import typings.sparkpost.sparkpostStrings.Success
 import typings.sparkpost.sparkpostStrings.submitted
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Transmission extends js.Object {
+trait Transmission extends StObject {
   
   /** Name of the campaign */
   var campaign_id: String = js.native
@@ -73,57 +74,45 @@ object Transmission {
   }
   
   @scala.inline
-  implicit class TransmissionOps[Self <: Transmission] (val x: Self) extends AnyVal {
+  implicit class TransmissionMutableBuilder[Self <: Transmission] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCampaign_id(value: String): Self = StObject.set(x, "campaign_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContent(value: InlineContent | Templateid | Emailrfc822): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaign_id(value: String): Self = this.set("campaign_id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: InlineContent | Templateid | Emailrfc822): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setNum_failed_generation(value: Double): Self = StObject.set(x, "num_failed_generation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNum_generated(value: Double): Self = StObject.set(x, "num_generated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: js.Any): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setNum_invalid_recipients(value: Double): Self = StObject.set(x, "num_invalid_recipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNum_failed_generation(value: Double): Self = this.set("num_failed_generation", value.asInstanceOf[js.Any])
+    def setOptions(value: TransmissionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNum_generated(value: Double): Self = this.set("num_generated", value.asInstanceOf[js.Any])
+    def setRcpt_list_chunk_size(value: Double): Self = StObject.set(x, "rcpt_list_chunk_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNum_invalid_recipients(value: Double): Self = this.set("num_invalid_recipients", value.asInstanceOf[js.Any])
+    def setRcpt_list_total_chunks(value: Double): Self = StObject.set(x, "rcpt_list_total_chunks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: TransmissionOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setState(value: submitted | Generating | Success | Canceled): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRcpt_list_chunk_size(value: Double): Self = this.set("rcpt_list_chunk_size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRcpt_list_total_chunks(value: Double): Self = this.set("rcpt_list_total_chunks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: submitted | Generating | Success | Canceled): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubstitution_data(value: js.Any): Self = this.set("substitution_data", value.asInstanceOf[js.Any])
+    def setSubstitution_data(value: js.Any): Self = StObject.set(x, "substitution_data", value.asInstanceOf[js.Any])
   }
 }

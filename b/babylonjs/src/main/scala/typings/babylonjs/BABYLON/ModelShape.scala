@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModelShape extends js.Object {
+trait ModelShape extends StObject {
   
   /**
     * indices array of the model
@@ -86,72 +87,60 @@ object ModelShape {
   }
   
   @scala.inline
-  implicit class ModelShapeOps[Self <: ModelShape] (val x: Self) extends AnyVal {
+  implicit class ModelShapeMutableBuilder[Self <: ModelShape] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShapeID(value: Double): Self = StObject.set(x, "shapeID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_indices(value: js.Array[Double]): Self = StObject.set(x, "_indices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_indicesLength(value: Double): Self = StObject.set(x, "_indicesLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_indicesVarargs(value: Double*): Self = this.set("_indices", js.Array(value :_*))
+    def set_indicesVarargs(value: Double*): Self = StObject.set(x, "_indices", js.Array(value :_*))
     
     @scala.inline
-    def set_indices(value: js.Array[Double]): Self = this.set("_indices", value.asInstanceOf[js.Any])
+    def set_material(value: Nullable[Material]): Self = StObject.set(x, "_material", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_indicesLength(value: Double): Self = this.set("_indicesLength", value.asInstanceOf[js.Any])
+    def set_materialNull: Self = StObject.set(x, "_material", null)
     
     @scala.inline
-    def set_normalsVarargs(value: Double*): Self = this.set("_normals", js.Array(value :_*))
+    def set_normals(value: js.Array[Double]): Self = StObject.set(x, "_normals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_normals(value: js.Array[Double]): Self = this.set("_normals", value.asInstanceOf[js.Any])
+    def set_normalsVarargs(value: Double*): Self = StObject.set(x, "_normals", js.Array(value :_*))
     
     @scala.inline
-    def set_shapeVarargs(value: Vector3*): Self = this.set("_shape", js.Array(value :_*))
+    def set_positionFunction(value: (/* particle */ SolidParticle, /* i */ Double, /* s */ Double) => Unit): Self = StObject.set(x, "_positionFunction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set_shape(value: js.Array[Vector3]): Self = this.set("_shape", value.asInstanceOf[js.Any])
+    def set_positionFunctionNull: Self = StObject.set(x, "_positionFunction", null)
     
     @scala.inline
-    def set_shapeColorsVarargs(value: Double*): Self = this.set("_shapeColors", js.Array(value :_*))
+    def set_shape(value: js.Array[Vector3]): Self = StObject.set(x, "_shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_shapeColors(value: js.Array[Double]): Self = this.set("_shapeColors", value.asInstanceOf[js.Any])
+    def set_shapeColors(value: js.Array[Double]): Self = StObject.set(x, "_shapeColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_shapeUVVarargs(value: Double*): Self = this.set("_shapeUV", js.Array(value :_*))
+    def set_shapeColorsVarargs(value: Double*): Self = StObject.set(x, "_shapeColors", js.Array(value :_*))
     
     @scala.inline
-    def set_shapeUV(value: js.Array[Double]): Self = this.set("_shapeUV", value.asInstanceOf[js.Any])
+    def set_shapeUV(value: js.Array[Double]): Self = StObject.set(x, "_shapeUV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapeID(value: Double): Self = this.set("shapeID", value.asInstanceOf[js.Any])
+    def set_shapeUVVarargs(value: Double*): Self = StObject.set(x, "_shapeUV", js.Array(value :_*))
     
     @scala.inline
-    def set_material(value: Nullable[Material]): Self = this.set("_material", value.asInstanceOf[js.Any])
+    def set_shapeVarargs(value: Vector3*): Self = StObject.set(x, "_shape", js.Array(value :_*))
     
     @scala.inline
-    def set_materialNull: Self = this.set("_material", null)
+    def set_vertexFunction(value: (/* particle */ SolidParticle, /* vertex */ Vector3, /* i */ Double) => Unit): Self = StObject.set(x, "_vertexFunction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set_positionFunction(value: (/* particle */ SolidParticle, /* i */ Double, /* s */ Double) => Unit): Self = this.set("_positionFunction", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def set_positionFunctionNull: Self = this.set("_positionFunction", null)
-    
-    @scala.inline
-    def set_vertexFunction(value: (/* particle */ SolidParticle, /* vertex */ Vector3, /* i */ Double) => Unit): Self = this.set("_vertexFunction", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def set_vertexFunctionNull: Self = this.set("_vertexFunction", null)
+    def set_vertexFunctionNull: Self = StObject.set(x, "_vertexFunction", null)
   }
 }

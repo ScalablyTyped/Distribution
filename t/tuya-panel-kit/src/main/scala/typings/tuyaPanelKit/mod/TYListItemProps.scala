@@ -8,6 +8,7 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.auto
 import typings.tuyaPanelKit.tuyaPanelKitStrings.iconfont
 import typings.tuyaPanelKit.tuyaPanelKitStrings.image
 import typings.tuyaPanelKit.tuyaPanelKitStrings.text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,138 +66,126 @@ object TYListItemProps {
   }
   
   @scala.inline
-  implicit class TYListItemPropsOps[Self <: TYListItemProps] (val x: Self) extends AnyVal {
+  implicit class TYListItemPropsMutableBuilder[Self <: TYListItemProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: js.Any): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionDisabled(value: Boolean): Self = StObject.set(x, "actionDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionDisabledUndefined: Self = StObject.set(x, "actionDisabled", js.undefined)
     
     @scala.inline
-    def setAction(value: js.Any): Self = this.set("Action", value.asInstanceOf[js.Any])
+    def setActionType(value: auto | image | iconfont | text): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAction: Self = this.set("Action", js.undefined)
+    def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
     
     @scala.inline
-    def setIcon(value: js.Any): Self = this.set("Icon", value.asInstanceOf[js.Any])
+    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("Icon", js.undefined)
+    def setArrow(value: Boolean): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionDisabled(value: Boolean): Self = this.set("actionDisabled", value.asInstanceOf[js.Any])
+    def setArrowColor(value: String): Self = StObject.set(x, "arrowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActionDisabled: Self = this.set("actionDisabled", js.undefined)
+    def setArrowColorUndefined: Self = StObject.set(x, "arrowColor", js.undefined)
     
     @scala.inline
-    def setActionType(value: auto | image | iconfont | text): Self = this.set("actionType", value.asInstanceOf[js.Any])
+    def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
     
     @scala.inline
-    def deleteActionType: Self = this.set("actionType", js.undefined)
+    def setArrowUseIcon(value: Boolean): Self = StObject.set(x, "arrowUseIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrow(value: Boolean): Self = this.set("arrow", value.asInstanceOf[js.Any])
+    def setArrowUseIconUndefined: Self = StObject.set(x, "arrowUseIcon", js.undefined)
     
     @scala.inline
-    def deleteArrow: Self = this.set("arrow", js.undefined)
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowColor(value: String): Self = this.set("arrowColor", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteArrowColor: Self = this.set("arrowColor", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowUseIcon(value: Boolean): Self = this.set("arrowUseIcon", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteArrowUseIcon: Self = this.set("arrowUseIcon", js.undefined)
+    def setIcon(value: js.Any): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setIconColor(value: String): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setIconColorUndefined: Self = StObject.set(x, "iconColor", js.undefined)
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setIconSize(value: Double): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setIconSizeUndefined: Self = StObject.set(x, "iconSize", js.undefined)
     
     @scala.inline
-    def setIconColor(value: String): Self = this.set("iconColor", value.asInstanceOf[js.Any])
+    def setIconType(value: auto | image | iconfont | text): Self = StObject.set(x, "iconType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIconColor: Self = this.set("iconColor", js.undefined)
+    def setIconTypeUndefined: Self = StObject.set(x, "iconType", js.undefined)
     
     @scala.inline
-    def setIconSize(value: Double): Self = this.set("iconSize", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "Icon", js.undefined)
     
     @scala.inline
-    def deleteIconSize: Self = this.set("iconSize", js.undefined)
+    def setImageFollowIconColor(value: Boolean): Self = StObject.set(x, "imageFollowIconColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconType(value: auto | image | iconfont | text): Self = this.set("iconType", value.asInstanceOf[js.Any])
+    def setImageFollowIconColorUndefined: Self = StObject.set(x, "imageFollowIconColor", js.undefined)
     
     @scala.inline
-    def deleteIconType: Self = this.set("iconType", js.undefined)
+    def setNeedUpdate(value: Boolean): Self = StObject.set(x, "needUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageFollowIconColor(value: Boolean): Self = this.set("imageFollowIconColor", value.asInstanceOf[js.Any])
+    def setNeedUpdateUndefined: Self = StObject.set(x, "needUpdate", js.undefined)
     
     @scala.inline
-    def deleteImageFollowIconColor: Self = this.set("imageFollowIconColor", js.undefined)
+    def setOnActionPress(value: () => Unit): Self = StObject.set(x, "onActionPress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNeedUpdate(value: Boolean): Self = this.set("needUpdate", value.asInstanceOf[js.Any])
+    def setOnActionPressUndefined: Self = StObject.set(x, "onActionPress", js.undefined)
     
     @scala.inline
-    def deleteNeedUpdate: Self = this.set("needUpdate", js.undefined)
+    def setStyles(value: Content): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnActionPress(value: () => Unit): Self = this.set("onActionPress", js.Any.fromFunction0(value))
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def deleteOnActionPress: Self = this.set("onActionPress", js.undefined)
+    def setSubTitle(value: String): Self = StObject.set(x, "subTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: Content): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setSubTitleUndefined: Self = StObject.set(x, "subTitle", js.undefined)
     
     @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setTheme(value: BoardBg): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubTitle(value: String): Self = this.set("subTitle", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteSubTitle: Self = this.set("subTitle", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: BoardBg): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setUseART(value: Boolean): Self = StObject.set(x, "useART", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setUseART(value: Boolean): Self = this.set("useART", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseART: Self = this.set("useART", js.undefined)
+    def setUseARTUndefined: Self = StObject.set(x, "useART", js.undefined)
   }
 }

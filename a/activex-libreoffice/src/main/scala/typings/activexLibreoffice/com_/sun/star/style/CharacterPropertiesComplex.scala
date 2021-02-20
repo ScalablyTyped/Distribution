@@ -2,13 +2,14 @@ package typings.activexLibreoffice.com_.sun.star.style
 
 import typings.activexLibreoffice.com_.sun.star.awt.FontSlant
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This is a set of properties to describe the style of characters in complex texts. */
 @js.native
-trait CharacterPropertiesComplex extends js.Object {
+trait CharacterPropertiesComplex extends StObject {
   
   /** This property contains the text encoding of the font as specified in {@link com.sun.star.awt.CharSet} . */
   var CharFontCharSetComplex: Double = js.native
@@ -70,45 +71,33 @@ object CharacterPropertiesComplex {
   }
   
   @scala.inline
-  implicit class CharacterPropertiesComplexOps[Self <: CharacterPropertiesComplex] (val x: Self) extends AnyVal {
+  implicit class CharacterPropertiesComplexMutableBuilder[Self <: CharacterPropertiesComplex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharFontCharSetComplex(value: Double): Self = StObject.set(x, "CharFontCharSetComplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharFontFamilyComplex(value: Double): Self = StObject.set(x, "CharFontFamilyComplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCharFontNameComplex(value: String): Self = StObject.set(x, "CharFontNameComplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontCharSetComplex(value: Double): Self = this.set("CharFontCharSetComplex", value.asInstanceOf[js.Any])
+    def setCharFontPitchComplex(value: Double): Self = StObject.set(x, "CharFontPitchComplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontFamilyComplex(value: Double): Self = this.set("CharFontFamilyComplex", value.asInstanceOf[js.Any])
+    def setCharFontStyleNameComplex(value: String): Self = StObject.set(x, "CharFontStyleNameComplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontNameComplex(value: String): Self = this.set("CharFontNameComplex", value.asInstanceOf[js.Any])
+    def setCharHeightComplex(value: Double): Self = StObject.set(x, "CharHeightComplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontPitchComplex(value: Double): Self = this.set("CharFontPitchComplex", value.asInstanceOf[js.Any])
+    def setCharLocaleComplex(value: Locale): Self = StObject.set(x, "CharLocaleComplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontStyleNameComplex(value: String): Self = this.set("CharFontStyleNameComplex", value.asInstanceOf[js.Any])
+    def setCharPostureComplex(value: FontSlant): Self = StObject.set(x, "CharPostureComplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharHeightComplex(value: Double): Self = this.set("CharHeightComplex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCharLocaleComplex(value: Locale): Self = this.set("CharLocaleComplex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCharPostureComplex(value: FontSlant): Self = this.set("CharPostureComplex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCharWeightComplex(value: Double): Self = this.set("CharWeightComplex", value.asInstanceOf[js.Any])
+    def setCharWeightComplex(value: Double): Self = StObject.set(x, "CharWeightComplex", value.asInstanceOf[js.Any])
   }
 }

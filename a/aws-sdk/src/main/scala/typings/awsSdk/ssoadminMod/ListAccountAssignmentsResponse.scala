@@ -1,11 +1,12 @@
 package typings.awsSdk.ssoadminMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAccountAssignmentsResponse extends js.Object {
+trait ListAccountAssignmentsResponse extends StObject {
   
   /**
     * The list of assignments that match the input AWS account and permission set.
@@ -26,33 +27,21 @@ object ListAccountAssignmentsResponse {
   }
   
   @scala.inline
-  implicit class ListAccountAssignmentsResponseOps[Self <: ListAccountAssignmentsResponse] (val x: Self) extends AnyVal {
+  implicit class ListAccountAssignmentsResponseMutableBuilder[Self <: ListAccountAssignmentsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountAssignments(value: AccountAssignmentList): Self = StObject.set(x, "AccountAssignments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountAssignmentsUndefined: Self = StObject.set(x, "AccountAssignments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountAssignmentsVarargs(value: AccountAssignment*): Self = StObject.set(x, "AccountAssignments", js.Array(value :_*))
     
     @scala.inline
-    def setAccountAssignmentsVarargs(value: AccountAssignment*): Self = this.set("AccountAssignments", js.Array(value :_*))
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountAssignments(value: AccountAssignmentList): Self = this.set("AccountAssignments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccountAssignments: Self = this.set("AccountAssignments", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

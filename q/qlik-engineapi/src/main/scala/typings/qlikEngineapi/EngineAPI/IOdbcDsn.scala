@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * OdbcDsn...
   */
 @js.native
-trait IOdbcDsn extends js.Object {
+trait IOdbcDsn extends StObject {
   
   /**
     * This parameter is optional. Default is false.
@@ -42,36 +43,24 @@ object IOdbcDsn {
   }
   
   @scala.inline
-  implicit class IOdbcDsnOps[Self <: IOdbcDsn] (val x: Self) extends AnyVal {
+  implicit class IOdbcDsnMutableBuilder[Self <: IOdbcDsn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQBit32(value: Boolean): Self = StObject.set(x, "qBit32", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQBit32Undefined: Self = StObject.set(x, "qBit32", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQDescription(value: String): Self = StObject.set(x, "qDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDescription(value: String): Self = this.set("qDescription", value.asInstanceOf[js.Any])
+    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQName(value: String): Self = this.set("qName", value.asInstanceOf[js.Any])
+    def setQUserOnly(value: Boolean): Self = StObject.set(x, "qUserOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQBit32(value: Boolean): Self = this.set("qBit32", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQBit32: Self = this.set("qBit32", js.undefined)
-    
-    @scala.inline
-    def setQUserOnly(value: Boolean): Self = this.set("qUserOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQUserOnly: Self = this.set("qUserOnly", js.undefined)
+    def setQUserOnlyUndefined: Self = StObject.set(x, "qUserOnly", js.undefined)
   }
 }

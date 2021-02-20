@@ -1,21 +1,23 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.directRepositoryCreateGroupThreadResponseMod.DirectRepositoryCreateGroupThreadResponseRootObject
 import typings.instagramPrivateApi.directRepositoryGetPresenceResponseMod.DirectRepositoryGetPresenceResponseRootObject
 import typings.instagramPrivateApi.directRepositoryRankedRecipientsResponseMod.DirectRepositoryRankedRecipientsResponseRootObject
 import typings.instagramPrivateApi.instagramPrivateApiStrings.raven
 import typings.instagramPrivateApi.instagramPrivateApiStrings.reshare
 import typings.instagramPrivateApi.repositoryMod.Repository
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/repositories/direct.repository", JSImport.Namespace)
-@js.native
-object directRepositoryMod extends js.Object {
+object directRepositoryMod {
   
+  @JSImport("instagram-private-api/dist/repositories/direct.repository", "DirectRepository")
   @js.native
-  class DirectRepository () extends Repository {
+  class DirectRepository protected () extends Repository {
+    def this(client: IgApiClient) = this()
     
     def createGroupThread(recipientUsers: js.Array[String], threadTitle: String): js.Promise[DirectRepositoryCreateGroupThreadResponseRootObject] = js.native
     

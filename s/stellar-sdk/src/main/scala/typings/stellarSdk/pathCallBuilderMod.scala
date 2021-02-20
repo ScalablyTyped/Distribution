@@ -4,14 +4,14 @@ import typings.stellarBase.mod.Asset
 import typings.stellarSdk.callBuilderMod.CallBuilder
 import typings.stellarSdk.serverApiMod.ServerApi.CollectionPage
 import typings.stellarSdk.serverApiMod.ServerApi.PaymentPathRecord
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("stellar-sdk/lib/path_call_builder", JSImport.Namespace)
-@js.native
-object pathCallBuilderMod extends js.Object {
+object pathCallBuilderMod {
   
+  @JSImport("stellar-sdk/lib/path_call_builder", "PathCallBuilder")
   @js.native
   class PathCallBuilder protected () extends CallBuilder[CollectionPage[PaymentPathRecord]] {
     def this(

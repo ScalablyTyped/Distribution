@@ -1,6 +1,7 @@
 package typings.iobroker.objectsMod.global.ioBroker
 
 import typings.iobroker.anon.OmitPermissionSetusergrou
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GroupCommon extends ObjectCommon {
   
-   // system.user.name, ...
+  // system.user.name, ...
   /** The default permissions of this group */
   var acl: OmitPermissionSetusergrou = js.native
   
@@ -31,30 +32,18 @@ object GroupCommon {
   }
   
   @scala.inline
-  implicit class GroupCommonOps[Self <: GroupCommon] (val x: Self) extends AnyVal {
+  implicit class GroupCommonMutableBuilder[Self <: GroupCommon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcl(value: OmitPermissionSetusergrou): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
     
     @scala.inline
-    def setAcl(value: OmitPermissionSetusergrou): Self = this.set("acl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMembersVarargs(value: String*): Self = this.set("members", js.Array(value :_*))
-    
-    @scala.inline
-    def setMembers(value: js.Array[String]): Self = this.set("members", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

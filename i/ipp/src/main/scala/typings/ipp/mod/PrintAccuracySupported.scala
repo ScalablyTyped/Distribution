@@ -1,11 +1,12 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrintAccuracySupported extends js.Object {
+trait PrintAccuracySupported extends StObject {
   
   var `accuracy-units`: js.UndefOr[AccuracyUnits] = js.native
   
@@ -24,42 +25,30 @@ object PrintAccuracySupported {
   }
   
   @scala.inline
-  implicit class PrintAccuracySupportedOps[Self <: PrintAccuracySupported] (val x: Self) extends AnyVal {
+  implicit class PrintAccuracySupportedMutableBuilder[Self <: PrintAccuracySupported] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setAccuracy-units`(value: AccuracyUnits): Self = StObject.set(x, "accuracy-units", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setAccuracy-unitsUndefined`: Self = StObject.set(x, "accuracy-units", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setX-accuracy`(value: Double): Self = StObject.set(x, "x-accuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAccuracy-units`(value: AccuracyUnits): Self = this.set("accuracy-units", value.asInstanceOf[js.Any])
+    def `setX-accuracyUndefined`: Self = StObject.set(x, "x-accuracy", js.undefined)
     
     @scala.inline
-    def `deleteAccuracy-units`: Self = this.set("accuracy-units", js.undefined)
+    def `setY-accuracy`(value: Double): Self = StObject.set(x, "y-accuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setX-accuracy`(value: Double): Self = this.set("x-accuracy", value.asInstanceOf[js.Any])
+    def `setY-accuracyUndefined`: Self = StObject.set(x, "y-accuracy", js.undefined)
     
     @scala.inline
-    def `deleteX-accuracy`: Self = this.set("x-accuracy", js.undefined)
+    def `setZ-accuracy`(value: Double): Self = StObject.set(x, "z-accuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setY-accuracy`(value: Double): Self = this.set("y-accuracy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteY-accuracy`: Self = this.set("y-accuracy", js.undefined)
-    
-    @scala.inline
-    def `setZ-accuracy`(value: Double): Self = this.set("z-accuracy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteZ-accuracy`: Self = this.set("z-accuracy", js.undefined)
+    def `setZ-accuracyUndefined`: Self = StObject.set(x, "z-accuracy", js.undefined)
   }
 }

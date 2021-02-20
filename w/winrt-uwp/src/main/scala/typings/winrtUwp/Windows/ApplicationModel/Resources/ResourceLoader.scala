@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.ApplicationModel.Resources
 
 import typings.winrtUwp.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides simplified access to app resources such as app UI strings. */
 @js.native
-trait ResourceLoader extends js.Object {
+trait ResourceLoader extends StObject {
   
   /**
     * Returns the most appropriate string value of a resource, specified by resource identifier, for the default ResourceContext of the view in which the ResourceLoader was obtained using ResourceLoader.GetForCurrentView .
@@ -32,24 +33,12 @@ object ResourceLoader {
   }
   
   @scala.inline
-  implicit class ResourceLoaderOps[Self <: ResourceLoader] (val x: Self) extends AnyVal {
+  implicit class ResourceLoaderMutableBuilder[Self <: ResourceLoader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetString(value: String => String): Self = StObject.set(x, "getString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetString(value: String => String): Self = this.set("getString", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetStringForUri(value: Uri => String): Self = this.set("getStringForUri", js.Any.fromFunction1(value))
+    def setGetStringForUri(value: Uri => String): Self = StObject.set(x, "getStringForUri", js.Any.fromFunction1(value))
   }
 }

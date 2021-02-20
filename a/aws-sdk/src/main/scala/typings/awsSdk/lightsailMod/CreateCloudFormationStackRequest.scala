@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateCloudFormationStackRequest extends js.Object {
+trait CreateCloudFormationStackRequest extends StObject {
   
   /**
     * An array of parameters that will be used to create the new Amazon EC2 instance. You can only pass one instance entry at a time in this array. You will get an invalid parameter error if you pass more than one instance entry in this array.
@@ -21,24 +22,12 @@ object CreateCloudFormationStackRequest {
   }
   
   @scala.inline
-  implicit class CreateCloudFormationStackRequestOps[Self <: CreateCloudFormationStackRequest] (val x: Self) extends AnyVal {
+  implicit class CreateCloudFormationStackRequestMutableBuilder[Self <: CreateCloudFormationStackRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstances(value: InstanceEntryList): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstancesVarargs(value: InstanceEntry*): Self = this.set("instances", js.Array(value :_*))
-    
-    @scala.inline
-    def setInstances(value: InstanceEntryList): Self = this.set("instances", value.asInstanceOf[js.Any])
+    def setInstancesVarargs(value: InstanceEntry*): Self = StObject.set(x, "instances", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.babylonjs.anon.Ground
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IWebXRBackgroundRemoverOptions extends js.Object {
+trait IWebXRBackgroundRemoverOptions extends StObject {
   
   /**
     * Further background meshes to disable when entering AR
@@ -33,39 +34,27 @@ object IWebXRBackgroundRemoverOptions {
   }
   
   @scala.inline
-  implicit class IWebXRBackgroundRemoverOptionsOps[Self <: IWebXRBackgroundRemoverOptions] (val x: Self) extends AnyVal {
+  implicit class IWebXRBackgroundRemoverOptionsMutableBuilder[Self <: IWebXRBackgroundRemoverOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundMeshes(value: js.Array[AbstractMesh]): Self = StObject.set(x, "backgroundMeshes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundMeshesUndefined: Self = StObject.set(x, "backgroundMeshes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "backgroundMeshes", js.Array(value :_*))
     
     @scala.inline
-    def setBackgroundMeshesVarargs(value: AbstractMesh*): Self = this.set("backgroundMeshes", js.Array(value :_*))
+    def setEnvironmentHelperRemovalFlags(value: Ground): Self = StObject.set(x, "environmentHelperRemovalFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundMeshes(value: js.Array[AbstractMesh]): Self = this.set("backgroundMeshes", value.asInstanceOf[js.Any])
+    def setEnvironmentHelperRemovalFlagsUndefined: Self = StObject.set(x, "environmentHelperRemovalFlags", js.undefined)
     
     @scala.inline
-    def deleteBackgroundMeshes: Self = this.set("backgroundMeshes", js.undefined)
+    def setIgnoreEnvironmentHelper(value: Boolean): Self = StObject.set(x, "ignoreEnvironmentHelper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentHelperRemovalFlags(value: Ground): Self = this.set("environmentHelperRemovalFlags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnvironmentHelperRemovalFlags: Self = this.set("environmentHelperRemovalFlags", js.undefined)
-    
-    @scala.inline
-    def setIgnoreEnvironmentHelper(value: Boolean): Self = this.set("ignoreEnvironmentHelper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnoreEnvironmentHelper: Self = this.set("ignoreEnvironmentHelper", js.undefined)
+    def setIgnoreEnvironmentHelperUndefined: Self = StObject.set(x, "ignoreEnvironmentHelper", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Web
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines errors encountered during operations involving web services, such as authentication, proxy configuration, and destination URIs. */
 @JSGlobal("Windows.Web.WebErrorStatus")
 @js.native
-object WebErrorStatus extends js.Object {
+object WebErrorStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Web.WebErrorStatus with Double] = js.native

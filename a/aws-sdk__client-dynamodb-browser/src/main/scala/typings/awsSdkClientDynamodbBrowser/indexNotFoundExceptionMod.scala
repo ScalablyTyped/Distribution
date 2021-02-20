@@ -1,12 +1,13 @@
 package typings.awsSdkClientDynamodbBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/model/IndexNotFoundException", JSImport.Namespace)
-@js.native
-object indexNotFoundExceptionMod extends js.Object {
+object indexNotFoundExceptionMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-browser/model/IndexNotFoundException", "IndexNotFoundException")
+  @js.native
   val IndexNotFoundException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

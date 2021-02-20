@@ -1,15 +1,21 @@
 package typings.twilioSync
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-sync/lib/clientInfo", JSImport.Namespace)
-@js.native
-object clientInfoMod extends js.Object {
+object clientInfoMod {
   
+  @JSImport("twilio-sync/lib/clientInfo", JSImport.Default)
   @js.native
-  class ClientInfo protected () extends js.Object {
+  class default protected () extends ClientInfo {
+    def this(version: String) = this()
+  }
+  
+  @JSImport("twilio-sync/lib/clientInfo", "ClientInfo")
+  @js.native
+  class ClientInfo protected () extends StObject {
     def this(version: String) = this()
     
     var os: String = js.native
@@ -23,10 +29,5 @@ object clientInfoMod extends js.Object {
     var sdk: String = js.native
     
     var sdkVer: String = js.native
-  }
-  
-  @js.native
-  class default protected () extends ClientInfo {
-    def this(version: String) = this()
   }
 }

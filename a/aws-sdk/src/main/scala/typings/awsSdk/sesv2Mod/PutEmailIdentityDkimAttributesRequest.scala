@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutEmailIdentityDkimAttributesRequest extends js.Object {
+trait PutEmailIdentityDkimAttributesRequest extends StObject {
   
   /**
     * The email identity that you want to change the DKIM settings for.
@@ -26,27 +27,15 @@ object PutEmailIdentityDkimAttributesRequest {
   }
   
   @scala.inline
-  implicit class PutEmailIdentityDkimAttributesRequestOps[Self <: PutEmailIdentityDkimAttributesRequest] (val x: Self) extends AnyVal {
+  implicit class PutEmailIdentityDkimAttributesRequestMutableBuilder[Self <: PutEmailIdentityDkimAttributesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmailIdentity(value: Identity): Self = StObject.set(x, "EmailIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSigningEnabled(value: Enabled): Self = StObject.set(x, "SigningEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEmailIdentity(value: Identity): Self = this.set("EmailIdentity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSigningEnabled(value: Enabled): Self = this.set("SigningEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSigningEnabled: Self = this.set("SigningEnabled", js.undefined)
+    def setSigningEnabledUndefined: Self = StObject.set(x, "SigningEnabled", js.undefined)
   }
 }

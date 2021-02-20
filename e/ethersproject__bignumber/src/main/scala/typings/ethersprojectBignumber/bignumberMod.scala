@@ -2,22 +2,14 @@ package typings.ethersprojectBignumber
 
 import typings.ethersprojectBytes.mod.Bytes
 import typings.ethersprojectBytes.mod.Hexable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ethersproject/bignumber/lib/bignumber", JSImport.Namespace)
-@js.native
-object bignumberMod extends js.Object {
+object bignumberMod {
   
-  @JSName("_base16To36")
-  def base16To36(value: String): String = js.native
-  
-  @JSName("_base36To16")
-  def base36To16(value: String): String = js.native
-  
-  def isBigNumberish(value: js.Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumberish */ Boolean = js.native
-  
+  @JSImport("@ethersproject/bignumber/lib/bignumber", "BigNumber")
   @js.native
   class BigNumber protected () extends Hexable {
     def this(constructorGuard: js.Any, hex: String) = this()
@@ -76,13 +68,28 @@ object bignumberMod extends js.Object {
     def xor(other: BigNumberish): BigNumber = js.native
   }
   /* static members */
-  @js.native
-  object BigNumber extends js.Object {
+  object BigNumber {
     
+    @JSImport("@ethersproject/bignumber/lib/bignumber", "BigNumber.from")
+    @js.native
     def from(value: js.Any): BigNumber = js.native
     
+    @JSImport("@ethersproject/bignumber/lib/bignumber", "BigNumber.isBigNumber")
+    @js.native
     def isBigNumber(value: js.Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumber */ Boolean = js.native
   }
+  
+  @JSImport("@ethersproject/bignumber/lib/bignumber", "_base16To36")
+  @js.native
+  def base16To36(value: String): String = js.native
+  
+  @JSImport("@ethersproject/bignumber/lib/bignumber", "_base36To16")
+  @js.native
+  def base36To16(value: String): String = js.native
+  
+  @JSImport("@ethersproject/bignumber/lib/bignumber", "isBigNumberish")
+  @js.native
+  def isBigNumberish(value: js.Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumberish */ Boolean = js.native
   
   type BigNumberish = BigNumber | Bytes | String | Double
 }

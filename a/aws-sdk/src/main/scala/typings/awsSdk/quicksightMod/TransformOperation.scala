@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransformOperation extends js.Object {
+trait TransformOperation extends StObject {
   
   /**
     * A transform operation that casts a column to a different type.
@@ -46,54 +47,42 @@ object TransformOperation {
   }
   
   @scala.inline
-  implicit class TransformOperationOps[Self <: TransformOperation] (val x: Self) extends AnyVal {
+  implicit class TransformOperationMutableBuilder[Self <: TransformOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCastColumnTypeOperation(value: CastColumnTypeOperation): Self = StObject.set(x, "CastColumnTypeOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCastColumnTypeOperationUndefined: Self = StObject.set(x, "CastColumnTypeOperation", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateColumnsOperation(value: CreateColumnsOperation): Self = StObject.set(x, "CreateColumnsOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCastColumnTypeOperation(value: CastColumnTypeOperation): Self = this.set("CastColumnTypeOperation", value.asInstanceOf[js.Any])
+    def setCreateColumnsOperationUndefined: Self = StObject.set(x, "CreateColumnsOperation", js.undefined)
     
     @scala.inline
-    def deleteCastColumnTypeOperation: Self = this.set("CastColumnTypeOperation", js.undefined)
+    def setFilterOperation(value: FilterOperation): Self = StObject.set(x, "FilterOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateColumnsOperation(value: CreateColumnsOperation): Self = this.set("CreateColumnsOperation", value.asInstanceOf[js.Any])
+    def setFilterOperationUndefined: Self = StObject.set(x, "FilterOperation", js.undefined)
     
     @scala.inline
-    def deleteCreateColumnsOperation: Self = this.set("CreateColumnsOperation", js.undefined)
+    def setProjectOperation(value: ProjectOperation): Self = StObject.set(x, "ProjectOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterOperation(value: FilterOperation): Self = this.set("FilterOperation", value.asInstanceOf[js.Any])
+    def setProjectOperationUndefined: Self = StObject.set(x, "ProjectOperation", js.undefined)
     
     @scala.inline
-    def deleteFilterOperation: Self = this.set("FilterOperation", js.undefined)
+    def setRenameColumnOperation(value: RenameColumnOperation): Self = StObject.set(x, "RenameColumnOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectOperation(value: ProjectOperation): Self = this.set("ProjectOperation", value.asInstanceOf[js.Any])
+    def setRenameColumnOperationUndefined: Self = StObject.set(x, "RenameColumnOperation", js.undefined)
     
     @scala.inline
-    def deleteProjectOperation: Self = this.set("ProjectOperation", js.undefined)
+    def setTagColumnOperation(value: TagColumnOperation): Self = StObject.set(x, "TagColumnOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenameColumnOperation(value: RenameColumnOperation): Self = this.set("RenameColumnOperation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenameColumnOperation: Self = this.set("RenameColumnOperation", js.undefined)
-    
-    @scala.inline
-    def setTagColumnOperation(value: TagColumnOperation): Self = this.set("TagColumnOperation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagColumnOperation: Self = this.set("TagColumnOperation", js.undefined)
+    def setTagColumnOperationUndefined: Self = StObject.set(x, "TagColumnOperation", js.undefined)
   }
 }

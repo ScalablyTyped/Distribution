@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisvideoarchivedmediaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HLSFragmentSelector extends js.Object {
+trait HLSFragmentSelector extends StObject {
   
   /**
     * The source of the timestamps for the requested media. When FragmentSelectorType is set to PRODUCER_TIMESTAMP and GetHLSStreamingSessionURLInput$PlaybackMode is ON_DEMAND or LIVE_REPLAY, the first fragment ingested with a producer timestamp within the specified FragmentSelector$TimestampRange is included in the media playlist. In addition, the fragments with producer timestamps within the TimestampRange ingested immediately following the first fragment (up to the GetHLSStreamingSessionURLInput$MaxMediaPlaylistFragmentResults value) are included.  Fragments that have duplicate producer timestamps are deduplicated. This means that if producers are producing a stream of fragments with producer timestamps that are approximately equal to the true clock time, the HLS media playlists will contain all of the fragments within the requested timestamp range. If some fragments are ingested within the same time range and very different points in time, only the oldest ingested collection of fragments are returned. When FragmentSelectorType is set to PRODUCER_TIMESTAMP and GetHLSStreamingSessionURLInput$PlaybackMode is LIVE, the producer timestamps are used in the MP4 fragments and for deduplication. But the most recently ingested fragments based on server timestamps are included in the HLS media playlist. This means that even if fragments ingested in the past have producer timestamps with values now, they are not included in the HLS media playlist. The default is SERVER_TIMESTAMP.
@@ -26,30 +27,18 @@ object HLSFragmentSelector {
   }
   
   @scala.inline
-  implicit class HLSFragmentSelectorOps[Self <: HLSFragmentSelector] (val x: Self) extends AnyVal {
+  implicit class HLSFragmentSelectorMutableBuilder[Self <: HLSFragmentSelector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFragmentSelectorType(value: HLSFragmentSelectorType): Self = StObject.set(x, "FragmentSelectorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFragmentSelectorTypeUndefined: Self = StObject.set(x, "FragmentSelectorType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimestampRange(value: HLSTimestampRange): Self = StObject.set(x, "TimestampRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragmentSelectorType(value: HLSFragmentSelectorType): Self = this.set("FragmentSelectorType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFragmentSelectorType: Self = this.set("FragmentSelectorType", js.undefined)
-    
-    @scala.inline
-    def setTimestampRange(value: HLSTimestampRange): Self = this.set("TimestampRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestampRange: Self = this.set("TimestampRange", js.undefined)
+    def setTimestampRangeUndefined: Self = StObject.set(x, "TimestampRange", js.undefined)
   }
 }

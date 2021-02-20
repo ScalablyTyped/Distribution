@@ -1,11 +1,12 @@
 package typings.cathoQuantum.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `9` extends js.Object {
+trait `9` extends StObject {
   
   var baseFontSize: js.UndefOr[js.Object] = js.native
 }
@@ -18,24 +19,12 @@ object `9` {
   }
   
   @scala.inline
-  implicit class `9Ops`[Self <: `9`] (val x: Self) extends AnyVal {
+  implicit class `9MutableBuilder`[Self <: `9`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseFontSize(value: js.Object): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBaseFontSize(value: js.Object): Self = this.set("baseFontSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBaseFontSize: Self = this.set("baseFontSize", js.undefined)
+    def setBaseFontSizeUndefined: Self = StObject.set(x, "baseFontSize", js.undefined)
   }
 }

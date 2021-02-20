@@ -1,11 +1,12 @@
 package typings.awsSdk.acmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListCertificatesRequest extends js.Object {
+trait ListCertificatesRequest extends StObject {
   
   /**
     * Filter the certificate list by status value.
@@ -36,45 +37,33 @@ object ListCertificatesRequest {
   }
   
   @scala.inline
-  implicit class ListCertificatesRequestOps[Self <: ListCertificatesRequest] (val x: Self) extends AnyVal {
+  implicit class ListCertificatesRequestMutableBuilder[Self <: ListCertificatesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateStatuses(value: CertificateStatuses): Self = StObject.set(x, "CertificateStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateStatusesUndefined: Self = StObject.set(x, "CertificateStatuses", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateStatusesVarargs(value: CertificateStatus*): Self = StObject.set(x, "CertificateStatuses", js.Array(value :_*))
     
     @scala.inline
-    def setCertificateStatusesVarargs(value: CertificateStatus*): Self = this.set("CertificateStatuses", js.Array(value :_*))
+    def setIncludes(value: Filters): Self = StObject.set(x, "Includes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateStatuses(value: CertificateStatuses): Self = this.set("CertificateStatuses", value.asInstanceOf[js.Any])
+    def setIncludesUndefined: Self = StObject.set(x, "Includes", js.undefined)
     
     @scala.inline
-    def deleteCertificateStatuses: Self = this.set("CertificateStatuses", js.undefined)
+    def setMaxItems(value: MaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludes(value: Filters): Self = this.set("Includes", value.asInstanceOf[js.Any])
+    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
     @scala.inline
-    def deleteIncludes: Self = this.set("Includes", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxItems(value: MaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

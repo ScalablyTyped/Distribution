@@ -1,12 +1,13 @@
 package typings.pdfmake.interfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BufferOptions extends js.Object {
+trait BufferOptions extends StObject {
   
   var autoPrint: js.UndefOr[Boolean] = js.native
   
@@ -27,48 +28,36 @@ object BufferOptions {
   }
   
   @scala.inline
-  implicit class BufferOptionsOps[Self <: BufferOptions] (val x: Self) extends AnyVal {
+  implicit class BufferOptionsMutableBuilder[Self <: BufferOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoPrint(value: Boolean): Self = StObject.set(x, "autoPrint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoPrintUndefined: Self = StObject.set(x, "autoPrint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBufferPages(value: Boolean): Self = StObject.set(x, "bufferPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPrint(value: Boolean): Self = this.set("autoPrint", value.asInstanceOf[js.Any])
+    def setBufferPagesUndefined: Self = StObject.set(x, "bufferPages", js.undefined)
     
     @scala.inline
-    def deleteAutoPrint: Self = this.set("autoPrint", js.undefined)
+    def setFontLayoutCache(value: Boolean): Self = StObject.set(x, "fontLayoutCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBufferPages(value: Boolean): Self = this.set("bufferPages", value.asInstanceOf[js.Any])
+    def setFontLayoutCacheUndefined: Self = StObject.set(x, "fontLayoutCache", js.undefined)
     
     @scala.inline
-    def deleteBufferPages: Self = this.set("bufferPages", js.undefined)
+    def setProgressCallback(value: /* progress */ Double => Unit): Self = StObject.set(x, "progressCallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontLayoutCache(value: Boolean): Self = this.set("fontLayoutCache", value.asInstanceOf[js.Any])
+    def setProgressCallbackUndefined: Self = StObject.set(x, "progressCallback", js.undefined)
     
     @scala.inline
-    def deleteFontLayoutCache: Self = this.set("fontLayoutCache", js.undefined)
+    def setTableLayouts(value: StringDictionary[CustomTableLayout]): Self = StObject.set(x, "tableLayouts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressCallback(value: /* progress */ Double => Unit): Self = this.set("progressCallback", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteProgressCallback: Self = this.set("progressCallback", js.undefined)
-    
-    @scala.inline
-    def setTableLayouts(value: StringDictionary[CustomTableLayout]): Self = this.set("tableLayouts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableLayouts: Self = this.set("tableLayouts", js.undefined)
+    def setTableLayoutsUndefined: Self = StObject.set(x, "tableLayouts", js.undefined)
   }
 }

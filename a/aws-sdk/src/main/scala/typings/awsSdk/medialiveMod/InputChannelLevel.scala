@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputChannelLevel extends js.Object {
+trait InputChannelLevel extends StObject {
   
   /**
     * Remixing value. Units are in dB and acceptable values are within the range from -60 (mute) and 6 dB.
@@ -26,24 +27,12 @@ object InputChannelLevel {
   }
   
   @scala.inline
-  implicit class InputChannelLevelOps[Self <: InputChannelLevel] (val x: Self) extends AnyVal {
+  implicit class InputChannelLevelMutableBuilder[Self <: InputChannelLevel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGain(value: integerMinNegative60Max6): Self = StObject.set(x, "Gain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGain(value: integerMinNegative60Max6): Self = this.set("Gain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInputChannel(value: integerMin0Max15): Self = this.set("InputChannel", value.asInstanceOf[js.Any])
+    def setInputChannel(value: integerMin0Max15): Self = StObject.set(x, "InputChannel", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.d3pie.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TruncateLength extends js.Object {
+trait TruncateLength extends StObject {
   
   var enabled: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object TruncateLength {
   }
   
   @scala.inline
-  implicit class TruncateLengthOps[Self <: TruncateLength] (val x: Self) extends AnyVal {
+  implicit class TruncateLengthMutableBuilder[Self <: TruncateLength] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTruncateLength(value: Double): Self = StObject.set(x, "truncateLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
-    
-    @scala.inline
-    def setTruncateLength(value: Double): Self = this.set("truncateLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTruncateLength: Self = this.set("truncateLength", js.undefined)
+    def setTruncateLengthUndefined: Self = StObject.set(x, "truncateLength", js.undefined)
   }
 }

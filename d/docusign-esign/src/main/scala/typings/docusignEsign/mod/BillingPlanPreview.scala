@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BillingPlanPreview extends js.Object {
+trait BillingPlanPreview extends StObject {
   
   /**
     * Specifies the ISO currency code for the account.
@@ -34,54 +35,42 @@ object BillingPlanPreview {
   }
   
   @scala.inline
-  implicit class BillingPlanPreviewOps[Self <: BillingPlanPreview] (val x: Self) extends AnyVal {
+  implicit class BillingPlanPreviewMutableBuilder[Self <: BillingPlanPreview] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvoice(value: BillingInvoice): Self = StObject.set(x, "invoice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    def setInvoiceUndefined: Self = StObject.set(x, "invoice", js.undefined)
     
     @scala.inline
-    def deleteCurrencyCode: Self = this.set("currencyCode", js.undefined)
+    def setIsProrated(value: String): Self = StObject.set(x, "isProrated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvoice(value: BillingInvoice): Self = this.set("invoice", value.asInstanceOf[js.Any])
+    def setIsProratedUndefined: Self = StObject.set(x, "isProrated", js.undefined)
     
     @scala.inline
-    def deleteInvoice: Self = this.set("invoice", js.undefined)
+    def setSubtotalAmount(value: String): Self = StObject.set(x, "subtotalAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsProrated(value: String): Self = this.set("isProrated", value.asInstanceOf[js.Any])
+    def setSubtotalAmountUndefined: Self = StObject.set(x, "subtotalAmount", js.undefined)
     
     @scala.inline
-    def deleteIsProrated: Self = this.set("isProrated", js.undefined)
+    def setTaxAmount(value: String): Self = StObject.set(x, "taxAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtotalAmount(value: String): Self = this.set("subtotalAmount", value.asInstanceOf[js.Any])
+    def setTaxAmountUndefined: Self = StObject.set(x, "taxAmount", js.undefined)
     
     @scala.inline
-    def deleteSubtotalAmount: Self = this.set("subtotalAmount", js.undefined)
+    def setTotalAmount(value: String): Self = StObject.set(x, "totalAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaxAmount(value: String): Self = this.set("taxAmount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaxAmount: Self = this.set("taxAmount", js.undefined)
-    
-    @scala.inline
-    def setTotalAmount(value: String): Self = this.set("totalAmount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalAmount: Self = this.set("totalAmount", js.undefined)
+    def setTotalAmountUndefined: Self = StObject.set(x, "totalAmount", js.undefined)
   }
 }

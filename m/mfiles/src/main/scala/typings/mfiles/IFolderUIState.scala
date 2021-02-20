@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFolderUIState extends js.Object {
+trait IFolderUIState extends StObject {
   
   var BottomPaneBarMinimized: Boolean = js.native
   
@@ -44,45 +45,33 @@ object IFolderUIState {
   }
   
   @scala.inline
-  implicit class IFolderUIStateOps[Self <: IFolderUIState] (val x: Self) extends AnyVal {
+  implicit class IFolderUIStateMutableBuilder[Self <: IFolderUIState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottomPaneBarMinimized(value: Boolean): Self = StObject.set(x, "BottomPaneBarMinimized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHitHighlightingEnabled(value: Boolean): Self = StObject.set(x, "HitHighlightingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListingUIState(value: IFolderListingUIState): Self = StObject.set(x, "ListingUIState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomPaneBarMinimized(value: Boolean): Self = this.set("BottomPaneBarMinimized", value.asInstanceOf[js.Any])
+    def setMetadataEditorInRightPane(value: Boolean): Self = StObject.set(x, "MetadataEditorInRightPane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHitHighlightingEnabled(value: Boolean): Self = this.set("HitHighlightingEnabled", value.asInstanceOf[js.Any])
+    def setRelativeBottomPaneHeight(value: Double): Self = StObject.set(x, "RelativeBottomPaneHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListingUIState(value: IFolderListingUIState): Self = this.set("ListingUIState", value.asInstanceOf[js.Any])
+    def setRelativeRightPaneWidth(value: Double): Self = StObject.set(x, "RelativeRightPaneWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataEditorInRightPane(value: Boolean): Self = this.set("MetadataEditorInRightPane", value.asInstanceOf[js.Any])
+    def setRightPaneBarMinimized(value: Boolean): Self = StObject.set(x, "RightPaneBarMinimized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeBottomPaneHeight(value: Double): Self = this.set("RelativeBottomPaneHeight", value.asInstanceOf[js.Any])
+    def setShowBottomPaneBar(value: Boolean): Self = StObject.set(x, "ShowBottomPaneBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeRightPaneWidth(value: Double): Self = this.set("RelativeRightPaneWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightPaneBarMinimized(value: Boolean): Self = this.set("RightPaneBarMinimized", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowBottomPaneBar(value: Boolean): Self = this.set("ShowBottomPaneBar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowRightPaneBar(value: Boolean): Self = this.set("ShowRightPaneBar", value.asInstanceOf[js.Any])
+    def setShowRightPaneBar(value: Boolean): Self = StObject.set(x, "ShowRightPaneBar", value.asInstanceOf[js.Any])
   }
 }

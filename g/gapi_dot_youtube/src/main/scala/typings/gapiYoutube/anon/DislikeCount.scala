@@ -1,11 +1,12 @@
 package typings.gapiYoutube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DislikeCount extends js.Object {
+trait DislikeCount extends StObject {
   
   /**
     * The number of comments for the video.
@@ -47,33 +48,21 @@ object DislikeCount {
   }
   
   @scala.inline
-  implicit class DislikeCountOps[Self <: DislikeCount] (val x: Self) extends AnyVal {
+  implicit class DislikeCountMutableBuilder[Self <: DislikeCount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommentCount(value: Double): Self = StObject.set(x, "commentCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDislikeCount(value: Double): Self = StObject.set(x, "dislikeCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFavoriteCount(value: Double): Self = StObject.set(x, "favoriteCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentCount(value: Double): Self = this.set("commentCount", value.asInstanceOf[js.Any])
+    def setLikeCount(value: Double): Self = StObject.set(x, "likeCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDislikeCount(value: Double): Self = this.set("dislikeCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFavoriteCount(value: Double): Self = this.set("favoriteCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLikeCount(value: Double): Self = this.set("likeCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewCount(value: Double): Self = this.set("viewCount", value.asInstanceOf[js.Any])
+    def setViewCount(value: Double): Self = StObject.set(x, "viewCount", value.asInstanceOf[js.Any])
   }
 }

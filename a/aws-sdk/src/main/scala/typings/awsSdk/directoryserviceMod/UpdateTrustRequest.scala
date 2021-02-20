@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateTrustRequest extends js.Object {
+trait UpdateTrustRequest extends StObject {
   
   /**
     * Updates selective authentication for the trust.
@@ -26,27 +27,15 @@ object UpdateTrustRequest {
   }
   
   @scala.inline
-  implicit class UpdateTrustRequestOps[Self <: UpdateTrustRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateTrustRequestMutableBuilder[Self <: UpdateTrustRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSelectiveAuth(value: SelectiveAuth): Self = StObject.set(x, "SelectiveAuth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSelectiveAuthUndefined: Self = StObject.set(x, "SelectiveAuth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTrustId(value: TrustId): Self = this.set("TrustId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectiveAuth(value: SelectiveAuth): Self = this.set("SelectiveAuth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectiveAuth: Self = this.set("SelectiveAuth", js.undefined)
+    def setTrustId(value: TrustId): Self = StObject.set(x, "TrustId", value.asInstanceOf[js.Any])
   }
 }

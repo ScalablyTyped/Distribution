@@ -1,15 +1,15 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Meshes/dataBuffer", JSImport.Namespace)
-@js.native
-object dataBufferMod extends js.Object {
+object dataBufferMod {
   
+  @JSImport("babylonjs/Meshes/dataBuffer", "DataBuffer")
   @js.native
-  class DataBuffer () extends js.Object {
+  class DataBuffer () extends StObject {
     
     /** Gets or sets the size of the underlying buffer */
     var capacity: Double = js.native

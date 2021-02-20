@@ -1,6 +1,7 @@
 package typings.msRestAzure.mod
 
 import typings.msRest.mod.ServiceClientOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,42 +42,30 @@ object AzureServiceClientOptions {
   }
   
   @scala.inline
-  implicit class AzureServiceClientOptionsOps[Self <: AzureServiceClientOptions] (val x: Self) extends AnyVal {
+  implicit class AzureServiceClientOptionsMutableBuilder[Self <: AzureServiceClientOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptLanguage(value: String): Self = StObject.set(x, "acceptLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptLanguageUndefined: Self = StObject.set(x, "acceptLanguage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGenerateClientRequestId(value: Boolean): Self = StObject.set(x, "generateClientRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptLanguage(value: String): Self = this.set("acceptLanguage", value.asInstanceOf[js.Any])
+    def setGenerateClientRequestIdUndefined: Self = StObject.set(x, "generateClientRequestId", js.undefined)
     
     @scala.inline
-    def deleteAcceptLanguage: Self = this.set("acceptLanguage", js.undefined)
+    def setLongRunningOperationRetryTimeout(value: Double): Self = StObject.set(x, "longRunningOperationRetryTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerateClientRequestId(value: Boolean): Self = this.set("generateClientRequestId", value.asInstanceOf[js.Any])
+    def setLongRunningOperationRetryTimeoutUndefined: Self = StObject.set(x, "longRunningOperationRetryTimeout", js.undefined)
     
     @scala.inline
-    def deleteGenerateClientRequestId: Self = this.set("generateClientRequestId", js.undefined)
+    def setRpRegistrationRetryTimeout(value: Double): Self = StObject.set(x, "rpRegistrationRetryTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongRunningOperationRetryTimeout(value: Double): Self = this.set("longRunningOperationRetryTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLongRunningOperationRetryTimeout: Self = this.set("longRunningOperationRetryTimeout", js.undefined)
-    
-    @scala.inline
-    def setRpRegistrationRetryTimeout(value: Double): Self = this.set("rpRegistrationRetryTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRpRegistrationRetryTimeout: Self = this.set("rpRegistrationRetryTimeout", js.undefined)
+    def setRpRegistrationRetryTimeoutUndefined: Self = StObject.set(x, "rpRegistrationRetryTimeout", js.undefined)
   }
 }

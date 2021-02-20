@@ -1,12 +1,13 @@
 package typings.iobroker.anon
 
 import typings.iobroker.mod.global.ioBroker.GetObjectListItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RowsArray extends js.Object {
+trait RowsArray extends StObject {
   
   var rows: js.Array[GetObjectListItem] = js.native
 }
@@ -19,24 +20,12 @@ object RowsArray {
   }
   
   @scala.inline
-  implicit class RowsArrayOps[Self <: RowsArray] (val x: Self) extends AnyVal {
+  implicit class RowsArrayMutableBuilder[Self <: RowsArray] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRows(value: js.Array[GetObjectListItem]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRowsVarargs(value: GetObjectListItem*): Self = this.set("rows", js.Array(value :_*))
-    
-    @scala.inline
-    def setRows(value: js.Array[GetObjectListItem]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setRowsVarargs(value: GetObjectListItem*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

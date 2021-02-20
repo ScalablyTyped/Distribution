@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterState extends js.Object {
+trait ClusterState extends StObject {
   
   /** Output only. The state of replication for the table in this cluster. */
   var replicationState: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object ClusterState {
   }
   
   @scala.inline
-  implicit class ClusterStateOps[Self <: ClusterState] (val x: Self) extends AnyVal {
+  implicit class ClusterStateMutableBuilder[Self <: ClusterState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReplicationState(value: String): Self = StObject.set(x, "replicationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReplicationState(value: String): Self = this.set("replicationState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicationState: Self = this.set("replicationState", js.undefined)
+    def setReplicationStateUndefined: Self = StObject.set(x, "replicationState", js.undefined)
   }
 }

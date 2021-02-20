@@ -7,6 +7,7 @@ import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.byte
 import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.date
 import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.password
 import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,27 +29,15 @@ object StringFormat {
   }
   
   @scala.inline
-  implicit class StringFormatOps[Self <: StringFormat] (val x: Self) extends AnyVal {
+  implicit class StringFormatMutableBuilder[Self <: StringFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: _empty | byte | binary | date | `date-time` | password): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: string): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormat(value: _empty | byte | binary | date | `date-time` | password): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

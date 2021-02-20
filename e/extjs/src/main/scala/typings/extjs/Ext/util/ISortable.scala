@@ -2,6 +2,7 @@ package typings.extjs.Ext.util
 
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,66 +51,54 @@ object ISortable {
   }
   
   @scala.inline
-  implicit class ISortableOps[Self <: ISortable] (val x: Self) extends AnyVal {
+  implicit class ISortableMutableBuilder[Self <: ISortable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultSortDirection(value: String): Self = StObject.set(x, "defaultSortDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultSortDirectionUndefined: Self = StObject.set(x, "defaultSortDirection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGenerateComparator(value: () => Unit): Self = StObject.set(x, "generateComparator", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDefaultSortDirection(value: String): Self = this.set("defaultSortDirection", value.asInstanceOf[js.Any])
+    def setGenerateComparatorUndefined: Self = StObject.set(x, "generateComparator", js.undefined)
     
     @scala.inline
-    def deleteDefaultSortDirection: Self = this.set("defaultSortDirection", js.undefined)
+    def setGetFirstSorter(value: () => ISorter): Self = StObject.set(x, "getFirstSorter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGenerateComparator(value: () => Unit): Self = this.set("generateComparator", js.Any.fromFunction0(value))
+    def setGetFirstSorterUndefined: Self = StObject.set(x, "getFirstSorter", js.undefined)
     
     @scala.inline
-    def deleteGenerateComparator: Self = this.set("generateComparator", js.undefined)
+    def setInitSortable(value: () => Unit): Self = StObject.set(x, "initSortable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFirstSorter(value: () => ISorter): Self = this.set("getFirstSorter", js.Any.fromFunction0(value))
+    def setInitSortableUndefined: Self = StObject.set(x, "initSortable", js.undefined)
     
     @scala.inline
-    def deleteGetFirstSorter: Self = this.set("getFirstSorter", js.undefined)
+    def setIsSortable(value: Boolean): Self = StObject.set(x, "isSortable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitSortable(value: () => Unit): Self = this.set("initSortable", js.Any.fromFunction0(value))
+    def setIsSortableUndefined: Self = StObject.set(x, "isSortable", js.undefined)
     
     @scala.inline
-    def deleteInitSortable: Self = this.set("initSortable", js.undefined)
+    def setSort(value: (/* sorters */ js.UndefOr[js.Any], /* direction */ js.UndefOr[String]) => Array): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsSortable(value: Boolean): Self = this.set("isSortable", value.asInstanceOf[js.Any])
+    def setSortRoot(value: String): Self = StObject.set(x, "sortRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsSortable: Self = this.set("isSortable", js.undefined)
+    def setSortRootUndefined: Self = StObject.set(x, "sortRoot", js.undefined)
     
     @scala.inline
-    def setSort(value: (/* sorters */ js.UndefOr[js.Any], /* direction */ js.UndefOr[String]) => Array): Self = this.set("sort", js.Any.fromFunction2(value))
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setSorters(value: js.Any): Self = StObject.set(x, "sorters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortRoot(value: String): Self = this.set("sortRoot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortRoot: Self = this.set("sortRoot", js.undefined)
-    
-    @scala.inline
-    def setSorters(value: js.Any): Self = this.set("sorters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSorters: Self = this.set("sorters", js.undefined)
+    def setSortersUndefined: Self = StObject.set(x, "sorters", js.undefined)
   }
 }

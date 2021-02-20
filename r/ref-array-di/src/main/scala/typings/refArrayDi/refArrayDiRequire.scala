@@ -1,5 +1,6 @@
 package typings.refArrayDi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("ref-array-di", JSImport.Namespace)
 @js.native
-object refArrayDiRequire extends js.Object
+object refArrayDiRequire extends StObject

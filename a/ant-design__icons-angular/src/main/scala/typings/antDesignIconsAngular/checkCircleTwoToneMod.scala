@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/twotone/CheckCircleTwoTone", JSImport.Namespace)
-@js.native
-object checkCircleTwoToneMod extends js.Object {
+object checkCircleTwoToneMod {
   
+  @JSImport("@ant-design/icons-angular/icons/twotone/CheckCircleTwoTone", "CheckCircleTwoTone")
+  @js.native
   val CheckCircleTwoTone: IconDefinition = js.native
 }

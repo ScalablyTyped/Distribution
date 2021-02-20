@@ -1,11 +1,12 @@
 package typings.awsSdk.snsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListEndpointsByPlatformApplicationResponse extends js.Object {
+trait ListEndpointsByPlatformApplicationResponse extends StObject {
   
   /**
     * Endpoints returned for ListEndpointsByPlatformApplication action.
@@ -26,33 +27,21 @@ object ListEndpointsByPlatformApplicationResponse {
   }
   
   @scala.inline
-  implicit class ListEndpointsByPlatformApplicationResponseOps[Self <: ListEndpointsByPlatformApplicationResponse] (val x: Self) extends AnyVal {
+  implicit class ListEndpointsByPlatformApplicationResponseMutableBuilder[Self <: ListEndpointsByPlatformApplicationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpoints(value: ListOfEndpoints): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndpointsVarargs(value: Endpoint_ *): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
     
     @scala.inline
-    def setEndpointsVarargs(value: Endpoint_ *): Self = this.set("Endpoints", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoints(value: ListOfEndpoints): Self = this.set("Endpoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndpoints: Self = this.set("Endpoints", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

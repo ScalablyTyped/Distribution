@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListSipRulesResponse extends js.Object {
+trait ListSipRulesResponse extends StObject {
   
   /**
     * The token to use to retrieve the next page of results.
@@ -26,33 +27,21 @@ object ListSipRulesResponse {
   }
   
   @scala.inline
-  implicit class ListSipRulesResponseOps[Self <: ListSipRulesResponse] (val x: Self) extends AnyVal {
+  implicit class ListSipRulesResponseMutableBuilder[Self <: ListSipRulesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSipRules(value: SipRuleList): Self = StObject.set(x, "SipRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextTokenString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSipRulesUndefined: Self = StObject.set(x, "SipRules", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSipRulesVarargs(value: SipRule*): Self = this.set("SipRules", js.Array(value :_*))
-    
-    @scala.inline
-    def setSipRules(value: SipRuleList): Self = this.set("SipRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSipRules: Self = this.set("SipRules", js.undefined)
+    def setSipRulesVarargs(value: SipRule*): Self = StObject.set(x, "SipRules", js.Array(value :_*))
   }
 }

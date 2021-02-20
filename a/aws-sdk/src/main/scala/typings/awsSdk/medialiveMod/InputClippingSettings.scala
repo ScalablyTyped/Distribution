@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputClippingSettings extends js.Object {
+trait InputClippingSettings extends StObject {
   
   /**
     * The source of the timecodes in the source being clipped.
@@ -31,33 +32,21 @@ object InputClippingSettings {
   }
   
   @scala.inline
-  implicit class InputClippingSettingsOps[Self <: InputClippingSettings] (val x: Self) extends AnyVal {
+  implicit class InputClippingSettingsMutableBuilder[Self <: InputClippingSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputTimecodeSource(value: InputTimecodeSource): Self = StObject.set(x, "InputTimecodeSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStartTimecode(value: StartTimecode): Self = StObject.set(x, "StartTimecode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartTimecodeUndefined: Self = StObject.set(x, "StartTimecode", js.undefined)
     
     @scala.inline
-    def setInputTimecodeSource(value: InputTimecodeSource): Self = this.set("InputTimecodeSource", value.asInstanceOf[js.Any])
+    def setStopTimecode(value: StopTimecode): Self = StObject.set(x, "StopTimecode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTimecode(value: StartTimecode): Self = this.set("StartTimecode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTimecode: Self = this.set("StartTimecode", js.undefined)
-    
-    @scala.inline
-    def setStopTimecode(value: StopTimecode): Self = this.set("StopTimecode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStopTimecode: Self = this.set("StopTimecode", js.undefined)
+    def setStopTimecodeUndefined: Self = StObject.set(x, "StopTimecode", js.undefined)
   }
 }

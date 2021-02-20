@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.SpeechRecognition
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SpeechRecognitionScenario extends js.Object
+sealed trait SpeechRecognitionScenario extends StObject
 /** Specifies the scenario used to optimize speech recognition for a web-service constraint (created through a SpeechRecognitionTopicConstraint object). */
 @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionScenario")
 @js.native
-object SpeechRecognitionScenario extends js.Object {
+object SpeechRecognitionScenario extends StObject {
   
   /** A dictation scenario. */
   @js.native

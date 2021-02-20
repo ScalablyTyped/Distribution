@@ -1,12 +1,13 @@
 package typings.reactBootstrapTable.mod
 
 import typings.react.mod.ReactElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomFilter[FParams /* <: js.Object */, FElement /* <: CustomFilterElement */] extends js.Object {
+trait CustomFilter[FParams /* <: js.Object */, FElement /* <: CustomFilterElement */] extends StObject {
   
   /**
     * Custom filter parameters to be passed to the generator function
@@ -49,22 +50,10 @@ object CustomFilter {
   }
   
   @scala.inline
-  implicit class CustomFilterOps[Self <: CustomFilter[_, _], FParams /* <: js.Object */, FElement /* <: CustomFilterElement */] (val x: Self with (CustomFilter[FParams, FElement])) extends AnyVal {
+  implicit class CustomFilterMutableBuilder[Self <: CustomFilter[_, _], FParams /* <: js.Object */, FElement /* <: CustomFilterElement */] (val x: Self with (CustomFilter[FParams, FElement])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCustomFilterParameters(value: CustomFilterParameters[FParams]): Self = this.set("customFilterParameters", value.asInstanceOf[js.Any])
+    def setCustomFilterParameters(value: CustomFilterParameters[FParams]): Self = StObject.set(x, "customFilterParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGetElement(
@@ -73,9 +62,9 @@ object CustomFilter {
           /* type */ js.UndefOr[typings.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter], 
           Unit
         ], CustomFilterParameters[FParams]) => ReactElement
-    ): Self = this.set("getElement", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "getElement", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setType(value: typings.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: typings.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

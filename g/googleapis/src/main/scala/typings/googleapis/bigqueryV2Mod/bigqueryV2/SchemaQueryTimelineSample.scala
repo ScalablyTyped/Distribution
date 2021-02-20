@@ -1,11 +1,12 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaQueryTimelineSample extends js.Object {
+trait SchemaQueryTimelineSample extends StObject {
   
   /**
     * Total number of units currently being processed by workers. This does not
@@ -43,48 +44,36 @@ object SchemaQueryTimelineSample {
   }
   
   @scala.inline
-  implicit class SchemaQueryTimelineSampleOps[Self <: SchemaQueryTimelineSample] (val x: Self) extends AnyVal {
+  implicit class SchemaQueryTimelineSampleMutableBuilder[Self <: SchemaQueryTimelineSample] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveUnits(value: String): Self = StObject.set(x, "activeUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUnitsUndefined: Self = StObject.set(x, "activeUnits", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompletedUnits(value: String): Self = StObject.set(x, "completedUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveUnits(value: String): Self = this.set("activeUnits", value.asInstanceOf[js.Any])
+    def setCompletedUnitsUndefined: Self = StObject.set(x, "completedUnits", js.undefined)
     
     @scala.inline
-    def deleteActiveUnits: Self = this.set("activeUnits", js.undefined)
+    def setElapsedMs(value: String): Self = StObject.set(x, "elapsedMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedUnits(value: String): Self = this.set("completedUnits", value.asInstanceOf[js.Any])
+    def setElapsedMsUndefined: Self = StObject.set(x, "elapsedMs", js.undefined)
     
     @scala.inline
-    def deleteCompletedUnits: Self = this.set("completedUnits", js.undefined)
+    def setPendingUnits(value: String): Self = StObject.set(x, "pendingUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElapsedMs(value: String): Self = this.set("elapsedMs", value.asInstanceOf[js.Any])
+    def setPendingUnitsUndefined: Self = StObject.set(x, "pendingUnits", js.undefined)
     
     @scala.inline
-    def deleteElapsedMs: Self = this.set("elapsedMs", js.undefined)
+    def setTotalSlotMs(value: String): Self = StObject.set(x, "totalSlotMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingUnits(value: String): Self = this.set("pendingUnits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePendingUnits: Self = this.set("pendingUnits", js.undefined)
-    
-    @scala.inline
-    def setTotalSlotMs(value: String): Self = this.set("totalSlotMs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalSlotMs: Self = this.set("totalSlotMs", js.undefined)
+    def setTotalSlotMsUndefined: Self = StObject.set(x, "totalSlotMs", js.undefined)
   }
 }

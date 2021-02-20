@@ -1,12 +1,13 @@
 package typings.activexMsxml2.MSXML2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** SAX XML Reader 6.0 */
 @js.native
-trait SAXXMLReader60 extends js.Object {
+trait SAXXMLReader60 extends StObject {
   
   @JSName("MSXML2.SAXXMLReader60_typekey")
   var MSXML2DotSAXXMLReader60_typekey: SAXXMLReader60 = js.native

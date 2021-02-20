@@ -1,11 +1,12 @@
 package typings.slonik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaggedTemplateLiteralInvocationType[Result] extends js.Object {
+trait TaggedTemplateLiteralInvocationType[Result] extends StObject {
   
   var sql: String = js.native
   
@@ -23,30 +24,18 @@ object TaggedTemplateLiteralInvocationType {
   }
   
   @scala.inline
-  implicit class TaggedTemplateLiteralInvocationTypeOps[Self <: TaggedTemplateLiteralInvocationType[_], Result] (val x: Self with TaggedTemplateLiteralInvocationType[Result]) extends AnyVal {
+  implicit class TaggedTemplateLiteralInvocationTypeMutableBuilder[Self <: TaggedTemplateLiteralInvocationType[_], Result] (val x: Self with TaggedTemplateLiteralInvocationType[Result]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setType(value: js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValues(value: js.Array[ValueExpressionType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSql(value: String): Self = this.set("sql", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: js.Symbol): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesVarargs(value: ValueExpressionType*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[ValueExpressionType]): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValuesVarargs(value: ValueExpressionType*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

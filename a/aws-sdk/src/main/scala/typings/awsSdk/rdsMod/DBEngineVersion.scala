@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DBEngineVersion extends js.Object {
+trait DBEngineVersion extends StObject {
   
   /**
     * The description of the database engine.
@@ -106,147 +107,135 @@ object DBEngineVersion {
   }
   
   @scala.inline
-  implicit class DBEngineVersionOps[Self <: DBEngineVersion] (val x: Self) extends AnyVal {
+  implicit class DBEngineVersionMutableBuilder[Self <: DBEngineVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDBEngineDescription(value: String): Self = StObject.set(x, "DBEngineDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDBEngineDescriptionUndefined: Self = StObject.set(x, "DBEngineDescription", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDBEngineVersionDescription(value: String): Self = StObject.set(x, "DBEngineVersionDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBEngineDescription(value: String): Self = this.set("DBEngineDescription", value.asInstanceOf[js.Any])
+    def setDBEngineVersionDescriptionUndefined: Self = StObject.set(x, "DBEngineVersionDescription", js.undefined)
     
     @scala.inline
-    def deleteDBEngineDescription: Self = this.set("DBEngineDescription", js.undefined)
+    def setDBParameterGroupFamily(value: String): Self = StObject.set(x, "DBParameterGroupFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBEngineVersionDescription(value: String): Self = this.set("DBEngineVersionDescription", value.asInstanceOf[js.Any])
+    def setDBParameterGroupFamilyUndefined: Self = StObject.set(x, "DBParameterGroupFamily", js.undefined)
     
     @scala.inline
-    def deleteDBEngineVersionDescription: Self = this.set("DBEngineVersionDescription", js.undefined)
+    def setDefaultCharacterSet(value: CharacterSet): Self = StObject.set(x, "DefaultCharacterSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBParameterGroupFamily(value: String): Self = this.set("DBParameterGroupFamily", value.asInstanceOf[js.Any])
+    def setDefaultCharacterSetUndefined: Self = StObject.set(x, "DefaultCharacterSet", js.undefined)
     
     @scala.inline
-    def deleteDBParameterGroupFamily: Self = this.set("DBParameterGroupFamily", js.undefined)
+    def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCharacterSet(value: CharacterSet): Self = this.set("DefaultCharacterSet", value.asInstanceOf[js.Any])
+    def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
     
     @scala.inline
-    def deleteDefaultCharacterSet: Self = this.set("DefaultCharacterSet", js.undefined)
+    def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
     @scala.inline
-    def deleteEngine: Self = this.set("Engine", js.undefined)
+    def setExportableLogTypes(value: LogTypeList): Self = StObject.set(x, "ExportableLogTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    def setExportableLogTypesUndefined: Self = StObject.set(x, "ExportableLogTypes", js.undefined)
     
     @scala.inline
-    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    def setExportableLogTypesVarargs(value: String*): Self = StObject.set(x, "ExportableLogTypes", js.Array(value :_*))
     
     @scala.inline
-    def setExportableLogTypesVarargs(value: String*): Self = this.set("ExportableLogTypes", js.Array(value :_*))
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportableLogTypes(value: LogTypeList): Self = this.set("ExportableLogTypes", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteExportableLogTypes: Self = this.set("ExportableLogTypes", js.undefined)
+    def setSupportedCharacterSets(value: SupportedCharacterSetsList): Self = StObject.set(x, "SupportedCharacterSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setSupportedCharacterSetsUndefined: Self = StObject.set(x, "SupportedCharacterSets", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setSupportedCharacterSetsVarargs(value: CharacterSet*): Self = StObject.set(x, "SupportedCharacterSets", js.Array(value :_*))
     
     @scala.inline
-    def setSupportedCharacterSetsVarargs(value: CharacterSet*): Self = this.set("SupportedCharacterSets", js.Array(value :_*))
+    def setSupportedEngineModes(value: EngineModeList): Self = StObject.set(x, "SupportedEngineModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedCharacterSets(value: SupportedCharacterSetsList): Self = this.set("SupportedCharacterSets", value.asInstanceOf[js.Any])
+    def setSupportedEngineModesUndefined: Self = StObject.set(x, "SupportedEngineModes", js.undefined)
     
     @scala.inline
-    def deleteSupportedCharacterSets: Self = this.set("SupportedCharacterSets", js.undefined)
+    def setSupportedEngineModesVarargs(value: String*): Self = StObject.set(x, "SupportedEngineModes", js.Array(value :_*))
     
     @scala.inline
-    def setSupportedEngineModesVarargs(value: String*): Self = this.set("SupportedEngineModes", js.Array(value :_*))
+    def setSupportedFeatureNames(value: FeatureNameList): Self = StObject.set(x, "SupportedFeatureNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedEngineModes(value: EngineModeList): Self = this.set("SupportedEngineModes", value.asInstanceOf[js.Any])
+    def setSupportedFeatureNamesUndefined: Self = StObject.set(x, "SupportedFeatureNames", js.undefined)
     
     @scala.inline
-    def deleteSupportedEngineModes: Self = this.set("SupportedEngineModes", js.undefined)
+    def setSupportedFeatureNamesVarargs(value: String*): Self = StObject.set(x, "SupportedFeatureNames", js.Array(value :_*))
     
     @scala.inline
-    def setSupportedFeatureNamesVarargs(value: String*): Self = this.set("SupportedFeatureNames", js.Array(value :_*))
+    def setSupportedNcharCharacterSets(value: SupportedCharacterSetsList): Self = StObject.set(x, "SupportedNcharCharacterSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedFeatureNames(value: FeatureNameList): Self = this.set("SupportedFeatureNames", value.asInstanceOf[js.Any])
+    def setSupportedNcharCharacterSetsUndefined: Self = StObject.set(x, "SupportedNcharCharacterSets", js.undefined)
     
     @scala.inline
-    def deleteSupportedFeatureNames: Self = this.set("SupportedFeatureNames", js.undefined)
+    def setSupportedNcharCharacterSetsVarargs(value: CharacterSet*): Self = StObject.set(x, "SupportedNcharCharacterSets", js.Array(value :_*))
     
     @scala.inline
-    def setSupportedNcharCharacterSetsVarargs(value: CharacterSet*): Self = this.set("SupportedNcharCharacterSets", js.Array(value :_*))
+    def setSupportedTimezones(value: SupportedTimezonesList): Self = StObject.set(x, "SupportedTimezones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedNcharCharacterSets(value: SupportedCharacterSetsList): Self = this.set("SupportedNcharCharacterSets", value.asInstanceOf[js.Any])
+    def setSupportedTimezonesUndefined: Self = StObject.set(x, "SupportedTimezones", js.undefined)
     
     @scala.inline
-    def deleteSupportedNcharCharacterSets: Self = this.set("SupportedNcharCharacterSets", js.undefined)
+    def setSupportedTimezonesVarargs(value: Timezone*): Self = StObject.set(x, "SupportedTimezones", js.Array(value :_*))
     
     @scala.inline
-    def setSupportedTimezonesVarargs(value: Timezone*): Self = this.set("SupportedTimezones", js.Array(value :_*))
+    def setSupportsGlobalDatabases(value: Boolean): Self = StObject.set(x, "SupportsGlobalDatabases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedTimezones(value: SupportedTimezonesList): Self = this.set("SupportedTimezones", value.asInstanceOf[js.Any])
+    def setSupportsGlobalDatabasesUndefined: Self = StObject.set(x, "SupportsGlobalDatabases", js.undefined)
     
     @scala.inline
-    def deleteSupportedTimezones: Self = this.set("SupportedTimezones", js.undefined)
+    def setSupportsLogExportsToCloudwatchLogs(value: Boolean): Self = StObject.set(x, "SupportsLogExportsToCloudwatchLogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsGlobalDatabases(value: Boolean): Self = this.set("SupportsGlobalDatabases", value.asInstanceOf[js.Any])
+    def setSupportsLogExportsToCloudwatchLogsUndefined: Self = StObject.set(x, "SupportsLogExportsToCloudwatchLogs", js.undefined)
     
     @scala.inline
-    def deleteSupportsGlobalDatabases: Self = this.set("SupportsGlobalDatabases", js.undefined)
+    def setSupportsParallelQuery(value: Boolean): Self = StObject.set(x, "SupportsParallelQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsLogExportsToCloudwatchLogs(value: Boolean): Self = this.set("SupportsLogExportsToCloudwatchLogs", value.asInstanceOf[js.Any])
+    def setSupportsParallelQueryUndefined: Self = StObject.set(x, "SupportsParallelQuery", js.undefined)
     
     @scala.inline
-    def deleteSupportsLogExportsToCloudwatchLogs: Self = this.set("SupportsLogExportsToCloudwatchLogs", js.undefined)
+    def setSupportsReadReplica(value: Boolean): Self = StObject.set(x, "SupportsReadReplica", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsParallelQuery(value: Boolean): Self = this.set("SupportsParallelQuery", value.asInstanceOf[js.Any])
+    def setSupportsReadReplicaUndefined: Self = StObject.set(x, "SupportsReadReplica", js.undefined)
     
     @scala.inline
-    def deleteSupportsParallelQuery: Self = this.set("SupportsParallelQuery", js.undefined)
+    def setValidUpgradeTarget(value: ValidUpgradeTargetList): Self = StObject.set(x, "ValidUpgradeTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsReadReplica(value: Boolean): Self = this.set("SupportsReadReplica", value.asInstanceOf[js.Any])
+    def setValidUpgradeTargetUndefined: Self = StObject.set(x, "ValidUpgradeTarget", js.undefined)
     
     @scala.inline
-    def deleteSupportsReadReplica: Self = this.set("SupportsReadReplica", js.undefined)
-    
-    @scala.inline
-    def setValidUpgradeTargetVarargs(value: UpgradeTarget*): Self = this.set("ValidUpgradeTarget", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidUpgradeTarget(value: ValidUpgradeTargetList): Self = this.set("ValidUpgradeTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidUpgradeTarget: Self = this.set("ValidUpgradeTarget", js.undefined)
+    def setValidUpgradeTargetVarargs(value: UpgradeTarget*): Self = StObject.set(x, "ValidUpgradeTarget", js.Array(value :_*))
   }
 }

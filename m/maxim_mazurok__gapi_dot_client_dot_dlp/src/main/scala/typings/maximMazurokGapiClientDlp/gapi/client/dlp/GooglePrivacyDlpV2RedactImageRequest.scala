@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2RedactImageRequest extends js.Object {
+trait GooglePrivacyDlpV2RedactImageRequest extends StObject {
   
   /** The content must be PNG, JPEG, SVG or BMP. */
   var byteItem: js.UndefOr[GooglePrivacyDlpV2ByteContentItem] = js.native
@@ -31,51 +32,39 @@ object GooglePrivacyDlpV2RedactImageRequest {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2RedactImageRequestOps[Self <: GooglePrivacyDlpV2RedactImageRequest] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2RedactImageRequestMutableBuilder[Self <: GooglePrivacyDlpV2RedactImageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setByteItem(value: GooglePrivacyDlpV2ByteContentItem): Self = StObject.set(x, "byteItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setByteItemUndefined: Self = StObject.set(x, "byteItem", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageRedactionConfigs(value: js.Array[GooglePrivacyDlpV2ImageRedactionConfig]): Self = StObject.set(x, "imageRedactionConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByteItem(value: GooglePrivacyDlpV2ByteContentItem): Self = this.set("byteItem", value.asInstanceOf[js.Any])
+    def setImageRedactionConfigsUndefined: Self = StObject.set(x, "imageRedactionConfigs", js.undefined)
     
     @scala.inline
-    def deleteByteItem: Self = this.set("byteItem", js.undefined)
+    def setImageRedactionConfigsVarargs(value: GooglePrivacyDlpV2ImageRedactionConfig*): Self = StObject.set(x, "imageRedactionConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setImageRedactionConfigsVarargs(value: GooglePrivacyDlpV2ImageRedactionConfig*): Self = this.set("imageRedactionConfigs", js.Array(value :_*))
+    def setIncludeFindings(value: Boolean): Self = StObject.set(x, "includeFindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageRedactionConfigs(value: js.Array[GooglePrivacyDlpV2ImageRedactionConfig]): Self = this.set("imageRedactionConfigs", value.asInstanceOf[js.Any])
+    def setIncludeFindingsUndefined: Self = StObject.set(x, "includeFindings", js.undefined)
     
     @scala.inline
-    def deleteImageRedactionConfigs: Self = this.set("imageRedactionConfigs", js.undefined)
+    def setInspectConfig(value: GooglePrivacyDlpV2InspectConfig): Self = StObject.set(x, "inspectConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeFindings(value: Boolean): Self = this.set("includeFindings", value.asInstanceOf[js.Any])
+    def setInspectConfigUndefined: Self = StObject.set(x, "inspectConfig", js.undefined)
     
     @scala.inline
-    def deleteIncludeFindings: Self = this.set("includeFindings", js.undefined)
+    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInspectConfig(value: GooglePrivacyDlpV2InspectConfig): Self = this.set("inspectConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInspectConfig: Self = this.set("inspectConfig", js.undefined)
-    
-    @scala.inline
-    def setLocationId(value: String): Self = this.set("locationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocationId: Self = this.set("locationId", js.undefined)
+    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
   }
 }

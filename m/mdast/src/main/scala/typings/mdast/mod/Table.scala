@@ -1,6 +1,7 @@
 package typings.mdast.mod
 
 import typings.mdast.mdastStrings.table
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,36 +29,24 @@ object Table {
   }
   
   @scala.inline
-  implicit class TableOps[Self <: Table] (val x: Self) extends AnyVal {
+  implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: js.Array[AlignType]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlignVarargs(value: AlignType*): Self = StObject.set(x, "align", js.Array(value :_*))
     
     @scala.inline
-    def setChildrenVarargs(value: TableContent*): Self = this.set("children", js.Array(value :_*))
+    def setChildren(value: js.Array[TableContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Array[TableContent]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setChildrenVarargs(value: TableContent*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: table): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAlignVarargs(value: AlignType*): Self = this.set("align", js.Array(value :_*))
-    
-    @scala.inline
-    def setAlign(value: js.Array[AlignType]): Self = this.set("align", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setType(value: table): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

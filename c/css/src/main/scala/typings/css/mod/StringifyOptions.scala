@@ -1,11 +1,12 @@
 package typings.css.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StringifyOptions extends js.Object {
+trait StringifyOptions extends StObject {
   
   /** Omit comments and extraneous whitespace. */
   var compress: js.UndefOr[Boolean] = js.native
@@ -36,42 +37,30 @@ object StringifyOptions {
   }
   
   @scala.inline
-  implicit class StringifyOptionsOps[Self <: StringifyOptions] (val x: Self) extends AnyVal {
+  implicit class StringifyOptionsMutableBuilder[Self <: StringifyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompress(value: Boolean): Self = this.set("compress", value.asInstanceOf[js.Any])
+    def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
     
     @scala.inline
-    def deleteCompress: Self = this.set("compress", js.undefined)
+    def setInputSourcemaps(value: Boolean): Self = StObject.set(x, "inputSourcemaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndent(value: String): Self = this.set("indent", value.asInstanceOf[js.Any])
+    def setInputSourcemapsUndefined: Self = StObject.set(x, "inputSourcemaps", js.undefined)
     
     @scala.inline
-    def deleteIndent: Self = this.set("indent", js.undefined)
+    def setSourcemap(value: String): Self = StObject.set(x, "sourcemap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputSourcemaps(value: Boolean): Self = this.set("inputSourcemaps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputSourcemaps: Self = this.set("inputSourcemaps", js.undefined)
-    
-    @scala.inline
-    def setSourcemap(value: String): Self = this.set("sourcemap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourcemap: Self = this.set("sourcemap", js.undefined)
+    def setSourcemapUndefined: Self = StObject.set(x, "sourcemap", js.undefined)
   }
 }

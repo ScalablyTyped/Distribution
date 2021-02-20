@@ -1,11 +1,12 @@
 package typings.lineReader
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LineReaderOptions extends js.Object {
+trait LineReaderOptions extends StObject {
   
   var bufferSize: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object LineReaderOptions {
   }
   
   @scala.inline
-  implicit class LineReaderOptionsOps[Self <: LineReaderOptions] (val x: Self) extends AnyVal {
+  implicit class LineReaderOptionsMutableBuilder[Self <: LineReaderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBufferSize(value: Double): Self = this.set("bufferSize", value.asInstanceOf[js.Any])
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def deleteBufferSize: Self = this.set("bufferSize", js.undefined)
+    def setSeparator(value: js.Any): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
-    
-    @scala.inline
-    def setSeparator(value: js.Any): Self = this.set("separator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeparator: Self = this.set("separator", js.undefined)
+    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
   }
 }

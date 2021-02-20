@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FleetAttributes extends js.Object {
+trait FleetAttributes extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) associated with the GameLift build resource that is deployed on instances in this fleet. In a GameLift build ARN, the resource ID matches the BuildId value.
@@ -131,165 +132,153 @@ object FleetAttributes {
   }
   
   @scala.inline
-  implicit class FleetAttributesOps[Self <: FleetAttributes] (val x: Self) extends AnyVal {
+  implicit class FleetAttributesMutableBuilder[Self <: FleetAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuildArn(value: BuildArn): Self = StObject.set(x, "BuildArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuildArnUndefined: Self = StObject.set(x, "BuildArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuildId(value: BuildId): Self = StObject.set(x, "BuildId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildArn(value: BuildArn): Self = this.set("BuildArn", value.asInstanceOf[js.Any])
+    def setBuildIdUndefined: Self = StObject.set(x, "BuildId", js.undefined)
     
     @scala.inline
-    def deleteBuildArn: Self = this.set("BuildArn", js.undefined)
+    def setCertificateConfiguration(value: CertificateConfiguration): Self = StObject.set(x, "CertificateConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildId(value: BuildId): Self = this.set("BuildId", value.asInstanceOf[js.Any])
+    def setCertificateConfigurationUndefined: Self = StObject.set(x, "CertificateConfiguration", js.undefined)
     
     @scala.inline
-    def deleteBuildId: Self = this.set("BuildId", js.undefined)
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateConfiguration(value: CertificateConfiguration): Self = this.set("CertificateConfiguration", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteCertificateConfiguration: Self = this.set("CertificateConfiguration", js.undefined)
+    def setDescription(value: NonZeroAndMaxString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: NonZeroAndMaxString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setFleetArnUndefined: Self = StObject.set(x, "FleetArn", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetArn(value: FleetArn): Self = this.set("FleetArn", value.asInstanceOf[js.Any])
+    def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
     
     @scala.inline
-    def deleteFleetArn: Self = this.set("FleetArn", js.undefined)
+    def setFleetType(value: FleetType): Self = StObject.set(x, "FleetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetId(value: FleetId): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    def setFleetTypeUndefined: Self = StObject.set(x, "FleetType", js.undefined)
     
     @scala.inline
-    def deleteFleetId: Self = this.set("FleetId", js.undefined)
+    def setInstanceRoleArn(value: NonEmptyString): Self = StObject.set(x, "InstanceRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetType(value: FleetType): Self = this.set("FleetType", value.asInstanceOf[js.Any])
+    def setInstanceRoleArnUndefined: Self = StObject.set(x, "InstanceRoleArn", js.undefined)
     
     @scala.inline
-    def deleteFleetType: Self = this.set("FleetType", js.undefined)
+    def setInstanceType(value: EC2InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceRoleArn(value: NonEmptyString): Self = this.set("InstanceRoleArn", value.asInstanceOf[js.Any])
+    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
     @scala.inline
-    def deleteInstanceRoleArn: Self = this.set("InstanceRoleArn", js.undefined)
+    def setLogPaths(value: StringList): Self = StObject.set(x, "LogPaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: EC2InstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    def setLogPathsUndefined: Self = StObject.set(x, "LogPaths", js.undefined)
     
     @scala.inline
-    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    def setLogPathsVarargs(value: NonZeroAndMaxString*): Self = StObject.set(x, "LogPaths", js.Array(value :_*))
     
     @scala.inline
-    def setLogPathsVarargs(value: NonZeroAndMaxString*): Self = this.set("LogPaths", js.Array(value :_*))
+    def setMetricGroups(value: MetricGroupList): Self = StObject.set(x, "MetricGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogPaths(value: StringList): Self = this.set("LogPaths", value.asInstanceOf[js.Any])
+    def setMetricGroupsUndefined: Self = StObject.set(x, "MetricGroups", js.undefined)
     
     @scala.inline
-    def deleteLogPaths: Self = this.set("LogPaths", js.undefined)
+    def setMetricGroupsVarargs(value: MetricGroup*): Self = StObject.set(x, "MetricGroups", js.Array(value :_*))
     
     @scala.inline
-    def setMetricGroupsVarargs(value: MetricGroup*): Self = this.set("MetricGroups", js.Array(value :_*))
+    def setName(value: NonZeroAndMaxString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricGroups(value: MetricGroupList): Self = this.set("MetricGroups", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteMetricGroups: Self = this.set("MetricGroups", js.undefined)
+    def setNewGameSessionProtectionPolicy(value: ProtectionPolicy): Self = StObject.set(x, "NewGameSessionProtectionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NonZeroAndMaxString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setNewGameSessionProtectionPolicyUndefined: Self = StObject.set(x, "NewGameSessionProtectionPolicy", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewGameSessionProtectionPolicy(value: ProtectionPolicy): Self = this.set("NewGameSessionProtectionPolicy", value.asInstanceOf[js.Any])
+    def setOperatingSystemUndefined: Self = StObject.set(x, "OperatingSystem", js.undefined)
     
     @scala.inline
-    def deleteNewGameSessionProtectionPolicy: Self = this.set("NewGameSessionProtectionPolicy", js.undefined)
+    def setResourceCreationLimitPolicy(value: ResourceCreationLimitPolicy): Self = StObject.set(x, "ResourceCreationLimitPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperatingSystem(value: OperatingSystem): Self = this.set("OperatingSystem", value.asInstanceOf[js.Any])
+    def setResourceCreationLimitPolicyUndefined: Self = StObject.set(x, "ResourceCreationLimitPolicy", js.undefined)
     
     @scala.inline
-    def deleteOperatingSystem: Self = this.set("OperatingSystem", js.undefined)
+    def setScriptArn(value: ScriptArn): Self = StObject.set(x, "ScriptArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceCreationLimitPolicy(value: ResourceCreationLimitPolicy): Self = this.set("ResourceCreationLimitPolicy", value.asInstanceOf[js.Any])
+    def setScriptArnUndefined: Self = StObject.set(x, "ScriptArn", js.undefined)
     
     @scala.inline
-    def deleteResourceCreationLimitPolicy: Self = this.set("ResourceCreationLimitPolicy", js.undefined)
+    def setScriptId(value: ScriptId): Self = StObject.set(x, "ScriptId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptArn(value: ScriptArn): Self = this.set("ScriptArn", value.asInstanceOf[js.Any])
+    def setScriptIdUndefined: Self = StObject.set(x, "ScriptId", js.undefined)
     
     @scala.inline
-    def deleteScriptArn: Self = this.set("ScriptArn", js.undefined)
+    def setServerLaunchParameters(value: NonZeroAndMaxString): Self = StObject.set(x, "ServerLaunchParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptId(value: ScriptId): Self = this.set("ScriptId", value.asInstanceOf[js.Any])
+    def setServerLaunchParametersUndefined: Self = StObject.set(x, "ServerLaunchParameters", js.undefined)
     
     @scala.inline
-    def deleteScriptId: Self = this.set("ScriptId", js.undefined)
+    def setServerLaunchPath(value: NonZeroAndMaxString): Self = StObject.set(x, "ServerLaunchPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerLaunchParameters(value: NonZeroAndMaxString): Self = this.set("ServerLaunchParameters", value.asInstanceOf[js.Any])
+    def setServerLaunchPathUndefined: Self = StObject.set(x, "ServerLaunchPath", js.undefined)
     
     @scala.inline
-    def deleteServerLaunchParameters: Self = this.set("ServerLaunchParameters", js.undefined)
+    def setStatus(value: FleetStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerLaunchPath(value: NonZeroAndMaxString): Self = this.set("ServerLaunchPath", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteServerLaunchPath: Self = this.set("ServerLaunchPath", js.undefined)
+    def setStoppedActions(value: FleetActionList): Self = StObject.set(x, "StoppedActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: FleetStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStoppedActionsUndefined: Self = StObject.set(x, "StoppedActions", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStoppedActionsVarargs(value: FleetAction*): Self = StObject.set(x, "StoppedActions", js.Array(value :_*))
     
     @scala.inline
-    def setStoppedActionsVarargs(value: FleetAction*): Self = this.set("StoppedActions", js.Array(value :_*))
+    def setTerminationTime(value: Timestamp): Self = StObject.set(x, "TerminationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoppedActions(value: FleetActionList): Self = this.set("StoppedActions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoppedActions: Self = this.set("StoppedActions", js.undefined)
-    
-    @scala.inline
-    def setTerminationTime(value: Timestamp): Self = this.set("TerminationTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerminationTime: Self = this.set("TerminationTime", js.undefined)
+    def setTerminationTimeUndefined: Self = StObject.set(x, "TerminationTime", js.undefined)
   }
 }

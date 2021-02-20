@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Foundation.Metadata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class ApiInformation ()
   extends typings.winrtUwp.Windows.Foundation.Metadata.ApiInformation
-/* static members */
-@JSGlobal("Windows.Foundation.Metadata.ApiInformation")
-@js.native
-object ApiInformation extends js.Object {
+object ApiInformation {
   
   /**
     * Returns true or false to indicate whether the API contract with the specified name and major version number is present.
@@ -20,6 +18,9 @@ object ApiInformation extends js.Object {
     * @param majorVersion The major version number of the API contract.
     * @return True if the specified API contract is present; otherwise, false.
     */
+  /* static member */
+  @JSGlobal("Windows.Foundation.Metadata.ApiInformation.isApiContractPresent")
+  @js.native
   def isApiContractPresent(contractName: String, majorVersion: Double): Boolean = js.native
   /**
     * Returns true or false to indicate whether the API contract with the specified name and major and minor version number is present.
@@ -28,6 +29,9 @@ object ApiInformation extends js.Object {
     * @param minorVersion The minor version number of the API contract.
     * @return True if the specified API contract is present; otherwise, false.
     */
+  /* static member */
+  @JSGlobal("Windows.Foundation.Metadata.ApiInformation.isApiContractPresent")
+  @js.native
   def isApiContractPresent(contractName: String, majorVersion: Double, minorVersion: Double): Boolean = js.native
   
   /**
@@ -36,6 +40,9 @@ object ApiInformation extends js.Object {
     * @param valueName The name of the constant.
     * @return True if the specified constant is present; otherwise, false.
     */
+  /* static member */
+  @JSGlobal("Windows.Foundation.Metadata.ApiInformation.isEnumNamedValuePresent")
+  @js.native
   def isEnumNamedValuePresent(enumTypeName: String, valueName: String): Boolean = js.native
   
   /**
@@ -44,6 +51,9 @@ object ApiInformation extends js.Object {
     * @param eventName The name of the event.
     * @return True if the specified event is present for the type; otherwise, false.
     */
+  /* static member */
+  @JSGlobal("Windows.Foundation.Metadata.ApiInformation.isEventPresent")
+  @js.native
   def isEventPresent(typeName: String, eventName: String): Boolean = js.native
   
   /**
@@ -52,6 +62,9 @@ object ApiInformation extends js.Object {
     * @param methodName The name of the method.
     * @return True if the specified method is present for the type; otherwise, false.
     */
+  /* static member */
+  @JSGlobal("Windows.Foundation.Metadata.ApiInformation.isMethodPresent")
+  @js.native
   def isMethodPresent(typeName: String, methodName: String): Boolean = js.native
   /**
     * Returns true or false to indicate whether a specified method overload with the specified number of input parameters is present for a specified type.
@@ -60,6 +73,9 @@ object ApiInformation extends js.Object {
     * @param inputParameterCount The number of input parameters for the overload.
     * @return True if the specified method is present for the type; otherwise, false.
     */
+  /* static member */
+  @JSGlobal("Windows.Foundation.Metadata.ApiInformation.isMethodPresent")
+  @js.native
   def isMethodPresent(typeName: String, methodName: String, inputParameterCount: Double): Boolean = js.native
   
   /**
@@ -68,6 +84,9 @@ object ApiInformation extends js.Object {
     * @param propertyName The name of the property.
     * @return True if the specified property is present for the type; otherwise, false.
     */
+  /* static member */
+  @JSGlobal("Windows.Foundation.Metadata.ApiInformation.isPropertyPresent")
+  @js.native
   def isPropertyPresent(typeName: String, propertyName: String): Boolean = js.native
   
   /**
@@ -76,6 +95,9 @@ object ApiInformation extends js.Object {
     * @param propertyName The name of the property.
     * @return True if the specified property is present for the type; otherwise, false.
     */
+  /* static member */
+  @JSGlobal("Windows.Foundation.Metadata.ApiInformation.isReadOnlyPropertyPresent")
+  @js.native
   def isReadOnlyPropertyPresent(typeName: String, propertyName: String): Boolean = js.native
   
   /**
@@ -83,6 +105,9 @@ object ApiInformation extends js.Object {
     * @param typeName The namespace-qualified name of the type.
     * @return True if the specified type is present; otherwise, false.
     */
+  /* static member */
+  @JSGlobal("Windows.Foundation.Metadata.ApiInformation.isTypePresent")
+  @js.native
   def isTypePresent(typeName: String): Boolean = js.native
   
   /**
@@ -91,5 +116,8 @@ object ApiInformation extends js.Object {
     * @param propertyName The name of the property.
     * @return True if the specified property is present for the type; otherwise, false.
     */
+  /* static member */
+  @JSGlobal("Windows.Foundation.Metadata.ApiInformation.isWriteablePropertyPresent")
+  @js.native
   def isWriteablePropertyPresent(typeName: String, propertyName: String): Boolean = js.native
 }

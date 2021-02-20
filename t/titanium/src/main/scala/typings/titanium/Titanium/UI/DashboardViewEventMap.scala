@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.UI
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,81 +82,69 @@ object DashboardViewEventMap {
   }
   
   @scala.inline
-  implicit class DashboardViewEventMapOps[Self <: DashboardViewEventMap] (val x: Self) extends AnyVal {
+  implicit class DashboardViewEventMapMutableBuilder[Self <: DashboardViewEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: DashboardViewClickEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommit(value: DashboardViewCommitEvent): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDblclick(value: DashboardViewDblclickEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: DashboardViewClickEvent): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setDelete(value: DashboardViewDeleteEvent): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommit(value: DashboardViewCommitEvent): Self = this.set("commit", value.asInstanceOf[js.Any])
+    def setDoubletap(value: DashboardViewDoubletapEvent): Self = StObject.set(x, "doubletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDblclick(value: DashboardViewDblclickEvent): Self = this.set("dblclick", value.asInstanceOf[js.Any])
+    def setDragend(value: DashboardViewDragendEvent): Self = StObject.set(x, "dragend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: DashboardViewDeleteEvent): Self = this.set("delete", value.asInstanceOf[js.Any])
+    def setDragstart(value: DashboardViewDragstartEvent): Self = StObject.set(x, "dragstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubletap(value: DashboardViewDoubletapEvent): Self = this.set("doubletap", value.asInstanceOf[js.Any])
+    def setEdit(value: DashboardViewEditEvent): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragend(value: DashboardViewDragendEvent): Self = this.set("dragend", value.asInstanceOf[js.Any])
+    def setKeypressed(value: DashboardViewKeypressedEvent): Self = StObject.set(x, "keypressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragstart(value: DashboardViewDragstartEvent): Self = this.set("dragstart", value.asInstanceOf[js.Any])
+    def setLongpress(value: DashboardViewLongpressEvent): Self = StObject.set(x, "longpress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdit(value: DashboardViewEditEvent): Self = this.set("edit", value.asInstanceOf[js.Any])
+    def setMove(value: DashboardViewMoveEvent): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeypressed(value: DashboardViewKeypressedEvent): Self = this.set("keypressed", value.asInstanceOf[js.Any])
+    def setPagechanged(value: DashboardViewPagechangedEvent): Self = StObject.set(x, "pagechanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongpress(value: DashboardViewLongpressEvent): Self = this.set("longpress", value.asInstanceOf[js.Any])
+    def setPinch(value: DashboardViewPinchEvent): Self = StObject.set(x, "pinch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMove(value: DashboardViewMoveEvent): Self = this.set("move", value.asInstanceOf[js.Any])
+    def setPostlayout(value: DashboardViewPostlayoutEvent): Self = StObject.set(x, "postlayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagechanged(value: DashboardViewPagechangedEvent): Self = this.set("pagechanged", value.asInstanceOf[js.Any])
+    def setSingletap(value: DashboardViewSingletapEvent): Self = StObject.set(x, "singletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinch(value: DashboardViewPinchEvent): Self = this.set("pinch", value.asInstanceOf[js.Any])
+    def setSwipe(value: DashboardViewSwipeEvent): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostlayout(value: DashboardViewPostlayoutEvent): Self = this.set("postlayout", value.asInstanceOf[js.Any])
+    def setTouchcancel(value: DashboardViewTouchcancelEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingletap(value: DashboardViewSingletapEvent): Self = this.set("singletap", value.asInstanceOf[js.Any])
+    def setTouchend(value: DashboardViewTouchendEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipe(value: DashboardViewSwipeEvent): Self = this.set("swipe", value.asInstanceOf[js.Any])
+    def setTouchmove(value: DashboardViewTouchmoveEvent): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchcancel(value: DashboardViewTouchcancelEvent): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
+    def setTouchstart(value: DashboardViewTouchstartEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchend(value: DashboardViewTouchendEvent): Self = this.set("touchend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchmove(value: DashboardViewTouchmoveEvent): Self = this.set("touchmove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchstart(value: DashboardViewTouchstartEvent): Self = this.set("touchstart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwofingertap(value: DashboardViewTwofingertapEvent): Self = this.set("twofingertap", value.asInstanceOf[js.Any])
+    def setTwofingertap(value: DashboardViewTwofingertapEvent): Self = StObject.set(x, "twofingertap", value.asInstanceOf[js.Any])
   }
 }

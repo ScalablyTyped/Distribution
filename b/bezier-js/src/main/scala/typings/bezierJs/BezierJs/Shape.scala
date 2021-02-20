@@ -1,11 +1,12 @@
 package typings.bezierJs.BezierJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Shape extends js.Object {
+trait Shape extends StObject {
   
   var back: Bezier = js.native
   
@@ -35,36 +36,24 @@ object Shape {
   }
   
   @scala.inline
-  implicit class ShapeOps[Self <: Shape] (val x: Self) extends AnyVal {
+  implicit class ShapeMutableBuilder[Self <: Shape] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBack(value: Bezier): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBbox(value: BBox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndcap(value: BezierCap): Self = StObject.set(x, "endcap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBack(value: Bezier): Self = this.set("back", value.asInstanceOf[js.Any])
+    def setForward(value: Bezier): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBbox(value: BBox): Self = this.set("bbox", value.asInstanceOf[js.Any])
+    def setIntersections(value: Shape => js.Array[js.Array[Double | String]]): Self = StObject.set(x, "intersections", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEndcap(value: BezierCap): Self = this.set("endcap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setForward(value: Bezier): Self = this.set("forward", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIntersections(value: Shape => js.Array[js.Array[Double | String]]): Self = this.set("intersections", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStartcap(value: BezierCap): Self = this.set("startcap", value.asInstanceOf[js.Any])
+    def setStartcap(value: BezierCap): Self = StObject.set(x, "startcap", value.asInstanceOf[js.Any])
   }
 }

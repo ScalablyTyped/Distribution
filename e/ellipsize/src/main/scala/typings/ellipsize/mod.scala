@@ -1,15 +1,18 @@
 package typings.ellipsize
 
 import typings.ellipsize.anon.Chars
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ellipsize", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("ellipsize", JSImport.Namespace)
+  @js.native
   def apply(): String = js.native
+  @JSImport("ellipsize", JSImport.Namespace)
+  @js.native
   def apply(
     /**
     * text to ellipsize.
@@ -24,6 +27,8 @@ object mod extends js.Object {
     */
   options: Chars
   ): String = js.native
+  @JSImport("ellipsize", JSImport.Namespace)
+  @js.native
   def apply(
     /**
     * text to ellipsize.
@@ -34,6 +39,8 @@ object mod extends js.Object {
     */
   maxLength: Double
   ): String = js.native
+  @JSImport("ellipsize", JSImport.Namespace)
+  @js.native
   def apply(
     /**
     * text to ellipsize.
@@ -48,10 +55,14 @@ object mod extends js.Object {
     */
   options: Chars
   ): String = js.native
+  @JSImport("ellipsize", JSImport.Namespace)
+  @js.native
   def apply(/**
     * text to ellipsize.
     */
   text: String): String = js.native
+  @JSImport("ellipsize", JSImport.Namespace)
+  @js.native
   def apply(
     /**
     * text to ellipsize.
@@ -66,6 +77,8 @@ object mod extends js.Object {
     */
   options: Chars
   ): String = js.native
+  @JSImport("ellipsize", JSImport.Namespace)
+  @js.native
   def apply(
     /**
     * text to ellipsize.
@@ -76,6 +89,8 @@ object mod extends js.Object {
     */
   maxLength: Double
   ): String = js.native
+  @JSImport("ellipsize", JSImport.Namespace)
+  @js.native
   def apply(
     /**
     * text to ellipsize.

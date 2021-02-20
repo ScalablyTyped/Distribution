@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LinkDefaults extends js.Object {
+trait LinkDefaults extends StObject {
   
   var linkDefaults: LabelLayoutPath = js.native
   
@@ -32,33 +33,21 @@ object LinkDefaults {
   }
   
   @scala.inline
-  implicit class LinkDefaultsOps[Self <: LinkDefaults] (val x: Self) extends AnyVal {
+  implicit class LinkDefaultsMutableBuilder[Self <: LinkDefaults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLinkDefaults(value: LabelLayoutPath): Self = StObject.set(x, "linkDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLinks(value: CoordinateSpace): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodeDefaults(value: `4`): Self = StObject.set(x, "nodeDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkDefaults(value: LabelLayoutPath): Self = this.set("linkDefaults", value.asInstanceOf[js.Any])
+    def setNodes(value: LabelLayout): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinks(value: CoordinateSpace): Self = this.set("links", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNodeDefaults(value: `4`): Self = this.set("nodeDefaults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNodes(value: LabelLayout): Self = this.set("nodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewport(value: H): Self = this.set("viewport", value.asInstanceOf[js.Any])
+    def setViewport(value: H): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
   }
 }

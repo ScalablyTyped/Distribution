@@ -2,16 +2,16 @@ package typings.nodegit
 
 import typings.nodegit.convenientHunkMod.ConvenientHunk
 import typings.nodegit.diffDeltaMod.DiffDelta
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/apply-options", JSImport.Namespace)
-@js.native
-object applyOptionsMod extends js.Object {
+object applyOptionsMod {
   
+  @JSImport("nodegit/apply-options", "ApplyOptions")
   @js.native
-  class ApplyOptions () extends js.Object {
+  class ApplyOptions () extends StObject {
     
     var deltaCb: js.UndefOr[js.Function2[/* delta */ DiffDelta, /* payload */ js.Any, Double]] = js.native
     

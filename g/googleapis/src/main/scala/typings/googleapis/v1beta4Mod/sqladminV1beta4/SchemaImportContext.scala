@@ -1,6 +1,7 @@
 package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import typings.googleapis.anon.Columns
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Database instance import context.
   */
 @js.native
-trait SchemaImportContext extends js.Object {
+trait SchemaImportContext extends StObject {
   
   /**
     * Options for importing data as CSV.
@@ -57,54 +58,42 @@ object SchemaImportContext {
   }
   
   @scala.inline
-  implicit class SchemaImportContextOps[Self <: SchemaImportContext] (val x: Self) extends AnyVal {
+  implicit class SchemaImportContextMutableBuilder[Self <: SchemaImportContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCsvImportOptions(value: Columns): Self = StObject.set(x, "csvImportOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCsvImportOptionsUndefined: Self = StObject.set(x, "csvImportOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCsvImportOptions(value: Columns): Self = this.set("csvImportOptions", value.asInstanceOf[js.Any])
+    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
     @scala.inline
-    def deleteCsvImportOptions: Self = this.set("csvImportOptions", js.undefined)
+    def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabase(value: String): Self = this.set("database", value.asInstanceOf[js.Any])
+    def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
     
     @scala.inline
-    def deleteDatabase: Self = this.set("database", js.undefined)
+    def setImportUser(value: String): Self = StObject.set(x, "importUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileType(value: String): Self = this.set("fileType", value.asInstanceOf[js.Any])
+    def setImportUserUndefined: Self = StObject.set(x, "importUser", js.undefined)
     
     @scala.inline
-    def deleteFileType: Self = this.set("fileType", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportUser(value: String): Self = this.set("importUser", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteImportUser: Self = this.set("importUser", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

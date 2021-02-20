@@ -1,11 +1,12 @@
 package typings.surveyKnockout.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisabledLabel extends js.Object {
+trait DisabledLabel extends StObject {
   
   var checkedPath: String = js.native
   
@@ -65,66 +66,54 @@ object DisabledLabel {
   }
   
   @scala.inline
-  implicit class DisabledLabelOps[Self <: DisabledLabel] (val x: Self) extends AnyVal {
+  implicit class DisabledLabelMutableBuilder[Self <: DisabledLabel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckedPath(value: String): Self = StObject.set(x, "checkedPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControl(value: String): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabledLabel(value: String): Self = StObject.set(x, "disabledLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckedPath(value: String): Self = this.set("checkedPath", value.asInstanceOf[js.Any])
+    def setIndeterminatePath(value: String): Self = StObject.set(x, "indeterminatePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControl(value: String): Self = this.set("control", value.asInstanceOf[js.Any])
+    def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledLabel(value: String): Self = this.set("disabledLabel", value.asInstanceOf[js.Any])
+    def setItemChecked(value: String): Self = StObject.set(x, "itemChecked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndeterminatePath(value: String): Self = this.set("indeterminatePath", value.asInstanceOf[js.Any])
+    def setItemDecorator(value: String): Self = StObject.set(x, "itemDecorator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: String): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setItemDisabled(value: String): Self = StObject.set(x, "itemDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemChecked(value: String): Self = this.set("itemChecked", value.asInstanceOf[js.Any])
+    def setItemIndeterminate(value: String): Self = StObject.set(x, "itemIndeterminate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemDecorator(value: String): Self = this.set("itemDecorator", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemDisabled(value: String): Self = this.set("itemDisabled", value.asInstanceOf[js.Any])
+    def setMaterialDecorator(value: String): Self = StObject.set(x, "materialDecorator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemIndeterminate(value: String): Self = this.set("itemIndeterminate", value.asInstanceOf[js.Any])
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setSlider(value: String): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaterialDecorator(value: String): Self = this.set("materialDecorator", value.asInstanceOf[js.Any])
+    def setSmall(value: String): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setSwitch(value: String): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlider(value: String): Self = this.set("slider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSmall(value: String): Self = this.set("small", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSwitch(value: String): Self = this.set("switch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUncheckedPath(value: String): Self = this.set("uncheckedPath", value.asInstanceOf[js.Any])
+    def setUncheckedPath(value: String): Self = StObject.set(x, "uncheckedPath", value.asInstanceOf[js.Any])
   }
 }

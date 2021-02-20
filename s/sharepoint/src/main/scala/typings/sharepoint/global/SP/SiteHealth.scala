@@ -1,19 +1,20 @@
 package typings.sharepoint.global.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.SiteHealth")
-@js.native
-object SiteHealth extends js.Object {
+object SiteHealth {
   
+  @JSGlobal("SP.SiteHealth.SiteHealthResult")
   @js.native
   class SiteHealthResult ()
     extends typings.sharepoint.SP.SiteHealth.SiteHealthResult
   
+  @JSGlobal("SP.SiteHealth.SiteHealthStatusType")
   @js.native
-  object SiteHealthStatusType extends js.Object {
+  object SiteHealthStatusType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.sharepoint.SP.SiteHealth.SiteHealthStatusType with Double] = js.native
@@ -25,6 +26,7 @@ object SiteHealth extends js.Object {
     /* 0 */ val passed: typings.sharepoint.SP.SiteHealth.SiteHealthStatusType.passed with Double = js.native
   }
   
+  @JSGlobal("SP.SiteHealth.SiteHealthSummary")
   @js.native
   class SiteHealthSummary ()
     extends typings.sharepoint.SP.SiteHealth.SiteHealthSummary

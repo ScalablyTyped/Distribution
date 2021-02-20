@@ -2,6 +2,7 @@ package typings.minappEnv.DB
 
 import typings.minappEnv.Array
 import typings.minappEnv.InternalSymbol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +35,7 @@ object DatabaseQueryCommand {
   def apply(
     _setFieldName: String => DatabaseLogicCommand,
     and: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand,
-    eq: js.Any => DatabaseLogicCommand,
+    eq_ : js.Any => DatabaseLogicCommand,
     fieldName: String | InternalSymbol,
     gt: js.Any => DatabaseLogicCommand,
     gte: js.Any => DatabaseLogicCommand,
@@ -47,50 +48,39 @@ object DatabaseQueryCommand {
     operator: QUERY_COMMANDS_LITERAL | String,
     or: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand
   ): DatabaseQueryCommand = {
-    val __obj = js.Dynamic.literal(_setFieldName = js.Any.fromFunction1(_setFieldName), and = js.Any.fromFunction1(and), eq = js.Any.fromFunction1(eq), fieldName = fieldName.asInstanceOf[js.Any], gt = js.Any.fromFunction1(gt), gte = js.Any.fromFunction1(gte), in = js.Any.fromFunction1(in), lt = js.Any.fromFunction1(lt), lte = js.Any.fromFunction1(lte), neq = js.Any.fromFunction1(neq), nin = js.Any.fromFunction1(nin), operands = operands.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], or = js.Any.fromFunction1(or))
+    val __obj = js.Dynamic.literal(_setFieldName = js.Any.fromFunction1(_setFieldName), and = js.Any.fromFunction1(and), fieldName = fieldName.asInstanceOf[js.Any], gt = js.Any.fromFunction1(gt), gte = js.Any.fromFunction1(gte), in = js.Any.fromFunction1(in), lt = js.Any.fromFunction1(lt), lte = js.Any.fromFunction1(lte), neq = js.Any.fromFunction1(neq), nin = js.Any.fromFunction1(nin), operands = operands.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], or = js.Any.fromFunction1(or))
+    __obj.updateDynamic("eq")(js.Any.fromFunction1(eq_))
     __obj.asInstanceOf[DatabaseQueryCommand]
   }
   
   @scala.inline
-  implicit class DatabaseQueryCommandOps[Self <: DatabaseQueryCommand] (val x: Self) extends AnyVal {
+  implicit class DatabaseQueryCommandMutableBuilder[Self <: DatabaseQueryCommand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEq_(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "eq", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGt(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "gt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGte(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "gte", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEq(value: js.Any => DatabaseLogicCommand): Self = this.set("eq", js.Any.fromFunction1(value))
+    def setIn(value: Array[_] => DatabaseLogicCommand): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGt(value: js.Any => DatabaseLogicCommand): Self = this.set("gt", js.Any.fromFunction1(value))
+    def setLt(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "lt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGte(value: js.Any => DatabaseLogicCommand): Self = this.set("gte", js.Any.fromFunction1(value))
+    def setLte(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "lte", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIn(value: Array[_] => DatabaseLogicCommand): Self = this.set("in", js.Any.fromFunction1(value))
+    def setNeq(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "neq", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLt(value: js.Any => DatabaseLogicCommand): Self = this.set("lt", js.Any.fromFunction1(value))
+    def setNin(value: Array[_] => DatabaseLogicCommand): Self = StObject.set(x, "nin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLte(value: js.Any => DatabaseLogicCommand): Self = this.set("lte", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNeq(value: js.Any => DatabaseLogicCommand): Self = this.set("neq", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNin(value: Array[_] => DatabaseLogicCommand): Self = this.set("nin", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOperator(value: QUERY_COMMANDS_LITERAL | String): Self = this.set("operator", value.asInstanceOf[js.Any])
+    def setOperator(value: QUERY_COMMANDS_LITERAL | String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
   }
 }

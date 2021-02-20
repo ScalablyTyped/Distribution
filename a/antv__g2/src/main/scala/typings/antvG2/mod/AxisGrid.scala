@@ -3,12 +3,13 @@ package typings.antvG2.mod
 import typings.antvG2.antvG2Strings.center
 import typings.antvG2.antvG2Strings.polygon
 import typings.antvG2.mod.Styles.line
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AxisGrid extends js.Object {
+trait AxisGrid extends StObject {
   
   /**
     * 声明网格顶点从两个刻度中间开始，默认从刻度点开始
@@ -50,54 +51,42 @@ object AxisGrid {
   }
   
   @scala.inline
-  implicit class AxisGridOps[Self <: AxisGrid] (val x: Self) extends AnyVal {
+  implicit class AxisGridMutableBuilder[Self <: AxisGrid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlternateColor(value: String | (js.Tuple2[String, String])): Self = StObject.set(x, "alternateColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: center): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setAlternateColorUndefined: Self = StObject.set(x, "alternateColor", js.undefined)
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setHideFirstLine(value: Boolean): Self = StObject.set(x, "hideFirstLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternateColor(value: String | (js.Tuple2[String, String])): Self = this.set("alternateColor", value.asInstanceOf[js.Any])
+    def setHideFirstLineUndefined: Self = StObject.set(x, "hideFirstLine", js.undefined)
     
     @scala.inline
-    def deleteAlternateColor: Self = this.set("alternateColor", js.undefined)
+    def setHideLastLine(value: Boolean): Self = StObject.set(x, "hideLastLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideFirstLine(value: Boolean): Self = this.set("hideFirstLine", value.asInstanceOf[js.Any])
+    def setHideLastLineUndefined: Self = StObject.set(x, "hideLastLine", js.undefined)
     
     @scala.inline
-    def deleteHideFirstLine: Self = this.set("hideFirstLine", js.undefined)
+    def setLineStyle(value: line): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideLastLine(value: Boolean): Self = this.set("hideLastLine", value.asInstanceOf[js.Any])
+    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
     
     @scala.inline
-    def deleteHideLastLine: Self = this.set("hideLastLine", js.undefined)
+    def setType(value: typings.antvG2.antvG2Strings.line | polygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineStyle(value: line): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
-    
-    @scala.inline
-    def setType(value: typings.antvG2.antvG2Strings.line | polygon): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

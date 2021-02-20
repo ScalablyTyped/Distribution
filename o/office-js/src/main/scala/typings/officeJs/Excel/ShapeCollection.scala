@@ -9,6 +9,7 @@ import typings.officeJs.OfficeExtension.LoadOption
 import typings.officeJs.officeJsStrings.Curve
 import typings.officeJs.officeJsStrings.Elbow
 import typings.officeJs.officeJsStrings.Straight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

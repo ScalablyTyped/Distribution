@@ -11,12 +11,13 @@ import typings.maximMazurokGapiClientVision.anon.Name
 import typings.maximMazurokGapiClientVision.anon.NameOauthtoken
 import typings.maximMazurokGapiClientVision.anon.PageSize
 import typings.maximMazurokGapiClientVision.anon.ProductSetId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProductSetsResource extends js.Object {
+trait ProductSetsResource extends StObject {
   
   /**
     * Adds a Product to the specified ProductSet. If the Product is already present, no change is made. One Product can be added to at most 100 ProductSets. Possible errors: * Returns

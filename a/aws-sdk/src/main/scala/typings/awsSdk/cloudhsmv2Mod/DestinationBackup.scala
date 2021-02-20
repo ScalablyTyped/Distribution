@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudhsmv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DestinationBackup extends js.Object {
+trait DestinationBackup extends StObject {
   
   /**
     * The date and time when both the source backup was created.
@@ -36,42 +37,30 @@ object DestinationBackup {
   }
   
   @scala.inline
-  implicit class DestinationBackupOps[Self <: DestinationBackup] (val x: Self) extends AnyVal {
+  implicit class DestinationBackupMutableBuilder[Self <: DestinationBackup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTimestamp(value: Timestamp): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimestampUndefined: Self = StObject.set(x, "CreateTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceBackup(value: BackupId): Self = StObject.set(x, "SourceBackup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTimestamp(value: Timestamp): Self = this.set("CreateTimestamp", value.asInstanceOf[js.Any])
+    def setSourceBackupUndefined: Self = StObject.set(x, "SourceBackup", js.undefined)
     
     @scala.inline
-    def deleteCreateTimestamp: Self = this.set("CreateTimestamp", js.undefined)
+    def setSourceCluster(value: ClusterId): Self = StObject.set(x, "SourceCluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceBackup(value: BackupId): Self = this.set("SourceBackup", value.asInstanceOf[js.Any])
+    def setSourceClusterUndefined: Self = StObject.set(x, "SourceCluster", js.undefined)
     
     @scala.inline
-    def deleteSourceBackup: Self = this.set("SourceBackup", js.undefined)
+    def setSourceRegion(value: Region): Self = StObject.set(x, "SourceRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceCluster(value: ClusterId): Self = this.set("SourceCluster", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceCluster: Self = this.set("SourceCluster", js.undefined)
-    
-    @scala.inline
-    def setSourceRegion(value: Region): Self = this.set("SourceRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceRegion: Self = this.set("SourceRegion", js.undefined)
+    def setSourceRegionUndefined: Self = StObject.set(x, "SourceRegion", js.undefined)
   }
 }

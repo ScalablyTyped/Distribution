@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleAppsCloudidentityDevicesV1CustomAttributeValue extends js.Object {
+trait GoogleAppsCloudidentityDevicesV1CustomAttributeValue extends StObject {
   
   /** Represents a boolean value. */
   var boolValue: js.UndefOr[Boolean] = js.native
@@ -25,36 +26,24 @@ object GoogleAppsCloudidentityDevicesV1CustomAttributeValue {
   }
   
   @scala.inline
-  implicit class GoogleAppsCloudidentityDevicesV1CustomAttributeValueOps[Self <: GoogleAppsCloudidentityDevicesV1CustomAttributeValue] (val x: Self) extends AnyVal {
+  implicit class GoogleAppsCloudidentityDevicesV1CustomAttributeValueMutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1CustomAttributeValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumberValue(value: Double): Self = StObject.set(x, "numberValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoolValue(value: Boolean): Self = this.set("boolValue", value.asInstanceOf[js.Any])
+    def setNumberValueUndefined: Self = StObject.set(x, "numberValue", js.undefined)
     
     @scala.inline
-    def deleteBoolValue: Self = this.set("boolValue", js.undefined)
+    def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberValue(value: Double): Self = this.set("numberValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberValue: Self = this.set("numberValue", js.undefined)
-    
-    @scala.inline
-    def setStringValue(value: String): Self = this.set("stringValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringValue: Self = this.set("stringValue", js.undefined)
+    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
   }
 }

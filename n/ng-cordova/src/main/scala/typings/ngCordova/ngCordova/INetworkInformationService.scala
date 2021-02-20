@@ -1,11 +1,12 @@
 package typings.ngCordova.ngCordova
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait INetworkInformationService extends js.Object {
+trait INetworkInformationService extends StObject {
   
   def clearOfflineWatch(): Unit = js.native
   
@@ -32,33 +33,21 @@ object INetworkInformationService {
   }
   
   @scala.inline
-  implicit class INetworkInformationServiceOps[Self <: INetworkInformationService] (val x: Self) extends AnyVal {
+  implicit class INetworkInformationServiceMutableBuilder[Self <: INetworkInformationService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearOfflineWatch(value: () => Unit): Self = StObject.set(x, "clearOfflineWatch", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearOnlineWatch(value: () => Unit): Self = StObject.set(x, "clearOnlineWatch", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetNetwork(value: () => String): Self = StObject.set(x, "getNetwork", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearOfflineWatch(value: () => Unit): Self = this.set("clearOfflineWatch", js.Any.fromFunction0(value))
+    def setIsOffline(value: () => Boolean): Self = StObject.set(x, "isOffline", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearOnlineWatch(value: () => Unit): Self = this.set("clearOnlineWatch", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetNetwork(value: () => String): Self = this.set("getNetwork", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsOffline(value: () => Boolean): Self = this.set("isOffline", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsOnline(value: () => Boolean): Self = this.set("isOnline", js.Any.fromFunction0(value))
+    def setIsOnline(value: () => Boolean): Self = StObject.set(x, "isOnline", js.Any.fromFunction0(value))
   }
 }

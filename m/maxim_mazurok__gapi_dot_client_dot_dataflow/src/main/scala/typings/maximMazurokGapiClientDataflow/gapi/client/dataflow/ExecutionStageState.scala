@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecutionStageState extends js.Object {
+trait ExecutionStageState extends StObject {
   
   /** The time at which the stage transitioned to this state. */
   var currentStateTime: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object ExecutionStageState {
   }
   
   @scala.inline
-  implicit class ExecutionStageStateOps[Self <: ExecutionStageState] (val x: Self) extends AnyVal {
+  implicit class ExecutionStageStateMutableBuilder[Self <: ExecutionStageState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentStateTime(value: String): Self = StObject.set(x, "currentStateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentStateTimeUndefined: Self = StObject.set(x, "currentStateTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionStageName(value: String): Self = StObject.set(x, "executionStageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentStateTime(value: String): Self = this.set("currentStateTime", value.asInstanceOf[js.Any])
+    def setExecutionStageNameUndefined: Self = StObject.set(x, "executionStageName", js.undefined)
     
     @scala.inline
-    def deleteCurrentStateTime: Self = this.set("currentStateTime", js.undefined)
+    def setExecutionStageState(value: String): Self = StObject.set(x, "executionStageState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionStageName(value: String): Self = this.set("executionStageName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExecutionStageName: Self = this.set("executionStageName", js.undefined)
-    
-    @scala.inline
-    def setExecutionStageState(value: String): Self = this.set("executionStageState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExecutionStageState: Self = this.set("executionStageState", js.undefined)
+    def setExecutionStageStateUndefined: Self = StObject.set(x, "executionStageState", js.undefined)
   }
 }

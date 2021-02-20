@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpeningHours extends js.Object {
+trait OpeningHours extends StObject {
   
   /** is a boolean value indicating if the place is open at the current time. */
   var open_now: Boolean = js.native
@@ -30,33 +31,21 @@ object OpeningHours {
   }
   
   @scala.inline
-  implicit class OpeningHoursOps[Self <: OpeningHours] (val x: Self) extends AnyVal {
+  implicit class OpeningHoursMutableBuilder[Self <: OpeningHours] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOpen_now(value: Boolean): Self = StObject.set(x, "open_now", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPeriods(value: js.Array[OpeningPeriod]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPeriodsVarargs(value: OpeningPeriod*): Self = StObject.set(x, "periods", js.Array(value :_*))
     
     @scala.inline
-    def setOpen_now(value: Boolean): Self = this.set("open_now", value.asInstanceOf[js.Any])
+    def setWeekday_text(value: js.Array[String]): Self = StObject.set(x, "weekday_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriodsVarargs(value: OpeningPeriod*): Self = this.set("periods", js.Array(value :_*))
-    
-    @scala.inline
-    def setPeriods(value: js.Array[OpeningPeriod]): Self = this.set("periods", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeekday_textVarargs(value: String*): Self = this.set("weekday_text", js.Array(value :_*))
-    
-    @scala.inline
-    def setWeekday_text(value: js.Array[String]): Self = this.set("weekday_text", value.asInstanceOf[js.Any])
+    def setWeekday_textVarargs(value: String*): Self = StObject.set(x, "weekday_text", js.Array(value :_*))
   }
 }

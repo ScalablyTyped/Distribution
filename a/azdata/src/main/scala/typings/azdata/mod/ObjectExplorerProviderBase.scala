@@ -1,6 +1,7 @@
 package typings.azdata.mod
 
 import typings.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,30 +32,18 @@ object ObjectExplorerProviderBase {
   }
   
   @scala.inline
-  implicit class ObjectExplorerProviderBaseOps[Self <: ObjectExplorerProviderBase] (val x: Self) extends AnyVal {
+  implicit class ObjectExplorerProviderBaseMutableBuilder[Self <: ObjectExplorerProviderBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpandNode(value: ExpandNodeInfo => Thenable[Boolean]): Self = StObject.set(x, "expandNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFindNodes(value: FindNodesInfo => Thenable[ObjectExplorerFindNodesResponse]): Self = StObject.set(x, "findNodes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRefreshNode(value: ExpandNodeInfo => Thenable[Boolean]): Self = StObject.set(x, "refreshNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExpandNode(value: ExpandNodeInfo => Thenable[Boolean]): Self = this.set("expandNode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFindNodes(value: FindNodesInfo => Thenable[ObjectExplorerFindNodesResponse]): Self = this.set("findNodes", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRefreshNode(value: ExpandNodeInfo => Thenable[Boolean]): Self = this.set("refreshNode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRegisterOnExpandCompleted(value: js.Function1[/* response */ ObjectExplorerExpandInfo, _] => Unit): Self = this.set("registerOnExpandCompleted", js.Any.fromFunction1(value))
+    def setRegisterOnExpandCompleted(value: js.Function1[/* response */ ObjectExplorerExpandInfo, _] => Unit): Self = StObject.set(x, "registerOnExpandCompleted", js.Any.fromFunction1(value))
   }
 }

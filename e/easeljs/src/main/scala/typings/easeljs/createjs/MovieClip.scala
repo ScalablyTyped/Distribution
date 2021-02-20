@@ -1,6 +1,7 @@
 package typings.easeljs.createjs
 
 import typings.tweenjs.createjs.Timeline
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,13 +28,13 @@ trait MovieClip extends Container {
   
   var framerate: Double = js.native
   
-   // not supported
+  // not supported
   /**
     * @deprecated - use 'currentLabel' property instead
     */
   def getCurrentLabel(): String = js.native
   
-    // deprecated
+  // deprecated
   /**
     * @deprecated - use 'labels' property instead
     */

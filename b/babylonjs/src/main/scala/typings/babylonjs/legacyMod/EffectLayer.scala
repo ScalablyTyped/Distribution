@@ -1,5 +1,6 @@
 package typings.babylonjs.legacyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,9 +21,7 @@ abstract class EffectLayer protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "EffectLayer")
-@js.native
-object EffectLayer extends js.Object {
+object EffectLayer {
   
   /**
     * Creates an effect layer from parsed effect layer data
@@ -31,8 +30,12 @@ object EffectLayer extends js.Object {
     * @param rootUrl defines the root URL containing the effect layer information
     * @returns a parsed effect Layer
     */
+  @JSImport("babylonjs/Legacy/legacy", "EffectLayer.Parse")
+  @js.native
   def Parse(parsedEffectLayer: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.effectLayerMod.EffectLayer = js.native
   
   /** @hidden */
+  @JSImport("babylonjs/Legacy/legacy", "EffectLayer._SceneComponentInitialization")
+  @js.native
   def _SceneComponentInitialization(scene: typings.babylonjs.sceneMod.Scene): Unit = js.native
 }

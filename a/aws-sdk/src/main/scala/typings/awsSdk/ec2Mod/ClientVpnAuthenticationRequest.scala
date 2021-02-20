@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientVpnAuthenticationRequest extends js.Object {
+trait ClientVpnAuthenticationRequest extends StObject {
   
   /**
     * Information about the Active Directory to be used, if applicable. You must provide this information if Type is directory-service-authentication.
@@ -36,42 +37,30 @@ object ClientVpnAuthenticationRequest {
   }
   
   @scala.inline
-  implicit class ClientVpnAuthenticationRequestOps[Self <: ClientVpnAuthenticationRequest] (val x: Self) extends AnyVal {
+  implicit class ClientVpnAuthenticationRequestMutableBuilder[Self <: ClientVpnAuthenticationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveDirectory(value: DirectoryServiceAuthenticationRequest): Self = StObject.set(x, "ActiveDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveDirectoryUndefined: Self = StObject.set(x, "ActiveDirectory", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFederatedAuthentication(value: FederatedAuthenticationRequest): Self = StObject.set(x, "FederatedAuthentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveDirectory(value: DirectoryServiceAuthenticationRequest): Self = this.set("ActiveDirectory", value.asInstanceOf[js.Any])
+    def setFederatedAuthenticationUndefined: Self = StObject.set(x, "FederatedAuthentication", js.undefined)
     
     @scala.inline
-    def deleteActiveDirectory: Self = this.set("ActiveDirectory", js.undefined)
+    def setMutualAuthentication(value: CertificateAuthenticationRequest): Self = StObject.set(x, "MutualAuthentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFederatedAuthentication(value: FederatedAuthenticationRequest): Self = this.set("FederatedAuthentication", value.asInstanceOf[js.Any])
+    def setMutualAuthenticationUndefined: Self = StObject.set(x, "MutualAuthentication", js.undefined)
     
     @scala.inline
-    def deleteFederatedAuthentication: Self = this.set("FederatedAuthentication", js.undefined)
+    def setType(value: ClientVpnAuthenticationType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMutualAuthentication(value: CertificateAuthenticationRequest): Self = this.set("MutualAuthentication", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMutualAuthentication: Self = this.set("MutualAuthentication", js.undefined)
-    
-    @scala.inline
-    def setType(value: ClientVpnAuthenticationType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

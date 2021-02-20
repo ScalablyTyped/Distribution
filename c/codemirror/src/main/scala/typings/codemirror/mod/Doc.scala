@@ -1,6 +1,5 @@
 package typings.codemirror.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.codemirror.anon.Anchor
 import typings.codemirror.anon.Bias
 import typings.codemirror.anon.InsertLeft
@@ -8,12 +7,13 @@ import typings.codemirror.anon.Redo
 import typings.codemirror.anon.SharedHist
 import typings.std.HTMLElement
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Doc extends js.Object {
+trait Doc extends StObject {
   
   /** Adds a line widget, an element shown below a line, spanning the whole of the editor's width, and moving the lines below it downwards.
     line should be either an integer or a line handle, and node should be a DOM node, which will be displayed below the given line.
@@ -32,7 +32,7 @@ trait Doc extends js.Object {
   def clearHistory(): Unit = js.native
   
   /** Create an identical copy of the given doc. When copyHistory is true , the history will also be copied.Can not be called directly on an editor. */
-  def copy(copyHistory: Boolean): Doc = js.native
+  def copy(copyHistory: Boolean): typings.codemirror.mod.Doc = js.native
   
   /** Iterate over the whole document, and call f for each line, passing the line handle.
     This is a faster way to visit a range of line handlers than calling getLineHandle for each of them.
@@ -144,7 +144,7 @@ trait Doc extends js.Object {
   def lineSeparator(): String = js.native
   
   /** Create a new document that's linked to the target document. Linked documents will stay in sync (changes to one are also applied to the other) until unlinked. */
-  def linkedDoc(options: SharedHist): Doc = js.native
+  def linkedDoc(options: SharedHist): typings.codemirror.mod.Doc = js.native
   
   /** Retrieves a list of all current selections. These will always be sorted, and never overlap (overlapping selections are merged).
     Each object in the array contains anchor and head properties referring to {line, ch} objects. */
@@ -249,8 +249,5 @@ trait Doc extends js.Object {
   
   /** Break the link between two documents. After calling this , changes will no longer propagate between the documents,
     and, if they had a shared history, the history will become separate. */
-  def unlinkDoc(doc: Doc): Unit = js.native
+  def unlinkDoc(doc: typings.codemirror.mod.Doc): Unit = js.native
 }
-@JSImport("codemirror", "Doc")
-@js.native
-object Doc extends TopLevel[DocConstructor]

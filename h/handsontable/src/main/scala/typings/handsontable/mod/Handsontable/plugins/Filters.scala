@@ -7,6 +7,7 @@ import typings.handsontable.mod.Handsontable.plugins.FiltersPlugin.ConditionComp
 import typings.handsontable.mod.Handsontable.plugins.FiltersPlugin.ConditionUpdateObserver
 import typings.handsontable.mod.Handsontable.plugins.FiltersPlugin.OperationType
 import typings.handsontable.mod.Handsontable.plugins.FiltersPlugin.ValueComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

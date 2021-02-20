@@ -1,6 +1,7 @@
 package typings.ractive.mod
 
 import typings.ractive.anon.Optional
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,75 +42,63 @@ object ExtendOpts {
   }
   
   @scala.inline
-  implicit class ExtendOptsOps[Self <: ExtendOpts[_], T /* <: Ractive[T] */] (val x: Self with ExtendOpts[T]) extends AnyVal {
+  implicit class ExtendOptsMutableBuilder[Self <: ExtendOpts[_], T /* <: Ractive[T] */] (val x: Self with ExtendOpts[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: js.Array[String] | Optional): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
     @scala.inline
-    def setAttributesVarargs(value: String*): Self = this.set("attributes", js.Array(value :_*))
+    def setCss(value: String | CssFn): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: js.Array[String] | Optional): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setCssData(value: ValueMap): Self = StObject.set(x, "cssData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setCssDataUndefined: Self = StObject.set(x, "cssData", js.undefined)
     
     @scala.inline
-    def setCssFunction1(value: /* data */ DataGetFn => String): Self = this.set("css", js.Any.fromFunction1(value))
+    def setCssFunction1(value: /* data */ DataGetFn => String): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCss(value: String | CssFn): Self = this.set("css", value.asInstanceOf[js.Any])
+    def setCssId(value: String): Self = StObject.set(x, "cssId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCss: Self = this.set("css", js.undefined)
+    def setCssIdUndefined: Self = StObject.set(x, "cssId", js.undefined)
     
     @scala.inline
-    def setCssData(value: ValueMap): Self = this.set("cssData", value.asInstanceOf[js.Any])
+    def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
     @scala.inline
-    def deleteCssData: Self = this.set("cssData", js.undefined)
+    def setData(value: DataFn[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssId(value: String): Self = this.set("cssId", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteCssId: Self = this.set("cssId", js.undefined)
+    def setIsolated(value: Boolean): Self = StObject.set(x, "isolated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: DataFn[T]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setIsolatedUndefined: Self = StObject.set(x, "isolated", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setNoCssTransform(value: Boolean): Self = StObject.set(x, "noCssTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsolated(value: Boolean): Self = this.set("isolated", value.asInstanceOf[js.Any])
+    def setNoCssTransformUndefined: Self = StObject.set(x, "noCssTransform", js.undefined)
     
     @scala.inline
-    def deleteIsolated: Self = this.set("isolated", js.undefined)
+    def setUse(value: js.Array[PluginExtend]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoCssTransform(value: Boolean): Self = this.set("noCssTransform", value.asInstanceOf[js.Any])
+    def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
     
     @scala.inline
-    def deleteNoCssTransform: Self = this.set("noCssTransform", js.undefined)
-    
-    @scala.inline
-    def setUseVarargs(value: PluginExtend*): Self = this.set("use", js.Array(value :_*))
-    
-    @scala.inline
-    def setUse(value: js.Array[PluginExtend]): Self = this.set("use", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUse: Self = this.set("use", js.undefined)
+    def setUseVarargs(value: PluginExtend*): Self = StObject.set(x, "use", js.Array(value :_*))
   }
 }

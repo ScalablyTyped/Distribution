@@ -1,11 +1,12 @@
 package typings.antDesignReactNative.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatePicker extends js.Object {
+trait DatePicker extends StObject {
   
   var DatePicker: js.UndefOr[DismissText] = js.native
   
@@ -36,75 +37,63 @@ object DatePicker {
   }
   
   @scala.inline
-  implicit class DatePickerOps[Self <: DatePicker] (val x: Self) extends AnyVal {
+  implicit class DatePickerMutableBuilder[Self <: DatePicker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatePicker(value: DismissText): Self = StObject.set(x, "DatePicker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatePickerUndefined: Self = StObject.set(x, "DatePicker", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatePickerView(value: Day): Self = StObject.set(x, "DatePickerView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExist(value: Boolean): Self = this.set("exist", value.asInstanceOf[js.Any])
+    def setDatePickerViewUndefined: Self = StObject.set(x, "DatePickerView", js.undefined)
     
     @scala.inline
-    def setDatePicker(value: DismissText): Self = this.set("DatePicker", value.asInstanceOf[js.Any])
+    def setExist(value: Boolean): Self = StObject.set(x, "exist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDatePicker: Self = this.set("DatePicker", js.undefined)
+    def setInputItem(value: BackspaceLabel): Self = StObject.set(x, "InputItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatePickerView(value: Day): Self = this.set("DatePickerView", value.asInstanceOf[js.Any])
+    def setInputItemUndefined: Self = StObject.set(x, "InputItem", js.undefined)
     
     @scala.inline
-    def deleteDatePickerView: Self = this.set("DatePickerView", js.undefined)
+    def setListView(value: Done): Self = StObject.set(x, "ListView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputItem(value: BackspaceLabel): Self = this.set("InputItem", value.asInstanceOf[js.Any])
+    def setListViewUndefined: Self = StObject.set(x, "ListView", js.undefined)
     
     @scala.inline
-    def deleteInputItem: Self = this.set("InputItem", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListView(value: Done): Self = this.set("ListView", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteListView: Self = this.set("ListView", js.undefined)
+    def setModal(value: ButtonText): Self = StObject.set(x, "Modal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModal(value: ButtonText): Self = this.set("Modal", value.asInstanceOf[js.Any])
+    def setModalUndefined: Self = StObject.set(x, "Modal", js.undefined)
     
     @scala.inline
-    def deleteModal: Self = this.set("Modal", js.undefined)
+    def setPagination(value: NextText): Self = StObject.set(x, "Pagination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagination(value: NextText): Self = this.set("Pagination", value.asInstanceOf[js.Any])
+    def setPaginationUndefined: Self = StObject.set(x, "Pagination", js.undefined)
     
     @scala.inline
-    def deletePagination: Self = this.set("Pagination", js.undefined)
+    def setPicker(value: Extra): Self = StObject.set(x, "Picker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPicker(value: Extra): Self = this.set("Picker", value.asInstanceOf[js.Any])
+    def setPickerUndefined: Self = StObject.set(x, "Picker", js.undefined)
     
     @scala.inline
-    def deletePicker: Self = this.set("Picker", js.undefined)
+    def setSearchBar(value: CancelText): Self = StObject.set(x, "SearchBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchBar(value: CancelText): Self = this.set("SearchBar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchBar: Self = this.set("SearchBar", js.undefined)
-    
-    @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setSearchBarUndefined: Self = StObject.set(x, "SearchBar", js.undefined)
   }
 }

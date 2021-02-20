@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Emulation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetUserAgentOverrideRequest extends js.Object {
+trait SetUserAgentOverrideRequest extends StObject {
   
   /**
     * Browser langugage to emulate.
@@ -36,39 +37,27 @@ object SetUserAgentOverrideRequest {
   }
   
   @scala.inline
-  implicit class SetUserAgentOverrideRequestOps[Self <: SetUserAgentOverrideRequest] (val x: Self) extends AnyVal {
+  implicit class SetUserAgentOverrideRequestMutableBuilder[Self <: SetUserAgentOverrideRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptLanguage(value: String): Self = StObject.set(x, "acceptLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptLanguageUndefined: Self = StObject.set(x, "acceptLanguage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     @scala.inline
-    def setAcceptLanguage(value: String): Self = this.set("acceptLanguage", value.asInstanceOf[js.Any])
+    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAcceptLanguage: Self = this.set("acceptLanguage", js.undefined)
+    def setUserAgentMetadata(value: UserAgentMetadata): Self = StObject.set(x, "userAgentMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
-    
-    @scala.inline
-    def setUserAgentMetadata(value: UserAgentMetadata): Self = this.set("userAgentMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserAgentMetadata: Self = this.set("userAgentMetadata", js.undefined)
+    def setUserAgentMetadataUndefined: Self = StObject.set(x, "userAgentMetadata", js.undefined)
   }
 }

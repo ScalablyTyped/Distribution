@@ -1,13 +1,14 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  migration_id :number} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'wyandotte'> */
 @js.native
-trait MigrationsGetArchiveForAuthenticatedUserEndpoint extends js.Object {
+trait MigrationsGetArchiveForAuthenticatedUserEndpoint extends StObject {
   
   var mediaType: `6` = js.native
   
@@ -22,24 +23,12 @@ object MigrationsGetArchiveForAuthenticatedUserEndpoint {
   }
   
   @scala.inline
-  implicit class MigrationsGetArchiveForAuthenticatedUserEndpointOps[Self <: MigrationsGetArchiveForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  implicit class MigrationsGetArchiveForAuthenticatedUserEndpointMutableBuilder[Self <: MigrationsGetArchiveForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMediaType(value: `6`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMediaType(value: `6`): Self = this.set("mediaType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMigration_id(value: Double): Self = this.set("migration_id", value.asInstanceOf[js.Any])
+    def setMigration_id(value: Double): Self = StObject.set(x, "migration_id", value.asInstanceOf[js.Any])
   }
 }

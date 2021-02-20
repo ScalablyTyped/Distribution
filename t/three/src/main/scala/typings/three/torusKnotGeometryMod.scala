@@ -2,14 +2,14 @@ package typings.three
 
 import typings.three.anon.P
 import typings.three.geometryMod.Geometry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/geometries/TorusKnotGeometry", JSImport.Namespace)
-@js.native
-object torusKnotGeometryMod extends js.Object {
+object torusKnotGeometryMod {
   
+  @JSImport("three/src/geometries/TorusKnotGeometry", "TorusKnotGeometry")
   @js.native
   class TorusKnotGeometry protected () extends Geometry {
     /**

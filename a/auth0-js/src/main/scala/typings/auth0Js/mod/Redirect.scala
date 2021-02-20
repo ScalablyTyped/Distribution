@@ -2,13 +2,14 @@ package typings.auth0Js.mod
 
 import typings.auth0Js.anon.Connection
 import typings.auth0Js.anon.RedirectUri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("auth0-js", "Redirect")
 @js.native
-class Redirect protected () extends js.Object {
+class Redirect protected () extends StObject {
   def this(client: js.Any, options: js.Any) = this()
   
   /**

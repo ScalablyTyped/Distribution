@@ -7,14 +7,14 @@ import typings.awsSdkClientLambdaNode.typesPublishVersionInputMod.PublishVersion
 import typings.awsSdkClientLambdaNode.typesPublishVersionOutputMod.PublishVersionOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/commands/PublishVersionCommand", JSImport.Namespace)
-@js.native
-object publishVersionCommandMod extends js.Object {
+object publishVersionCommandMod {
   
+  @JSImport("@aws-sdk/client-lambda-node/commands/PublishVersionCommand", "PublishVersionCommand")
   @js.native
   class PublishVersionCommand protected () extends Command[
           InputTypesUnion, 

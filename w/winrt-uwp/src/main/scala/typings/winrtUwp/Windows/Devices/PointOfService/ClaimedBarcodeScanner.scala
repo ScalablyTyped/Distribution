@@ -12,13 +12,14 @@ import typings.winrtUwp.winrtUwpStrings.imagepreviewreceived
 import typings.winrtUwp.winrtUwpStrings.releasedevicerequested
 import typings.winrtUwp.winrtUwpStrings.triggerpressed
 import typings.winrtUwp.winrtUwpStrings.triggerreleased
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the claimed barcode scanner. */
 @js.native
-trait ClaimedBarcodeScanner extends js.Object {
+trait ClaimedBarcodeScanner extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

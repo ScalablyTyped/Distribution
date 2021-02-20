@@ -1,12 +1,13 @@
 package typings.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Views
 @js.native
-trait ArangoSearchView extends js.Object {
+trait ArangoSearchView extends StObject {
   
   var _dbName: String = js.native
   

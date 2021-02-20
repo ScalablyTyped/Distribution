@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * RangeSelectInfo...
   */
 @js.native
-trait IRangeSelectInfo extends js.Object {
+trait IRangeSelectInfo extends StObject {
   
   /* ToCheck!
     qRangeLo    Lowest value in the range.    Double
@@ -29,21 +30,9 @@ object IRangeSelectInfo {
   }
   
   @scala.inline
-  implicit class IRangeSelectInfoOps[Self <: IRangeSelectInfo] (val x: Self) extends AnyVal {
+  implicit class IRangeSelectInfoMutableBuilder[Self <: IRangeSelectInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQRange(value: IRange): Self = this.set("qRange", value.asInstanceOf[js.Any])
+    def setQRange(value: IRange): Self = StObject.set(x, "qRange", value.asInstanceOf[js.Any])
   }
 }

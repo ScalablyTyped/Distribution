@@ -1,5 +1,6 @@
 package typings.gm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.gm.gmStrings.Bessel
   - typings.gm.gmStrings.Sinc
 */
-trait FilterType extends js.Object
+trait FilterType extends StObject
 object FilterType {
   
   @scala.inline

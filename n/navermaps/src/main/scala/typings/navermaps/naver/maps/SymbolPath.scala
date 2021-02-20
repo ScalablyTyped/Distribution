@@ -1,14 +1,15 @@
 package typings.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SymbolPath extends js.Object
+sealed trait SymbolPath extends StObject
 @JSGlobal("naver.maps.SymbolPath")
 @js.native
-object SymbolPath extends js.Object {
+object SymbolPath extends StObject {
   
   @js.native
   sealed trait BACKWARD_CLOSED_ARROW extends SymbolPath

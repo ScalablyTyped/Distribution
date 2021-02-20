@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceProvenance extends js.Object {
+trait SourceProvenance extends StObject {
   
   /**
     * Output only. Hash(es) of the build source, which can be used to verify that the original source integrity was maintained in the build. Note that `FileHashes` will only be populated
@@ -34,40 +35,28 @@ object SourceProvenance {
   }
   
   @scala.inline
-  implicit class SourceProvenanceOps[Self <: SourceProvenance] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class SourceProvenanceMutableBuilder[Self <: SourceProvenance] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setFileHashes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.cloudbuild.gapi.client.cloudbuild.FileHashes}
       */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.SourceProvenance with TopLevel[js.Any]
-    ): Self = this.set("fileHashes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "fileHashes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFileHashes: Self = this.set("fileHashes", js.undefined)
+    def setFileHashesUndefined: Self = StObject.set(x, "fileHashes", js.undefined)
     
     @scala.inline
-    def setResolvedRepoSource(value: RepoSource): Self = this.set("resolvedRepoSource", value.asInstanceOf[js.Any])
+    def setResolvedRepoSource(value: RepoSource): Self = StObject.set(x, "resolvedRepoSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResolvedRepoSource: Self = this.set("resolvedRepoSource", js.undefined)
+    def setResolvedRepoSourceUndefined: Self = StObject.set(x, "resolvedRepoSource", js.undefined)
     
     @scala.inline
-    def setResolvedStorageSource(value: StorageSource): Self = this.set("resolvedStorageSource", value.asInstanceOf[js.Any])
+    def setResolvedStorageSource(value: StorageSource): Self = StObject.set(x, "resolvedStorageSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResolvedStorageSource: Self = this.set("resolvedStorageSource", js.undefined)
+    def setResolvedStorageSourceUndefined: Self = StObject.set(x, "resolvedStorageSource", js.undefined)
   }
 }

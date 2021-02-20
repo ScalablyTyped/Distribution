@@ -10,6 +10,7 @@ import typings.bingmaps.Microsoft.Maps.SpatialDataService.IFilter
 import typings.bingmaps.Microsoft.Maps.SpatialDataService.IGeoDataResultSet
 import typings.bingmaps.Microsoft.Maps.SpatialDataService.IGetBoundaryRequestOptions
 import typings.bingmaps.Microsoft.Maps.SpatialDataService.IQueryAPIOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,10 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This module wraps the Query and GeoData REST API’s in the Bing Spatial Dara Services and expose them as an easy to use JavaScript library.
   * @requires The Microsoft.Maps.SpatialDataService module.
   */
-@JSGlobal("Microsoft.Maps.SpatialDataService")
-@js.native
-object SpatialDataService extends js.Object {
+object SpatialDataService {
   
+  @JSGlobal("Microsoft.Maps.SpatialDataService.Filter")
   @js.native
   class Filter protected ()
     extends typings.bingmaps.Microsoft.Maps.SpatialDataService.Filter {
@@ -36,8 +36,9 @@ object SpatialDataService extends js.Object {
     def this(propertyName: String, operator: FilterCompareOperator, value: js.Any) = this()
   }
   
+  @JSGlobal("Microsoft.Maps.SpatialDataService.FilterCompareOperator")
   @js.native
-  object FilterCompareOperator extends js.Object {
+  object FilterCompareOperator extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -68,6 +69,7 @@ object SpatialDataService extends js.Object {
     /* 10 */ val startsWith: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterCompareOperator.startsWith with Double = js.native
   }
   
+  @JSGlobal("Microsoft.Maps.SpatialDataService.FilterGroup")
   @js.native
   class FilterGroup protected ()
     extends typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterGroup {
@@ -82,8 +84,9 @@ object SpatialDataService extends js.Object {
     def this(filters: js.Array[IFilter], operator: FilterLogicalOperator, not: Boolean) = this()
   }
   
+  @JSGlobal("Microsoft.Maps.SpatialDataService.FilterLogicalOperator")
   @js.native
-  object FilterLogicalOperator extends js.Object {
+  object FilterLogicalOperator extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -95,15 +98,18 @@ object SpatialDataService extends js.Object {
     /* 1 */ val or: typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterLogicalOperator.or with Double = js.native
   }
   
-  @js.native
-  object GeoDataAPIManager extends js.Object {
+  object GeoDataAPIManager {
     
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
       credentials: String,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
@@ -116,6 +122,8 @@ object SpatialDataService extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
@@ -123,6 +131,8 @@ object SpatialDataService extends js.Object {
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
@@ -135,12 +145,16 @@ object SpatialDataService extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
@@ -153,6 +167,8 @@ object SpatialDataService extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
@@ -160,6 +176,8 @@ object SpatialDataService extends js.Object {
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: String,
       request: IGetBoundaryRequestOptions,
@@ -172,12 +190,16 @@ object SpatialDataService extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
       credentials: String,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
@@ -190,6 +212,8 @@ object SpatialDataService extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
@@ -197,6 +221,8 @@ object SpatialDataService extends js.Object {
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
@@ -209,12 +235,16 @@ object SpatialDataService extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
@@ -227,6 +257,8 @@ object SpatialDataService extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
@@ -234,6 +266,8 @@ object SpatialDataService extends js.Object {
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
       request: IGetBoundaryRequestOptions,
@@ -246,12 +280,16 @@ object SpatialDataService extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
       credentials: String,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
@@ -264,6 +302,8 @@ object SpatialDataService extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
@@ -271,6 +311,8 @@ object SpatialDataService extends js.Object {
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
@@ -283,12 +325,16 @@ object SpatialDataService extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
@@ -301,6 +347,8 @@ object SpatialDataService extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
@@ -308,6 +356,8 @@ object SpatialDataService extends js.Object {
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary")
+    @js.native
     def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
       request: IGetBoundaryRequestOptions,
@@ -322,14 +372,17 @@ object SpatialDataService extends js.Object {
     ): Unit = js.native
   }
   
-  @js.native
-  object QueryAPIManager extends js.Object {
+  object QueryAPIManager {
     
+    @JSGlobal("Microsoft.Maps.SpatialDataService.QueryAPIManager.search")
+    @js.native
     def search(
       queryOptions: IQueryAPIOptions,
       credentials: String,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.QueryAPIManager.search")
+    @js.native
     def search(
       queryOptions: IQueryAPIOptions,
       credentials: String,
@@ -337,12 +390,16 @@ object SpatialDataService extends js.Object {
       styles: js.UndefOr[scala.Nothing],
       errorCallback: js.Function2[/* networkStatus */ js.UndefOr[String], /* statusMessage */ js.UndefOr[String], Unit]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.QueryAPIManager.search")
+    @js.native
     def search(
       queryOptions: IQueryAPIOptions,
       credentials: String,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit],
       styles: IStylesOptions
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.QueryAPIManager.search")
+    @js.native
     def search(
       queryOptions: IQueryAPIOptions,
       credentials: String,
@@ -350,11 +407,15 @@ object SpatialDataService extends js.Object {
       styles: IStylesOptions,
       errorCallback: js.Function2[/* networkStatus */ js.UndefOr[String], /* statusMessage */ js.UndefOr[String], Unit]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.QueryAPIManager.search")
+    @js.native
     def search(
       queryOptions: IQueryAPIOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.QueryAPIManager.search")
+    @js.native
     def search(
       queryOptions: IQueryAPIOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
@@ -362,12 +423,16 @@ object SpatialDataService extends js.Object {
       styles: js.UndefOr[scala.Nothing],
       errorCallback: js.Function2[/* networkStatus */ js.UndefOr[String], /* statusMessage */ js.UndefOr[String], Unit]
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.QueryAPIManager.search")
+    @js.native
     def search(
       queryOptions: IQueryAPIOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit],
       styles: IStylesOptions
     ): Unit = js.native
+    @JSGlobal("Microsoft.Maps.SpatialDataService.QueryAPIManager.search")
+    @js.native
     def search(
       queryOptions: IQueryAPIOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,

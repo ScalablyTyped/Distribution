@@ -1,12 +1,13 @@
 package typings.vscodeLanguageclient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageclient", "RevealOutputChannelOn")
 @js.native
-object RevealOutputChannelOn extends js.Object {
+object RevealOutputChannelOn extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.vscodeLanguageclient.clientMod.RevealOutputChannelOn with Double] = js.native

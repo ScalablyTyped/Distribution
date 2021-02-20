@@ -2,16 +2,16 @@ package typings.webcola
 
 import typings.webcola.descentMod.Descent
 import typings.webcola.rectangleMod.GraphNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webcola/dist/src/layout3d", JSImport.Namespace)
-@js.native
-object layout3dMod extends js.Object {
+object layout3dMod {
   
+  @JSImport("webcola/dist/src/layout3d", "Layout3D")
   @js.native
-  class Layout3D protected () extends js.Object {
+  class Layout3D protected () extends StObject {
     def this(nodes: js.Array[Node3D], links: js.Array[Link3D]) = this()
     def this(nodes: js.Array[Node3D], links: js.Array[Link3D], idealLinkLength: Double) = this()
     
@@ -37,16 +37,28 @@ object layout3dMod extends js.Object {
     var useJaccardLinkLengths: Boolean = js.native
   }
   /* static members */
-  @js.native
-  object Layout3D extends js.Object {
+  object Layout3D {
     
-    var dims: js.Array[String] = js.native
+    @JSImport("webcola/dist/src/layout3d", "Layout3D")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var k: Double = js.native
+    @JSImport("webcola/dist/src/layout3d", "Layout3D.dims")
+    @js.native
+    def dims: js.Array[String] = js.native
+    @scala.inline
+    def dims_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dims")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webcola/dist/src/layout3d", "Layout3D.k")
+    @js.native
+    def k: Double = js.native
+    @scala.inline
+    def k_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("k")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("webcola/dist/src/layout3d", "Link3D")
   @js.native
-  class Link3D protected () extends js.Object {
+  class Link3D protected () extends StObject {
     def this(source: Double, target: Double) = this()
     
     def actualLength(x: js.Array[js.Array[Double]]): Double = js.native
@@ -58,6 +70,7 @@ object layout3dMod extends js.Object {
     var target: Double = js.native
   }
   
+  @JSImport("webcola/dist/src/layout3d", "Node3D")
   @js.native
   class Node3D () extends GraphNode {
     def this(x: Double) = this()

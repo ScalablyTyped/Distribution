@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WeightIn extends js.Object {
+trait WeightIn extends StObject {
   
   var label: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object WeightIn {
   }
   
   @scala.inline
-  implicit class WeightInOps[Self <: WeightIn] (val x: Self) extends AnyVal {
+  implicit class WeightInMutableBuilder[Self <: WeightIn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setWeightIn(value: Double): Self = StObject.set(x, "weightIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setWeightInUndefined: Self = StObject.set(x, "weightIn", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setWeightOut(value: Double): Self = StObject.set(x, "weightOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeightIn(value: Double): Self = this.set("weightIn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeightIn: Self = this.set("weightIn", js.undefined)
-    
-    @scala.inline
-    def setWeightOut(value: Double): Self = this.set("weightOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeightOut: Self = this.set("weightOut", js.undefined)
+    def setWeightOutUndefined: Self = StObject.set(x, "weightOut", js.undefined)
   }
 }

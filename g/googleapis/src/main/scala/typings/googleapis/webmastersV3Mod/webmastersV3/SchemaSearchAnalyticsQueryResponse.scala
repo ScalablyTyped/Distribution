@@ -1,5 +1,6 @@
 package typings.googleapis.webmastersV3Mod.webmastersV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * specified by the aggregation type parameter.
   */
 @js.native
-trait SchemaSearchAnalyticsQueryResponse extends js.Object {
+trait SchemaSearchAnalyticsQueryResponse extends StObject {
   
   /**
     * How the results were aggregated.
@@ -31,33 +32,21 @@ object SchemaSearchAnalyticsQueryResponse {
   }
   
   @scala.inline
-  implicit class SchemaSearchAnalyticsQueryResponseOps[Self <: SchemaSearchAnalyticsQueryResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaSearchAnalyticsQueryResponseMutableBuilder[Self <: SchemaSearchAnalyticsQueryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResponseAggregationType(value: String): Self = StObject.set(x, "responseAggregationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResponseAggregationTypeUndefined: Self = StObject.set(x, "responseAggregationType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRows(value: js.Array[SchemaApiDataRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseAggregationType(value: String): Self = this.set("responseAggregationType", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteResponseAggregationType: Self = this.set("responseAggregationType", js.undefined)
-    
-    @scala.inline
-    def setRowsVarargs(value: SchemaApiDataRow*): Self = this.set("rows", js.Array(value :_*))
-    
-    @scala.inline
-    def setRows(value: js.Array[SchemaApiDataRow]): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setRowsVarargs(value: SchemaApiDataRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

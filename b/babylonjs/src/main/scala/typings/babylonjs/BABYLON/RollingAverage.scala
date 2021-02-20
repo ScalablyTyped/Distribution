@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RollingAverage extends js.Object {
+trait RollingAverage extends StObject {
   
   var _m2: Double = js.native
   
@@ -77,54 +78,42 @@ object RollingAverage {
   }
   
   @scala.inline
-  implicit class RollingAverageOps[Self <: RollingAverage] (val x: Self) extends AnyVal {
+  implicit class RollingAverageMutableBuilder[Self <: RollingAverage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: Double => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAverage(value: Double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHistory(value: Double => Double): Self = StObject.set(x, "history", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_m2(value: Double): Self = this.set("_m2", value.asInstanceOf[js.Any])
+    def setIsSaturated(value: () => Boolean): Self = StObject.set(x, "isSaturated", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_pos(value: Double): Self = this.set("_pos", value.asInstanceOf[js.Any])
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_sampleCount(value: Double): Self = this.set("_sampleCount", value.asInstanceOf[js.Any])
+    def setVariance(value: Double): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_samplesVarargs(value: Double*): Self = this.set("_samples", js.Array(value :_*))
+    def set_m2(value: Double): Self = StObject.set(x, "_m2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_samples(value: js.Array[Double]): Self = this.set("_samples", value.asInstanceOf[js.Any])
+    def set_pos(value: Double): Self = StObject.set(x, "_pos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_wrapPosition(value: Double => Double): Self = this.set("_wrapPosition", js.Any.fromFunction1(value))
+    def set_sampleCount(value: Double): Self = StObject.set(x, "_sampleCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: Double => Unit): Self = this.set("add", js.Any.fromFunction1(value))
+    def set_samples(value: js.Array[Double]): Self = StObject.set(x, "_samples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverage(value: Double): Self = this.set("average", value.asInstanceOf[js.Any])
+    def set_samplesVarargs(value: Double*): Self = StObject.set(x, "_samples", js.Array(value :_*))
     
     @scala.inline
-    def setHistory(value: Double => Double): Self = this.set("history", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsSaturated(value: () => Boolean): Self = this.set("isSaturated", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setVariance(value: Double): Self = this.set("variance", value.asInstanceOf[js.Any])
+    def set_wrapPosition(value: Double => Double): Self = StObject.set(x, "_wrapPosition", js.Any.fromFunction1(value))
   }
 }

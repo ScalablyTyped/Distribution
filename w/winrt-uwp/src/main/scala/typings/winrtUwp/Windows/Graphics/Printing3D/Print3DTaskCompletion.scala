@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Graphics.Printing3D
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Print3DTaskCompletion extends js.Object
+sealed trait Print3DTaskCompletion extends StObject
 /** Specifies the completion status of a 3D print request. */
 @JSGlobal("Windows.Graphics.Printing3D.Print3DTaskCompletion")
 @js.native
-object Print3DTaskCompletion extends js.Object {
+object Print3DTaskCompletion extends StObject {
   
   /** The request has been abandoned. */
   @js.native

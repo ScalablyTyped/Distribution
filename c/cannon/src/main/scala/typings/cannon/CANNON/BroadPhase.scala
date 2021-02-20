@@ -1,11 +1,12 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BroadPhase extends js.Object {
+trait BroadPhase extends StObject {
   
   def aabbQuery(world: World, aabb: AABB, result: js.Array[Body]): js.Array[Body] = js.native
   
@@ -53,54 +54,42 @@ object BroadPhase {
   }
   
   @scala.inline
-  implicit class BroadPhaseOps[Self <: BroadPhase] (val x: Self) extends AnyVal {
+  implicit class BroadPhaseMutableBuilder[Self <: BroadPhase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAabbQuery(value: (World, AABB, js.Array[Body]) => js.Array[Body]): Self = StObject.set(x, "aabbQuery", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundingSphereCheck(value: (Body, Body) => Boolean): Self = StObject.set(x, "boundingSphereCheck", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollisionPairs(value: (World, js.Array[Body], js.Array[Body]) => Unit): Self = StObject.set(x, "collisionPairs", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAabbQuery(value: (World, AABB, js.Array[Body]) => js.Array[Body]): Self = this.set("aabbQuery", js.Any.fromFunction3(value))
+    def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundingSphereCheck(value: (Body, Body) => Boolean): Self = this.set("boundingSphereCheck", js.Any.fromFunction2(value))
+    def setDoBoundingBoxBroadphase(value: (Body, Body, js.Array[Body], js.Array[Body]) => Unit): Self = StObject.set(x, "doBoundingBoxBroadphase", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setCollisionPairs(value: (World, js.Array[Body], js.Array[Body]) => Unit): Self = this.set("collisionPairs", js.Any.fromFunction3(value))
+    def setDoBoundingSphereBroadphase(value: (Body, Body, js.Array[Body], js.Array[Body]) => Unit): Self = StObject.set(x, "doBoundingSphereBroadphase", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setDirty(value: Boolean): Self = this.set("dirty", value.asInstanceOf[js.Any])
+    def setIntersectionTest(value: (Body, Body, js.Array[Body], js.Array[Body]) => Unit): Self = StObject.set(x, "intersectionTest", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setDoBoundingBoxBroadphase(value: (Body, Body, js.Array[Body], js.Array[Body]) => Unit): Self = this.set("doBoundingBoxBroadphase", js.Any.fromFunction4(value))
+    def setMakePairsUnique(value: (js.Array[Body], js.Array[Body]) => Unit): Self = StObject.set(x, "makePairsUnique", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDoBoundingSphereBroadphase(value: (Body, Body, js.Array[Body], js.Array[Body]) => Unit): Self = this.set("doBoundingSphereBroadphase", js.Any.fromFunction4(value))
+    def setNeedBroadphaseCollision(value: (Body, Body) => Boolean): Self = StObject.set(x, "needBroadphaseCollision", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIntersectionTest(value: (Body, Body, js.Array[Body], js.Array[Body]) => Unit): Self = this.set("intersectionTest", js.Any.fromFunction4(value))
+    def setSetWorld(value: World => Unit): Self = StObject.set(x, "setWorld", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMakePairsUnique(value: (js.Array[Body], js.Array[Body]) => Unit): Self = this.set("makePairsUnique", js.Any.fromFunction2(value))
+    def setUseBoundingBoxes(value: Boolean): Self = StObject.set(x, "useBoundingBoxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNeedBroadphaseCollision(value: (Body, Body) => Boolean): Self = this.set("needBroadphaseCollision", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetWorld(value: World => Unit): Self = this.set("setWorld", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUseBoundingBoxes(value: Boolean): Self = this.set("useBoundingBoxes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorld(value: World): Self = this.set("world", value.asInstanceOf[js.Any])
+    def setWorld(value: World): Self = StObject.set(x, "world", value.asInstanceOf[js.Any])
   }
 }

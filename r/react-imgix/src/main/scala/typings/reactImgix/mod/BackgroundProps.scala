@@ -1,11 +1,12 @@
 package typings.reactImgix.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackgroundProps extends js.Object {
+trait BackgroundProps extends StObject {
   
   var className: js.UndefOr[String] = js.native
   
@@ -26,45 +27,33 @@ object BackgroundProps {
   }
   
   @scala.inline
-  implicit class BackgroundPropsOps[Self <: BackgroundProps] (val x: Self) extends AnyVal {
+  implicit class BackgroundPropsMutableBuilder[Self <: BackgroundProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableLibraryParam(value: Boolean): Self = StObject.set(x, "disableLibraryParam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setDisableLibraryParamUndefined: Self = StObject.set(x, "disableLibraryParam", js.undefined)
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setHtmlAttributes(value: ImgixHTMLAttributes): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
     
     @scala.inline
-    def setDisableLibraryParam(value: Boolean): Self = this.set("disableLibraryParam", value.asInstanceOf[js.Any])
+    def setImgixParams(value: ImigixParams): Self = StObject.set(x, "imgixParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableLibraryParam: Self = this.set("disableLibraryParam", js.undefined)
+    def setImgixParamsUndefined: Self = StObject.set(x, "imgixParams", js.undefined)
     
     @scala.inline
-    def setHtmlAttributes(value: ImgixHTMLAttributes): Self = this.set("htmlAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHtmlAttributes: Self = this.set("htmlAttributes", js.undefined)
-    
-    @scala.inline
-    def setImgixParams(value: ImigixParams): Self = this.set("imgixParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImgixParams: Self = this.set("imgixParams", js.undefined)
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
   }
 }

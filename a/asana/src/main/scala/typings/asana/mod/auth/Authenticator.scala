@@ -1,5 +1,6 @@
 package typings.asana.mod.auth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @constructor
   */
 @js.native
-trait Authenticator extends js.Object {
+trait Authenticator extends StObject {
   
   /**
     * Establishes credentials.
@@ -44,24 +45,12 @@ object Authenticator {
   }
   
   @scala.inline
-  implicit class AuthenticatorOps[Self <: Authenticator] (val x: Self) extends AnyVal {
+  implicit class AuthenticatorMutableBuilder[Self <: Authenticator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEstablishCredentials(value: () => typings.bluebird.mod.^[Unit]): Self = StObject.set(x, "establishCredentials", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEstablishCredentials(value: () => typings.bluebird.mod.^[Unit]): Self = this.set("establishCredentials", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRefreshCredentials(value: () => typings.bluebird.mod.^[Boolean]): Self = this.set("refreshCredentials", js.Any.fromFunction0(value))
+    def setRefreshCredentials(value: () => typings.bluebird.mod.^[Boolean]): Self = StObject.set(x, "refreshCredentials", js.Any.fromFunction0(value))
   }
 }

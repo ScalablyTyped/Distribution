@@ -1,11 +1,12 @@
 package typings.orientjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomField extends js.Object {
+trait CustomField extends StObject {
   
   /**
     * Get the value of the given custom field.
@@ -41,27 +42,15 @@ object CustomField {
   }
   
   @scala.inline
-  implicit class CustomFieldOps[Self <: CustomField] (val x: Self) extends AnyVal {
+  implicit class CustomFieldMutableBuilder[Self <: CustomField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet(value: String => CustomField): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSet(value: (String, js.Any) => CustomField): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGet(value: String => CustomField): Self = this.set("get", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet(value: (String, js.Any) => CustomField): Self = this.set("set", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUnset(value: String => CustomField): Self = this.set("unset", js.Any.fromFunction1(value))
+    def setUnset(value: String => CustomField): Self = StObject.set(x, "unset", js.Any.fromFunction1(value))
   }
 }

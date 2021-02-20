@@ -1,11 +1,12 @@
 package typings.rxjsCompat.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FnCallSubjectFactorySelector extends js.Object {
+trait FnCallSubjectFactorySelector extends StObject {
   
   def apply[T](
     SubjectFactory: js.ThisFunction0[

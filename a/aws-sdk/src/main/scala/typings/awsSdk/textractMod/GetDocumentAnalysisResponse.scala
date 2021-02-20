@@ -1,11 +1,12 @@
 package typings.awsSdk.textractMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDocumentAnalysisResponse extends js.Object {
+trait GetDocumentAnalysisResponse extends StObject {
   
   /**
     * 
@@ -51,66 +52,54 @@ object GetDocumentAnalysisResponse {
   }
   
   @scala.inline
-  implicit class GetDocumentAnalysisResponseOps[Self <: GetDocumentAnalysisResponse] (val x: Self) extends AnyVal {
+  implicit class GetDocumentAnalysisResponseMutableBuilder[Self <: GetDocumentAnalysisResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalyzeDocumentModelVersion(value: String): Self = StObject.set(x, "AnalyzeDocumentModelVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalyzeDocumentModelVersionUndefined: Self = StObject.set(x, "AnalyzeDocumentModelVersion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlocks(value: BlockList): Self = StObject.set(x, "Blocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalyzeDocumentModelVersion(value: String): Self = this.set("AnalyzeDocumentModelVersion", value.asInstanceOf[js.Any])
+    def setBlocksUndefined: Self = StObject.set(x, "Blocks", js.undefined)
     
     @scala.inline
-    def deleteAnalyzeDocumentModelVersion: Self = this.set("AnalyzeDocumentModelVersion", js.undefined)
+    def setBlocksVarargs(value: Block*): Self = StObject.set(x, "Blocks", js.Array(value :_*))
     
     @scala.inline
-    def setBlocksVarargs(value: Block*): Self = this.set("Blocks", js.Array(value :_*))
+    def setDocumentMetadata(value: DocumentMetadata): Self = StObject.set(x, "DocumentMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlocks(value: BlockList): Self = this.set("Blocks", value.asInstanceOf[js.Any])
+    def setDocumentMetadataUndefined: Self = StObject.set(x, "DocumentMetadata", js.undefined)
     
     @scala.inline
-    def deleteBlocks: Self = this.set("Blocks", js.undefined)
+    def setJobStatus(value: JobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentMetadata(value: DocumentMetadata): Self = this.set("DocumentMetadata", value.asInstanceOf[js.Any])
+    def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
     
     @scala.inline
-    def deleteDocumentMetadata: Self = this.set("DocumentMetadata", js.undefined)
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobStatus(value: JobStatus): Self = this.set("JobStatus", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteJobStatus: Self = this.set("JobStatus", js.undefined)
+    def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setWarnings(value: Warnings): Self = StObject.set(x, "Warnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: StatusMessage): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    def setWarningsUndefined: Self = StObject.set(x, "Warnings", js.undefined)
     
     @scala.inline
-    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
-    
-    @scala.inline
-    def setWarningsVarargs(value: Warning*): Self = this.set("Warnings", js.Array(value :_*))
-    
-    @scala.inline
-    def setWarnings(value: Warnings): Self = this.set("Warnings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarnings: Self = this.set("Warnings", js.undefined)
+    def setWarningsVarargs(value: Warning*): Self = StObject.set(x, "Warnings", js.Array(value :_*))
   }
 }

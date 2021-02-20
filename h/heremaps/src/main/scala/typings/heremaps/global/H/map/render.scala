@@ -1,13 +1,12 @@
 package typings.heremaps.global.H.map
 
 import typings.heremaps.H.map.render.RenderEngine.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("H.map.render")
-@js.native
-object render extends js.Object {
+object render {
   
   /**
     * This is an abstract class representing a render engine. Render engines are used to render the geographical position from a view model on the
@@ -15,6 +14,7 @@ object render extends js.Object {
     * specific implementation to present the current view model data in best possible way. For example, 2D engines create a two-dimensional flat
     * map composed of tiles, while 3D engines can generate panoramas displaying the same coordinates as a 'street view'.
     */
+  @JSGlobal("H.map.render.RenderEngine")
   @js.native
   class RenderEngine protected ()
     extends typings.heremaps.H.map.render.RenderEngine {
@@ -32,14 +32,14 @@ object render extends js.Object {
       options: Options
     ) = this()
   }
-  @js.native
-  object RenderEngine extends js.Object {
+  object RenderEngine {
     
     /**
       * This object defines the modifiers to use for H.map.ViewPort#startInteraction.
       */
+    @JSGlobal("H.map.render.RenderEngine.InteractionModifiers")
     @js.native
-    object InteractionModifiers extends js.Object {
+    object InteractionModifiers extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.heremaps.H.map.render.RenderEngine.InteractionModifiers with Double] = js.native
@@ -59,8 +59,9 @@ object render extends js.Object {
   /**
     * The rendering states of the layer.
     */
+  @JSGlobal("H.map.render.RenderState")
   @js.native
-  object RenderState extends js.Object {
+  object RenderState extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.heremaps.H.map.render.RenderState with Double] = js.native
@@ -75,13 +76,13 @@ object render extends js.Object {
   /**
     * Contains functionality specific to 2D map rendering.
     */
-  @js.native
-  object p2d extends js.Object {
+  object p2d {
     
     /**
       * This class implements a map render engine. It presents a geographic location (camera data from a view model) and renders all map layers in
       * the order in which they are provided in a single 2D canvas element.
       */
+    @JSGlobal("H.map.render.p2d.RenderEngine")
     @js.native
     class RenderEngine protected ()
       extends typings.heremaps.H.map.render.p2d.RenderEngine {

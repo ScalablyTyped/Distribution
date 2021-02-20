@@ -1,11 +1,12 @@
 package typings.awsSdk.wafMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSqlInjectionMatchSetResponse extends js.Object {
+trait GetSqlInjectionMatchSetResponse extends StObject {
   
   /**
     * Information about the SqlInjectionMatchSet that you specified in the GetSqlInjectionMatchSet request. For more information, see the following topics:    SqlInjectionMatchSet: Contains Name, SqlInjectionMatchSetId, and an array of SqlInjectionMatchTuple objects    SqlInjectionMatchTuple: Each SqlInjectionMatchTuple object contains FieldToMatch and TextTransformation     FieldToMatch: Contains Data and Type   
@@ -21,24 +22,12 @@ object GetSqlInjectionMatchSetResponse {
   }
   
   @scala.inline
-  implicit class GetSqlInjectionMatchSetResponseOps[Self <: GetSqlInjectionMatchSetResponse] (val x: Self) extends AnyVal {
+  implicit class GetSqlInjectionMatchSetResponseMutableBuilder[Self <: GetSqlInjectionMatchSetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSqlInjectionMatchSet(value: SqlInjectionMatchSet): Self = StObject.set(x, "SqlInjectionMatchSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSqlInjectionMatchSet(value: SqlInjectionMatchSet): Self = this.set("SqlInjectionMatchSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSqlInjectionMatchSet: Self = this.set("SqlInjectionMatchSet", js.undefined)
+    def setSqlInjectionMatchSetUndefined: Self = StObject.set(x, "SqlInjectionMatchSet", js.undefined)
   }
 }

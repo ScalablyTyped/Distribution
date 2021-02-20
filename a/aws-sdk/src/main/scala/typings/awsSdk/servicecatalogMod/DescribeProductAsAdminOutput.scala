@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeProductAsAdminOutput extends js.Object {
+trait DescribeProductAsAdminOutput extends StObject {
   
   /**
     * Information about the associated budgets.
@@ -41,60 +42,48 @@ object DescribeProductAsAdminOutput {
   }
   
   @scala.inline
-  implicit class DescribeProductAsAdminOutputOps[Self <: DescribeProductAsAdminOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeProductAsAdminOutputMutableBuilder[Self <: DescribeProductAsAdminOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBudgets(value: Budgets): Self = StObject.set(x, "Budgets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBudgetsUndefined: Self = StObject.set(x, "Budgets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBudgetsVarargs(value: BudgetDetail*): Self = StObject.set(x, "Budgets", js.Array(value :_*))
     
     @scala.inline
-    def setBudgetsVarargs(value: BudgetDetail*): Self = this.set("Budgets", js.Array(value :_*))
+    def setProductViewDetail(value: ProductViewDetail): Self = StObject.set(x, "ProductViewDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBudgets(value: Budgets): Self = this.set("Budgets", value.asInstanceOf[js.Any])
+    def setProductViewDetailUndefined: Self = StObject.set(x, "ProductViewDetail", js.undefined)
     
     @scala.inline
-    def deleteBudgets: Self = this.set("Budgets", js.undefined)
+    def setProvisioningArtifactSummaries(value: ProvisioningArtifactSummaries): Self = StObject.set(x, "ProvisioningArtifactSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductViewDetail(value: ProductViewDetail): Self = this.set("ProductViewDetail", value.asInstanceOf[js.Any])
+    def setProvisioningArtifactSummariesUndefined: Self = StObject.set(x, "ProvisioningArtifactSummaries", js.undefined)
     
     @scala.inline
-    def deleteProductViewDetail: Self = this.set("ProductViewDetail", js.undefined)
+    def setProvisioningArtifactSummariesVarargs(value: ProvisioningArtifactSummary*): Self = StObject.set(x, "ProvisioningArtifactSummaries", js.Array(value :_*))
     
     @scala.inline
-    def setProvisioningArtifactSummariesVarargs(value: ProvisioningArtifactSummary*): Self = this.set("ProvisioningArtifactSummaries", js.Array(value :_*))
+    def setTagOptions(value: TagOptionDetails): Self = StObject.set(x, "TagOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisioningArtifactSummaries(value: ProvisioningArtifactSummaries): Self = this.set("ProvisioningArtifactSummaries", value.asInstanceOf[js.Any])
+    def setTagOptionsUndefined: Self = StObject.set(x, "TagOptions", js.undefined)
     
     @scala.inline
-    def deleteProvisioningArtifactSummaries: Self = this.set("ProvisioningArtifactSummaries", js.undefined)
+    def setTagOptionsVarargs(value: TagOptionDetail*): Self = StObject.set(x, "TagOptions", js.Array(value :_*))
     
     @scala.inline
-    def setTagOptionsVarargs(value: TagOptionDetail*): Self = this.set("TagOptions", js.Array(value :_*))
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagOptions(value: TagOptionDetails): Self = this.set("TagOptions", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteTagOptions: Self = this.set("TagOptions", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

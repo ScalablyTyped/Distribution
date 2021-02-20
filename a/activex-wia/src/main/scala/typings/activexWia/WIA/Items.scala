@@ -1,12 +1,13 @@
 package typings.activexWia.WIA
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The Items object contains a collection of Item objects. See the Items property on the Device or Item object for details on accessing the Items object. */
 @js.native
-trait Items extends js.Object {
+trait Items extends StObject {
   
   /** Returns the specified item in the collection by position */
   def apply(Index: Double): Item = js.native

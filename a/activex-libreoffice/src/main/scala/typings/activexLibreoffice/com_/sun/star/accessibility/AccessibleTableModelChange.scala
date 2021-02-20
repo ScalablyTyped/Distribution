@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.accessibility
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 1.1.2
   */
 @js.native
-trait AccessibleTableModelChange extends js.Object {
+trait AccessibleTableModelChange extends StObject {
   
   /**
     * The lowest index of a column that has changed.
@@ -60,33 +61,21 @@ object AccessibleTableModelChange {
   }
   
   @scala.inline
-  implicit class AccessibleTableModelChangeOps[Self <: AccessibleTableModelChange] (val x: Self) extends AnyVal {
+  implicit class AccessibleTableModelChangeMutableBuilder[Self <: AccessibleTableModelChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstColumn(value: Double): Self = StObject.set(x, "FirstColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstRow(value: Double): Self = StObject.set(x, "FirstRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastColumn(value: Double): Self = StObject.set(x, "LastColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstColumn(value: Double): Self = this.set("FirstColumn", value.asInstanceOf[js.Any])
+    def setLastRow(value: Double): Self = StObject.set(x, "LastRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstRow(value: Double): Self = this.set("FirstRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastColumn(value: Double): Self = this.set("LastColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastRow(value: Double): Self = this.set("LastRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Double): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

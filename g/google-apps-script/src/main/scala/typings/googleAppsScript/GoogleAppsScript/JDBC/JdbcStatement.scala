@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.JDBC
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * .
   */
 @js.native
-trait JdbcStatement extends js.Object {
+trait JdbcStatement extends StObject {
   
   def addBatch(sql: String): Unit = js.native
   

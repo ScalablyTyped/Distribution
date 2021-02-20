@@ -3,14 +3,14 @@ package typings.blockingProxy
 import typings.blockingProxy.simpleWebdriverClientMod.SimpleWebDriverClient
 import typings.blockingProxy.webdriverLoggerMod.WebDriverLogger
 import typings.blockingProxy.webdriverProxyMod.WebDriverBarrier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("blocking-proxy/built/lib/angular_wait_barrier", JSImport.Namespace)
-@js.native
-object angularWaitBarrierMod extends js.Object {
+object angularWaitBarrierMod {
   
+  @JSImport("blocking-proxy/built/lib/angular_wait_barrier", "AngularWaitBarrier")
   @js.native
   class AngularWaitBarrier protected () extends WebDriverBarrier {
     def this(client: SimpleWebDriverClient) = this()

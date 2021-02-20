@@ -7,6 +7,7 @@ import typings.pdfmake.pdfmakeStrings.Q
 import typings.pdfmake.pdfmakeStrings.alphanumeric
 import typings.pdfmake.pdfmakeStrings.numeric
 import typings.pdfmake.pdfmakeStrings.octet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,57 +40,45 @@ object ContentQr {
   }
   
   @scala.inline
-  implicit class ContentQrOps[Self <: ContentQr] (val x: Self) extends AnyVal {
+  implicit class ContentQrMutableBuilder[Self <: ContentQr] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEccLevel(value: L | M | Q | H): Self = StObject.set(x, "eccLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEccLevelUndefined: Self = StObject.set(x, "eccLevel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFit(value: Double): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQr(value: String): Self = this.set("qr", value.asInstanceOf[js.Any])
+    def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
     
     @scala.inline
-    def setEccLevel(value: L | M | Q | H): Self = this.set("eccLevel", value.asInstanceOf[js.Any])
+    def setForeground(value: String): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEccLevel: Self = this.set("eccLevel", js.undefined)
+    def setForegroundUndefined: Self = StObject.set(x, "foreground", js.undefined)
     
     @scala.inline
-    def setFit(value: Double): Self = this.set("fit", value.asInstanceOf[js.Any])
+    def setMask(value: Double): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFit: Self = this.set("fit", js.undefined)
+    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
     @scala.inline
-    def setForeground(value: String): Self = this.set("foreground", value.asInstanceOf[js.Any])
+    def setMode(value: numeric | alphanumeric | octet): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForeground: Self = this.set("foreground", js.undefined)
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setMask(value: Double): Self = this.set("mask", value.asInstanceOf[js.Any])
+    def setQr(value: String): Self = StObject.set(x, "qr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMask: Self = this.set("mask", js.undefined)
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: numeric | alphanumeric | octet): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

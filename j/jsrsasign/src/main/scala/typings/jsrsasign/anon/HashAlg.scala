@@ -1,11 +1,12 @@
 package typings.jsrsasign.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HashAlg extends js.Object {
+trait HashAlg extends StObject {
   
   var hashAlg: String = js.native
   
@@ -32,33 +33,21 @@ object HashAlg {
   }
   
   @scala.inline
-  implicit class HashAlgOps[Self <: HashAlg] (val x: Self) extends AnyVal {
+  implicit class HashAlgMutableBuilder[Self <: HashAlg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHashAlg(value: String): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSAttr(value: SignaturePolicyIdentifier): Self = StObject.set(x, "sAttr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSigAlg(value: String): Self = StObject.set(x, "sigAlg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHashAlg(value: String): Self = this.set("hashAlg", value.asInstanceOf[js.Any])
+    def setSignerCert(value: String): Self = StObject.set(x, "signerCert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSAttr(value: SignaturePolicyIdentifier): Self = this.set("sAttr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSigAlg(value: String): Self = this.set("sigAlg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignerCert(value: String): Self = this.set("signerCert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignerPrvKey(value: String): Self = this.set("signerPrvKey", value.asInstanceOf[js.Any])
+    def setSignerPrvKey(value: String): Self = StObject.set(x, "signerPrvKey", value.asInstanceOf[js.Any])
   }
 }

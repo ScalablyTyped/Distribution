@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,72 +75,60 @@ object StructureMapGroup {
   }
   
   @scala.inline
-  implicit class StructureMapGroupOps[Self <: StructureMapGroup] (val x: Self) extends AnyVal {
+  implicit class StructureMapGroupMutableBuilder[Self <: StructureMapGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtends(value: id): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputVarargs(value: StructureMapGroupInput*): Self = this.set("input", js.Array(value :_*))
+    def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
     
     @scala.inline
-    def setInput(value: js.Array[StructureMapGroupInput]): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setInput(value: js.Array[StructureMapGroupInput]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: id): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setInputVarargs(value: StructureMapGroupInput*): Self = StObject.set(x, "input", js.Array(value :_*))
     
     @scala.inline
-    def setRuleVarargs(value: StructureMapGroupRule*): Self = this.set("rule", js.Array(value :_*))
+    def setName(value: id): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRule(value: js.Array[StructureMapGroupRule]): Self = this.set("rule", value.asInstanceOf[js.Any])
+    def setRule(value: js.Array[StructureMapGroupRule]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeMode(value: code): Self = this.set("typeMode", value.asInstanceOf[js.Any])
+    def setRuleVarargs(value: StructureMapGroupRule*): Self = StObject.set(x, "rule", js.Array(value :_*))
     
     @scala.inline
-    def set_documentation(value: Element): Self = this.set("_documentation", value.asInstanceOf[js.Any])
+    def setTypeMode(value: code): Self = StObject.set(x, "typeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_documentation: Self = this.set("_documentation", js.undefined)
+    def set_documentation(value: Element): Self = StObject.set(x, "_documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_extends(value: Element): Self = this.set("_extends", value.asInstanceOf[js.Any])
+    def set_documentationUndefined: Self = StObject.set(x, "_documentation", js.undefined)
     
     @scala.inline
-    def delete_extends: Self = this.set("_extends", js.undefined)
+    def set_extends(value: Element): Self = StObject.set(x, "_extends", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    def set_extendsUndefined: Self = StObject.set(x, "_extends", js.undefined)
     
     @scala.inline
-    def delete_name: Self = this.set("_name", js.undefined)
+    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_typeMode(value: Element): Self = this.set("_typeMode", value.asInstanceOf[js.Any])
+    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
     @scala.inline
-    def delete_typeMode: Self = this.set("_typeMode", js.undefined)
+    def set_typeMode(value: Element): Self = StObject.set(x, "_typeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentation(value: String): Self = this.set("documentation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentation: Self = this.set("documentation", js.undefined)
-    
-    @scala.inline
-    def setExtends(value: id): Self = this.set("extends", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtends: Self = this.set("extends", js.undefined)
+    def set_typeModeUndefined: Self = StObject.set(x, "_typeMode", js.undefined)
   }
 }

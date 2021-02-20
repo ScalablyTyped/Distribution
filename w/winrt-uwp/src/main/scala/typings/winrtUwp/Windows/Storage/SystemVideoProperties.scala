@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A helper object that provides indexing names for video file properties. */
 @js.native
-trait SystemVideoProperties extends js.Object {
+trait SystemVideoProperties extends StObject {
   
   /** Gets the name of the System.Video.Director property (one of the Windows video file properties). */
   var director: String = js.native
@@ -38,33 +39,21 @@ object SystemVideoProperties {
   }
   
   @scala.inline
-  implicit class SystemVideoPropertiesOps[Self <: SystemVideoProperties] (val x: Self) extends AnyVal {
+  implicit class SystemVideoPropertiesMutableBuilder[Self <: SystemVideoProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirector(value: String): Self = StObject.set(x, "director", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrameHeight(value: String): Self = StObject.set(x, "frameHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrameWidth(value: String): Self = StObject.set(x, "frameWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirector(value: String): Self = this.set("director", value.asInstanceOf[js.Any])
+    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameHeight(value: String): Self = this.set("frameHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFrameWidth(value: String): Self = this.set("frameWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalBitrate(value: String): Self = this.set("totalBitrate", value.asInstanceOf[js.Any])
+    def setTotalBitrate(value: String): Self = StObject.set(x, "totalBitrate", value.asInstanceOf[js.Any])
   }
 }

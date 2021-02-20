@@ -1,6 +1,7 @@
 package typings.guacamoleClient.mod
 
 import typings.guacamoleClient.guacCommonMod.Mimetype
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +19,7 @@ class RawAudioPlayer protected ()
   def this(stream: typings.guacamoleClient.inputStreamMod.InputStream, mimetype: Mimetype) = this()
 }
 /* static members */
-@JSImport("guacamole-client", "RawAudioPlayer")
-@js.native
-object RawAudioPlayer extends js.Object {
+object RawAudioPlayer {
   
   /**
     * Returns a list of all mimetypes supported by Guacamole.RawAudioPlayer. Only
@@ -35,6 +34,8 @@ object RawAudioPlayer extends js.Object {
     *     any parameters. If the necessary JavaScript APIs for playing raw audio
     *     are absent, this list will be empty.
     */
+  @JSImport("guacamole-client", "RawAudioPlayer.getSupportedTypes")
+  @js.native
   def getSupportedTypes(): js.Array[Mimetype] = js.native
   
   /**
@@ -43,5 +44,7 @@ object RawAudioPlayer extends js.Object {
     * @param mimetype The mimetype to check.
     * @returns true if the given mimetype is supported by Guacamole.RawAudioPlayer, false otherwise.
     */
+  @JSImport("guacamole-client", "RawAudioPlayer.isSupportedType")
+  @js.native
   def isSupportedType(mimetype: Mimetype): Boolean = js.native
 }

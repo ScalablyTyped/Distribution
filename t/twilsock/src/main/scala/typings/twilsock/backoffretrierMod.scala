@@ -2,17 +2,17 @@ package typings.twilsock
 
 import typings.node.eventsMod.EventEmitter
 import typings.twilsock.anon.Initial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilsock/lib/backoffretrier", JSImport.Namespace)
-@js.native
-object backoffretrierMod extends js.Object {
+object backoffretrierMod {
   
   /**
     * Retrier with backoff override capability
   */
+  @JSImport("twilsock/lib/backoffretrier", "BackoffRetrier")
   @js.native
   class BackoffRetrier protected () extends EventEmitter {
     def this(options: Initial) = this()

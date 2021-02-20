@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.WebAudio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioParam extends js.Object {
+trait AudioParam extends StObject {
   
   var contextId: GraphObjectId = js.native
   
@@ -41,42 +42,30 @@ object AudioParam {
   }
   
   @scala.inline
-  implicit class AudioParamOps[Self <: AudioParam] (val x: Self) extends AnyVal {
+  implicit class AudioParamMutableBuilder[Self <: AudioParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContextId(value: GraphObjectId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextId(value: GraphObjectId): Self = this.set("contextId", value.asInstanceOf[js.Any])
+    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: Double): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setNodeId(value: GraphObjectId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    def setParamId(value: GraphObjectId): Self = StObject.set(x, "paramId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    def setParamType(value: ParamType): Self = StObject.set(x, "paramType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeId(value: GraphObjectId): Self = this.set("nodeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParamId(value: GraphObjectId): Self = this.set("paramId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParamType(value: ParamType): Self = this.set("paramType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRate(value: AutomationRate): Self = this.set("rate", value.asInstanceOf[js.Any])
+    def setRate(value: AutomationRate): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
   }
 }

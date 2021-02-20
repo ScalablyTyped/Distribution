@@ -1,14 +1,15 @@
 package typings.ejWebAll.ej.Sunburst
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Animation extends js.Object
+sealed trait Animation extends StObject
 @JSGlobal("ej.Sunburst.Animation")
 @js.native
-object Animation extends js.Object {
+object Animation extends StObject {
   
   //string
   @js.native

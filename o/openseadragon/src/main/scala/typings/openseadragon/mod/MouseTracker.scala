@@ -1,13 +1,14 @@
 package typings.openseadragon.mod
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openseadragon", "MouseTracker")
 @js.native
-class MouseTracker protected () extends js.Object {
+class MouseTracker protected () extends StObject {
   def this(options: MouseTrackerOptions) = this()
   
   def blurHandler(event: OSDEvent[_]): Unit = js.native

@@ -1,5 +1,6 @@
 package typings.firefoxWebextBrowser.browser.webNavigation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.forward_back
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.from_address_bar
 */
-trait TransitionQualifier extends js.Object
+trait TransitionQualifier extends StObject
 object TransitionQualifier {
   
   @scala.inline

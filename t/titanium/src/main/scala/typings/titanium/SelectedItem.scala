@@ -1,6 +1,7 @@
 package typings.titanium
 
 import typings.titanium.Titanium.UI.ListSection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The arguments for the <Titanium.UI.ListView.itemsselected> event.
   */
 @js.native
-trait SelectedItem extends js.Object {
+trait SelectedItem extends StObject {
   
   /**
     * Item index.
@@ -35,36 +36,24 @@ object SelectedItem {
   }
   
   @scala.inline
-  implicit class SelectedItemOps[Self <: SelectedItem] (val x: Self) extends AnyVal {
+  implicit class SelectedItemMutableBuilder[Self <: SelectedItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItemIndex(value: Double): Self = StObject.set(x, "itemIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemIndexUndefined: Self = StObject.set(x, "itemIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSection(value: ListSection): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemIndex(value: Double): Self = this.set("itemIndex", value.asInstanceOf[js.Any])
+    def setSectionIndex(value: Double): Self = StObject.set(x, "sectionIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItemIndex: Self = this.set("itemIndex", js.undefined)
+    def setSectionIndexUndefined: Self = StObject.set(x, "sectionIndex", js.undefined)
     
     @scala.inline
-    def setSection(value: ListSection): Self = this.set("section", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSection: Self = this.set("section", js.undefined)
-    
-    @scala.inline
-    def setSectionIndex(value: Double): Self = this.set("sectionIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSectionIndex: Self = this.set("sectionIndex", js.undefined)
+    def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Retrieves and sets properties used for fetching a PlayReady-ND license. */
 @js.native
-trait INDLicenseFetchDescriptor extends js.Object {
+trait INDLicenseFetchDescriptor extends StObject {
   
   /** Gets the content identifier used for fetching a license. */
   var contentID: Double = js.native
@@ -26,27 +27,15 @@ object INDLicenseFetchDescriptor {
   }
   
   @scala.inline
-  implicit class INDLicenseFetchDescriptorOps[Self <: INDLicenseFetchDescriptor] (val x: Self) extends AnyVal {
+  implicit class INDLicenseFetchDescriptorMutableBuilder[Self <: INDLicenseFetchDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentID(value: Double): Self = StObject.set(x, "contentID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentIDType(value: NDContentIDType): Self = StObject.set(x, "contentIDType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContentID(value: Double): Self = this.set("contentID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContentIDType(value: NDContentIDType): Self = this.set("contentIDType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLicenseFetchChallengeCustomData(value: INDCustomData): Self = this.set("licenseFetchChallengeCustomData", value.asInstanceOf[js.Any])
+    def setLicenseFetchChallengeCustomData(value: INDCustomData): Self = StObject.set(x, "licenseFetchChallengeCustomData", value.asInstanceOf[js.Any])
   }
 }

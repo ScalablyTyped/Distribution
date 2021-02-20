@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateHITRequest extends js.Object {
+trait CreateHITRequest extends StObject {
   
   /**
     *  The amount of time, in seconds, that a Worker has to complete the HIT after accepting it. If a Worker does not complete the assignment within the specified duration, the assignment is considered abandoned. If the HIT is still active (that is, its lifetime has not elapsed), the assignment becomes available for other users to find and accept. 
@@ -102,105 +103,93 @@ object CreateHITRequest {
   }
   
   @scala.inline
-  implicit class CreateHITRequestOps[Self <: CreateHITRequest] (val x: Self) extends AnyVal {
+  implicit class CreateHITRequestMutableBuilder[Self <: CreateHITRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignmentDurationInSeconds(value: Long): Self = StObject.set(x, "AssignmentDurationInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignmentReviewPolicy(value: ReviewPolicy): Self = StObject.set(x, "AssignmentReviewPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssignmentReviewPolicyUndefined: Self = StObject.set(x, "AssignmentReviewPolicy", js.undefined)
     
     @scala.inline
-    def setAssignmentDurationInSeconds(value: Long): Self = this.set("AssignmentDurationInSeconds", value.asInstanceOf[js.Any])
+    def setAutoApprovalDelayInSeconds(value: Long): Self = StObject.set(x, "AutoApprovalDelayInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setAutoApprovalDelayInSecondsUndefined: Self = StObject.set(x, "AutoApprovalDelayInSeconds", js.undefined)
     
     @scala.inline
-    def setLifetimeInSeconds(value: Long): Self = this.set("LifetimeInSeconds", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReward(value: CurrencyAmount): Self = this.set("Reward", value.asInstanceOf[js.Any])
+    def setHITLayoutId(value: EntityId): Self = StObject.set(x, "HITLayoutId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
+    def setHITLayoutIdUndefined: Self = StObject.set(x, "HITLayoutId", js.undefined)
     
     @scala.inline
-    def setAssignmentReviewPolicy(value: ReviewPolicy): Self = this.set("AssignmentReviewPolicy", value.asInstanceOf[js.Any])
+    def setHITLayoutParameters(value: HITLayoutParameterList): Self = StObject.set(x, "HITLayoutParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssignmentReviewPolicy: Self = this.set("AssignmentReviewPolicy", js.undefined)
+    def setHITLayoutParametersUndefined: Self = StObject.set(x, "HITLayoutParameters", js.undefined)
     
     @scala.inline
-    def setAutoApprovalDelayInSeconds(value: Long): Self = this.set("AutoApprovalDelayInSeconds", value.asInstanceOf[js.Any])
+    def setHITLayoutParametersVarargs(value: HITLayoutParameter*): Self = StObject.set(x, "HITLayoutParameters", js.Array(value :_*))
     
     @scala.inline
-    def deleteAutoApprovalDelayInSeconds: Self = this.set("AutoApprovalDelayInSeconds", js.undefined)
+    def setHITReviewPolicy(value: ReviewPolicy): Self = StObject.set(x, "HITReviewPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHITLayoutId(value: EntityId): Self = this.set("HITLayoutId", value.asInstanceOf[js.Any])
+    def setHITReviewPolicyUndefined: Self = StObject.set(x, "HITReviewPolicy", js.undefined)
     
     @scala.inline
-    def deleteHITLayoutId: Self = this.set("HITLayoutId", js.undefined)
+    def setKeywords(value: String): Self = StObject.set(x, "Keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHITLayoutParametersVarargs(value: HITLayoutParameter*): Self = this.set("HITLayoutParameters", js.Array(value :_*))
+    def setKeywordsUndefined: Self = StObject.set(x, "Keywords", js.undefined)
     
     @scala.inline
-    def setHITLayoutParameters(value: HITLayoutParameterList): Self = this.set("HITLayoutParameters", value.asInstanceOf[js.Any])
+    def setLifetimeInSeconds(value: Long): Self = StObject.set(x, "LifetimeInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHITLayoutParameters: Self = this.set("HITLayoutParameters", js.undefined)
+    def setMaxAssignments(value: Integer): Self = StObject.set(x, "MaxAssignments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHITReviewPolicy(value: ReviewPolicy): Self = this.set("HITReviewPolicy", value.asInstanceOf[js.Any])
+    def setMaxAssignmentsUndefined: Self = StObject.set(x, "MaxAssignments", js.undefined)
     
     @scala.inline
-    def deleteHITReviewPolicy: Self = this.set("HITReviewPolicy", js.undefined)
+    def setQualificationRequirements(value: QualificationRequirementList): Self = StObject.set(x, "QualificationRequirements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: String): Self = this.set("Keywords", value.asInstanceOf[js.Any])
+    def setQualificationRequirementsUndefined: Self = StObject.set(x, "QualificationRequirements", js.undefined)
     
     @scala.inline
-    def deleteKeywords: Self = this.set("Keywords", js.undefined)
+    def setQualificationRequirementsVarargs(value: QualificationRequirement*): Self = StObject.set(x, "QualificationRequirements", js.Array(value :_*))
     
     @scala.inline
-    def setMaxAssignments(value: Integer): Self = this.set("MaxAssignments", value.asInstanceOf[js.Any])
+    def setQuestion(value: String): Self = StObject.set(x, "Question", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxAssignments: Self = this.set("MaxAssignments", js.undefined)
+    def setQuestionUndefined: Self = StObject.set(x, "Question", js.undefined)
     
     @scala.inline
-    def setQualificationRequirementsVarargs(value: QualificationRequirement*): Self = this.set("QualificationRequirements", js.Array(value :_*))
+    def setRequesterAnnotation(value: String): Self = StObject.set(x, "RequesterAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQualificationRequirements(value: QualificationRequirementList): Self = this.set("QualificationRequirements", value.asInstanceOf[js.Any])
+    def setRequesterAnnotationUndefined: Self = StObject.set(x, "RequesterAnnotation", js.undefined)
     
     @scala.inline
-    def deleteQualificationRequirements: Self = this.set("QualificationRequirements", js.undefined)
+    def setReward(value: CurrencyAmount): Self = StObject.set(x, "Reward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuestion(value: String): Self = this.set("Question", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuestion: Self = this.set("Question", js.undefined)
+    def setUniqueRequestToken(value: IdempotencyToken): Self = StObject.set(x, "UniqueRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequesterAnnotation(value: String): Self = this.set("RequesterAnnotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequesterAnnotation: Self = this.set("RequesterAnnotation", js.undefined)
-    
-    @scala.inline
-    def setUniqueRequestToken(value: IdempotencyToken): Self = this.set("UniqueRequestToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniqueRequestToken: Self = this.set("UniqueRequestToken", js.undefined)
+    def setUniqueRequestTokenUndefined: Self = StObject.set(x, "UniqueRequestToken", js.undefined)
   }
 }

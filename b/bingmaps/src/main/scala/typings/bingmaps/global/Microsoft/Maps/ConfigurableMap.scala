@@ -2,6 +2,7 @@ package typings.bingmaps.global.Microsoft.Maps
 
 import typings.bingmaps.Microsoft.Maps.IDictionary
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ConfigurableMap ()
   extends typings.bingmaps.Microsoft.Maps.ConfigurableMap
 /* static members */
-@JSGlobal("Microsoft.Maps.ConfigurableMap")
-@js.native
-object ConfigurableMap extends js.Object {
+object ConfigurableMap {
   
   /**
     * A static function that loads a map using a JSON configuraiton file.
@@ -24,7 +23,11 @@ object ConfigurableMap extends js.Object {
     * @param callback Callback that is triggered when the map loads successfully.
     * @param errorCallback Callback that is triggered when an error occurs when loading the map.
     */
+  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
+  @js.native
   def createFromConfig(element: String, configFileUrl: String, withCredentials: Boolean): Unit = js.native
+  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
+  @js.native
   def createFromConfig(
     element: String,
     configFileUrl: String,
@@ -33,6 +36,8 @@ object ConfigurableMap extends js.Object {
     callback: js.UndefOr[scala.Nothing],
     errorCallback: js.Function1[/* errorMsg */ String, Unit]
   ): Unit = js.native
+  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
+  @js.native
   def createFromConfig(
     element: String,
     configFileUrl: String,
@@ -40,6 +45,8 @@ object ConfigurableMap extends js.Object {
     requestHeaders: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* map */ typings.bingmaps.Microsoft.Maps.Map, Unit]
   ): Unit = js.native
+  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
+  @js.native
   def createFromConfig(
     element: String,
     configFileUrl: String,
@@ -48,12 +55,16 @@ object ConfigurableMap extends js.Object {
     callback: js.Function1[/* map */ typings.bingmaps.Microsoft.Maps.Map, Unit],
     errorCallback: js.Function1[/* errorMsg */ String, Unit]
   ): Unit = js.native
+  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
+  @js.native
   def createFromConfig(
     element: String,
     configFileUrl: String,
     withCredentials: Boolean,
     requestHeaders: IDictionary[String]
   ): Unit = js.native
+  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
+  @js.native
   def createFromConfig(
     element: String,
     configFileUrl: String,
@@ -62,6 +73,8 @@ object ConfigurableMap extends js.Object {
     callback: js.UndefOr[scala.Nothing],
     errorCallback: js.Function1[/* errorMsg */ String, Unit]
   ): Unit = js.native
+  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
+  @js.native
   def createFromConfig(
     element: String,
     configFileUrl: String,
@@ -69,6 +82,8 @@ object ConfigurableMap extends js.Object {
     requestHeaders: IDictionary[String],
     callback: js.Function1[/* map */ typings.bingmaps.Microsoft.Maps.Map, Unit]
   ): Unit = js.native
+  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
+  @js.native
   def createFromConfig(
     element: String,
     configFileUrl: String,
@@ -77,7 +92,11 @@ object ConfigurableMap extends js.Object {
     callback: js.Function1[/* map */ typings.bingmaps.Microsoft.Maps.Map, Unit],
     errorCallback: js.Function1[/* errorMsg */ String, Unit]
   ): Unit = js.native
+  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
+  @js.native
   def createFromConfig(element: HTMLElement, configFileUrl: String, withCredentials: Boolean): Unit = js.native
+  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
+  @js.native
   def createFromConfig(
     element: HTMLElement,
     configFileUrl: String,
@@ -86,6 +105,8 @@ object ConfigurableMap extends js.Object {
     callback: js.UndefOr[scala.Nothing],
     errorCallback: js.Function1[/* errorMsg */ String, Unit]
   ): Unit = js.native
+  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
+  @js.native
   def createFromConfig(
     element: HTMLElement,
     configFileUrl: String,
@@ -93,6 +114,8 @@ object ConfigurableMap extends js.Object {
     requestHeaders: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* map */ typings.bingmaps.Microsoft.Maps.Map, Unit]
   ): Unit = js.native
+  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
+  @js.native
   def createFromConfig(
     element: HTMLElement,
     configFileUrl: String,
@@ -101,12 +124,16 @@ object ConfigurableMap extends js.Object {
     callback: js.Function1[/* map */ typings.bingmaps.Microsoft.Maps.Map, Unit],
     errorCallback: js.Function1[/* errorMsg */ String, Unit]
   ): Unit = js.native
+  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
+  @js.native
   def createFromConfig(
     element: HTMLElement,
     configFileUrl: String,
     withCredentials: Boolean,
     requestHeaders: IDictionary[String]
   ): Unit = js.native
+  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
+  @js.native
   def createFromConfig(
     element: HTMLElement,
     configFileUrl: String,
@@ -115,6 +142,8 @@ object ConfigurableMap extends js.Object {
     callback: js.UndefOr[scala.Nothing],
     errorCallback: js.Function1[/* errorMsg */ String, Unit]
   ): Unit = js.native
+  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
+  @js.native
   def createFromConfig(
     element: HTMLElement,
     configFileUrl: String,
@@ -122,6 +151,8 @@ object ConfigurableMap extends js.Object {
     requestHeaders: IDictionary[String],
     callback: js.Function1[/* map */ typings.bingmaps.Microsoft.Maps.Map, Unit]
   ): Unit = js.native
+  @JSGlobal("Microsoft.Maps.ConfigurableMap.createFromConfig")
+  @js.native
   def createFromConfig(
     element: HTMLElement,
     configFileUrl: String,

@@ -1,11 +1,12 @@
 package typings.awsSdk.forecastserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Metrics extends js.Object {
+trait Metrics extends StObject {
   
   /**
     *  Provides detailed error metrics on forecast type, root-mean square-error (RMSE), and weighted average percentage error (WAPE). 
@@ -31,42 +32,30 @@ object Metrics {
   }
   
   @scala.inline
-  implicit class MetricsOps[Self <: Metrics] (val x: Self) extends AnyVal {
+  implicit class MetricsMutableBuilder[Self <: Metrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorMetrics(value: ErrorMetrics): Self = StObject.set(x, "ErrorMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorMetricsUndefined: Self = StObject.set(x, "ErrorMetrics", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorMetricsVarargs(value: ErrorMetric*): Self = StObject.set(x, "ErrorMetrics", js.Array(value :_*))
     
     @scala.inline
-    def setErrorMetricsVarargs(value: ErrorMetric*): Self = this.set("ErrorMetrics", js.Array(value :_*))
+    def setRMSE(value: Double): Self = StObject.set(x, "RMSE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMetrics(value: ErrorMetrics): Self = this.set("ErrorMetrics", value.asInstanceOf[js.Any])
+    def setRMSEUndefined: Self = StObject.set(x, "RMSE", js.undefined)
     
     @scala.inline
-    def deleteErrorMetrics: Self = this.set("ErrorMetrics", js.undefined)
+    def setWeightedQuantileLosses(value: WeightedQuantileLosses): Self = StObject.set(x, "WeightedQuantileLosses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRMSE(value: Double): Self = this.set("RMSE", value.asInstanceOf[js.Any])
+    def setWeightedQuantileLossesUndefined: Self = StObject.set(x, "WeightedQuantileLosses", js.undefined)
     
     @scala.inline
-    def deleteRMSE: Self = this.set("RMSE", js.undefined)
-    
-    @scala.inline
-    def setWeightedQuantileLossesVarargs(value: WeightedQuantileLoss*): Self = this.set("WeightedQuantileLosses", js.Array(value :_*))
-    
-    @scala.inline
-    def setWeightedQuantileLosses(value: WeightedQuantileLosses): Self = this.set("WeightedQuantileLosses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeightedQuantileLosses: Self = this.set("WeightedQuantileLosses", js.undefined)
+    def setWeightedQuantileLossesVarargs(value: WeightedQuantileLoss*): Self = StObject.set(x, "WeightedQuantileLosses", js.Array(value :_*))
   }
 }

@@ -1,26 +1,13 @@
 package typings.rotJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rot-js/lib/map/map", JSImport.Namespace)
-@js.native
-object mapMapMod extends js.Object {
+object mapMapMod {
   
-  @js.native
-  trait Map extends js.Object {
-    
-    def _fillMap(value: Double): js.Array[js.Array[Double]] = js.native
-    
-    var _height: Double = js.native
-    
-    var _width: Double = js.native
-    
-    def create(): Unit = js.native
-    def create(callback: CreateCallback): Unit = js.native
-  }
-  
+  @JSImport("rot-js/lib/map/map", JSImport.Default)
   @js.native
   /**
     * @class Base map generator
@@ -34,4 +21,17 @@ object mapMapMod extends js.Object {
   }
   
   type CreateCallback = js.Function3[/* x */ Double, /* y */ Double, /* contents */ Double, js.Any]
+  
+  @js.native
+  trait Map extends StObject {
+    
+    def _fillMap(value: Double): js.Array[js.Array[Double]] = js.native
+    
+    var _height: Double = js.native
+    
+    var _width: Double = js.native
+    
+    def create(): Unit = js.native
+    def create(callback: CreateCallback): Unit = js.native
+  }
 }

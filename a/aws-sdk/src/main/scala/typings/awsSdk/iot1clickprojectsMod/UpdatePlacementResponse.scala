@@ -1,8 +1,9 @@
 package typings.awsSdk.iot1clickprojectsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdatePlacementResponse extends js.Object
+trait UpdatePlacementResponse extends StObject

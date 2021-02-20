@@ -1,11 +1,12 @@
 package typings.awsSdk.ioteventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DynamoDBAction extends js.Object {
+trait DynamoDBAction extends StObject {
   
   /**
     * The name of the hash key (also called the partition key).
@@ -63,69 +64,57 @@ object DynamoDBAction {
   }
   
   @scala.inline
-  implicit class DynamoDBActionOps[Self <: DynamoDBAction] (val x: Self) extends AnyVal {
+  implicit class DynamoDBActionMutableBuilder[Self <: DynamoDBAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHashKeyField(value: DynamoKeyField): Self = StObject.set(x, "hashKeyField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHashKeyType(value: DynamoKeyType): Self = StObject.set(x, "hashKeyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHashKeyTypeUndefined: Self = StObject.set(x, "hashKeyType", js.undefined)
     
     @scala.inline
-    def setHashKeyField(value: DynamoKeyField): Self = this.set("hashKeyField", value.asInstanceOf[js.Any])
+    def setHashKeyValue(value: DynamoKeyValue): Self = StObject.set(x, "hashKeyValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHashKeyValue(value: DynamoKeyValue): Self = this.set("hashKeyValue", value.asInstanceOf[js.Any])
+    def setOperation(value: DynamoOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableName(value: DynamoTableName): Self = this.set("tableName", value.asInstanceOf[js.Any])
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     @scala.inline
-    def setHashKeyType(value: DynamoKeyType): Self = this.set("hashKeyType", value.asInstanceOf[js.Any])
+    def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHashKeyType: Self = this.set("hashKeyType", js.undefined)
+    def setPayloadField(value: DynamoKeyField): Self = StObject.set(x, "payloadField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation(value: DynamoOperation): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setPayloadFieldUndefined: Self = StObject.set(x, "payloadField", js.undefined)
     
     @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     @scala.inline
-    def setPayload(value: Payload): Self = this.set("payload", value.asInstanceOf[js.Any])
+    def setRangeKeyField(value: DynamoKeyField): Self = StObject.set(x, "rangeKeyField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
+    def setRangeKeyFieldUndefined: Self = StObject.set(x, "rangeKeyField", js.undefined)
     
     @scala.inline
-    def setPayloadField(value: DynamoKeyField): Self = this.set("payloadField", value.asInstanceOf[js.Any])
+    def setRangeKeyType(value: DynamoKeyType): Self = StObject.set(x, "rangeKeyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePayloadField: Self = this.set("payloadField", js.undefined)
+    def setRangeKeyTypeUndefined: Self = StObject.set(x, "rangeKeyType", js.undefined)
     
     @scala.inline
-    def setRangeKeyField(value: DynamoKeyField): Self = this.set("rangeKeyField", value.asInstanceOf[js.Any])
+    def setRangeKeyValue(value: DynamoKeyValue): Self = StObject.set(x, "rangeKeyValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRangeKeyField: Self = this.set("rangeKeyField", js.undefined)
+    def setRangeKeyValueUndefined: Self = StObject.set(x, "rangeKeyValue", js.undefined)
     
     @scala.inline
-    def setRangeKeyType(value: DynamoKeyType): Self = this.set("rangeKeyType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRangeKeyType: Self = this.set("rangeKeyType", js.undefined)
-    
-    @scala.inline
-    def setRangeKeyValue(value: DynamoKeyValue): Self = this.set("rangeKeyValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRangeKeyValue: Self = this.set("rangeKeyValue", js.undefined)
+    def setTableName(value: DynamoTableName): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
   }
 }

@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.awt.grid
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,30 +49,18 @@ object XGridDataListener {
   }
   
   @scala.inline
-  implicit class XGridDataListenerOps[Self <: XGridDataListener] (val x: Self) extends AnyVal {
+  implicit class XGridDataListenerMutableBuilder[Self <: XGridDataListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataChanged(value: GridDataEvent => Unit): Self = StObject.set(x, "dataChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRowHeadingChanged(value: GridDataEvent => Unit): Self = StObject.set(x, "rowHeadingChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRowsInserted(value: GridDataEvent => Unit): Self = StObject.set(x, "rowsInserted", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDataChanged(value: GridDataEvent => Unit): Self = this.set("dataChanged", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRowHeadingChanged(value: GridDataEvent => Unit): Self = this.set("rowHeadingChanged", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRowsInserted(value: GridDataEvent => Unit): Self = this.set("rowsInserted", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRowsRemoved(value: GridDataEvent => Unit): Self = this.set("rowsRemoved", js.Any.fromFunction1(value))
+    def setRowsRemoved(value: GridDataEvent => Unit): Self = StObject.set(x, "rowsRemoved", js.Any.fromFunction1(value))
   }
 }

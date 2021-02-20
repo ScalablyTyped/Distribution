@@ -3,6 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.std.HTMLElement
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,60 +73,48 @@ object symbolPreviewRenderPreviewHTMLOptions {
   }
   
   @scala.inline
-  implicit class symbolPreviewRenderPreviewHTMLOptionsOps[Self <: symbolPreviewRenderPreviewHTMLOptions] (val x: Self) extends AnyVal {
+  implicit class symbolPreviewRenderPreviewHTMLOptionsMutableBuilder[Self <: symbolPreviewRenderPreviewHTMLOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableUpsampling(value: Boolean): Self = StObject.set(x, "disableUpsampling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableUpsamplingUndefined: Self = StObject.set(x, "disableUpsampling", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableUpsampling(value: Boolean): Self = this.set("disableUpsampling", value.asInstanceOf[js.Any])
+    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
     @scala.inline
-    def deleteDisableUpsampling: Self = this.set("disableUpsampling", js.undefined)
+    def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSize(value: Double): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
     @scala.inline
-    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode(value: HTMLElement): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteNode: Self = this.set("node", js.undefined)
+    def setScale(value: Boolean): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: Boolean): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setSymbolConfig(value: String): Self = StObject.set(x, "symbolConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setSymbolConfig(value: String): Self = this.set("symbolConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSymbolConfig: Self = this.set("symbolConfig", js.undefined)
+    def setSymbolConfigUndefined: Self = StObject.set(x, "symbolConfig", js.undefined)
   }
 }

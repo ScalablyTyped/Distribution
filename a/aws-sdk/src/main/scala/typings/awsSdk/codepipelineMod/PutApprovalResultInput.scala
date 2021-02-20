@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutApprovalResultInput extends js.Object {
+trait PutApprovalResultInput extends StObject {
   
   /**
     * The name of the action for which approval is requested.
@@ -47,33 +48,21 @@ object PutApprovalResultInput {
   }
   
   @scala.inline
-  implicit class PutApprovalResultInputOps[Self <: PutApprovalResultInput] (val x: Self) extends AnyVal {
+  implicit class PutApprovalResultInputMutableBuilder[Self <: PutApprovalResultInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionName(value: ActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResult(value: ApprovalResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionName(value: ActionName): Self = this.set("actionName", value.asInstanceOf[js.Any])
+    def setStageName(value: StageName): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipelineName(value: PipelineName): Self = this.set("pipelineName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResult(value: ApprovalResult): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStageName(value: StageName): Self = this.set("stageName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToken(value: ApprovalToken): Self = this.set("token", value.asInstanceOf[js.Any])
+    def setToken(value: ApprovalToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

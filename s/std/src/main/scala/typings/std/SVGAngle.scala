@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to represent a value that can be an <angle> or <number> value. An SVGAngle reflected through the animVal attribute is always read only. */
 @js.native
-trait SVGAngle extends js.Object {
+trait SVGAngle extends StObject {
   
   val SVG_ANGLETYPE_DEG: Double = js.native
   
@@ -51,51 +52,39 @@ object SVGAngle {
   }
   
   @scala.inline
-  implicit class SVGAngleOps[Self <: SVGAngle] (val x: Self) extends AnyVal {
+  implicit class SVGAngleMutableBuilder[Self <: SVGAngle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConvertToSpecifiedUnits(value: Double => Unit): Self = StObject.set(x, "convertToSpecifiedUnits", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewValueSpecifiedUnits(value: (Double, Double) => Unit): Self = StObject.set(x, "newValueSpecifiedUnits", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSVG_ANGLETYPE_DEG(value: Double): Self = StObject.set(x, "SVG_ANGLETYPE_DEG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSVG_ANGLETYPE_DEG(value: Double): Self = this.set("SVG_ANGLETYPE_DEG", value.asInstanceOf[js.Any])
+    def setSVG_ANGLETYPE_GRAD(value: Double): Self = StObject.set(x, "SVG_ANGLETYPE_GRAD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSVG_ANGLETYPE_GRAD(value: Double): Self = this.set("SVG_ANGLETYPE_GRAD", value.asInstanceOf[js.Any])
+    def setSVG_ANGLETYPE_RAD(value: Double): Self = StObject.set(x, "SVG_ANGLETYPE_RAD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSVG_ANGLETYPE_RAD(value: Double): Self = this.set("SVG_ANGLETYPE_RAD", value.asInstanceOf[js.Any])
+    def setSVG_ANGLETYPE_UNKNOWN(value: Double): Self = StObject.set(x, "SVG_ANGLETYPE_UNKNOWN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSVG_ANGLETYPE_UNKNOWN(value: Double): Self = this.set("SVG_ANGLETYPE_UNKNOWN", value.asInstanceOf[js.Any])
+    def setSVG_ANGLETYPE_UNSPECIFIED(value: Double): Self = StObject.set(x, "SVG_ANGLETYPE_UNSPECIFIED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSVG_ANGLETYPE_UNSPECIFIED(value: Double): Self = this.set("SVG_ANGLETYPE_UNSPECIFIED", value.asInstanceOf[js.Any])
+    def setUnitType(value: Double): Self = StObject.set(x, "unitType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertToSpecifiedUnits(value: Double => Unit): Self = this.set("convertToSpecifiedUnits", js.Any.fromFunction1(value))
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewValueSpecifiedUnits(value: (Double, Double) => Unit): Self = this.set("newValueSpecifiedUnits", js.Any.fromFunction2(value))
+    def setValueAsString(value: java.lang.String): Self = StObject.set(x, "valueAsString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnitType(value: Double): Self = this.set("unitType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueAsString(value: java.lang.String): Self = this.set("valueAsString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueInSpecifiedUnits(value: Double): Self = this.set("valueInSpecifiedUnits", value.asInstanceOf[js.Any])
+    def setValueInSpecifiedUnits(value: Double): Self = StObject.set(x, "valueInSpecifiedUnits", value.asInstanceOf[js.Any])
   }
 }

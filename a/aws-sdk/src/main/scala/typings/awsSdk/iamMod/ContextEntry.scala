@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContextEntry extends js.Object {
+trait ContextEntry extends StObject {
   
   /**
     * The full name of a condition context key, including the service prefix. For example, aws:SourceIp or s3:VersionId.
@@ -31,39 +32,27 @@ object ContextEntry {
   }
   
   @scala.inline
-  implicit class ContextEntryOps[Self <: ContextEntry] (val x: Self) extends AnyVal {
+  implicit class ContextEntryMutableBuilder[Self <: ContextEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContextKeyName(value: ContextKeyNameType): Self = StObject.set(x, "ContextKeyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextKeyNameUndefined: Self = StObject.set(x, "ContextKeyName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextKeyType(value: ContextKeyTypeEnum): Self = StObject.set(x, "ContextKeyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextKeyName(value: ContextKeyNameType): Self = this.set("ContextKeyName", value.asInstanceOf[js.Any])
+    def setContextKeyTypeUndefined: Self = StObject.set(x, "ContextKeyType", js.undefined)
     
     @scala.inline
-    def deleteContextKeyName: Self = this.set("ContextKeyName", js.undefined)
+    def setContextKeyValues(value: ContextKeyValueListType): Self = StObject.set(x, "ContextKeyValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextKeyType(value: ContextKeyTypeEnum): Self = this.set("ContextKeyType", value.asInstanceOf[js.Any])
+    def setContextKeyValuesUndefined: Self = StObject.set(x, "ContextKeyValues", js.undefined)
     
     @scala.inline
-    def deleteContextKeyType: Self = this.set("ContextKeyType", js.undefined)
-    
-    @scala.inline
-    def setContextKeyValuesVarargs(value: ContextKeyValueType*): Self = this.set("ContextKeyValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setContextKeyValues(value: ContextKeyValueListType): Self = this.set("ContextKeyValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContextKeyValues: Self = this.set("ContextKeyValues", js.undefined)
+    def setContextKeyValuesVarargs(value: ContextKeyValueType*): Self = StObject.set(x, "ContextKeyValues", js.Array(value :_*))
   }
 }

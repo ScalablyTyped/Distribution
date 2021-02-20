@@ -2,12 +2,13 @@ package typings.amapJsApi.anon
 
 import typings.amapJsApi.AMap.LngLat
 import typings.amapJsApi.AMap.Pixel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Lnglat[I] extends js.Object {
+trait Lnglat[I] extends StObject {
   
   /**
     * 经纬度坐标
@@ -33,27 +34,15 @@ object Lnglat {
   }
   
   @scala.inline
-  implicit class LnglatOps[Self <: Lnglat[_], I] (val x: Self with Lnglat[I]) extends AnyVal {
+  implicit class LnglatMutableBuilder[Self <: Lnglat[_], I] (val x: Self with Lnglat[I]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLnglat(value: LngLat): Self = StObject.set(x, "lnglat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPixel(value: Pixel): Self = StObject.set(x, "pixel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLnglat(value: LngLat): Self = this.set("lnglat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPixel(value: Pixel): Self = this.set("pixel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: I): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTarget(value: I): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

@@ -17,12 +17,13 @@ import typings.algoliaClientSearch.algoliaClientSearchStrings.prefixNone
 import typings.algoliaClientSearch.algoliaClientSearchStrings.singleWordSynonym
 import typings.algoliaClientSearch.algoliaClientSearchStrings.word
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Settings extends js.Object {
+trait Settings extends StObject {
   
   /**
     * Enables the advanced query syntax.
@@ -319,429 +320,417 @@ object Settings {
   }
   
   @scala.inline
-  implicit class SettingsOps[Self <: Settings] (val x: Self) extends AnyVal {
+  implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvancedSyntax(value: Boolean): Self = StObject.set(x, "advancedSyntax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvancedSyntaxFeatures(value: js.Array[exactPhrase | excludeWords]): Self = StObject.set(x, "advancedSyntaxFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdvancedSyntaxFeaturesUndefined: Self = StObject.set(x, "advancedSyntaxFeatures", js.undefined)
     
     @scala.inline
-    def setAdvancedSyntax(value: Boolean): Self = this.set("advancedSyntax", value.asInstanceOf[js.Any])
+    def setAdvancedSyntaxFeaturesVarargs(value: (exactPhrase | excludeWords)*): Self = StObject.set(x, "advancedSyntaxFeatures", js.Array(value :_*))
     
     @scala.inline
-    def deleteAdvancedSyntax: Self = this.set("advancedSyntax", js.undefined)
+    def setAdvancedSyntaxUndefined: Self = StObject.set(x, "advancedSyntax", js.undefined)
     
     @scala.inline
-    def setAdvancedSyntaxFeaturesVarargs(value: (exactPhrase | excludeWords)*): Self = this.set("advancedSyntaxFeatures", js.Array(value :_*))
+    def setAllowCompressionOfIntegerArray(value: Boolean): Self = StObject.set(x, "allowCompressionOfIntegerArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvancedSyntaxFeatures(value: js.Array[exactPhrase | excludeWords]): Self = this.set("advancedSyntaxFeatures", value.asInstanceOf[js.Any])
+    def setAllowCompressionOfIntegerArrayUndefined: Self = StObject.set(x, "allowCompressionOfIntegerArray", js.undefined)
     
     @scala.inline
-    def deleteAdvancedSyntaxFeatures: Self = this.set("advancedSyntaxFeatures", js.undefined)
+    def setAllowTyposOnNumericTokens(value: Boolean): Self = StObject.set(x, "allowTyposOnNumericTokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowCompressionOfIntegerArray(value: Boolean): Self = this.set("allowCompressionOfIntegerArray", value.asInstanceOf[js.Any])
+    def setAllowTyposOnNumericTokensUndefined: Self = StObject.set(x, "allowTyposOnNumericTokens", js.undefined)
     
     @scala.inline
-    def deleteAllowCompressionOfIntegerArray: Self = this.set("allowCompressionOfIntegerArray", js.undefined)
+    def setAlternativesAsExact(value: js.Array[ignorePlurals | singleWordSynonym | multiWordsSynonym]): Self = StObject.set(x, "alternativesAsExact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowTyposOnNumericTokens(value: Boolean): Self = this.set("allowTyposOnNumericTokens", value.asInstanceOf[js.Any])
+    def setAlternativesAsExactUndefined: Self = StObject.set(x, "alternativesAsExact", js.undefined)
     
     @scala.inline
-    def deleteAllowTyposOnNumericTokens: Self = this.set("allowTyposOnNumericTokens", js.undefined)
+    def setAlternativesAsExactVarargs(value: (ignorePlurals | singleWordSynonym | multiWordsSynonym)*): Self = StObject.set(x, "alternativesAsExact", js.Array(value :_*))
     
     @scala.inline
-    def setAlternativesAsExactVarargs(value: (ignorePlurals | singleWordSynonym | multiWordsSynonym)*): Self = this.set("alternativesAsExact", js.Array(value :_*))
+    def setAttributeCriteriaComputedByMinProximity(value: Boolean): Self = StObject.set(x, "attributeCriteriaComputedByMinProximity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternativesAsExact(value: js.Array[ignorePlurals | singleWordSynonym | multiWordsSynonym]): Self = this.set("alternativesAsExact", value.asInstanceOf[js.Any])
+    def setAttributeCriteriaComputedByMinProximityUndefined: Self = StObject.set(x, "attributeCriteriaComputedByMinProximity", js.undefined)
     
     @scala.inline
-    def deleteAlternativesAsExact: Self = this.set("alternativesAsExact", js.undefined)
+    def setAttributeForDistinct(value: String): Self = StObject.set(x, "attributeForDistinct", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeCriteriaComputedByMinProximity(value: Boolean): Self = this.set("attributeCriteriaComputedByMinProximity", value.asInstanceOf[js.Any])
+    def setAttributeForDistinctUndefined: Self = StObject.set(x, "attributeForDistinct", js.undefined)
     
     @scala.inline
-    def deleteAttributeCriteriaComputedByMinProximity: Self = this.set("attributeCriteriaComputedByMinProximity", js.undefined)
+    def setAttributesForFaceting(value: js.Array[String]): Self = StObject.set(x, "attributesForFaceting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeForDistinct(value: String): Self = this.set("attributeForDistinct", value.asInstanceOf[js.Any])
+    def setAttributesForFacetingUndefined: Self = StObject.set(x, "attributesForFaceting", js.undefined)
     
     @scala.inline
-    def deleteAttributeForDistinct: Self = this.set("attributeForDistinct", js.undefined)
+    def setAttributesForFacetingVarargs(value: String*): Self = StObject.set(x, "attributesForFaceting", js.Array(value :_*))
     
     @scala.inline
-    def setAttributesForFacetingVarargs(value: String*): Self = this.set("attributesForFaceting", js.Array(value :_*))
+    def setAttributesToHighlight(value: js.Array[String]): Self = StObject.set(x, "attributesToHighlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributesForFaceting(value: js.Array[String]): Self = this.set("attributesForFaceting", value.asInstanceOf[js.Any])
+    def setAttributesToHighlightUndefined: Self = StObject.set(x, "attributesToHighlight", js.undefined)
     
     @scala.inline
-    def deleteAttributesForFaceting: Self = this.set("attributesForFaceting", js.undefined)
+    def setAttributesToHighlightVarargs(value: String*): Self = StObject.set(x, "attributesToHighlight", js.Array(value :_*))
     
     @scala.inline
-    def setAttributesToHighlightVarargs(value: String*): Self = this.set("attributesToHighlight", js.Array(value :_*))
+    def setAttributesToIndex(value: js.Array[String]): Self = StObject.set(x, "attributesToIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributesToHighlight(value: js.Array[String]): Self = this.set("attributesToHighlight", value.asInstanceOf[js.Any])
+    def setAttributesToIndexUndefined: Self = StObject.set(x, "attributesToIndex", js.undefined)
     
     @scala.inline
-    def deleteAttributesToHighlight: Self = this.set("attributesToHighlight", js.undefined)
+    def setAttributesToIndexVarargs(value: String*): Self = StObject.set(x, "attributesToIndex", js.Array(value :_*))
     
     @scala.inline
-    def setAttributesToIndexVarargs(value: String*): Self = this.set("attributesToIndex", js.Array(value :_*))
+    def setAttributesToRetrieve(value: js.Array[String]): Self = StObject.set(x, "attributesToRetrieve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributesToIndex(value: js.Array[String]): Self = this.set("attributesToIndex", value.asInstanceOf[js.Any])
+    def setAttributesToRetrieveUndefined: Self = StObject.set(x, "attributesToRetrieve", js.undefined)
     
     @scala.inline
-    def deleteAttributesToIndex: Self = this.set("attributesToIndex", js.undefined)
+    def setAttributesToRetrieveVarargs(value: String*): Self = StObject.set(x, "attributesToRetrieve", js.Array(value :_*))
     
     @scala.inline
-    def setAttributesToRetrieveVarargs(value: String*): Self = this.set("attributesToRetrieve", js.Array(value :_*))
+    def setAttributesToSnippet(value: js.Array[String]): Self = StObject.set(x, "attributesToSnippet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributesToRetrieve(value: js.Array[String]): Self = this.set("attributesToRetrieve", value.asInstanceOf[js.Any])
+    def setAttributesToSnippetUndefined: Self = StObject.set(x, "attributesToSnippet", js.undefined)
     
     @scala.inline
-    def deleteAttributesToRetrieve: Self = this.set("attributesToRetrieve", js.undefined)
+    def setAttributesToSnippetVarargs(value: String*): Self = StObject.set(x, "attributesToSnippet", js.Array(value :_*))
     
     @scala.inline
-    def setAttributesToSnippetVarargs(value: String*): Self = this.set("attributesToSnippet", js.Array(value :_*))
+    def setCamelCaseAttributes(value: js.Array[String]): Self = StObject.set(x, "camelCaseAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributesToSnippet(value: js.Array[String]): Self = this.set("attributesToSnippet", value.asInstanceOf[js.Any])
+    def setCamelCaseAttributesUndefined: Self = StObject.set(x, "camelCaseAttributes", js.undefined)
     
     @scala.inline
-    def deleteAttributesToSnippet: Self = this.set("attributesToSnippet", js.undefined)
+    def setCamelCaseAttributesVarargs(value: String*): Self = StObject.set(x, "camelCaseAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setCamelCaseAttributesVarargs(value: String*): Self = this.set("camelCaseAttributes", js.Array(value :_*))
+    def setCustomNormalization(value: Record[String, Record[String, String]]): Self = StObject.set(x, "customNormalization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCamelCaseAttributes(value: js.Array[String]): Self = this.set("camelCaseAttributes", value.asInstanceOf[js.Any])
+    def setCustomNormalizationUndefined: Self = StObject.set(x, "customNormalization", js.undefined)
     
     @scala.inline
-    def deleteCamelCaseAttributes: Self = this.set("camelCaseAttributes", js.undefined)
+    def setCustomRanking(value: js.Array[String]): Self = StObject.set(x, "customRanking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomNormalization(value: Record[String, Record[String, String]]): Self = this.set("customNormalization", value.asInstanceOf[js.Any])
+    def setCustomRankingUndefined: Self = StObject.set(x, "customRanking", js.undefined)
     
     @scala.inline
-    def deleteCustomNormalization: Self = this.set("customNormalization", js.undefined)
+    def setCustomRankingVarargs(value: String*): Self = StObject.set(x, "customRanking", js.Array(value :_*))
     
     @scala.inline
-    def setCustomRankingVarargs(value: String*): Self = this.set("customRanking", js.Array(value :_*))
+    def setDecompoundedAttributes(value: Record[String, js.Array[String]]): Self = StObject.set(x, "decompoundedAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomRanking(value: js.Array[String]): Self = this.set("customRanking", value.asInstanceOf[js.Any])
+    def setDecompoundedAttributesUndefined: Self = StObject.set(x, "decompoundedAttributes", js.undefined)
     
     @scala.inline
-    def deleteCustomRanking: Self = this.set("customRanking", js.undefined)
+    def setDisableExactOnAttributes(value: js.Array[String]): Self = StObject.set(x, "disableExactOnAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecompoundedAttributes(value: Record[String, js.Array[String]]): Self = this.set("decompoundedAttributes", value.asInstanceOf[js.Any])
+    def setDisableExactOnAttributesUndefined: Self = StObject.set(x, "disableExactOnAttributes", js.undefined)
     
     @scala.inline
-    def deleteDecompoundedAttributes: Self = this.set("decompoundedAttributes", js.undefined)
+    def setDisableExactOnAttributesVarargs(value: String*): Self = StObject.set(x, "disableExactOnAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setDisableExactOnAttributesVarargs(value: String*): Self = this.set("disableExactOnAttributes", js.Array(value :_*))
+    def setDisablePrefixOnAttributes(value: js.Array[String]): Self = StObject.set(x, "disablePrefixOnAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableExactOnAttributes(value: js.Array[String]): Self = this.set("disableExactOnAttributes", value.asInstanceOf[js.Any])
+    def setDisablePrefixOnAttributesUndefined: Self = StObject.set(x, "disablePrefixOnAttributes", js.undefined)
     
     @scala.inline
-    def deleteDisableExactOnAttributes: Self = this.set("disableExactOnAttributes", js.undefined)
+    def setDisablePrefixOnAttributesVarargs(value: String*): Self = StObject.set(x, "disablePrefixOnAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setDisablePrefixOnAttributesVarargs(value: String*): Self = this.set("disablePrefixOnAttributes", js.Array(value :_*))
+    def setDisableTypoToleranceOnAttributes(value: js.Array[String]): Self = StObject.set(x, "disableTypoToleranceOnAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisablePrefixOnAttributes(value: js.Array[String]): Self = this.set("disablePrefixOnAttributes", value.asInstanceOf[js.Any])
+    def setDisableTypoToleranceOnAttributesUndefined: Self = StObject.set(x, "disableTypoToleranceOnAttributes", js.undefined)
     
     @scala.inline
-    def deleteDisablePrefixOnAttributes: Self = this.set("disablePrefixOnAttributes", js.undefined)
+    def setDisableTypoToleranceOnAttributesVarargs(value: String*): Self = StObject.set(x, "disableTypoToleranceOnAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setDisableTypoToleranceOnAttributesVarargs(value: String*): Self = this.set("disableTypoToleranceOnAttributes", js.Array(value :_*))
+    def setDisableTypoToleranceOnWords(value: js.Array[String]): Self = StObject.set(x, "disableTypoToleranceOnWords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableTypoToleranceOnAttributes(value: js.Array[String]): Self = this.set("disableTypoToleranceOnAttributes", value.asInstanceOf[js.Any])
+    def setDisableTypoToleranceOnWordsUndefined: Self = StObject.set(x, "disableTypoToleranceOnWords", js.undefined)
     
     @scala.inline
-    def deleteDisableTypoToleranceOnAttributes: Self = this.set("disableTypoToleranceOnAttributes", js.undefined)
+    def setDisableTypoToleranceOnWordsVarargs(value: String*): Self = StObject.set(x, "disableTypoToleranceOnWords", js.Array(value :_*))
     
     @scala.inline
-    def setDisableTypoToleranceOnWordsVarargs(value: String*): Self = this.set("disableTypoToleranceOnWords", js.Array(value :_*))
+    def setDistinct(value: Boolean | Double): Self = StObject.set(x, "distinct", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableTypoToleranceOnWords(value: js.Array[String]): Self = this.set("disableTypoToleranceOnWords", value.asInstanceOf[js.Any])
+    def setDistinctUndefined: Self = StObject.set(x, "distinct", js.undefined)
     
     @scala.inline
-    def deleteDisableTypoToleranceOnWords: Self = this.set("disableTypoToleranceOnWords", js.undefined)
+    def setEnablePersonalization(value: Boolean): Self = StObject.set(x, "enablePersonalization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistinct(value: Boolean | Double): Self = this.set("distinct", value.asInstanceOf[js.Any])
+    def setEnablePersonalizationUndefined: Self = StObject.set(x, "enablePersonalization", js.undefined)
     
     @scala.inline
-    def deleteDistinct: Self = this.set("distinct", js.undefined)
+    def setEnableRules(value: Boolean): Self = StObject.set(x, "enableRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablePersonalization(value: Boolean): Self = this.set("enablePersonalization", value.asInstanceOf[js.Any])
+    def setEnableRulesUndefined: Self = StObject.set(x, "enableRules", js.undefined)
     
     @scala.inline
-    def deleteEnablePersonalization: Self = this.set("enablePersonalization", js.undefined)
+    def setExactOnSingleWordQuery(value: attribute | none | word): Self = StObject.set(x, "exactOnSingleWordQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableRules(value: Boolean): Self = this.set("enableRules", value.asInstanceOf[js.Any])
+    def setExactOnSingleWordQueryUndefined: Self = StObject.set(x, "exactOnSingleWordQuery", js.undefined)
     
     @scala.inline
-    def deleteEnableRules: Self = this.set("enableRules", js.undefined)
+    def setHighlightPostTag(value: String): Self = StObject.set(x, "highlightPostTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExactOnSingleWordQuery(value: attribute | none | word): Self = this.set("exactOnSingleWordQuery", value.asInstanceOf[js.Any])
+    def setHighlightPostTagUndefined: Self = StObject.set(x, "highlightPostTag", js.undefined)
     
     @scala.inline
-    def deleteExactOnSingleWordQuery: Self = this.set("exactOnSingleWordQuery", js.undefined)
+    def setHighlightPreTag(value: String): Self = StObject.set(x, "highlightPreTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightPostTag(value: String): Self = this.set("highlightPostTag", value.asInstanceOf[js.Any])
+    def setHighlightPreTagUndefined: Self = StObject.set(x, "highlightPreTag", js.undefined)
     
     @scala.inline
-    def deleteHighlightPostTag: Self = this.set("highlightPostTag", js.undefined)
+    def setHitsPerPage(value: Double): Self = StObject.set(x, "hitsPerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightPreTag(value: String): Self = this.set("highlightPreTag", value.asInstanceOf[js.Any])
+    def setHitsPerPageUndefined: Self = StObject.set(x, "hitsPerPage", js.undefined)
     
     @scala.inline
-    def deleteHighlightPreTag: Self = this.set("highlightPreTag", js.undefined)
+    def setIgnorePlurals(value: js.Array[String] | Boolean): Self = StObject.set(x, "ignorePlurals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHitsPerPage(value: Double): Self = this.set("hitsPerPage", value.asInstanceOf[js.Any])
+    def setIgnorePluralsUndefined: Self = StObject.set(x, "ignorePlurals", js.undefined)
     
     @scala.inline
-    def deleteHitsPerPage: Self = this.set("hitsPerPage", js.undefined)
+    def setIgnorePluralsVarargs(value: String*): Self = StObject.set(x, "ignorePlurals", js.Array(value :_*))
     
     @scala.inline
-    def setIgnorePluralsVarargs(value: String*): Self = this.set("ignorePlurals", js.Array(value :_*))
+    def setIndexLanguages(value: js.Array[String]): Self = StObject.set(x, "indexLanguages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnorePlurals(value: js.Array[String] | Boolean): Self = this.set("ignorePlurals", value.asInstanceOf[js.Any])
+    def setIndexLanguagesUndefined: Self = StObject.set(x, "indexLanguages", js.undefined)
     
     @scala.inline
-    def deleteIgnorePlurals: Self = this.set("ignorePlurals", js.undefined)
+    def setIndexLanguagesVarargs(value: String*): Self = StObject.set(x, "indexLanguages", js.Array(value :_*))
     
     @scala.inline
-    def setIndexLanguagesVarargs(value: String*): Self = this.set("indexLanguages", js.Array(value :_*))
+    def setKeepDiacriticsOnCharacters(value: String): Self = StObject.set(x, "keepDiacriticsOnCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexLanguages(value: js.Array[String]): Self = this.set("indexLanguages", value.asInstanceOf[js.Any])
+    def setKeepDiacriticsOnCharactersUndefined: Self = StObject.set(x, "keepDiacriticsOnCharacters", js.undefined)
     
     @scala.inline
-    def deleteIndexLanguages: Self = this.set("indexLanguages", js.undefined)
+    def setMaxFacetHits(value: Double): Self = StObject.set(x, "maxFacetHits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepDiacriticsOnCharacters(value: String): Self = this.set("keepDiacriticsOnCharacters", value.asInstanceOf[js.Any])
+    def setMaxFacetHitsUndefined: Self = StObject.set(x, "maxFacetHits", js.undefined)
     
     @scala.inline
-    def deleteKeepDiacriticsOnCharacters: Self = this.set("keepDiacriticsOnCharacters", js.undefined)
+    def setMaxValuesPerFacet(value: Double): Self = StObject.set(x, "maxValuesPerFacet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFacetHits(value: Double): Self = this.set("maxFacetHits", value.asInstanceOf[js.Any])
+    def setMaxValuesPerFacetUndefined: Self = StObject.set(x, "maxValuesPerFacet", js.undefined)
     
     @scala.inline
-    def deleteMaxFacetHits: Self = this.set("maxFacetHits", js.undefined)
+    def setMinProximity(value: Double): Self = StObject.set(x, "minProximity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValuesPerFacet(value: Double): Self = this.set("maxValuesPerFacet", value.asInstanceOf[js.Any])
+    def setMinProximityUndefined: Self = StObject.set(x, "minProximity", js.undefined)
     
     @scala.inline
-    def deleteMaxValuesPerFacet: Self = this.set("maxValuesPerFacet", js.undefined)
+    def setMinWordSizefor1Typo(value: Double): Self = StObject.set(x, "minWordSizefor1Typo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinProximity(value: Double): Self = this.set("minProximity", value.asInstanceOf[js.Any])
+    def setMinWordSizefor1TypoUndefined: Self = StObject.set(x, "minWordSizefor1Typo", js.undefined)
     
     @scala.inline
-    def deleteMinProximity: Self = this.set("minProximity", js.undefined)
+    def setMinWordSizefor2Typos(value: Double): Self = StObject.set(x, "minWordSizefor2Typos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinWordSizefor1Typo(value: Double): Self = this.set("minWordSizefor1Typo", value.asInstanceOf[js.Any])
+    def setMinWordSizefor2TyposUndefined: Self = StObject.set(x, "minWordSizefor2Typos", js.undefined)
     
     @scala.inline
-    def deleteMinWordSizefor1Typo: Self = this.set("minWordSizefor1Typo", js.undefined)
+    def setNumericAttributesForFiltering(value: js.Array[String]): Self = StObject.set(x, "numericAttributesForFiltering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinWordSizefor2Typos(value: Double): Self = this.set("minWordSizefor2Typos", value.asInstanceOf[js.Any])
+    def setNumericAttributesForFilteringUndefined: Self = StObject.set(x, "numericAttributesForFiltering", js.undefined)
     
     @scala.inline
-    def deleteMinWordSizefor2Typos: Self = this.set("minWordSizefor2Typos", js.undefined)
+    def setNumericAttributesForFilteringVarargs(value: String*): Self = StObject.set(x, "numericAttributesForFiltering", js.Array(value :_*))
     
     @scala.inline
-    def setNumericAttributesForFilteringVarargs(value: String*): Self = this.set("numericAttributesForFiltering", js.Array(value :_*))
+    def setOptionalWords(value: js.Array[String]): Self = StObject.set(x, "optionalWords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumericAttributesForFiltering(value: js.Array[String]): Self = this.set("numericAttributesForFiltering", value.asInstanceOf[js.Any])
+    def setOptionalWordsUndefined: Self = StObject.set(x, "optionalWords", js.undefined)
     
     @scala.inline
-    def deleteNumericAttributesForFiltering: Self = this.set("numericAttributesForFiltering", js.undefined)
+    def setOptionalWordsVarargs(value: String*): Self = StObject.set(x, "optionalWords", js.Array(value :_*))
     
     @scala.inline
-    def setOptionalWordsVarargs(value: String*): Self = this.set("optionalWords", js.Array(value :_*))
+    def setPaginationLimitedTo(value: Double): Self = StObject.set(x, "paginationLimitedTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionalWords(value: js.Array[String]): Self = this.set("optionalWords", value.asInstanceOf[js.Any])
+    def setPaginationLimitedToUndefined: Self = StObject.set(x, "paginationLimitedTo", js.undefined)
     
     @scala.inline
-    def deleteOptionalWords: Self = this.set("optionalWords", js.undefined)
+    def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaginationLimitedTo(value: Double): Self = this.set("paginationLimitedTo", value.asInstanceOf[js.Any])
+    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
     @scala.inline
-    def deletePaginationLimitedTo: Self = this.set("paginationLimitedTo", js.undefined)
+    def setQueryLanguages(value: js.Array[String]): Self = StObject.set(x, "queryLanguages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary(value: String): Self = this.set("primary", value.asInstanceOf[js.Any])
+    def setQueryLanguagesUndefined: Self = StObject.set(x, "queryLanguages", js.undefined)
     
     @scala.inline
-    def deletePrimary: Self = this.set("primary", js.undefined)
+    def setQueryLanguagesVarargs(value: String*): Self = StObject.set(x, "queryLanguages", js.Array(value :_*))
     
     @scala.inline
-    def setQueryLanguagesVarargs(value: String*): Self = this.set("queryLanguages", js.Array(value :_*))
+    def setQueryType(value: prefixLast | prefixAll | prefixNone): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryLanguages(value: js.Array[String]): Self = this.set("queryLanguages", value.asInstanceOf[js.Any])
+    def setQueryTypeUndefined: Self = StObject.set(x, "queryType", js.undefined)
     
     @scala.inline
-    def deleteQueryLanguages: Self = this.set("queryLanguages", js.undefined)
+    def setRanking(value: js.Array[String]): Self = StObject.set(x, "ranking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryType(value: prefixLast | prefixAll | prefixNone): Self = this.set("queryType", value.asInstanceOf[js.Any])
+    def setRankingUndefined: Self = StObject.set(x, "ranking", js.undefined)
     
     @scala.inline
-    def deleteQueryType: Self = this.set("queryType", js.undefined)
+    def setRankingVarargs(value: String*): Self = StObject.set(x, "ranking", js.Array(value :_*))
     
     @scala.inline
-    def setRankingVarargs(value: String*): Self = this.set("ranking", js.Array(value :_*))
+    def setRemoveStopWords(value: Boolean | js.Array[String]): Self = StObject.set(x, "removeStopWords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRanking(value: js.Array[String]): Self = this.set("ranking", value.asInstanceOf[js.Any])
+    def setRemoveStopWordsUndefined: Self = StObject.set(x, "removeStopWords", js.undefined)
     
     @scala.inline
-    def deleteRanking: Self = this.set("ranking", js.undefined)
+    def setRemoveStopWordsVarargs(value: String*): Self = StObject.set(x, "removeStopWords", js.Array(value :_*))
     
     @scala.inline
-    def setRemoveStopWordsVarargs(value: String*): Self = this.set("removeStopWords", js.Array(value :_*))
+    def setRemoveWordsIfNoResults(value: none | lastWords | firstWords | allOptional): Self = StObject.set(x, "removeWordsIfNoResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveStopWords(value: Boolean | js.Array[String]): Self = this.set("removeStopWords", value.asInstanceOf[js.Any])
+    def setRemoveWordsIfNoResultsUndefined: Self = StObject.set(x, "removeWordsIfNoResults", js.undefined)
     
     @scala.inline
-    def deleteRemoveStopWords: Self = this.set("removeStopWords", js.undefined)
+    def setReplaceSynonymsInHighlight(value: Boolean): Self = StObject.set(x, "replaceSynonymsInHighlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveWordsIfNoResults(value: none | lastWords | firstWords | allOptional): Self = this.set("removeWordsIfNoResults", value.asInstanceOf[js.Any])
+    def setReplaceSynonymsInHighlightUndefined: Self = StObject.set(x, "replaceSynonymsInHighlight", js.undefined)
     
     @scala.inline
-    def deleteRemoveWordsIfNoResults: Self = this.set("removeWordsIfNoResults", js.undefined)
+    def setReplicas(value: js.Array[String]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplaceSynonymsInHighlight(value: Boolean): Self = this.set("replaceSynonymsInHighlight", value.asInstanceOf[js.Any])
+    def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
     
     @scala.inline
-    def deleteReplaceSynonymsInHighlight: Self = this.set("replaceSynonymsInHighlight", js.undefined)
+    def setReplicasVarargs(value: String*): Self = StObject.set(x, "replicas", js.Array(value :_*))
     
     @scala.inline
-    def setReplicasVarargs(value: String*): Self = this.set("replicas", js.Array(value :_*))
+    def setResponseFields(value: js.Array[String]): Self = StObject.set(x, "responseFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicas(value: js.Array[String]): Self = this.set("replicas", value.asInstanceOf[js.Any])
+    def setResponseFieldsUndefined: Self = StObject.set(x, "responseFields", js.undefined)
     
     @scala.inline
-    def deleteReplicas: Self = this.set("replicas", js.undefined)
+    def setResponseFieldsVarargs(value: String*): Self = StObject.set(x, "responseFields", js.Array(value :_*))
     
     @scala.inline
-    def setResponseFieldsVarargs(value: String*): Self = this.set("responseFields", js.Array(value :_*))
+    def setRestrictHighlightAndSnippetArrays(value: Boolean): Self = StObject.set(x, "restrictHighlightAndSnippetArrays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseFields(value: js.Array[String]): Self = this.set("responseFields", value.asInstanceOf[js.Any])
+    def setRestrictHighlightAndSnippetArraysUndefined: Self = StObject.set(x, "restrictHighlightAndSnippetArrays", js.undefined)
     
     @scala.inline
-    def deleteResponseFields: Self = this.set("responseFields", js.undefined)
+    def setSearchableAttributes(value: js.Array[String]): Self = StObject.set(x, "searchableAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestrictHighlightAndSnippetArrays(value: Boolean): Self = this.set("restrictHighlightAndSnippetArrays", value.asInstanceOf[js.Any])
+    def setSearchableAttributesUndefined: Self = StObject.set(x, "searchableAttributes", js.undefined)
     
     @scala.inline
-    def deleteRestrictHighlightAndSnippetArrays: Self = this.set("restrictHighlightAndSnippetArrays", js.undefined)
+    def setSearchableAttributesVarargs(value: String*): Self = StObject.set(x, "searchableAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setSearchableAttributesVarargs(value: String*): Self = this.set("searchableAttributes", js.Array(value :_*))
+    def setSeparatorsToIndex(value: String): Self = StObject.set(x, "separatorsToIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchableAttributes(value: js.Array[String]): Self = this.set("searchableAttributes", value.asInstanceOf[js.Any])
+    def setSeparatorsToIndexUndefined: Self = StObject.set(x, "separatorsToIndex", js.undefined)
     
     @scala.inline
-    def deleteSearchableAttributes: Self = this.set("searchableAttributes", js.undefined)
+    def setSlaves(value: js.Array[String]): Self = StObject.set(x, "slaves", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeparatorsToIndex(value: String): Self = this.set("separatorsToIndex", value.asInstanceOf[js.Any])
+    def setSlavesUndefined: Self = StObject.set(x, "slaves", js.undefined)
     
     @scala.inline
-    def deleteSeparatorsToIndex: Self = this.set("separatorsToIndex", js.undefined)
+    def setSlavesVarargs(value: String*): Self = StObject.set(x, "slaves", js.Array(value :_*))
     
     @scala.inline
-    def setSlavesVarargs(value: String*): Self = this.set("slaves", js.Array(value :_*))
+    def setSnippetEllipsisText(value: String): Self = StObject.set(x, "snippetEllipsisText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlaves(value: js.Array[String]): Self = this.set("slaves", value.asInstanceOf[js.Any])
+    def setSnippetEllipsisTextUndefined: Self = StObject.set(x, "snippetEllipsisText", js.undefined)
     
     @scala.inline
-    def deleteSlaves: Self = this.set("slaves", js.undefined)
+    def setSortFacetValuesBy(value: count | alpha): Self = StObject.set(x, "sortFacetValuesBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnippetEllipsisText(value: String): Self = this.set("snippetEllipsisText", value.asInstanceOf[js.Any])
+    def setSortFacetValuesByUndefined: Self = StObject.set(x, "sortFacetValuesBy", js.undefined)
     
     @scala.inline
-    def deleteSnippetEllipsisText: Self = this.set("snippetEllipsisText", js.undefined)
+    def setTypoTolerance(value: String | Boolean): Self = StObject.set(x, "typoTolerance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortFacetValuesBy(value: count | alpha): Self = this.set("sortFacetValuesBy", value.asInstanceOf[js.Any])
+    def setTypoToleranceUndefined: Self = StObject.set(x, "typoTolerance", js.undefined)
     
     @scala.inline
-    def deleteSortFacetValuesBy: Self = this.set("sortFacetValuesBy", js.undefined)
+    def setUnretrievableAttributes(value: js.Array[String]): Self = StObject.set(x, "unretrievableAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypoTolerance(value: String | Boolean): Self = this.set("typoTolerance", value.asInstanceOf[js.Any])
+    def setUnretrievableAttributesUndefined: Self = StObject.set(x, "unretrievableAttributes", js.undefined)
     
     @scala.inline
-    def deleteTypoTolerance: Self = this.set("typoTolerance", js.undefined)
+    def setUnretrievableAttributesVarargs(value: String*): Self = StObject.set(x, "unretrievableAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setUnretrievableAttributesVarargs(value: String*): Self = this.set("unretrievableAttributes", js.Array(value :_*))
+    def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnretrievableAttributes(value: js.Array[String]): Self = this.set("unretrievableAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnretrievableAttributes: Self = this.set("unretrievableAttributes", js.undefined)
-    
-    @scala.inline
-    def setUserData(value: js.Any): Self = this.set("userData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserData: Self = this.set("userData", js.undefined)
+    def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
   }
 }

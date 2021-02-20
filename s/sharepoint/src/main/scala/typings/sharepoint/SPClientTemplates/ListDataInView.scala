@@ -1,11 +1,12 @@
 package typings.sharepoint.SPClientTemplates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDataInView extends js.Object {
+trait ListDataInView extends StObject {
   
   var FilterFields: String = js.native
   
@@ -53,54 +54,42 @@ object ListDataInView {
   }
   
   @scala.inline
-  implicit class ListDataInViewOps[Self <: ListDataInView] (val x: Self) extends AnyVal {
+  implicit class ListDataInViewMutableBuilder[Self <: ListDataInView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterFields(value: String): Self = StObject.set(x, "FilterFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterLink(value: String): Self = StObject.set(x, "FilterLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirstRow(value: Double): Self = StObject.set(x, "FirstRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterFields(value: String): Self = this.set("FilterFields", value.asInstanceOf[js.Any])
+    def setForceNoHierarchy(value: String): Self = StObject.set(x, "ForceNoHierarchy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterLink(value: String): Self = this.set("FilterLink", value.asInstanceOf[js.Any])
+    def setHierarchyHasIndention(value: String): Self = StObject.set(x, "HierarchyHasIndention", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstRow(value: Double): Self = this.set("FirstRow", value.asInstanceOf[js.Any])
+    def setLastRow(value: Double): Self = StObject.set(x, "LastRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceNoHierarchy(value: String): Self = this.set("ForceNoHierarchy", value.asInstanceOf[js.Any])
+    def setNextHref(value: String): Self = StObject.set(x, "NextHref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHierarchyHasIndention(value: String): Self = this.set("HierarchyHasIndention", value.asInstanceOf[js.Any])
+    def setPrevHref(value: String): Self = StObject.set(x, "PrevHref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastRow(value: Double): Self = this.set("LastRow", value.asInstanceOf[js.Any])
+    def setRow(value: js.Array[Item]): Self = StObject.set(x, "Row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextHref(value: String): Self = this.set("NextHref", value.asInstanceOf[js.Any])
+    def setRowVarargs(value: Item*): Self = StObject.set(x, "Row", js.Array(value :_*))
     
     @scala.inline
-    def setPrevHref(value: String): Self = this.set("PrevHref", value.asInstanceOf[js.Any])
+    def setSortDir(value: String): Self = StObject.set(x, "SortDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowVarargs(value: Item*): Self = this.set("Row", js.Array(value :_*))
-    
-    @scala.inline
-    def setRow(value: js.Array[Item]): Self = this.set("Row", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSortDir(value: String): Self = this.set("SortDir", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSortField(value: String): Self = this.set("SortField", value.asInstanceOf[js.Any])
+    def setSortField(value: String): Self = StObject.set(x, "SortField", value.asInstanceOf[js.Any])
   }
 }

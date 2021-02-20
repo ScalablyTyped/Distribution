@@ -1,11 +1,12 @@
 package typings.awsSdk.mediatailorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HlsConfiguration extends js.Object {
+trait HlsConfiguration extends StObject {
   
   /**
     * The URL that is used to initiate a playback session for devices that support Apple HLS. The session uses server-side reporting.
@@ -21,24 +22,12 @@ object HlsConfiguration {
   }
   
   @scala.inline
-  implicit class HlsConfigurationOps[Self <: HlsConfiguration] (val x: Self) extends AnyVal {
+  implicit class HlsConfigurationMutableBuilder[Self <: HlsConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setManifestEndpointPrefix(value: string): Self = StObject.set(x, "ManifestEndpointPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setManifestEndpointPrefix(value: string): Self = this.set("ManifestEndpointPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManifestEndpointPrefix: Self = this.set("ManifestEndpointPrefix", js.undefined)
+    def setManifestEndpointPrefixUndefined: Self = StObject.set(x, "ManifestEndpointPrefix", js.undefined)
   }
 }

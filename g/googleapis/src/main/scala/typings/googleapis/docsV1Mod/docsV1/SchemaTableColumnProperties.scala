@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The properties of a column in a table.
   */
 @js.native
-trait SchemaTableColumnProperties extends js.Object {
+trait SchemaTableColumnProperties extends StObject {
   
   /**
     * The width of the column. Set when the column&#39;s `width_type` is
@@ -30,30 +31,18 @@ object SchemaTableColumnProperties {
   }
   
   @scala.inline
-  implicit class SchemaTableColumnPropertiesOps[Self <: SchemaTableColumnProperties] (val x: Self) extends AnyVal {
+  implicit class SchemaTableColumnPropertiesMutableBuilder[Self <: SchemaTableColumnProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWidth(value: SchemaDimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWidthType(value: String): Self = StObject.set(x, "widthType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWidthTypeUndefined: Self = StObject.set(x, "widthType", js.undefined)
     
     @scala.inline
-    def setWidth(value: SchemaDimension): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setWidthType(value: String): Self = this.set("widthType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidthType: Self = this.set("widthType", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

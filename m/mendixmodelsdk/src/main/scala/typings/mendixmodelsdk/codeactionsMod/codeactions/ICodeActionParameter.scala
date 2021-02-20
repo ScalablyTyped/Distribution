@@ -4,6 +4,7 @@ import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.elementsMod.IByNameReferrable
 import typings.mendixmodelsdk.elementsMod.IElement
 import typings.mendixmodelsdk.javaactionsMod.javaactions.IJavaAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

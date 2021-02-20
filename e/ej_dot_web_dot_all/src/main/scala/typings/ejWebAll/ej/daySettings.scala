@@ -1,11 +1,12 @@
 package typings.ejWebAll.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait daySettings extends js.Object {
+trait daySettings extends StObject {
   
   var names: js.Array[String] = js.native
   
@@ -22,36 +23,24 @@ object daySettings {
   }
   
   @scala.inline
-  implicit class daySettingsOps[Self <: daySettings] (val x: Self) extends AnyVal {
+  implicit class daySettingsMutableBuilder[Self <: daySettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNamesAbbr(value: js.Array[String]): Self = StObject.set(x, "namesAbbr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamesAbbrVarargs(value: String*): Self = StObject.set(x, "namesAbbr", js.Array(value :_*))
     
     @scala.inline
-    def setNamesVarargs(value: String*): Self = this.set("names", js.Array(value :_*))
+    def setNamesShort(value: js.Array[String]): Self = StObject.set(x, "namesShort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNames(value: js.Array[String]): Self = this.set("names", value.asInstanceOf[js.Any])
+    def setNamesShortVarargs(value: String*): Self = StObject.set(x, "namesShort", js.Array(value :_*))
     
     @scala.inline
-    def setNamesAbbrVarargs(value: String*): Self = this.set("namesAbbr", js.Array(value :_*))
-    
-    @scala.inline
-    def setNamesAbbr(value: js.Array[String]): Self = this.set("namesAbbr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNamesShortVarargs(value: String*): Self = this.set("namesShort", js.Array(value :_*))
-    
-    @scala.inline
-    def setNamesShort(value: js.Array[String]): Self = this.set("namesShort", value.asInstanceOf[js.Any])
+    def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
   }
 }

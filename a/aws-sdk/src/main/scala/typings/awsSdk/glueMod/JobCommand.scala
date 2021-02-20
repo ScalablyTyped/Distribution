@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobCommand extends js.Object {
+trait JobCommand extends StObject {
   
   /**
     * The name of the job command. For an Apache Spark ETL job, this must be glueetl. For a Python shell job, it must be pythonshell. For an Apache Spark streaming ETL job, this must be gluestreaming.
@@ -31,36 +32,24 @@ object JobCommand {
   }
   
   @scala.inline
-  implicit class JobCommandOps[Self <: JobCommand] (val x: Self) extends AnyVal {
+  implicit class JobCommandMutableBuilder[Self <: JobCommand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: GenericString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPythonVersion(value: PythonVersionString): Self = StObject.set(x, "PythonVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: GenericString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPythonVersionUndefined: Self = StObject.set(x, "PythonVersion", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setScriptLocation(value: ScriptLocationString): Self = StObject.set(x, "ScriptLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPythonVersion(value: PythonVersionString): Self = this.set("PythonVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePythonVersion: Self = this.set("PythonVersion", js.undefined)
-    
-    @scala.inline
-    def setScriptLocation(value: ScriptLocationString): Self = this.set("ScriptLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScriptLocation: Self = this.set("ScriptLocation", js.undefined)
+    def setScriptLocationUndefined: Self = StObject.set(x, "ScriptLocation", js.undefined)
   }
 }

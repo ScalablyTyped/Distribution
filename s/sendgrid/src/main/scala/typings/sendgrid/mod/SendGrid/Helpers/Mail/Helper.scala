@@ -6,12 +6,13 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable6
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Helper extends js.Object {
+trait Helper extends StObject {
   
   var Asm: Instantiable2[
     /* group_id */ Double, 
@@ -170,49 +171,37 @@ object Helper {
   }
   
   @scala.inline
-  implicit class HelperOps[Self <: Helper] (val x: Self) extends AnyVal {
+  implicit class HelperMutableBuilder[Self <: Helper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsm(value: Instantiable2[/* group_id */ Double, /* groups_to_display */ js.Array[Double], Asm]): Self = StObject.set(x, "Asm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachment(value: Instantiable0[Attachment]): Self = StObject.set(x, "Attachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBcc(value: Instantiable2[/* enable */ Boolean, /* email */ String, Bcc]): Self = StObject.set(x, "Bcc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsm(value: Instantiable2[/* group_id */ Double, /* groups_to_display */ js.Array[Double], Asm]): Self = this.set("Asm", value.asInstanceOf[js.Any])
+    def setBypassListManagement(value: Instantiable1[/* enable */ Boolean, BypassListManagement]): Self = StObject.set(x, "BypassListManagement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachment(value: Instantiable0[Attachment]): Self = this.set("Attachment", value.asInstanceOf[js.Any])
+    def setCategory(value: Instantiable1[/* name */ String, Category]): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBcc(value: Instantiable2[/* enable */ Boolean, /* email */ String, Bcc]): Self = this.set("Bcc", value.asInstanceOf[js.Any])
+    def setClickTracking(value: Instantiable2[/* enable */ Boolean, /* enableText */ Boolean, ClickTracking]): Self = StObject.set(x, "ClickTracking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBypassListManagement(value: Instantiable1[/* enable */ Boolean, BypassListManagement]): Self = this.set("BypassListManagement", value.asInstanceOf[js.Any])
+    def setContent(value: Instantiable2[/* mimetype */ String, /* text */ String, Content]): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: Instantiable1[/* name */ String, Category]): Self = this.set("Category", value.asInstanceOf[js.Any])
+    def setCustomArgs(value: Instantiable2[/* key */ String, /* value */ String, CustomArgs]): Self = StObject.set(x, "CustomArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickTracking(value: Instantiable2[/* enable */ Boolean, /* enableText */ Boolean, ClickTracking]): Self = this.set("ClickTracking", value.asInstanceOf[js.Any])
+    def setEmail(value: Instantiable2[/* address */ String, /* name */ js.UndefOr[String], Email]): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: Instantiable2[/* mimetype */ String, /* text */ String, Content]): Self = this.set("Content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCustomArgs(value: Instantiable2[/* key */ String, /* value */ String, CustomArgs]): Self = this.set("CustomArgs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEmail(value: Instantiable2[/* address */ String, /* name */ js.UndefOr[String], Email]): Self = this.set("Email", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFooter(value: Instantiable3[/* enable */ Boolean, /* text */ String, /* html */ String, Footer]): Self = this.set("Footer", value.asInstanceOf[js.Any])
+    def setFooter(value: Instantiable3[/* enable */ Boolean, /* text */ String, /* html */ String, Footer]): Self = StObject.set(x, "Footer", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGanalytics(
@@ -225,33 +214,33 @@ object Helper {
           /* utm_campaign */ String, 
           Ganalytics
         ]
-    ): Self = this.set("Ganalytics", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "Ganalytics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: Instantiable2[/* key */ String, /* value */ String, Header]): Self = this.set("Header", value.asInstanceOf[js.Any])
+    def setHeader(value: Instantiable2[/* key */ String, /* value */ String, Header]): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMail(value: Instantiable0[typings.sendgrid.mod.SendGrid.Helpers.Mail.Mail]): Self = this.set("Mail", value.asInstanceOf[js.Any])
+    def setMail(value: Instantiable0[typings.sendgrid.mod.SendGrid.Helpers.Mail.Mail]): Self = StObject.set(x, "Mail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMailSettings(value: Instantiable0[MailSettings]): Self = this.set("MailSettings", value.asInstanceOf[js.Any])
+    def setMailSettings(value: Instantiable0[MailSettings]): Self = StObject.set(x, "MailSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenTracking(value: Instantiable2[/* enable */ Boolean, /* subscriptionTag */ String, OpenTracking]): Self = this.set("OpenTracking", value.asInstanceOf[js.Any])
+    def setOpenTracking(value: Instantiable2[/* enable */ Boolean, /* subscriptionTag */ String, OpenTracking]): Self = StObject.set(x, "OpenTracking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersonalization(value: Instantiable0[Personalization]): Self = this.set("Personalization", value.asInstanceOf[js.Any])
+    def setPersonalization(value: Instantiable0[Personalization]): Self = StObject.set(x, "Personalization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSandBoxMode(value: Instantiable1[/* enable */ Boolean, SandBoxMode]): Self = this.set("SandBoxMode", value.asInstanceOf[js.Any])
+    def setSandBoxMode(value: Instantiable1[/* enable */ Boolean, SandBoxMode]): Self = StObject.set(x, "SandBoxMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSection(value: Instantiable2[/* key */ String, /* value */ String, Section]): Self = this.set("Section", value.asInstanceOf[js.Any])
+    def setSection(value: Instantiable2[/* key */ String, /* value */ String, Section]): Self = StObject.set(x, "Section", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSpamCheck(
       value: Instantiable3[/* enable */ Boolean, /* threshold */ Double, /* post_to_url */ String, SpamCheck]
-    ): Self = this.set("SpamCheck", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "SpamCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSubscriptionTracking(
@@ -262,12 +251,12 @@ object Helper {
           /* substitution_tag */ String, 
           SubscriptionTracking
         ]
-    ): Self = this.set("SubscriptionTracking", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "SubscriptionTracking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubstitution(value: Instantiable2[/* key */ String, /* value */ String, Substitution]): Self = this.set("Substitution", value.asInstanceOf[js.Any])
+    def setSubstitution(value: Instantiable2[/* key */ String, /* value */ String, Substitution]): Self = StObject.set(x, "Substitution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackingSettings(value: Instantiable0[TrackingSettings]): Self = this.set("TrackingSettings", value.asInstanceOf[js.Any])
+    def setTrackingSettings(value: Instantiable0[TrackingSettings]): Self = StObject.set(x, "TrackingSettings", value.asInstanceOf[js.Any])
   }
 }

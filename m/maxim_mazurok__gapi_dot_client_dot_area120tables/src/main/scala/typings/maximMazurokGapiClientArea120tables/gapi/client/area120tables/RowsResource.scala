@@ -11,12 +11,13 @@ import typings.maximMazurokGapiClientArea120tables.anon.Oauthtoken
 import typings.maximMazurokGapiClientArea120tables.anon.PageSize
 import typings.maximMazurokGapiClientArea120tables.anon.PrettyPrint
 import typings.maximMazurokGapiClientArea120tables.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RowsResource extends js.Object {
+trait RowsResource extends StObject {
   
   /** Creates multiple rows. */
   def batchCreate(request: Accesstoken): Request[BatchCreateRowsResponse] = js.native

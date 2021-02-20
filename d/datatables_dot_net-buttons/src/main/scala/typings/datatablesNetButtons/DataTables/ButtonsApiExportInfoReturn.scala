@@ -1,11 +1,12 @@
 package typings.datatablesNetButtons.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ButtonsApiExportInfoReturn extends js.Object {
+trait ButtonsApiExportInfoReturn extends StObject {
   
   var filename: String = js.native
   
@@ -24,30 +25,18 @@ object ButtonsApiExportInfoReturn {
   }
   
   @scala.inline
-  implicit class ButtonsApiExportInfoReturnOps[Self <: ButtonsApiExportInfoReturn] (val x: Self) extends AnyVal {
+  implicit class ButtonsApiExportInfoReturnMutableBuilder[Self <: ButtonsApiExportInfoReturn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageBottom(value: String): Self = StObject.set(x, "messageBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessageTop(value: String): Self = StObject.set(x, "messageTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessageBottom(value: String): Self = this.set("messageBottom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessageTop(value: String): Self = this.set("messageTop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

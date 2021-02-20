@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpenSelectDialogOptions extends js.Object {
+trait OpenSelectDialogOptions extends StObject {
   
   /** Defaults to true */
   var showImages: js.UndefOr[Boolean] = js.native
@@ -22,30 +23,18 @@ object OpenSelectDialogOptions {
   }
   
   @scala.inline
-  implicit class OpenSelectDialogOptionsOps[Self <: OpenSelectDialogOptions] (val x: Self) extends AnyVal {
+  implicit class OpenSelectDialogOptionsMutableBuilder[Self <: OpenSelectDialogOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShowImages(value: Boolean): Self = StObject.set(x, "showImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShowImagesUndefined: Self = StObject.set(x, "showImages", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowVideos(value: Boolean): Self = StObject.set(x, "showVideos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowImages(value: Boolean): Self = this.set("showImages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowImages: Self = this.set("showImages", js.undefined)
-    
-    @scala.inline
-    def setShowVideos(value: Boolean): Self = this.set("showVideos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowVideos: Self = this.set("showVideos", js.undefined)
+    def setShowVideosUndefined: Self = StObject.set(x, "showVideos", js.undefined)
   }
 }

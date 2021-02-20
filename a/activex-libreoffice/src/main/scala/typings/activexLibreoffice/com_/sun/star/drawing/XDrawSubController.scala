@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.XFastPropertySet
 import typings.activexLibreoffice.com_.sun.star.view.XSelectionChangeListener
 import typings.activexLibreoffice.com_.sun.star.view.XSelectionSupplier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

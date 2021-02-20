@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A progress measurement of a WorkItem by a worker.
   */
 @js.native
-trait SchemaApproximateReportedProgress extends js.Object {
+trait SchemaApproximateReportedProgress extends StObject {
   
   /**
     * Total amount of parallelism in the portion of input of this task that has
@@ -63,42 +64,30 @@ object SchemaApproximateReportedProgress {
   }
   
   @scala.inline
-  implicit class SchemaApproximateReportedProgressOps[Self <: SchemaApproximateReportedProgress] (val x: Self) extends AnyVal {
+  implicit class SchemaApproximateReportedProgressMutableBuilder[Self <: SchemaApproximateReportedProgress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumedParallelism(value: SchemaReportedParallelism): Self = StObject.set(x, "consumedParallelism", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumedParallelismUndefined: Self = StObject.set(x, "consumedParallelism", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFractionConsumed(value: Double): Self = StObject.set(x, "fractionConsumed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumedParallelism(value: SchemaReportedParallelism): Self = this.set("consumedParallelism", value.asInstanceOf[js.Any])
+    def setFractionConsumedUndefined: Self = StObject.set(x, "fractionConsumed", js.undefined)
     
     @scala.inline
-    def deleteConsumedParallelism: Self = this.set("consumedParallelism", js.undefined)
+    def setPosition(value: SchemaPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFractionConsumed(value: Double): Self = this.set("fractionConsumed", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteFractionConsumed: Self = this.set("fractionConsumed", js.undefined)
+    def setRemainingParallelism(value: SchemaReportedParallelism): Self = StObject.set(x, "remainingParallelism", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: SchemaPosition): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setRemainingParallelism(value: SchemaReportedParallelism): Self = this.set("remainingParallelism", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemainingParallelism: Self = this.set("remainingParallelism", js.undefined)
+    def setRemainingParallelismUndefined: Self = StObject.set(x, "remainingParallelism", js.undefined)
   }
 }

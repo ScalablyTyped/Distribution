@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceDataSyncDestinationDataSharing extends js.Object {
+trait ResourceDataSyncDestinationDataSharing extends StObject {
   
   /**
     * The sharing data type. Only Organization is supported.
@@ -21,24 +22,12 @@ object ResourceDataSyncDestinationDataSharing {
   }
   
   @scala.inline
-  implicit class ResourceDataSyncDestinationDataSharingOps[Self <: ResourceDataSyncDestinationDataSharing] (val x: Self) extends AnyVal {
+  implicit class ResourceDataSyncDestinationDataSharingMutableBuilder[Self <: ResourceDataSyncDestinationDataSharing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationDataSharingType(value: ResourceDataSyncDestinationDataSharingType): Self = StObject.set(x, "DestinationDataSharingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDestinationDataSharingType(value: ResourceDataSyncDestinationDataSharingType): Self = this.set("DestinationDataSharingType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationDataSharingType: Self = this.set("DestinationDataSharingType", js.undefined)
+    def setDestinationDataSharingTypeUndefined: Self = StObject.set(x, "DestinationDataSharingType", js.undefined)
   }
 }

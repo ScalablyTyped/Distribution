@@ -1,5 +1,6 @@
 package typings.summernote.mod.global.Summernote
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.summernote.summernoteStrings.imageSize50
   - typings.summernote.summernoteStrings.imageSize25
 */
-trait popoverImageOptionsImagesize extends js.Object
+trait popoverImageOptionsImagesize extends StObject
 object popoverImageOptionsImagesize {
   
   @scala.inline

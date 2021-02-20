@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TwitterParameters extends js.Object {
+trait TwitterParameters extends StObject {
   
   /**
     * Maximum number of rows to query Twitter.
@@ -26,24 +27,12 @@ object TwitterParameters {
   }
   
   @scala.inline
-  implicit class TwitterParametersOps[Self <: TwitterParameters] (val x: Self) extends AnyVal {
+  implicit class TwitterParametersMutableBuilder[Self <: TwitterParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxRows(value: PositiveInteger): Self = StObject.set(x, "MaxRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaxRows(value: PositiveInteger): Self = this.set("MaxRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuery(value: Query): Self = this.set("Query", value.asInstanceOf[js.Any])
+    def setQuery(value: Query): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
   }
 }

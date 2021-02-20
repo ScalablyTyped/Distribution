@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Activation extends js.Object {
+trait Activation extends StObject {
   
   /**
     * The ID created by Systems Manager when you submitted the activation.
@@ -66,81 +67,69 @@ object Activation {
   }
   
   @scala.inline
-  implicit class ActivationOps[Self <: Activation] (val x: Self) extends AnyVal {
+  implicit class ActivationMutableBuilder[Self <: Activation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivationId(value: ActivationId): Self = StObject.set(x, "ActivationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivationIdUndefined: Self = StObject.set(x, "ActivationId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedDate(value: CreatedDate): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivationId(value: ActivationId): Self = this.set("ActivationId", value.asInstanceOf[js.Any])
+    def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
     @scala.inline
-    def deleteActivationId: Self = this.set("ActivationId", js.undefined)
+    def setDefaultInstanceName(value: DefaultInstanceName): Self = StObject.set(x, "DefaultInstanceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: CreatedDate): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    def setDefaultInstanceNameUndefined: Self = StObject.set(x, "DefaultInstanceName", js.undefined)
     
     @scala.inline
-    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    def setDescription(value: ActivationDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultInstanceName(value: DefaultInstanceName): Self = this.set("DefaultInstanceName", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteDefaultInstanceName: Self = this.set("DefaultInstanceName", js.undefined)
+    def setExpirationDate(value: ExpirationDate): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: ActivationDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setExpired(value: Boolean): Self = StObject.set(x, "Expired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationDate(value: ExpirationDate): Self = this.set("ExpirationDate", value.asInstanceOf[js.Any])
+    def setExpiredUndefined: Self = StObject.set(x, "Expired", js.undefined)
     
     @scala.inline
-    def deleteExpirationDate: Self = this.set("ExpirationDate", js.undefined)
+    def setIamRole(value: IamRole): Self = StObject.set(x, "IamRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpired(value: Boolean): Self = this.set("Expired", value.asInstanceOf[js.Any])
+    def setIamRoleUndefined: Self = StObject.set(x, "IamRole", js.undefined)
     
     @scala.inline
-    def deleteExpired: Self = this.set("Expired", js.undefined)
+    def setRegistrationLimit(value: RegistrationLimit): Self = StObject.set(x, "RegistrationLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamRole(value: IamRole): Self = this.set("IamRole", value.asInstanceOf[js.Any])
+    def setRegistrationLimitUndefined: Self = StObject.set(x, "RegistrationLimit", js.undefined)
     
     @scala.inline
-    def deleteIamRole: Self = this.set("IamRole", js.undefined)
+    def setRegistrationsCount(value: RegistrationsCount): Self = StObject.set(x, "RegistrationsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistrationLimit(value: RegistrationLimit): Self = this.set("RegistrationLimit", value.asInstanceOf[js.Any])
+    def setRegistrationsCountUndefined: Self = StObject.set(x, "RegistrationsCount", js.undefined)
     
     @scala.inline
-    def deleteRegistrationLimit: Self = this.set("RegistrationLimit", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistrationsCount(value: RegistrationsCount): Self = this.set("RegistrationsCount", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteRegistrationsCount: Self = this.set("RegistrationsCount", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.jasmine.jasmine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomReporterResult extends js.Object {
+trait CustomReporterResult extends StObject {
   
   var description: String = js.native
   
@@ -30,57 +31,45 @@ object CustomReporterResult {
   }
   
   @scala.inline
-  implicit class CustomReporterResultOps[Self <: CustomReporterResult] (val x: Self) extends AnyVal {
+  implicit class CustomReporterResultMutableBuilder[Self <: CustomReporterResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedExpectations(value: js.Array[FailedExpectation]): Self = StObject.set(x, "failedExpectations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailedExpectationsUndefined: Self = StObject.set(x, "failedExpectations", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFailedExpectationsVarargs(value: FailedExpectation*): Self = StObject.set(x, "failedExpectations", js.Array(value :_*))
     
     @scala.inline
-    def setFullName(value: String): Self = this.set("fullName", value.asInstanceOf[js.Any])
+    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedExpectationsVarargs(value: FailedExpectation*): Self = this.set("failedExpectations", js.Array(value :_*))
+    def setPassedExpectations(value: js.Array[PassedExpectation]): Self = StObject.set(x, "passedExpectations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedExpectations(value: js.Array[FailedExpectation]): Self = this.set("failedExpectations", value.asInstanceOf[js.Any])
+    def setPassedExpectationsUndefined: Self = StObject.set(x, "passedExpectations", js.undefined)
     
     @scala.inline
-    def deleteFailedExpectations: Self = this.set("failedExpectations", js.undefined)
+    def setPassedExpectationsVarargs(value: PassedExpectation*): Self = StObject.set(x, "passedExpectations", js.Array(value :_*))
     
     @scala.inline
-    def setPassedExpectationsVarargs(value: PassedExpectation*): Self = this.set("passedExpectations", js.Array(value :_*))
+    def setPendingReason(value: String): Self = StObject.set(x, "pendingReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassedExpectations(value: js.Array[PassedExpectation]): Self = this.set("passedExpectations", value.asInstanceOf[js.Any])
+    def setPendingReasonUndefined: Self = StObject.set(x, "pendingReason", js.undefined)
     
     @scala.inline
-    def deletePassedExpectations: Self = this.set("passedExpectations", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingReason(value: String): Self = this.set("pendingReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePendingReason: Self = this.set("pendingReason", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

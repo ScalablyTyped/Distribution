@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTypeOutput extends js.Object {
+trait DescribeTypeOutput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the type.
@@ -96,114 +97,102 @@ object DescribeTypeOutput {
   }
   
   @scala.inline
-  implicit class DescribeTypeOutputOps[Self <: DescribeTypeOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeTypeOutputMutableBuilder[Self <: DescribeTypeOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: TypeArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultVersionId(value: TypeVersionId): Self = StObject.set(x, "DefaultVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: TypeArn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setDefaultVersionIdUndefined: Self = StObject.set(x, "DefaultVersionId", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setDeprecatedStatus(value: DeprecatedStatus): Self = StObject.set(x, "DeprecatedStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultVersionId(value: TypeVersionId): Self = this.set("DefaultVersionId", value.asInstanceOf[js.Any])
+    def setDeprecatedStatusUndefined: Self = StObject.set(x, "DeprecatedStatus", js.undefined)
     
     @scala.inline
-    def deleteDefaultVersionId: Self = this.set("DefaultVersionId", js.undefined)
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecatedStatus(value: DeprecatedStatus): Self = this.set("DeprecatedStatus", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteDeprecatedStatus: Self = this.set("DeprecatedStatus", js.undefined)
+    def setDocumentationUrl(value: OptionalSecureUrl): Self = StObject.set(x, "DocumentationUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setDocumentationUrlUndefined: Self = StObject.set(x, "DocumentationUrl", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setExecutionRoleArn(value: RoleArn): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentationUrl(value: OptionalSecureUrl): Self = this.set("DocumentationUrl", value.asInstanceOf[js.Any])
+    def setExecutionRoleArnUndefined: Self = StObject.set(x, "ExecutionRoleArn", js.undefined)
     
     @scala.inline
-    def deleteDocumentationUrl: Self = this.set("DocumentationUrl", js.undefined)
+    def setIsDefaultVersion(value: IsDefaultVersion): Self = StObject.set(x, "IsDefaultVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionRoleArn(value: RoleArn): Self = this.set("ExecutionRoleArn", value.asInstanceOf[js.Any])
+    def setIsDefaultVersionUndefined: Self = StObject.set(x, "IsDefaultVersion", js.undefined)
     
     @scala.inline
-    def deleteExecutionRoleArn: Self = this.set("ExecutionRoleArn", js.undefined)
+    def setLastUpdated(value: Timestamp): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDefaultVersion(value: IsDefaultVersion): Self = this.set("IsDefaultVersion", value.asInstanceOf[js.Any])
+    def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
     
     @scala.inline
-    def deleteIsDefaultVersion: Self = this.set("IsDefaultVersion", js.undefined)
+    def setLoggingConfig(value: LoggingConfig): Self = StObject.set(x, "LoggingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdated(value: Timestamp): Self = this.set("LastUpdated", value.asInstanceOf[js.Any])
+    def setLoggingConfigUndefined: Self = StObject.set(x, "LoggingConfig", js.undefined)
     
     @scala.inline
-    def deleteLastUpdated: Self = this.set("LastUpdated", js.undefined)
+    def setProvisioningType(value: ProvisioningType): Self = StObject.set(x, "ProvisioningType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoggingConfig(value: LoggingConfig): Self = this.set("LoggingConfig", value.asInstanceOf[js.Any])
+    def setProvisioningTypeUndefined: Self = StObject.set(x, "ProvisioningType", js.undefined)
     
     @scala.inline
-    def deleteLoggingConfig: Self = this.set("LoggingConfig", js.undefined)
+    def setSchema(value: TypeSchema): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisioningType(value: ProvisioningType): Self = this.set("ProvisioningType", value.asInstanceOf[js.Any])
+    def setSchemaUndefined: Self = StObject.set(x, "Schema", js.undefined)
     
     @scala.inline
-    def deleteProvisioningType: Self = this.set("ProvisioningType", js.undefined)
+    def setSourceUrl(value: OptionalSecureUrl): Self = StObject.set(x, "SourceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: TypeSchema): Self = this.set("Schema", value.asInstanceOf[js.Any])
+    def setSourceUrlUndefined: Self = StObject.set(x, "SourceUrl", js.undefined)
     
     @scala.inline
-    def deleteSchema: Self = this.set("Schema", js.undefined)
+    def setTimeCreated(value: Timestamp): Self = StObject.set(x, "TimeCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceUrl(value: OptionalSecureUrl): Self = this.set("SourceUrl", value.asInstanceOf[js.Any])
+    def setTimeCreatedUndefined: Self = StObject.set(x, "TimeCreated", js.undefined)
     
     @scala.inline
-    def deleteSourceUrl: Self = this.set("SourceUrl", js.undefined)
+    def setType(value: RegistryType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeCreated(value: Timestamp): Self = this.set("TimeCreated", value.asInstanceOf[js.Any])
+    def setTypeName(value: TypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeCreated: Self = this.set("TimeCreated", js.undefined)
+    def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
     
     @scala.inline
-    def setType(value: RegistryType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setVisibility(value: Visibility): Self = StObject.set(x, "Visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeName(value: TypeName): Self = this.set("TypeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeName: Self = this.set("TypeName", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: Visibility): Self = this.set("Visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("Visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "Visibility", js.undefined)
   }
 }

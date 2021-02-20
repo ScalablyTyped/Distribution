@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommentController extends js.Object {
+trait CommentController extends StObject {
   
   /**
     * Optional commenting range provider. Provide a list [ranges](#Range) which support commenting to any given resource uri.
@@ -68,48 +69,36 @@ object CommentController {
   }
   
   @scala.inline
-  implicit class CommentControllerOps[Self <: CommentController] (val x: Self) extends AnyVal {
+  implicit class CommentControllerMutableBuilder[Self <: CommentController] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommentingRangeProvider(value: CommentingRangeProvider): Self = StObject.set(x, "commentingRangeProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentingRangeProviderUndefined: Self = StObject.set(x, "commentingRangeProvider", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateCommentThread(value: (Uri, Range, js.Array[Comment]) => CommentThread): Self = StObject.set(x, "createCommentThread", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCreateCommentThread(value: (Uri, Range, js.Array[Comment]) => CommentThread): Self = this.set("createCommentThread", js.Any.fromFunction3(value))
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setOptions(value: CommentOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentingRangeProvider(value: CommentingRangeProvider): Self = this.set("commentingRangeProvider", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteCommentingRangeProvider: Self = this.set("commentingRangeProvider", js.undefined)
+    def setReactionHandler(value: (/* comment */ Comment, /* reaction */ CommentReaction) => js.Promise[Unit]): Self = StObject.set(x, "reactionHandler", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOptions(value: CommentOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
-    
-    @scala.inline
-    def setReactionHandler(value: (/* comment */ Comment, /* reaction */ CommentReaction) => js.Promise[Unit]): Self = this.set("reactionHandler", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteReactionHandler: Self = this.set("reactionHandler", js.undefined)
+    def setReactionHandlerUndefined: Self = StObject.set(x, "reactionHandler", js.undefined)
   }
 }

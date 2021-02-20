@@ -1,11 +1,12 @@
 package typings.mongodb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SessionOptions extends js.Object {
+trait SessionOptions extends StObject {
   
   /**
     * Whether causal consistency should be enabled on this session
@@ -27,30 +28,18 @@ object SessionOptions {
   }
   
   @scala.inline
-  implicit class SessionOptionsOps[Self <: SessionOptions] (val x: Self) extends AnyVal {
+  implicit class SessionOptionsMutableBuilder[Self <: SessionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCausalConsistency(value: Boolean): Self = StObject.set(x, "causalConsistency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCausalConsistencyUndefined: Self = StObject.set(x, "causalConsistency", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultTransactionOptions(value: TransactionOptions): Self = StObject.set(x, "defaultTransactionOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCausalConsistency(value: Boolean): Self = this.set("causalConsistency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCausalConsistency: Self = this.set("causalConsistency", js.undefined)
-    
-    @scala.inline
-    def setDefaultTransactionOptions(value: TransactionOptions): Self = this.set("defaultTransactionOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultTransactionOptions: Self = this.set("defaultTransactionOptions", js.undefined)
+    def setDefaultTransactionOptionsUndefined: Self = StObject.set(x, "defaultTransactionOptions", js.undefined)
   }
 }

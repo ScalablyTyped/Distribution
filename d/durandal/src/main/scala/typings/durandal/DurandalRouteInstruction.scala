@@ -1,12 +1,13 @@
 package typings.durandal
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DurandalRouteInstruction extends js.Object {
+trait DurandalRouteInstruction extends StObject {
   
   var config: DurandalRouteConfiguration = js.native
   
@@ -33,36 +34,24 @@ object DurandalRouteInstruction {
   }
   
   @scala.inline
-  implicit class DurandalRouteInstructionOps[Self <: DurandalRouteInstruction] (val x: Self) extends AnyVal {
+  implicit class DurandalRouteInstructionMutableBuilder[Self <: DurandalRouteInstruction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: DurandalRouteConfiguration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParams(value: js.Array[_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: DurandalRouteConfiguration): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
     
     @scala.inline
-    def setFragment(value: String): Self = this.set("fragment", value.asInstanceOf[js.Any])
+    def setQueryParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamsVarargs(value: js.Any*): Self = this.set("params", js.Array(value :_*))
-    
-    @scala.inline
-    def setParams(value: js.Array[_]): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryParams(value: StringDictionary[js.Any]): Self = this.set("queryParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryString(value: String): Self = this.set("queryString", value.asInstanceOf[js.Any])
+    def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
   }
 }

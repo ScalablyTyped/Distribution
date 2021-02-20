@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/esm/languages/prism/ichigojam", JSImport.Namespace)
-@js.native
-object prismIchigojamMod extends js.Object {
+object prismIchigojamMod {
   
+  @JSImport("react-syntax-highlighter/dist/esm/languages/prism/ichigojam", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

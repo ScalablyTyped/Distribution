@@ -9,6 +9,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.metric
 import typings.arcgisJsApi.arcgisJsApiStrings.multitenant
 import typings.arcgisJsApi.arcgisJsApiStrings.public
 import typings.arcgisJsApi.arcgisJsApiStrings.singletenant
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -438,381 +439,369 @@ object PortalProperties {
   }
   
   @scala.inline
-  implicit class PortalPropertiesOps[Self <: PortalProperties] (val x: Self) extends AnyVal {
+  implicit class PortalPropertiesMutableBuilder[Self <: PortalProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccess(value: public | `private`): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllSSL(value: Boolean): Self = StObject.set(x, "allSSL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccess(value: public | `private`): Self = this.set("access", value.asInstanceOf[js.Any])
+    def setAllSSLUndefined: Self = StObject.set(x, "allSSL", js.undefined)
     
     @scala.inline
-    def deleteAccess: Self = this.set("access", js.undefined)
+    def setAuthMode(value: anonymous | auto | immediate): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllSSL(value: Boolean): Self = this.set("allSSL", value.asInstanceOf[js.Any])
+    def setAuthModeUndefined: Self = StObject.set(x, "authMode", js.undefined)
     
     @scala.inline
-    def deleteAllSSL: Self = this.set("allSSL", js.undefined)
+    def setAuthorizedCrossOriginDomains(value: js.Array[String]): Self = StObject.set(x, "authorizedCrossOriginDomains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthMode(value: anonymous | auto | immediate): Self = this.set("authMode", value.asInstanceOf[js.Any])
+    def setAuthorizedCrossOriginDomainsUndefined: Self = StObject.set(x, "authorizedCrossOriginDomains", js.undefined)
     
     @scala.inline
-    def deleteAuthMode: Self = this.set("authMode", js.undefined)
+    def setAuthorizedCrossOriginDomainsVarargs(value: String*): Self = StObject.set(x, "authorizedCrossOriginDomains", js.Array(value :_*))
     
     @scala.inline
-    def setAuthorizedCrossOriginDomainsVarargs(value: String*): Self = this.set("authorizedCrossOriginDomains", js.Array(value :_*))
+    def setBasemapGalleryGroupQuery(value: String): Self = StObject.set(x, "basemapGalleryGroupQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizedCrossOriginDomains(value: js.Array[String]): Self = this.set("authorizedCrossOriginDomains", value.asInstanceOf[js.Any])
+    def setBasemapGalleryGroupQueryUndefined: Self = StObject.set(x, "basemapGalleryGroupQuery", js.undefined)
     
     @scala.inline
-    def deleteAuthorizedCrossOriginDomains: Self = this.set("authorizedCrossOriginDomains", js.undefined)
+    def setBingKey(value: String): Self = StObject.set(x, "bingKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasemapGalleryGroupQuery(value: String): Self = this.set("basemapGalleryGroupQuery", value.asInstanceOf[js.Any])
+    def setBingKeyUndefined: Self = StObject.set(x, "bingKey", js.undefined)
     
     @scala.inline
-    def deleteBasemapGalleryGroupQuery: Self = this.set("basemapGalleryGroupQuery", js.undefined)
+    def setCanListApps(value: Boolean): Self = StObject.set(x, "canListApps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBingKey(value: String): Self = this.set("bingKey", value.asInstanceOf[js.Any])
+    def setCanListAppsUndefined: Self = StObject.set(x, "canListApps", js.undefined)
     
     @scala.inline
-    def deleteBingKey: Self = this.set("bingKey", js.undefined)
+    def setCanListData(value: Boolean): Self = StObject.set(x, "canListData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanListApps(value: Boolean): Self = this.set("canListApps", value.asInstanceOf[js.Any])
+    def setCanListDataUndefined: Self = StObject.set(x, "canListData", js.undefined)
     
     @scala.inline
-    def deleteCanListApps: Self = this.set("canListApps", js.undefined)
+    def setCanListPreProvisionedItems(value: Boolean): Self = StObject.set(x, "canListPreProvisionedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanListData(value: Boolean): Self = this.set("canListData", value.asInstanceOf[js.Any])
+    def setCanListPreProvisionedItemsUndefined: Self = StObject.set(x, "canListPreProvisionedItems", js.undefined)
     
     @scala.inline
-    def deleteCanListData: Self = this.set("canListData", js.undefined)
+    def setCanProvisionDirectPurchase(value: Boolean): Self = StObject.set(x, "canProvisionDirectPurchase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanListPreProvisionedItems(value: Boolean): Self = this.set("canListPreProvisionedItems", value.asInstanceOf[js.Any])
+    def setCanProvisionDirectPurchaseUndefined: Self = StObject.set(x, "canProvisionDirectPurchase", js.undefined)
     
     @scala.inline
-    def deleteCanListPreProvisionedItems: Self = this.set("canListPreProvisionedItems", js.undefined)
+    def setCanSearchPublic(value: Boolean): Self = StObject.set(x, "canSearchPublic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanProvisionDirectPurchase(value: Boolean): Self = this.set("canProvisionDirectPurchase", value.asInstanceOf[js.Any])
+    def setCanSearchPublicUndefined: Self = StObject.set(x, "canSearchPublic", js.undefined)
     
     @scala.inline
-    def deleteCanProvisionDirectPurchase: Self = this.set("canProvisionDirectPurchase", js.undefined)
+    def setCanShareBingPublic(value: Boolean): Self = StObject.set(x, "canShareBingPublic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanSearchPublic(value: Boolean): Self = this.set("canSearchPublic", value.asInstanceOf[js.Any])
+    def setCanShareBingPublicUndefined: Self = StObject.set(x, "canShareBingPublic", js.undefined)
     
     @scala.inline
-    def deleteCanSearchPublic: Self = this.set("canSearchPublic", js.undefined)
+    def setCanSharePublic(value: Boolean): Self = StObject.set(x, "canSharePublic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanShareBingPublic(value: Boolean): Self = this.set("canShareBingPublic", value.asInstanceOf[js.Any])
+    def setCanSharePublicUndefined: Self = StObject.set(x, "canSharePublic", js.undefined)
     
     @scala.inline
-    def deleteCanShareBingPublic: Self = this.set("canShareBingPublic", js.undefined)
+    def setCanSignInArcGIS(value: Boolean): Self = StObject.set(x, "canSignInArcGIS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanSharePublic(value: Boolean): Self = this.set("canSharePublic", value.asInstanceOf[js.Any])
+    def setCanSignInArcGISUndefined: Self = StObject.set(x, "canSignInArcGIS", js.undefined)
     
     @scala.inline
-    def deleteCanSharePublic: Self = this.set("canSharePublic", js.undefined)
+    def setCanSignInIDP(value: Boolean): Self = StObject.set(x, "canSignInIDP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanSignInArcGIS(value: Boolean): Self = this.set("canSignInArcGIS", value.asInstanceOf[js.Any])
+    def setCanSignInIDPUndefined: Self = StObject.set(x, "canSignInIDP", js.undefined)
     
     @scala.inline
-    def deleteCanSignInArcGIS: Self = this.set("canSignInArcGIS", js.undefined)
+    def setColorSetsGroupQuery(value: String): Self = StObject.set(x, "colorSetsGroupQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanSignInIDP(value: Boolean): Self = this.set("canSignInIDP", value.asInstanceOf[js.Any])
+    def setColorSetsGroupQueryUndefined: Self = StObject.set(x, "colorSetsGroupQuery", js.undefined)
     
     @scala.inline
-    def deleteCanSignInIDP: Self = this.set("canSignInIDP", js.undefined)
+    def setCommentsEnabled(value: Boolean): Self = StObject.set(x, "commentsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorSetsGroupQuery(value: String): Self = this.set("colorSetsGroupQuery", value.asInstanceOf[js.Any])
+    def setCommentsEnabledUndefined: Self = StObject.set(x, "commentsEnabled", js.undefined)
     
     @scala.inline
-    def deleteColorSetsGroupQuery: Self = this.set("colorSetsGroupQuery", js.undefined)
+    def setCreated(value: DateProperties): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentsEnabled(value: Boolean): Self = this.set("commentsEnabled", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def deleteCommentsEnabled: Self = this.set("commentsEnabled", js.undefined)
+    def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: DateProperties): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setCustomBaseUrl(value: String): Self = StObject.set(x, "customBaseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCulture(value: String): Self = this.set("culture", value.asInstanceOf[js.Any])
+    def setCustomBaseUrlUndefined: Self = StObject.set(x, "customBaseUrl", js.undefined)
     
     @scala.inline
-    def deleteCulture: Self = this.set("culture", js.undefined)
+    def setDefaultBasemap(value: BasemapProperties): Self = StObject.set(x, "defaultBasemap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomBaseUrl(value: String): Self = this.set("customBaseUrl", value.asInstanceOf[js.Any])
+    def setDefaultBasemapUndefined: Self = StObject.set(x, "defaultBasemap", js.undefined)
     
     @scala.inline
-    def deleteCustomBaseUrl: Self = this.set("customBaseUrl", js.undefined)
+    def setDefaultExtent(value: ExtentProperties): Self = StObject.set(x, "defaultExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultBasemap(value: BasemapProperties): Self = this.set("defaultBasemap", value.asInstanceOf[js.Any])
+    def setDefaultExtentUndefined: Self = StObject.set(x, "defaultExtent", js.undefined)
     
     @scala.inline
-    def deleteDefaultBasemap: Self = this.set("defaultBasemap", js.undefined)
+    def setDefaultVectorBasemap(value: BasemapProperties): Self = StObject.set(x, "defaultVectorBasemap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultExtent(value: ExtentProperties): Self = this.set("defaultExtent", value.asInstanceOf[js.Any])
+    def setDefaultVectorBasemapUndefined: Self = StObject.set(x, "defaultVectorBasemap", js.undefined)
     
     @scala.inline
-    def deleteDefaultExtent: Self = this.set("defaultExtent", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultVectorBasemap(value: BasemapProperties): Self = this.set("defaultVectorBasemap", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDefaultVectorBasemap: Self = this.set("defaultVectorBasemap", js.undefined)
+    def setEueiEnabled(value: Boolean): Self = StObject.set(x, "eueiEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEueiEnabledUndefined: Self = StObject.set(x, "eueiEnabled", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFeaturedGroups(value: js.Array[PortalFeaturedGroups]): Self = StObject.set(x, "featuredGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEueiEnabled(value: Boolean): Self = this.set("eueiEnabled", value.asInstanceOf[js.Any])
+    def setFeaturedGroupsUndefined: Self = StObject.set(x, "featuredGroups", js.undefined)
     
     @scala.inline
-    def deleteEueiEnabled: Self = this.set("eueiEnabled", js.undefined)
+    def setFeaturedGroupsVarargs(value: PortalFeaturedGroups*): Self = StObject.set(x, "featuredGroups", js.Array(value :_*))
     
     @scala.inline
-    def setFeaturedGroupsVarargs(value: PortalFeaturedGroups*): Self = this.set("featuredGroups", js.Array(value :_*))
+    def setFeaturedItemsGroupQuery(value: String): Self = StObject.set(x, "featuredItemsGroupQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeaturedGroups(value: js.Array[PortalFeaturedGroups]): Self = this.set("featuredGroups", value.asInstanceOf[js.Any])
+    def setFeaturedItemsGroupQueryUndefined: Self = StObject.set(x, "featuredItemsGroupQuery", js.undefined)
     
     @scala.inline
-    def deleteFeaturedGroups: Self = this.set("featuredGroups", js.undefined)
+    def setGalleryTemplatesGroupQuery(value: String): Self = StObject.set(x, "galleryTemplatesGroupQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeaturedItemsGroupQuery(value: String): Self = this.set("featuredItemsGroupQuery", value.asInstanceOf[js.Any])
+    def setGalleryTemplatesGroupQueryUndefined: Self = StObject.set(x, "galleryTemplatesGroupQuery", js.undefined)
     
     @scala.inline
-    def deleteFeaturedItemsGroupQuery: Self = this.set("featuredItemsGroupQuery", js.undefined)
+    def setHasCategorySchema(value: Boolean): Self = StObject.set(x, "hasCategorySchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGalleryTemplatesGroupQuery(value: String): Self = this.set("galleryTemplatesGroupQuery", value.asInstanceOf[js.Any])
+    def setHasCategorySchemaUndefined: Self = StObject.set(x, "hasCategorySchema", js.undefined)
     
     @scala.inline
-    def deleteGalleryTemplatesGroupQuery: Self = this.set("galleryTemplatesGroupQuery", js.undefined)
+    def setHelperServices(value: js.Any): Self = StObject.set(x, "helperServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasCategorySchema(value: Boolean): Self = this.set("hasCategorySchema", value.asInstanceOf[js.Any])
+    def setHelperServicesUndefined: Self = StObject.set(x, "helperServices", js.undefined)
     
     @scala.inline
-    def deleteHasCategorySchema: Self = this.set("hasCategorySchema", js.undefined)
+    def setHomePageFeaturedContent(value: String): Self = StObject.set(x, "homePageFeaturedContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelperServices(value: js.Any): Self = this.set("helperServices", value.asInstanceOf[js.Any])
+    def setHomePageFeaturedContentCount(value: Double): Self = StObject.set(x, "homePageFeaturedContentCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHelperServices: Self = this.set("helperServices", js.undefined)
+    def setHomePageFeaturedContentCountUndefined: Self = StObject.set(x, "homePageFeaturedContentCount", js.undefined)
     
     @scala.inline
-    def setHomePageFeaturedContent(value: String): Self = this.set("homePageFeaturedContent", value.asInstanceOf[js.Any])
+    def setHomePageFeaturedContentUndefined: Self = StObject.set(x, "homePageFeaturedContent", js.undefined)
     
     @scala.inline
-    def deleteHomePageFeaturedContent: Self = this.set("homePageFeaturedContent", js.undefined)
+    def setHttpPort(value: Double): Self = StObject.set(x, "httpPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHomePageFeaturedContentCount(value: Double): Self = this.set("homePageFeaturedContentCount", value.asInstanceOf[js.Any])
+    def setHttpPortUndefined: Self = StObject.set(x, "httpPort", js.undefined)
     
     @scala.inline
-    def deleteHomePageFeaturedContentCount: Self = this.set("homePageFeaturedContentCount", js.undefined)
+    def setHttpsPort(value: Double): Self = StObject.set(x, "httpsPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpPort(value: Double): Self = this.set("httpPort", value.asInstanceOf[js.Any])
+    def setHttpsPortUndefined: Self = StObject.set(x, "httpsPort", js.undefined)
     
     @scala.inline
-    def deleteHttpPort: Self = this.set("httpPort", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpsPort(value: Double): Self = this.set("httpsPort", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHttpsPort: Self = this.set("httpsPort", js.undefined)
+    def setIpCntryCode(value: String): Self = StObject.set(x, "ipCntryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIpCntryCodeUndefined: Self = StObject.set(x, "ipCntryCode", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIsPortal(value: Boolean): Self = StObject.set(x, "isPortal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpCntryCode(value: String): Self = this.set("ipCntryCode", value.asInstanceOf[js.Any])
+    def setIsPortalUndefined: Self = StObject.set(x, "isPortal", js.undefined)
     
     @scala.inline
-    def deleteIpCntryCode: Self = this.set("ipCntryCode", js.undefined)
+    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPortal(value: Boolean): Self = this.set("isPortal", value.asInstanceOf[js.Any])
+    def setIsReadOnlyUndefined: Self = StObject.set(x, "isReadOnly", js.undefined)
     
     @scala.inline
-    def deleteIsPortal: Self = this.set("isPortal", js.undefined)
+    def setLayerTemplatesGroupQuery(value: String): Self = StObject.set(x, "layerTemplatesGroupQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReadOnly(value: Boolean): Self = this.set("isReadOnly", value.asInstanceOf[js.Any])
+    def setLayerTemplatesGroupQueryUndefined: Self = StObject.set(x, "layerTemplatesGroupQuery", js.undefined)
     
     @scala.inline
-    def deleteIsReadOnly: Self = this.set("isReadOnly", js.undefined)
+    def setMaxTokenExpirationMinutes(value: Double): Self = StObject.set(x, "maxTokenExpirationMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerTemplatesGroupQuery(value: String): Self = this.set("layerTemplatesGroupQuery", value.asInstanceOf[js.Any])
+    def setMaxTokenExpirationMinutesUndefined: Self = StObject.set(x, "maxTokenExpirationMinutes", js.undefined)
     
     @scala.inline
-    def deleteLayerTemplatesGroupQuery: Self = this.set("layerTemplatesGroupQuery", js.undefined)
+    def setModified(value: DateProperties): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTokenExpirationMinutes(value: Double): Self = this.set("maxTokenExpirationMinutes", value.asInstanceOf[js.Any])
+    def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
     
     @scala.inline
-    def deleteMaxTokenExpirationMinutes: Self = this.set("maxTokenExpirationMinutes", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModified(value: DateProperties): Self = this.set("modified", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteModified: Self = this.set("modified", js.undefined)
+    def setPortalHostname(value: String): Self = StObject.set(x, "portalHostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPortalHostnameUndefined: Self = StObject.set(x, "portalHostname", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPortalMode(value: multitenant | singletenant): Self = StObject.set(x, "portalMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalHostname(value: String): Self = this.set("portalHostname", value.asInstanceOf[js.Any])
+    def setPortalModeUndefined: Self = StObject.set(x, "portalMode", js.undefined)
     
     @scala.inline
-    def deletePortalHostname: Self = this.set("portalHostname", js.undefined)
+    def setPortalProperties(value: js.Any): Self = StObject.set(x, "portalProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalMode(value: multitenant | singletenant): Self = this.set("portalMode", value.asInstanceOf[js.Any])
+    def setPortalPropertiesUndefined: Self = StObject.set(x, "portalProperties", js.undefined)
     
     @scala.inline
-    def deletePortalMode: Self = this.set("portalMode", js.undefined)
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalProperties(value: js.Any): Self = this.set("portalProperties", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deletePortalProperties: Self = this.set("portalProperties", js.undefined)
+    def setRotatorPanels(value: js.Array[_]): Self = StObject.set(x, "rotatorPanels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setRotatorPanelsUndefined: Self = StObject.set(x, "rotatorPanels", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setRotatorPanelsVarargs(value: js.Any*): Self = StObject.set(x, "rotatorPanels", js.Array(value :_*))
     
     @scala.inline
-    def setRotatorPanelsVarargs(value: js.Any*): Self = this.set("rotatorPanels", js.Array(value :_*))
+    def setShowHomePageDescription(value: Boolean): Self = StObject.set(x, "showHomePageDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotatorPanels(value: js.Array[_]): Self = this.set("rotatorPanels", value.asInstanceOf[js.Any])
+    def setShowHomePageDescriptionUndefined: Self = StObject.set(x, "showHomePageDescription", js.undefined)
     
     @scala.inline
-    def deleteRotatorPanels: Self = this.set("rotatorPanels", js.undefined)
+    def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowHomePageDescription(value: Boolean): Self = this.set("showHomePageDescription", value.asInstanceOf[js.Any])
+    def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     
     @scala.inline
-    def deleteShowHomePageDescription: Self = this.set("showHomePageDescription", js.undefined)
+    def setSupportsHostedServices(value: Boolean): Self = StObject.set(x, "supportsHostedServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceJSON(value: js.Any): Self = this.set("sourceJSON", value.asInstanceOf[js.Any])
+    def setSupportsHostedServicesUndefined: Self = StObject.set(x, "supportsHostedServices", js.undefined)
     
     @scala.inline
-    def deleteSourceJSON: Self = this.set("sourceJSON", js.undefined)
+    def setSymbolSetsGroupQuery(value: String): Self = StObject.set(x, "symbolSetsGroupQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsHostedServices(value: Boolean): Self = this.set("supportsHostedServices", value.asInstanceOf[js.Any])
+    def setSymbolSetsGroupQueryUndefined: Self = StObject.set(x, "symbolSetsGroupQuery", js.undefined)
     
     @scala.inline
-    def deleteSupportsHostedServices: Self = this.set("supportsHostedServices", js.undefined)
+    def setTemplatesGroupQuery(value: String): Self = StObject.set(x, "templatesGroupQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbolSetsGroupQuery(value: String): Self = this.set("symbolSetsGroupQuery", value.asInstanceOf[js.Any])
+    def setTemplatesGroupQueryUndefined: Self = StObject.set(x, "templatesGroupQuery", js.undefined)
     
     @scala.inline
-    def deleteSymbolSetsGroupQuery: Self = this.set("symbolSetsGroupQuery", js.undefined)
+    def setUnits(value: english | metric): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplatesGroupQuery(value: String): Self = this.set("templatesGroupQuery", value.asInstanceOf[js.Any])
+    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
     @scala.inline
-    def deleteTemplatesGroupQuery: Self = this.set("templatesGroupQuery", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnits(value: english | metric): Self = this.set("units", value.asInstanceOf[js.Any])
+    def setUrlKey(value: String): Self = StObject.set(x, "urlKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnits: Self = this.set("units", js.undefined)
+    def setUrlKeyUndefined: Self = StObject.set(x, "urlKey", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUseStandardizedQuery(value: Boolean): Self = StObject.set(x, "useStandardizedQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrlKey(value: String): Self = this.set("urlKey", value.asInstanceOf[js.Any])
+    def setUseStandardizedQueryUndefined: Self = StObject.set(x, "useStandardizedQuery", js.undefined)
     
     @scala.inline
-    def deleteUrlKey: Self = this.set("urlKey", js.undefined)
+    def setUseVectorBasemaps(value: Boolean): Self = StObject.set(x, "useVectorBasemaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseStandardizedQuery(value: Boolean): Self = this.set("useStandardizedQuery", value.asInstanceOf[js.Any])
+    def setUseVectorBasemapsUndefined: Self = StObject.set(x, "useVectorBasemaps", js.undefined)
     
     @scala.inline
-    def deleteUseStandardizedQuery: Self = this.set("useStandardizedQuery", js.undefined)
+    def setUser(value: PortalUserProperties): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseVectorBasemaps(value: Boolean): Self = this.set("useVectorBasemaps", value.asInstanceOf[js.Any])
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
     @scala.inline
-    def deleteUseVectorBasemaps: Self = this.set("useVectorBasemaps", js.undefined)
+    def setVectorBasemapGalleryGroupQuery(value: String): Self = StObject.set(x, "vectorBasemapGalleryGroupQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser(value: PortalUserProperties): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
-    
-    @scala.inline
-    def setVectorBasemapGalleryGroupQuery(value: String): Self = this.set("vectorBasemapGalleryGroupQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVectorBasemapGalleryGroupQuery: Self = this.set("vectorBasemapGalleryGroupQuery", js.undefined)
+    def setVectorBasemapGalleryGroupQueryUndefined: Self = StObject.set(x, "vectorBasemapGalleryGroupQuery", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientToolresults.anon.KeyOauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectsResource extends js.Object {
+trait ProjectsResource extends StObject {
   
   /** Gets the Tool Results settings for a project. May return any of the following canonical error codes: - PERMISSION_DENIED - if the user is not authorized to read from project */
   def getSettings(): Request[ProjectSettings] = js.native

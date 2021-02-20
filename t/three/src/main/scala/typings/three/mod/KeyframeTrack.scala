@@ -1,5 +1,6 @@
 package typings.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,9 +24,9 @@ class KeyframeTrack protected ()
   ) = this()
 }
 /* static members */
-@JSImport("three", "KeyframeTrack")
-@js.native
-object KeyframeTrack extends js.Object {
+object KeyframeTrack {
   
+  @JSImport("three", "KeyframeTrack.toJSON")
+  @js.native
   def toJSON(track: typings.three.keyframeTrackMod.KeyframeTrack): js.Any = js.native
 }

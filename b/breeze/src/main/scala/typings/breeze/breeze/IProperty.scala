@@ -1,11 +1,12 @@
 package typings.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IProperty extends js.Object {
+trait IProperty extends StObject {
   
   var displayName: String = js.native
   
@@ -38,42 +39,30 @@ object IProperty {
   }
   
   @scala.inline
-  implicit class IPropertyOps[Self <: IProperty] (val x: Self) extends AnyVal {
+  implicit class IPropertyMutableBuilder[Self <: IProperty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsDataProperty(value: Boolean): Self = StObject.set(x, "isDataProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsNavigationProperty(value: Boolean): Self = StObject.set(x, "isNavigationProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDataProperty(value: Boolean): Self = this.set("isDataProperty", value.asInstanceOf[js.Any])
+    def setNameOnServer(value: String): Self = StObject.set(x, "nameOnServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNavigationProperty(value: Boolean): Self = this.set("isNavigationProperty", value.asInstanceOf[js.Any])
+    def setParentType(value: IStructuralType): Self = StObject.set(x, "parentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setValidators(value: js.Array[Validator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameOnServer(value: String): Self = this.set("nameOnServer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentType(value: IStructuralType): Self = this.set("parentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidatorsVarargs(value: Validator*): Self = this.set("validators", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidators(value: js.Array[Validator]): Self = this.set("validators", value.asInstanceOf[js.Any])
+    def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "validators", js.Array(value :_*))
   }
 }

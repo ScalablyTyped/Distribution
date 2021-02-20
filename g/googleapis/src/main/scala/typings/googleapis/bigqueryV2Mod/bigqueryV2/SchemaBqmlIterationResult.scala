@@ -1,11 +1,12 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaBqmlIterationResult extends js.Object {
+trait SchemaBqmlIterationResult extends StObject {
   
   /**
     * [Output-only, Beta] Time taken to run the training iteration in
@@ -50,48 +51,36 @@ object SchemaBqmlIterationResult {
   }
   
   @scala.inline
-  implicit class SchemaBqmlIterationResultOps[Self <: SchemaBqmlIterationResult] (val x: Self) extends AnyVal {
+  implicit class SchemaBqmlIterationResultMutableBuilder[Self <: SchemaBqmlIterationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDurationMs(value: String): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationMsUndefined: Self = StObject.set(x, "durationMs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvalLoss(value: Double): Self = StObject.set(x, "evalLoss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationMs(value: String): Self = this.set("durationMs", value.asInstanceOf[js.Any])
+    def setEvalLossUndefined: Self = StObject.set(x, "evalLoss", js.undefined)
     
     @scala.inline
-    def deleteDurationMs: Self = this.set("durationMs", js.undefined)
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvalLoss(value: Double): Self = this.set("evalLoss", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteEvalLoss: Self = this.set("evalLoss", js.undefined)
+    def setLearnRate(value: Double): Self = StObject.set(x, "learnRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setLearnRateUndefined: Self = StObject.set(x, "learnRate", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setTrainingLoss(value: Double): Self = StObject.set(x, "trainingLoss", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLearnRate(value: Double): Self = this.set("learnRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLearnRate: Self = this.set("learnRate", js.undefined)
-    
-    @scala.inline
-    def setTrainingLoss(value: Double): Self = this.set("trainingLoss", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrainingLoss: Self = this.set("trainingLoss", js.undefined)
+    def setTrainingLossUndefined: Self = StObject.set(x, "trainingLoss", js.undefined)
   }
 }

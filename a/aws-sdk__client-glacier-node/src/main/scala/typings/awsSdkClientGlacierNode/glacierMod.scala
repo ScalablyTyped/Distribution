@@ -1,6 +1,7 @@
 package typings.awsSdkClientGlacierNode
 
 import typings.awsSdkClientGlacierNode.glacierClientMod.GlacierClient
+import typings.awsSdkClientGlacierNode.glacierConfigurationMod.GlacierConfiguration
 import typings.awsSdkClientGlacierNode.typesAbortMultipartUploadInputMod.AbortMultipartUploadInput
 import typings.awsSdkClientGlacierNode.typesAbortMultipartUploadOutputMod.AbortMultipartUploadOutput
 import typings.awsSdkClientGlacierNode.typesAbortVaultLockInputMod.AbortVaultLockInput
@@ -68,16 +69,17 @@ import typings.awsSdkClientGlacierNode.typesUploadArchiveOutputMod.UploadArchive
 import typings.awsSdkClientGlacierNode.typesUploadMultipartPartInputMod.UploadMultipartPartInput
 import typings.awsSdkClientGlacierNode.typesUploadMultipartPartOutputMod.UploadMultipartPartOutput
 import typings.node.streamMod.Readable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-glacier-node/Glacier", JSImport.Namespace)
-@js.native
-object glacierMod extends js.Object {
+object glacierMod {
   
+  @JSImport("@aws-sdk/client-glacier-node/Glacier", "Glacier")
   @js.native
-  class Glacier () extends GlacierClient {
+  class Glacier protected () extends GlacierClient {
+    def this(configuration: GlacierConfiguration) = this()
     
     /**
       * <p>This operation aborts a multipart upload identified by the upload ID.</p> <p>After the Abort Multipart Upload request succeeds, you cannot upload any more parts to the multipart upload or complete the multipart upload. Aborting a completed upload fails. However, aborting an already-aborted upload will succeed, for a short time. For more information about uploading a part and completing a multipart upload, see <a>UploadMultipartPart</a> and <a>CompleteMultipartUpload</a>.</p> <p>This operation is idempotent.</p> <p>An AWS account has full permission to perform all operations (actions). However, AWS Identity and Access Management (IAM) users don't have any permissions by default. You must grant them explicit permission to perform specific actions. For more information, see <a href="http://docs.aws.amazon.com/amazonglacier/latest/dev/using-iam-with-amazon-glacier.html">Access Control Using AWS Identity and Access Management (IAM)</a>.</p> <p> For conceptual information and underlying REST API, see <a href="http://docs.aws.amazon.com/amazonglacier/latest/dev/working-with-archives.html">Working with Archives in Amazon Glacier</a> and <a href="http://docs.aws.amazon.com/amazonglacier/latest/dev/api-multipart-abort-upload.html">Abort Multipart Upload</a> in the <i>Amazon Glacier Developer Guide</i>. </p>

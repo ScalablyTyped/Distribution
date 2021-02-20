@@ -1,5 +1,6 @@
 package typings.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,7 +65,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.auth0.auth0Strings.yammer
   - typings.auth0.auth0Strings.yandex
 */
-trait UnlinkAccountsParamsProvider extends js.Object
+trait UnlinkAccountsParamsProvider extends StObject
 object UnlinkAccountsParamsProvider {
   
   @scala.inline

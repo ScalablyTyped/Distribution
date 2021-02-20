@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,30 +35,18 @@ object ASPxClientFileManagerFilesUploadingEventArgs {
   }
   
   @scala.inline
-  implicit class ASPxClientFileManagerFilesUploadingEventArgsOps[Self <: ASPxClientFileManagerFilesUploadingEventArgs] (val x: Self) extends AnyVal {
+  implicit class ASPxClientFileManagerFilesUploadingEventArgsMutableBuilder[Self <: ASPxClientFileManagerFilesUploadingEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileNames(value: js.Array[String]): Self = StObject.set(x, "fileNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileNamesVarargs(value: String*): Self = StObject.set(x, "fileNames", js.Array(value :_*))
     
     @scala.inline
-    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFileNamesVarargs(value: String*): Self = this.set("fileNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setFileNames(value: js.Array[String]): Self = this.set("fileNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFolder(value: String): Self = this.set("folder", value.asInstanceOf[js.Any])
+    def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
   }
 }

@@ -8,30 +8,58 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/Stack", JSImport.Namespace)
-@js.native
-object stackMod extends js.Object {
+object stackMod {
   
-  val StackItem: FunctionComponent[IStackItemProps] = js.native
-  
-  @js.native
-  object Stack extends js.Object {
+  /* Inlined react.react.FunctionComponent<office-ui-fabric-react.office-ui-fabric-react/lib/components/Stack/Stack.types.IStackProps> & {  Item :react.react.FunctionComponent<office-ui-fabric-react.office-ui-fabric-react/lib/components/Stack/StackItem/StackItem.types.IStackItemProps>} */
+  object Stack {
     
+    @JSImport("office-ui-fabric-react/lib/components/Stack", "Stack")
+    @js.native
     def apply(props: PropsWithChildren[IStackProps]): ReactElement | Null = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Stack", "Stack")
+    @js.native
     def apply(props: PropsWithChildren[IStackProps], context: js.Any): ReactElement | Null = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Stack", "Stack")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var Item: FunctionComponent[IStackItemProps] = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Stack", "Stack.Item")
+    @js.native
+    def Item: FunctionComponent[IStackItemProps] = js.native
+    @scala.inline
+    def Item_=(x: FunctionComponent[IStackItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
-    var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Stack", "Stack.contextTypes")
+    @js.native
+    def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
+    @scala.inline
+    def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
-    var defaultProps: js.UndefOr[PartialIStackProps] = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Stack", "Stack.defaultProps")
+    @js.native
+    def defaultProps: js.UndefOr[PartialIStackProps] = js.native
+    @scala.inline
+    def defaultProps_=(x: js.UndefOr[PartialIStackProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    var displayName: js.UndefOr[String] = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Stack", "Stack.displayName")
+    @js.native
+    def displayName: js.UndefOr[String] = js.native
+    @scala.inline
+    def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    var propTypes: js.UndefOr[WeakValidationMapIStackPr] = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Stack", "Stack.propTypes")
+    @js.native
+    def propTypes: js.UndefOr[WeakValidationMapIStackPr] = js.native
+    @scala.inline
+    def propTypes_=(x: js.UndefOr[WeakValidationMapIStackPr]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
+  
+  @JSImport("office-ui-fabric-react/lib/components/Stack", "StackItem")
+  @js.native
+  val StackItem: FunctionComponent[IStackItemProps] = js.native
 }

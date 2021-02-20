@@ -1,11 +1,12 @@
 package typings.amapJsApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofUtil extends js.Object {
+trait TypeofUtil extends StObject {
   
   /**
     * 将16进制RGBA转为rgba(R,G,B,A)

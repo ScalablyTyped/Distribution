@@ -1,14 +1,14 @@
 package typings.samchon
 
 import typings.samchon.webClientDriverMod.WebClientDriver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/templates/service", JSImport.Namespace)
-@js.native
-object serviceMod extends js.Object {
+object serviceMod {
   
+  @JSImport("samchon/templates/service", "Client")
   @js.native
   abstract class Client protected ()
     extends typings.samchon.clientMod.Client {
@@ -21,6 +21,7 @@ object serviceMod extends js.Object {
     def this(user: typings.samchon.userMod.User, driver: WebClientDriver) = this()
   }
   
+  @JSImport("samchon/templates/service", "Server")
   @js.native
   /**
     * Default Constructor.
@@ -28,6 +29,7 @@ object serviceMod extends js.Object {
   abstract class Server ()
     extends typings.samchon.serviceServerMod.Server
   
+  @JSImport("samchon/templates/service", "Service")
   @js.native
   abstract class Service protected ()
     extends typings.samchon.serviceServiceMod.Service {
@@ -40,6 +42,7 @@ object serviceMod extends js.Object {
     def this(client: typings.samchon.clientMod.Client, path: String) = this()
   }
   
+  @JSImport("samchon/templates/service", "User")
   @js.native
   abstract class User protected ()
     extends typings.samchon.userMod.User {

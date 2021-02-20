@@ -1,5 +1,6 @@
 package typings.angular.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://docs.angularjs.org/api/ng/provider/$httpProvider The properties section
   */
 @js.native
-trait IHttpProviderDefaults extends js.Object {
+trait IHttpProviderDefaults extends StObject {
   
   /**
     * {boolean|Cache}
@@ -68,81 +69,69 @@ object IHttpProviderDefaults {
   }
   
   @scala.inline
-  implicit class IHttpProviderDefaultsOps[Self <: IHttpProviderDefaults] (val x: Self) extends AnyVal {
+  implicit class IHttpProviderDefaultsMutableBuilder[Self <: IHttpProviderDefaults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaders(value: IHttpRequestConfigHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCache(value: js.Any): Self = this.set("cache", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteCache: Self = this.set("cache", js.undefined)
+    def setParamSerializer(value: String | (js.Function1[/* obj */ js.Any, String])): Self = StObject.set(x, "paramSerializer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: IHttpRequestConfigHeaders): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setParamSerializerFunction1(value: /* obj */ js.Any => String): Self = StObject.set(x, "paramSerializer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setParamSerializerUndefined: Self = StObject.set(x, "paramSerializer", js.undefined)
     
     @scala.inline
-    def setParamSerializerFunction1(value: /* obj */ js.Any => String): Self = this.set("paramSerializer", js.Any.fromFunction1(value))
+    def setTransformRequest(value: IHttpRequestTransformer | js.Array[IHttpRequestTransformer]): Self = StObject.set(x, "transformRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamSerializer(value: String | (js.Function1[/* obj */ js.Any, String])): Self = this.set("paramSerializer", value.asInstanceOf[js.Any])
+    def setTransformRequestFunction2(value: (/* data */ js.Any, /* headersGetter */ IHttpHeadersGetter) => js.Any): Self = StObject.set(x, "transformRequest", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteParamSerializer: Self = this.set("paramSerializer", js.undefined)
+    def setTransformRequestUndefined: Self = StObject.set(x, "transformRequest", js.undefined)
     
     @scala.inline
-    def setTransformRequestVarargs(value: IHttpRequestTransformer*): Self = this.set("transformRequest", js.Array(value :_*))
+    def setTransformRequestVarargs(value: IHttpRequestTransformer*): Self = StObject.set(x, "transformRequest", js.Array(value :_*))
     
     @scala.inline
-    def setTransformRequestFunction2(value: (/* data */ js.Any, /* headersGetter */ IHttpHeadersGetter) => js.Any): Self = this.set("transformRequest", js.Any.fromFunction2(value))
+    def setTransformResponse(value: IHttpResponseTransformer | js.Array[IHttpResponseTransformer]): Self = StObject.set(x, "transformResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformRequest(value: IHttpRequestTransformer | js.Array[IHttpRequestTransformer]): Self = this.set("transformRequest", value.asInstanceOf[js.Any])
+    def setTransformResponseFunction3(value: (/* data */ js.Any, /* headersGetter */ IHttpHeadersGetter, /* status */ Double) => js.Any): Self = StObject.set(x, "transformResponse", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteTransformRequest: Self = this.set("transformRequest", js.undefined)
+    def setTransformResponseUndefined: Self = StObject.set(x, "transformResponse", js.undefined)
     
     @scala.inline
-    def setTransformResponseVarargs(value: IHttpResponseTransformer*): Self = this.set("transformResponse", js.Array(value :_*))
+    def setTransformResponseVarargs(value: IHttpResponseTransformer*): Self = StObject.set(x, "transformResponse", js.Array(value :_*))
     
     @scala.inline
-    def setTransformResponseFunction3(value: (/* data */ js.Any, /* headersGetter */ IHttpHeadersGetter, /* status */ Double) => js.Any): Self = this.set("transformResponse", js.Any.fromFunction3(value))
+    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformResponse(value: IHttpResponseTransformer | js.Array[IHttpResponseTransformer]): Self = this.set("transformResponse", value.asInstanceOf[js.Any])
+    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
     
     @scala.inline
-    def deleteTransformResponse: Self = this.set("transformResponse", js.undefined)
+    def setXsrfCookieName(value: String): Self = StObject.set(x, "xsrfCookieName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
+    def setXsrfCookieNameUndefined: Self = StObject.set(x, "xsrfCookieName", js.undefined)
     
     @scala.inline
-    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
+    def setXsrfHeaderName(value: String): Self = StObject.set(x, "xsrfHeaderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXsrfCookieName(value: String): Self = this.set("xsrfCookieName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXsrfCookieName: Self = this.set("xsrfCookieName", js.undefined)
-    
-    @scala.inline
-    def setXsrfHeaderName(value: String): Self = this.set("xsrfHeaderName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXsrfHeaderName: Self = this.set("xsrfHeaderName", js.undefined)
+    def setXsrfHeaderNameUndefined: Self = StObject.set(x, "xsrfHeaderName", js.undefined)
   }
 }

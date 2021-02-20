@@ -1,11 +1,12 @@
 package typings.onsenui.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlertOptions extends js.Object {
+trait AlertOptions extends StObject {
   
   var animation: js.UndefOr[String] = js.native
   
@@ -38,87 +39,75 @@ object AlertOptions {
   }
   
   @scala.inline
-  implicit class AlertOptionsOps[Self <: AlertOptions] (val x: Self) extends AnyVal {
+  implicit class AlertOptionsMutableBuilder[Self <: AlertOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonLabel(value: String): Self = StObject.set(x, "buttonLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: String): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setButtonLabelUndefined: Self = StObject.set(x, "buttonLabel", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setButtonLabels(value: js.Array[String]): Self = StObject.set(x, "buttonLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonLabel(value: String): Self = this.set("buttonLabel", value.asInstanceOf[js.Any])
+    def setButtonLabelsUndefined: Self = StObject.set(x, "buttonLabels", js.undefined)
     
     @scala.inline
-    def deleteButtonLabel: Self = this.set("buttonLabel", js.undefined)
+    def setButtonLabelsVarargs(value: String*): Self = StObject.set(x, "buttonLabels", js.Array(value :_*))
     
     @scala.inline
-    def setButtonLabelsVarargs(value: String*): Self = this.set("buttonLabels", js.Array(value :_*))
+    def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonLabels(value: js.Array[String]): Self = this.set("buttonLabels", value.asInstanceOf[js.Any])
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def deleteButtonLabels: Self = this.set("buttonLabels", js.undefined)
+    def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: js.Any): Self = this.set("callback", value.asInstanceOf[js.Any])
+    def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelable(value: Boolean): Self = this.set("cancelable", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCancelable: Self = this.set("cancelable", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMessageHTML(value: String): Self = StObject.set(x, "messageHTML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setMessageHTMLUndefined: Self = StObject.set(x, "messageHTML", js.undefined)
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageHTML(value: String): Self = this.set("messageHTML", value.asInstanceOf[js.Any])
+    def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
     @scala.inline
-    def deleteMessageHTML: Self = this.set("messageHTML", js.undefined)
+    def setPrimaryButtonIndex(value: Double): Self = StObject.set(x, "primaryButtonIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifier(value: String): Self = this.set("modifier", value.asInstanceOf[js.Any])
+    def setPrimaryButtonIndexUndefined: Self = StObject.set(x, "primaryButtonIndex", js.undefined)
     
     @scala.inline
-    def deleteModifier: Self = this.set("modifier", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryButtonIndex(value: Double): Self = this.set("primaryButtonIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimaryButtonIndex: Self = this.set("primaryButtonIndex", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

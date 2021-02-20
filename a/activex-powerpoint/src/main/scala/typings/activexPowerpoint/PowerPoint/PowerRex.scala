@@ -1,11 +1,12 @@
 package typings.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PowerRex extends js.Object {
+trait PowerRex extends StObject {
   
   def OnAsfEncoderEvent(erorCode: js.Any, bstrErrorDesc: js.Any): Unit = js.native
   
@@ -22,24 +23,12 @@ object PowerRex {
   }
   
   @scala.inline
-  implicit class PowerRexOps[Self <: PowerRex] (val x: Self) extends AnyVal {
+  implicit class PowerRexMutableBuilder[Self <: PowerRex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnAsfEncoderEvent(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "OnAsfEncoderEvent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnAsfEncoderEvent(value: (js.Any, js.Any) => Unit): Self = this.set("OnAsfEncoderEvent", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setPowerPointDotPowerRex_typekey(value: PowerRex): Self = this.set("PowerPoint.PowerRex_typekey", value.asInstanceOf[js.Any])
+    def setPowerPointDotPowerRex_typekey(value: PowerRex): Self = StObject.set(x, "PowerPoint.PowerRex_typekey", value.asInstanceOf[js.Any])
   }
 }

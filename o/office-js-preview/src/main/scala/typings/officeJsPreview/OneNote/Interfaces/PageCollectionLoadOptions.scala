@@ -1,5 +1,6 @@
 package typings.officeJsPreview.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: OneNoteApi 1.1]
   */
 @js.native
-trait PageCollectionLoadOptions extends js.Object {
+trait PageCollectionLoadOptions extends StObject {
   
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.native
@@ -97,78 +98,66 @@ object PageCollectionLoadOptions {
   }
   
   @scala.inline
-  implicit class PageCollectionLoadOptionsOps[Self <: PageCollectionLoadOptions] (val x: Self) extends AnyVal {
+  implicit class PageCollectionLoadOptionsMutableBuilder[Self <: PageCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassNotebookPageSource(value: Boolean): Self = StObject.set(x, "classNotebookPageSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setClassNotebookPageSourceUndefined: Self = StObject.set(x, "classNotebookPageSource", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setClientUrl(value: Boolean): Self = StObject.set(x, "clientUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassNotebookPageSource(value: Boolean): Self = this.set("classNotebookPageSource", value.asInstanceOf[js.Any])
+    def setClientUrlUndefined: Self = StObject.set(x, "clientUrl", js.undefined)
     
     @scala.inline
-    def deleteClassNotebookPageSource: Self = this.set("classNotebookPageSource", js.undefined)
+    def setContents(value: PageContentCollectionLoadOptions): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientUrl(value: Boolean): Self = this.set("clientUrl", value.asInstanceOf[js.Any])
+    def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
     
     @scala.inline
-    def deleteClientUrl: Self = this.set("clientUrl", js.undefined)
+    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContents(value: PageContentCollectionLoadOptions): Self = this.set("contents", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteContents: Self = this.set("contents", js.undefined)
+    def setInkAnalysisOrNull(value: InkAnalysisLoadOptions): Self = StObject.set(x, "inkAnalysisOrNull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Boolean): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInkAnalysisOrNullUndefined: Self = StObject.set(x, "inkAnalysisOrNull", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPageLevel(value: Boolean): Self = StObject.set(x, "pageLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInkAnalysisOrNull(value: InkAnalysisLoadOptions): Self = this.set("inkAnalysisOrNull", value.asInstanceOf[js.Any])
+    def setPageLevelUndefined: Self = StObject.set(x, "pageLevel", js.undefined)
     
     @scala.inline
-    def deleteInkAnalysisOrNull: Self = this.set("inkAnalysisOrNull", js.undefined)
+    def setParentSection(value: SectionLoadOptions): Self = StObject.set(x, "parentSection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageLevel(value: Boolean): Self = this.set("pageLevel", value.asInstanceOf[js.Any])
+    def setParentSectionUndefined: Self = StObject.set(x, "parentSection", js.undefined)
     
     @scala.inline
-    def deletePageLevel: Self = this.set("pageLevel", js.undefined)
+    def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentSection(value: SectionLoadOptions): Self = this.set("parentSection", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteParentSection: Self = this.set("parentSection", js.undefined)
+    def setWebUrl(value: Boolean): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: Boolean): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setWebUrl(value: Boolean): Self = this.set("webUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebUrl: Self = this.set("webUrl", js.undefined)
+    def setWebUrlUndefined: Self = StObject.set(x, "webUrl", js.undefined)
   }
 }

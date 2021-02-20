@@ -1,12 +1,13 @@
 package typings.babylonjs.anon
 
 import typings.babylonjs.mathVectorMod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DragPlanePoint extends js.Object {
+trait DragPlanePoint extends StObject {
   
   var dragPlanePoint: Vector3 = js.native
   
@@ -21,24 +22,12 @@ object DragPlanePoint {
   }
   
   @scala.inline
-  implicit class DragPlanePointOps[Self <: DragPlanePoint] (val x: Self) extends AnyVal {
+  implicit class DragPlanePointMutableBuilder[Self <: DragPlanePoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDragPlanePoint(value: Vector3): Self = StObject.set(x, "dragPlanePoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDragPlanePoint(value: Vector3): Self = this.set("dragPlanePoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPointerId(value: Double): Self = this.set("pointerId", value.asInstanceOf[js.Any])
+    def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
   }
 }

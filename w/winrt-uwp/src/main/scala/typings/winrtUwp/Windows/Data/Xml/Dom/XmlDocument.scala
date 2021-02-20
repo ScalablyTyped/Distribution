@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Data.Xml.Dom
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Storage.IStorageFile
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the top level of the XML source. This class includes members for retrieving and creating all other XML objects. */
 @js.native
-trait XmlDocument extends js.Object {
+trait XmlDocument extends StObject {
   
   /**
     * Appends a new child node as the last child of the node.

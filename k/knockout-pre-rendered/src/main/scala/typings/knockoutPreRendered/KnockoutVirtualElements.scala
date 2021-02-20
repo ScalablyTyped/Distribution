@@ -3,12 +3,13 @@ package typings.knockoutPreRendered
 import org.scalablytyped.runtime.StringDictionary
 import typings.knockoutPreRendered.anon.Dictindex
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutVirtualElements extends js.Object {
+trait KnockoutVirtualElements extends StObject {
   
   var allowedBindings: StringDictionary[Boolean] = js.native
   
@@ -44,42 +45,30 @@ object KnockoutVirtualElements {
   }
   
   @scala.inline
-  implicit class KnockoutVirtualElementsOps[Self <: KnockoutVirtualElements] (val x: Self) extends AnyVal {
+  implicit class KnockoutVirtualElementsMutableBuilder[Self <: KnockoutVirtualElements] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedBindings(value: StringDictionary[Boolean]): Self = StObject.set(x, "allowedBindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildNodes(value: KnockoutVirtualElement => js.Array[Node]): Self = StObject.set(x, "childNodes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmptyNode(value: KnockoutVirtualElement => Unit): Self = StObject.set(x, "emptyNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAllowedBindings(value: StringDictionary[Boolean]): Self = this.set("allowedBindings", value.asInstanceOf[js.Any])
+    def setFirstChild(value: KnockoutVirtualElement => KnockoutVirtualElement): Self = StObject.set(x, "firstChild", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChildNodes(value: KnockoutVirtualElement => js.Array[Node]): Self = this.set("childNodes", js.Any.fromFunction1(value))
+    def setInsertAfter(value: (KnockoutVirtualElement, Node, Node) => Unit): Self = StObject.set(x, "insertAfter", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setEmptyNode(value: KnockoutVirtualElement => Unit): Self = this.set("emptyNode", js.Any.fromFunction1(value))
+    def setNextSibling(value: KnockoutVirtualElement => Node): Self = StObject.set(x, "nextSibling", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFirstChild(value: KnockoutVirtualElement => KnockoutVirtualElement): Self = this.set("firstChild", js.Any.fromFunction1(value))
+    def setPrepend(value: (KnockoutVirtualElement, Node) => Unit): Self = StObject.set(x, "prepend", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInsertAfter(value: (KnockoutVirtualElement, Node, Node) => Unit): Self = this.set("insertAfter", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setNextSibling(value: KnockoutVirtualElement => Node): Self = this.set("nextSibling", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPrepend(value: (KnockoutVirtualElement, Node) => Unit): Self = this.set("prepend", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetDomNodeChildren(value: (KnockoutVirtualElement, Dictindex) => Unit): Self = this.set("setDomNodeChildren", js.Any.fromFunction2(value))
+    def setSetDomNodeChildren(value: (KnockoutVirtualElement, Dictindex) => Unit): Self = StObject.set(x, "setDomNodeChildren", js.Any.fromFunction2(value))
   }
 }

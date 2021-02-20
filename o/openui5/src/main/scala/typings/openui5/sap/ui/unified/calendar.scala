@@ -2,13 +2,12 @@ package typings.openui5.sap.ui.unified
 
 import typings.openui5.sap.ui.core.CalendarType
 import typings.openui5.sap.ui.core.Control
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.unified.calendar")
-@js.native
-object calendar extends js.Object {
+object calendar {
   
   @js.native
   trait DatesRow extends Month {

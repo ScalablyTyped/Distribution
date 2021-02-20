@@ -1,12 +1,13 @@
 package typings.pdfmake.interfacesMod
 
 import typings.pdfmake.anon.HorizontalRatio
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Node extends js.Object {
+trait Node extends StObject {
   
   var canvas: js.UndefOr[CanvasElement] = js.native
   
@@ -53,129 +54,117 @@ object Node {
   }
   
   @scala.inline
-  implicit class NodeOps[Self <: Node] (val x: Self) extends AnyVal {
+  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanvas(value: CanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageNumbersVarargs(value: Double*): Self = this.set("pageNumbers", js.Array(value :_*))
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def setPageNumbers(value: js.Array[Double]): Self = this.set("pageNumbers", value.asInstanceOf[js.Any])
+    def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setPages(value: Double): Self = this.set("pages", value.asInstanceOf[js.Any])
+    def setHeadlineLevel(value: Double): Self = StObject.set(x, "headlineLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStack(value: Boolean): Self = this.set("stack", value.asInstanceOf[js.Any])
+    def setHeadlineLevelUndefined: Self = StObject.set(x, "headlineLevel", js.undefined)
     
     @scala.inline
-    def setStartPosition(value: HorizontalRatio): Self = this.set("startPosition", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanvas(value: CanvasElement): Self = this.set("canvas", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCanvas: Self = this.set("canvas", js.undefined)
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsVarargs(value: Column*): Self = this.set("columns", js.Array(value :_*))
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def setColumns(value: js.Array[Column]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setOl(value: js.Array[OrderedListElement]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setOlUndefined: Self = StObject.set(x, "ol", js.undefined)
     
     @scala.inline
-    def setHeadlineLevel(value: Double): Self = this.set("headlineLevel", value.asInstanceOf[js.Any])
+    def setOlVarargs(value: OrderedListElement*): Self = StObject.set(x, "ol", js.Array(value :_*))
     
     @scala.inline
-    def deleteHeadlineLevel: Self = this.set("headlineLevel", js.undefined)
+    def setPageBreak(value: PageBreak): Self = StObject.set(x, "pageBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPageBreakUndefined: Self = StObject.set(x, "pageBreak", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPageNumbers(value: js.Array[Double]): Self = StObject.set(x, "pageNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setPageNumbersVarargs(value: Double*): Self = StObject.set(x, "pageNumbers", js.Array(value :_*))
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setPageOrientation(value: PageOrientation): Self = StObject.set(x, "pageOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOlVarargs(value: OrderedListElement*): Self = this.set("ol", js.Array(value :_*))
+    def setPageOrientationUndefined: Self = StObject.set(x, "pageOrientation", js.undefined)
     
     @scala.inline
-    def setOl(value: js.Array[OrderedListElement]): Self = this.set("ol", value.asInstanceOf[js.Any])
+    def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOl: Self = this.set("ol", js.undefined)
+    def setQr(value: String): Self = StObject.set(x, "qr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageBreak(value: PageBreak): Self = this.set("pageBreak", value.asInstanceOf[js.Any])
+    def setQrUndefined: Self = StObject.set(x, "qr", js.undefined)
     
     @scala.inline
-    def deletePageBreak: Self = this.set("pageBreak", js.undefined)
+    def setStack(value: Boolean): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageOrientation(value: PageOrientation): Self = this.set("pageOrientation", value.asInstanceOf[js.Any])
+    def setStartPosition(value: HorizontalRatio): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePageOrientation: Self = this.set("pageOrientation", js.undefined)
+    def setStyle(value: String | js.Array[String] | Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQr(value: String): Self = this.set("qr", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteQr: Self = this.set("qr", js.undefined)
+    def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
     
     @scala.inline
-    def setStyleVarargs(value: String*): Self = this.set("style", js.Array(value :_*))
+    def setSvg(value: String): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: String | js.Array[String] | Style): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTable(value: Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvg(value: String): Self = this.set("svg", value.asInstanceOf[js.Any])
+    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
     
     @scala.inline
-    def deleteSvg: Self = this.set("svg", js.undefined)
+    def setText(value: Content): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTable(value: Table): Self = this.set("table", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteTable: Self = this.set("table", js.undefined)
+    def setUl(value: js.Array[UnorderedListElement]): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: Content): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setUlUndefined: Self = StObject.set(x, "ul", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setUlVarargs(value: UnorderedListElement*): Self = this.set("ul", js.Array(value :_*))
-    
-    @scala.inline
-    def setUl(value: js.Array[UnorderedListElement]): Self = this.set("ul", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUl: Self = this.set("ul", js.undefined)
+    def setUlVarargs(value: UnorderedListElement*): Self = StObject.set(x, "ul", js.Array(value :_*))
   }
 }

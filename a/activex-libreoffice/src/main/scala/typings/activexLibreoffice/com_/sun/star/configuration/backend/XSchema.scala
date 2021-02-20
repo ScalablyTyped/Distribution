@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.configuration.backend
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,27 +57,15 @@ object XSchema {
   }
   
   @scala.inline
-  implicit class XSchemaOps[Self <: XSchema] (val x: Self) extends AnyVal {
+  implicit class XSchemaMutableBuilder[Self <: XSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReadComponent(value: XSchemaHandler => Unit): Self = StObject.set(x, "readComponent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReadSchema(value: XSchemaHandler => Unit): Self = StObject.set(x, "readSchema", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReadComponent(value: XSchemaHandler => Unit): Self = this.set("readComponent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReadSchema(value: XSchemaHandler => Unit): Self = this.set("readSchema", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReadTemplates(value: XSchemaHandler => Unit): Self = this.set("readTemplates", js.Any.fromFunction1(value))
+    def setReadTemplates(value: XSchemaHandler => Unit): Self = StObject.set(x, "readTemplates", js.Any.fromFunction1(value))
   }
 }

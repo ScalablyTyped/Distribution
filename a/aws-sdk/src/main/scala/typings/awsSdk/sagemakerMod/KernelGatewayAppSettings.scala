@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KernelGatewayAppSettings extends js.Object {
+trait KernelGatewayAppSettings extends StObject {
   
   /**
     * A list of custom SageMaker images that are configured to run as a KernelGateway app.
@@ -26,33 +27,21 @@ object KernelGatewayAppSettings {
   }
   
   @scala.inline
-  implicit class KernelGatewayAppSettingsOps[Self <: KernelGatewayAppSettings] (val x: Self) extends AnyVal {
+  implicit class KernelGatewayAppSettingsMutableBuilder[Self <: KernelGatewayAppSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomImages(value: CustomImages): Self = StObject.set(x, "CustomImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomImagesUndefined: Self = StObject.set(x, "CustomImages", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomImagesVarargs(value: CustomImage*): Self = StObject.set(x, "CustomImages", js.Array(value :_*))
     
     @scala.inline
-    def setCustomImagesVarargs(value: CustomImage*): Self = this.set("CustomImages", js.Array(value :_*))
+    def setDefaultResourceSpec(value: ResourceSpec): Self = StObject.set(x, "DefaultResourceSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomImages(value: CustomImages): Self = this.set("CustomImages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomImages: Self = this.set("CustomImages", js.undefined)
-    
-    @scala.inline
-    def setDefaultResourceSpec(value: ResourceSpec): Self = this.set("DefaultResourceSpec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultResourceSpec: Self = this.set("DefaultResourceSpec", js.undefined)
+    def setDefaultResourceSpecUndefined: Self = StObject.set(x, "DefaultResourceSpec", js.undefined)
   }
 }

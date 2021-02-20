@@ -1,5 +1,6 @@
 package typings.socks.constantsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.socks.socksNumbers.`4`
   - typings.socks.socksNumbers.`5`
 */
-trait SocksProxyType extends js.Object
+trait SocksProxyType extends StObject
 object SocksProxyType {
   
   @scala.inline

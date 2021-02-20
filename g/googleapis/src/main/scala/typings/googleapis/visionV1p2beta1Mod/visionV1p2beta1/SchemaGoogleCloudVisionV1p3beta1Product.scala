@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A Product contains ReferenceImages.
   */
 @js.native
-trait SchemaGoogleCloudVisionV1p3beta1Product extends js.Object {
+trait SchemaGoogleCloudVisionV1p3beta1Product extends StObject {
   
   /**
     * User-provided metadata to be stored with this product. Must be at most
@@ -55,51 +56,39 @@ object SchemaGoogleCloudVisionV1p3beta1Product {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p3beta1ProductOps[Self <: SchemaGoogleCloudVisionV1p3beta1Product] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVisionV1p3beta1ProductMutableBuilder[Self <: SchemaGoogleCloudVisionV1p3beta1Product] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setProductCategory(value: String): Self = StObject.set(x, "productCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProductCategoryUndefined: Self = StObject.set(x, "productCategory", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setProductLabels(value: js.Array[SchemaGoogleCloudVisionV1p3beta1ProductKeyValue]): Self = StObject.set(x, "productLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductCategory(value: String): Self = this.set("productCategory", value.asInstanceOf[js.Any])
+    def setProductLabelsUndefined: Self = StObject.set(x, "productLabels", js.undefined)
     
     @scala.inline
-    def deleteProductCategory: Self = this.set("productCategory", js.undefined)
-    
-    @scala.inline
-    def setProductLabelsVarargs(value: SchemaGoogleCloudVisionV1p3beta1ProductKeyValue*): Self = this.set("productLabels", js.Array(value :_*))
-    
-    @scala.inline
-    def setProductLabels(value: js.Array[SchemaGoogleCloudVisionV1p3beta1ProductKeyValue]): Self = this.set("productLabels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductLabels: Self = this.set("productLabels", js.undefined)
+    def setProductLabelsVarargs(value: SchemaGoogleCloudVisionV1p3beta1ProductKeyValue*): Self = StObject.set(x, "productLabels", js.Array(value :_*))
   }
 }

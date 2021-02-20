@@ -1,5 +1,6 @@
 package typings.cryptoJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Configuration options.
   */
 @js.native
-trait KDFOption extends js.Object {
+trait KDFOption extends StObject {
   
   /**
     * The hasher to use.
@@ -34,36 +35,24 @@ object KDFOption {
   }
   
   @scala.inline
-  implicit class KDFOptionOps[Self <: KDFOption] (val x: Self) extends AnyVal {
+  implicit class KDFOptionMutableBuilder[Self <: KDFOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasher(value: HasherStatic): Self = StObject.set(x, "hasher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasherUndefined: Self = StObject.set(x, "hasher", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasher(value: HasherStatic): Self = this.set("hasher", value.asInstanceOf[js.Any])
+    def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
     
     @scala.inline
-    def deleteHasher: Self = this.set("hasher", js.undefined)
+    def setKeySize(value: Double): Self = StObject.set(x, "keySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIterations(value: Double): Self = this.set("iterations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIterations: Self = this.set("iterations", js.undefined)
-    
-    @scala.inline
-    def setKeySize(value: Double): Self = this.set("keySize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeySize: Self = this.set("keySize", js.undefined)
+    def setKeySizeUndefined: Self = StObject.set(x, "keySize", js.undefined)
   }
 }

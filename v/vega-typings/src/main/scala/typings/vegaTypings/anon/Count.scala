@@ -1,6 +1,7 @@
 package typings.vegaTypings.anon
 
 import typings.vegaTypings.encodeMod._ColorValueRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,45 +26,33 @@ object Count {
   }
   
   @scala.inline
-  implicit class CountOps[Self <: Count] (val x: Self) extends AnyVal {
+  implicit class CountMutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGradient(value: typings.vegaTypings.encodeMod.Field): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradient(value: typings.vegaTypings.encodeMod.Field): Self = this.set("gradient", value.asInstanceOf[js.Any])
+    def setStart(value: js.Array[Double]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setStartVarargs(value: Double*): Self = StObject.set(x, "start", js.Array(value :_*))
     
     @scala.inline
-    def setStartVarargs(value: Double*): Self = this.set("start", js.Array(value :_*))
+    def setStop(value: js.Array[Double]): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: js.Array[Double]): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
-    
-    @scala.inline
-    def setStopVarargs(value: Double*): Self = this.set("stop", js.Array(value :_*))
-    
-    @scala.inline
-    def setStop(value: js.Array[Double]): Self = this.set("stop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStop: Self = this.set("stop", js.undefined)
+    def setStopVarargs(value: Double*): Self = StObject.set(x, "stop", js.Array(value :_*))
   }
 }

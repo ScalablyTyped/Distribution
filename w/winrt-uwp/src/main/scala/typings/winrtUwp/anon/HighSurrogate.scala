@@ -1,11 +1,12 @@
 package typings.winrtUwp.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HighSurrogate extends js.Object {
+trait HighSurrogate extends StObject {
   
   /** The high surrogate value returned. */ var highSurrogate: String = js.native
   
@@ -20,24 +21,12 @@ object HighSurrogate {
   }
   
   @scala.inline
-  implicit class HighSurrogateOps[Self <: HighSurrogate] (val x: Self) extends AnyVal {
+  implicit class HighSurrogateMutableBuilder[Self <: HighSurrogate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighSurrogate(value: String): Self = StObject.set(x, "highSurrogate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHighSurrogate(value: String): Self = this.set("highSurrogate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLowSurrogate(value: String): Self = this.set("lowSurrogate", value.asInstanceOf[js.Any])
+    def setLowSurrogate(value: String): Self = StObject.set(x, "lowSurrogate", value.asInstanceOf[js.Any])
   }
 }

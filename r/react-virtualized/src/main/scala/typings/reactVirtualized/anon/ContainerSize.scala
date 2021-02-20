@@ -1,11 +1,12 @@
 package typings.reactVirtualized.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerSize extends js.Object {
+trait ContainerSize extends StObject {
   
   var align: String = js.native
   
@@ -24,30 +25,18 @@ object ContainerSize {
   }
   
   @scala.inline
-  implicit class ContainerSizeOps[Self <: ContainerSize] (val x: Self) extends AnyVal {
+  implicit class ContainerSizeMutableBuilder[Self <: ContainerSize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerSize(value: Double): Self = StObject.set(x, "containerSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentOffset(value: Double): Self = StObject.set(x, "currentOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContainerSize(value: Double): Self = this.set("containerSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentOffset(value: Double): Self = this.set("currentOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetIndex(value: Double): Self = this.set("targetIndex", value.asInstanceOf[js.Any])
+    def setTargetIndex(value: Double): Self = StObject.set(x, "targetIndex", value.asInstanceOf[js.Any])
   }
 }

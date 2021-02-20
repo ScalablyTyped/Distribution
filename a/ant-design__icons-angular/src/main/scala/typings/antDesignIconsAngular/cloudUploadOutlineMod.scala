@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/outline/CloudUploadOutline", JSImport.Namespace)
-@js.native
-object cloudUploadOutlineMod extends js.Object {
+object cloudUploadOutlineMod {
   
+  @JSImport("@ant-design/icons-angular/icons/outline/CloudUploadOutline", "CloudUploadOutline")
+  @js.native
   val CloudUploadOutline: IconDefinition = js.native
 }

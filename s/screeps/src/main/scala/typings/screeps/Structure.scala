@@ -1,5 +1,6 @@
 package typings.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,42 +74,30 @@ object Structure {
   }
   
   @scala.inline
-  implicit class StructureOps[Self <: Structure[_], T /* <: StructureConstant */] (val x: Self with Structure[T]) extends AnyVal {
+  implicit class StructureMutableBuilder[Self <: Structure[_], T /* <: StructureConstant */] (val x: Self with Structure[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestroy(value: () => ScreepsReturnCode): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHits(value: Double): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHitsMax(value: Double): Self = StObject.set(x, "hitsMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: () => ScreepsReturnCode): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setId(value: Id[Structure[T]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHits(value: Double): Self = this.set("hits", value.asInstanceOf[js.Any])
+    def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHitsMax(value: Double): Self = this.set("hitsMax", value.asInstanceOf[js.Any])
+    def setNotifyWhenAttacked(value: Boolean => ScreepsReturnCode): Self = StObject.set(x, "notifyWhenAttacked", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setId(value: Id[Structure[T]]): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRoom(value: Room): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsActive(value: () => Boolean): Self = this.set("isActive", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setNotifyWhenAttacked(value: Boolean => ScreepsReturnCode): Self = this.set("notifyWhenAttacked", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRoom(value: Room): Self = this.set("room", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStructureType(value: T): Self = this.set("structureType", value.asInstanceOf[js.Any])
+    def setStructureType(value: T): Self = StObject.set(x, "structureType", value.asInstanceOf[js.Any])
   }
 }

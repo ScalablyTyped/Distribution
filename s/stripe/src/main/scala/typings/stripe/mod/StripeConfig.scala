@@ -1,12 +1,13 @@
 package typings.stripe.mod
 
 import typings.node.httpMod.Agent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StripeConfig extends js.Object {
+trait StripeConfig extends StObject {
   
   var apiVersion: js.UndefOr[String | Null] = js.native
   
@@ -31,66 +32,54 @@ object StripeConfig {
   }
   
   @scala.inline
-  implicit class StripeConfigOps[Self <: StripeConfig] (val x: Self) extends AnyVal {
+  implicit class StripeConfigMutableBuilder[Self <: StripeConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiVersionNull: Self = StObject.set(x, "apiVersion", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
     @scala.inline
-    def setApiVersion(value: String): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApiVersion: Self = this.set("apiVersion", js.undefined)
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def setApiVersionNull: Self = this.set("apiVersion", null)
+    def setHttpAgent(value: Agent): Self = StObject.set(x, "httpAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setHttpAgentNull: Self = StObject.set(x, "httpAgent", null)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setHttpAgentUndefined: Self = StObject.set(x, "httpAgent", js.undefined)
     
     @scala.inline
-    def setHttpAgent(value: Agent): Self = this.set("httpAgent", value.asInstanceOf[js.Any])
+    def setMaxNetworkRetries(value: Double): Self = StObject.set(x, "maxNetworkRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHttpAgent: Self = this.set("httpAgent", js.undefined)
+    def setMaxNetworkRetriesUndefined: Self = StObject.set(x, "maxNetworkRetries", js.undefined)
     
     @scala.inline
-    def setHttpAgentNull: Self = this.set("httpAgent", null)
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxNetworkRetries(value: Double): Self = this.set("maxNetworkRetries", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deleteMaxNetworkRetries: Self = this.set("maxNetworkRetries", js.undefined)
+    def setTelemetry(value: Boolean): Self = StObject.set(x, "telemetry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setTelemetryUndefined: Self = StObject.set(x, "telemetry", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTelemetry(value: Boolean): Self = this.set("telemetry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTelemetry: Self = this.set("telemetry", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

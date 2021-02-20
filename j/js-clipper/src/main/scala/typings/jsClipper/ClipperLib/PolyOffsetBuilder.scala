@@ -1,12 +1,13 @@
 package typings.jsClipper.ClipperLib
 
 import typings.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolyOffsetBuilder extends js.Object {
+trait PolyOffsetBuilder extends StObject {
   
   def AddPoint(pt: IntPoint): Unit = js.native
   
@@ -60,60 +61,48 @@ object PolyOffsetBuilder {
   }
   
   @scala.inline
-  implicit class PolyOffsetBuilderOps[Self <: PolyOffsetBuilder] (val x: Self) extends AnyVal {
+  implicit class PolyOffsetBuilderMutableBuilder[Self <: PolyOffsetBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddPoint(value: IntPoint => Unit): Self = StObject.set(x, "AddPoint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBotPt(value: PolyOffsetBuilder): Self = StObject.set(x, "botPt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentPoly(value: Polygon): Self = StObject.set(x, "currentPoly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddPoint(value: IntPoint => Unit): Self = this.set("AddPoint", js.Any.fromFunction1(value))
+    def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoMiter(value: () => Unit): Self = this.set("DoMiter", js.Any.fromFunction0(value))
+    def setDoMiter(value: () => Unit): Self = StObject.set(x, "DoMiter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDoRound(value: () => Unit): Self = this.set("DoRound", js.Any.fromFunction0(value))
+    def setDoRound(value: () => Unit): Self = StObject.set(x, "DoRound", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDoSquare(value: Double => Unit): Self = this.set("DoSquare", js.Any.fromFunction1(value))
+    def setDoSquare(value: Double => Unit): Self = StObject.set(x, "DoSquare", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUpdateBotPt(value: IntPoint => Boolean): Self = this.set("UpdateBotPt", js.Any.fromFunction1(value))
+    def setM_R(value: Double): Self = StObject.set(x, "m_R", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBotPt(value: PolyOffsetBuilder): Self = this.set("botPt", value.asInstanceOf[js.Any])
+    def setM_i(value: Double): Self = StObject.set(x, "m_i", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPoly(value: Polygon): Self = this.set("currentPoly", value.asInstanceOf[js.Any])
+    def setM_j(value: Double): Self = StObject.set(x, "m_j", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelta(value: Double): Self = this.set("delta", value.asInstanceOf[js.Any])
+    def setM_k(value: Double): Self = StObject.set(x, "m_k", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM_R(value: Double): Self = this.set("m_R", value.asInstanceOf[js.Any])
+    def setNormals(value: ArrayLike[IntPoint]): Self = StObject.set(x, "normals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM_i(value: Double): Self = this.set("m_i", value.asInstanceOf[js.Any])
+    def setPts(value: Polygons): Self = StObject.set(x, "pts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM_j(value: Double): Self = this.set("m_j", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setM_k(value: Double): Self = this.set("m_k", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNormals(value: ArrayLike[IntPoint]): Self = this.set("normals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPts(value: Polygons): Self = this.set("pts", value.asInstanceOf[js.Any])
+    def setUpdateBotPt(value: IntPoint => Boolean): Self = StObject.set(x, "UpdateBotPt", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GanttMessagesPlannedTasks extends js.Object {
+trait GanttMessagesPlannedTasks extends StObject {
   
   var days: js.UndefOr[String] = js.native
   
@@ -30,60 +31,48 @@ object GanttMessagesPlannedTasks {
   }
   
   @scala.inline
-  implicit class GanttMessagesPlannedTasksOps[Self <: GanttMessagesPlannedTasks] (val x: Self) extends AnyVal {
+  implicit class GanttMessagesPlannedTasksMutableBuilder[Self <: GanttMessagesPlannedTasks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDays(value: String): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHours(value: String): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDays(value: String): Self = this.set("days", value.asInstanceOf[js.Any])
+    def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
     
     @scala.inline
-    def deleteDays: Self = this.set("days", js.undefined)
+    def setMinutes(value: String): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHours(value: String): Self = this.set("hours", value.asInstanceOf[js.Any])
+    def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
     
     @scala.inline
-    def deleteHours: Self = this.set("hours", js.undefined)
+    def setOffsetTooltipAdvanced(value: String): Self = StObject.set(x, "offsetTooltipAdvanced", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinutes(value: String): Self = this.set("minutes", value.asInstanceOf[js.Any])
+    def setOffsetTooltipAdvancedUndefined: Self = StObject.set(x, "offsetTooltipAdvanced", js.undefined)
     
     @scala.inline
-    def deleteMinutes: Self = this.set("minutes", js.undefined)
+    def setOffsetTooltipDelay(value: String): Self = StObject.set(x, "offsetTooltipDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetTooltipAdvanced(value: String): Self = this.set("offsetTooltipAdvanced", value.asInstanceOf[js.Any])
+    def setOffsetTooltipDelayUndefined: Self = StObject.set(x, "offsetTooltipDelay", js.undefined)
     
     @scala.inline
-    def deleteOffsetTooltipAdvanced: Self = this.set("offsetTooltipAdvanced", js.undefined)
+    def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetTooltipDelay(value: String): Self = this.set("offsetTooltipDelay", value.asInstanceOf[js.Any])
+    def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
     
     @scala.inline
-    def deleteOffsetTooltipDelay: Self = this.set("offsetTooltipDelay", js.undefined)
+    def setSwitchText(value: String): Self = StObject.set(x, "switchText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeconds(value: String): Self = this.set("seconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeconds: Self = this.set("seconds", js.undefined)
-    
-    @scala.inline
-    def setSwitchText(value: String): Self = this.set("switchText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSwitchText: Self = this.set("switchText", js.undefined)
+    def setSwitchTextUndefined: Self = StObject.set(x, "switchText", js.undefined)
   }
 }

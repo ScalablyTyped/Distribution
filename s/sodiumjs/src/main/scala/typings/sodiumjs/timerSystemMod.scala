@@ -2,16 +2,16 @@ package typings.sodiumjs
 
 import typings.sodiumjs.cellMod.Cell
 import typings.sodiumjs.streamMod.Stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sodiumjs/dist/typings/sodium/TimerSystem", JSImport.Namespace)
-@js.native
-object timerSystemMod extends js.Object {
+object timerSystemMod {
   
+  @JSImport("sodiumjs/dist/typings/sodium/TimerSystem", "TimerSystem")
   @js.native
-  class TimerSystem protected () extends js.Object {
+  class TimerSystem protected () extends StObject {
     def this(impl: TimerSystemImpl) = this()
     
     /**
@@ -32,8 +32,9 @@ object timerSystemMod extends js.Object {
     var time: Cell[Double] = js.native
   }
   
+  @JSImport("sodiumjs/dist/typings/sodium/TimerSystem", "TimerSystemImpl")
   @js.native
-  abstract class TimerSystemImpl () extends js.Object {
+  abstract class TimerSystemImpl () extends StObject {
     
     /**
       * Return the current clock time.

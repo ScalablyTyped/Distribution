@@ -1,13 +1,14 @@
 package typings.atom.anon
 
 import typings.atom.mod.MarkerLayer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  groupingInterval :number | undefined} & atom.atom.HistoryTransactionOptions */
 @js.native
-trait groupingIntervalnumberund extends js.Object {
+trait groupingIntervalnumberund extends StObject {
   
   var groupingInterval: js.UndefOr[Double] = js.native
   
@@ -23,30 +24,18 @@ object groupingIntervalnumberund {
   }
   
   @scala.inline
-  implicit class groupingIntervalnumberundOps[Self <: groupingIntervalnumberund] (val x: Self) extends AnyVal {
+  implicit class groupingIntervalnumberundMutableBuilder[Self <: groupingIntervalnumberund] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupingInterval(value: Double): Self = StObject.set(x, "groupingInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupingIntervalUndefined: Self = StObject.set(x, "groupingInterval", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelectionsMarkerLayer(value: MarkerLayer): Self = StObject.set(x, "selectionsMarkerLayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupingInterval(value: Double): Self = this.set("groupingInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupingInterval: Self = this.set("groupingInterval", js.undefined)
-    
-    @scala.inline
-    def setSelectionsMarkerLayer(value: MarkerLayer): Self = this.set("selectionsMarkerLayer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectionsMarkerLayer: Self = this.set("selectionsMarkerLayer", js.undefined)
+    def setSelectionsMarkerLayerUndefined: Self = StObject.set(x, "selectionsMarkerLayer", js.undefined)
   }
 }

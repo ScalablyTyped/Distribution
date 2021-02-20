@@ -1,11 +1,12 @@
 package typings.reactNativeMaterialUi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ToolbarStyle extends js.Object {
+trait ToolbarStyle extends StObject {
   
   var centerElementContainer: js.UndefOr[ViewStyle] = js.native
   
@@ -30,81 +31,69 @@ object ToolbarStyle {
   }
   
   @scala.inline
-  implicit class ToolbarStyleOps[Self <: ToolbarStyle] (val x: Self) extends AnyVal {
+  implicit class ToolbarStyleMutableBuilder[Self <: ToolbarStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenterElementContainer(value: ViewStyle): Self = StObject.set(x, "centerElementContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterElementContainerNull: Self = StObject.set(x, "centerElementContainer", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCenterElementContainerUndefined: Self = StObject.set(x, "centerElementContainer", js.undefined)
     
     @scala.inline
-    def setCenterElementContainer(value: ViewStyle): Self = this.set("centerElementContainer", value.asInstanceOf[js.Any])
+    def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCenterElementContainer: Self = this.set("centerElementContainer", js.undefined)
+    def setContainerNull: Self = StObject.set(x, "container", null)
     
     @scala.inline
-    def setCenterElementContainerNull: Self = this.set("centerElementContainer", null)
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def setContainer(value: ViewStyle): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setLeftElement(value: TextStyle): Self = StObject.set(x, "leftElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setLeftElementContainer(value: ViewStyle): Self = StObject.set(x, "leftElementContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerNull: Self = this.set("container", null)
+    def setLeftElementContainerNull: Self = StObject.set(x, "leftElementContainer", null)
     
     @scala.inline
-    def setLeftElement(value: TextStyle): Self = this.set("leftElement", value.asInstanceOf[js.Any])
+    def setLeftElementContainerUndefined: Self = StObject.set(x, "leftElementContainer", js.undefined)
     
     @scala.inline
-    def deleteLeftElement: Self = this.set("leftElement", js.undefined)
+    def setLeftElementNull: Self = StObject.set(x, "leftElement", null)
     
     @scala.inline
-    def setLeftElementNull: Self = this.set("leftElement", null)
+    def setLeftElementUndefined: Self = StObject.set(x, "leftElement", js.undefined)
     
     @scala.inline
-    def setLeftElementContainer(value: ViewStyle): Self = this.set("leftElementContainer", value.asInstanceOf[js.Any])
+    def setRightElement(value: TextStyle): Self = StObject.set(x, "rightElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLeftElementContainer: Self = this.set("leftElementContainer", js.undefined)
+    def setRightElementContainer(value: ViewStyle): Self = StObject.set(x, "rightElementContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftElementContainerNull: Self = this.set("leftElementContainer", null)
+    def setRightElementContainerNull: Self = StObject.set(x, "rightElementContainer", null)
     
     @scala.inline
-    def setRightElement(value: TextStyle): Self = this.set("rightElement", value.asInstanceOf[js.Any])
+    def setRightElementContainerUndefined: Self = StObject.set(x, "rightElementContainer", js.undefined)
     
     @scala.inline
-    def deleteRightElement: Self = this.set("rightElement", js.undefined)
+    def setRightElementNull: Self = StObject.set(x, "rightElement", null)
     
     @scala.inline
-    def setRightElementNull: Self = this.set("rightElement", null)
+    def setRightElementUndefined: Self = StObject.set(x, "rightElement", js.undefined)
     
     @scala.inline
-    def setRightElementContainer(value: ViewStyle): Self = this.set("rightElementContainer", value.asInstanceOf[js.Any])
+    def setTitleText(value: TextStyle): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRightElementContainer: Self = this.set("rightElementContainer", js.undefined)
+    def setTitleTextNull: Self = StObject.set(x, "titleText", null)
     
     @scala.inline
-    def setRightElementContainerNull: Self = this.set("rightElementContainer", null)
-    
-    @scala.inline
-    def setTitleText(value: TextStyle): Self = this.set("titleText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleText: Self = this.set("titleText", js.undefined)
-    
-    @scala.inline
-    def setTitleTextNull: Self = this.set("titleText", null)
+    def setTitleTextUndefined: Self = StObject.set(x, "titleText", js.undefined)
   }
 }

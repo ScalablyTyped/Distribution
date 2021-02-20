@@ -1,5 +1,6 @@
 package typings.pulumiCloud.serviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,42 +40,30 @@ object ServiceArguments {
   }
   
   @scala.inline
-  implicit class ServiceArgumentsOps[Self <: ServiceArguments] (val x: Self) extends AnyVal {
+  implicit class ServiceArgumentsMutableBuilder[Self <: ServiceArguments] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainers(value: Containers): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHost(value: HostProperties): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainers(value: Containers): Self = this.set("containers", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteContainers: Self = this.set("containers", js.undefined)
+    def setReplicas(value: Double): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: HostProperties): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setWaitForSteadyState(value: Boolean): Self = StObject.set(x, "waitForSteadyState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicas(value: Double): Self = this.set("replicas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicas: Self = this.set("replicas", js.undefined)
-    
-    @scala.inline
-    def setWaitForSteadyState(value: Boolean): Self = this.set("waitForSteadyState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitForSteadyState: Self = this.set("waitForSteadyState", js.undefined)
+    def setWaitForSteadyStateUndefined: Self = StObject.set(x, "waitForSteadyState", js.undefined)
   }
 }

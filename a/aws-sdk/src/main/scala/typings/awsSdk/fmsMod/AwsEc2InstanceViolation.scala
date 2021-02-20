@@ -1,11 +1,12 @@
 package typings.awsSdk.fmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsEc2InstanceViolation extends js.Object {
+trait AwsEc2InstanceViolation extends StObject {
   
   /**
     * Violations for network interfaces associated with the EC2 instance.
@@ -26,33 +27,21 @@ object AwsEc2InstanceViolation {
   }
   
   @scala.inline
-  implicit class AwsEc2InstanceViolationOps[Self <: AwsEc2InstanceViolation] (val x: Self) extends AnyVal {
+  implicit class AwsEc2InstanceViolationMutableBuilder[Self <: AwsEc2InstanceViolation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsEc2NetworkInterfaceViolations(value: AwsEc2NetworkInterfaceViolations): Self = StObject.set(x, "AwsEc2NetworkInterfaceViolations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsEc2NetworkInterfaceViolationsUndefined: Self = StObject.set(x, "AwsEc2NetworkInterfaceViolations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAwsEc2NetworkInterfaceViolationsVarargs(value: AwsEc2NetworkInterfaceViolation*): Self = StObject.set(x, "AwsEc2NetworkInterfaceViolations", js.Array(value :_*))
     
     @scala.inline
-    def setAwsEc2NetworkInterfaceViolationsVarargs(value: AwsEc2NetworkInterfaceViolation*): Self = this.set("AwsEc2NetworkInterfaceViolations", js.Array(value :_*))
+    def setViolationTarget(value: ViolationTarget): Self = StObject.set(x, "ViolationTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsEc2NetworkInterfaceViolations(value: AwsEc2NetworkInterfaceViolations): Self = this.set("AwsEc2NetworkInterfaceViolations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAwsEc2NetworkInterfaceViolations: Self = this.set("AwsEc2NetworkInterfaceViolations", js.undefined)
-    
-    @scala.inline
-    def setViolationTarget(value: ViolationTarget): Self = this.set("ViolationTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViolationTarget: Self = this.set("ViolationTarget", js.undefined)
+    def setViolationTargetUndefined: Self = StObject.set(x, "ViolationTarget", js.undefined)
   }
 }

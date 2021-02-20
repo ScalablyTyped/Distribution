@@ -1,12 +1,13 @@
 package typings.muiDatatables.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mui-datatables.mui-datatables.MUIDataTableTextLabelsPagination> */
 @js.native
-trait PartialMUIDataTableTextLaDisplayRows extends js.Object {
+trait PartialMUIDataTableTextLaDisplayRows extends StObject {
   
   var displayRows: js.UndefOr[String] = js.native
   
@@ -27,48 +28,36 @@ object PartialMUIDataTableTextLaDisplayRows {
   }
   
   @scala.inline
-  implicit class PartialMUIDataTableTextLaDisplayRowsOps[Self <: PartialMUIDataTableTextLaDisplayRows] (val x: Self) extends AnyVal {
+  implicit class PartialMUIDataTableTextLaDisplayRowsMutableBuilder[Self <: PartialMUIDataTableTextLaDisplayRows] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayRows(value: String): Self = StObject.set(x, "displayRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayRowsUndefined: Self = StObject.set(x, "displayRows", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJumpToPage(value: String): Self = StObject.set(x, "jumpToPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayRows(value: String): Self = this.set("displayRows", value.asInstanceOf[js.Any])
+    def setJumpToPageUndefined: Self = StObject.set(x, "jumpToPage", js.undefined)
     
     @scala.inline
-    def deleteDisplayRows: Self = this.set("displayRows", js.undefined)
+    def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJumpToPage(value: String): Self = this.set("jumpToPage", value.asInstanceOf[js.Any])
+    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
     @scala.inline
-    def deleteJumpToPage: Self = this.set("jumpToPage", js.undefined)
+    def setPrevious(value: String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext(value: String): Self = this.set("next", value.asInstanceOf[js.Any])
+    def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     
     @scala.inline
-    def deleteNext: Self = this.set("next", js.undefined)
+    def setRowsPerPage(value: String): Self = StObject.set(x, "rowsPerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrevious(value: String): Self = this.set("previous", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrevious: Self = this.set("previous", js.undefined)
-    
-    @scala.inline
-    def setRowsPerPage(value: String): Self = this.set("rowsPerPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowsPerPage: Self = this.set("rowsPerPage", js.undefined)
+    def setRowsPerPageUndefined: Self = StObject.set(x, "rowsPerPage", js.undefined)
   }
 }

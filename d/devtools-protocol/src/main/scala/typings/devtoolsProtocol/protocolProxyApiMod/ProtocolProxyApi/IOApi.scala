@@ -5,12 +5,13 @@ import typings.devtoolsProtocol.mod.Protocol.IO.ReadRequest
 import typings.devtoolsProtocol.mod.Protocol.IO.ReadResponse
 import typings.devtoolsProtocol.mod.Protocol.IO.ResolveBlobRequest
 import typings.devtoolsProtocol.mod.Protocol.IO.ResolveBlobResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IOApi extends js.Object {
+trait IOApi extends StObject {
   
   /**
     * Close the stream, discard any temporary backing storage.
@@ -40,27 +41,15 @@ object IOApi {
   }
   
   @scala.inline
-  implicit class IOApiOps[Self <: IOApi] (val x: Self) extends AnyVal {
+  implicit class IOApiMutableBuilder[Self <: IOApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: CloseRequest => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRead(value: ReadRequest => js.Promise[ReadResponse]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClose(value: CloseRequest => js.Promise[Unit]): Self = this.set("close", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRead(value: ReadRequest => js.Promise[ReadResponse]): Self = this.set("read", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setResolveBlob(value: ResolveBlobRequest => js.Promise[ResolveBlobResponse]): Self = this.set("resolveBlob", js.Any.fromFunction1(value))
+    def setResolveBlob(value: ResolveBlobRequest => js.Promise[ResolveBlobResponse]): Self = StObject.set(x, "resolveBlob", js.Any.fromFunction1(value))
   }
 }

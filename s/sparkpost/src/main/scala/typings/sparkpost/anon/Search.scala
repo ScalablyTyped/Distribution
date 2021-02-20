@@ -4,12 +4,13 @@ import typings.sparkpost.mod.MessageEvent
 import typings.sparkpost.mod.MessageEventParameters
 import typings.sparkpost.mod.ResultsCallback
 import typings.sparkpost.mod.ResultsPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Search extends js.Object {
+trait Search extends StObject {
   
   /**
     * Retrieves list of message events according to given params

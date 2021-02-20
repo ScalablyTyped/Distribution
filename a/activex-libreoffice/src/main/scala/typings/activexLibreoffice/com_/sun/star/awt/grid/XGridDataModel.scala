@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,36 +85,24 @@ object XGridDataModel {
   }
   
   @scala.inline
-  implicit class XGridDataModelOps[Self <: XGridDataModel] (val x: Self) extends AnyVal {
+  implicit class XGridDataModelMutableBuilder[Self <: XGridDataModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnCount(value: Double): Self = StObject.set(x, "ColumnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCellData(value: (Double, Double) => js.Any): Self = StObject.set(x, "getCellData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCellToolTip(value: (Double, Double) => js.Any): Self = StObject.set(x, "getCellToolTip", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setColumnCount(value: Double): Self = this.set("ColumnCount", value.asInstanceOf[js.Any])
+    def setGetRowData(value: Double => SafeArray[_]): Self = StObject.set(x, "getRowData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRowCount(value: Double): Self = this.set("RowCount", value.asInstanceOf[js.Any])
+    def setGetRowHeading(value: Double => js.Any): Self = StObject.set(x, "getRowHeading", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCellData(value: (Double, Double) => js.Any): Self = this.set("getCellData", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetCellToolTip(value: (Double, Double) => js.Any): Self = this.set("getCellToolTip", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetRowData(value: Double => SafeArray[_]): Self = this.set("getRowData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetRowHeading(value: Double => js.Any): Self = this.set("getRowHeading", js.Any.fromFunction1(value))
+    def setRowCount(value: Double): Self = StObject.set(x, "RowCount", value.asInstanceOf[js.Any])
   }
 }

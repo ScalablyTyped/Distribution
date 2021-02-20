@@ -4,12 +4,13 @@ import typings.trtcJsSdk.trtcJsSdkNumbers.`1`
 import typings.trtcJsSdk.trtcJsSdkNumbers.`2`
 import typings.trtcJsSdk.trtcJsSdkStrings.live
 import typings.trtcJsSdk.trtcJsSdkStrings.videoCall
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientConfig extends js.Object {
+trait ClientConfig extends StObject {
   
   /**
     * 应用场景,目前支持以下两种场景:
@@ -52,54 +53,42 @@ object ClientConfig {
   }
   
   @scala.inline
-  implicit class ClientConfigOps[Self <: ClientConfig] (val x: Self) extends AnyVal {
+  implicit class ClientConfigMutableBuilder[Self <: ClientConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMode(value: videoCall | live): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPureAudioPushMode(value: `1` | `2`): Self = StObject.set(x, "pureAudioPushMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPureAudioPushModeUndefined: Self = StObject.set(x, "pureAudioPushMode", js.undefined)
     
     @scala.inline
-    def setMode(value: videoCall | live): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setRecordId(value: Double): Self = StObject.set(x, "recordId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSdkAppId(value: Double): Self = this.set("sdkAppId", value.asInstanceOf[js.Any])
+    def setRecordIdUndefined: Self = StObject.set(x, "recordId", js.undefined)
     
     @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    def setSdkAppId(value: Double): Self = StObject.set(x, "sdkAppId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserSig(value: String): Self = this.set("userSig", value.asInstanceOf[js.Any])
+    def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPureAudioPushMode(value: `1` | `2`): Self = this.set("pureAudioPushMode", value.asInstanceOf[js.Any])
+    def setStreamIdUndefined: Self = StObject.set(x, "streamId", js.undefined)
     
     @scala.inline
-    def deletePureAudioPushMode: Self = this.set("pureAudioPushMode", js.undefined)
+    def setUserDefineRecordId(value: String): Self = StObject.set(x, "userDefineRecordId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordId(value: Double): Self = this.set("recordId", value.asInstanceOf[js.Any])
+    def setUserDefineRecordIdUndefined: Self = StObject.set(x, "userDefineRecordId", js.undefined)
     
     @scala.inline
-    def deleteRecordId: Self = this.set("recordId", js.undefined)
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamId(value: String): Self = this.set("streamId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamId: Self = this.set("streamId", js.undefined)
-    
-    @scala.inline
-    def setUserDefineRecordId(value: String): Self = this.set("userDefineRecordId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserDefineRecordId: Self = this.set("userDefineRecordId", js.undefined)
+    def setUserSig(value: String): Self = StObject.set(x, "userSig", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.luxon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ToISOTimeOptions extends js.Object {
+trait ToISOTimeOptions extends StObject {
   
   /**
     * choose between the basic and extended format
@@ -37,42 +38,30 @@ object ToISOTimeOptions {
   }
   
   @scala.inline
-  implicit class ToISOTimeOptionsOps[Self <: ToISOTimeOptions] (val x: Self) extends AnyVal {
+  implicit class ToISOTimeOptionsMutableBuilder[Self <: ToISOTimeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: ToISOFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeOffset(value: Boolean): Self = StObject.set(x, "includeOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: ToISOFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setIncludeOffsetUndefined: Self = StObject.set(x, "includeOffset", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setSuppressMilliseconds(value: Boolean): Self = StObject.set(x, "suppressMilliseconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeOffset(value: Boolean): Self = this.set("includeOffset", value.asInstanceOf[js.Any])
+    def setSuppressMillisecondsUndefined: Self = StObject.set(x, "suppressMilliseconds", js.undefined)
     
     @scala.inline
-    def deleteIncludeOffset: Self = this.set("includeOffset", js.undefined)
+    def setSuppressSeconds(value: Boolean): Self = StObject.set(x, "suppressSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuppressMilliseconds(value: Boolean): Self = this.set("suppressMilliseconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuppressMilliseconds: Self = this.set("suppressMilliseconds", js.undefined)
-    
-    @scala.inline
-    def setSuppressSeconds(value: Boolean): Self = this.set("suppressSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuppressSeconds: Self = this.set("suppressSeconds", js.undefined)
+    def setSuppressSecondsUndefined: Self = StObject.set(x, "suppressSeconds", js.undefined)
   }
 }

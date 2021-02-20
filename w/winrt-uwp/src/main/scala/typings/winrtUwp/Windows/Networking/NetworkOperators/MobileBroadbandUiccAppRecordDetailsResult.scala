@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains details about results of a UICC application record read operation initiated with MobileBroadbandUiccAppClass.GetRecordDetailsAsync . */
 @js.native
-trait MobileBroadbandUiccAppRecordDetailsResult extends js.Object {
+trait MobileBroadbandUiccAppRecordDetailsResult extends StObject {
   
   /** Gets an enumeration value specifying what kind of record this is. */
   var kind: UiccAppRecordKind = js.native
@@ -42,36 +43,24 @@ object MobileBroadbandUiccAppRecordDetailsResult {
   }
   
   @scala.inline
-  implicit class MobileBroadbandUiccAppRecordDetailsResultOps[Self <: MobileBroadbandUiccAppRecordDetailsResult] (val x: Self) extends AnyVal {
+  implicit class MobileBroadbandUiccAppRecordDetailsResultMutableBuilder[Self <: MobileBroadbandUiccAppRecordDetailsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: UiccAppRecordKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReadAccessCondition(value: UiccAccessCondition): Self = StObject.set(x, "readAccessCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecordCount(value: Double): Self = StObject.set(x, "recordCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: UiccAppRecordKind): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setRecordSize(value: Double): Self = StObject.set(x, "recordSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadAccessCondition(value: UiccAccessCondition): Self = this.set("readAccessCondition", value.asInstanceOf[js.Any])
+    def setStatus(value: MobileBroadbandUiccAppOperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordCount(value: Double): Self = this.set("recordCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecordSize(value: Double): Self = this.set("recordSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: MobileBroadbandUiccAppOperationStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWriteAccessCondition(value: UiccAccessCondition): Self = this.set("writeAccessCondition", value.asInstanceOf[js.Any])
+    def setWriteAccessCondition(value: UiccAccessCondition): Self = StObject.set(x, "writeAccessCondition", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,8 +11,6 @@ package object realm {
     * Extracts an intersection of keys from T, where the value extends the given PropType.
     */
   type ExtractPropertyNamesOfType[T, PropType] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends PropType? K : never}[keyof T] */ js.Any
-  
-  type Realm = typings.realm.Realm_
   
   /**
     * Joins T stripped of all keys which value extends Realm.Collection and all inherited from Realm.Object,

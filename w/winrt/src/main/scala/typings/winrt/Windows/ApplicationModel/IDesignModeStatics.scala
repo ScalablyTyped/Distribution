@@ -1,11 +1,12 @@
 package typings.winrt.Windows.ApplicationModel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDesignModeStatics extends js.Object {
+trait IDesignModeStatics extends StObject {
   
   var designModeEnabled: Boolean = js.native
 }
@@ -18,21 +19,9 @@ object IDesignModeStatics {
   }
   
   @scala.inline
-  implicit class IDesignModeStaticsOps[Self <: IDesignModeStatics] (val x: Self) extends AnyVal {
+  implicit class IDesignModeStaticsMutableBuilder[Self <: IDesignModeStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDesignModeEnabled(value: Boolean): Self = this.set("designModeEnabled", value.asInstanceOf[js.Any])
+    def setDesignModeEnabled(value: Boolean): Self = StObject.set(x, "designModeEnabled", value.asInstanceOf[js.Any])
   }
 }

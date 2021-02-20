@@ -1,12 +1,13 @@
 package typings.materializeCss.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.ToastOptions> */
 @js.native
-trait PartialToastOptions extends js.Object {
+trait PartialToastOptions extends StObject {
   
   var activationPercent: js.UndefOr[Double] = js.native
   
@@ -31,60 +32,48 @@ object PartialToastOptions {
   }
   
   @scala.inline
-  implicit class PartialToastOptionsOps[Self <: PartialToastOptions] (val x: Self) extends AnyVal {
+  implicit class PartialToastOptionsMutableBuilder[Self <: PartialToastOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivationPercent(value: Double): Self = StObject.set(x, "activationPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivationPercentUndefined: Self = StObject.set(x, "activationPercent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivationPercent(value: Double): Self = this.set("activationPercent", value.asInstanceOf[js.Any])
+    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def deleteActivationPercent: Self = this.set("activationPercent", js.undefined)
+    def setCompleteCallback(value: () => Unit): Self = StObject.set(x, "completeCallback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClasses(value: String): Self = this.set("classes", value.asInstanceOf[js.Any])
+    def setCompleteCallbackUndefined: Self = StObject.set(x, "completeCallback", js.undefined)
     
     @scala.inline
-    def deleteClasses: Self = this.set("classes", js.undefined)
+    def setDisplayLength(value: Double): Self = StObject.set(x, "displayLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleteCallback(value: () => Unit): Self = this.set("completeCallback", js.Any.fromFunction0(value))
+    def setDisplayLengthUndefined: Self = StObject.set(x, "displayLength", js.undefined)
     
     @scala.inline
-    def deleteCompleteCallback: Self = this.set("completeCallback", js.undefined)
+    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayLength(value: Double): Self = this.set("displayLength", value.asInstanceOf[js.Any])
+    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
     @scala.inline
-    def deleteDisplayLength: Self = this.set("displayLength", js.undefined)
+    def setInDuration(value: Double): Self = StObject.set(x, "inDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml(value: String): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setInDurationUndefined: Self = StObject.set(x, "inDuration", js.undefined)
     
     @scala.inline
-    def deleteHtml: Self = this.set("html", js.undefined)
+    def setOutDuration(value: Double): Self = StObject.set(x, "outDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInDuration(value: Double): Self = this.set("inDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInDuration: Self = this.set("inDuration", js.undefined)
-    
-    @scala.inline
-    def setOutDuration(value: Double): Self = this.set("outDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutDuration: Self = this.set("outDuration", js.undefined)
+    def setOutDurationUndefined: Self = StObject.set(x, "outDuration", js.undefined)
   }
 }

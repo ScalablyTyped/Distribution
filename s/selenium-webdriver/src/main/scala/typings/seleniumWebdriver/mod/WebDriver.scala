@@ -5,13 +5,14 @@ import typings.seleniumWebdriver.anon.AsyncBoolean
 import typings.seleniumWebdriver.anon.Bridge
 import typings.seleniumWebdriver.commandMod.Command
 import typings.seleniumWebdriver.httpMod.Executor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "WebDriver")
 @js.native
-class WebDriver protected () extends js.Object {
+class WebDriver protected () extends StObject {
   def this(session: js.Promise[Session], executor: Executor) = this()
   // region Constructors
   /**
@@ -473,9 +474,7 @@ class WebDriver protected () extends js.Object {
   def wait[T](condition: Condition[T], opt_timeout: Double, opt_message: String): js.Promise[T] = js.native
 }
 /* static members */
-@JSImport("selenium-webdriver", "WebDriver")
-@js.native
-object WebDriver extends js.Object {
+object WebDriver {
   
   // endregion
   // region StaticMethods
@@ -538,5 +537,7 @@ object WebDriver extends js.Object {
   // This method's arguments are untyped so that its overloads can have correct
   // types. Typescript doesn't allow static methods to be overridden with
   // incompatible signatures.
+  @JSImport("selenium-webdriver", "WebDriver.createSession")
+  @js.native
   def createSession(var_args: js.Any*): WebDriver = js.native
 }

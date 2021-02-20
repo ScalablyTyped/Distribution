@@ -1,19 +1,21 @@
 package typings.config
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("config/raw", JSImport.Namespace)
-@js.native
-object rawMod extends js.Object {
+object rawMod {
   
-  def raw[T](obj: T): RawConfig[T] = js.native
-  
+  @JSImport("config/raw", "RawConfig")
   @js.native
-  class RawConfig[T] protected () extends js.Object {
+  class RawConfig[T] protected () extends StObject {
     def this(rawObj: T) = this()
     
     def resolve(): T = js.native
   }
+  
+  @JSImport("config/raw", "raw")
+  @js.native
+  def raw[T](obj: T): RawConfig[T] = js.native
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.youtubereportingV1Mod.youtubereportingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response message for ReportingService.ListReports.
   */
 @js.native
-trait SchemaListReportsResponse extends js.Object {
+trait SchemaListReportsResponse extends StObject {
   
   /**
     * A token to retrieve next page of results. Pass this value in the
@@ -31,33 +32,21 @@ object SchemaListReportsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListReportsResponseOps[Self <: SchemaListReportsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListReportsResponseMutableBuilder[Self <: SchemaListReportsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReports(value: js.Array[SchemaReport]): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setReportsVarargs(value: SchemaReport*): Self = this.set("reports", js.Array(value :_*))
-    
-    @scala.inline
-    def setReports(value: js.Array[SchemaReport]): Self = this.set("reports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReports: Self = this.set("reports", js.undefined)
+    def setReportsVarargs(value: SchemaReport*): Self = StObject.set(x, "reports", js.Array(value :_*))
   }
 }

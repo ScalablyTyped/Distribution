@@ -17,6 +17,7 @@ import typings.activexOutlook.activexOutlookNumbers.`6`
 import typings.activexOutlook.activexOutlookNumbers.`7`
 import typings.activexOutlook.activexOutlookNumbers.`8`
 import typings.activexOutlook.activexOutlookNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +41,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexOutlook.activexOutlookNumbers.`16`
   - typings.activexOutlook.activexOutlookNumbers.`12`
 */
-trait OlColor extends js.Object
+trait OlColor extends StObject
 object OlColor {
   
   @scala.inline

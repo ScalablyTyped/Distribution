@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPhysicsEnabledObject extends js.Object {
+trait IPhysicsEnabledObject extends StObject {
   
   /**
     * Computes the world matrix

@@ -1,43 +1,39 @@
 package typings.materialComponentsWeb.mod
 
-import typings.materialTabScroller.adapterMod.MDCTabScrollerAdapter
-import typings.materialTabScroller.anon.ANIMATING
-import typings.materialTabScroller.anon.AREASELECTOR
 import typings.materialTabScroller.anon.PartialMDCTabScrollerAdap
 import typings.std.Document
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-components-web", "tabScroller")
-@js.native
-object tabScroller extends js.Object {
+object tabScroller {
   
+  @JSImport("material-components-web", "tabScroller.MDCTabScroller")
   @js.native
-  class MDCTabScroller ()
-    extends typings.materialTabScroller.mod.MDCTabScroller
+  class MDCTabScroller protected ()
+    extends typings.materialTabScroller.mod.MDCTabScroller {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(
+      root: Element,
+      foundation: typings.materialTabScroller.foundationMod.MDCTabScrollerFoundation,
+      args: js.Any*
+    ) = this()
+  }
   /* static members */
-  @js.native
-  object MDCTabScroller extends js.Object {
+  object MDCTabScroller {
     
+    @JSImport("material-components-web", "tabScroller.MDCTabScroller.attachTo")
+    @js.native
     def attachTo(root: Element): typings.materialTabScroller.componentMod.MDCTabScroller = js.native
   }
   
+  @JSImport("material-components-web", "tabScroller.MDCTabScrollerFoundation")
   @js.native
   class MDCTabScrollerFoundation ()
     extends typings.materialTabScroller.mod.MDCTabScrollerFoundation {
     def this(adapter: PartialMDCTabScrollerAdap) = this()
-  }
-  /* static members */
-  @js.native
-  object MDCTabScrollerFoundation extends js.Object {
-    
-    def cssClasses: ANIMATING = js.native
-    
-    def defaultAdapter: MDCTabScrollerAdapter = js.native
-    
-    def strings: AREASELECTOR = js.native
   }
   
   /**
@@ -62,28 +58,57 @@ object tabScroller extends js.Object {
     * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     * THE SOFTWARE.
     */
-  @js.native
-  object cssClasses extends js.Object {
+  object cssClasses {
     
-    var ANIMATING: String = js.native
+    @JSImport("material-components-web", "tabScroller.cssClasses")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var SCROLL_AREA_SCROLL: String = js.native
+    @JSImport("material-components-web", "tabScroller.cssClasses.ANIMATING")
+    @js.native
+    def ANIMATING: String = js.native
+    @scala.inline
+    def ANIMATING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANIMATING")(x.asInstanceOf[js.Any])
     
-    var SCROLL_TEST: String = js.native
+    @JSImport("material-components-web", "tabScroller.cssClasses.SCROLL_AREA_SCROLL")
+    @js.native
+    def SCROLL_AREA_SCROLL: String = js.native
+    @scala.inline
+    def SCROLL_AREA_SCROLL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCROLL_AREA_SCROLL")(x.asInstanceOf[js.Any])
+    
+    @JSImport("material-components-web", "tabScroller.cssClasses.SCROLL_TEST")
+    @js.native
+    def SCROLL_TEST: String = js.native
+    @scala.inline
+    def SCROLL_TEST_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCROLL_TEST")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object strings extends js.Object {
+  object strings {
     
-    var AREA_SELECTOR: String = js.native
+    @JSImport("material-components-web", "tabScroller.strings")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var CONTENT_SELECTOR: String = js.native
+    @JSImport("material-components-web", "tabScroller.strings.AREA_SELECTOR")
+    @js.native
+    def AREA_SELECTOR: String = js.native
+    @scala.inline
+    def AREA_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AREA_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("material-components-web", "tabScroller.strings.CONTENT_SELECTOR")
+    @js.native
+    def CONTENT_SELECTOR: String = js.native
+    @scala.inline
+    def CONTENT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTENT_SELECTOR")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object util extends js.Object {
+  object util {
     
+    @JSImport("material-components-web", "tabScroller.util.computeHorizontalScrollbarHeight")
+    @js.native
     def computeHorizontalScrollbarHeight(documentObj: Document): Double = js.native
+    @JSImport("material-components-web", "tabScroller.util.computeHorizontalScrollbarHeight")
+    @js.native
     def computeHorizontalScrollbarHeight(documentObj: Document, shouldCacheResult: Boolean): Double = js.native
   }
 }

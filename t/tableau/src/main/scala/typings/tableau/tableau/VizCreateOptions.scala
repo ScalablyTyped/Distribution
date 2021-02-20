@@ -1,6 +1,7 @@
 package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,66 +63,54 @@ object VizCreateOptions {
   }
   
   @scala.inline
-  implicit class VizCreateOptionsOps[Self <: VizCreateOptions] (val x: Self) extends AnyVal {
+  implicit class VizCreateOptionsMutableBuilder[Self <: VizCreateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: String): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteDevice: Self = this.set("device", js.undefined)
+    def setHideTabs(value: Boolean): Self = StObject.set(x, "hideTabs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHideTabsUndefined: Self = StObject.set(x, "hideTabs", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setHideToolbar(value: Boolean): Self = StObject.set(x, "hideToolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideTabs(value: Boolean): Self = this.set("hideTabs", value.asInstanceOf[js.Any])
+    def setHideToolbarUndefined: Self = StObject.set(x, "hideToolbar", js.undefined)
     
     @scala.inline
-    def deleteHideTabs: Self = this.set("hideTabs", js.undefined)
+    def setInstanceIdToClone(value: String): Self = StObject.set(x, "instanceIdToClone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideToolbar(value: Boolean): Self = this.set("hideToolbar", value.asInstanceOf[js.Any])
+    def setInstanceIdToCloneUndefined: Self = StObject.set(x, "instanceIdToClone", js.undefined)
     
     @scala.inline
-    def deleteHideToolbar: Self = this.set("hideToolbar", js.undefined)
+    def setOnFirstInteractive(value: /* e */ TableauEvent => Unit): Self = StObject.set(x, "onFirstInteractive", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInstanceIdToClone(value: String): Self = this.set("instanceIdToClone", value.asInstanceOf[js.Any])
+    def setOnFirstInteractiveUndefined: Self = StObject.set(x, "onFirstInteractive", js.undefined)
     
     @scala.inline
-    def deleteInstanceIdToClone: Self = this.set("instanceIdToClone", js.undefined)
+    def setOnFirstVizSizeKnown(value: /* e */ VizResizeEvent => Unit): Self = StObject.set(x, "onFirstVizSizeKnown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnFirstInteractive(value: /* e */ TableauEvent => Unit): Self = this.set("onFirstInteractive", js.Any.fromFunction1(value))
+    def setOnFirstVizSizeKnownUndefined: Self = StObject.set(x, "onFirstVizSizeKnown", js.undefined)
     
     @scala.inline
-    def deleteOnFirstInteractive: Self = this.set("onFirstInteractive", js.undefined)
+    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnFirstVizSizeKnown(value: /* e */ VizResizeEvent => Unit): Self = this.set("onFirstVizSizeKnown", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnFirstVizSizeKnown: Self = this.set("onFirstVizSizeKnown", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

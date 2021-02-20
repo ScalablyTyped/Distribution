@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientCompute.anon.FieldsKey
 import typings.maximMazurokGapiClientCompute.anon.KeyName
 import typings.maximMazurokGapiClientCompute.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientCompute.anon.MaxResults
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackendBucketsResource extends js.Object {
+trait BackendBucketsResource extends StObject {
   
   def addSignedUrlKey(request: AltBackendBucket, body: SignedUrlKey): Request[Operation] = js.native
   /** Adds a key for validating requests with signed URLs for this backend bucket. */

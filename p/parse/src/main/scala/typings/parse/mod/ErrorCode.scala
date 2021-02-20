@@ -1,14 +1,15 @@
 package typings.parse.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ErrorCode extends js.Object
+sealed trait ErrorCode extends StObject
 @JSImport("parse", "ErrorCode")
 @js.native
-object ErrorCode extends js.Object {
+object ErrorCode extends StObject {
   
   @js.native
   sealed trait ACCOUNT_ALREADY_LINKED extends ErrorCode

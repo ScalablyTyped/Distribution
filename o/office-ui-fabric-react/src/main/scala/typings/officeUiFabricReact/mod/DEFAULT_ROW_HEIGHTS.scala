@@ -1,14 +1,25 @@
 package typings.officeUiFabricReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react", "DEFAULT_ROW_HEIGHTS")
-@js.native
-object DEFAULT_ROW_HEIGHTS extends js.Object {
+object DEFAULT_ROW_HEIGHTS {
   
-  var compactRowHeight: Double = js.native
+  @JSImport("office-ui-fabric-react", "DEFAULT_ROW_HEIGHTS")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var rowHeight: Double = js.native
+  @JSImport("office-ui-fabric-react", "DEFAULT_ROW_HEIGHTS.compactRowHeight")
+  @js.native
+  def compactRowHeight: Double = js.native
+  @scala.inline
+  def compactRowHeight_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compactRowHeight")(x.asInstanceOf[js.Any])
+  
+  @JSImport("office-ui-fabric-react", "DEFAULT_ROW_HEIGHTS.rowHeight")
+  @js.native
+  def rowHeight: Double = js.native
+  @scala.inline
+  def rowHeight_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rowHeight")(x.asInstanceOf[js.Any])
 }

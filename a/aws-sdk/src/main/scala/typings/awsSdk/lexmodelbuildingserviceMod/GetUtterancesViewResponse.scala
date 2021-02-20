@@ -1,11 +1,12 @@
 package typings.awsSdk.lexmodelbuildingserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetUtterancesViewResponse extends js.Object {
+trait GetUtterancesViewResponse extends StObject {
   
   /**
     * The name of the bot for which utterance information was returned.
@@ -26,33 +27,21 @@ object GetUtterancesViewResponse {
   }
   
   @scala.inline
-  implicit class GetUtterancesViewResponseOps[Self <: GetUtterancesViewResponse] (val x: Self) extends AnyVal {
+  implicit class GetUtterancesViewResponseMutableBuilder[Self <: GetUtterancesViewResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBotNameUndefined: Self = StObject.set(x, "botName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUtterances(value: ListsOfUtterances): Self = StObject.set(x, "utterances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBotName(value: BotName): Self = this.set("botName", value.asInstanceOf[js.Any])
+    def setUtterancesUndefined: Self = StObject.set(x, "utterances", js.undefined)
     
     @scala.inline
-    def deleteBotName: Self = this.set("botName", js.undefined)
-    
-    @scala.inline
-    def setUtterancesVarargs(value: UtteranceList*): Self = this.set("utterances", js.Array(value :_*))
-    
-    @scala.inline
-    def setUtterances(value: ListsOfUtterances): Self = this.set("utterances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUtterances: Self = this.set("utterances", js.undefined)
+    def setUtterancesVarargs(value: UtteranceList*): Self = StObject.set(x, "utterances", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.arcgisJsApi.global.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.CIM.Simple3DLineStyle")
 @js.native
-object Simple3DLineStyle extends js.Object {
+object Simple3DLineStyle extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.arcgisJsApi.esri.CIM.Simple3DLineStyle with String] = js.native

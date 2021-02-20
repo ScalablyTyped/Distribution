@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTraceSummariesResult extends js.Object {
+trait GetTraceSummariesResult extends StObject {
   
   /**
     * The start time of this page of results.
@@ -36,45 +37,33 @@ object GetTraceSummariesResult {
   }
   
   @scala.inline
-  implicit class GetTraceSummariesResultOps[Self <: GetTraceSummariesResult] (val x: Self) extends AnyVal {
+  implicit class GetTraceSummariesResultMutableBuilder[Self <: GetTraceSummariesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApproximateTime(value: Timestamp): Self = StObject.set(x, "ApproximateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApproximateTimeUndefined: Self = StObject.set(x, "ApproximateTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApproximateTime(value: Timestamp): Self = this.set("ApproximateTime", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteApproximateTime: Self = this.set("ApproximateTime", js.undefined)
+    def setTraceSummaries(value: TraceSummaryList): Self = StObject.set(x, "TraceSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setTraceSummariesUndefined: Self = StObject.set(x, "TraceSummaries", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setTraceSummariesVarargs(value: TraceSummary*): Self = StObject.set(x, "TraceSummaries", js.Array(value :_*))
     
     @scala.inline
-    def setTraceSummariesVarargs(value: TraceSummary*): Self = this.set("TraceSummaries", js.Array(value :_*))
+    def setTracesProcessedCount(value: NullableLong): Self = StObject.set(x, "TracesProcessedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTraceSummaries(value: TraceSummaryList): Self = this.set("TraceSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraceSummaries: Self = this.set("TraceSummaries", js.undefined)
-    
-    @scala.inline
-    def setTracesProcessedCount(value: NullableLong): Self = this.set("TracesProcessedCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTracesProcessedCount: Self = this.set("TracesProcessedCount", js.undefined)
+    def setTracesProcessedCountUndefined: Self = StObject.set(x, "TracesProcessedCount", js.undefined)
   }
 }

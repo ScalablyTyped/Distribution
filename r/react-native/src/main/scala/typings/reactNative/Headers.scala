@@ -1,11 +1,12 @@
 package typings.reactNative
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Headers extends js.Object {
+trait Headers extends StObject {
   
   def append(name: String, value: String): Unit = js.native
   

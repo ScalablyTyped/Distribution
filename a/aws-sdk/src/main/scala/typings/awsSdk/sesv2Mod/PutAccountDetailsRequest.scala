@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutAccountDetailsRequest extends js.Object {
+trait PutAccountDetailsRequest extends StObject {
   
   /**
     * Additional email addresses that you would like to be notified regarding Amazon SES matters.
@@ -46,48 +47,36 @@ object PutAccountDetailsRequest {
   }
   
   @scala.inline
-  implicit class PutAccountDetailsRequestOps[Self <: PutAccountDetailsRequest] (val x: Self) extends AnyVal {
+  implicit class PutAccountDetailsRequestMutableBuilder[Self <: PutAccountDetailsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalContactEmailAddresses(value: AdditionalContactEmailAddresses): Self = StObject.set(x, "AdditionalContactEmailAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalContactEmailAddressesUndefined: Self = StObject.set(x, "AdditionalContactEmailAddresses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalContactEmailAddressesVarargs(value: AdditionalContactEmailAddress*): Self = StObject.set(x, "AdditionalContactEmailAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setMailType(value: MailType): Self = this.set("MailType", value.asInstanceOf[js.Any])
+    def setContactLanguage(value: ContactLanguage): Self = StObject.set(x, "ContactLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseCaseDescription(value: UseCaseDescription): Self = this.set("UseCaseDescription", value.asInstanceOf[js.Any])
+    def setContactLanguageUndefined: Self = StObject.set(x, "ContactLanguage", js.undefined)
     
     @scala.inline
-    def setWebsiteURL(value: WebsiteURL): Self = this.set("WebsiteURL", value.asInstanceOf[js.Any])
+    def setMailType(value: MailType): Self = StObject.set(x, "MailType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalContactEmailAddressesVarargs(value: AdditionalContactEmailAddress*): Self = this.set("AdditionalContactEmailAddresses", js.Array(value :_*))
+    def setProductionAccessEnabled(value: EnabledWrapper): Self = StObject.set(x, "ProductionAccessEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalContactEmailAddresses(value: AdditionalContactEmailAddresses): Self = this.set("AdditionalContactEmailAddresses", value.asInstanceOf[js.Any])
+    def setProductionAccessEnabledUndefined: Self = StObject.set(x, "ProductionAccessEnabled", js.undefined)
     
     @scala.inline
-    def deleteAdditionalContactEmailAddresses: Self = this.set("AdditionalContactEmailAddresses", js.undefined)
+    def setUseCaseDescription(value: UseCaseDescription): Self = StObject.set(x, "UseCaseDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactLanguage(value: ContactLanguage): Self = this.set("ContactLanguage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContactLanguage: Self = this.set("ContactLanguage", js.undefined)
-    
-    @scala.inline
-    def setProductionAccessEnabled(value: EnabledWrapper): Self = this.set("ProductionAccessEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductionAccessEnabled: Self = this.set("ProductionAccessEnabled", js.undefined)
+    def setWebsiteURL(value: WebsiteURL): Self = StObject.set(x, "WebsiteURL", value.asInstanceOf[js.Any])
   }
 }

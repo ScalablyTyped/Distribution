@@ -1,5 +1,6 @@
 package typings.googleapis.jobsV3Mod.jobsV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Input only.  Parameters needed for commute search.
   */
 @js.native
-trait SchemaCommuteFilter extends js.Object {
+trait SchemaCommuteFilter extends StObject {
   
   /**
     * Optional. If `true`, jobs without street level addresses may also be
@@ -59,54 +60,42 @@ object SchemaCommuteFilter {
   }
   
   @scala.inline
-  implicit class SchemaCommuteFilterOps[Self <: SchemaCommuteFilter] (val x: Self) extends AnyVal {
+  implicit class SchemaCommuteFilterMutableBuilder[Self <: SchemaCommuteFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowImpreciseAddresses(value: Boolean): Self = StObject.set(x, "allowImpreciseAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowImpreciseAddressesUndefined: Self = StObject.set(x, "allowImpreciseAddresses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommuteMethod(value: String): Self = StObject.set(x, "commuteMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowImpreciseAddresses(value: Boolean): Self = this.set("allowImpreciseAddresses", value.asInstanceOf[js.Any])
+    def setCommuteMethodUndefined: Self = StObject.set(x, "commuteMethod", js.undefined)
     
     @scala.inline
-    def deleteAllowImpreciseAddresses: Self = this.set("allowImpreciseAddresses", js.undefined)
+    def setDepartureTime(value: SchemaTimeOfDay): Self = StObject.set(x, "departureTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommuteMethod(value: String): Self = this.set("commuteMethod", value.asInstanceOf[js.Any])
+    def setDepartureTimeUndefined: Self = StObject.set(x, "departureTime", js.undefined)
     
     @scala.inline
-    def deleteCommuteMethod: Self = this.set("commuteMethod", js.undefined)
+    def setRoadTraffic(value: String): Self = StObject.set(x, "roadTraffic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepartureTime(value: SchemaTimeOfDay): Self = this.set("departureTime", value.asInstanceOf[js.Any])
+    def setRoadTrafficUndefined: Self = StObject.set(x, "roadTraffic", js.undefined)
     
     @scala.inline
-    def deleteDepartureTime: Self = this.set("departureTime", js.undefined)
+    def setStartCoordinates(value: SchemaLatLng): Self = StObject.set(x, "startCoordinates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoadTraffic(value: String): Self = this.set("roadTraffic", value.asInstanceOf[js.Any])
+    def setStartCoordinatesUndefined: Self = StObject.set(x, "startCoordinates", js.undefined)
     
     @scala.inline
-    def deleteRoadTraffic: Self = this.set("roadTraffic", js.undefined)
+    def setTravelDuration(value: String): Self = StObject.set(x, "travelDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartCoordinates(value: SchemaLatLng): Self = this.set("startCoordinates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartCoordinates: Self = this.set("startCoordinates", js.undefined)
-    
-    @scala.inline
-    def setTravelDuration(value: String): Self = this.set("travelDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTravelDuration: Self = this.set("travelDuration", js.undefined)
+    def setTravelDurationUndefined: Self = StObject.set(x, "travelDuration", js.undefined)
   }
 }

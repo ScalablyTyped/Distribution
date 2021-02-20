@@ -13,12 +13,13 @@ import typings.maximMazurokGapiClientDisplayvideo.anon.OauthtokenPartnerId
 import typings.maximMazurokGapiClientDisplayvideo.anon.PrettyPrintQuotaUser
 import typings.maximMazurokGapiClientDisplayvideo.anon.QuotaUserTargetingType
 import typings.maximMazurokGapiClientDisplayvideo.anon.TargetingType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssignedTargetingOptionsResource extends js.Object {
+trait AssignedTargetingOptionsResource extends StObject {
   
   /** Assigns a targeting option to a partner. Returns the assigned targeting option if successful. */
   def create(request: AccesstokenAlt): Request[AssignedTargetingOption] = js.native

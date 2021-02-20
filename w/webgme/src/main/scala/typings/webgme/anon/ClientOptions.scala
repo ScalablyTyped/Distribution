@@ -1,11 +1,12 @@
 package typings.webgme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientOptions extends js.Object {
+trait ClientOptions extends StObject {
   
   /**
     * Options passed to the socketIO client when connecting to the sever.
@@ -28,24 +29,12 @@ object ClientOptions {
   }
   
   @scala.inline
-  implicit class ClientOptionsOps[Self <: ClientOptions] (val x: Self) extends AnyVal {
+  implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientOptions(value: js.Any): Self = StObject.set(x, "clientOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClientOptions(value: js.Any): Self = this.set("clientOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerOptions(value: js.Any): Self = this.set("serverOptions", value.asInstanceOf[js.Any])
+    def setServerOptions(value: js.Any): Self = StObject.set(x, "serverOptions", value.asInstanceOf[js.Any])
   }
 }

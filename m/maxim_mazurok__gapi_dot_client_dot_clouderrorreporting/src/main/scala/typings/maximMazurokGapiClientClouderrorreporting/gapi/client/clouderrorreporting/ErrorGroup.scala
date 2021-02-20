@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientClouderrorreporting.gapi.client.clouderrorreporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ErrorGroup extends js.Object {
+trait ErrorGroup extends StObject {
   
   /** Group IDs are unique for a given project. If the same kind of error occurs in different service contexts, it will receive the same group ID. */
   var groupId: js.UndefOr[String] = js.native
@@ -28,45 +29,33 @@ object ErrorGroup {
   }
   
   @scala.inline
-  implicit class ErrorGroupOps[Self <: ErrorGroup] (val x: Self) extends AnyVal {
+  implicit class ErrorGroupMutableBuilder[Self <: ErrorGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupId(value: String): Self = this.set("groupId", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteGroupId: Self = this.set("groupId", js.undefined)
+    def setResolutionStatus(value: String): Self = StObject.set(x, "resolutionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setResolutionStatusUndefined: Self = StObject.set(x, "resolutionStatus", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTrackingIssues(value: js.Array[TrackingIssue]): Self = StObject.set(x, "trackingIssues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolutionStatus(value: String): Self = this.set("resolutionStatus", value.asInstanceOf[js.Any])
+    def setTrackingIssuesUndefined: Self = StObject.set(x, "trackingIssues", js.undefined)
     
     @scala.inline
-    def deleteResolutionStatus: Self = this.set("resolutionStatus", js.undefined)
-    
-    @scala.inline
-    def setTrackingIssuesVarargs(value: TrackingIssue*): Self = this.set("trackingIssues", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrackingIssues(value: js.Array[TrackingIssue]): Self = this.set("trackingIssues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackingIssues: Self = this.set("trackingIssues", js.undefined)
+    def setTrackingIssuesVarargs(value: TrackingIssue*): Self = StObject.set(x, "trackingIssues", js.Array(value :_*))
   }
 }

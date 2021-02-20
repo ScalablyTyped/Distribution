@@ -1,11 +1,12 @@
 package typings.mysql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PoolClusterConfig extends js.Object {
+trait PoolClusterConfig extends StObject {
   
   /**
     * If true, PoolCluster will attempt to reconnect when connection fails. (Default: true)
@@ -41,42 +42,30 @@ object PoolClusterConfig {
   }
   
   @scala.inline
-  implicit class PoolClusterConfigOps[Self <: PoolClusterConfig] (val x: Self) extends AnyVal {
+  implicit class PoolClusterConfigMutableBuilder[Self <: PoolClusterConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanRetry(value: Boolean): Self = StObject.set(x, "canRetry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanRetryUndefined: Self = StObject.set(x, "canRetry", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultSelector(value: String): Self = StObject.set(x, "defaultSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanRetry(value: Boolean): Self = this.set("canRetry", value.asInstanceOf[js.Any])
+    def setDefaultSelectorUndefined: Self = StObject.set(x, "defaultSelector", js.undefined)
     
     @scala.inline
-    def deleteCanRetry: Self = this.set("canRetry", js.undefined)
+    def setRemoveNodeErrorCount(value: Double): Self = StObject.set(x, "removeNodeErrorCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSelector(value: String): Self = this.set("defaultSelector", value.asInstanceOf[js.Any])
+    def setRemoveNodeErrorCountUndefined: Self = StObject.set(x, "removeNodeErrorCount", js.undefined)
     
     @scala.inline
-    def deleteDefaultSelector: Self = this.set("defaultSelector", js.undefined)
+    def setRestoreNodeTimeout(value: Double): Self = StObject.set(x, "restoreNodeTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveNodeErrorCount(value: Double): Self = this.set("removeNodeErrorCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveNodeErrorCount: Self = this.set("removeNodeErrorCount", js.undefined)
-    
-    @scala.inline
-    def setRestoreNodeTimeout(value: Double): Self = this.set("restoreNodeTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestoreNodeTimeout: Self = this.set("restoreNodeTimeout", js.undefined)
+    def setRestoreNodeTimeoutUndefined: Self = StObject.set(x, "restoreNodeTimeout", js.undefined)
   }
 }

@@ -2,13 +2,14 @@ package typings.typedoc.anon
 
 import typings.typedoc.schemaMod.ModelToObject
 import typings.typedoc.schemaMod._ModelToObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<typedoc.typedoc/dist/lib/serialization/schema.IntrinsicType, 'type'> */
 @js.native
-trait PickIntrinsicTypetype extends js.Object {
+trait PickIntrinsicTypetype extends StObject {
   
   var `type`: (ModelToObject[/* "intrinsic" */ String]) | (/* "intrinsic" */ String) = js.native
 }
@@ -22,24 +23,12 @@ object PickIntrinsicTypetype {
   }
   
   @scala.inline
-  implicit class PickIntrinsicTypetypeOps[Self <: PickIntrinsicTypetype] (val x: Self) extends AnyVal {
+  implicit class PickIntrinsicTypetypeMutableBuilder[Self <: PickIntrinsicTypetype] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setType(value: (ModelToObject[/* "intrinsic" */ String]) | (/* "intrinsic" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = this.set("type", js.Array(value :_*))
-    
-    @scala.inline
-    def setType(value: (ModelToObject[/* "intrinsic" */ String]) | (/* "intrinsic" */ String)): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

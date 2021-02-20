@@ -1,12 +1,13 @@
 package typings.randomJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("random-js/dist/utils/imul", JSImport.Namespace)
-@js.native
-object imulMod extends js.Object {
+object imulMod {
   
+  @JSImport("random-js/dist/utils/imul", "imul")
+  @js.native
   def imul(a: Double, b: Double): Double = js.native
 }

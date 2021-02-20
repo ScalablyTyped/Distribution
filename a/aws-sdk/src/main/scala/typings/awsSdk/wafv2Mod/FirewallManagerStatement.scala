@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirewallManagerStatement extends js.Object {
+trait FirewallManagerStatement extends StObject {
   
   var ManagedRuleGroupStatement: js.UndefOr[typings.awsSdk.wafv2Mod.ManagedRuleGroupStatement] = js.native
   
@@ -20,30 +21,18 @@ object FirewallManagerStatement {
   }
   
   @scala.inline
-  implicit class FirewallManagerStatementOps[Self <: FirewallManagerStatement] (val x: Self) extends AnyVal {
+  implicit class FirewallManagerStatementMutableBuilder[Self <: FirewallManagerStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setManagedRuleGroupStatement(value: ManagedRuleGroupStatement): Self = StObject.set(x, "ManagedRuleGroupStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManagedRuleGroupStatementUndefined: Self = StObject.set(x, "ManagedRuleGroupStatement", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRuleGroupReferenceStatement(value: RuleGroupReferenceStatement): Self = StObject.set(x, "RuleGroupReferenceStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagedRuleGroupStatement(value: ManagedRuleGroupStatement): Self = this.set("ManagedRuleGroupStatement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManagedRuleGroupStatement: Self = this.set("ManagedRuleGroupStatement", js.undefined)
-    
-    @scala.inline
-    def setRuleGroupReferenceStatement(value: RuleGroupReferenceStatement): Self = this.set("RuleGroupReferenceStatement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleGroupReferenceStatement: Self = this.set("RuleGroupReferenceStatement", js.undefined)
+    def setRuleGroupReferenceStatementUndefined: Self = StObject.set(x, "RuleGroupReferenceStatement", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListWorkerBlocksResponse extends js.Object {
+trait ListWorkerBlocksResponse extends StObject {
   
   var NextToken: js.UndefOr[PaginationToken] = js.native
   
@@ -28,39 +29,27 @@ object ListWorkerBlocksResponse {
   }
   
   @scala.inline
-  implicit class ListWorkerBlocksResponseOps[Self <: ListWorkerBlocksResponse] (val x: Self) extends AnyVal {
+  implicit class ListWorkerBlocksResponseMutableBuilder[Self <: ListWorkerBlocksResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumResults(value: Integer): Self = StObject.set(x, "NumResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setNumResultsUndefined: Self = StObject.set(x, "NumResults", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setWorkerBlocks(value: WorkerBlockList): Self = StObject.set(x, "WorkerBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumResults(value: Integer): Self = this.set("NumResults", value.asInstanceOf[js.Any])
+    def setWorkerBlocksUndefined: Self = StObject.set(x, "WorkerBlocks", js.undefined)
     
     @scala.inline
-    def deleteNumResults: Self = this.set("NumResults", js.undefined)
-    
-    @scala.inline
-    def setWorkerBlocksVarargs(value: WorkerBlock*): Self = this.set("WorkerBlocks", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkerBlocks(value: WorkerBlockList): Self = this.set("WorkerBlocks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerBlocks: Self = this.set("WorkerBlocks", js.undefined)
+    def setWorkerBlocksVarargs(value: WorkerBlock*): Self = StObject.set(x, "WorkerBlocks", js.Array(value :_*))
   }
 }

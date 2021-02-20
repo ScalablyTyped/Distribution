@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.ucb
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,30 +52,18 @@ object Lock {
   }
   
   @scala.inline
-  implicit class LockOps[Self <: Lock] (val x: Self) extends AnyVal {
+  implicit class LockMutableBuilder[Self <: Lock] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDepth(value: LockDepth): Self = StObject.set(x, "Depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLockTokens(value: SafeArray[String]): Self = StObject.set(x, "LockTokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: js.Any): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: LockDepth): Self = this.set("Depth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLockTokens(value: SafeArray[String]): Self = this.set("LockTokens", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOwner(value: js.Any): Self = this.set("Owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("Timeout", value.asInstanceOf[js.Any])
+    def setTimeout(value: Double): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
   }
 }

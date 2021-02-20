@@ -1,12 +1,13 @@
 package typings.cytoscape.mod
 
 import typings.cytoscape.mod.Css.TransitionTimingFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SingularAnimationOptionsBase extends js.Object {
+trait SingularAnimationOptionsBase extends StObject {
   
   /** The duration of the animation in milliseconds. */
   var duration: Double = js.native
@@ -38,33 +39,21 @@ object SingularAnimationOptionsBase {
   }
   
   @scala.inline
-  implicit class SingularAnimationOptionsBaseOps[Self <: SingularAnimationOptionsBase] (val x: Self) extends AnyVal {
+  implicit class SingularAnimationOptionsBaseMutableBuilder[Self <: SingularAnimationOptionsBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEasing(value: TransitionTimingFunction): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setRenderedPosition(value: Position): Self = StObject.set(x, "renderedPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasing(value: TransitionTimingFunction): Self = this.set("easing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: Position): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenderedPosition(value: Position): Self = this.set("renderedPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: js.Any): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

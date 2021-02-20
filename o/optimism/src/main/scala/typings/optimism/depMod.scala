@@ -5,20 +5,23 @@ import typings.optimism.anon.Subscribe
 import typings.optimism.entryMod.AnyEntry
 import typings.std.IterableIterator
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("optimism/lib/dep", JSImport.Namespace)
-@js.native
-object depMod extends js.Object {
+object depMod {
   
+  @JSImport("optimism/lib/dep", "dep")
+  @js.native
   def dep[TKey](): OptimisticDependencyFunction[TKey] = js.native
+  @JSImport("optimism/lib/dep", "dep")
+  @js.native
   def dep[TKey](options: Subscribe[TKey]): OptimisticDependencyFunction[TKey] = js.native
   
   /* Inlined std.Set<optimism.optimism/lib/entry.AnyEntry> & {  subscribe :optimism.optimism.OptimisticWrapOptions<[TKey], [TKey]>['subscribe']} & optimism.optimism/lib/helpers.Unsubscribable */
   @js.native
-  trait Dep_[TKey] extends js.Object {
+  trait Dep_[TKey] extends StObject {
     
     def add(value: AnyEntry): this.type = js.native
     

@@ -1,12 +1,13 @@
 package typings.reactNavigationCore.anon
 
 import typings.reactNavigationRouters.typesMod.ParamListBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait A[ParamList /* <: ParamListBase */] extends js.Object {
+trait A[ParamList /* <: ParamListBase */] extends StObject {
   
   var a: ParamList = js.native
   
@@ -21,24 +22,12 @@ object A {
   }
   
   @scala.inline
-  implicit class AOps[Self <: A[_], ParamList /* <: ParamListBase */] (val x: Self with A[ParamList]) extends AnyVal {
+  implicit class AMutableBuilder[Self <: A[_], ParamList /* <: ParamListBase */] (val x: Self with A[ParamList]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setA(value: ParamList): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setA(value: ParamList): Self = this.set("a", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setB(value: /* keyof ParamList */ String): Self = this.set("b", value.asInstanceOf[js.Any])
+    def setB(value: /* keyof ParamList */ String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
   }
 }

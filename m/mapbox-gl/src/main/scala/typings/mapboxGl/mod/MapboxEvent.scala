@@ -1,12 +1,13 @@
 package typings.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mapbox-gl", "MapboxEvent")
 @js.native
-class MapboxEvent[TOrig] () extends js.Object {
+class MapboxEvent[TOrig] () extends StObject {
   
   var originalEvent: TOrig = js.native
   

@@ -1,11 +1,12 @@
 package typings.freedom.freedom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModuleSelfConstructor extends js.Object {
+trait ModuleSelfConstructor extends StObject {
   
   def provideAsynchronous(): Unit = js.native
   def provideAsynchronous(classFn: js.Function): Unit = js.native

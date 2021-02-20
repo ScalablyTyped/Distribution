@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.JDBC
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * java.sql.DatabaseMetaData.
   */
 @js.native
-trait JdbcDatabaseMetaData extends js.Object {
+trait JdbcDatabaseMetaData extends StObject {
   
   def allProceduresAreCallable(): Boolean = js.native
   

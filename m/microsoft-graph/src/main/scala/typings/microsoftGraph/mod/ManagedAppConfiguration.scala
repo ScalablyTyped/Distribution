@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,27 +23,15 @@ object ManagedAppConfiguration {
   }
   
   @scala.inline
-  implicit class ManagedAppConfigurationOps[Self <: ManagedAppConfiguration] (val x: Self) extends AnyVal {
+  implicit class ManagedAppConfigurationMutableBuilder[Self <: ManagedAppConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomSettings(value: js.Array[KeyValuePair]): Self = StObject.set(x, "customSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomSettingsUndefined: Self = StObject.set(x, "customSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCustomSettingsVarargs(value: KeyValuePair*): Self = this.set("customSettings", js.Array(value :_*))
-    
-    @scala.inline
-    def setCustomSettings(value: js.Array[KeyValuePair]): Self = this.set("customSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomSettings: Self = this.set("customSettings", js.undefined)
+    def setCustomSettingsVarargs(value: KeyValuePair*): Self = StObject.set(x, "customSettings", js.Array(value :_*))
   }
 }

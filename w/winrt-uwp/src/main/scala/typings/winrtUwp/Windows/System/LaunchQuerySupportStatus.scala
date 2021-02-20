@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.System
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LaunchQuerySupportStatus extends js.Object
+sealed trait LaunchQuerySupportStatus extends StObject
 /** Specifies whether an app is available that supports activation. */
 @JSGlobal("Windows.System.LaunchQuerySupportStatus")
 @js.native
-object LaunchQuerySupportStatus extends js.Object {
+object LaunchQuerySupportStatus extends StObject {
   
   /** No app is installed to handle the activation. */
   @js.native

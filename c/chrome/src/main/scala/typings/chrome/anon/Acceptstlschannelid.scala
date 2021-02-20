@@ -1,11 +1,12 @@
 package typings.chrome.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Acceptstlschannelid extends js.Object {
+trait Acceptstlschannelid extends StObject {
   
   var accepts_tls_channel_id: js.UndefOr[Boolean] = js.native
   
@@ -22,42 +23,30 @@ object Acceptstlschannelid {
   }
   
   @scala.inline
-  implicit class AcceptstlschannelidOps[Self <: Acceptstlschannelid] (val x: Self) extends AnyVal {
+  implicit class AcceptstlschannelidMutableBuilder[Self <: Acceptstlschannelid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccepts_tls_channel_id(value: Boolean): Self = StObject.set(x, "accepts_tls_channel_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccepts_tls_channel_idUndefined: Self = StObject.set(x, "accepts_tls_channel_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccepts_tls_channel_id(value: Boolean): Self = this.set("accepts_tls_channel_id", value.asInstanceOf[js.Any])
+    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
     @scala.inline
-    def deleteAccepts_tls_channel_id: Self = this.set("accepts_tls_channel_id", js.undefined)
+    def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
     @scala.inline
-    def setIdsVarargs(value: String*): Self = this.set("ids", js.Array(value :_*))
+    def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIds(value: js.Array[String]): Self = this.set("ids", value.asInstanceOf[js.Any])
+    def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
     
     @scala.inline
-    def deleteIds: Self = this.set("ids", js.undefined)
-    
-    @scala.inline
-    def setMatchesVarargs(value: String*): Self = this.set("matches", js.Array(value :_*))
-    
-    @scala.inline
-    def setMatches(value: js.Array[String]): Self = this.set("matches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatches: Self = this.set("matches", js.undefined)
+    def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PSTNDialIn extends js.Object {
+trait PSTNDialIn extends StObject {
   
   /**
     * The zip code.
@@ -41,30 +42,18 @@ object PSTNDialIn {
   }
   
   @scala.inline
-  implicit class PSTNDialInOps[Self <: PSTNDialIn] (val x: Self) extends AnyVal {
+  implicit class PSTNDialInMutableBuilder[Self <: PSTNDialIn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountryCode(value: CountryCode): Self = StObject.set(x, "CountryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOneClickIdDelay(value: OneClickIdDelay): Self = StObject.set(x, "OneClickIdDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOneClickPinDelay(value: OneClickPinDelay): Self = StObject.set(x, "OneClickPinDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryCode(value: CountryCode): Self = this.set("CountryCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOneClickIdDelay(value: OneClickIdDelay): Self = this.set("OneClickIdDelay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOneClickPinDelay(value: OneClickPinDelay): Self = this.set("OneClickPinDelay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPhoneNumber(value: OutboundPhoneNumber): Self = this.set("PhoneNumber", value.asInstanceOf[js.Any])
+    def setPhoneNumber(value: OutboundPhoneNumber): Self = StObject.set(x, "PhoneNumber", value.asInstanceOf[js.Any])
   }
 }

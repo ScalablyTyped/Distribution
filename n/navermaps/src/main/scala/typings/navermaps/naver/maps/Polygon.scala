@@ -1,5 +1,6 @@
 package typings.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +40,7 @@ trait Polygon extends OverlayView {
   
   def setPaths(paths: js.Array[ArrayOfCoords] | ArrayOfCoordsLiteral): Unit = js.native
   
-   // TODO. KVOArray.<KVOArrayOfCoords>
+  // TODO. KVOArray.<KVOArrayOfCoords>
   def setStyles(key: String, value: js.Any): Unit = js.native
   def setStyles(options: PolygonOptions): Unit = js.native
   

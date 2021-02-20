@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModalDialogContentsRenderingEventUIParam extends js.Object {
+trait ModalDialogContentsRenderingEventUIParam extends StObject {
   
   /**
     * Gets a reference to the modal dialog element. This is a jQuery object.
@@ -26,30 +27,18 @@ object ModalDialogContentsRenderingEventUIParam {
   }
   
   @scala.inline
-  implicit class ModalDialogContentsRenderingEventUIParamOps[Self <: ModalDialogContentsRenderingEventUIParam] (val x: Self) extends AnyVal {
+  implicit class ModalDialogContentsRenderingEventUIParamMutableBuilder[Self <: ModalDialogContentsRenderingEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModalDialogElement(value: String): Self = StObject.set(x, "modalDialogElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModalDialogElementUndefined: Self = StObject.set(x, "modalDialogElement", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModalDialogElement(value: String): Self = this.set("modalDialogElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModalDialogElement: Self = this.set("modalDialogElement", js.undefined)
-    
-    @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

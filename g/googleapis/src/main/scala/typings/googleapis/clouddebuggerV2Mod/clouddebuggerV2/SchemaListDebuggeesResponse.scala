@@ -1,5 +1,6 @@
 package typings.googleapis.clouddebuggerV2Mod.clouddebuggerV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response for listing debuggees.
   */
 @js.native
-trait SchemaListDebuggeesResponse extends js.Object {
+trait SchemaListDebuggeesResponse extends StObject {
   
   /**
     * List of debuggees accessible to the calling user. The fields
@@ -27,27 +28,15 @@ object SchemaListDebuggeesResponse {
   }
   
   @scala.inline
-  implicit class SchemaListDebuggeesResponseOps[Self <: SchemaListDebuggeesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListDebuggeesResponseMutableBuilder[Self <: SchemaListDebuggeesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDebuggees(value: js.Array[SchemaDebuggee]): Self = StObject.set(x, "debuggees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDebuggeesUndefined: Self = StObject.set(x, "debuggees", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDebuggeesVarargs(value: SchemaDebuggee*): Self = this.set("debuggees", js.Array(value :_*))
-    
-    @scala.inline
-    def setDebuggees(value: js.Array[SchemaDebuggee]): Self = this.set("debuggees", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDebuggees: Self = this.set("debuggees", js.undefined)
+    def setDebuggeesVarargs(value: SchemaDebuggee*): Self = StObject.set(x, "debuggees", js.Array(value :_*))
   }
 }

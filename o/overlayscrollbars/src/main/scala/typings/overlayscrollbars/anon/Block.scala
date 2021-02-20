@@ -6,6 +6,7 @@ import typings.overlayscrollbars.mod.Margin
 import typings.overlayscrollbars.mod.ScrollBehavior
 import typings.overlayscrollbars.mod._Coordinates
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,39 +33,27 @@ object Block {
   }
   
   @scala.inline
-  implicit class BlockOps[Self <: Block] (val x: Self) extends AnyVal {
+  implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlock(value: BlockBehavior | XY | (js.Tuple2[BlockBehavior, BlockBehavior])): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEl(value: HTMLElement | JQuery): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEl(value: HTMLElement | JQuery): Self = this.set("el", value.asInstanceOf[js.Any])
+    def setMargin(value: Margin | Bottom | (js.Tuple2[Margin, Margin]) | (js.Tuple4[Margin, Margin, Margin, Margin])): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlock(value: BlockBehavior | XY | (js.Tuple2[BlockBehavior, BlockBehavior])): Self = this.set("block", value.asInstanceOf[js.Any])
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def deleteBlock: Self = this.set("block", js.undefined)
+    def setScroll(value: ScrollBehavior | Y | (js.Tuple2[ScrollBehavior, ScrollBehavior])): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: Margin | Bottom | (js.Tuple2[Margin, Margin]) | (js.Tuple4[Margin, Margin, Margin, Margin])): Self = this.set("margin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
-    
-    @scala.inline
-    def setScroll(value: ScrollBehavior | Y | (js.Tuple2[ScrollBehavior, ScrollBehavior])): Self = this.set("scroll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScroll: Self = this.set("scroll", js.undefined)
+    def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
   }
 }

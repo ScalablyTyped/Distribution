@@ -13,12 +13,13 @@ import typings.aureliaTemplating.aureliaTemplatingStrings.valueConverter
 import typings.std.Element
 import typings.std.NamedNodeMap
 import typings.std.ShadowRootInit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStaticResourceConfig extends js.Object {
+trait IStaticResourceConfig extends StObject {
   
   /**
     * List of bindable properties of this custom element / custom attribute, by name or full config object
@@ -107,93 +108,81 @@ object IStaticResourceConfig {
   }
   
   @scala.inline
-  implicit class IStaticResourceConfigOps[Self <: IStaticResourceConfig] (val x: Self) extends AnyVal {
+  implicit class IStaticResourceConfigMutableBuilder[Self <: IStaticResourceConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindables(value: js.Array[String | IBindablePropertyConfig]): Self = StObject.set(x, "bindables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindablesUndefined: Self = StObject.set(x, "bindables", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBindablesVarargs(value: (String | IBindablePropertyConfig)*): Self = StObject.set(x, "bindables", js.Array(value :_*))
     
     @scala.inline
-    def setBindablesVarargs(value: (String | IBindablePropertyConfig)*): Self = this.set("bindables", js.Array(value :_*))
+    def setContainerless(value: Boolean): Self = StObject.set(x, "containerless", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindables(value: js.Array[String | IBindablePropertyConfig]): Self = this.set("bindables", value.asInstanceOf[js.Any])
+    def setContainerlessUndefined: Self = StObject.set(x, "containerless", js.undefined)
     
     @scala.inline
-    def deleteBindables: Self = this.set("bindables", js.undefined)
+    def setDefaultBindingMode(value: bindingMode | oneTime | oneWay | twoWay | fromView | toView): Self = StObject.set(x, "defaultBindingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerless(value: Boolean): Self = this.set("containerless", value.asInstanceOf[js.Any])
+    def setDefaultBindingModeUndefined: Self = StObject.set(x, "defaultBindingMode", js.undefined)
     
     @scala.inline
-    def deleteContainerless: Self = this.set("containerless", js.undefined)
+    def setHasDynamicOptions(value: Boolean): Self = StObject.set(x, "hasDynamicOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultBindingMode(value: bindingMode | oneTime | oneWay | twoWay | fromView | toView): Self = this.set("defaultBindingMode", value.asInstanceOf[js.Any])
+    def setHasDynamicOptionsUndefined: Self = StObject.set(x, "hasDynamicOptions", js.undefined)
     
     @scala.inline
-    def deleteDefaultBindingMode: Self = this.set("defaultBindingMode", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasDynamicOptions(value: Boolean): Self = this.set("hasDynamicOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHasDynamicOptions: Self = this.set("hasDynamicOptions", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
     def setProcessAttributes(
       value: (/* viewCompiler */ ViewCompiler, /* resources */ ViewResources_, /* node */ Element, /* attributes */ NamedNodeMap, /* elementInstruction */ BehaviorInstruction) => Unit
-    ): Self = this.set("processAttributes", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "processAttributes", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteProcessAttributes: Self = this.set("processAttributes", js.undefined)
+    def setProcessAttributesUndefined: Self = StObject.set(x, "processAttributes", js.undefined)
     
     @scala.inline
     def setProcessContent(
       value: (/* viewCompiler */ ViewCompiler, /* resources */ ViewResources_, /* node */ Element, /* instruction */ BehaviorInstruction) => Boolean
-    ): Self = this.set("processContent", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "processContent", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteProcessContent: Self = this.set("processContent", js.undefined)
+    def setProcessContentUndefined: Self = StObject.set(x, "processContent", js.undefined)
     
     @scala.inline
-    def setShadowDOMOptions(value: ShadowRootInit): Self = this.set("shadowDOMOptions", value.asInstanceOf[js.Any])
+    def setShadowDOMOptions(value: ShadowRootInit): Self = StObject.set(x, "shadowDOMOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShadowDOMOptions: Self = this.set("shadowDOMOptions", js.undefined)
+    def setShadowDOMOptionsUndefined: Self = StObject.set(x, "shadowDOMOptions", js.undefined)
     
     @scala.inline
-    def setTemplateController(value: Boolean): Self = this.set("templateController", value.asInstanceOf[js.Any])
+    def setTemplateController(value: Boolean): Self = StObject.set(x, "templateController", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTemplateController: Self = this.set("templateController", js.undefined)
+    def setTemplateControllerUndefined: Self = StObject.set(x, "templateController", js.undefined)
     
     @scala.inline
     def setType(
       value: element | attribute | valueConverter | bindingBehavior | typings.aureliaTemplating.aureliaTemplatingStrings.viewEngineHooks
-    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setUsesShadowDOM(value: Boolean): Self = this.set("usesShadowDOM", value.asInstanceOf[js.Any])
+    def setUsesShadowDOM(value: Boolean): Self = StObject.set(x, "usesShadowDOM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUsesShadowDOM: Self = this.set("usesShadowDOM", js.undefined)
+    def setUsesShadowDOMUndefined: Self = StObject.set(x, "usesShadowDOM", js.undefined)
   }
 }

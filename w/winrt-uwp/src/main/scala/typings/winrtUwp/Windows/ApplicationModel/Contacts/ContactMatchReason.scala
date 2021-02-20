@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import typings.winrtUwp.Windows.Data.Text.TextSegment
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides details about why search results matched the query parameters. */
 @js.native
-trait ContactMatchReason extends js.Object {
+trait ContactMatchReason extends StObject {
   
   /** Gets the contact field type that matched the search, such as name, phone number, email address and so on. */
   var field: ContactMatchReasonKind = js.native
@@ -28,27 +29,15 @@ object ContactMatchReason {
   }
   
   @scala.inline
-  implicit class ContactMatchReasonOps[Self <: ContactMatchReason] (val x: Self) extends AnyVal {
+  implicit class ContactMatchReasonMutableBuilder[Self <: ContactMatchReason] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setField(value: ContactMatchReasonKind): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSegments(value: IVectorView[TextSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setField(value: ContactMatchReasonKind): Self = this.set("field", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSegments(value: IVectorView[TextSegment]): Self = this.set("segments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

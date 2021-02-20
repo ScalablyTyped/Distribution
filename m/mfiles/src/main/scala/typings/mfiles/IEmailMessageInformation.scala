@@ -2,12 +2,13 @@ package typings.mfiles
 
 import typings.mfiles.MFiles.MFEmailImportance
 import typings.mfiles.MFiles.MFEmailSensitivity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEmailMessageInformation extends js.Object {
+trait IEmailMessageInformation extends StObject {
   
   var Cc: IStrings = js.native
   
@@ -55,54 +56,42 @@ object IEmailMessageInformation {
   }
   
   @scala.inline
-  implicit class IEmailMessageInformationOps[Self <: IEmailMessageInformation] (val x: Self) extends AnyVal {
+  implicit class IEmailMessageInformationMutableBuilder[Self <: IEmailMessageInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCc(value: IStrings): Self = StObject.set(x, "Cc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone(value: () => IEmailMessageInformation): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloneFrom(value: IEmailMessageInformation => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCc(value: IStrings): Self = this.set("Cc", value.asInstanceOf[js.Any])
+    def setFrom(value: String): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IEmailMessageInformation): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setImportance(value: MFEmailImportance): Self = StObject.set(x, "Importance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloneFrom(value: IEmailMessageInformation => Unit): Self = this.set("CloneFrom", js.Any.fromFunction1(value))
+    def setInReplyTo(value: String): Self = StObject.set(x, "InReplyTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("From", value.asInstanceOf[js.Any])
+    def setMessageID(value: String): Self = StObject.set(x, "MessageID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportance(value: MFEmailImportance): Self = this.set("Importance", value.asInstanceOf[js.Any])
+    def setReceived(value: ITimestamp): Self = StObject.set(x, "Received", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInReplyTo(value: String): Self = this.set("InReplyTo", value.asInstanceOf[js.Any])
+    def setSensitivity(value: MFEmailSensitivity): Self = StObject.set(x, "Sensitivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageID(value: String): Self = this.set("MessageID", value.asInstanceOf[js.Any])
+    def setSent(value: ITimestamp): Self = StObject.set(x, "Sent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceived(value: ITimestamp): Self = this.set("Received", value.asInstanceOf[js.Any])
+    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSensitivity(value: MFEmailSensitivity): Self = this.set("Sensitivity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSent(value: ITimestamp): Self = this.set("Sent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubject(value: String): Self = this.set("Subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTo(value: IStrings): Self = this.set("To", value.asInstanceOf[js.Any])
+    def setTo(value: IStrings): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
   }
 }

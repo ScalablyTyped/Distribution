@@ -11,22 +11,14 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.structuresMod.aliases.IContainer
 import typings.mendixmodelsdk.utilsMod.utils.IMap
 import typings.mobx.observablevalueMod.IObservableValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/sdk/internal/properties/LocalByNameReferenceProperty", JSImport.Namespace)
-@js.native
-object localByNameReferencePropertyMod extends js.Object {
+object localByNameReferencePropertyMod {
   
-  def isNamedElement(element: IStructure): /* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties/LocalByNameReferenceProperty.INamedElement */ Boolean = js.native
-  
-  @js.native
-  trait INamedElement extends IElement {
-    
-    var name: String = js.native
-  }
-  
+  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/LocalByNameReferenceProperty", "LocalByNameReferenceProperty")
   @js.native
   class LocalByNameReferenceProperty[T /* <: INamedElement */] protected () extends AbstractProperty[T | Null, IObservableValue[String | Null]] {
     def this(
@@ -68,5 +60,15 @@ object localByNameReferencePropertyMod extends js.Object {
     def targetType: String = js.native
     
     def updateWithRawValue(value: String): Unit = js.native
+  }
+  
+  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/LocalByNameReferenceProperty", "isNamedElement")
+  @js.native
+  def isNamedElement(element: IStructure): /* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties/LocalByNameReferenceProperty.INamedElement */ Boolean = js.native
+  
+  @js.native
+  trait INamedElement extends IElement {
+    
+    var name: String = js.native
   }
 }

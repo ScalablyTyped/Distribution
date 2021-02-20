@@ -1,12 +1,13 @@
 package typings.ngCordova.ngCordova
 
 import typings.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEmailComposerService extends js.Object {
+trait IEmailComposerService extends StObject {
   
   def addAlias(app: String, schema: String): Unit = js.native
   
@@ -27,27 +28,15 @@ object IEmailComposerService {
   }
   
   @scala.inline
-  implicit class IEmailComposerServiceOps[Self <: IEmailComposerService] (val x: Self) extends AnyVal {
+  implicit class IEmailComposerServiceMutableBuilder[Self <: IEmailComposerService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddAlias(value: (String, String) => Unit): Self = StObject.set(x, "addAlias", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsAvailable(value: () => IPromise[Boolean]): Self = StObject.set(x, "isAvailable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddAlias(value: (String, String) => Unit): Self = this.set("addAlias", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setIsAvailable(value: () => IPromise[Boolean]): Self = this.set("isAvailable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOpen(value: IEmailComposerOptions => IPromise[_]): Self = this.set("open", js.Any.fromFunction1(value))
+    def setOpen(value: IEmailComposerOptions => IPromise[_]): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
   }
 }

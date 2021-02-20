@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.util.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,36 +60,24 @@ object XWindowPeer {
   }
   
   @scala.inline
-  implicit class XWindowPeerOps[Self <: XWindowPeer] (val x: Self) extends AnyVal {
+  implicit class XWindowPeerMutableBuilder[Self <: XWindowPeer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetToolkit(value: () => XToolkit): Self = StObject.set(x, "getToolkit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvalidate(value: Double => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvalidateRect(value: (Rectangle, Double) => Unit): Self = StObject.set(x, "invalidateRect", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setToolkit(value: XToolkit): Self = this.set("Toolkit", value.asInstanceOf[js.Any])
+    def setSetBackground(value: Color => Unit): Self = StObject.set(x, "setBackground", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetToolkit(value: () => XToolkit): Self = this.set("getToolkit", js.Any.fromFunction0(value))
+    def setSetPointer(value: XPointer => Unit): Self = StObject.set(x, "setPointer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInvalidate(value: Double => Unit): Self = this.set("invalidate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInvalidateRect(value: (Rectangle, Double) => Unit): Self = this.set("invalidateRect", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetBackground(value: Color => Unit): Self = this.set("setBackground", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPointer(value: XPointer => Unit): Self = this.set("setPointer", js.Any.fromFunction1(value))
+    def setToolkit(value: XToolkit): Self = StObject.set(x, "Toolkit", value.asInstanceOf[js.Any])
   }
 }

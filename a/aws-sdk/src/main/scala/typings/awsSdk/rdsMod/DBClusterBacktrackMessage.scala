@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DBClusterBacktrackMessage extends js.Object {
+trait DBClusterBacktrackMessage extends StObject {
   
   /**
     * Contains a list of backtracks for the user.
@@ -26,33 +27,21 @@ object DBClusterBacktrackMessage {
   }
   
   @scala.inline
-  implicit class DBClusterBacktrackMessageOps[Self <: DBClusterBacktrackMessage] (val x: Self) extends AnyVal {
+  implicit class DBClusterBacktrackMessageMutableBuilder[Self <: DBClusterBacktrackMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDBClusterBacktracks(value: DBClusterBacktrackList): Self = StObject.set(x, "DBClusterBacktracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDBClusterBacktracksUndefined: Self = StObject.set(x, "DBClusterBacktracks", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDBClusterBacktracksVarargs(value: DBClusterBacktrack*): Self = StObject.set(x, "DBClusterBacktracks", js.Array(value :_*))
     
     @scala.inline
-    def setDBClusterBacktracksVarargs(value: DBClusterBacktrack*): Self = this.set("DBClusterBacktracks", js.Array(value :_*))
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBClusterBacktracks(value: DBClusterBacktrackList): Self = this.set("DBClusterBacktracks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDBClusterBacktracks: Self = this.set("DBClusterBacktracks", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

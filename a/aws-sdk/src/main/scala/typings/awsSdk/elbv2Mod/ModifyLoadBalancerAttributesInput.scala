@@ -1,11 +1,12 @@
 package typings.awsSdk.elbv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyLoadBalancerAttributesInput extends js.Object {
+trait ModifyLoadBalancerAttributesInput extends StObject {
   
   /**
     * The load balancer attributes.
@@ -26,27 +27,15 @@ object ModifyLoadBalancerAttributesInput {
   }
   
   @scala.inline
-  implicit class ModifyLoadBalancerAttributesInputOps[Self <: ModifyLoadBalancerAttributesInput] (val x: Self) extends AnyVal {
+  implicit class ModifyLoadBalancerAttributesInputMutableBuilder[Self <: ModifyLoadBalancerAttributesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: LoadBalancerAttributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesVarargs(value: LoadBalancerAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttributesVarargs(value: LoadBalancerAttribute*): Self = this.set("Attributes", js.Array(value :_*))
-    
-    @scala.inline
-    def setAttributes(value: LoadBalancerAttributes): Self = this.set("Attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLoadBalancerArn(value: LoadBalancerArn): Self = this.set("LoadBalancerArn", value.asInstanceOf[js.Any])
+    def setLoadBalancerArn(value: LoadBalancerArn): Self = StObject.set(x, "LoadBalancerArn", value.asInstanceOf[js.Any])
   }
 }

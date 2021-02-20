@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceVersion extends js.Object {
+trait ServiceVersion extends StObject {
   
   /**
     * The version of the rest API.
@@ -23,30 +24,18 @@ object ServiceVersion {
   }
   
   @scala.inline
-  implicit class ServiceVersionOps[Self <: ServiceVersion] (val x: Self) extends AnyVal {
+  implicit class ServiceVersionMutableBuilder[Self <: ServiceVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVersionUrl(value: String): Self = StObject.set(x, "versionUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setVersionUrl(value: String): Self = this.set("versionUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionUrl: Self = this.set("versionUrl", js.undefined)
+    def setVersionUrlUndefined: Self = StObject.set(x, "versionUrl", js.undefined)
   }
 }

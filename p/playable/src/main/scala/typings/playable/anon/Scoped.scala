@@ -2,12 +2,13 @@ package typings.playable.anon
 
 import typings.playable.lifetimeMod.Lifetime
 import typings.playable.typesMod.IOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Scoped extends js.Object {
+trait Scoped extends StObject {
   
   def scoped(): IOptions = js.native
   
@@ -31,30 +32,18 @@ object Scoped {
   }
   
   @scala.inline
-  implicit class ScopedOps[Self <: Scoped] (val x: Self) extends AnyVal {
+  implicit class ScopedMutableBuilder[Self <: Scoped] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScoped(value: () => IOptions): Self = StObject.set(x, "scoped", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetLifetime(value: Lifetime => IOptions): Self = StObject.set(x, "setLifetime", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSingleton(value: () => IOptions): Self = StObject.set(x, "singleton", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScoped(value: () => IOptions): Self = this.set("scoped", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetLifetime(value: Lifetime => IOptions): Self = this.set("setLifetime", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSingleton(value: () => IOptions): Self = this.set("singleton", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTransient(value: () => IOptions): Self = this.set("transient", js.Any.fromFunction0(value))
+    def setTransient(value: () => IOptions): Self = StObject.set(x, "transient", js.Any.fromFunction0(value))
   }
 }

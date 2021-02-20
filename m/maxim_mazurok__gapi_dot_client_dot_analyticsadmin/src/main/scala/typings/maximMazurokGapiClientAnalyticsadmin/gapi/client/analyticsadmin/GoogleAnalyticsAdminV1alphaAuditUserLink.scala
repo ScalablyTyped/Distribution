@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleAnalyticsAdminV1alphaAuditUserLink extends js.Object {
+trait GoogleAnalyticsAdminV1alphaAuditUserLink extends StObject {
   
   /**
     * Roles directly assigned to this user for this entity. Format: predefinedRoles/read Excludes roles that are inherited from an account (if this is for a property), group, or
@@ -31,48 +32,36 @@ object GoogleAnalyticsAdminV1alphaAuditUserLink {
   }
   
   @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaAuditUserLinkOps[Self <: GoogleAnalyticsAdminV1alphaAuditUserLink] (val x: Self) extends AnyVal {
+  implicit class GoogleAnalyticsAdminV1alphaAuditUserLinkMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAuditUserLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectRoles(value: js.Array[String]): Self = StObject.set(x, "directRoles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectRolesUndefined: Self = StObject.set(x, "directRoles", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectRolesVarargs(value: String*): Self = StObject.set(x, "directRoles", js.Array(value :_*))
     
     @scala.inline
-    def setDirectRolesVarargs(value: String*): Self = this.set("directRoles", js.Array(value :_*))
+    def setEffectiveRoles(value: js.Array[String]): Self = StObject.set(x, "effectiveRoles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectRoles(value: js.Array[String]): Self = this.set("directRoles", value.asInstanceOf[js.Any])
+    def setEffectiveRolesUndefined: Self = StObject.set(x, "effectiveRoles", js.undefined)
     
     @scala.inline
-    def deleteDirectRoles: Self = this.set("directRoles", js.undefined)
+    def setEffectiveRolesVarargs(value: String*): Self = StObject.set(x, "effectiveRoles", js.Array(value :_*))
     
     @scala.inline
-    def setEffectiveRolesVarargs(value: String*): Self = this.set("effectiveRoles", js.Array(value :_*))
+    def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectiveRoles(value: js.Array[String]): Self = this.set("effectiveRoles", value.asInstanceOf[js.Any])
+    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
     @scala.inline
-    def deleteEffectiveRoles: Self = this.set("effectiveRoles", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailAddress(value: String): Self = this.set("emailAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmailAddress: Self = this.set("emailAddress", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

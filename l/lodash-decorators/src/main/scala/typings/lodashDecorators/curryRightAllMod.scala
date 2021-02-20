@@ -1,18 +1,28 @@
 package typings.lodashDecorators
 
+import org.scalablytyped.runtime.Shortcut
 import typings.lodashDecorators.commonMod.BiTypedMethodDecorator1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lodash-decorators/curryRightAll", JSImport.Namespace)
-@js.native
-object curryRightAllMod extends js.Object {
+object curryRightAllMod extends Shortcut {
   
-  @JSName("CurryRightAll")
+  @JSImport("lodash-decorators/curryRightAll", JSImport.Default)
+  @js.native
+  val default: BiTypedMethodDecorator1[Double] = js.native
+  
+  @JSImport("lodash-decorators/curryRightAll", "CurryRightAll")
+  @js.native
   val CurryRightAll_ : BiTypedMethodDecorator1[Double] = js.native
   
+  @JSImport("lodash-decorators/curryRightAll", "curryRightAll")
+  @js.native
   val curryRightAll: BiTypedMethodDecorator1[Double] = js.native
   
-  val default: BiTypedMethodDecorator1[Double] = js.native
+  type _To = BiTypedMethodDecorator1[Double]
+  
+  /* This means you don't have to write `default`, but can instead just say `curryRightAllMod.foo` */
+  override def _to: BiTypedMethodDecorator1[Double] = default
 }

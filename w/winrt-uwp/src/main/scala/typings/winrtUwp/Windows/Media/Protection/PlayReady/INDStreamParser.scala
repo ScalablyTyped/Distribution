@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
 import typings.winrtUwp.Windows.Media.Core.IMediaStreamDescriptor
 import typings.winrtUwp.anon.StreamType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parses data from a PlayReady-ND media stream. */
 @js.native
-trait INDStreamParser extends js.Object {
+trait INDStreamParser extends StObject {
   
   /** Notifies a PlayReady-ND stream parser to be ready for the beginning of a new media stream. */
   def beginOfStream(): Unit = js.native
@@ -46,33 +47,21 @@ object INDStreamParser {
   }
   
   @scala.inline
-  implicit class INDStreamParserOps[Self <: INDStreamParser] (val x: Self) extends AnyVal {
+  implicit class INDStreamParserMutableBuilder[Self <: INDStreamParser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginOfStream(value: () => Unit): Self = StObject.set(x, "beginOfStream", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndOfStream(value: () => Unit): Self = StObject.set(x, "endOfStream", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetStreamInformation(value: IMediaStreamDescriptor => StreamType): Self = StObject.set(x, "getStreamInformation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeginOfStream(value: () => Unit): Self = this.set("beginOfStream", js.Any.fromFunction0(value))
+    def setNotifier(value: NDStreamParserNotifier): Self = StObject.set(x, "notifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndOfStream(value: () => Unit): Self = this.set("endOfStream", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetStreamInformation(value: IMediaStreamDescriptor => StreamType): Self = this.set("getStreamInformation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNotifier(value: NDStreamParserNotifier): Self = this.set("notifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParseData(value: js.Array[Double] => Unit): Self = this.set("parseData", js.Any.fromFunction1(value))
+    def setParseData(value: js.Array[Double] => Unit): Self = StObject.set(x, "parseData", js.Any.fromFunction1(value))
   }
 }

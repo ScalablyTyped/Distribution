@@ -16,12 +16,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.planar
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AreasAndLengthsParametersProperties extends js.Object {
+trait AreasAndLengthsParametersProperties extends StObject {
   
   /**
     * The area unit in which areas of polygons will be calculated.
@@ -62,47 +63,35 @@ object AreasAndLengthsParametersProperties {
   }
   
   @scala.inline
-  implicit class AreasAndLengthsParametersPropertiesOps[Self <: AreasAndLengthsParametersProperties] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class AreasAndLengthsParametersPropertiesMutableBuilder[Self <: AreasAndLengthsParametersProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAreaUnit(
       value: acres | hectares | `square-miles` | `square-kilometers` | `square-meters` | `square-feet` | `square-yards`
-    ): Self = this.set("areaUnit", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "areaUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAreaUnit: Self = this.set("areaUnit", js.undefined)
+    def setAreaUnitUndefined: Self = StObject.set(x, "areaUnit", js.undefined)
     
     @scala.inline
-    def setCalculationType(value: planar | geodesic | `preserve-shape`): Self = this.set("calculationType", value.asInstanceOf[js.Any])
+    def setCalculationType(value: planar | geodesic | `preserve-shape`): Self = StObject.set(x, "calculationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCalculationType: Self = this.set("calculationType", js.undefined)
+    def setCalculationTypeUndefined: Self = StObject.set(x, "calculationType", js.undefined)
     
     @scala.inline
-    def setLengthUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = this.set("lengthUnit", value.asInstanceOf[js.Any])
+    def setLengthUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "lengthUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLengthUnit: Self = this.set("lengthUnit", js.undefined)
+    def setLengthUnitUndefined: Self = StObject.set(x, "lengthUnit", js.undefined)
     
     @scala.inline
-    def setPolygonsVarargs(value: PolygonProperties*): Self = this.set("polygons", js.Array(value :_*))
+    def setPolygons(value: js.Array[PolygonProperties]): Self = StObject.set(x, "polygons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolygons(value: js.Array[PolygonProperties]): Self = this.set("polygons", value.asInstanceOf[js.Any])
+    def setPolygonsUndefined: Self = StObject.set(x, "polygons", js.undefined)
     
     @scala.inline
-    def deletePolygons: Self = this.set("polygons", js.undefined)
+    def setPolygonsVarargs(value: PolygonProperties*): Self = StObject.set(x, "polygons", js.Array(value :_*))
   }
 }

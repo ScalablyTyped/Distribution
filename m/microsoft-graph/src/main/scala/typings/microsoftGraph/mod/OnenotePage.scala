@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,120 +56,108 @@ object OnenotePage {
   }
   
   @scala.inline
-  implicit class OnenotePageOps[Self <: OnenotePage] (val x: Self) extends AnyVal {
+  implicit class OnenotePageMutableBuilder[Self <: OnenotePage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: NullableOption[_]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentNull: Self = StObject.set(x, "content", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def setContent(value: NullableOption[_]): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setContentUrl(value: NullableOption[String]): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setContentUrlNull: Self = StObject.set(x, "contentUrl", null)
     
     @scala.inline
-    def setContentNull: Self = this.set("content", null)
+    def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
     
     @scala.inline
-    def setContentUrl(value: NullableOption[String]): Self = this.set("contentUrl", value.asInstanceOf[js.Any])
+    def setCreatedByAppId(value: NullableOption[String]): Self = StObject.set(x, "createdByAppId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentUrl: Self = this.set("contentUrl", js.undefined)
+    def setCreatedByAppIdNull: Self = StObject.set(x, "createdByAppId", null)
     
     @scala.inline
-    def setContentUrlNull: Self = this.set("contentUrl", null)
+    def setCreatedByAppIdUndefined: Self = StObject.set(x, "createdByAppId", js.undefined)
     
     @scala.inline
-    def setCreatedByAppId(value: NullableOption[String]): Self = this.set("createdByAppId", value.asInstanceOf[js.Any])
+    def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedByAppId: Self = this.set("createdByAppId", js.undefined)
+    def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
     
     @scala.inline
-    def setCreatedByAppIdNull: Self = this.set("createdByAppId", null)
+    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
     @scala.inline
-    def setLastModifiedDateTime(value: NullableOption[String]): Self = this.set("lastModifiedDateTime", value.asInstanceOf[js.Any])
+    def setLevel(value: NullableOption[Double]): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastModifiedDateTime: Self = this.set("lastModifiedDateTime", js.undefined)
+    def setLevelNull: Self = StObject.set(x, "level", null)
     
     @scala.inline
-    def setLastModifiedDateTimeNull: Self = this.set("lastModifiedDateTime", null)
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def setLevel(value: NullableOption[Double]): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setLinks(value: NullableOption[PageLinks]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setLinksNull: Self = StObject.set(x, "links", null)
     
     @scala.inline
-    def setLevelNull: Self = this.set("level", null)
+    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
     @scala.inline
-    def setLinks(value: NullableOption[PageLinks]): Self = this.set("links", value.asInstanceOf[js.Any])
+    def setOrder(value: NullableOption[Double]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLinks: Self = this.set("links", js.undefined)
+    def setOrderNull: Self = StObject.set(x, "order", null)
     
     @scala.inline
-    def setLinksNull: Self = this.set("links", null)
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def setOrder(value: NullableOption[Double]): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setParentNotebook(value: NullableOption[Notebook]): Self = StObject.set(x, "parentNotebook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setParentNotebookNull: Self = StObject.set(x, "parentNotebook", null)
     
     @scala.inline
-    def setOrderNull: Self = this.set("order", null)
+    def setParentNotebookUndefined: Self = StObject.set(x, "parentNotebook", js.undefined)
     
     @scala.inline
-    def setParentNotebook(value: NullableOption[Notebook]): Self = this.set("parentNotebook", value.asInstanceOf[js.Any])
+    def setParentSection(value: NullableOption[OnenoteSection]): Self = StObject.set(x, "parentSection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentNotebook: Self = this.set("parentNotebook", js.undefined)
+    def setParentSectionNull: Self = StObject.set(x, "parentSection", null)
     
     @scala.inline
-    def setParentNotebookNull: Self = this.set("parentNotebook", null)
+    def setParentSectionUndefined: Self = StObject.set(x, "parentSection", js.undefined)
     
     @scala.inline
-    def setParentSection(value: NullableOption[OnenoteSection]): Self = this.set("parentSection", value.asInstanceOf[js.Any])
+    def setTitle(value: NullableOption[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentSection: Self = this.set("parentSection", js.undefined)
+    def setTitleNull: Self = StObject.set(x, "title", null)
     
     @scala.inline
-    def setParentSectionNull: Self = this.set("parentSection", null)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setTitle(value: NullableOption[String]): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setUserTags(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "userTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setUserTagsNull: Self = StObject.set(x, "userTags", null)
     
     @scala.inline
-    def setTitleNull: Self = this.set("title", null)
+    def setUserTagsUndefined: Self = StObject.set(x, "userTags", js.undefined)
     
     @scala.inline
-    def setUserTagsVarargs(value: String*): Self = this.set("userTags", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserTags(value: NullableOption[js.Array[String]]): Self = this.set("userTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserTags: Self = this.set("userTags", js.undefined)
-    
-    @scala.inline
-    def setUserTagsNull: Self = this.set("userTags", null)
+    def setUserTagsVarargs(value: String*): Self = StObject.set(x, "userTags", js.Array(value :_*))
   }
 }

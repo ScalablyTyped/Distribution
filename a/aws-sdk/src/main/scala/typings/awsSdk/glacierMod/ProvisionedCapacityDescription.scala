@@ -1,11 +1,12 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProvisionedCapacityDescription extends js.Object {
+trait ProvisionedCapacityDescription extends StObject {
   
   /**
     * The ID that identifies the provisioned capacity unit.
@@ -31,36 +32,24 @@ object ProvisionedCapacityDescription {
   }
   
   @scala.inline
-  implicit class ProvisionedCapacityDescriptionOps[Self <: ProvisionedCapacityDescription] (val x: Self) extends AnyVal {
+  implicit class ProvisionedCapacityDescriptionMutableBuilder[Self <: ProvisionedCapacityDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapacityId(value: String): Self = StObject.set(x, "CapacityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapacityIdUndefined: Self = StObject.set(x, "CapacityId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpirationDate(value: String): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacityId(value: String): Self = this.set("CapacityId", value.asInstanceOf[js.Any])
+    def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
     
     @scala.inline
-    def deleteCapacityId: Self = this.set("CapacityId", js.undefined)
+    def setStartDate(value: String): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationDate(value: String): Self = this.set("ExpirationDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpirationDate: Self = this.set("ExpirationDate", js.undefined)
-    
-    @scala.inline
-    def setStartDate(value: String): Self = this.set("StartDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartDate: Self = this.set("StartDate", js.undefined)
+    def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
   }
 }

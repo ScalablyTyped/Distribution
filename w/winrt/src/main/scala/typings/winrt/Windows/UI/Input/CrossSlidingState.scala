@@ -1,14 +1,15 @@
 package typings.winrt.Windows.UI.Input
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CrossSlidingState extends js.Object
+sealed trait CrossSlidingState extends StObject
 @JSGlobal("Windows.UI.Input.CrossSlidingState")
 @js.native
-object CrossSlidingState extends js.Object {
+object CrossSlidingState extends StObject {
   
   @js.native
   sealed trait completed extends CrossSlidingState

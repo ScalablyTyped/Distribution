@@ -1,5 +1,6 @@
 package typings.raygun
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,4 +27,16 @@ package object typesMod {
   type RequestParams = (typings.raygun.anon.Host | typings.raygun.anon.Hostname) with typings.raygun.typesMod.CommonRequestParams
   
   type Tag = java.lang.String
+  
+  @scala.inline
+  def callVariadicCallback[T](callback: typings.raygun.typesMod.Callback[T]): scala.Unit = typings.raygun.typesMod.^.asInstanceOf[js.Dynamic].applyDynamic("callVariadicCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+  @scala.inline
+  def callVariadicCallback[T](callback: typings.raygun.typesMod.Callback[T], error: scala.Null, result: T): scala.Unit = (typings.raygun.typesMod.^.asInstanceOf[js.Dynamic].applyDynamic("callVariadicCallback")(callback.asInstanceOf[js.Any], error.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  @scala.inline
+  def callVariadicCallback[T](callback: typings.raygun.typesMod.Callback[T], error: typings.std.Error): scala.Unit = (typings.raygun.typesMod.^.asInstanceOf[js.Dynamic].applyDynamic("callVariadicCallback")(callback.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  @scala.inline
+  def callVariadicCallback[T](callback: typings.raygun.typesMod.Callback[T], error: typings.std.Error, result: T): scala.Unit = (typings.raygun.typesMod.^.asInstanceOf[js.Dynamic].applyDynamic("callVariadicCallback")(callback.asInstanceOf[js.Any], error.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  
+  @scala.inline
+  def isCallbackWithError[T](cb: typings.raygun.typesMod.Callback[T]): /* is raygun.raygun/build/types.CallbackWithError<T> */ scala.Boolean = typings.raygun.typesMod.^.asInstanceOf[js.Dynamic].applyDynamic("isCallbackWithError")(cb.asInstanceOf[js.Any]).asInstanceOf[/* is raygun.raygun/build/types.CallbackWithError<T> */ scala.Boolean]
 }

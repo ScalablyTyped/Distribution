@@ -1,5 +1,6 @@
 package typings.rollup.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.rollup.rollupStrings.`allow-extension`
   - typings.rollup.rollupStrings.`exports-only`
 */
-trait PreserveEntrySignaturesOption extends js.Object
+trait PreserveEntrySignaturesOption extends StObject
 object PreserveEntrySignaturesOption {
   
   @scala.inline

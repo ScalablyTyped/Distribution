@@ -1,15 +1,15 @@
 package typings.awsSdkClientCognitoIdentityBrowser
 
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-cognito-identity-browser/model/_RolesMap", JSImport.Namespace)
-@js.native
-object rolesMapMod extends js.Object {
+object rolesMapMod {
   
-  @JSName("_RolesMap")
+  @JSImport("@aws-sdk/client-cognito-identity-browser/model/_RolesMap", "_RolesMap")
+  @js.native
   val RolesMap: Map[
     /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ js.Any, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any

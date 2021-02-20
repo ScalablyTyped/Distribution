@@ -1,5 +1,6 @@
 package typings.twilioVideo.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.twilioVideo.mod.LocalVideoTrack
   - typings.twilioVideo.mod.LocalDataTrack
 */
-trait LocalTrack extends js.Object
+trait LocalTrack extends StObject

@@ -1,12 +1,13 @@
 package typings.jqueryGridster
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridsterCollisionData extends js.Object {
+trait GridsterCollisionData extends StObject {
   
   var area: Double = js.native
   
@@ -36,36 +37,24 @@ object GridsterCollisionData {
   }
   
   @scala.inline
-  implicit class GridsterCollisionDataOps[Self <: GridsterCollisionData] (val x: Self) extends AnyVal {
+  implicit class GridsterCollisionDataMutableBuilder[Self <: GridsterCollisionData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArea(value: Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArea_coords(value: GridsterCoords): Self = StObject.set(x, "area_coords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoords(value: GridsterCoords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArea(value: Double): Self = this.set("area", value.asInstanceOf[js.Any])
+    def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArea_coords(value: GridsterCoords): Self = this.set("area_coords", value.asInstanceOf[js.Any])
+    def setPlayer_coords(value: GridsterCoords): Self = StObject.set(x, "player_coords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoords(value: GridsterCoords): Self = this.set("coords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEl(value: HTMLElement): Self = this.set("el", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlayer_coords(value: GridsterCoords): Self = this.set("player_coords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
   }
 }

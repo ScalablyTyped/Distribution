@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ToneAnalysis. */
 @js.native
-trait ToneAnalysis extends js.Object {
+trait ToneAnalysis extends StObject {
   
   /** An object of type `DocumentAnalysis` that provides the results of the analysis for the full input document. */
   var document_tone: DocumentAnalysis = js.native
@@ -23,30 +24,18 @@ object ToneAnalysis {
   }
   
   @scala.inline
-  implicit class ToneAnalysisOps[Self <: ToneAnalysis] (val x: Self) extends AnyVal {
+  implicit class ToneAnalysisMutableBuilder[Self <: ToneAnalysis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocument_tone(value: DocumentAnalysis): Self = StObject.set(x, "document_tone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSentences_tone(value: js.Array[SentenceAnalysis]): Self = StObject.set(x, "sentences_tone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSentences_toneUndefined: Self = StObject.set(x, "sentences_tone", js.undefined)
     
     @scala.inline
-    def setDocument_tone(value: DocumentAnalysis): Self = this.set("document_tone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSentences_toneVarargs(value: SentenceAnalysis*): Self = this.set("sentences_tone", js.Array(value :_*))
-    
-    @scala.inline
-    def setSentences_tone(value: js.Array[SentenceAnalysis]): Self = this.set("sentences_tone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSentences_tone: Self = this.set("sentences_tone", js.undefined)
+    def setSentences_toneVarargs(value: SentenceAnalysis*): Self = StObject.set(x, "sentences_tone", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.stripe.mod.accounts
 
 import typings.stripe.stripeStrings.custom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,27 +35,15 @@ object IAccountCreationOptions {
   }
   
   @scala.inline
-  implicit class IAccountCreationOptionsOps[Self <: IAccountCreationOptions] (val x: Self) extends AnyVal {
+  implicit class IAccountCreationOptionsMutableBuilder[Self <: IAccountCreationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: custom): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setType(value: custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.configuration.backend
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,30 +83,18 @@ object XBackend {
   }
   
   @scala.inline
-  implicit class XBackendOps[Self <: XBackend] (val x: Self) extends AnyVal {
+  implicit class XBackendMutableBuilder[Self <: XBackend] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetOwnUpdateHandler(value: String => XUpdateHandler): Self = StObject.set(x, "getOwnUpdateHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetUpdateHandler(value: (String, String) => XUpdateHandler): Self = StObject.set(x, "getUpdateHandler", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListLayers(value: (String, String) => SafeArray[XLayer]): Self = StObject.set(x, "listLayers", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetOwnUpdateHandler(value: String => XUpdateHandler): Self = this.set("getOwnUpdateHandler", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetUpdateHandler(value: (String, String) => XUpdateHandler): Self = this.set("getUpdateHandler", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setListLayers(value: (String, String) => SafeArray[XLayer]): Self = this.set("listLayers", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setListOwnLayers(value: String => SafeArray[XLayer]): Self = this.set("listOwnLayers", js.Any.fromFunction1(value))
+    def setListOwnLayers(value: String => SafeArray[XLayer]): Self = StObject.set(x, "listOwnLayers", js.Any.fromFunction1(value))
   }
 }

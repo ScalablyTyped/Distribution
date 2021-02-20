@@ -1,11 +1,12 @@
 package typings.fsExtra.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CopyOptions extends js.Object {
+trait CopyOptions extends StObject {
   
   var dereference: js.UndefOr[Boolean] = js.native
   
@@ -28,54 +29,42 @@ object CopyOptions {
   }
   
   @scala.inline
-  implicit class CopyOptionsOps[Self <: CopyOptions] (val x: Self) extends AnyVal {
+  implicit class CopyOptionsMutableBuilder[Self <: CopyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDereference(value: Boolean): Self = StObject.set(x, "dereference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDereferenceUndefined: Self = StObject.set(x, "dereference", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorOnExist(value: Boolean): Self = StObject.set(x, "errorOnExist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDereference(value: Boolean): Self = this.set("dereference", value.asInstanceOf[js.Any])
+    def setErrorOnExistUndefined: Self = StObject.set(x, "errorOnExist", js.undefined)
     
     @scala.inline
-    def deleteDereference: Self = this.set("dereference", js.undefined)
+    def setFilter(value: (/* src */ String, /* dest */ String) => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setErrorOnExist(value: Boolean): Self = this.set("errorOnExist", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteErrorOnExist: Self = this.set("errorOnExist", js.undefined)
+    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: (/* src */ String, /* dest */ String) => Boolean | js.Promise[Boolean]): Self = this.set("filter", js.Any.fromFunction2(value))
+    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setPreserveTimestamps(value: Boolean): Self = StObject.set(x, "preserveTimestamps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverwrite(value: Boolean): Self = this.set("overwrite", value.asInstanceOf[js.Any])
+    def setPreserveTimestampsUndefined: Self = StObject.set(x, "preserveTimestamps", js.undefined)
     
     @scala.inline
-    def deleteOverwrite: Self = this.set("overwrite", js.undefined)
+    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveTimestamps(value: Boolean): Self = this.set("preserveTimestamps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreserveTimestamps: Self = this.set("preserveTimestamps", js.undefined)
-    
-    @scala.inline
-    def setRecursive(value: Boolean): Self = this.set("recursive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecursive: Self = this.set("recursive", js.undefined)
+    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
   }
 }

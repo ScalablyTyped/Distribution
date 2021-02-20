@@ -1,5 +1,6 @@
 package typings.paper.global.paper
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,10 +42,7 @@ class Point protected ()
     */
   def this(x: Double, y: Double) = this()
 }
-/* static members */
-@JSGlobal("paper.Point")
-@js.native
-object Point extends js.Object {
+object Point {
   
   /** 
     * Returns a new point object with the largest {@link #x} and
@@ -52,6 +50,9 @@ object Point extends js.Object {
     * 
     * @return the newly created point object
     */
+  /* static member */
+  @JSGlobal("paper.Point.max")
+  @js.native
   def max(point1: typings.paper.paper.Point, point2: typings.paper.paper.Point): typings.paper.paper.Point = js.native
   
   /** 
@@ -60,6 +61,9 @@ object Point extends js.Object {
     * 
     * @return the newly created point object
     */
+  /* static member */
+  @JSGlobal("paper.Point.min")
+  @js.native
   def min(point1: typings.paper.paper.Point, point2: typings.paper.paper.Point): typings.paper.paper.Point = js.native
   
   /** 
@@ -68,5 +72,8 @@ object Point extends js.Object {
     * 
     * @return the newly created point object
     */
+  /* static member */
+  @JSGlobal("paper.Point.random")
+  @js.native
   def random(): typings.paper.paper.Point = js.native
 }

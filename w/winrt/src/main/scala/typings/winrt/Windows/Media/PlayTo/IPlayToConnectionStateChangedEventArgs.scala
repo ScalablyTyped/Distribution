@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Media.PlayTo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPlayToConnectionStateChangedEventArgs extends js.Object {
+trait IPlayToConnectionStateChangedEventArgs extends StObject {
   
   var currentState: PlayToConnectionState = js.native
   
@@ -20,24 +21,12 @@ object IPlayToConnectionStateChangedEventArgs {
   }
   
   @scala.inline
-  implicit class IPlayToConnectionStateChangedEventArgsOps[Self <: IPlayToConnectionStateChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class IPlayToConnectionStateChangedEventArgsMutableBuilder[Self <: IPlayToConnectionStateChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentState(value: PlayToConnectionState): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrentState(value: PlayToConnectionState): Self = this.set("currentState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousState(value: PlayToConnectionState): Self = this.set("previousState", value.asInstanceOf[js.Any])
+    def setPreviousState(value: PlayToConnectionState): Self = StObject.set(x, "previousState", value.asInstanceOf[js.Any])
   }
 }

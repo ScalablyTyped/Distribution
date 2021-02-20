@@ -2,6 +2,7 @@ package typings.officeUiFabricReact.indexBundleMod
 
 import typings.officeUiFabricReact.anon.PartialICoachmarkProps
 import typings.officeUiFabricReact.coachmarkTypesMod.ICoachmarkProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +14,15 @@ class CoachmarkBase protected ()
   def this(props: ICoachmarkProps) = this()
 }
 /* static members */
-@JSImport("office-ui-fabric-react/lib/index.bundle", "CoachmarkBase")
-@js.native
-object CoachmarkBase extends js.Object {
+object CoachmarkBase {
   
-  var defaultProps: PartialICoachmarkProps = js.native
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "CoachmarkBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "CoachmarkBase.defaultProps")
+  @js.native
+  def defaultProps: PartialICoachmarkProps = js.native
+  @scala.inline
+  def defaultProps_=(x: PartialICoachmarkProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

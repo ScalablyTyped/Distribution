@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media.Capture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies a type of stream on a media capture device. */
 @JSGlobal("Windows.Media.Capture.MediaStreamType")
 @js.native
-object MediaStreamType extends js.Object {
+object MediaStreamType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Capture.MediaStreamType with Double] = js.native

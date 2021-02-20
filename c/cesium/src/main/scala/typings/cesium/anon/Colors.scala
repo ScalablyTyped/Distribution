@@ -1,12 +1,13 @@
 package typings.cesium.anon
 
 import typings.cesium.mod.Cartesian3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Colors extends js.Object {
+trait Colors extends StObject {
   
   var colors: js.UndefOr[js.Array[typings.cesium.mod.Color]] = js.native
   
@@ -29,57 +30,45 @@ object Colors {
   }
   
   @scala.inline
-  implicit class ColorsOps[Self <: Colors] (val x: Self) extends AnyVal {
+  implicit class ColorsMutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColors(value: js.Array[typings.cesium.mod.Color]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorsPerVertex(value: Boolean): Self = StObject.set(x, "colorsPerVertex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorsPerVertexUndefined: Self = StObject.set(x, "colorsPerVertex", js.undefined)
     
     @scala.inline
-    def setPositionsVarargs(value: Cartesian3*): Self = this.set("positions", js.Array(value :_*))
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def setPositions(value: js.Array[Cartesian3]): Self = this.set("positions", value.asInstanceOf[js.Any])
+    def setColorsVarargs(value: typings.cesium.mod.Color*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
     @scala.inline
-    def setColorsVarargs(value: typings.cesium.mod.Color*): Self = this.set("colors", js.Array(value :_*))
+    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: js.Array[typings.cesium.mod.Color]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setFollowSurface(value: Boolean): Self = StObject.set(x, "followSurface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorsPerVertex(value: Boolean): Self = this.set("colorsPerVertex", value.asInstanceOf[js.Any])
+    def setFollowSurfaceUndefined: Self = StObject.set(x, "followSurface", js.undefined)
     
     @scala.inline
-    def deleteColorsPerVertex: Self = this.set("colorsPerVertex", js.undefined)
+    def setGranularity(value: Double): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = this.set("ellipsoid", value.asInstanceOf[js.Any])
+    def setGranularityUndefined: Self = StObject.set(x, "granularity", js.undefined)
     
     @scala.inline
-    def deleteEllipsoid: Self = this.set("ellipsoid", js.undefined)
+    def setPositions(value: js.Array[Cartesian3]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowSurface(value: Boolean): Self = this.set("followSurface", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFollowSurface: Self = this.set("followSurface", js.undefined)
-    
-    @scala.inline
-    def setGranularity(value: Double): Self = this.set("granularity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGranularity: Self = this.set("granularity", js.undefined)
+    def setPositionsVarargs(value: Cartesian3*): Self = StObject.set(x, "positions", js.Array(value :_*))
   }
 }

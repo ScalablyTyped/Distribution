@@ -1,5 +1,6 @@
 package typings.reactNativeSvg.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNativeSvg.reactNativeSvgStrings.sharp
   - typings.reactNativeSvg.reactNativeSvgStrings.smooth
 */
-trait TextPathMidLine extends js.Object
+trait TextPathMidLine extends StObject
 object TextPathMidLine {
   
   @scala.inline

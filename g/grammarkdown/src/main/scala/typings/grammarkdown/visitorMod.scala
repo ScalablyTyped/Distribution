@@ -40,16 +40,16 @@ import typings.grammarkdown.nodesMod.UnicodeCharacterRange
 import typings.grammarkdown.tokensMod.ProseFragmentLiteralKind
 import typings.grammarkdown.tokensMod.SyntaxKind
 import typings.grammarkdown.tokensMod.TokenKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grammarkdown/dist/visitor", JSImport.Namespace)
-@js.native
-object visitorMod extends js.Object {
+object visitorMod {
   
+  @JSImport("grammarkdown/dist/visitor", "NodeVisitor")
   @js.native
-  abstract class NodeVisitor () extends js.Object {
+  abstract class NodeVisitor () extends StObject {
     
     def visit[T /* <: Node[SyntaxKind] */](): js.UndefOr[T] = js.native
     def visit[T /* <: Node[SyntaxKind] */](node: T): js.UndefOr[T] = js.native

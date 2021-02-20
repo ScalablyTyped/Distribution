@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EbsBlockDeviceConfig extends js.Object {
+trait EbsBlockDeviceConfig extends StObject {
   
   /**
     * EBS volume specifications such as volume type, IOPS, and size (GiB) that will be requested for the EBS volume attached to an EC2 instance in the cluster.
@@ -26,27 +27,15 @@ object EbsBlockDeviceConfig {
   }
   
   @scala.inline
-  implicit class EbsBlockDeviceConfigOps[Self <: EbsBlockDeviceConfig] (val x: Self) extends AnyVal {
+  implicit class EbsBlockDeviceConfigMutableBuilder[Self <: EbsBlockDeviceConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVolumeSpecification(value: VolumeSpecification): Self = StObject.set(x, "VolumeSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVolumesPerInstance(value: Integer): Self = StObject.set(x, "VolumesPerInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVolumeSpecification(value: VolumeSpecification): Self = this.set("VolumeSpecification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolumesPerInstance(value: Integer): Self = this.set("VolumesPerInstance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumesPerInstance: Self = this.set("VolumesPerInstance", js.undefined)
+    def setVolumesPerInstanceUndefined: Self = StObject.set(x, "VolumesPerInstance", js.undefined)
   }
 }

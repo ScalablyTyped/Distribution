@@ -3,6 +3,7 @@ package typings.angularForms.mod
 import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.OnDestroy
 import typings.angularCore.mod.Renderer2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

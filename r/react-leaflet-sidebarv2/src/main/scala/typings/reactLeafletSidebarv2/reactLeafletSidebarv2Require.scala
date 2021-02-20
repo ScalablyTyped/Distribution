@@ -1,5 +1,6 @@
 package typings.reactLeafletSidebarv2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("react-leaflet-sidebarv2", JSImport.Namespace)
 @js.native
-object reactLeafletSidebarv2Require extends js.Object
+object reactLeafletSidebarv2Require extends StObject

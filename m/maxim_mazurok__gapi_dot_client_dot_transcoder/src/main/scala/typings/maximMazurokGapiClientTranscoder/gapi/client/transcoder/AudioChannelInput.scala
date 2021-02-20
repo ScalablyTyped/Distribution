@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioChannelInput extends js.Object {
+trait AudioChannelInput extends StObject {
   
   /** Required. The zero-based index of the channel in the input file. */
   var channel: js.UndefOr[Double] = js.native
@@ -28,42 +29,30 @@ object AudioChannelInput {
   }
   
   @scala.inline
-  implicit class AudioChannelInputOps[Self <: AudioChannelInput] (val x: Self) extends AnyVal {
+  implicit class AudioChannelInputMutableBuilder[Self <: AudioChannelInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGainDb(value: Double): Self = StObject.set(x, "gainDb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannel(value: Double): Self = this.set("channel", value.asInstanceOf[js.Any])
+    def setGainDbUndefined: Self = StObject.set(x, "gainDb", js.undefined)
     
     @scala.inline
-    def deleteChannel: Self = this.set("channel", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGainDb(value: Double): Self = this.set("gainDb", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteGainDb: Self = this.set("gainDb", js.undefined)
+    def setTrack(value: Double): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
-    
-    @scala.inline
-    def setTrack(value: Double): Self = this.set("track", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrack: Self = this.set("track", js.undefined)
+    def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
   }
 }

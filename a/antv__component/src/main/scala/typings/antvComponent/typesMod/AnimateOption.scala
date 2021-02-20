@@ -2,12 +2,13 @@ package typings.antvComponent.typesMod
 
 import typings.antvComponent.antvComponentBooleans.`false`
 import typings.antvGBase.typesMod.AnimateCfg
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimateOption extends js.Object {
+trait AnimateOption extends StObject {
   
   /** 初始化渲染时的入场动画，false/null 表示关闭入场动画 */
   var appear: js.UndefOr[AnimateCfg | `false` | Null] = js.native
@@ -30,54 +31,42 @@ object AnimateOption {
   }
   
   @scala.inline
-  implicit class AnimateOptionOps[Self <: AnimateOption] (val x: Self) extends AnyVal {
+  implicit class AnimateOptionMutableBuilder[Self <: AnimateOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppear(value: AnimateCfg | `false`): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppearNull: Self = StObject.set(x, "appear", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
     
     @scala.inline
-    def setAppear(value: AnimateCfg | `false`): Self = this.set("appear", value.asInstanceOf[js.Any])
+    def setEnter(value: AnimateCfg | `false`): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppear: Self = this.set("appear", js.undefined)
+    def setEnterNull: Self = StObject.set(x, "enter", null)
     
     @scala.inline
-    def setAppearNull: Self = this.set("appear", null)
+    def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
     
     @scala.inline
-    def setEnter(value: AnimateCfg | `false`): Self = this.set("enter", value.asInstanceOf[js.Any])
+    def setLeave(value: AnimateCfg | `false`): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnter: Self = this.set("enter", js.undefined)
+    def setLeaveNull: Self = StObject.set(x, "leave", null)
     
     @scala.inline
-    def setEnterNull: Self = this.set("enter", null)
+    def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
     
     @scala.inline
-    def setLeave(value: AnimateCfg | `false`): Self = this.set("leave", value.asInstanceOf[js.Any])
+    def setUpdate(value: AnimateCfg | `false`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLeave: Self = this.set("leave", js.undefined)
+    def setUpdateNull: Self = StObject.set(x, "update", null)
     
     @scala.inline
-    def setLeaveNull: Self = this.set("leave", null)
-    
-    @scala.inline
-    def setUpdate(value: AnimateCfg | `false`): Self = this.set("update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
-    
-    @scala.inline
-    def setUpdateNull: Self = this.set("update", null)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

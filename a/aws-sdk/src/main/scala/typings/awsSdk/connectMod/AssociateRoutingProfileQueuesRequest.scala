@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociateRoutingProfileQueuesRequest extends js.Object {
+trait AssociateRoutingProfileQueuesRequest extends StObject {
   
   /**
     * The identifier of the Amazon Connect instance.
@@ -35,30 +36,18 @@ object AssociateRoutingProfileQueuesRequest {
   }
   
   @scala.inline
-  implicit class AssociateRoutingProfileQueuesRequestOps[Self <: AssociateRoutingProfileQueuesRequest] (val x: Self) extends AnyVal {
+  implicit class AssociateRoutingProfileQueuesRequestMutableBuilder[Self <: AssociateRoutingProfileQueuesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQueueConfigs(value: RoutingProfileQueueConfigList): Self = StObject.set(x, "QueueConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueueConfigsVarargs(value: RoutingProfileQueueConfig*): Self = StObject.set(x, "QueueConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueueConfigsVarargs(value: RoutingProfileQueueConfig*): Self = this.set("QueueConfigs", js.Array(value :_*))
-    
-    @scala.inline
-    def setQueueConfigs(value: RoutingProfileQueueConfigList): Self = this.set("QueueConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoutingProfileId(value: RoutingProfileId): Self = this.set("RoutingProfileId", value.asInstanceOf[js.Any])
+    def setRoutingProfileId(value: RoutingProfileId): Self = StObject.set(x, "RoutingProfileId", value.asInstanceOf[js.Any])
   }
 }

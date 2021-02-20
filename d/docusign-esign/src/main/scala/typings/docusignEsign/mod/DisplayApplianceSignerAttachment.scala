@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisplayApplianceSignerAttachment extends js.Object {
+trait DisplayApplianceSignerAttachment extends StObject {
   
   var attachmentDescription: js.UndefOr[String] = js.native
   
@@ -30,60 +31,48 @@ object DisplayApplianceSignerAttachment {
   }
   
   @scala.inline
-  implicit class DisplayApplianceSignerAttachmentOps[Self <: DisplayApplianceSignerAttachment] (val x: Self) extends AnyVal {
+  implicit class DisplayApplianceSignerAttachmentMutableBuilder[Self <: DisplayApplianceSignerAttachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachmentDescription(value: String): Self = StObject.set(x, "attachmentDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentDescriptionUndefined: Self = StObject.set(x, "attachmentDescription", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachmentTabId(value: String): Self = StObject.set(x, "attachmentTabId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentDescription(value: String): Self = this.set("attachmentDescription", value.asInstanceOf[js.Any])
+    def setAttachmentTabIdUndefined: Self = StObject.set(x, "attachmentTabId", js.undefined)
     
     @scala.inline
-    def deleteAttachmentDescription: Self = this.set("attachmentDescription", js.undefined)
+    def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentTabId(value: String): Self = this.set("attachmentTabId", value.asInstanceOf[js.Any])
+    def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
     
     @scala.inline
-    def deleteAttachmentTabId: Self = this.set("attachmentTabId", js.undefined)
+    def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentId(value: String): Self = this.set("documentId", value.asInstanceOf[js.Any])
+    def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
     
     @scala.inline
-    def deleteDocumentId: Self = this.set("documentId", js.undefined)
+    def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeId(value: String): Self = this.set("envelopeId", value.asInstanceOf[js.Any])
+    def setPageCountUndefined: Self = StObject.set(x, "pageCount", js.undefined)
     
     @scala.inline
-    def deleteEnvelopeId: Self = this.set("envelopeId", js.undefined)
+    def setPageId(value: String): Self = StObject.set(x, "pageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageCount(value: Double): Self = this.set("pageCount", value.asInstanceOf[js.Any])
+    def setPageIdUndefined: Self = StObject.set(x, "pageId", js.undefined)
     
     @scala.inline
-    def deletePageCount: Self = this.set("pageCount", js.undefined)
+    def setRecipientId(value: String): Self = StObject.set(x, "recipientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageId(value: String): Self = this.set("pageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageId: Self = this.set("pageId", js.undefined)
-    
-    @scala.inline
-    def setRecipientId(value: String): Self = this.set("recipientId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecipientId: Self = this.set("recipientId", js.undefined)
+    def setRecipientIdUndefined: Self = StObject.set(x, "recipientId", js.undefined)
   }
 }

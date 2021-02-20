@@ -3,6 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`vertex-remove`
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,33 +51,21 @@ object VertexRemoveEventInfo {
   }
   
   @scala.inline
-  implicit class VertexRemoveEventInfoOps[Self <: VertexRemoveEventInfo] (val x: Self) extends AnyVal {
+  implicit class VertexRemoveEventInfoMutableBuilder[Self <: VertexRemoveEventInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRemoved(value: js.Array[Graphic]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRemovedVarargs(value: Graphic*): Self = StObject.set(x, "removed", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: `vertex-remove`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemovedVarargs(value: Graphic*): Self = this.set("removed", js.Array(value :_*))
+    def setVertices(value: js.Array[VertexRemoveEventInfoVertices]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoved(value: js.Array[Graphic]): Self = this.set("removed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: `vertex-remove`): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticesVarargs(value: VertexRemoveEventInfoVertices*): Self = this.set("vertices", js.Array(value :_*))
-    
-    @scala.inline
-    def setVertices(value: js.Array[VertexRemoveEventInfoVertices]): Self = this.set("vertices", value.asInstanceOf[js.Any])
+    def setVerticesVarargs(value: VertexRemoveEventInfoVertices*): Self = StObject.set(x, "vertices", js.Array(value :_*))
   }
 }

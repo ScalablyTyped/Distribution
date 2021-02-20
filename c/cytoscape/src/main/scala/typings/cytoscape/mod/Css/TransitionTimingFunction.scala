@@ -1,5 +1,6 @@
 package typings.cytoscape.mod.Css
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +38,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.cytoscape.cytoscapeStrings.`ease-out-circ`
   - typings.cytoscape.cytoscapeStrings.`ease-in-out-circ`
 */
-trait TransitionTimingFunction extends js.Object
+trait TransitionTimingFunction extends StObject
 object TransitionTimingFunction {
   
   @scala.inline

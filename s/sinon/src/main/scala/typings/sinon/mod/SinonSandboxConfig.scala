@@ -1,12 +1,13 @@
 package typings.sinon.mod
 
 import typings.sinon.anon.PartialSinonFakeTimersCon
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SinonSandboxConfig extends js.Object {
+trait SinonSandboxConfig extends StObject {
   
   /**
     * The sandbox’s methods can be injected into another object for convenience.
@@ -47,36 +48,24 @@ object SinonSandboxConfig {
   }
   
   @scala.inline
-  implicit class SinonSandboxConfigOps[Self <: SinonSandboxConfig] (val x: Self) extends AnyVal {
+  implicit class SinonSandboxConfigMutableBuilder[Self <: SinonSandboxConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInjectInto(value: js.Object): Self = StObject.set(x, "injectInto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInjectIntoNull: Self = StObject.set(x, "injectInto", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertiesVarargs(value: String*): Self = this.set("properties", js.Array(value :_*))
+    def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
     @scala.inline
-    def setProperties(value: js.Array[String]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setUseFakeServer(value: Boolean | SinonFakeServer): Self = StObject.set(x, "useFakeServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseFakeServer(value: Boolean | SinonFakeServer): Self = this.set("useFakeServer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseFakeTimers(value: Boolean | PartialSinonFakeTimersCon): Self = this.set("useFakeTimers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInjectInto(value: js.Object): Self = this.set("injectInto", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInjectIntoNull: Self = this.set("injectInto", null)
+    def setUseFakeTimers(value: Boolean | PartialSinonFakeTimersCon): Self = StObject.set(x, "useFakeTimers", value.asInstanceOf[js.Any])
   }
 }

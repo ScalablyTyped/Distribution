@@ -1,6 +1,7 @@
 package typings.typescriptServices.mod.Services
 
 import typings.typescriptServices.TypeScript.SourceUnitSyntax
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +12,11 @@ class GetScriptLexicalStructureWalker protected ()
   extends typings.typescriptServices.TypeScript.Services.GetScriptLexicalStructureWalker {
   def this(fileName: String) = this()
 }
-/* static members */
-@JSImport("typescript-services", "Services.GetScriptLexicalStructureWalker")
-@js.native
-object GetScriptLexicalStructureWalker extends js.Object {
+object GetScriptLexicalStructureWalker {
   
+  /* static member */
+  @JSImport("typescript-services", "Services.GetScriptLexicalStructureWalker.getListsOfAllScriptLexicalStructure")
+  @js.native
   def getListsOfAllScriptLexicalStructure(
     items: js.Array[typings.typescriptServices.TypeScript.Services.NavigateToItem],
     fileName: String,

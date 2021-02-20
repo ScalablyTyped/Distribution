@@ -1,19 +1,17 @@
 package typings.gaeChannelApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object goog extends js.Object {
+  object goog {
     
-    @js.native
-    object appengine extends js.Object {
+    object appengine {
       
+      @JSGlobal("goog.appengine.Channel")
       @js.native
       class Channel protected ()
         extends typings.gaeChannelApi.goog.appengine.Channel {
@@ -24,6 +22,7 @@ object global extends js.Object {
         def this(token: String) = this()
       }
       
+      @JSGlobal("goog.appengine.Socket")
       @js.native
       class Socket ()
         extends typings.gaeChannelApi.goog.appengine.Socket

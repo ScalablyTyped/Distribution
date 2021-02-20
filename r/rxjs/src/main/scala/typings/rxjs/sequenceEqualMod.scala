@@ -5,17 +5,14 @@ import typings.rxjs.operatorMod.Operator
 import typings.rxjs.subscriberMod.Subscriber
 import typings.rxjs.typesMod.Observer
 import typings.rxjs.typesMod.OperatorFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/operators/sequenceEqual", JSImport.Namespace)
-@js.native
-object sequenceEqualMod extends js.Object {
+object sequenceEqualMod {
   
-  def sequenceEqual[T](compareTo: Observable[T]): OperatorFunction[T, Boolean] = js.native
-  def sequenceEqual[T](compareTo: Observable[T], comparator: js.Function2[/* a */ T, /* b */ T, Boolean]): OperatorFunction[T, Boolean] = js.native
-  
+  @JSImport("rxjs/internal/operators/sequenceEqual", "SequenceEqualOperator")
   @js.native
   class SequenceEqualOperator[T] protected () extends Operator[T, Boolean] {
     def this(compareTo: Observable[T], comparator: js.Function2[/* a */ T, /* b */ T, Boolean]) = this()
@@ -25,6 +22,7 @@ object sequenceEqualMod extends js.Object {
     var compareTo: js.Any = js.native
   }
   
+  @JSImport("rxjs/internal/operators/sequenceEqual", "SequenceEqualSubscriber")
   @js.native
   class SequenceEqualSubscriber[T, R] protected () extends Subscriber[T] {
     def this(
@@ -51,4 +49,11 @@ object sequenceEqualMod extends js.Object {
     
     def nextB(value: T): Unit = js.native
   }
+  
+  @JSImport("rxjs/internal/operators/sequenceEqual", "sequenceEqual")
+  @js.native
+  def sequenceEqual[T](compareTo: Observable[T]): OperatorFunction[T, Boolean] = js.native
+  @JSImport("rxjs/internal/operators/sequenceEqual", "sequenceEqual")
+  @js.native
+  def sequenceEqual[T](compareTo: Observable[T], comparator: js.Function2[/* a */ T, /* b */ T, Boolean]): OperatorFunction[T, Boolean] = js.native
 }

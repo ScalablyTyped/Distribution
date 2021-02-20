@@ -6,13 +6,19 @@ import typings.agentBase.mod.RequestOptions
 import typings.httpProxyAgent.anon.Data
 import typings.httpProxyAgent.mod.HttpProxyAgentOptions
 import typings.node.netMod.Socket
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("http-proxy-agent/dist/agent", JSImport.Namespace)
-@js.native
-object agentMod extends js.Object {
+object agentMod {
+  
+  @JSImport("http-proxy-agent/dist/agent", JSImport.Default)
+  @js.native
+  class default protected () extends HttpProxyAgent {
+    def this(_opts: String) = this()
+    def this(_opts: HttpProxyAgentOptions) = this()
+  }
   
   @js.native
   trait HttpProxyAgent extends Agent {
@@ -40,11 +46,5 @@ object agentMod extends js.Object {
     var output: js.UndefOr[js.Array[String]] = js.native
     
     var outputData: js.UndefOr[js.Array[Data]] = js.native
-  }
-  
-  @js.native
-  class default protected () extends HttpProxyAgent {
-    def this(_opts: String) = this()
-    def this(_opts: HttpProxyAgentOptions) = this()
   }
 }

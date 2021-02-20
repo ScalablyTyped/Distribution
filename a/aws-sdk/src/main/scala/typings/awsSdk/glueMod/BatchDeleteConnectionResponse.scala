@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDeleteConnectionResponse extends js.Object {
+trait BatchDeleteConnectionResponse extends StObject {
   
   /**
     * A map of the names of connections that were not successfully deleted to error details.
@@ -26,33 +27,21 @@ object BatchDeleteConnectionResponse {
   }
   
   @scala.inline
-  implicit class BatchDeleteConnectionResponseOps[Self <: BatchDeleteConnectionResponse] (val x: Self) extends AnyVal {
+  implicit class BatchDeleteConnectionResponseMutableBuilder[Self <: BatchDeleteConnectionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrors(value: ErrorByName): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSucceeded(value: NameStringList): Self = StObject.set(x, "Succeeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: ErrorByName): Self = this.set("Errors", value.asInstanceOf[js.Any])
+    def setSucceededUndefined: Self = StObject.set(x, "Succeeded", js.undefined)
     
     @scala.inline
-    def deleteErrors: Self = this.set("Errors", js.undefined)
-    
-    @scala.inline
-    def setSucceededVarargs(value: NameString*): Self = this.set("Succeeded", js.Array(value :_*))
-    
-    @scala.inline
-    def setSucceeded(value: NameStringList): Self = this.set("Succeeded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSucceeded: Self = this.set("Succeeded", js.undefined)
+    def setSucceededVarargs(value: NameString*): Self = StObject.set(x, "Succeeded", js.Array(value :_*))
   }
 }

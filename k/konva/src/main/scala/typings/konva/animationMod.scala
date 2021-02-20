@@ -3,16 +3,16 @@ package typings.konva
 import typings.konva.layerMod.Layer
 import typings.konva.typesMod.AnimationFn
 import typings.konva.typesMod.IFrame
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("konva/types/Animation", JSImport.Namespace)
-@js.native
-object animationMod extends js.Object {
+object animationMod {
   
+  @JSImport("konva/types/Animation", "Animation")
   @js.native
-  class Animation protected () extends js.Object {
+  class Animation protected () extends StObject {
     def this(func: AnimationFn) = this()
     def this(func: AnimationFn, layers: js.Any) = this()
     
@@ -42,23 +42,48 @@ object animationMod extends js.Object {
     def stop(): this.type = js.native
   }
   /* static members */
-  @js.native
-  object Animation extends js.Object {
+  object Animation {
     
+    @JSImport("konva/types/Animation", "Animation")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("konva/types/Animation", "Animation._addAnimation")
+    @js.native
     def _addAnimation(anim: js.Any): Unit = js.native
     
+    @JSImport("konva/types/Animation", "Animation._animationLoop")
+    @js.native
     def _animationLoop(): Unit = js.native
     
+    @JSImport("konva/types/Animation", "Animation._handleAnimation")
+    @js.native
     def _handleAnimation(): Unit = js.native
     
+    @JSImport("konva/types/Animation", "Animation._removeAnimation")
+    @js.native
     def _removeAnimation(anim: js.Any): Unit = js.native
     
+    @JSImport("konva/types/Animation", "Animation._runFrames")
+    @js.native
     def _runFrames(): Unit = js.native
     
-    var animIdCounter: Double = js.native
+    @JSImport("konva/types/Animation", "Animation.animIdCounter")
+    @js.native
+    def animIdCounter: Double = js.native
+    @scala.inline
+    def animIdCounter_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("animIdCounter")(x.asInstanceOf[js.Any])
     
-    var animRunning: Boolean = js.native
+    @JSImport("konva/types/Animation", "Animation.animRunning")
+    @js.native
+    def animRunning: Boolean = js.native
+    @scala.inline
+    def animRunning_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("animRunning")(x.asInstanceOf[js.Any])
     
-    var animations: js.Array[_] = js.native
+    @JSImport("konva/types/Animation", "Animation.animations")
+    @js.native
+    def animations: js.Array[js.Any] = js.native
+    @scala.inline
+    def animations_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("animations")(x.asInstanceOf[js.Any])
   }
 }

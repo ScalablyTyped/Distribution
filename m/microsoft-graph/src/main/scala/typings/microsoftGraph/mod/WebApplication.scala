@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebApplication extends js.Object {
+trait WebApplication extends StObject {
   
   // Home page or landing page of the application.
   var homePageUrl: js.UndefOr[NullableOption[String]] = js.native
@@ -34,54 +35,42 @@ object WebApplication {
   }
   
   @scala.inline
-  implicit class WebApplicationOps[Self <: WebApplication] (val x: Self) extends AnyVal {
+  implicit class WebApplicationMutableBuilder[Self <: WebApplication] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHomePageUrl(value: NullableOption[String]): Self = StObject.set(x, "homePageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHomePageUrlNull: Self = StObject.set(x, "homePageUrl", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHomePageUrlUndefined: Self = StObject.set(x, "homePageUrl", js.undefined)
     
     @scala.inline
-    def setHomePageUrl(value: NullableOption[String]): Self = this.set("homePageUrl", value.asInstanceOf[js.Any])
+    def setImplicitGrantSettings(value: NullableOption[ImplicitGrantSettings]): Self = StObject.set(x, "implicitGrantSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHomePageUrl: Self = this.set("homePageUrl", js.undefined)
+    def setImplicitGrantSettingsNull: Self = StObject.set(x, "implicitGrantSettings", null)
     
     @scala.inline
-    def setHomePageUrlNull: Self = this.set("homePageUrl", null)
+    def setImplicitGrantSettingsUndefined: Self = StObject.set(x, "implicitGrantSettings", js.undefined)
     
     @scala.inline
-    def setImplicitGrantSettings(value: NullableOption[ImplicitGrantSettings]): Self = this.set("implicitGrantSettings", value.asInstanceOf[js.Any])
+    def setLogoutUrl(value: NullableOption[String]): Self = StObject.set(x, "logoutUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImplicitGrantSettings: Self = this.set("implicitGrantSettings", js.undefined)
+    def setLogoutUrlNull: Self = StObject.set(x, "logoutUrl", null)
     
     @scala.inline
-    def setImplicitGrantSettingsNull: Self = this.set("implicitGrantSettings", null)
+    def setLogoutUrlUndefined: Self = StObject.set(x, "logoutUrl", js.undefined)
     
     @scala.inline
-    def setLogoutUrl(value: NullableOption[String]): Self = this.set("logoutUrl", value.asInstanceOf[js.Any])
+    def setRedirectUris(value: js.Array[String]): Self = StObject.set(x, "redirectUris", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogoutUrl: Self = this.set("logoutUrl", js.undefined)
+    def setRedirectUrisUndefined: Self = StObject.set(x, "redirectUris", js.undefined)
     
     @scala.inline
-    def setLogoutUrlNull: Self = this.set("logoutUrl", null)
-    
-    @scala.inline
-    def setRedirectUrisVarargs(value: String*): Self = this.set("redirectUris", js.Array(value :_*))
-    
-    @scala.inline
-    def setRedirectUris(value: js.Array[String]): Self = this.set("redirectUris", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedirectUris: Self = this.set("redirectUris", js.undefined)
+    def setRedirectUrisVarargs(value: String*): Self = StObject.set(x, "redirectUris", js.Array(value :_*))
   }
 }

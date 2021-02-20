@@ -2,6 +2,7 @@ package typings.smartFoxServer.global.SFS2X.Requests
 
 import typings.smartFoxServer.SFS2X.Entities.Data.Vec3D
 import typings.smartFoxServer.SFS2X.Entities.MMORoom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#endregion
 //#region MMO
 // http://docs2x.smartfoxserver.com/api-docs/jsdoc/symbols/SFS2X.Requests.MMO.html
-@JSGlobal("SFS2X.Requests.MMO")
-@js.native
-object MMO extends js.Object {
+object MMO {
   
+  @JSGlobal("SFS2X.Requests.MMO.MMORoomSettings")
   @js.native
   class MMORoomSettings protected ()
     extends typings.smartFoxServer.SFS2X.Requests.MMO.MMORoomSettings {
@@ -23,6 +23,7 @@ object MMO extends js.Object {
     def this(name: String) = this()
   }
   
+  @JSGlobal("SFS2X.Requests.MMO.MapLimits")
   @js.native
   class MapLimits protected ()
     extends typings.smartFoxServer.SFS2X.Requests.MMO.MapLimits {
@@ -34,6 +35,7 @@ object MMO extends js.Object {
     def this(lowerLimit: Vec3D, higherLimit: Vec3D) = this()
   }
   
+  @JSGlobal("SFS2X.Requests.MMO.SetUserPositionRequest")
   @js.native
   class SetUserPositionRequest protected ()
     extends typings.smartFoxServer.SFS2X.Requests.MMO.SetUserPositionRequest {

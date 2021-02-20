@@ -2,13 +2,14 @@ package typings.tuyaPanelKit
 
 import typings.react.mod.RefObject
 import typings.tuyaPanelKit.typesMod.NavigationContainerRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tuya-panel-kit/@react-navigation/native/useBackButton", JSImport.Namespace)
-@js.native
-object useBackButtonMod extends js.Object {
+object useBackButtonMod {
   
+  @JSImport("tuya-panel-kit/@react-navigation/native/useBackButton", JSImport.Default)
+  @js.native
   def default(ref: RefObject[NavigationContainerRef]): Unit = js.native
 }

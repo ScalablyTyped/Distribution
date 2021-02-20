@@ -2,6 +2,7 @@ package typings.scrivito.mod
 
 import typings.react.mod.HTMLAttributes
 import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,30 +25,18 @@ object ImageTagProps {
   }
   
   @scala.inline
-  implicit class ImageTagPropsOps[Self <: ImageTagProps] (val x: Self) extends AnyVal {
+  implicit class ImageTagPropsMutableBuilder[Self <: ImageTagProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttribute(value: String): Self = this.set("attribute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContent(value: Binary | Obj | Widget): Self = this.set("content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlt: Self = this.set("alt", js.undefined)
+    def setContent(value: Binary | Obj | Widget): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

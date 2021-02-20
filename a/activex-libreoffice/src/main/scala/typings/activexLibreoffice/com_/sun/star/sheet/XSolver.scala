@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,45 +54,33 @@ object XSolver {
   }
   
   @scala.inline
-  implicit class XSolverOps[Self <: XSolver] (val x: Self) extends AnyVal {
+  implicit class XSolverMutableBuilder[Self <: XSolver] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstraints(value: SafeArray[SolverConstraint]): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocument(value: XSpreadsheetDocument): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaximize(value: Boolean): Self = StObject.set(x, "Maximize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstraints(value: SafeArray[SolverConstraint]): Self = this.set("Constraints", value.asInstanceOf[js.Any])
+    def setObjective(value: CellAddress): Self = StObject.set(x, "Objective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument(value: XSpreadsheetDocument): Self = this.set("Document", value.asInstanceOf[js.Any])
+    def setResultValue(value: Double): Self = StObject.set(x, "ResultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximize(value: Boolean): Self = this.set("Maximize", value.asInstanceOf[js.Any])
+    def setSolution(value: SafeArray[Double]): Self = StObject.set(x, "Solution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjective(value: CellAddress): Self = this.set("Objective", value.asInstanceOf[js.Any])
+    def setSolve(value: () => Unit): Self = StObject.set(x, "solve", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setResultValue(value: Double): Self = this.set("ResultValue", value.asInstanceOf[js.Any])
+    def setSuccess(value: Boolean): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSolution(value: SafeArray[Double]): Self = this.set("Solution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccess(value: Boolean): Self = this.set("Success", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariables(value: SafeArray[CellAddress]): Self = this.set("Variables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSolve(value: () => Unit): Self = this.set("solve", js.Any.fromFunction0(value))
+    def setVariables(value: SafeArray[CellAddress]): Self = StObject.set(x, "Variables", value.asInstanceOf[js.Any])
   }
 }

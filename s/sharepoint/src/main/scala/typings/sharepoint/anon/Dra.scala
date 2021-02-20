@@ -2,12 +2,13 @@ package typings.sharepoint.anon
 
 import typings.sharepoint.SP.JsGrid.IStyleType.Splitter
 import typings.sharepoint.SP.JsGrid.IStyleType.SplitterHandle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dra extends js.Object {
+trait Dra extends StObject {
   
   var dra: Splitter = js.native
   
@@ -37,36 +38,24 @@ object Dra {
   }
   
   @scala.inline
-  implicit class DraOps[Self <: Dra] (val x: Self) extends AnyVal {
+  implicit class DraMutableBuilder[Self <: Dra] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDra(value: Splitter): Self = StObject.set(x, "dra", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDragHandle(value: SplitterHandle): Self = StObject.set(x, "dragHandle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHover(value: Splitter): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDra(value: Splitter): Self = this.set("dra", value.asInstanceOf[js.Any])
+    def setHoverHandle(value: SplitterHandle): Self = StObject.set(x, "hoverHandle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragHandle(value: SplitterHandle): Self = this.set("dragHandle", value.asInstanceOf[js.Any])
+    def setNormal(value: Splitter): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHover(value: Splitter): Self = this.set("hover", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHoverHandle(value: SplitterHandle): Self = this.set("hoverHandle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNormal(value: Splitter): Self = this.set("normal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNormalHandle(value: SplitterHandle): Self = this.set("normalHandle", value.asInstanceOf[js.Any])
+    def setNormalHandle(value: SplitterHandle): Self = StObject.set(x, "normalHandle", value.asInstanceOf[js.Any])
   }
 }

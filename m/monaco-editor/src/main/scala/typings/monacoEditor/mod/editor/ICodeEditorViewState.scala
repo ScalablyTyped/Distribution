@@ -1,6 +1,7 @@
 package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,30 +28,18 @@ object ICodeEditorViewState {
   }
   
   @scala.inline
-  implicit class ICodeEditorViewStateOps[Self <: ICodeEditorViewState] (val x: Self) extends AnyVal {
+  implicit class ICodeEditorViewStateMutableBuilder[Self <: ICodeEditorViewState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContributionsState(value: StringDictionary[js.Any]): Self = StObject.set(x, "contributionsState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCursorState(value: js.Array[ICursorState]): Self = StObject.set(x, "cursorState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCursorStateVarargs(value: ICursorState*): Self = StObject.set(x, "cursorState", js.Array(value :_*))
     
     @scala.inline
-    def setContributionsState(value: StringDictionary[js.Any]): Self = this.set("contributionsState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCursorStateVarargs(value: ICursorState*): Self = this.set("cursorState", js.Array(value :_*))
-    
-    @scala.inline
-    def setCursorState(value: js.Array[ICursorState]): Self = this.set("cursorState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewState(value: IViewState): Self = this.set("viewState", value.asInstanceOf[js.Any])
+    def setViewState(value: IViewState): Self = StObject.set(x, "viewState", value.asInstanceOf[js.Any])
   }
 }

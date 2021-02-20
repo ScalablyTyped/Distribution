@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkInfo extends js.Object {
+trait NetworkInfo extends StObject {
   
   var Aliases: js.UndefOr[js.Any] = js.native
   
@@ -50,63 +51,51 @@ object NetworkInfo {
   }
   
   @scala.inline
-  implicit class NetworkInfoOps[Self <: NetworkInfo] (val x: Self) extends AnyVal {
+  implicit class NetworkInfoMutableBuilder[Self <: NetworkInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAliases(value: js.Any): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndpointID(value: String): Self = StObject.set(x, "EndpointID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointID(value: String): Self = this.set("EndpointID", value.asInstanceOf[js.Any])
+    def setGateway(value: String): Self = StObject.set(x, "Gateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGateway(value: String): Self = this.set("Gateway", value.asInstanceOf[js.Any])
+    def setGlobalIPv6Address(value: String): Self = StObject.set(x, "GlobalIPv6Address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalIPv6Address(value: String): Self = this.set("GlobalIPv6Address", value.asInstanceOf[js.Any])
+    def setGlobalIPv6PrefixLen(value: Double): Self = StObject.set(x, "GlobalIPv6PrefixLen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalIPv6PrefixLen(value: Double): Self = this.set("GlobalIPv6PrefixLen", value.asInstanceOf[js.Any])
+    def setIPAMConfig(value: js.Any): Self = StObject.set(x, "IPAMConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIPAddress(value: String): Self = this.set("IPAddress", value.asInstanceOf[js.Any])
+    def setIPAMConfigUndefined: Self = StObject.set(x, "IPAMConfig", js.undefined)
     
     @scala.inline
-    def setIPPrefixLen(value: Double): Self = this.set("IPPrefixLen", value.asInstanceOf[js.Any])
+    def setIPAddress(value: String): Self = StObject.set(x, "IPAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIPv6Gateway(value: String): Self = this.set("IPv6Gateway", value.asInstanceOf[js.Any])
+    def setIPPrefixLen(value: Double): Self = StObject.set(x, "IPPrefixLen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMacAddress(value: String): Self = this.set("MacAddress", value.asInstanceOf[js.Any])
+    def setIPv6Gateway(value: String): Self = StObject.set(x, "IPv6Gateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkID(value: String): Self = this.set("NetworkID", value.asInstanceOf[js.Any])
+    def setLinks(value: js.Any): Self = StObject.set(x, "Links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliases(value: js.Any): Self = this.set("Aliases", value.asInstanceOf[js.Any])
+    def setLinksUndefined: Self = StObject.set(x, "Links", js.undefined)
     
     @scala.inline
-    def deleteAliases: Self = this.set("Aliases", js.undefined)
+    def setMacAddress(value: String): Self = StObject.set(x, "MacAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIPAMConfig(value: js.Any): Self = this.set("IPAMConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIPAMConfig: Self = this.set("IPAMConfig", js.undefined)
-    
-    @scala.inline
-    def setLinks(value: js.Any): Self = this.set("Links", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinks: Self = this.set("Links", js.undefined)
+    def setNetworkID(value: String): Self = StObject.set(x, "NetworkID", value.asInstanceOf[js.Any])
   }
 }

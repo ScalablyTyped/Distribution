@@ -1,11 +1,12 @@
 package typings.activexMsforms.MSForms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReturnEffect extends js.Object {
+trait ReturnEffect extends StObject {
   
   @JSName("MSForms.ReturnEffect_typekey")
   var MSFormsDotReturnEffect_typekey: ReturnEffect = js.native
@@ -22,24 +23,12 @@ object ReturnEffect {
   }
   
   @scala.inline
-  implicit class ReturnEffectOps[Self <: ReturnEffect] (val x: Self) extends AnyVal {
+  implicit class ReturnEffectMutableBuilder[Self <: ReturnEffect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMSFormsDotReturnEffect_typekey(value: ReturnEffect): Self = StObject.set(x, "MSForms.ReturnEffect_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMSFormsDotReturnEffect_typekey(value: ReturnEffect): Self = this.set("MSForms.ReturnEffect_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: fmDropEffect): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: fmDropEffect): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

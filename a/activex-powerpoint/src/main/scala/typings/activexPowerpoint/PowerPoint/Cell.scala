@@ -1,11 +1,12 @@
 package typings.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cell extends js.Object {
+trait Cell extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
@@ -46,45 +47,33 @@ object Cell {
   }
   
   @scala.inline
-  implicit class CellOps[Self <: Cell] (val x: Self) extends AnyVal {
+  implicit class CellMutableBuilder[Self <: Cell] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMerge(value: Cell => Unit): Self = StObject.set(x, "Merge", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorders(value: Borders): Self = this.set("Borders", value.asInstanceOf[js.Any])
+    def setPowerPointDotCell_typekey(value: Cell): Self = StObject.set(x, "PowerPoint.Cell_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerge(value: Cell => Unit): Self = this.set("Merge", js.Any.fromFunction1(value))
+    def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setSelected(value: Boolean): Self = StObject.set(x, "Selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPowerPointDotCell_typekey(value: Cell): Self = this.set("PowerPoint.Cell_typekey", value.asInstanceOf[js.Any])
+    def setShape(value: Shape): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: () => Unit): Self = this.set("Select", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSelected(value: Boolean): Self = this.set("Selected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShape(value: Shape): Self = this.set("Shape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSplit(value: (Double, Double) => Unit): Self = this.set("Split", js.Any.fromFunction2(value))
+    def setSplit(value: (Double, Double) => Unit): Self = StObject.set(x, "Split", js.Any.fromFunction2(value))
   }
 }

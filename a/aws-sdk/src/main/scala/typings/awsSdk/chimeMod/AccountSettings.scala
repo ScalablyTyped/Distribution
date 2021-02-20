@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountSettings extends js.Object {
+trait AccountSettings extends StObject {
   
   /**
     * Setting that stops or starts remote control of shared screens during meetings.
@@ -26,30 +27,18 @@ object AccountSettings {
   }
   
   @scala.inline
-  implicit class AccountSettingsOps[Self <: AccountSettings] (val x: Self) extends AnyVal {
+  implicit class AccountSettingsMutableBuilder[Self <: AccountSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableRemoteControl(value: Boolean): Self = StObject.set(x, "DisableRemoteControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableRemoteControlUndefined: Self = StObject.set(x, "DisableRemoteControl", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableDialOut(value: Boolean): Self = StObject.set(x, "EnableDialOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableRemoteControl(value: Boolean): Self = this.set("DisableRemoteControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisableRemoteControl: Self = this.set("DisableRemoteControl", js.undefined)
-    
-    @scala.inline
-    def setEnableDialOut(value: Boolean): Self = this.set("EnableDialOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableDialOut: Self = this.set("EnableDialOut", js.undefined)
+    def setEnableDialOutUndefined: Self = StObject.set(x, "EnableDialOut", js.undefined)
   }
 }

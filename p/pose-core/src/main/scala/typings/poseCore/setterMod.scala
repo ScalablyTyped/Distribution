@@ -13,14 +13,15 @@ import typings.poseCore.typesMod.SetValueNative
 import typings.poseCore.typesMod.StartAction
 import typings.poseCore.typesMod.StopAction
 import typings.poseCore.typesMod.TransformPose
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pose-core/lib/factories/setter", JSImport.Namespace)
-@js.native
-object setterMod extends js.Object {
+object setterMod {
   
+  @JSImport("pose-core/lib/factories/setter", JSImport.Default)
+  @js.native
   def default[V, A, C, P, TD](setterProps: SetterFactoryProps[V, A, C, P, TD]): js.Function3[
     /* next */ String, 
     /* nextProps */ js.UndefOr[Props], 
@@ -28,10 +29,12 @@ object setterMod extends js.Object {
     js.Promise[js.Array[_]]
   ] = js.native
   
+  @JSImport("pose-core/lib/factories/setter", "resolveProp")
+  @js.native
   def resolveProp(target: js.Any, props: Props): js.Any = js.native
   
   @js.native
-  trait SetterFactoryProps[V, A, C, P, TD] extends js.Object {
+  trait SetterFactoryProps[V, A, C, P, TD] extends StObject {
     
     def addActionDelay(delay: Double, transition: A): A = js.native
     @JSName("addActionDelay")

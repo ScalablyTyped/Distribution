@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridTemplateAreasProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
+trait GridTemplateAreasProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
     * The grid-template-areas CSS property specifies named grid areas.
@@ -28,22 +29,7 @@ object GridTemplateAreasProps {
   }
   
   @scala.inline
-  implicit class GridTemplateAreasPropsOps[Self <: GridTemplateAreasProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with GridTemplateAreasProps[ThemeType]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGridTemplateAreasVarargs(value: (js.Any | Null)*): Self = this.set("gridTemplateAreas", js.Array(value :_*))
+  implicit class GridTemplateAreasPropsMutableBuilder[Self <: GridTemplateAreasProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with GridTemplateAreasProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setGridTemplateAreas(
@@ -51,12 +37,15 @@ object GridTemplateAreasProps {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ _, 
           ThemeType
         ]
-    ): Self = this.set("gridTemplateAreas", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridTemplateAreas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridTemplateAreas: Self = this.set("gridTemplateAreas", js.undefined)
+    def setGridTemplateAreasNull: Self = StObject.set(x, "gridTemplateAreas", null)
     
     @scala.inline
-    def setGridTemplateAreasNull: Self = this.set("gridTemplateAreas", null)
+    def setGridTemplateAreasUndefined: Self = StObject.set(x, "gridTemplateAreas", js.undefined)
+    
+    @scala.inline
+    def setGridTemplateAreasVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "gridTemplateAreas", js.Array(value :_*))
   }
 }

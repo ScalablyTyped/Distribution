@@ -1,21 +1,24 @@
 package typings.favicoJs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.favicoJs.favicojs.FavicoJsOptions
 import typings.favicoJs.favicojs.FavicoJsStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("Favico")
   @js.native
   class Favico ()
     extends typings.favicoJs.favicojs.Favico {
     def this(opt: FavicoJsOptions) = this()
   }
+  @JSGlobal("Favico")
   @js.native
-  object Favico extends TopLevel[FavicoJsStatic]
+  def Favico: FavicoJsStatic = js.native
+  @scala.inline
+  def Favico_=(x: FavicoJsStatic): Unit = js.Dynamic.global.updateDynamic("Favico")(x.asInstanceOf[js.Any])
 }

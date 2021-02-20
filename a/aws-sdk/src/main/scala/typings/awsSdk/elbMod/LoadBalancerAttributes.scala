@@ -1,11 +1,12 @@
 package typings.awsSdk.elbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadBalancerAttributes extends js.Object {
+trait LoadBalancerAttributes extends StObject {
   
   /**
     * If enabled, the load balancer captures detailed information of all requests and delivers the information to the Amazon S3 bucket that you specify. For more information, see Enable Access Logs in the Classic Load Balancers Guide.
@@ -41,51 +42,39 @@ object LoadBalancerAttributes {
   }
   
   @scala.inline
-  implicit class LoadBalancerAttributesOps[Self <: LoadBalancerAttributes] (val x: Self) extends AnyVal {
+  implicit class LoadBalancerAttributesMutableBuilder[Self <: LoadBalancerAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessLog(value: AccessLog): Self = StObject.set(x, "AccessLog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessLogUndefined: Self = StObject.set(x, "AccessLog", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalAttributes(value: AdditionalAttributes): Self = StObject.set(x, "AdditionalAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessLog(value: AccessLog): Self = this.set("AccessLog", value.asInstanceOf[js.Any])
+    def setAdditionalAttributesUndefined: Self = StObject.set(x, "AdditionalAttributes", js.undefined)
     
     @scala.inline
-    def deleteAccessLog: Self = this.set("AccessLog", js.undefined)
+    def setAdditionalAttributesVarargs(value: AdditionalAttribute*): Self = StObject.set(x, "AdditionalAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalAttributesVarargs(value: AdditionalAttribute*): Self = this.set("AdditionalAttributes", js.Array(value :_*))
+    def setConnectionDraining(value: ConnectionDraining): Self = StObject.set(x, "ConnectionDraining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalAttributes(value: AdditionalAttributes): Self = this.set("AdditionalAttributes", value.asInstanceOf[js.Any])
+    def setConnectionDrainingUndefined: Self = StObject.set(x, "ConnectionDraining", js.undefined)
     
     @scala.inline
-    def deleteAdditionalAttributes: Self = this.set("AdditionalAttributes", js.undefined)
+    def setConnectionSettings(value: ConnectionSettings): Self = StObject.set(x, "ConnectionSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionDraining(value: ConnectionDraining): Self = this.set("ConnectionDraining", value.asInstanceOf[js.Any])
+    def setConnectionSettingsUndefined: Self = StObject.set(x, "ConnectionSettings", js.undefined)
     
     @scala.inline
-    def deleteConnectionDraining: Self = this.set("ConnectionDraining", js.undefined)
+    def setCrossZoneLoadBalancing(value: CrossZoneLoadBalancing): Self = StObject.set(x, "CrossZoneLoadBalancing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionSettings(value: ConnectionSettings): Self = this.set("ConnectionSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnectionSettings: Self = this.set("ConnectionSettings", js.undefined)
-    
-    @scala.inline
-    def setCrossZoneLoadBalancing(value: CrossZoneLoadBalancing): Self = this.set("CrossZoneLoadBalancing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCrossZoneLoadBalancing: Self = this.set("CrossZoneLoadBalancing", js.undefined)
+    def setCrossZoneLoadBalancingUndefined: Self = StObject.set(x, "CrossZoneLoadBalancing", js.undefined)
   }
 }

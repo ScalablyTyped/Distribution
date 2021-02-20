@@ -2,6 +2,7 @@ package typings.microsoftAjax.Sys.UI
 
 import typings.microsoftAjax.Sys.Component
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -108,36 +109,24 @@ object Control {
   }
   
   @scala.inline
-  implicit class ControlOps[Self <: Control] (val x: Self) extends AnyVal {
+  implicit class ControlMutableBuilder[Self <: Control] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddCssClass(value: String => Unit): Self = StObject.set(x, "addCssClass", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_element(value: () => HTMLElement): Self = StObject.set(x, "get_element", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnBubbleEvent(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "onBubbleEvent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddCssClass(value: String => Unit): Self = this.set("addCssClass", js.Any.fromFunction1(value))
+    def setRaiseBubbleEvent(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "raiseBubbleEvent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGet_element(value: () => HTMLElement): Self = this.set("get_element", js.Any.fromFunction0(value))
+    def setRemoveCssClass(value: String => Unit): Self = StObject.set(x, "removeCssClass", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnBubbleEvent(value: (js.Any, js.Any) => Boolean): Self = this.set("onBubbleEvent", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRaiseBubbleEvent(value: (js.Any, js.Any) => Unit): Self = this.set("raiseBubbleEvent", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemoveCssClass(value: String => Unit): Self = this.set("removeCssClass", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToggleCssClass(value: String => Unit): Self = this.set("toggleCssClass", js.Any.fromFunction1(value))
+    def setToggleCssClass(value: String => Unit): Self = StObject.set(x, "toggleCssClass", js.Any.fromFunction1(value))
   }
 }

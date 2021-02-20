@@ -8,16 +8,16 @@ import typings.expressServeStaticCore.mod.Query
 import typings.inversify.interfacesMod.interfaces.BindingToSyntax
 import typings.inversify.interfacesMod.interfaces.ServiceIdentifier
 import typings.inversifyExpressUtils.interfacesMod.interfaces.HttpContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("inversify-express-utils/dts/base_middleware", JSImport.Namespace)
-@js.native
-object baseMiddlewareMod extends js.Object {
+object baseMiddlewareMod {
   
+  @JSImport("inversify-express-utils/dts/base_middleware", "BaseMiddleware")
   @js.native
-  abstract class BaseMiddleware () extends js.Object {
+  abstract class BaseMiddleware () extends StObject {
     
     /* protected */ def bind[T](serviceIdentifier: ServiceIdentifier[T]): BindingToSyntax[T] = js.native
     

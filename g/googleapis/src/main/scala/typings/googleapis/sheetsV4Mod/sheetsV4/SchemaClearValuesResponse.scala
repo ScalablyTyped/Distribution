@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The response when clearing a range of values in a spreadsheet.
   */
 @js.native
-trait SchemaClearValuesResponse extends js.Object {
+trait SchemaClearValuesResponse extends StObject {
   
   /**
     * The range (in A1 notation) that was cleared. (If the request was for an
@@ -32,30 +33,18 @@ object SchemaClearValuesResponse {
   }
   
   @scala.inline
-  implicit class SchemaClearValuesResponseOps[Self <: SchemaClearValuesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaClearValuesResponseMutableBuilder[Self <: SchemaClearValuesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearedRange(value: String): Self = StObject.set(x, "clearedRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearedRangeUndefined: Self = StObject.set(x, "clearedRange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearedRange(value: String): Self = this.set("clearedRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClearedRange: Self = this.set("clearedRange", js.undefined)
-    
-    @scala.inline
-    def setSpreadsheetId(value: String): Self = this.set("spreadsheetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpreadsheetId: Self = this.set("spreadsheetId", js.undefined)
+    def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
   }
 }

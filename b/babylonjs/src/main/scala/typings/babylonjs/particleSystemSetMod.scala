@@ -7,14 +7,14 @@ import typings.babylonjs.sceneMod.IDisposable
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.transformNodeMod.TransformNode
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Particles/particleSystemSet", JSImport.Namespace)
-@js.native
-object particleSystemSetMod extends js.Object {
+object particleSystemSetMod {
   
+  @JSImport("babylonjs/Particles/particleSystemSet", "ParticleSystemSet")
   @js.native
   class ParticleSystemSet () extends IDisposable {
     
@@ -56,13 +56,20 @@ object particleSystemSetMod extends js.Object {
     var systems: js.Array[IParticleSystem] = js.native
   }
   /* static members */
-  @js.native
-  object ParticleSystemSet extends js.Object {
+  object ParticleSystemSet {
+    
+    @JSImport("babylonjs/Particles/particleSystemSet", "ParticleSystemSet")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Gets or sets base Assets URL
       */
-    var BaseAssetsUrl: String = js.native
+    @JSImport("babylonjs/Particles/particleSystemSet", "ParticleSystemSet.BaseAssetsUrl")
+    @js.native
+    def BaseAssetsUrl: String = js.native
+    @scala.inline
+    def BaseAssetsUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BaseAssetsUrl")(x.asInstanceOf[js.Any])
     
     /**
       * Parse a new ParticleSystemSet from a serialized source
@@ -71,7 +78,11 @@ object particleSystemSetMod extends js.Object {
       * @param gpu defines if we want GPU particles or CPU particles
       * @returns a new ParticleSystemSet
       */
+    @JSImport("babylonjs/Particles/particleSystemSet", "ParticleSystemSet.Parse")
+    @js.native
     def Parse(data: js.Any, scene: Scene): ParticleSystemSet = js.native
+    @JSImport("babylonjs/Particles/particleSystemSet", "ParticleSystemSet.Parse")
+    @js.native
     def Parse(data: js.Any, scene: Scene, gpu: Boolean): ParticleSystemSet = js.native
   }
 }

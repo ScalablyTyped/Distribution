@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Services extends js.Object {
+trait Services extends StObject {
   
   /**
     * Reserved: TBD
@@ -40,60 +41,48 @@ object Services {
   }
   
   @scala.inline
-  implicit class ServicesOps[Self <: Services] (val x: Self) extends AnyVal {
+  implicit class ServicesMutableBuilder[Self <: Services] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuildBranch(value: String): Self = StObject.set(x, "buildBranch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuildBranchDeployedDateTime(value: String): Self = StObject.set(x, "buildBranchDeployedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuildBranchDeployedDateTimeUndefined: Self = StObject.set(x, "buildBranchDeployedDateTime", js.undefined)
     
     @scala.inline
-    def setBuildBranch(value: String): Self = this.set("buildBranch", value.asInstanceOf[js.Any])
+    def setBuildBranchUndefined: Self = StObject.set(x, "buildBranch", js.undefined)
     
     @scala.inline
-    def deleteBuildBranch: Self = this.set("buildBranch", js.undefined)
+    def setBuildSHA(value: String): Self = StObject.set(x, "buildSHA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildBranchDeployedDateTime(value: String): Self = this.set("buildBranchDeployedDateTime", value.asInstanceOf[js.Any])
+    def setBuildSHAUndefined: Self = StObject.set(x, "buildSHA", js.undefined)
     
     @scala.inline
-    def deleteBuildBranchDeployedDateTime: Self = this.set("buildBranchDeployedDateTime", js.undefined)
+    def setBuildVersion(value: String): Self = StObject.set(x, "buildVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildSHA(value: String): Self = this.set("buildSHA", value.asInstanceOf[js.Any])
+    def setBuildVersionUndefined: Self = StObject.set(x, "buildVersion", js.undefined)
     
     @scala.inline
-    def deleteBuildSHA: Self = this.set("buildSHA", js.undefined)
+    def setLinkedSites(value: js.Array[String]): Self = StObject.set(x, "linkedSites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildVersion(value: String): Self = this.set("buildVersion", value.asInstanceOf[js.Any])
+    def setLinkedSitesUndefined: Self = StObject.set(x, "linkedSites", js.undefined)
     
     @scala.inline
-    def deleteBuildVersion: Self = this.set("buildVersion", js.undefined)
+    def setLinkedSitesVarargs(value: String*): Self = StObject.set(x, "linkedSites", js.Array(value :_*))
     
     @scala.inline
-    def setLinkedSitesVarargs(value: String*): Self = this.set("linkedSites", js.Array(value :_*))
+    def setServiceVersions(value: js.Array[ServiceVersion]): Self = StObject.set(x, "serviceVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedSites(value: js.Array[String]): Self = this.set("linkedSites", value.asInstanceOf[js.Any])
+    def setServiceVersionsUndefined: Self = StObject.set(x, "serviceVersions", js.undefined)
     
     @scala.inline
-    def deleteLinkedSites: Self = this.set("linkedSites", js.undefined)
-    
-    @scala.inline
-    def setServiceVersionsVarargs(value: ServiceVersion*): Self = this.set("serviceVersions", js.Array(value :_*))
-    
-    @scala.inline
-    def setServiceVersions(value: js.Array[ServiceVersion]): Self = this.set("serviceVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceVersions: Self = this.set("serviceVersions", js.undefined)
+    def setServiceVersionsVarargs(value: ServiceVersion*): Self = StObject.set(x, "serviceVersions", js.Array(value :_*))
   }
 }

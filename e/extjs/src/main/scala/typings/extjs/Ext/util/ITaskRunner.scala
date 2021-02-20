@@ -1,6 +1,7 @@
 package typings.extjs.Ext.util
 
 import typings.extjs.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,60 +47,48 @@ object ITaskRunner {
   }
   
   @scala.inline
-  implicit class ITaskRunnerOps[Self <: ITaskRunner] (val x: Self) extends AnyVal {
+  implicit class ITaskRunnerMutableBuilder[Self <: ITaskRunner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFireIdleEvent(value: Boolean): Self = StObject.set(x, "fireIdleEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setFireIdleEventUndefined: Self = StObject.set(x, "fireIdleEvent", js.undefined)
     
     @scala.inline
-    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFireIdleEvent(value: Boolean): Self = this.set("fireIdleEvent", value.asInstanceOf[js.Any])
+    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
     @scala.inline
-    def deleteFireIdleEvent: Self = this.set("fireIdleEvent", js.undefined)
+    def setNewTask(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "newTask", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    def setNewTaskUndefined: Self = StObject.set(x, "newTask", js.undefined)
     
     @scala.inline
-    def deleteInterval: Self = this.set("interval", js.undefined)
+    def setStart(value: /* task */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNewTask(value: /* config */ js.UndefOr[js.Any] => Unit): Self = this.set("newTask", js.Any.fromFunction1(value))
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteNewTask: Self = this.set("newTask", js.undefined)
+    def setStop(value: /* task */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStart(value: /* task */ js.UndefOr[js.Any] => _): Self = this.set("start", js.Any.fromFunction1(value))
+    def setStopAll(value: () => Unit): Self = StObject.set(x, "stopAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setStopAllUndefined: Self = StObject.set(x, "stopAll", js.undefined)
     
     @scala.inline
-    def setStop(value: /* task */ js.UndefOr[js.Any] => _): Self = this.set("stop", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteStop: Self = this.set("stop", js.undefined)
-    
-    @scala.inline
-    def setStopAll(value: () => Unit): Self = this.set("stopAll", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteStopAll: Self = this.set("stopAll", js.undefined)
+    def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
   }
 }

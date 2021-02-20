@@ -1,14 +1,25 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("monaco-editor", "editor.EditorType")
-@js.native
-object EditorType extends js.Object {
+object EditorType {
   
-  var ICodeEditor: String = js.native
+  @JSImport("monaco-editor", "editor.EditorType")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var IDiffEditor: String = js.native
+  @JSImport("monaco-editor", "editor.EditorType.ICodeEditor")
+  @js.native
+  def ICodeEditor: String = js.native
+  @scala.inline
+  def ICodeEditor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICodeEditor")(x.asInstanceOf[js.Any])
+  
+  @JSImport("monaco-editor", "editor.EditorType.IDiffEditor")
+  @js.native
+  def IDiffEditor: String = js.native
+  @scala.inline
+  def IDiffEditor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDiffEditor")(x.asInstanceOf[js.Any])
 }

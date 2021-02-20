@@ -1,12 +1,13 @@
 package typings.hapiHapi.anon
 
 import typings.hapiHapi.hapiHapiBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Log extends js.Object {
+trait Log extends StObject {
   
   var log: js.UndefOr[js.Array[String] | `false`] = js.native
   
@@ -21,36 +22,24 @@ object Log {
   }
   
   @scala.inline
-  implicit class LogOps[Self <: Log] (val x: Self) extends AnyVal {
+  implicit class LogMutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLog(value: js.Array[String] | `false`): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogVarargs(value: String*): Self = StObject.set(x, "log", js.Array(value :_*))
     
     @scala.inline
-    def setLogVarargs(value: String*): Self = this.set("log", js.Array(value :_*))
+    def setRequest(value: js.Array[String] | `false`): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLog(value: js.Array[String] | `false`): Self = this.set("log", value.asInstanceOf[js.Any])
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     @scala.inline
-    def deleteLog: Self = this.set("log", js.undefined)
-    
-    @scala.inline
-    def setRequestVarargs(value: String*): Self = this.set("request", js.Array(value :_*))
-    
-    @scala.inline
-    def setRequest(value: js.Array[String] | `false`): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
+    def setRequestVarargs(value: String*): Self = StObject.set(x, "request", js.Array(value :_*))
   }
 }

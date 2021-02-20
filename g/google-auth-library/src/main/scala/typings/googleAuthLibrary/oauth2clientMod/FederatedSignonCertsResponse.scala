@@ -1,12 +1,13 @@
 package typings.googleAuthLibrary.oauth2clientMod
 
 import typings.gaxios.commonMod.GaxiosResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FederatedSignonCertsResponse extends js.Object {
+trait FederatedSignonCertsResponse extends StObject {
   
   var certs: Certificates = js.native
   
@@ -23,33 +24,21 @@ object FederatedSignonCertsResponse {
   }
   
   @scala.inline
-  implicit class FederatedSignonCertsResponseOps[Self <: FederatedSignonCertsResponse] (val x: Self) extends AnyVal {
+  implicit class FederatedSignonCertsResponseMutableBuilder[Self <: FederatedSignonCertsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCerts(value: Certificates): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormat(value: CertificateFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRes(value: GaxiosResponse[Unit]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCerts(value: Certificates): Self = this.set("certs", value.asInstanceOf[js.Any])
+    def setResNull: Self = StObject.set(x, "res", null)
     
     @scala.inline
-    def setFormat(value: CertificateFormat): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRes(value: GaxiosResponse[Unit]): Self = this.set("res", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRes: Self = this.set("res", js.undefined)
-    
-    @scala.inline
-    def setResNull: Self = this.set("res", null)
+    def setResUndefined: Self = StObject.set(x, "res", js.undefined)
   }
 }

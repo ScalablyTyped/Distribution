@@ -7,6 +7,7 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,16 +34,20 @@ class MicroflowJavaActionParameterValue protected () extends JavaActionParameter
   
   def microflow_=(newValue: IMicroflow | Null): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowJavaActionParameterValue")
-@js.native
-object MicroflowJavaActionParameterValue extends js.Object {
+object MicroflowJavaActionParameterValue {
+  
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowJavaActionParameterValue")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new MicroflowJavaActionParameterValue instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowJavaActionParameterValue.create")
+  @js.native
   def create(model: IModel): MicroflowJavaActionParameterValue = js.native
   
   /**
@@ -53,9 +58,22 @@ object MicroflowJavaActionParameterValue extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.9.0 to 7.20.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowJavaActionParameterValue.createIn")
+  @js.native
   def createIn(container: JavaActionParameterMapping): MicroflowJavaActionParameterValue = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowJavaActionParameterValue.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowJavaActionParameterValue.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

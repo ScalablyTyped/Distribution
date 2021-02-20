@@ -7,14 +7,31 @@ import typings.jestTypes.globalMod.EachTestFn
 import typings.jestTypes.globalMod.TemplateData
 import typings.jestTypes.globalMod.TestCallback
 import typings.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jest-each", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  object default {
+    
+    @JSImport("jest-each", JSImport.Default)
+    @js.native
+    def apply(
+      table: EachTable,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type Global.TemplateData is not an array type */ data: TemplateData
+    ): ReturnType[
+        js.Function3[/* g */ Global, /* table */ EachTable, /* data */ TemplateData, Describe]
+      ] = js.native
+    
+    @JSImport("jest-each", "default.withGlobal")
+    @js.native
+    def withGlobal(g: Global): js.Function2[/* table */ EachTable, /* data */ TemplateData, Describe] = js.native
+  }
+  
+  @JSImport("jest-each", "bind")
+  @js.native
   def bind[EachCallback /* <: TestCallback */](cb: GlobalCallback): js.Function2[
     /* table */ EachTable, 
     /* taggedTemplateData */ TemplateData, 
@@ -25,6 +42,8 @@ object mod extends js.Object {
       Unit
     ]
   ] = js.native
+  @JSImport("jest-each", "bind")
+  @js.native
   def bind[EachCallback /* <: TestCallback */](cb: GlobalCallback, supportsDone: Boolean): js.Function2[
     /* table */ EachTable, 
     /* taggedTemplateData */ TemplateData, 
@@ -35,19 +54,6 @@ object mod extends js.Object {
       Unit
     ]
   ] = js.native
-  
-  @js.native
-  object default extends js.Object {
-    
-    def apply(
-      table: EachTable,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type Global.TemplateData is not an array type */ data: TemplateData
-    ): ReturnType[
-        js.Function3[/* g */ Global, /* table */ EachTable, /* data */ TemplateData, Describe]
-      ] = js.native
-    
-    def withGlobal(g: Global): js.Function2[/* table */ EachTable, /* data */ TemplateData, Describe] = js.native
-  }
   
   type Global = typings.jestTypes.globalMod.Global
 }

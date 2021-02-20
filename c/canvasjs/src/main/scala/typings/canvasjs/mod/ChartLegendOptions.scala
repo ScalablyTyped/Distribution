@@ -1,11 +1,12 @@
 package typings.canvasjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartLegendOptions extends js.Object {
+trait ChartLegendOptions extends StObject {
   
   /**
     * Sets the cursor type for legend items.
@@ -168,144 +169,132 @@ object ChartLegendOptions {
   }
   
   @scala.inline
-  implicit class ChartLegendOptionsOps[Self <: ChartLegendOptions] (val x: Self) extends AnyVal {
+  implicit class ChartLegendOptionsMutableBuilder[Self <: ChartLegendOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDockInsidePlotArea(value: Boolean): Self = StObject.set(x, "dockInsidePlotArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursor(value: String): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setDockInsidePlotAreaUndefined: Self = StObject.set(x, "dockInsidePlotArea", js.undefined)
     
     @scala.inline
-    def deleteCursor: Self = this.set("cursor", js.undefined)
+    def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDockInsidePlotArea(value: Boolean): Self = this.set("dockInsidePlotArea", value.asInstanceOf[js.Any])
+    def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
     
     @scala.inline
-    def deleteDockInsidePlotArea: Self = this.set("dockInsidePlotArea", js.undefined)
+    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontColor(value: String): Self = this.set("fontColor", value.asInstanceOf[js.Any])
+    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
     @scala.inline
-    def deleteFontColor: Self = this.set("fontColor", js.undefined)
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setFontWeight(value: String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStyle(value: String): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    def setHorizontalAlign(value: String): Self = StObject.set(x, "horizontalAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWeight(value: String): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    def setHorizontalAlignUndefined: Self = StObject.set(x, "horizontalAlign", js.undefined)
     
     @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    def setItemMaxWidth(value: Double): Self = StObject.set(x, "itemMaxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalAlign(value: String): Self = this.set("horizontalAlign", value.asInstanceOf[js.Any])
+    def setItemMaxWidthUndefined: Self = StObject.set(x, "itemMaxWidth", js.undefined)
     
     @scala.inline
-    def deleteHorizontalAlign: Self = this.set("horizontalAlign", js.undefined)
+    def setItemTextFormatter(value: /* e */ js.UndefOr[typings.canvasjs.anon.Chart] => String): Self = StObject.set(x, "itemTextFormatter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setItemMaxWidth(value: Double): Self = this.set("itemMaxWidth", value.asInstanceOf[js.Any])
+    def setItemTextFormatterUndefined: Self = StObject.set(x, "itemTextFormatter", js.undefined)
     
     @scala.inline
-    def deleteItemMaxWidth: Self = this.set("itemMaxWidth", js.undefined)
+    def setItemWidth(value: Double): Self = StObject.set(x, "itemWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemTextFormatter(value: /* e */ js.UndefOr[typings.canvasjs.anon.Chart] => String): Self = this.set("itemTextFormatter", js.Any.fromFunction1(value))
+    def setItemWidthUndefined: Self = StObject.set(x, "itemWidth", js.undefined)
     
     @scala.inline
-    def deleteItemTextFormatter: Self = this.set("itemTextFormatter", js.undefined)
+    def setItemWrap(value: Boolean): Self = StObject.set(x, "itemWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemWidth(value: Double): Self = this.set("itemWidth", value.asInstanceOf[js.Any])
+    def setItemWrapUndefined: Self = StObject.set(x, "itemWrap", js.undefined)
     
     @scala.inline
-    def deleteItemWidth: Self = this.set("itemWidth", js.undefined)
+    def setItemclick(value: /* event */ ChartEvent => Unit): Self = StObject.set(x, "itemclick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setItemWrap(value: Boolean): Self = this.set("itemWrap", value.asInstanceOf[js.Any])
+    def setItemclickUndefined: Self = StObject.set(x, "itemclick", js.undefined)
     
     @scala.inline
-    def deleteItemWrap: Self = this.set("itemWrap", js.undefined)
+    def setItemmousemove(value: /* event */ ChartEvent => Unit): Self = StObject.set(x, "itemmousemove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setItemclick(value: /* event */ ChartEvent => Unit): Self = this.set("itemclick", js.Any.fromFunction1(value))
+    def setItemmousemoveUndefined: Self = StObject.set(x, "itemmousemove", js.undefined)
     
     @scala.inline
-    def deleteItemclick: Self = this.set("itemclick", js.undefined)
+    def setItemmouseout(value: /* event */ ChartEvent => Unit): Self = StObject.set(x, "itemmouseout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setItemmousemove(value: /* event */ ChartEvent => Unit): Self = this.set("itemmousemove", js.Any.fromFunction1(value))
+    def setItemmouseoutUndefined: Self = StObject.set(x, "itemmouseout", js.undefined)
     
     @scala.inline
-    def deleteItemmousemove: Self = this.set("itemmousemove", js.undefined)
+    def setItemmouseover(value: /* event */ ChartEvent => Unit): Self = StObject.set(x, "itemmouseover", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setItemmouseout(value: /* event */ ChartEvent => Unit): Self = this.set("itemmouseout", js.Any.fromFunction1(value))
+    def setItemmouseoverUndefined: Self = StObject.set(x, "itemmouseover", js.undefined)
     
     @scala.inline
-    def deleteItemmouseout: Self = this.set("itemmouseout", js.undefined)
+    def setMarkerMargin(value: Double): Self = StObject.set(x, "markerMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemmouseover(value: /* event */ ChartEvent => Unit): Self = this.set("itemmouseover", js.Any.fromFunction1(value))
+    def setMarkerMarginUndefined: Self = StObject.set(x, "markerMargin", js.undefined)
     
     @scala.inline
-    def deleteItemmouseover: Self = this.set("itemmouseover", js.undefined)
+    def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerMargin(value: Double): Self = this.set("markerMargin", value.asInstanceOf[js.Any])
+    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
     @scala.inline
-    def deleteMarkerMargin: Self = this.set("markerMargin", js.undefined)
+    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHeight(value: Double): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
     @scala.inline
-    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
     
     @scala.inline
-    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReversed(value: Boolean): Self = this.set("reversed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReversed: Self = this.set("reversed", js.undefined)
-    
-    @scala.inline
-    def setVerticalAlign(value: String): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
   }
 }

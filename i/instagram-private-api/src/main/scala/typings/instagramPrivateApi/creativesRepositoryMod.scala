@@ -1,16 +1,18 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.repositoryMod.Repository
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/repositories/creatives.repository", JSImport.Namespace)
-@js.native
-object creativesRepositoryMod extends js.Object {
+object creativesRepositoryMod {
   
+  @JSImport("instagram-private-api/dist/repositories/creatives.repository", "CreativesRepository")
   @js.native
-  class CreativesRepository () extends Repository {
+  class CreativesRepository protected () extends Repository {
+    def this(client: IgApiClient) = this()
     
     def writeSupportedCapabilities(): js.Promise[_] = js.native
   }

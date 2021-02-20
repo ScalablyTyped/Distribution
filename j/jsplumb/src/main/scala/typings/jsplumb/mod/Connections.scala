@@ -1,11 +1,12 @@
 package typings.jsplumb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Connections extends js.Object {
+trait Connections extends StObject {
   
   def detach(): Unit = js.native
   
@@ -22,27 +23,15 @@ object Connections {
   }
   
   @scala.inline
-  implicit class ConnectionsOps[Self <: Connections] (val x: Self) extends AnyVal {
+  implicit class ConnectionsMutableBuilder[Self <: Connections] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEach(value: js.Function1[/* c */ Connection, Unit] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDetach(value: () => Unit): Self = this.set("detach", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setEach(value: js.Function1[/* c */ Connection, Unit] => Unit): Self = this.set("each", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

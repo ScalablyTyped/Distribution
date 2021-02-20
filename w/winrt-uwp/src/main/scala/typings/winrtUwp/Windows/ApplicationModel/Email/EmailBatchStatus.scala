@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmailBatchStatus extends js.Object
+sealed trait EmailBatchStatus extends StObject
 /** Defines the states of an email batch operation. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailBatchStatus")
 @js.native
-object EmailBatchStatus extends js.Object {
+object EmailBatchStatus extends StObject {
   
   /** The batch operation has failed due to a sync manager error. */
   @js.native

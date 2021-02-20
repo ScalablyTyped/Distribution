@@ -2,6 +2,7 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.mongodb.anon.CaseSensitive
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,63 +46,51 @@ object RootQuerySelector {
   }
   
   @scala.inline
-  implicit class RootQuerySelectorOps[Self <: RootQuerySelector[_], T] (val x: Self with RootQuerySelector[T]) extends AnyVal {
+  implicit class RootQuerySelectorMutableBuilder[Self <: RootQuerySelector[_], T] (val x: Self with RootQuerySelector[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$and(value: js.Array[FilterQuery[T]]): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$andUndefined: Self = StObject.set(x, "$and", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set$andVarargs(value: FilterQuery[T]*): Self = StObject.set(x, "$and", js.Array(value :_*))
     
     @scala.inline
-    def set$andVarargs(value: FilterQuery[T]*): Self = this.set("$and", js.Array(value :_*))
+    def set$comment(value: String): Self = StObject.set(x, "$comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$and(value: js.Array[FilterQuery[T]]): Self = this.set("$and", value.asInstanceOf[js.Any])
+    def set$commentUndefined: Self = StObject.set(x, "$comment", js.undefined)
     
     @scala.inline
-    def delete$and: Self = this.set("$and", js.undefined)
+    def set$nor(value: js.Array[FilterQuery[T]]): Self = StObject.set(x, "$nor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$comment(value: String): Self = this.set("$comment", value.asInstanceOf[js.Any])
+    def set$norUndefined: Self = StObject.set(x, "$nor", js.undefined)
     
     @scala.inline
-    def delete$comment: Self = this.set("$comment", js.undefined)
+    def set$norVarargs(value: FilterQuery[T]*): Self = StObject.set(x, "$nor", js.Array(value :_*))
     
     @scala.inline
-    def set$norVarargs(value: FilterQuery[T]*): Self = this.set("$nor", js.Array(value :_*))
+    def set$or(value: js.Array[FilterQuery[T]]): Self = StObject.set(x, "$or", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$nor(value: js.Array[FilterQuery[T]]): Self = this.set("$nor", value.asInstanceOf[js.Any])
+    def set$orUndefined: Self = StObject.set(x, "$or", js.undefined)
     
     @scala.inline
-    def delete$nor: Self = this.set("$nor", js.undefined)
+    def set$orVarargs(value: FilterQuery[T]*): Self = StObject.set(x, "$or", js.Array(value :_*))
     
     @scala.inline
-    def set$orVarargs(value: FilterQuery[T]*): Self = this.set("$or", js.Array(value :_*))
+    def set$text(value: CaseSensitive): Self = StObject.set(x, "$text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$or(value: js.Array[FilterQuery[T]]): Self = this.set("$or", value.asInstanceOf[js.Any])
+    def set$textUndefined: Self = StObject.set(x, "$text", js.undefined)
     
     @scala.inline
-    def delete$or: Self = this.set("$or", js.undefined)
+    def set$where(value: String | js.Function): Self = StObject.set(x, "$where", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$text(value: CaseSensitive): Self = this.set("$text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$text: Self = this.set("$text", js.undefined)
-    
-    @scala.inline
-    def set$where(value: String | js.Function): Self = this.set("$where", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$where: Self = this.set("$where", js.undefined)
+    def set$whereUndefined: Self = StObject.set(x, "$where", js.undefined)
   }
 }

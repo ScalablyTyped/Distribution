@@ -7,14 +7,14 @@ import typings.awsSdkClientKinesisBrowser.typesMergeShardsInputMod.MergeShardsIn
 import typings.awsSdkClientKinesisBrowser.typesMergeShardsOutputMod.MergeShardsOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/commands/MergeShardsCommand", JSImport.Namespace)
-@js.native
-object mergeShardsCommandMod extends js.Object {
+object mergeShardsCommandMod {
   
+  @JSImport("@aws-sdk/client-kinesis-browser/commands/MergeShardsCommand", "MergeShardsCommand")
   @js.native
   class MergeShardsCommand protected () extends Command[
           InputTypesUnion, 

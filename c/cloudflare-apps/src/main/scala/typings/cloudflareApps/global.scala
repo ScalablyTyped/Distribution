@@ -1,16 +1,27 @@
 package typings.cloudflareApps
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.cloudflareApps.CloudflareApps.InstallOptions
 import typings.cloudflareApps.CloudflareApps.InstallProduct
 import typings.cloudflareApps.CloudflareApps.InstallScope
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
+  
+  object CloudflareApps extends Shortcut {
+    
+    @JSGlobal("CloudflareApps")
+    @js.native
+    val ^ : typings.cloudflareApps.CloudflareApps.CloudflareApps = js.native
+    
+    type _To = typings.cloudflareApps.CloudflareApps.CloudflareApps
+    
+    /* This means you don't have to write `^`, but can instead just say `CloudflareApps.foo` */
+    override def _to: typings.cloudflareApps.CloudflareApps.CloudflareApps = ^
+  }
   
   /**
     * It's the same as CloudflareApps variable.
@@ -27,6 +38,8 @@ object global extends js.Object {
     * const siteId: string = INSTALL.siteId;
     * ```
     */
+  @JSGlobal("INSTALL")
+  @js.native
   val INSTALL: typings.cloudflareApps.CloudflareApps.CloudflareApps = js.native
   
   /**
@@ -34,8 +47,12 @@ object global extends js.Object {
     * Its primary purpose is to allow you to easily distinguish between your app being loaded
     * in the Cloudflare Preview or the installer’s live website.
     */
+  @JSGlobal("INSTALL_ID")
+  @js.native
   val INSTALL_ID: String = js.native
   
+  @JSGlobal("INSTALL_OPTIONS")
+  @js.native
   val INSTALL_OPTIONS: InstallOptions = js.native
   
   /**
@@ -44,6 +61,8 @@ object global extends js.Object {
     * `INSTALL_PRODUCT.id` will then be that id for the plan the user has purchased.
     * This value is absent for free apps and will always be set for paid apps even if the user is on a free plan.
     */
+  @JSGlobal("INSTALL_PRODUCT")
+  @js.native
   val INSTALL_PRODUCT: js.UndefOr[InstallProduct] = js.native
   
   /**
@@ -52,9 +71,7 @@ object global extends js.Object {
     * without polluting the global scope.
     * For example, it’s commonly used to share an update function with its update handler.
     */
-  val INSTALL_SCOPE: InstallScope = js.native
-  
+  @JSGlobal("INSTALL_SCOPE")
   @js.native
-  object CloudflareApps
-    extends TopLevel[typings.cloudflareApps.CloudflareApps.CloudflareApps]
+  val INSTALL_SCOPE: InstallScope = js.native
 }

@@ -1,13 +1,14 @@
 package typings.ol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/geom/flat/interiorpoint", JSImport.Namespace)
-@js.native
-object interiorpointMod extends js.Object {
+object interiorpointMod {
   
+  @JSImport("ol/geom/flat/interiorpoint", "getInteriorPointOfArray")
+  @js.native
   def getInteriorPointOfArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -16,6 +17,8 @@ object interiorpointMod extends js.Object {
     flatCenters: js.Array[Double],
     flatCentersOffset: Double
   ): js.Array[Double] = js.native
+  @JSImport("ol/geom/flat/interiorpoint", "getInteriorPointOfArray")
+  @js.native
   def getInteriorPointOfArray(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -26,6 +29,8 @@ object interiorpointMod extends js.Object {
     opt_dest: js.Array[Double]
   ): js.Array[Double] = js.native
   
+  @JSImport("ol/geom/flat/interiorpoint", "getInteriorPointsOfMultiArray")
+  @js.native
   def getInteriorPointsOfMultiArray(
     flatCoordinates: js.Array[Double],
     offset: Double,

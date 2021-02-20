@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.kinesis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration extends js.Object {
+trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration extends StObject {
   
   /**
     * Defaults to `true`. Set it to `false` if you want to disable format conversion while preserving the configuration details.
@@ -40,39 +41,27 @@ object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigur
   }
   
   @scala.inline
-  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOps[Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration] (val x: Self) extends AnyVal {
+  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationMutableBuilder[Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
     def setInputFormatConfiguration(
       value: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration
-    ): Self = this.set("inputFormatConfiguration", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "inputFormatConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOutputFormatConfiguration(
       value: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration
-    ): Self = this.set("outputFormatConfiguration", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "outputFormatConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSchemaConfiguration(
       value: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration
-    ): Self = this.set("schemaConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    ): Self = StObject.set(x, "schemaConfiguration", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.storybookUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Record<@storybook/ui.@storybook/ui/dist/settings/shortcuts.Feature, any> */
 @js.native
-trait RecordFeatureany extends js.Object {
+trait RecordFeatureany extends StObject {
   
   var aboutPage: js.Any = js.native
   
@@ -69,69 +70,57 @@ object RecordFeatureany {
   }
   
   @scala.inline
-  implicit class RecordFeatureanyOps[Self <: RecordFeatureany] (val x: Self) extends AnyVal {
+  implicit class RecordFeatureanyMutableBuilder[Self <: RecordFeatureany] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAboutPage(value: js.Any): Self = StObject.set(x, "aboutPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollapseAll(value: js.Any): Self = StObject.set(x, "collapseAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpandAll(value: js.Any): Self = StObject.set(x, "expandAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAboutPage(value: js.Any): Self = this.set("aboutPage", value.asInstanceOf[js.Any])
+    def setFocusIframe(value: js.Any): Self = StObject.set(x, "focusIframe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapseAll(value: js.Any): Self = this.set("collapseAll", value.asInstanceOf[js.Any])
+    def setFocusNav(value: js.Any): Self = StObject.set(x, "focusNav", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandAll(value: js.Any): Self = this.set("expandAll", value.asInstanceOf[js.Any])
+    def setFocusPanel(value: js.Any): Self = StObject.set(x, "focusPanel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusIframe(value: js.Any): Self = this.set("focusIframe", value.asInstanceOf[js.Any])
+    def setFullScreen(value: js.Any): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusNav(value: js.Any): Self = this.set("focusNav", value.asInstanceOf[js.Any])
+    def setNextComponent(value: js.Any): Self = StObject.set(x, "nextComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusPanel(value: js.Any): Self = this.set("focusPanel", value.asInstanceOf[js.Any])
+    def setNextStory(value: js.Any): Self = StObject.set(x, "nextStory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullScreen(value: js.Any): Self = this.set("fullScreen", value.asInstanceOf[js.Any])
+    def setPanelPosition(value: js.Any): Self = StObject.set(x, "panelPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextComponent(value: js.Any): Self = this.set("nextComponent", value.asInstanceOf[js.Any])
+    def setPrevComponent(value: js.Any): Self = StObject.set(x, "prevComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextStory(value: js.Any): Self = this.set("nextStory", value.asInstanceOf[js.Any])
+    def setPrevStory(value: js.Any): Self = StObject.set(x, "prevStory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanelPosition(value: js.Any): Self = this.set("panelPosition", value.asInstanceOf[js.Any])
+    def setSearch(value: js.Any): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrevComponent(value: js.Any): Self = this.set("prevComponent", value.asInstanceOf[js.Any])
+    def setShortcutsPage(value: js.Any): Self = StObject.set(x, "shortcutsPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrevStory(value: js.Any): Self = this.set("prevStory", value.asInstanceOf[js.Any])
+    def setToggleNav(value: js.Any): Self = StObject.set(x, "toggleNav", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch(value: js.Any): Self = this.set("search", value.asInstanceOf[js.Any])
+    def setTogglePanel(value: js.Any): Self = StObject.set(x, "togglePanel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortcutsPage(value: js.Any): Self = this.set("shortcutsPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToggleNav(value: js.Any): Self = this.set("toggleNav", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTogglePanel(value: js.Any): Self = this.set("togglePanel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToolbar(value: js.Any): Self = this.set("toolbar", value.asInstanceOf[js.Any])
+    def setToolbar(value: js.Any): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
   }
 }

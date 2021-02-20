@@ -1,5 +1,6 @@
 package typings.expoConfigureSplashScreen
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("@expo/configure-splash-screen", JSImport.Namespace)
 @js.native
-object expoConfigureSplashScreenRequire extends js.Object
+object expoConfigureSplashScreenRequire extends StObject

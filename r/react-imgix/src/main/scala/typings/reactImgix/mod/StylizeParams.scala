@@ -1,11 +1,12 @@
 package typings.reactImgix.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StylizeParams extends js.Object {
+trait StylizeParams extends StObject {
   
   var blur: js.UndefOr[ImgixParamType] = js.native
   
@@ -30,60 +31,48 @@ object StylizeParams {
   }
   
   @scala.inline
-  implicit class StylizeParamsOps[Self <: StylizeParams] (val x: Self) extends AnyVal {
+  implicit class StylizeParamsMutableBuilder[Self <: StylizeParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlur(value: ImgixParamType): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuotone(value: ImgixParamType): Self = StObject.set(x, "duotone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlur(value: ImgixParamType): Self = this.set("blur", value.asInstanceOf[js.Any])
+    def `setDuotone-alpha`(value: ImgixParamType): Self = StObject.set(x, "duotone-alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlur: Self = this.set("blur", js.undefined)
+    def `setDuotone-alphaUndefined`: Self = StObject.set(x, "duotone-alpha", js.undefined)
     
     @scala.inline
-    def setDuotone(value: ImgixParamType): Self = this.set("duotone", value.asInstanceOf[js.Any])
+    def setDuotoneUndefined: Self = StObject.set(x, "duotone", js.undefined)
     
     @scala.inline
-    def deleteDuotone: Self = this.set("duotone", js.undefined)
+    def setHtn(value: ImgixParamType): Self = StObject.set(x, "htn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDuotone-alpha`(value: ImgixParamType): Self = this.set("duotone-alpha", value.asInstanceOf[js.Any])
+    def setHtnUndefined: Self = StObject.set(x, "htn", js.undefined)
     
     @scala.inline
-    def `deleteDuotone-alpha`: Self = this.set("duotone-alpha", js.undefined)
+    def setMonochrome(value: ImgixParamType): Self = StObject.set(x, "monochrome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtn(value: ImgixParamType): Self = this.set("htn", value.asInstanceOf[js.Any])
+    def setMonochromeUndefined: Self = StObject.set(x, "monochrome", js.undefined)
     
     @scala.inline
-    def deleteHtn: Self = this.set("htn", js.undefined)
+    def setPx(value: ImgixParamType): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonochrome(value: ImgixParamType): Self = this.set("monochrome", value.asInstanceOf[js.Any])
+    def setPxUndefined: Self = StObject.set(x, "px", js.undefined)
     
     @scala.inline
-    def deleteMonochrome: Self = this.set("monochrome", js.undefined)
+    def setSepia(value: ImgixParamType): Self = StObject.set(x, "sepia", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPx(value: ImgixParamType): Self = this.set("px", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePx: Self = this.set("px", js.undefined)
-    
-    @scala.inline
-    def setSepia(value: ImgixParamType): Self = this.set("sepia", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSepia: Self = this.set("sepia", js.undefined)
+    def setSepiaUndefined: Self = StObject.set(x, "sepia", js.undefined)
   }
 }

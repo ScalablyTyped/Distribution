@@ -1,5 +1,6 @@
 package typings.babylonjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class DeepCopier ()
   extends typings.babylonjs.legacyMod.DeepCopier
 /* static members */
-@JSImport("babylonjs", "DeepCopier")
-@js.native
-object DeepCopier extends js.Object {
+object DeepCopier {
   
   /**
     * Tries to copy an object by duplicating every property
@@ -20,14 +19,22 @@ object DeepCopier extends js.Object {
     * @param doNotCopyList defines a list of properties to avoid
     * @param mustCopyList defines a list of properties to copy (even if they start with _)
     */
+  @JSImport("babylonjs", "DeepCopier.DeepCopy")
+  @js.native
   def DeepCopy(source: js.Any, destination: js.Any): Unit = js.native
+  @JSImport("babylonjs", "DeepCopier.DeepCopy")
+  @js.native
   def DeepCopy(
     source: js.Any,
     destination: js.Any,
     doNotCopyList: js.UndefOr[scala.Nothing],
     mustCopyList: js.Array[String]
   ): Unit = js.native
+  @JSImport("babylonjs", "DeepCopier.DeepCopy")
+  @js.native
   def DeepCopy(source: js.Any, destination: js.Any, doNotCopyList: js.Array[String]): Unit = js.native
+  @JSImport("babylonjs", "DeepCopier.DeepCopy")
+  @js.native
   def DeepCopy(
     source: js.Any,
     destination: js.Any,

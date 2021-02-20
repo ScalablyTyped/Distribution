@@ -2,14 +2,14 @@ package typings.guacamoleClient
 
 import typings.guacamoleClient.tunnelMod.Tunnel
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("guacamole-client/lib/StaticHTTPTunnel", JSImport.Namespace)
-@js.native
-object staticHTTPTunnelMod extends js.Object {
+object staticHTTPTunnelMod {
   
+  @JSImport("guacamole-client/lib/StaticHTTPTunnel", "StaticHTTPTunnel")
   @js.native
   class StaticHTTPTunnel protected () extends Tunnel {
     /**

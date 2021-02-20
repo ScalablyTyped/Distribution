@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestSpecification extends js.Object {
+trait TestSpecification extends StObject {
   
   /** An Android instrumentation test. */
   var androidInstrumentationTest: js.UndefOr[AndroidInstrumentationTest] = js.native
@@ -46,78 +47,66 @@ object TestSpecification {
   }
   
   @scala.inline
-  implicit class TestSpecificationOps[Self <: TestSpecification] (val x: Self) extends AnyVal {
+  implicit class TestSpecificationMutableBuilder[Self <: TestSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroidInstrumentationTest(value: AndroidInstrumentationTest): Self = StObject.set(x, "androidInstrumentationTest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidInstrumentationTestUndefined: Self = StObject.set(x, "androidInstrumentationTest", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAndroidRoboTest(value: AndroidRoboTest): Self = StObject.set(x, "androidRoboTest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidInstrumentationTest(value: AndroidInstrumentationTest): Self = this.set("androidInstrumentationTest", value.asInstanceOf[js.Any])
+    def setAndroidRoboTestUndefined: Self = StObject.set(x, "androidRoboTest", js.undefined)
     
     @scala.inline
-    def deleteAndroidInstrumentationTest: Self = this.set("androidInstrumentationTest", js.undefined)
+    def setAndroidTestLoop(value: AndroidTestLoop): Self = StObject.set(x, "androidTestLoop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidRoboTest(value: AndroidRoboTest): Self = this.set("androidRoboTest", value.asInstanceOf[js.Any])
+    def setAndroidTestLoopUndefined: Self = StObject.set(x, "androidTestLoop", js.undefined)
     
     @scala.inline
-    def deleteAndroidRoboTest: Self = this.set("androidRoboTest", js.undefined)
+    def setDisablePerformanceMetrics(value: Boolean): Self = StObject.set(x, "disablePerformanceMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidTestLoop(value: AndroidTestLoop): Self = this.set("androidTestLoop", value.asInstanceOf[js.Any])
+    def setDisablePerformanceMetricsUndefined: Self = StObject.set(x, "disablePerformanceMetrics", js.undefined)
     
     @scala.inline
-    def deleteAndroidTestLoop: Self = this.set("androidTestLoop", js.undefined)
+    def setDisableVideoRecording(value: Boolean): Self = StObject.set(x, "disableVideoRecording", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisablePerformanceMetrics(value: Boolean): Self = this.set("disablePerformanceMetrics", value.asInstanceOf[js.Any])
+    def setDisableVideoRecordingUndefined: Self = StObject.set(x, "disableVideoRecording", js.undefined)
     
     @scala.inline
-    def deleteDisablePerformanceMetrics: Self = this.set("disablePerformanceMetrics", js.undefined)
+    def setIosTestLoop(value: IosTestLoop): Self = StObject.set(x, "iosTestLoop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableVideoRecording(value: Boolean): Self = this.set("disableVideoRecording", value.asInstanceOf[js.Any])
+    def setIosTestLoopUndefined: Self = StObject.set(x, "iosTestLoop", js.undefined)
     
     @scala.inline
-    def deleteDisableVideoRecording: Self = this.set("disableVideoRecording", js.undefined)
+    def setIosTestSetup(value: IosTestSetup): Self = StObject.set(x, "iosTestSetup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIosTestLoop(value: IosTestLoop): Self = this.set("iosTestLoop", value.asInstanceOf[js.Any])
+    def setIosTestSetupUndefined: Self = StObject.set(x, "iosTestSetup", js.undefined)
     
     @scala.inline
-    def deleteIosTestLoop: Self = this.set("iosTestLoop", js.undefined)
+    def setIosXcTest(value: IosXcTest): Self = StObject.set(x, "iosXcTest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIosTestSetup(value: IosTestSetup): Self = this.set("iosTestSetup", value.asInstanceOf[js.Any])
+    def setIosXcTestUndefined: Self = StObject.set(x, "iosXcTest", js.undefined)
     
     @scala.inline
-    def deleteIosTestSetup: Self = this.set("iosTestSetup", js.undefined)
+    def setTestSetup(value: TestSetup): Self = StObject.set(x, "testSetup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIosXcTest(value: IosXcTest): Self = this.set("iosXcTest", value.asInstanceOf[js.Any])
+    def setTestSetupUndefined: Self = StObject.set(x, "testSetup", js.undefined)
     
     @scala.inline
-    def deleteIosXcTest: Self = this.set("iosXcTest", js.undefined)
+    def setTestTimeout(value: String): Self = StObject.set(x, "testTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestSetup(value: TestSetup): Self = this.set("testSetup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestSetup: Self = this.set("testSetup", js.undefined)
-    
-    @scala.inline
-    def setTestTimeout(value: String): Self = this.set("testTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestTimeout: Self = this.set("testTimeout", js.undefined)
+    def setTestTimeoutUndefined: Self = StObject.set(x, "testTimeout", js.undefined)
   }
 }

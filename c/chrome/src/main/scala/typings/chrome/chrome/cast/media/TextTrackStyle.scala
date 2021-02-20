@@ -1,11 +1,12 @@
 package typings.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextTrackStyle extends js.Object {
+trait TextTrackStyle extends StObject {
   
   var backgroundColor: String = js.native
   
@@ -53,54 +54,42 @@ object TextTrackStyle {
   }
   
   @scala.inline
-  implicit class TextTrackStyleOps[Self <: TextTrackStyle] (val x: Self) extends AnyVal {
+  implicit class TextTrackStyleMutableBuilder[Self <: TextTrackStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEdgeColor(value: String): Self = StObject.set(x, "edgeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setEdgeType(value: TextTrackEdgeType): Self = StObject.set(x, "edgeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomData(value: js.Object): Self = this.set("customData", value.asInstanceOf[js.Any])
+    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgeColor(value: String): Self = this.set("edgeColor", value.asInstanceOf[js.Any])
+    def setFontGenericFamily(value: TextTrackFontGenericFamily): Self = StObject.set(x, "fontGenericFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgeType(value: TextTrackEdgeType): Self = this.set("edgeType", value.asInstanceOf[js.Any])
+    def setFontScale(value: Double): Self = StObject.set(x, "fontScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setFontStyle(value: TextTrackFontStyle): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontGenericFamily(value: TextTrackFontGenericFamily): Self = this.set("fontGenericFamily", value.asInstanceOf[js.Any])
+    def setForegroundColor(value: String): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontScale(value: Double): Self = this.set("fontScale", value.asInstanceOf[js.Any])
+    def setWindowColor(value: String): Self = StObject.set(x, "windowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStyle(value: TextTrackFontStyle): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    def setWindowRoundedCornerRadius(value: Double): Self = StObject.set(x, "windowRoundedCornerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForegroundColor(value: String): Self = this.set("foregroundColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowColor(value: String): Self = this.set("windowColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowRoundedCornerRadius(value: Double): Self = this.set("windowRoundedCornerRadius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowType(value: TextTrackWindowType): Self = this.set("windowType", value.asInstanceOf[js.Any])
+    def setWindowType(value: TextTrackWindowType): Self = StObject.set(x, "windowType", value.asInstanceOf[js.Any])
   }
 }

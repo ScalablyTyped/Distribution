@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.tagsFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TagsFeedResponse extends js.Object {
+trait TagsFeedResponse extends StObject {
   
   var more_available: Boolean = js.native
   
@@ -35,42 +36,30 @@ object TagsFeedResponse {
   }
   
   @scala.inline
-  implicit class TagsFeedResponseOps[Self <: TagsFeedResponse] (val x: Self) extends AnyVal {
+  implicit class TagsFeedResponseMutableBuilder[Self <: TagsFeedResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNext_max_id(value: String): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNext_media_ids(value: js.Array[String]): Self = StObject.set(x, "next_media_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMore_available(value: Boolean): Self = this.set("more_available", value.asInstanceOf[js.Any])
+    def setNext_media_idsVarargs(value: String*): Self = StObject.set(x, "next_media_ids", js.Array(value :_*))
     
     @scala.inline
-    def setNext_max_id(value: String): Self = this.set("next_max_id", value.asInstanceOf[js.Any])
+    def setNext_page(value: Double): Self = StObject.set(x, "next_page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext_media_idsVarargs(value: String*): Self = this.set("next_media_ids", js.Array(value :_*))
+    def setSections(value: js.Array[TagsFeedResponseSectionsItem]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext_media_ids(value: js.Array[String]): Self = this.set("next_media_ids", value.asInstanceOf[js.Any])
+    def setSectionsVarargs(value: TagsFeedResponseSectionsItem*): Self = StObject.set(x, "sections", js.Array(value :_*))
     
     @scala.inline
-    def setNext_page(value: Double): Self = this.set("next_page", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSectionsVarargs(value: TagsFeedResponseSectionsItem*): Self = this.set("sections", js.Array(value :_*))
-    
-    @scala.inline
-    def setSections(value: js.Array[TagsFeedResponseSectionsItem]): Self = this.set("sections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

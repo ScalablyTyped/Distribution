@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Object containing gateways array. */
 @js.native
-trait GatewayList extends js.Object {
+trait GatewayList extends StObject {
   
   /** Array of configured gateway connections. */
   var gateways: js.UndefOr[js.Array[Gateway]] = js.native
@@ -20,27 +21,15 @@ object GatewayList {
   }
   
   @scala.inline
-  implicit class GatewayListOps[Self <: GatewayList] (val x: Self) extends AnyVal {
+  implicit class GatewayListMutableBuilder[Self <: GatewayList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGateways(value: js.Array[Gateway]): Self = StObject.set(x, "gateways", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGatewaysUndefined: Self = StObject.set(x, "gateways", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGatewaysVarargs(value: Gateway*): Self = this.set("gateways", js.Array(value :_*))
-    
-    @scala.inline
-    def setGateways(value: js.Array[Gateway]): Self = this.set("gateways", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGateways: Self = this.set("gateways", js.undefined)
+    def setGatewaysVarargs(value: Gateway*): Self = StObject.set(x, "gateways", js.Array(value :_*))
   }
 }

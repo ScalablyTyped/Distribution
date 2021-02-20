@@ -1,11 +1,12 @@
 package typings.phonegap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompassHeading extends js.Object {
+trait CompassHeading extends StObject {
   
   var headingAccuracy: js.UndefOr[Double] = js.native
   
@@ -24,42 +25,30 @@ object CompassHeading {
   }
   
   @scala.inline
-  implicit class CompassHeadingOps[Self <: CompassHeading] (val x: Self) extends AnyVal {
+  implicit class CompassHeadingMutableBuilder[Self <: CompassHeading] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeadingAccuracy(value: Double): Self = StObject.set(x, "headingAccuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadingAccuracyUndefined: Self = StObject.set(x, "headingAccuracy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMagneticHeading(value: Double): Self = StObject.set(x, "magneticHeading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadingAccuracy(value: Double): Self = this.set("headingAccuracy", value.asInstanceOf[js.Any])
+    def setMagneticHeadingUndefined: Self = StObject.set(x, "magneticHeading", js.undefined)
     
     @scala.inline
-    def deleteHeadingAccuracy: Self = this.set("headingAccuracy", js.undefined)
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMagneticHeading(value: Double): Self = this.set("magneticHeading", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     @scala.inline
-    def deleteMagneticHeading: Self = this.set("magneticHeading", js.undefined)
+    def setTrueHeading(value: Double): Self = StObject.set(x, "trueHeading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
-    
-    @scala.inline
-    def setTrueHeading(value: Double): Self = this.set("trueHeading", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrueHeading: Self = this.set("trueHeading", js.undefined)
+    def setTrueHeadingUndefined: Self = StObject.set(x, "trueHeading", js.undefined)
   }
 }

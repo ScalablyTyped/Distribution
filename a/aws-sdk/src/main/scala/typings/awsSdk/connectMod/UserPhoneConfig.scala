@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserPhoneConfig extends js.Object {
+trait UserPhoneConfig extends StObject {
   
   /**
     * The After Call Work (ACW) timeout setting, in seconds.
@@ -36,39 +37,27 @@ object UserPhoneConfig {
   }
   
   @scala.inline
-  implicit class UserPhoneConfigOps[Self <: UserPhoneConfig] (val x: Self) extends AnyVal {
+  implicit class UserPhoneConfigMutableBuilder[Self <: UserPhoneConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterContactWorkTimeLimit(value: AfterContactWorkTimeLimit): Self = StObject.set(x, "AfterContactWorkTimeLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterContactWorkTimeLimitUndefined: Self = StObject.set(x, "AfterContactWorkTimeLimit", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoAccept(value: AutoAccept): Self = StObject.set(x, "AutoAccept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneType(value: PhoneType): Self = this.set("PhoneType", value.asInstanceOf[js.Any])
+    def setAutoAcceptUndefined: Self = StObject.set(x, "AutoAccept", js.undefined)
     
     @scala.inline
-    def setAfterContactWorkTimeLimit(value: AfterContactWorkTimeLimit): Self = this.set("AfterContactWorkTimeLimit", value.asInstanceOf[js.Any])
+    def setDeskPhoneNumber(value: PhoneNumber): Self = StObject.set(x, "DeskPhoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAfterContactWorkTimeLimit: Self = this.set("AfterContactWorkTimeLimit", js.undefined)
+    def setDeskPhoneNumberUndefined: Self = StObject.set(x, "DeskPhoneNumber", js.undefined)
     
     @scala.inline
-    def setAutoAccept(value: AutoAccept): Self = this.set("AutoAccept", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoAccept: Self = this.set("AutoAccept", js.undefined)
-    
-    @scala.inline
-    def setDeskPhoneNumber(value: PhoneNumber): Self = this.set("DeskPhoneNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeskPhoneNumber: Self = this.set("DeskPhoneNumber", js.undefined)
+    def setPhoneType(value: PhoneType): Self = StObject.set(x, "PhoneType", value.asInstanceOf[js.Any])
   }
 }

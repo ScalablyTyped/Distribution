@@ -2,12 +2,13 @@ package typings.braintreeWebDropIn.mod
 
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.CreditCard
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.PayPalAccount
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaymentMethodRequestablePayload extends js.Object {
+trait PaymentMethodRequestablePayload extends StObject {
   
   var paymentMethodIsSelected: Boolean = js.native
   
@@ -23,24 +24,12 @@ object PaymentMethodRequestablePayload {
   }
   
   @scala.inline
-  implicit class PaymentMethodRequestablePayloadOps[Self <: PaymentMethodRequestablePayload] (val x: Self) extends AnyVal {
+  implicit class PaymentMethodRequestablePayloadMutableBuilder[Self <: PaymentMethodRequestablePayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPaymentMethodIsSelected(value: Boolean): Self = StObject.set(x, "paymentMethodIsSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPaymentMethodIsSelected(value: Boolean): Self = this.set("paymentMethodIsSelected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: CreditCard | PayPalAccount): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: CreditCard | PayPalAccount): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

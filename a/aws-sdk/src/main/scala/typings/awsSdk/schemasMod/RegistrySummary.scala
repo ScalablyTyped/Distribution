@@ -1,11 +1,12 @@
 package typings.awsSdk.schemasMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegistrySummary extends js.Object {
+trait RegistrySummary extends StObject {
   
   /**
     * The ARN of the registry.
@@ -31,36 +32,24 @@ object RegistrySummary {
   }
   
   @scala.inline
-  implicit class RegistrySummaryOps[Self <: RegistrySummary] (val x: Self) extends AnyVal {
+  implicit class RegistrySummaryMutableBuilder[Self <: RegistrySummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegistryArn(value: string): Self = StObject.set(x, "RegistryArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegistryArnUndefined: Self = StObject.set(x, "RegistryArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistryArn(value: string): Self = this.set("RegistryArn", value.asInstanceOf[js.Any])
+    def setRegistryNameUndefined: Self = StObject.set(x, "RegistryName", js.undefined)
     
     @scala.inline
-    def deleteRegistryArn: Self = this.set("RegistryArn", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistryName(value: string): Self = this.set("RegistryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegistryName: Self = this.set("RegistryName", js.undefined)
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

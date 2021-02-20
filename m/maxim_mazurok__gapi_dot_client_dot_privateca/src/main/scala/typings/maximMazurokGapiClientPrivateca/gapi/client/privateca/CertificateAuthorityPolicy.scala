@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CertificateAuthorityPolicy extends js.Object {
+trait CertificateAuthorityPolicy extends StObject {
   
   /**
     * Optional. If any value is specified here, then all Certificates issued by the CertificateAuthority must match at least one listed value. If no value is specified, all values will be
@@ -49,66 +50,54 @@ object CertificateAuthorityPolicy {
   }
   
   @scala.inline
-  implicit class CertificateAuthorityPolicyOps[Self <: CertificateAuthorityPolicy] (val x: Self) extends AnyVal {
+  implicit class CertificateAuthorityPolicyMutableBuilder[Self <: CertificateAuthorityPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedCommonNames(value: js.Array[String]): Self = StObject.set(x, "allowedCommonNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedCommonNamesUndefined: Self = StObject.set(x, "allowedCommonNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedCommonNamesVarargs(value: String*): Self = StObject.set(x, "allowedCommonNames", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedCommonNamesVarargs(value: String*): Self = this.set("allowedCommonNames", js.Array(value :_*))
+    def setAllowedConfigList(value: AllowedConfigList): Self = StObject.set(x, "allowedConfigList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedCommonNames(value: js.Array[String]): Self = this.set("allowedCommonNames", value.asInstanceOf[js.Any])
+    def setAllowedConfigListUndefined: Self = StObject.set(x, "allowedConfigList", js.undefined)
     
     @scala.inline
-    def deleteAllowedCommonNames: Self = this.set("allowedCommonNames", js.undefined)
+    def setAllowedIssuanceModes(value: IssuanceModes): Self = StObject.set(x, "allowedIssuanceModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedConfigList(value: AllowedConfigList): Self = this.set("allowedConfigList", value.asInstanceOf[js.Any])
+    def setAllowedIssuanceModesUndefined: Self = StObject.set(x, "allowedIssuanceModes", js.undefined)
     
     @scala.inline
-    def deleteAllowedConfigList: Self = this.set("allowedConfigList", js.undefined)
+    def setAllowedLocationsAndOrganizations(value: js.Array[Subject]): Self = StObject.set(x, "allowedLocationsAndOrganizations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedIssuanceModes(value: IssuanceModes): Self = this.set("allowedIssuanceModes", value.asInstanceOf[js.Any])
+    def setAllowedLocationsAndOrganizationsUndefined: Self = StObject.set(x, "allowedLocationsAndOrganizations", js.undefined)
     
     @scala.inline
-    def deleteAllowedIssuanceModes: Self = this.set("allowedIssuanceModes", js.undefined)
+    def setAllowedLocationsAndOrganizationsVarargs(value: Subject*): Self = StObject.set(x, "allowedLocationsAndOrganizations", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedLocationsAndOrganizationsVarargs(value: Subject*): Self = this.set("allowedLocationsAndOrganizations", js.Array(value :_*))
+    def setAllowedSans(value: AllowedSubjectAltNames): Self = StObject.set(x, "allowedSans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedLocationsAndOrganizations(value: js.Array[Subject]): Self = this.set("allowedLocationsAndOrganizations", value.asInstanceOf[js.Any])
+    def setAllowedSansUndefined: Self = StObject.set(x, "allowedSans", js.undefined)
     
     @scala.inline
-    def deleteAllowedLocationsAndOrganizations: Self = this.set("allowedLocationsAndOrganizations", js.undefined)
+    def setMaximumLifetime(value: String): Self = StObject.set(x, "maximumLifetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedSans(value: AllowedSubjectAltNames): Self = this.set("allowedSans", value.asInstanceOf[js.Any])
+    def setMaximumLifetimeUndefined: Self = StObject.set(x, "maximumLifetime", js.undefined)
     
     @scala.inline
-    def deleteAllowedSans: Self = this.set("allowedSans", js.undefined)
+    def setOverwriteConfigValues(value: ReusableConfigWrapper): Self = StObject.set(x, "overwriteConfigValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumLifetime(value: String): Self = this.set("maximumLifetime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumLifetime: Self = this.set("maximumLifetime", js.undefined)
-    
-    @scala.inline
-    def setOverwriteConfigValues(value: ReusableConfigWrapper): Self = this.set("overwriteConfigValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverwriteConfigValues: Self = this.set("overwriteConfigValues", js.undefined)
+    def setOverwriteConfigValuesUndefined: Self = StObject.set(x, "overwriteConfigValues", js.undefined)
   }
 }

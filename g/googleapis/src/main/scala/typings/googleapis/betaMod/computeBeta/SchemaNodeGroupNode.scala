@@ -1,11 +1,12 @@
 package typings.googleapis.betaMod.computeBeta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaNodeGroupNode extends js.Object {
+trait SchemaNodeGroupNode extends StObject {
   
   /**
     * Instances scheduled on this node.
@@ -38,51 +39,39 @@ object SchemaNodeGroupNode {
   }
   
   @scala.inline
-  implicit class SchemaNodeGroupNodeOps[Self <: SchemaNodeGroupNode] (val x: Self) extends AnyVal {
+  implicit class SchemaNodeGroupNodeMutableBuilder[Self <: SchemaNodeGroupNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
     
     @scala.inline
-    def setInstancesVarargs(value: String*): Self = this.set("instances", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstances(value: js.Array[String]): Self = this.set("instances", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteInstances: Self = this.set("instances", js.undefined)
+    def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNodeTypeUndefined: Self = StObject.set(x, "nodeType", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setServerBinding(value: SchemaServerBinding): Self = StObject.set(x, "serverBinding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeType(value: String): Self = this.set("nodeType", value.asInstanceOf[js.Any])
+    def setServerBindingUndefined: Self = StObject.set(x, "serverBinding", js.undefined)
     
     @scala.inline
-    def deleteNodeType: Self = this.set("nodeType", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerBinding(value: SchemaServerBinding): Self = this.set("serverBinding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerBinding: Self = this.set("serverBinding", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

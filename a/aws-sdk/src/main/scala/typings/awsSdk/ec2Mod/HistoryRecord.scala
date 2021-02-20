@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HistoryRecord extends js.Object {
+trait HistoryRecord extends StObject {
   
   /**
     * Information about the event.
@@ -31,36 +32,24 @@ object HistoryRecord {
   }
   
   @scala.inline
-  implicit class HistoryRecordOps[Self <: HistoryRecord] (val x: Self) extends AnyVal {
+  implicit class HistoryRecordMutableBuilder[Self <: HistoryRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventInformation(value: EventInformation): Self = StObject.set(x, "EventInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventInformationUndefined: Self = StObject.set(x, "EventInformation", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventType(value: EventType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventInformation(value: EventInformation): Self = this.set("EventInformation", value.asInstanceOf[js.Any])
+    def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
     
     @scala.inline
-    def deleteEventInformation: Self = this.set("EventInformation", js.undefined)
+    def setTimestamp(value: DateTime): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventType(value: EventType): Self = this.set("EventType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventType: Self = this.set("EventType", js.undefined)
-    
-    @scala.inline
-    def setTimestamp(value: DateTime): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

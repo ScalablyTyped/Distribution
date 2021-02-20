@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TokenValidityUnitsType extends js.Object {
+trait TokenValidityUnitsType extends StObject {
   
   /**
     *  A time unit in “seconds”, “minutes”, “hours” or “days” for the value in AccessTokenValidity, defaults to hours.
@@ -31,36 +32,24 @@ object TokenValidityUnitsType {
   }
   
   @scala.inline
-  implicit class TokenValidityUnitsTypeOps[Self <: TokenValidityUnitsType] (val x: Self) extends AnyVal {
+  implicit class TokenValidityUnitsTypeMutableBuilder[Self <: TokenValidityUnitsType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: TimeUnitsType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenUndefined: Self = StObject.set(x, "AccessToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdToken(value: TimeUnitsType): Self = StObject.set(x, "IdToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessToken(value: TimeUnitsType): Self = this.set("AccessToken", value.asInstanceOf[js.Any])
+    def setIdTokenUndefined: Self = StObject.set(x, "IdToken", js.undefined)
     
     @scala.inline
-    def deleteAccessToken: Self = this.set("AccessToken", js.undefined)
+    def setRefreshToken(value: TimeUnitsType): Self = StObject.set(x, "RefreshToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdToken(value: TimeUnitsType): Self = this.set("IdToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdToken: Self = this.set("IdToken", js.undefined)
-    
-    @scala.inline
-    def setRefreshToken(value: TimeUnitsType): Self = this.set("RefreshToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefreshToken: Self = this.set("RefreshToken", js.undefined)
+    def setRefreshTokenUndefined: Self = StObject.set(x, "RefreshToken", js.undefined)
   }
 }

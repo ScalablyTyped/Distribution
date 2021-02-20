@@ -3,12 +3,13 @@ package typings.chartJs.mod
 import typings.chartJs.chartJsStrings.auto
 import typings.chartJs.chartJsStrings.data
 import typings.chartJs.chartJsStrings.labels
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NestedTickOptions extends js.Object {
+trait NestedTickOptions extends StObject {
   
   var autoSkip: js.UndefOr[Boolean] = js.native
   
@@ -91,194 +92,182 @@ object NestedTickOptions {
   }
   
   @scala.inline
-  implicit class NestedTickOptionsOps[Self <: NestedTickOptions] (val x: Self) extends AnyVal {
+  implicit class NestedTickOptionsMutableBuilder[Self <: NestedTickOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoSkip(value: Boolean): Self = StObject.set(x, "autoSkip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoSkipPadding(value: Double): Self = StObject.set(x, "autoSkipPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoSkipPaddingUndefined: Self = StObject.set(x, "autoSkipPadding", js.undefined)
     
     @scala.inline
-    def setAutoSkip(value: Boolean): Self = this.set("autoSkip", value.asInstanceOf[js.Any])
+    def setAutoSkipUndefined: Self = StObject.set(x, "autoSkip", js.undefined)
     
     @scala.inline
-    def deleteAutoSkip: Self = this.set("autoSkip", js.undefined)
+    def setBackdropColor(value: ChartColor): Self = StObject.set(x, "backdropColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSkipPadding(value: Double): Self = this.set("autoSkipPadding", value.asInstanceOf[js.Any])
+    def setBackdropColorUndefined: Self = StObject.set(x, "backdropColor", js.undefined)
     
     @scala.inline
-    def deleteAutoSkipPadding: Self = this.set("autoSkipPadding", js.undefined)
+    def setBackdropColorVarargs(value: String*): Self = StObject.set(x, "backdropColor", js.Array(value :_*))
     
     @scala.inline
-    def setBackdropColorVarargs(value: String*): Self = this.set("backdropColor", js.Array(value :_*))
+    def setBackdropPaddingX(value: Double): Self = StObject.set(x, "backdropPaddingX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackdropColor(value: ChartColor): Self = this.set("backdropColor", value.asInstanceOf[js.Any])
+    def setBackdropPaddingXUndefined: Self = StObject.set(x, "backdropPaddingX", js.undefined)
     
     @scala.inline
-    def deleteBackdropColor: Self = this.set("backdropColor", js.undefined)
+    def setBackdropPaddingY(value: Double): Self = StObject.set(x, "backdropPaddingY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackdropPaddingX(value: Double): Self = this.set("backdropPaddingX", value.asInstanceOf[js.Any])
+    def setBackdropPaddingYUndefined: Self = StObject.set(x, "backdropPaddingY", js.undefined)
     
     @scala.inline
-    def deleteBackdropPaddingX: Self = this.set("backdropPaddingX", js.undefined)
+    def setBeginAtZero(value: Boolean): Self = StObject.set(x, "beginAtZero", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackdropPaddingY(value: Double): Self = this.set("backdropPaddingY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBackdropPaddingY: Self = this.set("backdropPaddingY", js.undefined)
-    
-    @scala.inline
-    def setBeginAtZero(value: Boolean): Self = this.set("beginAtZero", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBeginAtZero: Self = this.set("beginAtZero", js.undefined)
+    def setBeginAtZeroUndefined: Self = StObject.set(x, "beginAtZero", js.undefined)
     
     @scala.inline
     def setCallback(
       value: (/* value */ Double | String, /* index */ Double, /* values */ js.Array[Double | String]) => js.UndefOr[String | Double | Null]
-    ): Self = this.set("callback", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def setDisplay(value: Boolean): Self = this.set("display", value.asInstanceOf[js.Any])
+    def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def setFontColorVarargs(value: String*): Self = this.set("fontColor", js.Array(value :_*))
+    def setFontColor(value: ChartColor): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontColor(value: ChartColor): Self = this.set("fontColor", value.asInstanceOf[js.Any])
+    def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
     
     @scala.inline
-    def deleteFontColor: Self = this.set("fontColor", js.undefined)
+    def setFontColorVarargs(value: String*): Self = StObject.set(x, "fontColor", js.Array(value :_*))
     
     @scala.inline
-    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
     @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def setFontStyle(value: String): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def setLabelOffset(value: Double): Self = this.set("labelOffset", value.asInstanceOf[js.Any])
+    def setLabelOffset(value: Double): Self = StObject.set(x, "labelOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelOffset: Self = this.set("labelOffset", js.undefined)
+    def setLabelOffsetUndefined: Self = StObject.set(x, "labelOffset", js.undefined)
     
     @scala.inline
-    def setLineHeight(value: Double): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLineHeight: Self = this.set("lineHeight", js.undefined)
+    def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
     @scala.inline
-    def setMax(value: js.Any): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMax(value: js.Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMaxRotation(value: Double): Self = StObject.set(x, "maxRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRotation(value: Double): Self = this.set("maxRotation", value.asInstanceOf[js.Any])
+    def setMaxRotationUndefined: Self = StObject.set(x, "maxRotation", js.undefined)
     
     @scala.inline
-    def deleteMaxRotation: Self = this.set("maxRotation", js.undefined)
+    def setMaxTicksLimit(value: Double): Self = StObject.set(x, "maxTicksLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTicksLimit(value: Double): Self = this.set("maxTicksLimit", value.asInstanceOf[js.Any])
+    def setMaxTicksLimitUndefined: Self = StObject.set(x, "maxTicksLimit", js.undefined)
     
     @scala.inline
-    def deleteMaxTicksLimit: Self = this.set("maxTicksLimit", js.undefined)
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def setMin(value: js.Any): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setMin(value: js.Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setMinRotation(value: Double): Self = StObject.set(x, "minRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinRotation(value: Double): Self = this.set("minRotation", value.asInstanceOf[js.Any])
+    def setMinRotationUndefined: Self = StObject.set(x, "minRotation", js.undefined)
     
     @scala.inline
-    def deleteMinRotation: Self = this.set("minRotation", js.undefined)
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def setMirror(value: Boolean): Self = this.set("mirror", value.asInstanceOf[js.Any])
+    def setMirror(value: Boolean): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMirror: Self = this.set("mirror", js.undefined)
+    def setMirrorUndefined: Self = StObject.set(x, "mirror", js.undefined)
     
     @scala.inline
-    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def setReverse(value: Boolean): Self = this.set("reverse", value.asInstanceOf[js.Any])
+    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReverse: Self = this.set("reverse", js.undefined)
+    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
     @scala.inline
-    def setSampleSize(value: Double): Self = this.set("sampleSize", value.asInstanceOf[js.Any])
+    def setSampleSize(value: Double): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSampleSize: Self = this.set("sampleSize", js.undefined)
+    def setSampleSizeUndefined: Self = StObject.set(x, "sampleSize", js.undefined)
     
     @scala.inline
-    def setShowLabelBackdrop(value: Boolean): Self = this.set("showLabelBackdrop", value.asInstanceOf[js.Any])
+    def setShowLabelBackdrop(value: Boolean): Self = StObject.set(x, "showLabelBackdrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowLabelBackdrop: Self = this.set("showLabelBackdrop", js.undefined)
+    def setShowLabelBackdropUndefined: Self = StObject.set(x, "showLabelBackdrop", js.undefined)
     
     @scala.inline
-    def setSource(value: auto | data | labels): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: auto | data | labels): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setStepSize(value: Double): Self = this.set("stepSize", value.asInstanceOf[js.Any])
+    def setStepSize(value: Double): Self = StObject.set(x, "stepSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStepSize: Self = this.set("stepSize", js.undefined)
+    def setStepSizeUndefined: Self = StObject.set(x, "stepSize", js.undefined)
     
     @scala.inline
-    def setSuggestedMax(value: Double): Self = this.set("suggestedMax", value.asInstanceOf[js.Any])
+    def setSuggestedMax(value: Double): Self = StObject.set(x, "suggestedMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSuggestedMax: Self = this.set("suggestedMax", js.undefined)
+    def setSuggestedMaxUndefined: Self = StObject.set(x, "suggestedMax", js.undefined)
     
     @scala.inline
-    def setSuggestedMin(value: Double): Self = this.set("suggestedMin", value.asInstanceOf[js.Any])
+    def setSuggestedMin(value: Double): Self = StObject.set(x, "suggestedMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSuggestedMin: Self = this.set("suggestedMin", js.undefined)
+    def setSuggestedMinUndefined: Self = StObject.set(x, "suggestedMin", js.undefined)
   }
 }

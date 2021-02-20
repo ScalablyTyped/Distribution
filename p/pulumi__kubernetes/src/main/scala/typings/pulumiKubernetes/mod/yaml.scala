@@ -7,17 +7,14 @@ import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Output_
 import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes", "yaml")
-@js.native
-object yaml extends js.Object {
+object yaml {
   
-  def parse(config: ConfigGroupOpts): Output_[StringDictionary[CustomResource]] = js.native
-  def parse(config: ConfigGroupOpts, opts: CustomResourceOptions): Output_[StringDictionary[CustomResource]] = js.native
-  
+  @JSImport("@pulumi/kubernetes", "yaml.CollectionComponentResource")
   @js.native
   abstract class CollectionComponentResource protected ()
     extends typings.pulumiKubernetes.yamlMod.CollectionComponentResource {
@@ -25,6 +22,7 @@ object yaml extends js.Object {
     protected def this(resourceType: String, name: String, config: js.Any, opts: ComponentResourceOptions) = this()
   }
   
+  @JSImport("@pulumi/kubernetes", "yaml.ConfigFile")
   @js.native
   class ConfigFile protected ()
     extends typings.pulumiKubernetes.yamlMod.ConfigFile {
@@ -41,6 +39,7 @@ object yaml extends js.Object {
     def this(name: String, config: ConfigFileOpts, opts: ComponentResourceOptions) = this()
   }
   
+  @JSImport("@pulumi/kubernetes", "yaml.ConfigGroup")
   @js.native
   class ConfigGroup protected ()
     extends typings.pulumiKubernetes.yamlMod.ConfigGroup {
@@ -54,4 +53,11 @@ object yaml extends js.Object {
     def this(name: String, config: ConfigGroupOpts) = this()
     def this(name: String, config: ConfigGroupOpts, opts: ComponentResourceOptions) = this()
   }
+  
+  @JSImport("@pulumi/kubernetes", "yaml.parse")
+  @js.native
+  def parse(config: ConfigGroupOpts): Output_[StringDictionary[CustomResource]] = js.native
+  @JSImport("@pulumi/kubernetes", "yaml.parse")
+  @js.native
+  def parse(config: ConfigGroupOpts, opts: CustomResourceOptions): Output_[StringDictionary[CustomResource]] = js.native
 }

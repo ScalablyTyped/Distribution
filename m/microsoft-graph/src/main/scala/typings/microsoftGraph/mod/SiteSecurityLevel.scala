@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.mediumHigh
   - typings.microsoftGraph.microsoftGraphStrings.high
 */
-trait SiteSecurityLevel extends js.Object
+trait SiteSecurityLevel extends StObject
 object SiteSecurityLevel {
   
   @scala.inline

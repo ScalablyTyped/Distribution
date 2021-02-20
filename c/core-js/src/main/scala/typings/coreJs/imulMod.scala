@@ -1,11 +1,14 @@
 package typings.coreJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/fn/math/imul", JSImport.Namespace)
-@js.native
-object imulMod
-  extends TopLevel[js.Function2[/* x */ Double, /* y */ Double, Double]]
+object imulMod {
+  
+  /* was `typeof core.Math.imul` */
+  @JSImport("core-js/fn/math/imul", JSImport.Namespace)
+  @js.native
+  def apply(x: Double, y: Double): Double = js.native
+}

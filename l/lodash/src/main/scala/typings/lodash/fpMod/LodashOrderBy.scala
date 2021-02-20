@@ -7,12 +7,13 @@ import typings.lodash.mod.Many
 import typings.lodash.mod.NotVoid
 import typings.lodash.mod.ValueIteratee
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashOrderBy extends js.Object {
+trait LodashOrderBy extends StObject {
   
   def apply(iteratees: __, orders: Many[Boolean | asc | desc]): LodashOrderBy1x2 = js.native
   def apply[T](iteratees: Many[js.Function1[/* value */ T, NotVoid]]): LodashOrderBy1x1[T] = js.native

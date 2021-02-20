@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
   */
 @js.native
-trait PlusUploaderUploadEvent extends js.Object {
+trait PlusUploaderUploadEvent extends StObject {
   
   /**
     * 上传任务状态变化事件
@@ -29,24 +30,12 @@ object PlusUploaderUploadEvent {
   }
   
   @scala.inline
-  implicit class PlusUploaderUploadEventOps[Self <: PlusUploaderUploadEvent] (val x: Self) extends AnyVal {
+  implicit class PlusUploaderUploadEventMutableBuilder[Self <: PlusUploaderUploadEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStatechanged(value: String): Self = StObject.set(x, "statechanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStatechanged(value: String): Self = this.set("statechanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatechanged: Self = this.set("statechanged", js.undefined)
+    def setStatechangedUndefined: Self = StObject.set(x, "statechanged", js.undefined)
   }
 }

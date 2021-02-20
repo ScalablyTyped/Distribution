@@ -1,11 +1,12 @@
 package typings.filesystem
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalFileSystemSync extends js.Object {
+trait LocalFileSystemSync extends StObject {
   
   /**
     * Used for storage that should not be removed by the user agent without application or user permission.
@@ -50,33 +51,21 @@ object LocalFileSystemSync {
   }
   
   @scala.inline
-  implicit class LocalFileSystemSyncOps[Self <: LocalFileSystemSync] (val x: Self) extends AnyVal {
+  implicit class LocalFileSystemSyncMutableBuilder[Self <: LocalFileSystemSync] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPERSISTENT(value: Double): Self = StObject.set(x, "PERSISTENT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequestFileSystemSync(value: (Double, Double) => FileSystemSync): Self = StObject.set(x, "requestFileSystemSync", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResolveLocalFileSystemSyncURL(value: String => EntrySync): Self = StObject.set(x, "resolveLocalFileSystemSyncURL", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPERSISTENT(value: Double): Self = this.set("PERSISTENT", value.asInstanceOf[js.Any])
+    def setTEMPORARY(value: Double): Self = StObject.set(x, "TEMPORARY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTEMPORARY(value: Double): Self = this.set("TEMPORARY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestFileSystemSync(value: (Double, Double) => FileSystemSync): Self = this.set("requestFileSystemSync", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setResolveLocalFileSystemSyncURL(value: String => EntrySync): Self = this.set("resolveLocalFileSystemSyncURL", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWebkitRequestFileSystemSync(value: (Double, Double) => FileSystemSync): Self = this.set("webkitRequestFileSystemSync", js.Any.fromFunction2(value))
+    def setWebkitRequestFileSystemSync(value: (Double, Double) => FileSystemSync): Self = StObject.set(x, "webkitRequestFileSystemSync", js.Any.fromFunction2(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.DOMSnapshot
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentSnapshot extends js.Object {
+trait DocumentSnapshot extends StObject {
   
   /**
     * Base URL that `Document` or `FrameOwner` node uses for URL completion.
@@ -103,75 +104,63 @@ object DocumentSnapshot {
   }
   
   @scala.inline
-  implicit class DocumentSnapshotOps[Self <: DocumentSnapshot] (val x: Self) extends AnyVal {
+  implicit class DocumentSnapshotMutableBuilder[Self <: DocumentSnapshot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseURL(value: StringIndex): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentHeight(value: Double): Self = StObject.set(x, "contentHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentHeightUndefined: Self = StObject.set(x, "contentHeight", js.undefined)
     
     @scala.inline
-    def setBaseURL(value: StringIndex): Self = this.set("baseURL", value.asInstanceOf[js.Any])
+    def setContentLanguage(value: StringIndex): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentLanguage(value: StringIndex): Self = this.set("contentLanguage", value.asInstanceOf[js.Any])
+    def setContentWidth(value: Double): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentURL(value: StringIndex): Self = this.set("documentURL", value.asInstanceOf[js.Any])
+    def setContentWidthUndefined: Self = StObject.set(x, "contentWidth", js.undefined)
     
     @scala.inline
-    def setEncodingName(value: StringIndex): Self = this.set("encodingName", value.asInstanceOf[js.Any])
+    def setDocumentURL(value: StringIndex): Self = StObject.set(x, "documentURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameId(value: StringIndex): Self = this.set("frameId", value.asInstanceOf[js.Any])
+    def setEncodingName(value: StringIndex): Self = StObject.set(x, "encodingName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: LayoutTreeSnapshot): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setFrameId(value: StringIndex): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodes(value: NodeTreeSnapshot): Self = this.set("nodes", value.asInstanceOf[js.Any])
+    def setLayout(value: LayoutTreeSnapshot): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicId(value: StringIndex): Self = this.set("publicId", value.asInstanceOf[js.Any])
+    def setNodes(value: NodeTreeSnapshot): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemId(value: StringIndex): Self = this.set("systemId", value.asInstanceOf[js.Any])
+    def setPublicId(value: StringIndex): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextBoxes(value: TextBoxSnapshot): Self = this.set("textBoxes", value.asInstanceOf[js.Any])
+    def setScrollOffsetX(value: Double): Self = StObject.set(x, "scrollOffsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: StringIndex): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setScrollOffsetXUndefined: Self = StObject.set(x, "scrollOffsetX", js.undefined)
     
     @scala.inline
-    def setContentHeight(value: Double): Self = this.set("contentHeight", value.asInstanceOf[js.Any])
+    def setScrollOffsetY(value: Double): Self = StObject.set(x, "scrollOffsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentHeight: Self = this.set("contentHeight", js.undefined)
+    def setScrollOffsetYUndefined: Self = StObject.set(x, "scrollOffsetY", js.undefined)
     
     @scala.inline
-    def setContentWidth(value: Double): Self = this.set("contentWidth", value.asInstanceOf[js.Any])
+    def setSystemId(value: StringIndex): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentWidth: Self = this.set("contentWidth", js.undefined)
+    def setTextBoxes(value: TextBoxSnapshot): Self = StObject.set(x, "textBoxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollOffsetX(value: Double): Self = this.set("scrollOffsetX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollOffsetX: Self = this.set("scrollOffsetX", js.undefined)
-    
-    @scala.inline
-    def setScrollOffsetY(value: Double): Self = this.set("scrollOffsetY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollOffsetY: Self = this.set("scrollOffsetY", js.undefined)
+    def setTitle(value: StringIndex): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

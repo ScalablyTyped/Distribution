@@ -1,5 +1,6 @@
 package typings.vscodeLanguageclient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,48 +27,36 @@ object NodeModule {
   }
   
   @scala.inline
-  implicit class NodeModuleOps[Self <: NodeModule] (val x: Self) extends AnyVal {
+  implicit class NodeModuleMutableBuilder[Self <: NodeModule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def setModule(value: String): Self = this.set("module", value.asInstanceOf[js.Any])
+    def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    def setOptions(value: ForkOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
+    def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: ForkOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuntime(value: String): Self = this.set("runtime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuntime: Self = this.set("runtime", js.undefined)
-    
-    @scala.inline
-    def setTransport(value: Transport): Self = this.set("transport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransport: Self = this.set("transport", js.undefined)
+    def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
   }
 }

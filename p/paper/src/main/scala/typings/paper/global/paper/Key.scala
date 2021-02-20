@@ -1,5 +1,6 @@
 package typings.paper.global.paper
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Key ()
   extends typings.paper.paper.Key
-/* static members */
-@JSGlobal("paper.Key")
-@js.native
-object Key extends js.Object {
+object Key {
+  
+  @JSGlobal("paper.Key")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** 
     * Checks whether the specified key is pressed.
@@ -23,6 +25,9 @@ object Key extends js.Object {
     * 
     * @return true if the key is pressed
     */
+  /* static member */
+  @JSGlobal("paper.Key.isDown")
+  @js.native
   def isDown(key: String): Boolean = js.native
   
   /** 
@@ -45,5 +50,10 @@ object Key extends js.Object {
     * @option modifiers.command {Boolean} {@true if the meta key is pressed
     *     on Mac, or the control key is pressed on Windows and Linux}.
     */
-  var modifiers: js.Any = js.native
+  /* static member */
+  @JSGlobal("paper.Key.modifiers")
+  @js.native
+  def modifiers: js.Any = js.native
+  @scala.inline
+  def modifiers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modifiers")(x.asInstanceOf[js.Any])
 }

@@ -6,16 +6,16 @@ import typings.typeorm.typeormStrings.`advanced-console`
 import typings.typeorm.typeormStrings.`simple-console`
 import typings.typeorm.typeormStrings.debug
 import typings.typeorm.typeormStrings.file
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/logger/LoggerFactory", JSImport.Namespace)
-@js.native
-object loggerLoggerFactoryMod extends js.Object {
+object loggerLoggerFactoryMod {
   
+  @JSImport("typeorm/logger/LoggerFactory", "LoggerFactory")
   @js.native
-  class LoggerFactory () extends js.Object {
+  class LoggerFactory () extends StObject {
     
     /**
       * Creates a new logger depend on a given connection's driver.

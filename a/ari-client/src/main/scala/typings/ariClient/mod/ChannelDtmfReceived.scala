@@ -1,6 +1,7 @@
 package typings.ariClient.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,27 +41,15 @@ object ChannelDtmfReceived {
   }
   
   @scala.inline
-  implicit class ChannelDtmfReceivedOps[Self <: ChannelDtmfReceived] (val x: Self) extends AnyVal {
+  implicit class ChannelDtmfReceivedMutableBuilder[Self <: ChannelDtmfReceived] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDigit(value: String): Self = StObject.set(x, "digit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChannel(value: Channel): Self = this.set("channel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDigit(value: String): Self = this.set("digit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDuration_ms(value: Double): Self = this.set("duration_ms", value.asInstanceOf[js.Any])
+    def setDuration_ms(value: Double): Self = StObject.set(x, "duration_ms", value.asInstanceOf[js.Any])
   }
 }

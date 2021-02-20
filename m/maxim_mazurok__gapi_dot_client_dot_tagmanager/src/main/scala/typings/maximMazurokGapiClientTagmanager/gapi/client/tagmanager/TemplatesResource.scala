@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientTagmanager.anon.AltCallback
 import typings.maximMazurokGapiClientTagmanager.anon.Callback
 import typings.maximMazurokGapiClientTagmanager.anon.Fields
 import typings.maximMazurokGapiClientTagmanager.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemplatesResource extends js.Object {
+trait TemplatesResource extends StObject {
   
   /** Creates a GTM Custom Template. */
   def create(request: AccesstokenAlt): Request[CustomTemplate] = js.native

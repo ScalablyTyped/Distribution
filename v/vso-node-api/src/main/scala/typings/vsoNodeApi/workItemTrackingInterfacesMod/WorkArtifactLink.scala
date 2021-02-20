@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkArtifactLink extends js.Object {
+trait WorkArtifactLink extends StObject {
   
   /**
     * Target artifact type.
@@ -31,27 +32,15 @@ object WorkArtifactLink {
   }
   
   @scala.inline
-  implicit class WorkArtifactLinkOps[Self <: WorkArtifactLink] (val x: Self) extends AnyVal {
+  implicit class WorkArtifactLinkMutableBuilder[Self <: WorkArtifactLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifactType(value: String): Self = StObject.set(x, "artifactType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLinkType(value: String): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArtifactType(value: String): Self = this.set("artifactType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLinkType(value: String): Self = this.set("linkType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToolType(value: String): Self = this.set("toolType", value.asInstanceOf[js.Any])
+    def setToolType(value: String): Self = StObject.set(x, "toolType", value.asInstanceOf[js.Any])
   }
 }

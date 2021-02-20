@@ -1,11 +1,12 @@
 package typings.node.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cflags extends js.Object {
+trait Cflags extends StObject {
   
   var cflags: js.Array[_] = js.native
   
@@ -32,45 +33,33 @@ object Cflags {
   }
   
   @scala.inline
-  implicit class CflagsOps[Self <: Cflags] (val x: Self) extends AnyVal {
+  implicit class CflagsMutableBuilder[Self <: Cflags] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCflags(value: js.Array[_]): Self = StObject.set(x, "cflags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCflagsVarargs(value: js.Any*): Self = StObject.set(x, "cflags", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefault_configuration(value: String): Self = StObject.set(x, "default_configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCflagsVarargs(value: js.Any*): Self = this.set("cflags", js.Array(value :_*))
+    def setDefines(value: js.Array[String]): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCflags(value: js.Array[_]): Self = this.set("cflags", value.asInstanceOf[js.Any])
+    def setDefinesVarargs(value: String*): Self = StObject.set(x, "defines", js.Array(value :_*))
     
     @scala.inline
-    def setDefault_configuration(value: String): Self = this.set("default_configuration", value.asInstanceOf[js.Any])
+    def setInclude_dirs(value: js.Array[String]): Self = StObject.set(x, "include_dirs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinesVarargs(value: String*): Self = this.set("defines", js.Array(value :_*))
+    def setInclude_dirsVarargs(value: String*): Self = StObject.set(x, "include_dirs", js.Array(value :_*))
     
     @scala.inline
-    def setDefines(value: js.Array[String]): Self = this.set("defines", value.asInstanceOf[js.Any])
+    def setLibraries(value: js.Array[String]): Self = StObject.set(x, "libraries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude_dirsVarargs(value: String*): Self = this.set("include_dirs", js.Array(value :_*))
-    
-    @scala.inline
-    def setInclude_dirs(value: js.Array[String]): Self = this.set("include_dirs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLibrariesVarargs(value: String*): Self = this.set("libraries", js.Array(value :_*))
-    
-    @scala.inline
-    def setLibraries(value: js.Array[String]): Self = this.set("libraries", value.asInstanceOf[js.Any])
+    def setLibrariesVarargs(value: String*): Self = StObject.set(x, "libraries", js.Array(value :_*))
   }
 }

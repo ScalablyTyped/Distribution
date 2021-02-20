@@ -4,14 +4,17 @@ import typings.cookieSession.CookieSessionInterfaces.CookieSessionOptions
 import typings.express.mod.RequestHandler
 import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cookie-session", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("cookie-session", JSImport.Namespace)
+  @js.native
   def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @JSImport("cookie-session", JSImport.Namespace)
+  @js.native
   def apply(options: CookieSessionOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
 }

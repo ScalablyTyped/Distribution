@@ -3,12 +3,13 @@ package typings.angularRouter.mod
 import typings.angularCore.mod.NgModuleFactory
 import typings.angularCore.mod.Type
 import typings.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Route extends js.Object {
+trait Route extends StObject {
   
   /**
     * An array of dependency-injection tokens used to look up `CanActivate()`
@@ -129,133 +130,121 @@ object Route {
   }
   
   @scala.inline
-  implicit class RouteOps[Self <: Route] (val x: Self) extends AnyVal {
+  implicit class RouteMutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanActivate(value: js.Array[_]): Self = StObject.set(x, "canActivate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanActivateChild(value: js.Array[_]): Self = StObject.set(x, "canActivateChild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanActivateChildUndefined: Self = StObject.set(x, "canActivateChild", js.undefined)
     
     @scala.inline
-    def setCanActivateVarargs(value: js.Any*): Self = this.set("canActivate", js.Array(value :_*))
+    def setCanActivateChildVarargs(value: js.Any*): Self = StObject.set(x, "canActivateChild", js.Array(value :_*))
     
     @scala.inline
-    def setCanActivate(value: js.Array[_]): Self = this.set("canActivate", value.asInstanceOf[js.Any])
+    def setCanActivateUndefined: Self = StObject.set(x, "canActivate", js.undefined)
     
     @scala.inline
-    def deleteCanActivate: Self = this.set("canActivate", js.undefined)
+    def setCanActivateVarargs(value: js.Any*): Self = StObject.set(x, "canActivate", js.Array(value :_*))
     
     @scala.inline
-    def setCanActivateChildVarargs(value: js.Any*): Self = this.set("canActivateChild", js.Array(value :_*))
+    def setCanDeactivate(value: js.Array[_]): Self = StObject.set(x, "canDeactivate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanActivateChild(value: js.Array[_]): Self = this.set("canActivateChild", value.asInstanceOf[js.Any])
+    def setCanDeactivateUndefined: Self = StObject.set(x, "canDeactivate", js.undefined)
     
     @scala.inline
-    def deleteCanActivateChild: Self = this.set("canActivateChild", js.undefined)
+    def setCanDeactivateVarargs(value: js.Any*): Self = StObject.set(x, "canDeactivate", js.Array(value :_*))
     
     @scala.inline
-    def setCanDeactivateVarargs(value: js.Any*): Self = this.set("canDeactivate", js.Array(value :_*))
+    def setCanLoad(value: js.Array[_]): Self = StObject.set(x, "canLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanDeactivate(value: js.Array[_]): Self = this.set("canDeactivate", value.asInstanceOf[js.Any])
+    def setCanLoadUndefined: Self = StObject.set(x, "canLoad", js.undefined)
     
     @scala.inline
-    def deleteCanDeactivate: Self = this.set("canDeactivate", js.undefined)
+    def setCanLoadVarargs(value: js.Any*): Self = StObject.set(x, "canLoad", js.Array(value :_*))
     
     @scala.inline
-    def setCanLoadVarargs(value: js.Any*): Self = this.set("canLoad", js.Array(value :_*))
+    def setChildren(value: Routes): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanLoad(value: js.Array[_]): Self = this.set("canLoad", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteCanLoad: Self = this.set("canLoad", js.undefined)
+    def setChildrenVarargs(value: Route*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setChildrenVarargs(value: Route*): Self = this.set("children", js.Array(value :_*))
+    def setComponent(value: Type[_]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: Routes): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponent(value: Type[_]): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteComponent: Self = this.set("component", js.undefined)
-    
-    @scala.inline
-    def setData(value: Data): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setLoadChildren(value: LoadChildren): Self = StObject.set(x, "loadChildren", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLoadChildrenFunction0(
       value: () => Type[js.Any] | NgModuleFactory[js.Any] | Observable_[Type[js.Any]] | (js.Promise[NgModuleFactory[js.Any] | Type[js.Any] | js.Any])
-    ): Self = this.set("loadChildren", js.Any.fromFunction0(value))
+    ): Self = StObject.set(x, "loadChildren", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLoadChildren(value: LoadChildren): Self = this.set("loadChildren", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoadChildren: Self = this.set("loadChildren", js.undefined)
+    def setLoadChildrenUndefined: Self = StObject.set(x, "loadChildren", js.undefined)
     
     @scala.inline
     def setMatcher(
       value: (/* segments */ js.Array[UrlSegment], /* group */ UrlSegmentGroup, /* route */ Route) => UrlMatchResult | Null
-    ): Self = this.set("matcher", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "matcher", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteMatcher: Self = this.set("matcher", js.undefined)
+    def setMatcherUndefined: Self = StObject.set(x, "matcher", js.undefined)
     
     @scala.inline
-    def setOutlet(value: String): Self = this.set("outlet", value.asInstanceOf[js.Any])
+    def setOutlet(value: String): Self = StObject.set(x, "outlet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutlet: Self = this.set("outlet", js.undefined)
+    def setOutletUndefined: Self = StObject.set(x, "outlet", js.undefined)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setPathMatch(value: String): Self = StObject.set(x, "pathMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathMatch(value: String): Self = this.set("pathMatch", value.asInstanceOf[js.Any])
+    def setPathMatchUndefined: Self = StObject.set(x, "pathMatch", js.undefined)
     
     @scala.inline
-    def deletePathMatch: Self = this.set("pathMatch", js.undefined)
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def setRedirectTo(value: String): Self = this.set("redirectTo", value.asInstanceOf[js.Any])
+    def setRedirectTo(value: String): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRedirectTo: Self = this.set("redirectTo", js.undefined)
+    def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
     
     @scala.inline
-    def setResolve(value: ResolveData): Self = this.set("resolve", value.asInstanceOf[js.Any])
+    def setResolve(value: ResolveData): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResolve: Self = this.set("resolve", js.undefined)
+    def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
     
     @scala.inline
-    def setRunGuardsAndResolversFunction2(value: (/* from */ ActivatedRouteSnapshot, /* to */ ActivatedRouteSnapshot) => Boolean): Self = this.set("runGuardsAndResolvers", js.Any.fromFunction2(value))
+    def setRunGuardsAndResolvers(value: RunGuardsAndResolvers): Self = StObject.set(x, "runGuardsAndResolvers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunGuardsAndResolvers(value: RunGuardsAndResolvers): Self = this.set("runGuardsAndResolvers", value.asInstanceOf[js.Any])
+    def setRunGuardsAndResolversFunction2(value: (/* from */ ActivatedRouteSnapshot, /* to */ ActivatedRouteSnapshot) => Boolean): Self = StObject.set(x, "runGuardsAndResolvers", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteRunGuardsAndResolvers: Self = this.set("runGuardsAndResolvers", js.undefined)
+    def setRunGuardsAndResolversUndefined: Self = StObject.set(x, "runGuardsAndResolvers", js.undefined)
   }
 }

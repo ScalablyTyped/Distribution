@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnalyticsExportDestination extends js.Object {
+trait AnalyticsExportDestination extends StObject {
   
   /**
     * A destination signifying output to an S3 bucket.
@@ -21,21 +22,9 @@ object AnalyticsExportDestination {
   }
   
   @scala.inline
-  implicit class AnalyticsExportDestinationOps[Self <: AnalyticsExportDestination] (val x: Self) extends AnyVal {
+  implicit class AnalyticsExportDestinationMutableBuilder[Self <: AnalyticsExportDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setS3BucketDestination(value: AnalyticsS3BucketDestination): Self = this.set("S3BucketDestination", value.asInstanceOf[js.Any])
+    def setS3BucketDestination(value: AnalyticsS3BucketDestination): Self = StObject.set(x, "S3BucketDestination", value.asInstanceOf[js.Any])
   }
 }

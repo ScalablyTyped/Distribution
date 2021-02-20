@@ -1,5 +1,6 @@
 package typings.extjs.Ext.form
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -97,138 +98,126 @@ object INumber {
   }
   
   @scala.inline
-  implicit class INumberOps[Self <: INumber] (val x: Self) extends AnyVal {
+  implicit class INumberMutableBuilder[Self <: INumber] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowDecimals(value: Boolean): Self = StObject.set(x, "allowDecimals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowDecimalsUndefined: Self = StObject.set(x, "allowDecimals", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowExponential(value: Boolean): Self = StObject.set(x, "allowExponential", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowDecimals(value: Boolean): Self = this.set("allowDecimals", value.asInstanceOf[js.Any])
+    def setAllowExponentialUndefined: Self = StObject.set(x, "allowExponential", js.undefined)
     
     @scala.inline
-    def deleteAllowDecimals: Self = this.set("allowDecimals", js.undefined)
+    def setAutoStripChars(value: Boolean): Self = StObject.set(x, "autoStripChars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowExponential(value: Boolean): Self = this.set("allowExponential", value.asInstanceOf[js.Any])
+    def setAutoStripCharsUndefined: Self = StObject.set(x, "autoStripChars", js.undefined)
     
     @scala.inline
-    def deleteAllowExponential: Self = this.set("allowExponential", js.undefined)
+    def setBaseChars(value: String): Self = StObject.set(x, "baseChars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoStripChars(value: Boolean): Self = this.set("autoStripChars", value.asInstanceOf[js.Any])
+    def setBaseCharsUndefined: Self = StObject.set(x, "baseChars", js.undefined)
     
     @scala.inline
-    def deleteAutoStripChars: Self = this.set("autoStripChars", js.undefined)
+    def setBeforeBlur(value: () => Unit): Self = StObject.set(x, "beforeBlur", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBaseChars(value: String): Self = this.set("baseChars", value.asInstanceOf[js.Any])
+    def setBeforeBlurUndefined: Self = StObject.set(x, "beforeBlur", js.undefined)
     
     @scala.inline
-    def deleteBaseChars: Self = this.set("baseChars", js.undefined)
+    def setDecimalPrecision(value: Double): Self = StObject.set(x, "decimalPrecision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeBlur(value: () => Unit): Self = this.set("beforeBlur", js.Any.fromFunction0(value))
+    def setDecimalPrecisionUndefined: Self = StObject.set(x, "decimalPrecision", js.undefined)
     
     @scala.inline
-    def deleteBeforeBlur: Self = this.set("beforeBlur", js.undefined)
+    def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimalPrecision(value: Double): Self = this.set("decimalPrecision", value.asInstanceOf[js.Any])
+    def setDecimalSeparatorUndefined: Self = StObject.set(x, "decimalSeparator", js.undefined)
     
     @scala.inline
-    def deleteDecimalPrecision: Self = this.set("decimalPrecision", js.undefined)
+    def setGetSubmitValue(value: () => String): Self = StObject.set(x, "getSubmitValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDecimalSeparator(value: String): Self = this.set("decimalSeparator", value.asInstanceOf[js.Any])
+    def setGetSubmitValueUndefined: Self = StObject.set(x, "getSubmitValue", js.undefined)
     
     @scala.inline
-    def deleteDecimalSeparator: Self = this.set("decimalSeparator", js.undefined)
+    def setMaxText(value: String): Self = StObject.set(x, "maxText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSubmitValue(value: () => String): Self = this.set("getSubmitValue", js.Any.fromFunction0(value))
+    def setMaxTextUndefined: Self = StObject.set(x, "maxText", js.undefined)
     
     @scala.inline
-    def deleteGetSubmitValue: Self = this.set("getSubmitValue", js.undefined)
+    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxText(value: String): Self = this.set("maxText", value.asInstanceOf[js.Any])
+    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
     @scala.inline
-    def deleteMaxText: Self = this.set("maxText", js.undefined)
+    def setMinText(value: String): Self = StObject.set(x, "minText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    def setMinTextUndefined: Self = StObject.set(x, "minText", js.undefined)
     
     @scala.inline
-    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinText(value: String): Self = this.set("minText", value.asInstanceOf[js.Any])
+    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
     @scala.inline
-    def deleteMinText: Self = this.set("minText", js.undefined)
+    def setNanText(value: String): Self = StObject.set(x, "nanText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    def setNanTextUndefined: Self = StObject.set(x, "nanText", js.undefined)
     
     @scala.inline
-    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    def setNegativeText(value: String): Self = StObject.set(x, "negativeText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNanText(value: String): Self = this.set("nanText", value.asInstanceOf[js.Any])
+    def setNegativeTextUndefined: Self = StObject.set(x, "negativeText", js.undefined)
     
     @scala.inline
-    def deleteNanText: Self = this.set("nanText", js.undefined)
+    def setSetMaxValue(value: /* value */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNegativeText(value: String): Self = this.set("negativeText", value.asInstanceOf[js.Any])
+    def setSetMaxValueUndefined: Self = StObject.set(x, "setMaxValue", js.undefined)
     
     @scala.inline
-    def deleteNegativeText: Self = this.set("negativeText", js.undefined)
+    def setSetMinValue(value: /* value */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMaxValue(value: /* value */ js.UndefOr[Double] => Unit): Self = this.set("setMaxValue", js.Any.fromFunction1(value))
+    def setSetMinValueUndefined: Self = StObject.set(x, "setMinValue", js.undefined)
     
     @scala.inline
-    def deleteSetMaxValue: Self = this.set("setMaxValue", js.undefined)
+    def setSetSpinDownEnabled(value: (/* enabled */ js.UndefOr[js.Any], /* internal */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setSpinDownEnabled", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetMinValue(value: /* value */ js.UndefOr[Double] => Unit): Self = this.set("setMinValue", js.Any.fromFunction1(value))
+    def setSetSpinDownEnabledUndefined: Self = StObject.set(x, "setSpinDownEnabled", js.undefined)
     
     @scala.inline
-    def deleteSetMinValue: Self = this.set("setMinValue", js.undefined)
+    def setSetSpinUpEnabled(value: (/* enabled */ js.UndefOr[js.Any], /* internal */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setSpinUpEnabled", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetSpinDownEnabled(value: (/* enabled */ js.UndefOr[js.Any], /* internal */ js.UndefOr[js.Any]) => Unit): Self = this.set("setSpinDownEnabled", js.Any.fromFunction2(value))
+    def setSetSpinUpEnabledUndefined: Self = StObject.set(x, "setSpinUpEnabled", js.undefined)
     
     @scala.inline
-    def deleteSetSpinDownEnabled: Self = this.set("setSpinDownEnabled", js.undefined)
+    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetSpinUpEnabled(value: (/* enabled */ js.UndefOr[js.Any], /* internal */ js.UndefOr[js.Any]) => Unit): Self = this.set("setSpinUpEnabled", js.Any.fromFunction2(value))
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     @scala.inline
-    def deleteSetSpinUpEnabled: Self = this.set("setSpinUpEnabled", js.undefined)
+    def setSubmitLocaleSeparator(value: Boolean): Self = StObject.set(x, "submitLocaleSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
-    
-    @scala.inline
-    def setSubmitLocaleSeparator(value: Boolean): Self = this.set("submitLocaleSeparator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubmitLocaleSeparator: Self = this.set("submitLocaleSeparator", js.undefined)
+    def setSubmitLocaleSeparatorUndefined: Self = StObject.set(x, "submitLocaleSeparator", js.undefined)
   }
 }

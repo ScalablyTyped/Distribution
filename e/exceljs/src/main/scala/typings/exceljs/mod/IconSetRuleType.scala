@@ -1,6 +1,7 @@
 package typings.exceljs.mod
 
 import typings.exceljs.exceljsStrings.iconSet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,54 +33,42 @@ object IconSetRuleType {
   }
   
   @scala.inline
-  implicit class IconSetRuleTypeOps[Self <: IconSetRuleType] (val x: Self) extends AnyVal {
+  implicit class IconSetRuleTypeMutableBuilder[Self <: IconSetRuleType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCfvo(value: js.Array[Cvfo]): Self = StObject.set(x, "cfvo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCfvoUndefined: Self = StObject.set(x, "cfvo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCfvoVarargs(value: Cvfo*): Self = StObject.set(x, "cfvo", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: iconSet): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setCustom(value: Boolean): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCfvoVarargs(value: Cvfo*): Self = this.set("cfvo", js.Array(value :_*))
+    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     @scala.inline
-    def setCfvo(value: js.Array[Cvfo]): Self = this.set("cfvo", value.asInstanceOf[js.Any])
+    def setIconSet(value: IconSetTypes): Self = StObject.set(x, "iconSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCfvo: Self = this.set("cfvo", js.undefined)
+    def setIconSetUndefined: Self = StObject.set(x, "iconSet", js.undefined)
     
     @scala.inline
-    def setCustom(value: Boolean): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustom: Self = this.set("custom", js.undefined)
+    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
     @scala.inline
-    def setIconSet(value: IconSetTypes): Self = this.set("iconSet", value.asInstanceOf[js.Any])
+    def setShowValue(value: Boolean): Self = StObject.set(x, "showValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIconSet: Self = this.set("iconSet", js.undefined)
+    def setShowValueUndefined: Self = StObject.set(x, "showValue", js.undefined)
     
     @scala.inline
-    def setReverse(value: Boolean): Self = this.set("reverse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReverse: Self = this.set("reverse", js.undefined)
-    
-    @scala.inline
-    def setShowValue(value: Boolean): Self = this.set("showValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowValue: Self = this.set("showValue", js.undefined)
+    def setType(value: iconSet): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

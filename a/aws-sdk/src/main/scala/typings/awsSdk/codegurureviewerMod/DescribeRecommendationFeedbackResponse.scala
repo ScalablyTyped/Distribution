@@ -1,11 +1,12 @@
 package typings.awsSdk.codegurureviewerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeRecommendationFeedbackResponse extends js.Object {
+trait DescribeRecommendationFeedbackResponse extends StObject {
   
   /**
     *  The recommendation feedback given by the user. 
@@ -21,24 +22,12 @@ object DescribeRecommendationFeedbackResponse {
   }
   
   @scala.inline
-  implicit class DescribeRecommendationFeedbackResponseOps[Self <: DescribeRecommendationFeedbackResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeRecommendationFeedbackResponseMutableBuilder[Self <: DescribeRecommendationFeedbackResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecommendationFeedback(value: RecommendationFeedback): Self = StObject.set(x, "RecommendationFeedback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRecommendationFeedback(value: RecommendationFeedback): Self = this.set("RecommendationFeedback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecommendationFeedback: Self = this.set("RecommendationFeedback", js.undefined)
+    def setRecommendationFeedbackUndefined: Self = StObject.set(x, "RecommendationFeedback", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.foundation.Foundation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/offcanvas.html#optional-javascript-configuration
 @js.native
-trait OffCanvasOptions extends js.Object {
+trait OffCanvasOptions extends StObject {
   
   var close_on_click: js.UndefOr[Boolean] = js.native
   
@@ -21,30 +22,18 @@ object OffCanvasOptions {
   }
   
   @scala.inline
-  implicit class OffCanvasOptionsOps[Self <: OffCanvasOptions] (val x: Self) extends AnyVal {
+  implicit class OffCanvasOptionsMutableBuilder[Self <: OffCanvasOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose_on_click(value: Boolean): Self = StObject.set(x, "close_on_click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClose_on_clickUndefined: Self = StObject.set(x, "close_on_click", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpen_method(value: String): Self = StObject.set(x, "open_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose_on_click(value: Boolean): Self = this.set("close_on_click", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClose_on_click: Self = this.set("close_on_click", js.undefined)
-    
-    @scala.inline
-    def setOpen_method(value: String): Self = this.set("open_method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpen_method: Self = this.set("open_method", js.undefined)
+    def setOpen_methodUndefined: Self = StObject.set(x, "open_method", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.officeJs.Visio.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "application.toJSON()". */
 @js.native
-trait ApplicationData extends js.Object {
+trait ApplicationData extends StObject {
   
   /**
     *
@@ -33,30 +34,18 @@ object ApplicationData {
   }
   
   @scala.inline
-  implicit class ApplicationDataOps[Self <: ApplicationData] (val x: Self) extends AnyVal {
+  implicit class ApplicationDataMutableBuilder[Self <: ApplicationData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShowBorders(value: Boolean): Self = StObject.set(x, "showBorders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShowBordersUndefined: Self = StObject.set(x, "showBorders", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowToolbars(value: Boolean): Self = StObject.set(x, "showToolbars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowBorders(value: Boolean): Self = this.set("showBorders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowBorders: Self = this.set("showBorders", js.undefined)
-    
-    @scala.inline
-    def setShowToolbars(value: Boolean): Self = this.set("showToolbars", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowToolbars: Self = this.set("showToolbars", js.undefined)
+    def setShowToolbarsUndefined: Self = StObject.set(x, "showToolbars", js.undefined)
   }
 }

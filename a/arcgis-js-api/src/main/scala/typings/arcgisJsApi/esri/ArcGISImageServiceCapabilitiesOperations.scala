@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -118,54 +119,42 @@ object ArcGISImageServiceCapabilitiesOperations {
   }
   
   @scala.inline
-  implicit class ArcGISImageServiceCapabilitiesOperationsOps[Self <: ArcGISImageServiceCapabilitiesOperations] (val x: Self) extends AnyVal {
+  implicit class ArcGISImageServiceCapabilitiesOperationsMutableBuilder[Self <: ArcGISImageServiceCapabilitiesOperations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSupportsCalculateVolume(value: Unit): Self = StObject.set(x, "supportsCalculateVolume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSupportsComputeHistograms(value: Unit): Self = StObject.set(x, "supportsComputeHistograms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSupportsComputePixelLocation(value: Unit): Self = StObject.set(x, "supportsComputePixelLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsCalculateVolume(value: Unit): Self = this.set("supportsCalculateVolume", value.asInstanceOf[js.Any])
+    def setSupportsComputeStatisticsHistograms(value: Unit): Self = StObject.set(x, "supportsComputeStatisticsHistograms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsComputeHistograms(value: Unit): Self = this.set("supportsComputeHistograms", value.asInstanceOf[js.Any])
+    def setSupportsDownload(value: Unit): Self = StObject.set(x, "supportsDownload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsComputePixelLocation(value: Unit): Self = this.set("supportsComputePixelLocation", value.asInstanceOf[js.Any])
+    def setSupportsExportImage(value: Unit): Self = StObject.set(x, "supportsExportImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsComputeStatisticsHistograms(value: Unit): Self = this.set("supportsComputeStatisticsHistograms", value.asInstanceOf[js.Any])
+    def setSupportsGetSamples(value: Unit): Self = StObject.set(x, "supportsGetSamples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsDownload(value: Unit): Self = this.set("supportsDownload", value.asInstanceOf[js.Any])
+    def setSupportsIdentify(value: Unit): Self = StObject.set(x, "supportsIdentify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsExportImage(value: Unit): Self = this.set("supportsExportImage", value.asInstanceOf[js.Any])
+    def setSupportsMeasure(value: Unit): Self = StObject.set(x, "supportsMeasure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsGetSamples(value: Unit): Self = this.set("supportsGetSamples", value.asInstanceOf[js.Any])
+    def setSupportsProject(value: Unit): Self = StObject.set(x, "supportsProject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsIdentify(value: Unit): Self = this.set("supportsIdentify", value.asInstanceOf[js.Any])
+    def setSupportsQuery(value: Unit): Self = StObject.set(x, "supportsQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsMeasure(value: Unit): Self = this.set("supportsMeasure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsProject(value: Unit): Self = this.set("supportsProject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsQuery(value: Unit): Self = this.set("supportsQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsQueryBoundary(value: Unit): Self = this.set("supportsQueryBoundary", value.asInstanceOf[js.Any])
+    def setSupportsQueryBoundary(value: Unit): Self = StObject.set(x, "supportsQueryBoundary", value.asInstanceOf[js.Any])
   }
 }

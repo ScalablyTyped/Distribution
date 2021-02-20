@@ -2,12 +2,13 @@ package typings.openui5.sap.ui.model.analytics.odata4analytics
 
 import typings.openui5.anon.TypeofFilterOperator
 import typings.openui5.sap.ui.model.Filter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterExpression extends js.Object {
+trait FilterExpression extends StObject {
   
   /**
     * Add a condition to the filter expression.Multiple conditions on the same property are combined with
@@ -99,45 +100,33 @@ object FilterExpression {
   }
   
   @scala.inline
-  implicit class FilterExpressionOps[Self <: FilterExpression] (val x: Self) extends AnyVal {
+  implicit class FilterExpressionMutableBuilder[Self <: FilterExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddCondition(value: (String, TypeofFilterOperator, js.Any, js.Any) => FilterExpression): Self = StObject.set(x, "addCondition", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddSetCondition(value: (String, js.Array[_]) => FilterExpression): Self = StObject.set(x, "addSetCondition", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddUI5FilterConditions(value: js.Array[Filter] => FilterExpression): Self = StObject.set(x, "addUI5FilterConditions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddCondition(value: (String, TypeofFilterOperator, js.Any, js.Any) => FilterExpression): Self = this.set("addCondition", js.Any.fromFunction4(value))
+    def setCheckValidity(value: () => Boolean): Self = StObject.set(x, "checkValidity", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddSetCondition(value: (String, js.Array[_]) => FilterExpression): Self = this.set("addSetCondition", js.Any.fromFunction2(value))
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddUI5FilterConditions(value: js.Array[Filter] => FilterExpression): Self = this.set("addUI5FilterConditions", js.Any.fromFunction1(value))
+    def setGetEntityType(value: () => EntityType): Self = StObject.set(x, "getEntityType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCheckValidity(value: () => Boolean): Self = this.set("checkValidity", js.Any.fromFunction0(value))
+    def setGetExpressionAsUI5FilterArray(value: () => js.Array[Filter]): Self = StObject.set(x, "getExpressionAsUI5FilterArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setGetURIFilterOptionValue(value: () => String): Self = StObject.set(x, "getURIFilterOptionValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEntityType(value: () => EntityType): Self = this.set("getEntityType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetExpressionAsUI5FilterArray(value: () => js.Array[Filter]): Self = this.set("getExpressionAsUI5FilterArray", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetURIFilterOptionValue(value: () => String): Self = this.set("getURIFilterOptionValue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveConditions(value: String => FilterExpression): Self = this.set("removeConditions", js.Any.fromFunction1(value))
+    def setRemoveConditions(value: String => FilterExpression): Self = StObject.set(x, "removeConditions", js.Any.fromFunction1(value))
   }
 }

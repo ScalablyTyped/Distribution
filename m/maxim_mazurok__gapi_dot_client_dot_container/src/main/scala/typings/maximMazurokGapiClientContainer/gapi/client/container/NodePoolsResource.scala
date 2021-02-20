@@ -21,12 +21,13 @@ import typings.maximMazurokGapiClientContainer.anon.UploadType
 import typings.maximMazurokGapiClientContainer.anon.Uploadprotocol
 import typings.maximMazurokGapiClientContainer.anon.Xgafv
 import typings.maximMazurokGapiClientContainer.anon.Zone
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodePoolsResource extends js.Object {
+trait NodePoolsResource extends StObject {
   
   /** Sets the autoscaling settings for the specified node pool. */
   def autoscaling(request: NodePoolId): Request[Operation] = js.native

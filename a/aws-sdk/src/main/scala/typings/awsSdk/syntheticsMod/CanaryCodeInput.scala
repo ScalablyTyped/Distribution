@@ -1,11 +1,12 @@
 package typings.awsSdk.syntheticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanaryCodeInput extends js.Object {
+trait CanaryCodeInput extends StObject {
   
   /**
     * The entry point to use for the source code when running the canary. This value must end with the string .handler.
@@ -41,45 +42,33 @@ object CanaryCodeInput {
   }
   
   @scala.inline
-  implicit class CanaryCodeInputOps[Self <: CanaryCodeInput] (val x: Self) extends AnyVal {
+  implicit class CanaryCodeInputMutableBuilder[Self <: CanaryCodeInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHandler(value: String): Self = StObject.set(x, "Handler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setS3Bucket(value: String): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
     
     @scala.inline
-    def setHandler(value: String): Self = this.set("Handler", value.asInstanceOf[js.Any])
+    def setS3Key(value: String): Self = StObject.set(x, "S3Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Bucket(value: String): Self = this.set("S3Bucket", value.asInstanceOf[js.Any])
+    def setS3KeyUndefined: Self = StObject.set(x, "S3Key", js.undefined)
     
     @scala.inline
-    def deleteS3Bucket: Self = this.set("S3Bucket", js.undefined)
+    def setS3Version(value: String): Self = StObject.set(x, "S3Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Key(value: String): Self = this.set("S3Key", value.asInstanceOf[js.Any])
+    def setS3VersionUndefined: Self = StObject.set(x, "S3Version", js.undefined)
     
     @scala.inline
-    def deleteS3Key: Self = this.set("S3Key", js.undefined)
+    def setZipFile(value: _Blob): Self = StObject.set(x, "ZipFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Version(value: String): Self = this.set("S3Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Version: Self = this.set("S3Version", js.undefined)
-    
-    @scala.inline
-    def setZipFile(value: _Blob): Self = this.set("ZipFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZipFile: Self = this.set("ZipFile", js.undefined)
+    def setZipFileUndefined: Self = StObject.set(x, "ZipFile", js.undefined)
   }
 }

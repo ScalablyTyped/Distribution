@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Globalization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Identifies the day of the week. */
 @JSGlobal("Windows.Globalization.DayOfWeek")
 @js.native
-object DayOfWeek extends js.Object {
+object DayOfWeek extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Globalization.DayOfWeek with Double] = js.native

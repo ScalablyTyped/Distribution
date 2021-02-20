@@ -2,12 +2,13 @@ package typings.jointjs.mod.shapes.standard
 
 import typings.jointjs.mod.attributes.SVGAttributes
 import typings.jointjs.mod.attributes.SVGPathAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShadowLinkSelectors extends js.Object {
+trait ShadowLinkSelectors extends StObject {
   
   var line: js.UndefOr[SVGPathAttributes] = js.native
   
@@ -24,36 +25,24 @@ object ShadowLinkSelectors {
   }
   
   @scala.inline
-  implicit class ShadowLinkSelectorsOps[Self <: ShadowLinkSelectors] (val x: Self) extends AnyVal {
+  implicit class ShadowLinkSelectorsMutableBuilder[Self <: ShadowLinkSelectors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLine(value: SVGPathAttributes): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoot(value: SVGAttributes): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: SVGPathAttributes): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setShadow(value: SVGPathAttributes): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: SVGAttributes): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
-    
-    @scala.inline
-    def setShadow(value: SVGPathAttributes): Self = this.set("shadow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadow: Self = this.set("shadow", js.undefined)
+    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
   }
 }

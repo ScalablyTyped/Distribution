@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateStreamingDistributionWithTagsRequest extends js.Object {
+trait CreateStreamingDistributionWithTagsRequest extends StObject {
   
   /**
     *  The streaming distribution's configuration information. 
@@ -21,21 +22,9 @@ object CreateStreamingDistributionWithTagsRequest {
   }
   
   @scala.inline
-  implicit class CreateStreamingDistributionWithTagsRequestOps[Self <: CreateStreamingDistributionWithTagsRequest] (val x: Self) extends AnyVal {
+  implicit class CreateStreamingDistributionWithTagsRequestMutableBuilder[Self <: CreateStreamingDistributionWithTagsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStreamingDistributionConfigWithTags(value: StreamingDistributionConfigWithTags): Self = this.set("StreamingDistributionConfigWithTags", value.asInstanceOf[js.Any])
+    def setStreamingDistributionConfigWithTags(value: StreamingDistributionConfigWithTags): Self = StObject.set(x, "StreamingDistributionConfigWithTags", value.asInstanceOf[js.Any])
   }
 }

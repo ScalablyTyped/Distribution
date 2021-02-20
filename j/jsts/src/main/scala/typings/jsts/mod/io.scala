@@ -1,18 +1,19 @@
 package typings.jsts.mod
 
 import typings.jsts.jsts.geom.GeometryFactory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jsts", "io")
-@js.native
-object io extends js.Object {
+object io {
   
+  @JSImport("jsts", "io.GeoJSONReader")
   @js.native
   class GeoJSONReader ()
     extends typings.jsts.jsts.io.GeoJSONReader
   
+  @JSImport("jsts", "io.GeoJSONWriter")
   @js.native
   /**
     * Writes the GeoJSON representation of a {@link Geometry}. The
@@ -30,12 +31,14 @@ object io extends js.Object {
   class GeoJSONWriter ()
     extends typings.jsts.jsts.io.GeoJSONWriter
   
+  @JSImport("jsts", "io.OL3Parser")
   @js.native
   class OL3Parser ()
     extends typings.jsts.jsts.io.OL3Parser {
     def this(geometryFactory: GeometryFactory) = this()
   }
   
+  @JSImport("jsts", "io.WKTReader")
   @js.native
   /**
     * @constructor
@@ -45,6 +48,7 @@ object io extends js.Object {
     def this(geometryFactory: GeometryFactory) = this()
   }
   
+  @JSImport("jsts", "io.WKTWriter")
   @js.native
   /**
     * @constructor

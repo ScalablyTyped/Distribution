@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a client-side equivalent of the ASPxTreeView's TreeViewNode object.
   */
 @js.native
-trait ASPxClientTreeViewNode extends js.Object {
+trait ASPxClientTreeViewNode extends StObject {
   
   /**
     * Returns a value which specifies the node's check state.
@@ -174,90 +175,78 @@ object ASPxClientTreeViewNode {
   }
   
   @scala.inline
-  implicit class ASPxClientTreeViewNodeOps[Self <: ASPxClientTreeViewNode] (val x: Self) extends AnyVal {
+  implicit class ASPxClientTreeViewNodeMutableBuilder[Self <: ASPxClientTreeViewNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCheckState(value: () => String): Self = StObject.set(x, "GetCheckState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetChecked(value: () => Boolean): Self = StObject.set(x, "GetChecked", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "GetEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCheckState(value: () => String): Self = this.set("GetCheckState", js.Any.fromFunction0(value))
+    def setGetExpanded(value: () => Boolean): Self = StObject.set(x, "GetExpanded", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetChecked(value: () => Boolean): Self = this.set("GetChecked", js.Any.fromFunction0(value))
+    def setGetHtmlElement(value: () => js.Any): Self = StObject.set(x, "GetHtmlElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEnabled(value: () => Boolean): Self = this.set("GetEnabled", js.Any.fromFunction0(value))
+    def setGetImageUrl(value: () => String): Self = StObject.set(x, "GetImageUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetExpanded(value: () => Boolean): Self = this.set("GetExpanded", js.Any.fromFunction0(value))
+    def setGetNavigateUrl(value: () => String): Self = StObject.set(x, "GetNavigateUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHtmlElement(value: () => js.Any): Self = this.set("GetHtmlElement", js.Any.fromFunction0(value))
+    def setGetNode(value: Double => ASPxClientTreeViewNode): Self = StObject.set(x, "GetNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetImageUrl(value: () => String): Self = this.set("GetImageUrl", js.Any.fromFunction0(value))
+    def setGetNodeByName(value: String => ASPxClientTreeViewNode): Self = StObject.set(x, "GetNodeByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNavigateUrl(value: () => String): Self = this.set("GetNavigateUrl", js.Any.fromFunction0(value))
+    def setGetNodeByText(value: String => ASPxClientTreeViewNode): Self = StObject.set(x, "GetNodeByText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNode(value: Double => ASPxClientTreeViewNode): Self = this.set("GetNode", js.Any.fromFunction1(value))
+    def setGetNodeCount(value: () => Double): Self = StObject.set(x, "GetNodeCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNodeByName(value: String => ASPxClientTreeViewNode): Self = this.set("GetNodeByName", js.Any.fromFunction1(value))
+    def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNodeByText(value: String => ASPxClientTreeViewNode): Self = this.set("GetNodeByText", js.Any.fromFunction1(value))
+    def setGetVisible(value: () => Boolean): Self = StObject.set(x, "GetVisible", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNodeCount(value: () => Double): Self = this.set("GetNodeCount", js.Any.fromFunction0(value))
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetText(value: () => String): Self = this.set("GetText", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetVisible(value: () => Boolean): Self = this.set("GetVisible", js.Any.fromFunction0(value))
+    def setParent(value: ASPxClientTreeViewNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetChecked(value: Boolean => Unit): Self = this.set("SetChecked", js.Any.fromFunction1(value))
+    def setSetChecked(value: Boolean => Unit): Self = StObject.set(x, "SetChecked", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetEnabled(value: Boolean => Unit): Self = this.set("SetEnabled", js.Any.fromFunction1(value))
+    def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetEnabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetExpanded(value: Boolean => Unit): Self = this.set("SetExpanded", js.Any.fromFunction1(value))
+    def setSetExpanded(value: Boolean => Unit): Self = StObject.set(x, "SetExpanded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetImageUrl(value: String => Unit): Self = this.set("SetImageUrl", js.Any.fromFunction1(value))
+    def setSetImageUrl(value: String => Unit): Self = StObject.set(x, "SetImageUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetNavigateUrl(value: String => Unit): Self = this.set("SetNavigateUrl", js.Any.fromFunction1(value))
+    def setSetNavigateUrl(value: String => Unit): Self = StObject.set(x, "SetNavigateUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetText(value: String => Unit): Self = this.set("SetText", js.Any.fromFunction1(value))
+    def setSetText(value: String => Unit): Self = StObject.set(x, "SetText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = this.set("SetVisible", js.Any.fromFunction1(value))
+    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "SetVisible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: ASPxClientTreeViewNode): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTreeView(value: ASPxClientTreeView): Self = this.set("treeView", value.asInstanceOf[js.Any])
+    def setTreeView(value: ASPxClientTreeView): Self = StObject.set(x, "treeView", value.asInstanceOf[js.Any])
   }
 }

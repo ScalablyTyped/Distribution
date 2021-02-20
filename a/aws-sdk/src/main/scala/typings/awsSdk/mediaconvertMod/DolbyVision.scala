@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DolbyVision extends js.Object {
+trait DolbyVision extends StObject {
   
   /**
     * Use these settings when you set DolbyVisionLevel6Mode to SPECIFY to override the MaxCLL and MaxFALL values in your input with new values.
@@ -31,36 +32,24 @@ object DolbyVision {
   }
   
   @scala.inline
-  implicit class DolbyVisionOps[Self <: DolbyVision] (val x: Self) extends AnyVal {
+  implicit class DolbyVisionMutableBuilder[Self <: DolbyVision] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setL6Metadata(value: DolbyVisionLevel6Metadata): Self = StObject.set(x, "L6Metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setL6MetadataUndefined: Self = StObject.set(x, "L6Metadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setL6Mode(value: DolbyVisionLevel6Mode): Self = StObject.set(x, "L6Mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL6Metadata(value: DolbyVisionLevel6Metadata): Self = this.set("L6Metadata", value.asInstanceOf[js.Any])
+    def setL6ModeUndefined: Self = StObject.set(x, "L6Mode", js.undefined)
     
     @scala.inline
-    def deleteL6Metadata: Self = this.set("L6Metadata", js.undefined)
+    def setProfile(value: DolbyVisionProfile): Self = StObject.set(x, "Profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL6Mode(value: DolbyVisionLevel6Mode): Self = this.set("L6Mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteL6Mode: Self = this.set("L6Mode", js.undefined)
-    
-    @scala.inline
-    def setProfile(value: DolbyVisionProfile): Self = this.set("Profile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfile: Self = this.set("Profile", js.undefined)
+    def setProfileUndefined: Self = StObject.set(x, "Profile", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Target
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttachToTargetRequest extends js.Object {
+trait AttachToTargetRequest extends StObject {
   
   /**
     * Enables "flat" access to the session via specifying sessionId attribute in the commands.
@@ -25,27 +26,15 @@ object AttachToTargetRequest {
   }
   
   @scala.inline
-  implicit class AttachToTargetRequestOps[Self <: AttachToTargetRequest] (val x: Self) extends AnyVal {
+  implicit class AttachToTargetRequestMutableBuilder[Self <: AttachToTargetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTargetId(value: TargetID): Self = this.set("targetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFlatten(value: Boolean): Self = this.set("flatten", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlatten: Self = this.set("flatten", js.undefined)
+    def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
   }
 }

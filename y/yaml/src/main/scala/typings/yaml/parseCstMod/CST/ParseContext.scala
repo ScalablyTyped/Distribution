@@ -1,11 +1,12 @@
 package typings.yaml.parseCstMod.CST
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParseContext extends js.Object {
+trait ParseContext extends StObject {
   
   /** Node starts at beginning of line */
   var atLineStart: Boolean = js.native
@@ -45,39 +46,27 @@ object ParseContext {
   }
   
   @scala.inline
-  implicit class ParseContextOps[Self <: ParseContext] (val x: Self) extends AnyVal {
+  implicit class ParseContextMutableBuilder[Self <: ParseContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAtLineStart(value: Boolean): Self = StObject.set(x, "atLineStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInCollection(value: Boolean): Self = StObject.set(x, "inCollection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInFlow(value: Boolean): Self = StObject.set(x, "inFlow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtLineStart(value: Boolean): Self = this.set("atLineStart", value.asInstanceOf[js.Any])
+    def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInCollection(value: Boolean): Self = this.set("inCollection", value.asInstanceOf[js.Any])
+    def setLineStart(value: Double): Self = StObject.set(x, "lineStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInFlow(value: Boolean): Self = this.set("inFlow", value.asInstanceOf[js.Any])
+    def setParent(value: Node): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndent(value: Double): Self = this.set("indent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLineStart(value: Double): Self = this.set("lineStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: Node): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.babylonjs.mod
 
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,9 +26,7 @@ class AnimationGroup protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs", "AnimationGroup")
-@js.native
-object AnimationGroup extends js.Object {
+object AnimationGroup {
   
   /**
     * Convert the keyframes for all animations belonging to the group to be relative to a given reference frame.
@@ -38,7 +37,11 @@ object AnimationGroup extends js.Object {
     * @param clonedName defines the name of the resulting cloned AnimationGroup if cloneOriginal is true
     * @returns a new AnimationGroup if cloneOriginal is true or the original AnimationGroup if cloneOriginal is false
     */
+  @JSImport("babylonjs", "AnimationGroup.MakeAnimationAdditive")
+  @js.native
   def MakeAnimationAdditive(sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup): typings.babylonjs.animationGroupMod.AnimationGroup = js.native
+  @JSImport("babylonjs", "AnimationGroup.MakeAnimationAdditive")
+  @js.native
   def MakeAnimationAdditive(
     sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
     referenceFrame: js.UndefOr[scala.Nothing],
@@ -46,12 +49,16 @@ object AnimationGroup extends js.Object {
     cloneOriginal: js.UndefOr[scala.Nothing],
     clonedName: String
   ): typings.babylonjs.animationGroupMod.AnimationGroup = js.native
+  @JSImport("babylonjs", "AnimationGroup.MakeAnimationAdditive")
+  @js.native
   def MakeAnimationAdditive(
     sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
     referenceFrame: js.UndefOr[scala.Nothing],
     range: js.UndefOr[scala.Nothing],
     cloneOriginal: Boolean
   ): typings.babylonjs.animationGroupMod.AnimationGroup = js.native
+  @JSImport("babylonjs", "AnimationGroup.MakeAnimationAdditive")
+  @js.native
   def MakeAnimationAdditive(
     sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
     referenceFrame: js.UndefOr[scala.Nothing],
@@ -59,11 +66,15 @@ object AnimationGroup extends js.Object {
     cloneOriginal: Boolean,
     clonedName: String
   ): typings.babylonjs.animationGroupMod.AnimationGroup = js.native
+  @JSImport("babylonjs", "AnimationGroup.MakeAnimationAdditive")
+  @js.native
   def MakeAnimationAdditive(
     sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
     referenceFrame: js.UndefOr[scala.Nothing],
     range: String
   ): typings.babylonjs.animationGroupMod.AnimationGroup = js.native
+  @JSImport("babylonjs", "AnimationGroup.MakeAnimationAdditive")
+  @js.native
   def MakeAnimationAdditive(
     sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
     referenceFrame: js.UndefOr[scala.Nothing],
@@ -71,12 +82,16 @@ object AnimationGroup extends js.Object {
     cloneOriginal: js.UndefOr[scala.Nothing],
     clonedName: String
   ): typings.babylonjs.animationGroupMod.AnimationGroup = js.native
+  @JSImport("babylonjs", "AnimationGroup.MakeAnimationAdditive")
+  @js.native
   def MakeAnimationAdditive(
     sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
     referenceFrame: js.UndefOr[scala.Nothing],
     range: String,
     cloneOriginal: Boolean
   ): typings.babylonjs.animationGroupMod.AnimationGroup = js.native
+  @JSImport("babylonjs", "AnimationGroup.MakeAnimationAdditive")
+  @js.native
   def MakeAnimationAdditive(
     sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
     referenceFrame: js.UndefOr[scala.Nothing],
@@ -84,7 +99,11 @@ object AnimationGroup extends js.Object {
     cloneOriginal: Boolean,
     clonedName: String
   ): typings.babylonjs.animationGroupMod.AnimationGroup = js.native
+  @JSImport("babylonjs", "AnimationGroup.MakeAnimationAdditive")
+  @js.native
   def MakeAnimationAdditive(sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup, referenceFrame: Double): typings.babylonjs.animationGroupMod.AnimationGroup = js.native
+  @JSImport("babylonjs", "AnimationGroup.MakeAnimationAdditive")
+  @js.native
   def MakeAnimationAdditive(
     sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
     referenceFrame: Double,
@@ -92,12 +111,16 @@ object AnimationGroup extends js.Object {
     cloneOriginal: js.UndefOr[scala.Nothing],
     clonedName: String
   ): typings.babylonjs.animationGroupMod.AnimationGroup = js.native
+  @JSImport("babylonjs", "AnimationGroup.MakeAnimationAdditive")
+  @js.native
   def MakeAnimationAdditive(
     sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
     referenceFrame: Double,
     range: js.UndefOr[scala.Nothing],
     cloneOriginal: Boolean
   ): typings.babylonjs.animationGroupMod.AnimationGroup = js.native
+  @JSImport("babylonjs", "AnimationGroup.MakeAnimationAdditive")
+  @js.native
   def MakeAnimationAdditive(
     sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
     referenceFrame: Double,
@@ -105,11 +128,15 @@ object AnimationGroup extends js.Object {
     cloneOriginal: Boolean,
     clonedName: String
   ): typings.babylonjs.animationGroupMod.AnimationGroup = js.native
+  @JSImport("babylonjs", "AnimationGroup.MakeAnimationAdditive")
+  @js.native
   def MakeAnimationAdditive(
     sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
     referenceFrame: Double,
     range: String
   ): typings.babylonjs.animationGroupMod.AnimationGroup = js.native
+  @JSImport("babylonjs", "AnimationGroup.MakeAnimationAdditive")
+  @js.native
   def MakeAnimationAdditive(
     sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
     referenceFrame: Double,
@@ -117,12 +144,16 @@ object AnimationGroup extends js.Object {
     cloneOriginal: js.UndefOr[scala.Nothing],
     clonedName: String
   ): typings.babylonjs.animationGroupMod.AnimationGroup = js.native
+  @JSImport("babylonjs", "AnimationGroup.MakeAnimationAdditive")
+  @js.native
   def MakeAnimationAdditive(
     sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
     referenceFrame: Double,
     range: String,
     cloneOriginal: Boolean
   ): typings.babylonjs.animationGroupMod.AnimationGroup = js.native
+  @JSImport("babylonjs", "AnimationGroup.MakeAnimationAdditive")
+  @js.native
   def MakeAnimationAdditive(
     sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
     referenceFrame: Double,
@@ -137,5 +168,7 @@ object AnimationGroup extends js.Object {
     * @param scene defines the scene that will receive the animationGroup
     * @returns a new AnimationGroup
     */
+  @JSImport("babylonjs", "AnimationGroup.Parse")
+  @js.native
   def Parse(parsedAnimationGroup: js.Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.animationGroupMod.AnimationGroup = js.native
 }

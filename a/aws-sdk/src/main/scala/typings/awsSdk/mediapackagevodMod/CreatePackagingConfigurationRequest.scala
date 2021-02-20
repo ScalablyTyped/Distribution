@@ -1,11 +1,12 @@
 package typings.awsSdk.mediapackagevodMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatePackagingConfigurationRequest extends js.Object {
+trait CreatePackagingConfigurationRequest extends StObject {
   
   var CmafPackage: js.UndefOr[typings.awsSdk.mediapackagevodMod.CmafPackage] = js.native
   
@@ -36,54 +37,42 @@ object CreatePackagingConfigurationRequest {
   }
   
   @scala.inline
-  implicit class CreatePackagingConfigurationRequestOps[Self <: CreatePackagingConfigurationRequest] (val x: Self) extends AnyVal {
+  implicit class CreatePackagingConfigurationRequestMutableBuilder[Self <: CreatePackagingConfigurationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCmafPackage(value: CmafPackage): Self = StObject.set(x, "CmafPackage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCmafPackageUndefined: Self = StObject.set(x, "CmafPackage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDashPackage(value: DashPackage): Self = StObject.set(x, "DashPackage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setDashPackageUndefined: Self = StObject.set(x, "DashPackage", js.undefined)
     
     @scala.inline
-    def setPackagingGroupId(value: string): Self = this.set("PackagingGroupId", value.asInstanceOf[js.Any])
+    def setHlsPackage(value: HlsPackage): Self = StObject.set(x, "HlsPackage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmafPackage(value: CmafPackage): Self = this.set("CmafPackage", value.asInstanceOf[js.Any])
+    def setHlsPackageUndefined: Self = StObject.set(x, "HlsPackage", js.undefined)
     
     @scala.inline
-    def deleteCmafPackage: Self = this.set("CmafPackage", js.undefined)
+    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashPackage(value: DashPackage): Self = this.set("DashPackage", value.asInstanceOf[js.Any])
+    def setMssPackage(value: MssPackage): Self = StObject.set(x, "MssPackage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDashPackage: Self = this.set("DashPackage", js.undefined)
+    def setMssPackageUndefined: Self = StObject.set(x, "MssPackage", js.undefined)
     
     @scala.inline
-    def setHlsPackage(value: HlsPackage): Self = this.set("HlsPackage", value.asInstanceOf[js.Any])
+    def setPackagingGroupId(value: string): Self = StObject.set(x, "PackagingGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHlsPackage: Self = this.set("HlsPackage", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMssPackage(value: MssPackage): Self = this.set("MssPackage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMssPackage: Self = this.set("MssPackage", js.undefined)
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

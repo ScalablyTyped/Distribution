@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.testInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestPointsQuery extends js.Object {
+trait TestPointsQuery extends StObject {
   
   var orderBy: String = js.native
   
@@ -29,36 +30,24 @@ object TestPointsQuery {
   }
   
   @scala.inline
-  implicit class TestPointsQueryOps[Self <: TestPointsQuery] (val x: Self) extends AnyVal {
+  implicit class TestPointsQueryMutableBuilder[Self <: TestPointsQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPoints(value: js.Array[TestPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPointsFilter(value: PointsFilter): Self = StObject.set(x, "pointsFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderBy(value: String): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    def setPointsVarargs(value: TestPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
     
     @scala.inline
-    def setPointsVarargs(value: TestPoint*): Self = this.set("points", js.Array(value :_*))
+    def setWitFields(value: js.Array[String]): Self = StObject.set(x, "witFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoints(value: js.Array[TestPoint]): Self = this.set("points", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPointsFilter(value: PointsFilter): Self = this.set("pointsFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWitFieldsVarargs(value: String*): Self = this.set("witFields", js.Array(value :_*))
-    
-    @scala.inline
-    def setWitFields(value: js.Array[String]): Self = this.set("witFields", value.asInstanceOf[js.Any])
+    def setWitFieldsVarargs(value: String*): Self = StObject.set(x, "witFields", js.Array(value :_*))
   }
 }

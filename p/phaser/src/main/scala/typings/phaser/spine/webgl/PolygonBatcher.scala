@@ -2,6 +2,7 @@ package typings.phaser.spine.webgl
 
 import typings.phaser.spine.ArrayLike
 import typings.phaser.spine.Disposable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,66 +69,54 @@ object PolygonBatcher {
   }
   
   @scala.inline
-  implicit class PolygonBatcherOps[Self <: PolygonBatcher] (val x: Self) extends AnyVal {
+  implicit class PolygonBatcherMutableBuilder[Self <: PolygonBatcher] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBegin(value: Shader => Unit): Self = StObject.set(x, "begin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDraw(value: (GLTexture, ArrayLike[Double], js.Array[Double]) => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setBegin(value: Shader => Unit): Self = this.set("begin", js.Any.fromFunction1(value))
+    def setDrawCalls(value: js.Any): Self = StObject.set(x, "drawCalls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: js.Any): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setDstBlend(value: js.Any): Self = StObject.set(x, "dstBlend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraw(value: (GLTexture, ArrayLike[Double], js.Array[Double]) => Unit): Self = this.set("draw", js.Any.fromFunction3(value))
+    def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDrawCalls(value: js.Any): Self = this.set("drawCalls", value.asInstanceOf[js.Any])
+    def setFlush(value: js.Any): Self = StObject.set(x, "flush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDstBlend(value: js.Any): Self = this.set("dstBlend", value.asInstanceOf[js.Any])
+    def setGetDrawCalls(value: () => Double): Self = StObject.set(x, "getDrawCalls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnd(value: () => Unit): Self = this.set("end", js.Any.fromFunction0(value))
+    def setIndicesLength(value: js.Any): Self = StObject.set(x, "indicesLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlush(value: js.Any): Self = this.set("flush", value.asInstanceOf[js.Any])
+    def setIsDrawing(value: js.Any): Self = StObject.set(x, "isDrawing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDrawCalls(value: () => Double): Self = this.set("getDrawCalls", js.Any.fromFunction0(value))
+    def setLastTexture(value: js.Any): Self = StObject.set(x, "lastTexture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicesLength(value: js.Any): Self = this.set("indicesLength", value.asInstanceOf[js.Any])
+    def setMesh(value: js.Any): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDrawing(value: js.Any): Self = this.set("isDrawing", value.asInstanceOf[js.Any])
+    def setSetBlendMode(value: (Double, Double) => Unit): Self = StObject.set(x, "setBlendMode", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLastTexture(value: js.Any): Self = this.set("lastTexture", value.asInstanceOf[js.Any])
+    def setShader(value: js.Any): Self = StObject.set(x, "shader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMesh(value: js.Any): Self = this.set("mesh", value.asInstanceOf[js.Any])
+    def setSrcBlend(value: js.Any): Self = StObject.set(x, "srcBlend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetBlendMode(value: (Double, Double) => Unit): Self = this.set("setBlendMode", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setShader(value: js.Any): Self = this.set("shader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSrcBlend(value: js.Any): Self = this.set("srcBlend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticesLength(value: js.Any): Self = this.set("verticesLength", value.asInstanceOf[js.Any])
+    def setVerticesLength(value: js.Any): Self = StObject.set(x, "verticesLength", value.asInstanceOf[js.Any])
   }
 }

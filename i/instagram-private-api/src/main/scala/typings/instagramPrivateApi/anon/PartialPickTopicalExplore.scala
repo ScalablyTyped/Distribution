@@ -1,13 +1,14 @@
 package typings.instagramPrivateApi.anon
 
 import typings.instagramPrivateApi.commonTypesMod.IgAppModule
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<instagram-private-api.instagram-private-api/dist/feeds.TopicalExploreFeed, 'sessionId' | 'clusterId' | 'lat' | 'lng' | 'module'>> */
 @js.native
-trait PartialPickTopicalExplore extends js.Object {
+trait PartialPickTopicalExplore extends StObject {
   
   var clusterId: js.UndefOr[String] = js.native
   
@@ -28,48 +29,36 @@ object PartialPickTopicalExplore {
   }
   
   @scala.inline
-  implicit class PartialPickTopicalExploreOps[Self <: PartialPickTopicalExplore] (val x: Self) extends AnyVal {
+  implicit class PartialPickTopicalExploreMutableBuilder[Self <: PartialPickTopicalExplore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLat(value: String | Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterId(value: String): Self = this.set("clusterId", value.asInstanceOf[js.Any])
+    def setLatUndefined: Self = StObject.set(x, "lat", js.undefined)
     
     @scala.inline
-    def deleteClusterId: Self = this.set("clusterId", js.undefined)
+    def setLng(value: String | Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLat(value: String | Double): Self = this.set("lat", value.asInstanceOf[js.Any])
+    def setLngUndefined: Self = StObject.set(x, "lng", js.undefined)
     
     @scala.inline
-    def deleteLat: Self = this.set("lat", js.undefined)
+    def setModule(value: IgAppModule): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLng(value: String | Double): Self = this.set("lng", value.asInstanceOf[js.Any])
+    def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
     
     @scala.inline
-    def deleteLng: Self = this.set("lng", js.undefined)
+    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModule(value: IgAppModule): Self = this.set("module", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModule: Self = this.set("module", js.undefined)
-    
-    @scala.inline
-    def setSessionId(value: String): Self = this.set("sessionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionId: Self = this.set("sessionId", js.undefined)
+    def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
   }
 }

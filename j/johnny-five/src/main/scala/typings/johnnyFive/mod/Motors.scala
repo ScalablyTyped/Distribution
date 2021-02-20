@@ -1,12 +1,13 @@
 package typings.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("johnny-five", "Motors")
 @js.native
-class Motors protected () extends js.Object {
+class Motors protected () extends StObject {
   def this(option: js.Array[Double | MotorOption]) = this()
   
   def brake(): Unit = js.native

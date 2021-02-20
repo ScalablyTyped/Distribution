@@ -1,12 +1,13 @@
 package typings.fabric.anon
 
 import typings.fabric.fabricImplMod.Object
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Corner extends js.Object {
+trait Corner extends StObject {
   
   var corner: String = js.native
   
@@ -27,33 +28,21 @@ object Corner {
   }
   
   @scala.inline
-  implicit class CornerOps[Self <: Corner] (val x: Self) extends AnyVal {
+  implicit class CornerMutableBuilder[Self <: Corner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCorner(value: String): Self = StObject.set(x, "corner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOriginX(value: String): Self = StObject.set(x, "originX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginY(value: String): Self = StObject.set(x, "originY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorner(value: String): Self = this.set("corner", value.asInstanceOf[js.Any])
+    def setOriginal(value: Object): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginX(value: String): Self = this.set("originX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOriginY(value: String): Self = this.set("originY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOriginal(value: Object): Self = this.set("original", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

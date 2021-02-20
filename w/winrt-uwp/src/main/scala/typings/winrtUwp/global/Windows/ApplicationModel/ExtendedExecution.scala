@@ -1,17 +1,17 @@
 package typings.winrtUwp.global.Windows.ApplicationModel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a mechanism for applications to execute when they are not in the foreground. */
-@JSGlobal("Windows.ApplicationModel.ExtendedExecution")
-@js.native
-object ExtendedExecution extends js.Object {
+object ExtendedExecution {
   
   /** Describes the reason for the background execution request. */
+  @JSGlobal("Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionReason")
   @js.native
-  object ExtendedExecutionReason extends js.Object {
+  object ExtendedExecutionReason extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -26,8 +26,9 @@ object ExtendedExecution extends js.Object {
   }
   
   /** Specifies the possible background execution request result values. */
+  @JSGlobal("Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionResult")
   @js.native
-  object ExtendedExecutionResult extends js.Object {
+  object ExtendedExecutionResult extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -40,13 +41,15 @@ object ExtendedExecution extends js.Object {
   }
   
   /** Represents the object that is passed as a parameter to the event handler that is invoked when the system revokes background execution. */
+  @JSGlobal("Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedEventArgs")
   @js.native
   abstract class ExtendedExecutionRevokedEventArgs ()
     extends typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedEventArgs
   
   /** Describes the reason background execution was revoked. */
+  @JSGlobal("Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedReason")
   @js.native
-  object ExtendedExecutionRevokedReason extends js.Object {
+  object ExtendedExecutionRevokedReason extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -59,18 +62,19 @@ object ExtendedExecution extends js.Object {
   }
   
   /** Supports managing a request for background execution. */
+  @JSGlobal("Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionSession")
   @js.native
   /** Creates an ExtendedExecutionSession object. */
   class ExtendedExecutionSession ()
     extends typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionSession
   
   /** Provides a mechanism for applications to perform extended execution while they are in the foreground. */
-  @js.native
-  object Foreground extends js.Object {
+  object Foreground {
     
     /** Describes the reason for the extended execution request. */
+    @JSGlobal("Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundReason")
     @js.native
-    object ExtendedExecutionForegroundReason extends js.Object {
+    object ExtendedExecutionForegroundReason extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[
@@ -87,8 +91,9 @@ object ExtendedExecution extends js.Object {
     }
     
     /** Specifies the possible extended execution request result values. */
+    @JSGlobal("Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundResult")
     @js.native
-    object ExtendedExecutionForegroundResult extends js.Object {
+    object ExtendedExecutionForegroundResult extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[
@@ -101,13 +106,15 @@ object ExtendedExecution extends js.Object {
     }
     
     /** Passed to the event handler that is invoked when the system revokes extended execution. */
+    @JSGlobal("Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedEventArgs")
     @js.native
     abstract class ExtendedExecutionForegroundRevokedEventArgs ()
       extends typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedEventArgs
     
     /** Describes the reason extended execution was revoked. */
+    @JSGlobal("Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedReason")
     @js.native
-    object ExtendedExecutionForegroundRevokedReason extends js.Object {
+    object ExtendedExecutionForegroundRevokedReason extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[
@@ -120,6 +127,7 @@ object ExtendedExecution extends js.Object {
     }
     
     /** Supports managing a request for extended foreground execution. */
+    @JSGlobal("Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundSession")
     @js.native
     /** Creates an ExtendedExecutionForegroundSession object */
     class ExtendedExecutionForegroundSession ()

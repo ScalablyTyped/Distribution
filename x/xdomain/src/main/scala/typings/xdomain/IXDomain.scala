@@ -3,12 +3,13 @@ package typings.xdomain
 import typings.xdomain.xdomainStrings.log
 import typings.xdomain.xdomainStrings.timeout
 import typings.xdomain.xdomainStrings.warn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IXDomain extends js.Object {
+trait IXDomain extends StObject {
   
   var cookies: XDomainCookies = js.native
   

@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.newsRepositoryInboxResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NewsRepositoryInboxResponseAymf extends js.Object {
+trait NewsRepositoryInboxResponseAymf extends StObject {
   
   var items: js.Array[NewsRepositoryInboxResponseItemsItem] = js.native
   
@@ -20,27 +21,15 @@ object NewsRepositoryInboxResponseAymf {
   }
   
   @scala.inline
-  implicit class NewsRepositoryInboxResponseAymfOps[Self <: NewsRepositoryInboxResponseAymf] (val x: Self) extends AnyVal {
+  implicit class NewsRepositoryInboxResponseAymfMutableBuilder[Self <: NewsRepositoryInboxResponseAymf] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: js.Array[NewsRepositoryInboxResponseItemsItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsVarargs(value: NewsRepositoryInboxResponseItemsItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItemsVarargs(value: NewsRepositoryInboxResponseItemsItem*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[NewsRepositoryInboxResponseItemsItem]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMore_available(value: Boolean): Self = this.set("more_available", value.asInstanceOf[js.Any])
+    def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
   }
 }

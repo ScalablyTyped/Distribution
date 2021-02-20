@@ -1,11 +1,12 @@
 package typings.puppeteer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Viewport extends js.Object {
+trait Viewport extends StObject {
   
   /**
     * Specify device scale factor (can be thought of as dpr).
@@ -46,48 +47,36 @@ object Viewport {
   }
   
   @scala.inline
-  implicit class ViewportOps[Self <: Viewport] (val x: Self) extends AnyVal {
+  implicit class ViewportMutableBuilder[Self <: Viewport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceScaleFactorUndefined: Self = StObject.set(x, "deviceScaleFactor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasTouch(value: Boolean): Self = StObject.set(x, "hasTouch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHasTouchUndefined: Self = StObject.set(x, "hasTouch", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceScaleFactor(value: Double): Self = this.set("deviceScaleFactor", value.asInstanceOf[js.Any])
+    def setIsLandscape(value: Boolean): Self = StObject.set(x, "isLandscape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceScaleFactor: Self = this.set("deviceScaleFactor", js.undefined)
+    def setIsLandscapeUndefined: Self = StObject.set(x, "isLandscape", js.undefined)
     
     @scala.inline
-    def setHasTouch(value: Boolean): Self = this.set("hasTouch", value.asInstanceOf[js.Any])
+    def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasTouch: Self = this.set("hasTouch", js.undefined)
+    def setIsMobileUndefined: Self = StObject.set(x, "isMobile", js.undefined)
     
     @scala.inline
-    def setIsLandscape(value: Boolean): Self = this.set("isLandscape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsLandscape: Self = this.set("isLandscape", js.undefined)
-    
-    @scala.inline
-    def setIsMobile(value: Boolean): Self = this.set("isMobile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsMobile: Self = this.set("isMobile", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

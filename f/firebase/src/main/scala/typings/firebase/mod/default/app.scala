@@ -1,13 +1,12 @@
 package typings.firebase.mod.default
 
 import typings.firebase.mod.firebase.app.App
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("firebase", "app")
-@js.native
-object app extends js.Object {
+object app {
   
   /**
     * Retrieves a Firebase {@link firebase.app.App app} instance.
@@ -36,6 +35,10 @@ object app extends js.Object {
     * @return The app corresponding to the provided app name.
     *   If no app name is provided, the default app is returned.
     */
+  @JSImport("firebase", "default.app")
+  @js.native
   def apply(): App = js.native
+  @JSImport("firebase", "default.app")
+  @js.native
   def apply(name: String): App = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.appmeshMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualGatewayFileAccessLog extends js.Object {
+trait VirtualGatewayFileAccessLog extends StObject {
   
   /**
     * The file path to write access logs to. You can use /dev/stdout to send access logs to standard out and configure your Envoy container to use a log driver, such as awslogs, to export the access logs to a log storage service such as Amazon CloudWatch Logs. You can also specify a path in the Envoy container's file system to write the files to disk.
@@ -21,21 +22,9 @@ object VirtualGatewayFileAccessLog {
   }
   
   @scala.inline
-  implicit class VirtualGatewayFileAccessLogOps[Self <: VirtualGatewayFileAccessLog] (val x: Self) extends AnyVal {
+  implicit class VirtualGatewayFileAccessLogMutableBuilder[Self <: VirtualGatewayFileAccessLog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPath(value: FilePath): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPath(value: FilePath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

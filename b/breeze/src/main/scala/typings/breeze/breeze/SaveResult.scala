@@ -1,12 +1,13 @@
 package typings.breeze.breeze
 
 import typings.std.XMLHttpRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SaveResult extends js.Object {
+trait SaveResult extends StObject {
   
   var XHR: XMLHttpRequest = js.native
   
@@ -23,33 +24,21 @@ object SaveResult {
   }
   
   @scala.inline
-  implicit class SaveResultOps[Self <: SaveResult] (val x: Self) extends AnyVal {
+  implicit class SaveResultMutableBuilder[Self <: SaveResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntities(value: js.Array[Entity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyMappings(value: js.Array[KeyMapping]): Self = StObject.set(x, "keyMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXHR(value: XMLHttpRequest): Self = this.set("XHR", value.asInstanceOf[js.Any])
+    def setKeyMappingsVarargs(value: KeyMapping*): Self = StObject.set(x, "keyMappings", js.Array(value :_*))
     
     @scala.inline
-    def setEntitiesVarargs(value: Entity*): Self = this.set("entities", js.Array(value :_*))
-    
-    @scala.inline
-    def setEntities(value: js.Array[Entity]): Self = this.set("entities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyMappingsVarargs(value: KeyMapping*): Self = this.set("keyMappings", js.Array(value :_*))
-    
-    @scala.inline
-    def setKeyMappings(value: js.Array[KeyMapping]): Self = this.set("keyMappings", value.asInstanceOf[js.Any])
+    def setXHR(value: XMLHttpRequest): Self = StObject.set(x, "XHR", value.asInstanceOf[js.Any])
   }
 }

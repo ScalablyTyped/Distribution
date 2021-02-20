@@ -1,6 +1,7 @@
 package typings.antvG2.mod
 
 import typings.antvG2.mod.Styles.text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 坐标轴标签
   */
 @js.native
-trait AxisLabel extends js.Object {
+trait AxisLabel extends StObject {
   
   /**
     * 文本是否需要自动旋转，默认为 true
@@ -54,54 +55,42 @@ object AxisLabel {
   }
   
   @scala.inline
-  implicit class AxisLabelOps[Self <: AxisLabel] (val x: Self) extends AnyVal {
+  implicit class AxisLabelMutableBuilder[Self <: AxisLabel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoRotate(value: Boolean): Self = StObject.set(x, "autoRotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoRotateUndefined: Self = StObject.set(x, "autoRotate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormatter(value: (/* text */ String, /* item */ js.Any, /* index */ Double) => String): Self = StObject.set(x, "formatter", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAutoRotate(value: Boolean): Self = this.set("autoRotate", value.asInstanceOf[js.Any])
+    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
     @scala.inline
-    def deleteAutoRotate: Self = this.set("autoRotate", js.undefined)
+    def setHtmlTemplate(value: (/* text */ String, /* item */ js.Any, /* index */ Double) => String): Self = StObject.set(x, "htmlTemplate", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setFormatter(value: (/* text */ String, /* item */ js.Any, /* index */ Double) => String): Self = this.set("formatter", js.Any.fromFunction3(value))
+    def setHtmlTemplateUndefined: Self = StObject.set(x, "htmlTemplate", js.undefined)
     
     @scala.inline
-    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    def setOffset(value: Double | js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtmlTemplate(value: (/* text */ String, /* item */ js.Any, /* index */ Double) => String): Self = this.set("htmlTemplate", js.Any.fromFunction3(value))
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteHtmlTemplate: Self = this.set("htmlTemplate", js.undefined)
+    def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
     
     @scala.inline
-    def setOffsetVarargs(value: Double*): Self = this.set("offset", js.Array(value :_*))
+    def setTextStyle(value: (js.Function1[/* text */ js.UndefOr[String], text]) | text): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double | js.Array[Double]): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setTextStyleFunction1(value: /* text */ js.UndefOr[String] => text): Self = StObject.set(x, "textStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
-    
-    @scala.inline
-    def setTextStyleFunction1(value: /* text */ js.UndefOr[String] => text): Self = this.set("textStyle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTextStyle(value: (js.Function1[/* text */ js.UndefOr[String], text]) | text): Self = this.set("textStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
   }
 }

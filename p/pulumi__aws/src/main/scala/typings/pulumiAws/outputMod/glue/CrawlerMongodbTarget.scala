@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.glue
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CrawlerMongodbTarget extends js.Object {
+trait CrawlerMongodbTarget extends StObject {
   
   /**
     * The name of the connection to use to connect to the Amazon DocumentDB or MongoDB target.
@@ -31,30 +32,18 @@ object CrawlerMongodbTarget {
   }
   
   @scala.inline
-  implicit class CrawlerMongodbTargetOps[Self <: CrawlerMongodbTarget] (val x: Self) extends AnyVal {
+  implicit class CrawlerMongodbTargetMutableBuilder[Self <: CrawlerMongodbTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionName(value: String): Self = StObject.set(x, "connectionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScanAll(value: Boolean): Self = StObject.set(x, "scanAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionName(value: String): Self = this.set("connectionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScanAll(value: Boolean): Self = this.set("scanAll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScanAll: Self = this.set("scanAll", js.undefined)
+    def setScanAllUndefined: Self = StObject.set(x, "scanAll", js.undefined)
   }
 }

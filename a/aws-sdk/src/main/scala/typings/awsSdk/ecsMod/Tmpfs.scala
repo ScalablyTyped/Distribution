@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tmpfs extends js.Object {
+trait Tmpfs extends StObject {
   
   /**
     * The absolute file path where the tmpfs volume is to be mounted.
@@ -31,33 +32,21 @@ object Tmpfs {
   }
   
   @scala.inline
-  implicit class TmpfsOps[Self <: Tmpfs] (val x: Self) extends AnyVal {
+  implicit class TmpfsMutableBuilder[Self <: Tmpfs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerPath(value: String): Self = StObject.set(x, "containerPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMountOptions(value: StringList): Self = StObject.set(x, "mountOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMountOptionsUndefined: Self = StObject.set(x, "mountOptions", js.undefined)
     
     @scala.inline
-    def setContainerPath(value: String): Self = this.set("containerPath", value.asInstanceOf[js.Any])
+    def setMountOptionsVarargs(value: String*): Self = StObject.set(x, "mountOptions", js.Array(value :_*))
     
     @scala.inline
-    def setSize(value: Integer): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMountOptionsVarargs(value: String*): Self = this.set("mountOptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setMountOptions(value: StringList): Self = this.set("mountOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMountOptions: Self = this.set("mountOptions", js.undefined)
+    def setSize(value: Integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

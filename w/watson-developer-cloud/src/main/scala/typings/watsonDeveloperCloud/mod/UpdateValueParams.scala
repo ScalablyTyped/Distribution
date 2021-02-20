@@ -1,13 +1,14 @@
 package typings.watsonDeveloperCloud.mod
 
 import typings.watsonDeveloperCloud.mod.UpdateValueConstants.ValueType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `updateValue` operation. */
 @js.native
-trait UpdateValueParams extends js.Object {
+trait UpdateValueParams extends StObject {
   
   /** The name of the entity. */
   var entity: String = js.native
@@ -46,75 +47,63 @@ object UpdateValueParams {
   }
   
   @scala.inline
-  implicit class UpdateValueParamsOps[Self <: UpdateValueParams] (val x: Self) extends AnyVal {
+  implicit class UpdateValueParamsMutableBuilder[Self <: UpdateValueParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setEntity(value: String): Self = this.set("entity", value.asInstanceOf[js.Any])
+    def setNew_metadata(value: js.Object): Self = StObject.set(x, "new_metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setNew_metadataUndefined: Self = StObject.set(x, "new_metadata", js.undefined)
     
     @scala.inline
-    def setWorkspace_id(value: String): Self = this.set("workspace_id", value.asInstanceOf[js.Any])
+    def setNew_patterns(value: js.Array[String]): Self = StObject.set(x, "new_patterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setNew_patternsUndefined: Self = StObject.set(x, "new_patterns", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setNew_patternsVarargs(value: String*): Self = StObject.set(x, "new_patterns", js.Array(value :_*))
     
     @scala.inline
-    def setNew_metadata(value: js.Object): Self = this.set("new_metadata", value.asInstanceOf[js.Any])
+    def setNew_synonyms(value: js.Array[String]): Self = StObject.set(x, "new_synonyms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNew_metadata: Self = this.set("new_metadata", js.undefined)
+    def setNew_synonymsUndefined: Self = StObject.set(x, "new_synonyms", js.undefined)
     
     @scala.inline
-    def setNew_patternsVarargs(value: String*): Self = this.set("new_patterns", js.Array(value :_*))
+    def setNew_synonymsVarargs(value: String*): Self = StObject.set(x, "new_synonyms", js.Array(value :_*))
     
     @scala.inline
-    def setNew_patterns(value: js.Array[String]): Self = this.set("new_patterns", value.asInstanceOf[js.Any])
+    def setNew_value(value: String): Self = StObject.set(x, "new_value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNew_patterns: Self = this.set("new_patterns", js.undefined)
+    def setNew_valueUndefined: Self = StObject.set(x, "new_value", js.undefined)
     
     @scala.inline
-    def setNew_synonymsVarargs(value: String*): Self = this.set("new_synonyms", js.Array(value :_*))
+    def setNew_value_type(value: ValueType | String): Self = StObject.set(x, "new_value_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNew_synonyms(value: js.Array[String]): Self = this.set("new_synonyms", value.asInstanceOf[js.Any])
+    def setNew_value_typeUndefined: Self = StObject.set(x, "new_value_type", js.undefined)
     
     @scala.inline
-    def deleteNew_synonyms: Self = this.set("new_synonyms", js.undefined)
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNew_value(value: String): Self = this.set("new_value", value.asInstanceOf[js.Any])
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
     @scala.inline
-    def deleteNew_value: Self = this.set("new_value", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNew_value_type(value: ValueType | String): Self = this.set("new_value_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNew_value_type: Self = this.set("new_value_type", js.undefined)
-    
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+    def setWorkspace_id(value: String): Self = StObject.set(x, "workspace_id", value.asInstanceOf[js.Any])
   }
 }

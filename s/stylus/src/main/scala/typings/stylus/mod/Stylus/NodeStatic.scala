@@ -41,12 +41,13 @@ import typings.stylus.mod.Stylus.Nodes.Selector
 import typings.stylus.mod.Stylus.Nodes.Ternary
 import typings.stylus.mod.Stylus.Nodes.UnaryOp
 import typings.stylus.mod.Stylus.Nodes.Unit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeStatic extends js.Object {
+trait NodeStatic extends StObject {
   
   var Arguments: Instantiable0[typings.stylus.mod.Stylus.Nodes.Arguments] = js.native
   
@@ -214,143 +215,131 @@ object NodeStatic {
   }
   
   @scala.inline
-  implicit class NodeStaticOps[Self <: NodeStatic] (val x: Self) extends AnyVal {
+  implicit class NodeStaticMutableBuilder[Self <: NodeStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArguments(value: Instantiable0[Arguments]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAtblock(value: Instantiable0[Atblock]): Self = StObject.set(x, "Atblock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAtrule(value: Instantiable1[/* type */ String, Atrule]): Self = StObject.set(x, "Atrule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArguments(value: Instantiable0[Arguments]): Self = this.set("Arguments", value.asInstanceOf[js.Any])
+    def setBinOp(value: Instantiable3[/* op */ String, /* left */ Expression, /* right */ Expression, BinOp]): Self = StObject.set(x, "BinOp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtblock(value: Instantiable0[Atblock]): Self = this.set("Atblock", value.asInstanceOf[js.Any])
+    def setBlock(value: Instantiable1[/* parent */ Block, Block]): Self = StObject.set(x, "Block", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtrule(value: Instantiable1[/* type */ String, Atrule]): Self = this.set("Atrule", value.asInstanceOf[js.Any])
+    def setBoolean(value: Instantiable0[typings.stylus.mod.Stylus.Nodes.Boolean]): Self = StObject.set(x, "Boolean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinOp(value: Instantiable3[/* op */ String, /* left */ Expression, /* right */ Expression, BinOp]): Self = this.set("BinOp", value.asInstanceOf[js.Any])
+    def setCall(value: Instantiable2[/* name */ String, /* args */ Expression, Call]): Self = StObject.set(x, "Call", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlock(value: Instantiable1[/* parent */ Block, Block]): Self = this.set("Block", value.asInstanceOf[js.Any])
+    def setCharset(value: Instantiable1[/* val */ String, Charset]): Self = StObject.set(x, "Charset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoolean(value: Instantiable0[typings.stylus.mod.Stylus.Nodes.Boolean]): Self = this.set("Boolean", value.asInstanceOf[js.Any])
+    def setComment(value: Instantiable3[/* str */ String, /* suppress */ Boolean, /* inline */ Boolean, Comment]): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCall(value: Instantiable2[/* name */ String, /* args */ Expression, Call]): Self = this.set("Call", value.asInstanceOf[js.Any])
+    def setEach(value: Instantiable0[Each]): Self = StObject.set(x, "Each", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharset(value: Instantiable1[/* val */ String, Charset]): Self = this.set("Charset", value.asInstanceOf[js.Any])
+    def setExpression(value: Instantiable1[/* isList */ Boolean, Expression]): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: Instantiable3[/* str */ String, /* suppress */ Boolean, /* inline */ Boolean, Comment]): Self = this.set("Comment", value.asInstanceOf[js.Any])
+    def setExtend(value: Instantiable1[/* selectors */ js.Array[Selector], Extend]): Self = StObject.set(x, "Extend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEach(value: Instantiable0[Each]): Self = this.set("Each", value.asInstanceOf[js.Any])
+    def setFalse(value: typings.stylus.mod.Stylus.Nodes.Boolean): Self = StObject.set(x, "false", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpression(value: Instantiable1[/* isList */ Boolean, Expression]): Self = this.set("Expression", value.asInstanceOf[js.Any])
+    def setFunction(value: Instantiable3[/* name */ String, /* params */ Params, /* body */ Block, Function]): Self = StObject.set(x, "Function", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtend(value: Instantiable1[/* selectors */ js.Array[Selector], Extend]): Self = this.set("Extend", value.asInstanceOf[js.Any])
+    def setGroup(value: Instantiable0[Group]): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunction(value: Instantiable3[/* name */ String, /* params */ Params, /* body */ Block, Function]): Self = this.set("Function", value.asInstanceOf[js.Any])
+    def setHSLA(value: TypeofHSLA): Self = StObject.set(x, "HSLA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: Instantiable0[Group]): Self = this.set("Group", value.asInstanceOf[js.Any])
+    def setIdent(value: Instantiable2[/* name */ String, /* val */ Node, Ident]): Self = StObject.set(x, "Ident", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHSLA(value: TypeofHSLA): Self = this.set("HSLA", value.asInstanceOf[js.Any])
+    def setIf(value: Instantiable2[/* cond */ Expression, /* negate */ Boolean, If]): Self = StObject.set(x, "If", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdent(value: Instantiable2[/* name */ String, /* val */ Node, Ident]): Self = this.set("Ident", value.asInstanceOf[js.Any])
+    def setImport(value: Instantiable1[/* path */ Expression, Import]): Self = StObject.set(x, "Import", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIf(value: Instantiable2[/* cond */ Expression, /* negate */ Boolean, If]): Self = this.set("If", value.asInstanceOf[js.Any])
+    def setKeyframes(value: Instantiable1[/* segs */ js.Array[Node], Keyframes]): Self = StObject.set(x, "Keyframes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImport(value: Instantiable1[/* path */ Expression, Import]): Self = this.set("Import", value.asInstanceOf[js.Any])
+    def setLiteral(value: Instantiable1[/* str */ String, Literal]): Self = StObject.set(x, "Literal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyframes(value: Instantiable1[/* segs */ js.Array[Node], Keyframes]): Self = this.set("Keyframes", value.asInstanceOf[js.Any])
+    def setMedia(value: Instantiable1[/* val */ String, Media]): Self = StObject.set(x, "Media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiteral(value: Instantiable1[/* str */ String, Literal]): Self = this.set("Literal", value.asInstanceOf[js.Any])
+    def setMember(value: Instantiable2[/* left */ Node, /* right */ Node, Member]): Self = StObject.set(x, "Member", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia(value: Instantiable1[/* val */ String, Media]): Self = this.set("Media", value.asInstanceOf[js.Any])
+    def setNamespace(value: Instantiable2[/* val */ String, /* prefix */ String, Namespace]): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMember(value: Instantiable2[/* left */ Node, /* right */ Node, Member]): Self = this.set("Member", value.asInstanceOf[js.Any])
+    def setNode(value: Instantiable0[Node]): Self = StObject.set(x, "Node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace(value: Instantiable2[/* val */ String, /* prefix */ String, Namespace]): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+    def setNull(value: Instantiable0[Null]): Self = StObject.set(x, "Null", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode(value: Instantiable0[Node]): Self = this.set("Node", value.asInstanceOf[js.Any])
+    def setObject(value: Instantiable0[Object]): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNull(value: Instantiable0[Null]): Self = this.set("Null", value.asInstanceOf[js.Any])
+    def setParams(value: Instantiable0[Params]): Self = StObject.set(x, "Params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: Instantiable0[Object]): Self = this.set("Object", value.asInstanceOf[js.Any])
+    def setProperty(value: Instantiable2[/* segs */ js.Array[Node], /* expr */ Expression, Property]): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: Instantiable0[Params]): Self = this.set("Params", value.asInstanceOf[js.Any])
+    def setQuery(value: Instantiable0[Query]): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperty(value: Instantiable2[/* segs */ js.Array[Node], /* expr */ Expression, Property]): Self = this.set("Property", value.asInstanceOf[js.Any])
+    def setQueryExpr(value: Instantiable1[/* segs */ js.Array[Node], QueryExpr]): Self = StObject.set(x, "QueryExpr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: Instantiable0[Query]): Self = this.set("Query", value.asInstanceOf[js.Any])
+    def setQueryList(value: Instantiable0[QueryList]): Self = StObject.set(x, "QueryList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryExpr(value: Instantiable1[/* segs */ js.Array[Node], QueryExpr]): Self = this.set("QueryExpr", value.asInstanceOf[js.Any])
+    def setRGBA(value: TypeofRGBA): Self = StObject.set(x, "RGBA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryList(value: Instantiable0[QueryList]): Self = this.set("QueryList", value.asInstanceOf[js.Any])
+    def setReturn(value: Instantiable1[/* expr */ Expression, Return]): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRGBA(value: TypeofRGBA): Self = this.set("RGBA", value.asInstanceOf[js.Any])
+    def setRoot(value: Instantiable0[Root]): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturn(value: Instantiable1[/* expr */ Expression, Return]): Self = this.set("Return", value.asInstanceOf[js.Any])
+    def setSelector(value: Instantiable1[/* segs */ js.Array[Node], Selector]): Self = StObject.set(x, "Selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: Instantiable0[Root]): Self = this.set("Root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelector(value: Instantiable1[/* segs */ js.Array[Node], Selector]): Self = this.set("Selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setString(value: Instantiable1[/* val */ String, typings.stylus.mod.Stylus.Nodes.String]): Self = this.set("String", value.asInstanceOf[js.Any])
+    def setString(value: Instantiable1[/* val */ String, typings.stylus.mod.Stylus.Nodes.String]): Self = StObject.set(x, "String", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTernary(
       value: Instantiable3[/* op */ String, /* trueExpr */ Expression, /* falseExpr */ Expression, Ternary]
-    ): Self = this.set("Ternary", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "Ternary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnaryOp(value: Instantiable2[/* op */ String, /* expr */ Expression, UnaryOp]): Self = this.set("UnaryOp", value.asInstanceOf[js.Any])
+    def setTrue(value: typings.stylus.mod.Stylus.Nodes.Boolean): Self = StObject.set(x, "true", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnit(value: Instantiable2[/* val */ Double, /* type */ String, Unit]): Self = this.set("Unit", value.asInstanceOf[js.Any])
+    def setUnaryOp(value: Instantiable2[/* op */ String, /* expr */ Expression, UnaryOp]): Self = StObject.set(x, "UnaryOp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFalse(value: typings.stylus.mod.Stylus.Nodes.Boolean): Self = this.set("false", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrue(value: typings.stylus.mod.Stylus.Nodes.Boolean): Self = this.set("true", value.asInstanceOf[js.Any])
+    def setUnit(value: Instantiable2[/* val */ Double, /* type */ String, Unit]): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
   }
 }

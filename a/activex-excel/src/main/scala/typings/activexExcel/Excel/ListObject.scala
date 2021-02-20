@@ -1,12 +1,13 @@
 package typings.activexExcel.Excel
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListObject extends js.Object {
+trait ListObject extends StObject {
   
   val Active: Boolean = js.native
   

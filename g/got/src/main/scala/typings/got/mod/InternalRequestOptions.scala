@@ -1,6 +1,7 @@
 package typings.got.mod
 
 import typings.node.httpsMod.RequestOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,30 +25,18 @@ object InternalRequestOptions {
   }
   
   @scala.inline
-  implicit class InternalRequestOptionsOps[Self <: InternalRequestOptions] (val x: Self) extends AnyVal {
+  implicit class InternalRequestOptionsMutableBuilder[Self <: InternalRequestOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgent(value: js.Any): Self = this.set("agent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAgent: Self = this.set("agent", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: js.Any): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

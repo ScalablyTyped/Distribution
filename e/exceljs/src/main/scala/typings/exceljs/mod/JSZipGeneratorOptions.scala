@@ -3,12 +3,13 @@ package typings.exceljs.mod
 import typings.exceljs.anon.Level
 import typings.exceljs.exceljsStrings.DEFLATE
 import typings.exceljs.exceljsStrings.STORE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSZipGeneratorOptions extends js.Object {
+trait JSZipGeneratorOptions extends StObject {
   
   /**
   	 * @default DEFLATE
@@ -26,27 +27,15 @@ object JSZipGeneratorOptions {
   }
   
   @scala.inline
-  implicit class JSZipGeneratorOptionsOps[Self <: JSZipGeneratorOptions] (val x: Self) extends AnyVal {
+  implicit class JSZipGeneratorOptionsMutableBuilder[Self <: JSZipGeneratorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompression(value: STORE | DEFLATE): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCompression(value: STORE | DEFLATE): Self = this.set("compression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCompressionOptions(value: Level): Self = this.set("compressionOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCompressionOptionsNull: Self = this.set("compressionOptions", null)
+    def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
   }
 }

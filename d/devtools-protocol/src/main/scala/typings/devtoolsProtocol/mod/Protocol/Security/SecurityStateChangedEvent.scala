@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Security
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecurityStateChangedEvent extends js.Object {
+trait SecurityStateChangedEvent extends StObject {
   
   /**
     * List of explanations for the security state. If the overall security state is `insecure` or
@@ -47,39 +48,27 @@ object SecurityStateChangedEvent {
   }
   
   @scala.inline
-  implicit class SecurityStateChangedEventOps[Self <: SecurityStateChangedEvent] (val x: Self) extends AnyVal {
+  implicit class SecurityStateChangedEventMutableBuilder[Self <: SecurityStateChangedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExplanations(value: js.Array[SecurityStateExplanation]): Self = StObject.set(x, "explanations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExplanationsVarargs(value: SecurityStateExplanation*): Self = StObject.set(x, "explanations", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsecureContentStatus(value: InsecureContentStatus): Self = StObject.set(x, "insecureContentStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplanationsVarargs(value: SecurityStateExplanation*): Self = this.set("explanations", js.Array(value :_*))
+    def setSchemeIsCryptographic(value: Boolean): Self = StObject.set(x, "schemeIsCryptographic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplanations(value: js.Array[SecurityStateExplanation]): Self = this.set("explanations", value.asInstanceOf[js.Any])
+    def setSecurityState(value: SecurityState): Self = StObject.set(x, "securityState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsecureContentStatus(value: InsecureContentStatus): Self = this.set("insecureContentStatus", value.asInstanceOf[js.Any])
+    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemeIsCryptographic(value: Boolean): Self = this.set("schemeIsCryptographic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecurityState(value: SecurityState): Self = this.set("securityState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummary: Self = this.set("summary", js.undefined)
+    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

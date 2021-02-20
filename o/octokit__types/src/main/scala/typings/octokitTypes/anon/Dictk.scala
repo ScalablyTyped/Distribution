@@ -1,6 +1,7 @@
 package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,126 +62,114 @@ object Dictk {
   }
   
   @scala.inline
-  implicit class DictkOps[Self <: Dictk] (val x: Self) extends AnyVal {
+  implicit class DictkMutableBuilder[Self <: Dictk] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvatar_urlUndefined: Self = StObject.set(x, "avatar_url", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvents_url(value: String): Self = StObject.set(x, "events_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvatar_url(value: String): Self = this.set("avatar_url", value.asInstanceOf[js.Any])
+    def setEvents_urlUndefined: Self = StObject.set(x, "events_url", js.undefined)
     
     @scala.inline
-    def deleteAvatar_url: Self = this.set("avatar_url", js.undefined)
+    def setFollowers_url(value: String): Self = StObject.set(x, "followers_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents_url(value: String): Self = this.set("events_url", value.asInstanceOf[js.Any])
+    def setFollowers_urlUndefined: Self = StObject.set(x, "followers_url", js.undefined)
     
     @scala.inline
-    def deleteEvents_url: Self = this.set("events_url", js.undefined)
+    def setFollowing_url(value: String): Self = StObject.set(x, "following_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowers_url(value: String): Self = this.set("followers_url", value.asInstanceOf[js.Any])
+    def setFollowing_urlUndefined: Self = StObject.set(x, "following_url", js.undefined)
     
     @scala.inline
-    def deleteFollowers_url: Self = this.set("followers_url", js.undefined)
+    def setGists_url(value: String): Self = StObject.set(x, "gists_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowing_url(value: String): Self = this.set("following_url", value.asInstanceOf[js.Any])
+    def setGists_urlUndefined: Self = StObject.set(x, "gists_url", js.undefined)
     
     @scala.inline
-    def deleteFollowing_url: Self = this.set("following_url", js.undefined)
+    def setGravatar_id(value: String): Self = StObject.set(x, "gravatar_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGists_url(value: String): Self = this.set("gists_url", value.asInstanceOf[js.Any])
+    def setGravatar_idUndefined: Self = StObject.set(x, "gravatar_id", js.undefined)
     
     @scala.inline
-    def deleteGists_url: Self = this.set("gists_url", js.undefined)
+    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGravatar_id(value: String): Self = this.set("gravatar_id", value.asInstanceOf[js.Any])
+    def setHtml_urlUndefined: Self = StObject.set(x, "html_url", js.undefined)
     
     @scala.inline
-    def deleteGravatar_id: Self = this.set("gravatar_id", js.undefined)
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml_url(value: String): Self = this.set("html_url", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHtml_url: Self = this.set("html_url", js.undefined)
+    def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLoginUndefined: Self = StObject.set(x, "login", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogin(value: String): Self = this.set("login", value.asInstanceOf[js.Any])
+    def setNode_idUndefined: Self = StObject.set(x, "node_id", js.undefined)
     
     @scala.inline
-    def deleteLogin: Self = this.set("login", js.undefined)
+    def setOrganizations_url(value: String): Self = StObject.set(x, "organizations_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode_id(value: String): Self = this.set("node_id", value.asInstanceOf[js.Any])
+    def setOrganizations_urlUndefined: Self = StObject.set(x, "organizations_url", js.undefined)
     
     @scala.inline
-    def deleteNode_id: Self = this.set("node_id", js.undefined)
+    def setReceived_events_url(value: String): Self = StObject.set(x, "received_events_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizations_url(value: String): Self = this.set("organizations_url", value.asInstanceOf[js.Any])
+    def setReceived_events_urlUndefined: Self = StObject.set(x, "received_events_url", js.undefined)
     
     @scala.inline
-    def deleteOrganizations_url: Self = this.set("organizations_url", js.undefined)
+    def setRepos_url(value: String): Self = StObject.set(x, "repos_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceived_events_url(value: String): Self = this.set("received_events_url", value.asInstanceOf[js.Any])
+    def setRepos_urlUndefined: Self = StObject.set(x, "repos_url", js.undefined)
     
     @scala.inline
-    def deleteReceived_events_url: Self = this.set("received_events_url", js.undefined)
+    def setSite_admin(value: Boolean): Self = StObject.set(x, "site_admin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepos_url(value: String): Self = this.set("repos_url", value.asInstanceOf[js.Any])
+    def setSite_adminUndefined: Self = StObject.set(x, "site_admin", js.undefined)
     
     @scala.inline
-    def deleteRepos_url: Self = this.set("repos_url", js.undefined)
+    def setStarred_url(value: String): Self = StObject.set(x, "starred_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSite_admin(value: Boolean): Self = this.set("site_admin", value.asInstanceOf[js.Any])
+    def setStarred_urlUndefined: Self = StObject.set(x, "starred_url", js.undefined)
     
     @scala.inline
-    def deleteSite_admin: Self = this.set("site_admin", js.undefined)
+    def setSubscriptions_url(value: String): Self = StObject.set(x, "subscriptions_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStarred_url(value: String): Self = this.set("starred_url", value.asInstanceOf[js.Any])
+    def setSubscriptions_urlUndefined: Self = StObject.set(x, "subscriptions_url", js.undefined)
     
     @scala.inline
-    def deleteStarred_url: Self = this.set("starred_url", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscriptions_url(value: String): Self = this.set("subscriptions_url", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteSubscriptions_url: Self = this.set("subscriptions_url", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

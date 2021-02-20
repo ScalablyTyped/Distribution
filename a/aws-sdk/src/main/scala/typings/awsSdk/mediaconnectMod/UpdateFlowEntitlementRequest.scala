@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateFlowEntitlementRequest extends js.Object {
+trait UpdateFlowEntitlementRequest extends StObject {
   
   /**
     * A description of the entitlement. This description appears only on the AWS Elemental MediaConnect console and will not be seen by the subscriber or end user.
@@ -46,51 +47,39 @@ object UpdateFlowEntitlementRequest {
   }
   
   @scala.inline
-  implicit class UpdateFlowEntitlementRequestOps[Self <: UpdateFlowEntitlementRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateFlowEntitlementRequestMutableBuilder[Self <: UpdateFlowEntitlementRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryption(value: UpdateEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntitlementArn(value: string): Self = this.set("EntitlementArn", value.asInstanceOf[js.Any])
+    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
     @scala.inline
-    def setFlowArn(value: string): Self = this.set("FlowArn", value.asInstanceOf[js.Any])
+    def setEntitlementArn(value: string): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEntitlementStatus(value: EntitlementStatus): Self = StObject.set(x, "EntitlementStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setEntitlementStatusUndefined: Self = StObject.set(x, "EntitlementStatus", js.undefined)
     
     @scala.inline
-    def setEncryption(value: UpdateEncryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    def setSubscribers(value: listOfString): Self = StObject.set(x, "Subscribers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntitlementStatus(value: EntitlementStatus): Self = this.set("EntitlementStatus", value.asInstanceOf[js.Any])
+    def setSubscribersUndefined: Self = StObject.set(x, "Subscribers", js.undefined)
     
     @scala.inline
-    def deleteEntitlementStatus: Self = this.set("EntitlementStatus", js.undefined)
-    
-    @scala.inline
-    def setSubscribersVarargs(value: string*): Self = this.set("Subscribers", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubscribers(value: listOfString): Self = this.set("Subscribers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscribers: Self = this.set("Subscribers", js.undefined)
+    def setSubscribersVarargs(value: string*): Self = StObject.set(x, "Subscribers", js.Array(value :_*))
   }
 }

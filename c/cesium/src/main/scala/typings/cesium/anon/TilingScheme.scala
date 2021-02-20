@@ -1,11 +1,12 @@
 package typings.cesium.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TilingScheme extends js.Object {
+trait TilingScheme extends StObject {
   
   var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
   
@@ -20,30 +21,18 @@ object TilingScheme {
   }
   
   @scala.inline
-  implicit class TilingSchemeOps[Self <: TilingScheme] (val x: Self) extends AnyVal {
+  implicit class TilingSchemeMutableBuilder[Self <: TilingScheme] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTilingScheme(value: typings.cesium.mod.TilingScheme): Self = StObject.set(x, "tilingScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = this.set("ellipsoid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEllipsoid: Self = this.set("ellipsoid", js.undefined)
-    
-    @scala.inline
-    def setTilingScheme(value: typings.cesium.mod.TilingScheme): Self = this.set("tilingScheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTilingScheme: Self = this.set("tilingScheme", js.undefined)
+    def setTilingSchemeUndefined: Self = StObject.set(x, "tilingScheme", js.undefined)
   }
 }

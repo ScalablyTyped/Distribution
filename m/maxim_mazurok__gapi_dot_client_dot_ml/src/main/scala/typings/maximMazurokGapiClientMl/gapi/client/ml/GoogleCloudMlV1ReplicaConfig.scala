@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudMlV1ReplicaConfig extends js.Object {
+trait GoogleCloudMlV1ReplicaConfig extends StObject {
   
   /**
     * Represents the type and number of accelerators used by the replica. [Learn about restrictions on accelerator configurations for
@@ -52,54 +53,42 @@ object GoogleCloudMlV1ReplicaConfig {
   }
   
   @scala.inline
-  implicit class GoogleCloudMlV1ReplicaConfigOps[Self <: GoogleCloudMlV1ReplicaConfig] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudMlV1ReplicaConfigMutableBuilder[Self <: GoogleCloudMlV1ReplicaConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceleratorConfig(value: GoogleCloudMlV1AcceleratorConfig): Self = StObject.set(x, "acceleratorConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceleratorConfigUndefined: Self = StObject.set(x, "acceleratorConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerArgs(value: js.Array[String]): Self = StObject.set(x, "containerArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceleratorConfig(value: GoogleCloudMlV1AcceleratorConfig): Self = this.set("acceleratorConfig", value.asInstanceOf[js.Any])
+    def setContainerArgsUndefined: Self = StObject.set(x, "containerArgs", js.undefined)
     
     @scala.inline
-    def deleteAcceleratorConfig: Self = this.set("acceleratorConfig", js.undefined)
+    def setContainerArgsVarargs(value: String*): Self = StObject.set(x, "containerArgs", js.Array(value :_*))
     
     @scala.inline
-    def setContainerArgsVarargs(value: String*): Self = this.set("containerArgs", js.Array(value :_*))
+    def setContainerCommand(value: js.Array[String]): Self = StObject.set(x, "containerCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerArgs(value: js.Array[String]): Self = this.set("containerArgs", value.asInstanceOf[js.Any])
+    def setContainerCommandUndefined: Self = StObject.set(x, "containerCommand", js.undefined)
     
     @scala.inline
-    def deleteContainerArgs: Self = this.set("containerArgs", js.undefined)
+    def setContainerCommandVarargs(value: String*): Self = StObject.set(x, "containerCommand", js.Array(value :_*))
     
     @scala.inline
-    def setContainerCommandVarargs(value: String*): Self = this.set("containerCommand", js.Array(value :_*))
+    def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerCommand(value: js.Array[String]): Self = this.set("containerCommand", value.asInstanceOf[js.Any])
+    def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
     
     @scala.inline
-    def deleteContainerCommand: Self = this.set("containerCommand", js.undefined)
+    def setTpuTfVersion(value: String): Self = StObject.set(x, "tpuTfVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUri(value: String): Self = this.set("imageUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageUri: Self = this.set("imageUri", js.undefined)
-    
-    @scala.inline
-    def setTpuTfVersion(value: String): Self = this.set("tpuTfVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTpuTfVersion: Self = this.set("tpuTfVersion", js.undefined)
+    def setTpuTfVersionUndefined: Self = StObject.set(x, "tpuTfVersion", js.undefined)
   }
 }

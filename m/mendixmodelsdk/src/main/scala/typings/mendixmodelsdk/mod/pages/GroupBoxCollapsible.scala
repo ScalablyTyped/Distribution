@@ -1,21 +1,41 @@
 package typings.mendixmodelsdk.mod.pages
 
+import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "pages.GroupBoxCollapsible")
 @js.native
-class GroupBoxCollapsible ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.GroupBoxCollapsible
-/* static members */
-@JSImport("mendixmodelsdk", "pages.GroupBoxCollapsible")
-@js.native
-object GroupBoxCollapsible extends js.Object {
+class GroupBoxCollapsible protected ()
+  extends typings.mendixmodelsdk.allModelClassesMod.pages.GroupBoxCollapsible {
+  def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+}
+object GroupBoxCollapsible {
   
-  var No: typings.mendixmodelsdk.pagesMod.pages.GroupBoxCollapsible = js.native
+  @JSImport("mendixmodelsdk", "pages.GroupBoxCollapsible")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var YesInitiallyCollapsed: typings.mendixmodelsdk.pagesMod.pages.GroupBoxCollapsible = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.GroupBoxCollapsible.No")
+  @js.native
+  def No: typings.mendixmodelsdk.pagesMod.pages.GroupBoxCollapsible = js.native
+  @scala.inline
+  def No_=(x: typings.mendixmodelsdk.pagesMod.pages.GroupBoxCollapsible): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("No")(x.asInstanceOf[js.Any])
   
-  var YesInitiallyExpanded: typings.mendixmodelsdk.pagesMod.pages.GroupBoxCollapsible = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.GroupBoxCollapsible.YesInitiallyCollapsed")
+  @js.native
+  def YesInitiallyCollapsed: typings.mendixmodelsdk.pagesMod.pages.GroupBoxCollapsible = js.native
+  @scala.inline
+  def YesInitiallyCollapsed_=(x: typings.mendixmodelsdk.pagesMod.pages.GroupBoxCollapsible): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YesInitiallyCollapsed")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.GroupBoxCollapsible.YesInitiallyExpanded")
+  @js.native
+  def YesInitiallyExpanded: typings.mendixmodelsdk.pagesMod.pages.GroupBoxCollapsible = js.native
+  @scala.inline
+  def YesInitiallyExpanded_=(x: typings.mendixmodelsdk.pagesMod.pages.GroupBoxCollapsible): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YesInitiallyExpanded")(x.asInstanceOf[js.Any])
 }

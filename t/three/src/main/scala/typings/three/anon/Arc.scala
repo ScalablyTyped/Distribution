@@ -1,11 +1,12 @@
 package typings.three.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Arc extends js.Object {
+trait Arc extends StObject {
   
   var arc: Double = js.native
   
@@ -26,33 +27,21 @@ object Arc {
   }
   
   @scala.inline
-  implicit class ArcOps[Self <: Arc] (val x: Self) extends AnyVal {
+  implicit class ArcMutableBuilder[Self <: Arc] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArc(value: Double): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRadialSegments(value: Double): Self = StObject.set(x, "radialSegments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArc(value: Double): Self = this.set("arc", value.asInstanceOf[js.Any])
+    def setTube(value: Double): Self = StObject.set(x, "tube", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadialSegments(value: Double): Self = this.set("radialSegments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTube(value: Double): Self = this.set("tube", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTubularSegments(value: Double): Self = this.set("tubularSegments", value.asInstanceOf[js.Any])
+    def setTubularSegments(value: Double): Self = StObject.set(x, "tubularSegments", value.asInstanceOf[js.Any])
   }
 }

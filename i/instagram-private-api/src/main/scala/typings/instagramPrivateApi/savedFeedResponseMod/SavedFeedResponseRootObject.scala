@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.savedFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SavedFeedResponseRootObject extends js.Object {
+trait SavedFeedResponseRootObject extends StObject {
   
   var auto_load_more_enabled: Boolean = js.native
   
@@ -35,39 +36,27 @@ object SavedFeedResponseRootObject {
   }
   
   @scala.inline
-  implicit class SavedFeedResponseRootObjectOps[Self <: SavedFeedResponseRootObject] (val x: Self) extends AnyVal {
+  implicit class SavedFeedResponseRootObjectMutableBuilder[Self <: SavedFeedResponseRootObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuto_load_more_enabled(value: Boolean): Self = StObject.set(x, "auto_load_more_enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItems(value: js.Array[SavedFeedResponseItemsItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsVarargs(value: SavedFeedResponseItemsItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setAuto_load_more_enabled(value: Boolean): Self = this.set("auto_load_more_enabled", value.asInstanceOf[js.Any])
+    def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: SavedFeedResponseItemsItem*): Self = this.set("items", js.Array(value :_*))
+    def setNext_max_id(value: String): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[SavedFeedResponseItemsItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setNum_results(value: Double): Self = StObject.set(x, "num_results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMore_available(value: Boolean): Self = this.set("more_available", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNext_max_id(value: String): Self = this.set("next_max_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNum_results(value: Double): Self = this.set("num_results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

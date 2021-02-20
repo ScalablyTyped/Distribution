@@ -1,11 +1,12 @@
 package typings.uikit.mod.UIkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIkitImageOptions extends js.Object {
+trait UIkitImageOptions extends StObject {
   
   var dataSrc: js.UndefOr[String] = js.native
   
@@ -32,66 +33,54 @@ object UIkitImageOptions {
   }
   
   @scala.inline
-  implicit class UIkitImageOptionsOps[Self <: UIkitImageOptions] (val x: Self) extends AnyVal {
+  implicit class UIkitImageOptionsMutableBuilder[Self <: UIkitImageOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSrc(value: String): Self = StObject.set(x, "dataSrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSrcUndefined: Self = StObject.set(x, "dataSrc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSrcset(value: String | Boolean): Self = StObject.set(x, "dataSrcset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSrc(value: String): Self = this.set("dataSrc", value.asInstanceOf[js.Any])
+    def setDataSrcsetUndefined: Self = StObject.set(x, "dataSrcset", js.undefined)
     
     @scala.inline
-    def deleteDataSrc: Self = this.set("dataSrc", js.undefined)
+    def setHeight(value: String | Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSrcset(value: String | Boolean): Self = this.set("dataSrcset", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteDataSrcset: Self = this.set("dataSrcset", js.undefined)
+    def setOffsetLeft(value: String | Double): Self = StObject.set(x, "offsetLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String | Boolean): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setOffsetLeftUndefined: Self = StObject.set(x, "offsetLeft", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setOffsetTop(value: String): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetLeft(value: String | Double): Self = this.set("offsetLeft", value.asInstanceOf[js.Any])
+    def setOffsetTopUndefined: Self = StObject.set(x, "offsetTop", js.undefined)
     
     @scala.inline
-    def deleteOffsetLeft: Self = this.set("offsetLeft", js.undefined)
+    def setSizes(value: String | Boolean): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetTop(value: String): Self = this.set("offsetTop", value.asInstanceOf[js.Any])
+    def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
     
     @scala.inline
-    def deleteOffsetTop: Self = this.set("offsetTop", js.undefined)
+    def setTarget(value: String | Boolean): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizes(value: String | Boolean): Self = this.set("sizes", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deleteSizes: Self = this.set("sizes", js.undefined)
+    def setWidth(value: String | Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: String | Boolean): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String | Boolean): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

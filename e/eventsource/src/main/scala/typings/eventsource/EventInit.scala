@@ -1,11 +1,12 @@
 package typings.eventsource
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventInit extends js.Object {
+trait EventInit extends StObject {
   
   var bubbles: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object EventInit {
   }
   
   @scala.inline
-  implicit class EventInitOps[Self <: EventInit] (val x: Self) extends AnyVal {
+  implicit class EventInitMutableBuilder[Self <: EventInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbles(value: Boolean): Self = this.set("bubbles", value.asInstanceOf[js.Any])
+    def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
     
     @scala.inline
-    def deleteBubbles: Self = this.set("bubbles", js.undefined)
+    def setComposed(value: Boolean): Self = StObject.set(x, "composed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelable(value: Boolean): Self = this.set("cancelable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCancelable: Self = this.set("cancelable", js.undefined)
-    
-    @scala.inline
-    def setComposed(value: Boolean): Self = this.set("composed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComposed: Self = this.set("composed", js.undefined)
+    def setComposedUndefined: Self = StObject.set(x, "composed", js.undefined)
   }
 }

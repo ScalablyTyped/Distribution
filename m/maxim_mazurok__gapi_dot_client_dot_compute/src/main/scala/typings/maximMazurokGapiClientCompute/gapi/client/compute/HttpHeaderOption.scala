@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpHeaderOption extends js.Object {
+trait HttpHeaderOption extends StObject {
   
   /** The name of the header. */
   var headerName: js.UndefOr[String] = js.native
@@ -28,36 +29,24 @@ object HttpHeaderOption {
   }
   
   @scala.inline
-  implicit class HttpHeaderOptionOps[Self <: HttpHeaderOption] (val x: Self) extends AnyVal {
+  implicit class HttpHeaderOptionMutableBuilder[Self <: HttpHeaderOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaderName(value: String): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaderNameUndefined: Self = StObject.set(x, "headerName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaderValue(value: String): Self = StObject.set(x, "headerValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderName(value: String): Self = this.set("headerName", value.asInstanceOf[js.Any])
+    def setHeaderValueUndefined: Self = StObject.set(x, "headerValue", js.undefined)
     
     @scala.inline
-    def deleteHeaderName: Self = this.set("headerName", js.undefined)
+    def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderValue(value: String): Self = this.set("headerValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaderValue: Self = this.set("headerValue", js.undefined)
-    
-    @scala.inline
-    def setReplace(value: Boolean): Self = this.set("replace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplace: Self = this.set("replace", js.undefined)
+    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
   }
 }

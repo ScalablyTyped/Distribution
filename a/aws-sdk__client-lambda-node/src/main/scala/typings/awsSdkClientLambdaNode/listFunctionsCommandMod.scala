@@ -7,14 +7,14 @@ import typings.awsSdkClientLambdaNode.typesListFunctionsInputMod.ListFunctionsIn
 import typings.awsSdkClientLambdaNode.typesListFunctionsOutputMod.ListFunctionsOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/commands/ListFunctionsCommand", JSImport.Namespace)
-@js.native
-object listFunctionsCommandMod extends js.Object {
+object listFunctionsCommandMod {
   
+  @JSImport("@aws-sdk/client-lambda-node/commands/ListFunctionsCommand", "ListFunctionsCommand")
   @js.native
   class ListFunctionsCommand protected () extends Command[
           InputTypesUnion, 

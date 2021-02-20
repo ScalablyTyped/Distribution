@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointemailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BlacklistEntry extends js.Object {
+trait BlacklistEntry extends StObject {
   
   /**
     * Additional information about the blacklisting event, as provided by the blacklist maintainer.
@@ -31,36 +32,24 @@ object BlacklistEntry {
   }
   
   @scala.inline
-  implicit class BlacklistEntryOps[Self <: BlacklistEntry] (val x: Self) extends AnyVal {
+  implicit class BlacklistEntryMutableBuilder[Self <: BlacklistEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: BlacklistingDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListingTime(value: Timestamp): Self = StObject.set(x, "ListingTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: BlacklistingDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setListingTimeUndefined: Self = StObject.set(x, "ListingTime", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setRblName(value: RblName): Self = StObject.set(x, "RblName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListingTime(value: Timestamp): Self = this.set("ListingTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteListingTime: Self = this.set("ListingTime", js.undefined)
-    
-    @scala.inline
-    def setRblName(value: RblName): Self = this.set("RblName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRblName: Self = this.set("RblName", js.undefined)
+    def setRblNameUndefined: Self = StObject.set(x, "RblName", js.undefined)
   }
 }

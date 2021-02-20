@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3DestinationUpdate extends js.Object {
+trait S3DestinationUpdate extends StObject {
   
   /**
     * The ARN of the S3 bucket. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
@@ -56,66 +57,54 @@ object S3DestinationUpdate {
   }
   
   @scala.inline
-  implicit class S3DestinationUpdateOps[Self <: S3DestinationUpdate] (val x: Self) extends AnyVal {
+  implicit class S3DestinationUpdateMutableBuilder[Self <: S3DestinationUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketARN(value: BucketARN): Self = StObject.set(x, "BucketARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketARNUndefined: Self = StObject.set(x, "BucketARN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBufferingHints(value: BufferingHints): Self = StObject.set(x, "BufferingHints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketARN(value: BucketARN): Self = this.set("BucketARN", value.asInstanceOf[js.Any])
+    def setBufferingHintsUndefined: Self = StObject.set(x, "BufferingHints", js.undefined)
     
     @scala.inline
-    def deleteBucketARN: Self = this.set("BucketARN", js.undefined)
+    def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = StObject.set(x, "CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBufferingHints(value: BufferingHints): Self = this.set("BufferingHints", value.asInstanceOf[js.Any])
+    def setCloudWatchLoggingOptionsUndefined: Self = StObject.set(x, "CloudWatchLoggingOptions", js.undefined)
     
     @scala.inline
-    def deleteBufferingHints: Self = this.set("BufferingHints", js.undefined)
+    def setCompressionFormat(value: CompressionFormat): Self = StObject.set(x, "CompressionFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = this.set("CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
+    def setCompressionFormatUndefined: Self = StObject.set(x, "CompressionFormat", js.undefined)
     
     @scala.inline
-    def deleteCloudWatchLoggingOptions: Self = this.set("CloudWatchLoggingOptions", js.undefined)
+    def setEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "EncryptionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompressionFormat(value: CompressionFormat): Self = this.set("CompressionFormat", value.asInstanceOf[js.Any])
+    def setEncryptionConfigurationUndefined: Self = StObject.set(x, "EncryptionConfiguration", js.undefined)
     
     @scala.inline
-    def deleteCompressionFormat: Self = this.set("CompressionFormat", js.undefined)
+    def setErrorOutputPrefix(value: ErrorOutputPrefix): Self = StObject.set(x, "ErrorOutputPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionConfiguration(value: EncryptionConfiguration): Self = this.set("EncryptionConfiguration", value.asInstanceOf[js.Any])
+    def setErrorOutputPrefixUndefined: Self = StObject.set(x, "ErrorOutputPrefix", js.undefined)
     
     @scala.inline
-    def deleteEncryptionConfiguration: Self = this.set("EncryptionConfiguration", js.undefined)
+    def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorOutputPrefix(value: ErrorOutputPrefix): Self = this.set("ErrorOutputPrefix", value.asInstanceOf[js.Any])
+    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     
     @scala.inline
-    def deleteErrorOutputPrefix: Self = this.set("ErrorOutputPrefix", js.undefined)
+    def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: Prefix): Self = this.set("Prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefix: Self = this.set("Prefix", js.undefined)
-    
-    @scala.inline
-    def setRoleARN(value: RoleARN): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
   }
 }

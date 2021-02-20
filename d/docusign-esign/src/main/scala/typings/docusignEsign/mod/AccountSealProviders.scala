@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountSealProviders extends js.Object {
+trait AccountSealProviders extends StObject {
   
   /**
     * A list of electronic seals to apply to documents.
@@ -21,27 +22,15 @@ object AccountSealProviders {
   }
   
   @scala.inline
-  implicit class AccountSealProvidersOps[Self <: AccountSealProviders] (val x: Self) extends AnyVal {
+  implicit class AccountSealProvidersMutableBuilder[Self <: AccountSealProviders] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSeals(value: js.Array[SealIdentifier]): Self = StObject.set(x, "seals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSealsUndefined: Self = StObject.set(x, "seals", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSealsVarargs(value: SealIdentifier*): Self = this.set("seals", js.Array(value :_*))
-    
-    @scala.inline
-    def setSeals(value: js.Array[SealIdentifier]): Self = this.set("seals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeals: Self = this.set("seals", js.undefined)
+    def setSealsVarargs(value: SealIdentifier*): Self = StObject.set(x, "seals", js.Array(value :_*))
   }
 }

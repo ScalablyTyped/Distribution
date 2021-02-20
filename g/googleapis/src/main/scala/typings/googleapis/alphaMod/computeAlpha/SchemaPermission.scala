@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * All fields defined in a permission are ANDed.
   */
 @js.native
-trait SchemaPermission extends js.Object {
+trait SchemaPermission extends StObject {
   
   /**
     * Extra custom constraints. The constraints are ANDed together.
@@ -66,99 +67,87 @@ object SchemaPermission {
   }
   
   @scala.inline
-  implicit class SchemaPermissionOps[Self <: SchemaPermission] (val x: Self) extends AnyVal {
+  implicit class SchemaPermissionMutableBuilder[Self <: SchemaPermission] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstraints(value: js.Array[SchemaPermissionConstraint]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConstraintsVarargs(value: SchemaPermissionConstraint*): Self = StObject.set(x, "constraints", js.Array(value :_*))
     
     @scala.inline
-    def setConstraintsVarargs(value: SchemaPermissionConstraint*): Self = this.set("constraints", js.Array(value :_*))
+    def setHosts(value: js.Array[String]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstraints(value: js.Array[SchemaPermissionConstraint]): Self = this.set("constraints", value.asInstanceOf[js.Any])
+    def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
     
     @scala.inline
-    def deleteConstraints: Self = this.set("constraints", js.undefined)
+    def setHostsVarargs(value: String*): Self = StObject.set(x, "hosts", js.Array(value :_*))
     
     @scala.inline
-    def setHostsVarargs(value: String*): Self = this.set("hosts", js.Array(value :_*))
+    def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHosts(value: js.Array[String]): Self = this.set("hosts", value.asInstanceOf[js.Any])
+    def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
     
     @scala.inline
-    def deleteHosts: Self = this.set("hosts", js.undefined)
+    def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
     
     @scala.inline
-    def setMethodsVarargs(value: String*): Self = this.set("methods", js.Array(value :_*))
+    def setNotHosts(value: js.Array[String]): Self = StObject.set(x, "notHosts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethods(value: js.Array[String]): Self = this.set("methods", value.asInstanceOf[js.Any])
+    def setNotHostsUndefined: Self = StObject.set(x, "notHosts", js.undefined)
     
     @scala.inline
-    def deleteMethods: Self = this.set("methods", js.undefined)
+    def setNotHostsVarargs(value: String*): Self = StObject.set(x, "notHosts", js.Array(value :_*))
     
     @scala.inline
-    def setNotHostsVarargs(value: String*): Self = this.set("notHosts", js.Array(value :_*))
+    def setNotMethods(value: js.Array[String]): Self = StObject.set(x, "notMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotHosts(value: js.Array[String]): Self = this.set("notHosts", value.asInstanceOf[js.Any])
+    def setNotMethodsUndefined: Self = StObject.set(x, "notMethods", js.undefined)
     
     @scala.inline
-    def deleteNotHosts: Self = this.set("notHosts", js.undefined)
+    def setNotMethodsVarargs(value: String*): Self = StObject.set(x, "notMethods", js.Array(value :_*))
     
     @scala.inline
-    def setNotMethodsVarargs(value: String*): Self = this.set("notMethods", js.Array(value :_*))
+    def setNotPaths(value: js.Array[String]): Self = StObject.set(x, "notPaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotMethods(value: js.Array[String]): Self = this.set("notMethods", value.asInstanceOf[js.Any])
+    def setNotPathsUndefined: Self = StObject.set(x, "notPaths", js.undefined)
     
     @scala.inline
-    def deleteNotMethods: Self = this.set("notMethods", js.undefined)
+    def setNotPathsVarargs(value: String*): Self = StObject.set(x, "notPaths", js.Array(value :_*))
     
     @scala.inline
-    def setNotPathsVarargs(value: String*): Self = this.set("notPaths", js.Array(value :_*))
+    def setNotPorts(value: js.Array[String]): Self = StObject.set(x, "notPorts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotPaths(value: js.Array[String]): Self = this.set("notPaths", value.asInstanceOf[js.Any])
+    def setNotPortsUndefined: Self = StObject.set(x, "notPorts", js.undefined)
     
     @scala.inline
-    def deleteNotPaths: Self = this.set("notPaths", js.undefined)
+    def setNotPortsVarargs(value: String*): Self = StObject.set(x, "notPorts", js.Array(value :_*))
     
     @scala.inline
-    def setNotPortsVarargs(value: String*): Self = this.set("notPorts", js.Array(value :_*))
+    def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotPorts(value: js.Array[String]): Self = this.set("notPorts", value.asInstanceOf[js.Any])
+    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
     @scala.inline
-    def deleteNotPorts: Self = this.set("notPorts", js.undefined)
+    def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
     
     @scala.inline
-    def setPathsVarargs(value: String*): Self = this.set("paths", js.Array(value :_*))
+    def setPorts(value: js.Array[String]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaths(value: js.Array[String]): Self = this.set("paths", value.asInstanceOf[js.Any])
+    def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
     @scala.inline
-    def deletePaths: Self = this.set("paths", js.undefined)
-    
-    @scala.inline
-    def setPortsVarargs(value: String*): Self = this.set("ports", js.Array(value :_*))
-    
-    @scala.inline
-    def setPorts(value: js.Array[String]): Self = this.set("ports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePorts: Self = this.set("ports", js.undefined)
+    def setPortsVarargs(value: String*): Self = StObject.set(x, "ports", js.Array(value :_*))
   }
 }

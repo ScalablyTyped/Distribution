@@ -1,5 +1,6 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,84 +37,72 @@ object TableComponentProperties {
   }
   
   @scala.inline
-  implicit class TableComponentPropertiesOps[Self <: TableComponentProperties] (val x: Self) extends AnyVal {
+  implicit class TableComponentPropertiesMutableBuilder[Self <: TableComponentProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAriaColumnCount(value: Double): Self = StObject.set(x, "ariaColumnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAriaColumnCountUndefined: Self = StObject.set(x, "ariaColumnCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAriaRowCount(value: Double): Self = StObject.set(x, "ariaRowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsVarargs(value: (String | TableColumn)*): Self = this.set("columns", js.Array(value :_*))
+    def setAriaRowCountUndefined: Self = StObject.set(x, "ariaRowCount", js.undefined)
     
     @scala.inline
-    def setColumns(value: js.Array[String | TableColumn]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setColumns(value: js.Array[String | TableColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: js.Array[js.Any]*): Self = this.set("data", js.Array(value :_*))
+    def setColumnsVarargs(value: (String | TableColumn)*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setData(value: js.Array[js.Array[_]]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[js.Array[_]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAriaColumnCount(value: Double): Self = this.set("ariaColumnCount", value.asInstanceOf[js.Any])
+    def setDataVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def deleteAriaColumnCount: Self = this.set("ariaColumnCount", js.undefined)
+    def setFontSize(value: Double | String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAriaRowCount(value: Double): Self = this.set("ariaRowCount", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteAriaRowCount: Self = this.set("ariaRowCount", js.undefined)
+    def setForceFitColumns(value: ColumnSizingMode): Self = StObject.set(x, "forceFitColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: Double | String): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setForceFitColumnsUndefined: Self = StObject.set(x, "forceFitColumns", js.undefined)
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setMoveFocusOutWithTab(value: Boolean): Self = StObject.set(x, "moveFocusOutWithTab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceFitColumns(value: ColumnSizingMode): Self = this.set("forceFitColumns", value.asInstanceOf[js.Any])
+    def setMoveFocusOutWithTabUndefined: Self = StObject.set(x, "moveFocusOutWithTab", js.undefined)
     
     @scala.inline
-    def deleteForceFitColumns: Self = this.set("forceFitColumns", js.undefined)
+    def setSelectedRows(value: js.Array[Double]): Self = StObject.set(x, "selectedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveFocusOutWithTab(value: Boolean): Self = this.set("moveFocusOutWithTab", value.asInstanceOf[js.Any])
+    def setSelectedRowsUndefined: Self = StObject.set(x, "selectedRows", js.undefined)
     
     @scala.inline
-    def deleteMoveFocusOutWithTab: Self = this.set("moveFocusOutWithTab", js.undefined)
+    def setSelectedRowsVarargs(value: Double*): Self = StObject.set(x, "selectedRows", js.Array(value :_*))
     
     @scala.inline
-    def setSelectedRowsVarargs(value: Double*): Self = this.set("selectedRows", js.Array(value :_*))
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedRows(value: js.Array[Double]): Self = this.set("selectedRows", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteSelectedRows: Self = this.set("selectedRows", js.undefined)
+    def setUpdateCells(value: js.Array[TableCell]): Self = StObject.set(x, "updateCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setUpdateCellsUndefined: Self = StObject.set(x, "updateCells", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setUpdateCellsVarargs(value: TableCell*): Self = this.set("updateCells", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpdateCells(value: js.Array[TableCell]): Self = this.set("updateCells", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateCells: Self = this.set("updateCells", js.undefined)
+    def setUpdateCellsVarargs(value: TableCell*): Self = StObject.set(x, "updateCells", js.Array(value :_*))
   }
 }

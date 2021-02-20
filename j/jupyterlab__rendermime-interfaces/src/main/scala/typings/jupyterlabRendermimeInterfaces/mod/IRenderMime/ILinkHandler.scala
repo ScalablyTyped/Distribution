@@ -1,6 +1,7 @@
 package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An object that handles links on a node.
   */
 @js.native
-trait ILinkHandler extends js.Object {
+trait ILinkHandler extends StObject {
   
   /**
     * Add the link handler to the node.

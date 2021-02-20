@@ -1,6 +1,7 @@
 package typings.filewriter
 
 import typings.std.Blob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interface is specified to be used only within Web Workers (WorkerUtils [WEBWORKERS]).
   */
 @js.native
-trait FileWriterSync extends js.Object {
+trait FileWriterSync extends StObject {
   
   /**
     * The length of the file. If the user does not have read access to the file, this must be the highest byte offset at which the user has written.
@@ -65,33 +66,21 @@ object FileWriterSync {
   }
   
   @scala.inline
-  implicit class FileWriterSyncOps[Self <: FileWriterSync] (val x: Self) extends AnyVal {
+  implicit class FileWriterSyncMutableBuilder[Self <: FileWriterSync] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setTruncate(value: Double => Unit): Self = StObject.set(x, "truncate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeek(value: Double => Unit): Self = this.set("seek", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTruncate(value: Double => Unit): Self = this.set("truncate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWrite(value: Blob => Unit): Self = this.set("write", js.Any.fromFunction1(value))
+    def setWrite(value: Blob => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
   }
 }

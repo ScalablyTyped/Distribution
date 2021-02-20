@@ -1,6 +1,7 @@
 package typings.winrtUwp.global.Windows.Networking.NetworkOperators
 
 import typings.winrtUwp.anon.Context
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,14 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class HotspotAuthenticationContext ()
   extends typings.winrtUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationContext
-/* static members */
-@JSGlobal("Windows.Networking.NetworkOperators.HotspotAuthenticationContext")
-@js.native
-object HotspotAuthenticationContext extends js.Object {
+object HotspotAuthenticationContext {
   
   /**
     * Gets the context of an authentication attempt.
     * @param evenToken The event token retrieved from the network operator hotspot authentication event . The token is a GUID in string format.
     */
+  /* static member */
+  @JSGlobal("Windows.Networking.NetworkOperators.HotspotAuthenticationContext.tryGetAuthenticationContext")
+  @js.native
   def tryGetAuthenticationContext(evenToken: String): Context = js.native
 }

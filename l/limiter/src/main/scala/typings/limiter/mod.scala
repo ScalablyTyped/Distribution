@@ -1,15 +1,15 @@
 package typings.limiter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("limiter", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("limiter", "RateLimiter")
   @js.native
-  class RateLimiter protected () extends js.Object {
+  class RateLimiter protected () extends StObject {
     def this(tokensPerInterval: Double, interval: Interval) = this()
     def this(tokensPerInterval: Double, interval: Interval, fireImmediately: Boolean) = this()
     
@@ -20,8 +20,9 @@ object mod extends js.Object {
     def tryRemoveTokens(count: Double): Boolean = js.native
   }
   
+  @JSImport("limiter", "TokenBucket")
   @js.native
-  class TokenBucket protected () extends js.Object {
+  class TokenBucket protected () extends StObject {
     def this(bucketSize: Double, tokensPerInterval: Double, interval: Interval) = this()
     def this(bucketSize: Double, tokensPerInterval: Double, interval: Interval, parentBucket: TokenBucket) = this()
     
@@ -31,8 +32,6 @@ object mod extends js.Object {
     
     def tryRemoveTokens(count: Double): Boolean = js.native
   }
-  
-  trait _Interval extends js.Object
   
   type Fail[T] = js.Function1[/* error */ T, Unit]
   
@@ -53,4 +52,6 @@ object mod extends js.Object {
   type Success[T] = js.Function2[/* error */ Null, /* data */ T, Unit]
   
   type TokenBucketError = String
+  
+  trait _Interval extends StObject
 }

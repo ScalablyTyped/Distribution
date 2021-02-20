@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * DoReloadExResult...
   */
 @js.native
-trait IDoReloadExResult extends js.Object {
+trait IDoReloadExResult extends StObject {
   
   /**
     * Path to the script log file.
@@ -29,24 +30,12 @@ object IDoReloadExResult {
   }
   
   @scala.inline
-  implicit class IDoReloadExResultOps[Self <: IDoReloadExResult] (val x: Self) extends AnyVal {
+  implicit class IDoReloadExResultMutableBuilder[Self <: IDoReloadExResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQScriptLogFile(value: String): Self = StObject.set(x, "qScriptLogFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQScriptLogFile(value: String): Self = this.set("qScriptLogFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQSuccess(value: Boolean): Self = this.set("qSuccess", value.asInstanceOf[js.Any])
+    def setQSuccess(value: Boolean): Self = StObject.set(x, "qSuccess", value.asInstanceOf[js.Any])
   }
 }

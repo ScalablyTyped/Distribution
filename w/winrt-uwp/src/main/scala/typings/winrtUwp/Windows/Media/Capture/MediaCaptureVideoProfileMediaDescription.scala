@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Media.Capture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a description of media that is supported by a video profile. */
 @js.native
-trait MediaCaptureVideoProfileMediaDescription extends js.Object {
+trait MediaCaptureVideoProfileMediaDescription extends StObject {
   
   /** Gets the frame rate of the media description. */
   var frameRate: Double = js.native
@@ -38,33 +39,21 @@ object MediaCaptureVideoProfileMediaDescription {
   }
   
   @scala.inline
-  implicit class MediaCaptureVideoProfileMediaDescriptionOps[Self <: MediaCaptureVideoProfileMediaDescription] (val x: Self) extends AnyVal {
+  implicit class MediaCaptureVideoProfileMediaDescriptionMutableBuilder[Self <: MediaCaptureVideoProfileMediaDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsHdrVideoSupported(value: Boolean): Self = StObject.set(x, "isHdrVideoSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameRate(value: Double): Self = this.set("frameRate", value.asInstanceOf[js.Any])
+    def setIsVariablePhotoSequenceSupported(value: Boolean): Self = StObject.set(x, "isVariablePhotoSequenceSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsHdrVideoSupported(value: Boolean): Self = this.set("isHdrVideoSupported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsVariablePhotoSequenceSupported(value: Boolean): Self = this.set("isVariablePhotoSequenceSupported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

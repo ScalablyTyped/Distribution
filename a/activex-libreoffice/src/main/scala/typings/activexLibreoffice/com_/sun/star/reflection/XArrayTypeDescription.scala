@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.reflection
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,36 +74,24 @@ object XArrayTypeDescription {
   }
   
   @scala.inline
-  implicit class XArrayTypeDescriptionOps[Self <: XArrayTypeDescription] (val x: Self) extends AnyVal {
+  implicit class XArrayTypeDescriptionMutableBuilder[Self <: XArrayTypeDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensions(value: SafeArray[Double]): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDimensions(value: () => SafeArray[Double]): Self = StObject.set(x, "getDimensions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetNumberOfDimensions(value: () => Double): Self = StObject.set(x, "getNumberOfDimensions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDimensions(value: SafeArray[Double]): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
+    def setGetType(value: () => XTypeDescription): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNumberOfDimensions(value: Double): Self = this.set("NumberOfDimensions", value.asInstanceOf[js.Any])
+    def setNumberOfDimensions(value: Double): Self = StObject.set(x, "NumberOfDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: XTypeDescription): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetDimensions(value: () => SafeArray[Double]): Self = this.set("getDimensions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetNumberOfDimensions(value: () => Double): Self = this.set("getNumberOfDimensions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetType(value: () => XTypeDescription): Self = this.set("getType", js.Any.fromFunction0(value))
+    def setType(value: XTypeDescription): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

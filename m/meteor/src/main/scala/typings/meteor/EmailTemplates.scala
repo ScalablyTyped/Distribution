@@ -1,11 +1,12 @@
 package typings.meteor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmailTemplates extends js.Object {
+trait EmailTemplates extends StObject {
   
   var enrollAccount: EmailFields = js.native
   
@@ -34,39 +35,27 @@ object EmailTemplates {
   }
   
   @scala.inline
-  implicit class EmailTemplatesOps[Self <: EmailTemplates] (val x: Self) extends AnyVal {
+  implicit class EmailTemplatesMutableBuilder[Self <: EmailTemplates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnrollAccount(value: EmailFields): Self = StObject.set(x, "enrollAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaders(value: Header): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnrollAccount(value: EmailFields): Self = this.set("enrollAccount", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setResetPassword(value: EmailFields): Self = StObject.set(x, "resetPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetPassword(value: EmailFields): Self = this.set("resetPassword", value.asInstanceOf[js.Any])
+    def setSiteName(value: String): Self = StObject.set(x, "siteName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSiteName(value: String): Self = this.set("siteName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerifyEmail(value: EmailFields): Self = this.set("verifyEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeaders(value: Header): Self = this.set("headers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setVerifyEmail(value: EmailFields): Self = StObject.set(x, "verifyEmail", value.asInstanceOf[js.Any])
   }
 }

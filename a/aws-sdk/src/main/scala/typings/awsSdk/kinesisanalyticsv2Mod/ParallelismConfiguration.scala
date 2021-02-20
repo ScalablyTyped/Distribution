@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParallelismConfiguration extends js.Object {
+trait ParallelismConfiguration extends StObject {
   
   /**
     * Describes whether the Kinesis Data Analytics service can increase the parallelism of the application in response to increased throughput.
@@ -36,39 +37,27 @@ object ParallelismConfiguration {
   }
   
   @scala.inline
-  implicit class ParallelismConfigurationOps[Self <: ParallelismConfiguration] (val x: Self) extends AnyVal {
+  implicit class ParallelismConfigurationMutableBuilder[Self <: ParallelismConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoScalingEnabled(value: BooleanObject): Self = StObject.set(x, "AutoScalingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoScalingEnabledUndefined: Self = StObject.set(x, "AutoScalingEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigurationType(value: ConfigurationType): Self = StObject.set(x, "ConfigurationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationType(value: ConfigurationType): Self = this.set("ConfigurationType", value.asInstanceOf[js.Any])
+    def setParallelism(value: Parallelism): Self = StObject.set(x, "Parallelism", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScalingEnabled(value: BooleanObject): Self = this.set("AutoScalingEnabled", value.asInstanceOf[js.Any])
+    def setParallelismPerKPU(value: ParallelismPerKPU): Self = StObject.set(x, "ParallelismPerKPU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoScalingEnabled: Self = this.set("AutoScalingEnabled", js.undefined)
+    def setParallelismPerKPUUndefined: Self = StObject.set(x, "ParallelismPerKPU", js.undefined)
     
     @scala.inline
-    def setParallelism(value: Parallelism): Self = this.set("Parallelism", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParallelism: Self = this.set("Parallelism", js.undefined)
-    
-    @scala.inline
-    def setParallelismPerKPU(value: ParallelismPerKPU): Self = this.set("ParallelismPerKPU", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParallelismPerKPU: Self = this.set("ParallelismPerKPU", js.undefined)
+    def setParallelismUndefined: Self = StObject.set(x, "Parallelism", js.undefined)
   }
 }

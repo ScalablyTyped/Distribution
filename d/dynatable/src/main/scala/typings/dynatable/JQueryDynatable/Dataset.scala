@@ -1,11 +1,12 @@
 package typings.dynatable.JQueryDynatable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dataset extends js.Object {
+trait Dataset extends StObject {
   
   /**
     * Enable the `ajax` mode
@@ -137,120 +138,108 @@ object Dataset {
   }
   
   @scala.inline
-  implicit class DatasetOps[Self <: Dataset] (val x: Self) extends AnyVal {
+  implicit class DatasetMutableBuilder[Self <: Dataset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAjax(value: Boolean): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAjaxCache(value: Boolean): Self = StObject.set(x, "ajaxCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAjaxCacheUndefined: Self = StObject.set(x, "ajaxCache", js.undefined)
     
     @scala.inline
-    def setAjax(value: Boolean): Self = this.set("ajax", value.asInstanceOf[js.Any])
+    def setAjaxDataType(value: String): Self = StObject.set(x, "ajaxDataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAjax: Self = this.set("ajax", js.undefined)
+    def setAjaxDataTypeUndefined: Self = StObject.set(x, "ajaxDataType", js.undefined)
     
     @scala.inline
-    def setAjaxCache(value: Boolean): Self = this.set("ajaxCache", value.asInstanceOf[js.Any])
+    def setAjaxMethod(value: String): Self = StObject.set(x, "ajaxMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAjaxCache: Self = this.set("ajaxCache", js.undefined)
+    def setAjaxMethodUndefined: Self = StObject.set(x, "ajaxMethod", js.undefined)
     
     @scala.inline
-    def setAjaxDataType(value: String): Self = this.set("ajaxDataType", value.asInstanceOf[js.Any])
+    def setAjaxOnLoad(value: Boolean): Self = StObject.set(x, "ajaxOnLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAjaxDataType: Self = this.set("ajaxDataType", js.undefined)
+    def setAjaxOnLoadUndefined: Self = StObject.set(x, "ajaxOnLoad", js.undefined)
     
     @scala.inline
-    def setAjaxMethod(value: String): Self = this.set("ajaxMethod", value.asInstanceOf[js.Any])
+    def setAjaxUndefined: Self = StObject.set(x, "ajax", js.undefined)
     
     @scala.inline
-    def deleteAjaxMethod: Self = this.set("ajaxMethod", js.undefined)
+    def setAjaxUrl(value: String): Self = StObject.set(x, "ajaxUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAjaxOnLoad(value: Boolean): Self = this.set("ajaxOnLoad", value.asInstanceOf[js.Any])
+    def setAjaxUrlUndefined: Self = StObject.set(x, "ajaxUrl", js.undefined)
     
     @scala.inline
-    def deleteAjaxOnLoad: Self = this.set("ajaxOnLoad", js.undefined)
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAjaxUrl(value: String): Self = this.set("ajaxUrl", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def deleteAjaxUrl: Self = this.set("ajaxUrl", js.undefined)
+    def setPerPageDefault(value: Double): Self = StObject.set(x, "perPageDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setPerPageDefaultUndefined: Self = StObject.set(x, "perPageDefault", js.undefined)
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
+    def setPerPageOptions(value: js.Array[Double]): Self = StObject.set(x, "perPageOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerPageDefault(value: Double): Self = this.set("perPageDefault", value.asInstanceOf[js.Any])
+    def setPerPageOptionsUndefined: Self = StObject.set(x, "perPageOptions", js.undefined)
     
     @scala.inline
-    def deletePerPageDefault: Self = this.set("perPageDefault", js.undefined)
+    def setPerPageOptionsVarargs(value: Double*): Self = StObject.set(x, "perPageOptions", js.Array(value :_*))
     
     @scala.inline
-    def setPerPageOptionsVarargs(value: Double*): Self = this.set("perPageOptions", js.Array(value :_*))
+    def setQueries(value: js.Object): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerPageOptions(value: js.Array[Double]): Self = this.set("perPageOptions", value.asInstanceOf[js.Any])
+    def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     
     @scala.inline
-    def deletePerPageOptions: Self = this.set("perPageOptions", js.undefined)
+    def setQueryRecordCount(value: String): Self = StObject.set(x, "queryRecordCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueries(value: js.Object): Self = this.set("queries", value.asInstanceOf[js.Any])
+    def setQueryRecordCountUndefined: Self = StObject.set(x, "queryRecordCount", js.undefined)
     
     @scala.inline
-    def deleteQueries: Self = this.set("queries", js.undefined)
+    def setRecords(value: js.Any): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryRecordCount(value: String): Self = this.set("queryRecordCount", value.asInstanceOf[js.Any])
+    def setRecordsUndefined: Self = StObject.set(x, "records", js.undefined)
     
     @scala.inline
-    def deleteQueryRecordCount: Self = this.set("queryRecordCount", js.undefined)
+    def setSortTypes(value: js.Object): Self = StObject.set(x, "sortTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecords(value: js.Any): Self = this.set("records", value.asInstanceOf[js.Any])
+    def setSortTypesUndefined: Self = StObject.set(x, "sortTypes", js.undefined)
     
     @scala.inline
-    def deleteRecords: Self = this.set("records", js.undefined)
+    def setSorts(value: js.Object): Self = StObject.set(x, "sorts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortTypes(value: js.Object): Self = this.set("sortTypes", value.asInstanceOf[js.Any])
+    def setSortsKeys(value: js.Array[String]): Self = StObject.set(x, "sortsKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSortTypes: Self = this.set("sortTypes", js.undefined)
+    def setSortsKeysUndefined: Self = StObject.set(x, "sortsKeys", js.undefined)
     
     @scala.inline
-    def setSorts(value: js.Object): Self = this.set("sorts", value.asInstanceOf[js.Any])
+    def setSortsKeysVarargs(value: String*): Self = StObject.set(x, "sortsKeys", js.Array(value :_*))
     
     @scala.inline
-    def deleteSorts: Self = this.set("sorts", js.undefined)
+    def setSortsUndefined: Self = StObject.set(x, "sorts", js.undefined)
     
     @scala.inline
-    def setSortsKeysVarargs(value: String*): Self = this.set("sortsKeys", js.Array(value :_*))
+    def setTotalRecordCount(value: String): Self = StObject.set(x, "totalRecordCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortsKeys(value: js.Array[String]): Self = this.set("sortsKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortsKeys: Self = this.set("sortsKeys", js.undefined)
-    
-    @scala.inline
-    def setTotalRecordCount(value: String): Self = this.set("totalRecordCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalRecordCount: Self = this.set("totalRecordCount", js.undefined)
+    def setTotalRecordCountUndefined: Self = StObject.set(x, "totalRecordCount", js.undefined)
   }
 }

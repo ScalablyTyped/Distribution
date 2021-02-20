@@ -1,11 +1,12 @@
 package typings.awsSdk.supportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RefreshTrustedAdvisorCheckRequest extends js.Object {
+trait RefreshTrustedAdvisorCheckRequest extends StObject {
   
   /**
     * The unique identifier for the Trusted Advisor check to refresh. Note: Specifying the check ID of a check that is automatically refreshed causes an InvalidParameterValue error.
@@ -21,21 +22,9 @@ object RefreshTrustedAdvisorCheckRequest {
   }
   
   @scala.inline
-  implicit class RefreshTrustedAdvisorCheckRequestOps[Self <: RefreshTrustedAdvisorCheckRequest] (val x: Self) extends AnyVal {
+  implicit class RefreshTrustedAdvisorCheckRequestMutableBuilder[Self <: RefreshTrustedAdvisorCheckRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCheckId(value: String): Self = this.set("checkId", value.asInstanceOf[js.Any])
+    def setCheckId(value: String): Self = StObject.set(x, "checkId", value.asInstanceOf[js.Any])
   }
 }

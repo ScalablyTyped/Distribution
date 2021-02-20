@@ -1,12 +1,13 @@
 package typings.seen.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("seen", "Bounds")
 @js.native
-class Bounds () extends js.Object {
+class Bounds () extends StObject {
   
   def add(p: Point): this.type = js.native
   
@@ -43,13 +44,17 @@ class Bounds () extends js.Object {
   def width(): Double = js.native
 }
 /* static members */
-@JSImport("seen", "Bounds")
-@js.native
-object Bounds extends js.Object {
+object Bounds {
   
+  @JSImport("seen", "Bounds.points")
+  @js.native
   def points(points: js.Array[Point]): Bounds = js.native
   
+  @JSImport("seen", "Bounds.xywh")
+  @js.native
   def xywh(x: Double, y: Double, w: Double, h: Double): Bounds = js.native
   
+  @JSImport("seen", "Bounds.xyzwhd")
+  @js.native
   def xyzwhd(x: Double, y: Double, z: Double, w: Double, h: Double, d: Double): Bounds = js.native
 }

@@ -1,14 +1,14 @@
 package typings.twilsock
 
 import typings.twilsock.twilsockerrorMod.TwilsockError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilsock/lib/error/twilsockupstreamerror", JSImport.Namespace)
-@js.native
-object twilsockupstreamerrorMod extends js.Object {
+object twilsockupstreamerrorMod {
   
+  @JSImport("twilsock/lib/error/twilsockupstreamerror", "TwilsockUpstreamError")
   @js.native
   class TwilsockUpstreamError protected () extends TwilsockError {
     def this(status: Double, description: String) = this()

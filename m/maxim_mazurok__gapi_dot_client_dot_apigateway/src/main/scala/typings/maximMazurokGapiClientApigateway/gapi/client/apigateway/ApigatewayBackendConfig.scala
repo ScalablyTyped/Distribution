@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientApigateway.gapi.client.apigateway
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApigatewayBackendConfig extends js.Object {
+trait ApigatewayBackendConfig extends StObject {
   
   /**
     * Google Cloud IAM service account used to sign OIDC tokens for backends that have authentication configured (https: //cloud.google.com/service-infrastructur //
@@ -25,24 +26,12 @@ object ApigatewayBackendConfig {
   }
   
   @scala.inline
-  implicit class ApigatewayBackendConfigOps[Self <: ApigatewayBackendConfig] (val x: Self) extends AnyVal {
+  implicit class ApigatewayBackendConfigMutableBuilder[Self <: ApigatewayBackendConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGoogleServiceAccount(value: String): Self = StObject.set(x, "googleServiceAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGoogleServiceAccount(value: String): Self = this.set("googleServiceAccount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGoogleServiceAccount: Self = this.set("googleServiceAccount", js.undefined)
+    def setGoogleServiceAccountUndefined: Self = StObject.set(x, "googleServiceAccount", js.undefined)
   }
 }

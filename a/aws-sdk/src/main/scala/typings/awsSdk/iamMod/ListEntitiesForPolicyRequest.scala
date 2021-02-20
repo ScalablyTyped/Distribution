@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListEntitiesForPolicyRequest extends js.Object {
+trait ListEntitiesForPolicyRequest extends StObject {
   
   /**
     * The entity type to use for filtering the results. For example, when EntityFilter is Role, only the roles that are attached to the specified policy are returned. This parameter is optional. If it is not included, all attached entities (users, groups, and roles) are returned. The argument for this parameter must be one of the valid values listed below.
@@ -46,51 +47,39 @@ object ListEntitiesForPolicyRequest {
   }
   
   @scala.inline
-  implicit class ListEntitiesForPolicyRequestOps[Self <: ListEntitiesForPolicyRequest] (val x: Self) extends AnyVal {
+  implicit class ListEntitiesForPolicyRequestMutableBuilder[Self <: ListEntitiesForPolicyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntityFilter(value: EntityType): Self = StObject.set(x, "EntityFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityFilterUndefined: Self = StObject.set(x, "EntityFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyArn(value: arnType): Self = this.set("PolicyArn", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def setEntityFilter(value: EntityType): Self = this.set("EntityFilter", value.asInstanceOf[js.Any])
+    def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEntityFilter: Self = this.set("EntityFilter", js.undefined)
+    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
     @scala.inline
-    def setMarker(value: markerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setPathPrefix(value: pathType): Self = StObject.set(x, "PathPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setPathPrefixUndefined: Self = StObject.set(x, "PathPrefix", js.undefined)
     
     @scala.inline
-    def setMaxItems(value: maxItemsType): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    def setPolicyArn(value: arnType): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
+    def setPolicyUsageFilter(value: PolicyUsageType): Self = StObject.set(x, "PolicyUsageFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathPrefix(value: pathType): Self = this.set("PathPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePathPrefix: Self = this.set("PathPrefix", js.undefined)
-    
-    @scala.inline
-    def setPolicyUsageFilter(value: PolicyUsageType): Self = this.set("PolicyUsageFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyUsageFilter: Self = this.set("PolicyUsageFilter", js.undefined)
+    def setPolicyUsageFilterUndefined: Self = StObject.set(x, "PolicyUsageFilter", js.undefined)
   }
 }

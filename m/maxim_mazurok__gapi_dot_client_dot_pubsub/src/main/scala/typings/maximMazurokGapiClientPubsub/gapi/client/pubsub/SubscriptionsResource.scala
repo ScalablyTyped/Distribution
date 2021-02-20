@@ -13,12 +13,13 @@ import typings.maximMazurokGapiClientPubsub.anon.Resource
 import typings.maximMazurokGapiClientPubsub.anon.UploadType
 import typings.maximMazurokGapiClientPubsub.anon.Uploadprotocol
 import typings.maximMazurokGapiClientPubsub.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubscriptionsResource extends js.Object {
+trait SubscriptionsResource extends StObject {
   
   /**
     * Acknowledges the messages associated with the `ack_ids` in the `AcknowledgeRequest`. The Pub/Sub system can remove the relevant messages from the subscription. Acknowledging a

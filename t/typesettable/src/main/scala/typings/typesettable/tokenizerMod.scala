@@ -1,15 +1,15 @@
 package typings.typesettable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typesettable/build/src/utils/tokenizer", JSImport.Namespace)
-@js.native
-object tokenizerMod extends js.Object {
+object tokenizerMod {
   
+  @JSImport("typesettable/build/src/utils/tokenizer", "Tokenizer")
   @js.native
-  class Tokenizer () extends js.Object {
+  class Tokenizer () extends StObject {
     
     var WhitespaceRegExp: js.Any = js.native
     

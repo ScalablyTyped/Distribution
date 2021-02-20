@@ -1,5 +1,6 @@
 package typings.webAppManifest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://w3c.github.io/manifest/#externalapplicationresource-and-its-members
   */
 @js.native
-trait ExternalApplicationResource extends js.Object {
+trait ExternalApplicationResource extends StObject {
   
   /**
     * The `fingerprints` member of an `ExternalApplicationResource` dictionary represents an array of
@@ -60,48 +61,36 @@ object ExternalApplicationResource {
   }
   
   @scala.inline
-  implicit class ExternalApplicationResourceOps[Self <: ExternalApplicationResource] (val x: Self) extends AnyVal {
+  implicit class ExternalApplicationResourceMutableBuilder[Self <: ExternalApplicationResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFingerprints(value: js.Array[Fingerprint]): Self = StObject.set(x, "fingerprints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFingerprintsUndefined: Self = StObject.set(x, "fingerprints", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFingerprintsVarargs(value: Fingerprint*): Self = StObject.set(x, "fingerprints", js.Array(value :_*))
     
     @scala.inline
-    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFingerprintsVarargs(value: Fingerprint*): Self = this.set("fingerprints", js.Array(value :_*))
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setFingerprints(value: js.Array[Fingerprint]): Self = this.set("fingerprints", value.asInstanceOf[js.Any])
+    def setMin_version(value: String): Self = StObject.set(x, "min_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFingerprints: Self = this.set("fingerprints", js.undefined)
+    def setMin_versionUndefined: Self = StObject.set(x, "min_version", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_version(value: String): Self = this.set("min_version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMin_version: Self = this.set("min_version", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

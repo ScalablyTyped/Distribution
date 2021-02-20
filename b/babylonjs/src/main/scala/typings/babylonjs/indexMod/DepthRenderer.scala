@@ -1,6 +1,7 @@
 package typings.babylonjs.indexMod
 
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,10 +43,10 @@ class DepthRenderer protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/index", "DepthRenderer")
-@js.native
-object DepthRenderer extends js.Object {
+object DepthRenderer {
   
   /** @hidden */
+  @JSImport("babylonjs/index", "DepthRenderer._SceneComponentInitialization")
+  @js.native
   def _SceneComponentInitialization(scene: typings.babylonjs.sceneMod.Scene): Unit = js.native
 }

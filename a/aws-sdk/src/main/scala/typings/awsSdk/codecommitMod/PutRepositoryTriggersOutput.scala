@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutRepositoryTriggersOutput extends js.Object {
+trait PutRepositoryTriggersOutput extends StObject {
   
   /**
     * The system-generated unique ID for the create or update operation.
@@ -21,24 +22,12 @@ object PutRepositoryTriggersOutput {
   }
   
   @scala.inline
-  implicit class PutRepositoryTriggersOutputOps[Self <: PutRepositoryTriggersOutput] (val x: Self) extends AnyVal {
+  implicit class PutRepositoryTriggersOutputMutableBuilder[Self <: PutRepositoryTriggersOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationId(value: RepositoryTriggersConfigurationId): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfigurationId(value: RepositoryTriggersConfigurationId): Self = this.set("configurationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigurationId: Self = this.set("configurationId", js.undefined)
+    def setConfigurationIdUndefined: Self = StObject.set(x, "configurationId", js.undefined)
   }
 }

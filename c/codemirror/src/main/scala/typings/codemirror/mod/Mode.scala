@@ -1,6 +1,7 @@
 package typings.codemirror.mod
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * advances it past a token, and returns a style for that token. More advanced modes can also handle indentation for the language.
   */
 @js.native
-trait Mode[T] extends js.Object {
+trait Mode[T] extends StObject {
   
   /**
     * For languages that have significant blank lines, you can define a blankLine(state) method on your mode that will get called
@@ -71,7 +72,9 @@ trait Mode[T] extends js.Object {
     * This function should read one token from the stream it is given as an argument, optionally update its state,
     * and return a style string, or null for tokens that do not have to be styled. Multiple styles can be returned, separated by spaces.
     */
-  var token: js.UndefOr[js.Function2[/* stream */ StringStream, /* state */ T, String | Null]] = js.native
+  var token: js.UndefOr[
+    js.Function2[/* stream */ typings.codemirror.mod.StringStream, /* state */ T, String | Null]
+  ] = js.native
 }
 object Mode {
   
@@ -82,90 +85,78 @@ object Mode {
   }
   
   @scala.inline
-  implicit class ModeOps[Self <: Mode[_], T] (val x: Self with Mode[T]) extends AnyVal {
+  implicit class ModeMutableBuilder[Self <: Mode[_], T] (val x: Self with Mode[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlankLine(value: /* state */ T => Unit): Self = StObject.set(x, "blankLine", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlankLineUndefined: Self = StObject.set(x, "blankLine", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockCommentEnd(value: String): Self = StObject.set(x, "blockCommentEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlankLine(value: /* state */ T => Unit): Self = this.set("blankLine", js.Any.fromFunction1(value))
+    def setBlockCommentEndUndefined: Self = StObject.set(x, "blockCommentEnd", js.undefined)
     
     @scala.inline
-    def deleteBlankLine: Self = this.set("blankLine", js.undefined)
+    def setBlockCommentLead(value: String): Self = StObject.set(x, "blockCommentLead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockCommentEnd(value: String): Self = this.set("blockCommentEnd", value.asInstanceOf[js.Any])
+    def setBlockCommentLeadUndefined: Self = StObject.set(x, "blockCommentLead", js.undefined)
     
     @scala.inline
-    def deleteBlockCommentEnd: Self = this.set("blockCommentEnd", js.undefined)
+    def setBlockCommentStart(value: String): Self = StObject.set(x, "blockCommentStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockCommentLead(value: String): Self = this.set("blockCommentLead", value.asInstanceOf[js.Any])
+    def setBlockCommentStartUndefined: Self = StObject.set(x, "blockCommentStart", js.undefined)
     
     @scala.inline
-    def deleteBlockCommentLead: Self = this.set("blockCommentLead", js.undefined)
+    def setCopyState(value: /* state */ T => T): Self = StObject.set(x, "copyState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBlockCommentStart(value: String): Self = this.set("blockCommentStart", value.asInstanceOf[js.Any])
+    def setCopyStateUndefined: Self = StObject.set(x, "copyState", js.undefined)
     
     @scala.inline
-    def deleteBlockCommentStart: Self = this.set("blockCommentStart", js.undefined)
+    def setElectricChars(value: String): Self = StObject.set(x, "electricChars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyState(value: /* state */ T => T): Self = this.set("copyState", js.Any.fromFunction1(value))
+    def setElectricCharsUndefined: Self = StObject.set(x, "electricChars", js.undefined)
     
     @scala.inline
-    def deleteCopyState: Self = this.set("copyState", js.undefined)
+    def setElectricinput(value: RegExp): Self = StObject.set(x, "electricinput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElectricChars(value: String): Self = this.set("electricChars", value.asInstanceOf[js.Any])
+    def setElectricinputUndefined: Self = StObject.set(x, "electricinput", js.undefined)
     
     @scala.inline
-    def deleteElectricChars: Self = this.set("electricChars", js.undefined)
+    def setIndent(value: (/* state */ T, /* textAfter */ String) => Double): Self = StObject.set(x, "indent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setElectricinput(value: RegExp): Self = this.set("electricinput", value.asInstanceOf[js.Any])
+    def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
     
     @scala.inline
-    def deleteElectricinput: Self = this.set("electricinput", js.undefined)
+    def setLineComment(value: String): Self = StObject.set(x, "lineComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndent(value: (/* state */ T, /* textAfter */ String) => Double): Self = this.set("indent", js.Any.fromFunction2(value))
+    def setLineCommentUndefined: Self = StObject.set(x, "lineComment", js.undefined)
     
     @scala.inline
-    def deleteIndent: Self = this.set("indent", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineComment(value: String): Self = this.set("lineComment", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLineComment: Self = this.set("lineComment", js.undefined)
+    def setStartState(value: () => T): Self = StObject.set(x, "startState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStartStateUndefined: Self = StObject.set(x, "startState", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setToken(value: (/* stream */ typings.codemirror.mod.StringStream, /* state */ T) => String | Null): Self = StObject.set(x, "token", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setStartState(value: () => T): Self = this.set("startState", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteStartState: Self = this.set("startState", js.undefined)
-    
-    @scala.inline
-    def setToken(value: (/* stream */ StringStream, /* state */ T) => String | Null): Self = this.set("token", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

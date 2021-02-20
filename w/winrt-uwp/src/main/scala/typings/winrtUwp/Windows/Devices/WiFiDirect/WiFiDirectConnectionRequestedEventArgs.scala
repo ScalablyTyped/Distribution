@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.WiFiDirect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for a ConnectionRequested event on a WiFiDirectConnectionListener . */
 @js.native
-trait WiFiDirectConnectionRequestedEventArgs extends js.Object {
+trait WiFiDirectConnectionRequestedEventArgs extends StObject {
   
   /**
     * Retrieves the WiFiDirectConnectionRequest received on a ConnectionRequested event by a WiFiDirectConnectionListener .
@@ -23,21 +24,9 @@ object WiFiDirectConnectionRequestedEventArgs {
   }
   
   @scala.inline
-  implicit class WiFiDirectConnectionRequestedEventArgsOps[Self <: WiFiDirectConnectionRequestedEventArgs] (val x: Self) extends AnyVal {
+  implicit class WiFiDirectConnectionRequestedEventArgsMutableBuilder[Self <: WiFiDirectConnectionRequestedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetConnectionRequest(value: () => WiFiDirectConnectionRequest): Self = this.set("getConnectionRequest", js.Any.fromFunction0(value))
+    def setGetConnectionRequest(value: () => WiFiDirectConnectionRequest): Self = StObject.set(x, "getConnectionRequest", js.Any.fromFunction0(value))
   }
 }

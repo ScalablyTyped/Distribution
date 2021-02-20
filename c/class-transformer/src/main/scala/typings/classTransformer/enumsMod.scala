@@ -1,15 +1,15 @@
 package typings.classTransformer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("class-transformer/enums", JSImport.Namespace)
-@js.native
-object enumsMod extends js.Object {
+object enumsMod {
   
+  @JSImport("class-transformer/enums", "TransformationType")
   @js.native
-  object TransformationType extends js.Object {
+  object TransformationType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[

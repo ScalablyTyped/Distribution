@@ -2,6 +2,7 @@ package typings.reactAutosuggest.mod
 
 import typings.react.mod.ReactNode
 import typings.reactAutosuggest.reactAutosuggestBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,30 +37,18 @@ object AutosuggestPropsSingleSection {
   }
   
   @scala.inline
-  implicit class AutosuggestPropsSingleSectionOps[Self <: AutosuggestPropsSingleSection[_], TSuggestion] (val x: Self with AutosuggestPropsSingleSection[TSuggestion]) extends AnyVal {
+  implicit class AutosuggestPropsSingleSectionMutableBuilder[Self <: AutosuggestPropsSingleSection[_], TSuggestion] (val x: Self with AutosuggestPropsSingleSection[TSuggestion]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMultiSection(value: `false`): Self = StObject.set(x, "multiSection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMultiSectionUndefined: Self = StObject.set(x, "multiSection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSuggestions(value: js.Array[TSuggestion]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestionsVarargs(value: TSuggestion*): Self = this.set("suggestions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSuggestions(value: js.Array[TSuggestion]): Self = this.set("suggestions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMultiSection(value: `false`): Self = this.set("multiSection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultiSection: Self = this.set("multiSection", js.undefined)
+    def setSuggestionsVarargs(value: TSuggestion*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.rcEasyui.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,51 +38,61 @@ class Layout protected ()
   
   def updatePaddings(): Unit = js.native
 }
-@JSImport("rc-easyui", "Layout")
-@js.native
-object Layout extends js.Object {
+object Layout {
   
-  @js.native
-  object contextTypes extends js.Object {
+  object contextTypes {
     
-    @js.native
-    object locale extends js.Object {
+    object locale {
       
+      @JSImport("rc-easyui", "Layout.contextTypes.locale")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Layout.contextTypes.locale
+      @JSImport("rc-easyui", "Layout.contextTypes.locale.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object t extends js.Object {
+    object t {
       
+      @JSImport("rc-easyui", "Layout.contextTypes.t")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Layout.contextTypes.t
+      @JSImport("rc-easyui", "Layout.contextTypes.t.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }
   
-  @js.native
-  object defaultProps extends js.Object {
+  object defaultProps {
     
+    @JSImport("rc-easyui", "Layout.defaultProps.onPanelResizeStart")
+    @js.native
     def onPanelResizeStart(e: js.Any): Unit = js.native
     
+    @JSImport("rc-easyui", "Layout.defaultProps.onPanelResizeStop")
+    @js.native
     def onPanelResizeStop(e: js.Any): Unit = js.native
     
+    @JSImport("rc-easyui", "Layout.defaultProps.onPanelResizing")
+    @js.native
     def onPanelResizing(e: js.Any): Unit = js.native
   }
   
-  @js.native
-  object propTypes extends js.Object {
+  object propTypes {
     
-    @js.native
-    object selectedTab extends js.Object {
+    object selectedTab {
       
+      @JSImport("rc-easyui", "Layout.propTypes.selectedTab")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Layout.propTypes.selectedTab
+      @JSImport("rc-easyui", "Layout.propTypes.selectedTab.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }

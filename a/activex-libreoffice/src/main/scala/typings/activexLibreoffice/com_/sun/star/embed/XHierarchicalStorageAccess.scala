@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.embed
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * it is locked by hierarchical access ).
   */
 @js.native
-trait XHierarchicalStorageAccess extends js.Object {
+trait XHierarchicalStorageAccess extends StObject {
   
   /**
     * allows to get access to a child encrypted stream with password using hierarchical path.
@@ -72,27 +73,15 @@ object XHierarchicalStorageAccess {
   }
   
   @scala.inline
-  implicit class XHierarchicalStorageAccessOps[Self <: XHierarchicalStorageAccess] (val x: Self) extends AnyVal {
+  implicit class XHierarchicalStorageAccessMutableBuilder[Self <: XHierarchicalStorageAccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOpenEncryptedStreamElementByHierarchicalName(value: (String, Double, String) => XExtendedStorageStream): Self = StObject.set(x, "openEncryptedStreamElementByHierarchicalName", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOpenStreamElementByHierarchicalName(value: (String, Double) => XExtendedStorageStream): Self = StObject.set(x, "openStreamElementByHierarchicalName", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOpenEncryptedStreamElementByHierarchicalName(value: (String, Double, String) => XExtendedStorageStream): Self = this.set("openEncryptedStreamElementByHierarchicalName", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setOpenStreamElementByHierarchicalName(value: (String, Double) => XExtendedStorageStream): Self = this.set("openStreamElementByHierarchicalName", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemoveStreamElementByHierarchicalName(value: String => Unit): Self = this.set("removeStreamElementByHierarchicalName", js.Any.fromFunction1(value))
+    def setRemoveStreamElementByHierarchicalName(value: String => Unit): Self = StObject.set(x, "removeStreamElementByHierarchicalName", js.Any.fromFunction1(value))
   }
 }

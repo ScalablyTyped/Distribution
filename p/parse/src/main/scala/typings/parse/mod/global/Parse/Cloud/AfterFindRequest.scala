@@ -2,6 +2,7 @@ package typings.parse.mod.global.Parse.Cloud
 
 import typings.parse.mod.global.Parse.Attributes
 import typings.parse.mod.global.Parse.Object
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,24 +29,12 @@ object AfterFindRequest {
   }
   
   @scala.inline
-  implicit class AfterFindRequestOps[Self <: AfterFindRequest] (val x: Self) extends AnyVal {
+  implicit class AfterFindRequestMutableBuilder[Self <: AfterFindRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjects(value: js.Array[Object[Attributes]]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setObjectsVarargs(value: Object[Attributes]*): Self = this.set("objects", js.Array(value :_*))
-    
-    @scala.inline
-    def setObjects(value: js.Array[Object[Attributes]]): Self = this.set("objects", value.asInstanceOf[js.Any])
+    def setObjectsVarargs(value: Object[Attributes]*): Self = StObject.set(x, "objects", js.Array(value :_*))
   }
 }

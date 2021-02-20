@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudtrace.gapi.client.cloudtrace
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TruncatableString extends js.Object {
+trait TruncatableString extends StObject {
   
   /** The number of bytes removed from the original string. If this value is 0, then the string was not shortened. */
   var truncatedByteCount: js.UndefOr[Double] = js.native
@@ -26,30 +27,18 @@ object TruncatableString {
   }
   
   @scala.inline
-  implicit class TruncatableStringOps[Self <: TruncatableString] (val x: Self) extends AnyVal {
+  implicit class TruncatableStringMutableBuilder[Self <: TruncatableString] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTruncatedByteCount(value: Double): Self = StObject.set(x, "truncatedByteCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTruncatedByteCountUndefined: Self = StObject.set(x, "truncatedByteCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTruncatedByteCount(value: Double): Self = this.set("truncatedByteCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTruncatedByteCount: Self = this.set("truncatedByteCount", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

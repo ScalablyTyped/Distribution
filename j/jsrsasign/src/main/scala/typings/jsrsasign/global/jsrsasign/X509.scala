@@ -3,6 +3,7 @@ package typings.jsrsasign.global.jsrsasign
 import typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
 import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
 import typings.jsrsasign.jsrsasign.PublicKeyInfoPropOfCertPEMResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,16 +12,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class X509 ()
   extends typings.jsrsasign.jsrsasign.X509
-/* static members */
-@JSGlobal("jsrsasign.X509")
-@js.native
-object X509 extends js.Object {
+object X509 {
   
   /**
     * get RSA/DSA/ECDSA public key object from X.509 certificate hexadecimal string
     * @param h hexadecimal string of X.509 certificate for RSA/ECDSA/DSA public key
     * @return returns RSAKey/KJUR.crypto.{ECDSA,DSA} object of public key
     */
+  /* static member */
+  @JSGlobal("jsrsasign.X509.getPublicKeyFromCertHex")
+  @js.native
   def getPublicKeyFromCertHex(h: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
   
   /**
@@ -30,6 +31,9 @@ object X509 extends js.Object {
     * @description
     * NOTE: DSA is also supported since x509 1.1.2.
     */
+  /* static member */
+  @JSGlobal("jsrsasign.X509.getPublicKeyFromCertPEM")
+  @js.native
   def getPublicKeyFromCertPEM(sCertPEM: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = js.native
   
   /**
@@ -45,6 +49,9 @@ object X509 extends js.Object {
     *
     * NOTE: X509v1 certificate is also supported since x509.js 1.1.9.
     */
+  /* static member */
+  @JSGlobal("jsrsasign.X509.getPublicKeyInfoPropOfCertPEM")
+  @js.native
   def getPublicKeyInfoPropOfCertPEM(sCertPEM: String): PublicKeyInfoPropOfCertPEMResult = js.native
   
   /**
@@ -60,6 +67,9 @@ object X509 extends js.Object {
     * X509.hex2attrTypeValue("300806035504060c0161") → C=a
     * X509.hex2attrTypeValue("...3008060355040a0c0161...", 128) → O=a
     */
+  /* static member */
+  @JSGlobal("jsrsasign.X509.hex2attrTypeValue")
+  @js.native
   def hex2attrTypeValue(hex: String, idx: Double): String = js.native
   
   /**
@@ -74,6 +84,9 @@ object X509 extends js.Object {
     * @example
     * X509.hex2dn("3031310b3...") → /C=US/O=a/CN=b2+OU=b1
     */
+  /* static member */
+  @JSGlobal("jsrsasign.X509.hex2dn")
+  @js.native
   def hex2dn(hex: String, idx: Double): String = js.native
   
   /**
@@ -90,7 +103,13 @@ object X509 extends js.Object {
     * X509.hex2rdn("310a3008060355040a0c0161") → O=a
     * X509.hex2rdn("31143008060355040a0c01613008060355040a0c0162") → O=a+O=b
     */
+  /* static member */
+  @JSGlobal("jsrsasign.X509.hex2rdn")
+  @js.native
   def hex2rdn(hex: String, idx: Double): String = js.native
   
+  /* static member */
+  @JSGlobal("jsrsasign.X509.version")
+  @js.native
   val version: String = js.native
 }

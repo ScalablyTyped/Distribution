@@ -1,11 +1,11 @@
 package typings.minappEnv.global
 
-import org.scalablytyped.runtime.TopLevel
-import typings.minappEnv.GeneratorFunctionConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("GeneratorFunction")
 @js.native
 class GeneratorFunction protected ()
@@ -16,6 +16,3 @@ class GeneratorFunction protected ()
     */
   def this(args: java.lang.String*) = this()
 }
-@JSGlobal("GeneratorFunction")
-@js.native
-object GeneratorFunction extends TopLevel[GeneratorFunctionConstructor]

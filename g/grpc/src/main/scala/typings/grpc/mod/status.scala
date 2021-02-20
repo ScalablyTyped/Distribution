@@ -1,15 +1,15 @@
 package typings.grpc.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait status extends js.Object
+sealed trait status extends StObject
 @JSImport("grpc", "status")
 @js.native
-object status extends js.Object {
+object status extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[status with Double] = js.native
@@ -23,8 +23,7 @@ object status extends js.Object {
     */
   @js.native
   sealed trait ABORTED extends status
-  /* 10 */ @js.native
-  object ABORTED extends TopLevel[ABORTED with Double]
+  /* 10 */ val ABORTED: typings.grpc.mod.status.ABORTED with Double = js.native
   
   /**
     * Some entity that we attempted to create (e.g., file or directory)
@@ -32,24 +31,21 @@ object status extends js.Object {
     */
   @js.native
   sealed trait ALREADY_EXISTS extends status
-  /* 6 */ @js.native
-  object ALREADY_EXISTS extends TopLevel[ALREADY_EXISTS with Double]
+  /* 6 */ val ALREADY_EXISTS: typings.grpc.mod.status.ALREADY_EXISTS with Double = js.native
   
   /**
     * The operation was cancelled (typically by the caller).
     */
   @js.native
   sealed trait CANCELLED extends status
-  /* 1 */ @js.native
-  object CANCELLED extends TopLevel[CANCELLED with Double]
+  /* 1 */ val CANCELLED: typings.grpc.mod.status.CANCELLED with Double = js.native
   
   /**
     * Unrecoverable data loss or corruption.
     */
   @js.native
   sealed trait DATA_LOSS extends status
-  /* 15 */ @js.native
-  object DATA_LOSS extends TopLevel[DATA_LOSS with Double]
+  /* 15 */ val DATA_LOSS: typings.grpc.mod.status.DATA_LOSS with Double = js.native
   
   /**
     * Deadline expired before operation could complete.  For operations
@@ -60,8 +56,7 @@ object status extends js.Object {
     */
   @js.native
   sealed trait DEADLINE_EXCEEDED extends status
-  /* 4 */ @js.native
-  object DEADLINE_EXCEEDED extends TopLevel[DEADLINE_EXCEEDED with Double]
+  /* 4 */ val DEADLINE_EXCEEDED: typings.grpc.mod.status.DEADLINE_EXCEEDED with Double = js.native
   
   /**
     * Operation was rejected because the system is not in a state
@@ -87,8 +82,7 @@ object status extends js.Object {
     */
   @js.native
   sealed trait FAILED_PRECONDITION extends status
-  /* 9 */ @js.native
-  object FAILED_PRECONDITION extends TopLevel[FAILED_PRECONDITION with Double]
+  /* 9 */ val FAILED_PRECONDITION: typings.grpc.mod.status.FAILED_PRECONDITION with Double = js.native
   
   /**
     * Internal errors.  Means some invariants expected by underlying
@@ -97,8 +91,7 @@ object status extends js.Object {
     */
   @js.native
   sealed trait INTERNAL extends status
-  /* 13 */ @js.native
-  object INTERNAL extends TopLevel[INTERNAL with Double]
+  /* 13 */ val INTERNAL: typings.grpc.mod.status.INTERNAL with Double = js.native
   
   /**
     * Client specified an invalid argument.  Note that this differs
@@ -108,24 +101,21 @@ object status extends js.Object {
     */
   @js.native
   sealed trait INVALID_ARGUMENT extends status
-  /* 3 */ @js.native
-  object INVALID_ARGUMENT extends TopLevel[INVALID_ARGUMENT with Double]
+  /* 3 */ val INVALID_ARGUMENT: typings.grpc.mod.status.INVALID_ARGUMENT with Double = js.native
   
   /**
     * Some requested entity (e.g., file or directory) was not found.
     */
   @js.native
   sealed trait NOT_FOUND extends status
-  /* 5 */ @js.native
-  object NOT_FOUND extends TopLevel[NOT_FOUND with Double]
+  /* 5 */ val NOT_FOUND: typings.grpc.mod.status.NOT_FOUND with Double = js.native
   
   /**
     * Not an error; returned on success
     */
   @js.native
   sealed trait OK extends status
-  /* 0 */ @js.native
-  object OK extends TopLevel[OK with Double]
+  /* 0 */ val OK: typings.grpc.mod.status.OK with Double = js.native
   
   /**
     * Operation was attempted past the valid range.  E.g., seeking or
@@ -146,8 +136,7 @@ object status extends js.Object {
     */
   @js.native
   sealed trait OUT_OF_RANGE extends status
-  /* 11 */ @js.native
-  object OUT_OF_RANGE extends TopLevel[OUT_OF_RANGE with Double]
+  /* 11 */ val OUT_OF_RANGE: typings.grpc.mod.status.OUT_OF_RANGE with Double = js.native
   
   /**
     * The caller does not have permission to execute the specified
@@ -159,8 +148,7 @@ object status extends js.Object {
     */
   @js.native
   sealed trait PERMISSION_DENIED extends status
-  /* 7 */ @js.native
-  object PERMISSION_DENIED extends TopLevel[PERMISSION_DENIED with Double]
+  /* 7 */ val PERMISSION_DENIED: typings.grpc.mod.status.PERMISSION_DENIED with Double = js.native
   
   /**
     * Some resource has been exhausted, perhaps a per-user quota, or
@@ -168,8 +156,7 @@ object status extends js.Object {
     */
   @js.native
   sealed trait RESOURCE_EXHAUSTED extends status
-  /* 8 */ @js.native
-  object RESOURCE_EXHAUSTED extends TopLevel[RESOURCE_EXHAUSTED with Double]
+  /* 8 */ val RESOURCE_EXHAUSTED: typings.grpc.mod.status.RESOURCE_EXHAUSTED with Double = js.native
   
   /**
     * The request does not have valid authentication credentials for the
@@ -177,8 +164,7 @@ object status extends js.Object {
     */
   @js.native
   sealed trait UNAUTHENTICATED extends status
-  /* 16 */ @js.native
-  object UNAUTHENTICATED extends TopLevel[UNAUTHENTICATED with Double]
+  /* 16 */ val UNAUTHENTICATED: typings.grpc.mod.status.UNAUTHENTICATED with Double = js.native
   
   /**
     * The service is currently unavailable.  This is a most likely a
@@ -190,16 +176,14 @@ object status extends js.Object {
     */
   @js.native
   sealed trait UNAVAILABLE extends status
-  /* 14 */ @js.native
-  object UNAVAILABLE extends TopLevel[UNAVAILABLE with Double]
+  /* 14 */ val UNAVAILABLE: typings.grpc.mod.status.UNAVAILABLE with Double = js.native
   
   /**
     * Operation is not implemented or not supported/enabled in this service.
     */
   @js.native
   sealed trait UNIMPLEMENTED extends status
-  /* 12 */ @js.native
-  object UNIMPLEMENTED extends TopLevel[UNIMPLEMENTED with Double]
+  /* 12 */ val UNIMPLEMENTED: typings.grpc.mod.status.UNIMPLEMENTED with Double = js.native
   
   /**
     * Unknown error.  An example of where this error may be returned is
@@ -210,6 +194,5 @@ object status extends js.Object {
     */
   @js.native
   sealed trait UNKNOWN extends status
-  /* 2 */ @js.native
-  object UNKNOWN extends TopLevel[UNKNOWN with Double]
+  /* 2 */ val UNKNOWN: typings.grpc.mod.status.UNKNOWN with Double = js.native
 }

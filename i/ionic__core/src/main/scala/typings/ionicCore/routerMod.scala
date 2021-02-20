@@ -7,14 +7,14 @@ import typings.ionicCore.mod.BackButtonEvent
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/router/router", JSImport.Namespace)
-@js.native
-object routerMod extends js.Object {
+object routerMod {
   
+  @JSImport("@ionic/core/dist/types/components/router/router", "Router")
   @js.native
   class Router () extends ComponentInterface {
     

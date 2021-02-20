@@ -1,6 +1,7 @@
 package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request to get the IDP authentication URL.
   */
 @js.native
-trait SchemaIdentitytoolkitRelyingpartyCreateAuthUriRequest extends js.Object {
+trait SchemaIdentitytoolkitRelyingpartyCreateAuthUriRequest extends StObject {
   
   /**
     * The app ID of the mobile app, base64(CERT_SHA1):PACKAGE_NAME for Android,
@@ -115,114 +116,102 @@ object SchemaIdentitytoolkitRelyingpartyCreateAuthUriRequest {
   }
   
   @scala.inline
-  implicit class SchemaIdentitytoolkitRelyingpartyCreateAuthUriRequestOps[Self <: SchemaIdentitytoolkitRelyingpartyCreateAuthUriRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaIdentitytoolkitRelyingpartyCreateAuthUriRequestMutableBuilder[Self <: SchemaIdentitytoolkitRelyingpartyCreateAuthUriRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthFlowType(value: String): Self = StObject.set(x, "authFlowType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppId(value: String): Self = this.set("appId", value.asInstanceOf[js.Any])
+    def setAuthFlowTypeUndefined: Self = StObject.set(x, "authFlowType", js.undefined)
     
     @scala.inline
-    def deleteAppId: Self = this.set("appId", js.undefined)
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthFlowType(value: String): Self = this.set("authFlowType", value.asInstanceOf[js.Any])
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def deleteAuthFlowType: Self = this.set("authFlowType", js.undefined)
+    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
+    def setContinueUri(value: String): Self = StObject.set(x, "continueUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setContinueUriUndefined: Self = StObject.set(x, "continueUri", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setCustomParameter(value: StringDictionary[String]): Self = StObject.set(x, "customParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinueUri(value: String): Self = this.set("continueUri", value.asInstanceOf[js.Any])
+    def setCustomParameterUndefined: Self = StObject.set(x, "customParameter", js.undefined)
     
     @scala.inline
-    def deleteContinueUri: Self = this.set("continueUri", js.undefined)
+    def setHostedDomain(value: String): Self = StObject.set(x, "hostedDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomParameter(value: StringDictionary[String]): Self = this.set("customParameter", value.asInstanceOf[js.Any])
+    def setHostedDomainUndefined: Self = StObject.set(x, "hostedDomain", js.undefined)
     
     @scala.inline
-    def deleteCustomParameter: Self = this.set("customParameter", js.undefined)
+    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostedDomain(value: String): Self = this.set("hostedDomain", value.asInstanceOf[js.Any])
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def deleteHostedDomain: Self = this.set("hostedDomain", js.undefined)
+    def setOauthConsumerKey(value: String): Self = StObject.set(x, "oauthConsumerKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: String): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setOauthConsumerKeyUndefined: Self = StObject.set(x, "oauthConsumerKey", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setOauthScope(value: String): Self = StObject.set(x, "oauthScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOauthConsumerKey(value: String): Self = this.set("oauthConsumerKey", value.asInstanceOf[js.Any])
+    def setOauthScopeUndefined: Self = StObject.set(x, "oauthScope", js.undefined)
     
     @scala.inline
-    def deleteOauthConsumerKey: Self = this.set("oauthConsumerKey", js.undefined)
+    def setOpenidRealm(value: String): Self = StObject.set(x, "openidRealm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOauthScope(value: String): Self = this.set("oauthScope", value.asInstanceOf[js.Any])
+    def setOpenidRealmUndefined: Self = StObject.set(x, "openidRealm", js.undefined)
     
     @scala.inline
-    def deleteOauthScope: Self = this.set("oauthScope", js.undefined)
+    def setOtaApp(value: String): Self = StObject.set(x, "otaApp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenidRealm(value: String): Self = this.set("openidRealm", value.asInstanceOf[js.Any])
+    def setOtaAppUndefined: Self = StObject.set(x, "otaApp", js.undefined)
     
     @scala.inline
-    def deleteOpenidRealm: Self = this.set("openidRealm", js.undefined)
+    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOtaApp(value: String): Self = this.set("otaApp", value.asInstanceOf[js.Any])
+    def setProviderIdUndefined: Self = StObject.set(x, "providerId", js.undefined)
     
     @scala.inline
-    def deleteOtaApp: Self = this.set("otaApp", js.undefined)
+    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderId(value: String): Self = this.set("providerId", value.asInstanceOf[js.Any])
+    def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
     
     @scala.inline
-    def deleteProviderId: Self = this.set("providerId", js.undefined)
+    def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionId(value: String): Self = this.set("sessionId", value.asInstanceOf[js.Any])
+    def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
     
     @scala.inline
-    def deleteSessionId: Self = this.set("sessionId", js.undefined)
+    def setTenantProjectNumber(value: String): Self = StObject.set(x, "tenantProjectNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTenantId(value: String): Self = this.set("tenantId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTenantId: Self = this.set("tenantId", js.undefined)
-    
-    @scala.inline
-    def setTenantProjectNumber(value: String): Self = this.set("tenantProjectNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTenantProjectNumber: Self = this.set("tenantProjectNumber", js.undefined)
+    def setTenantProjectNumberUndefined: Self = StObject.set(x, "tenantProjectNumber", js.undefined)
   }
 }

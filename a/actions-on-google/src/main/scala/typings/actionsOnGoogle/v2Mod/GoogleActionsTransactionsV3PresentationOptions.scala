@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsTransactionsV3PresentationOptions extends js.Object {
+trait GoogleActionsTransactionsV3PresentationOptions extends StObject {
   
   /**
     * action_display_name can be one of the following values:
@@ -34,24 +35,12 @@ object GoogleActionsTransactionsV3PresentationOptions {
   }
   
   @scala.inline
-  implicit class GoogleActionsTransactionsV3PresentationOptionsOps[Self <: GoogleActionsTransactionsV3PresentationOptions] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsTransactionsV3PresentationOptionsMutableBuilder[Self <: GoogleActionsTransactionsV3PresentationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionDisplayName(value: String): Self = StObject.set(x, "actionDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActionDisplayName(value: String): Self = this.set("actionDisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActionDisplayName: Self = this.set("actionDisplayName", js.undefined)
+    def setActionDisplayNameUndefined: Self = StObject.set(x, "actionDisplayName", js.undefined)
   }
 }

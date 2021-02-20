@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.XNumberFormatsSupplier
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -94,45 +95,33 @@ object XDataReceiver {
   }
   
   @scala.inline
-  implicit class XDataReceiverOps[Self <: XDataReceiver] (val x: Self) extends AnyVal {
+  implicit class XDataReceiverMutableBuilder[Self <: XDataReceiver] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachDataProvider(value: XDataProvider => Unit): Self = StObject.set(x, "attachDataProvider", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachNumberFormatsSupplier(value: XNumberFormatsSupplier => Unit): Self = StObject.set(x, "attachNumberFormatsSupplier", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRangeHighlighter(value: () => XRangeHighlighter): Self = StObject.set(x, "getRangeHighlighter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRangeHighlighter(value: XRangeHighlighter): Self = this.set("RangeHighlighter", value.asInstanceOf[js.Any])
+    def setGetUsedData(value: () => XDataSource): Self = StObject.set(x, "getUsedData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setUsedData(value: XDataSource): Self = this.set("UsedData", value.asInstanceOf[js.Any])
+    def setGetUsedRangeRepresentations(value: () => SafeArray[String]): Self = StObject.set(x, "getUsedRangeRepresentations", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setUsedRangeRepresentations(value: SafeArray[String]): Self = this.set("UsedRangeRepresentations", value.asInstanceOf[js.Any])
+    def setRangeHighlighter(value: XRangeHighlighter): Self = StObject.set(x, "RangeHighlighter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachDataProvider(value: XDataProvider => Unit): Self = this.set("attachDataProvider", js.Any.fromFunction1(value))
+    def setSetArguments(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "setArguments", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAttachNumberFormatsSupplier(value: XNumberFormatsSupplier => Unit): Self = this.set("attachNumberFormatsSupplier", js.Any.fromFunction1(value))
+    def setUsedData(value: XDataSource): Self = StObject.set(x, "UsedData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRangeHighlighter(value: () => XRangeHighlighter): Self = this.set("getRangeHighlighter", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetUsedData(value: () => XDataSource): Self = this.set("getUsedData", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetUsedRangeRepresentations(value: () => SafeArray[String]): Self = this.set("getUsedRangeRepresentations", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetArguments(value: SeqEquiv[PropertyValue] => Unit): Self = this.set("setArguments", js.Any.fromFunction1(value))
+    def setUsedRangeRepresentations(value: SafeArray[String]): Self = StObject.set(x, "UsedRangeRepresentations", value.asInstanceOf[js.Any])
   }
 }

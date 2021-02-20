@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGOutputProcessor extends js.Object {
+trait SVGOutputProcessor extends StObject {
   
   /*EqnChunk is the number of equations that will be typeset before they appear on screen. Larger values make for
     * less visual flicker as the equations are drawn, but also mean longer delays before the reader sees anything.
@@ -111,114 +112,102 @@ object SVGOutputProcessor {
   }
   
   @scala.inline
-  implicit class SVGOutputProcessorOps[Self <: SVGOutputProcessor] (val x: Self) extends AnyVal {
+  implicit class SVGOutputProcessorMutableBuilder[Self <: SVGOutputProcessor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddMMLclasses(value: Boolean): Self = StObject.set(x, "addMMLclasses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddMMLclassesUndefined: Self = StObject.set(x, "addMMLclasses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlacker(value: Double): Self = StObject.set(x, "blacker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEqnChunk(value: Double): Self = this.set("EqnChunk", value.asInstanceOf[js.Any])
+    def setBlackerUndefined: Self = StObject.set(x, "blacker", js.undefined)
     
     @scala.inline
-    def deleteEqnChunk: Self = this.set("EqnChunk", js.undefined)
+    def setEqnChunk(value: Double): Self = StObject.set(x, "EqnChunk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEqnChunkDelay(value: Double): Self = this.set("EqnChunkDelay", value.asInstanceOf[js.Any])
+    def setEqnChunkDelay(value: Double): Self = StObject.set(x, "EqnChunkDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEqnChunkDelay: Self = this.set("EqnChunkDelay", js.undefined)
+    def setEqnChunkDelayUndefined: Self = StObject.set(x, "EqnChunkDelay", js.undefined)
     
     @scala.inline
-    def setEqnChunkFactor(value: Double): Self = this.set("EqnChunkFactor", value.asInstanceOf[js.Any])
+    def setEqnChunkFactor(value: Double): Self = StObject.set(x, "EqnChunkFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEqnChunkFactor: Self = this.set("EqnChunkFactor", js.undefined)
+    def setEqnChunkFactorUndefined: Self = StObject.set(x, "EqnChunkFactor", js.undefined)
     
     @scala.inline
-    def setAddMMLclasses(value: Boolean): Self = this.set("addMMLclasses", value.asInstanceOf[js.Any])
+    def setEqnChunkUndefined: Self = StObject.set(x, "EqnChunk", js.undefined)
     
     @scala.inline
-    def deleteAddMMLclasses: Self = this.set("addMMLclasses", js.undefined)
+    def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlacker(value: Double): Self = this.set("blacker", value.asInstanceOf[js.Any])
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteBlacker: Self = this.set("blacker", js.undefined)
+    def setLinebreaks(value: LineBreaks): Self = StObject.set(x, "linebreaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: String): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setLinebreaksUndefined: Self = StObject.set(x, "linebreaks", js.undefined)
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setMatchFontHeight(value: Boolean): Self = StObject.set(x, "matchFontHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinebreaks(value: LineBreaks): Self = this.set("linebreaks", value.asInstanceOf[js.Any])
+    def setMatchFontHeightUndefined: Self = StObject.set(x, "matchFontHeight", js.undefined)
     
     @scala.inline
-    def deleteLinebreaks: Self = this.set("linebreaks", js.undefined)
+    def setMinScaleAdjust(value: Double): Self = StObject.set(x, "minScaleAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchFontHeight(value: Boolean): Self = this.set("matchFontHeight", value.asInstanceOf[js.Any])
+    def setMinScaleAdjustUndefined: Self = StObject.set(x, "minScaleAdjust", js.undefined)
     
     @scala.inline
-    def deleteMatchFontHeight: Self = this.set("matchFontHeight", js.undefined)
+    def setMtextFontInherit(value: Boolean): Self = StObject.set(x, "mtextFontInherit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinScaleAdjust(value: Double): Self = this.set("minScaleAdjust", value.asInstanceOf[js.Any])
+    def setMtextFontInheritUndefined: Self = StObject.set(x, "mtextFontInherit", js.undefined)
     
     @scala.inline
-    def deleteMinScaleAdjust: Self = this.set("minScaleAdjust", js.undefined)
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMtextFontInherit(value: Boolean): Self = this.set("mtextFontInherit", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteMtextFontInherit: Self = this.set("mtextFontInherit", js.undefined)
+    def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setTooltip(value: ToolTip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: js.Any): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
     @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setUndefinedFamily(value: String): Self = StObject.set(x, "undefinedFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltip(value: ToolTip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    def setUndefinedFamilyUndefined: Self = StObject.set(x, "undefinedFamily", js.undefined)
     
     @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setUseFontCache(value: Boolean): Self = StObject.set(x, "useFontCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUndefinedFamily(value: String): Self = this.set("undefinedFamily", value.asInstanceOf[js.Any])
+    def setUseFontCacheUndefined: Self = StObject.set(x, "useFontCache", js.undefined)
     
     @scala.inline
-    def deleteUndefinedFamily: Self = this.set("undefinedFamily", js.undefined)
+    def setUseGlobalCache(value: Boolean): Self = StObject.set(x, "useGlobalCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseFontCache(value: Boolean): Self = this.set("useFontCache", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseFontCache: Self = this.set("useFontCache", js.undefined)
-    
-    @scala.inline
-    def setUseGlobalCache(value: Boolean): Self = this.set("useGlobalCache", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseGlobalCache: Self = this.set("useGlobalCache", js.undefined)
+    def setUseGlobalCacheUndefined: Self = StObject.set(x, "useGlobalCache", js.undefined)
   }
 }

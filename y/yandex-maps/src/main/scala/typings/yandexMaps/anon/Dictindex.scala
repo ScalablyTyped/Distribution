@@ -1,6 +1,7 @@
 package typings.yandexMaps.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,57 +31,45 @@ object Dictindex {
   }
   
   @scala.inline
-  implicit class DictindexOps[Self <: Dictindex] (val x: Self) extends AnyVal {
+  implicit class DictindexMutableBuilder[Self <: Dictindex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveRouteAutoSelection(value: Boolean): Self = StObject.set(x, "activeRouteAutoSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveRouteAutoSelectionUndefined: Self = StObject.set(x, "activeRouteAutoSelection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBoundsAutoApply(value: Boolean): Self = StObject.set(x, "boundsAutoApply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveRouteAutoSelection(value: Boolean): Self = this.set("activeRouteAutoSelection", value.asInstanceOf[js.Any])
+    def setBoundsAutoApplyUndefined: Self = StObject.set(x, "boundsAutoApply", js.undefined)
     
     @scala.inline
-    def deleteActiveRouteAutoSelection: Self = this.set("activeRouteAutoSelection", js.undefined)
+    def setDragUpdateInterval(value: String | Double): Self = StObject.set(x, "dragUpdateInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundsAutoApply(value: Boolean): Self = this.set("boundsAutoApply", value.asInstanceOf[js.Any])
+    def setDragUpdateIntervalUndefined: Self = StObject.set(x, "dragUpdateInterval", js.undefined)
     
     @scala.inline
-    def deleteBoundsAutoApply: Self = this.set("boundsAutoApply", js.undefined)
+    def setPreventDragUpdate(value: Boolean): Self = StObject.set(x, "preventDragUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragUpdateInterval(value: String | Double): Self = this.set("dragUpdateInterval", value.asInstanceOf[js.Any])
+    def setPreventDragUpdateUndefined: Self = StObject.set(x, "preventDragUpdate", js.undefined)
     
     @scala.inline
-    def deleteDragUpdateInterval: Self = this.set("dragUpdateInterval", js.undefined)
+    def setUseMapMargin(value: Boolean): Self = StObject.set(x, "useMapMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventDragUpdate(value: Boolean): Self = this.set("preventDragUpdate", value.asInstanceOf[js.Any])
+    def setUseMapMarginUndefined: Self = StObject.set(x, "useMapMargin", js.undefined)
     
     @scala.inline
-    def deletePreventDragUpdate: Self = this.set("preventDragUpdate", js.undefined)
+    def setZoomMargin(value: (js.Array[js.Array[Double] | Double]) | Double): Self = StObject.set(x, "zoomMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseMapMargin(value: Boolean): Self = this.set("useMapMargin", value.asInstanceOf[js.Any])
+    def setZoomMarginUndefined: Self = StObject.set(x, "zoomMargin", js.undefined)
     
     @scala.inline
-    def deleteUseMapMargin: Self = this.set("useMapMargin", js.undefined)
-    
-    @scala.inline
-    def setZoomMarginVarargs(value: (js.Array[Double] | Double)*): Self = this.set("zoomMargin", js.Array(value :_*))
-    
-    @scala.inline
-    def setZoomMargin(value: (js.Array[js.Array[Double] | Double]) | Double): Self = this.set("zoomMargin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomMargin: Self = this.set("zoomMargin", js.undefined)
+    def setZoomMarginVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "zoomMargin", js.Array(value :_*))
   }
 }

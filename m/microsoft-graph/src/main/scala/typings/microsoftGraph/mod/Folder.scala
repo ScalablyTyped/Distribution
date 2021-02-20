@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Folder extends js.Object {
+trait Folder extends StObject {
   
   // Number of children contained immediately within this container.
   var childCount: js.UndefOr[NullableOption[Double]] = js.native
@@ -22,36 +23,24 @@ object Folder {
   }
   
   @scala.inline
-  implicit class FolderOps[Self <: Folder] (val x: Self) extends AnyVal {
+  implicit class FolderMutableBuilder[Self <: Folder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildCount(value: NullableOption[Double]): Self = StObject.set(x, "childCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildCountNull: Self = StObject.set(x, "childCount", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildCountUndefined: Self = StObject.set(x, "childCount", js.undefined)
     
     @scala.inline
-    def setChildCount(value: NullableOption[Double]): Self = this.set("childCount", value.asInstanceOf[js.Any])
+    def setView(value: NullableOption[FolderView]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildCount: Self = this.set("childCount", js.undefined)
+    def setViewNull: Self = StObject.set(x, "view", null)
     
     @scala.inline
-    def setChildCountNull: Self = this.set("childCount", null)
-    
-    @scala.inline
-    def setView(value: NullableOption[FolderView]): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
-    
-    @scala.inline
-    def setViewNull: Self = this.set("view", null)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

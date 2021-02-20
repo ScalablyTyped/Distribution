@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientDfareporting.anon.Callback
 import typings.maximMazurokGapiClientDfareporting.anon.GroupNumber
 import typings.maximMazurokGapiClientDfareporting.anon.ResourceUploadType
 import typings.maximMazurokGapiClientDfareporting.anon.UploadTypeUploadprotocol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreativeGroupsResource extends js.Object {
+trait CreativeGroupsResource extends StObject {
   
   /** Gets one creative group by ID. */
   def get(): Request[CreativeGroup] = js.native

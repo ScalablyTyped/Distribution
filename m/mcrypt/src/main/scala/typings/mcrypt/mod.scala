@@ -1,20 +1,16 @@
 package typings.mcrypt
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mcrypt", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def getAlgorithmNames(): js.Array[String] = js.native
-  
-  def getModeNames(): js.Array[String] = js.native
-  
+  @JSImport("mcrypt", "MCrypt")
   @js.native
-  class MCrypt protected () extends js.Object {
+  class MCrypt protected () extends StObject {
     def this(algorithm: String, mode: String) = this()
     
     def decrypt(ciphertext: Buffer): Buffer = js.native
@@ -57,4 +53,12 @@ object mod extends js.Object {
     
     def validateKeySize(validate: Boolean): Unit = js.native
   }
+  
+  @JSImport("mcrypt", "getAlgorithmNames")
+  @js.native
+  def getAlgorithmNames(): js.Array[String] = js.native
+  
+  @JSImport("mcrypt", "getModeNames")
+  @js.native
+  def getModeNames(): js.Array[String] = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JwtTokenTypeConfiguration extends js.Object {
+trait JwtTokenTypeConfiguration extends StObject {
   
   /**
     * The regular expression that identifies the claim.
@@ -51,57 +52,45 @@ object JwtTokenTypeConfiguration {
   }
   
   @scala.inline
-  implicit class JwtTokenTypeConfigurationOps[Self <: JwtTokenTypeConfiguration] (val x: Self) extends AnyVal {
+  implicit class JwtTokenTypeConfigurationMutableBuilder[Self <: JwtTokenTypeConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClaimRegex(value: ClaimRegex): Self = StObject.set(x, "ClaimRegex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClaimRegexUndefined: Self = StObject.set(x, "ClaimRegex", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupAttributeField(value: GroupAttributeField): Self = StObject.set(x, "GroupAttributeField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyLocation(value: KeyLocation): Self = this.set("KeyLocation", value.asInstanceOf[js.Any])
+    def setGroupAttributeFieldUndefined: Self = StObject.set(x, "GroupAttributeField", js.undefined)
     
     @scala.inline
-    def setClaimRegex(value: ClaimRegex): Self = this.set("ClaimRegex", value.asInstanceOf[js.Any])
+    def setIssuer(value: Issuer): Self = StObject.set(x, "Issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClaimRegex: Self = this.set("ClaimRegex", js.undefined)
+    def setIssuerUndefined: Self = StObject.set(x, "Issuer", js.undefined)
     
     @scala.inline
-    def setGroupAttributeField(value: GroupAttributeField): Self = this.set("GroupAttributeField", value.asInstanceOf[js.Any])
+    def setKeyLocation(value: KeyLocation): Self = StObject.set(x, "KeyLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroupAttributeField: Self = this.set("GroupAttributeField", js.undefined)
+    def setSecretManagerArn(value: RoleArn): Self = StObject.set(x, "SecretManagerArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuer(value: Issuer): Self = this.set("Issuer", value.asInstanceOf[js.Any])
+    def setSecretManagerArnUndefined: Self = StObject.set(x, "SecretManagerArn", js.undefined)
     
     @scala.inline
-    def deleteIssuer: Self = this.set("Issuer", js.undefined)
+    def setURL(value: Url): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretManagerArn(value: RoleArn): Self = this.set("SecretManagerArn", value.asInstanceOf[js.Any])
+    def setURLUndefined: Self = StObject.set(x, "URL", js.undefined)
     
     @scala.inline
-    def deleteSecretManagerArn: Self = this.set("SecretManagerArn", js.undefined)
+    def setUserNameAttributeField(value: UserNameAttributeField): Self = StObject.set(x, "UserNameAttributeField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setURL(value: Url): Self = this.set("URL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteURL: Self = this.set("URL", js.undefined)
-    
-    @scala.inline
-    def setUserNameAttributeField(value: UserNameAttributeField): Self = this.set("UserNameAttributeField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserNameAttributeField: Self = this.set("UserNameAttributeField", js.undefined)
+    def setUserNameAttributeFieldUndefined: Self = StObject.set(x, "UserNameAttributeField", js.undefined)
   }
 }

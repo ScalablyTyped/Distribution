@@ -1,11 +1,12 @@
 package typings.pouchdbCore.PouchDB.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatabaseInfo extends js.Object {
+trait DatabaseInfo extends StObject {
   
   /** Name of the database you gave when you called new PouchDB(), and also the unique identifier for the database. */
   var db_name: String = js.native
@@ -25,27 +26,15 @@ object DatabaseInfo {
   }
   
   @scala.inline
-  implicit class DatabaseInfoOps[Self <: DatabaseInfo] (val x: Self) extends AnyVal {
+  implicit class DatabaseInfoMutableBuilder[Self <: DatabaseInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDb_name(value: String): Self = StObject.set(x, "db_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDoc_count(value: Double): Self = StObject.set(x, "doc_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDb_name(value: String): Self = this.set("db_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDoc_count(value: Double): Self = this.set("doc_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdate_seq(value: Double | String): Self = this.set("update_seq", value.asInstanceOf[js.Any])
+    def setUpdate_seq(value: Double | String): Self = StObject.set(x, "update_seq", value.asInstanceOf[js.Any])
   }
 }

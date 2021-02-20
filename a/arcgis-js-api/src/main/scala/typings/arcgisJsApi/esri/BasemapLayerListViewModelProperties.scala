@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BasemapLayerListViewModelProperties extends js.Object {
+trait BasemapLayerListViewModelProperties extends StObject {
   
   /**
     * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html).
@@ -44,42 +45,30 @@ object BasemapLayerListViewModelProperties {
   }
   
   @scala.inline
-  implicit class BasemapLayerListViewModelPropertiesOps[Self <: BasemapLayerListViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class BasemapLayerListViewModelPropertiesMutableBuilder[Self <: BasemapLayerListViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseListItemCreatedFunction(value: /* event */ js.Any => Unit): Self = StObject.set(x, "baseListItemCreatedFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseListItemCreatedFunctionUndefined: Self = StObject.set(x, "baseListItemCreatedFunction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBasemapTitle(value: String): Self = StObject.set(x, "basemapTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseListItemCreatedFunction(value: /* event */ js.Any => Unit): Self = this.set("baseListItemCreatedFunction", js.Any.fromFunction1(value))
+    def setBasemapTitleUndefined: Self = StObject.set(x, "basemapTitle", js.undefined)
     
     @scala.inline
-    def deleteBaseListItemCreatedFunction: Self = this.set("baseListItemCreatedFunction", js.undefined)
+    def setReferenceListItemCreatedFunction(value: /* event */ js.Any => Unit): Self = StObject.set(x, "referenceListItemCreatedFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBasemapTitle(value: String): Self = this.set("basemapTitle", value.asInstanceOf[js.Any])
+    def setReferenceListItemCreatedFunctionUndefined: Self = StObject.set(x, "referenceListItemCreatedFunction", js.undefined)
     
     @scala.inline
-    def deleteBasemapTitle: Self = this.set("basemapTitle", js.undefined)
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceListItemCreatedFunction(value: /* event */ js.Any => Unit): Self = this.set("referenceListItemCreatedFunction", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteReferenceListItemCreatedFunction: Self = this.set("referenceListItemCreatedFunction", js.undefined)
-    
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

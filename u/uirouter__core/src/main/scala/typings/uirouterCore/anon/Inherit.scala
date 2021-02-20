@@ -1,11 +1,12 @@
 package typings.uirouterCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Inherit extends js.Object {
+trait Inherit extends StObject {
   
   var inherit: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object Inherit {
   }
   
   @scala.inline
-  implicit class InheritOps[Self <: Inherit] (val x: Self) extends AnyVal {
+  implicit class InheritMutableBuilder[Self <: Inherit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatchingKeys(value: js.Any): Self = StObject.set(x, "matchingKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInherit(value: Boolean): Self = this.set("inherit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInherit: Self = this.set("inherit", js.undefined)
-    
-    @scala.inline
-    def setMatchingKeys(value: js.Any): Self = this.set("matchingKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchingKeys: Self = this.set("matchingKeys", js.undefined)
+    def setMatchingKeysUndefined: Self = StObject.set(x, "matchingKeys", js.undefined)
   }
 }

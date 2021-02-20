@@ -1,17 +1,19 @@
 package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.repositoryMod.Repository
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/repositories/consent.repository", JSImport.Namespace)
-@js.native
-object consentRepositoryMod extends js.Object {
+object consentRepositoryMod {
   
+  @JSImport("instagram-private-api/dist/repositories/consent.repository", "ConsentRepository")
   @js.native
-  class ConsentRepository () extends Repository {
+  class ConsentRepository protected () extends Repository {
+    def this(client: IgApiClient) = this()
     
     def auto(): js.Promise[_] = js.native
     

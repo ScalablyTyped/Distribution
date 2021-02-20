@@ -1,11 +1,12 @@
 package typings.activexVbide.VBIDE
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Components extends js.Object {
+trait Components extends StObject {
   
   def apply(index: js.Any): Component = js.native
   

@@ -4,13 +4,14 @@ import typings.atlassianConnectJs.atlassianConnectJsStrings.`version-at-save`
 import typings.atlassianConnectJs.atlassianConnectJsStrings.blogpost
 import typings.atlassianConnectJs.atlassianConnectJsStrings.current
 import typings.atlassianConnectJs.atlassianConnectJsStrings.page
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<atlassian-connect-js.AP.navigator.NavigatorContext> */
 @js.native
-trait PartialNavigatorContext extends js.Object {
+trait PartialNavigatorContext extends StObject {
   
   var absoluteUrl: js.UndefOr[String] = js.native
   
@@ -55,120 +56,108 @@ object PartialNavigatorContext {
   }
   
   @scala.inline
-  implicit class PartialNavigatorContextOps[Self <: PartialNavigatorContext] (val x: Self) extends AnyVal {
+  implicit class PartialNavigatorContextMutableBuilder[Self <: PartialNavigatorContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsoluteUrl(value: String): Self = StObject.set(x, "absoluteUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbsoluteUrlUndefined: Self = StObject.set(x, "absoluteUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddonKey(value: String): Self = StObject.set(x, "addonKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbsoluteUrl(value: String): Self = this.set("absoluteUrl", value.asInstanceOf[js.Any])
+    def setAddonKeyUndefined: Self = StObject.set(x, "addonKey", js.undefined)
     
     @scala.inline
-    def deleteAbsoluteUrl: Self = this.set("absoluteUrl", js.undefined)
+    def setAdminPageKey(value: String): Self = StObject.set(x, "adminPageKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddonKey(value: String): Self = this.set("addonKey", value.asInstanceOf[js.Any])
+    def setAdminPageKeyUndefined: Self = StObject.set(x, "adminPageKey", js.undefined)
     
     @scala.inline
-    def deleteAddonKey: Self = this.set("addonKey", js.undefined)
+    def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminPageKey(value: String): Self = this.set("adminPageKey", value.asInstanceOf[js.Any])
+    def setContentIdUndefined: Self = StObject.set(x, "contentId", js.undefined)
     
     @scala.inline
-    def deleteAdminPageKey: Self = this.set("adminPageKey", js.undefined)
+    def setContentType(value: page | blogpost): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentId(value: String): Self = this.set("contentId", value.asInstanceOf[js.Any])
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def deleteContentId: Self = this.set("contentId", js.undefined)
+    def setCustomData(value: String): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: page | blogpost): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setDashboardId(value: String): Self = StObject.set(x, "dashboardId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomData(value: String): Self = this.set("customData", value.asInstanceOf[js.Any])
+    def setDashboardIdUndefined: Self = StObject.set(x, "dashboardId", js.undefined)
     
     @scala.inline
-    def deleteCustomData: Self = this.set("customData", js.undefined)
+    def setEmbeddedContentRender(value: current | `version-at-save`): Self = StObject.set(x, "embeddedContentRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashboardId(value: String): Self = this.set("dashboardId", value.asInstanceOf[js.Any])
+    def setEmbeddedContentRenderUndefined: Self = StObject.set(x, "embeddedContentRender", js.undefined)
     
     @scala.inline
-    def deleteDashboardId: Self = this.set("dashboardId", js.undefined)
+    def setIssueKey(value: String): Self = StObject.set(x, "issueKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbeddedContentRender(value: current | `version-at-save`): Self = this.set("embeddedContentRender", value.asInstanceOf[js.Any])
+    def setIssueKeyUndefined: Self = StObject.set(x, "issueKey", js.undefined)
     
     @scala.inline
-    def deleteEmbeddedContentRender: Self = this.set("embeddedContentRender", js.undefined)
+    def setModuleKey(value: String): Self = StObject.set(x, "moduleKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssueKey(value: String): Self = this.set("issueKey", value.asInstanceOf[js.Any])
+    def setModuleKeyUndefined: Self = StObject.set(x, "moduleKey", js.undefined)
     
     @scala.inline
-    def deleteIssueKey: Self = this.set("issueKey", js.undefined)
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModuleKey(value: String): Self = this.set("moduleKey", value.asInstanceOf[js.Any])
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def deleteModuleKey: Self = this.set("moduleKey", js.undefined)
+    def setProjectKey(value: String): Self = StObject.set(x, "projectKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    def setProjectKeyUndefined: Self = StObject.set(x, "projectKey", js.undefined)
     
     @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    def setRelativeUrl(value: String): Self = StObject.set(x, "relativeUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectKey(value: String): Self = this.set("projectKey", value.asInstanceOf[js.Any])
+    def setRelativeUrlUndefined: Self = StObject.set(x, "relativeUrl", js.undefined)
     
     @scala.inline
-    def deleteProjectKey: Self = this.set("projectKey", js.undefined)
+    def setSpaceKey(value: String): Self = StObject.set(x, "spaceKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeUrl(value: String): Self = this.set("relativeUrl", value.asInstanceOf[js.Any])
+    def setSpaceKeyUndefined: Self = StObject.set(x, "spaceKey", js.undefined)
     
     @scala.inline
-    def deleteRelativeUrl: Self = this.set("relativeUrl", js.undefined)
+    def setUserAccountId(value: String): Self = StObject.set(x, "userAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceKey(value: String): Self = this.set("spaceKey", value.asInstanceOf[js.Any])
+    def setUserAccountIdUndefined: Self = StObject.set(x, "userAccountId", js.undefined)
     
     @scala.inline
-    def deleteSpaceKey: Self = this.set("spaceKey", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserAccountId(value: String): Self = this.set("userAccountId", value.asInstanceOf[js.Any])
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     
     @scala.inline
-    def deleteUserAccountId: Self = this.set("userAccountId", js.undefined)
+    def setVersionOverride(value: String): Self = StObject.set(x, "versionOverride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
-    
-    @scala.inline
-    def setVersionOverride(value: String): Self = this.set("versionOverride", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionOverride: Self = this.set("versionOverride", js.undefined)
+    def setVersionOverrideUndefined: Self = StObject.set(x, "versionOverride", js.undefined)
   }
 }

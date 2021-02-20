@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworkscmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEventsResponse extends js.Object {
+trait DescribeEventsResponse extends StObject {
   
   /**
     * NextToken is a string that is returned in some command responses. It indicates that not all entries have been returned, and that you must run at least one more request to get remaining items. To get remaining results, call DescribeEvents again, and assign the token from the previous results as the value of the nextToken parameter. If there are no more results, the response object's nextToken parameter value is null. Setting a nextToken value that was not returned in your previous results causes an InvalidNextTokenException to occur. 
@@ -26,33 +27,21 @@ object DescribeEventsResponse {
   }
   
   @scala.inline
-  implicit class DescribeEventsResponseOps[Self <: DescribeEventsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeEventsResponseMutableBuilder[Self <: DescribeEventsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServerEvents(value: ServerEvents): Self = StObject.set(x, "ServerEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setServerEventsUndefined: Self = StObject.set(x, "ServerEvents", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setServerEventsVarargs(value: ServerEvent*): Self = this.set("ServerEvents", js.Array(value :_*))
-    
-    @scala.inline
-    def setServerEvents(value: ServerEvents): Self = this.set("ServerEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerEvents: Self = this.set("ServerEvents", js.undefined)
+    def setServerEventsVarargs(value: ServerEvent*): Self = StObject.set(x, "ServerEvents", js.Array(value :_*))
   }
 }

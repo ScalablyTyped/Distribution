@@ -1,18 +1,20 @@
 package typings.dateFns
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/setMinutes", JSImport.Namespace)
-@js.native
-object dateFnsSetMinutesMod extends js.Object {
+object dateFnsSetMinutesMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/setMinutes", JSImport.Default)
+    @js.native
     def apply(date: Double, minutes: Double): Date = js.native
+    @JSImport("date-fns/setMinutes", JSImport.Default)
+    @js.native
     def apply(date: Date, minutes: Double): Date = js.native
   }
 }

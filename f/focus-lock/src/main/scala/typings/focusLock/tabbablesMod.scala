@@ -1,12 +1,13 @@
 package typings.focusLock
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("focus-lock/dist/es5/utils/tabbables", JSImport.Namespace)
-@js.native
-object tabbablesMod extends js.Object {
+object tabbablesMod {
   
+  @JSImport("focus-lock/dist/es5/utils/tabbables", "tabbables")
+  @js.native
   val tabbables: js.Array[String] = js.native
 }

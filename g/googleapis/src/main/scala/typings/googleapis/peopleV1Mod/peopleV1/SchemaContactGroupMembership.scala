@@ -1,5 +1,6 @@
 package typings.googleapis.peopleV1Mod.peopleV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A Google contact group membership.
   */
 @js.native
-trait SchemaContactGroupMembership extends js.Object {
+trait SchemaContactGroupMembership extends StObject {
   
   /**
     * The contact group ID for the contact group membership. The contact group
@@ -26,24 +27,12 @@ object SchemaContactGroupMembership {
   }
   
   @scala.inline
-  implicit class SchemaContactGroupMembershipOps[Self <: SchemaContactGroupMembership] (val x: Self) extends AnyVal {
+  implicit class SchemaContactGroupMembershipMutableBuilder[Self <: SchemaContactGroupMembership] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContactGroupId(value: String): Self = StObject.set(x, "contactGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContactGroupId(value: String): Self = this.set("contactGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContactGroupId: Self = this.set("contactGroupId", js.undefined)
+    def setContactGroupIdUndefined: Self = StObject.set(x, "contactGroupId", js.undefined)
   }
 }

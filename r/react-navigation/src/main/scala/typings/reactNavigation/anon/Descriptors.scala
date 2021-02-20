@@ -5,12 +5,13 @@ import typings.reactNavigation.mod.NavigationDescriptor
 import typings.reactNavigation.mod.NavigationParams
 import typings.reactNavigation.mod.NavigationRoute
 import typings.reactNavigation.mod.NavigationScreenProp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Descriptors[Options, ScreenProps] extends js.Object {
+trait Descriptors[Options, ScreenProps] extends StObject {
   
   var descriptors: StringDictionary[
     NavigationDescriptor[
@@ -42,19 +43,7 @@ object Descriptors {
   }
   
   @scala.inline
-  implicit class DescriptorsOps[Self <: Descriptors[_, _], Options, ScreenProps] (val x: Self with (Descriptors[Options, ScreenProps])) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class DescriptorsMutableBuilder[Self <: Descriptors[_, _], Options, ScreenProps] (val x: Self with (Descriptors[Options, ScreenProps])) extends AnyVal {
     
     @scala.inline
     def setDescriptors(
@@ -65,15 +54,15 @@ object Descriptors {
             NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams]
           ]
         ]
-    ): Self = this.set("descriptors", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigationConfig(value: Options): Self = this.set("navigationConfig", value.asInstanceOf[js.Any])
+    def setNavigationConfig(value: Options): Self = StObject.set(x, "navigationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenProps(value: ScreenProps): Self = this.set("screenProps", value.asInstanceOf[js.Any])
+    def setScreenProps(value: ScreenProps): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScreenProps: Self = this.set("screenProps", js.undefined)
+    def setScreenPropsUndefined: Self = StObject.set(x, "screenProps", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.umbraco.umbraco.services
 
 import typings.angular.mod.IPromise
 import typings.angular.mod.IScope
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Promise-based utillity service to lazy-load client-side dependencies inside angular controllers.
   */
 @js.native
-trait IAssetsService extends js.Object {
+trait IAssetsService extends StObject {
   
   /**
     * @ngdoc method
@@ -79,27 +80,15 @@ object IAssetsService {
   }
   
   @scala.inline
-  implicit class IAssetsServiceOps[Self <: IAssetsService] (val x: Self) extends AnyVal {
+  implicit class IAssetsServiceMutableBuilder[Self <: IAssetsService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoad(value: (js.Array[String], IScope) => IPromise[_]): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoadCss(value: (String, IScope, js.Object, Double) => IPromise[_]): Self = StObject.set(x, "loadCss", js.Any.fromFunction4(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLoad(value: (js.Array[String], IScope) => IPromise[_]): Self = this.set("load", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setLoadCss(value: (String, IScope, js.Object, Double) => IPromise[_]): Self = this.set("loadCss", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setLoadJs(value: (String, IScope, js.Object, Double) => IPromise[_]): Self = this.set("loadJs", js.Any.fromFunction4(value))
+    def setLoadJs(value: (String, IScope, js.Object, Double) => IPromise[_]): Self = StObject.set(x, "loadJs", js.Any.fromFunction4(value))
   }
 }

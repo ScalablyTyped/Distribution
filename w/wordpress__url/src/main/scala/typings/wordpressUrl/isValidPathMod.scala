@@ -1,12 +1,13 @@
 package typings.wordpressUrl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/url/build-types/is-valid-path", JSImport.Namespace)
-@js.native
-object isValidPathMod extends js.Object {
+object isValidPathMod {
   
+  @JSImport("@wordpress/url/build-types/is-valid-path", "isValidPath")
+  @js.native
   def isValidPath(path: String): Boolean = js.native
 }

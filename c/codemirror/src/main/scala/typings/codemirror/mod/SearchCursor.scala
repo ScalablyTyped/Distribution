@@ -1,11 +1,12 @@
 package typings.codemirror.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchCursor extends js.Object {
+trait SearchCursor extends StObject {
   
   /** Searches forward or backward from the current position. The return value indicates whether a match was
     * found. If matching a regular expression, the return value will be the array returned by the match method, in case

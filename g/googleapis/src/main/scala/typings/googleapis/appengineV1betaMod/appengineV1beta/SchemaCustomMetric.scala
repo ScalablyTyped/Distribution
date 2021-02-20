@@ -1,5 +1,6 @@
 package typings.googleapis.appengineV1betaMod.appengineV1beta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Allows autoscaling based on Stackdriver metrics.
   */
 @js.native
-trait SchemaCustomMetric extends js.Object {
+trait SchemaCustomMetric extends StObject {
   
   /**
     * Allows filtering on the metric&#39;s fields.
@@ -49,48 +50,36 @@ object SchemaCustomMetric {
   }
   
   @scala.inline
-  implicit class SchemaCustomMetricOps[Self <: SchemaCustomMetric] (val x: Self) extends AnyVal {
+  implicit class SchemaCustomMetricMutableBuilder[Self <: SchemaCustomMetric] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setSingleInstanceAssignment(value: Double): Self = StObject.set(x, "singleInstanceAssignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricName(value: String): Self = this.set("metricName", value.asInstanceOf[js.Any])
+    def setSingleInstanceAssignmentUndefined: Self = StObject.set(x, "singleInstanceAssignment", js.undefined)
     
     @scala.inline
-    def deleteMetricName: Self = this.set("metricName", js.undefined)
+    def setTargetType(value: String): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingleInstanceAssignment(value: Double): Self = this.set("singleInstanceAssignment", value.asInstanceOf[js.Any])
+    def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
     
     @scala.inline
-    def deleteSingleInstanceAssignment: Self = this.set("singleInstanceAssignment", js.undefined)
+    def setTargetUtilization(value: Double): Self = StObject.set(x, "targetUtilization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetType(value: String): Self = this.set("targetType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetType: Self = this.set("targetType", js.undefined)
-    
-    @scala.inline
-    def setTargetUtilization(value: Double): Self = this.set("targetUtilization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetUtilization: Self = this.set("targetUtilization", js.undefined)
+    def setTargetUtilizationUndefined: Self = StObject.set(x, "targetUtilization", js.undefined)
   }
 }

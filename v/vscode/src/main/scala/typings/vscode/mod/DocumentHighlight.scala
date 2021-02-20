@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "DocumentHighlight")
 @js.native
-class DocumentHighlight protected () extends js.Object {
+class DocumentHighlight protected () extends StObject {
   /**
     * Creates a new document highlight object.
     *

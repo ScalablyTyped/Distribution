@@ -1,5 +1,6 @@
 package typings.paypalPayoutsSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.PAYPAL
   - typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.VENMO
 */
-trait RecipientWallet extends js.Object
+trait RecipientWallet extends StObject
 object RecipientWallet {
   
   @scala.inline

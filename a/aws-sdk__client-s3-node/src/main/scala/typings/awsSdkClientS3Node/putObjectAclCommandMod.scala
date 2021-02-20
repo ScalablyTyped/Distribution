@@ -7,14 +7,14 @@ import typings.awsSdkClientS3Node.typesPutObjectAclInputMod.PutObjectAclInput
 import typings.awsSdkClientS3Node.typesPutObjectAclOutputMod.PutObjectAclOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/commands/PutObjectAclCommand", JSImport.Namespace)
-@js.native
-object putObjectAclCommandMod extends js.Object {
+object putObjectAclCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-node/commands/PutObjectAclCommand", "PutObjectAclCommand")
   @js.native
   class PutObjectAclCommand protected () extends Command[
           InputTypesUnion, 

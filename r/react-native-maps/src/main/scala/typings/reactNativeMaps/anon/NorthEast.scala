@@ -1,12 +1,13 @@
 package typings.reactNativeMaps.anon
 
 import typings.reactNativeMaps.mod.LatLng
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NorthEast extends js.Object {
+trait NorthEast extends StObject {
   
   var northEast: LatLng = js.native
   
@@ -21,24 +22,12 @@ object NorthEast {
   }
   
   @scala.inline
-  implicit class NorthEastOps[Self <: NorthEast] (val x: Self) extends AnyVal {
+  implicit class NorthEastMutableBuilder[Self <: NorthEast] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNorthEast(value: LatLng): Self = StObject.set(x, "northEast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNorthEast(value: LatLng): Self = this.set("northEast", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSouthWest(value: LatLng): Self = this.set("southWest", value.asInstanceOf[js.Any])
+    def setSouthWest(value: LatLng): Self = StObject.set(x, "southWest", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data about the configuration of a Rich Communication Services (RCS) transport. */
 @js.native
-trait RcsTransportConfiguration extends js.Object {
+trait RcsTransportConfiguration extends StObject {
   
   /** Gets the maximum number of attachments supported by the transport. */
   var maxAttachmentCount: Double = js.native
@@ -42,36 +43,24 @@ object RcsTransportConfiguration {
   }
   
   @scala.inline
-  implicit class RcsTransportConfigurationOps[Self <: RcsTransportConfiguration] (val x: Self) extends AnyVal {
+  implicit class RcsTransportConfigurationMutableBuilder[Self <: RcsTransportConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxAttachmentCount(value: Double): Self = StObject.set(x, "maxAttachmentCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxFileSizeInKilobytes(value: Double): Self = StObject.set(x, "maxFileSizeInKilobytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxGroupMessageSizeInKilobytes(value: Double): Self = StObject.set(x, "maxGroupMessageSizeInKilobytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAttachmentCount(value: Double): Self = this.set("maxAttachmentCount", value.asInstanceOf[js.Any])
+    def setMaxMessageSizeInKilobytes(value: Double): Self = StObject.set(x, "maxMessageSizeInKilobytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFileSizeInKilobytes(value: Double): Self = this.set("maxFileSizeInKilobytes", value.asInstanceOf[js.Any])
+    def setMaxRecipientCount(value: Double): Self = StObject.set(x, "maxRecipientCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxGroupMessageSizeInKilobytes(value: Double): Self = this.set("maxGroupMessageSizeInKilobytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxMessageSizeInKilobytes(value: Double): Self = this.set("maxMessageSizeInKilobytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxRecipientCount(value: Double): Self = this.set("maxRecipientCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWarningFileSizeInKilobytes(value: Double): Self = this.set("warningFileSizeInKilobytes", value.asInstanceOf[js.Any])
+    def setWarningFileSizeInKilobytes(value: Double): Self = StObject.set(x, "warningFileSizeInKilobytes", value.asInstanceOf[js.Any])
   }
 }

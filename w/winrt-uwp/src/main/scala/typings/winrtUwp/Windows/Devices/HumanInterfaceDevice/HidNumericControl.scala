@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.HumanInterfaceDevice
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a numeric control on a HID device that returns a range of values. An example would be the volume control on a speaker. */
 @js.native
-trait HidNumericControl extends js.Object {
+trait HidNumericControl extends StObject {
   
   /** Retrieves a control description for the given numeric control. */
   var controlDescription: HidNumericControlDescription = js.native
@@ -46,39 +47,27 @@ object HidNumericControl {
   }
   
   @scala.inline
-  implicit class HidNumericControlOps[Self <: HidNumericControl] (val x: Self) extends AnyVal {
+  implicit class HidNumericControlMutableBuilder[Self <: HidNumericControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControlDescription(value: HidNumericControlDescription): Self = StObject.set(x, "controlDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsGrouped(value: Boolean): Self = StObject.set(x, "isGrouped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlDescription(value: HidNumericControlDescription): Self = this.set("controlDescription", value.asInstanceOf[js.Any])
+    def setScaledValue(value: Double): Self = StObject.set(x, "scaledValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setUsageId(value: Double): Self = StObject.set(x, "usageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsGrouped(value: Boolean): Self = this.set("isGrouped", value.asInstanceOf[js.Any])
+    def setUsagePage(value: Double): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaledValue(value: Double): Self = this.set("scaledValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsageId(value: Double): Self = this.set("usageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsagePage(value: Double): Self = this.set("usagePage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

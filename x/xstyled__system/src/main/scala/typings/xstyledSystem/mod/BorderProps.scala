@@ -1,11 +1,12 @@
 package typings.xstyledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BorderProps[TLength] extends js.Object {
+trait BorderProps[TLength] extends StObject {
   
   val border: js.UndefOr[
     ResponsiveValue[
@@ -22,31 +23,19 @@ object BorderProps {
   }
   
   @scala.inline
-  implicit class BorderPropsOps[Self <: BorderProps[_], TLength] (val x: Self with BorderProps[TLength]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBorderVarargs(value: js.Any*): Self = this.set("border", js.Array(value :_*))
+  implicit class BorderPropsMutableBuilder[Self <: BorderProps[_], TLength] (val x: Self with BorderProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setBorder(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<TLength> */ _
         ]
-    ): Self = this.set("border", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorder: Self = this.set("border", js.undefined)
+    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
+    @scala.inline
+    def setBorderVarargs(value: js.Any*): Self = StObject.set(x, "border", js.Array(value :_*))
   }
 }

@@ -1,14 +1,15 @@
 package typings.zui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ERRORS extends js.Object
+sealed trait ERRORS extends StObject
 @JSGlobal("ERRORS")
 @js.native
-object ERRORS extends js.Object {
+object ERRORS extends StObject {
   
   @js.native
   sealed trait FILE_DUPLICATE_ERROR extends ERRORS

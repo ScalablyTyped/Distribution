@@ -7,14 +7,14 @@ import typings.awsSdkClientPinpointBrowser.typesGetSegmentExportJobsInputMod.Get
 import typings.awsSdkClientPinpointBrowser.typesGetSegmentExportJobsOutputMod.GetSegmentExportJobsOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/commands/GetSegmentExportJobsCommand", JSImport.Namespace)
-@js.native
-object getSegmentExportJobsCommandMod extends js.Object {
+object getSegmentExportJobsCommandMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/commands/GetSegmentExportJobsCommand", "GetSegmentExportJobsCommand")
   @js.native
   class GetSegmentExportJobsCommand protected () extends Command[
           InputTypesUnion, 

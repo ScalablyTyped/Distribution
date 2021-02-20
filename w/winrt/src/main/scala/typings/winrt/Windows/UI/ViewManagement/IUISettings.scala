@@ -2,12 +2,13 @@ package typings.winrt.Windows.UI.ViewManagement
 
 import typings.winrt.Windows.Foundation.Size
 import typings.winrt.Windows.UI.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IUISettings extends js.Object {
+trait IUISettings extends StObject {
   
   var animationsEnabled: Boolean = js.native
   
@@ -58,57 +59,45 @@ object IUISettings {
   }
   
   @scala.inline
-  implicit class IUISettingsOps[Self <: IUISettings] (val x: Self) extends AnyVal {
+  implicit class IUISettingsMutableBuilder[Self <: IUISettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationsEnabled(value: Boolean): Self = StObject.set(x, "animationsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaretBlinkRate(value: Double): Self = StObject.set(x, "caretBlinkRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaretBrowsingEnabled(value: Boolean): Self = StObject.set(x, "caretBrowsingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationsEnabled(value: Boolean): Self = this.set("animationsEnabled", value.asInstanceOf[js.Any])
+    def setCaretWidth(value: Double): Self = StObject.set(x, "caretWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaretBlinkRate(value: Double): Self = this.set("caretBlinkRate", value.asInstanceOf[js.Any])
+    def setCursorSize(value: Size): Self = StObject.set(x, "cursorSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaretBrowsingEnabled(value: Boolean): Self = this.set("caretBrowsingEnabled", value.asInstanceOf[js.Any])
+    def setDoubleClickTime(value: Double): Self = StObject.set(x, "doubleClickTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaretWidth(value: Double): Self = this.set("caretWidth", value.asInstanceOf[js.Any])
+    def setHandPreference(value: HandPreference): Self = StObject.set(x, "handPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorSize(value: Size): Self = this.set("cursorSize", value.asInstanceOf[js.Any])
+    def setMessageDuration(value: Double): Self = StObject.set(x, "messageDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleClickTime(value: Double): Self = this.set("doubleClickTime", value.asInstanceOf[js.Any])
+    def setMouseHoverTime(value: Double): Self = StObject.set(x, "mouseHoverTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandPreference(value: HandPreference): Self = this.set("handPreference", value.asInstanceOf[js.Any])
+    def setScrollBarArrowSize(value: Size): Self = StObject.set(x, "scrollBarArrowSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageDuration(value: Double): Self = this.set("messageDuration", value.asInstanceOf[js.Any])
+    def setScrollBarSize(value: Size): Self = StObject.set(x, "scrollBarSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseHoverTime(value: Double): Self = this.set("mouseHoverTime", value.asInstanceOf[js.Any])
+    def setScrollBarThumbBoxSize(value: Size): Self = StObject.set(x, "scrollBarThumbBoxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollBarArrowSize(value: Size): Self = this.set("scrollBarArrowSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrollBarSize(value: Size): Self = this.set("scrollBarSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrollBarThumbBoxSize(value: Size): Self = this.set("scrollBarThumbBoxSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUIElementColor(value: UIElementType => Color): Self = this.set("uIElementColor", js.Any.fromFunction1(value))
+    def setUIElementColor(value: UIElementType => Color): Self = StObject.set(x, "uIElementColor", js.Any.fromFunction1(value))
   }
 }

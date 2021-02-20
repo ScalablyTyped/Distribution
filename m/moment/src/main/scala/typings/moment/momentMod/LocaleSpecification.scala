@@ -2,6 +2,7 @@ package typings.moment.momentMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,138 +54,126 @@ object LocaleSpecification {
   }
   
   @scala.inline
-  implicit class LocaleSpecificationOps[Self <: LocaleSpecification] (val x: Self) extends AnyVal {
+  implicit class LocaleSpecificationMutableBuilder[Self <: LocaleSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendar(value: CalendarSpec): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvalidDate(value: String): Self = StObject.set(x, "invalidDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendar(value: CalendarSpec): Self = this.set("calendar", value.asInstanceOf[js.Any])
+    def setInvalidDateUndefined: Self = StObject.set(x, "invalidDate", js.undefined)
     
     @scala.inline
-    def deleteCalendar: Self = this.set("calendar", js.undefined)
+    def setIsPM(value: /* input */ String => Boolean): Self = StObject.set(x, "isPM", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInvalidDate(value: String): Self = this.set("invalidDate", value.asInstanceOf[js.Any])
+    def setIsPMUndefined: Self = StObject.set(x, "isPM", js.undefined)
     
     @scala.inline
-    def deleteInvalidDate: Self = this.set("invalidDate", js.undefined)
+    def setLongDateFormat(value: LongDateFormatSpec): Self = StObject.set(x, "longDateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPM(value: /* input */ String => Boolean): Self = this.set("isPM", js.Any.fromFunction1(value))
+    def setLongDateFormatUndefined: Self = StObject.set(x, "longDateFormat", js.undefined)
     
     @scala.inline
-    def deleteIsPM: Self = this.set("isPM", js.undefined)
+    def setMeridiem(value: (/* hour */ Double, /* minute */ Double, /* isLower */ Boolean) => String): Self = StObject.set(x, "meridiem", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setLongDateFormat(value: LongDateFormatSpec): Self = this.set("longDateFormat", value.asInstanceOf[js.Any])
+    def setMeridiemParse(value: RegExp): Self = StObject.set(x, "meridiemParse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLongDateFormat: Self = this.set("longDateFormat", js.undefined)
+    def setMeridiemParseUndefined: Self = StObject.set(x, "meridiemParse", js.undefined)
     
     @scala.inline
-    def setMeridiem(value: (/* hour */ Double, /* minute */ Double, /* isLower */ Boolean) => String): Self = this.set("meridiem", js.Any.fromFunction3(value))
+    def setMeridiemUndefined: Self = StObject.set(x, "meridiem", js.undefined)
     
     @scala.inline
-    def deleteMeridiem: Self = this.set("meridiem", js.undefined)
+    def setMonths(value: js.Array[String] | StandaloneFormatSpec | MonthWeekdayFn): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeridiemParse(value: RegExp): Self = this.set("meridiemParse", value.asInstanceOf[js.Any])
+    def setMonthsFunction2(value: (/* momentToFormat */ Moment, /* format */ js.UndefOr[String]) => String): Self = StObject.set(x, "months", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteMeridiemParse: Self = this.set("meridiemParse", js.undefined)
+    def setMonthsShort(value: js.Array[String] | StandaloneFormatSpec | MonthWeekdayFn): Self = StObject.set(x, "monthsShort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthsFunction2(value: (/* momentToFormat */ Moment, /* format */ js.UndefOr[String]) => String): Self = this.set("months", js.Any.fromFunction2(value))
+    def setMonthsShortFunction2(value: (/* momentToFormat */ Moment, /* format */ js.UndefOr[String]) => String): Self = StObject.set(x, "monthsShort", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMonthsVarargs(value: String*): Self = this.set("months", js.Array(value :_*))
+    def setMonthsShortUndefined: Self = StObject.set(x, "monthsShort", js.undefined)
     
     @scala.inline
-    def setMonths(value: js.Array[String] | StandaloneFormatSpec | MonthWeekdayFn): Self = this.set("months", value.asInstanceOf[js.Any])
+    def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value :_*))
     
     @scala.inline
-    def deleteMonths: Self = this.set("months", js.undefined)
+    def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
     
     @scala.inline
-    def setMonthsShortFunction2(value: (/* momentToFormat */ Moment, /* format */ js.UndefOr[String]) => String): Self = this.set("monthsShort", js.Any.fromFunction2(value))
+    def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
     
     @scala.inline
-    def setMonthsShortVarargs(value: String*): Self = this.set("monthsShort", js.Array(value :_*))
+    def setOrdinal(value: /* n */ Double => String): Self = StObject.set(x, "ordinal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMonthsShort(value: js.Array[String] | StandaloneFormatSpec | MonthWeekdayFn): Self = this.set("monthsShort", value.asInstanceOf[js.Any])
+    def setOrdinalParse(value: RegExp): Self = StObject.set(x, "ordinalParse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMonthsShort: Self = this.set("monthsShort", js.undefined)
+    def setOrdinalParseUndefined: Self = StObject.set(x, "ordinalParse", js.undefined)
     
     @scala.inline
-    def setOrdinal(value: /* n */ Double => String): Self = this.set("ordinal", js.Any.fromFunction1(value))
+    def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
     
     @scala.inline
-    def deleteOrdinal: Self = this.set("ordinal", js.undefined)
+    def setRelativeTime(value: RelativeTimeSpec): Self = StObject.set(x, "relativeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrdinalParse(value: RegExp): Self = this.set("ordinalParse", value.asInstanceOf[js.Any])
+    def setRelativeTimeUndefined: Self = StObject.set(x, "relativeTime", js.undefined)
     
     @scala.inline
-    def deleteOrdinalParse: Self = this.set("ordinalParse", js.undefined)
+    def setWeek(value: WeekSpec): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeTime(value: RelativeTimeSpec): Self = this.set("relativeTime", value.asInstanceOf[js.Any])
+    def setWeekUndefined: Self = StObject.set(x, "week", js.undefined)
     
     @scala.inline
-    def deleteRelativeTime: Self = this.set("relativeTime", js.undefined)
+    def setWeekdays(value: js.Array[String] | StandaloneFormatSpec | MonthWeekdayFn): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeek(value: WeekSpec): Self = this.set("week", value.asInstanceOf[js.Any])
+    def setWeekdaysFunction2(value: (/* momentToFormat */ Moment, /* format */ js.UndefOr[String]) => String): Self = StObject.set(x, "weekdays", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteWeek: Self = this.set("week", js.undefined)
+    def setWeekdaysMin(value: js.Array[String] | StandaloneFormatSpec | WeekdaySimpleFn): Self = StObject.set(x, "weekdaysMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeekdaysFunction2(value: (/* momentToFormat */ Moment, /* format */ js.UndefOr[String]) => String): Self = this.set("weekdays", js.Any.fromFunction2(value))
+    def setWeekdaysMinFunction1(value: /* momentToFormat */ Moment => String): Self = StObject.set(x, "weekdaysMin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWeekdaysVarargs(value: String*): Self = this.set("weekdays", js.Array(value :_*))
+    def setWeekdaysMinUndefined: Self = StObject.set(x, "weekdaysMin", js.undefined)
     
     @scala.inline
-    def setWeekdays(value: js.Array[String] | StandaloneFormatSpec | MonthWeekdayFn): Self = this.set("weekdays", value.asInstanceOf[js.Any])
+    def setWeekdaysMinVarargs(value: String*): Self = StObject.set(x, "weekdaysMin", js.Array(value :_*))
     
     @scala.inline
-    def deleteWeekdays: Self = this.set("weekdays", js.undefined)
+    def setWeekdaysShort(value: js.Array[String] | StandaloneFormatSpec | WeekdaySimpleFn): Self = StObject.set(x, "weekdaysShort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeekdaysMinVarargs(value: String*): Self = this.set("weekdaysMin", js.Array(value :_*))
+    def setWeekdaysShortFunction1(value: /* momentToFormat */ Moment => String): Self = StObject.set(x, "weekdaysShort", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWeekdaysMinFunction1(value: /* momentToFormat */ Moment => String): Self = this.set("weekdaysMin", js.Any.fromFunction1(value))
+    def setWeekdaysShortUndefined: Self = StObject.set(x, "weekdaysShort", js.undefined)
     
     @scala.inline
-    def setWeekdaysMin(value: js.Array[String] | StandaloneFormatSpec | WeekdaySimpleFn): Self = this.set("weekdaysMin", value.asInstanceOf[js.Any])
+    def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value :_*))
     
     @scala.inline
-    def deleteWeekdaysMin: Self = this.set("weekdaysMin", js.undefined)
+    def setWeekdaysUndefined: Self = StObject.set(x, "weekdays", js.undefined)
     
     @scala.inline
-    def setWeekdaysShortVarargs(value: String*): Self = this.set("weekdaysShort", js.Array(value :_*))
-    
-    @scala.inline
-    def setWeekdaysShortFunction1(value: /* momentToFormat */ Moment => String): Self = this.set("weekdaysShort", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWeekdaysShort(value: js.Array[String] | StandaloneFormatSpec | WeekdaySimpleFn): Self = this.set("weekdaysShort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeekdaysShort: Self = this.set("weekdaysShort", js.undefined)
+    def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value :_*))
   }
 }

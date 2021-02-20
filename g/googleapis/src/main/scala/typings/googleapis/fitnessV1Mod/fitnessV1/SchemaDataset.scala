@@ -1,5 +1,6 @@
 package typings.googleapis.fitnessV1Mod.fitnessV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * particular data source. A data point can be found in more than one dataset.
   */
 @js.native
-trait SchemaDataset extends js.Object {
+trait SchemaDataset extends StObject {
   
   /**
     * The data stream ID of the data source that created the points in this
@@ -57,51 +58,39 @@ object SchemaDataset {
   }
   
   @scala.inline
-  implicit class SchemaDatasetOps[Self <: SchemaDataset] (val x: Self) extends AnyVal {
+  implicit class SchemaDatasetMutableBuilder[Self <: SchemaDataset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxEndTimeNs(value: String): Self = StObject.set(x, "maxEndTimeNs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceId(value: String): Self = this.set("dataSourceId", value.asInstanceOf[js.Any])
+    def setMaxEndTimeNsUndefined: Self = StObject.set(x, "maxEndTimeNs", js.undefined)
     
     @scala.inline
-    def deleteDataSourceId: Self = this.set("dataSourceId", js.undefined)
+    def setMinStartTimeNs(value: String): Self = StObject.set(x, "minStartTimeNs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxEndTimeNs(value: String): Self = this.set("maxEndTimeNs", value.asInstanceOf[js.Any])
+    def setMinStartTimeNsUndefined: Self = StObject.set(x, "minStartTimeNs", js.undefined)
     
     @scala.inline
-    def deleteMaxEndTimeNs: Self = this.set("maxEndTimeNs", js.undefined)
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinStartTimeNs(value: String): Self = this.set("minStartTimeNs", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteMinStartTimeNs: Self = this.set("minStartTimeNs", js.undefined)
+    def setPoint(value: js.Array[SchemaDataPoint]): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setPointVarargs(value: SchemaDataPoint*): Self = this.set("point", js.Array(value :_*))
-    
-    @scala.inline
-    def setPoint(value: js.Array[SchemaDataPoint]): Self = this.set("point", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePoint: Self = this.set("point", js.undefined)
+    def setPointVarargs(value: SchemaDataPoint*): Self = StObject.set(x, "point", js.Array(value :_*))
   }
 }

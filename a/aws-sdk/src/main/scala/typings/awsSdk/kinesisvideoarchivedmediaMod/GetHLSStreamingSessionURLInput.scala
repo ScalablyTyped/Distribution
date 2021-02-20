@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisvideoarchivedmediaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetHLSStreamingSessionURLInput extends js.Object {
+trait GetHLSStreamingSessionURLInput extends StObject {
   
   /**
     * Specifies which format should be used for packaging the media. Specifying the FRAGMENTED_MP4 container format packages the media into MP4 fragments (fMP4 or CMAF). This is the recommended packaging because there is minimal packaging overhead. The other container format option is MPEG_TS. HLS has supported MPEG TS chunks since it was released and is sometimes the only supported packaging on older HLS players. MPEG TS typically has a 5-25 percent packaging overhead. This means MPEG TS typically requires 5-25 percent more bandwidth and cost than fMP4. The default is FRAGMENTED_MP4.
@@ -61,72 +62,60 @@ object GetHLSStreamingSessionURLInput {
   }
   
   @scala.inline
-  implicit class GetHLSStreamingSessionURLInputOps[Self <: GetHLSStreamingSessionURLInput] (val x: Self) extends AnyVal {
+  implicit class GetHLSStreamingSessionURLInputMutableBuilder[Self <: GetHLSStreamingSessionURLInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerFormat(value: ContainerFormat): Self = StObject.set(x, "ContainerFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerFormatUndefined: Self = StObject.set(x, "ContainerFormat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiscontinuityMode(value: HLSDiscontinuityMode): Self = StObject.set(x, "DiscontinuityMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerFormat(value: ContainerFormat): Self = this.set("ContainerFormat", value.asInstanceOf[js.Any])
+    def setDiscontinuityModeUndefined: Self = StObject.set(x, "DiscontinuityMode", js.undefined)
     
     @scala.inline
-    def deleteContainerFormat: Self = this.set("ContainerFormat", js.undefined)
+    def setDisplayFragmentTimestamp(value: HLSDisplayFragmentTimestamp): Self = StObject.set(x, "DisplayFragmentTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscontinuityMode(value: HLSDiscontinuityMode): Self = this.set("DiscontinuityMode", value.asInstanceOf[js.Any])
+    def setDisplayFragmentTimestampUndefined: Self = StObject.set(x, "DisplayFragmentTimestamp", js.undefined)
     
     @scala.inline
-    def deleteDiscontinuityMode: Self = this.set("DiscontinuityMode", js.undefined)
+    def setExpires(value: Expires): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayFragmentTimestamp(value: HLSDisplayFragmentTimestamp): Self = this.set("DisplayFragmentTimestamp", value.asInstanceOf[js.Any])
+    def setExpiresUndefined: Self = StObject.set(x, "Expires", js.undefined)
     
     @scala.inline
-    def deleteDisplayFragmentTimestamp: Self = this.set("DisplayFragmentTimestamp", js.undefined)
+    def setHLSFragmentSelector(value: HLSFragmentSelector): Self = StObject.set(x, "HLSFragmentSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpires(value: Expires): Self = this.set("Expires", value.asInstanceOf[js.Any])
+    def setHLSFragmentSelectorUndefined: Self = StObject.set(x, "HLSFragmentSelector", js.undefined)
     
     @scala.inline
-    def deleteExpires: Self = this.set("Expires", js.undefined)
+    def setMaxMediaPlaylistFragmentResults(value: PageLimit): Self = StObject.set(x, "MaxMediaPlaylistFragmentResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHLSFragmentSelector(value: HLSFragmentSelector): Self = this.set("HLSFragmentSelector", value.asInstanceOf[js.Any])
+    def setMaxMediaPlaylistFragmentResultsUndefined: Self = StObject.set(x, "MaxMediaPlaylistFragmentResults", js.undefined)
     
     @scala.inline
-    def deleteHLSFragmentSelector: Self = this.set("HLSFragmentSelector", js.undefined)
+    def setPlaybackMode(value: HLSPlaybackMode): Self = StObject.set(x, "PlaybackMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxMediaPlaylistFragmentResults(value: PageLimit): Self = this.set("MaxMediaPlaylistFragmentResults", value.asInstanceOf[js.Any])
+    def setPlaybackModeUndefined: Self = StObject.set(x, "PlaybackMode", js.undefined)
     
     @scala.inline
-    def deleteMaxMediaPlaylistFragmentResults: Self = this.set("MaxMediaPlaylistFragmentResults", js.undefined)
+    def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaybackMode(value: HLSPlaybackMode): Self = this.set("PlaybackMode", value.asInstanceOf[js.Any])
+    def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
     
     @scala.inline
-    def deletePlaybackMode: Self = this.set("PlaybackMode", js.undefined)
+    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamARN(value: ResourceARN): Self = this.set("StreamARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamARN: Self = this.set("StreamARN", js.undefined)
-    
-    @scala.inline
-    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamName: Self = this.set("StreamName", js.undefined)
+    def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
   }
 }

@@ -3,12 +3,13 @@ package typings.relayRuntime.relayStoreTypesMod
 import typings.relayRuntime.relayRuntimeTypesMod.DataID
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import typings.std.NonNullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecordProxy[T] extends js.Object {
+trait RecordProxy[T] extends StObject {
   
   def copyFieldsFrom(source: RecordProxy[js.Object]): Unit = js.native
   

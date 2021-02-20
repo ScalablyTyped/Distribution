@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CIMPrimitiveOverride extends js.Object {
+trait CIMPrimitiveOverride extends StObject {
   
   /**
     * The expression.
@@ -39,45 +40,33 @@ object CIMPrimitiveOverride {
   }
   
   @scala.inline
-  implicit class CIMPrimitiveOverrideOps[Self <: CIMPrimitiveOverride] (val x: Self) extends AnyVal {
+  implicit class CIMPrimitiveOverrideMutableBuilder[Self <: CIMPrimitiveOverride] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrimitiveName(value: String): Self = StObject.set(x, "primitiveName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMPrimitiveOverride): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setPrimitiveNameUndefined: Self = StObject.set(x, "primitiveName", js.undefined)
     
     @scala.inline
-    def setExpression(value: String): Self = this.set("expression", value.asInstanceOf[js.Any])
+    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpression: Self = this.set("expression", js.undefined)
+    def setPropertyNameUndefined: Self = StObject.set(x, "propertyName", js.undefined)
     
     @scala.inline
-    def setPrimitiveName(value: String): Self = this.set("primitiveName", value.asInstanceOf[js.Any])
+    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMPrimitiveOverride): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrimitiveName: Self = this.set("primitiveName", js.undefined)
+    def setValueExpressionInfo(value: CIMExpressionInfo): Self = StObject.set(x, "valueExpressionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyName(value: String): Self = this.set("propertyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePropertyName: Self = this.set("propertyName", js.undefined)
-    
-    @scala.inline
-    def setValueExpressionInfo(value: CIMExpressionInfo): Self = this.set("valueExpressionInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueExpressionInfo: Self = this.set("valueExpressionInfo", js.undefined)
+    def setValueExpressionInfoUndefined: Self = StObject.set(x, "valueExpressionInfo", js.undefined)
   }
 }

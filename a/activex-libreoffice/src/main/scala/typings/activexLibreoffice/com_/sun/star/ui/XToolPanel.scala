@@ -2,13 +2,14 @@ package typings.activexLibreoffice.com_.sun.star.ui
 
 import typings.activexLibreoffice.com_.sun.star.accessibility.XAccessible
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes the basic interface to be implemented by a tool panel */
 @js.native
-trait XToolPanel extends js.Object {
+trait XToolPanel extends StObject {
   
   /**
     * provides access to the tool panel's main window.
@@ -33,24 +34,12 @@ object XToolPanel {
   }
   
   @scala.inline
-  implicit class XToolPanelOps[Self <: XToolPanel] (val x: Self) extends AnyVal {
+  implicit class XToolPanelMutableBuilder[Self <: XToolPanel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateAccessible(value: XAccessible => XAccessible): Self = StObject.set(x, "createAccessible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWindow(value: XWindow): Self = this.set("Window", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCreateAccessible(value: XAccessible => XAccessible): Self = this.set("createAccessible", js.Any.fromFunction1(value))
+    def setWindow(value: XWindow): Self = StObject.set(x, "Window", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.seen.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("seen", "Surface")
 @js.native
-class Surface protected () extends js.Object {
+class Surface protected () extends StObject {
   def this(points: js.Array[Point]) = this()
   def this(points: js.Array[Point], painter: Painter) = this()
   

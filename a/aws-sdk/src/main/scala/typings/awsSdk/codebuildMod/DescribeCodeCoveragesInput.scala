@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeCodeCoveragesInput extends js.Object {
+trait DescribeCodeCoveragesInput extends StObject {
   
   /**
     * The maximum line coverage percentage to report.
@@ -51,57 +52,45 @@ object DescribeCodeCoveragesInput {
   }
   
   @scala.inline
-  implicit class DescribeCodeCoveragesInputOps[Self <: DescribeCodeCoveragesInput] (val x: Self) extends AnyVal {
+  implicit class DescribeCodeCoveragesInputMutableBuilder[Self <: DescribeCodeCoveragesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxLineCoveragePercentage(value: Percentage): Self = StObject.set(x, "maxLineCoveragePercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxLineCoveragePercentageUndefined: Self = StObject.set(x, "maxLineCoveragePercentage", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxResults(value: PageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportArn(value: NonEmptyString): Self = this.set("reportArn", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def setMaxLineCoveragePercentage(value: Percentage): Self = this.set("maxLineCoveragePercentage", value.asInstanceOf[js.Any])
+    def setMinLineCoveragePercentage(value: Percentage): Self = StObject.set(x, "minLineCoveragePercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxLineCoveragePercentage: Self = this.set("maxLineCoveragePercentage", js.undefined)
+    def setMinLineCoveragePercentageUndefined: Self = StObject.set(x, "minLineCoveragePercentage", js.undefined)
     
     @scala.inline
-    def setMaxResults(value: PageSize): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def setMinLineCoveragePercentage(value: Percentage): Self = this.set("minLineCoveragePercentage", value.asInstanceOf[js.Any])
+    def setReportArn(value: NonEmptyString): Self = StObject.set(x, "reportArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinLineCoveragePercentage: Self = this.set("minLineCoveragePercentage", js.undefined)
+    def setSortBy(value: ReportCodeCoverageSortByType): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setSortOrder(value: SortOrderType): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortBy(value: ReportCodeCoverageSortByType): Self = this.set("sortBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortBy: Self = this.set("sortBy", js.undefined)
-    
-    @scala.inline
-    def setSortOrder(value: SortOrderType): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortOrder: Self = this.set("sortOrder", js.undefined)
+    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
   }
 }

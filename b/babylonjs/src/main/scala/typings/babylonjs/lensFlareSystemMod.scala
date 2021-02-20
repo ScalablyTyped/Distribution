@@ -5,16 +5,16 @@ import typings.babylonjs.lensFlareMod.LensFlare
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.mathViewportMod.Viewport
 import typings.babylonjs.sceneMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/LensFlares/lensFlareSystem", JSImport.Namespace)
-@js.native
-object lensFlareSystemMod extends js.Object {
+object lensFlareSystemMod {
   
+  @JSImport("babylonjs/LensFlares/lensFlareSystem", "LensFlareSystem")
   @js.native
-  class LensFlareSystem protected () extends js.Object {
+  class LensFlareSystem protected () extends StObject {
     /**
       * Instantiates a lens flare system.
       * This represents a Lens Flare System or the shiny effect created by the light reflection on the  camera lenses.
@@ -139,8 +139,7 @@ object lensFlareSystemMod extends js.Object {
     var viewportBorder: Double = js.native
   }
   /* static members */
-  @js.native
-  object LensFlareSystem extends js.Object {
+  object LensFlareSystem {
     
     /**
       * Parse a lens flare system from a JSON repressentation
@@ -149,9 +148,13 @@ object lensFlareSystemMod extends js.Object {
       * @param rootUrl Define the rootUrl of the load sequence to easily find a load relative dependencies such as textures
       * @returns the parsed system
       */
+    @JSImport("babylonjs/LensFlares/lensFlareSystem", "LensFlareSystem.Parse")
+    @js.native
     def Parse(parsedLensFlareSystem: js.Any, scene: Scene, rootUrl: String): LensFlareSystem = js.native
     
     /** @hidden */
+    @JSImport("babylonjs/LensFlares/lensFlareSystem", "LensFlareSystem._SceneComponentInitialization")
+    @js.native
     def _SceneComponentInitialization(scene: Scene): Unit = js.native
   }
 }

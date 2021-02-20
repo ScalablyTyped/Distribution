@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.UI.Input
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the possible states of the CrossSliding event. */
 @JSGlobal("Windows.UI.Input.CrossSlidingState")
 @js.native
-object CrossSlidingState extends js.Object {
+object CrossSlidingState extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Input.CrossSlidingState with Double] = js.native

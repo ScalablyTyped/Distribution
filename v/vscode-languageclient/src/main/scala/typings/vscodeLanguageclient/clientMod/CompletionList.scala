@@ -1,12 +1,11 @@
 package typings.vscodeLanguageclient.clientMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient/lib/client", "CompletionList")
-@js.native
-object CompletionList extends js.Object {
+object CompletionList {
   
   /**
     * Creates a new completion list.
@@ -14,8 +13,16 @@ object CompletionList extends js.Object {
     * @param items The completion items.
     * @param isIncomplete The list is not complete.
     */
+  @JSImport("vscode-languageclient/lib/client", "CompletionList.create")
+  @js.native
   def create(): typings.vscodeLanguageserverTypes.mod.CompletionList = js.native
+  @JSImport("vscode-languageclient/lib/client", "CompletionList.create")
+  @js.native
   def create(items: js.UndefOr[scala.Nothing], isIncomplete: Boolean): typings.vscodeLanguageserverTypes.mod.CompletionList = js.native
+  @JSImport("vscode-languageclient/lib/client", "CompletionList.create")
+  @js.native
   def create(items: js.Array[typings.vscodeLanguageserverTypes.mod.CompletionItem]): typings.vscodeLanguageserverTypes.mod.CompletionList = js.native
+  @JSImport("vscode-languageclient/lib/client", "CompletionList.create")
+  @js.native
   def create(items: js.Array[typings.vscodeLanguageserverTypes.mod.CompletionItem], isIncomplete: Boolean): typings.vscodeLanguageserverTypes.mod.CompletionList = js.native
 }

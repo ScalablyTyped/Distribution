@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudMlV1Measurement extends js.Object {
+trait GoogleCloudMlV1Measurement extends StObject {
   
   /** Output only. Time that the trial has been running at the point of this measurement. */
   var elapsedTime: js.UndefOr[String] = js.native
@@ -25,39 +26,27 @@ object GoogleCloudMlV1Measurement {
   }
   
   @scala.inline
-  implicit class GoogleCloudMlV1MeasurementOps[Self <: GoogleCloudMlV1Measurement] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudMlV1MeasurementMutableBuilder[Self <: GoogleCloudMlV1Measurement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElapsedTime(value: String): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElapsedTimeUndefined: Self = StObject.set(x, "elapsedTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetrics(value: js.Array[GoogleCloudMlV1MeasurementMetric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElapsedTime(value: String): Self = this.set("elapsedTime", value.asInstanceOf[js.Any])
+    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
     @scala.inline
-    def deleteElapsedTime: Self = this.set("elapsedTime", js.undefined)
+    def setMetricsVarargs(value: GoogleCloudMlV1MeasurementMetric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
     @scala.inline
-    def setMetricsVarargs(value: GoogleCloudMlV1MeasurementMetric*): Self = this.set("metrics", js.Array(value :_*))
+    def setStepCount(value: String): Self = StObject.set(x, "stepCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetrics(value: js.Array[GoogleCloudMlV1MeasurementMetric]): Self = this.set("metrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetrics: Self = this.set("metrics", js.undefined)
-    
-    @scala.inline
-    def setStepCount(value: String): Self = this.set("stepCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStepCount: Self = this.set("stepCount", js.undefined)
+    def setStepCountUndefined: Self = StObject.set(x, "stepCount", js.undefined)
   }
 }

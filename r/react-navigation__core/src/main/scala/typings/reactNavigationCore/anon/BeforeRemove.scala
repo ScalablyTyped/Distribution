@@ -3,12 +3,13 @@ package typings.reactNavigationCore.anon
 import typings.reactNavigationCore.navigationBuilderContextMod.ChildBeforeRemoveListener
 import typings.reactNavigationCore.navigationBuilderContextMod.GetStateListener
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BeforeRemove extends js.Object {
+trait BeforeRemove extends StObject {
   
   var beforeRemove: Record[String, js.UndefOr[ChildBeforeRemoveListener]] = js.native
   
@@ -26,24 +27,12 @@ object BeforeRemove {
   }
   
   @scala.inline
-  implicit class BeforeRemoveOps[Self <: BeforeRemove] (val x: Self) extends AnyVal {
+  implicit class BeforeRemoveMutableBuilder[Self <: BeforeRemove] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeforeRemove(value: Record[String, js.UndefOr[ChildBeforeRemoveListener]]): Self = StObject.set(x, "beforeRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBeforeRemove(value: Record[String, js.UndefOr[ChildBeforeRemoveListener]]): Self = this.set("beforeRemove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetState(value: Record[String, js.UndefOr[GetStateListener]]): Self = this.set("getState", value.asInstanceOf[js.Any])
+    def setGetState(value: Record[String, js.UndefOr[GetStateListener]]): Self = StObject.set(x, "getState", value.asInstanceOf[js.Any])
   }
 }

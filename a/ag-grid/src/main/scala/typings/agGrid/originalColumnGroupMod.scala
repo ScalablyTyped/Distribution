@@ -4,14 +4,14 @@ import typings.agGrid.colDefMod.ColGroupDef
 import typings.agGrid.columnMod.Column
 import typings.agGrid.iEventEmitterMod.IEventEmitter
 import typings.agGrid.originalColumnGroupChildMod.OriginalColumnGroupChild
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/entities/originalColumnGroup", JSImport.Namespace)
-@js.native
-object originalColumnGroupMod extends js.Object {
+object originalColumnGroupMod {
   
+  @JSImport("ag-grid/dist/lib/entities/originalColumnGroup", "OriginalColumnGroup")
   @js.native
   class OriginalColumnGroup protected ()
     extends OriginalColumnGroupChild
@@ -67,11 +67,22 @@ object originalColumnGroupMod extends js.Object {
     def setupExpandable(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object OriginalColumnGroup extends js.Object {
+  object OriginalColumnGroup {
     
-    var EVENT_EXPANDABLE_CHANGED: String = js.native
+    @JSImport("ag-grid/dist/lib/entities/originalColumnGroup", "OriginalColumnGroup")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var EVENT_EXPANDED_CHANGED: String = js.native
+    @JSImport("ag-grid/dist/lib/entities/originalColumnGroup", "OriginalColumnGroup.EVENT_EXPANDABLE_CHANGED")
+    @js.native
+    def EVENT_EXPANDABLE_CHANGED: String = js.native
+    @scala.inline
+    def EVENT_EXPANDABLE_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_EXPANDABLE_CHANGED")(x.asInstanceOf[js.Any])
+    
+    @JSImport("ag-grid/dist/lib/entities/originalColumnGroup", "OriginalColumnGroup.EVENT_EXPANDED_CHANGED")
+    @js.native
+    def EVENT_EXPANDED_CHANGED: String = js.native
+    @scala.inline
+    def EVENT_EXPANDED_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_EXPANDED_CHANGED")(x.asInstanceOf[js.Any])
   }
 }

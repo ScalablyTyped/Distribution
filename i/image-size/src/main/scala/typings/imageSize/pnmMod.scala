@@ -1,13 +1,14 @@
 package typings.imageSize
 
 import typings.imageSize.interfaceMod.IImage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("image-size/dist/types/pnm", JSImport.Namespace)
-@js.native
-object pnmMod extends js.Object {
+object pnmMod {
   
+  @JSImport("image-size/dist/types/pnm", "PNM")
+  @js.native
   val PNM: IImage = js.native
 }

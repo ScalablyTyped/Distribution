@@ -7,22 +7,30 @@ import typings.awsSdkNodeConfigProvider.fromStaticMod.FromStaticConfig
 import typings.awsSdkSharedIniFileLoader.mod.Profile
 import typings.awsSdkTypes.utilMod.Provider
 import typings.node.processMod.global.NodeJS.ProcessEnv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/node-config-provider/dist/cjs/configLoader", JSImport.Namespace)
-@js.native
-object configLoaderMod extends js.Object {
+object configLoaderMod {
   
+  @JSImport("@aws-sdk/node-config-provider/dist/cjs/configLoader", "loadConfig")
+  @js.native
   def loadConfig[T](hasEnvironmentVariableSelectorConfigFileSelectorDefault: LoadedConfigSelectors[T]): Provider[T] = js.native
+  @JSImport("@aws-sdk/node-config-provider/dist/cjs/configLoader", "loadConfig")
+  @js.native
   def loadConfig[T](
     hasEnvironmentVariableSelectorConfigFileSelectorDefault: LoadedConfigSelectors[T],
     configuration: LocalConfigOptions
   ): Provider[T] = js.native
   
   @js.native
-  trait LoadedConfigSelectors[T] extends js.Object {
+  trait LoadedConfigSelectors[T] extends StObject {
+    
+    /**
+      * Default value or getter
+      */
+    var default: FromStaticConfig[T] = js.native
     
     /**
       * A getter function getting config values associated with the inferred
@@ -35,11 +43,6 @@ object configLoaderMod extends js.Object {
       */
     @JSName("configFileSelector")
     var configFileSelector_Original: GetterFromConfig[T] = js.native
-    
-    /**
-      * Default value or getter
-      */
-    var default: FromStaticConfig[T] = js.native
     
     /**
       * A getter function getting the config values from all the environment

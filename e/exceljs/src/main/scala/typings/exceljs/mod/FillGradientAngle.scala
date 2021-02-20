@@ -2,6 +2,7 @@ package typings.exceljs.mod
 
 import typings.exceljs.exceljsStrings.angle
 import typings.exceljs.exceljsStrings.gradient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,33 +37,21 @@ object FillGradientAngle {
   }
   
   @scala.inline
-  implicit class FillGradientAngleOps[Self <: FillGradientAngle] (val x: Self) extends AnyVal {
+  implicit class FillGradientAngleMutableBuilder[Self <: FillGradientAngle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDegree(value: Double): Self = StObject.set(x, "degree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGradient(value: angle): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStops(value: js.Array[GradientStop]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDegree(value: Double): Self = this.set("degree", value.asInstanceOf[js.Any])
+    def setStopsVarargs(value: GradientStop*): Self = StObject.set(x, "stops", js.Array(value :_*))
     
     @scala.inline
-    def setGradient(value: angle): Self = this.set("gradient", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStopsVarargs(value: GradientStop*): Self = this.set("stops", js.Array(value :_*))
-    
-    @scala.inline
-    def setStops(value: js.Array[GradientStop]): Self = this.set("stops", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: gradient): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: gradient): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

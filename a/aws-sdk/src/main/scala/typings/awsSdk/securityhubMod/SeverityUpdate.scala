@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SeverityUpdate extends js.Object {
+trait SeverityUpdate extends StObject {
   
   /**
     * The severity value of the finding. The allowed values are the following.    INFORMATIONAL - No issue was found.    LOW - The issue does not require action on its own.    MEDIUM - The issue must be addressed but not urgently.    HIGH - The issue must be addressed as a priority.    CRITICAL - The issue must be remediated immediately to avoid it escalating.  
@@ -31,36 +32,24 @@ object SeverityUpdate {
   }
   
   @scala.inline
-  implicit class SeverityUpdateOps[Self <: SeverityUpdate] (val x: Self) extends AnyVal {
+  implicit class SeverityUpdateMutableBuilder[Self <: SeverityUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabel(value: SeverityLabel): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNormalized(value: RatioScale): Self = StObject.set(x, "Normalized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: SeverityLabel): Self = this.set("Label", value.asInstanceOf[js.Any])
+    def setNormalizedUndefined: Self = StObject.set(x, "Normalized", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("Label", js.undefined)
+    def setProduct(value: Double): Self = StObject.set(x, "Product", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalized(value: RatioScale): Self = this.set("Normalized", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNormalized: Self = this.set("Normalized", js.undefined)
-    
-    @scala.inline
-    def setProduct(value: Double): Self = this.set("Product", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProduct: Self = this.set("Product", js.undefined)
+    def setProductUndefined: Self = StObject.set(x, "Product", js.undefined)
   }
 }

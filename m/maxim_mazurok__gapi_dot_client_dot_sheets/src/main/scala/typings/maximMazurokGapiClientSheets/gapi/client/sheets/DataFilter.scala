@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataFilter extends js.Object {
+trait DataFilter extends StObject {
   
   /** Selects data that matches the specified A1 range. */
   var a1Range: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object DataFilter {
   }
   
   @scala.inline
-  implicit class DataFilterOps[Self <: DataFilter] (val x: Self) extends AnyVal {
+  implicit class DataFilterMutableBuilder[Self <: DataFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setA1Range(value: String): Self = StObject.set(x, "a1Range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setA1RangeUndefined: Self = StObject.set(x, "a1Range", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeveloperMetadataLookup(value: DeveloperMetadataLookup): Self = StObject.set(x, "developerMetadataLookup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setA1Range(value: String): Self = this.set("a1Range", value.asInstanceOf[js.Any])
+    def setDeveloperMetadataLookupUndefined: Self = StObject.set(x, "developerMetadataLookup", js.undefined)
     
     @scala.inline
-    def deleteA1Range: Self = this.set("a1Range", js.undefined)
+    def setGridRange(value: GridRange): Self = StObject.set(x, "gridRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeveloperMetadataLookup(value: DeveloperMetadataLookup): Self = this.set("developerMetadataLookup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeveloperMetadataLookup: Self = this.set("developerMetadataLookup", js.undefined)
-    
-    @scala.inline
-    def setGridRange(value: GridRange): Self = this.set("gridRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGridRange: Self = this.set("gridRange", js.undefined)
+    def setGridRangeUndefined: Self = StObject.set(x, "gridRange", js.undefined)
   }
 }

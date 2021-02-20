@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDomainsResult extends js.Object {
+trait GetDomainsResult extends StObject {
   
   /**
     * An array of key-value pairs containing information about each of the domain entries in the user's account.
@@ -26,33 +27,21 @@ object GetDomainsResult {
   }
   
   @scala.inline
-  implicit class GetDomainsResultOps[Self <: GetDomainsResult] (val x: Self) extends AnyVal {
+  implicit class GetDomainsResultMutableBuilder[Self <: GetDomainsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomains(value: DomainList): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "domains", js.Array(value :_*))
     
     @scala.inline
-    def setDomainsVarargs(value: Domain*): Self = this.set("domains", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomains(value: DomainList): Self = this.set("domains", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomains: Self = this.set("domains", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

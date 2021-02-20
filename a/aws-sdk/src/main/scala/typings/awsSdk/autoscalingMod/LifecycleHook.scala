@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LifecycleHook extends js.Object {
+trait LifecycleHook extends StObject {
   
   /**
     * The name of the Auto Scaling group for the lifecycle hook.
@@ -61,72 +62,60 @@ object LifecycleHook {
   }
   
   @scala.inline
-  implicit class LifecycleHookOps[Self <: LifecycleHook] (val x: Self) extends AnyVal {
+  implicit class LifecycleHookMutableBuilder[Self <: LifecycleHook] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoScalingGroupNameUndefined: Self = StObject.set(x, "AutoScalingGroupName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultResult(value: LifecycleActionResult): Self = StObject.set(x, "DefaultResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    def setDefaultResultUndefined: Self = StObject.set(x, "DefaultResult", js.undefined)
     
     @scala.inline
-    def deleteAutoScalingGroupName: Self = this.set("AutoScalingGroupName", js.undefined)
+    def setGlobalTimeout(value: GlobalTimeout): Self = StObject.set(x, "GlobalTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultResult(value: LifecycleActionResult): Self = this.set("DefaultResult", value.asInstanceOf[js.Any])
+    def setGlobalTimeoutUndefined: Self = StObject.set(x, "GlobalTimeout", js.undefined)
     
     @scala.inline
-    def deleteDefaultResult: Self = this.set("DefaultResult", js.undefined)
+    def setHeartbeatTimeout(value: HeartbeatTimeout): Self = StObject.set(x, "HeartbeatTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalTimeout(value: GlobalTimeout): Self = this.set("GlobalTimeout", value.asInstanceOf[js.Any])
+    def setHeartbeatTimeoutUndefined: Self = StObject.set(x, "HeartbeatTimeout", js.undefined)
     
     @scala.inline
-    def deleteGlobalTimeout: Self = this.set("GlobalTimeout", js.undefined)
+    def setLifecycleHookName(value: AsciiStringMaxLen255): Self = StObject.set(x, "LifecycleHookName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeartbeatTimeout(value: HeartbeatTimeout): Self = this.set("HeartbeatTimeout", value.asInstanceOf[js.Any])
+    def setLifecycleHookNameUndefined: Self = StObject.set(x, "LifecycleHookName", js.undefined)
     
     @scala.inline
-    def deleteHeartbeatTimeout: Self = this.set("HeartbeatTimeout", js.undefined)
+    def setLifecycleTransition(value: LifecycleTransition): Self = StObject.set(x, "LifecycleTransition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifecycleHookName(value: AsciiStringMaxLen255): Self = this.set("LifecycleHookName", value.asInstanceOf[js.Any])
+    def setLifecycleTransitionUndefined: Self = StObject.set(x, "LifecycleTransition", js.undefined)
     
     @scala.inline
-    def deleteLifecycleHookName: Self = this.set("LifecycleHookName", js.undefined)
+    def setNotificationMetadata(value: XmlStringMaxLen1023): Self = StObject.set(x, "NotificationMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifecycleTransition(value: LifecycleTransition): Self = this.set("LifecycleTransition", value.asInstanceOf[js.Any])
+    def setNotificationMetadataUndefined: Self = StObject.set(x, "NotificationMetadata", js.undefined)
     
     @scala.inline
-    def deleteLifecycleTransition: Self = this.set("LifecycleTransition", js.undefined)
+    def setNotificationTargetARN(value: ResourceName): Self = StObject.set(x, "NotificationTargetARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationMetadata(value: XmlStringMaxLen1023): Self = this.set("NotificationMetadata", value.asInstanceOf[js.Any])
+    def setNotificationTargetARNUndefined: Self = StObject.set(x, "NotificationTargetARN", js.undefined)
     
     @scala.inline
-    def deleteNotificationMetadata: Self = this.set("NotificationMetadata", js.undefined)
+    def setRoleARN(value: ResourceName): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationTargetARN(value: ResourceName): Self = this.set("NotificationTargetARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationTargetARN: Self = this.set("NotificationTargetARN", js.undefined)
-    
-    @scala.inline
-    def setRoleARN(value: ResourceName): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
   }
 }

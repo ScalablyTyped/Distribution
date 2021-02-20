@@ -1,11 +1,12 @@
 package typings.awsSdk.computeoptimizerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecommendationSource extends js.Object {
+trait RecommendationSource extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the recommendation source.
@@ -26,30 +27,18 @@ object RecommendationSource {
   }
   
   @scala.inline
-  implicit class RecommendationSourceOps[Self <: RecommendationSource] (val x: Self) extends AnyVal {
+  implicit class RecommendationSourceMutableBuilder[Self <: RecommendationSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecommendationSourceArn(value: RecommendationSourceArn): Self = StObject.set(x, "recommendationSourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecommendationSourceArnUndefined: Self = StObject.set(x, "recommendationSourceArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecommendationSourceType(value: RecommendationSourceType): Self = StObject.set(x, "recommendationSourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecommendationSourceArn(value: RecommendationSourceArn): Self = this.set("recommendationSourceArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecommendationSourceArn: Self = this.set("recommendationSourceArn", js.undefined)
-    
-    @scala.inline
-    def setRecommendationSourceType(value: RecommendationSourceType): Self = this.set("recommendationSourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecommendationSourceType: Self = this.set("recommendationSourceType", js.undefined)
+    def setRecommendationSourceTypeUndefined: Self = StObject.set(x, "recommendationSourceType", js.undefined)
   }
 }

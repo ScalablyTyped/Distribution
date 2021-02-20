@@ -2,12 +2,13 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import typings.wechatMiniprogram.wechatMiniprogramStrings.video
 import typings.wechatMiniprogram.wechatMiniprogramStrings.voice
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JoinVoIPChatOption extends js.Object {
+trait JoinVoIPChatOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
   var complete: js.UndefOr[JoinVoIPChatCompleteCallback] = js.native
@@ -49,60 +50,48 @@ object JoinVoIPChatOption {
   }
   
   @scala.inline
-  implicit class JoinVoIPChatOptionOps[Self <: JoinVoIPChatOption] (val x: Self) extends AnyVal {
+  implicit class JoinVoIPChatOptionMutableBuilder[Self <: JoinVoIPChatOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: /* res */ JoinVoIPChatError => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFail(value: /* res */ JoinVoIPChatError => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGroupId(value: String): Self = this.set("groupId", value.asInstanceOf[js.Any])
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def setNonceStr(value: String): Self = this.set("nonceStr", value.asInstanceOf[js.Any])
+    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignature(value: String): Self = this.set("signature", value.asInstanceOf[js.Any])
+    def setMuteConfig(value: MuteConfig): Self = StObject.set(x, "muteConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeStamp(value: Double): Self = this.set("timeStamp", value.asInstanceOf[js.Any])
+    def setMuteConfigUndefined: Self = StObject.set(x, "muteConfig", js.undefined)
     
     @scala.inline
-    def setComplete(value: /* res */ JoinVoIPChatError => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setRoomType(value: voice | video): Self = StObject.set(x, "roomType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFail(value: /* res */ JoinVoIPChatError => Unit): Self = this.set("fail", js.Any.fromFunction1(value))
+    def setRoomTypeUndefined: Self = StObject.set(x, "roomType", js.undefined)
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMuteConfig(value: MuteConfig): Self = this.set("muteConfig", value.asInstanceOf[js.Any])
+    def setSuccess(value: /* result */ JoinVoIPChatSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMuteConfig: Self = this.set("muteConfig", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def setRoomType(value: voice | video): Self = this.set("roomType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoomType: Self = this.set("roomType", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* result */ JoinVoIPChatSuccessCallbackResult => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
   }
 }

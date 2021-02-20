@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.storybookAddonKnobs.dateMod.DateTypeKnobValue
 import typings.storybookAddonKnobs.dateMod.DateTypeProps
 import typings.storybookAddonKnobs.dateMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

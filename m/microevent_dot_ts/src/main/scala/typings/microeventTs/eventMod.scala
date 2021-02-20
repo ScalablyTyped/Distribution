@@ -2,13 +2,16 @@ package typings.microeventTs
 
 import typings.microeventTs.eventInterfaceMod.EventInterface
 import typings.microeventTs.eventInterfaceMod.EventInterface.HandlerInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("microevent/lib/Event", JSImport.Namespace)
-@js.native
-object eventMod extends js.Object {
+object eventMod {
+  
+  @JSImport("microevent/lib/Event", JSImport.Default)
+  @js.native
+  class default[EventPayload] () extends Event[EventPayload]
   
   @js.native
   trait Event[EventPayload] extends EventInterface[EventPayload] {
@@ -30,7 +33,4 @@ object eventMod extends js.Object {
     def isHandlerAttached[T](handler: HandlerInterface[EventPayload, T]): Boolean = js.native
     def isHandlerAttached[T](handler: HandlerInterface[EventPayload, T], context: T): Boolean = js.native
   }
-  
-  @js.native
-  class default[EventPayload] () extends Event[EventPayload]
 }

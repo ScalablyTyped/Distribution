@@ -1,12 +1,11 @@
 package typings.validator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("validator/lib/isLength", JSImport.Namespace)
-@js.native
-object isLengthMod extends js.Object {
+object isLengthMod {
   
   /**
     * Check if the string's length falls in a range.
@@ -15,7 +14,11 @@ object isLengthMod extends js.Object {
     *
     * @param [options] - Options
     */
+  @JSImport("validator/lib/isLength", JSImport.Default)
+  @js.native
   def default(str: String): Boolean = js.native
+  @JSImport("validator/lib/isLength", JSImport.Default)
+  @js.native
   def default(str: String, options: typings.validator.mod.validator.IsLengthOptions): Boolean = js.native
   
   type IsLengthOptions = typings.validator.mod.validator.IsLengthOptions

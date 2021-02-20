@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HlsWebdavSettings extends js.Object {
+trait HlsWebdavSettings extends StObject {
   
   /**
     * Number of seconds to wait before retrying connection to the CDN if the connection is lost.
@@ -41,48 +42,36 @@ object HlsWebdavSettings {
   }
   
   @scala.inline
-  implicit class HlsWebdavSettingsOps[Self <: HlsWebdavSettings] (val x: Self) extends AnyVal {
+  implicit class HlsWebdavSettingsMutableBuilder[Self <: HlsWebdavSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionRetryInterval(value: integerMin0): Self = StObject.set(x, "ConnectionRetryInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionRetryIntervalUndefined: Self = StObject.set(x, "ConnectionRetryInterval", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilecacheDuration(value: integerMin0Max600): Self = StObject.set(x, "FilecacheDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionRetryInterval(value: integerMin0): Self = this.set("ConnectionRetryInterval", value.asInstanceOf[js.Any])
+    def setFilecacheDurationUndefined: Self = StObject.set(x, "FilecacheDuration", js.undefined)
     
     @scala.inline
-    def deleteConnectionRetryInterval: Self = this.set("ConnectionRetryInterval", js.undefined)
+    def setHttpTransferMode(value: HlsWebdavHttpTransferMode): Self = StObject.set(x, "HttpTransferMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilecacheDuration(value: integerMin0Max600): Self = this.set("FilecacheDuration", value.asInstanceOf[js.Any])
+    def setHttpTransferModeUndefined: Self = StObject.set(x, "HttpTransferMode", js.undefined)
     
     @scala.inline
-    def deleteFilecacheDuration: Self = this.set("FilecacheDuration", js.undefined)
+    def setNumRetries(value: integerMin0): Self = StObject.set(x, "NumRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpTransferMode(value: HlsWebdavHttpTransferMode): Self = this.set("HttpTransferMode", value.asInstanceOf[js.Any])
+    def setNumRetriesUndefined: Self = StObject.set(x, "NumRetries", js.undefined)
     
     @scala.inline
-    def deleteHttpTransferMode: Self = this.set("HttpTransferMode", js.undefined)
+    def setRestartDelay(value: integerMin0Max15): Self = StObject.set(x, "RestartDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumRetries(value: integerMin0): Self = this.set("NumRetries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumRetries: Self = this.set("NumRetries", js.undefined)
-    
-    @scala.inline
-    def setRestartDelay(value: integerMin0Max15): Self = this.set("RestartDelay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestartDelay: Self = this.set("RestartDelay", js.undefined)
+    def setRestartDelayUndefined: Self = StObject.set(x, "RestartDelay", js.undefined)
   }
 }

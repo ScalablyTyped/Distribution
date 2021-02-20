@@ -2,6 +2,7 @@ package typings.handsontable.mod.Handsontable.plugins
 
 import typings.handsontable.mod._Handsontable.Core
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,42 +59,30 @@ object DropdownMenu {
   }
   
   @scala.inline
-  implicit class DropdownMenuOps[Self <: DropdownMenu] (val x: Self) extends AnyVal {
+  implicit class DropdownMenuMutableBuilder[Self <: DropdownMenu] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommandExecutor(value: CommandExecutor): Self = StObject.set(x, "commandExecutor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventManager(value: EventManager): Self = StObject.set(x, "eventManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSEPARATOR(value: SeparatorObject): Self = this.set("SEPARATOR", value.asInstanceOf[js.Any])
+    def setExecuteCommand(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "executeCommand", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setItemsFactory(value: ItemsFactory | Unit): Self = StObject.set(x, "itemsFactory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommandExecutor(value: CommandExecutor): Self = this.set("commandExecutor", value.asInstanceOf[js.Any])
+    def setMenu(value: Menu | Unit): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventManager(value: EventManager): Self = this.set("eventManager", value.asInstanceOf[js.Any])
+    def setOpen(value: Event => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExecuteCommand(value: (String, /* repeated */ js.Any) => Unit): Self = this.set("executeCommand", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setItemsFactory(value: ItemsFactory | Unit): Self = this.set("itemsFactory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMenu(value: Menu | Unit): Self = this.set("menu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpen(value: Event => Unit): Self = this.set("open", js.Any.fromFunction1(value))
+    def setSEPARATOR(value: SeparatorObject): Self = StObject.set(x, "SEPARATOR", value.asInstanceOf[js.Any])
   }
 }

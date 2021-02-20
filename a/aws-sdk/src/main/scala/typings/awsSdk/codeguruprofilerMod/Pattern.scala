@@ -1,11 +1,12 @@
 package typings.awsSdk.codeguruprofilerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pattern extends js.Object {
+trait Pattern extends StObject {
   
   /**
     *  A list of the different counters used to determine if there is a match. 
@@ -51,66 +52,54 @@ object Pattern {
   }
   
   @scala.inline
-  implicit class PatternOps[Self <: Pattern] (val x: Self) extends AnyVal {
+  implicit class PatternMutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountersToAggregate(value: Strings): Self = StObject.set(x, "countersToAggregate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountersToAggregateUndefined: Self = StObject.set(x, "countersToAggregate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountersToAggregateVarargs(value: String*): Self = StObject.set(x, "countersToAggregate", js.Array(value :_*))
     
     @scala.inline
-    def setCountersToAggregateVarargs(value: String*): Self = this.set("countersToAggregate", js.Array(value :_*))
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountersToAggregate(value: Strings): Self = this.set("countersToAggregate", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCountersToAggregate: Self = this.set("countersToAggregate", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setResolutionSteps(value: String): Self = StObject.set(x, "resolutionSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setResolutionStepsUndefined: Self = StObject.set(x, "resolutionSteps", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTargetFrames(value: TargetFrames): Self = StObject.set(x, "targetFrames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolutionSteps(value: String): Self = this.set("resolutionSteps", value.asInstanceOf[js.Any])
+    def setTargetFramesUndefined: Self = StObject.set(x, "targetFrames", js.undefined)
     
     @scala.inline
-    def deleteResolutionSteps: Self = this.set("resolutionSteps", js.undefined)
+    def setTargetFramesVarargs(value: TargetFrame*): Self = StObject.set(x, "targetFrames", js.Array(value :_*))
     
     @scala.inline
-    def setTargetFramesVarargs(value: TargetFrame*): Self = this.set("targetFrames", js.Array(value :_*))
+    def setThresholdPercent(value: Percentage): Self = StObject.set(x, "thresholdPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetFrames(value: TargetFrames): Self = this.set("targetFrames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetFrames: Self = this.set("targetFrames", js.undefined)
-    
-    @scala.inline
-    def setThresholdPercent(value: Percentage): Self = this.set("thresholdPercent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThresholdPercent: Self = this.set("thresholdPercent", js.undefined)
+    def setThresholdPercentUndefined: Self = StObject.set(x, "thresholdPercent", js.undefined)
   }
 }

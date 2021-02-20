@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SalesforceSourceProperties extends js.Object {
+trait SalesforceSourceProperties extends StObject {
   
   /**
     *  The flag that enables dynamic fetching of new (recently added) fields in the Salesforce objects while running a flow. 
@@ -32,33 +33,21 @@ object SalesforceSourceProperties {
   }
   
   @scala.inline
-  implicit class SalesforceSourcePropertiesOps[Self <: SalesforceSourceProperties] (val x: Self) extends AnyVal {
+  implicit class SalesforceSourcePropertiesMutableBuilder[Self <: SalesforceSourceProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableDynamicFieldUpdate(value: Boolean): Self = StObject.set(x, "enableDynamicFieldUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableDynamicFieldUpdateUndefined: Self = StObject.set(x, "enableDynamicFieldUpdate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeDeletedRecords(value: Boolean): Self = StObject.set(x, "includeDeletedRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: Object): Self = this.set("object", value.asInstanceOf[js.Any])
+    def setIncludeDeletedRecordsUndefined: Self = StObject.set(x, "includeDeletedRecords", js.undefined)
     
     @scala.inline
-    def setEnableDynamicFieldUpdate(value: Boolean): Self = this.set("enableDynamicFieldUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableDynamicFieldUpdate: Self = this.set("enableDynamicFieldUpdate", js.undefined)
-    
-    @scala.inline
-    def setIncludeDeletedRecords(value: Boolean): Self = this.set("includeDeletedRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeDeletedRecords: Self = this.set("includeDeletedRecords", js.undefined)
+    def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.reactVirtualized.esGridMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigureParams extends js.Object {
+trait ConfigureParams extends StObject {
   
   var cellCount: Double = js.native
   
@@ -20,24 +21,12 @@ object ConfigureParams {
   }
   
   @scala.inline
-  implicit class ConfigureParamsOps[Self <: ConfigureParams] (val x: Self) extends AnyVal {
+  implicit class ConfigureParamsMutableBuilder[Self <: ConfigureParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellCount(value: Double): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCellCount(value: Double): Self = this.set("cellCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEstimatedCellSize(value: Double): Self = this.set("estimatedCellSize", value.asInstanceOf[js.Any])
+    def setEstimatedCellSize(value: Double): Self = StObject.set(x, "estimatedCellSize", value.asInstanceOf[js.Any])
   }
 }

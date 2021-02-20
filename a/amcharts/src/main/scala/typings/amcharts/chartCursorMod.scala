@@ -2,16 +2,19 @@ package typings.amcharts
 
 import typings.amcharts.anon.Delta2X
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("amcharts/ChartCursor", JSImport.Namespace)
-@js.native
-object chartCursorMod extends js.Object {
+object chartCursorMod {
+  
+  @JSImport("amcharts/ChartCursor", JSImport.Default)
+  @js.native
+  class default () extends ChartCursor
   
   @js.native
-  trait ChartCursor extends js.Object {
+  trait ChartCursor extends StObject {
     
     /**
       * Adds event listener.
@@ -147,7 +150,4 @@ object chartCursorMod extends js.Object {
       */
     var zooming: Boolean = js.native
   }
-  
-  @js.native
-  class default () extends ChartCursor
 }

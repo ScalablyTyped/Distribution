@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAppInstanceUsersResponse extends js.Object {
+trait ListAppInstanceUsersResponse extends StObject {
   
   /**
     * The ARN of the app instance.
@@ -31,39 +32,27 @@ object ListAppInstanceUsersResponse {
   }
   
   @scala.inline
-  implicit class ListAppInstanceUsersResponseOps[Self <: ListAppInstanceUsersResponse] (val x: Self) extends AnyVal {
+  implicit class ListAppInstanceUsersResponseMutableBuilder[Self <: ListAppInstanceUsersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppInstanceArnUndefined: Self = StObject.set(x, "AppInstanceArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppInstanceUsers(value: AppInstanceUserList): Self = StObject.set(x, "AppInstanceUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppInstanceArn(value: ChimeArn): Self = this.set("AppInstanceArn", value.asInstanceOf[js.Any])
+    def setAppInstanceUsersUndefined: Self = StObject.set(x, "AppInstanceUsers", js.undefined)
     
     @scala.inline
-    def deleteAppInstanceArn: Self = this.set("AppInstanceArn", js.undefined)
+    def setAppInstanceUsersVarargs(value: AppInstanceUserSummary*): Self = StObject.set(x, "AppInstanceUsers", js.Array(value :_*))
     
     @scala.inline
-    def setAppInstanceUsersVarargs(value: AppInstanceUserSummary*): Self = this.set("AppInstanceUsers", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppInstanceUsers(value: AppInstanceUserList): Self = this.set("AppInstanceUsers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAppInstanceUsers: Self = this.set("AppInstanceUsers", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

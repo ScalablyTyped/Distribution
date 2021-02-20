@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,48 +56,36 @@ object InterfaceTypeWithDeclaredMembers {
   }
   
   @scala.inline
-  implicit class InterfaceTypeWithDeclaredMembersOps[Self <: InterfaceTypeWithDeclaredMembers] (val x: Self) extends AnyVal {
+  implicit class InterfaceTypeWithDeclaredMembersMutableBuilder[Self <: InterfaceTypeWithDeclaredMembers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeclaredCallSignatures(value: js.Array[Signature]): Self = StObject.set(x, "declaredCallSignatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeclaredCallSignaturesVarargs(value: Signature*): Self = StObject.set(x, "declaredCallSignatures", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeclaredConstructSignatures(value: js.Array[Signature]): Self = StObject.set(x, "declaredConstructSignatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeclaredCallSignaturesVarargs(value: Signature*): Self = this.set("declaredCallSignatures", js.Array(value :_*))
+    def setDeclaredConstructSignaturesVarargs(value: Signature*): Self = StObject.set(x, "declaredConstructSignatures", js.Array(value :_*))
     
     @scala.inline
-    def setDeclaredCallSignatures(value: js.Array[Signature]): Self = this.set("declaredCallSignatures", value.asInstanceOf[js.Any])
+    def setDeclaredNumberIndexInfo(value: IndexInfo): Self = StObject.set(x, "declaredNumberIndexInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeclaredConstructSignaturesVarargs(value: Signature*): Self = this.set("declaredConstructSignatures", js.Array(value :_*))
+    def setDeclaredNumberIndexInfoUndefined: Self = StObject.set(x, "declaredNumberIndexInfo", js.undefined)
     
     @scala.inline
-    def setDeclaredConstructSignatures(value: js.Array[Signature]): Self = this.set("declaredConstructSignatures", value.asInstanceOf[js.Any])
+    def setDeclaredProperties(value: js.Array[Symbol]): Self = StObject.set(x, "declaredProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeclaredPropertiesVarargs(value: Symbol*): Self = this.set("declaredProperties", js.Array(value :_*))
+    def setDeclaredPropertiesVarargs(value: Symbol*): Self = StObject.set(x, "declaredProperties", js.Array(value :_*))
     
     @scala.inline
-    def setDeclaredProperties(value: js.Array[Symbol]): Self = this.set("declaredProperties", value.asInstanceOf[js.Any])
+    def setDeclaredStringIndexInfo(value: IndexInfo): Self = StObject.set(x, "declaredStringIndexInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeclaredNumberIndexInfo(value: IndexInfo): Self = this.set("declaredNumberIndexInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeclaredNumberIndexInfo: Self = this.set("declaredNumberIndexInfo", js.undefined)
-    
-    @scala.inline
-    def setDeclaredStringIndexInfo(value: IndexInfo): Self = this.set("declaredStringIndexInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeclaredStringIndexInfo: Self = this.set("declaredStringIndexInfo", js.undefined)
+    def setDeclaredStringIndexInfoUndefined: Self = StObject.set(x, "declaredStringIndexInfo", js.undefined)
   }
 }

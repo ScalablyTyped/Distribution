@@ -1,12 +1,13 @@
 package typings.asana.mod
 
 import typings.asana.mod.auth.Authenticator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DispatcherOptions extends js.Object {
+trait DispatcherOptions extends StObject {
   
   var authenticator: js.UndefOr[Authenticator] = js.native
   
@@ -25,42 +26,30 @@ object DispatcherOptions {
   }
   
   @scala.inline
-  implicit class DispatcherOptionsOps[Self <: DispatcherOptions] (val x: Self) extends AnyVal {
+  implicit class DispatcherOptionsMutableBuilder[Self <: DispatcherOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticator(value: Authenticator): Self = StObject.set(x, "authenticator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticatorUndefined: Self = StObject.set(x, "authenticator", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHandleUnauthorized(value: () => Boolean | typings.bluebird.mod.^[Boolean]): Self = StObject.set(x, "handleUnauthorized", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAuthenticator(value: Authenticator): Self = this.set("authenticator", value.asInstanceOf[js.Any])
+    def setHandleUnauthorizedUndefined: Self = StObject.set(x, "handleUnauthorized", js.undefined)
     
     @scala.inline
-    def deleteAuthenticator: Self = this.set("authenticator", js.undefined)
+    def setRequestTimeout(value: String): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleUnauthorized(value: () => Boolean | typings.bluebird.mod.^[Boolean]): Self = this.set("handleUnauthorized", js.Any.fromFunction0(value))
+    def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
     
     @scala.inline
-    def deleteHandleUnauthorized: Self = this.set("handleUnauthorized", js.undefined)
+    def setRetryOnRateLimit(value: Boolean): Self = StObject.set(x, "retryOnRateLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestTimeout(value: String): Self = this.set("requestTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestTimeout: Self = this.set("requestTimeout", js.undefined)
-    
-    @scala.inline
-    def setRetryOnRateLimit(value: Boolean): Self = this.set("retryOnRateLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetryOnRateLimit: Self = this.set("retryOnRateLimit", js.undefined)
+    def setRetryOnRateLimitUndefined: Self = StObject.set(x, "retryOnRateLimit", js.undefined)
   }
 }

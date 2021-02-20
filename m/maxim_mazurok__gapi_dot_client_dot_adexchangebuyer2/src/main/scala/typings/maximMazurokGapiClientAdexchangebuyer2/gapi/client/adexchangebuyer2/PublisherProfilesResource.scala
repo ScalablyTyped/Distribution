@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientAdexchangebuyer2.anon.OauthtokenPageSize
 import typings.maximMazurokGapiClientAdexchangebuyer2.anon.PublisherProfileId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PublisherProfilesResource extends js.Object {
+trait PublisherProfilesResource extends StObject {
   
   /** Gets the requested publisher profile by id. */
   def get(): Request[PublisherProfile] = js.native

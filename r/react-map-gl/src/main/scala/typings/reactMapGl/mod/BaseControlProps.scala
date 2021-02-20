@@ -1,11 +1,12 @@
 package typings.reactMapGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseControlProps extends js.Object {
+trait BaseControlProps extends StObject {
   
   var captureClick: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object BaseControlProps {
   }
   
   @scala.inline
-  implicit class BaseControlPropsOps[Self <: BaseControlProps] (val x: Self) extends AnyVal {
+  implicit class BaseControlPropsMutableBuilder[Self <: BaseControlProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaptureClick(value: Boolean): Self = StObject.set(x, "captureClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptureClickUndefined: Self = StObject.set(x, "captureClick", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaptureDoubleClick(value: Boolean): Self = StObject.set(x, "captureDoubleClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureClick(value: Boolean): Self = this.set("captureClick", value.asInstanceOf[js.Any])
+    def setCaptureDoubleClickUndefined: Self = StObject.set(x, "captureDoubleClick", js.undefined)
     
     @scala.inline
-    def deleteCaptureClick: Self = this.set("captureClick", js.undefined)
+    def setCaptureDrag(value: Boolean): Self = StObject.set(x, "captureDrag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureDoubleClick(value: Boolean): Self = this.set("captureDoubleClick", value.asInstanceOf[js.Any])
+    def setCaptureDragUndefined: Self = StObject.set(x, "captureDrag", js.undefined)
     
     @scala.inline
-    def deleteCaptureDoubleClick: Self = this.set("captureDoubleClick", js.undefined)
+    def setCaptureScroll(value: Boolean): Self = StObject.set(x, "captureScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureDrag(value: Boolean): Self = this.set("captureDrag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCaptureDrag: Self = this.set("captureDrag", js.undefined)
-    
-    @scala.inline
-    def setCaptureScroll(value: Boolean): Self = this.set("captureScroll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCaptureScroll: Self = this.set("captureScroll", js.undefined)
+    def setCaptureScrollUndefined: Self = StObject.set(x, "captureScroll", js.undefined)
   }
 }

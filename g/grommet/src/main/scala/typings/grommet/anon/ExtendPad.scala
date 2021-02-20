@@ -6,12 +6,13 @@ import typings.grommet.baseMod.ExtendValue
 import typings.grommet.utilsMod.BackgroundType
 import typings.grommet.utilsMod.PadType
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtendPad extends js.Object {
+trait ExtendPad extends StObject {
   
   var background: js.UndefOr[BackgroundType] = js.native
   
@@ -30,45 +31,33 @@ object ExtendPad {
   }
   
   @scala.inline
-  implicit class ExtendPadOps[Self <: ExtendPad] (val x: Self) extends AnyVal {
+  implicit class ExtendPadMutableBuilder[Self <: ExtendPad] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorder(value: String | ColorSideSize): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: BackgroundType): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setExtend(value: ExtendType[Record[String, _]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: String | ColorSideSize): Self = this.set("border", value.asInstanceOf[js.Any])
+    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, _]] => ExtendValue[Record[String, _]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBorder: Self = this.set("border", js.undefined)
+    def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
     @scala.inline
-    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, _]] => ExtendValue[Record[String, _]]): Self = this.set("extend", js.Any.fromFunction1(value))
+    def setPad(value: PadType): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtend(value: ExtendType[Record[String, _]]): Self = this.set("extend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtend: Self = this.set("extend", js.undefined)
-    
-    @scala.inline
-    def setPad(value: PadType): Self = this.set("pad", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePad: Self = this.set("pad", js.undefined)
+    def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
   }
 }

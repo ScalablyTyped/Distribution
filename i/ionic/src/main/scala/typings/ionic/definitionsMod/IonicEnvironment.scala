@@ -7,12 +7,13 @@ import typings.ionicCliFrameworkPrompts.mod.PromptQuestionOther
 import typings.ionicCliFrameworkPrompts.mod.PromptValueCheckbox
 import typings.ionicCliFrameworkPrompts.mod.PromptValueConfirm
 import typings.ionicCliFrameworkPrompts.mod.PromptValueOther
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonicEnvironment extends js.Object {
+trait IonicEnvironment extends StObject {
   
   val client: IClient = js.native
   

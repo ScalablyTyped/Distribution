@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDeliveryStreamsInput extends js.Object {
+trait ListDeliveryStreamsInput extends StObject {
   
   /**
     * The delivery stream type. This can be one of the following values:    DirectPut: Provider applications access the delivery stream directly.    KinesisStreamAsSource: The delivery stream uses a Kinesis data stream as a source.   This parameter is optional. If this parameter is omitted, delivery streams of all types are returned.
@@ -31,36 +32,24 @@ object ListDeliveryStreamsInput {
   }
   
   @scala.inline
-  implicit class ListDeliveryStreamsInputOps[Self <: ListDeliveryStreamsInput] (val x: Self) extends AnyVal {
+  implicit class ListDeliveryStreamsInputMutableBuilder[Self <: ListDeliveryStreamsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeliveryStreamType(value: DeliveryStreamType): Self = StObject.set(x, "DeliveryStreamType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeliveryStreamTypeUndefined: Self = StObject.set(x, "DeliveryStreamType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExclusiveStartDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "ExclusiveStartDeliveryStreamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryStreamType(value: DeliveryStreamType): Self = this.set("DeliveryStreamType", value.asInstanceOf[js.Any])
+    def setExclusiveStartDeliveryStreamNameUndefined: Self = StObject.set(x, "ExclusiveStartDeliveryStreamName", js.undefined)
     
     @scala.inline
-    def deleteDeliveryStreamType: Self = this.set("DeliveryStreamType", js.undefined)
+    def setLimit(value: ListDeliveryStreamsInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusiveStartDeliveryStreamName(value: DeliveryStreamName): Self = this.set("ExclusiveStartDeliveryStreamName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExclusiveStartDeliveryStreamName: Self = this.set("ExclusiveStartDeliveryStreamName", js.undefined)
-    
-    @scala.inline
-    def setLimit(value: ListDeliveryStreamsInputLimit): Self = this.set("Limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
   }
 }

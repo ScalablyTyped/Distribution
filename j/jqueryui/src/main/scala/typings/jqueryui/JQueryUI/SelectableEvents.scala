@@ -5,12 +5,13 @@ import typings.jqueryui.anon.Selected
 import typings.jqueryui.anon.Selecting
 import typings.jqueryui.anon.Unselected
 import typings.jqueryui.anon.Unselecting
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelectableEvents extends js.Object {
+trait SelectableEvents extends StObject {
   
   var selected: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Selected, Unit]] = js.native
   
@@ -33,54 +34,42 @@ object SelectableEvents {
   }
   
   @scala.inline
-  implicit class SelectableEventsOps[Self <: SelectableEvents] (val x: Self) extends AnyVal {
+  implicit class SelectableEventsMutableBuilder[Self <: SelectableEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSelected(value: (/* event */ JQueryEventObject, /* ui */ Selected) => Unit): Self = StObject.set(x, "selected", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelecting(value: (/* event */ JQueryEventObject, /* ui */ Selecting) => Unit): Self = StObject.set(x, "selecting", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSelected(value: (/* event */ JQueryEventObject, /* ui */ Selected) => Unit): Self = this.set("selected", js.Any.fromFunction2(value))
+    def setSelectingUndefined: Self = StObject.set(x, "selecting", js.undefined)
     
     @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
+    def setStart(value: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSelecting(value: (/* event */ JQueryEventObject, /* ui */ Selecting) => Unit): Self = this.set("selecting", js.Any.fromFunction2(value))
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteSelecting: Self = this.set("selecting", js.undefined)
+    def setStop(value: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setStart(value: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit): Self = this.set("start", js.Any.fromFunction2(value))
+    def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setUnselected(value: (/* event */ JQueryEventObject, /* ui */ Unselected) => Unit): Self = StObject.set(x, "unselected", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setStop(value: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit): Self = this.set("stop", js.Any.fromFunction2(value))
+    def setUnselectedUndefined: Self = StObject.set(x, "unselected", js.undefined)
     
     @scala.inline
-    def deleteStop: Self = this.set("stop", js.undefined)
+    def setUnselecting(value: (/* event */ JQueryEventObject, /* ui */ Unselecting) => Unit): Self = StObject.set(x, "unselecting", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUnselected(value: (/* event */ JQueryEventObject, /* ui */ Unselected) => Unit): Self = this.set("unselected", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteUnselected: Self = this.set("unselected", js.undefined)
-    
-    @scala.inline
-    def setUnselecting(value: (/* event */ JQueryEventObject, /* ui */ Unselecting) => Unit): Self = this.set("unselecting", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteUnselecting: Self = this.set("unselecting", js.undefined)
+    def setUnselectingUndefined: Self = StObject.set(x, "unselecting", js.undefined)
   }
 }

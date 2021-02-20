@@ -1,5 +1,6 @@
 package typings.victory.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.victory.victoryStrings.triangleDown
   - typings.victory.victoryStrings.triangleUp
 */
-trait ScatterSymbolType extends js.Object
+trait ScatterSymbolType extends StObject
 object ScatterSymbolType {
   
   @scala.inline

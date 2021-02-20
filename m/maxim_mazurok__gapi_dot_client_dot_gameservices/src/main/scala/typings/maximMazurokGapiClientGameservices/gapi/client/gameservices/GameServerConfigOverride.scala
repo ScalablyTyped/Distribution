@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GameServerConfigOverride extends js.Object {
+trait GameServerConfigOverride extends StObject {
   
   /** The game server config for this override. */
   var configVersion: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object GameServerConfigOverride {
   }
   
   @scala.inline
-  implicit class GameServerConfigOverrideOps[Self <: GameServerConfigOverride] (val x: Self) extends AnyVal {
+  implicit class GameServerConfigOverrideMutableBuilder[Self <: GameServerConfigOverride] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigVersion(value: String): Self = StObject.set(x, "configVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigVersionUndefined: Self = StObject.set(x, "configVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRealmsSelector(value: RealmSelector): Self = StObject.set(x, "realmsSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigVersion(value: String): Self = this.set("configVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigVersion: Self = this.set("configVersion", js.undefined)
-    
-    @scala.inline
-    def setRealmsSelector(value: RealmSelector): Self = this.set("realmsSelector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRealmsSelector: Self = this.set("realmsSelector", js.undefined)
+    def setRealmsSelectorUndefined: Self = StObject.set(x, "realmsSelector", js.undefined)
   }
 }

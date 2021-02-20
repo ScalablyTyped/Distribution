@@ -1,6 +1,7 @@
 package typings.reactNativeSvgCharts.mod
 
 import typings.reactNativeSvgCharts.anon.Left
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,30 +22,18 @@ object XAxisProps {
   }
   
   @scala.inline
-  implicit class XAxisPropsOps[Self <: XAxisProps[_], T] (val x: Self with XAxisProps[T]) extends AnyVal {
+  implicit class XAxisPropsMutableBuilder[Self <: XAxisProps[_], T] (val x: Self with XAxisProps[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentInset(value: Left): Self = StObject.set(x, "contentInset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentInsetUndefined: Self = StObject.set(x, "contentInset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setXAccessor(value: /* props */ AccessorFunctionProps[T] => _): Self = StObject.set(x, "xAccessor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContentInset(value: Left): Self = this.set("contentInset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentInset: Self = this.set("contentInset", js.undefined)
-    
-    @scala.inline
-    def setXAccessor(value: /* props */ AccessorFunctionProps[T] => _): Self = this.set("xAccessor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteXAccessor: Self = this.set("xAccessor", js.undefined)
+    def setXAccessorUndefined: Self = StObject.set(x, "xAccessor", js.undefined)
   }
 }

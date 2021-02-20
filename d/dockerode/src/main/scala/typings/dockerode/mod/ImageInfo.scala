@@ -1,12 +1,13 @@
 package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageInfo extends js.Object {
+trait ImageInfo extends StObject {
   
   var Created: Double = js.native
   
@@ -41,51 +42,39 @@ object ImageInfo {
   }
   
   @scala.inline
-  implicit class ImageInfoOps[Self <: ImageInfo] (val x: Self) extends AnyVal {
+  implicit class ImageInfoMutableBuilder[Self <: ImageInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated(value: Double): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: Double): Self = this.set("Created", value.asInstanceOf[js.Any])
+    def setParentId(value: String): Self = StObject.set(x, "ParentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setRepoDigests(value: js.Array[String]): Self = StObject.set(x, "RepoDigests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("Labels", value.asInstanceOf[js.Any])
+    def setRepoDigestsUndefined: Self = StObject.set(x, "RepoDigests", js.undefined)
     
     @scala.inline
-    def setParentId(value: String): Self = this.set("ParentId", value.asInstanceOf[js.Any])
+    def setRepoDigestsVarargs(value: String*): Self = StObject.set(x, "RepoDigests", js.Array(value :_*))
     
     @scala.inline
-    def setRepoTagsVarargs(value: String*): Self = this.set("RepoTags", js.Array(value :_*))
+    def setRepoTags(value: js.Array[String]): Self = StObject.set(x, "RepoTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepoTags(value: js.Array[String]): Self = this.set("RepoTags", value.asInstanceOf[js.Any])
+    def setRepoTagsVarargs(value: String*): Self = StObject.set(x, "RepoTags", js.Array(value :_*))
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("Size", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualSize(value: Double): Self = this.set("VirtualSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepoDigestsVarargs(value: String*): Self = this.set("RepoDigests", js.Array(value :_*))
-    
-    @scala.inline
-    def setRepoDigests(value: js.Array[String]): Self = this.set("RepoDigests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepoDigests: Self = this.set("RepoDigests", js.undefined)
+    def setVirtualSize(value: Double): Self = StObject.set(x, "VirtualSize", value.asInstanceOf[js.Any])
   }
 }

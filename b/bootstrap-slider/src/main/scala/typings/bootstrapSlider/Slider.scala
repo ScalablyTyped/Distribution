@@ -1,6 +1,7 @@
 package typings.bootstrapSlider
 
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * When using jQuery, slider methods like setValue(3, true) have to be called like $slider.slider('setValue', 3, true)
   */
 @js.native
-trait Slider extends js.Object {
+trait Slider extends StObject {
   
   /**
     * Properly clean up and remove the slider instance

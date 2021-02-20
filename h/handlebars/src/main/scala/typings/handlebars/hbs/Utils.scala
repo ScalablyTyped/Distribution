@@ -1,11 +1,12 @@
 package typings.handlebars.hbs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Utils extends js.Object {
+trait Utils extends StObject {
   
   def blockParams(obj: js.Array[_], ids: js.Array[_]): js.Array[_] = js.native
   
@@ -34,49 +35,38 @@ object Utils {
     isArray: js.Any => Boolean,
     isEmpty: js.Any => Boolean,
     isFunction: js.Any => Boolean,
-    toString: js.Any => String
+    toString_ : js.Any => String
   ): Utils = {
-    val __obj = js.Dynamic.literal(blockParams = js.Any.fromFunction2(blockParams), createFrame = js.Any.fromFunction1(createFrame), escapeExpression = js.Any.fromFunction1(escapeExpression), extend = js.Any.fromFunction2(extend), isArray = js.Any.fromFunction1(isArray), isEmpty = js.Any.fromFunction1(isEmpty), isFunction = js.Any.fromFunction1(isFunction), toString = js.Any.fromFunction1(toString))
+    val __obj = js.Dynamic.literal(blockParams = js.Any.fromFunction2(blockParams), createFrame = js.Any.fromFunction1(createFrame), escapeExpression = js.Any.fromFunction1(escapeExpression), extend = js.Any.fromFunction2(extend), isArray = js.Any.fromFunction1(isArray), isEmpty = js.Any.fromFunction1(isEmpty), isFunction = js.Any.fromFunction1(isFunction))
+    __obj.updateDynamic("toString")(js.Any.fromFunction1(toString_))
     __obj.asInstanceOf[Utils]
   }
   
   @scala.inline
-  implicit class UtilsOps[Self <: Utils] (val x: Self) extends AnyVal {
+  implicit class UtilsMutableBuilder[Self <: Utils] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockParams(value: (js.Array[_], js.Array[_]) => js.Array[_]): Self = StObject.set(x, "blockParams", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateFrame(value: js.Any => js.Any): Self = StObject.set(x, "createFrame", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEscapeExpression(value: String => String): Self = StObject.set(x, "escapeExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBlockParams(value: (js.Array[_], js.Array[_]) => js.Array[_]): Self = this.set("blockParams", js.Any.fromFunction2(value))
+    def setExtend(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateFrame(value: js.Any => js.Any): Self = this.set("createFrame", js.Any.fromFunction1(value))
+    def setIsArray(value: js.Any => Boolean): Self = StObject.set(x, "isArray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEscapeExpression(value: String => String): Self = this.set("escapeExpression", js.Any.fromFunction1(value))
+    def setIsEmpty(value: js.Any => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExtend(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = this.set("extend", js.Any.fromFunction2(value))
+    def setIsFunction(value: js.Any => Boolean): Self = StObject.set(x, "isFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsArray(value: js.Any => Boolean): Self = this.set("isArray", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsEmpty(value: js.Any => Boolean): Self = this.set("isEmpty", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsFunction(value: js.Any => Boolean): Self = this.set("isFunction", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToString(value: js.Any => String): Self = this.set("toString", js.Any.fromFunction1(value))
+    def setToString_(value: js.Any => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
   }
 }

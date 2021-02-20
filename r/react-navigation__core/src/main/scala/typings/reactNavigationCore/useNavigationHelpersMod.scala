@@ -11,18 +11,19 @@ import typings.reactNavigationRouters.typesMod.ParamListBase
 import typings.reactNavigationRouters.typesMod.Router
 import typings.std.Record
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-navigation/core/lib/typescript/src/useNavigationHelpers", JSImport.Namespace)
-@js.native
-object useNavigationHelpersMod extends js.Object {
+object useNavigationHelpersMod {
   
+  @JSImport("@react-navigation/core/lib/typescript/src/useNavigationHelpers", JSImport.Default)
+  @js.native
   def default[State /* <: NavigationState[ParamListBase] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, Action /* <: NavigationAction */, EventMap /* <: Record[String, _] */](hasOnActionGetStateEmitterRouter: Options[State, Action]): DangerouslyGetParent with (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Object]) with EventEmitter[EventMap] with EventConsumer[_] with (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, _]) with ActionHelpers = js.native
   
   @js.native
-  trait Options[State /* <: NavigationState[ParamListBase] */, Action /* <: NavigationAction */] extends js.Object {
+  trait Options[State /* <: NavigationState[ParamListBase] */, Action /* <: NavigationAction */] extends StObject {
     
     var emitter: NavigationEventEmitter[_] = js.native
     

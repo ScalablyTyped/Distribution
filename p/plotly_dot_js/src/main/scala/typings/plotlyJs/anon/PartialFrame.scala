@@ -1,13 +1,14 @@
 package typings.plotlyJs.anon
 
 import typings.plotlyJs.mod.Data
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Frame> */
 @js.native
-trait PartialFrame extends js.Object {
+trait PartialFrame extends StObject {
   
   var baseframe: js.UndefOr[String] = js.native
   
@@ -30,60 +31,48 @@ object PartialFrame {
   }
   
   @scala.inline
-  implicit class PartialFrameOps[Self <: PartialFrame] (val x: Self) extends AnyVal {
+  implicit class PartialFrameMutableBuilder[Self <: PartialFrame] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseframe(value: String): Self = StObject.set(x, "baseframe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseframeUndefined: Self = StObject.set(x, "baseframe", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: js.Array[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseframe(value: String): Self = this.set("baseframe", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteBaseframe: Self = this.set("baseframe", js.undefined)
+    def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setDataVarargs(value: Data*): Self = this.set("data", js.Array(value :_*))
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[Data]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setLayout(value: PartialLayoutAngularaxis): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: PartialLayoutAngularaxis): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setTraces(value: js.Array[Double]): Self = StObject.set(x, "traces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTracesUndefined: Self = StObject.set(x, "traces", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setTracesVarargs(value: Double*): Self = this.set("traces", js.Array(value :_*))
-    
-    @scala.inline
-    def setTraces(value: js.Array[Double]): Self = this.set("traces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraces: Self = this.set("traces", js.undefined)
+    def setTracesVarargs(value: Double*): Self = StObject.set(x, "traces", js.Array(value :_*))
   }
 }

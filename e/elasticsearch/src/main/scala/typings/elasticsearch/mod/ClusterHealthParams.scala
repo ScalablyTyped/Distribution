@@ -12,6 +12,7 @@ import typings.elasticsearch.elasticsearchStrings.red
 import typings.elasticsearch.elasticsearchStrings.shards
 import typings.elasticsearch.elasticsearchStrings.urgent
 import typings.elasticsearch.elasticsearchStrings.yellow
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,75 +47,63 @@ object ClusterHealthParams {
   }
   
   @scala.inline
-  implicit class ClusterHealthParamsOps[Self <: ClusterHealthParams] (val x: Self) extends AnyVal {
+  implicit class ClusterHealthParamsMutableBuilder[Self <: ClusterHealthParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
     
     @scala.inline
-    def setIndexVarargs(value: String*): Self = this.set("index", js.Array(value :_*))
+    def setLevel(value: cluster | indices | shards): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: NameList): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: cluster | indices | shards): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocal(value: Boolean): Self = this.set("local", value.asInstanceOf[js.Any])
+    def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
     
     @scala.inline
-    def deleteLocal: Self = this.set("local", js.undefined)
+    def setWaitForActiveShards(value: String): Self = StObject.set(x, "waitForActiveShards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterTimeout(value: TimeSpan): Self = this.set("masterTimeout", value.asInstanceOf[js.Any])
+    def setWaitForActiveShardsUndefined: Self = StObject.set(x, "waitForActiveShards", js.undefined)
     
     @scala.inline
-    def deleteMasterTimeout: Self = this.set("masterTimeout", js.undefined)
+    def setWaitForEvents(value: immediate | urgent | high | normal | low | languid): Self = StObject.set(x, "waitForEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWaitForActiveShards(value: String): Self = this.set("waitForActiveShards", value.asInstanceOf[js.Any])
+    def setWaitForEventsUndefined: Self = StObject.set(x, "waitForEvents", js.undefined)
     
     @scala.inline
-    def deleteWaitForActiveShards: Self = this.set("waitForActiveShards", js.undefined)
+    def setWaitForNodes(value: String): Self = StObject.set(x, "waitForNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWaitForEvents(value: immediate | urgent | high | normal | low | languid): Self = this.set("waitForEvents", value.asInstanceOf[js.Any])
+    def setWaitForNodesUndefined: Self = StObject.set(x, "waitForNodes", js.undefined)
     
     @scala.inline
-    def deleteWaitForEvents: Self = this.set("waitForEvents", js.undefined)
+    def setWaitForRelocatingShards(value: Boolean): Self = StObject.set(x, "waitForRelocatingShards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWaitForNodes(value: String): Self = this.set("waitForNodes", value.asInstanceOf[js.Any])
+    def setWaitForRelocatingShardsUndefined: Self = StObject.set(x, "waitForRelocatingShards", js.undefined)
     
     @scala.inline
-    def deleteWaitForNodes: Self = this.set("waitForNodes", js.undefined)
+    def setWaitForStatus(value: green | yellow | red): Self = StObject.set(x, "waitForStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWaitForRelocatingShards(value: Boolean): Self = this.set("waitForRelocatingShards", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitForRelocatingShards: Self = this.set("waitForRelocatingShards", js.undefined)
-    
-    @scala.inline
-    def setWaitForStatus(value: green | yellow | red): Self = this.set("waitForStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitForStatus: Self = this.set("waitForStatus", js.undefined)
+    def setWaitForStatusUndefined: Self = StObject.set(x, "waitForStatus", js.undefined)
   }
 }

@@ -2,13 +2,12 @@ package typings.isIp
 
 import typings.isIp.isIpNumbers.`4`
 import typings.isIp.isIpNumbers.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("is-ip", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Check if `string` is IPv4 or IPv6.
@@ -21,6 +20,8 @@ object mod extends js.Object {
   	//=> true
   	```
   	*/
+  @JSImport("is-ip", JSImport.Namespace)
+  @js.native
   def apply(string: String): Boolean = js.native
   
   /**
@@ -32,6 +33,8 @@ object mod extends js.Object {
   	//=> true
   	```
   	*/
+  @JSImport("is-ip", "v4")
+  @js.native
   def v4(string: String): Boolean = js.native
   
   /**
@@ -43,6 +46,8 @@ object mod extends js.Object {
   	//=> true
   	```
   	*/
+  @JSImport("is-ip", "v6")
+  @js.native
   def v6(string: String): Boolean = js.native
   
   /**
@@ -58,5 +63,7 @@ object mod extends js.Object {
   	//=> undefined
   	```
   	*/
+  @JSImport("is-ip", "version")
+  @js.native
   def version(string: String): js.UndefOr[`4` | `6`] = js.native
 }

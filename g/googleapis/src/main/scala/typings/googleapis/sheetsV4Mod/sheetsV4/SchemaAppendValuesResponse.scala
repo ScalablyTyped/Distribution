@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The response when updating a range of values in a spreadsheet.
   */
 @js.native
-trait SchemaAppendValuesResponse extends js.Object {
+trait SchemaAppendValuesResponse extends StObject {
   
   /**
     * The spreadsheet the updates were applied to.
@@ -35,36 +36,24 @@ object SchemaAppendValuesResponse {
   }
   
   @scala.inline
-  implicit class SchemaAppendValuesResponseOps[Self <: SchemaAppendValuesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaAppendValuesResponseMutableBuilder[Self <: SchemaAppendValuesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTableRange(value: String): Self = StObject.set(x, "tableRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpreadsheetId(value: String): Self = this.set("spreadsheetId", value.asInstanceOf[js.Any])
+    def setTableRangeUndefined: Self = StObject.set(x, "tableRange", js.undefined)
     
     @scala.inline
-    def deleteSpreadsheetId: Self = this.set("spreadsheetId", js.undefined)
+    def setUpdates(value: SchemaUpdateValuesResponse): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableRange(value: String): Self = this.set("tableRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableRange: Self = this.set("tableRange", js.undefined)
-    
-    @scala.inline
-    def setUpdates(value: SchemaUpdateValuesResponse): Self = this.set("updates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdates: Self = this.set("updates", js.undefined)
+    def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
   }
 }

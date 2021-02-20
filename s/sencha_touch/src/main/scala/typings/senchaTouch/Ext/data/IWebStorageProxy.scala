@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.data
 
 import typings.senchaTouch.Ext.data.proxy.IClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -123,110 +124,98 @@ object IWebStorageProxy {
   }
   
   @scala.inline
-  implicit class IWebStorageProxyOps[Self <: IWebStorageProxy] (val x: Self) extends AnyVal {
+  implicit class IWebStorageProxyMutableBuilder[Self <: IWebStorageProxy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCache(value: js.Any): Self = this.set("cache", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCache: Self = this.set("cache", js.undefined)
+    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
     @scala.inline
     def setCreate(
       value: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("create", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteCreate: Self = this.set("create", js.undefined)
+    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
     @scala.inline
     def setDestroy(
       value: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("destroy", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "destroy", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     @scala.inline
-    def setEnablePagingParams(value: Boolean): Self = this.set("enablePagingParams", value.asInstanceOf[js.Any])
+    def setEnablePagingParams(value: Boolean): Self = StObject.set(x, "enablePagingParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnablePagingParams: Self = this.set("enablePagingParams", js.undefined)
+    def setEnablePagingParamsUndefined: Self = StObject.set(x, "enablePagingParams", js.undefined)
     
     @scala.inline
-    def setGetDefaultDateFormat(value: () => String): Self = this.set("getDefaultDateFormat", js.Any.fromFunction0(value))
+    def setGetDefaultDateFormat(value: () => String): Self = StObject.set(x, "getDefaultDateFormat", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetDefaultDateFormat: Self = this.set("getDefaultDateFormat", js.undefined)
+    def setGetDefaultDateFormatUndefined: Self = StObject.set(x, "getDefaultDateFormat", js.undefined)
     
     @scala.inline
-    def setGetEnablePagingParams(value: () => Boolean): Self = this.set("getEnablePagingParams", js.Any.fromFunction0(value))
+    def setGetEnablePagingParams(value: () => Boolean): Self = StObject.set(x, "getEnablePagingParams", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetEnablePagingParams: Self = this.set("getEnablePagingParams", js.undefined)
+    def setGetEnablePagingParamsUndefined: Self = StObject.set(x, "getEnablePagingParams", js.undefined)
     
     @scala.inline
-    def setGetId(value: () => String): Self = this.set("getId", js.Any.fromFunction0(value))
+    def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetId: Self = this.set("getId", js.undefined)
+    def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
     def setRead(
       value: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("read", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "read", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteRead: Self = this.set("read", js.undefined)
+    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
     @scala.inline
-    def setSetDefaultDateFormat(value: /* defaultDateFormat */ js.UndefOr[String] => Unit): Self = this.set("setDefaultDateFormat", js.Any.fromFunction1(value))
+    def setSetDefaultDateFormat(value: /* defaultDateFormat */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDefaultDateFormat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetDefaultDateFormat: Self = this.set("setDefaultDateFormat", js.undefined)
+    def setSetDefaultDateFormatUndefined: Self = StObject.set(x, "setDefaultDateFormat", js.undefined)
     
     @scala.inline
-    def setSetEnablePagingParams(value: /* enablePagingParams */ js.UndefOr[Boolean] => Unit): Self = this.set("setEnablePagingParams", js.Any.fromFunction1(value))
+    def setSetEnablePagingParams(value: /* enablePagingParams */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setEnablePagingParams", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetEnablePagingParams: Self = this.set("setEnablePagingParams", js.undefined)
+    def setSetEnablePagingParamsUndefined: Self = StObject.set(x, "setEnablePagingParams", js.undefined)
     
     @scala.inline
-    def setSetId(value: /* id */ js.UndefOr[String] => Unit): Self = this.set("setId", js.Any.fromFunction1(value))
+    def setSetId(value: /* id */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetId: Self = this.set("setId", js.undefined)
+    def setSetIdUndefined: Self = StObject.set(x, "setId", js.undefined)
     
     @scala.inline
-    def setSetRecord(value: (/* record */ js.UndefOr[IModel], /* id */ js.UndefOr[String]) => Unit): Self = this.set("setRecord", js.Any.fromFunction2(value))
+    def setSetRecord(value: (/* record */ js.UndefOr[IModel], /* id */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "setRecord", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteSetRecord: Self = this.set("setRecord", js.undefined)
+    def setSetRecordUndefined: Self = StObject.set(x, "setRecord", js.undefined)
     
     @scala.inline
     def setUpdate(
       value: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("update", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

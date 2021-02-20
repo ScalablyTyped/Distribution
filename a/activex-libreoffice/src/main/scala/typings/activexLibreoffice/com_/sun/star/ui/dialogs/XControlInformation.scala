@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.ui.dialogs
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,33 +69,21 @@ object XControlInformation {
   }
   
   @scala.inline
-  implicit class XControlInformationOps[Self <: XControlInformation] (val x: Self) extends AnyVal {
+  implicit class XControlInformationMutableBuilder[Self <: XControlInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetSupportedControlProperties(value: String => SafeArray[String]): Self = StObject.set(x, "getSupportedControlProperties", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSupportedControls(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedControls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsControlPropertySupported(value: (String, String) => Boolean): Self = StObject.set(x, "isControlPropertySupported", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSupportedControls(value: SafeArray[String]): Self = this.set("SupportedControls", value.asInstanceOf[js.Any])
+    def setIsControlSupported(value: String => Boolean): Self = StObject.set(x, "isControlSupported", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSupportedControlProperties(value: String => SafeArray[String]): Self = this.set("getSupportedControlProperties", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetSupportedControls(value: () => SafeArray[String]): Self = this.set("getSupportedControls", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsControlPropertySupported(value: (String, String) => Boolean): Self = this.set("isControlPropertySupported", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setIsControlSupported(value: String => Boolean): Self = this.set("isControlSupported", js.Any.fromFunction1(value))
+    def setSupportedControls(value: SafeArray[String]): Self = StObject.set(x, "SupportedControls", value.asInstanceOf[js.Any])
   }
 }

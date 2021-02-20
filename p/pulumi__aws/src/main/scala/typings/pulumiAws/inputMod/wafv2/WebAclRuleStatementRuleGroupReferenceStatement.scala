@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.wafv2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebAclRuleStatementRuleGroupReferenceStatement extends js.Object {
+trait WebAclRuleStatementRuleGroupReferenceStatement extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the `aws.wafv2.RuleGroup` resource.
@@ -29,30 +30,18 @@ object WebAclRuleStatementRuleGroupReferenceStatement {
   }
   
   @scala.inline
-  implicit class WebAclRuleStatementRuleGroupReferenceStatementOps[Self <: WebAclRuleStatementRuleGroupReferenceStatement] (val x: Self) extends AnyVal {
+  implicit class WebAclRuleStatementRuleGroupReferenceStatementMutableBuilder[Self <: WebAclRuleStatementRuleGroupReferenceStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludedRules(value: Input[js.Array[Input[WebAclRuleStatementRuleGroupReferenceStatementExcludedRule]]]): Self = StObject.set(x, "excludedRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedRulesUndefined: Self = StObject.set(x, "excludedRules", js.undefined)
     
     @scala.inline
-    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExcludedRulesVarargs(value: Input[WebAclRuleStatementRuleGroupReferenceStatementExcludedRule]*): Self = this.set("excludedRules", js.Array(value :_*))
-    
-    @scala.inline
-    def setExcludedRules(value: Input[js.Array[Input[WebAclRuleStatementRuleGroupReferenceStatementExcludedRule]]]): Self = this.set("excludedRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExcludedRules: Self = this.set("excludedRules", js.undefined)
+    def setExcludedRulesVarargs(value: Input[WebAclRuleStatementRuleGroupReferenceStatementExcludedRule]*): Self = StObject.set(x, "excludedRules", js.Array(value :_*))
   }
 }

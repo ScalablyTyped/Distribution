@@ -1,11 +1,12 @@
 package typings.openpgp.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Key extends js.Object {
+trait Key extends StObject {
   
   var key: typings.openpgp.mod.key.Key = js.native
   
@@ -29,30 +30,18 @@ object Key {
   }
   
   @scala.inline
-  implicit class KeyOps[Self <: Key] (val x: Self) extends AnyVal {
+  implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: typings.openpgp.mod.key.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrivateKeyArmored(value: String): Self = StObject.set(x, "privateKeyArmored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublicKeyArmored(value: String): Self = StObject.set(x, "publicKeyArmored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: typings.openpgp.mod.key.Key): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrivateKeyArmored(value: String): Self = this.set("privateKeyArmored", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublicKeyArmored(value: String): Self = this.set("publicKeyArmored", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRevocationCertificate(value: String): Self = this.set("revocationCertificate", value.asInstanceOf[js.Any])
+    def setRevocationCertificate(value: String): Self = StObject.set(x, "revocationCertificate", value.asInstanceOf[js.Any])
   }
 }

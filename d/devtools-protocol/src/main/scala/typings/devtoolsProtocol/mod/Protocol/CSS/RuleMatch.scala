@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleMatch extends js.Object {
+trait RuleMatch extends StObject {
   
   /**
     * Matching selector indices in the rule's selectorList selectors (0-based).
@@ -27,27 +28,15 @@ object RuleMatch {
   }
   
   @scala.inline
-  implicit class RuleMatchOps[Self <: RuleMatch] (val x: Self) extends AnyVal {
+  implicit class RuleMatchMutableBuilder[Self <: RuleMatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMatchingSelectors(value: js.Array[integer]): Self = StObject.set(x, "matchingSelectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatchingSelectorsVarargs(value: integer*): Self = StObject.set(x, "matchingSelectors", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMatchingSelectorsVarargs(value: integer*): Self = this.set("matchingSelectors", js.Array(value :_*))
-    
-    @scala.inline
-    def setMatchingSelectors(value: js.Array[integer]): Self = this.set("matchingSelectors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRule(value: CSSRule): Self = this.set("rule", value.asInstanceOf[js.Any])
+    def setRule(value: CSSRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
   }
 }

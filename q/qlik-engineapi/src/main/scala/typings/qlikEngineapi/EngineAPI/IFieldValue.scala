@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * FieldValue...
   */
 @js.native
-trait IFieldValue extends js.Object {
+trait IFieldValue extends StObject {
   
   /**
     * Is set to true if the value is a numeric.
@@ -38,36 +39,24 @@ object IFieldValue {
   }
   
   @scala.inline
-  implicit class IFieldValueOps[Self <: IFieldValue] (val x: Self) extends AnyVal {
+  implicit class IFieldValueMutableBuilder[Self <: IFieldValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQIsNumeric(value: Boolean): Self = StObject.set(x, "qIsNumeric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQIsNumericUndefined: Self = StObject.set(x, "qIsNumeric", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQNumber(value: Double): Self = StObject.set(x, "qNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIsNumeric(value: Boolean): Self = this.set("qIsNumeric", value.asInstanceOf[js.Any])
+    def setQNumberUndefined: Self = StObject.set(x, "qNumber", js.undefined)
     
     @scala.inline
-    def deleteQIsNumeric: Self = this.set("qIsNumeric", js.undefined)
+    def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQNumber(value: Double): Self = this.set("qNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQNumber: Self = this.set("qNumber", js.undefined)
-    
-    @scala.inline
-    def setQText(value: String): Self = this.set("qText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQText: Self = this.set("qText", js.undefined)
+    def setQTextUndefined: Self = StObject.set(x, "qText", js.undefined)
   }
 }

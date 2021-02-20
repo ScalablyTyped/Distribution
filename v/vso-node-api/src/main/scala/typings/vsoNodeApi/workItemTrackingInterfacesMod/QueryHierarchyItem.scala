@@ -1,6 +1,7 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -170,102 +171,90 @@ object QueryHierarchyItem {
   }
   
   @scala.inline
-  implicit class QueryHierarchyItemOps[Self <: QueryHierarchyItem] (val x: Self) extends AnyVal {
+  implicit class QueryHierarchyItemMutableBuilder[Self <: QueryHierarchyItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Array[QueryHierarchyItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenVarargs(value: QueryHierarchyItem*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClauses(value: WorkItemQueryClause): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: QueryHierarchyItem*): Self = this.set("children", js.Array(value :_*))
+    def setColumns(value: js.Array[WorkItemFieldReference]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Array[QueryHierarchyItem]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setColumnsVarargs(value: WorkItemFieldReference*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setClauses(value: WorkItemQueryClause): Self = this.set("clauses", value.asInstanceOf[js.Any])
+    def setCreatedBy(value: IdentityReference): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsVarargs(value: WorkItemFieldReference*): Self = this.set("columns", js.Array(value :_*))
+    def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[WorkItemFieldReference]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setFilterOptions(value: LinkQueryMode): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedBy(value: IdentityReference): Self = this.set("createdBy", value.asInstanceOf[js.Any])
+    def setHasChildren(value: Boolean): Self = StObject.set(x, "hasChildren", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: Date): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterOptions(value: LinkQueryMode): Self = this.set("filterOptions", value.asInstanceOf[js.Any])
+    def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasChildren(value: Boolean): Self = this.set("hasChildren", value.asInstanceOf[js.Any])
+    def setIsFolder(value: Boolean): Self = StObject.set(x, "isFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsInvalidSyntax(value: Boolean): Self = StObject.set(x, "isInvalidSyntax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDeleted(value: Boolean): Self = this.set("isDeleted", value.asInstanceOf[js.Any])
+    def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFolder(value: Boolean): Self = this.set("isFolder", value.asInstanceOf[js.Any])
+    def setLastExecutedBy(value: IdentityReference): Self = StObject.set(x, "lastExecutedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInvalidSyntax(value: Boolean): Self = this.set("isInvalidSyntax", value.asInstanceOf[js.Any])
+    def setLastExecutedDate(value: Date): Self = StObject.set(x, "lastExecutedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPublic(value: Boolean): Self = this.set("isPublic", value.asInstanceOf[js.Any])
+    def setLastModifiedBy(value: IdentityReference): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastExecutedBy(value: IdentityReference): Self = this.set("lastExecutedBy", value.asInstanceOf[js.Any])
+    def setLastModifiedDate(value: Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastExecutedDate(value: Date): Self = this.set("lastExecutedDate", value.asInstanceOf[js.Any])
+    def setLinkClauses(value: WorkItemQueryClause): Self = StObject.set(x, "linkClauses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedBy(value: IdentityReference): Self = this.set("lastModifiedBy", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: Date): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkClauses(value: WorkItemQueryClause): Self = this.set("linkClauses", value.asInstanceOf[js.Any])
+    def setQueryRecursionOption(value: QueryRecursionOption): Self = StObject.set(x, "queryRecursionOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setQueryType(value: QueryType): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setSortColumns(value: js.Array[WorkItemQuerySortColumn]): Self = StObject.set(x, "sortColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryRecursionOption(value: QueryRecursionOption): Self = this.set("queryRecursionOption", value.asInstanceOf[js.Any])
+    def setSortColumnsVarargs(value: WorkItemQuerySortColumn*): Self = StObject.set(x, "sortColumns", js.Array(value :_*))
     
     @scala.inline
-    def setQueryType(value: QueryType): Self = this.set("queryType", value.asInstanceOf[js.Any])
+    def setSourceClauses(value: WorkItemQueryClause): Self = StObject.set(x, "sourceClauses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortColumnsVarargs(value: WorkItemQuerySortColumn*): Self = this.set("sortColumns", js.Array(value :_*))
+    def setTargetClauses(value: WorkItemQueryClause): Self = StObject.set(x, "targetClauses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortColumns(value: js.Array[WorkItemQuerySortColumn]): Self = this.set("sortColumns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceClauses(value: WorkItemQueryClause): Self = this.set("sourceClauses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetClauses(value: WorkItemQueryClause): Self = this.set("targetClauses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWiql(value: String): Self = this.set("wiql", value.asInstanceOf[js.Any])
+    def setWiql(value: String): Self = StObject.set(x, "wiql", value.asInstanceOf[js.Any])
   }
 }

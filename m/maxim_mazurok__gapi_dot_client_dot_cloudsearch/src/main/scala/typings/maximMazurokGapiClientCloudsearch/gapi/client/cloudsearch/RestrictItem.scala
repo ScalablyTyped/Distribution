@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RestrictItem extends js.Object {
+trait RestrictItem extends StObject {
   
   /** LINT.ThenChange(//depot/google3/java/com/google/apps/search/quality/itemsuggest/utils/SubtypeRerankingUtils.java) */
   var driveFollowUpRestrict: js.UndefOr[DriveFollowUpRestrict] = js.native
@@ -29,48 +30,36 @@ object RestrictItem {
   }
   
   @scala.inline
-  implicit class RestrictItemOps[Self <: RestrictItem] (val x: Self) extends AnyVal {
+  implicit class RestrictItemMutableBuilder[Self <: RestrictItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDriveFollowUpRestrict(value: DriveFollowUpRestrict): Self = StObject.set(x, "driveFollowUpRestrict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDriveFollowUpRestrictUndefined: Self = StObject.set(x, "driveFollowUpRestrict", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDriveLocationRestrict(value: DriveLocationRestrict): Self = StObject.set(x, "driveLocationRestrict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriveFollowUpRestrict(value: DriveFollowUpRestrict): Self = this.set("driveFollowUpRestrict", value.asInstanceOf[js.Any])
+    def setDriveLocationRestrictUndefined: Self = StObject.set(x, "driveLocationRestrict", js.undefined)
     
     @scala.inline
-    def deleteDriveFollowUpRestrict: Self = this.set("driveFollowUpRestrict", js.undefined)
+    def setDriveMimeTypeRestrict(value: DriveMimeTypeRestrict): Self = StObject.set(x, "driveMimeTypeRestrict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriveLocationRestrict(value: DriveLocationRestrict): Self = this.set("driveLocationRestrict", value.asInstanceOf[js.Any])
+    def setDriveMimeTypeRestrictUndefined: Self = StObject.set(x, "driveMimeTypeRestrict", js.undefined)
     
     @scala.inline
-    def deleteDriveLocationRestrict: Self = this.set("driveLocationRestrict", js.undefined)
+    def setDriveTimeSpanRestrict(value: DriveTimeSpanRestrict): Self = StObject.set(x, "driveTimeSpanRestrict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriveMimeTypeRestrict(value: DriveMimeTypeRestrict): Self = this.set("driveMimeTypeRestrict", value.asInstanceOf[js.Any])
+    def setDriveTimeSpanRestrictUndefined: Self = StObject.set(x, "driveTimeSpanRestrict", js.undefined)
     
     @scala.inline
-    def deleteDriveMimeTypeRestrict: Self = this.set("driveMimeTypeRestrict", js.undefined)
+    def setSearchOperator(value: String): Self = StObject.set(x, "searchOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriveTimeSpanRestrict(value: DriveTimeSpanRestrict): Self = this.set("driveTimeSpanRestrict", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDriveTimeSpanRestrict: Self = this.set("driveTimeSpanRestrict", js.undefined)
-    
-    @scala.inline
-    def setSearchOperator(value: String): Self = this.set("searchOperator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchOperator: Self = this.set("searchOperator", js.undefined)
+    def setSearchOperatorUndefined: Self = StObject.set(x, "searchOperator", js.undefined)
   }
 }

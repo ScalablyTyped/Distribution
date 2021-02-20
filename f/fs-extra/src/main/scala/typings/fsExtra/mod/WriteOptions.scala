@@ -1,5 +1,6 @@
 package typings.fsExtra.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,42 +25,30 @@ object WriteOptions {
   }
   
   @scala.inline
-  implicit class WriteOptionsOps[Self <: WriteOptions] (val x: Self) extends AnyVal {
+  implicit class WriteOptionsMutableBuilder[Self <: WriteOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEOL(value: String): Self = StObject.set(x, "EOL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEOLUndefined: Self = StObject.set(x, "EOL", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFs(value: js.Object): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEOL(value: String): Self = this.set("EOL", value.asInstanceOf[js.Any])
+    def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
     
     @scala.inline
-    def deleteEOL: Self = this.set("EOL", js.undefined)
+    def setReplacer(value: js.Any): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFs(value: js.Object): Self = this.set("fs", value.asInstanceOf[js.Any])
+    def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
     
     @scala.inline
-    def deleteFs: Self = this.set("fs", js.undefined)
+    def setSpaces(value: Double | String): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplacer(value: js.Any): Self = this.set("replacer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplacer: Self = this.set("replacer", js.undefined)
-    
-    @scala.inline
-    def setSpaces(value: Double | String): Self = this.set("spaces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpaces: Self = this.set("spaces", js.undefined)
+    def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.officeJsPreview.Excel.Interfaces
 
 import typings.officeJsPreview.Excel.Subtotals
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `pivotField.toJSON()`. */
 @js.native
-trait PivotFieldData extends js.Object {
+trait PivotFieldData extends StObject {
   
   /**
     *
@@ -58,51 +59,39 @@ object PivotFieldData {
   }
   
   @scala.inline
-  implicit class PivotFieldDataOps[Self <: PivotFieldData] (val x: Self) extends AnyVal {
+  implicit class PivotFieldDataMutableBuilder[Self <: PivotFieldData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItems(value: js.Array[PivotItemData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setItemsVarargs(value: PivotItemData*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: PivotItemData*): Self = this.set("items", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[PivotItemData]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setShowAllItems(value: Boolean): Self = StObject.set(x, "showAllItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setShowAllItemsUndefined: Self = StObject.set(x, "showAllItems", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSubtotals(value: Subtotals): Self = StObject.set(x, "subtotals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAllItems(value: Boolean): Self = this.set("showAllItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowAllItems: Self = this.set("showAllItems", js.undefined)
-    
-    @scala.inline
-    def setSubtotals(value: Subtotals): Self = this.set("subtotals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubtotals: Self = this.set("subtotals", js.undefined)
+    def setSubtotalsUndefined: Self = StObject.set(x, "subtotals", js.undefined)
   }
 }

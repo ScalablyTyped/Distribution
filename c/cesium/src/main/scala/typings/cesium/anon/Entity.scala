@@ -1,11 +1,12 @@
 package typings.cesium.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Entity extends js.Object {
+trait Entity extends StObject {
   
   var entity: typings.cesium.mod.Entity = js.native
   
@@ -32,36 +33,24 @@ object Entity {
   }
   
   @scala.inline
-  implicit class EntityOps[Self <: Entity] (val x: Self) extends AnyVal {
+  implicit class EntityMutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntity(value: typings.cesium.mod.Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeometryOptions(value: js.Any): Self = StObject.set(x, "geometryOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeometryPropertyName(value: String): Self = StObject.set(x, "geometryPropertyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntity(value: typings.cesium.mod.Entity): Self = this.set("entity", value.asInstanceOf[js.Any])
+    def setObservedPropertyNames(value: js.Array[String]): Self = StObject.set(x, "observedPropertyNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometryOptions(value: js.Any): Self = this.set("geometryOptions", value.asInstanceOf[js.Any])
+    def setObservedPropertyNamesVarargs(value: String*): Self = StObject.set(x, "observedPropertyNames", js.Array(value :_*))
     
     @scala.inline
-    def setGeometryPropertyName(value: String): Self = this.set("geometryPropertyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObservedPropertyNamesVarargs(value: String*): Self = this.set("observedPropertyNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setObservedPropertyNames(value: js.Array[String]): Self = this.set("observedPropertyNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScene(value: typings.cesium.mod.Scene): Self = this.set("scene", value.asInstanceOf[js.Any])
+    def setScene(value: typings.cesium.mod.Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
   }
 }

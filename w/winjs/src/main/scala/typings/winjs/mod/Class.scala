@@ -1,5 +1,6 @@
 package typings.winjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,9 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Provides helper functions for defining Classes.
 **/
-@JSImport("winjs", "Class")
-@js.native
-object Class extends js.Object {
+object Class {
   
   //#region Functions
   /**
@@ -19,17 +18,33 @@ object Class extends js.Object {
     * @param staticMembers The set of static fields, properties, and methods made available on the type.
     * @returns The newly-defined type.
     **/
+  @JSImport("winjs", "Class.define")
+  @js.native
   def define(): js.Any = js.native
+  @JSImport("winjs", "Class.define")
+  @js.native
   def define(
     constructor: js.UndefOr[scala.Nothing],
     instanceMembers: js.UndefOr[scala.Nothing],
     staticMembers: js.Any
   ): js.Any = js.native
+  @JSImport("winjs", "Class.define")
+  @js.native
   def define(constructor: js.UndefOr[scala.Nothing], instanceMembers: js.Any): js.Any = js.native
+  @JSImport("winjs", "Class.define")
+  @js.native
   def define(constructor: js.UndefOr[scala.Nothing], instanceMembers: js.Any, staticMembers: js.Any): js.Any = js.native
+  @JSImport("winjs", "Class.define")
+  @js.native
   def define(constructor: js.Function): js.Any = js.native
+  @JSImport("winjs", "Class.define")
+  @js.native
   def define(constructor: js.Function, instanceMembers: js.UndefOr[scala.Nothing], staticMembers: js.Any): js.Any = js.native
+  @JSImport("winjs", "Class.define")
+  @js.native
   def define(constructor: js.Function, instanceMembers: js.Any): js.Any = js.native
+  @JSImport("winjs", "Class.define")
+  @js.native
   def define(constructor: js.Function, instanceMembers: js.Any, staticMembers: js.Any): js.Any = js.native
   
   /**
@@ -40,14 +55,22 @@ object Class extends js.Object {
     * @param staticMembers The set of static fields, properties, and methods to be made available on the type.
     * @returns The newly-defined type.
     **/
+  @JSImport("winjs", "Class.derive")
+  @js.native
   def derive(baseClass: js.Any, constructor: js.Function): js.Any = js.native
+  @JSImport("winjs", "Class.derive")
+  @js.native
   def derive(
     baseClass: js.Any,
     constructor: js.Function,
     instanceMembers: js.UndefOr[scala.Nothing],
     staticMembers: js.Any
   ): js.Any = js.native
+  @JSImport("winjs", "Class.derive")
+  @js.native
   def derive(baseClass: js.Any, constructor: js.Function, instanceMembers: js.Any): js.Any = js.native
+  @JSImport("winjs", "Class.derive")
+  @js.native
   def derive(baseClass: js.Any, constructor: js.Function, instanceMembers: js.Any, staticMembers: js.Any): js.Any = js.native
   
   /**
@@ -56,5 +79,7 @@ object Class extends js.Object {
     * @param mixin An object declaring the set of instance members. The mixin parameter list is of variable length.
     * @returns The newly defined class.
     **/
+  @JSImport("winjs", "Class.mix")
+  @js.native
   def mix(constructor: js.Function, mixin: js.Any*): js.Any = js.native
 }

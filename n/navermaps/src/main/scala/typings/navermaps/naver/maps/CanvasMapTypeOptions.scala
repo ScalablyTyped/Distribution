@@ -1,11 +1,12 @@
 package typings.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanvasMapTypeOptions extends js.Object {
+trait CanvasMapTypeOptions extends StObject {
   
   var darktheme: js.UndefOr[Boolean] = js.native
   
@@ -38,75 +39,63 @@ object CanvasMapTypeOptions {
   }
   
   @scala.inline
-  implicit class CanvasMapTypeOptionsOps[Self <: CanvasMapTypeOptions] (val x: Self) extends AnyVal {
+  implicit class CanvasMapTypeOptionsMutableBuilder[Self <: CanvasMapTypeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDarktheme(value: Boolean): Self = StObject.set(x, "darktheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDarkthemeUndefined: Self = StObject.set(x, "darktheme", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetTileData(value: () => _): Self = StObject.set(x, "getTileData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    def setGetTileDataUndefined: Self = StObject.set(x, "getTileData", js.undefined)
     
     @scala.inline
-    def setMinZoom(value: Double): Self = this.set("minZoom", value.asInstanceOf[js.Any])
+    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjection(value: Projection): Self = this.set("projection", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDarktheme(value: Boolean): Self = this.set("darktheme", value.asInstanceOf[js.Any])
+    def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDarktheme: Self = this.set("darktheme", js.undefined)
+    def setProvider(value: js.Array[MapDataProvider]): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTileData(value: () => _): Self = this.set("getTileData", js.Any.fromFunction0(value))
+    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
     @scala.inline
-    def deleteGetTileData: Self = this.set("getTileData", js.undefined)
+    def setProviderVarargs(value: MapDataProvider*): Self = StObject.set(x, "provider", js.Array(value :_*))
     
     @scala.inline
-    def setProviderVarargs(value: MapDataProvider*): Self = this.set("provider", js.Array(value :_*))
+    def setRepeatX(value: Boolean): Self = StObject.set(x, "repeatX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvider(value: js.Array[MapDataProvider]): Self = this.set("provider", value.asInstanceOf[js.Any])
+    def setRepeatXUndefined: Self = StObject.set(x, "repeatX", js.undefined)
     
     @scala.inline
-    def deleteProvider: Self = this.set("provider", js.undefined)
+    def setTileSize(value: Size | SizeLiteral): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeatX(value: Boolean): Self = this.set("repeatX", value.asInstanceOf[js.Any])
+    def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
     
     @scala.inline
-    def deleteRepeatX: Self = this.set("repeatX", js.undefined)
+    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileSize(value: Size | SizeLiteral): Self = this.set("tileSize", value.asInstanceOf[js.Any])
+    def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
     
     @scala.inline
-    def deleteTileSize: Self = this.set("tileSize", js.undefined)
+    def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUid(value: String): Self = this.set("uid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUid: Self = this.set("uid", js.undefined)
-    
-    @scala.inline
-    def setVendor(value: String): Self = this.set("vendor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVendor: Self = this.set("vendor", js.undefined)
+    def setVendorUndefined: Self = StObject.set(x, "vendor", js.undefined)
   }
 }

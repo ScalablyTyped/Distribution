@@ -1,11 +1,12 @@
 package typings.suitescript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomLine extends js.Object {
+trait CustomLine extends StObject {
   
   def isBookSpecific(): Boolean = js.native
   
@@ -44,45 +45,33 @@ object CustomLine {
   }
   
   @scala.inline
-  implicit class CustomLineOps[Self <: CustomLine] (val x: Self) extends AnyVal {
+  implicit class CustomLineMutableBuilder[Self <: CustomLine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsBookSpecific(value: () => Boolean): Self = StObject.set(x, "isBookSpecific", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetAccountId(value: Double => Unit): Self = StObject.set(x, "setAccountId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetBookSpecific(value: Boolean => Unit): Self = StObject.set(x, "setBookSpecific", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsBookSpecific(value: () => Boolean): Self = this.set("isBookSpecific", js.Any.fromFunction0(value))
+    def setSetClassId(value: Double => Unit): Self = StObject.set(x, "setClassId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAccountId(value: Double => Unit): Self = this.set("setAccountId", js.Any.fromFunction1(value))
+    def setSetCreditAmount(value: String => Unit): Self = StObject.set(x, "setCreditAmount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetBookSpecific(value: Boolean => Unit): Self = this.set("setBookSpecific", js.Any.fromFunction1(value))
+    def setSetDebitAmount(value: String => Unit): Self = StObject.set(x, "setDebitAmount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetClassId(value: Double => Unit): Self = this.set("setClassId", js.Any.fromFunction1(value))
+    def setSetDepartmentId(value: Double => Unit): Self = StObject.set(x, "setDepartmentId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetCreditAmount(value: String => Unit): Self = this.set("setCreditAmount", js.Any.fromFunction1(value))
+    def setSetLocationId(value: Double => Unit): Self = StObject.set(x, "setLocationId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDebitAmount(value: String => Unit): Self = this.set("setDebitAmount", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDepartmentId(value: Double => Unit): Self = this.set("setDepartmentId", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetLocationId(value: Double => Unit): Self = this.set("setLocationId", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetMemo(value: String => Unit): Self = this.set("setMemo", js.Any.fromFunction1(value))
+    def setSetMemo(value: String => Unit): Self = StObject.set(x, "setMemo", js.Any.fromFunction1(value))
   }
 }

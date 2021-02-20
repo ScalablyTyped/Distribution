@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PanResponderGestureState extends js.Object {
+trait PanResponderGestureState extends StObject {
   
   // All `gestureState` accounts for timeStamps up until:
   var _accountsForMovesUpTo: Double = js.native
@@ -81,51 +82,39 @@ object PanResponderGestureState {
   }
   
   @scala.inline
-  implicit class PanResponderGestureStateOps[Self <: PanResponderGestureState] (val x: Self) extends AnyVal {
+  implicit class PanResponderGestureStateMutableBuilder[Self <: PanResponderGestureState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMoveX(value: Double): Self = StObject.set(x, "moveX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_accountsForMovesUpTo(value: Double): Self = this.set("_accountsForMovesUpTo", value.asInstanceOf[js.Any])
+    def setMoveY(value: Double): Self = StObject.set(x, "moveY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDx(value: Double): Self = this.set("dx", value.asInstanceOf[js.Any])
+    def setNumberActiveTouches(value: Double): Self = StObject.set(x, "numberActiveTouches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDy(value: Double): Self = this.set("dy", value.asInstanceOf[js.Any])
+    def setStateID(value: Double): Self = StObject.set(x, "stateID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveX(value: Double): Self = this.set("moveX", value.asInstanceOf[js.Any])
+    def setVx(value: Double): Self = StObject.set(x, "vx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveY(value: Double): Self = this.set("moveY", value.asInstanceOf[js.Any])
+    def setVy(value: Double): Self = StObject.set(x, "vy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberActiveTouches(value: Double): Self = this.set("numberActiveTouches", value.asInstanceOf[js.Any])
+    def setX0(value: Double): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateID(value: Double): Self = this.set("stateID", value.asInstanceOf[js.Any])
+    def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVx(value: Double): Self = this.set("vx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVy(value: Double): Self = this.set("vy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX0(value: Double): Self = this.set("x0", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY0(value: Double): Self = this.set("y0", value.asInstanceOf[js.Any])
+    def set_accountsForMovesUpTo(value: Double): Self = StObject.set(x, "_accountsForMovesUpTo", value.asInstanceOf[js.Any])
   }
 }

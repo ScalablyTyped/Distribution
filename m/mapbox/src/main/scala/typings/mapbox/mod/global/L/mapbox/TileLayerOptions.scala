@@ -1,5 +1,6 @@
 package typings.mapbox.mod.global.L.mapbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,24 +20,12 @@ object TileLayerOptions {
   }
   
   @scala.inline
-  implicit class TileLayerOptionsOps[Self <: TileLayerOptions] (val x: Self) extends AnyVal {
+  implicit class TileLayerOptionsMutableBuilder[Self <: TileLayerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRetinaVersion(value: String): Self = StObject.set(x, "retinaVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRetinaVersion(value: String): Self = this.set("retinaVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetinaVersion: Self = this.set("retinaVersion", js.undefined)
+    def setRetinaVersionUndefined: Self = StObject.set(x, "retinaVersion", js.undefined)
   }
 }

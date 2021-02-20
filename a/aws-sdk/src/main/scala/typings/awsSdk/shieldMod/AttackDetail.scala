@@ -1,11 +1,12 @@
 package typings.awsSdk.shieldMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttackDetail extends js.Object {
+trait AttackDetail extends StObject {
   
   /**
     * List of counters that describe the attack for the specified time period.
@@ -56,78 +57,66 @@ object AttackDetail {
   }
   
   @scala.inline
-  implicit class AttackDetailOps[Self <: AttackDetail] (val x: Self) extends AnyVal {
+  implicit class AttackDetailMutableBuilder[Self <: AttackDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttackCounters(value: SummarizedCounterList): Self = StObject.set(x, "AttackCounters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttackCountersUndefined: Self = StObject.set(x, "AttackCounters", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttackCountersVarargs(value: SummarizedCounter*): Self = StObject.set(x, "AttackCounters", js.Array(value :_*))
     
     @scala.inline
-    def setAttackCountersVarargs(value: SummarizedCounter*): Self = this.set("AttackCounters", js.Array(value :_*))
+    def setAttackId(value: AttackId): Self = StObject.set(x, "AttackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttackCounters(value: SummarizedCounterList): Self = this.set("AttackCounters", value.asInstanceOf[js.Any])
+    def setAttackIdUndefined: Self = StObject.set(x, "AttackId", js.undefined)
     
     @scala.inline
-    def deleteAttackCounters: Self = this.set("AttackCounters", js.undefined)
+    def setAttackProperties(value: AttackProperties): Self = StObject.set(x, "AttackProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttackId(value: AttackId): Self = this.set("AttackId", value.asInstanceOf[js.Any])
+    def setAttackPropertiesUndefined: Self = StObject.set(x, "AttackProperties", js.undefined)
     
     @scala.inline
-    def deleteAttackId: Self = this.set("AttackId", js.undefined)
+    def setAttackPropertiesVarargs(value: AttackProperty*): Self = StObject.set(x, "AttackProperties", js.Array(value :_*))
     
     @scala.inline
-    def setAttackPropertiesVarargs(value: AttackProperty*): Self = this.set("AttackProperties", js.Array(value :_*))
+    def setEndTime(value: AttackTimestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttackProperties(value: AttackProperties): Self = this.set("AttackProperties", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def deleteAttackProperties: Self = this.set("AttackProperties", js.undefined)
+    def setMitigations(value: MitigationList): Self = StObject.set(x, "Mitigations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: AttackTimestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setMitigationsUndefined: Self = StObject.set(x, "Mitigations", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setMitigationsVarargs(value: Mitigation*): Self = StObject.set(x, "Mitigations", js.Array(value :_*))
     
     @scala.inline
-    def setMitigationsVarargs(value: Mitigation*): Self = this.set("Mitigations", js.Array(value :_*))
+    def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMitigations(value: MitigationList): Self = this.set("Mitigations", value.asInstanceOf[js.Any])
+    def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
     
     @scala.inline
-    def deleteMitigations: Self = this.set("Mitigations", js.undefined)
+    def setStartTime(value: AttackTimestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceArn(value: ResourceArn): Self = this.set("ResourceArn", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
     @scala.inline
-    def deleteResourceArn: Self = this.set("ResourceArn", js.undefined)
+    def setSubResources(value: SubResourceSummaryList): Self = StObject.set(x, "SubResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: AttackTimestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    def setSubResourcesUndefined: Self = StObject.set(x, "SubResources", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
-    
-    @scala.inline
-    def setSubResourcesVarargs(value: SubResourceSummary*): Self = this.set("SubResources", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubResources(value: SubResourceSummaryList): Self = this.set("SubResources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubResources: Self = this.set("SubResources", js.undefined)
+    def setSubResourcesVarargs(value: SubResourceSummary*): Self = StObject.set(x, "SubResources", js.Array(value :_*))
   }
 }

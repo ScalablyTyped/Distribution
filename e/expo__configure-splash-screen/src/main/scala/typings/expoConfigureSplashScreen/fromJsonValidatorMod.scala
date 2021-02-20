@@ -5,16 +5,19 @@ import typings.expoConfigureSplashScreen.typesMod.IsNever
 import typings.expoConfigureSplashScreen.typesMod.JsonShape
 import typings.expoConfigureSplashScreen.typesMod.NonPrimitiveAndNonArrayKeys
 import typings.expoConfigureSplashScreen.typesMod.OptionalPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@expo/configure-splash-screen/build/validators/FromJsonValidator", JSImport.Namespace)
-@js.native
-object fromJsonValidatorMod extends js.Object {
+object fromJsonValidatorMod {
+  
+  @JSImport("@expo/configure-splash-screen/build/validators/FromJsonValidator", JSImport.Default)
+  @js.native
+  class default[From /* <: JsonShape[To] */, To /* <: js.Object */] () extends FromJsonValidator[From, To]
   
   @js.native
-  trait FromJsonValidator[From /* <: JsonShape[To] */, To /* <: js.Object */] extends js.Object {
+  trait FromJsonValidator[From /* <: JsonShape[To] */, To /* <: js.Object */] extends StObject {
     
     /**
       * Add rule that determined what property is copied from JSON object into actual validated object.
@@ -138,7 +141,4 @@ object fromJsonValidatorMod extends js.Object {
     
     def validate(jsonConfig: From): js.Promise[To] = js.native
   }
-  
-  @js.native
-  class default[From /* <: JsonShape[To] */, To /* <: js.Object */] () extends FromJsonValidator[From, To]
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingplansMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScalingInstruction extends js.Object {
+trait ScalingInstruction extends StObject {
   
   /**
     * The customized load metric to use for predictive scaling. This parameter or a PredefinedLoadMetricSpecification is required when configuring predictive scaling, and cannot be used otherwise. 
@@ -93,87 +94,75 @@ object ScalingInstruction {
   }
   
   @scala.inline
-  implicit class ScalingInstructionOps[Self <: ScalingInstruction] (val x: Self) extends AnyVal {
+  implicit class ScalingInstructionMutableBuilder[Self <: ScalingInstruction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomizedLoadMetricSpecification(value: CustomizedLoadMetricSpecification): Self = StObject.set(x, "CustomizedLoadMetricSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomizedLoadMetricSpecificationUndefined: Self = StObject.set(x, "CustomizedLoadMetricSpecification", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableDynamicScaling(value: DisableDynamicScaling): Self = StObject.set(x, "DisableDynamicScaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCapacity(value: ResourceCapacity): Self = this.set("MaxCapacity", value.asInstanceOf[js.Any])
+    def setDisableDynamicScalingUndefined: Self = StObject.set(x, "DisableDynamicScaling", js.undefined)
     
     @scala.inline
-    def setMinCapacity(value: ResourceCapacity): Self = this.set("MinCapacity", value.asInstanceOf[js.Any])
+    def setMaxCapacity(value: ResourceCapacity): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: ResourceIdMaxLen1600): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    def setMinCapacity(value: ResourceCapacity): Self = StObject.set(x, "MinCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalableDimension(value: ScalableDimension): Self = this.set("ScalableDimension", value.asInstanceOf[js.Any])
+    def setPredefinedLoadMetricSpecification(value: PredefinedLoadMetricSpecification): Self = StObject.set(x, "PredefinedLoadMetricSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceNamespace(value: ServiceNamespace): Self = this.set("ServiceNamespace", value.asInstanceOf[js.Any])
+    def setPredefinedLoadMetricSpecificationUndefined: Self = StObject.set(x, "PredefinedLoadMetricSpecification", js.undefined)
     
     @scala.inline
-    def setTargetTrackingConfigurationsVarargs(value: TargetTrackingConfiguration*): Self = this.set("TargetTrackingConfigurations", js.Array(value :_*))
+    def setPredictiveScalingMaxCapacityBehavior(value: PredictiveScalingMaxCapacityBehavior): Self = StObject.set(x, "PredictiveScalingMaxCapacityBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetTrackingConfigurations(value: TargetTrackingConfigurations): Self = this.set("TargetTrackingConfigurations", value.asInstanceOf[js.Any])
+    def setPredictiveScalingMaxCapacityBehaviorUndefined: Self = StObject.set(x, "PredictiveScalingMaxCapacityBehavior", js.undefined)
     
     @scala.inline
-    def setCustomizedLoadMetricSpecification(value: CustomizedLoadMetricSpecification): Self = this.set("CustomizedLoadMetricSpecification", value.asInstanceOf[js.Any])
+    def setPredictiveScalingMaxCapacityBuffer(value: ResourceCapacity): Self = StObject.set(x, "PredictiveScalingMaxCapacityBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomizedLoadMetricSpecification: Self = this.set("CustomizedLoadMetricSpecification", js.undefined)
+    def setPredictiveScalingMaxCapacityBufferUndefined: Self = StObject.set(x, "PredictiveScalingMaxCapacityBuffer", js.undefined)
     
     @scala.inline
-    def setDisableDynamicScaling(value: DisableDynamicScaling): Self = this.set("DisableDynamicScaling", value.asInstanceOf[js.Any])
+    def setPredictiveScalingMode(value: PredictiveScalingMode): Self = StObject.set(x, "PredictiveScalingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableDynamicScaling: Self = this.set("DisableDynamicScaling", js.undefined)
+    def setPredictiveScalingModeUndefined: Self = StObject.set(x, "PredictiveScalingMode", js.undefined)
     
     @scala.inline
-    def setPredefinedLoadMetricSpecification(value: PredefinedLoadMetricSpecification): Self = this.set("PredefinedLoadMetricSpecification", value.asInstanceOf[js.Any])
+    def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePredefinedLoadMetricSpecification: Self = this.set("PredefinedLoadMetricSpecification", js.undefined)
+    def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPredictiveScalingMaxCapacityBehavior(value: PredictiveScalingMaxCapacityBehavior): Self = this.set("PredictiveScalingMaxCapacityBehavior", value.asInstanceOf[js.Any])
+    def setScalingPolicyUpdateBehavior(value: ScalingPolicyUpdateBehavior): Self = StObject.set(x, "ScalingPolicyUpdateBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePredictiveScalingMaxCapacityBehavior: Self = this.set("PredictiveScalingMaxCapacityBehavior", js.undefined)
+    def setScalingPolicyUpdateBehaviorUndefined: Self = StObject.set(x, "ScalingPolicyUpdateBehavior", js.undefined)
     
     @scala.inline
-    def setPredictiveScalingMaxCapacityBuffer(value: ResourceCapacity): Self = this.set("PredictiveScalingMaxCapacityBuffer", value.asInstanceOf[js.Any])
+    def setScheduledActionBufferTime(value: ScheduledActionBufferTime): Self = StObject.set(x, "ScheduledActionBufferTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePredictiveScalingMaxCapacityBuffer: Self = this.set("PredictiveScalingMaxCapacityBuffer", js.undefined)
+    def setScheduledActionBufferTimeUndefined: Self = StObject.set(x, "ScheduledActionBufferTime", js.undefined)
     
     @scala.inline
-    def setPredictiveScalingMode(value: PredictiveScalingMode): Self = this.set("PredictiveScalingMode", value.asInstanceOf[js.Any])
+    def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePredictiveScalingMode: Self = this.set("PredictiveScalingMode", js.undefined)
+    def setTargetTrackingConfigurations(value: TargetTrackingConfigurations): Self = StObject.set(x, "TargetTrackingConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalingPolicyUpdateBehavior(value: ScalingPolicyUpdateBehavior): Self = this.set("ScalingPolicyUpdateBehavior", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScalingPolicyUpdateBehavior: Self = this.set("ScalingPolicyUpdateBehavior", js.undefined)
-    
-    @scala.inline
-    def setScheduledActionBufferTime(value: ScheduledActionBufferTime): Self = this.set("ScheduledActionBufferTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduledActionBufferTime: Self = this.set("ScheduledActionBufferTime", js.undefined)
+    def setTargetTrackingConfigurationsVarargs(value: TargetTrackingConfiguration*): Self = StObject.set(x, "TargetTrackingConfigurations", js.Array(value :_*))
   }
 }

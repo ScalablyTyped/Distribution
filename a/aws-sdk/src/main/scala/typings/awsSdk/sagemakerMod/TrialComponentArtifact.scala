@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrialComponentArtifact extends js.Object {
+trait TrialComponentArtifact extends StObject {
   
   /**
     * The media type of the artifact, which indicates the type of data in the artifact file. The media type consists of a type and a subtype concatenated with a slash (/) character, for example, text/csv, image/jpeg, and s3/uri. The type specifies the category of the media. The subtype specifies the kind of data.
@@ -26,27 +27,15 @@ object TrialComponentArtifact {
   }
   
   @scala.inline
-  implicit class TrialComponentArtifactOps[Self <: TrialComponentArtifact] (val x: Self) extends AnyVal {
+  implicit class TrialComponentArtifactMutableBuilder[Self <: TrialComponentArtifact] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMediaType(value: MediaType): Self = StObject.set(x, "MediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMediaTypeUndefined: Self = StObject.set(x, "MediaType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setValue(value: TrialComponentArtifactValue): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediaType(value: MediaType): Self = this.set("MediaType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMediaType: Self = this.set("MediaType", js.undefined)
+    def setValue(value: TrialComponentArtifactValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

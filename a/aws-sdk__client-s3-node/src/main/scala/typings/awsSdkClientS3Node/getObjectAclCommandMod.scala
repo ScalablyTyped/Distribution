@@ -7,14 +7,14 @@ import typings.awsSdkClientS3Node.typesGetObjectAclInputMod.GetObjectAclInput
 import typings.awsSdkClientS3Node.typesGetObjectAclOutputMod.GetObjectAclOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/commands/GetObjectAclCommand", JSImport.Namespace)
-@js.native
-object getObjectAclCommandMod extends js.Object {
+object getObjectAclCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-node/commands/GetObjectAclCommand", "GetObjectAclCommand")
   @js.native
   class GetObjectAclCommand protected () extends Command[
           InputTypesUnion, 

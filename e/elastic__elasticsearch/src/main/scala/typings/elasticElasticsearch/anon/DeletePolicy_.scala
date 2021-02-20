@@ -10,12 +10,13 @@ import typings.elasticElasticsearch.transportMod.RequestBody
 import typings.elasticElasticsearch.transportMod.TransportRequestOptions
 import typings.elasticElasticsearch.transportMod.TransportRequestPromise
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeletePolicy_ extends js.Object {
+trait DeletePolicy_ extends StObject {
   
   def deletePolicy[TResponse, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def deletePolicy[TResponse, TContext](params: js.UndefOr[scala.Nothing], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native

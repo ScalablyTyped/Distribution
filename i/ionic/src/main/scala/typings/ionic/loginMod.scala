@@ -2,21 +2,23 @@ package typings.ionic
 
 import typings.ionic.commandMod.Command
 import typings.ionic.definitionsMod.CommandInstanceInfo
+import typings.ionic.definitionsMod.INamespace
 import typings.ionicCliFramework.definitionsMod.CommandLineInputs
 import typings.ionicCliFramework.definitionsMod.CommandLineOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/commands/login", JSImport.Namespace)
-@js.native
-object loginMod extends js.Object {
+object loginMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.ionicCliFramework.definitionsMod.ICommand because Already inherited
   - typings.ionic.definitionsMod.ICommand because Already inherited
-  - typings.ionic.definitionsMod.CommandPreRun because var conflicts: env, namespace, project. Inlined preRun */ @js.native
-  class LoginCommand () extends Command {
+  - typings.ionic.definitionsMod.CommandPreRun because var conflicts: env, namespace, project. Inlined preRun */ @JSImport("ionic/commands/login", "LoginCommand")
+  @js.native
+  class LoginCommand protected () extends Command {
+    def this(namespace: INamespace) = this()
     
     def getPasswordFromStdin(): js.Promise[String] = js.native
     

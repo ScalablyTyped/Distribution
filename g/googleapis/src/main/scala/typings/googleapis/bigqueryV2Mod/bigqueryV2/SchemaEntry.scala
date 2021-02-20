@@ -1,5 +1,6 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A single entry in the confusion matrix.
   */
 @js.native
-trait SchemaEntry extends js.Object {
+trait SchemaEntry extends StObject {
   
   /**
     * Number of items being predicted as this label.
@@ -30,30 +31,18 @@ object SchemaEntry {
   }
   
   @scala.inline
-  implicit class SchemaEntryOps[Self <: SchemaEntry] (val x: Self) extends AnyVal {
+  implicit class SchemaEntryMutableBuilder[Self <: SchemaEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItemCount(value: String): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemCountUndefined: Self = StObject.set(x, "itemCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPredictedLabel(value: String): Self = StObject.set(x, "predictedLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemCount(value: String): Self = this.set("itemCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItemCount: Self = this.set("itemCount", js.undefined)
-    
-    @scala.inline
-    def setPredictedLabel(value: String): Self = this.set("predictedLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePredictedLabel: Self = this.set("predictedLabel", js.undefined)
+    def setPredictedLabelUndefined: Self = StObject.set(x, "predictedLabel", js.undefined)
   }
 }

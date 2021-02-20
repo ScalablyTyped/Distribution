@@ -1,5 +1,6 @@
 package typings.googleapis.serviceusageV1Mod.serviceusageV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The configuration of the service.
   */
 @js.native
-trait SchemaGoogleApiServiceusageV1ServiceConfig extends js.Object {
+trait SchemaGoogleApiServiceusageV1ServiceConfig extends StObject {
   
   /**
     * A list of API interfaces exported by this service. Contains only the
@@ -63,72 +64,60 @@ object SchemaGoogleApiServiceusageV1ServiceConfig {
   }
   
   @scala.inline
-  implicit class SchemaGoogleApiServiceusageV1ServiceConfigOps[Self <: SchemaGoogleApiServiceusageV1ServiceConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleApiServiceusageV1ServiceConfigMutableBuilder[Self <: SchemaGoogleApiServiceusageV1ServiceConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApis(value: js.Array[SchemaApi]): Self = StObject.set(x, "apis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApisUndefined: Self = StObject.set(x, "apis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApisVarargs(value: SchemaApi*): Self = StObject.set(x, "apis", js.Array(value :_*))
     
     @scala.inline
-    def setApisVarargs(value: SchemaApi*): Self = this.set("apis", js.Array(value :_*))
+    def setAuthentication(value: SchemaAuthentication): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApis(value: js.Array[SchemaApi]): Self = this.set("apis", value.asInstanceOf[js.Any])
+    def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
     
     @scala.inline
-    def deleteApis: Self = this.set("apis", js.undefined)
+    def setDocumentation(value: SchemaDocumentation): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthentication(value: SchemaAuthentication): Self = this.set("authentication", value.asInstanceOf[js.Any])
+    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
     @scala.inline
-    def deleteAuthentication: Self = this.set("authentication", js.undefined)
+    def setEndpoints(value: js.Array[SchemaEndpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentation(value: SchemaDocumentation): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    def setEndpointsUndefined: Self = StObject.set(x, "endpoints", js.undefined)
     
     @scala.inline
-    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    def setEndpointsVarargs(value: SchemaEndpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
     
     @scala.inline
-    def setEndpointsVarargs(value: SchemaEndpoint*): Self = this.set("endpoints", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoints(value: js.Array[SchemaEndpoint]): Self = this.set("endpoints", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteEndpoints: Self = this.set("endpoints", js.undefined)
+    def setQuota(value: SchemaQuota): Self = StObject.set(x, "quota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setQuotaUndefined: Self = StObject.set(x, "quota", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuota(value: SchemaQuota): Self = this.set("quota", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteQuota: Self = this.set("quota", js.undefined)
+    def setUsage(value: SchemaUsage): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setUsage(value: SchemaUsage): Self = this.set("usage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsage: Self = this.set("usage", js.undefined)
+    def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.datatablesNetButtons.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region "Button Settings"
 @js.native
-trait ButtonsSettings extends js.Object {
+trait ButtonsSettings extends StObject {
   
   var buttons: js.Array[String | FunctionButtom | ButtonSettings] = js.native
   
@@ -25,42 +26,30 @@ object ButtonsSettings {
   }
   
   @scala.inline
-  implicit class ButtonsSettingsOps[Self <: ButtonsSettings] (val x: Self) extends AnyVal {
+  implicit class ButtonsSettingsMutableBuilder[Self <: ButtonsSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtons(value: js.Array[String | FunctionButtom | ButtonSettings]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonsVarargs(value: (String | FunctionButtom | ButtonSettings)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDom(value: ButtonDomSettings): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonsVarargs(value: (String | FunctionButtom | ButtonSettings)*): Self = this.set("buttons", js.Array(value :_*))
+    def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
     
     @scala.inline
-    def setButtons(value: js.Array[String | FunctionButtom | ButtonSettings]): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDom(value: ButtonDomSettings): Self = this.set("dom", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDom: Self = this.set("dom", js.undefined)
+    def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
   }
 }

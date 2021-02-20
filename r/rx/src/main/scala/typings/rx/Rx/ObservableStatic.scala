@@ -6,12 +6,13 @@ import typings.rx.anon.Off
 import typings.std.Date
 import typings.std.Error
 import typings.std.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObservableStatic extends js.Object {
+trait ObservableStatic extends StObject {
   
   /**
     * Propagates the observable sequence or Promise that reacts first.

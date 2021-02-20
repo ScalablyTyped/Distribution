@@ -1,11 +1,12 @@
 package typings.carbonType.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mozosxfontsmoothing extends js.Object {
+trait Mozosxfontsmoothing extends StObject {
   
   var `-moz-osx-font-smoothing`: String = js.native
   
@@ -34,33 +35,21 @@ object Mozosxfontsmoothing {
   }
   
   @scala.inline
-  implicit class MozosxfontsmoothingOps[Self <: Mozosxfontsmoothing] (val x: Self) extends AnyVal {
+  implicit class MozosxfontsmoothingMutableBuilder[Self <: Mozosxfontsmoothing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `set-moz-osx-font-smoothing`(value: String): Self = StObject.set(x, "-moz-osx-font-smoothing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `set-webkit-font-smoothing`(value: String): Self = StObject.set(x, "-webkit-font-smoothing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set-moz-osx-font-smoothing`(value: String): Self = this.set("-moz-osx-font-smoothing", value.asInstanceOf[js.Any])
+    def setFontWeight(value: Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set-webkit-font-smoothing`(value: String): Self = this.set("-webkit-font-smoothing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFontWeight(value: Double): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextRendering(value: String): Self = this.set("textRendering", value.asInstanceOf[js.Any])
+    def setTextRendering(value: String): Self = StObject.set(x, "textRendering", value.asInstanceOf[js.Any])
   }
 }

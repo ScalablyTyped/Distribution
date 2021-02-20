@@ -1,5 +1,6 @@
 package typings.googleapis.classroomV1Mod.classroomV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Announcement created by a teacher for students of the course
   */
 @js.native
-trait SchemaAnnouncement extends js.Object {
+trait SchemaAnnouncement extends StObject {
   
   /**
     * Absolute link to this announcement in the Classroom web UI. This is only
@@ -88,93 +89,81 @@ object SchemaAnnouncement {
   }
   
   @scala.inline
-  implicit class SchemaAnnouncementOps[Self <: SchemaAnnouncement] (val x: Self) extends AnyVal {
+  implicit class SchemaAnnouncementMutableBuilder[Self <: SchemaAnnouncement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternateLink(value: String): Self = StObject.set(x, "alternateLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternateLinkUndefined: Self = StObject.set(x, "alternateLink", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssigneeMode(value: String): Self = StObject.set(x, "assigneeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternateLink(value: String): Self = this.set("alternateLink", value.asInstanceOf[js.Any])
+    def setAssigneeModeUndefined: Self = StObject.set(x, "assigneeMode", js.undefined)
     
     @scala.inline
-    def deleteAlternateLink: Self = this.set("alternateLink", js.undefined)
+    def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssigneeMode(value: String): Self = this.set("assigneeMode", value.asInstanceOf[js.Any])
+    def setCourseIdUndefined: Self = StObject.set(x, "courseId", js.undefined)
     
     @scala.inline
-    def deleteAssigneeMode: Self = this.set("assigneeMode", js.undefined)
+    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCourseId(value: String): Self = this.set("courseId", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
     @scala.inline
-    def deleteCourseId: Self = this.set("courseId", js.undefined)
+    def setCreatorUserId(value: String): Self = StObject.set(x, "creatorUserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: String): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    def setCreatorUserIdUndefined: Self = StObject.set(x, "creatorUserId", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatorUserId(value: String): Self = this.set("creatorUserId", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCreatorUserId: Self = this.set("creatorUserId", js.undefined)
+    def setIndividualStudentsOptions(value: SchemaIndividualStudentsOptions): Self = StObject.set(x, "individualStudentsOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIndividualStudentsOptionsUndefined: Self = StObject.set(x, "individualStudentsOptions", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setMaterials(value: js.Array[SchemaMaterial]): Self = StObject.set(x, "materials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndividualStudentsOptions(value: SchemaIndividualStudentsOptions): Self = this.set("individualStudentsOptions", value.asInstanceOf[js.Any])
+    def setMaterialsUndefined: Self = StObject.set(x, "materials", js.undefined)
     
     @scala.inline
-    def deleteIndividualStudentsOptions: Self = this.set("individualStudentsOptions", js.undefined)
+    def setMaterialsVarargs(value: SchemaMaterial*): Self = StObject.set(x, "materials", js.Array(value :_*))
     
     @scala.inline
-    def setMaterialsVarargs(value: SchemaMaterial*): Self = this.set("materials", js.Array(value :_*))
+    def setScheduledTime(value: String): Self = StObject.set(x, "scheduledTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaterials(value: js.Array[SchemaMaterial]): Self = this.set("materials", value.asInstanceOf[js.Any])
+    def setScheduledTimeUndefined: Self = StObject.set(x, "scheduledTime", js.undefined)
     
     @scala.inline
-    def deleteMaterials: Self = this.set("materials", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduledTime(value: String): Self = this.set("scheduledTime", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteScheduledTime: Self = this.set("scheduledTime", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

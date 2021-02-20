@@ -1,6 +1,7 @@
 package typings.mockAwsS3.mod
 
 import typings.awsSdk.credentialsMod.CredentialsOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,9 +27,15 @@ class Credentials protected ()
   def this(accessKeyId: String, secretAccessKey: String, sessionToken: String) = this()
 }
 /* static members */
-@JSImport("mock-aws-s3", "Credentials")
-@js.native
-object Credentials extends js.Object {
+object Credentials {
   
-  var expiryWindow: Double = js.native
+  @JSImport("mock-aws-s3", "Credentials")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("mock-aws-s3", "Credentials.expiryWindow")
+  @js.native
+  def expiryWindow: Double = js.native
+  @scala.inline
+  def expiryWindow_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expiryWindow")(x.asInstanceOf[js.Any])
 }

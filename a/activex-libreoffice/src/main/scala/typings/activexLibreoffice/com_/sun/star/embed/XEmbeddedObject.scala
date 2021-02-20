@@ -8,6 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.document.XEventListener
 import typings.activexLibreoffice.com_.sun.star.util.XCloseListener
 import typings.activexLibreoffice.com_.sun.star.util.XCloseable
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -182,63 +183,51 @@ object XEmbeddedObject {
   }
   
   @scala.inline
-  implicit class XEmbeddedObjectOps[Self <: XEmbeddedObject] (val x: Self) extends AnyVal {
+  implicit class XEmbeddedObjectMutableBuilder[Self <: XEmbeddedObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeState(value: Double => Unit): Self = StObject.set(x, "changeState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientSite(value: XEmbeddedClient): Self = StObject.set(x, "ClientSite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentState(value: Double): Self = StObject.set(x, "CurrentState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientSite(value: XEmbeddedClient): Self = this.set("ClientSite", value.asInstanceOf[js.Any])
+    def setDoVerb(value: Double => Unit): Self = StObject.set(x, "doVerb", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCurrentState(value: Double): Self = this.set("CurrentState", value.asInstanceOf[js.Any])
+    def setGetClientSite(value: () => XEmbeddedClient): Self = StObject.set(x, "getClientSite", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReachableStates(value: SafeArray[Double]): Self = this.set("ReachableStates", value.asInstanceOf[js.Any])
+    def setGetCurrentState(value: () => Double): Self = StObject.set(x, "getCurrentState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportedVerbs(value: SafeArray[VerbDescriptor]): Self = this.set("SupportedVerbs", value.asInstanceOf[js.Any])
+    def setGetReachableStates(value: () => SafeArray[Double]): Self = StObject.set(x, "getReachableStates", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeState(value: Double => Unit): Self = this.set("changeState", js.Any.fromFunction1(value))
+    def setGetStatus(value: Double => Double): Self = StObject.set(x, "getStatus", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDoVerb(value: Double => Unit): Self = this.set("doVerb", js.Any.fromFunction1(value))
+    def setGetSupportedVerbs(value: () => SafeArray[VerbDescriptor]): Self = StObject.set(x, "getSupportedVerbs", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetClientSite(value: () => XEmbeddedClient): Self = this.set("getClientSite", js.Any.fromFunction0(value))
+    def setReachableStates(value: SafeArray[Double]): Self = StObject.set(x, "ReachableStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCurrentState(value: () => Double): Self = this.set("getCurrentState", js.Any.fromFunction0(value))
+    def setSetClientSite(value: XEmbeddedClient => Unit): Self = StObject.set(x, "setClientSite", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetReachableStates(value: () => SafeArray[Double]): Self = this.set("getReachableStates", js.Any.fromFunction0(value))
+    def setSetContainerName(value: String => Unit): Self = StObject.set(x, "setContainerName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetStatus(value: Double => Double): Self = this.set("getStatus", js.Any.fromFunction1(value))
+    def setSetUpdateMode(value: Double => Unit): Self = StObject.set(x, "setUpdateMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSupportedVerbs(value: () => SafeArray[VerbDescriptor]): Self = this.set("getSupportedVerbs", js.Any.fromFunction0(value))
+    def setSupportedVerbs(value: SafeArray[VerbDescriptor]): Self = StObject.set(x, "SupportedVerbs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetClientSite(value: XEmbeddedClient => Unit): Self = this.set("setClientSite", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetContainerName(value: String => Unit): Self = this.set("setContainerName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetUpdateMode(value: Double => Unit): Self = this.set("setUpdateMode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
+    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

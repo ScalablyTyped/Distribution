@@ -10,12 +10,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.max
 import typings.arcgisJsApi.arcgisJsApiStrings.min
 import typings.arcgisJsApi.arcgisJsApiStrings.stddev
 import typings.arcgisJsApi.arcgisJsApiStrings.sum
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldInfoProperties extends js.Object {
+trait FieldInfoProperties extends StObject {
   
   /**
     * The field name as defined by  the service or the `name` of an [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression.
@@ -82,66 +83,54 @@ object FieldInfoProperties {
   }
   
   @scala.inline
-  implicit class FieldInfoPropertiesOps[Self <: FieldInfoProperties] (val x: Self) extends AnyVal {
+  implicit class FieldInfoPropertiesMutableBuilder[Self <: FieldInfoProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: FieldInfoFormatProperties): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldName(value: String): Self = this.set("fieldName", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteFieldName: Self = this.set("fieldName", js.undefined)
+    def setIsEditable(value: Boolean): Self = StObject.set(x, "isEditable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: FieldInfoFormatProperties): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setIsEditableUndefined: Self = StObject.set(x, "isEditable", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEditable(value: Boolean): Self = this.set("isEditable", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteIsEditable: Self = this.set("isEditable", js.undefined)
+    def setStatisticType(value: count | sum | min | max | avg | stddev | `var`): Self = StObject.set(x, "statisticType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setStatisticTypeUndefined: Self = StObject.set(x, "statisticType", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setStringFieldOption(value: `rich-text` | `text-area` | `text-box`): Self = StObject.set(x, "stringFieldOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatisticType(value: count | sum | min | max | avg | stddev | `var`): Self = this.set("statisticType", value.asInstanceOf[js.Any])
+    def setStringFieldOptionUndefined: Self = StObject.set(x, "stringFieldOption", js.undefined)
     
     @scala.inline
-    def deleteStatisticType: Self = this.set("statisticType", js.undefined)
+    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStringFieldOption(value: `rich-text` | `text-area` | `text-box`): Self = this.set("stringFieldOption", value.asInstanceOf[js.Any])
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
     @scala.inline
-    def deleteStringFieldOption: Self = this.set("stringFieldOption", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltip(value: String): Self = this.set("tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

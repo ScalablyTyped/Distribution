@@ -5,16 +5,16 @@ import typings.three.constantsMod.InterpolationModes
 import typings.three.cubicInterpolantMod.CubicInterpolant
 import typings.three.discreteInterpolantMod.DiscreteInterpolant
 import typings.three.linearInterpolantMod.LinearInterpolant
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/animation/KeyframeTrack", JSImport.Namespace)
-@js.native
-object keyframeTrackMod extends js.Object {
+object keyframeTrackMod {
   
+  @JSImport("three/src/animation/KeyframeTrack", "KeyframeTrack")
   @js.native
-  class KeyframeTrack protected () extends js.Object {
+  class KeyframeTrack protected () extends StObject {
     /**
     	 * @param name
     	 * @param times
@@ -64,9 +64,10 @@ object keyframeTrackMod extends js.Object {
     var values: Float32Array = js.native
   }
   /* static members */
-  @js.native
-  object KeyframeTrack extends js.Object {
+  object KeyframeTrack {
     
+    @JSImport("three/src/animation/KeyframeTrack", "KeyframeTrack.toJSON")
+    @js.native
     def toJSON(track: KeyframeTrack): js.Any = js.native
   }
 }

@@ -1,11 +1,12 @@
 package typings.jqueryUniform
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Uniform extends js.Object {
+trait Uniform extends StObject {
   
   def apply(): JQuery = js.native
   def apply(options: UniformOptions): JQuery = js.native

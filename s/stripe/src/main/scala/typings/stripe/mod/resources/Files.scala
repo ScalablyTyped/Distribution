@@ -5,17 +5,20 @@ import typings.stripe.mod.IDataOptions
 import typings.stripe.mod.IList
 import typings.stripe.mod.IListPromise
 import typings.stripe.mod.IResponseFn
+import typings.stripe.mod.Stripe
 import typings.stripe.mod.StripeResource
 import typings.stripe.mod.files.IFileCreationOptions
 import typings.stripe.mod.files.IFileListOptions
 import typings.stripe.mod.files.IFileUpdate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Files")
 @js.native
-class Files () extends StripeResource {
+class Files protected () extends StripeResource {
+  def this(stripe: Stripe, urlData: js.Any) = this()
   
   def create(data: IFileCreationOptions): js.Promise[IFileUpdate] = js.native
   /**

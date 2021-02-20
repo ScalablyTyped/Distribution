@@ -1,11 +1,12 @@
 package typings.awsSdk.athenaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDataCatalogsOutput extends js.Object {
+trait ListDataCatalogsOutput extends StObject {
   
   /**
     * A summary list of data catalogs.
@@ -26,33 +27,21 @@ object ListDataCatalogsOutput {
   }
   
   @scala.inline
-  implicit class ListDataCatalogsOutputOps[Self <: ListDataCatalogsOutput] (val x: Self) extends AnyVal {
+  implicit class ListDataCatalogsOutputMutableBuilder[Self <: ListDataCatalogsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataCatalogsSummary(value: DataCatalogSummaryList): Self = StObject.set(x, "DataCatalogsSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataCatalogsSummaryUndefined: Self = StObject.set(x, "DataCatalogsSummary", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataCatalogsSummaryVarargs(value: DataCatalogSummary*): Self = StObject.set(x, "DataCatalogsSummary", js.Array(value :_*))
     
     @scala.inline
-    def setDataCatalogsSummaryVarargs(value: DataCatalogSummary*): Self = this.set("DataCatalogsSummary", js.Array(value :_*))
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataCatalogsSummary(value: DataCatalogSummaryList): Self = this.set("DataCatalogsSummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataCatalogsSummary: Self = this.set("DataCatalogsSummary", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

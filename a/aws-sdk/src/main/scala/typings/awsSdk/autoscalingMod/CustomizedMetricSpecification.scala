@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomizedMetricSpecification extends js.Object {
+trait CustomizedMetricSpecification extends StObject {
   
   /**
     * The dimensions of the metric. Conditional: If you published your metric with dimensions, you must specify the same dimensions in your scaling policy.
@@ -41,42 +42,30 @@ object CustomizedMetricSpecification {
   }
   
   @scala.inline
-  implicit class CustomizedMetricSpecificationOps[Self <: CustomizedMetricSpecification] (val x: Self) extends AnyVal {
+  implicit class CustomizedMetricSpecificationMutableBuilder[Self <: CustomizedMetricSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensions(value: MetricDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimensionsVarargs(value: MetricDimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
     
     @scala.inline
-    def setMetricName(value: MetricName): Self = this.set("MetricName", value.asInstanceOf[js.Any])
+    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace(value: MetricNamespace): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+    def setNamespace(value: MetricNamespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatistic(value: MetricStatistic): Self = this.set("Statistic", value.asInstanceOf[js.Any])
+    def setStatistic(value: MetricStatistic): Self = StObject.set(x, "Statistic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionsVarargs(value: MetricDimension*): Self = this.set("Dimensions", js.Array(value :_*))
+    def setUnit(value: MetricUnit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensions(value: MetricDimensions): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
-    
-    @scala.inline
-    def setUnit(value: MetricUnit): Self = this.set("Unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("Unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
   }
 }

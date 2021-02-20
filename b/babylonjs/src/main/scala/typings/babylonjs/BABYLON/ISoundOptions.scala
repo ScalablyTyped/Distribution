@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISoundOptions extends js.Object {
+trait ISoundOptions extends StObject {
   
   /**
     * Does the sound autoplay once loaded.
@@ -89,102 +90,90 @@ object ISoundOptions {
   }
   
   @scala.inline
-  implicit class ISoundOptionsOps[Self <: ISoundOptions] (val x: Self) extends AnyVal {
+  implicit class ISoundOptionsMutableBuilder[Self <: ISoundOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistanceModel(value: String): Self = StObject.set(x, "distanceModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoplay(value: Boolean): Self = this.set("autoplay", value.asInstanceOf[js.Any])
+    def setDistanceModelUndefined: Self = StObject.set(x, "distanceModel", js.undefined)
     
     @scala.inline
-    def deleteAutoplay: Self = this.set("autoplay", js.undefined)
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceModel(value: String): Self = this.set("distanceModel", value.asInstanceOf[js.Any])
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def deleteDistanceModel: Self = this.set("distanceModel", js.undefined)
+    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setMaxDistance(value: Double): Self = StObject.set(x, "maxDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    def setMaxDistanceUndefined: Self = StObject.set(x, "maxDistance", js.undefined)
     
     @scala.inline
-    def deleteLoop: Self = this.set("loop", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDistance(value: Double): Self = this.set("maxDistance", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteMaxDistance: Self = this.set("maxDistance", js.undefined)
+    def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setPlaybackRateUndefined: Self = StObject.set(x, "playbackRate", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setRefDistance(value: Double): Self = StObject.set(x, "refDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaybackRate(value: Double): Self = this.set("playbackRate", value.asInstanceOf[js.Any])
+    def setRefDistanceUndefined: Self = StObject.set(x, "refDistance", js.undefined)
     
     @scala.inline
-    def deletePlaybackRate: Self = this.set("playbackRate", js.undefined)
+    def setRolloffFactor(value: Double): Self = StObject.set(x, "rolloffFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefDistance(value: Double): Self = this.set("refDistance", value.asInstanceOf[js.Any])
+    def setRolloffFactorUndefined: Self = StObject.set(x, "rolloffFactor", js.undefined)
     
     @scala.inline
-    def deleteRefDistance: Self = this.set("refDistance", js.undefined)
+    def setSkipCodecCheck(value: Boolean): Self = StObject.set(x, "skipCodecCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRolloffFactor(value: Double): Self = this.set("rolloffFactor", value.asInstanceOf[js.Any])
+    def setSkipCodecCheckUndefined: Self = StObject.set(x, "skipCodecCheck", js.undefined)
     
     @scala.inline
-    def deleteRolloffFactor: Self = this.set("rolloffFactor", js.undefined)
+    def setSpatialSound(value: Boolean): Self = StObject.set(x, "spatialSound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipCodecCheck(value: Boolean): Self = this.set("skipCodecCheck", value.asInstanceOf[js.Any])
+    def setSpatialSoundUndefined: Self = StObject.set(x, "spatialSound", js.undefined)
     
     @scala.inline
-    def deleteSkipCodecCheck: Self = this.set("skipCodecCheck", js.undefined)
+    def setStreaming(value: Boolean): Self = StObject.set(x, "streaming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpatialSound(value: Boolean): Self = this.set("spatialSound", value.asInstanceOf[js.Any])
+    def setStreamingUndefined: Self = StObject.set(x, "streaming", js.undefined)
     
     @scala.inline
-    def deleteSpatialSound: Self = this.set("spatialSound", js.undefined)
+    def setUseCustomAttenuation(value: Boolean): Self = StObject.set(x, "useCustomAttenuation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreaming(value: Boolean): Self = this.set("streaming", value.asInstanceOf[js.Any])
+    def setUseCustomAttenuationUndefined: Self = StObject.set(x, "useCustomAttenuation", js.undefined)
     
     @scala.inline
-    def deleteStreaming: Self = this.set("streaming", js.undefined)
+    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseCustomAttenuation(value: Boolean): Self = this.set("useCustomAttenuation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseCustomAttenuation: Self = this.set("useCustomAttenuation", js.undefined)
-    
-    @scala.inline
-    def setVolume(value: Double): Self = this.set("volume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolume: Self = this.set("volume", js.undefined)
+    def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
   }
 }

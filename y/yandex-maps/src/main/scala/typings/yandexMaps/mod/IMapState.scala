@@ -6,12 +6,13 @@ import typings.yandexMaps.mod.control.ZoomControl
 import typings.yandexMaps.yandexMapsStrings.yandexNumbersignhybrid
 import typings.yandexMaps.yandexMapsStrings.yandexNumbersignmap
 import typings.yandexMaps.yandexMapsStrings.yandexNumbersignsatellite
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMapState extends js.Object {
+trait IMapState extends StObject {
   
   var behaviors: js.UndefOr[js.Array[String]] = js.native
   
@@ -36,75 +37,63 @@ object IMapState {
   }
   
   @scala.inline
-  implicit class IMapStateOps[Self <: IMapState] (val x: Self) extends AnyVal {
+  implicit class IMapStateMutableBuilder[Self <: IMapState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBehaviors(value: js.Array[String]): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBehaviorsUndefined: Self = StObject.set(x, "behaviors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBehaviorsVarargs(value: String*): Self = StObject.set(x, "behaviors", js.Array(value :_*))
     
     @scala.inline
-    def setBehaviorsVarargs(value: String*): Self = this.set("behaviors", js.Array(value :_*))
+    def setBounds(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBehaviors(value: js.Array[String]): Self = this.set("behaviors", value.asInstanceOf[js.Any])
+    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
     @scala.inline
-    def deleteBehaviors: Self = this.set("behaviors", js.undefined)
+    def setBoundsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "bounds", js.Array(value :_*))
     
     @scala.inline
-    def setBoundsVarargs(value: js.Array[Double]*): Self = this.set("bounds", js.Array(value :_*))
+    def setCenter(value: js.Array[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounds(value: js.Array[js.Array[Double]]): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def deleteBounds: Self = this.set("bounds", js.undefined)
+    def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value :_*))
     
     @scala.inline
-    def setCenterVarargs(value: Double*): Self = this.set("center", js.Array(value :_*))
+    def setControls(value: js.Array[String | ZoomControl | RulerControl | TypeSelector]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: js.Array[Double]): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setControlsVarargs(value: (String | ZoomControl | RulerControl | TypeSelector)*): Self = StObject.set(x, "controls", js.Array(value :_*))
     
     @scala.inline
-    def setControlsVarargs(value: (String | ZoomControl | RulerControl | TypeSelector)*): Self = this.set("controls", js.Array(value :_*))
+    def setMargin(value: js.Array[js.Array[Double] | Double]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControls(value: js.Array[String | ZoomControl | RulerControl | TypeSelector]): Self = this.set("controls", value.asInstanceOf[js.Any])
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def deleteControls: Self = this.set("controls", js.undefined)
+    def setMarginVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "margin", js.Array(value :_*))
     
     @scala.inline
-    def setMarginVarargs(value: (js.Array[Double] | Double)*): Self = this.set("margin", js.Array(value :_*))
+    def setType(value: yandexNumbersignmap | yandexNumbersignsatellite | yandexNumbersignhybrid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: js.Array[js.Array[Double] | Double]): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: yandexNumbersignmap | yandexNumbersignsatellite | yandexNumbersignhybrid): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

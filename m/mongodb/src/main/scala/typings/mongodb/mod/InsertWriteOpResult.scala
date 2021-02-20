@@ -3,12 +3,13 @@ package typings.mongodb.mod
 import org.scalablytyped.runtime.NumberDictionary
 import typings.mongodb.anon.IdAny
 import typings.mongodb.anon.Ok
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsertWriteOpResult[TSchema /* <: IdAny */] extends js.Object {
+trait InsertWriteOpResult[TSchema /* <: IdAny */] extends StObject {
   
   var connection: js.Any = js.native
   
@@ -39,40 +40,28 @@ object InsertWriteOpResult {
   }
   
   @scala.inline
-  implicit class InsertWriteOpResultOps[Self <: InsertWriteOpResult[_], TSchema /* <: IdAny */] (val x: Self with InsertWriteOpResult[TSchema]) extends AnyVal {
+  implicit class InsertWriteOpResultMutableBuilder[Self <: InsertWriteOpResult[_], TSchema /* <: IdAny */] (val x: Self with InsertWriteOpResult[TSchema]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnection(value: js.Any): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConnection(value: js.Any): Self = this.set("connection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInsertedCount(value: scala.Double): Self = this.set("insertedCount", value.asInstanceOf[js.Any])
+    def setInsertedCount(value: scala.Double): Self = StObject.set(x, "insertedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInsertedIds(
       value: NumberDictionary[
           /* import warning: importer.ImportType#apply Failed type conversion: TSchema['_id'] */ js.Any
         ]
-    ): Self = this.set("insertedIds", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "insertedIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpsVarargs(value: TSchema*): Self = this.set("ops", js.Array(value :_*))
+    def setOps(value: js.Array[TSchema]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOps(value: js.Array[TSchema]): Self = this.set("ops", value.asInstanceOf[js.Any])
+    def setOpsVarargs(value: TSchema*): Self = StObject.set(x, "ops", js.Array(value :_*))
     
     @scala.inline
-    def setResult(value: Ok): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setResult(value: Ok): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

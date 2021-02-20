@@ -1,12 +1,13 @@
 package typings.serverless.anon
 
 import typings.serverless.validateMod.HttpMethod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Authorizer extends js.Object {
+trait Authorizer extends StObject {
   
   var authorizer: js.UndefOr[js.Any] = js.native
   
@@ -27,42 +28,30 @@ object Authorizer {
   }
   
   @scala.inline
-  implicit class AuthorizerOps[Self <: Authorizer] (val x: Self) extends AnyVal {
+  implicit class AuthorizerMutableBuilder[Self <: Authorizer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizer(value: js.Any): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizerUndefined: Self = StObject.set(x, "authorizer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCors(value: js.Any): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMehtod(value: HttpMethod): Self = this.set("mehtod", value.asInstanceOf[js.Any])
+    def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setIntegration(value: String): Self = StObject.set(x, "integration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizer(value: js.Any): Self = this.set("authorizer", value.asInstanceOf[js.Any])
+    def setIntegrationUndefined: Self = StObject.set(x, "integration", js.undefined)
     
     @scala.inline
-    def deleteAuthorizer: Self = this.set("authorizer", js.undefined)
+    def setMehtod(value: HttpMethod): Self = StObject.set(x, "mehtod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCors(value: js.Any): Self = this.set("cors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCors: Self = this.set("cors", js.undefined)
-    
-    @scala.inline
-    def setIntegration(value: String): Self = this.set("integration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIntegration: Self = this.set("integration", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

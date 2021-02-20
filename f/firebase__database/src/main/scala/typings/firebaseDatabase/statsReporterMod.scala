@@ -2,16 +2,16 @@ package typings.firebaseDatabase
 
 import typings.firebaseDatabase.serverActionsMod.ServerActions
 import typings.firebaseDatabase.statsCollectionMod.StatsCollection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/stats/StatsReporter", JSImport.Namespace)
-@js.native
-object statsReporterMod extends js.Object {
+object statsReporterMod {
   
+  @JSImport("@firebase/database/dist/src/core/stats/StatsReporter", "StatsReporter")
   @js.native
-  class StatsReporter protected () extends js.Object {
+  class StatsReporter protected () extends StObject {
     /**
       * @param collection
       * @param server_

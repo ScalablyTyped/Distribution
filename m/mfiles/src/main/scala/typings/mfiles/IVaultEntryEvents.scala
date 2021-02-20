@@ -5,6 +5,7 @@ import typings.mfiles.anon.Finally
 import typings.mfiles.anon.FinallyOnError
 import typings.mfiles.anon.OnError
 import typings.mfiles.anon.OnSuccess
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -243,456 +244,444 @@ object IVaultEntryEvents {
   }
   
   @scala.inline
-  implicit class IVaultEntryEventsOps[Self <: IVaultEntryEvents] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class IVaultEntryEventsMutableBuilder[Self <: IVaultEntryEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setOnAddObjectFile(
       value: (/* objVer */ IObjVer, /* sourceObjectFile */ ISourceObjectFile) => Null | Boolean | Finally
-    ): Self = this.set("OnAddObjectFile", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "OnAddObjectFile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnAddObjectFile: Self = this.set("OnAddObjectFile", js.undefined)
+    def setOnAddObjectFileUndefined: Self = StObject.set(x, "OnAddObjectFile", js.undefined)
     
     @scala.inline
-    def setOnAddObjectToFavorites(value: /* objID */ IObjID => Null | Boolean | OnError): Self = this.set("OnAddObjectToFavorites", js.Any.fromFunction1(value))
+    def setOnAddObjectToFavorites(value: /* objID */ IObjID => Null | Boolean | OnError): Self = StObject.set(x, "OnAddObjectToFavorites", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnAddObjectToFavorites: Self = this.set("OnAddObjectToFavorites", js.undefined)
+    def setOnAddObjectToFavoritesUndefined: Self = StObject.set(x, "OnAddObjectToFavorites", js.undefined)
     
     @scala.inline
-    def setOnAddObjectsToFavorites(value: /* objIDs */ IObjIDs => Null | Boolean | OnError): Self = this.set("OnAddObjectsToFavorites", js.Any.fromFunction1(value))
+    def setOnAddObjectsToFavorites(value: /* objIDs */ IObjIDs => Null | Boolean | OnError): Self = StObject.set(x, "OnAddObjectsToFavorites", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnAddObjectsToFavorites: Self = this.set("OnAddObjectsToFavorites", js.undefined)
+    def setOnAddObjectsToFavoritesUndefined: Self = StObject.set(x, "OnAddObjectsToFavorites", js.undefined)
     
     @scala.inline
-    def setOnChangeVaultLanguage(value: /* languageID */ Double => Null | Boolean | OnError): Self = this.set("OnChangeVaultLanguage", js.Any.fromFunction1(value))
+    def setOnChangeVaultLanguage(value: /* languageID */ Double => Null | Boolean | OnError): Self = StObject.set(x, "OnChangeVaultLanguage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnChangeVaultLanguage: Self = this.set("OnChangeVaultLanguage", js.undefined)
+    def setOnChangeVaultLanguageUndefined: Self = StObject.set(x, "OnChangeVaultLanguage", js.undefined)
     
     @scala.inline
-    def setOnCheckInObject(value: (/* objVer */ IObjVer, /* propertyValues */ IPropertyValues) => Null | Boolean | OnSuccess): Self = this.set("OnCheckInObject", js.Any.fromFunction2(value))
+    def setOnCheckInObject(value: (/* objVer */ IObjVer, /* propertyValues */ IPropertyValues) => Null | Boolean | OnSuccess): Self = StObject.set(x, "OnCheckInObject", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnCheckInObject: Self = this.set("OnCheckInObject", js.undefined)
+    def setOnCheckInObjectUndefined: Self = StObject.set(x, "OnCheckInObject", js.undefined)
     
     @scala.inline
     def setOnCheckInObjects(
       value: (/* objVers */ IObjVers, /* propertyValues */ IPropertyValues) => Null | Boolean | FinallyOnError
-    ): Self = this.set("OnCheckInObjects", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "OnCheckInObjects", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnCheckInObjects: Self = this.set("OnCheckInObjects", js.undefined)
+    def setOnCheckInObjectsUndefined: Self = StObject.set(x, "OnCheckInObjects", js.undefined)
     
     @scala.inline
-    def setOnCheckOutObject(value: /* objID */ IObjID => Null | Boolean | OnSuccess): Self = this.set("OnCheckOutObject", js.Any.fromFunction1(value))
+    def setOnCheckOutObject(value: /* objID */ IObjID => Null | Boolean | OnSuccess): Self = StObject.set(x, "OnCheckOutObject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnCheckOutObject: Self = this.set("OnCheckOutObject", js.undefined)
+    def setOnCheckOutObjectUndefined: Self = StObject.set(x, "OnCheckOutObject", js.undefined)
     
     @scala.inline
-    def setOnCheckOutObjects(value: /* objIDs */ IObjIDs => Null | Boolean | FinallyOnError): Self = this.set("OnCheckOutObjects", js.Any.fromFunction1(value))
+    def setOnCheckOutObjects(value: /* objIDs */ IObjIDs => Null | Boolean | FinallyOnError): Self = StObject.set(x, "OnCheckOutObjects", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnCheckOutObjects: Self = this.set("OnCheckOutObjects", js.undefined)
+    def setOnCheckOutObjectsUndefined: Self = StObject.set(x, "OnCheckOutObjects", js.undefined)
     
     @scala.inline
     def setOnCreateObject(
       value: (/* objectType */ Double, /* propertyValues */ IPropertyValues, /* sourceObjectFiles */ ISourceObjectFiles, /* accessControlList */ IAccessControlList, /* checkInRequested */ Boolean, /* singleFileRequested */ Boolean) => Null | Boolean | OnSuccess
-    ): Self = this.set("OnCreateObject", js.Any.fromFunction6(value))
+    ): Self = StObject.set(x, "OnCreateObject", js.Any.fromFunction6(value))
     
     @scala.inline
-    def deleteOnCreateObject: Self = this.set("OnCreateObject", js.undefined)
+    def setOnCreateObjectUndefined: Self = StObject.set(x, "OnCreateObject", js.undefined)
     
     @scala.inline
-    def setOnDestroyObject(value: /* objID */ IObjID => Null | Boolean | OnError): Self = this.set("OnDestroyObject", js.Any.fromFunction1(value))
+    def setOnDestroyObject(value: /* objID */ IObjID => Null | Boolean | OnError): Self = StObject.set(x, "OnDestroyObject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnDestroyObject: Self = this.set("OnDestroyObject", js.undefined)
+    def setOnDestroyObjectUndefined: Self = StObject.set(x, "OnDestroyObject", js.undefined)
     
     @scala.inline
-    def setOnDestroyObjectVersion(value: /* objVer */ IObjVer => Null | Boolean | OnError): Self = this.set("OnDestroyObjectVersion", js.Any.fromFunction1(value))
+    def setOnDestroyObjectVersion(value: /* objVer */ IObjVer => Null | Boolean | OnError): Self = StObject.set(x, "OnDestroyObjectVersion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnDestroyObjectVersion: Self = this.set("OnDestroyObjectVersion", js.undefined)
+    def setOnDestroyObjectVersionUndefined: Self = StObject.set(x, "OnDestroyObjectVersion", js.undefined)
     
     @scala.inline
-    def setOnDestroyObjectVersions(value: /* objVers */ IObjVers => Null | Boolean | OnError): Self = this.set("OnDestroyObjectVersions", js.Any.fromFunction1(value))
+    def setOnDestroyObjectVersions(value: /* objVers */ IObjVers => Null | Boolean | OnError): Self = StObject.set(x, "OnDestroyObjectVersions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnDestroyObjectVersions: Self = this.set("OnDestroyObjectVersions", js.undefined)
+    def setOnDestroyObjectVersionsUndefined: Self = StObject.set(x, "OnDestroyObjectVersions", js.undefined)
     
     @scala.inline
-    def setOnDestroyObjects(value: /* objIDs */ IObjIDs => Null | Boolean | OnError): Self = this.set("OnDestroyObjects", js.Any.fromFunction1(value))
+    def setOnDestroyObjects(value: /* objIDs */ IObjIDs => Null | Boolean | OnError): Self = StObject.set(x, "OnDestroyObjects", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnDestroyObjects: Self = this.set("OnDestroyObjects", js.undefined)
+    def setOnDestroyObjectsUndefined: Self = StObject.set(x, "OnDestroyObjects", js.undefined)
     
     @scala.inline
-    def setOnLogOut(value: () => Null | Boolean | OnError): Self = this.set("OnLogOut", js.Any.fromFunction0(value))
+    def setOnLogOut(value: () => Null | Boolean | OnError): Self = StObject.set(x, "OnLogOut", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnLogOut: Self = this.set("OnLogOut", js.undefined)
+    def setOnLogOutUndefined: Self = StObject.set(x, "OnLogOut", js.undefined)
     
     @scala.inline
-    def setOnLoggedIn(value: () => Unit): Self = this.set("OnLoggedIn", js.Any.fromFunction0(value))
+    def setOnLoggedIn(value: () => Unit): Self = StObject.set(x, "OnLoggedIn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnLoggedIn: Self = this.set("OnLoggedIn", js.undefined)
+    def setOnLoggedInUndefined: Self = StObject.set(x, "OnLoggedIn", js.undefined)
     
     @scala.inline
     def setOnModifyObjectVersionLabels(
       value: (/* objVer */ IObjVer, /* clearFromOtherVersions */ Boolean, /* append */ Boolean, /* labelIDs */ IIDs, /* singleLabelRequired */ Boolean) => Null | Boolean | OnError
-    ): Self = this.set("OnModifyObjectVersionLabels", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "OnModifyObjectVersionLabels", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteOnModifyObjectVersionLabels: Self = this.set("OnModifyObjectVersionLabels", js.undefined)
+    def setOnModifyObjectVersionLabelsUndefined: Self = StObject.set(x, "OnModifyObjectVersionLabels", js.undefined)
     
     @scala.inline
-    def setOnNotification(value: (/* id */ String, /* data1 */ js.Any, /* data2 */ js.Any) => _): Self = this.set("OnNotification", js.Any.fromFunction3(value))
+    def setOnNotification(value: (/* id */ String, /* data1 */ js.Any, /* data2 */ js.Any) => _): Self = StObject.set(x, "OnNotification", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnNotification: Self = this.set("OnNotification", js.undefined)
+    def setOnNotificationUndefined: Self = StObject.set(x, "OnNotification", js.undefined)
     
     @scala.inline
-    def setOnObjectAddedToFavorites(value: /* objID */ IObjID => Unit): Self = this.set("OnObjectAddedToFavorites", js.Any.fromFunction1(value))
+    def setOnObjectAddedToFavorites(value: /* objID */ IObjID => Unit): Self = StObject.set(x, "OnObjectAddedToFavorites", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnObjectAddedToFavorites: Self = this.set("OnObjectAddedToFavorites", js.undefined)
+    def setOnObjectAddedToFavoritesUndefined: Self = StObject.set(x, "OnObjectAddedToFavorites", js.undefined)
     
     @scala.inline
-    def setOnObjectCheckedIn(value: /* objectVersion */ IObjectVersion => Unit): Self = this.set("OnObjectCheckedIn", js.Any.fromFunction1(value))
+    def setOnObjectCheckedIn(value: /* objectVersion */ IObjectVersion => Unit): Self = StObject.set(x, "OnObjectCheckedIn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnObjectCheckedIn: Self = this.set("OnObjectCheckedIn", js.undefined)
+    def setOnObjectCheckedInUndefined: Self = StObject.set(x, "OnObjectCheckedIn", js.undefined)
     
     @scala.inline
-    def setOnObjectCheckedOut(value: /* objectVersion */ IObjectVersion => Unit): Self = this.set("OnObjectCheckedOut", js.Any.fromFunction1(value))
+    def setOnObjectCheckedOut(value: /* objectVersion */ IObjectVersion => Unit): Self = StObject.set(x, "OnObjectCheckedOut", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnObjectCheckedOut: Self = this.set("OnObjectCheckedOut", js.undefined)
+    def setOnObjectCheckedOutUndefined: Self = StObject.set(x, "OnObjectCheckedOut", js.undefined)
     
     @scala.inline
-    def setOnObjectCheckoutUndone(value: /* objectVersion */ IObjectVersion => Unit): Self = this.set("OnObjectCheckoutUndone", js.Any.fromFunction1(value))
+    def setOnObjectCheckoutUndone(value: /* objectVersion */ IObjectVersion => Unit): Self = StObject.set(x, "OnObjectCheckoutUndone", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnObjectCheckoutUndone: Self = this.set("OnObjectCheckoutUndone", js.undefined)
+    def setOnObjectCheckoutUndoneUndefined: Self = StObject.set(x, "OnObjectCheckoutUndone", js.undefined)
     
     @scala.inline
-    def setOnObjectCheckoutsUndone(value: /* objectVersions */ IObjectVersions => Unit): Self = this.set("OnObjectCheckoutsUndone", js.Any.fromFunction1(value))
+    def setOnObjectCheckoutsUndone(value: /* objectVersions */ IObjectVersions => Unit): Self = StObject.set(x, "OnObjectCheckoutsUndone", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnObjectCheckoutsUndone: Self = this.set("OnObjectCheckoutsUndone", js.undefined)
+    def setOnObjectCheckoutsUndoneUndefined: Self = StObject.set(x, "OnObjectCheckoutsUndone", js.undefined)
     
     @scala.inline
-    def setOnObjectCreated(value: /* objectVersion */ IObjectVersion => Unit): Self = this.set("OnObjectCreated", js.Any.fromFunction1(value))
+    def setOnObjectCreated(value: /* objectVersion */ IObjectVersion => Unit): Self = StObject.set(x, "OnObjectCreated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnObjectCreated: Self = this.set("OnObjectCreated", js.undefined)
+    def setOnObjectCreatedUndefined: Self = StObject.set(x, "OnObjectCreated", js.undefined)
     
     @scala.inline
-    def setOnObjectDestroyed(value: /* objID */ IObjID => Unit): Self = this.set("OnObjectDestroyed", js.Any.fromFunction1(value))
+    def setOnObjectDestroyed(value: /* objID */ IObjID => Unit): Self = StObject.set(x, "OnObjectDestroyed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnObjectDestroyed: Self = this.set("OnObjectDestroyed", js.undefined)
+    def setOnObjectDestroyedUndefined: Self = StObject.set(x, "OnObjectDestroyed", js.undefined)
     
     @scala.inline
-    def setOnObjectFileAdded(value: (/* objectVersion */ IObjectVersion, /* objectFile */ IObjectFile) => Unit): Self = this.set("OnObjectFileAdded", js.Any.fromFunction2(value))
+    def setOnObjectFileAdded(value: (/* objectVersion */ IObjectVersion, /* objectFile */ IObjectFile) => Unit): Self = StObject.set(x, "OnObjectFileAdded", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnObjectFileAdded: Self = this.set("OnObjectFileAdded", js.undefined)
+    def setOnObjectFileAddedUndefined: Self = StObject.set(x, "OnObjectFileAdded", js.undefined)
     
     @scala.inline
-    def setOnObjectFileRemoved(value: (/* objectVersion */ IObjectVersion, /* fileVer */ IFileVer) => Unit): Self = this.set("OnObjectFileRemoved", js.Any.fromFunction2(value))
+    def setOnObjectFileRemoved(value: (/* objectVersion */ IObjectVersion, /* fileVer */ IFileVer) => Unit): Self = StObject.set(x, "OnObjectFileRemoved", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnObjectFileRemoved: Self = this.set("OnObjectFileRemoved", js.undefined)
+    def setOnObjectFileRemovedUndefined: Self = StObject.set(x, "OnObjectFileRemoved", js.undefined)
     
     @scala.inline
-    def setOnObjectFileRenamed(value: (/* objectVersion */ IObjectVersion, /* objectFile */ IObjectFile) => Unit): Self = this.set("OnObjectFileRenamed", js.Any.fromFunction2(value))
+    def setOnObjectFileRenamed(value: (/* objectVersion */ IObjectVersion, /* objectFile */ IObjectFile) => Unit): Self = StObject.set(x, "OnObjectFileRenamed", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnObjectFileRenamed: Self = this.set("OnObjectFileRenamed", js.undefined)
+    def setOnObjectFileRenamedUndefined: Self = StObject.set(x, "OnObjectFileRenamed", js.undefined)
     
     @scala.inline
-    def setOnObjectLevelPropertySet(value: (/* objID */ IObjID, /* propertyValue */ IPropertyValue) => Unit): Self = this.set("OnObjectLevelPropertySet", js.Any.fromFunction2(value))
+    def setOnObjectLevelPropertySet(value: (/* objID */ IObjID, /* propertyValue */ IPropertyValue) => Unit): Self = StObject.set(x, "OnObjectLevelPropertySet", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnObjectLevelPropertySet: Self = this.set("OnObjectLevelPropertySet", js.undefined)
+    def setOnObjectLevelPropertySetUndefined: Self = StObject.set(x, "OnObjectLevelPropertySet", js.undefined)
     
     @scala.inline
-    def setOnObjectOfflineAvailabilityRemoved(value: /* objID */ IObjID => Unit): Self = this.set("OnObjectOfflineAvailabilityRemoved", js.Any.fromFunction1(value))
+    def setOnObjectOfflineAvailabilityRemoved(value: /* objID */ IObjID => Unit): Self = StObject.set(x, "OnObjectOfflineAvailabilityRemoved", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnObjectOfflineAvailabilityRemoved: Self = this.set("OnObjectOfflineAvailabilityRemoved", js.undefined)
+    def setOnObjectOfflineAvailabilityRemovedUndefined: Self = StObject.set(x, "OnObjectOfflineAvailabilityRemoved", js.undefined)
     
     @scala.inline
-    def setOnObjectOfflineAvailabilitySet(value: /* objID */ IObjID => Unit): Self = this.set("OnObjectOfflineAvailabilitySet", js.Any.fromFunction1(value))
+    def setOnObjectOfflineAvailabilitySet(value: /* objID */ IObjID => Unit): Self = StObject.set(x, "OnObjectOfflineAvailabilitySet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnObjectOfflineAvailabilitySet: Self = this.set("OnObjectOfflineAvailabilitySet", js.undefined)
+    def setOnObjectOfflineAvailabilitySetUndefined: Self = StObject.set(x, "OnObjectOfflineAvailabilitySet", js.undefined)
     
     @scala.inline
-    def setOnObjectRemoved(value: /* objectVersion */ IObjectVersion => Unit): Self = this.set("OnObjectRemoved", js.Any.fromFunction1(value))
+    def setOnObjectRemoved(value: /* objectVersion */ IObjectVersion => Unit): Self = StObject.set(x, "OnObjectRemoved", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnObjectRemoved: Self = this.set("OnObjectRemoved", js.undefined)
+    def setOnObjectRemovedFromFavorites(value: /* objID */ IObjID => Unit): Self = StObject.set(x, "OnObjectRemovedFromFavorites", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnObjectRemovedFromFavorites(value: /* objID */ IObjID => Unit): Self = this.set("OnObjectRemovedFromFavorites", js.Any.fromFunction1(value))
+    def setOnObjectRemovedFromFavoritesUndefined: Self = StObject.set(x, "OnObjectRemovedFromFavorites", js.undefined)
     
     @scala.inline
-    def deleteOnObjectRemovedFromFavorites: Self = this.set("OnObjectRemovedFromFavorites", js.undefined)
+    def setOnObjectRemovedUndefined: Self = StObject.set(x, "OnObjectRemoved", js.undefined)
     
     @scala.inline
-    def setOnObjectUndeleted(value: /* objectVersion */ IObjectVersion => Unit): Self = this.set("OnObjectUndeleted", js.Any.fromFunction1(value))
+    def setOnObjectUndeleted(value: /* objectVersion */ IObjectVersion => Unit): Self = StObject.set(x, "OnObjectUndeleted", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnObjectUndeleted: Self = this.set("OnObjectUndeleted", js.undefined)
+    def setOnObjectUndeletedUndefined: Self = StObject.set(x, "OnObjectUndeleted", js.undefined)
     
     @scala.inline
-    def setOnObjectVersionDestroyed(value: /* objVer */ IObjVer => Unit): Self = this.set("OnObjectVersionDestroyed", js.Any.fromFunction1(value))
+    def setOnObjectVersionDestroyed(value: /* objVer */ IObjVer => Unit): Self = StObject.set(x, "OnObjectVersionDestroyed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnObjectVersionDestroyed: Self = this.set("OnObjectVersionDestroyed", js.undefined)
+    def setOnObjectVersionDestroyedUndefined: Self = StObject.set(x, "OnObjectVersionDestroyed", js.undefined)
     
     @scala.inline
     def setOnObjectVersionLabelsModified(
       value: (/* objVer */ IObjVer, /* clearFromOtherVersions */ Boolean, /* append */ Boolean, /* labelIDs */ IIDs) => Unit
-    ): Self = this.set("OnObjectVersionLabelsModified", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "OnObjectVersionLabelsModified", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteOnObjectVersionLabelsModified: Self = this.set("OnObjectVersionLabelsModified", js.undefined)
+    def setOnObjectVersionLabelsModifiedUndefined: Self = StObject.set(x, "OnObjectVersionLabelsModified", js.undefined)
     
     @scala.inline
-    def setOnObjectVersionPermissionsSet(value: /* objectVersion */ IObjectVersion => Unit): Self = this.set("OnObjectVersionPermissionsSet", js.Any.fromFunction1(value))
+    def setOnObjectVersionPermissionsSet(value: /* objectVersion */ IObjectVersion => Unit): Self = StObject.set(x, "OnObjectVersionPermissionsSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnObjectVersionPermissionsSet: Self = this.set("OnObjectVersionPermissionsSet", js.undefined)
+    def setOnObjectVersionPermissionsSetUndefined: Self = StObject.set(x, "OnObjectVersionPermissionsSet", js.undefined)
     
     @scala.inline
-    def setOnObjectVersionRolledBack(value: /* objectVersion */ IObjectVersion => Unit): Self = this.set("OnObjectVersionRolledBack", js.Any.fromFunction1(value))
+    def setOnObjectVersionRolledBack(value: /* objectVersion */ IObjectVersion => Unit): Self = StObject.set(x, "OnObjectVersionRolledBack", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnObjectVersionRolledBack: Self = this.set("OnObjectVersionRolledBack", js.undefined)
+    def setOnObjectVersionRolledBackUndefined: Self = StObject.set(x, "OnObjectVersionRolledBack", js.undefined)
     
     @scala.inline
-    def setOnObjectVersionsDestroyed(value: /* objVers */ IObjVers => Unit): Self = this.set("OnObjectVersionsDestroyed", js.Any.fromFunction1(value))
+    def setOnObjectVersionsDestroyed(value: /* objVers */ IObjVers => Unit): Self = StObject.set(x, "OnObjectVersionsDestroyed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnObjectVersionsDestroyed: Self = this.set("OnObjectVersionsDestroyed", js.undefined)
+    def setOnObjectVersionsDestroyedUndefined: Self = StObject.set(x, "OnObjectVersionsDestroyed", js.undefined)
     
     @scala.inline
-    def setOnObjectsAddedToFavorites(value: /* objIDs */ IObjIDs => Unit): Self = this.set("OnObjectsAddedToFavorites", js.Any.fromFunction1(value))
+    def setOnObjectsAddedToFavorites(value: /* objIDs */ IObjIDs => Unit): Self = StObject.set(x, "OnObjectsAddedToFavorites", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnObjectsAddedToFavorites: Self = this.set("OnObjectsAddedToFavorites", js.undefined)
+    def setOnObjectsAddedToFavoritesUndefined: Self = StObject.set(x, "OnObjectsAddedToFavorites", js.undefined)
     
     @scala.inline
-    def setOnObjectsCheckedIn(value: /* objectVersions */ IObjectVersions => Unit): Self = this.set("OnObjectsCheckedIn", js.Any.fromFunction1(value))
+    def setOnObjectsCheckedIn(value: /* objectVersions */ IObjectVersions => Unit): Self = StObject.set(x, "OnObjectsCheckedIn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnObjectsCheckedIn: Self = this.set("OnObjectsCheckedIn", js.undefined)
+    def setOnObjectsCheckedInUndefined: Self = StObject.set(x, "OnObjectsCheckedIn", js.undefined)
     
     @scala.inline
-    def setOnObjectsCheckedOut(value: /* objectVersions */ IObjectVersions => Unit): Self = this.set("OnObjectsCheckedOut", js.Any.fromFunction1(value))
+    def setOnObjectsCheckedOut(value: /* objectVersions */ IObjectVersions => Unit): Self = StObject.set(x, "OnObjectsCheckedOut", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnObjectsCheckedOut: Self = this.set("OnObjectsCheckedOut", js.undefined)
+    def setOnObjectsCheckedOutUndefined: Self = StObject.set(x, "OnObjectsCheckedOut", js.undefined)
     
     @scala.inline
-    def setOnObjectsDestroyed(value: /* objIDs */ IObjIDs => Unit): Self = this.set("OnObjectsDestroyed", js.Any.fromFunction1(value))
+    def setOnObjectsDestroyed(value: /* objIDs */ IObjIDs => Unit): Self = StObject.set(x, "OnObjectsDestroyed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnObjectsDestroyed: Self = this.set("OnObjectsDestroyed", js.undefined)
+    def setOnObjectsDestroyedUndefined: Self = StObject.set(x, "OnObjectsDestroyed", js.undefined)
     
     @scala.inline
-    def setOnObjectsRemoved(value: /* objectVersions */ IObjectVersions => Unit): Self = this.set("OnObjectsRemoved", js.Any.fromFunction1(value))
+    def setOnObjectsRemoved(value: /* objectVersions */ IObjectVersions => Unit): Self = StObject.set(x, "OnObjectsRemoved", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnObjectsRemoved: Self = this.set("OnObjectsRemoved", js.undefined)
+    def setOnObjectsRemovedFromFavorites(value: /* objIDs */ IObjIDs => Unit): Self = StObject.set(x, "OnObjectsRemovedFromFavorites", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnObjectsRemovedFromFavorites(value: /* objIDs */ IObjIDs => Unit): Self = this.set("OnObjectsRemovedFromFavorites", js.Any.fromFunction1(value))
+    def setOnObjectsRemovedFromFavoritesUndefined: Self = StObject.set(x, "OnObjectsRemovedFromFavorites", js.undefined)
     
     @scala.inline
-    def deleteOnObjectsRemovedFromFavorites: Self = this.set("OnObjectsRemovedFromFavorites", js.undefined)
+    def setOnObjectsRemovedUndefined: Self = StObject.set(x, "OnObjectsRemoved", js.undefined)
     
     @scala.inline
-    def setOnPropertiesOfObjectVersionSet(value: /* objectVersion */ IObjectVersion => Unit): Self = this.set("OnPropertiesOfObjectVersionSet", js.Any.fromFunction1(value))
+    def setOnPropertiesOfObjectVersionSet(value: /* objectVersion */ IObjectVersion => Unit): Self = StObject.set(x, "OnPropertiesOfObjectVersionSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnPropertiesOfObjectVersionSet: Self = this.set("OnPropertiesOfObjectVersionSet", js.undefined)
+    def setOnPropertiesOfObjectVersionSetUndefined: Self = StObject.set(x, "OnPropertiesOfObjectVersionSet", js.undefined)
     
     @scala.inline
-    def setOnPropertiesOfObjectVersionsSet(value: /* objectVersions */ IObjectVersions => Unit): Self = this.set("OnPropertiesOfObjectVersionsSet", js.Any.fromFunction1(value))
+    def setOnPropertiesOfObjectVersionsSet(value: /* objectVersions */ IObjectVersions => Unit): Self = StObject.set(x, "OnPropertiesOfObjectVersionsSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnPropertiesOfObjectVersionsSet: Self = this.set("OnPropertiesOfObjectVersionsSet", js.undefined)
+    def setOnPropertiesOfObjectVersionsSetUndefined: Self = StObject.set(x, "OnPropertiesOfObjectVersionsSet", js.undefined)
     
     @scala.inline
-    def setOnRemoveObject(value: /* objID */ IObjID => Null | Boolean | OnSuccess): Self = this.set("OnRemoveObject", js.Any.fromFunction1(value))
+    def setOnRemoveObject(value: /* objID */ IObjID => Null | Boolean | OnSuccess): Self = StObject.set(x, "OnRemoveObject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnRemoveObject: Self = this.set("OnRemoveObject", js.undefined)
+    def setOnRemoveObjectFile(value: (/* objVer */ IObjVer, /* fileVer */ IFileVer) => Null | Boolean | OnSuccess): Self = StObject.set(x, "OnRemoveObjectFile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnRemoveObjectFile(value: (/* objVer */ IObjVer, /* fileVer */ IFileVer) => Null | Boolean | OnSuccess): Self = this.set("OnRemoveObjectFile", js.Any.fromFunction2(value))
+    def setOnRemoveObjectFileUndefined: Self = StObject.set(x, "OnRemoveObjectFile", js.undefined)
     
     @scala.inline
-    def deleteOnRemoveObjectFile: Self = this.set("OnRemoveObjectFile", js.undefined)
+    def setOnRemoveObjectFromFavorites(value: /* objID */ IObjID => Null | Boolean | OnError): Self = StObject.set(x, "OnRemoveObjectFromFavorites", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnRemoveObjectFromFavorites(value: /* objID */ IObjID => Null | Boolean | OnError): Self = this.set("OnRemoveObjectFromFavorites", js.Any.fromFunction1(value))
+    def setOnRemoveObjectFromFavoritesUndefined: Self = StObject.set(x, "OnRemoveObjectFromFavorites", js.undefined)
     
     @scala.inline
-    def deleteOnRemoveObjectFromFavorites: Self = this.set("OnRemoveObjectFromFavorites", js.undefined)
+    def setOnRemoveObjectOfflineAvailability(value: /* objID */ IObjID => Null | Boolean | OnError): Self = StObject.set(x, "OnRemoveObjectOfflineAvailability", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnRemoveObjectOfflineAvailability(value: /* objID */ IObjID => Null | Boolean | OnError): Self = this.set("OnRemoveObjectOfflineAvailability", js.Any.fromFunction1(value))
+    def setOnRemoveObjectOfflineAvailabilityUndefined: Self = StObject.set(x, "OnRemoveObjectOfflineAvailability", js.undefined)
     
     @scala.inline
-    def deleteOnRemoveObjectOfflineAvailability: Self = this.set("OnRemoveObjectOfflineAvailability", js.undefined)
+    def setOnRemoveObjectUndefined: Self = StObject.set(x, "OnRemoveObject", js.undefined)
     
     @scala.inline
-    def setOnRemoveObjects(value: /* objIDs */ IObjIDs => Null | Boolean | FinallyOnError): Self = this.set("OnRemoveObjects", js.Any.fromFunction1(value))
+    def setOnRemoveObjects(value: /* objIDs */ IObjIDs => Null | Boolean | FinallyOnError): Self = StObject.set(x, "OnRemoveObjects", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnRemoveObjects: Self = this.set("OnRemoveObjects", js.undefined)
+    def setOnRemoveObjectsFromFavorites(value: /* objIDs */ IObjIDs => Null | Boolean | OnError): Self = StObject.set(x, "OnRemoveObjectsFromFavorites", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnRemoveObjectsFromFavorites(value: /* objIDs */ IObjIDs => Null | Boolean | OnError): Self = this.set("OnRemoveObjectsFromFavorites", js.Any.fromFunction1(value))
+    def setOnRemoveObjectsFromFavoritesUndefined: Self = StObject.set(x, "OnRemoveObjectsFromFavorites", js.undefined)
     
     @scala.inline
-    def deleteOnRemoveObjectsFromFavorites: Self = this.set("OnRemoveObjectsFromFavorites", js.undefined)
+    def setOnRemoveObjectsUndefined: Self = StObject.set(x, "OnRemoveObjects", js.undefined)
     
     @scala.inline
     def setOnRenameObjectFile(
       value: (/* objVer */ IObjVer, /* fileVer */ IFileVer, /* newName */ Null | ITypedValue, /* newExtension */ Null | ITypedValue) => Null | Boolean | Finally
-    ): Self = this.set("OnRenameObjectFile", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "OnRenameObjectFile", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteOnRenameObjectFile: Self = this.set("OnRenameObjectFile", js.undefined)
+    def setOnRenameObjectFileUndefined: Self = StObject.set(x, "OnRenameObjectFile", js.undefined)
     
     @scala.inline
-    def setOnRollBackObjectVersion(value: /* objVer */ IObjVer => Null | Boolean | OnSuccess): Self = this.set("OnRollBackObjectVersion", js.Any.fromFunction1(value))
+    def setOnRollBackObjectVersion(value: /* objVer */ IObjVer => Null | Boolean | OnSuccess): Self = StObject.set(x, "OnRollBackObjectVersion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnRollBackObjectVersion: Self = this.set("OnRollBackObjectVersion", js.undefined)
+    def setOnRollBackObjectVersionUndefined: Self = StObject.set(x, "OnRollBackObjectVersion", js.undefined)
     
     @scala.inline
-    def setOnSetObjectLevelProperty(value: (/* objID */ IObjID, /* propertyValue */ IPropertyValue) => Null | Boolean | OnError): Self = this.set("OnSetObjectLevelProperty", js.Any.fromFunction2(value))
+    def setOnSetObjectLevelProperty(value: (/* objID */ IObjID, /* propertyValue */ IPropertyValue) => Null | Boolean | OnError): Self = StObject.set(x, "OnSetObjectLevelProperty", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnSetObjectLevelProperty: Self = this.set("OnSetObjectLevelProperty", js.undefined)
+    def setOnSetObjectLevelPropertyUndefined: Self = StObject.set(x, "OnSetObjectLevelProperty", js.undefined)
     
     @scala.inline
-    def setOnSetObjectOfflineAvailability(value: /* objID */ IObjID => Null | Boolean | OnError): Self = this.set("OnSetObjectOfflineAvailability", js.Any.fromFunction1(value))
+    def setOnSetObjectOfflineAvailability(value: /* objID */ IObjID => Null | Boolean | OnError): Self = StObject.set(x, "OnSetObjectOfflineAvailability", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnSetObjectOfflineAvailability: Self = this.set("OnSetObjectOfflineAvailability", js.undefined)
+    def setOnSetObjectOfflineAvailabilityUndefined: Self = StObject.set(x, "OnSetObjectOfflineAvailability", js.undefined)
     
     @scala.inline
     def setOnSetObjectVersionPermissions(
       value: (/* objVer */ IObjVer, /* changeAllVersions */ Boolean, /* accessControlList */ IAccessControlList) => Null | Boolean | OnSuccess
-    ): Self = this.set("OnSetObjectVersionPermissions", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "OnSetObjectVersionPermissions", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnSetObjectVersionPermissions: Self = this.set("OnSetObjectVersionPermissions", js.undefined)
+    def setOnSetObjectVersionPermissionsUndefined: Self = StObject.set(x, "OnSetObjectVersionPermissions", js.undefined)
     
     @scala.inline
     def setOnSetPropertiesOfObjectVersion(
       value: (/* setPropertiesParams */ ISetPropertiesParams, /* singlePropertyUpdate */ Boolean, /* singlePropertyRemove */ Boolean) => Null | Boolean | OnSuccess
-    ): Self = this.set("OnSetPropertiesOfObjectVersion", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "OnSetPropertiesOfObjectVersion", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnSetPropertiesOfObjectVersion: Self = this.set("OnSetPropertiesOfObjectVersion", js.undefined)
+    def setOnSetPropertiesOfObjectVersionUndefined: Self = StObject.set(x, "OnSetPropertiesOfObjectVersion", js.undefined)
     
     @scala.inline
     def setOnSetPropertiesOfObjectVersions(
       value: (/* setPropertiesParamsOfMultipleObjects */ ISetPropertiesParamsOfMultipleObjects, /* singlePropertyUpdate */ Boolean, /* singlePropertyRemove */ Boolean) => Null | Boolean | FinallyOnError
-    ): Self = this.set("OnSetPropertiesOfObjectVersions", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "OnSetPropertiesOfObjectVersions", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnSetPropertiesOfObjectVersions: Self = this.set("OnSetPropertiesOfObjectVersions", js.undefined)
+    def setOnSetPropertiesOfObjectVersionsUndefined: Self = StObject.set(x, "OnSetPropertiesOfObjectVersions", js.undefined)
     
     @scala.inline
-    def setOnStarted(value: () => Unit): Self = this.set("OnStarted", js.Any.fromFunction0(value))
+    def setOnStarted(value: () => Unit): Self = StObject.set(x, "OnStarted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnStarted: Self = this.set("OnStarted", js.undefined)
+    def setOnStartedUndefined: Self = StObject.set(x, "OnStarted", js.undefined)
     
     @scala.inline
-    def setOnStop(value: () => Unit): Self = this.set("OnStop", js.Any.fromFunction0(value))
+    def setOnStop(value: () => Unit): Self = StObject.set(x, "OnStop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnStop: Self = this.set("OnStop", js.undefined)
+    def setOnStopUndefined: Self = StObject.set(x, "OnStop", js.undefined)
     
     @scala.inline
-    def setOnSwitchToOfflineMode(value: () => Null | Boolean | OnError): Self = this.set("OnSwitchToOfflineMode", js.Any.fromFunction0(value))
+    def setOnSwitchToOfflineMode(value: () => Null | Boolean | OnError): Self = StObject.set(x, "OnSwitchToOfflineMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnSwitchToOfflineMode: Self = this.set("OnSwitchToOfflineMode", js.undefined)
+    def setOnSwitchToOfflineModeUndefined: Self = StObject.set(x, "OnSwitchToOfflineMode", js.undefined)
     
     @scala.inline
-    def setOnSwitchToOnlineMode(value: () => Null | Boolean | OnError): Self = this.set("OnSwitchToOnlineMode", js.Any.fromFunction0(value))
+    def setOnSwitchToOnlineMode(value: () => Null | Boolean | OnError): Self = StObject.set(x, "OnSwitchToOnlineMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnSwitchToOnlineMode: Self = this.set("OnSwitchToOnlineMode", js.undefined)
+    def setOnSwitchToOnlineModeUndefined: Self = StObject.set(x, "OnSwitchToOnlineMode", js.undefined)
     
     @scala.inline
-    def setOnSwitchedToOfflineMode(value: () => Unit): Self = this.set("OnSwitchedToOfflineMode", js.Any.fromFunction0(value))
+    def setOnSwitchedToOfflineMode(value: () => Unit): Self = StObject.set(x, "OnSwitchedToOfflineMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnSwitchedToOfflineMode: Self = this.set("OnSwitchedToOfflineMode", js.undefined)
+    def setOnSwitchedToOfflineModeUndefined: Self = StObject.set(x, "OnSwitchedToOfflineMode", js.undefined)
     
     @scala.inline
-    def setOnSwitchedToOnlineMode(value: () => Unit): Self = this.set("OnSwitchedToOnlineMode", js.Any.fromFunction0(value))
+    def setOnSwitchedToOnlineMode(value: () => Unit): Self = StObject.set(x, "OnSwitchedToOnlineMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnSwitchedToOnlineMode: Self = this.set("OnSwitchedToOnlineMode", js.undefined)
+    def setOnSwitchedToOnlineModeUndefined: Self = StObject.set(x, "OnSwitchedToOnlineMode", js.undefined)
     
     @scala.inline
-    def setOnUndeleteObject(value: /* objID */ IObjID => Null | Boolean | OnSuccess): Self = this.set("OnUndeleteObject", js.Any.fromFunction1(value))
+    def setOnUndeleteObject(value: /* objID */ IObjID => Null | Boolean | OnSuccess): Self = StObject.set(x, "OnUndeleteObject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnUndeleteObject: Self = this.set("OnUndeleteObject", js.undefined)
+    def setOnUndeleteObjectUndefined: Self = StObject.set(x, "OnUndeleteObject", js.undefined)
     
     @scala.inline
-    def setOnUndeleteObjects(value: /* objIDs */ IObjIDs => Null | Boolean | FinallyOnError): Self = this.set("OnUndeleteObjects", js.Any.fromFunction1(value))
+    def setOnUndeleteObjects(value: /* objIDs */ IObjIDs => Null | Boolean | FinallyOnError): Self = StObject.set(x, "OnUndeleteObjects", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnUndeleteObjects: Self = this.set("OnUndeleteObjects", js.undefined)
+    def setOnUndeleteObjectsUndefined: Self = StObject.set(x, "OnUndeleteObjects", js.undefined)
     
     @scala.inline
-    def setOnUndoObjectCheckout(value: /* objVer */ IObjVer => Null | Boolean | OnSuccess): Self = this.set("OnUndoObjectCheckout", js.Any.fromFunction1(value))
+    def setOnUndoObjectCheckout(value: /* objVer */ IObjVer => Null | Boolean | OnSuccess): Self = StObject.set(x, "OnUndoObjectCheckout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnUndoObjectCheckout: Self = this.set("OnUndoObjectCheckout", js.undefined)
+    def setOnUndoObjectCheckoutUndefined: Self = StObject.set(x, "OnUndoObjectCheckout", js.undefined)
     
     @scala.inline
-    def setOnUndoObjectCheckouts(value: /* objVers */ IObjVers => Null | Boolean | FinallyOnError): Self = this.set("OnUndoObjectCheckouts", js.Any.fromFunction1(value))
+    def setOnUndoObjectCheckouts(value: /* objVers */ IObjVers => Null | Boolean | FinallyOnError): Self = StObject.set(x, "OnUndoObjectCheckouts", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnUndoObjectCheckouts: Self = this.set("OnUndoObjectCheckouts", js.undefined)
+    def setOnUndoObjectCheckoutsUndefined: Self = StObject.set(x, "OnUndoObjectCheckouts", js.undefined)
     
     @scala.inline
-    def setOnVaultLanguageChanged(value: /* languageID */ Double => Unit): Self = this.set("OnVaultLanguageChanged", js.Any.fromFunction1(value))
+    def setOnVaultLanguageChanged(value: /* languageID */ Double => Unit): Self = StObject.set(x, "OnVaultLanguageChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnVaultLanguageChanged: Self = this.set("OnVaultLanguageChanged", js.undefined)
+    def setOnVaultLanguageChangedUndefined: Self = StObject.set(x, "OnVaultLanguageChanged", js.undefined)
   }
 }

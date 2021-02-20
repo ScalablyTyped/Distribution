@@ -1,6 +1,7 @@
 package typings.saucelabs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,114 +51,102 @@ object WhoamiUser {
   }
   
   @scala.inline
-  implicit class WhoamiUserOps[Self <: WhoamiUser] (val x: Self) extends AnyVal {
+  implicit class WhoamiUserMutableBuilder[Self <: WhoamiUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccess_key(value: String): Self = StObject.set(x, "access_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccess_keyUndefined: Self = StObject.set(x, "access_key", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAncestor_concurrency_limit(value: ConcurrencyLimit): Self = StObject.set(x, "ancestor_concurrency_limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccess_key(value: String): Self = this.set("access_key", value.asInstanceOf[js.Any])
+    def setAncestor_concurrency_limitUndefined: Self = StObject.set(x, "ancestor_concurrency_limit", js.undefined)
     
     @scala.inline
-    def deleteAccess_key: Self = this.set("access_key", js.undefined)
+    def setCan_run_manual(value: Boolean): Self = StObject.set(x, "can_run_manual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAncestor_concurrency_limit(value: ConcurrencyLimit): Self = this.set("ancestor_concurrency_limit", value.asInstanceOf[js.Any])
+    def setCan_run_manualUndefined: Self = StObject.set(x, "can_run_manual", js.undefined)
     
     @scala.inline
-    def deleteAncestor_concurrency_limit: Self = this.set("ancestor_concurrency_limit", js.undefined)
+    def setConcurrency_limit(value: ConcurrencyLimit): Self = StObject.set(x, "concurrency_limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCan_run_manual(value: Boolean): Self = this.set("can_run_manual", value.asInstanceOf[js.Any])
+    def setConcurrency_limitUndefined: Self = StObject.set(x, "concurrency_limit", js.undefined)
     
     @scala.inline
-    def deleteCan_run_manual: Self = this.set("can_run_manual", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcurrency_limit(value: ConcurrencyLimit): Self = this.set("concurrency_limit", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteConcurrency_limit: Self = this.set("concurrency_limit", js.undefined)
+    def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setFirst_nameUndefined: Self = StObject.set(x, "first_name", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst_name(value: String): Self = this.set("first_name", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFirst_name: Self = this.set("first_name", js.undefined)
+    def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLast_nameUndefined: Self = StObject.set(x, "last_name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setManual_minutes(value: Double): Self = StObject.set(x, "manual_minutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast_name(value: String): Self = this.set("last_name", value.asInstanceOf[js.Any])
+    def setManual_minutesUndefined: Self = StObject.set(x, "manual_minutes", js.undefined)
     
     @scala.inline
-    def deleteLast_name: Self = this.set("last_name", js.undefined)
+    def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManual_minutes(value: Double): Self = this.set("manual_minutes", value.asInstanceOf[js.Any])
+    def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
     
     @scala.inline
-    def deleteManual_minutes: Self = this.set("manual_minutes", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinutes(value: Double): Self = this.set("minutes", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMinutes: Self = this.set("minutes", js.undefined)
+    def setParent(value: js.Object): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSubscribed(value: Boolean): Self = StObject.set(x, "subscribed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Object): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setSubscribedUndefined: Self = StObject.set(x, "subscribed", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setUser_type(value: String): Self = StObject.set(x, "user_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscribed(value: Boolean): Self = this.set("subscribed", value.asInstanceOf[js.Any])
+    def setUser_typeUndefined: Self = StObject.set(x, "user_type", js.undefined)
     
     @scala.inline
-    def deleteSubscribed: Self = this.set("subscribed", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser_type(value: String): Self = this.set("user_type", value.asInstanceOf[js.Any])
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     
     @scala.inline
-    def deleteUser_type: Self = this.set("user_type", js.undefined)
+    def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
-    
-    @scala.inline
-    def setVerified(value: Boolean): Self = this.set("verified", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerified: Self = this.set("verified", js.undefined)
+    def setVerifiedUndefined: Self = StObject.set(x, "verified", js.undefined)
   }
 }

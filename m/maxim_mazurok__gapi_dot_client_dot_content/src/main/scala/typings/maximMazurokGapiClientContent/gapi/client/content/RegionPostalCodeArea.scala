@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionPostalCodeArea extends js.Object {
+trait RegionPostalCodeArea extends StObject {
   
   /** Required. A range of postal codes. */
   var postalCodes: js.UndefOr[js.Array[RegionPostalCodeAreaPostalCodeRange]] = js.native
@@ -22,33 +23,21 @@ object RegionPostalCodeArea {
   }
   
   @scala.inline
-  implicit class RegionPostalCodeAreaOps[Self <: RegionPostalCodeArea] (val x: Self) extends AnyVal {
+  implicit class RegionPostalCodeAreaMutableBuilder[Self <: RegionPostalCodeArea] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPostalCodes(value: js.Array[RegionPostalCodeAreaPostalCodeRange]): Self = StObject.set(x, "postalCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPostalCodesUndefined: Self = StObject.set(x, "postalCodes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPostalCodesVarargs(value: RegionPostalCodeAreaPostalCodeRange*): Self = StObject.set(x, "postalCodes", js.Array(value :_*))
     
     @scala.inline
-    def setPostalCodesVarargs(value: RegionPostalCodeAreaPostalCodeRange*): Self = this.set("postalCodes", js.Array(value :_*))
+    def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostalCodes(value: js.Array[RegionPostalCodeAreaPostalCodeRange]): Self = this.set("postalCodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostalCodes: Self = this.set("postalCodes", js.undefined)
-    
-    @scala.inline
-    def setRegionCode(value: String): Self = this.set("regionCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegionCode: Self = this.set("regionCode", js.undefined)
+    def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
   }
 }

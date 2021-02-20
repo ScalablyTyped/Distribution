@@ -7,13 +7,14 @@ import typings.winrtUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.consolidated
 import typings.winrtUwp.winrtUwpStrings.visibleboundschanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the active application view and associated states and behaviors. */
 @js.native
-trait ApplicationView extends js.Object {
+trait ApplicationView extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")
@@ -47,7 +48,8 @@ trait ApplicationView extends js.Object {
   
   var isFullScreenMode: js.Any = js.native
   
-   /* unmapped type */ /** Gets whether the window (app view) is on the Windows lock screen. */
+  /* unmapped type */
+  /** Gets whether the window (app view) is on the Windows lock screen. */
   var isOnLockScreen: Boolean = js.native
   
   /** Gets or sets whether screen capture is enabled for the window (app view). */

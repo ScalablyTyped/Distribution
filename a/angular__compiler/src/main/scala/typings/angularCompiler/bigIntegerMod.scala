@@ -1,15 +1,15 @@
 package typings.angularCompiler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/i18n/big_integer", JSImport.Namespace)
-@js.native
-object bigIntegerMod extends js.Object {
+object bigIntegerMod {
   
+  @JSImport("@angular/compiler/src/i18n/big_integer", "BigIntExponentiation")
   @js.native
-  class BigIntExponentiation protected () extends js.Object {
+  class BigIntExponentiation protected () extends StObject {
     def this(base: Double) = this()
     
     val base: js.Any = js.native
@@ -23,8 +23,9 @@ object bigIntegerMod extends js.Object {
     def toThePowerOf(exponent: Double): BigIntForMultiplication = js.native
   }
   
+  @JSImport("@angular/compiler/src/i18n/big_integer", "BigIntForMultiplication")
   @js.native
-  class BigIntForMultiplication protected () extends js.Object {
+  class BigIntForMultiplication protected () extends StObject {
     def this(value: BigInteger) = this()
     
     /**
@@ -77,11 +78,12 @@ object bigIntegerMod extends js.Object {
     val powerOfTwos: js.Any = js.native
   }
   
+  @JSImport("@angular/compiler/src/i18n/big_integer", "BigInteger")
   @js.native
   /**
     * Creates a big integer using its individual digits in little endian storage.
     */
-  class BigInteger protected () extends js.Object {
+  class BigInteger protected () extends StObject {
     
     /**
       * Returns a new big integer with the sum of `this` and `other` as its value. This does not mutate
@@ -97,11 +99,14 @@ object bigIntegerMod extends js.Object {
     val digits: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object BigInteger extends js.Object {
+  object BigInteger {
     
+    @JSImport("@angular/compiler/src/i18n/big_integer", "BigInteger.one")
+    @js.native
     def one(): BigInteger = js.native
     
+    @JSImport("@angular/compiler/src/i18n/big_integer", "BigInteger.zero")
+    @js.native
     def zero(): BigInteger = js.native
   }
 }

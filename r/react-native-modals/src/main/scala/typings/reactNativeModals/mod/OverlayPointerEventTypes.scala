@@ -1,5 +1,6 @@
 package typings.reactNativeModals.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNativeModals.reactNativeModalsStrings.auto
   - typings.reactNativeModals.reactNativeModalsStrings.none
 */
-trait OverlayPointerEventTypes extends js.Object
+trait OverlayPointerEventTypes extends StObject
 object OverlayPointerEventTypes {
   
   @scala.inline

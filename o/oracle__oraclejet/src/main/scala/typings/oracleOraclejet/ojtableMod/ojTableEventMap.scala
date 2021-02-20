@@ -47,6 +47,7 @@ import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
 import typings.std.WheelEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -248,90 +249,78 @@ object ojTableEventMap {
   }
   
   @scala.inline
-  implicit class ojTableEventMapOps[Self <: ojTableEventMap[_, _], K, D] (val x: Self with (ojTableEventMap[K, D])) extends AnyVal {
+  implicit class ojTableEventMapMutableBuilder[Self <: ojTableEventMap[_, _], K, D] (val x: Self with (ojTableEventMap[K, D])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibilityChanged(value: JetElementCustomEvent[RowHeader]): Self = StObject.set(x, "accessibilityChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "asChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnsChanged(value: JetElementCustomEvent[(js.Array[Field[K, D]]) | Null]): Self = StObject.set(x, "columnsChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityChanged(value: JetElementCustomEvent[RowHeader]): Self = this.set("accessibilityChanged", value.asInstanceOf[js.Any])
+    def setColumnsDefaultChanged(value: JetElementCustomEvent[FooterClassName[K, D]]): Self = StObject.set(x, "columnsDefaultChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsChanged(value: JetElementCustomEvent[String]): Self = this.set("asChanged", value.asInstanceOf[js.Any])
+    def setCurrentRowChanged(value: JetElementCustomEvent[CurrentRow[K] | Null]): Self = StObject.set(x, "currentRowChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsChanged(value: JetElementCustomEvent[(js.Array[Field[K, D]]) | Null]): Self = this.set("columnsChanged", value.asInstanceOf[js.Any])
+    def setDataChanged(value: JetElementCustomEvent[(DataProvider[K, D]) | Null]): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsDefaultChanged(value: JetElementCustomEvent[FooterClassName[K, D]]): Self = this.set("columnsDefaultChanged", value.asInstanceOf[js.Any])
+    def setDisplayChanged(value: JetElementCustomEvent[list | grid]): Self = StObject.set(x, "displayChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentRowChanged(value: JetElementCustomEvent[CurrentRow[K] | Null]): Self = this.set("currentRowChanged", value.asInstanceOf[js.Any])
+    def setDndChanged(value: JetElementCustomEvent[DropReorder[K, D]]): Self = StObject.set(x, "dndChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataChanged(value: JetElementCustomEvent[(DataProvider[K, D]) | Null]): Self = this.set("dataChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDisplayChanged(value: JetElementCustomEvent[list | grid]): Self = this.set("displayChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDndChanged(value: JetElementCustomEvent[DropReorder[K, D]]): Self = this.set("dndChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEditModeChanged(value: JetElementCustomEvent[none | rowEdit]): Self = this.set("editModeChanged", value.asInstanceOf[js.Any])
+    def setEditModeChanged(value: JetElementCustomEvent[none | rowEdit]): Self = StObject.set(x, "editModeChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFirstSelectedRowChanged(
       value: JetElementCustomEvent[
           /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtable.ojTable<K, D>['firstSelectedRow'] */ js.Any
         ]
-    ): Self = this.set("firstSelectedRowChanged", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "firstSelectedRowChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalGridVisibleChanged(value: JetElementCustomEvent[auto | enabled | disabled]): Self = this.set("horizontalGridVisibleChanged", value.asInstanceOf[js.Any])
+    def setHorizontalGridVisibleChanged(value: JetElementCustomEvent[auto | enabled | disabled]): Self = StObject.set(x, "horizontalGridVisibleChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOjAnimateEnd(value: ojAnimateEnd): Self = this.set("ojAnimateEnd", value.asInstanceOf[js.Any])
+    def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOjAnimateStart(value: ojAnimateStart): Self = this.set("ojAnimateStart", value.asInstanceOf[js.Any])
+    def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOjBeforeCurrentRow(value: ojBeforeCurrentRow[K]): Self = this.set("ojBeforeCurrentRow", value.asInstanceOf[js.Any])
+    def setOjBeforeCurrentRow(value: ojBeforeCurrentRow[K]): Self = StObject.set(x, "ojBeforeCurrentRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOjBeforeRowEdit(value: ojBeforeRowEdit): Self = this.set("ojBeforeRowEdit", value.asInstanceOf[js.Any])
+    def setOjBeforeRowEdit(value: ojBeforeRowEdit): Self = StObject.set(x, "ojBeforeRowEdit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOjBeforeRowEditEnd(value: ojBeforeRowEditEnd): Self = this.set("ojBeforeRowEditEnd", value.asInstanceOf[js.Any])
+    def setOjBeforeRowEditEnd(value: ojBeforeRowEditEnd): Self = StObject.set(x, "ojBeforeRowEditEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOjSort(value: ojSort): Self = this.set("ojSort", value.asInstanceOf[js.Any])
+    def setOjSort(value: ojSort): Self = StObject.set(x, "ojSort", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRowRendererChanged(
       value: JetElementCustomEvent[
           (js.Function1[/* context */ RowRendererContext[K, D], String | HTMLElement | Unit]) | Null
         ]
-    ): Self = this.set("rowRendererChanged", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "rowRendererChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollPolicyChanged(value: JetElementCustomEvent[auto | loadMoreOnScroll]): Self = this.set("scrollPolicyChanged", value.asInstanceOf[js.Any])
+    def setScrollPolicyChanged(value: JetElementCustomEvent[auto | loadMoreOnScroll]): Self = StObject.set(x, "scrollPolicyChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollPolicyOptionsChanged(value: JetElementCustomEvent[MaxCount]): Self = this.set("scrollPolicyOptionsChanged", value.asInstanceOf[js.Any])
+    def setScrollPolicyOptionsChanged(value: JetElementCustomEvent[MaxCount]): Self = StObject.set(x, "scrollPolicyOptionsChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollPositionChanged(value: JetElementCustomEvent[ColumnKey]): Self = this.set("scrollPositionChanged", value.asInstanceOf[js.Any])
+    def setScrollPositionChanged(value: JetElementCustomEvent[ColumnKey]): Self = StObject.set(x, "scrollPositionChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSelectionChanged(
@@ -340,15 +329,15 @@ object ojTableEventMap {
             (RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K])
           ]
         ]
-    ): Self = this.set("selectionChanged", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "selectionChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionModeChanged(value: JetElementCustomEvent[`21`]): Self = this.set("selectionModeChanged", value.asInstanceOf[js.Any])
+    def setSelectionModeChanged(value: JetElementCustomEvent[`21`]): Self = StObject.set(x, "selectionModeChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionRequiredChanged(value: JetElementCustomEvent[Boolean]): Self = this.set("selectionRequiredChanged", value.asInstanceOf[js.Any])
+    def setSelectionRequiredChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "selectionRequiredChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalGridVisibleChanged(value: JetElementCustomEvent[auto | enabled | disabled]): Self = this.set("verticalGridVisibleChanged", value.asInstanceOf[js.Any])
+    def setVerticalGridVisibleChanged(value: JetElementCustomEvent[auto | enabled | disabled]): Self = StObject.set(x, "verticalGridVisibleChanged", value.asInstanceOf[js.Any])
   }
 }

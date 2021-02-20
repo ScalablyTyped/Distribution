@@ -2,12 +2,13 @@ package typings.gapiCalendar.anon
 
 import typings.gapiCalendar.gapi.client.calendar.date
 import typings.gapiCalendar.gapi.client.calendar.datetime
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeZone extends js.Object {
+trait TimeZone extends StObject {
   
   var date: typings.gapiCalendar.gapi.client.calendar.date = js.native
   
@@ -24,30 +25,18 @@ object TimeZone {
   }
   
   @scala.inline
-  implicit class TimeZoneOps[Self <: TimeZone] (val x: Self) extends AnyVal {
+  implicit class TimeZoneMutableBuilder[Self <: TimeZone] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateTime(value: datetime): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: date): Self = this.set("date", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDateTime(value: datetime): Self = this.set("dateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

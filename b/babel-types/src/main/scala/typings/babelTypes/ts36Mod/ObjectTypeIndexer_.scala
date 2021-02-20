@@ -1,6 +1,7 @@
 package typings.babelTypes.ts36Mod
 
 import typings.babelTypes.babelTypesStrings.ObjectTypeIndexer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,30 +39,18 @@ object ObjectTypeIndexer_ {
   }
   
   @scala.inline
-  implicit class ObjectTypeIndexer_Ops[Self <: ObjectTypeIndexer_] (val x: Self) extends AnyVal {
+  implicit class ObjectTypeIndexer_MutableBuilder[Self <: ObjectTypeIndexer_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Expression): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKey(value: FlowTypeAnnotation): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: ObjectTypeIndexer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Expression): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKey(value: FlowTypeAnnotation): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: ObjectTypeIndexer): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: FlowTypeAnnotation): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: FlowTypeAnnotation): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

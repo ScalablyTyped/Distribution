@@ -1,5 +1,6 @@
 package typings.minecraftScriptingTypesServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This event is used to turn various levels of logging on and off for server scripts. Note that turning logging on/off is not limited to the script that broadcasted the event. It will affect ALL server scripts including those in other Behavior Packs that are applied to the world. See the Debugging section for more information on logging.
   */
 @js.native
-trait IScriptLoggerConfigParameters extends js.Object {
+trait IScriptLoggerConfigParameters extends StObject {
   
   /**
     * Set to true to log any scripting errors that occur on the server
@@ -37,27 +38,15 @@ object IScriptLoggerConfigParameters {
   }
   
   @scala.inline
-  implicit class IScriptLoggerConfigParametersOps[Self <: IScriptLoggerConfigParameters] (val x: Self) extends AnyVal {
+  implicit class IScriptLoggerConfigParametersMutableBuilder[Self <: IScriptLoggerConfigParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLog_errors(value: Boolean): Self = StObject.set(x, "log_errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLog_information(value: Boolean): Self = StObject.set(x, "log_information", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLog_errors(value: Boolean): Self = this.set("log_errors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLog_information(value: Boolean): Self = this.set("log_information", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLog_warnings(value: Boolean): Self = this.set("log_warnings", value.asInstanceOf[js.Any])
+    def setLog_warnings(value: Boolean): Self = StObject.set(x, "log_warnings", value.asInstanceOf[js.Any])
   }
 }

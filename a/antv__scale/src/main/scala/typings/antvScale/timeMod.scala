@@ -1,20 +1,27 @@
 package typings.antvScale
 
-import typings.antvScale.categoryBaseMod.Category
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/scale/lib/category/time", JSImport.Namespace)
-@js.native
-object timeMod extends js.Object {
+object timeMod {
+  
+  /**
+    * 时间分类度量
+    * @class
+    */
+  @JSImport("@antv/scale/lib/category/time", JSImport.Default)
+  @js.native
+  class default () extends TimeCat
   
   /**
     * 时间分类度量
     * @class
     */
   @js.native
-  trait TimeCat extends Category {
+  trait TimeCat
+    extends typings.antvScale.categoryBaseMod.default {
     
     /**
       * 由于时间类型数据需要转换一下，所以复写 getText
@@ -27,11 +34,4 @@ object timeMod extends js.Object {
     
     var mask: js.Any = js.native
   }
-  
-  /**
-    * 时间分类度量
-    * @class
-    */
-  @js.native
-  class default () extends TimeCat
 }

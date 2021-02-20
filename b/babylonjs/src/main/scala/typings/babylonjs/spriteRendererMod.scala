@@ -7,16 +7,16 @@ import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.thinSpriteMod.ThinSprite
 import typings.babylonjs.thinTextureMod.ThinTexture
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Sprites/spriteRenderer", JSImport.Namespace)
-@js.native
-object spriteRendererMod extends js.Object {
+object spriteRendererMod {
   
+  @JSImport("babylonjs/Sprites/spriteRenderer", "SpriteRenderer")
   @js.native
-  class SpriteRenderer protected () extends js.Object {
+  class SpriteRenderer protected () extends StObject {
     /**
       * Creates a new sprite Renderer
       * @param engine defines the engine the renderer works with

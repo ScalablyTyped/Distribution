@@ -1,11 +1,12 @@
 package typings.pixiSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Slot extends js.Object {
+trait Slot extends StObject {
   
   var attachment: Attachment = js.native
   
@@ -89,93 +90,81 @@ object Slot {
   }
   
   @scala.inline
-  implicit class SlotOps[Self <: Slot] (val x: Self) extends AnyVal {
+  implicit class SlotMutableBuilder[Self <: Slot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachment(value: Attachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentState(value: Double): Self = StObject.set(x, "attachmentState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachmentTime(value: js.Any): Self = StObject.set(x, "attachmentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachment(value: Attachment): Self = this.set("attachment", value.asInstanceOf[js.Any])
+    def setBlendMode(value: Double): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentState(value: Double): Self = this.set("attachmentState", value.asInstanceOf[js.Any])
+    def setBone(value: Bone): Self = StObject.set(x, "bone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentTime(value: js.Any): Self = this.set("attachmentTime", value.asInstanceOf[js.Any])
+    def setClippingContainer(value: js.Any): Self = StObject.set(x, "clippingContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlendMode(value: Double): Self = this.set("blendMode", value.asInstanceOf[js.Any])
+    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBone(value: Bone): Self = this.set("bone", value.asInstanceOf[js.Any])
+    def setCurrentGraphics(value: js.Any): Self = StObject.set(x, "currentGraphics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClippingContainer(value: js.Any): Self = this.set("clippingContainer", value.asInstanceOf[js.Any])
+    def setCurrentMesh(value: js.Any): Self = StObject.set(x, "currentMesh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setCurrentMeshName(value: String): Self = StObject.set(x, "currentMeshName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentGraphics(value: js.Any): Self = this.set("currentGraphics", value.asInstanceOf[js.Any])
+    def setCurrentSprite(value: js.Any): Self = StObject.set(x, "currentSprite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentMesh(value: js.Any): Self = this.set("currentMesh", value.asInstanceOf[js.Any])
+    def setCurrentSpriteName(value: String): Self = StObject.set(x, "currentSpriteName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentMeshName(value: String): Self = this.set("currentMeshName", value.asInstanceOf[js.Any])
+    def setDarkColor(value: Color): Self = StObject.set(x, "darkColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentSprite(value: js.Any): Self = this.set("currentSprite", value.asInstanceOf[js.Any])
+    def setData(value: SlotData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentSpriteName(value: String): Self = this.set("currentSpriteName", value.asInstanceOf[js.Any])
+    def setDeform(value: js.Array[Double]): Self = StObject.set(x, "deform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDarkColor(value: Color): Self = this.set("darkColor", value.asInstanceOf[js.Any])
+    def setDeformVarargs(value: Double*): Self = StObject.set(x, "deform", js.Array(value :_*))
     
     @scala.inline
-    def setData(value: SlotData): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setGetAttachment(value: () => Attachment): Self = StObject.set(x, "getAttachment", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeformVarargs(value: Double*): Self = this.set("deform", js.Array(value :_*))
+    def setGetAttachmentTime(value: () => Double): Self = StObject.set(x, "getAttachmentTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeform(value: js.Array[Double]): Self = this.set("deform", value.asInstanceOf[js.Any])
+    def setHackAttachment(value: Attachment): Self = StObject.set(x, "hackAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAttachment(value: () => Attachment): Self = this.set("getAttachment", js.Any.fromFunction0(value))
+    def setHackRegion(value: TextureRegion): Self = StObject.set(x, "hackRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAttachmentTime(value: () => Double): Self = this.set("getAttachmentTime", js.Any.fromFunction0(value))
+    def setMeshes(value: js.Any): Self = StObject.set(x, "meshes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHackAttachment(value: Attachment): Self = this.set("hackAttachment", value.asInstanceOf[js.Any])
+    def setSetAttachment(value: Attachment => Unit): Self = StObject.set(x, "setAttachment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHackRegion(value: TextureRegion): Self = this.set("hackRegion", value.asInstanceOf[js.Any])
+    def setSetAttachmentTime(value: Double => Unit): Self = StObject.set(x, "setAttachmentTime", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMeshes(value: js.Any): Self = this.set("meshes", value.asInstanceOf[js.Any])
+    def setSetToSetupPose(value: () => Unit): Self = StObject.set(x, "setToSetupPose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetAttachment(value: Attachment => Unit): Self = this.set("setAttachment", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetAttachmentTime(value: Double => Unit): Self = this.set("setAttachmentTime", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetToSetupPose(value: () => Unit): Self = this.set("setToSetupPose", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSprites(value: js.Any): Self = this.set("sprites", value.asInstanceOf[js.Any])
+    def setSprites(value: js.Any): Self = StObject.set(x, "sprites", value.asInstanceOf[js.Any])
   }
 }

@@ -7,12 +7,13 @@ import typings.rethinkdb.rethinkdbStrings.m
 import typings.rethinkdb.rethinkdbStrings.mi
 import typings.rethinkdb.rethinkdbStrings.nm
 import typings.rethinkdb.rethinkdbStrings.unit_sphere
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistanceOptions extends js.Object {
+trait DistanceOptions extends StObject {
   
   /**
     * The reference ellipsoid to use for geographic coordinates. Possible values are `WGS84` (the default), a common standard for Earth’s geometry, or `unit_sphere`, a perfect sphere of 1 meter radius.
@@ -33,30 +34,18 @@ object DistanceOptions {
   }
   
   @scala.inline
-  implicit class DistanceOptionsOps[Self <: DistanceOptions] (val x: Self) extends AnyVal {
+  implicit class DistanceOptionsMutableBuilder[Self <: DistanceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeoSystem(value: WGS84 | unit_sphere): Self = StObject.set(x, "geoSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeoSystemUndefined: Self = StObject.set(x, "geoSystem", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUnit(value: m | km | mi | nm | ft): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeoSystem(value: WGS84 | unit_sphere): Self = this.set("geoSystem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGeoSystem: Self = this.set("geoSystem", js.undefined)
-    
-    @scala.inline
-    def setUnit(value: m | km | mi | nm | ft): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

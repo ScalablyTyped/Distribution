@@ -1,11 +1,12 @@
 package typings.ibmMobilefirst.WL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoggerOptions extends js.Object {
+trait LoggerOptions extends StObject {
   
   var autoSendLogs: js.UndefOr[Boolean] = js.native
   
@@ -48,105 +49,93 @@ object LoggerOptions {
   }
   
   @scala.inline
-  implicit class LoggerOptionsOps[Self <: LoggerOptions] (val x: Self) extends AnyVal {
+  implicit class LoggerOptionsMutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoSendLogs(value: Boolean): Self = StObject.set(x, "autoSendLogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoSendLogsUndefined: Self = StObject.set(x, "autoSendLogs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSendLogs(value: Boolean): Self = this.set("autoSendLogs", value.asInstanceOf[js.Any])
+    def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
     
     @scala.inline
-    def deleteAutoSendLogs: Self = this.set("autoSendLogs", js.undefined)
+    def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
     
     @scala.inline
-    def setBlacklistVarargs(value: String*): Self = this.set("blacklist", js.Array(value :_*))
+    def setCallback(value: (/* message */ String | js.Array[String], /* level */ String, /* package */ String) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setBlacklist(value: js.Array[String]): Self = this.set("blacklist", value.asInstanceOf[js.Any])
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def deleteBlacklist: Self = this.set("blacklist", js.undefined)
+    def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: (/* message */ String | js.Array[String], /* level */ String, /* package */ String) => Unit): Self = this.set("callback", js.Any.fromFunction3(value))
+    def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setFilters(value: Filter): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapture(value: Boolean): Self = this.set("capture", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def deleteCapture: Self = this.set("capture", js.undefined)
+    def setLevel(value: js.Array[String] | String | Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: Filter): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setLevelVarargs(value: String*): Self = StObject.set(x, "level", js.Array(value :_*))
     
     @scala.inline
-    def setLevelVarargs(value: String*): Self = this.set("level", js.Array(value :_*))
+    def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: js.Array[String] | String | Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setPkg(value: String): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFileSize(value: Double): Self = this.set("maxFileSize", value.asInstanceOf[js.Any])
+    def setPkgUndefined: Self = StObject.set(x, "pkg", js.undefined)
     
     @scala.inline
-    def deleteMaxFileSize: Self = this.set("maxFileSize", js.undefined)
+    def setPretty(value: Boolean): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPkg(value: String): Self = this.set("pkg", value.asInstanceOf[js.Any])
+    def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
     
     @scala.inline
-    def deletePkg: Self = this.set("pkg", js.undefined)
+    def setStacktrace(value: Boolean): Self = StObject.set(x, "stacktrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPretty(value: Boolean): Self = this.set("pretty", value.asInstanceOf[js.Any])
+    def setStacktraceUndefined: Self = StObject.set(x, "stacktrace", js.undefined)
     
     @scala.inline
-    def deletePretty: Self = this.set("pretty", js.undefined)
+    def setStringify(value: Boolean): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStacktrace(value: Boolean): Self = this.set("stacktrace", value.asInstanceOf[js.Any])
+    def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
     
     @scala.inline
-    def deleteStacktrace: Self = this.set("stacktrace", js.undefined)
+    def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStringify(value: Boolean): Self = this.set("stringify", value.asInstanceOf[js.Any])
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
     @scala.inline
-    def deleteStringify: Self = this.set("stringify", js.undefined)
+    def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: Tag): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
     
     @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
-    
-    @scala.inline
-    def setWhitelistVarargs(value: String*): Self = this.set("whitelist", js.Array(value :_*))
-    
-    @scala.inline
-    def setWhitelist(value: js.Array[String]): Self = this.set("whitelist", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhitelist: Self = this.set("whitelist", js.undefined)
+    def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
   }
 }

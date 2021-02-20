@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextStyleSuggestionState extends js.Object {
+trait TextStyleSuggestionState extends StObject {
   
   /** Indicates if there was a suggested change to background_color. */
   var backgroundColorSuggested: js.UndefOr[Boolean] = js.native
@@ -49,84 +50,72 @@ object TextStyleSuggestionState {
   }
   
   @scala.inline
-  implicit class TextStyleSuggestionStateOps[Self <: TextStyleSuggestionState] (val x: Self) extends AnyVal {
+  implicit class TextStyleSuggestionStateMutableBuilder[Self <: TextStyleSuggestionState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorSuggestedUndefined: Self = StObject.set(x, "backgroundColorSuggested", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaselineOffsetSuggested(value: Boolean): Self = StObject.set(x, "baselineOffsetSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColorSuggested(value: Boolean): Self = this.set("backgroundColorSuggested", value.asInstanceOf[js.Any])
+    def setBaselineOffsetSuggestedUndefined: Self = StObject.set(x, "baselineOffsetSuggested", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColorSuggested: Self = this.set("backgroundColorSuggested", js.undefined)
+    def setBoldSuggested(value: Boolean): Self = StObject.set(x, "boldSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaselineOffsetSuggested(value: Boolean): Self = this.set("baselineOffsetSuggested", value.asInstanceOf[js.Any])
+    def setBoldSuggestedUndefined: Self = StObject.set(x, "boldSuggested", js.undefined)
     
     @scala.inline
-    def deleteBaselineOffsetSuggested: Self = this.set("baselineOffsetSuggested", js.undefined)
+    def setFontSizeSuggested(value: Boolean): Self = StObject.set(x, "fontSizeSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoldSuggested(value: Boolean): Self = this.set("boldSuggested", value.asInstanceOf[js.Any])
+    def setFontSizeSuggestedUndefined: Self = StObject.set(x, "fontSizeSuggested", js.undefined)
     
     @scala.inline
-    def deleteBoldSuggested: Self = this.set("boldSuggested", js.undefined)
+    def setForegroundColorSuggested(value: Boolean): Self = StObject.set(x, "foregroundColorSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSizeSuggested(value: Boolean): Self = this.set("fontSizeSuggested", value.asInstanceOf[js.Any])
+    def setForegroundColorSuggestedUndefined: Self = StObject.set(x, "foregroundColorSuggested", js.undefined)
     
     @scala.inline
-    def deleteFontSizeSuggested: Self = this.set("fontSizeSuggested", js.undefined)
+    def setItalicSuggested(value: Boolean): Self = StObject.set(x, "italicSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForegroundColorSuggested(value: Boolean): Self = this.set("foregroundColorSuggested", value.asInstanceOf[js.Any])
+    def setItalicSuggestedUndefined: Self = StObject.set(x, "italicSuggested", js.undefined)
     
     @scala.inline
-    def deleteForegroundColorSuggested: Self = this.set("foregroundColorSuggested", js.undefined)
+    def setLinkSuggested(value: Boolean): Self = StObject.set(x, "linkSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItalicSuggested(value: Boolean): Self = this.set("italicSuggested", value.asInstanceOf[js.Any])
+    def setLinkSuggestedUndefined: Self = StObject.set(x, "linkSuggested", js.undefined)
     
     @scala.inline
-    def deleteItalicSuggested: Self = this.set("italicSuggested", js.undefined)
+    def setSmallCapsSuggested(value: Boolean): Self = StObject.set(x, "smallCapsSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkSuggested(value: Boolean): Self = this.set("linkSuggested", value.asInstanceOf[js.Any])
+    def setSmallCapsSuggestedUndefined: Self = StObject.set(x, "smallCapsSuggested", js.undefined)
     
     @scala.inline
-    def deleteLinkSuggested: Self = this.set("linkSuggested", js.undefined)
+    def setStrikethroughSuggested(value: Boolean): Self = StObject.set(x, "strikethroughSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmallCapsSuggested(value: Boolean): Self = this.set("smallCapsSuggested", value.asInstanceOf[js.Any])
+    def setStrikethroughSuggestedUndefined: Self = StObject.set(x, "strikethroughSuggested", js.undefined)
     
     @scala.inline
-    def deleteSmallCapsSuggested: Self = this.set("smallCapsSuggested", js.undefined)
+    def setUnderlineSuggested(value: Boolean): Self = StObject.set(x, "underlineSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrikethroughSuggested(value: Boolean): Self = this.set("strikethroughSuggested", value.asInstanceOf[js.Any])
+    def setUnderlineSuggestedUndefined: Self = StObject.set(x, "underlineSuggested", js.undefined)
     
     @scala.inline
-    def deleteStrikethroughSuggested: Self = this.set("strikethroughSuggested", js.undefined)
+    def setWeightedFontFamilySuggested(value: Boolean): Self = StObject.set(x, "weightedFontFamilySuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnderlineSuggested(value: Boolean): Self = this.set("underlineSuggested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnderlineSuggested: Self = this.set("underlineSuggested", js.undefined)
-    
-    @scala.inline
-    def setWeightedFontFamilySuggested(value: Boolean): Self = this.set("weightedFontFamilySuggested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeightedFontFamilySuggested: Self = this.set("weightedFontFamilySuggested", js.undefined)
+    def setWeightedFontFamilySuggestedUndefined: Self = StObject.set(x, "weightedFontFamilySuggested", js.undefined)
   }
 }

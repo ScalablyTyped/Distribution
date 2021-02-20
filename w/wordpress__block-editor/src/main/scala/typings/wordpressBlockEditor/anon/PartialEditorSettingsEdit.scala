@@ -6,13 +6,14 @@ import typings.wordpressBlockEditor.mod.EditorFontSize
 import typings.wordpressBlockEditor.mod.EditorImageSize
 import typings.wordpressBlockEditor.mod.EditorStyle
 import typings.wordpressBlockEditor.mod.EditorTemplateLock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@wordpress/block-editor.@wordpress/block-editor.EditorSettings & @wordpress/block-editor.@wordpress/block-editor.EditorBlockListSettings> */
 @js.native
-trait PartialEditorSettingsEdit extends js.Object {
+trait PartialEditorSettingsEdit extends StObject {
   
   var alignWide: js.UndefOr[Boolean] = js.native
   
@@ -79,213 +80,201 @@ object PartialEditorSettingsEdit {
   }
   
   @scala.inline
-  implicit class PartialEditorSettingsEditOps[Self <: PartialEditorSettingsEdit] (val x: Self) extends AnyVal {
+  implicit class PartialEditorSettingsEditMutableBuilder[Self <: PartialEditorSettingsEdit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignWide(value: Boolean): Self = StObject.set(x, "alignWide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignWideUndefined: Self = StObject.set(x, "alignWide", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedBlockTypes(value: js.Array[String] | Boolean): Self = StObject.set(x, "allowedBlockTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignWide(value: Boolean): Self = this.set("alignWide", value.asInstanceOf[js.Any])
+    def setAllowedBlockTypesUndefined: Self = StObject.set(x, "allowedBlockTypes", js.undefined)
     
     @scala.inline
-    def deleteAlignWide: Self = this.set("alignWide", js.undefined)
+    def setAllowedBlockTypesVarargs(value: String*): Self = StObject.set(x, "allowedBlockTypes", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedBlockTypesVarargs(value: String*): Self = this.set("allowedBlockTypes", js.Array(value :_*))
+    def setAllowedBlocks(value: js.Array[String]): Self = StObject.set(x, "allowedBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedBlockTypes(value: js.Array[String] | Boolean): Self = this.set("allowedBlockTypes", value.asInstanceOf[js.Any])
+    def setAllowedBlocksUndefined: Self = StObject.set(x, "allowedBlocks", js.undefined)
     
     @scala.inline
-    def deleteAllowedBlockTypes: Self = this.set("allowedBlockTypes", js.undefined)
+    def setAllowedBlocksVarargs(value: String*): Self = StObject.set(x, "allowedBlocks", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedBlocksVarargs(value: String*): Self = this.set("allowedBlocks", js.Array(value :_*))
+    def setAllowedMimeTypes(value: Record[String, String]): Self = StObject.set(x, "allowedMimeTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedBlocks(value: js.Array[String]): Self = this.set("allowedBlocks", value.asInstanceOf[js.Any])
+    def setAllowedMimeTypesNull: Self = StObject.set(x, "allowedMimeTypes", null)
     
     @scala.inline
-    def deleteAllowedBlocks: Self = this.set("allowedBlocks", js.undefined)
+    def setAllowedMimeTypesUndefined: Self = StObject.set(x, "allowedMimeTypes", js.undefined)
     
     @scala.inline
-    def setAllowedMimeTypes(value: Record[String, String]): Self = this.set("allowedMimeTypes", value.asInstanceOf[js.Any])
+    def setAutosaveInterval(value: Double): Self = StObject.set(x, "autosaveInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowedMimeTypes: Self = this.set("allowedMimeTypes", js.undefined)
+    def setAutosaveIntervalUndefined: Self = StObject.set(x, "autosaveInterval", js.undefined)
     
     @scala.inline
-    def setAllowedMimeTypesNull: Self = this.set("allowedMimeTypes", null)
+    def setAvailableLegacyWidgets(value: js.Array[Description]): Self = StObject.set(x, "availableLegacyWidgets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutosaveInterval(value: Double): Self = this.set("autosaveInterval", value.asInstanceOf[js.Any])
+    def setAvailableLegacyWidgetsUndefined: Self = StObject.set(x, "availableLegacyWidgets", js.undefined)
     
     @scala.inline
-    def deleteAutosaveInterval: Self = this.set("autosaveInterval", js.undefined)
+    def setAvailableLegacyWidgetsVarargs(value: Description*): Self = StObject.set(x, "availableLegacyWidgets", js.Array(value :_*))
     
     @scala.inline
-    def setAvailableLegacyWidgetsVarargs(value: Description*): Self = this.set("availableLegacyWidgets", js.Array(value :_*))
+    def setAvailableTemplates(value: js.Array[_]): Self = StObject.set(x, "availableTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableLegacyWidgets(value: js.Array[Description]): Self = this.set("availableLegacyWidgets", value.asInstanceOf[js.Any])
+    def setAvailableTemplatesUndefined: Self = StObject.set(x, "availableTemplates", js.undefined)
     
     @scala.inline
-    def deleteAvailableLegacyWidgets: Self = this.set("availableLegacyWidgets", js.undefined)
+    def setAvailableTemplatesVarargs(value: js.Any*): Self = StObject.set(x, "availableTemplates", js.Array(value :_*))
     
     @scala.inline
-    def setAvailableTemplatesVarargs(value: js.Any*): Self = this.set("availableTemplates", js.Array(value :_*))
+    def setBodyPlaceholder(value: String): Self = StObject.set(x, "bodyPlaceholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableTemplates(value: js.Array[_]): Self = this.set("availableTemplates", value.asInstanceOf[js.Any])
+    def setBodyPlaceholderUndefined: Self = StObject.set(x, "bodyPlaceholder", js.undefined)
     
     @scala.inline
-    def deleteAvailableTemplates: Self = this.set("availableTemplates", js.undefined)
+    def setCodeEditingEnabled(value: Boolean): Self = StObject.set(x, "codeEditingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyPlaceholder(value: String): Self = this.set("bodyPlaceholder", value.asInstanceOf[js.Any])
+    def setCodeEditingEnabledUndefined: Self = StObject.set(x, "codeEditingEnabled", js.undefined)
     
     @scala.inline
-    def deleteBodyPlaceholder: Self = this.set("bodyPlaceholder", js.undefined)
+    def setColors(value: js.Array[EditorColor]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeEditingEnabled(value: Boolean): Self = this.set("codeEditingEnabled", value.asInstanceOf[js.Any])
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def deleteCodeEditingEnabled: Self = this.set("codeEditingEnabled", js.undefined)
+    def setColorsVarargs(value: EditorColor*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
     @scala.inline
-    def setColorsVarargs(value: EditorColor*): Self = this.set("colors", js.Array(value :_*))
+    def setDisableCustomColors(value: Boolean): Self = StObject.set(x, "disableCustomColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: js.Array[EditorColor]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setDisableCustomColorsUndefined: Self = StObject.set(x, "disableCustomColors", js.undefined)
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setDisableCustomEditorFontSizes(value: Boolean): Self = StObject.set(x, "disableCustomEditorFontSizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableCustomColors(value: Boolean): Self = this.set("disableCustomColors", value.asInstanceOf[js.Any])
+    def setDisableCustomEditorFontSizesUndefined: Self = StObject.set(x, "disableCustomEditorFontSizes", js.undefined)
     
     @scala.inline
-    def deleteDisableCustomColors: Self = this.set("disableCustomColors", js.undefined)
+    def setDisablePostFormats(value: Boolean): Self = StObject.set(x, "disablePostFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableCustomEditorFontSizes(value: Boolean): Self = this.set("disableCustomEditorFontSizes", value.asInstanceOf[js.Any])
+    def setDisablePostFormatsUndefined: Self = StObject.set(x, "disablePostFormats", js.undefined)
     
     @scala.inline
-    def deleteDisableCustomEditorFontSizes: Self = this.set("disableCustomEditorFontSizes", js.undefined)
+    def setEnableCustomFields(value: Boolean): Self = StObject.set(x, "enableCustomFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisablePostFormats(value: Boolean): Self = this.set("disablePostFormats", value.asInstanceOf[js.Any])
+    def setEnableCustomFieldsUndefined: Self = StObject.set(x, "enableCustomFields", js.undefined)
     
     @scala.inline
-    def deleteDisablePostFormats: Self = this.set("disablePostFormats", js.undefined)
+    def setFocusMode(value: Boolean): Self = StObject.set(x, "focusMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCustomFields(value: Boolean): Self = this.set("enableCustomFields", value.asInstanceOf[js.Any])
+    def setFocusModeUndefined: Self = StObject.set(x, "focusMode", js.undefined)
     
     @scala.inline
-    def deleteEnableCustomFields: Self = this.set("enableCustomFields", js.undefined)
+    def setFontSizes(value: js.Array[EditorFontSize]): Self = StObject.set(x, "fontSizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusMode(value: Boolean): Self = this.set("focusMode", value.asInstanceOf[js.Any])
+    def setFontSizesUndefined: Self = StObject.set(x, "fontSizes", js.undefined)
     
     @scala.inline
-    def deleteFocusMode: Self = this.set("focusMode", js.undefined)
+    def setFontSizesVarargs(value: EditorFontSize*): Self = StObject.set(x, "fontSizes", js.Array(value :_*))
     
     @scala.inline
-    def setFontSizesVarargs(value: EditorFontSize*): Self = this.set("fontSizes", js.Array(value :_*))
+    def setHasFixedToolbar(value: Boolean): Self = StObject.set(x, "hasFixedToolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSizes(value: js.Array[EditorFontSize]): Self = this.set("fontSizes", value.asInstanceOf[js.Any])
+    def setHasFixedToolbarUndefined: Self = StObject.set(x, "hasFixedToolbar", js.undefined)
     
     @scala.inline
-    def deleteFontSizes: Self = this.set("fontSizes", js.undefined)
+    def setHasPermissionsToManageWidgets(value: Boolean): Self = StObject.set(x, "hasPermissionsToManageWidgets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasFixedToolbar(value: Boolean): Self = this.set("hasFixedToolbar", value.asInstanceOf[js.Any])
+    def setHasPermissionsToManageWidgetsUndefined: Self = StObject.set(x, "hasPermissionsToManageWidgets", js.undefined)
     
     @scala.inline
-    def deleteHasFixedToolbar: Self = this.set("hasFixedToolbar", js.undefined)
+    def setImageSizes(value: js.Array[EditorImageSize]): Self = StObject.set(x, "imageSizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasPermissionsToManageWidgets(value: Boolean): Self = this.set("hasPermissionsToManageWidgets", value.asInstanceOf[js.Any])
+    def setImageSizesUndefined: Self = StObject.set(x, "imageSizes", js.undefined)
     
     @scala.inline
-    def deleteHasPermissionsToManageWidgets: Self = this.set("hasPermissionsToManageWidgets", js.undefined)
+    def setImageSizesVarargs(value: EditorImageSize*): Self = StObject.set(x, "imageSizes", js.Array(value :_*))
     
     @scala.inline
-    def setImageSizesVarargs(value: EditorImageSize*): Self = this.set("imageSizes", js.Array(value :_*))
+    def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageSizes(value: js.Array[EditorImageSize]): Self = this.set("imageSizes", value.asInstanceOf[js.Any])
+    def setIsRTLUndefined: Self = StObject.set(x, "isRTL", js.undefined)
     
     @scala.inline
-    def deleteImageSizes: Self = this.set("imageSizes", js.undefined)
+    def setMaxUploadFileSize(value: Double): Self = StObject.set(x, "maxUploadFileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRTL(value: Boolean): Self = this.set("isRTL", value.asInstanceOf[js.Any])
+    def setMaxUploadFileSizeUndefined: Self = StObject.set(x, "maxUploadFileSize", js.undefined)
     
     @scala.inline
-    def deleteIsRTL: Self = this.set("isRTL", js.undefined)
+    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxUploadFileSize(value: Double): Self = this.set("maxUploadFileSize", value.asInstanceOf[js.Any])
+    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
     @scala.inline
-    def deleteMaxUploadFileSize: Self = this.set("maxUploadFileSize", js.undefined)
+    def setPostLock(value: IsLocked): Self = StObject.set(x, "postLock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    def setPostLockUndefined: Self = StObject.set(x, "postLock", js.undefined)
     
     @scala.inline
-    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    def setPostLockUtils(value: AjaxUrl): Self = StObject.set(x, "postLockUtils", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostLock(value: IsLocked): Self = this.set("postLock", value.asInstanceOf[js.Any])
+    def setPostLockUtilsUndefined: Self = StObject.set(x, "postLockUtils", js.undefined)
     
     @scala.inline
-    def deletePostLock: Self = this.set("postLock", js.undefined)
+    def setRichEditingEnabled(value: Boolean): Self = StObject.set(x, "richEditingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostLockUtils(value: AjaxUrl): Self = this.set("postLockUtils", value.asInstanceOf[js.Any])
+    def setRichEditingEnabledUndefined: Self = StObject.set(x, "richEditingEnabled", js.undefined)
     
     @scala.inline
-    def deletePostLockUtils: Self = this.set("postLockUtils", js.undefined)
+    def setStyles(value: js.Array[EditorStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRichEditingEnabled(value: Boolean): Self = this.set("richEditingEnabled", value.asInstanceOf[js.Any])
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def deleteRichEditingEnabled: Self = this.set("richEditingEnabled", js.undefined)
+    def setStylesVarargs(value: EditorStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
     
     @scala.inline
-    def setStylesVarargs(value: EditorStyle*): Self = this.set("styles", js.Array(value :_*))
+    def setTemplateLock(value: EditorTemplateLock): Self = StObject.set(x, "templateLock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: js.Array[EditorStyle]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setTemplateLockUndefined: Self = StObject.set(x, "templateLock", js.undefined)
     
     @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setTitlePlaceholder(value: String): Self = StObject.set(x, "titlePlaceholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateLock(value: EditorTemplateLock): Self = this.set("templateLock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateLock: Self = this.set("templateLock", js.undefined)
-    
-    @scala.inline
-    def setTitlePlaceholder(value: String): Self = this.set("titlePlaceholder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitlePlaceholder: Self = this.set("titlePlaceholder", js.undefined)
+    def setTitlePlaceholderUndefined: Self = StObject.set(x, "titlePlaceholder", js.undefined)
   }
 }

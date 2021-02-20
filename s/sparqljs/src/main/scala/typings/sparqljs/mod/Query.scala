@@ -6,6 +6,7 @@ import typings.sparqljs.sparqljsStrings.CONSTRUCT
 import typings.sparqljs.sparqljsStrings.DESCRIBE
 import typings.sparqljs.sparqljsStrings.SELECT
 import typings.sparqljs.sparqljsStrings.query
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,29 +21,17 @@ trait Query extends SparqlQuery
 object Query {
   
   @scala.inline
-  def SelectQuery(
-    prefixes: StringDictionary[String],
-    queryType: SELECT,
-    `type`: query,
-    variables: js.Array[Variable | Wildcard]
-  ): Query = {
-    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+  def AskQuery(prefixes: StringDictionary[String], queryType: ASK, `type`: query): typings.sparqljs.mod.AskQuery = {
+    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Query]
+    __obj.asInstanceOf[typings.sparqljs.mod.AskQuery]
   }
   
   @scala.inline
-  def ConstructQuery(prefixes: StringDictionary[String], queryType: CONSTRUCT, `type`: query): Query = {
+  def ConstructQuery(prefixes: StringDictionary[String], queryType: CONSTRUCT, `type`: query): typings.sparqljs.mod.ConstructQuery = {
     val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Query]
-  }
-  
-  @scala.inline
-  def AskQuery(prefixes: StringDictionary[String], queryType: ASK, `type`: query): Query = {
-    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Query]
+    __obj.asInstanceOf[typings.sparqljs.mod.ConstructQuery]
   }
   
   @scala.inline
@@ -51,9 +40,21 @@ object Query {
     queryType: DESCRIBE,
     `type`: query,
     variables: js.Array[Variable | Wildcard]
-  ): Query = {
+  ): typings.sparqljs.mod.DescribeQuery = {
     val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Query]
+    __obj.asInstanceOf[typings.sparqljs.mod.DescribeQuery]
+  }
+  
+  @scala.inline
+  def SelectQuery(
+    prefixes: StringDictionary[String],
+    queryType: SELECT,
+    `type`: query,
+    variables: js.Array[Variable | Wildcard]
+  ): typings.sparqljs.mod.SelectQuery = {
+    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.sparqljs.mod.SelectQuery]
   }
 }

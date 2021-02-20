@@ -5,17 +5,19 @@ import typings.materialChips.trailingactionFoundationMod.MDCChipTrailingActionFo
 import typings.materialRipple.componentMod.MDCRipple
 import typings.materialRipple.componentMod.MDCRippleFactory
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/chips/trailingaction/component", JSImport.Namespace)
-@js.native
-object trailingactionComponentMod extends js.Object {
+object trailingactionComponentMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined disabled, unbounded */ @js.native
-  class MDCChipTrailingAction () extends MDCComponent[MDCChipTrailingActionFoundation] {
+  - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined disabled, unbounded */ @JSImport("@material/chips/trailingaction/component", "MDCChipTrailingAction")
+  @js.native
+  class MDCChipTrailingAction protected () extends MDCComponent[MDCChipTrailingActionFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCChipTrailingActionFoundation, args: js.Any*) = this()
     
     var disabled: js.UndefOr[Boolean] = js.native
     
@@ -33,9 +35,10 @@ object trailingactionComponentMod extends js.Object {
     var unbounded: js.UndefOr[Boolean] = js.native
   }
   /* static members */
-  @js.native
-  object MDCChipTrailingAction extends js.Object {
+  object MDCChipTrailingAction {
     
+    @JSImport("@material/chips/trailingaction/component", "MDCChipTrailingAction.attachTo")
+    @js.native
     def attachTo(root: Element): MDCChipTrailingAction = js.native
   }
   

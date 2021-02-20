@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Trust extends js.Object {
+trait Trust extends StObject {
   
   /**
     * The date and time that the trust relationship was created.
@@ -71,84 +72,72 @@ object Trust {
   }
   
   @scala.inline
-  implicit class TrustOps[Self <: Trust] (val x: Self) extends AnyVal {
+  implicit class TrustMutableBuilder[Self <: Trust] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedDateTime(value: CreatedDateTime): Self = StObject.set(x, "CreatedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedDateTimeUndefined: Self = StObject.set(x, "CreatedDateTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDateTime(value: CreatedDateTime): Self = this.set("CreatedDateTime", value.asInstanceOf[js.Any])
+    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
     @scala.inline
-    def deleteCreatedDateTime: Self = this.set("CreatedDateTime", js.undefined)
+    def setLastUpdatedDateTime(value: LastUpdatedDateTime): Self = StObject.set(x, "LastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "LastUpdatedDateTime", js.undefined)
     
     @scala.inline
-    def deleteDirectoryId: Self = this.set("DirectoryId", js.undefined)
+    def setRemoteDomainName(value: RemoteDomainName): Self = StObject.set(x, "RemoteDomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedDateTime(value: LastUpdatedDateTime): Self = this.set("LastUpdatedDateTime", value.asInstanceOf[js.Any])
+    def setRemoteDomainNameUndefined: Self = StObject.set(x, "RemoteDomainName", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedDateTime: Self = this.set("LastUpdatedDateTime", js.undefined)
+    def setSelectiveAuth(value: SelectiveAuth): Self = StObject.set(x, "SelectiveAuth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteDomainName(value: RemoteDomainName): Self = this.set("RemoteDomainName", value.asInstanceOf[js.Any])
+    def setSelectiveAuthUndefined: Self = StObject.set(x, "SelectiveAuth", js.undefined)
     
     @scala.inline
-    def deleteRemoteDomainName: Self = this.set("RemoteDomainName", js.undefined)
+    def setStateLastUpdatedDateTime(value: StateLastUpdatedDateTime): Self = StObject.set(x, "StateLastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectiveAuth(value: SelectiveAuth): Self = this.set("SelectiveAuth", value.asInstanceOf[js.Any])
+    def setStateLastUpdatedDateTimeUndefined: Self = StObject.set(x, "StateLastUpdatedDateTime", js.undefined)
     
     @scala.inline
-    def deleteSelectiveAuth: Self = this.set("SelectiveAuth", js.undefined)
+    def setTrustDirection(value: TrustDirection): Self = StObject.set(x, "TrustDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateLastUpdatedDateTime(value: StateLastUpdatedDateTime): Self = this.set("StateLastUpdatedDateTime", value.asInstanceOf[js.Any])
+    def setTrustDirectionUndefined: Self = StObject.set(x, "TrustDirection", js.undefined)
     
     @scala.inline
-    def deleteStateLastUpdatedDateTime: Self = this.set("StateLastUpdatedDateTime", js.undefined)
+    def setTrustId(value: TrustId): Self = StObject.set(x, "TrustId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrustDirection(value: TrustDirection): Self = this.set("TrustDirection", value.asInstanceOf[js.Any])
+    def setTrustIdUndefined: Self = StObject.set(x, "TrustId", js.undefined)
     
     @scala.inline
-    def deleteTrustDirection: Self = this.set("TrustDirection", js.undefined)
+    def setTrustState(value: TrustState): Self = StObject.set(x, "TrustState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrustId(value: TrustId): Self = this.set("TrustId", value.asInstanceOf[js.Any])
+    def setTrustStateReason(value: TrustStateReason): Self = StObject.set(x, "TrustStateReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTrustId: Self = this.set("TrustId", js.undefined)
+    def setTrustStateReasonUndefined: Self = StObject.set(x, "TrustStateReason", js.undefined)
     
     @scala.inline
-    def setTrustState(value: TrustState): Self = this.set("TrustState", value.asInstanceOf[js.Any])
+    def setTrustStateUndefined: Self = StObject.set(x, "TrustState", js.undefined)
     
     @scala.inline
-    def deleteTrustState: Self = this.set("TrustState", js.undefined)
+    def setTrustType(value: TrustType): Self = StObject.set(x, "TrustType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrustStateReason(value: TrustStateReason): Self = this.set("TrustStateReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrustStateReason: Self = this.set("TrustStateReason", js.undefined)
-    
-    @scala.inline
-    def setTrustType(value: TrustType): Self = this.set("TrustType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrustType: Self = this.set("TrustType", js.undefined)
+    def setTrustTypeUndefined: Self = StObject.set(x, "TrustType", js.undefined)
   }
 }

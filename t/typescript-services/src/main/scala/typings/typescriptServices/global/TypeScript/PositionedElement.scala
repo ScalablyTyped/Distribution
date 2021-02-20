@@ -1,6 +1,7 @@
 package typings.typescriptServices.global.TypeScript
 
 import typings.typescriptServices.TypeScript.ISyntaxElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,11 +16,11 @@ class PositionedElement protected ()
     fullStart: Double
   ) = this()
 }
-/* static members */
-@JSGlobal("TypeScript.PositionedElement")
-@js.native
-object PositionedElement extends js.Object {
+object PositionedElement {
   
+  /* static member */
+  @JSGlobal("TypeScript.PositionedElement.create")
+  @js.native
   def create(
     parent: typings.typescriptServices.TypeScript.PositionedElement,
     element: ISyntaxElement,

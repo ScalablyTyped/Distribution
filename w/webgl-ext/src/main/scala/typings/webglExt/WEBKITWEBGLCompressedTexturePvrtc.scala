@@ -1,11 +1,12 @@
 package typings.webglExt
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WEBKITWEBGLCompressedTexturePvrtc extends js.Object {
+trait WEBKITWEBGLCompressedTexturePvrtc extends StObject {
   
   val COMPRESSED_RGBA_PVRTC_2BPPV1_IMG: Double = js.native
   
@@ -29,30 +30,18 @@ object WEBKITWEBGLCompressedTexturePvrtc {
   }
   
   @scala.inline
-  implicit class WEBKITWEBGLCompressedTexturePvrtcOps[Self <: WEBKITWEBGLCompressedTexturePvrtc] (val x: Self) extends AnyVal {
+  implicit class WEBKITWEBGLCompressedTexturePvrtcMutableBuilder[Self <: WEBKITWEBGLCompressedTexturePvrtc] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCOMPRESSED_RGBA_PVRTC_2BPPV1_IMG(value: Double): Self = StObject.set(x, "COMPRESSED_RGBA_PVRTC_2BPPV1_IMG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCOMPRESSED_RGBA_PVRTC_4BPPV1_IMG(value: Double): Self = StObject.set(x, "COMPRESSED_RGBA_PVRTC_4BPPV1_IMG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCOMPRESSED_RGB_PVRTC_2BPPV1_IMG(value: Double): Self = StObject.set(x, "COMPRESSED_RGB_PVRTC_2BPPV1_IMG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCOMPRESSED_RGBA_PVRTC_2BPPV1_IMG(value: Double): Self = this.set("COMPRESSED_RGBA_PVRTC_2BPPV1_IMG", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCOMPRESSED_RGBA_PVRTC_4BPPV1_IMG(value: Double): Self = this.set("COMPRESSED_RGBA_PVRTC_4BPPV1_IMG", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCOMPRESSED_RGB_PVRTC_2BPPV1_IMG(value: Double): Self = this.set("COMPRESSED_RGB_PVRTC_2BPPV1_IMG", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCOMPRESSED_RGB_PVRTC_4BPPV1_IMG(value: Double): Self = this.set("COMPRESSED_RGB_PVRTC_4BPPV1_IMG", value.asInstanceOf[js.Any])
+    def setCOMPRESSED_RGB_PVRTC_4BPPV1_IMG(value: Double): Self = StObject.set(x, "COMPRESSED_RGB_PVRTC_4BPPV1_IMG", value.asInstanceOf[js.Any])
   }
 }

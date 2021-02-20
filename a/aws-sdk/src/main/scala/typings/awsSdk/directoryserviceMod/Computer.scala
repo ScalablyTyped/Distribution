@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Computer extends js.Object {
+trait Computer extends StObject {
   
   /**
     * An array of Attribute objects containing the LDAP attributes that belong to the computer account.
@@ -31,39 +32,27 @@ object Computer {
   }
   
   @scala.inline
-  implicit class ComputerOps[Self <: Computer] (val x: Self) extends AnyVal {
+  implicit class ComputerMutableBuilder[Self <: Computer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputerAttributes(value: Attributes): Self = StObject.set(x, "ComputerAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputerAttributesUndefined: Self = StObject.set(x, "ComputerAttributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComputerAttributesVarargs(value: Attribute*): Self = StObject.set(x, "ComputerAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setComputerAttributesVarargs(value: Attribute*): Self = this.set("ComputerAttributes", js.Array(value :_*))
+    def setComputerId(value: SID): Self = StObject.set(x, "ComputerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputerAttributes(value: Attributes): Self = this.set("ComputerAttributes", value.asInstanceOf[js.Any])
+    def setComputerIdUndefined: Self = StObject.set(x, "ComputerId", js.undefined)
     
     @scala.inline
-    def deleteComputerAttributes: Self = this.set("ComputerAttributes", js.undefined)
+    def setComputerName(value: ComputerName): Self = StObject.set(x, "ComputerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputerId(value: SID): Self = this.set("ComputerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComputerId: Self = this.set("ComputerId", js.undefined)
-    
-    @scala.inline
-    def setComputerName(value: ComputerName): Self = this.set("ComputerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComputerName: Self = this.set("ComputerName", js.undefined)
+    def setComputerNameUndefined: Self = StObject.set(x, "ComputerName", js.undefined)
   }
 }

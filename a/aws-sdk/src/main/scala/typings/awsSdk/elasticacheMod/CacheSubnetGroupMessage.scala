@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CacheSubnetGroupMessage extends js.Object {
+trait CacheSubnetGroupMessage extends StObject {
   
   /**
     * A list of cache subnet groups. Each element in the list contains detailed information about one group.
@@ -26,33 +27,21 @@ object CacheSubnetGroupMessage {
   }
   
   @scala.inline
-  implicit class CacheSubnetGroupMessageOps[Self <: CacheSubnetGroupMessage] (val x: Self) extends AnyVal {
+  implicit class CacheSubnetGroupMessageMutableBuilder[Self <: CacheSubnetGroupMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheSubnetGroups(value: CacheSubnetGroups): Self = StObject.set(x, "CacheSubnetGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheSubnetGroupsUndefined: Self = StObject.set(x, "CacheSubnetGroups", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCacheSubnetGroupsVarargs(value: CacheSubnetGroup*): Self = StObject.set(x, "CacheSubnetGroups", js.Array(value :_*))
     
     @scala.inline
-    def setCacheSubnetGroupsVarargs(value: CacheSubnetGroup*): Self = this.set("CacheSubnetGroups", js.Array(value :_*))
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheSubnetGroups(value: CacheSubnetGroups): Self = this.set("CacheSubnetGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCacheSubnetGroups: Self = this.set("CacheSubnetGroups", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

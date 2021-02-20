@@ -2,6 +2,7 @@ package typings.reactNativeFetchBlob.mod
 
 import typings.reactNativeFetchBlob.reactNativeFetchBlobBooleans.`true`
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,25 +70,41 @@ trait PolyfillXMLHttpRequest extends PolyfillXMLHttpRequestEventTarget {
   
   var upload: PolyfillXMLHttpRequestEventTarget = js.native
 }
-@JSImport("react-native-fetch-blob", "PolyfillXMLHttpRequest")
-@js.native
-object PolyfillXMLHttpRequest extends js.Object {
+object PolyfillXMLHttpRequest {
   
+  @JSImport("react-native-fetch-blob", "PolyfillXMLHttpRequest.DONE")
+  @js.native
   val DONE: Double = js.native
   
+  @JSImport("react-native-fetch-blob", "PolyfillXMLHttpRequest.HEADERS_RECEIVED")
+  @js.native
   val HEADERS_RECEIVED: Double = js.native
   
+  @JSImport("react-native-fetch-blob", "PolyfillXMLHttpRequest.LOADING")
+  @js.native
   val LOADING: Double = js.native
   
+  @JSImport("react-native-fetch-blob", "PolyfillXMLHttpRequest.OPENED")
+  @js.native
   val OPENED: Double = js.native
   
+  @JSImport("react-native-fetch-blob", "PolyfillXMLHttpRequest.UNSENT")
+  @js.native
   val UNSENT: Double = js.native
   
+  @JSImport("react-native-fetch-blob", "PolyfillXMLHttpRequest.addBinaryContentType")
+  @js.native
   def addBinaryContentType(substr: String): Unit = js.native
   
+  @JSImport("react-native-fetch-blob", "PolyfillXMLHttpRequest.binaryContentTypes")
+  @js.native
   val binaryContentTypes: js.Array[String] = js.native
   
+  @JSImport("react-native-fetch-blob", "PolyfillXMLHttpRequest.removeBinaryContentType")
+  @js.native
   def removeBinaryContentType(): Unit = js.native
   
+  @JSImport("react-native-fetch-blob", "PolyfillXMLHttpRequest.setLog")
+  @js.native
   def setLog(level: Double): Unit = js.native
 }

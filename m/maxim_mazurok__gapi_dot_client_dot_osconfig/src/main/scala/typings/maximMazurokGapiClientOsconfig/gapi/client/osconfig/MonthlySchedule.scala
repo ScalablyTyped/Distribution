@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MonthlySchedule extends js.Object {
+trait MonthlySchedule extends StObject {
   
   /**
     * Required. One day of the month. 1-31 indicates the 1st to the 31st day. -1 indicates the last day of the month. Months without the target day will be skipped. For example, a
@@ -25,30 +26,18 @@ object MonthlySchedule {
   }
   
   @scala.inline
-  implicit class MonthlyScheduleOps[Self <: MonthlySchedule] (val x: Self) extends AnyVal {
+  implicit class MonthlyScheduleMutableBuilder[Self <: MonthlySchedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMonthDay(value: Double): Self = StObject.set(x, "monthDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMonthDayUndefined: Self = StObject.set(x, "monthDay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWeekDayOfMonth(value: WeekDayOfMonth): Self = StObject.set(x, "weekDayOfMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthDay(value: Double): Self = this.set("monthDay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMonthDay: Self = this.set("monthDay", js.undefined)
-    
-    @scala.inline
-    def setWeekDayOfMonth(value: WeekDayOfMonth): Self = this.set("weekDayOfMonth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeekDayOfMonth: Self = this.set("weekDayOfMonth", js.undefined)
+    def setWeekDayOfMonthUndefined: Self = StObject.set(x, "weekDayOfMonth", js.undefined)
   }
 }

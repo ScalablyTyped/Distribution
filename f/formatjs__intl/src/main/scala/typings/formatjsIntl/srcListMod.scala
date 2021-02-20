@@ -4,15 +4,15 @@ import typings.formatjsIntl.anon.Locale
 import typings.formatjsIntl.anon.TypeofIntlListFormat
 import typings.formatjsIntlListformat.mod.default
 import typings.std.ConstructorParameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@formatjs/intl/src/list", JSImport.Namespace)
-@js.native
-object srcListMod extends js.Object {
+object srcListMod {
   
-  @JSName("formatList")
+  @JSImport("@formatjs/intl/src/list", "formatList")
+  @js.native
   def formatList_1(
     hasLocaleOnError: Locale,
     getListFormat: js.Function1[/* args */ ConstructorParameters[TypeofIntlListFormat], default],

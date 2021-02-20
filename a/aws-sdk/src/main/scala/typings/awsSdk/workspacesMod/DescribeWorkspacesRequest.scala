@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeWorkspacesRequest extends js.Object {
+trait DescribeWorkspacesRequest extends StObject {
   
   /**
     * The identifier of the bundle. All WorkSpaces that are created from this bundle are retrieved. You cannot combine this parameter with any other filter.
@@ -46,57 +47,45 @@ object DescribeWorkspacesRequest {
   }
   
   @scala.inline
-  implicit class DescribeWorkspacesRequestOps[Self <: DescribeWorkspacesRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeWorkspacesRequestMutableBuilder[Self <: DescribeWorkspacesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBundleId(value: BundleId): Self = StObject.set(x, "BundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBundleIdUndefined: Self = StObject.set(x, "BundleId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundleId(value: BundleId): Self = this.set("BundleId", value.asInstanceOf[js.Any])
+    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
     @scala.inline
-    def deleteBundleId: Self = this.set("BundleId", js.undefined)
+    def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def deleteDirectoryId: Self = this.set("DirectoryId", js.undefined)
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Limit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
+    def setUserName(value: UserName): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setWorkspaceIds(value: WorkspaceIdList): Self = StObject.set(x, "WorkspaceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserName(value: UserName): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    def setWorkspaceIdsUndefined: Self = StObject.set(x, "WorkspaceIds", js.undefined)
     
     @scala.inline
-    def deleteUserName: Self = this.set("UserName", js.undefined)
-    
-    @scala.inline
-    def setWorkspaceIdsVarargs(value: WorkspaceId*): Self = this.set("WorkspaceIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkspaceIds(value: WorkspaceIdList): Self = this.set("WorkspaceIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkspaceIds: Self = this.set("WorkspaceIds", js.undefined)
+    def setWorkspaceIdsVarargs(value: WorkspaceId*): Self = StObject.set(x, "WorkspaceIds", js.Array(value :_*))
   }
 }

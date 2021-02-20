@@ -1,12 +1,13 @@
 package typings.documentdbServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options associated with a replace operation. */
 @js.native
-trait IReplaceOptions extends js.Object {
+trait IReplaceOptions extends StObject {
   
   /**
     * The entity tag associated with the resource.
@@ -26,30 +27,18 @@ object IReplaceOptions {
   }
   
   @scala.inline
-  implicit class IReplaceOptionsOps[Self <: IReplaceOptions] (val x: Self) extends AnyVal {
+  implicit class IReplaceOptionsMutableBuilder[Self <: IReplaceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexAction(value: String): Self = StObject.set(x, "indexAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
-    
-    @scala.inline
-    def setIndexAction(value: String): Self = this.set("indexAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndexAction: Self = this.set("indexAction", js.undefined)
+    def setIndexActionUndefined: Self = StObject.set(x, "indexAction", js.undefined)
   }
 }

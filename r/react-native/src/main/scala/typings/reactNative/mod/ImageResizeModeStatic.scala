@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageResizeModeStatic extends js.Object {
+trait ImageResizeModeStatic extends StObject {
   
   /**
     * center - The image will be scaled down such that it is completely visible,
@@ -54,33 +55,21 @@ object ImageResizeModeStatic {
   }
   
   @scala.inline
-  implicit class ImageResizeModeStaticOps[Self <: ImageResizeModeStatic] (val x: Self) extends AnyVal {
+  implicit class ImageResizeModeStaticMutableBuilder[Self <: ImageResizeModeStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: ImageResizeMode): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContain(value: ImageResizeMode): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCover(value: ImageResizeMode): Self = StObject.set(x, "cover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: ImageResizeMode): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setRepeat(value: ImageResizeMode): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContain(value: ImageResizeMode): Self = this.set("contain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCover(value: ImageResizeMode): Self = this.set("cover", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepeat(value: ImageResizeMode): Self = this.set("repeat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStretch(value: ImageResizeMode): Self = this.set("stretch", value.asInstanceOf[js.Any])
+    def setStretch(value: ImageResizeMode): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
   }
 }

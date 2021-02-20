@@ -1,5 +1,6 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and how to play it.
   */
 @js.native
-trait PointInstrumentObject extends js.Object {
+trait PointInstrumentObject extends StObject {
   
   /**
     * An Instrument instance or the name of the instrument in the
@@ -46,36 +47,24 @@ object PointInstrumentObject {
   }
   
   @scala.inline
-  implicit class PointInstrumentObjectOps[Self <: PointInstrumentObject] (val x: Self) extends AnyVal {
+  implicit class PointInstrumentObjectMutableBuilder[Self <: PointInstrumentObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstrument(value: String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Instrument): Self = StObject.set(x, "instrument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstrumentMapping(value: typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentMappingObject): Self = StObject.set(x, "instrumentMapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstrumentOptions(value: typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentOptionsObject): Self = StObject.set(x, "instrumentOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstrument(value: String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Instrument): Self = this.set("instrument", value.asInstanceOf[js.Any])
+    def setInstrumentOptionsUndefined: Self = StObject.set(x, "instrumentOptions", js.undefined)
     
     @scala.inline
-    def setInstrumentMapping(value: typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentMappingObject): Self = this.set("instrumentMapping", value.asInstanceOf[js.Any])
+    def setOnEnd(value: js.Function): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstrumentOptions(value: typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentOptionsObject): Self = this.set("instrumentOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstrumentOptions: Self = this.set("instrumentOptions", js.undefined)
-    
-    @scala.inline
-    def setOnEnd(value: js.Function): Self = this.set("onEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnEnd: Self = this.set("onEnd", js.undefined)
+    def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
   }
 }

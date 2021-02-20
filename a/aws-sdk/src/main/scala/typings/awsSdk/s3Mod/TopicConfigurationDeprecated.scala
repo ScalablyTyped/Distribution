@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicConfigurationDeprecated extends js.Object {
+trait TopicConfigurationDeprecated extends StObject {
   
   /**
     * Bucket event for which to send notifications.
@@ -33,45 +34,33 @@ object TopicConfigurationDeprecated {
   }
   
   @scala.inline
-  implicit class TopicConfigurationDeprecatedOps[Self <: TopicConfigurationDeprecated] (val x: Self) extends AnyVal {
+  implicit class TopicConfigurationDeprecatedMutableBuilder[Self <: TopicConfigurationDeprecated] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvent(value: Event): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventUndefined: Self = StObject.set(x, "Event", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvents(value: EventList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: Event): Self = this.set("Event", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
     
     @scala.inline
-    def deleteEvent: Self = this.set("Event", js.undefined)
+    def setEventsVarargs(value: Event*): Self = StObject.set(x, "Events", js.Array(value :_*))
     
     @scala.inline
-    def setEventsVarargs(value: Event*): Self = this.set("Events", js.Array(value :_*))
+    def setId(value: NotificationId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: EventList): Self = this.set("Events", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("Events", js.undefined)
+    def setTopic(value: TopicArn): Self = StObject.set(x, "Topic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: NotificationId): Self = this.set("Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
-    
-    @scala.inline
-    def setTopic(value: TopicArn): Self = this.set("Topic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopic: Self = this.set("Topic", js.undefined)
+    def setTopicUndefined: Self = StObject.set(x, "Topic", js.undefined)
   }
 }

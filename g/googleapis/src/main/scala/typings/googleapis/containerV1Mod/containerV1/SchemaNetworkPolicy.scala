@@ -1,5 +1,6 @@
 package typings.googleapis.containerV1Mod.containerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://kubernetes.io/docs/concepts/services-networking/networkpolicies/
   */
 @js.native
-trait SchemaNetworkPolicy extends js.Object {
+trait SchemaNetworkPolicy extends StObject {
   
   /**
     * Whether network policy is enabled on the cluster.
@@ -30,30 +31,18 @@ object SchemaNetworkPolicy {
   }
   
   @scala.inline
-  implicit class SchemaNetworkPolicyOps[Self <: SchemaNetworkPolicy] (val x: Self) extends AnyVal {
+  implicit class SchemaNetworkPolicyMutableBuilder[Self <: SchemaNetworkPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
-    
-    @scala.inline
-    def setProvider(value: String): Self = this.set("provider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvider: Self = this.set("provider", js.undefined)
+    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
   }
 }

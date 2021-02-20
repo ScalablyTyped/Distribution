@@ -1,5 +1,6 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 经纬度坐标，确定地图上的一个点
   */
 @js.native
-trait LngLat extends js.Object {
+trait LngLat extends StObject {
   
   def distance(lnglat: js.Tuple2[Double, Double]): Double = js.native
   /**

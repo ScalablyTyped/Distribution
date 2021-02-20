@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,33 +82,21 @@ object XPrinter {
   }
   
   @scala.inline
-  implicit class XPrinterOps[Self <: XPrinter] (val x: Self) extends AnyVal {
+  implicit class XPrinterMutableBuilder[Self <: XPrinter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndPage(value: () => Unit): Self = StObject.set(x, "endPage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStart(value: (String, Double, Boolean) => Boolean): Self = StObject.set(x, "start", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setEnd(value: () => Unit): Self = this.set("end", js.Any.fromFunction0(value))
+    def setStartPage(value: () => XDevice): Self = StObject.set(x, "startPage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEndPage(value: () => Unit): Self = this.set("endPage", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStart(value: (String, Double, Boolean) => Boolean): Self = this.set("start", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setStartPage(value: () => XDevice): Self = this.set("startPage", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTerminate(value: () => Unit): Self = this.set("terminate", js.Any.fromFunction0(value))
+    def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
   }
 }

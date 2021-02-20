@@ -1,6 +1,7 @@
 package typings.moment.momentMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,72 +32,60 @@ object CalendarSpec {
   }
   
   @scala.inline
-  implicit class CalendarSpecOps[Self <: CalendarSpec] (val x: Self) extends AnyVal {
+  implicit class CalendarSpecMutableBuilder[Self <: CalendarSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastDay(value: CalendarSpecVal): Self = StObject.set(x, "lastDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastDayFunction2(value: (/* m */ js.UndefOr[MomentInput], /* now */ js.UndefOr[Moment]) => String): Self = StObject.set(x, "lastDay", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastDayUndefined: Self = StObject.set(x, "lastDay", js.undefined)
     
     @scala.inline
-    def setLastDayFunction2(value: (/* m */ js.UndefOr[MomentInput], /* now */ js.UndefOr[Moment]) => String): Self = this.set("lastDay", js.Any.fromFunction2(value))
+    def setLastWeek(value: CalendarSpecVal): Self = StObject.set(x, "lastWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastDay(value: CalendarSpecVal): Self = this.set("lastDay", value.asInstanceOf[js.Any])
+    def setLastWeekFunction2(value: (/* m */ js.UndefOr[MomentInput], /* now */ js.UndefOr[Moment]) => String): Self = StObject.set(x, "lastWeek", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteLastDay: Self = this.set("lastDay", js.undefined)
+    def setLastWeekUndefined: Self = StObject.set(x, "lastWeek", js.undefined)
     
     @scala.inline
-    def setLastWeekFunction2(value: (/* m */ js.UndefOr[MomentInput], /* now */ js.UndefOr[Moment]) => String): Self = this.set("lastWeek", js.Any.fromFunction2(value))
+    def setNextDay(value: CalendarSpecVal): Self = StObject.set(x, "nextDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastWeek(value: CalendarSpecVal): Self = this.set("lastWeek", value.asInstanceOf[js.Any])
+    def setNextDayFunction2(value: (/* m */ js.UndefOr[MomentInput], /* now */ js.UndefOr[Moment]) => String): Self = StObject.set(x, "nextDay", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteLastWeek: Self = this.set("lastWeek", js.undefined)
+    def setNextDayUndefined: Self = StObject.set(x, "nextDay", js.undefined)
     
     @scala.inline
-    def setNextDayFunction2(value: (/* m */ js.UndefOr[MomentInput], /* now */ js.UndefOr[Moment]) => String): Self = this.set("nextDay", js.Any.fromFunction2(value))
+    def setNextWeek(value: CalendarSpecVal): Self = StObject.set(x, "nextWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextDay(value: CalendarSpecVal): Self = this.set("nextDay", value.asInstanceOf[js.Any])
+    def setNextWeekFunction2(value: (/* m */ js.UndefOr[MomentInput], /* now */ js.UndefOr[Moment]) => String): Self = StObject.set(x, "nextWeek", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteNextDay: Self = this.set("nextDay", js.undefined)
+    def setNextWeekUndefined: Self = StObject.set(x, "nextWeek", js.undefined)
     
     @scala.inline
-    def setNextWeekFunction2(value: (/* m */ js.UndefOr[MomentInput], /* now */ js.UndefOr[Moment]) => String): Self = this.set("nextWeek", js.Any.fromFunction2(value))
+    def setSameDay(value: CalendarSpecVal): Self = StObject.set(x, "sameDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextWeek(value: CalendarSpecVal): Self = this.set("nextWeek", value.asInstanceOf[js.Any])
+    def setSameDayFunction2(value: (/* m */ js.UndefOr[MomentInput], /* now */ js.UndefOr[Moment]) => String): Self = StObject.set(x, "sameDay", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteNextWeek: Self = this.set("nextWeek", js.undefined)
+    def setSameDayUndefined: Self = StObject.set(x, "sameDay", js.undefined)
     
     @scala.inline
-    def setSameDayFunction2(value: (/* m */ js.UndefOr[MomentInput], /* now */ js.UndefOr[Moment]) => String): Self = this.set("sameDay", js.Any.fromFunction2(value))
+    def setSameElse(value: CalendarSpecVal): Self = StObject.set(x, "sameElse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSameDay(value: CalendarSpecVal): Self = this.set("sameDay", value.asInstanceOf[js.Any])
+    def setSameElseFunction2(value: (/* m */ js.UndefOr[MomentInput], /* now */ js.UndefOr[Moment]) => String): Self = StObject.set(x, "sameElse", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteSameDay: Self = this.set("sameDay", js.undefined)
-    
-    @scala.inline
-    def setSameElseFunction2(value: (/* m */ js.UndefOr[MomentInput], /* now */ js.UndefOr[Moment]) => String): Self = this.set("sameElse", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSameElse(value: CalendarSpecVal): Self = this.set("sameElse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSameElse: Self = this.set("sameElse", js.undefined)
+    def setSameElseUndefined: Self = StObject.set(x, "sameElse", js.undefined)
   }
 }

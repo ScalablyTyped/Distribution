@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateChannelRequest extends js.Object {
+trait UpdateChannelRequest extends StObject {
   
   /**
     * The name of the channel to be updated.
@@ -31,33 +32,21 @@ object UpdateChannelRequest {
   }
   
   @scala.inline
-  implicit class UpdateChannelRequestOps[Self <: UpdateChannelRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateChannelRequestMutableBuilder[Self <: UpdateChannelRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelName(value: ChannelName): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelStorage(value: ChannelStorage): Self = StObject.set(x, "channelStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelStorageUndefined: Self = StObject.set(x, "channelStorage", js.undefined)
     
     @scala.inline
-    def setChannelName(value: ChannelName): Self = this.set("channelName", value.asInstanceOf[js.Any])
+    def setRetentionPeriod(value: RetentionPeriod): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelStorage(value: ChannelStorage): Self = this.set("channelStorage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChannelStorage: Self = this.set("channelStorage", js.undefined)
-    
-    @scala.inline
-    def setRetentionPeriod(value: RetentionPeriod): Self = this.set("retentionPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetentionPeriod: Self = this.set("retentionPeriod", js.undefined)
+    def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
   }
 }

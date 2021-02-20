@@ -1,6 +1,7 @@
 package typings.preact.jsxCsstypeMod
 
 import typings.preact.preactStrings.menu_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,14 +18,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.preact.preactStrings.revert
   - typings.preact.preactStrings.unset
 */
-trait MozWindowShadowProperty extends js.Object
+trait MozWindowShadowProperty extends StObject
 object MozWindowShadowProperty {
   
   @scala.inline
-  def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
+  def default: typings.preact.preactStrings.default = "default".asInstanceOf[typings.preact.preactStrings.default]
   
   @scala.inline
-  def default: typings.preact.preactStrings.default = "default".asInstanceOf[typings.preact.preactStrings.default]
+  def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
   
   @scala.inline
   def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]

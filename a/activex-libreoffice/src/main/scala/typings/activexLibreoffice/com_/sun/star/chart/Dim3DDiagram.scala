@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.chart
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,30 +49,18 @@ object Dim3DDiagram {
   }
   
   @scala.inline
-  implicit class Dim3DDiagramOps[Self <: Dim3DDiagram] (val x: Self) extends AnyVal {
+  implicit class Dim3DDiagramMutableBuilder[Self <: Dim3DDiagram] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDim3D(value: Boolean): Self = StObject.set(x, "Dim3D", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPerspective(value: Double): Self = StObject.set(x, "Perspective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRotationHorizontal(value: Double): Self = StObject.set(x, "RotationHorizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDim3D(value: Boolean): Self = this.set("Dim3D", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPerspective(value: Double): Self = this.set("Perspective", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRotationHorizontal(value: Double): Self = this.set("RotationHorizontal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRotationVertical(value: Double): Self = this.set("RotationVertical", value.asInstanceOf[js.Any])
+    def setRotationVertical(value: Double): Self = StObject.set(x, "RotationVertical", value.asInstanceOf[js.Any])
   }
 }

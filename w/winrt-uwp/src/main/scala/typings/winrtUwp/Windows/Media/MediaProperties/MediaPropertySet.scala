@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Media.MediaProperties
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a set of media properties. */
 @js.native
-trait MediaPropertySet extends js.Object {
+trait MediaPropertySet extends StObject {
   
   /** Removes all items from the property set. */
   def clear(): Unit = js.native

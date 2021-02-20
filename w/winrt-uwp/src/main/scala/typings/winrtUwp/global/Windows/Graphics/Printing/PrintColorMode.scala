@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the color mode option. */
 @JSGlobal("Windows.Graphics.Printing.PrintColorMode")
 @js.native
-object PrintColorMode extends js.Object {
+object PrintColorMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Graphics.Printing.PrintColorMode with Double] = js.native
   
-  /* 3 */ val color: typings.winrtUwp.Windows.Graphics.Printing.PrintColorMode.color with Double = js.native
-  
   /* 0 */ val default: typings.winrtUwp.Windows.Graphics.Printing.PrintColorMode.default with Double = js.native
+  
+  /* 3 */ val color: typings.winrtUwp.Windows.Graphics.Printing.PrintColorMode.color with Double = js.native
   
   /* 4 */ val grayscale: typings.winrtUwp.Windows.Graphics.Printing.PrintColorMode.grayscale with Double = js.native
   

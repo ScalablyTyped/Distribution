@@ -3,12 +3,13 @@ package typings.hummusRecipe.mod
 import typings.hummusRecipe.hummusRecipeStrings.cmyk
 import typings.hummusRecipe.hummusRecipeStrings.grey
 import typings.hummusRecipe.hummusRecipeStrings.rgb
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecipeOptions extends js.Object {
+trait RecipeOptions extends StObject {
   
   var author: js.UndefOr[String] = js.native
   
@@ -41,90 +42,78 @@ object RecipeOptions {
   }
   
   @scala.inline
-  implicit class RecipeOptionsOps[Self <: RecipeOptions] (val x: Self) extends AnyVal {
+  implicit class RecipeOptionsMutableBuilder[Self <: RecipeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorspace(value: rgb | cmyk | grey): Self = StObject.set(x, "colorspace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: String): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setColorspaceUndefined: Self = StObject.set(x, "colorspace", js.undefined)
     
     @scala.inline
-    def deleteAuthor: Self = this.set("author", js.undefined)
+    def setFontSrcPath(value: String | js.Array[String]): Self = StObject.set(x, "fontSrcPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorspace(value: rgb | cmyk | grey): Self = this.set("colorspace", value.asInstanceOf[js.Any])
+    def setFontSrcPathUndefined: Self = StObject.set(x, "fontSrcPath", js.undefined)
     
     @scala.inline
-    def deleteColorspace: Self = this.set("colorspace", js.undefined)
+    def setFontSrcPathVarargs(value: String*): Self = StObject.set(x, "fontSrcPath", js.Array(value :_*))
     
     @scala.inline
-    def setFontSrcPathVarargs(value: String*): Self = this.set("fontSrcPath", js.Array(value :_*))
+    def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSrcPath(value: String | js.Array[String]): Self = this.set("fontSrcPath", value.asInstanceOf[js.Any])
+    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
     @scala.inline
-    def deleteFontSrcPath: Self = this.set("fontSrcPath", js.undefined)
+    def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
     
     @scala.inline
-    def setKeywordsVarargs(value: String*): Self = this.set("keywords", js.Array(value :_*))
+    def setOwnerPassword(value: String): Self = StObject.set(x, "ownerPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: js.Array[String]): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    def setOwnerPasswordUndefined: Self = StObject.set(x, "ownerPassword", js.undefined)
     
     @scala.inline
-    def deleteKeywords: Self = this.set("keywords", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerPassword(value: String): Self = this.set("ownerPassword", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteOwnerPassword: Self = this.set("ownerPassword", js.undefined)
+    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
+    def setUserPassword(value: String): Self = StObject.set(x, "userPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setUserPasswordUndefined: Self = StObject.set(x, "userPassword", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setUserProtectionFlag(value: String): Self = StObject.set(x, "userProtectionFlag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserPassword(value: String): Self = this.set("userPassword", value.asInstanceOf[js.Any])
+    def setUserProtectionFlagUndefined: Self = StObject.set(x, "userProtectionFlag", js.undefined)
     
     @scala.inline
-    def deleteUserPassword: Self = this.set("userPassword", js.undefined)
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserProtectionFlag(value: String): Self = this.set("userProtectionFlag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserProtectionFlag: Self = this.set("userProtectionFlag", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

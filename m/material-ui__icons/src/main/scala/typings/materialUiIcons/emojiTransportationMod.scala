@@ -1,14 +1,21 @@
 package typings.materialUiIcons
 
+import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
 import typings.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/icons/EmojiTransportation", JSImport.Namespace)
-@js.native
-object emojiTransportationMod extends js.Object {
+object emojiTransportationMod extends Shortcut {
   
+  @JSImport("@material-ui/icons/EmojiTransportation", JSImport.Default)
+  @js.native
   val default: ComponentType[SvgIconProps] = js.native
+  
+  type _To = ComponentType[SvgIconProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `emojiTransportationMod.foo` */
+  override def _to: ComponentType[SvgIconProps] = default
 }

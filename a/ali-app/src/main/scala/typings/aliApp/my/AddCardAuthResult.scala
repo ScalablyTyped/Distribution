@@ -1,6 +1,7 @@
 package typings.aliApp.my
 
 import typings.aliApp.anon.Appid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#endregion
 //#region 会员开卡授权 https://docs.alipay.com/mini/api/add-card-auth
 @js.native
-trait AddCardAuthResult extends js.Object {
+trait AddCardAuthResult extends StObject {
   
-          // false 表示领卡失败
+  // false 表示领卡失败
   /**
     * 失败的错误码
     * 领卡失败 code 说明
@@ -22,10 +23,10 @@ trait AddCardAuthResult extends js.Object {
     */
   var code: String = js.native
   
-      // 9000 表示成功
+  // 9000 表示成功
   var result: Appid = js.native
   
-          // true 表示领卡成功
+  // true 表示领卡成功
   var resultStatus: String = js.native
   
   var success: Boolean = js.native
@@ -39,30 +40,18 @@ object AddCardAuthResult {
   }
   
   @scala.inline
-  implicit class AddCardAuthResultOps[Self <: AddCardAuthResult] (val x: Self) extends AnyVal {
+  implicit class AddCardAuthResultMutableBuilder[Self <: AddCardAuthResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResult(value: Appid): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResultStatus(value: String): Self = StObject.set(x, "resultStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResult(value: Appid): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultStatus(value: String): Self = this.set("resultStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccess(value: Boolean): Self = this.set("success", value.asInstanceOf[js.Any])
+    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.playcanvas.global.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,18 +13,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Mat3 ()
   extends typings.playcanvas.pc.Mat3
-/* static members */
-@JSGlobal("pc.Mat3")
-@js.native
-object Mat3 extends js.Object {
+object Mat3 {
   
   /**
     * A constant matrix set to the identity.
     */
+  /* static member */
+  @JSGlobal("pc.Mat3.IDENTITY")
+  @js.native
   val IDENTITY: typings.playcanvas.pc.Mat3 = js.native
   
   /**
     * A constant matrix with all elements set to 0.
     */
+  /* static member */
+  @JSGlobal("pc.Mat3.ZERO")
+  @js.native
   val ZERO: typings.playcanvas.pc.Mat3 = js.native
 }

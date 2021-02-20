@@ -1,5 +1,6 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -119,7 +120,7 @@ object KmlLink {
   def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
-    equals: KmlObject => Boolean,
+    equals_ : KmlObject => Boolean,
     getHref: () => String,
     getId: () => String,
     getOwnerDocument: () => KmlDocument,
@@ -146,65 +147,54 @@ object KmlLink {
     setViewRefreshMode: KmlViewRefreshModeEnum => Unit,
     setViewRefreshTime: Double => Unit
   ): KmlLink = {
-    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), equals = js.Any.fromFunction1(equals), getHref = js.Any.fromFunction0(getHref), getId = js.Any.fromFunction0(getId), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getRefreshInterval = js.Any.fromFunction0(getRefreshInterval), getRefreshMode = js.Any.fromFunction0(getRefreshMode), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), getViewBoundScale = js.Any.fromFunction0(getViewBoundScale), getViewFormat = js.Any.fromFunction0(getViewFormat), getViewRefreshMode = js.Any.fromFunction0(getViewRefreshMode), getViewRefreshTime = js.Any.fromFunction0(getViewRefreshTime), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), setHref = js.Any.fromFunction1(setHref), setRefreshInterval = js.Any.fromFunction1(setRefreshInterval), setRefreshMode = js.Any.fromFunction1(setRefreshMode), setViewBoundScale = js.Any.fromFunction1(setViewBoundScale), setViewFormat = js.Any.fromFunction1(setViewFormat), setViewRefreshMode = js.Any.fromFunction1(setViewRefreshMode), setViewRefreshTime = js.Any.fromFunction1(setViewRefreshTime))
+    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), getHref = js.Any.fromFunction0(getHref), getId = js.Any.fromFunction0(getId), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getRefreshInterval = js.Any.fromFunction0(getRefreshInterval), getRefreshMode = js.Any.fromFunction0(getRefreshMode), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), getViewBoundScale = js.Any.fromFunction0(getViewBoundScale), getViewFormat = js.Any.fromFunction0(getViewFormat), getViewRefreshMode = js.Any.fromFunction0(getViewRefreshMode), getViewRefreshTime = js.Any.fromFunction0(getViewRefreshTime), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), setHref = js.Any.fromFunction1(setHref), setRefreshInterval = js.Any.fromFunction1(setRefreshInterval), setRefreshMode = js.Any.fromFunction1(setRefreshMode), setViewBoundScale = js.Any.fromFunction1(setViewBoundScale), setViewFormat = js.Any.fromFunction1(setViewFormat), setViewRefreshMode = js.Any.fromFunction1(setViewRefreshMode), setViewRefreshTime = js.Any.fromFunction1(setViewRefreshTime))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[KmlLink]
   }
   
   @scala.inline
-  implicit class KmlLinkOps[Self <: KmlLink] (val x: Self) extends AnyVal {
+  implicit class KmlLinkMutableBuilder[Self <: KmlLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetHref(value: () => String): Self = StObject.set(x, "getHref", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRefreshInterval(value: () => Double): Self = StObject.set(x, "getRefreshInterval", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRefreshMode(value: () => KmlRefreshModeEnum): Self = StObject.set(x, "getRefreshMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHref(value: () => String): Self = this.set("getHref", js.Any.fromFunction0(value))
+    def setGetViewBoundScale(value: () => Double): Self = StObject.set(x, "getViewBoundScale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRefreshInterval(value: () => Double): Self = this.set("getRefreshInterval", js.Any.fromFunction0(value))
+    def setGetViewFormat(value: () => String): Self = StObject.set(x, "getViewFormat", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRefreshMode(value: () => KmlRefreshModeEnum): Self = this.set("getRefreshMode", js.Any.fromFunction0(value))
+    def setGetViewRefreshMode(value: () => KmlViewRefreshModeEnum): Self = StObject.set(x, "getViewRefreshMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetViewBoundScale(value: () => Double): Self = this.set("getViewBoundScale", js.Any.fromFunction0(value))
+    def setGetViewRefreshTime(value: () => Double): Self = StObject.set(x, "getViewRefreshTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetViewFormat(value: () => String): Self = this.set("getViewFormat", js.Any.fromFunction0(value))
+    def setSetHref(value: String => Unit): Self = StObject.set(x, "setHref", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetViewRefreshMode(value: () => KmlViewRefreshModeEnum): Self = this.set("getViewRefreshMode", js.Any.fromFunction0(value))
+    def setSetRefreshInterval(value: Double => Unit): Self = StObject.set(x, "setRefreshInterval", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetViewRefreshTime(value: () => Double): Self = this.set("getViewRefreshTime", js.Any.fromFunction0(value))
+    def setSetRefreshMode(value: KmlRefreshModeEnum => Unit): Self = StObject.set(x, "setRefreshMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHref(value: String => Unit): Self = this.set("setHref", js.Any.fromFunction1(value))
+    def setSetViewBoundScale(value: Double => Unit): Self = StObject.set(x, "setViewBoundScale", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetRefreshInterval(value: Double => Unit): Self = this.set("setRefreshInterval", js.Any.fromFunction1(value))
+    def setSetViewFormat(value: String => Unit): Self = StObject.set(x, "setViewFormat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetRefreshMode(value: KmlRefreshModeEnum => Unit): Self = this.set("setRefreshMode", js.Any.fromFunction1(value))
+    def setSetViewRefreshMode(value: KmlViewRefreshModeEnum => Unit): Self = StObject.set(x, "setViewRefreshMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetViewBoundScale(value: Double => Unit): Self = this.set("setViewBoundScale", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetViewFormat(value: String => Unit): Self = this.set("setViewFormat", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetViewRefreshMode(value: KmlViewRefreshModeEnum => Unit): Self = this.set("setViewRefreshMode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetViewRefreshTime(value: Double => Unit): Self = this.set("setViewRefreshTime", js.Any.fromFunction1(value))
+    def setSetViewRefreshTime(value: Double => Unit): Self = StObject.set(x, "setViewRefreshTime", js.Any.fromFunction1(value))
   }
 }

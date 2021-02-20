@@ -1,14 +1,15 @@
 package typings.winrt.Windows.UI.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CoreProcessEventsOption extends js.Object
+sealed trait CoreProcessEventsOption extends StObject
 @JSGlobal("Windows.UI.Core.CoreProcessEventsOption")
 @js.native
-object CoreProcessEventsOption extends js.Object {
+object CoreProcessEventsOption extends StObject {
   
   @js.native
   sealed trait processAllIfPresent extends CoreProcessEventsOption

@@ -1,12 +1,13 @@
 package typings.nodeZendesk.mod.Tickets
 
 import typings.nodeZendesk.mod.ZendeskID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MergePayload extends js.Object {
+trait MergePayload extends StObject {
   
   val ids: js.Array[ZendeskID] = js.native
   
@@ -23,42 +24,30 @@ object MergePayload {
   }
   
   @scala.inline
-  implicit class MergePayloadOps[Self <: MergePayload] (val x: Self) extends AnyVal {
+  implicit class MergePayloadMutableBuilder[Self <: MergePayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIds(value: js.Array[ZendeskID]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdsVarargs(value: ZendeskID*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource_comment(value: String): Self = StObject.set(x, "source_comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdsVarargs(value: ZendeskID*): Self = this.set("ids", js.Array(value :_*))
+    def setSource_commentNull: Self = StObject.set(x, "source_comment", null)
     
     @scala.inline
-    def setIds(value: js.Array[ZendeskID]): Self = this.set("ids", value.asInstanceOf[js.Any])
+    def setSource_commentUndefined: Self = StObject.set(x, "source_comment", js.undefined)
     
     @scala.inline
-    def setSource_comment(value: String): Self = this.set("source_comment", value.asInstanceOf[js.Any])
+    def setTarget_comment(value: String): Self = StObject.set(x, "target_comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource_comment: Self = this.set("source_comment", js.undefined)
+    def setTarget_commentNull: Self = StObject.set(x, "target_comment", null)
     
     @scala.inline
-    def setSource_commentNull: Self = this.set("source_comment", null)
-    
-    @scala.inline
-    def setTarget_comment(value: String): Self = this.set("target_comment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget_comment: Self = this.set("target_comment", js.undefined)
-    
-    @scala.inline
-    def setTarget_commentNull: Self = this.set("target_comment", null)
+    def setTarget_commentUndefined: Self = StObject.set(x, "target_comment", js.undefined)
   }
 }

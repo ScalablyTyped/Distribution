@@ -1,12 +1,13 @@
 package typings.itunesconnectanalytics.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnalyticsDataPoint extends js.Object {
+trait AnalyticsDataPoint extends StObject {
   
   var activeDevices: js.UndefOr[Double] = js.native
   
@@ -47,105 +48,93 @@ object AnalyticsDataPoint {
   }
   
   @scala.inline
-  implicit class AnalyticsDataPointOps[Self <: AnalyticsDataPoint] (val x: Self) extends AnyVal {
+  implicit class AnalyticsDataPointMutableBuilder[Self <: AnalyticsDataPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveDevices(value: Double): Self = StObject.set(x, "activeDevices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveDevicesUndefined: Self = StObject.set(x, "activeDevices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrashes(value: Double): Self = StObject.set(x, "crashes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setCrashesUndefined: Self = StObject.set(x, "crashes", js.undefined)
     
     @scala.inline
-    def setActiveDevices(value: Double): Self = this.set("activeDevices", value.asInstanceOf[js.Any])
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActiveDevices: Self = this.set("activeDevices", js.undefined)
+    def setIap(value: Double): Self = StObject.set(x, "iap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrashes(value: Double): Self = this.set("crashes", value.asInstanceOf[js.Any])
+    def setIapUndefined: Self = StObject.set(x, "iap", js.undefined)
     
     @scala.inline
-    def deleteCrashes: Self = this.set("crashes", js.undefined)
+    def setImpressionsTotal(value: Double): Self = StObject.set(x, "impressionsTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIap(value: Double): Self = this.set("iap", value.asInstanceOf[js.Any])
+    def setImpressionsTotalUndefined: Self = StObject.set(x, "impressionsTotal", js.undefined)
     
     @scala.inline
-    def deleteIap: Self = this.set("iap", js.undefined)
+    def setImpressionsTotalUnique(value: Double): Self = StObject.set(x, "impressionsTotalUnique", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpressionsTotal(value: Double): Self = this.set("impressionsTotal", value.asInstanceOf[js.Any])
+    def setImpressionsTotalUniqueUndefined: Self = StObject.set(x, "impressionsTotalUnique", js.undefined)
     
     @scala.inline
-    def deleteImpressionsTotal: Self = this.set("impressionsTotal", js.undefined)
+    def setInstalls(value: Double): Self = StObject.set(x, "installs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpressionsTotalUnique(value: Double): Self = this.set("impressionsTotalUnique", value.asInstanceOf[js.Any])
+    def setInstallsUndefined: Self = StObject.set(x, "installs", js.undefined)
     
     @scala.inline
-    def deleteImpressionsTotalUnique: Self = this.set("impressionsTotalUnique", js.undefined)
+    def setPageViewCount(value: Double): Self = StObject.set(x, "pageViewCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstalls(value: Double): Self = this.set("installs", value.asInstanceOf[js.Any])
+    def setPageViewCountUndefined: Self = StObject.set(x, "pageViewCount", js.undefined)
     
     @scala.inline
-    def deleteInstalls: Self = this.set("installs", js.undefined)
+    def setPageViewUnique(value: Double): Self = StObject.set(x, "pageViewUnique", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageViewCount(value: Double): Self = this.set("pageViewCount", value.asInstanceOf[js.Any])
+    def setPageViewUniqueUndefined: Self = StObject.set(x, "pageViewUnique", js.undefined)
     
     @scala.inline
-    def deletePageViewCount: Self = this.set("pageViewCount", js.undefined)
+    def setPayingUsers(value: Double): Self = StObject.set(x, "payingUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageViewUnique(value: Double): Self = this.set("pageViewUnique", value.asInstanceOf[js.Any])
+    def setPayingUsersUndefined: Self = StObject.set(x, "payingUsers", js.undefined)
     
     @scala.inline
-    def deletePageViewUnique: Self = this.set("pageViewUnique", js.undefined)
+    def setRollingActiveDevices(value: Double): Self = StObject.set(x, "rollingActiveDevices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayingUsers(value: Double): Self = this.set("payingUsers", value.asInstanceOf[js.Any])
+    def setRollingActiveDevicesUndefined: Self = StObject.set(x, "rollingActiveDevices", js.undefined)
     
     @scala.inline
-    def deletePayingUsers: Self = this.set("payingUsers", js.undefined)
+    def setSales(value: Double): Self = StObject.set(x, "sales", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRollingActiveDevices(value: Double): Self = this.set("rollingActiveDevices", value.asInstanceOf[js.Any])
+    def setSalesUndefined: Self = StObject.set(x, "sales", js.undefined)
     
     @scala.inline
-    def deleteRollingActiveDevices: Self = this.set("rollingActiveDevices", js.undefined)
+    def setSessions(value: Double): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSales(value: Double): Self = this.set("sales", value.asInstanceOf[js.Any])
+    def setSessionsUndefined: Self = StObject.set(x, "sessions", js.undefined)
     
     @scala.inline
-    def deleteSales: Self = this.set("sales", js.undefined)
+    def setUninstalls(value: Double): Self = StObject.set(x, "uninstalls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessions(value: Double): Self = this.set("sessions", value.asInstanceOf[js.Any])
+    def setUninstallsUndefined: Self = StObject.set(x, "uninstalls", js.undefined)
     
     @scala.inline
-    def deleteSessions: Self = this.set("sessions", js.undefined)
+    def setUnits(value: Double): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUninstalls(value: Double): Self = this.set("uninstalls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUninstalls: Self = this.set("uninstalls", js.undefined)
-    
-    @scala.inline
-    def setUnits(value: Double): Self = this.set("units", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnits: Self = this.set("units", js.undefined)
+    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
   }
 }

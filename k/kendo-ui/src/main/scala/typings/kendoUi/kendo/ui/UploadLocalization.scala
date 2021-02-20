@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadLocalization extends js.Object {
+trait UploadLocalization extends StObject {
   
   var cancel: js.UndefOr[String] = js.native
   
@@ -52,126 +53,114 @@ object UploadLocalization {
   }
   
   @scala.inline
-  implicit class UploadLocalizationOps[Self <: UploadLocalization] (val x: Self) extends AnyVal {
+  implicit class UploadLocalizationMutableBuilder[Self <: UploadLocalization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClearSelectedFiles(value: String): Self = StObject.set(x, "clearSelectedFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: String): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    def setClearSelectedFilesUndefined: Self = StObject.set(x, "clearSelectedFiles", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setDropFilesHere(value: String): Self = StObject.set(x, "dropFilesHere", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearSelectedFiles(value: String): Self = this.set("clearSelectedFiles", value.asInstanceOf[js.Any])
+    def setDropFilesHereUndefined: Self = StObject.set(x, "dropFilesHere", js.undefined)
     
     @scala.inline
-    def deleteClearSelectedFiles: Self = this.set("clearSelectedFiles", js.undefined)
+    def setHeaderStatusUploaded(value: String): Self = StObject.set(x, "headerStatusUploaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropFilesHere(value: String): Self = this.set("dropFilesHere", value.asInstanceOf[js.Any])
+    def setHeaderStatusUploadedUndefined: Self = StObject.set(x, "headerStatusUploaded", js.undefined)
     
     @scala.inline
-    def deleteDropFilesHere: Self = this.set("dropFilesHere", js.undefined)
+    def setHeaderStatusUploading(value: String): Self = StObject.set(x, "headerStatusUploading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderStatusUploaded(value: String): Self = this.set("headerStatusUploaded", value.asInstanceOf[js.Any])
+    def setHeaderStatusUploadingUndefined: Self = StObject.set(x, "headerStatusUploading", js.undefined)
     
     @scala.inline
-    def deleteHeaderStatusUploaded: Self = this.set("headerStatusUploaded", js.undefined)
+    def setInvalidFileExtension(value: String): Self = StObject.set(x, "invalidFileExtension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderStatusUploading(value: String): Self = this.set("headerStatusUploading", value.asInstanceOf[js.Any])
+    def setInvalidFileExtensionUndefined: Self = StObject.set(x, "invalidFileExtension", js.undefined)
     
     @scala.inline
-    def deleteHeaderStatusUploading: Self = this.set("headerStatusUploading", js.undefined)
+    def setInvalidFiles(value: String): Self = StObject.set(x, "invalidFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidFileExtension(value: String): Self = this.set("invalidFileExtension", value.asInstanceOf[js.Any])
+    def setInvalidFilesUndefined: Self = StObject.set(x, "invalidFiles", js.undefined)
     
     @scala.inline
-    def deleteInvalidFileExtension: Self = this.set("invalidFileExtension", js.undefined)
+    def setInvalidMaxFileSize(value: String): Self = StObject.set(x, "invalidMaxFileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidFiles(value: String): Self = this.set("invalidFiles", value.asInstanceOf[js.Any])
+    def setInvalidMaxFileSizeUndefined: Self = StObject.set(x, "invalidMaxFileSize", js.undefined)
     
     @scala.inline
-    def deleteInvalidFiles: Self = this.set("invalidFiles", js.undefined)
+    def setInvalidMinFileSize(value: String): Self = StObject.set(x, "invalidMinFileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidMaxFileSize(value: String): Self = this.set("invalidMaxFileSize", value.asInstanceOf[js.Any])
+    def setInvalidMinFileSizeUndefined: Self = StObject.set(x, "invalidMinFileSize", js.undefined)
     
     @scala.inline
-    def deleteInvalidMaxFileSize: Self = this.set("invalidMaxFileSize", js.undefined)
+    def setRemove(value: String): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidMinFileSize(value: String): Self = this.set("invalidMinFileSize", value.asInstanceOf[js.Any])
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def deleteInvalidMinFileSize: Self = this.set("invalidMinFileSize", js.undefined)
+    def setRetry(value: String): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemove(value: String): Self = this.set("remove", value.asInstanceOf[js.Any])
+    def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
     
     @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
+    def setSelect(value: String): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetry(value: String): Self = this.set("retry", value.asInstanceOf[js.Any])
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
     @scala.inline
-    def deleteRetry: Self = this.set("retry", js.undefined)
+    def setStatusFailed(value: String): Self = StObject.set(x, "statusFailed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: String): Self = this.set("select", value.asInstanceOf[js.Any])
+    def setStatusFailedUndefined: Self = StObject.set(x, "statusFailed", js.undefined)
     
     @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setStatusUploaded(value: String): Self = StObject.set(x, "statusUploaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusFailed(value: String): Self = this.set("statusFailed", value.asInstanceOf[js.Any])
+    def setStatusUploadedUndefined: Self = StObject.set(x, "statusUploaded", js.undefined)
     
     @scala.inline
-    def deleteStatusFailed: Self = this.set("statusFailed", js.undefined)
+    def setStatusUploading(value: String): Self = StObject.set(x, "statusUploading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusUploaded(value: String): Self = this.set("statusUploaded", value.asInstanceOf[js.Any])
+    def setStatusUploadingUndefined: Self = StObject.set(x, "statusUploading", js.undefined)
     
     @scala.inline
-    def deleteStatusUploaded: Self = this.set("statusUploaded", js.undefined)
+    def setUploadFail(value: String): Self = StObject.set(x, "uploadFail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusUploading(value: String): Self = this.set("statusUploading", value.asInstanceOf[js.Any])
+    def setUploadFailUndefined: Self = StObject.set(x, "uploadFail", js.undefined)
     
     @scala.inline
-    def deleteStatusUploading: Self = this.set("statusUploading", js.undefined)
+    def setUploadSelectedFiles(value: String): Self = StObject.set(x, "uploadSelectedFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUploadFail(value: String): Self = this.set("uploadFail", value.asInstanceOf[js.Any])
+    def setUploadSelectedFilesUndefined: Self = StObject.set(x, "uploadSelectedFiles", js.undefined)
     
     @scala.inline
-    def deleteUploadFail: Self = this.set("uploadFail", js.undefined)
+    def setUploadSuccess(value: String): Self = StObject.set(x, "uploadSuccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUploadSelectedFiles(value: String): Self = this.set("uploadSelectedFiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadSelectedFiles: Self = this.set("uploadSelectedFiles", js.undefined)
-    
-    @scala.inline
-    def setUploadSuccess(value: String): Self = this.set("uploadSuccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadSuccess: Self = this.set("uploadSuccess", js.undefined)
+    def setUploadSuccessUndefined: Self = StObject.set(x, "uploadSuccess", js.undefined)
   }
 }

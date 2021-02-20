@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchPutAssetPropertyError extends js.Object {
+trait BatchPutAssetPropertyError extends StObject {
   
   /**
     * The error code.
@@ -31,30 +32,18 @@ object BatchPutAssetPropertyError {
   }
   
   @scala.inline
-  implicit class BatchPutAssetPropertyErrorOps[Self <: BatchPutAssetPropertyError] (val x: Self) extends AnyVal {
+  implicit class BatchPutAssetPropertyErrorMutableBuilder[Self <: BatchPutAssetPropertyError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: BatchPutAssetPropertyValueErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimestamps(value: Timestamps): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: BatchPutAssetPropertyValueErrorCode): Self = this.set("errorCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrorMessage(value: ErrorMessage): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestampsVarargs(value: TimeInNanos*): Self = this.set("timestamps", js.Array(value :_*))
-    
-    @scala.inline
-    def setTimestamps(value: Timestamps): Self = this.set("timestamps", value.asInstanceOf[js.Any])
+    def setTimestampsVarargs(value: TimeInNanos*): Self = StObject.set(x, "timestamps", js.Array(value :_*))
   }
 }

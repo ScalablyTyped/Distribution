@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFAuthType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMFilesClientApplication extends js.Object {
+trait IMFilesClientApplication extends StObject {
   
   def AddVaultConnection(VaultConnection: IVaultConnection): Unit = js.native
   

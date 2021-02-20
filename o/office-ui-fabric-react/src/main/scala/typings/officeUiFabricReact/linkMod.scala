@@ -2,16 +2,18 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.linkTypesMod.ILinkProps
 import typings.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/Link", JSImport.Namespace)
-@js.native
-object linkMod extends js.Object {
+object linkMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/Link", "Link")
+  @js.native
   val Link: FunctionComponent[ILinkProps] = js.native
   
+  @JSImport("office-ui-fabric-react/lib/components/Link", "LinkBase")
   @js.native
   class LinkBase protected ()
     extends typings.officeUiFabricReact.linkBaseMod.LinkBase {

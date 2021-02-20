@@ -1,11 +1,12 @@
 package typings.awsSdk.organizationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEffectivePolicyResponse extends js.Object {
+trait DescribeEffectivePolicyResponse extends StObject {
   
   /**
     * The contents of the effective policy.
@@ -21,24 +22,12 @@ object DescribeEffectivePolicyResponse {
   }
   
   @scala.inline
-  implicit class DescribeEffectivePolicyResponseOps[Self <: DescribeEffectivePolicyResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeEffectivePolicyResponseMutableBuilder[Self <: DescribeEffectivePolicyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEffectivePolicy(value: EffectivePolicy): Self = StObject.set(x, "EffectivePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEffectivePolicy(value: EffectivePolicy): Self = this.set("EffectivePolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEffectivePolicy: Self = this.set("EffectivePolicy", js.undefined)
+    def setEffectivePolicyUndefined: Self = StObject.set(x, "EffectivePolicy", js.undefined)
   }
 }

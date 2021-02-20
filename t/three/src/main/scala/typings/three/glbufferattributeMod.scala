@@ -5,16 +5,16 @@ import typings.three.threeBooleans.`true`
 import typings.three.threeNumbers.`1`
 import typings.three.threeNumbers.`2`
 import typings.three.threeNumbers.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/core/GLBufferAttribute", JSImport.Namespace)
-@js.native
-object glbufferattributeMod extends js.Object {
+object glbufferattributeMod {
   
+  @JSImport("three/src/core/GLBufferAttribute", "GLBufferAttribute")
   @js.native
-  class GLBufferAttribute protected () extends js.Object {
+  class GLBufferAttribute protected () extends StObject {
     def this(buffer: WebGLBuffer, `type`: Double, itemSize: Double, elementSize: `1`, count: Double) = this()
     def this(buffer: WebGLBuffer, `type`: Double, itemSize: Double, elementSize: `2`, count: Double) = this()
     def this(buffer: WebGLBuffer, `type`: Double, itemSize: Double, elementSize: `4`, count: Double) = this()

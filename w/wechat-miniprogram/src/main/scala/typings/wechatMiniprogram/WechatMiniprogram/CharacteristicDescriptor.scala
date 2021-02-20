@@ -1,13 +1,14 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 描述符数据 */
 @js.native
-trait CharacteristicDescriptor extends js.Object {
+trait CharacteristicDescriptor extends StObject {
   
   /** 描述符的权限 */
   var permission: js.UndefOr[DescriptorPermission] = js.native
@@ -27,33 +28,21 @@ object CharacteristicDescriptor {
   }
   
   @scala.inline
-  implicit class CharacteristicDescriptorOps[Self <: CharacteristicDescriptor] (val x: Self) extends AnyVal {
+  implicit class CharacteristicDescriptorMutableBuilder[Self <: CharacteristicDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPermission(value: DescriptorPermission): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUuid(value: String): Self = this.set("uuid", value.asInstanceOf[js.Any])
+    def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermission(value: DescriptorPermission): Self = this.set("permission", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermission: Self = this.set("permission", js.undefined)
-    
-    @scala.inline
-    def setValue(value: ArrayBuffer): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

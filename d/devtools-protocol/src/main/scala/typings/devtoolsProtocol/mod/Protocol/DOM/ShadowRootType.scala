@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.DOM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.open
   - typings.devtoolsProtocol.devtoolsProtocolStrings.closed
 */
-trait ShadowRootType extends js.Object
+trait ShadowRootType extends StObject
 object ShadowRootType {
   
   @scala.inline

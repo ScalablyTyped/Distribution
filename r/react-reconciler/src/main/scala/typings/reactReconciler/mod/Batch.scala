@@ -1,5 +1,6 @@
 package typings.reactReconciler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // react-reconciler/ReactFiberRoot
 // TODO: This should be lifted into the renderer.
 @js.native
-trait Batch extends js.Object {
+trait Batch extends StObject {
   
   var _defer: Boolean = js.native
   
@@ -26,33 +27,21 @@ object Batch {
   }
   
   @scala.inline
-  implicit class BatchOps[Self <: Batch] (val x: Self) extends AnyVal {
+  implicit class BatchMutableBuilder[Self <: Batch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set_defer(value: Boolean): Self = StObject.set(x, "_defer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_expirationTime(value: ExpirationTime): Self = StObject.set(x, "_expirationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_next(value: Batch): Self = StObject.set(x, "_next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_defer(value: Boolean): Self = this.set("_defer", value.asInstanceOf[js.Any])
+    def set_nextNull: Self = StObject.set(x, "_next", null)
     
     @scala.inline
-    def set_expirationTime(value: ExpirationTime): Self = this.set("_expirationTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_onComplete(value: () => js.Any): Self = this.set("_onComplete", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def set_next(value: Batch): Self = this.set("_next", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_nextNull: Self = this.set("_next", null)
+    def set_onComplete(value: () => js.Any): Self = StObject.set(x, "_onComplete", js.Any.fromFunction0(value))
   }
 }

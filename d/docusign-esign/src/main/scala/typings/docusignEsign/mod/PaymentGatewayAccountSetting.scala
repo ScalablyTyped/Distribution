@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaymentGatewayAccountSetting extends js.Object {
+trait PaymentGatewayAccountSetting extends StObject {
   
   var apiFields: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object PaymentGatewayAccountSetting {
   }
   
   @scala.inline
-  implicit class PaymentGatewayAccountSettingOps[Self <: PaymentGatewayAccountSetting] (val x: Self) extends AnyVal {
+  implicit class PaymentGatewayAccountSettingMutableBuilder[Self <: PaymentGatewayAccountSetting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiFields(value: String): Self = StObject.set(x, "apiFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiFieldsUndefined: Self = StObject.set(x, "apiFields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorizationCode(value: String): Self = StObject.set(x, "authorizationCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiFields(value: String): Self = this.set("apiFields", value.asInstanceOf[js.Any])
+    def setAuthorizationCodeUndefined: Self = StObject.set(x, "authorizationCode", js.undefined)
     
     @scala.inline
-    def deleteApiFields: Self = this.set("apiFields", js.undefined)
+    def setCredentialStatus(value: String): Self = StObject.set(x, "credentialStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationCode(value: String): Self = this.set("authorizationCode", value.asInstanceOf[js.Any])
+    def setCredentialStatusUndefined: Self = StObject.set(x, "credentialStatus", js.undefined)
     
     @scala.inline
-    def deleteAuthorizationCode: Self = this.set("authorizationCode", js.undefined)
+    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentialStatus(value: String): Self = this.set("credentialStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCredentialStatus: Self = this.set("credentialStatus", js.undefined)
-    
-    @scala.inline
-    def setMerchantId(value: String): Self = this.set("merchantId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMerchantId: Self = this.set("merchantId", js.undefined)
+    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
   }
 }

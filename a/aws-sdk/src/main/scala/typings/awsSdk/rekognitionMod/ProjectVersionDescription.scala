@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectVersionDescription extends js.Object {
+trait ProjectVersionDescription extends StObject {
   
   /**
     * The duration, in seconds, that the model version has been billed for training. This value is only returned if the model version has been successfully trained.
@@ -76,90 +77,78 @@ object ProjectVersionDescription {
   }
   
   @scala.inline
-  implicit class ProjectVersionDescriptionOps[Self <: ProjectVersionDescription] (val x: Self) extends AnyVal {
+  implicit class ProjectVersionDescriptionMutableBuilder[Self <: ProjectVersionDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillableTrainingTimeInSeconds(value: ULong): Self = StObject.set(x, "BillableTrainingTimeInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillableTrainingTimeInSecondsUndefined: Self = StObject.set(x, "BillableTrainingTimeInSeconds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTimestamp(value: DateTime): Self = StObject.set(x, "CreationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillableTrainingTimeInSeconds(value: ULong): Self = this.set("BillableTrainingTimeInSeconds", value.asInstanceOf[js.Any])
+    def setCreationTimestampUndefined: Self = StObject.set(x, "CreationTimestamp", js.undefined)
     
     @scala.inline
-    def deleteBillableTrainingTimeInSeconds: Self = this.set("BillableTrainingTimeInSeconds", js.undefined)
+    def setEvaluationResult(value: EvaluationResult): Self = StObject.set(x, "EvaluationResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTimestamp(value: DateTime): Self = this.set("CreationTimestamp", value.asInstanceOf[js.Any])
+    def setEvaluationResultUndefined: Self = StObject.set(x, "EvaluationResult", js.undefined)
     
     @scala.inline
-    def deleteCreationTimestamp: Self = this.set("CreationTimestamp", js.undefined)
+    def setManifestSummary(value: GroundTruthManifest): Self = StObject.set(x, "ManifestSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluationResult(value: EvaluationResult): Self = this.set("EvaluationResult", value.asInstanceOf[js.Any])
+    def setManifestSummaryUndefined: Self = StObject.set(x, "ManifestSummary", js.undefined)
     
     @scala.inline
-    def deleteEvaluationResult: Self = this.set("EvaluationResult", js.undefined)
+    def setMinInferenceUnits(value: InferenceUnits): Self = StObject.set(x, "MinInferenceUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManifestSummary(value: GroundTruthManifest): Self = this.set("ManifestSummary", value.asInstanceOf[js.Any])
+    def setMinInferenceUnitsUndefined: Self = StObject.set(x, "MinInferenceUnits", js.undefined)
     
     @scala.inline
-    def deleteManifestSummary: Self = this.set("ManifestSummary", js.undefined)
+    def setOutputConfig(value: OutputConfig): Self = StObject.set(x, "OutputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinInferenceUnits(value: InferenceUnits): Self = this.set("MinInferenceUnits", value.asInstanceOf[js.Any])
+    def setOutputConfigUndefined: Self = StObject.set(x, "OutputConfig", js.undefined)
     
     @scala.inline
-    def deleteMinInferenceUnits: Self = this.set("MinInferenceUnits", js.undefined)
+    def setProjectVersionArn(value: ProjectVersionArn): Self = StObject.set(x, "ProjectVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputConfig(value: OutputConfig): Self = this.set("OutputConfig", value.asInstanceOf[js.Any])
+    def setProjectVersionArnUndefined: Self = StObject.set(x, "ProjectVersionArn", js.undefined)
     
     @scala.inline
-    def deleteOutputConfig: Self = this.set("OutputConfig", js.undefined)
+    def setStatus(value: ProjectVersionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectVersionArn(value: ProjectVersionArn): Self = this.set("ProjectVersionArn", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProjectVersionArn: Self = this.set("ProjectVersionArn", js.undefined)
+    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
     @scala.inline
-    def setStatus(value: ProjectVersionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setTestingDataResult(value: TestingDataResult): Self = StObject.set(x, "TestingDataResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: StatusMessage): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    def setTestingDataResultUndefined: Self = StObject.set(x, "TestingDataResult", js.undefined)
     
     @scala.inline
-    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    def setTrainingDataResult(value: TrainingDataResult): Self = StObject.set(x, "TrainingDataResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestingDataResult(value: TestingDataResult): Self = this.set("TestingDataResult", value.asInstanceOf[js.Any])
+    def setTrainingDataResultUndefined: Self = StObject.set(x, "TrainingDataResult", js.undefined)
     
     @scala.inline
-    def deleteTestingDataResult: Self = this.set("TestingDataResult", js.undefined)
+    def setTrainingEndTimestamp(value: DateTime): Self = StObject.set(x, "TrainingEndTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrainingDataResult(value: TrainingDataResult): Self = this.set("TrainingDataResult", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrainingDataResult: Self = this.set("TrainingDataResult", js.undefined)
-    
-    @scala.inline
-    def setTrainingEndTimestamp(value: DateTime): Self = this.set("TrainingEndTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrainingEndTimestamp: Self = this.set("TrainingEndTimestamp", js.undefined)
+    def setTrainingEndTimestampUndefined: Self = StObject.set(x, "TrainingEndTimestamp", js.undefined)
   }
 }

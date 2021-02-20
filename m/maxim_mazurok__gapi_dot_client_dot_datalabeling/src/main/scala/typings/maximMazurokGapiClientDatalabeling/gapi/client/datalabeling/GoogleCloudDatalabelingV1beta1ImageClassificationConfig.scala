@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1ImageClassificationConfig extends js.Object {
+trait GoogleCloudDatalabelingV1beta1ImageClassificationConfig extends StObject {
   
   /** Optional. If allow_multi_label is true, contributors are able to choose multiple labels for one image. */
   var allowMultiLabel: js.UndefOr[Boolean] = js.native
@@ -25,36 +26,24 @@ object GoogleCloudDatalabelingV1beta1ImageClassificationConfig {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1ImageClassificationConfigOps[Self <: GoogleCloudDatalabelingV1beta1ImageClassificationConfig] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1ImageClassificationConfigMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ImageClassificationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowMultiLabel(value: Boolean): Self = StObject.set(x, "allowMultiLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowMultiLabelUndefined: Self = StObject.set(x, "allowMultiLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnnotationSpecSet(value: String): Self = StObject.set(x, "annotationSpecSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowMultiLabel(value: Boolean): Self = this.set("allowMultiLabel", value.asInstanceOf[js.Any])
+    def setAnnotationSpecSetUndefined: Self = StObject.set(x, "annotationSpecSet", js.undefined)
     
     @scala.inline
-    def deleteAllowMultiLabel: Self = this.set("allowMultiLabel", js.undefined)
+    def setAnswerAggregationType(value: String): Self = StObject.set(x, "answerAggregationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationSpecSet(value: String): Self = this.set("annotationSpecSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnnotationSpecSet: Self = this.set("annotationSpecSet", js.undefined)
-    
-    @scala.inline
-    def setAnswerAggregationType(value: String): Self = this.set("answerAggregationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnswerAggregationType: Self = this.set("answerAggregationType", js.undefined)
+    def setAnswerAggregationTypeUndefined: Self = StObject.set(x, "answerAggregationType", js.undefined)
   }
 }

@@ -1,24 +1,46 @@
 package typings.primereact
 
 import typings.primereact.inplaceMod.InplaceProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("primereact/inplace", JSImport.Namespace)
-@js.native
-object primereactInplaceMod extends js.Object {
+object primereactInplaceMod {
   
+  @JSImport("primereact/inplace", "Inplace")
   @js.native
-  class Inplace ()
-    extends Component[InplaceProps, js.Any, js.Any]
+  class Inplace protected ()
+    extends typings.primereact.inplaceMod.Inplace {
+    def this(props: InplaceProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: InplaceProps, context: js.Any) = this()
+  }
   
+  @JSImport("primereact/inplace", "InplaceContent")
   @js.native
-  class InplaceContent ()
-    extends Component[js.Object, js.Object, js.Any]
+  class InplaceContent protected ()
+    extends typings.primereact.inplaceMod.InplaceContent {
+    def this(props: js.Object) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: js.Object, context: js.Any) = this()
+  }
   
+  @JSImport("primereact/inplace", "InplaceDisplay")
   @js.native
-  class InplaceDisplay ()
-    extends Component[js.Object, js.Object, js.Any]
+  class InplaceDisplay protected ()
+    extends typings.primereact.inplaceMod.InplaceDisplay {
+    def this(props: js.Object) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: js.Object, context: js.Any) = this()
+  }
 }

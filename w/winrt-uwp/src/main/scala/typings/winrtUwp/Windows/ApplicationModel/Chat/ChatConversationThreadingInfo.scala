@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides threading info for a ChatConversation . */
 @js.native
-trait ChatConversationThreadingInfo extends js.Object {
+trait ChatConversationThreadingInfo extends StObject {
   
   /** Gets or sets the Contact.Id for the remote participant. */
   var contactId: String = js.native
@@ -39,33 +40,21 @@ object ChatConversationThreadingInfo {
   }
   
   @scala.inline
-  implicit class ChatConversationThreadingInfoOps[Self <: ChatConversationThreadingInfo] (val x: Self) extends AnyVal {
+  implicit class ChatConversationThreadingInfoMutableBuilder[Self <: ChatConversationThreadingInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConversationId(value: String): Self = StObject.set(x, "conversationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustom(value: String): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactId(value: String): Self = this.set("contactId", value.asInstanceOf[js.Any])
+    def setKind(value: ChatConversationThreadingKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversationId(value: String): Self = this.set("conversationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCustom(value: String): Self = this.set("custom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: ChatConversationThreadingKind): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParticipants(value: IVector[String]): Self = this.set("participants", value.asInstanceOf[js.Any])
+    def setParticipants(value: IVector[String]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
   }
 }

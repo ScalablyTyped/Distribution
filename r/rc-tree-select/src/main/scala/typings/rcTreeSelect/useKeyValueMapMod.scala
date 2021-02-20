@@ -2,13 +2,14 @@ package typings.rcTreeSelect
 
 import typings.rcTreeSelect.interfaceMod.FlattenDataNode
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-tree-select/es/hooks/useKeyValueMap", JSImport.Namespace)
-@js.native
-object useKeyValueMapMod extends js.Object {
+object useKeyValueMapMod {
   
+  @JSImport("rc-tree-select/es/hooks/useKeyValueMap", JSImport.Default)
+  @js.native
   def default(flattenOptions: js.Array[FlattenDataNode]): js.Array[Map[String | Double, FlattenDataNode]] = js.native
 }

@@ -1,5 +1,6 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,24 +10,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.highcharts.mod.YAxisOptions
   - typings.highcharts.mod.ZAxisOptions
 */
-trait AxisOptions extends js.Object
+trait AxisOptions extends StObject
 object AxisOptions {
   
   @scala.inline
-  def XAxisOptions(): AxisOptions = {
+  def XAxisOptions(): typings.highcharts.mod.XAxisOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[AxisOptions]
+    __obj.asInstanceOf[typings.highcharts.mod.XAxisOptions]
   }
   
   @scala.inline
-  def YAxisOptions(): AxisOptions = {
+  def YAxisOptions(): typings.highcharts.mod.YAxisOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[AxisOptions]
+    __obj.asInstanceOf[typings.highcharts.mod.YAxisOptions]
   }
   
   @scala.inline
-  def ZAxisOptions(): AxisOptions = {
+  def ZAxisOptions(): typings.highcharts.mod.ZAxisOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[AxisOptions]
+    __obj.asInstanceOf[typings.highcharts.mod.ZAxisOptions]
   }
 }

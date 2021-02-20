@@ -3,12 +3,13 @@ package typings.monacoEditor.mod.editor
 import typings.monacoEditor.monacoEditorStrings.auto
 import typings.monacoEditor.monacoEditorStrings.hidden
 import typings.monacoEditor.monacoEditorStrings.visible
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEditorScrollbarOptions extends js.Object {
+trait IEditorScrollbarOptions extends StObject {
   
   /**
     * Always consume mouse wheel events (always call preventDefault() and stopPropagation() on the browser events).
@@ -91,90 +92,78 @@ object IEditorScrollbarOptions {
   }
   
   @scala.inline
-  implicit class IEditorScrollbarOptionsOps[Self <: IEditorScrollbarOptions] (val x: Self) extends AnyVal {
+  implicit class IEditorScrollbarOptionsMutableBuilder[Self <: IEditorScrollbarOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlwaysConsumeMouseWheel(value: Boolean): Self = StObject.set(x, "alwaysConsumeMouseWheel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlwaysConsumeMouseWheelUndefined: Self = StObject.set(x, "alwaysConsumeMouseWheel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArrowSize(value: Double): Self = StObject.set(x, "arrowSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlwaysConsumeMouseWheel(value: Boolean): Self = this.set("alwaysConsumeMouseWheel", value.asInstanceOf[js.Any])
+    def setArrowSizeUndefined: Self = StObject.set(x, "arrowSize", js.undefined)
     
     @scala.inline
-    def deleteAlwaysConsumeMouseWheel: Self = this.set("alwaysConsumeMouseWheel", js.undefined)
+    def setHandleMouseWheel(value: Boolean): Self = StObject.set(x, "handleMouseWheel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrowSize(value: Double): Self = this.set("arrowSize", value.asInstanceOf[js.Any])
+    def setHandleMouseWheelUndefined: Self = StObject.set(x, "handleMouseWheel", js.undefined)
     
     @scala.inline
-    def deleteArrowSize: Self = this.set("arrowSize", js.undefined)
+    def setHorizontal(value: auto | visible | hidden): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleMouseWheel(value: Boolean): Self = this.set("handleMouseWheel", value.asInstanceOf[js.Any])
+    def setHorizontalHasArrows(value: Boolean): Self = StObject.set(x, "horizontalHasArrows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHandleMouseWheel: Self = this.set("handleMouseWheel", js.undefined)
+    def setHorizontalHasArrowsUndefined: Self = StObject.set(x, "horizontalHasArrows", js.undefined)
     
     @scala.inline
-    def setHorizontal(value: auto | visible | hidden): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    def setHorizontalScrollbarSize(value: Double): Self = StObject.set(x, "horizontalScrollbarSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    def setHorizontalScrollbarSizeUndefined: Self = StObject.set(x, "horizontalScrollbarSize", js.undefined)
     
     @scala.inline
-    def setHorizontalHasArrows(value: Boolean): Self = this.set("horizontalHasArrows", value.asInstanceOf[js.Any])
+    def setHorizontalSliderSize(value: Double): Self = StObject.set(x, "horizontalSliderSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHorizontalHasArrows: Self = this.set("horizontalHasArrows", js.undefined)
+    def setHorizontalSliderSizeUndefined: Self = StObject.set(x, "horizontalSliderSize", js.undefined)
     
     @scala.inline
-    def setHorizontalScrollbarSize(value: Double): Self = this.set("horizontalScrollbarSize", value.asInstanceOf[js.Any])
+    def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
     @scala.inline
-    def deleteHorizontalScrollbarSize: Self = this.set("horizontalScrollbarSize", js.undefined)
+    def setUseShadows(value: Boolean): Self = StObject.set(x, "useShadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalSliderSize(value: Double): Self = this.set("horizontalSliderSize", value.asInstanceOf[js.Any])
+    def setUseShadowsUndefined: Self = StObject.set(x, "useShadows", js.undefined)
     
     @scala.inline
-    def deleteHorizontalSliderSize: Self = this.set("horizontalSliderSize", js.undefined)
+    def setVertical(value: auto | visible | hidden): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseShadows(value: Boolean): Self = this.set("useShadows", value.asInstanceOf[js.Any])
+    def setVerticalHasArrows(value: Boolean): Self = StObject.set(x, "verticalHasArrows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseShadows: Self = this.set("useShadows", js.undefined)
+    def setVerticalHasArrowsUndefined: Self = StObject.set(x, "verticalHasArrows", js.undefined)
     
     @scala.inline
-    def setVertical(value: auto | visible | hidden): Self = this.set("vertical", value.asInstanceOf[js.Any])
+    def setVerticalScrollbarSize(value: Double): Self = StObject.set(x, "verticalScrollbarSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVertical: Self = this.set("vertical", js.undefined)
+    def setVerticalScrollbarSizeUndefined: Self = StObject.set(x, "verticalScrollbarSize", js.undefined)
     
     @scala.inline
-    def setVerticalHasArrows(value: Boolean): Self = this.set("verticalHasArrows", value.asInstanceOf[js.Any])
+    def setVerticalSliderSize(value: Double): Self = StObject.set(x, "verticalSliderSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVerticalHasArrows: Self = this.set("verticalHasArrows", js.undefined)
+    def setVerticalSliderSizeUndefined: Self = StObject.set(x, "verticalSliderSize", js.undefined)
     
     @scala.inline
-    def setVerticalScrollbarSize(value: Double): Self = this.set("verticalScrollbarSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalScrollbarSize: Self = this.set("verticalScrollbarSize", js.undefined)
-    
-    @scala.inline
-    def setVerticalSliderSize(value: Double): Self = this.set("verticalSliderSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalSliderSize: Self = this.set("verticalSliderSize", js.undefined)
+    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

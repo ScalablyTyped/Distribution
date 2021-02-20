@@ -1,11 +1,12 @@
 package typings.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateByExampleOptions extends js.Object {
+trait UpdateByExampleOptions extends StObject {
   
   var keepNull: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object UpdateByExampleOptions {
   }
   
   @scala.inline
-  implicit class UpdateByExampleOptionsOps[Self <: UpdateByExampleOptions] (val x: Self) extends AnyVal {
+  implicit class UpdateByExampleOptionsMutableBuilder[Self <: UpdateByExampleOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeepNull(value: Boolean): Self = StObject.set(x, "keepNull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeepNullUndefined: Self = StObject.set(x, "keepNull", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepNull(value: Boolean): Self = this.set("keepNull", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteKeepNull: Self = this.set("keepNull", js.undefined)
+    def setMergeObjects(value: Boolean): Self = StObject.set(x, "mergeObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setMergeObjectsUndefined: Self = StObject.set(x, "mergeObjects", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setWaitForSync(value: Boolean): Self = StObject.set(x, "waitForSync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergeObjects(value: Boolean): Self = this.set("mergeObjects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMergeObjects: Self = this.set("mergeObjects", js.undefined)
-    
-    @scala.inline
-    def setWaitForSync(value: Boolean): Self = this.set("waitForSync", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitForSync: Self = this.set("waitForSync", js.undefined)
+    def setWaitForSyncUndefined: Self = StObject.set(x, "waitForSync", js.undefined)
   }
 }

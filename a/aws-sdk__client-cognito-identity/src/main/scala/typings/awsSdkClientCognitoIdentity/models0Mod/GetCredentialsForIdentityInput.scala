@@ -1,12 +1,13 @@
 package typings.awsSdkClientCognitoIdentity.models0Mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetCredentialsForIdentityInput extends js.Object {
+trait GetCredentialsForIdentityInput extends StObject {
   
   /**
     * <p>The Amazon Resource Name (ARN) of the role to be assumed when multiple roles were
@@ -34,9 +35,37 @@ trait GetCredentialsForIdentityInput extends js.Object {
     */
   var Logins: js.UndefOr[StringDictionary[String]] = js.native
 }
-@JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetCredentialsForIdentityInput")
-@js.native
-object GetCredentialsForIdentityInput extends js.Object {
+object GetCredentialsForIdentityInput {
   
+  @scala.inline
+  def apply(): GetCredentialsForIdentityInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[GetCredentialsForIdentityInput]
+  }
+  
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetCredentialsForIdentityInput.filterSensitiveLog")
+  @js.native
   def filterSensitiveLog(obj: GetCredentialsForIdentityInput): js.Any = js.native
+  
+  @scala.inline
+  implicit class GetCredentialsForIdentityInputMutableBuilder[Self <: GetCredentialsForIdentityInput] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setCustomRoleArn(value: String): Self = StObject.set(x, "CustomRoleArn", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCustomRoleArnUndefined: Self = StObject.set(x, "CustomRoleArn", js.undefined)
+    
+    @scala.inline
+    def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
+    
+    @scala.inline
+    def setLogins(value: StringDictionary[String]): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
+  }
 }

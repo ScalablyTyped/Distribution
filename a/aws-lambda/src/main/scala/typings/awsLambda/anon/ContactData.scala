@@ -1,12 +1,13 @@
 package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContactData extends js.Object {
+trait ContactData extends StObject {
   
   var ContactData: Attributes = js.native
   
@@ -21,24 +22,12 @@ object ContactData {
   }
   
   @scala.inline
-  implicit class ContactDataOps[Self <: ContactData] (val x: Self) extends AnyVal {
+  implicit class ContactDataMutableBuilder[Self <: ContactData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContactData(value: Attributes): Self = StObject.set(x, "ContactData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContactData(value: Attributes): Self = this.set("ContactData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParameters(value: StringDictionary[String]): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
   }
 }

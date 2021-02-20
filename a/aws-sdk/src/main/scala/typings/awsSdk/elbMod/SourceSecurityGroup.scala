@@ -1,11 +1,12 @@
 package typings.awsSdk.elbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceSecurityGroup extends js.Object {
+trait SourceSecurityGroup extends StObject {
   
   /**
     * The name of the security group.
@@ -26,30 +27,18 @@ object SourceSecurityGroup {
   }
   
   @scala.inline
-  implicit class SourceSecurityGroupOps[Self <: SourceSecurityGroup] (val x: Self) extends AnyVal {
+  implicit class SourceSecurityGroupMutableBuilder[Self <: SourceSecurityGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupName(value: SecurityGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwnerAlias(value: SecurityGroupOwnerAlias): Self = StObject.set(x, "OwnerAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupName(value: SecurityGroupName): Self = this.set("GroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupName: Self = this.set("GroupName", js.undefined)
-    
-    @scala.inline
-    def setOwnerAlias(value: SecurityGroupOwnerAlias): Self = this.set("OwnerAlias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwnerAlias: Self = this.set("OwnerAlias", js.undefined)
+    def setOwnerAliasUndefined: Self = StObject.set(x, "OwnerAlias", js.undefined)
   }
 }

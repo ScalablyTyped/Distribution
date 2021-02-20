@@ -1,11 +1,12 @@
 package typings.trtcJsSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JoinOptions extends js.Object {
+trait JoinOptions extends StObject {
   
   /**
     * @deprecated 进房钥匙，若需要权限控制请携带该参数，因某些局限性目前已不建议使用该参数。
@@ -27,33 +28,21 @@ object JoinOptions {
   }
   
   @scala.inline
-  implicit class JoinOptionsOps[Self <: JoinOptions] (val x: Self) extends AnyVal {
+  implicit class JoinOptionsMutableBuilder[Self <: JoinOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrivateMapKey(value: String): Self = StObject.set(x, "privateMapKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrivateMapKeyUndefined: Self = StObject.set(x, "privateMapKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRole(value: Role): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoomId(value: Double): Self = this.set("roomId", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def setPrivateMapKey(value: String): Self = this.set("privateMapKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateMapKey: Self = this.set("privateMapKey", js.undefined)
-    
-    @scala.inline
-    def setRole(value: Role): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setRoomId(value: Double): Self = StObject.set(x, "roomId", value.asInstanceOf[js.Any])
   }
 }

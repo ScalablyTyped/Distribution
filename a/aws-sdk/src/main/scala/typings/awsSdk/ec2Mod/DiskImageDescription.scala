@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiskImageDescription extends js.Object {
+trait DiskImageDescription extends StObject {
   
   /**
     * The checksum computed for the disk image.
@@ -36,42 +37,30 @@ object DiskImageDescription {
   }
   
   @scala.inline
-  implicit class DiskImageDescriptionOps[Self <: DiskImageDescription] (val x: Self) extends AnyVal {
+  implicit class DiskImageDescriptionMutableBuilder[Self <: DiskImageDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChecksum(value: String): Self = StObject.set(x, "Checksum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChecksumUndefined: Self = StObject.set(x, "Checksum", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: DiskImageFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecksum(value: String): Self = this.set("Checksum", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
     @scala.inline
-    def deleteChecksum: Self = this.set("Checksum", js.undefined)
+    def setImportManifestUrl(value: String): Self = StObject.set(x, "ImportManifestUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: DiskImageFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
+    def setImportManifestUrlUndefined: Self = StObject.set(x, "ImportManifestUrl", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("Format", js.undefined)
+    def setSize(value: Long): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportManifestUrl(value: String): Self = this.set("ImportManifestUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImportManifestUrl: Self = this.set("ImportManifestUrl", js.undefined)
-    
-    @scala.inline
-    def setSize(value: Long): Self = this.set("Size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("Size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
   }
 }

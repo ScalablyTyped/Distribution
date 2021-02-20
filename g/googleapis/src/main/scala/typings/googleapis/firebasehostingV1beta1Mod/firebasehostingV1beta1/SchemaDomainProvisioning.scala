@@ -1,5 +1,6 @@
 package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The current certificate provisioning status information for a domain.
   */
 @js.native
-trait SchemaDomainProvisioning extends js.Object {
+trait SchemaDomainProvisioning extends StObject {
   
   /**
     * The TXT records (for the certificate challenge) that were found at the
@@ -61,75 +62,63 @@ object SchemaDomainProvisioning {
   }
   
   @scala.inline
-  implicit class SchemaDomainProvisioningOps[Self <: SchemaDomainProvisioning] (val x: Self) extends AnyVal {
+  implicit class SchemaDomainProvisioningMutableBuilder[Self <: SchemaDomainProvisioning] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertChallengeDiscoveredTxt(value: js.Array[String]): Self = StObject.set(x, "certChallengeDiscoveredTxt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertChallengeDiscoveredTxtUndefined: Self = StObject.set(x, "certChallengeDiscoveredTxt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertChallengeDiscoveredTxtVarargs(value: String*): Self = StObject.set(x, "certChallengeDiscoveredTxt", js.Array(value :_*))
     
     @scala.inline
-    def setCertChallengeDiscoveredTxtVarargs(value: String*): Self = this.set("certChallengeDiscoveredTxt", js.Array(value :_*))
+    def setCertChallengeDns(value: SchemaCertDnsChallenge): Self = StObject.set(x, "certChallengeDns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertChallengeDiscoveredTxt(value: js.Array[String]): Self = this.set("certChallengeDiscoveredTxt", value.asInstanceOf[js.Any])
+    def setCertChallengeDnsUndefined: Self = StObject.set(x, "certChallengeDns", js.undefined)
     
     @scala.inline
-    def deleteCertChallengeDiscoveredTxt: Self = this.set("certChallengeDiscoveredTxt", js.undefined)
+    def setCertChallengeHttp(value: SchemaCertHttpChallenge): Self = StObject.set(x, "certChallengeHttp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertChallengeDns(value: SchemaCertDnsChallenge): Self = this.set("certChallengeDns", value.asInstanceOf[js.Any])
+    def setCertChallengeHttpUndefined: Self = StObject.set(x, "certChallengeHttp", js.undefined)
     
     @scala.inline
-    def deleteCertChallengeDns: Self = this.set("certChallengeDns", js.undefined)
+    def setCertStatus(value: String): Self = StObject.set(x, "certStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertChallengeHttp(value: SchemaCertHttpChallenge): Self = this.set("certChallengeHttp", value.asInstanceOf[js.Any])
+    def setCertStatusUndefined: Self = StObject.set(x, "certStatus", js.undefined)
     
     @scala.inline
-    def deleteCertChallengeHttp: Self = this.set("certChallengeHttp", js.undefined)
+    def setDiscoveredIps(value: js.Array[String]): Self = StObject.set(x, "discoveredIps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertStatus(value: String): Self = this.set("certStatus", value.asInstanceOf[js.Any])
+    def setDiscoveredIpsUndefined: Self = StObject.set(x, "discoveredIps", js.undefined)
     
     @scala.inline
-    def deleteCertStatus: Self = this.set("certStatus", js.undefined)
+    def setDiscoveredIpsVarargs(value: String*): Self = StObject.set(x, "discoveredIps", js.Array(value :_*))
     
     @scala.inline
-    def setDiscoveredIpsVarargs(value: String*): Self = this.set("discoveredIps", js.Array(value :_*))
+    def setDnsFetchTime(value: String): Self = StObject.set(x, "dnsFetchTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscoveredIps(value: js.Array[String]): Self = this.set("discoveredIps", value.asInstanceOf[js.Any])
+    def setDnsFetchTimeUndefined: Self = StObject.set(x, "dnsFetchTime", js.undefined)
     
     @scala.inline
-    def deleteDiscoveredIps: Self = this.set("discoveredIps", js.undefined)
+    def setDnsStatus(value: String): Self = StObject.set(x, "dnsStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsFetchTime(value: String): Self = this.set("dnsFetchTime", value.asInstanceOf[js.Any])
+    def setDnsStatusUndefined: Self = StObject.set(x, "dnsStatus", js.undefined)
     
     @scala.inline
-    def deleteDnsFetchTime: Self = this.set("dnsFetchTime", js.undefined)
+    def setExpectedIps(value: js.Array[String]): Self = StObject.set(x, "expectedIps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsStatus(value: String): Self = this.set("dnsStatus", value.asInstanceOf[js.Any])
+    def setExpectedIpsUndefined: Self = StObject.set(x, "expectedIps", js.undefined)
     
     @scala.inline
-    def deleteDnsStatus: Self = this.set("dnsStatus", js.undefined)
-    
-    @scala.inline
-    def setExpectedIpsVarargs(value: String*): Self = this.set("expectedIps", js.Array(value :_*))
-    
-    @scala.inline
-    def setExpectedIps(value: js.Array[String]): Self = this.set("expectedIps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpectedIps: Self = this.set("expectedIps", js.undefined)
+    def setExpectedIpsVarargs(value: String*): Self = StObject.set(x, "expectedIps", js.Array(value :_*))
   }
 }

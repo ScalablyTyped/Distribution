@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.map
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TileLayerOptions extends js.Object {
+trait TileLayerOptions extends StObject {
   
   var name: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object TileLayerOptions {
   }
   
   @scala.inline
-  implicit class TileLayerOptionsOps[Self <: TileLayerOptions] (val x: Self) extends AnyVal {
+  implicit class TileLayerOptionsMutableBuilder[Self <: TileLayerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubdomains(value: js.Any): Self = StObject.set(x, "subdomains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSubdomainsUndefined: Self = StObject.set(x, "subdomains", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubdomains(value: js.Any): Self = this.set("subdomains", value.asInstanceOf[js.Any])
+    def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
     
     @scala.inline
-    def deleteSubdomains: Self = this.set("subdomains", js.undefined)
+    def setUrlTemplate(value: String): Self = StObject.set(x, "urlTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileSize(value: Double): Self = this.set("tileSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTileSize: Self = this.set("tileSize", js.undefined)
-    
-    @scala.inline
-    def setUrlTemplate(value: String): Self = this.set("urlTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlTemplate: Self = this.set("urlTemplate", js.undefined)
+    def setUrlTemplateUndefined: Self = StObject.set(x, "urlTemplate", js.undefined)
   }
 }

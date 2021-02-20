@@ -1,6 +1,7 @@
 package typings.phaser.mod
 
 import typings.phaser.MatterJS.CompositeType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,10 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Composites ()
   extends typings.phaser.MatterJS.Composites
-/* static members */
-@JSImport("matter", "Composites")
-@js.native
-object Composites extends js.Object {
+object Composites {
   
   /**
     * Creates a composite with simple car setup of bodies and constraints.
@@ -32,6 +30,9 @@ object Composites extends js.Object {
     * @param {number} wheelSize
     * @return {composite} A new composite car body
     */
+  /* static member */
+  @JSImport("matter", "Composites.car")
+  @js.native
   def car(xx: Double, yy: Double, width: Double, height: Double, wheelSize: Double): CompositeType = js.native
   
   /**
@@ -45,6 +46,9 @@ object Composites extends js.Object {
     * @param {object} options
     * @return {composite} A new composite containing objects chained together with constraints
     */
+  /* static member */
+  @JSImport("matter", "Composites.chain")
+  @js.native
   def chain(
     composite: CompositeType,
     xOffsetA: Double,
@@ -64,6 +68,9 @@ object Composites extends js.Object {
     * @param {object} options
     * @return {composite} The composite containing objects meshed together with constraints
     */
+  /* static member */
+  @JSImport("matter", "Composites.mesh")
+  @js.native
   def mesh(composite: CompositeType, columns: Double, rows: Double, crossBrace: Boolean, options: js.Any): CompositeType = js.native
   
   /**
@@ -76,6 +83,9 @@ object Composites extends js.Object {
     * @param {number} length
     * @return {composite} A new composite newtonsCradle body
     */
+  /* static member */
+  @JSImport("matter", "Composites.newtonsCradle")
+  @js.native
   def newtonsCradle(xx: Double, yy: Double, number: Double, size: Double, length: Double): CompositeType = js.native
   
   /**
@@ -91,6 +101,9 @@ object Composites extends js.Object {
     * @param {function} callback
     * @return {composite} A new composite containing objects created in the callback
     */
+  /* static member */
+  @JSImport("matter", "Composites.pyramid")
+  @js.native
   def pyramid(
     xx: Double,
     yy: Double,
@@ -116,6 +129,9 @@ object Composites extends js.Object {
     * @param {} constraintOptions
     * @return {composite} A new composite softBody
     */
+  /* static member */
+  @JSImport("matter", "Composites.softBody")
+  @js.native
   def softBody(
     xx: Double,
     yy: Double,
@@ -142,6 +158,9 @@ object Composites extends js.Object {
     * @param {function} callback
     * @return {composite} A new composite containing objects created in the callback
     */
+  /* static member */
+  @JSImport("matter", "Composites.stack")
+  @js.native
   def stack(
     xx: Double,
     yy: Double,

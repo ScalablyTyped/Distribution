@@ -1,21 +1,22 @@
 package typings.reactNativeElements.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _HeaderSubComponent extends js.Object
+trait _HeaderSubComponent extends StObject
 object _HeaderSubComponent {
   
   @scala.inline
-  def TextProps(): _HeaderSubComponent = {
+  def HeaderIcon(): typings.reactNativeElements.mod.HeaderIcon = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[_HeaderSubComponent]
+    __obj.asInstanceOf[typings.reactNativeElements.mod.HeaderIcon]
   }
   
   @scala.inline
-  def HeaderIcon(): _HeaderSubComponent = {
+  def TextProps(): typings.reactNativeElements.mod.TextProps = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[_HeaderSubComponent]
+    __obj.asInstanceOf[typings.reactNativeElements.mod.TextProps]
   }
 }

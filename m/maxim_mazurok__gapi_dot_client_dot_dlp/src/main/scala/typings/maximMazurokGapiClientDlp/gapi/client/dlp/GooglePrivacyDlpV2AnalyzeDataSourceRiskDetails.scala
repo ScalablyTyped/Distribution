@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2AnalyzeDataSourceRiskDetails extends js.Object {
+trait GooglePrivacyDlpV2AnalyzeDataSourceRiskDetails extends StObject {
   
   /** Categorical stats result */
   var categoricalStatsResult: js.UndefOr[GooglePrivacyDlpV2CategoricalStatsResult] = js.native
@@ -43,72 +44,60 @@ object GooglePrivacyDlpV2AnalyzeDataSourceRiskDetails {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2AnalyzeDataSourceRiskDetailsOps[Self <: GooglePrivacyDlpV2AnalyzeDataSourceRiskDetails] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2AnalyzeDataSourceRiskDetailsMutableBuilder[Self <: GooglePrivacyDlpV2AnalyzeDataSourceRiskDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategoricalStatsResult(value: GooglePrivacyDlpV2CategoricalStatsResult): Self = StObject.set(x, "categoricalStatsResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoricalStatsResultUndefined: Self = StObject.set(x, "categoricalStatsResult", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeltaPresenceEstimationResult(value: GooglePrivacyDlpV2DeltaPresenceEstimationResult): Self = StObject.set(x, "deltaPresenceEstimationResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoricalStatsResult(value: GooglePrivacyDlpV2CategoricalStatsResult): Self = this.set("categoricalStatsResult", value.asInstanceOf[js.Any])
+    def setDeltaPresenceEstimationResultUndefined: Self = StObject.set(x, "deltaPresenceEstimationResult", js.undefined)
     
     @scala.inline
-    def deleteCategoricalStatsResult: Self = this.set("categoricalStatsResult", js.undefined)
+    def setKAnonymityResult(value: GooglePrivacyDlpV2KAnonymityResult): Self = StObject.set(x, "kAnonymityResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeltaPresenceEstimationResult(value: GooglePrivacyDlpV2DeltaPresenceEstimationResult): Self = this.set("deltaPresenceEstimationResult", value.asInstanceOf[js.Any])
+    def setKAnonymityResultUndefined: Self = StObject.set(x, "kAnonymityResult", js.undefined)
     
     @scala.inline
-    def deleteDeltaPresenceEstimationResult: Self = this.set("deltaPresenceEstimationResult", js.undefined)
+    def setKMapEstimationResult(value: GooglePrivacyDlpV2KMapEstimationResult): Self = StObject.set(x, "kMapEstimationResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKAnonymityResult(value: GooglePrivacyDlpV2KAnonymityResult): Self = this.set("kAnonymityResult", value.asInstanceOf[js.Any])
+    def setKMapEstimationResultUndefined: Self = StObject.set(x, "kMapEstimationResult", js.undefined)
     
     @scala.inline
-    def deleteKAnonymityResult: Self = this.set("kAnonymityResult", js.undefined)
+    def setLDiversityResult(value: GooglePrivacyDlpV2LDiversityResult): Self = StObject.set(x, "lDiversityResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKMapEstimationResult(value: GooglePrivacyDlpV2KMapEstimationResult): Self = this.set("kMapEstimationResult", value.asInstanceOf[js.Any])
+    def setLDiversityResultUndefined: Self = StObject.set(x, "lDiversityResult", js.undefined)
     
     @scala.inline
-    def deleteKMapEstimationResult: Self = this.set("kMapEstimationResult", js.undefined)
+    def setNumericalStatsResult(value: GooglePrivacyDlpV2NumericalStatsResult): Self = StObject.set(x, "numericalStatsResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLDiversityResult(value: GooglePrivacyDlpV2LDiversityResult): Self = this.set("lDiversityResult", value.asInstanceOf[js.Any])
+    def setNumericalStatsResultUndefined: Self = StObject.set(x, "numericalStatsResult", js.undefined)
     
     @scala.inline
-    def deleteLDiversityResult: Self = this.set("lDiversityResult", js.undefined)
+    def setRequestedOptions(value: GooglePrivacyDlpV2RequestedRiskAnalysisOptions): Self = StObject.set(x, "requestedOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumericalStatsResult(value: GooglePrivacyDlpV2NumericalStatsResult): Self = this.set("numericalStatsResult", value.asInstanceOf[js.Any])
+    def setRequestedOptionsUndefined: Self = StObject.set(x, "requestedOptions", js.undefined)
     
     @scala.inline
-    def deleteNumericalStatsResult: Self = this.set("numericalStatsResult", js.undefined)
+    def setRequestedPrivacyMetric(value: GooglePrivacyDlpV2PrivacyMetric): Self = StObject.set(x, "requestedPrivacyMetric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedOptions(value: GooglePrivacyDlpV2RequestedRiskAnalysisOptions): Self = this.set("requestedOptions", value.asInstanceOf[js.Any])
+    def setRequestedPrivacyMetricUndefined: Self = StObject.set(x, "requestedPrivacyMetric", js.undefined)
     
     @scala.inline
-    def deleteRequestedOptions: Self = this.set("requestedOptions", js.undefined)
+    def setRequestedSourceTable(value: GooglePrivacyDlpV2BigQueryTable): Self = StObject.set(x, "requestedSourceTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedPrivacyMetric(value: GooglePrivacyDlpV2PrivacyMetric): Self = this.set("requestedPrivacyMetric", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestedPrivacyMetric: Self = this.set("requestedPrivacyMetric", js.undefined)
-    
-    @scala.inline
-    def setRequestedSourceTable(value: GooglePrivacyDlpV2BigQueryTable): Self = this.set("requestedSourceTable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestedSourceTable: Self = this.set("requestedSourceTable", js.undefined)
+    def setRequestedSourceTableUndefined: Self = StObject.set(x, "requestedSourceTable", js.undefined)
   }
 }

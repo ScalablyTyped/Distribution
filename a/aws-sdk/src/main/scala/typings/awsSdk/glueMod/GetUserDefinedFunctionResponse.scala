@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetUserDefinedFunctionResponse extends js.Object {
+trait GetUserDefinedFunctionResponse extends StObject {
   
   /**
     * The requested function definition.
@@ -21,24 +22,12 @@ object GetUserDefinedFunctionResponse {
   }
   
   @scala.inline
-  implicit class GetUserDefinedFunctionResponseOps[Self <: GetUserDefinedFunctionResponse] (val x: Self) extends AnyVal {
+  implicit class GetUserDefinedFunctionResponseMutableBuilder[Self <: GetUserDefinedFunctionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUserDefinedFunction(value: UserDefinedFunction): Self = StObject.set(x, "UserDefinedFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUserDefinedFunction(value: UserDefinedFunction): Self = this.set("UserDefinedFunction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserDefinedFunction: Self = this.set("UserDefinedFunction", js.undefined)
+    def setUserDefinedFunctionUndefined: Self = StObject.set(x, "UserDefinedFunction", js.undefined)
   }
 }

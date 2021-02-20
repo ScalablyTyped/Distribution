@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.OauthAuthorizationsGetAuthorizationEndp
 import typings.octokitTypes.endpointsMod.OauthAuthorizationsGetAuthorizationRequestOptions
 import typings.octokitTypes.endpointsMod.OauthAuthorizationsGetAuthorizationResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersOauthAuthorizationsGetAuthorizationEndpoint extends js.Object {
+trait ParametersOauthAuthorizationsGetAuthorizationEndpoint extends StObject {
   
   var parameters: OauthAuthorizationsGetAuthorizationEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersOauthAuthorizationsGetAuthorizationEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersOauthAuthorizationsGetAuthorizationEndpointOps[Self <: ParametersOauthAuthorizationsGetAuthorizationEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersOauthAuthorizationsGetAuthorizationEndpointMutableBuilder[Self <: ParametersOauthAuthorizationsGetAuthorizationEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: OauthAuthorizationsGetAuthorizationEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: OauthAuthorizationsGetAuthorizationRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: OauthAuthorizationsGetAuthorizationEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: OauthAuthorizationsGetAuthorizationRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[OauthAuthorizationsGetAuthorizationResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[OauthAuthorizationsGetAuthorizationResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

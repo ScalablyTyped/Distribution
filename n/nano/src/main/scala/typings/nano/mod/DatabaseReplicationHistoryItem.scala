@@ -1,12 +1,13 @@
 package typings.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/server/common.html#post--_replicate
 @js.native
-trait DatabaseReplicationHistoryItem extends js.Object {
+trait DatabaseReplicationHistoryItem extends StObject {
   
   // Number of document write failures
   var doc_write_failures: Double = js.native
@@ -62,51 +63,39 @@ object DatabaseReplicationHistoryItem {
   }
   
   @scala.inline
-  implicit class DatabaseReplicationHistoryItemOps[Self <: DatabaseReplicationHistoryItem] (val x: Self) extends AnyVal {
+  implicit class DatabaseReplicationHistoryItemMutableBuilder[Self <: DatabaseReplicationHistoryItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDoc_write_failures(value: Double): Self = StObject.set(x, "doc_write_failures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocs_read(value: Double): Self = StObject.set(x, "docs_read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocs_written(value: Double): Self = StObject.set(x, "docs_written", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoc_write_failures(value: Double): Self = this.set("doc_write_failures", value.asInstanceOf[js.Any])
+    def setEnd_last_seq(value: Double): Self = StObject.set(x, "end_last_seq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocs_read(value: Double): Self = this.set("docs_read", value.asInstanceOf[js.Any])
+    def setEnd_time(value: String): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocs_written(value: Double): Self = this.set("docs_written", value.asInstanceOf[js.Any])
+    def setMissing_checked(value: Double): Self = StObject.set(x, "missing_checked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_last_seq(value: Double): Self = this.set("end_last_seq", value.asInstanceOf[js.Any])
+    def setMissing_found(value: Double): Self = StObject.set(x, "missing_found", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_time(value: String): Self = this.set("end_time", value.asInstanceOf[js.Any])
+    def setRecorded_seq(value: Double): Self = StObject.set(x, "recorded_seq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMissing_checked(value: Double): Self = this.set("missing_checked", value.asInstanceOf[js.Any])
+    def setSession_id(value: String): Self = StObject.set(x, "session_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMissing_found(value: Double): Self = this.set("missing_found", value.asInstanceOf[js.Any])
+    def setStart_last_seq(value: Double): Self = StObject.set(x, "start_last_seq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecorded_seq(value: Double): Self = this.set("recorded_seq", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSession_id(value: String): Self = this.set("session_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart_last_seq(value: Double): Self = this.set("start_last_seq", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart_time(value: String): Self = this.set("start_time", value.asInstanceOf[js.Any])
+    def setStart_time(value: String): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
   }
 }

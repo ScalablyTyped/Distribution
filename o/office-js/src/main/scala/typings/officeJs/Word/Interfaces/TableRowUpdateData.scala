@@ -11,13 +11,14 @@ import typings.officeJs.officeJsStrings.Mixed
 import typings.officeJs.officeJsStrings.Right
 import typings.officeJs.officeJsStrings.Top
 import typings.officeJs.officeJsStrings.Unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the TableRow object, for use in `tableRow.set({ ... })`. */
 @js.native
-trait TableRowUpdateData extends js.Object {
+trait TableRowUpdateData extends StObject {
   
   /**
     *
@@ -76,57 +77,45 @@ object TableRowUpdateData {
   }
   
   @scala.inline
-  implicit class TableRowUpdateDataOps[Self <: TableRowUpdateData] (val x: Self) extends AnyVal {
+  implicit class TableRowUpdateDataMutableBuilder[Self <: TableRowUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFont(value: FontUpdateData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHorizontalAlignment(value: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: FontUpdateData): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setPreferredHeight(value: Double): Self = StObject.set(x, "preferredHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalAlignment(value: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified): Self = this.set("horizontalAlignment", value.asInstanceOf[js.Any])
+    def setPreferredHeightUndefined: Self = StObject.set(x, "preferredHeight", js.undefined)
     
     @scala.inline
-    def deleteHorizontalAlignment: Self = this.set("horizontalAlignment", js.undefined)
+    def setShadingColor(value: String): Self = StObject.set(x, "shadingColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredHeight(value: Double): Self = this.set("preferredHeight", value.asInstanceOf[js.Any])
+    def setShadingColorUndefined: Self = StObject.set(x, "shadingColor", js.undefined)
     
     @scala.inline
-    def deletePreferredHeight: Self = this.set("preferredHeight", js.undefined)
+    def setValues(value: js.Array[js.Array[String]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadingColor(value: String): Self = this.set("shadingColor", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deleteShadingColor: Self = this.set("shadingColor", js.undefined)
+    def setValuesVarargs(value: js.Array[String]*): Self = StObject.set(x, "values", js.Array(value :_*))
     
     @scala.inline
-    def setValuesVarargs(value: js.Array[String]*): Self = this.set("values", js.Array(value :_*))
+    def setVerticalAlignment(value: VerticalAlignment | Mixed | Top | Center | Bottom): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValues(value: js.Array[js.Array[String]]): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
-    
-    @scala.inline
-    def setVerticalAlignment(value: VerticalAlignment | Mixed | Top | Center | Bottom): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalAlignment: Self = this.set("verticalAlignment", js.undefined)
+    def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
   }
 }

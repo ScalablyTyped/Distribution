@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AvailabilityZone extends js.Object {
+trait AvailabilityZone extends StObject {
   
   /**
     *  For Availability Zones, this parameter has the same value as the Region name. For Local Zones, the name of the associated group, for example us-west-2-lax-1. For Wavelength Zones, the name of the associated group, for example us-east-1-wl1-bos-wlz-1.
@@ -71,87 +72,75 @@ object AvailabilityZone {
   }
   
   @scala.inline
-  implicit class AvailabilityZoneOps[Self <: AvailabilityZone] (val x: Self) extends AnyVal {
+  implicit class AvailabilityZoneMutableBuilder[Self <: AvailabilityZone] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessages(value: AvailabilityZoneMessageList): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupName(value: String): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "Messages", js.undefined)
     
     @scala.inline
-    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+    def setMessagesVarargs(value: AvailabilityZoneMessage*): Self = StObject.set(x, "Messages", js.Array(value :_*))
     
     @scala.inline
-    def setMessagesVarargs(value: AvailabilityZoneMessage*): Self = this.set("Messages", js.Array(value :_*))
+    def setNetworkBorderGroup(value: String): Self = StObject.set(x, "NetworkBorderGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: AvailabilityZoneMessageList): Self = this.set("Messages", value.asInstanceOf[js.Any])
+    def setNetworkBorderGroupUndefined: Self = StObject.set(x, "NetworkBorderGroup", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("Messages", js.undefined)
+    def setOptInStatus(value: AvailabilityZoneOptInStatus): Self = StObject.set(x, "OptInStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkBorderGroup(value: String): Self = this.set("NetworkBorderGroup", value.asInstanceOf[js.Any])
+    def setOptInStatusUndefined: Self = StObject.set(x, "OptInStatus", js.undefined)
     
     @scala.inline
-    def deleteNetworkBorderGroup: Self = this.set("NetworkBorderGroup", js.undefined)
+    def setParentZoneId(value: String): Self = StObject.set(x, "ParentZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptInStatus(value: AvailabilityZoneOptInStatus): Self = this.set("OptInStatus", value.asInstanceOf[js.Any])
+    def setParentZoneIdUndefined: Self = StObject.set(x, "ParentZoneId", js.undefined)
     
     @scala.inline
-    def deleteOptInStatus: Self = this.set("OptInStatus", js.undefined)
+    def setParentZoneName(value: String): Self = StObject.set(x, "ParentZoneName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentZoneId(value: String): Self = this.set("ParentZoneId", value.asInstanceOf[js.Any])
+    def setParentZoneNameUndefined: Self = StObject.set(x, "ParentZoneName", js.undefined)
     
     @scala.inline
-    def deleteParentZoneId: Self = this.set("ParentZoneId", js.undefined)
+    def setRegionName(value: String): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentZoneName(value: String): Self = this.set("ParentZoneName", value.asInstanceOf[js.Any])
+    def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
     
     @scala.inline
-    def deleteParentZoneName: Self = this.set("ParentZoneName", js.undefined)
+    def setState(value: AvailabilityZoneState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegionName(value: String): Self = this.set("RegionName", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteRegionName: Self = this.set("RegionName", js.undefined)
+    def setZoneId(value: String): Self = StObject.set(x, "ZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: AvailabilityZoneState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setZoneIdUndefined: Self = StObject.set(x, "ZoneId", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setZoneName(value: String): Self = StObject.set(x, "ZoneName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoneId(value: String): Self = this.set("ZoneId", value.asInstanceOf[js.Any])
+    def setZoneNameUndefined: Self = StObject.set(x, "ZoneName", js.undefined)
     
     @scala.inline
-    def deleteZoneId: Self = this.set("ZoneId", js.undefined)
+    def setZoneType(value: String): Self = StObject.set(x, "ZoneType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoneName(value: String): Self = this.set("ZoneName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoneName: Self = this.set("ZoneName", js.undefined)
-    
-    @scala.inline
-    def setZoneType(value: String): Self = this.set("ZoneType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoneType: Self = this.set("ZoneType", js.undefined)
+    def setZoneTypeUndefined: Self = StObject.set(x, "ZoneType", js.undefined)
   }
 }

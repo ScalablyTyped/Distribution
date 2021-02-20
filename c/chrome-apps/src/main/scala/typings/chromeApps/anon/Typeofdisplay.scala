@@ -10,12 +10,13 @@ import typings.chromeApps.chrome.system.display.Insets
 import typings.chromeApps.chrome.system.display.MirrorModeInfo
 import typings.chromeApps.chrome.system.display.MirrorModeInfoMixed
 import typings.chromeApps.chrome.system.display.TouchCalibrationPairs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofdisplay extends js.Object {
+trait Typeofdisplay extends StObject {
   
   val DisplayPosition: BOTTOM = js.native
   

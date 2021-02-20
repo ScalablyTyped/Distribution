@@ -3,6 +3,7 @@ package typings.html5plus
 import typings.html5plus.html5plusStrings.close
 import typings.html5plus.html5plusStrings.hide
 import typings.html5plus.html5plusStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
 @js.native
-trait PlusWebviewWebviewAnimationOptions extends js.Object {
+trait PlusWebviewWebviewAnimationOptions extends StObject {
   
   /**
     * 窗口动画完成后的行为
@@ -56,36 +57,24 @@ object PlusWebviewWebviewAnimationOptions {
   }
   
   @scala.inline
-  implicit class PlusWebviewWebviewAnimationOptionsOps[Self <: PlusWebviewWebviewAnimationOptions] (val x: Self) extends AnyVal {
+  implicit class PlusWebviewWebviewAnimationOptionsMutableBuilder[Self <: PlusWebviewWebviewAnimationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: none | hide | close): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStyles(value: PlusWebviewWebviewAnimationStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: none | hide | close): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setView(value: PlusWebviewWebviewObject): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: PlusWebviewWebviewAnimationStyles): Self = this.set("styles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
-    
-    @scala.inline
-    def setView(value: PlusWebviewWebviewObject): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

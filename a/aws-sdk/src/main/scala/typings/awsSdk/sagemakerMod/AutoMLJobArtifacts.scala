@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoMLJobArtifacts extends js.Object {
+trait AutoMLJobArtifacts extends StObject {
   
   /**
     * The URL to the notebook location.
@@ -26,30 +27,18 @@ object AutoMLJobArtifacts {
   }
   
   @scala.inline
-  implicit class AutoMLJobArtifactsOps[Self <: AutoMLJobArtifacts] (val x: Self) extends AnyVal {
+  implicit class AutoMLJobArtifactsMutableBuilder[Self <: AutoMLJobArtifacts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCandidateDefinitionNotebookLocation(value: CandidateDefinitionNotebookLocation): Self = StObject.set(x, "CandidateDefinitionNotebookLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCandidateDefinitionNotebookLocationUndefined: Self = StObject.set(x, "CandidateDefinitionNotebookLocation", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataExplorationNotebookLocation(value: DataExplorationNotebookLocation): Self = StObject.set(x, "DataExplorationNotebookLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCandidateDefinitionNotebookLocation(value: CandidateDefinitionNotebookLocation): Self = this.set("CandidateDefinitionNotebookLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCandidateDefinitionNotebookLocation: Self = this.set("CandidateDefinitionNotebookLocation", js.undefined)
-    
-    @scala.inline
-    def setDataExplorationNotebookLocation(value: DataExplorationNotebookLocation): Self = this.set("DataExplorationNotebookLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataExplorationNotebookLocation: Self = this.set("DataExplorationNotebookLocation", js.undefined)
+    def setDataExplorationNotebookLocationUndefined: Self = StObject.set(x, "DataExplorationNotebookLocation", js.undefined)
   }
 }

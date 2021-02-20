@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PatchRuleGroup extends js.Object {
+trait PatchRuleGroup extends StObject {
   
   /**
     * The rules that make up the rule group.
@@ -21,24 +22,12 @@ object PatchRuleGroup {
   }
   
   @scala.inline
-  implicit class PatchRuleGroupOps[Self <: PatchRuleGroup] (val x: Self) extends AnyVal {
+  implicit class PatchRuleGroupMutableBuilder[Self <: PatchRuleGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPatchRules(value: PatchRuleList): Self = StObject.set(x, "PatchRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPatchRulesVarargs(value: PatchRule*): Self = this.set("PatchRules", js.Array(value :_*))
-    
-    @scala.inline
-    def setPatchRules(value: PatchRuleList): Self = this.set("PatchRules", value.asInstanceOf[js.Any])
+    def setPatchRulesVarargs(value: PatchRule*): Self = StObject.set(x, "PatchRules", js.Array(value :_*))
   }
 }

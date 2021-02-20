@@ -1,11 +1,12 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollectionTraversing extends js.Object {
+trait CollectionTraversing extends StObject {
   
   /**
     * Get the closed neighbourhood of the elements.

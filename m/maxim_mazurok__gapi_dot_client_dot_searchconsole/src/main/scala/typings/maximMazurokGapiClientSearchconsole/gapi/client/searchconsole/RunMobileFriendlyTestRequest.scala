@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RunMobileFriendlyTestRequest extends js.Object {
+trait RunMobileFriendlyTestRequest extends StObject {
   
   /** Whether or not screenshot is requested. Default is false. */
   var requestScreenshot: js.UndefOr[Boolean] = js.native
@@ -22,30 +23,18 @@ object RunMobileFriendlyTestRequest {
   }
   
   @scala.inline
-  implicit class RunMobileFriendlyTestRequestOps[Self <: RunMobileFriendlyTestRequest] (val x: Self) extends AnyVal {
+  implicit class RunMobileFriendlyTestRequestMutableBuilder[Self <: RunMobileFriendlyTestRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequestScreenshot(value: Boolean): Self = StObject.set(x, "requestScreenshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequestScreenshotUndefined: Self = StObject.set(x, "requestScreenshot", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestScreenshot(value: Boolean): Self = this.set("requestScreenshot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestScreenshot: Self = this.set("requestScreenshot", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

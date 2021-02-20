@@ -1,11 +1,12 @@
 package typings.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SieveFilterOptions extends js.Object {
+trait SieveFilterOptions extends StObject {
   
   var connectedness: js.UndefOr[Double] = js.native
   
@@ -26,39 +27,27 @@ object SieveFilterOptions {
   }
   
   @scala.inline
-  implicit class SieveFilterOptionsOps[Self <: SieveFilterOptions] (val x: Self) extends AnyVal {
+  implicit class SieveFilterOptionsMutableBuilder[Self <: SieveFilterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectedness(value: Double): Self = StObject.set(x, "connectedness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectednessUndefined: Self = StObject.set(x, "connectedness", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDst(value: RasterBand): Self = StObject.set(x, "dst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDst(value: RasterBand): Self = this.set("dst", value.asInstanceOf[js.Any])
+    def setMask(value: RasterBand): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: RasterBand): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
     @scala.inline
-    def setThreshold(value: Double): Self = this.set("threshold", value.asInstanceOf[js.Any])
+    def setSrc(value: RasterBand): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectedness(value: Double): Self = this.set("connectedness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnectedness: Self = this.set("connectedness", js.undefined)
-    
-    @scala.inline
-    def setMask(value: RasterBand): Self = this.set("mask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMask: Self = this.set("mask", js.undefined)
+    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
   }
 }

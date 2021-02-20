@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PresetWatermark extends js.Object {
+trait PresetWatermark extends StObject {
   
   /**
     * The horizontal position of the watermark unless you specify a non-zero value for HorizontalOffset:     Left: The left edge of the watermark is aligned with the left border of the video.    Right: The right edge of the watermark is aligned with the right border of the video.    Center: The watermark is centered between the left and right borders.  
@@ -66,78 +67,66 @@ object PresetWatermark {
   }
   
   @scala.inline
-  implicit class PresetWatermarkOps[Self <: PresetWatermark] (val x: Self) extends AnyVal {
+  implicit class PresetWatermarkMutableBuilder[Self <: PresetWatermark] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHorizontalAlign(value: HorizontalAlign): Self = StObject.set(x, "HorizontalAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHorizontalAlignUndefined: Self = StObject.set(x, "HorizontalAlign", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHorizontalOffset(value: PixelsOrPercent): Self = StObject.set(x, "HorizontalOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalAlign(value: HorizontalAlign): Self = this.set("HorizontalAlign", value.asInstanceOf[js.Any])
+    def setHorizontalOffsetUndefined: Self = StObject.set(x, "HorizontalOffset", js.undefined)
     
     @scala.inline
-    def deleteHorizontalAlign: Self = this.set("HorizontalAlign", js.undefined)
+    def setId(value: PresetWatermarkId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalOffset(value: PixelsOrPercent): Self = this.set("HorizontalOffset", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteHorizontalOffset: Self = this.set("HorizontalOffset", js.undefined)
+    def setMaxHeight(value: PixelsOrPercent): Self = StObject.set(x, "MaxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: PresetWatermarkId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setMaxHeightUndefined: Self = StObject.set(x, "MaxHeight", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setMaxWidth(value: PixelsOrPercent): Self = StObject.set(x, "MaxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHeight(value: PixelsOrPercent): Self = this.set("MaxHeight", value.asInstanceOf[js.Any])
+    def setMaxWidthUndefined: Self = StObject.set(x, "MaxWidth", js.undefined)
     
     @scala.inline
-    def deleteMaxHeight: Self = this.set("MaxHeight", js.undefined)
+    def setOpacity(value: Opacity): Self = StObject.set(x, "Opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWidth(value: PixelsOrPercent): Self = this.set("MaxWidth", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "Opacity", js.undefined)
     
     @scala.inline
-    def deleteMaxWidth: Self = this.set("MaxWidth", js.undefined)
+    def setSizingPolicy(value: WatermarkSizingPolicy): Self = StObject.set(x, "SizingPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Opacity): Self = this.set("Opacity", value.asInstanceOf[js.Any])
+    def setSizingPolicyUndefined: Self = StObject.set(x, "SizingPolicy", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("Opacity", js.undefined)
+    def setTarget(value: Target): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizingPolicy(value: WatermarkSizingPolicy): Self = this.set("SizingPolicy", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "Target", js.undefined)
     
     @scala.inline
-    def deleteSizingPolicy: Self = this.set("SizingPolicy", js.undefined)
+    def setVerticalAlign(value: VerticalAlign): Self = StObject.set(x, "VerticalAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: Target): Self = this.set("Target", value.asInstanceOf[js.Any])
+    def setVerticalAlignUndefined: Self = StObject.set(x, "VerticalAlign", js.undefined)
     
     @scala.inline
-    def deleteTarget: Self = this.set("Target", js.undefined)
+    def setVerticalOffset(value: PixelsOrPercent): Self = StObject.set(x, "VerticalOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalAlign(value: VerticalAlign): Self = this.set("VerticalAlign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalAlign: Self = this.set("VerticalAlign", js.undefined)
-    
-    @scala.inline
-    def setVerticalOffset(value: PixelsOrPercent): Self = this.set("VerticalOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalOffset: Self = this.set("VerticalOffset", js.undefined)
+    def setVerticalOffsetUndefined: Self = StObject.set(x, "VerticalOffset", js.undefined)
   }
 }

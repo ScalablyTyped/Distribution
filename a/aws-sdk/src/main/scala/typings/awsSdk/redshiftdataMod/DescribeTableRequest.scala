@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftdataMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTableRequest extends js.Object {
+trait DescribeTableRequest extends StObject {
   
   /**
     * The cluster identifier. This parameter is required when authenticating using either AWS Secrets Manager or temporary credentials. 
@@ -56,63 +57,51 @@ object DescribeTableRequest {
   }
   
   @scala.inline
-  implicit class DescribeTableRequestOps[Self <: DescribeTableRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeTableRequestMutableBuilder[Self <: DescribeTableRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterIdentifier(value: Location): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatabase(value: String): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatabaseUndefined: Self = StObject.set(x, "Database", js.undefined)
     
     @scala.inline
-    def setClusterIdentifier(value: Location): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    def setDbUser(value: String): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabase(value: String): Self = this.set("Database", value.asInstanceOf[js.Any])
+    def setDbUserUndefined: Self = StObject.set(x, "DbUser", js.undefined)
     
     @scala.inline
-    def deleteDatabase: Self = this.set("Database", js.undefined)
+    def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbUser(value: String): Self = this.set("DbUser", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteDbUser: Self = this.set("DbUser", js.undefined)
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: PageSize): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setSchema(value: String): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSchemaUndefined: Self = StObject.set(x, "Schema", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: String): Self = this.set("Schema", value.asInstanceOf[js.Any])
+    def setSecretArnUndefined: Self = StObject.set(x, "SecretArn", js.undefined)
     
     @scala.inline
-    def deleteSchema: Self = this.set("Schema", js.undefined)
+    def setTable(value: String): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretArn(value: SecretArn): Self = this.set("SecretArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecretArn: Self = this.set("SecretArn", js.undefined)
-    
-    @scala.inline
-    def setTable(value: String): Self = this.set("Table", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTable: Self = this.set("Table", js.undefined)
+    def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
   }
 }

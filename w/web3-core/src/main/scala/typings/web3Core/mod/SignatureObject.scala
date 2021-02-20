@@ -1,11 +1,12 @@
 package typings.web3Core.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignatureObject extends js.Object {
+trait SignatureObject extends StObject {
   
   var messageHash: String = js.native
   
@@ -24,30 +25,18 @@ object SignatureObject {
   }
   
   @scala.inline
-  implicit class SignatureObjectOps[Self <: SignatureObject] (val x: Self) extends AnyVal {
+  implicit class SignatureObjectMutableBuilder[Self <: SignatureObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessageHash(value: String): Self = StObject.set(x, "messageHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setR(value: String): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageHash(value: String): Self = this.set("messageHash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setR(value: String): Self = this.set("r", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setS(value: String): Self = this.set("s", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setV(value: String): Self = this.set("v", value.asInstanceOf[js.Any])
+    def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
   }
 }

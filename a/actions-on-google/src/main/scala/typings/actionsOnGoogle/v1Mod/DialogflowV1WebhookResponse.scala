@@ -1,12 +1,13 @@
 package typings.actionsOnGoogle.v1Mod
 
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DialogflowV1WebhookResponse extends js.Object {
+trait DialogflowV1WebhookResponse extends StObject {
   
   var contextOut: js.UndefOr[js.Array[DialogflowV1Context]] = js.native
   
@@ -31,66 +32,54 @@ object DialogflowV1WebhookResponse {
   }
   
   @scala.inline
-  implicit class DialogflowV1WebhookResponseOps[Self <: DialogflowV1WebhookResponse] (val x: Self) extends AnyVal {
+  implicit class DialogflowV1WebhookResponseMutableBuilder[Self <: DialogflowV1WebhookResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContextOut(value: js.Array[DialogflowV1Context]): Self = StObject.set(x, "contextOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextOutUndefined: Self = StObject.set(x, "contextOut", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextOutVarargs(value: DialogflowV1Context*): Self = StObject.set(x, "contextOut", js.Array(value :_*))
     
     @scala.inline
-    def setContextOutVarargs(value: DialogflowV1Context*): Self = this.set("contextOut", js.Array(value :_*))
+    def setData(value: ApiClientObjectMap[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextOut(value: js.Array[DialogflowV1Context]): Self = this.set("contextOut", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteContextOut: Self = this.set("contextOut", js.undefined)
+    def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: ApiClientObjectMap[_]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDisplayTextUndefined: Self = StObject.set(x, "displayText", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setFollowupEvent(value: DialogflowV1FollowupEvent): Self = StObject.set(x, "followupEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayText(value: String): Self = this.set("displayText", value.asInstanceOf[js.Any])
+    def setFollowupEventUndefined: Self = StObject.set(x, "followupEvent", js.undefined)
     
     @scala.inline
-    def deleteDisplayText: Self = this.set("displayText", js.undefined)
+    def setMessages(value: js.Array[DialogflowV1Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowupEvent(value: DialogflowV1FollowupEvent): Self = this.set("followupEvent", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteFollowupEvent: Self = this.set("followupEvent", js.undefined)
+    def setMessagesVarargs(value: DialogflowV1Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
     @scala.inline
-    def setMessagesVarargs(value: DialogflowV1Message*): Self = this.set("messages", js.Array(value :_*))
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: js.Array[DialogflowV1Message]): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setSpeech(value: String): Self = StObject.set(x, "speech", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setSpeech(value: String): Self = this.set("speech", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpeech: Self = this.set("speech", js.undefined)
+    def setSpeechUndefined: Self = StObject.set(x, "speech", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.servicediscoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DnsProperties extends js.Object {
+trait DnsProperties extends StObject {
   
   /**
     * The ID for the Route 53 hosted zone that AWS Cloud Map creates when you create a namespace.
@@ -21,24 +22,12 @@ object DnsProperties {
   }
   
   @scala.inline
-  implicit class DnsPropertiesOps[Self <: DnsProperties] (val x: Self) extends AnyVal {
+  implicit class DnsPropertiesMutableBuilder[Self <: DnsProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = this.set("HostedZoneId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHostedZoneId: Self = this.set("HostedZoneId", js.undefined)
+    def setHostedZoneIdUndefined: Self = StObject.set(x, "HostedZoneId", js.undefined)
   }
 }

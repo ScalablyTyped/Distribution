@@ -1,5 +1,6 @@
 package typings.coinbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.coinbase.coinbaseStrings.vault
   - typings.coinbase.coinbaseStrings.multisig_vault
 */
-trait AccountType extends js.Object
+trait AccountType extends StObject
 object AccountType {
   
   @scala.inline

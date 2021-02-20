@@ -8,6 +8,7 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,16 +31,20 @@ class InheritanceCase protected () extends CaseValue {
   
   def value_=(newValue: IEntity | Null): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.InheritanceCase")
-@js.native
-object InheritanceCase extends js.Object {
+object InheritanceCase {
+  
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.InheritanceCase")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new InheritanceCase instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.InheritanceCase.create")
+  @js.native
   def create(model: IModel): InheritanceCase = js.native
   
   /**
@@ -47,9 +52,22 @@ object InheritanceCase extends js.Object {
     * The new InheritanceCase will be automatically stored in the 'caseValue' property
     * of the parent SequenceFlow element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.InheritanceCase.createIn")
+  @js.native
   def createIn(container: SequenceFlow): InheritanceCase = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.InheritanceCase.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.InheritanceCase.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

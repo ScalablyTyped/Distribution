@@ -1,12 +1,13 @@
 package typings.devextreme.anon
 
 import typings.devextreme.mod.DevExpress.animationConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Animation extends js.Object {
+trait Animation extends StObject {
   
   var animation: js.UndefOr[animationConfig] = js.native
   
@@ -21,30 +22,18 @@ object Animation {
   }
   
   @scala.inline
-  implicit class AnimationOps[Self <: Animation] (val x: Self) extends AnyVal {
+  implicit class AnimationMutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: animationConfig): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDevice(value: typings.devextreme.mod.DevExpress.Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: animationConfig): Self = this.set("animation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
-    
-    @scala.inline
-    def setDevice(value: typings.devextreme.mod.DevExpress.Device): Self = this.set("device", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDevice: Self = this.set("device", js.undefined)
+    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
   }
 }

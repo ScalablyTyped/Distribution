@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @hidden
   **/
 @js.native
-trait InternalAbstractMeshDataInfo extends js.Object {
+trait InternalAbstractMeshDataInfo extends StObject {
   
   var _actAsRegularMesh: Boolean = js.native
   
@@ -69,75 +70,63 @@ object InternalAbstractMeshDataInfo {
   }
   
   @scala.inline
-  implicit class InternalAbstractMeshDataInfoOps[Self <: InternalAbstractMeshDataInfo] (val x: Self) extends AnyVal {
+  implicit class InternalAbstractMeshDataInfoMutableBuilder[Self <: InternalAbstractMeshDataInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set_actAsRegularMesh(value: Boolean): Self = StObject.set(x, "_actAsRegularMesh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_applyFog(value: Boolean): Self = StObject.set(x, "_applyFog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_computeBonesUsingShaders(value: Boolean): Self = StObject.set(x, "_computeBonesUsingShaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_actAsRegularMesh(value: Boolean): Self = this.set("_actAsRegularMesh", value.asInstanceOf[js.Any])
+    def set_currentLOD(value: Nullable[AbstractMesh]): Self = StObject.set(x, "_currentLOD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_applyFog(value: Boolean): Self = this.set("_applyFog", value.asInstanceOf[js.Any])
+    def set_currentLODIsUpToDate(value: Boolean): Self = StObject.set(x, "_currentLODIsUpToDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_computeBonesUsingShaders(value: Boolean): Self = this.set("_computeBonesUsingShaders", value.asInstanceOf[js.Any])
+    def set_currentLODNull: Self = StObject.set(x, "_currentLOD", null)
     
     @scala.inline
-    def set_currentLODIsUpToDate(value: Boolean): Self = this.set("_currentLODIsUpToDate", value.asInstanceOf[js.Any])
+    def set_facetData(value: FacetDataStorage): Self = StObject.set(x, "_facetData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_facetData(value: FacetDataStorage): Self = this.set("_facetData", value.asInstanceOf[js.Any])
+    def set_hasVertexAlpha(value: Boolean): Self = StObject.set(x, "_hasVertexAlpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_hasVertexAlpha(value: Boolean): Self = this.set("_hasVertexAlpha", value.asInstanceOf[js.Any])
+    def set_isActive(value: Boolean): Self = StObject.set(x, "_isActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_isActive(value: Boolean): Self = this.set("_isActive", value.asInstanceOf[js.Any])
+    def set_isActiveIntermediate(value: Boolean): Self = StObject.set(x, "_isActiveIntermediate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_isActiveIntermediate(value: Boolean): Self = this.set("_isActiveIntermediate", value.asInstanceOf[js.Any])
+    def set_layerMask(value: Double): Self = StObject.set(x, "_layerMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_layerMask(value: Double): Self = this.set("_layerMask", value.asInstanceOf[js.Any])
+    def set_numBoneInfluencers(value: Double): Self = StObject.set(x, "_numBoneInfluencers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_numBoneInfluencers(value: Double): Self = this.set("_numBoneInfluencers", value.asInstanceOf[js.Any])
+    def set_onlyForInstances(value: Boolean): Self = StObject.set(x, "_onlyForInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_onlyForInstances(value: Boolean): Self = this.set("_onlyForInstances", value.asInstanceOf[js.Any])
+    def set_onlyForInstancesIntermediate(value: Boolean): Self = StObject.set(x, "_onlyForInstancesIntermediate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_onlyForInstancesIntermediate(value: Boolean): Self = this.set("_onlyForInstancesIntermediate", value.asInstanceOf[js.Any])
+    def set_receiveShadows(value: Boolean): Self = StObject.set(x, "_receiveShadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_receiveShadows(value: Boolean): Self = this.set("_receiveShadows", value.asInstanceOf[js.Any])
+    def set_skeleton(value: Nullable[Skeleton]): Self = StObject.set(x, "_skeleton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_useVertexColors(value: Boolean): Self = this.set("_useVertexColors", value.asInstanceOf[js.Any])
+    def set_skeletonNull: Self = StObject.set(x, "_skeleton", null)
     
     @scala.inline
-    def set_visibility(value: Double): Self = this.set("_visibility", value.asInstanceOf[js.Any])
+    def set_useVertexColors(value: Boolean): Self = StObject.set(x, "_useVertexColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentLOD(value: Nullable[AbstractMesh]): Self = this.set("_currentLOD", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_currentLODNull: Self = this.set("_currentLOD", null)
-    
-    @scala.inline
-    def set_skeleton(value: Nullable[Skeleton]): Self = this.set("_skeleton", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_skeletonNull: Self = this.set("_skeleton", null)
+    def set_visibility(value: Double): Self = StObject.set(x, "_visibility", value.asInstanceOf[js.Any])
   }
 }

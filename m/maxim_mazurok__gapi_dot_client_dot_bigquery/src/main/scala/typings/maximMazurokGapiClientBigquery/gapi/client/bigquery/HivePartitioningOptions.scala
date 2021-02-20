@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HivePartitioningOptions extends js.Object {
+trait HivePartitioningOptions extends StObject {
   
   /**
     * [Optional] When set, what mode of hive partitioning to use when reading data. The following modes are supported. (1) AUTO: automatically infer partition key name(s) and type(s). (2)
@@ -37,36 +38,24 @@ object HivePartitioningOptions {
   }
   
   @scala.inline
-  implicit class HivePartitioningOptionsOps[Self <: HivePartitioningOptions] (val x: Self) extends AnyVal {
+  implicit class HivePartitioningOptionsMutableBuilder[Self <: HivePartitioningOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequirePartitionFilter(value: Boolean): Self = StObject.set(x, "requirePartitionFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setRequirePartitionFilterUndefined: Self = StObject.set(x, "requirePartitionFilter", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setSourceUriPrefix(value: String): Self = StObject.set(x, "sourceUriPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequirePartitionFilter(value: Boolean): Self = this.set("requirePartitionFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequirePartitionFilter: Self = this.set("requirePartitionFilter", js.undefined)
-    
-    @scala.inline
-    def setSourceUriPrefix(value: String): Self = this.set("sourceUriPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceUriPrefix: Self = this.set("sourceUriPrefix", js.undefined)
+    def setSourceUriPrefixUndefined: Self = StObject.set(x, "sourceUriPrefix", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeInterconnectLoaRequest extends js.Object {
+trait DescribeInterconnectLoaRequest extends StObject {
   
   /**
     * The ID of the interconnect.
@@ -31,33 +32,21 @@ object DescribeInterconnectLoaRequest {
   }
   
   @scala.inline
-  implicit class DescribeInterconnectLoaRequestOps[Self <: DescribeInterconnectLoaRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeInterconnectLoaRequestMutableBuilder[Self <: DescribeInterconnectLoaRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInterconnectId(value: InterconnectId): Self = StObject.set(x, "interconnectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoaContentType(value: LoaContentType): Self = StObject.set(x, "loaContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoaContentTypeUndefined: Self = StObject.set(x, "loaContentType", js.undefined)
     
     @scala.inline
-    def setInterconnectId(value: InterconnectId): Self = this.set("interconnectId", value.asInstanceOf[js.Any])
+    def setProviderName(value: ProviderName): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoaContentType(value: LoaContentType): Self = this.set("loaContentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoaContentType: Self = this.set("loaContentType", js.undefined)
-    
-    @scala.inline
-    def setProviderName(value: ProviderName): Self = this.set("providerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProviderName: Self = this.set("providerName", js.undefined)
+    def setProviderNameUndefined: Self = StObject.set(x, "providerName", js.undefined)
   }
 }

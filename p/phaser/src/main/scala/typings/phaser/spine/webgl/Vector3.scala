@@ -1,11 +1,12 @@
 package typings.phaser.spine.webgl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Vector3 extends js.Object {
+trait Vector3 extends StObject {
   
   def add(v: Vector3): Vector3 = js.native
   
@@ -62,63 +63,51 @@ object Vector3 {
   }
   
   @scala.inline
-  implicit class Vector3Ops[Self <: Vector3] (val x: Self) extends AnyVal {
+  implicit class Vector3MutableBuilder[Self <: Vector3] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: Vector3 => Vector3): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCross(value: Vector3 => Vector3): Self = StObject.set(x, "cross", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistance(value: Vector3 => Double): Self = StObject.set(x, "distance", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdd(value: Vector3 => Vector3): Self = this.set("add", js.Any.fromFunction1(value))
+    def setDot(value: Vector3 => Double): Self = StObject.set(x, "dot", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCross(value: Vector3 => Vector3): Self = this.set("cross", js.Any.fromFunction1(value))
+    def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDistance(value: Vector3 => Double): Self = this.set("distance", js.Any.fromFunction1(value))
+    def setMultiply(value: Matrix4 => Vector3): Self = StObject.set(x, "multiply", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDot(value: Vector3 => Double): Self = this.set("dot", js.Any.fromFunction1(value))
+    def setNormalize(value: () => Vector3): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLength(value: () => Double): Self = this.set("length", js.Any.fromFunction0(value))
+    def setProject(value: Matrix4 => Vector3): Self = StObject.set(x, "project", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMultiply(value: Matrix4 => Vector3): Self = this.set("multiply", js.Any.fromFunction1(value))
+    def setScale(value: Double => Vector3): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNormalize(value: () => Vector3): Self = this.set("normalize", js.Any.fromFunction0(value))
+    def setSet(value: (Double, Double, Double) => Vector3): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setProject(value: Matrix4 => Vector3): Self = this.set("project", js.Any.fromFunction1(value))
+    def setSetFrom(value: Vector3 => Vector3): Self = StObject.set(x, "setFrom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScale(value: Double => Vector3): Self = this.set("scale", js.Any.fromFunction1(value))
+    def setSub(value: Vector3 => Vector3): Self = StObject.set(x, "sub", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet(value: (Double, Double, Double) => Vector3): Self = this.set("set", js.Any.fromFunction3(value))
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetFrom(value: Vector3 => Vector3): Self = this.set("setFrom", js.Any.fromFunction1(value))
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSub(value: Vector3 => Vector3): Self = this.set("sub", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
   }
 }

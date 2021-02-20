@@ -1,6 +1,7 @@
 package typings.awsSdkClientLambdaNode
 
 import typings.awsSdkClientLambdaNode.lambdaClientMod.LambdaClient
+import typings.awsSdkClientLambdaNode.lambdaConfigurationMod.LambdaConfiguration
 import typings.awsSdkClientLambdaNode.typesAddPermissionInputMod.AddPermissionInput
 import typings.awsSdkClientLambdaNode.typesAddPermissionOutputMod.AddPermissionOutput
 import typings.awsSdkClientLambdaNode.typesCreateAliasInputMod.CreateAliasInput
@@ -62,16 +63,17 @@ import typings.awsSdkClientLambdaNode.typesUpdateFunctionCodeOutputMod.UpdateFun
 import typings.awsSdkClientLambdaNode.typesUpdateFunctionConfigurationInputMod.UpdateFunctionConfigurationInput
 import typings.awsSdkClientLambdaNode.typesUpdateFunctionConfigurationOutputMod.UpdateFunctionConfigurationOutput
 import typings.node.streamMod.Readable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/Lambda", JSImport.Namespace)
-@js.native
-object lambdaMod extends js.Object {
+object lambdaMod {
   
+  @JSImport("@aws-sdk/client-lambda-node/Lambda", "Lambda")
   @js.native
-  class Lambda () extends LambdaClient {
+  class Lambda protected () extends LambdaClient {
+    def this(configuration: LambdaConfiguration) = this()
     
     /**
       * <p>Adds a permission to the resource policy associated with the specified AWS Lambda function. You use resource policies to grant permissions to event sources that use the <i>push</i> model. In a <i>push</i> model, event sources (such as Amazon S3 and custom applications) invoke your Lambda function. Each permission you add to the resource policy allows an event source permission to invoke the Lambda function. </p> <p>Permissions apply to the Amazon Resource Name (ARN) used to invoke the function, which can be unqualified (the unpublished version of the function), or include a version or alias. If a client uses a version or alias to invoke a function, use the <code>Qualifier</code> parameter to apply permissions to that ARN. For more information about versioning, see <a href="http://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html">AWS Lambda Function Versioning and Aliases</a>. </p> <p>This operation requires permission for the <code>lambda:AddPermission</code> action.</p>

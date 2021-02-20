@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VoidedPurchase extends js.Object {
+trait VoidedPurchase extends StObject {
   
   /** This kind represents a voided purchase object in the androidpublisher service. */
   var kind: js.UndefOr[String] = js.native
@@ -37,60 +38,48 @@ object VoidedPurchase {
   }
   
   @scala.inline
-  implicit class VoidedPurchaseOps[Self <: VoidedPurchase] (val x: Self) extends AnyVal {
+  implicit class VoidedPurchaseMutableBuilder[Self <: VoidedPurchase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPurchaseTimeMillis(value: String): Self = StObject.set(x, "purchaseTimeMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderId(value: String): Self = this.set("orderId", value.asInstanceOf[js.Any])
+    def setPurchaseTimeMillisUndefined: Self = StObject.set(x, "purchaseTimeMillis", js.undefined)
     
     @scala.inline
-    def deleteOrderId: Self = this.set("orderId", js.undefined)
+    def setPurchaseToken(value: String): Self = StObject.set(x, "purchaseToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurchaseTimeMillis(value: String): Self = this.set("purchaseTimeMillis", value.asInstanceOf[js.Any])
+    def setPurchaseTokenUndefined: Self = StObject.set(x, "purchaseToken", js.undefined)
     
     @scala.inline
-    def deletePurchaseTimeMillis: Self = this.set("purchaseTimeMillis", js.undefined)
+    def setVoidedReason(value: Double): Self = StObject.set(x, "voidedReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurchaseToken(value: String): Self = this.set("purchaseToken", value.asInstanceOf[js.Any])
+    def setVoidedReasonUndefined: Self = StObject.set(x, "voidedReason", js.undefined)
     
     @scala.inline
-    def deletePurchaseToken: Self = this.set("purchaseToken", js.undefined)
+    def setVoidedSource(value: Double): Self = StObject.set(x, "voidedSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVoidedReason(value: Double): Self = this.set("voidedReason", value.asInstanceOf[js.Any])
+    def setVoidedSourceUndefined: Self = StObject.set(x, "voidedSource", js.undefined)
     
     @scala.inline
-    def deleteVoidedReason: Self = this.set("voidedReason", js.undefined)
+    def setVoidedTimeMillis(value: String): Self = StObject.set(x, "voidedTimeMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVoidedSource(value: Double): Self = this.set("voidedSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoidedSource: Self = this.set("voidedSource", js.undefined)
-    
-    @scala.inline
-    def setVoidedTimeMillis(value: String): Self = this.set("voidedTimeMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoidedTimeMillis: Self = this.set("voidedTimeMillis", js.undefined)
+    def setVoidedTimeMillisUndefined: Self = StObject.set(x, "voidedTimeMillis", js.undefined)
   }
 }

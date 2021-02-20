@@ -1,16 +1,14 @@
 package typings.sequelize.mod
 
 import org.scalablytyped.runtime.Instantiable4
-import typings.std.Error
-import typings.std.ErrorConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ValidationErrorItem
-  extends Error
-     with ErrorConstructor
+  extends BaseError
      with /**
   * Validation Error Item
   * Instances of this class are included in the `ValidationError.errors` property.

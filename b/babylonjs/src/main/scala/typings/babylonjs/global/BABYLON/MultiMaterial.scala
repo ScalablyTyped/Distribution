@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +20,7 @@ class MultiMaterial protected ()
   def this(name: String, scene: typings.babylonjs.BABYLON.Scene) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.MultiMaterial")
-@js.native
-object MultiMaterial extends js.Object {
+object MultiMaterial {
   
   /**
     * Creates a MultiMaterial from parsed MultiMaterial data.
@@ -29,5 +28,7 @@ object MultiMaterial extends js.Object {
     * @param scene defines the hosting scene
     * @returns a new MultiMaterial
     */
+  @JSGlobal("BABYLON.MultiMaterial.ParseMultiMaterial")
+  @js.native
   def ParseMultiMaterial(parsedMultiMaterial: js.Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.MultiMaterial = js.native
 }

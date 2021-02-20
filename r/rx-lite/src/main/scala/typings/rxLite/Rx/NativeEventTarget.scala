@@ -1,11 +1,12 @@
 package typings.rxLite.Rx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NativeEventTarget extends js.Object {
+trait NativeEventTarget extends StObject {
   
   def off(name: String, cb: js.Function1[/* e */ js.Any, _]): Unit = js.native
   
@@ -23,24 +24,12 @@ object NativeEventTarget {
   }
   
   @scala.inline
-  implicit class NativeEventTargetOps[Self <: NativeEventTarget] (val x: Self) extends AnyVal {
+  implicit class NativeEventTargetMutableBuilder[Self <: NativeEventTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOff(value: (String, js.Function1[/* e */ js.Any, _]) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOff(value: (String, js.Function1[/* e */ js.Any, _]) => Unit): Self = this.set("off", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setOn(value: (String, js.Function1[/* e */ js.Any, _]) => Unit): Self = this.set("on", js.Any.fromFunction2(value))
+    def setOn(value: (String, js.Function1[/* e */ js.Any, _]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
   }
 }

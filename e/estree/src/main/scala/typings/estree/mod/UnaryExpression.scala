@@ -1,6 +1,7 @@
 package typings.estree.mod
 
 import typings.estree.estreeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,30 +35,18 @@ object UnaryExpression {
   }
   
   @scala.inline
-  implicit class UnaryExpressionOps[Self <: UnaryExpression] (val x: Self) extends AnyVal {
+  implicit class UnaryExpressionMutableBuilder[Self <: UnaryExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperator(value: UnaryOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrefix(value: `true`): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgument(value: Expression): Self = this.set("argument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperator(value: UnaryOperator): Self = this.set("operator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrefix(value: `true`): Self = this.set("prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.UnaryExpression): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: typings.estree.estreeStrings.UnaryExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

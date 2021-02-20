@@ -1,7 +1,7 @@
 package typings.winjs.mod.UI
 
 import typings.std.HTMLElement
-import typings.winjs.anon.None
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,18 +23,57 @@ class ContentDialog ()
   def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
-/* static members */
-@JSImport("winjs", "UI.ContentDialog")
-@js.native
-object ContentDialog extends js.Object {
+object ContentDialog {
+  
+  @JSImport("winjs", "UI.ContentDialog")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Specifies the result of dismissing the ContentDialog.
     **/
-  var DismissalResult: None = js.native
+  /* static member */
+  object DismissalResult {
+    
+    @JSImport("winjs", "UI.ContentDialog.DismissalResult")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * The dialog was dismissed without the user selecting any of the commands. The user may have dismissed the dialog by hitting the escape key or pressing the hardware back button.
+      **/
+    @JSImport("winjs", "UI.ContentDialog.DismissalResult.none")
+    @js.native
+    def none: String = js.native
+    @scala.inline
+    def none_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+    
+    /**
+      * The user dismissed the dialog by pressing the primary command.
+      **/
+    @JSImport("winjs", "UI.ContentDialog.DismissalResult.primary")
+    @js.native
+    def primary: String = js.native
+    @scala.inline
+    def primary_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primary")(x.asInstanceOf[js.Any])
+    
+    /**
+      * The user dismissed the dialog by pressing the secondary command.
+      **/
+    @JSImport("winjs", "UI.ContentDialog.DismissalResult.secondary")
+    @js.native
+    def secondary: String = js.native
+    @scala.inline
+    def secondary_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondary")(x.asInstanceOf[js.Any])
+  }
   
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
-  var supportedForProcessing: Boolean = js.native
+  /* static member */
+  @JSImport("winjs", "UI.ContentDialog.supportedForProcessing")
+  @js.native
+  def supportedForProcessing: Boolean = js.native
+  @scala.inline
+  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }

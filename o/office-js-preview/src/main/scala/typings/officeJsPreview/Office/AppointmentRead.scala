@@ -4,6 +4,7 @@ import typings.officeJsPreview.Office.MailboxEnums.AppointmentSensitivityType
 import typings.officeJsPreview.Office.MailboxEnums.EntityType
 import typings.officeJsPreview.Office.MailboxEnums.ItemType
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

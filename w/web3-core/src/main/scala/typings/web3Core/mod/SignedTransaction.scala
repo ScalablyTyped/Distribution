@@ -1,11 +1,12 @@
 package typings.web3Core.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignedTransaction extends js.Object {
+trait SignedTransaction extends StObject {
   
   var messageHash: js.UndefOr[String] = js.native
   
@@ -28,45 +29,33 @@ object SignedTransaction {
   }
   
   @scala.inline
-  implicit class SignedTransactionOps[Self <: SignedTransaction] (val x: Self) extends AnyVal {
+  implicit class SignedTransactionMutableBuilder[Self <: SignedTransaction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessageHash(value: String): Self = StObject.set(x, "messageHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageHashUndefined: Self = StObject.set(x, "messageHash", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setR(value: String): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setR(value: String): Self = this.set("r", value.asInstanceOf[js.Any])
+    def setRawTransaction(value: String): Self = StObject.set(x, "rawTransaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS(value: String): Self = this.set("s", value.asInstanceOf[js.Any])
+    def setRawTransactionUndefined: Self = StObject.set(x, "rawTransaction", js.undefined)
     
     @scala.inline
-    def setV(value: String): Self = this.set("v", value.asInstanceOf[js.Any])
+    def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageHash(value: String): Self = this.set("messageHash", value.asInstanceOf[js.Any])
+    def setTransactionHash(value: String): Self = StObject.set(x, "transactionHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessageHash: Self = this.set("messageHash", js.undefined)
+    def setTransactionHashUndefined: Self = StObject.set(x, "transactionHash", js.undefined)
     
     @scala.inline
-    def setRawTransaction(value: String): Self = this.set("rawTransaction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRawTransaction: Self = this.set("rawTransaction", js.undefined)
-    
-    @scala.inline
-    def setTransactionHash(value: String): Self = this.set("transactionHash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransactionHash: Self = this.set("transactionHash", js.undefined)
+    def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
   }
 }

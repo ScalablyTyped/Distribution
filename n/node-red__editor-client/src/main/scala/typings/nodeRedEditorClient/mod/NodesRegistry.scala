@@ -1,12 +1,13 @@
 package typings.nodeRedEditorClient.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodesRegistry extends js.Object {
+trait NodesRegistry extends StObject {
   
   def addNodeSet(ns: js.Object): Unit = js.native
   
@@ -38,11 +39,7 @@ trait NodesRegistry extends js.Object {
     * @param def The node definition contains all of the information about the node
     * needed by the editor.
     */
-  def registerNodeType[TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */](
-    nt: String,
-     // tslint:disable-line:no-unnecessary-generics
-  `def`: NodeDef[TProps, TCreds, TInstProps]
-  ): Unit = js.native
+  def registerNodeType[TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */](nt: String, `def`: NodeDef[TProps, TCreds, TInstProps]): Unit = js.native
   
   def removeNodeSet[T /* <: js.Object */](ns: T): T = js.native
   
@@ -81,69 +78,57 @@ object NodesRegistry {
   }
   
   @scala.inline
-  implicit class NodesRegistryOps[Self <: NodesRegistry] (val x: Self) extends AnyVal {
+  implicit class NodesRegistryMutableBuilder[Self <: NodesRegistry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddNodeSet(value: js.Object => Unit): Self = StObject.set(x, "addNodeSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableNodeSet(value: String => Unit): Self = StObject.set(x, "disableNodeSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableNodeSet(value: String => Unit): Self = StObject.set(x, "enableNodeSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddNodeSet(value: js.Object => Unit): Self = this.set("addNodeSet", js.Any.fromFunction1(value))
+    def setGetIconSets(value: () => Record[String, js.Array[String]]): Self = StObject.set(x, "getIconSets", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisableNodeSet(value: String => Unit): Self = this.set("disableNodeSet", js.Any.fromFunction1(value))
+    def setGetModule(value: String => js.Object): Self = StObject.set(x, "getModule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnableNodeSet(value: String => Unit): Self = this.set("enableNodeSet", js.Any.fromFunction1(value))
+    def setGetModuleList(value: () => js.Object): Self = StObject.set(x, "getModuleList", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIconSets(value: () => Record[String, js.Array[String]]): Self = this.set("getIconSets", js.Any.fromFunction0(value))
+    def setGetNodeList(value: () => js.Array[js.Object]): Self = StObject.set(x, "getNodeList", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetModule(value: String => js.Object): Self = this.set("getModule", js.Any.fromFunction1(value))
+    def setGetNodeSet(value: String => js.Object): Self = StObject.set(x, "getNodeSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetModuleList(value: () => js.Object): Self = this.set("getModuleList", js.Any.fromFunction0(value))
+    def setGetNodeSetForType(value: String => js.Object): Self = StObject.set(x, "getNodeSetForType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNodeList(value: () => js.Array[js.Object]): Self = this.set("getNodeList", js.Any.fromFunction0(value))
+    def setGetNodeType(value: String => NodeDef[NodeProperties, js.UndefOr[scala.Nothing], NodeProperties]): Self = StObject.set(x, "getNodeType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNodeSet(value: String => js.Object): Self = this.set("getNodeSet", js.Any.fromFunction1(value))
+    def setGetNodeTypes(value: () => js.Array[String]): Self = StObject.set(x, "getNodeTypes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNodeSetForType(value: String => js.Object): Self = this.set("getNodeSetForType", js.Any.fromFunction1(value))
+    def setRegisterNodeType(value: (String, NodeDef[js.Any, js.Any, js.Any]) => Unit): Self = StObject.set(x, "registerNodeType", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetNodeType(value: String => NodeDef[NodeProperties, js.UndefOr[scala.Nothing], NodeProperties]): Self = this.set("getNodeType", js.Any.fromFunction1(value))
+    def setRemoveNodeSet(value: js.Any => js.Any): Self = StObject.set(x, "removeNodeSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNodeTypes(value: () => js.Array[String]): Self = this.set("getNodeTypes", js.Any.fromFunction0(value))
+    def setRemoveNodeType(value: String => Unit): Self = StObject.set(x, "removeNodeType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegisterNodeType(value: (String, NodeDef[js.Any, js.Any, js.Any]) => Unit): Self = this.set("registerNodeType", js.Any.fromFunction2(value))
+    def setSetIconSets(value: Record[String, js.Array[String]] => Unit): Self = StObject.set(x, "setIconSets", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveNodeSet(value: js.Any => js.Any): Self = this.set("removeNodeSet", js.Any.fromFunction1(value))
+    def setSetModulePendingUpdated(value: (String, String) => Unit): Self = StObject.set(x, "setModulePendingUpdated", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRemoveNodeType(value: String => Unit): Self = this.set("removeNodeType", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetIconSets(value: Record[String, js.Array[String]] => Unit): Self = this.set("setIconSets", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetModulePendingUpdated(value: (String, String) => Unit): Self = this.set("setModulePendingUpdated", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetNodeList(value: js.Array[js.Object] => Unit): Self = this.set("setNodeList", js.Any.fromFunction1(value))
+    def setSetNodeList(value: js.Array[js.Object] => Unit): Self = StObject.set(x, "setNodeList", js.Any.fromFunction1(value))
   }
 }

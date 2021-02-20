@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientFcm.gapi.client.fcm
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Message extends js.Object {
+trait Message extends StObject {
   
   /** Input only. Android specific options for messages sent through [FCM connection server](https://goo.gl/4GLdUl). */
   var android: js.UndefOr[AndroidConfig] = js.native
@@ -51,82 +52,70 @@ object Message {
   }
   
   @scala.inline
-  implicit class MessageOps[Self <: Message] (val x: Self) extends AnyVal {
+  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroid(value: AndroidConfig): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApns(value: ApnsConfig): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroid(value: AndroidConfig): Self = this.set("android", value.asInstanceOf[js.Any])
+    def setApnsUndefined: Self = StObject.set(x, "apns", js.undefined)
     
     @scala.inline
-    def deleteAndroid: Self = this.set("android", js.undefined)
+    def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApns(value: ApnsConfig): Self = this.set("apns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApns: Self = this.set("apns", js.undefined)
-    
-    @scala.inline
-    def setCondition(value: String): Self = this.set("condition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
     def setData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.Message with TopLevel[js.Any]
-    ): Self = this.set("data", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setFcmOptions(value: FcmOptions): Self = this.set("fcmOptions", value.asInstanceOf[js.Any])
+    def setFcmOptions(value: FcmOptions): Self = StObject.set(x, "fcmOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFcmOptions: Self = this.set("fcmOptions", js.undefined)
+    def setFcmOptionsUndefined: Self = StObject.set(x, "fcmOptions", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setNotification(value: Notification): Self = this.set("notification", value.asInstanceOf[js.Any])
+    def setNotification(value: Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotification: Self = this.set("notification", js.undefined)
+    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
     @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     
     @scala.inline
-    def setTopic(value: String): Self = this.set("topic", value.asInstanceOf[js.Any])
+    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTopic: Self = this.set("topic", js.undefined)
+    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     
     @scala.inline
-    def setWebpush(value: WebpushConfig): Self = this.set("webpush", value.asInstanceOf[js.Any])
+    def setWebpush(value: WebpushConfig): Self = StObject.set(x, "webpush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWebpush: Self = this.set("webpush", js.undefined)
+    def setWebpushUndefined: Self = StObject.set(x, "webpush", js.undefined)
   }
 }

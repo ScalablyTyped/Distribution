@@ -1,5 +1,6 @@
 package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a DNS certificate challenge.
   */
 @js.native
-trait SchemaCertDnsChallenge extends js.Object {
+trait SchemaCertDnsChallenge extends StObject {
   
   /**
     * The domain name upon which the DNS challenge must be satisfied.
@@ -30,30 +31,18 @@ object SchemaCertDnsChallenge {
   }
   
   @scala.inline
-  implicit class SchemaCertDnsChallengeOps[Self <: SchemaCertDnsChallenge] (val x: Self) extends AnyVal {
+  implicit class SchemaCertDnsChallengeMutableBuilder[Self <: SchemaCertDnsChallenge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: String): Self = this.set("domainName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomainName: Self = this.set("domainName", js.undefined)
-    
-    @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

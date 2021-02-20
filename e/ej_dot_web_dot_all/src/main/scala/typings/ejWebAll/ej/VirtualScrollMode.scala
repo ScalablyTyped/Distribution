@@ -1,14 +1,15 @@
 package typings.ejWebAll.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VirtualScrollMode extends js.Object
+sealed trait VirtualScrollMode extends StObject
 @JSGlobal("ej.VirtualScrollMode")
 @js.native
-object VirtualScrollMode extends js.Object {
+object VirtualScrollMode extends StObject {
   
   //The data items are loaded from the remote when scroll handle reaches the end of the scrollbar like infinity scrolling.
   @js.native

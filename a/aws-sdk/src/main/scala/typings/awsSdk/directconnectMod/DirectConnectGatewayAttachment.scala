@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectConnectGatewayAttachment extends js.Object {
+trait DirectConnectGatewayAttachment extends StObject {
   
   /**
     * The state of the attachment. The following are the possible values:    attaching: The initial state after a virtual interface is created using the Direct Connect gateway.    attached: The Direct Connect gateway and virtual interface are attached and ready to pass traffic.    detaching: The initial state after calling DeleteVirtualInterface.    detached: The virtual interface is detached from the Direct Connect gateway. Traffic flow between the Direct Connect gateway and virtual interface is stopped.  
@@ -51,60 +52,48 @@ object DirectConnectGatewayAttachment {
   }
   
   @scala.inline
-  implicit class DirectConnectGatewayAttachmentOps[Self <: DirectConnectGatewayAttachment] (val x: Self) extends AnyVal {
+  implicit class DirectConnectGatewayAttachmentMutableBuilder[Self <: DirectConnectGatewayAttachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachmentState(value: DirectConnectGatewayAttachmentState): Self = StObject.set(x, "attachmentState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentStateUndefined: Self = StObject.set(x, "attachmentState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachmentType(value: DirectConnectGatewayAttachmentType): Self = StObject.set(x, "attachmentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentState(value: DirectConnectGatewayAttachmentState): Self = this.set("attachmentState", value.asInstanceOf[js.Any])
+    def setAttachmentTypeUndefined: Self = StObject.set(x, "attachmentType", js.undefined)
     
     @scala.inline
-    def deleteAttachmentState: Self = this.set("attachmentState", js.undefined)
+    def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = StObject.set(x, "directConnectGatewayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentType(value: DirectConnectGatewayAttachmentType): Self = this.set("attachmentType", value.asInstanceOf[js.Any])
+    def setDirectConnectGatewayIdUndefined: Self = StObject.set(x, "directConnectGatewayId", js.undefined)
     
     @scala.inline
-    def deleteAttachmentType: Self = this.set("attachmentType", js.undefined)
+    def setStateChangeError(value: StateChangeError): Self = StObject.set(x, "stateChangeError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = this.set("directConnectGatewayId", value.asInstanceOf[js.Any])
+    def setStateChangeErrorUndefined: Self = StObject.set(x, "stateChangeError", js.undefined)
     
     @scala.inline
-    def deleteDirectConnectGatewayId: Self = this.set("directConnectGatewayId", js.undefined)
+    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateChangeError(value: StateChangeError): Self = this.set("stateChangeError", value.asInstanceOf[js.Any])
+    def setVirtualInterfaceIdUndefined: Self = StObject.set(x, "virtualInterfaceId", js.undefined)
     
     @scala.inline
-    def deleteStateChangeError: Self = this.set("stateChangeError", js.undefined)
+    def setVirtualInterfaceOwnerAccount(value: OwnerAccount): Self = StObject.set(x, "virtualInterfaceOwnerAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = this.set("virtualInterfaceId", value.asInstanceOf[js.Any])
+    def setVirtualInterfaceOwnerAccountUndefined: Self = StObject.set(x, "virtualInterfaceOwnerAccount", js.undefined)
     
     @scala.inline
-    def deleteVirtualInterfaceId: Self = this.set("virtualInterfaceId", js.undefined)
+    def setVirtualInterfaceRegion(value: VirtualInterfaceRegion): Self = StObject.set(x, "virtualInterfaceRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualInterfaceOwnerAccount(value: OwnerAccount): Self = this.set("virtualInterfaceOwnerAccount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualInterfaceOwnerAccount: Self = this.set("virtualInterfaceOwnerAccount", js.undefined)
-    
-    @scala.inline
-    def setVirtualInterfaceRegion(value: VirtualInterfaceRegion): Self = this.set("virtualInterfaceRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualInterfaceRegion: Self = this.set("virtualInterfaceRegion", js.undefined)
+    def setVirtualInterfaceRegionUndefined: Self = StObject.set(x, "virtualInterfaceRegion", js.undefined)
   }
 }

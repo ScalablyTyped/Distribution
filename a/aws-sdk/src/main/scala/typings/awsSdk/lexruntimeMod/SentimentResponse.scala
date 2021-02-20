@@ -1,11 +1,12 @@
 package typings.awsSdk.lexruntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SentimentResponse extends js.Object {
+trait SentimentResponse extends StObject {
   
   /**
     * The inferred sentiment that Amazon Comprehend has the highest confidence in.
@@ -26,30 +27,18 @@ object SentimentResponse {
   }
   
   @scala.inline
-  implicit class SentimentResponseOps[Self <: SentimentResponse] (val x: Self) extends AnyVal {
+  implicit class SentimentResponseMutableBuilder[Self <: SentimentResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSentimentLabel(value: SentimentLabel): Self = StObject.set(x, "sentimentLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSentimentLabelUndefined: Self = StObject.set(x, "sentimentLabel", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSentimentScore(value: SentimentScore): Self = StObject.set(x, "sentimentScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentimentLabel(value: SentimentLabel): Self = this.set("sentimentLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSentimentLabel: Self = this.set("sentimentLabel", js.undefined)
-    
-    @scala.inline
-    def setSentimentScore(value: SentimentScore): Self = this.set("sentimentScore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSentimentScore: Self = this.set("sentimentScore", js.undefined)
+    def setSentimentScoreUndefined: Self = StObject.set(x, "sentimentScore", js.undefined)
   }
 }

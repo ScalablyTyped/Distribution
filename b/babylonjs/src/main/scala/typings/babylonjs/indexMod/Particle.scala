@@ -1,5 +1,6 @@
 package typings.babylonjs.indexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +19,15 @@ class Particle protected ()
   particleSystem: typings.babylonjs.particleSystemMod.ParticleSystem) = this()
 }
 /* static members */
-@JSImport("babylonjs/index", "Particle")
-@js.native
-object Particle extends js.Object {
+object Particle {
   
-  var _Count: js.Any = js.native
+  @JSImport("babylonjs/index", "Particle")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("babylonjs/index", "Particle._Count")
+  @js.native
+  def _Count: js.Any = js.native
+  @scala.inline
+  def _Count_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Count")(x.asInstanceOf[js.Any])
 }

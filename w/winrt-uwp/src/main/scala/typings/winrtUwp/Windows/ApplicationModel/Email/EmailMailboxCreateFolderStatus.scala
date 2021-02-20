@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmailMailboxCreateFolderStatus extends js.Object
+sealed trait EmailMailboxCreateFolderStatus extends StObject
 /** Indicates the result of a call to TryCreateFolderAsync . */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxCreateFolderStatus")
 @js.native
-object EmailMailboxCreateFolderStatus extends js.Object {
+object EmailMailboxCreateFolderStatus extends StObject {
   
   /** The folder already exists. */
   @js.native

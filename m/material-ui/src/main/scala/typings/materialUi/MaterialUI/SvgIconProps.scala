@@ -3,12 +3,13 @@ package typings.materialUi.MaterialUI
 import typings.react.mod.Key
 import typings.react.mod.LegacyRef
 import typings.react.mod.SVGAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.react.mod.Props because var conflicts: children. Inlined key, ref */ @js.native
+- typings.react.mod.Props because var conflicts: children. Inlined ref, key */ @js.native
 trait SvgIconProps
   extends SVGAttributes[js.Object] {
   
@@ -27,42 +28,30 @@ object SvgIconProps {
   }
   
   @scala.inline
-  implicit class SvgIconPropsOps[Self <: SvgIconProps] (val x: Self) extends AnyVal {
+  implicit class SvgIconPropsMutableBuilder[Self <: SvgIconProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHoverColor(value: String): Self = StObject.set(x, "hoverColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHoverColorUndefined: Self = StObject.set(x, "hoverColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverColor(value: String): Self = this.set("hoverColor", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteHoverColor: Self = this.set("hoverColor", js.undefined)
+    def setRef(value: LegacyRef[SvgIcon]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: Key): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setRefFunction1(value: /* instance */ SvgIcon | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setRefNull: Self = StObject.set(x, "ref", null)
     
     @scala.inline
-    def setRefFunction1(value: /* instance */ SvgIcon | Null => Unit): Self = this.set("ref", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRef(value: LegacyRef[SvgIcon]): Self = this.set("ref", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRef: Self = this.set("ref", js.undefined)
-    
-    @scala.inline
-    def setRefNull: Self = this.set("ref", null)
+    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
   }
 }

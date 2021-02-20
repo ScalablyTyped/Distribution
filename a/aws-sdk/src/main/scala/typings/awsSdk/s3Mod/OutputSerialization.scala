@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutputSerialization extends js.Object {
+trait OutputSerialization extends StObject {
   
   /**
     * Describes the serialization of CSV-encoded Select results.
@@ -26,30 +27,18 @@ object OutputSerialization {
   }
   
   @scala.inline
-  implicit class OutputSerializationOps[Self <: OutputSerialization] (val x: Self) extends AnyVal {
+  implicit class OutputSerializationMutableBuilder[Self <: OutputSerialization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCSV(value: CSVOutput): Self = StObject.set(x, "CSV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCSVUndefined: Self = StObject.set(x, "CSV", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJSON(value: JSONOutput): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCSV(value: CSVOutput): Self = this.set("CSV", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCSV: Self = this.set("CSV", js.undefined)
-    
-    @scala.inline
-    def setJSON(value: JSONOutput): Self = this.set("JSON", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJSON: Self = this.set("JSON", js.undefined)
+    def setJSONUndefined: Self = StObject.set(x, "JSON", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Webhook extends js.Object {
+trait Webhook extends StObject {
   
   /**
     * A regular expression used to determine which repository branches are built when a webhook is triggered. If the name of a branch matches the regular expression, then it is built. If branchFilter is empty, then all branches are built.  It is recommended that you use filterGroups instead of branchFilter.  
@@ -51,63 +52,51 @@ object Webhook {
   }
   
   @scala.inline
-  implicit class WebhookOps[Self <: Webhook] (val x: Self) extends AnyVal {
+  implicit class WebhookMutableBuilder[Self <: Webhook] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranchFilter(value: String): Self = StObject.set(x, "branchFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchFilterUndefined: Self = StObject.set(x, "branchFilter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuildType(value: WebhookBuildType): Self = StObject.set(x, "buildType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchFilter(value: String): Self = this.set("branchFilter", value.asInstanceOf[js.Any])
+    def setBuildTypeUndefined: Self = StObject.set(x, "buildType", js.undefined)
     
     @scala.inline
-    def deleteBranchFilter: Self = this.set("branchFilter", js.undefined)
+    def setFilterGroups(value: FilterGroups): Self = StObject.set(x, "filterGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildType(value: WebhookBuildType): Self = this.set("buildType", value.asInstanceOf[js.Any])
+    def setFilterGroupsUndefined: Self = StObject.set(x, "filterGroups", js.undefined)
     
     @scala.inline
-    def deleteBuildType: Self = this.set("buildType", js.undefined)
+    def setFilterGroupsVarargs(value: FilterGroup*): Self = StObject.set(x, "filterGroups", js.Array(value :_*))
     
     @scala.inline
-    def setFilterGroupsVarargs(value: FilterGroup*): Self = this.set("filterGroups", js.Array(value :_*))
+    def setLastModifiedSecret(value: Timestamp): Self = StObject.set(x, "lastModifiedSecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterGroups(value: FilterGroups): Self = this.set("filterGroups", value.asInstanceOf[js.Any])
+    def setLastModifiedSecretUndefined: Self = StObject.set(x, "lastModifiedSecret", js.undefined)
     
     @scala.inline
-    def deleteFilterGroups: Self = this.set("filterGroups", js.undefined)
+    def setPayloadUrl(value: NonEmptyString): Self = StObject.set(x, "payloadUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedSecret(value: Timestamp): Self = this.set("lastModifiedSecret", value.asInstanceOf[js.Any])
+    def setPayloadUrlUndefined: Self = StObject.set(x, "payloadUrl", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedSecret: Self = this.set("lastModifiedSecret", js.undefined)
+    def setSecret(value: NonEmptyString): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayloadUrl(value: NonEmptyString): Self = this.set("payloadUrl", value.asInstanceOf[js.Any])
+    def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
     
     @scala.inline
-    def deletePayloadUrl: Self = this.set("payloadUrl", js.undefined)
+    def setUrl(value: NonEmptyString): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecret(value: NonEmptyString): Self = this.set("secret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecret: Self = this.set("secret", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: NonEmptyString): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

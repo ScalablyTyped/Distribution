@@ -1,11 +1,12 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColorMatrixHelpers extends js.Object {
+trait ColorMatrixHelpers extends StObject {
   
   /**
     * Returns a new SkColorMatrix that is the result of multiplying outer*inner
@@ -62,33 +63,21 @@ object ColorMatrixHelpers {
   }
   
   @scala.inline
-  implicit class ColorMatrixHelpersOps[Self <: ColorMatrixHelpers] (val x: Self) extends AnyVal {
+  implicit class ColorMatrixHelpersMutableBuilder[Self <: ColorMatrixHelpers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConcat(value: (SkColorMatrix, SkColorMatrix) => SkColorMatrix): Self = StObject.set(x, "concat", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentity(value: () => SkColorMatrix): Self = StObject.set(x, "identity", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPostTranslate(value: (SkColorMatrix, Double, Double, Double, Double) => SkColorMatrix): Self = StObject.set(x, "postTranslate", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setConcat(value: (SkColorMatrix, SkColorMatrix) => SkColorMatrix): Self = this.set("concat", js.Any.fromFunction2(value))
+    def setRotated(value: (Double, Double, Double) => SkColorMatrix): Self = StObject.set(x, "rotated", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setIdentity(value: () => SkColorMatrix): Self = this.set("identity", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPostTranslate(value: (SkColorMatrix, Double, Double, Double, Double) => SkColorMatrix): Self = this.set("postTranslate", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setRotated(value: (Double, Double, Double) => SkColorMatrix): Self = this.set("rotated", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setScaled(value: (Double, Double, Double, Double) => SkColorMatrix): Self = this.set("scaled", js.Any.fromFunction4(value))
+    def setScaled(value: (Double, Double, Double, Double) => SkColorMatrix): Self = StObject.set(x, "scaled", js.Any.fromFunction4(value))
   }
 }

@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.rendering
 
 import typings.activexLibreoffice.com_.sun.star.geometry.RealSize2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0
   */
 @js.native
-trait AnimationAttributes extends js.Object {
+trait AnimationAttributes extends StObject {
   
   var Duration: Double = js.native
   
@@ -40,27 +41,15 @@ object AnimationAttributes {
   }
   
   @scala.inline
-  implicit class AnimationAttributesOps[Self <: AnimationAttributes] (val x: Self) extends AnyVal {
+  implicit class AnimationAttributesMutableBuilder[Self <: AnimationAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRepeatMode(value: Double): Self = StObject.set(x, "RepeatMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDuration(value: Double): Self = this.set("Duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepeatMode(value: Double): Self = this.set("RepeatMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUntransformedSize(value: RealSize2D): Self = this.set("UntransformedSize", value.asInstanceOf[js.Any])
+    def setUntransformedSize(value: RealSize2D): Self = StObject.set(x, "UntransformedSize", value.asInstanceOf[js.Any])
   }
 }

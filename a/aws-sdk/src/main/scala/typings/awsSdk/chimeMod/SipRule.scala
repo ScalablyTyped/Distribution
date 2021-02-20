@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SipRule extends js.Object {
+trait SipRule extends StObject {
   
   /**
     * The SIP rule created timestamp, in ISO 8601 format.
@@ -56,69 +57,57 @@ object SipRule {
   }
   
   @scala.inline
-  implicit class SipRuleOps[Self <: SipRule] (val x: Self) extends AnyVal {
+  implicit class SipRuleMutableBuilder[Self <: SipRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabled(value: Boolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTimestamp(value: Iso8601Timestamp): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
     
     @scala.inline
-    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    def setName(value: SipRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("Disabled", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("Disabled", js.undefined)
+    def setSipRuleId(value: NonEmptyString): Self = StObject.set(x, "SipRuleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: SipRuleName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSipRuleIdUndefined: Self = StObject.set(x, "SipRuleId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setTargetApplications(value: SipRuleTargetApplicationList): Self = StObject.set(x, "TargetApplications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSipRuleId(value: NonEmptyString): Self = this.set("SipRuleId", value.asInstanceOf[js.Any])
+    def setTargetApplicationsUndefined: Self = StObject.set(x, "TargetApplications", js.undefined)
     
     @scala.inline
-    def deleteSipRuleId: Self = this.set("SipRuleId", js.undefined)
+    def setTargetApplicationsVarargs(value: SipRuleTargetApplication*): Self = StObject.set(x, "TargetApplications", js.Array(value :_*))
     
     @scala.inline
-    def setTargetApplicationsVarargs(value: SipRuleTargetApplication*): Self = this.set("TargetApplications", js.Array(value :_*))
+    def setTriggerType(value: SipRuleTriggerType): Self = StObject.set(x, "TriggerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetApplications(value: SipRuleTargetApplicationList): Self = this.set("TargetApplications", value.asInstanceOf[js.Any])
+    def setTriggerTypeUndefined: Self = StObject.set(x, "TriggerType", js.undefined)
     
     @scala.inline
-    def deleteTargetApplications: Self = this.set("TargetApplications", js.undefined)
+    def setTriggerValue(value: NonEmptyString): Self = StObject.set(x, "TriggerValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerType(value: SipRuleTriggerType): Self = this.set("TriggerType", value.asInstanceOf[js.Any])
+    def setTriggerValueUndefined: Self = StObject.set(x, "TriggerValue", js.undefined)
     
     @scala.inline
-    def deleteTriggerType: Self = this.set("TriggerType", js.undefined)
+    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerValue(value: NonEmptyString): Self = this.set("TriggerValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerValue: Self = this.set("TriggerValue", js.undefined)
-    
-    @scala.inline
-    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = this.set("UpdatedTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedTimestamp: Self = this.set("UpdatedTimestamp", js.undefined)
+    def setUpdatedTimestampUndefined: Self = StObject.set(x, "UpdatedTimestamp", js.undefined)
   }
 }

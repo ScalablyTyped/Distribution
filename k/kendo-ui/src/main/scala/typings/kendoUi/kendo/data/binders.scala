@@ -2,16 +2,26 @@ package typings.kendoUi.kendo.data
 
 import typings.std.Element
 import typings.std.Number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.data.binders")
-@js.native
-object binders extends js.Object {
+object binders {
   
-  @js.native
-  object input extends js.Object {
+  type attr = Binder
+  
+  type css = Binder
+  
+  type disabled = Binder
+  
+  type enabled = Binder
+  
+  type events = Binder
+  
+  type html = Binder
+  
+  object input {
     
     @js.native
     trait checked extends TypedBinder {
@@ -22,16 +32,19 @@ object binders extends js.Object {
     }
   }
   
-  @js.native
-  object select extends js.Object {
+  type invisible = Binder
+  
+  type readonly = Binder
+  
+  object select {
+    
+    type source = typings.kendoUi.kendo.data.binders.source
     
     @js.native
     trait value extends TypedBinder {
       
       def change(): Unit = js.native
     }
-    
-    type source = typings.kendoUi.kendo.data.binders.source
   }
   
   @js.native
@@ -48,14 +61,19 @@ object binders extends js.Object {
     def template(): String = js.native
   }
   
+  type style = Binder
+  
+  type text = Binder
+  
   @js.native
   trait value extends TypedBinder {
     
     def change(): Unit = js.native
   }
   
-  @js.native
-  object widget extends js.Object {
+  type visible = Binder
+  
+  object widget {
     
     @js.native
     trait checked extends Binder {
@@ -65,8 +83,9 @@ object binders extends js.Object {
       def value(): js.Any = js.native
     }
     
-    @js.native
-    object dropdowntree extends js.Object {
+    type disabled = Binder
+    
+    object dropdowntree {
       
       @js.native
       trait value extends Binder {
@@ -75,14 +94,19 @@ object binders extends js.Object {
       }
     }
     
+    type enabled = Binder
+    
     @js.native
     trait end extends Binder {
       
       def change(): Unit = js.native
     }
     
-    @js.native
-    object multiselect extends js.Object {
+    type events = Binder
+    
+    type invisible = Binder
+    
+    object multiselect {
       
       @js.native
       trait value extends Binder {
@@ -103,36 +127,6 @@ object binders extends js.Object {
       def change(): Unit = js.native
     }
     
-    type disabled = Binder
-    
-    type enabled = Binder
-    
-    type events = Binder
-    
-    type invisible = Binder
-    
     type visible = Binder
   }
-  
-  type attr = Binder
-  
-  type css = Binder
-  
-  type disabled = Binder
-  
-  type enabled = Binder
-  
-  type events = Binder
-  
-  type html = Binder
-  
-  type invisible = Binder
-  
-  type readonly = Binder
-  
-  type style = Binder
-  
-  type text = Binder
-  
-  type visible = Binder
 }

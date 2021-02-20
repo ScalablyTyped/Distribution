@@ -2,13 +2,14 @@ package typings.fundamentalReact.anon
 
 import typings.fundamentalReact.iconMod.IconGlyph
 import typings.react.mod.Validator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<fundamental-react.fundamental-react/lib/Tabs/Tab.TabProps> */
 @js.native
-trait WeakValidationMapTabProps extends js.Object {
+trait WeakValidationMapTabProps extends StObject {
   
   var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
   
@@ -39,78 +40,66 @@ object WeakValidationMapTabProps {
   }
   
   @scala.inline
-  implicit class WeakValidationMapTabPropsOps[Self <: WeakValidationMapTabProps] (val x: Self) extends AnyVal {
+  implicit class WeakValidationMapTabPropsMutableBuilder[Self <: WeakValidationMapTabProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableStyles(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setGlyph(value: Validator[js.UndefOr[IconGlyph | Null]]): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableStyles(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("disableStyles", value.asInstanceOf[js.Any])
+    def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
     
     @scala.inline
-    def deleteDisableStyles: Self = this.set("disableStyles", js.undefined)
+    def setId(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyph(value: Validator[js.UndefOr[IconGlyph | Null]]): Self = this.set("glyph", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGlyph: Self = this.set("glyph", js.undefined)
+    def setIndex(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Validator[js.UndefOr[Null | String]]): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLinkProps(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "linkProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setLinkPropsUndefined: Self = StObject.set(x, "linkProps", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setOnClick(value: Validator[js.UndefOr[(js.Function1[/* repeated */ _, _]) | Null]]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkProps(value: Validator[js.UndefOr[_ | Null]]): Self = this.set("linkProps", value.asInstanceOf[js.Any])
+    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def deleteLinkProps: Self = this.set("linkProps", js.undefined)
+    def setSelected(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClick(value: Validator[js.UndefOr[(js.Function1[/* repeated */ _, _]) | Null]]): Self = this.set("onClick", value.asInstanceOf[js.Any])
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    def setTabContentProps(value: Validator[js.UndefOr[_ | Null]]): Self = StObject.set(x, "tabContentProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelected(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setTabContentPropsUndefined: Self = StObject.set(x, "tabContentProps", js.undefined)
     
     @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
+    def setTitle(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabContentProps(value: Validator[js.UndefOr[_ | Null]]): Self = this.set("tabContentProps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabContentProps: Self = this.set("tabContentProps", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: Validator[js.UndefOr[Null | String]]): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

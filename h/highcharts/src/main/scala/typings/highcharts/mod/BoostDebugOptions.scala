@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BoostDebugOptions extends js.Object {
+trait BoostDebugOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Show the number of points
@@ -73,54 +74,42 @@ object BoostDebugOptions {
   }
   
   @scala.inline
-  implicit class BoostDebugOptionsOps[Self <: BoostDebugOptions] (val x: Self) extends AnyVal {
+  implicit class BoostDebugOptionsMutableBuilder[Self <: BoostDebugOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShowSkipSummary(value: Boolean): Self = StObject.set(x, "showSkipSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShowSkipSummaryUndefined: Self = StObject.set(x, "showSkipSummary", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeBufferCopy(value: Boolean): Self = StObject.set(x, "timeBufferCopy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowSkipSummary(value: Boolean): Self = this.set("showSkipSummary", value.asInstanceOf[js.Any])
+    def setTimeBufferCopyUndefined: Self = StObject.set(x, "timeBufferCopy", js.undefined)
     
     @scala.inline
-    def deleteShowSkipSummary: Self = this.set("showSkipSummary", js.undefined)
+    def setTimeKDTree(value: Boolean): Self = StObject.set(x, "timeKDTree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeBufferCopy(value: Boolean): Self = this.set("timeBufferCopy", value.asInstanceOf[js.Any])
+    def setTimeKDTreeUndefined: Self = StObject.set(x, "timeKDTree", js.undefined)
     
     @scala.inline
-    def deleteTimeBufferCopy: Self = this.set("timeBufferCopy", js.undefined)
+    def setTimeRendering(value: Boolean): Self = StObject.set(x, "timeRendering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeKDTree(value: Boolean): Self = this.set("timeKDTree", value.asInstanceOf[js.Any])
+    def setTimeRenderingUndefined: Self = StObject.set(x, "timeRendering", js.undefined)
     
     @scala.inline
-    def deleteTimeKDTree: Self = this.set("timeKDTree", js.undefined)
+    def setTimeSeriesProcessing(value: Boolean): Self = StObject.set(x, "timeSeriesProcessing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeRendering(value: Boolean): Self = this.set("timeRendering", value.asInstanceOf[js.Any])
+    def setTimeSeriesProcessingUndefined: Self = StObject.set(x, "timeSeriesProcessing", js.undefined)
     
     @scala.inline
-    def deleteTimeRendering: Self = this.set("timeRendering", js.undefined)
+    def setTimeSetup(value: Boolean): Self = StObject.set(x, "timeSetup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeSeriesProcessing(value: Boolean): Self = this.set("timeSeriesProcessing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeSeriesProcessing: Self = this.set("timeSeriesProcessing", js.undefined)
-    
-    @scala.inline
-    def setTimeSetup(value: Boolean): Self = this.set("timeSetup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeSetup: Self = this.set("timeSetup", js.undefined)
+    def setTimeSetupUndefined: Self = StObject.set(x, "timeSetup", js.undefined)
   }
 }

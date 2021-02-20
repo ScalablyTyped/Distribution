@@ -1,11 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationObject extends js.Object {
+trait LocationObject extends StObject {
   
   var bidModifier: js.UndefOr[Double] = js.native
   
@@ -20,27 +21,15 @@ object LocationObject {
   }
   
   @scala.inline
-  implicit class LocationObjectOps[Self <: LocationObject] (val x: Self) extends AnyVal {
+  implicit class LocationObjectMutableBuilder[Self <: LocationObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBidModifier(value: Double): Self = StObject.set(x, "bidModifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBidModifierUndefined: Self = StObject.set(x, "bidModifier", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBidModifier(value: Double): Self = this.set("bidModifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBidModifier: Self = this.set("bidModifier", js.undefined)
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

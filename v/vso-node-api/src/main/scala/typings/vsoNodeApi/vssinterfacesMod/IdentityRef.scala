@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.vssinterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentityRef extends js.Object {
+trait IdentityRef extends StObject {
   
   var directoryAlias: String = js.native
   
@@ -47,48 +48,36 @@ object IdentityRef {
   }
   
   @scala.inline
-  implicit class IdentityRefOps[Self <: IdentityRef] (val x: Self) extends AnyVal {
+  implicit class IdentityRefMutableBuilder[Self <: IdentityRef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectoryAlias(value: String): Self = StObject.set(x, "directoryAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryAlias(value: String): Self = this.set("directoryAlias", value.asInstanceOf[js.Any])
+    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setInactive(value: Boolean): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsAadIdentity(value: Boolean): Self = StObject.set(x, "isAadIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    def setIsContainer(value: Boolean): Self = StObject.set(x, "isContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInactive(value: Boolean): Self = this.set("inactive", value.asInstanceOf[js.Any])
+    def setProfileUrl(value: String): Self = StObject.set(x, "profileUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAadIdentity(value: Boolean): Self = this.set("isAadIdentity", value.asInstanceOf[js.Any])
+    def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsContainer(value: Boolean): Self = this.set("isContainer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProfileUrl(value: String): Self = this.set("profileUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUniqueName(value: String): Self = this.set("uniqueName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

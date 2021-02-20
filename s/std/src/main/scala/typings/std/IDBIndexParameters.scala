@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDBIndexParameters extends js.Object {
+trait IDBIndexParameters extends StObject {
   
   var multiEntry: js.UndefOr[scala.Boolean] = js.native
   
@@ -20,30 +21,18 @@ object IDBIndexParameters {
   }
   
   @scala.inline
-  implicit class IDBIndexParametersOps[Self <: IDBIndexParameters] (val x: Self) extends AnyVal {
+  implicit class IDBIndexParametersMutableBuilder[Self <: IDBIndexParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMultiEntry(value: scala.Boolean): Self = StObject.set(x, "multiEntry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMultiEntryUndefined: Self = StObject.set(x, "multiEntry", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUnique(value: scala.Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiEntry(value: scala.Boolean): Self = this.set("multiEntry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultiEntry: Self = this.set("multiEntry", js.undefined)
-    
-    @scala.inline
-    def setUnique(value: scala.Boolean): Self = this.set("unique", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnique: Self = this.set("unique", js.undefined)
+    def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteAccountSettingRequest extends js.Object {
+trait DeleteAccountSettingRequest extends StObject {
   
   /**
     * The resource name for which to disable the account setting. If serviceLongArnFormat is specified, the ARN for your Amazon ECS services is affected. If taskLongArnFormat is specified, the ARN and resource ID for your Amazon ECS tasks is affected. If containerInstanceLongArnFormat is specified, the ARN and resource ID for your Amazon ECS container instances is affected. If awsvpcTrunking is specified, the ENI limit for your Amazon ECS container instances is affected.
@@ -26,27 +27,15 @@ object DeleteAccountSettingRequest {
   }
   
   @scala.inline
-  implicit class DeleteAccountSettingRequestOps[Self <: DeleteAccountSettingRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteAccountSettingRequestMutableBuilder[Self <: DeleteAccountSettingRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: SettingName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrincipalArn(value: String): Self = StObject.set(x, "principalArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: SettingName): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrincipalArn(value: String): Self = this.set("principalArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrincipalArn: Self = this.set("principalArn", js.undefined)
+    def setPrincipalArnUndefined: Self = StObject.set(x, "principalArn", js.undefined)
   }
 }

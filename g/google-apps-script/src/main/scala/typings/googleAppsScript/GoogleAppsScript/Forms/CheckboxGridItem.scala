@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Forms
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .setColumns(['2014', '2015', '2016', '2017']);
   */
 @js.native
-trait CheckboxGridItem extends js.Object {
+trait CheckboxGridItem extends StObject {
   
   def clearValidation(): CheckboxGridItem = js.native
   
@@ -81,69 +82,57 @@ object CheckboxGridItem {
   }
   
   @scala.inline
-  implicit class CheckboxGridItemOps[Self <: CheckboxGridItem] (val x: Self) extends AnyVal {
+  implicit class CheckboxGridItemMutableBuilder[Self <: CheckboxGridItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearValidation(value: () => CheckboxGridItem): Self = StObject.set(x, "clearValidation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateResponse(value: js.Array[js.Array[String]] => ItemResponse): Self = StObject.set(x, "createResponse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuplicate(value: () => CheckboxGridItem): Self = StObject.set(x, "duplicate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearValidation(value: () => CheckboxGridItem): Self = this.set("clearValidation", js.Any.fromFunction0(value))
+    def setGetColumns(value: () => js.Array[String]): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateResponse(value: js.Array[js.Array[String]] => ItemResponse): Self = this.set("createResponse", js.Any.fromFunction1(value))
+    def setGetHelpText(value: () => String): Self = StObject.set(x, "getHelpText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDuplicate(value: () => CheckboxGridItem): Self = this.set("duplicate", js.Any.fromFunction0(value))
+    def setGetId(value: () => Integer): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetColumns(value: () => js.Array[String]): Self = this.set("getColumns", js.Any.fromFunction0(value))
+    def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHelpText(value: () => String): Self = this.set("getHelpText", js.Any.fromFunction0(value))
+    def setGetRows(value: () => js.Array[String]): Self = StObject.set(x, "getRows", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => Integer): Self = this.set("getId", js.Any.fromFunction0(value))
+    def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIndex(value: () => Integer): Self = this.set("getIndex", js.Any.fromFunction0(value))
+    def setGetType(value: () => ItemType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRows(value: () => js.Array[String]): Self = this.set("getRows", js.Any.fromFunction0(value))
+    def setIsRequired(value: () => Boolean): Self = StObject.set(x, "isRequired", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTitle(value: () => String): Self = this.set("getTitle", js.Any.fromFunction0(value))
+    def setSetColumns(value: js.Array[String] => CheckboxGridItem): Self = StObject.set(x, "setColumns", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetType(value: () => ItemType): Self = this.set("getType", js.Any.fromFunction0(value))
+    def setSetHelpText(value: String => CheckboxGridItem): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsRequired(value: () => Boolean): Self = this.set("isRequired", js.Any.fromFunction0(value))
+    def setSetRequired(value: Boolean => CheckboxGridItem): Self = StObject.set(x, "setRequired", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetColumns(value: js.Array[String] => CheckboxGridItem): Self = this.set("setColumns", js.Any.fromFunction1(value))
+    def setSetRows(value: js.Array[String] => CheckboxGridItem): Self = StObject.set(x, "setRows", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHelpText(value: String => CheckboxGridItem): Self = this.set("setHelpText", js.Any.fromFunction1(value))
+    def setSetTitle(value: String => CheckboxGridItem): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetRequired(value: Boolean => CheckboxGridItem): Self = this.set("setRequired", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetRows(value: js.Array[String] => CheckboxGridItem): Self = this.set("setRows", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTitle(value: String => CheckboxGridItem): Self = this.set("setTitle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetValidation(value: CheckboxGridValidation => CheckboxGridItem): Self = this.set("setValidation", js.Any.fromFunction1(value))
+    def setSetValidation(value: CheckboxGridValidation => CheckboxGridItem): Self = StObject.set(x, "setValidation", js.Any.fromFunction1(value))
   }
 }

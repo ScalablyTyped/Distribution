@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDeliveryStreamsOutput extends js.Object {
+trait ListDeliveryStreamsOutput extends StObject {
   
   /**
     * The names of the delivery streams.
@@ -26,27 +27,15 @@ object ListDeliveryStreamsOutput {
   }
   
   @scala.inline
-  implicit class ListDeliveryStreamsOutputOps[Self <: ListDeliveryStreamsOutput] (val x: Self) extends AnyVal {
+  implicit class ListDeliveryStreamsOutputMutableBuilder[Self <: ListDeliveryStreamsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeliveryStreamNames(value: DeliveryStreamNameList): Self = StObject.set(x, "DeliveryStreamNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeliveryStreamNamesVarargs(value: DeliveryStreamName*): Self = StObject.set(x, "DeliveryStreamNames", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeliveryStreamNamesVarargs(value: DeliveryStreamName*): Self = this.set("DeliveryStreamNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setDeliveryStreamNames(value: DeliveryStreamNameList): Self = this.set("DeliveryStreamNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasMoreDeliveryStreams(value: BooleanObject): Self = this.set("HasMoreDeliveryStreams", value.asInstanceOf[js.Any])
+    def setHasMoreDeliveryStreams(value: BooleanObject): Self = StObject.set(x, "HasMoreDeliveryStreams", value.asInstanceOf[js.Any])
   }
 }

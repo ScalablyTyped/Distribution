@@ -1,12 +1,13 @@
 package typings.nodeForge.anon
 
 import typings.nodeForge.mod.pkcs12.Bag
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Encrypted extends js.Object {
+trait Encrypted extends StObject {
   
   var encrypted: Boolean = js.native
   
@@ -21,27 +22,15 @@ object Encrypted {
   }
   
   @scala.inline
-  implicit class EncryptedOps[Self <: Encrypted] (val x: Self) extends AnyVal {
+  implicit class EncryptedMutableBuilder[Self <: Encrypted] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSafeBags(value: js.Array[Bag]): Self = StObject.set(x, "safeBags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEncrypted(value: Boolean): Self = this.set("encrypted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSafeBagsVarargs(value: Bag*): Self = this.set("safeBags", js.Array(value :_*))
-    
-    @scala.inline
-    def setSafeBags(value: js.Array[Bag]): Self = this.set("safeBags", value.asInstanceOf[js.Any])
+    def setSafeBagsVarargs(value: Bag*): Self = StObject.set(x, "safeBags", js.Array(value :_*))
   }
 }

@@ -2,6 +2,7 @@ package typings.activexAccess.Access
 
 import typings.activexAccess.activexAccessNumbers.`0`
 import typings.activexAccess.activexAccessNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexAccess.activexAccessNumbers.`1`
   - typings.activexAccess.activexAccessNumbers.`0`
 */
-trait RefKind extends js.Object
+trait RefKind extends StObject
 object RefKind {
   
   @scala.inline

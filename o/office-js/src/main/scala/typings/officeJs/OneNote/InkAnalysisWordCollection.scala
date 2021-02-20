@@ -5,6 +5,7 @@ import typings.officeJs.OfficeExtension.LoadOption
 import typings.officeJs.OneNote.Interfaces.CollectionLoadOptions
 import typings.officeJs.OneNote.Interfaces.InkAnalysisWordCollectionData
 import typings.officeJs.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

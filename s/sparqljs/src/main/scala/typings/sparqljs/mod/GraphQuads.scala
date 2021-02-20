@@ -1,6 +1,7 @@
 package typings.sparqljs.mod
 
 import typings.sparqljs.sparqljsStrings.graph
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,30 +25,18 @@ object GraphQuads {
   }
   
   @scala.inline
-  implicit class GraphQuadsOps[Self <: GraphQuads] (val x: Self) extends AnyVal {
+  implicit class GraphQuadsMutableBuilder[Self <: GraphQuads] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: IriTerm): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTriples(value: js.Array[Triple]): Self = StObject.set(x, "triples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTriplesVarargs(value: Triple*): Self = StObject.set(x, "triples", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: IriTerm): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriplesVarargs(value: Triple*): Self = this.set("triples", js.Array(value :_*))
-    
-    @scala.inline
-    def setTriples(value: js.Array[Triple]): Self = this.set("triples", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: graph): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: graph): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

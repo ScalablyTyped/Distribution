@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BlueGreenDeploymentConfiguration extends js.Object {
+trait BlueGreenDeploymentConfiguration extends StObject {
   
   /**
     * Information about the action to take when newly provisioned instances are ready to receive traffic in a blue/green deployment.
@@ -31,36 +32,24 @@ object BlueGreenDeploymentConfiguration {
   }
   
   @scala.inline
-  implicit class BlueGreenDeploymentConfigurationOps[Self <: BlueGreenDeploymentConfiguration] (val x: Self) extends AnyVal {
+  implicit class BlueGreenDeploymentConfigurationMutableBuilder[Self <: BlueGreenDeploymentConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeploymentReadyOption(value: DeploymentReadyOption): Self = StObject.set(x, "deploymentReadyOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeploymentReadyOptionUndefined: Self = StObject.set(x, "deploymentReadyOption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGreenFleetProvisioningOption(value: GreenFleetProvisioningOption): Self = StObject.set(x, "greenFleetProvisioningOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentReadyOption(value: DeploymentReadyOption): Self = this.set("deploymentReadyOption", value.asInstanceOf[js.Any])
+    def setGreenFleetProvisioningOptionUndefined: Self = StObject.set(x, "greenFleetProvisioningOption", js.undefined)
     
     @scala.inline
-    def deleteDeploymentReadyOption: Self = this.set("deploymentReadyOption", js.undefined)
+    def setTerminateBlueInstancesOnDeploymentSuccess(value: BlueInstanceTerminationOption): Self = StObject.set(x, "terminateBlueInstancesOnDeploymentSuccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreenFleetProvisioningOption(value: GreenFleetProvisioningOption): Self = this.set("greenFleetProvisioningOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGreenFleetProvisioningOption: Self = this.set("greenFleetProvisioningOption", js.undefined)
-    
-    @scala.inline
-    def setTerminateBlueInstancesOnDeploymentSuccess(value: BlueInstanceTerminationOption): Self = this.set("terminateBlueInstancesOnDeploymentSuccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerminateBlueInstancesOnDeploymentSuccess: Self = this.set("terminateBlueInstancesOnDeploymentSuccess", js.undefined)
+    def setTerminateBlueInstancesOnDeploymentSuccessUndefined: Self = StObject.set(x, "terminateBlueInstancesOnDeploymentSuccess", js.undefined)
   }
 }

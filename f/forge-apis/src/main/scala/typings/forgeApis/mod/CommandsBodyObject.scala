@@ -1,11 +1,12 @@
 package typings.forgeApis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommandsBodyObject extends js.Object {
+trait CommandsBodyObject extends StObject {
   
   var data: CommandsBodyObjectData = js.native
   
@@ -22,30 +23,18 @@ object CommandsBodyObject {
   }
   
   @scala.inline
-  implicit class CommandsBodyObjectOps[Self <: CommandsBodyObject] (val x: Self) extends AnyVal {
+  implicit class CommandsBodyObjectMutableBuilder[Self <: CommandsBodyObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: CommandsBodyObjectData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncluded(value: js.Object): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludedUndefined: Self = StObject.set(x, "included", js.undefined)
     
     @scala.inline
-    def setData(value: CommandsBodyObjectData): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJsonapi(value: JsonApiVersionJsonapi): Self = this.set("jsonapi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncluded(value: js.Object): Self = this.set("included", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncluded: Self = this.set("included", js.undefined)
+    def setJsonapi(value: JsonApiVersionJsonapi): Self = StObject.set(x, "jsonapi", value.asInstanceOf[js.Any])
   }
 }

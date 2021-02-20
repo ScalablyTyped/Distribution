@@ -6,12 +6,13 @@ import typings.awsLambda.awsLambdaStrings.EMAIL
 import typings.awsLambda.awsLambdaStrings.RESET_REQUIRED
 import typings.awsLambda.awsLambdaStrings.SMS
 import typings.awsLambda.awsLambdaStrings.SUPPRESS
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnswerCorrect extends js.Object {
+trait AnswerCorrect extends StObject {
   
   var answerCorrect: js.UndefOr[Boolean] = js.native
   
@@ -60,135 +61,123 @@ object AnswerCorrect {
   }
   
   @scala.inline
-  implicit class AnswerCorrectOps[Self <: AnswerCorrect] (val x: Self) extends AnyVal {
+  implicit class AnswerCorrectMutableBuilder[Self <: AnswerCorrect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnswerCorrect(value: Boolean): Self = StObject.set(x, "answerCorrect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnswerCorrectUndefined: Self = StObject.set(x, "answerCorrect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoConfirmUser(value: Boolean): Self = StObject.set(x, "autoConfirmUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnswerCorrect(value: Boolean): Self = this.set("answerCorrect", value.asInstanceOf[js.Any])
+    def setAutoConfirmUserUndefined: Self = StObject.set(x, "autoConfirmUser", js.undefined)
     
     @scala.inline
-    def deleteAnswerCorrect: Self = this.set("answerCorrect", js.undefined)
+    def setAutoVerifyEmail(value: Boolean): Self = StObject.set(x, "autoVerifyEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoConfirmUser(value: Boolean): Self = this.set("autoConfirmUser", value.asInstanceOf[js.Any])
+    def setAutoVerifyEmailUndefined: Self = StObject.set(x, "autoVerifyEmail", js.undefined)
     
     @scala.inline
-    def deleteAutoConfirmUser: Self = this.set("autoConfirmUser", js.undefined)
+    def setAutoVerifyPhone(value: Boolean): Self = StObject.set(x, "autoVerifyPhone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoVerifyEmail(value: Boolean): Self = this.set("autoVerifyEmail", value.asInstanceOf[js.Any])
+    def setAutoVerifyPhoneUndefined: Self = StObject.set(x, "autoVerifyPhone", js.undefined)
     
     @scala.inline
-    def deleteAutoVerifyEmail: Self = this.set("autoVerifyEmail", js.undefined)
+    def setChallengeMetadata(value: String): Self = StObject.set(x, "challengeMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoVerifyPhone(value: Boolean): Self = this.set("autoVerifyPhone", value.asInstanceOf[js.Any])
+    def setChallengeMetadataUndefined: Self = StObject.set(x, "challengeMetadata", js.undefined)
     
     @scala.inline
-    def deleteAutoVerifyPhone: Self = this.set("autoVerifyPhone", js.undefined)
+    def setChallengeName(value: String): Self = StObject.set(x, "challengeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChallengeMetadata(value: String): Self = this.set("challengeMetadata", value.asInstanceOf[js.Any])
+    def setChallengeNameUndefined: Self = StObject.set(x, "challengeName", js.undefined)
     
     @scala.inline
-    def deleteChallengeMetadata: Self = this.set("challengeMetadata", js.undefined)
+    def setClaimsOverrideDetails(value: ClaimsToAddOrOverride): Self = StObject.set(x, "claimsOverrideDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChallengeName(value: String): Self = this.set("challengeName", value.asInstanceOf[js.Any])
+    def setClaimsOverrideDetailsUndefined: Self = StObject.set(x, "claimsOverrideDetails", js.undefined)
     
     @scala.inline
-    def deleteChallengeName: Self = this.set("challengeName", js.undefined)
+    def setDesiredDeliveryMediums(value: js.Array[EMAIL | SMS]): Self = StObject.set(x, "desiredDeliveryMediums", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClaimsOverrideDetails(value: ClaimsToAddOrOverride): Self = this.set("claimsOverrideDetails", value.asInstanceOf[js.Any])
+    def setDesiredDeliveryMediumsUndefined: Self = StObject.set(x, "desiredDeliveryMediums", js.undefined)
     
     @scala.inline
-    def deleteClaimsOverrideDetails: Self = this.set("claimsOverrideDetails", js.undefined)
+    def setDesiredDeliveryMediumsVarargs(value: (EMAIL | SMS)*): Self = StObject.set(x, "desiredDeliveryMediums", js.Array(value :_*))
     
     @scala.inline
-    def setDesiredDeliveryMediumsVarargs(value: (EMAIL | SMS)*): Self = this.set("desiredDeliveryMediums", js.Array(value :_*))
+    def setEmailMessage(value: String): Self = StObject.set(x, "emailMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredDeliveryMediums(value: js.Array[EMAIL | SMS]): Self = this.set("desiredDeliveryMediums", value.asInstanceOf[js.Any])
+    def setEmailMessageUndefined: Self = StObject.set(x, "emailMessage", js.undefined)
     
     @scala.inline
-    def deleteDesiredDeliveryMediums: Self = this.set("desiredDeliveryMediums", js.undefined)
+    def setEmailSubject(value: String): Self = StObject.set(x, "emailSubject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailMessage(value: String): Self = this.set("emailMessage", value.asInstanceOf[js.Any])
+    def setEmailSubjectUndefined: Self = StObject.set(x, "emailSubject", js.undefined)
     
     @scala.inline
-    def deleteEmailMessage: Self = this.set("emailMessage", js.undefined)
+    def setFailAuthentication(value: Boolean): Self = StObject.set(x, "failAuthentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailSubject(value: String): Self = this.set("emailSubject", value.asInstanceOf[js.Any])
+    def setFailAuthenticationUndefined: Self = StObject.set(x, "failAuthentication", js.undefined)
     
     @scala.inline
-    def deleteEmailSubject: Self = this.set("emailSubject", js.undefined)
+    def setFinalUserStatus(value: CONFIRMED | RESET_REQUIRED): Self = StObject.set(x, "finalUserStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailAuthentication(value: Boolean): Self = this.set("failAuthentication", value.asInstanceOf[js.Any])
+    def setFinalUserStatusUndefined: Self = StObject.set(x, "finalUserStatus", js.undefined)
     
     @scala.inline
-    def deleteFailAuthentication: Self = this.set("failAuthentication", js.undefined)
+    def setForceAliasCreation(value: Boolean): Self = StObject.set(x, "forceAliasCreation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalUserStatus(value: CONFIRMED | RESET_REQUIRED): Self = this.set("finalUserStatus", value.asInstanceOf[js.Any])
+    def setForceAliasCreationUndefined: Self = StObject.set(x, "forceAliasCreation", js.undefined)
     
     @scala.inline
-    def deleteFinalUserStatus: Self = this.set("finalUserStatus", js.undefined)
+    def setIssueTokens(value: Boolean): Self = StObject.set(x, "issueTokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceAliasCreation(value: Boolean): Self = this.set("forceAliasCreation", value.asInstanceOf[js.Any])
+    def setIssueTokensUndefined: Self = StObject.set(x, "issueTokens", js.undefined)
     
     @scala.inline
-    def deleteForceAliasCreation: Self = this.set("forceAliasCreation", js.undefined)
+    def setMessageAction(value: SUPPRESS): Self = StObject.set(x, "messageAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssueTokens(value: Boolean): Self = this.set("issueTokens", value.asInstanceOf[js.Any])
+    def setMessageActionUndefined: Self = StObject.set(x, "messageAction", js.undefined)
     
     @scala.inline
-    def deleteIssueTokens: Self = this.set("issueTokens", js.undefined)
+    def setPrivateChallengeParameters(value: StringDictionary[String]): Self = StObject.set(x, "privateChallengeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageAction(value: SUPPRESS): Self = this.set("messageAction", value.asInstanceOf[js.Any])
+    def setPrivateChallengeParametersUndefined: Self = StObject.set(x, "privateChallengeParameters", js.undefined)
     
     @scala.inline
-    def deleteMessageAction: Self = this.set("messageAction", js.undefined)
+    def setPublicChallengeParameters(value: StringDictionary[String]): Self = StObject.set(x, "publicChallengeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateChallengeParameters(value: StringDictionary[String]): Self = this.set("privateChallengeParameters", value.asInstanceOf[js.Any])
+    def setPublicChallengeParametersUndefined: Self = StObject.set(x, "publicChallengeParameters", js.undefined)
     
     @scala.inline
-    def deletePrivateChallengeParameters: Self = this.set("privateChallengeParameters", js.undefined)
+    def setSmsMessage(value: String): Self = StObject.set(x, "smsMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicChallengeParameters(value: StringDictionary[String]): Self = this.set("publicChallengeParameters", value.asInstanceOf[js.Any])
+    def setSmsMessageUndefined: Self = StObject.set(x, "smsMessage", js.undefined)
     
     @scala.inline
-    def deletePublicChallengeParameters: Self = this.set("publicChallengeParameters", js.undefined)
+    def setUserAttributes(value: StringDictionary[String]): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmsMessage(value: String): Self = this.set("smsMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmsMessage: Self = this.set("smsMessage", js.undefined)
-    
-    @scala.inline
-    def setUserAttributes(value: StringDictionary[String]): Self = this.set("userAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserAttributes: Self = this.set("userAttributes", js.undefined)
+    def setUserAttributesUndefined: Self = StObject.set(x, "userAttributes", js.undefined)
   }
 }

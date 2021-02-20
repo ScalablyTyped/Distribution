@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.data
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchedulerEventData extends js.Object {
+trait SchedulerEventData extends StObject {
   
   var description: js.UndefOr[String] = js.native
   
@@ -39,84 +40,72 @@ object SchedulerEventData {
   }
   
   @scala.inline
-  implicit class SchedulerEventDataOps[Self <: SchedulerEventData] (val x: Self) extends AnyVal {
+  implicit class SchedulerEventDataMutableBuilder[Self <: SchedulerEventData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEndTimezone(value: String): Self = StObject.set(x, "endTimezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEndTimezoneUndefined: Self = StObject.set(x, "endTimezone", js.undefined)
     
     @scala.inline
-    def setEnd(value: Date): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTimezone(value: String): Self = this.set("endTimezone", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEndTimezone: Self = this.set("endTimezone", js.undefined)
+    def setIsAllDay(value: Boolean): Self = StObject.set(x, "isAllDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: js.Any): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsAllDayUndefined: Self = StObject.set(x, "isAllDay", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setRecurrenceException(value: String): Self = StObject.set(x, "recurrenceException", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAllDay(value: Boolean): Self = this.set("isAllDay", value.asInstanceOf[js.Any])
+    def setRecurrenceExceptionUndefined: Self = StObject.set(x, "recurrenceException", js.undefined)
     
     @scala.inline
-    def deleteIsAllDay: Self = this.set("isAllDay", js.undefined)
+    def setRecurrenceId(value: js.Any): Self = StObject.set(x, "recurrenceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecurrenceException(value: String): Self = this.set("recurrenceException", value.asInstanceOf[js.Any])
+    def setRecurrenceIdUndefined: Self = StObject.set(x, "recurrenceId", js.undefined)
     
     @scala.inline
-    def deleteRecurrenceException: Self = this.set("recurrenceException", js.undefined)
+    def setRecurrenceRule(value: String): Self = StObject.set(x, "recurrenceRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecurrenceId(value: js.Any): Self = this.set("recurrenceId", value.asInstanceOf[js.Any])
+    def setRecurrenceRuleUndefined: Self = StObject.set(x, "recurrenceRule", js.undefined)
     
     @scala.inline
-    def deleteRecurrenceId: Self = this.set("recurrenceId", js.undefined)
+    def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecurrenceRule(value: String): Self = this.set("recurrenceRule", value.asInstanceOf[js.Any])
+    def setStartTimezone(value: String): Self = StObject.set(x, "startTimezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecurrenceRule: Self = this.set("recurrenceRule", js.undefined)
+    def setStartTimezoneUndefined: Self = StObject.set(x, "startTimezone", js.undefined)
     
     @scala.inline
-    def setStart(value: Date): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTimezone(value: String): Self = this.set("startTimezone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTimezone: Self = this.set("startTimezone", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

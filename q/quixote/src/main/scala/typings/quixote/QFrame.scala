@@ -1,12 +1,13 @@
 package typings.quixote
 
 import typings.std.HTMLIFrameElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QFrame extends js.Object {
+trait QFrame extends StObject {
   
   // Create an element and append it to the frame's body. Throws an exception unless exactly one element is created. (But that one element may contain children.)
   def add(html: String): QElement = js.native

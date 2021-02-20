@@ -8,12 +8,13 @@ import typings.oracleOraclejet.oracleOraclejetStrings.node
 import typings.oracleOraclejet.oracleOraclejetStrings.off
 import typings.oracleOraclejet.oracleOraclejetStrings.start
 import typings.oracleOraclejet.oracleOraclejetStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroupLabelDisplay extends js.Object {
+trait GroupLabelDisplay extends StObject {
   
   var groupLabelDisplay: node | off | header = js.native
   
@@ -55,48 +56,36 @@ object GroupLabelDisplay {
   }
   
   @scala.inline
-  implicit class GroupLabelDisplayOps[Self <: GroupLabelDisplay] (val x: Self) extends AnyVal {
+  implicit class GroupLabelDisplayMutableBuilder[Self <: GroupLabelDisplay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupLabelDisplay(value: node | off | header): Self = StObject.set(x, "groupLabelDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeader(value: HoverBackgroundColor): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHoverColor(value: String): Self = StObject.set(x, "hoverColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupLabelDisplay(value: node | off | header): Self = this.set("groupLabelDisplay", value.asInstanceOf[js.Any])
+    def setLabelDisplay(value: off | node): Self = StObject.set(x, "labelDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: HoverBackgroundColor): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setLabelHalign(value: start | end | center): Self = StObject.set(x, "labelHalign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverColor(value: String): Self = this.set("hoverColor", value.asInstanceOf[js.Any])
+    def setLabelMinLength(value: Double): Self = StObject.set(x, "labelMinLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelDisplay(value: off | node): Self = this.set("labelDisplay", value.asInstanceOf[js.Any])
+    def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelHalign(value: start | end | center): Self = this.set("labelHalign", value.asInstanceOf[js.Any])
+    def setLabelValign(value: top | bottom | center): Self = StObject.set(x, "labelValign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelMinLength(value: Double): Self = this.set("labelMinLength", value.asInstanceOf[js.Any])
+    def setSelectedInnerColor(value: String): Self = StObject.set(x, "selectedInnerColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelStyle(value: js.Object): Self = this.set("labelStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabelValign(value: top | bottom | center): Self = this.set("labelValign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectedInnerColor(value: String): Self = this.set("selectedInnerColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectedOuterColor(value: String): Self = this.set("selectedOuterColor", value.asInstanceOf[js.Any])
+    def setSelectedOuterColor(value: String): Self = StObject.set(x, "selectedOuterColor", value.asInstanceOf[js.Any])
   }
 }

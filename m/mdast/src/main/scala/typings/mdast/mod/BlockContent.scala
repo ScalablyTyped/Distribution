@@ -14,6 +14,7 @@ import typings.mdast.mdastStrings.list
 import typings.mdast.mdastStrings.paragraph
 import typings.mdast.mdastStrings.table
 import typings.mdast.mdastStrings.thematicBreak
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,58 +33,58 @@ trait BlockContent extends _TopLevelContent
 object BlockContent {
   
   @scala.inline
-  def ThematicBreak(`type`: thematicBreak): BlockContent = {
-    val __obj = js.Dynamic.literal()
+  def Blockquote(children: js.Array[BlockContent], `type`: blockquote): typings.mdast.mod.Blockquote = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BlockContent]
+    __obj.asInstanceOf[typings.mdast.mod.Blockquote]
   }
   
   @scala.inline
-  def HTML(`type`: html, value: js.Any): BlockContent = {
+  def Code(`type`: code, value: js.Any): typings.mdast.mod.Code = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BlockContent]
+    __obj.asInstanceOf[typings.mdast.mod.Code]
   }
   
   @scala.inline
-  def Table(children: js.Array[TableContent], `type`: table): BlockContent = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BlockContent]
-  }
-  
-  @scala.inline
-  def Paragraph(children: js.Array[PhrasingContent], `type`: paragraph): BlockContent = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BlockContent]
-  }
-  
-  @scala.inline
-  def Blockquote(children: js.Array[BlockContent], `type`: blockquote): BlockContent = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BlockContent]
-  }
-  
-  @scala.inline
-  def Code(`type`: code, value: js.Any): BlockContent = {
+  def HTML(`type`: html, value: js.Any): typings.mdast.mod.HTML = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BlockContent]
+    __obj.asInstanceOf[typings.mdast.mod.HTML]
   }
   
   @scala.inline
-  def List(children: js.Array[ListContent], `type`: list): BlockContent = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BlockContent]
-  }
-  
-  @scala.inline
-  def Heading(children: js.Array[PhrasingContent], depth: `1` | `2` | `3` | `4` | `5` | `6`, `type`: heading): BlockContent = {
+  def Heading(children: js.Array[PhrasingContent], depth: `1` | `2` | `3` | `4` | `5` | `6`, `type`: heading): typings.mdast.mod.Heading = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BlockContent]
+    __obj.asInstanceOf[typings.mdast.mod.Heading]
+  }
+  
+  @scala.inline
+  def List(children: js.Array[ListContent], `type`: list): typings.mdast.mod.List = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.mdast.mod.List]
+  }
+  
+  @scala.inline
+  def Paragraph(children: js.Array[PhrasingContent], `type`: paragraph): typings.mdast.mod.Paragraph = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.mdast.mod.Paragraph]
+  }
+  
+  @scala.inline
+  def Table(children: js.Array[TableContent], `type`: table): typings.mdast.mod.Table = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.mdast.mod.Table]
+  }
+  
+  @scala.inline
+  def ThematicBreak(`type`: thematicBreak): typings.mdast.mod.ThematicBreak = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.mdast.mod.ThematicBreak]
   }
 }

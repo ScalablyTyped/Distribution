@@ -1,28 +1,26 @@
 package typings.jupyterlabServices.anon
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
 import typings.std.RequestInfo
 import typings.std.RequestInit
 import typings.std.Response
-import typings.std.global.Headers
-import typings.std.global.Request
-import typings.std.global.WebSocket
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@jupyterlab/services.@jupyterlab/services/lib/serverconnection.ServerConnection.ISettings> */
 @js.native
-trait PartialISettings extends js.Object {
+trait PartialISettings extends StObject {
   
-  var Headers: js.UndefOr[Instantiable with Instantiable0[typings.std.global.Headers]] = js.native
-  
-  var Request: js.UndefOr[
-    InstantiableRequest with (Instantiable1[/* input */ RequestInfo, typings.std.global.Request])
+  var Headers: js.UndefOr[
+    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Headers */ js.Any
   ] = js.native
   
-  var WebSocket: js.UndefOr[CLOSED with (Instantiable1[/* url */ String, typings.std.global.WebSocket])] = js.native
+  var Request: js.UndefOr[
+    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Request */ js.Any
+  ] = js.native
+  
+  var WebSocket: js.UndefOr[TypeofWebSocket] = js.native
   
   var appUrl: js.UndefOr[String] = js.native
   
@@ -47,72 +45,60 @@ object PartialISettings {
   }
   
   @scala.inline
-  implicit class PartialISettingsOps[Self <: PartialISettings] (val x: Self) extends AnyVal {
+  implicit class PartialISettingsMutableBuilder[Self <: PartialISettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppUrl(value: String): Self = StObject.set(x, "appUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppUrlUndefined: Self = StObject.set(x, "appUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: Instantiable with Instantiable0[Headers]): Self = this.set("Headers", value.asInstanceOf[js.Any])
+    def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("Headers", js.undefined)
+    def setFetch(value: (/* input */ RequestInfo, /* init */ js.UndefOr[RequestInit]) => js.Promise[Response]): Self = StObject.set(x, "fetch", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRequest(value: InstantiableRequest with (Instantiable1[/* input */ RequestInfo, Request])): Self = this.set("Request", value.asInstanceOf[js.Any])
+    def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
     
     @scala.inline
-    def deleteRequest: Self = this.set("Request", js.undefined)
+    def setHeaders(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Headers */ js.Any): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebSocket(value: CLOSED with (Instantiable1[/* url */ String, WebSocket])): Self = this.set("WebSocket", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "Headers", js.undefined)
     
     @scala.inline
-    def deleteWebSocket: Self = this.set("WebSocket", js.undefined)
+    def setInit(value: RequestInit): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppUrl(value: String): Self = this.set("appUrl", value.asInstanceOf[js.Any])
+    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def deleteAppUrl: Self = this.set("appUrl", js.undefined)
+    def setRequest(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Request */ js.Any): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseUrl(value: String): Self = this.set("baseUrl", value.asInstanceOf[js.Any])
+    def setRequestUndefined: Self = StObject.set(x, "Request", js.undefined)
     
     @scala.inline
-    def deleteBaseUrl: Self = this.set("baseUrl", js.undefined)
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetch(value: (/* input */ RequestInfo, /* init */ js.UndefOr[RequestInit]) => js.Promise[Response]): Self = this.set("fetch", js.Any.fromFunction2(value))
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     
     @scala.inline
-    def deleteFetch: Self = this.set("fetch", js.undefined)
+    def setWebSocket(value: TypeofWebSocket): Self = StObject.set(x, "WebSocket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInit(value: RequestInit): Self = this.set("init", value.asInstanceOf[js.Any])
+    def setWebSocketUndefined: Self = StObject.set(x, "WebSocket", js.undefined)
     
     @scala.inline
-    def deleteInit: Self = this.set("init", js.undefined)
+    def setWsUrl(value: String): Self = StObject.set(x, "wsUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
-    
-    @scala.inline
-    def setWsUrl(value: String): Self = this.set("wsUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWsUrl: Self = this.set("wsUrl", js.undefined)
+    def setWsUrlUndefined: Self = StObject.set(x, "wsUrl", js.undefined)
   }
 }

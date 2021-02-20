@@ -2,16 +2,16 @@ package typings.firebaseDatabase
 
 import typings.firebaseDatabase.cacheNodeMod.CacheNode
 import typings.firebaseDatabase.nodeMod.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/view/ViewCache", JSImport.Namespace)
-@js.native
-object viewCacheMod extends js.Object {
+object viewCacheMod {
   
+  @JSImport("@firebase/database/dist/src/core/view/ViewCache", "ViewCache")
   @js.native
-  class ViewCache protected () extends js.Object {
+  class ViewCache protected () extends StObject {
     /**
       *
       * @param {!CacheNode} eventCache_
@@ -60,13 +60,20 @@ object viewCacheMod extends js.Object {
     def updateServerSnap(serverSnap: Node, complete: Boolean, filtered: Boolean): ViewCache = js.native
   }
   /* static members */
-  @js.native
-  object ViewCache extends js.Object {
+  object ViewCache {
+    
+    @JSImport("@firebase/database/dist/src/core/view/ViewCache", "ViewCache")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * @const
       * @type {ViewCache}
       */
-    var Empty: ViewCache = js.native
+    @JSImport("@firebase/database/dist/src/core/view/ViewCache", "ViewCache.Empty")
+    @js.native
+    def Empty: ViewCache = js.native
+    @scala.inline
+    def Empty_=(x: ViewCache): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Empty")(x.asInstanceOf[js.Any])
   }
 }

@@ -2,16 +2,16 @@ package typings.plottable
 
 import typings.plottable.componentMod.Component
 import typings.plottable.interfacesMod.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/interactions/interaction", JSImport.Namespace)
-@js.native
-object interactionMod extends js.Object {
+object interactionMod {
   
+  @JSImport("plottable/build/src/interactions/interaction", "Interaction")
   @js.native
-  class Interaction () extends js.Object {
+  class Interaction () extends StObject {
     
     /* protected */ def _anchor(component: Component): Unit = js.native
     

@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.WebAudio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioNode extends js.Object {
+trait AudioNode extends StObject {
   
   var channelCount: Double = js.native
   
@@ -41,42 +42,30 @@ object AudioNode {
   }
   
   @scala.inline
-  implicit class AudioNodeOps[Self <: AudioNode] (val x: Self) extends AnyVal {
+  implicit class AudioNodeMutableBuilder[Self <: AudioNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelCountMode(value: ChannelCountMode): Self = StObject.set(x, "channelCountMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelInterpretation(value: ChannelInterpretation): Self = StObject.set(x, "channelInterpretation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelCount(value: Double): Self = this.set("channelCount", value.asInstanceOf[js.Any])
+    def setContextId(value: GraphObjectId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelCountMode(value: ChannelCountMode): Self = this.set("channelCountMode", value.asInstanceOf[js.Any])
+    def setNodeId(value: GraphObjectId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelInterpretation(value: ChannelInterpretation): Self = this.set("channelInterpretation", value.asInstanceOf[js.Any])
+    def setNodeType(value: NodeType): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextId(value: GraphObjectId): Self = this.set("contextId", value.asInstanceOf[js.Any])
+    def setNumberOfInputs(value: Double): Self = StObject.set(x, "numberOfInputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeId(value: GraphObjectId): Self = this.set("nodeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNodeType(value: NodeType): Self = this.set("nodeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumberOfInputs(value: Double): Self = this.set("numberOfInputs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumberOfOutputs(value: Double): Self = this.set("numberOfOutputs", value.asInstanceOf[js.Any])
+    def setNumberOfOutputs(value: Double): Self = StObject.set(x, "numberOfOutputs", value.asInstanceOf[js.Any])
   }
 }

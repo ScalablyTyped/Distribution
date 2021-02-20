@@ -1,12 +1,13 @@
 package typings.jsoneditor.mod
 
 import typings.jsoneditor.jsoneditorStrings.separator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MenuItem extends js.Object {
+trait MenuItem extends StObject {
   
   var className: String = js.native
   
@@ -31,54 +32,42 @@ object MenuItem {
   }
   
   @scala.inline
-  implicit class MenuItemOps[Self <: MenuItem] (val x: Self) extends AnyVal {
+  implicit class MenuItemMutableBuilder[Self <: MenuItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setSubmenu(value: js.Array[MenuItem]): Self = StObject.set(x, "submenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setSubmenuTitle(value: String): Self = StObject.set(x, "submenuTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setSubmenuTitleUndefined: Self = StObject.set(x, "submenuTitle", js.undefined)
     
     @scala.inline
-    def setClick(value: () => Unit): Self = this.set("click", js.Any.fromFunction0(value))
+    def setSubmenuUndefined: Self = StObject.set(x, "submenu", js.undefined)
     
     @scala.inline
-    def deleteClick: Self = this.set("click", js.undefined)
+    def setSubmenuVarargs(value: MenuItem*): Self = StObject.set(x, "submenu", js.Array(value :_*))
     
     @scala.inline
-    def setSubmenuVarargs(value: MenuItem*): Self = this.set("submenu", js.Array(value :_*))
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmenu(value: js.Array[MenuItem]): Self = this.set("submenu", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubmenu: Self = this.set("submenu", js.undefined)
+    def setType(value: separator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmenuTitle(value: String): Self = this.set("submenuTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubmenuTitle: Self = this.set("submenuTitle", js.undefined)
-    
-    @scala.inline
-    def setType(value: separator): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

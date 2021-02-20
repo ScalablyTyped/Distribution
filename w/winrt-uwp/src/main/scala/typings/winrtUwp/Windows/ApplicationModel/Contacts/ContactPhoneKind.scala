@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContactPhoneKind extends js.Object
+sealed trait ContactPhoneKind extends StObject
 /** Specifies the kinds of phones for a contact. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactPhoneKind")
 @js.native
-object ContactPhoneKind extends js.Object {
+object ContactPhoneKind extends StObject {
   
   /** The phone number of the contact's assistant. */
   @js.native

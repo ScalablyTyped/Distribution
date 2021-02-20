@@ -1,6 +1,7 @@
 package typings.vegaTypings.encodeMod
 
 import typings.vegaTypings.anon.Test
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,27 +20,15 @@ object ShapeEncodeEntry {
   }
   
   @scala.inline
-  implicit class ShapeEncodeEntryOps[Self <: ShapeEncodeEntry] (val x: Self) extends AnyVal {
+  implicit class ShapeEncodeEntryMutableBuilder[Self <: ShapeEncodeEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShape(value: ProductionRule[StringValueRef]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setShapeVarargs(value: (Test with StringValueRef)*): Self = this.set("shape", js.Array(value :_*))
-    
-    @scala.inline
-    def setShape(value: ProductionRule[StringValueRef]): Self = this.set("shape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShape: Self = this.set("shape", js.undefined)
+    def setShapeVarargs(value: (Test with StringValueRef)*): Self = StObject.set(x, "shape", js.Array(value :_*))
   }
 }

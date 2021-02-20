@@ -2,16 +2,15 @@ package typings.mermaid
 
 import typings.mermaid.mermaidAPIMod.mermaidAPI.Config
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait TypeofmermaidAPI extends js.Object {
+  trait TypeofmermaidAPI extends StObject {
     
     def getConfig(): Config = js.native
     

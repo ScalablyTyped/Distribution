@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArchivalSummary extends js.Object {
+trait ArchivalSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the backup the table was archived to, when applicable in the archival reason. If you wish to restore this backup to the same table name, you will need to delete the original table.
@@ -31,36 +32,24 @@ object ArchivalSummary {
   }
   
   @scala.inline
-  implicit class ArchivalSummaryOps[Self <: ArchivalSummary] (val x: Self) extends AnyVal {
+  implicit class ArchivalSummaryMutableBuilder[Self <: ArchivalSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchivalBackupArn(value: BackupArn): Self = StObject.set(x, "ArchivalBackupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArchivalBackupArnUndefined: Self = StObject.set(x, "ArchivalBackupArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArchivalDateTime(value: Date): Self = StObject.set(x, "ArchivalDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchivalBackupArn(value: BackupArn): Self = this.set("ArchivalBackupArn", value.asInstanceOf[js.Any])
+    def setArchivalDateTimeUndefined: Self = StObject.set(x, "ArchivalDateTime", js.undefined)
     
     @scala.inline
-    def deleteArchivalBackupArn: Self = this.set("ArchivalBackupArn", js.undefined)
+    def setArchivalReason(value: ArchivalReason): Self = StObject.set(x, "ArchivalReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchivalDateTime(value: Date): Self = this.set("ArchivalDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArchivalDateTime: Self = this.set("ArchivalDateTime", js.undefined)
-    
-    @scala.inline
-    def setArchivalReason(value: ArchivalReason): Self = this.set("ArchivalReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArchivalReason: Self = this.set("ArchivalReason", js.undefined)
+    def setArchivalReasonUndefined: Self = StObject.set(x, "ArchivalReason", js.undefined)
   }
 }

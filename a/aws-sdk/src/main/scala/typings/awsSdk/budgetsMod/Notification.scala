@@ -1,11 +1,12 @@
 package typings.awsSdk.budgetsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Notification extends js.Object {
+trait Notification extends StObject {
   
   /**
     * The comparison that is used for this notification.
@@ -45,39 +46,27 @@ object Notification {
   }
   
   @scala.inline
-  implicit class NotificationOps[Self <: Notification] (val x: Self) extends AnyVal {
+  implicit class NotificationMutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotificationState(value: NotificationState): Self = StObject.set(x, "NotificationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotificationStateUndefined: Self = StObject.set(x, "NotificationState", js.undefined)
     
     @scala.inline
-    def setComparisonOperator(value: ComparisonOperator): Self = this.set("ComparisonOperator", value.asInstanceOf[js.Any])
+    def setNotificationType(value: NotificationType): Self = StObject.set(x, "NotificationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationType(value: NotificationType): Self = this.set("NotificationType", value.asInstanceOf[js.Any])
+    def setThreshold(value: NotificationThreshold): Self = StObject.set(x, "Threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreshold(value: NotificationThreshold): Self = this.set("Threshold", value.asInstanceOf[js.Any])
+    def setThresholdType(value: ThresholdType): Self = StObject.set(x, "ThresholdType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationState(value: NotificationState): Self = this.set("NotificationState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationState: Self = this.set("NotificationState", js.undefined)
-    
-    @scala.inline
-    def setThresholdType(value: ThresholdType): Self = this.set("ThresholdType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThresholdType: Self = this.set("ThresholdType", js.undefined)
+    def setThresholdTypeUndefined: Self = StObject.set(x, "ThresholdType", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.ngStomp
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ngStomp.ngStomp.Headers
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ngStomp extends js.Object {
+trait ngStomp extends StObject {
   
   def connect(endpoint: String): js.Any = js.native
   def connect(endpoint: String, headers: Headers): js.Any = js.native
@@ -50,9 +51,7 @@ trait ngStomp extends js.Object {
   
   def unsubscribe(): js.Any = js.native
 }
-@JSGlobal("ngStomp")
-@js.native
-object ngStomp extends js.Object {
+object ngStomp {
   
   type Headers = StringDictionary[js.Any]
 }

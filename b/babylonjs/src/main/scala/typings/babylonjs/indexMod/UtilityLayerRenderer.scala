@@ -1,5 +1,6 @@
 package typings.babylonjs.indexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,21 +23,21 @@ class UtilityLayerRenderer protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/index", "UtilityLayerRenderer")
-@js.native
-object UtilityLayerRenderer extends js.Object {
+object UtilityLayerRenderer {
   
-  /**
-    * A shared utility layer that can be used to embed objects into a scene (Depth map of the previous scene is not cleared before drawing on top of it)
-    */
-  def DefaultKeepDepthUtilityLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer = js.native
+  @JSImport("babylonjs/index", "UtilityLayerRenderer")
+  @js.native
+  val ^ : js.Any = js.native
   
-  /**
-    * A shared utility layer that can be used to overlay objects into a scene (Depth map of the previous scene is cleared before drawing on top of it)
-    */
-  def DefaultUtilityLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer = js.native
+  @JSImport("babylonjs/index", "UtilityLayerRenderer._DefaultKeepDepthUtilityLayer")
+  @js.native
+  def _DefaultKeepDepthUtilityLayer: js.Any = js.native
+  @scala.inline
+  def _DefaultKeepDepthUtilityLayer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultKeepDepthUtilityLayer")(x.asInstanceOf[js.Any])
   
-  var _DefaultKeepDepthUtilityLayer: js.Any = js.native
-  
-  var _DefaultUtilityLayer: js.Any = js.native
+  @JSImport("babylonjs/index", "UtilityLayerRenderer._DefaultUtilityLayer")
+  @js.native
+  def _DefaultUtilityLayer: js.Any = js.native
+  @scala.inline
+  def _DefaultUtilityLayer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultUtilityLayer")(x.asInstanceOf[js.Any])
 }

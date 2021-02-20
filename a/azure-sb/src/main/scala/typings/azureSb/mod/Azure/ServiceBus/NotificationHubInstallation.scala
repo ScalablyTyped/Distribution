@@ -8,12 +8,13 @@ import typings.azureSb.azureSbStrings.apns
 import typings.azureSb.azureSbStrings.gcm
 import typings.azureSb.azureSbStrings.mpns
 import typings.azureSb.azureSbStrings.wns
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationHubInstallation extends js.Object {
+trait NotificationHubInstallation extends StObject {
   
   val expirationTime: js.UndefOr[String] = js.native
   
@@ -46,78 +47,66 @@ object NotificationHubInstallation {
   }
   
   @scala.inline
-  implicit class NotificationHubInstallationOps[Self <: NotificationHubInstallation] (val x: Self) extends AnyVal {
+  implicit class NotificationHubInstallationMutableBuilder[Self <: NotificationHubInstallation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpirationTimeUndefined: Self = StObject.set(x, "expirationTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpiredPushChannel(value: String): Self = StObject.set(x, "expiredPushChannel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallationId(value: String): Self = this.set("installationId", value.asInstanceOf[js.Any])
+    def setExpiredPushChannelUndefined: Self = StObject.set(x, "expiredPushChannel", js.undefined)
     
     @scala.inline
-    def setPlatform(value: apns | wns | mpns | adm | gcm): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setInstallationId(value: String): Self = StObject.set(x, "installationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPushChannel(value: String): Self = this.set("pushChannel", value.asInstanceOf[js.Any])
+    def setLastActiveOn(value: String): Self = StObject.set(x, "lastActiveOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationTime(value: String): Self = this.set("expirationTime", value.asInstanceOf[js.Any])
+    def setLastActiveOnUndefined: Self = StObject.set(x, "lastActiveOn", js.undefined)
     
     @scala.inline
-    def deleteExpirationTime: Self = this.set("expirationTime", js.undefined)
+    def setLastUpdate(value: String): Self = StObject.set(x, "lastUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiredPushChannel(value: String): Self = this.set("expiredPushChannel", value.asInstanceOf[js.Any])
+    def setLastUpdateUndefined: Self = StObject.set(x, "lastUpdate", js.undefined)
     
     @scala.inline
-    def deleteExpiredPushChannel: Self = this.set("expiredPushChannel", js.undefined)
+    def setPlatform(value: apns | wns | mpns | adm | gcm): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastActiveOn(value: String): Self = this.set("lastActiveOn", value.asInstanceOf[js.Any])
+    def setPushChannel(value: String): Self = StObject.set(x, "pushChannel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastActiveOn: Self = this.set("lastActiveOn", js.undefined)
+    def setSecondaryTile(value: StringDictionary[PushChannel]): Self = StObject.set(x, "secondaryTile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdate(value: String): Self = this.set("lastUpdate", value.asInstanceOf[js.Any])
+    def setSecondaryTileUndefined: Self = StObject.set(x, "secondaryTile", js.undefined)
     
     @scala.inline
-    def deleteLastUpdate: Self = this.set("lastUpdate", js.undefined)
+    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondaryTile(value: StringDictionary[PushChannel]): Self = this.set("secondaryTile", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteSecondaryTile: Self = this.set("secondaryTile", js.undefined)
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    def setTemplates(value: StringDictionary[Body]): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplates(value: StringDictionary[Body]): Self = this.set("templates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplates: Self = this.set("templates", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

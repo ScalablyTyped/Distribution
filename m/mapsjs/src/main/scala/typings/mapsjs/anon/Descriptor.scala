@@ -2,12 +2,13 @@ package typings.mapsjs.anon
 
 import typings.mapsjs.mod.tile.renderer
 import typings.mapsjs.mod.tile.requestor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Descriptor extends js.Object {
+trait Descriptor extends StObject {
   
   var descriptor: js.UndefOr[js.Any] = js.native
   
@@ -48,108 +49,96 @@ object Descriptor {
   }
   
   @scala.inline
-  implicit class DescriptorOps[Self <: Descriptor] (val x: Self) extends AnyVal {
+  implicit class DescriptorMutableBuilder[Self <: Descriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescriptor(value: js.Any): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptorUndefined: Self = StObject.set(x, "descriptor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableTileFadeIn(value: Boolean): Self = StObject.set(x, "enableTileFadeIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptor(value: js.Any): Self = this.set("descriptor", value.asInstanceOf[js.Any])
+    def setEnableTileFadeInUndefined: Self = StObject.set(x, "enableTileFadeIn", js.undefined)
     
     @scala.inline
-    def deleteDescriptor: Self = this.set("descriptor", js.undefined)
+    def setMaxConcurrentRequests(value: Double): Self = StObject.set(x, "maxConcurrentRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableTileFadeIn(value: Boolean): Self = this.set("enableTileFadeIn", value.asInstanceOf[js.Any])
+    def setMaxConcurrentRequestsUndefined: Self = StObject.set(x, "maxConcurrentRequests", js.undefined)
     
     @scala.inline
-    def deleteEnableTileFadeIn: Self = this.set("enableTileFadeIn", js.undefined)
+    def setMaxZoomLevel(value: Double): Self = StObject.set(x, "maxZoomLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxConcurrentRequests(value: Double): Self = this.set("maxConcurrentRequests", value.asInstanceOf[js.Any])
+    def setMaxZoomLevelUndefined: Self = StObject.set(x, "maxZoomLevel", js.undefined)
     
     @scala.inline
-    def deleteMaxConcurrentRequests: Self = this.set("maxConcurrentRequests", js.undefined)
+    def setMinZoomLevel(value: Double): Self = StObject.set(x, "minZoomLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZoomLevel(value: Double): Self = this.set("maxZoomLevel", value.asInstanceOf[js.Any])
+    def setMinZoomLevelUndefined: Self = StObject.set(x, "minZoomLevel", js.undefined)
     
     @scala.inline
-    def deleteMaxZoomLevel: Self = this.set("maxZoomLevel", js.undefined)
+    def setNotifyErrorAction(value: /* msg */ js.UndefOr[String] => Unit): Self = StObject.set(x, "notifyErrorAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinZoomLevel(value: Double): Self = this.set("minZoomLevel", value.asInstanceOf[js.Any])
+    def setNotifyErrorActionUndefined: Self = StObject.set(x, "notifyErrorAction", js.undefined)
     
     @scala.inline
-    def deleteMinZoomLevel: Self = this.set("minZoomLevel", js.undefined)
+    def setNotifyLoadingQueueHasEmptiedAction(value: () => Unit): Self = StObject.set(x, "notifyLoadingQueueHasEmptiedAction", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNotifyErrorAction(value: /* msg */ js.UndefOr[String] => Unit): Self = this.set("notifyErrorAction", js.Any.fromFunction1(value))
+    def setNotifyLoadingQueueHasEmptiedActionUndefined: Self = StObject.set(x, "notifyLoadingQueueHasEmptiedAction", js.undefined)
     
     @scala.inline
-    def deleteNotifyErrorAction: Self = this.set("notifyErrorAction", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotifyLoadingQueueHasEmptiedAction(value: () => Unit): Self = this.set("notifyLoadingQueueHasEmptiedAction", js.Any.fromFunction0(value))
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteNotifyLoadingQueueHasEmptiedAction: Self = this.set("notifyLoadingQueueHasEmptiedAction", js.undefined)
+    def setRenderer(value: renderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setRequestProcessor(value: js.Any): Self = StObject.set(x, "requestProcessor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderer(value: renderer): Self = this.set("renderer", value.asInstanceOf[js.Any])
+    def setRequestProcessorUndefined: Self = StObject.set(x, "requestProcessor", js.undefined)
     
     @scala.inline
-    def deleteRenderer: Self = this.set("renderer", js.undefined)
+    def setRequestor(value: requestor): Self = StObject.set(x, "requestor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestProcessor(value: js.Any): Self = this.set("requestProcessor", value.asInstanceOf[js.Any])
+    def setRequestorUndefined: Self = StObject.set(x, "requestor", js.undefined)
     
     @scala.inline
-    def deleteRequestProcessor: Self = this.set("requestProcessor", js.undefined)
+    def setRetainInterlevelContent(value: Boolean): Self = StObject.set(x, "retainInterlevelContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestor(value: requestor): Self = this.set("requestor", value.asInstanceOf[js.Any])
+    def setRetainInterlevelContentUndefined: Self = StObject.set(x, "retainInterlevelContent", js.undefined)
     
     @scala.inline
-    def deleteRequestor: Self = this.set("requestor", js.undefined)
+    def setTileBleedPix(value: Double): Self = StObject.set(x, "tileBleedPix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetainInterlevelContent(value: Boolean): Self = this.set("retainInterlevelContent", value.asInstanceOf[js.Any])
+    def setTileBleedPixUndefined: Self = StObject.set(x, "tileBleedPix", js.undefined)
     
     @scala.inline
-    def deleteRetainInterlevelContent: Self = this.set("retainInterlevelContent", js.undefined)
+    def setUseBackdrop(value: Boolean): Self = StObject.set(x, "useBackdrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileBleedPix(value: Double): Self = this.set("tileBleedPix", value.asInstanceOf[js.Any])
+    def setUseBackdropUndefined: Self = StObject.set(x, "useBackdrop", js.undefined)
     
     @scala.inline
-    def deleteTileBleedPix: Self = this.set("tileBleedPix", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseBackdrop(value: Boolean): Self = this.set("useBackdrop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseBackdrop: Self = this.set("useBackdrop", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

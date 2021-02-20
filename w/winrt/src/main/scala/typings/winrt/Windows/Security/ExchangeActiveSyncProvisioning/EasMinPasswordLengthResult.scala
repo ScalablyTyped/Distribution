@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EasMinPasswordLengthResult extends js.Object
+sealed trait EasMinPasswordLengthResult extends StObject
 @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasMinPasswordLengthResult")
 @js.native
-object EasMinPasswordLengthResult extends js.Object {
+object EasMinPasswordLengthResult extends StObject {
   
   @js.native
   sealed trait adminsCannotChangePassword extends EasMinPasswordLengthResult

@@ -1,12 +1,13 @@
 package typings.amapJsSdk.anon
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoFitView extends js.Object {
+trait AutoFitView extends StObject {
   
   var autoFitView: js.UndefOr[Boolean] = js.native
   
@@ -43,96 +44,84 @@ object AutoFitView {
   }
   
   @scala.inline
-  implicit class AutoFitViewOps[Self <: AutoFitView] (val x: Self) extends AnyVal {
+  implicit class AutoFitViewMutableBuilder[Self <: AutoFitView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoFitView(value: Boolean): Self = StObject.set(x, "autoFitView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoFitViewUndefined: Self = StObject.set(x, "autoFitView", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildren(value: Double): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFitView(value: Boolean): Self = this.set("autoFitView", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteAutoFitView: Self = this.set("autoFitView", js.undefined)
+    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: Double): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setCitylimit(value: Boolean): Self = StObject.set(x, "citylimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    def setCitylimitUndefined: Self = StObject.set(x, "citylimit", js.undefined)
     
     @scala.inline
-    def deleteCity: Self = this.set("city", js.undefined)
+    def setExtensions(value: String): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCitylimit(value: Boolean): Self = this.set("citylimit", value.asInstanceOf[js.Any])
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def deleteCitylimit: Self = this.set("citylimit", js.undefined)
+    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensions(value: String): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
     @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    def setMap(value: typings.amapJsSdk.AMap.Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteLang: Self = this.set("lang", js.undefined)
+    def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: typings.amapJsSdk.AMap.Map): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setPageIndexUndefined: Self = StObject.set(x, "pageIndex", js.undefined)
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageIndex(value: Double): Self = this.set("pageIndex", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def deletePageIndex: Self = this.set("pageIndex", js.undefined)
+    def setPanel(value: String | HTMLElement): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setRenderStyle(value: String): Self = StObject.set(x, "renderStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanel(value: String | HTMLElement): Self = this.set("panel", value.asInstanceOf[js.Any])
+    def setRenderStyleUndefined: Self = StObject.set(x, "renderStyle", js.undefined)
     
     @scala.inline
-    def deletePanel: Self = this.set("panel", js.undefined)
+    def setShowCover(value: Boolean): Self = StObject.set(x, "showCover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderStyle(value: String): Self = this.set("renderStyle", value.asInstanceOf[js.Any])
+    def setShowCoverUndefined: Self = StObject.set(x, "showCover", js.undefined)
     
     @scala.inline
-    def deleteRenderStyle: Self = this.set("renderStyle", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCover(value: Boolean): Self = this.set("showCover", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowCover: Self = this.set("showCover", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

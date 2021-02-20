@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * new suggested value.
   */
 @js.native
-trait SchemaSheetsChartReferenceSuggestionState extends js.Object {
+trait SchemaSheetsChartReferenceSuggestionState extends StObject {
   
   /**
     * Indicates if there was a suggested change to chart_id.
@@ -31,30 +32,18 @@ object SchemaSheetsChartReferenceSuggestionState {
   }
   
   @scala.inline
-  implicit class SchemaSheetsChartReferenceSuggestionStateOps[Self <: SchemaSheetsChartReferenceSuggestionState] (val x: Self) extends AnyVal {
+  implicit class SchemaSheetsChartReferenceSuggestionStateMutableBuilder[Self <: SchemaSheetsChartReferenceSuggestionState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChartIdSuggested(value: Boolean): Self = StObject.set(x, "chartIdSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChartIdSuggestedUndefined: Self = StObject.set(x, "chartIdSuggested", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSpreadsheetIdSuggested(value: Boolean): Self = StObject.set(x, "spreadsheetIdSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartIdSuggested(value: Boolean): Self = this.set("chartIdSuggested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChartIdSuggested: Self = this.set("chartIdSuggested", js.undefined)
-    
-    @scala.inline
-    def setSpreadsheetIdSuggested(value: Boolean): Self = this.set("spreadsheetIdSuggested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpreadsheetIdSuggested: Self = this.set("spreadsheetIdSuggested", js.undefined)
+    def setSpreadsheetIdSuggestedUndefined: Self = StObject.set(x, "spreadsheetIdSuggested", js.undefined)
   }
 }

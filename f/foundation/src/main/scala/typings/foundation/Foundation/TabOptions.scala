@@ -1,12 +1,13 @@
 package typings.foundation.Foundation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/tabs.html
 @js.native
-trait TabOptions extends js.Object {
+trait TabOptions extends StObject {
   
   var active_class: js.UndefOr[String] = js.native
   
@@ -27,48 +28,36 @@ object TabOptions {
   }
   
   @scala.inline
-  implicit class TabOptionsOps[Self <: TabOptions] (val x: Self) extends AnyVal {
+  implicit class TabOptionsMutableBuilder[Self <: TabOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive_class(value: String): Self = StObject.set(x, "active_class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActive_classUndefined: Self = StObject.set(x, "active_class", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallback(value: () => _): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setActive_class(value: String): Self = this.set("active_class", value.asInstanceOf[js.Any])
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def deleteActive_class: Self = this.set("active_class", js.undefined)
+    def setDeep_linking(value: Boolean): Self = StObject.set(x, "deep_linking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: () => _): Self = this.set("callback", js.Any.fromFunction0(value))
+    def setDeep_linkingUndefined: Self = StObject.set(x, "deep_linking", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setIs_hover(value: Boolean): Self = StObject.set(x, "is_hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeep_linking(value: Boolean): Self = this.set("deep_linking", value.asInstanceOf[js.Any])
+    def setIs_hoverUndefined: Self = StObject.set(x, "is_hover", js.undefined)
     
     @scala.inline
-    def deleteDeep_linking: Self = this.set("deep_linking", js.undefined)
+    def setScroll_to_content(value: Boolean): Self = StObject.set(x, "scroll_to_content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_hover(value: Boolean): Self = this.set("is_hover", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIs_hover: Self = this.set("is_hover", js.undefined)
-    
-    @scala.inline
-    def setScroll_to_content(value: Boolean): Self = this.set("scroll_to_content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScroll_to_content: Self = this.set("scroll_to_content", js.undefined)
+    def setScroll_to_contentUndefined: Self = StObject.set(x, "scroll_to_content", js.undefined)
   }
 }

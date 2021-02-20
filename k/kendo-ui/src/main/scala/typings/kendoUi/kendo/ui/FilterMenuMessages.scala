@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterMenuMessages extends js.Object {
+trait FilterMenuMessages extends StObject {
   
   var additionalOperator: js.UndefOr[String] = js.native
   
@@ -40,90 +41,78 @@ object FilterMenuMessages {
   }
   
   @scala.inline
-  implicit class FilterMenuMessagesOps[Self <: FilterMenuMessages] (val x: Self) extends AnyVal {
+  implicit class FilterMenuMessagesMutableBuilder[Self <: FilterMenuMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalOperator(value: String): Self = StObject.set(x, "additionalOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalOperatorUndefined: Self = StObject.set(x, "additionalOperator", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalValue(value: String): Self = StObject.set(x, "additionalValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalOperator(value: String): Self = this.set("additionalOperator", value.asInstanceOf[js.Any])
+    def setAdditionalValueUndefined: Self = StObject.set(x, "additionalValue", js.undefined)
     
     @scala.inline
-    def deleteAdditionalOperator: Self = this.set("additionalOperator", js.undefined)
+    def setAnd(value: String): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalValue(value: String): Self = this.set("additionalValue", value.asInstanceOf[js.Any])
+    def setAndUndefined: Self = StObject.set(x, "and", js.undefined)
     
     @scala.inline
-    def deleteAdditionalValue: Self = this.set("additionalValue", js.undefined)
+    def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnd(value: String): Self = this.set("and", value.asInstanceOf[js.Any])
+    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
     @scala.inline
-    def deleteAnd: Self = this.set("and", js.undefined)
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: String): Self = this.set("clear", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteClear: Self = this.set("clear", js.undefined)
+    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setIsFalse(value: String): Self = StObject.set(x, "isFalse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfo(value: String): Self = this.set("info", value.asInstanceOf[js.Any])
+    def setIsFalseUndefined: Self = StObject.set(x, "isFalse", js.undefined)
     
     @scala.inline
-    def deleteInfo: Self = this.set("info", js.undefined)
+    def setIsTrue(value: String): Self = StObject.set(x, "isTrue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFalse(value: String): Self = this.set("isFalse", value.asInstanceOf[js.Any])
+    def setIsTrueUndefined: Self = StObject.set(x, "isTrue", js.undefined)
     
     @scala.inline
-    def deleteIsFalse: Self = this.set("isFalse", js.undefined)
+    def setLogic(value: String): Self = StObject.set(x, "logic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTrue(value: String): Self = this.set("isTrue", value.asInstanceOf[js.Any])
+    def setLogicUndefined: Self = StObject.set(x, "logic", js.undefined)
     
     @scala.inline
-    def deleteIsTrue: Self = this.set("isTrue", js.undefined)
+    def setOr(value: String): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogic(value: String): Self = this.set("logic", value.asInstanceOf[js.Any])
+    def setOrUndefined: Self = StObject.set(x, "or", js.undefined)
     
     @scala.inline
-    def deleteLogic: Self = this.set("logic", js.undefined)
+    def setSelectValue(value: String): Self = StObject.set(x, "selectValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOr(value: String): Self = this.set("or", value.asInstanceOf[js.Any])
+    def setSelectValueUndefined: Self = StObject.set(x, "selectValue", js.undefined)
     
     @scala.inline
-    def deleteOr: Self = this.set("or", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectValue(value: String): Self = this.set("selectValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectValue: Self = this.set("selectValue", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

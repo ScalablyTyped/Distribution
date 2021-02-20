@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fillstyle extends js.Object {
+trait Fillstyle extends StObject {
   
   var fill_style: js.UndefOr[String] = js.native
   
@@ -32,66 +33,54 @@ object Fillstyle {
   }
   
   @scala.inline
-  implicit class FillstyleOps[Self <: Fillstyle] (val x: Self) extends AnyVal {
+  implicit class FillstyleMutableBuilder[Self <: Fillstyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFill_style(value: String): Self = StObject.set(x, "fill_style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFill_styleUndefined: Self = StObject.set(x, "fill_style", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlyph_spacing_px(value: Double): Self = StObject.set(x, "glyph_spacing_px", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill_style(value: String): Self = this.set("fill_style", value.asInstanceOf[js.Any])
+    def setGlyph_spacing_pxUndefined: Self = StObject.set(x, "glyph_spacing_px", js.undefined)
     
     @scala.inline
-    def deleteFill_style: Self = this.set("fill_style", js.undefined)
+    def setNum_lines(value: Double): Self = StObject.set(x, "num_lines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyph_spacing_px(value: Double): Self = this.set("glyph_spacing_px", value.asInstanceOf[js.Any])
+    def setNum_linesUndefined: Self = StObject.set(x, "num_lines", js.undefined)
     
     @scala.inline
-    def deleteGlyph_spacing_px: Self = this.set("glyph_spacing_px", js.undefined)
+    def setSpace_above_staff_ln(value: Double): Self = StObject.set(x, "space_above_staff_ln", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNum_lines(value: Double): Self = this.set("num_lines", value.asInstanceOf[js.Any])
+    def setSpace_above_staff_lnUndefined: Self = StObject.set(x, "space_above_staff_ln", js.undefined)
     
     @scala.inline
-    def deleteNum_lines: Self = this.set("num_lines", js.undefined)
+    def setSpace_below_staff_ln(value: Double): Self = StObject.set(x, "space_below_staff_ln", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpace_above_staff_ln(value: Double): Self = this.set("space_above_staff_ln", value.asInstanceOf[js.Any])
+    def setSpace_below_staff_lnUndefined: Self = StObject.set(x, "space_below_staff_ln", js.undefined)
     
     @scala.inline
-    def deleteSpace_above_staff_ln: Self = this.set("space_above_staff_ln", js.undefined)
+    def setSpacing_between_lines_px(value: Double): Self = StObject.set(x, "spacing_between_lines_px", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpace_below_staff_ln(value: Double): Self = this.set("space_below_staff_ln", value.asInstanceOf[js.Any])
+    def setSpacing_between_lines_pxUndefined: Self = StObject.set(x, "spacing_between_lines_px", js.undefined)
     
     @scala.inline
-    def deleteSpace_below_staff_ln: Self = this.set("space_below_staff_ln", js.undefined)
+    def setTop_text_position(value: Double): Self = StObject.set(x, "top_text_position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpacing_between_lines_px(value: Double): Self = this.set("spacing_between_lines_px", value.asInstanceOf[js.Any])
+    def setTop_text_positionUndefined: Self = StObject.set(x, "top_text_position", js.undefined)
     
     @scala.inline
-    def deleteSpacing_between_lines_px: Self = this.set("spacing_between_lines_px", js.undefined)
+    def setVertical_bar_width(value: Double): Self = StObject.set(x, "vertical_bar_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop_text_position(value: Double): Self = this.set("top_text_position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTop_text_position: Self = this.set("top_text_position", js.undefined)
-    
-    @scala.inline
-    def setVertical_bar_width(value: Double): Self = this.set("vertical_bar_width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertical_bar_width: Self = this.set("vertical_bar_width", js.undefined)
+    def setVertical_bar_widthUndefined: Self = StObject.set(x, "vertical_bar_width", js.undefined)
   }
 }

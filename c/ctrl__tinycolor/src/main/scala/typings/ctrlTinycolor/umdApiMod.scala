@@ -1,8 +1,8 @@
 package typings.ctrlTinycolor
 
 import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.ctrlTinycolor.anon.A
 import typings.ctrlTinycolor.anon.FnCall
 import typings.ctrlTinycolor.anon.PartialTinyColorOptions
@@ -18,16 +18,35 @@ import typings.ctrlTinycolor.interfacesMod.RGBA
 import typings.ctrlTinycolor.randomMod.RandomCountOptions
 import typings.ctrlTinycolor.randomMod.RandomOptions
 import typings.ctrlTinycolor.readabilityMod.WCAG2FallbackParms
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ctrl/tinycolor/dist/umd_api", JSImport.Namespace)
-@js.native
-object umdApiMod extends js.Object {
+object umdApiMod {
+  
+  object default extends Shortcut {
+    
+    @JSImport("@ctrl/tinycolor/dist/umd_api", JSImport.Default)
+    @js.native
+    val ^ : TinyColorUMD = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("@ctrl/tinycolor/dist/umd_api", "default.TinyColor")
+    @js.native
+    class TinyColor () extends TinyColor_ {
+      def this(color: ColorInput) = this()
+      def this(color: js.UndefOr[ColorInput], opts: PartialTinyColorOptions) = this()
+    }
+    
+    type _To = TinyColorUMD
+    
+    /* This means you don't have to write `^`, but can instead just say `default.foo` */
+    override def _to: TinyColorUMD = ^
+  }
   
   @js.native
-  trait TinyColorUMD extends js.Object {
+  trait TinyColorUMD extends StObject {
     
     def apply(): TinyColor_ = js.native
     
@@ -94,15 +113,5 @@ object umdApiMod extends js.Object {
     def toMsFilter(firstColor: ColorInput, secondColor: ColorInput): String = js.native
     @JSName("toMsFilter")
     var toMsFilter_Original: js.Function2[/* firstColor */ ColorInput, /* secondColor */ js.UndefOr[ColorInput], String] = js.native
-  }
-  
-  @js.native
-  object default extends TopLevel[TinyColorUMD] {
-    
-    @js.native
-    class TinyColor () extends TinyColor_ {
-      def this(color: ColorInput) = this()
-      def this(color: js.UndefOr[ColorInput], opts: PartialTinyColorOptions) = this()
-    }
   }
 }

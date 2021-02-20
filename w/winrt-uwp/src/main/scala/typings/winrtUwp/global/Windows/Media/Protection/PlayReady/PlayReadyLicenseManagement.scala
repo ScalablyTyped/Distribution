@@ -1,6 +1,7 @@
 package typings.winrtUwp.global.Windows.Media.Protection.PlayReady
 
 import typings.winrtUwp.Windows.Foundation.IAsyncAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,15 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class PlayReadyLicenseManagement ()
   extends typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyLicenseManagement
-/* static members */
-@JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyLicenseManagement")
-@js.native
-object PlayReadyLicenseManagement extends js.Object {
+object PlayReadyLicenseManagement {
   
   /**
     * Deletes licenses that match the specified content header.
     * @param contentHeader Content header with a key identifier with which to match licenses.
     * @return The asynchronous operation performing the deletion.
     */
+  /* static member */
+  @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyLicenseManagement.deleteLicenses")
+  @js.native
   def deleteLicenses(contentHeader: typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyContentHeader): IAsyncAction = js.native
 }

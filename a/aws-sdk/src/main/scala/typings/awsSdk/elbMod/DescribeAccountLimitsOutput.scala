@@ -1,11 +1,12 @@
 package typings.awsSdk.elbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAccountLimitsOutput extends js.Object {
+trait DescribeAccountLimitsOutput extends StObject {
   
   /**
     * Information about the limits.
@@ -26,33 +27,21 @@ object DescribeAccountLimitsOutput {
   }
   
   @scala.inline
-  implicit class DescribeAccountLimitsOutputOps[Self <: DescribeAccountLimitsOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeAccountLimitsOutputMutableBuilder[Self <: DescribeAccountLimitsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimits(value: Limits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimitsVarargs(value: Limit*): Self = StObject.set(x, "Limits", js.Array(value :_*))
     
     @scala.inline
-    def setLimitsVarargs(value: Limit*): Self = this.set("Limits", js.Array(value :_*))
+    def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimits(value: Limits): Self = this.set("Limits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimits: Self = this.set("Limits", js.undefined)
-    
-    @scala.inline
-    def setNextMarker(value: Marker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

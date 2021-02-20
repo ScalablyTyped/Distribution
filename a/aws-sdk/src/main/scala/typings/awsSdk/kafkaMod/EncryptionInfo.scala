@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EncryptionInfo extends js.Object {
+trait EncryptionInfo extends StObject {
   
   /**
     * 
@@ -30,30 +31,18 @@ object EncryptionInfo {
   }
   
   @scala.inline
-  implicit class EncryptionInfoOps[Self <: EncryptionInfo] (val x: Self) extends AnyVal {
+  implicit class EncryptionInfoMutableBuilder[Self <: EncryptionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryptionAtRest(value: EncryptionAtRest): Self = StObject.set(x, "EncryptionAtRest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionAtRestUndefined: Self = StObject.set(x, "EncryptionAtRest", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryptionInTransit(value: EncryptionInTransit): Self = StObject.set(x, "EncryptionInTransit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionAtRest(value: EncryptionAtRest): Self = this.set("EncryptionAtRest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionAtRest: Self = this.set("EncryptionAtRest", js.undefined)
-    
-    @scala.inline
-    def setEncryptionInTransit(value: EncryptionInTransit): Self = this.set("EncryptionInTransit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionInTransit: Self = this.set("EncryptionInTransit", js.undefined)
+    def setEncryptionInTransitUndefined: Self = StObject.set(x, "EncryptionInTransit", js.undefined)
   }
 }

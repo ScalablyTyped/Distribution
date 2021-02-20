@@ -1,11 +1,12 @@
 package typings.phaser.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResolverFactory extends js.Object {
+trait ResolverFactory extends StObject {
   
   /**
     * Apply position resolution.
@@ -60,33 +61,21 @@ object ResolverFactory {
   }
   
   @scala.inline
-  implicit class ResolverFactoryOps[Self <: ResolverFactory] (val x: Self) extends AnyVal {
+  implicit class ResolverFactoryMutableBuilder[Self <: ResolverFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPostSolvePosition(value: js.Array[BodyType] => Unit): Self = StObject.set(x, "postSolvePosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreSolvePosition(value: js.Array[IPair] => Unit): Self = StObject.set(x, "preSolvePosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreSolveVelocity(value: js.Array[IPair] => Unit): Self = StObject.set(x, "preSolveVelocity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPostSolvePosition(value: js.Array[BodyType] => Unit): Self = this.set("postSolvePosition", js.Any.fromFunction1(value))
+    def setSolvePosition(value: (js.Array[IPair], js.Array[BodyType], Double) => Unit): Self = StObject.set(x, "solvePosition", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setPreSolvePosition(value: js.Array[IPair] => Unit): Self = this.set("preSolvePosition", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPreSolveVelocity(value: js.Array[IPair] => Unit): Self = this.set("preSolveVelocity", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSolvePosition(value: (js.Array[IPair], js.Array[BodyType], Double) => Unit): Self = this.set("solvePosition", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSolveVelocity(value: (js.Array[IPair], Double) => Unit): Self = this.set("solveVelocity", js.Any.fromFunction2(value))
+    def setSolveVelocity(value: (js.Array[IPair], Double) => Unit): Self = StObject.set(x, "solveVelocity", js.Any.fromFunction2(value))
   }
 }

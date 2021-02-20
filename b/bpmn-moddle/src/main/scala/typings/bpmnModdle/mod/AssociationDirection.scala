@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.bpmnModdle.bpmnModdleStrings.One
   - typings.bpmnModdle.bpmnModdleStrings.Both
 */
-trait AssociationDirection extends js.Object
+trait AssociationDirection extends StObject
 object AssociationDirection {
   
   @scala.inline

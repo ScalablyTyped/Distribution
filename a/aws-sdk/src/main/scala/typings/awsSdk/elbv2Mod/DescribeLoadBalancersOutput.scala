@@ -1,11 +1,12 @@
 package typings.awsSdk.elbv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeLoadBalancersOutput extends js.Object {
+trait DescribeLoadBalancersOutput extends StObject {
   
   /**
     * Information about the load balancers.
@@ -26,33 +27,21 @@ object DescribeLoadBalancersOutput {
   }
   
   @scala.inline
-  implicit class DescribeLoadBalancersOutputOps[Self <: DescribeLoadBalancersOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeLoadBalancersOutputMutableBuilder[Self <: DescribeLoadBalancersOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoadBalancers(value: LoadBalancers): Self = StObject.set(x, "LoadBalancers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoadBalancersUndefined: Self = StObject.set(x, "LoadBalancers", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoadBalancersVarargs(value: LoadBalancer*): Self = StObject.set(x, "LoadBalancers", js.Array(value :_*))
     
     @scala.inline
-    def setLoadBalancersVarargs(value: LoadBalancer*): Self = this.set("LoadBalancers", js.Array(value :_*))
+    def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadBalancers(value: LoadBalancers): Self = this.set("LoadBalancers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoadBalancers: Self = this.set("LoadBalancers", js.undefined)
-    
-    @scala.inline
-    def setNextMarker(value: Marker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

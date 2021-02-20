@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FindReplaceRequest extends js.Object {
+trait FindReplaceRequest extends StObject {
   
   /** True to find/replace over all sheets. */
   var allSheets: js.UndefOr[Boolean] = js.native
@@ -47,72 +48,60 @@ object FindReplaceRequest {
   }
   
   @scala.inline
-  implicit class FindReplaceRequestOps[Self <: FindReplaceRequest] (val x: Self) extends AnyVal {
+  implicit class FindReplaceRequestMutableBuilder[Self <: FindReplaceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllSheets(value: Boolean): Self = StObject.set(x, "allSheets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllSheetsUndefined: Self = StObject.set(x, "allSheets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFind(value: String): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllSheets(value: Boolean): Self = this.set("allSheets", value.asInstanceOf[js.Any])
+    def setFindUndefined: Self = StObject.set(x, "find", js.undefined)
     
     @scala.inline
-    def deleteAllSheets: Self = this.set("allSheets", js.undefined)
+    def setIncludeFormulas(value: Boolean): Self = StObject.set(x, "includeFormulas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFind(value: String): Self = this.set("find", value.asInstanceOf[js.Any])
+    def setIncludeFormulasUndefined: Self = StObject.set(x, "includeFormulas", js.undefined)
     
     @scala.inline
-    def deleteFind: Self = this.set("find", js.undefined)
+    def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeFormulas(value: Boolean): Self = this.set("includeFormulas", value.asInstanceOf[js.Any])
+    def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
     
     @scala.inline
-    def deleteIncludeFormulas: Self = this.set("includeFormulas", js.undefined)
+    def setMatchEntireCell(value: Boolean): Self = StObject.set(x, "matchEntireCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchCase(value: Boolean): Self = this.set("matchCase", value.asInstanceOf[js.Any])
+    def setMatchEntireCellUndefined: Self = StObject.set(x, "matchEntireCell", js.undefined)
     
     @scala.inline
-    def deleteMatchCase: Self = this.set("matchCase", js.undefined)
+    def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchEntireCell(value: Boolean): Self = this.set("matchEntireCell", value.asInstanceOf[js.Any])
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def deleteMatchEntireCell: Self = this.set("matchEntireCell", js.undefined)
+    def setReplacement(value: String): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: GridRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setReplacementUndefined: Self = StObject.set(x, "replacement", js.undefined)
     
     @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setSearchByRegex(value: Boolean): Self = StObject.set(x, "searchByRegex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplacement(value: String): Self = this.set("replacement", value.asInstanceOf[js.Any])
+    def setSearchByRegexUndefined: Self = StObject.set(x, "searchByRegex", js.undefined)
     
     @scala.inline
-    def deleteReplacement: Self = this.set("replacement", js.undefined)
+    def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchByRegex(value: Boolean): Self = this.set("searchByRegex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchByRegex: Self = this.set("searchByRegex", js.undefined)
-    
-    @scala.inline
-    def setSheetId(value: Double): Self = this.set("sheetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSheetId: Self = this.set("sheetId", js.undefined)
+    def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
   }
 }

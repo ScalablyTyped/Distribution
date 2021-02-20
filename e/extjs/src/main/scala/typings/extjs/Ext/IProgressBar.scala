@@ -1,5 +1,6 @@
 package typings.extjs.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,86 +79,74 @@ object IProgressBar {
   }
   
   @scala.inline
-  implicit class IProgressBarOps[Self <: IProgressBar] (val x: Self) extends AnyVal {
+  implicit class IProgressBarMutableBuilder[Self <: IProgressBar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitRenderData(value: () => _): Self = StObject.set(x, "initRenderData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAnimate(value: js.Any): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setInitRenderDataUndefined: Self = StObject.set(x, "initRenderData", js.undefined)
     
     @scala.inline
-    def deleteAnimate: Self = this.set("animate", js.undefined)
+    def setIsWaiting(value: () => Boolean): Self = StObject.set(x, "isWaiting", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInitRenderData(value: () => _): Self = this.set("initRenderData", js.Any.fromFunction0(value))
+    def setIsWaitingUndefined: Self = StObject.set(x, "isWaiting", js.undefined)
     
     @scala.inline
-    def deleteInitRenderData: Self = this.set("initRenderData", js.undefined)
+    def setOnRender(value: () => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsWaiting(value: () => Boolean): Self = this.set("isWaiting", js.Any.fromFunction0(value))
+    def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
     
     @scala.inline
-    def deleteIsWaiting: Self = this.set("isWaiting", js.undefined)
+    def setReset(value: /* hide */ js.UndefOr[Boolean] => IProgressBar): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnRender(value: () => Unit): Self = this.set("onRender", js.Any.fromFunction0(value))
+    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
     @scala.inline
-    def deleteOnRender: Self = this.set("onRender", js.undefined)
+    def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReset(value: /* hide */ js.UndefOr[Boolean] => IProgressBar): Self = this.set("reset", js.Any.fromFunction1(value))
+    def setTextEl(value: js.Any): Self = StObject.set(x, "textEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReset: Self = this.set("reset", js.undefined)
+    def setTextElUndefined: Self = StObject.set(x, "textEl", js.undefined)
     
     @scala.inline
-    def setText(value: java.lang.String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setTextEl(value: js.Any): Self = this.set("textEl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextEl: Self = this.set("textEl", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
     def setUpdateProgress(
       value: (/* value */ js.UndefOr[Double], /* text */ js.UndefOr[java.lang.String], /* animate */ js.UndefOr[Boolean]) => IProgressBar
-    ): Self = this.set("updateProgress", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "updateProgress", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteUpdateProgress: Self = this.set("updateProgress", js.undefined)
+    def setUpdateProgressUndefined: Self = StObject.set(x, "updateProgress", js.undefined)
     
     @scala.inline
-    def setUpdateText(value: /* text */ js.UndefOr[java.lang.String] => IProgressBar): Self = this.set("updateText", js.Any.fromFunction1(value))
+    def setUpdateText(value: /* text */ js.UndefOr[java.lang.String] => IProgressBar): Self = StObject.set(x, "updateText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteUpdateText: Self = this.set("updateText", js.undefined)
+    def setUpdateTextUndefined: Self = StObject.set(x, "updateText", js.undefined)
     
     @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def setWait(value: /* config */ js.UndefOr[js.Any] => IProgressBar): Self = this.set("wait", js.Any.fromFunction1(value))
+    def setWait_(value: /* config */ js.UndefOr[js.Any] => IProgressBar): Self = StObject.set(x, "wait", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteWait: Self = this.set("wait", js.undefined)
+    def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
   }
 }

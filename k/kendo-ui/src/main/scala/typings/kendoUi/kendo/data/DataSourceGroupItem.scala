@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSourceGroupItem extends js.Object {
+trait DataSourceGroupItem extends StObject {
   
   var aggregates: js.UndefOr[js.Array[DataSourceGroupItemAggregate]] = js.native
   
@@ -26,45 +27,33 @@ object DataSourceGroupItem {
   }
   
   @scala.inline
-  implicit class DataSourceGroupItemOps[Self <: DataSourceGroupItem] (val x: Self) extends AnyVal {
+  implicit class DataSourceGroupItemMutableBuilder[Self <: DataSourceGroupItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregates(value: js.Array[DataSourceGroupItemAggregate]): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregatesUndefined: Self = StObject.set(x, "aggregates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAggregatesVarargs(value: DataSourceGroupItemAggregate*): Self = StObject.set(x, "aggregates", js.Array(value :_*))
     
     @scala.inline
-    def setAggregatesVarargs(value: DataSourceGroupItemAggregate*): Self = this.set("aggregates", js.Array(value :_*))
+    def setCompare(value: (/* a */ DataSourceGroupCompareItem, /* b */ DataSourceGroupCompareItem) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAggregates(value: js.Array[DataSourceGroupItemAggregate]): Self = this.set("aggregates", value.asInstanceOf[js.Any])
+    def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
     
     @scala.inline
-    def deleteAggregates: Self = this.set("aggregates", js.undefined)
+    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompare(value: (/* a */ DataSourceGroupCompareItem, /* b */ DataSourceGroupCompareItem) => Double): Self = this.set("compare", js.Any.fromFunction2(value))
+    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
     @scala.inline
-    def deleteCompare: Self = this.set("compare", js.undefined)
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDir: Self = this.set("dir", js.undefined)
-    
-    @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
   }
 }

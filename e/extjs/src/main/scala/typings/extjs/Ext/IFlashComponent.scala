@@ -1,5 +1,6 @@
 package typings.extjs.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,96 +56,84 @@ object IFlashComponent {
   }
   
   @scala.inline
-  implicit class IFlashComponentOps[Self <: IFlashComponent] (val x: Self) extends AnyVal {
+  implicit class IFlashComponentMutableBuilder[Self <: IFlashComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: java.lang.String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEXPRESS_INSTALL_URL(value: java.lang.String): Self = StObject.set(x, "EXPRESS_INSTALL_URL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEXPRESS_INSTALL_URL(value: java.lang.String): Self = this.set("EXPRESS_INSTALL_URL", value.asInstanceOf[js.Any])
+    def setEXPRESS_INSTALL_URLUndefined: Self = StObject.set(x, "EXPRESS_INSTALL_URL", js.undefined)
     
     @scala.inline
-    def deleteEXPRESS_INSTALL_URL: Self = this.set("EXPRESS_INSTALL_URL", js.undefined)
+    def setExpressInstall(value: Boolean): Self = StObject.set(x, "expressInstall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: java.lang.String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setExpressInstallUndefined: Self = StObject.set(x, "expressInstall", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setFlashAttributes(value: js.Any): Self = StObject.set(x, "flashAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpressInstall(value: Boolean): Self = this.set("expressInstall", value.asInstanceOf[js.Any])
+    def setFlashAttributesUndefined: Self = StObject.set(x, "flashAttributes", js.undefined)
     
     @scala.inline
-    def deleteExpressInstall: Self = this.set("expressInstall", js.undefined)
+    def setFlashParams(value: js.Any): Self = StObject.set(x, "flashParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlashAttributes(value: js.Any): Self = this.set("flashAttributes", value.asInstanceOf[js.Any])
+    def setFlashParamsUndefined: Self = StObject.set(x, "flashParams", js.undefined)
     
     @scala.inline
-    def deleteFlashAttributes: Self = this.set("flashAttributes", js.undefined)
+    def setFlashVars(value: js.Any): Self = StObject.set(x, "flashVars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlashParams(value: js.Any): Self = this.set("flashParams", value.asInstanceOf[js.Any])
+    def setFlashVarsUndefined: Self = StObject.set(x, "flashVars", js.undefined)
     
     @scala.inline
-    def deleteFlashParams: Self = this.set("flashParams", js.undefined)
+    def setFlashVersion(value: java.lang.String): Self = StObject.set(x, "flashVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlashVars(value: js.Any): Self = this.set("flashVars", value.asInstanceOf[js.Any])
+    def setFlashVersionUndefined: Self = StObject.set(x, "flashVersion", js.undefined)
     
     @scala.inline
-    def deleteFlashVars: Self = this.set("flashVars", js.undefined)
+    def setGetSwfId(value: () => Unit): Self = StObject.set(x, "getSwfId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFlashVersion(value: java.lang.String): Self = this.set("flashVersion", value.asInstanceOf[js.Any])
+    def setGetSwfIdUndefined: Self = StObject.set(x, "getSwfId", js.undefined)
     
     @scala.inline
-    def deleteFlashVersion: Self = this.set("flashVersion", js.undefined)
+    def setSwf(value: IElement): Self = StObject.set(x, "swf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSwfId(value: () => Unit): Self = this.set("getSwfId", js.Any.fromFunction0(value))
+    def setSwfHeight(value: js.Any): Self = StObject.set(x, "swfHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetSwfId: Self = this.set("getSwfId", js.undefined)
+    def setSwfHeightUndefined: Self = StObject.set(x, "swfHeight", js.undefined)
     
     @scala.inline
-    def setSwf(value: IElement): Self = this.set("swf", value.asInstanceOf[js.Any])
+    def setSwfUndefined: Self = StObject.set(x, "swf", js.undefined)
     
     @scala.inline
-    def deleteSwf: Self = this.set("swf", js.undefined)
+    def setSwfWidth(value: js.Any): Self = StObject.set(x, "swfWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwfHeight(value: js.Any): Self = this.set("swfHeight", value.asInstanceOf[js.Any])
+    def setSwfWidthUndefined: Self = StObject.set(x, "swfWidth", js.undefined)
     
     @scala.inline
-    def deleteSwfHeight: Self = this.set("swfHeight", js.undefined)
+    def setUrl(value: java.lang.String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwfWidth(value: js.Any): Self = this.set("swfWidth", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteSwfWidth: Self = this.set("swfWidth", js.undefined)
+    def setWmode(value: java.lang.String): Self = StObject.set(x, "wmode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: java.lang.String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setWmode(value: java.lang.String): Self = this.set("wmode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWmode: Self = this.set("wmode", js.undefined)
+    def setWmodeUndefined: Self = StObject.set(x, "wmode", js.undefined)
   }
 }

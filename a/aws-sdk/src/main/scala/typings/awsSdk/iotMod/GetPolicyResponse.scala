@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetPolicyResponse extends js.Object {
+trait GetPolicyResponse extends StObject {
   
   /**
     * The date the policy was created.
@@ -51,60 +52,48 @@ object GetPolicyResponse {
   }
   
   @scala.inline
-  implicit class GetPolicyResponseOps[Self <: GetPolicyResponse] (val x: Self) extends AnyVal {
+  implicit class GetPolicyResponseMutableBuilder[Self <: GetPolicyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultVersionId(value: PolicyVersionId): Self = StObject.set(x, "defaultVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: DateType): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    def setDefaultVersionIdUndefined: Self = StObject.set(x, "defaultVersionId", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    def setGenerationId(value: GenerationId): Self = StObject.set(x, "generationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultVersionId(value: PolicyVersionId): Self = this.set("defaultVersionId", value.asInstanceOf[js.Any])
+    def setGenerationIdUndefined: Self = StObject.set(x, "generationId", js.undefined)
     
     @scala.inline
-    def deleteDefaultVersionId: Self = this.set("defaultVersionId", js.undefined)
+    def setLastModifiedDate(value: DateType): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerationId(value: GenerationId): Self = this.set("generationId", value.asInstanceOf[js.Any])
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     
     @scala.inline
-    def deleteGenerationId: Self = this.set("generationId", js.undefined)
+    def setPolicyArn(value: PolicyArn): Self = StObject.set(x, "policyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: DateType): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
+    def setPolicyArnUndefined: Self = StObject.set(x, "policyArn", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedDate: Self = this.set("lastModifiedDate", js.undefined)
+    def setPolicyDocument(value: PolicyDocument): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyArn(value: PolicyArn): Self = this.set("policyArn", value.asInstanceOf[js.Any])
+    def setPolicyDocumentUndefined: Self = StObject.set(x, "policyDocument", js.undefined)
     
     @scala.inline
-    def deletePolicyArn: Self = this.set("policyArn", js.undefined)
+    def setPolicyName(value: PolicyName): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyDocument(value: PolicyDocument): Self = this.set("policyDocument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyDocument: Self = this.set("policyDocument", js.undefined)
-    
-    @scala.inline
-    def setPolicyName(value: PolicyName): Self = this.set("policyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyName: Self = this.set("policyName", js.undefined)
+    def setPolicyNameUndefined: Self = StObject.set(x, "policyName", js.undefined)
   }
 }

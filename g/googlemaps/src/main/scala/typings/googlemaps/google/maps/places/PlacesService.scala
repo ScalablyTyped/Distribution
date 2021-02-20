@@ -1,11 +1,12 @@
 package typings.googlemaps.google.maps.places
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlacesService extends js.Object {
+trait PlacesService extends StObject {
   
   def findPlaceFromPhoneNumber(
     request: FindPlaceFromPhoneNumberRequest,
@@ -77,34 +78,22 @@ object PlacesService {
   }
   
   @scala.inline
-  implicit class PlacesServiceOps[Self <: PlacesService] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class PlacesServiceMutableBuilder[Self <: PlacesService] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setFindPlaceFromPhoneNumber(
       value: (FindPlaceFromPhoneNumberRequest, js.Function2[/* results */ js.Array[PlaceResult], /* status */ PlacesServiceStatus, Unit]) => Unit
-    ): Self = this.set("findPlaceFromPhoneNumber", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "findPlaceFromPhoneNumber", js.Any.fromFunction2(value))
     
     @scala.inline
     def setFindPlaceFromQuery(
       value: (FindPlaceFromQueryRequest, js.Function2[/* results */ js.Array[PlaceResult], /* status */ PlacesServiceStatus, Unit]) => Unit
-    ): Self = this.set("findPlaceFromQuery", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "findPlaceFromQuery", js.Any.fromFunction2(value))
     
     @scala.inline
     def setGetDetails(
       value: (PlaceDetailsRequest, js.Function2[/* result */ PlaceResult, /* status */ PlacesServiceStatus, Unit]) => Unit
-    ): Self = this.set("getDetails", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "getDetails", js.Any.fromFunction2(value))
     
     @scala.inline
     def setNearbySearch(
@@ -114,12 +103,12 @@ object PlacesService {
           /* pagination */ PlaceSearchPagination, 
           Unit
         ]) => Unit
-    ): Self = this.set("nearbySearch", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "nearbySearch", js.Any.fromFunction2(value))
     
     @scala.inline
     def setRadarSearch(
       value: (RadarSearchRequest, js.Function2[/* results */ js.Array[PlaceResult], /* status */ PlacesServiceStatus, Unit]) => Unit
-    ): Self = this.set("radarSearch", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "radarSearch", js.Any.fromFunction2(value))
     
     @scala.inline
     def setTextSearch(
@@ -129,6 +118,6 @@ object PlacesService {
           /* pagination */ PlaceSearchPagination, 
           Unit
         ]) => Unit
-    ): Self = this.set("textSearch", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "textSearch", js.Any.fromFunction2(value))
   }
 }

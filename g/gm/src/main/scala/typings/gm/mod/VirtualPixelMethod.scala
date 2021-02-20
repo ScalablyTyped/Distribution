@@ -1,5 +1,6 @@
 package typings.gm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.gm.gmStrings.Mirror
   - typings.gm.gmStrings.Tile
 */
-trait VirtualPixelMethod extends js.Object
+trait VirtualPixelMethod extends StObject
 object VirtualPixelMethod {
   
   @scala.inline

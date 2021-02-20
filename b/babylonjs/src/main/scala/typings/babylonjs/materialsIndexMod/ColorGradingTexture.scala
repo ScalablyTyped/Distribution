@@ -3,6 +3,7 @@ package typings.babylonjs.materialsIndexMod
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,9 +25,11 @@ class ColorGradingTexture protected ()
   def this(url: String, sceneOrEngine: ThinEngine, onLoad: Nullable[js.Function0[Unit]]) = this()
 }
 /* static members */
-@JSImport("babylonjs/Materials/index", "ColorGradingTexture")
-@js.native
-object ColorGradingTexture extends js.Object {
+object ColorGradingTexture {
+  
+  @JSImport("babylonjs/Materials/index", "ColorGradingTexture")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Parses a color grading texture serialized by Babylon.
@@ -35,10 +38,16 @@ object ColorGradingTexture extends js.Object {
     * @param rootUrl The root url of the data assets to load
     * @return A color gradind texture
     */
+  @JSImport("babylonjs/Materials/index", "ColorGradingTexture.Parse")
+  @js.native
   def Parse(parsedTexture: js.Any, scene: Scene): Nullable[typings.babylonjs.colorGradingTextureMod.ColorGradingTexture] = js.native
   
   /**
     * Empty line regex stored for GC.
     */
-  var _noneEmptyLineRegex: js.Any = js.native
+  @JSImport("babylonjs/Materials/index", "ColorGradingTexture._noneEmptyLineRegex")
+  @js.native
+  def _noneEmptyLineRegex: js.Any = js.native
+  @scala.inline
+  def _noneEmptyLineRegex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_noneEmptyLineRegex")(x.asInstanceOf[js.Any])
 }

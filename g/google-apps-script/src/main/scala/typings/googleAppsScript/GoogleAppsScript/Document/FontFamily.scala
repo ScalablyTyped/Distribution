@@ -1,11 +1,12 @@
 package typings.googleAppsScript.GoogleAppsScript.Document
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FontFamily extends js.Object
+sealed trait FontFamily extends StObject
 /**
   *
   * Deprecated. The methods getFontFamily() and setFontFamily(String) now use string
@@ -35,7 +36,7 @@ sealed trait FontFamily extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Document.FontFamily")
 @js.native
-object FontFamily extends js.Object {
+object FontFamily extends StObject {
   
   @js.native
   sealed trait AMARANTH extends FontFamily

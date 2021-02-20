@@ -1,12 +1,13 @@
 package typings.foundationSites.FoundationSites
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAbidePatterns extends js.Object {
+trait IAbidePatterns extends StObject {
   
   var alpha: js.UndefOr[RegExp] = js.native
   
@@ -49,114 +50,102 @@ object IAbidePatterns {
   }
   
   @scala.inline
-  implicit class IAbidePatternsOps[Self <: IAbidePatterns] (val x: Self) extends AnyVal {
+  implicit class IAbidePatternsMutableBuilder[Self <: IAbidePatterns] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha(value: RegExp): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlpha_numeric(value: RegExp): Self = StObject.set(x, "alpha_numeric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha(value: RegExp): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    def setAlpha_numericUndefined: Self = StObject.set(x, "alpha_numeric", js.undefined)
     
     @scala.inline
-    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    def setCard(value: RegExp): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlpha_numeric(value: RegExp): Self = this.set("alpha_numeric", value.asInstanceOf[js.Any])
+    def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
     
     @scala.inline
-    def deleteAlpha_numeric: Self = this.set("alpha_numeric", js.undefined)
+    def setColor(value: RegExp): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCard(value: RegExp): Self = this.set("card", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteCard: Self = this.set("card", js.undefined)
+    def setCvv(value: RegExp): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: RegExp): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setCvvUndefined: Self = StObject.set(x, "cvv", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setDate(value: RegExp): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCvv(value: RegExp): Self = this.set("cvv", value.asInstanceOf[js.Any])
+    def setDateISO(value: RegExp): Self = StObject.set(x, "dateISO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCvv: Self = this.set("cvv", js.undefined)
+    def setDateISOUndefined: Self = StObject.set(x, "dateISO", js.undefined)
     
     @scala.inline
-    def setDate(value: RegExp): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setDatetime(value: RegExp): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateISO(value: RegExp): Self = this.set("dateISO", value.asInstanceOf[js.Any])
+    def setDatetimeUndefined: Self = StObject.set(x, "datetime", js.undefined)
     
     @scala.inline
-    def deleteDateISO: Self = this.set("dateISO", js.undefined)
+    def setDay_month_year(value: RegExp): Self = StObject.set(x, "day_month_year", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatetime(value: RegExp): Self = this.set("datetime", value.asInstanceOf[js.Any])
+    def setDay_month_yearUndefined: Self = StObject.set(x, "day_month_year", js.undefined)
     
     @scala.inline
-    def deleteDatetime: Self = this.set("datetime", js.undefined)
+    def setDomain(value: RegExp): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDay_month_year(value: RegExp): Self = this.set("day_month_year", value.asInstanceOf[js.Any])
+    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     @scala.inline
-    def deleteDay_month_year: Self = this.set("day_month_year", js.undefined)
+    def setEmail(value: RegExp): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: RegExp): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
+    def setInteger(value: RegExp): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: RegExp): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setIntegerUndefined: Self = StObject.set(x, "integer", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setMonth_day_year(value: RegExp): Self = StObject.set(x, "month_day_year", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteger(value: RegExp): Self = this.set("integer", value.asInstanceOf[js.Any])
+    def setMonth_day_yearUndefined: Self = StObject.set(x, "month_day_year", js.undefined)
     
     @scala.inline
-    def deleteInteger: Self = this.set("integer", js.undefined)
+    def setNumber(value: RegExp): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonth_day_year(value: RegExp): Self = this.set("month_day_year", value.asInstanceOf[js.Any])
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
     @scala.inline
-    def deleteMonth_day_year: Self = this.set("month_day_year", js.undefined)
+    def setTime(value: RegExp): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: RegExp): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
     @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
+    def setUrl(value: RegExp): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime(value: RegExp): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: RegExp): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

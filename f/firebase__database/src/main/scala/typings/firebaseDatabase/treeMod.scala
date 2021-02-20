@@ -2,14 +2,14 @@ package typings.firebaseDatabase
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseDatabase.pathMod.Path
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/util/Tree", JSImport.Namespace)
-@js.native
-object treeMod extends js.Object {
+object treeMod {
   
+  @JSImport("@firebase/database/dist/src/core/util/Tree", "Tree")
   @js.native
   /**
     * @template T
@@ -17,7 +17,7 @@ object treeMod extends js.Object {
     * @param {Tree=} parent_ Optional parent node.
     * @param {TreeNode=} node_ Optional node to wrap.
     */
-  class Tree[T] () extends js.Object {
+  class Tree[T] () extends StObject {
     def this(name_ : String) = this()
     def this(name_ : js.UndefOr[scala.Nothing], parent_ : Tree[T]) = this()
     def this(name_ : String, parent_ : Tree[T]) = this()
@@ -149,8 +149,9 @@ object treeMod extends js.Object {
     var updateParents_ : js.Any = js.native
   }
   
+  @JSImport("@firebase/database/dist/src/core/util/Tree", "TreeNode")
   @js.native
-  class TreeNode[T] () extends js.Object {
+  class TreeNode[T] () extends StObject {
     
     var childCount: Double = js.native
     

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Import
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhotoImportItemSelectionMode extends js.Object
+sealed trait PhotoImportItemSelectionMode extends StObject
 /** Specifies the initial selection state for items that are discovered using PhotoImportSession::FindItemsAsync . */
 @JSGlobal("Windows.Media.Import.PhotoImportItemSelectionMode")
 @js.native
-object PhotoImportItemSelectionMode extends js.Object {
+object PhotoImportItemSelectionMode extends StObject {
   
   /** All found items are initially selected. */
   @js.native

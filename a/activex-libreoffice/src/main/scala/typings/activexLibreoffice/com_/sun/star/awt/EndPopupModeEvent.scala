@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,24 +29,12 @@ object EndPopupModeEvent {
   }
   
   @scala.inline
-  implicit class EndPopupModeEventOps[Self <: EndPopupModeEvent] (val x: Self) extends AnyVal {
+  implicit class EndPopupModeEventMutableBuilder[Self <: EndPopupModeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBTearoff(value: Boolean): Self = StObject.set(x, "bTearoff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFloatingPosition(value: Point): Self = this.set("FloatingPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBTearoff(value: Boolean): Self = this.set("bTearoff", value.asInstanceOf[js.Any])
+    def setFloatingPosition(value: Point): Self = StObject.set(x, "FloatingPosition", value.asInstanceOf[js.Any])
   }
 }

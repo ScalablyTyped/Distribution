@@ -1,12 +1,13 @@
 package typings.cookieclicker.Game
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Particle extends js.Object {
+trait Particle extends StObject {
   
   var dur: Double = js.native
   
@@ -56,60 +57,48 @@ object Particle {
   }
   
   @scala.inline
-  implicit class ParticleOps[Self <: Particle] (val x: Self) extends AnyVal {
+  implicit class ParticleMutableBuilder[Self <: Particle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDur(value: Double): Self = StObject.set(x, "dur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setL(value: HTMLElement): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLUndefined: Self = StObject.set(x, "l", js.undefined)
     
     @scala.inline
-    def setDur(value: Double): Self = this.set("dur", value.asInstanceOf[js.Any])
+    def setLife(value: Double): Self = StObject.set(x, "life", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLife(value: Double): Self = this.set("life", value.asInstanceOf[js.Any])
+    def setPic(value: String): Self = StObject.set(x, "pic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPic(value: String): Self = this.set("pic", value.asInstanceOf[js.Any])
+    def setPicId(value: Double): Self = StObject.set(x, "picId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPicId(value: Double): Self = this.set("picId", value.asInstanceOf[js.Any])
+    def setPicPos(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "picPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPicPos(value: js.Tuple2[Double, Double]): Self = this.set("picPos", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setText(value: String | Double): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String | Double): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setXd(value: Double): Self = StObject.set(x, "xd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXd(value: Double): Self = this.set("xd", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setYd(value: Double): Self = StObject.set(x, "yd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYd(value: Double): Self = this.set("yd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setL(value: HTMLElement): Self = this.set("l", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteL: Self = this.set("l", js.undefined)
+    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
   }
 }

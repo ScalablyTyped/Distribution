@@ -1,16 +1,16 @@
 package typings.agGrid
 
 import typings.agGrid.rowNodeBlockMod.RowNodeBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rowModels/cache/rowNodeBlockLoader", JSImport.Namespace)
-@js.native
-object rowNodeBlockLoaderMod extends js.Object {
+object rowNodeBlockLoaderMod {
   
+  @JSImport("ag-grid/dist/lib/rowModels/cache/rowNodeBlockLoader", "RowNodeBlockLoader")
   @js.native
-  class RowNodeBlockLoader protected () extends js.Object {
+  class RowNodeBlockLoader protected () extends StObject {
     def this(maxConcurrentRequests: Double) = this()
     
     var active: js.Any = js.native

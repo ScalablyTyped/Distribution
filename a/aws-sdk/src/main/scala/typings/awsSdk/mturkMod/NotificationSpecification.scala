@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationSpecification extends js.Object {
+trait NotificationSpecification extends StObject {
   
   /**
     *  The target for notification messages. The Destination’s format is determined by the specified Transport:    When Transport is Email, the Destination is your email address.   When Transport is SQS, the Destination is your queue URL.   When Transport is SNS, the Destination is the ARN of your topic.  
@@ -36,33 +37,21 @@ object NotificationSpecification {
   }
   
   @scala.inline
-  implicit class NotificationSpecificationOps[Self <: NotificationSpecification] (val x: Self) extends AnyVal {
+  implicit class NotificationSpecificationMutableBuilder[Self <: NotificationSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination(value: String): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventTypes(value: EventTypeList): Self = StObject.set(x, "EventTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventTypesVarargs(value: EventType*): Self = StObject.set(x, "EventTypes", js.Array(value :_*))
     
     @scala.inline
-    def setDestination(value: String): Self = this.set("Destination", value.asInstanceOf[js.Any])
+    def setTransport(value: NotificationTransport): Self = StObject.set(x, "Transport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTypesVarargs(value: EventType*): Self = this.set("EventTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setEventTypes(value: EventTypeList): Self = this.set("EventTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransport(value: NotificationTransport): Self = this.set("Transport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("Version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

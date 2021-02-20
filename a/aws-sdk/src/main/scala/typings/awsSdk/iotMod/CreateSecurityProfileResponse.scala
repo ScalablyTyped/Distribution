@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateSecurityProfileResponse extends js.Object {
+trait CreateSecurityProfileResponse extends StObject {
   
   /**
     * The ARN of the security profile.
@@ -26,30 +27,18 @@ object CreateSecurityProfileResponse {
   }
   
   @scala.inline
-  implicit class CreateSecurityProfileResponseOps[Self <: CreateSecurityProfileResponse] (val x: Self) extends AnyVal {
+  implicit class CreateSecurityProfileResponseMutableBuilder[Self <: CreateSecurityProfileResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSecurityProfileArn(value: SecurityProfileArn): Self = StObject.set(x, "securityProfileArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSecurityProfileArnUndefined: Self = StObject.set(x, "securityProfileArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecurityProfileName(value: SecurityProfileName): Self = StObject.set(x, "securityProfileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityProfileArn(value: SecurityProfileArn): Self = this.set("securityProfileArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityProfileArn: Self = this.set("securityProfileArn", js.undefined)
-    
-    @scala.inline
-    def setSecurityProfileName(value: SecurityProfileName): Self = this.set("securityProfileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityProfileName: Self = this.set("securityProfileName", js.undefined)
+    def setSecurityProfileNameUndefined: Self = StObject.set(x, "securityProfileName", js.undefined)
   }
 }

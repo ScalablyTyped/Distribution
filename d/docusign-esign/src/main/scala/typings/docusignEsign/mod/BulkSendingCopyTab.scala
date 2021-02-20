@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulkSendingCopyTab extends js.Object {
+trait BulkSendingCopyTab extends StObject {
   
   /**
     * The initial value that you want to assign to the tab.
@@ -29,30 +30,18 @@ object BulkSendingCopyTab {
   }
   
   @scala.inline
-  implicit class BulkSendingCopyTabOps[Self <: BulkSendingCopyTab] (val x: Self) extends AnyVal {
+  implicit class BulkSendingCopyTabMutableBuilder[Self <: BulkSendingCopyTab] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitialValue(value: String): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTabLabel(value: String): Self = StObject.set(x, "tabLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialValue(value: String): Self = this.set("initialValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitialValue: Self = this.set("initialValue", js.undefined)
-    
-    @scala.inline
-    def setTabLabel(value: String): Self = this.set("tabLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabLabel: Self = this.set("tabLabel", js.undefined)
+    def setTabLabelUndefined: Self = StObject.set(x, "tabLabel", js.undefined)
   }
 }

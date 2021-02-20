@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTransformJobResponse extends js.Object {
+trait DescribeTransformJobResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the AutoML transform job.
@@ -118,117 +119,105 @@ object DescribeTransformJobResponse {
   }
   
   @scala.inline
-  implicit class DescribeTransformJobResponseOps[Self <: DescribeTransformJobResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeTransformJobResponseMutableBuilder[Self <: DescribeTransformJobResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoMLJobArn(value: AutoMLJobArn): Self = StObject.set(x, "AutoMLJobArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoMLJobArnUndefined: Self = StObject.set(x, "AutoMLJobArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchStrategy(value: BatchStrategy): Self = StObject.set(x, "BatchStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setBatchStrategyUndefined: Self = StObject.set(x, "BatchStrategy", js.undefined)
     
     @scala.inline
-    def setModelName(value: ModelName): Self = this.set("ModelName", value.asInstanceOf[js.Any])
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformInput(value: TransformInput): Self = this.set("TransformInput", value.asInstanceOf[js.Any])
+    def setDataProcessing(value: DataProcessing): Self = StObject.set(x, "DataProcessing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformJobArn(value: TransformJobArn): Self = this.set("TransformJobArn", value.asInstanceOf[js.Any])
+    def setDataProcessingUndefined: Self = StObject.set(x, "DataProcessing", js.undefined)
     
     @scala.inline
-    def setTransformJobName(value: TransformJobName): Self = this.set("TransformJobName", value.asInstanceOf[js.Any])
+    def setEnvironment(value: TransformEnvironmentMap): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformJobStatus(value: TransformJobStatus): Self = this.set("TransformJobStatus", value.asInstanceOf[js.Any])
+    def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
     
     @scala.inline
-    def setTransformResources(value: TransformResources): Self = this.set("TransformResources", value.asInstanceOf[js.Any])
+    def setExperimentConfig(value: ExperimentConfig): Self = StObject.set(x, "ExperimentConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoMLJobArn(value: AutoMLJobArn): Self = this.set("AutoMLJobArn", value.asInstanceOf[js.Any])
+    def setExperimentConfigUndefined: Self = StObject.set(x, "ExperimentConfig", js.undefined)
     
     @scala.inline
-    def deleteAutoMLJobArn: Self = this.set("AutoMLJobArn", js.undefined)
+    def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchStrategy(value: BatchStrategy): Self = this.set("BatchStrategy", value.asInstanceOf[js.Any])
+    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
     @scala.inline
-    def deleteBatchStrategy: Self = this.set("BatchStrategy", js.undefined)
+    def setLabelingJobArn(value: LabelingJobArn): Self = StObject.set(x, "LabelingJobArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataProcessing(value: DataProcessing): Self = this.set("DataProcessing", value.asInstanceOf[js.Any])
+    def setLabelingJobArnUndefined: Self = StObject.set(x, "LabelingJobArn", js.undefined)
     
     @scala.inline
-    def deleteDataProcessing: Self = this.set("DataProcessing", js.undefined)
+    def setMaxConcurrentTransforms(value: MaxConcurrentTransforms): Self = StObject.set(x, "MaxConcurrentTransforms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: TransformEnvironmentMap): Self = this.set("Environment", value.asInstanceOf[js.Any])
+    def setMaxConcurrentTransformsUndefined: Self = StObject.set(x, "MaxConcurrentTransforms", js.undefined)
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("Environment", js.undefined)
+    def setMaxPayloadInMB(value: MaxPayloadInMB): Self = StObject.set(x, "MaxPayloadInMB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExperimentConfig(value: ExperimentConfig): Self = this.set("ExperimentConfig", value.asInstanceOf[js.Any])
+    def setMaxPayloadInMBUndefined: Self = StObject.set(x, "MaxPayloadInMB", js.undefined)
     
     @scala.inline
-    def deleteExperimentConfig: Self = this.set("ExperimentConfig", js.undefined)
+    def setModelClientConfig(value: ModelClientConfig): Self = StObject.set(x, "ModelClientConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    def setModelClientConfigUndefined: Self = StObject.set(x, "ModelClientConfig", js.undefined)
     
     @scala.inline
-    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelingJobArn(value: LabelingJobArn): Self = this.set("LabelingJobArn", value.asInstanceOf[js.Any])
+    def setTransformEndTime(value: Timestamp): Self = StObject.set(x, "TransformEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelingJobArn: Self = this.set("LabelingJobArn", js.undefined)
+    def setTransformEndTimeUndefined: Self = StObject.set(x, "TransformEndTime", js.undefined)
     
     @scala.inline
-    def setMaxConcurrentTransforms(value: MaxConcurrentTransforms): Self = this.set("MaxConcurrentTransforms", value.asInstanceOf[js.Any])
+    def setTransformInput(value: TransformInput): Self = StObject.set(x, "TransformInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxConcurrentTransforms: Self = this.set("MaxConcurrentTransforms", js.undefined)
+    def setTransformJobArn(value: TransformJobArn): Self = StObject.set(x, "TransformJobArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPayloadInMB(value: MaxPayloadInMB): Self = this.set("MaxPayloadInMB", value.asInstanceOf[js.Any])
+    def setTransformJobName(value: TransformJobName): Self = StObject.set(x, "TransformJobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxPayloadInMB: Self = this.set("MaxPayloadInMB", js.undefined)
+    def setTransformJobStatus(value: TransformJobStatus): Self = StObject.set(x, "TransformJobStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelClientConfig(value: ModelClientConfig): Self = this.set("ModelClientConfig", value.asInstanceOf[js.Any])
+    def setTransformOutput(value: TransformOutput): Self = StObject.set(x, "TransformOutput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModelClientConfig: Self = this.set("ModelClientConfig", js.undefined)
+    def setTransformOutputUndefined: Self = StObject.set(x, "TransformOutput", js.undefined)
     
     @scala.inline
-    def setTransformEndTime(value: Timestamp): Self = this.set("TransformEndTime", value.asInstanceOf[js.Any])
+    def setTransformResources(value: TransformResources): Self = StObject.set(x, "TransformResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransformEndTime: Self = this.set("TransformEndTime", js.undefined)
+    def setTransformStartTime(value: Timestamp): Self = StObject.set(x, "TransformStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformOutput(value: TransformOutput): Self = this.set("TransformOutput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransformOutput: Self = this.set("TransformOutput", js.undefined)
-    
-    @scala.inline
-    def setTransformStartTime(value: Timestamp): Self = this.set("TransformStartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransformStartTime: Self = this.set("TransformStartTime", js.undefined)
+    def setTransformStartTimeUndefined: Self = StObject.set(x, "TransformStartTime", js.undefined)
   }
 }

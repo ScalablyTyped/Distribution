@@ -2,6 +2,7 @@ package typings.heremaps.H.map
 
 import typings.heremaps.H.map.ViewModel.ILookAtData
 import typings.heremaps.H.util.kinetics.IKinetics
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Control interface defines method which are used for direct view or camera manipulation
   */
 @js.native
-trait IControl extends js.Object {
+trait IControl extends StObject {
   
   /**
     * This method triggers single control action on engine. This will trigger an animation which will start modification of the view's or camera's properties according to values begin set.

@@ -5,14 +5,14 @@ import typings.antlr4.ruleContextMod.RuleContext
 import typings.antlr4.tokenMod.Token
 import typings.antlr4.treeMod.ErrorNode
 import typings.antlr4.treeMod.ParseTreeListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antlr4/ParserRuleContext", JSImport.Namespace)
-@js.native
-object parserRuleContextMod extends js.Object {
+object parserRuleContextMod {
   
+  @JSImport("antlr4/ParserRuleContext", "ParserRuleContext")
   @js.native
   class ParserRuleContext protected () extends RuleContext {
     def this(parent: js.Any, invokingState: Double) = this()
@@ -50,9 +50,10 @@ object parserRuleContextMod extends js.Object {
     val stop: Token = js.native
   }
   /* static members */
-  @js.native
-  object ParserRuleContext extends js.Object {
+  object ParserRuleContext {
     
+    @JSImport("antlr4/ParserRuleContext", "ParserRuleContext.EMPTY")
+    @js.native
     val EMPTY: ParserRuleContext = js.native
   }
 }

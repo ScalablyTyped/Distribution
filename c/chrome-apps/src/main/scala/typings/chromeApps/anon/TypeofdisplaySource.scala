@@ -1,12 +1,13 @@
 package typings.chromeApps.anon
 
 import typings.chromeApps.chrome.events.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofdisplaySource extends js.Object {
+trait TypeofdisplaySource extends StObject {
   
   /**
     * @enum
@@ -91,48 +92,36 @@ object TypeofdisplaySource {
   }
   
   @scala.inline
-  implicit class TypeofdisplaySourceOps[Self <: TypeofdisplaySource] (val x: Self) extends AnyVal {
+  implicit class TypeofdisplaySourceMutableBuilder[Self <: TypeofdisplaySource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticationMethod(value: PBC): Self = StObject.set(x, "AuthenticationMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorType(value: CAPABILITIESNEGOTIATIONERROR): Self = StObject.set(x, "ErrorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAvailableSinks(value: js.Function): Self = StObject.set(x, "getAvailableSinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticationMethod(value: PBC): Self = this.set("AuthenticationMethod", value.asInstanceOf[js.Any])
+    def setOnSessionErrorOccured(value: Event[_]): Self = StObject.set(x, "onSessionErrorOccured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorType(value: CAPABILITIESNEGOTIATIONERROR): Self = this.set("ErrorType", value.asInstanceOf[js.Any])
+    def setOnSessionTerminated(value: Event[_]): Self = StObject.set(x, "onSessionTerminated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSinkState(value: CONNECTED): Self = this.set("SinkState", value.asInstanceOf[js.Any])
+    def setOnSinksUpdated(value: Event[_]): Self = StObject.set(x, "onSinksUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAvailableSinks(value: js.Function): Self = this.set("getAvailableSinks", value.asInstanceOf[js.Any])
+    def setRequestAuthentication(value: js.Function): Self = StObject.set(x, "requestAuthentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSessionErrorOccured(value: Event[_]): Self = this.set("onSessionErrorOccured", value.asInstanceOf[js.Any])
+    def setSinkState(value: CONNECTED): Self = StObject.set(x, "SinkState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSessionTerminated(value: Event[_]): Self = this.set("onSessionTerminated", value.asInstanceOf[js.Any])
+    def setStartSession(value: js.Function): Self = StObject.set(x, "startSession", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSinksUpdated(value: Event[_]): Self = this.set("onSinksUpdated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestAuthentication(value: js.Function): Self = this.set("requestAuthentication", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartSession(value: js.Function): Self = this.set("startSession", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTerminateSession(value: js.Function): Self = this.set("terminateSession", value.asInstanceOf[js.Any])
+    def setTerminateSession(value: js.Function): Self = StObject.set(x, "terminateSession", value.asInstanceOf[js.Any])
   }
 }

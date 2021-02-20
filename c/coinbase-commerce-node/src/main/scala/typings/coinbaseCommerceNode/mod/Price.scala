@@ -1,5 +1,6 @@
 package typings.coinbaseCommerceNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Price object.
   */
 @js.native
-trait Price[Currency] extends js.Object {
+trait Price[Currency] extends StObject {
   
   var amount: String = js.native
   
@@ -23,24 +24,12 @@ object Price {
   }
   
   @scala.inline
-  implicit class PriceOps[Self <: Price[_], Currency] (val x: Self with Price[Currency]) extends AnyVal {
+  implicit class PriceMutableBuilder[Self <: Price[_], Currency] (val x: Self with Price[Currency]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAmount(value: String): Self = this.set("amount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrency(value: Currency): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setCurrency(value: Currency): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
   }
 }

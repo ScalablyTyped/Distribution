@@ -1,15 +1,15 @@
 package typings.voximplantWebsdk.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RosterItemEvent extends js.Object
+sealed trait RosterItemEvent extends StObject
 @JSImport("voximplant-websdk", "RosterItemEvent")
 @js.native
-object RosterItemEvent extends js.Object {
+object RosterItemEvent extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RosterItemEvent with Double] = js.native
@@ -19,38 +19,33 @@ object RosterItemEvent extends js.Object {
     */
   @js.native
   sealed trait Added extends RosterItemEvent
-  /* 0 */ @js.native
-  object Added extends TopLevel[Added with Double]
+  /* 0 */ val Added: typings.voximplantWebsdk.mod.RosterItemEvent.Added with Double = js.native
   
   /**
     *    Roster item removed
     */
   @js.native
   sealed trait Removed extends RosterItemEvent
-  /* 1 */ @js.native
-  object Removed extends TopLevel[Removed with Double]
+  /* 1 */ val Removed: typings.voximplantWebsdk.mod.RosterItemEvent.Removed with Double = js.native
   
   /**
     *    User subscribed on your status updates (authorized the request)
     */
   @js.native
   sealed trait Subscribed extends RosterItemEvent
-  /* 2 */ @js.native
-  object Subscribed extends TopLevel[Subscribed with Double]
+  /* 2 */ val Subscribed: typings.voximplantWebsdk.mod.RosterItemEvent.Subscribed with Double = js.native
   
   /**
     *    User unsubscribed from your status updates (didn't authorize the request)
     */
   @js.native
   sealed trait Unsubscribed extends RosterItemEvent
-  /* 3 */ @js.native
-  object Unsubscribed extends TopLevel[Unsubscribed with Double]
+  /* 3 */ val Unsubscribed: typings.voximplantWebsdk.mod.RosterItemEvent.Unsubscribed with Double = js.native
   
   /**
     *    Roster item updated
     */
   @js.native
   sealed trait Updated extends RosterItemEvent
-  /* 4 */ @js.native
-  object Updated extends TopLevel[Updated with Double]
+  /* 4 */ val Updated: typings.voximplantWebsdk.mod.RosterItemEvent.Updated with Double = js.native
 }

@@ -3,12 +3,13 @@ package typings.chromeApps.anon
 import typings.chromeApps.chrome.runtime.SocketTcpPermission
 import typings.chromeApps.chrome.runtime.SocketTcpServerPermission
 import typings.chromeApps.chrome.runtime.SocketUdpPermission
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tcp extends js.Object {
+trait Tcp extends StObject {
   
   /** The tcp manifest property declares which sockets.tcp operations an app can issue. */
   var tcp: js.UndefOr[SocketTcpPermission] = js.native
@@ -28,36 +29,24 @@ object Tcp {
   }
   
   @scala.inline
-  implicit class TcpOps[Self <: Tcp] (val x: Self) extends AnyVal {
+  implicit class TcpMutableBuilder[Self <: Tcp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTcp(value: SocketTcpPermission): Self = StObject.set(x, "tcp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTcpServer(value: SocketTcpServerPermission): Self = StObject.set(x, "tcpServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTcpServerUndefined: Self = StObject.set(x, "tcpServer", js.undefined)
     
     @scala.inline
-    def setTcp(value: SocketTcpPermission): Self = this.set("tcp", value.asInstanceOf[js.Any])
+    def setTcpUndefined: Self = StObject.set(x, "tcp", js.undefined)
     
     @scala.inline
-    def deleteTcp: Self = this.set("tcp", js.undefined)
+    def setUdp(value: SocketUdpPermission): Self = StObject.set(x, "udp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTcpServer(value: SocketTcpServerPermission): Self = this.set("tcpServer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTcpServer: Self = this.set("tcpServer", js.undefined)
-    
-    @scala.inline
-    def setUdp(value: SocketUdpPermission): Self = this.set("udp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUdp: Self = this.set("udp", js.undefined)
+    def setUdpUndefined: Self = StObject.set(x, "udp", js.undefined)
   }
 }

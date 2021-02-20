@@ -1,11 +1,12 @@
 package typings.awsSdk.kmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateGrantRequest extends js.Object {
+trait CreateGrantRequest extends StObject {
   
   /**
     * Allows a cryptographic operation only when the encryption context matches or includes the encryption context specified in this structure. For more information about encryption context, see Encryption Context in the  AWS Key Management Service Developer Guide .
@@ -51,57 +52,45 @@ object CreateGrantRequest {
   }
   
   @scala.inline
-  implicit class CreateGrantRequestOps[Self <: CreateGrantRequest] (val x: Self) extends AnyVal {
+  implicit class CreateGrantRequestMutableBuilder[Self <: CreateGrantRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstraints(value: GrantConstraints): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstraintsUndefined: Self = StObject.set(x, "Constraints", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGrantTokens(value: GrantTokenList): Self = StObject.set(x, "GrantTokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGranteePrincipal(value: PrincipalIdType): Self = this.set("GranteePrincipal", value.asInstanceOf[js.Any])
+    def setGrantTokensUndefined: Self = StObject.set(x, "GrantTokens", js.undefined)
     
     @scala.inline
-    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    def setGrantTokensVarargs(value: GrantTokenType*): Self = StObject.set(x, "GrantTokens", js.Array(value :_*))
     
     @scala.inline
-    def setOperationsVarargs(value: GrantOperation*): Self = this.set("Operations", js.Array(value :_*))
+    def setGranteePrincipal(value: PrincipalIdType): Self = StObject.set(x, "GranteePrincipal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperations(value: GrantOperationList): Self = this.set("Operations", value.asInstanceOf[js.Any])
+    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstraints(value: GrantConstraints): Self = this.set("Constraints", value.asInstanceOf[js.Any])
+    def setName(value: GrantNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConstraints: Self = this.set("Constraints", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def setGrantTokensVarargs(value: GrantTokenType*): Self = this.set("GrantTokens", js.Array(value :_*))
+    def setOperations(value: GrantOperationList): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrantTokens(value: GrantTokenList): Self = this.set("GrantTokens", value.asInstanceOf[js.Any])
+    def setOperationsVarargs(value: GrantOperation*): Self = StObject.set(x, "Operations", js.Array(value :_*))
     
     @scala.inline
-    def deleteGrantTokens: Self = this.set("GrantTokens", js.undefined)
+    def setRetiringPrincipal(value: PrincipalIdType): Self = StObject.set(x, "RetiringPrincipal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: GrantNameType): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setRetiringPrincipal(value: PrincipalIdType): Self = this.set("RetiringPrincipal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetiringPrincipal: Self = this.set("RetiringPrincipal", js.undefined)
+    def setRetiringPrincipalUndefined: Self = StObject.set(x, "RetiringPrincipal", js.undefined)
   }
 }

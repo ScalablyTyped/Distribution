@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cells extends js.Object {
+trait Cells extends StObject {
   
   def Add(): Cell = js.native
   def Add(BeforeCell: js.Any): Cell = js.native

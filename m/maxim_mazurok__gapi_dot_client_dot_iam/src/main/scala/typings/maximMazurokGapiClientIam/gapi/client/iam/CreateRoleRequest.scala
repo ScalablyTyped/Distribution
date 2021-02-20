@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientIam.gapi.client.iam
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateRoleRequest extends js.Object {
+trait CreateRoleRequest extends StObject {
   
   /** The Role resource to create. */
   var role: js.UndefOr[Role] = js.native
@@ -25,30 +26,18 @@ object CreateRoleRequest {
   }
   
   @scala.inline
-  implicit class CreateRoleRequestOps[Self <: CreateRoleRequest] (val x: Self) extends AnyVal {
+  implicit class CreateRoleRequestMutableBuilder[Self <: CreateRoleRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRole(value: Role): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoleId(value: String): Self = StObject.set(x, "roleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoleIdUndefined: Self = StObject.set(x, "roleId", js.undefined)
     
     @scala.inline
-    def setRole(value: Role): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
-    
-    @scala.inline
-    def setRoleId(value: String): Self = this.set("roleId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleId: Self = this.set("roleId", js.undefined)
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

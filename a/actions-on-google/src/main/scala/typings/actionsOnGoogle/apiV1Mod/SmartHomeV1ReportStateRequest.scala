@@ -1,12 +1,13 @@
 package typings.actionsOnGoogle.apiV1Mod
 
 import typings.actionsOnGoogle.anon.Devices
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartHomeV1ReportStateRequest extends js.Object {
+trait SmartHomeV1ReportStateRequest extends StObject {
   
   var agentUserId: String = js.native
   
@@ -23,27 +24,15 @@ object SmartHomeV1ReportStateRequest {
   }
   
   @scala.inline
-  implicit class SmartHomeV1ReportStateRequestOps[Self <: SmartHomeV1ReportStateRequest] (val x: Self) extends AnyVal {
+  implicit class SmartHomeV1ReportStateRequestMutableBuilder[Self <: SmartHomeV1ReportStateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentUserId(value: String): Self = StObject.set(x, "agentUserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPayload(value: Devices): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAgentUserId(value: String): Self = this.set("agentUserId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPayload(value: Devices): Self = this.set("payload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestId(value: String): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

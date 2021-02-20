@@ -10,6 +10,7 @@ import typings.vueCompilerCore.vueCompilerCoreNumbers.`3`
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`5`
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`8`
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,10 +30,10 @@ trait TemplateChildNode extends CodegenNode
 object TemplateChildNode {
   
   @scala.inline
-  def InterpolationNode(content: ExpressionNode, loc: SourceLocation, `type`: `5`): TemplateChildNode = {
+  def CommentNode(content: String, loc: SourceLocation, `type`: `3`): typings.vueCompilerCore.mod.CommentNode = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TemplateChildNode]
+    __obj.asInstanceOf[typings.vueCompilerCore.mod.CommentNode]
   }
   
   @scala.inline
@@ -45,10 +46,57 @@ object TemplateChildNode {
     tag: String,
     tagType: `1`,
     `type`: `1`
-  ): TemplateChildNode = {
+  ): typings.vueCompilerCore.mod.ComponentNode = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagType = tagType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TemplateChildNode]
+    __obj.asInstanceOf[typings.vueCompilerCore.mod.ComponentNode]
+  }
+  
+  @scala.inline
+  def CompoundExpressionNode(
+    children: js.Array[
+      SimpleExpressionNode | typings.vueCompilerCore.mod.CompoundExpressionNode | InterpolationNode | TextNode | String | js.Symbol
+    ],
+    loc: SourceLocation,
+    `type`: `8`
+  ): typings.vueCompilerCore.mod.CompoundExpressionNode = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.vueCompilerCore.mod.CompoundExpressionNode]
+  }
+  
+  @scala.inline
+  def ForNode(
+    children: js.Array[TemplateChildNode],
+    loc: SourceLocation,
+    parseResult: ForParseResult,
+    source: ExpressionNode,
+    `type`: `11`
+  ): typings.vueCompilerCore.mod.ForNode = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], parseResult = parseResult.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.vueCompilerCore.mod.ForNode]
+  }
+  
+  @scala.inline
+  def IfBranchNode(children: js.Array[TemplateChildNode], loc: SourceLocation, `type`: `10`): typings.vueCompilerCore.mod.IfBranchNode = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.vueCompilerCore.mod.IfBranchNode]
+  }
+  
+  @scala.inline
+  def IfNode(branches: js.Array[IfBranchNode], loc: SourceLocation, `type`: `9`): typings.vueCompilerCore.mod.IfNode = {
+    val __obj = js.Dynamic.literal(branches = branches.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.vueCompilerCore.mod.IfNode]
+  }
+  
+  @scala.inline
+  def InterpolationNode(content: ExpressionNode, loc: SourceLocation, `type`: `5`): typings.vueCompilerCore.mod.InterpolationNode = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.vueCompilerCore.mod.InterpolationNode]
   }
   
   @scala.inline
@@ -61,30 +109,10 @@ object TemplateChildNode {
     tag: String,
     tagType: `0`,
     `type`: `1`
-  ): TemplateChildNode = {
+  ): typings.vueCompilerCore.mod.PlainElementNode = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagType = tagType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TemplateChildNode]
-  }
-  
-  @scala.inline
-  def ForNode(
-    children: js.Array[TemplateChildNode],
-    loc: SourceLocation,
-    parseResult: ForParseResult,
-    source: ExpressionNode,
-    `type`: `11`
-  ): TemplateChildNode = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], parseResult = parseResult.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TemplateChildNode]
-  }
-  
-  @scala.inline
-  def IfNode(branches: js.Array[IfBranchNode], loc: SourceLocation, `type`: `9`): TemplateChildNode = {
-    val __obj = js.Dynamic.literal(branches = branches.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TemplateChildNode]
+    __obj.asInstanceOf[typings.vueCompilerCore.mod.PlainElementNode]
   }
   
   @scala.inline
@@ -97,10 +125,10 @@ object TemplateChildNode {
     tag: String,
     tagType: `2`,
     `type`: `1`
-  ): TemplateChildNode = {
+  ): typings.vueCompilerCore.mod.SlotOutletNode = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagType = tagType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TemplateChildNode]
+    __obj.asInstanceOf[typings.vueCompilerCore.mod.SlotOutletNode]
   }
   
   @scala.inline
@@ -113,37 +141,10 @@ object TemplateChildNode {
     tag: String,
     tagType: `3`,
     `type`: `1`
-  ): TemplateChildNode = {
+  ): typings.vueCompilerCore.mod.TemplateNode = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagType = tagType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TemplateChildNode]
-  }
-  
-  @scala.inline
-  def IfBranchNode(children: js.Array[TemplateChildNode], loc: SourceLocation, `type`: `10`): TemplateChildNode = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TemplateChildNode]
-  }
-  
-  @scala.inline
-  def TextNode(content: String, loc: SourceLocation, `type`: `2`): TemplateChildNode = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TemplateChildNode]
-  }
-  
-  @scala.inline
-  def CompoundExpressionNode(
-    children: js.Array[
-      SimpleExpressionNode | typings.vueCompilerCore.mod.CompoundExpressionNode | InterpolationNode | TextNode | String | js.Symbol
-    ],
-    loc: SourceLocation,
-    `type`: `8`
-  ): TemplateChildNode = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TemplateChildNode]
+    __obj.asInstanceOf[typings.vueCompilerCore.mod.TemplateNode]
   }
   
   @scala.inline
@@ -152,16 +153,16 @@ object TemplateChildNode {
     content: TextNode | InterpolationNode | CompoundExpressionNode,
     loc: SourceLocation,
     `type`: `12`
-  ): TemplateChildNode = {
+  ): typings.vueCompilerCore.mod.TextCallNode = {
     val __obj = js.Dynamic.literal(codegenNode = codegenNode.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TemplateChildNode]
+    __obj.asInstanceOf[typings.vueCompilerCore.mod.TextCallNode]
   }
   
   @scala.inline
-  def CommentNode(content: String, loc: SourceLocation, `type`: `3`): TemplateChildNode = {
+  def TextNode(content: String, loc: SourceLocation, `type`: `2`): typings.vueCompilerCore.mod.TextNode = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TemplateChildNode]
+    __obj.asInstanceOf[typings.vueCompilerCore.mod.TextNode]
   }
 }

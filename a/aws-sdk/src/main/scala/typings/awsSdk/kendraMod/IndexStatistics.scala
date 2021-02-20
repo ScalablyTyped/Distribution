@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndexStatistics extends js.Object {
+trait IndexStatistics extends StObject {
   
   /**
     * The number of question and answer topics in the index.
@@ -26,24 +27,12 @@ object IndexStatistics {
   }
   
   @scala.inline
-  implicit class IndexStatisticsOps[Self <: IndexStatistics] (val x: Self) extends AnyVal {
+  implicit class IndexStatisticsMutableBuilder[Self <: IndexStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFaqStatistics(value: FaqStatistics): Self = StObject.set(x, "FaqStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFaqStatistics(value: FaqStatistics): Self = this.set("FaqStatistics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextDocumentStatistics(value: TextDocumentStatistics): Self = this.set("TextDocumentStatistics", value.asInstanceOf[js.Any])
+    def setTextDocumentStatistics(value: TextDocumentStatistics): Self = StObject.set(x, "TextDocumentStatistics", value.asInstanceOf[js.Any])
   }
 }

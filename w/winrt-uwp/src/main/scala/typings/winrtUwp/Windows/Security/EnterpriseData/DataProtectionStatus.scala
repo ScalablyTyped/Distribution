@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Security.EnterpriseData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DataProtectionStatus extends js.Object
+sealed trait DataProtectionStatus extends StObject
 /** Describes the enterprise identity protection state of a buffer or stream. */
 @JSGlobal("Windows.Security.EnterpriseData.DataProtectionStatus")
 @js.native
-object DataProtectionStatus extends js.Object {
+object DataProtectionStatus extends StObject {
   
   /** The keys to access the protected item have been dropped while the device is locked. */
   @js.native

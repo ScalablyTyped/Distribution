@@ -10,6 +10,7 @@ import typings.mendixmodelsdk.menusMod.menus.MenuItem
 import typings.mendixmodelsdk.nativepagesMod.nativepages.BottomBarItem
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,16 +27,20 @@ class NoClientAction protected () extends ClientAction {
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction")
-@js.native
-object NoClientAction extends js.Object {
+object NoClientAction {
+  
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new NoClientAction instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.create")
+  @js.native
   def create(model: IModel): NoClientAction = js.native
   
   /**
@@ -43,6 +48,9 @@ object NoClientAction extends js.Object {
     * The new NoClientAction will be automatically stored in the 'action' property
     * of the parent ActionButton element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInActionButtonUnderAction")
+  @js.native
   def createInActionButtonUnderAction(container: ActionButton): NoClientAction = js.native
   
   /**
@@ -50,6 +58,9 @@ object NoClientAction extends js.Object {
     * The new NoClientAction will be automatically stored in the 'action' property
     * of the parent ActionItem element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInActionItemUnderAction")
+  @js.native
   def createInActionItemUnderAction(container: ActionItem): NoClientAction = js.native
   
   /**
@@ -60,6 +71,9 @@ object NoClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInAssociationWidgetUnderOnChangeAction")
+  @js.native
   def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): NoClientAction = js.native
   
   /**
@@ -70,6 +84,9 @@ object NoClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInAttributeWidgetUnderOnChangeAction")
+  @js.native
   def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): NoClientAction = js.native
   
   /**
@@ -80,6 +97,9 @@ object NoClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInAttributeWidgetUnderOnEnterAction")
+  @js.native
   def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): NoClientAction = js.native
   
   /**
@@ -90,6 +110,9 @@ object NoClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInAttributeWidgetUnderOnLeaveAction")
+  @js.native
   def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): NoClientAction = js.native
   
   /**
@@ -100,6 +123,9 @@ object NoClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 to 8.14.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInBottomBarItemUnderAction")
+  @js.native
   def createInBottomBarItemUnderAction(container: BottomBarItem): NoClientAction = js.native
   
   /**
@@ -110,6 +136,9 @@ object NoClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 6.6.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInDataViewActionButtonUnderAction")
+  @js.native
   def createInDataViewActionButtonUnderAction(container: DataViewActionButton): NoClientAction = js.native
   
   /**
@@ -120,6 +149,9 @@ object NoClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.3.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInDivContainerUnderOnClickAction")
+  @js.native
   def createInDivContainerUnderOnClickAction(container: DivContainer): NoClientAction = js.native
   
   /**
@@ -130,6 +162,9 @@ object NoClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.18.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInDynamicImageViewerUnderClickAction")
+  @js.native
   def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): NoClientAction = js.native
   
   /**
@@ -137,6 +172,9 @@ object NoClientAction extends js.Object {
     * The new NoClientAction will be automatically stored in the 'action' property
     * of the parent GridActionButton element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInGridActionButtonUnderAction")
+  @js.native
   def createInGridActionButtonUnderAction(container: GridActionButton): NoClientAction = js.native
   
   /**
@@ -144,6 +182,9 @@ object NoClientAction extends js.Object {
     * The new NoClientAction will be automatically stored in the 'clickAction' property
     * of the parent ListView element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInListViewUnderClickAction")
+  @js.native
   def createInListViewUnderClickAction(container: ListView): NoClientAction = js.native
   
   /**
@@ -154,6 +195,9 @@ object NoClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInListViewUnderPullDownAction")
+  @js.native
   def createInListViewUnderPullDownAction(container: ListView): NoClientAction = js.native
   
   /**
@@ -161,6 +205,9 @@ object NoClientAction extends js.Object {
     * The new NoClientAction will be automatically stored in the 'action' property
     * of the parent menus.MenuItem element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInMenuItemUnderAction")
+  @js.native
   def createInMenuItemUnderAction(container: MenuItem): NoClientAction = js.native
   
   /**
@@ -171,6 +218,9 @@ object NoClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.13.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInReferenceSetSelectorUnderOnChangeAction")
+  @js.native
   def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): NoClientAction = js.native
   
   /**
@@ -178,6 +228,9 @@ object NoClientAction extends js.Object {
     * The new NoClientAction will be automatically stored in the 'clickAction' property
     * of the parent StaticImageViewer element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInStaticImageViewerUnderClickAction")
+  @js.native
   def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): NoClientAction = js.native
   
   /**
@@ -188,6 +241,9 @@ object NoClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.7.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInTextBoxUnderOnEnterKeyPressAction")
+  @js.native
   def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): NoClientAction = js.native
   
   /**
@@ -198,9 +254,22 @@ object NoClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.19.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.createInWidgetValueUnderAction")
+  @js.native
   def createInWidgetValueUnderAction(container: WidgetValue): NoClientAction = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NoClientAction.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

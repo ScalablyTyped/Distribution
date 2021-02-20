@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateTimeToLiveInput extends js.Object {
+trait UpdateTimeToLiveInput extends StObject {
   
   /**
     * The name of the table to be configured.
@@ -26,24 +27,12 @@ object UpdateTimeToLiveInput {
   }
   
   @scala.inline
-  implicit class UpdateTimeToLiveInputOps[Self <: UpdateTimeToLiveInput] (val x: Self) extends AnyVal {
+  implicit class UpdateTimeToLiveInputMutableBuilder[Self <: UpdateTimeToLiveInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeToLiveSpecification(value: TimeToLiveSpecification): Self = this.set("TimeToLiveSpecification", value.asInstanceOf[js.Any])
+    def setTimeToLiveSpecification(value: TimeToLiveSpecification): Self = StObject.set(x, "TimeToLiveSpecification", value.asInstanceOf[js.Any])
   }
 }

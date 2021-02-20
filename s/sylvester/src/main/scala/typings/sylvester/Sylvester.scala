@@ -1,15 +1,14 @@
 package typings.sylvester
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Sylvester")
-@js.native
-object Sylvester extends js.Object {
+object Sylvester {
   
   @js.native
-  trait LineStatic extends js.Object {
+  trait LineStatic extends StObject {
     
     var X: Line = js.native
     
@@ -30,7 +29,7 @@ object Sylvester extends js.Object {
   }
   
   @js.native
-  trait MatrixStatic extends js.Object {
+  trait MatrixStatic extends StObject {
     
     /**
       * Diagonal matrix - all off-diagonal elements are zero
@@ -90,7 +89,7 @@ object Sylvester extends js.Object {
   }
   
   @js.native
-  trait PlaneStatic extends js.Object {
+  trait PlaneStatic extends StObject {
     
     var XY: Plane = js.native
     
@@ -121,7 +120,7 @@ object Sylvester extends js.Object {
   }
   
   @js.native
-  trait VectorStatic extends js.Object {
+  trait VectorStatic extends StObject {
     
     /**
       * Random vector of size n.

@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutAlarmRequest extends js.Object {
+trait PutAlarmRequest extends StObject {
   
   /**
     * The name for the alarm. Specify the name of an existing alarm to update, and overwrite the previous configuration of the alarm.
@@ -78,72 +79,60 @@ object PutAlarmRequest {
   }
   
   @scala.inline
-  implicit class PutAlarmRequestOps[Self <: PutAlarmRequest] (val x: Self) extends AnyVal {
+  implicit class PutAlarmRequestMutableBuilder[Self <: PutAlarmRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlarmName(value: ResourceName): Self = StObject.set(x, "alarmName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContactProtocols(value: ContactProtocolsList): Self = StObject.set(x, "contactProtocols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlarmName(value: ResourceName): Self = this.set("alarmName", value.asInstanceOf[js.Any])
+    def setContactProtocolsUndefined: Self = StObject.set(x, "contactProtocols", js.undefined)
     
     @scala.inline
-    def setComparisonOperator(value: ComparisonOperator): Self = this.set("comparisonOperator", value.asInstanceOf[js.Any])
+    def setContactProtocolsVarargs(value: ContactProtocol*): Self = StObject.set(x, "contactProtocols", js.Array(value :_*))
     
     @scala.inline
-    def setEvaluationPeriods(value: integer): Self = this.set("evaluationPeriods", value.asInstanceOf[js.Any])
+    def setDatapointsToAlarm(value: integer): Self = StObject.set(x, "datapointsToAlarm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricName(value: MetricName): Self = this.set("metricName", value.asInstanceOf[js.Any])
+    def setDatapointsToAlarmUndefined: Self = StObject.set(x, "datapointsToAlarm", js.undefined)
     
     @scala.inline
-    def setMonitoredResourceName(value: ResourceName): Self = this.set("monitoredResourceName", value.asInstanceOf[js.Any])
+    def setEvaluationPeriods(value: integer): Self = StObject.set(x, "evaluationPeriods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreshold(value: double): Self = this.set("threshold", value.asInstanceOf[js.Any])
+    def setMetricName(value: MetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactProtocolsVarargs(value: ContactProtocol*): Self = this.set("contactProtocols", js.Array(value :_*))
+    def setMonitoredResourceName(value: ResourceName): Self = StObject.set(x, "monitoredResourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactProtocols(value: ContactProtocolsList): Self = this.set("contactProtocols", value.asInstanceOf[js.Any])
+    def setNotificationEnabled(value: Boolean): Self = StObject.set(x, "notificationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContactProtocols: Self = this.set("contactProtocols", js.undefined)
+    def setNotificationEnabledUndefined: Self = StObject.set(x, "notificationEnabled", js.undefined)
     
     @scala.inline
-    def setDatapointsToAlarm(value: integer): Self = this.set("datapointsToAlarm", value.asInstanceOf[js.Any])
+    def setNotificationTriggers(value: NotificationTriggerList): Self = StObject.set(x, "notificationTriggers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDatapointsToAlarm: Self = this.set("datapointsToAlarm", js.undefined)
+    def setNotificationTriggersUndefined: Self = StObject.set(x, "notificationTriggers", js.undefined)
     
     @scala.inline
-    def setNotificationEnabled(value: Boolean): Self = this.set("notificationEnabled", value.asInstanceOf[js.Any])
+    def setNotificationTriggersVarargs(value: AlarmState*): Self = StObject.set(x, "notificationTriggers", js.Array(value :_*))
     
     @scala.inline
-    def deleteNotificationEnabled: Self = this.set("notificationEnabled", js.undefined)
+    def setThreshold(value: double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationTriggersVarargs(value: AlarmState*): Self = this.set("notificationTriggers", js.Array(value :_*))
+    def setTreatMissingData(value: TreatMissingData): Self = StObject.set(x, "treatMissingData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationTriggers(value: NotificationTriggerList): Self = this.set("notificationTriggers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationTriggers: Self = this.set("notificationTriggers", js.undefined)
-    
-    @scala.inline
-    def setTreatMissingData(value: TreatMissingData): Self = this.set("treatMissingData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTreatMissingData: Self = this.set("treatMissingData", js.undefined)
+    def setTreatMissingDataUndefined: Self = StObject.set(x, "treatMissingData", js.undefined)
   }
 }

@@ -11,6 +11,7 @@ import typings.fabric.fabricStrings.y
 import typings.std.CanvasRenderingContext2D
 import typings.std.Event
 import typings.std.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -516,30 +517,44 @@ class Canvas () extends StaticCanvas {
   var width: js.UndefOr[Double] = js.native
 }
 /* static members */
-@JSImport("fabric/fabric-impl", "Canvas")
-@js.native
-object Canvas extends js.Object {
+object Canvas {
   
-  var EMPTY_JSON: String = js.native
+  @JSImport("fabric/fabric-impl", "Canvas")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("fabric/fabric-impl", "Canvas.EMPTY_JSON")
+  @js.native
+  def EMPTY_JSON: String = js.native
+  @scala.inline
+  def EMPTY_JSON_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMPTY_JSON")(x.asInstanceOf[js.Any])
   
   /**
     * Provides a way to check support of some of the canvas methods
     * (either those of HTMLCanvasElement itself, or rendering context)
     * @param methodName Method to check support for; Could be one of "getImageData", "toDataURL", "toDataURLWithQuality" or "setLineDash"
     */
-  @JSName("supports")
+  @JSImport("fabric/fabric-impl", "Canvas.supports")
+  @js.native
   def supports_getImageData(methodName: getImageData): Boolean = js.native
-  @JSName("supports")
+  @JSImport("fabric/fabric-impl", "Canvas.supports")
+  @js.native
   def supports_setLineDash(methodName: setLineDash): Boolean = js.native
-  @JSName("supports")
+  @JSImport("fabric/fabric-impl", "Canvas.supports")
+  @js.native
   def supports_toDataURL(methodName: toDataURL): Boolean = js.native
-  @JSName("supports")
+  @JSImport("fabric/fabric-impl", "Canvas.supports")
+  @js.native
   def supports_toDataURLWithQuality(methodName: toDataURLWithQuality): Boolean = js.native
   
   /**
     * Returns JSON representation of canvas
     * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
     */
+  @JSImport("fabric/fabric-impl", "Canvas.toJSON")
+  @js.native
   def toJSON(): String = js.native
+  @JSImport("fabric/fabric-impl", "Canvas.toJSON")
+  @js.native
   def toJSON(propertiesToInclude: js.Array[String]): String = js.native
 }

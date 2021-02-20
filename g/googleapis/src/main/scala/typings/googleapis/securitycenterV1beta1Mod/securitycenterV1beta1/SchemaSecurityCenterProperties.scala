@@ -1,5 +1,6 @@
 package typings.googleapis.securitycenterV1beta1Mod.securitycenterV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * cannot be modified by the user.
   */
 @js.native
-trait SchemaSecurityCenterProperties extends js.Object {
+trait SchemaSecurityCenterProperties extends StObject {
   
   /**
     * The full resource name of the GCP resource this asset represents. This
@@ -51,51 +52,39 @@ object SchemaSecurityCenterProperties {
   }
   
   @scala.inline
-  implicit class SchemaSecurityCenterPropertiesOps[Self <: SchemaSecurityCenterProperties] (val x: Self) extends AnyVal {
+  implicit class SchemaSecurityCenterPropertiesMutableBuilder[Self <: SchemaSecurityCenterProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceOwners(value: js.Array[String]): Self = StObject.set(x, "resourceOwners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    def setResourceOwnersUndefined: Self = StObject.set(x, "resourceOwners", js.undefined)
     
     @scala.inline
-    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    def setResourceOwnersVarargs(value: String*): Self = StObject.set(x, "resourceOwners", js.Array(value :_*))
     
     @scala.inline
-    def setResourceOwnersVarargs(value: String*): Self = this.set("resourceOwners", js.Array(value :_*))
+    def setResourceParent(value: String): Self = StObject.set(x, "resourceParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceOwners(value: js.Array[String]): Self = this.set("resourceOwners", value.asInstanceOf[js.Any])
+    def setResourceParentUndefined: Self = StObject.set(x, "resourceParent", js.undefined)
     
     @scala.inline
-    def deleteResourceOwners: Self = this.set("resourceOwners", js.undefined)
+    def setResourceProject(value: String): Self = StObject.set(x, "resourceProject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceParent(value: String): Self = this.set("resourceParent", value.asInstanceOf[js.Any])
+    def setResourceProjectUndefined: Self = StObject.set(x, "resourceProject", js.undefined)
     
     @scala.inline
-    def deleteResourceParent: Self = this.set("resourceParent", js.undefined)
+    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceProject(value: String): Self = this.set("resourceProject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceProject: Self = this.set("resourceProject", js.undefined)
-    
-    @scala.inline
-    def setResourceType(value: String): Self = this.set("resourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditRow extends js.Object {
+trait EditRow extends StObject {
   
   var cells: js.Array[DbCellValue] = js.native
   
@@ -24,33 +25,21 @@ object EditRow {
   }
   
   @scala.inline
-  implicit class EditRowOps[Self <: EditRow] (val x: Self) extends AnyVal {
+  implicit class EditRowMutableBuilder[Self <: EditRow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCells(value: js.Array[DbCellValue]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellsVarargs(value: DbCellValue*): Self = StObject.set(x, "cells", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellsVarargs(value: DbCellValue*): Self = this.set("cells", js.Array(value :_*))
+    def setIsDirty(value: Boolean): Self = StObject.set(x, "isDirty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCells(value: js.Array[DbCellValue]): Self = this.set("cells", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsDirty(value: Boolean): Self = this.set("isDirty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: EditRowState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: EditRowState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

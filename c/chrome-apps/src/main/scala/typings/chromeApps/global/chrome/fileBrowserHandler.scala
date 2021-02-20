@@ -4,6 +4,7 @@ import typings.chromeApps.anon.Entries
 import typings.chromeApps.chrome.fileBrowserHandler.FileBrowserHandleExecuteId
 import typings.chromeApps.chrome.fileBrowserHandler.SelectFileParameters
 import typings.chromeApps.chrome.fileBrowserHandler.SelectionResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,13 +23,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * For example, you can use this API to enable users to upload files to your website.
   * @see[Documentation]{@link https://developer.chrome.com/extensions/fileBrowserHandler}
   */
-@JSGlobal("chrome.fileBrowserHandler")
-@js.native
-object fileBrowserHandler extends js.Object {
+object fileBrowserHandler {
   
   /**
     * Fired when file system action is executed from ChromeOS file browser.
     */
+  @JSGlobal("chrome.fileBrowserHandler.onExecute")
+  @js.native
   val onExecute: typings.chromeApps.chrome.events.Event[js.Function2[/* id */ FileBrowserHandleExecuteId, /* details */ Entries, Unit]] = js.native
   
   /**
@@ -41,5 +42,7 @@ object fileBrowserHandler extends js.Object {
     * @param params Parameters that will be used while selecting the file.
     * @param callback Function called upon completion.
     */
+  @JSGlobal("chrome.fileBrowserHandler.selectFile")
+  @js.native
   def selectFile(params: SelectFileParameters, callback: js.Function1[/* result */ SelectionResult, Unit]): Unit = js.native
 }

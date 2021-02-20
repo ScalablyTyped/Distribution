@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IActionDescriptor extends js.Object {
+trait IActionDescriptor extends StObject {
   
   /**
     * Control if the action should show up in the context menu and where.
@@ -63,60 +64,48 @@ object IActionDescriptor {
   }
   
   @scala.inline
-  implicit class IActionDescriptorOps[Self <: IActionDescriptor] (val x: Self) extends AnyVal {
+  implicit class IActionDescriptorMutableBuilder[Self <: IActionDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContextMenuGroupId(value: String): Self = StObject.set(x, "contextMenuGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextMenuGroupIdUndefined: Self = StObject.set(x, "contextMenuGroupId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextMenuOrder(value: Double): Self = StObject.set(x, "contextMenuOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setContextMenuOrderUndefined: Self = StObject.set(x, "contextMenuOrder", js.undefined)
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRun(value: (ICodeEditor, /* repeated */ js.Any) => Unit | js.Promise[Unit]): Self = this.set("run", js.Any.fromFunction2(value))
+    def setKeybindingContext(value: String): Self = StObject.set(x, "keybindingContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextMenuGroupId(value: String): Self = this.set("contextMenuGroupId", value.asInstanceOf[js.Any])
+    def setKeybindingContextUndefined: Self = StObject.set(x, "keybindingContext", js.undefined)
     
     @scala.inline
-    def deleteContextMenuGroupId: Self = this.set("contextMenuGroupId", js.undefined)
+    def setKeybindings(value: js.Array[Double]): Self = StObject.set(x, "keybindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextMenuOrder(value: Double): Self = this.set("contextMenuOrder", value.asInstanceOf[js.Any])
+    def setKeybindingsUndefined: Self = StObject.set(x, "keybindings", js.undefined)
     
     @scala.inline
-    def deleteContextMenuOrder: Self = this.set("contextMenuOrder", js.undefined)
+    def setKeybindingsVarargs(value: Double*): Self = StObject.set(x, "keybindings", js.Array(value :_*))
     
     @scala.inline
-    def setKeybindingContext(value: String): Self = this.set("keybindingContext", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeybindingContext: Self = this.set("keybindingContext", js.undefined)
+    def setPrecondition(value: String): Self = StObject.set(x, "precondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeybindingsVarargs(value: Double*): Self = this.set("keybindings", js.Array(value :_*))
+    def setPreconditionUndefined: Self = StObject.set(x, "precondition", js.undefined)
     
     @scala.inline
-    def setKeybindings(value: js.Array[Double]): Self = this.set("keybindings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeybindings: Self = this.set("keybindings", js.undefined)
-    
-    @scala.inline
-    def setPrecondition(value: String): Self = this.set("precondition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrecondition: Self = this.set("precondition", js.undefined)
+    def setRun(value: (ICodeEditor, /* repeated */ js.Any) => Unit | js.Promise[Unit]): Self = StObject.set(x, "run", js.Any.fromFunction2(value))
   }
 }

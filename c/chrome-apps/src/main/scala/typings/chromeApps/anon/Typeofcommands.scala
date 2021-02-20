@@ -2,12 +2,13 @@ package typings.chromeApps.anon
 
 import typings.chromeApps.chrome.commands.Command
 import typings.chromeApps.chrome.commands.CommandEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofcommands extends js.Object {
+trait Typeofcommands extends StObject {
   
   /**
     * Returns all the registered commands for this app and their shortcut (if active).
@@ -27,24 +28,12 @@ object Typeofcommands {
   }
   
   @scala.inline
-  implicit class TypeofcommandsOps[Self <: Typeofcommands] (val x: Self) extends AnyVal {
+  implicit class TypeofcommandsMutableBuilder[Self <: Typeofcommands] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAll(value: js.Function1[/* commands */ js.Array[Command], Unit] => Unit): Self = StObject.set(x, "getAll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetAll(value: js.Function1[/* commands */ js.Array[Command], Unit] => Unit): Self = this.set("getAll", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnCommand(value: CommandEvent): Self = this.set("onCommand", value.asInstanceOf[js.Any])
+    def setOnCommand(value: CommandEvent): Self = StObject.set(x, "onCommand", value.asInstanceOf[js.Any])
   }
 }

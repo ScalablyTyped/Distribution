@@ -1,11 +1,12 @@
 package typings.bmapgl.BMapGL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroundOverlayOptions extends js.Object {
+trait GroundOverlayOptions extends StObject {
   
   var displayOnMaxLevel: js.UndefOr[Double] = js.native
   
@@ -24,42 +25,30 @@ object GroundOverlayOptions {
   }
   
   @scala.inline
-  implicit class GroundOverlayOptionsOps[Self <: GroundOverlayOptions] (val x: Self) extends AnyVal {
+  implicit class GroundOverlayOptionsMutableBuilder[Self <: GroundOverlayOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayOnMaxLevel(value: Double): Self = StObject.set(x, "displayOnMaxLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayOnMaxLevelUndefined: Self = StObject.set(x, "displayOnMaxLevel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayOnMinLevel(value: Double): Self = StObject.set(x, "displayOnMinLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayOnMaxLevel(value: Double): Self = this.set("displayOnMaxLevel", value.asInstanceOf[js.Any])
+    def setDisplayOnMinLevelUndefined: Self = StObject.set(x, "displayOnMinLevel", js.undefined)
     
     @scala.inline
-    def deleteDisplayOnMaxLevel: Self = this.set("displayOnMaxLevel", js.undefined)
+    def setImageURL(value: String): Self = StObject.set(x, "imageURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayOnMinLevel(value: Double): Self = this.set("displayOnMinLevel", value.asInstanceOf[js.Any])
+    def setImageURLUndefined: Self = StObject.set(x, "imageURL", js.undefined)
     
     @scala.inline
-    def deleteDisplayOnMinLevel: Self = this.set("displayOnMinLevel", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageURL(value: String): Self = this.set("imageURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageURL: Self = this.set("imageURL", js.undefined)
-    
-    @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
   }
 }

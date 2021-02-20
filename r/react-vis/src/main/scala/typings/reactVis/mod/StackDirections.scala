@@ -1,5 +1,6 @@
 package typings.reactVis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactVis.reactVisStrings.opacity
   - typings.reactVis.reactVisStrings.size
 */
-trait StackDirections extends js.Object
+trait StackDirections extends StObject
 object StackDirections {
   
   @scala.inline

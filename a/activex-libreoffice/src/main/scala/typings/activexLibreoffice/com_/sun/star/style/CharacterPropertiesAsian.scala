@@ -2,13 +2,14 @@ package typings.activexLibreoffice.com_.sun.star.style
 
 import typings.activexLibreoffice.com_.sun.star.awt.FontSlant
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This is a set of properties to describe the style of characters in Asian texts. */
 @js.native
-trait CharacterPropertiesAsian extends js.Object {
+trait CharacterPropertiesAsian extends StObject {
   
   /** This property contains the text encoding of the font as specified in {@link com.sun.star.awt.CharSet} . */
   var CharFontCharSetAsian: Double = js.native
@@ -70,45 +71,33 @@ object CharacterPropertiesAsian {
   }
   
   @scala.inline
-  implicit class CharacterPropertiesAsianOps[Self <: CharacterPropertiesAsian] (val x: Self) extends AnyVal {
+  implicit class CharacterPropertiesAsianMutableBuilder[Self <: CharacterPropertiesAsian] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharFontCharSetAsian(value: Double): Self = StObject.set(x, "CharFontCharSetAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharFontFamilyAsian(value: Double): Self = StObject.set(x, "CharFontFamilyAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCharFontNameAsian(value: String): Self = StObject.set(x, "CharFontNameAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontCharSetAsian(value: Double): Self = this.set("CharFontCharSetAsian", value.asInstanceOf[js.Any])
+    def setCharFontPitchAsian(value: Double): Self = StObject.set(x, "CharFontPitchAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontFamilyAsian(value: Double): Self = this.set("CharFontFamilyAsian", value.asInstanceOf[js.Any])
+    def setCharFontStyleNameAsian(value: String): Self = StObject.set(x, "CharFontStyleNameAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontNameAsian(value: String): Self = this.set("CharFontNameAsian", value.asInstanceOf[js.Any])
+    def setCharHeightAsian(value: Double): Self = StObject.set(x, "CharHeightAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontPitchAsian(value: Double): Self = this.set("CharFontPitchAsian", value.asInstanceOf[js.Any])
+    def setCharLocaleAsian(value: Locale): Self = StObject.set(x, "CharLocaleAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontStyleNameAsian(value: String): Self = this.set("CharFontStyleNameAsian", value.asInstanceOf[js.Any])
+    def setCharPostureAsian(value: FontSlant): Self = StObject.set(x, "CharPostureAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharHeightAsian(value: Double): Self = this.set("CharHeightAsian", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCharLocaleAsian(value: Locale): Self = this.set("CharLocaleAsian", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCharPostureAsian(value: FontSlant): Self = this.set("CharPostureAsian", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCharWeightAsian(value: Double): Self = this.set("CharWeightAsian", value.asInstanceOf[js.Any])
+    def setCharWeightAsian(value: Double): Self = StObject.set(x, "CharWeightAsian", value.asInstanceOf[js.Any])
   }
 }

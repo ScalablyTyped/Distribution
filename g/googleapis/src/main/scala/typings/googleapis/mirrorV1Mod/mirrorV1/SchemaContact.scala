@@ -1,5 +1,6 @@
 package typings.googleapis.mirrorV1Mod.mirrorV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A person or group that can be used as a creator or a contact.
   */
 @js.native
-trait SchemaContact extends js.Object {
+trait SchemaContact extends StObject {
   
   /**
     * A list of voice menu commands that a contact can handle. Glass shows up
@@ -99,102 +100,90 @@ object SchemaContact {
   }
   
   @scala.inline
-  implicit class SchemaContactOps[Self <: SchemaContact] (val x: Self) extends AnyVal {
+  implicit class SchemaContactMutableBuilder[Self <: SchemaContact] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptCommands(value: js.Array[SchemaCommand]): Self = StObject.set(x, "acceptCommands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptCommandsUndefined: Self = StObject.set(x, "acceptCommands", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcceptCommandsVarargs(value: SchemaCommand*): Self = StObject.set(x, "acceptCommands", js.Array(value :_*))
     
     @scala.inline
-    def setAcceptCommandsVarargs(value: SchemaCommand*): Self = this.set("acceptCommands", js.Array(value :_*))
+    def setAcceptTypes(value: js.Array[String]): Self = StObject.set(x, "acceptTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptCommands(value: js.Array[SchemaCommand]): Self = this.set("acceptCommands", value.asInstanceOf[js.Any])
+    def setAcceptTypesUndefined: Self = StObject.set(x, "acceptTypes", js.undefined)
     
     @scala.inline
-    def deleteAcceptCommands: Self = this.set("acceptCommands", js.undefined)
+    def setAcceptTypesVarargs(value: String*): Self = StObject.set(x, "acceptTypes", js.Array(value :_*))
     
     @scala.inline
-    def setAcceptTypesVarargs(value: String*): Self = this.set("acceptTypes", js.Array(value :_*))
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptTypes(value: js.Array[String]): Self = this.set("acceptTypes", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteAcceptTypes: Self = this.set("acceptTypes", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setImageUrls(value: js.Array[String]): Self = StObject.set(x, "imageUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setImageUrlsUndefined: Self = StObject.set(x, "imageUrls", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setImageUrlsVarargs(value: String*): Self = StObject.set(x, "imageUrls", js.Array(value :_*))
     
     @scala.inline
-    def setImageUrlsVarargs(value: String*): Self = this.set("imageUrls", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrls(value: js.Array[String]): Self = this.set("imageUrls", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteImageUrls: Self = this.set("imageUrls", js.undefined)
+    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneNumber(value: String): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deletePhoneNumber: Self = this.set("phoneNumber", js.undefined)
+    def setSharingFeatures(value: js.Array[String]): Self = StObject.set(x, "sharingFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setSharingFeaturesUndefined: Self = StObject.set(x, "sharingFeatures", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setSharingFeaturesVarargs(value: String*): Self = StObject.set(x, "sharingFeatures", js.Array(value :_*))
     
     @scala.inline
-    def setSharingFeaturesVarargs(value: String*): Self = this.set("sharingFeatures", js.Array(value :_*))
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharingFeatures(value: js.Array[String]): Self = this.set("sharingFeatures", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteSharingFeatures: Self = this.set("sharingFeatures", js.undefined)
+    def setSpeakableName(value: String): Self = StObject.set(x, "speakableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSpeakableNameUndefined: Self = StObject.set(x, "speakableName", js.undefined)
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeakableName(value: String): Self = this.set("speakableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpeakableName: Self = this.set("speakableName", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

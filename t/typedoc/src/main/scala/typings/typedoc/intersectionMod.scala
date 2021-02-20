@@ -1,14 +1,14 @@
 package typings.typedoc
 
 import typings.typedoc.typesAbstractMod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/models/types/intersection", JSImport.Namespace)
-@js.native
-object intersectionMod extends js.Object {
+object intersectionMod {
   
+  @JSImport("typedoc/dist/lib/models/types/intersection", "IntersectionType")
   @js.native
   class IntersectionType protected () extends Type {
     def this(types: js.Array[Type]) = this()

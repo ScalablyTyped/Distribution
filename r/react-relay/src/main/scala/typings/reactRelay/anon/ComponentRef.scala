@@ -1,11 +1,12 @@
 package typings.reactRelay.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComponentRef extends js.Object {
+trait ComponentRef extends StObject {
   
   var componentRef: js.UndefOr[js.Function1[/* ref */ js.Any, Unit]] = js.native
 }
@@ -18,24 +19,12 @@ object ComponentRef {
   }
   
   @scala.inline
-  implicit class ComponentRefOps[Self <: ComponentRef] (val x: Self) extends AnyVal {
+  implicit class ComponentRefMutableBuilder[Self <: ComponentRef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentRef(value: /* ref */ js.Any => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComponentRef(value: /* ref */ js.Any => Unit): Self = this.set("componentRef", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteComponentRef: Self = this.set("componentRef", js.undefined)
+    def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
   }
 }

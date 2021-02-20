@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * VolumeMount describes a mounting of a Volume within a container.
   */
 @js.native
-trait VolumeMount extends js.Object {
+trait VolumeMount extends StObject {
   
   /**
     * Path within the container at which the volume should be mounted.  Must not contain ':'.
@@ -56,36 +57,24 @@ object VolumeMount {
   }
   
   @scala.inline
-  implicit class VolumeMountOps[Self <: VolumeMount] (val x: Self) extends AnyVal {
+  implicit class VolumeMountMutableBuilder[Self <: VolumeMount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMountPath(value: String): Self = StObject.set(x, "mountPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMountPropagation(value: String): Self = StObject.set(x, "mountPropagation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountPath(value: String): Self = this.set("mountPath", value.asInstanceOf[js.Any])
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountPropagation(value: String): Self = this.set("mountPropagation", value.asInstanceOf[js.Any])
+    def setSubPath(value: String): Self = StObject.set(x, "subPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubPath(value: String): Self = this.set("subPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubPathExpr(value: String): Self = this.set("subPathExpr", value.asInstanceOf[js.Any])
+    def setSubPathExpr(value: String): Self = StObject.set(x, "subPathExpr", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,11 @@
 package typings.phaser.global.Phaser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Cache")
-@js.native
-object Cache extends js.Object {
+object Cache {
   
   /**
     * The BaseCache is a base Cache class that can be used for storing references to any kind of data.
@@ -15,6 +14,7 @@ object Cache extends js.Object {
     * 
     * Keys are string-based.
     */
+  @JSGlobal("Phaser.Cache.BaseCache")
   @js.native
   class BaseCache ()
     extends typings.phaser.Phaser.Cache.BaseCache
@@ -26,6 +26,7 @@ object Cache extends js.Object {
     * it has loaded. The manager itself doesn't store any files, but instead owns multiple BaseCache
     * instances, one per type of file. You can also add your own custom caches.
     */
+  @JSGlobal("Phaser.Cache.CacheManager")
   @js.native
   class CacheManager protected ()
     extends typings.phaser.Phaser.Cache.CacheManager {
@@ -36,14 +37,15 @@ object Cache extends js.Object {
     def this(game: typings.phaser.Phaser.Game) = this()
   }
   
-  @js.native
-  object Events extends js.Object {
+  object Events {
     
     /**
       * The Cache Add Event.
       * 
       * This event is dispatched by any Cache that extends the BaseCache each time a new object is added to it.
       */
+    @JSGlobal("Phaser.Cache.Events.ADD")
+    @js.native
     val ADD: js.Any = js.native
     
     /**
@@ -51,6 +53,8 @@ object Cache extends js.Object {
       * 
       * This event is dispatched by any Cache that extends the BaseCache each time an object is removed from it.
       */
+    @JSGlobal("Phaser.Cache.Events.REMOVE")
+    @js.native
     val REMOVE: js.Any = js.native
   }
 }

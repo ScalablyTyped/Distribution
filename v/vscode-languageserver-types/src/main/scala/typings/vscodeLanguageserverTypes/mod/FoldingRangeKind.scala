@@ -1,15 +1,15 @@
 package typings.vscodeLanguageserverTypes.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FoldingRangeKind extends js.Object
+sealed trait FoldingRangeKind extends StObject
 @JSImport("vscode-languageserver-types", "FoldingRangeKind")
 @js.native
-object FoldingRangeKind extends js.Object {
+object FoldingRangeKind extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[FoldingRangeKind with String] = js.native
@@ -19,22 +19,19 @@ object FoldingRangeKind extends js.Object {
     */
   @js.native
   sealed trait Comment extends FoldingRangeKind
-  /* "comment" */ @js.native
-  object Comment extends TopLevel[Comment with String]
+  /* "comment" */ val Comment: typings.vscodeLanguageserverTypes.mod.FoldingRangeKind.Comment with String = js.native
   
   /**
     * Folding range for a imports or includes
     */
   @js.native
   sealed trait Imports extends FoldingRangeKind
-  /* "imports" */ @js.native
-  object Imports extends TopLevel[Imports with String]
+  /* "imports" */ val Imports: typings.vscodeLanguageserverTypes.mod.FoldingRangeKind.Imports with String = js.native
   
   /**
     * Folding range for a region (e.g. `#region`)
     */
   @js.native
   sealed trait Region extends FoldingRangeKind
-  /* "region" */ @js.native
-  object Region extends TopLevel[Region with String]
+  /* "region" */ val Region: typings.vscodeLanguageserverTypes.mod.FoldingRangeKind.Region with String = js.native
 }

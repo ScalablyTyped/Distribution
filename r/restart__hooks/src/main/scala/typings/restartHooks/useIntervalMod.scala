@@ -1,13 +1,14 @@
 package typings.restartHooks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@restart/hooks/cjs/useInterval", JSImport.Namespace)
-@js.native
-object useIntervalMod extends js.Object {
+object useIntervalMod {
   
+  @JSImport("@restart/hooks/cjs/useInterval", JSImport.Default)
+  @js.native
   def default(fn: js.Function0[Unit], ms: Double): Unit = js.native
   /**
     * Creates a pausable `setInterval` that is properly cleaned up when a component unmounted
@@ -31,6 +32,8 @@ object useIntervalMod extends js.Object {
     * @param ms The milliseconds duration of the interval
     * @param paused Whether or not the interval is currently running
     */
+  @JSImport("@restart/hooks/cjs/useInterval", JSImport.Default)
+  @js.native
   def default(fn: js.Function0[Unit], ms: Double, paused: Boolean): Unit = js.native
   /**
     * Creates a pausable `setInterval` that _fires_ immediately and is
@@ -51,5 +54,7 @@ object useIntervalMod extends js.Object {
     * rather than waiting for the first interval to elapse
     *
     */
+  @JSImport("@restart/hooks/cjs/useInterval", JSImport.Default)
+  @js.native
   def default(fn: js.Function0[Unit], ms: Double, paused: Boolean, runImmediately: Boolean): Unit = js.native
 }

@@ -1,12 +1,13 @@
 package typings.stripeV2.stripe
 
 import typings.stripeV2.anon.Message
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StripeApplePay extends js.Object {
+trait StripeApplePay extends StObject {
   
   def buildSession(
     data: StripeApplePayPaymentRequest,
@@ -36,19 +37,7 @@ object StripeApplePay {
   }
   
   @scala.inline
-  implicit class StripeApplePayOps[Self <: StripeApplePay] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class StripeApplePayMutableBuilder[Self <: StripeApplePay] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setBuildSession(
@@ -57,9 +46,9 @@ object StripeApplePay {
           /* completion */ js.Function1[/* value */ js.Any, Unit], 
           Unit
         ], js.Function1[/* error */ Message, Unit]) => js.Any
-    ): Self = this.set("buildSession", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "buildSession", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCheckAvailability(value: js.Function1[/* result */ Boolean, Unit] => Unit): Self = this.set("checkAvailability", js.Any.fromFunction1(value))
+    def setCheckAvailability(value: js.Function1[/* result */ Boolean, Unit] => Unit): Self = StObject.set(x, "checkAvailability", js.Any.fromFunction1(value))
   }
 }

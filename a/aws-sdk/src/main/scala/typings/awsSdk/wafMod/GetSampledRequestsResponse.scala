@@ -1,11 +1,12 @@
 package typings.awsSdk.wafMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSampledRequestsResponse extends js.Object {
+trait GetSampledRequestsResponse extends StObject {
   
   /**
     * The total number of requests from which GetSampledRequests got a sample of MaxItems requests. If PopulationSize is less than MaxItems, the sample includes every request that your AWS resource received during the specified time range.
@@ -31,39 +32,27 @@ object GetSampledRequestsResponse {
   }
   
   @scala.inline
-  implicit class GetSampledRequestsResponseOps[Self <: GetSampledRequestsResponse] (val x: Self) extends AnyVal {
+  implicit class GetSampledRequestsResponseMutableBuilder[Self <: GetSampledRequestsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPopulationSize(value: PopulationSize): Self = StObject.set(x, "PopulationSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPopulationSizeUndefined: Self = StObject.set(x, "PopulationSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSampledRequests(value: SampledHTTPRequests): Self = StObject.set(x, "SampledRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopulationSize(value: PopulationSize): Self = this.set("PopulationSize", value.asInstanceOf[js.Any])
+    def setSampledRequestsUndefined: Self = StObject.set(x, "SampledRequests", js.undefined)
     
     @scala.inline
-    def deletePopulationSize: Self = this.set("PopulationSize", js.undefined)
+    def setSampledRequestsVarargs(value: SampledHTTPRequest*): Self = StObject.set(x, "SampledRequests", js.Array(value :_*))
     
     @scala.inline
-    def setSampledRequestsVarargs(value: SampledHTTPRequest*): Self = this.set("SampledRequests", js.Array(value :_*))
+    def setTimeWindow(value: TimeWindow): Self = StObject.set(x, "TimeWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampledRequests(value: SampledHTTPRequests): Self = this.set("SampledRequests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampledRequests: Self = this.set("SampledRequests", js.undefined)
-    
-    @scala.inline
-    def setTimeWindow(value: TimeWindow): Self = this.set("TimeWindow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeWindow: Self = this.set("TimeWindow", js.undefined)
+    def setTimeWindowUndefined: Self = StObject.set(x, "TimeWindow", js.undefined)
   }
 }

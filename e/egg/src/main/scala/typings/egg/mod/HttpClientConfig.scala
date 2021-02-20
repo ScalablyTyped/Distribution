@@ -2,6 +2,7 @@ package typings.egg.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.urllib.mod.RequestOptions2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,66 +43,54 @@ object HttpClientConfig {
   }
   
   @scala.inline
-  implicit class HttpClientConfigOps[Self <: HttpClientConfig] (val x: Self) extends AnyVal {
+  implicit class HttpClientConfigMutableBuilder[Self <: HttpClientConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDnsCacheLookupInterval(value: Double): Self = StObject.set(x, "dnsCacheLookupInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDnsCacheLookupIntervalUndefined: Self = StObject.set(x, "dnsCacheLookupInterval", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDnsCacheMaxLength(value: Double): Self = StObject.set(x, "dnsCacheMaxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsCacheLookupInterval(value: Double): Self = this.set("dnsCacheLookupInterval", value.asInstanceOf[js.Any])
+    def setDnsCacheMaxLengthUndefined: Self = StObject.set(x, "dnsCacheMaxLength", js.undefined)
     
     @scala.inline
-    def deleteDnsCacheLookupInterval: Self = this.set("dnsCacheLookupInterval", js.undefined)
+    def setEnableDNSCache(value: Boolean): Self = StObject.set(x, "enableDNSCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsCacheMaxLength(value: Double): Self = this.set("dnsCacheMaxLength", value.asInstanceOf[js.Any])
+    def setEnableDNSCacheUndefined: Self = StObject.set(x, "enableDNSCache", js.undefined)
     
     @scala.inline
-    def deleteDnsCacheMaxLength: Self = this.set("dnsCacheMaxLength", js.undefined)
+    def setEnableProxy(value: Boolean): Self = StObject.set(x, "enableProxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableDNSCache(value: Boolean): Self = this.set("enableDNSCache", value.asInstanceOf[js.Any])
+    def setEnableProxyUndefined: Self = StObject.set(x, "enableProxy", js.undefined)
     
     @scala.inline
-    def deleteEnableDNSCache: Self = this.set("enableDNSCache", js.undefined)
+    def setHttpAgent(value: HttpClientBaseConfig): Self = StObject.set(x, "httpAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableProxy(value: Boolean): Self = this.set("enableProxy", value.asInstanceOf[js.Any])
+    def setHttpAgentUndefined: Self = StObject.set(x, "httpAgent", js.undefined)
     
     @scala.inline
-    def deleteEnableProxy: Self = this.set("enableProxy", js.undefined)
+    def setHttpsAgent(value: HttpClientBaseConfig): Self = StObject.set(x, "httpsAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpAgent(value: HttpClientBaseConfig): Self = this.set("httpAgent", value.asInstanceOf[js.Any])
+    def setHttpsAgentUndefined: Self = StObject.set(x, "httpsAgent", js.undefined)
     
     @scala.inline
-    def deleteHttpAgent: Self = this.set("httpAgent", js.undefined)
+    def setProxy(value: String | StringDictionary[js.Any]): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpsAgent(value: HttpClientBaseConfig): Self = this.set("httpsAgent", value.asInstanceOf[js.Any])
+    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
     @scala.inline
-    def deleteHttpsAgent: Self = this.set("httpsAgent", js.undefined)
+    def setRequest(value: RequestOptions2): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxy(value: String | StringDictionary[js.Any]): Self = this.set("proxy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProxy: Self = this.set("proxy", js.undefined)
-    
-    @scala.inline
-    def setRequest(value: RequestOptions2): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
   }
 }

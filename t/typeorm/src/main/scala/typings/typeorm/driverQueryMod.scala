@@ -1,15 +1,15 @@
 package typings.typeorm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/driver/Query", JSImport.Namespace)
-@js.native
-object driverQueryMod extends js.Object {
+object driverQueryMod {
   
+  @JSImport("typeorm/driver/Query", "Query")
   @js.native
-  class Query protected () extends js.Object {
+  class Query protected () extends StObject {
     def this(query: String) = this()
     def this(query: String, parameters: js.Array[_]) = this()
     

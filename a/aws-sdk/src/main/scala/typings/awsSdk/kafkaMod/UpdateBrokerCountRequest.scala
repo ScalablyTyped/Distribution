@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateBrokerCountRequest extends js.Object {
+trait UpdateBrokerCountRequest extends StObject {
   
   /**
     * 
@@ -37,27 +38,15 @@ object UpdateBrokerCountRequest {
   }
   
   @scala.inline
-  implicit class UpdateBrokerCountRequestOps[Self <: UpdateBrokerCountRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateBrokerCountRequestMutableBuilder[Self <: UpdateBrokerCountRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentVersion(value: string): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClusterArn(value: string): Self = this.set("ClusterArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentVersion(value: string): Self = this.set("CurrentVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetNumberOfBrokerNodes(value: integerMin1Max15): Self = this.set("TargetNumberOfBrokerNodes", value.asInstanceOf[js.Any])
+    def setTargetNumberOfBrokerNodes(value: integerMin1Max15): Self = StObject.set(x, "TargetNumberOfBrokerNodes", value.asInstanceOf[js.Any])
   }
 }

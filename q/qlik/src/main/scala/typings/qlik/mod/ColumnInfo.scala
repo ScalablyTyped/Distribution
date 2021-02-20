@@ -3,12 +3,13 @@ package typings.qlik.mod
 import typings.qlik.qlikStrings.A
 import typings.qlik.qlikStrings.D
 import typings.qlik.qlikStrings.N
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnInfo extends js.Object {
+trait ColumnInfo extends StObject {
   
   var qApprMaxGlyphCount: Double = js.native
   
@@ -56,60 +57,48 @@ object ColumnInfo {
   }
   
   @scala.inline
-  implicit class ColumnInfoOps[Self <: ColumnInfo] (val x: Self) extends AnyVal {
+  implicit class ColumnInfoMutableBuilder[Self <: ColumnInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQApprMaxGlyphCount(value: Double): Self = StObject.set(x, "qApprMaxGlyphCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQAttrDimInfo(value: js.Array[NxAttrDimInfo]): Self = StObject.set(x, "qAttrDimInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQAttrDimInfoVarargs(value: NxAttrDimInfo*): Self = StObject.set(x, "qAttrDimInfo", js.Array(value :_*))
     
     @scala.inline
-    def setQApprMaxGlyphCount(value: Double): Self = this.set("qApprMaxGlyphCount", value.asInstanceOf[js.Any])
+    def setQAttrExprInfo(value: js.Array[NxAttrExprInfo]): Self = StObject.set(x, "qAttrExprInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQAttrDimInfoVarargs(value: NxAttrDimInfo*): Self = this.set("qAttrDimInfo", js.Array(value :_*))
+    def setQAttrExprInfoVarargs(value: NxAttrExprInfo*): Self = StObject.set(x, "qAttrExprInfo", js.Array(value :_*))
     
     @scala.inline
-    def setQAttrDimInfo(value: js.Array[NxAttrDimInfo]): Self = this.set("qAttrDimInfo", value.asInstanceOf[js.Any])
+    def setQCardinal(value: String): Self = StObject.set(x, "qCardinal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQAttrExprInfoVarargs(value: NxAttrExprInfo*): Self = this.set("qAttrExprInfo", js.Array(value :_*))
+    def setQError(value: NxValidationError): Self = StObject.set(x, "qError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQAttrExprInfo(value: js.Array[NxAttrExprInfo]): Self = this.set("qAttrExprInfo", value.asInstanceOf[js.Any])
+    def setQFallbackTitle(value: String): Self = StObject.set(x, "qFallbackTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQCardinal(value: String): Self = this.set("qCardinal", value.asInstanceOf[js.Any])
+    def setQIsAutoFormat(value: Boolean): Self = StObject.set(x, "qIsAutoFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQError(value: NxValidationError): Self = this.set("qError", value.asInstanceOf[js.Any])
+    def setQMax(value: Double): Self = StObject.set(x, "qMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFallbackTitle(value: String): Self = this.set("qFallbackTitle", value.asInstanceOf[js.Any])
+    def setQMin(value: Double): Self = StObject.set(x, "qMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIsAutoFormat(value: Boolean): Self = this.set("qIsAutoFormat", value.asInstanceOf[js.Any])
+    def setQNumFormat(value: FieldAttributes): Self = StObject.set(x, "qNumFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQMax(value: Double): Self = this.set("qMax", value.asInstanceOf[js.Any])
+    def setQReverseSort(value: Boolean): Self = StObject.set(x, "qReverseSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQMin(value: Double): Self = this.set("qMin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQNumFormat(value: FieldAttributes): Self = this.set("qNumFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQReverseSort(value: Boolean): Self = this.set("qReverseSort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQSortIndicator(value: N | A | D): Self = this.set("qSortIndicator", value.asInstanceOf[js.Any])
+    def setQSortIndicator(value: N | A | D): Self = StObject.set(x, "qSortIndicator", value.asInstanceOf[js.Any])
   }
 }

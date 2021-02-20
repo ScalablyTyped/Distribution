@@ -1,11 +1,12 @@
 package typings.luxon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocaleOptions extends js.Object {
+trait LocaleOptions extends StObject {
   
   var locale: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object LocaleOptions {
   }
   
   @scala.inline
-  implicit class LocaleOptionsOps[Self <: LocaleOptions] (val x: Self) extends AnyVal {
+  implicit class LocaleOptionsMutableBuilder[Self <: LocaleOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumberingSystem(value: NumberingSystem): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setNumberingSystemUndefined: Self = StObject.set(x, "numberingSystem", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setOutputCalendar(value: CalendarSystem): Self = StObject.set(x, "outputCalendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberingSystem(value: NumberingSystem): Self = this.set("numberingSystem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberingSystem: Self = this.set("numberingSystem", js.undefined)
-    
-    @scala.inline
-    def setOutputCalendar(value: CalendarSystem): Self = this.set("outputCalendar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputCalendar: Self = this.set("outputCalendar", js.undefined)
+    def setOutputCalendarUndefined: Self = StObject.set(x, "outputCalendar", js.undefined)
   }
 }

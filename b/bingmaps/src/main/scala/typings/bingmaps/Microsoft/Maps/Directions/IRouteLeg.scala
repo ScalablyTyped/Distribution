@@ -2,12 +2,13 @@ package typings.bingmaps.Microsoft.Maps.Directions
 
 import typings.bingmaps.Microsoft.Maps.Location
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IRouteLeg extends js.Object {
+trait IRouteLeg extends StObject {
   
   /** The end time of the route leg. This property only applies when the routeMode of the DirectionsRequestOptions is set to transit. */
   var endTime: Date = js.native
@@ -51,48 +52,36 @@ object IRouteLeg {
   }
   
   @scala.inline
-  implicit class IRouteLegOps[Self <: IRouteLeg] (val x: Self) extends AnyVal {
+  implicit class IRouteLegMutableBuilder[Self <: IRouteLeg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndWaypointLocation(value: Location): Self = StObject.set(x, "endWaypointLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItineraryItems(value: js.Array[IDirectionsStep]): Self = StObject.set(x, "itineraryItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: Date): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setItineraryItemsVarargs(value: IDirectionsStep*): Self = StObject.set(x, "itineraryItems", js.Array(value :_*))
     
     @scala.inline
-    def setEndWaypointLocation(value: Location): Self = this.set("endWaypointLocation", value.asInstanceOf[js.Any])
+    def setOriginalRouteIndex(value: Double): Self = StObject.set(x, "originalRouteIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItineraryItemsVarargs(value: IDirectionsStep*): Self = this.set("itineraryItems", js.Array(value :_*))
+    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItineraryItems(value: js.Array[IDirectionsStep]): Self = this.set("itineraryItems", value.asInstanceOf[js.Any])
+    def setStartWaypointLocation(value: Location): Self = StObject.set(x, "startWaypointLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalRouteIndex(value: Double): Self = this.set("originalRouteIndex", value.asInstanceOf[js.Any])
+    def setSubLegs(value: js.Array[IRouteSubLeg]): Self = StObject.set(x, "subLegs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Date): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setSubLegsVarargs(value: IRouteSubLeg*): Self = StObject.set(x, "subLegs", js.Array(value :_*))
     
     @scala.inline
-    def setStartWaypointLocation(value: Location): Self = this.set("startWaypointLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubLegsVarargs(value: IRouteSubLeg*): Self = this.set("subLegs", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubLegs(value: js.Array[IRouteSubLeg]): Self = this.set("subLegs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSummary(value: IRouteSummary): Self = this.set("summary", value.asInstanceOf[js.Any])
+    def setSummary(value: IRouteSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
   }
 }

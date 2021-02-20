@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RandomSplitActivity extends js.Object {
+trait RandomSplitActivity extends StObject {
   
   /**
     * The paths for the activity, including the percentage of participants to enter each path and the activity to perform for each path.
@@ -21,27 +22,15 @@ object RandomSplitActivity {
   }
   
   @scala.inline
-  implicit class RandomSplitActivityOps[Self <: RandomSplitActivity] (val x: Self) extends AnyVal {
+  implicit class RandomSplitActivityMutableBuilder[Self <: RandomSplitActivity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranches(value: ListOfRandomSplitEntry): Self = StObject.set(x, "Branches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchesUndefined: Self = StObject.set(x, "Branches", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBranchesVarargs(value: RandomSplitEntry*): Self = this.set("Branches", js.Array(value :_*))
-    
-    @scala.inline
-    def setBranches(value: ListOfRandomSplitEntry): Self = this.set("Branches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBranches: Self = this.set("Branches", js.undefined)
+    def setBranchesVarargs(value: RandomSplitEntry*): Self = StObject.set(x, "Branches", js.Array(value :_*))
   }
 }

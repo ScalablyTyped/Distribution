@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvelopeFormData extends js.Object {
+trait EnvelopeFormData extends StObject {
   
   /**
     * The subject line of the email message that is sent to all recipients.
@@ -53,60 +54,48 @@ object EnvelopeFormData {
   }
   
   @scala.inline
-  implicit class EnvelopeFormDataOps[Self <: EnvelopeFormData] (val x: Self) extends AnyVal {
+  implicit class EnvelopeFormDataMutableBuilder[Self <: EnvelopeFormData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmailSubject(value: String): Self = StObject.set(x, "emailSubject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailSubjectUndefined: Self = StObject.set(x, "emailSubject", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailSubject(value: String): Self = this.set("emailSubject", value.asInstanceOf[js.Any])
+    def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
     
     @scala.inline
-    def deleteEmailSubject: Self = this.set("emailSubject", js.undefined)
+    def setFormData(value: js.Array[FormDataItem]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeId(value: String): Self = this.set("envelopeId", value.asInstanceOf[js.Any])
+    def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
     @scala.inline
-    def deleteEnvelopeId: Self = this.set("envelopeId", js.undefined)
+    def setFormDataVarargs(value: FormDataItem*): Self = StObject.set(x, "formData", js.Array(value :_*))
     
     @scala.inline
-    def setFormDataVarargs(value: FormDataItem*): Self = this.set("formData", js.Array(value :_*))
+    def setRecipientFormData(value: js.Array[RecipientFormData]): Self = StObject.set(x, "recipientFormData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormData(value: js.Array[FormDataItem]): Self = this.set("formData", value.asInstanceOf[js.Any])
+    def setRecipientFormDataUndefined: Self = StObject.set(x, "recipientFormData", js.undefined)
     
     @scala.inline
-    def deleteFormData: Self = this.set("formData", js.undefined)
+    def setRecipientFormDataVarargs(value: RecipientFormData*): Self = StObject.set(x, "recipientFormData", js.Array(value :_*))
     
     @scala.inline
-    def setRecipientFormDataVarargs(value: RecipientFormData*): Self = this.set("recipientFormData", js.Array(value :_*))
+    def setSentDateTime(value: String): Self = StObject.set(x, "sentDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientFormData(value: js.Array[RecipientFormData]): Self = this.set("recipientFormData", value.asInstanceOf[js.Any])
+    def setSentDateTimeUndefined: Self = StObject.set(x, "sentDateTime", js.undefined)
     
     @scala.inline
-    def deleteRecipientFormData: Self = this.set("recipientFormData", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentDateTime(value: String): Self = this.set("sentDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSentDateTime: Self = this.set("sentDateTime", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.kmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReEncryptResponse extends js.Object {
+trait ReEncryptResponse extends StObject {
   
   /**
     * The reencrypted data. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not Base64-encoded.
@@ -41,48 +42,36 @@ object ReEncryptResponse {
   }
   
   @scala.inline
-  implicit class ReEncryptResponseOps[Self <: ReEncryptResponse] (val x: Self) extends AnyVal {
+  implicit class ReEncryptResponseMutableBuilder[Self <: ReEncryptResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCiphertextBlob(value: CiphertextType): Self = StObject.set(x, "CiphertextBlob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCiphertextBlobUndefined: Self = StObject.set(x, "CiphertextBlob", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationEncryptionAlgorithm(value: EncryptionAlgorithmSpec): Self = StObject.set(x, "DestinationEncryptionAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCiphertextBlob(value: CiphertextType): Self = this.set("CiphertextBlob", value.asInstanceOf[js.Any])
+    def setDestinationEncryptionAlgorithmUndefined: Self = StObject.set(x, "DestinationEncryptionAlgorithm", js.undefined)
     
     @scala.inline
-    def deleteCiphertextBlob: Self = this.set("CiphertextBlob", js.undefined)
+    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationEncryptionAlgorithm(value: EncryptionAlgorithmSpec): Self = this.set("DestinationEncryptionAlgorithm", value.asInstanceOf[js.Any])
+    def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     
     @scala.inline
-    def deleteDestinationEncryptionAlgorithm: Self = this.set("DestinationEncryptionAlgorithm", js.undefined)
+    def setSourceEncryptionAlgorithm(value: EncryptionAlgorithmSpec): Self = StObject.set(x, "SourceEncryptionAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    def setSourceEncryptionAlgorithmUndefined: Self = StObject.set(x, "SourceEncryptionAlgorithm", js.undefined)
     
     @scala.inline
-    def deleteKeyId: Self = this.set("KeyId", js.undefined)
+    def setSourceKeyId(value: KeyIdType): Self = StObject.set(x, "SourceKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceEncryptionAlgorithm(value: EncryptionAlgorithmSpec): Self = this.set("SourceEncryptionAlgorithm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceEncryptionAlgorithm: Self = this.set("SourceEncryptionAlgorithm", js.undefined)
-    
-    @scala.inline
-    def setSourceKeyId(value: KeyIdType): Self = this.set("SourceKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceKeyId: Self = this.set("SourceKeyId", js.undefined)
+    def setSourceKeyIdUndefined: Self = StObject.set(x, "SourceKeyId", js.undefined)
   }
 }

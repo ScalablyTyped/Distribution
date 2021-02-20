@@ -2,12 +2,13 @@ package typings.protractor.anon
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.seleniumWebdriver.remoteMod.DriverService.Builder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofDriverService extends js.Object {
+trait TypeofDriverService extends StObject {
   
   /**
     * Creates {@link DriverService} objects that manage a WebDriver server in a
@@ -24,21 +25,9 @@ object TypeofDriverService {
   }
   
   @scala.inline
-  implicit class TypeofDriverServiceOps[Self <: TypeofDriverService] (val x: Self) extends AnyVal {
+  implicit class TypeofDriverServiceMutableBuilder[Self <: TypeofDriverService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBuilder(value: Instantiable1[/* exe */ String, Builder]): Self = this.set("Builder", value.asInstanceOf[js.Any])
+    def setBuilder(value: Instantiable1[/* exe */ String, Builder]): Self = StObject.set(x, "Builder", value.asInstanceOf[js.Any])
   }
 }

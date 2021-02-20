@@ -1,12 +1,13 @@
 package typings.dockerode.mod
 
 import typings.dockerode.anon.Current
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerStats extends js.Object {
+trait ContainerStats extends StObject {
   
   var cpu_stats: CPUStats = js.native
   
@@ -36,36 +37,24 @@ object ContainerStats {
   }
   
   @scala.inline
-  implicit class ContainerStatsOps[Self <: ContainerStats] (val x: Self) extends AnyVal {
+  implicit class ContainerStatsMutableBuilder[Self <: ContainerStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCpu_stats(value: CPUStats): Self = StObject.set(x, "cpu_stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMemory_stats(value: MemoryStats): Self = StObject.set(x, "memory_stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNetworks(value: NetworkStats): Self = StObject.set(x, "networks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpu_stats(value: CPUStats): Self = this.set("cpu_stats", value.asInstanceOf[js.Any])
+    def setPid_stats(value: Current): Self = StObject.set(x, "pid_stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemory_stats(value: MemoryStats): Self = this.set("memory_stats", value.asInstanceOf[js.Any])
+    def setPrecpu_stats(value: CPUStats): Self = StObject.set(x, "precpu_stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworks(value: NetworkStats): Self = this.set("networks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPid_stats(value: Current): Self = this.set("pid_stats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrecpu_stats(value: CPUStats): Self = this.set("precpu_stats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRead(value: String): Self = this.set("read", value.asInstanceOf[js.Any])
+    def setRead(value: String): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
   }
 }

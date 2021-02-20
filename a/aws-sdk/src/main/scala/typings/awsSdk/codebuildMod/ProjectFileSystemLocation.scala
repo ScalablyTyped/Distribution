@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectFileSystemLocation extends js.Object {
+trait ProjectFileSystemLocation extends StObject {
   
   /**
     * The name used to access a file system created by Amazon EFS. CodeBuild creates an environment variable by appending the identifier in all capital letters to CODEBUILD_. For example, if you specify my_efs for identifier, a new environment variable is create named CODEBUILD_MY_EFS.   The identifier is used to mount your file system. 
@@ -41,48 +42,36 @@ object ProjectFileSystemLocation {
   }
   
   @scala.inline
-  implicit class ProjectFileSystemLocationOps[Self <: ProjectFileSystemLocation] (val x: Self) extends AnyVal {
+  implicit class ProjectFileSystemLocationMutableBuilder[Self <: ProjectFileSystemLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: String): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setMountOptions(value: String): Self = StObject.set(x, "mountOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setMountOptionsUndefined: Self = StObject.set(x, "mountOptions", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setMountPoint(value: String): Self = StObject.set(x, "mountPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountOptions(value: String): Self = this.set("mountOptions", value.asInstanceOf[js.Any])
+    def setMountPointUndefined: Self = StObject.set(x, "mountPoint", js.undefined)
     
     @scala.inline
-    def deleteMountOptions: Self = this.set("mountOptions", js.undefined)
+    def setType(value: FileSystemType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountPoint(value: String): Self = this.set("mountPoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMountPoint: Self = this.set("mountPoint", js.undefined)
-    
-    @scala.inline
-    def setType(value: FileSystemType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

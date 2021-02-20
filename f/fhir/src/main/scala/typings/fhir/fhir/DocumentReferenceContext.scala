@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,66 +55,54 @@ object DocumentReferenceContext {
   }
   
   @scala.inline
-  implicit class DocumentReferenceContextOps[Self <: DocumentReferenceContext] (val x: Self) extends AnyVal {
+  implicit class DocumentReferenceContextMutableBuilder[Self <: DocumentReferenceContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncounter(value: Reference): Self = StObject.set(x, "encounter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncounterUndefined: Self = StObject.set(x, "encounter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent(value: js.Array[CodeableConcept]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncounter(value: Reference): Self = this.set("encounter", value.asInstanceOf[js.Any])
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def deleteEncounter: Self = this.set("encounter", js.undefined)
+    def setEventVarargs(value: CodeableConcept*): Self = StObject.set(x, "event", js.Array(value :_*))
     
     @scala.inline
-    def setEventVarargs(value: CodeableConcept*): Self = this.set("event", js.Array(value :_*))
+    def setFacilityType(value: CodeableConcept): Self = StObject.set(x, "facilityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: js.Array[CodeableConcept]): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setFacilityTypeUndefined: Self = StObject.set(x, "facilityType", js.undefined)
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacilityType(value: CodeableConcept): Self = this.set("facilityType", value.asInstanceOf[js.Any])
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def deleteFacilityType: Self = this.set("facilityType", js.undefined)
+    def setPracticeSetting(value: CodeableConcept): Self = StObject.set(x, "practiceSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    def setPracticeSettingUndefined: Self = StObject.set(x, "practiceSetting", js.undefined)
     
     @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def setRelated(value: js.Array[DocumentReferenceContextRelated]): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPracticeSetting(value: CodeableConcept): Self = this.set("practiceSetting", value.asInstanceOf[js.Any])
+    def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
     
     @scala.inline
-    def deletePracticeSetting: Self = this.set("practiceSetting", js.undefined)
+    def setRelatedVarargs(value: DocumentReferenceContextRelated*): Self = StObject.set(x, "related", js.Array(value :_*))
     
     @scala.inline
-    def setRelatedVarargs(value: DocumentReferenceContextRelated*): Self = this.set("related", js.Array(value :_*))
+    def setSourcePatientInfo(value: Reference): Self = StObject.set(x, "sourcePatientInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelated(value: js.Array[DocumentReferenceContextRelated]): Self = this.set("related", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelated: Self = this.set("related", js.undefined)
-    
-    @scala.inline
-    def setSourcePatientInfo(value: Reference): Self = this.set("sourcePatientInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourcePatientInfo: Self = this.set("sourcePatientInfo", js.undefined)
+    def setSourcePatientInfoUndefined: Self = StObject.set(x, "sourcePatientInfo", js.undefined)
   }
 }

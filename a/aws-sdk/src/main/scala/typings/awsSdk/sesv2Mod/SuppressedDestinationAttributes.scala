@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SuppressedDestinationAttributes extends js.Object {
+trait SuppressedDestinationAttributes extends StObject {
   
   /**
     * A unique identifier that's generated when an email address is added to the suppression list for your account.
@@ -26,30 +27,18 @@ object SuppressedDestinationAttributes {
   }
   
   @scala.inline
-  implicit class SuppressedDestinationAttributesOps[Self <: SuppressedDestinationAttributes] (val x: Self) extends AnyVal {
+  implicit class SuppressedDestinationAttributesMutableBuilder[Self <: SuppressedDestinationAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeedbackId(value: FeedbackId): Self = StObject.set(x, "FeedbackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeedbackIdUndefined: Self = StObject.set(x, "FeedbackId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessageId(value: OutboundMessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeedbackId(value: FeedbackId): Self = this.set("FeedbackId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeedbackId: Self = this.set("FeedbackId", js.undefined)
-    
-    @scala.inline
-    def setMessageId(value: OutboundMessageId): Self = this.set("MessageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageId: Self = this.set("MessageId", js.undefined)
+    def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
   }
 }

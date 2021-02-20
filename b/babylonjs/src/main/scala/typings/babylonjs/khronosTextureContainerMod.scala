@@ -2,16 +2,16 @@ package typings.babylonjs
 
 import typings.babylonjs.internalTextureMod.InternalTexture
 import typings.std.ArrayBufferView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Misc/khronosTextureContainer", JSImport.Namespace)
-@js.native
-object khronosTextureContainerMod extends js.Object {
+object khronosTextureContainerMod {
   
+  @JSImport("babylonjs/Misc/khronosTextureContainer", "KhronosTextureContainer")
   @js.native
-  class KhronosTextureContainer protected () extends js.Object {
+  class KhronosTextureContainer protected () extends StObject {
     /**
       * Creates a new KhronosTextureContainer
       * @param data contents of the KTX container file
@@ -125,24 +125,49 @@ object khronosTextureContainerMod extends js.Object {
     def uploadLevels(texture: InternalTexture, loadMipmaps: Boolean): Unit = js.native
   }
   /* static members */
-  @js.native
-  object KhronosTextureContainer extends js.Object {
+  object KhronosTextureContainer {
     
-    var COMPRESSED_2D: js.Any = js.native
+    @JSImport("babylonjs/Misc/khronosTextureContainer", "KhronosTextureContainer")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var COMPRESSED_3D: js.Any = js.native
+    @JSImport("babylonjs/Misc/khronosTextureContainer", "KhronosTextureContainer.COMPRESSED_2D")
+    @js.native
+    def COMPRESSED_2D: js.Any = js.native
+    @scala.inline
+    def COMPRESSED_2D_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMPRESSED_2D")(x.asInstanceOf[js.Any])
     
-    var HEADER_LEN: js.Any = js.native
+    @JSImport("babylonjs/Misc/khronosTextureContainer", "KhronosTextureContainer.COMPRESSED_3D")
+    @js.native
+    def COMPRESSED_3D: js.Any = js.native
+    @scala.inline
+    def COMPRESSED_3D_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMPRESSED_3D")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Misc/khronosTextureContainer", "KhronosTextureContainer.HEADER_LEN")
+    @js.native
+    def HEADER_LEN: js.Any = js.native
+    @scala.inline
+    def HEADER_LEN_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEADER_LEN")(x.asInstanceOf[js.Any])
     
     /**
       * Checks if the given data starts with a KTX file identifier.
       * @param data the data to check
       * @returns true if the data is a KTX file or false otherwise
       */
+    @JSImport("babylonjs/Misc/khronosTextureContainer", "KhronosTextureContainer.IsValid")
+    @js.native
     def IsValid(data: ArrayBufferView): Boolean = js.native
     
-    var TEX_2D: js.Any = js.native
+    @JSImport("babylonjs/Misc/khronosTextureContainer", "KhronosTextureContainer.TEX_2D")
+    @js.native
+    def TEX_2D: js.Any = js.native
+    @scala.inline
+    def TEX_2D_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEX_2D")(x.asInstanceOf[js.Any])
     
-    var TEX_3D: js.Any = js.native
+    @JSImport("babylonjs/Misc/khronosTextureContainer", "KhronosTextureContainer.TEX_3D")
+    @js.native
+    def TEX_3D: js.Any = js.native
+    @scala.inline
+    def TEX_3D_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEX_3D")(x.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the collation option. */
 @JSGlobal("Windows.Graphics.Printing.PrintCollation")
 @js.native
-object PrintCollation extends js.Object {
+object PrintCollation extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Graphics.Printing.PrintCollation with Double] = js.native
   
-  /* 3 */ val collated: typings.winrtUwp.Windows.Graphics.Printing.PrintCollation.collated with Double = js.native
-  
   /* 0 */ val default: typings.winrtUwp.Windows.Graphics.Printing.PrintCollation.default with Double = js.native
+  
+  /* 3 */ val collated: typings.winrtUwp.Windows.Graphics.Printing.PrintCollation.collated with Double = js.native
   
   /* 1 */ val notAvailable: typings.winrtUwp.Windows.Graphics.Printing.PrintCollation.notAvailable with Double = js.native
   

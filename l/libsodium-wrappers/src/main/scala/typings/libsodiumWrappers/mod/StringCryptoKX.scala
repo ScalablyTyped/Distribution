@@ -1,11 +1,12 @@
 package typings.libsodiumWrappers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StringCryptoKX extends js.Object {
+trait StringCryptoKX extends StObject {
   
   var sharedRx: String = js.native
   
@@ -20,24 +21,12 @@ object StringCryptoKX {
   }
   
   @scala.inline
-  implicit class StringCryptoKXOps[Self <: StringCryptoKX] (val x: Self) extends AnyVal {
+  implicit class StringCryptoKXMutableBuilder[Self <: StringCryptoKX] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSharedRx(value: String): Self = StObject.set(x, "sharedRx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSharedRx(value: String): Self = this.set("sharedRx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSharedTx(value: String): Self = this.set("sharedTx", value.asInstanceOf[js.Any])
+    def setSharedTx(value: String): Self = StObject.set(x, "sharedTx", value.asInstanceOf[js.Any])
   }
 }

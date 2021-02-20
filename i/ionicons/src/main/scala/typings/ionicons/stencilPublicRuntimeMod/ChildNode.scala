@@ -1,11 +1,12 @@
 package typings.ionicons.stencilPublicRuntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChildNode extends js.Object {
+trait ChildNode extends StObject {
   
   var vattrs: js.UndefOr[js.Any] = js.native
   
@@ -28,57 +29,45 @@ object ChildNode {
   }
   
   @scala.inline
-  implicit class ChildNodeOps[Self <: ChildNode] (val x: Self) extends AnyVal {
+  implicit class ChildNodeMutableBuilder[Self <: ChildNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVattrs(value: js.Any): Self = StObject.set(x, "vattrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVattrsUndefined: Self = StObject.set(x, "vattrs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVchildren(value: js.Array[VNode]): Self = StObject.set(x, "vchildren", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVattrs(value: js.Any): Self = this.set("vattrs", value.asInstanceOf[js.Any])
+    def setVchildrenUndefined: Self = StObject.set(x, "vchildren", js.undefined)
     
     @scala.inline
-    def deleteVattrs: Self = this.set("vattrs", js.undefined)
+    def setVchildrenVarargs(value: VNode*): Self = StObject.set(x, "vchildren", js.Array(value :_*))
     
     @scala.inline
-    def setVchildrenVarargs(value: VNode*): Self = this.set("vchildren", js.Array(value :_*))
+    def setVkey(value: String | Double): Self = StObject.set(x, "vkey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVchildren(value: js.Array[VNode]): Self = this.set("vchildren", value.asInstanceOf[js.Any])
+    def setVkeyUndefined: Self = StObject.set(x, "vkey", js.undefined)
     
     @scala.inline
-    def deleteVchildren: Self = this.set("vchildren", js.undefined)
+    def setVname(value: String): Self = StObject.set(x, "vname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVkey(value: String | Double): Self = this.set("vkey", value.asInstanceOf[js.Any])
+    def setVnameUndefined: Self = StObject.set(x, "vname", js.undefined)
     
     @scala.inline
-    def deleteVkey: Self = this.set("vkey", js.undefined)
+    def setVtag(value: String | Double | js.Function): Self = StObject.set(x, "vtag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVname(value: String): Self = this.set("vname", value.asInstanceOf[js.Any])
+    def setVtagUndefined: Self = StObject.set(x, "vtag", js.undefined)
     
     @scala.inline
-    def deleteVname: Self = this.set("vname", js.undefined)
+    def setVtext(value: String): Self = StObject.set(x, "vtext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVtag(value: String | Double | js.Function): Self = this.set("vtag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVtag: Self = this.set("vtag", js.undefined)
-    
-    @scala.inline
-    def setVtext(value: String): Self = this.set("vtext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVtext: Self = this.set("vtext", js.undefined)
+    def setVtextUndefined: Self = StObject.set(x, "vtext", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CreateCustomerGroupRequest")
 @js.native
-class CreateCustomerGroupRequest () extends js.Object {
+class CreateCustomerGroupRequest () extends StObject {
   
   /**
     * The customer group to create.

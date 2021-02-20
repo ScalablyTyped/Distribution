@@ -15,14 +15,14 @@ import typings.ts3NodejsLibrary.responseTypesMod.ClientInfo
 import typings.ts3NodejsLibrary.responseTypesMod.CustomInfo
 import typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup
 import typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts3-nodejs-library/lib/node/Client", JSImport.Namespace)
-@js.native
-object clientMod extends js.Object {
+object clientMod {
   
+  @JSImport("ts3-nodejs-library/lib/node/Client", "TeamSpeakClient")
   @js.native
   class TeamSpeakClient protected () extends Abstract[ClientEntry] {
     def this(parent: TeamSpeak, list: ClientEntry) = this()
@@ -232,28 +232,45 @@ object clientMod extends js.Object {
     def version: String = js.native
   }
   /* static members */
-  @js.native
-  object TeamSpeakClient extends js.Object {
+  object TeamSpeakClient {
     
     /** retrieves the client dbid from a string or teamspeak client */
+    @JSImport("ts3-nodejs-library/lib/node/Client", "TeamSpeakClient.getDbid")
+    @js.native
     def getDbid[T /* <: ClientType */](): js.UndefOr[String] = js.native
+    @JSImport("ts3-nodejs-library/lib/node/Client", "TeamSpeakClient.getDbid")
+    @js.native
     def getDbid[T /* <: ClientType */](client: T): js.UndefOr[String] = js.native
     
     /** retrieves the client id from a string or teamspeak client */
+    @JSImport("ts3-nodejs-library/lib/node/Client", "TeamSpeakClient.getId")
+    @js.native
     def getId[T /* <: ClientType */](): js.UndefOr[String] = js.native
+    @JSImport("ts3-nodejs-library/lib/node/Client", "TeamSpeakClient.getId")
+    @js.native
     def getId[T /* <: ClientType */](client: T): js.UndefOr[String] = js.native
     
     /** retrieves the clients from an array */
+    @JSImport("ts3-nodejs-library/lib/node/Client", "TeamSpeakClient.getMultipleDbids")
+    @js.native
     def getMultipleDbids(client: MultiClientType): js.Array[String] = js.native
     
     /** retrieves the clients from an array */
+    @JSImport("ts3-nodejs-library/lib/node/Client", "TeamSpeakClient.getMultipleIds")
+    @js.native
     def getMultipleIds(client: MultiClientType): js.Array[String] = js.native
     
     /** retrieves the clients from an array */
+    @JSImport("ts3-nodejs-library/lib/node/Client", "TeamSpeakClient.getMultipleUids")
+    @js.native
     def getMultipleUids(client: MultiClientType): js.Array[String] = js.native
     
     /** retrieves the client dbid from a string or teamspeak client */
+    @JSImport("ts3-nodejs-library/lib/node/Client", "TeamSpeakClient.getUid")
+    @js.native
     def getUid[T /* <: ClientType */](): js.UndefOr[String] = js.native
+    @JSImport("ts3-nodejs-library/lib/node/Client", "TeamSpeakClient.getUid")
+    @js.native
     def getUid[T /* <: ClientType */](client: T): js.UndefOr[String] = js.native
     
     type ClientType = String | TeamSpeakClient

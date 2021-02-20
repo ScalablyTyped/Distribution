@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Double extends js.Object {
+trait Double extends StObject {
   
   var boolean: scala.Double = js.native
   
@@ -38,39 +39,27 @@ object Double {
   }
   
   @scala.inline
-  implicit class DoubleOps[Self <: Double] (val x: Self) extends AnyVal {
+  implicit class DoubleMutableBuilder[Self <: Double] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoolean(value: scala.Double): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateTime(value: scala.Double): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDouble(value: scala.Double): Self = StObject.set(x, "double", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoolean(value: scala.Double): Self = this.set("boolean", value.asInstanceOf[js.Any])
+    def setInteger(value: scala.Double): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateTime(value: scala.Double): Self = this.set("dateTime", value.asInstanceOf[js.Any])
+    def setPlainText(value: scala.Double): Self = StObject.set(x, "plainText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDouble(value: scala.Double): Self = this.set("double", value.asInstanceOf[js.Any])
+    def setString(value: scala.Double): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteger(value: scala.Double): Self = this.set("integer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlainText(value: scala.Double): Self = this.set("plainText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setString(value: scala.Double): Self = this.set("string", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTreePath(value: scala.Double): Self = this.set("treePath", value.asInstanceOf[js.Any])
+    def setTreePath(value: scala.Double): Self = StObject.set(x, "treePath", value.asInstanceOf[js.Any])
   }
 }

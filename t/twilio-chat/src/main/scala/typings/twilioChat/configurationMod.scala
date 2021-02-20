@@ -1,15 +1,15 @@
 package typings.twilioChat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-chat/lib/configuration", JSImport.Namespace)
-@js.native
-object configurationMod extends js.Object {
+object configurationMod {
   
+  @JSImport("twilio-chat/lib/configuration", "Configuration")
   @js.native
-  class Configuration protected () extends js.Object {
+  class Configuration protected () extends StObject {
     def this(options: js.Any) = this()
     
     def backoffConfigDefault: js.Any = js.native

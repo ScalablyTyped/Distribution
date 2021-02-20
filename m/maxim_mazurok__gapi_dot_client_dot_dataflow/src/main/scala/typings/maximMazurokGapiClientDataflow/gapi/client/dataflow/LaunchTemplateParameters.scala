@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LaunchTemplateParameters extends js.Object {
+trait LaunchTemplateParameters extends StObject {
   
   /** The runtime environment for the job. */
   var environment: js.UndefOr[RuntimeEnvironment] = js.native
@@ -40,56 +41,44 @@ object LaunchTemplateParameters {
   }
   
   @scala.inline
-  implicit class LaunchTemplateParametersOps[Self <: LaunchTemplateParameters] (val x: Self) extends AnyVal {
+  implicit class LaunchTemplateParametersMutableBuilder[Self <: LaunchTemplateParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironment(value: RuntimeEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: RuntimeEnvironment): Self = this.set("environment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
-    
-    @scala.inline
-    def setJobName(value: String): Self = this.set("jobName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobName: Self = this.set("jobName", js.undefined)
+    def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
     
     @scala.inline
     def setParameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchTemplateParameters with TopLevel[js.Any]
-    ): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
     def setTransformNameMapping(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchTemplateParameters with TopLevel[js.Any]
-    ): Self = this.set("transformNameMapping", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "transformNameMapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransformNameMapping: Self = this.set("transformNameMapping", js.undefined)
+    def setTransformNameMappingUndefined: Self = StObject.set(x, "transformNameMapping", js.undefined)
     
     @scala.inline
-    def setUpdate(value: Boolean): Self = this.set("update", value.asInstanceOf[js.Any])
+    def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

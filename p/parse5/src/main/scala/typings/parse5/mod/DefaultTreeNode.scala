@@ -1,11 +1,12 @@
 package typings.parse5.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultTreeNode extends js.Object {
+trait DefaultTreeNode extends StObject {
   
   /**
     * The name of the node. E.g. {@link Document} will have `nodeName` equal to '#document'`.
@@ -21,21 +22,9 @@ object DefaultTreeNode {
   }
   
   @scala.inline
-  implicit class DefaultTreeNodeOps[Self <: DefaultTreeNode] (val x: Self) extends AnyVal {
+  implicit class DefaultTreeNodeMutableBuilder[Self <: DefaultTreeNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNodeName(value: String): Self = this.set("nodeName", value.asInstanceOf[js.Any])
+    def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
   }
 }

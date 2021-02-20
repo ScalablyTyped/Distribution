@@ -11,17 +11,17 @@ import typings.babylonjs.reflectionTextureBaseBlockMod.ReflectionTextureBaseBloc
 import typings.babylonjs.refractionBlockMod.RefractionBlock
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.textureBlockMod.TextureBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/nodeMaterialBuildStateSharedData", JSImport.Namespace)
-@js.native
-object nodeMaterialBuildStateSharedDataMod extends js.Object {
+object nodeMaterialBuildStateSharedDataMod {
   
+  @JSImport("babylonjs/Materials/Node/nodeMaterialBuildStateSharedData", "NodeMaterialBuildStateSharedData")
   @js.native
   /** Creates a new shared data */
-  class NodeMaterialBuildStateSharedData () extends js.Object {
+  class NodeMaterialBuildStateSharedData () extends StObject {
     
     /**
       * Is vertex program allowed to be empty?

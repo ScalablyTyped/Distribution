@@ -1,5 +1,6 @@
 package typings.winjs.WinJS.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Serves as the base class for a custom IListDataSource.
   **/
 @js.native
-trait VirtualizedDataSource[T] extends js.Object {
+trait VirtualizedDataSource[T] extends StObject {
   
   //#endregion Constructors
   //#region Events

@@ -1,12 +1,13 @@
 package typings.phaser.Phaser.Types.Core
 
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FPSConfig extends js.Object {
+trait FPSConfig extends StObject {
   
   /**
     * Calculate the average frame delta from this many consecutive frame intervals.
@@ -47,54 +48,42 @@ object FPSConfig {
   }
   
   @scala.inline
-  implicit class FPSConfigOps[Self <: FPSConfig] (val x: Self) extends AnyVal {
+  implicit class FPSConfigMutableBuilder[Self <: FPSConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeltaHistory(value: integer): Self = StObject.set(x, "deltaHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeltaHistoryUndefined: Self = StObject.set(x, "deltaHistory", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForceSetTimeOut(value: Boolean): Self = StObject.set(x, "forceSetTimeOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeltaHistory(value: integer): Self = this.set("deltaHistory", value.asInstanceOf[js.Any])
+    def setForceSetTimeOutUndefined: Self = StObject.set(x, "forceSetTimeOut", js.undefined)
     
     @scala.inline
-    def deleteDeltaHistory: Self = this.set("deltaHistory", js.undefined)
+    def setMin(value: integer): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceSetTimeOut(value: Boolean): Self = this.set("forceSetTimeOut", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteForceSetTimeOut: Self = this.set("forceSetTimeOut", js.undefined)
+    def setPanicMax(value: integer): Self = StObject.set(x, "panicMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: integer): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setPanicMaxUndefined: Self = StObject.set(x, "panicMax", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setSmoothStep(value: Boolean): Self = StObject.set(x, "smoothStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanicMax(value: integer): Self = this.set("panicMax", value.asInstanceOf[js.Any])
+    def setSmoothStepUndefined: Self = StObject.set(x, "smoothStep", js.undefined)
     
     @scala.inline
-    def deletePanicMax: Self = this.set("panicMax", js.undefined)
+    def setTarget(value: integer): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmoothStep(value: Boolean): Self = this.set("smoothStep", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmoothStep: Self = this.set("smoothStep", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: integer): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

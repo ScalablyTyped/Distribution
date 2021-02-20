@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsTransactionsV3CompletePurchaseValue extends js.Object {
+trait GoogleActionsTransactionsV3CompletePurchaseValue extends StObject {
   
   /**
     * A unique order identifier for the transaction. This identifier corresponds
@@ -33,36 +34,24 @@ object GoogleActionsTransactionsV3CompletePurchaseValue {
   }
   
   @scala.inline
-  implicit class GoogleActionsTransactionsV3CompletePurchaseValueOps[Self <: GoogleActionsTransactionsV3CompletePurchaseValue] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsTransactionsV3CompletePurchaseValueMutableBuilder[Self <: GoogleActionsTransactionsV3CompletePurchaseValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPurchaseStatus(value: GoogleActionsTransactionsV3CompletePurchaseValuePurchaseStatus): Self = StObject.set(x, "purchaseStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderId(value: String): Self = this.set("orderId", value.asInstanceOf[js.Any])
+    def setPurchaseStatusUndefined: Self = StObject.set(x, "purchaseStatus", js.undefined)
     
     @scala.inline
-    def deleteOrderId: Self = this.set("orderId", js.undefined)
+    def setPurchaseToken(value: String): Self = StObject.set(x, "purchaseToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurchaseStatus(value: GoogleActionsTransactionsV3CompletePurchaseValuePurchaseStatus): Self = this.set("purchaseStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePurchaseStatus: Self = this.set("purchaseStatus", js.undefined)
-    
-    @scala.inline
-    def setPurchaseToken(value: String): Self = this.set("purchaseToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePurchaseToken: Self = this.set("purchaseToken", js.undefined)
+    def setPurchaseTokenUndefined: Self = StObject.set(x, "purchaseToken", js.undefined)
   }
 }

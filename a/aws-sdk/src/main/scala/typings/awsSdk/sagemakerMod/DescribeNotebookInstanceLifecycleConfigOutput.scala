@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeNotebookInstanceLifecycleConfigOutput extends js.Object {
+trait DescribeNotebookInstanceLifecycleConfigOutput extends StObject {
   
   /**
     * A timestamp that tells when the lifecycle configuration was created.
@@ -46,60 +47,48 @@ object DescribeNotebookInstanceLifecycleConfigOutput {
   }
   
   @scala.inline
-  implicit class DescribeNotebookInstanceLifecycleConfigOutputOps[Self <: DescribeNotebookInstanceLifecycleConfigOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeNotebookInstanceLifecycleConfigOutputMutableBuilder[Self <: DescribeNotebookInstanceLifecycleConfigOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastModifiedTime(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: CreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setNotebookInstanceLifecycleConfigArn(value: NotebookInstanceLifecycleConfigArn): Self = StObject.set(x, "NotebookInstanceLifecycleConfigArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedTime(value: LastModifiedTime): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    def setNotebookInstanceLifecycleConfigArnUndefined: Self = StObject.set(x, "NotebookInstanceLifecycleConfigArn", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedTime: Self = this.set("LastModifiedTime", js.undefined)
+    def setNotebookInstanceLifecycleConfigName(value: NotebookInstanceLifecycleConfigName): Self = StObject.set(x, "NotebookInstanceLifecycleConfigName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotebookInstanceLifecycleConfigArn(value: NotebookInstanceLifecycleConfigArn): Self = this.set("NotebookInstanceLifecycleConfigArn", value.asInstanceOf[js.Any])
+    def setNotebookInstanceLifecycleConfigNameUndefined: Self = StObject.set(x, "NotebookInstanceLifecycleConfigName", js.undefined)
     
     @scala.inline
-    def deleteNotebookInstanceLifecycleConfigArn: Self = this.set("NotebookInstanceLifecycleConfigArn", js.undefined)
+    def setOnCreate(value: NotebookInstanceLifecycleConfigList): Self = StObject.set(x, "OnCreate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotebookInstanceLifecycleConfigName(value: NotebookInstanceLifecycleConfigName): Self = this.set("NotebookInstanceLifecycleConfigName", value.asInstanceOf[js.Any])
+    def setOnCreateUndefined: Self = StObject.set(x, "OnCreate", js.undefined)
     
     @scala.inline
-    def deleteNotebookInstanceLifecycleConfigName: Self = this.set("NotebookInstanceLifecycleConfigName", js.undefined)
+    def setOnCreateVarargs(value: NotebookInstanceLifecycleHook*): Self = StObject.set(x, "OnCreate", js.Array(value :_*))
     
     @scala.inline
-    def setOnCreateVarargs(value: NotebookInstanceLifecycleHook*): Self = this.set("OnCreate", js.Array(value :_*))
+    def setOnStart(value: NotebookInstanceLifecycleConfigList): Self = StObject.set(x, "OnStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCreate(value: NotebookInstanceLifecycleConfigList): Self = this.set("OnCreate", value.asInstanceOf[js.Any])
+    def setOnStartUndefined: Self = StObject.set(x, "OnStart", js.undefined)
     
     @scala.inline
-    def deleteOnCreate: Self = this.set("OnCreate", js.undefined)
-    
-    @scala.inline
-    def setOnStartVarargs(value: NotebookInstanceLifecycleHook*): Self = this.set("OnStart", js.Array(value :_*))
-    
-    @scala.inline
-    def setOnStart(value: NotebookInstanceLifecycleConfigList): Self = this.set("OnStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnStart: Self = this.set("OnStart", js.undefined)
+    def setOnStartVarargs(value: NotebookInstanceLifecycleHook*): Self = StObject.set(x, "OnStart", js.Array(value :_*))
   }
 }

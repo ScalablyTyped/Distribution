@@ -2,14 +2,14 @@ package typings.angularCore
 
 import typings.angularCompiler.r3AstMod.Node
 import typings.angularCompiler.r3AstMod.NullVisitor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core/schematics/migrations/static-queries/strategies/usage_strategy/template_usage_visitor", JSImport.Namespace)
-@js.native
-object templateUsageVisitorMod extends js.Object {
+object templateUsageVisitorMod {
   
+  @JSImport("@angular/core/schematics/migrations/static-queries/strategies/usage_strategy/template_usage_visitor", "TemplateUsageVisitor")
   @js.native
   class TemplateUsageVisitor protected () extends NullVisitor {
     def this(queryPropertyName: String) = this()

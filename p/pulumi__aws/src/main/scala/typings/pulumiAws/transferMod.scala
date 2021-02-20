@@ -12,17 +12,14 @@ import typings.pulumiPulumi.invokeMod.InvokeOptions
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/transfer", JSImport.Namespace)
-@js.native
-object transferMod extends js.Object {
+object transferMod {
   
-  def getServer(args: GetServerArgs): js.Promise[GetServerResult] = js.native
-  def getServer(args: GetServerArgs, opts: InvokeOptions): js.Promise[GetServerResult] = js.native
-  
+  @JSImport("@pulumi/aws/transfer", "Server")
   @js.native
   class Server protected ()
     extends typings.pulumiAws.serverMod.Server {
@@ -39,8 +36,7 @@ object transferMod extends js.Object {
     def this(name: String, args: ServerArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Server extends js.Object {
+  object Server {
     
     /**
       * Get an existing Server resource's state with the given name, ID, and optional extra
@@ -51,18 +47,29 @@ object transferMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/transfer", "Server.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.serverMod.Server = js.native
+    @JSImport("@pulumi/aws/transfer", "Server.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.serverMod.Server = js.native
+    @JSImport("@pulumi/aws/transfer", "Server.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ServerState): typings.pulumiAws.serverMod.Server = js.native
+    @JSImport("@pulumi/aws/transfer", "Server.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ServerState, opts: CustomResourceOptions): typings.pulumiAws.serverMod.Server = js.native
     
     /**
       * Returns true if the given object is an instance of Server.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/transfer", "Server.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/transfer/server.Server */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/transfer", "SshKey")
   @js.native
   class SshKey protected ()
     extends typings.pulumiAws.transferSshKeyMod.SshKey {
@@ -77,8 +84,7 @@ object transferMod extends js.Object {
     def this(name: String, args: SshKeyArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object SshKey extends js.Object {
+  object SshKey {
     
     /**
       * Get an existing SshKey resource's state with the given name, ID, and optional extra
@@ -89,18 +95,29 @@ object transferMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/transfer", "SshKey.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.transferSshKeyMod.SshKey = js.native
+    @JSImport("@pulumi/aws/transfer", "SshKey.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.transferSshKeyMod.SshKey = js.native
+    @JSImport("@pulumi/aws/transfer", "SshKey.get")
+    @js.native
     def get(name: String, id: Input[ID], state: SshKeyState): typings.pulumiAws.transferSshKeyMod.SshKey = js.native
+    @JSImport("@pulumi/aws/transfer", "SshKey.get")
+    @js.native
     def get(name: String, id: Input[ID], state: SshKeyState, opts: CustomResourceOptions): typings.pulumiAws.transferSshKeyMod.SshKey = js.native
     
     /**
       * Returns true if the given object is an instance of SshKey.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/transfer", "SshKey.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/transfer/sshKey.SshKey */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/transfer", "User")
   @js.native
   class User protected ()
     extends typings.pulumiAws.transferUserMod.User {
@@ -115,8 +132,7 @@ object transferMod extends js.Object {
     def this(name: String, args: UserArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object User extends js.Object {
+  object User {
     
     /**
       * Get an existing User resource's state with the given name, ID, and optional extra
@@ -127,15 +143,32 @@ object transferMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/transfer", "User.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.transferUserMod.User = js.native
+    @JSImport("@pulumi/aws/transfer", "User.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.transferUserMod.User = js.native
+    @JSImport("@pulumi/aws/transfer", "User.get")
+    @js.native
     def get(name: String, id: Input[ID], state: UserState): typings.pulumiAws.transferUserMod.User = js.native
+    @JSImport("@pulumi/aws/transfer", "User.get")
+    @js.native
     def get(name: String, id: Input[ID], state: UserState, opts: CustomResourceOptions): typings.pulumiAws.transferUserMod.User = js.native
     
     /**
       * Returns true if the given object is an instance of User.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/transfer", "User.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/transfer/user.User */ Boolean = js.native
   }
+  
+  @JSImport("@pulumi/aws/transfer", "getServer")
+  @js.native
+  def getServer(args: GetServerArgs): js.Promise[GetServerResult] = js.native
+  @JSImport("@pulumi/aws/transfer", "getServer")
+  @js.native
+  def getServer(args: GetServerArgs, opts: InvokeOptions): js.Promise[GetServerResult] = js.native
 }

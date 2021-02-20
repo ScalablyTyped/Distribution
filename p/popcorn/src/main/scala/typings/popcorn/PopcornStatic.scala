@@ -2,12 +2,13 @@ package typings.popcorn
 
 import typings.popcorn.anon.Call
 import typings.popcorn.anon.ToSeconds
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PopcornStatic extends js.Object {
+trait PopcornStatic extends StObject {
   
   def apply(callback: js.Function): PopcornImpl = js.native
   def apply(selector: String): PopcornImpl = js.native

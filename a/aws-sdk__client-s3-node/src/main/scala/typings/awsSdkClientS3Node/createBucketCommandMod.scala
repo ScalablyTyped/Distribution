@@ -7,14 +7,14 @@ import typings.awsSdkClientS3Node.typesCreateBucketInputMod.CreateBucketInput
 import typings.awsSdkClientS3Node.typesCreateBucketOutputMod.CreateBucketOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/commands/CreateBucketCommand", JSImport.Namespace)
-@js.native
-object createBucketCommandMod extends js.Object {
+object createBucketCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-node/commands/CreateBucketCommand", "CreateBucketCommand")
   @js.native
   class CreateBucketCommand protected () extends Command[
           InputTypesUnion, 

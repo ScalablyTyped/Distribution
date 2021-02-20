@@ -3,16 +3,16 @@ package typings.firebaseDatabase
 import typings.firebaseDatabase.nodeMod.NamedNode
 import typings.firebaseDatabase.nodeMod.Node
 import typings.firebaseDatabase.sortedMapMod.Comparator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/snap/indexes/Index", JSImport.Namespace)
-@js.native
-object indexMod extends js.Object {
+object indexMod {
   
+  @JSImport("@firebase/database/dist/src/core/snap/indexes/Index", "Index")
   @js.native
-  abstract class Index () extends js.Object {
+  abstract class Index () extends StObject {
     
     /**
       * @param {!NamedNode} a

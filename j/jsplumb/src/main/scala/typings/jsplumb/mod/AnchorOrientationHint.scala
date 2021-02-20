@@ -1,5 +1,6 @@
 package typings.jsplumb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jsplumb.jsplumbNumbers.`0`
   - typings.jsplumb.jsplumbNumbers.`1`
 */
-trait AnchorOrientationHint extends js.Object
+trait AnchorOrientationHint extends StObject
 object AnchorOrientationHint {
   
   @scala.inline

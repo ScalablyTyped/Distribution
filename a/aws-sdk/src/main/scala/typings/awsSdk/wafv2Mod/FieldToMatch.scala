@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldToMatch extends js.Object {
+trait FieldToMatch extends StObject {
   
   /**
     * Inspect all query arguments. 
@@ -51,60 +52,48 @@ object FieldToMatch {
   }
   
   @scala.inline
-  implicit class FieldToMatchOps[Self <: FieldToMatch] (val x: Self) extends AnyVal {
+  implicit class FieldToMatchMutableBuilder[Self <: FieldToMatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllQueryArguments(value: AllQueryArguments): Self = StObject.set(x, "AllQueryArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllQueryArgumentsUndefined: Self = StObject.set(x, "AllQueryArguments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBody(value: Body): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllQueryArguments(value: AllQueryArguments): Self = this.set("AllQueryArguments", value.asInstanceOf[js.Any])
+    def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
     
     @scala.inline
-    def deleteAllQueryArguments: Self = this.set("AllQueryArguments", js.undefined)
+    def setMethod(value: Method): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: Body): Self = this.set("Body", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "Method", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("Body", js.undefined)
+    def setQueryString(value: QueryString): Self = StObject.set(x, "QueryString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: Method): Self = this.set("Method", value.asInstanceOf[js.Any])
+    def setQueryStringUndefined: Self = StObject.set(x, "QueryString", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("Method", js.undefined)
+    def setSingleHeader(value: SingleHeader): Self = StObject.set(x, "SingleHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryString(value: QueryString): Self = this.set("QueryString", value.asInstanceOf[js.Any])
+    def setSingleHeaderUndefined: Self = StObject.set(x, "SingleHeader", js.undefined)
     
     @scala.inline
-    def deleteQueryString: Self = this.set("QueryString", js.undefined)
+    def setSingleQueryArgument(value: SingleQueryArgument): Self = StObject.set(x, "SingleQueryArgument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingleHeader(value: SingleHeader): Self = this.set("SingleHeader", value.asInstanceOf[js.Any])
+    def setSingleQueryArgumentUndefined: Self = StObject.set(x, "SingleQueryArgument", js.undefined)
     
     @scala.inline
-    def deleteSingleHeader: Self = this.set("SingleHeader", js.undefined)
+    def setUriPath(value: UriPath): Self = StObject.set(x, "UriPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingleQueryArgument(value: SingleQueryArgument): Self = this.set("SingleQueryArgument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSingleQueryArgument: Self = this.set("SingleQueryArgument", js.undefined)
-    
-    @scala.inline
-    def setUriPath(value: UriPath): Self = this.set("UriPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUriPath: Self = this.set("UriPath", js.undefined)
+    def setUriPathUndefined: Self = StObject.set(x, "UriPath", js.undefined)
   }
 }

@@ -1,22 +1,24 @@
 package typings.mermaid
 
+import org.scalablytyped.runtime.Shortcut
 import typings.mermaid.anon.TypeofmermaidAPI
 import typings.mermaid.mermaidAPIMod.mermaidAPI.Config
 import typings.std.Element
 import typings.std.Node
 import typings.std.NodeList
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mermaid", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod extends Shortcut {
   
+  @JSImport("mermaid", JSImport.Default)
+  @js.native
   val default: Mermaid = js.native
   
   @js.native
-  trait Mermaid extends js.Object {
+  trait Mermaid extends StObject {
     
     def contentLoaded(): Unit = js.native
     @JSName("contentLoaded")
@@ -74,4 +76,9 @@ object mod extends js.Object {
     
     var startOnLoad: Boolean = js.native
   }
+  
+  type _To = Mermaid
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: Mermaid = default
 }

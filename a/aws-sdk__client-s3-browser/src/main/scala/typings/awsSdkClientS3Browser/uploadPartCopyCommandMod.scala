@@ -7,14 +7,14 @@ import typings.awsSdkClientS3Browser.typesUploadPartCopyInputMod.UploadPartCopyI
 import typings.awsSdkClientS3Browser.typesUploadPartCopyOutputMod.UploadPartCopyOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-browser/commands/UploadPartCopyCommand", JSImport.Namespace)
-@js.native
-object uploadPartCopyCommandMod extends js.Object {
+object uploadPartCopyCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-browser/commands/UploadPartCopyCommand", "UploadPartCopyCommand")
   @js.native
   class UploadPartCopyCommand protected () extends Command[
           InputTypesUnion, 

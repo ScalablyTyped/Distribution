@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudiot.gapi.client.cloudiot
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceCredential extends js.Object {
+trait DeviceCredential extends StObject {
   
   /**
     * [Optional] The time at which this credential becomes invalid. This credential will be ignored for new client authentication requests after this timestamp; however, it will not be
@@ -30,30 +31,18 @@ object DeviceCredential {
   }
   
   @scala.inline
-  implicit class DeviceCredentialOps[Self <: DeviceCredential] (val x: Self) extends AnyVal {
+  implicit class DeviceCredentialMutableBuilder[Self <: DeviceCredential] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpirationTimeUndefined: Self = StObject.set(x, "expirationTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublicKey(value: PublicKeyCredential): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationTime(value: String): Self = this.set("expirationTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpirationTime: Self = this.set("expirationTime", js.undefined)
-    
-    @scala.inline
-    def setPublicKey(value: PublicKeyCredential): Self = this.set("publicKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicKey: Self = this.set("publicKey", js.undefined)
+    def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
   }
 }

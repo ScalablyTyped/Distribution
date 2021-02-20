@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientDisplayvideo.anon.QuotaUserUploadType
 import typings.maximMazurokGapiClientDisplayvideo.anon.UploadprotocolUserId
 import typings.maximMazurokGapiClientDisplayvideo.anon.UserId
 import typings.maximMazurokGapiClientDisplayvideo.anon.UserIdXgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UsersResource extends js.Object {
+trait UsersResource extends StObject {
   
   def bulkEditAssignedUserRoles(request: UploadprotocolUserId, body: BulkEditAssignedUserRolesRequest): Request[BulkEditAssignedUserRolesResponse] = js.native
   /**

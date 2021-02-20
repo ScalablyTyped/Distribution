@@ -2,13 +2,18 @@ package typings.httpBasic
 
 import typings.httpBasic.anon.PickCachedResponseheaders
 import typings.httpBasic.icacheMod.ICache
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("http-basic/lib/FileCache", JSImport.Namespace)
-@js.native
-object fileCacheMod extends js.Object {
+object fileCacheMod {
+  
+  @JSImport("http-basic/lib/FileCache", JSImport.Default)
+  @js.native
+  class default protected () extends FileCache {
+    def this(location: String) = this()
+  }
   
   @js.native
   trait FileCache extends ICache {
@@ -17,10 +22,5 @@ object fileCacheMod extends js.Object {
     
     @JSName("updateResponseHeaders")
     def updateResponseHeaders_MFileCache(url: String, response: PickCachedResponseheaders): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends FileCache {
-    def this(location: String) = this()
   }
 }

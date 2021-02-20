@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeFastSnapshotRestoreSuccessItem extends js.Object {
+trait DescribeFastSnapshotRestoreSuccessItem extends StObject {
   
   /**
     * The Availability Zone.
@@ -71,84 +72,72 @@ object DescribeFastSnapshotRestoreSuccessItem {
   }
   
   @scala.inline
-  implicit class DescribeFastSnapshotRestoreSuccessItemOps[Self <: DescribeFastSnapshotRestoreSuccessItem] (val x: Self) extends AnyVal {
+  implicit class DescribeFastSnapshotRestoreSuccessItemMutableBuilder[Self <: DescribeFastSnapshotRestoreSuccessItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabledTime(value: MillisecondDateTime): Self = StObject.set(x, "DisabledTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setDisabledTimeUndefined: Self = StObject.set(x, "DisabledTime", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    def setDisablingTime(value: MillisecondDateTime): Self = StObject.set(x, "DisablingTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledTime(value: MillisecondDateTime): Self = this.set("DisabledTime", value.asInstanceOf[js.Any])
+    def setDisablingTimeUndefined: Self = StObject.set(x, "DisablingTime", js.undefined)
     
     @scala.inline
-    def deleteDisabledTime: Self = this.set("DisabledTime", js.undefined)
+    def setEnabledTime(value: MillisecondDateTime): Self = StObject.set(x, "EnabledTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisablingTime(value: MillisecondDateTime): Self = this.set("DisablingTime", value.asInstanceOf[js.Any])
+    def setEnabledTimeUndefined: Self = StObject.set(x, "EnabledTime", js.undefined)
     
     @scala.inline
-    def deleteDisablingTime: Self = this.set("DisablingTime", js.undefined)
+    def setEnablingTime(value: MillisecondDateTime): Self = StObject.set(x, "EnablingTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabledTime(value: MillisecondDateTime): Self = this.set("EnabledTime", value.asInstanceOf[js.Any])
+    def setEnablingTimeUndefined: Self = StObject.set(x, "EnablingTime", js.undefined)
     
     @scala.inline
-    def deleteEnabledTime: Self = this.set("EnabledTime", js.undefined)
+    def setOptimizingTime(value: MillisecondDateTime): Self = StObject.set(x, "OptimizingTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablingTime(value: MillisecondDateTime): Self = this.set("EnablingTime", value.asInstanceOf[js.Any])
+    def setOptimizingTimeUndefined: Self = StObject.set(x, "OptimizingTime", js.undefined)
     
     @scala.inline
-    def deleteEnablingTime: Self = this.set("EnablingTime", js.undefined)
+    def setOwnerAlias(value: String): Self = StObject.set(x, "OwnerAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptimizingTime(value: MillisecondDateTime): Self = this.set("OptimizingTime", value.asInstanceOf[js.Any])
+    def setOwnerAliasUndefined: Self = StObject.set(x, "OwnerAlias", js.undefined)
     
     @scala.inline
-    def deleteOptimizingTime: Self = this.set("OptimizingTime", js.undefined)
+    def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerAlias(value: String): Self = this.set("OwnerAlias", value.asInstanceOf[js.Any])
+    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
     @scala.inline
-    def deleteOwnerAlias: Self = this.set("OwnerAlias", js.undefined)
+    def setSnapshotId(value: String): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
     
     @scala.inline
-    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    def setState(value: FastSnapshotRestoreStateCode): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotId(value: String): Self = this.set("SnapshotId", value.asInstanceOf[js.Any])
+    def setStateTransitionReason(value: String): Self = StObject.set(x, "StateTransitionReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSnapshotId: Self = this.set("SnapshotId", js.undefined)
+    def setStateTransitionReasonUndefined: Self = StObject.set(x, "StateTransitionReason", js.undefined)
     
     @scala.inline
-    def setState(value: FastSnapshotRestoreStateCode): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
-    
-    @scala.inline
-    def setStateTransitionReason(value: String): Self = this.set("StateTransitionReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateTransitionReason: Self = this.set("StateTransitionReason", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

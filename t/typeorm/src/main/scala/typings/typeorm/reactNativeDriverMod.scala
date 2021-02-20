@@ -3,14 +3,14 @@ package typings.typeorm
 import typings.typeorm.abstractSqliteDriverMod.AbstractSqliteDriver
 import typings.typeorm.connectionMod.Connection
 import typings.typeorm.reactNativeConnectionOptionsMod.ReactNativeConnectionOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/driver/react-native/ReactNativeDriver", JSImport.Namespace)
-@js.native
-object reactNativeDriverMod extends js.Object {
+object reactNativeDriverMod {
   
+  @JSImport("typeorm/browser/driver/react-native/ReactNativeDriver", "ReactNativeDriver")
   @js.native
   class ReactNativeDriver protected () extends AbstractSqliteDriver {
     def this(connection: Connection) = this()

@@ -1,11 +1,12 @@
 package typings.vueNiceDates.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndDate extends js.Object {
+trait EndDate extends StObject {
   
   def endDate(date: String): Unit = js.native
   
@@ -29,30 +30,18 @@ object EndDate {
   }
   
   @scala.inline
-  implicit class EndDateOps[Self <: EndDate] (val x: Self) extends AnyVal {
+  implicit class EndDateMutableBuilder[Self <: EndDate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndDate(value: String => Unit): Self = StObject.set(x, "endDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsFocus(value: Boolean => Unit): Self = StObject.set(x, "isFocus", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReceivedFocusName(value: String => Unit): Self = StObject.set(x, "receivedFocusName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEndDate(value: String => Unit): Self = this.set("endDate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsFocus(value: Boolean => Unit): Self = this.set("isFocus", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReceivedFocusName(value: String => Unit): Self = this.set("receivedFocusName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStartDate(value: String => Unit): Self = this.set("startDate", js.Any.fromFunction1(value))
+    def setStartDate(value: String => Unit): Self = StObject.set(x, "startDate", js.Any.fromFunction1(value))
   }
 }

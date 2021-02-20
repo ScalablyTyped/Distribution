@@ -1,12 +1,13 @@
 package typings.sourceMap.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("source-map", "SourceMapGenerator")
 @js.native
-class SourceMapGenerator () extends js.Object {
+class SourceMapGenerator () extends StObject {
   def this(startOfSourceMap: StartOfSourceMap) = this()
   
   /**
@@ -37,10 +38,18 @@ class SourceMapGenerator () extends js.Object {
     *        paths. If so, those relative source paths need to be rewritten
     *        relative to the SourceMapGenerator.
     */
-  def applySourceMap(sourceMapConsumer: SourceMapConsumer): Unit = js.native
-  def applySourceMap(sourceMapConsumer: SourceMapConsumer, sourceFile: js.UndefOr[scala.Nothing], sourceMapPath: String): Unit = js.native
-  def applySourceMap(sourceMapConsumer: SourceMapConsumer, sourceFile: String): Unit = js.native
-  def applySourceMap(sourceMapConsumer: SourceMapConsumer, sourceFile: String, sourceMapPath: String): Unit = js.native
+  def applySourceMap(sourceMapConsumer: typings.sourceMap.mod.SourceMapConsumer): Unit = js.native
+  def applySourceMap(
+    sourceMapConsumer: typings.sourceMap.mod.SourceMapConsumer,
+    sourceFile: js.UndefOr[scala.Nothing],
+    sourceMapPath: String
+  ): Unit = js.native
+  def applySourceMap(sourceMapConsumer: typings.sourceMap.mod.SourceMapConsumer, sourceFile: String): Unit = js.native
+  def applySourceMap(
+    sourceMapConsumer: typings.sourceMap.mod.SourceMapConsumer,
+    sourceFile: String,
+    sourceMapPath: String
+  ): Unit = js.native
   
   /**
     * Set the source content for a source file.
@@ -50,14 +59,14 @@ class SourceMapGenerator () extends js.Object {
   def toJSON(): RawSourceMap = js.native
 }
 /* static members */
-@JSImport("source-map", "SourceMapGenerator")
-@js.native
-object SourceMapGenerator extends js.Object {
+object SourceMapGenerator {
   
   /**
     * Creates a new SourceMapGenerator based on a SourceMapConsumer
     *
     * @param sourceMapConsumer The SourceMap.
     */
-  def fromSourceMap(sourceMapConsumer: SourceMapConsumer): SourceMapGenerator = js.native
+  @JSImport("source-map", "SourceMapGenerator.fromSourceMap")
+  @js.native
+  def fromSourceMap(sourceMapConsumer: typings.sourceMap.mod.SourceMapConsumer): SourceMapGenerator = js.native
 }

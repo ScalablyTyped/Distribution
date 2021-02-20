@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Locations where the results of running the test are stored.
   */
 @js.native
-trait SchemaResultStorage extends js.Object {
+trait SchemaResultStorage extends StObject {
   
   /**
     * Required.
@@ -36,36 +37,24 @@ object SchemaResultStorage {
   }
   
   @scala.inline
-  implicit class SchemaResultStorageOps[Self <: SchemaResultStorage] (val x: Self) extends AnyVal {
+  implicit class SchemaResultStorageMutableBuilder[Self <: SchemaResultStorage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGoogleCloudStorage(value: SchemaGoogleCloudStorage): Self = StObject.set(x, "googleCloudStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGoogleCloudStorageUndefined: Self = StObject.set(x, "googleCloudStorage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setToolResultsExecution(value: SchemaToolResultsExecution): Self = StObject.set(x, "toolResultsExecution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleCloudStorage(value: SchemaGoogleCloudStorage): Self = this.set("googleCloudStorage", value.asInstanceOf[js.Any])
+    def setToolResultsExecutionUndefined: Self = StObject.set(x, "toolResultsExecution", js.undefined)
     
     @scala.inline
-    def deleteGoogleCloudStorage: Self = this.set("googleCloudStorage", js.undefined)
+    def setToolResultsHistory(value: SchemaToolResultsHistory): Self = StObject.set(x, "toolResultsHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToolResultsExecution(value: SchemaToolResultsExecution): Self = this.set("toolResultsExecution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolResultsExecution: Self = this.set("toolResultsExecution", js.undefined)
-    
-    @scala.inline
-    def setToolResultsHistory(value: SchemaToolResultsHistory): Self = this.set("toolResultsHistory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolResultsHistory: Self = this.set("toolResultsHistory", js.undefined)
+    def setToolResultsHistoryUndefined: Self = StObject.set(x, "toolResultsHistory", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.awsSdkClientSqsNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-sqs-node/model/SetQueueAttributes", JSImport.Namespace)
-@js.native
-object setQueueAttributesMod extends js.Object {
+object setQueueAttributesMod {
   
+  @JSImport("@aws-sdk/client-sqs-node/model/SetQueueAttributes", "SetQueueAttributes")
+  @js.native
   val SetQueueAttributes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
 }

@@ -1,13 +1,12 @@
 package typings.twilioChat
 
 import typings.twilioChat.paginatorMod.Paginator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-chat/lib/restpaginator", JSImport.Namespace)
-@js.native
-object restpaginatorMod extends js.Object {
+object restpaginatorMod {
   
   /**
     * @class Paginator
@@ -17,6 +16,7 @@ object restpaginatorMod extends js.Object {
     * @property {boolean} hasNextPage Indicates the existence of next page
     * @property {boolean} hasPrevPage Indicates the existence of previous page
     */
+  @JSImport("twilio-chat/lib/restpaginator", "RestPaginator")
   @js.native
   class RestPaginator[T] protected () extends Paginator[T] {
     def this(items: js.Any, source: js.Any, prevToken: js.Any, nextToken: js.Any) = this()

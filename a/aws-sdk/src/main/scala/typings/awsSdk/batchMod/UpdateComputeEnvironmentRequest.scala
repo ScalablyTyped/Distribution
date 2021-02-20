@@ -1,11 +1,12 @@
 package typings.awsSdk.batchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateComputeEnvironmentRequest extends js.Object {
+trait UpdateComputeEnvironmentRequest extends StObject {
   
   /**
     * The name or full Amazon Resource Name (ARN) of the compute environment to update.
@@ -36,39 +37,27 @@ object UpdateComputeEnvironmentRequest {
   }
   
   @scala.inline
-  implicit class UpdateComputeEnvironmentRequestOps[Self <: UpdateComputeEnvironmentRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateComputeEnvironmentRequestMutableBuilder[Self <: UpdateComputeEnvironmentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputeEnvironment(value: String): Self = StObject.set(x, "computeEnvironment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputeResources(value: ComputeResourceUpdate): Self = StObject.set(x, "computeResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComputeResourcesUndefined: Self = StObject.set(x, "computeResources", js.undefined)
     
     @scala.inline
-    def setComputeEnvironment(value: String): Self = this.set("computeEnvironment", value.asInstanceOf[js.Any])
+    def setServiceRole(value: String): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputeResources(value: ComputeResourceUpdate): Self = this.set("computeResources", value.asInstanceOf[js.Any])
+    def setServiceRoleUndefined: Self = StObject.set(x, "serviceRole", js.undefined)
     
     @scala.inline
-    def deleteComputeResources: Self = this.set("computeResources", js.undefined)
+    def setState(value: CEState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceRole(value: String): Self = this.set("serviceRole", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceRole: Self = this.set("serviceRole", js.undefined)
-    
-    @scala.inline
-    def setState(value: CEState): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

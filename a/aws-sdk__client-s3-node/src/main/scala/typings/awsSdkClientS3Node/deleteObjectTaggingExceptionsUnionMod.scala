@@ -1,12 +1,11 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/types/DeleteObjectTaggingExceptionsUnion", JSImport.Namespace)
-@js.native
-object deleteObjectTaggingExceptionsUnionMod extends js.Object {
+object deleteObjectTaggingExceptionsUnionMod {
   
   type DeleteObjectTaggingExceptionsUnion = scala.Nothing
 }

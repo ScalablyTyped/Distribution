@@ -1,17 +1,27 @@
 package typings.officeUiFabricReact.mod
 
+import typings.officeUiFabricReact.selectedPeopleListMod.ISelectedPeopleProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "SelectedPeopleList")
 @js.native
-class SelectedPeopleList ()
-  extends typings.officeUiFabricReact.libSelectedItemsListMod.SelectedPeopleList
+class SelectedPeopleList protected ()
+  extends typings.officeUiFabricReact.libSelectedItemsListMod.SelectedPeopleList {
+  def this(basePickerProps: ISelectedPeopleProps) = this()
+}
 /* static members */
-@JSImport("office-ui-fabric-react", "SelectedPeopleList")
-@js.native
-object SelectedPeopleList extends js.Object {
+object SelectedPeopleList {
   
-  var defaultProps: js.Any = js.native
+  @JSImport("office-ui-fabric-react", "SelectedPeopleList")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react", "SelectedPeopleList.defaultProps")
+  @js.native
+  def defaultProps: js.Any = js.native
+  @scala.inline
+  def defaultProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.JDBC
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Microsoft SQL Server, and Oracle databases. For more information, see the guide to JDBC.
   */
 @js.native
-trait Jdbc extends js.Object {
+trait Jdbc extends StObject {
   
   def getCloudSqlConnection(url: String): JdbcConnection = js.native
   def getCloudSqlConnection(url: String, info: CloudSqlAdvancedParameters): JdbcConnection = js.native

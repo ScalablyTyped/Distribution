@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Betweenlines extends js.Object {
+trait Betweenlines extends StObject {
   
   var between_lines: Boolean = js.native
   
@@ -35,36 +36,24 @@ object Betweenlines {
   }
   
   @scala.inline
-  implicit class BetweenlinesOps[Self <: Betweenlines] (val x: Self) extends AnyVal {
+  implicit class BetweenlinesMutableBuilder[Self <: Betweenlines] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBetween_lines(value: Boolean): Self = StObject.set(x, "between_lines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShift_down(value: Double): Self = StObject.set(x, "shift_down", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBetween_lines(value: Boolean): Self = this.set("between_lines", value.asInstanceOf[js.Any])
+    def setShift_right(value: Double): Self = StObject.set(x, "shift_right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setShift_up(value: Double): Self = StObject.set(x, "shift_up", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShift_down(value: Double): Self = this.set("shift_down", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShift_right(value: Double): Self = this.set("shift_right", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShift_up(value: Double): Self = this.set("shift_up", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

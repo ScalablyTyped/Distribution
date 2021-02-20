@@ -1,11 +1,12 @@
 package typings.tensorflowTfjsCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Begin extends js.Object {
+trait Begin extends StObject {
   
   var begin: js.Array[Double] = js.native
   
@@ -22,36 +23,24 @@ object Begin {
   }
   
   @scala.inline
-  implicit class BeginOps[Self <: Begin] (val x: Self) extends AnyVal {
+  implicit class BeginMutableBuilder[Self <: Begin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBegin(value: js.Array[Double]): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginVarargs(value: Double*): Self = StObject.set(x, "begin", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd(value: js.Array[Double]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginVarargs(value: Double*): Self = this.set("begin", js.Array(value :_*))
+    def setEndVarargs(value: Double*): Self = StObject.set(x, "end", js.Array(value :_*))
     
     @scala.inline
-    def setBegin(value: js.Array[Double]): Self = this.set("begin", value.asInstanceOf[js.Any])
+    def setStrides(value: js.Array[Double]): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndVarargs(value: Double*): Self = this.set("end", js.Array(value :_*))
-    
-    @scala.inline
-    def setEnd(value: js.Array[Double]): Self = this.set("end", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStridesVarargs(value: Double*): Self = this.set("strides", js.Array(value :_*))
-    
-    @scala.inline
-    def setStrides(value: js.Array[Double]): Self = this.set("strides", value.asInstanceOf[js.Any])
+    def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
   }
 }

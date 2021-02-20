@@ -2,13 +2,16 @@ package typings.yaml.typesMod
 
 import typings.yaml.typesMod.AST.PlainValue
 import typings.yaml.typesMod.Pair.Type.MERGE_PAIR
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yaml/types", "Merge")
 @js.native
-class Merge () extends Pair {
+class Merge protected () extends Pair {
+  def this(key: js.Any) = this()
+  def this(key: js.Any, value: js.Any) = this()
   
   /** Always Scalar('<<'), defined by the type specification */
   @JSName("key")

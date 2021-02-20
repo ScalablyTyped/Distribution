@@ -7,6 +7,7 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,16 +28,20 @@ class ProxyConfiguration protected ()
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-/* static members */
-@JSImport("mendixmodelsdk", "microflows.ProxyConfiguration")
-@js.native
-object ProxyConfiguration extends js.Object {
+object ProxyConfiguration {
+  
+  @JSImport("mendixmodelsdk", "microflows.ProxyConfiguration")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new ProxyConfiguration instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.ProxyConfiguration.create")
+  @js.native
   def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.ProxyConfiguration = js.native
   
   /**
@@ -47,6 +52,9 @@ object ProxyConfiguration extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.ProxyConfiguration.createInRestCallActionUnderProxyConfiguration")
+  @js.native
   def createInRestCallActionUnderProxyConfiguration(container: typings.mendixmodelsdk.microflowsMod.microflows.RestCallAction): typings.mendixmodelsdk.microflowsMod.microflows.ProxyConfiguration = js.native
   
   /**
@@ -57,9 +65,22 @@ object ProxyConfiguration extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.ProxyConfiguration.createInWebServiceCallActionUnderProxyConfiguration")
+  @js.native
   def createInWebServiceCallActionUnderProxyConfiguration(container: typings.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction): typings.mendixmodelsdk.microflowsMod.microflows.ProxyConfiguration = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.ProxyConfiguration.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.ProxyConfiguration.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

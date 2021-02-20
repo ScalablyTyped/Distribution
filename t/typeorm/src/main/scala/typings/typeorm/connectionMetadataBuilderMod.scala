@@ -5,16 +5,16 @@ import typings.typeorm.entityMetadataMod.EntityMetadata
 import typings.typeorm.entitySchemaMod.EntitySchema
 import typings.typeorm.entitySubscriberInterfaceMod.EntitySubscriberInterface
 import typings.typeorm.migrationInterfaceMod.MigrationInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/connection/ConnectionMetadataBuilder", JSImport.Namespace)
-@js.native
-object connectionMetadataBuilderMod extends js.Object {
+object connectionMetadataBuilderMod {
   
+  @JSImport("typeorm/browser/connection/ConnectionMetadataBuilder", "ConnectionMetadataBuilder")
   @js.native
-  class ConnectionMetadataBuilder protected () extends js.Object {
+  class ConnectionMetadataBuilder protected () extends StObject {
     def this(connection: Connection) = this()
     
     /**

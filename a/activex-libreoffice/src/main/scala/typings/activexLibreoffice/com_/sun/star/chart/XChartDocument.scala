@@ -10,6 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.frame.XModel
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -174,60 +175,48 @@ object XChartDocument {
   }
   
   @scala.inline
-  implicit class XChartDocumentOps[Self <: XChartDocument] (val x: Self) extends AnyVal {
+  implicit class XChartDocumentMutableBuilder[Self <: XChartDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArea(value: XPropertySet): Self = StObject.set(x, "Area", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachData(value: XChartData => Unit): Self = StObject.set(x, "attachData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: XChartData): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArea(value: XPropertySet): Self = this.set("Area", value.asInstanceOf[js.Any])
+    def setDiagram(value: XDiagram): Self = StObject.set(x, "Diagram", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: XChartData): Self = this.set("Data", value.asInstanceOf[js.Any])
+    def setGetArea(value: () => XPropertySet): Self = StObject.set(x, "getArea", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDiagram(value: XDiagram): Self = this.set("Diagram", value.asInstanceOf[js.Any])
+    def setGetData(value: () => XChartData): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLegend(value: XShape): Self = this.set("Legend", value.asInstanceOf[js.Any])
+    def setGetDiagram(value: () => XDiagram): Self = StObject.set(x, "getDiagram", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSubTitle(value: XShape): Self = this.set("SubTitle", value.asInstanceOf[js.Any])
+    def setGetLegend(value: () => XShape): Self = StObject.set(x, "getLegend", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTitle(value: XShape): Self = this.set("Title", value.asInstanceOf[js.Any])
+    def setGetSubTitle(value: () => XShape): Self = StObject.set(x, "getSubTitle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAttachData(value: XChartData => Unit): Self = this.set("attachData", js.Any.fromFunction1(value))
+    def setGetTitle(value: () => XShape): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetArea(value: () => XPropertySet): Self = this.set("getArea", js.Any.fromFunction0(value))
+    def setLegend(value: XShape): Self = StObject.set(x, "Legend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetData(value: () => XChartData): Self = this.set("getData", js.Any.fromFunction0(value))
+    def setSetDiagram(value: XDiagram => Unit): Self = StObject.set(x, "setDiagram", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDiagram(value: () => XDiagram): Self = this.set("getDiagram", js.Any.fromFunction0(value))
+    def setSubTitle(value: XShape): Self = StObject.set(x, "SubTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetLegend(value: () => XShape): Self = this.set("getLegend", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSubTitle(value: () => XShape): Self = this.set("getSubTitle", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTitle(value: () => XShape): Self = this.set("getTitle", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDiagram(value: XDiagram => Unit): Self = this.set("setDiagram", js.Any.fromFunction1(value))
+    def setTitle(value: XShape): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

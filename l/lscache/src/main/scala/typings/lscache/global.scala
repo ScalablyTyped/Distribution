@@ -1,12 +1,15 @@
 package typings.lscache
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var lscache: LSCache = js.native
+  @JSGlobal("lscache")
+  @js.native
+  def lscache: LSCache = js.native
+  @scala.inline
+  def lscache_=(x: LSCache): Unit = js.Dynamic.global.updateDynamic("lscache")(x.asInstanceOf[js.Any])
 }

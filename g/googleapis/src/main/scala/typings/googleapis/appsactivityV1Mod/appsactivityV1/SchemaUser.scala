@@ -1,5 +1,6 @@
 package typings.googleapis.appsactivityV1Mod.appsactivityV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A representation of a user.
   */
 @js.native
-trait SchemaUser extends js.Object {
+trait SchemaUser extends StObject {
   
   /**
     * A boolean which indicates whether the specified User was deleted. If
@@ -48,48 +49,36 @@ object SchemaUser {
   }
   
   @scala.inline
-  implicit class SchemaUserOps[Self <: SchemaUser] (val x: Self) extends AnyVal {
+  implicit class SchemaUserMutableBuilder[Self <: SchemaUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsDeletedUndefined: Self = StObject.set(x, "isDeleted", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsMe(value: Boolean): Self = StObject.set(x, "isMe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDeleted(value: Boolean): Self = this.set("isDeleted", value.asInstanceOf[js.Any])
+    def setIsMeUndefined: Self = StObject.set(x, "isMe", js.undefined)
     
     @scala.inline
-    def deleteIsDeleted: Self = this.set("isDeleted", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMe(value: Boolean): Self = this.set("isMe", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIsMe: Self = this.set("isMe", js.undefined)
+    def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPhoto(value: SchemaPhoto): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionId(value: String): Self = this.set("permissionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermissionId: Self = this.set("permissionId", js.undefined)
-    
-    @scala.inline
-    def setPhoto(value: SchemaPhoto): Self = this.set("photo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhoto: Self = this.set("photo", js.undefined)
+    def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
   }
 }

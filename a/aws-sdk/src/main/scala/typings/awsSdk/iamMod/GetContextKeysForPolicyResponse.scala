@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetContextKeysForPolicyResponse extends js.Object {
+trait GetContextKeysForPolicyResponse extends StObject {
   
   /**
     * The list of context keys that are referenced in the input policies.
@@ -21,27 +22,15 @@ object GetContextKeysForPolicyResponse {
   }
   
   @scala.inline
-  implicit class GetContextKeysForPolicyResponseOps[Self <: GetContextKeysForPolicyResponse] (val x: Self) extends AnyVal {
+  implicit class GetContextKeysForPolicyResponseMutableBuilder[Self <: GetContextKeysForPolicyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContextKeyNames(value: ContextKeyNamesResultListType): Self = StObject.set(x, "ContextKeyNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextKeyNamesUndefined: Self = StObject.set(x, "ContextKeyNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContextKeyNamesVarargs(value: ContextKeyNameType*): Self = this.set("ContextKeyNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setContextKeyNames(value: ContextKeyNamesResultListType): Self = this.set("ContextKeyNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContextKeyNames: Self = this.set("ContextKeyNames", js.undefined)
+    def setContextKeyNamesVarargs(value: ContextKeyNameType*): Self = StObject.set(x, "ContextKeyNames", js.Array(value :_*))
   }
 }

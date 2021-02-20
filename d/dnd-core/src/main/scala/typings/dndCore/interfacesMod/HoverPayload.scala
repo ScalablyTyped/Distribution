@@ -1,11 +1,12 @@
 package typings.dndCore.interfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HoverPayload extends js.Object {
+trait HoverPayload extends StObject {
   
   var clientOffset: XYCoord | Null = js.native
   
@@ -20,30 +21,18 @@ object HoverPayload {
   }
   
   @scala.inline
-  implicit class HoverPayloadOps[Self <: HoverPayload] (val x: Self) extends AnyVal {
+  implicit class HoverPayloadMutableBuilder[Self <: HoverPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientOffset(value: XYCoord): Self = StObject.set(x, "clientOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientOffsetNull: Self = StObject.set(x, "clientOffset", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetIds(value: js.Array[Identifier]): Self = StObject.set(x, "targetIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetIdsVarargs(value: Identifier*): Self = this.set("targetIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetIds(value: js.Array[Identifier]): Self = this.set("targetIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientOffset(value: XYCoord): Self = this.set("clientOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientOffsetNull: Self = this.set("clientOffset", null)
+    def setTargetIdsVarargs(value: Identifier*): Self = StObject.set(x, "targetIds", js.Array(value :_*))
   }
 }

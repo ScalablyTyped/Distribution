@@ -1,11 +1,12 @@
 package typings.awsSdk.wafMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteGeoMatchSetRequest extends js.Object {
+trait DeleteGeoMatchSetRequest extends StObject {
   
   /**
     * The value returned by the most recent call to GetChangeToken.
@@ -26,24 +27,12 @@ object DeleteGeoMatchSetRequest {
   }
   
   @scala.inline
-  implicit class DeleteGeoMatchSetRequestOps[Self <: DeleteGeoMatchSetRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteGeoMatchSetRequestMutableBuilder[Self <: DeleteGeoMatchSetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = this.set("ChangeToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGeoMatchSetId(value: ResourceId): Self = this.set("GeoMatchSetId", value.asInstanceOf[js.Any])
+    def setGeoMatchSetId(value: ResourceId): Self = StObject.set(x, "GeoMatchSetId", value.asInstanceOf[js.Any])
   }
 }

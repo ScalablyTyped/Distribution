@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext.draw.sprite
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,42 +42,30 @@ object IPath {
   }
   
   @scala.inline
-  implicit class IPathOps[Self <: IPath] (val x: Self) extends AnyVal {
+  implicit class IPathMutableBuilder[Self <: IPath] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRender(value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setUpdatePath(value: (/* path */ js.UndefOr[IPath], /* attr */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRender(value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any]) => _): Self = this.set("render", js.Any.fromFunction2(value))
+    def setUpdatePathUndefined: Self = StObject.set(x, "updatePath", js.undefined)
     
     @scala.inline
-    def deleteRender: Self = this.set("render", js.undefined)
+    def setUpdateTransformedBBox(value: /* transform */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updateTransformedBBox", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUpdatePath(value: (/* path */ js.UndefOr[IPath], /* attr */ js.UndefOr[js.Any]) => Unit): Self = this.set("updatePath", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteUpdatePath: Self = this.set("updatePath", js.undefined)
-    
-    @scala.inline
-    def setUpdateTransformedBBox(value: /* transform */ js.UndefOr[js.Any] => Unit): Self = this.set("updateTransformedBBox", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteUpdateTransformedBBox: Self = this.set("updateTransformedBBox", js.undefined)
+    def setUpdateTransformedBBoxUndefined: Self = StObject.set(x, "updateTransformedBBox", js.undefined)
   }
 }

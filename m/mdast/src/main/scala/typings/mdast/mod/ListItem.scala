@@ -1,6 +1,7 @@
 package typings.mdast.mod
 
 import typings.mdast.mdastStrings.listItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,39 +29,27 @@ object ListItem {
   }
   
   @scala.inline
-  implicit class ListItemOps[Self <: ListItem] (val x: Self) extends AnyVal {
+  implicit class ListItemMutableBuilder[Self <: ListItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildren(value: js.Array[BlockContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: BlockContent*): Self = this.set("children", js.Array(value :_*))
+    def setChildrenVarargs(value: BlockContent*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setChildren(value: js.Array[BlockContent]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setSpread(value: Boolean): Self = StObject.set(x, "spread", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: listItem): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setSpreadUndefined: Self = StObject.set(x, "spread", js.undefined)
     
     @scala.inline
-    def setChecked(value: Boolean): Self = this.set("checked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChecked: Self = this.set("checked", js.undefined)
-    
-    @scala.inline
-    def setSpread(value: Boolean): Self = this.set("spread", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpread: Self = this.set("spread", js.undefined)
+    def setType(value: listItem): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

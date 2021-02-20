@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetPhoneNumberResponse extends js.Object {
+trait GetPhoneNumberResponse extends StObject {
   
   /**
     * The phone number details.
@@ -21,24 +22,12 @@ object GetPhoneNumberResponse {
   }
   
   @scala.inline
-  implicit class GetPhoneNumberResponseOps[Self <: GetPhoneNumberResponse] (val x: Self) extends AnyVal {
+  implicit class GetPhoneNumberResponseMutableBuilder[Self <: GetPhoneNumberResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPhoneNumber(value: PhoneNumber): Self = StObject.set(x, "PhoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPhoneNumber(value: PhoneNumber): Self = this.set("PhoneNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhoneNumber: Self = this.set("PhoneNumber", js.undefined)
+    def setPhoneNumberUndefined: Self = StObject.set(x, "PhoneNumber", js.undefined)
   }
 }

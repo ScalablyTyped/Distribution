@@ -2,6 +2,7 @@ package typings.sharepoint.Srch
 
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -184,93 +185,81 @@ object Refinement {
   }
   
   @scala.inline
-  implicit class RefinementOps[Self <: Refinement] (val x: Self) extends AnyVal {
+  implicit class RefinementMutableBuilder[Self <: Refinement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddRefinementFilter(value: (String, js.Any) => Unit): Self = StObject.set(x, "addRefinementFilter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddRefinementFilters(value: js.Array[_] => Unit): Self = StObject.set(x, "addRefinementFilters", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddRefinementFiltersJSON(value: String => Unit): Self = StObject.set(x, "addRefinementFiltersJSON", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddRefinementFilter(value: (String, js.Any) => Unit): Self = this.set("addRefinementFilter", js.Any.fromFunction2(value))
+    def setAddRefinementFiltersJSONWithOr(value: String => Unit): Self = StObject.set(x, "addRefinementFiltersJSONWithOr", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddRefinementFilters(value: js.Array[_] => Unit): Self = this.set("addRefinementFilters", js.Any.fromFunction1(value))
+    def setAddRefinementFiltersWithOp(value: (js.Array[_], String) => Unit): Self = StObject.set(x, "addRefinementFiltersWithOp", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddRefinementFiltersJSON(value: String => Unit): Self = this.set("addRefinementFiltersJSON", js.Any.fromFunction1(value))
+    def setGetCurrentRefinementCategory(value: String => js.Any): Self = StObject.set(x, "getCurrentRefinementCategory", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddRefinementFiltersJSONWithOr(value: String => Unit): Self = this.set("addRefinementFiltersJSONWithOr", js.Any.fromFunction1(value))
+    def setGetRefinementControl(value: String => RefinementControl): Self = StObject.set(x, "getRefinementControl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddRefinementFiltersWithOp(value: (js.Array[_], String) => Unit): Self = this.set("addRefinementFiltersWithOp", js.Any.fromFunction2(value))
+    def setGet_emptyRefinementMessageId(value: () => String): Self = StObject.set(x, "get_emptyRefinementMessageId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentRefinementCategory(value: String => js.Any): Self = this.set("getCurrentRefinementCategory", js.Any.fromFunction1(value))
+    def setGet_selectedRefinementControls(value: () => js.Array[RefinementControl]): Self = StObject.set(x, "get_selectedRefinementControls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRefinementControl(value: String => RefinementControl): Self = this.set("getRefinementControl", js.Any.fromFunction1(value))
+    def setGet_useManagedNavigationRefiners(value: () => Boolean): Self = StObject.set(x, "get_useManagedNavigationRefiners", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_emptyRefinementMessageId(value: () => String): Self = this.set("get_emptyRefinementMessageId", js.Any.fromFunction0(value))
+    def setHasAllRefinementFilters(value: (String, js.Array[String]) => Boolean): Self = StObject.set(x, "hasAllRefinementFilters", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGet_selectedRefinementControls(value: () => js.Array[RefinementControl]): Self = this.set("get_selectedRefinementControls", js.Any.fromFunction0(value))
+    def setHasRefinementCategory(value: String => Boolean): Self = StObject.set(x, "hasRefinementCategory", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_useManagedNavigationRefiners(value: () => Boolean): Self = this.set("get_useManagedNavigationRefiners", js.Any.fromFunction0(value))
+    def setHasRefinementFilter(value: (String, String) => Boolean): Self = StObject.set(x, "hasRefinementFilter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHasAllRefinementFilters(value: (String, js.Array[String]) => Boolean): Self = this.set("hasAllRefinementFilters", js.Any.fromFunction2(value))
+    def setHasRefiner(value: String => Boolean): Self = StObject.set(x, "hasRefiner", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHasRefinementCategory(value: String => Boolean): Self = this.set("hasRefinementCategory", js.Any.fromFunction1(value))
+    def setRemoveRefinementCategory(value: (js.Any, String) => Unit): Self = StObject.set(x, "removeRefinementCategory", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHasRefinementFilter(value: (String, String) => Boolean): Self = this.set("hasRefinementFilter", js.Any.fromFunction2(value))
+    def setRemoveRefinementFilter(value: (String, String) => Unit): Self = StObject.set(x, "removeRefinementFilter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHasRefiner(value: String => Boolean): Self = this.set("hasRefiner", js.Any.fromFunction1(value))
+    def setRemoveRefinementFiltersJSON(value: String => Unit): Self = StObject.set(x, "removeRefinementFiltersJSON", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveRefinementCategory(value: (js.Any, String) => Unit): Self = this.set("removeRefinementCategory", js.Any.fromFunction2(value))
+    def setReplaceRefinementFilter(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "replaceRefinementFilter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRemoveRefinementFilter(value: (String, String) => Unit): Self = this.set("removeRefinementFilter", js.Any.fromFunction2(value))
+    def setSet_emptyRefinementMessageId(value: String => String): Self = StObject.set(x, "set_emptyRefinementMessageId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveRefinementFiltersJSON(value: String => Unit): Self = this.set("removeRefinementFiltersJSON", js.Any.fromFunction1(value))
+    def setSet_selectedRefinementControls(value: js.Array[RefinementControl] => js.Array[RefinementControl]): Self = StObject.set(x, "set_selectedRefinementControls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReplaceRefinementFilter(value: (js.Any, js.Any) => Unit): Self = this.set("replaceRefinementFilter", js.Any.fromFunction2(value))
+    def setSet_useManagedNavigationRefiners(value: Boolean => Boolean): Self = StObject.set(x, "set_useManagedNavigationRefiners", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_emptyRefinementMessageId(value: String => String): Self = this.set("set_emptyRefinementMessageId", js.Any.fromFunction1(value))
+    def setUpdateRefinementControls(value: js.Array[RefinementControl] => Unit): Self = StObject.set(x, "updateRefinementControls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_selectedRefinementControls(value: js.Array[RefinementControl] => js.Array[RefinementControl]): Self = this.set("set_selectedRefinementControls", js.Any.fromFunction1(value))
+    def setUpdateRefinementFilters(value: (String, js.Array[String], String, Boolean, js.Any) => Unit): Self = StObject.set(x, "updateRefinementFilters", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setSet_useManagedNavigationRefiners(value: Boolean => Boolean): Self = this.set("set_useManagedNavigationRefiners", js.Any.fromFunction1(value))
+    def setUpdateRefiners(value: (js.Array[_], String, Boolean, js.Any) => Unit): Self = StObject.set(x, "updateRefiners", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setUpdateRefinementControls(value: js.Array[RefinementControl] => Unit): Self = this.set("updateRefinementControls", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateRefinementFilters(value: (String, js.Array[String], String, Boolean, js.Any) => Unit): Self = this.set("updateRefinementFilters", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setUpdateRefiners(value: (js.Array[_], String, Boolean, js.Any) => Unit): Self = this.set("updateRefiners", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setUpdateRefinersJSON(value: String => Unit): Self = this.set("updateRefinersJSON", js.Any.fromFunction1(value))
+    def setUpdateRefinersJSON(value: String => Unit): Self = StObject.set(x, "updateRefinersJSON", js.Any.fromFunction1(value))
   }
 }

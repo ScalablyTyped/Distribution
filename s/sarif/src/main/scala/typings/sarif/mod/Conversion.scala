@@ -1,11 +1,12 @@
 package typings.sarif.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Conversion extends js.Object {
+trait Conversion extends StObject {
   
   /**
     * The locations of the analysis tool's per-run log files.
@@ -36,42 +37,30 @@ object Conversion {
   }
   
   @scala.inline
-  implicit class ConversionOps[Self <: Conversion] (val x: Self) extends AnyVal {
+  implicit class ConversionMutableBuilder[Self <: Conversion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalysisToolLogFiles(value: js.Array[ArtifactLocation]): Self = StObject.set(x, "analysisToolLogFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalysisToolLogFilesUndefined: Self = StObject.set(x, "analysisToolLogFiles", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnalysisToolLogFilesVarargs(value: ArtifactLocation*): Self = StObject.set(x, "analysisToolLogFiles", js.Array(value :_*))
     
     @scala.inline
-    def setTool(value: Tool): Self = this.set("tool", value.asInstanceOf[js.Any])
+    def setInvocation(value: Invocation): Self = StObject.set(x, "invocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalysisToolLogFilesVarargs(value: ArtifactLocation*): Self = this.set("analysisToolLogFiles", js.Array(value :_*))
+    def setInvocationUndefined: Self = StObject.set(x, "invocation", js.undefined)
     
     @scala.inline
-    def setAnalysisToolLogFiles(value: js.Array[ArtifactLocation]): Self = this.set("analysisToolLogFiles", value.asInstanceOf[js.Any])
+    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnalysisToolLogFiles: Self = this.set("analysisToolLogFiles", js.undefined)
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def setInvocation(value: Invocation): Self = this.set("invocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvocation: Self = this.set("invocation", js.undefined)
-    
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setTool(value: Tool): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
   }
 }

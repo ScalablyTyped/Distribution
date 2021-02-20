@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.Usb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Derives information from the first 9 bytes of a USB configuration descriptor. The information includes the power capabilities of the device when the configuration is active and the number of interfaces included in that configuration. For an explanation of a configuration descriptor, Section 9.6.3 Universal Serial Bus Specification. For information about descriptor fields, see: */
 @js.native
-trait UsbConfigurationDescriptor extends js.Object {
+trait UsbConfigurationDescriptor extends StObject {
   
   /** Gets the bConfigurationValue field of a USB configuration descriptor. The value is the number that identifies the configuration. */
   var configurationValue: Double = js.native
@@ -29,30 +30,18 @@ object UsbConfigurationDescriptor {
   }
   
   @scala.inline
-  implicit class UsbConfigurationDescriptorOps[Self <: UsbConfigurationDescriptor] (val x: Self) extends AnyVal {
+  implicit class UsbConfigurationDescriptorMutableBuilder[Self <: UsbConfigurationDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationValue(value: Double): Self = StObject.set(x, "configurationValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxPowerMilliamps(value: Double): Self = StObject.set(x, "maxPowerMilliamps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoteWakeup(value: Boolean): Self = StObject.set(x, "remoteWakeup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationValue(value: Double): Self = this.set("configurationValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxPowerMilliamps(value: Double): Self = this.set("maxPowerMilliamps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoteWakeup(value: Boolean): Self = this.set("remoteWakeup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelfPowered(value: Boolean): Self = this.set("selfPowered", value.asInstanceOf[js.Any])
+    def setSelfPowered(value: Boolean): Self = StObject.set(x, "selfPowered", value.asInstanceOf[js.Any])
   }
 }

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Networking.Proximity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PeerWatcherStatus extends js.Object
+sealed trait PeerWatcherStatus extends StObject
 /** Describes the status of a PeerWatcher object. */
 @JSGlobal("Windows.Networking.Proximity.PeerWatcherStatus")
 @js.native
-object PeerWatcherStatus extends js.Object {
+object PeerWatcherStatus extends StObject {
   
   /** Watching for peers has stopped due to a failure. */
   @js.native

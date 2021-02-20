@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GeometricEffectDonutMethod extends js.Object
+sealed trait GeometricEffectDonutMethod extends StObject
 @JSGlobal("__esri.CIM.GeometricEffectDonutMethod")
 @js.native
-object GeometricEffectDonutMethod extends js.Object {
+object GeometricEffectDonutMethod extends StObject {
   
   /**
     * Bevelled - follows the shortest straight path across a convex corner of the polygon.

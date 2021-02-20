@@ -6,6 +6,7 @@ import typings.antvComponent.antvComponentStrings.middle
 import typings.antvComponent.antvComponentStrings.right
 import typings.antvComponent.antvComponentStrings.top
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,44 +37,32 @@ object HtmlAnnotationCfg {
   }
   
   @scala.inline
-  implicit class HtmlAnnotationCfgOps[Self <: HtmlAnnotationCfg] (val x: Self) extends AnyVal {
+  implicit class HtmlAnnotationCfgMutableBuilder[Self <: HtmlAnnotationCfg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignX(value: left | middle | right): Self = StObject.set(x, "alignX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignXUndefined: Self = StObject.set(x, "alignX", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlignY(value: top | middle | bottom): Self = StObject.set(x, "alignY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtmlFunction1(value: /* container */ HTMLElement => Unit | String | HTMLElement): Self = this.set("html", js.Any.fromFunction1(value))
+    def setAlignYUndefined: Self = StObject.set(x, "alignY", js.undefined)
     
     @scala.inline
     def setHtml(
       value: String | HTMLElement | (js.Function1[/* container */ HTMLElement, Unit | String | HTMLElement])
-    ): Self = this.set("html", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignX(value: left | middle | right): Self = this.set("alignX", value.asInstanceOf[js.Any])
+    def setHtmlFunction1(value: /* container */ HTMLElement => Unit | String | HTMLElement): Self = StObject.set(x, "html", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAlignX: Self = this.set("alignX", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignY(value: top | middle | bottom): Self = this.set("alignY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlignY: Self = this.set("alignY", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.atlassianConnectJs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  jql :string,   header :string,   descriptionText :string,   submitText :string,   cancelText :string}> */
 @js.native
-trait Partialjqlstringheaderstr extends js.Object {
+trait Partialjqlstringheaderstr extends StObject {
   
   var cancelText: js.UndefOr[String] = js.native
   
@@ -27,48 +28,36 @@ object Partialjqlstringheaderstr {
   }
   
   @scala.inline
-  implicit class PartialjqlstringheaderstrOps[Self <: Partialjqlstringheaderstr] (val x: Self) extends AnyVal {
+  implicit class PartialjqlstringheaderstrMutableBuilder[Self <: Partialjqlstringheaderstr] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptionText(value: String): Self = StObject.set(x, "descriptionText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelText(value: String): Self = this.set("cancelText", value.asInstanceOf[js.Any])
+    def setDescriptionTextUndefined: Self = StObject.set(x, "descriptionText", js.undefined)
     
     @scala.inline
-    def deleteCancelText: Self = this.set("cancelText", js.undefined)
+    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptionText(value: String): Self = this.set("descriptionText", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def deleteDescriptionText: Self = this.set("descriptionText", js.undefined)
+    def setJql(value: String): Self = StObject.set(x, "jql", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: String): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setJqlUndefined: Self = StObject.set(x, "jql", js.undefined)
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setSubmitText(value: String): Self = StObject.set(x, "submitText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJql(value: String): Self = this.set("jql", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJql: Self = this.set("jql", js.undefined)
-    
-    @scala.inline
-    def setSubmitText(value: String): Self = this.set("submitText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubmitText: Self = this.set("submitText", js.undefined)
+    def setSubmitTextUndefined: Self = StObject.set(x, "submitText", js.undefined)
   }
 }

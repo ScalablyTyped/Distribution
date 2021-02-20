@@ -1,6 +1,7 @@
 package typings.canvaskitWasm.mod
 
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -124,63 +125,51 @@ object Particles {
   }
   
   @scala.inline
-  implicit class ParticlesOps[Self <: Particles] (val x: Self) extends AnyVal {
+  implicit class ParticlesMutableBuilder[Self <: Particles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDraw(value: SkCanvas => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEffectUniforms(value: () => Float32Array): Self = StObject.set(x, "effectUniforms", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetEffectUniform(value: Double => ParticlesUniform): Self = StObject.set(x, "getEffectUniform", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDraw(value: SkCanvas => Unit): Self = this.set("draw", js.Any.fromFunction1(value))
+    def setGetEffectUniformCount(value: () => Double): Self = StObject.set(x, "getEffectUniformCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEffectUniforms(value: () => Float32Array): Self = this.set("effectUniforms", js.Any.fromFunction0(value))
+    def setGetEffectUniformFloatCount(value: () => Double): Self = StObject.set(x, "getEffectUniformFloatCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEffectUniform(value: Double => ParticlesUniform): Self = this.set("getEffectUniform", js.Any.fromFunction1(value))
+    def setGetEffectUniformName(value: Double => String): Self = StObject.set(x, "getEffectUniformName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetEffectUniformCount(value: () => Double): Self = this.set("getEffectUniformCount", js.Any.fromFunction0(value))
+    def setGetParticleUniform(value: Double => ParticlesUniform): Self = StObject.set(x, "getParticleUniform", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetEffectUniformFloatCount(value: () => Double): Self = this.set("getEffectUniformFloatCount", js.Any.fromFunction0(value))
+    def setGetParticleUniformCount(value: () => Double): Self = StObject.set(x, "getParticleUniformCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEffectUniformName(value: Double => String): Self = this.set("getEffectUniformName", js.Any.fromFunction1(value))
+    def setGetParticleUniformFloatCount(value: () => Double): Self = StObject.set(x, "getParticleUniformFloatCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetParticleUniform(value: Double => ParticlesUniform): Self = this.set("getParticleUniform", js.Any.fromFunction1(value))
+    def setGetParticleUniformName(value: Double => String): Self = StObject.set(x, "getParticleUniformName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetParticleUniformCount(value: () => Double): Self = this.set("getParticleUniformCount", js.Any.fromFunction0(value))
+    def setParticleUniforms(value: () => Float32Array): Self = StObject.set(x, "particleUniforms", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetParticleUniformFloatCount(value: () => Double): Self = this.set("getParticleUniformFloatCount", js.Any.fromFunction0(value))
+    def setSetPosition(value: SkPoint => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetParticleUniformName(value: Double => String): Self = this.set("getParticleUniformName", js.Any.fromFunction1(value))
+    def setSetRate(value: Double => Unit): Self = StObject.set(x, "setRate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParticleUniforms(value: () => Float32Array): Self = this.set("particleUniforms", js.Any.fromFunction0(value))
+    def setStart(value: (Double, Boolean) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetPosition(value: SkPoint => Unit): Self = this.set("setPosition", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetRate(value: Double => Unit): Self = this.set("setRate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStart(value: (Double, Boolean) => Unit): Self = this.set("start", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUpdate(value: Double => Unit): Self = this.set("update", js.Any.fromFunction1(value))
+    def setUpdate(value: Double => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
 }

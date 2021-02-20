@@ -2,12 +2,13 @@ package typings.antvG2.mod
 
 import typings.antvG2.antvG2Strings.x
 import typings.antvG2.antvG2Strings.y
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Coordinate extends js.Object {
+trait Coordinate extends StObject {
   
   /**
     * 坐标系转置，将 x 或者 y 的起始、结束值倒置。

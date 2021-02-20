@@ -1,13 +1,14 @@
 package typings.instagramPrivateApi.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined instagram-private-api.instagram-private-api/dist/sticker-builder/sticker-builder.StickerOptions<instagram-private-api.instagram-private-api/dist/sticker-builder/stickers.SliderSticker> */
 @js.native
-trait StickerOptionsSliderStick extends js.Object {
+trait StickerOptionsSliderStick extends StObject {
   
   var additionalConfigureProperties: js.UndefOr[js.Function0[_]] = js.native
   
@@ -74,180 +75,168 @@ object StickerOptionsSliderStick {
   }
   
   @scala.inline
-  implicit class StickerOptionsSliderStickOps[Self <: StickerOptionsSliderStick] (val x: Self) extends AnyVal {
+  implicit class StickerOptionsSliderStickMutableBuilder[Self <: StickerOptionsSliderStick] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalConfigureProperties(value: () => _): Self = StObject.set(x, "additionalConfigureProperties", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalConfigurePropertiesUndefined: Self = StObject.set(x, "additionalConfigureProperties", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmoji(value: String): Self = this.set("emoji", value.asInstanceOf[js.Any])
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def setQuestion(value: String): Self = this.set("question", value.asInstanceOf[js.Any])
+    def setBottom(value: () => StickerOptionsSliderStick): Self = StObject.set(x, "bottom", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdditionalConfigureProperties(value: () => _): Self = this.set("additionalConfigureProperties", js.Any.fromFunction0(value))
+    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
     @scala.inline
-    def deleteAdditionalConfigureProperties: Self = this.set("additionalConfigureProperties", js.undefined)
+    def setCenter(value: () => StickerOptionsSliderStick): Self = StObject.set(x, "center", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottom(value: () => StickerOptionsSliderStick): Self = this.set("bottom", js.Any.fromFunction0(value))
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBottom: Self = this.set("bottom", js.undefined)
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setCenter(value: () => StickerOptionsSliderStick): Self = this.set("center", js.Any.fromFunction0(value))
+    def setId(value: () => String): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIsSticker(value: Boolean): Self = StObject.set(x, "isSticker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setIsStickerUndefined: Self = StObject.set(x, "isSticker", js.undefined)
     
     @scala.inline
-    def setId(value: () => String): Self = this.set("id", js.Any.fromFunction0(value))
+    def setKey(value: () => String): Self = StObject.set(x, "key", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setIsSticker(value: Boolean): Self = this.set("isSticker", value.asInstanceOf[js.Any])
+    def setLeft(value: () => StickerOptionsSliderStick): Self = StObject.set(x, "left", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIsSticker: Self = this.set("isSticker", js.undefined)
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def setKey(value: () => String): Self = this.set("key", js.Any.fromFunction0(value))
+    def setMoveBackwards(value: /* layers */ js.UndefOr[Double] => StickerOptionsSliderStick): Self = StObject.set(x, "moveBackwards", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setMoveBackwardsUndefined: Self = StObject.set(x, "moveBackwards", js.undefined)
     
     @scala.inline
-    def setLeft(value: () => StickerOptionsSliderStick): Self = this.set("left", js.Any.fromFunction0(value))
+    def setMoveForward(value: /* layers */ js.UndefOr[Double] => StickerOptionsSliderStick): Self = StObject.set(x, "moveForward", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setMoveForwardUndefined: Self = StObject.set(x, "moveForward", js.undefined)
     
     @scala.inline
-    def setMoveBackwards(value: /* layers */ js.UndefOr[Double] => StickerOptionsSliderStick): Self = this.set("moveBackwards", js.Any.fromFunction1(value))
+    def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMoveBackwards: Self = this.set("moveBackwards", js.undefined)
+    def setRight(value: () => StickerOptionsSliderStick): Self = StObject.set(x, "right", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMoveForward(value: /* layers */ js.UndefOr[Double] => StickerOptionsSliderStick): Self = this.set("moveForward", js.Any.fromFunction1(value))
+    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
     @scala.inline
-    def deleteMoveForward: Self = this.set("moveForward", js.undefined)
+    def setRotateDeg(value: /* deg */ Double => StickerOptionsSliderStick): Self = StObject.set(x, "rotateDeg", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRight(value: () => StickerOptionsSliderStick): Self = this.set("right", js.Any.fromFunction0(value))
+    def setRotateDegUndefined: Self = StObject.set(x, "rotateDeg", js.undefined)
     
     @scala.inline
-    def deleteRight: Self = this.set("right", js.undefined)
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotateDeg(value: /* deg */ Double => StickerOptionsSliderStick): Self = this.set("rotateDeg", js.Any.fromFunction1(value))
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def deleteRotateDeg: Self = this.set("rotateDeg", js.undefined)
+    def setScale(value: /* factor */ Double => StickerOptionsSliderStick): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setSliderVoteAverage(value: Double): Self = StObject.set(x, "sliderVoteAverage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: /* factor */ Double => StickerOptionsSliderStick): Self = this.set("scale", js.Any.fromFunction1(value))
+    def setSliderVoteAverageUndefined: Self = StObject.set(x, "sliderVoteAverage", js.undefined)
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setSliderVoteCount(value: Double): Self = StObject.set(x, "sliderVoteCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSliderVoteAverage(value: Double): Self = this.set("sliderVoteAverage", value.asInstanceOf[js.Any])
+    def setSliderVoteCountUndefined: Self = StObject.set(x, "sliderVoteCount", js.undefined)
     
     @scala.inline
-    def deleteSliderVoteAverage: Self = this.set("sliderVoteAverage", js.undefined)
+    def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSliderVoteCount(value: Double): Self = this.set("sliderVoteCount", value.asInstanceOf[js.Any])
+    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
     
     @scala.inline
-    def deleteSliderVoteCount: Self = this.set("sliderVoteCount", js.undefined)
+    def setToJSON(value: () => StringDictionary[_]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTextColor(value: String): Self = this.set("textColor", value.asInstanceOf[js.Any])
+    def setToJSONUndefined: Self = StObject.set(x, "toJSON", js.undefined)
     
     @scala.inline
-    def deleteTextColor: Self = this.set("textColor", js.undefined)
+    def setTop(value: () => StickerOptionsSliderStick): Self = StObject.set(x, "top", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setToJSON(value: () => StringDictionary[_]): Self = this.set("toJSON", js.Any.fromFunction0(value))
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
     @scala.inline
-    def deleteToJSON: Self = this.set("toJSON", js.undefined)
+    def setViewerCanVote(value: Boolean): Self = StObject.set(x, "viewerCanVote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop(value: () => StickerOptionsSliderStick): Self = this.set("top", js.Any.fromFunction0(value))
+    def setViewerCanVoteUndefined: Self = StObject.set(x, "viewerCanVote", js.undefined)
     
     @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setViewerVote(value: Double): Self = StObject.set(x, "viewerVote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewerCanVote(value: Boolean): Self = this.set("viewerCanVote", value.asInstanceOf[js.Any])
+    def setViewerVoteUndefined: Self = StObject.set(x, "viewerVote", js.undefined)
     
     @scala.inline
-    def deleteViewerCanVote: Self = this.set("viewerCanVote", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewerVote(value: Double): Self = this.set("viewerVote", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteViewerVote: Self = this.set("viewerVote", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
     @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
+    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
-    
-    @scala.inline
-    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZ: Self = this.set("z", js.undefined)
+    def setZUndefined: Self = StObject.set(x, "z", js.undefined)
   }
 }

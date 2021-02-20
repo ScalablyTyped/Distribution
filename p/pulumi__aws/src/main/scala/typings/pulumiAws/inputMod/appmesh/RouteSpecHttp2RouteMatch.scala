@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.appmesh
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouteSpecHttp2RouteMatch extends js.Object {
+trait RouteSpecHttp2RouteMatch extends StObject {
   
   /**
     * The client request headers to match on.
@@ -38,42 +39,30 @@ object RouteSpecHttp2RouteMatch {
   }
   
   @scala.inline
-  implicit class RouteSpecHttp2RouteMatchOps[Self <: RouteSpecHttp2RouteMatch] (val x: Self) extends AnyVal {
+  implicit class RouteSpecHttp2RouteMatchMutableBuilder[Self <: RouteSpecHttp2RouteMatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: Input[js.Array[Input[RouteSpecHttp2RouteMatchHeader]]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeadersVarargs(value: Input[RouteSpecHttp2RouteMatchHeader]*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
     @scala.inline
-    def setPrefix(value: Input[String]): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    def setMethod(value: Input[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadersVarargs(value: Input[RouteSpecHttp2RouteMatchHeader]*): Self = this.set("headers", js.Array(value :_*))
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def setHeaders(value: Input[js.Array[Input[RouteSpecHttp2RouteMatchHeader]]]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setScheme(value: Input[String]): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: Input[String]): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
-    
-    @scala.inline
-    def setScheme(value: Input[String]): Self = this.set("scheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheme: Self = this.set("scheme", js.undefined)
+    def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
   }
 }

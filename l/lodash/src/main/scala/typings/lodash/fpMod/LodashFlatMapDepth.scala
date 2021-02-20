@@ -3,12 +3,13 @@ package typings.lodash.fpMod
 import typings.lodash.mod.List
 import typings.lodash.mod.ListOfRecursiveArraysOrValues
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashFlatMapDepth extends js.Object {
+trait LodashFlatMapDepth extends StObject {
   
   def apply(iteratee: String): LodashFlatMapDepth3x1 = js.native
   def apply(iteratee: String, depth: Double): LodashFlatMapDepth3x3 = js.native

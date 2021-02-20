@@ -1,11 +1,12 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaStatefulPolicy extends js.Object {
+trait SchemaStatefulPolicy extends StObject {
   
   var preservedResources: js.UndefOr[SchemaStatefulPolicyPreservedResources] = js.native
   
@@ -20,30 +21,18 @@ object SchemaStatefulPolicy {
   }
   
   @scala.inline
-  implicit class SchemaStatefulPolicyOps[Self <: SchemaStatefulPolicy] (val x: Self) extends AnyVal {
+  implicit class SchemaStatefulPolicyMutableBuilder[Self <: SchemaStatefulPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPreservedResources(value: SchemaStatefulPolicyPreservedResources): Self = StObject.set(x, "preservedResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreservedResourcesUndefined: Self = StObject.set(x, "preservedResources", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreservedState(value: SchemaStatefulPolicyPreservedState): Self = StObject.set(x, "preservedState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreservedResources(value: SchemaStatefulPolicyPreservedResources): Self = this.set("preservedResources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreservedResources: Self = this.set("preservedResources", js.undefined)
-    
-    @scala.inline
-    def setPreservedState(value: SchemaStatefulPolicyPreservedState): Self = this.set("preservedState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreservedState: Self = this.set("preservedState", js.undefined)
+    def setPreservedStateUndefined: Self = StObject.set(x, "preservedState", js.undefined)
   }
 }

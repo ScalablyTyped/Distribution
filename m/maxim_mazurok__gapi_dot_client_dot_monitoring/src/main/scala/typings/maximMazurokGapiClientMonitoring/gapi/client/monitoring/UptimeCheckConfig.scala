@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UptimeCheckConfig extends js.Object {
+trait UptimeCheckConfig extends StObject {
   
   /**
     * The content that is expected to appear in the data returned by the target server against which the check is run. Currently, only the first entry in the content_matchers list is
@@ -77,99 +78,87 @@ object UptimeCheckConfig {
   }
   
   @scala.inline
-  implicit class UptimeCheckConfigOps[Self <: UptimeCheckConfig] (val x: Self) extends AnyVal {
+  implicit class UptimeCheckConfigMutableBuilder[Self <: UptimeCheckConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentMatchers(value: js.Array[ContentMatcher]): Self = StObject.set(x, "contentMatchers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentMatchersUndefined: Self = StObject.set(x, "contentMatchers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentMatchersVarargs(value: ContentMatcher*): Self = StObject.set(x, "contentMatchers", js.Array(value :_*))
     
     @scala.inline
-    def setContentMatchersVarargs(value: ContentMatcher*): Self = this.set("contentMatchers", js.Array(value :_*))
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentMatchers(value: js.Array[ContentMatcher]): Self = this.set("contentMatchers", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteContentMatchers: Self = this.set("contentMatchers", js.undefined)
+    def setHttpCheck(value: HttpCheck): Self = StObject.set(x, "httpCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setHttpCheckUndefined: Self = StObject.set(x, "httpCheck", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setInternalCheckers(value: js.Array[InternalChecker]): Self = StObject.set(x, "internalCheckers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpCheck(value: HttpCheck): Self = this.set("httpCheck", value.asInstanceOf[js.Any])
+    def setInternalCheckersUndefined: Self = StObject.set(x, "internalCheckers", js.undefined)
     
     @scala.inline
-    def deleteHttpCheck: Self = this.set("httpCheck", js.undefined)
+    def setInternalCheckersVarargs(value: InternalChecker*): Self = StObject.set(x, "internalCheckers", js.Array(value :_*))
     
     @scala.inline
-    def setInternalCheckersVarargs(value: InternalChecker*): Self = this.set("internalCheckers", js.Array(value :_*))
+    def setIsInternal(value: Boolean): Self = StObject.set(x, "isInternal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternalCheckers(value: js.Array[InternalChecker]): Self = this.set("internalCheckers", value.asInstanceOf[js.Any])
+    def setIsInternalUndefined: Self = StObject.set(x, "isInternal", js.undefined)
     
     @scala.inline
-    def deleteInternalCheckers: Self = this.set("internalCheckers", js.undefined)
+    def setMonitoredResource(value: MonitoredResource): Self = StObject.set(x, "monitoredResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInternal(value: Boolean): Self = this.set("isInternal", value.asInstanceOf[js.Any])
+    def setMonitoredResourceUndefined: Self = StObject.set(x, "monitoredResource", js.undefined)
     
     @scala.inline
-    def deleteIsInternal: Self = this.set("isInternal", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitoredResource(value: MonitoredResource): Self = this.set("monitoredResource", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMonitoredResource: Self = this.set("monitoredResource", js.undefined)
+    def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setResourceGroup(value: ResourceGroup): Self = StObject.set(x, "resourceGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: String): Self = this.set("period", value.asInstanceOf[js.Any])
+    def setResourceGroupUndefined: Self = StObject.set(x, "resourceGroup", js.undefined)
     
     @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def setSelectedRegions(value: js.Array[String]): Self = StObject.set(x, "selectedRegions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceGroup(value: ResourceGroup): Self = this.set("resourceGroup", value.asInstanceOf[js.Any])
+    def setSelectedRegionsUndefined: Self = StObject.set(x, "selectedRegions", js.undefined)
     
     @scala.inline
-    def deleteResourceGroup: Self = this.set("resourceGroup", js.undefined)
+    def setSelectedRegionsVarargs(value: String*): Self = StObject.set(x, "selectedRegions", js.Array(value :_*))
     
     @scala.inline
-    def setSelectedRegionsVarargs(value: String*): Self = this.set("selectedRegions", js.Array(value :_*))
+    def setTcpCheck(value: TcpCheck): Self = StObject.set(x, "tcpCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedRegions(value: js.Array[String]): Self = this.set("selectedRegions", value.asInstanceOf[js.Any])
+    def setTcpCheckUndefined: Self = StObject.set(x, "tcpCheck", js.undefined)
     
     @scala.inline
-    def deleteSelectedRegions: Self = this.set("selectedRegions", js.undefined)
+    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTcpCheck(value: TcpCheck): Self = this.set("tcpCheck", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTcpCheck: Self = this.set("tcpCheck", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Wallet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WalletItemKind extends js.Object
+sealed trait WalletItemKind extends StObject
 /** Represents the kinds (classifications) of wallet items supported. */
 @JSGlobal("Windows.ApplicationModel.Wallet.WalletItemKind")
 @js.native
-object WalletItemKind extends js.Object {
+object WalletItemKind extends StObject {
   
   /** A boarding pass. */
   @js.native

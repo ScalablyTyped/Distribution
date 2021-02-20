@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectEventData extends js.Object {
+trait ConnectEventData extends StObject {
   
   var format: js.UndefOr[String] = js.native
   
@@ -25,39 +26,27 @@ object ConnectEventData {
   }
   
   @scala.inline
-  implicit class ConnectEventDataOps[Self <: ConnectEventData] (val x: Self) extends AnyVal {
+  implicit class ConnectEventDataMutableBuilder[Self <: ConnectEventData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeData(value: js.Array[String]): Self = StObject.set(x, "includeData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setIncludeDataUndefined: Self = StObject.set(x, "includeData", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setIncludeDataVarargs(value: String*): Self = StObject.set(x, "includeData", js.Array(value :_*))
     
     @scala.inline
-    def setIncludeDataVarargs(value: String*): Self = this.set("includeData", js.Array(value :_*))
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeData(value: js.Array[String]): Self = this.set("includeData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeData: Self = this.set("includeData", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

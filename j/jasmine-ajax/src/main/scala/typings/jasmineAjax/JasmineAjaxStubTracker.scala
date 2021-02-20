@@ -1,11 +1,12 @@
 package typings.jasmineAjax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JasmineAjaxStubTracker extends js.Object {
+trait JasmineAjaxStubTracker extends StObject {
   
   def addStub(stub: JasmineAjaxRequestStub): Unit = js.native
   

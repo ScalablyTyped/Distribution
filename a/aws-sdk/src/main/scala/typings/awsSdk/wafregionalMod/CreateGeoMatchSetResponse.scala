@@ -1,11 +1,12 @@
 package typings.awsSdk.wafregionalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateGeoMatchSetResponse extends js.Object {
+trait CreateGeoMatchSetResponse extends StObject {
   
   /**
     * The ChangeToken that you used to submit the CreateGeoMatchSet request. You can also use this value to query the status of the request. For more information, see GetChangeTokenStatus.
@@ -26,30 +27,18 @@ object CreateGeoMatchSetResponse {
   }
   
   @scala.inline
-  implicit class CreateGeoMatchSetResponseOps[Self <: CreateGeoMatchSetResponse] (val x: Self) extends AnyVal {
+  implicit class CreateGeoMatchSetResponseMutableBuilder[Self <: CreateGeoMatchSetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeoMatchSet(value: GeoMatchSet): Self = StObject.set(x, "GeoMatchSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeToken(value: ChangeToken): Self = this.set("ChangeToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChangeToken: Self = this.set("ChangeToken", js.undefined)
-    
-    @scala.inline
-    def setGeoMatchSet(value: GeoMatchSet): Self = this.set("GeoMatchSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGeoMatchSet: Self = this.set("GeoMatchSet", js.undefined)
+    def setGeoMatchSetUndefined: Self = StObject.set(x, "GeoMatchSet", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,36 +59,24 @@ object ValueCondition {
   }
   
   @scala.inline
-  implicit class ValueConditionOps[Self <: ValueCondition] (val x: Self) extends AnyVal {
+  implicit class ValueConditionMutableBuilder[Self <: ValueCondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOperator(value: Double): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPropertyPath(value: String): Self = StObject.set(x, "propertyPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_effectiveTarget(value: js.Any): Self = this.set("_effectiveTarget", value.asInstanceOf[js.Any])
+    def set_effectiveTarget(value: js.Any): Self = StObject.set(x, "_effectiveTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_property(value: js.Any): Self = this.set("_property", value.asInstanceOf[js.Any])
+    def set_property(value: js.Any): Self = StObject.set(x, "_property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_target(value: js.Any): Self = this.set("_target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperator(value: Double): Self = this.set("operator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropertyPath(value: String): Self = this.set("propertyPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def set_target(value: js.Any): Self = StObject.set(x, "_target", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VoiceConnector extends js.Object {
+trait VoiceConnector extends StObject {
   
   /**
     * The AWS Region in which the Amazon Chime Voice Connector is created. Default: us-east-1.
@@ -51,60 +52,48 @@ object VoiceConnector {
   }
   
   @scala.inline
-  implicit class VoiceConnectorOps[Self <: VoiceConnector] (val x: Self) extends AnyVal {
+  implicit class VoiceConnectorMutableBuilder[Self <: VoiceConnector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsRegion(value: VoiceConnectorAwsRegion): Self = StObject.set(x, "AwsRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwsRegionUndefined: Self = StObject.set(x, "AwsRegion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsRegion(value: VoiceConnectorAwsRegion): Self = this.set("AwsRegion", value.asInstanceOf[js.Any])
+    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteAwsRegion: Self = this.set("AwsRegion", js.undefined)
+    def setName(value: VoiceConnectorName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTimestamp(value: Iso8601Timestamp): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    def setOutboundHostName(value: String): Self = StObject.set(x, "OutboundHostName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: VoiceConnectorName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOutboundHostNameUndefined: Self = StObject.set(x, "OutboundHostName", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setRequireEncryption(value: Boolean): Self = StObject.set(x, "RequireEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutboundHostName(value: String): Self = this.set("OutboundHostName", value.asInstanceOf[js.Any])
+    def setRequireEncryptionUndefined: Self = StObject.set(x, "RequireEncryption", js.undefined)
     
     @scala.inline
-    def deleteOutboundHostName: Self = this.set("OutboundHostName", js.undefined)
+    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireEncryption(value: Boolean): Self = this.set("RequireEncryption", value.asInstanceOf[js.Any])
+    def setUpdatedTimestampUndefined: Self = StObject.set(x, "UpdatedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteRequireEncryption: Self = this.set("RequireEncryption", js.undefined)
+    def setVoiceConnectorId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = this.set("UpdatedTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedTimestamp: Self = this.set("UpdatedTimestamp", js.undefined)
-    
-    @scala.inline
-    def setVoiceConnectorId(value: NonEmptyString): Self = this.set("VoiceConnectorId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoiceConnectorId: Self = this.set("VoiceConnectorId", js.undefined)
+    def setVoiceConnectorIdUndefined: Self = StObject.set(x, "VoiceConnectorId", js.undefined)
   }
 }

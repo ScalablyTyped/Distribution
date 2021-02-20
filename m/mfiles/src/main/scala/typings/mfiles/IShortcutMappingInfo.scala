@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IShortcutMappingInfo extends js.Object {
+trait IShortcutMappingInfo extends StObject {
   
   var ObjectTypeGUID: String = js.native
   
@@ -29,30 +30,18 @@ object IShortcutMappingInfo {
   }
   
   @scala.inline
-  implicit class IShortcutMappingInfoOps[Self <: IShortcutMappingInfo] (val x: Self) extends AnyVal {
+  implicit class IShortcutMappingInfoMutableBuilder[Self <: IShortcutMappingInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjectTypeGUID(value: String): Self = StObject.set(x, "ObjectTypeGUID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectTypeID(value: Double): Self = StObject.set(x, "ObjectTypeID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectTypeName(value: String): Self = StObject.set(x, "ObjectTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectTypeGUID(value: String): Self = this.set("ObjectTypeGUID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjectTypeID(value: Double): Self = this.set("ObjectTypeID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjectTypeName(value: String): Self = this.set("ObjectTypeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjectTypeSemanticAliases(value: ISemanticAliases): Self = this.set("ObjectTypeSemanticAliases", value.asInstanceOf[js.Any])
+    def setObjectTypeSemanticAliases(value: ISemanticAliases): Self = StObject.set(x, "ObjectTypeSemanticAliases", value.asInstanceOf[js.Any])
   }
 }

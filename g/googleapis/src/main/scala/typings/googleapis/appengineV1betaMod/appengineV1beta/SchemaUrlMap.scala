@@ -1,5 +1,6 @@
 package typings.googleapis.appengineV1betaMod.appengineV1beta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * uploaded with the version, such as images, CSS, or JavaScript.
   */
 @js.native
-trait SchemaUrlMap extends js.Object {
+trait SchemaUrlMap extends StObject {
   
   /**
     * Uses API Endpoints to handle requests.
@@ -69,66 +70,54 @@ object SchemaUrlMap {
   }
   
   @scala.inline
-  implicit class SchemaUrlMapOps[Self <: SchemaUrlMap] (val x: Self) extends AnyVal {
+  implicit class SchemaUrlMapMutableBuilder[Self <: SchemaUrlMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiEndpoint(value: SchemaApiEndpointHandler): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiEndpointUndefined: Self = StObject.set(x, "apiEndpoint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthFailAction(value: String): Self = StObject.set(x, "authFailAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiEndpoint(value: SchemaApiEndpointHandler): Self = this.set("apiEndpoint", value.asInstanceOf[js.Any])
+    def setAuthFailActionUndefined: Self = StObject.set(x, "authFailAction", js.undefined)
     
     @scala.inline
-    def deleteApiEndpoint: Self = this.set("apiEndpoint", js.undefined)
+    def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthFailAction(value: String): Self = this.set("authFailAction", value.asInstanceOf[js.Any])
+    def setLoginUndefined: Self = StObject.set(x, "login", js.undefined)
     
     @scala.inline
-    def deleteAuthFailAction: Self = this.set("authFailAction", js.undefined)
+    def setRedirectHttpResponseCode(value: String): Self = StObject.set(x, "redirectHttpResponseCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogin(value: String): Self = this.set("login", value.asInstanceOf[js.Any])
+    def setRedirectHttpResponseCodeUndefined: Self = StObject.set(x, "redirectHttpResponseCode", js.undefined)
     
     @scala.inline
-    def deleteLogin: Self = this.set("login", js.undefined)
+    def setScript(value: SchemaScriptHandler): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectHttpResponseCode(value: String): Self = this.set("redirectHttpResponseCode", value.asInstanceOf[js.Any])
+    def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
     
     @scala.inline
-    def deleteRedirectHttpResponseCode: Self = this.set("redirectHttpResponseCode", js.undefined)
+    def setSecurityLevel(value: String): Self = StObject.set(x, "securityLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScript(value: SchemaScriptHandler): Self = this.set("script", value.asInstanceOf[js.Any])
+    def setSecurityLevelUndefined: Self = StObject.set(x, "securityLevel", js.undefined)
     
     @scala.inline
-    def deleteScript: Self = this.set("script", js.undefined)
+    def setStaticFiles(value: SchemaStaticFilesHandler): Self = StObject.set(x, "staticFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityLevel(value: String): Self = this.set("securityLevel", value.asInstanceOf[js.Any])
+    def setStaticFilesUndefined: Self = StObject.set(x, "staticFiles", js.undefined)
     
     @scala.inline
-    def deleteSecurityLevel: Self = this.set("securityLevel", js.undefined)
+    def setUrlRegex(value: String): Self = StObject.set(x, "urlRegex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStaticFiles(value: SchemaStaticFilesHandler): Self = this.set("staticFiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStaticFiles: Self = this.set("staticFiles", js.undefined)
-    
-    @scala.inline
-    def setUrlRegex(value: String): Self = this.set("urlRegex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlRegex: Self = this.set("urlRegex", js.undefined)
+    def setUrlRegexUndefined: Self = StObject.set(x, "urlRegex", js.undefined)
   }
 }

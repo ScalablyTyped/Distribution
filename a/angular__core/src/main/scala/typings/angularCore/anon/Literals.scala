@@ -1,12 +1,13 @@
 package typings.angularCore.anon
 
 import typings.angularCore.providersEvaluatorMod.ProviderLiteral
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Literals extends js.Object {
+trait Literals extends StObject {
   
   var literals: js.Array[ProviderLiteral] = js.native
   
@@ -24,29 +25,17 @@ object Literals {
   }
   
   @scala.inline
-  implicit class LiteralsOps[Self <: Literals] (val x: Self) extends AnyVal {
+  implicit class LiteralsMutableBuilder[Self <: Literals] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLiterals(value: js.Array[ProviderLiteral]): Self = StObject.set(x, "literals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLiteralsVarargs(value: ProviderLiteral*): Self = this.set("literals", js.Array(value :_*))
-    
-    @scala.inline
-    def setLiterals(value: js.Array[ProviderLiteral]): Self = this.set("literals", value.asInstanceOf[js.Any])
+    def setLiteralsVarargs(value: ProviderLiteral*): Self = StObject.set(x, "literals", js.Array(value :_*))
     
     @scala.inline
     def setResolvedValue(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResolvedValue */ js.Any
-    ): Self = this.set("resolvedValue", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "resolvedValue", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.lokijs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThrottledSaveDrainOptions extends js.Object {
+trait ThrottledSaveDrainOptions extends StObject {
   
   var recursiveWait: Boolean = js.native
   
@@ -29,30 +30,18 @@ object ThrottledSaveDrainOptions {
   }
   
   @scala.inline
-  implicit class ThrottledSaveDrainOptionsOps[Self <: ThrottledSaveDrainOptions] (val x: Self) extends AnyVal {
+  implicit class ThrottledSaveDrainOptionsMutableBuilder[Self <: ThrottledSaveDrainOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecursiveWait(value: Boolean): Self = StObject.set(x, "recursiveWait", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecursiveWaitLimit(value: Boolean): Self = StObject.set(x, "recursiveWaitLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecursiveWaitLimitDuration(value: Double): Self = StObject.set(x, "recursiveWaitLimitDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecursiveWait(value: Boolean): Self = this.set("recursiveWait", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecursiveWaitLimit(value: Boolean): Self = this.set("recursiveWaitLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecursiveWaitLimitDuration(value: Double): Self = this.set("recursiveWaitLimitDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStarted(value: Double): Self = this.set("started", value.asInstanceOf[js.Any])
+    def setStarted(value: Double): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
   }
 }

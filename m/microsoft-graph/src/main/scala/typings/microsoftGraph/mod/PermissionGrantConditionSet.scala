@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,102 +33,90 @@ object PermissionGrantConditionSet {
   }
   
   @scala.inline
-  implicit class PermissionGrantConditionSetOps[Self <: PermissionGrantConditionSet] (val x: Self) extends AnyVal {
+  implicit class PermissionGrantConditionSetMutableBuilder[Self <: PermissionGrantConditionSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientApplicationIds(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "clientApplicationIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientApplicationIdsNull: Self = StObject.set(x, "clientApplicationIds", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientApplicationIdsUndefined: Self = StObject.set(x, "clientApplicationIds", js.undefined)
     
     @scala.inline
-    def setClientApplicationIdsVarargs(value: String*): Self = this.set("clientApplicationIds", js.Array(value :_*))
+    def setClientApplicationIdsVarargs(value: String*): Self = StObject.set(x, "clientApplicationIds", js.Array(value :_*))
     
     @scala.inline
-    def setClientApplicationIds(value: NullableOption[js.Array[String]]): Self = this.set("clientApplicationIds", value.asInstanceOf[js.Any])
+    def setClientApplicationPublisherIds(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "clientApplicationPublisherIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientApplicationIds: Self = this.set("clientApplicationIds", js.undefined)
+    def setClientApplicationPublisherIdsNull: Self = StObject.set(x, "clientApplicationPublisherIds", null)
     
     @scala.inline
-    def setClientApplicationIdsNull: Self = this.set("clientApplicationIds", null)
+    def setClientApplicationPublisherIdsUndefined: Self = StObject.set(x, "clientApplicationPublisherIds", js.undefined)
     
     @scala.inline
-    def setClientApplicationPublisherIdsVarargs(value: String*): Self = this.set("clientApplicationPublisherIds", js.Array(value :_*))
+    def setClientApplicationPublisherIdsVarargs(value: String*): Self = StObject.set(x, "clientApplicationPublisherIds", js.Array(value :_*))
     
     @scala.inline
-    def setClientApplicationPublisherIds(value: NullableOption[js.Array[String]]): Self = this.set("clientApplicationPublisherIds", value.asInstanceOf[js.Any])
+    def setClientApplicationTenantIds(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "clientApplicationTenantIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientApplicationPublisherIds: Self = this.set("clientApplicationPublisherIds", js.undefined)
+    def setClientApplicationTenantIdsNull: Self = StObject.set(x, "clientApplicationTenantIds", null)
     
     @scala.inline
-    def setClientApplicationPublisherIdsNull: Self = this.set("clientApplicationPublisherIds", null)
+    def setClientApplicationTenantIdsUndefined: Self = StObject.set(x, "clientApplicationTenantIds", js.undefined)
     
     @scala.inline
-    def setClientApplicationTenantIdsVarargs(value: String*): Self = this.set("clientApplicationTenantIds", js.Array(value :_*))
+    def setClientApplicationTenantIdsVarargs(value: String*): Self = StObject.set(x, "clientApplicationTenantIds", js.Array(value :_*))
     
     @scala.inline
-    def setClientApplicationTenantIds(value: NullableOption[js.Array[String]]): Self = this.set("clientApplicationTenantIds", value.asInstanceOf[js.Any])
+    def setClientApplicationsFromVerifiedPublisherOnly(value: NullableOption[Boolean]): Self = StObject.set(x, "clientApplicationsFromVerifiedPublisherOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientApplicationTenantIds: Self = this.set("clientApplicationTenantIds", js.undefined)
+    def setClientApplicationsFromVerifiedPublisherOnlyNull: Self = StObject.set(x, "clientApplicationsFromVerifiedPublisherOnly", null)
     
     @scala.inline
-    def setClientApplicationTenantIdsNull: Self = this.set("clientApplicationTenantIds", null)
+    def setClientApplicationsFromVerifiedPublisherOnlyUndefined: Self = StObject.set(x, "clientApplicationsFromVerifiedPublisherOnly", js.undefined)
     
     @scala.inline
-    def setClientApplicationsFromVerifiedPublisherOnly(value: NullableOption[Boolean]): Self = this.set("clientApplicationsFromVerifiedPublisherOnly", value.asInstanceOf[js.Any])
+    def setPermissionClassification(value: NullableOption[String]): Self = StObject.set(x, "permissionClassification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientApplicationsFromVerifiedPublisherOnly: Self = this.set("clientApplicationsFromVerifiedPublisherOnly", js.undefined)
+    def setPermissionClassificationNull: Self = StObject.set(x, "permissionClassification", null)
     
     @scala.inline
-    def setClientApplicationsFromVerifiedPublisherOnlyNull: Self = this.set("clientApplicationsFromVerifiedPublisherOnly", null)
+    def setPermissionClassificationUndefined: Self = StObject.set(x, "permissionClassification", js.undefined)
     
     @scala.inline
-    def setPermissionClassification(value: NullableOption[String]): Self = this.set("permissionClassification", value.asInstanceOf[js.Any])
+    def setPermissionType(value: NullableOption[PermissionType]): Self = StObject.set(x, "permissionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePermissionClassification: Self = this.set("permissionClassification", js.undefined)
+    def setPermissionTypeNull: Self = StObject.set(x, "permissionType", null)
     
     @scala.inline
-    def setPermissionClassificationNull: Self = this.set("permissionClassification", null)
+    def setPermissionTypeUndefined: Self = StObject.set(x, "permissionType", js.undefined)
     
     @scala.inline
-    def setPermissionType(value: NullableOption[PermissionType]): Self = this.set("permissionType", value.asInstanceOf[js.Any])
+    def setPermissions(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePermissionType: Self = this.set("permissionType", js.undefined)
+    def setPermissionsNull: Self = StObject.set(x, "permissions", null)
     
     @scala.inline
-    def setPermissionTypeNull: Self = this.set("permissionType", null)
+    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
     @scala.inline
-    def setPermissionsVarargs(value: String*): Self = this.set("permissions", js.Array(value :_*))
+    def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
     
     @scala.inline
-    def setPermissions(value: NullableOption[js.Array[String]]): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    def setResourceApplication(value: NullableOption[String]): Self = StObject.set(x, "resourceApplication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePermissions: Self = this.set("permissions", js.undefined)
+    def setResourceApplicationNull: Self = StObject.set(x, "resourceApplication", null)
     
     @scala.inline
-    def setPermissionsNull: Self = this.set("permissions", null)
-    
-    @scala.inline
-    def setResourceApplication(value: NullableOption[String]): Self = this.set("resourceApplication", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceApplication: Self = this.set("resourceApplication", js.undefined)
-    
-    @scala.inline
-    def setResourceApplicationNull: Self = this.set("resourceApplication", null)
+    def setResourceApplicationUndefined: Self = StObject.set(x, "resourceApplication", js.undefined)
   }
 }

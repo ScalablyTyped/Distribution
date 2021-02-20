@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/cjs/languages/hljs/matlab", JSImport.Namespace)
-@js.native
-object matlabMod extends js.Object {
+object matlabMod {
   
+  @JSImport("react-syntax-highlighter/dist/cjs/languages/hljs/matlab", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

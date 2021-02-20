@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InvocationResponse extends js.Object {
+trait InvocationResponse extends StObject {
   
   /**
     * The version of the function that executed. When you invoke a function with an alias, this indicates which version the alias resolved to.
@@ -41,48 +42,36 @@ object InvocationResponse {
   }
   
   @scala.inline
-  implicit class InvocationResponseOps[Self <: InvocationResponse] (val x: Self) extends AnyVal {
+  implicit class InvocationResponseMutableBuilder[Self <: InvocationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutedVersion(value: Version): Self = StObject.set(x, "ExecutedVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutedVersionUndefined: Self = StObject.set(x, "ExecutedVersion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFunctionError(value: String): Self = StObject.set(x, "FunctionError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutedVersion(value: Version): Self = this.set("ExecutedVersion", value.asInstanceOf[js.Any])
+    def setFunctionErrorUndefined: Self = StObject.set(x, "FunctionError", js.undefined)
     
     @scala.inline
-    def deleteExecutedVersion: Self = this.set("ExecutedVersion", js.undefined)
+    def setLogResult(value: String): Self = StObject.set(x, "LogResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionError(value: String): Self = this.set("FunctionError", value.asInstanceOf[js.Any])
+    def setLogResultUndefined: Self = StObject.set(x, "LogResult", js.undefined)
     
     @scala.inline
-    def deleteFunctionError: Self = this.set("FunctionError", js.undefined)
+    def setPayload(value: _Blob): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogResult(value: String): Self = this.set("LogResult", value.asInstanceOf[js.Any])
+    def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
     
     @scala.inline
-    def deleteLogResult: Self = this.set("LogResult", js.undefined)
+    def setStatusCode(value: Integer): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayload(value: _Blob): Self = this.set("Payload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayload: Self = this.set("Payload", js.undefined)
-    
-    @scala.inline
-    def setStatusCode(value: Integer): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusCode: Self = this.set("StatusCode", js.undefined)
+    def setStatusCodeUndefined: Self = StObject.set(x, "StatusCode", js.undefined)
   }
 }

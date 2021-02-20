@@ -1,12 +1,13 @@
 package typings.monacoEditor.mod.languages
 
 import typings.monacoEditor.mod.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILanguageExtensionPoint extends js.Object {
+trait ILanguageExtensionPoint extends StObject {
   
   var aliases: js.UndefOr[js.Array[String]] = js.native
   
@@ -33,78 +34,66 @@ object ILanguageExtensionPoint {
   }
   
   @scala.inline
-  implicit class ILanguageExtensionPointOps[Self <: ILanguageExtensionPoint] (val x: Self) extends AnyVal {
+  implicit class ILanguageExtensionPointMutableBuilder[Self <: ILanguageExtensionPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setConfiguration(value: Uri): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliasesVarargs(value: String*): Self = this.set("aliases", js.Array(value :_*))
+    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
     @scala.inline
-    def setAliases(value: js.Array[String]): Self = this.set("aliases", value.asInstanceOf[js.Any])
+    def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAliases: Self = this.set("aliases", js.undefined)
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def setConfiguration(value: Uri): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    def setFilenamePatterns(value: js.Array[String]): Self = StObject.set(x, "filenamePatterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionsVarargs(value: String*): Self = this.set("extensions", js.Array(value :_*))
+    def setFilenamePatternsUndefined: Self = StObject.set(x, "filenamePatterns", js.undefined)
     
     @scala.inline
-    def setExtensions(value: js.Array[String]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setFilenamePatternsVarargs(value: String*): Self = StObject.set(x, "filenamePatterns", js.Array(value :_*))
     
     @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    def setFilenames(value: js.Array[String]): Self = StObject.set(x, "filenames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilenamePatternsVarargs(value: String*): Self = this.set("filenamePatterns", js.Array(value :_*))
+    def setFilenamesUndefined: Self = StObject.set(x, "filenames", js.undefined)
     
     @scala.inline
-    def setFilenamePatterns(value: js.Array[String]): Self = this.set("filenamePatterns", value.asInstanceOf[js.Any])
+    def setFilenamesVarargs(value: String*): Self = StObject.set(x, "filenames", js.Array(value :_*))
     
     @scala.inline
-    def deleteFilenamePatterns: Self = this.set("filenamePatterns", js.undefined)
+    def setFirstLine(value: String): Self = StObject.set(x, "firstLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilenamesVarargs(value: String*): Self = this.set("filenames", js.Array(value :_*))
+    def setFirstLineUndefined: Self = StObject.set(x, "firstLine", js.undefined)
     
     @scala.inline
-    def setFilenames(value: js.Array[String]): Self = this.set("filenames", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilenames: Self = this.set("filenames", js.undefined)
+    def setMimetypes(value: js.Array[String]): Self = StObject.set(x, "mimetypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstLine(value: String): Self = this.set("firstLine", value.asInstanceOf[js.Any])
+    def setMimetypesUndefined: Self = StObject.set(x, "mimetypes", js.undefined)
     
     @scala.inline
-    def deleteFirstLine: Self = this.set("firstLine", js.undefined)
-    
-    @scala.inline
-    def setMimetypesVarargs(value: String*): Self = this.set("mimetypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setMimetypes(value: js.Array[String]): Self = this.set("mimetypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMimetypes: Self = this.set("mimetypes", js.undefined)
+    def setMimetypesVarargs(value: String*): Self = StObject.set(x, "mimetypes", js.Array(value :_*))
   }
 }

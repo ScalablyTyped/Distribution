@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoToProperties extends js.Object {
+trait GoToProperties extends StObject {
   
   /**
     * This function provides the ability to override either the [MapView goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#goTo) or [SceneView goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#goTo) methods.
@@ -23,24 +24,12 @@ object GoToProperties {
   }
   
   @scala.inline
-  implicit class GoToPropertiesOps[Self <: GoToProperties] (val x: Self) extends AnyVal {
+  implicit class GoToPropertiesMutableBuilder[Self <: GoToProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGoToOverride(value: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit): Self = StObject.set(x, "goToOverride", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGoToOverride(value: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit): Self = this.set("goToOverride", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteGoToOverride: Self = this.set("goToOverride", js.undefined)
+    def setGoToOverrideUndefined: Self = StObject.set(x, "goToOverride", js.undefined)
   }
 }

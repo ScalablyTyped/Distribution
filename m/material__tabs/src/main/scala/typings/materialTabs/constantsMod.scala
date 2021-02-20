@@ -1,36 +1,77 @@
 package typings.materialTabs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/tabs/tab-bar-scroller/constants", JSImport.Namespace)
-@js.native
-object constantsMod extends js.Object {
+object constantsMod {
   
-  @js.native
-  object cssClasses extends js.Object {
+  object cssClasses {
     
-    var INDICATOR_BACK: String = js.native
+    @JSImport("@material/tabs/tab-bar-scroller/constants", "cssClasses")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var INDICATOR_ENABLED: String = js.native
+    @JSImport("@material/tabs/tab-bar-scroller/constants", "cssClasses.INDICATOR_BACK")
+    @js.native
+    def INDICATOR_BACK: String = js.native
+    @scala.inline
+    def INDICATOR_BACK_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_BACK")(x.asInstanceOf[js.Any])
     
-    var INDICATOR_FORWARD: String = js.native
+    @JSImport("@material/tabs/tab-bar-scroller/constants", "cssClasses.INDICATOR_ENABLED")
+    @js.native
+    def INDICATOR_ENABLED: String = js.native
+    @scala.inline
+    def INDICATOR_ENABLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_ENABLED")(x.asInstanceOf[js.Any])
     
-    var TAB: String = js.native
+    @JSImport("@material/tabs/tab-bar-scroller/constants", "cssClasses.INDICATOR_FORWARD")
+    @js.native
+    def INDICATOR_FORWARD: String = js.native
+    @scala.inline
+    def INDICATOR_FORWARD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_FORWARD")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/tabs/tab-bar-scroller/constants", "cssClasses.TAB")
+    @js.native
+    def TAB: String = js.native
+    @scala.inline
+    def TAB_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object strings extends js.Object {
+  object strings {
     
-    var FRAME_SELECTOR: String = js.native
+    @JSImport("@material/tabs/tab-bar-scroller/constants", "strings")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var INDICATOR_BACK_SELECTOR: String = js.native
+    @JSImport("@material/tabs/tab-bar-scroller/constants", "strings.FRAME_SELECTOR")
+    @js.native
+    def FRAME_SELECTOR: String = js.native
+    @scala.inline
+    def FRAME_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAME_SELECTOR")(x.asInstanceOf[js.Any])
     
-    var INDICATOR_FORWARD_SELECTOR: String = js.native
+    @JSImport("@material/tabs/tab-bar-scroller/constants", "strings.INDICATOR_BACK_SELECTOR")
+    @js.native
+    def INDICATOR_BACK_SELECTOR: String = js.native
+    @scala.inline
+    def INDICATOR_BACK_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_BACK_SELECTOR")(x.asInstanceOf[js.Any])
     
-    var TABS_SELECTOR: String = js.native
+    @JSImport("@material/tabs/tab-bar-scroller/constants", "strings.INDICATOR_FORWARD_SELECTOR")
+    @js.native
+    def INDICATOR_FORWARD_SELECTOR: String = js.native
+    @scala.inline
+    def INDICATOR_FORWARD_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_FORWARD_SELECTOR")(x.asInstanceOf[js.Any])
     
-    var TAB_SELECTOR: String = js.native
+    @JSImport("@material/tabs/tab-bar-scroller/constants", "strings.TABS_SELECTOR")
+    @js.native
+    def TABS_SELECTOR: String = js.native
+    @scala.inline
+    def TABS_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TABS_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/tabs/tab-bar-scroller/constants", "strings.TAB_SELECTOR")
+    @js.native
+    def TAB_SELECTOR: String = js.native
+    @scala.inline
+    def TAB_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB_SELECTOR")(x.asInstanceOf[js.Any])
   }
 }

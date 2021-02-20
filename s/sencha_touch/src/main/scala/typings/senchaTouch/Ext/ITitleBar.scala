@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,96 +78,84 @@ object ITitleBar {
   }
   
   @scala.inline
-  implicit class ITitleBarOps[Self <: ITitleBar] (val x: Self) extends AnyVal {
+  implicit class ITitleBarMutableBuilder[Self <: ITitleBar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCls(value: () => java.lang.String): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMaxButtonWidth(value: () => java.lang.String): Self = StObject.set(x, "getMaxButtonWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCls(value: () => java.lang.String): Self = this.set("getCls", js.Any.fromFunction0(value))
+    def setGetMaxButtonWidthUndefined: Self = StObject.set(x, "getMaxButtonWidth", js.undefined)
     
     @scala.inline
-    def deleteGetCls: Self = this.set("getCls", js.undefined)
+    def setGetTitle(value: () => java.lang.String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxButtonWidth(value: () => java.lang.String): Self = this.set("getMaxButtonWidth", js.Any.fromFunction0(value))
+    def setGetTitleAlign(value: () => java.lang.String): Self = StObject.set(x, "getTitleAlign", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetMaxButtonWidth: Self = this.set("getMaxButtonWidth", js.undefined)
+    def setGetTitleAlignUndefined: Self = StObject.set(x, "getTitleAlign", js.undefined)
     
     @scala.inline
-    def setGetTitle(value: () => java.lang.String): Self = this.set("getTitle", js.Any.fromFunction0(value))
+    def setGetTitleUndefined: Self = StObject.set(x, "getTitle", js.undefined)
     
     @scala.inline
-    def deleteGetTitle: Self = this.set("getTitle", js.undefined)
+    def setMaxButtonWidth(value: java.lang.String): Self = StObject.set(x, "maxButtonWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTitleAlign(value: () => java.lang.String): Self = this.set("getTitleAlign", js.Any.fromFunction0(value))
+    def setMaxButtonWidthUndefined: Self = StObject.set(x, "maxButtonWidth", js.undefined)
     
     @scala.inline
-    def deleteGetTitleAlign: Self = this.set("getTitleAlign", js.undefined)
+    def setMinHeight(value: java.lang.String): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxButtonWidth(value: java.lang.String): Self = this.set("maxButtonWidth", value.asInstanceOf[js.Any])
+    def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
     @scala.inline
-    def deleteMaxButtonWidth: Self = this.set("maxButtonWidth", js.undefined)
+    def setSetCls(value: /* cls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setCls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinHeight(value: java.lang.String): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    def setSetClsUndefined: Self = StObject.set(x, "setCls", js.undefined)
     
     @scala.inline
-    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    def setSetMaxButtonWidth(value: /* maxButtonWidth */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setMaxButtonWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetCls(value: /* cls */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setCls", js.Any.fromFunction1(value))
+    def setSetMaxButtonWidthUndefined: Self = StObject.set(x, "setMaxButtonWidth", js.undefined)
     
     @scala.inline
-    def deleteSetCls: Self = this.set("setCls", js.undefined)
+    def setSetMinHeight(value: /* minHeight */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setMinHeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMaxButtonWidth(value: /* maxButtonWidth */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setMaxButtonWidth", js.Any.fromFunction1(value))
+    def setSetMinHeightUndefined: Self = StObject.set(x, "setMinHeight", js.undefined)
     
     @scala.inline
-    def deleteSetMaxButtonWidth: Self = this.set("setMaxButtonWidth", js.undefined)
+    def setSetTitle(value: /* title */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMinHeight(value: /* minHeight */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setMinHeight", js.Any.fromFunction1(value))
+    def setSetTitleAlign(value: /* titleAlign */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setTitleAlign", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetMinHeight: Self = this.set("setMinHeight", js.undefined)
+    def setSetTitleAlignUndefined: Self = StObject.set(x, "setTitleAlign", js.undefined)
     
     @scala.inline
-    def setSetTitle(value: /* title */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setTitle", js.Any.fromFunction1(value))
+    def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
     
     @scala.inline
-    def deleteSetTitle: Self = this.set("setTitle", js.undefined)
+    def setTitle(value: java.lang.String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetTitleAlign(value: /* titleAlign */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setTitleAlign", js.Any.fromFunction1(value))
+    def setTitleAlign(value: java.lang.String): Self = StObject.set(x, "titleAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetTitleAlign: Self = this.set("setTitleAlign", js.undefined)
+    def setTitleAlignUndefined: Self = StObject.set(x, "titleAlign", js.undefined)
     
     @scala.inline
-    def setTitle(value: java.lang.String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setTitleAlign(value: java.lang.String): Self = this.set("titleAlign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleAlign: Self = this.set("titleAlign", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

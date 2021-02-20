@@ -1,11 +1,12 @@
 package typings.awsSdk.shieldMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubscriptionLimits extends js.Object {
+trait SubscriptionLimits extends StObject {
   
   /**
     * Limits settings on protection groups for your subscription. 
@@ -26,24 +27,12 @@ object SubscriptionLimits {
   }
   
   @scala.inline
-  implicit class SubscriptionLimitsOps[Self <: SubscriptionLimits] (val x: Self) extends AnyVal {
+  implicit class SubscriptionLimitsMutableBuilder[Self <: SubscriptionLimits] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProtectionGroupLimits(value: ProtectionGroupLimits): Self = StObject.set(x, "ProtectionGroupLimits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProtectionGroupLimits(value: ProtectionGroupLimits): Self = this.set("ProtectionGroupLimits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProtectionLimits(value: ProtectionLimits): Self = this.set("ProtectionLimits", value.asInstanceOf[js.Any])
+    def setProtectionLimits(value: ProtectionLimits): Self = StObject.set(x, "ProtectionLimits", value.asInstanceOf[js.Any])
   }
 }

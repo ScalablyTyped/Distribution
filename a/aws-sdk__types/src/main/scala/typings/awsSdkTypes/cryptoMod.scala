@@ -9,16 +9,15 @@ import typings.awsSdkTypes.awsSdkTypesStrings.utf8
 import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/types/dist/cjs/crypto", JSImport.Namespace)
-@js.native
-object cryptoMod extends js.Object {
+object cryptoMod {
   
   @js.native
-  trait Hash extends js.Object {
+  trait Hash extends StObject {
     
     /**
       * Finalizes the hash and provides a promise that will be fulfilled with the

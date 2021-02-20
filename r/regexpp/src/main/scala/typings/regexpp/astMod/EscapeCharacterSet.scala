@@ -3,6 +3,7 @@ package typings.regexpp.astMod
 import typings.regexpp.regexppStrings.digit
 import typings.regexpp.regexppStrings.space
 import typings.regexpp.regexppStrings.word
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,30 +42,18 @@ object EscapeCharacterSet {
   }
   
   @scala.inline
-  implicit class EscapeCharacterSetOps[Self <: EscapeCharacterSet] (val x: Self) extends AnyVal {
+  implicit class EscapeCharacterSetMutableBuilder[Self <: EscapeCharacterSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: digit | space | word): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNegate(value: Boolean): Self = StObject.set(x, "negate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParent(value: Alternative | Quantifier | CharacterClass): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: digit | space | word): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNegate(value: Boolean): Self = this.set("negate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: Alternative | Quantifier | CharacterClass): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.regexpp.regexppStrings.CharacterSet): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: typings.regexpp.regexppStrings.CharacterSet): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,11 @@
 package typings.reactNativeFirebase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-firebase/firestore", JSImport.Namespace)
-@js.native
-object firestoreMod extends js.Object {
+object firestoreMod {
   
   type CollectionReference = typings.reactNativeFirebase.mod.RNFirebase.firestore.CollectionReference
   

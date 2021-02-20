@@ -1,14 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]
-  extends AdWordsBuilder[ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]]
-     with hasFinalUrlBuilder[ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]]
-     with hasTrackingTemplateBuilder[ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]] {
+trait ResponsiveDisplayAdBuilder[ResponsiveDisplayAd] extends AdBuilder[ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]] {
   
   def withBusinessName(businessName: String): ResponsiveDisplayAdBuilder[ResponsiveDisplayAd] = js.native
   
@@ -43,36 +41,24 @@ object ResponsiveDisplayAdBuilder {
   }
   
   @scala.inline
-  implicit class ResponsiveDisplayAdBuilderOps[Self <: ResponsiveDisplayAdBuilder[_], ResponsiveDisplayAd] (val x: Self with ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]) extends AnyVal {
+  implicit class ResponsiveDisplayAdBuilderMutableBuilder[Self <: ResponsiveDisplayAdBuilder[_], ResponsiveDisplayAd] (val x: Self with ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWithBusinessName(value: String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "withBusinessName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWithDescription(value: String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "withDescription", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWithLogoImage(value: Media => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "withLogoImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithBusinessName(value: String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = this.set("withBusinessName", js.Any.fromFunction1(value))
+    def setWithLongHeadline(value: String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "withLongHeadline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithDescription(value: String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = this.set("withDescription", js.Any.fromFunction1(value))
+    def setWithMarketingImage(value: Media => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "withMarketingImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithLogoImage(value: Media => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = this.set("withLogoImage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithLongHeadline(value: String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = this.set("withLongHeadline", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithMarketingImage(value: Media => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = this.set("withMarketingImage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithShortHeadline(value: String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = this.set("withShortHeadline", js.Any.fromFunction1(value))
+    def setWithShortHeadline(value: String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "withShortHeadline", js.Any.fromFunction1(value))
   }
 }

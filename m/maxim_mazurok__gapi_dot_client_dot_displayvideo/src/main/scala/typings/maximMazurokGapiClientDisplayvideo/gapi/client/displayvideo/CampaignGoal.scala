@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CampaignGoal extends js.Object {
+trait CampaignGoal extends StObject {
   
   /** Required. The type of the campaign goal. */
   var campaignGoalType: js.UndefOr[String] = js.native
@@ -25,30 +26,18 @@ object CampaignGoal {
   }
   
   @scala.inline
-  implicit class CampaignGoalOps[Self <: CampaignGoal] (val x: Self) extends AnyVal {
+  implicit class CampaignGoalMutableBuilder[Self <: CampaignGoal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCampaignGoalType(value: String): Self = StObject.set(x, "campaignGoalType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCampaignGoalTypeUndefined: Self = StObject.set(x, "campaignGoalType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPerformanceGoal(value: PerformanceGoal): Self = StObject.set(x, "performanceGoal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaignGoalType(value: String): Self = this.set("campaignGoalType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCampaignGoalType: Self = this.set("campaignGoalType", js.undefined)
-    
-    @scala.inline
-    def setPerformanceGoal(value: PerformanceGoal): Self = this.set("performanceGoal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerformanceGoal: Self = this.set("performanceGoal", js.undefined)
+    def setPerformanceGoalUndefined: Self = StObject.set(x, "performanceGoal", js.undefined)
   }
 }

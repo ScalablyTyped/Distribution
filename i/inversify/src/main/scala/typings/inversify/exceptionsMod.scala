@@ -1,13 +1,14 @@
 package typings.inversify
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("inversify/dts/utils/exceptions", JSImport.Namespace)
-@js.native
-object exceptionsMod extends js.Object {
+object exceptionsMod {
   
+  @JSImport("inversify/dts/utils/exceptions", "isStackOverflowExeption")
+  @js.native
   def isStackOverflowExeption(error: Error): Boolean = js.native
 }

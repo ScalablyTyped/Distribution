@@ -1,11 +1,12 @@
 package typings.awsSdk.datapipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskObject extends js.Object {
+trait TaskObject extends StObject {
   
   /**
     * The ID of the pipeline task attempt object. AWS Data Pipeline uses this value to track how many times a task is attempted.
@@ -36,42 +37,30 @@ object TaskObject {
   }
   
   @scala.inline
-  implicit class TaskObjectOps[Self <: TaskObject] (val x: Self) extends AnyVal {
+  implicit class TaskObjectMutableBuilder[Self <: TaskObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttemptId(value: id): Self = StObject.set(x, "attemptId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttemptIdUndefined: Self = StObject.set(x, "attemptId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjects(value: PipelineObjectMap): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttemptId(value: id): Self = this.set("attemptId", value.asInstanceOf[js.Any])
+    def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
     
     @scala.inline
-    def deleteAttemptId: Self = this.set("attemptId", js.undefined)
+    def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjects(value: PipelineObjectMap): Self = this.set("objects", value.asInstanceOf[js.Any])
+    def setPipelineIdUndefined: Self = StObject.set(x, "pipelineId", js.undefined)
     
     @scala.inline
-    def deleteObjects: Self = this.set("objects", js.undefined)
+    def setTaskId(value: taskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPipelineId(value: id): Self = this.set("pipelineId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePipelineId: Self = this.set("pipelineId", js.undefined)
-    
-    @scala.inline
-    def setTaskId(value: taskId): Self = this.set("taskId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskId: Self = this.set("taskId", js.undefined)
+    def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
   }
 }

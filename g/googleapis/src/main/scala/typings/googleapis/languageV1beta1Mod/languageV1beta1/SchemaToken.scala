@@ -1,5 +1,6 @@
 package typings.googleapis.languageV1beta1Mod.languageV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the smallest syntactic building block of the text.
   */
 @js.native
-trait SchemaToken extends js.Object {
+trait SchemaToken extends StObject {
   
   /**
     * Dependency tree parse for this token.
@@ -40,42 +41,30 @@ object SchemaToken {
   }
   
   @scala.inline
-  implicit class SchemaTokenOps[Self <: SchemaToken] (val x: Self) extends AnyVal {
+  implicit class SchemaTokenMutableBuilder[Self <: SchemaToken] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDependencyEdge(value: SchemaDependencyEdge): Self = StObject.set(x, "dependencyEdge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDependencyEdgeUndefined: Self = StObject.set(x, "dependencyEdge", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLemma(value: String): Self = StObject.set(x, "lemma", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependencyEdge(value: SchemaDependencyEdge): Self = this.set("dependencyEdge", value.asInstanceOf[js.Any])
+    def setLemmaUndefined: Self = StObject.set(x, "lemma", js.undefined)
     
     @scala.inline
-    def deleteDependencyEdge: Self = this.set("dependencyEdge", js.undefined)
+    def setPartOfSpeech(value: SchemaPartOfSpeech): Self = StObject.set(x, "partOfSpeech", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLemma(value: String): Self = this.set("lemma", value.asInstanceOf[js.Any])
+    def setPartOfSpeechUndefined: Self = StObject.set(x, "partOfSpeech", js.undefined)
     
     @scala.inline
-    def deleteLemma: Self = this.set("lemma", js.undefined)
+    def setText(value: SchemaTextSpan): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartOfSpeech(value: SchemaPartOfSpeech): Self = this.set("partOfSpeech", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartOfSpeech: Self = this.set("partOfSpeech", js.undefined)
-    
-    @scala.inline
-    def setText(value: SchemaTextSpan): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

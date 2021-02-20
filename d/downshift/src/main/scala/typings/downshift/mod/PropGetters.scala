@@ -1,11 +1,12 @@
 package typings.downshift.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PropGetters[Item] extends js.Object {
+trait PropGetters[Item] extends StObject {
   
   def getInputProps[T](): T with GetInputPropsOptions = js.native
   def getInputProps[T](options: T): T with GetInputPropsOptions = js.native

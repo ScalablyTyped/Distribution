@@ -1,16 +1,17 @@
 package typings.freedom.freedom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Specification for a channel.
 @js.native
-trait ChannelSpecifier extends js.Object {
+trait ChannelSpecifier extends StObject {
   
   var channel: Channel = js.native
   
-    // How to communicate over this channel.
+  // How to communicate over this channel.
   // A freedom channel endpoint identifier. Can be passed over a freedom
   // message-passing boundary.  It is used to create a channel to the freedom
   // module that called createChannel and created this ChannelSpecifier.
@@ -25,24 +26,12 @@ object ChannelSpecifier {
   }
   
   @scala.inline
-  implicit class ChannelSpecifierOps[Self <: ChannelSpecifier] (val x: Self) extends AnyVal {
+  implicit class ChannelSpecifierMutableBuilder[Self <: ChannelSpecifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChannel(value: Channel): Self = this.set("channel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdentifier(value: String): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
   }
 }

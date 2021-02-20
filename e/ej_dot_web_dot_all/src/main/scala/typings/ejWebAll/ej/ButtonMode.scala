@@ -1,14 +1,15 @@
 package typings.ejWebAll.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ButtonMode extends js.Object
+sealed trait ButtonMode extends StObject
 @JSGlobal("ej.ButtonMode")
 @js.native
-object ButtonMode extends js.Object {
+object ButtonMode extends StObject {
   
   //Displays the button in Dropdown mode
   @js.native

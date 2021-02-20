@@ -1,11 +1,12 @@
 package typings.awsSdk.codegurureviewerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListRecommendationFeedbackResponse extends js.Object {
+trait ListRecommendationFeedbackResponse extends StObject {
   
   /**
     *  If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. 
@@ -26,33 +27,21 @@ object ListRecommendationFeedbackResponse {
   }
   
   @scala.inline
-  implicit class ListRecommendationFeedbackResponseOps[Self <: ListRecommendationFeedbackResponse] (val x: Self) extends AnyVal {
+  implicit class ListRecommendationFeedbackResponseMutableBuilder[Self <: ListRecommendationFeedbackResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecommendationFeedbackSummaries(value: RecommendationFeedbackSummaries): Self = StObject.set(x, "RecommendationFeedbackSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setRecommendationFeedbackSummariesUndefined: Self = StObject.set(x, "RecommendationFeedbackSummaries", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setRecommendationFeedbackSummariesVarargs(value: RecommendationFeedbackSummary*): Self = this.set("RecommendationFeedbackSummaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setRecommendationFeedbackSummaries(value: RecommendationFeedbackSummaries): Self = this.set("RecommendationFeedbackSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecommendationFeedbackSummaries: Self = this.set("RecommendationFeedbackSummaries", js.undefined)
+    def setRecommendationFeedbackSummariesVarargs(value: RecommendationFeedbackSummary*): Self = StObject.set(x, "RecommendationFeedbackSummaries", js.Array(value :_*))
   }
 }

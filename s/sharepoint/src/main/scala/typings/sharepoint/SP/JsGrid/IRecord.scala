@@ -1,12 +1,13 @@
 package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IRecord extends js.Object {
+trait IRecord extends StObject {
   
   /** Update the specified field with the specified value */
   def AddFieldValue(fieldKey: String, value: js.Any): Unit = js.native
@@ -61,51 +62,39 @@ object IRecord {
   }
   
   @scala.inline
-  implicit class IRecordOps[Self <: IRecord] (val x: Self) extends AnyVal {
+  implicit class IRecordMutableBuilder[Self <: IRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddFieldValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "AddFieldValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBIsNewRow(value: Boolean): Self = StObject.set(x, "bIsNewRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDataValue(value: String => js.Any): Self = StObject.set(x, "GetDataValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddFieldValue(value: (String, js.Any) => Unit): Self = this.set("AddFieldValue", js.Any.fromFunction2(value))
+    def setGetLocalizedValue(value: String => String): Self = StObject.set(x, "GetLocalizedValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDataValue(value: String => js.Any): Self = this.set("GetDataValue", js.Any.fromFunction1(value))
+    def setGetProp(value: String => IPropertyBase): Self = StObject.set(x, "GetProp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLocalizedValue(value: String => String): Self = this.set("GetLocalizedValue", js.Any.fromFunction1(value))
+    def setHasDataValue(value: String => Boolean): Self = StObject.set(x, "HasDataValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetProp(value: String => IPropertyBase): Self = this.set("GetProp", js.Any.fromFunction1(value))
+    def setHasLocalizedValue(value: String => Boolean): Self = StObject.set(x, "HasLocalizedValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHasDataValue(value: String => Boolean): Self = this.set("HasDataValue", js.Any.fromFunction1(value))
+    def setKey(value: () => Double): Self = StObject.set(x, "key", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasLocalizedValue(value: String => Boolean): Self = this.set("HasLocalizedValue", js.Any.fromFunction1(value))
+    def setProperties(value: StringDictionary[IPropertyBase]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveFieldValue(value: String => Unit): Self = this.set("RemoveFieldValue", js.Any.fromFunction1(value))
+    def setRemoveFieldValue(value: String => Unit): Self = StObject.set(x, "RemoveFieldValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetProp(value: (String, IPropertyBase) => Unit): Self = this.set("SetProp", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setBIsNewRow(value: Boolean): Self = this.set("bIsNewRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKey(value: () => Double): Self = this.set("key", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setProperties(value: StringDictionary[IPropertyBase]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setSetProp(value: (String, IPropertyBase) => Unit): Self = StObject.set(x, "SetProp", js.Any.fromFunction2(value))
   }
 }

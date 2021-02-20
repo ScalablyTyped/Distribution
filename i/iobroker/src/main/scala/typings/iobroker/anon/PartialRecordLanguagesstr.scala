@@ -1,12 +1,13 @@
 package typings.iobroker.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Record<iobroker.iobroker/objects.<global>.ioBroker.Languages, string | std.Array<string>>> */
 @js.native
-trait PartialRecordLanguagesstr extends js.Object {
+trait PartialRecordLanguagesstr extends StObject {
   
   var de: js.UndefOr[String | js.Array[String]] = js.native
   
@@ -37,108 +38,96 @@ object PartialRecordLanguagesstr {
   }
   
   @scala.inline
-  implicit class PartialRecordLanguagesstrOps[Self <: PartialRecordLanguagesstr] (val x: Self) extends AnyVal {
+  implicit class PartialRecordLanguagesstrMutableBuilder[Self <: PartialRecordLanguagesstr] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDe(value: String | js.Array[String]): Self = StObject.set(x, "de", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeUndefined: Self = StObject.set(x, "de", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeVarargs(value: String*): Self = StObject.set(x, "de", js.Array(value :_*))
     
     @scala.inline
-    def setDeVarargs(value: String*): Self = this.set("de", js.Array(value :_*))
+    def setEn(value: String | js.Array[String]): Self = StObject.set(x, "en", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDe(value: String | js.Array[String]): Self = this.set("de", value.asInstanceOf[js.Any])
+    def setEnUndefined: Self = StObject.set(x, "en", js.undefined)
     
     @scala.inline
-    def deleteDe: Self = this.set("de", js.undefined)
+    def setEnVarargs(value: String*): Self = StObject.set(x, "en", js.Array(value :_*))
     
     @scala.inline
-    def setEnVarargs(value: String*): Self = this.set("en", js.Array(value :_*))
+    def setEs(value: String | js.Array[String]): Self = StObject.set(x, "es", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEn(value: String | js.Array[String]): Self = this.set("en", value.asInstanceOf[js.Any])
+    def setEsUndefined: Self = StObject.set(x, "es", js.undefined)
     
     @scala.inline
-    def deleteEn: Self = this.set("en", js.undefined)
+    def setEsVarargs(value: String*): Self = StObject.set(x, "es", js.Array(value :_*))
     
     @scala.inline
-    def setEsVarargs(value: String*): Self = this.set("es", js.Array(value :_*))
+    def setFr(value: String | js.Array[String]): Self = StObject.set(x, "fr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEs(value: String | js.Array[String]): Self = this.set("es", value.asInstanceOf[js.Any])
+    def setFrUndefined: Self = StObject.set(x, "fr", js.undefined)
     
     @scala.inline
-    def deleteEs: Self = this.set("es", js.undefined)
+    def setFrVarargs(value: String*): Self = StObject.set(x, "fr", js.Array(value :_*))
     
     @scala.inline
-    def setFrVarargs(value: String*): Self = this.set("fr", js.Array(value :_*))
+    def setIt(value: String | js.Array[String]): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFr(value: String | js.Array[String]): Self = this.set("fr", value.asInstanceOf[js.Any])
+    def setItUndefined: Self = StObject.set(x, "it", js.undefined)
     
     @scala.inline
-    def deleteFr: Self = this.set("fr", js.undefined)
+    def setItVarargs(value: String*): Self = StObject.set(x, "it", js.Array(value :_*))
     
     @scala.inline
-    def setItVarargs(value: String*): Self = this.set("it", js.Array(value :_*))
+    def setNl(value: String | js.Array[String]): Self = StObject.set(x, "nl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIt(value: String | js.Array[String]): Self = this.set("it", value.asInstanceOf[js.Any])
+    def setNlUndefined: Self = StObject.set(x, "nl", js.undefined)
     
     @scala.inline
-    def deleteIt: Self = this.set("it", js.undefined)
+    def setNlVarargs(value: String*): Self = StObject.set(x, "nl", js.Array(value :_*))
     
     @scala.inline
-    def setNlVarargs(value: String*): Self = this.set("nl", js.Array(value :_*))
+    def setPl(value: String | js.Array[String]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNl(value: String | js.Array[String]): Self = this.set("nl", value.asInstanceOf[js.Any])
+    def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
     
     @scala.inline
-    def deleteNl: Self = this.set("nl", js.undefined)
+    def setPlVarargs(value: String*): Self = StObject.set(x, "pl", js.Array(value :_*))
     
     @scala.inline
-    def setPlVarargs(value: String*): Self = this.set("pl", js.Array(value :_*))
+    def setPt(value: String | js.Array[String]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPl(value: String | js.Array[String]): Self = this.set("pl", value.asInstanceOf[js.Any])
+    def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
     
     @scala.inline
-    def deletePl: Self = this.set("pl", js.undefined)
+    def setPtVarargs(value: String*): Self = StObject.set(x, "pt", js.Array(value :_*))
     
     @scala.inline
-    def setPtVarargs(value: String*): Self = this.set("pt", js.Array(value :_*))
+    def setRu(value: String | js.Array[String]): Self = StObject.set(x, "ru", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPt(value: String | js.Array[String]): Self = this.set("pt", value.asInstanceOf[js.Any])
+    def setRuUndefined: Self = StObject.set(x, "ru", js.undefined)
     
     @scala.inline
-    def deletePt: Self = this.set("pt", js.undefined)
+    def setRuVarargs(value: String*): Self = StObject.set(x, "ru", js.Array(value :_*))
     
     @scala.inline
-    def setRuVarargs(value: String*): Self = this.set("ru", js.Array(value :_*))
+    def `setZh-cn`(value: String | js.Array[String]): Self = StObject.set(x, "zh-cn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRu(value: String | js.Array[String]): Self = this.set("ru", value.asInstanceOf[js.Any])
+    def `setZh-cnUndefined`: Self = StObject.set(x, "zh-cn", js.undefined)
     
     @scala.inline
-    def deleteRu: Self = this.set("ru", js.undefined)
-    
-    @scala.inline
-    def `setZh-cnVarargs`(value: String*): Self = this.set("zh-cn", js.Array(value :_*))
-    
-    @scala.inline
-    def `setZh-cn`(value: String | js.Array[String]): Self = this.set("zh-cn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteZh-cn`: Self = this.set("zh-cn", js.undefined)
+    def `setZh-cnVarargs`(value: String*): Self = StObject.set(x, "zh-cn", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.openui5.sap.ui.model.analytics.odata4analytics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EntitySet extends js.Object {
+trait EntitySet extends StObject {
   
   /**
     * Get entity type used for this entity set
@@ -48,30 +49,18 @@ object EntitySet {
   }
   
   @scala.inline
-  implicit class EntitySetOps[Self <: EntitySet] (val x: Self) extends AnyVal {
+  implicit class EntitySetMutableBuilder[Self <: EntitySet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetEntityType(value: () => js.Any): Self = StObject.set(x, "getEntityType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetQName(value: () => String): Self = StObject.set(x, "getQName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSetDescription(value: () => js.Any): Self = StObject.set(x, "getSetDescription", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEntityType(value: () => js.Any): Self = this.set("getEntityType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetQName(value: () => String): Self = this.set("getQName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSetDescription(value: () => js.Any): Self = this.set("getSetDescription", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetUpdatablePropertyNameSet(value: () => js.Any): Self = this.set("getUpdatablePropertyNameSet", js.Any.fromFunction0(value))
+    def setGetUpdatablePropertyNameSet(value: () => js.Any): Self = StObject.set(x, "getUpdatablePropertyNameSet", js.Any.fromFunction0(value))
   }
 }

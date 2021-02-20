@@ -1,11 +1,12 @@
 package typings.dymoLabelFramework.dymo.label.framework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrinterInfo extends js.Object {
+trait PrinterInfo extends StObject {
   
   /** Indicates whether the Auto-Cut feature is supported by the printer or not. Note: The property is only defined if printerType is "TapePrinter". */
   var isAutoCutSupported: Boolean = js.native
@@ -45,39 +46,27 @@ object PrinterInfo {
   }
   
   @scala.inline
-  implicit class PrinterInfoOps[Self <: PrinterInfo] (val x: Self) extends AnyVal {
+  implicit class PrinterInfoMutableBuilder[Self <: PrinterInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsAutoCutSupported(value: Boolean): Self = StObject.set(x, "isAutoCutSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsLocal(value: Boolean): Self = StObject.set(x, "isLocal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAutoCutSupported(value: Boolean): Self = this.set("isAutoCutSupported", value.asInstanceOf[js.Any])
+    def setIsTwinTurbo(value: Boolean): Self = StObject.set(x, "isTwinTurbo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsConnected(value: Boolean): Self = this.set("isConnected", value.asInstanceOf[js.Any])
+    def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLocal(value: Boolean): Self = this.set("isLocal", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTwinTurbo(value: Boolean): Self = this.set("isTwinTurbo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModelName(value: String): Self = this.set("modelName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrinterType(value: String): Self = this.set("printerType", value.asInstanceOf[js.Any])
+    def setPrinterType(value: String): Self = StObject.set(x, "printerType", value.asInstanceOf[js.Any])
   }
 }

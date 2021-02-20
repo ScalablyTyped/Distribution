@@ -1,5 +1,6 @@
 package typings.entriaRelayExperimental
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("@entria/relay-experimental", JSImport.Namespace)
 @js.native
-object entriaRelayExperimentalRequire extends js.Object
+object entriaRelayExperimentalRequire extends StObject

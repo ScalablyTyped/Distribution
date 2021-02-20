@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VmCreationConfig extends js.Object {
+trait VmCreationConfig extends StObject {
   
   /** The subnet name the vm needs to be created in. */
   var subnet: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object VmCreationConfig {
   }
   
   @scala.inline
-  implicit class VmCreationConfigOps[Self <: VmCreationConfig] (val x: Self) extends AnyVal {
+  implicit class VmCreationConfigMutableBuilder[Self <: VmCreationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSubnet(value: String): Self = StObject.set(x, "subnet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubnetUndefined: Self = StObject.set(x, "subnet", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVmMachineType(value: String): Self = StObject.set(x, "vmMachineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnet(value: String): Self = this.set("subnet", value.asInstanceOf[js.Any])
+    def setVmMachineTypeUndefined: Self = StObject.set(x, "vmMachineType", js.undefined)
     
     @scala.inline
-    def deleteSubnet: Self = this.set("subnet", js.undefined)
+    def setVmZone(value: String): Self = StObject.set(x, "vmZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVmMachineType(value: String): Self = this.set("vmMachineType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVmMachineType: Self = this.set("vmMachineType", js.undefined)
-    
-    @scala.inline
-    def setVmZone(value: String): Self = this.set("vmZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVmZone: Self = this.set("vmZone", js.undefined)
+    def setVmZoneUndefined: Self = StObject.set(x, "vmZone", js.undefined)
   }
 }

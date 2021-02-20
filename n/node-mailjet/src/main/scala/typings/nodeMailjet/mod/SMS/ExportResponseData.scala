@@ -1,11 +1,12 @@
 package typings.nodeMailjet.mod.SMS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportResponseData extends js.Object {
+trait ExportResponseData extends StObject {
   
   val CreationTS: js.UndefOr[Double] = js.native
   
@@ -30,54 +31,42 @@ object ExportResponseData {
   }
   
   @scala.inline
-  implicit class ExportResponseDataOps[Self <: ExportResponseData] (val x: Self) extends AnyVal {
+  implicit class ExportResponseDataMutableBuilder[Self <: ExportResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTS(value: Double): Self = StObject.set(x, "CreationTS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTSUndefined: Self = StObject.set(x, "CreationTS", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpirationTS(value: Double): Self = StObject.set(x, "ExpirationTS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setID(value: Double): Self = this.set("ID", value.asInstanceOf[js.Any])
+    def setExpirationTSUndefined: Self = StObject.set(x, "ExpirationTS", js.undefined)
     
     @scala.inline
-    def setStatus(value: ResponseStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setFromTs(value: Double): Self = StObject.set(x, "FromTs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTS(value: Double): Self = this.set("CreationTS", value.asInstanceOf[js.Any])
+    def setFromTsUndefined: Self = StObject.set(x, "FromTs", js.undefined)
     
     @scala.inline
-    def deleteCreationTS: Self = this.set("CreationTS", js.undefined)
+    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationTS(value: Double): Self = this.set("ExpirationTS", value.asInstanceOf[js.Any])
+    def setStatus(value: ResponseStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpirationTS: Self = this.set("ExpirationTS", js.undefined)
+    def setToTs(value: Double): Self = StObject.set(x, "ToTs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromTs(value: Double): Self = this.set("FromTs", value.asInstanceOf[js.Any])
+    def setToTsUndefined: Self = StObject.set(x, "ToTs", js.undefined)
     
     @scala.inline
-    def deleteFromTs: Self = this.set("FromTs", js.undefined)
+    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToTs(value: Double): Self = this.set("ToTs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToTs: Self = this.set("ToTs", js.undefined)
-    
-    @scala.inline
-    def setURL(value: String): Self = this.set("URL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteURL: Self = this.set("URL", js.undefined)
+    def setURLUndefined: Self = StObject.set(x, "URL", js.undefined)
   }
 }

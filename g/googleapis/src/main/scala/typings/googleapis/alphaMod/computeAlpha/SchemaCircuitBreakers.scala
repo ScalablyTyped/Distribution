@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Settings controlling the volume of connections to a backend service.
   */
 @js.native
-trait SchemaCircuitBreakers extends js.Object {
+trait SchemaCircuitBreakers extends StObject {
   
   /**
     * The timeout for new network connections to hosts.
@@ -56,54 +57,42 @@ object SchemaCircuitBreakers {
   }
   
   @scala.inline
-  implicit class SchemaCircuitBreakersOps[Self <: SchemaCircuitBreakers] (val x: Self) extends AnyVal {
+  implicit class SchemaCircuitBreakersMutableBuilder[Self <: SchemaCircuitBreakers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectTimeout(value: SchemaDuration): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectTimeout(value: SchemaDuration): Self = this.set("connectTimeout", value.asInstanceOf[js.Any])
+    def setMaxConnectionsUndefined: Self = StObject.set(x, "maxConnections", js.undefined)
     
     @scala.inline
-    def deleteConnectTimeout: Self = this.set("connectTimeout", js.undefined)
+    def setMaxPendingRequests(value: Double): Self = StObject.set(x, "maxPendingRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxConnections(value: Double): Self = this.set("maxConnections", value.asInstanceOf[js.Any])
+    def setMaxPendingRequestsUndefined: Self = StObject.set(x, "maxPendingRequests", js.undefined)
     
     @scala.inline
-    def deleteMaxConnections: Self = this.set("maxConnections", js.undefined)
+    def setMaxRequests(value: Double): Self = StObject.set(x, "maxRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPendingRequests(value: Double): Self = this.set("maxPendingRequests", value.asInstanceOf[js.Any])
+    def setMaxRequestsPerConnection(value: Double): Self = StObject.set(x, "maxRequestsPerConnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxPendingRequests: Self = this.set("maxPendingRequests", js.undefined)
+    def setMaxRequestsPerConnectionUndefined: Self = StObject.set(x, "maxRequestsPerConnection", js.undefined)
     
     @scala.inline
-    def setMaxRequests(value: Double): Self = this.set("maxRequests", value.asInstanceOf[js.Any])
+    def setMaxRequestsUndefined: Self = StObject.set(x, "maxRequests", js.undefined)
     
     @scala.inline
-    def deleteMaxRequests: Self = this.set("maxRequests", js.undefined)
+    def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRequestsPerConnection(value: Double): Self = this.set("maxRequestsPerConnection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxRequestsPerConnection: Self = this.set("maxRequestsPerConnection", js.undefined)
-    
-    @scala.inline
-    def setMaxRetries(value: Double): Self = this.set("maxRetries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxRetries: Self = this.set("maxRetries", js.undefined)
+    def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
   }
 }

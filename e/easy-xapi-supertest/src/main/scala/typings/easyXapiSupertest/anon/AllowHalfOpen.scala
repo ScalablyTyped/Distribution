@@ -1,11 +1,12 @@
 package typings.easyXapiSupertest.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowHalfOpen extends js.Object {
+trait AllowHalfOpen extends StObject {
   
   var allowHalfOpen: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object AllowHalfOpen {
   }
   
   @scala.inline
-  implicit class AllowHalfOpenOps[Self <: AllowHalfOpen] (val x: Self) extends AnyVal {
+  implicit class AllowHalfOpenMutableBuilder[Self <: AllowHalfOpen] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowHalfOpenUndefined: Self = StObject.set(x, "allowHalfOpen", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFd(value: String): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowHalfOpen(value: Boolean): Self = this.set("allowHalfOpen", value.asInstanceOf[js.Any])
+    def setFdUndefined: Self = StObject.set(x, "fd", js.undefined)
     
     @scala.inline
-    def deleteAllowHalfOpen: Self = this.set("allowHalfOpen", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFd(value: String): Self = this.set("fd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFd: Self = this.set("fd", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

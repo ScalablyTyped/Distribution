@@ -1,12 +1,13 @@
 package typings.aureliaBinding.mod
 
 import typings.std.PropertyDescriptor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectObservationAdapter extends js.Object {
+trait ObjectObservationAdapter extends StObject {
   
   def getObserver(`object`: js.Any, propertyName: String, descriptor: PropertyDescriptor): js.UndefOr[InternalPropertyObserver | Null] = js.native
 }
@@ -19,21 +20,9 @@ object ObjectObservationAdapter {
   }
   
   @scala.inline
-  implicit class ObjectObservationAdapterOps[Self <: ObjectObservationAdapter] (val x: Self) extends AnyVal {
+  implicit class ObjectObservationAdapterMutableBuilder[Self <: ObjectObservationAdapter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetObserver(value: (js.Any, String, PropertyDescriptor) => js.UndefOr[InternalPropertyObserver | Null]): Self = this.set("getObserver", js.Any.fromFunction3(value))
+    def setGetObserver(value: (js.Any, String, PropertyDescriptor) => js.UndefOr[InternalPropertyObserver | Null]): Self = StObject.set(x, "getObserver", js.Any.fromFunction3(value))
   }
 }

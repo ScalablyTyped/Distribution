@@ -1,14 +1,15 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhysicsUpdraftMode extends js.Object
+sealed trait PhysicsUpdraftMode extends StObject
 @JSGlobal("BABYLON.PhysicsUpdraftMode")
 @js.native
-object PhysicsUpdraftMode extends js.Object {
+object PhysicsUpdraftMode extends StObject {
   
   /** Defines that the upstream forces will pull towards the top center of the cylinder */
   @js.native

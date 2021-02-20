@@ -6,13 +6,14 @@ import typings.history.mod.Location
 import typings.history.mod.LocationState
 import typings.reactRouter.mod.StaticContext
 import typings.reactRouter.mod.`match`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/lib/typings.RouterTypes<@ant-design/pro-layout.@ant-design/pro-layout/lib/typings.Route>> */
 @js.native
-trait PartialRouterTypesRoute extends js.Object {
+trait PartialRouterTypesRoute extends StObject {
   
   var computedMatch: js.UndefOr[`match`[Route]] = js.native
   
@@ -35,54 +36,42 @@ object PartialRouterTypesRoute {
   }
   
   @scala.inline
-  implicit class PartialRouterTypesRouteOps[Self <: PartialRouterTypesRoute] (val x: Self) extends AnyVal {
+  implicit class PartialRouterTypesRouteMutableBuilder[Self <: PartialRouterTypesRoute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputedMatch(value: `match`[Route]): Self = StObject.set(x, "computedMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputedMatchUndefined: Self = StObject.set(x, "computedMatch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputedMatch(value: `match`[Route]): Self = this.set("computedMatch", value.asInstanceOf[js.Any])
+    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
     @scala.inline
-    def deleteComputedMatch: Self = this.set("computedMatch", js.undefined)
+    def setLocation(value: Location[LocationState] | Pathname): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistory(value: History[LocationState]): Self = this.set("history", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteHistory: Self = this.set("history", js.undefined)
+    def setMatch(value: `match`[js.Object]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: Location[LocationState] | Pathname): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setRoute(value: Route): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatch(value: `match`[js.Object]): Self = this.set("match", value.asInstanceOf[js.Any])
+    def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
     
     @scala.inline
-    def deleteMatch: Self = this.set("match", js.undefined)
+    def setStaticContext(value: StaticContext): Self = StObject.set(x, "staticContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoute(value: Route): Self = this.set("route", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoute: Self = this.set("route", js.undefined)
-    
-    @scala.inline
-    def setStaticContext(value: StaticContext): Self = this.set("staticContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStaticContext: Self = this.set("staticContext", js.undefined)
+    def setStaticContextUndefined: Self = StObject.set(x, "staticContext", js.undefined)
   }
 }

@@ -2,48 +2,103 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2
 
 import typings.dialogflow.mod.google.cloud.dialogflow.v2.StreamingRecognitionResult.MessageType
 import typings.dialogflow.mod.google.protobuf.IDuration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a StreamingRecognitionResult. */
-trait IStreamingRecognitionResult extends js.Object {
+@js.native
+trait IStreamingRecognitionResult extends StObject {
+  
   /** StreamingRecognitionResult confidence */
-  var confidence: js.UndefOr[Double | Null] = js.undefined
+  var confidence: js.UndefOr[Double | Null] = js.native
+  
   /** StreamingRecognitionResult isFinal */
-  var isFinal: js.UndefOr[Boolean | Null] = js.undefined
+  var isFinal: js.UndefOr[Boolean | Null] = js.native
+  
   /** StreamingRecognitionResult messageType */
   var messageType: js.UndefOr[
     MessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.StreamingRecognitionResult.MessageType * / any */ String) | Null
-  ] = js.undefined
+  ] = js.native
+  
   /** StreamingRecognitionResult speechEndOffset */
-  var speechEndOffset: js.UndefOr[IDuration | Null] = js.undefined
+  var speechEndOffset: js.UndefOr[IDuration | Null] = js.native
+  
   /** StreamingRecognitionResult speechWordInfo */
-  var speechWordInfo: js.UndefOr[js.Array[ISpeechWordInfo] | Null] = js.undefined
+  var speechWordInfo: js.UndefOr[js.Array[ISpeechWordInfo] | Null] = js.native
+  
   /** StreamingRecognitionResult transcript */
-  var transcript: js.UndefOr[String | Null] = js.undefined
+  var transcript: js.UndefOr[String | Null] = js.native
 }
-
 object IStreamingRecognitionResult {
+  
   @scala.inline
-  def apply(
-    confidence: js.UndefOr[Null | Double] = js.undefined,
-    isFinal: js.UndefOr[Null | Boolean] = js.undefined,
-    messageType: js.UndefOr[
-      Null | MessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.StreamingRecognitionResult.MessageType * / any */ String)
-    ] = js.undefined,
-    speechEndOffset: js.UndefOr[Null | IDuration] = js.undefined,
-    speechWordInfo: js.UndefOr[Null | js.Array[ISpeechWordInfo]] = js.undefined,
-    transcript: js.UndefOr[Null | String] = js.undefined
-  ): IStreamingRecognitionResult = {
+  def apply(): IStreamingRecognitionResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFinal)) __obj.updateDynamic("isFinal")(isFinal.asInstanceOf[js.Any])
-    if (!js.isUndefined(messageType)) __obj.updateDynamic("messageType")(messageType.asInstanceOf[js.Any])
-    if (!js.isUndefined(speechEndOffset)) __obj.updateDynamic("speechEndOffset")(speechEndOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(speechWordInfo)) __obj.updateDynamic("speechWordInfo")(speechWordInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(transcript)) __obj.updateDynamic("transcript")(transcript.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStreamingRecognitionResult]
   }
+  
+  @scala.inline
+  implicit class IStreamingRecognitionResultMutableBuilder[Self <: IStreamingRecognitionResult] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setConfidenceNull: Self = StObject.set(x, "confidence", null)
+    
+    @scala.inline
+    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    
+    @scala.inline
+    def setIsFinal(value: Boolean): Self = StObject.set(x, "isFinal", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsFinalNull: Self = StObject.set(x, "isFinal", null)
+    
+    @scala.inline
+    def setIsFinalUndefined: Self = StObject.set(x, "isFinal", js.undefined)
+    
+    @scala.inline
+    def setMessageType(
+      value: MessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.StreamingRecognitionResult.MessageType * / any */ String)
+    ): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMessageTypeNull: Self = StObject.set(x, "messageType", null)
+    
+    @scala.inline
+    def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
+    
+    @scala.inline
+    def setSpeechEndOffset(value: IDuration): Self = StObject.set(x, "speechEndOffset", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSpeechEndOffsetNull: Self = StObject.set(x, "speechEndOffset", null)
+    
+    @scala.inline
+    def setSpeechEndOffsetUndefined: Self = StObject.set(x, "speechEndOffset", js.undefined)
+    
+    @scala.inline
+    def setSpeechWordInfo(value: js.Array[ISpeechWordInfo]): Self = StObject.set(x, "speechWordInfo", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSpeechWordInfoNull: Self = StObject.set(x, "speechWordInfo", null)
+    
+    @scala.inline
+    def setSpeechWordInfoUndefined: Self = StObject.set(x, "speechWordInfo", js.undefined)
+    
+    @scala.inline
+    def setSpeechWordInfoVarargs(value: ISpeechWordInfo*): Self = StObject.set(x, "speechWordInfo", js.Array(value :_*))
+    
+    @scala.inline
+    def setTranscript(value: String): Self = StObject.set(x, "transcript", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTranscriptNull: Self = StObject.set(x, "transcript", null)
+    
+    @scala.inline
+    def setTranscriptUndefined: Self = StObject.set(x, "transcript", js.undefined)
+  }
 }
-

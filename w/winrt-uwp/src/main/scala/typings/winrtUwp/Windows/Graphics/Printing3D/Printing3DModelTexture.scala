@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Graphics.Printing3D
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a texture used in the 3D model. */
 @js.native
-trait Printing3DModelTexture extends js.Object {
+trait Printing3DModelTexture extends StObject {
   
   /** Gets or sets the texture resource used by the texture. */
   var textureResource: Printing3DTextureResource = js.native
@@ -30,27 +31,15 @@ object Printing3DModelTexture {
   }
   
   @scala.inline
-  implicit class Printing3DModelTextureOps[Self <: Printing3DModelTexture] (val x: Self) extends AnyVal {
+  implicit class Printing3DModelTextureMutableBuilder[Self <: Printing3DModelTexture] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTextureResource(value: Printing3DTextureResource): Self = StObject.set(x, "textureResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTileStyleU(value: Printing3DTextureEdgeBehavior): Self = StObject.set(x, "tileStyleU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTextureResource(value: Printing3DTextureResource): Self = this.set("textureResource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTileStyleU(value: Printing3DTextureEdgeBehavior): Self = this.set("tileStyleU", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTileStyleV(value: Printing3DTextureEdgeBehavior): Self = this.set("tileStyleV", value.asInstanceOf[js.Any])
+    def setTileStyleV(value: Printing3DTextureEdgeBehavior): Self = StObject.set(x, "tileStyleV", value.asInstanceOf[js.Any])
   }
 }

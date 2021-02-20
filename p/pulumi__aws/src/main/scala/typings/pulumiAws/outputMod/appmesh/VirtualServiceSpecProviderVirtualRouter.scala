@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.appmesh
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualServiceSpecProviderVirtualRouter extends js.Object {
+trait VirtualServiceSpecProviderVirtualRouter extends StObject {
   
   /**
     * The name of the virtual router that is acting as a service provider. Must be between 1 and 255 characters in length.
@@ -21,21 +22,9 @@ object VirtualServiceSpecProviderVirtualRouter {
   }
   
   @scala.inline
-  implicit class VirtualServiceSpecProviderVirtualRouterOps[Self <: VirtualServiceSpecProviderVirtualRouter] (val x: Self) extends AnyVal {
+  implicit class VirtualServiceSpecProviderVirtualRouterMutableBuilder[Self <: VirtualServiceSpecProviderVirtualRouter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVirtualRouterName(value: String): Self = this.set("virtualRouterName", value.asInstanceOf[js.Any])
+    def setVirtualRouterName(value: String): Self = StObject.set(x, "virtualRouterName", value.asInstanceOf[js.Any])
   }
 }

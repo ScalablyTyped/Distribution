@@ -14,6 +14,7 @@ import typings.stripeV3.stripeV3Strings.sepa_debit
 import typings.stripeV3.stripeV3Strings.sofort
 import typings.stripeV3.stripeV3Strings.stripe_account
 import typings.stripeV3.stripeV3Strings.wechat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Details about the payment method at the time of the transaction.
   */
 @js.native
-trait PaymentMethodDetails extends js.Object {
+trait PaymentMethodDetails extends StObject {
   
   var ach_credit_transfer: js.UndefOr[AchCreditTransferDetails | Null] = js.native
   
@@ -69,149 +70,137 @@ object PaymentMethodDetails {
   }
   
   @scala.inline
-  implicit class PaymentMethodDetailsOps[Self <: PaymentMethodDetails] (val x: Self) extends AnyVal {
+  implicit class PaymentMethodDetailsMutableBuilder[Self <: PaymentMethodDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAch_credit_transfer(value: AchCreditTransferDetails): Self = StObject.set(x, "ach_credit_transfer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAch_credit_transferNull: Self = StObject.set(x, "ach_credit_transfer", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAch_credit_transferUndefined: Self = StObject.set(x, "ach_credit_transfer", js.undefined)
+    
+    @scala.inline
+    def setAch_debit(value: AchDebitDetails): Self = StObject.set(x, "ach_debit", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAch_debitNull: Self = StObject.set(x, "ach_debit", null)
+    
+    @scala.inline
+    def setAch_debitUndefined: Self = StObject.set(x, "ach_debit", js.undefined)
+    
+    @scala.inline
+    def setAlipay(value: js.Any): Self = StObject.set(x, "alipay", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAlipayNull: Self = StObject.set(x, "alipay", null)
+    
+    @scala.inline
+    def setAlipayUndefined: Self = StObject.set(x, "alipay", js.undefined)
+    
+    @scala.inline
+    def setBancontact(value: BanContactDetails): Self = StObject.set(x, "bancontact", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setBancontactNull: Self = StObject.set(x, "bancontact", null)
+    
+    @scala.inline
+    def setBancontactUndefined: Self = StObject.set(x, "bancontact", js.undefined)
+    
+    @scala.inline
+    def setCard(value: PaymentMethodCard): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCardNull: Self = StObject.set(x, "card", null)
+    
+    @scala.inline
+    def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+    
+    @scala.inline
+    def setEps(value: EpsDetails): Self = StObject.set(x, "eps", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setEpsNull: Self = StObject.set(x, "eps", null)
+    
+    @scala.inline
+    def setEpsUndefined: Self = StObject.set(x, "eps", js.undefined)
+    
+    @scala.inline
+    def setGiropay(value: GiropayDetails): Self = StObject.set(x, "giropay", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGiropayNull: Self = StObject.set(x, "giropay", null)
+    
+    @scala.inline
+    def setGiropayUndefined: Self = StObject.set(x, "giropay", js.undefined)
+    
+    @scala.inline
+    def setIdeal(value: IdealDetails): Self = StObject.set(x, "ideal", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIdealNull: Self = StObject.set(x, "ideal", null)
+    
+    @scala.inline
+    def setIdealUndefined: Self = StObject.set(x, "ideal", js.undefined)
+    
+    @scala.inline
+    def setMultibanco(value: MultibancoDetails): Self = StObject.set(x, "multibanco", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMultibancoNull: Self = StObject.set(x, "multibanco", null)
+    
+    @scala.inline
+    def setMultibancoUndefined: Self = StObject.set(x, "multibanco", js.undefined)
+    
+    @scala.inline
+    def setP24(value: P24Details): Self = StObject.set(x, "p24", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setP24Null: Self = StObject.set(x, "p24", null)
+    
+    @scala.inline
+    def setP24Undefined: Self = StObject.set(x, "p24", js.undefined)
+    
+    @scala.inline
+    def setSepa_debit(value: SepaDebitDetails): Self = StObject.set(x, "sepa_debit", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSepa_debitNull: Self = StObject.set(x, "sepa_debit", null)
+    
+    @scala.inline
+    def setSepa_debitUndefined: Self = StObject.set(x, "sepa_debit", js.undefined)
+    
+    @scala.inline
+    def setSofort(value: SofortDetails): Self = StObject.set(x, "sofort", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSofortNull: Self = StObject.set(x, "sofort", null)
+    
+    @scala.inline
+    def setSofortUndefined: Self = StObject.set(x, "sofort", js.undefined)
+    
+    @scala.inline
+    def setStripe_account(value: js.Any): Self = StObject.set(x, "stripe_account", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStripe_accountNull: Self = StObject.set(x, "stripe_account", null)
+    
+    @scala.inline
+    def setStripe_accountUndefined: Self = StObject.set(x, "stripe_account", js.undefined)
     
     @scala.inline
     def setType(
       value: ach_credit_transfer | ach_debit | alipay | bancontact | card | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | stripe_account | wechat
-    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAch_credit_transfer(value: AchCreditTransferDetails): Self = this.set("ach_credit_transfer", value.asInstanceOf[js.Any])
+    def setWechat(value: js.Any): Self = StObject.set(x, "wechat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAch_credit_transfer: Self = this.set("ach_credit_transfer", js.undefined)
+    def setWechatNull: Self = StObject.set(x, "wechat", null)
     
     @scala.inline
-    def setAch_credit_transferNull: Self = this.set("ach_credit_transfer", null)
-    
-    @scala.inline
-    def setAch_debit(value: AchDebitDetails): Self = this.set("ach_debit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAch_debit: Self = this.set("ach_debit", js.undefined)
-    
-    @scala.inline
-    def setAch_debitNull: Self = this.set("ach_debit", null)
-    
-    @scala.inline
-    def setAlipay(value: js.Any): Self = this.set("alipay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlipay: Self = this.set("alipay", js.undefined)
-    
-    @scala.inline
-    def setAlipayNull: Self = this.set("alipay", null)
-    
-    @scala.inline
-    def setBancontact(value: BanContactDetails): Self = this.set("bancontact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBancontact: Self = this.set("bancontact", js.undefined)
-    
-    @scala.inline
-    def setBancontactNull: Self = this.set("bancontact", null)
-    
-    @scala.inline
-    def setCard(value: PaymentMethodCard): Self = this.set("card", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCard: Self = this.set("card", js.undefined)
-    
-    @scala.inline
-    def setCardNull: Self = this.set("card", null)
-    
-    @scala.inline
-    def setEps(value: EpsDetails): Self = this.set("eps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEps: Self = this.set("eps", js.undefined)
-    
-    @scala.inline
-    def setEpsNull: Self = this.set("eps", null)
-    
-    @scala.inline
-    def setGiropay(value: GiropayDetails): Self = this.set("giropay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGiropay: Self = this.set("giropay", js.undefined)
-    
-    @scala.inline
-    def setGiropayNull: Self = this.set("giropay", null)
-    
-    @scala.inline
-    def setIdeal(value: IdealDetails): Self = this.set("ideal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdeal: Self = this.set("ideal", js.undefined)
-    
-    @scala.inline
-    def setIdealNull: Self = this.set("ideal", null)
-    
-    @scala.inline
-    def setMultibanco(value: MultibancoDetails): Self = this.set("multibanco", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultibanco: Self = this.set("multibanco", js.undefined)
-    
-    @scala.inline
-    def setMultibancoNull: Self = this.set("multibanco", null)
-    
-    @scala.inline
-    def setP24(value: P24Details): Self = this.set("p24", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteP24: Self = this.set("p24", js.undefined)
-    
-    @scala.inline
-    def setP24Null: Self = this.set("p24", null)
-    
-    @scala.inline
-    def setSepa_debit(value: SepaDebitDetails): Self = this.set("sepa_debit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSepa_debit: Self = this.set("sepa_debit", js.undefined)
-    
-    @scala.inline
-    def setSepa_debitNull: Self = this.set("sepa_debit", null)
-    
-    @scala.inline
-    def setSofort(value: SofortDetails): Self = this.set("sofort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSofort: Self = this.set("sofort", js.undefined)
-    
-    @scala.inline
-    def setSofortNull: Self = this.set("sofort", null)
-    
-    @scala.inline
-    def setStripe_account(value: js.Any): Self = this.set("stripe_account", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStripe_account: Self = this.set("stripe_account", js.undefined)
-    
-    @scala.inline
-    def setStripe_accountNull: Self = this.set("stripe_account", null)
-    
-    @scala.inline
-    def setWechat(value: js.Any): Self = this.set("wechat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWechat: Self = this.set("wechat", js.undefined)
-    
-    @scala.inline
-    def setWechatNull: Self = this.set("wechat", null)
+    def setWechatUndefined: Self = StObject.set(x, "wechat", js.undefined)
   }
 }

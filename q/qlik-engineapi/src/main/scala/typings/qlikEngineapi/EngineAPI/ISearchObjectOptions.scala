@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SearchObjectOptions...
   */
 @js.native
-trait ISearchObjectOptions extends js.Object {
+trait ISearchObjectOptions extends StObject {
   
   /**
     * This array is either empty or contains qProperty.
@@ -35,27 +36,15 @@ object ISearchObjectOptions {
   }
   
   @scala.inline
-  implicit class ISearchObjectOptionsOps[Self <: ISearchObjectOptions] (val x: Self) extends AnyVal {
+  implicit class ISearchObjectOptionsMutableBuilder[Self <: ISearchObjectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQAttributes(value: js.Array[String]): Self = StObject.set(x, "qAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQAttributesVarargs(value: String*): Self = StObject.set(x, "qAttributes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQAttributesVarargs(value: String*): Self = this.set("qAttributes", js.Array(value :_*))
-    
-    @scala.inline
-    def setQAttributes(value: js.Array[String]): Self = this.set("qAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQCharEncoding(value: String): Self = this.set("qCharEncoding", value.asInstanceOf[js.Any])
+    def setQCharEncoding(value: String): Self = StObject.set(x, "qCharEncoding", value.asInstanceOf[js.Any])
   }
 }

@@ -5,12 +5,13 @@ import typings.stripe.anon.Date
 import typings.stripe.anon.Mcc
 import typings.stripe.stripeStrings.company
 import typings.stripe.stripeStrings.individual
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAccountShared extends js.Object {
+trait IAccountShared extends StObject {
   
   /**
     * Optional information related to the business.
@@ -73,69 +74,57 @@ object IAccountShared {
   }
   
   @scala.inline
-  implicit class IAccountSharedOps[Self <: IAccountShared] (val x: Self) extends AnyVal {
+  implicit class IAccountSharedMutableBuilder[Self <: IAccountShared] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBusiness_profile(value: Mcc): Self = StObject.set(x, "business_profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBusiness_profileUndefined: Self = StObject.set(x, "business_profile", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBusiness_type(value: individual | company): Self = StObject.set(x, "business_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusiness_profile(value: Mcc): Self = this.set("business_profile", value.asInstanceOf[js.Any])
+    def setBusiness_typeUndefined: Self = StObject.set(x, "business_type", js.undefined)
     
     @scala.inline
-    def deleteBusiness_profile: Self = this.set("business_profile", js.undefined)
+    def setDefault_currency(value: String): Self = StObject.set(x, "default_currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusiness_type(value: individual | company): Self = this.set("business_type", value.asInstanceOf[js.Any])
+    def setDefault_currencyUndefined: Self = StObject.set(x, "default_currency", js.undefined)
     
     @scala.inline
-    def deleteBusiness_type: Self = this.set("business_type", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault_currency(value: String): Self = this.set("default_currency", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteDefault_currency: Self = this.set("default_currency", js.undefined)
+    def setProduct_description(value: String): Self = StObject.set(x, "product_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setProduct_descriptionUndefined: Self = StObject.set(x, "product_description", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setRequested_capabilities(value: js.Array[String]): Self = StObject.set(x, "requested_capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProduct_description(value: String): Self = this.set("product_description", value.asInstanceOf[js.Any])
+    def setRequested_capabilitiesUndefined: Self = StObject.set(x, "requested_capabilities", js.undefined)
     
     @scala.inline
-    def deleteProduct_description: Self = this.set("product_description", js.undefined)
+    def setRequested_capabilitiesVarargs(value: String*): Self = StObject.set(x, "requested_capabilities", js.Array(value :_*))
     
     @scala.inline
-    def setRequested_capabilitiesVarargs(value: String*): Self = this.set("requested_capabilities", js.Array(value :_*))
+    def setSettings(value: Branding): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequested_capabilities(value: js.Array[String]): Self = this.set("requested_capabilities", value.asInstanceOf[js.Any])
+    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
     @scala.inline
-    def deleteRequested_capabilities: Self = this.set("requested_capabilities", js.undefined)
+    def setTos_acceptance(value: Date): Self = StObject.set(x, "tos_acceptance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSettings(value: Branding): Self = this.set("settings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSettings: Self = this.set("settings", js.undefined)
-    
-    @scala.inline
-    def setTos_acceptance(value: Date): Self = this.set("tos_acceptance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTos_acceptance: Self = this.set("tos_acceptance", js.undefined)
+    def setTos_acceptanceUndefined: Self = StObject.set(x, "tos_acceptance", js.undefined)
   }
 }

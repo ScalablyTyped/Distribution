@@ -2,6 +2,7 @@ package typings.babylonjs.indexMod
 
 import typings.babylonjs.anon.FaceUV
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class PolyhedronBuilder ()
   extends typings.babylonjs.babylonjsIndexMod.PolyhedronBuilder
 /* static members */
-@JSImport("babylonjs/index", "PolyhedronBuilder")
-@js.native
-object PolyhedronBuilder extends js.Object {
+object PolyhedronBuilder {
   
   /**
     * Creates a polyhedron mesh
@@ -34,6 +33,10 @@ object PolyhedronBuilder extends js.Object {
     * @returns the polyhedron mesh
     * @see https://doc.babylonjs.com/how_to/polyhedra_shapes
     */
+  @JSImport("babylonjs/index", "PolyhedronBuilder.CreatePolyhedron")
+  @js.native
   def CreatePolyhedron(name: String, options: FaceUV): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs/index", "PolyhedronBuilder.CreatePolyhedron")
+  @js.native
   def CreatePolyhedron(name: String, options: FaceUV, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
 }

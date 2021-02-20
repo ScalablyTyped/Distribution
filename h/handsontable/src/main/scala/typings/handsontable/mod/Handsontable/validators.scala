@@ -1,12 +1,11 @@
 package typings.handsontable.mod.Handsontable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("handsontable", "Handsontable.validators")
-@js.native
-object validators extends js.Object {
+object validators {
   
   type Autocomplete = Base
   

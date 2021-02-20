@@ -5,12 +5,13 @@ import typings.minappEnv.minappEnvStrings.album
 import typings.minappEnv.minappEnvStrings.camera
 import typings.minappEnv.minappEnvStrings.compressed
 import typings.minappEnv.minappEnvStrings.original
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChooseImageOption extends js.Object {
+trait ChooseImageOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
   var complete: js.UndefOr[ChooseImageCompleteCallback] = js.native
@@ -47,54 +48,42 @@ object ChooseImageOption {
   }
   
   @scala.inline
-  implicit class ChooseImageOptionOps[Self <: ChooseImageOption] (val x: Self) extends AnyVal {
+  implicit class ChooseImageOptionMutableBuilder[Self <: ChooseImageOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setSizeType(value: Array[original | compressed]): Self = StObject.set(x, "sizeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("fail", js.Any.fromFunction1(value))
+    def setSizeTypeUndefined: Self = StObject.set(x, "sizeType", js.undefined)
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setSourceType(value: Array[album | camera]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeType(value: Array[original | compressed]): Self = this.set("sizeType", value.asInstanceOf[js.Any])
+    def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     
     @scala.inline
-    def deleteSizeType: Self = this.set("sizeType", js.undefined)
+    def setSuccess(value: /* result */ ChooseImageSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSourceType(value: Array[album | camera]): Self = this.set("sourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceType: Self = this.set("sourceType", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* result */ ChooseImageSuccessCallbackResult => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

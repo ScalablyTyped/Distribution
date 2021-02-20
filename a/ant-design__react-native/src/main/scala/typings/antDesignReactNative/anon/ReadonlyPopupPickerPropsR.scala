@@ -3,13 +3,14 @@ package typings.antDesignReactNative.anon
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<@ant-design/react-native.@ant-design/react-native/lib/picker/PopupPickerTypes.PopupPickerProps> & std.Readonly<{  children :react.react.ReactNode | undefined}> */
 @js.native
-trait ReadonlyPopupPickerPropsR extends js.Object {
+trait ReadonlyPopupPickerPropsR extends StObject {
   
   val WrapComponent: js.UndefOr[js.Any] = js.native
   
@@ -68,162 +69,150 @@ object ReadonlyPopupPickerPropsR {
   }
   
   @scala.inline
-  implicit class ReadonlyPopupPickerPropsROps[Self <: ReadonlyPopupPickerPropsR] (val x: Self) extends AnyVal {
+  implicit class ReadonlyPopupPickerPropsRMutableBuilder[Self <: ReadonlyPopupPickerPropsR] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionTextActiveOpacity(value: Double): Self = StObject.set(x, "actionTextActiveOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionTextActiveOpacityUndefined: Self = StObject.set(x, "actionTextActiveOpacity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionTextUnderlayColor(value: String): Self = StObject.set(x, "actionTextUnderlayColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWrapComponent(value: js.Any): Self = this.set("WrapComponent", value.asInstanceOf[js.Any])
+    def setActionTextUnderlayColorUndefined: Self = StObject.set(x, "actionTextUnderlayColor", js.undefined)
     
     @scala.inline
-    def deleteWrapComponent: Self = this.set("WrapComponent", js.undefined)
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionTextActiveOpacity(value: Double): Self = this.set("actionTextActiveOpacity", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteActionTextActiveOpacity: Self = this.set("actionTextActiveOpacity", js.undefined)
+    def setContent(value: ReactElement | String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionTextUnderlayColor(value: String): Self = this.set("actionTextUnderlayColor", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def deleteActionTextUnderlayColor: Self = this.set("actionTextUnderlayColor", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setDismissText(value: String | ReactElement): Self = StObject.set(x, "dismissText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: ReactElement | String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setDismissTextUndefined: Self = StObject.set(x, "dismissText", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setMaskTransitionName(value: String): Self = StObject.set(x, "maskTransitionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setMaskTransitionNameUndefined: Self = StObject.set(x, "maskTransitionName", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setOkText(value: String | ReactElement): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDismissText(value: String | ReactElement): Self = this.set("dismissText", value.asInstanceOf[js.Any])
+    def setOkTextUndefined: Self = StObject.set(x, "okText", js.undefined)
     
     @scala.inline
-    def deleteDismissText: Self = this.set("dismissText", js.undefined)
+    def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaskTransitionName(value: String): Self = this.set("maskTransitionName", value.asInstanceOf[js.Any])
+    def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
     
     @scala.inline
-    def deleteMaskTransitionName: Self = this.set("maskTransitionName", js.undefined)
+    def setOnOk(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onOk", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOkText(value: String | ReactElement): Self = this.set("okText", value.asInstanceOf[js.Any])
+    def setOnOkUndefined: Self = StObject.set(x, "onOk", js.undefined)
     
     @scala.inline
-    def deleteOkText: Self = this.set("okText", js.undefined)
+    def setOnVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDismiss(value: () => Unit): Self = this.set("onDismiss", js.Any.fromFunction0(value))
+    def setOnVisibleChangeUndefined: Self = StObject.set(x, "onVisibleChange", js.undefined)
     
     @scala.inline
-    def deleteOnDismiss: Self = this.set("onDismiss", js.undefined)
+    def setPicker(value: js.Any): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnOk(value: /* value */ js.UndefOr[js.Any] => Unit): Self = this.set("onOk", js.Any.fromFunction1(value))
+    def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
     
     @scala.inline
-    def deleteOnOk: Self = this.set("onOk", js.undefined)
+    def setPickerValueChangeProp(value: String): Self = StObject.set(x, "pickerValueChangeProp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnVisibleChange(value: /* visible */ Boolean => Unit): Self = this.set("onVisibleChange", js.Any.fromFunction1(value))
+    def setPickerValueChangePropUndefined: Self = StObject.set(x, "pickerValueChangeProp", js.undefined)
     
     @scala.inline
-    def deleteOnVisibleChange: Self = this.set("onVisibleChange", js.undefined)
+    def setPickerValueProp(value: String): Self = StObject.set(x, "pickerValueProp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPicker(value: js.Any): Self = this.set("picker", value.asInstanceOf[js.Any])
+    def setPickerValuePropUndefined: Self = StObject.set(x, "pickerValueProp", js.undefined)
     
     @scala.inline
-    def deletePicker: Self = this.set("picker", js.undefined)
+    def setPopupTransitionName(value: String): Self = StObject.set(x, "popupTransitionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPickerValueChangeProp(value: String): Self = this.set("pickerValueChangeProp", value.asInstanceOf[js.Any])
+    def setPopupTransitionNameUndefined: Self = StObject.set(x, "popupTransitionName", js.undefined)
     
     @scala.inline
-    def deletePickerValueChangeProp: Self = this.set("pickerValueChangeProp", js.undefined)
+    def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPickerValueProp(value: String): Self = this.set("pickerValueProp", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deletePickerValueProp: Self = this.set("pickerValueProp", js.undefined)
+    def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupTransitionName(value: String): Self = this.set("popupTransitionName", value.asInstanceOf[js.Any])
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def deletePopupTransitionName: Self = this.set("popupTransitionName", js.undefined)
+    def setTitle(value: String | ReactElement): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: js.Any): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: js.Any): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
     
     @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setTriggerType(value: String): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String | ReactElement): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTriggerTypeUndefined: Self = StObject.set(x, "triggerType", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitionName(value: String): Self = this.set("transitionName", value.asInstanceOf[js.Any])
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deleteTransitionName: Self = this.set("transitionName", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerType(value: String): Self = this.set("triggerType", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteTriggerType: Self = this.set("triggerType", js.undefined)
+    def setWrapComponent(value: js.Any): Self = StObject.set(x, "WrapComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setWrapComponentUndefined: Self = StObject.set(x, "WrapComponent", js.undefined)
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setWrapStyle(value: CSSProperties): Self = StObject.set(x, "wrapStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
-    
-    @scala.inline
-    def setWrapStyle(value: CSSProperties): Self = this.set("wrapStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapStyle: Self = this.set("wrapStyle", js.undefined)
+    def setWrapStyleUndefined: Self = StObject.set(x, "wrapStyle", js.undefined)
   }
 }

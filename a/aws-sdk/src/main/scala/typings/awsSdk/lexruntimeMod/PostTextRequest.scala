@@ -1,11 +1,12 @@
 package typings.awsSdk.lexruntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PostTextRequest extends js.Object {
+trait PostTextRequest extends StObject {
   
   /**
     * A list of contexts active for the request. A context can be activated when a previous intent is fulfilled, or by including the context in the request, If you don't specify a list of contexts, Amazon Lex will use the current list of contexts for the session. If you specify an empty list, all contexts for the session are cleared.
@@ -51,51 +52,39 @@ object PostTextRequest {
   }
   
   @scala.inline
-  implicit class PostTextRequestOps[Self <: PostTextRequest] (val x: Self) extends AnyVal {
+  implicit class PostTextRequestMutableBuilder[Self <: PostTextRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveContexts(value: ActiveContextsList): Self = StObject.set(x, "activeContexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveContextsUndefined: Self = StObject.set(x, "activeContexts", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveContextsVarargs(value: ActiveContext*): Self = StObject.set(x, "activeContexts", js.Array(value :_*))
     
     @scala.inline
-    def setBotAlias(value: BotAlias): Self = this.set("botAlias", value.asInstanceOf[js.Any])
+    def setBotAlias(value: BotAlias): Self = StObject.set(x, "botAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBotName(value: BotName): Self = this.set("botName", value.asInstanceOf[js.Any])
+    def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputText(value: Text): Self = this.set("inputText", value.asInstanceOf[js.Any])
+    def setInputText(value: Text): Self = StObject.set(x, "inputText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserId(value: UserId): Self = this.set("userId", value.asInstanceOf[js.Any])
+    def setRequestAttributes(value: StringMap): Self = StObject.set(x, "requestAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveContextsVarargs(value: ActiveContext*): Self = this.set("activeContexts", js.Array(value :_*))
+    def setRequestAttributesUndefined: Self = StObject.set(x, "requestAttributes", js.undefined)
     
     @scala.inline
-    def setActiveContexts(value: ActiveContextsList): Self = this.set("activeContexts", value.asInstanceOf[js.Any])
+    def setSessionAttributes(value: StringMap): Self = StObject.set(x, "sessionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActiveContexts: Self = this.set("activeContexts", js.undefined)
+    def setSessionAttributesUndefined: Self = StObject.set(x, "sessionAttributes", js.undefined)
     
     @scala.inline
-    def setRequestAttributes(value: StringMap): Self = this.set("requestAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestAttributes: Self = this.set("requestAttributes", js.undefined)
-    
-    @scala.inline
-    def setSessionAttributes(value: StringMap): Self = this.set("sessionAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionAttributes: Self = this.set("sessionAttributes", js.undefined)
+    def setUserId(value: UserId): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.puppeteer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MouseWheelOptions extends js.Object {
+trait MouseWheelOptions extends StObject {
   
   var deltaX: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object MouseWheelOptions {
   }
   
   @scala.inline
-  implicit class MouseWheelOptionsOps[Self <: MouseWheelOptions] (val x: Self) extends AnyVal {
+  implicit class MouseWheelOptionsMutableBuilder[Self <: MouseWheelOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeltaXUndefined: Self = StObject.set(x, "deltaX", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeltaX(value: Double): Self = this.set("deltaX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeltaX: Self = this.set("deltaX", js.undefined)
-    
-    @scala.inline
-    def setDeltaY(value: Double): Self = this.set("deltaY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeltaY: Self = this.set("deltaY", js.undefined)
+    def setDeltaYUndefined: Self = StObject.set(x, "deltaY", js.undefined)
   }
 }

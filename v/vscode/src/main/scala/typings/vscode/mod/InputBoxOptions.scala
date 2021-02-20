@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
 import typings.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputBoxOptions extends js.Object {
+trait InputBoxOptions extends StObject {
   
   /**
     * Set to `true` to keep the input box open when focus moves to another part of the editor or to another window.
@@ -65,60 +66,48 @@ object InputBoxOptions {
   }
   
   @scala.inline
-  implicit class InputBoxOptionsOps[Self <: InputBoxOptions] (val x: Self) extends AnyVal {
+  implicit class InputBoxOptionsMutableBuilder[Self <: InputBoxOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnoreFocusOut(value: Boolean): Self = StObject.set(x, "ignoreFocusOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnoreFocusOutUndefined: Self = StObject.set(x, "ignoreFocusOut", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPassword(value: Boolean): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreFocusOut(value: Boolean): Self = this.set("ignoreFocusOut", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteIgnoreFocusOut: Self = this.set("ignoreFocusOut", js.undefined)
+    def setPlaceHolder(value: String): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: Boolean): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceHolder(value: String): Self = this.set("placeHolder", value.asInstanceOf[js.Any])
+    def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
     
     @scala.inline
-    def deletePlaceHolder: Self = this.set("placeHolder", js.undefined)
+    def setValidateInput(value: /* value */ String => js.UndefOr[String | Null | (Thenable[js.UndefOr[String | Null]])]): Self = StObject.set(x, "validateInput", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPrompt(value: String): Self = this.set("prompt", value.asInstanceOf[js.Any])
+    def setValidateInputUndefined: Self = StObject.set(x, "validateInput", js.undefined)
     
     @scala.inline
-    def deletePrompt: Self = this.set("prompt", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidateInput(value: /* value */ String => js.UndefOr[String | Null | (Thenable[js.UndefOr[String | Null]])]): Self = this.set("validateInput", js.Any.fromFunction1(value))
+    def setValueSelection(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "valueSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValidateInput: Self = this.set("validateInput", js.undefined)
+    def setValueSelectionUndefined: Self = StObject.set(x, "valueSelection", js.undefined)
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
-    
-    @scala.inline
-    def setValueSelection(value: js.Tuple2[Double, Double]): Self = this.set("valueSelection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueSelection: Self = this.set("valueSelection", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

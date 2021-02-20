@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeolocationPositioning extends js.Object {
+trait GeolocationPositioning extends StObject {
   
   /**
     * The HTML5 Geolocation Position options for locating.
@@ -57,33 +58,21 @@ object GeolocationPositioning {
   }
   
   @scala.inline
-  implicit class GeolocationPositioningOps[Self <: GeolocationPositioning] (val x: Self) extends AnyVal {
+  implicit class GeolocationPositioningMutableBuilder[Self <: GeolocationPositioning] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeolocationOptions(value: js.Any): Self = StObject.set(x, "geolocationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGoToLocationEnabled(value: Boolean): Self = StObject.set(x, "goToLocationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGraphic(value: Graphic): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeolocationOptions(value: js.Any): Self = this.set("geolocationOptions", value.asInstanceOf[js.Any])
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoToLocationEnabled(value: Boolean): Self = this.set("goToLocationEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGraphic(value: Graphic): Self = this.set("graphic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setView(value: MapView | SceneView): Self = this.set("view", value.asInstanceOf[js.Any])
+    def setView(value: MapView | SceneView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsCloudFrontDistributionOrigins extends js.Object {
+trait AwsCloudFrontDistributionOrigins extends StObject {
   
   /**
     * A complex type that contains origins or origin groups for this distribution.
@@ -21,27 +22,15 @@ object AwsCloudFrontDistributionOrigins {
   }
   
   @scala.inline
-  implicit class AwsCloudFrontDistributionOriginsOps[Self <: AwsCloudFrontDistributionOrigins] (val x: Self) extends AnyVal {
+  implicit class AwsCloudFrontDistributionOriginsMutableBuilder[Self <: AwsCloudFrontDistributionOrigins] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: AwsCloudFrontDistributionOriginItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItemsVarargs(value: AwsCloudFrontDistributionOriginItem*): Self = this.set("Items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: AwsCloudFrontDistributionOriginItemList): Self = this.set("Items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItems: Self = this.set("Items", js.undefined)
+    def setItemsVarargs(value: AwsCloudFrontDistributionOriginItem*): Self = StObject.set(x, "Items", js.Array(value :_*))
   }
 }

@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.behaviorMod.Behavior
 import typings.babylonjs.meshMod.Mesh
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Behaviors/Meshes/multiPointerScaleBehavior", JSImport.Namespace)
-@js.native
-object multiPointerScaleBehaviorMod extends js.Object {
+object multiPointerScaleBehaviorMod {
   
+  @JSImport("babylonjs/Behaviors/Meshes/multiPointerScaleBehavior", "MultiPointerScaleBehavior")
   @js.native
   /**
     * Instantiate a new behavior that when attached to a mesh will allow the mesh to be scaled

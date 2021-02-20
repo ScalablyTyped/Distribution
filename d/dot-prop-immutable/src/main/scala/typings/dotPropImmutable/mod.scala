@@ -1,12 +1,11 @@
 package typings.dotPropImmutable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("dot-prop-immutable", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Delete a nested property/array by a dot path
@@ -25,15 +24,27 @@ object mod extends js.Object {
     * //=> {foo: [{}, 'white-unicorn', 'silver-unicorn']}
     * ```
     */
+  @JSImport("dot-prop-immutable", "delete")
+  @js.native
   def delete[T /* <: ArrayOrObject */](`object`: T, path: Path): T = js.native
   
+  @JSImport("dot-prop-immutable", "get")
+  @js.native
   def get(`object`: js.UndefOr[ArrayOrObject], path: Path): js.Any = js.native
+  @JSImport("dot-prop-immutable", "get")
+  @js.native
   def get[V](`object`: js.UndefOr[ArrayOrObject], path: Path, defaultValue: V): V = js.native
   
+  @JSImport("dot-prop-immutable", "merge")
+  @js.native
   def merge[T /* <: ArrayOrObject */](`object`: T, path: Path, value: ArrayOrObject): T = js.native
   
+  @JSImport("dot-prop-immutable", "set")
+  @js.native
   def set[T /* <: ArrayOrObject */](`object`: T, path: Path, value: js.Any): T = js.native
   
+  @JSImport("dot-prop-immutable", "toggle")
+  @js.native
   def toggle[T /* <: ArrayOrObject */](`object`: T, path: Path): T = js.native
   
   type ArrayOrObject = js.Array[js.Any] | js.Object

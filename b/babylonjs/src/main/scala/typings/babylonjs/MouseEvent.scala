@@ -1,11 +1,12 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MouseEvent extends js.Object {
+trait MouseEvent extends StObject {
   
   var mozMovementX: Double = js.native
   
@@ -35,36 +36,24 @@ object MouseEvent {
   }
   
   @scala.inline
-  implicit class MouseEventOps[Self <: MouseEvent] (val x: Self) extends AnyVal {
+  implicit class MouseEventMutableBuilder[Self <: MouseEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMozMovementX(value: Double): Self = StObject.set(x, "mozMovementX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMozMovementY(value: Double): Self = StObject.set(x, "mozMovementY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMsMovementX(value: Double): Self = StObject.set(x, "msMovementX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozMovementX(value: Double): Self = this.set("mozMovementX", value.asInstanceOf[js.Any])
+    def setMsMovementY(value: Double): Self = StObject.set(x, "msMovementY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMozMovementY(value: Double): Self = this.set("mozMovementY", value.asInstanceOf[js.Any])
+    def setWebkitMovementX(value: Double): Self = StObject.set(x, "webkitMovementX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsMovementX(value: Double): Self = this.set("msMovementX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMsMovementY(value: Double): Self = this.set("msMovementY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebkitMovementX(value: Double): Self = this.set("webkitMovementX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebkitMovementY(value: Double): Self = this.set("webkitMovementY", value.asInstanceOf[js.Any])
+    def setWebkitMovementY(value: Double): Self = StObject.set(x, "webkitMovementY", value.asInstanceOf[js.Any])
   }
 }

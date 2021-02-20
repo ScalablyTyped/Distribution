@@ -1,6 +1,7 @@
 package typings.i18next.mod
 
 import typings.i18next.i18nextStrings.backend
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,44 +49,32 @@ object BackendModule {
   }
   
   @scala.inline
-  implicit class BackendModuleOps[Self <: BackendModule[_], TOptions] (val x: Self with BackendModule[TOptions]) extends AnyVal {
+  implicit class BackendModuleMutableBuilder[Self <: BackendModule[_], TOptions] (val x: Self with BackendModule[TOptions]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreate(value: (js.Array[String], String, String, String) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInit(value: (Services, TOptions, InitOptions) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreate(value: (js.Array[String], String, String, String) => Unit): Self = this.set("create", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setInit(value: (Services, TOptions, InitOptions) => Unit): Self = this.set("init", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setRead(value: (String, String, ReadCallback) => Unit): Self = this.set("read", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setType(value: backend): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setRead(value: (String, String, ReadCallback) => Unit): Self = StObject.set(x, "read", js.Any.fromFunction3(value))
     
     @scala.inline
     def setReadMulti(
       value: (/* languages */ js.Array[String], /* namespaces */ js.Array[String], /* callback */ ReadCallback) => Unit
-    ): Self = this.set("readMulti", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "readMulti", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteReadMulti: Self = this.set("readMulti", js.undefined)
+    def setReadMultiUndefined: Self = StObject.set(x, "readMulti", js.undefined)
     
     @scala.inline
-    def setSave(value: (/* language */ String, /* namespace */ String, /* data */ ResourceLanguage) => Unit): Self = this.set("save", js.Any.fromFunction3(value))
+    def setSave(value: (/* language */ String, /* namespace */ String, /* data */ ResourceLanguage) => Unit): Self = StObject.set(x, "save", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteSave: Self = this.set("save", js.undefined)
+    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+    
+    @scala.inline
+    def setType(value: backend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

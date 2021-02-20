@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Line extends js.Object {
+trait Line extends StObject {
   
   /** The category of the line. It matches the `category` specified in CreateLineRequest, and can be updated with UpdateLineCategoryRequest. */
   var lineCategory: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object Line {
   }
   
   @scala.inline
-  implicit class LineOps[Self <: Line] (val x: Self) extends AnyVal {
+  implicit class LineMutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLineCategory(value: String): Self = StObject.set(x, "lineCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLineCategoryUndefined: Self = StObject.set(x, "lineCategory", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineProperties(value: LineProperties): Self = StObject.set(x, "lineProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineCategory(value: String): Self = this.set("lineCategory", value.asInstanceOf[js.Any])
+    def setLinePropertiesUndefined: Self = StObject.set(x, "lineProperties", js.undefined)
     
     @scala.inline
-    def deleteLineCategory: Self = this.set("lineCategory", js.undefined)
+    def setLineType(value: String): Self = StObject.set(x, "lineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineProperties(value: LineProperties): Self = this.set("lineProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineProperties: Self = this.set("lineProperties", js.undefined)
-    
-    @scala.inline
-    def setLineType(value: String): Self = this.set("lineType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineType: Self = this.set("lineType", js.undefined)
+    def setLineTypeUndefined: Self = StObject.set(x, "lineType", js.undefined)
   }
 }

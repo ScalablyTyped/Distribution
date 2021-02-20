@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RevisionTarget extends js.Object {
+trait RevisionTarget extends StObject {
   
   /**
     * A unique string that identifies the version to update the cluster to. You can use this value in ModifyClusterDbRevision.
@@ -31,36 +32,24 @@ object RevisionTarget {
   }
   
   @scala.inline
-  implicit class RevisionTargetOps[Self <: RevisionTarget] (val x: Self) extends AnyVal {
+  implicit class RevisionTargetMutableBuilder[Self <: RevisionTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatabaseRevision(value: String): Self = StObject.set(x, "DatabaseRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatabaseRevisionReleaseDate(value: TStamp): Self = StObject.set(x, "DatabaseRevisionReleaseDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatabaseRevisionReleaseDateUndefined: Self = StObject.set(x, "DatabaseRevisionReleaseDate", js.undefined)
     
     @scala.inline
-    def setDatabaseRevision(value: String): Self = this.set("DatabaseRevision", value.asInstanceOf[js.Any])
+    def setDatabaseRevisionUndefined: Self = StObject.set(x, "DatabaseRevision", js.undefined)
     
     @scala.inline
-    def deleteDatabaseRevision: Self = this.set("DatabaseRevision", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseRevisionReleaseDate(value: TStamp): Self = this.set("DatabaseRevisionReleaseDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDatabaseRevisionReleaseDate: Self = this.set("DatabaseRevisionReleaseDate", js.undefined)
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
   }
 }

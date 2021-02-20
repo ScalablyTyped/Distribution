@@ -1,11 +1,12 @@
 package typings.googleapis.betaMod.computeBeta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaHealthStatusForNetworkEndpoint extends js.Object {
+trait SchemaHealthStatusForNetworkEndpoint extends StObject {
   
   /**
     * URL of the backend service associated with the health state of the
@@ -40,42 +41,30 @@ object SchemaHealthStatusForNetworkEndpoint {
   }
   
   @scala.inline
-  implicit class SchemaHealthStatusForNetworkEndpointOps[Self <: SchemaHealthStatusForNetworkEndpoint] (val x: Self) extends AnyVal {
+  implicit class SchemaHealthStatusForNetworkEndpointMutableBuilder[Self <: SchemaHealthStatusForNetworkEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackendService(value: SchemaBackendServiceReference): Self = StObject.set(x, "backendService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackendServiceUndefined: Self = StObject.set(x, "backendService", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForwardingRule(value: SchemaForwardingRuleReference): Self = StObject.set(x, "forwardingRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackendService(value: SchemaBackendServiceReference): Self = this.set("backendService", value.asInstanceOf[js.Any])
+    def setForwardingRuleUndefined: Self = StObject.set(x, "forwardingRule", js.undefined)
     
     @scala.inline
-    def deleteBackendService: Self = this.set("backendService", js.undefined)
+    def setHealthCheck(value: SchemaHealthCheckReference): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForwardingRule(value: SchemaForwardingRuleReference): Self = this.set("forwardingRule", value.asInstanceOf[js.Any])
+    def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
     
     @scala.inline
-    def deleteForwardingRule: Self = this.set("forwardingRule", js.undefined)
+    def setHealthState(value: String): Self = StObject.set(x, "healthState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthCheck(value: SchemaHealthCheckReference): Self = this.set("healthCheck", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHealthCheck: Self = this.set("healthCheck", js.undefined)
-    
-    @scala.inline
-    def setHealthState(value: String): Self = this.set("healthState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHealthState: Self = this.set("healthState", js.undefined)
+    def setHealthStateUndefined: Self = StObject.set(x, "healthState", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.animations
 
 import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * XAnimationNode} tree as a target object.
   */
 @js.native
-trait TargetProperties extends js.Object {
+trait TargetProperties extends StObject {
   
   var Properties: SafeArray[NamedValue] = js.native
   
@@ -28,24 +29,12 @@ object TargetProperties {
   }
   
   @scala.inline
-  implicit class TargetPropertiesOps[Self <: TargetProperties] (val x: Self) extends AnyVal {
+  implicit class TargetPropertiesMutableBuilder[Self <: TargetProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProperties(value: SafeArray[NamedValue]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProperties(value: SafeArray[NamedValue]): Self = this.set("Properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: js.Any): Self = this.set("Target", value.asInstanceOf[js.Any])
+    def setTarget(value: js.Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

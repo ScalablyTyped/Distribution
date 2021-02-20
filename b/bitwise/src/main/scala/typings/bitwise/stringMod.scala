@@ -1,19 +1,21 @@
 package typings.bitwise
 
 import typings.bitwise.typesMod.Bit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bitwise/esm/string", JSImport.Namespace)
-@js.native
-object stringMod extends js.Object {
+object stringMod {
   
-  def toBits(string: String): js.Array[Bit] = js.native
-  
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("bitwise/esm/string", "default.toBits")
+    @js.native
     def toBits(string: String): js.Array[Bit] = js.native
   }
+  
+  @JSImport("bitwise/esm/string", "toBits")
+  @js.native
+  def toBits(string: String): js.Array[Bit] = js.native
 }

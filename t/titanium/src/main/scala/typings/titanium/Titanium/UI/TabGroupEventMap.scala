@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.UI
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,93 +94,81 @@ object TabGroupEventMap {
   }
   
   @scala.inline
-  implicit class TabGroupEventMapOps[Self <: TabGroupEventMap] (val x: Self) extends AnyVal {
+  implicit class TabGroupEventMapMutableBuilder[Self <: TabGroupEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroidback(value: TabGroupAndroidbackEvent): Self = StObject.set(x, "androidback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidcamera(value: TabGroupAndroidcameraEvent): Self = StObject.set(x, "androidcamera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAndroidfocus(value: TabGroupAndroidfocusEvent): Self = StObject.set(x, "androidfocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidback(value: TabGroupAndroidbackEvent): Self = this.set("androidback", value.asInstanceOf[js.Any])
+    def setAndroidsearch(value: TabGroupAndroidsearchEvent): Self = StObject.set(x, "androidsearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidcamera(value: TabGroupAndroidcameraEvent): Self = this.set("androidcamera", value.asInstanceOf[js.Any])
+    def setAndroidvoldown(value: TabGroupAndroidvoldownEvent): Self = StObject.set(x, "androidvoldown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidfocus(value: TabGroupAndroidfocusEvent): Self = this.set("androidfocus", value.asInstanceOf[js.Any])
+    def setAndroidvolup(value: TabGroupAndroidvolupEvent): Self = StObject.set(x, "androidvolup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidsearch(value: TabGroupAndroidsearchEvent): Self = this.set("androidsearch", value.asInstanceOf[js.Any])
+    def setBlur(value: TabGroupBlurEvent): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidvoldown(value: TabGroupAndroidvoldownEvent): Self = this.set("androidvoldown", value.asInstanceOf[js.Any])
+    def setClick(value: TabGroupClickEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidvolup(value: TabGroupAndroidvolupEvent): Self = this.set("androidvolup", value.asInstanceOf[js.Any])
+    def setClose(value: TabGroupCloseEvent): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlur(value: TabGroupBlurEvent): Self = this.set("blur", value.asInstanceOf[js.Any])
+    def setDblclick(value: TabGroupDblclickEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: TabGroupClickEvent): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setDoubletap(value: TabGroupDoubletapEvent): Self = StObject.set(x, "doubletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: TabGroupCloseEvent): Self = this.set("close", value.asInstanceOf[js.Any])
+    def setFocus(value: TabGroupFocusEvent): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDblclick(value: TabGroupDblclickEvent): Self = this.set("dblclick", value.asInstanceOf[js.Any])
+    def setKeypressed(value: TabGroupKeypressedEvent): Self = StObject.set(x, "keypressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubletap(value: TabGroupDoubletapEvent): Self = this.set("doubletap", value.asInstanceOf[js.Any])
+    def setLongclick(value: TabGroupLongclickEvent): Self = StObject.set(x, "longclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus(value: TabGroupFocusEvent): Self = this.set("focus", value.asInstanceOf[js.Any])
+    def setLongpress(value: TabGroupLongpressEvent): Self = StObject.set(x, "longpress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeypressed(value: TabGroupKeypressedEvent): Self = this.set("keypressed", value.asInstanceOf[js.Any])
+    def setOpen(value: TabGroupOpenEvent): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongclick(value: TabGroupLongclickEvent): Self = this.set("longclick", value.asInstanceOf[js.Any])
+    def setPinch(value: TabGroupPinchEvent): Self = StObject.set(x, "pinch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongpress(value: TabGroupLongpressEvent): Self = this.set("longpress", value.asInstanceOf[js.Any])
+    def setPostlayout(value: TabGroupPostlayoutEvent): Self = StObject.set(x, "postlayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: TabGroupOpenEvent): Self = this.set("open", value.asInstanceOf[js.Any])
+    def setSingletap(value: TabGroupSingletapEvent): Self = StObject.set(x, "singletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinch(value: TabGroupPinchEvent): Self = this.set("pinch", value.asInstanceOf[js.Any])
+    def setSwipe(value: TabGroupSwipeEvent): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostlayout(value: TabGroupPostlayoutEvent): Self = this.set("postlayout", value.asInstanceOf[js.Any])
+    def setTouchcancel(value: TabGroupTouchcancelEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingletap(value: TabGroupSingletapEvent): Self = this.set("singletap", value.asInstanceOf[js.Any])
+    def setTouchend(value: TabGroupTouchendEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipe(value: TabGroupSwipeEvent): Self = this.set("swipe", value.asInstanceOf[js.Any])
+    def setTouchmove(value: TabGroupTouchmoveEvent): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchcancel(value: TabGroupTouchcancelEvent): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
+    def setTouchstart(value: TabGroupTouchstartEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchend(value: TabGroupTouchendEvent): Self = this.set("touchend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchmove(value: TabGroupTouchmoveEvent): Self = this.set("touchmove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchstart(value: TabGroupTouchstartEvent): Self = this.set("touchstart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwofingertap(value: TabGroupTwofingertapEvent): Self = this.set("twofingertap", value.asInstanceOf[js.Any])
+    def setTwofingertap(value: TabGroupTwofingertapEvent): Self = StObject.set(x, "twofingertap", value.asInstanceOf[js.Any])
   }
 }

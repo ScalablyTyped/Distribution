@@ -16,6 +16,7 @@ import typings.activexLibreoffice.com_.sun.star.table.BorderLine2
 import typings.activexLibreoffice.com_.sun.star.table.ShadowFormat
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -167,39 +168,27 @@ object CharacterStyle {
   }
   
   @scala.inline
-  implicit class CharacterStyleOps[Self <: CharacterStyle] (val x: Self) extends AnyVal {
+  implicit class CharacterStyleMutableBuilder[Self <: CharacterStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharDiffHeight(value: Double): Self = StObject.set(x, "CharDiffHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharDiffHeightAsian(value: Double): Self = StObject.set(x, "CharDiffHeightAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCharDiffHeightComplex(value: Double): Self = StObject.set(x, "CharDiffHeightComplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharDiffHeight(value: Double): Self = this.set("CharDiffHeight", value.asInstanceOf[js.Any])
+    def setCharPropHeight(value: Double): Self = StObject.set(x, "CharPropHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharDiffHeightAsian(value: Double): Self = this.set("CharDiffHeightAsian", value.asInstanceOf[js.Any])
+    def setCharPropHeightAsian(value: Double): Self = StObject.set(x, "CharPropHeightAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharDiffHeightComplex(value: Double): Self = this.set("CharDiffHeightComplex", value.asInstanceOf[js.Any])
+    def setCharPropHeightComplex(value: Double): Self = StObject.set(x, "CharPropHeightComplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharPropHeight(value: Double): Self = this.set("CharPropHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCharPropHeightAsian(value: Double): Self = this.set("CharPropHeightAsian", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCharPropHeightComplex(value: Double): Self = this.set("CharPropHeightComplex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = this.set("getPropertySetInfo", js.Any.fromFunction0(value))
+    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
   }
 }

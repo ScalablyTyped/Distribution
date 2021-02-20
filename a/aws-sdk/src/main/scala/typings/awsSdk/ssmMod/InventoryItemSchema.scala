@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InventoryItemSchema extends js.Object {
+trait InventoryItemSchema extends StObject {
   
   /**
     * The schema attributes for inventory. This contains data type and attribute name.
@@ -36,39 +37,27 @@ object InventoryItemSchema {
   }
   
   @scala.inline
-  implicit class InventoryItemSchemaOps[Self <: InventoryItemSchema] (val x: Self) extends AnyVal {
+  implicit class InventoryItemSchemaMutableBuilder[Self <: InventoryItemSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: InventoryItemAttributeList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesVarargs(value: InventoryItemAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: InventoryTypeDisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributesVarargs(value: InventoryItemAttribute*): Self = this.set("Attributes", js.Array(value :_*))
+    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
     @scala.inline
-    def setAttributes(value: InventoryItemAttributeList): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    def setTypeName(value: InventoryItemTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeName(value: InventoryItemTypeName): Self = this.set("TypeName", value.asInstanceOf[js.Any])
+    def setVersion(value: InventoryItemSchemaVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: InventoryTypeDisplayName): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: InventoryItemSchemaVersion): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

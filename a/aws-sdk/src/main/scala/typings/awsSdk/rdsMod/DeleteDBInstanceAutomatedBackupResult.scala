@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteDBInstanceAutomatedBackupResult extends js.Object {
+trait DeleteDBInstanceAutomatedBackupResult extends StObject {
   
   var DBInstanceAutomatedBackup: js.UndefOr[typings.awsSdk.rdsMod.DBInstanceAutomatedBackup] = js.native
 }
@@ -18,24 +19,12 @@ object DeleteDBInstanceAutomatedBackupResult {
   }
   
   @scala.inline
-  implicit class DeleteDBInstanceAutomatedBackupResultOps[Self <: DeleteDBInstanceAutomatedBackupResult] (val x: Self) extends AnyVal {
+  implicit class DeleteDBInstanceAutomatedBackupResultMutableBuilder[Self <: DeleteDBInstanceAutomatedBackupResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDBInstanceAutomatedBackup(value: DBInstanceAutomatedBackup): Self = StObject.set(x, "DBInstanceAutomatedBackup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDBInstanceAutomatedBackup(value: DBInstanceAutomatedBackup): Self = this.set("DBInstanceAutomatedBackup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDBInstanceAutomatedBackup: Self = this.set("DBInstanceAutomatedBackup", js.undefined)
+    def setDBInstanceAutomatedBackupUndefined: Self = StObject.set(x, "DBInstanceAutomatedBackup", js.undefined)
   }
 }

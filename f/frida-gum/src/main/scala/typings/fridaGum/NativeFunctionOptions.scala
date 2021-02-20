@@ -1,11 +1,12 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NativeFunctionOptions extends js.Object {
+trait NativeFunctionOptions extends StObject {
   
   var abi: js.UndefOr[NativeABI] = js.native
   
@@ -24,42 +25,30 @@ object NativeFunctionOptions {
   }
   
   @scala.inline
-  implicit class NativeFunctionOptionsOps[Self <: NativeFunctionOptions] (val x: Self) extends AnyVal {
+  implicit class NativeFunctionOptionsMutableBuilder[Self <: NativeFunctionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbi(value: NativeABI): Self = StObject.set(x, "abi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbiUndefined: Self = StObject.set(x, "abi", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExceptions(value: ExceptionsBehavior): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbi(value: NativeABI): Self = this.set("abi", value.asInstanceOf[js.Any])
+    def setExceptionsUndefined: Self = StObject.set(x, "exceptions", js.undefined)
     
     @scala.inline
-    def deleteAbi: Self = this.set("abi", js.undefined)
+    def setScheduling(value: SchedulingBehavior): Self = StObject.set(x, "scheduling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExceptions(value: ExceptionsBehavior): Self = this.set("exceptions", value.asInstanceOf[js.Any])
+    def setSchedulingUndefined: Self = StObject.set(x, "scheduling", js.undefined)
     
     @scala.inline
-    def deleteExceptions: Self = this.set("exceptions", js.undefined)
+    def setTraps(value: CodeTraps): Self = StObject.set(x, "traps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduling(value: SchedulingBehavior): Self = this.set("scheduling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduling: Self = this.set("scheduling", js.undefined)
-    
-    @scala.inline
-    def setTraps(value: CodeTraps): Self = this.set("traps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTraps: Self = this.set("traps", js.undefined)
+    def setTrapsUndefined: Self = StObject.set(x, "traps", js.undefined)
   }
 }

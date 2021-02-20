@@ -1,11 +1,12 @@
 package typings.awsSdk.transcribeserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobExecutionSettings extends js.Object {
+trait JobExecutionSettings extends StObject {
   
   /**
     * Indicates whether a job should be queued by Amazon Transcribe when the concurrent execution limit is exceeded. When the AllowDeferredExecution field is true, jobs are queued and executed when the number of executing jobs falls below the concurrent execution limit. If the field is false, Amazon Transcribe returns a LimitExceededException exception. If you specify the AllowDeferredExecution field, you must specify the DataAccessRoleArn field.
@@ -26,30 +27,18 @@ object JobExecutionSettings {
   }
   
   @scala.inline
-  implicit class JobExecutionSettingsOps[Self <: JobExecutionSettings] (val x: Self) extends AnyVal {
+  implicit class JobExecutionSettingsMutableBuilder[Self <: JobExecutionSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowDeferredExecution(value: Boolean): Self = StObject.set(x, "AllowDeferredExecution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowDeferredExecutionUndefined: Self = StObject.set(x, "AllowDeferredExecution", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataAccessRoleArn(value: DataAccessRoleArn): Self = StObject.set(x, "DataAccessRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowDeferredExecution(value: Boolean): Self = this.set("AllowDeferredExecution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowDeferredExecution: Self = this.set("AllowDeferredExecution", js.undefined)
-    
-    @scala.inline
-    def setDataAccessRoleArn(value: DataAccessRoleArn): Self = this.set("DataAccessRoleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataAccessRoleArn: Self = this.set("DataAccessRoleArn", js.undefined)
+    def setDataAccessRoleArnUndefined: Self = StObject.set(x, "DataAccessRoleArn", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.jsJoda.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "ZoneRules")
 @js.native
-abstract class ZoneRules () extends js.Object {
+abstract class ZoneRules () extends StObject {
   
   def daylightSavings(instant: Instant): Duration = js.native
   
@@ -41,10 +42,10 @@ abstract class ZoneRules () extends js.Object {
   
   def validOffsets(localDateTime: LocalDateTime): js.Array[ZoneOffset] = js.native
 }
-/* static members */
-@JSImport("js-joda", "ZoneRules")
-@js.native
-object ZoneRules extends js.Object {
+object ZoneRules {
   
+  /* static member */
+  @JSImport("js-joda", "ZoneRules.of")
+  @js.native
   def of(offest: ZoneOffset): ZoneRules = js.native
 }

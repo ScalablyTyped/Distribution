@@ -1,80 +1,67 @@
 package typings.blueprintjsDatetime
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/datetime/lib/esm/common/months", JSImport.Namespace)
-@js.native
-object monthsMod extends js.Object {
+object monthsMod {
   
   @js.native
-  sealed trait Months extends js.Object
+  sealed trait Months extends StObject
+  @JSImport("@blueprintjs/datetime/lib/esm/common/months", "Months")
   @js.native
-  object Months extends js.Object {
+  object Months extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Months with Double] = js.native
     
     @js.native
     sealed trait APRIL extends Months
-    /* 3 */ @js.native
-    object APRIL extends TopLevel[APRIL with Double]
+    /* 3 */ val APRIL: typings.blueprintjsDatetime.monthsMod.Months.APRIL with Double = js.native
     
     @js.native
     sealed trait AUGUST extends Months
-    /* 7 */ @js.native
-    object AUGUST extends TopLevel[AUGUST with Double]
+    /* 7 */ val AUGUST: typings.blueprintjsDatetime.monthsMod.Months.AUGUST with Double = js.native
     
     @js.native
     sealed trait DECEMBER extends Months
-    /* 11 */ @js.native
-    object DECEMBER extends TopLevel[DECEMBER with Double]
+    /* 11 */ val DECEMBER: typings.blueprintjsDatetime.monthsMod.Months.DECEMBER with Double = js.native
     
     @js.native
     sealed trait FEBRUARY extends Months
-    /* 1 */ @js.native
-    object FEBRUARY extends TopLevel[FEBRUARY with Double]
+    /* 1 */ val FEBRUARY: typings.blueprintjsDatetime.monthsMod.Months.FEBRUARY with Double = js.native
     
     @js.native
     sealed trait JANUARY extends Months
-    /* 0 */ @js.native
-    object JANUARY extends TopLevel[JANUARY with Double]
+    /* 0 */ val JANUARY: typings.blueprintjsDatetime.monthsMod.Months.JANUARY with Double = js.native
     
     @js.native
     sealed trait JULY extends Months
-    /* 6 */ @js.native
-    object JULY extends TopLevel[JULY with Double]
+    /* 6 */ val JULY: typings.blueprintjsDatetime.monthsMod.Months.JULY with Double = js.native
     
     @js.native
     sealed trait JUNE extends Months
-    /* 5 */ @js.native
-    object JUNE extends TopLevel[JUNE with Double]
+    /* 5 */ val JUNE: typings.blueprintjsDatetime.monthsMod.Months.JUNE with Double = js.native
     
     @js.native
     sealed trait MARCH extends Months
-    /* 2 */ @js.native
-    object MARCH extends TopLevel[MARCH with Double]
+    /* 2 */ val MARCH: typings.blueprintjsDatetime.monthsMod.Months.MARCH with Double = js.native
     
     @js.native
     sealed trait MAY extends Months
-    /* 4 */ @js.native
-    object MAY extends TopLevel[MAY with Double]
+    /* 4 */ val MAY: typings.blueprintjsDatetime.monthsMod.Months.MAY with Double = js.native
     
     @js.native
     sealed trait NOVEMBER extends Months
-    /* 10 */ @js.native
-    object NOVEMBER extends TopLevel[NOVEMBER with Double]
+    /* 10 */ val NOVEMBER: typings.blueprintjsDatetime.monthsMod.Months.NOVEMBER with Double = js.native
     
     @js.native
     sealed trait OCTOBER extends Months
-    /* 9 */ @js.native
-    object OCTOBER extends TopLevel[OCTOBER with Double]
+    /* 9 */ val OCTOBER: typings.blueprintjsDatetime.monthsMod.Months.OCTOBER with Double = js.native
     
     @js.native
     sealed trait SEPTEMBER extends Months
-    /* 8 */ @js.native
-    object SEPTEMBER extends TopLevel[SEPTEMBER with Double]
+    /* 8 */ val SEPTEMBER: typings.blueprintjsDatetime.monthsMod.Months.SEPTEMBER with Double = js.native
   }
 }

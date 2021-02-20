@@ -2,6 +2,7 @@ package typings.storybookAddons.typesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.storybookAddons.hooksMod.HooksContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,51 +47,39 @@ object StoryContext {
   }
   
   @scala.inline
-  implicit class StoryContextOps[Self <: StoryContext] (val x: Self) extends AnyVal {
+  implicit class StoryContextMutableBuilder[Self <: StoryContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgTypes(value: ArgTypes): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgs(value: Args): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlobals(value: Args): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgTypes(value: ArgTypes): Self = this.set("argTypes", value.asInstanceOf[js.Any])
+    def setHooks(value: HooksContext): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: Args): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
     
     @scala.inline
-    def setGlobals(value: Args): Self = this.set("globals", value.asInstanceOf[js.Any])
+    def setId(value: StoryId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: StoryId): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKind(value: StoryKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: StoryKind): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setName(value: StoryName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: StoryName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: Parameters): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHooks(value: HooksContext): Self = this.set("hooks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHooks: Self = this.set("hooks", js.undefined)
-    
-    @scala.inline
-    def setViewMode(value: ViewMode): Self = this.set("viewMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewMode: Self = this.set("viewMode", js.undefined)
+    def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
   }
 }

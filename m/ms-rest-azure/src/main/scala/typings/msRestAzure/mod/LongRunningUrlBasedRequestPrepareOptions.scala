@@ -2,6 +2,7 @@ package typings.msRestAzure.mod
 
 import typings.msRest.mod.Mapper
 import typings.msRest.mod.UrlBasedRequestPrepareOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,24 +21,12 @@ object LongRunningUrlBasedRequestPrepareOptions {
   }
   
   @scala.inline
-  implicit class LongRunningUrlBasedRequestPrepareOptionsOps[Self <: LongRunningUrlBasedRequestPrepareOptions] (val x: Self) extends AnyVal {
+  implicit class LongRunningUrlBasedRequestPrepareOptionsMutableBuilder[Self <: LongRunningUrlBasedRequestPrepareOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeserializationMapperForTerminalResponse(value: Mapper): Self = StObject.set(x, "deserializationMapperForTerminalResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeserializationMapperForTerminalResponse(value: Mapper): Self = this.set("deserializationMapperForTerminalResponse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeserializationMapperForTerminalResponse: Self = this.set("deserializationMapperForTerminalResponse", js.undefined)
+    def setDeserializationMapperForTerminalResponseUndefined: Self = StObject.set(x, "deserializationMapperForTerminalResponse", js.undefined)
   }
 }

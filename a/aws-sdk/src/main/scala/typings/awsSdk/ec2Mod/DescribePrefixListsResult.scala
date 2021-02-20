@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribePrefixListsResult extends js.Object {
+trait DescribePrefixListsResult extends StObject {
   
   /**
     * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
@@ -26,33 +27,21 @@ object DescribePrefixListsResult {
   }
   
   @scala.inline
-  implicit class DescribePrefixListsResultOps[Self <: DescribePrefixListsResult] (val x: Self) extends AnyVal {
+  implicit class DescribePrefixListsResultMutableBuilder[Self <: DescribePrefixListsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrefixLists(value: PrefixListSet): Self = StObject.set(x, "PrefixLists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setPrefixListsUndefined: Self = StObject.set(x, "PrefixLists", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setPrefixListsVarargs(value: PrefixList*): Self = this.set("PrefixLists", js.Array(value :_*))
-    
-    @scala.inline
-    def setPrefixLists(value: PrefixListSet): Self = this.set("PrefixLists", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefixLists: Self = this.set("PrefixLists", js.undefined)
+    def setPrefixListsVarargs(value: PrefixList*): Self = StObject.set(x, "PrefixLists", js.Array(value :_*))
   }
 }

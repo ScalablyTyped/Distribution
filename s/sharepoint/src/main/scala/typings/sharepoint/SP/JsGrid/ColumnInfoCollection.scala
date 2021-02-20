@@ -1,12 +1,13 @@
 package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnInfoCollection extends js.Object {
+trait ColumnInfoCollection extends StObject {
   
   def AppendColumn(colInfo: js.Any): Unit = js.native
   

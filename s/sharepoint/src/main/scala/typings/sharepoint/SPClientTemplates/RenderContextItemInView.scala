@@ -2,6 +2,7 @@ package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,24 +107,12 @@ object RenderContextItemInView {
   }
   
   @scala.inline
-  implicit class RenderContextItemInViewOps[Self <: RenderContextItemInView] (val x: Self) extends AnyVal {
+  implicit class RenderContextItemInViewMutableBuilder[Self <: RenderContextItemInView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentItem(value: Item): Self = StObject.set(x, "CurrentItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrentItem(value: Item): Self = this.set("CurrentItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentItemIdx(value: Double): Self = this.set("CurrentItemIdx", value.asInstanceOf[js.Any])
+    def setCurrentItemIdx(value: Double): Self = StObject.set(x, "CurrentItemIdx", value.asInstanceOf[js.Any])
   }
 }

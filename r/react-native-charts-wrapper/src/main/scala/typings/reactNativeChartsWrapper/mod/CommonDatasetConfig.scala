@@ -1,11 +1,12 @@
 package typings.reactNativeChartsWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommonDatasetConfig extends js.Object {
+trait CommonDatasetConfig extends StObject {
   
   var axisDependency: js.UndefOr[AxisDependency] = js.native
   
@@ -34,78 +35,66 @@ object CommonDatasetConfig {
   }
   
   @scala.inline
-  implicit class CommonDatasetConfigOps[Self <: CommonDatasetConfig] (val x: Self) extends AnyVal {
+  implicit class CommonDatasetConfigMutableBuilder[Self <: CommonDatasetConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxisDependency(value: AxisDependency): Self = StObject.set(x, "axisDependency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisDependencyUndefined: Self = StObject.set(x, "axisDependency", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisDependency(value: AxisDependency): Self = this.set("axisDependency", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteAxisDependency: Self = this.set("axisDependency", js.undefined)
+    def setColors(value: js.Array[Color]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
     @scala.inline
-    def setColorsVarargs(value: Color*): Self = this.set("colors", js.Array(value :_*))
+    def setDrawValues(value: Boolean): Self = StObject.set(x, "drawValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: js.Array[Color]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setDrawValuesUndefined: Self = StObject.set(x, "drawValues", js.undefined)
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setHighlightEnabled(value: Boolean): Self = StObject.set(x, "highlightEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawValues(value: Boolean): Self = this.set("drawValues", value.asInstanceOf[js.Any])
+    def setHighlightEnabledUndefined: Self = StObject.set(x, "highlightEnabled", js.undefined)
     
     @scala.inline
-    def deleteDrawValues: Self = this.set("drawValues", js.undefined)
+    def setValueFormatter(value: ValueFormatter): Self = StObject.set(x, "valueFormatter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightEnabled(value: Boolean): Self = this.set("highlightEnabled", value.asInstanceOf[js.Any])
+    def setValueFormatterUndefined: Self = StObject.set(x, "valueFormatter", js.undefined)
     
     @scala.inline
-    def deleteHighlightEnabled: Self = this.set("highlightEnabled", js.undefined)
+    def setValueFormatterVarargs(value: String*): Self = StObject.set(x, "valueFormatter", js.Array(value :_*))
     
     @scala.inline
-    def setValueFormatterVarargs(value: String*): Self = this.set("valueFormatter", js.Array(value :_*))
+    def setValueTextColor(value: Color): Self = StObject.set(x, "valueTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueFormatter(value: ValueFormatter): Self = this.set("valueFormatter", value.asInstanceOf[js.Any])
+    def setValueTextColorUndefined: Self = StObject.set(x, "valueTextColor", js.undefined)
     
     @scala.inline
-    def deleteValueFormatter: Self = this.set("valueFormatter", js.undefined)
+    def setValueTextSize(value: Double): Self = StObject.set(x, "valueTextSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueTextColor(value: Color): Self = this.set("valueTextColor", value.asInstanceOf[js.Any])
+    def setValueTextSizeUndefined: Self = StObject.set(x, "valueTextSize", js.undefined)
     
     @scala.inline
-    def deleteValueTextColor: Self = this.set("valueTextColor", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueTextSize(value: Double): Self = this.set("valueTextSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueTextSize: Self = this.set("valueTextSize", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

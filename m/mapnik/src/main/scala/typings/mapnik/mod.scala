@@ -11,34 +11,24 @@ import typings.mapnik.anon.Layer
 import typings.mapnik.anon.Upgrade
 import typings.node.Buffer
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mapnik", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @JSName("register_datasource")
-  def registerDatasource(path: String): Unit = js.native
-  
-  @JSName("register_default_fonts")
-  def registerDefaultFonts(): Unit = js.native
-  
-  @JSName("register_default_input_plugins")
-  def registerDefaultInputPlugins(): Unit = js.native
-  
-  val settings: js.Any = js.native
-  
+  @JSImport("mapnik", "Datasource")
   @js.native
-  class Datasource protected () extends js.Object {
+  class Datasource protected () extends StObject {
     def this(datasource: js.Any) = this()
     
     def featureset(): Featureset = js.native
   }
   
+  @JSImport("mapnik", "Feature")
   @js.native
-  class Feature () extends js.Object {
+  class Feature () extends StObject {
     
     def attributes(): js.Any = js.native
     
@@ -48,24 +38,27 @@ object mod extends js.Object {
     
     def geometry(): js.Any = js.native
     
-     // TODO: Geometry class
+    // TODO: Geometry class
     def id(): Double = js.native
     
     def toJSON(): String = js.native
   }
   
+  @JSImport("mapnik", "Featureset")
   @js.native
-  class Featureset () extends js.Object {
+  class Featureset () extends StObject {
     
     def next(): FeaturesetNext = js.native
   }
   
+  @JSImport("mapnik", "FeaturesetNext")
   @js.native
-  class FeaturesetNext () extends js.Object {
+  class FeaturesetNext () extends StObject {
     
     def toJSON(): String = js.native
   }
   
+  @JSImport("mapnik", "Image")
   @js.native
   class Image protected ()
     extends // constructor(x: number, y: number)
@@ -82,8 +75,9 @@ object mod extends js.Object {
     def save(fp: String): js.Function0[Unit] = js.native
   }
   
+  @JSImport("mapnik", "Map")
   @js.native
-  class Map protected () extends js.Object {
+  class Map protected () extends StObject {
     def this(x: Double, y: Double) = this()
     
     def load(xml: String): Unit = js.native
@@ -97,8 +91,9 @@ object mod extends js.Object {
     def zoomAll(): Unit = js.native
   }
   
+  @JSImport("mapnik", "VectorTile")
   @js.native
-  class VectorTile protected () extends js.Object {
+  class VectorTile protected () extends StObject {
     def this(z: Double, x: Double, y: Double) = this()
     
     def addData(buffer: Buffer): Unit = js.native
@@ -179,4 +174,20 @@ object mod extends js.Object {
       callback: js.Function2[/* err */ Error, /* features */ js.Array[Feature], Unit]
     ): Unit = js.native
   }
+  
+  @JSImport("mapnik", "register_datasource")
+  @js.native
+  def registerDatasource(path: String): Unit = js.native
+  
+  @JSImport("mapnik", "register_default_fonts")
+  @js.native
+  def registerDefaultFonts(): Unit = js.native
+  
+  @JSImport("mapnik", "register_default_input_plugins")
+  @js.native
+  def registerDefaultInputPlugins(): Unit = js.native
+  
+  @JSImport("mapnik", "settings")
+  @js.native
+  val settings: js.Any = js.native
 }

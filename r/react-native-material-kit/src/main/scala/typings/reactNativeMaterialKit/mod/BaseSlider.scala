@@ -1,6 +1,7 @@
 package typings.reactNativeMaterialKit.mod
 
 import typings.reactNative.mod.ViewProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,72 +36,60 @@ object BaseSlider {
   }
   
   @scala.inline
-  implicit class BaseSliderOps[Self <: BaseSlider] (val x: Self) extends AnyVal {
+  implicit class BaseSliderMutableBuilder[Self <: BaseSlider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLowerTrackColor(value: String): Self = StObject.set(x, "lowerTrackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLowerTrackColorUndefined: Self = StObject.set(x, "lowerTrackColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerTrackColor(value: String): Self = this.set("lowerTrackColor", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteLowerTrackColor: Self = this.set("lowerTrackColor", js.undefined)
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setThumbPadding(value: Double): Self = StObject.set(x, "thumbPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    def setThumbPaddingUndefined: Self = StObject.set(x, "thumbPadding", js.undefined)
     
     @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
+    def setThumbRadius(value: Double): Self = StObject.set(x, "thumbRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbPadding(value: Double): Self = this.set("thumbPadding", value.asInstanceOf[js.Any])
+    def setThumbRadiusUndefined: Self = StObject.set(x, "thumbRadius", js.undefined)
     
     @scala.inline
-    def deleteThumbPadding: Self = this.set("thumbPadding", js.undefined)
+    def setTrackSize(value: Double): Self = StObject.set(x, "trackSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbRadius(value: Double): Self = this.set("thumbRadius", value.asInstanceOf[js.Any])
+    def setTrackSizeUndefined: Self = StObject.set(x, "trackSize", js.undefined)
     
     @scala.inline
-    def deleteThumbRadius: Self = this.set("thumbRadius", js.undefined)
+    def setUpperTrackColor(value: String): Self = StObject.set(x, "upperTrackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackSize(value: Double): Self = this.set("trackSize", value.asInstanceOf[js.Any])
+    def setUpperTrackColorUndefined: Self = StObject.set(x, "upperTrackColor", js.undefined)
     
     @scala.inline
-    def deleteTrackSize: Self = this.set("trackSize", js.undefined)
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpperTrackColor(value: String): Self = this.set("upperTrackColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpperTrackColor: Self = this.set("upperTrackColor", js.undefined)
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

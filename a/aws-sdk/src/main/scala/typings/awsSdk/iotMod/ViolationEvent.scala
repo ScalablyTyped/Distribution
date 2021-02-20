@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViolationEvent extends js.Object {
+trait ViolationEvent extends StObject {
   
   /**
     * The behavior which was violated.
@@ -51,60 +52,48 @@ object ViolationEvent {
   }
   
   @scala.inline
-  implicit class ViolationEventOps[Self <: ViolationEvent] (val x: Self) extends AnyVal {
+  implicit class ViolationEventMutableBuilder[Self <: ViolationEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBehavior(value: Behavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricValue(value: MetricValue): Self = StObject.set(x, "metricValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBehavior(value: Behavior): Self = this.set("behavior", value.asInstanceOf[js.Any])
+    def setMetricValueUndefined: Self = StObject.set(x, "metricValue", js.undefined)
     
     @scala.inline
-    def deleteBehavior: Self = this.set("behavior", js.undefined)
+    def setSecurityProfileName(value: SecurityProfileName): Self = StObject.set(x, "securityProfileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricValue(value: MetricValue): Self = this.set("metricValue", value.asInstanceOf[js.Any])
+    def setSecurityProfileNameUndefined: Self = StObject.set(x, "securityProfileName", js.undefined)
     
     @scala.inline
-    def deleteMetricValue: Self = this.set("metricValue", js.undefined)
+    def setThingName(value: DeviceDefenderThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityProfileName(value: SecurityProfileName): Self = this.set("securityProfileName", value.asInstanceOf[js.Any])
+    def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
     
     @scala.inline
-    def deleteSecurityProfileName: Self = this.set("securityProfileName", js.undefined)
+    def setViolationEventTime(value: Timestamp): Self = StObject.set(x, "violationEventTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingName(value: DeviceDefenderThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
+    def setViolationEventTimeUndefined: Self = StObject.set(x, "violationEventTime", js.undefined)
     
     @scala.inline
-    def deleteThingName: Self = this.set("thingName", js.undefined)
+    def setViolationEventType(value: ViolationEventType): Self = StObject.set(x, "violationEventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViolationEventTime(value: Timestamp): Self = this.set("violationEventTime", value.asInstanceOf[js.Any])
+    def setViolationEventTypeUndefined: Self = StObject.set(x, "violationEventType", js.undefined)
     
     @scala.inline
-    def deleteViolationEventTime: Self = this.set("violationEventTime", js.undefined)
+    def setViolationId(value: ViolationId): Self = StObject.set(x, "violationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViolationEventType(value: ViolationEventType): Self = this.set("violationEventType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViolationEventType: Self = this.set("violationEventType", js.undefined)
-    
-    @scala.inline
-    def setViolationId(value: ViolationId): Self = this.set("violationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViolationId: Self = this.set("violationId", js.undefined)
+    def setViolationIdUndefined: Self = StObject.set(x, "violationId", js.undefined)
   }
 }

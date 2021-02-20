@@ -3,12 +3,13 @@ package typings.tensorflowTfjsCore.anon
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTensorMod.Tensor1D
 import typings.tensorflowTfjsCore.distTypesMod.Rank
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Values[T /* <: Tensor[Rank] */] extends js.Object {
+trait Values[T /* <: Tensor[Rank] */] extends StObject {
   
   var indices: Tensor1D = js.native
   
@@ -23,24 +24,12 @@ object Values {
   }
   
   @scala.inline
-  implicit class ValuesOps[Self <: Values[_], T /* <: Tensor[Rank] */] (val x: Self with Values[T]) extends AnyVal {
+  implicit class ValuesMutableBuilder[Self <: Values[_], T /* <: Tensor[Rank] */] (val x: Self with Values[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndices(value: Tensor1D): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIndices(value: Tensor1D): Self = this.set("indices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValues(value: T): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValues(value: T): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

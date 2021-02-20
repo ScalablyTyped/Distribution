@@ -1,17 +1,18 @@
 package typings.openui5.sap.ui.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ValueState extends js.Object
+sealed trait ValueState extends StObject
 /**
   * Marker for the correctness of the current value.
   */
 @JSGlobal("sap.ui.core.ValueState")
 @js.native
-object ValueState extends js.Object {
+object ValueState extends StObject {
   
   @js.native
   sealed trait Error extends ValueState

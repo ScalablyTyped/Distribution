@@ -2,12 +2,13 @@ package typings.aliApp.anon
 
 import typings.aliApp.aliAppStrings.N
 import typings.aliApp.aliAppStrings.Y
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Admitstate extends js.Object {
+trait Admitstate extends StObject {
   
   /**
     * 是否准入:Y:准入；N:不准入(该字段目前无实际意义)
@@ -60,36 +61,24 @@ object Admitstate {
   }
   
   @scala.inline
-  implicit class AdmitstateOps[Self <: Admitstate] (val x: Self) extends AnyVal {
+  implicit class AdmitstateMutableBuilder[Self <: Admitstate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdmit_state(value: Y | N | String): Self = StObject.set(x, "admit_state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackData(value: js.Any): Self = StObject.set(x, "callbackData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvoke_state(value: String): Self = StObject.set(x, "invoke_state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdmit_state(value: Y | N | String): Self = this.set("admit_state", value.asInstanceOf[js.Any])
+    def setOrder_no(value: String): Self = StObject.set(x, "order_no", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackData(value: js.Any): Self = this.set("callbackData", value.asInstanceOf[js.Any])
+    def setOut_order_no(value: String): Self = StObject.set(x, "out_order_no", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvoke_state(value: String): Self = this.set("invoke_state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrder_no(value: String): Self = this.set("order_no", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOut_order_no(value: String): Self = this.set("out_order_no", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser_id(value: String): Self = this.set("user_id", value.asInstanceOf[js.Any])
+    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
   }
 }

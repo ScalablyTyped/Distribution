@@ -3,6 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.HashMap
 import typings.std.Date
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,48 +62,36 @@ object SceneViewEnvironmentLighting {
   }
   
   @scala.inline
-  implicit class SceneViewEnvironmentLightingOps[Self <: SceneViewEnvironmentLighting] (val x: Self) extends AnyVal {
+  implicit class SceneViewEnvironmentLightingMutableBuilder[Self <: SceneViewEnvironmentLighting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmbientOcclusionEnabled(value: Boolean): Self = StObject.set(x, "ambientOcclusionEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmbientOcclusionEnabledUndefined: Self = StObject.set(x, "ambientOcclusionEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCameraTrackingEnabled(value: Boolean): Self = StObject.set(x, "cameraTrackingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmbientOcclusionEnabled(value: Boolean): Self = this.set("ambientOcclusionEnabled", value.asInstanceOf[js.Any])
+    def setCameraTrackingEnabledUndefined: Self = StObject.set(x, "cameraTrackingEnabled", js.undefined)
     
     @scala.inline
-    def deleteAmbientOcclusionEnabled: Self = this.set("ambientOcclusionEnabled", js.undefined)
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCameraTrackingEnabled(value: Boolean): Self = this.set("cameraTrackingEnabled", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def deleteCameraTrackingEnabled: Self = this.set("cameraTrackingEnabled", js.undefined)
+    def setDirectShadowsEnabled(value: Boolean): Self = StObject.set(x, "directShadowsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setDirectShadowsEnabledUndefined: Self = StObject.set(x, "directShadowsEnabled", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setWaterReflectionEnabled(value: Boolean): Self = StObject.set(x, "waterReflectionEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectShadowsEnabled(value: Boolean): Self = this.set("directShadowsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirectShadowsEnabled: Self = this.set("directShadowsEnabled", js.undefined)
-    
-    @scala.inline
-    def setWaterReflectionEnabled(value: Boolean): Self = this.set("waterReflectionEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaterReflectionEnabled: Self = this.set("waterReflectionEnabled", js.undefined)
+    def setWaterReflectionEnabledUndefined: Self = StObject.set(x, "waterReflectionEnabled", js.undefined)
   }
 }

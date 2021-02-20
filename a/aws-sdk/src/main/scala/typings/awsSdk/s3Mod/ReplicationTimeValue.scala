@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplicationTimeValue extends js.Object {
+trait ReplicationTimeValue extends StObject {
   
   /**
     *  Contains an integer specifying time in minutes.   Valid values: 15 minutes. 
@@ -21,24 +22,12 @@ object ReplicationTimeValue {
   }
   
   @scala.inline
-  implicit class ReplicationTimeValueOps[Self <: ReplicationTimeValue] (val x: Self) extends AnyVal {
+  implicit class ReplicationTimeValueMutableBuilder[Self <: ReplicationTimeValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinutes(value: Minutes): Self = StObject.set(x, "Minutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMinutes(value: Minutes): Self = this.set("Minutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinutes: Self = this.set("Minutes", js.undefined)
+    def setMinutesUndefined: Self = StObject.set(x, "Minutes", js.undefined)
   }
 }

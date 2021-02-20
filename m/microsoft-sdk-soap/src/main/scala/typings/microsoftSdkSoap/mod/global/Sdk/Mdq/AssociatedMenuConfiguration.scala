@@ -1,11 +1,12 @@
 package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociatedMenuConfiguration extends js.Object {
+trait AssociatedMenuConfiguration extends StObject {
   
   var Behavior: AssociatedMenuBehavior = js.native
   
@@ -24,30 +25,18 @@ object AssociatedMenuConfiguration {
   }
   
   @scala.inline
-  implicit class AssociatedMenuConfigurationOps[Self <: AssociatedMenuConfiguration] (val x: Self) extends AnyVal {
+  implicit class AssociatedMenuConfigurationMutableBuilder[Self <: AssociatedMenuConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBehavior(value: AssociatedMenuBehavior): Self = StObject.set(x, "Behavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroup(value: AssociatedMenuGroup): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabel(value: Label): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBehavior(value: AssociatedMenuBehavior): Self = this.set("Behavior", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGroup(value: AssociatedMenuGroup): Self = this.set("Group", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: Label): Self = this.set("Label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrder(value: Double): Self = this.set("Order", value.asInstanceOf[js.Any])
+    def setOrder(value: Double): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
   }
 }

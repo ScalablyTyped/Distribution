@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioDescription extends js.Object {
+trait AudioDescription extends StObject {
   
   /**
     * When you mimic a multi-channel audio layout with multiple mono-channel tracks, you can tag each channel layout manually. For example, you would tag the tracks that contain your left, right, and center audio with Left (L), Right (R), and Center (C), respectively. When you don't specify a value, MediaConvert labels your track as Center (C) by default. To use audio layout tagging, your output must be in a QuickTime (.mov) container; your audio codec must be AAC, WAV, or AIFF; and you must set up your audio track to have only one channel.
@@ -71,84 +72,72 @@ object AudioDescription {
   }
   
   @scala.inline
-  implicit class AudioDescriptionOps[Self <: AudioDescription] (val x: Self) extends AnyVal {
+  implicit class AudioDescriptionMutableBuilder[Self <: AudioDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioChannelTaggingSettings(value: AudioChannelTaggingSettings): Self = StObject.set(x, "AudioChannelTaggingSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioChannelTaggingSettingsUndefined: Self = StObject.set(x, "AudioChannelTaggingSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioNormalizationSettings(value: AudioNormalizationSettings): Self = StObject.set(x, "AudioNormalizationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioChannelTaggingSettings(value: AudioChannelTaggingSettings): Self = this.set("AudioChannelTaggingSettings", value.asInstanceOf[js.Any])
+    def setAudioNormalizationSettingsUndefined: Self = StObject.set(x, "AudioNormalizationSettings", js.undefined)
     
     @scala.inline
-    def deleteAudioChannelTaggingSettings: Self = this.set("AudioChannelTaggingSettings", js.undefined)
+    def setAudioSourceName(value: string): Self = StObject.set(x, "AudioSourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioNormalizationSettings(value: AudioNormalizationSettings): Self = this.set("AudioNormalizationSettings", value.asInstanceOf[js.Any])
+    def setAudioSourceNameUndefined: Self = StObject.set(x, "AudioSourceName", js.undefined)
     
     @scala.inline
-    def deleteAudioNormalizationSettings: Self = this.set("AudioNormalizationSettings", js.undefined)
+    def setAudioType(value: integerMin0Max255): Self = StObject.set(x, "AudioType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioSourceName(value: string): Self = this.set("AudioSourceName", value.asInstanceOf[js.Any])
+    def setAudioTypeControl(value: AudioTypeControl): Self = StObject.set(x, "AudioTypeControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAudioSourceName: Self = this.set("AudioSourceName", js.undefined)
+    def setAudioTypeControlUndefined: Self = StObject.set(x, "AudioTypeControl", js.undefined)
     
     @scala.inline
-    def setAudioType(value: integerMin0Max255): Self = this.set("AudioType", value.asInstanceOf[js.Any])
+    def setAudioTypeUndefined: Self = StObject.set(x, "AudioType", js.undefined)
     
     @scala.inline
-    def deleteAudioType: Self = this.set("AudioType", js.undefined)
+    def setCodecSettings(value: AudioCodecSettings): Self = StObject.set(x, "CodecSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioTypeControl(value: AudioTypeControl): Self = this.set("AudioTypeControl", value.asInstanceOf[js.Any])
+    def setCodecSettingsUndefined: Self = StObject.set(x, "CodecSettings", js.undefined)
     
     @scala.inline
-    def deleteAudioTypeControl: Self = this.set("AudioTypeControl", js.undefined)
+    def setCustomLanguageCode(value: stringPatternAZaZ23AZaZ): Self = StObject.set(x, "CustomLanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodecSettings(value: AudioCodecSettings): Self = this.set("CodecSettings", value.asInstanceOf[js.Any])
+    def setCustomLanguageCodeUndefined: Self = StObject.set(x, "CustomLanguageCode", js.undefined)
     
     @scala.inline
-    def deleteCodecSettings: Self = this.set("CodecSettings", js.undefined)
+    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomLanguageCode(value: stringPatternAZaZ23AZaZ): Self = this.set("CustomLanguageCode", value.asInstanceOf[js.Any])
+    def setLanguageCodeControl(value: AudioLanguageCodeControl): Self = StObject.set(x, "LanguageCodeControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomLanguageCode: Self = this.set("CustomLanguageCode", js.undefined)
+    def setLanguageCodeControlUndefined: Self = StObject.set(x, "LanguageCodeControl", js.undefined)
     
     @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    def setRemixSettings(value: RemixSettings): Self = StObject.set(x, "RemixSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCodeControl(value: AudioLanguageCodeControl): Self = this.set("LanguageCodeControl", value.asInstanceOf[js.Any])
+    def setRemixSettingsUndefined: Self = StObject.set(x, "RemixSettings", js.undefined)
     
     @scala.inline
-    def deleteLanguageCodeControl: Self = this.set("LanguageCodeControl", js.undefined)
+    def setStreamName(value: stringPatternWS): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemixSettings(value: RemixSettings): Self = this.set("RemixSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemixSettings: Self = this.set("RemixSettings", js.undefined)
-    
-    @scala.inline
-    def setStreamName(value: stringPatternWS): Self = this.set("StreamName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamName: Self = this.set("StreamName", js.undefined)
+    def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
   }
 }

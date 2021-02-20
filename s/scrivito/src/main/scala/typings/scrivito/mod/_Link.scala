@@ -1,11 +1,12 @@
 package typings.scrivito.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait _Link extends js.Object {
+trait _Link extends StObject {
   
   def copy(attributes: ExternalLinkAttributes): ExternalLink = js.native
   def copy(attributes: InternalLinkAttributes): InternalLink = js.native

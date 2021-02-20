@@ -9,6 +9,7 @@ import typings.stripe.stripeStrings.paid
 import typings.stripe.stripeStrings.send_invoice
 import typings.stripe.stripeStrings.uncollectible
 import typings.stripe.stripeStrings.void
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,66 +71,54 @@ object IInvoiceListOptions {
   }
   
   @scala.inline
-  implicit class IInvoiceListOptionsOps[Self <: IInvoiceListOptions] (val x: Self) extends AnyVal {
+  implicit class IInvoiceListOptionsMutableBuilder[Self <: IInvoiceListOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBilling(value: charge_automatically | send_invoice): Self = StObject.set(x, "billing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingUndefined: Self = StObject.set(x, "billing", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollection_method(value: charge_automatically | send_invoice): Self = StObject.set(x, "collection_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBilling(value: charge_automatically | send_invoice): Self = this.set("billing", value.asInstanceOf[js.Any])
+    def setCollection_methodUndefined: Self = StObject.set(x, "collection_method", js.undefined)
     
     @scala.inline
-    def deleteBilling: Self = this.set("billing", js.undefined)
+    def setCreated(value: IDateFilter): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollection_method(value: charge_automatically | send_invoice): Self = this.set("collection_method", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def deleteCollection_method: Self = this.set("collection_method", js.undefined)
+    def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: IDateFilter): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setDate(value: IDateFilter): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomer(value: String): Self = this.set("customer", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def deleteCustomer: Self = this.set("customer", js.undefined)
+    def setDue_date(value: IDateFilter): Self = StObject.set(x, "due_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: IDateFilter): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setDue_dateUndefined: Self = StObject.set(x, "due_date", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setStatus(value: draft | open | paid | uncollectible | void): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDue_date(value: IDateFilter): Self = this.set("due_date", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteDue_date: Self = this.set("due_date", js.undefined)
+    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: draft | open | paid | uncollectible | void): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setSubscription(value: String): Self = this.set("subscription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscription: Self = this.set("subscription", js.undefined)
+    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
   }
 }

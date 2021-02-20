@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CacheAttributes extends js.Object {
+trait CacheAttributes extends StObject {
   
   /**
     * Refreshes a file share's cache by using Time To Live (TTL). TTL is the length of time since the last refresh after which access to the directory would cause the file gateway to first refresh that directory's contents from the Amazon S3 bucket. The TTL duration is in seconds. Valid Values: 300 to 2,592,000 seconds (5 minutes to 30 days)
@@ -21,24 +22,12 @@ object CacheAttributes {
   }
   
   @scala.inline
-  implicit class CacheAttributesOps[Self <: CacheAttributes] (val x: Self) extends AnyVal {
+  implicit class CacheAttributesMutableBuilder[Self <: CacheAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheStaleTimeoutInSeconds(value: CacheStaleTimeoutInSeconds): Self = StObject.set(x, "CacheStaleTimeoutInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCacheStaleTimeoutInSeconds(value: CacheStaleTimeoutInSeconds): Self = this.set("CacheStaleTimeoutInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCacheStaleTimeoutInSeconds: Self = this.set("CacheStaleTimeoutInSeconds", js.undefined)
+    def setCacheStaleTimeoutInSecondsUndefined: Self = StObject.set(x, "CacheStaleTimeoutInSeconds", js.undefined)
   }
 }

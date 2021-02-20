@@ -1,11 +1,12 @@
 package typings.awsSdk.shieldMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SummarizedAttackVector extends js.Object {
+trait SummarizedAttackVector extends StObject {
   
   /**
     * The list of counters that describe the details of the attack.
@@ -26,30 +27,18 @@ object SummarizedAttackVector {
   }
   
   @scala.inline
-  implicit class SummarizedAttackVectorOps[Self <: SummarizedAttackVector] (val x: Self) extends AnyVal {
+  implicit class SummarizedAttackVectorMutableBuilder[Self <: SummarizedAttackVector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVectorCounters(value: SummarizedCounterList): Self = StObject.set(x, "VectorCounters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVectorCountersUndefined: Self = StObject.set(x, "VectorCounters", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVectorCountersVarargs(value: SummarizedCounter*): Self = StObject.set(x, "VectorCounters", js.Array(value :_*))
     
     @scala.inline
-    def setVectorType(value: String): Self = this.set("VectorType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVectorCountersVarargs(value: SummarizedCounter*): Self = this.set("VectorCounters", js.Array(value :_*))
-    
-    @scala.inline
-    def setVectorCounters(value: SummarizedCounterList): Self = this.set("VectorCounters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVectorCounters: Self = this.set("VectorCounters", js.undefined)
+    def setVectorType(value: String): Self = StObject.set(x, "VectorType", value.asInstanceOf[js.Any])
   }
 }

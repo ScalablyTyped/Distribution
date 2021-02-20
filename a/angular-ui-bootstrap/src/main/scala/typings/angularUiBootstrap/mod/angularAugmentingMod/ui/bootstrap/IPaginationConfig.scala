@@ -1,11 +1,12 @@
 package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPaginationConfig extends js.Object {
+trait IPaginationConfig extends StObject {
   
   /**
     * Whether to always display the first and last page numbers. If max-size is smaller than the number of pages, then the first and last page numbers are still shown with ellipses in-between as necessary. NOTE: max-size refers to the center of the range. This option may add up to 2 more numbers on each side of the displayed range for the end value and what would be an ellipsis but is replaced by a number because it is sequential.
@@ -112,102 +113,90 @@ object IPaginationConfig {
   }
   
   @scala.inline
-  implicit class IPaginationConfigOps[Self <: IPaginationConfig] (val x: Self) extends AnyVal {
+  implicit class IPaginationConfigMutableBuilder[Self <: IPaginationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundaryLinkNumbers(value: Boolean): Self = StObject.set(x, "boundaryLinkNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundaryLinkNumbersUndefined: Self = StObject.set(x, "boundaryLinkNumbers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBoundaryLinks(value: Boolean): Self = StObject.set(x, "boundaryLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundaryLinkNumbers(value: Boolean): Self = this.set("boundaryLinkNumbers", value.asInstanceOf[js.Any])
+    def setBoundaryLinksUndefined: Self = StObject.set(x, "boundaryLinks", js.undefined)
     
     @scala.inline
-    def deleteBoundaryLinkNumbers: Self = this.set("boundaryLinkNumbers", js.undefined)
+    def setDirectionLinks(value: Boolean): Self = StObject.set(x, "directionLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundaryLinks(value: Boolean): Self = this.set("boundaryLinks", value.asInstanceOf[js.Any])
+    def setDirectionLinksUndefined: Self = StObject.set(x, "directionLinks", js.undefined)
     
     @scala.inline
-    def deleteBoundaryLinks: Self = this.set("boundaryLinks", js.undefined)
+    def setFirstText(value: String): Self = StObject.set(x, "firstText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectionLinks(value: Boolean): Self = this.set("directionLinks", value.asInstanceOf[js.Any])
+    def setFirstTextUndefined: Self = StObject.set(x, "firstText", js.undefined)
     
     @scala.inline
-    def deleteDirectionLinks: Self = this.set("directionLinks", js.undefined)
+    def setForceEllipses(value: Boolean): Self = StObject.set(x, "forceEllipses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstText(value: String): Self = this.set("firstText", value.asInstanceOf[js.Any])
+    def setForceEllipsesUndefined: Self = StObject.set(x, "forceEllipses", js.undefined)
     
     @scala.inline
-    def deleteFirstText: Self = this.set("firstText", js.undefined)
+    def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceEllipses(value: Boolean): Self = this.set("forceEllipses", value.asInstanceOf[js.Any])
+    def setItemsPerPageUndefined: Self = StObject.set(x, "itemsPerPage", js.undefined)
     
     @scala.inline
-    def deleteForceEllipses: Self = this.set("forceEllipses", js.undefined)
+    def setLastText(value: String): Self = StObject.set(x, "lastText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsPerPage(value: Double): Self = this.set("itemsPerPage", value.asInstanceOf[js.Any])
+    def setLastTextUndefined: Self = StObject.set(x, "lastText", js.undefined)
     
     @scala.inline
-    def deleteItemsPerPage: Self = this.set("itemsPerPage", js.undefined)
+    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastText(value: String): Self = this.set("lastText", value.asInstanceOf[js.Any])
+    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
     @scala.inline
-    def deleteLastText: Self = this.set("lastText", js.undefined)
+    def setNextText(value: String): Self = StObject.set(x, "nextText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSize(value: Double): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    def setNextTextUndefined: Self = StObject.set(x, "nextText", js.undefined)
     
     @scala.inline
-    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
+    def setNumPages(value: Double): Self = StObject.set(x, "numPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextText(value: String): Self = this.set("nextText", value.asInstanceOf[js.Any])
+    def setNumPagesUndefined: Self = StObject.set(x, "numPages", js.undefined)
     
     @scala.inline
-    def deleteNextText: Self = this.set("nextText", js.undefined)
+    def setPreviousText(value: String): Self = StObject.set(x, "previousText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumPages(value: Double): Self = this.set("numPages", value.asInstanceOf[js.Any])
+    def setPreviousTextUndefined: Self = StObject.set(x, "previousText", js.undefined)
     
     @scala.inline
-    def deleteNumPages: Self = this.set("numPages", js.undefined)
+    def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousText(value: String): Self = this.set("previousText", value.asInstanceOf[js.Any])
+    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
     @scala.inline
-    def deletePreviousText: Self = this.set("previousText", js.undefined)
+    def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotate(value: Boolean): Self = this.set("rotate", value.asInstanceOf[js.Any])
+    def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
     
     @scala.inline
-    def deleteRotate: Self = this.set("rotate", js.undefined)
+    def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateUrl(value: String): Self = this.set("templateUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateUrl: Self = this.set("templateUrl", js.undefined)
-    
-    @scala.inline
-    def setTotalItems(value: Double): Self = this.set("totalItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalItems: Self = this.set("totalItems", js.undefined)
+    def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
   }
 }

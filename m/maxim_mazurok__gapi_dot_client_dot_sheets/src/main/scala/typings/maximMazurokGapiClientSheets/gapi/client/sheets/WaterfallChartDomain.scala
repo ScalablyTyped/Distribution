@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WaterfallChartDomain extends js.Object {
+trait WaterfallChartDomain extends StObject {
   
   /** The data of the WaterfallChartDomain. */
   var data: js.UndefOr[ChartData] = js.native
@@ -22,30 +23,18 @@ object WaterfallChartDomain {
   }
   
   @scala.inline
-  implicit class WaterfallChartDomainOps[Self <: WaterfallChartDomain] (val x: Self) extends AnyVal {
+  implicit class WaterfallChartDomainMutableBuilder[Self <: WaterfallChartDomain] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: ChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: ChartData): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
-    
-    @scala.inline
-    def setReversed(value: Boolean): Self = this.set("reversed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReversed: Self = this.set("reversed", js.undefined)
+    def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
   }
 }

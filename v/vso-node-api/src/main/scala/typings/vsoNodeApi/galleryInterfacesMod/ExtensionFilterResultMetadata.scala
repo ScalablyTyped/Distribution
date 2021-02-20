@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionFilterResultMetadata extends js.Object {
+trait ExtensionFilterResultMetadata extends StObject {
   
   /**
     * The metadata items for the category
@@ -26,27 +27,15 @@ object ExtensionFilterResultMetadata {
   }
   
   @scala.inline
-  implicit class ExtensionFilterResultMetadataOps[Self <: ExtensionFilterResultMetadata] (val x: Self) extends AnyVal {
+  implicit class ExtensionFilterResultMetadataMutableBuilder[Self <: ExtensionFilterResultMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetadataItems(value: js.Array[MetadataItem]): Self = StObject.set(x, "metadataItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetadataItemsVarargs(value: MetadataItem*): Self = StObject.set(x, "metadataItems", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMetadataItemsVarargs(value: MetadataItem*): Self = this.set("metadataItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setMetadataItems(value: js.Array[MetadataItem]): Self = this.set("metadataItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetadataType(value: String): Self = this.set("metadataType", value.asInstanceOf[js.Any])
+    def setMetadataType(value: String): Self = StObject.set(x, "metadataType", value.asInstanceOf[js.Any])
   }
 }

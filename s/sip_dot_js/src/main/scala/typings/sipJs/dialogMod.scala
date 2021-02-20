@@ -7,16 +7,16 @@ import typings.sipJs.messagesMod.IncomingResponseMessage
 import typings.sipJs.messagesMod.OutgoingRequestMessage
 import typings.sipJs.messagesMod.URI
 import typings.sipJs.userAgentCoreMod.UserAgentCore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/core/dialogs/dialog", JSImport.Namespace)
-@js.native
-object dialogMod extends js.Object {
+object dialogMod {
   
+  @JSImport("sip.js/lib/core/dialogs/dialog", "Dialog")
   @js.native
-  class Dialog protected () extends js.Object {
+  class Dialog protected () extends StObject {
     /**
       * Dialog constructor.
       * @param core - User agent core.
@@ -165,8 +165,7 @@ object dialogMod extends js.Object {
     def userAgentCore: UserAgentCore = js.native
   }
   /* static members */
-  @js.native
-  object Dialog extends js.Object {
+  object Dialog {
     
     /**
       * When a UAC receives a response that establishes a dialog, it
@@ -176,6 +175,8 @@ object dialogMod extends js.Object {
       * @param outgoingRequestMessage - Outgoing request message for dialog.
       * @param incomingResponseMessage - Incoming response message creating dialog.
       */
+    @JSImport("sip.js/lib/core/dialogs/dialog", "Dialog.initialDialogStateForUserAgentClient")
+    @js.native
     def initialDialogStateForUserAgentClient(outgoingRequestMessage: OutgoingRequestMessage, incomingResponseMessage: IncomingResponseMessage): DialogState = js.native
     
     /**
@@ -185,7 +186,11 @@ object dialogMod extends js.Object {
       * @param incomingRequestMessage - Incoming request message creating dialog.
       * @param toTag - Tag in the To field in the response to the incoming request.
       */
+    @JSImport("sip.js/lib/core/dialogs/dialog", "Dialog.initialDialogStateForUserAgentServer")
+    @js.native
     def initialDialogStateForUserAgentServer(incomingRequestMessage: IncomingRequestMessage, toTag: String): DialogState = js.native
+    @JSImport("sip.js/lib/core/dialogs/dialog", "Dialog.initialDialogStateForUserAgentServer")
+    @js.native
     def initialDialogStateForUserAgentServer(incomingRequestMessage: IncomingRequestMessage, toTag: String, early: Boolean): DialogState = js.native
   }
 }

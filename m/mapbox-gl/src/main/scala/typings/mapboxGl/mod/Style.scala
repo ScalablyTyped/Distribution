@@ -1,11 +1,12 @@
 package typings.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Style extends js.Object {
+trait Style extends StObject {
   
   var bearing: js.UndefOr[Double] = js.native
   
@@ -42,99 +43,87 @@ object Style {
   }
   
   @scala.inline
-  implicit class StyleOps[Self <: Style] (val x: Self) extends AnyVal {
+  implicit class StyleMutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBearingUndefined: Self = StObject.set(x, "bearing", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCenter(value: js.Array[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def setBearing(value: Double): Self = this.set("bearing", value.asInstanceOf[js.Any])
+    def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value :_*))
     
     @scala.inline
-    def deleteBearing: Self = this.set("bearing", js.undefined)
+    def setGlyphs(value: String): Self = StObject.set(x, "glyphs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterVarargs(value: Double*): Self = this.set("center", js.Array(value :_*))
+    def setGlyphsUndefined: Self = StObject.set(x, "glyphs", js.undefined)
     
     @scala.inline
-    def setCenter(value: js.Array[Double]): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setLayers(value: js.Array[Layer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
     @scala.inline
-    def setGlyphs(value: String): Self = this.set("glyphs", value.asInstanceOf[js.Any])
+    def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
     
     @scala.inline
-    def deleteGlyphs: Self = this.set("glyphs", js.undefined)
+    def setLight(value: Light): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayersVarargs(value: Layer*): Self = this.set("layers", js.Array(value :_*))
+    def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
     
     @scala.inline
-    def setLayers(value: js.Array[Layer]): Self = this.set("layers", value.asInstanceOf[js.Any])
+    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLayers: Self = this.set("layers", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def setLight(value: Light): Self = this.set("light", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLight: Self = this.set("light", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setMetadata(value: js.Any): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSources(value: Sources): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
     @scala.inline
-    def setPitch(value: Double): Self = this.set("pitch", value.asInstanceOf[js.Any])
+    def setSprite(value: String): Self = StObject.set(x, "sprite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePitch: Self = this.set("pitch", js.undefined)
+    def setSpriteUndefined: Self = StObject.set(x, "sprite", js.undefined)
     
     @scala.inline
-    def setSources(value: Sources): Self = this.set("sources", value.asInstanceOf[js.Any])
+    def setTransition(value: Transition): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSources: Self = this.set("sources", js.undefined)
+    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
     @scala.inline
-    def setSprite(value: String): Self = this.set("sprite", value.asInstanceOf[js.Any])
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSprite: Self = this.set("sprite", js.undefined)
+    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransition(value: Transition): Self = this.set("transition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransition: Self = this.set("transition", js.undefined)
-    
-    @scala.inline
-    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

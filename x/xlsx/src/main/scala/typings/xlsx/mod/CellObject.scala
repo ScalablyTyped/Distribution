@@ -1,12 +1,13 @@
 package typings.xlsx.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CellObject extends js.Object {
+trait CellObject extends StObject {
   
   /** Range of enclosing array if formula is array formula (if applicable) */
   var F: js.UndefOr[String] = js.native
@@ -53,75 +54,63 @@ object CellObject {
   }
   
   @scala.inline
-  implicit class CellObjectOps[Self <: CellObject] (val x: Self) extends AnyVal {
+  implicit class CellObjectMutableBuilder[Self <: CellObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setC(value: Comments): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCUndefined: Self = StObject.set(x, "c", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setF(value: String): Self = StObject.set(x, "F", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setT(value: ExcelDataType): Self = this.set("t", value.asInstanceOf[js.Any])
+    def setFUndefined: Self = StObject.set(x, "F", js.undefined)
     
     @scala.inline
-    def setF(value: String): Self = this.set("F", value.asInstanceOf[js.Any])
+    def setH(value: String): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteF: Self = this.set("F", js.undefined)
+    def setHUndefined: Self = StObject.set(x, "h", js.undefined)
     
     @scala.inline
-    def setC(value: Comments): Self = this.set("c", value.asInstanceOf[js.Any])
+    def setL(value: Hyperlink): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteC: Self = this.set("c", js.undefined)
+    def setLUndefined: Self = StObject.set(x, "l", js.undefined)
     
     @scala.inline
-    def setH(value: String): Self = this.set("h", value.asInstanceOf[js.Any])
+    def setR(value: js.Any): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteH: Self = this.set("h", js.undefined)
+    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
     @scala.inline
-    def setL(value: Hyperlink): Self = this.set("l", value.asInstanceOf[js.Any])
+    def setS(value: js.Any): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteL: Self = this.set("l", js.undefined)
+    def setSUndefined: Self = StObject.set(x, "s", js.undefined)
     
     @scala.inline
-    def setR(value: js.Any): Self = this.set("r", value.asInstanceOf[js.Any])
+    def setT(value: ExcelDataType): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteR: Self = this.set("r", js.undefined)
+    def setV(value: String | Double | Boolean | Date): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS(value: js.Any): Self = this.set("s", value.asInstanceOf[js.Any])
+    def setVUndefined: Self = StObject.set(x, "v", js.undefined)
     
     @scala.inline
-    def deleteS: Self = this.set("s", js.undefined)
+    def setW(value: String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setV(value: String | Double | Boolean | Date): Self = this.set("v", value.asInstanceOf[js.Any])
+    def setWUndefined: Self = StObject.set(x, "w", js.undefined)
     
     @scala.inline
-    def deleteV: Self = this.set("v", js.undefined)
+    def setZ(value: NumberFormat): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setW(value: String): Self = this.set("w", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteW: Self = this.set("w", js.undefined)
-    
-    @scala.inline
-    def setZ(value: NumberFormat): Self = this.set("z", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZ: Self = this.set("z", js.undefined)
+    def setZUndefined: Self = StObject.set(x, "z", js.undefined)
   }
 }

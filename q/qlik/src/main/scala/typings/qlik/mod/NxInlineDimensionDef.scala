@@ -3,12 +3,13 @@ package typings.qlik.mod
 import typings.qlik.qlikStrings.C
 import typings.qlik.qlikStrings.H
 import typings.qlik.qlikStrings.N
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NxInlineDimensionDef extends js.Object {
+trait NxInlineDimensionDef extends StObject {
   
   var qActiveField: Double = js.native
   
@@ -38,45 +39,33 @@ object NxInlineDimensionDef {
   }
   
   @scala.inline
-  implicit class NxInlineDimensionDefOps[Self <: NxInlineDimensionDef] (val x: Self) extends AnyVal {
+  implicit class NxInlineDimensionDefMutableBuilder[Self <: NxInlineDimensionDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQActiveField(value: Double): Self = StObject.set(x, "qActiveField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQFieldDefs(value: js.Array[String]): Self = StObject.set(x, "qFieldDefs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQFieldDefsVarargs(value: String*): Self = StObject.set(x, "qFieldDefs", js.Array(value :_*))
     
     @scala.inline
-    def setQActiveField(value: Double): Self = this.set("qActiveField", value.asInstanceOf[js.Any])
+    def setQGrouping(value: N | H | C): Self = StObject.set(x, "qGrouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFieldDefsVarargs(value: String*): Self = this.set("qFieldDefs", js.Array(value :_*))
+    def setQNumberPresentations(value: js.Array[FieldAttributes]): Self = StObject.set(x, "qNumberPresentations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFieldDefs(value: js.Array[String]): Self = this.set("qFieldDefs", value.asInstanceOf[js.Any])
+    def setQNumberPresentationsVarargs(value: FieldAttributes*): Self = StObject.set(x, "qNumberPresentations", js.Array(value :_*))
     
     @scala.inline
-    def setQGrouping(value: N | H | C): Self = this.set("qGrouping", value.asInstanceOf[js.Any])
+    def setQReverseSort(value: Boolean): Self = StObject.set(x, "qReverseSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQNumberPresentationsVarargs(value: FieldAttributes*): Self = this.set("qNumberPresentations", js.Array(value :_*))
+    def setQSortCriteries(value: js.Array[SortCriteria]): Self = StObject.set(x, "qSortCriteries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQNumberPresentations(value: js.Array[FieldAttributes]): Self = this.set("qNumberPresentations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQReverseSort(value: Boolean): Self = this.set("qReverseSort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQSortCriteriesVarargs(value: SortCriteria*): Self = this.set("qSortCriteries", js.Array(value :_*))
-    
-    @scala.inline
-    def setQSortCriteries(value: js.Array[SortCriteria]): Self = this.set("qSortCriteries", value.asInstanceOf[js.Any])
+    def setQSortCriteriesVarargs(value: SortCriteria*): Self = StObject.set(x, "qSortCriteries", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.swiper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ZoomOptions extends js.Object {
+trait ZoomOptions extends StObject {
   
   var containerClass: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object ZoomOptions {
   }
   
   @scala.inline
-  implicit class ZoomOptionsOps[Self <: ZoomOptions] (val x: Self) extends AnyVal {
+  implicit class ZoomOptionsMutableBuilder[Self <: ZoomOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerClass(value: String): Self = StObject.set(x, "containerClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerClassUndefined: Self = StObject.set(x, "containerClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxRatio(value: Double): Self = StObject.set(x, "maxRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerClass(value: String): Self = this.set("containerClass", value.asInstanceOf[js.Any])
+    def setMaxRatioUndefined: Self = StObject.set(x, "maxRatio", js.undefined)
     
     @scala.inline
-    def deleteContainerClass: Self = this.set("containerClass", js.undefined)
+    def setMinRatio(value: Double): Self = StObject.set(x, "minRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRatio(value: Double): Self = this.set("maxRatio", value.asInstanceOf[js.Any])
+    def setMinRatioUndefined: Self = StObject.set(x, "minRatio", js.undefined)
     
     @scala.inline
-    def deleteMaxRatio: Self = this.set("maxRatio", js.undefined)
+    def setToggle(value: Boolean): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinRatio(value: Double): Self = this.set("minRatio", value.asInstanceOf[js.Any])
+    def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     
     @scala.inline
-    def deleteMinRatio: Self = this.set("minRatio", js.undefined)
+    def setZoomedSlideClass(value: String): Self = StObject.set(x, "zoomedSlideClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToggle(value: Boolean): Self = this.set("toggle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToggle: Self = this.set("toggle", js.undefined)
-    
-    @scala.inline
-    def setZoomedSlideClass(value: String): Self = this.set("zoomedSlideClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomedSlideClass: Self = this.set("zoomedSlideClass", js.undefined)
+    def setZoomedSlideClassUndefined: Self = StObject.set(x, "zoomedSlideClass", js.undefined)
   }
 }

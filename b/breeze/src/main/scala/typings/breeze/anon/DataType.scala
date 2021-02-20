@@ -1,11 +1,12 @@
 package typings.breeze.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataType extends js.Object {
+trait DataType extends StObject {
   
   var dataType: js.UndefOr[typings.breeze.breeze.DataType] = js.native
   
@@ -22,33 +23,21 @@ object DataType {
   }
   
   @scala.inline
-  implicit class DataTypeOps[Self <: DataType] (val x: Self) extends AnyVal {
+  implicit class DataTypeMutableBuilder[Self <: DataType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataType(value: typings.breeze.breeze.DataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsLiteral(value: Boolean): Self = StObject.set(x, "isLiteral", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setIsLiteralUndefined: Self = StObject.set(x, "isLiteral", js.undefined)
     
     @scala.inline
-    def setDataType(value: typings.breeze.breeze.DataType): Self = this.set("dataType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataType: Self = this.set("dataType", js.undefined)
-    
-    @scala.inline
-    def setIsLiteral(value: Boolean): Self = this.set("isLiteral", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsLiteral: Self = this.set("isLiteral", js.undefined)
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

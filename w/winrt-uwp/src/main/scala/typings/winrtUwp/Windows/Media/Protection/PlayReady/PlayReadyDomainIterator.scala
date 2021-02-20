@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
 import typings.winrtUwp.anon.ItemsIPlayReadyDomain
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides for iteration of the PlayReadyDomain class. */
 @js.native
-trait PlayReadyDomainIterator extends js.Object {
+trait PlayReadyDomainIterator extends StObject {
   
   /** Gets the current item in the PlayReady domain collection. */
   var current: IPlayReadyDomain = js.native
@@ -40,30 +41,18 @@ object PlayReadyDomainIterator {
   }
   
   @scala.inline
-  implicit class PlayReadyDomainIteratorOps[Self <: PlayReadyDomainIterator] (val x: Self) extends AnyVal {
+  implicit class PlayReadyDomainIteratorMutableBuilder[Self <: PlayReadyDomainIterator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrent(value: IPlayReadyDomain): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMany(value: () => ItemsIPlayReadyDomain): Self = StObject.set(x, "getMany", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasCurrent(value: Boolean): Self = StObject.set(x, "hasCurrent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrent(value: IPlayReadyDomain): Self = this.set("current", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetMany(value: () => ItemsIPlayReadyDomain): Self = this.set("getMany", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHasCurrent(value: Boolean): Self = this.set("hasCurrent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMoveNext(value: () => Boolean): Self = this.set("moveNext", js.Any.fromFunction0(value))
+    def setMoveNext(value: () => Boolean): Self = StObject.set(x, "moveNext", js.Any.fromFunction0(value))
   }
 }

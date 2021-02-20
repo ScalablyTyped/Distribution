@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataCaptureConfig extends js.Object {
+trait DataCaptureConfig extends StObject {
   
   /**
     * 
@@ -50,48 +51,36 @@ object DataCaptureConfig {
   }
   
   @scala.inline
-  implicit class DataCaptureConfigOps[Self <: DataCaptureConfig] (val x: Self) extends AnyVal {
+  implicit class DataCaptureConfigMutableBuilder[Self <: DataCaptureConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaptureContentTypeHeader(value: CaptureContentTypeHeader): Self = StObject.set(x, "CaptureContentTypeHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptureContentTypeHeaderUndefined: Self = StObject.set(x, "CaptureContentTypeHeader", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaptureOptions(value: CaptureOptionList): Self = StObject.set(x, "CaptureOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureOptionsVarargs(value: CaptureOption*): Self = this.set("CaptureOptions", js.Array(value :_*))
+    def setCaptureOptionsVarargs(value: CaptureOption*): Self = StObject.set(x, "CaptureOptions", js.Array(value :_*))
     
     @scala.inline
-    def setCaptureOptions(value: CaptureOptionList): Self = this.set("CaptureOptions", value.asInstanceOf[js.Any])
+    def setDestinationS3Uri(value: DestinationS3Uri): Self = StObject.set(x, "DestinationS3Uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationS3Uri(value: DestinationS3Uri): Self = this.set("DestinationS3Uri", value.asInstanceOf[js.Any])
+    def setEnableCapture(value: EnableCapture): Self = StObject.set(x, "EnableCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialSamplingPercentage(value: SamplingPercentage): Self = this.set("InitialSamplingPercentage", value.asInstanceOf[js.Any])
+    def setEnableCaptureUndefined: Self = StObject.set(x, "EnableCapture", js.undefined)
     
     @scala.inline
-    def setCaptureContentTypeHeader(value: CaptureContentTypeHeader): Self = this.set("CaptureContentTypeHeader", value.asInstanceOf[js.Any])
+    def setInitialSamplingPercentage(value: SamplingPercentage): Self = StObject.set(x, "InitialSamplingPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCaptureContentTypeHeader: Self = this.set("CaptureContentTypeHeader", js.undefined)
+    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCapture(value: EnableCapture): Self = this.set("EnableCapture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableCapture: Self = this.set("EnableCapture", js.undefined)
-    
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
   }
 }

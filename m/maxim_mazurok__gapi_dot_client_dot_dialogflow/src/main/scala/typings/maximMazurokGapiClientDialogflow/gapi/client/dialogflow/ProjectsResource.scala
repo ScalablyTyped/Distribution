@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientDialogflow.anon.Alt
 import typings.maximMazurokGapiClientDialogflow.anon.QuotaUserResource
 import typings.maximMazurokGapiClientDialogflow.anon.QuotaUserUpdateMask
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectsResource extends js.Object {
+trait ProjectsResource extends StObject {
   
   var agent: AgentResource = js.native
   

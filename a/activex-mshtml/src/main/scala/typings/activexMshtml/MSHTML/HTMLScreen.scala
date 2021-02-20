@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLScreen extends js.Object {
+trait HTMLScreen extends StObject {
   
   @JSName("MSHTML.HTMLScreen_typekey")
   var MSHTMLDotHTMLScreen_typekey: HTMLScreen = js.native
@@ -70,69 +71,57 @@ object HTMLScreen {
   }
   
   @scala.inline
-  implicit class HTMLScreenOps[Self <: HTMLScreen] (val x: Self) extends AnyVal {
+  implicit class HTMLScreenMutableBuilder[Self <: HTMLScreen] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailHeight(value: Double): Self = StObject.set(x, "availHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailWidth(value: Double): Self = StObject.set(x, "availWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBufferDepth(value: Double): Self = StObject.set(x, "bufferDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotHTMLScreen_typekey(value: HTMLScreen): Self = this.set("MSHTML.HTMLScreen_typekey", value.asInstanceOf[js.Any])
+    def setColorDepth(value: Double): Self = StObject.set(x, "colorDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailHeight(value: Double): Self = this.set("availHeight", value.asInstanceOf[js.Any])
+    def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailWidth(value: Double): Self = this.set("availWidth", value.asInstanceOf[js.Any])
+    def setDeviceXDPI(value: Double): Self = StObject.set(x, "deviceXDPI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBufferDepth(value: Double): Self = this.set("bufferDepth", value.asInstanceOf[js.Any])
+    def setDeviceYDPI(value: Double): Self = StObject.set(x, "deviceYDPI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorDepth(value: Double): Self = this.set("colorDepth", value.asInstanceOf[js.Any])
+    def setFontSmoothingEnabled(value: Boolean): Self = StObject.set(x, "fontSmoothingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstructor(value: js.Any): Self = this.set("constructor", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceXDPI(value: Double): Self = this.set("deviceXDPI", value.asInstanceOf[js.Any])
+    def setLogicalXDPI(value: Double): Self = StObject.set(x, "logicalXDPI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceYDPI(value: Double): Self = this.set("deviceYDPI", value.asInstanceOf[js.Any])
+    def setLogicalYDPI(value: Double): Self = StObject.set(x, "logicalYDPI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSmoothingEnabled(value: Boolean): Self = this.set("fontSmoothingEnabled", value.asInstanceOf[js.Any])
+    def setMSHTMLDotHTMLScreen_typekey(value: HTMLScreen): Self = StObject.set(x, "MSHTML.HTMLScreen_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setPixelDepth(value: Double): Self = StObject.set(x, "pixelDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogicalXDPI(value: Double): Self = this.set("logicalXDPI", value.asInstanceOf[js.Any])
+    def setSystemXDPI(value: Double): Self = StObject.set(x, "systemXDPI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogicalYDPI(value: Double): Self = this.set("logicalYDPI", value.asInstanceOf[js.Any])
+    def setSystemYDPI(value: Double): Self = StObject.set(x, "systemYDPI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelDepth(value: Double): Self = this.set("pixelDepth", value.asInstanceOf[js.Any])
+    def setUpdateInterval(value: Double): Self = StObject.set(x, "updateInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemXDPI(value: Double): Self = this.set("systemXDPI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystemYDPI(value: Double): Self = this.set("systemYDPI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateInterval(value: Double): Self = this.set("updateInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

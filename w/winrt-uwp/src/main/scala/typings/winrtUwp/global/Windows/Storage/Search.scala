@@ -3,18 +3,18 @@ package typings.winrtUwp.global.Windows.Storage
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Storage.Search.CommonFileQuery
 import typings.winrtUwp.Windows.Storage.Search.CommonFolderQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides classes for enumerating content in storage and performing Advanced Query Syntax (AQS) searches on the content. */
-@JSGlobal("Windows.Storage.Search")
-@js.native
-object Search extends js.Object {
+object Search {
   
   /** Specifies how to sort the files in the query results and determines whether the query is shallow or deep. Query results for deep queries include all files in all of the subfolders of the current folder, sorted according to the specified option. */
+  @JSGlobal("Windows.Storage.Search.CommonFileQuery")
   @js.native
-  object CommonFileQuery extends js.Object {
+  object CommonFileQuery extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.Search.CommonFileQuery with Double] = js.native
@@ -33,8 +33,9 @@ object Search extends js.Object {
   }
   
   /** Specifies how to group files into folders in the query results and determines whether the query is shallow or deep. Query results for deep queries include all files in all of the subfolders of the current folder, grouped into folders according to the specified option. */
+  @JSGlobal("Windows.Storage.Search.CommonFolderQuery")
   @js.native
-  object CommonFolderQuery extends js.Object {
+  object CommonFolderQuery extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.Search.CommonFolderQuery with Double] = js.native
@@ -67,34 +68,41 @@ object Search extends js.Object {
   }
   
   /** Enables Windows Store apps to place content properties in the system index. */
+  @JSGlobal("Windows.Storage.Search.ContentIndexer")
   @js.native
   abstract class ContentIndexer ()
     extends typings.winrtUwp.Windows.Storage.Search.ContentIndexer
-  /* static members */
-  @js.native
-  object ContentIndexer extends js.Object {
+  object ContentIndexer {
     
     /**
       * Gets an existing per-app index or creates a new one, if necessary.
       * @return The index.
       */
+    /* static member */
+    @JSGlobal("Windows.Storage.Search.ContentIndexer.getIndexer")
+    @js.native
     def getIndexer(): typings.winrtUwp.Windows.Storage.Search.ContentIndexer = js.native
     /**
       * Gets the per-app index with the specified name or creates a new one, if necessary.
       * @param indexName The index name.
       * @return The index.
       */
+    /* static member */
+    @JSGlobal("Windows.Storage.Search.ContentIndexer.getIndexer")
+    @js.native
     def getIndexer(indexName: String): typings.winrtUwp.Windows.Storage.Search.ContentIndexer = js.native
   }
   
   /** Represents a query for content properties in the ContentIndexer . */
+  @JSGlobal("Windows.Storage.Search.ContentIndexerQuery")
   @js.native
   abstract class ContentIndexerQuery ()
     extends typings.winrtUwp.Windows.Storage.Search.ContentIndexerQuery
   
   /** Indicates the unit of time used to group files into folders if a CommonFolderQuery based on date is used to create a QueryOptions object. */
+  @JSGlobal("Windows.Storage.Search.DateStackOption")
   @js.native
-  object DateStackOption extends js.Object {
+  object DateStackOption extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.Search.DateStackOption with Double] = js.native
@@ -107,8 +115,9 @@ object Search extends js.Object {
   }
   
   /** Indicates whether all files and subfolders of the folder being queried will be enumerated or if only the top-level files and subfolders will be enumerated. */
+  @JSGlobal("Windows.Storage.Search.FolderDepth")
   @js.native
-  object FolderDepth extends js.Object {
+  object FolderDepth extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.Search.FolderDepth with Double] = js.native
@@ -119,14 +128,16 @@ object Search extends js.Object {
   }
   
   /** Represents app content and properties that can be added to the ContentIndexer . */
+  @JSGlobal("Windows.Storage.Search.IndexableContent")
   @js.native
   /** Initializes a new instance of the IndexableContent class. */
   class IndexableContent ()
     extends typings.winrtUwp.Windows.Storage.Search.IndexableContent
   
   /** Indicates whether a StorageFolder is included in the system index. */
+  @JSGlobal("Windows.Storage.Search.IndexedState")
   @js.native
-  object IndexedState extends js.Object {
+  object IndexedState extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.Search.IndexedState with Double] = js.native
@@ -141,8 +152,9 @@ object Search extends js.Object {
   }
   
   /** Specifies whether the query should use the system index of the file system when enumerating content in the folder being queried. The indexer can retrieve results faster but is not available in all file locations. */
+  @JSGlobal("Windows.Storage.Search.IndexerOption")
   @js.native
-  object IndexerOption extends js.Object {
+  object IndexerOption extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.Search.IndexerOption with Double] = js.native
@@ -155,6 +167,7 @@ object Search extends js.Object {
   }
   
   /** Specifies the parameters of a search query for enumerating the contents of storage folders. */
+  @JSGlobal("Windows.Storage.Search.QueryOptions")
   @js.native
   /** Creates an instance of the QueryOptions class for enumerating storage items, and initializes it with the following default settings: QueryOptions.FolderDepth gets FolderDepth.Shallow and QueryOptions.IndexerOption gets IndexerOption.DoNotUseIndexer . */
   class QueryOptions ()
@@ -173,31 +186,37 @@ object Search extends js.Object {
   }
   
   /** Provides access to the sorting criteria of the query results as a collection of SortEntry objects. */
+  @JSGlobal("Windows.Storage.Search.SortEntryVector")
   @js.native
   abstract class SortEntryVector ()
     extends typings.winrtUwp.Windows.Storage.Search.SortEntryVector
   
   /** Provides access to the results of a query of the files in the location that is represented by a storageFolder object. You can use storageFileQueryResult to enumerate the files in that storageFolder location. */
+  @JSGlobal("Windows.Storage.Search.StorageFileQueryResult")
   @js.native
   abstract class StorageFileQueryResult ()
     extends typings.winrtUwp.Windows.Storage.Search.StorageFileQueryResult
   
   /** Provides access to the results of a query that lists the folder (or file groups) in the folder being queried (which is represented by a storageFolder ). You can use a storageFolderQueryResult to enumerate folders or file groups in that folder. */
+  @JSGlobal("Windows.Storage.Search.StorageFolderQueryResult")
   @js.native
   abstract class StorageFolderQueryResult ()
     extends typings.winrtUwp.Windows.Storage.Search.StorageFolderQueryResult
   
   /** Provides access to the results of a query that lists all items including files and folders (or file groups) in the folder being queried (which is represented by a storageFolder ). You can use storageItemQueryResult to enumerate the files and folders in that storageFolder . */
+  @JSGlobal("Windows.Storage.Search.StorageItemQueryResult")
   @js.native
   abstract class StorageItemQueryResult ()
     extends typings.winrtUwp.Windows.Storage.Search.StorageItemQueryResult
   
   /** Details about a change to storage library content. */
+  @JSGlobal("Windows.Storage.Search.StorageLibraryContentChangedTriggerDetails")
   @js.native
   abstract class StorageLibraryContentChangedTriggerDetails ()
     extends typings.winrtUwp.Windows.Storage.Search.StorageLibraryContentChangedTriggerDetails
   
   /** Specifies the language of a property, as a BCP-47 language code. */
+  @JSGlobal("Windows.Storage.Search.ValueAndLanguage")
   @js.native
   /** Initializes a new instance of the ValueAndLanguage class. */
   class ValueAndLanguage ()

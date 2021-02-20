@@ -2,14 +2,14 @@ package typings.randomJs
 
 import typings.randomJs.typesMod.Engine
 import typings.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("random-js/dist/engine/MersenneTwister19937", JSImport.Namespace)
-@js.native
-object mersenneTwister19937Mod extends js.Object {
+object mersenneTwister19937Mod {
   
+  @JSImport("random-js/dist/engine/MersenneTwister19937", "MersenneTwister19937")
   @js.native
   /**
     * MersenneTwister19937 should not be instantiated directly.
@@ -42,25 +42,30 @@ object mersenneTwister19937Mod extends js.Object {
     var uses: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object MersenneTwister19937 extends js.Object {
+  object MersenneTwister19937 {
     
     /**
       * Returns a MersenneTwister19937 seeded with the current time and
       * a series of natively-generated random values
       */
+    @JSImport("random-js/dist/engine/MersenneTwister19937", "MersenneTwister19937.autoSeed")
+    @js.native
     def autoSeed(): MersenneTwister19937 = js.native
     
     /**
       * Returns a MersenneTwister19937 seeded with an initial int32 value
       * @param initial the initial seed value
       */
+    @JSImport("random-js/dist/engine/MersenneTwister19937", "MersenneTwister19937.seed")
+    @js.native
     def seed(initial: Double): MersenneTwister19937 = js.native
     
     /**
       * Returns a MersenneTwister19937 seeded with zero or more int32 values
       * @param source A series of int32 values
       */
+    @JSImport("random-js/dist/engine/MersenneTwister19937", "MersenneTwister19937.seedWithArray")
+    @js.native
     def seedWithArray(source: ArrayLike[Double]): MersenneTwister19937 = js.native
   }
 }

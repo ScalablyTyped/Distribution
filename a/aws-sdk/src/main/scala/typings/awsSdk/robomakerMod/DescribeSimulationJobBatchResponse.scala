@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeSimulationJobBatchResponse extends js.Object {
+trait DescribeSimulationJobBatchResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the batch.
@@ -76,99 +77,87 @@ object DescribeSimulationJobBatchResponse {
   }
   
   @scala.inline
-  implicit class DescribeSimulationJobBatchResponseOps[Self <: DescribeSimulationJobBatchResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeSimulationJobBatchResponseMutableBuilder[Self <: DescribeSimulationJobBatchResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchPolicy(value: BatchPolicy): Self = StObject.set(x, "batchPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setBatchPolicyUndefined: Self = StObject.set(x, "batchPolicy", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchPolicy(value: BatchPolicy): Self = this.set("batchPolicy", value.asInstanceOf[js.Any])
+    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
     @scala.inline
-    def deleteBatchPolicy: Self = this.set("batchPolicy", js.undefined)
+    def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
+    def setCreatedRequests(value: SimulationJobSummaries): Self = StObject.set(x, "createdRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: CreatedAt): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setCreatedRequestsUndefined: Self = StObject.set(x, "createdRequests", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setCreatedRequestsVarargs(value: SimulationJobSummary*): Self = StObject.set(x, "createdRequests", js.Array(value :_*))
     
     @scala.inline
-    def setCreatedRequestsVarargs(value: SimulationJobSummary*): Self = this.set("createdRequests", js.Array(value :_*))
+    def setFailedRequests(value: FailedCreateSimulationJobRequests): Self = StObject.set(x, "failedRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedRequests(value: SimulationJobSummaries): Self = this.set("createdRequests", value.asInstanceOf[js.Any])
+    def setFailedRequestsUndefined: Self = StObject.set(x, "failedRequests", js.undefined)
     
     @scala.inline
-    def deleteCreatedRequests: Self = this.set("createdRequests", js.undefined)
+    def setFailedRequestsVarargs(value: FailedCreateSimulationJobRequest*): Self = StObject.set(x, "failedRequests", js.Array(value :_*))
     
     @scala.inline
-    def setFailedRequestsVarargs(value: FailedCreateSimulationJobRequest*): Self = this.set("failedRequests", js.Array(value :_*))
+    def setFailureCode(value: SimulationJobBatchErrorCode): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedRequests(value: FailedCreateSimulationJobRequests): Self = this.set("failedRequests", value.asInstanceOf[js.Any])
+    def setFailureCodeUndefined: Self = StObject.set(x, "failureCode", js.undefined)
     
     @scala.inline
-    def deleteFailedRequests: Self = this.set("failedRequests", js.undefined)
+    def setFailureReason(value: GenericString): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureCode(value: SimulationJobBatchErrorCode): Self = this.set("failureCode", value.asInstanceOf[js.Any])
+    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
     @scala.inline
-    def deleteFailureCode: Self = this.set("failureCode", js.undefined)
+    def setLastUpdatedAt(value: LastUpdatedAt): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: GenericString): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
     @scala.inline
-    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    def setPendingRequests(value: CreateSimulationJobRequests): Self = StObject.set(x, "pendingRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedAt(value: LastUpdatedAt): Self = this.set("lastUpdatedAt", value.asInstanceOf[js.Any])
+    def setPendingRequestsUndefined: Self = StObject.set(x, "pendingRequests", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedAt: Self = this.set("lastUpdatedAt", js.undefined)
+    def setPendingRequestsVarargs(value: SimulationJobRequest*): Self = StObject.set(x, "pendingRequests", js.Array(value :_*))
     
     @scala.inline
-    def setPendingRequestsVarargs(value: SimulationJobRequest*): Self = this.set("pendingRequests", js.Array(value :_*))
+    def setStatus(value: SimulationJobBatchStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingRequests(value: CreateSimulationJobRequests): Self = this.set("pendingRequests", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deletePendingRequests: Self = this.set("pendingRequests", js.undefined)
+    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: SimulationJobBatchStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

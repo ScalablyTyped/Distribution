@@ -2,19 +2,30 @@ package typings.blissfuljs
 
 import typings.blissfuljs.BlissNS.BlissStatic
 import typings.blissfuljs.BlissNS.BlissStaticCollection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @JSName("$$")
-  var $: BlissStaticCollection = js.native
+  @JSGlobal("$$")
+  @js.native
+  def $: BlissStaticCollection = js.native
   
-  var Bliss: BlissStatic = js.native
+  @scala.inline
+  def $_=(x: BlissStaticCollection): Unit = js.Dynamic.global.updateDynamic("$$")(x.asInstanceOf[js.Any])
   
-  @JSName("$")
-  var _empty: BlissStatic = js.native
+  @JSGlobal("Bliss")
+  @js.native
+  def Bliss: BlissStatic = js.native
+  @scala.inline
+  def Bliss_=(x: BlissStatic): Unit = js.Dynamic.global.updateDynamic("Bliss")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("$")
+  @js.native
+  def _empty: BlissStatic = js.native
+  
+  @scala.inline
+  def _empty_=(x: BlissStatic): Unit = js.Dynamic.global.updateDynamic("$")(x.asInstanceOf[js.Any])
 }

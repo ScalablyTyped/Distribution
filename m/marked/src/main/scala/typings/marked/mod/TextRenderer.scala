@@ -1,12 +1,13 @@
 package typings.marked.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("marked", "TextRenderer")
 @js.native
-class TextRenderer () extends js.Object {
+class TextRenderer () extends StObject {
   
   def br(): String = js.native
   

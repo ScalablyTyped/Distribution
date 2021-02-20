@@ -1,11 +1,12 @@
 package typings.awsSdk.migrationhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationState extends js.Object {
+trait ApplicationState extends StObject {
   
   /**
     * The configurationId from the Application Discovery Service that uniquely identifies an application.
@@ -31,36 +32,24 @@ object ApplicationState {
   }
   
   @scala.inline
-  implicit class ApplicationStateOps[Self <: ApplicationState] (val x: Self) extends AnyVal {
+  implicit class ApplicationStateMutableBuilder[Self <: ApplicationState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationId(value: ApplicationId): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationStatus(value: ApplicationStatus): Self = StObject.set(x, "ApplicationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationId(value: ApplicationId): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    def setApplicationStatusUndefined: Self = StObject.set(x, "ApplicationStatus", js.undefined)
     
     @scala.inline
-    def deleteApplicationId: Self = this.set("ApplicationId", js.undefined)
+    def setLastUpdatedTime(value: UpdateDateTime): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationStatus(value: ApplicationStatus): Self = this.set("ApplicationStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApplicationStatus: Self = this.set("ApplicationStatus", js.undefined)
-    
-    @scala.inline
-    def setLastUpdatedTime(value: UpdateDateTime): Self = this.set("LastUpdatedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastUpdatedTime: Self = this.set("LastUpdatedTime", js.undefined)
+    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
   }
 }

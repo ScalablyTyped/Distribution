@@ -1,47 +1,99 @@
 package typings.dialogflow.mod.google.protobuf
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Value. */
-trait IValue extends js.Object {
+@js.native
+trait IValue extends StObject {
+  
   /** Value boolValue */
-  var boolValue: js.UndefOr[Boolean | Null] = js.undefined
+  var boolValue: js.UndefOr[Boolean | Null] = js.native
+  
   /** Value listValue */
-  var listValue: js.UndefOr[IListValue | Null] = js.undefined
+  var listValue: js.UndefOr[IListValue | Null] = js.native
+  
   /** Value nullValue */
   var nullValue: js.UndefOr[
     NullValue | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.NullValue * / any */ String) | Null
-  ] = js.undefined
+  ] = js.native
+  
   /** Value numberValue */
-  var numberValue: js.UndefOr[Double | Null] = js.undefined
+  var numberValue: js.UndefOr[Double | Null] = js.native
+  
   /** Value stringValue */
-  var stringValue: js.UndefOr[String | Null] = js.undefined
+  var stringValue: js.UndefOr[String | Null] = js.native
+  
   /** Value structValue */
-  var structValue: js.UndefOr[IStruct | Null] = js.undefined
+  var structValue: js.UndefOr[IStruct | Null] = js.native
 }
-
 object IValue {
+  
   @scala.inline
-  def apply(
-    boolValue: js.UndefOr[Null | Boolean] = js.undefined,
-    listValue: js.UndefOr[Null | IListValue] = js.undefined,
-    nullValue: js.UndefOr[
-      Null | NullValue | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.NullValue * / any */ String)
-    ] = js.undefined,
-    numberValue: js.UndefOr[Null | Double] = js.undefined,
-    stringValue: js.UndefOr[Null | String] = js.undefined,
-    structValue: js.UndefOr[Null | IStruct] = js.undefined
-  ): IValue = {
+  def apply(): IValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(listValue)) __obj.updateDynamic("listValue")(listValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(nullValue)) __obj.updateDynamic("nullValue")(nullValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberValue)) __obj.updateDynamic("numberValue")(numberValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(stringValue)) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(structValue)) __obj.updateDynamic("structValue")(structValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValue]
   }
+  
+  @scala.inline
+  implicit class IValueMutableBuilder[Self <: IValue] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setBoolValueNull: Self = StObject.set(x, "boolValue", null)
+    
+    @scala.inline
+    def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
+    
+    @scala.inline
+    def setListValue(value: IListValue): Self = StObject.set(x, "listValue", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setListValueNull: Self = StObject.set(x, "listValue", null)
+    
+    @scala.inline
+    def setListValueUndefined: Self = StObject.set(x, "listValue", js.undefined)
+    
+    @scala.inline
+    def setNullValue(
+      value: NullValue | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.NullValue * / any */ String)
+    ): Self = StObject.set(x, "nullValue", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNullValueNull: Self = StObject.set(x, "nullValue", null)
+    
+    @scala.inline
+    def setNullValueUndefined: Self = StObject.set(x, "nullValue", js.undefined)
+    
+    @scala.inline
+    def setNumberValue(value: Double): Self = StObject.set(x, "numberValue", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNumberValueNull: Self = StObject.set(x, "numberValue", null)
+    
+    @scala.inline
+    def setNumberValueUndefined: Self = StObject.set(x, "numberValue", js.undefined)
+    
+    @scala.inline
+    def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStringValueNull: Self = StObject.set(x, "stringValue", null)
+    
+    @scala.inline
+    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
+    
+    @scala.inline
+    def setStructValue(value: IStruct): Self = StObject.set(x, "structValue", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStructValueNull: Self = StObject.set(x, "structValue", null)
+    
+    @scala.inline
+    def setStructValueUndefined: Self = StObject.set(x, "structValue", js.undefined)
+  }
 }
-

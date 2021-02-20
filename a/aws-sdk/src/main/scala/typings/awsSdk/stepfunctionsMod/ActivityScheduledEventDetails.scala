@@ -1,11 +1,12 @@
 package typings.awsSdk.stepfunctionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivityScheduledEventDetails extends js.Object {
+trait ActivityScheduledEventDetails extends StObject {
   
   /**
     * The maximum allowed duration between two heartbeats for the activity task.
@@ -41,45 +42,33 @@ object ActivityScheduledEventDetails {
   }
   
   @scala.inline
-  implicit class ActivityScheduledEventDetailsOps[Self <: ActivityScheduledEventDetails] (val x: Self) extends AnyVal {
+  implicit class ActivityScheduledEventDetailsMutableBuilder[Self <: ActivityScheduledEventDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeartbeatInSeconds(value: TimeoutInSeconds): Self = StObject.set(x, "heartbeatInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeartbeatInSecondsUndefined: Self = StObject.set(x, "heartbeatInSeconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInput(value: SensitiveData): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: Arn): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setInputDetails(value: HistoryEventExecutionDataDetails): Self = StObject.set(x, "inputDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeartbeatInSeconds(value: TimeoutInSeconds): Self = this.set("heartbeatInSeconds", value.asInstanceOf[js.Any])
+    def setInputDetailsUndefined: Self = StObject.set(x, "inputDetails", js.undefined)
     
     @scala.inline
-    def deleteHeartbeatInSeconds: Self = this.set("heartbeatInSeconds", js.undefined)
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def setInput(value: SensitiveData): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setResource(value: Arn): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setTimeoutInSeconds(value: TimeoutInSeconds): Self = StObject.set(x, "timeoutInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputDetails(value: HistoryEventExecutionDataDetails): Self = this.set("inputDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputDetails: Self = this.set("inputDetails", js.undefined)
-    
-    @scala.inline
-    def setTimeoutInSeconds(value: TimeoutInSeconds): Self = this.set("timeoutInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutInSeconds: Self = this.set("timeoutInSeconds", js.undefined)
+    def setTimeoutInSecondsUndefined: Self = StObject.set(x, "timeoutInSeconds", js.undefined)
   }
 }

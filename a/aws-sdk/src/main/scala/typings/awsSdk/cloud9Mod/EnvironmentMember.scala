@@ -1,11 +1,12 @@
 package typings.awsSdk.cloud9Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvironmentMember extends js.Object {
+trait EnvironmentMember extends StObject {
   
   /**
     * The ID of the environment for the environment member.
@@ -41,48 +42,36 @@ object EnvironmentMember {
   }
   
   @scala.inline
-  implicit class EnvironmentMemberOps[Self <: EnvironmentMember] (val x: Self) extends AnyVal {
+  implicit class EnvironmentMemberMutableBuilder[Self <: EnvironmentMember] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentIdUndefined: Self = StObject.set(x, "environmentId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastAccess(value: Timestamp): Self = StObject.set(x, "lastAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentId(value: EnvironmentId): Self = this.set("environmentId", value.asInstanceOf[js.Any])
+    def setLastAccessUndefined: Self = StObject.set(x, "lastAccess", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentId: Self = this.set("environmentId", js.undefined)
+    def setPermissions(value: Permissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastAccess(value: Timestamp): Self = this.set("lastAccess", value.asInstanceOf[js.Any])
+    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
     @scala.inline
-    def deleteLastAccess: Self = this.set("lastAccess", js.undefined)
+    def setUserArn(value: UserArn): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissions(value: Permissions): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    def setUserArnUndefined: Self = StObject.set(x, "userArn", js.undefined)
     
     @scala.inline
-    def deletePermissions: Self = this.set("permissions", js.undefined)
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserArn(value: UserArn): Self = this.set("userArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserArn: Self = this.set("userArn", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

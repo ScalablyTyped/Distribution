@@ -3,12 +3,13 @@ package typings.reactNativeFirebase.anon
 import typings.reactNativeFirebase.mod.RNFirebase.ErrorHandler
 import typings.reactNativeFirebase.mod.RNFirebase.Handler
 import typings.reactNativeFirebase.mod.RNFirebase.RnError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Complete[T] extends js.Object {
+trait Complete[T] extends StObject {
   
   var complete: js.UndefOr[Handler[T]] = js.native
   
@@ -25,36 +26,24 @@ object Complete {
   }
   
   @scala.inline
-  implicit class CompleteOps[Self <: Complete[_], T] (val x: Self with Complete[T]) extends AnyVal {
+  implicit class CompleteMutableBuilder[Self <: Complete[_], T] (val x: Self with Complete[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: T => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: RnError => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComplete(value: T => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setNext(value: T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setError(value: RnError => Unit): Self = this.set("error", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
-    
-    @scala.inline
-    def setNext(value: T => Unit): Self = this.set("next", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteNext: Self = this.set("next", js.undefined)
+    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
   }
 }

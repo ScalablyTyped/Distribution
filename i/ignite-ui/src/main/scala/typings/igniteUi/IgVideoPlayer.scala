@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -265,264 +266,252 @@ object IgVideoPlayer {
   }
   
   @scala.inline
-  implicit class IgVideoPlayerOps[Self <: IgVideoPlayer] (val x: Self) extends AnyVal {
+  implicit class IgVideoPlayerMutableBuilder[Self <: IgVideoPlayer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutohide(value: Boolean): Self = StObject.set(x, "autohide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutohideUndefined: Self = StObject.set(x, "autohide", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutohide(value: Boolean): Self = this.set("autohide", value.asInstanceOf[js.Any])
+    def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
     
     @scala.inline
-    def deleteAutohide: Self = this.set("autohide", js.undefined)
+    def setBannerClick(value: (/* event */ Event, /* ui */ BannerClickEventUIParam) => Unit): Self = StObject.set(x, "bannerClick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAutoplay(value: Boolean): Self = this.set("autoplay", value.asInstanceOf[js.Any])
+    def setBannerClickUndefined: Self = StObject.set(x, "bannerClick", js.undefined)
     
     @scala.inline
-    def deleteAutoplay: Self = this.set("autoplay", js.undefined)
+    def setBannerHidden(value: (/* event */ Event, /* ui */ BannerHiddenEventUIParam) => Unit): Self = StObject.set(x, "bannerHidden", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBannerClick(value: (/* event */ Event, /* ui */ BannerClickEventUIParam) => Unit): Self = this.set("bannerClick", js.Any.fromFunction2(value))
+    def setBannerHiddenUndefined: Self = StObject.set(x, "bannerHidden", js.undefined)
     
     @scala.inline
-    def deleteBannerClick: Self = this.set("bannerClick", js.undefined)
+    def setBannerVisible(value: (/* event */ Event, /* ui */ BannerVisibleEventUIParam) => Unit): Self = StObject.set(x, "bannerVisible", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBannerHidden(value: (/* event */ Event, /* ui */ BannerHiddenEventUIParam) => Unit): Self = this.set("bannerHidden", js.Any.fromFunction2(value))
+    def setBannerVisibleUndefined: Self = StObject.set(x, "bannerVisible", js.undefined)
     
     @scala.inline
-    def deleteBannerHidden: Self = this.set("bannerHidden", js.undefined)
+    def setBanners(value: js.Array[IgVideoPlayerBanner]): Self = StObject.set(x, "banners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBannerVisible(value: (/* event */ Event, /* ui */ BannerVisibleEventUIParam) => Unit): Self = this.set("bannerVisible", js.Any.fromFunction2(value))
+    def setBannersUndefined: Self = StObject.set(x, "banners", js.undefined)
     
     @scala.inline
-    def deleteBannerVisible: Self = this.set("bannerVisible", js.undefined)
+    def setBannersVarargs(value: IgVideoPlayerBanner*): Self = StObject.set(x, "banners", js.Array(value :_*))
     
     @scala.inline
-    def setBannersVarargs(value: IgVideoPlayerBanner*): Self = this.set("banners", js.Array(value :_*))
+    def setBookmarkClick(value: (/* event */ Event, /* ui */ BookmarkClickEventUIParam) => Unit): Self = StObject.set(x, "bookmarkClick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBanners(value: js.Array[IgVideoPlayerBanner]): Self = this.set("banners", value.asInstanceOf[js.Any])
+    def setBookmarkClickUndefined: Self = StObject.set(x, "bookmarkClick", js.undefined)
     
     @scala.inline
-    def deleteBanners: Self = this.set("banners", js.undefined)
+    def setBookmarkHit(value: (/* event */ Event, /* ui */ BookmarkHitEventUIParam) => Unit): Self = StObject.set(x, "bookmarkHit", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBookmarkClick(value: (/* event */ Event, /* ui */ BookmarkClickEventUIParam) => Unit): Self = this.set("bookmarkClick", js.Any.fromFunction2(value))
+    def setBookmarkHitUndefined: Self = StObject.set(x, "bookmarkHit", js.undefined)
     
     @scala.inline
-    def deleteBookmarkClick: Self = this.set("bookmarkClick", js.undefined)
+    def setBookmarks(value: js.Array[IgVideoPlayerBookmark]): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBookmarkHit(value: (/* event */ Event, /* ui */ BookmarkHitEventUIParam) => Unit): Self = this.set("bookmarkHit", js.Any.fromFunction2(value))
+    def setBookmarksUndefined: Self = StObject.set(x, "bookmarks", js.undefined)
     
     @scala.inline
-    def deleteBookmarkHit: Self = this.set("bookmarkHit", js.undefined)
+    def setBookmarksVarargs(value: IgVideoPlayerBookmark*): Self = StObject.set(x, "bookmarks", js.Array(value :_*))
     
     @scala.inline
-    def setBookmarksVarargs(value: IgVideoPlayerBookmark*): Self = this.set("bookmarks", js.Array(value :_*))
+    def setBrowserControls(value: Boolean): Self = StObject.set(x, "browserControls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBookmarks(value: js.Array[IgVideoPlayerBookmark]): Self = this.set("bookmarks", value.asInstanceOf[js.Any])
+    def setBrowserControlsUndefined: Self = StObject.set(x, "browserControls", js.undefined)
     
     @scala.inline
-    def deleteBookmarks: Self = this.set("bookmarks", js.undefined)
+    def setBrowserNotSupported(value: (/* event */ Event, /* ui */ BrowserNotSupportedEventUIParam) => Unit): Self = StObject.set(x, "browserNotSupported", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBrowserControls(value: Boolean): Self = this.set("browserControls", value.asInstanceOf[js.Any])
+    def setBrowserNotSupportedUndefined: Self = StObject.set(x, "browserNotSupported", js.undefined)
     
     @scala.inline
-    def deleteBrowserControls: Self = this.set("browserControls", js.undefined)
+    def setBuffering(value: (/* event */ Event, /* ui */ BufferingEventUIParam) => Unit): Self = StObject.set(x, "buffering", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBrowserNotSupported(value: (/* event */ Event, /* ui */ BrowserNotSupportedEventUIParam) => Unit): Self = this.set("browserNotSupported", js.Any.fromFunction2(value))
+    def setBufferingUndefined: Self = StObject.set(x, "buffering", js.undefined)
     
     @scala.inline
-    def deleteBrowserNotSupported: Self = this.set("browserNotSupported", js.undefined)
+    def setCenterButtonHideDelay(value: Double): Self = StObject.set(x, "centerButtonHideDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuffering(value: (/* event */ Event, /* ui */ BufferingEventUIParam) => Unit): Self = this.set("buffering", js.Any.fromFunction2(value))
+    def setCenterButtonHideDelayUndefined: Self = StObject.set(x, "centerButtonHideDelay", js.undefined)
     
     @scala.inline
-    def deleteBuffering: Self = this.set("buffering", js.undefined)
+    def setCommercials(value: IgVideoPlayerCommercials): Self = StObject.set(x, "commercials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterButtonHideDelay(value: Double): Self = this.set("centerButtonHideDelay", value.asInstanceOf[js.Any])
+    def setCommercialsUndefined: Self = StObject.set(x, "commercials", js.undefined)
     
     @scala.inline
-    def deleteCenterButtonHideDelay: Self = this.set("centerButtonHideDelay", js.undefined)
+    def setEnded(value: (/* event */ Event, /* ui */ EndedEventUIParam) => Unit): Self = StObject.set(x, "ended", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCommercials(value: IgVideoPlayerCommercials): Self = this.set("commercials", value.asInstanceOf[js.Any])
+    def setEndedUndefined: Self = StObject.set(x, "ended", js.undefined)
     
     @scala.inline
-    def deleteCommercials: Self = this.set("commercials", js.undefined)
+    def setEnterFullScreen(value: (/* event */ Event, /* ui */ EnterFullScreenEventUIParam) => Unit): Self = StObject.set(x, "enterFullScreen", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEnded(value: (/* event */ Event, /* ui */ EndedEventUIParam) => Unit): Self = this.set("ended", js.Any.fromFunction2(value))
+    def setEnterFullScreenUndefined: Self = StObject.set(x, "enterFullScreen", js.undefined)
     
     @scala.inline
-    def deleteEnded: Self = this.set("ended", js.undefined)
+    def setExitFullScreen(value: (/* event */ Event, /* ui */ ExitFullScreenEventUIParam) => Unit): Self = StObject.set(x, "exitFullScreen", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEnterFullScreen(value: (/* event */ Event, /* ui */ EnterFullScreenEventUIParam) => Unit): Self = this.set("enterFullScreen", js.Any.fromFunction2(value))
+    def setExitFullScreenUndefined: Self = StObject.set(x, "exitFullScreen", js.undefined)
     
     @scala.inline
-    def deleteEnterFullScreen: Self = this.set("enterFullScreen", js.undefined)
+    def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExitFullScreen(value: (/* event */ Event, /* ui */ ExitFullScreenEventUIParam) => Unit): Self = this.set("exitFullScreen", js.Any.fromFunction2(value))
+    def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
     
     @scala.inline
-    def deleteExitFullScreen: Self = this.set("exitFullScreen", js.undefined)
+    def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullscreen(value: Boolean): Self = this.set("fullscreen", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFullscreen: Self = this.set("fullscreen", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLocale(value: IgVideoPlayerLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: IgVideoPlayerLocale): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
     
     @scala.inline
-    def deleteLoop: Self = this.set("loop", js.undefined)
+    def setPaused(value: (/* event */ Event, /* ui */ PausedEventUIParam) => Unit): Self = StObject.set(x, "paused", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMuted(value: Boolean): Self = this.set("muted", value.asInstanceOf[js.Any])
+    def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
     
     @scala.inline
-    def deleteMuted: Self = this.set("muted", js.undefined)
+    def setPlaying(value: (/* event */ Event, /* ui */ PlayingEventUIParam) => Unit): Self = StObject.set(x, "playing", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPaused(value: (/* event */ Event, /* ui */ PausedEventUIParam) => Unit): Self = this.set("paused", js.Any.fromFunction2(value))
+    def setPlayingUndefined: Self = StObject.set(x, "playing", js.undefined)
     
     @scala.inline
-    def deletePaused: Self = this.set("paused", js.undefined)
+    def setPosterUrl(value: String): Self = StObject.set(x, "posterUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaying(value: (/* event */ Event, /* ui */ PlayingEventUIParam) => Unit): Self = this.set("playing", js.Any.fromFunction2(value))
+    def setPosterUrlUndefined: Self = StObject.set(x, "posterUrl", js.undefined)
     
     @scala.inline
-    def deletePlaying: Self = this.set("playing", js.undefined)
+    def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosterUrl(value: String): Self = this.set("posterUrl", value.asInstanceOf[js.Any])
+    def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
     
     @scala.inline
-    def deletePosterUrl: Self = this.set("posterUrl", js.undefined)
+    def setProgress(value: (/* event */ Event, /* ui */ ProgressEventUIParam) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPreload(value: Boolean): Self = this.set("preload", value.asInstanceOf[js.Any])
+    def setProgressLabelFormat(value: String): Self = StObject.set(x, "progressLabelFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreload: Self = this.set("preload", js.undefined)
+    def setProgressLabelFormatUndefined: Self = StObject.set(x, "progressLabelFormat", js.undefined)
     
     @scala.inline
-    def setProgress(value: (/* event */ Event, /* ui */ ProgressEventUIParam) => Unit): Self = this.set("progress", js.Any.fromFunction2(value))
+    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
     @scala.inline
-    def deleteProgress: Self = this.set("progress", js.undefined)
+    def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressLabelFormat(value: String): Self = this.set("progressLabelFormat", value.asInstanceOf[js.Any])
+    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
     
     @scala.inline
-    def deleteProgressLabelFormat: Self = this.set("progressLabelFormat", js.undefined)
+    def setRelatedVideoClick(value: (/* event */ Event, /* ui */ RelatedVideoClickEventUIParam) => Unit): Self = StObject.set(x, "relatedVideoClick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRegional(value: String | js.Object): Self = this.set("regional", value.asInstanceOf[js.Any])
+    def setRelatedVideoClickUndefined: Self = StObject.set(x, "relatedVideoClick", js.undefined)
     
     @scala.inline
-    def deleteRegional: Self = this.set("regional", js.undefined)
+    def setRelatedVideos(value: js.Array[IgVideoPlayerRelatedVideo]): Self = StObject.set(x, "relatedVideos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatedVideoClick(value: (/* event */ Event, /* ui */ RelatedVideoClickEventUIParam) => Unit): Self = this.set("relatedVideoClick", js.Any.fromFunction2(value))
+    def setRelatedVideosUndefined: Self = StObject.set(x, "relatedVideos", js.undefined)
     
     @scala.inline
-    def deleteRelatedVideoClick: Self = this.set("relatedVideoClick", js.undefined)
+    def setRelatedVideosVarargs(value: IgVideoPlayerRelatedVideo*): Self = StObject.set(x, "relatedVideos", js.Array(value :_*))
     
     @scala.inline
-    def setRelatedVideosVarargs(value: IgVideoPlayerRelatedVideo*): Self = this.set("relatedVideos", js.Array(value :_*))
+    def setShowSeekTime(value: Boolean): Self = StObject.set(x, "showSeekTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatedVideos(value: js.Array[IgVideoPlayerRelatedVideo]): Self = this.set("relatedVideos", value.asInstanceOf[js.Any])
+    def setShowSeekTimeUndefined: Self = StObject.set(x, "showSeekTime", js.undefined)
     
     @scala.inline
-    def deleteRelatedVideos: Self = this.set("relatedVideos", js.undefined)
+    def setSources(value: js.Array[_]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowSeekTime(value: Boolean): Self = this.set("showSeekTime", value.asInstanceOf[js.Any])
+    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
     @scala.inline
-    def deleteShowSeekTime: Self = this.set("showSeekTime", js.undefined)
+    def setSourcesVarargs(value: js.Any*): Self = StObject.set(x, "sources", js.Array(value :_*))
     
     @scala.inline
-    def setSourcesVarargs(value: js.Any*): Self = this.set("sources", js.Array(value :_*))
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSources(value: js.Array[_]): Self = this.set("sources", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteSources: Self = this.set("sources", js.undefined)
+    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setVolumeAutohideDelay(value: Double): Self = StObject.set(x, "volumeAutohideDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setVolumeAutohideDelayUndefined: Self = StObject.set(x, "volumeAutohideDelay", js.undefined)
     
     @scala.inline
-    def setVolume(value: Double): Self = this.set("volume", value.asInstanceOf[js.Any])
+    def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
     
     @scala.inline
-    def deleteVolume: Self = this.set("volume", js.undefined)
+    def setWaiting(value: (/* event */ Event, /* ui */ WaitingEventUIParam) => Unit): Self = StObject.set(x, "waiting", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setVolumeAutohideDelay(value: Double): Self = this.set("volumeAutohideDelay", value.asInstanceOf[js.Any])
+    def setWaitingUndefined: Self = StObject.set(x, "waiting", js.undefined)
     
     @scala.inline
-    def deleteVolumeAutohideDelay: Self = this.set("volumeAutohideDelay", js.undefined)
+    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWaiting(value: (/* event */ Event, /* ui */ WaitingEventUIParam) => Unit): Self = this.set("waiting", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteWaiting: Self = this.set("waiting", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,39 +81,27 @@ object XWindow2 {
   }
   
   @scala.inline
-  implicit class XWindow2Ops[Self <: XWindow2] (val x: Self) extends AnyVal {
+  implicit class XWindow2MutableBuilder[Self <: XWindow2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetOutputSize(value: () => Size): Self = StObject.set(x, "getOutputSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasFocus(value: () => Boolean): Self = StObject.set(x, "hasFocus", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOutputSize(value: Size): Self = this.set("OutputSize", value.asInstanceOf[js.Any])
+    def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOutputSize(value: () => Size): Self = this.set("getOutputSize", js.Any.fromFunction0(value))
+    def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasFocus(value: () => Boolean): Self = this.set("hasFocus", js.Any.fromFunction0(value))
+    def setOutputSize(value: Size): Self = StObject.set(x, "OutputSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsActive(value: () => Boolean): Self = this.set("isActive", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsEnabled(value: () => Boolean): Self = this.set("isEnabled", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsVisible(value: () => Boolean): Self = this.set("isVisible", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetOutputSize(value: Size => Unit): Self = this.set("setOutputSize", js.Any.fromFunction1(value))
+    def setSetOutputSize(value: Size => Unit): Self = StObject.set(x, "setOutputSize", js.Any.fromFunction1(value))
   }
 }

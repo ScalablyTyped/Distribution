@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SmsMessageType extends js.Object
+sealed trait SmsMessageType extends StObject
 /** This enumerated type defines the format of the SMS message. */
 @JSGlobal("Windows.Devices.Sms.SmsMessageType")
 @js.native
-object SmsMessageType extends js.Object {
+object SmsMessageType extends StObject {
   
   /** An application-directed message (a visual voicemail message on a specific port, for example). */
   @js.native

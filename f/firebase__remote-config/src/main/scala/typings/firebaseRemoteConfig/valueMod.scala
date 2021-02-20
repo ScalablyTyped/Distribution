@@ -1,14 +1,14 @@
 package typings.firebaseRemoteConfig
 
 import typings.firebaseRemoteConfigTypes.mod.ValueSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/remote-config/dist/src/value", JSImport.Namespace)
-@js.native
-object valueMod extends js.Object {
+object valueMod {
   
+  @JSImport("@firebase/remote-config/dist/src/value", "Value")
   @js.native
   class Value protected ()
     extends typings.firebaseRemoteConfigTypes.mod.Value {

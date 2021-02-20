@@ -1,5 +1,6 @@
 package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An icon for a web app. Supported formats are: png, jpg and webp.
   */
 @js.native
-trait SchemaWebAppIcon extends js.Object {
+trait SchemaWebAppIcon extends StObject {
   
   /**
     * The actual bytes of the image in a base64url encoded string (c.f.
@@ -28,24 +29,12 @@ object SchemaWebAppIcon {
   }
   
   @scala.inline
-  implicit class SchemaWebAppIconOps[Self <: SchemaWebAppIcon] (val x: Self) extends AnyVal {
+  implicit class SchemaWebAppIconMutableBuilder[Self <: SchemaWebAppIcon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageData(value: String): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setImageData(value: String): Self = this.set("imageData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageData: Self = this.set("imageData", js.undefined)
+    def setImageDataUndefined: Self = StObject.set(x, "imageData", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.grammarkdown.nodesMod
 
 import typings.grammarkdown.tokensMod.SyntaxKind.OfKeyword
 import typings.grammarkdown.tokensMod.SyntaxKind.OneKeyword
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("grammarkdown/dist/nodes", "OneOfList")
 @js.native
 class OneOfList protected ()
-  extends Node[typings.grammarkdown.tokensMod.SyntaxKind.OneOfList]
+  extends ProductionBodyBase[typings.grammarkdown.tokensMod.SyntaxKind.OneOfList]
      with ProductionBody {
   def this(oneKeyword: Token[OneKeyword], ofKeyword: js.UndefOr[scala.Nothing], indented: Boolean) = this()
   def this(oneKeyword: Token[OneKeyword], ofKeyword: Token[OfKeyword], indented: Boolean) = this()

@@ -1,11 +1,12 @@
 package typings.awsSdk.translateMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextTranslationJobFilter extends js.Object {
+trait TextTranslationJobFilter extends StObject {
   
   /**
     * Filters the list of jobs by name.
@@ -36,42 +37,30 @@ object TextTranslationJobFilter {
   }
   
   @scala.inline
-  implicit class TextTranslationJobFilterOps[Self <: TextTranslationJobFilter] (val x: Self) extends AnyVal {
+  implicit class TextTranslationJobFilterMutableBuilder[Self <: TextTranslationJobFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobName(value: JobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobStatus(value: JobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobName(value: JobName): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
     
     @scala.inline
-    def deleteJobName: Self = this.set("JobName", js.undefined)
+    def setSubmittedAfterTime(value: Timestamp): Self = StObject.set(x, "SubmittedAfterTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobStatus(value: JobStatus): Self = this.set("JobStatus", value.asInstanceOf[js.Any])
+    def setSubmittedAfterTimeUndefined: Self = StObject.set(x, "SubmittedAfterTime", js.undefined)
     
     @scala.inline
-    def deleteJobStatus: Self = this.set("JobStatus", js.undefined)
+    def setSubmittedBeforeTime(value: Timestamp): Self = StObject.set(x, "SubmittedBeforeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmittedAfterTime(value: Timestamp): Self = this.set("SubmittedAfterTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubmittedAfterTime: Self = this.set("SubmittedAfterTime", js.undefined)
-    
-    @scala.inline
-    def setSubmittedBeforeTime(value: Timestamp): Self = this.set("SubmittedBeforeTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubmittedBeforeTime: Self = this.set("SubmittedBeforeTime", js.undefined)
+    def setSubmittedBeforeTimeUndefined: Self = StObject.set(x, "SubmittedBeforeTime", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * gRPC channel credentials to access the SDS server.
   */
 @js.native
-trait SchemaChannelCredentials extends js.Object {
+trait SchemaChannelCredentials extends StObject {
   
   /**
     * The call credentials to access the SDS server.
@@ -32,30 +33,18 @@ object SchemaChannelCredentials {
   }
   
   @scala.inline
-  implicit class SchemaChannelCredentialsOps[Self <: SchemaChannelCredentials] (val x: Self) extends AnyVal {
+  implicit class SchemaChannelCredentialsMutableBuilder[Self <: SchemaChannelCredentials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificates(value: SchemaTlsCertificatePaths): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificatesUndefined: Self = StObject.set(x, "certificates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelCredentialType(value: String): Self = StObject.set(x, "channelCredentialType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificates(value: SchemaTlsCertificatePaths): Self = this.set("certificates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificates: Self = this.set("certificates", js.undefined)
-    
-    @scala.inline
-    def setChannelCredentialType(value: String): Self = this.set("channelCredentialType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChannelCredentialType: Self = this.set("channelCredentialType", js.undefined)
+    def setChannelCredentialTypeUndefined: Self = StObject.set(x, "channelCredentialType", js.undefined)
   }
 }

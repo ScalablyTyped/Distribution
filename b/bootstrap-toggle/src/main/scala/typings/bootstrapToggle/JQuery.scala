@@ -6,12 +6,13 @@ import typings.bootstrapToggle.bootstrapToggleStrings.enable
 import typings.bootstrapToggle.bootstrapToggleStrings.off
 import typings.bootstrapToggle.bootstrapToggleStrings.on
 import typings.bootstrapToggle.bootstrapToggleStrings.toggle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def bootstrapToggle(): JQuery = js.native
   def bootstrapToggle(options: BootstrapToggleOptions): JQuery = js.native

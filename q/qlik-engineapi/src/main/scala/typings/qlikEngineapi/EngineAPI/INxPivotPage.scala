@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NxPivotPage...
   */
 @js.native
-trait INxPivotPage extends js.Object {
+trait INxPivotPage extends StObject {
   
   /**
     * Size and offset of the data in the matrix.
@@ -45,39 +46,27 @@ object INxPivotPage {
   }
   
   @scala.inline
-  implicit class INxPivotPageOps[Self <: INxPivotPage] (val x: Self) extends AnyVal {
+  implicit class INxPivotPageMutableBuilder[Self <: INxPivotPage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQArea(value: IRect): Self = StObject.set(x, "qArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQData(value: js.Array[INxPivotValuePoint]): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQDataVarargs(value: INxPivotValuePoint*): Self = StObject.set(x, "qData", js.Array(value :_*))
     
     @scala.inline
-    def setQArea(value: IRect): Self = this.set("qArea", value.asInstanceOf[js.Any])
+    def setQLeft(value: js.Array[INxPivotDimensionCell]): Self = StObject.set(x, "qLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDataVarargs(value: INxPivotValuePoint*): Self = this.set("qData", js.Array(value :_*))
+    def setQLeftVarargs(value: INxPivotDimensionCell*): Self = StObject.set(x, "qLeft", js.Array(value :_*))
     
     @scala.inline
-    def setQData(value: js.Array[INxPivotValuePoint]): Self = this.set("qData", value.asInstanceOf[js.Any])
+    def setQTop(value: js.Array[INxPivotDimensionCell]): Self = StObject.set(x, "qTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQLeftVarargs(value: INxPivotDimensionCell*): Self = this.set("qLeft", js.Array(value :_*))
-    
-    @scala.inline
-    def setQLeft(value: js.Array[INxPivotDimensionCell]): Self = this.set("qLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQTopVarargs(value: INxPivotDimensionCell*): Self = this.set("qTop", js.Array(value :_*))
-    
-    @scala.inline
-    def setQTop(value: js.Array[INxPivotDimensionCell]): Self = this.set("qTop", value.asInstanceOf[js.Any])
+    def setQTopVarargs(value: INxPivotDimensionCell*): Self = StObject.set(x, "qTop", js.Array(value :_*))
   }
 }

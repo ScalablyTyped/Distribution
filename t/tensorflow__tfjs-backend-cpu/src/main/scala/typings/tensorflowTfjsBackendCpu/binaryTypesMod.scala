@@ -4,13 +4,12 @@ import typings.std.Float32Array
 import typings.tensorflowTfjsBackendCpu.anon.Real
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-backend-cpu/dist/utils/binary_types", JSImport.Namespace)
-@js.native
-object binaryTypesMod extends js.Object {
+object binaryTypesMod {
   
   type ComplexBinaryKernelImpl = js.Function6[
     /* aShape */ js.Array[Double], 

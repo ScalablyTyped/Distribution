@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvelopePurgeConfiguration extends js.Object {
+trait EnvelopePurgeConfiguration extends StObject {
   
   /**
     * When set to **true**, purging is enabled.
@@ -38,42 +39,30 @@ object EnvelopePurgeConfiguration {
   }
   
   @scala.inline
-  implicit class EnvelopePurgeConfigurationOps[Self <: EnvelopePurgeConfiguration] (val x: Self) extends AnyVal {
+  implicit class EnvelopePurgeConfigurationMutableBuilder[Self <: EnvelopePurgeConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPurgeEnvelopes(value: String): Self = StObject.set(x, "purgeEnvelopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPurgeEnvelopesUndefined: Self = StObject.set(x, "purgeEnvelopes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRedactPII(value: String): Self = StObject.set(x, "redactPII", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurgeEnvelopes(value: String): Self = this.set("purgeEnvelopes", value.asInstanceOf[js.Any])
+    def setRedactPIIUndefined: Self = StObject.set(x, "redactPII", js.undefined)
     
     @scala.inline
-    def deletePurgeEnvelopes: Self = this.set("purgeEnvelopes", js.undefined)
+    def setRemoveTabsAndEnvelopeAttachments(value: String): Self = StObject.set(x, "removeTabsAndEnvelopeAttachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedactPII(value: String): Self = this.set("redactPII", value.asInstanceOf[js.Any])
+    def setRemoveTabsAndEnvelopeAttachmentsUndefined: Self = StObject.set(x, "removeTabsAndEnvelopeAttachments", js.undefined)
     
     @scala.inline
-    def deleteRedactPII: Self = this.set("redactPII", js.undefined)
+    def setRetentionDays(value: String): Self = StObject.set(x, "retentionDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveTabsAndEnvelopeAttachments(value: String): Self = this.set("removeTabsAndEnvelopeAttachments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveTabsAndEnvelopeAttachments: Self = this.set("removeTabsAndEnvelopeAttachments", js.undefined)
-    
-    @scala.inline
-    def setRetentionDays(value: String): Self = this.set("retentionDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetentionDays: Self = this.set("retentionDays", js.undefined)
+    def setRetentionDaysUndefined: Self = StObject.set(x, "retentionDays", js.undefined)
   }
 }

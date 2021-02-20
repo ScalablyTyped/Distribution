@@ -2,12 +2,13 @@ package typings.agoraRtcSdk.anon
 
 import typings.agoraRtcSdk.agoraRtcSdkStrings.error
 import typings.agoraRtcSdk.agoraRtcSdkStrings.warning
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Info extends js.Object {
+trait Info extends StObject {
   
   var info: js.UndefOr[String] = js.native
   
@@ -25,30 +26,18 @@ object Info {
   }
   
   @scala.inline
-  implicit class InfoOps[Self <: Info] (val x: Self) extends AnyVal {
+  implicit class InfoMutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsg(value: String): Self = this.set("msg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: warning | error): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInfo(value: String): Self = this.set("info", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInfo: Self = this.set("info", js.undefined)
+    def setType(value: warning | error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

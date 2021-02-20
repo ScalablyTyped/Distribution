@@ -1,12 +1,13 @@
 package typings.activexShdocvw.SHDocVw
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Shell Browser Window. */
 @js.native
-trait ShellBrowserWindow extends js.Object {
+trait ShellBrowserWindow extends StObject {
   
   /** Controls whether address bar is shown */
   var AddressBar: Boolean = js.native

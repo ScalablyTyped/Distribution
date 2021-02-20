@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Processor extends js.Object {
+trait Processor extends StObject {
   
   /**
     * The processor parameters.
@@ -26,30 +27,18 @@ object Processor {
   }
   
   @scala.inline
-  implicit class ProcessorOps[Self <: Processor] (val x: Self) extends AnyVal {
+  implicit class ProcessorMutableBuilder[Self <: Processor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: ProcessorParameterList): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParametersVarargs(value: ProcessorParameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: ProcessorType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParametersVarargs(value: ProcessorParameter*): Self = this.set("Parameters", js.Array(value :_*))
-    
-    @scala.inline
-    def setParameters(value: ProcessorParameterList): Self = this.set("Parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    def setType(value: ProcessorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

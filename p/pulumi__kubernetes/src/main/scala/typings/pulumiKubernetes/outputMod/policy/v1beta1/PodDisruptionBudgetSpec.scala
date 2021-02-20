@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.outputMod.policy.v1beta1
 
 import typings.pulumiKubernetes.outputMod.meta.v1.LabelSelector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * PodDisruptionBudgetSpec is a description of a PodDisruptionBudget.
   */
 @js.native
-trait PodDisruptionBudgetSpec extends js.Object {
+trait PodDisruptionBudgetSpec extends StObject {
   
   /**
     * An eviction is allowed if at most "maxUnavailable" pods selected by "selector" are unavailable after the eviction, i.e. even in absence of the evicted pod. For example, one can prevent all voluntary evictions by specifying 0. This is a mutually exclusive setting with "minAvailable".
@@ -35,27 +36,15 @@ object PodDisruptionBudgetSpec {
   }
   
   @scala.inline
-  implicit class PodDisruptionBudgetSpecOps[Self <: PodDisruptionBudgetSpec] (val x: Self) extends AnyVal {
+  implicit class PodDisruptionBudgetSpecMutableBuilder[Self <: PodDisruptionBudgetSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxUnavailable(value: Double | String): Self = StObject.set(x, "maxUnavailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinAvailable(value: Double | String): Self = StObject.set(x, "minAvailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaxUnavailable(value: Double | String): Self = this.set("maxUnavailable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinAvailable(value: Double | String): Self = this.set("minAvailable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelector(value: LabelSelector): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setSelector(value: LabelSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
   }
 }

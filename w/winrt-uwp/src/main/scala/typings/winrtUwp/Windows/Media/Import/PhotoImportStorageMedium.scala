@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Media.Import
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a storage medium exposed by a photo import source device. */
 @js.native
-trait PhotoImportStorageMedium extends js.Object {
+trait PhotoImportStorageMedium extends StObject {
   
   /** Gets the available space on the storage medium, in bytes. */
   var availableSpaceInBytes: Double = js.native
@@ -50,42 +51,30 @@ object PhotoImportStorageMedium {
   }
   
   @scala.inline
-  implicit class PhotoImportStorageMediumOps[Self <: PhotoImportStorageMedium] (val x: Self) extends AnyVal {
+  implicit class PhotoImportStorageMediumMutableBuilder[Self <: PhotoImportStorageMedium] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableSpaceInBytes(value: Double): Self = StObject.set(x, "availableSpaceInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapacityInBytes(value: Double): Self = StObject.set(x, "capacityInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableSpaceInBytes(value: Double): Self = this.set("availableSpaceInBytes", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacityInBytes(value: Double): Self = this.set("capacityInBytes", value.asInstanceOf[js.Any])
+    def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStorageMediumType(value: PhotoImportStorageMediumType): Self = StObject.set(x, "storageMediumType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefresh(value: () => Unit): Self = this.set("refresh", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSerialNumber(value: String): Self = this.set("serialNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStorageMediumType(value: PhotoImportStorageMediumType): Self = this.set("storageMediumType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportedAccessMode(value: PhotoImportAccessMode): Self = this.set("supportedAccessMode", value.asInstanceOf[js.Any])
+    def setSupportedAccessMode(value: PhotoImportAccessMode): Self = StObject.set(x, "supportedAccessMode", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.angularOdataResources.OData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // that deeply.
 ///////////////////////////////////////////////////////////////////////////
 @js.native
-trait IResourceService extends js.Object {
+trait IResourceService extends StObject {
   
   def apply(url: String): IResourceClass[IResource[_]] = js.native
   def apply(

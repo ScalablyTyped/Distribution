@@ -2,6 +2,7 @@ package typings.weixinApp.wx
 
 import typings.weixinApp.anon.AppId
 import typings.weixinApp.anon.Version
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // #region App里的onLaunch、onShow回调参数
 // #region Account
 @js.native
-trait AccountInfo extends js.Object {
+trait AccountInfo extends StObject {
   
   /* 小程序账号信息 */
   var miniProgram: AppId = js.native
@@ -26,27 +27,15 @@ object AccountInfo {
   }
   
   @scala.inline
-  implicit class AccountInfoOps[Self <: AccountInfo] (val x: Self) extends AnyVal {
+  implicit class AccountInfoMutableBuilder[Self <: AccountInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMiniProgram(value: AppId): Self = StObject.set(x, "miniProgram", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlugin(value: Version): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMiniProgram(value: AppId): Self = this.set("miniProgram", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlugin(value: Version): Self = this.set("plugin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlugin: Self = this.set("plugin", js.undefined)
+    def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
   }
 }

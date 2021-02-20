@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseKpiResult extends js.Object {
+trait BaseKpiResult extends StObject {
   
   /**
     * An array of objects that provides the results of a query that retrieved the data for a standard metric that applies to an application, campaign, or journey.
@@ -21,24 +22,12 @@ object BaseKpiResult {
   }
   
   @scala.inline
-  implicit class BaseKpiResultOps[Self <: BaseKpiResult] (val x: Self) extends AnyVal {
+  implicit class BaseKpiResultMutableBuilder[Self <: BaseKpiResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRows(value: ListOfResultRow): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRowsVarargs(value: ResultRow*): Self = this.set("Rows", js.Array(value :_*))
-    
-    @scala.inline
-    def setRows(value: ListOfResultRow): Self = this.set("Rows", value.asInstanceOf[js.Any])
+    def setRowsVarargs(value: ResultRow*): Self = StObject.set(x, "Rows", js.Array(value :_*))
   }
 }

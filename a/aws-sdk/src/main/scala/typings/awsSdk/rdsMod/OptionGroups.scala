@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptionGroups extends js.Object {
+trait OptionGroups extends StObject {
   
   /**
     * An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
@@ -26,33 +27,21 @@ object OptionGroups {
   }
   
   @scala.inline
-  implicit class OptionGroupsOps[Self <: OptionGroups] (val x: Self) extends AnyVal {
+  implicit class OptionGroupsMutableBuilder[Self <: OptionGroups] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptionGroupsList(value: OptionGroupsList): Self = StObject.set(x, "OptionGroupsList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setOptionGroupsListUndefined: Self = StObject.set(x, "OptionGroupsList", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setOptionGroupsListVarargs(value: OptionGroup*): Self = this.set("OptionGroupsList", js.Array(value :_*))
-    
-    @scala.inline
-    def setOptionGroupsList(value: OptionGroupsList): Self = this.set("OptionGroupsList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptionGroupsList: Self = this.set("OptionGroupsList", js.undefined)
+    def setOptionGroupsListVarargs(value: OptionGroup*): Self = StObject.set(x, "OptionGroupsList", js.Array(value :_*))
   }
 }

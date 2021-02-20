@@ -1,11 +1,12 @@
 package typings.sjcl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SjclCodecs extends js.Object {
+trait SjclCodecs extends StObject {
   
   var arrayBuffer: SjclArrayBufferCodec = js.native
   
@@ -44,45 +45,33 @@ object SjclCodecs {
   }
   
   @scala.inline
-  implicit class SjclCodecsOps[Self <: SjclCodecs] (val x: Self) extends AnyVal {
+  implicit class SjclCodecsMutableBuilder[Self <: SjclCodecs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayBuffer(value: SjclArrayBufferCodec): Self = StObject.set(x, "arrayBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBase32(value: SjclCodec[String]): Self = StObject.set(x, "base32", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBase32hex(value: SjclCodec[String]): Self = StObject.set(x, "base32hex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayBuffer(value: SjclArrayBufferCodec): Self = this.set("arrayBuffer", value.asInstanceOf[js.Any])
+    def setBase64(value: SjclCodec[String]): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase32(value: SjclCodec[String]): Self = this.set("base32", value.asInstanceOf[js.Any])
+    def setBase64url(value: SjclCodec[String]): Self = StObject.set(x, "base64url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase32hex(value: SjclCodec[String]): Self = this.set("base32hex", value.asInstanceOf[js.Any])
+    def setBytes(value: SjclCodec[js.Array[Double]]): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase64(value: SjclCodec[String]): Self = this.set("base64", value.asInstanceOf[js.Any])
+    def setHex(value: SjclCodec[String]): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase64url(value: SjclCodec[String]): Self = this.set("base64url", value.asInstanceOf[js.Any])
+    def setUtf8String(value: SjclCodec[String]): Self = StObject.set(x, "utf8String", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytes(value: SjclCodec[js.Array[Double]]): Self = this.set("bytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHex(value: SjclCodec[String]): Self = this.set("hex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUtf8String(value: SjclCodec[String]): Self = this.set("utf8String", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZ85(value: SjclCodec[String]): Self = this.set("z85", value.asInstanceOf[js.Any])
+    def setZ85(value: SjclCodec[String]): Self = StObject.set(x, "z85", value.asInstanceOf[js.Any])
   }
 }

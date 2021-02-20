@@ -1,11 +1,12 @@
 package typings.angularCommon.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BYNESP extends js.Object {
+trait BYNESP extends StObject {
   
   var BYN: js.Array[js.UndefOr[String]] = js.native
   
@@ -44,72 +45,60 @@ object BYNESP {
   }
   
   @scala.inline
-  implicit class BYNESPOps[Self <: BYNESP] (val x: Self) extends AnyVal {
+  implicit class BYNESPMutableBuilder[Self <: BYNESP] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBYN(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "BYN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBYNVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "BYN", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setESP(value: js.Array[String]): Self = StObject.set(x, "ESP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBYNVarargs(value: js.UndefOr[String]*): Self = this.set("BYN", js.Array(value :_*))
+    def setESPVarargs(value: String*): Self = StObject.set(x, "ESP", js.Array(value :_*))
     
     @scala.inline
-    def setBYN(value: js.Array[js.UndefOr[String]]): Self = this.set("BYN", value.asInstanceOf[js.Any])
+    def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setESPVarargs(value: String*): Self = this.set("ESP", js.Array(value :_*))
+    def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
     
     @scala.inline
-    def setESP(value: js.Array[String]): Self = this.set("ESP", value.asInstanceOf[js.Any])
+    def setKMF(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "KMF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJPYVarargs(value: String*): Self = this.set("JPY", js.Array(value :_*))
+    def setKMFVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "KMF", js.Array(value :_*))
     
     @scala.inline
-    def setJPY(value: js.Array[String]): Self = this.set("JPY", value.asInstanceOf[js.Any])
+    def setMXN(value: js.Array[String]): Self = StObject.set(x, "MXN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKMFVarargs(value: js.UndefOr[String]*): Self = this.set("KMF", js.Array(value :_*))
+    def setMXNVarargs(value: String*): Self = StObject.set(x, "MXN", js.Array(value :_*))
     
     @scala.inline
-    def setKMF(value: js.Array[js.UndefOr[String]]): Self = this.set("KMF", value.asInstanceOf[js.Any])
+    def setRUB(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "RUB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMXNVarargs(value: String*): Self = this.set("MXN", js.Array(value :_*))
+    def setRUBVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "RUB", js.Array(value :_*))
     
     @scala.inline
-    def setMXN(value: js.Array[String]): Self = this.set("MXN", value.asInstanceOf[js.Any])
+    def setTHB(value: js.Array[String]): Self = StObject.set(x, "THB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRUBVarargs(value: js.UndefOr[String]*): Self = this.set("RUB", js.Array(value :_*))
+    def setTHBVarargs(value: String*): Self = StObject.set(x, "THB", js.Array(value :_*))
     
     @scala.inline
-    def setRUB(value: js.Array[js.UndefOr[String]]): Self = this.set("RUB", value.asInstanceOf[js.Any])
+    def setTWD(value: js.Array[String]): Self = StObject.set(x, "TWD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTHBVarargs(value: String*): Self = this.set("THB", js.Array(value :_*))
+    def setTWDVarargs(value: String*): Self = StObject.set(x, "TWD", js.Array(value :_*))
     
     @scala.inline
-    def setTHB(value: js.Array[String]): Self = this.set("THB", value.asInstanceOf[js.Any])
+    def setXCD(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "XCD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTWDVarargs(value: String*): Self = this.set("TWD", js.Array(value :_*))
-    
-    @scala.inline
-    def setTWD(value: js.Array[String]): Self = this.set("TWD", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXCDVarargs(value: js.UndefOr[String]*): Self = this.set("XCD", js.Array(value :_*))
-    
-    @scala.inline
-    def setXCD(value: js.Array[js.UndefOr[String]]): Self = this.set("XCD", value.asInstanceOf[js.Any])
+    def setXCDVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "XCD", js.Array(value :_*))
   }
 }

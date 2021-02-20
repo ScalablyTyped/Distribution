@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Profiler
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PositionTickInfo extends js.Object {
+trait PositionTickInfo extends StObject {
   
   /**
     * Source line number (1-based).
@@ -27,24 +28,12 @@ object PositionTickInfo {
   }
   
   @scala.inline
-  implicit class PositionTickInfoOps[Self <: PositionTickInfo] (val x: Self) extends AnyVal {
+  implicit class PositionTickInfoMutableBuilder[Self <: PositionTickInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLine(value: integer): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLine(value: integer): Self = this.set("line", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTicks(value: integer): Self = this.set("ticks", value.asInstanceOf[js.Any])
+    def setTicks(value: integer): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
   }
 }

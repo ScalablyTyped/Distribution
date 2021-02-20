@@ -3,16 +3,16 @@ package typings.webdriverJsExtender
 import org.scalablytyped.runtime.StringDictionary
 import typings.seleniumWebdriver.mod.WebDriver
 import typings.webdriverJsExtender.anon.DefineCommand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webdriver-js-extender/built/lib/extender", JSImport.Namespace)
-@js.native
-object extenderMod extends js.Object {
+object extenderMod {
   
+  @JSImport("webdriver-js-extender/built/lib/extender", "Extender")
   @js.native
-  class Extender protected () extends js.Object {
+  class Extender protected () extends StObject {
     def this(driver: WebDriver) = this()
     
     /**

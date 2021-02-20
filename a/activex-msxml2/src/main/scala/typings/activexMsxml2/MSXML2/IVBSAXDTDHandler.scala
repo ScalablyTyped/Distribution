@@ -1,12 +1,13 @@
 package typings.activexMsxml2.MSXML2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** IVBSAXDTDHandler interface */
 @js.native
-trait IVBSAXDTDHandler extends js.Object {
+trait IVBSAXDTDHandler extends StObject {
   
   @JSName("MSXML2.IVBSAXDTDHandler_typekey")
   var MSXML2DotIVBSAXDTDHandler_typekey: IVBSAXDTDHandler = js.native
@@ -31,27 +32,15 @@ object IVBSAXDTDHandler {
   }
   
   @scala.inline
-  implicit class IVBSAXDTDHandlerOps[Self <: IVBSAXDTDHandler] (val x: Self) extends AnyVal {
+  implicit class IVBSAXDTDHandlerMutableBuilder[Self <: IVBSAXDTDHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMSXML2DotIVBSAXDTDHandler_typekey(value: IVBSAXDTDHandler): Self = StObject.set(x, "MSXML2.IVBSAXDTDHandler_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotationDecl(value: (String, String, String) => Unit): Self = StObject.set(x, "notationDecl", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMSXML2DotIVBSAXDTDHandler_typekey(value: IVBSAXDTDHandler): Self = this.set("MSXML2.IVBSAXDTDHandler_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotationDecl(value: (String, String, String) => Unit): Self = this.set("notationDecl", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setUnparsedEntityDecl(value: (String, String, String, String) => Unit): Self = this.set("unparsedEntityDecl", js.Any.fromFunction4(value))
+    def setUnparsedEntityDecl(value: (String, String, String, String) => Unit): Self = StObject.set(x, "unparsedEntityDecl", js.Any.fromFunction4(value))
   }
 }

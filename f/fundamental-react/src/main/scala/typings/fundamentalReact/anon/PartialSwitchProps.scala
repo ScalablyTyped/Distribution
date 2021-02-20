@@ -1,12 +1,13 @@
 package typings.fundamentalReact.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<fundamental-react.fundamental-react/lib/Switch/Switch.SwitchProps> */
 @js.native
-trait PartialSwitchProps extends js.Object {
+trait PartialSwitchProps extends StObject {
   
   var checked: js.UndefOr[Boolean] = js.native
   
@@ -39,84 +40,72 @@ object PartialSwitchProps {
   }
   
   @scala.inline
-  implicit class PartialSwitchPropsOps[Self <: PartialSwitchProps] (val x: Self) extends AnyVal {
+  implicit class PartialSwitchPropsMutableBuilder[Self <: PartialSwitchProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecked(value: Boolean): Self = this.set("checked", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteChecked: Self = this.set("checked", js.undefined)
+    def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompact(value: Boolean): Self = this.set("compact", value.asInstanceOf[js.Any])
+    def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
     
     @scala.inline
-    def deleteCompact: Self = this.set("compact", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableStyles(value: Boolean): Self = this.set("disableStyles", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDisableStyles: Self = this.set("disableStyles", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setInputProps(value: js.Any): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setInternalLabels(value: Checked): Self = StObject.set(x, "internalLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputProps(value: js.Any): Self = this.set("inputProps", value.asInstanceOf[js.Any])
+    def setInternalLabelsUndefined: Self = StObject.set(x, "internalLabels", js.undefined)
     
     @scala.inline
-    def deleteInputProps: Self = this.set("inputProps", js.undefined)
+    def setLabelProps(value: js.Any): Self = StObject.set(x, "labelProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternalLabels(value: Checked): Self = this.set("internalLabels", value.asInstanceOf[js.Any])
+    def setLabelPropsUndefined: Self = StObject.set(x, "labelProps", js.undefined)
     
     @scala.inline
-    def deleteInternalLabels: Self = this.set("internalLabels", js.undefined)
+    def setOnChange(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLabelProps(value: js.Any): Self = this.set("labelProps", value.asInstanceOf[js.Any])
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def deleteLabelProps: Self = this.set("labelProps", js.undefined)
+    def setSemantic(value: Boolean): Self = StObject.set(x, "semantic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnChange(value: /* repeated */ js.Any => _): Self = this.set("onChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
-    
-    @scala.inline
-    def setSemantic(value: Boolean): Self = this.set("semantic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSemantic: Self = this.set("semantic", js.undefined)
+    def setSemanticUndefined: Self = StObject.set(x, "semantic", js.undefined)
   }
 }

@@ -10,6 +10,7 @@ import typings.momentMini.momentMiniStrings.`[Rightparenthesis`
 import typings.momentMini.momentMiniStrings.`[]`
 import typings.std.Date
 import typings.std.Object
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

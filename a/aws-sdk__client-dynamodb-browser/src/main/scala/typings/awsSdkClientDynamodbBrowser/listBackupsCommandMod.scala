@@ -7,14 +7,14 @@ import typings.awsSdkClientDynamodbBrowser.typesListBackupsInputMod.ListBackupsI
 import typings.awsSdkClientDynamodbBrowser.typesListBackupsOutputMod.ListBackupsOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/commands/ListBackupsCommand", JSImport.Namespace)
-@js.native
-object listBackupsCommandMod extends js.Object {
+object listBackupsCommandMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-browser/commands/ListBackupsCommand", "ListBackupsCommand")
   @js.native
   class ListBackupsCommand protected () extends Command[
           InputTypesUnion, 

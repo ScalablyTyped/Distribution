@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A point on the data axis.
   */
 @js.native
-trait ASPxClientDashboardItemDataAxisPoint extends js.Object {
+trait ASPxClientDashboardItemDataAxisPoint extends StObject {
   
   /**
     * Gets the name of the axis to which the current axis point belongs.

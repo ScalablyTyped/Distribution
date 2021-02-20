@@ -1,5 +1,6 @@
 package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The status of the operation.
   */
 @js.native
-trait SchemaClusterOperationStatus extends js.Object {
+trait SchemaClusterOperationStatus extends StObject {
   
   /**
     * Output only. A message containing any operation metadata details.
@@ -39,42 +40,30 @@ object SchemaClusterOperationStatus {
   }
   
   @scala.inline
-  implicit class SchemaClusterOperationStatusOps[Self <: SchemaClusterOperationStatus] (val x: Self) extends AnyVal {
+  implicit class SchemaClusterOperationStatusMutableBuilder[Self <: SchemaClusterOperationStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInnerState(value: String): Self = StObject.set(x, "innerState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: String): Self = this.set("details", value.asInstanceOf[js.Any])
+    def setInnerStateUndefined: Self = StObject.set(x, "innerState", js.undefined)
     
     @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerState(value: String): Self = this.set("innerState", value.asInstanceOf[js.Any])
+    def setStateStartTime(value: String): Self = StObject.set(x, "stateStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInnerState: Self = this.set("innerState", js.undefined)
+    def setStateStartTimeUndefined: Self = StObject.set(x, "stateStartTime", js.undefined)
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setStateStartTime(value: String): Self = this.set("stateStartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateStartTime: Self = this.set("stateStartTime", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

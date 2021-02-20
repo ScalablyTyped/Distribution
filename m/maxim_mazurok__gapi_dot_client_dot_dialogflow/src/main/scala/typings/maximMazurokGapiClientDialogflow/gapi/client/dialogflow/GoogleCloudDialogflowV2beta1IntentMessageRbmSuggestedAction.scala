@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction extends js.Object {
+trait GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction extends StObject {
   
   /** Suggested client side action: Dial a phone number */
   var dial: js.UndefOr[
@@ -38,48 +39,36 @@ object GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionOps[Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionMutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDial(value: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionDial): Self = StObject.set(x, "dial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDialUndefined: Self = StObject.set(x, "dial", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpenUrl(value: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionOpenUri): Self = StObject.set(x, "openUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDial(value: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionDial): Self = this.set("dial", value.asInstanceOf[js.Any])
+    def setOpenUrlUndefined: Self = StObject.set(x, "openUrl", js.undefined)
     
     @scala.inline
-    def deleteDial: Self = this.set("dial", js.undefined)
+    def setPostbackData(value: String): Self = StObject.set(x, "postbackData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenUrl(value: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionOpenUri): Self = this.set("openUrl", value.asInstanceOf[js.Any])
+    def setPostbackDataUndefined: Self = StObject.set(x, "postbackData", js.undefined)
     
     @scala.inline
-    def deleteOpenUrl: Self = this.set("openUrl", js.undefined)
+    def setShareLocation(value: js.Any): Self = StObject.set(x, "shareLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostbackData(value: String): Self = this.set("postbackData", value.asInstanceOf[js.Any])
+    def setShareLocationUndefined: Self = StObject.set(x, "shareLocation", js.undefined)
     
     @scala.inline
-    def deletePostbackData: Self = this.set("postbackData", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShareLocation(value: js.Any): Self = this.set("shareLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShareLocation: Self = this.set("shareLocation", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

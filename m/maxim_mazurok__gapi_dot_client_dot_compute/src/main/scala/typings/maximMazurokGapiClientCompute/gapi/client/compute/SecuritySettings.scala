@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecuritySettings extends js.Object {
+trait SecuritySettings extends StObject {
   
   /**
     * Optional. A URL referring to a networksecurity.ClientTlsPolicy resource that describes how clients should authenticate with this service's backends.
@@ -35,33 +36,21 @@ object SecuritySettings {
   }
   
   @scala.inline
-  implicit class SecuritySettingsOps[Self <: SecuritySettings] (val x: Self) extends AnyVal {
+  implicit class SecuritySettingsMutableBuilder[Self <: SecuritySettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientTlsPolicy(value: String): Self = StObject.set(x, "clientTlsPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientTlsPolicyUndefined: Self = StObject.set(x, "clientTlsPolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubjectAltNames(value: js.Array[String]): Self = StObject.set(x, "subjectAltNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientTlsPolicy(value: String): Self = this.set("clientTlsPolicy", value.asInstanceOf[js.Any])
+    def setSubjectAltNamesUndefined: Self = StObject.set(x, "subjectAltNames", js.undefined)
     
     @scala.inline
-    def deleteClientTlsPolicy: Self = this.set("clientTlsPolicy", js.undefined)
-    
-    @scala.inline
-    def setSubjectAltNamesVarargs(value: String*): Self = this.set("subjectAltNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubjectAltNames(value: js.Array[String]): Self = this.set("subjectAltNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubjectAltNames: Self = this.set("subjectAltNames", js.undefined)
+    def setSubjectAltNamesVarargs(value: String*): Self = StObject.set(x, "subjectAltNames", js.Array(value :_*))
   }
 }

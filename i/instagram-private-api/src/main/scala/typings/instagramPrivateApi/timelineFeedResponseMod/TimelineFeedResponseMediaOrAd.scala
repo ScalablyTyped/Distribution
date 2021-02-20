@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.timelineFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimelineFeedResponseMediaOrAd extends js.Object {
+trait TimelineFeedResponseMediaOrAd extends StObject {
   
   var ad_action: js.UndefOr[String] = js.native
   
@@ -199,411 +200,399 @@ object TimelineFeedResponseMediaOrAd {
   }
   
   @scala.inline
-  implicit class TimelineFeedResponseMediaOrAdOps[Self <: TimelineFeedResponseMediaOrAd] (val x: Self) extends AnyVal {
+  implicit class TimelineFeedResponseMediaOrAdMutableBuilder[Self <: TimelineFeedResponseMediaOrAd] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAd_action(value: String): Self = StObject.set(x, "ad_action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAd_actionUndefined: Self = StObject.set(x, "ad_action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAd_header_style(value: Double): Self = StObject.set(x, "ad_header_style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCan_view_more_preview_comments(value: Boolean): Self = this.set("can_view_more_preview_comments", value.asInstanceOf[js.Any])
+    def setAd_header_styleUndefined: Self = StObject.set(x, "ad_header_style", js.undefined)
     
     @scala.inline
-    def setCan_viewer_save(value: Boolean): Self = this.set("can_viewer_save", value.asInstanceOf[js.Any])
+    def setAd_id(value: String): Self = StObject.set(x, "ad_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: TimelineFeedResponseCaption): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setAd_idUndefined: Self = StObject.set(x, "ad_id", js.undefined)
     
     @scala.inline
-    def setCaption_is_edited(value: Boolean): Self = this.set("caption_is_edited", value.asInstanceOf[js.Any])
+    def setAd_link_type(value: Double): Self = StObject.set(x, "ad_link_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_cache_key(value: String): Self = this.set("client_cache_key", value.asInstanceOf[js.Any])
+    def setAd_link_typeUndefined: Self = StObject.set(x, "ad_link_type", js.undefined)
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setAd_metadata(value: js.Array[TimelineFeedResponseAdMetadataItem]): Self = StObject.set(x, "ad_metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment_count(value: Double): Self = this.set("comment_count", value.asInstanceOf[js.Any])
+    def setAd_metadataUndefined: Self = StObject.set(x, "ad_metadata", js.undefined)
     
     @scala.inline
-    def setComment_likes_enabled(value: Boolean): Self = this.set("comment_likes_enabled", value.asInstanceOf[js.Any])
+    def setAd_metadataVarargs(value: TimelineFeedResponseAdMetadataItem*): Self = StObject.set(x, "ad_metadata", js.Array(value :_*))
     
     @scala.inline
-    def setComment_threading_enabled(value: Boolean): Self = this.set("comment_threading_enabled", value.asInstanceOf[js.Any])
+    def setAndroid_links(value: js.Array[TimelineFeedResponseAndroidLinksItem]): Self = StObject.set(x, "android_links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice_timestamp(value: String | Double): Self = this.set("device_timestamp", value.asInstanceOf[js.Any])
+    def setAndroid_linksUndefined: Self = StObject.set(x, "android_links", js.undefined)
     
     @scala.inline
-    def setDirect_reply_to_author_enabled(value: Boolean): Self = this.set("direct_reply_to_author_enabled", value.asInstanceOf[js.Any])
+    def setAndroid_linksVarargs(value: TimelineFeedResponseAndroidLinksItem*): Self = StObject.set(x, "android_links", js.Array(value :_*))
     
     @scala.inline
-    def setFilter_type(value: Double): Self = this.set("filter_type", value.asInstanceOf[js.Any])
+    def setCan_see_insights_as_brand(value: Boolean): Self = StObject.set(x, "can_see_insights_as_brand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas_liked(value: Boolean): Self = this.set("has_liked", value.asInstanceOf[js.Any])
+    def setCan_see_insights_as_brandUndefined: Self = StObject.set(x, "can_see_insights_as_brand", js.undefined)
     
     @scala.inline
-    def setHas_more_comments(value: Boolean): Self = this.set("has_more_comments", value.asInstanceOf[js.Any])
+    def setCan_view_more_preview_comments(value: Boolean): Self = StObject.set(x, "can_view_more_preview_comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setCan_viewer_reshare(value: Boolean): Self = StObject.set(x, "can_viewer_reshare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInventory_source(value: String): Self = this.set("inventory_source", value.asInstanceOf[js.Any])
+    def setCan_viewer_reshareUndefined: Self = StObject.set(x, "can_viewer_reshare", js.undefined)
     
     @scala.inline
-    def setIs_eof(value: Boolean): Self = this.set("is_eof", value.asInstanceOf[js.Any])
+    def setCan_viewer_save(value: Boolean): Self = StObject.set(x, "can_viewer_save", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_seen(value: Boolean): Self = this.set("is_seen", value.asInstanceOf[js.Any])
+    def setCaption(value: TimelineFeedResponseCaption): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLike_count(value: Double): Self = this.set("like_count", value.asInstanceOf[js.Any])
+    def setCaption_is_edited(value: Boolean): Self = StObject.set(x, "caption_is_edited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_num_visible_preview_comments(value: Double): Self = this.set("max_num_visible_preview_comments", value.asInstanceOf[js.Any])
+    def setCarousel_media(value: js.Array[TimelineFeedResponseCarouselMediaItem]): Self = StObject.set(x, "carousel_media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia_type(value: Double): Self = this.set("media_type", value.asInstanceOf[js.Any])
+    def setCarousel_mediaUndefined: Self = StObject.set(x, "carousel_media", js.undefined)
     
     @scala.inline
-    def setOrganic_tracking_token(value: String): Self = this.set("organic_tracking_token", value.asInstanceOf[js.Any])
+    def setCarousel_mediaVarargs(value: TimelineFeedResponseCarouselMediaItem*): Self = StObject.set(x, "carousel_media", js.Array(value :_*))
     
     @scala.inline
-    def setPhoto_of_you(value: Boolean): Self = this.set("photo_of_you", value.asInstanceOf[js.Any])
+    def setCarousel_media_count(value: Double): Self = StObject.set(x, "carousel_media_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPk(value: String): Self = this.set("pk", value.asInstanceOf[js.Any])
+    def setCarousel_media_countUndefined: Self = StObject.set(x, "carousel_media_count", js.undefined)
     
     @scala.inline
-    def setPreview_commentsVarargs(value: TimelineFeedResponsePreviewCommentsItem*): Self = this.set("preview_comments", js.Array(value :_*))
+    def setCarousel_media_type(value: Double): Self = StObject.set(x, "carousel_media_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreview_comments(value: js.Array[TimelineFeedResponsePreviewCommentsItem]): Self = this.set("preview_comments", value.asInstanceOf[js.Any])
+    def setCarousel_media_typeUndefined: Self = StObject.set(x, "carousel_media_type", js.undefined)
     
     @scala.inline
-    def setTaken_at(value: Double): Self = this.set("taken_at", value.asInstanceOf[js.Any])
+    def setClient_cache_key(value: String): Self = StObject.set(x, "client_cache_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop_likersVarargs(value: String*): Self = this.set("top_likers", js.Array(value :_*))
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop_likers(value: js.Array[String]): Self = this.set("top_likers", value.asInstanceOf[js.Any])
+    def setCollapse_comments(value: Boolean): Self = StObject.set(x, "collapse_comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser(value: TimelineFeedResponseUser): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setCollapse_commentsUndefined: Self = StObject.set(x, "collapse_comments", js.undefined)
     
     @scala.inline
-    def setAd_action(value: String): Self = this.set("ad_action", value.asInstanceOf[js.Any])
+    def setComment_count(value: Double): Self = StObject.set(x, "comment_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAd_action: Self = this.set("ad_action", js.undefined)
+    def setComment_likes_enabled(value: Boolean): Self = StObject.set(x, "comment_likes_enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAd_header_style(value: Double): Self = this.set("ad_header_style", value.asInstanceOf[js.Any])
+    def setComment_threading_enabled(value: Boolean): Self = StObject.set(x, "comment_threading_enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAd_header_style: Self = this.set("ad_header_style", js.undefined)
+    def setDevice_timestamp(value: String | Double): Self = StObject.set(x, "device_timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAd_id(value: String): Self = this.set("ad_id", value.asInstanceOf[js.Any])
+    def setDirect_reply_to_author_enabled(value: Boolean): Self = StObject.set(x, "direct_reply_to_author_enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAd_id: Self = this.set("ad_id", js.undefined)
+    def setDominant_color(value: String): Self = StObject.set(x, "dominant_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAd_link_type(value: Double): Self = this.set("ad_link_type", value.asInstanceOf[js.Any])
+    def setDominant_colorUndefined: Self = StObject.set(x, "dominant_color", js.undefined)
     
     @scala.inline
-    def deleteAd_link_type: Self = this.set("ad_link_type", js.undefined)
+    def setDr_ad_type(value: Double): Self = StObject.set(x, "dr_ad_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAd_metadataVarargs(value: TimelineFeedResponseAdMetadataItem*): Self = this.set("ad_metadata", js.Array(value :_*))
+    def setDr_ad_typeUndefined: Self = StObject.set(x, "dr_ad_type", js.undefined)
     
     @scala.inline
-    def setAd_metadata(value: js.Array[TimelineFeedResponseAdMetadataItem]): Self = this.set("ad_metadata", value.asInstanceOf[js.Any])
+    def setExpiring_at(value: Double): Self = StObject.set(x, "expiring_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAd_metadata: Self = this.set("ad_metadata", js.undefined)
+    def setExpiring_atUndefined: Self = StObject.set(x, "expiring_at", js.undefined)
     
     @scala.inline
-    def setAndroid_linksVarargs(value: TimelineFeedResponseAndroidLinksItem*): Self = this.set("android_links", js.Array(value :_*))
+    def setFacepile_top_likers(value: js.Array[TimelineFeedResponseFacepileTopLikersItem]): Self = StObject.set(x, "facepile_top_likers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroid_links(value: js.Array[TimelineFeedResponseAndroidLinksItem]): Self = this.set("android_links", value.asInstanceOf[js.Any])
+    def setFacepile_top_likersUndefined: Self = StObject.set(x, "facepile_top_likers", js.undefined)
     
     @scala.inline
-    def deleteAndroid_links: Self = this.set("android_links", js.undefined)
+    def setFacepile_top_likersVarargs(value: TimelineFeedResponseFacepileTopLikersItem*): Self = StObject.set(x, "facepile_top_likers", js.Array(value :_*))
     
     @scala.inline
-    def setCan_see_insights_as_brand(value: Boolean): Self = this.set("can_see_insights_as_brand", value.asInstanceOf[js.Any])
+    def setFb_page_url(value: String): Self = StObject.set(x, "fb_page_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCan_see_insights_as_brand: Self = this.set("can_see_insights_as_brand", js.undefined)
+    def setFb_page_urlUndefined: Self = StObject.set(x, "fb_page_url", js.undefined)
     
     @scala.inline
-    def setCan_viewer_reshare(value: Boolean): Self = this.set("can_viewer_reshare", value.asInstanceOf[js.Any])
+    def setFilter_type(value: Double): Self = StObject.set(x, "filter_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCan_viewer_reshare: Self = this.set("can_viewer_reshare", js.undefined)
+    def setFollower_count(value: Double): Self = StObject.set(x, "follower_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarousel_mediaVarargs(value: TimelineFeedResponseCarouselMediaItem*): Self = this.set("carousel_media", js.Array(value :_*))
+    def setFollower_countUndefined: Self = StObject.set(x, "follower_count", js.undefined)
     
     @scala.inline
-    def setCarousel_media(value: js.Array[TimelineFeedResponseCarouselMediaItem]): Self = this.set("carousel_media", value.asInstanceOf[js.Any])
+    def setForce_overlay(value: Boolean): Self = StObject.set(x, "force_overlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCarousel_media: Self = this.set("carousel_media", js.undefined)
+    def setForce_overlayUndefined: Self = StObject.set(x, "force_overlay", js.undefined)
     
     @scala.inline
-    def setCarousel_media_count(value: Double): Self = this.set("carousel_media_count", value.asInstanceOf[js.Any])
+    def setHas_audio(value: Boolean): Self = StObject.set(x, "has_audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCarousel_media_count: Self = this.set("carousel_media_count", js.undefined)
+    def setHas_audioUndefined: Self = StObject.set(x, "has_audio", js.undefined)
     
     @scala.inline
-    def setCarousel_media_type(value: Double): Self = this.set("carousel_media_type", value.asInstanceOf[js.Any])
+    def setHas_liked(value: Boolean): Self = StObject.set(x, "has_liked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCarousel_media_type: Self = this.set("carousel_media_type", js.undefined)
+    def setHas_more_comments(value: Boolean): Self = StObject.set(x, "has_more_comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapse_comments(value: Boolean): Self = this.set("collapse_comments", value.asInstanceOf[js.Any])
+    def setHide_nux_text(value: Boolean): Self = StObject.set(x, "hide_nux_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCollapse_comments: Self = this.set("collapse_comments", js.undefined)
+    def setHide_nux_textUndefined: Self = StObject.set(x, "hide_nux_text", js.undefined)
     
     @scala.inline
-    def setDominant_color(value: String): Self = this.set("dominant_color", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDominant_color: Self = this.set("dominant_color", js.undefined)
+    def setImage_versions2(value: TimelineFeedResponseImageVersions2): Self = StObject.set(x, "image_versions2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDr_ad_type(value: Double): Self = this.set("dr_ad_type", value.asInstanceOf[js.Any])
+    def setImage_versions2Undefined: Self = StObject.set(x, "image_versions2", js.undefined)
     
     @scala.inline
-    def deleteDr_ad_type: Self = this.set("dr_ad_type", js.undefined)
+    def setInjected(value: TimelineFeedResponseInjected): Self = StObject.set(x, "injected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiring_at(value: Double): Self = this.set("expiring_at", value.asInstanceOf[js.Any])
+    def setInjectedUndefined: Self = StObject.set(x, "injected", js.undefined)
     
     @scala.inline
-    def deleteExpiring_at: Self = this.set("expiring_at", js.undefined)
+    def setInline_composer_display_condition(value: String): Self = StObject.set(x, "inline_composer_display_condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacepile_top_likersVarargs(value: TimelineFeedResponseFacepileTopLikersItem*): Self = this.set("facepile_top_likers", js.Array(value :_*))
+    def setInline_composer_display_conditionUndefined: Self = StObject.set(x, "inline_composer_display_condition", js.undefined)
     
     @scala.inline
-    def setFacepile_top_likers(value: js.Array[TimelineFeedResponseFacepileTopLikersItem]): Self = this.set("facepile_top_likers", value.asInstanceOf[js.Any])
+    def setInline_composer_imp_trigger_time(value: Double): Self = StObject.set(x, "inline_composer_imp_trigger_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFacepile_top_likers: Self = this.set("facepile_top_likers", js.undefined)
+    def setInline_composer_imp_trigger_timeUndefined: Self = StObject.set(x, "inline_composer_imp_trigger_time", js.undefined)
     
     @scala.inline
-    def setFb_page_url(value: String): Self = this.set("fb_page_url", value.asInstanceOf[js.Any])
+    def setInventory_source(value: String): Self = StObject.set(x, "inventory_source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFb_page_url: Self = this.set("fb_page_url", js.undefined)
+    def setIs_dash_eligible(value: Double): Self = StObject.set(x, "is_dash_eligible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollower_count(value: Double): Self = this.set("follower_count", value.asInstanceOf[js.Any])
+    def setIs_dash_eligibleUndefined: Self = StObject.set(x, "is_dash_eligible", js.undefined)
     
     @scala.inline
-    def deleteFollower_count: Self = this.set("follower_count", js.undefined)
+    def setIs_eof(value: Boolean): Self = StObject.set(x, "is_eof", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForce_overlay(value: Boolean): Self = this.set("force_overlay", value.asInstanceOf[js.Any])
+    def setIs_seen(value: Boolean): Self = StObject.set(x, "is_seen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForce_overlay: Self = this.set("force_overlay", js.undefined)
+    def setIs_sidecar_child(value: Boolean): Self = StObject.set(x, "is_sidecar_child", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas_audio(value: Boolean): Self = this.set("has_audio", value.asInstanceOf[js.Any])
+    def setIs_sidecar_childUndefined: Self = StObject.set(x, "is_sidecar_child", js.undefined)
     
     @scala.inline
-    def deleteHas_audio: Self = this.set("has_audio", js.undefined)
+    def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHide_nux_text(value: Boolean): Self = this.set("hide_nux_text", value.asInstanceOf[js.Any])
+    def setLatUndefined: Self = StObject.set(x, "lat", js.undefined)
     
     @scala.inline
-    def deleteHide_nux_text: Self = this.set("hide_nux_text", js.undefined)
+    def setLike_count(value: Double): Self = StObject.set(x, "like_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage_versions2(value: TimelineFeedResponseImageVersions2): Self = this.set("image_versions2", value.asInstanceOf[js.Any])
+    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImage_versions2: Self = this.set("image_versions2", js.undefined)
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def setInjected(value: TimelineFeedResponseInjected): Self = this.set("injected", value.asInstanceOf[js.Any])
+    def setLink_hint_text(value: String): Self = StObject.set(x, "link_hint_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInjected: Self = this.set("injected", js.undefined)
+    def setLink_hint_textUndefined: Self = StObject.set(x, "link_hint_text", js.undefined)
     
     @scala.inline
-    def setInline_composer_display_condition(value: String): Self = this.set("inline_composer_display_condition", value.asInstanceOf[js.Any])
+    def setLink_text(value: String): Self = StObject.set(x, "link_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInline_composer_display_condition: Self = this.set("inline_composer_display_condition", js.undefined)
+    def setLink_textUndefined: Self = StObject.set(x, "link_text", js.undefined)
     
     @scala.inline
-    def setInline_composer_imp_trigger_time(value: Double): Self = this.set("inline_composer_imp_trigger_time", value.asInstanceOf[js.Any])
+    def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInline_composer_imp_trigger_time: Self = this.set("inline_composer_imp_trigger_time", js.undefined)
+    def setLngUndefined: Self = StObject.set(x, "lng", js.undefined)
     
     @scala.inline
-    def setIs_dash_eligible(value: Double): Self = this.set("is_dash_eligible", value.asInstanceOf[js.Any])
+    def setLocation(value: TimelineFeedResponseLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIs_dash_eligible: Self = this.set("is_dash_eligible", js.undefined)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setIs_sidecar_child(value: Boolean): Self = this.set("is_sidecar_child", value.asInstanceOf[js.Any])
+    def setMax_num_visible_preview_comments(value: Double): Self = StObject.set(x, "max_num_visible_preview_comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIs_sidecar_child: Self = this.set("is_sidecar_child", js.undefined)
+    def setMedia_type(value: Double): Self = StObject.set(x, "media_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLat(value: Double): Self = this.set("lat", value.asInstanceOf[js.Any])
+    def setNext_max_id(value: String): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLat: Self = this.set("lat", js.undefined)
+    def setNext_max_idUndefined: Self = StObject.set(x, "next_max_id", js.undefined)
     
     @scala.inline
-    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setNumber_of_qualities(value: Double): Self = StObject.set(x, "number_of_qualities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setNumber_of_qualitiesUndefined: Self = StObject.set(x, "number_of_qualities", js.undefined)
     
     @scala.inline
-    def setLink_hint_text(value: String): Self = this.set("link_hint_text", value.asInstanceOf[js.Any])
+    def setOrganic_tracking_token(value: String): Self = StObject.set(x, "organic_tracking_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLink_hint_text: Self = this.set("link_hint_text", js.undefined)
+    def setOriginal_height(value: Double): Self = StObject.set(x, "original_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink_text(value: String): Self = this.set("link_text", value.asInstanceOf[js.Any])
+    def setOriginal_heightUndefined: Self = StObject.set(x, "original_height", js.undefined)
     
     @scala.inline
-    def deleteLink_text: Self = this.set("link_text", js.undefined)
+    def setOriginal_width(value: Double): Self = StObject.set(x, "original_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLng(value: Double): Self = this.set("lng", value.asInstanceOf[js.Any])
+    def setOriginal_widthUndefined: Self = StObject.set(x, "original_width", js.undefined)
     
     @scala.inline
-    def deleteLng: Self = this.set("lng", js.undefined)
+    def setOverlay_subtitle(value: String): Self = StObject.set(x, "overlay_subtitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: TimelineFeedResponseLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setOverlay_subtitleUndefined: Self = StObject.set(x, "overlay_subtitle", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setOverlay_text(value: String): Self = StObject.set(x, "overlay_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext_max_id(value: String): Self = this.set("next_max_id", value.asInstanceOf[js.Any])
+    def setOverlay_textUndefined: Self = StObject.set(x, "overlay_text", js.undefined)
     
     @scala.inline
-    def deleteNext_max_id: Self = this.set("next_max_id", js.undefined)
+    def setOverlay_title(value: String): Self = StObject.set(x, "overlay_title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber_of_qualities(value: Double): Self = this.set("number_of_qualities", value.asInstanceOf[js.Any])
+    def setOverlay_titleUndefined: Self = StObject.set(x, "overlay_title", js.undefined)
     
     @scala.inline
-    def deleteNumber_of_qualities: Self = this.set("number_of_qualities", js.undefined)
+    def setPhoto_of_you(value: Boolean): Self = StObject.set(x, "photo_of_you", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginal_height(value: Double): Self = this.set("original_height", value.asInstanceOf[js.Any])
+    def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOriginal_height: Self = this.set("original_height", js.undefined)
+    def setPost_count(value: Double): Self = StObject.set(x, "post_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginal_width(value: Double): Self = this.set("original_width", value.asInstanceOf[js.Any])
+    def setPost_countUndefined: Self = StObject.set(x, "post_count", js.undefined)
     
     @scala.inline
-    def deleteOriginal_width: Self = this.set("original_width", js.undefined)
+    def setPreview(value: String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlay_subtitle(value: String): Self = this.set("overlay_subtitle", value.asInstanceOf[js.Any])
+    def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
     @scala.inline
-    def deleteOverlay_subtitle: Self = this.set("overlay_subtitle", js.undefined)
+    def setPreview_comments(value: js.Array[TimelineFeedResponsePreviewCommentsItem]): Self = StObject.set(x, "preview_comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlay_text(value: String): Self = this.set("overlay_text", value.asInstanceOf[js.Any])
+    def setPreview_commentsVarargs(value: TimelineFeedResponsePreviewCommentsItem*): Self = StObject.set(x, "preview_comments", js.Array(value :_*))
     
     @scala.inline
-    def deleteOverlay_text: Self = this.set("overlay_text", js.undefined)
+    def setTaken_at(value: Double): Self = StObject.set(x, "taken_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlay_title(value: String): Self = this.set("overlay_title", value.asInstanceOf[js.Any])
+    def setTop_likers(value: js.Array[String]): Self = StObject.set(x, "top_likers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverlay_title: Self = this.set("overlay_title", js.undefined)
+    def setTop_likersVarargs(value: String*): Self = StObject.set(x, "top_likers", js.Array(value :_*))
     
     @scala.inline
-    def setPost_count(value: Double): Self = this.set("post_count", value.asInstanceOf[js.Any])
+    def setUser(value: TimelineFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePost_count: Self = this.set("post_count", js.undefined)
+    def setUsertags(value: TimelineFeedResponseUsertags): Self = StObject.set(x, "usertags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreview(value: String): Self = this.set("preview", value.asInstanceOf[js.Any])
+    def setUsertagsUndefined: Self = StObject.set(x, "usertags", js.undefined)
     
     @scala.inline
-    def deletePreview: Self = this.set("preview", js.undefined)
+    def setVideo_codec(value: String): Self = StObject.set(x, "video_codec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsertags(value: TimelineFeedResponseUsertags): Self = this.set("usertags", value.asInstanceOf[js.Any])
+    def setVideo_codecUndefined: Self = StObject.set(x, "video_codec", js.undefined)
     
     @scala.inline
-    def deleteUsertags: Self = this.set("usertags", js.undefined)
+    def setVideo_dash_manifest(value: String): Self = StObject.set(x, "video_dash_manifest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo_codec(value: String): Self = this.set("video_codec", value.asInstanceOf[js.Any])
+    def setVideo_dash_manifestUndefined: Self = StObject.set(x, "video_dash_manifest", js.undefined)
     
     @scala.inline
-    def deleteVideo_codec: Self = this.set("video_codec", js.undefined)
+    def setVideo_duration(value: Double): Self = StObject.set(x, "video_duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo_dash_manifest(value: String): Self = this.set("video_dash_manifest", value.asInstanceOf[js.Any])
+    def setVideo_durationUndefined: Self = StObject.set(x, "video_duration", js.undefined)
     
     @scala.inline
-    def deleteVideo_dash_manifest: Self = this.set("video_dash_manifest", js.undefined)
+    def setVideo_versions(value: js.Array[TimelineFeedResponseVideoVersionsItem]): Self = StObject.set(x, "video_versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo_duration(value: Double): Self = this.set("video_duration", value.asInstanceOf[js.Any])
+    def setVideo_versionsUndefined: Self = StObject.set(x, "video_versions", js.undefined)
     
     @scala.inline
-    def deleteVideo_duration: Self = this.set("video_duration", js.undefined)
+    def setVideo_versionsVarargs(value: TimelineFeedResponseVideoVersionsItem*): Self = StObject.set(x, "video_versions", js.Array(value :_*))
     
     @scala.inline
-    def setVideo_versionsVarargs(value: TimelineFeedResponseVideoVersionsItem*): Self = this.set("video_versions", js.Array(value :_*))
+    def setView_count(value: Double): Self = StObject.set(x, "view_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo_versions(value: js.Array[TimelineFeedResponseVideoVersionsItem]): Self = this.set("video_versions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideo_versions: Self = this.set("video_versions", js.undefined)
-    
-    @scala.inline
-    def setView_count(value: Double): Self = this.set("view_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView_count: Self = this.set("view_count", js.undefined)
+    def setView_countUndefined: Self = StObject.set(x, "view_count", js.undefined)
   }
 }

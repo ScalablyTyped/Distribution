@@ -4,13 +4,14 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdIcon.fontIconMod.FontIconProps
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/material-icons/types/LiveHelpFontIcon", JSImport.Namespace)
-@js.native
-object liveHelpFontIconMod extends js.Object {
+object liveHelpFontIconMod {
   
+  @JSImport("@react-md/material-icons/types/LiveHelpFontIcon", "LiveHelpFontIcon")
+  @js.native
   val LiveHelpFontIcon: ForwardRefExoticComponent[FontIconProps with RefAttributes[HTMLElement]] = js.native
 }

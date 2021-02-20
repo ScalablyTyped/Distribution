@@ -1,41 +1,36 @@
 package typings.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SymbolFormatFlags extends js.Object
+sealed trait SymbolFormatFlags extends StObject
 @JSImport("typescript", "SymbolFormatFlags")
 @js.native
-object SymbolFormatFlags extends js.Object {
+object SymbolFormatFlags extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SymbolFormatFlags with Double] = js.native
   
   @js.native
   sealed trait AllowAnyNodeKind extends SymbolFormatFlags
-  /* 4 */ @js.native
-  object AllowAnyNodeKind extends TopLevel[AllowAnyNodeKind with Double]
+  /* 4 */ val AllowAnyNodeKind: typings.typescript.mod.SymbolFormatFlags.AllowAnyNodeKind with Double = js.native
   
   @js.native
   sealed trait None extends SymbolFormatFlags
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  /* 0 */ val None: typings.typescript.mod.SymbolFormatFlags.None with Double = js.native
   
   @js.native
   sealed trait UseAliasDefinedOutsideCurrentScope extends SymbolFormatFlags
-  /* 8 */ @js.native
-  object UseAliasDefinedOutsideCurrentScope extends TopLevel[UseAliasDefinedOutsideCurrentScope with Double]
+  /* 8 */ val UseAliasDefinedOutsideCurrentScope: typings.typescript.mod.SymbolFormatFlags.UseAliasDefinedOutsideCurrentScope with Double = js.native
   
   @js.native
   sealed trait UseOnlyExternalAliasing extends SymbolFormatFlags
-  /* 2 */ @js.native
-  object UseOnlyExternalAliasing extends TopLevel[UseOnlyExternalAliasing with Double]
+  /* 2 */ val UseOnlyExternalAliasing: typings.typescript.mod.SymbolFormatFlags.UseOnlyExternalAliasing with Double = js.native
   
   @js.native
   sealed trait WriteTypeParametersOrArguments extends SymbolFormatFlags
-  /* 1 */ @js.native
-  object WriteTypeParametersOrArguments extends TopLevel[WriteTypeParametersOrArguments with Double]
+  /* 1 */ val WriteTypeParametersOrArguments: typings.typescript.mod.SymbolFormatFlags.WriteTypeParametersOrArguments with Double = js.native
 }

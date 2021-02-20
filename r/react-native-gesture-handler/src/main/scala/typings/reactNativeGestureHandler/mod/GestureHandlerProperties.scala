@@ -6,12 +6,13 @@ import typings.reactNativeGestureHandler.anon.BottomHeight
 import typings.reactNativeGestureHandler.anon.Height
 import typings.reactNativeGestureHandler.anon.Left
 import typings.reactNativeGestureHandler.anon.Right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GestureHandlerProperties extends js.Object {
+trait GestureHandlerProperties extends StObject {
   
   var enabled: js.UndefOr[Boolean] = js.native
   
@@ -34,72 +35,60 @@ object GestureHandlerProperties {
   }
   
   @scala.inline
-  implicit class GestureHandlerPropertiesOps[Self <: GestureHandlerProperties] (val x: Self) extends AnyVal {
+  implicit class GestureHandlerPropertiesMutableBuilder[Self <: GestureHandlerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHitSlop(value: Double | Bottom | Left | Right | Height | BottomHeight): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHitSlop(value: Double | Bottom | Left | Right | Height | BottomHeight): Self = this.set("hitSlop", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHitSlop: Self = this.set("hitSlop", js.undefined)
+    def setShouldCancelWhenOutside(value: Boolean): Self = StObject.set(x, "shouldCancelWhenOutside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setShouldCancelWhenOutsideUndefined: Self = StObject.set(x, "shouldCancelWhenOutside", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setSimultaneousHandlers(value: Ref[_] | js.Array[Ref[_]]): Self = StObject.set(x, "simultaneousHandlers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShouldCancelWhenOutside(value: Boolean): Self = this.set("shouldCancelWhenOutside", value.asInstanceOf[js.Any])
+    def setSimultaneousHandlersFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "simultaneousHandlers", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteShouldCancelWhenOutside: Self = this.set("shouldCancelWhenOutside", js.undefined)
+    def setSimultaneousHandlersNull: Self = StObject.set(x, "simultaneousHandlers", null)
     
     @scala.inline
-    def setSimultaneousHandlersVarargs(value: Ref[js.Any]*): Self = this.set("simultaneousHandlers", js.Array(value :_*))
+    def setSimultaneousHandlersUndefined: Self = StObject.set(x, "simultaneousHandlers", js.undefined)
     
     @scala.inline
-    def setSimultaneousHandlersFunction1(value: /* instance */ _ | Null => Unit): Self = this.set("simultaneousHandlers", js.Any.fromFunction1(value))
+    def setSimultaneousHandlersVarargs(value: Ref[js.Any]*): Self = StObject.set(x, "simultaneousHandlers", js.Array(value :_*))
     
     @scala.inline
-    def setSimultaneousHandlers(value: Ref[_] | js.Array[Ref[_]]): Self = this.set("simultaneousHandlers", value.asInstanceOf[js.Any])
+    def setWaitFor(value: Ref[_] | js.Array[Ref[_]]): Self = StObject.set(x, "waitFor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSimultaneousHandlers: Self = this.set("simultaneousHandlers", js.undefined)
+    def setWaitForFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "waitFor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSimultaneousHandlersNull: Self = this.set("simultaneousHandlers", null)
+    def setWaitForNull: Self = StObject.set(x, "waitFor", null)
     
     @scala.inline
-    def setWaitForVarargs(value: Ref[js.Any]*): Self = this.set("waitFor", js.Array(value :_*))
+    def setWaitForUndefined: Self = StObject.set(x, "waitFor", js.undefined)
     
     @scala.inline
-    def setWaitForFunction1(value: /* instance */ _ | Null => Unit): Self = this.set("waitFor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWaitFor(value: Ref[_] | js.Array[Ref[_]]): Self = this.set("waitFor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitFor: Self = this.set("waitFor", js.undefined)
-    
-    @scala.inline
-    def setWaitForNull: Self = this.set("waitFor", null)
+    def setWaitForVarargs(value: Ref[js.Any]*): Self = StObject.set(x, "waitFor", js.Array(value :_*))
   }
 }

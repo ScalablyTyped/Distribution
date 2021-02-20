@@ -1,11 +1,12 @@
 package typings.awsSdk.ecrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Layer extends js.Object {
+trait Layer extends StObject {
   
   /**
     * The availability status of the image layer.
@@ -36,42 +37,30 @@ object Layer {
   }
   
   @scala.inline
-  implicit class LayerOps[Self <: Layer] (val x: Self) extends AnyVal {
+  implicit class LayerMutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayerAvailability(value: LayerAvailability): Self = StObject.set(x, "layerAvailability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayerAvailabilityUndefined: Self = StObject.set(x, "layerAvailability", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLayerDigest(value: LayerDigest): Self = StObject.set(x, "layerDigest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerAvailability(value: LayerAvailability): Self = this.set("layerAvailability", value.asInstanceOf[js.Any])
+    def setLayerDigestUndefined: Self = StObject.set(x, "layerDigest", js.undefined)
     
     @scala.inline
-    def deleteLayerAvailability: Self = this.set("layerAvailability", js.undefined)
+    def setLayerSize(value: LayerSizeInBytes): Self = StObject.set(x, "layerSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerDigest(value: LayerDigest): Self = this.set("layerDigest", value.asInstanceOf[js.Any])
+    def setLayerSizeUndefined: Self = StObject.set(x, "layerSize", js.undefined)
     
     @scala.inline
-    def deleteLayerDigest: Self = this.set("layerDigest", js.undefined)
+    def setMediaType(value: MediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerSize(value: LayerSizeInBytes): Self = this.set("layerSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayerSize: Self = this.set("layerSize", js.undefined)
-    
-    @scala.inline
-    def setMediaType(value: MediaType): Self = this.set("mediaType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMediaType: Self = this.set("mediaType", js.undefined)
+    def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
   }
 }

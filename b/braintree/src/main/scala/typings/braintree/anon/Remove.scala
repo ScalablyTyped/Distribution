@@ -2,12 +2,13 @@ package typings.braintree.anon
 
 import typings.braintree.mod.DiscountAddRequest
 import typings.braintree.mod.DiscountUpdateRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Remove extends js.Object {
+trait Remove extends StObject {
   
   var add: js.UndefOr[js.Array[DiscountAddRequest]] = js.native
   
@@ -24,45 +25,33 @@ object Remove {
   }
   
   @scala.inline
-  implicit class RemoveOps[Self <: Remove] (val x: Self) extends AnyVal {
+  implicit class RemoveMutableBuilder[Self <: Remove] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: js.Array[DiscountAddRequest]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddVarargs(value: DiscountAddRequest*): Self = StObject.set(x, "add", js.Array(value :_*))
     
     @scala.inline
-    def setAddVarargs(value: DiscountAddRequest*): Self = this.set("add", js.Array(value :_*))
+    def setRemove(value: js.Array[String]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: js.Array[DiscountAddRequest]): Self = this.set("add", value.asInstanceOf[js.Any])
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def deleteAdd: Self = this.set("add", js.undefined)
+    def setRemoveVarargs(value: String*): Self = StObject.set(x, "remove", js.Array(value :_*))
     
     @scala.inline
-    def setRemoveVarargs(value: String*): Self = this.set("remove", js.Array(value :_*))
+    def setUpdate(value: js.Array[DiscountUpdateRequest]): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemove(value: js.Array[String]): Self = this.set("remove", value.asInstanceOf[js.Any])
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
     @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
-    
-    @scala.inline
-    def setUpdateVarargs(value: DiscountUpdateRequest*): Self = this.set("update", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpdate(value: js.Array[DiscountUpdateRequest]): Self = this.set("update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateVarargs(value: DiscountUpdateRequest*): Self = StObject.set(x, "update", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackgroundColorProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.Object {
+trait BackgroundColorProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   var backgroundColor: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
   
@@ -29,42 +30,30 @@ object BackgroundColorProps {
   }
   
   @scala.inline
-  implicit class BackgroundColorPropsOps[Self <: BackgroundColorProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BackgroundColorProps[ThemeType, TVal])) extends AnyVal {
+  implicit class BackgroundColorPropsMutableBuilder[Self <: BackgroundColorProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BackgroundColorProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorNull: Self = StObject.set(x, "backgroundColor", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def setBackgroundColorVarargs(value: (TVal | Null)*): Self = this.set("backgroundColor", js.Array(value :_*))
+    def setBackgroundColorVarargs(value: (TVal | Null)*): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
     
     @scala.inline
-    def setBackgroundColor(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBg(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setBgNull: Self = StObject.set(x, "bg", null)
     
     @scala.inline
-    def setBackgroundColorNull: Self = this.set("backgroundColor", null)
+    def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
     
     @scala.inline
-    def setBgVarargs(value: (TVal | Null)*): Self = this.set("bg", js.Array(value :_*))
-    
-    @scala.inline
-    def setBg(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("bg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBg: Self = this.set("bg", js.undefined)
-    
-    @scala.inline
-    def setBgNull: Self = this.set("bg", null)
+    def setBgVarargs(value: (TVal | Null)*): Self = StObject.set(x, "bg", js.Array(value :_*))
   }
 }

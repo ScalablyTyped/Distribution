@@ -1,11 +1,12 @@
 package typings.webix.webix
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait i18n extends js.Object {
+trait i18n extends StObject {
   
   var calendar: js.Any = js.native
   
@@ -113,117 +114,105 @@ object i18n {
   }
   
   @scala.inline
-  implicit class i18nOps[Self <: i18n] (val x: Self) extends AnyVal {
+  implicit class i18nMutableBuilder[Self <: i18n] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendar(value: js.Any): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControls(value: js.Any): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendar(value: js.Any): Self = this.set("calendar", value.asInstanceOf[js.Any])
+    def setDateFormatDate(value: String => js.Any): Self = StObject.set(x, "dateFormatDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setControls(value: js.Any): Self = this.set("controls", value.asInstanceOf[js.Any])
+    def setDateFormatStr(value: js.Any => String): Self = StObject.set(x, "dateFormatStr", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDateFormat(value: String): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    def setDecimalDelimiter(value: String): Self = StObject.set(x, "decimalDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateFormatDate(value: String => js.Any): Self = this.set("dateFormatDate", js.Any.fromFunction1(value))
+    def setDecimalSize(value: Double): Self = StObject.set(x, "decimalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateFormatStr(value: js.Any => String): Self = this.set("dateFormatStr", js.Any.fromFunction1(value))
+    def setFileSize(value: js.Array[_]): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimalDelimiter(value: String): Self = this.set("decimalDelimiter", value.asInstanceOf[js.Any])
+    def setFileSizeVarargs(value: js.Any*): Self = StObject.set(x, "fileSize", js.Array(value :_*))
     
     @scala.inline
-    def setDecimalSize(value: Double): Self = this.set("decimalSize", value.asInstanceOf[js.Any])
+    def setFullDateFormat(value: String): Self = StObject.set(x, "fullDateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSizeVarargs(value: js.Any*): Self = this.set("fileSize", js.Array(value :_*))
+    def setFullDateFormatDate(value: String => js.Any): Self = StObject.set(x, "fullDateFormatDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFileSize(value: js.Array[_]): Self = this.set("fileSize", value.asInstanceOf[js.Any])
+    def setFullDateFormatStr(value: Date => String): Self = StObject.set(x, "fullDateFormatStr", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFullDateFormat(value: String): Self = this.set("fullDateFormat", value.asInstanceOf[js.Any])
+    def setGroupDelimiter(value: String): Self = StObject.set(x, "groupDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullDateFormatDate(value: String => js.Any): Self = this.set("fullDateFormatDate", js.Any.fromFunction1(value))
+    def setGroupSize(value: Double): Self = StObject.set(x, "groupSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullDateFormatStr(value: Date => String): Self = this.set("fullDateFormatStr", js.Any.fromFunction1(value))
+    def setIntFormat(value: Double => String): Self = StObject.set(x, "intFormat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGroupDelimiter(value: String): Self = this.set("groupDelimiter", value.asInstanceOf[js.Any])
+    def setLocales(value: js.Any): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupSize(value: Double): Self = this.set("groupSize", value.asInstanceOf[js.Any])
+    def setLongDateFormat(value: String): Self = StObject.set(x, "longDateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntFormat(value: Double => String): Self = this.set("intFormat", js.Any.fromFunction1(value))
+    def setLongDateFormatDate(value: String => js.Any): Self = StObject.set(x, "longDateFormatDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLocales(value: js.Any): Self = this.set("locales", value.asInstanceOf[js.Any])
+    def setLongDateFormatStr(value: js.Any => String): Self = StObject.set(x, "longDateFormatStr", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLongDateFormat(value: String): Self = this.set("longDateFormat", value.asInstanceOf[js.Any])
+    def setNumberFormat(value: Double => String): Self = StObject.set(x, "numberFormat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLongDateFormatDate(value: String => js.Any): Self = this.set("longDateFormatDate", js.Any.fromFunction1(value))
+    def setParseFormat(value: String): Self = StObject.set(x, "parseFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongDateFormatStr(value: js.Any => String): Self = this.set("longDateFormatStr", js.Any.fromFunction1(value))
+    def setParseFormatDate(value: String => js.Any): Self = StObject.set(x, "parseFormatDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNumberFormat(value: Double => String): Self = this.set("numberFormat", js.Any.fromFunction1(value))
+    def setParseFormatStr(value: js.Any => String): Self = StObject.set(x, "parseFormatStr", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParseFormat(value: String): Self = this.set("parseFormat", value.asInstanceOf[js.Any])
+    def setParseTimeFormat(value: String): Self = StObject.set(x, "parseTimeFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParseFormatDate(value: String => js.Any): Self = this.set("parseFormatDate", js.Any.fromFunction1(value))
+    def setParseTimeFormatDate(value: String => js.Any): Self = StObject.set(x, "parseTimeFormatDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParseFormatStr(value: js.Any => String): Self = this.set("parseFormatStr", js.Any.fromFunction1(value))
+    def setParseTimeFormatStr(value: js.Any => String): Self = StObject.set(x, "parseTimeFormatStr", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParseTimeFormat(value: String): Self = this.set("parseTimeFormat", value.asInstanceOf[js.Any])
+    def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParseTimeFormatDate(value: String => js.Any): Self = this.set("parseTimeFormatDate", js.Any.fromFunction1(value))
+    def setPriceFormat(value: Double => String): Self = StObject.set(x, "priceFormat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParseTimeFormatStr(value: js.Any => String): Self = this.set("parseTimeFormatStr", js.Any.fromFunction1(value))
+    def setPriceSettings(value: js.Any): Self = StObject.set(x, "priceSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrice(value: String): Self = this.set("price", value.asInstanceOf[js.Any])
+    def setSetLocale(value: String => Unit): Self = StObject.set(x, "setLocale", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPriceFormat(value: Double => String): Self = this.set("priceFormat", js.Any.fromFunction1(value))
+    def setTimeFormat(value: String): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriceSettings(value: js.Any): Self = this.set("priceSettings", value.asInstanceOf[js.Any])
+    def setTimeFormatDate(value: String => js.Any): Self = StObject.set(x, "timeFormatDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLocale(value: String => Unit): Self = this.set("setLocale", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTimeFormat(value: String): Self = this.set("timeFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeFormatDate(value: String => js.Any): Self = this.set("timeFormatDate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTimeFormatStr(value: js.Any => String): Self = this.set("timeFormatStr", js.Any.fromFunction1(value))
+    def setTimeFormatStr(value: js.Any => String): Self = StObject.set(x, "timeFormatStr", js.Any.fromFunction1(value))
   }
 }

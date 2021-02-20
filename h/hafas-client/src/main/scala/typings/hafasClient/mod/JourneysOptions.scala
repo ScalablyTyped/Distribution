@@ -1,12 +1,13 @@
 package typings.hafasClient.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JourneysOptions extends js.Object {
+trait JourneysOptions extends StObject {
   
   /**
     * 'none', 'partial' or 'complete'
@@ -144,150 +145,138 @@ object JourneysOptions {
   }
   
   @scala.inline
-  implicit class JourneysOptionsOps[Self <: JourneysOptions] (val x: Self) extends AnyVal {
+  implicit class JourneysOptionsMutableBuilder[Self <: JourneysOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibility(value: String): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArrival(value: Date): Self = StObject.set(x, "arrival", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibility(value: String): Self = this.set("accessibility", value.asInstanceOf[js.Any])
+    def setArrivalUndefined: Self = StObject.set(x, "arrival", js.undefined)
     
     @scala.inline
-    def deleteAccessibility: Self = this.set("accessibility", js.undefined)
+    def setBike(value: Boolean): Self = StObject.set(x, "bike", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrival(value: Date): Self = this.set("arrival", value.asInstanceOf[js.Any])
+    def setBikeUndefined: Self = StObject.set(x, "bike", js.undefined)
     
     @scala.inline
-    def deleteArrival: Self = this.set("arrival", js.undefined)
+    def setDeparture(value: Date): Self = StObject.set(x, "departure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBike(value: Boolean): Self = this.set("bike", value.asInstanceOf[js.Any])
+    def setDepartureUndefined: Self = StObject.set(x, "departure", js.undefined)
     
     @scala.inline
-    def deleteBike: Self = this.set("bike", js.undefined)
+    def setEarlierThan(value: String): Self = StObject.set(x, "earlierThan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeparture(value: Date): Self = this.set("departure", value.asInstanceOf[js.Any])
+    def setEarlierThanUndefined: Self = StObject.set(x, "earlierThan", js.undefined)
     
     @scala.inline
-    def deleteDeparture: Self = this.set("departure", js.undefined)
+    def setEntrances(value: Boolean): Self = StObject.set(x, "entrances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEarlierThan(value: String): Self = this.set("earlierThan", value.asInstanceOf[js.Any])
+    def setEntrancesUndefined: Self = StObject.set(x, "entrances", js.undefined)
     
     @scala.inline
-    def deleteEarlierThan: Self = this.set("earlierThan", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntrances(value: Boolean): Self = this.set("entrances", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteEntrances: Self = this.set("entrances", js.undefined)
+    def setLaterThan(value: String): Self = StObject.set(x, "laterThan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLaterThanUndefined: Self = StObject.set(x, "laterThan", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setPolylines(value: Boolean): Self = StObject.set(x, "polylines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaterThan(value: String): Self = this.set("laterThan", value.asInstanceOf[js.Any])
+    def setPolylinesUndefined: Self = StObject.set(x, "polylines", js.undefined)
     
     @scala.inline
-    def deleteLaterThan: Self = this.set("laterThan", js.undefined)
+    def setProducts(value: Products): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolylines(value: Boolean): Self = this.set("polylines", value.asInstanceOf[js.Any])
+    def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
     
     @scala.inline
-    def deletePolylines: Self = this.set("polylines", js.undefined)
+    def setRemarks(value: Boolean): Self = StObject.set(x, "remarks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProducts(value: Products): Self = this.set("products", value.asInstanceOf[js.Any])
+    def setRemarksUndefined: Self = StObject.set(x, "remarks", js.undefined)
     
     @scala.inline
-    def deleteProducts: Self = this.set("products", js.undefined)
+    def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemarks(value: Boolean): Self = this.set("remarks", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def deleteRemarks: Self = this.set("remarks", js.undefined)
+    def setScheduledDays(value: Boolean): Self = StObject.set(x, "scheduledDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResults(value: Double): Self = this.set("results", value.asInstanceOf[js.Any])
+    def setScheduledDaysUndefined: Self = StObject.set(x, "scheduledDays", js.undefined)
     
     @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    def setStartWithWalking(value: Boolean): Self = StObject.set(x, "startWithWalking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduledDays(value: Boolean): Self = this.set("scheduledDays", value.asInstanceOf[js.Any])
+    def setStartWithWalkingUndefined: Self = StObject.set(x, "startWithWalking", js.undefined)
     
     @scala.inline
-    def deleteScheduledDays: Self = this.set("scheduledDays", js.undefined)
+    def setStopovers(value: Boolean): Self = StObject.set(x, "stopovers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartWithWalking(value: Boolean): Self = this.set("startWithWalking", value.asInstanceOf[js.Any])
+    def setStopoversUndefined: Self = StObject.set(x, "stopovers", js.undefined)
     
     @scala.inline
-    def deleteStartWithWalking: Self = this.set("startWithWalking", js.undefined)
+    def setSubStops(value: Boolean): Self = StObject.set(x, "subStops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopovers(value: Boolean): Self = this.set("stopovers", value.asInstanceOf[js.Any])
+    def setSubStopsUndefined: Self = StObject.set(x, "subStops", js.undefined)
     
     @scala.inline
-    def deleteStopovers: Self = this.set("stopovers", js.undefined)
+    def setTickets(value: Boolean): Self = StObject.set(x, "tickets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubStops(value: Boolean): Self = this.set("subStops", value.asInstanceOf[js.Any])
+    def setTicketsUndefined: Self = StObject.set(x, "tickets", js.undefined)
     
     @scala.inline
-    def deleteSubStops: Self = this.set("subStops", js.undefined)
+    def setTransferTime(value: Double): Self = StObject.set(x, "transferTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickets(value: Boolean): Self = this.set("tickets", value.asInstanceOf[js.Any])
+    def setTransferTimeUndefined: Self = StObject.set(x, "transferTime", js.undefined)
     
     @scala.inline
-    def deleteTickets: Self = this.set("tickets", js.undefined)
+    def setTransfers(value: Double): Self = StObject.set(x, "transfers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransferTime(value: Double): Self = this.set("transferTime", value.asInstanceOf[js.Any])
+    def setTransfersUndefined: Self = StObject.set(x, "transfers", js.undefined)
     
     @scala.inline
-    def deleteTransferTime: Self = this.set("transferTime", js.undefined)
+    def setVia(value: String): Self = StObject.set(x, "via", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransfers(value: Double): Self = this.set("transfers", value.asInstanceOf[js.Any])
+    def setViaUndefined: Self = StObject.set(x, "via", js.undefined)
     
     @scala.inline
-    def deleteTransfers: Self = this.set("transfers", js.undefined)
+    def setWalkingSpeed(value: String): Self = StObject.set(x, "walkingSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVia(value: String): Self = this.set("via", value.asInstanceOf[js.Any])
+    def setWalkingSpeedUndefined: Self = StObject.set(x, "walkingSpeed", js.undefined)
     
     @scala.inline
-    def deleteVia: Self = this.set("via", js.undefined)
+    def setWhen(value: Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWalkingSpeed(value: String): Self = this.set("walkingSpeed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWalkingSpeed: Self = this.set("walkingSpeed", js.undefined)
-    
-    @scala.inline
-    def setWhen(value: Date): Self = this.set("when", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhen: Self = this.set("when", js.undefined)
+    def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
   }
 }

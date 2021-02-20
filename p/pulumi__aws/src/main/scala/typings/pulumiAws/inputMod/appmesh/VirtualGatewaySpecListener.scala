@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.appmesh
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualGatewaySpecListener extends js.Object {
+trait VirtualGatewaySpecListener extends StObject {
   
   /**
     * The health check information for the listener.
@@ -32,33 +33,21 @@ object VirtualGatewaySpecListener {
   }
   
   @scala.inline
-  implicit class VirtualGatewaySpecListenerOps[Self <: VirtualGatewaySpecListener] (val x: Self) extends AnyVal {
+  implicit class VirtualGatewaySpecListenerMutableBuilder[Self <: VirtualGatewaySpecListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHealthCheck(value: Input[VirtualGatewaySpecListenerHealthCheck]): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPortMapping(value: Input[VirtualGatewaySpecListenerPortMapping]): Self = StObject.set(x, "portMapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortMapping(value: Input[VirtualGatewaySpecListenerPortMapping]): Self = this.set("portMapping", value.asInstanceOf[js.Any])
+    def setTls(value: Input[VirtualGatewaySpecListenerTls]): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthCheck(value: Input[VirtualGatewaySpecListenerHealthCheck]): Self = this.set("healthCheck", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHealthCheck: Self = this.set("healthCheck", js.undefined)
-    
-    @scala.inline
-    def setTls(value: Input[VirtualGatewaySpecListenerTls]): Self = this.set("tls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTls: Self = this.set("tls", js.undefined)
+    def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
   }
 }

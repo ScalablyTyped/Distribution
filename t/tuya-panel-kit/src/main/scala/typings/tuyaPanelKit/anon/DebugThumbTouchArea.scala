@@ -2,12 +2,13 @@ package typings.tuyaPanelKit.anon
 
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DebugThumbTouchArea extends js.Object {
+trait DebugThumbTouchArea extends StObject {
   
   var container: js.UndefOr[StyleProp[ViewStyle]] = js.native
   
@@ -28,63 +29,51 @@ object DebugThumbTouchArea {
   }
   
   @scala.inline
-  implicit class DebugThumbTouchAreaOps[Self <: DebugThumbTouchArea] (val x: Self) extends AnyVal {
+  implicit class DebugThumbTouchAreaMutableBuilder[Self <: DebugThumbTouchArea] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainer(value: StyleProp[ViewStyle]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerNull: Self = StObject.set(x, "container", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def setContainer(value: StyleProp[ViewStyle]): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setDebugThumbTouchArea(value: StyleProp[ViewStyle]): Self = StObject.set(x, "debugThumbTouchArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setDebugThumbTouchAreaNull: Self = StObject.set(x, "debugThumbTouchArea", null)
     
     @scala.inline
-    def setContainerNull: Self = this.set("container", null)
+    def setDebugThumbTouchAreaUndefined: Self = StObject.set(x, "debugThumbTouchArea", js.undefined)
     
     @scala.inline
-    def setDebugThumbTouchArea(value: StyleProp[ViewStyle]): Self = this.set("debugThumbTouchArea", value.asInstanceOf[js.Any])
+    def setThumb(value: StyleProp[ViewStyle]): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDebugThumbTouchArea: Self = this.set("debugThumbTouchArea", js.undefined)
+    def setThumbNull: Self = StObject.set(x, "thumb", null)
     
     @scala.inline
-    def setDebugThumbTouchAreaNull: Self = this.set("debugThumbTouchArea", null)
+    def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
     
     @scala.inline
-    def setThumb(value: StyleProp[ViewStyle]): Self = this.set("thumb", value.asInstanceOf[js.Any])
+    def setTouchArea(value: StyleProp[ViewStyle]): Self = StObject.set(x, "touchArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteThumb: Self = this.set("thumb", js.undefined)
+    def setTouchAreaNull: Self = StObject.set(x, "touchArea", null)
     
     @scala.inline
-    def setThumbNull: Self = this.set("thumb", null)
+    def setTouchAreaUndefined: Self = StObject.set(x, "touchArea", js.undefined)
     
     @scala.inline
-    def setTouchArea(value: StyleProp[ViewStyle]): Self = this.set("touchArea", value.asInstanceOf[js.Any])
+    def setTrack(value: StyleProp[ViewStyle]): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTouchArea: Self = this.set("touchArea", js.undefined)
+    def setTrackNull: Self = StObject.set(x, "track", null)
     
     @scala.inline
-    def setTouchAreaNull: Self = this.set("touchArea", null)
-    
-    @scala.inline
-    def setTrack(value: StyleProp[ViewStyle]): Self = this.set("track", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrack: Self = this.set("track", js.undefined)
-    
-    @scala.inline
-    def setTrackNull: Self = this.set("track", null)
+    def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
   }
 }

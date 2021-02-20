@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeidentifyDicomStoreRequest extends js.Object {
+trait DeidentifyDicomStoreRequest extends StObject {
   
   /** De-identify configuration. */
   var config: js.UndefOr[DeidentifyConfig] = js.native
@@ -30,36 +31,24 @@ object DeidentifyDicomStoreRequest {
   }
   
   @scala.inline
-  implicit class DeidentifyDicomStoreRequestOps[Self <: DeidentifyDicomStoreRequest] (val x: Self) extends AnyVal {
+  implicit class DeidentifyDicomStoreRequestMutableBuilder[Self <: DeidentifyDicomStoreRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: DeidentifyConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationStore(value: String): Self = StObject.set(x, "destinationStore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: DeidentifyConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setDestinationStoreUndefined: Self = StObject.set(x, "destinationStore", js.undefined)
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setFilterConfig(value: DicomFilterConfig): Self = StObject.set(x, "filterConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationStore(value: String): Self = this.set("destinationStore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationStore: Self = this.set("destinationStore", js.undefined)
-    
-    @scala.inline
-    def setFilterConfig(value: DicomFilterConfig): Self = this.set("filterConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterConfig: Self = this.set("filterConfig", js.undefined)
+    def setFilterConfigUndefined: Self = StObject.set(x, "filterConfig", js.undefined)
   }
 }

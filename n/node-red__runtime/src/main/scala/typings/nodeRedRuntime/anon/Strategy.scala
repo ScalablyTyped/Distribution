@@ -2,12 +2,13 @@ package typings.nodeRedRuntime.anon
 
 import typings.nodeRedRuntime.mod.UsernamePermissions
 import typings.nodeRedRuntime.nodeRedRuntimeStrings.strategy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Strategy extends js.Object {
+trait Strategy extends StObject {
   
   var strategy: Icon = js.native
   
@@ -25,30 +26,18 @@ object Strategy {
   }
   
   @scala.inline
-  implicit class StrategyOps[Self <: Strategy] (val x: Self) extends AnyVal {
+  implicit class StrategyMutableBuilder[Self <: Strategy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStrategy(value: Icon): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setType(value: strategy): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUsers(value: js.Array[UsernamePermissions]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrategy(value: Icon): Self = this.set("strategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: strategy): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsersVarargs(value: UsernamePermissions*): Self = this.set("users", js.Array(value :_*))
-    
-    @scala.inline
-    def setUsers(value: js.Array[UsernamePermissions]): Self = this.set("users", value.asInstanceOf[js.Any])
+    def setUsersVarargs(value: UsernamePermissions*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

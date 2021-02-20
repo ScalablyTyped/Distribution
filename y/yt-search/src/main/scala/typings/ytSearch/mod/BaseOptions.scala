@@ -1,11 +1,12 @@
 package typings.ytSearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseOptions extends js.Object {
+trait BaseOptions extends StObject {
   
   /**
     * The category (for example `'music'`.)
@@ -44,66 +45,54 @@ object BaseOptions {
   }
   
   @scala.inline
-  implicit class BaseOptionsOps[Self <: BaseOptions] (val x: Self) extends AnyVal {
+  implicit class BaseOptionsMutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGl(value: String): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setGlUndefined: Self = StObject.set(x, "gl", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGl(value: String): Self = this.set("gl", value.asInstanceOf[js.Any])
+    def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
     
     @scala.inline
-    def deleteGl: Self = this.set("gl", js.undefined)
+    def setPageEnd(value: Double): Self = StObject.set(x, "pageEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHl(value: String): Self = this.set("hl", value.asInstanceOf[js.Any])
+    def setPageEndUndefined: Self = StObject.set(x, "pageEnd", js.undefined)
     
     @scala.inline
-    def deleteHl: Self = this.set("hl", js.undefined)
+    def setPageStart(value: Double): Self = StObject.set(x, "pageStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageEnd(value: Double): Self = this.set("pageEnd", value.asInstanceOf[js.Any])
+    def setPageStartUndefined: Self = StObject.set(x, "pageStart", js.undefined)
     
     @scala.inline
-    def deletePageEnd: Self = this.set("pageEnd", js.undefined)
+    def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageStart(value: Double): Self = this.set("pageStart", value.asInstanceOf[js.Any])
+    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
     @scala.inline
-    def deletePageStart: Self = this.set("pageStart", js.undefined)
+    def setSp(value: String): Self = StObject.set(x, "sp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPages(value: Double): Self = this.set("pages", value.asInstanceOf[js.Any])
+    def setSpUndefined: Self = StObject.set(x, "sp", js.undefined)
     
     @scala.inline
-    def deletePages: Self = this.set("pages", js.undefined)
+    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSp(value: String): Self = this.set("sp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSp: Self = this.set("sp", js.undefined)
-    
-    @scala.inline
-    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserAgent: Self = this.set("userAgent", js.undefined)
+    def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
   }
 }

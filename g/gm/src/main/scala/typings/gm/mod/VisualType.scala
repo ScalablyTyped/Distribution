@@ -1,5 +1,6 @@
 package typings.gm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,8 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.gm.gmStrings.DirectColor
   - typings.gm.gmStrings.default
 */
-trait VisualType extends js.Object
+trait VisualType extends StObject
 object VisualType {
+  
+  @scala.inline
+  def default: typings.gm.gmStrings.default = "default".asInstanceOf[typings.gm.gmStrings.default]
   
   @scala.inline
   def DirectColor: typings.gm.gmStrings.DirectColor = "DirectColor".asInstanceOf[typings.gm.gmStrings.DirectColor]
@@ -33,7 +37,4 @@ object VisualType {
   
   @scala.inline
   def TrueColor: typings.gm.gmStrings.TrueColor = "TrueColor".asInstanceOf[typings.gm.gmStrings.TrueColor]
-  
-  @scala.inline
-  def default: typings.gm.gmStrings.default = "default".asInstanceOf[typings.gm.gmStrings.default]
 }

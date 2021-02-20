@@ -10,12 +10,13 @@ import typings.stellarBase.stellarBaseStrings.manageDataLowReserve
 import typings.stellarBase.stellarBaseStrings.manageDataNameNotFound
 import typings.stellarBase.stellarBaseStrings.manageDataNotSupportedYet
 import typings.stellarBase.stellarBaseStrings.manageDataSuccess
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManageDataResultCode extends js.Object {
+trait ManageDataResultCode extends StObject {
   
   val name: manageDataSuccess | manageDataNotSupportedYet | manageDataNameNotFound | manageDataLowReserve | manageDataInvalidName = js.native
   
@@ -33,26 +34,14 @@ object ManageDataResultCode {
   }
   
   @scala.inline
-  implicit class ManageDataResultCodeOps[Self <: ManageDataResultCode] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ManageDataResultCodeMutableBuilder[Self <: ManageDataResultCode] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setName(
       value: manageDataSuccess | manageDataNotSupportedYet | manageDataNameNotFound | manageDataLowReserve | manageDataInvalidName
-    ): Self = this.set("name", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: `0` | `-1` | `-2` | `-3` | `-4`): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: `0` | `-1` | `-2` | `-3` | `-4`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

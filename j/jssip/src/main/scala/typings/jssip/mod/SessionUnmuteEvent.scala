@@ -1,11 +1,12 @@
 package typings.jssip.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SessionUnmuteEvent extends js.Object {
+trait SessionUnmuteEvent extends StObject {
   
   var audio: Boolean = js.native
   
@@ -20,24 +21,12 @@ object SessionUnmuteEvent {
   }
   
   @scala.inline
-  implicit class SessionUnmuteEventOps[Self <: SessionUnmuteEvent] (val x: Self) extends AnyVal {
+  implicit class SessionUnmuteEventMutableBuilder[Self <: SessionUnmuteEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAudio(value: Boolean): Self = this.set("audio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVideo(value: Boolean): Self = this.set("video", value.asInstanceOf[js.Any])
+    def setVideo(value: Boolean): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
   }
 }

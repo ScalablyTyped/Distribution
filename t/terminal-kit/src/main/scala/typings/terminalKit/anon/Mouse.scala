@@ -3,12 +3,13 @@ package typings.terminalKit.anon
 import typings.terminalKit.terminalKitStrings.button
 import typings.terminalKit.terminalKitStrings.drag
 import typings.terminalKit.terminalKitStrings.motion
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mouse extends js.Object {
+trait Mouse extends StObject {
   
   var mouse: js.UndefOr[button | drag | motion] = js.native
   
@@ -23,30 +24,18 @@ object Mouse {
   }
   
   @scala.inline
-  implicit class MouseOps[Self <: Mouse] (val x: Self) extends AnyVal {
+  implicit class MouseMutableBuilder[Self <: Mouse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMouse(value: button | drag | motion): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMouseUndefined: Self = StObject.set(x, "mouse", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouse(value: button | drag | motion): Self = this.set("mouse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMouse: Self = this.set("mouse", js.undefined)
-    
-    @scala.inline
-    def setSafe(value: Boolean): Self = this.set("safe", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSafe: Self = this.set("safe", js.undefined)
+    def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
   }
 }

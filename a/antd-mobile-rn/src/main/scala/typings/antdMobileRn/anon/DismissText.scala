@@ -1,11 +1,12 @@
 package typings.antdMobileRn.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DismissText extends js.Object {
+trait DismissText extends StObject {
   
   var DatePickerLocale: Day = js.native
   
@@ -24,30 +25,18 @@ object DismissText {
   }
   
   @scala.inline
-  implicit class DismissTextOps[Self <: DismissText] (val x: Self) extends AnyVal {
+  implicit class DismissTextMutableBuilder[Self <: DismissText] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatePickerLocale(value: Day): Self = StObject.set(x, "DatePickerLocale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDismissText(value: String): Self = StObject.set(x, "dismissText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtra(value: String): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatePickerLocale(value: Day): Self = this.set("DatePickerLocale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDismissText(value: String): Self = this.set("dismissText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExtra(value: String): Self = this.set("extra", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOkText(value: String): Self = this.set("okText", value.asInstanceOf[js.Any])
+    def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
   }
 }

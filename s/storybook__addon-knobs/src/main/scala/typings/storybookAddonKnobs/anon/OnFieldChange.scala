@@ -1,12 +1,13 @@
 package typings.storybookAddonKnobs.anon
 
 import typings.storybookAddonKnobs.knobStoreMod.KnobStoreKnob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnFieldChange extends js.Object {
+trait OnFieldChange extends StObject {
   
   var knobs: js.Array[KnobStoreKnob] = js.native
   
@@ -23,30 +24,18 @@ object OnFieldChange {
   }
   
   @scala.inline
-  implicit class OnFieldChangeOps[Self <: OnFieldChange] (val x: Self) extends AnyVal {
+  implicit class OnFieldChangeMutableBuilder[Self <: OnFieldChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKnobs(value: js.Array[KnobStoreKnob]): Self = StObject.set(x, "knobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKnobsVarargs(value: KnobStoreKnob*): Self = StObject.set(x, "knobs", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnFieldChange(value: () => Unit): Self = StObject.set(x, "onFieldChange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setKnobsVarargs(value: KnobStoreKnob*): Self = this.set("knobs", js.Array(value :_*))
-    
-    @scala.inline
-    def setKnobs(value: js.Array[KnobStoreKnob]): Self = this.set("knobs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnFieldChange(value: () => Unit): Self = this.set("onFieldChange", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnFieldClick(value: () => Unit): Self = this.set("onFieldClick", js.Any.fromFunction0(value))
+    def setOnFieldClick(value: () => Unit): Self = StObject.set(x, "onFieldClick", js.Any.fromFunction0(value))
   }
 }

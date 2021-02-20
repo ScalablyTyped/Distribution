@@ -1,13 +1,22 @@
 package typings.stylelintWebpackPlugin
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.TopLevel
 import typings.stylelintWebpackPlugin.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("stylelint-webpack-plugin/declarations/cjs", JSImport.Namespace)
-@js.native
-object cjsMod
-  extends TopLevel[Instantiable1[/* options */ js.UndefOr[js.Object], default]]
+object cjsMod {
+  
+  /** @typedef {import('webpack').Compiler} Compiler */
+  /* was `typeof imported_stylelint-webpack-plugin.default` */
+  @JSImport("stylelint-webpack-plugin/declarations/cjs", JSImport.Namespace)
+  @js.native
+  class ^ () extends default {
+    def this(options: js.Object) = this()
+  }
+  
+  /** @typedef {import('webpack').Compiler} Compiler */
+  /* was `typeof imported_stylelint-webpack-plugin.default` */
+  type exports = default
+}

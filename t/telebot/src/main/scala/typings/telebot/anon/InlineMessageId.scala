@@ -1,11 +1,12 @@
 package typings.telebot.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InlineMessageId extends js.Object {
+trait InlineMessageId extends StObject {
   
   var chatId: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object InlineMessageId {
   }
   
   @scala.inline
-  implicit class InlineMessageIdOps[Self <: InlineMessageId] (val x: Self) extends AnyVal {
+  implicit class InlineMessageIdMutableBuilder[Self <: InlineMessageId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChatId(value: Double): Self = StObject.set(x, "chatId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChatIdUndefined: Self = StObject.set(x, "chatId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInlineMessageId(value: String): Self = StObject.set(x, "inlineMessageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChatId(value: Double): Self = this.set("chatId", value.asInstanceOf[js.Any])
+    def setInlineMessageIdUndefined: Self = StObject.set(x, "inlineMessageId", js.undefined)
     
     @scala.inline
-    def deleteChatId: Self = this.set("chatId", js.undefined)
+    def setMessageId(value: Double): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInlineMessageId(value: String): Self = this.set("inlineMessageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInlineMessageId: Self = this.set("inlineMessageId", js.undefined)
-    
-    @scala.inline
-    def setMessageId(value: Double): Self = this.set("messageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageId: Self = this.set("messageId", js.undefined)
+    def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
   }
 }

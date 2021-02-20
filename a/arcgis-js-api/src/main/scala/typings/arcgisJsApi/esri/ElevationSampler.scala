@@ -2,12 +2,13 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.changed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ElevationSampler extends js.Object {
+trait ElevationSampler extends StObject {
   
   /**
     * The minimum and maximum resolution of the data in the sampler.

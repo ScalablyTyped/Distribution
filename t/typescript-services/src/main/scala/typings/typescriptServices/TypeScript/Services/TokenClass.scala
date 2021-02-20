@@ -1,14 +1,15 @@
 package typings.typescriptServices.TypeScript.Services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TokenClass extends js.Object
+sealed trait TokenClass extends StObject
 @JSGlobal("TypeScript.Services.TokenClass")
 @js.native
-object TokenClass extends js.Object {
+object TokenClass extends StObject {
   
   @js.native
   sealed trait Comment extends TokenClass

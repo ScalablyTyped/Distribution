@@ -1,13 +1,13 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/model/_OutputLocation", JSImport.Namespace)
-@js.native
-object outputLocationMod extends js.Object {
+object outputLocationMod {
   
-  @JSName("_OutputLocation")
+  @JSImport("@aws-sdk/client-s3-node/model/_OutputLocation", "_OutputLocation")
+  @js.native
   val OutputLocation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

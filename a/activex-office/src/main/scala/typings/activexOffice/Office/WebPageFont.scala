@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebPageFont extends js.Object {
+trait WebPageFont extends StObject {
   
   val Application: js.Any = js.native
   
@@ -40,39 +41,27 @@ object WebPageFont {
   }
   
   @scala.inline
-  implicit class WebPageFontOps[Self <: WebPageFont] (val x: Self) extends AnyVal {
+  implicit class WebPageFontMutableBuilder[Self <: WebPageFont] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFixedWidthFont(value: String): Self = StObject.set(x, "FixedWidthFont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setFixedWidthFontSize(value: Double): Self = StObject.set(x, "FixedWidthFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setOfficeDotWebPageFont_typekey(value: WebPageFont): Self = StObject.set(x, "Office.WebPageFont_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedWidthFont(value: String): Self = this.set("FixedWidthFont", value.asInstanceOf[js.Any])
+    def setProportionalFont(value: String): Self = StObject.set(x, "ProportionalFont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedWidthFontSize(value: Double): Self = this.set("FixedWidthFontSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOfficeDotWebPageFont_typekey(value: WebPageFont): Self = this.set("Office.WebPageFont_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProportionalFont(value: String): Self = this.set("ProportionalFont", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProportionalFontSize(value: Double): Self = this.set("ProportionalFontSize", value.asInstanceOf[js.Any])
+    def setProportionalFontSize(value: Double): Self = StObject.set(x, "ProportionalFontSize", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,14 +22,14 @@ class BoundingBoxGizmo ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.BoundingBoxGizmo")
-@js.native
-object BoundingBoxGizmo extends js.Object {
+object BoundingBoxGizmo {
   
   /**
     * Makes a mesh not pickable and wraps the mesh inside of a bounding box mesh that is pickable. (This is useful to avoid picking within complex geometry)
     * @param mesh the mesh to wrap in the bounding box mesh and make not pickable
     * @returns the bounding box mesh with the passed in mesh as a child
     */
+  @JSGlobal("BABYLON.BoundingBoxGizmo.MakeNotPickableAndWrapInBoundingBox")
+  @js.native
   def MakeNotPickableAndWrapInBoundingBox(mesh: typings.babylonjs.BABYLON.Mesh): typings.babylonjs.BABYLON.Mesh = js.native
 }

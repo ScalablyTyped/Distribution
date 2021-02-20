@@ -7,14 +7,14 @@ import typings.awsSdkClientDynamodbNode.typesBatchWriteItemInputMod.BatchWriteIt
 import typings.awsSdkClientDynamodbNode.typesBatchWriteItemOutputMod.BatchWriteItemOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-node/commands/BatchWriteItemCommand", JSImport.Namespace)
-@js.native
-object batchWriteItemCommandMod extends js.Object {
+object batchWriteItemCommandMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-node/commands/BatchWriteItemCommand", "BatchWriteItemCommand")
   @js.native
   class BatchWriteItemCommand protected () extends Command[
           InputTypesUnion, 

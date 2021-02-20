@@ -1,12 +1,13 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 5. File System
 @js.native
-trait FsSizeData extends js.Object {
+trait FsSizeData extends StObject {
   
   var fs: String = js.native
   
@@ -30,36 +31,24 @@ object FsSizeData {
   }
   
   @scala.inline
-  implicit class FsSizeDataOps[Self <: FsSizeData] (val x: Self) extends AnyVal {
+  implicit class FsSizeDataMutableBuilder[Self <: FsSizeData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFs(value: String): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFs(value: String): Self = this.set("fs", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMount(value: String): Self = this.set("mount", value.asInstanceOf[js.Any])
+    def setUse(value: Double): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUse(value: Double): Self = this.set("use", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsed(value: Double): Self = this.set("used", value.asInstanceOf[js.Any])
+    def setUsed(value: Double): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
   }
 }

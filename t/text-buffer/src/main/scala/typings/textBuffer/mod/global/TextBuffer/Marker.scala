@@ -4,6 +4,7 @@ import typings.eventKit.mod.Disposable
 import typings.textBuffer.anon.Exclusive
 import typings.textBuffer.mod.global.TextBuffer.Events.MarkerChanged
 import typings.textBuffer.mod.global.TextBuffer.Options.CopyMarker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *  the buffer changes.
   */
 @js.native
-trait Marker extends js.Object {
+trait Marker extends StObject {
   
   /**
     *  Removes the marker's tail.

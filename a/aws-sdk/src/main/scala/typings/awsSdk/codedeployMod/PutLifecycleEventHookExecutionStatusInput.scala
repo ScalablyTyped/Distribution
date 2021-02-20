@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutLifecycleEventHookExecutionStatusInput extends js.Object {
+trait PutLifecycleEventHookExecutionStatusInput extends StObject {
   
   /**
     *  The unique ID of a deployment. Pass this ID to a Lambda function that validates a deployment lifecycle event. 
@@ -31,36 +32,24 @@ object PutLifecycleEventHookExecutionStatusInput {
   }
   
   @scala.inline
-  implicit class PutLifecycleEventHookExecutionStatusInputOps[Self <: PutLifecycleEventHookExecutionStatusInput] (val x: Self) extends AnyVal {
+  implicit class PutLifecycleEventHookExecutionStatusInputMutableBuilder[Self <: PutLifecycleEventHookExecutionStatusInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLifecycleEventHookExecutionId(value: LifecycleEventHookExecutionId): Self = StObject.set(x, "lifecycleEventHookExecutionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentId(value: DeploymentId): Self = this.set("deploymentId", value.asInstanceOf[js.Any])
+    def setLifecycleEventHookExecutionIdUndefined: Self = StObject.set(x, "lifecycleEventHookExecutionId", js.undefined)
     
     @scala.inline
-    def deleteDeploymentId: Self = this.set("deploymentId", js.undefined)
+    def setStatus(value: LifecycleEventStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifecycleEventHookExecutionId(value: LifecycleEventHookExecutionId): Self = this.set("lifecycleEventHookExecutionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLifecycleEventHookExecutionId: Self = this.set("lifecycleEventHookExecutionId", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: LifecycleEventStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

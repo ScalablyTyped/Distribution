@@ -1,19 +1,15 @@
 package typings.netmask
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("netmask", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def ip2long(ip: String): Double = js.native
-  
-  def long2ip(long: Double): String = js.native
-  
+  @JSImport("netmask", "Netmask")
   @js.native
-  class Netmask protected () extends js.Object {
+  class Netmask protected () extends StObject {
     def this(netmask: String) = this()
     def this(net: String, mask: String) = this()
     
@@ -56,4 +52,12 @@ object mod extends js.Object {
     // The number of IP address in the block (eg.: 254)
     var size: Double = js.native
   }
+  
+  @JSImport("netmask", "ip2long")
+  @js.native
+  def ip2long(ip: String): Double = js.native
+  
+  @JSImport("netmask", "long2ip")
+  @js.native
+  def long2ip(long: Double): String = js.native
 }

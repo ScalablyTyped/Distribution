@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.outputMod.autoscaling.v2beta1
 
 import typings.pulumiKubernetes.outputMod.meta.v1.LabelSelector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ObjectMetricStatus indicates the current value of a metric describing a kubernetes object (for example, hits-per-second on an Ingress object).
   */
 @js.native
-trait ObjectMetricStatus extends js.Object {
+trait ObjectMetricStatus extends StObject {
   
   /**
     * averageValue is the current value of the average of the metric across all relevant pods (as a quantity)
@@ -51,33 +52,21 @@ object ObjectMetricStatus {
   }
   
   @scala.inline
-  implicit class ObjectMetricStatusOps[Self <: ObjectMetricStatus] (val x: Self) extends AnyVal {
+  implicit class ObjectMetricStatusMutableBuilder[Self <: ObjectMetricStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAverageValue(value: String): Self = StObject.set(x, "averageValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentValue(value: String): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverageValue(value: String): Self = this.set("averageValue", value.asInstanceOf[js.Any])
+    def setSelector(value: LabelSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentValue(value: String): Self = this.set("currentValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetricName(value: String): Self = this.set("metricName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelector(value: LabelSelector): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: CrossVersionObjectReference): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTarget(value: CrossVersionObjectReference): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

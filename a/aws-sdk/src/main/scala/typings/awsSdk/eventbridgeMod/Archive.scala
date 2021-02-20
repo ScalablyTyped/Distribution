@@ -1,11 +1,12 @@
 package typings.awsSdk.eventbridgeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Archive extends js.Object {
+trait Archive extends StObject {
   
   /**
     * The name of the archive.
@@ -56,66 +57,54 @@ object Archive {
   }
   
   @scala.inline
-  implicit class ArchiveOps[Self <: Archive] (val x: Self) extends AnyVal {
+  implicit class ArchiveMutableBuilder[Self <: Archive] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchiveName(value: ArchiveName): Self = StObject.set(x, "ArchiveName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArchiveNameUndefined: Self = StObject.set(x, "ArchiveName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchiveName(value: ArchiveName): Self = this.set("ArchiveName", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteArchiveName: Self = this.set("ArchiveName", js.undefined)
+    def setEventCount(value: Long): Self = StObject.set(x, "EventCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setEventCountUndefined: Self = StObject.set(x, "EventCount", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setEventSourceArn(value: Arn): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventCount(value: Long): Self = this.set("EventCount", value.asInstanceOf[js.Any])
+    def setEventSourceArnUndefined: Self = StObject.set(x, "EventSourceArn", js.undefined)
     
     @scala.inline
-    def deleteEventCount: Self = this.set("EventCount", js.undefined)
+    def setRetentionDays(value: RetentionDays): Self = StObject.set(x, "RetentionDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventSourceArn(value: Arn): Self = this.set("EventSourceArn", value.asInstanceOf[js.Any])
+    def setRetentionDaysUndefined: Self = StObject.set(x, "RetentionDays", js.undefined)
     
     @scala.inline
-    def deleteEventSourceArn: Self = this.set("EventSourceArn", js.undefined)
+    def setSizeBytes(value: Long): Self = StObject.set(x, "SizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetentionDays(value: RetentionDays): Self = this.set("RetentionDays", value.asInstanceOf[js.Any])
+    def setSizeBytesUndefined: Self = StObject.set(x, "SizeBytes", js.undefined)
     
     @scala.inline
-    def deleteRetentionDays: Self = this.set("RetentionDays", js.undefined)
+    def setState(value: ArchiveState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeBytes(value: Long): Self = this.set("SizeBytes", value.asInstanceOf[js.Any])
+    def setStateReason(value: ArchiveStateReason): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSizeBytes: Self = this.set("SizeBytes", js.undefined)
+    def setStateReasonUndefined: Self = StObject.set(x, "StateReason", js.undefined)
     
     @scala.inline
-    def setState(value: ArchiveState): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
-    
-    @scala.inline
-    def setStateReason(value: ArchiveStateReason): Self = this.set("StateReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateReason: Self = this.set("StateReason", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

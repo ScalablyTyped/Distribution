@@ -5,13 +5,14 @@ import typings.winrtUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.drawerclosed
 import typings.winrtUwp.winrtUwpStrings.draweropened
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides event sources that allow a developer to detect when the cash drawer is opened or closed. */
 @js.native
-trait CashDrawerEventSource extends js.Object {
+trait CashDrawerEventSource extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

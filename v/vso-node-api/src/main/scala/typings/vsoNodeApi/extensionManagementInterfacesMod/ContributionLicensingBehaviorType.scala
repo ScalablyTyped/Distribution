@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContributionLicensingBehaviorType extends js.Object
+sealed trait ContributionLicensingBehaviorType extends StObject
 @JSImport("vso-node-api/interfaces/ExtensionManagementInterfaces", "ContributionLicensingBehaviorType")
 @js.native
-object ContributionLicensingBehaviorType extends js.Object {
+object ContributionLicensingBehaviorType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ContributionLicensingBehaviorType with Double] = js.native
@@ -19,22 +19,19 @@ object ContributionLicensingBehaviorType extends js.Object {
     */
   @js.native
   sealed trait AlwaysInclude extends ContributionLicensingBehaviorType
-  /* 2 */ @js.native
-  object AlwaysInclude extends TopLevel[AlwaysInclude with Double]
+  /* 2 */ val AlwaysInclude: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionLicensingBehaviorType.AlwaysInclude with Double = js.native
   
   /**
     * Default value - only include the contribution if the user is licensed for the extension
     */
   @js.native
   sealed trait OnlyIfLicensed extends ContributionLicensingBehaviorType
-  /* 0 */ @js.native
-  object OnlyIfLicensed extends TopLevel[OnlyIfLicensed with Double]
+  /* 0 */ val OnlyIfLicensed: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionLicensingBehaviorType.OnlyIfLicensed with Double = js.native
   
   /**
     * Only include the contribution if the user is NOT licensed for the extension
     */
   @js.native
   sealed trait OnlyIfUnlicensed extends ContributionLicensingBehaviorType
-  /* 1 */ @js.native
-  object OnlyIfUnlicensed extends TopLevel[OnlyIfUnlicensed with Double]
+  /* 1 */ val OnlyIfUnlicensed: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionLicensingBehaviorType.OnlyIfUnlicensed with Double = js.native
 }

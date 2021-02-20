@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AfterGatesAlways extends js.Object {
+trait AfterGatesAlways extends StObject {
   
   var afterGatesAlways: scala.Double = js.native
   
@@ -22,27 +23,15 @@ object AfterGatesAlways {
   }
   
   @scala.inline
-  implicit class AfterGatesAlwaysOps[Self <: AfterGatesAlways] (val x: Self) extends AnyVal {
+  implicit class AfterGatesAlwaysMutableBuilder[Self <: AfterGatesAlways] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterGatesAlways(value: scala.Double): Self = StObject.set(x, "afterGatesAlways", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterSuccessfulGates(value: scala.Double): Self = StObject.set(x, "afterSuccessfulGates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAfterGatesAlways(value: scala.Double): Self = this.set("afterGatesAlways", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAfterSuccessfulGates(value: scala.Double): Self = this.set("afterSuccessfulGates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBeforeGates(value: scala.Double): Self = this.set("beforeGates", value.asInstanceOf[js.Any])
+    def setBeforeGates(value: scala.Double): Self = StObject.set(x, "beforeGates", value.asInstanceOf[js.Any])
   }
 }

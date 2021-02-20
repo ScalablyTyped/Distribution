@@ -1,11 +1,12 @@
 package typings.awsSdk.schemasMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDiscoverersRequest extends js.Object {
+trait ListDiscoverersRequest extends StObject {
   
   /**
     * Specifying this limits the results to only those discoverer IDs that start with the specified prefix.
@@ -33,42 +34,30 @@ object ListDiscoverersRequest {
   }
   
   @scala.inline
-  implicit class ListDiscoverersRequestOps[Self <: ListDiscoverersRequest] (val x: Self) extends AnyVal {
+  implicit class ListDiscoverersRequestMutableBuilder[Self <: ListDiscoverersRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiscovererIdPrefix(value: string): Self = StObject.set(x, "DiscovererIdPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiscovererIdPrefixUndefined: Self = StObject.set(x, "DiscovererIdPrefix", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimit(value: integer): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscovererIdPrefix(value: string): Self = this.set("DiscovererIdPrefix", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def deleteDiscovererIdPrefix: Self = this.set("DiscovererIdPrefix", js.undefined)
+    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: integer): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
+    def setSourceArnPrefix(value: string): Self = StObject.set(x, "SourceArnPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSourceArnPrefix(value: string): Self = this.set("SourceArnPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceArnPrefix: Self = this.set("SourceArnPrefix", js.undefined)
+    def setSourceArnPrefixUndefined: Self = StObject.set(x, "SourceArnPrefix", js.undefined)
   }
 }

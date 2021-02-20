@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/cjs/languages/hljs/vbnet", JSImport.Namespace)
-@js.native
-object vbnetMod extends js.Object {
+object vbnetMod {
   
+  @JSImport("react-syntax-highlighter/dist/cjs/languages/hljs/vbnet", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

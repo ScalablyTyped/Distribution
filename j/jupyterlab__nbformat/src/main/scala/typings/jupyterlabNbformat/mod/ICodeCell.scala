@@ -2,6 +2,7 @@ package typings.jupyterlabNbformat.mod
 
 import typings.jupyterlabNbformat.anon.PartialICodeCellMetadata
 import typings.jupyterlabNbformat.jupyterlabNbformatStrings.code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,36 +48,24 @@ object ICodeCell {
   }
   
   @scala.inline
-  implicit class ICodeCellOps[Self <: ICodeCell] (val x: Self) extends AnyVal {
+  implicit class ICodeCellMutableBuilder[Self <: ICodeCell] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCell_type(value: code): Self = StObject.set(x, "cell_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecution_count(value: ExecutionCount): Self = StObject.set(x, "execution_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecution_countNull: Self = StObject.set(x, "execution_count", null)
     
     @scala.inline
-    def setCell_type(value: code): Self = this.set("cell_type", value.asInstanceOf[js.Any])
+    def setMetadata(value: PartialICodeCellMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: PartialICodeCellMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setOutputs(value: js.Array[IOutput]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputsVarargs(value: IOutput*): Self = this.set("outputs", js.Array(value :_*))
-    
-    @scala.inline
-    def setOutputs(value: js.Array[IOutput]): Self = this.set("outputs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExecution_count(value: ExecutionCount): Self = this.set("execution_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExecution_countNull: Self = this.set("execution_count", null)
+    def setOutputsVarargs(value: IOutput*): Self = StObject.set(x, "outputs", js.Array(value :_*))
   }
 }

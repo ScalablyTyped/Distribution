@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GameSessionPlacement extends js.Object {
+trait GameSessionPlacement extends StObject {
   
   /**
     * DNS identifier assigned to the instance that is running the game session. Values have the following format:   TLS-enabled fleets: &lt;unique identifier&gt;.&lt;region identifier&gt;.amazongamelift.com.   Non-TLS-enabled fleets: ec2-&lt;unique identifier&gt;.compute.amazonaws.com. (See Amazon EC2 Instance IP Addressing.)   When connecting to a game session that is running on a TLS-enabled fleet, you must use the DNS name, not the IP address.
@@ -106,135 +107,123 @@ object GameSessionPlacement {
   }
   
   @scala.inline
-  implicit class GameSessionPlacementOps[Self <: GameSessionPlacement] (val x: Self) extends AnyVal {
+  implicit class GameSessionPlacementMutableBuilder[Self <: GameSessionPlacement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDnsName(value: DnsName): Self = StObject.set(x, "DnsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDnsNameUndefined: Self = StObject.set(x, "DnsName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsName(value: DnsName): Self = this.set("DnsName", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def deleteDnsName: Self = this.set("DnsName", js.undefined)
+    def setGameProperties(value: GamePropertyList): Self = StObject.set(x, "GameProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setGamePropertiesUndefined: Self = StObject.set(x, "GameProperties", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setGamePropertiesVarargs(value: GameProperty*): Self = StObject.set(x, "GameProperties", js.Array(value :_*))
     
     @scala.inline
-    def setGamePropertiesVarargs(value: GameProperty*): Self = this.set("GameProperties", js.Array(value :_*))
+    def setGameSessionArn(value: NonZeroAndMaxString): Self = StObject.set(x, "GameSessionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameProperties(value: GamePropertyList): Self = this.set("GameProperties", value.asInstanceOf[js.Any])
+    def setGameSessionArnUndefined: Self = StObject.set(x, "GameSessionArn", js.undefined)
     
     @scala.inline
-    def deleteGameProperties: Self = this.set("GameProperties", js.undefined)
+    def setGameSessionData(value: GameSessionData): Self = StObject.set(x, "GameSessionData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameSessionArn(value: NonZeroAndMaxString): Self = this.set("GameSessionArn", value.asInstanceOf[js.Any])
+    def setGameSessionDataUndefined: Self = StObject.set(x, "GameSessionData", js.undefined)
     
     @scala.inline
-    def deleteGameSessionArn: Self = this.set("GameSessionArn", js.undefined)
+    def setGameSessionId(value: NonZeroAndMaxString): Self = StObject.set(x, "GameSessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameSessionData(value: GameSessionData): Self = this.set("GameSessionData", value.asInstanceOf[js.Any])
+    def setGameSessionIdUndefined: Self = StObject.set(x, "GameSessionId", js.undefined)
     
     @scala.inline
-    def deleteGameSessionData: Self = this.set("GameSessionData", js.undefined)
+    def setGameSessionName(value: NonZeroAndMaxString): Self = StObject.set(x, "GameSessionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameSessionId(value: NonZeroAndMaxString): Self = this.set("GameSessionId", value.asInstanceOf[js.Any])
+    def setGameSessionNameUndefined: Self = StObject.set(x, "GameSessionName", js.undefined)
     
     @scala.inline
-    def deleteGameSessionId: Self = this.set("GameSessionId", js.undefined)
+    def setGameSessionQueueName(value: GameSessionQueueName): Self = StObject.set(x, "GameSessionQueueName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameSessionName(value: NonZeroAndMaxString): Self = this.set("GameSessionName", value.asInstanceOf[js.Any])
+    def setGameSessionQueueNameUndefined: Self = StObject.set(x, "GameSessionQueueName", js.undefined)
     
     @scala.inline
-    def deleteGameSessionName: Self = this.set("GameSessionName", js.undefined)
+    def setGameSessionRegion(value: NonZeroAndMaxString): Self = StObject.set(x, "GameSessionRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameSessionQueueName(value: GameSessionQueueName): Self = this.set("GameSessionQueueName", value.asInstanceOf[js.Any])
+    def setGameSessionRegionUndefined: Self = StObject.set(x, "GameSessionRegion", js.undefined)
     
     @scala.inline
-    def deleteGameSessionQueueName: Self = this.set("GameSessionQueueName", js.undefined)
+    def setIpAddress(value: IpAddress): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameSessionRegion(value: NonZeroAndMaxString): Self = this.set("GameSessionRegion", value.asInstanceOf[js.Any])
+    def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
     
     @scala.inline
-    def deleteGameSessionRegion: Self = this.set("GameSessionRegion", js.undefined)
+    def setMatchmakerData(value: MatchmakerData): Self = StObject.set(x, "MatchmakerData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddress(value: IpAddress): Self = this.set("IpAddress", value.asInstanceOf[js.Any])
+    def setMatchmakerDataUndefined: Self = StObject.set(x, "MatchmakerData", js.undefined)
     
     @scala.inline
-    def deleteIpAddress: Self = this.set("IpAddress", js.undefined)
+    def setMaximumPlayerSessionCount(value: WholeNumber): Self = StObject.set(x, "MaximumPlayerSessionCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchmakerData(value: MatchmakerData): Self = this.set("MatchmakerData", value.asInstanceOf[js.Any])
+    def setMaximumPlayerSessionCountUndefined: Self = StObject.set(x, "MaximumPlayerSessionCount", js.undefined)
     
     @scala.inline
-    def deleteMatchmakerData: Self = this.set("MatchmakerData", js.undefined)
+    def setPlacedPlayerSessions(value: PlacedPlayerSessionList): Self = StObject.set(x, "PlacedPlayerSessions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumPlayerSessionCount(value: WholeNumber): Self = this.set("MaximumPlayerSessionCount", value.asInstanceOf[js.Any])
+    def setPlacedPlayerSessionsUndefined: Self = StObject.set(x, "PlacedPlayerSessions", js.undefined)
     
     @scala.inline
-    def deleteMaximumPlayerSessionCount: Self = this.set("MaximumPlayerSessionCount", js.undefined)
+    def setPlacedPlayerSessionsVarargs(value: PlacedPlayerSession*): Self = StObject.set(x, "PlacedPlayerSessions", js.Array(value :_*))
     
     @scala.inline
-    def setPlacedPlayerSessionsVarargs(value: PlacedPlayerSession*): Self = this.set("PlacedPlayerSessions", js.Array(value :_*))
+    def setPlacementId(value: IdStringModel): Self = StObject.set(x, "PlacementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacedPlayerSessions(value: PlacedPlayerSessionList): Self = this.set("PlacedPlayerSessions", value.asInstanceOf[js.Any])
+    def setPlacementIdUndefined: Self = StObject.set(x, "PlacementId", js.undefined)
     
     @scala.inline
-    def deletePlacedPlayerSessions: Self = this.set("PlacedPlayerSessions", js.undefined)
+    def setPlayerLatencies(value: PlayerLatencyList): Self = StObject.set(x, "PlayerLatencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacementId(value: IdStringModel): Self = this.set("PlacementId", value.asInstanceOf[js.Any])
+    def setPlayerLatenciesUndefined: Self = StObject.set(x, "PlayerLatencies", js.undefined)
     
     @scala.inline
-    def deletePlacementId: Self = this.set("PlacementId", js.undefined)
+    def setPlayerLatenciesVarargs(value: PlayerLatency*): Self = StObject.set(x, "PlayerLatencies", js.Array(value :_*))
     
     @scala.inline
-    def setPlayerLatenciesVarargs(value: PlayerLatency*): Self = this.set("PlayerLatencies", js.Array(value :_*))
+    def setPort(value: PortNumber): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayerLatencies(value: PlayerLatencyList): Self = this.set("PlayerLatencies", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
     @scala.inline
-    def deletePlayerLatencies: Self = this.set("PlayerLatencies", js.undefined)
+    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: PortNumber): Self = this.set("Port", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("Port", js.undefined)
+    def setStatus(value: GameSessionPlacementState): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Timestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: GameSessionPlacementState): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

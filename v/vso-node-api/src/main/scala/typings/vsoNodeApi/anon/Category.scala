@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Category extends js.Object {
+trait Category extends StObject {
   
   var category: scala.Double = js.native
   
@@ -69,69 +70,57 @@ object Category {
   }
   
   @scala.inline
-  implicit class CategoryOps[Self <: Category] (val x: Self) extends AnyVal {
+  implicit class CategoryMutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: scala.Double): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContributionType(value: scala.Double): Self = StObject.set(x, "contributionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: scala.Double): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: scala.Double): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setExcludeWithFlags(value: scala.Double): Self = StObject.set(x, "excludeWithFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContributionType(value: scala.Double): Self = this.set("contributionType", value.asInstanceOf[js.Any])
+    def setFeatured(value: scala.Double): Self = StObject.set(x, "featured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: scala.Double): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setFeaturedInCategory(value: scala.Double): Self = StObject.set(x, "featuredInCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeWithFlags(value: scala.Double): Self = this.set("excludeWithFlags", value.asInstanceOf[js.Any])
+    def setId(value: scala.Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatured(value: scala.Double): Self = this.set("featured", value.asInstanceOf[js.Any])
+    def setIncludeWithFlags(value: scala.Double): Self = StObject.set(x, "includeWithFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeaturedInCategory(value: scala.Double): Self = this.set("featuredInCategory", value.asInstanceOf[js.Any])
+    def setInstallationTarget(value: scala.Double): Self = StObject.set(x, "installationTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: scala.Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInstallationTargetVersion(value: scala.Double): Self = StObject.set(x, "installationTargetVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeWithFlags(value: scala.Double): Self = this.set("includeWithFlags", value.asInstanceOf[js.Any])
+    def setInstallationTargetVersionRange(value: scala.Double): Self = StObject.set(x, "installationTargetVersionRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallationTarget(value: scala.Double): Self = this.set("installationTarget", value.asInstanceOf[js.Any])
+    def setLcid(value: scala.Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallationTargetVersion(value: scala.Double): Self = this.set("installationTargetVersion", value.asInstanceOf[js.Any])
+    def setName(value: scala.Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallationTargetVersionRange(value: scala.Double): Self = this.set("installationTargetVersionRange", value.asInstanceOf[js.Any])
+    def setPrivate(value: scala.Double): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLcid(value: scala.Double): Self = this.set("lcid", value.asInstanceOf[js.Any])
+    def setSearchText(value: scala.Double): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: scala.Double): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTag(value: scala.Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivate(value: scala.Double): Self = this.set("private", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchText(value: scala.Double): Self = this.set("searchText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTag(value: scala.Double): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVsixMetadata(value: scala.Double): Self = this.set("vsixMetadata", value.asInstanceOf[js.Any])
+    def setVsixMetadata(value: scala.Double): Self = StObject.set(x, "vsixMetadata", value.asInstanceOf[js.Any])
   }
 }

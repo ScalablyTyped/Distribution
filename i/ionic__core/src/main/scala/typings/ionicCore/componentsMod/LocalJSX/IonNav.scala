@@ -5,12 +5,13 @@ import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.navInterfaceMod.NavComponent
 import typings.std.CustomEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonNav extends js.Object {
+trait IonNav extends StObject {
   
   /**
     * If `true`, the nav should animate the transition of components.
@@ -56,63 +57,51 @@ object IonNav {
   }
   
   @scala.inline
-  implicit class IonNavOps[Self <: IonNav] (val x: Self) extends AnyVal {
+  implicit class IonNavMutableBuilder[Self <: IonNav] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "animation", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def deleteAnimated: Self = this.set("animated", js.undefined)
+    def setOnIonNavDidChange(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonNavDidChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = this.set("animation", js.Any.fromFunction2(value))
+    def setOnIonNavDidChangeUndefined: Self = StObject.set(x, "onIonNavDidChange", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setOnIonNavWillChange(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonNavWillChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonNavDidChange(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonNavDidChange", js.Any.fromFunction1(value))
+    def setOnIonNavWillChangeUndefined: Self = StObject.set(x, "onIonNavWillChange", js.undefined)
     
     @scala.inline
-    def deleteOnIonNavDidChange: Self = this.set("onIonNavDidChange", js.undefined)
+    def setRoot(value: NavComponent): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnIonNavWillChange(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonNavWillChange", js.Any.fromFunction1(value))
+    def setRootNull: Self = StObject.set(x, "root", null)
     
     @scala.inline
-    def deleteOnIonNavWillChange: Self = this.set("onIonNavWillChange", js.undefined)
+    def setRootParams(value: ComponentProps[Null]): Self = StObject.set(x, "rootParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: NavComponent): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setRootParamsUndefined: Self = StObject.set(x, "rootParams", js.undefined)
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def setRootNull: Self = this.set("root", null)
+    def setSwipeGesture(value: Boolean): Self = StObject.set(x, "swipeGesture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootParams(value: ComponentProps[Null]): Self = this.set("rootParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRootParams: Self = this.set("rootParams", js.undefined)
-    
-    @scala.inline
-    def setSwipeGesture(value: Boolean): Self = this.set("swipeGesture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSwipeGesture: Self = this.set("swipeGesture", js.undefined)
+    def setSwipeGestureUndefined: Self = StObject.set(x, "swipeGesture", js.undefined)
   }
 }

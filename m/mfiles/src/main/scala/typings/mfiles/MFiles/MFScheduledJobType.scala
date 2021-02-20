@@ -11,6 +11,7 @@ import typings.mfiles.mfilesNumbers.`6`
 import typings.mfiles.mfilesNumbers.`7`
 import typings.mfiles.mfilesNumbers.`8`
 import typings.mfiles.mfilesNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mfiles.mfilesNumbers.`9`
   - typings.mfiles.mfilesNumbers.`10`
 */
-trait MFScheduledJobType extends js.Object
+trait MFScheduledJobType extends StObject
 object MFScheduledJobType {
   
   @scala.inline

@@ -1,18 +1,20 @@
 package typings.dateFns
 
 import typings.dateFns.anon.UseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/isMatch/index", JSImport.Namespace)
-@js.native
-object dateFnsIsMatchIndexMod extends js.Object {
+object dateFnsIsMatchIndexMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/isMatch/index", JSImport.Default)
+    @js.native
     def apply(dateString: String, formatString: String): Boolean = js.native
+    @JSImport("date-fns/isMatch/index", JSImport.Default)
+    @js.native
     def apply(
       dateString: String,
       formatString: String,

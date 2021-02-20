@@ -9,12 +9,13 @@ import typings.mjmlReact.mjmlReactStrings.inherit
 import typings.mjmlReact.mjmlReactStrings.initial
 import typings.mjmlReact.mjmlReactStrings.left
 import typings.mjmlReact.mjmlReactStrings.right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MjmlTableProps extends js.Object {
+trait MjmlTableProps extends StObject {
   
   var align: js.UndefOr[left | right | center] = js.native
   
@@ -47,84 +48,72 @@ object MjmlTableProps {
   }
   
   @scala.inline
-  implicit class MjmlTablePropsOps[Self <: MjmlTableProps] (val x: Self) extends AnyVal {
+  implicit class MjmlTablePropsMutableBuilder[Self <: MjmlTableProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: left | right | center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellpadding(value: String): Self = StObject.set(x, "cellpadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: left | right | center): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setCellpaddingUndefined: Self = StObject.set(x, "cellpadding", js.undefined)
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setCellspacing(value: String): Self = StObject.set(x, "cellspacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellpadding(value: String): Self = this.set("cellpadding", value.asInstanceOf[js.Any])
+    def setCellspacingUndefined: Self = StObject.set(x, "cellspacing", js.undefined)
     
     @scala.inline
-    def deleteCellpadding: Self = this.set("cellpadding", js.undefined)
+    def setColor(value: ColorProperty): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellspacing(value: String): Self = this.set("cellspacing", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteCellspacing: Self = this.set("cellspacing", js.undefined)
+    def setContainerBackgroundColor(value: BackgroundColorProperty): Self = StObject.set(x, "containerBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: ColorProperty): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setContainerBackgroundColorUndefined: Self = StObject.set(x, "containerBackgroundColor", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerBackgroundColor(value: BackgroundColorProperty): Self = this.set("containerBackgroundColor", value.asInstanceOf[js.Any])
+    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
     @scala.inline
-    def deleteContainerBackgroundColor: Self = this.set("containerBackgroundColor", js.undefined)
+    def setFontSize(value: String | Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: String | Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setLineHeight(value: String | Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStyle(value: String): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
     @scala.inline
-    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    def setTableLayout(value: auto | fixed | initial | inherit): Self = StObject.set(x, "tableLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineHeight(value: String | Double): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    def setTableLayoutUndefined: Self = StObject.set(x, "tableLayout", js.undefined)
     
     @scala.inline
-    def deleteLineHeight: Self = this.set("lineHeight", js.undefined)
+    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableLayout(value: auto | fixed | initial | inherit): Self = this.set("tableLayout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableLayout: Self = this.set("tableLayout", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

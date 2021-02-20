@@ -1,17 +1,18 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait IconSet extends js.Object
+sealed trait IconSet extends StObject
 /**
   * [Api set: ExcelApi 1.2]
   */
 @JSGlobal("Excel.IconSet")
 @js.native
-object IconSet extends js.Object {
+object IconSet extends StObject {
   
   @js.native
   sealed trait fiveArrows extends IconSet

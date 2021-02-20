@@ -51,6 +51,7 @@ import typings.stripe.stripeStrings.validated
 import typings.stripe.stripeStrings.verification_failed
 import typings.stripe.stripeStrings.verified
 import typings.stripe.stripeStrings.wechat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,25 +63,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.stripe.mod.bankAccounts.IBankAccount
   - typings.stripe.mod.sources.ISource
 */
-trait IStripeSource extends js.Object
+trait IStripeSource extends StObject
 object IStripeSource {
   
   @scala.inline
-  def ICard(
-    brand: Visa | (`American Express`) | MasterCard | Discover | JCB | (`Diners Club`) | Unknown,
+  def IBankAccount(
+    bank_name: String,
     country: String,
-    cvc_check: pass | fail | unavailable | unchecked,
-    exp_month: Double,
-    exp_year: Double,
+    currency: String,
     fingerprint: String,
-    funding: credit | debit | prepaid | unknown_,
     id: String,
     last4: String,
-    `object`: card
-  ): IStripeSource = {
-    val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], cvc_check = cvc_check.asInstanceOf[js.Any], exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], funding = funding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any])
+    metadata: IMetadata,
+    `object`: bank_account,
+    routing_number: String,
+    status: `new` | validated | verified | verification_failed | errored
+  ): typings.stripe.mod.bankAccounts.IBankAccount = {
+    val __obj = js.Dynamic.literal(bank_name = bank_name.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], routing_number = routing_number.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IStripeSource]
+    __obj.asInstanceOf[typings.stripe.mod.bankAccounts.IBankAccount]
   }
   
   @scala.inline
@@ -107,28 +108,28 @@ object IStripeSource {
     transactions: IList[IBitcoinTransaction],
     uncaptured_funds: Boolean,
     used_for_payment: Boolean
-  ): IStripeSource = {
+  ): typings.stripe.mod.bitcoinReceivers.IBitcoinReceiver = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any], amount_received = amount_received.asInstanceOf[js.Any], bitcoin_amount = bitcoin_amount.asInstanceOf[js.Any], bitcoin_amount_received = bitcoin_amount_received.asInstanceOf[js.Any], bitcoin_uri = bitcoin_uri.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], filled = filled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inbound_address = inbound_address.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], payment = payment.asInstanceOf[js.Any], refund_address = refund_address.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any], uncaptured_funds = uncaptured_funds.asInstanceOf[js.Any], used_for_payment = used_for_payment.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IStripeSource]
+    __obj.asInstanceOf[typings.stripe.mod.bitcoinReceivers.IBitcoinReceiver]
   }
   
   @scala.inline
-  def IBankAccount(
-    bank_name: String,
+  def ICard(
+    brand: Visa | (`American Express`) | MasterCard | Discover | JCB | (`Diners Club`) | Unknown,
     country: String,
-    currency: String,
+    cvc_check: pass | fail | unavailable | unchecked,
+    exp_month: Double,
+    exp_year: Double,
     fingerprint: String,
+    funding: credit | debit | prepaid | unknown_,
     id: String,
     last4: String,
-    metadata: IMetadata,
-    `object`: bank_account,
-    routing_number: String,
-    status: `new` | validated | verified | verification_failed | errored
-  ): IStripeSource = {
-    val __obj = js.Dynamic.literal(bank_name = bank_name.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], routing_number = routing_number.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    `object`: card
+  ): typings.stripe.mod.cards.ICard = {
+    val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], cvc_check = cvc_check.asInstanceOf[js.Any], exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], funding = funding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IStripeSource]
+    __obj.asInstanceOf[typings.stripe.mod.cards.ICard]
   }
   
   @scala.inline
@@ -144,10 +145,10 @@ object IStripeSource {
     status: canceled | chargeable | consumed | failed | pending,
     `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | card_present | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | three_d_secure | wechat,
     usage: reusable | single_use
-  ): IStripeSource = {
+  ): typings.stripe.mod.sources.ISource = {
     val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], flow = flow.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IStripeSource]
+    __obj.asInstanceOf[typings.stripe.mod.sources.ISource]
   }
 }

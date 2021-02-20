@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OMathAutoCorrect extends js.Object {
+trait OMathAutoCorrect extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -43,42 +44,30 @@ object OMathAutoCorrect {
   }
   
   @scala.inline
-  implicit class OMathAutoCorrectOps[Self <: OMathAutoCorrect] (val x: Self) extends AnyVal {
+  implicit class OMathAutoCorrectMutableBuilder[Self <: OMathAutoCorrect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntries(value: OMathAutoCorrectEntries): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setFunctions(value: OMathRecognizedFunctions): Self = StObject.set(x, "Functions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntries(value: OMathAutoCorrectEntries): Self = this.set("Entries", value.asInstanceOf[js.Any])
+    def setReplaceText(value: Boolean): Self = StObject.set(x, "ReplaceText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctions(value: OMathRecognizedFunctions): Self = this.set("Functions", value.asInstanceOf[js.Any])
+    def setUseOutsideOMath(value: Boolean): Self = StObject.set(x, "UseOutsideOMath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReplaceText(value: Boolean): Self = this.set("ReplaceText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseOutsideOMath(value: Boolean): Self = this.set("UseOutsideOMath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotOMathAutoCorrect_typekey(value: OMathAutoCorrect): Self = this.set("Word.OMathAutoCorrect_typekey", value.asInstanceOf[js.Any])
+    def setWordDotOMathAutoCorrect_typekey(value: OMathAutoCorrect): Self = StObject.set(x, "Word.OMathAutoCorrect_typekey", value.asInstanceOf[js.Any])
   }
 }

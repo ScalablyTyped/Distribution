@@ -5,16 +5,16 @@ import typings.firebaseDatabase.indexMod.Index
 import typings.firebaseDatabase.nodeMod.NamedNode
 import typings.firebaseDatabase.nodeMod.Node
 import typings.firebaseDatabase.sortedMapMod.SortedMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/snap/IndexMap", JSImport.Namespace)
-@js.native
-object indexMapMod extends js.Object {
+object indexMapMod {
   
+  @JSImport("@firebase/database/dist/src/core/snap/IndexMap", "IndexMap")
   @js.native
-  class IndexMap protected () extends js.Object {
+  class IndexMap protected () extends StObject {
     def this(
       indexes_ : StringDictionary[(SortedMap[NamedNode, Node]) | (/*FallbackType*/ js.Object)],
       indexSet_ : StringDictionary[Index]
@@ -39,14 +39,5 @@ object indexMapMod extends js.Object {
       * Create a new IndexMap instance with the given value removed
       */
     def removeFromIndexes(namedNode: NamedNode, existingChildren: SortedMap[String, Node]): IndexMap = js.native
-  }
-  /* static members */
-  @js.native
-  object IndexMap extends js.Object {
-    
-    /**
-      * The default IndexMap for nodes without a priority
-      */
-    def Default: IndexMap = js.native
   }
 }

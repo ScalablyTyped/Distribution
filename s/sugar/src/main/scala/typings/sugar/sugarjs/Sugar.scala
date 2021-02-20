@@ -4,12 +4,13 @@ import typings.std.ArrayLike
 import typings.sugar.sugarjs.Array.Chainable
 import typings.sugar.sugarjs.Array.Constructor
 import typings.sugar.sugarjs.Date.DateCreateOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sugar extends js.Object {
+trait Sugar extends StObject {
   
   def apply(): Sugar = js.native
   def apply(opts: ExtendOptions): Sugar = js.native

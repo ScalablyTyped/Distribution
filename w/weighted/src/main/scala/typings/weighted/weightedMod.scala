@@ -1,22 +1,31 @@
 package typings.weighted
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("weighted/lib/weighted", JSImport.Namespace)
-@js.native
-object weightedMod extends js.Object {
+object weightedMod {
   
+  @JSImport("weighted/lib/weighted", JSImport.Namespace)
+  @js.native
   def apply(obj: StringDictionary[Double]): String = js.native
+  @JSImport("weighted/lib/weighted", JSImport.Namespace)
+  @js.native
   def apply(obj: StringDictionary[Double], rand: RandomFunc): String = js.native
   /**
     * Weighted returns a Function additionally available as `weighted.select`
     */
+  @JSImport("weighted/lib/weighted", JSImport.Namespace)
+  @js.native
   def apply[T](set: js.Array[T], weights: js.Array[Double]): T = js.native
+  @JSImport("weighted/lib/weighted", JSImport.Namespace)
+  @js.native
   def apply[T](set: js.Array[T], weights: js.Array[Double], rand: RandomFunc): T = js.native
   
+  @JSImport("weighted/lib/weighted", "select")
+  @js.native
   val select: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof weighted */ js.Any = js.native
   
   type RandomFunc = js.Function0[Double]

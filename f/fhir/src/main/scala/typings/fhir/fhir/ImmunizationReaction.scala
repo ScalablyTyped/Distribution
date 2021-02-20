@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,48 +45,36 @@ object ImmunizationReaction {
   }
   
   @scala.inline
-  implicit class ImmunizationReactionOps[Self <: ImmunizationReaction] (val x: Self) extends AnyVal {
+  implicit class ImmunizationReactionMutableBuilder[Self <: ImmunizationReaction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: dateTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetail(value: Reference): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_date(value: Element): Self = this.set("_date", value.asInstanceOf[js.Any])
+    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
     @scala.inline
-    def delete_date: Self = this.set("_date", js.undefined)
+    def setReported(value: Boolean): Self = StObject.set(x, "reported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_reported(value: Element): Self = this.set("_reported", value.asInstanceOf[js.Any])
+    def setReportedUndefined: Self = StObject.set(x, "reported", js.undefined)
     
     @scala.inline
-    def delete_reported: Self = this.set("_reported", js.undefined)
+    def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: dateTime): Self = this.set("date", value.asInstanceOf[js.Any])
+    def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def set_reported(value: Element): Self = StObject.set(x, "_reported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetail(value: Reference): Self = this.set("detail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetail: Self = this.set("detail", js.undefined)
-    
-    @scala.inline
-    def setReported(value: Boolean): Self = this.set("reported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReported: Self = this.set("reported", js.undefined)
+    def set_reportedUndefined: Self = StObject.set(x, "_reported", js.undefined)
   }
 }

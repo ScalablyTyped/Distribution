@@ -1,6 +1,7 @@
 package typings.saucelabs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,33 +23,21 @@ object PaginationResultSessionReport {
   }
   
   @scala.inline
-  implicit class PaginationResultSessionReportOps[Self <: PaginationResultSessionReport] (val x: Self) extends AnyVal {
+  implicit class PaginationResultSessionReportMutableBuilder[Self <: PaginationResultSessionReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntities(value: js.Array[SessionReport]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntitiesVarargs(value: SessionReport*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
     @scala.inline
-    def setEntitiesVarargs(value: SessionReport*): Self = this.set("entities", js.Array(value :_*))
+    def setMetaData(value: PaginationSettings): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntities(value: js.Array[SessionReport]): Self = this.set("entities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntities: Self = this.set("entities", js.undefined)
-    
-    @scala.inline
-    def setMetaData(value: PaginationSettings): Self = this.set("metaData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetaData: Self = this.set("metaData", js.undefined)
+    def setMetaDataUndefined: Self = StObject.set(x, "metaData", js.undefined)
   }
 }

@@ -3,12 +3,13 @@ package typings.rollup.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.rollup.rollupBooleans.`false`
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputOptions extends js.Object {
+trait InputOptions extends StObject {
   
   var acorn: js.UndefOr[js.Object] = js.native
   
@@ -64,161 +65,149 @@ object InputOptions {
   }
   
   @scala.inline
-  implicit class InputOptionsOps[Self <: InputOptions] (val x: Self) extends AnyVal {
+  implicit class InputOptionsMutableBuilder[Self <: InputOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcorn(value: js.Object): Self = StObject.set(x, "acorn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcornInjectPlugins(value: js.Function | js.Array[js.Function]): Self = StObject.set(x, "acornInjectPlugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcornInjectPluginsUndefined: Self = StObject.set(x, "acornInjectPlugins", js.undefined)
     
     @scala.inline
-    def setAcorn(value: js.Object): Self = this.set("acorn", value.asInstanceOf[js.Any])
+    def setAcornInjectPluginsVarargs(value: js.Function*): Self = StObject.set(x, "acornInjectPlugins", js.Array(value :_*))
     
     @scala.inline
-    def deleteAcorn: Self = this.set("acorn", js.undefined)
+    def setAcornUndefined: Self = StObject.set(x, "acorn", js.undefined)
     
     @scala.inline
-    def setAcornInjectPluginsVarargs(value: js.Function*): Self = this.set("acornInjectPlugins", js.Array(value :_*))
+    def setCache(value: `false` | RollupCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcornInjectPlugins(value: js.Function | js.Array[js.Function]): Self = this.set("acornInjectPlugins", value.asInstanceOf[js.Any])
+    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
     @scala.inline
-    def deleteAcornInjectPlugins: Self = this.set("acornInjectPlugins", js.undefined)
+    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCache(value: `false` | RollupCache): Self = this.set("cache", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteCache: Self = this.set("cache", js.undefined)
+    def setExperimentalCacheExpiry(value: Double): Self = StObject.set(x, "experimentalCacheExpiry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setExperimentalCacheExpiryUndefined: Self = StObject.set(x, "experimentalCacheExpiry", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
-    
-    @scala.inline
-    def setExperimentalCacheExpiry(value: Double): Self = this.set("experimentalCacheExpiry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExperimentalCacheExpiry: Self = this.set("experimentalCacheExpiry", js.undefined)
-    
-    @scala.inline
-    def setExternalVarargs(value: (String | RegExp)*): Self = this.set("external", js.Array(value :_*))
+    def setExternal(value: ExternalOption): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExternalFunction3(
       value: (/* source */ String, /* importer */ js.UndefOr[String], /* isResolved */ Boolean) => js.UndefOr[Boolean | Null]
-    ): Self = this.set("external", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "external", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setExternal(value: ExternalOption): Self = this.set("external", value.asInstanceOf[js.Any])
+    def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
     
     @scala.inline
-    def deleteExternal: Self = this.set("external", js.undefined)
+    def setExternalVarargs(value: (String | RegExp)*): Self = StObject.set(x, "external", js.Array(value :_*))
     
     @scala.inline
-    def setInlineDynamicImports(value: Boolean): Self = this.set("inlineDynamicImports", value.asInstanceOf[js.Any])
+    def setInlineDynamicImports(value: Boolean): Self = StObject.set(x, "inlineDynamicImports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInlineDynamicImports: Self = this.set("inlineDynamicImports", js.undefined)
+    def setInlineDynamicImportsUndefined: Self = StObject.set(x, "inlineDynamicImports", js.undefined)
     
     @scala.inline
-    def setInputVarargs(value: String*): Self = this.set("input", js.Array(value :_*))
+    def setInput(value: InputOption): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: InputOption): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value :_*))
     
     @scala.inline
-    def setManualChunksFunction2(value: (/* id */ String, /* api */ GetManualChunkApi) => js.UndefOr[String | Null]): Self = this.set("manualChunks", js.Any.fromFunction2(value))
+    def setManualChunks(value: ManualChunksOption): Self = StObject.set(x, "manualChunks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualChunks(value: ManualChunksOption): Self = this.set("manualChunks", value.asInstanceOf[js.Any])
+    def setManualChunksFunction2(value: (/* id */ String, /* api */ GetManualChunkApi) => js.UndefOr[String | Null]): Self = StObject.set(x, "manualChunks", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteManualChunks: Self = this.set("manualChunks", js.undefined)
+    def setManualChunksUndefined: Self = StObject.set(x, "manualChunks", js.undefined)
     
     @scala.inline
-    def setModuleContextFunction1(value: /* id */ String => js.UndefOr[String | Null]): Self = this.set("moduleContext", js.Any.fromFunction1(value))
+    def setModuleContext(value: (js.Function1[/* id */ String, js.UndefOr[String | Null]]) | StringDictionary[String]): Self = StObject.set(x, "moduleContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModuleContext(value: (js.Function1[/* id */ String, js.UndefOr[String | Null]]) | StringDictionary[String]): Self = this.set("moduleContext", value.asInstanceOf[js.Any])
+    def setModuleContextFunction1(value: /* id */ String => js.UndefOr[String | Null]): Self = StObject.set(x, "moduleContext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteModuleContext: Self = this.set("moduleContext", js.undefined)
+    def setModuleContextUndefined: Self = StObject.set(x, "moduleContext", js.undefined)
     
     @scala.inline
-    def setOnwarn(value: (/* warning */ RollupWarning, /* defaultHandler */ WarningHandler) => Unit): Self = this.set("onwarn", js.Any.fromFunction2(value))
+    def setOnwarn(value: (/* warning */ RollupWarning, /* defaultHandler */ WarningHandler) => Unit): Self = StObject.set(x, "onwarn", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnwarn: Self = this.set("onwarn", js.undefined)
+    def setOnwarnUndefined: Self = StObject.set(x, "onwarn", js.undefined)
     
     @scala.inline
-    def setPerf(value: Boolean): Self = this.set("perf", value.asInstanceOf[js.Any])
+    def setPerf(value: Boolean): Self = StObject.set(x, "perf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePerf: Self = this.set("perf", js.undefined)
+    def setPerfUndefined: Self = StObject.set(x, "perf", js.undefined)
     
     @scala.inline
-    def setPluginsVarargs(value: Plugin*): Self = this.set("plugins", js.Array(value :_*))
+    def setPlugins(value: js.Array[Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlugins(value: js.Array[Plugin]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
     @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
+    def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     
     @scala.inline
-    def setPreserveEntrySignatures(value: PreserveEntrySignaturesOption): Self = this.set("preserveEntrySignatures", value.asInstanceOf[js.Any])
+    def setPreserveEntrySignatures(value: PreserveEntrySignaturesOption): Self = StObject.set(x, "preserveEntrySignatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreserveEntrySignatures: Self = this.set("preserveEntrySignatures", js.undefined)
+    def setPreserveEntrySignaturesUndefined: Self = StObject.set(x, "preserveEntrySignatures", js.undefined)
     
     @scala.inline
-    def setPreserveModules(value: Boolean): Self = this.set("preserveModules", value.asInstanceOf[js.Any])
+    def setPreserveModules(value: Boolean): Self = StObject.set(x, "preserveModules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreserveModules: Self = this.set("preserveModules", js.undefined)
+    def setPreserveModulesUndefined: Self = StObject.set(x, "preserveModules", js.undefined)
     
     @scala.inline
-    def setPreserveSymlinks(value: Boolean): Self = this.set("preserveSymlinks", value.asInstanceOf[js.Any])
+    def setPreserveSymlinks(value: Boolean): Self = StObject.set(x, "preserveSymlinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreserveSymlinks: Self = this.set("preserveSymlinks", js.undefined)
+    def setPreserveSymlinksUndefined: Self = StObject.set(x, "preserveSymlinks", js.undefined)
     
     @scala.inline
-    def setShimMissingExports(value: Boolean): Self = this.set("shimMissingExports", value.asInstanceOf[js.Any])
+    def setShimMissingExports(value: Boolean): Self = StObject.set(x, "shimMissingExports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShimMissingExports: Self = this.set("shimMissingExports", js.undefined)
+    def setShimMissingExportsUndefined: Self = StObject.set(x, "shimMissingExports", js.undefined)
     
     @scala.inline
-    def setStrictDeprecations(value: Boolean): Self = this.set("strictDeprecations", value.asInstanceOf[js.Any])
+    def setStrictDeprecations(value: Boolean): Self = StObject.set(x, "strictDeprecations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStrictDeprecations: Self = this.set("strictDeprecations", js.undefined)
+    def setStrictDeprecationsUndefined: Self = StObject.set(x, "strictDeprecations", js.undefined)
     
     @scala.inline
-    def setTreeshake(value: Boolean | TreeshakingOptions): Self = this.set("treeshake", value.asInstanceOf[js.Any])
+    def setTreeshake(value: Boolean | TreeshakingOptions): Self = StObject.set(x, "treeshake", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTreeshake: Self = this.set("treeshake", js.undefined)
+    def setTreeshakeUndefined: Self = StObject.set(x, "treeshake", js.undefined)
     
     @scala.inline
-    def setWatch(value: WatcherOptions | `false`): Self = this.set("watch", value.asInstanceOf[js.Any])
+    def setWatch(value: WatcherOptions | `false`): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWatch: Self = this.set("watch", js.undefined)
+    def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
   }
 }

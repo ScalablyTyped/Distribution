@@ -1,11 +1,12 @@
 package typings.hapiHapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthSettings extends js.Object {
+trait AuthSettings extends StObject {
   
   var access: js.UndefOr[js.Array[AccessSetting]] = js.native
   
@@ -22,36 +23,24 @@ object AuthSettings {
   }
   
   @scala.inline
-  implicit class AuthSettingsOps[Self <: AuthSettings] (val x: Self) extends AnyVal {
+  implicit class AuthSettingsMutableBuilder[Self <: AuthSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccess(value: js.Array[AccessSetting]): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessVarargs(value: AccessSetting*): Self = StObject.set(x, "access", js.Array(value :_*))
     
     @scala.inline
-    def setMode(value: AuthMode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setMode(value: AuthMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrategiesVarargs(value: String*): Self = this.set("strategies", js.Array(value :_*))
+    def setStrategies(value: js.Array[String]): Self = StObject.set(x, "strategies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrategies(value: js.Array[String]): Self = this.set("strategies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAccessVarargs(value: AccessSetting*): Self = this.set("access", js.Array(value :_*))
-    
-    @scala.inline
-    def setAccess(value: js.Array[AccessSetting]): Self = this.set("access", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccess: Self = this.set("access", js.undefined)
+    def setStrategiesVarargs(value: String*): Self = StObject.set(x, "strategies", js.Array(value :_*))
   }
 }

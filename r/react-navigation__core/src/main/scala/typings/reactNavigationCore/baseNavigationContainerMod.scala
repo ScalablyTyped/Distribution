@@ -1,16 +1,16 @@
 package typings.reactNavigationCore
 
+import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactNavigationCore.typesMod.NavigationContainerProps
 import typings.reactNavigationCore.typesMod.NavigationContainerRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-navigation/core/lib/typescript/src/BaseNavigationContainer", JSImport.Namespace)
-@js.native
-object baseNavigationContainerMod extends js.Object {
+object baseNavigationContainerMod extends Shortcut {
   
   /**
     * Container component which holds the navigation state.
@@ -21,5 +21,12 @@ object baseNavigationContainerMod extends js.Object {
     * @param props.children Child elements to render the content.
     * @param props.ref Ref object which refers to the navigation object containing helper methods.
     */
+  @JSImport("@react-navigation/core/lib/typescript/src/BaseNavigationContainer", JSImport.Default)
+  @js.native
   val default: ForwardRefExoticComponent[NavigationContainerProps with RefAttributes[NavigationContainerRef]] = js.native
+  
+  type _To = ForwardRefExoticComponent[NavigationContainerProps with RefAttributes[NavigationContainerRef]]
+  
+  /* This means you don't have to write `default`, but can instead just say `baseNavigationContainerMod.foo` */
+  override def _to: ForwardRefExoticComponent[NavigationContainerProps with RefAttributes[NavigationContainerRef]] = default
 }

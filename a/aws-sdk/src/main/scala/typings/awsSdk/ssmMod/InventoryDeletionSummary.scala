@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InventoryDeletionSummary extends js.Object {
+trait InventoryDeletionSummary extends StObject {
   
   /**
     * Remaining number of items to delete.
@@ -31,39 +32,27 @@ object InventoryDeletionSummary {
   }
   
   @scala.inline
-  implicit class InventoryDeletionSummaryOps[Self <: InventoryDeletionSummary] (val x: Self) extends AnyVal {
+  implicit class InventoryDeletionSummaryMutableBuilder[Self <: InventoryDeletionSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRemainingCount(value: RemainingCount): Self = StObject.set(x, "RemainingCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRemainingCountUndefined: Self = StObject.set(x, "RemainingCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSummaryItems(value: InventoryDeletionSummaryItems): Self = StObject.set(x, "SummaryItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemainingCount(value: RemainingCount): Self = this.set("RemainingCount", value.asInstanceOf[js.Any])
+    def setSummaryItemsUndefined: Self = StObject.set(x, "SummaryItems", js.undefined)
     
     @scala.inline
-    def deleteRemainingCount: Self = this.set("RemainingCount", js.undefined)
+    def setSummaryItemsVarargs(value: InventoryDeletionSummaryItem*): Self = StObject.set(x, "SummaryItems", js.Array(value :_*))
     
     @scala.inline
-    def setSummaryItemsVarargs(value: InventoryDeletionSummaryItem*): Self = this.set("SummaryItems", js.Array(value :_*))
+    def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummaryItems(value: InventoryDeletionSummaryItems): Self = this.set("SummaryItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummaryItems: Self = this.set("SummaryItems", js.undefined)
-    
-    @scala.inline
-    def setTotalCount(value: TotalCount): Self = this.set("TotalCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalCount: Self = this.set("TotalCount", js.undefined)
+    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
   }
 }

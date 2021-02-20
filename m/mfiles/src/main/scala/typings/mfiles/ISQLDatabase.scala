@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFDBEngine
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISQLDatabase extends js.Object {
+trait ISQLDatabase extends StObject {
   
   var AdminUser: IImpersonation = js.native
   
@@ -36,36 +37,24 @@ object ISQLDatabase {
   }
   
   @scala.inline
-  implicit class ISQLDatabaseOps[Self <: ISQLDatabase] (val x: Self) extends AnyVal {
+  implicit class ISQLDatabaseMutableBuilder[Self <: ISQLDatabase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminUser(value: IImpersonation): Self = StObject.set(x, "AdminUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasicUser(value: IImpersonation): Self = StObject.set(x, "BasicUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClone(value: () => ISQLDatabase): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdminUser(value: IImpersonation): Self = this.set("AdminUser", value.asInstanceOf[js.Any])
+    def setEngine(value: MFDBEngine): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasicUser(value: IImpersonation): Self = this.set("BasicUser", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => ISQLDatabase): Self = this.set("Clone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setEngine(value: MFDBEngine): Self = this.set("Engine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServer(value: String): Self = this.set("Server", value.asInstanceOf[js.Any])
+    def setServer(value: String): Self = StObject.set(x, "Server", value.asInstanceOf[js.Any])
   }
 }

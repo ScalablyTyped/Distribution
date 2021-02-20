@@ -20,12 +20,13 @@ import typings.activexOutlook.Outlook.OlkTextBox
 import typings.activexOutlook.Outlook.OlkTimeControl
 import typings.activexOutlook.Outlook.OlkTimeZoneControl
 import typings.activexOutlook.Outlook.RecipientControl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveXObjectNameMap extends js.Object {
+trait ActiveXObjectNameMap extends StObject {
   
   @JSName("DOCSITE.DocSiteControl")
   var DOCSITEDotDocSiteControl: DocSiteControl = js.native
@@ -137,78 +138,66 @@ object ActiveXObjectNameMap {
   }
   
   @scala.inline
-  implicit class ActiveXObjectNameMapOps[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDOCSITEDotDocSiteControl(value: DocSiteControl): Self = StObject.set(x, "DOCSITE.DocSiteControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOutlookDotApplication(value: Application): Self = StObject.set(x, "Outlook.Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutlookDotOlkBusinessCardControl(value: OlkBusinessCardControl): Self = StObject.set(x, "Outlook.OlkBusinessCardControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDOCSITEDotDocSiteControl(value: DocSiteControl): Self = this.set("DOCSITE.DocSiteControl", value.asInstanceOf[js.Any])
+    def setOutlookDotOlkCategoryStrip(value: OlkCategory): Self = StObject.set(x, "Outlook.OlkCategoryStrip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotApplication(value: Application): Self = this.set("Outlook.Application", value.asInstanceOf[js.Any])
+    def setOutlookDotOlkCheckBox(value: OlkCheckBox): Self = StObject.set(x, "Outlook.OlkCheckBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotOlkBusinessCardControl(value: OlkBusinessCardControl): Self = this.set("Outlook.OlkBusinessCardControl", value.asInstanceOf[js.Any])
+    def setOutlookDotOlkComboBox(value: OlkComboBox): Self = StObject.set(x, "Outlook.OlkComboBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotOlkCategoryStrip(value: OlkCategory): Self = this.set("Outlook.OlkCategoryStrip", value.asInstanceOf[js.Any])
+    def setOutlookDotOlkCommandButton(value: OlkCommandButton): Self = StObject.set(x, "Outlook.OlkCommandButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotOlkCheckBox(value: OlkCheckBox): Self = this.set("Outlook.OlkCheckBox", value.asInstanceOf[js.Any])
+    def setOutlookDotOlkContactPhoto(value: OlkContactPhoto): Self = StObject.set(x, "Outlook.OlkContactPhoto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotOlkComboBox(value: OlkComboBox): Self = this.set("Outlook.OlkComboBox", value.asInstanceOf[js.Any])
+    def setOutlookDotOlkDateControl(value: OlkDateControl): Self = StObject.set(x, "Outlook.OlkDateControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotOlkCommandButton(value: OlkCommandButton): Self = this.set("Outlook.OlkCommandButton", value.asInstanceOf[js.Any])
+    def setOutlookDotOlkFrameHeader(value: OlkFrameHeader): Self = StObject.set(x, "Outlook.OlkFrameHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotOlkContactPhoto(value: OlkContactPhoto): Self = this.set("Outlook.OlkContactPhoto", value.asInstanceOf[js.Any])
+    def setOutlookDotOlkInfoBar(value: OlkInfoBar): Self = StObject.set(x, "Outlook.OlkInfoBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotOlkDateControl(value: OlkDateControl): Self = this.set("Outlook.OlkDateControl", value.asInstanceOf[js.Any])
+    def setOutlookDotOlkLabel(value: OlkLabel): Self = StObject.set(x, "Outlook.OlkLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotOlkFrameHeader(value: OlkFrameHeader): Self = this.set("Outlook.OlkFrameHeader", value.asInstanceOf[js.Any])
+    def setOutlookDotOlkListBox(value: OlkListBox): Self = StObject.set(x, "Outlook.OlkListBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotOlkInfoBar(value: OlkInfoBar): Self = this.set("Outlook.OlkInfoBar", value.asInstanceOf[js.Any])
+    def setOutlookDotOlkOptionButton(value: OlkOptionButton): Self = StObject.set(x, "Outlook.OlkOptionButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotOlkLabel(value: OlkLabel): Self = this.set("Outlook.OlkLabel", value.asInstanceOf[js.Any])
+    def setOutlookDotOlkPageControl(value: OlkPageControl): Self = StObject.set(x, "Outlook.OlkPageControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotOlkListBox(value: OlkListBox): Self = this.set("Outlook.OlkListBox", value.asInstanceOf[js.Any])
+    def setOutlookDotOlkSenderPhoto(value: OlkSenderPhoto): Self = StObject.set(x, "Outlook.OlkSenderPhoto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotOlkOptionButton(value: OlkOptionButton): Self = this.set("Outlook.OlkOptionButton", value.asInstanceOf[js.Any])
+    def setOutlookDotOlkTextBox(value: OlkTextBox): Self = StObject.set(x, "Outlook.OlkTextBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotOlkPageControl(value: OlkPageControl): Self = this.set("Outlook.OlkPageControl", value.asInstanceOf[js.Any])
+    def setOutlookDotOlkTimeControl(value: OlkTimeControl): Self = StObject.set(x, "Outlook.OlkTimeControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotOlkSenderPhoto(value: OlkSenderPhoto): Self = this.set("Outlook.OlkSenderPhoto", value.asInstanceOf[js.Any])
+    def setOutlookDotOlkTimeZone(value: OlkTimeZoneControl): Self = StObject.set(x, "Outlook.OlkTimeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotOlkTextBox(value: OlkTextBox): Self = this.set("Outlook.OlkTextBox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutlookDotOlkTimeControl(value: OlkTimeControl): Self = this.set("Outlook.OlkTimeControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutlookDotOlkTimeZone(value: OlkTimeZoneControl): Self = this.set("Outlook.OlkTimeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRECIPDotRecipCtl(value: RecipientControl): Self = this.set("RECIP.RecipCtl", value.asInstanceOf[js.Any])
+    def setRECIPDotRecipCtl(value: RecipientControl): Self = StObject.set(x, "RECIP.RecipCtl", value.asInstanceOf[js.Any])
   }
 }

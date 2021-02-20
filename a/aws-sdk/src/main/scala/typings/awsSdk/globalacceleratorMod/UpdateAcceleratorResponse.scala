@@ -1,11 +1,12 @@
 package typings.awsSdk.globalacceleratorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateAcceleratorResponse extends js.Object {
+trait UpdateAcceleratorResponse extends StObject {
   
   /**
     * Information about the updated accelerator.
@@ -21,24 +22,12 @@ object UpdateAcceleratorResponse {
   }
   
   @scala.inline
-  implicit class UpdateAcceleratorResponseOps[Self <: UpdateAcceleratorResponse] (val x: Self) extends AnyVal {
+  implicit class UpdateAcceleratorResponseMutableBuilder[Self <: UpdateAcceleratorResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccelerator(value: Accelerator): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccelerator(value: Accelerator): Self = this.set("Accelerator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccelerator: Self = this.set("Accelerator", js.undefined)
+    def setAcceleratorUndefined: Self = StObject.set(x, "Accelerator", js.undefined)
   }
 }

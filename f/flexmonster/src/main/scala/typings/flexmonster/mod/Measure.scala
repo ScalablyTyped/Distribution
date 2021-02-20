@@ -1,11 +1,12 @@
 package typings.flexmonster.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Measure extends js.Object {
+trait Measure extends StObject {
   
   var active: js.UndefOr[Boolean] = js.native
   
@@ -32,69 +33,57 @@ object Measure {
   }
   
   @scala.inline
-  implicit class MeasureOps[Self <: Measure] (val x: Self) extends AnyVal {
+  implicit class MeasureMutableBuilder[Self <: Measure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAggregation(value: String): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setAggregationUndefined: Self = StObject.set(x, "aggregation", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setAvailableAggregations(value: js.Array[String]): Self = StObject.set(x, "availableAggregations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregation(value: String): Self = this.set("aggregation", value.asInstanceOf[js.Any])
+    def setAvailableAggregationsUndefined: Self = StObject.set(x, "availableAggregations", js.undefined)
     
     @scala.inline
-    def deleteAggregation: Self = this.set("aggregation", js.undefined)
+    def setAvailableAggregationsVarargs(value: String*): Self = StObject.set(x, "availableAggregations", js.Array(value :_*))
     
     @scala.inline
-    def setAvailableAggregationsVarargs(value: String*): Self = this.set("availableAggregations", js.Array(value :_*))
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableAggregations(value: js.Array[String]): Self = this.set("availableAggregations", value.asInstanceOf[js.Any])
+    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
     @scala.inline
-    def deleteAvailableAggregations: Self = this.set("availableAggregations", js.undefined)
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteCaption: Self = this.set("caption", js.undefined)
+    def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setGrandTotalCaption(value: String): Self = StObject.set(x, "grandTotalCaption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormula(value: String): Self = this.set("formula", value.asInstanceOf[js.Any])
+    def setGrandTotalCaptionUndefined: Self = StObject.set(x, "grandTotalCaption", js.undefined)
     
     @scala.inline
-    def deleteFormula: Self = this.set("formula", js.undefined)
+    def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrandTotalCaption(value: String): Self = this.set("grandTotalCaption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGrandTotalCaption: Self = this.set("grandTotalCaption", js.undefined)
-    
-    @scala.inline
-    def setUniqueName(value: String): Self = this.set("uniqueName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniqueName: Self = this.set("uniqueName", js.undefined)
+    def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
   }
 }

@@ -1,15 +1,15 @@
 package typings.typesettable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typesettable/build/src/utils/cache", JSImport.Namespace)
-@js.native
-object cacheMod extends js.Object {
+object cacheMod {
   
+  @JSImport("typesettable/build/src/utils/cache", "Cache")
   @js.native
-  class Cache[T] protected () extends js.Object {
+  class Cache[T] protected () extends StObject {
     /**
       * @constructor
       *

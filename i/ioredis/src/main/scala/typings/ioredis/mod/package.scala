@@ -1,5 +1,6 @@
 package typings.ioredis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,8 +16,6 @@ package object mod {
   ]
   
   type ClusterNode = java.lang.String | scala.Double | typings.ioredis.mod.NodeConfiguration
-  
-  type Command = typings.ioredis.mod._Command
   
   type DNSLookupFunction = js.Function2[
     /* hostname */ java.lang.String, 
@@ -41,4 +40,13 @@ package object mod {
   ]) | js.Array[typings.ioredis.anon.Ip] | typings.ioredis.anon.Ip
   
   type ValueType = java.lang.String | typings.node.Buffer | scala.Double | js.Array[js.Any]
+  
+  // For backwards compatibility
+  type _Command = typings.ioredis.anon.TypeofCommand with (org.scalablytyped.runtime.Instantiable4[
+    /* name */ java.lang.String, 
+    /* args */ js.Array[typings.ioredis.mod.ValueType], 
+    /* opts */ js.UndefOr[typings.ioredis.mod.CommandOptions], 
+    /* callback */ js.UndefOr[js.Function2[/* err */ scala.Null, /* result */ js.Any, scala.Unit]], 
+    typings.ioredis.mod.Command
+  ])
 }

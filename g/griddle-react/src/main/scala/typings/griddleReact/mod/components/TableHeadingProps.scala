@@ -1,11 +1,12 @@
 package typings.griddleReact.mod.components
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableHeadingProps extends js.Object {
+trait TableHeadingProps extends StObject {
   
   var TableHeadingCell: js.Any = js.native
   
@@ -22,39 +23,27 @@ object TableHeadingProps {
   }
   
   @scala.inline
-  implicit class TableHeadingPropsOps[Self <: TableHeadingProps] (val x: Self) extends AnyVal {
+  implicit class TableHeadingPropsMutableBuilder[Self <: TableHeadingProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnIds(value: js.Array[Double]): Self = StObject.set(x, "columnIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnIdsUndefined: Self = StObject.set(x, "columnIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnIdsVarargs(value: Double*): Self = StObject.set(x, "columnIds", js.Array(value :_*))
     
     @scala.inline
-    def setTableHeadingCell(value: js.Any): Self = this.set("TableHeadingCell", value.asInstanceOf[js.Any])
+    def setColumnTitles(value: js.Array[String]): Self = StObject.set(x, "columnTitles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnIdsVarargs(value: Double*): Self = this.set("columnIds", js.Array(value :_*))
+    def setColumnTitlesUndefined: Self = StObject.set(x, "columnTitles", js.undefined)
     
     @scala.inline
-    def setColumnIds(value: js.Array[Double]): Self = this.set("columnIds", value.asInstanceOf[js.Any])
+    def setColumnTitlesVarargs(value: String*): Self = StObject.set(x, "columnTitles", js.Array(value :_*))
     
     @scala.inline
-    def deleteColumnIds: Self = this.set("columnIds", js.undefined)
-    
-    @scala.inline
-    def setColumnTitlesVarargs(value: String*): Self = this.set("columnTitles", js.Array(value :_*))
-    
-    @scala.inline
-    def setColumnTitles(value: js.Array[String]): Self = this.set("columnTitles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumnTitles: Self = this.set("columnTitles", js.undefined)
+    def setTableHeadingCell(value: js.Any): Self = StObject.set(x, "TableHeadingCell", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.reactJsonschemaForm.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,27 +23,15 @@ object FormValidation {
   }
   
   @scala.inline
-  implicit class FormValidationOps[Self <: FormValidation] (val x: Self) extends AnyVal {
+  implicit class FormValidationMutableBuilder[Self <: FormValidation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddError(value: String => Unit): Self = StObject.set(x, "addError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set__errors(value: js.Array[FieldError]): Self = StObject.set(x, "__errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set__errorsVarargs(value: FieldError*): Self = this.set("__errors", js.Array(value :_*))
-    
-    @scala.inline
-    def set__errors(value: js.Array[FieldError]): Self = this.set("__errors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAddError(value: String => Unit): Self = this.set("addError", js.Any.fromFunction1(value))
+    def set__errorsVarargs(value: FieldError*): Self = StObject.set(x, "__errors", js.Array(value :_*))
   }
 }

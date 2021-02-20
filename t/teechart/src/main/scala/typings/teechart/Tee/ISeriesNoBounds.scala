@@ -1,11 +1,12 @@
 package typings.teechart.Tee
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISeriesNoBounds extends js.Object {
+trait ISeriesNoBounds extends StObject {
   
   def addRandom(count: Double): ISeries = js.native
   def addRandom(count: Double, range: js.UndefOr[scala.Nothing], x: Boolean): ISeries = js.native

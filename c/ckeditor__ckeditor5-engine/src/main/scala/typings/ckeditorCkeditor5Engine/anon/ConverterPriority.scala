@@ -1,12 +1,13 @@
 package typings.ckeditorCkeditor5Engine.anon
 
 import typings.ckeditorCkeditor5Utils.mod.PriorityString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConverterPriority extends js.Object {
+trait ConverterPriority extends StObject {
   
   var converterPriority: js.UndefOr[PriorityString] = js.native
   
@@ -23,30 +24,18 @@ object ConverterPriority {
   }
   
   @scala.inline
-  implicit class ConverterPriorityOps[Self <: ConverterPriority] (val x: Self) extends AnyVal {
+  implicit class ConverterPriorityMutableBuilder[Self <: ConverterPriority] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConverterPriority(value: PriorityString): Self = StObject.set(x, "converterPriority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConverterPriorityUndefined: Self = StObject.set(x, "converterPriority", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModel(value: String | Value): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String | Value): Self = this.set("model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setView(value: String | Key): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConverterPriority(value: PriorityString): Self = this.set("converterPriority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConverterPriority: Self = this.set("converterPriority", js.undefined)
+    def setView(value: String | Key): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

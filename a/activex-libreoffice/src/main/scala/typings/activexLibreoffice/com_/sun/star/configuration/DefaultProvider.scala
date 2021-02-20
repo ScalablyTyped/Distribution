@@ -1,10 +1,9 @@
 package typings.activexLibreoffice.com_.sun.star.configuration
 
-import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XLocalizable
-import typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
 import typings.activexLibreoffice.com_.sun.star.util.XFlushable
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,8 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait DefaultProvider
-  extends XMultiServiceFactory
-     with XComponent
+  extends ConfigurationProvider
      with XRefreshable
      with XFlushable
      with XLocalizable {

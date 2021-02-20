@@ -1,5 +1,6 @@
 package typings.googleapis.jobsV2Mod.jobsV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Input only.  Parameters needed for commute search.
   */
 @js.native
-trait SchemaCommutePreference extends js.Object {
+trait SchemaCommutePreference extends StObject {
   
   /**
     * Optional. If `true`, jobs without street level addresses may also be
@@ -59,54 +60,42 @@ object SchemaCommutePreference {
   }
   
   @scala.inline
-  implicit class SchemaCommutePreferenceOps[Self <: SchemaCommutePreference] (val x: Self) extends AnyVal {
+  implicit class SchemaCommutePreferenceMutableBuilder[Self <: SchemaCommutePreference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowNonStreetLevelAddress(value: Boolean): Self = StObject.set(x, "allowNonStreetLevelAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowNonStreetLevelAddressUndefined: Self = StObject.set(x, "allowNonStreetLevelAddress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDepartureHourLocal(value: Double): Self = StObject.set(x, "departureHourLocal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowNonStreetLevelAddress(value: Boolean): Self = this.set("allowNonStreetLevelAddress", value.asInstanceOf[js.Any])
+    def setDepartureHourLocalUndefined: Self = StObject.set(x, "departureHourLocal", js.undefined)
     
     @scala.inline
-    def deleteAllowNonStreetLevelAddress: Self = this.set("allowNonStreetLevelAddress", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepartureHourLocal(value: Double): Self = this.set("departureHourLocal", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteDepartureHourLocal: Self = this.set("departureHourLocal", js.undefined)
+    def setRoadTraffic(value: String): Self = StObject.set(x, "roadTraffic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setRoadTrafficUndefined: Self = StObject.set(x, "roadTraffic", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setStartLocation(value: SchemaLatLng): Self = StObject.set(x, "startLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoadTraffic(value: String): Self = this.set("roadTraffic", value.asInstanceOf[js.Any])
+    def setStartLocationUndefined: Self = StObject.set(x, "startLocation", js.undefined)
     
     @scala.inline
-    def deleteRoadTraffic: Self = this.set("roadTraffic", js.undefined)
+    def setTravelTime(value: String): Self = StObject.set(x, "travelTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartLocation(value: SchemaLatLng): Self = this.set("startLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartLocation: Self = this.set("startLocation", js.undefined)
-    
-    @scala.inline
-    def setTravelTime(value: String): Self = this.set("travelTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTravelTime: Self = this.set("travelTime", js.undefined)
+    def setTravelTimeUndefined: Self = StObject.set(x, "travelTime", js.undefined)
   }
 }

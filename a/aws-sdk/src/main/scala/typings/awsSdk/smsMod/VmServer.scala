@@ -1,11 +1,12 @@
 package typings.awsSdk.smsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VmServer extends js.Object {
+trait VmServer extends StObject {
   
   /**
     * The name of the VM manager.
@@ -41,48 +42,36 @@ object VmServer {
   }
   
   @scala.inline
-  implicit class VmServerOps[Self <: VmServer] (val x: Self) extends AnyVal {
+  implicit class VmServerMutableBuilder[Self <: VmServer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVmManagerName(value: VmManagerName): Self = StObject.set(x, "vmManagerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVmManagerNameUndefined: Self = StObject.set(x, "vmManagerName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVmManagerType(value: VmManagerType): Self = StObject.set(x, "vmManagerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVmManagerName(value: VmManagerName): Self = this.set("vmManagerName", value.asInstanceOf[js.Any])
+    def setVmManagerTypeUndefined: Self = StObject.set(x, "vmManagerType", js.undefined)
     
     @scala.inline
-    def deleteVmManagerName: Self = this.set("vmManagerName", js.undefined)
+    def setVmName(value: VmName): Self = StObject.set(x, "vmName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVmManagerType(value: VmManagerType): Self = this.set("vmManagerType", value.asInstanceOf[js.Any])
+    def setVmNameUndefined: Self = StObject.set(x, "vmName", js.undefined)
     
     @scala.inline
-    def deleteVmManagerType: Self = this.set("vmManagerType", js.undefined)
+    def setVmPath(value: VmPath): Self = StObject.set(x, "vmPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVmName(value: VmName): Self = this.set("vmName", value.asInstanceOf[js.Any])
+    def setVmPathUndefined: Self = StObject.set(x, "vmPath", js.undefined)
     
     @scala.inline
-    def deleteVmName: Self = this.set("vmName", js.undefined)
+    def setVmServerAddress(value: VmServerAddress): Self = StObject.set(x, "vmServerAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVmPath(value: VmPath): Self = this.set("vmPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVmPath: Self = this.set("vmPath", js.undefined)
-    
-    @scala.inline
-    def setVmServerAddress(value: VmServerAddress): Self = this.set("vmServerAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVmServerAddress: Self = this.set("vmServerAddress", js.undefined)
+    def setVmServerAddressUndefined: Self = StObject.set(x, "vmServerAddress", js.undefined)
   }
 }

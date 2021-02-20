@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * table&#39;s style.
   */
 @js.native
-trait SchemaTableCellStyle extends js.Object {
+trait SchemaTableCellStyle extends StObject {
   
   /**
     * The background color of the cell.
@@ -82,90 +83,78 @@ object SchemaTableCellStyle {
   }
   
   @scala.inline
-  implicit class SchemaTableCellStyleOps[Self <: SchemaTableCellStyle] (val x: Self) extends AnyVal {
+  implicit class SchemaTableCellStyleMutableBuilder[Self <: SchemaTableCellStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: SchemaOptionalColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderBottom(value: SchemaTableCellBorder): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: SchemaOptionalColor): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setBorderLeft(value: SchemaTableCellBorder): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderBottom(value: SchemaTableCellBorder): Self = this.set("borderBottom", value.asInstanceOf[js.Any])
+    def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
     
     @scala.inline
-    def deleteBorderBottom: Self = this.set("borderBottom", js.undefined)
+    def setBorderRight(value: SchemaTableCellBorder): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderLeft(value: SchemaTableCellBorder): Self = this.set("borderLeft", value.asInstanceOf[js.Any])
+    def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
     
     @scala.inline
-    def deleteBorderLeft: Self = this.set("borderLeft", js.undefined)
+    def setBorderTop(value: SchemaTableCellBorder): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderRight(value: SchemaTableCellBorder): Self = this.set("borderRight", value.asInstanceOf[js.Any])
+    def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
     
     @scala.inline
-    def deleteBorderRight: Self = this.set("borderRight", js.undefined)
+    def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderTop(value: SchemaTableCellBorder): Self = this.set("borderTop", value.asInstanceOf[js.Any])
+    def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
     
     @scala.inline
-    def deleteBorderTop: Self = this.set("borderTop", js.undefined)
+    def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnSpan(value: Double): Self = this.set("columnSpan", value.asInstanceOf[js.Any])
+    def setContentAlignmentUndefined: Self = StObject.set(x, "contentAlignment", js.undefined)
     
     @scala.inline
-    def deleteColumnSpan: Self = this.set("columnSpan", js.undefined)
+    def setPaddingBottom(value: SchemaDimension): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentAlignment(value: String): Self = this.set("contentAlignment", value.asInstanceOf[js.Any])
+    def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
     
     @scala.inline
-    def deleteContentAlignment: Self = this.set("contentAlignment", js.undefined)
+    def setPaddingLeft(value: SchemaDimension): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingBottom(value: SchemaDimension): Self = this.set("paddingBottom", value.asInstanceOf[js.Any])
+    def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
     
     @scala.inline
-    def deletePaddingBottom: Self = this.set("paddingBottom", js.undefined)
+    def setPaddingRight(value: SchemaDimension): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingLeft(value: SchemaDimension): Self = this.set("paddingLeft", value.asInstanceOf[js.Any])
+    def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
     
     @scala.inline
-    def deletePaddingLeft: Self = this.set("paddingLeft", js.undefined)
+    def setPaddingTop(value: SchemaDimension): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingRight(value: SchemaDimension): Self = this.set("paddingRight", value.asInstanceOf[js.Any])
+    def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
     
     @scala.inline
-    def deletePaddingRight: Self = this.set("paddingRight", js.undefined)
+    def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingTop(value: SchemaDimension): Self = this.set("paddingTop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaddingTop: Self = this.set("paddingTop", js.undefined)
-    
-    @scala.inline
-    def setRowSpan(value: Double): Self = this.set("rowSpan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowSpan: Self = this.set("rowSpan", js.undefined)
+    def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
   }
 }

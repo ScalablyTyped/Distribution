@@ -1,11 +1,12 @@
 package typings.awsSdk.worklinkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociateWebsiteAuthorizationProviderRequest extends js.Object {
+trait AssociateWebsiteAuthorizationProviderRequest extends StObject {
   
   /**
     * The authorization provider type.
@@ -31,30 +32,18 @@ object AssociateWebsiteAuthorizationProviderRequest {
   }
   
   @scala.inline
-  implicit class AssociateWebsiteAuthorizationProviderRequestOps[Self <: AssociateWebsiteAuthorizationProviderRequest] (val x: Self) extends AnyVal {
+  implicit class AssociateWebsiteAuthorizationProviderRequestMutableBuilder[Self <: AssociateWebsiteAuthorizationProviderRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizationProviderType(value: AuthorizationProviderType): Self = StObject.set(x, "AuthorizationProviderType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     
     @scala.inline
-    def setAuthorizationProviderType(value: AuthorizationProviderType): Self = this.set("AuthorizationProviderType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFleetArn(value: FleetArn): Self = this.set("FleetArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomainName: Self = this.set("DomainName", js.undefined)
+    def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
   }
 }

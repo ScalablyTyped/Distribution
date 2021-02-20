@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.chart
 
 import typings.senchaTouch.Ext.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,54 +44,42 @@ object IChart {
   }
   
   @scala.inline
-  implicit class IChartOps[Self <: IChart] (val x: Self) extends AnyVal {
+  implicit class IChartMutableBuilder[Self <: IChart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlipXY(value: Boolean): Self = StObject.set(x, "flipXY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlipXYUndefined: Self = StObject.set(x, "flipXY", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFlipXY(value: () => Boolean): Self = StObject.set(x, "getFlipXY", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFlipXY(value: Boolean): Self = this.set("flipXY", value.asInstanceOf[js.Any])
+    def setGetFlipXYUndefined: Self = StObject.set(x, "getFlipXY", js.undefined)
     
     @scala.inline
-    def deleteFlipXY: Self = this.set("flipXY", js.undefined)
+    def setGetInnerRegion(value: () => Array): Self = StObject.set(x, "getInnerRegion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFlipXY(value: () => Boolean): Self = this.set("getFlipXY", js.Any.fromFunction0(value))
+    def setGetInnerRegionUndefined: Self = StObject.set(x, "getInnerRegion", js.undefined)
     
     @scala.inline
-    def deleteGetFlipXY: Self = this.set("getFlipXY", js.undefined)
+    def setPerformLayout(value: () => Unit): Self = StObject.set(x, "performLayout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInnerRegion(value: () => Array): Self = this.set("getInnerRegion", js.Any.fromFunction0(value))
+    def setPerformLayoutUndefined: Self = StObject.set(x, "performLayout", js.undefined)
     
     @scala.inline
-    def deleteGetInnerRegion: Self = this.set("getInnerRegion", js.undefined)
+    def setSetFlipXY(value: /* flipXY */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setFlipXY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPerformLayout(value: () => Unit): Self = this.set("performLayout", js.Any.fromFunction0(value))
+    def setSetFlipXYUndefined: Self = StObject.set(x, "setFlipXY", js.undefined)
     
     @scala.inline
-    def deletePerformLayout: Self = this.set("performLayout", js.undefined)
+    def setSetInnerRegion(value: /* innerRegion */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setInnerRegion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFlipXY(value: /* flipXY */ js.UndefOr[Boolean] => Unit): Self = this.set("setFlipXY", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetFlipXY: Self = this.set("setFlipXY", js.undefined)
-    
-    @scala.inline
-    def setSetInnerRegion(value: /* innerRegion */ js.UndefOr[Array] => Unit): Self = this.set("setInnerRegion", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetInnerRegion: Self = this.set("setInnerRegion", js.undefined)
+    def setSetInnerRegionUndefined: Self = StObject.set(x, "setInnerRegion", js.undefined)
   }
 }

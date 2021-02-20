@@ -1,20 +1,13 @@
 package typings.cytoscape.mod
 
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.cytoscape.mod.AbstractEventObject because Already inherited
-- typings.cytoscape.mod.LayoutEventObject because var conflicts: cy, namespace, target, timeStamp, `type`. Inlined layout */ @js.native
-trait EventObjectNode extends InputEventObject {
-  
-  /**
-    * layout : indicates the corresponding layout that triggered the event
-    * (useful if running multiple layouts simultaneously)
-    */
-  var layout: js.Any = js.native
+@js.native
+trait EventObjectNode extends EventObject {
   
   @JSName("target")
   var target_EventObjectNode: NodeSingular = js.native
@@ -45,24 +38,9 @@ object EventObjectNode {
   }
   
   @scala.inline
-  implicit class EventObjectNodeOps[Self <: EventObjectNode] (val x: Self) extends AnyVal {
+  implicit class EventObjectNodeMutableBuilder[Self <: EventObjectNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLayout(value: js.Any): Self = this.set("layout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: NodeSingular): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTarget(value: NodeSingular): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

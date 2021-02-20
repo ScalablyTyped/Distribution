@@ -4,16 +4,30 @@ import typings.divaJs.anon.Cols
 import typings.divaJs.interfacesMod.Dimensions
 import typings.divaJs.interfacesMod.ManifestData
 import typings.divaJs.interfacesMod.Page
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("diva.js/image-manifest", JSImport.Namespace)
-@js.native
-object imageManifestMod extends js.Object {
+object imageManifestMod {
+  
+  @JSImport("diva.js/image-manifest", JSImport.Default)
+  @js.native
+  class default protected () extends ImageManifest {
+    def this(data: ManifestData, urlAdapter: IIIFSourceAdapter) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("diva.js/image-manifest", "default.fromIIIF")
+    @js.native
+    def fromIIIF(iiifManifest: js.Object): ImageManifest = js.native
+  }
+  
+  type IIIFSourceAdapter = js.Any
   
   @js.native
-  trait ImageManifest extends js.Object {
+  trait ImageManifest extends StObject {
     
     def etPageImageTiles(pageIndex: Double, zoomLevel: Double, tileDimensions: Dimensions): Cols = js.native
     
@@ -38,17 +52,4 @@ object imageManifestMod extends js.Object {
     
     var pages: js.Array[Page] = js.native
   }
-  
-  @js.native
-  class default protected () extends ImageManifest {
-    def this(data: ManifestData, urlAdapter: IIIFSourceAdapter) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def fromIIIF(iiifManifest: js.Object): ImageManifest = js.native
-  }
-  
-  type IIIFSourceAdapter = js.Any
 }

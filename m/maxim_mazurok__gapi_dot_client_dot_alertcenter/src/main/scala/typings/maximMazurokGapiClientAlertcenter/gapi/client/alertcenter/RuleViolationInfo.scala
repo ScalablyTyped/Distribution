@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleViolationInfo extends js.Object {
+trait RuleViolationInfo extends StObject {
   
   /** Source of the data. */
   var dataSource: js.UndefOr[String] = js.native
@@ -47,84 +48,72 @@ object RuleViolationInfo {
   }
   
   @scala.inline
-  implicit class RuleViolationInfoOps[Self <: RuleViolationInfo] (val x: Self) extends AnyVal {
+  implicit class RuleViolationInfoMutableBuilder[Self <: RuleViolationInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSource(value: String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatchInfo(value: js.Array[MatchInfo]): Self = StObject.set(x, "matchInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: String): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setMatchInfoUndefined: Self = StObject.set(x, "matchInfo", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setMatchInfoVarargs(value: MatchInfo*): Self = StObject.set(x, "matchInfo", js.Array(value :_*))
     
     @scala.inline
-    def setMatchInfoVarargs(value: MatchInfo*): Self = this.set("matchInfo", js.Array(value :_*))
+    def setRecipients(value: js.Array[String]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchInfo(value: js.Array[MatchInfo]): Self = this.set("matchInfo", value.asInstanceOf[js.Any])
+    def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
     @scala.inline
-    def deleteMatchInfo: Self = this.set("matchInfo", js.undefined)
+    def setRecipientsVarargs(value: String*): Self = StObject.set(x, "recipients", js.Array(value :_*))
     
     @scala.inline
-    def setRecipientsVarargs(value: String*): Self = this.set("recipients", js.Array(value :_*))
+    def setResourceInfo(value: ResourceInfo): Self = StObject.set(x, "resourceInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipients(value: js.Array[String]): Self = this.set("recipients", value.asInstanceOf[js.Any])
+    def setResourceInfoUndefined: Self = StObject.set(x, "resourceInfo", js.undefined)
     
     @scala.inline
-    def deleteRecipients: Self = this.set("recipients", js.undefined)
+    def setRuleInfo(value: RuleInfo): Self = StObject.set(x, "ruleInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceInfo(value: ResourceInfo): Self = this.set("resourceInfo", value.asInstanceOf[js.Any])
+    def setRuleInfoUndefined: Self = StObject.set(x, "ruleInfo", js.undefined)
     
     @scala.inline
-    def deleteResourceInfo: Self = this.set("resourceInfo", js.undefined)
+    def setSuppressedActionTypes(value: js.Array[String]): Self = StObject.set(x, "suppressedActionTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleInfo(value: RuleInfo): Self = this.set("ruleInfo", value.asInstanceOf[js.Any])
+    def setSuppressedActionTypesUndefined: Self = StObject.set(x, "suppressedActionTypes", js.undefined)
     
     @scala.inline
-    def deleteRuleInfo: Self = this.set("ruleInfo", js.undefined)
+    def setSuppressedActionTypesVarargs(value: String*): Self = StObject.set(x, "suppressedActionTypes", js.Array(value :_*))
     
     @scala.inline
-    def setSuppressedActionTypesVarargs(value: String*): Self = this.set("suppressedActionTypes", js.Array(value :_*))
+    def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuppressedActionTypes(value: js.Array[String]): Self = this.set("suppressedActionTypes", value.asInstanceOf[js.Any])
+    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
     
     @scala.inline
-    def deleteSuppressedActionTypes: Self = this.set("suppressedActionTypes", js.undefined)
+    def setTriggeredActionTypes(value: js.Array[String]): Self = StObject.set(x, "triggeredActionTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrigger(value: String): Self = this.set("trigger", value.asInstanceOf[js.Any])
+    def setTriggeredActionTypesUndefined: Self = StObject.set(x, "triggeredActionTypes", js.undefined)
     
     @scala.inline
-    def deleteTrigger: Self = this.set("trigger", js.undefined)
+    def setTriggeredActionTypesVarargs(value: String*): Self = StObject.set(x, "triggeredActionTypes", js.Array(value :_*))
     
     @scala.inline
-    def setTriggeredActionTypesVarargs(value: String*): Self = this.set("triggeredActionTypes", js.Array(value :_*))
+    def setTriggeringUserEmail(value: String): Self = StObject.set(x, "triggeringUserEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggeredActionTypes(value: js.Array[String]): Self = this.set("triggeredActionTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggeredActionTypes: Self = this.set("triggeredActionTypes", js.undefined)
-    
-    @scala.inline
-    def setTriggeringUserEmail(value: String): Self = this.set("triggeringUserEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggeringUserEmail: Self = this.set("triggeringUserEmail", js.undefined)
+    def setTriggeringUserEmailUndefined: Self = StObject.set(x, "triggeringUserEmail", js.undefined)
   }
 }

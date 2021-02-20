@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdditionalResultAttributeValue extends js.Object {
+trait AdditionalResultAttributeValue extends StObject {
   
   /**
     * The text associated with the attribute and information about the highlight to apply to the text.
@@ -21,24 +22,12 @@ object AdditionalResultAttributeValue {
   }
   
   @scala.inline
-  implicit class AdditionalResultAttributeValueOps[Self <: AdditionalResultAttributeValue] (val x: Self) extends AnyVal {
+  implicit class AdditionalResultAttributeValueMutableBuilder[Self <: AdditionalResultAttributeValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTextWithHighlightsValue(value: TextWithHighlights): Self = StObject.set(x, "TextWithHighlightsValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTextWithHighlightsValue(value: TextWithHighlights): Self = this.set("TextWithHighlightsValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextWithHighlightsValue: Self = this.set("TextWithHighlightsValue", js.undefined)
+    def setTextWithHighlightsValueUndefined: Self = StObject.set(x, "TextWithHighlightsValue", js.undefined)
   }
 }

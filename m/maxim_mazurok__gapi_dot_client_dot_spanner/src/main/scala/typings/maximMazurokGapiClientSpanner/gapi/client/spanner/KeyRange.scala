@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyRange extends js.Object {
+trait KeyRange extends StObject {
   
   /** If the end is closed, then the range includes all rows whose first `len(end_closed)` key columns exactly match `end_closed`. */
   var endClosed: js.UndefOr[js.Array[_]] = js.native
@@ -28,54 +29,42 @@ object KeyRange {
   }
   
   @scala.inline
-  implicit class KeyRangeOps[Self <: KeyRange] (val x: Self) extends AnyVal {
+  implicit class KeyRangeMutableBuilder[Self <: KeyRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndClosed(value: js.Array[_]): Self = StObject.set(x, "endClosed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndClosedUndefined: Self = StObject.set(x, "endClosed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndClosedVarargs(value: js.Any*): Self = StObject.set(x, "endClosed", js.Array(value :_*))
     
     @scala.inline
-    def setEndClosedVarargs(value: js.Any*): Self = this.set("endClosed", js.Array(value :_*))
+    def setEndOpen(value: js.Array[_]): Self = StObject.set(x, "endOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndClosed(value: js.Array[_]): Self = this.set("endClosed", value.asInstanceOf[js.Any])
+    def setEndOpenUndefined: Self = StObject.set(x, "endOpen", js.undefined)
     
     @scala.inline
-    def deleteEndClosed: Self = this.set("endClosed", js.undefined)
+    def setEndOpenVarargs(value: js.Any*): Self = StObject.set(x, "endOpen", js.Array(value :_*))
     
     @scala.inline
-    def setEndOpenVarargs(value: js.Any*): Self = this.set("endOpen", js.Array(value :_*))
+    def setStartClosed(value: js.Array[_]): Self = StObject.set(x, "startClosed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndOpen(value: js.Array[_]): Self = this.set("endOpen", value.asInstanceOf[js.Any])
+    def setStartClosedUndefined: Self = StObject.set(x, "startClosed", js.undefined)
     
     @scala.inline
-    def deleteEndOpen: Self = this.set("endOpen", js.undefined)
+    def setStartClosedVarargs(value: js.Any*): Self = StObject.set(x, "startClosed", js.Array(value :_*))
     
     @scala.inline
-    def setStartClosedVarargs(value: js.Any*): Self = this.set("startClosed", js.Array(value :_*))
+    def setStartOpen(value: js.Array[_]): Self = StObject.set(x, "startOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartClosed(value: js.Array[_]): Self = this.set("startClosed", value.asInstanceOf[js.Any])
+    def setStartOpenUndefined: Self = StObject.set(x, "startOpen", js.undefined)
     
     @scala.inline
-    def deleteStartClosed: Self = this.set("startClosed", js.undefined)
-    
-    @scala.inline
-    def setStartOpenVarargs(value: js.Any*): Self = this.set("startOpen", js.Array(value :_*))
-    
-    @scala.inline
-    def setStartOpen(value: js.Array[_]): Self = this.set("startOpen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartOpen: Self = this.set("startOpen", js.undefined)
+    def setStartOpenVarargs(value: js.Any*): Self = StObject.set(x, "startOpen", js.Array(value :_*))
   }
 }

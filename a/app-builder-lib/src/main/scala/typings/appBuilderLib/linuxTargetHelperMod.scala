@@ -4,18 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.appBuilderLib.linuxOptionsMod.LinuxTargetSpecificOptions
 import typings.appBuilderLib.linuxPackagerMod.LinuxPackager
 import typings.appBuilderLib.platformPackagerMod.IconInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("app-builder-lib/out/targets/LinuxTargetHelper", JSImport.Namespace)
-@js.native
-object linuxTargetHelperMod extends js.Object {
+object linuxTargetHelperMod {
   
-  val installPrefix: /* "/opt" */ String = js.native
-  
+  @JSImport("app-builder-lib/out/targets/LinuxTargetHelper", "LinuxTargetHelper")
   @js.native
-  class LinuxTargetHelper protected () extends js.Object {
+  class LinuxTargetHelper protected () extends StObject {
     def this(packager: LinuxPackager) = this()
     
     def computeDesktopEntry(targetSpecificOptions: LinuxTargetSpecificOptions): js.Promise[String] = js.native
@@ -90,4 +88,8 @@ object linuxTargetHelperMod extends js.Object {
       extra: StringDictionary[String]
     ): js.Promise[String] = js.native
   }
+  
+  @JSImport("app-builder-lib/out/targets/LinuxTargetHelper", "installPrefix")
+  @js.native
+  val installPrefix: /* "/opt" */ String = js.native
 }

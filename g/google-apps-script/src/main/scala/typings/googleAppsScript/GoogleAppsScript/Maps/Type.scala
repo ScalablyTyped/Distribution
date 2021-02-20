@@ -1,11 +1,12 @@
 package typings.googleAppsScript.GoogleAppsScript.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Type extends js.Object
+sealed trait Type extends StObject
 /**
   * An enum representing the type of map to render.
   * See also
@@ -14,7 +15,7 @@ sealed trait Type extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Maps.Type")
 @js.native
-object Type extends js.Object {
+object Type extends StObject {
   
   @js.native
   sealed trait HYBRID extends Type

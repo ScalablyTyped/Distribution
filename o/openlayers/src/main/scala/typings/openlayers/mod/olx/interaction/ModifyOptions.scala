@@ -7,12 +7,13 @@ import typings.openlayers.mod.MapBrowserEvent
 import typings.openlayers.mod.StyleFunction
 import typings.openlayers.mod.source.Vector
 import typings.openlayers.mod.style.Style
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyOptions extends js.Object {
+trait ModifyOptions extends StObject {
   
   var condition: js.UndefOr[EventsConditionType] = js.native
   
@@ -39,74 +40,62 @@ object ModifyOptions {
   }
   
   @scala.inline
-  implicit class ModifyOptionsOps[Self <: ModifyOptions] (val x: Self) extends AnyVal {
+  implicit class ModifyOptionsMutableBuilder[Self <: ModifyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "deleteCondition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = this.set("condition", js.Any.fromFunction1(value))
+    def setDeleteConditionUndefined: Self = StObject.set(x, "deleteCondition", js.undefined)
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setFeatures(value: Collection[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteCondition(value: /* event */ MapBrowserEvent => Boolean): Self = this.set("deleteCondition", js.Any.fromFunction1(value))
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
     @scala.inline
-    def deleteDeleteCondition: Self = this.set("deleteCondition", js.undefined)
+    def setInsertVertexCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "insertVertexCondition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFeatures(value: Collection[Feature]): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setInsertVertexConditionUndefined: Self = StObject.set(x, "insertVertexCondition", js.undefined)
     
     @scala.inline
-    def deleteFeatures: Self = this.set("features", js.undefined)
+    def setPixelTolerance(value: Double): Self = StObject.set(x, "pixelTolerance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertVertexCondition(value: /* event */ MapBrowserEvent => Boolean): Self = this.set("insertVertexCondition", js.Any.fromFunction1(value))
+    def setPixelToleranceUndefined: Self = StObject.set(x, "pixelTolerance", js.undefined)
     
     @scala.inline
-    def deleteInsertVertexCondition: Self = this.set("insertVertexCondition", js.undefined)
+    def setSource(value: Vector): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelTolerance(value: Double): Self = this.set("pixelTolerance", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deletePixelTolerance: Self = this.set("pixelTolerance", js.undefined)
-    
-    @scala.inline
-    def setSource(value: Vector): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setStyle(value: Style | js.Array[Style] | StyleFunction): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStyleFunction2(
       value: (/* feature */ Feature | typings.openlayers.mod.render.Feature, /* resolution */ Double) => Style | js.Array[Style] | Null
-    ): Self = this.set("style", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "style", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setStyleVarargs(value: Style*): Self = this.set("style", js.Array(value :_*))
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setStyle(value: Style | js.Array[Style] | StyleFunction): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value :_*))
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWrapX(value: Boolean): Self = this.set("wrapX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapX: Self = this.set("wrapX", js.undefined)
+    def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
   }
 }

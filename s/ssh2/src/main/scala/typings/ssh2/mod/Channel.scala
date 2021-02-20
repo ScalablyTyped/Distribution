@@ -3,6 +3,7 @@ package typings.ssh2.mod
 import typings.node.streamMod.Duplex
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

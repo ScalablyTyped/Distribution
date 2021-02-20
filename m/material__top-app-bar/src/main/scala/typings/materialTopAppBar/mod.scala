@@ -1,60 +1,55 @@
 package typings.materialTopAppBar
 
-import typings.materialTopAppBar.adapterMod.MDCTopAppBarAdapter
-import typings.materialTopAppBar.anon.ACTIONITEMSELECTOR
-import typings.materialTopAppBar.anon.DEBOUNCETHROTTLERESIZETIMEMS
-import typings.materialTopAppBar.anon.FIXEDCLASS
 import typings.materialTopAppBar.anon.PartialMDCTopAppBarAdapte
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/top-app-bar", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@material/top-app-bar", "MDCFixedTopAppBarFoundation")
   @js.native
   class MDCFixedTopAppBarFoundation ()
-    extends typings.materialTopAppBar.foundationMod.MDCFixedTopAppBarFoundation
+    extends typings.materialTopAppBar.foundationMod.MDCFixedTopAppBarFoundation {
+    def this(adapter: PartialMDCTopAppBarAdapte) = this()
+  }
   
+  @JSImport("@material/top-app-bar", "MDCShortTopAppBarFoundation")
   @js.native
   class MDCShortTopAppBarFoundation ()
     extends typings.materialTopAppBar.shortFoundationMod.MDCShortTopAppBarFoundation {
     def this(adapter: PartialMDCTopAppBarAdapte) = this()
   }
   
+  @JSImport("@material/top-app-bar", "MDCTopAppBar")
   @js.native
-  class MDCTopAppBar ()
-    extends typings.materialTopAppBar.componentMod.MDCTopAppBar
+  class MDCTopAppBar protected ()
+    extends typings.materialTopAppBar.componentMod.MDCTopAppBar {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(
+      root: Element,
+      foundation: typings.materialTopAppBar.materialTopAppBarMod.MDCTopAppBarBaseFoundation,
+      args: js.Any*
+    ) = this()
+  }
   /* static members */
-  @js.native
-  object MDCTopAppBar extends js.Object {
+  object MDCTopAppBar {
     
+    @JSImport("@material/top-app-bar", "MDCTopAppBar.attachTo")
+    @js.native
     def attachTo(root: Element): typings.materialTopAppBar.componentMod.MDCTopAppBar = js.native
   }
   
+  @JSImport("@material/top-app-bar", "MDCTopAppBarBaseFoundation")
   @js.native
   class MDCTopAppBarBaseFoundation ()
     extends typings.materialTopAppBar.materialTopAppBarMod.MDCTopAppBarBaseFoundation {
     def this(adapter: PartialMDCTopAppBarAdapte) = this()
   }
-  /* static members */
-  @js.native
-  object MDCTopAppBarBaseFoundation extends js.Object {
-    
-    def cssClasses: FIXEDCLASS = js.native
-    
-    /**
-      * See {@link MDCTopAppBarAdapter} for typing information on parameters and return types.
-      */
-    def defaultAdapter: MDCTopAppBarAdapter = js.native
-    
-    def numbers: DEBOUNCETHROTTLERESIZETIMEMS = js.native
-    
-    def strings: ACTIONITEMSELECTOR = js.native
-  }
   
+  @JSImport("@material/top-app-bar", "MDCTopAppBarFoundation")
   @js.native
   class MDCTopAppBarFoundation ()
     extends typings.materialTopAppBar.standardFoundationMod.MDCTopAppBarFoundation {
@@ -83,39 +78,96 @@ object mod extends js.Object {
     * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     * THE SOFTWARE.
     */
-  @js.native
-  object cssClasses extends js.Object {
+  object cssClasses {
     
-    var FIXED_CLASS: String = js.native
+    @JSImport("@material/top-app-bar", "cssClasses")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var FIXED_SCROLLED_CLASS: String = js.native
+    @JSImport("@material/top-app-bar", "cssClasses.FIXED_CLASS")
+    @js.native
+    def FIXED_CLASS: String = js.native
+    @scala.inline
+    def FIXED_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FIXED_CLASS")(x.asInstanceOf[js.Any])
     
-    var SHORT_CLASS: String = js.native
+    @JSImport("@material/top-app-bar", "cssClasses.FIXED_SCROLLED_CLASS")
+    @js.native
+    def FIXED_SCROLLED_CLASS: String = js.native
+    @scala.inline
+    def FIXED_SCROLLED_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FIXED_SCROLLED_CLASS")(x.asInstanceOf[js.Any])
     
-    var SHORT_COLLAPSED_CLASS: String = js.native
+    @JSImport("@material/top-app-bar", "cssClasses.SHORT_CLASS")
+    @js.native
+    def SHORT_CLASS: String = js.native
+    @scala.inline
+    def SHORT_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHORT_CLASS")(x.asInstanceOf[js.Any])
     
-    var SHORT_HAS_ACTION_ITEM_CLASS: String = js.native
+    @JSImport("@material/top-app-bar", "cssClasses.SHORT_COLLAPSED_CLASS")
+    @js.native
+    def SHORT_COLLAPSED_CLASS: String = js.native
+    @scala.inline
+    def SHORT_COLLAPSED_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHORT_COLLAPSED_CLASS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/top-app-bar", "cssClasses.SHORT_HAS_ACTION_ITEM_CLASS")
+    @js.native
+    def SHORT_HAS_ACTION_ITEM_CLASS: String = js.native
+    @scala.inline
+    def SHORT_HAS_ACTION_ITEM_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHORT_HAS_ACTION_ITEM_CLASS")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object numbers extends js.Object {
+  object numbers {
     
-    var DEBOUNCE_THROTTLE_RESIZE_TIME_MS: Double = js.native
+    @JSImport("@material/top-app-bar", "numbers")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var MAX_TOP_APP_BAR_HEIGHT: Double = js.native
+    @JSImport("@material/top-app-bar", "numbers.DEBOUNCE_THROTTLE_RESIZE_TIME_MS")
+    @js.native
+    def DEBOUNCE_THROTTLE_RESIZE_TIME_MS: Double = js.native
+    @scala.inline
+    def DEBOUNCE_THROTTLE_RESIZE_TIME_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBOUNCE_THROTTLE_RESIZE_TIME_MS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/top-app-bar", "numbers.MAX_TOP_APP_BAR_HEIGHT")
+    @js.native
+    def MAX_TOP_APP_BAR_HEIGHT: Double = js.native
+    @scala.inline
+    def MAX_TOP_APP_BAR_HEIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_TOP_APP_BAR_HEIGHT")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object strings extends js.Object {
+  object strings {
     
-    var ACTION_ITEM_SELECTOR: String = js.native
+    @JSImport("@material/top-app-bar", "strings")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var NAVIGATION_EVENT: String = js.native
+    @JSImport("@material/top-app-bar", "strings.ACTION_ITEM_SELECTOR")
+    @js.native
+    def ACTION_ITEM_SELECTOR: String = js.native
+    @scala.inline
+    def ACTION_ITEM_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTION_ITEM_SELECTOR")(x.asInstanceOf[js.Any])
     
-    var NAVIGATION_ICON_SELECTOR: String = js.native
+    @JSImport("@material/top-app-bar", "strings.NAVIGATION_EVENT")
+    @js.native
+    def NAVIGATION_EVENT: String = js.native
+    @scala.inline
+    def NAVIGATION_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAVIGATION_EVENT")(x.asInstanceOf[js.Any])
     
-    var ROOT_SELECTOR: String = js.native
+    @JSImport("@material/top-app-bar", "strings.NAVIGATION_ICON_SELECTOR")
+    @js.native
+    def NAVIGATION_ICON_SELECTOR: String = js.native
+    @scala.inline
+    def NAVIGATION_ICON_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAVIGATION_ICON_SELECTOR")(x.asInstanceOf[js.Any])
     
-    var TITLE_SELECTOR: String = js.native
+    @JSImport("@material/top-app-bar", "strings.ROOT_SELECTOR")
+    @js.native
+    def ROOT_SELECTOR: String = js.native
+    @scala.inline
+    def ROOT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/top-app-bar", "strings.TITLE_SELECTOR")
+    @js.native
+    def TITLE_SELECTOR: String = js.native
+    @scala.inline
+    def TITLE_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TITLE_SELECTOR")(x.asInstanceOf[js.Any])
   }
 }

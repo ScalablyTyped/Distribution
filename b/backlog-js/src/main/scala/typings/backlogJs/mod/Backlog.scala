@@ -61,6 +61,7 @@ import typings.backlogJs.mod.Option.Wiki.PatchWikiParams
 import typings.backlogJs.mod.Option.Wiki.PostWikiParams
 import typings.std.FormData
 import typings.std.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

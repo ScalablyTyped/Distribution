@@ -1,11 +1,12 @@
 package typings.rx.Rx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pattern8[T1, T2, T3, T4, T5, T6, T7, T8] extends js.Object {
+trait Pattern8[T1, T2, T3, T4, T5, T6, T7, T8] extends StObject {
   
   /**
     *  Creates a pattern that matches the current plan matches and when the specified observable sequences has an available value.
@@ -55,22 +56,10 @@ object Pattern8 {
   }
   
   @scala.inline
-  implicit class Pattern8Ops[Self <: Pattern8[_, _, _, _, _, _, _, _], T1, T2, T3, T4, T5, T6, T7, T8] (val x: Self with (Pattern8[T1, T2, T3, T4, T5, T6, T7, T8])) extends AnyVal {
+  implicit class Pattern8MutableBuilder[Self <: Pattern8[_, _, _, _, _, _, _, _], T1, T2, T3, T4, T5, T6, T7, T8] (val x: Self with (Pattern8[T1, T2, T3, T4, T5, T6, T7, T8])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnd(value: Observable[js.Any] => Pattern9[T1, T2, T3, T4, T5, T6, T7, T8, js.Any]): Self = this.set("and", js.Any.fromFunction1(value))
+    def setAnd(value: Observable[js.Any] => Pattern9[T1, T2, T3, T4, T5, T6, T7, T8, js.Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
     
     @scala.inline
     def setThenDo(
@@ -85,6 +74,6 @@ object Pattern8 {
           /* item8 */ T8, 
           js.Any
         ] => Plan[js.Any]
-    ): Self = this.set("thenDo", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "thenDo", js.Any.fromFunction1(value))
   }
 }

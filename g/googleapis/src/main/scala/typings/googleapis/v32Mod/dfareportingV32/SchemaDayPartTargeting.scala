@@ -1,5 +1,6 @@
 package typings.googleapis.v32Mod.dfareportingV32
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Day Part Targeting.
   */
 @js.native
-trait SchemaDayPartTargeting extends js.Object {
+trait SchemaDayPartTargeting extends StObject {
   
   /**
     * Days of the week when the ad will serve.  Acceptable values are: -
@@ -44,42 +45,30 @@ object SchemaDayPartTargeting {
   }
   
   @scala.inline
-  implicit class SchemaDayPartTargetingOps[Self <: SchemaDayPartTargeting] (val x: Self) extends AnyVal {
+  implicit class SchemaDayPartTargetingMutableBuilder[Self <: SchemaDayPartTargeting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDaysOfWeek(value: js.Array[String]): Self = StObject.set(x, "daysOfWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDaysOfWeekUndefined: Self = StObject.set(x, "daysOfWeek", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDaysOfWeekVarargs(value: String*): Self = StObject.set(x, "daysOfWeek", js.Array(value :_*))
     
     @scala.inline
-    def setDaysOfWeekVarargs(value: String*): Self = this.set("daysOfWeek", js.Array(value :_*))
+    def setHoursOfDay(value: js.Array[Double]): Self = StObject.set(x, "hoursOfDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaysOfWeek(value: js.Array[String]): Self = this.set("daysOfWeek", value.asInstanceOf[js.Any])
+    def setHoursOfDayUndefined: Self = StObject.set(x, "hoursOfDay", js.undefined)
     
     @scala.inline
-    def deleteDaysOfWeek: Self = this.set("daysOfWeek", js.undefined)
+    def setHoursOfDayVarargs(value: Double*): Self = StObject.set(x, "hoursOfDay", js.Array(value :_*))
     
     @scala.inline
-    def setHoursOfDayVarargs(value: Double*): Self = this.set("hoursOfDay", js.Array(value :_*))
+    def setUserLocalTime(value: Boolean): Self = StObject.set(x, "userLocalTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoursOfDay(value: js.Array[Double]): Self = this.set("hoursOfDay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHoursOfDay: Self = this.set("hoursOfDay", js.undefined)
-    
-    @scala.inline
-    def setUserLocalTime(value: Boolean): Self = this.set("userLocalTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserLocalTime: Self = this.set("userLocalTime", js.undefined)
+    def setUserLocalTimeUndefined: Self = StObject.set(x, "userLocalTime", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgFunnelChartMethods extends js.Object {
+trait IgFunnelChartMethods extends StObject {
   
   /**
     * Adds a new item to the data source and notifies the chart.

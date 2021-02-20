@@ -1,13 +1,14 @@
 package typings.protobufjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("protobufjs", "tokenize")
-@js.native
-object tokenize extends js.Object {
+object tokenize {
   
+  @JSImport("protobufjs", "tokenize")
+  @js.native
   def apply(source: String, alternateCommentMode: Boolean): ITokenizerHandle = js.native
   
   /**
@@ -15,5 +16,7 @@ object tokenize extends js.Object {
     * @param str String to unescape
     * @returns Unescaped string
     */
+  @JSImport("protobufjs", "tokenize.unescape")
+  @js.native
   def unescape(str: String): String = js.native
 }

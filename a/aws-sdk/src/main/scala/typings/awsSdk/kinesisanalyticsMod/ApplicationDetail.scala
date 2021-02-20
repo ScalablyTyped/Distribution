@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationDetail extends js.Object {
+trait ApplicationDetail extends StObject {
   
   /**
     * ARN of the application.
@@ -81,90 +82,78 @@ object ApplicationDetail {
   }
   
   @scala.inline
-  implicit class ApplicationDetailOps[Self <: ApplicationDetail] (val x: Self) extends AnyVal {
+  implicit class ApplicationDetailMutableBuilder[Self <: ApplicationDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationARN(value: ResourceARN): Self = StObject.set(x, "ApplicationARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationCode(value: ApplicationCode): Self = StObject.set(x, "ApplicationCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationCodeUndefined: Self = StObject.set(x, "ApplicationCode", js.undefined)
     
     @scala.inline
-    def setApplicationARN(value: ResourceARN): Self = this.set("ApplicationARN", value.asInstanceOf[js.Any])
+    def setApplicationDescription(value: ApplicationDescription): Self = StObject.set(x, "ApplicationDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    def setApplicationDescriptionUndefined: Self = StObject.set(x, "ApplicationDescription", js.undefined)
     
     @scala.inline
-    def setApplicationStatus(value: ApplicationStatus): Self = this.set("ApplicationStatus", value.asInstanceOf[js.Any])
+    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationVersionId(value: ApplicationVersionId): Self = this.set("ApplicationVersionId", value.asInstanceOf[js.Any])
+    def setApplicationStatus(value: ApplicationStatus): Self = StObject.set(x, "ApplicationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationCode(value: ApplicationCode): Self = this.set("ApplicationCode", value.asInstanceOf[js.Any])
+    def setApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "ApplicationVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApplicationCode: Self = this.set("ApplicationCode", js.undefined)
+    def setCloudWatchLoggingOptionDescriptions(value: CloudWatchLoggingOptionDescriptions): Self = StObject.set(x, "CloudWatchLoggingOptionDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationDescription(value: ApplicationDescription): Self = this.set("ApplicationDescription", value.asInstanceOf[js.Any])
+    def setCloudWatchLoggingOptionDescriptionsUndefined: Self = StObject.set(x, "CloudWatchLoggingOptionDescriptions", js.undefined)
     
     @scala.inline
-    def deleteApplicationDescription: Self = this.set("ApplicationDescription", js.undefined)
+    def setCloudWatchLoggingOptionDescriptionsVarargs(value: CloudWatchLoggingOptionDescription*): Self = StObject.set(x, "CloudWatchLoggingOptionDescriptions", js.Array(value :_*))
     
     @scala.inline
-    def setCloudWatchLoggingOptionDescriptionsVarargs(value: CloudWatchLoggingOptionDescription*): Self = this.set("CloudWatchLoggingOptionDescriptions", js.Array(value :_*))
+    def setCreateTimestamp(value: Timestamp): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudWatchLoggingOptionDescriptions(value: CloudWatchLoggingOptionDescriptions): Self = this.set("CloudWatchLoggingOptionDescriptions", value.asInstanceOf[js.Any])
+    def setCreateTimestampUndefined: Self = StObject.set(x, "CreateTimestamp", js.undefined)
     
     @scala.inline
-    def deleteCloudWatchLoggingOptionDescriptions: Self = this.set("CloudWatchLoggingOptionDescriptions", js.undefined)
+    def setInputDescriptions(value: InputDescriptions): Self = StObject.set(x, "InputDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTimestamp(value: Timestamp): Self = this.set("CreateTimestamp", value.asInstanceOf[js.Any])
+    def setInputDescriptionsUndefined: Self = StObject.set(x, "InputDescriptions", js.undefined)
     
     @scala.inline
-    def deleteCreateTimestamp: Self = this.set("CreateTimestamp", js.undefined)
+    def setInputDescriptionsVarargs(value: InputDescription*): Self = StObject.set(x, "InputDescriptions", js.Array(value :_*))
     
     @scala.inline
-    def setInputDescriptionsVarargs(value: InputDescription*): Self = this.set("InputDescriptions", js.Array(value :_*))
+    def setLastUpdateTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdateTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputDescriptions(value: InputDescriptions): Self = this.set("InputDescriptions", value.asInstanceOf[js.Any])
+    def setLastUpdateTimestampUndefined: Self = StObject.set(x, "LastUpdateTimestamp", js.undefined)
     
     @scala.inline
-    def deleteInputDescriptions: Self = this.set("InputDescriptions", js.undefined)
+    def setOutputDescriptions(value: OutputDescriptions): Self = StObject.set(x, "OutputDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdateTimestamp(value: Timestamp): Self = this.set("LastUpdateTimestamp", value.asInstanceOf[js.Any])
+    def setOutputDescriptionsUndefined: Self = StObject.set(x, "OutputDescriptions", js.undefined)
     
     @scala.inline
-    def deleteLastUpdateTimestamp: Self = this.set("LastUpdateTimestamp", js.undefined)
+    def setOutputDescriptionsVarargs(value: OutputDescription*): Self = StObject.set(x, "OutputDescriptions", js.Array(value :_*))
     
     @scala.inline
-    def setOutputDescriptionsVarargs(value: OutputDescription*): Self = this.set("OutputDescriptions", js.Array(value :_*))
+    def setReferenceDataSourceDescriptions(value: ReferenceDataSourceDescriptions): Self = StObject.set(x, "ReferenceDataSourceDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputDescriptions(value: OutputDescriptions): Self = this.set("OutputDescriptions", value.asInstanceOf[js.Any])
+    def setReferenceDataSourceDescriptionsUndefined: Self = StObject.set(x, "ReferenceDataSourceDescriptions", js.undefined)
     
     @scala.inline
-    def deleteOutputDescriptions: Self = this.set("OutputDescriptions", js.undefined)
-    
-    @scala.inline
-    def setReferenceDataSourceDescriptionsVarargs(value: ReferenceDataSourceDescription*): Self = this.set("ReferenceDataSourceDescriptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setReferenceDataSourceDescriptions(value: ReferenceDataSourceDescriptions): Self = this.set("ReferenceDataSourceDescriptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReferenceDataSourceDescriptions: Self = this.set("ReferenceDataSourceDescriptions", js.undefined)
+    def setReferenceDataSourceDescriptionsVarargs(value: ReferenceDataSourceDescription*): Self = StObject.set(x, "ReferenceDataSourceDescriptions", js.Array(value :_*))
   }
 }

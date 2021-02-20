@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDomainConfigurationsResponse extends js.Object {
+trait ListDomainConfigurationsResponse extends StObject {
   
   /**
     * A list of objects that contain summary information about the user's domain configurations.
@@ -26,33 +27,21 @@ object ListDomainConfigurationsResponse {
   }
   
   @scala.inline
-  implicit class ListDomainConfigurationsResponseOps[Self <: ListDomainConfigurationsResponse] (val x: Self) extends AnyVal {
+  implicit class ListDomainConfigurationsResponseMutableBuilder[Self <: ListDomainConfigurationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainConfigurations(value: DomainConfigurations): Self = StObject.set(x, "domainConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainConfigurationsUndefined: Self = StObject.set(x, "domainConfigurations", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainConfigurationsVarargs(value: DomainConfigurationSummary*): Self = StObject.set(x, "domainConfigurations", js.Array(value :_*))
     
     @scala.inline
-    def setDomainConfigurationsVarargs(value: DomainConfigurationSummary*): Self = this.set("domainConfigurations", js.Array(value :_*))
+    def setNextMarker(value: Marker): Self = StObject.set(x, "nextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainConfigurations(value: DomainConfigurations): Self = this.set("domainConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomainConfigurations: Self = this.set("domainConfigurations", js.undefined)
-    
-    @scala.inline
-    def setNextMarker(value: Marker): Self = this.set("nextMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextMarker: Self = this.set("nextMarker", js.undefined)
+    def setNextMarkerUndefined: Self = StObject.set(x, "nextMarker", js.undefined)
   }
 }

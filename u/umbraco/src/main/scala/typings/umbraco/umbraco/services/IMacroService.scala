@@ -1,5 +1,6 @@
 package typings.umbraco.umbraco.services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A service to return macro information such as generating syntax to insert a macro into an editor
   */
 @js.native
-trait IMacroService extends js.Object {
+trait IMacroService extends StObject {
   
   /**
     * @ngdoc function
@@ -67,27 +68,15 @@ object IMacroService {
   }
   
   @scala.inline
-  implicit class IMacroServiceOps[Self <: IMacroService] (val x: Self) extends AnyVal {
+  implicit class IMacroServiceMutableBuilder[Self <: IMacroService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGenerateMacroSyntax(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "generateMacroSyntax", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGenerateMvcSyntax(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "generateMvcSyntax", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGenerateMacroSyntax(value: /* repeated */ js.Any => Unit): Self = this.set("generateMacroSyntax", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGenerateMvcSyntax(value: /* repeated */ js.Any => Unit): Self = this.set("generateMvcSyntax", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGenerateWebFormsSyntax(value: /* repeated */ js.Any => Unit): Self = this.set("generateWebFormsSyntax", js.Any.fromFunction1(value))
+    def setGenerateWebFormsSyntax(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "generateWebFormsSyntax", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2CryptoHashConfig extends js.Object {
+trait GooglePrivacyDlpV2CryptoHashConfig extends StObject {
   
   /** The key used by the hash function. */
   var cryptoKey: js.UndefOr[GooglePrivacyDlpV2CryptoKey] = js.native
@@ -19,24 +20,12 @@ object GooglePrivacyDlpV2CryptoHashConfig {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2CryptoHashConfigOps[Self <: GooglePrivacyDlpV2CryptoHashConfig] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2CryptoHashConfigMutableBuilder[Self <: GooglePrivacyDlpV2CryptoHashConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCryptoKey(value: GooglePrivacyDlpV2CryptoKey): Self = StObject.set(x, "cryptoKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCryptoKey(value: GooglePrivacyDlpV2CryptoKey): Self = this.set("cryptoKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCryptoKey: Self = this.set("cryptoKey", js.undefined)
+    def setCryptoKeyUndefined: Self = StObject.set(x, "cryptoKey", js.undefined)
   }
 }

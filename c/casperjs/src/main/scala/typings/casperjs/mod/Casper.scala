@@ -5,13 +5,14 @@ import typings.casperjs.casperjsBooleans.`false`
 import typings.casperjs.casperjsBooleans.`true`
 import typings.phantomjs.ClipRect
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("casperjs", "Casper")
 @js.native
-class Casper protected () extends js.Object {
+class Casper protected () extends StObject {
   def this(options: CasperOptions) = this()
   
   // Properties

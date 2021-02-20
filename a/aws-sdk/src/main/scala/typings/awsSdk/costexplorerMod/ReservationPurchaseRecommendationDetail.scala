@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReservationPurchaseRecommendationDetail extends js.Object {
+trait ReservationPurchaseRecommendationDetail extends StObject {
   
   /**
     * The account that this RI recommendation is for.
@@ -111,132 +112,120 @@ object ReservationPurchaseRecommendationDetail {
   }
   
   @scala.inline
-  implicit class ReservationPurchaseRecommendationDetailOps[Self <: ReservationPurchaseRecommendationDetail] (val x: Self) extends AnyVal {
+  implicit class ReservationPurchaseRecommendationDetailMutableBuilder[Self <: ReservationPurchaseRecommendationDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: GenericString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAverageNormalizedUnitsUsedPerHour(value: GenericString): Self = StObject.set(x, "AverageNormalizedUnitsUsedPerHour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: GenericString): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    def setAverageNormalizedUnitsUsedPerHourUndefined: Self = StObject.set(x, "AverageNormalizedUnitsUsedPerHour", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    def setAverageNumberOfInstancesUsedPerHour(value: GenericString): Self = StObject.set(x, "AverageNumberOfInstancesUsedPerHour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverageNormalizedUnitsUsedPerHour(value: GenericString): Self = this.set("AverageNormalizedUnitsUsedPerHour", value.asInstanceOf[js.Any])
+    def setAverageNumberOfInstancesUsedPerHourUndefined: Self = StObject.set(x, "AverageNumberOfInstancesUsedPerHour", js.undefined)
     
     @scala.inline
-    def deleteAverageNormalizedUnitsUsedPerHour: Self = this.set("AverageNormalizedUnitsUsedPerHour", js.undefined)
+    def setAverageUtilization(value: GenericString): Self = StObject.set(x, "AverageUtilization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverageNumberOfInstancesUsedPerHour(value: GenericString): Self = this.set("AverageNumberOfInstancesUsedPerHour", value.asInstanceOf[js.Any])
+    def setAverageUtilizationUndefined: Self = StObject.set(x, "AverageUtilization", js.undefined)
     
     @scala.inline
-    def deleteAverageNumberOfInstancesUsedPerHour: Self = this.set("AverageNumberOfInstancesUsedPerHour", js.undefined)
+    def setCurrencyCode(value: GenericString): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverageUtilization(value: GenericString): Self = this.set("AverageUtilization", value.asInstanceOf[js.Any])
+    def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
     
     @scala.inline
-    def deleteAverageUtilization: Self = this.set("AverageUtilization", js.undefined)
+    def setEstimatedBreakEvenInMonths(value: GenericString): Self = StObject.set(x, "EstimatedBreakEvenInMonths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: GenericString): Self = this.set("CurrencyCode", value.asInstanceOf[js.Any])
+    def setEstimatedBreakEvenInMonthsUndefined: Self = StObject.set(x, "EstimatedBreakEvenInMonths", js.undefined)
     
     @scala.inline
-    def deleteCurrencyCode: Self = this.set("CurrencyCode", js.undefined)
+    def setEstimatedMonthlyOnDemandCost(value: GenericString): Self = StObject.set(x, "EstimatedMonthlyOnDemandCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedBreakEvenInMonths(value: GenericString): Self = this.set("EstimatedBreakEvenInMonths", value.asInstanceOf[js.Any])
+    def setEstimatedMonthlyOnDemandCostUndefined: Self = StObject.set(x, "EstimatedMonthlyOnDemandCost", js.undefined)
     
     @scala.inline
-    def deleteEstimatedBreakEvenInMonths: Self = this.set("EstimatedBreakEvenInMonths", js.undefined)
+    def setEstimatedMonthlySavingsAmount(value: GenericString): Self = StObject.set(x, "EstimatedMonthlySavingsAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedMonthlyOnDemandCost(value: GenericString): Self = this.set("EstimatedMonthlyOnDemandCost", value.asInstanceOf[js.Any])
+    def setEstimatedMonthlySavingsAmountUndefined: Self = StObject.set(x, "EstimatedMonthlySavingsAmount", js.undefined)
     
     @scala.inline
-    def deleteEstimatedMonthlyOnDemandCost: Self = this.set("EstimatedMonthlyOnDemandCost", js.undefined)
+    def setEstimatedMonthlySavingsPercentage(value: GenericString): Self = StObject.set(x, "EstimatedMonthlySavingsPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedMonthlySavingsAmount(value: GenericString): Self = this.set("EstimatedMonthlySavingsAmount", value.asInstanceOf[js.Any])
+    def setEstimatedMonthlySavingsPercentageUndefined: Self = StObject.set(x, "EstimatedMonthlySavingsPercentage", js.undefined)
     
     @scala.inline
-    def deleteEstimatedMonthlySavingsAmount: Self = this.set("EstimatedMonthlySavingsAmount", js.undefined)
+    def setEstimatedReservationCostForLookbackPeriod(value: GenericString): Self = StObject.set(x, "EstimatedReservationCostForLookbackPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedMonthlySavingsPercentage(value: GenericString): Self = this.set("EstimatedMonthlySavingsPercentage", value.asInstanceOf[js.Any])
+    def setEstimatedReservationCostForLookbackPeriodUndefined: Self = StObject.set(x, "EstimatedReservationCostForLookbackPeriod", js.undefined)
     
     @scala.inline
-    def deleteEstimatedMonthlySavingsPercentage: Self = this.set("EstimatedMonthlySavingsPercentage", js.undefined)
+    def setInstanceDetails(value: InstanceDetails): Self = StObject.set(x, "InstanceDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedReservationCostForLookbackPeriod(value: GenericString): Self = this.set("EstimatedReservationCostForLookbackPeriod", value.asInstanceOf[js.Any])
+    def setInstanceDetailsUndefined: Self = StObject.set(x, "InstanceDetails", js.undefined)
     
     @scala.inline
-    def deleteEstimatedReservationCostForLookbackPeriod: Self = this.set("EstimatedReservationCostForLookbackPeriod", js.undefined)
+    def setMaximumNormalizedUnitsUsedPerHour(value: GenericString): Self = StObject.set(x, "MaximumNormalizedUnitsUsedPerHour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceDetails(value: InstanceDetails): Self = this.set("InstanceDetails", value.asInstanceOf[js.Any])
+    def setMaximumNormalizedUnitsUsedPerHourUndefined: Self = StObject.set(x, "MaximumNormalizedUnitsUsedPerHour", js.undefined)
     
     @scala.inline
-    def deleteInstanceDetails: Self = this.set("InstanceDetails", js.undefined)
+    def setMaximumNumberOfInstancesUsedPerHour(value: GenericString): Self = StObject.set(x, "MaximumNumberOfInstancesUsedPerHour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumNormalizedUnitsUsedPerHour(value: GenericString): Self = this.set("MaximumNormalizedUnitsUsedPerHour", value.asInstanceOf[js.Any])
+    def setMaximumNumberOfInstancesUsedPerHourUndefined: Self = StObject.set(x, "MaximumNumberOfInstancesUsedPerHour", js.undefined)
     
     @scala.inline
-    def deleteMaximumNormalizedUnitsUsedPerHour: Self = this.set("MaximumNormalizedUnitsUsedPerHour", js.undefined)
+    def setMinimumNormalizedUnitsUsedPerHour(value: GenericString): Self = StObject.set(x, "MinimumNormalizedUnitsUsedPerHour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumNumberOfInstancesUsedPerHour(value: GenericString): Self = this.set("MaximumNumberOfInstancesUsedPerHour", value.asInstanceOf[js.Any])
+    def setMinimumNormalizedUnitsUsedPerHourUndefined: Self = StObject.set(x, "MinimumNormalizedUnitsUsedPerHour", js.undefined)
     
     @scala.inline
-    def deleteMaximumNumberOfInstancesUsedPerHour: Self = this.set("MaximumNumberOfInstancesUsedPerHour", js.undefined)
+    def setMinimumNumberOfInstancesUsedPerHour(value: GenericString): Self = StObject.set(x, "MinimumNumberOfInstancesUsedPerHour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumNormalizedUnitsUsedPerHour(value: GenericString): Self = this.set("MinimumNormalizedUnitsUsedPerHour", value.asInstanceOf[js.Any])
+    def setMinimumNumberOfInstancesUsedPerHourUndefined: Self = StObject.set(x, "MinimumNumberOfInstancesUsedPerHour", js.undefined)
     
     @scala.inline
-    def deleteMinimumNormalizedUnitsUsedPerHour: Self = this.set("MinimumNormalizedUnitsUsedPerHour", js.undefined)
+    def setRecommendedNormalizedUnitsToPurchase(value: GenericString): Self = StObject.set(x, "RecommendedNormalizedUnitsToPurchase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumNumberOfInstancesUsedPerHour(value: GenericString): Self = this.set("MinimumNumberOfInstancesUsedPerHour", value.asInstanceOf[js.Any])
+    def setRecommendedNormalizedUnitsToPurchaseUndefined: Self = StObject.set(x, "RecommendedNormalizedUnitsToPurchase", js.undefined)
     
     @scala.inline
-    def deleteMinimumNumberOfInstancesUsedPerHour: Self = this.set("MinimumNumberOfInstancesUsedPerHour", js.undefined)
+    def setRecommendedNumberOfInstancesToPurchase(value: GenericString): Self = StObject.set(x, "RecommendedNumberOfInstancesToPurchase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecommendedNormalizedUnitsToPurchase(value: GenericString): Self = this.set("RecommendedNormalizedUnitsToPurchase", value.asInstanceOf[js.Any])
+    def setRecommendedNumberOfInstancesToPurchaseUndefined: Self = StObject.set(x, "RecommendedNumberOfInstancesToPurchase", js.undefined)
     
     @scala.inline
-    def deleteRecommendedNormalizedUnitsToPurchase: Self = this.set("RecommendedNormalizedUnitsToPurchase", js.undefined)
+    def setRecurringStandardMonthlyCost(value: GenericString): Self = StObject.set(x, "RecurringStandardMonthlyCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecommendedNumberOfInstancesToPurchase(value: GenericString): Self = this.set("RecommendedNumberOfInstancesToPurchase", value.asInstanceOf[js.Any])
+    def setRecurringStandardMonthlyCostUndefined: Self = StObject.set(x, "RecurringStandardMonthlyCost", js.undefined)
     
     @scala.inline
-    def deleteRecommendedNumberOfInstancesToPurchase: Self = this.set("RecommendedNumberOfInstancesToPurchase", js.undefined)
+    def setUpfrontCost(value: GenericString): Self = StObject.set(x, "UpfrontCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecurringStandardMonthlyCost(value: GenericString): Self = this.set("RecurringStandardMonthlyCost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecurringStandardMonthlyCost: Self = this.set("RecurringStandardMonthlyCost", js.undefined)
-    
-    @scala.inline
-    def setUpfrontCost(value: GenericString): Self = this.set("UpfrontCost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpfrontCost: Self = this.set("UpfrontCost", js.undefined)
+    def setUpfrontCostUndefined: Self = StObject.set(x, "UpfrontCost", js.undefined)
   }
 }

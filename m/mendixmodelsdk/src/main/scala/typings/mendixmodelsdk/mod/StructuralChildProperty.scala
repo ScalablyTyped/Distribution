@@ -4,6 +4,7 @@ import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.structuresMod.IStructureClass
 import typings.mendixmodelsdk.unitsMod.IModelUnit
 import typings.mendixmodelsdk.unitsMod.IStructuralUnit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

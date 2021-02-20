@@ -1,5 +1,6 @@
 package typings.xrm.Xrm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Interface for a user attribute privilege.
   */
 @js.native
-trait Privilege extends js.Object {
+trait Privilege extends StObject {
   
   /**
     * True if the user can create.
@@ -34,27 +35,15 @@ object Privilege {
   }
   
   @scala.inline
-  implicit class PrivilegeOps[Self <: Privilege] (val x: Self) extends AnyVal {
+  implicit class PrivilegeMutableBuilder[Self <: Privilege] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanCreate(value: Boolean): Self = StObject.set(x, "canCreate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanRead(value: Boolean): Self = StObject.set(x, "canRead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCanCreate(value: Boolean): Self = this.set("canCreate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCanRead(value: Boolean): Self = this.set("canRead", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCanUpdate(value: Boolean): Self = this.set("canUpdate", value.asInstanceOf[js.Any])
+    def setCanUpdate(value: Boolean): Self = StObject.set(x, "canUpdate", value.asInstanceOf[js.Any])
   }
 }

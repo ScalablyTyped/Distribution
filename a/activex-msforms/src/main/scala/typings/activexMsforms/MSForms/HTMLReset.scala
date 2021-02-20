@@ -1,11 +1,12 @@
 package typings.activexMsforms.MSForms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLReset extends js.Object {
+trait HTMLReset extends StObject {
   
   var Caption: String = js.native
   
@@ -26,30 +27,18 @@ object HTMLReset {
   }
   
   @scala.inline
-  implicit class HTMLResetOps[Self <: HTMLReset] (val x: Self) extends AnyVal {
+  implicit class HTMLResetMutableBuilder[Self <: HTMLReset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHTMLType(value: String): Self = StObject.set(x, "HTMLType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("Caption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHTMLName(value: String): Self = this.set("HTMLName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHTMLType(value: String): Self = this.set("HTMLType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMSFormsDotHTMLReset_typekey(value: HTMLReset): Self = this.set("MSForms.HTMLReset_typekey", value.asInstanceOf[js.Any])
+    def setMSFormsDotHTMLReset_typekey(value: HTMLReset): Self = StObject.set(x, "MSForms.HTMLReset_typekey", value.asInstanceOf[js.Any])
   }
 }

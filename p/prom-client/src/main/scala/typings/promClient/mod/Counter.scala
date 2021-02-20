@@ -1,13 +1,14 @@
 package typings.promClient.mod
 
 import typings.promClient.mod.Counter.Internal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prom-client", "Counter")
 @js.native
-class Counter[T /* <: String */] protected () extends _Metric_[T] {
+class Counter[T /* <: String */] protected () extends Metric_[T] {
   /**
   	 * @param configuration Configuration when creating a Counter metric. Name and Help is required.
   	 */
@@ -45,12 +46,10 @@ class Counter[T /* <: String */] protected () extends _Metric_[T] {
   	 */
   def reset(): Unit = js.native
 }
-@JSImport("prom-client", "Counter")
-@js.native
-object Counter extends js.Object {
+object Counter {
   
   @js.native
-  trait Internal extends js.Object {
+  trait Internal extends StObject {
     
     /**
     		 * Increment with value

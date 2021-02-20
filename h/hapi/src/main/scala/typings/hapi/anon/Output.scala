@@ -2,12 +2,13 @@ package typings.hapi.anon
 
 import typings.hapi.hapiStrings.annotated
 import typings.hapi.mod.PayloadOutput
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Output extends js.Object {
+trait Output extends StObject {
   
   var output: PayloadOutput | annotated = js.native
 }
@@ -20,21 +21,9 @@ object Output {
   }
   
   @scala.inline
-  implicit class OutputOps[Self <: Output] (val x: Self) extends AnyVal {
+  implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOutput(value: PayloadOutput | annotated): Self = this.set("output", value.asInstanceOf[js.Any])
+    def setOutput(value: PayloadOutput | annotated): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
   }
 }
